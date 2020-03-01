@@ -9,4 +9,5 @@ The Github Buddhist University is run by Than Khemarato and is based on his
 which he created to organize his own studies of Buddhism. He hopes that you will find it useful and invites
 you to email any feedback you have to the email below.
 
+You can find me and other Early Buddhism enthusiasts at [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/)
  
