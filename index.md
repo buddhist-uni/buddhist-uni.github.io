@@ -12,7 +12,7 @@ A small collection of 4 `free`, `self-paced`, online courses on Buddhism:
 ## - Buddhism 101
 ## - The Early Buddhist Texts
 
-Just click on a course above to get started. It's that easy.
+Just click on one of the courses above to get started. It's that easy.
 
 _[Dissatisfaction Guarenteed](https://www.accesstoinsight.org/ptf/dhamma/sacca/sacca1/dukkha.html) or your money back!_
 
