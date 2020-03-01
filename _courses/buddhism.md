@@ -69,11 +69,87 @@ The emotional heart of this course, and one of my favorite books period. Before 
     - An example of the many popular press articles reporting on the benefits of meditation
 
 
-- AN 8:53  Saṅkhitta Sutta  - In Brief.pdf
-     - In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
-Compare this list with the feeling you got from Thich Nhat Hanh and with the benefits described in the popular article above (and any other information you may have read). Do you notice any differences? Similarities? Does anything on this list surprise you?  Are these three sources (the sutta, the monk and the media) saying the same thing in different words or has something been “lost in translation”?
-This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as “categorical”: always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
+- AN 8:53  Saṅkhitta Sutta  - In Brief. ([on SuttaCentral](https://suttacentral.net/an8.53/en/sujato)) ([pdf](https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk))
+    - In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
+    - Compare this list with the feeling you got from Thich Nhat Hanh and with the benefits described in the popular article above (and any other information you may have read). Do you notice any differences? Similarities? Does anything on this list surprise you?  Are these three sources (the sutta, the monk and the media) saying the same thing in different words or has something been “lost in translation”?
+    - This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as “categorical”: always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
 
-- Happiness - Ven Hong Ci
+- [Happiness - Ven Hong Ci](https://youtu.be/lhMZNxD48TE)
     - Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
+
+#### [What the Buddha Taught - Walpola Rahula](https://sites.google.com/site/rahulawhatthebuddha/home)
+
+- The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
+
+#### Reflection Questions
+
+After finishing the above, it's now a good time to go back to your notes from the introduction and see how your understanding has changed. Have your questions been answered? Is anything that was surprising now obvious? Do any new questions arise for you?
+
+### Buddhist History and the Mahayana
+
+*Readings parallel to Chapters 6–7 of Harvey*
+
+
+- SN 35.238: The Simile of the Vipers translated by Bhikkhu Sujato ([on SuttaCentral](https://suttacentral.net/sn35.238/en/sujato)) ([pdf](https://drive.google.com/file/d/1V8KoOvx3EWgMAZ_abdBovQGpvG1SN7_k/view?usp=drivesdk))
+    - Gives some vivid imagery to illustrate the Buddhist outlook on life. The class might take a brief look at Buddhist artwork here and a skilled teacher might explain the relationship between art, metaphor and self-transformation across the Buddhist traditions. (I'll add such a lecture here if I can find a good one)
+    - Mostly this text is included here to note that vivid metaphors have always been a part of Buddhism, even in the oldest texts of the Theravada Tradition. 
+    - These themes will return vividly at the end of chapter 11 for those reading _Harvey_.
+
+### The Practice of Buddhism
+
+*Readings parallel to Chapters 8–11*
+
+Coming down from the clouds, what do these teachings actually mean, and how do we practice them? 
+
+- Karaniya Metta Sutta: The Buddha's Words on Loving-Kindness ([on ATI](https://accesstoinsight.org/tipitaka/kn/snp/snp.1.08.amar.html)) ([pdf](https://drive.google.com/file/d/1ZuNmlS31B_0L5GWplk_r_zruUDP0USo-/view?usp=drivesdk))
+    - A beautiful Discourse, roughly equivalent to the (rightly) much celebrated passage on love in the Christian Bible, [1 Corinthians 13](https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=NIV). 
+    - Notice, though, how the Buddha's description of love explicitly extends our compassionate circle of concern to all sentient beings.
+    - Also, rather than framing the sermon as a description of what love is (“patient, kind” etc) notice how the Buddha instead describes love as a practice, giving us instructions on what “should be done.” This shift away from descriptive philosophy and towards ethical praxis is one of the hallmarks of Buddhism, especially in contrast with Western philosophy.
+    - Also, consider reading this passage out loud, remembering that the Buddha's words were passed down primarily by oral recitation. How does reading it out loud change your experience of the text?
+- [Loving Kindness Chant - Abhayagiri Monastery.mp3](https://drive.google.com/file/d/1V1-v8JPm-hw9URWYKwUZkvtYWEpNq5qv/view?usp=drivesdk)
+    - Now, listen to it chanted in the traditional style by a group of monks in California. 
+    - What benefits do you see in chanting this way, as compared to simply reading the text?
+
+- [On Love - Ajahn Jayasaro.pdf](https://drive.google.com/file/d/1TlptylvvxJ1hvsjnFY7YBcNy9pzwH-36/view?usp=drivesdk)
+    - Ajahn Jayasaro beautifully explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
+    - While reading, I encourage you to really engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you? 
+
+Ideally, the chapter on meditation would be accompanied by in-person meditation instruction. I encourage the digital student to seek out a local meditation group at this point if you haven't done so already to get first-hand experience with this very important part of Buddhist practice if you haven’t already.
+
+It's also a good time to revisit your questions from the introduction one more time. How has engaging with Buddhist practice changed your understanding of the doctrine? What do you make of Buddhism now?
+
+### Buddhism and Modernity
+
+*Readings parallel to Chapters 12–13*
+
+I supplement the final chapters in Harvey on the recent history of Buddhism with a few essays on the unique cultural challenges and opportunities which Western Buddhists now face:
+
+- [Buddhism and Modernity - Douglas Powers.pdf](https://drive.google.com/file/d/1CpwCDBmqFH_1SoPURKsr83s8gOOB2Zrw/view?usp=drivesdk)
+    - Individualism, science, freedom and morality — four contemporary conversations which Buddhism has much to contribute to
+- [Buddhism and human flourishing - Peter Harvey.pdf](https://drive.google.com/file/d/1wGGlSkodHyt73Nf5qR3Xg8siOru_61a9/view?usp=drivesdk)
+    - A defense of Buddhism in light of some Western critiques and an encouragement to try out one particular Eastern practice.
+- [The Science Delusion (article) - Curtis White.pdf](https://drive.google.com/file/d/1SXVENICQX42VWItyUaT8pHKhq5N27uD5/view?usp=drivesdk)
+    - A provocative essay on thinking more critically about our scientific, materialistic assumptions before we instinctively “reform” Buddhism to conform to them.
+
+### And Lastly,
+
+- Read: The Highest Blessings ([pdf](https://drive.google.com/file/d/1ZkSosgqWjweN4BkaquDtfHjYn7JczPg-/view?usp=drivesdk))
+- And listen: The Highest Blessings ([on YouTube](https://www.youtube.com/watch?v=1Jap6xMuuo0)) ([mp3](https://drive.google.com/file/d/1biFd80sRdq7p2paunwCZT5irCP2wT9ve/view?usp=drivesdk))
+    - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
+**May your life thus be blessed!**
+
+## Feedback
+
+Congrations on finishing the course!
+
+Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=Buddhism+101). Your feedback is vital to making these courses good. Thank you!
+
+## Further Reading
+
+There are three courses you can take next to deepen your study of the Triple Gem:
+
+1. [Buddha: The Early Texts](#): Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
+2. [Dhamma: The Function of Buddhism](#): A guide into the heart of Buddhist practice.
+3. [Sangha: The Form(s) of Buddhism](#): Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
+
 
