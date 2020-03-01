@@ -39,3 +39,20 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+permalink: none
+
+collections:
+  courses:
+     output: true
+     permalink: /:collection/:name
+
+defaults:
+  - 
+    scope:
+        path: ""
+        type: "courses"
+    values:
+        layout: "page"
+
+
