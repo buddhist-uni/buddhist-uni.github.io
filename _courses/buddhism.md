@@ -2,6 +2,8 @@
 title: Buddhism 101
 ---
 
+*This course is also available [on Google Docs](https://docs.google.com/document/d/1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg/)*
+
 ## What is Buddhism?
 Buddhism is the religion founded by the Buddha in approximately the 5th century BCE in the Ganges River Valley. The Buddha's philosophy may be summed up as “every effect has a cause”. The Buddha then applied this philosophy to the problems at the heart of the human condition: mortality, anxiety, suffering and evil. 
 
@@ -48,7 +50,7 @@ The textbook remains, however, optional, as the free materials below provide an 
 A simple but powerful retelling of the Buddha's life story from a renowned modern master.
 
 - [A Secular Introduction to Buddhism - Doug Smith](https://youtu.be/pbngKOUgCDY)
-    - The importance of belief in Karma is in trusting that our actions have consequences.
+    - A short introduction to Buddhism from a more secular perspective.
 
 - SN22.086 ([mp3](https://drive.google.com/file/d/17GwZmFfgBoq87pp7TPzl56UcUJCylZ5Q/view?usp=drivesdk)) ([text](https://suttacentral.net/sn22.86/en/bodhi))
     - Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most.

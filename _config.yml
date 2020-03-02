@@ -16,8 +16,8 @@
 title: The Github Buddhist University
 email: khemarato.bhikkhu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The Github Buddhist University is a Github-hosted website
-  dedicated to providing free online courses in Buddhism. 
+  A Github-hosted website dedicated to providing free,
+  online courses in Buddhist Studies. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-159403467-1
