@@ -11,6 +11,8 @@ A small collection of 4 `free`, `self-paced`, online courses on Buddhism:
 
 ## - [Buddhism 101]({% link _courses/buddhism.md %})
 ## - [The Early Buddhist Texts]({% link _courses/ebts.md %})
+## - [The Form(s) of Buddhism]({% link _courses/form.md %})
+## - [The Function of Buddhism]({% link _courses/function.md %})
 
 Just click on one of the courses above to get started. It's that easy.
 
