@@ -45,7 +45,19 @@ Note: there are a few editions of this book. I have taken my chapter numbers bel
 #### Supplementary Material to *Robinson*
 As you read through *Robinson*, please also consider the following:
 
-*Parallel to Robinson Ch 1*
+*Parallel to Robinson Ch 1: Awakening*
+- The Noble Quest - Horner ([pdf](https://drive.google.com/file/d/1rAYhpwekeXKhl1g0YGz6i58sN0Eotrc9/view?usp=drivesdk)) ([epub](https://drive.google.com/file/d/1TdVqY3K7xioOljsmQHYPeS2A5R7ut1lj/view?usp=drivesdk))
+    - The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
+    - The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
+
+*Parallel to Robinson Ch 2: Teacher*
+- [Early Buddhism (class) 1: History - Sujato and Brahmali.zip](https://drive.google.com/file/d/1ijhtCUQK5H0VMVpit92aElJNzRkxZKFl/view?usp=drivesdk)
+    - An Introduction to Buddhist History
+- [The Anscestral Stupas of Shwedagon.pdf](https://drive.google.com/file/d/1B3-SkCSpo31J5KSIY2HarYfCBOCqZQiB/view?usp=drivesdk)
+    - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
+
+
+
 
 ## Feedback
 
