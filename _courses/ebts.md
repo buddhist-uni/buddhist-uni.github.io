@@ -79,7 +79,7 @@ the history of the texts you're studying:
 
 In addition to the Pāli texts highlighted in ItBW, I recommend the following additional discourse:
 
-- Discourse on Knowing the Better Way to Catch a Snake - Plum Village ([direct link](https://plumvillage.org/sutra/discourse-on-knowing-the-better-way-to-catch-a-snake/)) ([pdf](https://drive.google.com/file/d/1lq2IbXxUrj3GaRvYLjAfbMEMjTbIzysD/view?usp=drivesdk)
+- Discourse on Knowing the Better Way to Catch a Snake - Plum Village ([direct link](https://plumvillage.org/sutra/discourse-on-knowing-the-better-way-to-catch-a-snake/)) ([pdf](https://drive.google.com/file/d/1lq2IbXxUrj3GaRvYLjAfbMEMjTbIzysD/view?usp=drivesdk))
     - This discourse from the Chinese Canon is included to demonstrate how extraordinarily similar the language of the northern Agamas are compared to the language of the Pāli Canon (preserved in Sri Lanka)
 This sutra is most directly parallel to the Pāli texts presented in ItBW chapter nine on the Five Aggregates and it could be read when you get to that part of the book, or after you've finished.
 
