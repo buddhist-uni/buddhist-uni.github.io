@@ -124,7 +124,9 @@ I recommend reading Nyanamoli’s denser anthology section-by-section before Bhi
 9. Nyanamoli: The End
 9. Bodhi: Epilogue
 
-Having thus gotten a traditional introduction to the Path, we can now return to Bhikkhu Cintita’s intricate explanation.
+#### Part 2: Buddhist Path
+
+Having thus gotten a traditional introduction to the Path, we can now return to Bhikkhu Cintita’s more intricate explanation.
 
 *Chapter 7*
 - [Buddhism: The only real science - Ajahn Brahm.pdf](https://drive.google.com/file/d/1JkIZWAjFZs3SA3T13UasDSPuDh_WR9lQ/view?usp=drivesdk)
@@ -141,13 +143,15 @@ Having thus gotten a traditional introduction to the Path, we can now return to 
     - A short series of talks and Q-and-As on Buddhist wisdom by a Tibetan master. 
 
 *Chapter 9*
+
 This chapter we have an extra lecture, in lieu of our usual essay.
 - For most of us, what holds us back from perfecting virtue and becoming saintly ourselves is our fears and our worldly attachments. Bhikkhu Cintita skirted the emotionally charged side of this, but Bhante Yuttadhammo meets it directly in these provocative talks.
 
 *Chapter 10*
+
 In which we finally get to meditation!
 
-- [habits towards nibbana - santussika bhikkhuni.mp3](https://drive.google.com/file/d/1HL6xMd3WMm3xEZEVtUJEnoeIA0WuZV6Z/view?usp=drivesdk)
+- [Habits Towards Nibbana - Santussika Bhikkhuni.mp3](https://drive.google.com/file/d/1HL6xMd3WMm3xEZEVtUJEnoeIA0WuZV6Z/view?usp=drivesdk)
     - Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13).
 - [Instructions to Insight meditation - Mahasi Sayadaw.pdf](https://drive.google.com/file/d/1mbopM-l37IcGF_u3l3J5LKhIiZWicgM8/view?usp=drivesdk)
     - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.
@@ -165,7 +169,7 @@ In which we finally get to meditation!
 - [Fundamentals of Buddhism - Ajahn Panyavaddho.pdf](https://drive.google.com/file/d/1uC-lg-tgFT2U9UZx6wqWaFtTC8OTQM_7/view?usp=drivesdk)
     - A transcript of a conversation with Ajahn Panyavaddho.
     - Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
-- [Iti 93: The Fires - John D Ireland.pdf](https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC/view?usp=drivesdk)
+- [Iti 93: The Fires - John D Ireland](https://suttacentral.net/iti93/en/ireland) ([pdf](https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC/view?usp=drivesdk))
     - And lastly, a short poem on enlightenment from the Canon.
 
 
