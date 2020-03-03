@@ -157,3 +157,4 @@ Congrations on finishing the course!
 
 Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url). Your feedback is vital to making these courses good. Thank you!
 
+{% include generic_further_reading.md %}
