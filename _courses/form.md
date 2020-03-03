@@ -155,6 +155,6 @@ A few more words are also due on the subject of restraint, beyond the five prece
 
 Congrations on finishing the course!
 
-Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url). Your feedback is vital to making these courses good. Thank you!
+Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=The+Form(s)+of+Buddhism). Your feedback is vital to making these courses good. Thank you!
 
 {% include generic_further_reading.md %}
