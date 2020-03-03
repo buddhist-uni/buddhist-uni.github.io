@@ -18,7 +18,7 @@ In searching for such a middle way, I take on Bhante Yuttadhammo’s definition 
 The forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
 ## Prerequisites
-This course assumes familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}).
+This course assumes some familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}).
 
 
 ## Course Outline

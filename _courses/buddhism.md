@@ -150,8 +150,8 @@ Please take a moment to take [the end of class survey](https://docs.google.com/f
 
 There are three courses you can take next to deepen your study of the Triple Gem:
 
-1. [Buddha: The Early Texts](#): Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
-2. [Dhamma: The Function of Buddhism](#): A guide into the heart of Buddhist practice.
-3. [Sangha: The Form(s) of Buddhism](#): Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
+1. [Buddha: The Early Texts]({% link _courses/ebts.md%}): Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
+2. [Dhamma: The Function of Buddhism]({% link _courses/function.md %}): A guide into the heart of Buddhist practice.
+3. [Sangha: The Form(s) of Buddhism]({% link _courses/form.md %}): Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
 
 

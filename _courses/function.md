@@ -12,7 +12,8 @@ Buddhism supports this “threefold training” by providing both essential, exp
 
 ## Prerequisites
 
-This course strives to be a rigorous overview of Buddhism suitable for everyone — from beginners to experienced practitioners alike — and it is recommended for all. 
+This course strives to be a rigorous overview of Buddhism suitable for everyone — from beginners to experienced practitioners alike — and it is recommended for all.
+
 For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 
 
@@ -24,9 +25,11 @@ please feel free to skip ahead and read the two books from the “Intermission�
 
 
 
+
+
 ## Feedback
 
 Congrations on finishing the course!
 
-Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=Buddhism+101). Your feedback is vital to making these courses good. Thank you!
+Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=The+Function+of+Buddhism). Your feedback is vital to making these courses good. Thank you!
 
