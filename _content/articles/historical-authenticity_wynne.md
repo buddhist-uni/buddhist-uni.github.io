@@ -6,5 +6,5 @@ journal: "Vienna Journal of South Asian Studies"
 year: 2006
 pages: "35--70"
 formats: [pdf]
-drive_links: ["https://drive.google.com/a/u.northwestern.edu/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu/view?usp=drivesdk"]
 ---
