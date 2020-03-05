@@ -46,6 +46,8 @@ plugins:
 permalink: none
 
 collections:
+  authors:
+     output: false
   content:
      output: false
   courses:
