@@ -1,8 +1,7 @@
 ---
 title: The Form(s) of Buddhism
+google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 ---
-
-*This course is also available [on Google Docs](https://docs.google.com/document/d/1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU/edit?usp=sharing)*
 
 ## What is the Form of Buddhism?
 The Form of Buddhism is the “religious” side of Buddhism: the history, institutions, rituals and externalities that socially define the religion.

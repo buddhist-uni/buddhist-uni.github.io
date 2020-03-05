@@ -56,6 +56,6 @@ defaults:
         path: ""
         type: "courses"
     values:
-        layout: "page"
+        layout: "course"
 
 

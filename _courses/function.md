@@ -1,8 +1,7 @@
 ---
 title: The Function of Buddhism
+google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 ---
-
-*This course is also available [on Google Docs](https://docs.google.com/document/d/1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0/edit?usp=sharing)*
 
 ## What is the Function of Buddhism?
 
