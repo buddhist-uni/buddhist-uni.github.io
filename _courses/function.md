@@ -179,11 +179,7 @@ In which we finally get to meditation!
     - Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 
 
 
-## Feedback
-
-Congrations on finishing the course!
-
-Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=The+Function+of+Buddhism). Your feedback is vital to making these courses good. Thank you!
+{% include course_feedback.html course="The+Function+of+Buddhism" %}
 
 {% include generic_further_reading.md %}
 

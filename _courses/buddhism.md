@@ -140,11 +140,7 @@ I supplement the final chapters in Harvey on the recent history of Buddhism with
     - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
 **May your life thus be blessed!**
 
-## Feedback
-
-Congrations on finishing the course!
-
-Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=Buddhism+101). Your feedback is vital to making these courses good. Thank you!
+{% include course_feedback.html course="Buddhism+101" %}
 
 ## Further Reading
 
