@@ -9,3 +9,5 @@ volume: 27
 number: 1
 journal: "Journal of the International Association of Buddhist Studies"
 ---
+
+Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim

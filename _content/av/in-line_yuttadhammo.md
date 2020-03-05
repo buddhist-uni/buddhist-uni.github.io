@@ -7,3 +7,5 @@ authors: [yuttadhammo]
 year: 2010
 month: mar
 ---
+
+Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.
