@@ -1,8 +1,7 @@
 ---
 title: Buddhism 101
+google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 ---
-
-*This course is also available [on Google Docs](https://docs.google.com/document/d/1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg/)*
 
 ## What is Buddhism?
 Buddhism is the religion founded by the Buddha in approximately the 5th century BCE in the Ganges River Valley. The Buddha's philosophy may be summed up as “every effect has a cause”. The Buddha then applied this philosophy to the problems at the heart of the human condition: mortality, anxiety, suffering and evil. 

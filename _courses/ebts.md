@@ -1,8 +1,7 @@
 ---
 title: The Early Buddhist Texts
+google_doc_id: 1JU0k437c4r-5Ug_n4N7iDZ6_9Tr2SvH78ftW2b6B00I
 ---
-
-*This course is also available [on Google Docs](https://docs.google.com/document/d/1JU0k437c4r-5Ug_n4N7iDZ6_9Tr2SvH78ftW2b6B00I/edit?usp=sharing)*
 
 ## What are the Early Buddhist Texts?
 
