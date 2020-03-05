@@ -29,9 +29,9 @@ The main textbook for this course is the (commercial) work **In The Buddha's Wor
 This book gives a systematic introduction to the Buddha's teachings, and will be the primary text for this class.
 
 ### Lectures
-Bhikkhu Bodhi himself will be your lecturer for this class. The lectures can be found
-[online here](https://www.dhammatalks.net/bhikkhu_bodhi/in_the_buddhas_words/start.html)
-or [on Google Drive here](https://drive.google.com/drive/folders/1J4UlgdfxmH2mFQkqYGO8OTTX33B5E_OM).
+
+{% include inline_content.html type="av" slug="in-the-buddhas-words_bodhi" %}
+- Bhikkhu Bodhi himself will be your lecturer for this class.
 
 Read a chapter of *In the Buddha's Words* (hereafter abbreviated as ItBW), and then
 listen to the lecture associated with that chapter before moving on to the next.
@@ -52,7 +52,7 @@ of Early Buddhism on the forum (including yours truly) and we would be happy to 
 As you make your way through ItBW, I encourage you to weave in the following works about 
 the history of the texts you're studying:
 
-- [The Introduction to ItBW](https://web.archive.org/web/20160320174115/http://www.wisdompubs.org/book/buddha%E2%80%99s-words/introduction)
+- [The Introduction to ItBW](https://web.archive.org/web/20160320174115/http://www.wisdompubs.org/book/buddha%E2%80%99s-words/introduction){:target="_blank"}
     - Gives a good overview of the oral tradition. Don't skip it! 
 - [Early Buddhism - Kalupahana and Payne.pdf](https://drive.google.com/file/d/1btmWtNnj5roGdwQX46G0N2QQkWt2fnUt/view?usp=drivesdk)
     - On why it's important to study the early texts.
