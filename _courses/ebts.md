@@ -19,8 +19,8 @@ This course gives a thorough introduction to what the Buddha taught in his own w
 
 ### Introduction
 
-- [Buddha: True Genius - Ajahn Brahmali](https://drive.google.com/file/d/1cnvQ2gC7CKbhxuAh4BaVVTzJDvWDS_1u/view?usp=drivesdk)
-    - An introductory lecture by Ajahn Brahmali in which he shares with us his love and enthusiasm for the Buddha’s teachings.
+{% include inline_content.html type="av" slug="buddha_true-genius_brahmali" %}
+- An introductory lecture by Ajahn Brahmali in which he shares with us his love and enthusiasm for the Buddha’s teachings.
 
 
 ### Textbook

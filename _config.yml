@@ -46,6 +46,8 @@ plugins:
 permalink: none
 
 collections:
+  content:
+     output: false
   courses:
      output: true
      permalink: /:collection/:name
