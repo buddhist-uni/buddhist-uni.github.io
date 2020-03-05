@@ -90,11 +90,6 @@ We end the course with this word of advice:
 - [In Line With the Teaching (2010-03-22) - Yuttadhammo.mp3](https://drive.google.com/file/d/1udQ4yxzpKzZhiel2bbZZ8S9JBHST5S-g/view?usp=drivesdk)
     - Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.
 
-
-## Feedback
-
-Congrations on finishing the course!
-
-Please take a moment to take [the end of class survey](https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714=The+Early+Buddhist+Texts). Your feedback is vital to making these courses good. Thank you!
+{% include course_feedback.html course="The+Early+Buddhist+Texts" %}
 
 {% include generic_further_reading.md %}
