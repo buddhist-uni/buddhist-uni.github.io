@@ -19,7 +19,7 @@ This course gives a thorough introduction to what the Buddha taught in his own w
 
 ### Introduction
 
-{% include inline_content.html type="av" slug="buddha_true-genius_brahmali" %}
+{% include inline_content.html category="av" slug="buddha_true-genius_brahmali" %}
 - An introductory lecture by Ajahn Brahmali in which he shares with us his love and enthusiasm for the Buddha’s teachings.
 
 
@@ -30,7 +30,7 @@ This book gives a systematic introduction to the Buddha's teachings, and will be
 
 ### Lectures
 
-{% include inline_content.html type="av" slug="in-the-buddhas-words_bodhi" %}
+{% include inline_content.html category="av" slug="in-the-buddhas-words_bodhi" %}
 - Bhikkhu Bodhi himself will be your lecturer for this class.
 
 Read a chapter of *In the Buddha's Words* (hereafter abbreviated as ItBW), and then
@@ -54,9 +54,11 @@ the history of the texts you're studying:
 
 - [The Introduction to ItBW](https://web.archive.org/web/20160320174115/http://www.wisdompubs.org/book/buddha%E2%80%99s-words/introduction){:target="_blank"}
     - Gives a good overview of the oral tradition. Don't skip it! 
-- [Early Buddhism - Kalupahana and Payne.pdf](https://drive.google.com/file/d/1btmWtNnj5roGdwQX46G0N2QQkWt2fnUt/view?usp=drivesdk)
-    - On why it's important to study the early texts.
-    - Read alongside chapter one of ItBW
+
+{% include inline_content.html category="articles" slug="early-buddhism-with-kalupahana_payne" %}
+- On why it's important to study the early texts.
+- Read alongside chapter one of ItBW
+
 - [In Search of the Real Buddha - Peter Harvey.pdf](https://drive.google.com/file/d/1r7osuPlaXjvg8PI0O5IjdxMoDg9togLU/view?usp=drivesdk)
     - About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.
     - This should be read alongside chapter two of ItBW which is about the Buddha
