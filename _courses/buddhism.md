@@ -68,16 +68,15 @@ The next part of the class tackles the teachings. As this section is the primary
 {% include inline_content.html category="articles" slug="meditation-moral-obligation_vox" %}
 - An example of the many popular press articles reporting on the benefits of meditation
 
-- AN 8:53  Saṅkhitta Sutta  - In Brief. ([on SuttaCentral](https://suttacentral.net/an8.53/en/sujato)) ([pdf](https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk))
-    - In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
-    - Compare this list with the feeling you got from Thich Nhat Hanh and with the benefits described in the popular article above (and any other information you may have read). Do you notice any differences? Similarities? Does anything on this list surprise you?  Are these three sources (the sutta, the monk and the media) saying the same thing in different words or has something been “lost in translation”?
-    - This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as “categorical”: always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
+{% include inline_content.html category="canon" slug="an8.53" %}
+- In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
+- Compare this list with the feeling you got from Thich Nhat Hanh and with the benefits described in the popular article above (and any other information you may have read). Do you notice any differences? Similarities? Does anything on this list surprise you?  Are these three sources (the sutta, the monk and the media) saying the same thing in different words or has something been “lost in translation”?
+- This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as “categorical”: always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
 
-- [Happiness - Ven Hong Ci](https://youtu.be/lhMZNxD48TE)
-    - Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
+{% include inline_content.html category="av" slug="happiness_hong-ci" %}
+- Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
 
-#### [What the Buddha Taught - Walpola Rahula](https://sites.google.com/site/rahulawhatthebuddha/home)
-
+#### {% include inline_content.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
 - The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
 
 #### Reflection Questions
@@ -88,11 +87,10 @@ After finishing the above, it's now a good time to go back to your notes from th
 
 *Readings parallel to Chapters 6–7 of Harvey*
 
-
-- SN 35.238: The Simile of the Vipers translated by Bhikkhu Sujato ([on SuttaCentral](https://suttacentral.net/sn35.238/en/sujato)) ([pdf](https://drive.google.com/file/d/1V8KoOvx3EWgMAZ_abdBovQGpvG1SN7_k/view?usp=drivesdk))
-    - Gives some vivid imagery to illustrate the Buddhist outlook on life. The class might take a brief look at Buddhist artwork here and a skilled teacher might explain the relationship between art, metaphor and self-transformation across the Buddhist traditions. (I'll add such a lecture here if I can find a good one)
-    - Mostly this text is included here to note that vivid metaphors have always been a part of Buddhism, even in the oldest texts of the Theravada Tradition. 
-    - These themes will return vividly at the end of chapter 11 for those reading _Harvey_.
+{% include inline_content.html category="canon" slug="sn35.238" %}
+- Gives some vivid imagery to illustrate the Buddhist outlook on life. The class might take a brief look at Buddhist artwork here and a skilled teacher might explain the relationship between art, metaphor and self-transformation across the Buddhist traditions. (I'll add such a lecture here if I can find a good one)
+- Mostly this text is included here to note that vivid metaphors have always been a part of Buddhism, even in the oldest texts of the Theravada Tradition. 
+- These themes will return vividly at the end of chapter 11 for those reading _Harvey_.
 
 ### The Practice of Buddhism
 
@@ -100,18 +98,19 @@ After finishing the above, it's now a good time to go back to your notes from th
 
 Coming down from the clouds, what do these teachings actually mean, and how do we practice them? 
 
-- Karaniya Metta Sutta: The Buddha's Words on Loving-Kindness ([on ATI](https://accesstoinsight.org/tipitaka/kn/snp/snp.1.08.amar.html)) ([pdf](https://drive.google.com/file/d/1ZuNmlS31B_0L5GWplk_r_zruUDP0USo-/view?usp=drivesdk))
-    - A beautiful Discourse, roughly equivalent to the (rightly) much celebrated passage on love in the Christian Bible, [1 Corinthians 13](https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=NIV). 
-    - Notice, though, how the Buddha's description of love explicitly extends our compassionate circle of concern to all sentient beings.
-    - Also, rather than framing the sermon as a description of what love is (“patient, kind” etc) notice how the Buddha instead describes love as a practice, giving us instructions on what “should be done.” This shift away from descriptive philosophy and towards ethical praxis is one of the hallmarks of Buddhism, especially in contrast with Western philosophy.
-    - Also, consider reading this passage out loud, remembering that the Buddha's words were passed down primarily by oral recitation. How does reading it out loud change your experience of the text?
-- [Loving Kindness Chant - Abhayagiri Monastery.mp3](https://drive.google.com/file/d/1V1-v8JPm-hw9URWYKwUZkvtYWEpNq5qv/view?usp=drivesdk)
-    - Now, listen to it chanted in the traditional style by a group of monks in California. 
-    - What benefits do you see in chanting this way, as compared to simply reading the text?
+{% include inline_content.html category="canon" slug="snp1.8" %}
+- A beautiful Discourse, roughly equivalent to the (rightly) much celebrated passage on love in the Christian Bible, [1 Corinthians 13](https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=NIV). 
+- Notice, though, how the Buddha's description of love explicitly extends our compassionate circle of concern to all sentient beings.
+- Also, rather than framing the sermon as a description of what love is (“patient, kind” etc) notice how the Buddha instead describes love as a practice, giving us instructions on what “should be done.” This shift away from descriptive philosophy and towards ethical praxis is one of the hallmarks of Buddhism, especially in contrast with Western philosophy.
+- Also, consider reading this passage out loud, remembering that the Buddha's words were passed down primarily by oral recitation. How does reading it out loud change your experience of the text?
 
-- [On Love - Ajahn Jayasaro.pdf](https://drive.google.com/file/d/1TlptylvvxJ1hvsjnFY7YBcNy9pzwH-36/view?usp=drivesdk)
-    - Ajahn Jayasaro beautifully explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
-    - While reading, I encourage you to really engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you? 
+{% include inline_content.html category="av" slug="loving-kindness-chant_abhayagiri" %}
+- Now, listen to it chanted in the traditional style by a group of monks in California. 
+- What benefits do you see in chanting this way, as compared to simply reading the text?
+
+{% include inline_content.html category="booklets" slug="on-love_jayasaro" %}
+- Ajahn Jayasaro beautifully explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
+- While reading, I encourage you to really engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you? 
 
 Ideally, the chapter on meditation would be accompanied by in-person meditation instruction. I encourage the digital student to seek out a local meditation group at this point if you haven't done so already to get first-hand experience with this very important part of Buddhist practice if you haven’t already.
 
