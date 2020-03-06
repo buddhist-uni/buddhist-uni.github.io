@@ -1,6 +1,6 @@
 ---
 title: "Introduction to *From Birch Bark to Digital Data*"
-authors: [harrison-paul, hatmann-ju]
+authors: [harrison-paul, hartmann-ju]
 year: 2009
 month: jun
 formats: [pdf]

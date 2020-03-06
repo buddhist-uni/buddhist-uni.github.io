@@ -1,5 +1,5 @@
 ---
-title: "The General Introduction to In The Buddha's Words"
+title: "The General Introduction to *In The Buddha's Words*"
 authors: [bodhi]
 chapter: 0
 from_book: in-the-buddhas-words_bodhi

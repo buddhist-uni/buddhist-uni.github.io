@@ -24,6 +24,9 @@ This course gives a thorough introduction to what the Buddha taught in his own w
 
 
 ### Textbook
+
+{% include inline_content.html category="monographs" slug="in-the-buddhas-words_bodhi" %}
+
 The main textbook for this course is the (commercial) work **In The Buddha's Words** by Bhikkhu Bodhi. If you cannot obtain a copy of the book, [an open-source version can be read online for free at Reading Faithfully](https://www.readingfaithfully.org/in-the-buddhas-words-an-anthology-of-discourses-from-the-pali-canon-linked-to-suttacentral-net/), but the real book is preferred for its helpful redactions and notes.
 
 This book gives a systematic introduction to the Buddha's teachings, and will be the primary text for this class.
@@ -52,44 +55,48 @@ of Early Buddhism on the forum (including yours truly) and we would be happy to 
 As you make your way through ItBW, I encourage you to weave in the following works about 
 the history of the texts you're studying:
 
-- [The Introduction to ItBW](https://web.archive.org/web/20160320174115/http://www.wisdompubs.org/book/buddha%E2%80%99s-words/introduction){:target="_blank"}
-    - Gives a good overview of the oral tradition. Don't skip it! 
+{% include inline_content.html category="excerpts" slug="itbw_general-intro_bodhi" %}
+- Gives a good overview of the oral tradition. Don't skip it! 
 
 {% include inline_content.html category="articles" slug="early-buddhism-with-kalupahana_payne" %}
 - On why it's important to study the early texts.
 - Read alongside chapter one of ItBW
 
-- [In Search of the Real Buddha - Peter Harvey.pdf](https://drive.google.com/file/d/1r7osuPlaXjvg8PI0O5IjdxMoDg9togLU/view?usp=drivesdk)
-    - About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.
-    - This should be read alongside chapter two of ItBW which is about the Buddha
-- [From Birch Bark to Digital Data (Preview).pdf](https://drive.google.com/file/d/1hN7NGrzTcfK4Pt85T-t1D5HZtwWaLjH4/view?usp=drivesdk)
-    - Gives an overview of the archeology and methodology employed by modern scholars.
-    - Don't read this to memorize the details. It won't be on the test! Mostly it's presented here to give a “behind the scenes” peek at the scholarship that's gone into discovering early Buddhism.
-    - Read alongside chapter three of ItBW: Approaching the Dhamma
-- [Early Buddhism (class) 2: Texts - Sujato and Brahmali.zip](https://drive.google.com/file/d/1M5MPYI6ODbvy1e5-FP8wDhawrGOPDy3r/view?usp=drivesdk)
-    - We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts.
-    - Should be done alongside chapter five of ItBW
-- [Historical Authenticity of Early Buddhist Literature - Alex Wynne.pdf](https://drive.google.com/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu/view?usp=drivesdk)
-    - Gives a short overview of how we know these texts are in fact authentic
-    - Alongside chapter seven of ItBW
-- [Oral Transmission - Alex Wynne.pdf](https://drive.google.com/file/d/18z28tsjXlB_cnBSGgVViN3WowA97iywB/view?usp=drivesdk)
-    - Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim
-    - Read alongside chapter nine of ItBW (where the “verbatim” character of some of the suttas should become readily apparent!) 
+{% include inline_content.html category="articles" slug="in-search-of-the-real-buddha_harvey" %}
+- About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.
+- This should be read alongside chapter two of ItBW which is about the Buddha
+
+{% include inline_content.html category="papers" slug="birch-bark-to-digital-data_introduction_harrison-and-hartmann" %}
+- Gives an overview of the archeology and methodology employed by modern scholars.
+- Don't read this to memorize the details. It won't be on the test! Mostly it's presented here to give a “behind the scenes” peek at the scholarship that's gone into discovering early Buddhism.
+- Read alongside chapter three of ItBW: Approaching the Dhamma
+
+{% include inline_content.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" %}
+- We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts.
+- Should be done alongside chapter five of ItBW
+
+{% include inline_content.html category="articles" slug="historical-authenticity_wynne" %}
+- Gives a short overview of how we know these texts are in fact authentic
+- Alongside chapter seven of ItBW
+
+{% include inline_content.html category="articles" slug="oral-transmission_wynne" %}
+- Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim
+- Read alongside chapter nine of ItBW (where the “verbatim” character of some of the suttas should become readily apparent!) 
 
 ### One Additional Sutra
 
 In addition to the Pāli texts highlighted in ItBW, I recommend the following additional discourse:
 
-- Discourse on Knowing the Better Way to Catch a Snake - Plum Village ([direct link](https://plumvillage.org/sutra/discourse-on-knowing-the-better-way-to-catch-a-snake/)) ([pdf](https://drive.google.com/file/d/1lq2IbXxUrj3GaRvYLjAfbMEMjTbIzysD/view?usp=drivesdk))
-    - This discourse from the Chinese Canon is included to demonstrate how extraordinarily similar the language of the northern Agamas are compared to the language of the Pāli Canon (preserved in Sri Lanka)
+{% include inline_content.html category="canon" slug="ma220" %}
+- This discourse from the Chinese Canon is included to demonstrate how extraordinarily similar the language of the northern Agamas are compared to the language of the Pāli Canon (preserved in Sri Lanka)
 This sutra is most directly parallel to the Pāli texts presented in ItBW chapter nine on the Five Aggregates and it could be read when you get to that part of the book, or after you've finished.
 
 ## Conclusion
 
 We end the course with this word of advice:
 
-- [In Line With the Teaching (2010-03-22) - Yuttadhammo.mp3](https://drive.google.com/file/d/1udQ4yxzpKzZhiel2bbZZ8S9JBHST5S-g/view?usp=drivesdk)
-    - Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.
+{% include inline_content.html category="av" slug="in-line_yuttadhammo" %}
+- Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.
 
 {% include course_feedback.html course="The+Early+Buddhist+Texts" %}
 
