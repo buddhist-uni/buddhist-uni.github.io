@@ -22,20 +22,20 @@ This is a self-paced course, which is estimated to take about 6 weeks to complet
 ### Introduction
 > “There are two conditions for the arising of right view. What two? The words of another and proper attention.” ~ [AN2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5)
 
-- The Buddha and His Dhamma by Bhikkhu Bodhi ([epub](https://drive.google.com/file/d/1gq7WTu674hTTOIekhg3s5nC9Qigb5NYu/view?usp=drivesdk)) ([pdf](https://drive.google.com/file/d/12sAeNsaZSnoFrizqbrtnbtf8P4iHIpiE/view?usp=drivesdk))
-    - This work by Bhikkhu Bodhi gives a brief overview of the content for the class.
+{% include inline_content.html category="booklets" slug="buddha-and-his-dhamma_bodhi" %}
+- This work by Bhikkhu Bodhi gives a brief overview of the content for the class.
 
 ---
 
 Next, we listen to a couple Dhamma talks by two of my own dear teachers, giving us an introduction to Buddhism. What do you notice about these talks? What surprises you? What's interesting? Jot down whatever observations and questions you have after listening, and as you go through the course we'll refer back to these notes. 
 
-- [Some Dhamma Advice (November 3, 2017) - Ajahn Suchart.mp3](https://drive.google.com/file/d/1ZG1LLOeKoX0RM3kj1VfXuIRKN_qDrCgH/view?usp=drivesdk)
-- [Introduction to Buddhism (2010-02-04) - Yuttadhammo.mp3](https://drive.google.com/file/d/15-Kw1ztByP8v1rdTFh6D7m83Eep-A9mn/view?usp=drivesdk)
+{% include inline_content.html category="av" slug="dhamma-advice_suchart" %}
+{% include inline_content.html category="av" slug="buddhism-intro_yuttadhammo" %}
 
 ### Textbook
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
 
-#### An Introduction to Buddhism by Peter Harvey
+{% include inline_content.html category="monographs" slug="intro-to-buddhism_harvey" %}
 
 This textbook can be read alongside the course, providing the basic framing for the rest of the course. The class is arranged according to its outline and some of its topics — rituals, history, sects — will not be covered by the other works. 
 
@@ -45,14 +45,14 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 *Readings parallel to Chapters 1–2 of Harvey*
 
-#### [The Biography of Shakyamuni Buddha - Ven Master Hsing Yun](https://docs.google.com/document/d/15HWz48ZECEgsTvs3-UsBBMCEMPB2cLf2NhGOnksoGGY/edit?usp=drivesdk)
+{% include inline_content.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
 A simple but powerful retelling of the Buddha's life story from a renowned modern master.
 
-- [A Secular Introduction to Buddhism - Doug Smith](https://youtu.be/pbngKOUgCDY)
-    - A short introduction to Buddhism from a more secular perspective.
+{% include inline_content.html category="av" slug="secular-intro-to-buddhism_doug-smith" %}
+- A short introduction to Buddhism from a more secular perspective.
 
-- SN22.086 ([mp3](https://drive.google.com/file/d/17GwZmFfgBoq87pp7TPzl56UcUJCylZ5Q/view?usp=drivesdk)) ([text](https://suttacentral.net/sn22.86/en/bodhi))
-    - Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most.
+{% include inline_content.html category="canon" slug="sn22.86" %}
+- Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most.
 
 ### What did the Buddha teach?
 
@@ -60,15 +60,13 @@ A simple but powerful retelling of the Buddha's life story from a renowned moder
 
 The next part of the class tackles the teachings. As this section is the primary focus of this course, it is the longest.
 
-#### The Miracle of Mindfulness by Thich Nhat Hanh ([epub](https://drive.google.com/file/d/1mMSvz64NDhG2xBFLSzSGR-mbZlLpGrhE/view?usp=drivesdk)) ([pdf](https://drive.google.com/file/d/1etQnhIZt2a0_tkFEFC8IaTkfsuYFND_Y/view?usp=drivesdk))
-
-The emotional heart of this course, and one of my favorite books period. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
+{% include inline_content.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+- The emotional heart of this course, and one of my favorite books period. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
 
 #### Alternative Presentations of the Dhamma
 
-- Are we morally obligated to meditate? ([on Vox](https://www.vox.com/future-perfect/2020/1/10/21013234/meditation-brain-neuroscience-moral-obligation)) ([pdf](https://drive.google.com/file/d/1_0CwIktwO3bg2kUn7QRfsRSegmAhNiGw/view?usp=drivesdk))
-    - An example of the many popular press articles reporting on the benefits of meditation
-
+{% include inline_content.html category="articles" slug="meditation-moral-obligation_vox" %}
+- An example of the many popular press articles reporting on the benefits of meditation
 
 - AN 8:53  Saṅkhitta Sutta  - In Brief. ([on SuttaCentral](https://suttacentral.net/an8.53/en/sujato)) ([pdf](https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk))
     - In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
