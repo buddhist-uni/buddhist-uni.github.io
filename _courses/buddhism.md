@@ -122,18 +122,22 @@ It's also a good time to revisit your questions from the introduction one more t
 
 I supplement the final chapters in Harvey on the recent history of Buddhism with a few essays on the unique cultural challenges and opportunities which Western Buddhists now face:
 
-- [Buddhism and Modernity - Douglas Powers.pdf](https://drive.google.com/file/d/1CpwCDBmqFH_1SoPURKsr83s8gOOB2Zrw/view?usp=drivesdk)
-    - Individualism, science, freedom and morality — four contemporary conversations which Buddhism has much to contribute to
-- [Buddhism and human flourishing - Peter Harvey.pdf](https://drive.google.com/file/d/1wGGlSkodHyt73Nf5qR3Xg8siOru_61a9/view?usp=drivesdk)
-    - A defense of Buddhism in light of some Western critiques and an encouragement to try out one particular Eastern practice.
-- [The Science Delusion (article) - Curtis White.pdf](https://drive.google.com/file/d/1SXVENICQX42VWItyUaT8pHKhq5N27uD5/view?usp=drivesdk)
-    - A provocative essay on thinking more critically about our scientific, materialistic assumptions before we instinctively “reform” Buddhism to conform to them.
+{% include inline_content.html category="articles" slug="buddhism-and-modernity_powers-doug" %}
+- Individualism, science, freedom and morality — four contemporary conversations which Buddhism has much to contribute to
+
+{% include inline_content.html category="essays" slug="buddhism-and-human-flourishing_harvey" %}
+- A defense of Buddhism in light of some Western critiques and an encouragement to try out one particular Eastern practice.
+
+{% include inline_content.html category="articles" slug="science-delusion_white-curtis" %}
+- A provocative essay on thinking more critically about our scientific, materialistic assumptions before we instinctively “reform” Buddhism to conform to them.
 
 ### And Lastly,
 
-- Read: The Highest Blessings ([pdf](https://drive.google.com/file/d/1ZkSosgqWjweN4BkaquDtfHjYn7JczPg-/view?usp=drivesdk))
-- And listen: The Highest Blessings ([on YouTube](https://www.youtube.com/watch?v=1Jap6xMuuo0)) ([mp3](https://drive.google.com/file/d/1biFd80sRdq7p2paunwCZT5irCP2wT9ve/view?usp=drivesdk))
-    - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
+{% include inline_content.html category="canon" slug="khp5" %}
+
+{% include inline_content.html category="av" slug="highest-blessings_abhayagiri" %}
+
+- The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
 **May your life thus be blessed!**
 
 {% include course_feedback.html course="Buddhism+101" %}
