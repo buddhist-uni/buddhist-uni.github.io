@@ -2,8 +2,8 @@
 title: The Los Angeles Course
 authors: [yuttadhammo]
 year: 2009
-external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/"
-formats: [mp3]
+source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/"
+formats: [mp3s]
 drive_links: ["https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06"]
 ---
 

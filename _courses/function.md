@@ -16,7 +16,6 @@ This course strives to be a rigorous overview of Buddhism suitable for everyone 
 
 For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 
-
 ## Course Outline
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 
 
@@ -26,20 +25,23 @@ please feel free to skip ahead and read the two books from the “Intermission�
 ### Main Text
 
 This course follows the excellent (if sometimes repetitive) textbook by Bhikkhu Cintita:
-- [***Buddhist Life, Buddhist Path* - Bhikkhu Cintita.pdf**](https://drive.google.com/file/d/102Agmeq7Hoo50YUA0Krbeawh-bra8j10/view?usp=drivesdk)
-    - A gradual guide into the heart of Buddhism.
+
+{% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
+- A gradual guide into the heart of Buddhism.
 
 ### Introduction
 
 This book is divided into two, unsurprising halves: Buddhist Life and Buddhist Path. These two divisions roughly follow the exterior and interior transformation of the practitioner, and also follows the gradual explanation of Buddhism, from the mundane to the transcendent, often used by the Buddha himself.
 
+{% include inline_content.html category="av" slug="going-forth_yuttadhammo" %}
 
-- [Going Forth (2010-12-05) - Yuttadhammo.mp3](https://drive.google.com/file/d/1HjRq-r_XpMEMzTWgk47_ag5CGOyZsrkM/view?usp=drivesdk)
-    - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
+- In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
 
 ### Lectures
 
 Bhante Yuttadhammo will be our lecturer for this class. 
+
+{% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
 
 His **[Los Angeles Talks](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06)** were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
@@ -51,6 +53,8 @@ I have reordered and renumbered the lectures (in [this Google Drive folder](http
     - This lecture should be listened to after reading chapter 1 and its supplements (below).
 3. and so on...
 
+Please listen to them in this order, not chronologically.
+
 ### Supplementary Readings
 
 To get some diversity of voices, and to enrich our understanding, we supplement each chapter with some additional words. Please read the following after each chapter:
@@ -59,23 +63,26 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 *Chapter 1*
 
-- [Craving and Dukkha - Analayo.pdf](https://drive.google.com/file/d/13me29X0Tk44xTcvo-pDlA62ejh7GUXKs/view?usp=drivesdk)
-- [The Medical Analogy of the Four Noble Truths - Louis De La Vallée Poussin.pdf](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk)
-    - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
+{% include inline_content.html category="articles" slug="craving-dukkha_analayo" %}
+(Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk))
+- We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
 *Chapter 2*
-- [Generosity First - Ajahn Geoff.pdf](https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk)
-    - Ajahn Geoff encourages Westerners to ground their practice in generosity.
+
+{% include inline_content.html category="essays" slug="generosity-first_geoff" %}
+- Ajahn Geoff encourages Westerners to ground their practice in generosity.
 
 *Chapter 3*
-- The Five Precepts - Bhante J ([on YouTube](https://youtu.be/gnhBxA6iyNk)) ([mp3](https://drive.google.com/file/d/1MQOjFt7Os8mjdEpQCSZNuNAHP4q5j9wt/view?usp=drivesdk))
-- Guarding the Senses - Ven Hong Ci ([on YouTube](https://youtu.be/YGjzL4SU78E)) ([mp3](https://drive.google.com/file/d/1vGu8qGYeFSh4cguHzzKzCIQNo_5x48Io/view?usp=drivesdk))
+
+{% include inline_content.html category="av" slug="five-precepts_jayasara" %}
+
+{% include inline_content.html category="av" slug="guard-senses_hong-ci" %} 
 
 *Chapter 4*
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6)
 
-- [Putting Cruelty First - Judith Shklar.pdf](https://drive.google.com/file/d/1DtyLTYd94iRZaqJeb5f21Lj7dv5YGIAY/view?usp=drivesdk)
-    - In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
+{% include inline_content.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
+- In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
 
 *Chapter 5*
 - [Dealing with Difficult People-Ajahn Brahmavamso.pdf](https://drive.google.com/file/d/1vRSlCvZxKpea1T2gvccISZGaPj8k2Zau/view?usp=drivesdk)
