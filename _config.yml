@@ -61,5 +61,11 @@ defaults:
         type: "courses"
     values:
         layout: "course"
+  -
+    scope:
+        path: ""
+        type: "content"
+    values:
+        formats: ["pdf"]
 
 
