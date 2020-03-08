@@ -16,7 +16,6 @@ This course strives to be a rigorous overview of Buddhism suitable for everyone 
 
 For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 
-
 ## Course Outline
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 
 
@@ -26,30 +25,35 @@ please feel free to skip ahead and read the two books from the “Intermission�
 ### Main Text
 
 This course follows the excellent (if sometimes repetitive) textbook by Bhikkhu Cintita:
-- [***Buddhist Life, Buddhist Path* - Bhikkhu Cintita.pdf**](https://drive.google.com/file/d/102Agmeq7Hoo50YUA0Krbeawh-bra8j10/view?usp=drivesdk)
-    - A gradual guide into the heart of Buddhism.
+
+{% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
+- A gradual guide into the heart of Buddhism.
 
 ### Introduction
 
 This book is divided into two, unsurprising halves: Buddhist Life and Buddhist Path. These two divisions roughly follow the exterior and interior transformation of the practitioner, and also follows the gradual explanation of Buddhism, from the mundane to the transcendent, often used by the Buddha himself.
 
+{% include inline_content.html category="av" slug="going-forth_yuttadhammo" %}
 
-- [Going Forth (2010-12-05) - Yuttadhammo.mp3](https://drive.google.com/file/d/1HjRq-r_XpMEMzTWgk47_ag5CGOyZsrkM/view?usp=drivesdk)
-    - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
+- In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
 
 ### Lectures
 
 Bhante Yuttadhammo will be our lecturer for this class. 
 
-His **[Los Angeles Talks](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06)** were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
+{% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
+
+His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
 
-I have reordered and renumbered the lectures (in [this Google Drive folder](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06)) according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
+I have reordered and renumbered the lectures [in Google Drive](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06) according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
 1. [00 - Three Trainings (2009-03-16).mp3](https://drive.google.com/file/d/1uLo1BH-LBtNIaTQ60llXTmnwHA4FYuG0/view?usp=drivesdk)
     - This first lecture, to listen to before starting the book, explains the three-fold training which I mentioned in my definition.
 2. [01 - Wrong View (2009-03-28).mp3](https://drive.google.com/a/u.northwestern.edu/file/d/1wWnL668_czXEY5tbugEqGgMfhkrtX_L_/view?usp=drivesdk)
     - This lecture should be listened to after reading chapter 1 and its supplements (below).
 3. and so on...
+
+Please listen to them in this order, not chronologically.
 
 ### Supplementary Readings
 
@@ -59,32 +63,40 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 *Chapter 1*
 
-- [Craving and Dukkha - Analayo.pdf](https://drive.google.com/file/d/13me29X0Tk44xTcvo-pDlA62ejh7GUXKs/view?usp=drivesdk)
-- [The Medical Analogy of the Four Noble Truths - Louis De La Vallée Poussin.pdf](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk)
-    - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
+{% include inline_content.html category="articles" slug="craving-dukkha_analayo" %}
+(Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk))
+- We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
 *Chapter 2*
-- [Generosity First - Ajahn Geoff.pdf](https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk)
-    - Ajahn Geoff encourages Westerners to ground their practice in generosity.
+
+{% include inline_content.html category="essays" slug="generosity-first_geoff" %}
+- Ajahn Geoff encourages Westerners to ground their practice in generosity.
 
 *Chapter 3*
-- The Five Precepts - Bhante J ([on YouTube](https://youtu.be/gnhBxA6iyNk)) ([mp3](https://drive.google.com/file/d/1MQOjFt7Os8mjdEpQCSZNuNAHP4q5j9wt/view?usp=drivesdk))
-- Guarding the Senses - Ven Hong Ci ([on YouTube](https://youtu.be/YGjzL4SU78E)) ([mp3](https://drive.google.com/file/d/1vGu8qGYeFSh4cguHzzKzCIQNo_5x48Io/view?usp=drivesdk))
+
+{% include inline_content.html category="av" slug="five-precepts_jayasara" %}
+
+{% include inline_content.html category="av" slug="guard-senses_hong-ci" %} 
 
 *Chapter 4*
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6)
 
-- [Putting Cruelty First - Judith Shklar.pdf](https://drive.google.com/file/d/1DtyLTYd94iRZaqJeb5f21Lj7dv5YGIAY/view?usp=drivesdk)
-    - In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
+{% include inline_content.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
+- In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
 
 *Chapter 5*
-- [Dealing with Difficult People-Ajahn Brahmavamso.pdf](https://drive.google.com/file/d/1vRSlCvZxKpea1T2gvccISZGaPj8k2Zau/view?usp=drivesdk)
-    - Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.
+
+{% include inline_content.html category="av" slug="dealing-with-difficult-people_brahm" %}
+- Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.
 
 *Chapter 6*
-- [Stages of Enlightenment.pdf](https://drive.google.com/file/d/12yPhIP7tQhw8KzlOl3n_YGbbNvySDLUy/view?usp=drivesdk)
-    - A small chart summarizing the four stages of enlightenment mentioned in this chapter.
-    - These stages will come up again in more detail later. 
+
+{% include inline_content.html category="reference" slug="stages-of-enlightenment" %}
+- A small chart summarizing the four stages of enlightenment mentioned in this chapter.
+- These stages will come up again in more detail later. 
+
+<i class="fas fa-dharmachakra"></i> Suttas from the Anguttara Nikaya on Spiritual Companionship
+
 - A short selection of suttas by Bhikkhu Bodhi, containing the basic instructions on how to wisely find and attend to spiritual friends and teachers. 
     1. [AN3.26](https://suttacentral.net/an3.26/en/bodhi): “And what kind of person is to be associated with, followed, and served?”
     1. [AN4.32](https://suttacentral.net/an4.32/en/bodhi): “These are the four means of sustaining a favorable relationship.”
@@ -101,13 +113,14 @@ And that is somewhat accurate of what we've covered so far. Buddhism claims no e
 
 It is at this point, then, that we (re)introduce the Four Noble Truths: that life entails suffering, caused by our clinging, whose sublime cessation, is brought about by the Noble Eightfold Path:
 
-- ***The Noble Eightfold Path* by Bhikkhu Bodhi** ([pdf](https://drive.google.com/file/d/1wDAnqsfri8nN-MIbVRhcAnve6JgecHFa/view?usp=drivesdk)) ([epub](https://drive.google.com/file/d/1FoJwZf7dnSRg07BUuEZQDcH6rNw2zdtO/view?usp=drivesdk))
-    - We take a short break from Bhikkhus Cintita and Yuttadhammo here, to read Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
-- ***The Buddha in His Own Words* by Bhikkhu Nyanamoli** ([pdf](https://drive.google.com/file/d/1l8SVLvF5OH8Zx_HSOUOKZW6S24OewmH-/view?usp=drivesdk)) ([epub](https://drive.google.com/file/d/1DcSy5oQEm9RQqdDOBRTLbvk0XKceH8rv/view?usp=drivesdk))
-    - Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
+{% include inline_content.html category="booklets" slug="noble-eightfold-path_bodhi" %}
+- We take a short break from Bhikkhus Cintita and Yuttadhammo here, to read Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
+
+{% include inline_content.html category="booklets" slug="in-his-own-words_nyanamoli" %}
+- Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
 
 
-I recommend reading Nyanamoli’s denser anthology section-by-section before Bhikkhu Bodhi’s more lucid analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation, bouncing back and forth like this:
+I recommend reading Nyanamoli’s denser anthology section-by-section before Bhikkhu Bodhi’s more lucid analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
 1. Bodhi: Preface
 2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
 3. Bodhi: Part 1 (The Way to the End of Suffering)
@@ -128,18 +141,23 @@ I recommend reading Nyanamoli’s denser anthology section-by-section before Bhi
 Having thus gotten a traditional introduction to the Path, we can now return to Bhikkhu Cintita’s more intricate explanation.
 
 *Chapter 7*
-- [Buddhism: The only real science - Ajahn Brahm.pdf](https://drive.google.com/file/d/1JkIZWAjFZs3SA3T13UasDSPuDh_WR9lQ/view?usp=drivesdk)
-    - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
+
+{% include inline_content.html category="essays" slug="real-science_brahm" %}
+- Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
 *Chapter 8*
-- [AN10.61](https://suttacentral.net/an10.61/en/sujato): “And what is the fuel for ignorance?”
-    - The Buddha explains what fuel keeps ignorance going, and fuels the path out.
-- [sn22.101.jgol.mp3](https://drive.google.com/file/d/1iE-dx36Xo0MfP2zOIf1KCuDsauMDHga_/view?usp=drivesdk) ([text](https://suttacentral.net/sn22.101/en/sujato))
-    - Liberation is for one who knows and sees the origin and passing away of the aggregates, and it happens as the natural result of cultivating the Noble Eightfold Path.
-    - Interestingly, right intention is not the desire to attain liberation, and the desire for liberation doesn't lead to liberation. Rather, cultivating renunciation, goodwill and harmlessness, and developing the mind accordingly, is the motivation that leads to nibbāna.
-    - While it's impossible to know “today I've made this much progress” it is possible over larger time spans to reflect and see how our practice has changed our character. 
-- [Becoming Your Own Therapist - Tubten Yeshe.pdf](https://drive.google.com/file/d/1KIk3xObv0BG7cJkManHIiNJpInaUc3lO/view?usp=drivesdk)
-    - A short series of talks and Q-and-As on Buddhist wisdom by a Tibetan master. 
+
+{% include inline_content.html category="canon" slug="an10.61" %}
+- The Buddha explains what fuel keeps ignorance going, and fuels the path out.
+
+{% include inline_content.html category="canon" slug="sn22.101" %}
+- Liberation is for one who knows and sees the origin and passing away of the aggregates, and it happens as the natural result of cultivating the Noble Eightfold Path.
+- Interestingly, right intention is not the desire to attain liberation, and the desire for liberation doesn't lead to liberation. Rather, cultivating renunciation, goodwill and harmlessness, and developing the mind accordingly, is the motivation that leads to nibbāna.
+- While it's impossible to know “today I've made this much progress” it is possible over larger time spans to reflect and see how our practice has changed our character. 
+
+
+{% include inline_content.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
+- A short series of talks and Q-and-As on Buddhist wisdom by a Tibetan master. 
 
 *Chapter 9*
 
@@ -150,32 +168,39 @@ This chapter we have an extra lecture, in lieu of our usual essay.
 
 In which we finally get to meditation!
 
-- [Habits Towards Nibbana - Santussika Bhikkhuni.mp3](https://drive.google.com/file/d/1HL6xMd3WMm3xEZEVtUJEnoeIA0WuZV6Z/view?usp=drivesdk)
-    - Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13).
-- [Instructions to Insight meditation - Mahasi Sayadaw.pdf](https://drive.google.com/file/d/1mbopM-l37IcGF_u3l3J5LKhIiZWicgM8/view?usp=drivesdk)
-    - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.
-    - Essentially: note whenever your mind wanders, and then gently return your awareness back to the body, trying to maintain a continuity of awareness as much as possible.
-- [Sensual Pleasures Are Painful - Ajahn Suchart.pdf](https://drive.google.com/file/d/1ptEOf79c5MpuvCTWW0DzZKZTkWTZO2W3/view?usp=drivesdk)
-    - One of my favorite talks by my own teacher, Ajahn Suchart, which beautifully sums up the path, encouraging us all to strive for a real, lasting happiness.
+
+{% include inline_content.html category="av" slug="habits-towards-nibbana_santussika" %}
+- Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13).
+
+{% include inline_content.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
+- A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.
+- Essentially: note whenever your mind wanders, and then gently return your awareness back to the body, trying to maintain a continuity of awareness as much as possible.
+
+{% include inline_content.html category="essays" slug="sensual-pleasures-are-painful_suchart" %}
+- One of my favorite talks by my own teacher, Ajahn Suchart, which beautifully sums up the path, encouraging us all to strive for a real, lasting happiness.
 
 *Chapter 11*
-- [Dependent Liberation - Brahmali.pdf](https://drive.google.com/file/d/1jetbiFi7eU3Zg2GVHrFyobh5uNuQxfZG/view?usp=drivesdk)
-    - Ajahn Brahmali explains how ethics and meditation naturally lead to enlightenment.
-- [an11.002.suci.mp3](https://drive.google.com/file/d/1go7PxjUeiFPCum0UM8ShJZYPrRE_NcyP/view?usp=drivesdk) ([text](https://suttacentral.net/an11.2/en/sujato))
-    - This sutta makes the same point: If one merely focuses on ethics, and becomes consummate in ethics, the path to liberation unfolds on its own.
+
+{% include inline_content.html category="essays" slug="dependant-liberation_brahmali" %}
+- Ajahn Brahmali explains how ethics and meditation naturally lead to enlightenment.
+
+{% include inline_content.html category="canon" slug="an11.2" %}
+- This sutta makes the same point: If one merely focuses on ethics, and becomes consummate in ethics, the path to liberation unfolds on its own.
 
 *Chapter 12*
-- [Fundamentals of Buddhism - Ajahn Panyavaddho.pdf](https://drive.google.com/file/d/1uC-lg-tgFT2U9UZx6wqWaFtTC8OTQM_7/view?usp=drivesdk)
-    - A transcript of a conversation with Ajahn Panyavaddho.
-    - Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
-- [Iti 93: The Fires - John D Ireland](https://suttacentral.net/iti93/en/ireland) ([pdf](https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC/view?usp=drivesdk))
-    - And lastly, a short poem on enlightenment from the Canon.
+
+{% include inline_content.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
+- A transcript of a conversation with Ajahn Panyavaddho.
+- Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
+
+{% include inline_content.html category="canon" slug="iti93" %}
+- And lastly, a short poem on enlightenment from the Canon.
 
 
 ### Conclusion
 
-- [Epilogue - This Opportunity (2009-04-25).mp3](https://drive.google.com/a/u.northwestern.edu/file/d/1hYrrndIYsfYCRQJ9Z7HuqKTPSAcd1xYr/view?usp=drivesdk)
-    - Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 
+{% include inline_content.html category="av" slug="this-opportunity_yuttadhammo" %}
+- Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 
 
 
 {% include course_feedback.html course="The+Function+of+Buddhism" %}

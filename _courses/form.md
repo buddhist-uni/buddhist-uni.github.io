@@ -28,16 +28,19 @@ The history portion of the course is the longest and describes the entire histor
 ### Introduction
 On forms and the formless.
 
-- [On Science Religion and Culture - Yuttadhammo.pdf](https://drive.google.com/file/d/1j_fOph2ODVm1U7bSxZiBnVpYDjR0qtUJ/view?usp=drivesdk)
-    - Here we get Bhante Yuttadhammo’s definition of religion which I referenced earlier, and his introductory thoughts on the cultural forms of Buddhism.
+{% include inline_content.html category="essays" slug="on-science-religion-and-culture_yuttadhammo" %}
+- Here we get Bhante Yuttadhammo’s definition of religion which I referenced earlier, and his introductory thoughts on the cultural forms of Buddhism.
 
-- [What Buddhism Offers (2009-10-19) - Yuttadhammo.mp3](https://drive.google.com/file/d/1izjyBM-fE8HBbpeZIpmYNvAS_rA4ODVf/view?usp=drivesdk)
-    - Bhante Yuttadhammo then gives us his thoughts on the essence of Buddhism.
+
+{% include inline_content.html category="av" slug="what-buddhism-offers_yuttadhammo" %}
+- Bhante Yuttadhammo then gives us his thoughts on the essence of Buddhism.
 
 ### Part 1: History
 #### Textbook
 
-Your main text for this third of the class is the excellent book by Robinson et al: **Buddhist Religions: A Historical Introduction**. 
+Your main text for this third of the class is the excellent book by Robinson et al:  
+
+{% include inline_content.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 
 Note: there are a few editions of this book. I have taken my chapter numbers below from the fourth edition. My apologies if your chapter numbers vary from mine and I hope you can figure out the mapping anyway.
 
@@ -45,53 +48,65 @@ Note: there are a few editions of this book. I have taken my chapter numbers bel
 As you read through *Robinson*, please also consider the following:
 
 *Parallel to Robinson Ch 1: Awakening*
-- The Noble Quest - Horner ([pdf](https://drive.google.com/file/d/1rAYhpwekeXKhl1g0YGz6i58sN0Eotrc9/view?usp=drivesdk)) ([epub](https://drive.google.com/file/d/1TdVqY3K7xioOljsmQHYPeS2A5R7ut1lj/view?usp=drivesdk))
-    - The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
-    - The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
+
+{% include inline_content.html category="booklets" slug="noble-quest_horner" %}
+- The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
+- The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
 
 *Parallel to Robinson Ch 2: Teacher*
-- [Early Buddhism (class) 1: History - Sujato and Brahmali.zip](https://drive.google.com/file/d/1ijhtCUQK5H0VMVpit92aElJNzRkxZKFl/view?usp=drivesdk)
-    - An Introduction to Buddhist History
-- [The Anscestral Stupas of Shwedagon.pdf](https://drive.google.com/file/d/1B3-SkCSpo31J5KSIY2HarYfCBOCqZQiB/view?usp=drivesdk)
-    - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
+
+{% include inline_content.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
+- An Introduction to Buddhist History
+
+{% include inline_content.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
+- “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
 *Parallel to Robinson chapter 3: “Development”*
-- [Assertion and Restraint in Dhamma Transmission in Early Pāli Sources - Graham Dixon.pdf](https://drive.google.com/file/d/1ouApfRu693FtiUneacjnLkfLNCXmXjmr/view?usp=drivesdk)
-	- Buddhism is not an especially evangelical religion. This paper explores the unique (compared to other religions) way that Buddhism spread.
-- [Venerated Objects and Symbols of Early Buddhism - Peter Harvey.pdf](https://drive.google.com/file/d/1KwcRMo_IE7vaD_1-KFImHL6CDy7jYh97/view?usp=drivesdk)
-	- The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.
+
+{% include inline_content.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
+- Buddhism is not an especially evangelical religion. This paper explores the unique (compared to other religions) way that Buddhism spread.
+
+{% include inline_content.html category="papers" slug="venerated-objects-early-buddhism_harvey" %}
+- The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.
 
 *Chapter 4: “The Rise of Mahayana”*
-- [Arahants, Bodhisattvas, and Buddhas - Bhikkhu Bodhi.pdf](https://drive.google.com/file/d/1AeutNbkeeAAHT1D7e2vJT1870L6gbv1W/view?usp=drivesdk)
-	- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
+
+{% include inline_content.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
+- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
 
 *Chapter 5: “The Pantheon”*
-- [TheTrueDhammaHasDisappeared-AjahnGeoff.pdf](https://drive.google.com/file/d/1x-XOj7wyQwj8EgiXcK-prFLn2279cGDU/view?usp=drivesdk)
-	- As Buddhism spread around Asia, many new teachings were introduced, and some of them miss the mark. Today, as all remaining traditions have their share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning where we place our faith. 
+
+{% include inline_content.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
+- As Buddhism spread around Asia, many new teachings were introduced, and some of them miss the mark. Today, as all remaining traditions have their share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning where we place our faith. 
 
 *After Chapter 6 of Robinson on “Vajrayana” Tibet*
-- [The Story of the Horse-King and the Merchant Siṃhala in Buddhist Texts - Naomi Appleton.pdf](https://drive.google.com/file/d/1EMyzy472xx8nv1g4Bhfc_kHGmoH-IVM1/view?usp=drivesdk)
-	- One story, five countries.
-	- Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
+
+{% include inline_content.html category="articles" slug="story-of-the-horse-king_appleton" %}
+- One story, five countries.
+- Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
 *Parallel to Robinson Chapters 7 and 8 on Sri Lanka and China*
 
 Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
-- [Bojjhanga Suttas - Dhammaruwan.mp3](https://drive.google.com/file/d/1Gw4OUKWS_uIXLuMp04-3_EPm_uS2wl0V/view?usp=drivesdk)
-- [Bojjhanga Suttas.pdf](https://drive.google.com/file/d/1oQz56yQGVWF23Zd76n6Ayhm-d4rL0MCG/view?usp=drivesdk)
-	- First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
-- [Drums and Bells_ Evening Chanting - Qing De Monastery.mp3](https://drive.google.com/file/d/1nKelIAHnESuzswf3WTt_1mRt51jtN8Uh/view?usp=drivesdk)
-	- A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
+
+{% include inline_content.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
+- First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
+
+{% include inline_content.html category="av" slug="drums-and-bells_qing-de" %}
+- A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
 *Robinson Chapter 10*
-- Introduction to Buddhist Art – Doug Smith ([on YouTube](https://youtu.be/ydYLXYvz6oA))
-	- From the iconic period to the modern day in a few minutes. A very short introduction to Buddhist Art.
+
+{% include inline_content.html category="av" slug="introduction-to-buddhist-art_doug-smith" %}
+- From the iconic period to the modern day in a few minutes. A very short introduction to Buddhist Art.
 
 *Robinson Chapter 12: “Buddhism Comes West”*
-- [Altruism in Classical Buddhism - Todd Lewis.pdf](https://drive.google.com/file/d/19kpB0yd1VqalIEsrZMTMzew2TwxqIuFK/view?usp=drivesdk)
-	- A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
-- [Bridging The Two Vehicles - Bhikkhu Bodhi.mp3](https://drive.google.com/file/d/1zLdIIifcK0UGFGKV1flAioO9nbuffFED/view?usp=drivesdk)
-	- As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
+
+{% include inline_content.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
+- A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
+
+{% include inline_content.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
+- As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
 In conclusion: **History is now ours to make!**
 
@@ -101,18 +116,22 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 
 #### Introduction
 
-- [sn45.002.jgol.mp3](https://drive.google.com/file/d/1PmcPd-ILBGj5AtnDryHU6vVPriIYzUgv/view?usp=drivesdk)
-	- Joseph Goldstein reads the Buddha's own take on “the entire spiritual life.”
-- [Going Forth - Ajahn Viradhammo.pdf](https://drive.google.com/file/d/1gi0znPlOAxf9syPcOFSFkxDQVeZKYEoj/view?usp=drivesdk)
-	- A beautiful sermon on the value of monasticism.
-- [The Economy of Gifts - Thanissaro Bhikkhu](https://www.accesstoinsight.org/lib/authors/thanissaro/economy.html)
-	- Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
-- [Affective Dimensions of the Sri Lankan Bhikkhunī Revival - Susanne Mrozik.pdf](https://drive.google.com/file/d/1wvuvpIU0-pmvu_VvyKxIutqCi43i9Jgq/view?usp=drivesdk)
-	- A paper on how the flourishing of the monastic community affects everyone around them.
+{% include inline_content.html category="canon" slug="sn45.2" %}
+- Joseph Goldstein reads the Buddha's own take on “the entire spiritual life.”
+
+{% include inline_content.html category="essays" slug="going-forth_viradhammo" %}
+- A beautiful sermon on the value of monasticism.
+
+{% include inline_content.html category="essays" slug="economy-of-gifts_geoff" %}
+- Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
+
+{% include inline_content.html category="articles" slug="we-love-our-nuns_mrozik" %}
+- A paper on how the flourishing of the monastic community affects everyone around them.
 
 #### Main Text
-- [***A Culture of Awakening* by Bhikkhu Cintita**](https://bhikkhucintita.files.wordpress.com/2014/04/sasana6x9withcover.pdf) (or [on Google Drive](https://drive.google.com/file/d/1zur07giMlXjhQhvc5ZLcE737t5IEpqxb/view?usp=drivesdk))
-	- Given the thousands of years separating us from the Buddha, Bhikkhu Cintita asks the excellent question of how it is that Buddhism has survived so well across time and cultures, and then uses this theory to ponder how modern, Western practitioners should approach this question of “Sasana.”
+
+{% include inline_content.html category="booklets" slug="culture-of-awakening_cintita" %}
+- Given the thousands of years separating us from the Buddha, Bhikkhu Cintita asks the excellent question of how it is that Buddhism has survived so well across time and cultures, and then uses this theory to ponder how modern, Western practitioners should approach this question of “Sasana.”
 
 ### Part 3: Personal Practice
 
@@ -120,8 +139,8 @@ The last third of our class tackles the more prescriptive, “micro” question 
 
 #### Textbook
 
-- **Lay Buddhist Practice** by Khantipalo ([pdf](https://drive.google.com/file/d/1o9scR-fXvuuHaNB1xc0IkxNTM5lkdxF7/view?usp=drivesdk)) ([epub](https://drive.google.com/file/d/1m9dJNOdLcs54FgMHi6xjaKMoNlYgE5NT/view?usp=drivesdk))
-	- The main text for this part of the class. An excellent how-to guide.
+{% include inline_content.html category="monographs" slug="lay-buddhist-practice_khantipalo" %}
+- The main text for this part of the class. An excellent how-to guide.
 
 #### Supplements
 
@@ -130,25 +149,28 @@ We have two supplements for *Khantipalo*:
 ##### Taking Refuge
 
 Listen to this alongside the section of Khantipalo about refuge and the triple gem:
-- [Becoming Buddhist (2010-08-29) - Yuttadhammo.m4a](https://drive.google.com/file/d/18jTvv7kupEdwVEfhRGqUqbLMndXadjC1/view?usp=drivesdk)
-	- Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about “taking refuge”
+
+{% include inline_content.html category="av" slug="becoming-buddhist_yuttadhammo" %}
+- Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about “taking refuge”
 
 ##### Practicing Restraint
 
 A few more words are also due on the subject of restraint, beyond the five precepts. Please consider this alongside the section on “practice”
 
-- SN 35.239: The Simile of the Chariot - Bhikkhu Bodhi ([on SuttaCentral](https://suttacentral.net/sn35.239/en/bodhi)) ([pdf](https://drive.google.com/file/d/10DHCPsqYUY7UH1kH9MBb8F_843iCU7Gv/view?usp=drivesdk))
-	- Explains the three primary duties of a monk: guarding the senses, moderation in eating, and the devotion to wakefulness. 
-	- What monastic behaviors and vows do you know about already? How do the monastic and “eight precept” observances help with these three duties? What do you think is their benefit? Can lay Buddhists practice these? Should they?
+{% include inline_content.html category="canon" slug="sn35.239" %}
+- Explains the three primary duties of a monk: guarding the senses, moderation in eating, and the devotion to wakefulness. 
+- What monastic behaviors and vows do you know about already? How do the monastic and “eight precept” observances help with these three duties? What do you think is their benefit? Can lay Buddhists practice these? Should they?
 
 
 #### Praxis Conclusion 
-- [Dhammavinaya (2010-09-01) - Bhante Yuttadhammo.mp3](https://drive.google.com/file/d/1ekvc3-nwegfHFnI5ZtJ7UrpQPFf16Hyz/view?usp=drivesdk)
-	- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html) (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
+
+{% include inline_content.html category="av" slug="dhammavinaya_yuttadhammo" %}
+- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html) (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
 ### Conclusion to the Class
-- [Pseudo Buddhism (2001_11_09) - Ajahn Brahm.mp3](https://drive.google.com/file/d/1Qcy_wonWOKEsbe7jrNxRgKDwQV37dzVM/view?usp=drivesdk)
-	- Ajahn Brahm reminds us, in his light-hearted way, that for all the traditions and books, real knowledge comes from meditation (or, as Bhikkhu Cintita put it, the joke is passed on to make us laugh).
+
+{% include inline_content.html category="av" slug="pseudobuddhism_brahm" %}
+- Ajahn Brahm reminds us, in his light-hearted way, that for all the traditions and books, real knowledge comes from meditation (or, as Bhikkhu Cintita put it, the joke is passed on to make us laugh).
 
 {% include course_feedback.html course="The+Form(s)+of+Buddhism" %}
 

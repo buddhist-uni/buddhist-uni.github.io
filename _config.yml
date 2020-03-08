@@ -46,6 +46,10 @@ plugins:
 permalink: none
 
 collections:
+  authors:
+     output: false
+  content:
+     output: false
   courses:
      output: true
      permalink: /:collection/:name
@@ -57,5 +61,15 @@ defaults:
         type: "courses"
     values:
         layout: "course"
-
-
+  -
+    scope:
+        path: ""
+        type: "content"
+    values:
+        formats: [pdf]
+  -
+    scope:
+        path: "_content/av"
+        type: "content"
+    values:
+        formats: [mp3]
