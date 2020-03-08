@@ -1,0 +1,9 @@
+---
+title: "A Culture of Awakening"
+authors: [cintita]
+course: form
+external_url: "https://bhikkhucintita.files.wordpress.com/2014/04/sasana6x9withcover.pdf"
+year: 2014
+drive_links: ["https://drive.google.com/file/d/1zur07giMlXjhQhvc5ZLcE737t5IEpqxb/view?usp=drivesdk"]
+tags: [monastic]
+---

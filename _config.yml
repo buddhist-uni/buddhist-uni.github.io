@@ -66,6 +66,10 @@ defaults:
         path: ""
         type: "content"
     values:
-        formats: ["pdf"]
-
-
+        formats: [pdf]
+  -
+    scope:
+        path: "_content/av"
+        type: "content"
+    values:
+        formats: [mp3]
