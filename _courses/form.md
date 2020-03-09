@@ -76,8 +76,7 @@ As you read through *Robinson*, please also consider the following:
 
 *Chapter 5: “The Pantheon”*
 
-{% include inline_content.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
-- As Buddhism spread around Asia, many new teachings were introduced, and some of them miss the mark. Today, as all remaining traditions have their share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning where we place our faith. 
+{% include content_box.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
 
 *After Chapter 6 of Robinson on “Vajrayana” Tibet*
 
@@ -97,8 +96,7 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 
 *Robinson Chapter 10*
 
-{% include inline_content.html category="av" slug="introduction-to-buddhist-art_doug-smith" %}
-- From the iconic period to the modern day in a few minutes. A very short introduction to Buddhist Art.
+{% include content_box.html category="av" slug="introduction-to-buddhist-art_doug-smith" %}
 
 *Robinson Chapter 12: “Buddhism Comes West”*
 
@@ -130,8 +128,7 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 
 #### Main Text
 
-{% include inline_content.html category="booklets" slug="culture-of-awakening_cintita" %}
-- Given the thousands of years separating us from the Buddha, Bhikkhu Cintita asks the excellent question of how it is that Buddhism has survived so well across time and cultures, and then uses this theory to ponder how modern, Western practitioners should approach this question of “Sasana.”
+{% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
 
 ### Part 3: Personal Practice
 
@@ -139,8 +136,7 @@ The last third of our class tackles the more prescriptive, “micro” question 
 
 #### Textbook
 
-{% include inline_content.html category="monographs" slug="lay-buddhist-practice_khantipalo" %}
-- The main text for this part of the class. An excellent how-to guide.
+{% include content_box.html category="monographs" slug="lay-buddhist-practice_khantipalo" %}
 
 #### Supplements
 
