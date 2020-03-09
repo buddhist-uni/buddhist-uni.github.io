@@ -75,7 +75,7 @@ The next part of the class tackles the teachings. As this section is the primary
 {% include inline_content.html category="av" slug="happiness_hong-ci" %}
 - Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
 
-#### {% include inline_content.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
+{% include content_box.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
 - The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
 
 #### Reflection Questions
