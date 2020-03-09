@@ -1,3 +1,4 @@
-{% assign content = include.content %}{% assign authors = '' | split: '' %}{% for a in content.authors %}{% assign b = site.authors | where: "slug", a | first %}{% assign authors = authors | push: b.title %}{% endfor %}
+{% assign content = include.content %}{% assign authors = '' | split: '' %}{% for a in content.authors %}{% assign b = site.authors | where: "slug", a | first %}{% assign authors = authors | push: b.title %}{% endfor %}{% assign category = content.path | split: '/' %}{% assign category = category[1] %}
+{% include content_icon.html category=category %}
 <span class="inline_content_title">{% if content.external_url %}<a target="_blank" href="{{ content.external_url }}">{% endif %}{{ content.title }}{% if authors.size > 0 %} – {{ authors | array_to_sentence_string }}{% endif %}{% if content.external_url %}</a>{% endif %}</span>
 {% if content.drive_links %}<span class="inline_drive_links">{% for link in content.drive_links %}{% assign index = forloop.index | minus: 1 %} (<a target="_blank" href="{{ link }}"><i class="fab fa-google-drive"></i>{{ content.formats[index] }}</a>){% endfor %}</span>{% endif %}
