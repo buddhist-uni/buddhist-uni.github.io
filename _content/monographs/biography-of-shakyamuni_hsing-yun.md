@@ -8,5 +8,5 @@ month: nov
 publisher: "Buddha's Light Publishing"
 ---
 
-A simple but powerful retelling of the Buddha’s life story from a renowned modern master.
+A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master. My most highly recommended biography of the Buddha.
 

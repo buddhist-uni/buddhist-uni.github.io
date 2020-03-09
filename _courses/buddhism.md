@@ -59,8 +59,8 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 The next part of the class tackles the teachings. As this section is the primary focus of this course, it is the longest.
 
-{% include inline_content.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-- The emotional heart of this course, and one of my favorite books period. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
+{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+- The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
 
 #### Alternative Presentations of the Dhamma
 
