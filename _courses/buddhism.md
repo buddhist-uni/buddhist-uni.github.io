@@ -45,8 +45,7 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 *Readings parallel to Chapters 1–2 of Harvey*
 
-{% include inline_content.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
-A simple but powerful retelling of the Buddha's life story from a renowned modern master.
+{% include content_box.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
 
 {% include inline_content.html category="av" slug="secular-intro-to-buddhism_doug-smith" %}
 - A short introduction to Buddhism from a more secular perspective.
@@ -60,8 +59,8 @@ A simple but powerful retelling of the Buddha's life story from a renowned moder
 
 The next part of the class tackles the teachings. As this section is the primary focus of this course, it is the longest.
 
-{% include inline_content.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-- The emotional heart of this course, and one of my favorite books period. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
+{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+- The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
 
 #### Alternative Presentations of the Dhamma
 
@@ -76,7 +75,7 @@ The next part of the class tackles the teachings. As this section is the primary
 {% include inline_content.html category="av" slug="happiness_hong-ci" %}
 - Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
 
-#### {% include inline_content.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
+{% include content_box.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
 - The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
 
 #### Reflection Questions

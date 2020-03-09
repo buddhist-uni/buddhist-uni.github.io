@@ -95,8 +95,7 @@ This sutra is most directly parallel to the Pāli texts presented in ItBW chapte
 
 We end the course with this word of advice:
 
-{% include inline_content.html category="av" slug="in-line_yuttadhammo" %}
-- Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.
+{% include content_box.html category="av" slug="in-line_yuttadhammo" %}
 
 {% include course_feedback.html course="The+Early+Buddhist+Texts" %}
 
