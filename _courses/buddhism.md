@@ -45,8 +45,7 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 *Readings parallel to Chapters 1–2 of Harvey*
 
-{% include inline_content.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
-A simple but powerful retelling of the Buddha's life story from a renowned modern master.
+{% include content_box.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
 
 {% include inline_content.html category="av" slug="secular-intro-to-buddhism_doug-smith" %}
 - A short introduction to Buddhism from a more secular perspective.

@@ -7,3 +7,6 @@ year: 2013
 month: nov
 publisher: "Buddha's Light Publishing"
 ---
+
+A simple but powerful retelling of the Buddha’s life story from a renowned modern master.
+
