@@ -69,8 +69,7 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 *Chapter 2*
 
-{% include inline_content.html category="essays" slug="generosity-first_geoff" %}
-- Ajahn Geoff encourages Westerners to ground their practice in generosity.
+{% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
 *Chapter 3*
 
@@ -81,13 +80,11 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 *Chapter 4*
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6)
 
-{% include inline_content.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
-- In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
+{% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
 *Chapter 5*
 
-{% include inline_content.html category="av" slug="dealing-with-difficult-people_brahm" %}
-- Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.
+{% include content_box.html category="av" slug="dealing-with-difficult-people_brahm" %}
 
 *Chapter 6*
 
@@ -120,17 +117,13 @@ It is at this point, then, that we (re)introduce the Four Noble Truths: that lif
 - Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
 
 
-I recommend reading Nyanamoli’s denser anthology section-by-section before Bhikkhu Bodhi’s more lucid analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
+I recommend reading Nyanamoli’s denser anthology before Bhikkhu Bodhi’s more lucid analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
 1. Bodhi: Preface
 2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
 3. Bodhi: Part 1 (The Way to the End of Suffering)
 4. Nyanamoli: Right View
 5. Bodhi: Right View
-6. Nyanamoli: Right Intention
-7. Bodhi: Right Intention
 8. …
-9. Nyanamoli: Right Concentration
-9. Bodhi: Right Concentration
 9. Nyanamoli: In Practice and The Means
 9. Bodhi: The Development of Wisdom
 9. Nyanamoli: The End
@@ -157,7 +150,7 @@ Having thus gotten a traditional introduction to the Path, we can now return to 
 
 
 {% include inline_content.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
-- A short series of talks and Q-and-As on Buddhist wisdom by a Tibetan master. 
+- A short series of talks and Q-and-As on Buddhist wisdom by a modern Tibetan master. 
 
 *Chapter 9*
 
@@ -169,8 +162,7 @@ This chapter we have an extra lecture, in lieu of our usual essay.
 In which we finally get to meditation!
 
 
-{% include inline_content.html category="av" slug="habits-towards-nibbana_santussika" %}
-- Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13).
+{% include content_box.html category="av" slug="habits-towards-nibbana_santussika" %}
 
 {% include inline_content.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
 - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.

@@ -7,3 +7,6 @@ drive_links: ["https://drive.google.com/file/d/1vRSlCvZxKpea1T2gvccISZGaPj8k2Zau
 month: nov
 year: 2008
 ---
+
+Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.
+
