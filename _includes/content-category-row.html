@@ -1,0 +1,7 @@
+<tr>
+{% capture cpath %}content/{{ include.category }}.md{% endcapture %}
+{% assign category =  site.pages | where: "path", cpath | first %}
+<td markdown="span">{% include content_icon.html category=include.category %} [{{ category.title }}]({{ category.url }})</td>
+{% capture filter_exp %}c.path contains '/{{ include.category }}/'{% endcapture %}
+<td markdown="span">{{ site.content | where_exp: "c", filter_exp | size }}</td>
+</tr>

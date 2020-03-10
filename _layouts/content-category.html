@@ -3,6 +3,11 @@ layout: page
 ---
 
 {{ content }}
-
-Here we'll list all the {{ page.title }} in the library.
+{% assign slug = page.name | split: '.' | first %}
+{% capture filter_exp %}c.path contains '/{{ slug }}/'{% endcapture %}
+{% assign category = site.content | where_exp: "c", filter_exp %}
+{% for content in category %}
+{% assign cslug = content.path | split: '/' | last | split: '.' | first %}
+{% include inline_content.html category=slug slug=cslug %}
+{% endfor %}
 

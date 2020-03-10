@@ -2,5 +2,5 @@
 title: "Booklets"
 ---
 
-Books without a publisher or ISBN number. Usually freely distributed, shorter works, booklets may be as long and rigerous as [monographs]({% link content/monographs.md %}).
+Freely distributed books without a publisher / ISBN number, booklets are usually shorter than commercially published [monographs]({% link content/monographs.md %}).
 
