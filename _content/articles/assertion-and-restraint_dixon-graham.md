@@ -8,4 +8,8 @@ number: 1
 external_url: "https://doi.org/10.1558/bsrv.v32i1.28960"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ouApfRu693FtiUneacjnLkfLNCXmXjmr/view?usp=drivesdk"]
+course: form
+tags: [india]
 ---
+
+Explains the strange way that Buddhists proselytize.

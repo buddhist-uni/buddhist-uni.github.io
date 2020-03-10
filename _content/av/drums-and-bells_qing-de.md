@@ -5,3 +5,5 @@ status: featured
 course: form
 tags: [mahayana, chan, chinese, taiwanese]
 ---
+
+A lonely temple, nestled in the mountains of central Taiwan, says goodnight.

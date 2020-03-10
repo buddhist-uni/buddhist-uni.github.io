@@ -9,4 +9,7 @@ journal: "Journal of the Oxford Center for Buddhist Studies"
 year: 2019
 volume: 16
 pages: "98--148"
+tags: [ebts, buddha]
 ---
+
+Argues that the Early Buddhist Texts could not have been "designed by committee" and on this basis argues that there must have been a historical Buddha.
