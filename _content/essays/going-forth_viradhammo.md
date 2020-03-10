@@ -6,3 +6,5 @@ drive_links: ["https://drive.google.com/file/d/1gi0znPlOAxf9syPcOFSFkxDQVeZKYEoj
 course: form
 tags: [monastic]
 ---
+
+A beautiful sermon on the value of monasticism.
