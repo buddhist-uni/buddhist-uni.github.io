@@ -20,7 +20,7 @@ layout: default
     <p>
     {% if page.year or page.publisher or page.booktitle or page.journal %}
         Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}{% unless page.external_url or page.drive_links %}.{% endunless %}{% endif %}{% if page.external_url or page.drive_links %}{% if page.year or page.publisher or page.booktitle or page.journal %}, you can f{% else %}F{% endif %}ind
-        {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% endif %}
+        {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 %}.{% endunless %}{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
