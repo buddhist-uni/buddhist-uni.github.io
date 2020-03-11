@@ -6,6 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1udQ4yxzpKzZhiel2bbZZ8S9JBHST5S-g
 authors: [yuttadhammo]
 year: 2010
 month: mar
+courses: ebts
+tags: [symbolism, meditation]
 ---
 
 Bhante Yuttadhammo reminds us to not get too bogged down in scholarship, even though some scholarship is necessary, and encourages us to never forget to put into practice what we learn.

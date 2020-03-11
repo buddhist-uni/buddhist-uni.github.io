@@ -1,0 +1,1 @@
+{% assign content = include.content %}{% assign authors = '' | split: '' %}{% for a in content.authors %}{% assign b = site.authors | where: "slug", a | first %}{% if b %}{% assign b = b.title %}{% else %}{% assign b = a %}{% endif %}{% assign authors = authors | push: b %}{% endfor %}{{ authors | array_to_sentence_string }}

@@ -6,4 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1izjyBM-fE8HBbpeZIpmYNvAS_rA4ODVf
 year: 2009
 month: oct
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Internet/091019_WhatBuddhismOffers.mp3"
+course: form
+tags: [buddhism, function]
 ---
+
+The essence (as opposed to the expressions) of Buddhism. A lovely introduction.

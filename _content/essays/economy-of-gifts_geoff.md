@@ -5,5 +5,7 @@ year: 1997
 external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/economy.html"
 course: form
 tags: [monastic]
+status: featured
 ---
 
+Ajahn Geoff explains how the monastic institution works economically: by creating an economy of gifts.
