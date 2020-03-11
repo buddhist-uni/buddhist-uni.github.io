@@ -8,4 +8,8 @@ journal: "Religion East & West"
 year: 1997
 month: nov
 number: 1
+course: buddhism
+tags: [west]
 ---
+
+Buddhism has a lot to contribute to the pressing problems of modernity. In this article, Powers briefly explores four such domains: individualism, science, freedom, and morality.

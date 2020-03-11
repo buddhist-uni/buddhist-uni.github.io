@@ -1,0 +1,11 @@
+<div class="simple_content">
+{% include simple_content_title.html content=include.content %}
+<p><em>
+  {% if content.course %}
+    {% assign course = site.courses | where: "slug", content.course | first %}
+    {% if course %}
+        Featured in "<a href="{{ course.url }}">{{ course.title }}</a>"
+    {% endif %}
+  {% endif %}
+</em></p>
+</div>

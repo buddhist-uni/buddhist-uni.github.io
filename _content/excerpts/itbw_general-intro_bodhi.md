@@ -4,4 +4,8 @@ authors: [bodhi]
 chapter: 0
 from_book: in-the-buddhas-words_bodhi
 external_url: "https://web.archive.org/web/20160320174115/http://www.wisdompubs.org/book/buddha%E2%80%99s-words/introduction"
+course: ebts
+tags: [pali-canon, suttas]
 ---
+
+Bhikkhu Bodhi explains the history and structure of the Pāli Canon.

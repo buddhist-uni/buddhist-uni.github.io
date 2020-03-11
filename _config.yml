@@ -49,12 +49,18 @@ collections:
   authors:
      output: false
   content:
-     output: false
+     output: true
+     permalink: /:collection/:path
   courses:
      output: true
      permalink: /:collection/:name
 
 defaults:
+  -
+    scope:
+        path: ""
+    values:
+        layout: "page"
   - 
     scope:
         path: ""
@@ -67,6 +73,13 @@ defaults:
         type: "content"
     values:
         formats: [pdf]
+        layout: "content"
+  -
+    scope:
+        path: "content"
+        type: "pages"
+    values:
+        layout: "content-category"
   -
     scope:
         path: "_content/av"

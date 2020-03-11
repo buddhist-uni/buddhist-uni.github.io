@@ -1,0 +1,10 @@
+---
+layout: page
+---
+
+{{ content }}
+{% assign slug = page.name | split: '.' | first %}
+{% capture filter_exp %}c.path contains '/{{ slug }}/'{% endcapture %}
+{% assign category = site.content | where_exp: "c", filter_exp %}
+{% include content_list.html contents=category %}
+

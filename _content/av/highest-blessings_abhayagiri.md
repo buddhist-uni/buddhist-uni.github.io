@@ -6,4 +6,9 @@ formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1biFd80sRdq7p2paunwCZT5irCP2wT9ve/view?usp=drivesdk"]
 month: nov
 year: 2017
+course: buddhism
+tags: [form, theravada, theravada-chanting, america, lay, khp]
 ---
+
+The monks of Abhayagiri chanting the canonical poem on life's highest blessings [from the Khp]({% link _content/canon/khp5.md %}).
+

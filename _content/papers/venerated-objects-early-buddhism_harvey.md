@@ -8,4 +8,8 @@ pages: "68--102"
 publisher: curzon
 year: 1990
 editor: "Karel Werner"
+course: form
+tags: [india, symbolism]
 ---
+
+The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.

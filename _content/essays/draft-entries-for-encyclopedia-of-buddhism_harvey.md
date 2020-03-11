@@ -5,4 +5,8 @@ external_url: "https://www.academia.edu/32908001/Original_versions_of_entries_by
 formats: [pdf]
 drive_urls: ["https://drive.google.com/file/d/1TjDxxGGfi3KLLfEDpM-xWJwL09AK0gZ4/view?usp=drivesdk"]
 year: 2013
+course: buddha
+tags: [form, ebts]
 ---
+
+Peter Harvey gives a thorough discussion of the historical Buddha across these encyclopedia entries.

@@ -5,4 +5,7 @@ publisher: cambridge
 year: 2013
 edition: Second
 address: "New York"
+course: buddhism
 ---
+
+The best academic textbook for introducing Buddhism.

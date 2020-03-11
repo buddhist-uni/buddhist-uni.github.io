@@ -6,4 +6,8 @@ formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1ZG1LLOeKoX0RM3kj1VfXuIRKN_qDrCgH/view?usp=drivesdk"]
 year: 2017
 month: nov
+course: buddhism
+tags: [function]
 ---
+
+A short overview of Buddhism from my own teacher. An excellent talk to revisit now and then.
