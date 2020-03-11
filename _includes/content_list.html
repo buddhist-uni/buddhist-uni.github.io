@@ -1,0 +1,6 @@
+{% for content in include.contents %}
+{% assign slugs = content.path | split: '/' %}
+{% assign slug = slugs[1] %}
+{% assign cslug = slugs[2] | split: '.' | first %}
+{% include inline_content.html category=slug slug=cslug %}
+{% endfor %}
