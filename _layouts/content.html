@@ -5,10 +5,37 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+    {% if page.authors %}<h2 class="author">
+        {% include content_authors_string.html content=page %}
+    </h2>{% endif %}
+    <em>
+        {% if page.course %}
+            {% assign course = site.courses | where: "slug", page.course | first %}
+            {% if course %}
+                Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>{% if page.external_url or page.drive_links.size > 0 %},{% else %}.{% endif %}"
+            {% endif %}
+        {% endif %}
+        {% if page.external_url %}{% if course %}y{% else %}Y{% endif %}ou can get it <a href="{{ page.external_url }}">online here</a>{% endif %}
+        {% if page.drive_links.size > 0 %}
+            {% assign format_links = '' | split: '' %}
+            {% for link in page.drive_links %}
+                {% assign i = forloop.index | minus: 1 %}
+                {% capture format_link %}<a href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
+                {% assign format_links = format_links | push: format_link %}
+            {% endfor %}
+            {% if page.external_url %}or f{% else %}{% if page.course and course %}f{% else %}F{% endif %}{% endif %}ind the {{ format_links | array_to_sentence_string: "or" }} on Google Drive
+        {% endif %}
+    </em>
+ </header>
 
   <div class="post-content">
-    {{ content }}
+        {{ content }}
   </div>
+
+  <footer>
+    {% if page.year or page.publisher %}
+        <i>Published {% if page.year %}{{ page.year }} {% endif %}{% if page.publisher %}by {{ page.publisher }}{% endif %}.</i>
+    {% endif %}
+  </footer>
 
 </article>
