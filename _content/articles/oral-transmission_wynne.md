@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/18z28tsjXlB_cnBSGgVViN3WowA97iywB
 year: 2004
 volume: 27
 number: 1
-journal: "Journal of the International Association of Buddhist Studies"
+journal: "The Journal of the International Association of Buddhist Studies"
 course: ebts
 tags: [india]
 ---

@@ -4,18 +4,23 @@ layout: default
 <article class="content-perma">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title">{{ page.title }}</h1>
     {% if page.authors %}<h2 class="author">
-        {% include content_authors_string.html content=page %}
+        By {% include content_authors_string.html content=page %}
     </h2>{% endif %}
     <em>
-        {% if page.course %}
-            {% assign course = site.courses | where: "slug", page.course | first %}
-            {% if course %}
-                Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>{% if page.external_url or page.drive_links.size > 0 %},{% else %}.{% endif %}"
-            {% endif %}
-        {% endif %}
-        {% if page.external_url %}{% if course %}y{% else %}Y{% endif %}ou can get it <a href="{{ page.external_url }}">online here</a>{% endif %}
+            </em>
+ </header>
+
+  <div class="post-content">
+        {{ content }}
+  </div>
+
+  <footer><i>
+    <p>
+    {% if page.year or page.publisher or page.booktitle or page.journal %}
+        Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}{% unless page.external_url or page.drive_links %}.{% endunless %}{% endif %}{% if page.external_url or page.drive_links %}{% if page.year or page.publisher or page.booktitle or page.journal %}, you can f{% else %}F{% endif %}ind
+        {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
@@ -23,19 +28,20 @@ layout: default
                 {% capture format_link %}<a href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
                 {% assign format_links = format_links | push: format_link %}
             {% endfor %}
-            {% if page.external_url %}or f{% else %}{% if page.course and course %}f{% else %}F{% endif %}{% endif %}ind the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>
+            {% if page.external_url %}or get {% endif %}the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>.
         {% endif %}
-    </em>
- </header>
-
-  <div class="post-content">
-        {{ content }}
-  </div>
-
-  <footer>
-    {% if page.year or page.publisher %}
-        <i>Published {% if page.year %}{{ page.year }} {% endif %}{% if page.publisher %}by {{ page.publisher }}{% endif %}.</i>
     {% endif %}
-  </footer>
+    {% if page.tags %}
+        Tags: {{ page.tags | array_to_sentence_string }}
+    {% endif %}
+    </p><p>
+    {% if page.course %}
+        {% assign course = site.courses | where: "slug", page.course | first %}
+        {% if course %}
+            Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>."
+        {% endif %}
+    {% endif %}
+   </p>
+  </i></footer>
 
 </article>

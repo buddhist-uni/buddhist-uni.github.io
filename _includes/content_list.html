@@ -1,3 +1,4 @@
-{% for content in include.contents %}
+{% assign sorted = include.contents | sort: "year" %}
+{% for content in sorted %}
     {% include simple_content.html content=content %}
 {% endfor %}
