@@ -145,8 +145,10 @@ I supplement the final chapters in Harvey on the recent history of Buddhism with
 
 There are three courses you can take next to deepen your study of the Triple Gem:
 
-1. [Buddha: The Early Texts]({% link _courses/ebts.md%}): Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
-2. [Dhamma: The Function of Buddhism]({% link _courses/function.md %}): A guide into the heart of Buddhist practice.
-3. [Sangha: The Form(s) of Buddhism]({% link _courses/form.md %}): Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
+**<i class="far fa-map fa-rotate-90"></i> [Buddha: The Early Texts]({% link _courses/ebts.md%})**: Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
+
+**<i class="fas fa-user-slash"></i> [Dhamma: The Function of Buddhism]({% link _courses/function.md %})**: A guide into the heart of Buddhist practice.
+
+**<i class="fas fa-vihara"></i> [Sangha: The Form(s) of Buddhism]({% link _courses/form.md %})**: Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
 
 
