@@ -1,11 +1,10 @@
-{% capture content_path %}_content/{{ include.category }}/{{ include.slug }}.md{% endcapture %}{% assign content = site.content | where: "path", content_path | first %}
 <div class="content_box">
   <span class="content_box_header">
     {% include simple_content_title.html content=include.content %}
   </span>
-  {{ content.content }}
-  {% if content.course %}
-    {% assign course = site.courses | where: "slug", content.course | first %}
+  {{ include.content.content }}
+  {% if include.content.course %}
+    {% assign course = site.courses | where: "slug", include.content.course | first %}
     {% if course %}
         <em>Featured in "<a href="{{ course.url }}">{{ course.title }}</a>"</em>
     {% endif %}

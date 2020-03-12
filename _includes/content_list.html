@@ -5,9 +5,7 @@
 {% assign sorted = sorted | sort: "year" %}
 {% for content in sorted %}
     {% if content.status == 'featured' %}
-        {% assign path = content.path | split: '/' %}
-        {% assign cat = path[1] %}
-        {% include highlighted_content.html category=cat slug=content.slug %}
+        {% include highlighted_content.html content=content %}
     {% else %}
         {% include simple_content.html content=content %}
     {% endif %}
