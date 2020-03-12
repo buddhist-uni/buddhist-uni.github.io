@@ -29,11 +29,14 @@ layout: default
 {% if children.size > 0 %}
 <em>Subtopic{% if children.size > 1 %}s{% endif %}: {{ children | array_to_sentence_string }}</em>
 {% endif %}{% endif %}
-
+{% assign course = site.courses | where: "slug", page.slug | first %}
+{% if course %}
+<p><em>For a more structured walkthrough of this content, see <a href="{{ course.url }}">the "{{ course.title }}" course</a>.</em></p>
+{% endif %}
   </header>
 
   <div class="post-content">
-    {{ content }}
+    <div class="tag_desc">{{ content }}</div>
 <h2>Featured Works</h2>
 <div>
 {% assign category = site.content | where: "course", page.slug %}
