@@ -31,7 +31,12 @@ layout: default
             {% if page.external_url %}or get {% endif %}the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>.
         {% endif %}
     {% endif %}
-    {% if page.tags %}
+
+    {% if page.source_url %}
+        Adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
+    {% endif %}
+
+    {% if page.tags.size > 0 %}
         Tags: {{ page.tags | array_to_sentence_string }}
     {% endif %}
     </p><p>
