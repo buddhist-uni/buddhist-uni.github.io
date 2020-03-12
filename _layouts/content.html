@@ -37,7 +37,15 @@ layout: default
     {% endif %}
 
     {% if page.tags.size > 0 %}
-        Tags: {{ page.tags | array_to_sentence_string }}
+        {% assign tags = '' | split: '' %}
+        {% for t in page.tags %}
+            {% assign tag = site.tags | where: "slug", t | first %}
+            {% if tag %}
+                {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
+                {% assign tags = tags | push: taglink %}
+            {% endif %}
+        {% endfor %}
+        {% if tags.size > 0 %}Tags: {{ tags | array_to_sentence_string }}{% endif %}
     {% endif %}
     </p><p>
     {% if page.course %}
