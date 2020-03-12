@@ -9,6 +9,8 @@ layout: default
         <i>This course is also available <a href="https://docs.google.com/document/d/{{ page.google_doc_id  }}/edit?usp=sharing">as a Google Doc</a></i>
     {% endif %}
   </header>
+  <h1>Table of Contents</h1> 
+  {% include toc.html html=content hmin=2 %}
 
   <div class="post-content">
     {{ content }}
