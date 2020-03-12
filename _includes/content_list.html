@@ -1,4 +1,14 @@
-{% assign sorted = include.contents | sort: "year" %}
+{% assign sorted = include.contents %}
+{% unless include.keep_rejects %}
+    {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
+{% endunless %}
+{% assign sorted = sorted | sort: "year" %}
 {% for content in sorted %}
-    {% include simple_content.html content=content %}
+    {% if content.status == 'featured' %}
+        {% assign path = content.path | split: '/' %}
+        {% assign cat = path[1] %}
+        {% include highlighted_content.html category=cat slug=content.slug %}
+    {% else %}
+        {% include simple_content.html content=content %}
+    {% endif %}
 {% endfor %}
