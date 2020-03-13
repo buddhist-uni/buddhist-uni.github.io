@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 ![yaktocat]({% link assets/imgs/yaktocat.png %})
 
@@ -14,3 +14,4 @@ A small collection of 4 `free`, `self-paced`, online courses on Buddhism:
 Just click on one of the courses above to get started. It's that easy.
 
 _[Dissatisfaction Guarenteed](https://www.accesstoinsight.org/ptf/dhamma/sacca/sacca1/dukkha.html) or your money back!_
+

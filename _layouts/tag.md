@@ -47,19 +47,12 @@ layout: default
   {% assign category = site.pages | where_exp: "c", cat_filter | first %}
   {% capture cat_filter %}c.path contains '/{{ catslug }}/'{% endcapture %}
   {% assign cat_content = all_content | where_exp: "c", cat_filter %}
-  {% assign course_content = cat_content | where: "course", page.slug | sort: "year" %}
+  {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "year" %}
   {% if course_content.size > 0 or tag_content.size > 0 %}
   <h3 id="{{ catslug }}">{% include content_icon.html category=cat_slug %} {{ category.title }}</h3>
   {% if course_content.size > 0 %}
-  <div class="featured_content_list"><ul>
-  {% for c in course_content %}
-    <li>
-      <div class="content_title">{% include simple_content_title.html content=c %}</div>
-      <div class="content_desc">{{ c.excerpt }}</div>
-    </li>
-  {% endfor %}
-  </ul></div>
+    {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
   {% for c in tag_content %}

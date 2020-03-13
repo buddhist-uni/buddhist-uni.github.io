@@ -1,0 +1,13 @@
+{% assign sorted = include.contents %}
+{% unless include.keep_rejects %}
+    {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
+{% endunless %}
+{% assign sorted = sorted | sort: "year" %}
+<div class="featured_content_list"><ul>
+  {% for c in sorted %}
+    <li>
+      <div class="content_title">{% include simple_content_title.html content=c %}</div>
+      <div class="content_desc">{{ c.excerpt }}</div>
+    </li>
+  {% endfor %}
+</ul></div>
