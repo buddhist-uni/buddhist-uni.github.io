@@ -6,7 +6,7 @@ source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%2
 formats: [mp3s]
 drive_links: ["https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06"]
 course: function
-tags: [meditation, philosophy, america]
+tags: [meditation, philosophy, american]
 ---
 
 A series of Dhamma talks delivered to series beginners over the course of a few months in 2009. The talks give a penetrating introduction to the essence of the teachings and are recommended for all.

@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1vGu8qGYeFSh4cguHzzKzCIQNo_5x48Io
 month: dec
 year: 2016
 course: function 
-tags: [ethics, meditation, samatha, canada, chan]
+tags: [ethics, meditation, samatha, canadian, chan]
 ---
 
 People usually think that happiness comes from chasing after the senses. Ven Hong Ci gives a passionate argument against this default way of being in the world, and encourages us to guard our senses if we want real happiness. 
