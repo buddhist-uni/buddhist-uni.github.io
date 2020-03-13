@@ -54,6 +54,9 @@ collections:
   courses:
      output: true
      permalink: /:collection/:name
+  tags:
+     output: true
+     permalink: /:collection/:name
 
 defaults:
   -
@@ -67,6 +70,12 @@ defaults:
         type: "courses"
     values:
         layout: "course"
+  - 
+    scope:
+        path: ""
+        type: "tags"
+    values:
+        layout: "tag"
   -
     scope:
         path: ""
