@@ -34,7 +34,7 @@ layout: default
     {% assign children = children | push: clink %}
 {% endfor %}
 {% if children.size > 0 %}
-<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {{ children | array_to_sentence_string }}</div>
+{% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {{ children | array_to_sentence_string }}</div>{% endcapture %}{{ subtopics }}
 {% endif %}{% endif %}
   </header>
 
@@ -69,6 +69,6 @@ layout: default
   {% endif %}{% endif %}
 {% endfor %}
   </div>
-
+{{ subtopics }}
 </article>
 
