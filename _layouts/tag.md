@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="course">                                                                                                
+<article class="tag">                                                                                                
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
 
@@ -37,16 +37,34 @@ layout: default
 
   <div class="post-content">
     <div class="tag_desc">{{ content }}</div>
-<h2>Featured Works</h2>
-<div>
-{% assign category = site.content | where: "course", page.slug %}
-{% include content_list.html contents=category %}
-</div><h2>Related Works</h2><div>
-{% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
-{% assign category = site.content | where_exp: "c", filter_exp %}
-{% include content_list.html contents=category %}
-</div>
 
+{% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
+{% assign categories = 'monographs,booklets,canon,papers,excerpts,essays,articles,av,reference' | split: ',' %}
+{% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
+{% for catslug in categories %}
+  {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
+  {% assign category = site.pages | where_exp: "c", cat_filter | first %}
+  {% capture cat_filter %}c.path contains '/{{ catslug }}/'{% endcapture %}
+  {% assign cat_content = all_content | where_exp: "c", cat_filter %}
+  {% assign course_content = cat_content | where: "course", page.slug | sort: "year" %}
+  {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "year" %}
+  {% if course_content.size > 0 or tag_content.size > 0 %}
+  <h2 id="{{ catslug }}">{% include content_icon.html category=cat_slug %} {{ category.title }}</h2>
+  <div class="featured_content_list"><ul>
+  {% for c in course_content %}
+    <li>
+      <div class="content_title">{% include simple_content_title.html content=c %}</div>
+      <div class="content_desc">{{ c.excerpt }}</div>
+    </li>
+  {% endfor %}
+  </ul></div>
+  <div class="tagged_content">
+  {% for c in tag_content %}
+    <div>{% include simple_content_title.html content=c %}</div>
+  {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}
   </div>
 
 </article>
