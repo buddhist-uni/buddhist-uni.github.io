@@ -16,3 +16,49 @@
     margin-left: 1.5em;
 }
 
+article.course .post-header p {
+    margin-bottom: 0px;
+}
+
+article.tag .tag_desc {
+    font-size: 118%;
+    margin-top: 20px;
+}
+
+article.tag .tag_desc p {
+    margin-bottom: 6px;
+}
+
+article.tag .subtopics {
+    font-size: 105%;
+}
+
+article.tag div.tagged_content {
+    margin-bottom: 23px;
+    font-size: 105%;
+}
+
+article.tag div.featured_content_list ul {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    margin-left: 5px;
+}
+
+article.tag .featured_content_list li {
+    width: 20em;
+    padding: 17px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 9px;
+}
+
+article.tag div.featured_content_list .content_title {
+    font-size: 105%;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+article.tag div.featured_content_list .content_desc p {
+    margin-bottom: 0px;
+}
