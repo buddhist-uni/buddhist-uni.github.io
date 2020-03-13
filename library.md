@@ -3,21 +3,25 @@ title: Library
 permalink: /library/
 ---
 
-Explore the content of the site by:
+You can explore our content by:
 
 ### [<i class="fas fa-tag"></i> Topics]({% link tags.md %}) (if you're unsure, [Start Here!]({% link _tags/buddhism.md %}))
-Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top]({% link _tags/buddhism.md %}) and work your way down via the "Subtopic" links.
+Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
 
 ### [<i class="fas fa-user-edit"></i> Authors]({% link authors.md %})
-If there are particular authors you trust and want to hear more from, or just want to get a sense of who is represented here, you can [find a list of our authors here]({% link authors.md %}).
+If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can [find a list of our authors here]({% link authors.md %}).
 
 ### [<i class="fas fa-photo-video"></i> Types]({% link content/index.md %})
-In the mood for a curling up with [a good book]({% link content/monographs.md %})? Or perhaps just looking for [a dhamma talk]({% link content/av.md %}) to listen to during your commute? Whatever it is you're looking for, you can [find it by type here]({% link content/index.md %}).
+In the mood to curl up with [a good book]({% link content/monographs.md %})? Or perhaps looking for [a dhamma talk]({% link content/av.md %}) to listen to? Whatever you're looking for, you can [find it by type here]({% link content/index.md %}).
 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)
-You can see all the content here and much more by checking out
-[my Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r).
-Best of all, if you "[Add to My Drive](https://support.google.com/drive/answer/2375057?&hl=en#7293876)" you can search the entire library ([including _inside_ PDFs](https://support.google.com/drive/answer/2375114)) just by using the Google Drive search function. And because the files were uploaded by my account, adding them to your drive doesn't use _any_ of your Google Drive quota. That's right. Take the entire library with you, for absolutely free[^disclaimer]
+All the content on this site and more can be found in
+[my rather large Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r).
+Best of all, if you click "<i class="fas fa-ellipsis-h"></i>"  –> "[Add to My Drive](https://support.google.com/drive/answer/2375057?&hl=en#7293876)" on the main folder, you can get the entire library on all your devices in just two clicks. Then you can save files offline on your phone or tablet using [the app](https://www.google.com/intl/en-GB_ALL/drive/download/) or search the library ([including _inside_ PDFs](https://support.google.com/drive/answer/2375114)) using Drive's powerful, built-in search. And because the files were uploaded by my account, adding them to your drive doesn't use _any_ of your own storage quota. That's right. You can take the entire library with you, for absolutely free[^disclaimer]
+
+### Additional Information
+
+While most of the content collected here can be found on [other websites]({% link sources.md %}), [some of it can't]({% link exclusive.md %}) and while my focus is on free content, I do recommend some commercial/copyrighted works. To find those, you'll have to resort to more traditional libraries.
 
 ---
 Footnotes:

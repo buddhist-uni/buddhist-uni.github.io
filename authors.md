@@ -4,7 +4,6 @@ permalink: "/authors/"
 layout: page
 ---
 
-Here you will find links to all the content on the site organized by author.
 <div>
 {% for author in site.authors %}
     <h1>{{ author.title }}</h1>

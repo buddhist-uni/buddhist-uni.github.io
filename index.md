@@ -13,5 +13,7 @@ A small collection of 4 `free`, `self-paced`, online courses on Buddhism:
 
 Just click on one of the courses above to get started. It's that easy.
 
+Or check out [the library]({% link library.md %}) to explore our content in your own way.
+
 _[Dissatisfaction Guarenteed](https://www.accesstoinsight.org/ptf/dhamma/sacca/sacca1/dukkha.html) or your money back!_
 
