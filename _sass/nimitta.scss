@@ -19,6 +19,15 @@
 .narrow {
     max-width: 40em;
 }
+
+.master_tags_list li {
+    padding-bottom: 10px;
+}
+
+.master_tags_list .tag_link {
+    font-size: 105%;
+}
+
 article.course .post-header p {
     margin-bottom: 0px;
 }

@@ -6,9 +6,9 @@ layout: page
 
 Here you'll find all the content on the site presented with minimal commentary. For more structured reading guides, see the <a href="{% link courses.md %}">Course List</a>.
 
-<ul>
+<ul class="master_tags_list">
 {% assign tags = site.tags | sort: "title" %}
 {% for tag in tags %}
-    <li><a href="{{ tag.url }}">{{ tag.title }}</a></li>
+    <li><a class="tag_link" href="{{ tag.url }}">{{ tag.title }}</a>: {{ tag.excerpt }}</li>
 {% endfor %}
 <ul>
