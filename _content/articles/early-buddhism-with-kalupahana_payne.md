@@ -8,6 +8,7 @@ journal: "The Pacific World"
 number: 7
 course: ebts
 tags: [form]
+status: featured
 ---
 
 On separating out early from later Buddhism and why it matters.
