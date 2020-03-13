@@ -24,6 +24,11 @@
     margin-bottom: 0px;
 }
 
-.tag h2 {
-    padding-top: 13px;
+article.tag div.tagged_content {
+    margin-bottom: 15px;
+}
+
+article.tag div.featured_content_list .content_title {
+    font-size: 105%;
+    font-weight: 500;
 }
