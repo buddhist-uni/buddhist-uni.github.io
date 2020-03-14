@@ -7,7 +7,7 @@ month: mar
 formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1V1-v8JPm-hw9URWYKwUZkvtYWEpNq5qv/view?usp=drivesdk"]
 course: buddhism
-tags: [form, function, ebts, snp, america, west]
+tags: [form, function, ebts, snp, american, west]
 ---
 
 The monks from Abhayagiri chanting the much beloved sutta on Loving-Kindness: [Snp1.8]({% link _content/canon/snp1.8.md %}).

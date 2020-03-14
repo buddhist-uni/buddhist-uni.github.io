@@ -1,5 +1,5 @@
 ---
-title: "Function"
+title: "Function of Buddhism"
 parents: [buddhism]
 ---
 
