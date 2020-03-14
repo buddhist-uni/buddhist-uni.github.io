@@ -1,5 +1,5 @@
 ---
-title: "Form(s)"
+title: "Form(s) of Buddhism"
 parents: [buddhism]
 ---
 

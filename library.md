@@ -3,7 +3,7 @@ title: Library
 permalink: /library/
 ---
 
-You can explore our content by:
+Explore the same, great content featured in [the courses]({% link courses.md %}) (and much more!) by:
 
 ### [<i class="fas fa-tag"></i> Topics]({% link tags.md %}) (if you're unsure, [Start Here!]({% link _tags/buddhism.md %}))
 Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
@@ -17,11 +17,13 @@ In the mood to curl up with [a good book]({% link content/monographs.md %})? Or 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)
 All the content on this site and more can be found in
 [my rather large Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r).
-Best of all, if you click "<i class="fas fa-ellipsis-h"></i>"  –> "[Add to My Drive](https://support.google.com/drive/answer/2375057?&hl=en#7293876)" on the main folder, you can get the entire library on all your devices in just two clicks. Then you can save files offline on your phone or tablet using [the app](https://www.google.com/intl/en-GB_ALL/drive/download/) or search the library ([including _inside_ PDFs](https://support.google.com/drive/answer/2375114)) using Drive's powerful, built-in search. And because the files were uploaded by my account, adding them to your drive doesn't use _any_ of your own storage quota. That's right. You can take the entire library with you, for absolutely free[^disclaimer]
+Best of all, if you click the ellipsis <i class="fas fa-ellipsis-h"></i>  –> "[Add to My Drive](https://support.google.com/drive/answer/2375057?&hl=en#7293876)" on the main folder, you can get the entire library on all your devices in just two clicks. Then you can save files offline on your phone or tablet using [the app](https://www.google.com/intl/en-GB_ALL/drive/download/) or search the library ([including _inside_ PDFs](https://support.google.com/drive/answer/2375114)) using Drive's powerful, built-in search. And because the files were uploaded by my account, adding them to your drive doesn't use _any_ of your own storage quota. That's right. You can take the entire library with you, for absolutely free[^disclaimer]
 
 ### Additional Information
 
-While most of the content collected here can be found on [other websites]({% link sources.md %}), [some of it can't]({% link exclusive.md %}) and while my focus is on free content, I do recommend some commercial/copyrighted works. To find those, you'll have to resort to more traditional libraries.
+To learn (and stay informed) about the latest additions to the library, [see the blog]({% link blog.md %}).
+
+And while most of the content collected here can be found on [other websites]({% link sources.md %}), [some of it can't]({% link exclusive.md %}). To find the commercial/copyrighted works recommended here for free, you'll have to resort to more traditional libraries.
 
 ---
 Footnotes:
