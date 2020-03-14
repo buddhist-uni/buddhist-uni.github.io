@@ -3,7 +3,9 @@ title: Library
 permalink: /library/
 ---
 
-The same, great content featured in [the courses]({% link courses.md %}) along with other excellent works which I've found helpful, you can explore the library by:
+The same, great content featured in [the courses]({% link courses.md %}) along with other excellent works which I've found helpful. 
+
+You can explore the library by:
 
 ### [<i class="fas fa-tag"></i> Topics]({% link tags.md %}) (if you're unsure, [Start Here!]({% link _tags/buddhism.md %}))
 Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.

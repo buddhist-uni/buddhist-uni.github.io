@@ -4,7 +4,7 @@ permalink: "/tags/"
 layout: page
 ---
 
-Here you'll find the content on the site presented thematically with minimal commentary. For more structured reading guides, see the <a href="{% link courses.md %}">Course List</a>.
+Here you'll find the content on the site organized thematically. Very similar to <a href="{% link courses.md %}">the courses</a> but with less structure and commentary, the bibliographies put the works front and center, and allow you to zero in on what you might be looking for right now.
 
 <ul class="master_tags_list">
 {% assign tags = site.tags | sort: "title" %}
