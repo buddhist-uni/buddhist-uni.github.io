@@ -4,7 +4,7 @@ layout: page
 
 ![yaktocat]({% link assets/imgs/yaktocat.png %})
 
-_Welcome to the Github Buddhist University_:
+_[Welcome to the Github Buddhist University]({% link _posts/2020-03-13-welcome.md %})_:
 A small collection of 4 free, self-paced, online [courses]({% link courses.md %}) on Buddhism:
 
 ### <i class="fas fa-chalkboard-teacher"></i> [Buddhism 101]({% link _courses/buddhism.md %})
