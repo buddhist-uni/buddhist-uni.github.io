@@ -4,7 +4,7 @@ title: Courses
 permalink: /courses/
 ---
 
-The University organizes content from across the Web into non-overlapping[^overlap], self-paced, free reading guides on a variety or topics in Buddhist Studies. We currently offer 4 courses on the fundamentals of Buddhism:
+The University organizes content from across the Web into non-overlapping[^overlap], self-paced, free reading guides on a variety of topics in Buddhist Studies. We currently offer 4 courses on the fundamentals of Buddhism:
 
 ### [<i class="fas fa-chalkboard-teacher"></i> Buddhism 101]({% link _courses/buddhism.md %})
 An introduction suitable for everyone, especially beginners and people completely new to Buddhism.
