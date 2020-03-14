@@ -52,7 +52,6 @@ layout: default
         {% endif %}
     {% endfor %}
     {% if tags.size > 0 %}Tags: {{ tags | array_to_sentence_string }}{% endif %}
-    {% endif %}
     </p><p>
     {% if page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
