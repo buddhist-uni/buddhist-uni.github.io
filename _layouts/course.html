@@ -6,9 +6,6 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {% assign tag = site.tags | where: "slug", page.slug | first %}
-    {% if tag %}
-        <i>For a list of the content featured in this course, see <a href="{{ tag.url }}">the bibliography</a>.</i>
-    {% endif %}
     {% if page.google_doc_id %}
         <i>This course is also available <a href="https://docs.google.com/document/d/{{ page.google_doc_id  }}/edit?usp=sharing">as a Google Doc</a></i>
     {% endif %}
