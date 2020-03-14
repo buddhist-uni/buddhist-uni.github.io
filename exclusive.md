@@ -4,7 +4,7 @@ permalink: "/exclusive/"
 layout: page
 ---
 
-Here you will find links to all the content on the site which to my knownledge doesn't exist elsewhere on the open internet or is especially difficult to find, either because it was taken down, because it's my own derivative work (e.g. when I edited a talk) or because it's a file I was given directly (e.g. chanting recordings passed around offline). They are collected here in the hopes that this list will be useful to other collectors.
+Here you will find links to the content on the site which (to my knowledge) is difficult or impossible to find elsewhere, either because it went offline,  it's a derivative work (e.g. when I edited a talk) or because it's a file I was given directly (e.g. recordings passed around offline). They are collected here in the hopes that this list will be useful to other collectors.
 
 <div>
 {% assign categories = "av,essays" | split: ',' %}

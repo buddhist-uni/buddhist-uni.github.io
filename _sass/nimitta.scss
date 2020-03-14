@@ -1,3 +1,9 @@
+img {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .content_box {
     box-sizing: border-box;
     border: 1px solid gray;
@@ -14,6 +20,18 @@
 
 .simple_content p {
     margin-left: 1.5em;
+}
+
+.narrow {
+    max-width: 40em;
+}
+
+.master_tags_list li {
+    padding-bottom: 10px;
+}
+
+.master_tags_list .tag_link {
+    font-size: 105%;
 }
 
 article.course .post-header p {
@@ -38,14 +56,14 @@ article.tag div.tagged_content {
     font-size: 105%;
 }
 
-article.tag div.featured_content_list ul {
+div.featured_content_list ul {
     flex-wrap: wrap;
     display: flex;
     list-style: none;
     margin-left: 5px;
 }
 
-article.tag .featured_content_list li {
+div.featured_content_list li {
     width: 20em;
     padding: 17px;
     margin: 5px;
@@ -53,12 +71,13 @@ article.tag .featured_content_list li {
     border-radius: 9px;
 }
 
-article.tag div.featured_content_list .content_title {
+div.featured_content_list .content_title {
     font-size: 105%;
     font-weight: 500;
     padding-bottom: 15px;
 }
 
-article.tag div.featured_content_list .content_desc p {
+div.featured_content_list .content_desc p {
     margin-bottom: 0px;
 }
+
