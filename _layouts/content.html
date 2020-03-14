@@ -36,16 +36,22 @@ layout: default
         Adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
     {% endif %}
 
+    {% assign tagslugs = '' | split: '' %}
+    {% if page.course %}
+        {% assign tagslugs = tagslugs | push: page.course %}
+    {% endif %}
     {% if page.tags.size > 0 %}
-        {% assign tags = '' | split: '' %}
-        {% for t in page.tags %}
-            {% assign tag = site.tags | where: "slug", t | first %}
-            {% if tag %}
-                {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
-                {% assign tags = tags | push: taglink %}
-            {% endif %}
-        {% endfor %}
-        {% if tags.size > 0 %}Tags: {{ tags | array_to_sentence_string }}{% endif %}
+        {% assign tagslugs = tagslugs | concat: page.tags %}
+    {% endif %}
+    {% assign tags = '' | split: '' %}
+    {% for t in tagslugs %}
+        {% assign tag = site.tags | where: "slug", t | first %}
+        {% if tag %}
+            {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
+            {% assign tags = tags | push: taglink %}
+        {% endif %}
+    {% endfor %}
+    {% if tags.size > 0 %}Tags: {{ tags | array_to_sentence_string }}{% endif %}
     {% endif %}
     </p><p>
     {% if page.course %}
