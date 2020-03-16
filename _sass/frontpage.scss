@@ -1,0 +1,78 @@
+.frontpage .learning_styles ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.frontpage .learning_styles li {
+    width: 20em;
+    min-height: 265px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 9px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.frontpage .learning_styles .ls_name {
+    font-size: 160%;
+}
+
+.frontpage .learning_styles .ls_icon {
+    font-size: 87px;
+}
+
+.frontpage .learning_styles .ls_desc {
+    padding: 5px;
+}
+
+.frontpage main {
+    padding-bottom: 0px;
+}
+
+.frontpage div.herotext {
+    text-align: center;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 270px;
+}
+
+.frontpage div.footerbackground {
+    background-image: linear-gradient(white, #222);
+    background-image: url("/assets/imgs/monk_on_phone.jpg");
+    height: 1540px;
+    max-width: 1540px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -250px;
+}
+
+.frontpage footer.site-footer a {
+    color: lightblue;
+}
+
+.frontpage footer.site-footer p {
+    color: #aaa;
+}
+
+.frontpage footer.site-footer li {
+    color: white;
+}
+
+.frontpage footer.site-footer {
+    border-top: 0px;
+    color: white;
+}
+

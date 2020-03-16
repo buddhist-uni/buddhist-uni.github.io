@@ -4,6 +4,11 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer a.u-email {
+    overflow-wrap: break-word;
+}
+
 .content_box {
     box-sizing: border-box;
     border: 1px solid gray;
@@ -81,3 +86,6 @@ div.featured_content_list .content_desc p {
     margin-bottom: 0px;
 }
 
+@import
+    "frontpage"
+;

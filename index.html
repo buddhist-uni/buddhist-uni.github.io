@@ -1,0 +1,49 @@
+---
+layout: nil
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="frontpage">
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1><a href="{% link _posts/2020-03-13-welcome.md %}">Welcome to the Github Buddhist University</a></h1>
+        <h3>What kind of learning do you prefer?</h2>
+
+<div class="learning_styles"><ul>
+  <li>
+    <a href="/courses/"><div class="ls_name">Structured</div></a>
+    <div class="ls_icon"><i class="fas fa-chalkboard-teacher"></i></div>
+    <div class="ls_desc">Take rigorous, self-paced, online courses guiding you step-by-step through the best material for learning each topic.</div>
+  </li>
+  <li>
+    <div class="ls_name"><a href="/tags/">Self-Guided</a></div>
+    <div class="ls_icon"><i class="fas fa-boxes"></i></div>
+    <div class="ls_desc">Explore a curated library of the best introductory material available, <a href="/library/">organized in a variety of ways</a> to suit your style.</div>
+  </li>
+</ul></div>
+
+      </div>
+    <div class="footerbackground">
+      <div class="herotext">
+        <h1>A Free Buddhist Education</h1>
+        <p>Rigerous academics and thorough content coverage, the University offers a comprehensive foundation in Buddhist studies.
+        <h1 style="padding-top: 59px;">For the Digital Generation</h1>
+        <p>Completely free and open source, take the world of Buddhism with you everywhere you go.</p>
+      </div>
+      {%- include footer.html -%}
+    </div>
+    </main>
+
+
+  </body>
+
+</html>
+
+
+
