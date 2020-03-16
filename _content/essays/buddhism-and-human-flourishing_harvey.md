@@ -8,4 +8,6 @@ course: buddhism
 tags: [form, west]
 ---
 
+> The idea of the Buddha nature, or the earlier idea that "this mind is brightly shining, but it is defiled by visiting defilements," point to a potential for good deep in everyone...
+
 A defense of Buddhism in light of some Western critiques and an encouragement to try out one particular Eastern practice.
