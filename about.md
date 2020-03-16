@@ -14,3 +14,5 @@ You can find him and other devotees of Early Buddhism at [SuttaCentral: Discuss 
 50% feline, 50% cephalopod, and 100% fierce Dharma Protector, our university mascot is the **Yaktocat**.
 
 
+_Homepage background image by [flowcomm](https://www.flickr.com/people/21162417@N07)_
+<i>licensed under <a href="https://creativecommons.org/licenses/by/2.0?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a>
