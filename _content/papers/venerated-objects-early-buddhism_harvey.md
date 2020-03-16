@@ -12,4 +12,6 @@ course: form
 tags: [indian, symbolism]
 ---
 
+> Just as the beautiful lotus blossom grows up from the mud and water, so one with an enlightened mind develops out of the ranks of ordinary beings
+
 The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.
