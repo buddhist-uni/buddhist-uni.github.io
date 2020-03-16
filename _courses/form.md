@@ -98,6 +98,13 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_doug-smith" %}
 
+*Robinson Chapter 11*
+
+{% include inline_content.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
+- Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
+- Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
+
+
 *Robinson Chapter 12: “Buddhism Comes West”*
 
 {% include inline_content.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
