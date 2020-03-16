@@ -7,4 +7,6 @@ course: buddhism
 tags: [function, poetry, ethics, form, ebts, pali-canon, snp]
 ---
 
+> One should sustain this recollection
+
 The Buddha describes, in this much beloved poem from the Sutta Nipata, how to cultivate loving-kindness.

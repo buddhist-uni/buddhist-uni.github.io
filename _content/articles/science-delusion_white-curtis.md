@@ -11,4 +11,6 @@ tags: [west, selling]
 status: featured
 ---
 
+> ...recognize that this view is not scientific discovery: it is ideology.
+
 Many Westerners come to Buddhism wed to scientific materialism and find themselves unable to overcome their "Science Delusion." White tackles this subject head-on in this striking interview.

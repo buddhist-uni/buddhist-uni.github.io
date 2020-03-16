@@ -12,4 +12,6 @@ course: buddhism
 tags: [west]
 ---
 
+> Freud in particular developed the concept that freedom means acting on one's desires. ... From a Buddhist standpoint, this notion is totally twisted
+
 Buddhism has a lot to contribute to the pressing problems of modernity. In this article, Powers briefly explores four such domains: individualism, science, freedom, and morality.

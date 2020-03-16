@@ -9,5 +9,6 @@ tags: [ethics, meditation, west]
 drive_links: ["https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk"]
 ---
 
-Ajahn Geoff tells us a story about his teacher and encourages us Westerners to remember to ground our meditation practice in generosity.
+> ...when these people meditate they’re awfully grim.
 
+Ajahn Geoff reminds Westerners to ground their meditation practice in generosity.

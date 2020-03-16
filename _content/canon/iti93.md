@@ -8,4 +8,7 @@ course: function
 tags: [nibbana, symbolism, poetry, philosophy]
 ---
 
+> The fire of lust burns mortals;
+Infatuated by sensual pleasures
+
 A short, poetic description of Nibbāna.

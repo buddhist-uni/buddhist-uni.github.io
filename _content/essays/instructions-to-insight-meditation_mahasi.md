@@ -9,4 +9,6 @@ tags: [meditation, vipassana, burmese]
 status: featured
 ---
 
+>  If a sensation of itchiness intervenes and the yogi desires to scratch because it is hard to bear, both the sensation and the desire to get rid of it should be noted, without immediately getting rid of the sensation by scratching.
+
 An excellent general introduction to meditation, these instructions are applicable to whatever meditation technique you use.
