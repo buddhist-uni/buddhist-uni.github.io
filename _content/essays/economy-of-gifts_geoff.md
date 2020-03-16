@@ -8,4 +8,4 @@ tags: [monastic]
 status: featured
 ---
 
-Ajahn Geoff explains how the monastic institution works economically: by creating an economy of gifts.
+Ajahn Geoff explains how the monastic institution works by creating an economy of gifts.
