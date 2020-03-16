@@ -10,4 +10,6 @@ course: buddhism
 tags: [function, ethics, philosophy, lay, problems]
 ---
 
+> What lies behind this insistence on love is a worry: without a deep-seated fear that one day love would no longer exist (or exist in the same way) why would anyone feel that they have to insist upon it so much?
+
 Applying Buddhist wisdom to an area of our life we all care about deeply — our relationship with our loved ones — Ajahn Jayasaro makes the teachings relatable and applicable. An excellent sermon and well worth a read.

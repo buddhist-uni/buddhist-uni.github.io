@@ -10,4 +10,6 @@ course: function
 tags: [meditation, philosophy]
 ---
 
+> When you are repelled by everything, there is nothing to grasp onto and craving becomes impossible.
+
 Ajahn Brahmali explains how ethics and meditation lead to enlightenment.

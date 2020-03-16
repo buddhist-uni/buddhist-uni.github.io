@@ -10,4 +10,6 @@ course: function
 tags: [west, philosophy, epistemology]
 ---
 
+> Co-incidence of two phenomena, even when repeated, does not mean that one phenomenon is the cause of the other. To claim that activity in the brain causes awareness, or mind, is plainly unscientific.
+
 Ajahm Brahm explains how science can be dogmatic and religion scientific.
