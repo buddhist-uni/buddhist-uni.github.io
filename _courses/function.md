@@ -20,7 +20,7 @@ For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/budd
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 
 
 Note: If you are looking for a quick “crash course” on the Noble Eightfold Path,
-please feel free to skip ahead and read the two books from the “Intermission” below.
+please feel free to skip ahead and read the two books from the “[Intermission](#intermission-the-noble-eightfold-path)” below.
 
 ### Main Text
 
