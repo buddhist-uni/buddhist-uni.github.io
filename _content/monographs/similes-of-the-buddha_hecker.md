@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/library-search-select.php?id=bp427s"
 drive_links:
   - "https://drive.google.com/file/d/1Z_KdLS0Tm_AybamUYsIpvJql5IIORmh6/view?usp=drivesdk"
 course: symbolism
-tags: [pali-canon]
+tags: [philosophy, monastic, pali-canon]
 year: 2009
 publisher: bps
 ---
