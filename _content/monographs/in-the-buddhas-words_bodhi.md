@@ -5,7 +5,7 @@ year: 2004
 publisher: wisdom
 status: featured
 course: ebts
-tags: [buddhism, pali-canon, philosophy, function]
+tags: [buddhism, pali-canon, philosophy, function, meditation, ethics]
 ---
 
 The contemporary anthology of the Buddha's teachings, Bhikkhu Bodhi organizes the key content of the suttas into a logical and progressive series of ten chapters.

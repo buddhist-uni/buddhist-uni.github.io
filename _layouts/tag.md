@@ -40,7 +40,7 @@ layout: default
 
   <div class="post-content">
 {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
-{% assign categories = 'monographs,booklets,canon,papers,excerpts,essays,articles,av,reference' | split: ',' %}
+{% assign categories = site.data.content_categories %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% for catslug in categories %}
   {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
