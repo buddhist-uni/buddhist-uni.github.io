@@ -2,7 +2,7 @@
 title: "A Life of Inner Quality"
 authors:
   - mahabua
-  - geoff
+translator: geoff
 external_url: "https://forestdhamma.org/2018/02/09/a-life-of-inner-quality/"
 formats: [epub, pdf]
 drive_links:

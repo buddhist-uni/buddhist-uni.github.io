@@ -8,6 +8,10 @@ layout: default
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page %}
     </h2>{% endif %}
+    {% assign translator = site.authors | where: "slug", page.translator | first %}
+    {% if translator %}
+    <h3 class="translator">Translated by {{ translator.title }}</h3>
+    {% endif %}
     <em>
             </em>
  </header>
