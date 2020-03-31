@@ -7,7 +7,7 @@ formats: [PDF, epub]
 drive_links:
   - "https://drive.google.com/file/d/1cy7VmpEvbHAhJAbYSB9RDED8UO0V5RpN/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1FpR9jxtqGqvAi0q-Rg_1jYe4rhGY4H-T/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [nibbana]
 year: 1993
 ---

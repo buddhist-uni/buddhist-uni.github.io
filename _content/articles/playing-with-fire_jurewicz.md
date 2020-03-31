@@ -5,7 +5,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/ba71/8e6966ab946ebb5138a06b13ed6762a809fe.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1vu3bf5QU_mLvgAuDkhF4qOsnhAqoNlm1/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [setting, origination]
 status: featured
 year: 2000

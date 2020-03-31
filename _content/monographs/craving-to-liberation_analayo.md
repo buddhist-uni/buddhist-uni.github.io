@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-craving.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1lFvRUFIXHXGg0o7WEGX5sxr9i6IVq6fv/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [pali-language, hindrances, philosophy, theravada, hermeneutics]
 year: 2009
 publisher: "The Buddhist Association of the United States"

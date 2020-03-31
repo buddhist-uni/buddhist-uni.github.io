@@ -4,7 +4,7 @@ title: "April's Showers"
 
 Announcing new bibliographies for:
 
-- [Symbolism in the Early Texts]({% link _tags/symbolism.md %})
+- [Imagery in the Early Texts]({% link _tags/symbolism.md %})
 
 This past month I was pleased to discover:
 

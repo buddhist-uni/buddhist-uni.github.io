@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.palitext.com/JPTS_scans/JPTS_28_2006.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1hkMSzN4_Qbsa4oy7sGnvNobfeaPcXLYb/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [rebirth-stories, dn]
 year: 2006
 volume: 28

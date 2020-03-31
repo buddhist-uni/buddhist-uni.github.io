@@ -1,7 +1,7 @@
 ---
 title: "Index of Suttas by Simile"
 external_url: "https://suttacentral.net/similes"
-course: symbolism
+course: imagery
 tags: [suttas]
 ---
 

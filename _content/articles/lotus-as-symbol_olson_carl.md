@@ -5,7 +5,7 @@ authors:
 external_url: "http://ojs3.equinoxpub.com/BSR/article/view/13944/16176"
 drive_links:
   - "https://drive.google.com/file/d/14-JT9HotO_JgYx4Ofsxuy86-6ooMQ841/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [form, stages]
 year: 1980
 journal: "Pāli Buddhist Review"
