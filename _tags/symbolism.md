@@ -1,6 +1,6 @@
 ---
-title: "Symbolism in the Early Buddhist Texts"
+title: "Imagery in the Early Buddhist Texts"
 parents: [ebts, hermeneutics]
 ---
 
-The similes, metaphors and linguistic gestures of the early Canon.
+The similes, metaphors and diction of the early Canon.
