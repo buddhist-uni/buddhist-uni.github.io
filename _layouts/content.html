@@ -6,8 +6,12 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.authors.size > 0 %}<h2 class="author">
-        {% if page.path contains "/canon/" %}Read {% endif %}By {% include content_authors_string.html content=page %}
+        By {% include content_authors_string.html content=page hide_reader=true %}
     </h2>{% endif %}
+    {% if page.reader %}
+    {% assign reader = site.authors | where: "slug", page.reader | first %}
+    <h2 class="author">Read by {% if reader %}{{ reader.title }}{% else %}{{ page.reader }}{% endif %}</h2>
+    {% endif %}
     {% assign translator = site.authors | where: "slug", page.translator | first %}
     {% if translator and page.translator %}
     <h3 class="translator">Translated by {{ translator.title }}</h3>
