@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.authors.size > 0 %}<h2 class="author">
-        By {% include content_authors_string.html content=page %}
+        {% if page.path contains "/canon/" %}Read {% endif %}By {% include content_authors_string.html content=page %}
     </h2>{% endif %}
     {% assign translator = site.authors | where: "slug", page.translator | first %}
     {% if translator %}
