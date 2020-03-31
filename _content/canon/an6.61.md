@@ -5,7 +5,7 @@ translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_/view?usp=drivesdk"]
 status: featured
-course: symbolism
+course: imagery
 tags: [an, view, nibbana, philosophy, poetry, origination, hermeneutics]
 ---
 

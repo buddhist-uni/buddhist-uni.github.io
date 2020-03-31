@@ -6,7 +6,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1RMxf7fE72GKRiQ9bD_jGf-XqPMWPYDAz/view?usp=drivesdk"]
 year: 1996
 journal: Tricycle
-course: symbolism
+course: imagery
 tags: [form]
 ---
 

@@ -10,7 +10,7 @@ publisher: bps
 series: wheel
 number: 137
 address: Kandy
-course: symbolism
+course: imagery
 tags: [form, ancient-art]
 ---
 

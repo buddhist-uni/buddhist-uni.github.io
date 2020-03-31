@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/buddhafiremiracle.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1F-Ft5Qit0YvmR2y-yhlqUpWpTbL0gsWv/view?usp=drivesdk"
-course: symbolism
+course: imagery
 tags: [dn, buddha, indian, setting, iddhis]
 year: 2015
 ---

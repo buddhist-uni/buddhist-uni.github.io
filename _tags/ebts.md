@@ -4,7 +4,7 @@ parents: [buddhism]
 children: 
   - setting
   - pali-canon
-  - symbolism
+  - imagery
 ---
 
 The Buddha's life and teachings as they've been passed down to us.
