@@ -9,7 +9,7 @@ layout: default
         {% if page.path contains "/canon/" %}Read {% endif %}By {% include content_authors_string.html content=page %}
     </h2>{% endif %}
     {% assign translator = site.authors | where: "slug", page.translator | first %}
-    {% if translator %}
+    {% if translator and page.translator %}
     <h3 class="translator">Translated by {{ translator.title }}</h3>
     {% endif %}
     <em>
