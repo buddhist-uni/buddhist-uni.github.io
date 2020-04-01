@@ -5,7 +5,8 @@ external_url: "https://suttacentral.net/iti93/en/ireland"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC/view?usp=drivesdk"]
 course: function
-tags: [nibbana, imagery, poetry, philosophy]
+tags: [iti, nibbana, imagery, poetry, philosophy]
+year: 1997
 ---
 
 > The fire of lust burns mortals;
