@@ -25,17 +25,16 @@ layout: default
     
 <div class="tag_desc">{{ content }}</div>
 
-{% if page.children %}
+{% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
+{% assign childtags = site.tags | where_exp: "t", cfilter %}
 {% assign children = '' | split: '' %}
-{% for cslug in page.children %}
-    {% assign child = site.tags | where: "slug", cslug | first %}
-    {% unless child %}{% continue %}{% endunless %}
+{% for child in childtags %}
     {% capture clink %}<a href="{{ child.url }}">{{ child.title }}</a>{% endcapture %}
     {% assign children = children | push: clink %}
 {% endfor %}
 {% if children.size > 0 %}
 {% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {{ children | array_to_sentence_string }}</div>{% endcapture %}{{ subtopics }}
-{% endif %}{% endif %}
+{% endif %}
   </header>
 
   <div class="post-content">
