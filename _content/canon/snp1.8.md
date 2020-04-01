@@ -5,6 +5,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ZuNmlS31B_0L5GWplk_r_zruUDP0USo-/view?usp=drivesdk"]
 course: buddhism
 tags: [function, poetry, ethics, form, ebts, pali-canon, snp]
+year: 2004
 ---
 
 > One should sustain this recollection

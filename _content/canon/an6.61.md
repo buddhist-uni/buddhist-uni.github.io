@@ -7,6 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_
 status: featured
 course: imagery
 tags: [an, view, nibbana, philosophy, poetry, origination, hermeneutics]
+year: 2018
 ---
 
 A group of monks tries to figure out the meaning of a difficult poem uttered by the Buddha. After offering several interpretations, the Buddha gives his answer.
