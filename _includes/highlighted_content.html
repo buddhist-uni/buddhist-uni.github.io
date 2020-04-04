@@ -2,7 +2,7 @@
   <div class="content_box_header">
     {% include simple_content_title.html content=include.content %}
   </div>
-  <div>{{ include.content.content }}</div>
+  <div markdown="1">{{ include.content.content }}</div>
   {% if include.content.course %}
     {% assign course = site.courses | where: "slug", include.content.course | first %}
     {% if course %}
