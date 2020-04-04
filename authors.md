@@ -12,9 +12,8 @@ layout: page
 {% assign articles = site.content | where_exp: "c", "c.path contains '/articles/'" %}
 {% assign av = site.content | where_exp: "c", "c.path contains '/av/'" %}
 
-<div>
-{% for author in site.authors %}
-    <h1 id="{{ author.slug }}"><a href="{{ author.url }}">{{ author.title }}</a></h1>
+<div><ul>
+{% for author in site.authors %} 
     {% assign catcounts = "" | split: "" %}
     {% capture filter %}c.authors contains '{{ author.slug }}'{% endcapture %}
     
@@ -77,7 +76,7 @@ layout: page
       {% assign catcounts = catcounts | push: s %}
     {% endif %}
     
-    {{ catcounts | array_to_sentence_string }}
+    <li id="{{ author.slug }}"><a href="{{ author.url }}">{{ author.title }}</a> ({{ catcounts | array_to_sentence_string }})</li>
 {% endfor %}
-</div>
+</ul></div>  
 
