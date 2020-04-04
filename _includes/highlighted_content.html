@@ -1,12 +1,12 @@
 <div class="content_box">
-  <span class="content_box_header">
+  <div class="content_box_header">
     {% include simple_content_title.html content=include.content %}
-  </span>
-  {{ include.content.content }}
+  </div>
+  <div>{{ include.content.content }}</div>
   {% if include.content.course %}
     {% assign course = site.courses | where: "slug", include.content.course | first %}
     {% if course %}
-        <em>Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>"</em>
+        <div><em>Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>"</em></div>
     {% endif %}
   {% endif %}
 </div>
