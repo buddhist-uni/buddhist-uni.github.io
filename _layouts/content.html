@@ -22,13 +22,9 @@ layout: default
 
   <div class="post-content">
         {{ content }}
-  </div>
-
-  <footer><i>
-    <p>
-    {% if page.year or page.publisher or page.booktitle or page.journal %}
-        Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}{% unless page.external_url or page.drive_links %}.{% endunless %}{% endif %}{% if page.external_url or page.drive_links %}{% if page.year or page.publisher or page.booktitle or page.journal %}, you can f{% else %}F{% endif %}ind
-        {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 %}.{% endunless %}{% endif %}
+        <p class="content_links">
+        {% if page.external_url or page.drive_links.size > 0 %}
+        Get {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
@@ -36,12 +32,17 @@ layout: default
                 {% capture format_link %}<a href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
                 {% assign format_links = format_links | push: format_link %}
             {% endfor %}
-            {% if page.external_url %}or get {% endif %}the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>.
+            {% if page.external_url %}or get {% endif %}the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>{% unless page.source_url %}.{% endunless %}{% endif %}
         {% endif %}
+        {% if page.source_url %}
+        adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
     {% endif %}
+        </p>
+  </div>
 
-    {% if page.source_url %}
-        Adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
+  <footer>
+    {% if page.year or page.publisher or page.booktitle or page.journal %}
+        <p><i>Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}.</i></p>
     {% endif %}
 
     {% assign tagslugs = '' | split: '' %}
@@ -59,15 +60,13 @@ layout: default
             {% assign tags = tags | push: taglink %}
         {% endif %}
     {% endfor %}
-    {% if tags.size > 0 %}Tags: {{ tags | array_to_sentence_string }}{% endif %}
-    </p><p>
+    {% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}</p>{% endif %}
     {% if page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
         {% if course %}
-            Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>."
+            <p><i>Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>."</i></p>
         {% endif %}
     {% endif %}
-   </p>
-  </i></footer>
+  </footer>
 
 </article>
