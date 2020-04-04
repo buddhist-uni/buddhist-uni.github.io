@@ -54,6 +54,7 @@ layout: default
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
+  {% if course_content.size > 0 %}<h4>See also:</h4>{% endif %}
   {% for c in tag_content %}
     <div>{% include simple_content_title.html content=c %}</div>
   {% endfor %}
