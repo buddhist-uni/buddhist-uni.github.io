@@ -96,7 +96,7 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 
 *Robinson Chapter 10*
 
-{% include content_box.html category="av" slug="introduction-to-buddhist-art_doug-smith" %}
+{% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
 *Robinson Chapter 11*
 

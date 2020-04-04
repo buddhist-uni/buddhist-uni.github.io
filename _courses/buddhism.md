@@ -47,7 +47,7 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 {% include content_box.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
 
-{% include inline_content.html category="av" slug="secular-intro-to-buddhism_doug-smith" %}
+{% include inline_content.html category="av" slug="secular-intro-to-buddhism_smith-doug" %}
 - A short introduction to Buddhism from a more secular perspective.
 
 {% include inline_content.html category="canon" slug="sn22.86" %}
