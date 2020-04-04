@@ -2,11 +2,11 @@
   <div class="content_box_header">
     {% include simple_content_title.html content=include.content %}
   </div>
-  <div markdown="block">{{ include.content.content }}</div>
+  <div class="content_box_desc">{{ include.content.content | markdownify }}</div>
   {% if include.content.course %}
     {% assign course = site.courses | where: "slug", include.content.course | first %}
     {% if course %}
-        <div><em>Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>"</em></div>
+        <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>"</em></div>
     {% endif %}
   {% endif %}
 </div>
