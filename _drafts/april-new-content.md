@@ -18,4 +18,7 @@ Including:
 
 This month I also read:
 
+- [This profound interview with Professor Charles Hallisey](https://drive.google.com/a/u.northwestern.edu/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk)
+
 {% include content_box.html category="canon" slug="an6.13" %}
+
