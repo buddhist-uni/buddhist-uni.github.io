@@ -2,7 +2,8 @@
 {% unless include.keep_rejects %}
     {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
 {% endunless %}
-{% assign sorted = sorted | sort: "year" %}
+{% assign sortkey = include.sortby | default: "year" %}
+{% assign sorted = sorted | sort: sortkey %}
 {% for content in sorted %}
     {% if content.status == 'featured' %}
         {% include highlighted_content.html content=content %}

@@ -16,6 +16,6 @@ Here you will find links to the content on the site which (to my knowledge) is d
     {% assign contents = site.content | where_exp: "c", filter %}
     {% assign contents = contents | where_exp: "c", "c.drive_links.size > 0" %}
     {% assign contents = contents | where_exp: "c", "c.external_url == nil" %}
-    <div>{% include content_list.html contents=contents %}</div>
+    <div>{% include content_list.html contents=contents orderby="slug" %}</div>
 {% endfor %}
 </div>

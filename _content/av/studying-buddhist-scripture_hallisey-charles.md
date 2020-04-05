@@ -5,6 +5,7 @@ year: 2018
 month: may
 source_url: "https://wisdomexperience.org/wisdom-podcast/charles-hallisey/"
 drive_links: ["https://drive.google.com/a/u.northwestern.edu/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk"]
+formats: [m4a]
 course: pali-canon
 tags: [buddhism, ebts, hermeneutics]
 status: featured
