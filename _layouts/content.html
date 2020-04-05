@@ -22,7 +22,7 @@ layout: default
         {{ content }}
         <p class="content_links">
         {% if page.external_url or page.drive_links.size > 0 %}
-        Get {% if page.external_url %}it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
+        {% if page.external_url %}Find it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
@@ -30,7 +30,7 @@ layout: default
                 {% capture format_link %}<a href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
                 {% assign format_links = format_links | push: format_link %}
             {% endfor %}
-            {% if page.external_url %}or get {% endif %}the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>{% unless page.source_url %}.{% endunless %}{% endif %}
+            {% if page.external_url %}or get{% else %}Get{% endif %} the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>{% unless page.source_url %}.{% endunless %}{% endif %}
         {% endif %}
         {% if page.source_url %}
         adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
