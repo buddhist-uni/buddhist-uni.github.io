@@ -82,6 +82,8 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
+{% include content_box.html category="canon" slug="an7.6" %}
+
 *Chapter 5*
 
 {% include content_box.html category="av" slug="dealing-with-difficult-people_brahm" %}
