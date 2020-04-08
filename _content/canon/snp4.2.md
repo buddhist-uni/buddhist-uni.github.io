@@ -1,5 +1,5 @@
 ---
-title: "Snp 4.2: Objects, Desires, Pleasures"
+title: "Snp 4.2: The Eight on the Body as a Cave"
 external_url: "https://suttacentral.net/snp4.2/en/mills"
 translator: mills-laurence
 formats: [pdf]
