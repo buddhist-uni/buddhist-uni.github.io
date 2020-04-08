@@ -133,13 +133,16 @@ Having come to the halfway point of our course, one might rightly question what 
 And that is somewhat accurate of what we've covered so far. Buddhism claims no exclusivity on teaching the good life. What Buddhism does uniquely have is the path beyond suffering. For, no matter how rich and privileged you are, no matter how nice and kind and even saintly you become, even the best life still has its ups and downs. As the Buddha explained:
 
 > "What do you think, Udāyī? On an occasion when someone refrains from killing living creatures, is their self perfectly happy at that time, or does it have both pleasure and pain?"
+>  
 "It has both pleasure and pain."
+>  
 "What do you think, Udāyī? On an occasion when someone refrains from stealing … sexual misconduct … lying, is their self perfectly happy at that time, or does it have both pleasure and pain?"
+>  
 "It has both pleasure and pain."
-
+>  
 *~ From [MN 79](https://suttacentral.net/mn79/en/sujato){:target="_blank"}*
 
-In part II, we return to the Noble Eightfold Path, and the world-transcending teachings.
+In part II, we return to the Noble Eightfold Path, and to the teachings on transcending _all_ suffering.
 
 *Chapter 7*
 
