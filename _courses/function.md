@@ -209,7 +209,7 @@ In which we finally get to meditation!
 
 {% include course_feedback.html course="The+Function+of+Buddhism" %}
 
-{% include generic_further_reading.md %}
+{% include generic_further_reading.html %}
 
 ---
 

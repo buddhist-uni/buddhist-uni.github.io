@@ -49,7 +49,7 @@ layout: default
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "year" %}
   {% if course_content.size > 0 or tag_content.size > 0 %}
-  <h3 id="{{ catslug }}">{% include content_icon.html category=cat_slug %} {{ category.title }}</h3>
+  <h3 id="{{ catslug }}"> {{ category.title }}</h3>
   {% if course_content.size > 0 %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
