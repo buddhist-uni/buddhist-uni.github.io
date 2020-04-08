@@ -177,4 +177,4 @@ A few more words are also due on the subject of restraint, beyond the five prece
 
 {% include course_feedback.html course="The+Form(s)+of+Buddhism" %}
 
-{% include generic_further_reading.md %}
+{% include generic_further_reading.html %}

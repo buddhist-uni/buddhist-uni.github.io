@@ -99,4 +99,4 @@ We end the course with this word of advice:
 
 {% include course_feedback.html course="The+Early+Buddhist+Texts" %}
 
-{% include generic_further_reading.md %}
+{% include generic_further_reading.html %}
