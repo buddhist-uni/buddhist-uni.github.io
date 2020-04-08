@@ -156,8 +156,9 @@ Having thus gotten a traditional introduction to the Path, we can now return to 
 
 *Chapter 9*
 
-This chapter we have an extra lecture, in lieu of our usual essay.
-- For most of us, what holds us back from perfecting virtue and becoming saintly ourselves is our fears and our worldly attachments. Bhikkhu Cintita skirted the emotionally charged side of this, but Bhante Yuttadhammo meets it directly in these provocative talks.
+For most of us, what holds us back from perfecting virtue and becoming saintly ourselves is our fears and our worldly attachments. Bhikkhu Cintita skirted the emotionally charged side of this, but Bhante Yuttadhammo meets it directly in these provocative talks.
+
+{% include content_box.html category="canon" slug="dhp25" %}
 
 *Chapter 10*
 
