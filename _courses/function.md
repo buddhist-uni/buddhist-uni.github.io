@@ -19,9 +19,6 @@ For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/budd
 ## Course Outline
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 
 
-Note: If you are looking for a quick “crash course” on the Noble Eightfold Path,
-please feel free to skip ahead and read the two books from the “[Intermission](#intermission-the-noble-eightfold-path)” below.
-
 ### Main Text
 
 This course follows the excellent (if sometimes repetitive) textbook by Bhikkhu Cintita:
@@ -36,6 +33,31 @@ This book is divided into two, unsurprising halves: Buddhist Life and Buddhist P
 {% include inline_content.html category="av" slug="going-forth_yuttadhammo" %}
 
 - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
+
+#### The Noble Eightfold Path
+
+Before we begin the course proper, let’s first do a short "mini-course" to give us an overview of the Path and where we're headed:
+
+{% include inline_content.html category="booklets" slug="noble-eightfold-path_bodhi" %}
+- Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
+
+{% include inline_content.html category="booklets" slug="in-his-own-words_nyanamoli" %}
+- Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
+
+
+I recommend reading Nyanamoli’s anthology before Bhikkhu Bodhi’s analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
+1. Bodhi: Preface
+2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
+3. Bodhi: Part 1 (The Way to the End of Suffering)
+4. Nyanamoli: Right View
+5. Bodhi: Right View
+8. …
+9. Nyanamoli: In Practice and The Means
+9. Bodhi: The Development of Wisdom
+9. Nyanamoli: The End
+9. Bodhi: Epilogue
+
+Having thus gotten a traditional map of the Path, we can now begin exploring the terrain.
 
 ### Lectures
 
@@ -104,36 +126,20 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 This external factor, namely good spiritual friendship, is the final (and most important) of the external factors supporting the Buddhist Path, and so concludes our discussion of “Buddhist Life” and enters us onto the path.
 
-#### Intermission: The Noble Eightfold Path
-
-Having come to the halfway point of our course, one might rightly question what makes Buddhism so different from other religions? Sure, Buddhism “puts cruelty first” and has lots of handy lists, but so far “be generous and don't do evil” sounds like pretty standard Religious Wisdom™️, no?
-
-And that is somewhat accurate of what we've covered so far. Buddhism claims no exclusivity on teaching the good life. What Buddhism does uniquely have is the path beyond suffering. For, no matter how rich and privileged you are, no matter how nice and kind and even saintly you become, even the best life still has its ups and downs.
-
-It is at this point, then, that we (re)introduce the Four Noble Truths: that life entails suffering, caused by our clinging, whose sublime cessation, is brought about by the Noble Eightfold Path:
-
-{% include inline_content.html category="booklets" slug="noble-eightfold-path_bodhi" %}
-- We take a short break from Bhikkhus Cintita and Yuttadhammo here, to read Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
-
-{% include inline_content.html category="booklets" slug="in-his-own-words_nyanamoli" %}
-- Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
-
-
-I recommend reading Nyanamoli’s denser anthology before Bhikkhu Bodhi’s more lucid analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
-1. Bodhi: Preface
-2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
-3. Bodhi: Part 1 (The Way to the End of Suffering)
-4. Nyanamoli: Right View
-5. Bodhi: Right View
-8. …
-9. Nyanamoli: In Practice and The Means
-9. Bodhi: The Development of Wisdom
-9. Nyanamoli: The End
-9. Bodhi: Epilogue
-
 #### Part 2: Buddhist Path
 
-Having thus gotten a traditional introduction to the Path, we can now return to Bhikkhu Cintita’s more intricate explanation.
+Having come to the halfway point of our course, one might rightly question what makes Buddhism so different from other religions? Sure, Buddhism "puts cruelty first" and has lots of handy lists, but so far "be generous and don't do evil" sounds like pretty standard Religious Wisdom™️, no?
+
+And that is somewhat accurate of what we've covered so far. Buddhism claims no exclusivity on teaching the good life. What Buddhism does uniquely have is the path beyond suffering. For, no matter how rich and privileged you are, no matter how nice and kind and even saintly you become, even the best life still has its ups and downs. As the Buddha explained:
+
+> "What do you think, Udāyī? On an occasion when someone refrains from killing living creatures, is their self perfectly happy at that time, or does it have both pleasure and pain?"
+"It has both pleasure and pain."
+"What do you think, Udāyī? On an occasion when someone refrains from stealing … sexual misconduct … lying, is their self perfectly happy at that time, or does it have both pleasure and pain?"
+"It has both pleasure and pain."
+
+*~ From [MN 79](https://suttacentral.net/mn79/en/sujato){:target="_blank"}*
+
+In part II, we return to the Noble Eightfold Path, and the world-transcending teachings.
 
 *Chapter 7*
 
