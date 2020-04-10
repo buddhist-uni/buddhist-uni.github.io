@@ -4,11 +4,12 @@ external_url: "https://suttacentral.net/an4.178/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1v_B_tSbFMamYro8Nvkg-5vnoWGEYzglZ"]
-course: nibbana
+course: path
 tags:
   - an
   - arahat
   - view
+  - nibbana
 year: 2018
 ---
 

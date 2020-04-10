@@ -12,7 +12,11 @@ number: 308
 address: Kandy
 course: function
 status: featured
-tags: [buddhism, meditation, theravada]
+tags: 
+  - buddhism
+  - path
+  - meditation
+  - theravada
 ---
 
 A lucid and compelling explanation of the Noble Eightfold Path by a renowned contemporary scholar of Pāli and Early Buddhism. Highly recommended for everyone interested in Buddhism.

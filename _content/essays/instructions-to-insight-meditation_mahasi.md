@@ -5,7 +5,11 @@ external_url: "http://www.tathagata.org/sites/default/files/Instructions%20to%20
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1mbopM-l37IcGF_u3l3J5LKhIiZWicgM8/view?usp=drivesdk"]
 course: function
-tags: [meditation, vipassana, burmese]
+tags:
+  - meditation
+  - vipassana
+  - path
+  - burmese
 status: featured
 ---
 
