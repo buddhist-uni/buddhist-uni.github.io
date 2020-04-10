@@ -11,7 +11,7 @@ series: wheel
 number: 428
 address: Kandy
 course: function
-tags: [pali-canon, ebts]
+tags: [pali-canon, ebts, path]
 ---
 
 A short anthology of texts from the Pali Canon framed by the Noble Eightfold Path. An excellent study guide.

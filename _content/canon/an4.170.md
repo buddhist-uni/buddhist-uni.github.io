@@ -4,10 +4,10 @@ external_url: "https://suttacentral.net/an4.170/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1_2rEZXSJXvbpTPUWZOx729HS87i8S7qO"]
-course: meditation
+course: path
 tags:
   - an
-  - path
+  - meditation
   - nibbana
 year: 2018
 ---

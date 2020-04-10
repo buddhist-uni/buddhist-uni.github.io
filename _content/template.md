@@ -1,12 +1,13 @@
 ---
 title: "Template"
 authors:
-  - Khemarato
+  - author
 external_url: "url"
 drive_links:
   - "link"
 course: course
-tags: [tags]
+tags:
+  - tag
 year: 2020
 ---
 
