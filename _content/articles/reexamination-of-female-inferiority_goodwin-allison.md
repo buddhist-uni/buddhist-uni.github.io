@@ -2,7 +2,13 @@
 title: "Right View, Red Rust, and White Bones: A Reexamination of Buddhist Teachings on Female Inferiority"
 authors: [goodwin-allison]
 course: form
-tags: [nuns, philosophy, hermeneutics, ethics, indian]
+tags:
+  - nuns
+  - philosophy
+  - hermeneutics
+  - ethics
+  - indian
+  - gender
 external_url: "http://blogs.dickinson.edu/buddhistethics/files/2012/04/Goodwin-Right-View-Final-Edit-April-29-2012.pdf"
 year: 2012
 month: apr

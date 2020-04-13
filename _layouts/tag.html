@@ -47,7 +47,7 @@ layout: default
   {% capture cat_filter %}c.path contains '/{{ catslug }}/'{% endcapture %}
   {% assign cat_content = all_content | where_exp: "c", cat_filter %}
   {% assign course_content = cat_content | where: "course", page.slug %}
-  {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "year" %}
+  {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
   {% if course_content.size > 0 or tag_content.size > 0 %}
   <h3 id="{{ catslug }}"> {{ category.title }}</h3>
   {% if course_content.size > 0 %}
