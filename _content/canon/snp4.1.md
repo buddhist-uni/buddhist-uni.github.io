@@ -9,7 +9,7 @@ tags: [snp, poetry, function, origination]
 year: 2015
 ---
 
-> let a mindful one avoid at every turn
-these sense-desires,
-with them abandoned,
+> let a mindful one avoid at every turn  
+these sense-desires,  
+with them abandoned,  
 cross the flood

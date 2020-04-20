@@ -9,6 +9,6 @@ tags: [snp]
 year: 2015
 ---
 
-> who sees within, without "there’s nought",
-of such a one, what knowledge known
+> who sees within, without "there’s nought",  
+of such a one, what knowledge known  
 how will such a one be led?
