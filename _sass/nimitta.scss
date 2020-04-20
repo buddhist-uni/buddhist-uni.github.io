@@ -18,13 +18,19 @@ footer a.u-email {
     border: 1px solid gray;
     padding: 8px;
     border-radius: 13px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .content_box div.content_box_desc {
-    margin-bottom: 3px;
-    margin-top: 8px;
-    margin-left: 1.2em;
+    margin: 8px 1.2em 3px;
+}
+
+.content_box div.content_box_desc p,blockquote:last-child {
+    margin-bottom: 0px;
+}
+
+.content_box div.course_link {
+    margin: 7px 2px 2px 7px;
 }
 
 .simple_content p {
