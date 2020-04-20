@@ -14,4 +14,5 @@ tags:
 year: 2008
 ---
 
-> For those who have one love, they have one suffering, for those who love nothing, they have no sorrow.
+> For those who have one love, they have one suffering.  
+For those who love nothing, they have no sorrow.
