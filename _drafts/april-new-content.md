@@ -1,5 +1,5 @@
 ---
-title: "April's Showers"
+title: "April Showers"
 ---
 
 Announcing new bibliographies for:
@@ -17,6 +17,7 @@ Including:
 - [SN 1.71](https://suttacentral.net/sn1.71/en/sujato) answers the question of when the Buddha would approve of murder.
 - [This lovely sutta (SN 35.247)](https://suttacentral.net/sn35.247/en/sujato) compares cognitive dissonance to six animals tied together. Tying the disparate pieces of our mind to the "post" of mindfulness eases the tension — once the animals run out of energy!
 - [Dr Tucker tells us about the evidence for reincarnation](https://wiswo.org/early-buddhism-2015/early-buddhism-20154/early-buddhism-20154-readings-1/)
+- [Rupert Gethin encourages us to reassess how we read the mythology of the Buddhist Canon]({% link _content/articles/cosmology-and-meditation_gethin.md %})
 
 This month I also read:
 

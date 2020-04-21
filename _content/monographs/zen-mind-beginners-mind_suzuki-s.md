@@ -6,6 +6,8 @@ status: featured
 course: japanese
 tags:
   - buddhism
+  - function
+  - ambulit
   - mahayana
   - chan
   - philosophy
