@@ -33,10 +33,10 @@ layout: default
     {% assign children = children | push: clink %}
 {% endfor %}
 {% if children.size > 0 %}
-{% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: <ul>
+{% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {% if children.size <= 1 %}{{ children | first }}{% else %}<ul>
 {% for child in children %}
     <li>{{ child }}</li>
-{% endfor %}</ul>
+{% endfor %}</ul>{% endif %}
 </div>{% endcapture %}{{ subtopics }}
 {% endif %}
   </header>
