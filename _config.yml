@@ -100,7 +100,7 @@ defaults:
         path: ""
         type: "content"
     values:
-        formats: [pdf]
+        formats: [pdf, epub]
         layout: "content"
   -
     scope:

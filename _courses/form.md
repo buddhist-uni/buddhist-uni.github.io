@@ -76,9 +76,11 @@ As you read through *Robinson*, please also consider the following:
 
 *Chapter 5: “The Pantheon”*
 
+{% include content_box.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
+
 {% include content_box.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
 
-*After Chapter 6 of Robinson on “Vajrayana” Tibet*
+*After Chapter 6 of Robinson on “Vajrayana”*
 
 {% include inline_content.html category="articles" slug="story-of-the-horse-king_appleton" %}
 - One story, five countries.
@@ -94,11 +96,11 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 {% include inline_content.html category="av" slug="drums-and-bells_qing-de" %}
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
-*Robinson Chapter 10*
+*Robinson Chapter 10: Japan*
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
-*Robinson Chapter 11*
+*Robinson Chapter 11: Tibet*
 
 {% include inline_content.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
 - Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
