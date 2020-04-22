@@ -1,4 +1,4 @@
-—
+---
 title: "The Karma-Vibhanga Reliefs at Borobudur"
 authors:
   - anandajoti
@@ -13,7 +13,7 @@ tags:
   - indian
   - karma
 year: 2020
-—
+---
 
 > the deed in the early text [[MN135](https://suttacentral.net/mn135/en/bodhi)] is simply stated to be the killing, or refraining from killing, of living beings, and so on. The specific types of actions, and their approval are not mentioned. In the [later] Sanskrit text we get a list of normally around ten causes that lead to the result, many of which are illustrated
 

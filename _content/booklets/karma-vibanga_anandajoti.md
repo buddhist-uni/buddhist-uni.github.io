@@ -1,4 +1,4 @@
-—
+---
 title: "The Karma-vibhaṅga: The Analysis of Deeds"
 translator: anandajoti
 external_url: "https://bit.ly/2DFoGbs"
@@ -11,7 +11,7 @@ tags:
   - karma
 year: 2020
 month: apr
-—
+---
 
 > In the original teachings deeds and their results are presented quite subtly, as everyone, of course, produces many millions of intentional deeds, both good and bad, over the course of their lifetime. And the deeds themselves are often motivated by a mixture of good and bad intentions, which are not purely one or the other.
 > 
