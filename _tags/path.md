@@ -1,5 +1,5 @@
 ---
-title: "Path"
+title: "The Buddhist Path"
 parents: [function]
 ---
 

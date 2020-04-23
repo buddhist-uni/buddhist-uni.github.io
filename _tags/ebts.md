@@ -1,5 +1,5 @@
 ---
-title: "Early Buddhist Texts"
+title: "The Early Buddhist Texts"
 parents: [buddhism]
 ---
 
