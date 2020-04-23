@@ -2,5 +2,5 @@
 title: Buddhism
 ---
 
-Works giving an introduction or overview of Buddhism.
+Works giving an introduction to or an overview of Buddhism.
 
