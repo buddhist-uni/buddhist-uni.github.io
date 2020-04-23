@@ -1,3 +1,3 @@
 ---
-title: "Ajahn Sumedo"
+title: "Ajahn Sumedho"
 ---
