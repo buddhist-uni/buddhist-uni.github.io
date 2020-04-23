@@ -18,6 +18,7 @@ Including:
 - [This lovely sutta (SN 35.247)](https://suttacentral.net/sn35.247/en/sujato) compares cognitive dissonance to six animals tied together. Tying the disparate pieces of our mind to the "post" of mindfulness eases the tension — once the animals run out of energy!
 - [Dr Tucker tells us about the evidence for reincarnation](https://wiswo.org/early-buddhism-2015/early-buddhism-20154/early-buddhism-20154-readings-1/)
 - [Rupert Gethin encourages us to reassess how we read the mythology of the Buddhist Canon]({% link _content/articles/cosmology-and-meditation_gethin.md %})
+- [Ajahn Brahm talks about the Buddha, supernatural powers, and his time in Thailand in this fun sutta study class]({% link _content/av/mn12-explanation_brahm.md %})
 
 This month I also read:
 
