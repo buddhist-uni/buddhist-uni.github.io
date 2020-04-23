@@ -1,5 +1,5 @@
 ---
-title: "Philosophy"
+title: "Buddhist Philosophy"
 parents: [path]
 ---
 
