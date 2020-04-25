@@ -8,7 +8,6 @@ year: 2019
 tags:
   - mahayana
   - philosophy
-status: featured
 series: library-of-wisdom-and-compassion
 volume: 3
 ---

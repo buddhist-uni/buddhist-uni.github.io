@@ -1,5 +1,5 @@
 ---
-title: "Audio/Video Content"
+title: "Audio/Video"
 permalink: "/content/av/"
 ---
 
