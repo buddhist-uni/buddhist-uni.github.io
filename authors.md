@@ -12,8 +12,12 @@ layout: page
 {% assign articles = site.content | where_exp: "c", "c.path contains '/articles/'" %}
 {% assign av = site.content | where_exp: "c", "c.path contains '/av/'" %}
 
+{% assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" %}
+
 <div><ul>
-{% for author in site.authors %} 
+{% for letter in author_letters %}
+<h3 id="{{ letter.name }}">{{ letter.name | upcase }}</h3>
+{% for author in letter.items %}
     {% assign catcounts = "" | split: "" %}
     {% capture filter %}c.authors contains '{{ author.slug }}'{% endcapture %}
     
@@ -77,6 +81,7 @@ layout: page
     {% endif %}
     
     <li id="{{ author.slug }}"><a href="{{ author.url }}">{{ author.title }}</a> ({{ catcounts | array_to_sentence_string }})</li>
+{% endfor %}
 {% endfor %}
 </ul></div>  
 

@@ -19,6 +19,8 @@ Including:
 - [Dr Tucker tells us about the evidence for reincarnation](https://wiswo.org/early-buddhism-2015/early-buddhism-20154/early-buddhism-20154-readings-1/)
 - [Rupert Gethin encourages us to reassess how we read the mythology of the Buddhist Canon]({% link _content/articles/cosmology-and-meditation_gethin.md %})
 - [Ajahn Brahm talks about the Buddha, supernatural powers, and his time in Thailand in this fun sutta study class]({% link _content/av/mn12-explanation_brahm.md %})
+- [Ajahn Geoff talks about the unconditional purity of heart](https://www.accesstoinsight.org/lib/authors/thanissaro/purityofheart.html)
+- [Ajahn Sujato defends both the bardo and comparative studies in this compelling paper](https://santifm.org/santipada/wp-content/uploads/2010/05/RebirthandInbetweenState.pdf)
 
 This month I also read:
 
