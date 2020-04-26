@@ -42,7 +42,11 @@ footer a.u-email {
 }
 
 div.author-list h3 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+
+div.author-list up.author-sublist {
+    margin-top: 0px;
 }
 
 .master_tags_list li {
