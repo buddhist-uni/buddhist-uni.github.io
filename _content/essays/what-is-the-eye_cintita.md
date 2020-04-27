@@ -11,4 +11,4 @@ tags:
   - shikantaza
 ---
 
-> An eye ia a dangerous thing. Left unguarded and misunderstood it unleashes a world "out there" that we become infatuated with, to our detriment. When we understand fully that the eye, the world and the interface between them are fabricated, the world ends, the infatuation ends, saṃsāra ends.
+> An eye is a dangerous thing. Left unguarded and misunderstood it unleashes a world "out there" that we become infatuated with, to our detriment. When we understand fully that the eye, the world and the interface between them are fabricated, the world ends, the infatuation ends, saṃsāra ends.
