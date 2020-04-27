@@ -2,13 +2,16 @@
 title: "April Showers"
 ---
 
-Announcing new bibliographies for:
+Dear friend,
+
+This month I've gotten a solid start on migrating over the content from [Google Drive](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). In this release you'll find **four** new [Topic Tags]({% link tags.md %}) in the [library]({% link library.md %}):
 
 - [Imagery in the Early Texts]({% link _tags/symbolism.md %})
 - [Lay Buddhism]({% link _tags/lay.md %})
-- Philosophy
+- [The Buddhist Path]({% link _tags/path.md %})
+- [Buddhist Philosophy]({% link _tags/philosophy.md %})
 
-Including:
+In these new topical sections, you'll find dozens of new pieces of content, including these highlights:
 
 - [A Life of Inner Quality]({% link _content/booklets/life-of-inner-quality_mahabua.md %})
 - [Sir Edward Dyer rejoicing in his virtue](https://www.bartleby.com/40/51.html)
@@ -22,9 +25,10 @@ Including:
 - [Ajahn Geoff talks about the unconditional purity of heart](https://www.accesstoinsight.org/lib/authors/thanissaro/purityofheart.html)
 - [Ajahn Sujato defends both the bardo and comparative studies in this compelling paper](https://santifm.org/santipada/wp-content/uploads/2010/05/RebirthandInbetweenState.pdf)
 
-This month I also read:
-
-- [This profound interview with Professor Charles Hallisey](https://drive.google.com/a/u.northwestern.edu/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk)
+This month I also am excited to share with you [this profound interview with Professor Charles Hallisey](https://drive.google.com/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk) and
 
 {% include content_box.html category="canon" slug="an6.13" %}
 
+I hope you're doing well and staying healthy in mind and body. Yours etc,
+
+The Librarian
