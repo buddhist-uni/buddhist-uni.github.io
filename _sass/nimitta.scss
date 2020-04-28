@@ -10,6 +10,7 @@ a[target="_blank"]:after {
     content: " \f08e";
     vertical-align: super;
     font-size: 65%;
+    white-space: nowrap;
 }
 
 div.content_box blockquote {
