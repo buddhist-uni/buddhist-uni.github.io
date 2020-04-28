@@ -9,8 +9,4 @@ layout: page
 
 <h4>In the library:</h4>
 {% assign series = site.content | where: "series", page.slug %}
-{% assign sortkey = "number" %}
-{% if series.first.volume %}
-{% assign sortkey = "volume" %}
-{% endif %}
-{% include content_list.html contents=series orderby=sortkey numbers="true" %}
+{% include numbered_content_list.html contents=series %}

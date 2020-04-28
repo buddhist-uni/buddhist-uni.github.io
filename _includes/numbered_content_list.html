@@ -1,0 +1,8 @@
+{% assign sorted = include.contents | sort: "number" %}
+<ol class="ordinal-content-list">
+{% for content in sorted %}
+<li value="{{ content.number }}">
+{% include simple_content.html content=content %}
+</li>
+{% endfor %}
+</ol>
