@@ -2,11 +2,9 @@
 title: "April Showers"
 ---
 
-Dear friend,
-
 This month I've gotten a solid start on migrating over the content from [Google Drive](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). In this release you'll find **four** new [Topic Tags]({% link tags.md %}) in the [library]({% link library.md %}):
 
-- [Imagery in the Early Texts]({% link _tags/symbolism.md %})
+- [Imagery in the Early Texts]({% link _tags/imagery.md %})
 - [Lay Buddhism]({% link _tags/lay.md %})
 - [The Buddhist Path]({% link _tags/path.md %})
 - [Buddhist Philosophy]({% link _tags/philosophy.md %})
@@ -27,8 +25,7 @@ In these new topical sections, you'll find dozens of new pieces of content, incl
 
 This month I also am excited to share with you [this profound interview with Professor Charles Hallisey](https://drive.google.com/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk) and
 
-{% include content_box.html category="canon" slug="an6.13" %}
+I hope you're doing well and staying healthy in mind and body.
 
-I hope you're doing well and staying healthy in mind and body. Yours etc,
-
+Yours etc,  
 The Librarian
