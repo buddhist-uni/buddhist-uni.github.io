@@ -4,7 +4,7 @@ authors: [bodhi]
 external_url: "https://www.bps.lk/library-search-select.php?id=wh277"
 drive_links: ["https://drive.google.com/file/d/101jcGH6o-ee8fQnoFz5HoWNy5E2tuAVw/view?usp=drivesdk", "https://drive.google.com/file/d/1YpgG4MHO9LkzS7tKi9vRngBeIWt-HD3q/view?usp=drivesdk"]
 bibtex_type: book
-year: 1995
+year: 1980
 publisher: bps
 series: wheel
 number: 277
