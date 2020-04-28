@@ -1,5 +1,5 @@
 ---
-title: "Cosmology and Meditation: From the Aggañña-Sutta to the Mahāyāna"
+title: "Cosmology and Meditation: From the _Aggañña-Sutta_ to the Mahāyāna"
 authors:
   - gethin
 external_url: "https://www.academia.edu/11728537/Cosmology_and_Meditation_From_the_Aggañña-Sutta_to_the_Mahāyāna"
