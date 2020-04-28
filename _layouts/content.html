@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{{ title | first }}</h1>
-    {% if title.size > 1 %}<h3 class="post-subtitle">{{ title | shift | join: ": " }}</h3>{% endif %}
+    {% if title.size > 1 %}<h2 class="post-subtitle">{{ title | shift | join: ": " }}</h2>{% endif %}
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page hide_reader=true link=true %}
     </h2>{% endif %}
@@ -18,10 +18,6 @@ layout: default
     {% if translator and page.translator %}
     <h3 class="translator">Translated by <a href="{{ translator.url }}">{{ translator.title }}</a></h3>
     {% endif %}
- </header>
-
-  <div class="post-content">
-        {{ content }}
         <p class="content_links">
         {% if page.external_url or page.drive_links.size > 0 %}
         {% if page.external_url %}Find it <a href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
@@ -38,11 +34,16 @@ layout: default
         adapted from <a href="{{ page.source_url }}" target="_blank">this original</a>.
     {% endif %}
         </p>
+
+ </header>
+  <div class="post-content">
+        {{ content }}
   </div>
 
   <footer>
-    {% if page.year or page.publisher or page.booktitle or page.journal %}
-        <p><i>Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}.</i></p>
+    {% if page.series %}{% assign series = site.series | where: "slug", page.series | first %}{% endif %}
+    {% if page.year or page.publisher or page.booktitle or page.journal or series %}
+        <p><i>Published{% if page.year %} {{ page.year }}{% endif %}{% if page.journal %} in {{ page.journal }}{% endif %}{% if page.booktitle %} in {{ page.booktitle }}{% endif %}{% if page.editor %} ({{ page.editor }} ed.){% endif %}{% if page.publisher %} by {{ page.publisher }}{% endif %}{% if series %} as <a href="{{ series.url }}">{{ series.title }}</a>{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.</i></p>
     {% endif %}
 
     {% assign tagslugs = '' | split: '' %}

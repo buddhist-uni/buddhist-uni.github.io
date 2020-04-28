@@ -1,5 +1,5 @@
 ---
-title: "Early Buddhism Workshop 5: Wisdom"
+title: "Early Buddhist Wisdom"
 authors: [sujato, brahmali]
 external_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajahn-brahmali-ajahn-sujato/"
 month: jun

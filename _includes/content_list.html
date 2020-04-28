@@ -4,10 +4,14 @@
 {% endunless %}
 {% assign sortkey = include.orderby | default: "year" %}
 {% assign sorted = sorted | sort: sortkey %}
+{% if include.numbers %}<ol class="ordinal-content-list">{% endif %}
 {% for content in sorted %}
+{% if include.numbers %}<li {% if content.number %}value="{{ content.number }}"{% endif %}>{% endif %}
     {% if content.status == 'featured' %}
         {% include highlighted_content.html content=content %}
     {% else %}
         {% include simple_content.html content=content %}
     {% endif %}
+{% if include.numbers %}</li>{% endif %}
 {% endfor %}
+{% if include.numbers %}</ol>{% endif %}
