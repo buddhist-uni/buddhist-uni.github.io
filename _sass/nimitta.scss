@@ -14,7 +14,6 @@ a[target="_blank"]:after {
 
 div.content_box blockquote {
     @include relative-font-size(1.0625);
-    letter-spacing: 0px;
 }
 
 span.inline_drive_link {
@@ -130,9 +129,13 @@ div.featured_content_list .content_desc p {
 
 div.featured_content_list .content_desc blockquote {
     @include relative-font-size(1.0625);
-    letter-spacing: 0px;
     color: $grey-color-dark;
 }
+
+.ordinal-content-list {
+    padding-left: 5px;
+}
+
 @import
     "frontpage"
 ;
