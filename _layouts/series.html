@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign slug = page.name | split: '.' | first %}
+{% assign series = site.content | where: "series", slug %}
+{% assign sortkey = "number" %}
+{% if series.first.volume %}
+{% assign sortkey = "volume" %}
+{% endif %}
+{% include content_list.html contents=series orderby=sortkey %}

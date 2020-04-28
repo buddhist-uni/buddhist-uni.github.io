@@ -1,0 +1,14 @@
+---
+title: "Series"
+permalink: "/series/"
+layout: page
+---
+
+Some of the works featured on this site belong to a series. Sometimes a lecture series, sometimes a book series, you'll find their hubs listed here.
+
+<ul class="master_series_list">
+{% assign series = site.series | sort: "slug" %}
+{% for s in series %}
+<li><a class="series_link" href="{{ s.url }}">{{ s.title }}</a></li>
+{% endfor %}
+</ul>
