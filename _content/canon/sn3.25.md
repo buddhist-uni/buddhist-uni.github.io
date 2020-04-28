@@ -6,7 +6,12 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1T3mkTMGrqzEf1ypLCFgHk8XUWI--jq9y"]
 status: featured
 course: death
-tags: [sn, imagery, problems, function, lay, time, ethics]
+tags:
+  - sn
+  - imagery
+  - problems
+  - time
+  - ethics
 year: 2018
 ---
 
