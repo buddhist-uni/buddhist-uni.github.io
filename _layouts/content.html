@@ -4,7 +4,9 @@ layout: default
 <article class="content-perma">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+    {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
+    <h1 class="post-title">{{ title | first }}</h1>
+    {% if title.size > 1 %}<h3 class="post-subtitle">{{ title | shift | join: ": " }}</h3>{% endif %}
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page hide_reader=true link=true %}
     </h2>{% endif %}

@@ -7,7 +7,7 @@ The same, great content featured in [the courses]({% link courses.md %}) along w
 
 You can explore the library by:
 
-### [<i class="fas fa-tag"></i> Topic]({% link tags.md %}) (if you're unsure, [Start Here!]({% link _tags/buddhism.md %}))
+### [<i class="fas fa-tag"></i> Topic]({% link tags.md %})
 Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
 
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
@@ -22,6 +22,6 @@ All the content on this site and more can be found in
 
 ### Additional Information
 
-To learn (and stay informed) about the latest additions to the library, [see the blog]({% link blog.md %}).
+For a currated list of the very best of the library, see (and subscribe to!) [the newsletter]({% link blog.md %}) which highlights my favorite arrivals.
 
 And while most of the content collected here can be found on [other websites]({% link sources.md %}), some of it can't. For those, see the [exclusive content page]({% link exclusive.md %}).
