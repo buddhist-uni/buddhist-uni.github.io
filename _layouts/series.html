@@ -1,13 +1,16 @@
 ---
 layout: page
 ---
+{% if page.external_url %}
+<h3>Get the whole series <a href="{{ page.external_url }}">online here</a>.</h3>
+{% endif %}
 
 {{ content }}
 
-{% assign slug = page.name | split: '.' | first %}
-{% assign series = site.content | where: "series", slug %}
+<h4>In the library:</h4>
+{% assign series = site.content | where: "series", page.slug %}
 {% assign sortkey = "number" %}
 {% if series.first.volume %}
 {% assign sortkey = "volume" %}
 {% endif %}
-{% include content_list.html contents=series orderby=sortkey %}
+{% include content_list.html contents=series orderby=sortkey numbers="true" %}

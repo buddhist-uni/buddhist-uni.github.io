@@ -5,6 +5,18 @@ img {
     margin-right: auto;
 }
 
+a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e ";
+    vertical-align: super;
+    font-size: 65%;
+}
+
+div.content_box blockquote {
+    @include relative-font-size(1.0625);
+    letter-spacing: 0px;
+}
+
 span.inline_drive_link {
     white-space: nowrap;
 }
@@ -19,6 +31,10 @@ footer a.u-email {
     padding: 8px;
     border-radius: 13px;
     margin-bottom: 16px;
+}
+
+.simple_content {
+    padding: 0px 9px;
 }
 
 .content_box div.content_box_desc {
@@ -112,6 +128,11 @@ div.featured_content_list .content_desc p {
     margin-bottom: 0px;
 }
 
+div.featured_content_list .content_desc blockquote {
+    @include relative-font-size(1.0625);
+    letter-spacing: 0px;
+    color: $grey-color-dark;
+}
 @import
     "frontpage"
 ;
