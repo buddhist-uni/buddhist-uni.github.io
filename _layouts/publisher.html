@@ -1,0 +1,12 @@
+---
+layout: page
+---
+{% if page.external_url %}
+<h3><a target="_blank" href="{{ page.external_url }}">Online here</a></h3>
+{% endif %}
+
+{{ content }}
+
+<h4>Publications:</h4>
+{% assign series = site.content | where: "publisher", page.slug %}
+{% include content_list.html contents=series keep_rejects="true" %}
