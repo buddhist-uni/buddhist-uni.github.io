@@ -58,6 +58,9 @@ collections:
   series:
      output: true
      permalink: /:collection/:name
+  publishers:
+     output: true
+     permalink: /:collection/:name
   courses:
      output: true
      permalink: /:collection/:name
@@ -98,6 +101,12 @@ defaults:
         type: "series"
     values:
         layout: "series"
+  - 
+    scope:
+        path: ""
+        type: "publishers"
+    values:
+        layout: "publisher"
   - 
     scope:
         path: ""
