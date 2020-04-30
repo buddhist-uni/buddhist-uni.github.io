@@ -123,6 +123,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 
 #### Introduction
 
+{% include inline_content.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
+- Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
+
 {% include inline_content.html category="canon" slug="sn45.2" %}
 - Joseph Goldstein reads the Buddha's own take on “the entire spiritual life.”
 
