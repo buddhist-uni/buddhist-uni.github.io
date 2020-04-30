@@ -1,0 +1,12 @@
+---
+title: "Publishers"
+permalink: "/publishers/"
+layout: page
+---
+
+<ul class="master_publishers_list">
+{% assign series = site.publishers | sort: "slug" %}
+{% for s in series %}
+<li><a class="publisher_link" href="{{ s.url }}">{{ s.title }}</a></li>
+{% endfor %}
+</ul>

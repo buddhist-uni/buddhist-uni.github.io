@@ -1,6 +1,6 @@
 <div class="content_box">
   <div class="content_box_header">
-    {% include simple_content_title.html content=include.content %}
+    {% capture foo %}{% include simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
   </div>
   <div class="content_box_desc">{{ include.content.excerpt }}</div>
   {% if include.content.course %}
