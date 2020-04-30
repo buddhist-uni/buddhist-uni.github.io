@@ -61,6 +61,9 @@ collections:
   publishers:
      output: true
      permalink: /:collection/:name
+  journals:
+     output: true
+     permalink: /:collection/:name
   courses:
      output: true
      permalink: /:collection/:name
@@ -107,6 +110,12 @@ defaults:
         type: "publishers"
     values:
         layout: "publisher"
+  - 
+    scope:
+        path: ""
+        type: "journals"
+    values:
+        layout: "journal"
   - 
     scope:
         path: ""

@@ -6,7 +6,6 @@ drive_links: ["https://drive.google.com/file/d/1e0Imj2wAnemMxJSRbuJePObLoHrqa38i
 external_url: "https://www.bartleby.com/40/51.html"
 journal: bsr
 course: lay
-year: 1988
 ---
 
 Sir Edward Dyer rejoices in his virtue.
