@@ -5,12 +5,58 @@ img {
     margin-right: auto;
 }
 
+$new-tab-icon-size: 0.95em;
 a[target="_blank"]:after {
     font-family: 'FontAwesome';
     content: " \f08e";
     vertical-align: super;
     font-size: 65%;
-    white-space: nowrap;
+}
+
+%has-inline-content %content-title a[target="_blank"]:after {
+    width: 0px;
+    display: inline-block;
+}
+
+.inline_content_title {
+  @extend %content-title;
+}
+
+.simple_content_title {
+  @extend %content-title;
+}
+
+.content_title {
+  @extend %has-inline-content;
+}
+
+%has-inline-content {
+    padding-right: $new-tab-icon-size;
+}
+
+.inline_content {
+  @extend %has-inline-content;
+}
+
+.content_box_header {
+  @extend %has-inline-content;
+}
+
+.simple_content {
+  @extend %has-inline-content;
+}
+
+%has-inline-content span.inline_drive_links {
+    margin-left: $new-tab-icon-size;
+}
+
+%has-inline-content span.inline_drive_links span.inline_drive_link {
+    margin-right: -$new-tab-icon-size;
+    margin-left: $new-tab-icon-size;
+}
+
+%has-inline-content span.inline_drive_links span.inline_drive_link:first-child {
+    margin-left: 0px;
 }
 
 div.content_box blockquote {

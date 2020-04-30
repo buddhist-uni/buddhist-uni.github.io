@@ -6,7 +6,7 @@
 <div class="featured_content_list"><ul>
   {% for c in sorted %}
     <li>
-      <div class="content_title">{% include simple_content_title.html content=c %}</div>
+      <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
       <div class="content_desc">{{ c.excerpt }}</div>
     </li>
   {% endfor %}

@@ -54,14 +54,14 @@ layout: default
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
   {% if course_content.size > 0 or tag_content.size > 0 %}
-  <h3 id="{{ catslug }}"> {{ category.title }}</h3>
+  <h3 id="{{ catslug }}">{{ category.title }}</h3>
   {% if course_content.size > 0 %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
   {% if course_content.size > 0 %}<h4>See also:</h4>{% endif %}
   {% for c in tag_content %}
-    <div>{% include simple_content_title.html content=c %}</div>
+    <div class="inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
   </div>
   {% endif %}{% endif %}
