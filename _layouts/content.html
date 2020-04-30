@@ -63,13 +63,16 @@ layout: default
             {% assign tags = tags | push: taglink %}
         {% endif %}
     {% endfor %}
-    {% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}</p>{% endif %}
+
+    {% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}.
     {% if page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
         {% if course %}
-            <p><i>Featured in the course "<a href="{{ course.url }}">{{ course.title }}</a>."</i></p>
+            <i>Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>."</i>
         {% endif %}
     {% endif %}
+    </p>
+    {% endif %} 
   </footer>
 
 </article>
