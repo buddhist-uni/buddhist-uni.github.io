@@ -5,7 +5,7 @@ authors:
 booktitle: "Eye to Eye: The Quest for the New Paradigm"
 chapter: 8
 pages: "247--266"
-publisher: anchor
+publisher: "Anchor Books"
 year: 1983
 drive_links:
  - "https://drive.google.com/file/d/1ROJszDDsnMqW9VVOg92Pz6H9l1FXXjZR/view?usp=drivesdk"
