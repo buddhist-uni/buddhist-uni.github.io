@@ -149,6 +149,8 @@ In part II, we return to the Noble Eightfold Path, and to the teachings on trans
 {% include inline_content.html category="essays" slug="real-science_brahm" %}
 - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
+{% include content_box.html category="canon" slug="mn24" %}
+
 *Chapter 8*
 
 {% include inline_content.html category="canon" slug="an10.61" %}
