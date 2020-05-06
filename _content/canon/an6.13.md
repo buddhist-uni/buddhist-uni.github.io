@@ -14,4 +14,4 @@ tags:
 year: 2018
 ---
 
-> Take a mendicant who says: ‘I’ve developed the heart’s release by love... Yet somehow ill will still occupies my mind.’
+> ‘I’ve developed the heart’s release by love... Yet somehow ill will still occupies my mind.’

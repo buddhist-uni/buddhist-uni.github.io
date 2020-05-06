@@ -13,6 +13,6 @@ tags:
 year: 2009
 ---
 
-> ‘Others will be cruel; we shall not be cruel here’: effacement should be practised thus.
+> ‘Others will be cruel; we shall not be cruel here’
 
 The Buddha gives a comprehensive moral rubric we can use to assess and guide our development of effacement.

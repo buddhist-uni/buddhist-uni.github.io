@@ -21,4 +21,4 @@ tags:
   - path
 ---
 
-> During their lives, beings are intoxicated with life and engage in misconduct by body, speech, and mind. But when one often reflects upon [death], the intoxication with life is diminished. It is for the sake of this benefit that a woman or a man, a householder or one gone forth, should often reflect thus: ‘I am subject to death; I am not exempt from death.’
+> beings are intoxicated with life and engage in misconduct by body, speech, and mind. But when one often reflects upon [death], the intoxication with life is diminished.
