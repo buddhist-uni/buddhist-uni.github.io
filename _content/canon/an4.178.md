@@ -9,6 +9,7 @@ tags:
   - an
   - arahat
   - view
+  - tranquility-and-insight
   - nibbana
 year: 2018
 ---
