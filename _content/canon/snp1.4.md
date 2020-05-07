@@ -4,7 +4,12 @@ external_url: "https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.04.olen.htm
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1couczIzgT5Qigh-PeIOvo4SBLvUy1OSh/view?usp=drivesdk"]
 course: imagery
-tags: [poetry, function, nibbana, snp]
+tags:
+  - poetry
+  - function
+  - nibbana
+  - tranquility-and-insight
+  - snp
 year: 2005
 ---
 
