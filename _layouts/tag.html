@@ -21,7 +21,7 @@ layout: default
     
 {% assign course = site.courses | where: "slug", page.slug | first %}
 {% if course %}
-<p><em>For a more structured walkthrough of this content, see <a href="{{ course.url }}">the "{{ course.title }}" course</a>.</em></p>
+<p><em>For a more structured walkthrough, the content highlighted here is also available <a href="{{ course.url }}">as a course</a>.</em></p>
 {% endif %}
     
 <div class="tag_desc">{{ content }}</div>
