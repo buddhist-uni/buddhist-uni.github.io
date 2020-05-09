@@ -12,6 +12,7 @@ tags:
   - sankara
   - karma
   - free-will
+  - authoritarianism
   - totalitarianism
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "AN 8.6: World"
+title: "AN 8.6: World (2)"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.6/en/bodhi"
 formats: [pdf]
