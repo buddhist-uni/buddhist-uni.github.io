@@ -7,14 +7,14 @@ drive_links:
 course: path
 status: featured
 tags:
-  - form
-  - function
   - meditation
   - ethics
   - vipassana
   - philosophy
   - dukkha
   - problems
+  - daily-life
+  - hindrances
   - mn
   - pali-canon
 year: 2009
