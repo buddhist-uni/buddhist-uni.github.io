@@ -7,10 +7,7 @@ drive_links: ["https://drive.google.com/file/d/14GSF4ZIb_7tLN-he-bVJXDPUlRrOlHhp
 course: function
 tags:
   - monastic
-  - path
-  - meditation
   - dhp
-  - poetry
 year: 1985
 ---
 
