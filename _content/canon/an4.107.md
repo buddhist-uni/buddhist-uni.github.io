@@ -3,7 +3,7 @@ title: "AN 4.107: Mice"
 translator: sujato
 external_url: "https://suttacentral.net/an4.107/en/sujato"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1cEUZW1Jifhmm6YL5GBa_rfqnGmdzOZ7S"]
+hidden_links: ["https://drive.google.com/file/d/1cEUZW1Jifhmm6YL5GBa_rfqnGmdzOZ7S"]
 course: imagery
 tags:
   - an

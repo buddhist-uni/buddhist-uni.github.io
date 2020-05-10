@@ -3,7 +3,7 @@ title: "AN 6.61: In the Middle"
 external_url: "https://suttacentral.net/an6.61/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_/view?usp=drivesdk"]
+hidden_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_/view?usp=drivesdk"]
 status: featured
 course: imagery
 tags: [an, view, nibbana, philosophy, poetry, origination, hermeneutics]

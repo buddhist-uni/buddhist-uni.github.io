@@ -2,7 +2,7 @@
 title: "AN 9.42: Cramped"
 translator: sujato
 external_url: "https://suttacentral.net/an9.42/en/sujato"
-drive_links:
+hidden_links:
   - "https://drive.google.com/file/d/1jsJfa-KXHRbztWpuOkHCK3ufsw7k4pom"
 course: imagery
 tags: [an, samatha]
