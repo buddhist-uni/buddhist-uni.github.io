@@ -1,5 +1,6 @@
 ---
 title: "Iti 43: Ardour"
+slug: "iti043"
 translator: ireland
 external_url: "https://suttacentral.net/iti34/en/ireland"
 formats: [pdf]

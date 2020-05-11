@@ -1,5 +1,6 @@
 ---
 title: "Iti 87: Blindness"
+slug: "iti087"
 translator: ireland
 external_url: "https://suttacentral.net/iti87/en/ireland"
 formats: [pdf]
