@@ -38,6 +38,8 @@ This book is divided into two, unsurprising halves: Buddhist Life and Buddhist P
 
 Before we begin the course proper, let’s first do a short "mini-course" to give us an overview of the Path and where we're headed:
 
+{% include content_box.html category="canon" slug="mn117" %}
+
 {% include inline_content.html category="booklets" slug="noble-eightfold-path_bodhi" %}
 - Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
 
@@ -45,7 +47,8 @@ Before we begin the course proper, let’s first do a short "mini-course" to giv
 - Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
 
 
-I recommend reading Nyanamoli’s anthology before Bhikkhu Bodhi’s analysis. This way, you'll get a taste of the original teachings followed closely by its elucidation. You might even bounce back and forth between the two like this:
+I recommend reading MN 117 first as a preview, then reading Nyanamoli’s anthology section-by-section alongside Bhikkhu Bodhi’s analysis. This way, you'll get a taste of the original teachings followed closely by their elucidation:
+1. MN 117
 1. Bodhi: Preface
 2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
 3. Bodhi: Part 1 (The Way to the End of Suffering)
@@ -57,7 +60,7 @@ I recommend reading Nyanamoli’s anthology before Bhikkhu Bodhi’s analysis. T
 9. Nyanamoli: The End
 9. Bodhi: Epilogue
 
-Having thus gotten a traditional map of the Path, we can now begin exploring the terrain.
+Having thus gotten the traditional map of the Path, we can now begin exploring its terrain.
 
 ### Lectures
 
