@@ -1,5 +1,6 @@
 ---
 title: "MN 7: Simile of the Cloth"
+slug: "mn007"
 translator: sujato
 external_url: "https://suttacentral.net/mn7/en/sujato"
 drive_links:

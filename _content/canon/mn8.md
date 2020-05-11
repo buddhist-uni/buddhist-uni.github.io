@@ -1,5 +1,6 @@
 ---
 title: "MN 8: Effacement"
+slug: "mn008"
 translator: bodhi
 external_url: "https://suttacentral.net/mn8/en/bodhi"
 drive_links:
