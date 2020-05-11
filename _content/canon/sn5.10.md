@@ -1,5 +1,6 @@
 ---
 title: "SN 5.10: Vajira"
+slug: "sn.005.010"
 translator: bodhi
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/14HnHyjBqQ4Dz4gSVShGzEWlFkNJQUWdG/view?usp=drivesdk"]
