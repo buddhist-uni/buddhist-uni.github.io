@@ -1,5 +1,6 @@
 ---
 title: "Iti 93: Fires"
+slug: "iti093"
 translator: ireland
 external_url: "https://suttacentral.net/iti93/en/ireland"
 formats: [pdf]
