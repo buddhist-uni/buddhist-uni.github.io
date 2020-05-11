@@ -1,5 +1,6 @@
 ---
 title: "SN 3.25: The Mountains Simile"
+slug: "sn.003.025"
 external_url: "https://suttacentral.net/sn3.25/en/sujato"
 translator: sujato
 formats: [pdf]
