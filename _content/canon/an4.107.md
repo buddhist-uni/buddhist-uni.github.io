@@ -1,5 +1,6 @@
 ---
 title: "AN 4.107: Mice"
+slug: "an.004.107"
 translator: sujato
 external_url: "https://suttacentral.net/an4.107/en/sujato"
 formats: [pdf]

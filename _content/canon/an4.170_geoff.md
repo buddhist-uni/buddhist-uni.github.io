@@ -1,5 +1,6 @@
 ---
 title: "AN 4.170: In Tandem"
+slug: "an.004.170_geoff"
 external_url: "https://www.accesstoinsight.org/tipitaka/an/an04/an04.170.than.html"
 translator: geoff
 drive_links: ["https://drive.google.com/file/d/1Ffuy5Rai_OtSIIrfCdgBjvtkSFZDacJU/view?usp=drivesdk"]

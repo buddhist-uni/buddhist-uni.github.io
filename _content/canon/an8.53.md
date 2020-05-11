@@ -1,5 +1,6 @@
 ---
 title: "AN 8.53: In Brief"
+slug: "an.008.053"
 external_url: "https://suttacentral.net/an8.53/en/sujato"
 translator: sujato
 formats: [pdf]

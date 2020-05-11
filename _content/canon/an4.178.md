@@ -1,5 +1,6 @@
 ---
 title: "AN 4.178: Billabong"
+slug: "an.004.178"
 external_url: "https://suttacentral.net/an4.178/en/sujato"
 translator: sujato
 formats: [pdf]

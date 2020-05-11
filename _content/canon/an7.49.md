@@ -1,6 +1,7 @@
 ---
 title: "AN 7.49: Perceptions in Detail"
 translator: sujato
+slug: "an.007.049"
 external_url: "https://suttacentral.net/an7.49/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1aJkugo4teXe_RpZLPzrEfu57ljr9SQ24/view?usp=drivesdk"

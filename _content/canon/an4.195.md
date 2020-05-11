@@ -1,5 +1,6 @@
 ---
 title: "AN 4.195: Vappa"
+slug: "an.004.195"
 external_url: "https://suttacentral.net/an4.195/en/sujato"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1asDkaxDWuaMfkA5uQ9PGDuggd-nnHO7d/view?usp=drivesdk"]

@@ -1,5 +1,6 @@
 ---
 title: "AN 6.13: Elements of Escape"
+slug: "an.006.013"
 translator: sujato
 external_url: "https://suttacentral.net/an6.13/en/sujato"
 formats: [pdf]
