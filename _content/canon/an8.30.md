@@ -1,5 +1,6 @@
 ---
 title: "AN 8.30: Anuruddha"
+slug: "an.008.030"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.30/en/bodhi"
 drive_links:

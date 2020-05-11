@@ -1,5 +1,6 @@
 ---
 title: "AN 8.80: Grounds for Laziness"
+slug: "an.008.080"
 external_url: "https://suttacentral.net/an8.80/en/sujato"
 translator: sujato
 formats: [pdf]

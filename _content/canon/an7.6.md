@@ -1,5 +1,6 @@
 ---
 title: "AN 7.6: Wealth"
+slug: "an.007.006"
 translator: sujato
 external_url: "https://suttacentral.net/an7.6/en/sujato"
 formats: [pdf]

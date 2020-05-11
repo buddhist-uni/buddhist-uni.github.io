@@ -1,5 +1,6 @@
 ---
 title: "AN 5.249: A Charnel Ground"
+slug: "an.005.249"
 external_url: "https://suttacentral.net/an5.249/en/sujato"
 translator: sujato
 formats: [pdf]

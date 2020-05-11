@@ -1,5 +1,6 @@
 ---
 title: "AN 5.161: Getting Rid of Resentment (1)"
+slug: "an.005.161"
 external_url: "https://suttacentral.net/an5.161/en/sujato"
 translator: sujato
 formats: [pdf]
