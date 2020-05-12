@@ -8,6 +8,7 @@ drive_links:
 course: philosophy
 tags:
   - vipassana
+  - khanda
 year: 2018
 ---
 
