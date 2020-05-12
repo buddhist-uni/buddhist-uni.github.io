@@ -11,7 +11,7 @@ tags:
   - pedagogy
   - sukha
   - bodhisattva
-year: 2020
+year: 2018
 ---
 
 The Buddha explains that only the enlightened can truly teach.
