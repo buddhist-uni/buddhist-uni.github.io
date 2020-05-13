@@ -78,6 +78,9 @@ The next part of the class tackles the teachings. As this section is the primary
 {% include content_box.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
 - The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
 
+{% include inline_content.html category="canon" slug="sn42.6" %}
+- One of the hallmarks of Buddhism as a religion is that the Buddha emphatically rejected salvation through faith and prayers alone. In this sutta, the Buddha illustrates this with a humorous simile.
+
 #### Reflection Questions
 
 After finishing the above, it's now a good time to go back to your notes from the introduction and see how your understanding has changed. Have your questions been answered? Is anything that was surprising now obvious? Do any new questions arise for you?
