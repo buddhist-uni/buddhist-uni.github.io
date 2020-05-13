@@ -1,0 +1,18 @@
+---
+title: "SN 1.20: Samiddhi"
+external_url: "https://suttacentral.net/sn1.20/en/bodhi"
+translator: bodhi
+slug: "sn.001.020"
+drive_links: ["https://drive.google.com/file/d/1YFjfCu_0M4NJfgGdH4LQnUOMTSblKeof"]
+course: characters
+tags:
+  - deva
+  - arahant
+  - pedagogy
+  - sn
+year: 2000
+---
+
+> sensual pleasures are time-consuming, full of suffering and despair, and the danger in them is greater still
+
+A deva tried to convince a young monk to enjoy sensual pleasures and the Buddha rebukes the angel with a series of verses explaining that this young monk is already an arahant.
