@@ -94,6 +94,8 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 *Chapter 2*
 
+{% included content_box.html category="canon" slug="sn17.5" %}
+
 {% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
 *Chapter 3*
