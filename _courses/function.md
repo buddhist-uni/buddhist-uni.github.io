@@ -102,10 +102,12 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 {% include inline_content.html category="av" slug="five-precepts_jayasara" %}
 
-{% include inline_content.html category="av" slug="guard-senses_hong-ci" %} 
+{% include inline_content.html category="av" slug="guard-senses_hong-ci" %}
+
+{% include inline_content.html category="canon" slug="an3.78" %}
 
 *Chapter 4*
-> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6)
+> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank"}
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
