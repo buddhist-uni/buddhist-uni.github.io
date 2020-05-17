@@ -1,0 +1,7 @@
+---
+layout: post
+---
+
+{% capture absolute_boy %} href="{{ "/" | absolute_url }}{% endcapture %}
+{{ content | replace: ' href="http', ' target="_blank" href="http' | replace: ' href="/', absolute_boy }}
+
