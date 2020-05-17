@@ -43,6 +43,7 @@ layout: default
   </header>
 
   <div class="post-content">
+{% capture content_list %}
 {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
 {% assign categories = site.data.content_categories %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
@@ -66,6 +67,10 @@ layout: default
   </div>
   {% endif %}{% endif %}
 {% endfor %}
+{% endcapture %}
+   <h2 class="toc_header">Recommended Works</h2>
+    {% include toc.html html=content_list h_min=3 h_max=3 id="toc" class="tag_toc" %}
+    {{ content_list }}
   </div>
 {{ subtopics }}
 </article>

@@ -85,7 +85,7 @@ defaults:
         path: ""
         type: "posts"
     values:
-        layout: "post"
+        layout: "blog_post"
   - 
     scope:
         path: ""

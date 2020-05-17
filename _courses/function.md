@@ -86,38 +86,39 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 #### Part 1: Buddhist Life
 
-*Chapter 1*
+##### Chapter 1
 
 {% include inline_content.html category="articles" slug="craving-dukkha_analayo" %}
 (Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk))
 - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
-*Chapter 2*
+##### Chapter 2
 
 {% include content_box.html category="canon" slug="sn17.5" %}
 
 {% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
-*Chapter 3*
+##### Chapter 3
 
 {% include inline_content.html category="av" slug="five-precepts_jayasara" %}
 
 {% include inline_content.html category="av" slug="guard-senses_hong-ci" %}
 
 {% include inline_content.html category="canon" slug="an3.78" %}
+<div><br /></div>
 
-*Chapter 4*
+##### Chapter 4
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank"}
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
 {% include content_box.html category="canon" slug="an7.6" %}
 
-*Chapter 5*
+##### Chapter 5
 
 {% include content_box.html category="av" slug="dealing-with-difficult-people_brahm" %}
 
-*Chapter 6*
+##### Chapter 6
 
 {% include inline_content.html category="reference" slug="stages-of-enlightenment" %}
 - A small chart summarizing the four stages of enlightenment mentioned in this chapter.
@@ -151,14 +152,14 @@ And that is somewhat accurate of what we've covered so far. Buddhism claims no e
 
 In part II, we return to the Noble Eightfold Path, and to the teachings on transcending _all_ suffering.
 
-*Chapter 7*
+##### Chapter 7
 
 {% include inline_content.html category="essays" slug="real-science_brahm" %}
 - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
 {% include content_box.html category="canon" slug="mn24" %}
 
-*Chapter 8*
+##### Chapter 8
 
 {% include inline_content.html category="canon" slug="an10.61" %}
 - The Buddha explains what fuel keeps ignorance going, and fuels the path out.
@@ -172,13 +173,13 @@ In part II, we return to the Noble Eightfold Path, and to the teachings on trans
 {% include inline_content.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
 - A short series of talks and Q-and-As on Buddhist wisdom by a modern Tibetan master. 
 
-*Chapter 9*
+##### Chapter 9
 
 For most of us, what holds us back from perfecting virtue and becoming saintly ourselves is our fears and our worldly attachments. Bhikkhu Cintita skirted the emotionally charged side of this, but Bhante Yuttadhammo meets it directly in these provocative talks.
 
 {% include content_box.html category="canon" slug="dhp25" %}
 
-*Chapter 10*
+##### Chapter 10
 
 In which we finally get to meditation!
 
@@ -192,7 +193,7 @@ In which we finally get to meditation!
 {% include inline_content.html category="essays" slug="sensual-pleasures-are-painful_suchart" %}
 - One of my favorite talks by my own teacher, Ajahn Suchart, which beautifully sums up the path, encouraging us all to strive for a real, lasting happiness.
 
-*Chapter 11*
+##### Chapter 11
 
 {% include inline_content.html category="essays" slug="dependant-liberation_brahmali" %}
 - Ajahn Brahmali explains how ethics and meditation naturally lead to enlightenment.
@@ -200,7 +201,7 @@ In which we finally get to meditation!
 {% include inline_content.html category="canon" slug="an11.2" %}
 - This sutta makes the same point: If one merely focuses on ethics, and becomes consummate in ethics, the path to liberation unfolds on its own.
 
-*Chapter 12*
+##### Chapter 12
 
 {% include inline_content.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
 - A transcript of a conversation with Ajahn Panyavaddho.

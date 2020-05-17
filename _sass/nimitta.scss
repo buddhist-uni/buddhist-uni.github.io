@@ -5,6 +5,11 @@ img {
     margin-right: auto;
 }
 
+h5 {
+    font-size: 1em;
+    font-style: italic;
+}
+
 $new-tab-icon-size: 0.95em;
 a[target="_blank"]:after {
     font-family: 'FontAwesome';
