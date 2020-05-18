@@ -5,7 +5,12 @@ translator: mills-laurence
 formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1ajGxeZ-vPWsDVgSFTluS-HeZTUFhiOJ4/view?usp=drivesdk"]
 course: imagery
-tags: [snp, poetry, function, origination]
+tags:
+  - snp
+  - poetry
+  - function
+  - monastic
+  - origination
 year: 2015
 ---
 

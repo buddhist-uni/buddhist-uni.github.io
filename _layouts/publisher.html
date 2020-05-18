@@ -7,6 +7,6 @@ layout: page
 
 {{ content }}
 
-<h4>Publications:</h4>
+<h4>Featured Publications:</h4>
 {% assign series = site.content | where: "publisher", page.slug %}
 {% include content_list.html contents=series keep_rejects="true" %}
