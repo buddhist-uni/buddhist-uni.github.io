@@ -1,6 +1,9 @@
 ---
 ---
 
+Tags:
+- [Monastic Buddhism]({% link _tags/monastic.md %})
+
 {% include content_box.html category="canon" slug="mn87" %}
 
 {% include content_box.html category="canon" slug="snp1.2" %}
