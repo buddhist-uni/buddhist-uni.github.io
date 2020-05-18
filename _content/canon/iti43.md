@@ -10,4 +10,4 @@ tags: [iti, ethics, meditation, nibbana]
 year: 1997
 ---
 
-> Such a bhikkhu cannot attain Enlightenment
+> a bhikkhu who is without ardour and without fear of wrongdoing is incapable of attaining enlightenment

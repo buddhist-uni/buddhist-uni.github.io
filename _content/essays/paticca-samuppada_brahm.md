@@ -7,11 +7,11 @@ drive_links:
   - "https://drive.google.com/file/d/1s5PFFlzPUgrVHz8BCepwzE7eJcXHrmfQ/view?usp=drivesdk"
 course: philosophy
 tags:
-  - karma
+  - rebirth
   - origination
 year: 2002
 month: oct
 ---
 
-While dependent origination can be understood as describing both our moment-to-moment "rebirth" as well as rebirth from lifetime-to-lifetime, many modern scholars sceptical of rebirth have downplayed the latter interpretation. Ajahn Brahm defends the multiple-lifetime interpretation of Paṭicca-samuppāda by citing the Buddha's own analysis of its twelve factors. 
+While dependent origination can be understood as describing both our moment-to-moment "rebirth" as well as rebirth from lifetime-to-lifetime, many modern scholars sceptical of rebirth have downplayed the latter interpretation. Ajahn Brahm defends the multiple-lifetime interpretation of _Paṭicca-samuppāda_ by citing the Buddha's own analysis of its twelve factors. 
 

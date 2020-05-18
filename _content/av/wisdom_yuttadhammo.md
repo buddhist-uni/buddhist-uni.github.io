@@ -10,6 +10,7 @@ course: philosophy
 tags:
   - meditation
   - vipassana
+  - khanda
   - satipatthana
   - path
 ---
