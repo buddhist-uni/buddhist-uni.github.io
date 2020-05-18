@@ -9,6 +9,7 @@ month: oct
 course: monastic
 tags:
   - sangha
+  - vinaya-studies
   - form
   - problems
 ---
