@@ -10,4 +10,4 @@ tags:
   - thai-forest
 ---
 
-An inspiring collection of talks collected by students of Ajahn Suchart on the essence of renunciation.
+An inspiring collection of talks on the essence of renunciation.
