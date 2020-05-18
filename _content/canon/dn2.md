@@ -16,3 +16,5 @@ publisher: bps
 ---
 
 > Is it possible, venerable sir, to point out any fruit of recluseship that is visible here and now?
+
+One of the greatest literary and spiritual texts of early Buddhism, this sutta gives a thorough account of the path and benefits of renunciation.

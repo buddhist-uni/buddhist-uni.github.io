@@ -12,4 +12,4 @@ tags:
   - western-monastic
 ---
 
-Six changes in the modern world that monasticism will have to adapt to, and that present new opportunities for monastics.
+Six changes in the modern world that monasticism will have to adapt to, and that present new opportunities.

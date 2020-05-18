@@ -13,4 +13,5 @@ tags:
 year: 2008
 ---
 
-> Whatever doubts there are...
+> Whatever doubts there are...  
+The meditators give up all these
