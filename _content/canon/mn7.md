@@ -16,4 +16,4 @@ tags:
 year: 2018
 ---
 
-A beautiful and somewhat unusual description of the path to stream entry and beyond, to full enlightenment.
+A beautiful and somewhat unusual description of the path to stream entry and beyond.

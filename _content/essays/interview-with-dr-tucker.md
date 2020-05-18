@@ -9,8 +9,10 @@ course: philosophy
 status: featured
 tags:
   - karma
+  - rebirth
   - west
   - academia
+  - science
 year: 2014
 month: sept
 ---
