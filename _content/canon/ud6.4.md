@@ -1,0 +1,19 @@
+---
+title: "Ud 6.4: Various Sectarians (1)"
+translator: anandajoti
+external_url: "https://suttacentral.net/ud6.4/en/anandajoti"
+drive_links: ["https://drive.google.com/file/d/1uLYdrMwDe-BsLFyb9_xC2qlKPM_B3H38"]
+course: imagery
+tags:
+  - ud
+  - interfaith
+  - karma
+  - rebirth
+  - philosophy
+  - speech
+year: 2008
+---
+
+The famous simile of the blind men and the elephant.
+
+A Klezmer version of the parable can be found [here]({% link _content/av/blind-men-and-the-elephant_merchant-natalie.md %}).
