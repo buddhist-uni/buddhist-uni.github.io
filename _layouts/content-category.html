@@ -6,5 +6,5 @@ layout: page
 {% assign slug = page.name | split: '.' | first %}
 {% capture filter_exp %}c.path contains '/{{ slug }}/'{% endcapture %}
 {% assign category = site.content | where_exp: "c", filter_exp %}
-{% include content_list.html contents=category orderby="slug" %}
+{% include content_list.html contents=category keep_rejects="true" orderby="slug" %}
 
