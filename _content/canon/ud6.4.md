@@ -15,5 +15,3 @@ year: 2008
 ---
 
 The famous simile of the blind men and the elephant.
-
-A Klezmer version of the parable can be found [here]({% link _content/av/blind-men-and-the-elephant_merchant-natalie.md %}).
