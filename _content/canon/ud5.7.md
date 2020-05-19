@@ -4,6 +4,7 @@ translator: anandajoti
 external_url: "https://suttacentral.net/ud5.7/en/anandajoti"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ugnD_m7YSrBJ8ubpiJaUw8hIwwMu08h1"]
+status: rejected
 course: monastic
 tags:
   - ud
