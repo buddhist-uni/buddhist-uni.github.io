@@ -3,7 +3,7 @@ title: Library
 permalink: /library/
 ---
 
-The same, great content featured in [the courses]({% link courses.md %}) along with other excellent works which I've found helpful in my own studies.
+The same, great content featured in [the courses]({% link courses.md %}) along with other works I've found helpful in my own studies.
 
 You can explore the library by:
 

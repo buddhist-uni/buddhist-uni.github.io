@@ -1,8 +1,8 @@
 ---
-title: "Other Resources"
+title: "Sources"
 ---
 
-In addition to all the content featured here, you can find lots more to keep yourself busy at the websites below, each hosting free content on Buddhism:
+In addition to the content I've featured on this site, you can find lots more at the websites below, each hosting free content on Buddhism:
 
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
   * Ven [Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/publications-by-bhikkhu-analayo/)
