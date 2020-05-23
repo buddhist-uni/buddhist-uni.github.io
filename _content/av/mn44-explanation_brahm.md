@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1h5NS0tBuNuGuyLB0iDR6AJvqiaO3_FAE/view?usp=drivesdk"
 course: philosophy
 tags:
-  - mn
   - nuns
   - nibbana
   - samatha

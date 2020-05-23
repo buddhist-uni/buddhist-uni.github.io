@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1JWrBilzJap6VJcp3zqd7M8kKO_dXlk9K/view?usp=drivesdk"
 course: philosophy
 tags:
-  - mn
   - lay
   - becon
 year: 2007

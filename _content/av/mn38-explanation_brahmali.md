@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1gsy79vA4rmHTjBNa0VGN5VdDlZzGbZc1/view?usp=drivesdk"
 course: philosophy
 tags:
-  - mn
   - origination
   - path
 year: 2007
