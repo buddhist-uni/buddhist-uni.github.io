@@ -8,7 +8,6 @@ drive_links:
 course: philosophy
 status: featured
 tags:
-  - mn
   - buddha
   - farang
   - thai-forest

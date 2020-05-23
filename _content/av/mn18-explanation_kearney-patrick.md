@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/18SNo4mRskmjCALROgF_gSs9fxRpYma_P/view?usp=drivesdk"
 course: epistemology
 tags:
+  - mn
   - origination
   - pedagogy
 year: 2015

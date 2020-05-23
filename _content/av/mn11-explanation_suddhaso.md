@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1haeGMV1la5Orkqhm__pBS14Flg4kzEA5/view?usp=drivesdk"
 course: philosophy
 tags:
-  - mn
   - indian
   - west
   - dialogue
