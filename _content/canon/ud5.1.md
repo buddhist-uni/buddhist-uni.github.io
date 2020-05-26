@@ -12,4 +12,4 @@ tags:
 year: 2008
 ---
 
-The Queen gives the King an honest answer, and the Buddha gives us the very pith of ethics.
+A Queen gives her King an honest answer, and the Buddha gives us the very pith of ethics.

@@ -13,6 +13,7 @@ course: path
 status: featured
 tags:
   - sn
+  - stages
   - philosophy
   - origination
 ---

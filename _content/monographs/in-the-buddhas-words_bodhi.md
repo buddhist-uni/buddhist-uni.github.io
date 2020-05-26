@@ -11,6 +11,7 @@ tags:
   - suttas
   - philosophy
   - function
+  - path
   - meditation
   - ethics
 ---

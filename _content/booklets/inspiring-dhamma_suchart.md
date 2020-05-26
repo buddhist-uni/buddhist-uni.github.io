@@ -8,7 +8,7 @@ year: 2017
 address: Bangkok
 course: philosophy
 tags:
-  - function
+  - path
   - thai
   - problems
   - iddhipada

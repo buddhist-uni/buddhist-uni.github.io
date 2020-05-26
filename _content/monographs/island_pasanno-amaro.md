@@ -11,7 +11,7 @@ publisher: Amaravati
 status: featured
 course: nibbana
 tags:
-  - path
+  - stages
   - function
   - philosophy
   - view
