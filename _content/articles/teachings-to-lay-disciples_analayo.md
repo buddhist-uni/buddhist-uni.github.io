@@ -1,5 +1,5 @@
 ---
-title: "Teachings to Lay Disciples: The Saṃyukta-āgama Parallel to the Anāthapiṇḍikovāda-sutta"
+title: "Teachings to Lay Disciples: The _Saṃyukta-āgama_ Parallel to the _Anāthapiṇḍikovāda-sutta_"
 authors:
   - analayo
 external_url: "https://journals.equinoxpub.com/BSR/article/view/7736"
