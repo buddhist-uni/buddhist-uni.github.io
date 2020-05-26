@@ -10,7 +10,11 @@ year: 1983
 drive_links:
  - "https://drive.google.com/file/d/1ROJszDDsnMqW9VVOg92Pz6H9l1FXXjZR/view?usp=drivesdk"
 course: monastic
-tags: [form, academia, west]
+tags:
+  - form
+  - academia
+  - west
+  - power
 ---
 
 As Buddhism came (comes) West, its followers have often been accused of following a "fad" or, worse, a cult. In this fascinating chapter, Ken Wilber provides a theoretical framework for distinguishing (or at least describing) the difference between "good" and "bad" forms of religious authority. 

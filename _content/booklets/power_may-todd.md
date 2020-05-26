@@ -6,9 +6,9 @@ external_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-powe
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1EpvxGNmrU8UTeRKDyU44HUZpgYA90pfQ/view?usp=drivesdk"
-course: monastic
+course: power
 tags:
-  - power
+  - monastic
   - pedagogy
   - activism
 year: 2012

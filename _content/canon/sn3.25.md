@@ -12,6 +12,7 @@ tags:
   - imagery
   - problems
   - time
+  - power
   - ethics
 year: 2018
 ---
