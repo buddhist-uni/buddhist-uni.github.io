@@ -9,6 +9,7 @@ status: featured
 tags:
   - lay
   - becon
+  - power
 ---
 
 A fascinating series of open letters between Ajahn Geoff and Bhikkhu Bodhi on the subject of "just war."

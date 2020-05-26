@@ -10,6 +10,7 @@ course: monastic
 tags:
   - sri-lankan
   - nuns
+  - power
   - vinaya-studies
   - bhikkhuni
 ---
