@@ -6,7 +6,11 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1KIk3xObv0BG7cJkManHIiNJpInaUc3lO/view?usp=drivesdk"]
 year: 1998
 course: function
-tags: [meditation, buddhism, tibet-west]
+tags:
+  - meditation
+  - path
+  - buddhism
+  - tibet-west
 ---
 
 > when you understand the nature of your own mind, you’ll be able to control it naturally; you won’t have to push

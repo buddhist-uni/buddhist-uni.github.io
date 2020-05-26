@@ -9,7 +9,13 @@ drive_links:
   - "https://drive.google.com/file/d/1c1Vhx09U56cxTGwhZw2dXJ9awTDA9l86/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1kGLYa2TOcM9yKq-2DvVacoV2pR7ufh_H/view?usp=drivesdk"
 course: lay
-tags: [thai-forest, function, mahabua, thai, ethics]
+tags:
+  - thai-forest
+  - function
+  - mahabua
+  - thai
+  - path
+  - ethics
 status: featured
 year: 1989
 month: jun

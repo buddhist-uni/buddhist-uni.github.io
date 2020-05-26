@@ -7,7 +7,14 @@ drive_links: ["https://drive.google.com/file/d/1tJ-0yisBb2IRRPHtEi2wDIwKzxVW1AQT
 year: 2010
 status: featured
 course: buddhism
-tags: [function, ethics, philosophy, lay, problems]
+tags:
+  - function
+  - ethics
+  - brahmavihara
+  - philosophy
+  - lay
+  - sex
+  - problems
 ---
 
 > What lies behind this insistence on love is a worry: without a deep-seated fear that one day love would no longer exist (or exist in the same way) why would anyone feel that they have to insist upon it so much?
