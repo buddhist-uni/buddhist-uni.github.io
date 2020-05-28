@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1oRZ9Zb53nSeTr8jKigIm0-iQwtWgH0NG/view?usp=drivesdk"
 year: 2009
 month: nov
-publisher: Amaravati
+publisher: amaravati
 status: featured
 course: nibbana
 tags:
