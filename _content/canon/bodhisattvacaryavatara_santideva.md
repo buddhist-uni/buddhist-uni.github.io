@@ -16,7 +16,7 @@ tags:
   - tibetan-roots
   - engaged
   - effort
-year: 700
+year: 720
 ---
 
 This epic poem on grasping firmly the intention to awaken has inspired many generations of Buddhists to live a more ethical and spiritual life and it captures beautifully the aesthetic of Buddhist ethics. Well worth reading again and again and again.
