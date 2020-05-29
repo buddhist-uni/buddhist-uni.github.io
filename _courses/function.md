@@ -183,6 +183,8 @@ For most of us, what holds us back from perfecting virtue and becoming saintly o
 
 In which we finally get to meditation!
 
+{% include inline_content.html category="canon" slug="mn8" %}
+- A comprehensive list of 44 qualities to develop, and a rubric of levels at which we might assess ourselves.
 
 {% include content_box.html category="av" slug="habits-towards-nibbana_santussika" %}
 
