@@ -1,0 +1,26 @@
+---
+title: "Dāna: The Practice of Giving"
+authors:
+  - bodhi
+  - jootla-se
+  - desilva
+  - walshe
+  - gorkom
+  - "Ācariya Dhammapāla"
+external_url: "https://www.bps.lk/library-search-select.php?id=wh367"
+formats: [pdf, epub]
+drive_links:
+  - "https://drive.google.com/file/d/1-HzyeYYKjfCv-zp5g9Kcbj-ND-ejR2Mm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WcAU9PEfPRICYmGyacv8YwzYphJIcST2/view?usp=drivesdk"
+course: ethics
+tags:
+  - dana
+  - function
+year: 1990
+series: wheel
+number: 367
+publisher: bps
+---
+
+A collection of essays on generosity.
+

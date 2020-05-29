@@ -2,7 +2,7 @@
 title: "Bhikkhu Anālayo"
 ---
 
-Born in Germany in 1962 and ordained in Sri Lanka in 1995, Bhikkhu Anālayo arrived too late to study with his inspiration—Bhante Nyanaponika Thera—but stuck around anyway to study under a different Western monk: a certain "[Bhikkhu Bodhi]({% link _authors/bodhi.md %})."
+Born in Germany in 1962 and ordained in Sri Lanka in 1995, Bhikkhu Anālayo arrived too late to study with his inspiration—[Bhante Nyanaponika Thera]({% link _authors/nyanaponika.md %})—but stuck around anyway to study under a different Western monk: a certain "[Bhikkhu Bodhi]({% link _authors/bodhi.md %})."
 
 In 2000, still studying in Sri Lanka, Bhikkhu Anālayo received a PhD in the _Satipaṭṭhāna Sutta_. He became interested in the Northern parallels to the Pāli Canon and quickly picked up Sanskrit, ancient Chinese, and Tibetan, publishing _Perspectives on Satipaṭṭhāna_ in 2013.
 

@@ -12,7 +12,6 @@ tags:
   - stream-entry
   - nibbana
   - setting
-  - meditation
 year: 2018
 ---
 
