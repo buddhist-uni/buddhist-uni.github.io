@@ -3,6 +3,7 @@
 
 Tags:
 - [Monastic Buddhism]({% link _tags/monastic.md %})
+- [Ethics]({% link _tags/ethics.md %})
 
 {% include content_box.html category="canon" slug="mn87" %}
 

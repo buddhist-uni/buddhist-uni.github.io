@@ -7,6 +7,8 @@ year: 2017
 course: monastic
 tags:
   - path
+  - ethics
+  - daily-life
   - thai-forest
 ---
 
