@@ -20,4 +20,5 @@ tags:
   - chah
 ---
 
-A compendium of the ‘essence teachings’ of the Buddha, as they appear in the Pāli Canon and in the contemporary Thai Forest Tradition.
+A compendium of 'essence' teachings on _nibbāna_, as they appear in the Pāli Canon and in contemporary traditions. My most highly recommended book for anyone who wants to know what _Nibbāna_ is.
+
