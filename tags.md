@@ -9,6 +9,6 @@ Here you'll find the content on the site organized thematically. Very similar to
 <ul class="master_tags_list">
 {% assign tags = site.tags | sort: "slug" %}
 {% for tag in tags %}
-    <li><a class="tag_link" href="{{ tag.url }}">{{ tag.title }}</a>: {{ tag.excerpt }}</li>
+    <li><a class="tag_link" href="{{ tag.url }}">{{ tag.title }}</a></li>
 {% endfor %}
 </ul>
