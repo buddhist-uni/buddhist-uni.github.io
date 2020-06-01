@@ -72,7 +72,32 @@ layout: default
         {% endif %}
     {% endif %}
     </p>
-    {% endif %} 
+    {% endif %}
+    
+    {% if page.tags.size + page.authors.size > site.data.content.min_similarity_score %}
+       {% assign similars = '' | split: '' %}
+       {% for content in site.content %}
+        {% if content.path == page.path %}{% continue %}{% endif %}
+        {% if content.tags.size + content.authors.size <= site.data.content.min_similarity_score %}{% continue %}{% endif %}
+        {% if tagslugs contains content.course %}
+          {% assign score = 1 %}
+        {% else %}
+          {% assign score = 0 %}
+        {% endif %}
+        {% assign authscore = content.authors | where_exp: "i", "page.authors contains i" | size %}
+        {% assign tagscore = content.tags | where_exp: "i", "tagslugs contains i" | size %}
+        {% assign score = score | plus:  authscore | plus: tagscore %}
+        {% if score >= site.data.content.min_similarity_score %}
+          {% assign similars = similars | push: content %}
+        {% endif %}
+       {% endfor %}
+       {% if similars.size > 0 %}
+         <p>See also:</p>
+         <ul>{% for c in similars %}
+           <li>{% include simple_content_title.html content=c %}</li>
+         {% endfor %}</ul>
+       {% endif %}
+    {% endif %}
   </footer>
 
 </article>
