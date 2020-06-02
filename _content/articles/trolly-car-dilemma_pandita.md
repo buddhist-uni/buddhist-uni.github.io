@@ -5,7 +5,7 @@ external_url: "http://blogs.dickinson.edu/buddhistethics/files/2014/01/Pandita-T
 drive_links: ["https://drive.google.com/file/d/1iP7f94ihu_5jNbiHGTMnscSlA5PMe327/view?usp=drivesdk"]
 tags:
   - karma
-  - west
+  - dialogue
 course: ethics
 year: 2014
 journal: jbe

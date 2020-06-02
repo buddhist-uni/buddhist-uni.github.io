@@ -10,6 +10,7 @@ tags:
   - nature
   - engaged
   - problems
+  - climate-change
 year: 2019
 month: jun
 journal: Mindfulness
