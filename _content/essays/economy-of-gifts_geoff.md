@@ -6,6 +6,8 @@ external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/economy.ht
 course: form
 tags:
   - monastic
+  - vinaya-studies
+  - livelihood
   - becon
   - dana
 status: featured
