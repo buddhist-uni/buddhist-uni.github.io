@@ -7,7 +7,10 @@ year: 1991
 journal: "The Pacific World"
 number: 7
 course: ebts
-tags: [form]
+tags:
+  - form
+  - indian
+  - buddhism
 status: featured
 ---
 

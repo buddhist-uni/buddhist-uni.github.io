@@ -9,7 +9,12 @@ year: 1997
 month: nov
 number: 1
 course: buddhism
-tags: [west]
+tags:
+  - west
+  - modern
+  - society
+  - politics
+  - ethics
 ---
 
 > Freud in particular developed the concept that freedom means acting on one's desires. ... From a Buddhist standpoint, this notion is totally twisted

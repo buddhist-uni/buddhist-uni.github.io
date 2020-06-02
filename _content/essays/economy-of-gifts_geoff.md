@@ -4,7 +4,10 @@ authors: [geoff]
 year: 1997
 external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/economy.html"
 course: form
-tags: [monastic]
+tags:
+  - monastic
+  - becon
+  - dana
 status: featured
 ---
 

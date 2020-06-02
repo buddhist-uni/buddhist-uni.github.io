@@ -8,7 +8,12 @@ month: nov
 year: 2008
 status: featured
 course: function
-tags: [ethics, lay]
+tags:
+  - ethics
+  - lay
+  - problems
+  - daily-life
+  - speech
 ---
 
 Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.

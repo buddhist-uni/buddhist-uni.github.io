@@ -10,7 +10,13 @@ volume: 111
 pages: "17--28"
 status: featured
 course: function
-tags: [ethics, west]
+tags:
+  - ethics
+  - west
+  - engaged
+  - politics
+  - cruelty
+  - interfaith
 ---
 
 In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.
