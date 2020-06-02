@@ -14,4 +14,4 @@ tags:
   - american
 ---
 
-> critics have highlighted a number of weak points in Buddhist arguments thus far about environmen- tal issues. Nevertheless, Buddhism does provide resources for constructing an environmental ethic.
+> critics have highlighted a number of weak points in Buddhist arguments thus far about environmental issues. Nevertheless, Buddhism does provide resources for constructing an environmental ethic.
