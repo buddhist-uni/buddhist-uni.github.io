@@ -8,7 +8,11 @@ journal: "Lion's Roar"
 year: 2019
 month: apr
 course: ebts
-tags: [buddha, buddhism]
+tags:
+  - buddha
+  - buddhism
+  - form
+  - indian
 ---
 
 About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.

@@ -7,7 +7,11 @@ year: 2013
 month: nov
 publisher: "Buddha's Light Publishing"
 course: buddhism
-tags: [buddha, form]
+tags:
+  - buddha
+  - form
+  - setting
+  - chan-lit
 ---
 
 A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master. My most highly recommended biography of the Buddha.

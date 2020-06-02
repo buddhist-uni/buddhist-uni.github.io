@@ -7,7 +7,10 @@ drive_links: ["https://drive.google.com/file/d/1ZG1LLOeKoX0RM3kj1VfXuIRKN_qDrCgH
 year: 2017
 month: nov
 course: buddhism
-tags: [function]
+tags:
+  - function
+  - navakovada
+  - thai-forest
 ---
 
 A short overview of Buddhism from my own teacher. An excellent talk to revisit now and then.

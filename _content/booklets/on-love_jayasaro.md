@@ -11,6 +11,7 @@ tags:
   - function
   - ethics
   - brahmavihara
+  - metta
   - philosophy
   - lay
   - sex

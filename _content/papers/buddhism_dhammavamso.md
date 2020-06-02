@@ -14,6 +14,8 @@ tags:
   - lay
   - becon
   - engaged
+  - society
+  - power
 year: 2009
 month: mar
 ---

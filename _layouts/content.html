@@ -74,11 +74,14 @@ layout: default
     </p>
     {% endif %}
     
-    {% if page.tags.size + page.authors.size > site.data.content.min_similarity_score %}
+    {% assign possible = page.tags.size | plus: page.authors.size %}
+    {% if possible > site.data.content.min_similarity_score %}
        {% assign similars = '' | split: '' %}
+       {% assign target_similarity = site.data.content.min_similarity_score %}
        {% for content in site.content %}
         {% if content.path == page.path %}{% continue %}{% endif %}
-        {% if content.tags.size + content.authors.size <= site.data.content.min_similarity_score %}{% continue %}{% endif %}
+        {% assign possible = content.tags.size | plus: content.authors.size %}
+        {% if possible <= target_similarity %}{% continue %}{% endif %}
         {% if tagslugs contains content.course %}
           {% assign score = 1 %}
         {% else %}
@@ -87,16 +90,19 @@ layout: default
         {% assign authscore = content.authors | where_exp: "i", "page.authors contains i" | size %}
         {% assign tagscore = content.tags | where_exp: "i", "tagslugs contains i" | size %}
         {% assign score = score | plus:  authscore | plus: tagscore %}
-        {% if score >= site.data.content.min_similarity_score %}
+        {% if score == target_similarity %}
           {% assign similars = similars | push: content %}
+        {% elsif score > target_similarity %}
+          {% assign similars = '' | split: '' | push: content %}
+          {% assign target_similarity = score %}
         {% endif %}
        {% endfor %}
-       {% if similars.size > 0 %}
-         <p>See also:</p>
+       {% if similars.size > 0 %}<div class="similar_content_footer">
+         <p>You may also be interested in:</p>
          <ul>{% for c in similars %}
            <li>{% include simple_content_title.html content=c %}</li>
          {% endfor %}</ul>
-       {% endif %}
+       </div>{% endif %}
     {% endif %}
   </footer>
 

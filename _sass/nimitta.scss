@@ -188,6 +188,12 @@ div.featured_content_list .content_desc blockquote {
     padding-left: 5px;
 }
 
+div.similar_content_footer {
+    border-top: 1px solid $grey-color;
+    padding: 16px 0px;
+    margin-top: 26px;
+}
+
 @import
     "frontpage"
 ;
