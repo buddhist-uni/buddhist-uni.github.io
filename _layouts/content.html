@@ -74,14 +74,17 @@ layout: default
     </p>
     {% endif %}
     
-    {% assign possible = page.tags.size | plus: page.authors.size %}
-    {% if possible > site.data.content.min_similarity_score %}
+    {% assign possible = tagslugs.size | plus: page.authors.size %}
+    {% if possible >= site.data.content.min_similarity_score %}
        {% assign similars = '' | split: '' %}
        {% assign target_similarity = site.data.content.min_similarity_score %}
        {% for content in site.content %}
         {% if content.path == page.path %}{% continue %}{% endif %}
         {% assign possible = content.tags.size | plus: content.authors.size %}
-        {% if possible <= target_similarity %}{% continue %}{% endif %}
+        {% if content.course %}
+          {% assign possible = possible | plus: 1 %}
+        {% endif %}
+        {% if possible < target_similarity %}{% continue %}{% endif %}
         {% if tagslugs contains content.course %}
           {% assign score = 1 %}
         {% else %}
