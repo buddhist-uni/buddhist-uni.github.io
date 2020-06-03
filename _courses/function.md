@@ -21,7 +21,7 @@ I am satisfied that this course is both rigorous and accurate without compromisi
 
 ### Main Text
 
-This course follows the excellent (if sometimes repetitive) textbook by Bhikkhu Cintita:
+This course follows the excellent textbook by Bhikkhu Cintita:
 
 {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 - A gradual guide into the heart of Buddhism.
