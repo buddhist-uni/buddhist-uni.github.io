@@ -6,7 +6,9 @@ external_url: "http://www.buddhistfellowship.org/cms/index.php?/View-document-de
 drive_links:
   - "https://drive.google.com/file/d/1Z_vLfQFbmWqWhCQd-k68ZH_v4-CeZJNz/view?usp=drivesdk"
 course: lay
-tags: [becon]
+tags:
+  - becon
+  - balance
 year: 2009
 month: may
 ---
