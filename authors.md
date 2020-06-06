@@ -5,6 +5,7 @@ layout: page
 ---
 {% assign monographs = site.content | where_exp: "c", "c.path contains '/monographs/'" %}
 {% assign booklets = site.content | where_exp: "c", "c.path contains '/booklets/'" %}
+{% assign canon = site.content | where_exp: "c", "c.path contains '/canon/'" %}
 {% assign papers = site.content | where_exp: "c", "c.path contains '/papers/'" %}
 {% assign excerpts = site.content | where_exp: "c", "c.path contains '/excerpts/'" %}
 {% assign essays = site.content | where_exp: "c", "c.path contains '/essays/'" %}
@@ -21,6 +22,12 @@ layout: page
 {% for author in letter.items %}
     {% assign catcounts = "" | split: "" %}
     {% capture filter %}c.authors contains '{{ author.slug }}'{% endcapture %}
+    
+    {% assign contents = canon | where_exp: "c", filter %}
+    {% if contents.size > 0 %}
+      {% capture s %}{{ contents.size }} canonical work{% if contents.size > 1 %}s{% endif %}{% endcapture %}
+      {% assign catcounts = catcounts | push: s %}
+    {% endif %}
     
     {% assign contents = monographs | where_exp: "c", filter %}
     {% if contents.size > 0 %}
