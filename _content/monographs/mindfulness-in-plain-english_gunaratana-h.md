@@ -4,6 +4,7 @@ authors: [gunaratana-h]
 source_url: "https://www.vipassana.com/meditation/mindfulness_in_plain_english.php"
 year: 1991
 publisher: wisdom
+status: featured
 course: meditation
 tags:
   - buddhism
