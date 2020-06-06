@@ -100,6 +100,14 @@ layout: default
           {% assign target_similarity = score %}
         {% endif %}
        {% endfor %}
+       {% if similars.size > site.data.content.max_similars %}
+         {% assign category = page.path | split: '/' %}{% assign category = category[1] %}
+         {% capture filter %}c.path contains '/{{ category }}/'{% endcapture %}
+         {% assign filtered = similars | where_exp: "c", filter %}
+         {% if filtered.size > 0 %}
+           {% assign similars = filtered %}
+         {% endif %}
+       {% endif %}
        {% if similars.size > 0 %}<div class="similar_content_footer">
          <p>You may also be interested in:</p>
          <ul>{% for c in similars %}
