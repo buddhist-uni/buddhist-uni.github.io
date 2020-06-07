@@ -12,3 +12,6 @@ tags:
 year: 2009
 month: may
 ---
+
+Some advice for householders on the topic of diligence and responsibility delivered winningly by the ever-guileless Ajahn Brahmali.
+
