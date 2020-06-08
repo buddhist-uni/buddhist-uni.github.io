@@ -1,0 +1,21 @@
+---
+title: "Effects of mindful-attention and compassion meditation training on amygdala response to emotional stimuli in an ordinary, non-meditative state"
+authors: ["Gaëlle Desbordes", "Lobsang T. Negi", "Thaddeus W. W. Pace", "B. Alan Wallace", "Charles L. Raison", "Eric L. Schwartz"]
+external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485650/"
+formats: [pdf]
+drive_links: ["https://drive.google.com/file/d/1A0RQMfI9m8C8FlArzgpox-ViVMwn4vcv/view?usp=drivesdk"]
+year: 2012
+course: meditation
+journal: "Frontiers in Human Neuroscience"
+volume: 6
+number: 292
+tags:
+  - academia
+  - neuroscience
+  - path
+---
+
+Doing any one Buddhist practice in isolation can cause an unbalanced effect, but doing the path together shows more balance. This interesting paper shows that mindfulness meditation decrease amygdala responses even when not meditating, while compassion meditation has the opposite effect. Far from canceling each other out, of course, these practices combine to not  alter our neurochemistry, but rather to radically rewire the brain.
+
+I do recommend actually reading this paper. It has a good summary of other research done on meditation and a rather thoughtful analysis section. It's less dense and jargon-heavy than other papers I've reviewed and gives a good window into the state of scientific research on Buddhist meditation circa 2012.
+
