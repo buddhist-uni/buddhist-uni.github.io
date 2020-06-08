@@ -106,6 +106,17 @@ layout: default
          {% assign filtered = similars | where_exp: "c", filter %}
          {% if filtered.size > 0 %}
            {% assign similars = filtered %}
+         {% else %}
+          {% capture cat_filter %}c.path == "content/{{ category }}.md"{% endcapture %}
+          {% assign category = site.pages | where_exp: "c", cat_filter | first %}
+          {% for cat in category.similars %}
+            {% capture filter %}c.path contains '/{{ cat }}/'{% endcapture %}
+            {% assign f = similars | where_exp: "c", filter %}
+            {% assign filtered = filtered | concat: f %}
+          {% endfor %}
+          {% if filtered.size > 0 %}
+            {% assign similars = filtered %}
+          {% endif %}
          {% endif %}
        {% endif %}
        {% if similars.size > 0 %}<div class="similar_content_footer">
