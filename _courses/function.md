@@ -68,7 +68,7 @@ Bhante Yuttadhammo will be our lecturer for this class.
 
 {% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
 
-His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
+His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique]({% link _content/booklets/how-to -meditate_yuttadhammo.md %}) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
 
 I have reordered and renumbered the lectures [in Google Drive](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06) according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
