@@ -1,6 +1,6 @@
 ---
 title: "Oxford University Press"
-address: "Oxford, UK"
+address: "Oxford"
 external_url: "https://global.oup.com/"
 ---
 

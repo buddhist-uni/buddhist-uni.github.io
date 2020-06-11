@@ -78,13 +78,15 @@ layout: default
     {% if possible >= site.data.content.min_similarity_score %}
        {% assign similars = '' | split: '' %}
        {% assign target_similarity = site.data.content.min_similarity_score %}
+       {% assign nears = '' | split: '' %}
+       {% assign nearly = target_similarity | minus: 1 %}
        {% for content in site.content %}
         {% if content.path == page.path %}{% continue %}{% endif %}
         {% assign possible = content.tags.size | plus: content.authors.size %}
         {% if content.course %}
           {% assign possible = possible | plus: 1 %}
         {% endif %}
-        {% if possible < target_similarity %}{% continue %}{% endif %}
+        {% if possible < nearly %}{% continue %}{% endif %}
         {% if tagslugs contains content.course %}
           {% assign score = 1 %}
         {% else %}
@@ -95,11 +97,22 @@ layout: default
         {% assign score = score | plus:  authscore | plus: tagscore %}
         {% if score == target_similarity %}
           {% assign similars = similars | push: content %}
+        {% elsif score == nearly %}
+          {% assign nears = nears | push: content %}
         {% elsif score > target_similarity %}
+          {% assign nearly = score | minus: 1 %}
+          {% if target_similarity == nearly %}
+            {% assign nears = similars %}
+          {% else %}
+            {% assign nears = '' | split: '' %}
+          {% endif %}
           {% assign similars = '' | split: '' | push: content %}
           {% assign target_similarity = score %}
         {% endif %}
        {% endfor %}
+       {% if similars.size < site.data.content.min_similars %}
+         {% assign similars = similars | concat: nears %}
+       {% endif %}
        {% if similars.size > site.data.content.max_similars %}
          {% assign category = page.path | split: '/' %}{% assign category = category[1] %}
          {% capture filter %}c.path contains '/{{ category }}/'{% endcapture %}
