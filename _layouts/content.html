@@ -114,7 +114,7 @@ layout: default
          {% assign similars = similars | concat: nears %}
        {% endif %}
        {% if similars.size > site.data.content.max_similars %}
-         {% assign category = page.path | split: '/' %}{% assign category = category[1] %}
+         {% assign category = page.category %}
          {% capture filter %}c.path contains '/{{ category }}/'{% endcapture %}
          {% assign filtered = similars | where_exp: "c", filter %}
          {% if filtered.size > 0 %}
