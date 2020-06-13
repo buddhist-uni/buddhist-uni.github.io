@@ -137,7 +137,57 @@ defaults:
         layout: "content-category"
   -
     scope:
+        path: "_content/articles"
+        type: "content"
+    values:
+        category: "articles"
+  -
+    scope:
         path: "_content/av"
         type: "content"
     values:
         formats: [mp3]
+        category: "av"
+  -
+    scope:
+        path: "_content/booklets"
+        type: "content"
+    values:
+        category: "booklets"
+  -
+    scope:
+        path: "_content/canon"
+        type: "content"
+    values:
+        category: "canon"
+  -
+    scope:
+        path: "_content/essays"
+        type: "content"
+    values:
+        category: "essays"
+  -
+    scope:
+        path: "_content/excerpts"
+        type: "content"
+    values:
+        category: "excerpts"
+  -
+    scope:
+        path: "_content/monographs"
+        type: "content"
+    values:
+        category: "monographs"
+  -
+    scope:
+        path: "_content/papers"
+        type: "content"
+    values:
+        category: "papers"
+  -
+    scope:
+        path: "_content/reference"
+        type: "content"
+    values:
+        category: "reference"
+
