@@ -30,6 +30,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [Pacific World](https://pwj.shin-ibs.edu/)
 * [Journal of Global Buddhism](http://www.globalbuddhism.org/jgb/index.php/jgb/issue/archive)
 * [JIABS](https://journals.ub.uni-heidelberg.de/index.php/jiabs/index) ([mirror](https://poj.peeters-leuven.be/content.php?url=journal&journal_code=JIABS))
+* [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [The Canadian Journal of Buddhist Studies](https://thecjbs.org/archive/)
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
