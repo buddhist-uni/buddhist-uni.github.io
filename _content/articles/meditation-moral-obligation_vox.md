@@ -7,7 +7,10 @@ drive_links: ["https://drive.google.com/file/d/1_0CwIktwO3bg2kUn7QRfsRSegmAhNiGw
 year: 2020
 month: jan
 course: buddhism
-tags: [function]
+tags:
+  - function
+  - meditation
+  - ethics
 ---
 
 Meditation makes us better people. Does that make it mandatory?
