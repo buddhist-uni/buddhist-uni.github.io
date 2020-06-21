@@ -4,11 +4,12 @@ authors:
   - analayo
 journal: Mindfulness
 external_url: "https://doi.org/10.1007/s12671-019-01169-9"
-drive_links: ["https://drive.google.com/file/d/1y5DH2LUWtuCPBQ0-fIrvXTh4fKBW9wND/view?usp=drivesdk"]
+drive_urls: ["https://drive.google.com/file/d/1y5DH2LUWtuCPBQ0-fIrvXTh4fKBW9wND/view?usp=drivesdk"]
 year: 2019
 volume: 10
 course: meditation
-status: featured
+status: rejected
+reason: "Copyrighted"
 tags:
   - anapanasati
   - focus
