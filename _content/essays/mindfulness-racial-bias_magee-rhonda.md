@@ -11,6 +11,7 @@ tags:
   - engaged
   - ethics
   - californian
+  - mindfulness
 year: 2015
 month: may
 ---

@@ -9,6 +9,7 @@ course: meditation
 tags:
   - buddhism
   - function
+  - mindfulness
 ---
 
 The classic introduction to Buddhist meditation.
