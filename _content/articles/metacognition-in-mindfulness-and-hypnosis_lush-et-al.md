@@ -16,6 +16,7 @@ tags:
   - free-will
   - intentions
   - metacognition
+  - mindfulness
 ---
 
 > hypnotic response and meditation involve opposite processes

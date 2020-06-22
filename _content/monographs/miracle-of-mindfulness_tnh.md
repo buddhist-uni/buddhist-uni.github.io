@@ -14,6 +14,7 @@ tags:
   - function
   - meditation
   - problems
+  - mindfulness
   - daily
 ---
 

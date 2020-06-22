@@ -13,6 +13,8 @@ tags:
   - academia
   - neuroscience
   - path
+  - mindfulness
+  - daily
 ---
 
 Doing any one Buddhist practice in isolation can cause an unbalanced effect, but doing the path together shows more balance. This interesting paper shows that mindfulness meditation decrease amygdala responses even when not meditating, while compassion meditation has the opposite effect. Far from canceling each other out, of course, these practices combine to not  alter our neurochemistry, but rather to radically rewire the brain.

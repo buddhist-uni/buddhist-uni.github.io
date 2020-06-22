@@ -5,7 +5,7 @@ external_url: "http://static1.squarespace.com/static/5a09fb531f318de485b9921e/5a
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1iX9ALdu6jtiRZSrV4gGDrSpDg9ACcQvl/view?usp=drivesdk"]
 year: 2010
-journal: "Journal of Child and Family Study"
+journal: "the Journal of Child and Family Study"
 volume: 19
 pages: "152--156"
 course: meditation
@@ -17,6 +17,7 @@ tags:
   - mbsr
   - problems
   - death
+  - mindfulness
 ---
 
 > When I first heard her story, I found myself wondering how on earth I could help a mother to overcome the grief of the loss of a son. Nothing gave Laila hope
