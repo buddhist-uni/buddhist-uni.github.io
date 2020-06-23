@@ -17,6 +17,7 @@ tags:
   - intentions
   - metacognition
   - mindfulness
+  - academia
 ---
 
 > hypnotic response and meditation involve opposite processes
