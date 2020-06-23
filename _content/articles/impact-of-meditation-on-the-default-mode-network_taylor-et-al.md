@@ -13,7 +13,6 @@ pages: "4--14"
 publisher: oxford
 course: meditation
 tags:
-  - academia
   - neuroscience
   - path
 ---

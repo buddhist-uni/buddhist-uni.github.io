@@ -81,7 +81,7 @@ layout: default
        {% assign nears = '' | split: '' %}
        {% assign nearly = target_similarity | minus: 1 %}
        {% for content in site.content %}
-        {% if content.path == page.path %}{% continue %}{% endif %}
+        {% if content.status == "rejected" or content.path == page.path %}{% continue %}{% endif %}
         {% assign possible = content.tags.size | plus: content.authors.size %}
         {% if content.course %}
           {% assign possible = possible | plus: 1 %}
