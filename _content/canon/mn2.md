@@ -15,7 +15,6 @@ tags:
   - dukkha
   - problems
   - daily-life
-  - hindrances
   - mn
   - pali-canon
 year: 2009
