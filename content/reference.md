@@ -6,5 +6,5 @@ similars:
   - monographs
 ---
 
-Any written work intended to be used as reference material can be found here.
+Any reference materials or tools for digital Buddhist scholars will be listed here.
 
