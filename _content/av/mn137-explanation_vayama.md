@@ -9,6 +9,8 @@ course: philosophy
 tags:
   - mn
   - vipassana
+  - dukkha
+  - problems
 year: 2007
 month: nov
 ---
