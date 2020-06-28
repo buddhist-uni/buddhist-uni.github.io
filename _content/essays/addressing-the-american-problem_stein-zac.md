@@ -6,9 +6,13 @@ external_url: "http://www.zakstein.org/wp-content/uploads/2014/10/Stein_abstract
 drive_links:
   - "https://drive.google.com/file/d/1tWKJEJWgoU0w_w4ceAiHeaZXiNc1szc3/view?usp=drivesdk"
 course: meditation
+status: featured
 tags:
   - path
   - cognitive-development
+  - psychology
+  - american
+  - philosophy
 year: 2007
 note: "presented at the Annual Meeting of the Neural Information Processing Society, Workshop for the Hierarchical Organization of Behavior"
 address: "Vancouver"
