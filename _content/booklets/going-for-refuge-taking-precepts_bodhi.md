@@ -8,7 +8,10 @@ drive_links:
   - "https://drive.google.com/file/d/1Kqh8G1v3wNnxIKr0xEA3F4g6fNhnqsN7/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rBPchiImVXAe_5qM9PkLQXdNNWK7vo_7/view?usp=drivesdk"
 course: lay
-tags: [form, vinaya, ethics]
+tags:
+  - form
+  - vinaya-studies
+  - ethics
 year: 1981
 series: wheel
 number: 282

@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1XSOezs6KZDz8HcCumdxK5jNNkws-4v8G
 tags:
   - american
   - nuns
-  - vinaya
+  - vinaya-pitaka
   - vinaya-studies
   - monastic-theravada
 course: monastic

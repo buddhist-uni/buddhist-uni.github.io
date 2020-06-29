@@ -9,7 +9,7 @@ course: ethics
 status: featured
 tags:
   - an
-  - vinaya
+  - vinaya-studies
   - speech
   - problems
   - imagery
