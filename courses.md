@@ -4,7 +4,7 @@ title: Courses
 permalink: /courses/
 ---
 
-The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into non-overlapping[^overlap], self-paced, free reading guides on a variety of topics in Buddhist Studies. We currently offer 4 courses on the fundamentals of Buddhism:
+The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into self-paced, free courses on a variety of topics in Buddhist Studies. We currently offer 4 courses on the fundamentals of Buddhism:
 
 ### [<i class="fas fa-chalkboard-teacher"></i> Buddhism 101]({% link _courses/buddhism.md %})
 An introduction suitable for everyone, especially beginners and people completely new to Buddhism.
@@ -18,9 +18,3 @@ An introduction to the history and religious aspects of Buddhism, including anal
 ### [<i class="fas fa-user-slash"></i> The Function of Buddhism]({% link _courses/function.md %})
 An introduction to the Buddhist practice, placing the meditative and ethical trainings in their broader developmental context.
  
-
----
-Footnotes:
-
-[^overlap]: By "non-overlapping" I mean that I have tried to resist featuring the same piece of content in two different classes. While some of the subject-matter will overlap between classes, "non-overlapping" guarentees that no matter how many of our courses you take, you'll never have to read the same book or listen to the same lecture twice.
-
