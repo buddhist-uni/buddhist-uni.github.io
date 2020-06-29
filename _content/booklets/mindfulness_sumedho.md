@@ -6,6 +6,7 @@ external_url: "https://www.amaravati.org/dhamma-books/mindfulness-the-path-to-th
 drive_links:
   - "https://drive.google.com/file/d/1BttENbZ6is4I06exkFt24vFDGuxXCBwf/view?usp=drivesdk"
 course: meditation
+status: featured
 tags:
   - retreats
   - path

@@ -11,7 +11,7 @@ tags:
   - philosophy
   - nuns
   - bhikkuni
-  - vinaya
+  - vinaya-pitaka
   - vinaya-studies
   - gender
   - ethics
