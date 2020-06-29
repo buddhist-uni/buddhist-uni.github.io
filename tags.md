@@ -4,7 +4,9 @@ permalink: "/tags/"
 layout: page
 ---
 
-Here you'll find the content on the site organized thematically. Very similar to <a href="{% link courses.md %}">the courses</a> but with less structure and commentary, the reading lists here put the works front and center, and allow you to zero in on what you might be looking for right now.
+Here you'll find our library of free content on Buddhism arranged by topic. 
+
+For a more systematic walkthrough of some of these topics, see <a href="{% link courses.md %}">the course list</a>.
 
 <ul class="master_tags_list">
 {% assign tags = site.tags | sort: "slug" %}
