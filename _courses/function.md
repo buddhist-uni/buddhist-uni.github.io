@@ -183,14 +183,18 @@ For most of us, what holds us back from perfecting virtue and becoming saintly o
 
 In which we finally get to meditation!
 
-{% include inline_content.html category="canon" slug="mn8" %}
-- A comprehensive list of 44 qualities to develop, and a rubric of levels at which we might assess ourselves.
-
-{% include content_box.html category="av" slug="habits-towards-nibbana_santussika" %}
+{% include inline_content.html category="articles" slug="meditation-in-buddhism_dwivedi-kedar" %}
+- A short brief in a psychiatric journal summarizing the psychotherapeutic potential of Buddhist meditation.
 
 {% include inline_content.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
 - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.
 - Essentially: note whenever your mind wanders, and then gently return your awareness back to the body, trying to maintain a continuity of awareness as much as possible.
+
+{% include inline_content.html category="av" slug="habits-towards-nibbana_santussika" %}
+- Ayya Santussika gives a guided meditation, followed by a talk about her own practice of...
+
+{% include inline_content.html category="canon" slug="mn8" %}
+- A comprehensive list of 44 qualities to develop along with a rubric of levels at which we might assess ourselves.
 
 {% include inline_content.html category="essays" slug="sensual-pleasures-are-painful_suchart" %}
 - One of my favorite talks by my own teacher, Ajahn Suchart, which beautifully sums up the path, encouraging us all to strive for a real, lasting happiness.
