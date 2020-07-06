@@ -1,3 +1,3 @@
 ---
-title: "Thich Nhat Hanh"
+title: "Thích Nhất Hạnh"
 ---
