@@ -1,5 +1,5 @@
 ---
-title: "Just Movement (song)"
+title: "Just Movement"
 authors: ["Robert DeLong"]
 external_url: "https://youtu.be/jltoFSLtDjM"
 year: 2013
