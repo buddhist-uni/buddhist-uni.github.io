@@ -20,5 +20,5 @@ year: 2005
 
 An extremely profound and exceptionally rare book, *Arahattamagga* gives an unfiltered first-hand account of what it's actually like to walk the entire Path—from its tumultuous beginning to its extraordinary finish.
 
-The book includes detailed descriptions of the qualia of the different stages of enlightenment, along with the insights and practices relevant to each stage. Far from a technical manual though, this book is a hugely inspiring and approachable series of straightforward conversations. A beginning practitioner will benefit immensely from hearing how possible enlightenment is, but it is the most advanced practitioners (think: *sakadāgāmī* / *anāgāmī* already) who will reap the highest reward from the *Arahattamagga*: *arahattaphala*.
+The book includes detailed descriptions of the qualia of the different stages of enlightenment, along with the insights and practices relevant to each stage. Far from a technical manual though, this book is a hugely inspiring and approachable series of straightforward conversations. A beginning practitioner will benefit immensely from hearing how possible enlightenment is, but it is the most advanced practitioners (think: *sakadāgāmī* / *anāgāmī* already) who will reap the highest reward from *Arahattamagga*: *Arahattaphala*.
 
