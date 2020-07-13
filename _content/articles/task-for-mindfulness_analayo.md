@@ -15,7 +15,7 @@ year: 2019
 month: jun
 journal: Mindfulness
 volume: 10
-pages: 1926--1935
+pages: "1926--1935"
 ---
 
 > Such cultivation of mindfulness provides the foundation by establishing the balance within oneself that then enables helping others.
