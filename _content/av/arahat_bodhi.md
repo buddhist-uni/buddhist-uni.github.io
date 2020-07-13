@@ -1,0 +1,17 @@
+---
+title: "The Arahat"
+authors:
+  - bodhi
+source_url: "https://discourse.suttacentral.net/t/bhikkhu-bodhi-guest-lecture-analayos-madhyama-agama-lectures-2013-1-11/1942?u=khemarato.bhikkhu"
+drive_links:
+  - "https://drive.google.com/file/d/1TsulPunTiSWPkFHCFdDL2_A-JTiCmHFY/view?usp=drivesdk"
+formats: ["mp3"]
+course: nibbana
+tags:
+  - arahant
+  - tranquility-and-insight
+  - philosophy
+year: 2013
+---
+
+A solid, scholastic introduction to what it means to "graduate" from Buddhist practice.
