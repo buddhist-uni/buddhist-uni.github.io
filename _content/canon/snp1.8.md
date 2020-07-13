@@ -1,5 +1,6 @@
 ---
 title: "(Snp 1.8) Karaniya Metta Sutta: The Buddha's Words on Loving-Kindness"
+slug: "snp.1.08"
 external_url: "https://accesstoinsight.org/tipitaka/kn/snp/snp.1.08.amar.html"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ZuNmlS31B_0L5GWplk_r_zruUDP0USo-/view?usp=drivesdk"]
