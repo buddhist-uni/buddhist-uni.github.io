@@ -1,5 +1,6 @@
 ---
 title: "Snp 4.1: Objects, Desires, Pleasures"
+slug: "snp.4.01"
 external_url: "https://suttacentral.net/snp4.1/en/mills"
 translator: mills-laurence
 formats: [pdf]

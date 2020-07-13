@@ -1,5 +1,6 @@
 ---
 title: "Snp 5.15: Posāla's Question"
+slug: "snp.5.15"
 external_url: "https://suttacentral.net/snp5.15/en/mills"
 translator: mills-laurence
 formats: [pdf]

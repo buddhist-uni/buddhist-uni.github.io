@@ -1,5 +1,6 @@
 ---
 title: "Snp 1.4: To the Plowing Bharadvaja"
+slug: "snp.1.04"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.04.olen.html"
 formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1couczIzgT5Qigh-PeIOvo4SBLvUy1OSh/view?usp=drivesdk"]
