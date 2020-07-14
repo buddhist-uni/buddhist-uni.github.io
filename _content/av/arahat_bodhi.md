@@ -14,4 +14,4 @@ tags:
 year: 2013
 ---
 
-A solid, scholastic introduction to what it means to "graduate" from Buddhist practice.
+A solid, scholastic introduction to what it means to graduate from Buddhist practice.
