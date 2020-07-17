@@ -13,4 +13,4 @@ year: 2009
 month: sep
 ---
 
-A more detailed commentary on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi).
+A more detailed commentary on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi){:target="_blank" ga-event-value="0.25"}.

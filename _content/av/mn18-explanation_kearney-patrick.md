@@ -16,4 +16,4 @@ month: sep
 
 A detailed analysis of [this difficult sutta]({% link _content/canon/mn18.md %}) highlighting  the limits of concepts and the Buddha's rhetorical genius.
 
-You can find part two [here](https://dharmaseed.org/teacher/516/talk/32317/20150922-Patrick_Kearney-BMIMC-the_sweet_essence_part_2-32317.mp3){:target="_blank"}.
+You can find part two [here](https://dharmaseed.org/teacher/516/talk/32317/20150922-Patrick_Kearney-BMIMC-the_sweet_essence_part_2-32317.mp3){:target="_blank" ga-event-value="{{ page.base_value }}"}.

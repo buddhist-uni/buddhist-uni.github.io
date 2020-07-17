@@ -1,10 +1,22 @@
 ---
-layout: page
+layout: default
 ---
 
-{{ content }}
-{% assign slug = page.name | split: '.' | first %}
-{% capture filter_exp %}c.path contains '/{{ slug }}/'{% endcapture %}
-{% assign category = site.content | where_exp: "c", filter_exp %}
-{% include content_list.html contents=category keep_rejects="true" orderby="slug" %}
+<article class="content-category">
+
+  <header class="post-header">
+    <a href="/content/"><i>Back to</i> all content types</a>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+    {% assign slug = page.name | split: '.' | first %}
+    {% capture filter_exp %}c.path contains '/{{ slug }}/'{% endcapture %}
+    {% assign category = site.content | where_exp: "c", filter_exp %}
+    {% include content_list.html contents=category keep_rejects="true" orderby="slug" %}
+  </div>
+
+</article>
+
 

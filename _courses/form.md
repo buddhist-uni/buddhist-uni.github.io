@@ -173,7 +173,7 @@ A few more words are also due on the subject of restraint, beyond the five prece
 #### Praxis Conclusion 
 
 {% include inline_content.html category="av" slug="dhammavinaya_yuttadhammo" %}
-- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html) (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
+- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
 ### Conclusion to the Class
 
