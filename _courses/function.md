@@ -68,13 +68,13 @@ Bhante Yuttadhammo will be our lecturer for this class.
 
 {% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
 
-His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique]({% link _content/booklets/how-to-meditate_yuttadhammo.md %}) (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
+His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank" ga-event-value="10"} (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
 
-I have reordered and renumbered the lectures [in Google Drive](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06) according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
-1. [00 - Three Trainings (2009-03-16).mp3](https://drive.google.com/file/d/1uLo1BH-LBtNIaTQ60llXTmnwHA4FYuG0/view?usp=drivesdk)
+I have reordered and renumbered the lectures [in Google Drive](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06){:target="_blank" ga-event-value="1"} according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
+1. [00 - Three Trainings (2009-03-16).mp3](https://drive.google.com/file/d/1uLo1BH-LBtNIaTQ60llXTmnwHA4FYuG0/view?usp=drivesdk){:target="_blank" ga-event-value="0.5"} 
     - This first lecture, to listen to before starting the book, explains the three-fold training which I mentioned in my definition.
-2. [01 - Wrong View (2009-03-28).mp3](https://drive.google.com/a/u.northwestern.edu/file/d/1wWnL668_czXEY5tbugEqGgMfhkrtX_L_/view?usp=drivesdk)
+2. [01 - Wrong View (2009-03-28).mp3](https://drive.google.com/a/u.northwestern.edu/file/d/1wWnL668_czXEY5tbugEqGgMfhkrtX_L_/view?usp=drivesdk){:target="_blank" ga-event-value="0.5"} 
     - This lecture should be listened to after reading chapter 1 and its supplements (below).
 3. and so on...
 
@@ -89,7 +89,7 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 ##### Chapter 1
 
 {% include inline_content.html category="articles" slug="craving-dukkha_analayo" %}
-(Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk))
+(Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk){:target="_blank" ga-event-value="0.15"})
 - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
 ##### Chapter 2
@@ -108,7 +108,7 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 <div><br /></div>
 
 ##### Chapter 4
-> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank"}
+> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank" ga-event-value="0.3"}
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
@@ -127,10 +127,10 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 <i class="fas fa-dharmachakra"></i> Suttas from the Anguttara Nikaya on Spiritual Companionship
 
 - A short selection of suttas by Bhikkhu Bodhi, containing the basic instructions on how to wisely find and attend to spiritual friends and teachers. 
-    1. [AN3.26](https://suttacentral.net/an3.26/en/bodhi): “And what kind of person is to be associated with, followed, and served?”
-    1. [AN4.32](https://suttacentral.net/an4.32/en/bodhi): “These are the four means of sustaining a favorable relationship.”
-    1. [AN6.51](https://suttacentral.net/an6.51/en/sujato): “How does a mendicant get to hear a teaching they haven’t heard before?”
-    1. [AN5.151](https://suttacentral.net/an5.151/en/sujato): “Someone with these five qualities is able to enter the sure path”
+    1. [AN3.26](https://suttacentral.net/an3.26/en/bodhi){:target="_blank" ga-event-value="0.2"}:  “And what kind of person is to be associated with, followed, and served?”
+    1. [AN4.32](https://suttacentral.net/an4.32/en/bodhi){:target="_blank" ga-event-value="0.2"}: “These are the four means of sustaining a favorable relationship.”
+    1. [AN6.51](https://suttacentral.net/an6.51/en/sujato){:target="_blank" ga-event-value="0.2"}: “How does a mendicant get to hear a teaching they haven’t heard before?”
+    1. [AN5.151](https://suttacentral.net/an5.151/en/sujato){:target="_blank" ga-event-value="0.2"}: “Someone with these five qualities is able to enter the sure path”
 
 This external factor, namely good spiritual friendship, is the final (and most important) of the external factors supporting the Buddhist Path, and so concludes our discussion of “Buddhist Life” and enters us onto the path.
 
@@ -148,7 +148,7 @@ And that is somewhat accurate of what we've covered so far. Buddhism claims no e
 >  
 "It has both pleasure and pain."
 >  
-*~ From [MN 79](https://suttacentral.net/mn79/en/sujato){:target="_blank"}*
+*~ From [MN 79](https://suttacentral.net/mn79/en/sujato){:target="_blank" ga-event-value="0.25"}*
 
 In part II, we return to the Noble Eightfold Path, and to the teachings on transcending _all_ suffering.
 
@@ -231,4 +231,4 @@ In which we finally get to meditation!
 
 *Footnotes:*
 
-[^defaultmode]: Here, by “default mode” I refer to what [David Foster Wallace called](https://www.youtube.com/watch?v=8CrOL-ydFMI) our “natural, hard-wired default setting which is to be deeply and literally self-centered and to see and interpret everything through this lens of self.” Neuroscientists have even identified a spinning, vortex of related regions in the middle of the brain which they think is responsible for this self-centered processing, which they have dubbed the “[Default Mode Network](https://en.wikipedia.org/wiki/Default_mode_network).”
+[^defaultmode]: Here, by “default mode” I refer to what [David Foster Wallace called](https://www.youtube.com/watch?v=8CrOL-ydFMI){:target="_blank" ga-event-value="0.5"} our “natural, hard-wired default setting which is to be deeply and literally self-centered and to see and interpret everything through this lens of self.” Neuroscientists have even identified a spinning, vortex of related regions in the middle of the brain which they think is responsible for this self-centered processing, which they have dubbed the “[Default Mode Network](https://en.wikipedia.org/wiki/Default_mode_network){:target="_blank" ga-event-value="0.15"}.”

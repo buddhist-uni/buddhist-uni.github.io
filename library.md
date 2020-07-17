@@ -16,9 +16,9 @@ If there's a particular author you want to hear more from or you just want to ge
 #### [<i class="fas fa-photo-video"></i> Content Type]({% link content/index.md %})
 In the mood to curl up with [a good book]({% link content/monographs.md %})? Or perhaps looking for [a dhamma talk]({% link content/av.md %}) to listen to? Whatever you're looking for, you can [find it by type here]({% link content/index.md %}).
 
-### Or on [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)
+### Or on [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 All the content on this site and more can be found in
-[my huge Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r).
+[my huge Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}.
 
 ### Additional Information
 

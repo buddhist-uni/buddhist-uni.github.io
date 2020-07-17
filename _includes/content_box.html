@@ -4,5 +4,5 @@
     {% capture foo %}{% include content_title.html content=content %}{% endcapture %}
     {{ foo | strip_newlines }}
   </div>
-  <div class="content_box_desc">{{ content.content }}</div>
+  <div class="content_box_desc">{{ content.content | markdownify }}</div>
 </div>

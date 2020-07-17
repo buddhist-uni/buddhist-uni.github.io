@@ -13,4 +13,4 @@ year: 2011
 month: jan
 ---
 
-A talk giving a comprehensive overview of Buddhist practice, based on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi).
+A talk giving a comprehensive overview of Buddhist practice, based on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi){:target="_blank" ga-event-value="0.25"}.

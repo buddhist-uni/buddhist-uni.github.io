@@ -12,4 +12,4 @@ tags:
   - abhidhamma
 ---
 
-A short talk on this profound sutta ([MN28](https://suttacentral.net/mn28)) which serves as an EBT basis for the Abhidhamma.
+A short talk on this profound sutta ([MN28](https://suttacentral.net/mn28){:target="_blank" ga-event-value="0.25"}) which serves as an EBT basis for the Abhidhamma.
