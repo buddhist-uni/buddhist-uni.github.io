@@ -157,7 +157,7 @@ defaults:
         type: "content"
     values:
         category: "booklets"
-        base_value: "3.0"
+        base_value: "2.5"
   -
     scope:
         path: "_content/canon"
@@ -185,7 +185,7 @@ defaults:
         type: "content"
     values:
         category: "monographs"
-        base_value: "4.0"
+        base_value: "3.0"
   -
     scope:
         path: "_content/papers"
