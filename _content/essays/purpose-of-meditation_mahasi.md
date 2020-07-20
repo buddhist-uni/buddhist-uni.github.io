@@ -6,12 +6,12 @@ formats: [epub]
 drive_links:
   - "https://drive.google.com/file/d/1FRuBlk70TQuXb0zMi0jyKnm04QFv-5vJ/view?usp=drivesdk"
 year: 1980
-course: nibbana
+course: path
 status: featured
 tags:
   - visuddhimagga
   - function
-  - path
+  - nibbana
   - meditation
   - samadhi
   - vipassana
