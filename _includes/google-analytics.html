@@ -8,7 +8,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('require', 'outboundLinkTracker', {
     hitFilter: function(c) {
-      if(!c.get("eventValue")) { c.set("eventValue", "0.1"); }
+      c.set("eventValue", Math.round((c.get("eventValue") || 0.1) * 100));
     }
   });
   ga('send', 'pageview');
