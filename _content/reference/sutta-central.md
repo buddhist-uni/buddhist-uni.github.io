@@ -7,8 +7,6 @@ tags:
   - ebts
   - pali-canon
   - agama
-  - indian
-  - theravada
   - sutta
 ---
 

@@ -7,9 +7,11 @@ drive_links: ["https://drive.google.com/file/d/18z28tsjXlB_cnBSGgVViN3WowA97iywB
 year: 2004
 volume: 27
 number: 1
-journal: "The Journal of the International Association of Buddhist Studies"
+journal: jiabs
 course: ebts
-tags: [indian]
+tags:
+  - indian
+  - oral
 ---
 
 Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim
