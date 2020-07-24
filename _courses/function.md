@@ -159,6 +159,10 @@ In part II, we return to the Noble Eightfold Path, and to the teachings on trans
 
 {% include content_box.html category="canon" slug="mn24" %}
 
+{% include inline_content.html category="excerpts" slug="rathavinita_analayo" %}
+- Bhikkhu Analayo summarizes and discusses this sutta in this short article.
+
+
 ##### Chapter 8
 
 {% include inline_content.html category="canon" slug="an10.61" %}
