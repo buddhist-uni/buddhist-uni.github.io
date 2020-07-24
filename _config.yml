@@ -31,7 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-rss: atom
+rss: rss
 show_excerpts: true
 
 # Exclude from processing.
