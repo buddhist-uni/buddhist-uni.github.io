@@ -13,7 +13,7 @@ tags:
   - west
   - modern
   - society
-  - politics
+  - power
   - ethics
 ---
 

@@ -14,7 +14,7 @@ tags:
   - ethics
   - west
   - engaged
-  - politics
+  - power
   - cruelty
   - interfaith
 ---
