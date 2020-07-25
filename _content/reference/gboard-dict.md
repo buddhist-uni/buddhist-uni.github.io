@@ -4,6 +4,7 @@ formats: [zip]
 authors: ["Sidharta Suryametta"]
 drive_links: ["https://drive.google.com/file/d/1ACS8-LVMd2DEFEQp1wpQlqQoFpq7VIH-/view?usp=drivesdk"]
 course: pali-language
+year: 2020
 tags:
   - theravada
 ---

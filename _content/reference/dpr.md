@@ -9,3 +9,4 @@ tags:
   - pali-canon
 ---
 
+The full Pāli Canon online in Pāli alongside its traditional commentaries and modern translations. An essential tool for anyone working on translating the Pāli Canon.
