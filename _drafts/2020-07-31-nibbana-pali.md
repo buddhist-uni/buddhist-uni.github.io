@@ -9,7 +9,7 @@ I'm especially happy to finally share with you:
 {% include inline_content.html category='essay' slug='purpose-of-meditation_mahasi' %}
 - Mahasi Sayadaw's classic summary of the *Visuddhimagga* provides an excellent (if dense!) map of the path.
 
-{% assign cslugs = 'arahattamagga-arahattaphala_mahabua' | split: ',' %}
+{% assign cslugs = 'arahattamagga-arahattaphala_mahabua,dhammapada_buddharakkhita,dhp1_kmas' | split: ',' %}
 {% assign content = site.content | where_exp: "c", "cslugs contains c.slug" %}
 <div class="narrow">{% include content_list.html contents=content %}</div>
 
