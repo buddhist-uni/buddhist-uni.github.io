@@ -133,6 +133,10 @@ layout: default
           {% endif %}
          {% endif %}
        {% endif %}
+       {% if similars.size > site.data.content.max_similars %}
+         {% assign filtered = similars | where: "status", "featured" %}
+         {% if filtered.size > 0 %}{% assign similars = filtered %}{% endif %}
+       {% endif %}
        {% if similars.size > 0 %}<div class="similar_content_footer">
          <p>You may also be interested in:</p>
          <ul>{% for c in similars %}
