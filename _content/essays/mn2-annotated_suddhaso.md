@@ -8,6 +8,7 @@ year: 2016
 month: jan
 course: path
 status: featured
+series: annotated-suttas_suddhaso
 tags:
   - function
   - ethics
