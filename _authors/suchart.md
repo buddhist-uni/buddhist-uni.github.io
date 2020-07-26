@@ -6,4 +6,4 @@ Than Ajahn Suchart Abhijāto was born in Thailand in 1947 and received a Bachelo
 
 For his tenth rains, Ajahn Suchart came back to Pattaya where he has remained ever since. You can find his teachings and more at [PhraSuchart.com](https://www.phrasuchart.com/en/){:target="_blank"}.
 
-*~ Adapted from [My Way: An Autobiography](https://www.phrasuchart.com/biography/){:target="_blank" ga-event-value="2.5"}*
+*~ Adapted from [My Way: An Autobiography](https://www.phrasuchart.com/biography/){:target="_blank" ga-event-value="0.5"}*
