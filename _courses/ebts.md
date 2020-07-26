@@ -27,7 +27,7 @@ This course gives a thorough introduction to what the Buddha taught in his own w
 
 {% include inline_content.html category="monographs" slug="in-the-buddhas-words_bodhi" %}
 
-The main textbook for this course is the (commercial) work **In The Buddha's Words** by Bhikkhu Bodhi. If you cannot obtain a copy of the book, [an open-source version can be read online for free at Reading Faithfully](https://www.readingfaithfully.org/in-the-buddhas-words-an-anthology-of-discourses-from-the-pali-canon-linked-to-suttacentral-net/){:target="_blank" ga-event-value="2.5"}, but the real book is preferred for its helpful redactions and notes.
+The main textbook for this course is the (commercial) work **In The Buddha's Words** by Bhikkhu Bodhi. If you cannot obtain a copy of the book, [an open-source version can be read online for free at Reading Faithfully](https://www.readingfaithfully.org/in-the-buddhas-words-an-anthology-of-discourses-from-the-pali-canon-linked-to-suttacentral-net/){:target="_blank" ga-event-value="0.75"}, but the real book is preferred for its helpful redactions and notes.
 
 This book gives a systematic introduction to the Buddha's teachings, and will be the primary text for this class.
 
