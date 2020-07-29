@@ -3,5 +3,5 @@ title: "Nibbāna"
 parents: [function]
 ---
 
-The unconditional happiness which is the goal of Buddhist practice.
+The unconditional happiness that constitutes the goal of Buddhist practice.
 
