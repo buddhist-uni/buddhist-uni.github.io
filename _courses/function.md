@@ -196,7 +196,7 @@ In which we finally get to meditation!
 
 ### Conclusion
 
-{% include inline_content.html category="booklet" slug="escape-to-reality_pereira" %}
+{% include inline_content.html category="booklets" slug="escape-to-reality_pereira" %}
 - A rousing collection of essays on Buddhist wisdom and an earnest appeal to put the teachings into practice.
 
 {% include inline_content.html category="av" slug="this-opportunity_yuttadhammo" %}

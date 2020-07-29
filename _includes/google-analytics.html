@@ -11,7 +11,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
       var v = c.get("eventValue") || 0.1;
       var w = Math.floor(v);
       window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':c.get("eventLabel"),'revenue_value':v,'currency':'USD'});
-      c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w);
+      c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w, true);
     }
   });
   ga('send', 'pageview');
