@@ -2,5 +2,5 @@
 title: Buddhism
 ---
 
-The religion founded by the Buddha in approximately the 5th century BCE in the Ganges River Valley.
+The {% include tag-link.html text="religion" tag="religion" %} founded by the {% include tag-link.html text="Buddha" tag="buddha" %} in approximately the 5th century BCE in the Ganges River Valley.
 

@@ -10,11 +10,11 @@ publisher: bps
 series: wheel
 number: 308
 address: Kandy
-course: function
+course: path
 status: featured
 tags: 
   - buddhism
-  - path
+  - function
   - meditation
   - theravada
 ---

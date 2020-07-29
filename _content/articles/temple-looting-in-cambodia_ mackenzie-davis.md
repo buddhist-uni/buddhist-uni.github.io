@@ -22,4 +22,4 @@ pages: "722--740"
 
 An oral history of the antiquities smuggling which brought ancient Cambodian art to the Western world.
 
-Notice in particular how the looting was worse during the Cold War than during the colonial period, with American-backed militias instrumental in the efforts.
+Notice in particular how the looting was worse during the Cold War than during the colonial period, with American-backed militias instrumental in the efforts on both sides of the border.

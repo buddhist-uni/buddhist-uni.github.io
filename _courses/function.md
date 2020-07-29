@@ -34,33 +34,6 @@ This book is divided into two, unsurprising halves: Buddhist Life and Buddhist P
 
 - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
 
-#### The Noble Eightfold Path
-
-Before we begin the course proper, let’s first do a short "mini-course" to give us an overview of the Path and where we're headed:
-
-{% include content_box.html category="canon" slug="mn117" %}
-
-{% include inline_content.html category="booklets" slug="noble-eightfold-path_bodhi" %}
-- Bhikkhu Bodhi’s classic introduction to the Buddhist Path.
-
-{% include inline_content.html category="booklets" slug="in-his-own-words_nyanamoli" %}
-- Along with the Buddha's own words on the subject, as compiled by Bhikkhu Nyanamoli.
-
-
-I recommend reading MN 117 first as a preview, then reading Nyanamoli’s anthology section-by-section alongside Bhikkhu Bodhi’s analysis. This way, you'll get a taste of the original teachings followed closely by their elucidation:
-1. MN 117
-1. Bodhi: Preface
-2. Nyanamoli: What is the Dhamma? –> The Truth of Cessation
-3. Bodhi: Part 1 (The Way to the End of Suffering)
-4. Nyanamoli: Right View
-5. Bodhi: Right View
-8. …
-9. Nyanamoli: In Practice and The Means
-9. Bodhi: The Development of Wisdom
-9. Nyanamoli: The End
-9. Bodhi: Epilogue
-
-Having thus gotten the traditional map of the Path, we can now begin exploring its terrain.
 
 ### Lectures
 
@@ -82,7 +55,7 @@ Please listen to them in this order, not chronologically.
 
 ### Supplementary Readings
 
-To get some diversity of voices, and to enrich our understanding, we supplement each chapter with some additional words. Please read the following after each chapter:
+To get some diversity of voices, and to enrich our understanding, we supplement each chapter in _Buddhist Life_ with some additional words. Please read the following after each chapter:
 
 #### Part 1: Buddhist Life
 
@@ -222,6 +195,9 @@ In which we finally get to meditation!
 
 
 ### Conclusion
+
+{% include inline_content.html category="booklet" slug="escape-to-reality_pereira" %}
+- A rousing collection of essays on Buddhist wisdom and an earnest appeal to put the teachings into practice.
 
 {% include inline_content.html category="av" slug="this-opportunity_yuttadhammo" %}
 - Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 

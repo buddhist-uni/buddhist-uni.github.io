@@ -10,8 +10,11 @@ publisher: bps
 series: wheel
 number: 428
 address: Kandy
-course: function
-tags: [pali-canon, ebts, path]
+course: path
+tags:
+  - pali-canon
+  - ebts
+  - function
 ---
 
 A short anthology of texts from the Pali Canon framed by the Noble Eightfold Path. An excellent study guide.
