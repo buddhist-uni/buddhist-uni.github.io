@@ -15,8 +15,8 @@ layout: default
     <h2 class="author">Read by {% if reader %}<a href="{{ reader.url }}">{{ reader.title }}</a>{% else %}{{ page.reader }}{% endif %}</h2>
     {% endif %}
     {% assign translator = site.authors | where: "slug", page.translator | first %}
-    {% if translator and page.translator %}
-    <h3 class="translator">Translated by <a href="{{ translator.url }}">{{ translator.title }}</a></h3>
+    {% if page.translator %}
+    <h3 class="translator">Translated by {% if translator %}<a href="{{ translator.url }}">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}</h3>
     {% endif %}
         <p class="content_links">
         {% if page.external_url or page.drive_links.size > 0 %}
