@@ -13,5 +13,5 @@ tags:
   - dhammacakkappavattana
 ---
 
-A peaceful talk retelling the story of the *Dhammacakkappavattana* Sutta.
+A peaceful talk retelling the story of the *Dhammacakkappavattana Sutta*.
 
