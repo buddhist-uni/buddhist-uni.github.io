@@ -24,6 +24,7 @@ url: "https://buddhist-uni.github.io" # the base hostname & protocol for your si
 google_analytics: UA-159403467-1
 github_username:  buddhist-uni
 header_pages: [courses.md, library.md, blog.md, about.md]
+timezone: "Asia/Bangkok"
 
 # Build settings
 markdown: kramdown
