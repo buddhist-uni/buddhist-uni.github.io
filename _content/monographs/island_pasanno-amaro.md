@@ -15,7 +15,6 @@ tags:
   - function
   - philosophy
   - view
-  - pali-canon
   - thai-forest
   - chah
 ---

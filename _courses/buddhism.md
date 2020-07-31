@@ -31,6 +31,7 @@ Next, we listen to a couple Dhamma talks by two of my own dear teachers, giving 
 
 {% include inline_content.html category="av" slug="dhamma-advice_suchart" %}
 {% include inline_content.html category="av" slug="buddhism-intro_yuttadhammo" %}
+<br />
 
 ### Textbook
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
