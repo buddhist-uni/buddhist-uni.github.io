@@ -1,5 +1,5 @@
 ---
-title: "Meditation"
+title: "Buddhist Meditation"
 parents: [path]
 ---
 
