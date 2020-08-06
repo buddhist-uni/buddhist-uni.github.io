@@ -29,7 +29,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [The Buddhist Publication Society](http://www.bps.lk/library.php)
 * [Pacific World](https://pwj.shin-ibs.edu/)
 * [Journal of Global Buddhism](http://www.globalbuddhism.org/jgb/index.php/jgb/issue/archive)
-* [JIABS](https://journals.ub.uni-heidelberg.de/index.php/jiabs/index) ([mirror](https://poj.peeters-leuven.be/content.php?url=journal&journal_code=JIABS))
+* [The Journal of the International Association of Buddhist Studies](https://poj.peeters-leuven.be/content.php?url=journal&journal_code=JIABS) ([old site](https://journals.ub.uni-heidelberg.de/index.php/jiabs/index))
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [The Canadian Journal of Buddhist Studies](https://thecjbs.org/archive/)
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
@@ -41,6 +41,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings) 
 * [Buddhist Text Translation Society](http://www.buddhisttexts.org/ebooks-library.html)
 * [The Chan Center](http://chancenter.org/en/publication/free-books)
+* [The Hualin International Journal of Buddhist Studies](https://glorisunglobalnetwork.org/hualin-international-journal-of-buddhist-studies/e-journal/)
 * [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)
 * [Dharma Seed](https://dharmaseed.org/talks)
