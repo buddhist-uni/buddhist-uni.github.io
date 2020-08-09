@@ -6,7 +6,12 @@ external_url: "https://suttacentral.net/iti93/en/ireland"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC/view?usp=drivesdk"]
 course: function
-tags: [iti, nibbana, imagery, poetry, philosophy]
+tags:
+  - iti
+  - nibbana
+  - imagery
+  - canonical-poetry
+  - philosophy
 year: 1997
 ---
 

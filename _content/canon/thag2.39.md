@@ -8,7 +8,7 @@ course: imagery
 tags:
   - characters
   - thag
-  - poetry
+  - canonical-poetry
   - nuns
 year: 2018
 ---

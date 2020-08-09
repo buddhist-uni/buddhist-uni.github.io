@@ -7,7 +7,14 @@ formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_/view?usp=drivesdk"]
 status: featured
 course: imagery
-tags: [an, view, nibbana, philosophy, poetry, origination, hermeneutics]
+tags:
+  - an
+  - view
+  - nibbana
+  - philosophy
+  - canonical-poetry
+  - origination
+  - hermeneutics
 year: 2018
 ---
 

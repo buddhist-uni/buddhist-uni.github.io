@@ -12,7 +12,7 @@ tags:
   - tranquility-and-insight
   - nibbana
   - thag
-  - poetry
+  - canonical-poetry
   - chan-lit
 year: 2018
 ---

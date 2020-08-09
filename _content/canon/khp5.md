@@ -10,7 +10,7 @@ tags:
   - monastic
   - khp
   - kn
-  - poetry
+  - canonical-poetry
   - function
   - path
   - ethics

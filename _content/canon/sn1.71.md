@@ -7,7 +7,13 @@ formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1LTm9S1T8kaVN2VYZHEHq-XiNFa98_m7D"]
 status: featured
 course: imagery
-tags: [sn, poetry, problems, function, nonreturn, ethics]
+tags:
+  - sn
+  - canonical-poetry
+  - problems
+  - function
+  - nonreturn
+  - ethics
 year: 2000
 ---
 

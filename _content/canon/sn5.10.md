@@ -9,7 +9,7 @@ year: 2000
 course: philosophy
 tags: 
   - sn
-  - poetry
+  - canonical-poetry
   - mara
   - characters
   - nuns

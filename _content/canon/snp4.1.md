@@ -8,7 +8,7 @@ hidden_links: ["https://drive.google.com/file/d/1ajGxeZ-vPWsDVgSFTluS-HeZTUFhiOJ
 course: imagery
 tags:
   - snp
-  - poetry
+  - canonical-poetry
   - function
   - monastic
   - origination

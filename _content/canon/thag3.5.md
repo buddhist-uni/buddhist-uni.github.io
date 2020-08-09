@@ -6,7 +6,11 @@ translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1xKOrx3OKOmC_igKieFZZwyCTjaRh8xkn"]
 course: hindrances
-tags: [thag, lay, monastic, poetry]
+tags:
+  - thag
+  - lay
+  - monastic
+  - canonical-poetry
 year: 2018
 ---
 
