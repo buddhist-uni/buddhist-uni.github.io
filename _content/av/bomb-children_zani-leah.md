@@ -5,6 +5,7 @@ year: 2020
 external_url: "https://newbooksnetwork.com/leah-zani-bomb-children-life-in-the-former-battlefields-of-laos-duke-up-2019/"
 course: sea
 status: featured
+publisher: nbn
 tags:
   - america
   - war
