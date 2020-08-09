@@ -4,6 +4,7 @@ authors: [elverskog]
 external_url: "https://newbooksnetwork.com/johan-elverskog-the-buddhas-footprint-an-environmental-history-of-asia-u-penn-press-2020/"
 course: becon
 status: featured
+publisher: nbn
 tags:
   - academia
   - asia
