@@ -6,7 +6,7 @@ source_url: "https://suttacentral.net/snp1.2/en/silacara"
 course: imagery
 status: featured
 tags:
-  - poetry
+  - canonical-poetry
   - renunciation
   - monastic
   - death

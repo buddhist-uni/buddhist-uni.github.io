@@ -13,6 +13,7 @@ tags:
   - ebts
   - philosophy
   - poetry
+  - canonical-poetry
   - theravada
   - path
   - view

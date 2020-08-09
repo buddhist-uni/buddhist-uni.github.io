@@ -6,7 +6,7 @@ course: imagery
 tags:
   - renunciation
   - path
-  - poetry
+  - canonical-poetry
   - nibbana
 year: 2013
 ---

@@ -6,7 +6,7 @@ formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1couczIzgT5Qigh-PeIOvo4SBLvUy1OSh/view?usp=drivesdk"]
 course: imagery
 tags:
-  - poetry
+  - canonical-poetry
   - function
   - nibbana
   - tranquility-and-insight

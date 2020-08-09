@@ -9,7 +9,7 @@ tags:
   - ud
   - problems
   - view
-  - poetry
+  - canonical-poetry
   - nibbana
 year: 2008
 ---

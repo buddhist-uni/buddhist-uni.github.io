@@ -9,7 +9,7 @@ course: vipassana
 tags:
   - iti
   - nibbana
-  - poetry
+  - canonical-poetry
   - feelings
 year: 1997
 ---

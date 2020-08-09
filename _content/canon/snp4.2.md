@@ -5,9 +5,12 @@ external_url: "https://suttacentral.net/snp4.2/en/mills"
 translator: mills-laurence
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1YGRH1Gn8mCL9W-wPOVHJrTOlkU-QMxYL/view?usp=drivesdk"]
-course: poetry
+course: canonical-poetry
 status: featured
-tags: [snp, function]
+tags:
+  - snp
+  - function
+  - philosophy
 year: 2015
 ---
 

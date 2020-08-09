@@ -9,7 +9,7 @@ reason: "too short. doesn't add much"
 course: monastic
 tags:
   - ud
-  - poetry
+  - canonical-poetry
   - stream-entry
   - hindrances
   - function
