@@ -29,7 +29,7 @@ layout: default
                 {% capture format_link %}<a target="_blank" ga-event-value="{{ value }}" ga-event-label="drive.google.com/{{ page.path | split: '.' | first }}.{{ page.formats[i] }}" href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
                 {% assign format_links = format_links | push: format_link %}
             {% endfor %}
-            {% if page.external_url %}or get{% else %}Get{% endif %} the {{ format_links | array_to_sentence_string: "or" }} on <a target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}" href="https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r">Google Drive</a>{% unless page.source_url %}.{% endunless %}{% endif %}
+            {% if page.external_url %}or get{% else %}Get{% endif %} the {{ format_links | array_to_sentence_string: "or" }} on Google Drive{% unless page.source_url %}.{% endunless %}{% endif %}
         {% endif %}
         {% if page.source_url %}
         adapted from <a href="{{ page.source_url }}" ga-event-value="{{ value }}" target="_blank">this original</a>.
