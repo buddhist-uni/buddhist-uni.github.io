@@ -12,6 +12,7 @@ tags:
   - lay
   - prosperity
   - materialism
+  - indian
   - avadana
 year: 2020 
 ---
