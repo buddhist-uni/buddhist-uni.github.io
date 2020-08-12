@@ -1,5 +1,5 @@
 ---
-title: "The Āgamas"
+title: "Āgamas"
 parents: [ebts, mahayana-canon]
 ---
 
