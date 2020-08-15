@@ -12,7 +12,7 @@ volume: 1
 number: 2
 course: rebirth-stories
 tags:
-  - selling
+  - secular
   - american
   - american-mahayana
   - philosophy

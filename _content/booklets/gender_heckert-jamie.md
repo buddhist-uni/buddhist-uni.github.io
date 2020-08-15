@@ -10,6 +10,8 @@ course: ethics
 tags:
   - gender
   - activism
+  - people
+  - society
 year: 2012
 month: feb
 publisher: ias

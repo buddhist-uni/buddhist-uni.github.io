@@ -11,6 +11,7 @@ tags:
   - monastic
   - pedagogy
   - activism
+  - society
 year: 2012
 month: feb
 publisher: ias

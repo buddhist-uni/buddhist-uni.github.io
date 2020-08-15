@@ -8,6 +8,8 @@ tags:
   - philosophy
   - nibbana
   - dukkha
+  - psychology
+  - medicine
 course: path
 year: 2019
 journal: jbe

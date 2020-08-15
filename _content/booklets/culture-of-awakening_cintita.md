@@ -5,7 +5,11 @@ course: form
 external_url: "https://bhikkhucintita.files.wordpress.com/2014/04/sasana6x9withcover.pdf"
 year: 2014
 drive_links: ["https://drive.google.com/file/d/1zur07giMlXjhQhvc5ZLcE737t5IEpqxb/view?usp=drivesdk"]
-tags: [monastic, west]
+tags:
+  - monastic
+  - west
+  - buddhism
+status: featured
 ---
 
 > The Monastic Sangha is both training ground and dwelling place for the Noble Sangha, much like a university is both a training ground and a dwelling place for scholars.
