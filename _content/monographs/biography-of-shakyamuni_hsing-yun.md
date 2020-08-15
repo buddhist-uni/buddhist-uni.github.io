@@ -1,8 +1,8 @@
 ---
 title: "Biography of Shakyamuni Buddha"
 authors: [hsingyun]
-formats: [instructions]
-drive_links: ["https://docs.google.com/document/d/15HWz48ZECEgsTvs3-UsBBMCEMPB2cLf2NhGOnksoGGY/edit?usp=drivesdk"]
+source_url: "https://docs.google.com/document/d/15HWz48ZECEgsTvs3-UsBBMCEMPB2cLf2NhGOnksoGGY/edit?usp=drivesdk"
+drive_links: ["https://drive.google.com/file/d/13rWmO2smHcAg6Si6ndXEX4qVd5EWHUMa/view?usp=drivesdk"]
 year: 2013
 month: nov
 publisher: "Buddha's Light Publishing"
