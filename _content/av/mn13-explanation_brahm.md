@@ -9,6 +9,7 @@ course: philosophy
 tags:
   - lay
   - becon
+  - khanda
 year: 2007
 month: feb
 ---

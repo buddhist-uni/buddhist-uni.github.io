@@ -9,6 +9,9 @@ course: function
 tags:
   - an
   - lay
+  - wealth
+  - phenomenology
+  - philosophy
 year: 2018
 ---
 

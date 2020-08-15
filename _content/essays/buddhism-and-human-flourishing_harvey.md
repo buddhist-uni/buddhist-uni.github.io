@@ -7,7 +7,7 @@ year: 2013
 course: buddhism
 tags:
   - west
-  - selling
+  - secular
   - becon
   - engaged
   - function

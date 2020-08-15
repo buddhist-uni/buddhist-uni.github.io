@@ -7,7 +7,14 @@ source_url: "https://yuttadhammo.sirimangalo.org/2013/11/science-religion-and-cu
 year: 2013
 month: nov
 course: form
-tags: [theravada, selling]
+status: featured
+tags:
+  - theravada
+  - secular
+  - science
+  - philosophy-of-science
+  - society
+  - ideology
 ---
 
 An intriguing (re)definition of religion, science, and culture.
