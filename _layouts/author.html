@@ -15,6 +15,7 @@ layout: default
     {% assign contents = site.content | where_exp: "c", filter %}
     {% assign transcont = site.content | where: "translator", page.slug %}
     {% assign readcont = site.content | where: "reader", page.slug %}
+    {% assign editcont = site.content | where: "editor", page.slug %}
     <div>{% include content_list.html contents=contents orderby="year" %}</div>
     {% if readcont.size > 0 %}
     <h3>Readings:</h3>
@@ -23,6 +24,10 @@ layout: default
     {% if transcont.size > 0 %}
     <h3>Translations:</h3>
     <div>{% include content_list.html contents=transcont orderby="year" %}</div>
+    {% endif %}
+    {% if editcont.size > 0 %}
+    <h3>Edited:</h3>
+    <div>{% include content_list.html contents=editcont orderby="year" %}</div>
     {% endif %}
     </div>
   </div>
