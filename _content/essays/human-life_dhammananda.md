@@ -6,7 +6,10 @@ external_url: "https://www.dhammatalks.net/Books2/Bhante_Dhammananda_Human_Life.
 drive_links:
   - "https://drive.google.com/file/d/1snx3q4LTdBKjTxS_ebA7QUoEI2-kPeLr/view?usp=drivesdk"
 course: lay
-tags: [philosophy]
+tags:
+  - philosophy
+  - world
+  - origination
 year: 2007
 month: sep
 ---

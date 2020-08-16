@@ -11,6 +11,8 @@ tags:
   - abhidhamma
   - rebirth
   - vinaya-controversies
+  - medicine
+  - world
 ---
 
 A defense of abortion and IVF rights from the Buddhist perspective.

@@ -6,9 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1uLYdrMwDe-BsLFyb9_xC2qlKPM_B3H38
 course: imagery
 tags:
   - ud
-  - interfaith
-  - karma
-  - rebirth
+  - religion
+  - cosmology
   - philosophy
   - speech
 year: 2008
