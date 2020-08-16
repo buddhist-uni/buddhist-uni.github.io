@@ -9,6 +9,8 @@ course: animals
 tags:
   - power
   - nature
+  - natural-sciences
+  - biology
 year: 2020
 journal: nyrb
 ---

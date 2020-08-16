@@ -8,7 +8,7 @@ tags:
   - restlessness
   - progress
   - becon
-  - samsara
+  - world
   - ambulit
 ---
 

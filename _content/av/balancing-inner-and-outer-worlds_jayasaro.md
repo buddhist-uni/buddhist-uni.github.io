@@ -10,6 +10,7 @@ tags:
   - function
   - balance
   - daily-life
+  - world
 year: 2008
 month: jun
 ---
