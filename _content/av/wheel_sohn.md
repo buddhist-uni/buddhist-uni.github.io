@@ -13,6 +13,8 @@ tags:
   - music
   - nekkhamma
   - becon
+  - society
+  - world
 ---
 
 An incredible music video, perfectly capturing the world-weary feeling of *saṃvega*.

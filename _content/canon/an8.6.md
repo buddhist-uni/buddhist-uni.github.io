@@ -9,6 +9,7 @@ course: daily-life
 tags:
   - an
   - vipassana
+  - world
 year: 2000
 ---
 

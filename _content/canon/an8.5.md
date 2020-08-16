@@ -7,8 +7,8 @@ drive_links: ["https://drive.google.com/file/d/1MD3SvaIUKqew8BzyJBJ9f-R9pD8bsIkr
 course: nibbana
 tags:
   - an
-  - samsara
   - philosophy
+  - world
 year: 2000
 ---
 

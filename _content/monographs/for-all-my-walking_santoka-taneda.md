@@ -10,6 +10,7 @@ tags:
   - haiku
   - pastoralism
   - japan
+  - world
 year: 2003
 publisher: "Columbia UP"
 ---
