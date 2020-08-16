@@ -15,6 +15,7 @@ tags:
   - becon
   - society
   - world
+  - cosmology
 ---
 
 An incredible music video, perfectly capturing the world-weary feeling of *saṃvega*.

@@ -1,6 +1,6 @@
 ---
 title: Buddhism
+parents: [religion]
 ---
 
-The {% include tag-link.html text="religion" tag="religion" %} founded by the {% include tag-link.html text="Buddha" tag="buddha" %} in approximately the 5th century BCE in the Ganges River Valley.
-
+The religion founded by the {% include tag-link.html text="Buddha" tag="buddha" %} in approximately the 5th century BCE in {% include tag-link.html text="the Ganges River Valley." tag="setting" %}
