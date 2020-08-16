@@ -13,6 +13,9 @@ tags:
   - brahmavihara
   - metta
   - philosophy
+  - psychology
+  - emotions
+  - love
   - lay
   - sex
   - problems

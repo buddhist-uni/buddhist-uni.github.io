@@ -16,7 +16,7 @@ tags:
   - engaged
   - power
   - cruelty
-  - interfaith
+  - ideology
 ---
 
 In this essay, Judith Shklar (not a Buddhist) ponders the implications of placing cruelty first (as the Buddha did). She shows how this position stands at odds with both Christian piety and neoliberal apathy and carves out a more realistic humanism than either extreme.

@@ -12,8 +12,10 @@ status: featured
 tags:
   - integral-theory
   - methatheory
+  - philosophy-of-science
+  - communication
+  - ideology
   - engaged
-  - becon
   - ethics
 ---
 

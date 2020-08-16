@@ -17,6 +17,7 @@ tags:
   - education
   - hr
   - time
+  - society
 status: featured
 ---
 

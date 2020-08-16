@@ -9,6 +9,7 @@ tags:
   - anthropology
   - society
   - power
+  - world
 year: 2011
 publisher: "Melville House"
 ---
