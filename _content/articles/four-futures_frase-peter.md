@@ -2,6 +2,8 @@
 title: "Four Futures"
 authors: ["Peter Frase"]
 external_url: "https://jacobinmag.com/2011/12/four-futures"
+drive_links:
+  - "https://drive.google.com/file/d/15kMcMrh7VXeD1rKJQ9_ET8BganQOqzoA/view?usp=drivesdk"
 journal: "Jacobin"
 year: 2011
 month: dec
