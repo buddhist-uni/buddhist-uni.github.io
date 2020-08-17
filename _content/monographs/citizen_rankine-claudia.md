@@ -6,6 +6,7 @@ course: race
 tags:
   - america
   - poetry
+  - violence
 year: 2014
 publisher: "Graywolf"
 status: featured

@@ -4,8 +4,6 @@ authors:
   - "Stephen Hawking"
 course: physics
 tags:
-  - world
-  - science
   - physical-science
   - time
 year: 1988
