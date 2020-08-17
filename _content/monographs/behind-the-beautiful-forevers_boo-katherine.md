@@ -8,6 +8,7 @@ course: society
 status: featured
 tags:
   - world
+  - places
   - india
   - mumbai
   - people

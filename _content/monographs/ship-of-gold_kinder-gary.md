@@ -6,6 +6,7 @@ course: california
 tags:
   - ocean
   - things
+  - places
   - progress
   - greed
 year: 1998

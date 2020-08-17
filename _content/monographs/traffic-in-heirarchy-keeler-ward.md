@@ -6,6 +6,7 @@ publisher: hawaii
 status: featured
 course: sea
 tags:
+  - asia
   - burma
   - burmese
   - thailand

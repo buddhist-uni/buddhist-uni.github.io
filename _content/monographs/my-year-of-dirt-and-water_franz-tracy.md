@@ -17,6 +17,7 @@ tags:
   - pottery
   - yakimono
   - laywomen
+  - places
 status: featured
 ---
 
