@@ -10,7 +10,9 @@ course: death
 tags:
   - sn
   - imagery
-  - problems
+  - philosophy
+  - thought
+  - view
   - time
   - power
   - ethics

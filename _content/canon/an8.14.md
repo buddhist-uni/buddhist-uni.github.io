@@ -11,7 +11,7 @@ tags:
   - an
   - vinaya-studies
   - speech
-  - problems
+  - thought
   - imagery
 year: 2012
 ---

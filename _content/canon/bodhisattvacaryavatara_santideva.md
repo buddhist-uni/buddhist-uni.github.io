@@ -8,7 +8,6 @@ tags:
   - buddhism
   - cosmology
   - karma
-  - rebirth
   - bodhisattva
   - mahayana
   - mahayana-roots

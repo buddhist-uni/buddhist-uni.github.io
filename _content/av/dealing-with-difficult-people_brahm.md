@@ -11,7 +11,7 @@ course: function
 tags:
   - ethics
   - lay
-  - problems
+  - thought
   - daily-life
   - speech
 ---

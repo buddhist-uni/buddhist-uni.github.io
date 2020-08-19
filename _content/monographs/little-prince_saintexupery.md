@@ -10,6 +10,7 @@ status: featured
 tags:
   - underage
   - problems
+  - thought
   - origination
   - poetry
   - myth

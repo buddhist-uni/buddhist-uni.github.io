@@ -9,7 +9,7 @@ status: featured
 course: imagery
 tags:
   - an
-  - view
+  - thought
   - nibbana
   - philosophy
   - canonical-poetry

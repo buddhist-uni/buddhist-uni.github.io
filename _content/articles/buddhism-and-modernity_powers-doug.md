@@ -15,6 +15,7 @@ tags:
   - society
   - power
   - ethics
+  - philosophy
 ---
 
 > Freud in particular developed the concept that freedom means acting on one's desires. ... From a Buddhist standpoint, this notion is totally twisted

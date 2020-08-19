@@ -11,7 +11,6 @@ tags:
   - sangha
   - vinaya-studies
   - form
-  - problems
 ---
 
 Ajahn Sujato describes how the Buddhist monastic community functions and how its organizing principles and structure show us how to apply the Dhamma in practical situations.

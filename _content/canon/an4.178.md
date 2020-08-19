@@ -9,7 +9,7 @@ course: path
 tags:
   - an
   - arahat
-  - view
+  - emptiness
   - tranquility-and-insight
   - nibbana
 year: 2018

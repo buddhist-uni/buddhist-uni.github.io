@@ -10,7 +10,7 @@ tags:
   - thig
   - characters
   - monastic
-  - problems
+  - thought
   - upekkha
   - nuns
   - asubha

@@ -8,6 +8,7 @@ month: sep
 year: 2013
 course: lay
 tags:
+  - thought
   - problems
   - ethics
   - function

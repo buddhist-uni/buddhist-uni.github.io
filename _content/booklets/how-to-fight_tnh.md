@@ -8,7 +8,8 @@ tags:
   - ethics
   - conflict
   - engaged
-  - problems
+  - thought
+  - anger
 ---
 
 A short booklet of advice on how to handle frustration.

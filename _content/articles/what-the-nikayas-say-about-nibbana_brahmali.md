@@ -7,6 +7,8 @@ tags:
   - khanda
   - arahant
   - anatta
+  - vinyana
+  - emptiness
 course: nibbana
 year: 2009
 volume: 26

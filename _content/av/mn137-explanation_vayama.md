@@ -10,7 +10,7 @@ tags:
   - mn
   - vipassana
   - dukkha
-  - problems
+  - thought
 year: 2007
 month: nov
 ---
