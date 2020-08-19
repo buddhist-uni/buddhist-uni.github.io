@@ -9,10 +9,6 @@ year: 2000
 course: philosophy
 tags: 
   - sn
-  - canonical-poetry
-  - mara
-  - characters
-  - nuns
 ---
 
 > Why now do you assume ‘a being’?

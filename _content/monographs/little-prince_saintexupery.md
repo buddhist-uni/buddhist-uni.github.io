@@ -6,6 +6,7 @@ year: 1943
 month: apr
 publisher: "Reynal & Hitchcock"
 course: world
+status: featured
 tags:
   - underage
   - problems
