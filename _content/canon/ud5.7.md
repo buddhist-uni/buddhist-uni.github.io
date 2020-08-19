@@ -13,6 +13,7 @@ tags:
   - stream-entry
   - hindrances
   - function
+  - thought
 year: 2008
 ---
 

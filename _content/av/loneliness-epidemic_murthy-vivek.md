@@ -10,7 +10,7 @@ tags:
   - medicine
   - karma
   - becon
-  - problems
+  - thought
   - loneliness
 ---
 

@@ -17,6 +17,7 @@ tags:
   - theravada
   - path
   - view
+  - thought
   - ethics
   - problems
   - function

@@ -8,6 +8,7 @@ status: featured
 tags:
   - khanda
   - sankara
+  - view
   - music
   - cosmology
   - anicca

@@ -6,7 +6,13 @@ translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1570zuI_-p4mr0NtXfBI1ZGrCrC_SOxeg"]
 course: meditation
-tags: [an, hindrances, problems, ethics, becon]
+tags:
+  - an
+  - hindrances
+  - problems
+  - ethics
+  - becon
+  - thought
 year: 2018
 ---
 

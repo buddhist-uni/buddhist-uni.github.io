@@ -8,7 +8,8 @@ course: death
 tags:
   - ud
   - problems
-  - view
+  - thought
+  - emptiness
   - canonical-poetry
   - nibbana
 year: 2008

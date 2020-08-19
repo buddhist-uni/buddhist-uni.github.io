@@ -13,7 +13,7 @@ course: buddhism
 tags:
   - function
   - meditation
-  - problems
+  - thought
   - mindfulness
   - daily-life
   - world

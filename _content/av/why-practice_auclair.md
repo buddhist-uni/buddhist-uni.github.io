@@ -1,5 +1,5 @@
 ---
-title: "Why Practice"
+title: "Thoughts on Practice and Why We Do It"
 authors: [auclair]
 formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1TpdrHwCearTjnPhIrvwZEE82IuO4bou1/view?usp=drivesdk"]
@@ -13,6 +13,7 @@ tags:
   - pedagogy
   - problems
   - samatha
+  - thought
 ---
 
 A heartfelt and spellbinding talk on meditation practice and expectations.

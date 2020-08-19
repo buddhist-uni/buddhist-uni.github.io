@@ -13,6 +13,7 @@ tags:
   - philosophy
   - meditation
   - problems
+  - thought
 year: 1970
 publisher: Weatherhill
 ---

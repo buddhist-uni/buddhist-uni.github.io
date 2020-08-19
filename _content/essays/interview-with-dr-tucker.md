@@ -8,7 +8,7 @@ external_url: "https://wiswo.org/early-buddhism-2015/early-buddhism-20154/early-
 course: philosophy
 status: featured
 tags:
-  - karma
+  - cosmology
   - rebirth
   - west
   - academia

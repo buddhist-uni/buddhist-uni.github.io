@@ -6,7 +6,7 @@ course: epistemology
 tags:
   - nibbana
   - music
-  - doubt
+  - thought
   - philosophy
   - problems
   - renunciation

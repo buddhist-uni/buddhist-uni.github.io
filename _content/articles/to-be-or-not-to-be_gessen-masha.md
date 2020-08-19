@@ -9,7 +9,7 @@ year: 2018
 month: feb
 course: gender
 tags:
-  - sankara
+  - thought
   - karma
   - free-will
   - authoritarianism

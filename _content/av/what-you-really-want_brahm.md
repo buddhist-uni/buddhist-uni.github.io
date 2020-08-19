@@ -10,7 +10,7 @@ course: philosophy
 status: featured
 tags:
   - lay
-  - problems
+  - thought
 ---
 
 Ajahn Brahm tells us all the secrets of life: from how to find a partner to getting what you really want.

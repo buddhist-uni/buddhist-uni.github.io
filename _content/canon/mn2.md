@@ -12,6 +12,7 @@ tags:
   - ethics
   - vipassana
   - philosophy
+  - thought
   - dukkha
   - problems
   - daily-life

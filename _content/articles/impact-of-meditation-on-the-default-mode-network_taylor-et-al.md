@@ -15,15 +15,10 @@ course: meditation
 tags:
   - neuroscience
   - path
+  - thought
+  - sankara
 ---
 
 
 This study found that expert meditators show dramatically different connections in their [Default Mode Network](https://en.wikipedia.org/wiki/Default_mode_network). Buddhist practice is not meant to smother (or enlarge) any one part of the brain (e.g. the amygdala), but rather to create the kinds of enduring, structural changes as these researchers found. 
-
-
-
-
-
-
-
 

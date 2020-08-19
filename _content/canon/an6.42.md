@@ -11,6 +11,7 @@ tags:
   - an
   - meditation
   - problems
+  - thought
 year: 2018
 ---
 

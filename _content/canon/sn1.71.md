@@ -10,10 +10,11 @@ course: imagery
 tags:
   - sn
   - canonical-poetry
-  - problems
+  - thought
   - function
   - nonreturn
   - ethics
+  - anger
 year: 2000
 ---
 

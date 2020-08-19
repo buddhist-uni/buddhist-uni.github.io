@@ -13,6 +13,7 @@ tags:
   - psychology
   - american
   - philosophy
+  - thought
 year: 2007
 note: "presented at the Annual Meeting of the Neural Information Processing Society, Workshop for the Hierarchical Organization of Behavior"
 address: "Vancouver"

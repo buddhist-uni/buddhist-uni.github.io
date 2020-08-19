@@ -9,6 +9,7 @@ translator: geoff
 course: path
 tags:
   - problems
+  - philosophy
   - anapanasati
   - thai
   - thai-forest
