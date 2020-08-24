@@ -9,3 +9,5 @@ tags:
   - vinaya-studies
 ---
 
+> The present compilation brings together in English translation the most important Pali Vinaya texts dealing with the first rule in the *Sanghādisesa* section of the Bhikkhu Pātimokkha: the training rule on intentional emission of semen — one of the disciplinary rules most fundamental to [a bhikkhu's] training.
+
