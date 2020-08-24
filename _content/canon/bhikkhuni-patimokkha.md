@@ -1,6 +1,7 @@
 ---
 title: "The _Bhikkhuni Pātimokkha_"
 course: vinaya-pitaka
+slug: "pli-tv-bi-pm"
 status: featured
 tags:
   - monastic
