@@ -1,5 +1,5 @@
 ---
-title: "The Wheel Saṃyutta Nikāya Anthology"
+title: "Saṃyutta Nikāya Anthology Wheel"
 external_url: "https://www.bps.lk/olib/wh/wh318_Walshe_Samyutta-Nikaya-Anthology--Index.html"
 publisher: bps
 years: 1981–1984
