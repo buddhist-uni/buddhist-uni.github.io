@@ -1,9 +1,11 @@
 ---
 title: "Index of Suttas by Simile"
 external_url: "https://suttacentral.net/similes"
+source_url: "https://www.accesstoinsight.org/index-similes.html"
 course: imagery
 tags:
-  - suttas
+  - sutta
+  - view
   - hermeneutics
   - pedagogy
 ---

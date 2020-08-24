@@ -8,7 +8,7 @@ course: ebts
 tags: 
   - buddhism
   - pali-canon
-  - suttas
+  - sutta
   - philosophy
   - function
   - path
