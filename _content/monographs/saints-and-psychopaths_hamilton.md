@@ -5,11 +5,11 @@ authors:
 publisher: "Dharma Audio Network Associates"
 address: "San Jacinto"
 year: 1995
+course: new-age
 tags:
   - form
   - pedagogy
   - selling
-  - new-age
   - vinaya-studies
   - ethics
 external_url: "https://eudoxos.github.io/saints/html/index.html"

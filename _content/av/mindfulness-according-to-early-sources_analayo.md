@@ -12,7 +12,7 @@ tags:
   - satipatthana
   - mindfulness
   - academia
-  - suttas
+  - sutta
 status: featured
 year: 2012
 month: oct
