@@ -1,5 +1,6 @@
 ---
 title: "Analysis of the Bhikkhu-Pātimokkha: A translation of the *Mahā-Vibhaṅga* from the *Vinaya-Piṭaka*"
+slug: "pli-tv-bu-vb"
 authors: [suddhaso]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1Ad5XiF9HzL3wDGvMK9jxMZYXpP2RclQb/view?usp=drivesdk"]
