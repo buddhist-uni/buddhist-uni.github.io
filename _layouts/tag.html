@@ -46,6 +46,9 @@ layout: default
 {% capture content_list %}
 {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
 {% assign categories = site.data.content_categories %}
+{% if page.is_canon %}
+  {% assign categories = categories | where_exp: "c", "c != 'canon'" | push: "canon" %}
+{% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% for catslug in categories %}
   {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
@@ -55,7 +58,7 @@ layout: default
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
   {% if course_content.size > 0 or tag_content.size > 0 %}
-  <h3 id="{{ catslug }}">{{ category.title }}</h3>
+  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %}</h3>
   {% if course_content.size > 0 %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
