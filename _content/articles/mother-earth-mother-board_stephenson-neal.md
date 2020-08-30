@@ -11,6 +11,7 @@ journal: "Wired"
 status: featured
 course: world
 tags:
+  - communication
   - technology
   - internet
   - globalization
