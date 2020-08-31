@@ -15,6 +15,7 @@ tags:
   - economics
   - becon
   - class
+  - caste
   - craft
   - journalism
   - future

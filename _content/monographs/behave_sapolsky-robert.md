@@ -12,6 +12,7 @@ tags:
   - sankhara
   - emotions
   - society
+  - power
   - people
   - science
 ---

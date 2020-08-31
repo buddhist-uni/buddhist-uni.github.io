@@ -14,6 +14,7 @@ tags:
   - canadian
   - chan
   - world
+  - power
 ---
 
 People usually think that happiness comes from chasing after the senses. Ven Hong Ci gives a passionate argument against this default way of being in the world, and encourages us to guard our senses if we want real happiness. 
