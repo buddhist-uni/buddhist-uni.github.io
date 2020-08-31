@@ -18,6 +18,7 @@ tags:
   - hr
   - time
   - society
+  - power
 status: featured
 ---
 

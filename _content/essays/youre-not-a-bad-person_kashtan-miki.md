@@ -10,7 +10,7 @@ tags:
   - class
   - race
   - engaged
-  - privilege
+  - power
   - american
 ---
 

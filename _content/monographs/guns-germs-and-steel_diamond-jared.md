@@ -8,6 +8,7 @@ status: featured
 course: places
 tags:
   - society
+  - power
   - modernity
   - europe
   - americas

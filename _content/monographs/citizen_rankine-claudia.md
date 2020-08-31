@@ -2,11 +2,15 @@
 title: "Citizen: An American Lyric"
 authors:
   - "Claudia Rankine"
-course: race
+course: caste
 tags:
   - america
   - poetry
   - violence
+  - race
+  - people
+  - power
+  - society
 year: 2014
 publisher: "Graywolf"
 status: featured

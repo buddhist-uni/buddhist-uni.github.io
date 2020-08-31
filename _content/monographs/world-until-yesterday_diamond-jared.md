@@ -10,6 +10,7 @@ tags:
   - places
   - modernity
   - people
+  - power
   - tribalism
 year: 2012
 month: dec
