@@ -11,6 +11,8 @@ tags:
   - dana
   - lay
   - ethics
+  - cosmology
+  - thought
 year: 1998
 ---
 
