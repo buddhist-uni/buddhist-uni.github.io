@@ -123,7 +123,7 @@ And that is somewhat accurate of what we've covered so far. Buddhism claims no e
 >  
 *~ From [MN 79](https://suttacentral.net/mn79/en/sujato){:target="_blank" ga-event-value="0.25"}*
 
-In part II, we return to the Noble Eightfold Path, and to the teachings on transcending _all_ suffering.
+In part II, we finally turn to the Noble Eightfold Path, and the transcendant teachings.
 
 ##### Chapter 7
 
