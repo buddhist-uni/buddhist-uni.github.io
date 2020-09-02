@@ -1,6 +1,6 @@
 ---
 title: "What Work Is"
-authors: [levine-philips]
+authors: [levine-philip]
 external_url: "https://www.poetryfoundation.org/poems/52173/what-work-is"
 year: 1991
 course: ethics
