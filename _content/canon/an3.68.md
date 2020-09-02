@@ -13,6 +13,7 @@ tags:
   - philosophy
   - path
   - wise-attention
+  - thought
 ---
 
 What is the difference between greed, hatred, and delusion?

@@ -8,7 +8,7 @@ course: karma
 tags:
   - thag
   - setting
-  - class
+  - caste
   - characters
 year: 2014
 ---
