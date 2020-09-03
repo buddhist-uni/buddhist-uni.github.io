@@ -13,6 +13,7 @@ reason: "Copyrighted"
 tags:
   - anapanasati
   - focus
+  - mindfulness
   - visuddhimagga
   - concentration
 ---

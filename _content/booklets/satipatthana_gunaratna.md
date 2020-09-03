@@ -10,6 +10,7 @@ drive_links:
 course: meditation
 tags:
   - satipatthana
+  - mindfulness
   - lay
   - modernity
 year: 1963

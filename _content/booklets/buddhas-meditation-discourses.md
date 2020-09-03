@@ -7,6 +7,7 @@ month: oct
 address: München
 tags:
   - meditation
+  - mindfulness
   - sutta
 ---
 
