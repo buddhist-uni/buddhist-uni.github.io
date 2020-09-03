@@ -9,7 +9,7 @@ course: tranquility-and-insight
 tags:
   - an
   - imagery
-  - jhana
+  - samadhi
   - samatha
   - monastic
   - characters

@@ -8,7 +8,7 @@ course: imagery
 tags:
   - an
   - samatha
-  - jhana
+  - samadhi
 year: 2018
 ---
 

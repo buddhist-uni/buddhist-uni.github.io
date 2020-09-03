@@ -11,8 +11,12 @@ course: philosophy
 status: featured
 tags:
   - meditation
+  - mindfulness
   - path
   - vipassana
+  - samadhi
+  - thought
+  - problems
 year: 2003
 ---
 
