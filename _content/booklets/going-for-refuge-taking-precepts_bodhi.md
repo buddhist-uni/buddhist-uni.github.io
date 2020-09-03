@@ -12,6 +12,7 @@ tags:
   - form
   - vinaya-studies
   - ethics
+  - thought
 year: 1981
 series: wheel
 number: 282

@@ -7,7 +7,16 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk"]
 status: featured
 course: buddhism
-tags: [function, ethics, meditation, nibbana, philosophy, ebts, pali-canon, an, hermeneutics]
+tags:
+  - function
+  - ethics
+  - meditation
+  - nibbana
+  - philosophy
+  - ebts
+  - pali-canon
+  - an
+  - thought
 year: 2018
 ---
 

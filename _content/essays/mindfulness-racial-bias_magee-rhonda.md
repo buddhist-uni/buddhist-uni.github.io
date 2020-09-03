@@ -12,6 +12,7 @@ tags:
   - ethics
   - californian
   - mindfulness
+  - thought
 year: 2015
 month: may
 ---

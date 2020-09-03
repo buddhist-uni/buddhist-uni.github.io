@@ -10,7 +10,7 @@ drive_links:
 course: sutta
 tags:
   - sn
-  - ethics
+  - thought
   - path
 year: 1984
 publisher: bps

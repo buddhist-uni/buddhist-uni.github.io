@@ -10,6 +10,7 @@ tags:
   - mn
   - monastic
   - form
+  - thought
 year: 2018
 ---
 

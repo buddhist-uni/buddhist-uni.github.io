@@ -10,6 +10,7 @@ course: ethics
 tags:
   - form
   - lay
+  - thought
 ---
 
 On how to understand and hold the five precepts, through two common questions.

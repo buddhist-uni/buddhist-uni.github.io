@@ -15,7 +15,7 @@ tags:
   - form
   - function
   - vipassana
-  - ethics
+  - thought
   - karma
   - death
   - meditation

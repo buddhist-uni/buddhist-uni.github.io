@@ -11,6 +11,7 @@ tags:
   - buddhism
   - form
   - ethics
+  - thought
   - path
 ---
 

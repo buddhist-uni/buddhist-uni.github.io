@@ -16,6 +16,8 @@ tags:
   - engaged
   - effort
   - poetry
+  - view
+  - thought
 year: 720
 ---
 

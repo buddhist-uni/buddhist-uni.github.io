@@ -10,6 +10,7 @@ tags:
   - karma
   - nibbana
   - theravada
+  - origination
   - engaged
 year: 2015
 journal: jbe

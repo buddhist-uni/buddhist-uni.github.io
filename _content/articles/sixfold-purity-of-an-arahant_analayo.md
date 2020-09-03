@@ -13,7 +13,7 @@ tags:
   - path
   - nibbana
   - arahant
-  - ethics
+  - thought
 ---
 
 A thorough description of what makes someone fully enlightened, explaining how arahantship is the culmination and perfection of the path.

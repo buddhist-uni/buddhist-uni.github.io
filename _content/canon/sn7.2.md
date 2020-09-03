@@ -8,7 +8,6 @@ year: 2018
 course: imagery
 tags:
   - sn
-  - ethics
   - speech
   - dialogue
   - daily-life
