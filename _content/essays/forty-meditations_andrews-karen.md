@@ -10,6 +10,7 @@ course: meditation
 tags:
   - visuddhimagga
   - theravada
+  - mindfulness
   - kammatthana
 ---
 

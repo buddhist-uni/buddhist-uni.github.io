@@ -13,6 +13,7 @@ tags:
   - mbsr
   - nvc
   - path
+  - mindfulness
 year: 2019
 ---
 

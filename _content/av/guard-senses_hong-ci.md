@@ -10,6 +10,7 @@ course: function
 tags:
   - thought
   - meditation
+  - mindfulness
   - samatha
   - canadian
   - chan

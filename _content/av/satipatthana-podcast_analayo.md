@@ -10,6 +10,7 @@ month: sep
 course: meditation
 tags:
   - satipatthana
+  - mindfulness
   - pali-canon
   - tranquility-and-insight
 ---

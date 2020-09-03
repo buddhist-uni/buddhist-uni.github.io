@@ -8,6 +8,7 @@ course: meditation
 tags:
   - an
   - path
+  - mindfulness
   - brahmavihara
   - satipatthana
   - tranquility-and-insight

@@ -9,7 +9,7 @@ course: thought
 tags:
   - an
   - brahmavihara
-  - meditation
+  - daily-life
   - hindrances
   - ethics
 year: 2018

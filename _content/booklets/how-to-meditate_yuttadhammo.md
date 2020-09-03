@@ -11,7 +11,7 @@ tags:
   - path
   - function
   - vipassana
-  - satipatthana
+  - mindfulness
   - burmese
   - daily-life
 course: meditation

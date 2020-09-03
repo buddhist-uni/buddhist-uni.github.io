@@ -11,7 +11,7 @@ tags:
   - meditation
   - vipassana
   - khanda
-  - satipatthana
+  - mindfulness
   - path
 ---
 

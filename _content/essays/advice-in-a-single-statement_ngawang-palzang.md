@@ -13,6 +13,7 @@ tags:
   - dzogchen
   - nyingma
   - daily-life
+  - mindfulness
 year: 2015
 ---
 

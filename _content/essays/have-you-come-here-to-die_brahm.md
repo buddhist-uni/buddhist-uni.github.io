@@ -11,6 +11,7 @@ tags:
   - monastic
   - function
   - view
+  - mindfulness
 year: 2004
 status: featured
 ---

@@ -12,6 +12,7 @@ tags:
   - brahmavihara
   - nibbana
   - hindrances
+  - thought
 year: 2018
 ---
 

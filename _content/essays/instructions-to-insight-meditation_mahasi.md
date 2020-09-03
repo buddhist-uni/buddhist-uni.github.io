@@ -8,6 +8,7 @@ course: function
 tags:
   - meditation
   - vipassana
+  - mindfulness
   - path
   - burmese
 status: featured

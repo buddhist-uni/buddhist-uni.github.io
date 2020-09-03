@@ -9,6 +9,7 @@ course: function
 tags: 
   - path
   - meditation
+  - mindfulness
   - philosophy
   - american
 base_value: 1

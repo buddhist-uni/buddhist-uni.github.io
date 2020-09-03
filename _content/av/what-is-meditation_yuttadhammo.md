@@ -11,6 +11,7 @@ course: meditation
 tags:
   - function
   - path
+  - mindfulness
   - vipassana
 ---
 

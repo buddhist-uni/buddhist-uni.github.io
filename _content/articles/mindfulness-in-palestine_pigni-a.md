@@ -17,6 +17,7 @@ tags:
   - mbsr
   - problems
   - death
+  - mindfulness
 ---
 
 > When I first heard her story, I found myself wondering how on earth I could help a mother to overcome the grief of the loss of a son. Nothing gave Laila hope

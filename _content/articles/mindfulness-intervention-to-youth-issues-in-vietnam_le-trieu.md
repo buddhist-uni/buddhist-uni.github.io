@@ -17,6 +17,7 @@ tags:
   - vietnamese
   - pedagogy
   - function
+  - mindfulness
 ---
 
 Handicapped and at-risk Vietnamese youths share their appreciation and enthusiasm for a mindfulness meditation course.
