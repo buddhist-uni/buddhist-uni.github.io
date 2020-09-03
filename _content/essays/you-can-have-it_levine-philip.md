@@ -11,6 +11,7 @@ tags:
   - people
   - function
   - time
+  - thought
 ---
 
 > no one wakened or died,  

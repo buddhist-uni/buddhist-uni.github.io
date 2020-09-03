@@ -12,6 +12,7 @@ tags:
   - dialogue
   - communication
   - hermeneutics
+  - thought
 year: 1983
 month: oct
 ---

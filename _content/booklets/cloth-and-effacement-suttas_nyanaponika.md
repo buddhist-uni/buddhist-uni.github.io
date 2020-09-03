@@ -11,6 +11,7 @@ course: ethics
 tags:
   - meditation
   - stages
+  - thought
   - abhidhamma
 year: 1963
 series: wheel

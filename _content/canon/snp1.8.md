@@ -9,6 +9,7 @@ tags:
   - function
   - canonical-poetry
   - ethics
+  - thought
   - form
   - ebts
   - pali-canon

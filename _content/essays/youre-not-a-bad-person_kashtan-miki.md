@@ -12,6 +12,7 @@ tags:
   - engaged
   - power
   - american
+  - thought
 ---
 
 > The key is to focus on two distinctions: systems as distinct from individuals, and having privilege as independent of choosing how to engage with it.

@@ -8,7 +8,7 @@ month: dec
 year: 2016
 course: function 
 tags:
-  - ethics
+  - thought
   - meditation
   - samatha
   - canadian

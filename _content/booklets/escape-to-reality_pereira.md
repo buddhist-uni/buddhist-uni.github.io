@@ -12,7 +12,7 @@ tags:
   - nibbana
   - power
   - renunciation
-  - ethics
+  - thought
   - philosophy
 year: 1962
 series: wheel

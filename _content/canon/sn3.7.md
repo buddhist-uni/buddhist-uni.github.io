@@ -8,6 +8,7 @@ course: speech
 tags:
   - sn
   - ethics
+  - thought
   - lay
   - samvega
   - society

@@ -15,6 +15,7 @@ tags:
   - theravada
   - psychology
   - power
+  - thought
 year: 2004
 journal: jbe
 volume: 11

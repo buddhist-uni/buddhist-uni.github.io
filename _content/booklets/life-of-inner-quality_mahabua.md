@@ -16,6 +16,7 @@ tags:
   - thai
   - path
   - ethics
+  - thought
 status: featured
 year: 1989
 month: jun

@@ -12,6 +12,7 @@ tags:
   - path
   - philosophy
   - mind
+  - thought
 year: 1978
 series: wheel
 number: 259

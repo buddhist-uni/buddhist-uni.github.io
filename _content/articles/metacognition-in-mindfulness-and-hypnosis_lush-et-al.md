@@ -14,7 +14,7 @@ tags:
   - hypnosis
   - function
   - free-will
-  - intentions
+  - thought
   - metacognition
   - mindfulness
   - academia
