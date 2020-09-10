@@ -1,5 +1,5 @@
 ---
-title: "Exploring the Word of the Buddha: A Systematic Study of the Majjhima Nikāya"
+title: "A Systematic Study of the Majjhima Nikāya"
 external_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 authors:
   - bodhi

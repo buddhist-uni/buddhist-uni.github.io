@@ -12,4 +12,4 @@ number: 2
 year: 2003
 ---
 
-A series of six lectures on how to approach Buddhism, covering [The Kālāma Sutta AN 3:65](https://bodhimonastery.org/to-the-kalamas.html){:target="_blank" ga-event-value="0.2"} in addition to MN 60, 46, and 95.
+A series of six lectures on how to approach Buddhism, covering [The Kālāma Sutta](https://bodhimonastery.org/to-the-kalamas.html){:target="_blank" ga-event-value="0.2"} in addition to MN 60, 46, and 95.
