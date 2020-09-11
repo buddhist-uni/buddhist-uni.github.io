@@ -12,6 +12,6 @@ tags:
   - mn
 ---
 
-A Creative Commons licensed selection of suttas from Wisdom's celebrated translation, representing about a third of the full book.
+A Creative Commons licensed selection of suttas from [Wisdom's celebrated translation]({% link _content/monographs/mn_nyanamoli-bodhi.md %}), representing about a third of the full book.
 
-It's still highly recommended that you acquire the original monograph, as many important suttas are missing from this anthology and the endnotes and introductions are simply brilliant.
+It's still highly recommended that you get the monograph though, as many important suttas are missing from this anthology and the endnotes and introductions in the original are quite helpful.
