@@ -8,4 +8,4 @@ year: 2019
 course: mn
 ---
 
-A public domain translation of the Majjhima Nikāya into straightforward English, crafted using the translations on [SuttaCentral](https://suttacentral.net/mn){:target="_blank"}.
+A public domain translation of the Majjhima Nikāya into straightforward English, made from the translations on [SuttaCentral](https://suttacentral.net/mn){:target="_blank"}.

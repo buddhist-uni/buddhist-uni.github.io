@@ -7,7 +7,7 @@ drive_links:
 course: emptiness
 status: featured
 tags:
-  - mn
+  - ud
   - vipassana
   - nibbana
   - american
