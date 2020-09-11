@@ -4,7 +4,7 @@ authors: [nyanamoli, bodhi]
 external_url: "https://readingfaithfully.org/selections-from-the-middle-length-discourses-free-kindle-epub-mobi/"
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1q2Rx7ImjymcQXgG2-fil2UTYfi5UqZ6n/view?usp=drivesdk", "https://drive.google.com/file/d/1f_g5wzD0v10opZmyebMUh-pe-SAmvtls/view?usp=drivesdk"]
-year: 1995
+year: 2018
 from_book: mn_nyanamoli-bodhi
 status: featured
 course: sutta
