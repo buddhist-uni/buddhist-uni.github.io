@@ -1,0 +1,13 @@
+---
+title: "A Comparative Table of Dhammapada Verses"
+authors:
+  - anandajoti
+external_url: "https://bit.ly/3i4dWpA"
+course: dhp-north
+tags:
+  - dhp
+  - agama
+  - pali-language-research
+---
+
+A searchable table of Dhammapada verses in Pali together with their known Indic parallels.
