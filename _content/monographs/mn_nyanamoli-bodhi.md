@@ -10,6 +10,7 @@ tags:
   - ebts
   - pali-canon
   - sutta
+  - setting
   - philosophy
   - path
 status: featured

@@ -11,6 +11,7 @@ course: characters
 tags:
   - buddhism
   - form
+  - setting
   - ebts
   - theravada
   - pali-commentaries
