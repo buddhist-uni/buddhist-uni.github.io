@@ -5,6 +5,9 @@ authors:
 course: dn
 tags:
   - myth
+  - cosmology
+  - setting
+  - sutta
 year: 1987
 status: featured
 publisher: wisdom
