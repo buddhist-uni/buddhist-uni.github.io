@@ -1,7 +1,7 @@
 ---
 title: "Wisdom Develops Samādhi: A Guide to the Practice of the Buddha’s Meditation Methods"
 authors:
-  - mahabua
+  - boowa
 translator: panyavaddho
 external_url: "https://www.abhayagiri.org/books/440-wisdom-develops-samadhi"
 drive_links:
