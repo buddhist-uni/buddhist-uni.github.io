@@ -1,7 +1,7 @@
 ---
 title: "*Arahattamagga*, *Arahattaphala*: The Path to Arahantship"
 authors:
-  - mahabua
+  - boowa
 translator: dick
 external_url: "https://forestdhamma.org/2018/02/09/arahattamagga-arahattaphala-5/"
 drive_links:
