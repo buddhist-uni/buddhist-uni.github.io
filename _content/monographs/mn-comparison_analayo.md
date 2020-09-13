@@ -2,8 +2,7 @@
 title: "A Comparative Study of the *Majjhima-nikāya*"
 authors:
   - analayo
-publisher: "Dharma Drum Publishing Corporation"
-address: Taipei
+publisher: dharmadrum
 year: 2011
 course: mn
 tags:
