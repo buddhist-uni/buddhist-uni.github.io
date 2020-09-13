@@ -8,7 +8,7 @@ drive_links:
 course: nibbana
 tags:
   - mahayana-roots
-  - chinese-roots
+  - chan-roots
   - tibetan-roots
   - agama
 year: 1994
