@@ -20,3 +20,4 @@ number: 1
 
 A translation of MA Discourses 1–71.
 
+With contributions by Kin-Tung Yit, William Chu, Teng Weijen, Shi Chunyin, and Kuan Tse-fu.
