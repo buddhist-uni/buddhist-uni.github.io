@@ -12,7 +12,6 @@ tags:
   - philosophy
   - function
   - path
-  - meditation
   - ethics
 ---
 
