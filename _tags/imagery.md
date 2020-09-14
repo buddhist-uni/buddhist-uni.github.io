@@ -1,6 +1,6 @@
 ---
-title: "Imagery in the Early Buddhist Texts"
+title: "Imagery in the EBTs"
 parents: [ebts, philosophy]
 ---
 
-The similes, metaphors and diction of the early Canon.
+The similes, metaphors and diction of the early canon.
