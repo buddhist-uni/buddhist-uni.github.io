@@ -27,7 +27,7 @@ layout: default
 <div class="tag_desc">{{ content }}</div>
 
 {% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
-{% assign childtags = site.tags | where_exp: "t", cfilter %}
+{% assign childtags = site.tags | where_exp: "t", cfilter | sort: "title" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
     {% capture clink %}<a href="{{ child.url }}">{{ child.title }}</a>{% endcapture %}
