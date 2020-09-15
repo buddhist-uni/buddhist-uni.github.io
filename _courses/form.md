@@ -180,6 +180,10 @@ A few more words are also due on the subject of restraint, beyond the five prece
 {% include inline_content.html category="av" slug="pseudobuddhism_brahm" %}
 - Ajahn Brahm reminds us, in his light-hearted way, that for all the traditions and books, real knowledge comes from meditation (or, as Bhikkhu Cintita put it, the joke is passed on to make us laugh).
 
+{% include inline_content.html category="canon" slug="dedication_longchenpa" %}
+- It's common in many Buddhist cultures to end a meritorious event or auspicious occasion with a short dedication. Here is typical such prayer from the Tibetan Tradition… and from me 🙂
+
+
 {% include course_feedback.html course="The+Form(s)+of+Buddhism" %}
 
 {% include generic_further_reading.md %}
