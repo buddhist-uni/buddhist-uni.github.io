@@ -1,5 +1,5 @@
 ---
-title: "Contents and Structure of the Dīrghāgama of the (Mūla)Sarvāstivādins"
+title: "Contents and Structure of the *Dīrghāgama* of the *(Mūla)Sarvāstivādins*"
 authors:
   - hartmann-ju
 external_url: "https://epub.ub.uni-muenchen.de/21373/1/21373.pdf"
