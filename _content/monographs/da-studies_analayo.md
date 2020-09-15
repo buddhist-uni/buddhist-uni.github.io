@@ -7,7 +7,6 @@ publisher: dharmadrum
 course: agama
 tags:
   - da
-  - ebts
 drive_links: ["https://drive.google.com/file/d/1Mvy8EqCRWN1Hjeb2AAcQ9vPcph16Ol5w/view?usp=drivesdk"]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dastudies.pdf"
 ---
