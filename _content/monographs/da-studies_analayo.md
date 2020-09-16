@@ -1,5 +1,5 @@
 ---
-title: "Dīrgha Āgama Studies"
+title: "*Dīrgha-āgama* Studies"
 authors:
   - analayo
 year: 2017
