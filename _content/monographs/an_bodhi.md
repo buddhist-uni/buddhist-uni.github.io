@@ -7,6 +7,7 @@ year: 2012
 course: an
 tags:
   - thought
+  - theravada
 status: featured
 ---
 
