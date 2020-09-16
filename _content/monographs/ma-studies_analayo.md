@@ -1,5 +1,5 @@
 ---
-title: "Madhyama Āgama Studies"
+title: "*Madhyama-āgama* Studies"
 authors:
   - analayo
 year: 2012
