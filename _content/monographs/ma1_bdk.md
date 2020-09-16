@@ -8,8 +8,6 @@ year: 2013
 publisher: bdk
 course: ma
 tags:
-  - chan-roots
-  - mahayana-roots
   - view
 status: featured
 drive_links: ["https://drive.google.com/file/d/1FZcYR-2ZXWhAeqtDuE-ZPvK1lc2YZURV/view?usp=drivesdk"]
