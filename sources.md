@@ -32,6 +32,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [The Journal of the International Association of Buddhist Studies](https://poj.peeters-leuven.be/content.php?url=journal&journal_code=JIABS) ([old site](https://journals.ub.uni-heidelberg.de/index.php/jiabs/index))
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [The Canadian Journal of Buddhist Studies](https://thecjbs.org/archive/)
+* [International Journal of Dharma Studies](https://internationaljournaldharmastudies.springeropen.com/articles)
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
 * [The Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
