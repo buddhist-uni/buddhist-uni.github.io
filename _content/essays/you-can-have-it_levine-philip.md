@@ -14,7 +14,7 @@ tags:
   - thought
 ---
 
-> no one wakened or died,  
-no one walked the streets or stoked a furnace,  
-for there was no such year
+> I give you back 1948.  
+
+A poem about what time does to a person.
 
