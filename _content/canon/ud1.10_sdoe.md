@@ -2,6 +2,7 @@
 title: "Ud 1.10: Bāhiya"
 reader: doering
 external_url: "https://www.suttareadings.net/audio/ud.1.10.sdoe.mp3"
+formats: [mp3]
 drive_links:
   - "https://drive.google.com/file/d/1jgiwO0jZHfiI8K8NEN4k8LNrAeWXhMaW/view?usp=drivesdk"
 course: emptiness
