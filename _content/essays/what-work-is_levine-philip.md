@@ -15,6 +15,7 @@ tags:
   - problems
 ---
 
-> if you’re old enough to read this you know what  
-work is, although you may not do it.  
-Forget you. This is about waiting
+> Forget you. This is about waiting
+
+A poem which shakes 'work' from its masculine frame and recenters it, not on you, on your brother.
+
