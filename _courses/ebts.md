@@ -1,6 +1,9 @@
 ---
 title: The Early Buddhist Texts
 google_doc_id: 1JU0k437c4r-5Ug_n4N7iDZ6_9Tr2SvH78ftW2b6B00I
+feedback_id: "The+Early+Buddhist+Texts"
+description: "An introduction to the Buddhist Canon suitable for everyone based on Bhikkhu Bodhi’s popular anthology, *In The Buddha’s Words*."
+icon: "far fa-map fa-rotate-90"
 ---
 
 ## What are the Early Buddhist Texts?
@@ -97,6 +100,5 @@ We end the course with this word of advice:
 
 {% include content_box.html category="av" slug="in-line_yuttadhammo" %}
 
-{% include course_feedback.html course="The+Early+Buddhist+Texts" %}
+{% include course_feedback.html course= %}
 
-{% include generic_further_reading.md %}
