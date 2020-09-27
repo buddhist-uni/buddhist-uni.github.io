@@ -10,7 +10,7 @@ next_courses:
   - form
 next_course_descs:
   - "Dig deeper into the Buddha’s own words and learn how it is that we know them at all."
-  - "A guide to the heart of Dhamma, Buddhist philosophy and practice."
+  - "A guide into the heart of the Dhamma, Buddhist philosophy and practice."
   - "A history of the Sangha and what it means to be a Buddhist." 
 ---
 
