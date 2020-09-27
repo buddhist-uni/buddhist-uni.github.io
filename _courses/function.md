@@ -4,6 +4,20 @@ google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 feedback_id: "The+Function+of+Buddhism"
 description: "An introduction to the Buddhist practice, placing the meditative and ethical trainings in their broader developmental context."
 icon: "fas fa-user-slash"
+next_courses:
+  - ebts
+  - lay
+  - meditation
+  - philosophy
+  - ethics
+  - nibbana
+next_course_descs:
+  - "Read more about the gradual path in the Buddha's own words in this course taught by the one and only Bhikkhu Bodhi."
+  - "A closer look at the practicalities of living as a Buddhist householder."
+  - "In this course, we dive deeper into the Buddhist path and explain what makes mindfulness \"right.\""
+  - "This course continues our study of the fundamentals of Buddhist thought with an overview of \"Right View\" from the Theravada perspective."
+  - "Dive deeper into the theory behind the good life and how to approach morality as a Buddhist."
+  - "Notoriously difficult to explain, *nibbāna* is still a critical concept to understand as it orients our practice in the right direction.  In this class, we explore what _can_ be said about the unconditioned element."
 ---
 
 ## What is the Function of Buddhism?

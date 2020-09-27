@@ -24,7 +24,7 @@ layout: default
         </p>
     </div>
 
-    <h2>Further Reading</h2>
+    <h2 id="further-reading">Further Reading</h2>
     {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
     {% for ncslug in page.next_courses %}
       {% assign course = site.courses | where: "slug", ncslug | first %}
@@ -33,8 +33,8 @@ layout: default
           <h4 id="further-courses">Courses</h4>
           {% assign floobar = "already" %}
         {% endunless %}
-        <a href="{{ course.url }}"><i class="{{ course.icon }}"></i><strong>{{ course.title }}</strong></a>
-        <ul><li>{{ page.next_course_descs[forloop.index0] }}</li></ul>
+        <a class="nextcourselink" href="{{ course.url }}"><i class="{{ course.icon }}"></i><strong>{{ course.title }}</strong></a>
+        <div class="nextcoursedesc">{{ page.next_course_descs[forloop.index0] }}</div>
         {% assign all_content = all_content | where_exp: "c", "c.course != ncslug" %}
       {% endif %}
     {% endfor %}
