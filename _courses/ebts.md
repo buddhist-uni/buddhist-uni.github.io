@@ -4,6 +4,24 @@ google_doc_id: 1JU0k437c4r-5Ug_n4N7iDZ6_9Tr2SvH78ftW2b6B00I
 feedback_id: "The+Early+Buddhist+Texts"
 description: "An introduction to the Buddhist Canon suitable for everyone based on Bhikkhu Bodhi’s popular anthology, *In The Buddha’s Words*."
 icon: "far fa-map fa-rotate-90"
+next_courses:
+  - function
+  - mn
+  - pali-canon
+  - buddha
+  - characters
+  - imagery
+  - setting
+  - agama
+next_course_descs:
+  - "A deeper dive into the theory and practice of Buddhism."
+  - "If you've enjoyed studying the suttas with Bhikkhu Bodhi, this course is a natural continuation. We'll continue our methodical study of the suttas and their historicity by going thematically through half of the Middle Length Discourses. A very long course, suitable for casual study over a period of years, by the end of it you'll have an excellent foundation in Early Buddhism."
+  - "If you would like to develop a more independant reading of the Canon, this course deepens our text-critical study of the Pali with some fun and accessible sutta and vinaya material."
+  - "On the Buddha himself: his life, journey, and character."
+  - "In which we get to know the other extraordinary people appearing in the canon."
+  - "We explore the metaphors, words, and similes of the Early Buddhist Texts and begin to read the language of the suttas more closely in this highly recommended class."
+  - "In this course, we learn about the setting of the EBTs: ancient India at the time of the Buddha and how they understood their own place in the universe."
+  - "A deeper dive into comparative textual scholarship being done with the EBTs preserved in the Northern Traditions."
 ---
 
 ## What are the Early Buddhist Texts?

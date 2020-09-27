@@ -4,6 +4,26 @@ google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 feedback_id: "The+Form(s)+of+Buddhism"
 description: "An introduction to the history and religious aspects of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
 icon: "fas fa-vihara"
+next_courses:
+  - lay
+  - monastic
+  - function
+  - setting
+  - indian
+  - theravada
+  - mahayana
+  - pilgramage
+  - west
+next_course_descs:
+  - "Dive further into lay Buddhist practice. Find helpful advice, the \"Vinaya\" for the laity, and grapply with many thorny issues that arise for the Buddhist householder."
+  - "An introduction to monasticism for everyone--lay and monastic alike." 
+  - "What does the Buddhist life have to do with the path, anyway? How does the form support its function? Bhikkhus Cintita and Yuttadhammo guide us through these questions and more in this course introducing the heart of the Buddha Dharma."
+  - "Learn more about what ancient India was like at the time of the Buddha and how Buddhism took shape around those conditions."
+  - "The story of what happened to Buddhism after the Parinirvana."
+  - "Learn about the \"conservative\" Southern school."
+  - "An introduction to the Northern schools of Buddhism."
+  - "From Thai-style Tudong in America to the holy sites of India, this class takes us on a tour: part description, part how-to guide, this course will get you on your feet in no time!"
+  - "A short history of the Dharma in the Land of the Fork, and the complex cultural interactions that ensued in the shadows of empire."
 ---
 
 ## What is the Form of Buddhism?
