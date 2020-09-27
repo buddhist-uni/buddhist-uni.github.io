@@ -100,5 +100,3 @@ We end the course with this word of advice:
 
 {% include content_box.html category="av" slug="in-line_yuttadhammo" %}
 
-{% include course_feedback.html course= %}
-
