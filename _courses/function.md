@@ -1,6 +1,9 @@
 ---
 title: The Function of Buddhism
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
+feedback_id: "The+Function+of+Buddhism"
+description: "An introduction to the Buddhist practice, placing the meditative and ethical trainings in their broader developmental context."
+icon: "fas fa-user-slash"
 ---
 
 ## What is the Function of Buddhism?
@@ -202,12 +205,6 @@ In which we finally get to meditation!
 {% include inline_content.html category="av" slug="this-opportunity_yuttadhammo" %}
 - Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 
 
-
-{% include course_feedback.html course="The+Function+of+Buddhism" %}
-
-{% include generic_further_reading.md %}
-
----
 
 *Footnotes:*
 

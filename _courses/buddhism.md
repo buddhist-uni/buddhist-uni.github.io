@@ -1,6 +1,17 @@
 ---
 title: Buddhism 101
 google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
+feedback_id: "Buddhism+101" 
+description: "A general introduction to Buddhism suitable for everyone."
+icon: "fas fa-chalkboard-teacher"
+next_courses:
+  - ebts
+  - function
+  - form
+next_course_descs:
+  - "Dig deeper into the Buddha’s own words and learn how it is that we know them at all."
+  - "A guide to the heart of Dhamma, Buddhist philosophy and practice."
+  - "A history of the Sangha and what it means to be a Buddhist." 
 ---
 
 ## What is Buddhism?
@@ -144,17 +155,5 @@ I supplement the final chapters in Harvey on the recent history of Buddhism with
 
 - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
 **May your life thus be blessed!**
-
-{% include course_feedback.html course="Buddhism+101" %}
-
-## Further Reading
-
-There are three courses you can take next to deepen your study of the Triple Gem:
-
-**<i class="far fa-map fa-rotate-90"></i> [Buddha: The Early Texts]({% link _courses/ebts.md%})**: Dig deeper into the Buddha’s own words and learn how it is that we know them at all.
-
-**<i class="fas fa-user-slash"></i> [Dhamma: The Function of Buddhism]({% link _courses/function.md %})**: A guide into the heart of Buddhist practice.
-
-**<i class="fas fa-vihara"></i> [Sangha: The Form(s) of Buddhism]({% link _courses/form.md %})**: Rituals, history, and what it means to be a Buddhist. All the topics we glossed over quickly in this course get their due in this sequel on the external manifestations of Buddhism.
 
 

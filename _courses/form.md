@@ -1,6 +1,9 @@
 ---
 title: The Form(s) of Buddhism
 google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
+feedback_id: "The+Form(s)+of+Buddhism"
+description: "An introduction to the history and religious aspects of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
+icon: "fas fa-vihara"
 ---
 
 ## What is the Form of Buddhism?
@@ -184,6 +187,3 @@ A few more words are also due on the subject of restraint, beyond the five prece
 - It's common in many Buddhist cultures to end a meritorious event or auspicious occasion with a short dedication. Here is a typical such prayer from the Tibetan Tradition.
 
 
-{% include course_feedback.html course="The+Form(s)+of+Buddhism" %}
-
-{% include generic_further_reading.md %}
