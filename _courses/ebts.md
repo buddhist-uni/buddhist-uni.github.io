@@ -14,14 +14,14 @@ next_courses:
   - setting
   - agama
 next_course_descs:
-  - "A deeper dive into the theory and practice of Buddhism."
-  - "If you've enjoyed studying the suttas with Bhikkhu Bodhi, this course is a natural continuation. We'll continue our methodical study of the suttas and their historicity by going thematically through half of the Middle Length Discourses. A very long course, suitable for casual study over a period of years, by the end of it you'll have an excellent foundation in Early Buddhism."
-  - "If you would like to develop a more independant reading of the Canon, this course deepens our text-critical study of the Pali with some fun and accessible sutta and vinaya material."
+  - "The theory and practice of Buddhism, in contemporary words."
+  - "If you've enjoyed studying the suttas with Bhikkhu Bodhi, this course will be a natural continuation. We'll continue our methodical study of the suttas and their historicity through a long tour of half of the Middle Length Discourses."
+  - "If you would like to develop a more independant reading of the Canon, this course deepens our textual study with fun and accessible material from the sutta and vinaya pitakas."
   - "On the Buddha himself: his life, journey, and character."
   - "In which we get to know the other extraordinary people appearing in the canon."
   - "We explore the metaphors, words, and similes of the Early Buddhist Texts and begin to read the language of the suttas more closely in this highly recommended class."
   - "In this course, we learn about the setting of the EBTs: ancient India at the time of the Buddha and how they understood their own place in the universe."
-  - "A deeper dive into comparative textual scholarship being done with the EBTs preserved in the Northern Traditions."
+  - "An introduction to the comparative textual scholarship being done with the EBTs preserved by the Northern Traditions."
 ---
 
 ## What are the Early Buddhist Texts?

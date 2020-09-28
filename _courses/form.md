@@ -15,9 +15,9 @@ next_courses:
   - pilgramage
   - west
 next_course_descs:
-  - "Dive further into lay Buddhist practice. Find helpful advice, the \"Vinaya\" for the laity, and grapply with many thorny issues that arise for the Buddhist householder."
+  - "Dive further into lay Buddhist practice. Find helpful advice, the \"Vinaya\" for laity, and grapply with many thorny issues that may arise for the Buddhist householder."
   - "An introduction to monasticism for everyone--lay and monastic alike." 
-  - "What does the Buddhist life have to do with the path, anyway? How does the form support its function? Bhikkhus Cintita and Yuttadhammo guide us through these questions and more in this course introducing the heart of the Buddha Dharma."
+  - "What does the Buddhist life have to do with the path, anyway? How does the form support its function? Bhikkhus Cintita and Yuttadhammo guide us through these questions and more in this course introducing the heart of the Buddha-Dharma."
   - "Learn more about what ancient India was like at the time of the Buddha and how Buddhism took shape around those conditions."
   - "The story of what happened to Buddhism after the Parinirvana."
   - "Learn about the \"conservative\" Southern school."
