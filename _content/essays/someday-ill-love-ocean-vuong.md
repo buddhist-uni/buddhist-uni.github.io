@@ -10,9 +10,9 @@ tags:
   - sex
   - rebirth
   - origination
-  - khanda
   - poetry
   - ambulit
+  - world
 year: 2015
 ---
 
