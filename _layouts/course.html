@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
     {% assign tag = site.tags | where: "slug", page.slug | first %}
     {% if page.google_doc_id %}
-        <i>This course is also available <a href="https://docs.google.com/document/d/{{ page.google_doc_id  }}/edit?usp=sharing">as a Google Doc</a></i>
+        <i>This course is also available <a href="https://drive.google.com/open?id={{ page.google_doc_id }}">on Google Drive</a></i>.
     {% endif %}
   </header>
   {% if page.epigraph %}
@@ -15,7 +15,8 @@ layout: default
   {% endif %}
   {% capture toccontent %}
     {{ content }}
-
+    
+    {% if page.feedback_id %}
     <div class="feedback">
         <h2 id="Feedback">Feedback</h2>
         <p>
@@ -26,7 +27,9 @@ layout: default
             Your feedback is vital to making these courses good. Thank you!
         </p>
     </div>
+    {% endif %}
     
+    {% assign ctag = site.tags | where: "slug", page.slug | first %}
     {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
     {% capture furthercourses %}
     {% for ncslug in page.next_courses %}
@@ -42,6 +45,7 @@ layout: default
       {% endif %}
     {% endfor %}
     {% endcapture %}
+    {% unless ctag.is_canon %}
     {% assign categories = site.data.content_categories %}
     {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
     {% assign serieses = site.series | where_exp: "c", filter_exp %}
@@ -58,6 +62,7 @@ layout: default
         <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
       {% endif %}
     {% endfor %}
+    {% endunless %}
 
     {{ furthercourses }}
     or feel free to check out any of <a href="{% link courses.md %}">our University's other fine offerings</a>.
