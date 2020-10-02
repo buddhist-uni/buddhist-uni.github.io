@@ -4,6 +4,7 @@ google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 
 description: "A general introduction to Buddhism suitable for everyone."
 icon: "fas fa-chalkboard-teacher"
+time: 2
 next_courses:
   - ebts
   - function

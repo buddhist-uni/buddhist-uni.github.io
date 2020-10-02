@@ -4,6 +4,7 @@ google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 feedback_id: "The+Form(s)+of+Buddhism"
 description: "An introduction to the history and religious aspects of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
 icon: "fas fa-vihara"
+time: 2
 next_courses:
   - lay
   - monastic
