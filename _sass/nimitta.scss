@@ -240,6 +240,92 @@ div.similar_content_footer {
     margin-top: 26px;
 }
 
+// Course List Page
+h3.courselink {
+    margin-bottom: 0;
+}
+
+div.descrow {
+    display: flex;
+    width: 100%;
+    @include media-query($on-palm) {
+        display: initial;
+    }
+}
+
+div.ccredits {
+    text-align: center;
+    min-width: 40px;
+    margin: auto;
+    margin-right: 5px;
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+
+div.cdesc {
+    font-size: 110%;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    margin-left: 0px;
+    @include media-query($on-palm) {
+        font-size: 100%;
+        padding: 8px 20px;
+    }
+}
+
+div.cdesc p {
+  margin-bottom: 0px;
+}
+
+div.descrow div.cicon {
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 82px;
+    text-align: center;
+    margin-left: 16px;
+    font-size: 65px;
+    @include media-query($on-palm) {
+        float: left;
+        padding: 0 15px 0 0;
+    }
+}
+
+div.featuringrow {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: right;
+    @include media-query($on-palm) {
+        font-size: 96%;
+    }
+}
+
+div.featuringrow div {
+    padding: 10px;
+    @include media-query($on-palm) {
+        padding: 5px;
+    }
+}
+
+div.featuringrow div.bauthors {
+    max-width: 77%;
+}
+
+div.featuringrow div.flabel {
+    margin-left: 25px;
+    margin-bottom: auto;
+    @include media-query($on-palm) {
+        margin-left: 10px;
+    }
+}
+
+div.featuringrow div.lecturers {
+    min-width: 20%;
+}
+
 @import
     "frontpage"
 ;

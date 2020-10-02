@@ -3,6 +3,9 @@ title: The Function of Buddhism
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 feedback_id: "The+Function+of+Buddhism"
 description: "An introduction to the Buddhist practice, placing the meditative and ethical trainings in their broader developmental context."
+time: 2
+lecturers:
+  - yuttadhammo
 icon: "fas fa-user-slash"
 next_courses:
   - ebts

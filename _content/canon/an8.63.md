@@ -4,14 +4,14 @@ slug: "an.008.063"
 external_url: "https://suttacentral.net/an8.63/en/sujato"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1vU5Zd94h1gViRtZEs7YcCtY8QuhEn5KK"]
-course: meditation
+course: tranquility-and-insight
 tags:
   - an
   - path
   - mindfulness
   - brahmavihara
   - satipatthana
-  - tranquility-and-insight
+  - meditation
 year: 2018
 ---
 
