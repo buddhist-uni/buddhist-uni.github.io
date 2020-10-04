@@ -1,7 +1,7 @@
 ---
 title: "The *Tathāgata* in the *Majjhima Nikāya*"
 authors: [bodhi]
-source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
+external_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 formats: [MP3s]
 drive_links: ["https://drive.google.com/drive/folders/1dGZsmDDcIwfbgYQuzo3AB79dWgzwxkCN"]
 course: mn
