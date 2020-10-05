@@ -13,7 +13,7 @@ Until their sickness has been healed,
 May I become the doctor and the cure
 
 
-A free translation of chpter 3 from the
+A free translation of chapter 3 from the
 [_Bodhisattvacaryāvatāra_]({% link _content/canon/bodhisattvacaryavatara_santideva.md %})
 on joyfully taking hold of "bodhicitta."
 
