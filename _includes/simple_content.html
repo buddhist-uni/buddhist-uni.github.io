@@ -4,7 +4,7 @@
   {% if content.course %}
     {% assign course = site.courses | where: "slug", content.course | first %}
     {% if course %}
-        Featured in the course, "<a href="{{ course.url }}">{{ course.title }}</a>"
+        Featured in the course, "<a href="{{ course.url }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>"
     {% endif %}
   {% endif %}
 </em></p>
