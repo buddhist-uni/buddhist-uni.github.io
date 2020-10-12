@@ -1,5 +1,5 @@
 ---
-title: "MN38: Discussing the The Greater Discourse on the Destruction of Craving"
+title: "MN 38: Discussing the The Greater Discourse on the Destruction of Craving"
 authors:
   - brahmali
 external_url: "https://bswa.org/teaching/mn38-mahatanhasankhaya-sutta-the-greater-discourse-on-the-destruction-of-craving-with-ajahn-brahmali/"
