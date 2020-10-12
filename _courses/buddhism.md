@@ -32,6 +32,7 @@ This is a self-paced course, which is estimated to take about 6 weeks to complet
 ## Course Outline
 ### Introduction
 > “There are two conditions for the arising of right view. What two? The words of another and proper attention.” ~ [AN2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5){:target="_blank" ga-event-value="0.25"}
+{: .epigraph }
 
 {% include inline_content.html category="booklets" slug="buddha-and-his-dhamma_bodhi" %}
 - This work by Bhikkhu Bodhi gives a brief overview of the content for the class.
