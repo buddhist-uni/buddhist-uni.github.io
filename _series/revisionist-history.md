@@ -1,5 +1,7 @@
 ---
 title: "Revisionist History Podcast"
+authors:
+  - "Malcolm Gladwell"
 external_url: "http://revisionisthistory.com/"
 publisher: Pushkin
 years: 2016–2020
@@ -9,4 +11,5 @@ tags:
   - historiography
 ---
 
-A podcast by Malcolm Gladwell.
+A podcast revisiting the overlooked and misunderstood.
+

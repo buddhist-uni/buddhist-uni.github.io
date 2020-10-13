@@ -1,3 +1,3 @@
-{% assign content = include.content %}{% assign category = content.path | split: '/' %}{% assign category = category[1] %}
+{% assign content = include.content %}{% assign category = content.category %}
 {% include content_icon.html category=category %}
-<span class="simple_content_title"><a href="{{ content.url }}">{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if content.year %} ({{ content.year }}){% endif %}{% if content.authors.size > 0 or content.reader %} – {% include content_authors_string.html content=content %}{% endif %}</a></span>
+<span class="simple_content_title"><a href="{{ content.url }}">{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if content.year %} ({{ content.year }}){% elsif content.years %} (Series){% endif %}{% if content.authors.size > 0 or content.reader %} – {% include content_authors_string.html content=content %}{% endif %}</a></span>

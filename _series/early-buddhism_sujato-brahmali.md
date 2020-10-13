@@ -12,4 +12,5 @@ tags:
   - form
 ---
 
-This series of six day-longs held in 2014 serves as an excellent introduction to early Buddhism and how it differs from the later traditions.
+This series of six day-longs held in 2013 serves as an excellent introduction to early Buddhism.
+
