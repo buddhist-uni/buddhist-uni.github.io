@@ -11,3 +11,14 @@ layout: page
 <h4>In the library:</h4>
 {% assign series = site.content | where: "series", page.slug %}
 {% include numbered_content_list.html contents=series %}
+
+{% assign tags = '' | split: '' %}
+{% for t in page.tags %}
+  {% assign tag = site.tags | where: "slug", t | first %}
+  {% if tag %}
+    {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
+    {% assign tags = tags | push: taglink %}
+  {% endif %}
+{% endfor %}
+{% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}.</p>{% endif %}
+
