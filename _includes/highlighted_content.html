@@ -6,7 +6,7 @@
   {% if include.content.course %}
     {% assign course = site.courses | where: "slug", include.content.course | first %}
     {% if course %}
-        <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>"</em></div>
+        <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>"</em></div>
     {% endif %}
   {% endif %}
 </div>

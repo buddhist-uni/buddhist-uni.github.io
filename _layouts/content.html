@@ -70,7 +70,7 @@ layout: default
     {% if page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
         {% if course %}
-            <i>Featured in the course, "<a href="{{ course.url }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>."</i>
+            <i>Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>."</i>
         {% endif %}
     {% endif %}
     </p>

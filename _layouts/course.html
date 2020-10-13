@@ -4,12 +4,15 @@ layout: default
 <article class="course">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
     {% assign tag = site.tags | where: "slug", page.slug | first %}
     {% if page.google_doc_id %}
         <i>This course is also available <a href="https://docs.google.com/document/d/{{ page.google_doc_id  }}/edit?usp=sharing">as a Google Doc</a></i>
     {% endif %}
   </header>
+  {% if page.epigraph %}
+  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
+  {% endif %}
   {% capture toccontent %}
     {{ content }}
 
@@ -55,7 +58,7 @@ layout: default
     or check out <a href="{% link courses.md %}">our other courses</a> to continue your studies!
   {% endcapture %}
   <h1>Table of Contents</h1> 
-  {% include toc.html html=toccontent hmin=2 %}
+  {% include toc.html html=toccontent h_min=2 h_max=3 %}
 
   <div class="post-content">
     {{ toccontent }}
