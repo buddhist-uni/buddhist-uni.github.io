@@ -45,8 +45,7 @@
 }
 
 .frontpage div.footerbackground {
-    background-image: linear-gradient(white, #222);
-    background-image: url("/assets/imgs/monk_on_phone.jpg");
+    background-image: url("https://illeakyw.sirv.com/Images/monk_on_phone.jpg"), linear-gradient(white, #222);
     height: 1540px;
     max-width: 1540px;
     margin-left: auto;
