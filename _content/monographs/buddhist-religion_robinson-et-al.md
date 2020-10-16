@@ -5,7 +5,10 @@ edition: Fourth
 year: 1997
 publisher: Wadsworth
 course: form
-tags: [buddhism, philosophy]
+tags:
+  - buddhism
+  - mahayana
+  - philosophy
 status: featured
 ---
 
