@@ -3,13 +3,13 @@ title: "Zen Mind, Beginner's Mind"
 authors:
   - suzuki-s
 status: featured
-course: japanese
+course: chan
 tags:
   - buddhism
   - function
   - ambulit
+  - japanese
   - mahayana
-  - chan
   - philosophy
   - meditation
   - problems
