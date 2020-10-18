@@ -1,6 +1,6 @@
 ---
 title: "Cremated Like a King: The Funeral of the Buddha within the Ancient Indian Context"
-authors: ["Oskar von Hinüber"]
+authors: [hinuber-oskar-v]
 external_url: "https://icabs.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=135&item_no=1&page_id=15&block_id=18"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1dm-j8_z0f_TywasRqt0URstx0JJE8FHA/view?usp=drivesdk"]
