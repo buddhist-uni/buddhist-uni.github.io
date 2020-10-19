@@ -5,6 +5,10 @@ img {
     margin-right: auto;
 }
 
+.site-title {
+    max-width: calc(100% - 38px);
+}
+
 h5 {
     font-size: 1em;
     font-style: italic;
