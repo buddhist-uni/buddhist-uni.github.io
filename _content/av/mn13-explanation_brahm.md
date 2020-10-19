@@ -1,5 +1,5 @@
 ---
-title: "MN13: Discussing the Mahādukkhakkhandha Sutta"
+title: "MN 13: Discussing the Mahādukkhakkhandha Sutta"
 authors:
   - brahm
 external_url: "https://bswa.org/teaching/mn13-mahadukkhakkhanda-sutta-the-greater-discourse-on-the-mass-of-suffering-with-ajahn-brahm/"

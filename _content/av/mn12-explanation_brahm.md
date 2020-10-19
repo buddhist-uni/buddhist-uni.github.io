@@ -1,5 +1,5 @@
 ---
-title: "MN12: Discussing the Māhasīhanāda Sutta"
+title: "MN 12: Discussing the Māhasīhanāda Sutta"
 authors:
   - brahm
 external_url: "https://bswa.org/teaching/mn12-mahasihanada-sutta-the-great-discourse-on-the-lions-roar-with-ajahn-brahm/"

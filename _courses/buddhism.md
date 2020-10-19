@@ -27,7 +27,7 @@ The religion the Buddha founded is thus the set of contemplations, practices, an
 This course assumes English language proficiency.
 
 ### Time Commitment
-This is a self-paced course, which is estimated to take about 6 weeks to complete depending on your reading pace.
+This is a self-paced course, which is estimated to take a few months to complete depending on your reading pace.
 
 ## Course Outline
 ### Introduction
@@ -35,15 +35,17 @@ This is a self-paced course, which is estimated to take about 6 weeks to complet
 {: .epigraph }
 
 {% include inline_content.html category="booklets" slug="buddha-and-his-dhamma_bodhi" %}
-- This work by Bhikkhu Bodhi gives a brief overview of the content for the class.
+- This work by Bhikkhu Bodhi gives a brief overview of Buddhism and summarizes what we'll cover in this course.
+- Start here!
 
 ---
 
-Next, we listen to a couple Dhamma talks by two of my own dear teachers, giving us an introduction to Buddhism. What do you notice about these talks? What surprises you? What's interesting? Jot down whatever observations and questions you have after listening, and as you go through the course we'll refer back to these notes. 
+Next, we listen to a couple talks by two of my own dear teachers, giving us an introduction to Buddhism. 
 
 {% include inline_content.html category="av" slug="dhamma-advice_suchart" %}
 {% include inline_content.html category="av" slug="buddhism-intro_yuttadhammo" %}
-<br />
+
+What do you notice about these talks? What surprises you? What's interesting? Jot down whatever observations and questions you have after listening, and as we go through the course we'll refer back to these notes. 
 
 ### Textbook
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
@@ -70,12 +72,12 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 *Readings parallel to Ch 3–5 of Harvey*
 
-The next part of the class tackles the teachings. As this section is the primary focus of this course, it is the longest.
+The next part of the class tackles the Buddha's teachings. As this section is the primary focus of the course, it will be the longest.
 
 {% include content_box.html category="av" slug="enlightenment-is-the-highest-happiness_brahm" %}
 
 {% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-- The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of one of the world's most celebrated Buddhist teachers.
+- The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of these celebrated Buddhist teachers.
 
 #### Alternative Presentations of the Dhamma
 
