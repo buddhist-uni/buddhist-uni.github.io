@@ -16,5 +16,5 @@ tags:
 
 > I give you back 1948.  
 
-A poem about what time does to a person.
+A poem about what time can do to a person.
 
