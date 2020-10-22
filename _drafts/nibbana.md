@@ -2,7 +2,7 @@
 title: "Nibbāna: Perfect Bliss"
 google_doc_id: 1SSR6mG2xN7wuIEj1Fqs1pJFSfJGWjixdM9u22RED5nM
 feedback_id: "Nibb%C4%81na"
-icon: "fas fa-umbrella-beach"
+icon: "fas fa-fire-extinguisher"
 description: ""
 next_courses:
 next_course_descs:

@@ -1,11 +1,11 @@
 ---
-title: "Iti 43: Ardour"
-slug: "iti043"
+title: "Iti 34: Ardour"
+slug: "iti034"
 translator: ireland
 external_url: "https://suttacentral.net/iti34/en/ireland"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1lPhQ0p0arpSlflpl_-ruyV77igaTIAwf/view?usp=drivesdk"]
-course: path
+course: path 
 tags: [iti, ethics, meditation, nibbana]
 year: 1997
 ---

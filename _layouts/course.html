@@ -5,67 +5,13 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
-    {% assign tag = site.tags | where: "slug", page.slug | first %}
-    {% if page.google_doc_id %}
-        <i>This course is also available <a href="https://drive.google.com/open?id={{ page.google_doc_id }}">on Google Drive</a></i>.
-    {% endif %}
   </header>
   {% if page.epigraph %}
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
   {% endif %}
   {% capture toccontent %}
-    {{ content }}
-    
-    {% if page.feedback_id %}
-    <div class="feedback">
-        <h2 id="Feedback">Feedback</h2>
-        <p>
-            Congratulations on finishing the course!
-        </p><p>
-            Please take a moment to take
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepNkP2avoYW2wVFFV8p2aCcA1Jy90dstuPwN3x62Ns00CS3Q/viewform?usp=pp_url&entry.893674714={{ page.feedback_id }}" ga-event-value="0.01" target="_blank">the end of class survey</a>.
-            Your feedback is vital to making these courses good. Thank you!
-        </p>
-    </div>
-    {% endif %}
-    
-    {% assign ctag = site.tags | where: "slug", page.slug | first %}
-    {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
-    {% capture furthercourses %}
-    {% for ncslug in page.next_courses %}
-      {% assign course = site.courses | where: "slug", ncslug | first %}
-      {% if course %}
-        {% unless floobar %}
-          <h2 id="further-courses">Advanced Courses</h2>
-          {% assign floobar = "already" %}
-        {% endunless %}
-        <a class="nextcourselink" href="{{ course.url }}"><i class="{{ course.icon }}"></i><strong>{{ course.title }}</strong></a>
-        <div class="nextcoursedesc">{{ page.next_course_descs[forloop.index0] }}</div>
-        {% assign all_content = all_content | where_exp: "c", "c.course != ncslug" %}
-      {% endif %}
-    {% endfor %}
-    {% endcapture %}
-    {% unless ctag.is_canon %}
-    {% assign categories = site.data.content_categories %}
-    {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
-    {% assign serieses = site.series | where_exp: "c", filter_exp %}
-    {% assign all_content = all_content | where_exp: "c", filter_exp %}
-    <h2 id="further-reading">Further Reading</h2>
-    {% for catslug in categories %}
-      {% assign cat_content = all_content | where: "category", catslug %}
-      {% assign cat_serieses = serieses | where: "category", catslug %}
-      {% assign tagged_content = cat_serieses | concat: cat_content %}
-      {% if tagged_content.size > 0 %}
-        {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
-        {% assign category = site.pages | where_exp: "c", cat_filter | first %}
-        <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
-        <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
-      {% endif %}
-    {% endfor %}
-    {% endunless %}
-
-    {{ furthercourses }}
-    or feel free to check out any of <a href="{% link courses.md %}">our University's other fine offerings</a>.
+    {{ content }}  
+    {% include course_footer.html course=page %}
   {% endcapture %}
   <h1>Table of Contents</h1> 
   {% include toc.html html=toccontent h_min=2 h_max=3 %}
