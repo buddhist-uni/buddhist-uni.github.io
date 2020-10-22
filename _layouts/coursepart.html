@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% assign cslug = page.path | split: '/' %}
+{% assign cslug = cslug[1] %}
+{% assign course = site.courses | where: "slug", cslug | first %}
+{% capture f %}c.path contains '_courses/{{ cslug }}/'{% endcapture %}
+{% assign subcourses = site.courses | where_exp: "c", f | sort: "order" %}
+{% assign next = page.order | plus: 1 %}
+{% assign prev = page.order | minus: 1 %}
+{% assign next = subcourses | where: "order", next | first %}
+{% assign prev = subcourses | where: "order", prev | first %}
+<article class="coursepart">
+
+  <header class="post-header">
+    <h1 class="post-title"><i class="{{ course.icon }}"></i> {{ course.title | escape }}</h1>
+    <h2><a href="{{ course.url }}">Course Home</a> > {{ page.title }}</h2>
+    {% if prev %}
+      {% capture partn %}part {{ page.order }} of a course{% endcapture %}
+      <i>{{ course.part_header | replace: "part of a course", partn}} <a href="{{ prev.url }}">Back to part {{page.order | minus: 1}}</a>.</i>
+    {% endif %}
+  </header>
+  
+  {{ content }}
+
+  {% if next %}
+    <div class="continuecourse"><a href="{{ next.url }}">Continue to part {{ next.order }}, <i>{{ next.title }}</i>...</a></div>
+  {% else %}
+    {% include course_footer.html course=course %}
+  {% endif %}
+ </article>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% capture f %}c.path contains '_courses/{{ page.slug }}/'{% endcapture %}
+{% assign subcourses = site.courses | where_exp: "c", f | sort: "order" %}
+<article class="course">
+
+  <header class="post-header">
+    <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
+  </header>
+  {% if page.epigraph %}
+  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
+  {% endif %}
+  <h1>Table of Contents</h1> 
+  <ul>
+    <li><a href="#what-is">What is {{ page.title }}?</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    {% if page.lecturers %}<li><a href="#lectures">Lectures</a></li>{% endif %}
+    <li><a href="#textbook">Textbook</a></li>
+    <li>Course Outline<ul>
+    {% for c in subcourses %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}
+    </ul></li>
+  </ul>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  
+  {% assign next = subcourses | first %}
+  <div class="continuecourse"><a href="{{ next.url }}">Click here to begin the course</a></div>
+</article>
