@@ -67,7 +67,7 @@ collections:
      permalink: /:collection/:name
   courses:
      output: true
-     permalink: /:collection/:name
+     permalink: /:collection/:path
   tags:
      output: true
      permalink: /:collection/:name
@@ -93,6 +93,18 @@ defaults:
         type: "courses"
     values:
         layout: "course"
+  -
+    scope:
+        path: "_courses/*/"
+        type: "courses"
+    values:
+        layout: "coursepart"
+  -
+    scope:
+        path: "_courses/imagery/*"
+        type: "courses"
+    values:
+        layout: "imagerycoursepart"
   - 
     scope:
         path: ""
