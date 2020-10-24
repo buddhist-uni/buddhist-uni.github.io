@@ -10,6 +10,7 @@ tags:
   - characters
   - sa
   - agama
+  - pali-canon
 course: theravada
 year: 2010
 volume: 17
