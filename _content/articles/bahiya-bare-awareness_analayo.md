@@ -10,7 +10,7 @@ tags:
 course: meditation
 year: 2018
 volume: 19
-journal: "The Indian International Journal of Buddhist Studies"
+journal: iijbs
 ---
 
 > there is a place for "bare awareness" or "bare attention" within the early Buddhist scheme of meditation
