@@ -119,6 +119,11 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 {% include inline_content.html category="av" slug="drums-and-bells_qing-de" %}
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
+*Robinson Chapter 9: Korea and Vietnam*
+
+{% include inline_content.html category="articles" slug="faxians-account-of-anuradhapura_kim-haewon" %}
+- What does a Chinese monk's pilgrimage to Sri Lanka have to do with Korea?
+
 *Robinson Chapter 10: Japan*
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
