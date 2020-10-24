@@ -8,6 +8,9 @@ drive_links:
 course: imagery
 tags: [dn, buddha, indian, setting, iddhis]
 year: 2015
+journal: jocbs
+volume: 11
+pages: "9--24"
 ---
 
 > literalism, if not originating from artistic representations, would certainly have been encouraged by them.

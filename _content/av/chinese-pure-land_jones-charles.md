@@ -4,6 +4,7 @@ authors: ["Charles Jones"]
 source_url: "https://newbooksnetwork.com/charles-b-jones-chinese-pure-land-buddhism-understanding-a-tradition-of-practice-u-hawaii-press-2019/"
 drive_links:
   - "https://drive.google.com/file/d/180MfHKDs17-n30JwUToWzTYfzdLfyp1K/view?usp=drivesdk"
+formats: [m4a]
 course: mahayana
 status: featured
 tags:
