@@ -58,7 +58,7 @@ Bhante Yuttadhammo will be our lecturer for this class.
 
 {% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
 
-His [Los Angeles Talks](https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/) were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank" ga-event-value="10"} (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
+His Los Angeles Talks were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank" ga-event-value="10"} (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
 
 I have reordered and renumbered the lectures [in Google Drive](https://drive.google.com/drive/folders/1a6om_MKaiwvOHKUZMS-6pUEBAhAwtL06){:target="_blank" ga-event-value="1"} according to the chapters in “_Buddhist Life, Buddhist Path_” that they best correspond with:
@@ -82,13 +82,19 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 (Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk){:target="_blank" ga-event-value="0.15"})
 - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
+(Remember at this point to go and listen to lecture number 1.)
+
 ##### Chapter 2
+
+For "homework," please read chapter two of _Buddhist Life_ and:
 
 {% include content_box.html category="canon" slug="sn17.5" %}
 
 {% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
-##### Chapter 3
+(And then "attend" lecture number 2 here, etc.)
+
+##### Homework for Chapter 3
 
 {% include inline_content.html category="av" slug="five-precepts_jayasara" %}
 
@@ -122,7 +128,7 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
     1. [AN6.51](https://suttacentral.net/an6.51/en/sujato){:target="_blank" ga-event-value="0.2"}: “How does a mendicant get to hear a teaching they haven’t heard before?”
     1. [AN5.151](https://suttacentral.net/an5.151/en/sujato){:target="_blank" ga-event-value="0.2"}: “Someone with these five qualities is able to enter the sure path”
 
-This external factor, namely good spiritual friendship, is the final (and most important) of the external factors supporting the Buddhist Path, and so concludes our discussion of “Buddhist Life” and enters us onto the path.
+This external factor, namely good spiritual friendship, is the final (and most important) of the external factors supporting the Buddhist Path, and so concludes our discussion of “Buddhist Life” and enters us onto the path itself.
 
 #### Part 2: Buddhist Path
 
