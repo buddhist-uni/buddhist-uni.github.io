@@ -6,7 +6,22 @@ img {
 }
 
 .site-title {
-    max-width: calc(100% - 38px);
+    @include media-query($on-palm) {
+        margin-left: 48px;
+    }
+}
+
+.site-nav {
+    @include media-query($on-palm) {
+        right: initial;
+        left: $spacing-unit / 2;
+    }
+    label[for="nav-trigger"] {
+        float: left;
+    }
+    div.trigger a {
+        text-align: left;
+    }
 }
 
 h5 {
