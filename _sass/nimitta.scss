@@ -7,14 +7,16 @@ img {
 
 .site-title {
     @include media-query($on-palm) {
-        margin-left: 48px;
+        margin-left: 40px;
+        margin-right: -3px;
+        text-align: center;
     }
 }
 
 .site-nav {
     @include media-query($on-palm) {
         right: initial;
-        left: $spacing-unit / 2;
+        left: 11px;
     }
     label[for="nav-trigger"] {
         float: left;
