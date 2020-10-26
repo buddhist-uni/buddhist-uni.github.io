@@ -84,6 +84,9 @@ As you read through *Robinson*, please also consider the following:
 {% include inline_content.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
 - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
+{% include inline_content.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
+- While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
+
 *Parallel to Robinson chapter 3: “Development”*
 
 {% include inline_content.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
@@ -91,6 +94,9 @@ As you read through *Robinson*, please also consider the following:
 
 {% include inline_content.html category="papers" slug="venerated-objects-early-buddhism_harvey" %}
 - The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.
+
+{% include inline_content.html category="articles" slug="lotus-as-symbol_olson_carl" %}
+- One such object which became notably ubiquitous across Buddhist cultures is the lotus flower.  This article explores the ancient origins and meaning of this potent symbol.
 
 *Chapter 4: “The Rise of Mahayana”*
 
@@ -104,6 +110,9 @@ As you read through *Robinson*, please also consider the following:
 {% include content_box.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
 
 *After Chapter 6 of Robinson on “Vajrayana”*
+
+{% include inline_content.html category="articles" slug="mudras_tricycle" %}
+- Taking an important role during the later development of Buddhist art and esoterica, mudras such as the “Anjali” of respect are now ubiquitous in the Buddhist cultural sphere, and are nearly synonymous with Buddhism itself.
 
 {% include inline_content.html category="articles" slug="story-of-the-horse-king_appleton" %}
 - One story, five countries.

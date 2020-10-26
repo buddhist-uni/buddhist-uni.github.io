@@ -9,8 +9,12 @@ publisher: bps
 series: wheel
 number: 137
 address: Kandy
-course: imagery
-tags: [form, ancient-art]
+course: form
+tags:
+  - imagery
+  - ancient-art
+  - theravada
 ---
 
 > The _dhamma-cakka_, the ever moving Wheel of Law, is the most prominent symbol of the Buddhists.
+
