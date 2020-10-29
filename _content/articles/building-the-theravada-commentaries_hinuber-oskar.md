@@ -1,7 +1,7 @@
 ---
 title: "Building the Theravāda Commentaries: Buddhaghosa and Dhammapāla as Authors, Compilers, Redactors, Editors and Critics"
 authors:
-  - hinuber-oskar
+  - hinuber-oskar-v
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/23450/17206/"
 drive_links:
   - "https://drive.google.com/file/d/1TQ4C9KoPez1BS5rOb93xU8fPB0JYLvR6/view?usp=drivesdk"
