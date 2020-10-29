@@ -1,0 +1,27 @@
+---
+title: "The Two Traditions of Buddhism"
+---
+
+This month [the library]({% link library.md %}) took its first tentative steps towards covering the different forms of Buddhism, with new bibliographies on [Theravada]({% link _tags/theravada.md %}) and [Mahayana]({% link _tags/mahayana.md %}) Buddhism.
+
+From the South, I'd like to highlight:
+
+{% include content_box.html category="monographs" slug="modern-buddhist-masters_kornfield" %}
+{% include content_box.html category="canon" slug="mn26" %}
+{% include content_box.html category="av" slug="saving-buddhism_turner-a" %}
+
+And from the Northern schools of Buddhism, this month saw the addition of these two Tibetan gems:
+
+{% include content_box.html category="essays" slug="cultivate-concentration_mipham" %}
+{% include content_box.html category="essays" slug="from-the-oral-tradition-of-nyarong-terton" %}
+
+And lastly, this sutta, which both traditions should agree is worth reading again and again:
+
+{% include content_box.html category="canon" slug="mn22" %}
+
+As always, if you find any typos or problems with the site, have any questions or just want to say hi, feel free to drop me a line. I'd love to hear from you.
+
+Happy reading!  
+~ The Librarian  
+Than Khemarato  
+
