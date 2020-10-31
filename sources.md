@@ -46,7 +46,8 @@ In addition to the content I've featured on this site, you can find lots more at
 * [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)
 * [Dharma Seed](https://dharmaseed.org/talks)
-* [BuddhaDust](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
+* [BuddhaDust](http://buddhadust.net)
+  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [DhammaWiki](https://dhammawiki.com/index.php/Main_Page) 
 * [Abhidhamma.com](http://abhidhamma.com/)
