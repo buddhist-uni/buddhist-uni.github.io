@@ -3,7 +3,6 @@ title: SuttaCentral Voice
 authors: [lew-karl]
 external_url: "https://voice.suttacentral.net/scv/index.html#"
 tags:
-  - pali-canon
   - sutta
 ---
 
