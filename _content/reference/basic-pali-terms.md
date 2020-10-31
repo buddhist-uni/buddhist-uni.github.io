@@ -1,8 +1,6 @@
 ---
 title: "Basic Pāli Terminology"
-external_url: "https://suttacentral.net/terminology"
-drive_links:
-  - "https://drive.google.com/file/d/13bpnKzO4eH-mG5nkMf93KdK2fQ4MnYOx/view?usp=drivesdk"
+external_url: "https://www.accesstoinsight.org/glossary.html"
 course: pali-canon
 tags:
   - pali-language
