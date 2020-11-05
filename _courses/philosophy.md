@@ -2,7 +2,7 @@
 title: "An Introduction to Buddhist Philosophy"
 google_doc_id: 1LpE-laVkwxtBGk8uwpWsFJ8DnRdQvAoqOzjSme9EOvA
 feedback_id: "Intro+to+Buddhist+Philosophy"
-description: "An introduction to Buddhist Philosophy for students starting to feel comfortable reading the suttas. Primarily based on the Theravada orthodoxy, the class will include some additional material to round out its presentation."
+description: "An introduction to Buddhist Philosophy for students starting to feel comfortable reading the suttas. Primarily based on the Theravada school, the class will include some additional material to round out its presentation."
 time: 3
 icon: "fas fa-chess-queen"
 lecturers:
