@@ -6,7 +6,7 @@ alternate_url: "http://www.accesstoinsight.org/lib/authors/mahasi/progress.html"
 external_url: "https://www.bps.lk/olib/bp/bp504s_Mahasi_Progress-of-Insight.pdf"
 year: 1994
 drive_links: ["https://drive.google.com/file/d/1EJnZeldi0Qv9jArDPph0uERSPUDiv_Zf/view?usp=drivesdk"]
-course: nibanna
+course: nibbana
 tags:
   - stages
   - path
