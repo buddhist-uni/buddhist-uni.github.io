@@ -42,6 +42,10 @@ h5 {
     font-style: italic;
 }
 
+.nomarginbottom {
+    margin-bottom: 0px;
+}
+
 $new-tab-icon-size: 0.95em;
 a[target="_blank"]:after {
     font-family: 'FontAwesome';

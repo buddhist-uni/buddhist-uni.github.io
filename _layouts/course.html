@@ -6,16 +6,17 @@ layout: default
   <header class="post-header">
     <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
   </header>
-  {% if page.epigraph %}
-  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
-  {% endif %}
-  {% capture toccontent %}
+ {% capture toccontent %}
     {{ content }}  
     {% include course_footer.html course=page %}
   {% endcapture %}
   <h1>Table of Contents</h1> 
   {% include toc.html html=toccontent h_min=2 h_max=3 %}
 
+  {% if page.epigraph %}
+  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
+  {% endif %}
+ 
   <div class="post-content">
     {{ toccontent }}
   </div>

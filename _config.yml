@@ -99,6 +99,7 @@ defaults:
         type: "courses"
     values:
         layout: "coursepart"
+        slug: "course parts don't get unique slugs"
   -
     scope:
         path: "_courses/imagery/*"
