@@ -49,7 +49,7 @@ Buddhist Philosophy is thus the way of thinking which leads beyond thinking.
  
 ## Prerequisites
 
-This course assumes some familiarity with [the purpose of Buddhism]({% link _courses/function.md %}. Prior comfort with [the Early Buddhist Texts]({% link _courses/ebts.md %}) is not required, though may be helpful.
+This course assumes some familiarity with [the purpose of Buddhism]({% link _courses/function.md %}). Prior comfort with [the Early Buddhist Texts]({% link _courses/ebts.md %}) is not required, though may be helpful.
 
 ## Lectures
 
@@ -100,6 +100,7 @@ We start the course proper by talking about the founder and central figure of Bu
 
 {% include inline_content.html category="canon" slug="mn26" %}
 - The Buddha's autobiography: He gives the bhikkhus a long account of his own quest for enlightenment from the time of his life in the palace up to the transmission of the Dhamma to his first five disciples.
+- Don't worry if this sutta is a bit difficult to read. We'll cover the suttas enough throughout this course that you'll get the hang of reading them soon enough.
 
 {% include inline_content.html category="articles" slug="cosmology-and-meditation_gethin" %}
 - Rupert Gethin gives us a way of reading Buddhist mythology as a guide to the terrain of meditation.
@@ -109,7 +110,7 @@ We start the course proper by talking about the founder and central figure of Bu
 
 #### Lecture
 
-[BB-001_The_Buddha.mp3](https://drive.google.com/file/d/1vf43WM6V6DDSZLB_JUV9773XW5QyC0wU/view?usp=drivesdk){:target="_blank" ga-event-value="0.4"} - Bhikkhu Bodhi introduces us to the cosmology of Buddhism and the wonderous appearance of a Buddha in the world.
+<i class="fas fa-volume-up"></i> [BB-001_The_Buddha.mp3](https://drive.google.com/file/d/1vf43WM6V6DDSZLB_JUV9773XW5QyC0wU/view?usp=drivesdk){:target="_blank" ga-event-value="0.4"} - Bhikkhu Bodhi introduces us to the cosmology of Buddhism and the wonderous appearance of a Buddha in the world.
 
 #### Sutta Spotlight
 
@@ -143,7 +144,7 @@ The very core of Buddhist Philosophy, this week we introduce the Buddha’s diag
 
 #### Lecture
 
-[BB-002_Four_Noble_Truths.mp3](https://drive.google.com/file/d/1-BJNwJOJHbYD2Dx--0E4RFpyuWYJO-KW/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi gives a thorough treatment of suffering and introduces us to the five aggregates.
+<i class="fas fa-volume-up"></i> [BB-002_Four_Noble_Truths.mp3](https://drive.google.com/file/d/1-BJNwJOJHbYD2Dx--0E4RFpyuWYJO-KW/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi gives a thorough treatment of suffering and introduces us to the five aggregates.
 
 #### Sutta Spotlight
 
@@ -190,7 +191,7 @@ The five aggregates of body and mind that we cling to as constituting a “self�
 
 #### Lecture
 
-[BB-003_Nature_of_Existence.mp3](https://drive.google.com/file/d/17mDxe2bIwRNymm5XIsCihNPwz6v_LBV8/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi gives a detailed analysis of the five aggregates and three characteristics.
+<i class="fas fa-volume-up"></i> [BB-003_Nature_of_Existence.mp3](https://drive.google.com/file/d/17mDxe2bIwRNymm5XIsCihNPwz6v_LBV8/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi gives a detailed analysis of the five aggregates and three characteristics.
 
 {% include inline_content.html category="av" slug="wisdom_yuttadhammo" %}
 - This is all great theory, but how do we actually *see* it? Bhante Yuttadhammo gives a very brief introduction to the four foundations of mindfulness: the way to experience the five aggregates directly.
@@ -247,7 +248,7 @@ With that as a way of introduction, we're perhaps ready to read this week's home
 
 #### Lecture
 
-[BB-004_Dependent_Origination.mp3](https://drive.google.com/file/d/1MI7Yvqg5F-u9asjhrA4BM76LhGiqAocm/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi teaches the traditional analysis of Dependent Arising. 
+<i class="fas fa-volume-up"></i> [BB-004_Dependent_Origination.mp3](https://drive.google.com/file/d/1MI7Yvqg5F-u9asjhrA4BM76LhGiqAocm/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi teaches the traditional analysis of Dependent Arising. 
 
 See also: 
 {% include inline_content.html category="essays" slug="when-does-human-life-begin_brahm" %}
@@ -292,7 +293,7 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 
 #### Lecture
 
-[BB-005_Rebirth_and_Karma.mp3](https://drive.google.com/file/d/1SP_qNBg8pnLkVs69J9pMfS2kLoaFwttm/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi gives a detailed explanation of rebirth and kamma according to the Theravada Abhidhamma.
+<i class="fas fa-volume-up"></i> [BB-005_Rebirth_and_Karma.mp3](https://drive.google.com/file/d/1SP_qNBg8pnLkVs69J9pMfS2kLoaFwttm/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi gives a detailed explanation of rebirth and kamma according to the Theravada Abhidhamma.
 
 {% include inline_content.html category="essays" slug="rebirth-and-the-inbetween_sujato" %}
 - Ajahn Sujato corrects the rigid (read: erroneous) Theravada rejection of the bardo — the time between lives — giving justifications for it and some of his own thoughts on rebirth.
@@ -342,7 +343,7 @@ We open the week with some suttas from other collections than the MN, which Bhik
 
 #### Lecture
 
-[BB-006_Nibbana.mp3](https://drive.google.com/file/d/1XXNh11FJSZcPVBSX-H9eP586u86E3EoD/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi discusses the philosophical implications of the doctrine of Nibbāna drawn out in the Theravada Abhidhamma
+<i class="fas fa-volume-up"></i> [BB-006_Nibbana.mp3](https://drive.google.com/file/d/1XXNh11FJSZcPVBSX-H9eP586u86E3EoD/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi discusses the philosophical implications of the doctrine of Nibbāna drawn out in the Theravada Abhidhamma
 
 #### Sutta Spotlight
 
@@ -375,7 +376,7 @@ This week we introduce the path of practice which leads to the state of mental p
 
 #### Lecture
 
-[BB-007_Eightfold_Path.mp3](https://drive.google.com/file/d/1fvQuvAiXNoLH3wFzMQJkZd-cyZC3Eut9/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi explains the middle way, from its mundane form to the supramundane version which delivers the yogi to nibbāna.
+<i class="fas fa-volume-up"></i> [BB-007_Eightfold_Path.mp3](https://drive.google.com/file/d/1fvQuvAiXNoLH3wFzMQJkZd-cyZC3Eut9/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi explains the middle way, from its mundane form to the supramundane version which delivers the yogi to nibbāna.
 
 #### Sutta Spotlight
 
@@ -406,7 +407,7 @@ Formal mind training is of course the hallmark of Buddhism. This course though i
 
 #### Lecture
 
-[BB-008_Meditation.mp3](https://drive.google.com/file/d/10c36EY-72BEV8xvaYsv7jiCRoQEX3xt7/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi explains the theory surrounding meditation practice.
+<i class="fas fa-volume-up"></i> [BB-008_Meditation.mp3](https://drive.google.com/file/d/10c36EY-72BEV8xvaYsv7jiCRoQEX3xt7/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} - Bhikkhu Bodhi explains the theory surrounding meditation practice.
 
 
 #### Sutta Spotlight
@@ -439,7 +440,7 @@ Zooming out from the individual training, Buddhist philosophy (contrary to popul
 
 #### Lecture
 
-[BB-009_Social_Teachings_of_the_Buddha.mp3](https://drive.google.com/file/d/1AGk4axpE3UDZNTjTbCciNDtO-cZCvVZV/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi stresses that the Buddha's teachings were not pessimistic or world-denying but rather teach us how to improve conditions in our present life.
+<i class="fas fa-volume-up"></i> [BB-009_Social_Teachings_of_the_Buddha.mp3](https://drive.google.com/file/d/1AGk4axpE3UDZNTjTbCciNDtO-cZCvVZV/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - Bhikkhu Bodhi stresses that the Buddha's teachings were not pessimistic or world-denying but rather teach us how to improve conditions in our present life.
 
 
 #### Sutta Spotlight
@@ -465,7 +466,7 @@ The course began with the first refuge (the Buddha) and now, after explaining th
 
 #### Lecture
 
-[BB-010_The_Sangha.mp3](https://drive.google.com/file/d/1M_WCHHB3guPNAwF_sem_PKpHL4bSCzvM/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - The Bhikkhu versus the Ariya Sangha and why it matters.
+<i class="fas fa-volume-up"></i> [BB-010_The_Sangha.mp3](https://drive.google.com/file/d/1M_WCHHB3guPNAwF_sem_PKpHL4bSCzvM/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"} - The Bhikkhu versus the Ariya Sangha and why it matters.
 
 {% include inline_content.html category="essays" slug="bhikkhuni-order-reestablished_bodhi" %}
 - Since this talk was recorded, a method for reestablishing the Theravada Bhikkhuni order was successfully executed. These women's ordinations have yet to be fully recognized by the governments of Sri Lanka, Burma or Thailand but Bhikkhu Bodhi himself has changed his mind on the issue, as he discusses in this short letter.
