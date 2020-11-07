@@ -1,5 +1,7 @@
 ---
 title: "Taṇhā — Craving"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 2
 description: "Literally “thirst,” <i>taṇhā</i> is our addiction to worldly, sensual pleasures: the primary mental disease we are trying to overcome."
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Upādāna – Grasping"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 14
 description: "We grasp to the limited things of the world out of fear of falling, not realizing that it's the attachment that is hurting us."
 ---

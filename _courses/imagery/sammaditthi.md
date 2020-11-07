@@ -1,6 +1,8 @@
 ---
 title: "Sammādiṭṭhi - Right View"
 order: 16
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 description: ""
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: "Conclusion"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 26
 description: That's enough, venerable sir — what you have done, what you have offered. ~ <a href="https://www.accesstoinsight.org/tipitaka/sn/sn41/sn41.004.than.html" target="_blank" ga-event-value="0.4">SN 41.4</a>
 ---

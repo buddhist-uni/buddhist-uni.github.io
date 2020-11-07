@@ -1,5 +1,7 @@
 ---
 title: "Thīnamiddha — Sloth and Torpor"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 5
 description: "A lazy person will find any excuse to slack off and not strive for liberation."
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Upekkhā — Equanimity"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 11
 description: "The culmination of meditation, <i>upekkhā</i> allows us to be peaceful and impartial in any situation: a real gift to everyone."
 ---

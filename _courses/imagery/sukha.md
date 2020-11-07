@@ -1,5 +1,7 @@
 ---
 title: "Sukha — Happiness"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 10
 description: "Happiness can result from our efforts, but is double-sided: there is a danger that the ordinary person remains ignorant of, yet higher (spiritual) happiness should still be pursued. When the noble disciple sees the danger and its escape, then they really can rest easy and unconcerned."
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Suññatā — Emptiness"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 25
 description: "Seeing in terms of the Four Noble Truths is the foundation which supports the realization of emptiness."
 ---

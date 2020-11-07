@@ -1,5 +1,7 @@
 ---
 title: "Vitakka — Thought"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 18
 description: ""
 ---

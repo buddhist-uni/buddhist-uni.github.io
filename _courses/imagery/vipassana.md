@@ -1,5 +1,7 @@
 ---
 title: "Vipassanā — Insight"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 20
 description: ""
 ---

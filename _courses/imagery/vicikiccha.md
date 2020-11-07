@@ -1,5 +1,7 @@
 ---
 title: "Vicikicchā — Doubt"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 7
 description: "While some skeptical distance and investigation are necessary to learn, endless doubt leads us nowhere."
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Samatha & Vipassanā — Tranquility & Insight"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 21
 description: "There is no meditation for he who lacks wisdom, nor wisdom for he who lacks meditation. He who has both indeed is close to Nibbana. ~ Dhp 372"
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Yoniso Manasikāra — Wise Attention"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 19
 description: ""
 ---

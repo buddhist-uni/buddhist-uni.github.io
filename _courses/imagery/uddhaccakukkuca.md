@@ -1,5 +1,7 @@
 ---
 title: "Uddhaccakukkuca — Restlessness and Worry"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 6
 description: "An energetic person will tend to use all of their energy chasing endless, worldly goals. Like the lazy person, they too are left with no time or energy for their spiritual practice."
 ---
