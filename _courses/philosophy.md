@@ -484,7 +484,7 @@ The course began with the first refuge (the Buddha) and now, after explaining th
 
 Think of a friend who _accidentally_ encouraged or inspired your own spiritual growth in some way. 
 
-In lieu of a quiz or essay, this week I'd like you to write that person a letter thanking that person. You are not obliged to actually _send_ it, but of course may if you like. The gratitude itself is the assignment and its own reward.
+In lieu of a quiz or essay, this week I'd like you to write a letter thanking that person. You are, of course, not obliged to actually _send_ it, though you may if you like. The gratitude itself is the assignment and its own reward.
 
 ### Conclusion
 
