@@ -52,7 +52,7 @@ What do you notice about these talks? What surprises you? What's interesting? Jo
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
 
 {% include inline_content.html category="monographs" slug="intro-to-buddhism_harvey" %}
-
+<br />
 This textbook can be read alongside the course, providing the basic framing for the rest of the course. The class is arranged according to its outline and some of its topics — rituals, history, sects — will not be covered by the other works. 
 
 The textbook remains, however, optional, as the free materials below provide an excellent overview of the Buddha and his teachings all on their own. Feel free to just read the rest without the “connective tissue” of Harvey’s textbook, though total beginners to Buddhism might well be advised to give the textbook a chance, as its framing and contextualization will be helpful, if somewhat dry.

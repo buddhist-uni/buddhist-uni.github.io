@@ -3,15 +3,15 @@ title: "Authors"
 permalink: "/authors/"
 layout: page
 ---
-{% assign monographs = site.content | where_exp: "c", "c.path contains '/monographs/'" %}
-{% assign booklets = site.content | where_exp: "c", "c.path contains '/booklets/'" %}
-{% assign canon = site.content | where_exp: "c", "c.path contains '/canon/'" %}
-{% assign papers = site.content | where_exp: "c", "c.path contains '/papers/'" %}
-{% assign excerpts = site.content | where_exp: "c", "c.path contains '/excerpts/'" %}
-{% assign essays = site.content | where_exp: "c", "c.path contains '/essays/'" %}
-{% assign reference = site.content | where_exp: "c", "c.path contains '/reference/'" %}
-{% assign articles = site.content | where_exp: "c", "c.path contains '/articles/'" %}
-{% assign av = site.content | where_exp: "c", "c.path contains '/av/'" %}
+{% assign monographs = site.content | where: "category", "monographs" %}
+{% assign booklets = site.content | where: "category", "booklets" %}
+{% assign canon = site.content | where: "category", "canon" %}
+{% assign papers = site.content | where: "category", "papers" %}
+{% assign excerpts = site.content | where: "category", "excerpts" %}
+{% assign essays = site.content | where: "category", "essays" %}
+{% assign reference = site.content | where: "category", "reference" %}
+{% assign articles = site.content | where: "category", "articles" %}
+{% assign av = site.content | where: "category", "av" %}
 
 {% assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" %}
 
