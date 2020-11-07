@@ -29,13 +29,13 @@ epigraph: |
 
 Rather than seeing suffering as the inevitable flip side of happiness, Buddhism sees suffering as an affliction caused by a specific condition within the heart, namely wanting the world to be other than the way that it is.  
 
-From this angle, there are two ways to achieve happiness: forcing the world to conform to our wishes or accepting the way that things already are.
+From this angle, there are two ways to achieve happiness: forcing the world to conform to our wishes or accepting things as they are.
 
 These two methods for achieving happiness are, of course, unequal. Getting what we want is a fleeting happiness while letting go of our neediness leads to a lasting contentment. If we are fine however things turn out, then we will always be happy. Even when death comes for us, we can remain cool and unperturbed — leaving no “unfinished business.” 
 
-The mental “seeds” of “*I want...*” or “*I meant to...*” normally lead us on are, in fact, only the seeds of suffering. By attending closely and continuously to the workings of our own mind, we can eventually see this directly: that grasping is painful. As this realization dawns, we naturally let go.  The radiance of insight sterilizes the seeds of discontent.
+The mental “seeds” of “*I want...*” or “*I meant to...*” which normally lead us on are, in fact, only the seeds of suffering. By attending closely and continuously to the workings of our own mind, we can eventually see this directly: that grasping is painful. As this realization dawns, we naturally let go.  The radiance of insight sterilizes the seeds of discontent.
 
-This “dhamma eye of wisdom” opens when you see for yourself that absolutely everything is impermanent and therefore unsatisfying.  Seeing this danger in clinging to the things of the world, the practitioner begins the process of letting go. When she’s let go of everything, to her immense surprise, she experiences *nibbāna*: freedom from conditioned phenomena.
+This “dhamma eye of wisdom” opens when we see for ourselves that absolutely everything is impermanent and therefore unsatisfying.  Seeing this danger in clinging to the things of the world, the practitioner begins the process of letting go. When she’s let go of everything, to her immense surprise, she experiences *nibbāna*: freedom from conditioned phenomena.
 
 ## Prerequisites
 
