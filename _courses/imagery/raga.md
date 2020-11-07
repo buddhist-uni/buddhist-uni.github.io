@@ -1,5 +1,7 @@
 ---
 title: "Rāga — Passion"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 3
 description: "Passion is the fire in our hearts that burns us alive. Far from romantic, <b><i>rāga</i></b> is our biggest enemy."
 ---

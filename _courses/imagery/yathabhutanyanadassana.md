@@ -1,5 +1,7 @@
 ---
 title: "Yathābhūtañāṇadassana — Knowledge and Vision of the Way Things Are"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 12
 description: "The culmination of insight, <i>yathābhūtañāṇadassana</i> is a complete transformation of how we perceive the world: from assuming its stability and sufficiency to seeing its ephemerality and repulsiveness."
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Vossagga — Letting Go"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 24
 description: ""
 ---

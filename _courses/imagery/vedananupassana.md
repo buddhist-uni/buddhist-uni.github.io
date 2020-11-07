@@ -1,5 +1,7 @@
 ---
 title: "Vedanānupassanā — Investigating Feelings"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 9
 description: "We always have the option to investigate (rather than react to) our feelings: to “be with” what we experience with compassion and curiosity to learn their true character."
 ---

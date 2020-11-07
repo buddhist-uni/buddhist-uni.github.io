@@ -1,5 +1,7 @@
 ---
 title: "Vedanā — Feelings"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 8
 description: "The three kinds of feeling — pleasant, painful, and neutral feelings — tend to lead us immediately into the three mental poisons: attachment, disgust, and ignorance. But they don't have to."
 ---

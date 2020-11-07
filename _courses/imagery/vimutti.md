@@ -1,5 +1,7 @@
 ---
 title: "Vimutti — Liberation"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 13
 description: "The culmination of the path, <i>vimutti</i> is the heart at rest, liberated from the defilements."
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Saṅkhāra — Activity"
 order: 17
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 description: ""
 ---
 

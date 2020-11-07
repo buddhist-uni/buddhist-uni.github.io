@@ -1,5 +1,7 @@
 ---
 title: "Samādhi — Immersion"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 22
 description: ""
 ---

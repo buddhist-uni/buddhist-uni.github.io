@@ -1,5 +1,7 @@
 ---
 title: "Sakkāyadiṭṭhi - Self View"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 15
 description: "The self is an assumption we construct from our dreams."
 ---

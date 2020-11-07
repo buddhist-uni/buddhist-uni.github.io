@@ -1,5 +1,7 @@
 ---
 title: "Vyāpāda — Hatred and Aversion"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 4
 description: "The opposite of love, acceptance, and compassion, <i>vyāpāda</i> hollows us out."
 ---

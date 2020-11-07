@@ -1,5 +1,7 @@
 ---
 title: "Viveka — Seclusion"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 23
 description: ""
 ---

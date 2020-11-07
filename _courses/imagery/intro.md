@@ -1,5 +1,7 @@
 ---
 title: "Introduction to Imagery in the EBTs"
+slug: "course parts don't get unique slugs"
+layout: "imagerycoursepart"
 order: 1
 description: "Buddhism has many symbols representing different layers of historical development."
 ---
