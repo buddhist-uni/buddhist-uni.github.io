@@ -167,6 +167,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include inline_content.html category="canon" slug="an4.195" %}
 > everything becomes cool when nothing is relished
 
+{% include inline_content.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
+- On what it feels like to transcend the categories
+
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Conclusion and Translations
 {: .nomarginbottom}
   - The Conclusion is worth a read to tie together our study of Nirvana's history.
