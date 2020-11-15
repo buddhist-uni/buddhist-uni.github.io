@@ -8,6 +8,7 @@ tags:
   - vinaya-studies
   - lgbt
   - christianity
+status: featured
 series: revisionist-history
 number: 9
 ---
