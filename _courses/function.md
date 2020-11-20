@@ -2,7 +2,7 @@
 title: The Function of Buddhism
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 feedback_id: "The+Function+of+Buddhism"
-description: "An introduction to the Buddhist practice which explains ethics and meditation as leading to the development of character."
+description: "An introduction to the Buddhist practice focusing on ethics and meditation and how they work to improve our lives."
 time: 2
 lecturers:
   - yuttadhammo
