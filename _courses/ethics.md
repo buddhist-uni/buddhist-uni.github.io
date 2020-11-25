@@ -82,8 +82,11 @@ If Buddhist Ethics can be summarized so quickly, why a whole course?  What chall
 
 The course will follow the sequence of the chapters in Harvey's *Introduction*.  Go ahead and read Chapter 1 now, and when you're finished consider this:
 
+{% include inline_content.html category="articles" slug="ptsd-in-the-slaughterhouse" %}
+- If you make your living off immorality, it takes a huge toll on your mind, relationships, and health.
+
 {% include inline_content.html category="articles" slug="what-the-buddha-would-not-do_analayo" %}
-- What is the principle behind the five precepts?  Why are those actions specifically called out? What kinds of things would a liberated being _not_ do?
+- What kinds of things do liberated beinga _never_ do? And why not?
 
 {% include inline_content.html category="av" slug="early-buddhism_ethics_sujato-and-brahmali" %}
 - A lecture introducing Buddhist Ethics, particularly from the perspective of early Buddhism.
@@ -243,6 +246,8 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 
 #### Chapter 5: Economics
 
+{% include inline_content.html category="canon" slug="sn17.5" %}
+- In which the Buddha compares attachment to wealth to a dung beetle proud of her dung.
 
 {% include inline_content.html category="av" slug="buddhist-approach-to-economics_jayasaro" %}
 -  A Buddhist monk who rejects money has a lot to say about economics, perhaps because of the objectivity that distance affords.
