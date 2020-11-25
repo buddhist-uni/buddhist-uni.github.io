@@ -91,11 +91,11 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 For "homework," please read chapter two of _Buddhist Life_ and:
 
-{% include content_box.html category="canon" slug="sn17.5" %}
+{% include content_box.html category="articles" slug="giving-makes-us-happy" %}
 
 {% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
-(And then "attend" lecture number 2 here, etc.)
+(And then "attend" lecture number 2 here.)
 
 ##### Homework for Chapter 3
 
@@ -104,7 +104,8 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 {% include inline_content.html category="av" slug="guard-senses_hong-ci" %}
 
 {% include inline_content.html category="canon" slug="an3.78" %}
-<div><br /></div>
+
+(Lecture 3)
 
 ##### Chapter 4
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank" ga-event-value="0.3"}
