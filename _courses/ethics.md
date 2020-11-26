@@ -86,7 +86,7 @@ The course will follow the sequence of the chapters in Harvey's *Introduction*. 
 - If you make your living off immorality, it takes a huge toll on your mind, relationships, and health.
 
 {% include inline_content.html category="articles" slug="what-the-buddha-would-not-do_analayo" %}
-- What kinds of things do liberated beinga _never_ do? And why not?
+- What kinds of things do liberated beings _never_ do? And why not?
 
 {% include inline_content.html category="av" slug="early-buddhism_ethics_sujato-and-brahmali" %}
 - A lecture introducing Buddhist Ethics, particularly from the perspective of early Buddhism.
