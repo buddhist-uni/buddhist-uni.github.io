@@ -30,3 +30,8 @@ The University organizes [content]({% link library.md %}) from [across the Web](
 
 {% endfor %}
 
+OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which provide free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses. For OBU Students, I especially recommend MIT's: 
+[STS.003: The Rise of Modern Science](https://ocw.mit.edu/courses/science-technology-and-society/sts-003-the-rise-of-modern-science-fall-2010/index.htm){:target="_blank"},
+[21G.19: Communicating Across Cultures](https://ocw.mit.edu/courses/global-languages/21g-019-communicating-across-cultures-spring-2005/index.htm){:target="_blank"},
+and [WGS.110J: Sexual and Gender  Identities](https://ocw.mit.edu/courses/womens-and-gender-studies/wgs-110j-sexual-and-gender-identities-spring-2016/){:target="_blank"}.
+
