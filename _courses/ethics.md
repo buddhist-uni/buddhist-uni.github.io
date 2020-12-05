@@ -238,6 +238,9 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 
 #### Chapter 4: Natural World
 
+{% include inline_content.html category="av" slug="the-green-pill" %}
+- An interview about [carnism](https://carnism.org/carnism/){:target="_blank"} and the importance of mindfulness in living green and ethically.
+
 {% include inline_content.html category="articles" slug="task-for-mindfulness_analayo" %}
 - Mindfulness practices may be essential for facing climate change.
 
