@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1l47zcslYzr2CBPyMQcvAA8auiNkwCsIF/view?usp=drivesdk"
 course: time
 tags:
-  - interdependence
+  - huayan
   - music
   - modernity
   - art
