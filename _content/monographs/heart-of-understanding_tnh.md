@@ -9,6 +9,7 @@ tags:
   - buddhism
   - mahayana
   - chan
+  - huayan
   - american
 ---
 
