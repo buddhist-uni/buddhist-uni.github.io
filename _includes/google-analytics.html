@@ -7,11 +7,15 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('require', 'outboundLinkTracker', {
-    hitFilter: function(c) {
+    hitFilter: function(c,a) {
       var v = c.get("eventValue") || 0.1;
       var w = Math.floor(v);
+      var k = (a.getAttribute("data-content-path") || a.href) + ":clicked";
+      if (localStorage.getItem(k)) { c.set("eventValue", 0, true); } else {
       window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':c.get("eventLabel"),'revenue_value':v,'currency':'USD'});
       c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w, true);
+      localStorage.setItem(k, 1);
+      }
     }
   });
   ga('send', 'pageview');

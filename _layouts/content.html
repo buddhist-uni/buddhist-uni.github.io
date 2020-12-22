@@ -19,14 +19,15 @@ layout: default
     <h3 class="translator">Translated by {% if translator %}<a href="{{ translator.url }}">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}</h3>
     {% endif %}
         <p class="content_links">
+        {% assign content_path = page.path | split: '.' | first %}
         {% if page.external_url or page.drive_links.size > 0 %}
         {% assign value = page.base_value %}{% if page.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
-        {% if page.external_url %}Find it <a target="_blank" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
+        {% if page.external_url %}Find it <a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
                 {% assign i = forloop.index | minus: 1 %}
-                {% capture format_link %}<a target="_blank" ga-event-value="{{ value }}" ga-event-label="drive.google.com/{{ page.path | split: '.' | first }}.{{ page.formats[i] }}" href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
+                {% capture format_link %}<a target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ page.formats[i] }}" href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
                 {% assign format_links = format_links | push: format_link %}
             {% endfor %}
             {% if page.external_url %}or get{% else %}Get{% endif %} the {{ format_links | array_to_sentence_string: "or" }} on Google Drive{% unless page.source_url %}.{% endunless %}{% endif %}
