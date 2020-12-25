@@ -80,7 +80,7 @@ layout: default
     <details class="Box Box--condensed bibtex">
       <summary class="Box-header">Bibtex Info</summary>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
-{% capture md %}```
+{% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
       <div class="Box-body">
       <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
