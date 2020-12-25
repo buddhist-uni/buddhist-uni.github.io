@@ -1,8 +1,5 @@
 ---
 layout: nil
 ---
-
-{% for content in site.content %}
-{% include content.bibtex content=content %}
+{% for content in site.content %}{% include content.bibtex content=content %}
 {% endfor %}
-

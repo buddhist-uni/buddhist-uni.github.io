@@ -1,3 +1,5 @@
+{%- assign book = nil -%}
+{%- assign publisher = nil -%}
 {%- assign curlyspace = "} " -%}
 {%- assign curly = "}" -%}
 {%- assign escand = "{\&}" -%}
@@ -22,6 +24,3 @@
 {% endif %}{% if include.content.course or include.content.tags %}    keywords={% raw %}{{% endraw %}{% assign tags = "" | split: "" %}{% if include.content.tags %}{% assign tags = include.content.tags %}{% endif %}{% if include.content.course %}{% assign tags = tags | unshift: include.content.course %}{% endif %}{{ tags | join: ", " }}},
 {% endif %}    title={% raw %}{{% endraw %}{% assign title = include.content.title | replace: "_", "*" | replace: "&", escand | replace: "%", escperc %}{% assign fc = title | slice: 0 %}{% assign lc = title | slice: -1 %}{% if fc == '*' %}{% assign title = title | replace_first: '*', "\textit{" %}{% endif %}{% if lc == '*' %}{% assign title = title | split: "*" | join: "*" | append: curly %}{% endif %}{% assign chars = title | replace: " **", " \textbf{" | replace: "** ", curlyspace | replace: " *", " \textit{" | replace: "(*", "(\textit{" | replace: "*", curly | split: "" %}{% assign title = "" %}{% assign insidecurl = 0 %}{% for char in chars %}{% if char == "{" %}{% assign insidecurl = insidecurl | plus: 1 %}{% elsif char == curly %}{% assign insidecurl = insidecurl | minus: 1 %}{% endif %}{% assign dwn = char | downcase %}{% if dwn != char and insidecurl == 0 %}{% assign title = title | append: "{" | append: char | append: "}" %}{% else %}{% assign title = title | append: char %}{% endif %}{% endfor %}{{ title }}}
 }
-{%- assign book = nil -%}
-{%- assign publisher = nil -%}
-
