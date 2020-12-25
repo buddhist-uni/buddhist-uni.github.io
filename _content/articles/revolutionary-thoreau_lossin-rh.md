@@ -1,6 +1,6 @@
 ---
 title: "The Revolutionary Thoreau"
-authors: ["R.H. Lossin"]
+authors: ["R. H. Lossin"]
 journal: nyrb
 year: 2020
 month: sep

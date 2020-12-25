@@ -14,7 +14,7 @@ tags:
   - academia
   - science
 year: 2014
-month: sept
+month: sep
 ---
 
 > We wouldn’t say "this is _proof_ of reincarnation," but I would say it’s strong evidence of something like it.

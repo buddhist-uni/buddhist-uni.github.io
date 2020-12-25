@@ -1,6 +1,6 @@
 ---
 title: "The Questions of King Malinda: An Abridgement of the _Milindapañhā_"
-authors: ["N.K.G. Mendis"]
+authors: ["N. K. G. Mendis"]
 year: 1993
 external_url: "https://www.bps.lk/library-search-select.php?id=bp217s"
 drive_links:
