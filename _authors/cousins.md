@@ -1,3 +1,3 @@
 ---
-title: "L.S. Cousins"
+title: "L. S. Cousins"
 ---

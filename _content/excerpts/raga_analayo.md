@@ -2,7 +2,7 @@
 title: "*Rāga* (Lust or Passion)"
 authors:
  - analayo
-editor: "W.G. Weeraratne"
+editor: "W. G. Weeraratne"
 booktitle: "Encyclopaedia of Buddhism"
 volume: 7
 number: 3

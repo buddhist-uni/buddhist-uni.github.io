@@ -1,7 +1,6 @@
 ---
 title: "The Noble Quest"
 authors: [horner]
-bibtex_type: book
 publisher: bps
 year: 1974
 series: wheel

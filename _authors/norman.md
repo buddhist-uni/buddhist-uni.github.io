@@ -1,3 +1,3 @@
 ---
-title: "K.R. Norman"
+title: "K. R. Norman"
 ---

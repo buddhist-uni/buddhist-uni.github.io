@@ -1,6 +1,6 @@
 ---
 title: "Forty Meditations"
-authors: ["Karen M Andrews"]
+authors: ["Karen M. Andrews"]
 external_url: "http://dhammatalks.net/Articles/Karen_Andrews_Forty_Meditations_Who_should_use_Which.htm"
 year: 1992
 month: apr

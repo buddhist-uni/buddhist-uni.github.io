@@ -2,7 +2,7 @@
 title: "Suicide"
 authors:
  - analayo
-editor: "W.G. Weeraratne"
+editor: "W. G. Weeraratne"
 booktitle: "Encyclopaedia of Buddhism"
 volume: 8
 number: 1
