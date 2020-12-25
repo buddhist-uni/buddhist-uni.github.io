@@ -80,14 +80,14 @@ layout: default
     <details class="Box Box--condensed bibtex">
       <summary class="Box-header">Bibtex Info</summary>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
-{% capture md %}```tex
+{% capture md %}```
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
       <div class="Box-body">
       <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
       <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');
-cb.on('success', function(e){showTooltip(e.trigger,'Copied!');});
+cb.on('success', function(e){showTooltip(e.trigger,'Copied');});
 cb.on('error', function(e){showTooltip(e.trigger,'Error');});
 
 function clearTooltip(){this.setAttribute('class','btn copybutton');this.removeAttribute('aria-label');}
