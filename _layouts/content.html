@@ -77,12 +77,12 @@ layout: default
     </p>
     {% endif %}
 
-    <details class="Box Box--condensed bibtex">
+    <details class="Box--condensed bibtex">
       <summary class="Box-header">Bibtex Info</summary>
+      <div>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
-      <div class="Box-body">
       <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
       <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
       <script>
