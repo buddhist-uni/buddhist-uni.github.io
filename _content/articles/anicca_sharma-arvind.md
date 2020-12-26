@@ -9,7 +9,7 @@ course: philosophy
 year: 1979
 journal: pbr
 volume: 4
-number: 1–2
+number: 1
 ---
 
 This essay gives an introduction to the three characteristics and, by analysis, their function.
