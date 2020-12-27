@@ -6,6 +6,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('require', 'eventTracker', {});
   ga('require', 'outboundLinkTracker', {
     hitFilter: function(c,a) {
       var v = c.get("eventValue") || 0.1;

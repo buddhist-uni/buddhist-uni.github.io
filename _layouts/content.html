@@ -18,8 +18,9 @@ layout: default
     {% if page.translator %}
     <h3 class="translator">Translated by {% if translator %}<a href="{{ translator.url }}">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}</h3>
     {% endif %}
-        <p class="content_links">
-        {% assign content_path = page.path | split: '.' | first %}
+    <p class="content_links">
+        {% assign len = page.path | size | minus: 12 %}
+        {% assign content_path = page.path | slice: 9, len %}
         {% if page.external_url or page.drive_links.size > 0 %}
         {% assign value = page.base_value %}{% if page.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
         {% if page.external_url %}Find it <a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
@@ -77,13 +78,20 @@ layout: default
     </p>
     {% endif %}
 
-    <details class="Box--condensed bibtex">
+    <details class="Box--condensed bibtex" ontoggle="deetstoggler();">
       <summary class="Box-header">Bibtex Info</summary>
+      <script>function deetstoggler(e) {
+        var k = "{{ content_path }}.bibtex.toggled";
+        if (!localStorage.getItem(k)) {
+          ga('send','event','Bibtex','firstopen','{{ content_path }}');
+          localStorage.setItem(k, 1);
+        }
+      }</script>
       <div>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
-      <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
+      <button ga-on="click" ga-event-category="Bibtex" ga-event-action="copy" ga-event-label="{{ content_path }}" class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
       <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');
