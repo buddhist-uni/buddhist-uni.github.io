@@ -1,6 +1,7 @@
 {% assign content = include.content %}{% assign category = content.path | split: '/' %}{% assign category = category[1] %}
 {% assign value = content.base_value %}{% if content.status == "featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
 {% include content_icon.html category=category %}
-{% assign content_path = content.path | split: '.' | first %}
+{% assign content_path_len = content.path | size | minus: 12 %}
+{% assign content_path = content.path | slice: 9, content_path_len %}
 <span id="{{ content.slug }}" class="inline_content_title">{% if content.external_url %}<a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ content.external_url }}">{% endif %}{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if content.authors.size > 0 or content.reader %} – {% include content_authors_string.html content=content %}{% endif %}{% if content.external_url %}</a>{% endif %}</span>
 {% if content.drive_links %}<span class="inline_drive_links">{% for link in content.drive_links %}{% assign index = forloop.index | minus: 1 %}<span class="inline_drive_link"> (<a target="_blank" ga-event-value="{{ value }}" ga-event-label="drive.google.com/{{ content_path }}.{{ content.formats[index] }}" data-content-path="{{ content_path }}" href="{{ link }}"><i class="fab fa-google-drive"></i>{{ content.formats[index] }}</a>)</span>{% endfor %}</span>{% endif %}

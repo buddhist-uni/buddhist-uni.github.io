@@ -24,6 +24,6 @@ All the content on this site and more can be found in
 
 For a currated list of the very best of the library, see (and subscribe to!) [the newsletter]({% link blog.md %}) which highlights my favorite arrivals.
 
-You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}). 
+You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}. 
 
 And while most of the content collected here can be found on [other websites]({% link sources.md %}), some of it can't. For those, see the [exclusive content page]({% link exclusive.md %}).
