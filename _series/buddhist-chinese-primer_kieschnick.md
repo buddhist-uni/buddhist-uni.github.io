@@ -8,4 +8,4 @@ tags:
   - chinese
 ---
 
-A (currently) six-volume primer on reading Buddhist texts in the Chinese language.
+A primer on reading Buddhist texts in the Chinese language.
