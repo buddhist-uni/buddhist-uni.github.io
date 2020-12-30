@@ -7,6 +7,7 @@ years: 2015--2018
 tags:
   - da
 publisher: bdk
+category: monographs
 ---
 
 Being a ([poor](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"}) translation of the Dīrga Āgama.

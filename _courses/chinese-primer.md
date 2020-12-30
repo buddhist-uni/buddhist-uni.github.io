@@ -26,7 +26,7 @@ Note that this course is still a work in progress by its author, John Kieschnick
 
 ### Prerequisites
 
-This course does not assume any prior knowledge of Chinese or Chinese Buddhism to begin.  The first two volumes are meant to be accessible to serious scholars of the EBTs interested only in perusal of the Āgamas.  By volume three, however, (or to perfect volumes one and two for that matter) more knowledge of Mandarin will be required. By the supplemental volumes, only specialists in Chinese Buddhism will remain.
+While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student with time and courage.
 
 ## Textbooks
 
@@ -42,7 +42,7 @@ The learning objective for this first section is to read (and understand!) an en
 
 #### General Resources for Learning Chinese
 
-This is a doable, if challenging, goal for someone new to Chinese. If this is you, I recommend the following resources to help learn the basics of the Chinese language:
+This is an extremely challenging but doable goal for someone new to Chinese. If this is you, I recommend the following resources to help learn the basics of the Chinese language:
 
 {% include content_box.html category="reference" slug="trainchinese" %}
 {% include content_box.html category="reference" slug="chineseskill" %}
@@ -59,7 +59,7 @@ And even if you're already a bilingual English-Chinese speaker, I recommend that
 
 {% include content_box.html category="booklets" slug="indian-tradition_kieschnick" %}
 
-Like _Volume 1_, the final goal of this section of the course is also to read some Chinese texts without reference to a dictionary -- this time a sūtra, some short abhidharma passages, and a section of the vinaya. As these selections represent the full range of "Hinayana" texts preserved in Chinese translation, a student of early Buddhism has, at this point, finished the course and is ready to be a comparative, textual scholar!
+Like _Volume 1_, the final goal of this section of the course is also to read some Chinese texts with minimal reference to a dictionary -- this time a sūtra, some short abhidharma passages, and a section of the vinaya. As these selections represent the full range of "Hinayana" texts preserved in Chinese translation, a student of early Buddhism has, at this point, finished the course and is ready to be a comparative, textual scholar!
 
 ### Volume 3: Texts Composed in China
 
@@ -71,6 +71,6 @@ Volume 3 (whose structure should, by now, be very familiar!) should be completed
 
 ## Continuing Study
 
-As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en) which host a _very_ large number of canonical Buddhist texts in Chinese -- most of which have yet to be translated into English.
+As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank"} which host a _very_ large number of canonical Buddhist texts in Chinese -- most of which have yet to be translated into English.
 
-  一路順利! 
+祝你一路順利! 
