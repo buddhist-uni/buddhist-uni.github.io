@@ -58,7 +58,7 @@ collections:
      permalink: /:collection/:path
   series:
      output: true
-     permalink: /:collection/:name
+     permalink: /:collection/:path
   publishers:
      output: true
      permalink: /:collection/:name
