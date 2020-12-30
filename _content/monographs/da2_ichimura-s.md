@@ -4,9 +4,7 @@ authors:
   - ichimura-s
 year: 2016
 publisher: bdk
-course: da
 number: 2
-status: rejected
 series: da_bdk
 drive_links: ["https://drive.google.com/file/d/1aqKJHISJTOEjxe5fy_MRUFzsH309vq9A/view?usp=drivesdk"]
 external_url: "https://bdkamerica.org/product/the-canonical-book-of-the-buddhas-lengthy-discourses-vol-ii/"
