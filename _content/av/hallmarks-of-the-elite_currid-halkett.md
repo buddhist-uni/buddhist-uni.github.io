@@ -19,5 +19,5 @@ tags:
 
 > today’s rich are far less materialistic, but a far greater threat to equality
 
-A fascinating interview on social signaling today -- its historical causes and its implications for inequality, policy, and society as a whole.
+A fascinating interview on social signaling today---its historical causes and its implications for inequality, policy, and society as a whole.
 

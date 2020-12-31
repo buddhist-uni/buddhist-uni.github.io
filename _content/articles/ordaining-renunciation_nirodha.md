@@ -11,5 +11,5 @@ tags:
   - australian
 ---
 
-> My loved ones had slowly adjusted to my new direction in life, yet were still stunned that I carried out the final step, leaving everything behind -- as this implied that the world has nothing to offer, ever. It made a big impact upon them.
+> My loved ones had slowly adjusted to my new direction in life, yet were still stunned that I carried out the final step, leaving everything behind---as this implied that the world has nothing to offer, ever. It made a big impact upon them.
 

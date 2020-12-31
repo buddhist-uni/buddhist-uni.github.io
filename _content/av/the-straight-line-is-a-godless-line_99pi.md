@@ -13,4 +13,4 @@ tags:
 
 A brief word on the life and work of Tausendsassa Friedensreich Regentag Dunkelbunt Hundertwasser.
 
-Born into a Jewish family in Nazi Austria, Hundertwasser came to despise  straight lines and the authoritarianism they represented. His story reminds me that we are products of our environment, even -- or perhaps especially -- if we reject it.
+Born into a Jewish family in Nazi Austria, Hundertwasser came to despise  straight lines and the authoritarianism they represented. His story reminds me that we are products of our environment, even---or perhaps especially---if we reject it.

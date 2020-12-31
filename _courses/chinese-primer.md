@@ -12,11 +12,11 @@ next_course_descs:
 
 ## What is Chinese Buddhist Writing?
 
-Starting with haphazard translations of Indian Sutras and culminating in majestic works of literature and philosophy, texts written in Chinese characters have long been crucial to the development of Buddhism in China -- and by extension all of East Asia.
+Starting with haphazard translations of Indian Sutras and culminating in majestic works of literature and philosophy, texts written in Chinese characters have long been crucial to the development of Buddhism in China---and by extension all of East Asia.
 
 But Sanskrit and Pali are very different languages from Chinese. Chinese is not inflected, largely monosyllabic and has a vastly different phonology and cosmology.  This made the job of translating Indian Sutras into Chinese writing very difficult, and thus makes our job decyphering their work just as tricky.
 
-But just as translating the Buddha's words into Chinese enriched Chinese society, so too does translating Chinese Texts into English enrich ours. From the Chinese Āgamas, which serve as the primary witness to the accuracy of the Pāli Canon, to the Huayan Sūtras, which contain some of the most beautiful and sophisticated imagery in all of world literature, the riches that await the student of classical, Buddhist Chinese are nearly endless.
+But, just as translating the Buddha's words into Chinese enriched Chinese society, so too do the Chinese Buddhist Texts enrich ours when translated into English. 
 
 ## Introduction
 
@@ -38,7 +38,7 @@ It procedes in four parts, corresponding to his three numbered volumes followed 
 
 {% include content_box.html category="booklets" slug="foundations_kieschnick" %}
 
-The learning objective for this first section is to read (and understand!) an entire Sūtra in Chinese -- ideally without having to look at a glossary or dictionary.
+The learning objective for this first section is to read (and understand!) an entire Sūtra in Chinese---ideally without having to look at a glossary or dictionary.
 
 #### General Resources for Learning Chinese
 
@@ -59,7 +59,7 @@ And even if you're already a bilingual English-Chinese speaker, I recommend that
 
 {% include content_box.html category="booklets" slug="indian-tradition_kieschnick" %}
 
-Like _Volume 1_, the final goal of this section of the course is also to read some Chinese texts with minimal reference to a dictionary -- this time a sūtra, some short abhidharma passages, and a section of the vinaya. As these selections represent the full range of "Hinayana" texts preserved in Chinese translation, a student of early Buddhism has, at this point, finished the course and is ready to be a comparative, textual scholar!
+Like _Volume 1_, the final goal of this section of the course is also to read some Chinese texts with minimal reference to a dictionary---this time a sūtra, some short abhidharma passages, and a section of the vinaya. As these selections represent the full range of "Hinayana" texts preserved in Chinese translation, a student of early Buddhism has, at this point, finished the course and is ready to be a comparative, textual scholar!
 
 ### Volume 3: Texts Composed in China
 
@@ -71,6 +71,6 @@ Volume 3 (whose structure should, by now, be very familiar!) should be completed
 
 ## Continuing Study
 
-As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank"} which host a _very_ large number of canonical Buddhist texts in Chinese -- most of which have yet to be translated into English.
+As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
 
 祝你一路順利! 

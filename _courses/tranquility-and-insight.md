@@ -21,7 +21,7 @@ next_course_descs:
 ---
 
 ## What are tranquility and insight?
-Tranquility and insight are the two proximate goals of Buddhist meditation. When you meditate on a single thing itself the mind will eventually become calm and collected. We call this _samatha_ or tranquility meditation.  If you meditate on the three characteristics -- that things are impermanent, unsatisfying, and not our own -- wisdom will arise. We call this _vipassana_ or insight meditation.
+Tranquility and insight are the two proximate goals of Buddhist meditation. When you meditate on a single thing itself the mind will eventually become calm and collected. We call this _samatha_ or tranquility meditation.  If you meditate on the three characteristics---that things are impermanent, unsatisfying, and not our own---wisdom will arise. We call this _vipassana_ or insight meditation.
 
 These two kinds of practice and result support each other. Insight requires tranquility because the mind must be stable and clear to see and to accept the truth. But tranquility requires wisdom which is what lets go of our thinking and worrying long enough to meditate and to stabilize the mind.
 

@@ -24,7 +24,7 @@ tags:
   - renunciation
 ---
 
-> ...and maybe because of the boiling April sun, he thought about water and ice. Water and ice were made of the same thing. He thought most people were made of the same thing, too. He himself was probably a little different from the corrupt people around him. Ice was distinct from -- and in his view, better than -- what it was made of. He wanted to be better than what he was made of. In Mumbai's dirty water, he wanted to be ice.
+> ...and maybe because of the boiling April sun, he thought about water and ice. Water and ice were made of the same thing. He thought most people were made of the same thing, too. He himself was probably a little different from the corrupt people around him. Ice was distinct from---and in his view, better than---what it was made of. He wanted to be better than what he was made of. In Mumbai's dirty water, he wanted to be ice.
 
 A haunting and beautiful portrait of humanity, _Behind the Beautiful Forevers_ reads more like a novel than nonfiction. But journalism it is. Of the highest order.
 
