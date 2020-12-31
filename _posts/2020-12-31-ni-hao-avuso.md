@@ -6,7 +6,7 @@ Hello, friend! Today I'm happy to announce the addition of a new feature and a f
 
 But first, the courses!
 
-This month I've added three courses on the primary languages of the Early Buddhist Texts: Chinese and Pāli.
+This month I've added three new courses on the primary languages of the Early Buddhist Texts: Chinese and Pāli.
 
 [Chinese Buddhist Writing]({% link _courses/chinese-primer.md %}) is a course for Buddhists with some prior knowledge of Mandarin (or who are willing to hussle to get those fundamentals elsewhere) who would like help reading Chinese Buddhist scriptures. This course goes character-by-character through the different strata of Chinese texts, giving a comprehensive introduction to Buddhist Chinese from ancient Indian translations to esoteric treatises.
 
@@ -27,10 +27,10 @@ With wildfires and a pandemic raging across the globe, it's easy to feel powerle
 
 {% include inline_content.html category="monographs" slug="sexual-consent_popova" %}
 - Whether you're sexually active or not, the third precept against sexual misconduct obliges us to consider carefully the nuances of consent.
-- With chapters covering rape culture, power, negotiation, activism, and more, this concise yet comprehensive monograph will surely help structure and guide any investigation into this important and uncomfortable topic.
+- With chapters covering culture, power, negotiation, activism, and more, this concise yet comprehensive monograph will surely help structure and guide any investigation into this important and uncomfortable topic.
 
 {% include inline_content.html category="articles" slug="should-trees-have-standing_stone-chris" %}
-- Lastly, beyond caring for the animals and each other, Chris Stone makes the mindblowing case for the idea that _everything_ should have rights.
+- Lastly, beyond caring for the animals and each other, Chris Stone makes the mind-blowing case for the idea that _everything_ should have rights.
 - A utopian idea, perhaps, but one worth taking seriously as we rebuild the world in 2021.
 
 Wishing you a happy and most auspicious new year,  
