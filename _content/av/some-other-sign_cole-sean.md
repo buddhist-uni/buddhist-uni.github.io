@@ -5,7 +5,7 @@ year: 2012
 month: jul
 external_url: "https://99percentinvisible.org/episode/episode-59-some-other-sign-that-people-do-not-totally/"
 course: world
-series: 99pi Episode
+series: 99pi
 number: 59
 tags:
   - power

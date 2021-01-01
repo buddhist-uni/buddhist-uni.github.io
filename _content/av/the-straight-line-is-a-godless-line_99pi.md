@@ -9,6 +9,7 @@ tags:
   - society
   - art
   - architecture
+series: 99pi
 ---
 
 A brief word on the life and work of Tausendsassa Friedensreich Regentag Dunkelbunt Hundertwasser.

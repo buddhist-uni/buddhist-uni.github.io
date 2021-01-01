@@ -1,6 +1,7 @@
 ---
 title: "Four-Point Advice"
-authors: ["Dzongsar Khyentse Chökyi Lodrö"]
+authors:
+  - chokyi-lodro
 translator: "Adam Pearcey"
 year: 2020
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/four-point-advice"
