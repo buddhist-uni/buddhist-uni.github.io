@@ -25,7 +25,7 @@ Tranquility and insight are the two proximate goals of Buddhist meditation. When
 
 These two kinds of practice and result support each other. Insight requires tranquility because the mind must be stable and clear to see and to accept the truth. But tranquility requires wisdom which is what lets go of our thinking and worrying long enough to meditate and to stabilize the mind.
 
-So, as with mindfulness itself, we have to start were we are. We use whatever tranquility we have to remind ourselves  what is real and we use whatever insight we have to let go of what is bothersome. As we let go more and more, we become calmer and calmer and as we become more and more calm we are able to see more and more clearly. In this way, tranquility and insight form the two wings which together lift us out of delusion.
+So, as with mindfulness itself, we have to start where we are. We use whatever tranquility we have to remind ourselves  what is real and we use whatever insight we have to let go of what is bothersome. As we let go more and more, we become calmer and calmer and as we become more and more calm we are able to see more and more clearly. In this way, tranquility and insight form the two wings which together lift us out of delusion.
 
 ## Prerequisites
 
