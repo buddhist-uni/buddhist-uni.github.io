@@ -10,6 +10,7 @@ tags:
   - art
   - architecture
 series: 99pi
+number: 134
 ---
 
 A brief word on the life and work of Tausendsassa Friedensreich Regentag Dunkelbunt Hundertwasser.
