@@ -4,9 +4,9 @@ authors:
   - "Courtney Bruntz"
   - "Brooke Schedneck"
 external_url: "https://newbooksnetwork.com/buddhist-tourism-in-asia"
-course: pilgrimage
 tags:
   - dialogue
+  - pilgrimage
   - proselytism
 year: 2020
 month: dec
