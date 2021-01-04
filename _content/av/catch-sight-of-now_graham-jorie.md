@@ -7,11 +7,13 @@ external_url: "https://www.newyorker.com/magazine/2021/01/04/i-catch-sight-of-th
 course: grief
 status: featured
 tags:
+  - daily-life
   - poetry
   - time
   - place
   - nuns
   - emptiness
+  - ambulit
 journal: "The New Yorker"
 ---
 
