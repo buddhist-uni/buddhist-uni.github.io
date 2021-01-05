@@ -113,15 +113,15 @@ layout: default
         {% assign joiner = "or" %}
         {% case stars %}
         {% when 1 %}
-            {% assign joiner = "and" %}I no longer recommend this work, as there are now better alternatives{% if tags %} for studying {% else %}.{% endif %}
+            {% assign joiner = "and" %}I no longer recommend this work{% if tags %} for studying {% else %}.{% endif %}
         {% when 2 %}
-            {% assign joiner = "and" %}A work of average quality{% if tags %} about {% else %}.{% endif %} 
+            {% assign joiner = "and" %}{% if tags %}Tags: {% endif %} 
         {% when 3 %}
             Recommended for those who have a keen interest in {% unless tags %} this kind of thing.{% endunless %}
         {% when 4 %}
-            Recommended for anyone{% if tags %} interested in {% else %}.{% endif %}
+            Recommended for everyone{% if tags %} interested in {% else %}.{% endif %}
         {% else %}
-            {% assign joiner = "and" %}A fantastic work{% if tags %} about {% else %}.{% endif %}
+            One of the best works in existence{% if tags %} on {% else %}.{% endif %}
         {% endcase %}
         {% if tags %}{{ tags | array_to_sentence_string: joiner }}.{% endif %}
     </p>

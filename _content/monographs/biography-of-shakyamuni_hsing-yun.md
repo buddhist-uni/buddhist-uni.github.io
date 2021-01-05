@@ -7,6 +7,7 @@ year: 2013
 month: nov
 publisher: "Buddha's Light Publishing"
 course: buddhism
+status: featured
 tags:
   - buddha
   - form
