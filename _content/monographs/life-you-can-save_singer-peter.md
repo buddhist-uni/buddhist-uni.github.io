@@ -26,5 +26,3 @@ Nearly incontrovertible in its conclusion, the book inspired a revolution in cha
 
 The tenth anniversary edition is available for free online.
 
-{% octicon star-fill height:16 %} {% octicon star-fill height:16 %} {% octicon star-fill height:16 %} {% octicon star-fill height:16 %} {% octicon star-fill height:16 %}
-
