@@ -7,7 +7,6 @@ drive_links: ["https://drive.google.com/file/d/1TjDxxGGfi3KLLfEDpM-xWJwL09AK0gZ4
 year: 2013
 course: buddha
 tags:
-  - form
   - ebts
   - setting
 ---
