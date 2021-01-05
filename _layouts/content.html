@@ -1,11 +1,56 @@
 ---
 layout: default
 ---
+{%- comment -%}Establish the fancy content_path slug{%- endcomment -%}
+{%- assign len = page.path | size | minus: 12 -%}
+{%- assign content_path = page.path | slice: 9, len -%}
+
+{%- comment -%}Populate tags: an array of a-tags linking to the topical tags{%- endcomment -%}
+{%- assign tagslugs = '' | split: '' -%}
+{%- if page.course -%}
+    {%- assign tagslugs = tagslugs | push: page.course -%}
+{%- endif -%}
+{%- if page.tags.size > 0 -%}
+    {%- assign tagslugs = tagslugs | concat: page.tags -%}
+{%- endif -%}
+{%- assign tags = '' | split: '' -%}
+{%- for t in tagslugs -%}
+    {%- assign tag = site.tags | where: "slug", t | first -%}
+    {%- if tag -%}
+        {%- capture taglink -%}<a href="{{ tag.url }}">{{ tag.title }}</a>{%- endcapture -%}
+        {%- assign tags = tags | push: taglink -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- if tags.size == 0 -%}{%- assign tags = nil -%}{%- endif -%}
+
+{%- comment -%}Calculate star rating and find featured_post{%- endcomment -%}
+{%- assign stars = nil -%}
+{%- assign featured_post = nil -%}
+{%- if page.status == 'rejected' -%}{%- assign stars = 1 -%}{%- else -%}
+    {%- unless page.course -%}{%- assign stars = 2 -%}{%- endunless -%}
+{%- endif -%}
+{%- unless stars -%}
+    {%- if page.status == 'featured' -%}
+        {%- assign stars = 4 -%}
+        {%- if page.external_url or page.drive_links -%}
+            {%- for p in site.posts -%}
+                {%- if p.content contains page.slug -%}
+                    {%- assign stars = 5 -%}
+                    {%- assign featured_post = p -%}
+                    {%- break -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- assign stars = 3 -%}
+    {%- endif -%}
+{%- endunless -%}
+
 <article class="content-perma">
 
   <header class="post-header">
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
-    <h1 class="post-title">{{ title | first }}</h1>
+    <h1 class="post-title">{% include content_icon.html category=page.category %} {{ title | first }}</h1>
     {% if title.size > 1 %}<h2 class="post-subtitle">{{ title | shift | join: ": " }}</h2>{% endif %}
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page hide_reader=true link=true %}
@@ -15,12 +60,24 @@ layout: default
     <h2 class="author">Read by {% if reader %}<a href="{{ reader.url }}">{{ reader.title }}</a>{% else %}{{ page.reader }}{% endif %}</h2>
     {% endif %}
     {% assign translator = site.authors | where: "slug", page.translator | first %}
+
+    <div class="content_rating">
+        <div class="star_rating">{% for i in (1..5) %}<i class="fa{% if i > stars %}r{% else %}s{% endif %} fa-star"></i>{% endfor %}</div>
+    </div>
+
     <p class="content_links">
-        {% assign len = page.path | size | minus: 12 %}
-        {% assign content_path = page.path | slice: 9, len %}
         {% if page.external_url or page.drive_links.size > 0 %}
         {% assign value = page.base_value %}{% if page.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
-        {% if page.external_url %}Find it <a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
+        {% if page.external_url %}Find 
+        {% case page.category %}
+            {% when "av" %}the recording
+            {% when "monographs" %}the book
+            {% when "booklets" %}the booklet
+            {% when "articles" %}the article
+            {% when "papers" %}the paper
+            {% else %}it
+        {% endcase %}
+        <a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
@@ -41,6 +98,31 @@ layout: default
   </div>
 
   <footer>
+    {% if stars < 5 or tags %}<div class="star_desc">
+        {% assign joiner = "or" %}
+        {% case stars %}
+        {% when 1 %}
+            {% assign joiner = "and" %}I no longer recommend this work, as there are now better alternatives{% if tags %} for studying {% else %}.{% endif %}
+        {% when 2 %}
+            {% assign joiner = "and" %}A work of average quality{% if tags %} about {% else %}.{% endif %} 
+        {% when 3 %}
+            Recommended for those who have a keen interest in {% unless tags %} this kind of thing.{% endunless %}
+        {% when 4 %}
+            Recommended for anyone{% if tags %} interested in {% else %}.{% endif %}
+        {% else %}
+            {% assign joiner = "and" %}Tags:
+        {% endcase %}
+        {% if tags %}{{ tags | array_to_sentence_string: joiner }}.{% endif %}
+    </div>{% endif %}
+ 
+    {% if page.course %}
+        {% assign course = site.courses | where: "slug", page.course | first %}
+        {% if course or featured_post %}<p><i>Featured in 
+            {% if featured_post %}<a href="{{ featured_post.url }}">the {{ featured_post.date | date: "%B %Y" }} newsletter</a>{% if course %} and {% else %}.{% endif %}{% endif %}
+            {% if course %}the course, "<a href="{{ course.url }}#{{ page.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>."{% endif %}
+        </i></p>{% endif %}
+    {% endif %}
+
     {% if page.series %}{% assign series = site.series | where: "slug", page.series | first %}{% endif %}
     {% if page.journal %}{% assign journal = site.journals | where: "slug", page.journal | first %}{% endif %}
     {% if page.publisher %}{% assign publisher = site.publishers | where: "slug", page.publisher | first %}{% endif %}
@@ -49,33 +131,7 @@ layout: default
         {% if page.translator %} Translated by {% if translator %}<a href="{{ translator.url }}">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}
         {% if page.year or page.publisher or page.booktitle or page.journal or series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if page.booktitle %} in “{{ page.booktitle }}”{% endif %}{% if page.editor %} ({% if editor %}<a href="{{ editor.url }}">{{ editor.title }}</a>{% else %}{{ page.editor | split: " and " | array_to_sentence_string }}{% endif %} ed.){% endif %}{% if page.publisher %} by {% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}{% if page.address or publisher.address %}, {{ page.address | default: publisher.address }}{% endif %}{% endif %}{% if series %} {% if page.number %}as{% else %}in{% endif %} <a href="{{ series.url }}">{{ series.title }}</a>{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
     </i></p>
-  
-    {% assign tagslugs = '' | split: '' %}
-    {% if page.course %}
-        {% assign tagslugs = tagslugs | push: page.course %}
-    {% endif %}
-    {% if page.tags.size > 0 %}
-        {% assign tagslugs = tagslugs | concat: page.tags %}
-    {% endif %}
-    {% assign tags = '' | split: '' %}
-    {% for t in tagslugs %}
-        {% assign tag = site.tags | where: "slug", t | first %}
-        {% if tag %}
-            {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
-            {% assign tags = tags | push: taglink %}
-        {% endif %}
-    {% endfor %}
-
-    {% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}.
-    {% if page.course %}
-        {% assign course = site.courses | where: "slug", page.course | first %}
-        {% if course %}
-            <i>Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>."</i>
-        {% endif %}
-    {% endif %}
-    </p>
-    {% endif %}
-
+ 
     <details class="Box--condensed bibtex" ontoggle="deetstoggler();">
       <summary class="Box-header">Bibtex Info</summary>
       <script>function deetstoggler(e) {

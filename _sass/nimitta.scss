@@ -213,11 +213,24 @@ article.tag div.tagged_content {
 }
 
 article.content-perma .content_links {
-    font-size: 110%;
+    font-size: 132%;
 }
 
 details.bibtex .highlight {
     margin-bottom: 0px;
+}
+
+div.content_rating {
+    padding-bottom: 14px;
+    margin-top: 5px;
+}
+
+div.content_rating div.star_rating {
+    font-size: 110%;
+}
+
+div.star_desc {
+    margin-bottom: 7px;
 }
 
 div.featured_content_list ul {
