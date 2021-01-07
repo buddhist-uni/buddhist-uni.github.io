@@ -8,4 +8,4 @@ year: 2020
 month: feb
 ---
 
-A Swiss mechanic goes to incredible lengths to restore an antique iron in this memorizing montage.
+A Swiss mechanic goes to incredible lengths to restore an antique iron in this mesmerizing montage.

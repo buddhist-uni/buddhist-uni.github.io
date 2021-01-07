@@ -1,5 +1,5 @@
 ---
-title: "From Grasping to Emptiness – Excursions into the Thought-world of the Pāli Discourses Volume 2"
+title: "From Grasping to Emptiness: Excursions into the Thought-world of the Pāli Discourses Volume 2"
 authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-grasping.pdf"
