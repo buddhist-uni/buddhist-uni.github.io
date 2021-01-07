@@ -1,5 +1,5 @@
 ---
-title: "From Craving to Liberation – Excursions into the Thought-world of the Pāli Discourses Volume 1"
+title: "From Craving to Liberation: Excursions into the Thought-world of the Pāli Discourses Volume 1"
 authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-craving.pdf"
