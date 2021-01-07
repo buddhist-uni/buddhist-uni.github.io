@@ -4,6 +4,14 @@ img {
     margin-right: auto;
 }
 
+.btn i.fas {
+    font-weight: revert;
+}
+
+a.btn:visited {
+    color: initial;
+}
+
 figure figcaption {
     width: 100%;
     text-align: center;
@@ -21,6 +29,12 @@ figure figcaption {
         margin-left: 40px;
         margin-right: -3px;
         text-align: center;
+    }
+}
+
+.site-content {
+    @include media-query($on-palm) {
+        padding: 20px 0;
     }
 }
 
@@ -52,6 +66,10 @@ a[target="_blank"]:after {
     content: " \f08e";
     vertical-align: super;
     font-size: 65%;
+}
+
+a.btn[target="_blank"]:after {
+    content: "";
 }
 
 %has-inline-content %content-title a[target="_blank"]:after {
@@ -213,7 +231,44 @@ article.tag div.tagged_content {
 }
 
 article.content-perma .content_links {
-    font-size: 132%;
+    font-size: 19px;
+}
+
+article.content-perma .content_links .btn {
+    padding: 4px 12px 8px;
+}
+
+article.content-perma h1.post-title {
+    font-size: 39px;
+
+    @include media-query($on-laptop) {
+        font-size: 32px;
+    }
+
+    @include media-query($on-palm) {
+        font-size: 26px;
+    }
+}
+
+article.content-perma .post-subtitle {
+    margin-top: -15px;
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+    @media screen and (min-width: 675px) {
+        font-size: 27px;
+    }
+    @media screen and (min-width: 800px) {
+        font-size: 30px;
+    }
+}
+
+article.content-perma h2 {
+    font-size: 20px;
+}
+
+article.content-perma .star_desc {
+    font-size: 15px;
 }
 
 details.bibtex .highlight {

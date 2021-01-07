@@ -67,32 +67,24 @@ layout: default
     </div>
 {%- endcomment -%}
 
-    <p class="content_links">
-        {% if page.external_url or page.drive_links.size > 0 %}
+    {% if page.source_url or page.external_url or page.drive_links.size > 0 %}
+        <p class="content_links">
         {% assign value = page.base_value %}{% if page.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
-        {% if page.external_url %}Find 
-        {% case page.category %}
-            {% when "av" %}the recording
-            {% when "monographs" %}the book
-            {% when "booklets" %}the booklet
-            {% when "articles" %}the article
-            {% when "papers" %}the paper
-            {% else %}it
-        {% endcase %}
-        <a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}">online here</a>{% unless page.drive_links.size > 0 or page.source_url %}.{% endunless %}{% endif %}
+         {% if page.external_url %}
+            <a class="btn" target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}"><i class="fa{% if page.external_url contains "youtu" %}b fa-youtube"></i> YouTube{% else %}s fa-{% assign ext = page.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}volume-up{% else %}globe{% endif %}"></i> Online{% endif %}</a>
+        {% endif %}
         {% if page.drive_links.size > 0 %}
             {% assign format_links = '' | split: '' %}
             {% for link in page.drive_links %}
                 {% assign i = forloop.index | minus: 1 %}
-                {% capture format_link %}<a target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ page.formats[i] }}" href={{ link }}>{{ page.formats[i] }}</a>{% endcapture %}
-                {% assign format_links = format_links | push: format_link %}
+                <a class="btn" target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ page.formats[i] }}" href={{ link }}><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ page.formats[i] }}</a>
             {% endfor %}
-            {% if page.external_url %}or get{% else %}Get{% endif %} the {{ format_links | array_to_sentence_string: "or" }} on Google Drive{% unless page.source_url %}.{% endunless %}{% endif %}
         {% endif %}
         {% if page.source_url %}
         adapted from <a href="{{ page.source_url }}" ga-event-value="{{ value }}" target="_blank">this original</a>.
-    {% endif %}
+        {% endif %}
         </p>
+    {% endif %}
 
  </header>
   <div class="post-content">
