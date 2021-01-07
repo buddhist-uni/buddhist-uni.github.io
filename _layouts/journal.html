@@ -11,6 +11,6 @@ layout: page
 
 {{ content }}
 
-<h4>Articles:</h4>
+<h4>Articles Featured in our Library:</h4>
 {% assign series = site.content | where: "journal", page.slug %}
 {% include content_list.html contents=series keep_rejects="true" %}
