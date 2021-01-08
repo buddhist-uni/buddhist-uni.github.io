@@ -35,8 +35,20 @@
     padding-bottom: 0px;
 }
 
-.frontpage div.herotext {
+.frontpage h1, .frontpage p {
     text-align: center;
+}
+
+.frontpage .welcome h1 {
+    letter-spacing: -2px;
+    margin-bottom: 6px;
+}
+
+.frontpage .page-content {
+    padding-top: 10px;
+}
+
+.frontpage div.herotext {
     max-width: 30em;
     margin-left: auto;
     margin-right: auto;
@@ -70,7 +82,11 @@
 }
 
 .frontpage footer.site-footer p {
-    color: #aaa;
+    color: #A8A8A8;
+}
+
+.frontpage footer.site-footer .social-media-list svg {
+    fill: white;
 }
 
 .frontpage footer.site-footer li {

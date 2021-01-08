@@ -116,7 +116,7 @@ layout: default
             One of the best works in existence{% if tags %} on {% else %}.{% endif %}
         {% endcase %}
         {% if tags %}{{ tags | array_to_sentence_string: joiner }}.{% endif %}
-      <i>See <a href="{% link tags.md %}">all of our tags here</a>.
+      <i>See <a href="{% link tags.md %}">all of our tags here</a>.</i>
     </p>
  
     {% if page.course %}

@@ -42,6 +42,16 @@ figure figcaption {
     }
 }
 
+// Fix a couple rediculous bugs in the Minima theme
+.site-header {
+    z-index: 2;
+}
+
+.social-media-list .svg-icon {
+    padding: 0;
+    margin-right: 5px;
+}
+
 .site-nav {
     @include media-query($on-palm) {
         right: initial;
