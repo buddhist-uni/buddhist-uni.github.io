@@ -5,6 +5,8 @@ external_url: "https://archive.org/details/NewPaliCourse"
 description: "Begin to read the Pāli Canon in its original language, in this intermediate Pāli course taught from Gair and Karunatillake's excellent progressive reader and guided step-by-step, as always, by Bhikkhu Bodhi."
 lecturers:
   - bodhi
+tags:
+  - pali-language
 time: 3
 icon: "fab fa-product-hunt"
 next_courses:

@@ -18,15 +18,15 @@ layout: default
     {% assign editcont = site.content | where: "editor", page.slug %}
     <div>{% include content_list.html contents=contents orderby="year" %}</div>
     {% if readcont.size > 0 %}
-    <h3>Readings:</h3>
+    <h3 id="readings">Readings:</h3>
     <div>{% include content_list.html contents=readcont orderby="year" %}</div>
     {% endif %}
     {% if transcont.size > 0 %}
-    <h3>Translations:</h3>
+    <h3 id="translations">Translations by {{ page.title }}:</h3>
     <div>{% include content_list.html contents=transcont orderby="year" %}</div>
     {% endif %}
     {% if editcont.size > 0 %}
-    <h3>Edited:</h3>
+    <h3 id="edits">Edited:</h3>
     <div>{% include content_list.html contents=editcont orderby="year" %}</div>
     {% endif %}
     </div>
