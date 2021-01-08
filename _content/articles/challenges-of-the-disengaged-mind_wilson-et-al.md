@@ -4,7 +4,7 @@ authors:
   - "Timothy D. Wilson"
   - "David A. Reinhard"
   - "Erin C. Westgate"
-  - "Daniel T. Gilbert
+  - "Daniel T. Gilbert"
   - "Nicole Ellerbeck"
   - "Cheryl Hahn"
   - "Casey L. Brown"
