@@ -4,6 +4,10 @@ google_doc_id: 1egG2hjOBIy0qVkvcw5lmlLooIRo8TnYC
 description: "A line-by-line, character-by-character introduction to the art of reading ancient, Buddhist Chinese, this expansive course covers everything from the fundamentals to epigraphy and the esoteric texts."
 time: 12
 icon: "fab fa-zhihu"
+tags:
+  - agama
+  - chan-roots
+  - chinese
 next_courses:
   - tranquility-and-insight
 next_course_descs:

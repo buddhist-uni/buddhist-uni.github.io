@@ -33,6 +33,12 @@ layout: default
     {% capture clink %}<a href="{{ child.url }}">{{ child.title }}</a>{% endcapture %}
     {% assign children = children | push: clink %}
 {% endfor %}
+{% for course in site.courses %}
+    {% if course.tags contains page.slug %}
+        {% capture clink %}<i><a href="{{ course.url }}">{{ course.title }}</a> (Course)</i>{% endcapture %}
+        {% assign children = children | push: clink %}
+    {% endif %}
+{% endfor %}
 {% if children.size > 0 %}
 {% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {% if children.size <= 1 %}{{ children | first }}{% else %}<ul>
 {% for child in children %}

@@ -10,7 +10,6 @@ drive_links:
 year: 2013
 course: tranquility-and-insight
 tags:
-  - ma
   - path
 ---
 

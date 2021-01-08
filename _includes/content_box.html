@@ -1,6 +1,6 @@
 {% capture content_path %}_content/{{ include.category }}/{{ include.slug }}.md{% endcapture %}{% assign content = site.content | where: "path", content_path | first %}
 <div class="content_box">
-  <div class="content_box_header">
+  <div class="{% if content.external_url %}content_box_header{% endif %}">
     {% capture foo %}{% include content_title.html content=content %}{% endcapture %}
     {{ foo | strip_newlines }}
   </div>

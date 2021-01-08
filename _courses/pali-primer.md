@@ -4,6 +4,8 @@ google_doc_id: 104dpGWsV0Ubu8BU7WvWxhpIIe9Vz7Dev
 description: "A gentle introduction to the Pāli Language suitable for everyone, based on Lily DeSilva's excellent Primer and taught by the Most Venerable scholar, Bhikkhu Bodhi."
 lecturers:
   - bodhi
+tags:
+  - pali-language
 time: 4
 icon: "fas fa-parking"
 next_courses:

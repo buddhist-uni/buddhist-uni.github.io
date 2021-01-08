@@ -6,6 +6,9 @@ lecturers:
 icon: "fas fa-spinner"
 description: "A course on part of the Madhyama Āgama held in 2013, the sutras covered (MA 72-86) revolve around the interdependence of _samatha_ and _vipassana_ meditation and their co-creation of wisdom.  Bhikkhu Anālayo makes the difficult subject accessible in his inimitably methodical style."
 time: 1
+tags:
+  - ma
+  - meditation
 next_courses:
   - mn
   - samadhi
