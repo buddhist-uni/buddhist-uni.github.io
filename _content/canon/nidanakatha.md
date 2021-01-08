@@ -1,12 +1,15 @@
 ---
 title: "The _Nidānakathā_:  Introduction to the Jātaka Stories"
 translator: rhys-davids
+editor: anandajoti
 year: 1880
 external_url: "https://bit.ly/2IoL5Qc"
 drive_links:
   - "https://drive.google.com/file/d/1SiVunwYuMRkf3CKJJptSgbL0aOvb3MZT/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1TF6ZNE_vLvYeJxT0S7gFkTpye_1cy-UN/view?usp=drivesdk"
-publisher: pts
+source_url: "https://archive.org/details/buddhistbirthsto01daviuoft/page/n3/mode/2up"
+publisher: "Trübner"
+address: "London"
 course: buddha
 tags:
   - pali-commentaries
@@ -18,4 +21,4 @@ tags:
 
 The traditional, commentarial introduction to the Pāli Jātaka collection containing the most famous mythologized biography of the Buddha.
 
-This translation by T. W. Rhys Davids also contains his own introduction to the Jātakas, which remains worthwhile even a century later. Many thanks to [Ānandajoti Bhikkhu]({% link _authors/anandajoti.md %}) for making the book available in a polished, digital format.
+This translation by T. W. Rhys Davids also contains his own introduction to the Jātakas, which remains worth a read even a century later.
