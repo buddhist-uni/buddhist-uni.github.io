@@ -170,6 +170,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include inline_content.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
 - On what it feels like to transcend the categories
 
+{% include inline_content.html category="articles" slug="translating-buddha_bodhi" %}
+- Bhikkhu Bodhi discusses the nature of Buddhist enlightenment in order to defend using the English term "enlightenment" to describe it at all.
+- Key to his argument is that complete liberation is described as the arising of true knowledge. Once ignorance is destroyed, it will never appear again.
+
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Conclusion and Translations
 {: .nomarginbottom}
   - The Conclusion is worth a read to tie together our study of Nirvana's history.

@@ -24,10 +24,6 @@ figure figcaption {
     }
 }
 
-.killmargin {
-    margin: 0;
-}
-
 .site-title {
     @include media-query($on-palm) {
         margin-left: 40px;
@@ -42,7 +38,6 @@ figure figcaption {
     }
 }
 
-// Fix a couple rediculous bugs in the Minima theme
 .site-header {
     z-index: 2;
 }
