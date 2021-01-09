@@ -45,9 +45,9 @@ Buddhist Philosophy (right view, thought, understanding, and wisdom) is both the
 
 The Buddha starts with what we can know directly: suffering. People can mislead you about many things, but when you're suffering nobody can tell you that you're not. You can directly know this first truth yourself. This gives us the self-confidence that there are truths we can directly know and it builds our confidence in the Buddha who pointed this out. Faith leads to effort, effort leads to results, and so the whole path unfolds from the basic observation of pain.
 
-From this process we can make out a few points regarding Buddhist Philosophy. Most distinct is that it is phenomenological. Buddhist Philosophy is primarily concerned with our subjective experiences. Second, within this "event driven" rather than "object oriented" framework, we notice a distinct emphasis on cause and effect. The Buddhist universe is neither chaotic nor predetermined, but is rather conditioned by our choices. Lastly, Buddhist Philosophy is teleological. It has a goal, a purpose beyond merely describing reality. It's ultimately here to point the way out of all views, attachments, prejudices and to the direct understanding of reality itself.
+From this process we can make out a few points regarding Buddhist Philosophy. Most distinct is that it is phenomenological. Buddhist Philosophy is primarily concerned with our subjective experiences. Second, within this "event driven" rather than "object oriented" framework, we notice a distinct emphasis on cause and effect. The Buddhist universe is neither chaotic nor predetermined, but is rather conditioned by our choices. Lastly, Buddhist Philosophy is teleological. It has a goal, a purpose beyond merely describing reality. It points the way out of views, attachments, and prejudices and towards the direct understanding of reality itself.
 
-Buddhist Philosophy is thus the way of thinking which leads beyond thinking. 
+Buddhist Philosophy is thus the way of thinking which leads beyond thought. 
  
 ## Prerequisites
 
@@ -126,7 +126,7 @@ We start the course proper by talking about the founder and central figure of Bu
 
 #### Essay Time
 
-Write a page or two on which qualities of the Buddha inspire you. How would you like to be more "Buddha-like?"
+Write a page or two on which qualities of the Buddha inspire you. How would you like to be more "Buddha-like?" How does Buddhist mythology support your aspiration?
 
 ### Week 2: The Four Noble Truths
 
@@ -145,6 +145,7 @@ The very core of Buddhist Philosophy, this week we introduce the Buddha’s diag
 
 {% include inline_content.html category="canon" slug="mn63" %}
 - A Bhikkhu threatens to leave the Order unless the Buddha answers his metaphysical questions. With the simile of a man struck by a poisoned arrow, the Buddha makes plain exactly what he does and does not teach in this sutta mentioned in Bhikkhu Bodhi’s talk below.
+- Last week we learned about Buddhist cosmology, while this sutta eschews metaphysics! What gives?! How do you explain this contradiction?
 
 #### Lecture
 
@@ -154,15 +155,17 @@ The very core of Buddhist Philosophy, this week we introduce the Buddha’s diag
 
 #### Sutta Spotlight
 
-This week we've covered a lot of ground and hopefully have a firm framework off which to hang the rest of Buddhist Philosophy.  This "Sutta Spotlight" we show exactly how that "hanging" works with a vivid example from the Canon.
+This week we've covered a lot of ground and hopefully have a firm framework off which to hang the rest of Buddhist Philosophy. We explored the Four Noble Truths and we thought about why the Buddha taught what he did and what he chose not to discuss.
 
-Before reading this sutta, take a moment to consider how you would explain the relationship between the Four Noble Truths, the Four Elements, the Five Aggregates and the Twelve Links of Dependent Origination. Which would you "fit" inside the other?
+This "Sutta Spotlight" shows how that "hanging together" works with a vivid example from the Canon.
+
+But before reading this sutta, please take a moment to consider how _you_ would explain the relationship between the Four Noble Truths, the Four Material Elements, the Five Aggregates and the Twelve Links of Dependent Origination. How would you "fit" these teachings together?
 
 {% include inline_content.html category="canon" slug="mn28" %}
 - The venerable Sāriputta begins with a statement of the Four Noble Truths, which he then expounds by way of the four elements and the dependent origination of the five aggregates, showing how he fits all of the Buddha's Teachings inside the framework of the Four Noble Truths.
 
 {% include inline_content.html category="av" slug="greater-discourse-on-the-simile-of-the-elephants-footprint_yuttadhammo" %}
-- Bhante Yuttadhammo gives a brief talk on this profound sutta, revealing another layer of its profundity.
+- Bhante Yuttadhammo gives a brief talk on this profound sutta, revealing yet another (!) layer of its profundity.
 
 ### Week 3: The Nature of Reality (The First Noble Truth)
 
@@ -210,7 +213,7 @@ The five aggregates of body and mind that we cling to as constituting a “self�
 - Stopping at a potter’s workshop for a night, the Buddha meets a contemplative named Pukkusāti and gives him a profound and difficult discourse on the elements culminating in the four foundations of arahantship.
 
 {% include inline_content.html category="av" slug="mn140-explanation_sujato" %}
-- Bhante Sujato walks us through this deep sutta, one of his (and, I must say, my) favorites, giving us a bit more info on the commentarial background story as well as the sutta’s parallels.
+- Bhante Sujato walks us through this deep sutta, one of his (and, I must say, my) favorites, giving us a bit more info on the commentarial background story as well as the sutta’s parallel versions in the Mahayana Tradition.
 
 
 #### Pop Quiz!
@@ -229,17 +232,17 @@ Dependent Origination is a notoriously difficult concept in Buddhism, so before 
 - A bhikkhu named Sāti promulgates the pernicious view that consciousness transmigrates from life to life. The Buddha reprimands him with a lengthy discourse on dependent origination, showing how all phenomena of existence arise and cease through conditions.
 
 {% include inline_content.html category="av" slug="mn38-explanation_brahmali" %}
-- Ajahn Brahmali covers this sutta in his ever-cheery style.
+- Ajahn Brahmali covers this sutta in his ever-cheery style, explaining how rebirth is different from transmigration.
  
 #### Homework
 
-With that as a way of introduction, we're perhaps ready to read this week's homework and see how it all fits together.
+With that as an introduction, we're perhaps ready to read this week's homework and see how it fits together.
 
 {% include inline_content.html category="excerpts" slug="raga_analayo" %}
-- A short article on *rāga* in the the Pāli Canon, one of the critical components of the cause of suffering.
+- A short article on *rāga* in the the Pāli Canon, one of the critical components causing suffering.
 
 {% include inline_content.html category="essays" slug="practical-origination_yuttadhammo" %}
-- Bhante Yuttadhammo introduces us to Dependent Origination.
+- Bhante Yuttadhammo introduces Dependent Origination in his own way, trying to point towards its utility in practice.
 
 {% include inline_content.html category="canon" slug="sa301" %}
 - This short sutra from the Chinese Canon explains another way of understanding “The Middle Way” 
@@ -253,6 +256,7 @@ With that as a way of introduction, we're perhaps ready to read this week's home
 {% include inline_content.html category="essays" slug="purity-of-heart_geoff" %}
 - Ajahn Geoff gives a brief rebuttal to Thich Nhat Hanh and tells a short, inspiring story about his own teacher.
 
+Before the lecture, think a bit about how studying conditionality and the three characteristics made you feel. Is Buddhist Philosophy pessimistic or optimistic or both or what?
 
 #### Lecture
 
@@ -260,7 +264,8 @@ With that as a way of introduction, we're perhaps ready to read this week's home
 {: .killmargin}
 - Bhikkhu Bodhi teaches the traditional analysis of Dependent Arising. 
 
-See also: 
+See:
+{: .killmargin}
 {% include inline_content.html category="essays" slug="when-does-human-life-begin_brahm" %}
 for a EBT rebuttal of the influential Abhidhammic doctrine that life begins exactly at the moment of conception.
 
@@ -319,7 +324,7 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 
 Write a couple pages thinking honestly about the following questions:
 
-What about karma and rebirth feels right to you? Which parts do you still have a hard time accepting? How do you think this whole thing (consciousness) works? What do you think you'll experience after you die?
+What about karma and rebirth feels right to you? Which parts do you currently have a harder time accepting? Setting aside Buddhist philosophy for a moment, how do *you* imagine this whole thing works? What do you really think you'll experience after you die?
 
 ### Midterm
 
@@ -329,11 +334,11 @@ In lieu of our usual sutta lecture (or an exam!), here's some comedy instead to 
 
 ### Week 6: *Nibbāna* (The Third Noble Truth)
 
-A completely pure mind is the end of suffering. In later philosophical traditions, this unique state of “spiritual health” came to be described in ontological terms, which we will hopefully clarify somewhat this week.
+A completely pure mind is the end. In later philosophical traditions, this unique state of “spiritual health” came to be described in ontological terms, which we hope to clarify this week.
 
 #### Homework
 
-We open the week with some suttas from other collections than the MN, which Bhikkhu Bodhi will reference later in his lecture. 
+We open with some suttas from other collections than the MN, which Bhikkhu Bodhi will reference later in his lecture. 
 
 {% include inline_content.html category="canon" slug="sn38.1" %}
 - The basic definition of *nibbāna*.
@@ -374,7 +379,7 @@ What are the two Nibbana elements (*dhatu*)?
 
 ### Week 7: The Eightfold Path (The Fourth Noble Truth)
 
-This week we introduce the path of practice which leads to the state of mental purity. There's a number of beautiful and practical teachings this week, so I encourage you to keep track of what inspires you if you haven't been keeping notes already.
+This week we introduce the path of practice which leads to the state of mental purity. There's a number of beautiful and practical teachings this week, so I encourage you to keep track of what inspires you if you haven't been keeping a notebook already.
 
 #### Homework
 
@@ -382,7 +387,7 @@ This week we introduce the path of practice which leads to the state of mental p
 - Ajahn Suchart describes the path in his simple and direct way from the unique perspective of [the four *iddhipadas*](https://en.wikipedia.org/wiki/Iddhipada){:target="_blank" ga-event-value="0.25"}.
 
 {% include inline_content.html category="canon" slug="sn36.11" %}
-- One somewhat confusing point of Buddhist philosophy is that all three feelings (painful, neutral and pleasant) are included under “dukkha.” Thankfully for us, a monk at the time of the Buddha decided to ask him about it.
+- One somewhat confusing point of Buddhist philosophy is that all three feelings (painful, neutral and pleasant) are included under “dukkha.” Thankfully for us, a monk at the time of the Buddha decided to ask him about that.
 
 {% include inline_content.html category="canon" slug="mn20" %}
 - The Buddha outlines five methods for removing unwholesome thoughts, an important sutta Bhikkhu Bodhi will briefly talk about in his lecture.
