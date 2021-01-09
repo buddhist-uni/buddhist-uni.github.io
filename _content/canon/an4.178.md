@@ -8,7 +8,7 @@ drive_links: ["https://drive.google.com/file/d/1v_B_tSbFMamYro8Nvkg-5vnoWGEYzglZ
 course: path
 tags:
   - an
-  - arahat
+  - arahant
   - emptiness
   - tranquility-and-insight
   - nibbana
