@@ -15,6 +15,7 @@ tags:
   - nuns
   - asubha
   - raga
+  - bhikkhuni
 year: 1995
 ---
 

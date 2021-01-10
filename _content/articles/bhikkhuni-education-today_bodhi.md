@@ -8,6 +8,7 @@ tags:
   - west
   - western-monastic
   - nuns
+  - bhikkhuni
 course: monastic
 year: 2009
 month: may

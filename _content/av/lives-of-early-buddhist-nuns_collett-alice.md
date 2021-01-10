@@ -11,6 +11,7 @@ status: featured
 tags:
   - thig
   - nuns
+  - bhikkhuni
   - pali-commentaries
   - gender
 ---
