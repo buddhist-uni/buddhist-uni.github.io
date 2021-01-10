@@ -7,7 +7,7 @@ external_url: "https://www.bhikkhuni.net/gender-discrimination-and-the-pali-cano
 course: pali-canon
 tags: 
   - gender
-  - nuns
+  - bhikkhuni
   - hermeneutics
 drive_links: ["https://drive.google.com/file/d/1BTNK1cJIKHKtAo2kn5POU0QzLZpmv0LG/view?usp=drivesdk"]
 ---

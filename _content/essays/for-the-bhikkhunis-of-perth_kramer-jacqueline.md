@@ -9,6 +9,7 @@ course: ethics
 tags:
   - monastic
   - nuns
+  - bhikkhuni
   - australian
 ---
 

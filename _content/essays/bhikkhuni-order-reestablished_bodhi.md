@@ -8,7 +8,7 @@ month: aug
 course: philosophy
 tags:
   - monastic
-  - bhikkuni
+  - bhikkhuni
   - nuns
   - vinaya-studies
 ---

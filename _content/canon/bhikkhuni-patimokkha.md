@@ -5,8 +5,7 @@ slug: "pli-tv-bi-pm"
 status: featured
 tags:
   - monastic
-  - nuns
-  - bhikkhuni-vinaya
+  - bhikkhuni
   - pali-canon
   - vinaya-studies
   - memorizing-the-patimokkha

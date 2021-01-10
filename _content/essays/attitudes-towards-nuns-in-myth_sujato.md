@@ -8,6 +8,7 @@ month: sep
 course: vinaya-pitaka
 tags:
   - nuns
+  - bhikkhuni
   - setting
   - indian
   - myth

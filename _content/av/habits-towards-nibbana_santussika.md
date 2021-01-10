@@ -7,7 +7,11 @@ year: 2013
 month: sep
 drive_links: ["https://drive.google.com/file/d/1HL6xMd3WMm3xEZEVtUJEnoeIA0WuZV6Z/view?usp=drivesdk"]
 course: function
-tags: [meditation, nuns, ethics]
+tags:
+  - meditation
+  - nuns
+  - ethics
+  - vinaya-studies
 ---
 
 Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13){:target="_blank" ga-event-value="0.25"}.

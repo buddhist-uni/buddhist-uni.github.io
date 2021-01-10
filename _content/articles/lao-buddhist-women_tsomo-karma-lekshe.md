@@ -11,6 +11,7 @@ course: theravada
 tags:
   - laotian
   - nuns
+  - bhikkhuni
   - gender
 year: 2010
 journal: bsr
