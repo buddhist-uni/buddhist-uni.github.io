@@ -13,7 +13,6 @@ tags:
   - indian
   - ebts
   - philology
-status: featured
 drive_links: ["https://drive.google.com/file/d/1IEQDhBrks2V_XLdXX-j9i83TgKBAcZ6r/view?usp=drivesdk"]
 external_url: "https://ahandfulofleaves.files.wordpress.com/2011/11/a-philological-approach-to-buddhism_norman_tbf_1997.pdf"
 ---
