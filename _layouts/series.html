@@ -1,11 +1,20 @@
 ---
-layout: page
+layout: default
 ---
+
+
+<article class="series">
+
+  <header class="post-header">
+    <div class="back"><a href="/series/">Series</a> /</div>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
 {% if page.authors.size > 0 %}<h2 class="author">By {% include content_authors_string.html content=page hide_reader=true link=true %}</h2>{% endif %}
 {% if page.external_url %}
 <h3>Get the whole series <a target="_blank" ga-event-value="0.3" href="{{ page.external_url }}">online here</a>.</h3>
 {% endif %}
+  </header>
 
+  <div class="post-content">
 {{ content }}
 
 <h4>In the library:</h4>
@@ -21,4 +30,8 @@ layout: page
   {% endif %}
 {% endfor %}
 {% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}.</p>{% endif %}
+  </div>
+
+</article>
+
 

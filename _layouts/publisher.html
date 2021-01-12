@@ -1,12 +1,23 @@
 ---
-layout: page
+layout: default
 ---
+<article class="publisher">
+
+  <header class="post-header">
+    <div class="back"><a href="/publishers/">Publishers</a> /</div>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
 {% if page.external_url %}
 <h3><a target="_blank" href="{{ page.external_url }}">Online here</a></h3>
 {% endif %}
+  </header>
 
-{{ content }}
+  <div class="post-content">
+    {{ content }}
 
 <h4>Featured Publications:</h4>
 {% assign series = site.content | where: "publisher", page.slug %}
 {% include content_list.html contents=series keep_rejects="true" %}
+  </div>
+
+</article>
+
