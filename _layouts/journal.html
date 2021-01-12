@@ -1,6 +1,11 @@
 ---
-layout: page
+layout: default
 ---
+<article class="journal">
+
+  <header class="post-header">
+    <div class="back"><a href="/journals/">Journals</a> /</div>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
 {% if page.publisher %}
 {% assign publisher = site.publishers | where: "slug", page.publisher | first %}
 <h2>Published by {% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}</h2>
@@ -8,9 +13,16 @@ layout: page
 {% if page.external_url %}
 <h3>Find the periodical <a target="_blank" href="{{ page.external_url }}">online here</a>.</h3>
 {% endif %}
+  </header>
 
-{{ content }}
+  <div class="post-content">
+    {{ content }}
 
 <h4>Articles Featured in our Library:</h4>
 {% assign series = site.content | where: "journal", page.slug %}
 {% include content_list.html contents=series keep_rejects="true" %}
+
+  </div>
+
+</article>
+

@@ -1,3 +1,7 @@
+main.page-content {
+    padding: 15px 0;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -217,6 +221,10 @@ header.post-header h3.translator {
     font-style: italic;
 }
 
+article.course {
+    padding-top: 15px;
+}
+
 article.course .post-header p {
     margin-bottom: 0px;
 }
@@ -239,8 +247,9 @@ article.tag div.tagged_content {
     font-size: 105%;
 }
 
-article.content-perma .content_links {
-    font-size: 19px;
+article.content-perma .content_links .source {
+    position: relative;
+    top: 2px;
 }
 
 article.content-perma .content_links .btn {

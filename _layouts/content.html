@@ -46,9 +46,13 @@ layout: default
     {%- endif -%}
 {%- endunless -%}
 
+{%- capture cat_filter -%}c.path == "content/{{ page.category }}.md"{%- endcapture -%}
+{%- assign category = site.pages | where_exp: "c", cat_filter | first -%}
+
 <article class="content-perma">
 
   <header class="post-header">
+    <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% include content_icon.html category=page.category %} {{ title | first }}</h1>
     {% if title.size > 1 %}<h2 class="post-subtitle">{{ title | shift | join: ": " }}</h2>{% endif %}
@@ -80,9 +84,9 @@ layout: default
                 <a class="btn" target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ page.formats[i] }}" href={{ link }}><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ page.formats[i] }}</a>
             {% endfor %}
         {% endif %}
-        {% if page.source_url %}
+        {% if page.source_url %}<span class="source">
         adapted from <a href="{{ page.source_url }}" ga-event-value="{{ value }}" target="_blank">this original</a>.
-        {% endif %}
+        </span>{% endif %}
         </p>
     {% endif %}
 
@@ -192,14 +196,11 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
          {% assign similars = similars | concat: nears %}
        {% endif %}
        {% if similars.size > site.data.content.max_similars %}
-         {% assign category = page.category %}
-         {% capture filter %}c.path contains '/{{ category }}/'{% endcapture %}
+         {% capture filter %}c.path contains '/{{ page.category }}/'{% endcapture %}
          {% assign filtered = similars | where_exp: "c", filter %}
          {% if filtered.size > 0 %}
            {% assign similars = filtered %}
          {% else %}
-          {% capture cat_filter %}c.path == "content/{{ category }}.md"{% endcapture %}
-          {% assign category = site.pages | where_exp: "c", cat_filter | first %}
           {% for cat in category.similars %}
             {% capture filter %}c.path contains '/{{ cat }}/'{% endcapture %}
             {% assign f = similars | where_exp: "c", filter %}
