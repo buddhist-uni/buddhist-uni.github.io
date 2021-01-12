@@ -9,7 +9,7 @@ status: featured
 tags:
   - activism
   - engaged
-publisher: vox
+journal: vox
 ---
 
 > Set aside all the social norms we have, the expectations we have about who animals are or what is appropriate to do for animals and just ask: What would you do---what do you think the right thing to do is---if you saw an animal suffering?
