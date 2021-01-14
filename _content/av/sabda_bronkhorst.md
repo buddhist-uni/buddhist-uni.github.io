@@ -1,0 +1,14 @@
+---
+title: "Śabda: Language in Classical Indian Thought"
+authors:
+  - "Johannes Bronkhorst"
+external_url: "https://newbooksnetwork.com/johannes-bronkhorst-a-sabda-reader-language-in-classical-indian-thought-columbia-up-2019"
+course: indian
+tags:
+  - mahayana-roots
+  - language
+year: 2020
+month: july
+---
+
+An excellent walk-through of the classical Indian philosophies of language: from the Sanskrit grammars of Pini and Patanjali, to Brahmanical realism, Buddhist scepticism, and Jain agnosticism.
