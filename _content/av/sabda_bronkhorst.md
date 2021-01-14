@@ -9,6 +9,7 @@ tags:
   - language
 year: 2020
 month: july
+publisher: nbn
 ---
 
 An excellent walk-through of the classical Indian philosophies of language: from the Sanskrit grammars of Pini and Patanjali, to Brahmanical realism, Buddhist scepticism, and Jain agnosticism.

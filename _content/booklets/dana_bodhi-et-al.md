@@ -2,7 +2,7 @@
 title: "Dāna: The Practice of Giving"
 authors:
   - bodhi
-  - jootla-se
+  - jootla
   - desilva
   - walshe
   - gorkom
