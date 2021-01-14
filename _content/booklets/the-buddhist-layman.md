@@ -2,7 +2,7 @@
 title: "The Buddhist Layman: Four Essays"
 authors:
   - bogoda-r
-  - jootla-se
+  - jootla
   - walshe
 external_url: "https://www.bps.lk/library-search-select.php?id=wh294"
 formats: [pdf, epub]
