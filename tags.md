@@ -9,7 +9,9 @@ Here you'll find our library of free content on Buddhism arranged by topic. For 
 {% comment %}Hardcoded for now. Maybe some day I'll automate this list.{% endcomment %}
 - [Buddhism]({% link _tags/buddhism.md %})
     - [The Early Buddhist Texts]({% link _tags/ebts.md %})
+        - [The Buddha]({% link _tags/buddha.md %})
         - [Imagery in the EBTs]({% link _tags/imagery.md %})
+        - [The Āgamas]({% link _tags/agama.md %})
         - [The Aṅguttara Nikāya]({% link _tags/an.md %})
         - [The Digha Nikāya]({% link _tags/dn.md %})
         - [The Dīrgha Āgama]({% link _tags/da.md %})
@@ -21,7 +23,6 @@ Here you'll find our library of free content on Buddhism arranged by topic. For 
         - [The Saṃyutta Nikāya]({% link _tags/sn.md %})
         - [The Suttas]({% link _tags/sutta.md %})
         - [The Vinaya]({% link _tags/vinaya-pitaka.md %})
-        - [The Āgamas]({% link _tags/agama.md %})
     - [The Form(s) of Buddhism]({% link _tags/form.md %})
         - [Lay Buddhism]({% link _tags/lay.md %})
         - [Mahayana Buddhism]({% link _tags/mahayana.md %})

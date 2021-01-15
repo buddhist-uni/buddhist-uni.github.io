@@ -2,14 +2,22 @@
 title: Welcome to the Open Buddhist University
 ---
 
-# Preface
+# Epigraphs
 
 > On the third day of the year 47 BC, the most renowned library of antiquity burned to the ground.  
 >  
 > Throughout the history of humanity, only one refuge kept books safe from war and conflagration: the walking library, an idea that occurred to the grand vizier of Persia, Abdul Kassem Ismael, at the end of the tenth century.  
 >  
 > This prudent and tireless traveler kept his library with him. One hundred and seventeen thousand books aboard four hundred camels formed a caravan a mile long. The camels were also the catalogue  
+>  
 > ~ "January 3rd" from *Children of the Days* by Eduardo Galeano
+
+> Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
+> Without achieving any success in meditation,  
+> He has instead compiled these treatises  
+> As a burden for an elephant’s back.  
+>  
+> ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
 # Introduction
 
