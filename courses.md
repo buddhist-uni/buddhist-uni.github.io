@@ -4,7 +4,7 @@ title: Courses
 permalink: /courses/
 ---
 
-The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into self-paced, free courses on a variety of topics in Buddhist Studies. We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism:
+The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into self-paced, free courses on a variety of [topics in Buddhist Studies]({% link tags.md %}). We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism:
 
 {% for cslug in site.data.course_order %}
 {% assign course = site.courses | where: "slug", cslug | first %}
