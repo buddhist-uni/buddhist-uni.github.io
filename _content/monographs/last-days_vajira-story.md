@@ -12,6 +12,7 @@ tags:
   - buddha
   - dn
   - indian
+  - death
 status: featured
 ---
 
