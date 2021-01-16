@@ -16,4 +16,4 @@ tags:
 status: featured
 ---
 
-A classic and beautiful translation of this important and immersive tale from the Pāli Canon. 
+A classic translation of this important and immersive tale from the Pāli Canon. 

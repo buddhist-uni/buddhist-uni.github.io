@@ -10,7 +10,7 @@ tags:
   - philosophy
   - ebts
   - pedagogy
-  - buddha
+  - craft
 year: 2009
 publisher: bps
 ---

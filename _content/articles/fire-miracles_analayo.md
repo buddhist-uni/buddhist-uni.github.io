@@ -6,7 +6,13 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 drive_links:
   - "https://drive.google.com/file/d/1F-Ft5Qit0YvmR2y-yhlqUpWpTbL0gsWv/view?usp=drivesdk"
 course: imagery
-tags: [dn, buddha, indian, setting, iddhis]
+tags:
+  - dn
+  - buddha
+  - indian
+  - setting
+  - iddhis
+  - art
 year: 2015
 journal: jocbs
 volume: 11
