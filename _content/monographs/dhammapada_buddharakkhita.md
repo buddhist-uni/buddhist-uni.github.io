@@ -26,6 +26,6 @@ year: 1959
 publisher: bps
 ---
 
-A classic translation of this classic book of poetry from the Pāli Canon.
+A classic translation of the primary book of poetry from the Pāli Canon.
 
-This particular translation has had an enormous impact on the English language scholarship, being the first reliable and elegant translation of the book in the tradition. Most translations since (and there have been many!) have followed Venerable Buddharakkhita's impeccable reading.
+This translation had a large impact on Pāli scholarship, being the first reliable and beautiful translation of the book in English. Every translation since (and there have been many!) is deeply indebted to Venerable Buddharakkhita's thoughtful rendering, now available for free through the generosity of the BPS.
