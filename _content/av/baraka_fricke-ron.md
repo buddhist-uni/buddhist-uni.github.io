@@ -6,6 +6,8 @@ course: world
 tags:
   - film
   - ambulit
+  - nature
+  - modernity
 status: featured
 publisher: "Magidson Films"
 ---
