@@ -34,6 +34,9 @@
       {% assign nears = similars %}
       {% assign similars = '' | split: '' | push: content %}
       {% assign target_similarity = score %}
+    {% elsif score > nearly %}
+      {% assign nears = '' | split: '' | push: content %}
+      {% assign nearly = score %}
     {% endif %}
    {% endfor %}
    {% if similars.size < site.data.content.min_similars %}
