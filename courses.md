@@ -23,7 +23,7 @@ The University organizes [content]({% link library.md %}) from [across the Web](
   </div>
   <div class="featuringrow">
     <div class="flabel"><strong>Featuring</strong>:</div>
-    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-chalkboard-teacher"></i> {% include content_authors_string.html authors=course.lecturers %}</div>{% endif %}
+    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include content_authors_string.html authors=course.lecturers %}</div>{% endif %}
     {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include content_authors_string.html authors=bauthors %}</div>{% endif %}
   </div>
 </div>
