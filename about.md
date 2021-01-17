@@ -8,10 +8,10 @@ The Open Buddhist University is run by Than Khemarato and is based on his
 where he organizes his own studies of Buddhism. He hopes that you will find this website useful and welcomes
 any feedback at the email below.
 
-You can find him and other devotees of Early Buddhism at [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/){:target="_blank" ga-event-value="0.2"}
+You can find him and other devotees of Early Buddhism at [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"}
  
 ![yaktocat]({% link assets/imgs/yaktocat.png %})
-50% feline, 50% cephalopod, and 100% fierce Dharma Protector, our university mascot is the **Yaktocat**.
+50% feline 🐱, 50% cephalopod 🐙, and 100% Fierce Dharma Protector 👹, our university mascot is the **Yaktocat**.
 
 
 _Homepage background image by [flowcomm](https://www.flickr.com/people/21162417@N07)_
