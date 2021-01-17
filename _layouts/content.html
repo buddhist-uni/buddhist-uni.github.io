@@ -155,73 +155,7 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
       </script>
       </div>
     </details>
-    
-    {% assign possible = tagslugs.size | plus: page.authors.size %}
-    {% if possible >= site.data.content.min_similarity_score %}
-       {% assign similars = '' | split: '' %}
-       {% assign target_similarity = site.data.content.min_similarity_score %}
-       {% assign nears = '' | split: '' %}
-       {% assign nearly = target_similarity | minus: 1 %}
-       {% for content in site.content %}
-        {% if content.status == "rejected" or content.path == page.path %}{% continue %}{% endif %}
-        {% assign possible = content.tags.size | plus: content.authors.size %}
-        {% if content.course %}
-          {% assign possible = possible | plus: 1 %}
-        {% endif %}
-        {% if possible < nearly %}{% continue %}{% endif %}
-        {% if tagslugs contains content.course %}
-          {% assign score = 1 %}
-        {% else %}
-          {% assign score = 0 %}
-        {% endif %}
-        {% assign authscore = content.authors | where_exp: "i", "page.authors contains i" | size %}
-        {% assign tagscore = content.tags | where_exp: "i", "tagslugs contains i" | size %}
-        {% assign score = score | plus:  authscore | plus: tagscore %}
-        {% if score == target_similarity %}
-          {% assign similars = similars | push: content %}
-        {% elsif score == nearly %}
-          {% assign nears = nears | push: content %}
-        {% elsif score > target_similarity %}
-          {% assign nearly = score | minus: 1 %}
-          {% if target_similarity == nearly %}
-            {% assign nears = similars %}
-          {% else %}
-            {% assign nears = '' | split: '' %}
-          {% endif %}
-          {% assign similars = '' | split: '' | push: content %}
-          {% assign target_similarity = score %}
-        {% endif %}
-       {% endfor %}
-       {% if similars.size < site.data.content.min_similars %}
-         {% assign similars = similars | concat: nears %}
-       {% endif %}
-       {% if similars.size > site.data.content.max_similars %}
-         {% capture filter %}c.path contains '/{{ page.category }}/'{% endcapture %}
-         {% assign filtered = similars | where_exp: "c", filter %}
-         {% if filtered.size > 0 %}
-           {% assign similars = filtered %}
-         {% else %}
-          {% for cat in category.similars %}
-            {% capture filter %}c.path contains '/{{ cat }}/'{% endcapture %}
-            {% assign f = similars | where_exp: "c", filter %}
-            {% assign filtered = filtered | concat: f %}
-          {% endfor %}
-          {% if filtered.size > 0 %}
-            {% assign similars = filtered %}
-          {% endif %}
-         {% endif %}
-       {% endif %}
-       {% if similars.size > site.data.content.max_similars %}
-         {% assign filtered = similars | where: "status", "featured" %}
-         {% if filtered.size > 0 %}{% assign similars = filtered %}{% endif %}
-       {% endif %}
-       {% if similars.size > 0 %}<div class="similar_content_footer">
-         <p>You may also be interested in:</p>
-         <ul>{% for c in similars %}
-           <li>{% include simple_content_title.html content=c %}</li>
-         {% endfor %}</ul>
-       </div>{% endif %}
-    {% endif %}
+  {% include similar_content_footer.html tagslugs=tagslugs content=page %}
   </footer>
 
 </article>
