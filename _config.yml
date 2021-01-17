@@ -75,6 +75,9 @@ collections:
   posts:
      output: true
      permalink: blog/:year/:month/:day/:title
+  tests:
+     output: true
+     permalink: /:collection/:path
 
 defaults:
   -

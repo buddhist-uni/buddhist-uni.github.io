@@ -24,7 +24,7 @@ Here you'll find our library of free content on Buddhism arranged by topic. For 
         - [Imagery in the EBTs]({% link _tags/imagery.md %})
         - [The Āgamas]({% link _tags/agama.md %})
         - [The Pāli Canon]({% link _tags/pali-canon.md %})
-        {% comment %}
+        {%- comment -%}
         - [The Aṅguttara Nikāya]({% link _tags/an.md %})
         - [The Digha Nikāya]({% link _tags/dn.md %})
         - [The Dīrgha Āgama]({% link _tags/da.md %})
