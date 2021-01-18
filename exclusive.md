@@ -9,11 +9,9 @@ Here you will find links to the content on the site which (to my knowledge) is d
 <div>
 {% assign categories = "av,essays,reference" | split: ',' %}
 {% for category_slug in categories %}
-    {% capture cpath %}content/{{ category_slug }}.md{% endcapture %}
-    {% assign category = site.pages | where: "path", cpath | first %}
+    {% assign category = site.categories | where: "slug", category_slug | first %}
     <h1>{{ category.title }}</h1>
-    {% capture filter %}c.path contains '/{{ category_slug }}/'{% endcapture %}
-    {% assign contents = site.content | where_exp: "c", filter %}
+    {% assign contents = site.content | where: "category", category_slug %}
     {% assign contents = contents | where_exp: "c", "c.drive_links.size > 0" %}
     {% assign contents = contents | where_exp: "c", "c.external_url == nil" %}
     <div>{% include content_list.html contents=contents orderby="slug" %}</div>

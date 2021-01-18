@@ -2,7 +2,7 @@
 title: "May Flowers"
 ---
 
-This months readings are back to basics. There are two new topical reading lists on [Monastic Buddhism]({% link _tags/monastic.md %}) and [Buddhist Ethics]({% link _tags/ethics.md %}) and I've added a number of [suttas]({% link content/canon.md %}) to the library.
+This months readings are back to basics. There are two new topical reading lists on [Monastic Buddhism]({% link _tags/monastic.md %}) and [Buddhist Ethics]({% link _tags/ethics.md %}) and I've added a number of [suttas]({% link _categories/canon.md %}) to the library.
 
 There's a lot of good stuff there to check out, but here are a few especially nice flowers just for you:
 

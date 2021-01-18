@@ -1,3 +1,20 @@
-min_similarity_score: 2
-max_similars: 7
-min_similars: 2
+### Content Similarity Algorithm Parameters
+## Number of similar works to recommend
+similar_count: 10
+
+## Algorithm paramaters
+# Not tuned scientifically. Just guessing at appropriate values
+s_i: 0.1 # numerator prior
+d_i: 1 # denominator prior
+tdms: 2 # tag denom increment
+cdms: 2 # course denom increment
+adms: 1 # author denom increment
+ccms: 1.4 # course-course match numerator inc
+ctms: 1.2 # course-tag match score
+ttms: 1.1 # tag-tag match score
+aams: 1.1 # author-author match score 
+ccmm: 1.2 # category match multiplier
+scmm: 1.1 # similar category multiplier
+fcmm: 1.2 # featured content multiplier
+tsmm: 0.7 # two star content multiplier
+

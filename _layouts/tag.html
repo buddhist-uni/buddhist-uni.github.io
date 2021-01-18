@@ -57,10 +57,8 @@ layout: default
 {% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% for catslug in categories %}
-  {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
-  {% assign category = site.pages | where_exp: "c", cat_filter | first %}
-  {% capture cat_filter %}c.path contains '/{{ catslug }}/'{% endcapture %}
-  {% assign cat_content = all_content | where_exp: "c", cat_filter %}
+  {% assign category = site.categories | where: "slug", catslug | first %}
+  {% assign cat_content = all_content | where: "category", catslug %}
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
   {% assign series_content = site.series | where: "category", catslug | where_exp: "c", filter_exp %}

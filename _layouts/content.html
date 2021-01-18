@@ -46,8 +46,7 @@ layout: default
     {%- endif -%}
 {%- endunless -%}
 
-{%- capture cat_filter -%}c.path == "content/{{ page.category }}.md"{%- endcapture -%}
-{%- assign category = site.pages | where_exp: "c", cat_filter | first -%}
+{%- assign category = site.categories | where: "slug", page.category | first -%}
 
 <article class="content-perma">
 
@@ -155,7 +154,7 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
       </script>
       </div>
     </details>
-  {% include similar_content_footer.html tagslugs=tagslugs content=page %}
+  {% include similar_content_footer.html category=category content=page %}
   </footer>
 
 </article>

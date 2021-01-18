@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buddhist-uni.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-159403467-1
-github_username:  buddhist-uni
+github_username:  buddhist-uni/buddhist-uni.github.io
 tinyletter_username: buddhist-uni
 header_pages: [courses.md, library.md, blog.md, about.md]
 timezone: "Asia/Bangkok"
@@ -53,7 +53,7 @@ permalink: pretty
 collections:
   authors:
      output: true
-     permalink: /:collection/:name
+     permalink: /:collection/:path
   content:
      output: true
      permalink: /:collection/:path
@@ -62,16 +62,19 @@ collections:
      permalink: /:collection/:path
   publishers:
      output: true
-     permalink: /:collection/:name
+     permalink: /:collection/:path
   journals:
      output: true
-     permalink: /:collection/:name
+     permalink: /:collection/:path
   courses:
      output: true
      permalink: /:collection/:path
   tags:
      output: true
      permalink: /:collection/:name
+  categories:
+     output: true
+     permalink: /content/:path
   posts:
      output: true
      permalink: blog/:year/:month/:day/:title
@@ -137,8 +140,8 @@ defaults:
         base_value: 0.2
   -
     scope:
-        path: "content"
-        type: "pages"
+        path: ""
+        type: "categories"
     values:
         layout: "content-category"
   -

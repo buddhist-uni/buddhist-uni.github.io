@@ -4,6 +4,7 @@ authors:
   - popova
 course: sex
 tags:
+  - consent
   - speech
   - communication
   - people

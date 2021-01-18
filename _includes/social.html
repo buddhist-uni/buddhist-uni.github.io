@@ -1,5 +1,5 @@
 <ul class="social-media-list">
   {%- if site.tinyletter_username -%}<li><a href="https://tinyletter.com/{{ site.tinyletter_username | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/tinyletter-icon.svg#theicon' | relative_url }}"></use></svg> <span class="username" style="font-style: italic; font-family: Georgia, Times, serif;">TinyLetter</span></a></li>{%- endif -%}
-  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a></li>{%- endif -%}
+  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a></li>{%- endif -%}
   {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
 </ul>

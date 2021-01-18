@@ -1,6 +1,6 @@
 ---
 title: "Effects of mindful-attention and compassion meditation training on amygdala response to emotional stimuli in an ordinary, non-meditative state"
-authors: ["Gaëlle Desbordes", "Lobsang T. Negi", "Thaddeus W. W. Pace", "B. Alan Wallace", "Charles L. Raison", "Eric L. Schwartz"]
+authors: ["Gaëlle Desbordes and others"]
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485650/"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1A0RQMfI9m8C8FlArzgpox-ViVMwn4vcv/view?usp=drivesdk"]

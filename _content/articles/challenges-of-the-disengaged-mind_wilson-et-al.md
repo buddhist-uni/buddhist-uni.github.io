@@ -1,14 +1,7 @@
 ---
 title: "Just Think: The challenges of the disengaged mind"
 authors:
-  - "Timothy D. Wilson"
-  - "David A. Reinhard"
-  - "Erin C. Westgate"
-  - "Daniel T. Gilbert"
-  - "Nicole Ellerbeck"
-  - "Cheryl Hahn"
-  - "Casey L. Brown"
-  - "Adi Shaked"
+  - "Timothy D. Wilson and others"
 external_url: "https://science.sciencemag.org/content/345/6192/75"
 drive_links:
   - "https://drive.google.com/file/d/1L0wRAPy8Locfe79c0CKjLUbT1H2iUrJn/view?usp=drivesdk"

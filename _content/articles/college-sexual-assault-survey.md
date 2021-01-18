@@ -6,6 +6,9 @@ course: world
 tags:
   - gender
   - people
+  - sex
+  - consent
+  - ethics
 year: 2015
 journal: "CNN"
 ---

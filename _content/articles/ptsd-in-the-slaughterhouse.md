@@ -9,6 +9,9 @@ course: ethics
 tags:
   - lay
   - animals
+  - becon
+  - karma
+  - livelihood
 ---
 
 > The worst thing, worse than the physical danger, is the emotional toll. 
