@@ -1,6 +1,6 @@
 ---
 title: "Impact of meditation training on the default mode network during a restful state"
-authors: ["Taylor, et al"]
+authors: ["Véronique A. Taylor and others"]
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3541485/"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1g2lEKe9KVkGIoA7r6IH4Z-a6ybE3pAjm/view?usp=drivesdk"]

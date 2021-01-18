@@ -38,8 +38,7 @@
   {% assign cat_serieses = serieses | where: "category", catslug %}
   {% assign tagged_content = cat_serieses | concat: cat_content %}
   {% if tagged_content.size > 0 %}
-    {% capture cat_filter %}c.path == "content/{{ catslug }}.md"{% endcapture %}
-    {% assign category = site.pages | where_exp: "c", cat_filter | first %}
+    {% assign category = site.categories | where: "slug", catslug | first %}
     <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
     <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
   {% endif %}

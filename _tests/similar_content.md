@@ -35,7 +35,7 @@ test_cases:
     - [buzz-buzz-buzz_michelle-nijhuis, should-trees-have-standing_stone-chris]
     - [college-sexual-assault-survey, sexual-consent_popova]
     - [sexual-consent_popova, what-every-body-is-saying_navarro-joe]
-    - [compassionate-killing_gethin, war-and-peace_bodhi-geoff]
+    - [compassionate-killing_gethin, trolly-car-dilemma_pandita]
     - [historical-authenticity_wynne, authenticity_sujato-brahmali]
     - [did-the-buddha-exist_wynne, in-search-of-the-real-buddha_harvey]
     - [giving-makes-us-happy, meditation-moral-obligation_vox]

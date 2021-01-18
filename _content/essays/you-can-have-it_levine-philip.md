@@ -11,7 +11,8 @@ tags:
   - people
   - function
   - time
-  - thought
+  - livelihood
+  - karma
 ---
 
 > I give you back 1948.  

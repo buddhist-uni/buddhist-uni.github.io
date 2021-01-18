@@ -1,12 +1,12 @@
 ---
 title: "Dāna: The Practice of Giving"
 authors:
-  - bodhi
   - jootla
   - desilva
   - walshe
   - gorkom
   - "Ācariya Dhammapāla"
+editor: bodhi
 external_url: "https://www.bps.lk/library-search-select.php?id=wh367"
 formats: [pdf, epub]
 drive_links:

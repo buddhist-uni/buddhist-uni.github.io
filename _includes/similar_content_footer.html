@@ -1,72 +1,90 @@
-{%- assign tagslugs = include.tagslugs -%}
-{% unless tagslugs %}
-    {% assign tagslugs = '' | split: '' %}
-    {% if include.content.course %}{% assign tagslugs = include.content.course | split: ',' %}{% endif %}
-    {% if include.content.tags.size > 0 %}{% assign tagslugs = tagslugs | concat: include.content.tags %}{% endif %}
+{%- assign scores = '' | split: '' -%}
+{% assign similars = '' | split: '' %}
+{% for i in (1..site.data.content.similar_count) %}
+    {% assign similars = similars | push: 0 %}
+    {% assign scores = scores | push: 0 %}
+{% endfor %}
+{% assign category = include.category %}
+{% unless category %}
+    {%- assign category = site.categories | where: "slug", include.content.category | first -%}
 {% endunless %}
-{%- assign possible = tagslugs.size | plus: include.content.authors.size -%}
-{%- if possible >= site.data.content.min_similarity_score -%}
-   {%- assign similars = '' | split: '' -%}
-   {% assign target_similarity = site.data.content.min_similarity_score %}
-   {% assign nears = '' | split: '' %}
-   {% assign nearly = target_similarity | minus: 1 %}
-   {% for content in site.content %}
-    {% if content.status == "rejected" or content.path == include.content.path %}{% continue %}{% endif %}
-    {% assign possible = content.tags.size | plus: content.authors.size %}
-    {% if content.course %}
-      {% assign possible = possible | plus: 1 %}
-    {% endif %}
-    {% if possible < nearly %}{% continue %}{% endif %}
-    {% if tagslugs contains content.course %}
-      {% assign score = 1 %}
-    {% else %}
-      {% assign score = 0 %}
-    {% endif %}
-    {% assign authscore = content.authors | where_exp: "i", "include.content.authors contains i" | size %}
-    {% assign tagscore = content.tags | where_exp: "i", "tagslugs contains i" | size %}
-    {% assign score = score | plus:  authscore | plus: tagscore %}
-    {% if score == target_similarity %}
-      {% assign similars = similars | push: content %}
-    {% elsif score == nearly %}
-      {% assign nears = nears | push: content %}
-    {% elsif score > target_similarity %}
-      {% assign nearly = target_similarity %}
-      {% assign nears = similars %}
-      {% assign similars = '' | split: '' | push: content %}
-      {% assign target_similarity = score %}
-    {% elsif score > nearly %}
-      {% assign nears = '' | split: '' | push: content %}
-      {% assign nearly = score %}
-    {% endif %}
-   {% endfor %}
-   {% if similars.size < site.data.content.min_similars %}
-     {% assign similars = similars | concat: nears %}
-   {% endif %}
-   {% if similars.size > site.data.content.max_similars %}
-     {% capture filter %}c.path contains '/{{ include.content.category }}/'{% endcapture %}
-     {% assign filtered = similars | where_exp: "c", filter %}
-     {% if filtered.size > 0 %}
-       {% assign similars = filtered %}
-     {% else %}
-      {% for cat in category.similars %}
-        {% capture filter %}c.path contains '/{{ cat }}/'{% endcapture %}
-        {% assign f = similars | where_exp: "c", filter %}
-        {% assign filtered = filtered | concat: f %}
-      {% endfor %}
-      {% if filtered.size > 0 %}
-        {% assign similars = filtered %}
+
+{% for candidate in site.content %}
+    {% if candidate.status == "rejected" or candidate.path == include.content.path %}{% continue %}{% endif %}
+    {% assign score = site.data.content.s_i %}
+    {% assign denom = site.data.content.d_i %}
+    {% if include.content.course %}
+      {% if include.content.course == candidate.course %}
+        {% assign score = site.data.content.ccms %}
       {% endif %}
-     {% endif %}
-   {% endif %}
-   {% if similars.size > site.data.content.max_similars %}
-     {% assign filtered = similars | where: "status", "featured" %}
-     {% if filtered.size > 0 %}{% assign similars = filtered %}{% endif %}
-   {%- endif -%}
-   {%- if similars.size > 0 -%}<div class="similar_content_footer">
-     <p>You may also be interested in:</p>
-     <ul>{% for c in similars %}
-       <li>{% include simple_content_title.html content=c %}</li>
-     {% endfor %}</ul>
-   </div>{% endif %}
-{% endif %}
+      {% if candidate.tags.size > 0 %}
+        {% if candidate.tags contains include.content.course %}
+          {% assign score = score | plus: site.data.content.ctms %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% if candidate.course %}
+      {% assign denom = denom | plus: site.data.content.cdms %}
+      {% if include.content.tags contains candidate.course %}
+        {% assign score = score | plus: site.data.content.ctms %}
+      {% endif %}
+    {% endif %}
+    {% if candidate.tags.size > 0 %}
+      {% assign inc = candidate.tags.size | times: site.data.content.tdms %}
+      {% assign denom = denom | plus: inc %}
+      {% if include.content.tags.size > 0 %}
+        {% for t in include.content.tags %}
+          {% if candidate.tags contains t %}
+            {% assign score = score | plus: site.data.content.ttms %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+    {% if candidate.authors.size > 0 and include.content.authors.size > 0 %}
+      {% assign inc = candidate.authors.size | times: site.data.content.adms %}
+      {% assign denom = denom | plus: inc %}
+      {% for a in include.content.authors %}
+        {% if candidate.authors contains a %}
+          {% assign score = score | plus: site.data.content.aams %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if include.content.category == candidate.category %}
+        {% assign score = score | times: site.data.content.ccmm %}
+    {% elsif category.similars contains candidate.category %}
+        {% assign score = score | times: site.data.content.scmm %}
+    {% endif %}
+    {% if candidate.status == "featured" %}
+        {% assign score = score | times: site.data.content.fcmm %}
+    {% elsif candidate.course == nil %}
+        {% assign score = score | times: site.data.content.tsmm %}
+    {% endif %}
+    {% assign score = score | times: score %}
+    {% assign score = score | divided_by: denom %}
+    {% assign minscore = scores | last %}
+    {% if score > minscore %}
+        {% assign ai = 0 %}
+        {% assign nsa = '' | split: '' %}
+        {% assign nss = '' | split: '' %}
+        {% for i in (1..site.data.content.similar_count) %}
+          {% if scores[ai] >= score %}
+            {% assign nss = nss | push: scores[ai] %}
+            {% assign nsa = nsa | push: similars[ai] %}
+            {% assign ai = ai | plus: 1 %}
+          {% else %}
+            {% assign nss = nss | push: score %}
+            {% assign nsa = nsa | push: candidate %}
+            {% assign score = -1 %}
+          {% endif %}
+        {% endfor %}
+        {% assign scores = nss %}
+        {% assign similars = nsa %}
+    {% endif %}
+{%- endfor -%}
+<div class="similar_content_footer">
+ <p>You may also be interested in:</p>
+ <ul>{% for c in similars %}
+   <li>{% include simple_content_title.html content=c %}</li>
+ {% endfor %}</ul>
+</div>
 

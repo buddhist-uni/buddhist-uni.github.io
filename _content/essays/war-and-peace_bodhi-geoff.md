@@ -7,9 +7,11 @@ drive_links: ["https://drive.google.com/file/d/1S2YAlwEXc-Y3eH8gYmOXDHqmy9-HiT7x
 course: ethics
 status: featured
 tags:
-  - lay
+  - karma
+  - mara
   - becon
   - power
+  - violence
   - wwii
 ---
 

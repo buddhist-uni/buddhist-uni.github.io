@@ -16,6 +16,7 @@ tags:
   - psychology
   - power
   - thought
+  - violence
 year: 2004
 journal: jbe
 volume: 11
