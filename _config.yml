@@ -26,6 +26,7 @@ github_username:  buddhist-uni/buddhist-uni.github.io
 tinyletter_username: buddhist-uni
 header_pages: [courses.md, library.md, blog.md, about.md]
 timezone: "Asia/Bangkok"
+doi: "10.5281/zenodo.4448510"
 
 # Build settings
 markdown: kramdown
