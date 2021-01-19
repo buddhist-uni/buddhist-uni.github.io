@@ -2,6 +2,7 @@
 title: "Illness as Metaphor"
 authors: [sontag]
 formats: [pdf]
+file_links: ["/exclusive_01/Illness%20As%20Metaphor%20-%20Susan%20Sontag.pdf"]
 drive_links: ["https://drive.google.com/file/d/1MphpNMGWJ0SnUnoPmM8CpNmB1YYnE6VV/view?usp=drivesdk"]
 journal: nyrb
 year: 1978

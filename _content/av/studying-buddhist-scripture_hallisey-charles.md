@@ -3,6 +3,8 @@ title: "Studying Buddhist Scripture"
 authors: [hallisey-charles]
 year: 2018
 month: may
+file_links:
+  - "/exclusive_01/Studying%20Buddhist%20Scripture%20(2019-05-22)%20-%20Charles%20Hallisey.m4a"
 source_url: "https://wisdomexperience.org/wisdom-podcast/charles-hallisey/"
 drive_links: ["https://drive.google.com/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk"]
 formats: [m4a]
