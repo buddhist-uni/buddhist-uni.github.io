@@ -2,13 +2,7 @@
 title: Behind the Scenes
 ---
 
-> On the third day of the year 47 BC, the most renowned library of antiquity burned to the ground.  
->  
-> Throughout the history of humanity, only one refuge kept books safe from war and conflagration: the walking library, an idea that occurred to the grand vizier of Persia, Abdul Kassem Ismael, at the end of the tenth century.  
->  
-> This prudent and tireless traveler kept his library with him. One hundred and seventeen thousand books aboard four hundred camels formed a caravan a mile long. The camels were also the catalogue  
->  
-> ~ "January 3rd" from *Children of the Days* by Eduardo Galeano
+[![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)
 
 > Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
 > Without achieving any success in meditation,  
@@ -34,7 +28,7 @@ Given that I'm a Buddhist monk, naturally my personal library represents a cours
 
 In translating this proud, ancient tradition to the digital age, different constraints and possibilities emerged. Reflecting on the structure of the internet, I opted to express myself in a giant [mind map](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418). 
 
-As a map of my mind, this library contains (editorially and structurally) my own biases. This is a feature not a bug. I named my camels with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐪
+As a map of my mind, this library contains (editorially and structurally) my own biases. This is a feature not a bug. I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
 
 # Studying
 
@@ -70,17 +64,17 @@ You can think of each of the folders in [the main folder](https://github.com/bud
 
 To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/) `serve`" keeping in mind that the site will take up to 30 mins to build. Once the site is built, it will start serving at `localhost:4000`
 
-For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/).  For questions about the source code, feel free to message me.
+For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/).  For questions about the source code, feel free to email me or add a comment at the relevant spot on GitHub.
 
 # Contributions
 
-The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a variety of ways.  The code here is released under an MIT Licence, so feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please feel free to email me or simply fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a variety of ways.  The code here is released under an MIT Licence, so feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please feel free to message me or simply fork the repository and open a pull request!  
 
 # Future Directions
 
 Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of Buddhist history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible to as many people as possible.
 
-I have also tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site is technically a "blog," but it is **not** another newsfeed of digital ephemera. It is an experiment in a slower technology. It is my hope that this curriculum will provide a solid basis for Buddhist Studies for the next 50--100 years.
+I have also tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site is technically a "blog," but it is **not** another newsfeed of digital ephemera. It is an experiment in a somewhat slower technology. It is my hope that this curriculum will provide a solid basis for Buddhist Studies for decades to come.
 
 # Disclaimers
 
