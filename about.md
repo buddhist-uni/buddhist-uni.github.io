@@ -13,6 +13,8 @@ You can find him and other devotees of Early Buddhism at [SuttaCentral: Discuss 
 ![yaktocat]({% link assets/imgs/yaktocat.png %})
 50% feline 🐱, 50% cephalopod 🐙, and 100% Fierce Dharma Protector 👹, our university mascot is the **Yaktocat**.
 
+You can cite the website as:  
+Khemarato, {{ site.time | date: "%Y" }}. "{{ site.title }}". {{ site.time | date: "%B %-d" }}. *{{ site.url }}* [doi:{{ site.doi }}](https://doi.org/{{ site.doi }})
 
 _Homepage background image by [flowcomm](https://www.flickr.com/people/21162417@N07)_
 <i>licensed under <a href="https://creativecommons.org/licenses/by/2.0?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a>
