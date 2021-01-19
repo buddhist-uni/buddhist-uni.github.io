@@ -1,3 +1,6 @@
+## File links
+filehost: "https://buddhist-uni.github.io"
+
 ### Content Similarity Algorithm Parameters
 ## Number of similar works to recommend
 similar_count: 10

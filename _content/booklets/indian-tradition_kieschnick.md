@@ -2,6 +2,8 @@
 title: "The Indian Tradition through Chinese Buddhist Writings"
 authors:
   - kieschnick
+file_links:
+  - "/exclusive_01/Buddhist%20Chinese%20Primer%20Volume%202%20-%20John%20Kieschnick.pdf"
 external_url: "http://www.primerbuddhism.org/volume2.html"
 formats: [pdf]
 drive_links:
