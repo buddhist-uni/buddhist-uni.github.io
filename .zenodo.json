@@ -2,7 +2,7 @@
   "title": "The Open Buddhist University",
   "keywords": ["buddhism", "mooc", "courseware", "course", "bibliography"],
   "upload_type": "lesson",
-  "description": '<p>A library of courses and other materials for studying the fundamentals of the Buddhist religion, it includes dozens of topical bibliographies atop a database of roughly a thousand articles, books, and recordings across the breadth of Buddhist Studies.</p><p>This archive contains the source code for building the website with <a href="http://jekyllrb.com/">Jekyll</a>.</p>',
+  "description": "<p>A library of courses and other materials for studying the fundamentals of the Buddhist religion, it includes dozens of topical bibliographies atop a database of roughly a thousand articles, books, and recordings across the breadth of Buddhist Studies.</p><p>This archive contains the source code for building the website with <a href=\"http://jekyllrb.com/\">Jekyll</a>.</p>",
   "creators": [{"name": "Khemarato Bhikkhu"}],
   "access_right": "open",
   "license": "mit",
