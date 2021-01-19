@@ -39,6 +39,7 @@ test_cases:
     - [historical-authenticity_wynne, authenticity_sujato-brahmali]
     - [did-the-buddha-exist_wynne, in-search-of-the-real-buddha_harvey]
     - [giving-makes-us-happy, meditation-moral-obligation_vox]
+    - [kids-these-days_harris-malcolm, debt_graeber-david]
 ---
 {%- if jekyll.environment != 'development' -%}
 For performance reasons, these tests are hidden from the production build. To run these tests, build the site locally with `JEKYLL_ENV=development`.
