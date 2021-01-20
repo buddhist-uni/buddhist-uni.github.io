@@ -1,6 +1,6 @@
 ---
 title: "Is the Future Predetermined?"
-authors: ["SpaceTime"]
+authors: ["Space Time"]
 external_url: "https://youtu.be/1JCRDaa3ehk"
 year: 2020
 publisher: "PBS"

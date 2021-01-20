@@ -12,7 +12,7 @@ tags:
 year: 2019
 month: aug
 translator: geoff
-editor: "Sujato Bhikkhu and Tapassi Bhikkhu (now David Martin Briggs) and Adhimuttī Bhikkhunī (then Melanie Fritz) and Jāgariyā Sāmaṇerī (now Che Chong Peng) and Tathālokā Bhikkhunī and Nimmalā Bhikkhunī"
+editor: "Sujato and David Martin Briggs and Melanie Fritz and Che Chong Peng and Tathālokā and Nimmalā"
 external_url: "http://www.bhikkhuni.net/wp-content/uploads/2019/09/Bhikkhuni-Patimokkha-Fourth-Edition_Pali-and-English-International-Edition-by-FoEBT-4-August-2019.pdf"
 formats: [pdf]
 drive_links:

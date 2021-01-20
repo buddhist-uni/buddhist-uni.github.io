@@ -1,6 +1,5 @@
 ---
 title: "PTS Converter"
-authors: [ticao]
 external_url: "http://pts.ticao.de"
 course: pali-canon
 year: 2018

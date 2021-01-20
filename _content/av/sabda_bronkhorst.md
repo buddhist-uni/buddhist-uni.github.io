@@ -8,7 +8,7 @@ tags:
   - mahayana-roots
   - language
 year: 2020
-month: july
+month: jul
 publisher: nbn
 ---
 
