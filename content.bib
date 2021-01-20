@@ -1,5 +1,7 @@
 ---
 layout: nil
 ---
-{% for content in site.content %}{% include content.bibtex content=content %}
+{% for author in site.authors %}@STRING { {{ author.slug }} = "{{ author.title }}" }
+{% endfor %}
+{% for content in site.content %}{% include content.bibtex content=content useslugs=true %}
 {% endfor %}

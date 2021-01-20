@@ -1,7 +1,7 @@
 ---
 title: "The Wheel"
 authors:
- - SOHN
+ - sohn
 year: 2012
 external_url: "https://youtu.be/AslPYSm7jfg"
 course: philosophy
