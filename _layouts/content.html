@@ -70,27 +70,7 @@ layout: default
 {% endraw %}{%- endcomment -%}
 
     {% if page.source_url or page.external_url or page.file_links or page.drive_links.size > 0 %}
-        <p class="content_links">
-        {% assign value = page.base_value %}{% if page.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
-         {% if page.external_url %}
-            <a class="btn" target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ page.external_url }}"><i class="fa{% if page.external_url contains "youtu" %}b fa-youtube"></i> YouTube{% else %}s fa-{% assign ext = page.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}volume-up{% else %}globe{% endif %}"></i> Online{% endif %}</a>
-        {% endif %}
-        {% if page.file_links.size > 0 %}
-            {% for link in page.file_links %}
-                {% assign i = forloop.index | minus: 1 %}
-                <a class="btn" target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="{{ link }}" href={{ site.data.content.filehost | append: link }}><i class="fa{% case page.formats[i] %}{% when "pdf" %}r fa-file-pdf{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ page.formats[i] }}</a>
-            {% endfor %}
-        {% endif %}
-        {% if page.drive_links.size > 0 %}
-            {% for link in page.drive_links %}
-                {% assign i = forloop.index | minus: 1 %}
-                <a class="btn" target="_blank" ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ page.formats[i] }}" href={{ link }}><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ page.formats[i] }}</a>
-            {% endfor %}
-        {% endif %}
-        {% if page.source_url %}<span class="source">
-        adapted from <a href="{{ page.source_url }}" ga-event-value="{{ value }}" target="_blank">this original</a>.
-        </span>{% endif %}
-        </p>
+        {% include content_filelinks.html content=page %}
     {% endif %}
 
  </header>
@@ -147,7 +127,7 @@ layout: default
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
       <button ga-on="click" ga-event-category="Bibtex" ga-event-action="copy" ga-event-label="{{ content_path }}" class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
-      <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+      <script src="{{ "/assets/clipboard.js" | relative_url }}"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');
 cb.on('success', function(e){showTooltip(e.trigger,'Copied');});

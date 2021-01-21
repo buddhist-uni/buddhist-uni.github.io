@@ -8,6 +8,7 @@
     <li>
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
       <div class="content_desc">{{ c.excerpt }}</div>
+      {% include content_filelinks.html content=c newtab=true %}
     </li>
   {% endfor %}
 </ul></div>
