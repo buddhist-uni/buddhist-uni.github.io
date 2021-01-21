@@ -252,6 +252,11 @@ article.tag div.tagged_content {
     font-size: 105%;
 }
 
+article.tag .content_links {
+    text-align: end;
+    margin-top: 10px;
+}
+
 article.content-perma .content_links .source {
     position: relative;
     top: 2px;

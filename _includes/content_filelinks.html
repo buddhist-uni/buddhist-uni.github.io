@@ -1,0 +1,24 @@
+{%- assign len = include.content.path | size | minus: 12 -%}
+{%- assign content_path = include.content.path | slice: 9, len -%}
+<div class="content_links">
+    {% assign value = include.content.base_value %}{% if include.content.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
+     {% if include.content.external_url %}
+        <a class="btn" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ include.content.external_url }}"><i class="fa{% if include.content.external_url contains "youtu" %}b fa-youtube"></i> YouTube{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}volume-up{% else %}globe{% endif %}"></i> Online{% endif %}</a>
+    {% endif %}
+    {% if include.content.file_links.size > 0 %}
+        {% for link in include.content.file_links %}
+            {% assign i = forloop.index | minus: 1 %}
+            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="{{ link }}" href={{ site.data.content.filehost | append: link }}><i class="fa{% case include.content.formats[i] %}{% when "pdf" %}r fa-file-pdf{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ include.content.formats[i] }}</a>
+        {% endfor %}
+    {% endif %}
+    {% if include.content.drive_links.size > 0 %}
+        {% for link in include.content.drive_links %}
+            {% assign i = forloop.index | minus: 1 %}
+            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ include.content.formats[i] }}" href={{ link }}><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ include.content.formats[i] }}</a>
+        {% endfor %}
+    {% endif %}
+    {% if include.content.source_url %}
+        <a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}"><i class="fas fa-route"></i> Origin</a>
+    {% endif %}
+</div>
+
