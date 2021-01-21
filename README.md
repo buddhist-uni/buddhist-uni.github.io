@@ -36,11 +36,11 @@ There are two primary ways to study here: taking [the courses](https://buddhist-
 
 The library contains all the best content I've found on the internet, [organized primarily by topic](https://buddhist-uni.github.io/tags/).  After reading a work, I contemplate what I learned and who I'd recommend it to. Only then do I file away the piece into topics, based on my answers to those questions.
 
-Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material again to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  As I go through, some works may be added to the topic that were originally categorized elsewhere, some works might be moved out of the topic, and some may even be rejected entirely. (These last pieces of `_content` get `status: "rejected"` in their [frontmatter](https://jekyllrb.com/docs/front-matter/))
+Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material again to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  As I go through, some works may be added to the topic that were originally categorized elsewhere, some works might be moved out of the topic, and some may even be rejected entirely.
 
 Once published, these lesson plans may be studied online as-is or reworked for in-person use by a study group or class. There are already students and teachers around the world using the courses in a variety of ways and I couldn't be prouder!
 
-While some Buddhist countries (like Thailand) have official curricula for teaching Buddhism to e.g. new monks, no such comprehensive curriculum yet existed in the English language.  It was towards filling this gap that I decided to dedicate my studies and this website.
+While some Buddhist countries (i.e., Thailand) have official curricula for teaching Buddhism to e.g. new monks, no such comprehensive curriculum yet existed in the English language.  It was towards filling this gap that I decided to dedicate my studies and this website.
 
 # The Source Code
 
@@ -72,15 +72,15 @@ The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a v
 
 # Future Directions
 
-Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of Buddhist history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible to as many people as possible.
+Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible to as many people as possible.
 
-I have also tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site is technically a "blog," but it is **not** another newsfeed of digital ephemera. It is an experiment in a somewhat slower technology. It is my hope that this curriculum will provide a solid basis for Buddhist Studies for decades to come.
+I have also tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site, while technically a "blog," is **not** yet another newsfeed of digital ephemera. It is an experiment in a somewhat slower technology. It is my hope that this curriculum will provide a solid basis for Buddhist Studies for decades to come.
 
 # Disclaimers
 
-- This repository, like all other things in life, is subject to change.
-- While I have taken some pains to ensure that everything here is trustworthy and legal, please know that you use the University at your own risk.
-- The views expressed in each work are the opinions of the author(s) and may not reflect my own.
+- This repository, like all other things in life, is imperfect and subject to change.
+- While I have taken some pains to ensure that everything here is accurate and legal, please know that you use the University at your own risk.
+- The various views expressed in each work are the opinions of the respective author(s) and may or may not reflect my own.
 
 # Acknowledgements
 
