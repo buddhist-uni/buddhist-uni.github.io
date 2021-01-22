@@ -41,12 +41,15 @@ test_cases:
     - [giving-makes-us-happy, meditation-moral-obligation_vox]
     - [kids-these-days_harris-malcolm, debt_graeber-david]
 ---
-{%- if jekyll.environment != 'development' -%}
-For performance reasons, these tests are hidden from the production build. To run these tests, build the site locally with `JEKYLL_ENV=development`.
-{%- else -%}
+
+A series of integration tests for the quality of the content recommendations.
+
+{% if jekyll.environment != 'development' or site.partial_build %}
+For performance reasons, these tests are hidden from the production build. To run these tests, build the site locally with `JEKYLL_ENV=development` but without `quick_build.yml`.
+{% else %}
 {%- assign succs = 0 -%}
 {%- assign fails = 0 -%}
-{%- assign simcount = 0 -%}
+{% assign simcount = 0 %}
 | Test Name | Status  |  Notes |
 |-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | where: "slug", test[0] | first %}{% capture cont_req %}{% include similar_content_footer.html content=fc %}{% endcapture %}
 | "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "{{ test[1] }}"  | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 1 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}

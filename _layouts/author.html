@@ -9,7 +9,7 @@ layout: default
   </header>
 
   <div class="post-content">
-    <div class="description">{{ content }}</div>
+    <div class="description">{{ content }}</div>{% unless site.partial_build %}
     <div class="content">
       <h2>Selected Works</h2>
         {% capture filter %}c.authors contains '{{ page.slug }}'{% endcapture %}
@@ -30,7 +30,7 @@ layout: default
     <h3 id="edits">Edited:</h3>
     <div>{% include content_list.html contents=editcont orderby="year" %}</div>
     {% endif %}
-    </div>
+    </div>{% endunless %}
   </div>
 
 </article>

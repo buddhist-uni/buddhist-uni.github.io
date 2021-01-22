@@ -12,7 +12,9 @@ This month I've added three new courses on the primary languages of the Early Bu
 
 [The Pāli Primer Course]({% link _courses/pali-primer.md %}) is a fun introduction to the Pāli Language for everyone, and for those who have some background already, [the intermediate Pāli course]({% link _courses/pali-new-course.md %}) will get you into the suttas themselves. Both classes are taught by the Venerable Bhikkhu Bodhi.
 
-In case it's helpful to academics, I've added the [Bibtex information](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file){:target="_blank"} for _all_ the items in the library to the bottom of each piece's [permalink page]({% link _content/booklets/tracing-thought-through-things_stargardt.md %}). And for those who use bibliographic software, like [JabRef](https://www.jabref.org/){:target="_blank"}, you can now download [**the entire library** as a single `.bib file`]({% link content.bib %}) for importing into your reference manager of choice, [here]({% link library.md %}#additional-information).
+{% if site.show_bibtex %}
+In case it's helpful to academics, I've added the [Bibtex information](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file){:target="_blank"} for _all_ the items in the library to the bottom of each piece's [permalink page]({% link _content/booklets/tracing-thought-through-things_stargardt.md %}). And for those who use bibliographic software, like [JabRef](https://www.jabref.org/){:target="_blank"}, you can now download [**the entire library** as a single `.bib file`](/content.bib) for importing into your reference manager of choice, [here]({% link library.md %}#additional-information).
+{% endif %}
 
 And, on a more serious note, 2020 has been a year.
 
