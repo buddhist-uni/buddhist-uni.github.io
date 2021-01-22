@@ -1,0 +1,184 @@
+---
+title: "The Buddha"
+icon: "fas fa-hand-holding"
+google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE
+description: "A thorough tour of the Pāli texts which report the Buddha's character, accomplishments, life, and past."
+time: 2
+feedback_id: "The+Buddha"
+next_courses:
+ - setting
+ - indian
+ - characters
+ - mn
+ - pali-primer
+ - vinaya-pitaka
+next_course_descs:
+    - "Learn more about ancient India at the time of the Buddha: the world he was born into and the world he left behind."
+    - "Continue the story by learning what happened next: after the first council."
+    - "Besides the Buddha, the Pāli and Agama Canons are filled with many other inspiring and fascinating characters. In this course, we'll get to know many of them… and a few shady characters too!"
+    - "Many stories from life in the early Sangha and the most complex teachings of the Canon, analyzed methodically by Bhikkhu Bodhi."
+    - "An introduction to the language of the Buddha."
+    - "Many of the Buddha's most memorable stories, and revealing instructions, are found in the first basket of the Pāli Canon."
+---
+
+## Who was the Buddha?
+
+“Buddha” literally means “one who has become aware” and (properly speaking) refers, not to a single individual, but rather to a category of beings: those who have, through their own effort, attained complete enlightenment.
+
+But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first discovered _nibbāna_ and taught the way for attaining it.
+
+Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (deva)— because only the human realm balances the misfortunes and mistakes of life (which are necessary to motivate the practice) with the ease and discernment of intelligence (which allow it to ripen).
+
+But while the Buddha was born a man, a man he did not remain. Through his superior striving and wisdom (over countless eons) he was able to transcend gender, caste, creed, identities, views, suffering and even death itself and to teach others how to transcend themselves too. We call such a teacher, “Buddha.”
+
+## Prerequisites
+
+If you're looking for a quick and inspiring biography of the Buddha, I recommend [The Biography of Shakyamuni Buddha by Master Hsing Yun]({% link _content/monographs/biography-of-shakyamuni_hsing-yun.md %}). This course goes beyond the basics to reading the primary sources themselves, and therefore requires some comfort reading [the Early Buddhist Texts]({% link _courses/ebts.md %}).
+
+## Course Outline
+
+This syllabus currently has no associated lectures and merely weaves together several, free books.
+
+### Textbooks
+
+Our texts primarily focus on the Theravada Canon.
+
+#### Main Anthology
+
+{% include inline_content.html category="monographs" slug="life-of-the-buddha_nyanamoli" %}
+- This classic, if eccentric, anthology of Pāli texts gives a good presentation of the Canonical account of the Buddha's life. It will be the primary biography used in this course, and we will follow the book’s order of events.
+
+#### Other Anthologies
+
+To supplement Ñanamoli’s judicious selections from the Pāli Canon, we will use these anthologies to underline a couple themes I think worth dwelling on:
+
+{% include inline_content.html category="booklets" slug="teacher-of-devas_jootla" %}
+- The Buddha is worshipped by the Buddhists as a teacher, not as a God. This important distinction is stated easily enough, but to really understand it requires studying the way the Gods and Buddha related to each other.
+
+{% include inline_content.html category="monographs" slug="buddha-my-refuge_khantipalo" %}
+- While it is important to mine the Pāli literature for historical and mythological details, it is also important to not lose sight of the Buddha's extraordinary personal qualities, explained in this anthology through the nine characteristics of the Buddha.
+
+#### Primary Texts
+
+There's one significant primary text in this course, but it isn't an early text.
+
+{% include inline_content.html category="canon" slug="nidanakatha" %}
+- This traditional Pāli commentary contains one of the first systematic biographies of the Buddha and formed the basis for most of the later hagiographies. While not a reliable source of information about the historical Buddha, it is of critical importance for understanding the myths and stories about the Buddha which persist today.
+
+#### Academic Works
+
+A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
+
+{% include inline_content.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" %}
+- A selection of Encyclopedia articles introducing the Buddha by one of the English language’s best authors for rigorous, introductory material.
+
+{% include inline_content.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
+- In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries.
+
+## Course Outline
+
+I've sequenced the above books into an inter-woven, narrative arc which I (at least!) find compelling. 
+
+If I were to actually teach this course, I'd meet for one-hour lectures, twice per week for 13 weeks. The readings below have been bunched together according to this hypothetical schedule, but for individual study you’re welcome to work through the readings as you like.
+
+### Introduction
+
+1. [[Entries - Peter Harvey](#draft-entries-for-encyclopedia-of-buddhism_harvey)] The Early Buddhist Concept of the Buddha
+1. [Entries] Past and Future Buddhas
+
+1. [E] Dates of the Buddha
+1. [[Nidanakatha: The Introduction to the Jatakas](#nidanakatha)] The Introduction by T. W. Rhys Davids
+1. [E] The Buddha's Historical Context
+
+### Part 1: Becoming the Buddha
+
+1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
+1. {% include inline_content.html slug="dn30" category="canon" %}
+
+    - This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not "Early Buddhist Texts."
+1. {% include inline_content.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
+1. [E] The Buddha's Family
+
+1. [Life] The Struggle for Enlightenment
+1. [[Bodhisattva Ideal - Analayo](#genesis-of-bodhisattva_analayo)] Chapter 1: Gautama as a Bodhisattva
+
+1. [Nidanakatha] The Middle Epoch
+   - <p>Note especially any contrasts to the earlier texts.</p>
+
+1. [E] The Bodhisattva Career in the Theravada
+1. [Bodhisattva] Chapter 2: Meeting the Previous Buddha
+1. [Nidanakatha] The Distant Epoch
+
+1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
+1. [Life] After the Enlightenment
+1. {% include inline_content.html slug="epithets-buddha_ireland" category="articles" %}
+1. {% include inline_content.html category="articles" slug="tathagata_bodhi" %} For a fun assignment, consider your own translation for the term "Tathagata"
+
+1. {% include inline_content.html category="articles" slug="weary-buddha_webster" %}
+1. [Entries] _Pratyeka-buddhas_
+1. [Entries] Review: The Four Ennobling Truths
+1. [Refuge] Arahaṁ
+
+1. [Life] Spreading the Dhamma
+1. [L] The Two Chief Disciples
+1. [L] Anathapindika: Feeder of the Poor
+
+1. [N] The Last Epoch
+1. [Refuge] sammā-sambuddho
+1. {% include inline_content.html category="canon" slug="dn28" %}
+
+### Part 2: Establishing the Religion
+
+1. [E] Review: The Story of the Buddha
+1. [[Teacher of the Devas](#teacher-of-devas_jootla)] Introduction: The Devas
+
+1. [Life] Formation of the Order of Nuns
+1. {% include inline_content.html category="articles" slug="mahapajapati-pabaja_analayo" %} In this case, we can see how later priorities were read back into the early texts.
+
+1. [Refuge] Vijjā-caraṇa-sampanno
+1. {% include inline_content.html category="articles" slug="omniscience_analayo" %} What does this say about Buddhist epistemology? Free will?
+
+1. [L] The Quarrel at Kosambi
+1. {% include inline_content.html category="essays" slug="who-was-the-buddha_wynne" %}
+1. [R] Sugato
+
+1. [L] End of the First Twenty Years
+1. {% include inline_content.html category="canon" slug="mn35" %}
+1. [T] Teaching the Devas
+1. [R] Locavidū
+
+1. [L] The Middle Period
+1. [E] The Buddha's Style of Teaching
+
+1. [R] Anuttaro purisa-damma-sārathi 
+1. [L] The Person
+1. {% include inline_content.html category="canon" slug="mn91" %}
+1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %} What parts of the description in MN 91 do you think are accurate?
+
+1. [L] The Doctrine
+1. [E] Anatman
+
+1. [R] Satthā deva-manussānaṁ
+1. [T] Devas Honor the Buddha
+1. [L] Devadatta
+
+1. [R] Buddho
+1. [L] Old Age
+1. [E] The Buddha and Cakravartins
+1. Review: [T] Devas in the Buddha's Career
+
+1. [L] The Last Year
+1. {% include inline_content.html category="articles" slug="sukaramaddava_ireland" %}
+1. [E] Relics of the Buddha
+1. [R] Bhagava
+
+1. [E] Early Symbols of the Buddha
+1. [L] The First Council
+1. [T] Liberation and Conclusion
+
+### Epilogue: The Far Future
+
+1. [[Bodhisattva](#genesis-of-bodhisattva_analayo)] Maitreya
+
+
+
