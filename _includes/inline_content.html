@@ -1,5 +1,3 @@
 {%- capture content_path -%}_content/{{ include.category }}/{{ include.slug }}.md{%- endcapture -%}
 {%- assign content = site.content | where: "path", content_path | first -%}
-<div class="{% if content.external_url %}inline_content{% endif %}">{% capture foo %}{% include content_title.html content=content %}{% endcapture %}
-{{ foo | strip_newlines }}
-</div>
+<div class="{% if content.external_url %}inline_content{% endif %}">{% capture foo %}{% include content_title.html content=content %}{% endcapture %}{{ foo | strip_newlines }}</div>
