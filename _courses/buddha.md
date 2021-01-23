@@ -139,7 +139,6 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% include inline_content.html category="articles" slug="omniscience_analayo" %} What does this say about Buddhist epistemology? Free will?
 
 1. [L] The Quarrel at Kosambi
-1. {% include inline_content.html category="essays" slug="who-was-the-buddha_wynne" %}
 1. [R] Sugato
 
 1. [L] End of the First Twenty Years
