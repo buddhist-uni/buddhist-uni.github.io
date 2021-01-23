@@ -41,11 +41,11 @@ There are approximately 40 hours of lectures (depending on which section you tak
 
 This course is taught, once again, by Bhikkhu Bodhi, but this time in two sections.
 
-{% include inline_content.html category="av" slug="second-pali-course_bodhi" %}
+{% include content_blurb.html category="av" slug="second-pali-course_bodhi" %}
 - This version of the course was taught in 53 lectures to students who had just completed [his "Primer" course]({% link _courses/pali-primer.md %}).
 - If you are taking this "Level 2" course having just completed the "Level 1" course, this is likely the set of lectures you'll want to take as it picks up exactly where the previous course left off.
 
-{% include inline_content.html category="av" slug="new-pali-course_bodhi" %}
+{% include content_blurb.html category="av" slug="new-pali-course_bodhi" %}
 - This version of the class was taught in 34 lectures to a new group of students.
 - If you're coming to this course having not taken "Level 1" but with prior knowledge of Pali or Sanskrit from elsewhere, this set of lectures is for you.
 

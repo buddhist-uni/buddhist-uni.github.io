@@ -32,7 +32,7 @@ This course doesn't assume any prior knowledge of linguistics or classical langu
 
 ### Lectures
 
-{% include inline_content.html category="av" slug="pali-primer_bodhi" %}
+{% include content_blurb.html category="av" slug="pali-primer_bodhi" %}
 
 Bhikkhu Bodhi will guide us through _DeSilva_ in 26, 2-hour lectures.
 

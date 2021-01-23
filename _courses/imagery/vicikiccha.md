@@ -8,9 +8,9 @@ description: "While some skeptical distance and investigation are necessary to l
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="an10.13" %} 
-{% include inline_content.html category="canon" slug="ud5.7" %}
-{% include inline_content.html category="canon" slug="sn42.7" %}
+{% include content_blurb.html category="canon" slug="an10.13" %} 
+{% include content_blurb.html category="canon" slug="ud5.7" %}
+{% include content_blurb.html category="canon" slug="sn42.7" %}
 </p>
 
 ### Similes

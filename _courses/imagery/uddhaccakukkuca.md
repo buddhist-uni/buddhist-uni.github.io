@@ -8,8 +8,8 @@ description: "An energetic person will tend to use all of their energy chasing e
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="mn23" %} 
-{% include inline_content.html category="canon" slug="mn39" %}
+{% include content_blurb.html category="canon" slug="mn23" %} 
+{% include content_blurb.html category="canon" slug="mn39" %}
 </p>
 
 ### Similes

@@ -45,34 +45,34 @@ Our texts primarily focus on the Theravada Canon.
 
 #### Main Anthology
 
-{% include inline_content.html category="monographs" slug="life-of-the-buddha_nyanamoli" %}
+{% include content_blurb.html category="monographs" slug="life-of-the-buddha_nyanamoli" %}
 - This classic, if eccentric, anthology of Pāli texts gives a good presentation of the Canonical account of the Buddha's life. It will be the primary biography used in this course, and we will follow the book’s order of events.
 
 #### Other Anthologies
 
 To supplement Ñanamoli’s judicious selections from the Pāli Canon, we will use these anthologies to underline a couple themes I think worth dwelling on:
 
-{% include inline_content.html category="booklets" slug="teacher-of-devas_jootla" %}
+{% include content_blurb.html category="booklets" slug="teacher-of-devas_jootla" %}
 - To understand the Buddhist cosmology requires seeing the way the Gods and the Buddha related with one another.
 
-{% include inline_content.html category="monographs" slug="buddha-my-refuge_khantipalo" %}
+{% include content_blurb.html category="monographs" slug="buddha-my-refuge_khantipalo" %}
 - While it is important to mine the Pāli literature for historical and mythological details, it is also important to not lose sight of the Buddha's extraordinary personal qualities, explained in this anthology through the nine characteristics of the Buddha.
 
 #### Primary Texts
 
 There's one significant primary text in this course, but it isn't an early text.
 
-{% include inline_content.html category="canon" slug="nidanakatha" %}
+{% include content_blurb.html category="canon" slug="nidanakatha" %}
 - This traditional Pāli commentary contains one of the first systematic biographies of the Buddha and formed the basis for many of the later hagiographies. While not necessarily a reliable source of information about the historical Buddha himself, it is of critical importance for understanding the myths and stories about the Buddha which persist today.
 
 #### Academic Works
 
 A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
 
-{% include inline_content.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" %}
+{% include content_blurb.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" %}
 - A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions.
 
-{% include inline_content.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
+{% include content_blurb.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
 - In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries.
 
 ## Course Outline
@@ -93,10 +93,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 ### Part 1: Becoming the Buddha
 
 1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
-1. {% include inline_content.html slug="dn30" category="canon" %}
-
+1. {% include content_blurb.html slug="dn30" category="canon" %}
     - This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not "Early Buddhist Texts."
-1. {% include inline_content.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
+1. {% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
 1. [E] The Buddha's Family
 
 1. [Life] The Struggle for Enlightenment
@@ -111,12 +110,12 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
 1. [Life] After the Enlightenment
-1. {% include inline_content.html slug="epithets-buddha_ireland" category="articles" %}
-1. {% include inline_content.html category="articles" slug="tathagata_bodhi" %} For a fun assignment, consider your own translation for the term "Tathagata"
+1. {% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}
+1. {% include inline_content.html category="articles" slug="tathagata_bodhi" %}
 
-1. {% include inline_content.html category="articles" slug="weary-buddha_webster" %}
+1. {% include content_blurb.html category="articles" slug="weary-buddha_webster" %}
 1. [Entries] _Pratyeka-buddhas_
-1. [Entries] Review: The Four Ennobling Truths
+1. [Entries] Optional: The Four Ennobling Truths
 1. [Refuge] Arahaṁ
 
 1. [Life] Spreading the Dhamma
@@ -133,16 +132,16 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [[Teacher of the Devas](#teacher-of-devas_jootla)] Introduction: The Devas
 
 1. [Life] Formation of the Order of Nuns
-1. {% include inline_content.html category="articles" slug="mahapajapati-pabaja_analayo" %} In this case, we can see how later priorities were read back into the early texts.
+1. {% include inline_content.html category="articles" slug="mahapajapati-pabaja_analayo" %} 
 
 1. [Refuge] Vijjā-caraṇa-sampanno
-1. {% include inline_content.html category="articles" slug="omniscience_analayo" %} What does this say about Buddhist epistemology? Free will?
+1. {% include inline_content.html category="articles" slug="omniscience_analayo" %}
 
 1. [L] The Quarrel at Kosambi
 1. [R] Sugato
 
 1. [L] End of the First Twenty Years
-1. {% include inline_content.html category="canon" slug="mn35" %}
+1. {% include content_blurb.html category="canon" slug="mn35" %}
 1. [T] Teaching the Devas
 1. [R] Locavidū
 
@@ -151,8 +150,8 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [R] Anuttaro purisa-damma-sārathi 
 1. [L] The Person
-1. {% include inline_content.html category="canon" slug="mn91" %}
-1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %} What parts of the description in MN 91 do you think are accurate?
+1. {% include content_blurb.html category="canon" slug="mn91" %}
+1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %}
 
 1. [L] The Doctrine
 1. [E] Anatman
@@ -167,7 +166,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. Review: [T] Devas in the Buddha's Career
 
 1. [L] The Last Year
-1. {% include inline_content.html category="articles" slug="sukaramaddava_ireland" %}
+1. {% include content_blurb.html category="articles" slug="sukaramaddava_ireland" %}
 1. [E] Relics of the Buddha
 1. [R] Bhagava
 

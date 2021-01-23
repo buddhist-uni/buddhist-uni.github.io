@@ -8,10 +8,10 @@ description: "Happiness can result from our efforts, but is double-sided: there 
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn36.31" %} 
-{% include inline_content.html category="canon" slug="mn12" %}
-{% include inline_content.html category="canon" slug="sn56.48" %}
-{% include inline_content.html category="canon" slug="mn8" %}
+{% include content_blurb.html category="canon" slug="sn36.31" %} 
+{% include content_blurb.html category="canon" slug="mn12" %}
+{% include content_blurb.html category="canon" slug="sn56.48" %}
+{% include content_blurb.html category="canon" slug="mn8" %}
 </p>
 
 ### Similes

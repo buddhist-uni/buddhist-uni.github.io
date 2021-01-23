@@ -9,9 +9,9 @@ Having now finished _Excursions_ volume 1, we are halfway through our course and
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="ud8.8" %} 
-{% include inline_content.html category="canon" slug="sn35.230" %}
-{% include inline_content.html category="canon" slug="snp4.2" %}
+{% include content_blurb.html category="canon" slug="ud8.8" %} 
+{% include content_blurb.html category="canon" slug="sn35.230" %}
+{% include content_blurb.html category="canon" slug="snp4.2" %}
 </p>
 
 ### Similes

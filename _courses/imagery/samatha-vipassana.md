@@ -8,10 +8,10 @@ description: "There is no meditation for he who lacks wisdom, nor wisdom for he 
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="an4.170" %}
-{% include inline_content.html category="canon" slug="an10.99" %}
-{% include inline_content.html category="canon" slug="sn35.245" %}
-{% include inline_content.html category="canon" slug="snp1.4" %}
+{% include content_blurb.html category="canon" slug="an4.170" %}
+{% include content_blurb.html category="canon" slug="an10.99" %}
+{% include content_blurb.html category="canon" slug="sn35.245" %}
+{% include content_blurb.html category="canon" slug="snp1.4" %}
 </p>
 
 ### Similes

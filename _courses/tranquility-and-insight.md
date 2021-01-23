@@ -52,22 +52,22 @@ The first section of this book contains translations of the Madhyama Āgama Disc
 
 In addition to the main Madhyama Āgama sutras above, a number of discourses from the Pāli Canon will be referenced throughout the course, mostly as parallels to the MA discourse under investigation. I've collected them below for your convenience, in the order of their appearance in the course:
 
-{% include inline_content.html category="canon" slug="an4.170" %}
-{% include inline_content.html category="canon" slug="ud1.10_sdoe" %}
-{% include inline_content.html category="canon" slug="mn128" %}
-{% include inline_content.html category="canon" slug="an8.64" %}
-{% include inline_content.html category="canon" slug="an8.30" %}
-{% include inline_content.html category="canon" slug="mn106" %}
-{% include inline_content.html category="canon" slug="sn47.3" %}
-{% include inline_content.html category="canon" slug="an8.63" %}
-{% include inline_content.html category="canon" slug="mn68" %}
-{% include inline_content.html category="canon" slug="mn49" %}
-{% include inline_content.html category="canon" slug="mn127" %}
-{% include inline_content.html category="canon" slug="mn119" %}
-{% include inline_content.html category="canon" slug="an6.60" %}
-{% include inline_content.html category="canon" slug="an7.58" %}
-{% include inline_content.html category="canon" slug="an10.72" %}
-{% include inline_content.html category="canon" slug="mn113" %}
+{% include content_blurb.html category="canon" slug="an4.170" %}
+{% include content_blurb.html category="canon" slug="ud1.10_sdoe" %}
+{% include content_blurb.html category="canon" slug="mn128" %}
+{% include content_blurb.html category="canon" slug="an8.64" %}
+{% include content_blurb.html category="canon" slug="an8.30" %}
+{% include content_blurb.html category="canon" slug="mn106" %}
+{% include content_blurb.html category="canon" slug="sn47.3" %}
+{% include content_blurb.html category="canon" slug="an8.63" %}
+{% include content_blurb.html category="canon" slug="mn68" %}
+{% include content_blurb.html category="canon" slug="mn49" %}
+{% include content_blurb.html category="canon" slug="mn127" %}
+{% include content_blurb.html category="canon" slug="mn119" %}
+{% include content_blurb.html category="canon" slug="an6.60" %}
+{% include content_blurb.html category="canon" slug="an7.58" %}
+{% include content_blurb.html category="canon" slug="an10.72" %}
+{% include content_blurb.html category="canon" slug="mn113" %}
 
 As you study these parallel Pāli and Āgama discourses, remember that these two recensions were seperated by thousands of miles and hundreds of years. Note the similarities and differences.  How reliable do you feel the Early Buddhist Texts are now, as records of what the Buddha actually taught?
 

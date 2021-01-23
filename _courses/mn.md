@@ -64,7 +64,7 @@ The main text for this course is *The Middle Length Discourses of the Buddha* by
 
 For the suttas not included in the above anthology, or to merely get an alternative translation, please also refer to the complete, free translation by Bhante Sujato: 
 
-{% include inline_content.html category="booklets" slug="mn_sujato" %}
+{% include content_blurb.html category="booklets" slug="mn_sujato" %}
 
 All of which can be accessed online at [SuttaCentral.net](https://suttacentral.net/mn/){:target="_blank"}.
 
@@ -98,7 +98,7 @@ Either way is an acceptable and appropriate use of this material. Feel free to j
 
 In case it's useful for such referencing, here's an index of the suttas by their Pāli name:
 
-{% include inline_content.html category="reference" slug="mn-pali-name-index" %}
+{% include content_blurb.html category="reference" slug="mn-pali-name-index" %}
 - Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikaya (usually noted as “MN#”, e.g. “MN3” for the third sutta)
 
 And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of what suttas you've read, so you know where to come back to later.
