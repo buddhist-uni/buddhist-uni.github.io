@@ -79,33 +79,27 @@ of Early Buddhism on the forum (including yours truly) and we would be happy to 
 As you make your way through ItBW, I encourage you to weave in the following works about 
 the history of the texts you're studying:
 
-{% include content_blurb.html category="excerpts" slug="itbw_general-intro_bodhi" %}
-- Gives a good overview of the oral tradition. Don't skip it! 
+{% include content_blurb.html category="excerpts" slug="itbw_general-intro_bodhi" blurb="
+- Gives a good overview of the oral tradition. Be sure not to skip it!" %}
 
-{% include content_blurb.html category="articles" slug="early-buddhism-with-kalupahana_payne" %}
-- On why it's important to study the early texts.
-- Read alongside chapter one of ItBW
+{% include content_blurb.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" blurb="
+- We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts." %}
 
-{% include content_blurb.html category="articles" slug="in-search-of-the-real-buddha_harvey" %}
-- About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.
-- This should be read alongside chapter two of ItBW which is about the Buddha
+{% include content_blurb.html category="booklets" slug="authenticity_sujato-brahmali" blurb="
+- And I also invite you to read their excellent and clear book summarizing the evidence we have for the historical authenticity of these texts." %}
 
-{% include content_blurb.html category="papers" slug="birch-bark-to-digital-data_introduction_harrison-and-hartmann" %}
+{% include content_blurb.html category="articles" slug="early-buddhism-with-kalupahana_payne" blurb="
+- On why it's important to study the early texts." %}
+
+{% include content_blurb.html category="articles" slug="in-search-of-the-real-buddha_harvey" blurb="
+- About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions." %}
+
+{% include content_blurb.html category="papers" slug="birch-bark-to-digital-data_introduction_harrison-and-hartmann" blurb="
 - Gives an overview of the archeology and methodology employed by modern scholars.
-- Don't read this to memorize the details. It won't be on the test! Mostly it's presented here to give a “behind the scenes” peek at the scholarship that's gone into discovering early Buddhism.
-- Read alongside chapter three of ItBW: Approaching the Dhamma
-
-{% include content_blurb.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" %}
-- We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts.
-- Should be done alongside chapter five of ItBW
-
-{% include content_blurb.html category="articles" slug="historical-authenticity_wynne" %}
-- Gives a short overview of how we know these texts are in fact authentic
-- Alongside chapter seven of ItBW
+- It's okay to skim or even skip this one. Mostly it's presented here to give a “behind the scenes” peek at the scholarship that goes into ancient Buddhist texts." %}
 
 {% include content_blurb.html category="articles" slug="oral-transmission_wynne" %}
 - Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim
-- Read alongside chapter nine of ItBW (where the “verbatim” character of some of the suttas should become readily apparent!) 
 
 ### One Additional Sutra
 
