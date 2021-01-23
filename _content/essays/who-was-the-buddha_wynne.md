@@ -6,7 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1dzp8d5v0TIfsoSn3HfQI7Aag64XCgEkS
 tags:
   - form
   - buddhism
-course: buddha
+  - buddha
+status: rejected
 year: 2019
 month: dec
 ---
