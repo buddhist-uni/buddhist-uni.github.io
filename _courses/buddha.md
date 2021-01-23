@@ -23,9 +23,9 @@ next_course_descs:
 
 ## Who was the Buddha?
 
-“Buddha” literally means “one who has become aware” and (properly speaking) refers, not to a single individual, but rather to a category of beings: those who have, through their own effort, attained complete enlightenment.
+“Buddha” (properly speaking) refers, not to a single individual, but rather to a category of beings: those who have, through their own effort, attained complete enlightenment.
 
-But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first discovered _nibbāna_ and taught the way for attaining it.
+But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first rediscovered _nibbāna_ and taught the way for attaining it.
 
 Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (deva)— because only the human realm balances the misfortunes and mistakes of life (which are necessary to motivate the practice) with the ease and discernment of intelligence (which allow it to ripen).
 
@@ -53,7 +53,7 @@ Our texts primarily focus on the Theravada Canon.
 To supplement Ñanamoli’s judicious selections from the Pāli Canon, we will use these anthologies to underline a couple themes I think worth dwelling on:
 
 {% include inline_content.html category="booklets" slug="teacher-of-devas_jootla" %}
-- The Buddha is worshipped by the Buddhists as a teacher, not as a God. This important distinction is stated easily enough, but to really understand it requires studying the way the Gods and Buddha related to each other.
+- To understand the Buddhist cosmology requires seeing the way the Gods and the Buddha related with one another.
 
 {% include inline_content.html category="monographs" slug="buddha-my-refuge_khantipalo" %}
 - While it is important to mine the Pāli literature for historical and mythological details, it is also important to not lose sight of the Buddha's extraordinary personal qualities, explained in this anthology through the nine characteristics of the Buddha.
@@ -63,14 +63,14 @@ To supplement Ñanamoli’s judicious selections from the Pāli Canon, we will u
 There's one significant primary text in this course, but it isn't an early text.
 
 {% include inline_content.html category="canon" slug="nidanakatha" %}
-- This traditional Pāli commentary contains one of the first systematic biographies of the Buddha and formed the basis for most of the later hagiographies. While not a reliable source of information about the historical Buddha, it is of critical importance for understanding the myths and stories about the Buddha which persist today.
+- This traditional Pāli commentary contains one of the first systematic biographies of the Buddha and formed the basis for many of the later hagiographies. While not necessarily a reliable source of information about the historical Buddha himself, it is of critical importance for understanding the myths and stories about the Buddha which persist today.
 
 #### Academic Works
 
 A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
 
 {% include inline_content.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" %}
-- A selection of Encyclopedia articles introducing the Buddha by one of the English language’s best authors for rigorous, introductory material.
+- A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions.
 
 {% include inline_content.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
 - In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries.
@@ -79,7 +79,7 @@ A number of articles and essays will be weaved in throughout the course.  We’l
 
 I've sequenced the above books into an inter-woven, narrative arc which I (at least!) find compelling. 
 
-If I were to actually teach this course, I'd meet for one-hour lectures, twice per week for 13 weeks. The readings below have been bunched together according to this hypothetical schedule, but for individual study you’re welcome to work through the readings as you like.
+If I were to actually teach this course, I'd perhaps meet twice per week for 13 weeks. The readings below have been bunched together according to this hypothetical schedule, but for individual study you’re of course welcome to work through the readings as you like.
 
 ### Introduction
 
