@@ -7,10 +7,11 @@ year: 2006
 pages: "35--70"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu/view?usp=drivesdk"]
-course: ebts
+course: indian
 tags:
   - pali-canon
   - academia
+  - ebts
 ---
 
 Gives a short overview of how we know the EBTs are authentic.
