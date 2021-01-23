@@ -8,10 +8,10 @@ description: "The culmination of insight, <i>yathābhūtañāṇadassana</i> is 
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn35.28" %} 
-{% include inline_content.html category="canon" slug="an4.107" %}
-{% include inline_content.html category="canon" slug="an3.82" %}
-{% include inline_content.html category="canon" slug="iti53" %}
+{% include content_blurb.html category="canon" slug="sn35.28" %} 
+{% include content_blurb.html category="canon" slug="an4.107" %}
+{% include content_blurb.html category="canon" slug="an3.82" %}
+{% include content_blurb.html category="canon" slug="iti53" %}
 </p>
 
 ### Similes

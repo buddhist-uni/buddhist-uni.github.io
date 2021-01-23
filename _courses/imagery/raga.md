@@ -8,10 +8,10 @@ description: "Passion is the fire in our hearts that burns us alive. Far from ro
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn35.228" %} 
-{% include inline_content.html category="canon" slug="thag2.39" %}
-{% include inline_content.html category="canon" slug="mn105.19" %}
-{% include inline_content.html category="canon" slug="sn41.5" %}
+{% include content_blurb.html category="canon" slug="sn35.228" %} 
+{% include content_blurb.html category="canon" slug="thag2.39" %}
+{% include content_blurb.html category="canon" slug="mn105.19" %}
+{% include content_blurb.html category="canon" slug="sn41.5" %}
 </p>
 
 ### Similes

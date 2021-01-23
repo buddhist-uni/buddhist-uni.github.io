@@ -10,10 +10,10 @@ _First, read Analayo's Craving chapter 3, then:_
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn1.71" %} 
-{% include inline_content.html category="canon" slug="an5.249" %}
-{% include inline_content.html category="canon" slug="sn7.2" %}
-{% include inline_content.html category="canon" slug="an5.161" %}
+{% include content_blurb.html category="canon" slug="sn1.71" %} 
+{% include content_blurb.html category="canon" slug="an5.249" %}
+{% include content_blurb.html category="canon" slug="sn7.2" %}
+{% include content_blurb.html category="canon" slug="an5.161" %}
 </p>
 
 ### Similes

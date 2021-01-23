@@ -35,23 +35,23 @@ This is a self-paced course, which is estimated to take a few months to complete
 > “There are two conditions for the arising of right view. What two? The words of another and proper attention.” ~ [AN2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5){:target="_blank" ga-event-value="0.25"}
 {: .epigraph }
 
-{% include inline_content.html category="booklets" slug="buddha-and-his-dhamma_bodhi" %}
+{% include content_blurb.html category="booklets" slug="buddha-and-his-dhamma_bodhi" blurb="
 - This work by Bhikkhu Bodhi gives a brief overview of Buddhism and summarizes what we'll cover in this course.
 - Start here!
-
+" %}
 ---
 
 Next, we listen to a couple talks by two of my own dear teachers, giving us an introduction to Buddhism. 
 
-{% include inline_content.html category="av" slug="dhamma-advice_suchart" %}
-{% include inline_content.html category="av" slug="buddhism-intro_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="dhamma-advice_suchart" %}
+{% include content_blurb.html category="av" slug="buddhism-intro_yuttadhammo" %}
 
 What do you notice about these talks? What surprises you? What's interesting? Jot down whatever observations and questions you have after listening, and as we go through the course we'll refer back to these notes. 
 
 ### Textbook
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
 
-{% include inline_content.html category="monographs" slug="intro-to-buddhism_harvey" %}
+{% include content_blurb.html category="monographs" slug="intro-to-buddhism_harvey" %}
 <br />
 This textbook can be read alongside the course, providing the basic framing for the rest of the course. The class is arranged according to its outline and some of its topics — rituals, history, sects — will not be covered by the other works. 
 
@@ -63,11 +63,11 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 {% include content_box.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" %}
 
-{% include inline_content.html category="av" slug="secular-intro-to-buddhism_smith-doug" %}
-- A short introduction to Buddhism from a more secular perspective.
+{% include content_blurb.html category="av" slug="secular-intro-to-buddhism_smith-doug" blurb="
+- A short introduction to Buddhism from a more secular perspective." %}
 
-{% include inline_content.html category="canon" slug="sn22.86" %}
-- Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most.
+{% include content_blurb.html category="canon" slug="sn22.86" blurb="
+- Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most." %}
 
 ### What did the Buddha teach?
 
@@ -78,25 +78,27 @@ The next part of the class tackles the Buddha's teachings. As this section is th
 {% include content_box.html category="av" slug="enlightenment-is-the-highest-happiness_brahm" %}
 
 {% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-- The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of these celebrated Buddhist teachers.
+
+The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of these celebrated Buddhist teachers.
 
 #### Alternative Presentations of the Dhamma
 
-{% include inline_content.html category="articles" slug="meditation-moral-obligation_vox" %}
-- An example of the many popular press articles reporting on the benefits of meditation
+{% include content_blurb.html category="articles" slug="meditation-moral-obligation_vox" blurb="
+- An example of the many popular press articles reporting on the benefits of meditation" %}
 
-{% include inline_content.html category="canon" slug="an8.53" %}
+{% include content_blurb.html category="canon" slug="an8.53" %}
 - In this early discourse from the Buddhist Canon, the Buddha contextualizes his teachings by listing the character traits that the practice should produce if practiced correctly.
 - Compare this list with the feeling you got from Thich Nhat Hanh and with the benefits described in the popular article above (and any other information you may have read). Do you notice any differences? Similarities? Does anything on this list surprise you?  Are these three sources (the sutta, the monk and the media) saying the same thing in different words or has something been “lost in translation”?
 - This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as “categorical”: always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
 
-{% include inline_content.html category="av" slug="happiness_hong-ci" %}
+{% include content_blurb.html category="av" slug="happiness_hong-ci" %}
 - Ven Hong Ci invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment, thus tying together the threads from the above: renunciation, mindfulness and fulfilment.
 
 {% include content_box.html slug="what-the-buddha-taught_rahula-w" category="monographs" %}
-- The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
 
-{% include inline_content.html category="canon" slug="sn42.6" %}
+The main text for the doctrinal and philosophical content of this course, but don't worry: it is very well written. The class may breeze through or dwell on this book as short or as long as time and interest permits.
+
+{% include content_blurb.html category="canon" slug="sn42.6" %}
 - One of the hallmarks of Buddhism as a religion is that the Buddha emphatically rejected salvation through faith and prayers alone. In this sutta, the Buddha illustrates this with a humorous simile.
 
 #### Reflection Questions
@@ -107,7 +109,7 @@ After finishing the above, it's now a good time to go back to your notes from th
 
 *Readings parallel to Chapters 6–7 of Harvey*
 
-{% include inline_content.html category="canon" slug="sn35.238" %}
+{% include content_blurb.html category="canon" slug="sn35.238" %}
 - Gives some vivid imagery to illustrate the Buddhist outlook on life. The class might take a brief look at Buddhist artwork here and a skilled teacher might explain the relationship between art, metaphor and self-transformation across the Buddhist traditions. (I'll add such a lecture here if I can find a good one)
 - Mostly this text is included here to note that vivid metaphors have always been a part of Buddhism, even in the oldest texts of the Theravada Tradition. 
 - These themes will return vividly at the end of chapter 11 for those reading _Harvey_.
@@ -118,17 +120,17 @@ After finishing the above, it's now a good time to go back to your notes from th
 
 Coming down from the clouds, what do these teachings actually mean, and how do we practice them? 
 
-{% include inline_content.html category="canon" slug="snp1.8" %}
+{% include content_blurb.html category="canon" slug="snp1.8" %}
 - A beautiful Discourse, roughly equivalent to the (rightly) much celebrated passage on love in the Christian Bible, [1 Corinthians 13](https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=NIV). 
 - Notice, though, how the Buddha's description of love explicitly extends our compassionate circle of concern to all sentient beings.
 - Also, rather than framing the sermon as a description of what love is (“patient, kind” etc) notice how the Buddha instead describes love as a practice, giving us instructions on what “should be done.” This shift away from descriptive philosophy and towards ethical praxis is one of the hallmarks of Buddhism, especially in contrast with Western philosophy.
 - Also, consider reading this passage out loud, remembering that the Buddha's words were passed down primarily by oral recitation. How does reading it out loud change your experience of the text?
 
-{% include inline_content.html category="av" slug="loving-kindness-chant_abhayagiri" %}
+{% include content_blurb.html category="av" slug="loving-kindness-chant_abhayagiri" %}
 - Now, listen to it chanted in the traditional style by a group of monks in California. 
 - What benefits do you see in chanting this way, as compared to simply reading the text?
 
-{% include inline_content.html category="booklets" slug="on-love_jayasaro" %}
+{% include content_blurb.html category="booklets" slug="on-love_jayasaro" %}
 - Ajahn Jayasaro beautifully explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
 - While reading, I encourage you to really engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you? 
 
@@ -142,20 +144,20 @@ It's also a good time to revisit your questions from the introduction one more t
 
 I supplement the final chapters in Harvey on the recent history of Buddhism with a few essays on the unique cultural challenges and opportunities which Western Buddhists now face:
 
-{% include inline_content.html category="articles" slug="buddhism-and-modernity_powers-doug" %}
+{% include content_blurb.html category="articles" slug="buddhism-and-modernity_powers-doug" %}
 - Individualism, science, freedom and morality — four contemporary conversations which Buddhism has much to contribute to
 
-{% include inline_content.html category="essays" slug="buddhism-and-human-flourishing_harvey" %}
+{% include content_blurb.html category="essays" slug="buddhism-and-human-flourishing_harvey" %}
 - A defense of Buddhism in light of some Western critiques and an encouragement to try out one particular Eastern practice.
 
-{% include inline_content.html category="articles" slug="science-delusion_white-curtis" %}
+{% include content_blurb.html category="articles" slug="science-delusion_white-curtis" %}
 - A provocative essay on thinking more critically about our scientific, materialistic assumptions before we instinctively “reform” Buddhism to conform to them.
 
 ### And Lastly,
 
-{% include inline_content.html category="canon" slug="khp5" %}
+{% include content_blurb.html category="canon" slug="khp5" %}
 
-{% include inline_content.html category="av" slug="highest-blessings_abhayagiri" %}
+{% include content_blurb.html category="av" slug="highest-blessings_abhayagiri" %}
 
 - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
 **May your life thus be blessed!**

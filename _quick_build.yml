@@ -1,4 +1,4 @@
-# USAGE: jekyll build --config _config.yml,quickbuild_config.yml
+# USAGE: jekyll build --config _config.yml,_quick_build.yml
 # Turns off intensive features and limits the build to make it faster for development
 partial_build: true
 
@@ -113,7 +113,6 @@ exclude:
     - _content/canon/sn11.15.md
     - _content/canon/sn2.25.md
     - _content/canon/sn22.122.md
-    - _content/canon/sn22.86.md
     - _content/canon/sn3.25.md
     - _content/canon/sn33.4.md
     - _content/canon/sn35.116.md

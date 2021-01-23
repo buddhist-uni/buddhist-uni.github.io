@@ -8,9 +8,9 @@ description: ""
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="iti87" %} 
-{% include inline_content.html category="canon" slug="sn47.19" %}
-{% include inline_content.html category="canon" slug="an7.6" %}
+{% include content_blurb.html category="canon" slug="iti87" %} 
+{% include content_blurb.html category="canon" slug="sn47.19" %}
+{% include content_blurb.html category="canon" slug="an7.6" %}
 </p>
 
 ### Similes

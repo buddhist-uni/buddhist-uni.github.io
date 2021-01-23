@@ -43,14 +43,14 @@ I am satisfied that this course is both rigorous and accurate without compromisi
 
 This course follows the excellent textbook by Bhikkhu Cintita:
 
-{% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
+{% include content_blurb.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 - A gradual guide into the heart of Buddhism.
 
 ### Introduction
 
 This book is divided into two, unsurprising halves: Buddhist Life and Buddhist Path. These two divisions roughly follow the exterior and interior transformation of the practitioner, and also follows the gradual explanation of Buddhism, from the mundane to the transcendent, often used by the Buddha himself.
 
-{% include inline_content.html category="av" slug="going-forth_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="going-forth_yuttadhammo" %}
 
 - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
 
@@ -59,7 +59,7 @@ This book is divided into two, unsurprising halves: Buddhist Life and Buddhist P
 
 Bhante Yuttadhammo will be our lecturer for this class. 
 
-{% include inline_content.html category="av" slug="la-course_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="la-course_yuttadhammo" %}
 
 His Los Angeles Talks were originally delivered to yogis practicing [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank" ga-event-value="10"} (which I highly recommend), and thus has a different style than Bhikkhu Cintita’s more staid textbook, despite covering (approximately) the same material.
 
@@ -81,7 +81,7 @@ To get some diversity of voices, and to enrich our understanding, we supplement 
 
 ##### Chapter 1
 
-{% include inline_content.html category="articles" slug="craving-dukkha_analayo" %}
+{% include content_blurb.html category="articles" slug="craving-dukkha_analayo" %}
 (Which references [The Medical Analogy of the Four Noble Truths by Louis De La Vallée Poussin](https://drive.google.com/file/d/1KVcG7UgI_-HYMYh9XqV4lG-80aU30Xmm/view?usp=drivesdk){:target="_blank" ga-event-value="0.15"})
 - We notice here that the Four Noble Truths parallel a medical diagnosis. In this way, we can think of the Buddha as the great “Spiritual Doctor” and his Dhamma as “medicine” which cures our spiritual ills.
 
@@ -99,11 +99,11 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 ##### Homework for Chapter 3
 
-{% include inline_content.html category="av" slug="five-precepts_jayasara" %}
+{% include content_blurb.html category="av" slug="five-precepts_jayasara" %}
 
-{% include inline_content.html category="av" slug="guard-senses_hong-ci" %}
+{% include content_blurb.html category="av" slug="guard-senses_hong-ci" %}
 
-{% include inline_content.html category="canon" slug="an3.78" %}
+{% include content_blurb.html category="canon" slug="an3.78" %}
 
 (Lecture 3)
 
@@ -120,7 +120,7 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 ##### Chapter 6
 
-{% include inline_content.html category="reference" slug="stages-of-enlightenment" %}
+{% include content_blurb.html category="reference" slug="stages-of-enlightenment" %}
 - A small chart summarizing the four stages of enlightenment mentioned in this chapter.
 - These stages will come up again in more detail later. 
 
@@ -154,27 +154,27 @@ In part II, we finally turn to the Noble Eightfold Path, and the transcendant te
 
 ##### Chapter 7
 
-{% include inline_content.html category="essays" slug="real-science_brahm" %}
+{% include content_blurb.html category="essays" slug="real-science_brahm" %}
 - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
 {% include content_box.html category="canon" slug="mn24" %}
 
-{% include inline_content.html category="excerpts" slug="rathavinita_analayo" %}
+{% include content_blurb.html category="excerpts" slug="rathavinita_analayo" %}
 - Bhikkhu Analayo summarizes and discusses this sutta in this short article.
 
 
 ##### Chapter 8
 
-{% include inline_content.html category="canon" slug="an10.61" %}
+{% include content_blurb.html category="canon" slug="an10.61" %}
 - The Buddha explains what fuel keeps ignorance going, and fuels the path out.
 
-{% include inline_content.html category="canon" slug="sn22.101" %}
+{% include content_blurb.html category="canon" slug="sn22.101" %}
 - Liberation is for one who knows and sees the origin and passing away of the aggregates, and it happens as the natural result of cultivating the Noble Eightfold Path.
 - Interestingly, right intention is not the desire to attain liberation, and the desire for liberation doesn't lead to liberation. Rather, cultivating renunciation, goodwill and harmlessness, and developing the mind accordingly, is the motivation that leads to nibbāna.
 - While it's impossible to know “today I've made this much progress” it is possible over larger time spans to reflect and see how our practice has changed our character. 
 
 
-{% include inline_content.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
+{% include content_blurb.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
 - A short series of talks and Q-and-As on Buddhist wisdom by a modern Tibetan master. 
 
 ##### Chapter 9
@@ -187,46 +187,46 @@ For most of us, what holds us back from perfecting virtue and becoming saintly o
 
 In which we finally get to meditation!
 
-{% include inline_content.html category="articles" slug="meditation-in-buddhism_dwivedi-kedar" %}
+{% include content_blurb.html category="articles" slug="meditation-in-buddhism_dwivedi-kedar" %}
 - A short brief in a psychiatric journal summarizing the psychotherapeutic potential of Buddhist meditation.
 
-{% include inline_content.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
+{% include content_blurb.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
 - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.
 - Essentially: note whenever your mind wanders, and then gently return your awareness back to the body, trying to maintain a continuity of awareness as much as possible.
 
-{% include inline_content.html category="av" slug="habits-towards-nibbana_santussika" %}
+{% include content_blurb.html category="av" slug="habits-towards-nibbana_santussika" %}
 - Ayya Santussika gives a guided meditation, followed by a talk about her own practice of...
 
-{% include inline_content.html category="canon" slug="mn8" %}
+{% include content_blurb.html category="canon" slug="mn8" %}
 - A comprehensive list of 44 qualities to develop along with a rubric of levels at which we might assess ourselves.
 
-{% include inline_content.html category="essays" slug="sensual-pleasures-are-painful_suchart" %}
+{% include content_blurb.html category="essays" slug="sensual-pleasures-are-painful_suchart" %}
 - One of my favorite talks by my own teacher, Ajahn Suchart, which beautifully sums up the path, encouraging us all to strive for a real, lasting happiness.
 
 ##### Chapter 11
 
-{% include inline_content.html category="essays" slug="dependant-liberation_brahmali" %}
+{% include content_blurb.html category="essays" slug="dependant-liberation_brahmali" %}
 - Ajahn Brahmali explains how ethics and meditation naturally lead to enlightenment.
 
-{% include inline_content.html category="canon" slug="an11.2" %}
+{% include content_blurb.html category="canon" slug="an11.2" %}
 - This sutta makes the same point: If one merely focuses on ethics, and becomes consummate in ethics, the path to liberation unfolds on its own.
 
 ##### Chapter 12
 
-{% include inline_content.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
+{% include content_blurb.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
 - A transcript of a conversation with Ajahn Panyavaddho.
 - Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
 
-{% include inline_content.html category="canon" slug="iti93" %}
+{% include content_blurb.html category="canon" slug="iti93" %}
 - And lastly, a short poem on enlightenment from the Canon.
 
 
 ### Conclusion
 
-{% include inline_content.html category="booklets" slug="escape-to-reality_pereira" %}
+{% include content_blurb.html category="booklets" slug="escape-to-reality_pereira" %}
 - A rousing collection of essays on Buddhist wisdom and an earnest appeal to put the teachings into practice.
 
-{% include inline_content.html category="av" slug="this-opportunity_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="this-opportunity_yuttadhammo" %}
 - Bhante Yuttadhammo closes the course by encouraging us to make the most of our precious human life: do good, avoid evil, and purify your mind. 
 
 

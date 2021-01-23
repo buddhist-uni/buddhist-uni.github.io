@@ -8,9 +8,9 @@ description: "We always have the option to investigate (rather than react to) ou
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn52.10" %} 
-{% include inline_content.html category="canon" slug="mn57.27" %}
-{% include inline_content.html category="canon" slug="mn146.15" %}
+{% include content_blurb.html category="canon" slug="sn52.10" %} 
+{% include content_blurb.html category="canon" slug="mn57.27" %}
+{% include content_blurb.html category="canon" slug="mn146.15" %}
 </p>
 
 ### Similes

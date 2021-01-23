@@ -52,11 +52,11 @@ The history portion of the course is the longest and describes the entire histor
 ### Introduction
 On forms and the formless.
 
-{% include inline_content.html category="essays" slug="on-science-religion-and-culture_yuttadhammo" %}
+{% include content_blurb.html category="essays" slug="on-science-religion-and-culture_yuttadhammo" %}
 - Here we get Bhante Yuttadhammo’s definition of religion which I referenced earlier, and his introductory thoughts on the cultural forms of Buddhism.
 
 
-{% include inline_content.html category="av" slug="what-buddhism-offers_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="what-buddhism-offers_yuttadhammo" %}
 - Bhante Yuttadhammo then gives us his thoughts on the essence of Buddhism.
 
 ### Part 1: History
@@ -64,7 +64,7 @@ On forms and the formless.
 
 Your main text for this third of the class is the excellent book by Robinson et al:  
 
-{% include inline_content.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
+{% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 
 Note: there are a few editions of this book. I have taken my chapter numbers below from the fourth edition. My apologies if your chapter numbers vary from mine and I hope you can figure out the mapping anyway.
 
@@ -73,35 +73,35 @@ As you read through *Robinson*, please also consider the following:
 
 *Parallel to Robinson Ch 1: Awakening*
 
-{% include inline_content.html category="booklets" slug="noble-quest_horner" %}
+{% include content_blurb.html category="booklets" slug="noble-quest_horner" %}
 - The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
 - The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
 
 *Parallel to Robinson Ch 2: Teacher*
 
-{% include inline_content.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
+{% include content_blurb.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
 - An Introduction to Buddhist History
 
-{% include inline_content.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
+{% include content_blurb.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
 - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
-{% include inline_content.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
+{% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
 
 *Parallel to Robinson chapter 3: “Development”*
 
-{% include inline_content.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
+{% include content_blurb.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
 - Buddhism is not an especially evangelical religion. This paper explores the unique (compared to other religions) way that Buddhism spread.
 
-{% include inline_content.html category="papers" slug="venerated-objects-early-buddhism_harvey" %}
+{% include content_blurb.html category="papers" slug="venerated-objects-early-buddhism_harvey" %}
 - The early Buddhists of ancient India did not represent the Buddha with anthropomorphic statues as is ubiquitous now. This essay explores the symbols and objects that were venerated in the early period after the Buddha’s death.
 
-{% include inline_content.html category="articles" slug="lotus-as-symbol_olson_carl" %}
+{% include content_blurb.html category="articles" slug="lotus-as-symbol_olson_carl" %}
 - One such object which became notably ubiquitous across Buddhist cultures is the lotus flower.  This article explores the ancient origins and meaning of this potent symbol.
 
 *Chapter 4: “The Rise of Mahayana”*
 
-{% include inline_content.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
+{% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
 
 *Chapter 5: “The Pantheon”*
@@ -112,10 +112,10 @@ As you read through *Robinson*, please also consider the following:
 
 *After Chapter 6 of Robinson on “Vajrayana”*
 
-{% include inline_content.html category="articles" slug="mudras_tricycle" %}
+{% include content_blurb.html category="articles" slug="mudras_tricycle" %}
 - Taking an important role during the later development of Buddhist art and esoterica, mudras such as the “Anjali” of respect are now ubiquitous in the Buddhist cultural sphere, and are nearly synonymous with Buddhism itself.
 
-{% include inline_content.html category="articles" slug="story-of-the-horse-king_appleton" %}
+{% include content_blurb.html category="articles" slug="story-of-the-horse-king_appleton" %}
 - One story, five countries.
 - Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
@@ -123,15 +123,15 @@ As you read through *Robinson*, please also consider the following:
 
 Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
 
-{% include inline_content.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
+{% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
 - First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
 
-{% include inline_content.html category="av" slug="drums-and-bells_qing-de" %}
+{% include content_blurb.html category="av" slug="drums-and-bells_qing-de" %}
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
 *Robinson Chapter 9: Korea and Vietnam*
 
-{% include inline_content.html category="articles" slug="faxians-account-of-anuradhapura_kim-haewon" %}
+{% include content_blurb.html category="articles" slug="faxians-account-of-anuradhapura_kim-haewon" %}
 - What does a Chinese monk's pilgrimage to Sri Lanka have to do with Korea?
 
 *Robinson Chapter 10: Japan*
@@ -140,17 +140,17 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 
 *Robinson Chapter 11: Tibet*
 
-{% include inline_content.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
+{% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
 - Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
 - Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
 
 
 *Robinson Chapter 12: “Buddhism Comes West”*
 
-{% include inline_content.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
+{% include content_blurb.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
 - A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
 
-{% include inline_content.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
+{% include content_blurb.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
 - As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
 In conclusion: **History is now ours to make!**
@@ -161,19 +161,19 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 
 #### Introduction
 
-{% include inline_content.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
+{% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
 - Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
 
-{% include inline_content.html category="canon" slug="sn45.2" %}
+{% include content_blurb.html category="canon" slug="sn45.2" %}
 - Joseph Goldstein reads the Buddha's own take on “the entire spiritual life.”
 
-{% include inline_content.html category="essays" slug="going-forth_viradhammo" %}
+{% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
 - A beautiful sermon on the value of monasticism.
 
-{% include inline_content.html category="essays" slug="economy-of-gifts_geoff" %}
+{% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
 - Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
 
-{% include inline_content.html category="articles" slug="we-love-our-nuns_mrozik" %}
+{% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
 #### Main Text
@@ -196,29 +196,29 @@ We have two supplements for *Khantipalo*:
 
 Listen to this alongside the section of Khantipalo about refuge and the triple gem:
 
-{% include inline_content.html category="av" slug="becoming-buddhist_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="becoming-buddhist_yuttadhammo" %}
 - Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about “taking refuge”
 
 ##### Practicing Restraint
 
 A few more words are also due on the subject of restraint, beyond the five precepts. Please consider this alongside the section on “practice”
 
-{% include inline_content.html category="canon" slug="sn35.239" %}
+{% include content_blurb.html category="canon" slug="sn35.239" %}
 - Explains the three primary duties of a monk: guarding the senses, moderation in eating, and the devotion to wakefulness. 
 - What monastic behaviors and vows do you know about already? How do the monastic and “eight precept” observances help with these three duties? What do you think is their benefit? Can lay Buddhists practice these? Should they?
 
 
 #### Praxis Conclusion 
 
-{% include inline_content.html category="av" slug="dhammavinaya_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="dhammavinaya_yuttadhammo" %}
 - Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
 ### Conclusion to the Class
 
-{% include inline_content.html category="av" slug="pseudobuddhism_brahm" %}
+{% include content_blurb.html category="av" slug="pseudobuddhism_brahm" %}
 - Ajahn Brahm reminds us, in his light-hearted way, that for all the traditions and books, real knowledge comes from meditation (or, as Bhikkhu Cintita put it, the joke is passed on to make us laugh).
 
-{% include inline_content.html category="canon" slug="dedication_longchenpa" %}
+{% include content_blurb.html category="canon" slug="dedication_longchenpa" %}
 - It's common in many Buddhist cultures to end a meritorious event or auspicious occasion with a short dedication. Here is a typical such prayer from the Tibetan Tradition.
 
 

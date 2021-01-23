@@ -22,13 +22,13 @@ Chapter one of _From Craving to Liberation_ is about, well, craving. Bhikkhu Ana
 
 ### Suttas
 
-{% include inline_content.html category="canon" slug="sn27.8" %}
+{% include content_blurb.html category="canon" slug="sn27.8" %}
 - What are the different types of craving?
-{% include inline_content.html category="canon" slug="mn9.17" %}
+{% include content_blurb.html category="canon" slug="mn9.17" %}
 - In defining Right View, the Four Noble Truths and "Craving" are central.
-{% include inline_content.html category="canon" slug="an6.61" %}
+{% include content_blurb.html category="canon" slug="an6.61" %}
 - Who is the "seamstress" of _Saṃsāra_?
-{% include inline_content.html category="canon" slug="snp4.1" %}
+{% include content_blurb.html category="canon" slug="snp4.1" %}
 - A poem on our addiction to things of the world.
 
 ### Similes

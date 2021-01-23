@@ -39,8 +39,8 @@ This course assumes some prior familiarity with [the Early Buddhist Texts]({% li
 
 This course will center around Bhikkhu Anālayo’s two “Excursions into the Thought World of the Pāli Discourses”:
 
-{% include inline_content.html category="monographs" slug="craving-to-liberation_analayo" %}
-{% include inline_content.html category="monographs" slug="grasping-to-emptiness_analayo" %}
+{% include content_blurb.html category="monographs" slug="craving-to-liberation_analayo" %}
+{% include content_blurb.html category="monographs" slug="grasping-to-emptiness_analayo" %}
 - These two books each give a systematic treatment to a dozen important terms from the Pāli Canon, analyzing their nuances and the various ways each term is used.
 
 {% include content_box.html category="monographs" slug="similes-of-the-buddha_hecker" %}

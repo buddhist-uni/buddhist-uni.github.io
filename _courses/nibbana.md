@@ -70,17 +70,17 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {: .nomarginbottom}
   - Will give an introduction to this text and to the term "*nibbāna*"
 
-{% include inline_content.html category="essays" slug="nibbana_bodhi" %}
+{% include content_blurb.html category="essays" slug="nibbana_bodhi" %}
   - A standard definition and straightforward typology of Nibbāna.
   - Sometimes we will talk about nibbāna as a philosophical entity and at other times as a psychological state, or even as a meditation experience. This essay gives a good outline of these different aspects. Useful to keep in mind throughout the course, that "*Nibbāna*" can refer to a few different things!
 
-{% include inline_content.html category="canon" slug="snp5.10" %}
+{% include content_blurb.html category="canon" slug="snp5.10" %}
   - The beautiful sutta from which our textbook (_The Island_) gets its name.
 
-{% include inline_content.html category="canon" slug="sn43" %}
+{% include content_blurb.html category="canon" slug="sn43" %}
   - "The Island" is, however, not the only synonym for the ultimate given in the early texts.  This chapter from the Saṃyutta Nikāya lists 43 others to give us a better idea of its character.
 
-{% include inline_content.html category="articles" slug="synonyms-for-nibbana-from-tibet_skilling" %}
+{% include content_blurb.html category="articles" slug="synonyms-for-nibbana-from-tibet_skilling" %}
   - While sadly these forty synonyms were lost in the Chinese Tradition, Skilling shows that SN 43 (above) was preserved in Tibet.
 
 #### Fire, Heat, and Coolness
@@ -93,10 +93,10 @@ Chapter two of _The Island_ gives us the basic metaphorical image behind the ter
 
 And if you're still thinking that Nirvana is some heaven realm somewhere...
 
-{% include inline_content.html category="booklets" slug="nibbana-and-the-fire-simile_nyanananda" %}
+{% include content_blurb.html category="booklets" slug="nibbana-and-the-fire-simile_nyanananda" %}
   - Bhante Ñāṇananda disabuses us of that notion, by reminding us that "Nirvana" simply means relinguishing: letting go of fuel.
 
-{% include inline_content.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
+{% include content_blurb.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
   - And Ajahn Geoff further explores ancient Indian phsysics to come up with a striking, new (old) take on this central metaphor. A long booklet, but well worth the read.
 
 ### Part 2: Terrain
@@ -110,7 +110,7 @@ This is the main section of the course. We'll cover the rest of _Metaphor and Li
   - The Abhidharma Tradition took Nirvana from a metaphor and turned it into a physical reality (“dhatu”).
   - This leads to some problems, particularly how this “ultimate reality” differs from the “ultimates” postulated by other religions.
 
-{% include inline_content.html category="booklets" slug="vedanta-and-buddhism_glasenapp" %}
+{% include content_blurb.html category="booklets" slug="vedanta-and-buddhism_glasenapp" %}
   - This booklet helps to answer that very question, by explaining the middle way and contrasting it to the influential Vedāntic theology.
 
 I personally find that The Island occasionally leans on the side of eternalism (or at least doesn't argue against it to my satisfaction), so the above chapter and booklet will be especially good to read and keep in mind.
@@ -119,20 +119,20 @@ I personally find that The Island occasionally leans on the side of eternalism (
 
 We will return to Metaphor and Literalism in a few chapters, but first let us talk for a while about nibbāna’s opposites: conditioned reality and suffering (dukkha).
 
-{% include inline_content.html category="canon" slug="an8.5" %}
+{% include content_blurb.html category="canon" slug="an8.5" %}
   - How does an arahant relate to the world?
 
 #### To Be or Not to Be
 
-{% include inline_content.html category="canon" slug="snp5.4" %}
+{% include content_blurb.html category="canon" slug="snp5.4" %}
   - What is the difference between an Ordinary and an Enlightened being?
 
-{% include inline_content.html category="booklets" slug="anatta-nibbana_nyanaponika" %}
+{% include content_blurb.html category="booklets" slug="anatta-nibbana_nyanaponika" %}
   - How is “extinguishing” the Middle Way? How is it not nihilism?  How is "extinguishing" different from "annihilation"?
 
 #### Not Made of That
 
-{% include inline_content.html category="essays" slug="advice-on-the-worldly-concerns_dundul" %}
+{% include content_blurb.html category="essays" slug="advice-on-the-worldly-concerns_dundul" %}
   - What is “non-duality” and, more importantly, how does one practice it?
 
 #### Attending to the Deathless
@@ -141,13 +141,13 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### Unsupported and Unsupportive Consciousness
 
-{% include inline_content.html category="articles" slug="what-the-nikayas-say-about-nibbana_brahmali" %}
+{% include content_blurb.html category="articles" slug="what-the-nikayas-say-about-nibbana_brahmali" %}
   - It is very important (and very difficult!) to understand that the “experience” of _nibbāna_ is no experience at all!
   - Ajahn Brahmali here argues the other side of the “debate” from _The Island_, explaining how “_anidassana viññāṇa_” should be understood, not as a hidden, pure, or non-dual consciousness, but as something else entirely.
 
 #### The Unconditioned and Nonlocality
 
-{% include inline_content.html category="articles" slug="nibbana-abhidhamma_cousins" %}
+{% include content_blurb.html category="articles" slug="nibbana-abhidhamma_cousins" %}
   - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _nibbāna_ develop into the “unconditioned element”?
 
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Chapter 4 - _Nibbāna_ in the Theravada Buddhist Tradition
@@ -164,13 +164,13 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### 'Reappears' Does Not Apply
 
-{% include inline_content.html category="canon" slug="an4.195" %}
+{% include content_blurb.html category="canon" slug="an4.195" %}
 > everything becomes cool when nothing is relished
 
-{% include inline_content.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
+{% include content_blurb.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
 - On what it feels like to transcend the categories
 
-{% include inline_content.html category="articles" slug="translating-buddha_bodhi" %}
+{% include content_blurb.html category="articles" slug="translating-buddha_bodhi" %}
 - Bhikkhu Bodhi discusses the nature of Buddhist enlightenment in order to defend using the English term "enlightenment" to describe it at all.
 - Key to his argument is that complete liberation is described as the arising of true knowledge. Once ignorance is destroyed, it will never appear again.
 
@@ -183,10 +183,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 We wrap up this, the main, section of our course, with a brief word on the "Radiant Mind" and related perennial topics:
 
-{% include inline_content.html category="articles" slug="luminous-mind_analayo" %}
+{% include content_blurb.html category="articles" slug="luminous-mind_analayo" %}
   - Bhikkhu Analayo gives a careful, textual study of the supposedly “luminous” nature of the mind in early Buddhism.  Is such a view supported by the early texts or is this a later development?
 
-{% include inline_content.html category="articles" slug="channa-suicide_analayo" %}
+{% include content_blurb.html category="articles" slug="channa-suicide_analayo" %}
   - The curious case of an arahant committing suicide.  Can someone who has attained the goal decide to kill themselves?
 
 ### Part 3: Cultivation
@@ -195,20 +195,20 @@ The next two parts of the course shift from philosophical to more practical cons
 
 #### The Gradual Path
 
-{% include inline_content.html category="articles" slug="nature-of-the-ariya-magga_harvey" %}
+{% include content_blurb.html category="articles" slug="nature-of-the-ariya-magga_harvey" %}
   - What is the relationship between the mundane and supermundane paths? How did these concepts develop?
 
 #### Sudden Penetration
 
-{% include inline_content.html category="canon" slug="mn44" %}
+{% include content_blurb.html category="canon" slug="mn44" %}
   - This deep sutta on the details of the meditative “experience” of nibbāna takes place as a discussion between the Bhikkhuni Dhammadinnā and her student, the layman Visākha.  How is “the unconditioned” conditioned?
 
-{% include inline_content.html category="av" slug="mn44-explanation_brahm" %}
+{% include content_blurb.html category="av" slug="mn44-explanation_brahm" %}
 - Ajahn Brahm celebrates their Bhikkhuni ordination with a talk on this sutta.
 
 #### The Path and Goal
 
-{% include inline_content.html category="av" slug="arahat_bodhi" %}
+{% include content_blurb.html category="av" slug="arahat_bodhi" %}
   - An introduction to the final goal of Buddhist Practice.
 
 ### Part 4: Fuition
@@ -219,18 +219,18 @@ We finally come to the last, but perhaps most important, part of our course: the
 
 *Sotāpanna* (or a Stream Winner) is someone who has attained the first stage of awakening. They have eliminated doubt and are firmly on the path to final deliverance.  We will conceptualize this "turning point" in the spiritual career first with this work on the stages of insight that lead **up** to Stream Entry:
 
-{% include inline_content.html category="booklets" slug="visuddhinyanakatha_mahasi" %}
+{% include content_blurb.html category="booklets" slug="visuddhinyanakatha_mahasi" %}
   - What does it feel like as we transition from ordinary to super-mundane practice?
 
-{% include inline_content.html category="av" slug="stages-of-awakening_anandabodhi" %}
+{% include content_blurb.html category="av" slug="stages-of-awakening_anandabodhi" %}
   - A short talk on balancing faith and knowledge against expectations.
 
 #### "Ah, What Bliss!" — Conclusion
 
-{% include inline_content.html category="essays" slug="empty-citta_mahabua" %}
+{% include content_blurb.html category="essays" slug="empty-citta_mahabua" %}
   - Ajahn Maha Boowa describes what it's like to be an arahant in this short talk delivered near the end of his life.
 
-{% include inline_content.html category="av" slug="after-nibbana_yuttadhammo" %}
+{% include content_blurb.html category="av" slug="after-nibbana_yuttadhammo" %}
   - "What's next?" What happens after enlightenment?
 
 With those final words of inspiration, our course is now finished.  The rest is up to us.

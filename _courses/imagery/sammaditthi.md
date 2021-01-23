@@ -8,10 +8,10 @@ description: ""
 
 ### Suttas
 <p>
-{% include inline_content.html category="canon" slug="sn3.25" %} 
-{% include inline_content.html category="canon" slug="an4.147" %}
-{% include inline_content.html category="canon" slug="an7.15" %}
-{% include inline_content.html category="canon" slug="ud6.4" %}
+{% include content_blurb.html category="canon" slug="sn3.25" %} 
+{% include content_blurb.html category="canon" slug="an4.147" %}
+{% include content_blurb.html category="canon" slug="an7.15" %}
+{% include content_blurb.html category="canon" slug="ud6.4" %}
 </p>
 
 Bonus:
