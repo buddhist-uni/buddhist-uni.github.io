@@ -3,9 +3,10 @@ title: "Authors"
 permalink: "/authors/"
 layout: page
 ---
+{%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
 {%- assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" -%}
-{%- assign readers = site.content | where_exp: "c", "c.reader" | group_by: "reader" -%}
-{%- assign translators = site.content | where_exp: "c", "c.translator" | group_by: "translator" -%}
+{%- assign readers = all_content | where_exp: "c", "c.reader" | group_by: "reader" -%}
+{%- assign translators = all_content | where_exp: "c", "c.translator" | group_by: "translator" -%}
 <div class="author-list">
 {%- for letter in author_letters -%}
 <h3 id="{{ letter.name }}">{{ letter.name | upcase }}</h3>
@@ -13,7 +14,7 @@ layout: page
 {%- for author in letter.items -%}
     {%- assign catcounts = "" | split: "" -%}
     {%- capture filter %}c.authors contains '{{ author.slug }}'{% endcapture -%}
-    {%- assign by_cat = site.content | where_exp: "c", filter | group_by: "category" -%}
+    {%- assign by_cat = all_content | where_exp: "c", filter | group_by: "category" -%}
     {%- for cat in by_cat -%}
       {%- case cat.name -%}
         {%- when "canon" -%}
