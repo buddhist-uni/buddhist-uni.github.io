@@ -12,7 +12,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1i14ZsvSXsC_aQ0Yv0ENN8-qOh9OVW3Qa/view?usp=drivesdk"]
 course: sa
 tags:
-  - kandha
+  - khandha
 ---
 
 > This article translates the fifth fascicle of the Saṃyukta-āgama, which contains discourses 103 to 110.

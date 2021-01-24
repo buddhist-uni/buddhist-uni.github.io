@@ -447,6 +447,17 @@ div.featuringrow div.lecturers {
     min-width: 20%;
 }
 
+#search-results {
+    margin-top: 40px;
+    li {
+        list-style: none;
+        margin-bottom: 25px;
+        h3 {
+            margin-bottom: 0px;
+        }
+    }
+}
+
 @import
     "frontpage"
 ;

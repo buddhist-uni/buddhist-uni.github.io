@@ -12,7 +12,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1PclwThTe5zJMuoEl8-RU5hBzo7iTopxF/view?usp=drivesdk"]
 course: sa
 tags:
-  - kandha
+  - khandha
 ---
 
 > This article translates the third fascicle of the Saṃyukta-āgama, which contains discourses 59 to 87.

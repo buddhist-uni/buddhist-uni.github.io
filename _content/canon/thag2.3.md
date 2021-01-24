@@ -8,7 +8,7 @@ course: imagery
 tags:
   - hindrances
   - kilesa
-  - khanda
+  - khandha
   - tranquility-and-insight
   - nibbana
   - thag

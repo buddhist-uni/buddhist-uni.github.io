@@ -12,7 +12,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1pQ6FmG_-c9yl11rE4ZOW84DEDpyTWF-N/view?usp=drivesdk"]
 course: sa
 tags:
-  - kandha
+  - khandha
 ---
 
 > This article translates the first fascicle of the Saṃyukta-āgama, which contains discourses 1 to 32.
