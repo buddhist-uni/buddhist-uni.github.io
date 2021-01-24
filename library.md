@@ -10,6 +10,9 @@ You can explore the library by:
 ### [<i class="fas fa-tag"></i> Topic]({% link tags.md %})
 Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
 
+### [<i class="fas fa-search"></i> Search]({% link search.html %})
+Just type in what you're looking for and see what comes up!
+
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
 If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can [find a list of our authors here]({% link authors.md %}).
 

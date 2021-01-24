@@ -8,7 +8,7 @@ course: neuroscience
 status: featured
 tags:
   - biology
-  - khanda
+  - khandha
   - thought
   - problems
   - emotions

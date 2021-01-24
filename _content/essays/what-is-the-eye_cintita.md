@@ -10,7 +10,7 @@ tags:
   - chan
   - shikantaza
   - phenomenology
-  - kanda
+  - khandha
   - world
 ---
 

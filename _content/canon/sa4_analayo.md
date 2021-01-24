@@ -12,7 +12,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1QQDlBRIR2Fzs_rooZg0VhdzCRWUCUOFO/view?usp=drivesdk"]
 course: sa
 tags:
-  - kandha
+  - khandha
 ---
 
 > This article translates the fourth fascicle of the Saṃyukta-āgama, which contains discourses 33 to 58.

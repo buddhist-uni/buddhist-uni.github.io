@@ -127,7 +127,7 @@ layout: default
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
       <button ga-on="click" ga-event-category="Bibtex" ga-event-action="copy" ga-event-label="{{ content_path }}" class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
-      <script src="{{ "/assets/clipboard.js" | relative_url }}"></script>
+      <script src="{{ "/assets/js/clipboard.js" | relative_url }}"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');
 cb.on('success', function(e){showTooltip(e.trigger,'Copied');});

@@ -12,7 +12,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/14HM5NAnSbjPmCof6Sh_n5F_kXD2K3fyU/view?usp=drivesdk"]
 course: sa
 tags:
-  - kandha
+  - khandha
 ---
 
 > This article translates the second fascicle of the Saṃyukta-āgama, which contains discourses 256 to 272.
