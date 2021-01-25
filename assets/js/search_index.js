@@ -18,7 +18,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
     "{{ p.url | slugify }}": {
         "type": "{{ p.collection }}",
         "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
-        "description": {{ p.description | jsonify }},
+        "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
         "tags": {{ p.tags | jsonify | replace: '-', ' ' }},
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
@@ -57,6 +57,33 @@ function getPositions(result, field) {
     return positions;
 }
 
+function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
+    var startindex = startindex || 0;
+    var endindex = endindex || blurb.length;
+    var ranges = new Ranges();
+    let md = result.matchData.metadata;
+    var i = 0; var j = 0;
+    for (var searchTerm in md) {
+        if (!md[searchTerm][fromfield]) continue;
+        for (var mi in md[searchTerm][fromfield].position) {
+            let m = md[searchTerm][fromfield].position[mi];
+            i = m[0]; j = i+m[1];
+            if (i < endindex || j > startindex) {
+                ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
+            }
+        }
+    }
+    i = ranges.array.length - 1;
+    var ret = blurb;
+    while (i >= 0) {
+        ret = ret.substring(0,ranges.array[i][0]) + 
+            '<strong>' + ret.substring(ranges.array[i][0],ranges.array[i][1]) +
+            '</strong>' + ret.substring(ranges.array[i][1], ret.length);
+        i--;
+    }
+    return ret;
+}
+
 function getBlurbForResult(result, item, positions) {
     var titleMatch = false;
     let md = result.matchData.metadata;
@@ -67,8 +94,10 @@ function getBlurbForResult(result, item, positions) {
         }
     }
     if ((titleMatch || positions.length == 0) && item.description){
-      if (item.description.length < BMAX) return item.description;
-      return item.description.substring(0, BMAX) + "...";
+      var ret = item.description;
+      if (item.description.length > BMAX)
+        ret = item.description.substring(0, BMAX) + "...";
+      return addMatchHighlights(result, ret, 'description');
     }
     // Calculate the best section of the content to blurb
     var best_i = -1;
@@ -93,26 +122,7 @@ function getBlurbForResult(result, item, positions) {
     if (startindex <= 0){ startindex = 0; pre = false; }
     var endindex = startindex + BMAX;
     var ret = item.content.substring(startindex,endindex);
-    // Bold the matched terms
-    var ranges = new Ranges() 
-    for (var searchTerm in md) {
-        if (!md[searchTerm].content) continue;
-        for (var mi in md[searchTerm].content.position) {
-            let m = md[searchTerm].content.position[mi];
-            i = m[0]; j = i+m[1];
-            if (i < endindex || j > startindex) {
-                ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
-            }
-        }
-    }
-    i = ranges.array.length - 1;
-    while (i >= 0) {
-        ret = ret.substring(0,ranges.array[i][0]) + 
-            '<strong>' + ret.substring(ranges.array[i][0],ranges.array[i][1]) +
-            '</strong>' + ret.substring(ranges.array[i][1], ret.length);
-        i--;
-    }
-    // return the string with added ...s
+    ret = addMatchHighlights(result, ret, 'content', startindex, endindex);
     if (endindex >= item.content.length) return (pre?'...':'') + ret;
     return (pre?'...':'') + ret + "...";
 }
@@ -146,7 +156,7 @@ function displaySearchResult(result, item) {
         case 'tags': type = 'Bibliography'; break;
         case 'series': type = 'Series'; break;
     }
-    var ret = '<li><a href="' + item.url + '"><h3>' + item.title + '</h3>';
+    var ret = '<li><a href="' + item.url + '"><h3>' + addMatchHighlights(result, item.title, 'title') + '</h3>';
     if (type) ret += '<span class="Label Label--inline Label--large Label--gray-darker mr-1">' + type + '</span>';
     return ret + '</a><p>' + blurb + '</p></li>';
 }
