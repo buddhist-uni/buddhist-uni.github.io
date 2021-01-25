@@ -17,10 +17,10 @@ title: The Open Buddhist University
 author: Ven Khemarato
 email: khemarato.bhikkhu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A Github-hosted website dedicated to providing free,
-  online courses in Buddhist Studies. 
+  A website dedicated to providing free,
+  online courses and bibliographies in Buddhist Studies. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://buddhist-uni.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.buddhistuniversity.net" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-159403467-1
 github_username:  buddhist-uni/buddhist-uni.github.io
 tinyletter_username: buddhist-uni
@@ -39,6 +39,7 @@ show_excerpts: true
 ## Feature Flags
 show_similars: true
 show_bibtex: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
