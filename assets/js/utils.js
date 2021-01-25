@@ -54,7 +54,7 @@ function locationOf(array, element, comparer, start, end) {
     start = start || 0;
     if (end === null || end === undefined)
       end = array.length-1;
-    var pivot = (start + end) >> 1;  // should be faster than dividing by 2
+    var pivot = (start + end) >> 1;
     if (comparer(element, array[pivot])) {
         return (start==end)? pivot+1: locationOf(array, element, comparer, pivot+1, end);
     }

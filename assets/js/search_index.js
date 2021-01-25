@@ -19,7 +19,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection }}",
         "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
         "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
-        "tags": {{ p.tags | jsonify | replace: '-', ' ' }},
+        "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% include content_authors_string.html authors=p.authors %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}"{{ a | strip | xml_escape }}",
