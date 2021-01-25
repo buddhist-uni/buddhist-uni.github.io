@@ -177,7 +177,10 @@ function displaySearchResults(results) {
 self.onmessage = function(e) {
     var results = idx.search(e.data);
     if (!results.length) results = idx.search(e.data.split(" ").join("~1 ") + "~1");
-    self.postMessage(displaySearchResults(results));
+    self.postMessage({
+      "html": displaySearchResults(results),
+      "q": e.data
+    });
 }
 
 
