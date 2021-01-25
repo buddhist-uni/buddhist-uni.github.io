@@ -101,6 +101,6 @@
   } catch (e) {
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = "<li>Sorry, your browser doesn't seem to support this feature</li>" +
-        '<li><a href="https://www.google.com/search?q=site%3Abuddhist-uni.github.io+' + encodeURIComponent(initialSearchTerm) + '">Click here to try Google instead</a></li>';
+        '<li><a href="https://www.google.com/search?q=site%3www.buddhistuniversity.net+' + encodeURIComponent(initialSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();
