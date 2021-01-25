@@ -8,41 +8,20 @@ importScripts("/assets/js/utils.js");
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100;
 
-var defaultComparer = function (a, b) { return (a > b); };
-function locationOf(array, element, comparer, start, end) {
-    if (array.length === 0)
-        return -1;
-    if (!comparer)
-        comparer = defaultComparer;
-    start = start || 0;
-    if (end === null || end === undefined)
-      end = array.length-1;
-    var pivot = (start + end) >> 1;  // should be faster than dividing by 2
-    if (comparer(element, array[pivot])) {
-        return (start==end)? pivot+1: locationOf(array, element, comparer, pivot+1, end);
-    }
-    if (start==end) return pivot;
-    return locationOf(array, element, comparer, start, pivot);
- };
-
-function sortedInsert(array, element) {
-    array.splice(locationOf(array, element), 0, element);
-    return array;
-}
-
 {%- assign ccurly = "}" -%}
 {%- assign ocurly = "{" -%}
 {%- assign backtoback = ccurly | append: ocurly -%}
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}
+    {% if p.url contains "/tests/" %}{% continue %}{% endif %}
     "{{ p.url | slugify }}": {
         "type": "{{ p.collection }}",
         "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
         "description": {{ p.description | jsonify }},
         "tags": {{ p.tags | jsonify | replace: '-', ' ' }},
         "category": {{ p.category | jsonify }},
-        "boost": {% if p.status == 'featured' %}4{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
+        "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% include content_authors_string.html authors=p.authors %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}"{{ a | strip | xml_escape }}",
         "content": {% assign cpieces = p.content | strip | markdownify | strip_newlines | replace: "</", ' </' | strip_html | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | jsonify }},
         "url": "{{ p.url }}"
@@ -80,8 +59,9 @@ function getPositions(result, field) {
 
 function getBlurbForResult(result, item, positions) {
     var titleMatch = false;
-    for (var searchTerm in result.matchData.metadata) {
-        if (result.matchData.metadata[searchTerm]['title']) {
+    let md = result.matchData.metadata;
+    for (var searchTerm in md) {
+        if (md[searchTerm]['title']) {
             titleMatch = true;
             break;
         }
@@ -90,6 +70,7 @@ function getBlurbForResult(result, item, positions) {
       if (item.description.length < BMAX) return item.description;
       return item.description.substring(0, BMAX) + "...";
     }
+    // Calculate the best section of the content to blurb
     var best_i = -1;
     var best_n = 0;
     for (var i in positions) {
@@ -107,12 +88,33 @@ function getBlurbForResult(result, item, positions) {
     i = positions[best_i];
     j = positions[best_i + best_n - 1];
     var m = (i+j)>>1;
-    i = m - (BMAX>>1);
+    var startindex = m - (BMAX>>1);
     var pre = true;
-    if (i <= 0){ i = 0; pre = false; }
-    j = i + BMAX;
-    if (j >= item.content.length) return (pre?'...':'') + item.content.substring(i, item.content.length-1);
-    return (pre?'...':'') + item.content.substring(i,j) + "...";
+    if (startindex <= 0){ startindex = 0; pre = false; }
+    var endindex = startindex + BMAX;
+    var ret = item.content.substring(startindex,endindex);
+    // Bold the matched terms
+    var ranges = new Ranges() 
+    for (var searchTerm in md) {
+        if (!md[searchTerm].content) continue;
+        for (var mi in md[searchTerm].content.position) {
+            let m = md[searchTerm].content.position[mi];
+            i = m[0]; j = i+m[1];
+            if (i < endindex || j > startindex) {
+                ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
+            }
+        }
+    }
+    i = ranges.array.length - 1;
+    while (i >= 0) {
+        ret = ret.substring(0,ranges.array[i][0]) + 
+            '<strong>' + ret.substring(ranges.array[i][0],ranges.array[i][1]) +
+            '</strong>' + ret.substring(ranges.array[i][1], ret.length);
+        i--;
+    }
+    // return the string with added ...s
+    if (endindex >= item.content.length) return (pre?'...':'') + ret;
+    return (pre?'...':'') + ret + "...";
 }
 
 function categoryName(c) {
@@ -142,6 +144,7 @@ function displaySearchResult(result, item) {
         case 'authors': type = 'Author'; break; 
         case 'publishers': type = 'Publisher'; break;
         case 'tags': type = 'Bibliography'; break;
+        case 'series': type = 'Series'; break;
     }
     var ret = '<li><a href="' + item.url + '"><h3>' + item.title + '</h3>';
     if (type) ret += '<span class="Label Label--inline Label--large Label--gray-darker mr-1">' + type + '</span>';

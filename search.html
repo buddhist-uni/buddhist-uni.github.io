@@ -1,11 +1,12 @@
 ---
 title: Search
 ---
-<form action="/search/" method="GET">
+<form id="search" action="/search/" method="GET">
     <input type="text" id="search-box" name="q">
     <input type="submit" value="Go!">
 </form>
 
+<div style="display: none;" id="search-loading"><h3><i class="fas fa-circle-notch fa-spin"></i></h3><p id="still-loading" style="display: none;">Still loading...</p></div>
 <ul id="search-results"><li>Sorry, this page requires Javascript</li></ul>
 
 <script src="/assets/js/utils.js"></script>
