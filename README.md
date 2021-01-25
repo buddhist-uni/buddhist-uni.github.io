@@ -32,9 +32,9 @@ As a map of my mind, this library contains (editorially and structurally) my own
 
 # Studying
 
-There are two primary ways to study here: taking [the courses](https://buddhist-uni.github.io/courses/) or hanging out at [the library](https://buddhist-uni.github.io/library/).
+There are two primary ways to study here: taking [the courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
 
-The library contains all the best content I've found on the internet, [organized primarily by topic](https://buddhist-uni.github.io/tags/).  After reading a work, I contemplate what I learned and who I'd recommend it to. Only then do I file away the piece into topics, based on my answers to those questions.
+The library contains all the best content I've found on the internet, [organized primarily by topic](https://www.buddhistuniversity.net/tags/).  After reading a work, I contemplate what I learned and who I'd recommend it to. Only then do I file away the piece into topics, based on my answers to those questions.
 
 Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material again to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  As I go through, some works may be added to the topic that were originally categorized elsewhere, some works might be moved out of the topic, and some may even be rejected entirely.
 
@@ -84,7 +84,7 @@ I have also tried to select content with "staying power" to avoid, as much as po
 
 # Acknowledgements
 
-A big thank you to [the content sources](https://buddhist-uni.github.io/sources/), to Google (for hosting [the Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)), to GitHub for hosting the site, and to all the various content creators and publishers who generously put their work out there for free. It's a testament to Buddhist generosity that such an expansive and outstanding collection can be compiled (almost entirely) from free material.
+A big thank you to [the content sources](https://www.buddhistuniversity.net/sources/), to Google (for hosting [the Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)), to GitHub for hosting the site, and to all the various content creators and publishers who generously put their work out there for free. It's a testament to Buddhist generosity that such an expansive and outstanding collection can be compiled (almost entirely) from free material.
 
 # Dedication
 

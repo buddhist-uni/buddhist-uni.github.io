@@ -24,6 +24,7 @@ url: "https://www.buddhistuniversity.net" # the base hostname & protocol for you
 google_analytics: UA-159403467-1
 github_username:  buddhist-uni/buddhist-uni.github.io
 tinyletter_username: buddhist-uni
+twitter_username: buddhistuni
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]
 timezone: "Asia/Bangkok"
 doi: "10.5281/zenodo.4448510"
