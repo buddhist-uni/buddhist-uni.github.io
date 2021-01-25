@@ -48,12 +48,16 @@
         }
       };
       function maybeRegisterNavigation() {
-        if (!running && this.q == searchBox.value && this.q != initialSearchTerm) {
-            var nuri = UpdateQueryString('q', this.q);
-            setTitle(this.q);
+        if (!running && this.q == searchBox.value) {
+          var nuri = UpdateQueryString('q', this.q);
+          setTitle(this.q);
+          if (this.q != initialSearchTerm) {
             window.history.pushState(this, "", nuri);
             ga('send', 'pageview', {location: nuri});
-            setTimeout(function(){ searchForm.onsubmit = allow; }, 2000);
+          } else {
+            window.history.replaceState(this, "", nuri);
+          }
+          setTimeout(function(){ searchForm.onsubmit = allow; }, 2000);
         }
       }
       window.search_worker.onmessage = function(e) {
@@ -74,7 +78,6 @@
         searchForm.onsubmit = allow;
       }
       if (initialSearchTerm) {
-        console.log("Running initial search: " + initialSearchTerm);
         window.search_worker.postMessage(initialSearchTerm);
         running = 1;
       } else {
