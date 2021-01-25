@@ -52,6 +52,8 @@
             var nuri = UpdateQueryString('q', this.q);
             setTitle(this.q);
             window.history.pushState(this, "", nuri);
+            ga('send', 'pageview', {location: nuri});
+            setTimeout(function(){ searchForm.onsubmit = allow; }, 2000);
         }
       }
       window.search_worker.onmessage = function(e) {
@@ -62,11 +64,7 @@
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
             var data = {"html": e.data, "q": query};
-            setTimeout(maybeRegisterNavigation.bind(data), 1000);
-            setTimeout(function(){ searchForm.onsubmit = allow; }, CHECKTIME);
-            if (typeof ga != 'undefined' && searchBox.value != initialSearchTerm) {
-                ga('send', 'pageview', {location: nuri});
-            }
+            setTimeout(maybeRegisterNavigation.bind(data), 1100);
         }
       }
       window.search_worker.onerror = function(e) {
