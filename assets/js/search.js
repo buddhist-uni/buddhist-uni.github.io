@@ -54,21 +54,20 @@
           if (this.q != initialSearchTerm) {
             window.history.pushState(this, "", nuri);
             ga('send', 'pageview', {location: nuri});
+            initialSearchTerm = this.q;
           } else {
             window.history.replaceState(this, "", nuri);
           }
-          setTimeout(function(){ searchForm.onsubmit = allow; }, 2000);
+          setTimeout(function(){ if (! running) searchForm.onsubmit = allow; }, 2000);
         }
       }
       window.search_worker.onmessage = function(e) {
         running--;
         if (running == 0) {
-            searchResults.innerHTML = e.data;
-            var query = searchBox.value;
+            searchResults.innerHTML = e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
-            var data = {"html": e.data, "q": query};
-            setTimeout(maybeRegisterNavigation.bind(data), 1100);
+            setTimeout(maybeRegisterNavigation.bind(e.data), 1100);
         }
       }
       window.search_worker.onerror = function(e) {
