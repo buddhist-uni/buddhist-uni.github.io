@@ -12,6 +12,7 @@ function getQueryVariable(variable) {
 }
 
 function UpdateQueryString(key, value, url) {
+    value = encodeURIComponent(value);
     if (!url) url = window.location.href;
     var re = new RegExp("([?&])" + key + "=.*?(&|#|$)(.*)", "gi"),
         hash;

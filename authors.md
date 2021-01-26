@@ -13,7 +13,7 @@ layout: page
 <ul class="author-sublist">
 {%- for author in letter.items -%}
     {%- assign catcounts = "" | split: "" -%}
-    {%- capture filter %}c.authors contains '{{ author.slug }}'{% endcapture -%}
+    {%- capture filter -%}c.authors contains '{{ author.slug }}'{%- endcapture -%}
     {%- assign by_cat = all_content | where_exp: "c", filter | group_by: "category" -%}
     {%- for cat in by_cat -%}
       {%- case cat.name -%}
