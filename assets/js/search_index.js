@@ -11,19 +11,22 @@ var RMAX = 100;
 {%- assign ccurly = "}" -%}
 {%- assign ocurly = "{" -%}
 {%- assign backtoback = ccurly | append: ocurly -%}
+{%- assign doubleo = ocurly | append: ocurly -%}
+{%- assign doublec = ccurly | append: ccurly -%}
+{%- assign pagesWithoutContent = 'Authors,Search' | split: ',' -%}
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}
-    {% if p.url contains "/tests/" %}{% continue %}{% endif %}
+    {% if p.url contains "/tests/" or pagesWithoutContent contains p.title %}{% continue %}{% endif %}
     "{{ p.url | slugify }}": {
-        "type": "{{ p.collection }}",
+        "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
         "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
         "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% include content_authors_string.html authors=p.authors %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}"{{ a | strip | xml_escape }}",
-        "content": {% assign cpieces = p.content | strip | markdownify | strip_newlines | replace: "</", ' </' | strip_html | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | jsonify }},
+        "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</", ' </' | strip_html | jsonify }},
         "url": "{{ p.url }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -32,8 +35,8 @@ var store = { {% assign all = site.documents | concat: site.pages %}
 var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
     this.field('authors', { boost: 2 }); this.field('content');
-    this.field('tags', { boost: 3 }); this.field('description', { boost: 2 });
-    this.field('category');
+    this.field('tags', { boost: 4 }); this.field('description', { boost: 2 });
+    this.field('category', { boost: 0.5 }); this.field('type', { boost: 0.3 });
     this.metadataWhitelist = ['position']
     for (var key in store) {
         var v = store[key];
@@ -41,7 +44,7 @@ var idx = lunr(function () {
             'id': key, 'title': utils.unaccented(v.title),
             'authors': utils.unaccented(v.authors), 'content': utils.unaccented(v.content),
             'tags': v.tags, 'description': utils.unaccented(v.description),
-            'category': v.category
+            'category': v.category, 'type': v.type
       }, {boost: v.boost});
     }
 });
@@ -68,7 +71,7 @@ function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
         for (var mi in md[searchTerm][fromfield].position) {
             let m = md[searchTerm][fromfield].position[mi];
             i = m[0]; j = i+m[1];
-            if (i < endindex || j > startindex) {
+            if (i < endindex && j > startindex) {
                 ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
             }
         }
@@ -176,7 +179,11 @@ function displaySearchResults(results) {
 
 self.onmessage = function(e) {
     var results = idx.search(e.data);
-    if (!results.length) results = idx.search(e.data.split(" ").join("~1 ") + "~1");
+    if (!results.length){
+      var words = e.data.split(" ");
+      if (words.find(function(w){ return w.length <= 2; }) == undefined)
+        results = idx.search(words.join("~1 ") + "~1");
+    }
     self.postMessage({
       "html": displaySearchResults(results),
       "q": e.data

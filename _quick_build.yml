@@ -15,6 +15,20 @@ exclude:
     - vendor/gems/
     - vendor/ruby/
     - content.bib
+    - _authors/bjornerud.md
+    - _authors/chandako.md
+    - _authors/dalai-lama.md
+    - _authors/elverskog.md
+    - _authors/gangshar.md
+    - _authors/ichimura-s.md
+    - _authors/kearney-patrick.md
+    - _authors/keeler-ward.md
+    - _authors/kieschnick.md
+    - _authors/king-winston.md
+    - _authors/menzel-peter.md
+    - _authors/mipham.md
+    - _authors/popova.md
+    - _authors/singer-peter.md
     - _content/articles/bodhisattva-masculinity-on-death-row_cunnell-h.md
     - _content/articles/buddhas-sons_snow-elson.md
     - _content/articles/buddhist-hybrid-english_griffiths-paul.md
