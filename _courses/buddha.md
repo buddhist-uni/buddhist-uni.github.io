@@ -27,26 +27,24 @@ next_course_descs:
 
 But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first rediscovered _nibbāna_ and taught the way for attaining it.
 
-Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (deva)— because only the human realm balances the misfortunes and mistakes of life (which are necessary to motivate the practice) with the ease and discernment of intelligence (which allow it to ripen).
+Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (*deva*)— because only the human realm balances the misfortunes and mistakes of life which are necessary to motivate the practice, with the ease and discernment which allow it to ripen.
 
 But while the Buddha was born a man, a man he did not remain. Through his superior striving and wisdom (over countless eons) he was able to transcend gender, caste, creed, identities, views, suffering and even death itself and to teach others how to transcend themselves too. We call such a teacher, “Buddha.”
 
 ## Prerequisites
 
-If you're looking for a quick and inspiring biography of the Buddha, I recommend [The Biography of Shakyamuni Buddha by Master Hsing Yun]({% link _content/monographs/biography-of-shakyamuni_hsing-yun.md %}). This course goes beyond the basics to reading the primary sources themselves, and therefore requires some comfort reading [the Early Buddhist Texts]({% link _courses/ebts.md %}).
+If you're looking for a quick and inspiring biography of the Buddha, I recommend [*The Biography of Shakyamuni Buddha* by Master Hsing Yun]({% link _content/monographs/biography-of-shakyamuni_hsing-yun.md %}). This course goes beyond the basics to reading the primary sources themselves, and therefore requires some comfort reading [the Early Buddhist Texts]({% link _courses/ebts.md %}).
 
 ## Course Outline
 
-This syllabus currently has no associated lectures and merely weaves together several, free books.
+This syllabus has no associated lectures. It weaves together several, free books, mostly on the Pāli texts.
 
 ### Textbooks
-
-Our texts primarily focus on the Theravada Canon.
 
 #### Main Anthology
 
 {% include content_blurb.html category="monographs" slug="life-of-the-buddha_nyanamoli" %}
-- This classic, if eccentric, anthology of Pāli texts gives a good presentation of the Canonical account of the Buddha's life. It will be the primary biography used in this course, and we will follow the book’s order of events.
+- This classic, quirky anthology gives a good presentation of the Canonical account of the Buddha's life. It will be the primary biography used in this course, and we will follow the book’s ordering of events.
 
 #### Other Anthologies
 
