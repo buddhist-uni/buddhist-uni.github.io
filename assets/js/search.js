@@ -29,6 +29,7 @@
   setTitle(initialSearchTerm);
   var searchBox = document.getElementById('search-box');
   searchBox.setAttribute("value", initialSearchTerm);
+  window.history.replaceState({"html": "", "q": initialSearchTerm}, "", window.location.href);
 
   setTimeout(checkRunning, CHECKTIME);
   function prevent(e) { e.preventDefault(); }
@@ -38,6 +39,19 @@
 
   try {
       window.search_worker = new Worker("/assets/js/search_index.js");
+      function newQuery(e) {
+        var q = e;
+        if (e.target && e.target.value) q = e.target.value;
+        q = sanitizeQuery(q);
+        if (!q) return;
+        if (!running) {
+            loadingIndicator.style.display = 'block';
+            setTimeout(checkRunning, CHECKTIME);
+            searchForm.onsubmit = prevent;
+        }
+        running++;
+        window.search_worker.postMessage(q);
+      }
       window.onpopstate = function (e) {
         if (e.state) {
             searchBox.blur();
@@ -45,6 +59,9 @@
             initialSearchTerm = e.state.q;
             searchResults.innerHTML = e.state.html;
             setTitle(e.state.q);
+            if (!e.state.html) {
+                newQuery(e.state.q);
+            }
         }
       };
       function maybeRegisterNavigation() {
@@ -84,17 +101,6 @@
         stillLoading.style.display = 'none';
         searchResults.innerHTML = "<li>To search, start typing in the box above!</li>";
         window.history.replaceState({"html": searchResults.innerHTML, "q": ""}, "", "/search/");
-      }
-      function newQuery(e) {
-        var q = sanitizeQuery(e.target.value);
-        if (!q) return;
-        if (!running) {
-            loadingIndicator.style.display = 'block';
-            setTimeout(checkRunning, CHECKTIME);
-            searchForm.onsubmit = prevent;
-        }
-        running++;
-        window.search_worker.postMessage(q);
       }
       searchBox.addEventListener('input', newQuery);
       searchBox.addEventListener('propertychange', newQuery); // IE8
