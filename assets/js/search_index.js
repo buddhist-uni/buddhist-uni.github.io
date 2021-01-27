@@ -26,6 +26,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% include content_authors_string.html authors=p.authors %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}"{{ a | strip | xml_escape }}",
+        "translator": {{ p.translator | jsonify }},
         "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</", ' </' | strip_html | jsonify }},
         "url": "{{ p.url }}"
     }{% unless forloop.last %},{% endunless %}
@@ -35,6 +36,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
 var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
     this.field('authors', { boost: 2 }); this.field('content');
+    this.field('translator');
     this.field('tags', { boost: 4 }); this.field('description', { boost: 2 });
     this.field('category', { boost: 0.5 }); this.field('type', { boost: 0.3 });
     this.metadataWhitelist = ['position']
@@ -43,6 +45,7 @@ var idx = lunr(function () {
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
             'authors': utils.unaccented(v.authors), 'content': utils.unaccented(v.content),
+            'translator': v.translator,
             'tags': v.tags, 'description': utils.unaccented(v.description),
             'category': v.category, 'type': v.type
       }, {boost: v.boost});
