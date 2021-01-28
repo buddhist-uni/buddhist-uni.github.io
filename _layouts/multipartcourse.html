@@ -12,7 +12,7 @@ layout: default
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
   {% endif %}
   <h1>Table of Contents</h1> 
-  <ul>
+  <ul id="toc">
     <li><a href="#what-is">What is {{ page.title }}?</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     {% if page.lecturers %}<li><a href="#lectures">Lectures</a></li>{% endif %}

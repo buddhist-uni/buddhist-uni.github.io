@@ -25,7 +25,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
-        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% include content_authors_string.html authors=p.authors %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}"{{ a | strip | xml_escape }}",
+        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{{ a | strip | strip_html | strip_newlines | jsonify }},
         "translator": {{ p.translator | jsonify }},
         "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</", ' </' | strip_html | jsonify }},
         "url": "{{ p.url }}"

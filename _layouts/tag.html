@@ -13,9 +13,9 @@ layout: default
 {% endfor %}
 {% capture backlink %}
 {% if parents.size > 0 %}
-<em>Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
+<em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
 {% else %}
-<em>Back: <a href="{% link tags.md %}">Topic Index</a></em>
+<em class="back">Back: <a href="{% link tags.md %}">Topic Index</a></em>
 {% endif %}
 {% endcapture %}{{ backlink }}
 
@@ -70,7 +70,7 @@ layout: default
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
-  {% if course_content.size > 0 %}<h4>See also:</h4>{% endif %}
+  {% if course_content.size > 0 %}<div class="also">See also:</div>{% endif %}
   {% assign tag_content = tag_content | concat: series_content %}
   {% for c in tag_content %}
     <div class="inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>

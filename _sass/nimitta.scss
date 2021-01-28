@@ -5,7 +5,10 @@ main.page-content {
 main {
     font-family: $readable-font-family;
     font-size: $readable-font-size;
-    footer,h1,h2,h3,h4,h5,h6 {
+    header,footer,h1,h2,h3,h4,h5,h6 {
+        font-family: $base-font-family;
+    }
+    #toc {
         font-family: $base-font-family;
     }
 }
@@ -22,6 +25,10 @@ img {
 
 a.btn:visited {
     color: initial;
+}
+
+.Label {
+    font-family: $base-font-family;
 }
 
 figure figcaption {
@@ -91,6 +98,10 @@ a[target="_blank"]:after {
 
 a.btn[target="_blank"]:after {
     content: "";
+}
+
+.back {
+    font-family: $base-font-family;
 }
 
 %has-inline-content %content-title a[target="_blank"]:after {
@@ -216,6 +227,10 @@ div.author-list ul.author-sublist {
     letter-spacing: 5px;
 }
 
+article.course li {
+    list-style: "∙ ";
+}
+
 .continuecourse {
     font-size: 110%;
     margin-left: auto;
@@ -252,6 +267,7 @@ article.course .post-header p {
 
 article.tag .tag_desc {
     font-size: 118%;
+    font-family: $readable-font-family;
     margin-top: 20px;
 }
 
@@ -261,11 +277,16 @@ article.tag .tag_desc p {
 
 article.tag .subtopics {
     font-size: 105%;
+    font-family: $readable-font-family;
 }
 
 article.tag div.tagged_content {
     margin-bottom: 23px;
     font-size: 105%;
+}
+
+.content_links {
+    font-family: $base-font-family;
 }
 
 article.tag .content_links {
@@ -393,6 +414,7 @@ div.ccredits {
 }
 
 div.cdesc {
+    font-family: $readable-font-family;
     font-size: 110%;
     padding: 20px;
     padding-top: 10px;
@@ -446,7 +468,7 @@ div.featuringrow div.bauthors {
 }
 
 div.featuringrow div.flabel {
-    font-family: sans-serif;
+    font-family: $base-font-family;
     margin-left: 25px;
     margin-bottom: auto;
     @include media-query($on-palm) {
@@ -456,6 +478,10 @@ div.featuringrow div.flabel {
 
 div.featuringrow div.lecturers {
     min-width: 20%;
+}
+
+#search {
+    font-family: $base-font-family;
 }
 
 #search-box {
