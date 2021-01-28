@@ -11,7 +11,7 @@ You can explore the library by:
 Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
-Just type in what you're looking for and see what comes up!
+Just type in what you're looking for and see what comes up
 
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
 If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can [find a list of our authors here]({% link authors.md %}).
@@ -21,7 +21,7 @@ In the mood to curl up with [a good book]({% link _categories/monographs.md %})?
 
 ### Or on [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 All the content on this site and more can be found in
-[my huge Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}.
+[the Google Drive Library](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}.
 
 ### Additional Information
 

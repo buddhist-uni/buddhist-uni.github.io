@@ -18,7 +18,7 @@ layout: default
     <h2>{{ page.title }}</h2>
     {% if prev %}
       {% capture partn %}part {{ page.order }} of a course{% endcapture %}
-      <i>{{ course.part_header | replace: "part of a course", partn}} <a href="{{ prev.url }}">Back to part {{page.order | minus: 1}}</a>.</i>
+      <i>{{ course.part_header | replace: "part of a course", partn}}</i>
     {% endif %}
   </header>
   

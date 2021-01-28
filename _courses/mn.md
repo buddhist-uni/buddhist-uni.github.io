@@ -99,7 +99,7 @@ Either way is an acceptable and appropriate use of this material. Feel free to j
 In case it's useful for such referencing, here's an index of the suttas by their Pāli name:
 
 {% include content_blurb.html category="reference" slug="mn-pali-name-index" %}
-- Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikaya (usually noted as “MN#”, e.g. “MN3” for the third sutta)
+- Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikaya (usually noted as “MN #”, e.g. “MN 3” for the third sutta)
 
 And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of what suttas you've read, so you know where to come back to later.
 

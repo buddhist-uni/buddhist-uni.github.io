@@ -11,7 +11,7 @@ layout: default
     {% include course_footer.html course=page %}
   {% endcapture %}
   <h1>Table of Contents</h1> 
-  {% include toc.html html=toccontent h_min=2 h_max=3 %}
+  {% include toc.html id="toc" html=toccontent h_min=2 h_max=3 %}
 
   {% if page.epigraph %}
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
