@@ -13,6 +13,10 @@ main {
     }
 }
 
+footer div.footer-col-3 {
+    font-family: $readable-font-family;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -245,6 +249,7 @@ div.nextcoursedesc {
 }
 
 a.nextcourselink {
+    font-family: $base-font-family;
     font-size: 110%;
 }
 
@@ -277,7 +282,6 @@ article.tag .tag_desc p {
 
 article.tag .subtopics {
     font-size: 105%;
-    font-family: $readable-font-family;
 }
 
 article.tag div.tagged_content {

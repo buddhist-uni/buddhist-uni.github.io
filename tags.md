@@ -37,3 +37,4 @@ Here you'll find our library of free content on Buddhism arranged by topic. For 
         - [The Suttas]({% link _tags/sutta.md %})
         - [The Vinaya]({% link _tags/vinaya-pitaka.md %})
 - [The (Human) World]({% link _tags/world.md %})
+{:id="toc"}
