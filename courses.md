@@ -17,7 +17,7 @@ The University organizes [content]({% link library.md %}) from [across the Web](
 
 <div class="coursedesc">
   <div class="descrow">
-    <div class="cicon"><i class="{{ course.icon }}"></i></div>
+    <div onclick="location.href='{{ course.url }}'" class="cicon"><i class="{{ course.icon }}"></i></div>
     <div class="cdesc">{{ course.description | markdownify }}</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> {{ course.time }}</div>
   </div>
