@@ -2,6 +2,14 @@ main.page-content {
     padding: 15px 0;
 }
 
+main {
+    font-family: $readable-font-family;
+    font-size: $readable-font-size;
+    footer,h1,h2,h3,h4,h5,h6 {
+        font-family: $base-font-family;
+    }
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -400,13 +408,15 @@ div.cdesc p {
   margin-bottom: 0px;
 }
 
+div.descrow {
+    font-family: $base-font-family;
+}
+
 div.descrow div.cicon {
-    padding: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 16px;
+    width: inherit;
     min-width: 82px;
     text-align: center;
-    margin-left: 16px;
     font-size: 65px;
     @include media-query($on-palm) {
         float: left;
@@ -436,6 +446,7 @@ div.featuringrow div.bauthors {
 }
 
 div.featuringrow div.flabel {
+    font-family: sans-serif;
     margin-left: 25px;
     margin-bottom: auto;
     @include media-query($on-palm) {

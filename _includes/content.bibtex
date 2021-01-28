@@ -1,3 +1,24 @@
+{%- assign stars = include.stars -%}
+{%- unless stars -%}
+{%- if include.content.status == 'rejected' -%}{%- assign stars = 1 -%}{%- else -%}
+    {%- unless include.content.course -%}{%- assign stars = 2 -%}{%- endunless -%}
+{%- endif -%}
+{%- endunless -%}
+{%- unless stars -%}
+    {%- if include.content.status == 'featured' -%}
+        {%- assign stars = 4 -%}
+        {%- if include.content.external_url or include.content.file_links or include.content.drive_links -%}
+            {%- for p in site.posts -%}
+                {%- if p.content contains include.content.slug -%}
+                    {%- assign stars = 5 -%}
+                    {%- break -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- assign stars = 3 -%}
+    {%- endif -%}
+{%- endunless -%}
 {%- assign book = nil -%}
 {%- assign publisher = nil -%}
 {%- assign author = nil -%}
@@ -5,7 +26,7 @@
 {%- assign curly = "}" -%}
 {%- assign escand = "{\&}" -%}
 {%- assign escperc = "{\%" | append: curly -%}
-@{% case include.content.category %}{% when "monographs" %}book{% when "booklets" %}book{% unless include.content.publisher %}let{% endunless %}{% when "articles" %}article{% when "paper" %}inproceedings{% when "canon" %}{% if include.content.authors and include.content.publisher %}book{% else %}misc{% endif %}{% when "excerpts" %}incollection{% else %}{% if include.content.journal %}article{% else %}misc{% endif %}{% endcase %}{% raw %}{{% endraw %}{% assign fname = include.content.slug | replace: ".", "-" | split: "_" %}{{ fname[1] | default: include.content.translator }}{{ include.content.year }}{% if include.content.year or fname[1] or include.content.translator %}-{% endif %}{{ fname | first }},
+@{% case include.content.category %}{% when "monographs" %}book{% when "booklets" %}book{% unless include.content.publisher %}let{% endunless %}{% when "articles" %}article{% when "paper" %}inproceedings{% when "canon" %}{% if include.content.authors and include.content.publisher %}book{% else %}misc{% endif %}{% when "excerpts" %}incollection{% else %}{% if include.content.journal %}article{% else %}misc{% endif %}{% endcase %}{% raw %}{{% endraw %}{% assign fname = include.content.slug | replace: ".", "-" | split: "_" %}{{ fname[1] | default: include.content.translator | slugify: 'latin' }}{{ include.content.year }}{% if include.content.year or fname[1] or include.content.translator %}-{% endif %}{{ fname | first }},
     title={% raw %}{{% endraw %}{% assign title = include.content.title | replace: "_", "*" | replace: "&", escand | replace: "%", escperc %}{% assign fc = title | slice: 0 %}{% assign lc = title | slice: -1 %}{% if fc == '*' %}{% assign title = title | replace_first: '*', "\textit{" %}{% endif %}{% if lc == '*' %}{% assign title = title | split: "*" | join: "*" | append: curly %}{% endif %}{% assign chars = title | replace: " **", " \textbf{" | replace: "** ", curlyspace | replace: " *", " \textit{" | replace: "(*", "(\textit{" | replace: "*", curly | split: "" %}{% assign title = "" %}{% assign insidecurl = 0 %}{% for char in chars %}{% if char == "{" %}{% assign insidecurl = insidecurl | plus: 1 %}{% elsif char == curly %}{% assign insidecurl = insidecurl | minus: 1 %}{% endif %}{% assign dwn = char | downcase %}{% if dwn != char and insidecurl == 0 %}{% assign title = title | append: "{" | append: char | append: "}" %}{% else %}{% assign title = title | append: char %}{% endif %}{% endfor %}{{ title }}},
 {% if include.content.authors %}    author={% assign authors = '' | split: '' %}{% if include.useslugs %}{% for aslug in include.content.authors %}{% if aslug contains " " %}{% capture a %}"{{ aslug }}"{% endcapture %}{% assign authors = authors | push: a %}{% else %}{% assign authors = authors | push: aslug %}{% endif %}{% endfor %}{{ authors | join: ' # " and " # ' }}{% else %}{% raw %}{{% endraw %}{% for aslug in include.content.authors %}{% if aslug contains " " %}{% assign authors = authors | push: aslug %}{% else %}{% assign author = site.authors | where: 'slug', aslug | first %}{% assign authors = authors | push: author.title %}{% endif %}{% endfor %}{{ authors | join: " and " }}}{% endif %},
 {% elsif include.content.reader %}    author={% if include.content.reader contains " " %}{% raw %}{{% endraw %}{{ include.content.reader }}}{% else %}{% if include.useslugs %}{{ include.content.reader }}{% else %}{% raw %}{{% endraw %}{% assign author = site.authors | where: 'slug', include.content.reader | first %}{% if author %}{{ author.title }}{% else %}{{ include.content.reader }}{% endif %}}{% endif %}{% endif %},
@@ -24,5 +45,6 @@
 {% endif %}{% if include.content.pages %}    pages={% raw %}{{% endraw %}{{ include.content.pages }}},
 {% endif %}{% if include.content.chapter %}    chapter={{ include.content.chapter }},
 {% endif %}{% if include.content.course or include.content.tags %}    keywords={% raw %}{{% endraw %}{% assign tags = "" | split: "" %}{% if include.content.tags %}{% assign tags = include.content.tags %}{% endif %}{% if include.content.course %}{% assign tags = tags | unshift: include.content.course %}{% endif %}{{ tags | join: ", " }}},
-{% endif %}    url={% raw %}{{% endraw %}{% if include.content.external_url %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
+{% endif %}    ranking={% raw %}{{% endraw %}rank{{ stars }}},
+    url={% raw %}{{% endraw %}{% if include.content.external_url %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
 }

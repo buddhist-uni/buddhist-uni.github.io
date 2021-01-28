@@ -5,6 +5,10 @@
 // Minima value overrides have to go before minima import
 $on-palm: 700px;
 
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$readable-font-family: sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$readable-font-size: 15px;
+
 @import "minima";
 @import "nimitta";
 
