@@ -337,8 +337,8 @@ article.content-perma h2 {
     font-size: 20px;
 }
 
-article.content-perma .star_desc {
-    font-size: 15px;
+article.content-perma .pub_desc {
+    font-size: 14px;
 }
 
 details.bibtex .highlight {
@@ -392,6 +392,9 @@ div.similar_content_footer {
     border-top: 1px solid $grey-color;
     padding: 16px 0px;
     margin-top: 26px;
+    ul li {
+        padding-bottom: 7px;
+    }
 }
 
 // Course List Page
