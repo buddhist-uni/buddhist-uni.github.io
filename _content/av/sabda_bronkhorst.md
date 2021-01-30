@@ -7,6 +7,8 @@ course: indian
 tags:
   - mahayana-roots
   - language
+  - epistemology
+status: featured
 year: 2020
 month: jul
 publisher: nbn

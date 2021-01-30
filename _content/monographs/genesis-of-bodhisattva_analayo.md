@@ -12,6 +12,7 @@ tags:
   - cosmology
   - rebirth-stories
   - indian
+status: featured
 year: 2010
 address: "Hamburg, Germany"
 publisher: "Hamburg UP"
