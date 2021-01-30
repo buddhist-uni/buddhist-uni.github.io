@@ -14,6 +14,7 @@ tags:
   - nuns
   - emptiness
   - ambulit
+  - mindfulness
 journal: "The New Yorker"
 ---
 
