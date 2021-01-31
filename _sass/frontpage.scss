@@ -78,24 +78,18 @@
     }
 }
 
-.frontpage footer.site-footer a {
-    color: lightblue;
-}
-
-.frontpage footer.site-footer p {
-    color: #A8A8A8;
-}
-
-.frontpage footer.site-footer .social-media-list svg {
-    fill: white;
-}
-
-.frontpage footer.site-footer li {
-    color: white;
-}
-
 .frontpage footer.site-footer {
     border-top: 0px;
-    color: white;
+    background-color: initial;
+    color: $background-color;
+    a {
+        svg {
+            fill: #eef;
+        }
+        color: #eef;
+    }
+    .footer-heading, .footer-col-wrapper {
+        color: $background-color;
+    }
 }
 
