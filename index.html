@@ -57,7 +57,17 @@ layout: nil
 
   <body class="frontpage">
 
-    {%- include header.html -%}
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
+      <nav class="site-nav-links">
+          {%- for path in site.header_pages -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endfor -%}
+      </nav>
+  </div>
+</header>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -67,7 +77,7 @@ layout: nil
 
 <div class="learning_styles"><ul>
   <li onclick="location.href='/courses/';">
-    <a href="/courses/"><h3 class="ls_name">Structured</h3></a>
+    <h3 class="ls_name"><a href="/courses/">Structured</a></h3>
     <div class="ls_icon"><i class="fas fa-chalkboard"></i></div>
     <div class="ls_desc">Take rigorous, self-paced courses which guide you step-by-step.</div>
   </li>

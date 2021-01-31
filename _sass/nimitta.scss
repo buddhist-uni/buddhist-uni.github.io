@@ -1,3 +1,44 @@
+header.site-header {
+    z-index: 2;
+    background-color: $banner-color;
+    border: none;
+    .site-nav-links {
+        float: right;
+        line-height: 61px;
+        @include media-query($on-palm) {
+            display: block;
+            min-width: 100%;
+            text-align: center;
+            float: none;
+            @include media-query(354px) {
+                overflow-x: scroll;
+            }
+        }
+        a.page-link {
+            color: white;
+            &:not(:last-child) {
+                margin-right: 13px;
+            }
+        }
+    }
+    .site-title {
+        color: white;
+        line-height: $base-line-height * $base-font-size * 1.5;
+        padding-top: 5px;
+        img {
+            margin-left: -10px;
+            display: inline;
+        }
+        span {
+            vertical-align: middle;
+        }
+        @include media-query($on-palm) {
+            margin: 0px;
+            min-width: 100%;
+        }
+    }
+}
+
 main.page-content {
     padding: 15px 0;
 }
@@ -13,8 +54,24 @@ main {
     }
 }
 
-footer div.footer-col-3 {
-    font-family: $readable-font-family;
+footer.site-footer {
+    background-color: $banner-color;
+    a svg {
+        fill: $brand-color;
+    }
+    a:visited svg {
+        fill: $plum;
+    }
+    .footer-heading, .footer-col-wrapper {
+        color: $text-color;
+    }
+    div.footer-col-3 {
+        font-family: $readable-font-family;
+    }
+}
+
+a:visited {
+    color: $plum;
 }
 
 img {
@@ -59,10 +116,6 @@ figure figcaption {
     @include media-query($on-palm) {
         padding: 20px 0;
     }
-}
-
-.site-header {
-    z-index: 2;
 }
 
 .social-media-list .svg-icon {
@@ -511,6 +564,9 @@ div.featuringrow div.lecturers {
         h3 {
             margin-bottom: 0px;
         }
+    }
+    .instructions {
+        font-family: $base-font-family;
     }
 }
 
