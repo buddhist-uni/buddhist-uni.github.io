@@ -56,14 +56,15 @@ main {
 
 footer.site-footer {
     background-color: $banner-color;
-    a svg {
-        fill: $brand-color;
-    }
-    a:visited svg {
-        fill: $plum;
+    color: $background-color;
+    a {
+        svg {
+            fill: #eef;
+        }
+        color: #eef;
     }
     .footer-heading, .footer-col-wrapper {
-        color: $text-color;
+        color: $background-color;
     }
     div.footer-col-3 {
         font-family: $readable-font-family;

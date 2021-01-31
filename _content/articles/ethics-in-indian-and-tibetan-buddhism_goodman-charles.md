@@ -16,3 +16,5 @@ tags:
 ---
 
 An encyclopedia entry on Buddhist Ethics across interpretations and traditions.
+
+Notice especially how the Westerner philosophers tie themselves into knots trying to classify Buddhist Ethics according to their inferior theories and dogmatic rejection of karma.
