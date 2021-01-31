@@ -81,15 +81,5 @@
 .frontpage footer.site-footer {
     border-top: 0px;
     background-color: initial;
-    color: $background-color;
-    a {
-        svg {
-            fill: #eef;
-        }
-        color: #eef;
-    }
-    .footer-heading, .footer-col-wrapper {
-        color: $background-color;
-    }
 }
 

@@ -107,6 +107,7 @@ The Padmakara translation has a good introduction, and you may want to read that
 
 {% include content_blurb.html category="articles" slug="ethics-in-indian-and-tibetan-buddhism_goodman-charles" %}
 - An encylopedia entry on Indian and Tibetan Buddhism which lays the groundwork for our reading of this beloved classic. If you're finding the poem confusing or would like to know more about its historical context, this article and your translation's introduction (if any) should be a good place to start.
+- If you do read the entry, please note how Westerner philosophers tie themselves into knots trying to classify Buddhist Ethics according to their inferior theories and blind rejection of karma.
 
 With that, let's read *Śāntideva* himself! Preferably twice. Seriously, it's that good.
 
