@@ -69,19 +69,17 @@ layout: default
   {% if count > 0 %}
   <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
   {% if course_content.size > 0 %}
-  {% if tag_content.size > 0 %}<div class="featuredlistlabel">Primarily:</div>{% endif %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
-  {% if course_content.size > 0 %}<div class="also">Secondarily:</div>{% endif %}
   {% for c in tag_content %}
-    <div class="mb-2 inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
+    <div class="mb-3 inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
   </div>
-  {% endif %}{% endif %}
+  {% endif %}<p class="back"><a href="#top"><em>Back to the top</em>&#x2934;</a></p>{% endif %}
 {% endfor %}
 {% endcapture %}
-   <h2 class="toc_header">Recommended Works</h2>
+   <h2 id="top" class="toc_header">Recommended Works</h2>
     {% include toc.html html=content_list h_min=3 h_max=3 id="toc" class="tag_toc" %}
     {{ content_list }}
   </div>
