@@ -4,7 +4,7 @@ permalink: "/content/"
 layout: page
 ---
 
-Here you will find links to all the content on the site organized by type.
+Here you will find links to all the content in the library organized by type.
 
 <table>
 <colgroup>
