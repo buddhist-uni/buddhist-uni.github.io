@@ -175,7 +175,9 @@ function displaySearchResult(result, item) {
     if (type) ret += '<span class="Counter">' + type + '</span>';
     var lc = 0;
     for (var i in item.authors) {
-        ret += '<span class="Label">Author: ' +
+        ret += '<span class="Label">';
+        ret += (item.type == 'courses') ? 'Lecturer' : 'Author';
+        ret += ': ' +
             addMatchHighlights(result, item.authors[i], 'author', lc, lc + item.authors[i].length) +
             '</span>';
         lc += 2 + item.authors[i].length;
