@@ -46,10 +46,13 @@ main.page-content {
 main {
     font-family: $readable-font-family;
     font-size: $readable-font-size;
-    header,footer,h1,h2,h3,h4,h5,h6 {
+    form,header,footer,h1,h2,h3,h4,h5,h6 {
         font-family: $base-font-family;
     }
     #toc {
+        font-family: $base-font-family;
+    }
+    .uifont, .Label, .State, .IssueLabel, .Counter {
         font-family: $base-font-family;
     }
 }
@@ -87,10 +90,6 @@ img {
 
 a.btn:visited {
     color: initial;
-}
-
-.Label {
-    font-family: $base-font-family;
 }
 
 figure figcaption {
@@ -140,10 +139,6 @@ figure figcaption {
 h5 {
     font-size: 1em;
     font-style: italic;
-}
-
-.nomarginbottom {
-    margin-bottom: 0px;
 }
 
 $new-tab-icon-size: 0.95em;
@@ -545,10 +540,6 @@ div.featuringrow div.lecturers {
     min-width: 20%;
 }
 
-#search {
-    font-family: $base-font-family;
-}
-
 #search-box {
     width: 244px;
 }
@@ -571,6 +562,3 @@ div.featuringrow div.lecturers {
     }
 }
 
-@import
-    "frontpage"
-;

@@ -1,0 +1,20 @@
+---
+# I used `npm install @primer/css https://github.com/primer/sync`
+# and then run `node node_modules/@primer/sync/cli.js buddhist-uni.github.io/_sass/`
+# to copy the primer _sass into this project
+# then created this file to include just what I needed
+# based on the template in _sass/@primer/css/core/index.scss
+---
+// Primer Version "15.2.0"
+// Custom Build, including only a subset of Primer's features
+
+// Core Definitions
+@import "@primer/css/support/index.scss";
+@import "@primer/css/base/index.scss";
+
+// Individual Components
+@import "@primer/css/labels/index.scss";
+
+// Utilities should go last
+@import "@primer/css/utilities/margin.scss";
+

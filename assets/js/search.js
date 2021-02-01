@@ -111,6 +111,7 @@
         loadingIndicator.style.display = 'none';
         stillLoading.style.display = 'none';
         searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=agama%20%2Bcategory%3Aarticles%20-authors%3Aanalayo">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-authors:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi+%2Bcategory%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, authors, translator, and type (course, content, tag, publisher, journal, or series). &quot;content&quot; can be further filtered by &quot;category&quot; (articles, av, booklets, monographs, canon, papers, essays, excerpts, or reference).</li><li class="instructions"><strong>Search is fuzzy</strong> and will match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
+        searchBox.focus();
         window.history.replaceState({"html": searchResults.innerHTML, "q": ""}, "", "/search/");
       }
       searchBox.addEventListener('input', newQuery);
