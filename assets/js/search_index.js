@@ -175,14 +175,12 @@ function displaySearchResult(result, item) {
     if (type) ret += '<span class="Counter">' + type + '</span>';
     var lc = 0;
     for (var i in item.authors) {
-        ret += '<span class="Label">';
-        ret += (item.type == 'courses') ? 'Lecturer' : 'Author';
-        ret += ': ' +
+        ret += '<span class="Label ml-1">' +
             addMatchHighlights(result, item.authors[i], 'author', lc, lc + item.authors[i].length) +
             '</span>';
         lc += 2 + item.authors[i].length;
     }
-    if (resultMatched(result, 'translator')) ret += '<span class="Label">Translator: ' +
+    if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
         addMatchHighlights(result, item.translator, 'translator') +
         '</span>';
     return ret + '<p>' + blurb + '</p></li>';
