@@ -162,8 +162,8 @@ function displaySearchResult(result, item) {
         case 'tags': type = 'Bibliography'; break;
         case 'series': type = 'Series'; break;
     }
-    var ret = '<li><a href="' + item.url + '"><h3>' + addMatchHighlights(result, item.title, 'title') + '</h3>';
-    if (type) ret += '<span class="Label Label--inline Label--large Label--gray-darker mr-1">' + type + '</span>';
+    var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
+    if (type) ret += '<span class="Counter">' + type + '</span>';
     return ret + '</a><p>' + blurb + '</p></li>';
 }
 

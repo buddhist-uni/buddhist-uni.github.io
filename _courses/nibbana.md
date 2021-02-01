@@ -67,7 +67,7 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 #### What is *Nibbāna*?
 
 <i class="fas fa-book"></i> The Introduction and Chapter 1 of *Metaphor and Literalism* (hereafter, "ML")
-{: .nomarginbottom}
+{: .mb-0}
   - Will give an introduction to this text and to the term "*nibbāna*"
 
 {% include content_blurb.html category="essays" slug="nibbana_bodhi" %}
@@ -88,7 +88,7 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 Chapter two of _The Island_ gives us the basic metaphorical image behind the term "*Nibbāna*".
 
 <i class="fas fa-book"></i> ML: Chapter 2 - The Two Nirvana Theory
-{: .nomarginbottom}
+{: .mb-0}
   - A discussion of the imagery of fuel and fire, and an analysis of the important “Two Nirvana Theory” curiously left out of _The Island_. What is “The Two Nirvana Theory”? Read this chapter to find out!
 
 And if you're still thinking that Nirvana is some heaven realm somewhere...
@@ -106,7 +106,7 @@ This is the main section of the course. We'll cover the rest of _Metaphor and Li
 #### This, That, and Other Things
 
 <i class="fas fa-book"></i> ML: Chapter 3 - Developments of the Two Nirvana Theory
-{: .nomarginbottom}
+{: .mb-0}
   - The Abhidharma Tradition took Nirvana from a metaphor and turned it into a physical reality (“dhatu”).
   - This leads to some problems, particularly how this “ultimate reality” differs from the “ultimates” postulated by other religions.
 
@@ -151,7 +151,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
   - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _nibbāna_ develop into the “unconditioned element”?
 
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Chapter 4 - _Nibbāna_ in the Theravada Buddhist Tradition
-{: .nomarginbottom}
+{: .mb-0}
   - We return to ML and the analogy of fire in order to better understand the Theravada developments to the doctrines of _nibbāna_ and _anatta_.
 
 #### The Unapprehendability of the Enlightened
@@ -159,7 +159,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_box.html category="canon" slug="snp5.6" %}
 
 <i class="fas fa-book"></i> ML Chapter 5 - The Northern Schools
-{: .nomarginbottom}
+{: .mb-0}
   - If you are interested in the Northern schools of Indian Buddhism (which came to be part of the Mahayana), you may want to read Chapter 5 at this point. If you're uninterested in the Mahayana, however, you will probably want to skip this chapter of _Metaphor and Literalism_
 
 #### 'Reappears' Does Not Apply
@@ -175,7 +175,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 - Key to his argument is that complete liberation is described as the arising of true knowledge. Once ignorance is destroyed, it will never appear again.
 
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Conclusion and Translations
-{: .nomarginbottom}
+{: .mb-0}
   - The Conclusion is worth a read to tie together our study of Nirvana's history.
   - Those interested in the primary sources may also wish to read the translations in Part Two. Even a quick skim may be helpful to get a general impression of the genre, but don't worry: this part won't be on the final exam!
 
