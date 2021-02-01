@@ -12,9 +12,10 @@
 @import "@primer/css/support/index.scss";
 @import "@primer/css/base/index.scss";
 
-// Individual Components
+// Import the individual Components I want
+@import "@primer/css/buttons/index.scss";
 @import "@primer/css/labels/index.scss";
 
-// Utilities should go last
+// Any utilities I want should be imported last
 @import "@primer/css/utilities/margin.scss";
 

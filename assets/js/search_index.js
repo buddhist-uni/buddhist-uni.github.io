@@ -25,9 +25,9 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "boost": {% if p.status == 'featured' %}4{% elsif p.status == 'rejected' %}0.1{% elsif p.layout == 'imagerycoursepart' %}2{% elsif p.course %}2{% elsif p.collection == 'courses' %}8{% elsif p.collection == 'tags' %}5{% else %}1{% endif %},
-        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{{ a | strip | strip_html | strip_newlines | jsonify }},
-        "translator": {{ p.translator | jsonify }},
-        "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</", ' </' | strip_html | jsonify }},
+        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{% assign a = a | strip | strip_html | strip_newlines | split: " and " %}{% assign authors = a | last | split: "unfindabletoken" %}{% if a.size > 1 %}{% assign authors = a | first | split: ", " %}{% assign sla = authors | last | replace: ",", "" %}{% assign authors = authors | pop | push: sla | push: a[1] %}{% endif %}{{ authors | jsonify }},
+        "translator": {% assign conts = p.translator | split: ' and ' %}{% capture s %}{% include content_authors_string.html authors=conts %}{% endcapture %}{{ s | strip_newlines | jsonify }},
+        "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</p", ' </p' | replace: "</div", " </div" | replace: "</li", " </li" | strip_html | jsonify | replace: "  ", " " | replace: "  ", " " }},
         "url": "{{ p.url }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -35,19 +35,19 @@ var store = { {% assign all = site.documents | concat: site.pages %}
 
 var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
-    this.field('authors', { boost: 2 }); this.field('content');
+    this.field('author', { boost: 2 }); this.field('content');
     this.field('translator');
     this.field('tags', { boost: 4 }); this.field('description', { boost: 2 });
-    this.field('category', { boost: 0.5 }); this.field('type', { boost: 0.3 });
+    this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.metadataWhitelist = ['position']
     for (var key in store) {
         var v = store[key];
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
-            'authors': utils.unaccented(v.authors), 'content': utils.unaccented(v.content),
-            'translator': v.translator,
+            'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
+            'translator': utils.unaccented(v.translator),
             'tags': v.tags, 'description': utils.unaccented(v.description),
-            'category': v.category, 'type': v.type
+            'in': v.category, 'type': v.type
       }, {boost: v.boost});
     }
 });
@@ -61,6 +61,15 @@ function getPositions(result, field) {
         for (var p in fieldResults.position) sortedInsert(positions, fieldResults.position[p][0]);
     }
     return positions;
+}
+
+function resultMatched(result, fromfield) {
+    let md = result.matchData.metadata;
+    for (var st in md) {
+        if (!md[st][fromfield]) continue;
+        for (var mi in md[st][fromfield]['position']) return true;
+    }
+    return false;
 }
 
 function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
@@ -135,17 +144,17 @@ function getBlurbForResult(result, item, positions) {
 
 function categoryName(c) {
     switch(c) {
-        case 'av': return 'Recording';
-        case 'articles': return "Article";
-        case 'booklets': return "Book";
-        case 'monographs': return "Book";
-        case 'papers': return "Paper";
-        case 'essays': return 'Essay';
-        case 'canon': return 'Canonical Work';
-        case 'reference': return 'Reference Work';
-        case 'excerpts': return 'Excerpt';
+        case 'av': return '<i class="fas fa-volume-up"></i> Recording';
+        case 'articles': return '<i class="far fa-newspaper"></i> Article';
+        case 'booklets': return '<i class="fas fa-book-open"></i> Book';
+        case 'monographs': return '<i class="fas fa-book"></i> Book';
+        case 'papers': return '<i class="far fa-file-powerpoint"></i> Paper';
+        case 'essays': return '<i class="far fa-sticky-note"></i> Essay';
+        case 'canon': return '<i class="fas fa-dharmachakra"></i> Canonical Work';
+        case 'reference': return '<i class="fas fa-atlas"></i> Reference Work';
+        case 'excerpts': return '<i class="fas fa-book-reader"></i> Excerpt';
     }
-    return 'Library Item';
+    return '<i class="far fa-file"></i> Library Item';
 }
 
 function displaySearchResult(result, item) {
@@ -153,18 +162,28 @@ function displaySearchResult(result, item) {
     var blurb = getBlurbForResult(result, item, positions);
     var type = null;
     switch (item.type) {
-        case 'courses': type = 'Course'; break;
+        case 'courses': type = '<i class="fas fa-chalkboard"></i> Course'; break;
         case 'content': type = categoryName(item.category); break;
-        case 'posts': type = 'Blog Post'; break;
-        case 'journals': type = 'Journal'; break;
-        case 'authors': type = 'Author'; break; 
-        case 'publishers': type = 'Publisher'; break;
-        case 'tags': type = 'Bibliography'; break;
-        case 'series': type = 'Series'; break;
+        case 'posts': type = '<i class="fas fa-rss"></i> Blog Post'; break;
+        case 'journals': type = '<i class="fas fa-newspaper"></i> Journal'; break;
+        case 'authors': type = '<i class="far fa-address-book"></i> Author'; break; 
+        case 'publishers': type = '<i class="far fa-building"></i> Publisher'; break;
+        case 'tags': type = '<i class="fas fa-box-open"></i> Bibliography'; break;
+        case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
     }
     var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
     if (type) ret += '<span class="Counter">' + type + '</span>';
-    return ret + '</a><p>' + blurb + '</p></li>';
+    var lc = 0;
+    for (var i in item.authors) {
+        ret += '<span class="Label">Author: ' +
+            addMatchHighlights(result, item.authors[i], 'author', lc, lc + item.authors[i].length) +
+            '</span>';
+        lc += 2 + item.authors[i].length;
+    }
+    if (resultMatched(result, 'translator')) ret += '<span class="Label">Translator: ' +
+        addMatchHighlights(result, item.translator, 'translator') +
+        '</span>';
+    return ret + '<p>' + blurb + '</p></li>';
 }
 
 function displaySearchResults(results) {
