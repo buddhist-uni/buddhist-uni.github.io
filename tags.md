@@ -1,10 +1,10 @@
 ---
-title: "Topics"
+title: "Topical Bibliographies"
 permalink: "/tags/"
 layout: page
 ---
 
-Here you'll find our library of free content on Buddhism arranged by topic. For a more systematic walkthrough of some of these topics, see <a href="{% link courses.md %}">the course list</a>.
+Simply click on whatever topic you're interested in:
 
 {% comment %}Hardcoded for now. Maybe some day I'll automate this list.{% endcomment %}
 - [Buddhism]({% link _tags/buddhism.md %})

@@ -3,12 +3,12 @@ title: Library
 permalink: /library/
 ---
 
-The same, great content featured in [the courses]({% link courses.md %}) along with other works I've found helpful in my own studies.
+The same, great content featured in [the courses]({% link courses.md %}) along with other recommendations for further study.
 
 You can explore the library by:
 
 ### [<i class="fas fa-tag"></i> Topic]({% link tags.md %})
-Either search the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using the "Subtopic" links.
+Either scan the [topic index]({% link tags.md %}) for a topic you're interested in or [start from the top ("_Buddhism_")]({% link _tags/buddhism.md %}) and drill down using  "Subtopic" links.
 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
 Just type in what you're looking for and see what comes up
@@ -25,10 +25,10 @@ All the content on this site and more can be found in
 
 ### Additional Information
 
-For a currated list of the very best of the library, see (and subscribe to!) [the newsletter]({% link blog.md %}) which highlights my favorite arrivals.
+For a currated list of the very best of the library, see (and subscribe to!) [the newsletter]({% link blog.md %}) which highlights the best new arrivals.
 
 {% if site.show_bibtex %}
-You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}.
+You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}, suitable for importing into your reference manager of choice.
 {% endif %}
 
 And while most of the content collected here can be found on [other websites]({% link sources.md %}), some of it can't. For those, see the [exclusive content page]({% link exclusive.md %}).

@@ -64,16 +64,18 @@ layout: default
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
   {% assign series_content = site.series | where: "category", catslug | where_exp: "c", filter_exp %}
-  {% if course_content.size > 0 or tag_content.size > 0 or series_content.size > 0 %}
-  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %}</h3>
+  {% assign tag_content = tag_content | concat: series_content %}
+  {% assign count = course_content.size | plus: tag_content.size %}
+  {% if count > 0 %}
+  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
   {% if course_content.size > 0 %}
+  {% if tag_content.size > 0 %}<div class="featuredlistlabel">Primarily:</div>{% endif %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
-  {% if course_content.size > 0 %}<div class="also">See also:</div>{% endif %}
-  {% assign tag_content = tag_content | concat: series_content %}
+  {% if course_content.size > 0 %}<div class="also">Secondarily:</div>{% endif %}
   {% for c in tag_content %}
-    <div class="inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
+    <div class="mb-2 inline_content">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
   </div>
   {% endif %}{% endif %}
