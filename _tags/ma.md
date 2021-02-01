@@ -4,4 +4,4 @@ parents: [agama]
 is_canon: true # changes the layout slightly
 ---
 
-Taishō 26, roughly parallel to the {% include tag-link.html text="Majjhima Nikāya" tag="mn" %} of Southeast Asia, containing {% include tag-link.html text="Early Buddhist Texts" tag="ebts" %} of a medium length, primarily in Chinese translation.
+Taishō 26, roughly parallel to the [Majjhima Nikāya](/tags/mn) of Southeast Asia, containing [Early Buddhist Texts](/tags/ebts) of a medium length, primarily in Chinese translation.

@@ -4,4 +4,4 @@ parents: [agama]
 is_canon: true # changes the layout slightly
 ---
 
-Taishō 125, roughly parallel to the {% include tag-link.html text="Aṅguttara Nikāya" tag="an" %} of Southeast Asia, contains {% include tag-link.html text="early" tag="ebts" %} as well as {% include tag-link.html text="late" tag="mahayana-canon" %} sūtras preserved in Chinese translation.
+Taishō 125, roughly parallel to the [Aṅguttara Nikāya](/tags/an) of Southeast Asia, contains [early](/tags/ebts) as well as late sūtras preserved in Chinese translation.
