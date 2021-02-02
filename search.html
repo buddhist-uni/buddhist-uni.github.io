@@ -1,9 +1,14 @@
 ---
 title: Search
 ---
-<form id="search" action="/search/" method="GET">
-    <input type="text" id="search-box" name="q">
-    <input type="submit" value="Go!">
+<form class="TableObject" id="search" action="/search/" method="GET">
+    <div class="TableObject-item TableObject-item--primary">
+        <input class="input-lg input-hide-webkit-autofill input-block form-control" autocomplete="off" placeholder="Type here to search..." aria-label="search box" type="text" id="search-box" name="q">
+    </div><div class="TableObject-item">
+        <button class="input-lg btn ml-2" aria-label="Search" type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
 </form>
 
 <div style="display: none;" id="search-loading"><h3><i class="fas fa-circle-notch fa-spin"></i></h3><p id="still-loading" style="display: none;">Still loading...</p></div>

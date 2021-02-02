@@ -115,8 +115,8 @@ layout: default
     </i></p>
  
   {% if site.show_bibtex %}
-    <details class="Box--condensed bibtex" ontoggle="deetstoggler();">
-      <summary class="Box-header">Bibtex Data</summary>
+    <details class="bibtex" ontoggle="deetstoggler();">
+      <summary class="btn">Bibtex Data</summary>
       <script>function deetstoggler(e) {
         var k = "{{ content_path }}.bibtex.toggled";
         if (!localStorage.getItem(k)) {
