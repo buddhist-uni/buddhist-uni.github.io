@@ -21,6 +21,10 @@
 // My Bug fixes go here
 .input-lg { line-height: 24px; min-width: 48px; }
 
+// My own custom Primer Components go here
+@import "support.scss";
+@import "custom-components.scss";
+
 // Any utilities I want should be imported last
 @import "@primer/css/utilities/margin.scss";
 

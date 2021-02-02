@@ -7,6 +7,7 @@
   {% for c in sorted %}
     <li>
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
+      <div class="star_label">{% include calculatestars.dat content=c %}{% unless stars == 3 %}<span class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</span>{% endunless %}</div>
       <div class="content_desc">{{ c.excerpt }}</div>
       {% include content_filelinks.html content=c newtab=true %}
     </li>

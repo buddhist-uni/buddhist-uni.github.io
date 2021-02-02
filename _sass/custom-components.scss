@@ -1,0 +1,42 @@
+// Custom components built on top of Primer
+// and compiled in with them via assets/primer.scss
+.RatingLabel {
+    @extend .IssueLabel, .IssueLabel--big;
+    color: white;
+}
+
+.RatingLabel-1 {
+    @extend .RatingLabel;
+    background-color: $danger-color;
+}
+
+.RatingLabel-2 {
+    @extend .RatingLabel;
+    background-color: slategray;
+}
+
+.RatingLabel-4 {
+    @extend .RatingLabel;
+    background-color: $banner-color;
+}
+
+.RatingLabel-5 {
+    @extend .RatingLabel;
+    background-color: $blue;
+}
+
+.RatingDetails {
+    margin: -9px 9px 0px;
+    border-radius: 6px;
+    padding: 11px;
+    border: 1px solid lightgray;
+}
+
+.TagLabel {
+    @extend .Label, .Label--large;
+    margin-right: 4px;
+    border-color: $brand-color;
+    &:visited {
+        border-color: $plum;
+    }
+}

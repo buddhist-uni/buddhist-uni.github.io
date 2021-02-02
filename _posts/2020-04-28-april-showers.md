@@ -12,16 +12,17 @@ This month I've gotten a solid start on migrating over content from my [Google D
 Lots of new content has been added to fill those bibliographies, so check them out! In particular I'm excited to share with you:
 
 - Ajahn Maha Bua's classic sermons, [A Life of Inner Quality]({% link _content/booklets/life-of-inner-quality_mahabua.md %})
-- Dr Tucker telling us about [the evidence for reincarnation](https://wiswo.org/early-buddhism-2015/early-buddhism-20154/early-buddhism-20154-readings-1/){:target="_blank" ga-event-value="0.5"}
+- Dr Tucker telling us about [the evidence for reincarnation]({% link _content/essays/interview-with-dr-tucker.md %})
+- And Curtis White asks us to [question our dogmatic belief in materialism]({% link _content/articles/science-delusion_white-curtis.md %}).
 - Rupert Gethin encouraging us to reassess how we read [the mythology of the Buddhist Canon]({% link _content/articles/cosmology-and-meditation_gethin.md %})
 - Ajahn Brahm talking about the Buddha, supernatural powers, and his time in Thailand in [this fun sutta study class]({% link _content/av/mn12-explanation_brahm.md %})
-- Ajahn Geoff writing about the unconditional [purity of heart](https://www.accesstoinsight.org/lib/authors/thanissaro/purityofheart.html){:target="_blank" ga-event-value="0.5"}
-- Ajahn Sujato defending both the bardo and comparative studies in [this compelling paper](https://santifm.org/santipada/wp-content/uploads/2010/05/RebirthandInbetweenState.pdf){:target="_blank" ga-event-value="0.5"}
+- Ajahn Geoff writing about the unconditional [purity of heart]({% link _content/essays/purity-of-heart_geoff.md %})
+- Ajahn Sujato defending both the bardo and comparative studies in [this compelling paper]({% link _content/essays/rebirth-and-the-inbetween_sujato.md %})
 - Sir Edward Dyer [rejoicing in his virtue](https://www.bartleby.com/40/51.html){:target="_blank" ga-event-value="0.2"}
-- Lawrence Mills' translation of [Snp 4.2](https://suttacentral.net/snp4.2/en/mills){:target="_blank" ga-event-value="0.5"}
-- [SN 1.71](https://suttacentral.net/sn1.71/en/sujato){:target="_blank" ga-event-value="0.5"}, which answers the question of when the Buddha would approve of murder!
-- [This lovely sutta (SN 35.247)](https://suttacentral.net/sn35.247/en/sujato){:target="_blank" ga-event-value="0.5"} which compares cognitive dissonance to six animals tied together: either with or without the "post" of mindfulness
-- And, with calamity crushing in from all sides these days, [The Mountain Simile](https://suttacentral.net/sn3.25/en/sujato){:target="_blank" ga-event-value="0.5"} feels more relevant than ever.
+- Lawrence Mills' translation of [Snp 4.2]({% link _content/canon/snp4.2.md %})
+- [SN 1.71]({% link _content/canon/sn1.71.md %}), which answers the question of when the Buddha would approve of murder!
+- [This lovely sutta (SN 35.247)]({% link _content/canon/sn35.247.md %}) which compares cognitive dissonance to six animals tied together: either with or without the "post" of mindfulness
+- And, with calamity crushing in from all sides these days, [The Mountain Simile]({% link _content/canon/sn3.25.md %}) feels more relevant than ever.
 
 And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey](https://drive.google.com/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk) which has been added to [Buddhism]({% link _tags/buddhism.md %}) and [the Early Buddhist Texts]({% link _tags/ebts.md %}).
 

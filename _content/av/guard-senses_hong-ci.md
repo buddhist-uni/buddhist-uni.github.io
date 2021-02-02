@@ -6,6 +6,7 @@ formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1vGu8qGYeFSh4cguHzzKzCIQNo_5x48Io/view?usp=drivesdk"]
 month: dec
 year: 2016
+status: featured
 course: function 
 tags:
   - thought
