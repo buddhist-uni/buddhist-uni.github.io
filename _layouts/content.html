@@ -17,7 +17,7 @@ layout: default
 {%- for t in tagslugs -%}
     {%- assign tag = site.tags | where: "slug", t | first -%}
     {%- if tag -%}
-        {%- capture taglink -%}<a href="{{ tag.url }}">{{ tag.title }}</a>{%- endcapture -%}
+        {%- capture taglink -%}<a class="TagLabel" href="{{ tag.url }}"><i class="fas fa-tag"></i> {{ tag.title }}</a>{%- endcapture -%}
         {%- assign tags = tags | push: taglink -%}
     {%- endif -%}
 {%- endfor -%}
@@ -63,11 +63,17 @@ layout: default
     <h2 class="author">Read by {% if reader %}<a href="{{ reader.url }}">{{ reader.title }}</a>{% else %}{{ page.reader }}{% endif %}</h2>
     {% endif %}
 
-{%- comment -%}{% raw %}Unnecessary given the footer text?
-    <div class="content_rating">
-        <div class="star_rating">{% for i in (1..5) %}<i class="fa{% if i > stars %}r{% else %}s{% endif %} fa-star"></i>{% endfor %}</div>
-    </div>
-{% endraw %}{%- endcomment -%}
+    {% unless stars == 3 %}<div class="content_rating">
+        <details>
+            <summary class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</summary>
+            <div class="RatingDetails">{% if stars == 1 %}
+                This work is no longer recommended{% if page.reason %}, because: <code>{{ page.reason }}</code>{% endif %} Look below for possible alternatives.
+                {% elsif stars == 2 %}This work is for those with a special interest, and is not recommended for general circulation.
+                {% elsif stars == 5 %}One of the best works in the library, &quot;{{ title | first}}&quot; was featured in the <a href="{{ featured_post.url }}">{{ featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
+                This is a piece of exceptional quality, recommended for everyone.
+            {% endif %}</div>
+        </details>
+    </div>{% endunless %}
 
     {% if page.source_url or page.external_url or page.file_links or page.drive_links.size > 0 %}
         {% include content_filelinks.html content=page %}
@@ -85,29 +91,13 @@ layout: default
     {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | where: "slug", page.editor | first %}{% endif %}
    
    <p class="star_desc">
-        {% assign joiner = "or" %}
-        {% case stars %}
-        {% when 1 %}
-            {% assign joiner = "and" %}I no longer recommend this work{% if tags %} for studying {% else %}.{% endif %}
-        {% when 2 %}
-            {% assign joiner = "and" %}{% if tags %}Tags: {% endif %} 
-        {% when 3 %}
-            Recommended for those who have a keen interest in {% unless tags %} this kind of thing.{% endunless %}
-        {% when 4 %}
-            Recommended for everyone{% if tags %} interested in {% else %}.{% endif %}
-        {% else %}
-            One of the best works{% if tags %} on {% else %}.{% endif %}
-        {% endcase %}
-        {% if tags %}{{ tags | array_to_sentence_string: joiner }}.{% endif %}
-      <i>See <a href="{% link tags.md %}">all of our tags here</a>.</i>
-    </p>
+        {{ tags }}
+   </p>
  
     {% if page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
-        {% if course or featured_post %}<p class="featured_desc"><i>Featured in 
-            {% if featured_post %}<a href="{{ featured_post.url }}">the {{ featured_post.date | date: "%B %Y" }} newsletter</a>{% if course %} and {% else %}.{% endif %}{% endif %}
-            {% if course %}the course, "<a href="{{ course.url }}#{{ page.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>."{% endif %}
-        </i></p>{% endif %}
+        {% if course %}<p class="featured_desc">Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>."
+        </p>{% endif %}
     {% endif %}
     <p class="pub_desc"><i>
         {%- if page.translator -%}Translated by {% if page.translator contains " " %}{% assign translator = nil %}{% else %}{% assign translator = site.authors | where: "slug", page.translator | first %}{% endif %}{% if translator %}<a href="{{ translator.url }}#translations">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}

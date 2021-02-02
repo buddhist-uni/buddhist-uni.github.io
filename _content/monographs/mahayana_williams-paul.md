@@ -7,7 +7,6 @@ publisher: Routledge
 course: mahayana
 tags:
   - mahayana-canon
-status: featured
 ---
 
 The authoritative, scholarly introduction to Mahayana Buddhism's vast textual history.

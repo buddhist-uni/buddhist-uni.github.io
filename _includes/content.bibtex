@@ -1,23 +1,6 @@
 {%- assign stars = include.stars -%}
 {%- unless stars -%}
-{%- if include.content.status == 'rejected' -%}{%- assign stars = 1 -%}{%- else -%}
-    {%- unless include.content.course -%}{%- assign stars = 2 -%}{%- endunless -%}
-{%- endif -%}
-{%- endunless -%}
-{%- unless stars -%}
-    {%- if include.content.status == 'featured' -%}
-        {%- assign stars = 4 -%}
-        {%- if include.content.external_url or include.content.file_links or include.content.drive_links -%}
-            {%- for p in site.posts -%}
-                {%- if p.content contains include.content.slug -%}
-                    {%- assign stars = 5 -%}
-                    {%- break -%}
-                {%- endif -%}
-            {%- endfor -%}
-        {%- endif -%}
-    {%- else -%}
-        {%- assign stars = 3 -%}
-    {%- endif -%}
+    {% include calculatestars.dat content=include.content %}
 {%- endunless -%}
 {%- assign book = nil -%}
 {%- assign publisher = nil -%}

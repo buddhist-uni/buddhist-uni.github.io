@@ -366,6 +366,7 @@ article.content-perma .content_links .btn {
 
 article.content-perma h1.post-title {
     font-size: 39px;
+    margin-bottom: 4px;
 
     @include media-query($on-laptop) {
         font-size: 32px;
@@ -377,7 +378,6 @@ article.content-perma h1.post-title {
 }
 
 article.content-perma .post-subtitle {
-    margin-top: -15px;
     font-size: 22px;
     letter-spacing: -1px;
     line-height: 1;
@@ -392,6 +392,7 @@ article.content-perma .post-subtitle {
 
 article.content-perma h2 {
     font-size: 20px;
+    margin-bottom: 7px;
 }
 
 article.content-perma .pub_desc {
@@ -404,41 +405,48 @@ details.bibtex .highlight {
 
 div.content_rating {
     padding-bottom: 14px;
-    margin-top: 5px;
 }
 
 div.content_rating div.star_rating {
     font-size: 110%;
 }
 
-div.featured_content_list ul {
-    flex-wrap: wrap;
-    display: flex;
-    list-style: none;
-    margin-left: 5px;
-}
+div.featured_content_list {
+    ul {
+        flex-wrap: wrap;
+        display: flex;
+        list-style: none;
+        margin-left: 5px;
+    }
 
-div.featured_content_list li {
-    width: 20em;
-    padding: 17px;
-    margin: 5px;
-    border: 1px solid lightgray;
-    border-radius: 9px;
-}
+    li {
+        width: 20em;
+        padding: 17px;
+        margin: 5px;
+        border: 1px solid lightgray;
+        border-radius: 9px;
+    }
 
-div.featured_content_list .content_title {
-    font-size: 105%;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
+    .content_title {
+        font-size: 105%;
+        font-weight: 500;
+    }
+    
+    .star_label {
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 2px;
+    }
 
-div.featured_content_list .content_desc p {
-    margin-bottom: 0px;
-}
+    .content_desc p {
+        margin-bottom: 0px;
+        padding: 3px 12px;
+    }
 
-div.featured_content_list .content_desc blockquote {
-    @include relative-font-size(1.0625);
-    color: $grey-color-dark;
+    .content_desc blockquote {
+        @include relative-font-size(1.0625);
+        color: $grey-color-dark;
+    }
 }
 
 .ordinal-content-list {
@@ -449,8 +457,13 @@ div.similar_content_footer {
     border-top: 1px solid $grey-color;
     padding: 16px 0px;
     margin-top: 26px;
+    p {
+        font-family: $readable-font-family;
+    }
     ul li {
-        padding-bottom: 7px;
+        padding-bottom: 8px;
+        font-family: monospace;
+        font-size: 15px;
     }
 }
 
