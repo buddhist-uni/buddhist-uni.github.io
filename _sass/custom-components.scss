@@ -3,30 +3,28 @@
 .RatingLabel {
     @extend .IssueLabel, .IssueLabel--big;
     color: white;
+    font-family: $base-font-family;
 }
 
 .RatingLabel-1 {
     @extend .RatingLabel;
     background-color: $danger-color;
-    font-family: $base-font-family;
 }
 
 .RatingLabel-2 {
     @extend .RatingLabel;
     background-color: slategray;
-    font-family: $base-font-family;
 }
 
 .RatingLabel-4 {
     @extend .RatingLabel;
     background-color: $banner-color;
-    font-family: $readable-font-family;
 }
 
 .RatingLabel-5 {
     @extend .RatingLabel;
     background-color: $blue;
-    font-family: $readable-font-family;
+    font-family: $readable-font-family !important;
 }
 
 .RatingDetails {
@@ -40,4 +38,5 @@
     @extend .Label, .Label--large;
     margin-right: 4px;
     border-color: $brand-color;
+    color: $brand-color !important;
 }
