@@ -17,9 +17,10 @@
 @import "@primer/css/forms/form-control.scss";
 @import "@primer/css/labels/index.scss";
 @import "@primer/css/table-object/index.scss";
+@import "@primer/css/dropdown/dropdown.scss";
 
 // My Bug fixes go here
-.input-lg { line-height: 24px; min-width: 48px; }
+.input-lg { height: 36px; line-height: 24px; min-width: 48px; }
 
 // My own custom Primer Components go here
 @import "support.scss";
@@ -27,4 +28,4 @@
 
 // Any utilities I want should be imported last
 @import "@primer/css/utilities/margin.scss";
-
+@import "@primer/css/utilities/details.scss";
