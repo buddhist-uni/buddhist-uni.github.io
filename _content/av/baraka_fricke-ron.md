@@ -8,7 +8,6 @@ tags:
   - ambulit
   - nature
   - modernity
-status: featured
 publisher: "Magidson Films"
 ---
 
