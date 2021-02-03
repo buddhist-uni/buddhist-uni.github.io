@@ -75,7 +75,8 @@ footer.site-footer {
 }
 
 a:visited {
-    color: $plum;
+    // Hide the visited state. Don't want to give people anxiety.
+    color: $brand-color;
 }
 
 img {
