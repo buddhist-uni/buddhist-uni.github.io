@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Imagery in the EBTs"
+image: https://illeakyw.sirv.com/Images/imagery-course/intro.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 1

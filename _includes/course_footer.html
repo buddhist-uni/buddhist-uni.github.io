@@ -1,4 +1,4 @@
-{% if include.course.feedback_id %}
+{%- if include.course.feedback_id -%}
 <div class="feedback">
     <h2 id="Feedback">Feedback</h2>
     <p>
@@ -9,41 +9,50 @@
         Your feedback is vital to making these courses good. Thank you!
     </p>
 </div>
-{% endif %}
+{%- endif -%}
 
-{% assign ctag = site.tags | where: "slug", include.course.slug | first %}
-{% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
-{% capture furthercourses %}
-{% for ncslug in include.course.next_courses %}
-  {% assign course = site.courses | where: "slug", ncslug | first %}
-  {% if course %}
-    {% unless floobar %}
+{%- assign ctag = site.tags | where: "slug", include.course.slug | first -%}
+{%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" -%}
+{%- capture furthercourses -%}
+{%- assign floobar = nil -%}
+{%- for course in site.courses include.course.next_courses -%}
+    {%- assign ncindex = nil -%}
+    {%- for ncslug in include.course.next_courses -%}
+        {%- if ncslug == course.slug -%}
+            {%- assign ncindex = forloop.index0 -%}
+            {%- break -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {%- if ncindex -%}
+    {%- unless floobar -%}
       <h2 id="further-courses">Advanced Courses</h2>
-      {% assign floobar = "already" %}
-    {% endunless %}
+      {%- assign floobar = "already" -%}
+    {%- endunless -%}
     <a class="nextcourselink" href="{{ course.url }}"><i class="{{ course.icon }}"></i><strong>{{ course.title }}</strong></a>
-    <div class="nextcoursedesc">{{ include.course.next_course_descs[forloop.index0] }}</div>
-    {% assign all_content = all_content | where_exp: "c", "c.course != ncslug" %}
-  {% endif %}
-{% endfor %}
-{% endcapture %}
-{% unless ctag.is_canon %}
-{% assign categories = site.data.content_categories %}
-{% capture filter_exp %}c.tags contains '{{ include.course.slug }}'{% endcapture %}
-{% assign serieses = site.series | where_exp: "c", filter_exp %}
-{% assign all_content = all_content | where_exp: "c", filter_exp %}
+    <div class="nextcoursedesc">{{ include.course.next_course_descs[ncindex] }}</div>
+  {%- endif -%}
+  {%- assign all_content = all_content | where_exp: "c", "c.course != course.slug" -%}
+{%- endfor -%}
+{%- endcapture -%}
+{%- unless ctag.is_canon -%}
+{%- assign categories = site.data.content_categories -%}
+{%- capture filter_exp -%}c.tags contains '{{ include.course.slug }}'{%- endcapture -%}
+{%- assign serieses = site.series | where_exp: "c", filter_exp -%}
+{%- assign all_content = all_content | where_exp: "c", filter_exp -%}
+{%- if all_content.size > 0 -%}
 <h2 id="further-reading">Further Reading</h2>
-{% for catslug in categories %}
-  {% assign cat_content = all_content | where: "category", catslug %}
-  {% assign cat_serieses = serieses | where: "category", catslug %}
-  {% assign tagged_content = cat_serieses | concat: cat_content %}
-  {% if tagged_content.size > 0 %}
-    {% assign category = site.categories | where: "slug", catslug | first %}
+{%- for catslug in categories -%}
+  {%- assign cat_content = all_content | where: "category", catslug -%}
+  {%- assign cat_serieses = serieses | where: "category", catslug -%}
+  {%- assign tagged_content = cat_serieses | concat: cat_content -%}
+  {%- if tagged_content.size > 0 -%}
+    {%- assign category = site.categories | where: "slug", catslug | first -%}
     <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
     <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
-  {% endif %}
-{% endfor %}
-{% endunless %}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endunless -%}
 
 {{ furthercourses }}
 or feel free to check out any of <a href="{% link courses.md %}">our University's other fine offerings</a>.

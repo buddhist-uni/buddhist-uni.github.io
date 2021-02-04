@@ -1,5 +1,6 @@
 ---
 title: "Taṇhā — Craving"
+image: https://illeakyw.sirv.com/Images/imagery-course/tanha.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 2

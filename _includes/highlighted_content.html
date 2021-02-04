@@ -3,10 +3,10 @@
     {% capture foo %}{% include simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
   </div>
   <div class="content_box_desc">{{ include.content.excerpt }}</div>
-  {% if include.content.course %}
+  {%- if include.content.course -%}
     {% assign course = site.courses | where: "slug", include.content.course | first %}
-    {% if course %}
+    {%- if course -%}
         <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"</em></div>
-    {% endif %}
-  {% endif %}
+    {%- endif -%}
+  {%- endif -%}
 </div>

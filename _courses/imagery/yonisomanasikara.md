@@ -1,9 +1,10 @@
 ---
 title: "Yoniso Manasikāra — Wise Attention"
+image: https://illeakyw.sirv.com/Images/imagery-course/yonisomanasikara.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 19
-description: ""
+description: "The world is full of distractions from the spiritual path."
 ---
 
 ### Suttas

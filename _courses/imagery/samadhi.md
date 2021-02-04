@@ -1,9 +1,10 @@
 ---
 title: "Samādhi — Immersion"
+image: https://illeakyw.sirv.com/Images/imagery-course/samadhi.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 22
-description: ""
+description: "Also sometimes translated as \"concentration,\" <i>samādhi</i> is a special state of consciousness where the mind is unbiased by greed, aversion, sloth, restlessness, or doubt."
 ---
 
 ### Suttas

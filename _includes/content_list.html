@@ -1,13 +1,13 @@
-{% assign sorted = include.contents %}
+{%- assign sorted = include.contents -%}
 {% unless include.keep_rejects %}
     {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
 {% endunless %}
 {% assign sortkey = include.orderby | default: "year" %}
 {% assign sorted = sorted | sort: sortkey %}
-{% for content in sorted %}
-    {% if content.status == 'featured' %}
+{%- for content in sorted -%}
+    {%- if content.status == 'featured' -%}
         {% include highlighted_content.html content=content %}
-    {% else %}
+    {%- else -%}
         {% include simple_content.html content=content %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+{%- endfor -%}
