@@ -186,7 +186,7 @@ The last third of our class tackles the more prescriptive, “micro” question 
 
 #### Textbook
 
-{% include content_box.html category="monographs" slug="lay-buddhist-practice_khantipalo" %}
+{% include content_box.html category="booklets" slug="lay-buddhist-practice_khantipalo" %}
 
 #### Supplements
 

@@ -18,15 +18,9 @@ Here you will find links to all the content in the library organized by type.
 </tr>
 </thead>
 <tbody>
-{% include content-category-row.html category="canon" %}
-{% include content-category-row.html category="monographs" %}
-{% include content-category-row.html category="booklets" %}
-{% include content-category-row.html category="articles" %}
-{% include content-category-row.html category="papers" %}
-{% include content-category-row.html category="essays" %}
-{% include content-category-row.html category="excerpts" %}
-{% include content-category-row.html category="av" %}
-{% include content-category-row.html category="reference" %}
+{% for catslug in site.data.content_categories %}
+{% include content-category-row.html category=catslug %}
+{% endfor %}
 </tbody>
 </table>
 

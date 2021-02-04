@@ -25,14 +25,14 @@ next_course_descs:
 
 ## What is the Function of Buddhism?
 
-The Function of Buddhism is to overcome delusion by supporting our cultivation of virtues, mental clarity, and wisdom.
+The Function of Buddhism is to make us happy by supporting our cultivation of virtue, mental clarity, and wisdom.
 
-Buddhism supports this “threefold training” by providing both essential, explanatory frameworks and practical guidance. The Buddha himself called this a “Dhamma-Vinaya,” or “Philosophy-Discipline,” but we might simply call it “a way of life” because Buddhism is meant to transform our entire lives from our selfish, restless, addicted, never-satisfied “default mode,”[^defaultmode] to the pinnacle of human potential — the total eradication of suffering. 
+Buddhism supports this “threefold training” by providing both essential, explanatory frameworks and practical guidance. The Buddha himself called this a “Dhamma-Vinaya,” or “Philosophy-Discipline,” but we might simply call it “a way of life” because Buddhism is meant to transform our entire lives from our selfish, restless, addicted, never-satisfied “default mode,”[^defaultmode] to the pinnacle of human potential—the total eradication of suffering. 
 
 
 ## Prerequisites
 
-This course strives to be a rigorous overview of Buddhism suitable for everyone — from beginners to experienced practitioners alike — and it is recommended for all.
+This course strives to be a rigorous overview of Buddhism suitable for everyone—from beginners to experienced practitioners alike—and it is recommended for all.
 
 For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 

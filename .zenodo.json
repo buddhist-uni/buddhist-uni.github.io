@@ -2,7 +2,7 @@
   "title": "The Open Buddhist University",
   "keywords": ["buddhism", "mooc", "courseware", "course", "curriculum", "bibliography"],
   "upload_type": "lesson",
-  "description": "<p>A library of free courses and other materials for studying the fundamentals of Buddhism, it also includes dozens of topical bibliographies atop a database of roughly a thousand free articles, books, and recordings across the breadth of Buddhist Studies.</p><p>This archive contains the source code for building <a href=\"https://www.buddhistuniversity.net\">the website</a> with <a href=\"http://jekyllrb.com/\">Jekyll</a>.</p>",
+  "description": "<p>A library of free courses and other materials for studying the fundamentals of Buddhism, it also includes dozens of topical bibliographies atop a database of roughly a thousand free articles, books, and recordings across the breadth of Buddhist Studies.</p><p>This archive contains the source code for building <a href=\"https://www.buddhistuniversity.net\">the website</a> with <a href=\"http://jekyllrb.com/\">Jekyll</a>. Additional assets for serving the site can found <a href=\"https://doi.org/10.5281/zenodo.4450047\">here</a></p>",
   "creators": [{
     "name": "Khemarato Bhikkhu",
     "orcid": "0000-0003-4738-7882"
@@ -14,8 +14,11 @@
       "relation": "compiles",
       "identifier": "https://www.buddhistuniversity.net"
     },{
-      "relation": "isSupplementTo",
+      "relation": "isDerivedFrom",
       "identifier": "https://github.com/buddhist-uni/buddhist-uni.github.io"
+    },{
+      "relation": "references",
+      "identifier": "https://doi.org/10.5281/zenodo.4450047"
     },{
       "relation": "isSupplementTo",
       "identifier": "https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r"

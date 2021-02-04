@@ -20,5 +20,5 @@ tags:
   - mindfulness
 ---
 
-Handicapped and at-risk Vietnamese youths share their appreciation and enthusiasm for a mindfulness meditation course.
+Handicapped and at-risk Vietnamese youths share their appreciation of and enthusiasm for a mindfulness meditation course.
 
