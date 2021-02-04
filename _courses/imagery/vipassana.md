@@ -1,9 +1,10 @@
 ---
 title: "Vipassanā — Insight"
+image: https://illeakyw.sirv.com/Images/imagery-course/vipassana.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 20
-description: ""
+description: "Insight, or literally \"clear seeing,\" is a result of paying close attention to reality as it actually is.  The impermanent, uncontrollable, and unsatisfying nature of experience becomes obvious and the mind lets go of all that which is just the cause of suffering."
 ---
 
 ### Suttas

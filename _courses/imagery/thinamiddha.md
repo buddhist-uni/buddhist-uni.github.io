@@ -1,5 +1,6 @@
 ---
 title: "Thīnamiddha — Sloth and Torpor"
+image: https://illeakyw.sirv.com/Images/imagery-course/thinamiddha.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 5

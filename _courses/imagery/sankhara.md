@@ -1,9 +1,10 @@
 ---
 title: "Saṅkhāra — Activity"
+image: https://illeakyw.sirv.com/Images/imagery-course/sankhara.JPG
 order: 17
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
-description: ""
+description: "Our delusion tells us that we have to do something to fix the world, but in reality all our efforts are wasted if they are based in ignorance."
 ---
 
 ### Suttas

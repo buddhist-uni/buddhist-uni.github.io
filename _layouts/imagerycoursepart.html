@@ -4,7 +4,7 @@ layout: coursepart
 {% assign pslug = page.path | split: "/" | last | split: "." | first %}
 
 <figure>
-  <img src="https://illeakyw.sirv.com/Images/imagery-course/{{ pslug }}.JPG?w=770" srcset="https://illeakyw.sirv.com/Images/imagery-course/{{ pslug }}.JPG 1.5x">
+  <img src="{{ page.image }}?w=770" srcset="{{ page.image }} 1.5x">
   <figcaption><p class="attribution">Illustration by Ayya Vimalayani aka "<a href="https://discourse.suttacentral.net/t/dhamma-doodles-grin/7206" target="_blank">Ven Yodha</a>"</p><p class="description">{{ page.description }}</p></figcaption>
 </figure>
 

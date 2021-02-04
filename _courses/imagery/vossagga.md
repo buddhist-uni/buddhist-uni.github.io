@@ -1,9 +1,10 @@
 ---
 title: "Vossagga — Letting Go"
+image: https://illeakyw.sirv.com/Images/imagery-course/vossagga.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 24
-description: ""
+description: "Enlightenment is not another item on our todo list. It is the erradication of the list."
 ---
 
 ### Suttas
@@ -19,5 +20,5 @@ description: ""
 
 ### Reflection
 
-What is brown and sticky? A stick! What should not be clung to?
+I could offer you enlightenment today, but it would cost you your life. Would you take it?
 

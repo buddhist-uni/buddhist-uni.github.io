@@ -1,5 +1,6 @@
 ---
 title: "Rāga — Passion"
+image: https://illeakyw.sirv.com/Images/imagery-course/raga.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 3

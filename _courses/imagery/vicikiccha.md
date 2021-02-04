@@ -1,5 +1,6 @@
 ---
 title: "Vicikicchā — Doubt"
+image: https://illeakyw.sirv.com/Images/imagery-course/vicikiccha.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 7

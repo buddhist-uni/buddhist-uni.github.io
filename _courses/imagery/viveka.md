@@ -1,9 +1,10 @@
 ---
 title: "Viveka — Seclusion"
+image: https://illeakyw.sirv.com/Images/imagery-course/viveka.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 23
-description: ""
+description: "There is a time for learning from others, but the real work of englightenment happens privately. But even privacy is an inferior form of seclusion compared with inner seclusion from the senses."
 ---
 
 ### Suttas
