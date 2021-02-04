@@ -62,9 +62,9 @@ You can think of each of the folders in [the main folder](https://github.com/bud
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
 - [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
-To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/) `serve`" keeping in mind that the site will take up to 30 mins to build. Once the site is built, it will start serving at `localhost:4000`
+To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/) `build`" keeping in mind that the buil will take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build. Once the site is built, extract [this archive](https://github.com/buddhist-uni/exclusive_01/archive/main.zip) into the `_site` directory, and then run `bundle run jekyll serve --skip-initial-build` to start serving the site locally at `localhost:4000`
 
-For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/).  For questions about the source code, feel free to email me or add a comment at the relevant spot on GitHub.
+For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/).  For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
 
 # Contributions
 

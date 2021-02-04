@@ -20,14 +20,6 @@ div { font-family: system-ui, sans; }
     <td>To learn how to toggle this setting, <a href="https://allaboutdnt.com/#adjust-settings">visit the DNT website</a>.</td>
   </tr>
 </tbody></table>
-<script>
-document.getElementById("js-off").style = "display: none;";
-if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
-    document.getElementById("dnt-off").style = "";
-} else {
-    document.getElementById("dnt-on").style = "";
-}
-</script>
 </div>
 
 <h4>Incognito Mode</h4>
@@ -37,16 +29,25 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     <td style="display: none;" id="incog-on"><i class="fas fa-user-secret"></i> You are now <span style="font-family: monospace;">Incognito</span>. Your use of this website is <span style="font-family: cursive;">invisible</span>.</td>
     <td><button class="btn btn-danger" id="incog-toggle" onclick="if(localStorage.getItem('doNotTrack')=='1'){localStorage.removeItem('doNotTrack');localStorage.setItem('TRACK', 1);}else{localStorage.removeItem('TRACK');localStorage.setItem('doNotTrack', 1);}location.reload();">Go Incognito...</button></td>
 </tr></tbody></table>
+
 <script>
-if (localStorage.getItem('doNotTrack') == "1") {
+document.getElementById("js-off").style = "display: none;";
+
+if (localStorage.getItem('TRACK') == "1") {
+    document.getElementById('dnt').style="display: none;";
+    document.getElementById('incog-off').style="";
+} else {
+  if (localStorage.getItem('doNotTrack') == "1") {
     document.getElementById('incog-toggle').innerHTML = "Opt Back In";
     document.getElementById('incog-on').style="";
     document.getElementById('dnt').style="display: none;";
-} else {
+  } else { if (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1") {
+    document.getElementById("dnt-on").style = "";
+    document.getElementById('incog-toggle').innerHTML = "Opt In To Tracking";
+    document.getElementById('incog-on').style="";
+  } else {
+    document.getElementById("dnt-off").style = "";
     document.getElementById('incog-off').style="";
-}
-if (localStorage.getItem('TRACK') == "1") {
-    document.getElementById('dnt').style="display: none;";
-}
+}}}
 </script>
 
