@@ -3,6 +3,7 @@ title: "Pāli Primer (Course)"
 authors: [bodhi]
 year: 2015 #TODO: Please correct if you know the actual year
 formats: ["mp3s"]
+external_url: "https://archive.org/details/pali-primer_bhikkhu-bodhi"
 drive_links: ["https://drive.google.com/drive/folders/1KLNEtzlMvvDbYmlm2tFfoXVi3xdt8ihm"]
 course: pali-primer
 ---
