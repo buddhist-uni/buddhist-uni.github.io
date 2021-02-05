@@ -4,6 +4,7 @@ authors:
   - nyanamoli
   - bodhi
 publisher: wisdom
+excerpt_url: "https://readingfaithfully.org/selections-from-the-middle-length-discourses-free-kindle-epub-mobi/"
 year: 1995
 course: mn
 tags:

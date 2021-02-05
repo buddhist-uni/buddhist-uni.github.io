@@ -1,6 +1,7 @@
 ---
 title: "The Buddhist Religion: A Historical Introduction"
 authors: [robinson, johnson-willard, geoff]
+oclc: 1017725397
 edition: Fourth
 year: 1997
 publisher: Wadsworth

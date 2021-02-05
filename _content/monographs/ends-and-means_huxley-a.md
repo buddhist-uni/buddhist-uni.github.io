@@ -3,6 +3,7 @@ title: "Ends and Means: An Enquiry Into the Nature of Ideals and Into the Method
 authors:
   - huxley-a
 course: society
+external_url: "https://archive.org/download/endsandmeans035237mbp/endsandmeans035237mbp.pdf"
 tags:
   - ideology
   - perennial
@@ -25,4 +26,3 @@ A classic collection of essays on the relationship between ideas and society whi
 
 The product of a bygone era, *Ends and Means* diagnoses modernity without the despair or self-promotion characteristic of later engagements. One instead feels the vitality and honesty that animated Huxley's life and continue to inspire readers nearly a century later.
 
-Sadly, due to the insanity of current copyright law, I cannot provide a direct link to the PDF until 2033, when the work finally enters the public domain.

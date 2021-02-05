@@ -62,6 +62,7 @@ layout: default
     {% if page.reader contains " " %}{% assign reader = nil %}{% else %}{% assign reader = site.authors | where: "slug", page.reader | first %}{% endif %}
     <h2 class="author">Read by {% if reader %}<a href="{{ reader.url }}">{{ reader.title }}</a>{% else %}{{ page.reader }}{% endif %}</h2>
     {% endif %}
+    {% unless page.reader or page.authors.size > 0 %}<div class="mb-3"></div>{% endunless %}
 
     {% unless stars == 3 %}<div class="content_rating">
         <details class="details-reset">
@@ -74,11 +75,7 @@ layout: default
             {% endif %}</div>
         </details>
     </div>{% endunless %}
-
-    {% if page.source_url or page.external_url or page.file_links or page.drive_links.size > 0 %}
-        {% include content_filelinks.html content=page %}
-    {% endif %}
-
+    {% include content_filelinks.html content=page %}
  </header>
   <div class="post-content">
         {{ content }}

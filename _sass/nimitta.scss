@@ -364,6 +364,22 @@ article.content-perma .content_links .btn {
     padding: 4px 12px 8px;
 }
 
+article.content-perma .content_links .copyright {
+    summary {
+        width: fit-content;
+        padding-right: 20px;
+    }
+    i.fa-question-circle {
+        padding-left: 13px;
+    }
+    div {
+        border: 1px solid gray;
+        padding: 5px;
+        background-color: #eef;
+        border-radius: 3px;
+    }
+}
+
 article.content-perma h1.post-title {
     font-size: 39px;
     margin-bottom: 4px;

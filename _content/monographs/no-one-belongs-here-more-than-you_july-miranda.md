@@ -1,5 +1,5 @@
 ---
-title: "Nobody Belongs Here More than You"
+title: "No One Belongs Here More than You"
 authors:
   - "Miranda July"
 publisher: "Simon & Schuster"
