@@ -9,12 +9,12 @@ div { font-family: system-ui, sans; }
 
 <h3>Usage Statistics</h3>
 <p>This site uses Google Analytics to get anonymous usage data which we use to improve the site and to feel good about what we've built. It means a lot to us that you come here and we love to see you here.</p>
-<div id="dnt">
+<p id="js-off">But you have Javascript disabled, and so we cannot track your usage at all.</p>
+<div style="display:none;" id="dnt">
 <h4>Do Not Track</h4>
 <p>This website participates in the Future Of Privacy Forum's "<a target="_blank" href="https://allaboutdnt.com/">Do Not Track</a>" initiative by respecting your browser's DNT Setting.</p>
 <table><tbody>
   <tr>
-    <td id="js-off">You have Javascript disabled, and so no website can track you at all.</td>
     <td style="display: none;" id="dnt-on"><i class="fas fa-user-times"></i> Your DNT Setting is currently <strong style="color: indianred;">on</strong> and your use of participating DNT websites is invisible.</td>
     <td style="display: none;" id="dnt-off"><i class="fas fa-user-check"></i> Your DNT Setting is currently <strong style="color: indianred;">off</strong> and your use of participating DNT websites is visible.</td>
     <td>To learn how to toggle this setting, <a href="https://allaboutdnt.com/#adjust-settings">visit the DNT website</a>.</td>
@@ -22,6 +22,7 @@ div { font-family: system-ui, sans; }
 </tbody></table>
 </div>
 
+<div id="incog" style="display: none;">
 <h4>Incognito Mode</h4>
 <p>If, for whatever reason, you would like <strong>to specifically opt-in/out of our tracking</strong>, please do so here:</p>
 <table><tbody><tr>
@@ -29,19 +30,21 @@ div { font-family: system-ui, sans; }
     <td style="display: none;" id="incog-on"><i class="fas fa-user-secret"></i> You are now <span style="font-family: monospace;">Incognito</span>. Your use of this website is <span style="font-family: cursive;">invisible</span>.</td>
     <td><button class="btn btn-danger" id="incog-toggle" onclick="if(localStorage.getItem('doNotTrack')=='1'){localStorage.removeItem('doNotTrack');localStorage.setItem('TRACK', 1);}else{localStorage.removeItem('TRACK');localStorage.setItem('doNotTrack', 1);}location.reload();">Go Incognito...</button></td>
 </tr></tbody></table>
+</div>
 
 <script>
 document.getElementById("js-off").style = "display: none;";
+document.getElementById('incog').style = "";
 
 if (localStorage.getItem('TRACK') == "1") {
-    document.getElementById('dnt').style="display: none;";
     document.getElementById('incog-off').style="";
 } else {
   if (localStorage.getItem('doNotTrack') == "1") {
     document.getElementById('incog-toggle').innerHTML = "Opt Back In";
     document.getElementById('incog-on').style="";
-    document.getElementById('dnt').style="display: none;";
-  } else { if (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1") {
+  } else {
+  document.getElementById('dnt').style="";
+  if (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1") {
     document.getElementById("dnt-on").style = "";
     document.getElementById('incog-toggle').innerHTML = "Opt In To Tracking";
     document.getElementById('incog-on').style="";
