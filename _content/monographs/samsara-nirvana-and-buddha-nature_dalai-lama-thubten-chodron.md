@@ -4,6 +4,7 @@ authors:
   - dalai-lama
   - thubten-chodron
 publisher: wisdom
+oclc: 1041204542
 year: 2019
 tags:
   - mahayana

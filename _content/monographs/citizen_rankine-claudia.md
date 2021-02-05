@@ -12,6 +12,7 @@ tags:
   - power
   - society
 year: 2014
+oclc: 1101773886
 publisher: "Graywolf"
 status: featured
 ---
