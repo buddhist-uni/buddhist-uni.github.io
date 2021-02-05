@@ -20,5 +20,23 @@
     {% if include.content.source_url %}
         <a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}"><i class="fas fa-route"></i> Origin</a>
     {% endif %}
+    {%- assign showworldcat = false -%}
+    {%- unless page.source_url or page.external_url or page.file_links or page.drive_links.size > 0 or include.newtab -%}
+        {%- assign showworldcat = true -%}
+    {%- endunless -%}
+    {%- if include.content.excerpt_url -%}
+        {%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}
+        <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" ga-event-value="{{ value | divided_by: 2 }}" data-content-path="{{ content_path }}" ga-event-label="{{ include.content.excerpt_url }}"><i class="fas fa-book-reader"></i> Selection</a>
+    {%- endif -%}
+    {%- if showworldcat -%}
+        {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}
+        {%- capture authors -%}{% include content_authors_string.html content=include.content %}{%- endcapture -%}
+        {% assign authors = authors | strip_html | strip | cgi_escape %}
+            <a class="btn" href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
+            <i class="far fa-question-circle"></i>
+        </summary><div>
+            <i class="far fa-copyright"></i> This fine, Copyrighted work cannot be shared {% if include.content.excerpt_url %}in its entirety{% else %}directly{% endif %}, however WorldCat&trade; can help you find a copy at a nearby library{% if include.content.category == 'monographs' %} or wherever you get books{% endif %}.
+        </div></details>
+    {%- endif -%}
 </div>
 

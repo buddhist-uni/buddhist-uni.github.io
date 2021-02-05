@@ -3,6 +3,7 @@ title: "Zen Mind, Beginner's Mind"
 authors:
   - suzuki-s
 status: featured
+oclc: 875173212
 course: chan
 tags:
   - buddhism

@@ -2,6 +2,7 @@
 title: "In the Buddha's Words: An Anthology of Discourses from the Pali Canon"
 authors: [bodhi]
 year: 2004
+excerpt_url: "https://readingfaithfully.org/in-the-buddhas-words-an-anthology-of-discourses-from-the-pali-canon-linked-to-suttacentral-net/"
 publisher: wisdom
 status: featured
 course: ebts
