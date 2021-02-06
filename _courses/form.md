@@ -170,6 +170,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
 - A beautiful sermon on the value of monasticism.
 
+{% include content_blurb.html category="av" slug="making-buddha-statues-cultivation_drba" %}
+- A video about a community coming together to make ten thousand Buddha statues by hand.
+
 {% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
 - Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
 
