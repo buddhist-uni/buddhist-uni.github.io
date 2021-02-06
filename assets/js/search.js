@@ -111,11 +111,11 @@
         loadingIndicator.style.display = 'none';
         stillLoading.style.display = 'none';
         searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo%20%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi+%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, and &quot;in&quot; (articles, av, booklets, monographs, canon, papers, essays, excerpts, or reference).</li><li class="instructions"><strong>Search is fuzzy</strong> and will match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
-        searchBox.focus();
         window.history.replaceState({"html": searchResults.innerHTML, "q": ""}, "", "/search/");
       }
       searchBox.addEventListener('input', newQuery);
       searchBox.addEventListener('propertychange', newQuery); // IE8
+      setTimeout(searchBox.focus.bind(searchBox), 10);
   } catch (e) {
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
