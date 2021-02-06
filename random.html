@@ -1,0 +1,26 @@
+---
+title: "Random Recommendation"
+permalink: /content/random/
+description: This page redirects you to a random piece of content. It's a fun and low-pressure way to explore the library.
+---
+<p>{{ page.description }}</p>
+<p id="no-js">Unfortunately for you, this page requires Javascript. I guess you could get the same effect by visiting <a href="/sitemap.xml">the sitemap</a> and selecting an arbitrary url?</p>
+<p id="yes-js" style="display:none;">Now, let me see...  How about...</p>
+
+<script>
+document.getElementById('no-js').style.display = 'none';
+document.getElementById('yes-js').style = "";
+var alltheurls = [
+{%- for content in site.content -%}
+    {%- unless forloop.first -%},{%- endunless -%}
+    {%- assign w = site.data.random.w_archive -%}
+    {%- if content.course -%}{% assign w = site.data.random.w_three %}{%- endif -%}
+    {%- if content.status == 'rejected' -%}{% assign w = site.data.random.w_reject %}{%- endif -%}
+    {%- if content.status == 'featured' -%}{% assign w = site.data.random.w_featured %}{%- endif -%}
+    {%- unless content.external_url or content.drive_links.size > 0 or content.file_links.size > 0 -%}{% assign w = site.data.random.w_paid %}{%- endunless -%}
+    {%- for i in (1..w) -%}{{ content.url | jsonify }}{% unless forloop.last %},{% endunless %}{%- endfor -%}
+{%- endfor -%}
+];
+var i = Math.floor(Math.random() * alltheurls.length);
+location.replace(alltheurls[i]);
+</script>

@@ -13,6 +13,9 @@ Either scan the [topic index]({% link tags.md %}) for a topic you're interested 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
 Just type in what you're looking for and see what comes up
 
+#### [<i class="fas fa-dice"></i> Random]({% link random.html %})
+Get redirected to a random work in the library to explore the breadth of our recommendations.
+
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
 If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can [find a list of our authors here]({% link authors.md %}).
 
