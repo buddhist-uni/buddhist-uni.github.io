@@ -1,5 +1,6 @@
 ---
 title: "The Buddha"
+subtitle: A Course Syllabus
 icon: "fas fa-hand-holding"
 google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE
 description: "A thorough tour of the Pāli texts which report the Buddha's character, accomplishments, life, and past."

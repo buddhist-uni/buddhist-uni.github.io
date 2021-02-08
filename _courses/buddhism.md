@@ -1,5 +1,6 @@
 ---
 title: Buddhism 101
+subtitle: Ancient Wisdom, Modern Times
 google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 
 description: "A general introduction to Buddhism suitable for everyone."
