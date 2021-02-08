@@ -1,6 +1,6 @@
 (function() {
   const QMIN = 3;
-  const CHECKTIME = 3000;
+  const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
   loadingIndicator.style.display = 'block';
@@ -76,7 +76,7 @@
           } else {
             window.history.replaceState(this, "", nuri);
           }
-          pendingui = setTimeout(function(){ searchForm.onsubmit = allow; }, 2000);
+          pendingui = setTimeout(function(){ searchForm.onsubmit = allow; }, CHECKTIME);
         }
       }
       window.search_worker.onmessage = function(e) {
@@ -85,7 +85,7 @@
             searchResults.innerHTML = e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
-            pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), 1100);
+            pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), CHECKTIME);
         }
       }
       function displayError(e) {
@@ -98,7 +98,7 @@
         if (e.filename.endsWith("/lunr.min.js")) {
             // Bad query. Maybe still typing?
             e.preventDefault();
-            pendingui = setTimeout(function(){ if (!running) displayError(e); }, 2000);
+            pendingui = setTimeout(function(){ if (!running) displayError(e); }, CHECKTIME);
         } else {
             // Unexpected error with my code
             displayError(e);
@@ -115,7 +115,7 @@
       }
       searchBox.addEventListener('input', newQuery);
       searchBox.addEventListener('propertychange', newQuery); // IE8
-      setTimeout(searchBox.focus.bind(searchBox), 10);
+      setTimeout(searchBox.focus.bind(searchBox), 610);
   } catch (e) {
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
