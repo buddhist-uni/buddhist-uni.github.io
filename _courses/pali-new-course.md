@@ -1,5 +1,6 @@
 ---
 title: "The Pāli Language: Level 2"
+subtitle: "A Self-paced, Online Course"
 google_doc_id: 17XpOAYMCdIwNKA4c9kkg7iNdNrNoyJO9
 external_url: "https://archive.org/details/NewPaliCourse"
 description: "Begin to read the Pāli Canon in its original language, in this intermediate Pāli course taught from Gair and Karunatillake's excellent progressive reader and guided step-by-step, as always, by Bhikkhu Bodhi."

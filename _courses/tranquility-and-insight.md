@@ -1,5 +1,6 @@
 ---
-title: "Tranquility and Insight: Madhyama Āgama Division 7"
+title: "Tranquility and Insight"
+subtitle: "An Online Course on Madhyama Āgama Division 7"
 google_doc_id: 10EHXFzAMcmtedj6SgolIHBN1t0s-wzK1
 lecturers:
   - analayo

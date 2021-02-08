@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Ethics"
+subtitle: "An Outline"
 google_doc_id: 1MWVlLI5DN8CBFfXfAU3Hx_d4z0ndStFmfJ9N4IJewDo
 feedback_id: "Buddhist+Ethics"
 icon: "fab fa-pagelines"

@@ -2,6 +2,9 @@ header.site-header {
     z-index: 2;
     background-color: $banner-color;
     border: none;
+    .wrapper {
+        max-width: 100%;
+    }
     .site-nav-links {
         float: right;
         line-height: 61px;

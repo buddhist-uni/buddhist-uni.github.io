@@ -1,5 +1,6 @@
 ---
 title: "Nibbāna: The Goal of Buddhist Practice"
+subtitle: "A Course Outline"
 google_doc_id: 1SSR6mG2xN7wuIEj1Fqs1pJFSfJGWjixdM9u22RED5nM
 feedback_id: "Nibb%C4%81na"
 icon: "far fa-heart"
@@ -8,11 +9,11 @@ description: "This course weaves together two free monographs and a number of bo
 next_courses:
   - imagery
   - tranquility-and-insight
-  - mind-stilled
+  - nibbana-mind-stilled
 next_course_descs:
   - "In this course, we illuminate and inhabit the thought world of the Buddha by continuing our close examination of the language, images, and metaphors of 24 other key doctrinal terms from the Early Buddhist Texts."
   - "Bhikkhu Analayo walks us through a chapter of the Madhyama Āgama on the subject of how tranquility and insight work together to lead the mind to maturity."
-  - "A course by Bhikkhu Ñāṇananda on Dependant Origination and the unraveling of Samsara."
+  - "A course by Bhikkhu Ñāṇananda on Dependant Origination and the unraveling of Saṃsāra."
 epigraph: |
   > This song is for the soil  
   > That's toxic clear down to the bedrock  
