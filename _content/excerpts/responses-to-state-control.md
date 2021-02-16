@@ -1,7 +1,7 @@
 ---
 title: "Buddhist Reponses to State Control of Religion in China at the Century's Turn"
 authors:
- - "Shi Zhiru"
+ - shi-zhiru
 editor: "Carmen Meinhert and Hans-Bernd Zöllner"
 booktitle: "Buddhist Approaches to Human Rights"
 chapter: 7

@@ -4,7 +4,7 @@ authors:
   - "Gary Kinder"
 course: california
 tags:
-  - ocean
+  - oceans
   - things
   - places
   - progress
