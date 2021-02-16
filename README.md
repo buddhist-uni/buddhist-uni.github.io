@@ -4,7 +4,7 @@ title: Behind the Scenes
 
 [![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)
 
-> Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
+> Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
 > Without achieving any success in meditation,  
 > He has instead compiled these treatises  
 > As a burden for an elephant’s back.  
