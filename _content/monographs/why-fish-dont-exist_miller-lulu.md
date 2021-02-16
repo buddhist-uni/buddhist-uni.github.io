@@ -2,8 +2,11 @@
 title: "Why Fish Don't Exist"
 authors:
   - "Lulu Miller"
-course: science
+course: biology
 tags:
+  - oceans
+  - science
+  - philosophy-of-science
   - california
   - language
   - grief
