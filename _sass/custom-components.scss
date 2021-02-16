@@ -3,7 +3,8 @@
 .RatingLabel {
     @extend .IssueLabel, .IssueLabel--big;
     color: white;
-    font-family: $base-font-family;
+    font-family: $ui-font-family;
+    font-weight: normal;
 }
 
 .RatingLabel-1 {
@@ -25,6 +26,7 @@
     @extend .RatingLabel;
     background-color: $blue;
     font-family: $readable-font-family !important;
+    font-size: 13px;
 }
 
 .RatingDetails {
@@ -40,3 +42,5 @@
     border-color: $brand-color;
     color: $brand-color !important;
 }
+
+

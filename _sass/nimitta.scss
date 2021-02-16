@@ -8,12 +8,14 @@ header.site-header {
     .site-nav-links {
         float: right;
         line-height: 61px;
+        font-size: 17px;
         @include media-query($on-palm) {
             display: block;
+            line-height: 50px;
             min-width: 100%;
             text-align: center;
             float: none;
-            @include media-query(354px) {
+            @include media-query(349px) {
                 overflow-x: scroll;
             }
         }
@@ -36,7 +38,7 @@ header.site-header {
             vertical-align: middle;
         }
         @include media-query($on-palm) {
-            margin: 0px;
+            margin: 0px 0px -12px 0px;
             min-width: 100%;
         }
     }
@@ -55,8 +57,8 @@ main {
     #toc {
         font-family: $base-font-family;
     }
-    .uifont, .Label, .State, .IssueLabel, .Counter {
-        font-family: $base-font-family;
+    .uifont, .Label, .State, .IssueLabel, .Counter, .TagLabel {
+        font-family: $ui-font-family;
     }
 }
 
@@ -314,6 +316,10 @@ a.nextcourselink strong {
     margin-left: 0.2em;
 }
 
+article.post header.post-header {
+    margin-top: 6px;
+}
+
 header.post-header h3.translator {
     font-style: italic;
 }
@@ -346,7 +352,7 @@ article.tag div.tagged_content {
 }
 
 .content_links {
-    font-family: $base-font-family;
+    font-family: $ui-font-family;
 }
 
 article.tag .content_links {
@@ -363,8 +369,8 @@ article.content-perma .content_links .source {
     top: 2px;
 }
 
-article.content-perma .content_links .btn {
-    padding: 4px 12px 8px;
+.content_links .btn {
+    padding: 5px 14px 8px;
 }
 
 article.content-perma .content_links .copyright {
@@ -415,7 +421,7 @@ article.content-perma h2 {
 }
 
 article.content-perma .pub_desc {
-    font-size: 14px;
+    font-size: 95%;
 }
 
 details.bibtex .highlight {
