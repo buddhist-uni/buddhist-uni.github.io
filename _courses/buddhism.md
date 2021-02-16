@@ -21,7 +21,7 @@ Buddhism is the religion founded by the Buddha in approximately the 5th century 
 
 He discovered that the cause of our spiritual disease is our erroneous, subconscious perception that we are at the center of the universe. And why not? Everything we hear, see, touch, smell, taste, feel or think happens to us! We are, in every moment, at the center of our own experience, so it's natural that we should think of ourselves as a real being at the center of things. 
 
-But this perspective, which the Buddha called “ignorance,” causes us to suffer when the things that we cling to or identify with (our body, our career, etc) inevitably decay and die. Being associated with what we don't like, being separated from what we like — trying to grasp, pin down and build a “self” out of the constantly changing, flowing things of the world is an inherently stressful project, no matter how it's conceived. 
+But this perspective, which the Buddha called “ignorance,” causes us to suffer when the things that we cling to or identify with (our body, our career, etc) inevitably decay and die. Being associated with what we don't like, being separated from what we like—trying to grasp, pin down and build a “self” out of the constantly changing, flowing things of the world is an inherently stressful project, no matter how it's conceived. 
 
 The religion the Buddha founded is thus the set of contemplations, practices, and yes, even rituals and beliefs, which have been designed to help the practitioner to overcome these “selfish” tendencies and to attain liberation from the tyranny of “me” and “mine.”
 
