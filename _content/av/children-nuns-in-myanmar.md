@@ -2,7 +2,7 @@
 title: "Children in Myanmar become Buddhist nuns"
 authors:
   - "Mereen Santirad"
-extenal_url: "https://www.scmp.com/video/asia/3043706/children-myanmar-become-buddhist-nuns-escape-conflict-and-find-better-future"
+external_url: "https://www.scmp.com/video/asia/3043706/children-myanmar-become-buddhist-nuns-escape-conflict-and-find-better-future"
 course: burmese
 tags:
   - burma
