@@ -5,6 +5,7 @@
   var loadingIndicator = document.getElementById('search-loading');
   loadingIndicator.style.display = 'block';
   searchResults.innerHTML = '';
+  var pendingui = null;
 
   const initialTitle = document.title;
   function setTitle(query) {
@@ -32,14 +33,32 @@
   window.history.replaceState({"html": "", "q": initialSearchTerm}, "", window.location.href);
 
   var checker = setTimeout(checkRunning, CHECKTIME);
+  function maybeRegisterNavigation() {
+        if (this.q == sanitizeQuery(searchBox.value)) {
+          clearTimeout(pendingui);
+          var nuri = UpdateQueryString('q', this.q);
+          setTitle(this.q);
+          if (this.q != initialSearchTerm) {
+            window.history.pushState(this, "", nuri);
+            if (typeof ga != 'undefined') ga('send', 'pageview', {location: nuri});
+            initialSearchTerm = this.q;
+          } else {
+            window.history.replaceState(this, "", nuri);
+          }
+          pendingui = setTimeout(function(){ searchForm.onsubmit = allow; }, CHECKTIME);
+        }
+  }
   function prevent(e) { searchBox.blur(); e.preventDefault(); }
   function allow(e) { return true; }
+  function handle(e) {
+    maybeRegisterNavigation.bind(this)();
+    prevent(e);
+  }
   var searchForm = document.getElementById('search');
   searchForm.onsubmit = prevent;
 
   try {
       window.search_worker = new Worker("/assets/js/search_index.js");
-      var pendingui = null;
       function newQuery(e) {
         var q = e;
         if (e.target) q = e.target.value;
@@ -65,27 +84,18 @@
             }
         }
       };
-      function maybeRegisterNavigation() {
-        if (this.q == sanitizeQuery(searchBox.value)) {
-          var nuri = UpdateQueryString('q', this.q);
-          setTitle(this.q);
-          if (this.q != initialSearchTerm) {
-            window.history.pushState(this, "", nuri);
-            if (typeof ga != 'undefined') ga('send', 'pageview', {location: nuri});
-            initialSearchTerm = this.q;
-          } else {
-            window.history.replaceState(this, "", nuri);
-          }
-          pendingui = setTimeout(function(){ searchForm.onsubmit = allow; }, CHECKTIME);
-        }
-      }
       window.search_worker.onmessage = function(e) {
         running--;
         if (running == 0) {
             searchResults.innerHTML = e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
-            pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), CHECKTIME);
+            if (document.activeElement === searchBox) {
+              pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), CHECKTIME);
+              searchForm.onsubmit = handle.bind(e.data);
+            } else {
+              pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), 1);
+            }
         }
       }
       function displayError(e) {
@@ -98,6 +108,7 @@
         if (e.filename.endsWith("/lunr.min.js")) {
             // Bad query. Maybe still typing?
             e.preventDefault();
+            clearTimeout(pendingui);
             pendingui = setTimeout(function(){ if (!running) displayError(e); }, CHECKTIME);
         } else {
             // Unexpected error with my code
