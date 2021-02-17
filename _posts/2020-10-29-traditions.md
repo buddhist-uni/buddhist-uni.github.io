@@ -13,7 +13,8 @@ From the South, I'd like to highlight:
 From the Northern schools of Buddhism, this month saw the addition of these two Tibetan gems:
 
 {% include content_box.html category="essays" slug="cultivate-concentration_mipham" %}
-{% include content_box.html category="essays" slug="from-the-oral-tradition-of-nyarong-terton" %}
+
+{% include content_box.html category="essays" slug="from-the-oral-tradition_nyarong-terton" %}
 
 And lastly, I wanted to share with you this sutta, which both traditions will agree is worth reading again and again:
 

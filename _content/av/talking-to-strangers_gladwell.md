@@ -10,6 +10,7 @@ tags:
   - america
   - speech
 publisher: Hachette Audio
+external_url: "https://share.libbyapp.com/title/4639728"
 ---
 
 > To assume the best about another is the trait that has created modern society. Those occasions when our trusting nature gets violated are tragic. But the alternative---to abandon trust as a defense against predation and deception---is worse.
