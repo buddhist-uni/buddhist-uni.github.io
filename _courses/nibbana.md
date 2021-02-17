@@ -123,6 +123,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="an8.5" %}
   - How does an arahant relate to the world?
 
+{% include content_blurb.html category="article" slug="anuruddha-sutta_ireland" %}
+  - To an enlightened being, even sensual pleasures are seen as painful for how fleeting they are indeed!
+
 #### To Be or Not to Be
 
 {% include content_blurb.html category="canon" slug="snp5.4" %}

@@ -1,4 +1,5 @@
 #!/bin/bash
+# Ensures all html and md files are in NFC Normalized Unicode (as our chosen font, Garamond, cannot handle combining characters)
 for file in `git ls-tree --name-only --full-tree -r HEAD`; do
     if [[ $file == *.html ]] || [[ $file == *.md ]]
     then
