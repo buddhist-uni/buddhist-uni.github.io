@@ -6,4 +6,4 @@ similars:
   - monographs
 ---
 
-Self published books, typically shorter (and free) compared to commercially published [monographs]({% link _categories/monographs.md %}).
+Self published, free books, often (though not always) shorter than commercial [monographs]({% link _categories/monographs.md %}).

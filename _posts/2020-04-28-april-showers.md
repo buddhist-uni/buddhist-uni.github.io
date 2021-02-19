@@ -24,7 +24,7 @@ Lots of new content has been added to fill those bibliographies, so check them o
 - [This lovely sutta (SN 35.247)]({% link _content/canon/sn35.247.md %}) which compares cognitive dissonance to six animals tied together: either with or without the "post" of mindfulness
 - And, with calamity crushing in from all sides these days, [The Mountain Simile]({% link _content/canon/sn3.25.md %}) feels more relevant than ever.
 
-And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey](https://drive.google.com/file/d/19xQJhqAuu3uoj44qfTXW_ZaD-OCfrbWl/view?usp=drivesdk) which has been added to [Buddhism]({% link _tags/buddhism.md %}) and [the Early Buddhist Texts]({% link _tags/ebts.md %}).
+And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey]({% link _content/av/studying-buddhist-scripture_hallisey-charles.md %}) which has been added to [Buddhism]({% link _tags/buddhism.md %}) and [the Early Buddhist Texts]({% link _tags/ebts.md %}).
 
 I hope you enjoy this month's arrivals and, as always, feel free to email me with any thoughts or questions you might have.
 
