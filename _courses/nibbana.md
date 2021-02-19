@@ -234,6 +234,9 @@ We finally come to the last, but perhaps most important, part of our course: the
 {% include content_blurb.html category="essays" slug="empty-citta_mahabua" %}
   - Ajahn Maha Boowa describes what it's like to be an arahant in this short talk delivered near the end of his life.
 
+{% include content_blurb.html category="articles" slug="arahant_ireland" %}
+  - A short, ecstatic poem from the SN.
+
 {% include content_blurb.html category="av" slug="after-nibbana_yuttadhammo" %}
   - "What's next?" What happens after enlightenment?
 
