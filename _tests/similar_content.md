@@ -45,7 +45,7 @@ test_cases:
 A series of integration tests for the quality of the content recommendations.
 
 {% if jekyll.environment != 'development' or site.partial_build %}
-For performance reasons, these tests are hidden from the production build. To run these tests, build the site locally with `JEKYLL_ENV=development` but without `quick_build.yml`.
+For performance reasons, these tests are hidden from the production build. To run these tests, build the site locally with `JEKYLL_ENV=development` and *without* `_quick_build.yml`.
 {% else %}
 {%- assign succs = 0 -%}
 {%- assign fails = 0 -%}

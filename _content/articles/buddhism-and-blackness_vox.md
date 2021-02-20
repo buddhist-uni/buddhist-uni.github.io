@@ -17,5 +17,5 @@ tags:
   - tnh
 ---
 
-On [Thích Nhất Hạnh]({% link _authors/tnh.md %})'s enduring legacy in African American activism.
+On [Thích Nhất Hạnh](/authors/tnh)'s enduring legacy in African American activism.
 
