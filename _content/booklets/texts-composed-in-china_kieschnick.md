@@ -5,7 +5,7 @@ authors:
 drive_links:
   - "https://drive.google.com/open?id=1qvX6phX3gsW7rDLOvosu_eHIJImAoQDk"
 file_links:
-  - "/exclusive_01/Buddhist%20Chinese%20Primer%20Volume%203%20-%20John%20Kieschnick.pdf"
+  - "exclusive_01/Buddhist%20Chinese%20Primer%20Volume%203%20-%20John%20Kieschnick.pdf"
 year: 2017
 series: buddhist-chinese-primer_kieschnick
 number: 3

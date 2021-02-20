@@ -3,7 +3,7 @@ title: "Synonyms for *Nibbāna* According to Prajñavarman, Vasubandhu and Asa�
 authors:
   - skilling
 source_url: "https://journals.equinoxpub.com/BSR/issue/view/903"
-file_links: ["/exclusive_01/Synonyms%20for%20Nibbāna%20in%20Tibetan%20-%20Peter%20Skilling.pdf"]
+file_links: ["exclusive_01/Synonyms%20for%20Nibbāna%20in%20Tibetan%20-%20Peter%20Skilling.pdf"]
 drive_links:
   - "https://drive.google.com/file/d/1K_V_GCkX7VDDmsgJtrGez6op5nCa7_pp/view?usp=drivesdk"
 course: nibbana

@@ -6,7 +6,7 @@ translator: "Sara Boin-Webb"
 source_url: "https://journal.equinoxpub.com/BSR/article/view/8795"
 alternate_url: "https://www.urbandharma.org/pdf/geth0401.pdf"
 file_links:
-  - "/exclusive_01/A%20Composite%20EA%20Sutra%20-%20Étienne%20Lamotte.pdf"
+  - "exclusive_01/A%20Composite%20EA%20Sutra%20-%20Étienne%20Lamotte.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1DBLq7Uy7gq8CbyOnfXO4OoSLzLTdmKIq/view?usp=drivesdk"
 course: ea

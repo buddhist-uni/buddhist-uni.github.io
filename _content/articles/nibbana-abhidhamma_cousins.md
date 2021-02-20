@@ -1,7 +1,7 @@
 ---
 title: "*Nibbāna* and *Abhidhamma*"
 authors: [cousins]
-file_links: ["/exclusive_01/Nibbāna%20and%20Abhidhamma%20-%20L%20S%20Cousins.pdf"]
+file_links: ["exclusive_01/Nibbāna%20and%20Abhidhamma%20-%20L%20S%20Cousins.pdf"]
 drive_links: ["https://drive.google.com/file/d/1TpIkFi0R3nqmAF2LPivDkC86blCpbLe3/view?usp=drivesdk"]
 source_url: "https://journals.equinoxpub.com/BSR/issue/view/887"
 year: 1983
