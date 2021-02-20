@@ -3,7 +3,7 @@ title: "Heartwood of the Bodhi Tree: The Buddha's Teaching on Voidness"
 authors: [buddhadasa]
 year: 1985
 formats: [epub]
-file_links: ["/exclusive_01/Heartwood%20of%20the%20Bodhi%20Tree%20-%20Bhikkhu%20Buddhadasa.epub"]
+file_links: ["exclusive_01/Heartwood%20of%20the%20Bodhi%20Tree%20-%20Bhikkhu%20Buddhadasa.epub"]
 drive_links: ["https://drive.google.com/file/d/1Ahq-eIJnKscBm5srYZmEZA1tJZjT_Q27/view?usp=drivesdk"]
 publisher: "The Suan Usom Foundation"
 status: featured
