@@ -10,4 +10,4 @@ tags:
   - monastic-theravada
 ---
 
-An easy-to-use summary of the information in [BMC 1]({% link _content/booklets/bmc_geoff.md %}) which serves as a practical vinaya reference for Theravada monks.
+An easy-to-use summary of the information in [BMC 1](/content/booklets/bmc_geoff) which serves as a practical vinaya reference for Theravada monks.
