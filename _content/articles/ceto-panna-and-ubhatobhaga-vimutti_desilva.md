@@ -5,7 +5,7 @@ authors:
 drive_links:
   - "https://drive.google.com/file/d/1oDnkThaDQuwiV8iN2wpDgdKX6K4ywxyP/view?usp=drivesdk"
 source_url: "https://ukabs.org.uk/wp-content/uploads/2016/06/PBR-3.3-1978.pdf"
-file_links: ["/exclusive_01/Types%20of%20Vimutti%20-%20Lily%20DeSilva.pdf"]
+file_links: ["exclusive_01/Types%20of%20Vimutti%20-%20Lily%20DeSilva.pdf"]
 course: path
 tags:
   - nibbana

@@ -4,7 +4,7 @@ authors:
   - gethin
 source_url: "http://www.palitext.com/JPTS_scans/JPTS_28_2006.pdf"
 file_links:
-  - "/exclusive_01/Mythology%20as%20Meditation%20-%20Rupert%20Gethin.pdf"
+  - "exclusive_01/Mythology%20as%20Meditation%20-%20Rupert%20Gethin.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1hkMSzN4_Qbsa4oy7sGnvNobfeaPcXLYb/view?usp=drivesdk"
 course: imagery

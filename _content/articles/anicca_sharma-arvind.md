@@ -4,7 +4,7 @@ authors:
   - "Arvind Sharma"
 source_url: "https://journals.equinoxpub.com/BSR/issue/view/880"
 file_links:
-  - "/exclusive_01/Anicca%20(1979)%20-%20Arvind%20Sharma.pdf"
+  - "exclusive_01/Anicca%20(1979)%20-%20Arvind%20Sharma.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1X8i-LMEaC0_zlskV-MM8SYHNHaUDdWz7/view?usp=drivesdk"
 course: philosophy

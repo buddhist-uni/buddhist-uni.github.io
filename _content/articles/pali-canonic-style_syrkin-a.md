@@ -4,7 +4,7 @@ authors:
   - syrkin-a
 source_url: "https://ukabs.org.uk/wp-content/uploads/2016/06/PBR-6.2-1981-2-pt-1.pdf"
 file_links:
-  - "/exclusive_01/Notes%20on%20Pāli%20Canonic%20Style%20-%20A%20Syrkin.pdf"
+  - "exclusive_01/Notes%20on%20Pāli%20Canonic%20Style%20-%20A%20Syrkin.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Gb9gd7bjxt6yx0ndhZvD1_s0855FRza6/view?usp=drivesdk"
 course: dn
