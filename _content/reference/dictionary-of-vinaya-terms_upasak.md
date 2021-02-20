@@ -13,6 +13,7 @@ address: "Varanasi"
 course: vinaya-pitaka
 tags:
   - pali-dictionaries
+  - vinaya-studies
 ---
 
 A dictionary of the Pāli vocabulary found in the *Vinaya Piṭaka*.

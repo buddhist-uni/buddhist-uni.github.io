@@ -9,6 +9,7 @@ drive_links:
 course: monastic
 tags:
   - navakovada
+  - vinaya-studies
 year: 2008
 ---
 
