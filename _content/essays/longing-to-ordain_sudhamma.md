@@ -2,7 +2,7 @@
 title: "Longing to Ordain"
 authors:
   - sudhamma
-source_url: "https://www.bhikkhuni.net/longing-to-ordain/"
+external_url: "https://www.bhikkhuni.net/longing-to-ordain/"
 drive_links:
   - "https://drive.google.com/file/d/1kJjuwdl2X3fhTlZBeGZHDJuHiPb6y_zd/view?usp=drivesdk"
 course: pilgrimage
