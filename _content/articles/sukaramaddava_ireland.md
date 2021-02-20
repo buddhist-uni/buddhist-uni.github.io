@@ -4,7 +4,7 @@ authors:
   - ireland
 source_url: "https://journal.equinoxpub.com/BSR/article/view/15236"
 file_links:
-  - "/exclusive_01/The%20Buddhas%20Last%20Meal%20-%20John%20Ireland.pdf"
+  - "exclusive_01/The%20Buddhas%20Last%20Meal%20-%20John%20Ireland.pdf"
 drive_links:
   - "https://drive.google.com/file/d/14r4pC26Fh7A-u64m34A5yIzyrjbi8s9x/view?usp=drivesdk"
 course: buddha

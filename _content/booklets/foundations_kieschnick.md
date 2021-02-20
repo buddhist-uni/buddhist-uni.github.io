@@ -5,7 +5,7 @@ authors:
   - "Simon Wiles"
 external_url: "http://www.primerbuddhism.org/volume1.html"
 file_links:
-  - "/exclusive_01/Buddhist%20Chinese%20Primer%20Volume%201%20-%20John%20Kieschnick.pdf"
+  - "exclusive_01/Buddhist%20Chinese%20Primer%20Volume%201%20-%20John%20Kieschnick.pdf"
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1JQX2CxjPeKpXUDF6UCDJup8_VFVHLPAi/view?usp=drivesdk"
