@@ -5,11 +5,13 @@ authors:
 year: 2017
 month: nov
 publisher: "Little, Brown"
-course: economics
+course: society
 tags:
+  - economics
   - labor
   - economic-growth
   - sustainability
+  - activism
   - colonialism
   - capitalism
   - millennials
@@ -17,7 +19,6 @@ tags:
   - education
   - hr
   - time
-  - society
   - power
 status: featured
 ---
