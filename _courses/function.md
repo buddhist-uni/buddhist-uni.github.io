@@ -95,6 +95,8 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 {% include content_box.html category="essays" slug="generosity-first_geoff" %}
 
+{% include content_box.html category="av" slug="enlightenment-is-the-highest-happiness_brahm" %}
+
 (And then "attend" lecture number 2 here.)
 
 ##### Homework for Chapter 3
