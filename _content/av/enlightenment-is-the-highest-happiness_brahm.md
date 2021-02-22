@@ -5,9 +5,9 @@ drive_links: ["https://drive.google.com/file/d/1THn-e8xIUN8YZS9eEU-ihkxsdqljkEN8
 authors: [brahm]
 year: 2002
 month: jul
-course: buddhism
+course: function
 tags:
-  - function
+  - buddhism
   - karma
   - lay
 ---

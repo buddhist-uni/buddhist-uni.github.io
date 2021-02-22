@@ -77,11 +77,11 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 The next part of the class tackles the Buddha's teachings. As this section is the primary focus of the course, it will be the longest.
 
-{% include content_box.html category="av" slug="enlightenment-is-the-highest-happiness_brahm" %}
-
 {% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
 
 The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of these celebrated Buddhist teachers.
+
+{% include content_box.html category="av" slug="how-to-be-positive_brahm" %}
 
 #### Alternative Presentations of the Dhamma
 
