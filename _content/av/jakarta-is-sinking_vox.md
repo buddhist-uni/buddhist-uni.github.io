@@ -1,6 +1,5 @@
 ---
 title: "Why Jakarta is Sinking"
-authors: ["Vox"]
 external_url: "https://youtu.be/Z9cJQN6lw3w"
 year: 2021
 journal: vox
