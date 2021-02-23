@@ -8,7 +8,7 @@ In particular, I'd like to highlight [this free anthology of Bhikkhu Bodhi's Maj
 
 I'd also like to highlight a few beautiful poems which I've added to the library this month:
 
-{% assign cslugs = "someday-ill-love-ocean-vuong,you-can-have-it_levine-philip,what-work-is_levine-philip,ud1.10_sdoe" | split: ',' %}
+{% assign cslugs = "someday-ill-love-ocean_vuong,you-can-have-it_levine-philip,what-work-is_levine-philip,ud1.10_sdoe" | split: ',' %}
 {% assign content = site.content | where_exp: "c", "cslugs contains c.slug" %}
 <div class="narrow">{% include content_list.html contents=content %}</div>
 
