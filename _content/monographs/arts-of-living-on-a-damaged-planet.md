@@ -3,12 +3,13 @@ title: "Arts of Living on a Damaged Planet"
 editor: "Elaine Gan and Anna Tsing and Heather Swanson and Nils Bubandt"
 year: 2017
 publisher: "The University of Minnesota Press"
-course: world
+course: science
 tags:
   - natural-sciences
   - biology
   - climate-change
   - anthropocene
+  - world
 ---
 
 > "Anthropocene" is the proposed name for a geologic epoch in which humans have become the major force determining the continuing livability of the earth. The word tells a big story: living arrangements that took millions of years to put into place are being undone in the blink of an eye. The hubris of conquerors and corporations makes it uncertain what we can bequeath to our next generations, human and not human.
