@@ -2,8 +2,6 @@
 title: Behind the Scenes
 ---
 
-[![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)
-
 > Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
 > Without achieving any success in meditation,  
 > He has instead compiled these treatises  
@@ -44,7 +42,9 @@ While some Buddhist countries (i.e., Thailand) have official curricula for teach
 
 # The Source Code
 
-You can think of each of the folders in [the main folder](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master) as representing individual object types. Each is a different "table" in the hardcoded "database."
+This is a static HTML website built with [Jekyll](https://jekyllrb.com/) and served by [GitHub Pages](https://pages.github.com/).
+
+You can think of each of the `_folders` in [the source code](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master) as representing individual object types. Each folder is a different "table" in the hardcoded "database."
 
 - [_authors](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_authors) - Each author with their own page.
 - [_content](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_content) - All of the individual works in the library, divided by `category` based on the type. Each content item has a number of [metadata fields](https://jekyllrb.com/docs/front-matter/) listing its bibliographic information (e.g. `pages`) in Bibtex format, or linking the entry out to its file (e.g. `external_url`) or linking it to its internal groups (e.g. `authors`). Conventionally, I put raw strings in `"Quotes"` and I represent links to other objects as `unquoted-slugs`. The templates then use these slugs to fetch the related objects at page render time.
@@ -62,13 +62,13 @@ You can think of each of the folders in [the main folder](https://github.com/bud
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
 - [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
-To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/) `build`" keeping in mind that the buil will take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build. Once the site is built, extract [this archive](https://github.com/buddhist-uni/exclusive_01/archive/main.zip) into the `_site` directory, and then run `bundle run jekyll serve --skip-initial-build` to start serving the site locally at `localhost:4000`
+To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/docs/installation/) `build`" keeping in mind that the build may take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build. Once the site is built, run `bundle run jekyll serve --skip-initial-build` to start serving the site locally at `localhost:4000`
 
-For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/).  For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
+For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).  For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
 
 # Contributions
 
-The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a variety of ways.  The code here is released under an MIT Licence, so feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please feel free to message me or simply fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a variety of ways.  The code here is released under the [MIT Licence](https://mit-license.org/), so feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please feel free to message me or fork the repository and open a pull request!  
 
 # Future Directions
 
@@ -90,3 +90,4 @@ A big thank you to [the content sources](https://www.buddhistuniversity.net/sour
 
 To all my teachers---past, present and future. Especially you.
 
+[![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)

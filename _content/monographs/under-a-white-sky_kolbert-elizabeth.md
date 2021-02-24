@@ -25,4 +25,4 @@ By zooming in on tiny fish and out to the entire stratosphere, it beautifully ca
 
 The book also makes a strong case for being sceptical that we even can engineer our way out of climate change. While it nods to the "but what other choice do we have" counterargument, I hope that readers come away from this tension in the book more confident than ever in our need for decarbonization and that they don't leap to even worse ideas than those highlighted in the book: such as fatalism, or [worse, population control](https://www.vox.com/energy-and-environment/2017/9/26/16356524/the-population-question){:target="_blank"}.
 
-> Pissing in your pants will only keep you warm for so long.
+> Pissing your pants will only keep you warm for so long.
