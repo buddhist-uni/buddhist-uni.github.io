@@ -14,4 +14,4 @@ month: jul
 publisher: nbn
 ---
 
-An excellent walk-through of the classical Indian philosophies of language: from the Sanskrit grammars of Pini and Patanjali, to Brahmanical realism, Buddhist scepticism, and Jain agnosticism.
+An excellent walk-through of the classical Indian philosophies of language: from the Sanskrit grammars of Panini and Patanjali, to Brahmanical realism, Buddhist scepticism, and Jain agnosticism.

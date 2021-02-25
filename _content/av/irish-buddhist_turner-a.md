@@ -18,4 +18,4 @@ tags:
   - engaged
 ---
 
-The story of an itinerant, Irish laborer who ordains as a Buddhist monk in 1901 in British Burma and who campaigns tirelessly against colonialism.
+The story of an itinerant, Irish laborer who ordains as a Buddhist monk in 1901 in British Burma and then campaigns tirelessly against colonialism.

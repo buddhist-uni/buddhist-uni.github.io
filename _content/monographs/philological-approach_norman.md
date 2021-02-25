@@ -5,14 +5,13 @@ authors:
 year: 1997
 publisher: SOAS
 address: London
-course: pali-canon
+course: pali-language
 tags:
-  - pali-language
   - historiography
   - setting
   - indian
   - sanskrit
-  - ebts
+  - pali-canon
   - philology
   - hermeneutics
 drive_links: ["https://drive.google.com/file/d/1IEQDhBrks2V_XLdXX-j9i83TgKBAcZ6r/view?usp=drivesdk"]
