@@ -10,6 +10,8 @@ tags:
   - globalization
   - sea
 publisher: nbn
+year: 2021
+month: jan
 ---
 
 On the wisdom of traditional agriculture and the ongoing tragedy of displacement in the Cambodian Highlands.
