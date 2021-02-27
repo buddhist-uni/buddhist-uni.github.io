@@ -3,6 +3,8 @@ title: "The Book of the Discipline"
 authors:
   - horner
 course: vinaya-pitaka
+tags:
+  - vinaya-studies
 year: 1938
 slug: "pli-tv"
 publisher: pts
