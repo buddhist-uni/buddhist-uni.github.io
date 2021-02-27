@@ -14,6 +14,7 @@ tags:
   - samatha
   - daily-life
   - iddhi
+  - jhana
 ---
 
 > There is a way of developing immersion further
