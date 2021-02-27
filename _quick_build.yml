@@ -16,6 +16,19 @@ exclude:
     - vendor/ruby/
     - scripts/
     - content.bib
+    - _authors/chiu-angela.md
+    - _authors/dhammika.md
+    - _authors/diamond-jared.md
+    - _authors/gomtsul.md
+    - _authors/huxley-a.md
+    - _authors/iwamura-jane.md
+    - _authors/khema.md
+    - _authors/lew-karl.md
+    - _authors/norman.md
+    - _authors/shi-zhiru.md
+    - _authors/sontag.md
+    - _authors/sudhamma.md
+    - _authors/suzuki-s.md
     - _authors/bjornerud.md
     - _authors/chandako.md
     - _authors/dalai-lama.md
@@ -24,12 +37,109 @@ exclude:
     - _authors/ichimura-s.md
     - _authors/kearney-patrick.md
     - _authors/keeler-ward.md
-    - _authors/kieschnick.md
     - _authors/king-winston.md
     - _authors/menzel-peter.md
     - _authors/mipham.md
     - _authors/popova.md
     - _authors/singer-peter.md
+    - _content/articles/bill-gates-tweeted_matthews-dylan.md
+    - _content/articles/buddhism-and-blackness_vox.md
+    - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
+    - _content/articles/four-eminent-monks-and-their-syncretistic-style_chu-william.md
+    - _content/articles/genetics-biosocial-groups-and-identity_hacking-ian.md
+    - _content/articles/historical-authenticity_wynne.md
+    - _content/articles/hoary-past-hazy-memory_hinuber-oskar-v.md
+    - _content/articles/illness-as-metaphor_sontag.md
+    - _content/articles/innovation-and-conservation-in-treasure_mayer-rob.md
+    - _content/articles/nighttime-and-refugees_jolliffe-pia.md
+    - _content/articles/revolutionary-thoreau_lossin-rh.md
+    - _content/articles/temple-looting-in-cambodia_mackenzie-davis.md
+    - _content/articles/the-upside-offensive_dorwart-jason.md
+    - _content/av/activism-and-empathy_courtin.md
+    - _content/av/ancient-path-to-enlightenment_dabei.md
+    - _content/av/buddha-in-lanna_chiu-angela.md
+    - _content/av/buddhism-and-education_jayasaro.md
+    - _content/av/buddhist-education_jayasaro.md
+    - _content/av/burden-of-proof_gladwell-m.md
+    - _content/av/carlos_gladwell-m.md
+    - _content/av/catch-sight-of-now_graham-jorie.md
+    - _content/av/disturbed-forests_padwe-j.md
+    - _content/av/educating-monks_borchert-t.md
+    - _content/av/framing_jayasaro.md
+    - _content/av/generous-orthodoxy_gladwell-m.md
+    - _content/av/good-life-good-death_jayasaro.md
+    - _content/av/houdini_foster-the-people.md
+    - _content/av/how-i-think-about-love_gopnik-klein.md
+    - _content/av/illusions-of-time_vsauce.md
+    - _content/av/impermanence_khema.md
+    - _content/av/irish-buddhist_turner-a.md
+    - _content/av/jakarta-is-sinking_vox.md
+    - _content/av/lives-of-early-buddhist-nuns_collett-alice.md
+    - _content/av/sabda_bronkhorst.md
+    - _content/av/the-straight-line-is-a-godless-line_99pi.md
+    - _content/av/what-i-learned_klein-ezra.md
+    - _content/av/when-doing-the-right-thing-makes-you-a-criminal_hsiung-wayne.md
+    - _content/booklets/broken-buddha_dhammika.md
+    - _content/booklets/buddhist-romanticism_geoff.md
+    - _content/booklets/heartwood-of-the-bodhi-tree_buddhadasa.md
+    - _content/booklets/karma-vibanga_anandajoti.md
+    - _content/booklets/ratthapala-sutta_nyanamoli.md
+    - _content/canon/an10.93.md
+    - _content/canon/an3.76.md
+    - _content/canon/an5.161.md
+    - _content/canon/an5.180.md
+    - _content/canon/an5.191.md
+    - _content/canon/an8.6.md
+    - _content/canon/mn14.md
+    - _content/canon/mn19.md
+    - _content/canon/mn20.md
+    - _content/canon/mn21.md
+    - _content/canon/mn32.md
+    - _content/canon/mn33.md
+    - _content/canon/mn57.md
+    - _content/canon/mn90.md
+    - _content/canon/sn1.11.md
+    - _content/canon/sn1.20.md
+    - _content/canon/sn12.40.md
+    - _content/canon/sn22.36.md
+    - _content/canon/sn22.57.md
+    - _content/canon/sn22.95_garm.md
+    - _content/canon/sn3.25.md
+    - _content/canon/sn3.7.md
+    - _content/canon/sn35.88.md
+    - _content/canon/sn36.21.md
+    - _content/canon/sn42.13.md
+    - _content/canon/sn47.6.md
+    - _content/canon/snp4.2.md
+    - _content/canon/thag3.5.md
+    - _content/canon/thig12.1.md
+    - _content/canon/ud4.4.md
+    - _content/canon/ud4.5.md
+    - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
+    - _content/essays/from-the-oral-tradition_nyarong-terton.md
+    - _content/essays/great-perfection_chokyi-lodro.md
+    - _content/essays/local-food_debres.md
+    - _content/essays/longing-to-ordain_sudhamma.md
+    - _content/essays/pastness-of-the-present_taruskin.md
+    - _content/essays/son_lerner-ben.md
+    - _content/excerpts/responses-to-state-control_shi-zhiru.md
+    - _content/monographs/arts-of-living-on-a-damaged-planet.md
+    - _content/monographs/ends-and-means_huxley-a.md
+    - _content/monographs/great-disciples_hecker-nyanaponika.md
+    - _content/monographs/how-to-fight_tnh.md
+    - _content/monographs/no-one-belongs-here-more-than-you_july-miranda.md
+    - _content/monographs/on-beauty-and-being-just_scarry-elaine.md
+    - _content/monographs/philological-approach_norman.md
+    - _content/monographs/short-history-of-nearly-everything_bryson-bill.md
+    - _content/monographs/virtual-orientalism_iwamura-jane.md
+    - _content/monographs/walking-the-noble-path_tnh.md
+    - _content/monographs/what-every-body-is-saying_navarro-joe.md
+    - _content/monographs/why-fish-dont-exist_miller-lulu.md
+    - _content/monographs/world-until-yesterday_diamond-jared.md
+    - _content/monographs/zen-mind-beginners-mind_suzuki-s.md
+    - _content/reference/buddhisim-art_bob1988.md
+    - _content/reference/sutta-central-voice.md
+    - _content/reference/sutta-central.md
     - _content/articles/bodhisattva-masculinity-on-death-row_cunnell-h.md
     - _content/articles/buddhas-sons_snow-elson.md
     - _content/articles/buddhist-hybrid-english_griffiths-paul.md
@@ -76,16 +186,13 @@ exclude:
     - _content/av/why-chant_brahm.md
     - _content/booklets/buddhas-meditation-discourses.md
     - _content/booklets/faith-in-mind_sheng-yen.md
-    - _content/booklets/foundations_kieschnick.md
     - _content/booklets/how-to-fight_tnh.md
-    - _content/booklets/indian-tradition_kieschnick.md
     - _content/booklets/kammatthana_mahabua.md
     - _content/booklets/meditations-4_geoff.md
     - _content/booklets/pali-primer_desilva.md
     - _content/booklets/power_may-todd.md
     - _content/booklets/small-boat-great-mountain_amaro.md
     - _content/booklets/sn-anthology_nyanananda.md
-    - _content/booklets/texts-composed-in-china_kieschnick.md
     - _content/booklets/walking-the-noble-path_tnh.md
     - _content/canon/an10.177.md
     - _content/canon/an10.58.md
@@ -185,18 +292,13 @@ exclude:
     - _content/reference/agama-translations_bingenheimer.md
     - _content/reference/ati.md
     - _content/reference/buddhadust.md
-    - _content/reference/chinese-grammar_ctcfl.md
-    - _content/reference/chineseskill.md
     - _content/reference/comparative-dhp_anandajoti.md
     - _content/reference/dpr.md
-    - _content/reference/drops.md
     - _content/reference/gboard-dict.md
     - _content/reference/handful-of-leaves_geoff.md
     - _content/reference/one-up-discourses.md
     - _content/reference/pali-linux-keybindings.md
     - _content/reference/pali-script-converter.md
-    - _content/reference/pleco.md
     - _content/reference/ticivara.md
     - _content/reference/tipitaka.md
-    - _content/reference/trainchinese.md
 
