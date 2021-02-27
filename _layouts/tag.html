@@ -41,13 +41,6 @@ layout: default
         {% assign children = children | push: clink %}
     {% endif %}
 {% endfor %}
-{% if children.size > 0 %}
-{% capture subtopics %}<div class="subtopics">Subtopic{% if children.size > 1 %}s{% endif %}: {% if children.size <= 1 %}{{ children | first }}{% else %}<ul>
-{% for child in children %}
-    <li>{{ child }}</li>
-{% endfor %}</ul>{% endif %}
-</div>{% endcapture %}{{ subtopics }}
-{% endif %}
   </header>
 
   <div class="post-content">
@@ -78,12 +71,19 @@ layout: default
   </div>
   {% endif %}<p class="back"><a href="#top"><em>Back to the top</em>&#x2934;</a></p>{% endif %}
 {% endfor %}
+
+{% if children.size > 0 %}
+<div class="subtopics"><h3 id="children">Subtopics ({{ children.size }})</h3>
+<ul>{% for child in children %}
+    <li>{{ child }}</li>
+{% endfor %}</ul>
+</div>
+{% endif %}
 {% endcapture %}
    <h2 id="top" class="toc_header">Table of Contents</h2>
     {% include toc.html html=content_list h_min=3 h_max=3 id="toc" class="tag_toc" %}
     {{ content_list }}
   </div>
-{{ subtopics }}
 
 {{ backlink }}
 </article>
