@@ -6,6 +6,7 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 drive_links:
   - "https://drive.google.com/file/d/1zhvqgLQOZPrPy8LPzuY1Cix_Wd0L-FER/view?usp=drivesdk"
 course: vinaya-studies
+status: featured
 tags:
   - vinaya-pitaka
 year: 2012
