@@ -304,7 +304,7 @@ Speaking of uncomfortable!
 - What _is_ gender, really?  And how can people feel entitled to change it?
 
 {% include content_blurb.html category="booklets" slug="buddhism-and-sex_walshe" %}
-- A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy]({% link _content/av/generous-orthodoxy_gladwell-m.md %}).
+- A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy](http://revisionisthistory.com/episodes/09-generous-orthodoxy){:target="_blank" ga-event-value="0.3"}.
 
 ### Conclusion
 
