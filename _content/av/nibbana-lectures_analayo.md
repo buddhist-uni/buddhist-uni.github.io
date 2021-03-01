@@ -8,6 +8,7 @@ source_url: "https://seeingthroughthenet.net/wp-content/uploads/2018/03/Mind-Sti
 drive_links:
  - "https://drive.google.com/drive/folders/1ZRb1KbPTFmWELHeddGURT3y4Sbe3sgEO"
 formats: [MP3s]
+base_value: 0.8
 course: nibbana-mind-stilled
 tags:
   - nibbana
