@@ -3,8 +3,8 @@ title: SuttaCentral
 authors: [sujato]
 external_url: "https://suttacentral.net"
 status: featured
+course: ebts
 tags:
-  - ebts
   - agama
   - sutta
 ---

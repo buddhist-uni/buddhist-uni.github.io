@@ -19,10 +19,10 @@ Lots of new content has been added to fill those bibliographies, so check them o
 - Ajahn Geoff writing about the unconditional [purity of heart]({% link _content/essays/purity-of-heart_geoff.md %})
 - Ajahn Sujato defending both the bardo and comparative studies in [this compelling paper]({% link _content/essays/rebirth-and-the-inbetween_sujato.md %})
 - Sir Edward Dyer [rejoicing in his virtue](https://www.bartleby.com/40/51.html){:target="_blank" ga-event-value="0.2"}
-- Lawrence Mills' translation of [Snp 4.2]({% link _content/canon/snp4.2.md %})
+- Lawrence Mills' translation of [Snp 4.2](/content/canon/snp4.2)
 - [SN 1.71]({% link _content/canon/sn1.71.md %}), which answers the question of when the Buddha would approve of murder!
 - [This lovely sutta (SN 35.247)]({% link _content/canon/sn35.247.md %}) which compares cognitive dissonance to six animals tied together: either with or without the "post" of mindfulness
-- And, with calamity crushing in from all sides these days, [The Mountain Simile]({% link _content/canon/sn3.25.md %}) feels more relevant than ever.
+- And, with calamity crushing in from all sides these days, [The Mountain Simile](/content/canon/sn3.25) feels more relevant than ever.
 
 And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey]({% link _content/av/studying-buddhist-scripture_hallisey-charles.md %}) which has been added to [Buddhism]({% link _tags/buddhism.md %}) and [the Early Buddhist Texts]({% link _tags/ebts.md %}).
 

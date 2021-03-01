@@ -50,7 +50,6 @@ exclude:
     - _content/articles/historical-authenticity_wynne.md
     - _content/articles/hoary-past-hazy-memory_hinuber-oskar-v.md
     - _content/articles/illness-as-metaphor_sontag.md
-    - _content/articles/innovation-and-conservation-in-treasure_mayer-rob.md
     - _content/articles/nighttime-and-refugees_jolliffe-pia.md
     - _content/articles/revolutionary-thoreau_lossin-rh.md
     - _content/articles/temple-looting-in-cambodia_mackenzie-davis.md
@@ -62,7 +61,6 @@ exclude:
     - _content/av/buddhist-education_jayasaro.md
     - _content/av/burden-of-proof_gladwell-m.md
     - _content/av/carlos_gladwell-m.md
-    - _content/av/catch-sight-of-now_graham-jorie.md
     - _content/av/disturbed-forests_padwe-j.md
     - _content/av/educating-monks_borchert-t.md
     - _content/av/framing_jayasaro.md
@@ -98,19 +96,19 @@ exclude:
     - _content/canon/mn33.md
     - _content/canon/mn57.md
     - _content/canon/mn90.md
+    - _content/canon/sn3.25.md
+    - _content/canon/snp4.2.md
     - _content/canon/sn1.11.md
     - _content/canon/sn1.20.md
     - _content/canon/sn12.40.md
     - _content/canon/sn22.36.md
     - _content/canon/sn22.57.md
     - _content/canon/sn22.95_garm.md
-    - _content/canon/sn3.25.md
     - _content/canon/sn3.7.md
     - _content/canon/sn35.88.md
     - _content/canon/sn36.21.md
     - _content/canon/sn42.13.md
     - _content/canon/sn47.6.md
-    - _content/canon/snp4.2.md
     - _content/canon/thag3.5.md
     - _content/canon/thig12.1.md
     - _content/canon/ud4.4.md
@@ -118,7 +116,6 @@ exclude:
     - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
     - _content/essays/from-the-oral-tradition_nyarong-terton.md
     - _content/essays/great-perfection_chokyi-lodro.md
-    - _content/essays/local-food_debres.md
     - _content/essays/longing-to-ordain_sudhamma.md
     - _content/essays/pastness-of-the-present_taruskin.md
     - _content/essays/son_lerner-ben.md
@@ -139,7 +136,6 @@ exclude:
     - _content/monographs/zen-mind-beginners-mind_suzuki-s.md
     - _content/reference/buddhisim-art_bob1988.md
     - _content/reference/sutta-central-voice.md
-    - _content/reference/sutta-central.md
     - _content/articles/bodhisattva-masculinity-on-death-row_cunnell-h.md
     - _content/articles/buddhas-sons_snow-elson.md
     - _content/articles/buddhist-hybrid-english_griffiths-paul.md
