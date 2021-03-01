@@ -12,6 +12,7 @@ status: featured
 tags:
   - theravada
   - abhidhamma
+base_value: 1
 year: 1981
 ---
 
