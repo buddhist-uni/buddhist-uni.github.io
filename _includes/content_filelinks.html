@@ -3,7 +3,7 @@
 <div class="content_links">
     {% assign value = include.content.base_value %}{% if include.content.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
      {% if include.content.external_url %}
-        <a class="btn" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ include.content.external_url }}"><i class="fa{% if include.content.external_url contains "youtu" %}b fa-youtube"></i> YouTube{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".pdf" %}file-pdf"></i> pdf{% else %}{% if ext == ".mp3" %}volume-up{% else %}globe{% endif %}"></i> Online{% endif %}{% endif %}</a>
+        <a class="btn" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ include.content.external_url }}"><i class="fa{% if include.content.external_url contains "youtu" %}b fa-youtube"></i> YouTube{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".pdf" %}file-pdf"></i> pdf{% elsif ext == ".mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}file-archive"></i> zip{% else %}{% case include.content.category %}{% when "av" %}volume-up{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}</a>
     {% endif %}
     {% if include.content.file_links.size > 0 %}
         {% for link in include.content.file_links %}
@@ -26,7 +26,7 @@
     {%- endunless -%}
     {%- if include.content.excerpt_url -%}
         {%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}
-        <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" ga-event-value="{{ value | divided_by: 2 }}" data-content-path="{{ content_path }}" ga-event-label="{{ include.content.excerpt_url }}"><i class="fas fa-book-reader"></i> Selection</a>
+        <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" ga-event-value="{{ value | divided_by: 2 }}" data-content-path="{{ content_path }}" ga-event-label="{{ include.content.excerpt_url }}"><i class="fas fa-book-reader"></i> Preview</a>
     {%- endif -%}
     {%- if showworldcat -%}
         {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}

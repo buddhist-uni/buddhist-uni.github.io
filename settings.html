@@ -9,18 +9,7 @@ table { font-family: system-ui, sans; }
 
 <h3>Usage Statistics</h3>
 <p>This site uses Google Analytics to get anonymous usage data which we use to improve the site and to feel good about what we've built. It means a lot to us that you come here and we love to see you here.</p>
-<p id="js-off">But you have Javascript disabled, and so we cannot track your usage at all.</p>
-<div style="display:none;" id="dnt">
-<h4>Do Not Track</h4>
-<p>This website participates in the Future Of Privacy Forum's "<a target="_blank" href="https://allaboutdnt.com/">Do Not Track</a>" initiative by respecting your browser's DNT Setting.</p>
-<table><tbody>
-  <tr>
-    <td style="display: none;" id="dnt-on"><i class="fas fa-user-times"></i> Your DNT Setting is currently <strong style="color: indianred;">on</strong> and your use of participating DNT websites is invisible.</td>
-    <td style="display: none;" id="dnt-off"><i class="fas fa-user-check"></i> Your DNT Setting is currently <strong style="color: indianred;">off</strong> and your use of participating DNT websites is visible.</td>
-    <td>To learn how to toggle this setting, <a href="https://allaboutdnt.com/#adjust-settings">visit the DNT website</a>.</td>
-  </tr>
-</tbody></table>
-</div>
+<p id="js-off">But you have Javascript disabled, so we cannot track your usage.</p>
 
 <div id="incog" style="display: none;">
 <h4>Incognito Mode</h4>
@@ -43,13 +32,10 @@ if (localStorage.getItem('TRACK') == "1") {
     document.getElementById('incog-toggle').innerHTML = "Opt Back In";
     document.getElementById('incog-on').style="";
   } else {
-  document.getElementById('dnt').style="";
   if (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1") {
-    document.getElementById("dnt-on").style = "";
     document.getElementById('incog-toggle').innerHTML = "Opt In To Tracking";
     document.getElementById('incog-on').style="";
   } else {
-    document.getElementById("dnt-off").style = "";
     document.getElementById('incog-off').style="";
 }}}
 </script>
