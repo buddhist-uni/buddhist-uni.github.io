@@ -67,7 +67,7 @@ Our "wet" textbook is the Sanskrit classic:
 
 {% include content_box.html category="essays" slug="what-work-is_levine-philip" %}
 
-We start the course with this poem by American poet Philip Levine. Go ahead and read it now. Think about that last line. What _is_ work?
+We start the course with this poem by American poet Philip Levine. Go ahead and click the link above now to read the poem. Think about its last line. What _is_ work?
 
 Hopefully this course will help you answer that question.
 
