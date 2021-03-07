@@ -36,6 +36,7 @@ header.site-header {
         }
         span {
             vertical-align: middle;
+            display: inline-block;
         }
         @include media-query($on-palm) {
             margin: 0px 0px -12px 0px;
@@ -150,6 +151,12 @@ figure figcaption {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 345px) {
+    .banner-img .wrapper {
+        text-shadow: 0 0 3px grey;
+    }
 }
 
 details.banner-info {
@@ -356,6 +363,7 @@ article.course .post-header p {
 }
 
 header.post-header.overlay-into-banner {
+    text-shadow: 0 0 8px black;
     margin-top: -250px;
     left: 50%;
     position: absolute;
