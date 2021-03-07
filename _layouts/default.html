@@ -51,16 +51,17 @@
     <script async src="/assets/js/autotrack.js"></script>
   {%- endif -%}{% if page.banner_info %}
   <style>
-    .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}"), linear-gradient(177deg, #1d1e2c, #c69c6c); }
-    @media(max-width: 720px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?cw=960px&cx=center"), linear-gradient(177deg, #1d1e2c, #c69c6c); }
+    .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?blur=1"), linear-gradient(lightgray, lightgray); }
+    @media(max-width: 720px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?cw=960px&cx=center&blur=1"), linear-gradient(lightgray, lightgray); } }
+    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: 1.5 }}px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.big_image }}"), url("{{ page.image }}?blur=1"), linear-gradient(lightgray, lightgray); } }{% endif %}
   </style>
   {% endif %}
 </head>
 
   <body>
 
-<header class="site-header" role="banner">
-  <div class="wrapper {% if page.banner_info %}banner-img{% endif %}">
+<header class="site-header{% if page.banner_info %} banner-img{% endif %}" role="banner">
+  <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
       <nav class="site-nav-links">
           {%- for path in site.header_pages -%}
