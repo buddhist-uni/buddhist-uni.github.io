@@ -42,6 +42,7 @@ exclude:
     - _authors/mipham.md
     - _authors/popova.md
     - _authors/singer-peter.md
+      _content/articles/astrological-determinism_kotyk-j.md
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
     - _content/articles/buddhism-and-blackness_vox.md
     - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
@@ -113,6 +114,7 @@ exclude:
     - _content/canon/thig12.1.md
     - _content/canon/ud4.4.md
     - _content/canon/ud4.5.md
+      _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
     - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
     - _content/essays/from-the-oral-tradition_nyarong-terton.md
     - _content/essays/great-perfection_chokyi-lodro.md

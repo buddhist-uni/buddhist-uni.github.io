@@ -3,8 +3,8 @@ layout: default
 ---
 <article class="course">
 
-  <header class="post-header">
-    <h1 class="post-title"><i class="{{ page.icon }}"></i> {{ page.title | escape }}</h1>
+  <header class="post-header{% if page.banner_info %} overlay-into-banner{% endif %}">
+    <h1 class="post-title">{% unless page.banner_info %}<i class="{{ page.icon }}"></i> {% endunless %}{{ page.title | escape }}</h1>
     {% if page.subtitle %}<h2 class="post-subtitle">{{ page.subtitle }}</h2>{% endif %}
   </header>
  {% capture toccontent %}
