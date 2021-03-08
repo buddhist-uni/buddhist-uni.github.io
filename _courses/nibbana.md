@@ -4,6 +4,10 @@ subtitle: "A Course Outline"
 google_doc_id: 1SSR6mG2xN7wuIEj1Fqs1pJFSfJGWjixdM9u22RED5nM
 feedback_id: "Nibb%C4%81na"
 icon: "far fa-heart"
+image: "https://illeakyw.sirv.com/Images/banners/buddha-statue-among-clouds.jpg"
+image_width: 1698
+big_image: https://upload.wikimedia.org/wikipedia/commons/1/13/WHEN_I_HAVE_CAMERA_IN_MY_HAND%2C_I_KNOW_NO_RULES.jpg
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:WHEN_I_HAVE_CAMERA_IN_MY_HAND,_I_KNOW_NO_RULES.jpg">Ecstatic Atelier</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 time: 1
 description: "This course weaves together two free monographs and a number of booklets to explore Nirvana from a critical perspective, giving a thorough introduction to the meaning, logic and history behind the Buddhists' ultimate goal."
 next_courses:

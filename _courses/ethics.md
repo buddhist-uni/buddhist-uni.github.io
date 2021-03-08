@@ -4,6 +4,9 @@ subtitle: "An Outline"
 google_doc_id: 1MWVlLI5DN8CBFfXfAU3Hx_d4z0ndStFmfJ9N4IJewDo
 feedback_id: "Buddhist+Ethics"
 icon: "fab fa-pagelines"
+image: "https://illeakyw.sirv.com/Images/banners/themessenger.jpg"
+image_width: 736
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Vestnik_1946.jpg">Nicholas Roerich</a>
 time: 2
 description: "In this course we cover ethics from three angles---theory, practice and mythology---believing that none is intelligible without the rest. A course that, hopefully, will engage your heart as well as your head."
 next_courses:

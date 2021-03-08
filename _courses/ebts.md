@@ -8,6 +8,10 @@ lecturers:
   - bodhi
 time: 5
 icon: "far fa-map fa-rotate-90"
+image: "https://illeakyw.sirv.com/Images/banners/buddha-myth.jpg"
+image_width: 668
+big_image: https://upload.wikimedia.org/wikipedia/commons/8/84/The_Victory_of_Buddha_-_Myths_of_the_Hindus_%26_Buddhists.jpg
+banner_info: <a href="https://archive.org/details/mythsofthehindus00niveuoft">Abanindro Nath Tagore</a>
 next_courses:
   - function
   - mn
@@ -37,7 +41,7 @@ The Early Buddhist Texts are the subset of the canonical literature of the diffe
 The [Intro to Buddhism course]({% link _courses/buddhism.md %}) is not a prerequisite for this course. Though some familiarity with Buddhism will be helpful, this course is suitable for serious beginners.
 
 ### Time Commitment
-This course takes about 80 hours to complete, depending on how long it takes you to read and contemplate the suttas. As such, the course can take anywhere from 2 weeks to a year to finish. For example, 3 lectures (6hr) per week would make this a 15 week course.
+This course contains about 80 hours of lectures and reading, depending on how fast you read, and can take anywhere from 2 weeks to a year to finish. For example, 3 lectures (6hr) per week would make this a 15 week course.
 
 ## Course Outline
 This course gives a thorough introduction to what the Buddha taught in his own words, and also explores how these words came down to us.
@@ -46,6 +50,7 @@ This course gives a thorough introduction to what the Buddha taught in his own w
 
 {% include content_blurb.html category="av" slug="buddha_true-genius_brahmali" %}
 - An introductory lecture by Ajahn Brahmali in which he shares with us his love and enthusiasm for the Buddha’s teachings.
+- To listen to the lecture, just click one of the links above!
 
 
 ### Textbook
