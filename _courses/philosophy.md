@@ -5,6 +5,10 @@ feedback_id: "Intro+to+Buddhist+Philosophy"
 description: "An introduction to Buddhist Philosophy for students starting to feel comfortable reading the suttas. Primarily based on the Theravada school, the class will include some additional material to round out its presentation."
 time: 3
 icon: "fas fa-chess-queen"
+image: "https://illeakyw.sirv.com/Images/banners/Odilon_Redon.jpeg"
+image_width: 802
+big_image: https://upload.wikimedia.org/wikipedia/commons/9/94/Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg">Odilon Redon</a>
 tags:
   - theravada
 lecturers:

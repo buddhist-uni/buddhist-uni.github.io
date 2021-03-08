@@ -4,6 +4,7 @@ subtitle: "An Online Course on Buddhist Philosophy"
 google_doc_id: 1-iknxgZN1v5DFiFxWdcI8XtcgS-EY_QH
 icon: "fas fa-cloud-sun"
 image: "https://illeakyw.sirv.com/Images/banners/metalfish.jpeg"
+image_width: 1830
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Khalili_Collection_Japanese_Meiji_Art_M159.jpg">The Khalili Collection</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 lecturers: [analayo]
 time: 2

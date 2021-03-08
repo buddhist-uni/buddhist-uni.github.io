@@ -5,6 +5,10 @@ google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 feedback_id: "The+Form(s)+of+Buddhism"
 description: "An introduction to the history and religious aspects of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
 icon: "fas fa-vihara"
+image: "https://illeakyw.sirv.com/Images/banners/bolpur.jpg"
+image_width: 768
+big_image: https://upload.wikimedia.org/wikipedia/commons/6/66/Bolpur_Gautam_Buddha_Statue.jpg
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Bolpur_Gautam_Buddha_Statue.jpg">Apurv013</a>
 time: 2
 next_courses:
   - lay

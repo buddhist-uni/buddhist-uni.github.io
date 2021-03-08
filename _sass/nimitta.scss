@@ -151,6 +151,9 @@ figure figcaption {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-width: 1800px) {
+        height: 680px;
+    }
 }
 
 @media only screen and (max-width: 345px) {
