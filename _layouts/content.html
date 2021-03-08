@@ -69,7 +69,7 @@ layout: default
             <summary class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</summary>
             <div class="RatingDetails">{% if stars == 1 %}
                 This work is no longer recommended{% if page.reason %}, because: <code>{{ page.reason }}</code>{% endif %} Look below for possible alternatives.
-                {% elsif stars == 2 %}This work is for those with a special interest, and is not recommended for general circulation.
+                {% elsif stars == 2 %}This work is only recommended for those with a special interest.
                 {% elsif stars == 5 %}One of the best works in the library, &quot;{{ title | first | strip }}&quot; was featured in the <a href="{{ featured_post.url }}">{{ featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
                 This is a piece of exceptional quality, recommended for everyone.
             {% endif %}</div>
