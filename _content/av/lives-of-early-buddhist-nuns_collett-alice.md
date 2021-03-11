@@ -1,7 +1,7 @@
 ---
 title: "Lives of Early Buddhist Nuns (Interview)"
 authors:
-  - "Alice Collett"
+  - collett-alice
 year: 2020
 month: jan
 publisher: nbn

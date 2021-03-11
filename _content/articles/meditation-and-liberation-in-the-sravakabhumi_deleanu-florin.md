@@ -1,5 +1,5 @@
 ---
-title: "Far From the Madding Strife for Hollow Pleasures: Meditation and Liberation in the *Śrāvakabhūmi*"
+title: "Far From the Madding Strife for Hollow Pleasures: Meditation and Liberation in the *Śrāvakabhūmi*"
 authors: [deleanu-f]
 external_url: "http://doi.org/10.15056/00000014"
 formats: [pdf]
@@ -15,4 +15,4 @@ tags:
   - sects
 ---
 
-A very brief summary of the *Śrāvakabhūmi*: an ancient meditation manual preserved by the Yogācāra school.
+A very brief summary of the *Śrāvakabhūmi*: an ancient meditation manual preserved by the Yogācāra school.
