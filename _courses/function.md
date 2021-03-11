@@ -57,6 +57,8 @@ This book is divided into two, unsurprising halves: Buddhist Life and Buddhist P
 {% include content_blurb.html category="av" slug="going-forth_yuttadhammo" %}
 
 - In this talk, Bhante Yuttadhammo gives us an overview of these two halves of Buddhism, and gives us a preview of what to expect in this course.
+- To start the class, simply click on the link above and listen!
+- When you're done, come back here and keep reading to continue with the course.
 
 
 ### Lectures
