@@ -17,6 +17,7 @@ exclude:
     - scripts/
     - content.bib
     - _authors/chiu-angela.md
+    - _authors/deleanu-f.md
     - _authors/dhammika.md
     - _authors/diamond-jared.md
     - _authors/gomtsul.md
@@ -51,6 +52,7 @@ exclude:
     - _content/articles/historical-authenticity_wynne.md
     - _content/articles/hoary-past-hazy-memory_hinuber-oskar-v.md
     - _content/articles/illness-as-metaphor_sontag.md
+    - _content/articles/meditation-and-liberation-in-the-sravakabhumi_deleanu-florin.md
     - _content/articles/nighttime-and-refugees_jolliffe-pia.md
     - _content/articles/revolutionary-thoreau_lossin-rh.md
     - _content/articles/temple-looting-in-cambodia_mackenzie-davis.md
@@ -151,6 +153,7 @@ exclude:
     - _content/av/anthropocene-reviewed_green-john.md
     - _content/av/antique-oxtongue-iron_my-mechanic.md
     - _content/av/basically-i_delong-robert.md
+    - _content/av/because-podcast.md
     - _content/av/birth-in-buddhism_langenberg-amy.md
     - _content/av/blind-men-and-the-elephant_merchant-natalie.md
     - _content/av/bomb-children_zani-leah.md
