@@ -3,6 +3,7 @@ title: "Behave: The Biology of Humans at Our Best and Worst"
 authors: ["Robert M. Sapolsky"]
 year: 2017
 month: may
+olid: OL27351361M
 publisher: "Penguin"
 course: neuroscience
 status: featured

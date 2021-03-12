@@ -4,6 +4,7 @@ authors:
   - williams-paul
 year: 1989
 publisher: Routledge
+olid: OL10203914M
 course: mahayana
 tags:
   - mahayana-canon

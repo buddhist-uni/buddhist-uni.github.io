@@ -4,6 +4,7 @@ authors: [nyanaponika, hecker]
 editor: bodhi
 year: 1997
 publisher: wisdom
+olid: OL672961M
 status: featured
 drive_links: ["https://drive.google.com/file/d/1CYu4HUj7JwHNy2s-XBJi9LnvPHmrgLeU/view?usp=drivesdk"]
 external_url: "https://www.bps.lk/library-search-select.php?id=bp417s"

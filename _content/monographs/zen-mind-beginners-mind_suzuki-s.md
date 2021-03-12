@@ -4,6 +4,7 @@ authors:
   - suzuki-s
 status: featured
 oclc: 875173212
+olid: OL3421500M
 course: chan
 tags:
   - buddhism

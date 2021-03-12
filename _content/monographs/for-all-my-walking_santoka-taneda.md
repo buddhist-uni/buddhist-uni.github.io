@@ -3,6 +3,7 @@ title: "For All My Walking"
 authors:
   - "Taneda Santōka"
 translator: "Burton Watson"
+olid: OL9369902M
 course: walking
 tags:
   - pilgrimage

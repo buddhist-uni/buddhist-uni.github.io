@@ -5,6 +5,7 @@ authors:
 publisher: "Dharma Audio Network Associates"
 address: "San Jacinto"
 year: 1995
+olid: OL884502M
 course: new-age
 tags:
   - form

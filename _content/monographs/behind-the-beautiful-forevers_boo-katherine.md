@@ -4,6 +4,7 @@ authors: ["Katherine Boo"]
 year: 2012
 month: feb
 publisher: "Random House"
+olid: OL25094126M
 course: world
 status: featured
 tags:

@@ -3,6 +3,7 @@ title: "The *Dhammapada*: The Buddha's Path of Wisdom"
 authors:
   - buddharakkhita
 external_url: "https://www.bps.lk/library-search-select.php?id=bp203s"
+olid: OL27279597M
 drive_links:
   - "https://drive.google.com/file/d/1zaDNhwRhaR2qWb0I2VKnoLCVfWyjteK6/view?usp=drivesdk"
 course: pali-canon

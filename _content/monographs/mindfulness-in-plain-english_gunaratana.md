@@ -3,6 +3,7 @@ title: "Mindfulness in Plain English"
 authors: [gunaratana]
 source_url: "https://www.vipassana.com/meditation/mindfulness_in_plain_english.php"
 year: 1991
+olid: OL25156616M
 publisher: wisdom
 status: featured
 course: meditation

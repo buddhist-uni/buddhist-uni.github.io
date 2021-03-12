@@ -3,6 +3,7 @@ title: "Buddha-Dhamma For (University) Students"
 authors:
   - buddhadasa
 external_url: "http://www.buddhistelibrary.org/library/view.php?adpath=31"
+olid: OL19670086M
 drive_links:
   - "https://drive.google.com/file/d/1dN4y6ruGuBjgxgdcOuZ3YuahglLYwV64/view?usp=drivesdk"
 course: philosophy

@@ -4,6 +4,7 @@ authors:
   - "Elaine Scarry"
 year: 1999
 publisher: princeton
+olid: OL7758079M
 course: communication
 tags:
   - pedagogy

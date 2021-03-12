@@ -3,6 +3,7 @@ title: "The Secrets of Happiness: Three Thousand Years of Searching for the Good
 authors:
   - "Richard Schoch"
 course: religion
+olid: OL19157423M
 tags:
   - interfaith
 year: 2006

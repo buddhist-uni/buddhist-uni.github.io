@@ -3,6 +3,7 @@ title: "How To Camp Out: Hints for Camping and Walking"
 authors:
   - "John Mead Gould"
 external_url: "https://www.gutenberg.org/ebooks/17575"
+olid: OL11682741M
 course: walking
 tags:
   - camping

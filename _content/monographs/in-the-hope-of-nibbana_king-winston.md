@@ -3,6 +3,7 @@ title: "In the Hope of Nibbana: The Ethics of Theravada Buddhism"
 authors: [king-winston]
 year: 1964
 publisher: pariyatti
+olid: OL9623130M
 external_url: "https://store.pariyatti.org/In-the-Hope-of-Nibbana--eBook-PDF-ePub-Mobi_p_2290.html"
 tags: 
   - ethics

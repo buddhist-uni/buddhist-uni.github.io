@@ -5,6 +5,7 @@ authors:
 year: 1997
 publisher: SOAS
 address: London
+olid: OL7868615M
 course: pali-language
 tags:
   - historiography

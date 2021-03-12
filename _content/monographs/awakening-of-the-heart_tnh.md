@@ -2,6 +2,7 @@
 title: "Awakening of the Heart"
 authors: [tnh]
 year: 2012
+olid: OL25078263M
 publisher: paralax
 status: featured
 course: mahayana

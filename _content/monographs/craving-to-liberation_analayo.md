@@ -3,6 +3,7 @@ title: "From Craving to Liberation: Excursions into the Thought-world of the Pā
 authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-craving.pdf"
+olid: OL27267147M
 drive_links:
   - "https://drive.google.com/file/d/1lFvRUFIXHXGg0o7WEGX5sxr9i6IVq6fv/view?usp=drivesdk"
 course: imagery

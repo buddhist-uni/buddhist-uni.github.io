@@ -3,6 +3,7 @@ title: "Footprints in the Snow: The Autobiography of a Chinese Buddhist Monk"
 authors:
   - sheng-yen
 translator: "Rebecca Li and Kenneth Wapner"
+olid: OL24248587M
 oclc: 191024052
 status: featured
 course: mahayana

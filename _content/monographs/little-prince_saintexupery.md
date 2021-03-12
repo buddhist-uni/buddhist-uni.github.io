@@ -2,6 +2,7 @@
 title: "The Little Prince"
 authors: ["Antoine de Saint-Exupéry"]
 translator: "Richard Howard"
+olid: OL48619M
 year: 1943
 month: apr
 publisher: "Reynal & Hitchcock"
