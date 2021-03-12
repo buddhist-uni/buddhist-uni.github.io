@@ -26,6 +26,7 @@ exclude:
     - _authors/khema.md
     - _authors/lew-karl.md
     - _authors/norman.md
+    - _authors/rankine-claudia.md
     - _authors/shi-zhiru.md
     - _authors/sontag.md
     - _authors/sudhamma.md
@@ -264,6 +265,7 @@ exclude:
     - _content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md
     - _content/monographs/camp-out_gould-jm.md
     - _content/monographs/citizen_rankine-claudia.md
+    - _content/monographs/just-us_rankine-claudia.md
     - _content/monographs/da1_ichimura-s.md
     - _content/monographs/da2_ichimura-s.md
     - _content/monographs/da3_ichimura-s.md

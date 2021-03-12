@@ -1,7 +1,7 @@
 ---
 title: "Citizen: An American Lyric"
 authors:
-  - "Claudia Rankine"
+  - rankine-claudia
 course: caste
 tags:
   - america

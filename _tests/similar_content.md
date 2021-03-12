@@ -40,6 +40,7 @@ test_cases:
     - [did-the-buddha-exist_wynne, in-search-of-the-real-buddha_harvey]
     - [giving-makes-us-happy, meditation-moral-obligation_vox]
     - [kids-these-days_harris-malcolm, debt_graeber-david]
+    - [mn044, bhikkhuni-dhammadinna_analayo]
 ---
 
 A series of integration tests for the quality of the content recommendations.
