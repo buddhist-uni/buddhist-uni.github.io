@@ -184,6 +184,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
+{% include content_blurb.html category="av" slug="healing-is-possible_tnh" %}
+- An inspiring talk to a group of monastics, encouraging them to set a good example for their guests.
+
 #### Main Text
 
 {% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
