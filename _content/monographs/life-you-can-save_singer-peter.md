@@ -4,6 +4,7 @@ authors: [singer-peter]
 year: 2009
 publisher: "Random House"
 address: "New York"
+olid: OL22501018M
 external_url: "https://www.thelifeyoucansave.org/the-book/"
 course: becon
 status: featured

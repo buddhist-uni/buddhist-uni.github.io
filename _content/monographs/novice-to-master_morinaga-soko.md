@@ -3,6 +3,7 @@ title: "Novice to Master: An Ongoing Lesson in the Extent of My Own Stupidity"
 authors:
   - "Soko Morinaga"
 translator: "Belenda Attaway Yamakawa"
+olid: OL8308627M
 publisher: wisdom
 year: 2004
 course: japanese-monastic

@@ -3,6 +3,7 @@ title: "Guns, Germs, and Steel: The Fates of Human Societies"
 authors: [diamond-jared]
 year: 1997
 month: may
+olid: OL24732786M
 publisher: Norton
 status: featured
 course: places

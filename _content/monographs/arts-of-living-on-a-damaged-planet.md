@@ -1,6 +1,7 @@
 ---
 title: "Arts of Living on a Damaged Planet"
 editor: "Elaine Gan and Anna Tsing and Heather Swanson and Nils Bubandt"
+olid: OL28627468M
 year: 2017
 publisher: "The University of Minnesota Press"
 course: science

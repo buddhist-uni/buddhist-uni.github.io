@@ -1,8 +1,9 @@
 ---
-title: "Just Us"
+title: "Just Us: An American Conversation"
 authors:
  - rankine-claudia
 year: 2020
+olid: OL28235045M
 publisher: "Graywolf"
 course: people
 oclc: 1193996162

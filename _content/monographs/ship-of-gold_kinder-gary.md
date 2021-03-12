@@ -2,6 +2,7 @@
 title: "Ship of Gold in the Deep Blue Sea: The History and Discovery of the World's Richest Shipwreck"
 authors:
   - "Gary Kinder"
+olid: OL701348M
 course: california
 tags:
   - oceans

@@ -3,6 +3,7 @@ title: "A Short History of Nearly Everything"
 authors:
   - "Bill Bryson"
 course: science
+olid: OL7441792M
 status: featured
 tags:
   - world

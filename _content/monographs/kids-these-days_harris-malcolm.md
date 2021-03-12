@@ -4,6 +4,7 @@ authors:
  - "Malcolm Harris"
 year: 2017
 month: nov
+olid: OL29762823M
 publisher: "Little, Brown"
 course: society
 tags:

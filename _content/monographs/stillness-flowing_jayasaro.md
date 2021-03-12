@@ -12,6 +12,7 @@ drive_links:
   - "https://drive.google.com/file/d/1pXE5KYu_Xw1Cy3gx5p0FBRP2i0Rg8mcv/view?usp=drivesdk"
   - "https://www.jayasaro.panyaprateep.org/en/audio-album/9"
 status: featured
+olid: OL32034206M
 course: thai-forest
 tags:
   - chah

@@ -29,6 +29,7 @@
 {% endif %}{% if include.content.chapter %}    chapter={{ include.content.chapter }},
 {% endif %}{% if include.content.course or include.content.tags %}    keywords={% raw %}{{% endraw %}{% assign tags = "" | split: "" %}{% if include.content.tags %}{% assign tags = include.content.tags %}{% endif %}{% if include.content.course %}{% assign tags = tags | unshift: include.content.course %}{% endif %}{{ tags | join: ", " }}},
 {% endif %}{% if include.content.oclc %}    oclc={% raw %}{{% endraw %}{{ include.content.oclc }}},
+{% endif %}{% if include.content.olid %}    ol={% raw %}{{% endraw %}{{ include.content.olid }}},
 {% endif %}    ranking={% raw %}{{% endraw %}rank{{ stars }}},
     url={% raw %}{{% endraw %}{% if include.content.external_url %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
 }

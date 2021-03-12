@@ -3,6 +3,7 @@ title: "The Connected Discourses of the Buddha: A Translation of the *Saṃyutta
 authors:
   - bodhi
 publisher: wisdom
+olid: OL8308595M
 year: 2000
 course: sn
 tags:

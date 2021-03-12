@@ -3,6 +3,7 @@ title: "From Grasping to Emptiness: Excursions into the Thought-world of the Pā
 authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-grasping.pdf"
+olid: OL32034186M
 drive_links:
   - "https://drive.google.com/file/d/1JpAHMtjRTytv5pGgQJn1UY_TMDFNfu9y/view?usp=drivesdk"
 course: imagery

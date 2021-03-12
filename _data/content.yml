@@ -12,10 +12,10 @@ d_i: 1 # denominator prior
 tdms: 2 # tag denom increment
 cdms: 2 # course denom increment
 adms: 1 # author denom increment
-ccms: 1.4 # course-course match numerator inc
+ccms: 1.5 # course-course match numerator inc
 ctms: 1.2 # course-tag match score
 ttms: 1.1 # tag-tag match score
-aams: 1.1 # author-author match score 
+aams: 1.0 # author-author match score 
 ccmm: 1.2 # category match multiplier
 scmm: 1.1 # similar category multiplier
 fcmm: 1.2 # featured content multiplier

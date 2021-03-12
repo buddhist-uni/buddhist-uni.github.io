@@ -5,6 +5,7 @@ authors:
 publisher: wisdom
 year: 2012
 course: an
+olid: OL25246909M
 tags:
   - thought
   - theravada

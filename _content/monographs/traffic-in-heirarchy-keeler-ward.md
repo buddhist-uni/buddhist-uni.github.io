@@ -16,6 +16,7 @@ tags:
   - gender
   - hierarchy
   - patronage
+olid: OL32034210M
 ---
 
 > No one enters Burmese traffic with any assumptions about fundamental rights. Pedestrians, certainly, enjoy no "right of way." No one, by the same token, is ever excluded from the game as long as they remain in motion. [...] If you get ahead, you were right to try. If you don’t, you were right to yield. What’s to argue?

@@ -408,6 +408,12 @@ article.content-perma div.post-content {
     font-size: 18px;
 }
 
+article.content-perma header img {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    max-height: 250px;
+}
+
 article.content-perma .content_links .source {
     position: relative;
     top: 2px;
@@ -494,6 +500,10 @@ div.featured_content_list {
         margin: 5px;
         border: 1px solid lightgray;
         border-radius: 9px;
+        height: fit-content;
+        img {
+            padding: 15px;
+        }
     }
 
     .content_title {

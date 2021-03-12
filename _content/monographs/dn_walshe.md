@@ -2,6 +2,7 @@
 title: "The Long Discourses of the Buddha: A Translation of the Digha Nikaya"
 authors:
   - walshe
+olid: OL8308507M
 course: dn
 tags:
   - myth

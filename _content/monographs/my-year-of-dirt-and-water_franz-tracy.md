@@ -5,6 +5,7 @@ authors:
 publisher: "Stone Bridge"
 address: Berkeley
 year: 2018
+olid: OL26959891M
 course: japanese-monastic
 tags:
   - canadian

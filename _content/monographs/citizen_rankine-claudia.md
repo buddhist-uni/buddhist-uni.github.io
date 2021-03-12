@@ -2,6 +2,7 @@
 title: "Citizen: An American Lyric"
 authors:
   - rankine-claudia
+olid: OL25632207M
 course: caste
 tags:
   - america

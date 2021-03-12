@@ -3,6 +3,7 @@ title: "The Heart of Understanding: Commentaries on the Prajnaparamita Heart Sut
 authors: [tnh]
 year: 1987
 publisher: parallax
+olid: OL8416201M
 status: featured
 course: philosophy
 tags: 

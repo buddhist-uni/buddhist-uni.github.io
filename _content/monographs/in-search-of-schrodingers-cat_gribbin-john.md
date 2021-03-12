@@ -2,6 +2,7 @@
 title: "In Search of Schrödinger's Cat: Quantum Physics and Reality"
 authors: ["John Gribbin"]
 year: 1984
+olid: OL7825715M
 publisher: "Bantam"
 course: physics
 tags: 
