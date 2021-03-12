@@ -5,6 +5,8 @@ external_url: "https://readingfaithfully.org/majjhima-nikaya-translated-by-bhikk
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1LL4FlBYWvj9F4In6UOIEr0k4bFE520Ns/view?usp=drivesdk", "https://drive.google.com/file/d/1dCPdDVEKOiJRE06PjfDxGFkloekivj75/view?usp=drivesdk"]
 year: 2019
+tags:
+  - sutta
 course: mn
 ---
 

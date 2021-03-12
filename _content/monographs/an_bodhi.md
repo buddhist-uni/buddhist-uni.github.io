@@ -8,6 +8,7 @@ course: an
 tags:
   - thought
   - theravada
+  - sutta
 status: featured
 excerpt_url: "https://readingfaithfully.org/selections-from-the-numerical-discourses-free-kindle-epub-mobi/"
 ---

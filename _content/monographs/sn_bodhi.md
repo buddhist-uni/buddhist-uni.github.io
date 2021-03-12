@@ -8,6 +8,7 @@ course: sn
 tags:
   - path
   - view
+  - sutta
 status: featured
 excerpt_url: "https://readingfaithfully.org/selections-from-the-connected-discourses-free-kindle-epub-mobi/"
 ---
