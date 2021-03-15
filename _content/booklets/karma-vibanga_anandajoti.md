@@ -1,6 +1,7 @@
 ---
 title: "The Karma-vibhaṅga: The Analysis of Deeds"
 translator: anandajoti
+olid: OL32035986M
 external_url: "https://bit.ly/2DFoGbs"
 drive_links:
   - "https://drive.google.com/file/d/1N8mDGdmZ34DYpWuhcqN3cmv0pLGN6mgy/view?usp=drivesdk"

@@ -10,6 +10,7 @@ tags:
   - pali-language
 year: 2008
 status: featured
+olid: OL9081283M
 ---
 
 An excellent primer introducing, step-by-step, the basic grammatical concepts essential to understanding the Pāli language. 

@@ -5,6 +5,7 @@ external_url: "https://www.dhammatalks.org/ebook_index.html#bmc"
 drive_links: ["https://drive.google.com/file/d/1YCuIx2RJrsQFS1ll2ryGVJZrpIpY0UgP/view?usp=drivesdk"]
 formats: [epub]
 year: 2001
+olid: OL23822296M
 course: vinaya-studies
 tags:
   - monastic-theravada

@@ -6,6 +6,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1f3UISPff0XR6oqn14PEpNCsJmZAUS0yr/view?usp=drivesdk"]
 year: 2017
 address: Bangkok
+olid: OL32035973M
 course: philosophy
 tags:
   - path

@@ -2,6 +2,7 @@
 title: "The Progress of Insight"
 authors: [mahasi]
 translator: nyanaponika
+olid: OL13909231M
 alternate_url: "http://www.accesstoinsight.org/lib/authors/mahasi/progress.html"
 external_url: "https://www.bps.lk/olib/bp/bp504s_Mahasi_Progress-of-Insight.pdf"
 year: 1994

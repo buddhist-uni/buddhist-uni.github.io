@@ -20,6 +20,7 @@ tags:
 status: featured
 year: 1989
 month: jun
+olid: OL28377272M
 ---
 
 > As for the question of suffering in the future—in this life or the next—don’t overlook your heart that’s suffering right now.

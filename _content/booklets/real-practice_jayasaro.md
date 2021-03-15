@@ -11,6 +11,7 @@ tags:
   - navakovada
   - vinaya-studies
 year: 2008
+olid: OL32038522M
 ---
 
 Three inspiring talks to the monks of Wat Pananachat on monastic practice.

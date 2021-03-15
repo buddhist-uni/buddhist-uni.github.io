@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1RojZmHT4Db52hzGTwwY2-U7qYYXyF38b/view?usp=drivesdk"
   - "https://drive.google.com/file/d/10E3Ljg8H59uQj07lPAiIVwmrDqpMQpIi/view?usp=drivesdk"
 course: theravada
+olid: OL32040958M
 status: featured
 tags:
   - thai

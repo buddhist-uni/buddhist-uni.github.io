@@ -1,6 +1,7 @@
 ---
 title: "How to Meditate: A Beginner's Guide to Peace"
 authors: [yuttadhammo]
+olid: OL32035971M
 year: 2009
 external_url: "https://www.sirimangalo.org/text/how-to-meditate/"
 drive_links:

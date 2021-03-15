@@ -17,6 +17,7 @@ month: feb
 publisher: ias
 series: lexicon
 number: 3
+olid: OL32035954M
 ---
 
 > Like power, gender is everywhere, running through our relationships with ourselves, each other, and the earth, and the relations between nations, classes, and cultures. And like power, it is not a problem in itself but instead a question of how we

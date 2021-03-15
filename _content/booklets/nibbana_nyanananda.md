@@ -13,6 +13,7 @@ tags:
   - nibbana
   - emptiness
   - epistemology
+olid: OL32036296M
 ---
 
 > all pathways for verbal expression, terminology and designation converge on this whirlpool between name-and-form and consciousness
