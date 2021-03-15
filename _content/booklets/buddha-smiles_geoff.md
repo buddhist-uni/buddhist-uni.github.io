@@ -7,6 +7,7 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ec-UhmhvEtGTOQdgMtC1uQKhkAULdNFh/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1iDHpTWFs29zDr43mNCMUsr2YtRr87vx5/view?usp=drivesdk"
+olid: OL32035596M
 course: pali-canon
 status: featured
 tags:

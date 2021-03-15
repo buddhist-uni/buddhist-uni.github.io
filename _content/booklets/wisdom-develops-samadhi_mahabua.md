@@ -4,6 +4,7 @@ authors:
   - boowa
 translator: panyavaddho
 external_url: "https://www.abhayagiri.org/books/440-wisdom-develops-samadhi"
+olid: OL32040956M
 drive_links:
   - "https://drive.google.com/file/d/1i21Ra9vWDvZQPy56csxOpKUljLz76oCP/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1TJ8_lkxt0FbcPb98CgLxVYm7wkpsneD2/view?usp=drivesdk"

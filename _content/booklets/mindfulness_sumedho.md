@@ -13,6 +13,7 @@ tags:
   - mindfulness
 year: 2012
 publisher: amaravati
+olid: OL8649975M
 ---
 
 > The aim of this book is to provide instruction and reflection on Buddhist meditation as taught by Ajahn Sumedho, using material extracted from talks he gave in the early 1980s.

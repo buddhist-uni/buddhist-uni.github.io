@@ -3,6 +3,7 @@ title: "Tracing Thought Through Things: The Oldest Pali Texts and the Early Budd
 authors: [stargardt]
 external_url: "https://www.knaw.nl/shared/resources/actueel/publicaties/pdf/gondalecture1999-tracing-Thought.pdf"
 drive_links: ["https://drive.google.com/file/d/1oSmlnZZK0bV4matC7aoDSjG4nY_OKYQD/view?usp=drivesdk"]
+olid: OL32040728M
 year: 2000
 publisher: The Royal Netherlands Academy of Arts and Sciences
 address: Amsterdam

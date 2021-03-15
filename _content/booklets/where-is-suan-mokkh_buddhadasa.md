@@ -3,6 +3,7 @@ title: "Where is Suan Mokkh?"
 authors:
   - buddhadasa
 translator: "Tanya Brockelman"
+olid: OL32040806M
 external_url: "https://www.suanmokkh.org/books/21"
 drive_links:
   - "https://drive.google.com/file/d/111zLEVmdgEKUdtj5jYCx2W5RUbRa4196/view?usp=drivesdk"

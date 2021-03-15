@@ -4,6 +4,7 @@ authors: [geoff]
 external_url: "https://www.dhammatalks.org/ebook_index.html#BuddhistRomanticism"
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1RnVTYRk6cTurALZaiZ9f-WwkBf55e1h-/view?usp=drivesdk", "https://drive.google.com/file/d/1jV_Gy9bjNXugcfNMwRlCJDkKjvppDvn3/view?usp=drivesdk"]
+olid: OL32035940M
 year: 2015
 address: "Valley Center, CA"
 course: west

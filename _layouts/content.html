@@ -53,7 +53,7 @@ layout: default
   <header class="post-header">
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
     {% if page.olid %}
-    <img src="http://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg" alt="{{ page.title }}">
+    <img src="http://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="bookcover">
     {% endif %}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% include content_icon.html category=page.category %} {{ title | first }}</h1>

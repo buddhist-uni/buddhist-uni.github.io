@@ -11,6 +11,7 @@ course: nibbana
 tags:
   - imagery
 year: 1993
+olid: OL18022778M
 ---
 
 > of all the attempts to describe the etymology of the word nibbāna, the closest is the one Buddhaghosa proposed in The Path of Purification: Un- (nir) + binding (vāna): Unbinding

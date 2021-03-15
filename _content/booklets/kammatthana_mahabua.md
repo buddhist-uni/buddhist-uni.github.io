@@ -5,6 +5,7 @@ authors: [boowa]
 external_url: "https://www.mediafire.com/file/gw9e9gsp8pzjj03/Kammatthana_2018.pdf/file"
 drive_links:
   - "https://drive.google.com/file/d/1TRsqOInEoEywx1rc_SL35TU_gxEHHZQE/view?usp=drivesdk"
+olid: OL32035983M
 course: thai-forest
 status: featured
 tags:
