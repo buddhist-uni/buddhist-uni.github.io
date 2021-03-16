@@ -9,6 +9,7 @@ tags:
   - space
   - colonialism
   - science
+  - world
 status: featured
 year: 2020
 month: aug
