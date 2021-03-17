@@ -502,7 +502,10 @@ div.featured_content_list {
         border-radius: 9px;
         height: fit-content;
         img {
-            padding: 15px;
+            border: 15px solid white;
+            background-color: lightgrey;
+            min-height: 150px;
+            min-width: 150px;
         }
     }
 
