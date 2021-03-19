@@ -21,6 +21,7 @@ Simply click on whatever topic you're interested in:
         - [Mahayana Buddhism]({% link _tags/mahayana.md %})
     - [The Early Buddhist Texts]({% link _tags/ebts.md %})
         - [The Buddha]({% link _tags/buddha.md %})
+        - [Characters in the EBTs]({% link _tags/characters.md %})
         - [Imagery in the EBTs]({% link _tags/imagery.md %})
         - [The Āgamas]({% link _tags/agama.md %})
         - [The Pāli Canon]({% link _tags/pali-canon.md %})

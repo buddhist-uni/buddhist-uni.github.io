@@ -14,7 +14,7 @@ number: 2
 tags:
   - setting
   - sa
-  - agama
+  - ebts
   - function
 ---
 

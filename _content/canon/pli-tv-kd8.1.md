@@ -14,7 +14,7 @@ tags:
   - pali-canon
 ---
 
-> Jīvaka thought, "It would not be appropriate for me to give the Buddha a powerful laxative."
+> "It would not be appropriate for me to give the Buddha a powerful laxative."
 
 The first few sections of the Robe Chapter tells of the origins and exploits of the Buddha's personal physician.
 
