@@ -1,5 +1,5 @@
 ---
-title: "(Secondary) Characters in the EBTs"
+title: "Characters in the EBTs"
 parents:
   - ebts
 ---
