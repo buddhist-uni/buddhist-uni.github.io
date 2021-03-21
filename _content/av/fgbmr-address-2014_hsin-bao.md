@@ -4,6 +4,7 @@ authors: [hsin-bao]
 translator: "Ven Huifeng"
 month: jul
 year: 2014
+external_url: "https://archive.org/details/ven-hsing-bao-addresses-fgbmr-2014_202103"
 formats: [pdf, wma]
 drive_links:
   - "https://drive.google.com/file/d/1nW8kXSDRTLSiqyq-Z0OuInHOIrobaOme/view?usp=drivesdk"
