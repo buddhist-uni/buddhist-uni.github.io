@@ -1,7 +1,9 @@
 ---
 title: "Two Questions on Ethics"
 authors: [jayasaro]
+external_url: "https://archive.org/details/two-questions-on-ethics-2011.08.13_ajahn-jayasaro"
 source_url: "https://itunes.apple.com/us/podcast/dhamma-discourse/id900096241?mt=2&i=1000316370556"
+formats: [m4a]
 drive_links:
   - "https://drive.google.com/file/d/1kQ_Tc69JE1apqmo0P7-TvlxfNKbyFFF0/view?usp=drivesdk"
 month: aug

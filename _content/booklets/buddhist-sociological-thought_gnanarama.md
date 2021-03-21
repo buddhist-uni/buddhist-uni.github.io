@@ -6,8 +6,8 @@ external_url: "http://www.buddhanet.net/pdf_file/social-thought6.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/11FwElCZ5I-KM2bR2NoFyXT5bsN1mVyH-/view?usp=drivesdk"]
 olid: OL32061986M
+course: form
 tags:
-  - form
   - ethics
   - society
   - world

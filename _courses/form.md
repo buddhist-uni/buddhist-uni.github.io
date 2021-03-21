@@ -38,8 +38,8 @@ The Form of Buddhism is the “religious” side of Buddhism: the history, insti
 Whether Buddhism even is a “religion” at all is, of course, a matter of some controversy. Is it a philosophy? A movement? A practice? An aesthetic? Who even counts as “a Buddhist”?
 
 In defining the bounds of “who is Buddhist”, some “middle way” may be desirable, between:
-1. The conservative, “prescriptive” definition (the Buddha once said that only enlightened beings count as his followers!)
-2. And the completely liberal, “historical” definition (the Buddha's life has materially impacted everything from ancient trade routes, to Islamic art, Christian conflicts, IKEA designs, software engineering practices… nearly every human life today)
+1. The conservative, “prescriptive” definition (The Buddha once said that only enlightened beings count as his followers!)
+2. And the completely liberal, “historical” definition (The Buddha's life has materially impacted everything from ancient trade routes, to Islamic art, Christian conflicts, IKEA designs, software engineering practices… nearly every human life today.)
 
 In searching for such a middle way, I take on Bhante Yuttadhammo’s definition of Religion here, and say that “Religion is whatever you take seriously.” 
 
@@ -64,23 +64,31 @@ On forms and the formless.
 {% include content_blurb.html category="av" slug="what-buddhism-offers_yuttadhammo" %}
 - Bhante Yuttadhammo then gives us his thoughts on the essence of Buddhism.
 
-### Part 1: History
-#### Textbook
+### Part 1: The Sociology and History of Buddhism
+#### Textbooks
 
-Your main text for this third of the class is the excellent book by Robinson et al:  
+There are two textbooks for this first part of the course:
 
+{% include content_blurb.html category="booklets" slug="buddhist-sociological-thought_gnanarama" %}
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 
-Note: there are a few editions of this book. I have taken my chapter numbers below from the fourth edition. My apologies if your chapter numbers vary from mine and I hope you can figure out the mapping anyway.
+Let us start off by reading Chapter 1 (“Towards a Definition”) of _Aspects_ to round off our discussion of how Buddhism can be defined as a “religion” and how it relates to other Western concepts.
+{:.mt-2}
+
+And with that completed, we can shift our focus to Robinson’s _Historical Introduction_.
 
 #### Supplementary Material to *Robinson*
-As you read through *Robinson*, please also consider the following:
+As you read through *Robinson*, please also consider the following alongside each chapter:
 
 *Parallel to Robinson Ch 1: Awakening*
 
 {% include content_blurb.html category="booklets" slug="noble-quest_horner" %}
 - The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
 - The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
+
+<i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 2: Dhamma, Medicine and Sociology
+{:.mb-0}
+- This chapter introduces us to the central metaphor of Buddhism as a medical science, and the social implications of that framing.
 
 *Parallel to Robinson Ch 2: Teacher*
 
@@ -93,6 +101,10 @@ As you read through *Robinson*, please also consider the following:
 {% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
 
+<i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 3: Significance of Buddhist Chanting
+{:.mb-0}
+- Even in the Buddha’s time, monks would recite the teachings verbatim to acclimate to them and keep them in mind. Over time, this chanting became seen as apotropaic and was therefore ritualized quite early on. Today, chanting features prominently across Buddhist traditions and practices.
+
 *Parallel to Robinson chapter 3: “Development”*
 
 {% include content_blurb.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
@@ -104,16 +116,28 @@ As you read through *Robinson*, please also consider the following:
 {% include content_blurb.html category="articles" slug="lotus-as-symbol_olson_carl" %}
 - One such object which became notably ubiquitous across Buddhist cultures is the lotus flower.  This article explores the ancient origins and meaning of this potent symbol.
 
+<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 5 (we'll come back to 4 later): Buddhist Art Symbols For Religious Edification
+{:.mb-0}
+- Buddhist art has long been self-consciously used as a pedagogical tool.
+
 *Chapter 4: “The Rise of Mahayana”*
 
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
+
+<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 4 (as promised): Aesthetics
+{:.mb-0}
+- Aesthetics was actually a major point of departure for the Early Mahayana, who rejected the cold, austerity of the Abhidhamma in favor of more beautiful expressions of enlightened wisdom.
 
 *Chapter 5: “The Pantheon”*
 
 {% include content_box.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
 
 {% include content_box.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
+
+<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 6: Socialization for Death
+{:.mb-0}
+- What effect does Buddhism's encouragement to reflect on death and impermanence have on how Buddhists perceive the cosmos, life, and the religion itself?
 
 *After Chapter 6 of Robinson on “Vajrayana”*
 
@@ -124,9 +148,11 @@ As you read through *Robinson*, please also consider the following:
 - One story, five countries.
 - Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
+<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 7: Social Conflict
+
 *Parallel to Robinson Chapters 7 and 8 on Sri Lanka and China*
 
-Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
+As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
 
 {% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
 - First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
@@ -149,6 +175,9 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 - Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
 - Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
 
+<i class="fas fa-book-open"></i> <i>Aspects (of Buddhist Sociological Thought)</i> Chapter 8: Women's Social Role
+{:.mb-0}
+- We (finally) return to *Aspects*' final chapter for a look at how the Buddha originally taught women.
 
 *Robinson Chapter 12: “Buddhism Comes West”*
 
@@ -158,7 +187,7 @@ Let us now take a brief listen to two Buddhists (one Sri Lankan and the other Ch
 {% include content_blurb.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
 - As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
-In conclusion: **History is now ours to make!**
+And with that, we're now finished with Part 1 of our course! **History is now yours to make!**
 
 ### Part 2: The Sangha
 
