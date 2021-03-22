@@ -7,6 +7,8 @@ time: 3
 icon: "fas fa-chess-queen"
 image: "https://illeakyw.sirv.com/Images/banners/Odilon_Redon.jpeg"
 image_width: 802
+image_center_y: 12%
+image_center_x: 39%
 big_image: https://upload.wikimedia.org/wikipedia/commons/9/94/Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg">Odilon Redon</a>
 tags:

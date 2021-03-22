@@ -6,6 +6,7 @@ feedback_id: "Nibb%C4%81na"
 icon: "far fa-heart"
 image: "https://illeakyw.sirv.com/Images/banners/buddha-statue-among-clouds.jpg"
 image_width: 1698
+image_center_y: 42%
 big_image: https://upload.wikimedia.org/wikipedia/commons/1/13/WHEN_I_HAVE_CAMERA_IN_MY_HAND%2C_I_KNOW_NO_RULES.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:WHEN_I_HAVE_CAMERA_IN_MY_HAND,_I_KNOW_NO_RULES.jpg">Ecstatic Atelier</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 time: 1

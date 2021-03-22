@@ -3,6 +3,7 @@ title: "Another Pali Course"
 authors:
  - bodhi
 year: 2016 #TODO: Find the real year
+external_url: "https://archive.org/details/new-course-in-reading-pali_bhikkhu-bodhi"
 formats: [MP3s]
 drive_links:
  - "https://drive.google.com/drive/folders/16-QWt159cHmbtlTrZw4-pG7BRJITN8ab"
