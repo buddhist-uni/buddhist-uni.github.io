@@ -60,7 +60,7 @@
 
   <body>
 
-<header class="site-header{% if page.banner_info %} banner-img{% endif %}" role="banner">
+<header class="site-header{% if page.banner_info %} banner-img{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
       <nav class="site-nav-links">

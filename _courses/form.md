@@ -7,6 +7,7 @@ description: "An introduction to the history and religious aspects of Buddhism, 
 icon: "fas fa-vihara"
 image: "https://illeakyw.sirv.com/Images/banners/bolpur.jpg"
 image_width: 768
+image_center_y: 73%
 big_image: https://upload.wikimedia.org/wikipedia/commons/6/66/Bolpur_Gautam_Buddha_Statue.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Bolpur_Gautam_Buddha_Statue.jpg">Apurv013</a>
 time: 2
