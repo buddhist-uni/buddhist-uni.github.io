@@ -11,4 +11,4 @@ tags:
   - form
 ---
 
-The "Five Kinds of Monks" and what it takes for the _sasana_ to thrive.
+The "Five Kinds of Monks" and what it takes for the _sāsana_ to thrive.
