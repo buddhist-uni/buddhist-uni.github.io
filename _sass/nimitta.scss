@@ -147,10 +147,14 @@ figure figcaption {
 }
 
 .banner-img {
-    height: 480px;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 200px;
+}
+
+.banner-img.fullsize {
+    height: 480px;
     @media (min-width: 1800px) {
         height: 680px;
     }
@@ -351,6 +355,13 @@ a.nextcourselink strong {
 
 article.post header.post-header {
     margin-top: 6px;
+}
+
+article.post header.post-header.overlay-into-banner {
+    margin-top: -88px;
+    @include media-query(350px) {
+        margin-top: -44px;
+    }
 }
 
 header.post-header h3.translator {

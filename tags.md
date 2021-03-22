@@ -2,6 +2,12 @@
 title: "Topical Bibliographies"
 permalink: "/tags/"
 layout: page
+image: "https://illeakyw.sirv.com/Images/banners/prayer-flags.jpeg"
+image_width: 1280
+image_center_x: 60%
+image_center_y: 60%
+big_image: https://upload.wikimedia.org/wikipedia/commons/5/59/Buddhist_Prayer_flags_on_the_Tibetan_Plateau.jpg
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_Prayer_flags_on_the_Tibetan_Plateau.jpg">Tenace10</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
 Simply click on whatever topic you're interested in:

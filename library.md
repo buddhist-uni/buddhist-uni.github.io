@@ -1,6 +1,12 @@
 ---
 title: Library
 permalink: /library/
+image: "https://illeakyw.sirv.com/Images/banners/shelves.jpeg"
+image_width: 1024
+image_center_x: 0%
+image_center_y: 4%
+big_image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Namche_Bazaar-Gompa-14-innen-Tripitaka-2007-gje.jpg"
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Namche_Bazaar-Gompa-14-innen-Tripitaka-2007-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
 The same, great content featured in [the courses]({% link courses.md %}) along with other recommendations for further study.
