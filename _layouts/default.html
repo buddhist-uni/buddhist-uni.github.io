@@ -52,7 +52,7 @@
   {%- endif -%}{% if page.banner_info %}
   <style>
     .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?blur=1"), linear-gradient(lightgray, lightgray); }
-    {% if page.image_width > 960 %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: 960 | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cs = "center" %}{% endif %}@media(max-width: 720px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?cw=960px&cx={{ cx | default: "0" }}&blur=1"), linear-gradient(lightgray, lightgray); } }{% endif %}
+    {% if page.image_width > 960 %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: 960 | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: 720px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.image }}?cw=960px&cx={{ cx | default: "0" }}&blur=1"), linear-gradient(lightgray, lightgray); } }{% endif %}
     {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: 1.25 }}px){ .banner-img { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1)), url("{{ page.big_image }}"), url("{{ page.image }}?blur=1"), linear-gradient(lightgray, lightgray); } }{% endif %}
   </style>
   {% endif %}
