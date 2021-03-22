@@ -5,7 +5,7 @@ permalink: /courses/
 image: "https://illeakyw.sirv.com/Images/banners/buddha_teaching_watercolor.jpg"
 image_width: 1338
 image_center_x: 99%
-image_center_y: 42%
+image_center_y: 6%
 big_image: "https://upload.wikimedia.org/wikipedia/commons/2/24/044_Teaching_the_Five_Disciples_%289014362720%29.jpg"
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:044_Teaching_the_Five_Disciples_(9014362720).jpg">Photo Dharma</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 ---

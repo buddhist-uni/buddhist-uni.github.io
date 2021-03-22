@@ -1,12 +1,12 @@
 ---
 title: Library
 permalink: /library/
-image: "https://illeakyw.sirv.com/Images/banners/shelves.jpeg"
-image_width: 1024
-image_center_x: 0%
-image_center_y: 4%
-big_image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Namche_Bazaar-Gompa-14-innen-Tripitaka-2007-gje.jpg"
-banner_info: <a href="https://commons.wikimedia.org/wiki/File:Namche_Bazaar-Gompa-14-innen-Tripitaka-2007-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+image: "https://illeakyw.sirv.com/Images/banners/nostalgic-gate.jpeg"
+image_width: 1280
+image_center_x: 50%
+image_center_y: 35%
+big_image: "https://upload.wikimedia.org/wikipedia/commons/7/79/%E9%81%82%E6%98%8C%E6%96%B0%E6%98%8C%E5%A4%A7%E4%BD%9B%E5%AF%BA_-_3.jpg"
+banner_info: <a href="https://commons.m.wikimedia.org/wiki/File:%E9%81%82%E6%98%8C%E6%96%B0%E6%98%8C%E5%A4%A7%E4%BD%9B%E5%AF%BA_-_3.jpg">黑揍红</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 ---
 
 The same, great content featured in [the courses]({% link courses.md %}) along with other recommendations for further study.
