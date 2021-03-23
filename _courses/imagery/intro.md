@@ -22,7 +22,7 @@ The fire of passion being “extinguished” gives us the term “Nibbāna (nirv
 {% include content_blurb.html category="articles" slug="playing-with-fire_jurewicz" %}
 - Many of the Buddha's contemporaries were fire worshipers and the vedas put fire front and center in their mythology. This paper explores how the Buddha played with the Vedic fire imagery to create his own explanation of origination, bringing us right back to the Buddha's own intentions.
 
-**See Also:**
+See Also:
 {% include content_blurb.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
 - Ajahn Geoff explores the symbolism of extinguishment in the context of ancient Indian physics to give us another take on this central image of Buddhist soteriology in this extra credit reading.
 

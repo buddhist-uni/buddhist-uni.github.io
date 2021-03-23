@@ -81,7 +81,7 @@ And with that completed, we can shift our focus to Robinson’s _Historical Intr
 #### Supplementary Material to *Robinson*
 As you read through *Robinson*, please also consider the following alongside each chapter:
 
-*Parallel to Robinson Ch 1: Awakening*
+##### Parallel to Robinson Ch 1: Awakening
 
 {% include content_blurb.html category="booklets" slug="noble-quest_horner" %}
 - The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
@@ -91,7 +91,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 {:.mb-0}
 - This chapter introduces us to the central metaphor of Buddhism as a medical science, and the social implications of that framing.
 
-*Parallel to Robinson Ch 2: Teacher*
+##### Parallel to Robinson Ch 2: Teacher
 
 {% include content_blurb.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
 - An Introduction to Buddhist History
@@ -106,7 +106,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 {:.mb-0}
 - Even in the Buddha’s time, monks would recite the teachings verbatim to acclimate to them and keep them in mind. Over time, this chanting became seen as apotropaic and was therefore ritualized quite early on. Today, chanting features prominently across Buddhist traditions and practices.
 
-*Parallel to Robinson chapter 3: “Development”*
+##### Parallel to Robinson chapter 3: “Development”
 
 {% include content_blurb.html category="articles" slug="assertion-and-restraint_dixon-graham" %}
 - Buddhism is not an especially evangelical religion. This paper explores the unique (compared to other religions) way that Buddhism spread.
@@ -121,7 +121,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 {:.mb-0}
 - Buddhist art has long been self-consciously used as a pedagogical tool.
 
-*Chapter 4: “The Rise of Mahayana”*
+##### Chapter 4: “The Rise of Mahayana”
 
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
@@ -130,7 +130,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 {:.mb-0}
 - Aesthetics was actually a major point of departure for the Early Mahayana, who rejected the cold, austerity of the Abhidhamma in favor of more beautiful expressions of enlightened wisdom.
 
-*Chapter 5: “The Pantheon”*
+##### Chapter 5: “The Pantheon”
 
 {% include content_box.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
 
@@ -140,7 +140,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 {:.mb-0}
 - What effect does Buddhism's encouragement to reflect on death and impermanence have on how Buddhists perceive the cosmos, life, and the religion itself?
 
-*After Chapter 6 of Robinson on “Vajrayana”*
+##### After Chapter 6 of Robinson on “Vajrayana”
 
 {% include content_blurb.html category="articles" slug="mudras_tricycle" %}
 - Taking an important role during the later development of Buddhist art and esoterica, mudras such as the “Anjali” of respect are now ubiquitous in the Buddhist cultural sphere, and are nearly synonymous with Buddhism itself.
@@ -151,7 +151,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 7: Social Conflict
 
-*Parallel to Robinson Chapters 7 and 8 on Sri Lanka and China*
+##### Parallel to Robinson Chapters 7 and 8 on Sri Lanka and China
 
 As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
 
@@ -161,16 +161,16 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 {% include content_blurb.html category="av" slug="drums-and-bells_qing-de" %}
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
-*Robinson Chapter 9: Korea and Vietnam*
+##### Robinson Chapter 9: Korea and Vietnam
 
 {% include content_blurb.html category="articles" slug="faxians-account-of-anuradhapura_kim-haewon" %}
 - What does a Chinese monk's pilgrimage to Sri Lanka have to do with Korea?
 
-*Robinson Chapter 10: Japan*
+##### Robinson Chapter 10: Japan
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
-*Robinson Chapter 11: Tibet*
+##### Robinson Chapter 11: Tibet
 
 {% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
 - Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
@@ -180,7 +180,7 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 {:.mb-0}
 - We (finally) return to *Aspects*' final chapter for a look at how the Buddha originally taught women.
 
-*Robinson Chapter 12: “Buddhism Comes West”*
+##### Robinson Chapter 12: “Buddhism Comes West”
 
 {% include content_blurb.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
 - A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
@@ -189,6 +189,7 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 - As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
 And with that, we're now finished with Part 1 of our course! **History is now yours to make!**
+{:.mt-4}
 
 ### Part 2: The Sangha
 

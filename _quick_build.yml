@@ -18,7 +18,6 @@ exclude:
     - content.bib
     - _authors/chiu-angela.md
     - _authors/deleanu-f.md
-    - _authors/dhammika.md
     - _authors/diamond-jared.md
     - _authors/gomtsul.md
     - _authors/huxley-a.md
@@ -44,7 +43,7 @@ exclude:
     - _authors/mipham.md
     - _authors/popova.md
     - _authors/singer-peter.md
-      _content/articles/astrological-determinism_kotyk-j.md
+    - _content/articles/astrological-determinism_kotyk-j.md
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
     - _content/articles/buddhism-and-blackness_vox.md
     - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
@@ -86,6 +85,7 @@ exclude:
     - _content/booklets/buddhist-romanticism_geoff.md
     - _content/booklets/heartwood-of-the-bodhi-tree_buddhadasa.md
     - _content/booklets/karma-vibanga_anandajoti.md
+    - _content/booklets/king-in-the-forest.md
     - _content/booklets/ratthapala-sutta_nyanamoli.md
     - _content/canon/an10.93.md
     - _content/canon/an3.76.md
@@ -118,7 +118,7 @@ exclude:
     - _content/canon/thig12.1.md
     - _content/canon/ud4.4.md
     - _content/canon/ud4.5.md
-      _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
+    - _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
     - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
     - _content/essays/from-the-oral-tradition_nyarong-terton.md
     - _content/essays/great-perfection_chokyi-lodro.md
