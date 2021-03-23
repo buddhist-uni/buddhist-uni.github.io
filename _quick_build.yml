@@ -47,6 +47,7 @@ exclude:
       _content/articles/astrological-determinism_kotyk-j.md
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
     - _content/articles/buddhism-and-blackness_vox.md
+    - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
     - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
     - _content/articles/four-eminent-monks-and-their-syncretistic-style_chu-william.md
     - _content/articles/genetics-biosocial-groups-and-identity_hacking-ian.md
@@ -182,10 +183,7 @@ exclude:
     - _content/av/mn18-explanation_kearney-patrick.md
     - _content/av/monks-in-motion_chia-jack.md
     - _content/av/myanmar-temple-schools.md
-    - _content/av/new-pali-course_bodhi.md
-    - _content/av/pali-primer_bodhi.md
     - _content/av/repetition_cooper-mcgloughlin.md
-    - _content/av/second-pali-course_bodhi.md
     - _content/av/talking-to-strangers_gladwell.md
     - _content/av/tranquility-and-insight_analayo.md
     - _content/av/what-is-death.md
@@ -195,7 +193,6 @@ exclude:
     - _content/booklets/how-to-fight_tnh.md
     - _content/booklets/kammatthana_mahabua.md
     - _content/booklets/meditations-4_geoff.md
-    - _content/booklets/pali-primer_desilva.md
     - _content/booklets/power_may-todd.md
     - _content/booklets/small-boat-great-mountain_amaro.md
     - _content/booklets/sn-anthology_nyanananda.md
@@ -284,7 +281,6 @@ exclude:
     - _content/monographs/material-world_menzel-peter.md
     - _content/monographs/meditators-life-of-the-buddha_analayo.md
     - _content/monographs/my-year-of-dirt-and-water_franz-tracy.md
-    - _content/monographs/new-course-in-reading-pali_gair-karunatillake.md
     - _content/monographs/novice-to-master_morinaga-soko.md
     - _content/monographs/saints-and-psychopaths_hamilton.md
     - _content/monographs/samsara-nirvana-and-buddha-nature_dalai-lama-thubten-chodron.md
