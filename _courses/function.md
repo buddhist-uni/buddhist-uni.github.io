@@ -9,7 +9,7 @@ lecturers:
 icon: "fas fa-user-slash"
 image: "https://illeakyw.sirv.com/Images/banners/mihinthalaya.jpg"
 image_width: 1440
-image_center_x: 4%
+image_center_x: 10%
 image_center_y: 51%
 big_image: https://upload.wikimedia.org/wikipedia/commons/e/ef/Mihinthalaya_Buddha_Statue.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Mihinthalaya_Buddha_Statue.jpg">Hasitha Senadheera</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
