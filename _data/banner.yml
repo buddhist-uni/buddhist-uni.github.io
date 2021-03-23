@@ -1,0 +1,8 @@
+max_stretch: 1.25
+max_size: 480
+double_size: 960
+loading_state: linear-gradient(lightgray, lightgray)
+# The reason we don't put the overlay in sirv is that large images are served from the source
+overlay: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1))
+sirv_options: blur=1
+

@@ -16,7 +16,7 @@ any feedback at the email below.
 
 You can find him and other devotees of Early Buddhism at [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"}
  
-![yaktocat]({% link assets/imgs/yaktocat.png %})
+![yaktocat]({% link assets/imgs/yaktocat.png %}){:style="max-height: 448px;"}
 50% feline 🐱, 50% cephalopod 🐙, and 100% Fierce Dharma Protector 👹, our university mascot is the **Yaktocat**.
 {: style="text-align:center;"}
 

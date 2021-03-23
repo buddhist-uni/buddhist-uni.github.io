@@ -45,6 +45,16 @@ header.site-header {
     }
 }
 
+$ipad-margin: 40px;
+@media screen and (max-width: 800px) and (min-width: 600px) { 
+    .wrapper {
+        max-width: -webkit-calc(#{$content-width} - (#{$ipad-margin} * 2));
+        max-width: calc(#{$content-width} - (#{$ipad-margin} * 2));
+        padding-right: $ipad-margin;
+        padding-left: $ipad-margin; 
+    }
+}
+
 main.page-content {
     padding: 15px 0;
 }
@@ -60,6 +70,15 @@ main {
     }
     .uifont, .btn, .Label, .State, .IssueLabel, .Counter, .TagLabel {
         font-family: $ui-font-family;
+    }
+    h1,h2,h3 {
+        padding-top: 20px;
+    }
+    h4,h5 {
+        padding-top: 16px;
+    }
+    h6 {
+        padding-top: 12px;
     }
 }
 
@@ -150,11 +169,11 @@ figure figcaption {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 240px;
 }
 
 .banner-img.fullsize {
-    height: 480px;
+    height: $bannerfullsize;
     @media (min-width: 1800px) {
         height: 680px;
     }
@@ -201,6 +220,10 @@ a.btn[target="_blank"]:after {
 
 .back {
     font-family: $base-font-family;
+}
+
+header.post-header, div.post-content {
+    margin-bottom: 24px;
 }
 
 %has-inline-content %content-title a[target="_blank"]:after {
@@ -250,7 +273,7 @@ a.btn[target="_blank"]:after {
 }
 
 div.content_box blockquote {
-    @include relative-font-size(1.0625);
+    @include relative-font-size(1.11875);
 }
 
 span.inline_drive_link {
@@ -340,7 +363,7 @@ article.course li {
 }
 
 div.nextcoursedesc {
-    margin: 10px 15px 25px;
+    margin: 2px 16px 16px;
 }
 
 a.nextcourselink {
@@ -353,14 +376,44 @@ a.nextcourselink strong {
     margin-left: 0.2em;
 }
 
-article.post header.post-header {
-    margin-top: 6px;
+article.home { // Blog
+    ul.post-list {
+        h1,h2,h3 {
+            padding-top: 0px;
+            margin-bottom: 3px;
+        }
+    }
 }
 
-article.post header.post-header.overlay-into-banner {
-    margin-top: -88px;
-    @include media-query(350px) {
-        margin-top: -44px;
+article.post {
+    header.post-header {
+        margin-top: 6px;
+    }
+
+    header.post-header.overlay-into-banner {
+        margin-top: -133px;
+        @include media-query(700px) {
+            margin-top: -105px;
+        }
+        @include media-query(350px) {
+            margin-top: -72px;
+        }
+    }
+    .PageNavigation {
+      display: block;
+      width: auto;
+      overflow: hidden;
+    }
+
+    .PageNavigation a {
+      display: block;
+      width: 50%;
+      float: left;
+      margin: 1em 0;
+    }
+
+    .PageNavigation .next {
+      text-align: right;
     }
 }
 
@@ -370,6 +423,9 @@ header.post-header h3.translator {
 
 article.course {
     padding-top: 15px;
+    h2#further-reading {
+        margin-bottom: -6px;
+    }
 }
 
 article.course .post-header p {
@@ -385,6 +441,15 @@ header.post-header.overlay-into-banner {
     z-index: 4;
     text-align: center;
     transform: translate(-50%, -39%);
+}
+
+ul.main-tag-list {
+    li {
+        font-size: 111%;
+    }
+    li li {
+        font-size: 95%;
+    }
 }
 
 article.tag .tag_desc {
@@ -447,6 +512,12 @@ article.content-perma .content_links .copyright {
         padding: 5px;
         background-color: #eef;
         border-radius: 3px;
+    }
+}
+
+main header.post-header {
+    h1,h2,h3,h4,h5,h6 {
+        padding-top: 0px;
     }
 }
 
@@ -537,7 +608,7 @@ div.featured_content_list {
     }
 
     .content_desc blockquote {
-        @include relative-font-size(1.0625);
+        @include relative-font-size(1.11875);
         color: $grey-color-dark;
     }
 }
