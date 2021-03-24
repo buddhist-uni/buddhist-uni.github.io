@@ -2,15 +2,15 @@
 layout: page
 title: Courses
 permalink: /courses/
-image: "https://illeakyw.sirv.com/Images/banners/buddha_teaching_watercolor.jpg"
-image_width: 1338
-image_center_x: 99%
-image_center_y: 6%
-big_image: "https://upload.wikimedia.org/wikipedia/commons/2/24/044_Teaching_the_Five_Disciples_%289014362720%29.jpg"
-banner_info: <a href="https://commons.wikimedia.org/wiki/File:044_Teaching_the_Five_Disciples_(9014362720).jpg">Photo Dharma</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
+image_width: 1280
+image: "https://illeakyw.sirv.com/Images/banners/burmese-nuns-studying.jpg"
+image_center_x: 20%
+image_center_y: 46%
+big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg"
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
-The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into self-paced, free courses on a variety of [topics in Buddhist Studies]({% link tags.md %}). We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism:
+The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into free, self-directed reading guides on a variety of topics in Buddhist Studies. We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism:
 
 {% for cslug in site.data.course_order %}
 {% assign course = site.courses | where: "slug", cslug | first %}

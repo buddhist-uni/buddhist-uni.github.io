@@ -1,5 +1,6 @@
 ---
 title: "The Majjhima Nikāya"
+subtitle: "The Middle Length Discourses of the Buddha"
 description: "A rigerous tour of the Majjhima Nikāya led by Bhikkhu Bodhi and supplemented by the excellent comparative scholarship of Bhikkhu Anālayo, this course will give you an excellent grounding in the most readable and important of the Early Buddhist Texts."
 lecturers:
   - bodhi
@@ -7,6 +8,12 @@ time: 13
 google_doc_id: 1LO0wOVoc17KNUtOfbYo6Gg7wD1ycw9TLndi095Ii02I
 feedback_id: "The+Majjhima+Nikaya"
 icon: "fas fa-crow"
+image: "https://illeakyw.sirv.com/Images/banners/buddha_teaching_watercolor.jpg"
+image_width: 1338
+image_center_x: 99%
+image_center_y: 6%
+big_image: "https://upload.wikimedia.org/wikipedia/commons/2/24/044_Teaching_the_Five_Disciples_%289014362720%29.jpg"
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:044_Teaching_the_Five_Disciples_(9014362720).jpg">Photo Dharma</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 next_courses:
   - ma
   - characters

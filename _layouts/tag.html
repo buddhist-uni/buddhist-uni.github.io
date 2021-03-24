@@ -17,16 +17,14 @@ layout: default
 {% else %}
 <em class="back">Back: <a href="{% link tags.md %}">Topic Index</a></em>
 {% endif %}
-{% endcapture %}{{ backlink }}
-
-<h1 class="post-title">{{ page.title | escape }}</h1>
-    
+{% endcapture %}{% unless page.banner_info %}{{ backlink }}{% endunless %}
+<h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | where: "slug", page.slug | first %}
 {% if course %}
 <p><em>For a more structured walkthrough of this content, see the <a href="{{ course.url }}">course</a>.</em></p>
 {% endif %}
     
-<div class="tag_desc">{{ content }}</div>
+<div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
 
 {% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
 {% assign childtags = site.tags | where_exp: "t", cfilter | sort: "title" %}

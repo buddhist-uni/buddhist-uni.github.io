@@ -165,11 +165,14 @@ figure figcaption {
     }
 }
 
+$banner-shadow: 0 0 8px black;
+
 .banner-img {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 240px;
+    text-shadow: $banner-shadow;
 }
 
 .banner-img.fullsize {
@@ -432,15 +435,28 @@ article.course .post-header p {
     margin-bottom: 0px;
 }
 
-header.post-header.overlay-into-banner {
-    text-shadow: 0 0 8px black;
-    margin-top: -250px;
-    left: 50%;
-    position: absolute;
+%overlay-into-banner {
+    text-shadow: $banner-shadow;
     color: white;
     z-index: 4;
+    position: absolute;
     text-align: center;
+}
+
+header.post-header.overlay-into-banner {
+    @extend %overlay-into-banner;
+    margin-top: -250px;
+    left: 50%;
     transform: translate(-50%, -39%);
+}
+
+h1.overlay-into-banner {
+    @extend %overlay-into-banner;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 ul.main-tag-list {
