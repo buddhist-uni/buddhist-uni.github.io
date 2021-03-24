@@ -90,6 +90,7 @@
             searchResults.innerHTML = e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
+            searchResults.onclick = maybeRegisterNavigation.bind(e.data);
             if (document.activeElement === searchBox) {
               pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), CHECKTIME);
               searchForm.onsubmit = handle.bind(e.data);
