@@ -1,5 +1,7 @@
 ---
 title: Library
+section: library
+slug: library
 permalink: /library/
 image: "https://illeakyw.sirv.com/Images/banners/nostalgic-gate.jpeg"
 image_width: 1280

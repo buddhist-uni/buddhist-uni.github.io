@@ -1,6 +1,7 @@
 ---
 title: "Topical Bibliographies"
 permalink: "/tags/"
+section: library
 layout: page
 image: "https://illeakyw.sirv.com/Images/banners/tibetan_prayer_flags.jpg"
 image_width: 1280

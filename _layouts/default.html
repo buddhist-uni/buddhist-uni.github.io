@@ -51,22 +51,22 @@
     <script async src="/assets/js/autotrack.js"></script>
   {%- endif -%}{% if page.banner_info %}
   <style>
-    .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?{{ site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
-    {% if page.image_width > site.data.banner.double_size %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }{% endif %}
-    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }{% endif %}
+    .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
+    {% if page.image_width > site.data.banner.double_size %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ page.sirv_options | default: site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }{% endif %}
+    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }{% endif %}
   </style>
   {% endif %}
 </head>
 
   <body>
 
-<header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
+<header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% elsif site.header_pages contains page.path %} smallsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
       <nav class="site-nav-links">
           {%- for path in site.header_pages -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="page-link{% if my_page.slug == page.section %} highlighted-nav-link{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {%- endfor -%}
       </nav>
   </div>

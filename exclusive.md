@@ -1,5 +1,6 @@
 ---
 title: "Exclusive Works"
+section: library
 permalink: "/exclusive/"
 layout: page
 ---

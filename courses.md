@@ -1,5 +1,7 @@
 ---
 layout: page
+section: courses
+slug: courses
 title: Courses
 permalink: /courses/
 image_width: 1280

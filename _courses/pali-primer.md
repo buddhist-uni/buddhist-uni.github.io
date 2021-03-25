@@ -9,6 +9,11 @@ tags:
   - pali-language
 time: 4
 icon: "fas fa-parking"
+image: https://illeakyw.sirv.com/Images/banners/royal-herald.jpg
+image_width: 1204
+image_center_x: 65%
+image_center_y: 13%
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:A_herald_reads_from_a_black_parabaik_and_announces_Wellcome_L0026538.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 next_courses:
   - pali-new-course
   - imagery

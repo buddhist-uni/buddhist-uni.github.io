@@ -9,6 +9,7 @@ google_doc_id: 1LO0wOVoc17KNUtOfbYo6Gg7wD1ycw9TLndi095Ii02I
 feedback_id: "The+Majjhima+Nikaya"
 icon: "fas fa-crow"
 image: "https://illeakyw.sirv.com/Images/banners/buddha_teaching_watercolor.jpg"
+sirv_options: "exposure=10"
 image_width: 1338
 image_center_x: 99%
 image_center_y: 6%

@@ -5,6 +5,13 @@ google_doc_id: 10EHXFzAMcmtedj6SgolIHBN1t0s-wzK1
 lecturers:
   - analayo
 icon: "fas fa-spinner"
+image: https://illeakyw.sirv.com/Images/banners/adachi_matsue.jpg
+sirv_options: "blur=1&saturation=1"
+image_width: 1280
+image_center_x: 40%
+image_center_y: 56%
+big_image: https://upload.wikimedia.org/wikipedia/commons/5/52/Adachi_Museum_of_Art_Near_Matsue_Japanese_Garden_1.JPG
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Near_Matsue_Japanese_Garden_1.JPG">Matsue</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 description: "A short course on part of the Madhyama Āgama held in 2013, the sutras covered (MA 72-86) revolve around the interdependence of _samatha_ and _vipassana_ meditation and their co-creation of wisdom.  Bhikkhu Anālayo makes the difficult subject accessible in his inimitably methodical style."
 time: 1
 tags:

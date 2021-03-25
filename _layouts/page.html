@@ -2,10 +2,12 @@
 layout: default
 ---
 <article class="post">
-
+  
+  {% unless site.header_pages contains page.path %}
   <header class="post-header{% if page.banner_info %} overlay-into-banner{% endif %}">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  {% endunless %}
 
   <div class="post-content">
     {{ content }}
