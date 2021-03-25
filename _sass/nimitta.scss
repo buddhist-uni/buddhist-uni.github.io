@@ -25,6 +25,9 @@ header.site-header {
                 margin-right: 13px;
             }
         }
+        a.highlighted-nav-link {
+            border-bottom: 1px solid white;
+        }
     }
     .site-title {
         color: white;
@@ -175,6 +178,16 @@ $banner-shadow: 0 0 8px black;
     text-shadow: $banner-shadow;
 }
 
+.banner-img.smallsize {
+    height: 150px;
+    @media (max-width: 329px) {
+        height: 167px
+    }
+    @media (max-width: 299px) {
+        height: 200px;
+    }
+}
+
 .banner-img.fullsize {
     height: $bannerfullsize;
     @media (min-width: 1800px) {
@@ -309,6 +322,13 @@ footer a.u-email {
 
 .content_box div.course_link {
     margin: 7px 2px 2px 7px;
+}
+
+i.fac-fojing {
+    font-style: normal;
+}
+i.fac-fojing:after {
+    content: "佛經";
 }
 
 .simple_content p {
@@ -630,7 +650,7 @@ div.featured_content_list {
 }
 
 .ordinal-content-list {
-    padding-left: 5px;
+    padding-left: 21px;
 }
 
 div.similar_content_footer {

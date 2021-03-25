@@ -1,7 +1,12 @@
 ---
 title: "Imagery in the Early Buddhist Texts"
 icon: "far fa-images"
-image: https://illeakyw.sirv.com/Images/imagery-course/intro.JPG
+image: https://illeakyw.sirv.com/Images/banners/wheel_stele.jpg
+image_width: 1000
+image_center_y: 50%
+sirv_options: "shadows=-1"
+big_image: https://images.metmuseum.org/CRDImages/as/original/DP123360.jpg
+banner_info: <a href="https://www.metmuseum.org/art/collection/search/38118">The Met</a>
 time: 2
 description: "A rigerous tour of key words and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhethoric it deployed. This course also serves as an introduction to Pāli for nonspecialists."
 part_header: This is part of a course going systematically through Bhikkhu Analayo's <a href="/content/monographs/craving-to-liberation_analayo">Excursions</a> <a href="/content/monographs/grasping-to-emptiness_analayo">series</a>.

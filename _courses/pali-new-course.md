@@ -10,6 +10,11 @@ tags:
   - pali-language
 time: 3
 icon: "fab fa-product-hunt"
+image: https://illeakyw.sirv.com/Images/banners/sinhalese_covers.jpg
+image_width: 1280
+image_center_y: 90%
+big_image: https://upload.wikimedia.org/wikipedia/commons/3/30/Illustrated_Sinhalese_covers_%28inside%29_showing_the_events_Wellcome_L0031774.jpg
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Illustrated_Sinhalese_covers_(inside)_showing_the_events_Wellcome_L0031774.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">BY 4.0</a>
 next_courses:
   - pali-sutta-reading
   - imagery

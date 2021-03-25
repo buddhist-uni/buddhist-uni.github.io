@@ -1,5 +1,7 @@
 ---
 title: About
+section: about
+slug: about
 permalink: /about/
 image: "https://illeakyw.sirv.com/Images/banners/lost-monks.jpeg"
 image_width: 1024

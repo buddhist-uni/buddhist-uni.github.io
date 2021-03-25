@@ -98,42 +98,49 @@ defaults:
         type: "posts"
     values:
         layout: "blog_post"
+        section: "blog"
   - 
     scope:
         path: ""
         type: "courses"
     values:
         layout: "course"
+        section: "courses"
   - 
     scope:
         path: ""
         type: "authors"
     values:
         layout: "author"
+        section: "library"
   - 
     scope:
         path: ""
         type: "series"
     values:
         layout: "series"
+        section: "library"
   - 
     scope:
         path: ""
         type: "publishers"
     values:
         layout: "publisher"
+        section: "library"
   - 
     scope:
         path: ""
         type: "journals"
     values:
         layout: "journal"
+        section: "library"
   - 
     scope:
         path: ""
         type: "tags"
     values:
         layout: "tag"
+        section: "library"
   -
     scope:
         path: ""
@@ -142,12 +149,14 @@ defaults:
         formats: [pdf, epub]
         layout: "content"
         base_value: 0.2
+        section: "library"
   -
     scope:
         path: ""
         type: "categories"
     values:
         layout: "content-category"
+        section: "library"
   -
     scope:
         path: "_content/articles"

@@ -1,9 +1,11 @@
 ---
 title: "Authors"
 permalink: "/authors/"
+section: library
 layout: page
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:(Above)_sBed-byed_(Gopaka),_holding_a_book;_Wellcome_V0018272_(cropped).jpg">Wellcome Library</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 image: "https://illeakyw.sirv.com/Images/banners/gopaka-book.jpeg"
+sirv_options: saturation=-8&brightness=3&blur=1
 image_width: 480
 image_center_x: 30%
 image_center_y: 29%

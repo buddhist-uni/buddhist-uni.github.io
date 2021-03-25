@@ -1,5 +1,7 @@
 ---
 title: "Newsletter"
+section: blog
+slug: blog
 layout: home
 list_title: "Updates"
 image: "https://illeakyw.sirv.com/Images/banners/monk-slap.jpeg"

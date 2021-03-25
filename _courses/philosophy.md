@@ -6,6 +6,7 @@ description: "An introduction to Buddhist Philosophy for students starting to fe
 time: 3
 icon: "fas fa-chess-queen"
 image: "https://illeakyw.sirv.com/Images/banners/Odilon_Redon.jpeg"
+sirv_options: "saturation=1"
 image_width: 802
 image_center_y: 12%
 image_center_x: 39%
