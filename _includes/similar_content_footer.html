@@ -15,7 +15,7 @@
     {% assign denom = site.data.content.d_i %}
     {% if include.content.course %}
       {% if include.content.course == candidate.course %}
-        {% assign score = site.data.content.ccms %}
+        {% assign score = score | plus: site.data.content.ccms %}
       {% endif %}
       {% if candidate.tags.size > 0 %}
         {% if candidate.tags contains include.content.course %}

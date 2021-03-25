@@ -128,7 +128,7 @@ As you read through *Robinson*, please also consider the following alongside eac
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 4 (as promised): Aesthetics
 {:.mb-0}
-- Aesthetics was actually a major point of departure for the Early Mahayana, who rejected the cold, austerity of the Abhidhamma in favor of more beautiful expressions of enlightened wisdom.
+- Aesthetics was actually a major point of departure for the Early Mahayana, who rejected the cold austerity of the Abhidhamma in favor of more beautiful expressions of enlightened wisdom.
 
 ##### Chapter 5: “The Pantheon”
 
