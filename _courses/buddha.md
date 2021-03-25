@@ -39,7 +39,7 @@ But while the Buddha was born a man, a man he did not remain. Through his superi
 
 If you're looking for a quick and inspiring biography of the Buddha, I recommend [*The Biography of Shakyamuni Buddha* by Master Hsing Yun]({% link _content/monographs/biography-of-shakyamuni_hsing-yun.md %}). This course goes beyond the basics to reading the primary sources themselves, and therefore requires some comfort reading [the Early Buddhist Texts]({% link _courses/ebts.md %}).
 
-## Course Outline
+## Course Materials
 
 This syllabus has no associated lectures. It weaves together several, free books, mostly on the Pāli texts.
 
