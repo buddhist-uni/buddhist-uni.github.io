@@ -12,6 +12,7 @@ course: philosophy
 tags:
   - origination
   - nibbana
+  - psychology
 ---
 
 > The key principle in Buddhism is that understanding sets you free. It’s not about attaining or creating anything, it’s about simply understanding things as they are
