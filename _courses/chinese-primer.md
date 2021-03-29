@@ -61,13 +61,15 @@ This is an extremely challenging but doable goal for someone new to Chinese. If 
 {% include content_box.html category="reference" slug="drops" %}
 {% include content_box.html category="reference" slug="chinese-grammar_ctcfl" %}
 
-And even if you're already a bilingual English-Chinese speaker, I recommend that everyone get:
+And even for the bilingual English-Chinese speakers, I recommend everyone get:
 {% include content_blurb.html category="reference" slug="pleco" %}
 - The world's best Chinese dictionaries.
 - Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank"} containing the vocab for the class and review said vocabulary in a flashcard-like interface.
 - Make sure to also download the (free) "Buddhist" Dictionary Add-on after you install the app, as it has many Buddhist terms the standard dictionary does not.
 
 ### Volume 2: The Indian Tradition
+
+Once you've successfully completed the sutra in Volume 1, Volume 2 will introduce the three main EBT genres.
 
 {% include content_box.html category="booklets" slug="indian-tradition_kieschnick" %}
 

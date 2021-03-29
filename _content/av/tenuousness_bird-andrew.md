@@ -15,6 +15,6 @@ tags:
 publisher: "Fat Possum"
 ---
 
-> Love of hate acts as an axis uh huh
+> Love of hate acts as an axis uh huh  
 First it wanes and then it waxes  
 (Hmm so, procreate and pay your taxes)
