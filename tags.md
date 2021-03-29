@@ -43,7 +43,7 @@ Simply click on whatever topic you're interested in:
         - [The Saṃyukta Āgama]({% link _tags/sa.md %})
         - [The Saṃyutta Nikāya]({% link _tags/sn.md %})
         {% endcomment %}
-        - [The Suttas]({% link _tags/sutta.md %})
-        - [The Vinaya]({% link _tags/vinaya-pitaka.md %})
+          - [The Suttas]({% link _tags/sutta.md %})
+          - [The Vinaya]({% link _tags/vinaya-pitaka.md %})
 - [The (Human) World]({% link _tags/world.md %})
 {:.main-tag-list id="toc"}
