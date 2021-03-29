@@ -10,6 +10,7 @@ course: setting
 status: featured
 tags:
   - thig
+  - characters
   - nuns
   - bhikkhuni
   - pali-commentaries

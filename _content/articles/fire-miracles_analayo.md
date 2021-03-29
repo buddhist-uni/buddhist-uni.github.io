@@ -10,7 +10,6 @@ tags:
   - dn
   - buddha
   - indian
-  - setting
   - iddhis
   - art
 year: 2015
