@@ -11,9 +11,10 @@ volume: 2011
 pages: "12--38"
 course: setting
 tags:
-  - brahma
+  - deva
   - dialogue
   - cosmology
+  - characters
   - indian
   - ma
 status: featured
