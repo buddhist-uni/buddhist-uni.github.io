@@ -10,6 +10,7 @@ tags:
   - modernity
   - art-theory
   - emotions
+  - aesthetics
 course: ideology
 year: 2020
 month: aug
