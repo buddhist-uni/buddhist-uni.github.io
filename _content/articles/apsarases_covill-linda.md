@@ -10,6 +10,7 @@ pages: "131--139"
 file_links:
   - "exclusive_01/The%20Buddhist%20Conversion%20of%20the%20Nymphs%20of%20Heaven%20-%20Linda%20Covill.pdf"
 drive_links: ["https://drive.google.com/file/d/1Rk5X2UnMtEmTTc648pvbL0GVeV4_P9Wy/view?usp=drivesdk"]
+status: featured
 course: indian
 tags:
   - deva

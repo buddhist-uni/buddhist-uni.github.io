@@ -7,6 +7,7 @@ year: 2020
 publisher: punctum
 external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/47515/0322.1.00.pdf"
 course: daoism
+status: featured
 tags:
   - chan-lit
   - chan-roots
