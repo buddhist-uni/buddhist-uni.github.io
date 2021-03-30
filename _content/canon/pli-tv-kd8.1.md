@@ -6,6 +6,7 @@ external_url: "https://suttacentral.net/pli-tv-kd8/en/brahmali"
 drive_links:
   - "https://drive.google.com/file/d/1IJl4a9wBvsulWJjL3asjrVMsKxCil8vr/view?usp=drivesdk"
 year: 2021
+status: featured
 course: characters
 tags:
   - vinaya-pitaka

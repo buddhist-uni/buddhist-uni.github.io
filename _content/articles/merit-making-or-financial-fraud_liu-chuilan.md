@@ -8,6 +8,7 @@ year: 2018
 journal: jiabs
 volume: 41
 pages: "169--208"
+status: featured
 course: indian
 tags:
   - mahayana-roots

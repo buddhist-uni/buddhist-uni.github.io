@@ -6,6 +6,7 @@ external_url: "http://budblooms.org/2020/07/19/mt-kailash-a-pilgrims-companion/"
 drive_links:
   - "https://drive.google.com/file/d/18h8PzjGi45VGzUIOB61yDcn2NOwRZsy0/view?usp=drivesdk"
 year: 2020
+status: featured
 course: pilgrimage
 tags:
   - setting

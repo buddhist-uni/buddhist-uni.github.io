@@ -9,6 +9,7 @@ course: setting
 year: 2019
 pages: "964--969"
 journal: Mindfulness
+status: featured
 volume: 10
 tags:
   - mindfulness
