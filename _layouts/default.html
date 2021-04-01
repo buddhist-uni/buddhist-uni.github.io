@@ -49,11 +49,14 @@
     }
     </script>
     <script async src="/assets/js/autotrack.js"></script>
-  {%- endif -%}{% if page.banner_info %}
+  {%- endif -%}{%- if page.banner_info or page.footer_info -%}
+  {%- capture infobutton -%}<details class="banner-info details-reset"><summary><i class="fab fa-creative-commons"></i></summary><div>Photo by {{ page.banner_info | default: page.footer_info }}</div></details>{%- endcapture -%}
   <style>
-    .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
-    {% if page.image_width > site.data.banner.double_size %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ page.sirv_options | default: site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }{% endif %}
-    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .banner-img { background-image: {{ site.data.banner.overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }{% endif %}
+    {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
+    {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
+    .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
+    {% if page.image_width > site.data.banner.double_size %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ page.sirv_options | default: site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }{% endif %}
+    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }{% endif %}
   </style>
   {% endif %}
 </head>
@@ -70,7 +73,7 @@
           {%- endfor -%}
       </nav>
   </div>
-  {% if page.banner_info %}<details class="banner-info details-reset"><summary><i class="fab fa-creative-commons"></i></summary><div>Photo by {{ page.banner_info }}</div></details>{% endif %}
+  {% if page.banner_info %}{{ infobutton }}{% endif %}
 </header>
 
     <main class="page-content" aria-label="Content">
@@ -79,9 +82,10 @@
       </div>
     </main>
 
-<footer class="site-footer h-card">
+<footer class="site-footer h-card{% if page.footer_info %} footer-img{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
+  {%- if page.footer_info -%}{{ infobutton }}{%- endif -%}
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>

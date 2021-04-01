@@ -34,7 +34,6 @@ header.site-header {
         line-height: $base-line-height * $base-font-size * 1.5;
         padding-top: 5px;
         img {
-            margin-left: -10px;
             display: inline;
         }
         span {
@@ -59,6 +58,7 @@ $ipad-margin: 40px;
 }
 
 main.page-content {
+    z-index: 2;
     padding: 15px 0;
 }
 
@@ -110,6 +110,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .btn i.fas {
@@ -202,9 +203,6 @@ $banner-shadow: 0 0 8px black;
 }
 
 details.banner-info {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     padding: 18px 9px 8px 18px;
     font-size: 12px;
     color: white;
@@ -215,6 +213,27 @@ details.banner-info {
     div a {
         color: white;
     }
+}
+header details.banner-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer details.banner-info {
+    margin-left: auto;
+}
+
+footer.footer-img {
+    margin-top: -250px;
+    height: 800px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 0;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 0 0 8px black;
 }
 
 h5 {
