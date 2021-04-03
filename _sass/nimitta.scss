@@ -225,7 +225,7 @@ footer details.banner-info {
 }
 
 footer.footer-img {
-    margin-top: -250px;
+    margin-top: -200px;
     height: 800px;
     display: flex;
     flex-direction: column-reverse;
@@ -638,6 +638,7 @@ div.featured_content_list {
         border: 1px solid lightgray;
         border-radius: 9px;
         height: fit-content;
+        background-color: #fdfdfd;
         img {
             border: 15px solid white;
             background-color: lightgrey;
