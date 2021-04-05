@@ -1,6 +1,7 @@
 ---
 title: "The (Human) World"
 parents: [cosmology]
+level: 1
 image: https://illeakyw.sirv.com/Images/banners/Buddhist_Monk_ice_skating.jfif
 image_width: 1280
 image_center_y: 13%

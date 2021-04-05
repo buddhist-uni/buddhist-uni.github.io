@@ -1,0 +1,23 @@
+{%- assign childs = "" | split: "" -%}
+{%- if include.level < 4 -%}
+{%- for tag in site.tags -%}
+    {%- assign t = include.level | plus: 1 -%}
+    {%- if tag.level and tag.level < t -%}
+        {%- continue -%}
+    {%- elsif tag.parents contains include.tag.slug -%}
+        {%- assign childs = childs | push: tag -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- assign childs = childs | sort: "sortkey" -%}
+{%- endif -%}
+
+<div class="tag-list{{ include.level }}">
+    <div class="tagbox{{ include.level }}"><a href="{{ include.tag.url }}">{{ include.tag.title }} »</a></div>
+    {% if childs.size > 0 %}<div class="children{{ include.level }}">
+        {%- for c in childs -%}
+            {%- assign nl = include.level | plus: 1 -%}
+            {% include taglist.html tag=c level=nl %}
+        {%- endfor -%}
+    </div>{% endif %}
+</div>
+

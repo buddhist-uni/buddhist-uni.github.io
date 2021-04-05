@@ -1,6 +1,7 @@
 ---
 title: "Theravāda Buddhism"
 parents: [form]
+sortkey: 1
 image: https://illeakyw.sirv.com/Images/banners/mihintale.jpg
 image_width: 1280
 image_center_x: 60%

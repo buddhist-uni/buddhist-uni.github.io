@@ -2,7 +2,7 @@
 title: "April Showers"
 ---
 
-This month I've gotten a solid start on migrating over content from my [Google Drive folder](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}. You'll now find **four** new [topic tags]({% link tags.md %}) added to the [library]({% link library.md %}).
+This month I've gotten a solid start on migrating over content from my [Google Drive folder](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}. You'll now find **four** new [topic tags]({% link tags.html %}) added to the [library]({% link library.md %}).
 
 - [Imagery in the Early Buddhist Texts]({% link _tags/imagery.md %})
 - [Lay Buddhism]({% link _tags/lay.md %})

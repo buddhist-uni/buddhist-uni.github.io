@@ -1,6 +1,7 @@
 ---
 title: "The Function of Buddhism"
 parents: [buddhism]
+sortkey: 1
 image: https://illeakyw.sirv.com/Images/banners/wenboren.jpg
 image_width: 1938
 image_center_y: 65%

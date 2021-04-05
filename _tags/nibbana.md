@@ -1,6 +1,7 @@
 ---
 title: "Nibbāna"
 parents: [function]
+sortkey: 9
 image: https://illeakyw.sirv.com/Images/banners/Diamond_Throne_Vajrasana.jpg
 image_width: 1280
 image_center_x: 45%

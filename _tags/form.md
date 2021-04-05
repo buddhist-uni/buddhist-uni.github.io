@@ -1,6 +1,7 @@
 ---
 title: "The Form(s) of Buddhism"
 parents: [buddhism]
+sortkey: 2
 image: https://illeakyw.sirv.com/Images/banners/kung-fu-nun.jpg
 image_width: 1024
 big_image: https://upload.wikimedia.org/wikipedia/commons/6/69/Nonne_Kung_Fu_%28Angkor_Vat%29_%286926636097%29.jpg

@@ -16,8 +16,8 @@ The same, great content featured in [the courses]({% link courses.md %}) along w
 You can explore the library by:
 {:.mb-0}
 
-### [<i class="fas fa-tag"></i> Topic]({% link tags.md %})
-Find a topic that interests you in the [topic index]({% link tags.md %}) or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and then explore by clicking on the "[Subtopic](/tags/buddhism#children)" links at the bottom of the page. (Note that individual items in the library may appear in multiple bibliographies if tagged with multiple subjects.)
+### [<i class="fas fa-tag"></i> Topic]({% link tags.html %})
+Find a topic that interests you in the [topic index]({% link tags.html %}) or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and then explore by clicking on the "[Subtopic](/tags/buddhism#children)" links at the bottom of the page. (Note that individual items in the library may appear in multiple bibliographies if tagged with multiple subjects.)
 
 #### [<i class="fas fa-medal"></i> Best Of The Library]({% link blog.md %}#updates)
 For a currated, chronological list of the best additions to the library, see (and subscribe to!) [the newsletter]({% link blog.md %}) which highlights the best new arrivals every month or so.
