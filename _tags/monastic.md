@@ -1,6 +1,7 @@
 ---
 title: "Monastic Buddhism"
 description: A bibliography of free works introducing the purpose behind Buddhist Monasticism and how monks live.
+sortkey: 4
 parents: [form]
 image: https://illeakyw.sirv.com/Images/banners/nanzen-ji_Kyoto.jpg
 image_width: 1280

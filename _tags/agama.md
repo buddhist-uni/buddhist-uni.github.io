@@ -1,6 +1,7 @@
 ---
 title: "The Āgamas"
 parents: [ebts, mahayana-canon]
+sortkey: 9
 image: https://illeakyw.sirv.com/Images/banners/wooden-monk.jpg
 image_width: 1024
 image_center_X: 46%

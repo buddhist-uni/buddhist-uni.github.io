@@ -1,5 +1,6 @@
 ---
 title: Buddhism
+level: 1
 parents: [religion]
 image: https://illeakyw.sirv.com/Images/banners/searching.jpg
 image_width: 1280

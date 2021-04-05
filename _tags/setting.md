@@ -1,5 +1,6 @@
 ---
 title: "Buddha's India"
+sortkey: 2
 parents:
   - ebts
 ---

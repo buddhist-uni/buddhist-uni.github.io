@@ -498,13 +498,17 @@ h1.overlay-into-banner {
     padding-right: 20%;
 }
 
-ul.main-tag-list {
-    li {
-        font-size: 111%;
-    }
-    li li {
-        font-size: 95%;
-    }
+.tag-list1 div div {
+    padding-left: 13px;
+}
+.tagbox1 {
+    font-size: 140%;
+}
+.tagbox2 {
+    font-size: 120%;
+}
+.tagbox4 {
+    font-size: 105%;
 }
 
 article.tag .tag_desc {

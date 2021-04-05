@@ -15,7 +15,7 @@ layout: default
 {% if parents.size > 0 %}
 <em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
 {% else %}
-<em class="back">Back: <a href="{% link tags.md %}">Topic Index</a></em>
+<em class="back">Back: <a href="{% link tags.html %}">Topic Index</a></em>
 {% endif %}
 {% endcapture %}{% unless page.banner_info %}{{ backlink }}{% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>

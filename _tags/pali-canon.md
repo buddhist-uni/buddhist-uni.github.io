@@ -1,6 +1,7 @@
 ---
 title: "The Pāli Canon"
 parents: [ebts, theravada]
+level: 3
 description: A bibliography of free works about the canon of the Theravada School of Buddhism.
 image: https://illeakyw.sirv.com/Images/banners/burmese-pali-manuscript.jpg
 image_width: 1280

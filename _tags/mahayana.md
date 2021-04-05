@@ -1,6 +1,7 @@
 ---
 title: "Mahāyāna Buddhism"
 parents: [form]
+sortkey: 2
 image: https://illeakyw.sirv.com/Images/banners/mala_beads.jpg
 image_width: 1280
 image_center_x: 48%

@@ -1,5 +1,6 @@
 ---
 title: "Lay Buddhism"
+sortkey: 3
 parents: [form]
 description: A bibliography of free works on how to practice Buddhism as a householder.
 ---

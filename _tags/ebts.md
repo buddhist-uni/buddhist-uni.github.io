@@ -1,6 +1,7 @@
 ---
 title: "The Early Buddhist Texts"
 parents: [buddhism]
+sortkey: 3
 image_width: 1281
 image: https://illeakyw.sirv.com/Images/banners/Gandharan_Seated_Buddha_in_the_Attitude_of_Preaching.jpg
 image_center_x: 51.5%

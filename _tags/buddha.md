@@ -1,5 +1,7 @@
 ---
 title: "The Buddha"
+sortkey: 1
+level: 3
 parents:
   - ebts
   - cosmology

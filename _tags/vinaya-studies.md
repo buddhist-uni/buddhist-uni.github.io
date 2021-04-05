@@ -1,5 +1,6 @@
 ---
 title: "Vinaya Studies"
+level: 4
 parents: [monastic, vinaya-pitaka]
 ---
 
