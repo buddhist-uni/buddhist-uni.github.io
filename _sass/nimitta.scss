@@ -225,8 +225,8 @@ footer details.banner-info {
 }
 
 footer.footer-img {
-    margin-top: -200px;
-    height: 800px;
+    margin-top: -65px;
+    height: 650px;
     display: flex;
     flex-direction: column-reverse;
     border: 0;
@@ -498,17 +498,44 @@ h1.overlay-into-banner {
     padding-right: 20%;
 }
 
-.tag-list1 div div {
-    padding-left: 13px;
+// /tags/ page
+.tag-list1 img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: none;
 }
 .tagbox1 {
     font-size: 140%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 1px;
+    img {
+        height: 125px;
+    }
+}
+.tag-list1 .children1 {
+    display: flex;
+    padding-bottom: 10px;
+    place-content: space-between;
+    @include media-query($on-palm) {
+        font-size: 90%;
+    }
+    @include media-query(319px) {
+        font-size: 70%;
+    }
+}
+div.tag-list2 {
+    padding: 6px 3px;
+    width: 34%;
+    img {
+        height: 125px;
+    }
 }
 .tagbox2 {
     font-size: 120%;
-}
-.tagbox4 {
-    font-size: 105%;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 7px 7px 1px;
 }
 
 article.tag .tag_desc {

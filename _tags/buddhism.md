@@ -4,8 +4,9 @@ level: 1
 parents: [religion]
 image: https://illeakyw.sirv.com/Images/banners/searching.jpg
 image_width: 1280
-image_center_x: 90%
-image_center_y: 90%
+image_height: 970
+image_center_x: 84%
+image_center_y: 88%
 big_image: https://upload.wikimedia.org/wikipedia/commons/d/dd/Pearl_of_Searching.jpg
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Pearl_of_Searching.jpg">Nicholas Roerich</a>
 ---
