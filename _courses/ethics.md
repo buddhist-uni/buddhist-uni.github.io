@@ -235,6 +235,9 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 
 #### Chapter 3: Mahayana Adaptions
 
+{% include content_blurb.html category="essays" slug="considerations-and-criteria_patrul" %}
+- An introduction to Mahayana Ethics from within the tradition, and an excellent set of caveats to keep in mind as we ethically navigate our own lives.
+
 {% include content_blurb.html category="articles" slug="compassionate-killing_gethin" %}
 - A Theravada response to the Mahayana assertion of the existence of compassionate killing.
 

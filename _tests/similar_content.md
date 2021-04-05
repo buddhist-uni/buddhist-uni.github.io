@@ -41,6 +41,7 @@ test_cases:
     - [giving-makes-us-happy, meditation-moral-obligation_vox]
     - [kids-these-days_harris-malcolm, debt_graeber-david]
     - [mn044, bhikkhuni-dhammadinna_analayo]
+    - [teardrops-of-time_fuhrmann-arnika, i-lost-you_kalayanapong-angkarn]
 ---
 
 A series of integration tests for the quality of the content recommendations.
