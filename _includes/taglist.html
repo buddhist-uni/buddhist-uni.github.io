@@ -12,7 +12,13 @@
 {%- endif -%}
 
 <div class="tag-list{{ include.level }}">
-    <div class="tagbox{{ include.level }}"><a href="{{ include.tag.url }}">{{ include.tag.title }} »</a></div>
+    <div class="tagbox{{ include.level }}" onclick="location.href='{{ include.tag.url }}';">
+        {%- if include.level < 3 -%}
+            {%- assign w = 225 -%}{%- if include.level == 1 -%}{% assign w = 750 %}{%- endif -%}
+            <img style="object-position: {{ include.tag.image_center_x | default: "center" }} {{ include.tag.image_center_y | default: "center" }};" src="{{ include.tag.image }}{% if include.tag.image_height %}?cw={{ w }}&cx={{ include.tag.image_width | minus: w | times: include.tag.image_center_x | divided_by: 100.0 | round }}&ch=125&cy={{ include.tag.image_height | minus: 125 | times: include.tag.image_center_y | divided_by: 100.0 | round }}{% endif %}">
+        {%- endif -%}
+        <a href="{{ include.tag.url }}">{{ include.tag.title }} »</a>
+    </div>
     {% if childs.size > 0 %}<div class="children{{ include.level }}">
         {%- for c in childs -%}
             {%- assign nl = include.level | plus: 1 -%}
