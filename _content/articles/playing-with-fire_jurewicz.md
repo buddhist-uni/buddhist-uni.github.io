@@ -2,7 +2,7 @@
 title: "Playing With Fire: _Pratityasamutpada_ From the Perspective of Vedic Thought"
 authors:
   - jurewicz
-external_url: "https://pdfs.semanticscholar.org/ba71/8e6966ab946ebb5138a06b13ed6762a809fe.pdf"
+external_url: "http://www.ahandfulofleaves.org/documents/Playing%20with%20Fire_The%20pratityasamutpada%20from%20the%20perspective%20of%20Vedic%20thought_JPTS_Jurewicz_2000.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1vu3bf5QU_mLvgAuDkhF4qOsnhAqoNlm1/view?usp=drivesdk"
 course: imagery

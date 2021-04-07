@@ -3,7 +3,8 @@ title: "The Science Delusion"
 authors: [white-curtis]
 journal: tricycle
 year: 2014
-external_url: "https://tricycle.org/magazine/science-delusion/"
+external_url: "http://www.ahandfulofleaves.org/documents/The%20Science%20Delusion_White_Heuman_Tricycle_23_3.pdf"
+source_url: "https://tricycle.org/magazine/science-delusion/"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1SXVENICQX42VWItyUaT8pHKhq5N27uD5/view?usp=drivesdk"]
 course: buddhism
