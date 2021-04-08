@@ -502,7 +502,7 @@ h1.overlay-into-banner {
 .tag-list1 img {
     width: 100%;
     overflow: hidden;
-    object-fit: none;
+    background-color: $banner-color;
 }
 .tagbox1 {
     font-size: 140%;
@@ -511,6 +511,7 @@ h1.overlay-into-banner {
     padding: 10px 10px 1px;
     img {
         height: 125px;
+        object-fit: none;
     }
 }
 .tag-list1 .children1 {
@@ -529,6 +530,7 @@ div.tag-list2 {
     width: 34%;
     img {
         height: 125px;
+        object-fit: cover;
     }
 }
 .tagbox2 {

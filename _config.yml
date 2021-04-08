@@ -141,6 +141,7 @@ defaults:
     values:
         layout: "tag"
         section: "library"
+        illustration_width: 750
   -
     scope:
         path: ""
