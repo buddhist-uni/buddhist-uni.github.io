@@ -13,7 +13,6 @@ illustration: https://illeakyw.sirv.com/Images/tags/buddha_thangka.jpg
 illustration_height: 1229
 illustration_center_y: 40%
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:The_Buddha._Gouache._Wellcome_L0069372.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
-illustration_caption: The Buddha
 ---
 
 The religion founded by the [Buddha](/tags/buddha) in approximately the 5th century BCE in the Ganges River Valley.

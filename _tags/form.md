@@ -6,7 +6,6 @@ illustration: https://illeakyw.sirv.com/Images/tags/dhammagiri_offering.jpg
 illustration_height: 636
 illustration_width: 1024
 illustration_center_y: 20%
-illustration_caption: A group of lay Buddhists offers food to monks at a temple in Brisbane, Australia.
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Dhammagiri_Forest_Hermitage,_Buddhist_Monastery,_Brisbane,_Australia_www.dhammagiri.org.au_04.jpg">Gary A Collett</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 image: https://illeakyw.sirv.com/Images/banners/kung-fu-nun.jpg
 image_width: 1024

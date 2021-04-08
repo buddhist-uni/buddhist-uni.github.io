@@ -15,7 +15,6 @@ illustration_center_x: 51.5%
 illustration_center_y: 20%
 illustration_height: 1107
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Gandharan_-_Seated_Buddha_in_the_Attitude_of_Preaching_-_Walters_25123.jpg">Walters Art Museum</a>
-illustration_caption: A Gandharan statue of the Buddha in the teaching mudra.
 ---
 
 The Buddha's life and teachings as they've been passed down to us.

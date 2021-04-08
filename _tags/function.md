@@ -13,7 +13,6 @@ illustration: https://illeakyw.sirv.com/Images/tags/monk_of_Tibet.jpg
 illustration_width: 1024
 illustration_height: 738
 illustration_center_y: 77%
-illustration_caption: A Tibetan monk meditating with mala beads.
 illustration_info: <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Buddhist_monks_of_Tibet10.jpg">Antoine Taveneaux</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>
 ---
 
