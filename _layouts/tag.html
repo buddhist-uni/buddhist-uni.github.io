@@ -30,7 +30,6 @@ layout: default
     <img src="{{ page.illustration }}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}?h={{ h | round }}px" srcset="{{ page.illustration }} 1.5x" style="max-height: {{ h }}px;{% endif %}">
     <figcaption>
         <p class="attribution">Courtesy of {{ page.illustration_info }}</p>
-        <p class="description">{{ page.illustration_caption }}</p>
     </figcaption>
 </figure>
 {% endif %}
