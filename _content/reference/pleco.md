@@ -9,3 +9,4 @@ year: 2001
 
 > The world's best Chinese dictionaries
 
+Including an free, offline, mobile version of [The Digital Dictionary of Buddhism](http://www.buddhism-dict.net/ddb/){:target="_blank"}
