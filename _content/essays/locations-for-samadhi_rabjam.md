@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1zp1TSImWNpKNilS0aW7Nto2kER0Gyyce
 external_url: "https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/locations-cultivating-samadhi"
 year: 2000
 translator: "Adam Pearcey"
-course: place
+course: places
 tags:
   - meditation
   - world
