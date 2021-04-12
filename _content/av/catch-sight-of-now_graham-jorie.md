@@ -10,7 +10,7 @@ tags:
   - daily-life
   - poetry
   - time
-  - place
+  - places
   - nuns
   - emptiness
   - ambulit

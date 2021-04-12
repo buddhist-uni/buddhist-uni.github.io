@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1seaOXswcayJ7ly9D5hOp3k9aG_LIzKIy
 external_url: "https://www.academia.edu/19610551/Local_Food_The_Moral_Case"
 year: 2020
 status: featured
-course: place
+course: places
 tags:
   - environmentalism
   - globalization

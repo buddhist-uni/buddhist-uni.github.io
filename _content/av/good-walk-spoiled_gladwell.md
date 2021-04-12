@@ -18,7 +18,7 @@ tags:
   - parks
   - enclosure
   - capitalism
-  - place
+  - places
 status: featured
 series: revisionist-history
 number: 11

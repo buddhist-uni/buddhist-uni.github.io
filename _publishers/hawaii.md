@@ -1,5 +1,5 @@
 ---
-title: "University of Hawai‘i Press"
+title: "University of Hawai'i Press"
 address: "Honolulu"
 external_url: "https://uhpress.hawaii.edu/"
 ---

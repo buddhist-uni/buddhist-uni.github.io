@@ -13,7 +13,7 @@ tags:
   - tort
   - law
   - sovereignty
-  - place
+  - places
   - enclosure
   - becon
   - urbanization

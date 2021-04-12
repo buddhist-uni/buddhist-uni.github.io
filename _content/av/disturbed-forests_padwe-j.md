@@ -2,7 +2,7 @@
 title: "Disturbed Forests, Fragmented Memories"
 authors: ["Jonathan Padwe"]
 external_url: "https://newbooksnetwork.com/disturbed-forests-fragmented-memories"
-course: place
+course: places
 tags:
   - jarai
   - cambodia
