@@ -8,6 +8,7 @@ drive_links:
 course: pilgrimage
 tags:
   - faxian
+  - chinese
   - chan-roots
 year: 2019
 journal: hijbs
