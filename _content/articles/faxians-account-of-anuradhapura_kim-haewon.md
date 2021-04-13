@@ -8,6 +8,7 @@ drive_links:
 course: form
 tags:
   - sri-lankan
+  - anuradhapura
   - pilgrimage
   - korean
   - art
