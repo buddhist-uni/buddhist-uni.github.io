@@ -21,5 +21,5 @@ pages: "133--152"
 
 > valuable material for the contemplation of the transit of ideas between South Asia and Korea
 
-A Chinese monk visits medieval Sri Lanka and perhaps influences Korea sculpture, challenging our notions of nationalized Buddhisms.
+A Chinese monk visits medieval Sri Lanka and perhaps influences Korean sculpture, challenging our notions of nationalized Buddhisms.
 
