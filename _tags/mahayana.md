@@ -2,6 +2,10 @@
 title: "Mahāyāna Buddhism"
 parents: [form]
 sortkey: 2
+illustration: https://illeakyw.sirv.com/Images/tags/Tang-Guanyin.jpg
+illustration_height: 1024
+illustration_width: 768
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Guanyin_Stone_706_CE_Tang_Dynasty_Shaanxi_Province_China.jpg">Mary Harrsch</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
 image: https://illeakyw.sirv.com/Images/banners/mala_beads.jpg
 image_width: 1280
 image_center_x: 48%

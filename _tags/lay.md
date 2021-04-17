@@ -3,6 +3,10 @@ title: "Lay Buddhism"
 sortkey: 3
 parents: [form]
 description: A bibliography of free works on how to practice Buddhism as a householder.
+illustration: https://illeakyw.sirv.com/Images/tags/laywoman-meditating.jpeg
+illustration_width: 1280
+illustration_height: 853
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:POP_House_Meditaiton_Center_Thailand,_Khlong_Luang_,_Thailand_(Unsplash).jpg">Kosal Ley</a>, Public Domain
 image: https://illeakyw.sirv.com/Images/banners/Chinese_laywoman_offers_incense.jpg
 image_width: 1280
 image_height: 960

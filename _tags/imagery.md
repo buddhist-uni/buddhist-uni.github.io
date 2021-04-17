@@ -2,6 +2,10 @@
 title: "Imagery in the EBTs"
 sortkey: 4
 parents: [ebts, philosophy]
+illustration: https://illeakyw.sirv.com/Images/tags/first-sermon-stele.jpg
+illustration_height: 756
+illustration_width: 1024
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha's_first_sermon_at_Sarnath._Gandhara.Met.jpg">Ismoon</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 image: https://illeakyw.sirv.com/Images/banners/Buddha_resisting_the_demons_of_Mara.jpg
 image_width: 1280
 image_height: 912
