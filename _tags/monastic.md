@@ -3,6 +3,10 @@ title: "Monastic Buddhism"
 description: A bibliography of free works introducing the purpose behind Buddhist Monasticism and how monks live.
 sortkey: 4
 parents: [form]
+illustration: https://illeakyw.sirv.com/Images/tags/rainbow-umbrella-nun.jpeg
+illustration_height: 1080
+illustration_width: 720
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Dharamsala_(North_India)_(393088878).jpg">Steve Evans</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>
 image: https://illeakyw.sirv.com/Images/banners/nanzen-ji_Kyoto.jpg
 image_width: 1280
 image_center_y: 4%

@@ -2,6 +2,9 @@
 title: "The Āgamas"
 parents: [ebts, mahayana-canon]
 sortkey: 9
+illustration: https://illeakyw.sirv.com/Images/tags/turning-arhat.jpeg
+illustration_height: 900
+illustration_info: <a href="https://images.metmuseum.org/CRDImages/as/original/DP163962.jpg">The Met</a>
 image: https://illeakyw.sirv.com/Images/banners/wooden-monk.jpg
 image_width: 1024
 image_center_X: 46%
