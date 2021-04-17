@@ -94,7 +94,7 @@ layout: default
         {{ tags }}
    </p>
  
-    {% if page.course %}
+    {% if page.status != "rejected" and page.course %}
         {% assign course = site.courses | where: "slug", page.course | first %}
         {% if course %}<p class="featured_desc">Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>."
         </p>{% endif %}
