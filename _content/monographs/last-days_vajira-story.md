@@ -10,11 +10,10 @@ publisher: bps
 drive_links: ["https://drive.google.com/file/d/1wgFCG3f39gSzwXNteHGWN72qhJu4ulCh/view?usp=drivesdk"]
 course: pali-canon
 tags:
-  - buddha
   - dn
   - indian
   - death
 status: featured
 ---
 
-A classic translation of this important and immersive tale from the Pāli Canon. 
+A classic translation of [this (DN 16)](/content/canon/dn16) important and immersive tale from the Pāli Canon. 
