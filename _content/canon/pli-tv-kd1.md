@@ -12,6 +12,8 @@ tags:
   - vinaya-pitaka
   - buddha
   - pilgrimage
+  - navakovada
+  - ordination
   - setting
   - ebts
 ---
