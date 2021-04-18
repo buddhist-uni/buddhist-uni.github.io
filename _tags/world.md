@@ -2,13 +2,16 @@
 title: "The (Human) World"
 parents: [cosmology]
 level: 1
-image: https://illeakyw.sirv.com/Images/banners/Buddhist_Monk_ice_skating.jfif
-image_height: 960
-image_width: 1280
-image_center_y: 3%
-image_center_x: 83%
-big_image: https://upload.wikimedia.org/wikipedia/commons/2/20/Buddhist_Monks_ice_skating.JPG
-footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_Monks_ice_skating.JPG">Kumar Vivek</a>
+illustration: https://illeakyw.sirv.com/Images/tags/Honjo.jpg
+illustration_width: 1280
+illustration_height: 856
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Saitama_Prefecture_Route_142_Honjo_Station_Line,Honjo_city,Japan.jpg">Katorisi</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+image: https://illeakyw.sirv.com/Images/banners/silk_panels.jpg
+image_height: 1539
+image_width: 2560
+image_center_y: 84%
+image_center_x: 21%
+footer_info: <a href="https://commons.wikimedia.org/wiki/File:Khalili_Collections_Set_of_four_padded_silk_panels_1.jpg">Khalili Collections</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 ---
 
 The Physical Universe. Earth.
