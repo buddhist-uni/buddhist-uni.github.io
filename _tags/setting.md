@@ -6,6 +6,8 @@ parents:
 illustration: https://illeakyw.sirv.com/Images/tags/Hermitage_of_Valmiki.jpg
 illustration_width: 966
 illustration_height: 768
+illustration_center_x: 85%
+illustration_center_y: 25%
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Hermitage_of_Valmiki,_Folio_from_the_%22Nadaun%22_Ramayana_(Adventures_of_Rama)_LACMA_AC1999.127.45.jpg">Los Angeles County Museum of Art</a>
 image: https://illeakyw.sirv.com/Images/banners/Nagarjuna_Sagar_Dam.jpg
 big_image: https://upload.wikimedia.org/wikipedia/commons/5/5f/Charming_Swan_In_The_Mist_Of_Paradise_At_Nagarjuna_Sagar_Dam.jpg

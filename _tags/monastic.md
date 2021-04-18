@@ -4,6 +4,8 @@ description: A bibliography of free works introducing the purpose behind Buddhis
 sortkey: 4
 parents: [form]
 illustration: https://illeakyw.sirv.com/Images/tags/rainbow-umbrella-nun.jpeg
+illustration_center_y: 37%
+illustration_center_x: 54%
 illustration_height: 1080
 illustration_width: 720
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Dharamsala_(North_India)_(393088878).jpg">Steve Evans</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>
