@@ -3,6 +3,7 @@ title: "Pilgrimage"
 parents: [form]
 sortkey: 5
 illustration: https://illeakyw.sirv.com/Images/tags/mahabodhi-meditating.jpeg
+illustration_center_x: 63%
 illustration_width: 1280
 illustration_height: 960
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Mahabodhi_temple_and_around_IRCTC_2017_(60).jpg">Vinayaraj V R</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>

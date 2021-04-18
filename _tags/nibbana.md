@@ -5,7 +5,7 @@ sortkey: 9
 illustration: https://illeakyw.sirv.com/Images/banners/Diamond_Throne_Vajrasana.jpg
 illustration_width: 1280
 illustration_height: 960
-illustration_center_x: 45%
+illustration_center_x: 47%
 illustration_center_y: 82%
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/e/e1/Diamond_Throne_Vajrasana.jpg
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Diamond_Throne_Vajrasana.jpg">Evan Lovely</a>, <a href="https://creativecommons.org/licenses/by/2.0">BY 2.0</a>

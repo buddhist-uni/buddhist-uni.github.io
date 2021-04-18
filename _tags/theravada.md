@@ -4,6 +4,8 @@ parents: [form]
 sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/thai-ruins.jpg
 illustration_height: 1023
+illustration_center_y: 95%
+illustration_center_x: 70%
 illustration_width: 654
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:ThaiPrasatHinPhimai08.jpg">Ziegler175</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
 image: https://illeakyw.sirv.com/Images/banners/mihintale.jpg

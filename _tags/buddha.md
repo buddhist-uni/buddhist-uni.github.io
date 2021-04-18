@@ -9,6 +9,8 @@ illustration: https://illeakyw.sirv.com/Images/tags/buddha.jpg
 illustration_height: 1024
 illustration_width: 1022
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha_meditating,_Tokyo_National_Museum,_Japan_cropped.jpg">Jean-Pierre Dalbéra</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+illustration_center_y: 38%
+illustration_center_x: 48%
 image_width: 768
 image: https://illeakyw.sirv.com/Images/banners/buddha-oil.jpg
 image_center_y: 50%

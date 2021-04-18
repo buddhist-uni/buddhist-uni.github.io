@@ -3,11 +3,20 @@ title: "Characters in the EBTs"
 sortkey: 3
 parents:
   - ebts
-image: "https://illeakyw.sirv.com/Images/banners/elephant-taming-manuscript.jpg"
-image_center_x: 50%
-image_center_y: 51%
-big_image: https://upload.wikimedia.org/wikipedia/commons/3/3a/Nalagiri%2C_a_ferocious_elephant%2C_sits_listening_to_Buddha_Wellcome_L0027851.jpg
-banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nalagiri,_a_ferocious_elephant,_sits_listening_to_Buddha_Wellcome_L0027851.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">BY 4.0</a>
+illustration: "https://illeakyw.sirv.com/Images/banners/elephant-taming-manuscript.jpg"
+illustration_center_x: 30%
+illustration_center_y: 60%
+illustration_width: 1024
+illustration_height: 597
+big_illustration: https://upload.wikimedia.org/wikipedia/commons/3/3a/Nalagiri%2C_a_ferocious_elephant%2C_sits_listening_to_Buddha_Wellcome_L0027851.jpg
+illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Nalagiri,_a_ferocious_elephant,_sits_listening_to_Buddha_Wellcome_L0027851.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">BY 4.0</a>
+image: https://illeakyw.sirv.com/Images/banners/ascetic_Bodhisatta_with_Group_of_Five.jpg
+image_width: 1280
+image_height: 818
+image_center_x: 30%
+image_center_y: 35%
+footer_info: <a href="https://commons.wikimedia.org/wiki/File:Ascetic_Bodhisatta_Gotama_with_the_Group_of_Five.jpg">WikiMedia Commons</a>, Public Domain
+big_image: https://upload.wikimedia.org/wikipedia/commons/0/05/Ascetic_Bodhisatta_Gotama_with_the_Group_of_Five.jpg
 ---
 
 Even setting aside [The Buddha](/tags/buddha) himself, the Early Buddhist Texts are full of fascinating and compelling characters.

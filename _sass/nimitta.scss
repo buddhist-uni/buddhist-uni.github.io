@@ -536,8 +536,21 @@ div.tag-list2 {
 .tagbox2 {
     font-size: 120%;
     border: 1px solid darkgray;
+}
+.tagbox2,.tagbox3 {
     border-radius: 10px;
     padding: 7px 7px 1px;
+}
+.tagbox3 {
+    font-size: 105%;
+    border: 1px solid lightgray;
+    margin: 5px;
+}
+.children3 {
+    margin-left: 7px;
+}
+.tagbox4 {
+    margin: 10px;
 }
 
 article.tag .tag_desc {

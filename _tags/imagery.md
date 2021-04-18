@@ -5,6 +5,8 @@ parents: [ebts, philosophy]
 illustration: https://illeakyw.sirv.com/Images/tags/first-sermon-stele.jpg
 illustration_height: 756
 illustration_width: 1024
+illustration_center_y: 90%
+illustration_center_x: 35%
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha's_first_sermon_at_Sarnath._Gandhara.Met.jpg">Ismoon</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 image: https://illeakyw.sirv.com/Images/banners/Buddha_resisting_the_demons_of_Mara.jpg
 image_width: 1280
