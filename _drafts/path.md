@@ -30,3 +30,10 @@ I recommend reading MN 117 first as a preview, then reading Nyanamoli’s anthol
 
 Having thus gotten the traditional map of the Path, we can now begin exploring its terrain.
 
+---
+
+{% include content_blurb.html category="av" slug="habits-towards-nibbana_santussika" %}
+- Ayya Santussika gives a guided meditation, followed by a talk about her own practice of...
+
+{% include content_blurb.html category="canon" slug="mn8" %}
+- A comprehensive list of 44 qualities to develop along with a rubric of levels at which we might assess ourselves.

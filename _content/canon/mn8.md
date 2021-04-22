@@ -5,11 +5,11 @@ translator: bodhi
 external_url: "https://suttacentral.net/mn8/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1KcJbljFfvjng9zvyqykjdsE3gvKpzoqZ/view?usp=drivesdk"
-course: function
+course: path
 status: featured
 tags:
   - mn
-  - path
+  - function
 year: 2009
 ---
 
