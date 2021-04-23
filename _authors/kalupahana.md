@@ -1,0 +1,3 @@
+---
+title: "David J. Kalupahana"
+---
