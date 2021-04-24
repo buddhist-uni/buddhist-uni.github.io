@@ -10,8 +10,9 @@ drive_links: ["https://drive.google.com/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu
 course: indian
 tags:
   - pali-canon
+  - setting
   - academia
   - ebts
 ---
 
-Gives a short overview of how we know the EBTs are authentic.
+Gives a short overview of the methods and evidence for studying the early history of Buddhism.
