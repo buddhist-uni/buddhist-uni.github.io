@@ -5,7 +5,15 @@ external_url: "https://www.accesstoinsight.org/lib/authors/bodhi/arahantsbodhisa
 drive_links: ["https://drive.google.com/file/d/1AeutNbkeeAAHT1D7e2vJT1870L6gbv1W/view?usp=drivesdk"]
 year: 2010
 course: form
-tags: [indian, mahayana, bodhisattva, buddhism, ebts, rebirth-stories]
+tags:
+  - indian
+  - mahayana
+  - mahayana-roots
+  - mahayana-canon
+  - bodhisattva
+  - buddhism
+  - ebts
+  - rebirth-stories
 status: featured
 ---
 
