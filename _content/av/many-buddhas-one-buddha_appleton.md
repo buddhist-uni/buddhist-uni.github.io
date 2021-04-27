@@ -8,6 +8,7 @@ publisher: nbn
 course: rebirth-stories
 tags:
   - indian
+  - mahayana-roots
   - avadana
 ---
 
