@@ -18,6 +18,7 @@ tags:
   - karma
   - abhidhamma
   - mara
+  - mahayana-roots
 year: 1997
 month: feb
 journal: "History of Religions"
