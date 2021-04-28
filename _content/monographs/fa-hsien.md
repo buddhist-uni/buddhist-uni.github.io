@@ -12,7 +12,6 @@ course: indian
 tags:
   - chan-roots
   - mahayana-roots
-  - agama
 olid: OL25495570M
 year: 1886
 publisher: oxford

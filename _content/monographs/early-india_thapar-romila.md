@@ -14,4 +14,4 @@ publisher: "Penguin Group"
 
 > the major focus of each chapter is the attempt to broadly interrelate the political, economic, social and religious aspects of a period with the intention of showing where and why changes have occurred
 
-An excellent introduction to early Indian history and setting in which the Buddha and his Religion grew.
+An excellent introduction to early Indian history and the setting in which the Buddha and his Religion grew.
