@@ -3,6 +3,7 @@ title: "Vinaya Studies"
 level: 4
 parents: [monastic, vinaya-pitaka]
 illustration: https://illeakyw.sirv.com/Images/tags/Ajaan_Geoff_Almsround.jpg
+illustration_center_x: 55%
 illustration_width: 800
 illustration_height: 730
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Ajaan_Geoff_Almsround.jpg">Mary Reinard</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>

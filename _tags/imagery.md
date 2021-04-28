@@ -1,6 +1,7 @@
 ---
 title: "Imagery in the EBTs"
 sortkey: 4
+level: 3
 parents: [ebts, philosophy]
 illustration: https://illeakyw.sirv.com/Images/tags/first-sermon-stele.jpg
 illustration_height: 756

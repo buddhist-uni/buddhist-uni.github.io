@@ -5,6 +5,8 @@ illustration: https://illeakyw.sirv.com/Images/tags/life-of-the-buddha.jpg
 illustration_width: 965
 illustration_height: 611
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Bodleian_MS._Burm._a._12_Life_of_the_Buddha_15-18.jpg">The Bodleian Library</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+illustration_center_x: 21%
+illustration_center_y: 65%
 image: https://illeakyw.sirv.com/Images/banners/Thai-monks-studying.jpg
 image_width: 1280
 image_height: 854

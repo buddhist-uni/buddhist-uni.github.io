@@ -1,6 +1,12 @@
 ---
 title: "Buddhist Philosophy"
 parents: [path]
+illustration: https://illeakyw.sirv.com/Images/tags/jade-teaching.jpg
+illustration_height: 973
+illustration_width: 1024
+illustration_info: <a href="https://www.metmuseum.org/art/collection/search/44215">The Met</a>
+illustration_center_x: 60%
+illustration_center_y: 50%
 image: https://illeakyw.sirv.com/Images/banners/kamakura-reclining-buddha.jpg
 image_width: 1280
 image_center_y: 55%
