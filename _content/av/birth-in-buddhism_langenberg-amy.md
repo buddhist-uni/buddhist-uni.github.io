@@ -1,7 +1,7 @@
 ---
 title: "Birth in Buddhism (Interview)"
 authors:
-  - "Amy Langenberg"
+  - langenberg-amy
 external_url: "https://newbooksnetwork.com/amy-langenberg-birth-in-buddhism-the-suffering-fetus-and-female-freedom-routledge-2017/"
 course: nuns
 tags:
