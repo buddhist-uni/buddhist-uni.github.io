@@ -16,6 +16,10 @@ section: search
 <div style="display: none;" id="search-loading"><h3><i class="fas fa-circle-notch fa-spin"></i></h3><p id="still-loading" style="display: none;">Still loading...</p></div>
 <ul id="search-results"><li>Sorry, this page requires Javascript</li></ul>
 
+<script>
+document.getElementById('search-loading').style.display = 'block';
+document.getElementById('search-results').innerHTML = '';
+</script>
 <script src="/assets/js/utils.js"></script>
 <script async src="/assets/js/search.js"></script>
 

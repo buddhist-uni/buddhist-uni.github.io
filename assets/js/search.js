@@ -3,8 +3,6 @@
   const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
-  loadingIndicator.style.display = 'block';
-  searchResults.innerHTML = '';
   var pendingui = null;
 
   const initialTitle = document.title;
