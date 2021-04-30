@@ -13,7 +13,7 @@ tags:
   - dhp
   - psychology
   - view
-  - kamma
+  - karma
   - ebts
 year: 2009
 ---

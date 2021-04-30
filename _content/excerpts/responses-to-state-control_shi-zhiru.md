@@ -7,6 +7,7 @@ booktitle: "Buddhist Approaches to Human Rights"
 chapter: 7
 pages: "125--157"
 publisher: transcript
+external_url: "https://www.transcript-verlag.de/chunks/media/ePDFs_chunks/bis%201399/9783839412633/9783839412633-007/9783839412633-007.pdf"
 source_url: "https://www.transcript-publishing.com/978-3-8376-1263-9/buddhist-approaches-to-human-rights/"
 year: 2010
 drive_links:
