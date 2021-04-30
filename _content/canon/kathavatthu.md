@@ -5,7 +5,6 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1V4yOyhF3F4JqDdoUPrE4F5mDo8mH73iY/view?usp=drivesdk"]
 external_url: "https://archive.org/download/PointsOfControversyKathavatthu/Points%20of%20Controversy%20%28Kathavatthu%29.pdf"
 course: sects
-status: featured
 tags: 
   - indian
   - abhidhamma

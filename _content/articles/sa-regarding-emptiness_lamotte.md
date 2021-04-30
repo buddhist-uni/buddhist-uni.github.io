@@ -10,6 +10,7 @@ file_links:
   - "exclusive_01/Three%20Sutras%20from%20the%20Samyukta%20Agama%20Regarding%20Emptiness%20-%20Étienne%20Lamotte.pdf"
 drive_links: ["https://drive.google.com/file/d/1QbtI5cQ8dD3zu6mkb83TKxMNHJzASrqI/view?usp=drivesdk"]
 course: mahayana-roots
+status: featured
 tags:
   - sa
   - emptiness

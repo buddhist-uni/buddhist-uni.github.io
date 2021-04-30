@@ -10,6 +10,7 @@ tags:
   - things
   - aesthetics
   - samadhi
+status: featured
 ---
 
 > Doctor, if only you could see  
