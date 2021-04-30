@@ -6,6 +6,7 @@ external_url: "http://hup.sub.uni-hamburg.de/volltexte/2014/145/pdf/HamburgUP_HB
 drive_links:
   - "https://drive.google.com/file/d/1NCQisWmjDPnA48QrIPCoWPAZXNKJBS5a/view?usp=drivesdk"
 course: indian
+status: featured
 olid: OL32230781M
 tags:
   - abhidhamma

@@ -8,7 +8,6 @@ year: 2018
 volume: 41
 journal: jiabs
 pages: "395--420"
-status: featured
 ---
 
 An exploration of the Buddhist caves of Western India, and what the historical record there can tell us about how Buddhism was received as it spread.
