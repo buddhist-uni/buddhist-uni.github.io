@@ -1,6 +1,5 @@
 ---
-title: "On Reading Buddhist Vinaya: Feminist History, Hermeneutics,
-and Translating Women’s Bodies"
+title: "On Reading Buddhist Vinaya: Feminist History, Hermeneutics, and Translating Women’s Bodies"
 authors: [langenberg-amy]
 journal: "the Journal of the American Academy of Religion"
 year: 2020

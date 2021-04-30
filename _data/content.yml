@@ -8,9 +8,9 @@ similar_count: 10
 ## Algorithm paramaters
 # Not tuned scientifically. Just guessing at appropriate values
 s_i: 0.1 # numerator prior
-d_i: 1 # denominator prior
-tdms: 2 # tag denom increment
-cdms: 2 # course denom increment
+d_i: 1.5 # denominator prior
+tdms: 1.1 # tag denom increment
+cdms: 1.5 # course denom increment
 adms: 1 # author denom increment
 ccms: 1.5 # course-course match numerator inc
 ctms: 1.2 # course-tag match score
