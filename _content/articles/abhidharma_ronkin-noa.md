@@ -8,7 +8,6 @@ month: aug
 year: 2010
 course: indian
 journal: plato
-status: featured
 tags:
   - abhidhamma
 ---
