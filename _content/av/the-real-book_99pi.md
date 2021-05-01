@@ -1,0 +1,16 @@
+---
+title: "The Real Book"
+year: 2021
+month: apr
+external_url: "https://99percentinvisible.org/episode/the-real-book/"
+course: books
+tags:
+  - jazz
+  - musicology
+  - communication
+  - copyright
+series: 99pi
+number: 438
+---
+
+The history of the iconic book of Jazz Standards.
