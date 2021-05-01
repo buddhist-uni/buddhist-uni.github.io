@@ -192,7 +192,9 @@ exclude:
     - _content/av/repetition_cooper-mcgloughlin.md
     - _content/av/sea-and-the-sacred-in-japan_rambelli-fabio.md
     - _content/av/talking-to-strangers_gladwell.md
+    - _content/av/the-real-book_99pi.md
     - _content/av/tranquility-and-insight_analayo.md
+    - _content/av/welcome-to-jurassic-art_99pi.md
     - _content/av/what-is-death.md
     - _content/av/why-chant_brahm.md
     - _content/booklets/buddhas-meditation-discourses.md
@@ -265,6 +267,7 @@ exclude:
     - _content/essays/vomiting-gold_gangshar.md
     - _content/essays/who-was-the-buddha_wynne.md
     - _content/excerpts/hacking-relationships_reagle-joseph.md
+    - _content/monographs/all-yesterdays.md
     - _content/monographs/behave_sapolsky-robert.md
     - _content/monographs/box_levinson-marc.md
     - _content/monographs/brief-history-of-time_hawking.md

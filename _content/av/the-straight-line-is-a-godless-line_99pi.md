@@ -7,7 +7,7 @@ external_url: "https://99percentinvisible.org/episode/the-straight-line-is-a-god
 course: people
 tags:
   - society
-  - art
+  - art-theory
   - architecture
 series: 99pi
 number: 134
