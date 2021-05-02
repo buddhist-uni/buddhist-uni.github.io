@@ -5,7 +5,7 @@ illustration: https://illeakyw.sirv.com/Images/tags/boat-crossing-sketch.jpg
 illustration_width: 716
 illustration_height: 1130
 illustration_center_y: 46%
-illustration_info: <a href="https://www.metmuseum.org/art/collection/search/49173" target="_blank">The Met</a>
+illustration_info: <a href="https://www.metmuseum.org/art/collection/search/49173">The Met</a>
 image: https://illeakyw.sirv.com/Images/banners/wenboren.jpg
 image_width: 1938
 image_height: 960

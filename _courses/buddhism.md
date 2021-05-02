@@ -23,13 +23,13 @@ next_course_descs:
 ---
 
 ## What is Buddhism?
-Buddhism is the religion founded by the Buddha in approximately the 5th century BCE in the Ganges River Valley. The Buddha's philosophy may be summed up as “every effect has a cause”. The Buddha then applied this philosophy to the problems at the heart of the human condition: mortality, anxiety, suffering and evil. 
+Buddhism is the religion founded by the Buddha in approximately the 5th century BCE in the Ganges River Valley. 
 
-He discovered that the cause of our spiritual disease is our erroneous, subconscious perception that we are at the center of the universe. And why not? Everything we hear, see, touch, smell, taste, feel or think happens to us! We are, in every moment, at the center of our own experience, so it's natural that we should think of ourselves as a real being at the center of things. 
+The Buddha taught that every effect has a cause and he used this idea to solve the problems at the heart of the human condition: death, anxiety, suffering and evil. 
 
-But this perspective, which the Buddha called “ignorance,” causes us to suffer when the things that we cling to or identify with (our body, our career, etc) inevitably decay and die. Being associated with what we don't like, being separated from what we like—trying to grasp, pin down and build a “self” out of the constantly changing, flowing things of the world is an inherently stressful project, no matter how it's conceived. 
+He discovered that the cause of our spiritual disease is our erroneous perception that we are at the center of things. We are, in every moment, the center of our own experience, and it's natural that we came to think of ourselves as a real being. But this perspective the Buddha called "ignorance," and it causes us to suffer when the things we identify with (our body, our career, our relationships, etc) change in ways we dislike or don't change in the ways we would like.
 
-The religion the Buddha founded is thus the set of contemplations, practices, and yes, even rituals and beliefs, which have been designed to help the practitioner to overcome these “selfish” tendencies and to attain liberation from the tyranny of “me” and “mine.”
+The religion the Buddha founded is the set of contemplations, practices and beliefs which have been discovered to help students overcome their "selfish" tendencies and to attain liberation from the tyranny of "me."
 
 ## Prerequisites
 This course assumes English language proficiency.
