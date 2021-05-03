@@ -96,7 +96,8 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
 1. {% include content_blurb.html slug="dn30" category="canon" %}
-    - This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not "Early Buddhist Texts."
+    - This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!
+1. {% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}
 1. {% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
 1. [E] The Buddha's Family
 
