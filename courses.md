@@ -12,7 +12,13 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-S
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
-The University organizes [content]({% link library.md %}) from [across the Web]({% link sources.md %}) into free, self-directed reading guides on a variety of topics in Buddhist Studies. We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism:
+The University organizes [content from across the Web]({% link library.md %}) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
+
+We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism. Courses with a "<i class="far fa-address-book"></i>" icon are detailed reading guides through works by the listed authors. Courses with a "<i class="fas fa-microphone-alt"></i>" icon also have associated lectures recorded by the listed instructor.
+
+If you'd like to discuss what you're learning with other students of early Buddhism, I recommend posting your thoughts and questions to [the SuttaCentral Forum](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank"} or [emailing us at the University](mailto:theopenbuddhistuniversity@gmail.com).
+
+We hope you enjoy our offerings:
 
 {% for cslug in site.data.course_order %}
 {% assign course = site.courses | where: "slug", cslug | first %}
