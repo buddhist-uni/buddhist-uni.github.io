@@ -158,6 +158,7 @@ exclude:
     - _content/articles/to-be-or-not-to-be_gessen-masha.md
     - _content/articles/unbearable_baskin-jon.md
     - _content/av/1619.md
+    - _content/av/abandoned-ships_atack-alex.md
     - _content/av/against-colonizing-space_deudney.md
     - _content/av/anthropocene-reviewed_green-john.md
     - _content/av/antique-oxtongue-iron_my-mechanic.md
@@ -194,6 +195,7 @@ exclude:
     - _content/av/photographing-fungi_axford-stephen.md
     - _content/av/repetition_cooper-mcgloughlin.md
     - _content/av/sea-and-the-sacred-in-japan_rambelli-fabio.md
+    - _content/av/take-a-walk_popup.md
     - _content/av/talking-to-strangers_gladwell.md
     - _content/av/the-real-book_99pi.md
     - _content/av/tranquility-and-insight_analayo.md
