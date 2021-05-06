@@ -16,3 +16,4 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:The_meditating_mon
 ---
 
 The training in wise attention.
+

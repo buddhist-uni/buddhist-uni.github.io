@@ -2,10 +2,6 @@
 title: "The (Human) World"
 parents: [cosmology]
 level: 1
-illustration: https://illeakyw.sirv.com/Images/tags/Honjo.jpg
-illustration_width: 1280
-illustration_height: 856
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Saitama_Prefecture_Route_142_Honjo_Station_Line,Honjo_city,Japan.jpg">Katorisi</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 image: https://illeakyw.sirv.com/Images/banners/sepia-city.jpg
 sirv_options: blur=2
 image_height: 728
@@ -16,3 +12,7 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Enjoying_The_City_
 ---
 
 The Physical Universe. Earth.
+
+<figure><iframe width="100%" height="350" src="https://www.youtube.com/embed/AslPYSm7jfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption><p class="attribution"><a target="_blank" href="https://www.youtube.com/watch?v=AslPYSm7jfg">The Wheel by SOHN</a></p></figcaption></figure>
+
