@@ -27,7 +27,7 @@ layout: default
 <div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
 {% if page.illustration %}
 <figure>
-    <img src="{{ page.illustration }}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if page.illustration contains ".sirv.com" %}?h={{ h | round }}px" srcset="{{ page.illustration }} 1.5x{% endif %}" style="height: {{ h }}px;{% endif %}">
+    <img src="{{ page.illustration }}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if page.illustration contains ".sirv.com" %}?h={{ h | round }}px" srcset="{{ page.illustration }} 1.5x{% endif %}" style="max-height: {{ h }}px;{% endif %}">
     <figcaption>
         <p class="attribution">Courtesy of {{ page.illustration_info | replace: ' href="http', ' target="_blank" href="http'  }}</p>
     </figcaption>
