@@ -139,6 +139,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="booklets" slug="anatta-nibbana_nyanaponika" %}
   - How is “extinguishing” the Middle Way? How is it not nihilism?  How is "extinguishing" different from "annihilation"?
 
+{% include content_blurb.html category="av" slug="fear-of-freedom_sujato" %}
+  - How is it that we both long for and fear freedom?
+
 #### Not Made of That
 
 {% include content_blurb.html category="essays" slug="advice-on-the-worldly-concerns_dundul" %}
