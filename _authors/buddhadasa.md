@@ -1,3 +1,3 @@
 ---
-title: "Buddhadasa Bhikkhu"
+title: "Buddhadāsa Bhikkhu"
 ---
