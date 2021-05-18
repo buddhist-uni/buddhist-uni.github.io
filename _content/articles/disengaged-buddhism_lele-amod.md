@@ -13,6 +13,7 @@ tags:
   - hindrances
   - emptiness
   - modernism
+status: featured
 ---
 
 > the most important sources of suffering are not something that activism can fix
