@@ -17,6 +17,6 @@ tags:
 publisher: oxford
 ---
 
-> The argument that a nun called Sthūlanandā really did have pendulous breasts and large buttocks is, pardon the pun, a thin one. As stock images of uncouth femininity, these outsized and ungainly physical features serve the *representational* project of this passage
+> The argument that a nun called Sthūlanandā really did have pendulous breasts and large buttocks is, pardon the pun, a thin one. As stock images of uncouth femininity, these outsized and ungainly physical features serve the *representational* project of this passage
 
 A survey of post-modern hermeneutical strategies for critical and historical readings of Canonical Vinaya literature.
