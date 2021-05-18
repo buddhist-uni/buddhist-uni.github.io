@@ -1,6 +1,6 @@
 ---
 title: "The Batman and the Bridge Builder"
-authors: ["the", "Roman Mars"]
+authors: ["Emmett FitzGerald", "Roman Mars"]
 year: 2021
 month: feb
 external_url: "https://99percentinvisible.org/episode/the-batman-and-the-bridge-builder/"
