@@ -154,6 +154,8 @@ exclude:
     - _content/articles/did-the-buddha-exist_wynne.md
     - _content/articles/landscapes-of-law_engel-david.md
     - _content/articles/mosquitoes-changed-everything_jarvis-brooke.md
+    - _content/articles/nuns-parajika_heirman-ann.md
+    - _content/articles/reshaping-timelessness_deleanu.md
     - _content/articles/should-trees-have-standing_stone-chris.md
     - _content/articles/to-be-or-not-to-be_gessen-masha.md
     - _content/articles/unbearable_baskin-jon.md
@@ -164,6 +166,7 @@ exclude:
     - _content/av/antique-oxtongue-iron_my-mechanic.md
     - _content/av/art-of-being-peace_tnh.md
     - _content/av/basically-i_delong-robert.md
+    - _content/av/batman-and-the-bridge_99pi.md
     - _content/av/because-podcast.md
     - _content/av/birth-in-buddhism_langenberg-amy.md
     - _content/av/blind-men-and-the-elephant_merchant-natalie.md
@@ -192,6 +195,7 @@ exclude:
     - _content/av/mn18-explanation_kearney-patrick.md
     - _content/av/monks-in-motion_chia-jack.md
     - _content/av/myanmar-temple-schools.md
+    - _content/av/neomaterialism_lecain-timothy.md
     - _content/av/photographing-fungi_axford-stephen.md
     - _content/av/real-change_tricycle.md
     - _content/av/repetition_cooper-mcgloughlin.md
@@ -273,6 +277,7 @@ exclude:
     - _content/essays/mystique-of-abhidhamma_sujato.md
     - _content/essays/rohinga-issue_maung-zarni.md
     - _content/essays/someday-ill-love-ocean_vuong.md
+    - _content/essays/training-the-mind_thangpa.md
     - _content/essays/vomiting-gold_gangshar.md
     - _content/essays/who-was-the-buddha_wynne.md
     - _content/excerpts/hacking-relationships_reagle-joseph.md
