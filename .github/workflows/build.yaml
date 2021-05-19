@@ -1,0 +1,14 @@
+name: Build the site
+on:
+  push:
+     branches:
+       - master
+jobs:
+   Jekyll:
+     runs-on: ubuntu-16.04
+     steps:
+         - uses: actions/checkout@v2
+         - uses: helaili/jekyll-action@v2
+           with:
+             token: ${{ secrets.BUILD_ACTION_TOKEN }}
+             target_branch: latest-build
