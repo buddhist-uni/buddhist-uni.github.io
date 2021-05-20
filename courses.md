@@ -21,7 +21,7 @@ If you'd like to discuss what you're learning with other students of early Buddh
 We hope you enjoy our offerings:
 
 {% for cslug in site.data.course_order %}
-{% assign course = site.courses | where: "slug", cslug | first %}
+{% assign course = site.courses | find: "slug", cslug %}
 {% assign courseware = site.content | where: "course", cslug %}
 {% assign booklets = courseware | where: "category", "booklets" %}
 {% assign textbooks = courseware | where: "category", "monographs" | concat: booklets %}

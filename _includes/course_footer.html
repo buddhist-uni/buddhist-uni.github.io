@@ -11,7 +11,7 @@
 </div>
 {%- endif -%}
 
-{%- assign ctag = site.tags | where: "slug", include.course.slug | first -%}
+{%- assign ctag = site.tags | find: "slug", include.course.slug -%}
 {%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" -%}
 {%- capture furthercourses -%}
 {%- assign floobar = nil -%}
@@ -46,7 +46,7 @@
   {%- assign cat_serieses = serieses | where: "category", catslug -%}
   {%- assign tagged_content = cat_serieses | concat: cat_content -%}
   {%- if tagged_content.size > 0 -%}
-    {%- assign category = site.categories | where: "slug", catslug | first -%}
+    {%- assign category = site.categories | find: "slug", catslug -%}
     <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
     <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
   {%- endif -%}

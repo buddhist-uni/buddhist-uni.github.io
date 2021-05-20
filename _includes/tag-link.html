@@ -1,1 +1,1 @@
-{% assign tag = site.tags | where: "slug", include.tag | first %}{% if tag %}<a href="{{ tag.url }}">{% endif %}{% if include.text %}{{ include.text }}{% else %}{{ tag.title }}{% endif %}{% if tag %}</a>{% endif %}
+{% assign tag = site.tags | find: "slug", include.tag %}{% if tag %}<a href="{{ tag.url }}">{% endif %}{% if include.text %}{{ include.text }}{% else %}{{ tag.title }}{% endif %}{% if tag %}</a>{% endif %}

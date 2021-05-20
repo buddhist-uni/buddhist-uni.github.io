@@ -53,7 +53,7 @@ For performance reasons, these tests are hidden from the production build. To ru
 {%- assign fails = 0 -%}
 {% assign simcount = 0 %}
 | Test Name | Status  |  Notes |
-|-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | where: "slug", test[0] | first %}{% capture cont_req %}{% include similar_content_footer.html content=fc %}{% endcapture %}
+|-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | find: "slug", test[0] %}{% capture cont_req %}{% include similar_content_footer.html content=fc %}{% endcapture %}
 | "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "{{ test[1] }}"  | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
 |-----|------|----|
 | Totals: | {{ succs }} Pass and {{ fails }} Failed | {{ simcount }} total recommendations |
