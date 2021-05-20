@@ -3,13 +3,13 @@ layout: default
 ---
 {%- assign cslug = page.path | split: '/' -%}
 {%- assign cslug = cslug[1] -%}
-{%- assign course = site.courses | where: "slug", cslug | first -%}
+{%- assign course = site.courses | find: "slug", cslug -%}
 {%- capture f -%}c.path contains '_courses/{{ cslug }}/'{%- endcapture -%}
 {%- assign subcourses = site.courses | where_exp: "c", f | sort: "order" -%}
 {%- assign next = page.order | plus: 1 -%}
 {%- assign prev = page.order | minus: 1 -%}
-{%- assign next = subcourses | where: "order", next | first -%}
-{%- assign prev = subcourses | where: "order", prev | first -%}
+{%- assign next = subcourses | find: "order", next -%}
+{%- assign prev = subcourses | find: "order", prev -%}
 <article class="coursepart">
 
   <header class="post-header">

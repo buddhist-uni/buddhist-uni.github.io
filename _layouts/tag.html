@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
 {% assign parents = '' | split: '' %}
 {% for pslug in page.parents %}
-    {% assign parent = site.tags | where: "slug", pslug | first %}
+    {% assign parent = site.tags | find: "slug", pslug %}
     {% unless parent %}{% continue %}{% endunless %}
     {% capture plink %}<a href="{{ parent.url }}">{{ parent.title }}</a>{% endcapture %}
     {% assign parents = parents | push: plink %}
@@ -19,7 +19,7 @@ layout: default
 {% endif %}
 {% endcapture %}{% unless page.banner_info %}{{ backlink }}{% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
-{% assign course = site.courses | where: "slug", page.slug | first %}
+{% assign course = site.courses | find: "slug", page.slug %}
 {% if course %}
 <p><em>For a more structured walkthrough of this content, see the <a href="{{ course.url }}">course</a>.</em></p>
 {% endif %}
@@ -58,7 +58,7 @@ layout: default
 {% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% for catslug in categories %}
-  {% assign category = site.categories | where: "slug", catslug | first %}
+  {% assign category = site.categories | find: "slug", catslug %}
   {% assign cat_content = all_content | where: "category", catslug %}
   {% assign course_content = cat_content | where: "course", page.slug %}
   {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}

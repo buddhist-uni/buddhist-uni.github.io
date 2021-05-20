@@ -6,7 +6,7 @@
 {%- endfor -%}
 {%- assign category = include.category -%}
 {%- unless category -%}
-    {%- assign category = site.categories | where: "slug", include.content.category | first -%}
+    {%- assign category = site.categories | find: "slug", include.content.category -%}
 {%- endunless -%}
 
 {%- for candidate in site.content -%}

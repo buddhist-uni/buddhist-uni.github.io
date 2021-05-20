@@ -41,13 +41,13 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/%28Above%29_sBed
       {% endcase %}
     {% endfor %}
 
-    {% assign contents = readers | where: "name", author.slug | first %}
+    {% assign contents = readers | find: "name", author.slug %}
     {% if contents.size > 0 %}
       {% capture s %}{{ contents.size }} reading{% if contents.size > 1 %}s{% endif %}{% endcapture %}
       {% assign catcounts = catcounts | push: s %}
     {% endif %}
 
-    {% assign contents = translators | where: "name", author.slug | first %}
+    {% assign contents = translators | find: "name", author.slug %}
     {% if contents.size > 0 %}
       {% capture s %}{{ contents.size }} translation{% if contents.size > 1 %}s{% endif %}{% endcapture %}
       {% assign catcounts = catcounts | push: s %}

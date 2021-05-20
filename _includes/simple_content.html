@@ -2,7 +2,7 @@
 {% capture foo %}{% include simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
 <p><em>
   {%- if content.status != "rejected" and content.course -%}
-    {% assign course = site.courses | where: "slug", content.course | first %}
+    {% assign course = site.courses | find: "slug", content.course %}
     {%- if course -%}
         Featured in the course, "<a href="{{ course.url }}#{{ content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"
     {%- endif -%}

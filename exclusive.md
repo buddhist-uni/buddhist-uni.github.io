@@ -10,7 +10,7 @@ Here you will find links to the content on the site which is difficult to find e
 <div>
 {% assign categories = "av,essays,papers,reference" | split: ',' %}
 {% for category_slug in categories %}
-    {% assign category = site.categories | where: "slug", category_slug | first %}
+    {% assign category = site.categories | find: "slug", category_slug %}
     <h1>{{ category.title }}</h1>
     {% assign contents = site.content | where: "category", category_slug %}
     {% assign contents = contents | where_exp: "c", "c.drive_links.size > 0" %}

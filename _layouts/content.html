@@ -15,7 +15,7 @@ layout: default
 {%- endif -%}
 {%- assign tags = '' | split: '' -%}
 {%- for t in tagslugs -%}
-    {%- assign tag = site.tags | where: "slug", t | first -%}
+    {%- assign tag = site.tags | find: "slug", t -%}
     {%- if tag -%}
         {%- capture taglink -%}<a class="TagLabel" href="{{ tag.url }}"><i class="fas fa-tag"></i> {{ tag.title }}</a>{%- endcapture -%}
         {%- assign tags = tags | push: taglink -%}
@@ -46,7 +46,7 @@ layout: default
     {%- endif -%}
 {%- endunless -%}
 
-{%- assign category = site.categories | where: "slug", page.category | first -%}
+{%- assign category = site.categories | find: "slug", page.category -%}
 
 <article class="content-perma">
 
@@ -62,7 +62,7 @@ layout: default
         By {% include content_authors_string.html content=page hide_reader=true link=true %}
     </h2>{% endif %}
     {% if page.reader %}
-    {% if page.reader contains " " %}{% assign reader = nil %}{% else %}{% assign reader = site.authors | where: "slug", page.reader | first %}{% endif %}
+    {% if page.reader contains " " %}{% assign reader = nil %}{% else %}{% assign reader = site.authors | find: "slug", page.reader %}{% endif %}
     <h2 class="author">Read by {% if reader %}<a href="{{ reader.url }}">{{ reader.title }}</a>{% else %}{{ page.reader }}{% endif %}</h2>
     {% endif %}
     {% unless page.reader or page.authors.size > 0 %}<div class="mb-3"></div>{% endunless %}
@@ -92,22 +92,22 @@ layout: default
         {% capture booktitle %}<a href="{{ fbook.url }}">{{ fbook.title }}</a>{% endcapture %}
       {%- endif -%}
     {%- endif -%}
-    {% if page.series %}{% assign series = site.series | where: "slug", page.series | first %}{% endif %}
-    {% if page.journal %}{% assign journal = site.journals | where: "slug", page.journal | first %}{% endif %}
-    {% if page.publisher %}{% assign publisher = site.publishers | where: "slug", page.publisher | first %}{% endif %}
-    {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | where: "slug", page.editor | first %}{% endif %}
+    {% if page.series %}{% assign series = site.series | find: "slug", page.series %}{% endif %}
+    {% if page.journal %}{% assign journal = site.journals | find: "slug", page.journal %}{% endif %}
+    {% if page.publisher %}{% assign publisher = site.publishers | find: "slug", page.publisher %}{% endif %}
+    {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | find: "slug", page.editor %}{% endif %}
    
    <p class="star_desc">
         {{ tags }}
    </p>
  
     {% if page.status != "rejected" and page.course %}
-        {% assign course = site.courses | where: "slug", page.course | first %}
+        {% assign course = site.courses | find: "slug", page.course %}
         {% if course %}<p class="featured_desc">Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>."
         </p>{% endif %}
     {% endif %}
     <p class="pub_desc"><i>
-        {%- if page.translator -%}Translated by {% if page.translator contains " " %}{% assign translator = nil %}{% else %}{% assign translator = site.authors | where: "slug", page.translator | first %}{% endif %}{% if translator %}<a href="{{ translator.url }}#translations">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}
+        {%- if page.translator -%}Translated by {% if page.translator contains " " %}{% assign translator = nil %}{% else %}{% assign translator = site.authors | find: "slug", page.translator %}{% endif %}{% if translator %}<a href="{{ translator.url }}#translations">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}
         {% if page.year or page.publisher or booktitle or page.journal or series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if booktitle %} in “{{ booktitle }}”{% endif %}{% if page.editor %} ({% if editor %}<a href="{{ editor.url }}">{{ editor.title }}</a>{% else %}{{ page.editor | split: " and " | array_to_sentence_string }}{% endif %} ed.){% endif %}{% if page.publisher %} by {% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}{% if page.address or publisher.address %}, {{ page.address | default: publisher.address }}{% endif %}{% endif %}{% if series %} {% if page.number %}as{% else %}in{% endif %} <a href="{{ series.url }}">{{ series.title }}</a>{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
     </i></p>
  
