@@ -5,10 +5,24 @@ on:
        - master
 jobs:
    Jekyll:
-     runs-on: ubuntu-16.04
+     runs-on: ubuntu-latest
      steps:
-         - uses: actions/checkout@v2
-         - uses: helaili/jekyll-action@v2
+         - name: Checkout the Code
+           uses: actions/checkout@v2
+           with:
+             fetch-depth: 2
+         - name: Normalize Unicode in the Previous Commit
+           uses: buddhist-uni/normalized-unicode-action@v0.1-rc
+         - name: Restore Previous Gemfiles
+           uses: actions/cache@v2
+           with:
+             path: ${{ github.workspace }}/vendor
+             key: ${{ runner.os }}-vendor-${{ hashFiles('**/Gemfile.lock') }}
+             restore-keys: |
+                ${{ runner.os }}-vendor-
+         - name: Install Jekyll and Build the Site
+           uses: helaili/jekyll-action@2.2
            with:
              token: ${{ secrets.BUILD_ACTION_TOKEN }}
              target_branch: latest-build
+
