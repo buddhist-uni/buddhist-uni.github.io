@@ -1,5 +1,5 @@
 ---
-title: "Abhidarma"
+title: "Abhidharma"
 authors: ["Noa Ronkin"]
 external_url: "https://plato.stanford.edu/entries/abhidharma/"
 formats: [pdf]

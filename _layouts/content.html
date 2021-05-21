@@ -137,7 +137,10 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
       </script>
       </div>
     </details>{% endif %}
-  {% if site.show_similars %}{% include similar_content_footer.html category=category content=page %}{% endif %}
+    {% if site.show_similars %}
+      {% assign include_content = page %}
+      {% similar_content %}
+    {% endif %}
   </footer>
 
 </article>
