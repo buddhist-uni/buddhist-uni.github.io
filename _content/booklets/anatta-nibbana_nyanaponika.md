@@ -15,6 +15,7 @@ tags:
   - indian
   - dialogue
   - anatta
+  - emptiness
 year: 1957
 series: wheel
 number: 10

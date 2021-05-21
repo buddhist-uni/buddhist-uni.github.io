@@ -24,6 +24,9 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.7.1"
 end
 
+# For my own ruby code
+gem "priority_queue_cxx", "~> 0.3.4"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
