@@ -13,6 +13,7 @@ tags:
   - citta
   - vassa
   - effort
+  - emptiness
 ---
 
 A short description of what it's like to be an arahant, along with an admonishment to practice diligently, delivered near the end of Luangta's life.

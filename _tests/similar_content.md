@@ -53,8 +53,8 @@ To run these tests, build the site *without* `_quick_build.yml` which excludes m
 {%- assign fails = 0 -%}
 {% assign simcount = 0 %}
 | Test Name | Status  |  Notes |
-|-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | find: "slug", test[0] %}{% capture cont_req %}{% assign include_content = fc %}{% similar_content %}{% endcapture %}
-| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "{{ test[1] }}"  | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
+|-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | find: "slug", test[0] %}{% assign sc = site.content | find: "slug", test[1] %}{% capture cont_req %}{% assign include_content = fc %}{% similar_content %}{% endcapture %}
+| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "[{{ sc.title | split: ':' | first }}]({{ sc.url }})"  | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
 |-----|------|----|
 | Totals: | {{ succs }} Pass and {{ fails }} Failed | {{ simcount }} total recommendations |
 {%- endif -%}
