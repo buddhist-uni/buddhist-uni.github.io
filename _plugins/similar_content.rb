@@ -38,7 +38,10 @@ module Jekyll
         end
         category = v["category"]
         if category.nil? then
-            category = v["site.categories"].find{|c| c.data["slug"] == v["include_content.category"]}
+            category = v["include_content.category"]
+        end
+        if category.is_a? String then
+            category = v["site.categories"].find{|c| c.data["slug"] == category}
         end
         category = category.to_liquid.to_h
         for cofefe in v["site.content"]
