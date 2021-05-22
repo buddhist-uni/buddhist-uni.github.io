@@ -62,13 +62,13 @@ You can think of each of the `_folders` in [the source code](https://github.com/
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
 - [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
-To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle run` [`jekyll`](https://jekyllrb.com/docs/installation/) `build`" keeping in mind that the build may take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build. Once the site is built, run `bundle run jekyll serve --skip-initial-build` to start serving the site locally at `localhost:4000`
+To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build.
 
 For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).  For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
 
 # Contributions
 
-The beauty of Jekyll is that it outputs plain HTML, which can be reworked in a variety of ways.  The code here is released under the [MIT Licence](https://mit-license.org/), so feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please feel free to message me or fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which you can find in [the prod branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me or fork the repository and open a pull request!  
 
 # Future Directions
 
