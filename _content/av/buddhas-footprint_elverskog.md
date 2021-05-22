@@ -12,6 +12,8 @@ tags:
   - lay
   - prosperity
   - materialism
+  - selling
+  - engaged
   - indian
   - avadana
 year: 2020 
