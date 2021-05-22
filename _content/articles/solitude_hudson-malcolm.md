@@ -1,5 +1,5 @@
 ---
-title: "Note on Solitude/Inwardness"
+title: "Note on Solitude / Inwardness"
 authors: ["Malcolm Hudson"]
 source_url: "https://journal.equinoxpub.com/BSR/article/view/13814"
 journal: pbr
@@ -15,6 +15,7 @@ tags:
   - viveka
   - monastic
   - path
+  - academia
 ---
 
 > One does not obtain sīla, let alone the Dhamma, from the historical process.
