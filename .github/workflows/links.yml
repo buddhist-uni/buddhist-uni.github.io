@@ -1,0 +1,23 @@
+name: External Links
+on:
+    push:
+        branches:
+            - links
+jobs:
+  Links:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Get the Code
+          uses: actions/checkout@v2
+        - name: Lychee Link Checker
+          id: lychee
+          uses: lycheeverse/lychee-action@v1.0.8
+          with:
+            args: "*.{html,md,yml} **/*.{html,md,yml} **/**/*.{html,md,yml} --exclude-link-local --exclude=google.com --exclude=youtu.be --exclude=youtube.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=vox.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude-mail --verbose --no-progress"
+        - name: Create Issue
+          if: ${{ steps.lychee.outputs.exit_code }}
+          uses: peter-evans/create-issue-from-file@v2
+          with:
+            title: Link Checker Report
+            content-filepath: ./lychee/out.md
+
