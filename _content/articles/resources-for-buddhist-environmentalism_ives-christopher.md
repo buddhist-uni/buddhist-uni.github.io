@@ -1,6 +1,6 @@
 ---
 title: "Resources for Buddhist Environmental Ethics"
-authors: ["Christopher Ives"]
+authors: [ives-christopher]
 journal: jbe
 year: 2013
 volume: 20
