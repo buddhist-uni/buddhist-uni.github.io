@@ -1,7 +1,6 @@
 ---
 title: "Quotations in Śamathadeva’s *Abhidharmakośopāyikā-ṭīkā* Parallel to Chinese *Saṃyukta-āgama* Discourses on the Six Sense-bases"
 authors: [dhammadinna]
-source_url: "http://ir.dila.edu.tw:8080/bitstream/987654321/748/2/3+法樂法師.pdf"
 external_url: "https://www.academia.edu/35577177/A_translation_of_the_quotations_in_Śamathadevas_Abhidharmakośopāyikā_ṭīkā_parallel_to_the_Chinese_Saṃyukta_āgama_discourses_231_238_240_245_252_and_255"
 drive_links: ["https://drive.google.com/file/d/1JIn4gflxOeM8Gx5Bq3WdLkAWQc8RF4vH/view?usp=drivesdk"]
 course: sa

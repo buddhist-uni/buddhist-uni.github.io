@@ -41,8 +41,8 @@ In addition to the content I've featured on this site, you can find lots more at
 * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
 * [The Agama Research Group](http://agamaresearch.dila.edu.tw/publications)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings) 
-* [Buddhist Text Translation Society](http://www.buddhisttexts.org/ebooks-library.html)
-* [The Chan Center](http://chancenter.org/en/publication/free-books)
+* [Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
+* [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Hualin International Journal of Buddhist Studies](https://glorisunglobalnetwork.org/hualin-international-journal-of-buddhist-studies/e-journal/)
 * [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)

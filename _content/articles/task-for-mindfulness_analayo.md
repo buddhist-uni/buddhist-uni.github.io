@@ -2,7 +2,7 @@
 title: "A Task for Mindfulness: Facing Climate Change"
 authors:
   - analayo
-external_url: "http://www.webofconnection.org/uploads/6/5/0/5/65059239/taskformindfulness.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/taskmindfulclimate.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Hm-BVrjhijtW1FrEp78Obmi1gLA-D5Qu/view?usp=drivesdk"
 course: ethics
