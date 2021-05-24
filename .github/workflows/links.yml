@@ -13,7 +13,7 @@ jobs:
           id: lychee
           uses: lycheeverse/lychee-action@v1.0.8
           with:
-            args: --exclude-link-local --exclude=google.com --exclude=youtu.be --exclude=youtube.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=vox.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude-mail --verbose --no-progress *.{html,md,yml} **/*.{html,md,yml} **/**/*.{html,md,yml} 
+            args: --exclude-link-local --exclude=google.com --exclude=youtu.be --exclude=youtube.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=vox.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude-mail --verbose --no-progress **/*.md
         - name: Create Issue
           if: ${{ steps.lychee.outputs.exit_code > 0 }}
           uses: peter-evans/create-issue-from-file@v2
