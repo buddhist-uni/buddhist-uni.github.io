@@ -1,7 +1,7 @@
 ---
 title: "Harvey"
-external_url: "https://open.tube/videos/watch/9c1df408-1f47-4405-a9ad-34ed3c2b972a"
 year: 1950
+oclc: 137283538
 course: cosmology
 tags:
   - religion

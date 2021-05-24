@@ -2,7 +2,9 @@
 title: "The Lotus as a Symbol in the Pali Tradition"
 authors:
   - "Carl Olson"
-external_url: "http://ojs3.equinoxpub.com/BSR/article/view/13944/16176"
+source_url: "https://journals.equinoxpub.com/BSR/article/view/8736/6225"
+file_links:
+  - "exclusive_01/The%20Lotus%20as%20a%20Symbol%20-%20Carl%20Olson.pdf"
 drive_links:
   - "https://drive.google.com/file/d/14-JT9HotO_JgYx4Ofsxuy86-6ooMQ841/view?usp=drivesdk"
 course: form

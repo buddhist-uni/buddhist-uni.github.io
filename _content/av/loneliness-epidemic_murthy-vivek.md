@@ -3,7 +3,7 @@ title: "The Loneliness Epidemic"
 authors:
   - "Vivek Murthy"
   - "Ezra Klein"
-external_url: "https://www.stitcher.com/podcast/vox/the-ezra-klein-show/e/64496902"
+external_url: "https://www.stitcher.com/show/vox-conversations/episode/the-loneliness-epidemic-64496902"
 year: 2019
 month: oct
 tags:

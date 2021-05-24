@@ -1,6 +1,6 @@
 ---
 title: "Amaravati"
-external_url: "https://www.amaravati.org/teachings/books/"
+external_url: "https://amaravati.org/dhamma-books/"
 address: "Hertfordshire, UK"
 ---
 
