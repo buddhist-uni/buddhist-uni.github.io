@@ -1,8 +1,7 @@
 name: External Links
 on:
-    push:
-        branches:
-            - links
+    schedule:
+        - cron: "35 07 * * 1"
 jobs:
   Links:
     runs-on: ubuntu-latest
