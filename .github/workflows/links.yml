@@ -1,7 +1,8 @@
 name: External Links
 on:
+    workflow_dispatch:
     schedule:
-        - cron: "35 07 * * 1"
+        - cron: "40 00 2,16 * *"
 jobs:
   Links:
     runs-on: ubuntu-latest
