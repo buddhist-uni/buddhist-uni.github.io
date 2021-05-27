@@ -12,7 +12,7 @@ jobs:
         - name: Rename .md files to .txt
           run: |
             cd $GITHUB_WORKSPACE
-            apt-get install -y rename
+            sudo apt-get install -y rename
             find . -name "*.md" -exec rename .md .txt {} +
         - name: Lychee Link Checker
           id: lychee
