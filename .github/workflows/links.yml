@@ -9,11 +9,15 @@ jobs:
     steps:
         - name: Get the Code
           uses: actions/checkout@v2
+        - name: Rename .md files to .txt
+          run: |
+            cd $GITHUB_WORKSPACE
+            find . -name "*.md" -exec bash -c 'mv "$1" "${1%.md}".txt' - '{}' +
         - name: Lychee Link Checker
           id: lychee
           uses: lycheeverse/lychee-action@v1.0.8
           with:
-            args: --exclude-link-local --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=wikimedia.org --exclude-mail --verbose --no-progress **/*.md
+            args: --exclude-link-local --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=wikimedia.org --exclude-mail --verbose --no-progress **/*.txt
         - name: Create Issue
           if: ${{ steps.lychee.outputs.exit_code > 0 }}
           uses: peter-evans/create-issue-from-file@v2
