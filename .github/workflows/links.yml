@@ -12,8 +12,8 @@ jobs:
         - name: Rename .md files to .txt
           run: |
             cd $GITHUB_WORKSPACE
-            sudo apt-get install -y rename
-            find . -name "*.md" -exec rename .md .txt {} +
+            sudo apt-get install -y --qq rename
+            find . -name "*.md" -exec rename 's/\.md$/.txt/' {} +
         - name: Lychee Link Checker
           id: lychee
           uses: lycheeverse/lychee-action@v1.0.8
