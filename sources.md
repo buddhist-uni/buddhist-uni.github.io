@@ -46,6 +46,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [The Hualin International Journal of Buddhist Studies](https://glorisunglobalnetwork.org/hualin-international-journal-of-buddhist-studies/e-journal/)
 * [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)
+* [The Corporate Body of the Buddha Educational Foundation](http://www.budaedu.org/en/)
 * [Dharma Seed](https://dharmaseed.org/talks)
 * [BuddhaDust](http://buddhadust.net)
   - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)

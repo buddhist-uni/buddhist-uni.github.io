@@ -48,6 +48,7 @@ exclude:
     - _content/articles/buddhism-and-blackness_vox.md
     - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
     - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
+    - _content/articles/compassion-in-the-agamas-and-nikayas_analayo.md
     - _content/articles/ethicopolitical-significance-of-mindfulness_ng-edwin.md
     - _content/articles/four-eminent-monks-and-their-syncretistic-style_chu-william.md
     - _content/articles/genetics-biosocial-groups-and-identity_hacking-ian.md
@@ -327,6 +328,7 @@ exclude:
     - _content/reference/dpr.md
     - _content/reference/gboard-dict.md
     - _content/reference/handful-of-leaves_geoff.md
+    - _content/reference/kinh-nhat-tung_phineas-pta.md
     - _content/reference/one-up-discourses.md
     - _content/reference/pali-linux-keybindings.md
     - _content/reference/pali-script-converter.md
