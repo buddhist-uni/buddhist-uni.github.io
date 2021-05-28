@@ -6,7 +6,7 @@ illustration: https://illeakyw.sirv.com/Images/banners/guanyin-taming.jpeg
 illustration_height: 1023
 illustration_width: 736
 illustration_info: <a href="https://commons.wikimedia.org/wiki/File:050_Lin_Wei_Long,_Fearless_Avalokitesvara_(35187992905).jpg">Photo Dharma</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
-illustration_center_x: 14%
+illustration_center_x: 25%
 illustration_center_y: 25%
 image: https://illeakyw.sirv.com/Images/banners/buddha-face-cage.jpg
 image_width: 1280
