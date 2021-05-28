@@ -6,7 +6,6 @@ publisher: parallax
 tags:
   - ethics
   - lay
-  - engaged
   - vietnamese
 ---
 
