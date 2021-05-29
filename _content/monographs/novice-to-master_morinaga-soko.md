@@ -7,7 +7,6 @@ olid: OL8308627M
 publisher: wisdom
 year: 2004
 course: japanese-monastic
-status: featured
 tags:
   - monastic
 ---
