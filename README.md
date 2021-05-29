@@ -9,40 +9,63 @@ title: Behind the Scenes
 >  
 > ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
-# History
-
-This GitHub Page started life as [my personal library of Buddhist stuff on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). 
-
-Now, a personal library, especially when shared, has two audiences (and thus two priorities): 
-
-1. First, a library is there to organize one's own media for their safe-keeping, retrieval and study. 
-2. Second, a library is there for others (hi!) to peruse and, hopefully, benefit from
-
-These two practical aims find unity in the pride that any book-worm feels towards their library: 
-
-**The library is a reflection of its creator**---who they are and what they'd like to be.
-
-Given that I'm a Buddhist monk, naturally my personal library represents a course of study in Buddhism.
-
-In translating this proud, ancient tradition to the digital age, different constraints and possibilities emerged. Reflecting on the structure of the internet, I opted to express myself in a giant [mind map](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418). 
-
-As a map of my mind, this library contains (editorially and structurally) my own biases. This is a feature not a bug. I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
+### By Khemarato Bhikkhu
 
 # Studying
 
-There are two primary ways to study here: taking [the courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
+There are two primary ways to use [this website](https://buddhistuniversity.net): taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
 
-The library contains all the best content I've found on the internet, [organized primarily by topic](https://www.buddhistuniversity.net/tags/).  After reading a work, I contemplate what I learned and who I'd recommend it to. Only then do I file away the piece into topics, based on my answers to those questions.
+The library contains all the best content I've found on the internet, [organized primarily by topic](https://www.buddhistuniversity.net/tags/).  After reading a work, I contemplated what I learned and who I'd like to recommend it to. Only then do I file away the piece into a topic, based on my answers to those questions.
 
-Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material again to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  As I go through, some works may be added to the topic that were originally categorized elsewhere, some works might be moved out of the topic, and some may even be rejected entirely.
+Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  Over time, works will be added, moved or even replaced.
 
-Once published, these lesson plans may be studied online as-is or reworked for in-person use by a study group or class. There are already students and teachers around the world using the courses in a variety of ways and I couldn't be prouder!
+Once published, these lesson plans may be studied online as-is or reworked for in-person use by a study group or class. There are already students and teachers around the world using our courses in a variety of ways and I couldn't be prouder!
 
-While some Buddhist countries (i.e., Thailand) have official curricula for teaching Buddhism to e.g. new monks, no such comprehensive curriculum yet existed in the English language.  It was towards filling this gap that I decided to dedicate my studies and this website.
+While some Buddhist countries (i.e., Thailand) have official curricula for teaching Buddhism to e.g. new monks, no such comprehensive curriculum exists in the English language.  It was towards filling that gap that I decided to dedicate my studies and this website.
 
-# The Source Code
+# History
+
+This GitHub-hosted page started its life as [my personal library of Buddhist stuff on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). 
+
+Now, a personal library has two audiences and thus two priorities: 
+
+1. First, a library is there to organize one's own media for their safe-keeping, retrieval and study. 
+2. Second, a library is there for others (hi, friend!) to peruse and, hopefully, benefit from
+
+These two practical aims find unity in the pride that any book-worm feels towards their library: 
+
+**A library is a reflection of its creator**---who they are and what they'd like to be.
+
+Given that I'm a Buddhist monk, naturally my personal library represents a course of study in Buddhism.
+
+Reflecting on the structure of the internet, I opted to express myself in a giant [mind map](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418). As a map of my mind, this website contains (editorially and structurally) my own biases. This is a feature not a bug. I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
+
+# About the Code
 
 This is a static HTML website built with [Jekyll](https://jekyllrb.com/) and served by [GitHub Pages](https://pages.github.com/).
+
+## Running the site locally
+
+To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. 
+
+To speed that up, you have two options:
+
+1. You can add the `--config _config.yml,_quick_build.yml` build flag for a faster, but partial build.
+2. You can serve the production build locally like so:
+
+~~~
+rm -rf _site
+git pull
+git checkout prod
+cp -r . ~/obu-prod
+git checkout master
+mv ~/obu-prod _site
+JEKYLL_ENV=production bundle exec jekyll serve --incremental --skip-initial-build
+~~~
+
+For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).
+
+## The Source Code
 
 You can think of each of the `_folders` in [the source code](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master) as representing individual object types. Each folder is a different "table" in the hardcoded "database."
 
@@ -62,13 +85,11 @@ You can think of each of the `_folders` in [the source code](https://github.com/
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
 - [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
-To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. You can add the `--config _config.yml,_quick_build.yml` flag for a faster, partial build.
+For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post an issue or comment on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
 
-For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).  For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
+## Contributions
 
-# Contributions
-
-The beauty of Jekyll is that it outputs plain HTML, which you can find in [the prod branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me or fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me or fork the repository and open a pull request!  
 
 # Future Directions
 
@@ -91,3 +112,4 @@ A big thank you to [the content sources](https://www.buddhistuniversity.net/sour
 To all my teachers---past, present and future. Especially you.
 
 [![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)
+
