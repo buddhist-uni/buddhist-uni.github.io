@@ -10,7 +10,6 @@ tags:
   - activism
   - palestine
   - problems
-status: featured
 year: 2014
 journal: "Intervention: Journal of Mental Health and Psychosocial Support in Conflict Affected Areas"
 volume: 12

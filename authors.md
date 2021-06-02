@@ -15,6 +15,9 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/%28Above%29_sBed
 {%- assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" -%}
 {%- assign readers = all_content | where_exp: "c", "c.reader" | group_by: "reader" -%}
 {%- assign translators = all_content | where_exp: "c", "c.translator" | group_by: "translator" -%}
+
+{% for letter in author_letters %}[{{ letter.name | upcase }}](#{{ letter.name }})  {% endfor %}
+
 <div class="author-list">
 {%- for letter in author_letters -%}
 <h3 id="{{ letter.name }}">{{ letter.name | upcase }}</h3>
