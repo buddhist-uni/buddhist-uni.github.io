@@ -10,4 +10,4 @@ publisher: bdk
 category: monographs
 ---
 
-Being a ([poor](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"}) translation of the Dīrga Āgama.
+Being an [unreliable](https://discourse.suttacentral.net/uploads/short-url/alyBBtkewA1MQBlpFvzPyBWIQYe.pdf){:target="_blank"} [translation](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"} of the Dīrga Āgama.

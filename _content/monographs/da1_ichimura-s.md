@@ -10,4 +10,4 @@ drive_links: ["https://drive.google.com/file/d/1gkjaV4L-jROdvFi5k_nP7bgsuKI0VBt3
 external_url: "https://bdkamerica.org/product/the-canonical-book-of-the-buddhas-lengthy-discourses-vol-i/"
 ---
 
-Being a ([poor](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"}) translation of Dīrga Āgama sūtras 1–10.
+Being an [unreliable](https://discourse.suttacentral.net/uploads/short-url/alyBBtkewA1MQBlpFvzPyBWIQYe.pdf){:target="_blank"} [translation](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"} of Dīrga Āgama sūtras 1–10.
