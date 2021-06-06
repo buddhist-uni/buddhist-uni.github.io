@@ -47,7 +47,7 @@ In searching for such a middle way, I take on Bhante Yuttadhammo’s definition 
 The forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
 ## Prerequisites
-This course assumes some familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}).
+This course assumes familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).
 
 
 ## Course Outline
@@ -73,13 +73,16 @@ There are two textbooks for this first part of the course:
 {% include content_blurb.html category="booklets" slug="buddhist-sociological-thought_gnanarama" %}
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 
-Let us start off by reading Chapter 1 (“Towards a Definition”) of _Aspects_ to round off our discussion of how Buddhism can be defined as a “religion” and how it relates to other Western concepts.
-{:.mt-2}
+#### Introduction
 
-And with that completed, we can shift our focus to Robinson’s _Historical Introduction_.
+Let us start off by reading Chapter 1 (“Towards a Definition”) of _Aspects of Early Buddhist Sociological Thought_ to round off our discussion of how Buddhism can be defined as a “religion” and how it may relate to other concepts you've heard of.
+
+{% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" %}
+- For a refresher on the basics of Buddhism, I highly recommend skimming this Q&A with Thubten Chodron before we dive into the more detailed history below.
 
 #### Supplementary Material to *Robinson*
-As you read through *Robinson*, please also consider the following alongside each chapter:
+
+As you read through Robinson et al's _Historical Introduction_ one chapter at a time, please also consider:
 
 ##### Parallel to Robinson Ch 1: Awakening
 
