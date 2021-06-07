@@ -78,7 +78,7 @@ There are two textbooks for this first part of the course:
 Let us start off by reading Chapter 1 (“Towards a Definition”) of _Aspects of Early Buddhist Sociological Thought_ to round off our discussion of how Buddhism can be defined as a “religion” and how it may relate to other concepts you've heard of.
 
 {% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" %}
-- For a refresher on the basics of Buddhism, I highly recommend skimming this Q&A with Thubten Chodron before we dive into the more detailed history below.
+- For a refresher on the basics of Buddhism, I recommend skimming this Q&A with Thubten Chodron before we dive into the more detailed history below.
 
 #### Supplementary Material to *Robinson*
 
