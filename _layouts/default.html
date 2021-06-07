@@ -5,7 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+TC">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  {%- assign gfont = "https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+TC&family=Noto+Serif+JP&display=swap" -%}
+  <link rel="preload" as="style" href="{{ gfont }}" />
+  <link rel="stylesheet" href="{{ gfont }}" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="{{ gfont }}" />
+  </noscript>
   <link href="/assets/primer.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css">
   {%- feed_meta -%}
