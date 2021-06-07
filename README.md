@@ -2,6 +2,8 @@
 title: Behind the Scenes
 ---
 
+### With Khemarato Bhikkhu
+
 > Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
 > Without achieving any success in meditation,  
 > He has instead compiled these treatises  
@@ -9,36 +11,24 @@ title: Behind the Scenes
 >  
 > ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
-### By Khemarato Bhikkhu
-
 # Studying
 
 There are two primary ways to use [this website](https://buddhistuniversity.net): taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
 
-The library contains all the best content I've found on the internet, [organized primarily by topic](https://www.buddhistuniversity.net/tags/).  After reading a work, I contemplated what I learned and who I'd like to recommend it to. Only then do I file away the piece into a topic, based on my answers to those questions.
-
-Once a given topic has accumulated sufficient material, I then take some time to organize it into an undergraduate-style syllabus: identifying the themes and connections across different works and putting them into dialogue with each-other. Of course, as I review the material to create the classes, I inevitably learn a lot---as anyone who tries to teach finds out.  Over time, works will be added, moved or even replaced.
-
-Once published, these lesson plans may be studied online as-is or reworked for in-person use by a study group or class. There are already students and teachers around the world using our courses in a variety of ways and I couldn't be prouder!
-
-While some Buddhist countries (i.e., Thailand) have official curricula for teaching Buddhism to e.g. new monks, no such comprehensive curriculum exists in the English language.  It was towards filling that gap that I decided to dedicate my studies and this website.
+The library contains all the best content I've found [on the internet](https://buddhistuniversity.net/sources/) organized [by topic](https://buddhistuniversity.net/tags/). These topical bibliographies are then compiled into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used more formally in your study group or class. There are already students and teachers around the world using the free material here in a variety of ways and I couldn't be prouder!
 
 # History
 
-This GitHub-hosted page started its life as [my personal library of Buddhist stuff on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). 
+This webpage started its life as [my personal library of Buddhist stuff on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). 
 
-Now, a personal library has two audiences and thus two priorities: 
+After reading stuff I found online, I would contemplate what I learned from it and who I’d recommend it to. Only after answering these questions would I then squirrel away the e.g. PDF into an appropriate Google Drive folder.
 
-1. First, a library is there to organize one's own media for their safe-keeping, retrieval and study. 
-2. Second, a library is there for others (hi, friend!) to peruse and, hopefully, benefit from
+In this way, my library (like all personal libraries) has slowly grown to serve two purposes: 
 
-These two practical aims find unity in the pride that any book-worm feels towards their library: 
+1. to organize my own media for their safe-keeping, retrieval and revision, and  
+2. for others (hello!) to peruse and, hopefully, benefit from.
 
-**A library is a reflection of its creator**---who they are and what they'd like to be.
-
-Given that I'm a Buddhist monk, naturally my personal library represents a course of study in Buddhism.
-
-Reflecting on the structure of the internet, I opted to express myself in a giant [mind map](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418). As a map of my mind, this website contains (editorially and structurally) my own biases. This is a feature not a bug. I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
+These two aims find unity in the pride that any book-worm feels towards their library. As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), this website contains (editorially and structurally) my own biases. **This is a feature not a bug.** I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
 
 # About the Code
 
@@ -78,6 +68,7 @@ You can think of each of the `_folders` in [the source code](https://github.com/
 - [_includes](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_includes) - A Jekyll folder which houses the site's [reusable UI components](https://jekyllrb.com/docs/includes/).
 - [_journals](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_journals) - Periodicals which get their own page.
 - [_layouts](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_layouts) houses the [html page templates](https://jekyllrb.com/docs/layouts/).
+- [_plugins](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_plugins) is not a collection but rather contains native Ruby extensions for quickly running complex algorithms or for dynamically generating content. Currently my only custom plugin is the [similar content engine](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/_plugins/similar_content.rb) which you can [read about here](https://talk.jekyllrb.com/t/replacing-a-slow-include-with-a-custom-ruby-tag/6064?u=khbh)
 - [_posts](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_posts) are the [blog posts](https://jekyllrb.com/docs/posts/) which make up the newsletter.
 - [_publishers](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_publishers) are the publishers which I have granted their own hub.
 - [_sass](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_sass) contains [the site's css](https://jekyllrb.com/docs/assets/).
@@ -85,11 +76,14 @@ You can think of each of the `_folders` in [the source code](https://github.com/
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
 - [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
-For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or [post an issue or comment on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/).
+Lastly,
+- [.github/workflows](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/.github/workflows) contains my [GitHub Actions](https://docs.github.com/en/actions) [Workflow files](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions) which build the site and check for certain errors.
+
+For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or post an issue or comment on GitHub.
 
 ## Contributions
 
-The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me or fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me, [open an issue](https://github.com/buddhist-uni/buddhist-uni.github.io/issues/new) or fork the repository and open a pull request!  
 
 # Future Directions
 
@@ -105,7 +99,7 @@ I have also tried to select content with "staying power" to avoid, as much as po
 
 # Acknowledgements
 
-A big thank you to [the content sources](https://www.buddhistuniversity.net/sources/), to Google (for hosting [the Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)), to GitHub for hosting the site, and to all the various content creators and publishers who generously put their work out there for free. It's a testament to Buddhist generosity that such an expansive and outstanding collection can be compiled (almost entirely) from free material.
+A big thank you to [the content sources](https://www.buddhistuniversity.net/sources/), to [Google](https://about.google/) (for hosting [the Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)), to [GitHub](https://github.com/about/) for hosting the site, and to all the various [content creators](https://buddhistuniversity.net/authors/) and [publishers](https://buddhistuniversity.net/publishers/) who generously put their work out there for free. It's a testament to Buddhist generosity that such an expansive and outstanding collection can be compiled (almost entirely) from free material.
 
 # Dedication
 
