@@ -8,7 +8,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
   * Ven [Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/publications-by-bhikkhu-analayo/)
 * [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html)
-  * [Access to Insight](https://www.accesstoinsight.org/)
+* [Access to Insight](https://www.accesstoinsight.org/)
 * [SuttaCentral](https://suttacentral.net/) (and its [Discourse](https://discourse.suttacentral.net/search?q=pdf) forum)
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
   * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php)
