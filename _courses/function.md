@@ -167,6 +167,9 @@ In part II, we finally turn to the Noble Eightfold Path, and the transcendant te
 {% include content_blurb.html category="essays" slug="real-science_brahm" %}
 - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
+{% include content_blurb.html category="av" slug="how-meditation-reshapes-the-brain_lazar-sara" %}
+- A neuroscientist talks about the subjective benefits of meditation and how they correlate with changes in the brain.
+
 {% include content_box.html category="canon" slug="mn24" %}
 
 {% include content_blurb.html category="excerpts" slug="rathavinita_analayo" %}
