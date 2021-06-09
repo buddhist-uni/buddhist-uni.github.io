@@ -11,7 +11,7 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/b/b5/SrA_Jette_Carr%2C
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_USAF_(5)_(14532088103).jpg">U.S. Department of Defense</a>
 ---
 
-The Open Buddhist University is run by Than Khemarato and is based on his
+The Open Buddhist University is run by Khemarato Bhikkhu, who ordained in Thailand in 2019. The site is based on his
 [Curated Buddhist Library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 where he organizes [his own studies of Buddhism]({% link README.md %}). He hopes that you will find this website useful and welcomes
 any feedback at the email below.

@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Open Buddhist University
-author: Ven Khemarato
+author: Khemarato Bhikkhu
 email: theopenbuddhistuniversity@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A website dedicated to providing free,
