@@ -8,7 +8,7 @@ layout: page
 Here you will find links to the content on the site which is difficult to find elsewhere: either because it went offline, it was edited, or because it's a file that was previously circulating offline. They are collected here in the hope that it will be useful to other collectors. You can [download a zip archive containing most of these files here](https://github.com/buddhist-uni/exclusive_01/archive/main.zip).
 
 <div>
-{% assign categories = "av,essays,papers,reference" | split: ',' %}
+{% assign categories = "av,essays,articles,papers,reference" | split: ',' %}
 {% for category_slug in categories %}
     {% assign category = site.categories | find: "slug", category_slug %}
     <h1>{{ category.title }}</h1>
