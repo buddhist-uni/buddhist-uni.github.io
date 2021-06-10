@@ -100,6 +100,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}
 1. {% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
 1. [E] The Buddha's Family
+1. {% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}
 
 1. [Life] The Struggle for Enlightenment
 1. [[Bodhisattva Ideal - Analayo](#genesis-of-bodhisattva_analayo)] Chapter 1: Gautama as a Bodhisattva
