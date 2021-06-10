@@ -9,6 +9,7 @@ course: dialogue
 tags:
   - an
   - speech
+  - pedagogy
 ---
 
 The Buddha draws out his interlocutor's own wisdom to answer a tricky question.

@@ -12,6 +12,7 @@ tags:
   - death
   - disease
   - grief
+  - chaplaincy
   - thought
   - language
   - speech

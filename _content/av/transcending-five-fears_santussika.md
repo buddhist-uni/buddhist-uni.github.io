@@ -11,6 +11,7 @@ tags:
   - thought
   - problems
   - ethics
+  - chaplaincy
   - function
 ---
 

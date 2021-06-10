@@ -9,6 +9,7 @@ year: 2013
 course: form
 tags:
   - problems
+  - chaplaincy
   - monastic
   - meditation
   - function

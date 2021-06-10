@@ -11,6 +11,7 @@ tags:
   - problems
   - speech
   - mbsr
+  - chaplaincy
   - nvc
   - path
   - mindfulness

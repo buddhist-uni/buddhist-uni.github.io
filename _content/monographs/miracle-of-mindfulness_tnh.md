@@ -17,6 +17,7 @@ tags:
   - thought
   - mindfulness
   - daily-life
+  - chaplaincy
   - world
 ---
 
