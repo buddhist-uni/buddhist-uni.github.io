@@ -11,6 +11,7 @@ status: featured
 tags:
   - thai
   - function
+  - chaplaincy
   - death
 ---
 

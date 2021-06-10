@@ -12,6 +12,7 @@ course: meditation
 tags:
   - function
   - problems
+  - selling
   - vipassana
   - cittanupasana
 ---

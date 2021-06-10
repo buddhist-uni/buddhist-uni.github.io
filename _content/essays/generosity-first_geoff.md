@@ -10,6 +10,7 @@ tags:
   - thought
   - meditation
   - problems
+  - chaplaincy
   - path
   - west
 drive_links: ["https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk"]

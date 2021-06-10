@@ -12,6 +12,7 @@ tags:
   - dialogue
   - daily-life
   - class
+  - chaplaincy
 status: featured
 ---
 

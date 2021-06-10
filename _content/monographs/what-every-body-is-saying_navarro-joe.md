@@ -11,6 +11,7 @@ tags:
   - body-language
   - people
   - speech
+  - chaplaincy
 ---
 
 A surprisingly well-written and extemely helpful guide to body language, filled with entertaining case studies from Navarro's long career. Essential reading for anyone who communicates with humans in meatspace.

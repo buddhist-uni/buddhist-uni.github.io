@@ -11,6 +11,7 @@ tags:
   - lay
   - mindfulness
   - daily-life
+  - chaplaincy
   - problems
   - family
 ---
