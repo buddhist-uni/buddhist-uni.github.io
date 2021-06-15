@@ -13,4 +13,4 @@ tags:
 year: 1906
 ---
 
-> Svā Kṣitigarbha, Essence of the Earth, you who nurture all beings
+> Svā Kṣitigarbha, Essence of the Earth, you who nurture all beings
