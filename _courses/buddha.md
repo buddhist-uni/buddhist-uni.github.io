@@ -18,7 +18,6 @@ epigraph: |
   > Unconquerable by others, you vanquished Māra's hordes,  
   > Your physical form resplendent, like a mountain of gold.  
   > To you, the King of the Śākyas, I pay homage!  
-  
   ~ [Drikung Kyobpa Jikten Sumgön](https://www.lotsawahouse.org/indian-masters/nagarjuna/great-praise-twelve-acts-buddha){:target="_blank" ga-event-value="0.5"}
 feedback_id: "The+Buddha"
 next_courses:
