@@ -14,12 +14,12 @@ epigraph: |
   > གར་ི་ན་པོ་་ར་བིད་པ་། །  
 ་  > ལ་པོ་ོད་ལ་ག་འཚལ་ལོ། །  
   >  
-  > With skilful means and compassion, you were born in the Śākya clan, 
-  > Unconquerable by others, you vanquished Māra's hordes,  
+  > With skilful means and compassion, you were born in the Śākya clan, 
+  > Unconquerable by others, you vanquished Māra's hordes,  
   > Your physical form resplendent, like a mountain of gold.  
-  > To you, the King of the Śākyas, I pay homage!  
+  > To you, the King of the Śākyas, I pay homage!  
   
-  ~ [Drikung Kyobpa Jikten Sumgön](https://www.lotsawahouse.org/indian-masters/nagarjuna/great-praise-twelve-acts-buddha){:target="_blank" ga-event-value="0.5"}
+  ~ [Drikung Kyobpa Jikten Sumgön](https://www.lotsawahouse.org/indian-masters/nagarjuna/great-praise-twelve-acts-buddha){:target="_blank" ga-event-value="0.5"}
 feedback_id: "The+Buddha"
 next_courses:
  - setting

@@ -1,5 +1,5 @@
 ---
-title: "Priming the Lamp of *Dhamma*: The Buddha's Miracles in the Pāli *Mahāvaṃsa*"
+title: "Priming the Lamp of *Dhamma*: The Buddha's Miracles in the Pāli *Mahāvaṃsa*"
 authors:
   - "Kristin Scheible"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/9289/3150"
