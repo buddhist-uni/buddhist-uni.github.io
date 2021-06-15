@@ -81,6 +81,45 @@ layout: default
     {% include content_filelinks.html content=page %}
  </header>
   <div class="post-content">
+        {% if page.category == "av" and page.external_url contains "youtu" %}
+            <script>
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                var player;
+                function onYouTubeIframeAPIReady() {
+                  player = new YT.Player('ytplayer', {
+                  height: '390',
+                  width: '94%',
+                  videoId: '{{ page.external_url | ytid }}',
+                  playerVars: {
+                    'playsinline': 1,
+                    'modestbranding': 1,
+                    'enablejsapi': 1,
+                    'widget_referrer': '{{ page.url | absolute_url }}'
+                  },
+                  events: {
+                    'onStateChange': onPlayerStateChange
+                  }
+                });}
+                var started = false;
+                function onPlayerStateChange(event) {
+                    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+                    if (!started && event.data == YT.PlayerState.PLAYING) {
+                        ga('send','event','Video','play','{{ content_path }}');
+                        started = true;
+                    }
+                    if (event.data == YT.PlayerState.ENDED) {
+                        ga('send','event','Video','finish','{{ content_path }}');
+                    }
+                    {%- else -%}
+                    console.log(event.data);
+                    {%- endif -%}
+                }
+            </script>
+            <div id="ytplayer"></div>
+        {% endif %}
         {{ content }}
   </div>
 
