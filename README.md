@@ -45,11 +45,12 @@ To speed that up, you have two options:
 
 ~~~
 rm -rf _site
+mkdir _site
+git branch -D prod
 git pull
 git checkout prod
-cp -r . ~/obu-prod
+cp -r . _site
 git checkout master
-mv ~/obu-prod _site
 JEKYLL_ENV=production bundle exec jekyll serve --incremental --skip-initial-build
 ~~~
 
