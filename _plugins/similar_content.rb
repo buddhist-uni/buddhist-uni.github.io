@@ -47,7 +47,8 @@ module Jekyll
             if candidate["status"] == "rejected" or candidate["path"] == v["include_content.path"] then
                 next
             end
-            score = config["s_i"]
+            score = rand + rand
+            score *= config["s_i"]
             denom = config["d_i"]
             if v["include_content.course"] then
                 if v["include_content.course"] == candidate["course"] then

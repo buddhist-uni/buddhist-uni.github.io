@@ -11,7 +11,7 @@ course: imagery
 tags:
   - rebirth-stories
   - dn
-  - cosmology
+  - myth
 year: 2006
 volume: 28
 journal: jpts
