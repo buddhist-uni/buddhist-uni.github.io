@@ -13,7 +13,6 @@ tags:
   - myth
   - setting
   - indian
-  - rebirth-stories
   - imagery
   - karma
   - abhidhamma
