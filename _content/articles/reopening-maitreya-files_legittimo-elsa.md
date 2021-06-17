@@ -1,5 +1,5 @@
 ---
-title: "Reopening the Maitreya Files: Two almost identical early Maitreya sūtra translations in the Chinese Canon"
+title: "Reopening the Maitreya Files: Two almost identical early Maitreya sūtra translations in the Chinese Canon"
 authors: ["Elsa I. Legittimo"]
 journal: jiabs
 year: 2008
@@ -12,5 +12,5 @@ tags:
   - maitreya
 ---
 
-> The translation of the twin Maitreya texts appears to have been produced as part of the *Ekottarika-āgama*’s translation.
+> The translation of the twin Maitreya texts appears to have been produced as part of the *Ekottarika-āgama*’s translation.
 
