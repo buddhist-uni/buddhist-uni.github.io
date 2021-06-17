@@ -45,7 +45,6 @@ To speed that up, you have two options:
 
 ~~~
 rm -rf _site
-mkdir _site
 git branch -D prod
 git pull
 git checkout prod
