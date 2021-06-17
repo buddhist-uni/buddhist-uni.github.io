@@ -1,5 +1,5 @@
 ---
-title: "Access to Insight.org"
+title: "Access to Insight"
 external_url: "https://www.accesstoinsight.org"
 tags:
   - pali-canon
