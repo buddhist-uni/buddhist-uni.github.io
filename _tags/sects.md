@@ -17,4 +17,5 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/1/13/Ellora_Caves%2C_I
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Ellora_Caves,_India,_The_Vishvakarma_Buddhist_Cave.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 
-The schools of Buddhism that arose in India in the centuries after King Ashoka.
+The "18" schools of Buddhism that arose in India in the centuries after King Ashoka, and their relationship to the emerging "Mahayana" movements.
+
