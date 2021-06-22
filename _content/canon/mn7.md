@@ -1,5 +1,5 @@
 ---
-title: "MN 7: Simile of the Cloth"
+title: "MN 7 The Vatthupama Sutta: The Simile of the Cloth"
 slug: "mn007"
 translator: sujato
 external_url: "https://suttacentral.net/mn7/en/sujato"
@@ -15,4 +15,4 @@ tags:
 year: 2018
 ---
 
-A beautiful and somewhat unusual description of the path to stream entry and beyond.
+The Vattha Sutta is a beautiful and somewhat unusual description of the path to stream entry and beyond.

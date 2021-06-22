@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1etH1eWd97hIBsZD69IO8RZu0Nd7MeW3P/view?usp=drivesdk"
 course: ea
 tags:
-  - indian-sects
+  - sects
 year: 2013
 journal: "The Journal of the American Oriental Society"
 volume: 133

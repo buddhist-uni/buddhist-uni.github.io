@@ -15,7 +15,7 @@ tags:
   - america
 ---
 
-> How does one say what if without reproach?
+> How does one say "what if" without reproach?
 
 A kaleidoscopic meditation on race, identity, culture, and deep listening.
 
