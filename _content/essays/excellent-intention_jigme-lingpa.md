@@ -1,5 +1,5 @@
 ---
-title: "Excellent Intention: A Simple Nyungné Ritual"
+title: "Excellent Intention: A Simple Nyungné Ritual"
 authors: ["Jigme Lingpa"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jigme-lingpa/simple-nyungne"
 year: 2019
@@ -11,4 +11,4 @@ tags:
   - tibetan
 ---
 
-A short uposatha ceremony from the Tibetan Tradition, focusing on the recollection of Avalokiteśvara.
+A short uposatha ceremony from the Tibetan Tradition, focusing on the recollection of Avalokiteśvara.
