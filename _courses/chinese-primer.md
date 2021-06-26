@@ -67,7 +67,9 @@ And even for the bilingual English-Chinese speakers, I recommend everyone get:
 - Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank"} containing the vocab for the class and review said vocabulary in a flashcard-like interface.
 - Make sure to also download the (free) "Buddhist" Dictionary Add-on after you install the app, as it has many Buddhist terms the standard dictionary does not, based on [The Digital Dictionary of Buddhism](http://www.buddhism-dict.net/ddb/){:target="_blank"}.
 
-This [Chinese-Sanskrit Dictionary](http://www.ahandfulofleaves.org/documents/A%20Buddhist%20Chinese_Sanskrit%20Dict_Hirakawa.pdf){:target="_blank"} may also be helpful for translating Chinese Buddhist texts.
+This [Chinese-Sanskrit Dictionary](http://www.ahandfulofleaves.org/documents/A%20Buddhist%20Chinese_Sanskrit%20Dict_Hirakawa.pdf){:target="_blank"} may also be helpful for translating Chinese Buddhist texts, keeping in mind that native Chinese and Buddhist Chinese aren't quite the same language:
+
+{% include content_box.html category="articles" slug="buddhist-chinese_zhu-qingzhi" %}
 
 ### Volume 2: The Indian Tradition
 
