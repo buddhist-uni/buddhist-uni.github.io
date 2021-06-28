@@ -9,6 +9,7 @@ course: ethics
 tags:
   - lay
   - animals
+  - vegetarianism
   - becon
   - karma
   - livelihood

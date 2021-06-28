@@ -8,6 +8,7 @@ tags:
   - renunciation
 oclc: 1141064097
 year: 2020
+status: rejected
 publisher: shambhala
 ---
 
