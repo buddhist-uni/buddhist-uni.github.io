@@ -11,7 +11,6 @@ journal: cjbs
 course: pali-canon
 tags:
   - oral
-  - style
   - pericope
   - ebts
   - sutta

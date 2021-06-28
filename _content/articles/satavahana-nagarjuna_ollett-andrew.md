@@ -17,7 +17,7 @@ tags:
 
 > there was nothing "private" about either the king’s support of Buddhist communities, or the claims and requests that Buddhist intellectuals made of the king.
 
-> [Nāgārjuna] justifies his condescension to the king by his personal affection for him, as well as his compassion for the world, which would presumably be affected by the king’s policies
+> [[Nāgārjuna]({% link _authors/nagarjuna.md %})] justifies his condescension to the king by his personal affection for him, as well as his compassion for the world, which would presumably be affected by the king’s policies
 
 > the land granted by Gautamīputra Śrī Sātakarṇi did not produce the revenue it was intended to produce, because "the land is not cultivated and the village is not inhabited." In exchange, another plot of land was granted, this time measuring 100 *nivartanas*
 
