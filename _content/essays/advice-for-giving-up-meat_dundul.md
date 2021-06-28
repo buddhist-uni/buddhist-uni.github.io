@@ -1,7 +1,7 @@
 ---
 title: "Song of Advice for Giving Up Meat Eating"
 authors:
-  - "Nyala Pema Dündul"
+  - "Nyala Pema Dündul"
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/song-advice-giving-up-meat"
 drive_links:
