@@ -19,3 +19,5 @@ tags:
 
 The first few sections of the Robe Chapter tells of the origins and exploits of the Buddha's personal physician.
 
+Note that, while the treatments described in this tale remain undeniably dramatic, they nevertheless present [an accurate account]({% link _content/articles/jivaka-and-ayurveda_zysk-kenneth.md %}) of ancient Indian medicine.
+

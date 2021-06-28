@@ -7,6 +7,7 @@ year: 2018
 course: ethics
 tags:
   - animals
+  - vegetarianism
   - nature
   - activism
 publisher: vox

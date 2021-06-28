@@ -20,5 +20,5 @@ tags:
   - dn
 ---
 
-A short essay on how the Buddha's teaching compares to his contemporaries in [DN 2]({% link _content/canon/dn2.md %}).
+A short essay on how the Buddha's teachings contrast to his contemporaries' in [DN 2]({% link _content/canon/dn2.md %}).
 
