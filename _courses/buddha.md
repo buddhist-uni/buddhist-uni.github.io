@@ -122,6 +122,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [E] The Bodhisattva Career in the Theravada
 1. [Bodhisattva] Chapter 2: Meeting the Previous Buddha
+1. {% include content_blurb.html category="articles" slug="sumedhakatha-in-pali-and-the-northern-tradition_matsumura-junko" %}
 1. [Nidanakatha] The Distant Epoch
 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction

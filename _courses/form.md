@@ -120,9 +120,12 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {% include content_blurb.html category="articles" slug="lotus-as-symbol_olson_carl" %}
 - One such object which became notably ubiquitous across Buddhist cultures is the lotus flower.  This article explores the ancient origins and meaning of this potent symbol.
 
+{% include content_blurb.html category="essays" slug="offering-flowers_dodrupchen" %}
+- And this essay commends the virtues of offering flowers: a lovely practice still common across Buddhist Asia
+
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 5 (we'll come back to 4 later): Buddhist Art Symbols For Religious Edification
 {:.mb-0}
-- Buddhist art has long been self-consciously used as a pedagogical tool.
+- Art, offerings and other public devotions provided early (and current)  Buddhists with an effective, yet soft, way to spread the religion.
 
 ##### Chapter 4: “The Rise of Mahayana”
 
