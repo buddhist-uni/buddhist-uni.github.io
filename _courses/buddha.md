@@ -128,7 +128,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
 1. [Life] After the Enlightenment
 1. {% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}
-1. {% include inline_content.html category="articles" slug="tathagata_bodhi" %}
+1. {% include content_blurb.html category="articles" slug="tathagata_bodhi" %}
+1. {% include content_blurb.html category="excerpts" slug="tathagata_analayo" %}
+1. {% include inline_content.html category="excerpts" slug="tevijjavacchagottasutta_analayo" %}
 
 1. {% include content_blurb.html category="articles" slug="weary-buddha_webster" %}
 1. [Entries] _Pratyeka-buddhas_
