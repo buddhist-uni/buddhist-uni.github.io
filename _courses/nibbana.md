@@ -170,6 +170,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 {% include content_box.html category="canon" slug="snp5.6" %}
 
+{% include content_blurb.html category="canon" slug="mn71" %}
+- Even in the Buddha's day (all the more so later) people tried to attribute omniscience to the Buddha: a claim he rejected.
+- In this sutta, the Buddha explains that, rather than omniscience, it's right view and renunciation that make *nibbāna* "unapprehendable" by ordinary people.
+
 <i class="fas fa-book"></i> ML Chapter 5 - The Northern Schools
 {: .mb-0}
   - If you are interested in the Northern schools of Indian Buddhism (which came to be part of the Mahayana), you may want to read Chapter 5 at this point. If you're uninterested in the Mahayana, however, you will probably want to skip this chapter of _Metaphor and Literalism_

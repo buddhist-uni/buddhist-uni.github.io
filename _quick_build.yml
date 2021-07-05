@@ -90,6 +90,7 @@ exclude:
     - _content/av/in-the-dragons-shadow_strangio-sebastian.md
     - _content/av/irish-buddhist_turner-a.md
     - _content/av/jakarta-is-sinking_vox.md
+    - _content/av/let-there-be-conflicts_sujato.md
     - _content/av/lives-of-early-buddhist-nuns_collett-alice.md
     - _content/av/sabda_bronkhorst.md
     - _content/av/teardrops-of-time_fuhrmann-arnika.md
@@ -110,6 +111,7 @@ exclude:
     - _content/canon/an5.180.md
     - _content/canon/an5.191.md
     - _content/canon/an8.6.md
+    - _content/canon/dn13.md
     - _content/canon/mn14.md
     - _content/canon/mn19.md
     - _content/canon/mn20.md

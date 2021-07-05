@@ -8,11 +8,11 @@ year: 2006
 volume: 7
 pages: "1--20"
 journal: iijbs
-course: buddha
+course: epistemology
 status: featured
 tags:
-  - epistemology
   - free-will
+  - buddha
 ---
 
 > a fair number of occurrences in the Buddha’s life would be difficult to explain if he had been omniscient
