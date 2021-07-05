@@ -138,9 +138,14 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Chapter 5: “The Pantheon”
 
-{% include content_box.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
+{% include content_blurb.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
+- In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expedience. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated ad-infinitum in texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which has persisted to today.
 
-{% include content_box.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
+{% include content_blurb.html category="articles" slug="narratives-of-buddhist-relics-and-images_berkwitz-s" %}
+- As the memory of the Buddha faded and Buddhism spread around Asia, people longed for a connection back to the historical Buddha of India. One common expression of this was the creation and authentication of local "souvenirs" of the Buddha, which play a prominent role in popular Buddhism to this day.
+
+{% include content_blurb.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
+- In addition to new relics and stories explaining them, many new teachings were also introduced. Today, as all the remaining traditions have their fair share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning about where we place our faith.
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 6: Socialization for Death
 {:.mb-0}
