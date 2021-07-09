@@ -138,9 +138,13 @@ Coming down from the clouds, what do these teachings actually mean, and how do w
 - Now, listen to it chanted in the traditional style by a group of monks in California. 
 - What benefits do you see in chanting this way, as compared to simply reading the text?
 
+{% include content_blurb.html category="canon" slug="bodhisattvamanyavali_atisha" %}
+- This poem from the Mahayana Tradition beautifully and concisely summarizes the heart of Buddhist ethics.
+- Does any of its advice surprise you? Inspire you? Challenge you?
+
 {% include content_blurb.html category="booklets" slug="on-love_jayasaro" %}
-- Ajahn Jayasaro beautifully explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
-- While reading, I encourage you to really engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you? 
+- Ajahn Jayasaro explains how we might apply Buddhist wisdom to an area of our lives we all care deeply about: our relationships.
+- While reading, I encourage you to engage with this text. Think about your own relationships while you read. Is there any wisdom here you can take home with you?
 
 Ideally, the chapter on meditation would be accompanied by in-person meditation instruction. I encourage the digital student to seek out a local meditation group at this point if you haven't done so already to get first-hand experience with this very important part of Buddhist practice if you haven’t already.
 

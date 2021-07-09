@@ -90,6 +90,9 @@ the history of the texts you're studying:
 {% include content_blurb.html category="excerpts" slug="itbw_general-intro_bodhi" blurb="
 - Gives a good overview of the oral tradition. Be sure not to skip it!" %}
 
+{% include content_blurb.html category="essays" slug="buddha-as-a-teacher_dhammika" %}
+- In what context and in what way were these teachings delivered? And to what purpose?
+
 {% include content_blurb.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" blurb="
 - We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts." %}
 
@@ -107,7 +110,7 @@ the history of the texts you're studying:
 - It's okay to skim or even skip this one. Mostly it's presented here to give a “behind the scenes” peek at the scholarship that goes into ancient Buddhist texts." %}
 
 {% include content_blurb.html category="articles" slug="oral-transmission_wynne" %}
-- Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim
+- Argues against an improvisational oral transmission and shows why we should think of the texts as having been passed down to us (relatively) verbatim
 
 ### One Additional Sutra
 
