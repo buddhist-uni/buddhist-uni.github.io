@@ -1,7 +1,7 @@
 ---
 title: "The Bodhisattva’s Garland of Jewels"
 authors:
-  - "Atiśa Dīpaṃkara"
+  - "Atiśa Dīpaṃkara"
 translator: "Rigpa Translations"
 course: buddhism
 tags:
