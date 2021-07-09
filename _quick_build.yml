@@ -44,6 +44,7 @@ exclude:
     - _authors/popova.md
     - _authors/singer-peter.md
     - _content/articles/astrological-determinism_kotyk-j.md
+    - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
     - _content/articles/buddhism-and-blackness_vox.md
     - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
@@ -209,6 +210,7 @@ exclude:
     - _content/av/long-way-down_delong-robert.md
     - _content/av/many-buddhas-one-buddha_appleton.md
     - _content/av/map-of-particles_domain-of-science.md
+    - _content/av/mine_99pi.md
     - _content/av/mine-opal_smarter-every-day.md
     - _content/av/mn152-explanation_bodhi.md
     - _content/av/mn18-explanation_kearney-patrick.md
