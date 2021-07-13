@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://buddhistuniversity.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://buddhistuniversity.net/" rel="alternate" type="text/html" /><updated>2021-07-13T12:29:14+07:00</updated><id>https://buddhistuniversity.net/feed.xml</id><title type="html">The Open Buddhist University</title><subtitle>A website dedicated to providing free, online courses and bibliographies in Buddhist Studies. </subtitle><author><name>Khemarato Bhikkhu</name></author><entry><title type="html">Engaged Buddhism</title><link href="https://buddhistuniversity.net/blog/2021/05/29/engaged" rel="alternate" type="text/html" title="Engaged Buddhism" /><published>2021-05-29T00:00:00+07:00</published><updated>2021-05-29T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2021/05/29/engaged</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2021/05/29/engaged">&lt;p&gt;This month, we’ve added a new bibliography on &lt;a href=&quot;/tags/engaged&quot;&gt;Engaged Buddhism&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;It takes a sympathetic but critical look at the modernist movement, starting with the methodological problem of &lt;a href=&quot;/content/articles/engaged-buddhism_temprano-victor&quot;&gt;defining “Engaged Buddhism”&lt;/a&gt; in the first place. The bibliography then highlights several examples of &lt;a href=&quot;/content/articles/building-resilience-preventing-burnout_pigni-alessandra&quot;&gt;Engaged Buddhists doing real good&lt;/a&gt; as well as &lt;a href=&quot;/content/av/mindful-elite_kucinskas-jaime&quot;&gt;a few, more problematic examples&lt;/a&gt;. In the end, it’s up to you to decide whether Engaged or &lt;a href=&quot;/content/articles/disengaged-buddhism_lele-amod&quot;&gt;“Disengaged” Buddhism&lt;/a&gt; is right for you, but I hope that you’ll at least find the topic as thought-provoking and engaging as I have!&lt;/p&gt;
+
+&lt;p&gt;I’ve also been busy this month making backend improvements to the site. You may notice that the content pages &lt;a href=&quot;https://talk.jekyllrb.com/t/replacing-a-slow-include-with-a-custom-ruby-tag/6064&quot;&gt;load a little faster now&lt;/a&gt;, and that the “www.” is now gone from the front of our URLs. I also identified and fixed a number of broken links around the website: If you ran into one of them before, please accept my apologies about that! Hopefully they will be less frequent in the future.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I plan to spend the upcoming rains retreat almost entirely in seclusion away from the internet, so please anticipate that future updates will be less frequent. Thank you as ever for your kind support.&lt;/p&gt;
+
+&lt;p&gt;All the best until next time,&lt;br /&gt;
+Khemarato Bhikkhu&lt;br /&gt;
+Chief Librarian&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This month, we’ve added a new bibliography on Engaged Buddhism!</summary></entry><entry><title type="html">Indian Buddhism</title><link href="https://buddhistuniversity.net/blog/2021/04/30/indian" rel="alternate" type="text/html" title="Indian Buddhism" /><published>2021-04-30T00:00:00+07:00</published><updated>2021-04-30T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2021/04/30/indian</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2021/04/30/indian">&lt;p&gt;As promised &lt;a href=&quot;/blog/2021/03/30/buddhas-world&quot;&gt;last month&lt;/a&gt;, this month we continue to explore Buddhist India: this time after the Buddha, with bibliographies on &lt;a href=&quot;/tags/indian&quot;&gt;Indian Buddhism after the Buddha&lt;/a&gt; (up to the first &lt;a href=&quot;/tags/sects&quot;&gt;sectarian splits&lt;/a&gt;) and on &lt;a href=&quot;/tags/pilgrimage&quot;&gt;Buddhist pilgrimage today&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s a lot of great scholarly content in the new bibliographies this month, so I encourage you (really!) to go and check them out.  I won’t list every exciting thing here today, but I did want to highlight some work by four of my favorite Bhikkhu teachers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/content/av/heirs-to-the-buddha_yuttadhammo&quot;&gt;This talk by Bhante Yuttadhammo&lt;/a&gt; was delivered at the foot of the (Sri Lankan) Bodhi Tree and is such a good, atmospheric listen. If it inspires you to go on &lt;a href=&quot;/tags/pilgrimage&quot;&gt;pilgrimage&lt;/a&gt;, check out the books there!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/content/monographs/sects-and-sectarianism_sujato&quot;&gt;In this book, Bhante Sujato explains how Buddhist sects&lt;/a&gt;, much like island birds, slowly evolved into separate species due to distance, not dramatic schisms—an important fact to keep in mind as you read about &lt;a href=&quot;/tags/sects&quot;&gt;the early Buddhist sects&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/content/essays/arahants-bodhisattvas-and-buddhas_bodhi&quot;&gt;Bhikkhu Bodhi muses about the emergence of the Bodhisattva ideal in this thoughtful essay&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and &lt;a href=&quot;/content/essays/that-the-true-dhamma-might-last_geoff&quot;&gt;Ajahn Geoff shares with us King Ashoka’s favorite suttas for preserving the religion&lt;/a&gt; giving us a taste of the questions and concerns which drove &lt;a href=&quot;/tags/indian&quot;&gt;Indian Buddhist history as a whole&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lastly, this month marks a special milestone for the University.
+It was &lt;a href=&quot;/blog/2020/04/28/april-showers&quot;&gt;exactly one year ago yesterday&lt;/a&gt; that I first launched the University &lt;a href=&quot;/library&quot;&gt;library&lt;/a&gt; with the goal
+of providing thousands of free books, articles, and talks across the breadth of Buddhist Studies.
+One year later, we now have &lt;a href=&quot;/content&quot;&gt;over 1000 pieces&lt;/a&gt;, covering everything from &lt;a href=&quot;/tags/agama&quot;&gt;the Agamas&lt;/a&gt; to &lt;a href=&quot;/tags/vinaya-pitaka&quot;&gt;the Vinaya&lt;/a&gt;, from &lt;a href=&quot;/tags/buddha&quot;&gt;the Buddha&lt;/a&gt; to &lt;a href=&quot;/tags/world&quot;&gt;the World&lt;/a&gt; and in that year, over a thousand scholars from 67 countries have come and downloaded an average of seven items each.&lt;sup id=&quot;fnref:ga&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:ga&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+It means a lot to me to see that so many people are interested in learning authentic Buddhism and want to keep the Dhamma as it always has been: free.
+Thank you for coming and studying with us, and I hope you will find the University a helpful resource for years to come.&lt;/p&gt;
+
+&lt;p&gt;Looking to the future, there’s still much to do to bring greater depth to the University’s offerings.
+I look forward to delving deeper into Buddhist philosophy and history in the coming years, but I especially look forward to hearing your ideas about where the University could go from here.
+If you have any ideas, feel free to drop me a line, and until then: Thank you for reading!&lt;/p&gt;
+
+&lt;p&gt;Yours sincerely,&lt;br /&gt;
+Khemarato Bhikkhu&lt;br /&gt;
+Chief Librarian, The Open Buddhist University&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:ga&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Usage data by &lt;a href=&quot;/settings&quot;&gt;Google Analytics&lt;/a&gt; &lt;a href=&quot;#fnref:ga&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">As promised last month, this month we continue to explore Buddhist India: this time after the Buddha, with bibliographies on Indian Buddhism after the Buddha (up to the first sectarian splits) and on Buddhist pilgrimage today.</summary></entry><entry><title type="html">In the Buddha’s World</title><link href="https://buddhistuniversity.net/blog/2021/03/30/buddhas-world" rel="alternate" type="text/html" title="In the Buddha’s World" /><published>2021-03-30T00:00:00+07:00</published><updated>2021-03-30T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2021/03/30/buddhas-world</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2021/03/30/buddhas-world">&lt;p&gt;This month I’ve added two, new &lt;a href=&quot;/tags&quot;&gt;bibliographies&lt;/a&gt; to the site on the world of Early Buddhism: &lt;a href=&quot;/tags/setting&quot;&gt;The Buddha’s India&lt;/a&gt; and &lt;a href=&quot;/tags/characters&quot;&gt;Characters in the Early Buddhist Texts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Among the many interesting and compelling characters in the canon, I’ll just highlight one here: &lt;a href=&quot;/content/canon/pli-tv-kd8.1#pli-tv-kd08.01&quot;&gt;Jīvaka&lt;/a&gt;.  Not only is his story charming as a tale, but you can now read the original telling thanks to &lt;a href=&quot;/authors/brahmali&quot;&gt;Ajahn Brahmali&lt;/a&gt;’s &lt;a href=&quot;https://suttacentral.net/pli-tv-kd&quot;&gt;new translation of the &lt;em&gt;Vinaya Piṭaka&lt;/em&gt;&lt;/a&gt; which just dropped this month on &lt;a href=&quot;/content/reference/sutta-central&quot;&gt;SuttaCentral&lt;/a&gt;. A huge congratulations to him and the SuttaCentral team for launching the latest update to their site, and a huge encouragement to you, dear reader, to go and &lt;a href=&quot;https://suttacentral.net/pitaka/sutta/minor/kn&quot;&gt;check it out&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&quot;/tags/setting&quot;&gt;Buddha’s India&lt;/a&gt;, I’ve highlighted works that help explain the social world that the Buddha was born into and how he transformed it.  This is especially visible in how Buddhism adopted and adapted legendary beings from the local culture.  &lt;a href=&quot;/content/av/evil-creatures_sujato&quot;&gt;Bhante Sujato’s talk about the Buddhist adoption of “Evil Creatures”&lt;/a&gt; and &lt;a href=&quot;/content/articles/apsarases_covill-linda&quot;&gt;Linda Covill’s article on the adaptation of “Celestial Nymphs”&lt;/a&gt; are both especially inspiring examples of how skillfully this was done.&lt;/p&gt;
+
+&lt;p&gt;Buddhism itself, of course, also adapted in the centuries since its founder. Considering the diversity of early Buddhist schools, it may be tempting to project the current diversity of Buddhism back onto ancient India, but Florin Deleanu points out that this may be mistaken in his excellent &lt;a href=&quot;/content/articles/meditation-and-liberation-in-the-sravakabhumi_deleanu-florin&quot;&gt;overview of the &lt;em&gt;Śrāvakabhūmi&lt;/em&gt;&lt;/a&gt;, a meditation manual preserved by a Mahayana school which closely parallels the &lt;em&gt;Visuddhimagga&lt;/em&gt;. The differences are minor, but telling.&lt;/p&gt;
+
+&lt;p&gt;There is more to say about Indian Buddhism, of course, but I’ll save some for next month. So, for now, I’ll just leave you with this facinating &lt;a href=&quot;/content/av/chemical-history-of-a-candle&quot;&gt;Chemical History of a Candle&lt;/a&gt;: one of my favorite science videos on YouTube. Not related to anything, just thought I’d share :_)&lt;/p&gt;
+
+&lt;p&gt;If you have any videos, articles, feedback or anything else &lt;em&gt;you’d&lt;/em&gt; like to share, as always, feel free to drop me a line. Until then,&lt;/p&gt;
+
+&lt;p&gt;Your Librarian,&lt;br /&gt;
+Bhante Khemarato&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This month I’ve added two, new bibliographies to the site on the world of Early Buddhism: The Buddha’s India and Characters in the Early Buddhist Texts.</summary></entry><entry><title type="html">Vinaya Studies and The Mind Stilled</title><link href="https://buddhistuniversity.net/blog/2021/02/27/vinaya" rel="alternate" type="text/html" title="Vinaya Studies and The Mind Stilled" /><published>2021-02-27T00:00:00+07:00</published><updated>2021-02-27T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2021/02/27/vinaya</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2021/02/27/vinaya">&lt;p&gt;This short month saw two major additions to The University: &lt;a href=&quot;/courses/nibbana-mind-stilled&quot;&gt;an advanced course on Nibbāna&lt;/a&gt; (following up on &lt;a href=&quot;/courses/nibbana&quot;&gt;our previous course&lt;/a&gt;) and &lt;a href=&quot;/tags/vinaya-studies&quot;&gt;a new bibliography of Vinaya Studies&lt;/a&gt; (following up on our previous bibliographies on &lt;a href=&quot;/tags/monastic&quot;&gt;monasticism&lt;/a&gt; and &lt;a href=&quot;/tags/vinaya-pitaka&quot;&gt;the canon&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Somewhat complicating “The Canon,” &lt;a href=&quot;/content/articles/looking-for-vinaya_blackburn-anne&quot;&gt;Anne Blackburn, for example, encourages us to think about its “practical” subset&lt;/a&gt; and Ajahn Geoff highlights a few conflicts between The Canon and its commentaries in his &lt;a href=&quot;/content/booklets/bmc_geoff&quot;&gt;extensive, and highly recommended, guide to the Vinaya&lt;/a&gt;. The bibliography here aims to help (primarily monastics) make use of the texts.&lt;/p&gt;
+
+&lt;p&gt;On the meditation side, in addition to the profound &lt;a href=&quot;/content/av/nibbana-lectures_analayo&quot;&gt;lectures by Bhikkhu Analayo&lt;/a&gt; in the aforementioned course, I am also very excited this month to share with you &lt;a href=&quot;/content/av/impermanence_khema&quot;&gt;this classic talk on impermanence by Ayya Khema&lt;/a&gt; which beautifully summarizes the path of Vipassana Meditation. A real gem, be sure to give it a listen and check out our library’s &lt;a href=&quot;/tags/meditation#av&quot;&gt;other great talks&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;As always, if you have any feedback or questions, please feel free to email them in! And until next time,&lt;/p&gt;
+
+&lt;p&gt;Best wishes,&lt;br /&gt;
+Khemarato Bhikkhu&lt;br /&gt;
+The Librarian&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This short month saw two major additions to The University: an advanced course on Nibbāna (following up on our previous course) and a new bibliography of Vinaya Studies (following up on our previous bibliographies on monasticism and the canon).</summary></entry><entry><title type="html">The Buddha in the Pāli Texts</title><link href="https://buddhistuniversity.net/blog/2021/01/30/buddha" rel="alternate" type="text/html" title="The Buddha in the Pāli Texts" /><published>2021-01-30T00:00:00+07:00</published><updated>2021-01-30T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2021/01/30/buddha</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2021/01/30/buddha">&lt;p&gt;This month saw a number of technical upgrades to the site and the addition of &lt;a href=&quot;/courses/buddha&quot;&gt;a new syllabus on the Buddha&lt;/a&gt; along with a few other new pieces to the university library.&lt;/p&gt;
+
+&lt;p&gt;The biggest news is that, thanks to a generous supporter, the website now has a proper domain: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buddhistuniversity.net&lt;/code&gt;! The other technical improvement this month was the addition of a &lt;a href=&quot;/search/&quot;&gt;search page&lt;/a&gt;, where you can now plumb the depths of our archives like a pro! Expect more design improvements in the next couple weeks, as we continue to make ourselves at home.&lt;/p&gt;
+
+&lt;p&gt;In terms of content, The University is now proud to offer &lt;a href=&quot;/courses/buddha&quot;&gt;a new course on the Buddha in the Pāli Texts&lt;/a&gt; featuring a couple &lt;em&gt;new&lt;/em&gt; PDFs about the Buddha from &lt;a href=&quot;/content/articles/translating-buddha_bodhi&quot;&gt;Bhikkhu Bodhi&lt;/a&gt; and &lt;a href=&quot;/content/canon/nidanakatha&quot;&gt;Bhikkhu Ānandajoti&lt;/a&gt; released just a few weeks ago (!) along with &lt;a href=&quot;/content/articles/mahapajapati-pabaja_analayo&quot;&gt;this classic paper by Bhikkhu Anālayo&lt;/a&gt; attempting to reconstruct a sensible version of the Bhikkhuni Order formation narrative.&lt;/p&gt;
+
+&lt;p&gt;Over at the library, Rober Mayer explains why &lt;a href=&quot;/content/articles/innovation-and-conservation-in-treasure_mayer-rob&quot;&gt;Tibetan Treasure literature may not be as innovative as you’d imagine&lt;/a&gt;, Jorie Graham &lt;a href=&quot;/content/av/catch-sight-of-now_graham-jorie&quot;&gt;catches sight of the now&lt;/a&gt;, Ezra Klein talks about &lt;a href=&quot;/content/av/most-important-book_robinson-klein&quot;&gt;the most important book he read last year&lt;/a&gt; with its author, and Helena de Bres explains &lt;a href=&quot;/content/essays/local-food_debres&quot;&gt;the moral case for eating local food&lt;/a&gt;. Be sure to check them out!&lt;/p&gt;
+
+&lt;p&gt;As always, you can email me (now at     a &lt;a href=&quot;mailto:theopenbuddhistuniversity@gmail.com&quot;&gt;shiny new email address!&lt;/a&gt;) with any comments, questions, concerns, or compliments you may have.&lt;/p&gt;
+
+&lt;p&gt;Until next month,&lt;br /&gt;
+Khemarato Bhikkhu&lt;br /&gt;
+Librarian in Chief&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This month saw a number of technical upgrades to the site and the addition of a new syllabus on the Buddha along with a few other new pieces to the university library.</summary></entry><entry><title type="html">你好, āvuso!</title><link href="https://buddhistuniversity.net/blog/2020/12/31/ni-hao-avuso" rel="alternate" type="text/html" title="你好, āvuso!" /><published>2020-12-31T00:00:00+07:00</published><updated>2020-12-31T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2020/12/31/ni-hao-avuso</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2020/12/31/ni-hao-avuso">&lt;p&gt;Hello, friend! Today I’m happy to announce the addition of a new feature and a few new courses for the more serious scholars, as well as a few polemics on contemporary issues which are near and dear to my heart.&lt;/p&gt;
+
+&lt;p&gt;But first, the courses!&lt;/p&gt;
+
+&lt;p&gt;This month I’ve added three new courses on the primary languages of the Early Buddhist Texts: Chinese and Pāli.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/courses/chinese-primer&quot;&gt;Chinese Buddhist Writing&lt;/a&gt; is a course for Buddhists with some prior knowledge of Mandarin (or who are willing to hussle to get those fundamentals elsewhere) who would like help reading Chinese Buddhist scriptures. This course goes character-by-character through the different strata of Chinese texts, giving a comprehensive introduction to Buddhist Chinese from ancient Indian translations to esoteric treatises.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/courses/pali-primer&quot;&gt;The Pāli Primer Course&lt;/a&gt; is a fun introduction to the Pāli Language for everyone, and for those who have some background already, &lt;a href=&quot;/courses/pali-new-course&quot;&gt;the intermediate Pāli course&lt;/a&gt; will get you into the suttas themselves. Both classes are taught by the Venerable Bhikkhu Bodhi.&lt;/p&gt;
+
+&lt;p&gt;In case it’s helpful to academics, I’ve added the &lt;a href=&quot;https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file&quot; target=&quot;_blank&quot;&gt;Bibtex information&lt;/a&gt; for &lt;em&gt;all&lt;/em&gt; the items in the library to the bottom of each piece’s &lt;a href=&quot;/content/booklets/tracing-thought-through-things_stargardt&quot;&gt;permalink page&lt;/a&gt;. And for those who use bibliographic software, like &lt;a href=&quot;https://www.jabref.org/&quot; target=&quot;_blank&quot;&gt;JabRef&lt;/a&gt;, you can now download &lt;a href=&quot;/content.bib&quot;&gt;&lt;strong&gt;the entire library&lt;/strong&gt; as a single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bib file&lt;/code&gt;&lt;/a&gt; for importing into your reference manager of choice, &lt;a href=&quot;/library/#additional-information&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And, on a more serious note, 2020 has been a year.&lt;/p&gt;
+
+&lt;p&gt;With wildfires and a pandemic raging across the globe, it’s easy to feel powerless in the face of such large problems.  But there are things we can do and, with your indulgence, I’d like to talk about four of them here:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;inline_content&quot;&gt;&lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-book&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;life-you-can-save_singer-peter&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;monographs/life-you-can-save_singer-peter&quot; ga-event-value=&quot;7.8&quot; href=&quot;https://www.thelifeyoucansave.org/the-book/&quot;&gt;The Life You Can Save – Peter Singer&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In this now-classic monograph, Peter Singer reminds us that giving money to charity really does make a difference.  Largely in response to this book’s call for better data, &lt;a href=&quot;https://www.givewell.org/&quot; target=&quot;_blank&quot;&gt;GiveWell.org&lt;/a&gt; has, for years now, been identifying the charities which demonstrably save the most lives for the least amount of additional funding.&lt;/li&gt;
+  &lt;li&gt;In a plague year, I can hardly think of better karma to make, so please, read Singer’s (free!) ebook, and then reconsider how much you can afford to give.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;inline_content&quot;&gt;&lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-volume-up&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;the-green-pill&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;av/the-green-pill&quot; ga-event-value=&quot;0.78&quot; href=&quot;https://youtu.be/cXY584pT4zk&quot;&gt;The Green Pill – Melanie Joy&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The second biggest, if not always easiest, way to make a difference is to eat less meat. In this podcast with Ezra Klein, Melanie Joy talks about why that’s so hard to do in our carnistic culture.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;&quot;&gt;&lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-book&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;sexual-consent_popova&quot; class=&quot;inline_content_title&quot;&gt;Sexual Consent – Milena Popova&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;7.8&quot; ga-event-label=&quot;drive.google.com/monographs/sexual-consent_popova.pdf&quot; data-content-path=&quot;monographs/sexual-consent_popova&quot; href=&quot;https://drive.google.com/file/d/1DeGJ8Gjn2xvtVUh0JTcxIEgatBTHu1SV/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;7.8&quot; ga-event-label=&quot;drive.google.com/monographs/sexual-consent_popova.epub&quot; data-content-path=&quot;monographs/sexual-consent_popova&quot; href=&quot;https://drive.google.com/file/d/1WJenwV6JoDLcZU0gY1ZBj2qW4H7bWXCH/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.epub&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Whether you’re sexually active or not, the third precept against sexual misconduct obliges us to consider carefully the nuances of consent.&lt;/li&gt;
+  &lt;li&gt;With chapters covering culture, power, negotiation, activism, and more, this concise yet comprehensive monograph will surely help structure and guide any investigation into this important and uncomfortable topic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;inline_content&quot;&gt;&lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-newspaper&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;should-trees-have-standing_stone-chris&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;articles/should-trees-have-standing_stone-chris&quot; ga-event-value=&quot;0.65&quot; href=&quot;https://iseethics.files.wordpress.com/2013/02/stone-christopher-d-should-trees-have-standing.pdf&quot;&gt;Should Trees Have Standing: Toward Legal Rights for Natural Objects – Christopher D. Stone&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.65&quot; ga-event-label=&quot;drive.google.com/articles/should-trees-have-standing_stone-chris.pdf&quot; data-content-path=&quot;articles/should-trees-have-standing_stone-chris&quot; href=&quot;https://drive.google.com/file/d/1Gdegl9IsjA9ufkMOE4LK3GzsEG0jhQmJ/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lastly, beyond caring for the animals and each other, Chris Stone makes the mind-blowing case for the idea that &lt;em&gt;everything&lt;/em&gt; should have rights.&lt;/li&gt;
+  &lt;li&gt;A utopian idea, perhaps, but one worth taking seriously as we rebuild the world in 2021.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wishing you a happy and most auspicious new year,&lt;br /&gt;
+圖書管理員&lt;br /&gt;
+Khemarato Bhikkhu&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">Hello, friend! Today I’m happy to announce the addition of a new feature and a few new courses for the more serious scholars, as well as a few polemics on contemporary issues which are near and dear to my heart.</summary></entry><entry><title type="html">Introducing 6 (!) More Courses</title><link href="https://buddhistuniversity.net/blog/2020/11/07/course-catalog" rel="alternate" type="text/html" title="Introducing 6 (!) More Courses" /><published>2020-11-07T00:00:00+07:00</published><updated>2020-11-07T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2020/11/07/course-catalog</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2020/11/07/course-catalog">&lt;p&gt;The last few months I’ve been busy adding a number of courses to the site and today I’m proud to announce the completion of &lt;a href=&quot;/courses/&quot;&gt;the University’s new catalog&lt;/a&gt; of (now) ten courses.&lt;/p&gt;
+
+&lt;p&gt;Normally these digests would wait until the end of the month to come out, but this month I can’t wait to share with you what I’ve been working on! Today, I add six courses to the University curriculum on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/courses/philosophy&quot;&gt;Buddhist philosophy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/courses/imagery&quot;&gt;Language&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/courses/ethics&quot;&gt;Ethics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Middle Length &lt;a href=&quot;/courses/mn&quot;&gt;Suttas&lt;/a&gt; and &lt;a href=&quot;/courses/tranquility-and-insight&quot;&gt;Āgamas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;and even &lt;a href=&quot;/courses/nibbana&quot;&gt;Nirvana itself&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The new course catalog now contains ten Undergrad-level courses, representing over a year’s worth of full-time study and bringing us a large step closer to the University’s goal of providing a free education in Buddhist Studies.&lt;/p&gt;
+
+&lt;p&gt;If there’s anything you’d like to contribute towards that vision, from design or technical help to content or feature suggestions, please feel free to email me about it any time.  The University wouldn’t exist without your gracious support and encouragement, so thank you for your kindness and enthusiasm this year and I hope you (continue to) enjoy your time here at OBU.&lt;/p&gt;
+
+&lt;p&gt;Sincerely,&lt;br /&gt;
+~ Than Khemarato&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">The last few months I’ve been busy adding a number of courses to the site and today I’m proud to announce the completion of the University’s new catalog of (now) ten courses.</summary></entry><entry><title type="html">The Two Traditions of Buddhism</title><link href="https://buddhistuniversity.net/blog/2020/10/29/traditions" rel="alternate" type="text/html" title="The Two Traditions of Buddhism" /><published>2020-10-29T00:00:00+07:00</published><updated>2020-10-29T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2020/10/29/traditions</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2020/10/29/traditions">&lt;p&gt;This month &lt;a href=&quot;/library/&quot;&gt;the library&lt;/a&gt; took its first tentative steps towards covering the different forms of Buddhism, with new bibliographies on &lt;a href=&quot;/tags/theravada&quot;&gt;Theravada&lt;/a&gt; and &lt;a href=&quot;/tags/mahayana&quot;&gt;Mahayana&lt;/a&gt; Buddhism.&lt;/p&gt;
+
+&lt;p&gt;From the South, I’d like to highlight:&lt;/p&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-book&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;modern-buddhist-masters_kornfield&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;monographs/modern-buddhist-masters_kornfield&quot; ga-event-value=&quot;7.8&quot; href=&quot;https://www.bps.lk/library-search-select.php?id=bp507s&quot;&gt;Living Buddhist Masters – Jack Kornfield&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;7.8&quot; ga-event-label=&quot;drive.google.com/monographs/modern-buddhist-masters_kornfield.pdf&quot; data-content-path=&quot;monographs/modern-buddhist-masters_kornfield&quot; href=&quot;https://drive.google.com/file/d/1Xo3E0ewgayWfgFg2IDk0QplFMGehmygp/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;teachings from twelve of the greatest masters and monasteries in the Theravada tradition&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This classic book on insight meditation introduced the West to the Theravada Tradition of Southeast Asia and launched the career of not only its author, but also many of his readers who subsequently sought out, learned from, and carried on the tradition of these venerable masters.&lt;/p&gt;
+
+&lt;p&gt;It’s basically impossible to understand modern Theravada Buddhism without being familiar with at least most of the teachers featured in this outstanding book, but its value isn’t strictly historical as the wisdom and advice it contains is invaluable not just to scholars but also to any serious meditator intent on realizing the fruits of insight practice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-dharmachakra&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;mn026&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;canon/mn26&quot; ga-event-value=&quot;0.39&quot; href=&quot;https://suttacentral.net/mn26/en/bodhi&quot;&gt;MN 26: Ariyapariyesanā Sutta (The Noble Search)&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.39&quot; ga-event-label=&quot;drive.google.com/canon/mn26.pdf&quot; data-content-path=&quot;canon/mn26&quot; href=&quot;https://drive.google.com/file/d/10kcUpO-cIJQUc5uM_bAWjdCT0TCQAtaN/view?usp=sharing&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;Bhikkhus, before my enlightenment, while I was still only an unenlightened Bodhisatta, I too, being myself subject to birth, sought what was also subject to birth&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Buddha’s own spiritual autobiography, from searching to finding true deliverance.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-volume-up&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;saving-buddhism_turner-a&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;av/saving-buddhism_turner-a&quot; ga-event-value=&quot;0.78&quot; href=&quot;https://newbooksnetwork.com/alicia-turner-saving-buddhism-the-impermanence-of-religion-in-colonial-burma-u-hawaii-press-2014/&quot;&gt;Saving Buddhism: The Impermanence of Religion in Colonial Burma – Alicia Turner&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;p&gt;To understand Buddhism, one must understand the tension between the knowledge of impermanence and the love of the Dharma. This sense of loss has defined Buddhism from the Buddha’s Parinirvana through to the present day.&lt;/p&gt;
+
+&lt;p&gt;In this illuminating interview, we see how this meme of the declining Dhamma gave rise to particular responses among Burmese Buddhists to British Colonialism and how those reactions helped to birth modern Buddhism.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From the Northern schools of Buddhism, this month saw the addition of these two Tibetan gems:&lt;/p&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-sticky-note&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;cultivate-concentration_mipham&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;essays/cultivate-concentration_mipham&quot; ga-event-value=&quot;0.52&quot; href=&quot;https://www.lotsawahouse.org/tibetan-masters/mipham/how-to-cultivate-concentration&quot;&gt;How to Cultivate Concentration – Mipham Rinpoche&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.52&quot; ga-event-label=&quot;drive.google.com/essays/cultivate-concentration_mipham.pdf&quot; data-content-path=&quot;essays/cultivate-concentration_mipham&quot; href=&quot;https://drive.google.com/file/d/1ktOHb2M06MIhO9Q6xcWIvRXzkF1Z4sfs/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;You might wish to drink the nectar of calm abiding…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-sticky-note&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;from-the-oral-tradition_nyarong-terton&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;essays/from-the-oral-tradition_nyarong-terton&quot; ga-event-value=&quot;0.52&quot; href=&quot;https://www.lotsawahouse.org/tibetan-masters/yukhok-chatralwa/oral-tradition-of-the-nyarong-lama&quot;&gt;From the Oral Tradition – Nyarong Tertön Sogyal Rinpoche&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.52&quot; ga-event-label=&quot;drive.google.com/essays/from-the-oral-tradition_nyarong-terton.pdf&quot; data-content-path=&quot;essays/from-the-oral-tradition_nyarong-terton&quot; href=&quot;https://drive.google.com/file/d/17OYlBp-6voG0r-k5V-ZEhltk8l-fOT6K/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;the time for discovering Buddha directly, you must remain alone&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A short poem on overcoming our barriers and sticking to the practice.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And lastly, I wanted to share with you this sutta, which both traditions will agree is worth reading again and again:&lt;/p&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-dharmachakra&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;mn022&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;canon/mn22&quot; ga-event-value=&quot;0.39&quot; href=&quot;https://www.accesstoinsight.org/tipitaka/mn/mn.022.than.html&quot;&gt;MN 22: The Simile of the Snake&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.39&quot; ga-event-label=&quot;drive.google.com/canon/mn22.pdf&quot; data-content-path=&quot;canon/mn22&quot; href=&quot;https://drive.google.com/file/d/1CnpqsNlGC7-uOFyTNbPYvfBAxJVL4MJG/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;I have taught the Dhamma compared to a raft, for the purpose of crossing over, not for the purpose of holding onto. Understanding the Dhamma as taught compared to a raft, you should let go even of Dhammas, to say nothing of non-Dhammas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this famous and much-celebrated sutta, the Buddha teaches how to properly grasp Buddhist philosophy so as not to lead to more suffering.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As always, if you find any typos or problems with the site, have any questions or just want to say hi, feel free to drop me a line. I’d love to hear from you.&lt;/p&gt;
+
+&lt;p&gt;Happy reading!&lt;br /&gt;
+~ The Librarian&lt;br /&gt;
+Than Khemarato&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This month the library took its first tentative steps towards covering the different forms of Buddhism, with new bibliographies on Theravada and Mahayana Buddhism.</summary></entry><entry><title type="html">The Nikayas and Āgamas</title><link href="https://buddhistuniversity.net/blog/2020/09/26/nikayas-agamas" rel="alternate" type="text/html" title="The Nikayas and Āgamas" /><published>2020-09-26T00:00:00+07:00</published><updated>2020-09-26T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2020/09/26/nikayas-agamas</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2020/09/26/nikayas-agamas">&lt;p&gt;This month I’ve added information to the library on the four main &lt;a href=&quot;/tags/sutta&quot;&gt;Nikayas&lt;/a&gt;  (the &lt;a href=&quot;/tags/dn&quot;&gt;Digha&lt;/a&gt;, &lt;a href=&quot;/tags/mn&quot;&gt;Majjhima&lt;/a&gt;, &lt;a href=&quot;/tags/sn&quot;&gt;Saṃyutta&lt;/a&gt;, and &lt;a href=&quot;/tags/an&quot;&gt;Aṅguttara&lt;/a&gt;) along with their parallel &lt;a href=&quot;/tags/agama&quot;&gt;Āgamas&lt;/a&gt; (the &lt;a href=&quot;/tags/da&quot;&gt;Dīrgha&lt;/a&gt;, &lt;a href=&quot;/tags/ma&quot;&gt;Madhyama&lt;/a&gt;, &lt;a href=&quot;/tags/sa&quot;&gt;Saṃyukta&lt;/a&gt;, and &lt;a href=&quot;/tags/ea&quot;&gt;Ekottarika&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;In particular, I’d like to highlight &lt;a href=&quot;/content/booklets/mn-selections_nyanamoli-bodhi&quot;&gt;this free anthology of Bhikkhu Bodhi’s Majjhima Nikāya translations&lt;/a&gt; along with Bhikkhu Analayo’s thorough &lt;a href=&quot;/content/monographs/mn-comparison_analayo&quot;&gt;comparative analysis of the Majjhima Nikāya&lt;/a&gt; both of which are jewels of contemporary scholarship.&lt;/p&gt;
+
+&lt;p&gt;I’d also like to highlight a few beautiful poems which I’ve added to the library this month:&lt;/p&gt;
+
+&lt;div class=&quot;narrow&quot;&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-sticky-note&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/essays/you-can-have-it_levine-philip&quot;&gt;You Can Have It (1991) – Philip Levine&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;I give you back 1948.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;div class=&quot;course_link&quot;&gt;&lt;em&gt;Featured in the course, &quot;&lt;a href=&quot;/courses/ethics#you-can-have-it_levine-philip&quot;&gt;&lt;i style=&quot;font-style: italic;&quot; class=&quot;fab fa-pagelines&quot;&gt;&lt;/i&gt; Buddhist Ethics&lt;/a&gt;&quot;&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-sticky-note&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/essays/what-work-is_levine-philip&quot;&gt;What Work Is (1991) – Philip Levine&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;Forget you. This is about waiting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;div class=&quot;course_link&quot;&gt;&lt;em&gt;Featured in the course, &quot;&lt;a href=&quot;/courses/ethics#what-work-is_levine-philip&quot;&gt;&lt;i style=&quot;font-style: italic;&quot; class=&quot;fab fa-pagelines&quot;&gt;&lt;/i&gt; Buddhist Ethics&lt;/a&gt;&quot;&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-dharmachakra&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/canon/ud1.10_sdoe&quot;&gt;Ud 1.10: Bāhiya (2006) – Sarah Doering&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;indeed there is no thing there&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-sticky-note&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/essays/someday-ill-love-ocean_vuong&quot;&gt;Someday I’ll Love Ocean Vuong (2015) – Ocean Vuong&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;I swear, you will wake–&lt;br /&gt;
+&amp;amp; mistake these walls &lt;br /&gt;
+for skin.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I hope you enjoy them as much as I have and, as always, feel free to email me with any questions or comments you may have.&lt;/p&gt;
+
+&lt;p&gt;Best wishes,&lt;br /&gt;
+The Librarian&lt;br /&gt;
+Khemarato Bhikkhu&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">This month I’ve added information to the library on the four main Nikayas (the Digha, Majjhima, Saṃyutta, and Aṅguttara) along with their parallel Āgamas (the Dīrgha, Madhyama, Saṃyukta, and Ekottarika).</summary></entry><entry><title type="html">The World and the Early Buddhist Texts</title><link href="https://buddhistuniversity.net/blog/2020/08/31/ebts-and-the-world" rel="alternate" type="text/html" title="The World and the Early Buddhist Texts" /><published>2020-08-31T00:00:00+07:00</published><updated>2020-08-31T00:00:00+07:00</updated><id>https://buddhistuniversity.net/blog/2020/08/31/ebts-and-the-world</id><content type="html" xml:base="https://buddhistuniversity.net/blog/2020/08/31/ebts-and-the-world">&lt;p&gt;Following on &lt;a href=&quot;/tags/pali-canon&quot;&gt;the Pāli Canon readings&lt;/a&gt; from &lt;a href=&quot;/blog/2020/07/31/nibbana-pali&quot;&gt;last month&lt;/a&gt;, this month &lt;a href=&quot;/library/&quot;&gt;the library&lt;/a&gt; added &lt;a href=&quot;/tags/&quot;&gt;tags&lt;/a&gt; on &lt;a href=&quot;/tags/vinaya-pitaka&quot;&gt;the Vinaya&lt;/a&gt; and &lt;a href=&quot;/tags/sutta&quot;&gt;Sutta Pitika&lt;/a&gt;s as well as &lt;a href=&quot;/tags/agama&quot;&gt;the Chinese Agamas&lt;/a&gt;. I’m especially happy to share this translation of the Canonical Vinaya:&lt;/p&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-dharmachakra&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;pli-tv-bu-vb&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;canon/analysis-of-the-bhikkhu-patimokkha_suddhaso&quot; ga-event-value=&quot;0.39&quot; href=&quot;http://bhantesuddhaso.com/wp-content/uploads/2016/01/6b4391_8b78ed25abfc4f65935135040ff266bf.pdf&quot;&gt;Analysis of the Bhikkhu-Pātimokkha: A translation of the &lt;em&gt;Mahā-Vibhaṅga&lt;/em&gt; from the &lt;em&gt;Vinaya-Piṭaka&lt;/em&gt; – Bhante Suddhāso&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;0.39&quot; ga-event-label=&quot;drive.google.com/canon/analysis-of-the-bhikkhu-patimokkha_suddhaso.pdf&quot; data-content-path=&quot;canon/analysis-of-the-bhikkhu-patimokkha_suddhaso&quot; href=&quot;https://drive.google.com/file/d/1Ad5XiF9HzL3wDGvMK9jxMZYXpP2RclQb/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;p&gt;The canonical explication of the monastic rules.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As well as this anthology of stories about the Buddha’s disciples:&lt;/p&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-book&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span id=&quot;great-disciples_hecker-nyanaponika&quot; class=&quot;inline_content_title&quot;&gt;&lt;a target=&quot;_blank&quot; data-content-path=&quot;monographs/great-disciples_hecker-nyanaponika&quot; ga-event-value=&quot;7.8&quot; href=&quot;https://www.bps.lk/olib/bp/bp417s_Nyanaponika-Hecker_Great-Disciples-Of-The-Buddha.pdf&quot;&gt;Great Disciples of the Buddha: Their Lives, Their Works, Their Legacy – Ven. Nyanaponika Thera and Hellmuth Hecker&lt;/a&gt;&lt;/span&gt;&lt;span class=&quot;inline_drive_links&quot;&gt;&lt;span class=&quot;inline_drive_link&quot;&gt; (&lt;a target=&quot;_blank&quot; ga-event-value=&quot;7.8&quot; ga-event-label=&quot;drive.google.com/monographs/great-disciples_hecker-nyanaponika.pdf&quot; data-content-path=&quot;monographs/great-disciples_hecker-nyanaponika&quot; href=&quot;https://drive.google.com/file/d/1CYu4HUj7JwHNy2s-XBJi9LnvPHmrgLeU/view?usp=drivesdk&quot;&gt;&lt;i class=&quot;fab fa-google-drive&quot;&gt;&lt;/i&gt;.pdf&lt;/a&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;Just as the sun is valued not only for its own intrinsic radiance but also for its ability to illuminate the world, so the brilliance of the Buddha is determined not only by the clarity of his Teaching but by his ability to illuminate those who came to him for refuge&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Buddha’s first generation of followers established the traditions and values of the early Sangha.  Indeed, it is nearly impossible to understand Buddhism without understanding the lives of the early Buddhist saints. This rich and inspiring series of biographies editted by Bhikkhu Bodhi mainly draws from the traditional commentaries of the Theravada tradition and so provides an excellent balance between readability and faithfulness to the source material. A must read for all students of Buddhism.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But, in addition to the usual Buddhist stuff, this month also saw the addition of a new tag on &lt;a href=&quot;/tags/world&quot;&gt;The (Human) World&lt;/a&gt; featuring miscellaneous favorites of mine, such as:&lt;/p&gt;
+
+&lt;div class=&quot;narrow&quot;&gt;
+
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-book-open&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/booklets/heartwood-of-the-bodhi-tree_buddhadasa&quot;&gt;Heartwood of the Bodhi Tree: The Buddha’s Teaching on Voidness (1985) – Buddhadāsa Bhikkhu&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;To be female is to have the &lt;em&gt;dukkha&lt;/em&gt; of a female. To be male is to have the &lt;em&gt;dukkha&lt;/em&gt; of a male. […] If we deludedly think ‘I am happy’ then we must suffer accordingly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-newspaper&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/articles/mother-earth-mother-board_stephenson-neal&quot;&gt;Mother Earth Mother Board (1996) – Neal Stephenson&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;In which the hacker tourist ventures forth across the wide and wondrous meatspace of three continents, acquainting himself with the customs and dialects of previously unknown and unchronicled folk … and other material pertaining to the business and technology of Undersea Fiber-Optic Cables, as well as an account of the laying of the longest wire on Earth&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;fas fa-dharmachakra&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/canon/sn35.82&quot;&gt;SN 35.82: The World (1997)&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;Insofar as it disintegrates, it is called the ‘world.’&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;content_box&quot;&gt;
+  &lt;div class=&quot;content_box_header&quot;&gt;
+    &lt;span class=&quot;inline_content_icon&quot;&gt;&lt;i class=&quot;far fa-newspaper&quot;&gt;&lt;/i&gt; &lt;/span&gt;&lt;span class=&quot;simple_content_title&quot;&gt;&lt;a href=&quot;/content/articles/four-futures_frase-peter&quot;&gt;Four Futures (2011) – Peter Frase&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content_box_desc&quot;&gt;&lt;blockquote&gt;
+  &lt;p&gt;One thing we can be certain of is that capitalism will end.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As with all the tags, if there’s any favorite of yours missing, I’d love to hear about them! Feel free to email  suggestions or accolades any time.&lt;/p&gt;
+
+&lt;p&gt;Until then, or next time,&lt;/p&gt;
+
+&lt;p&gt;Best wishes,  &lt;br /&gt;
+Than Khemarato&lt;br /&gt;
+The Librarian&lt;/p&gt;</content><author><name>Khemarato Bhikkhu</name></author><summary type="html">Following on the Pāli Canon readings from last month, this month the library added tags on the Vinaya and Sutta Pitikas as well as the Chinese Agamas. I’m especially happy to share this translation of the Canonical Vinaya:</summary></entry></feed>

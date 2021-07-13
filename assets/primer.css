@@ -1,0 +1,1039 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/** 1. Change the default font family in all browsers (opinionated). 2. Prevent adjustments of font size after orientation changes in IE and iOS. */
+html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove the margin in all browsers (opinionated). */
+body { margin: 0; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. 2. Add the correct display in IE. */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section { /* 1 */ display: block; }
+
+summary { display: list-item; }
+
+/** Add the correct display in IE 9-. */
+audio, canvas, progress, video { display: inline-block; }
+
+/** Add the correct display in iOS 4-7. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { vertical-align: baseline; }
+
+/** Add the correct display in IE 10-. 1. Add the correct display in IE. */
+template, [hidden] { display: none !important; }
+
+/* Links ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+a { background-color: transparent; /* 1 */ }
+
+/** Remove the outline on focused links when they are also active or hovered in all browsers (opinionated). */
+a:active, a:hover { outline-width: 0; }
+
+/* Text-level semantics ========================================================================== */
+/** 1. Remove the bottom border in Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong { font-weight: inherit; }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** Add the correct font style in Android 4.3-. */
+dfn { font-style: italic; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/** Add the correct background and color in IE 9-. */
+mark { background-color: #ff0; color: #1b1f23; }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10-. */
+img { border-style: none; }
+
+/** Hide the overflow in IE. */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, pre, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct margin in IE 8. */
+figure { margin: 1em 40px; }
+
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/* Forms ========================================================================== */
+/** 1. Change font properties to `inherit` in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
+button, input, select, textarea { font: inherit; /* 1 */ margin: 0; /* 2 */ }
+
+/** Restore the font weight unset by the previous rule. */
+optgroup { font-weight: 600; }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Change the border, margin, and padding in all browsers (opinionated). */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Remove the default vertical scrollbar in IE. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding and cancel buttons in Chrome and Safari on OS X. */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Correct the text style of placeholders in Chrome, Edge, and Safari. */
+::-webkit-input-placeholder { color: inherit; opacity: 0.54; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+* { box-sizing: border-box; }
+
+input, select, textarea, button { font-family: inherit; font-size: inherit; line-height: inherit; }
+
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 14px; line-height: 1.5; color: #24292e; background-color: #fff; }
+
+a { color: #0366d6; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+b, strong { font-weight: 600; }
+
+hr, .rule { height: 0; margin: 15px 0; overflow: hidden; background: transparent; border: 0; border-bottom: 1px solid #dfe2e5; }
+
+hr::before, .rule::before { display: table; content: ""; }
+
+hr::after, .rule::after { display: table; clear: both; content: ""; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+td, th { padding: 0; }
+
+button { cursor: pointer; border-radius: 0; }
+
+[hidden][hidden] { display: none !important; }
+
+details summary { cursor: pointer; }
+
+details:not([open]) > *:not(summary) { display: none !important; }
+
+kbd { display: inline-block; padding: 3px 5px; font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; line-height: 10px; color: #444d56; vertical-align: middle; background-color: #fafbfc; border: solid 1px #d1d5da; border-bottom-color: #d1d5da; border-radius: 6px; box-shadow: inset 0 -1px 0 #d1d5da; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0; }
+
+h1 { font-size: 32px; font-weight: 600; }
+
+h2 { font-size: 24px; font-weight: 600; }
+
+h3 { font-size: 20px; font-weight: 600; }
+
+h4 { font-size: 16px; font-weight: 600; }
+
+h5 { font-size: 14px; font-weight: 600; }
+
+h6 { font-size: 12px; font-weight: 600; }
+
+p { margin-top: 0; margin-bottom: 10px; }
+
+small { font-size: 90%; }
+
+blockquote { margin: 0; }
+
+ul, ol { padding-left: 0; margin-top: 0; margin-bottom: 0; }
+
+ol ol, ul ol { list-style-type: lower-roman; }
+
+ul ul ol, ul ol ol, ol ul ol, ol ol ol { list-style-type: lower-alpha; }
+
+dd { margin-left: 0; }
+
+tt, code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; }
+
+pre { margin-top: 0; margin-bottom: 0; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; }
+
+.octicon { vertical-align: text-bottom; }
+
+.btn { position: relative; display: inline-block; padding: 5px 16px; font-size: 14px; font-weight: 500; line-height: 20px; white-space: nowrap; vertical-align: middle; cursor: pointer; user-select: none; border: 1px solid; border-radius: 6px; appearance: none; }
+
+.btn:hover { text-decoration: none; }
+
+.btn:disabled, .btn.disabled, .btn[aria-disabled=true] { cursor: default; }
+
+.btn:disabled .octicon, .btn.disabled .octicon, .btn[aria-disabled=true] .octicon { color: inherit; }
+
+.btn i { font-style: normal; font-weight: 500; opacity: 0.75; }
+
+.btn .octicon { margin-right: 4px; color: #6a737d; vertical-align: text-bottom; }
+
+.btn .octicon:only-child { margin-right: 0; }
+
+.btn .Counter { margin-left: 2px; color: inherit; text-shadow: none; vertical-align: top; background-color: rgba(27, 31, 35, 0.08); }
+
+.btn .dropdown-caret { margin-left: 4px; opacity: 0.8; }
+
+.btn { color: #24292e; background-color: #fafbfc; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.25); transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1); }
+
+.btn:hover, .btn.hover, [open] > .btn { background-color: #f3f4f6; transition-duration: 0.1s; }
+
+.btn:active, .btn.selected, .btn[aria-selected=true] { background-color: #edeff2; box-shadow: inset 0 1px 0 rgba(225, 228, 232, 0.2); transition: none; }
+
+.btn:disabled, .btn.disabled, .btn[aria-disabled=true] { color: #959da5; background-color: #fafbfc; border-color: rgba(27, 31, 35, 0.15); }
+
+.btn:focus, .btn.focus { outline: 1px dotted transparent; outline-offset: 2px; box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3); }
+
+.btn-primary { color: #fff; background-color: #2ea44f; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.03); }
+
+.btn-primary:hover, .btn-primary.hover, [open] > .btn-primary { background-color: #2c974b; }
+
+.btn-primary:active, .btn-primary.selected, .btn-primary[aria-selected=true] { background-color: #2a8f47; box-shadow: inset 0 1px 0 rgba(20, 70, 32, 0.2); }
+
+.btn-primary:disabled, .btn-primary.disabled, .btn-primary[aria-disabled=true] { color: rgba(255, 255, 255, 0.8); background-color: #94d3a2; border-color: rgba(27, 31, 35, 0.1); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.03); }
+
+.btn-primary:focus, .btn-primary.focus { box-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4); }
+
+.btn-primary .Counter { color: inherit; background-color: rgba(255, 255, 255, 0.2); }
+
+.btn-primary .octicon { color: rgba(255, 255, 255, 0.8); }
+
+.btn-danger { color: #cb2431; transition: none; }
+
+.btn-danger:hover, [open] > .btn-danger { color: #fff; background-color: #cb2431; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.03); }
+
+.btn-danger:hover .Counter, [open] > .btn-danger .Counter { background-color: rgba(255, 255, 255, 0.2); }
+
+.btn-danger:hover .octicon, [open] > .btn-danger .octicon { color: inherit; }
+
+.btn-danger:active, .btn-danger.selected, .btn-danger[aria-selected=true] { color: #fff; background-color: #be222e; border-color: rgba(27, 31, 35, 0.15); box-shadow: inset 0 1px 0 rgba(134, 24, 29, 0.2); }
+
+.btn-danger:disabled, .btn-danger.disabled, .btn-danger[aria-disabled=true] { color: rgba(203, 36, 49, 0.5); background-color: #fafbfc; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.25); }
+
+.btn-danger:disabled .Counter, .btn-danger.disabled .Counter, .btn-danger[aria-disabled=true] .Counter { background-color: rgba(203, 36, 49, 0.05); }
+
+.btn-danger:focus { box-shadow: 0 0 0 3px rgba(203, 36, 49, 0.4); }
+
+.btn-danger .Counter { color: inherit; background-color: rgba(203, 36, 49, 0.1); }
+
+.btn-outline { color: #0366d6; transition: none; }
+
+.btn-outline:hover, [open] > .btn-outline { color: #fff; background-color: #0366d6; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.03); }
+
+.btn-outline:hover .Counter, [open] > .btn-outline .Counter { background-color: rgba(255, 255, 255, 0.2); }
+
+.btn-outline:hover .octicon, [open] > .btn-outline .octicon { color: inherit; }
+
+.btn-outline:active, .btn-outline.selected, .btn-outline[aria-selected=true] { color: #fff; background-color: #035fc7; border-color: rgba(27, 31, 35, 0.15); box-shadow: inset 0 1px 0 rgba(5, 38, 76, 0.2); }
+
+.btn-outline:disabled, .btn-outline.disabled, .btn-outline[aria-disabled=true] { color: rgba(3, 102, 214, 0.5); background-color: #fafbfc; border-color: rgba(27, 31, 35, 0.15); box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.25); }
+
+.btn-outline:disabled .Counter, .btn-outline.disabled .Counter, .btn-outline[aria-disabled=true] .Counter { background-color: rgba(3, 102, 214, 0.05); }
+
+.btn-outline:focus { box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.4); }
+
+.btn-outline .Counter { color: inherit; background-color: rgba(3, 102, 214, 0.1); }
+
+.btn-blue { color: #fff; background-color: #0361cc; background-image: linear-gradient(-180deg, #0679fc 0%, #0361cc 90%); }
+
+.btn-blue:focus, .btn-blue.focus { box-shadow: 0 0 0 0.2em rgba(6, 121, 252, 0.4); }
+
+.btn-blue:hover, .btn-blue.hover { background-color: #035cc2; background-image: linear-gradient(-180deg, #0374f4 0%, #035cc2 90%); background-position: -0.5em; border-color: rgba(27, 31, 35, 0.5); }
+
+.btn-blue:active, .btn-blue.selected, .btn-blue[aria-selected=true], [open] > .btn-blue { background-color: #045cc1; background-image: none; border-color: rgba(27, 31, 35, 0.5); box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15); }
+
+.btn-blue:disabled, .btn-blue.disabled, .btn-blue[aria-disabled=true] { color: rgba(255, 255, 255, 0.75); background-color: #81b0e5; background-image: none; border-color: rgba(27, 31, 35, 0.15); box-shadow: none; }
+
+.btn-blue .Counter { color: #0366d6; background-color: #fff; }
+
+.btn-sm { padding: 3px 12px; font-size: 12px; line-height: 20px; }
+
+.btn-sm .octicon { vertical-align: text-top; }
+
+.btn-large { padding: 0.75em 1.5em; font-size: inherit; line-height: 1.5; border-radius: 0.5em; }
+
+.btn-block { display: block; width: 100%; text-align: center; }
+
+.BtnGroup { display: inline-block; vertical-align: middle; }
+
+.BtnGroup::before { display: table; content: ""; }
+
+.BtnGroup::after { display: table; clear: both; content: ""; }
+
+.BtnGroup + .BtnGroup, .BtnGroup + .btn { margin-left: 4px; }
+
+.BtnGroup-item { position: relative; float: left; border-right-width: 0; border-radius: 0; }
+
+.BtnGroup-item:first-child { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+
+.BtnGroup-item:last-child { border-right-width: 1px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+.BtnGroup-item.selected, .BtnGroup-item[aria-selected=true], .BtnGroup-item:focus, .BtnGroup-item:active, .BtnGroup-item:hover { border-right-width: 1px; }
+
+.BtnGroup-item.selected + .BtnGroup-item, .BtnGroup-item.selected + .BtnGroup-parent .BtnGroup-item, .BtnGroup-item[aria-selected=true] + .BtnGroup-item, .BtnGroup-item[aria-selected=true] + .BtnGroup-parent .BtnGroup-item, .BtnGroup-item:focus + .BtnGroup-item, .BtnGroup-item:focus + .BtnGroup-parent .BtnGroup-item, .BtnGroup-item:active + .BtnGroup-item, .BtnGroup-item:active + .BtnGroup-parent .BtnGroup-item, .BtnGroup-item:hover + .BtnGroup-item, .BtnGroup-item:hover + .BtnGroup-parent .BtnGroup-item { border-left-width: 0; }
+
+.BtnGroup-parent { float: left; }
+
+.BtnGroup-parent:first-child .BtnGroup-item { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+
+.BtnGroup-parent:last-child .BtnGroup-item { border-right-width: 1px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+.BtnGroup-parent .BtnGroup-item { border-right-width: 0; border-radius: 0; }
+
+.BtnGroup-parent.selected .BtnGroup-item, .BtnGroup-parent[aria-selected=true] .BtnGroup-item, .BtnGroup-parent:focus .BtnGroup-item, .BtnGroup-parent:active .BtnGroup-item, .BtnGroup-parent:hover .BtnGroup-item { border-right-width: 1px; }
+
+.BtnGroup-parent.selected + .BtnGroup-item, .BtnGroup-parent.selected + .BtnGroup-parent .BtnGroup-item, .BtnGroup-parent[aria-selected=true] + .BtnGroup-item, .BtnGroup-parent[aria-selected=true] + .BtnGroup-parent .BtnGroup-item, .BtnGroup-parent:focus + .BtnGroup-item, .BtnGroup-parent:focus + .BtnGroup-parent .BtnGroup-item, .BtnGroup-parent:active + .BtnGroup-item, .BtnGroup-parent:active + .BtnGroup-parent .BtnGroup-item, .BtnGroup-parent:hover + .BtnGroup-item, .BtnGroup-parent:hover + .BtnGroup-parent .BtnGroup-item { border-left-width: 0; }
+
+.BtnGroup-item:focus, .BtnGroup-item:active, .BtnGroup-parent:focus, .BtnGroup-parent:active { z-index: 1; }
+
+.btn-link { display: inline-block; padding: 0; font-size: inherit; color: #0366d6; text-decoration: none; white-space: nowrap; cursor: pointer; user-select: none; background-color: transparent; border: 0; appearance: none; }
+
+.btn-link:hover { text-decoration: underline; }
+
+.btn-link:disabled, .btn-link:disabled:hover, .btn-link[aria-disabled=true], .btn-link[aria-disabled=true]:hover { color: rgba(88, 96, 105, 0.5); cursor: default; }
+
+.btn-invisible { color: #0366d6; background-color: transparent; border: 0; border-radius: 0; box-shadow: none; }
+
+.btn-invisible:hover, .btn-invisible:active, .btn-invisible:focus, .btn-invisible.selected, .btn-invisible[aria-selected=true], .btn-invisible.zeroclipboard-is-hover, .btn-invisible.zeroclipboard-is-active { color: #0366d6; background: none; outline: none; box-shadow: none; }
+
+.btn-octicon { display: inline-block; padding: 5px; margin-left: 5px; line-height: 1; color: #586069; vertical-align: middle; background: transparent; border: 0; }
+
+.btn-octicon:hover { color: #0366d6; }
+
+.btn-octicon.disabled, .btn-octicon[aria-disabled=true] { color: #959da5; cursor: default; }
+
+.btn-octicon.disabled:hover, .btn-octicon[aria-disabled=true]:hover { color: #959da5; }
+
+.btn-octicon-danger:hover { color: #cb2431; }
+
+.close-button { padding: 0; background: transparent; border: 0; outline: none; }
+
+.hidden-text-expander { display: block; }
+
+.hidden-text-expander.inline { position: relative; top: -1px; display: inline-block; margin-left: 5px; line-height: 0; }
+
+.hidden-text-expander a, .ellipsis-expander { display: inline-block; height: 12px; padding: 0 5px 5px; font-size: 12px; font-weight: 600; line-height: 6px; color: #444d56; text-decoration: none; vertical-align: middle; background: #dfe2e5; border: 0; border-radius: 1px; }
+
+.hidden-text-expander a:hover, .ellipsis-expander:hover { text-decoration: none; background-color: #c6cbd1; }
+
+.hidden-text-expander a:active, .ellipsis-expander:active { color: #fff; background-color: #2188ff; }
+
+.btn-with-count { float: left; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.btn-with-count:focus { z-index: 1; }
+
+.social-count { position: relative; float: left; padding: 3px 12px; font-size: 12px; font-weight: 600; line-height: 20px; color: #24292e; vertical-align: middle; background-color: #fff; border: 1px solid rgba(27, 31, 35, 0.15); border-left: 0; border-top-right-radius: 6px; border-bottom-right-radius: 6px; box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.25); }
+
+.social-count:hover, .social-count:active { text-decoration: none; }
+
+.social-count:hover { color: #0366d6; cursor: pointer; }
+
+.social-count:focus { z-index: 1; outline: 0; box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3); }
+
+fieldset { padding: 0; margin: 0; border: 0; }
+
+label { font-weight: 600; }
+
+.form-control, .form-select { padding: 5px 12px; font-size: 14px; line-height: 20px; color: #24292e; vertical-align: middle; background-color: #fff; background-repeat: no-repeat; background-position: right 8px center; border: 1px solid #e1e4e8; border-radius: 6px; outline: none; box-shadow: inset 0 1px 0 rgba(225, 228, 232, 0.2); }
+
+.form-control.focus, .form-control:focus, .form-select.focus, .form-select:focus { border-color: #0366d6; outline: none; box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3); }
+
+.form-control[disabled], .form-select[disabled] { color: #959da5; background-color: #f3f4f6; }
+
+@supports (-webkit-touch-callout: none) { .form-control, .form-select { font-size: 16px; }
+  @media (min-width: 768px) { .form-control, .form-select { font-size: 14px; } } }
+
+textarea.form-control { padding-top: 8px; padding-bottom: 8px; line-height: 1.5; }
+
+.input-contrast { background-color: #fafbfc; }
+
+.input-contrast:focus { background-color: #fff; }
+
+.input-dark { color: #fff; background-color: rgba(255, 255, 255, 0.15); border-color: transparent; box-shadow: none; }
+
+.input-dark::placeholder { color: inherit; opacity: 0.6; }
+
+.input-dark.focus, .input-dark:focus { border-color: rgba(27, 31, 35, 0.3); box-shadow: 0 0 0 0.2em rgba(121, 184, 255, 0.4); }
+
+::placeholder { color: #6a737d; opacity: 1; }
+
+.input-sm { padding-top: 3px; padding-bottom: 3px; font-size: 12px; line-height: 20px; }
+
+.input-lg { font-size: 16px; }
+
+.input-block { display: block; width: 100%; }
+
+.input-monospace { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+
+.input-hide-webkit-autofill::-webkit-contacts-auto-fill-button { position: absolute; right: 0; display: none !important; pointer-events: none; visibility: hidden; }
+
+.form-checkbox { padding-left: 20px; margin: 15px 0; vertical-align: middle; }
+
+.form-checkbox label em.highlight { position: relative; left: -4px; padding: 2px 4px; font-style: normal; background: #fffbdd; border-radius: 6px; }
+
+.form-checkbox input[type=checkbox], .form-checkbox input[type=radio] { float: left; margin: 5px 0 0 -20px; vertical-align: middle; }
+
+.form-checkbox .note { display: block; margin: 0; font-size: 12px; font-weight: 400; color: #586069; }
+
+.form-checkbox-details { display: none; }
+
+.form-checkbox-details-trigger:checked ~ * .form-checkbox-details, .form-checkbox-details-trigger:checked ~ .form-checkbox-details { display: block; }
+
+.hfields { margin: 15px 0; }
+
+.hfields::before { display: table; content: ""; }
+
+.hfields::after { display: table; clear: both; content: ""; }
+
+.hfields .form-group { float: left; margin: 0 30px 0 0; }
+
+.hfields .form-group dt label, .hfields .form-group .form-group-header label { display: inline-block; margin: 5px 0 0; color: #586069; }
+
+.hfields .form-group dt img, .hfields .form-group .form-group-header img { position: relative; top: -2px; }
+
+.hfields .btn { float: left; margin: 28px 25px 0 -20px; }
+
+.hfields .form-select { margin-top: 5px; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { margin: 0; appearance: none; }
+
+.form-actions::before { display: table; content: ""; }
+
+.form-actions::after { display: table; clear: both; content: ""; }
+
+.form-actions .btn { float: right; }
+
+.form-actions .btn + .btn { margin-right: 5px; }
+
+.form-warning { padding: 8px 10px; margin: 10px 0; font-size: 14px; color: #735c0f; background: #fffbdd; border: 1px solid #f9c513; border-radius: 6px; }
+
+.form-warning p { margin: 0; line-height: 1.5; }
+
+.form-warning a { font-weight: 600; }
+
+.IssueLabel, .RatingLabel, .RatingLabel-5, .RatingLabel-4, .RatingLabel-2, .RatingLabel-1 { display: inline-block; padding: 0 7px; font-size: 12px; font-weight: 500; line-height: 18px; border: 1px solid transparent; border-radius: 2em; }
+
+.IssueLabel .g-emoji, .RatingLabel .g-emoji, .RatingLabel-5 .g-emoji, .RatingLabel-4 .g-emoji, .RatingLabel-2 .g-emoji, .RatingLabel-1 .g-emoji { position: relative; top: -0.05em; display: inline-block; font-size: 1em; line-height: 1; }
+
+.IssueLabel:hover, .RatingLabel:hover, .RatingLabel-5:hover, .RatingLabel-4:hover, .RatingLabel-2:hover, .RatingLabel-1:hover { text-decoration: none; }
+
+.IssueLabel--big, .RatingLabel, .RatingLabel-5, .RatingLabel-4, .RatingLabel-2, .RatingLabel-1 { padding-right: 10px; padding-left: 10px; line-height: 22px; }
+
+.labels { position: relative; }
+
+.label, .Label, .TagLabel { display: inline-block; padding: 0 7px; font-size: 12px; font-weight: 500; line-height: 18px; border: 1px solid transparent; border-radius: 2em; background-color: transparent !important; border-color: #e1e4e8; }
+
+.label:hover, .Label:hover, .TagLabel:hover { text-decoration: none; }
+
+.Label--large, .TagLabel { padding-right: 10px; padding-left: 10px; line-height: 22px; }
+
+.Label--inline { display: inline; padding: 0.1667em 0.5em; font-size: 0.9em; }
+
+.Label--outline, .Label--gray { color: #586069; border-color: #e1e4e8; }
+
+.Label--gray-darker { color: #24292e; border-color: #6a737d; }
+
+.Label--yellow { color: #735c0f; border-color: #b08800; }
+
+.Label--orange { color: #c24e00; border-color: #f66a0a; }
+
+.Label--red { color: #cb2431; border-color: #cb2431; }
+
+.Label--outline-green, .Label--green { color: #22863a; border-color: #28a745; }
+
+.Label--blue { color: #0366d6; border-color: #0366d6; }
+
+.Label--purple { color: #6f42c1; border-color: #8a63d2; }
+
+.Label--pink { color: #d03592; border-color: #ec6cb9; }
+
+.state, .State { display: inline-block; padding: 5px 12px; font-size: 14px; font-weight: 500; line-height: 20px; color: #fff; text-align: center; white-space: nowrap; background-color: #6a737d; border: 1px solid transparent; border-radius: 2em; }
+
+.State--green { background-color: #28a745; }
+
+.State--red { background-color: #d73a49; }
+
+.State--purple { background-color: #6f42c1; }
+
+.State--small { padding: 0 10px; font-size: 12px; line-height: 24px; }
+
+.State--small .octicon { width: 1em; }
+
+.Counter { display: inline-block; min-width: 20px; padding: 0 6px; font-size: 12px; font-weight: 500; line-height: 18px; color: #24292e; text-align: center; background-color: rgba(209, 213, 218, 0.5); border: 1px solid transparent; border-radius: 2em; }
+
+.Counter:empty { display: none; }
+
+.Counter .octicon { vertical-align: text-top; opacity: 0.8; }
+
+.Counter--gray-light { color: #6a737d; }
+
+.Counter--gray { color: #fff; background-color: #6a737d; }
+
+.diffstat { font-size: 12px; font-weight: 600; color: #586069; white-space: nowrap; cursor: default; }
+
+.diffstat-block-deleted, .diffstat-block-added, .diffstat-block-neutral { display: inline-block; width: 8px; height: 8px; margin-left: 1px; outline-offset: -1px; }
+
+.diffstat-block-deleted { background-color: #cb2431; outline: 1px dashed transparent; }
+
+.diffstat-block-added { background-color: #2cbe4e; outline: 1px solid transparent; }
+
+.diffstat-block-neutral { background-color: #d1d5da; outline: 1px dotted transparent; }
+
+.TableObject { display: table; }
+
+.TableObject-item { display: table-cell; width: 1%; white-space: nowrap; vertical-align: middle; }
+
+.TableObject-item--primary { width: 99%; }
+
+.dropdown { position: relative; }
+
+.dropdown-caret { display: inline-block; width: 0; height: 0; vertical-align: middle; content: ""; border-style: solid; border-width: 4px 4px 0; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; }
+
+.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 100; width: 160px; padding-top: 4px; padding-bottom: 4px; margin-top: 2px; list-style: none; background-color: #fff; background-clip: padding-box; border: 1px #e1e4e8 solid; border-radius: 6px; box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2); }
+
+.dropdown-menu::before, .dropdown-menu::after { position: absolute; display: inline-block; content: ""; }
+
+.dropdown-menu::before { border: 8px solid transparent; border-bottom-color: rgba(27, 31, 35, 0.15); }
+
+.dropdown-menu::after { border: 7px solid transparent; border-bottom-color: #fff; }
+
+.dropdown-menu > ul { list-style: none; }
+
+.dropdown-menu-no-overflow { width: auto; }
+
+.dropdown-menu-no-overflow .dropdown-item { padding: 4px 16px; overflow: visible; text-overflow: inherit; }
+
+.dropdown-item { display: block; padding: 4px 8px 4px 16px; overflow: hidden; color: #24292e; text-overflow: ellipsis; white-space: nowrap; }
+
+.dropdown-item:focus, .dropdown-item:hover { color: #fff; text-decoration: none; background-color: #0366d6; outline: none; }
+
+.dropdown-item:focus > .octicon, .dropdown-item:hover > .octicon { color: inherit; opacity: 1; }
+
+.dropdown-item.btn-link { width: 100%; text-align: left; }
+
+.dropdown-signout { width: 100%; text-align: left; background: none; border: 0; }
+
+.dropdown-divider { display: block; height: 0; margin: 8px 0; border-top: 1px #e1e4e8 solid; }
+
+.dropdown-header { padding: 4px 16px; font-size: 12px; color: #586069; }
+
+.dropdown-item[aria-checked="false"] .octicon-check { display: none; }
+
+.dropdown-menu-w { top: 0; right: 100%; left: auto; width: auto; margin-top: 0; margin-right: 8px; }
+
+.dropdown-menu-w::before { top: 10px; right: -16px; left: auto; border-color: transparent; border-left-color: rgba(27, 31, 35, 0.15); }
+
+.dropdown-menu-w::after { top: 11px; right: -14px; left: auto; border-color: transparent; border-left-color: #fff; }
+
+.dropdown-menu-e { top: 0; left: 100%; width: auto; margin-top: 0; margin-left: 8px; }
+
+.dropdown-menu-e::before { top: 8px; left: -16px; border-color: transparent; border-right-color: rgba(27, 31, 35, 0.15); }
+
+.dropdown-menu-e::after { top: 11px; left: -14px; border-color: transparent; border-right-color: #fff; }
+
+.dropdown-menu-ne { top: auto; bottom: 100%; left: 0; margin-bottom: 3px; }
+
+.dropdown-menu-ne::before, .dropdown-menu-ne::after { top: auto; right: auto; }
+
+.dropdown-menu-ne::before { bottom: -8px; left: 9px; border-top: 8px solid rgba(27, 31, 35, 0.15); border-right: 8px solid transparent; border-bottom: 0; border-left: 8px solid transparent; }
+
+.dropdown-menu-ne::after { bottom: -7px; left: 10px; border-top: 7px solid #fff; border-right: 7px solid transparent; border-bottom: 0; border-left: 7px solid transparent; }
+
+.dropdown-menu-s { right: 50%; left: auto; transform: translateX(50%); }
+
+.dropdown-menu-s::before { top: -16px; right: 50%; transform: translateX(50%); }
+
+.dropdown-menu-s::after { top: -14px; right: 50%; transform: translateX(50%); }
+
+.dropdown-menu-sw { right: 0; left: auto; }
+
+.dropdown-menu-sw::before { top: -16px; right: 9px; left: auto; }
+
+.dropdown-menu-sw::after { top: -14px; right: 10px; left: auto; }
+
+.dropdown-menu-se::before { top: -16px; left: 9px; }
+
+.dropdown-menu-se::after { top: -14px; left: 10px; }
+
+.dropdown-menu-dark { color: #fff; background: #2f363d; border-color: #444d56; box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2); }
+
+.dropdown-menu-dark::before { border-bottom-color: #444d56; }
+
+.dropdown-menu-dark::after { border-bottom-color: #2f363d; }
+
+.dropdown-menu-dark .dropdown-header { color: #d1d5da; }
+
+.dropdown-menu-dark .dropdown-divider { border-top-color: #444d56; }
+
+.dropdown-menu-dark .dropdown-item { color: inherit; }
+
+.dropdown-menu-dark.dropdown-menu-w::before { border-color: transparent transparent transparent #444d56; }
+
+.dropdown-menu-dark.dropdown-menu-w::after { border-color: transparent transparent transparent #2f363d; }
+
+.dropdown-menu-dark.dropdown-menu-e::before { border-color: transparent #444d56 transparent transparent; }
+
+.dropdown-menu-dark.dropdown-menu-e::after { border-color: transparent #2f363d transparent transparent; }
+
+.dropdown-menu-dark.dropdown-menu-ne::before { border-color: #444d56 transparent transparent transparent; }
+
+.dropdown-menu-dark.dropdown-menu-ne::after { border-color: #2f363d transparent transparent transparent; }
+
+.input-lg { height: 36px; line-height: 24px; min-width: 48px; }
+
+.RatingLabel, .RatingLabel-5, .RatingLabel-4, .RatingLabel-2, .RatingLabel-1 { color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-weight: normal; }
+
+.RatingLabel-1 { background-color: #d33f49; }
+
+.RatingLabel-2 { background-color: slategray; }
+
+.RatingLabel-4 { background-color: #c69c6c; }
+
+.RatingLabel-5 { background-color: #3e78b2; font-family: "EB Garamond", "Noto Serif TC", "Noto Serif JP", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; font-size: 13px; }
+
+.RatingDetails { margin: -9px 9px 0px; border-radius: 6px; padding: 11px; border: 1px solid lightgray; }
+
+.TagLabel { margin-right: 4px; border-color: #3e78b2; color: #3e78b2 !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-0 { margin: 0 !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-0 { margin-top: 0 !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-0 { margin-right: 0 !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-0 { margin-bottom: 0 !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-0 { margin-left: 0 !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-0 { margin-right: 0 !important; margin-left: 0 !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-1 { margin: 4px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-1 { margin-top: 4px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-1 { margin-right: 4px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-1 { margin-bottom: 4px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-1 { margin-left: 4px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n1 { margin-top: -4px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n1 { margin-right: -4px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n1 { margin-bottom: -4px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n1 { margin-left: -4px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-1 { margin-right: 4px !important; margin-left: 4px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-1 { margin-top: 4px !important; margin-bottom: 4px !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-2 { margin: 8px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-2 { margin-top: 8px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-2 { margin-right: 8px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-2 { margin-bottom: 8px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-2 { margin-left: 8px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n2 { margin-top: -8px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n2 { margin-right: -8px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n2 { margin-bottom: -8px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n2 { margin-left: -8px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-2 { margin-right: 8px !important; margin-left: 8px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-2 { margin-top: 8px !important; margin-bottom: 8px !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-3 { margin: 16px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-3 { margin-top: 16px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-3 { margin-right: 16px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-3 { margin-bottom: 16px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-3 { margin-left: 16px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n3 { margin-top: -16px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n3 { margin-right: -16px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n3 { margin-bottom: -16px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n3 { margin-left: -16px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-3 { margin-right: 16px !important; margin-left: 16px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-3 { margin-top: 16px !important; margin-bottom: 16px !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-4 { margin: 24px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-4 { margin-top: 24px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-4 { margin-right: 24px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-4 { margin-bottom: 24px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-4 { margin-left: 24px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n4 { margin-top: -24px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n4 { margin-right: -24px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n4 { margin-bottom: -24px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n4 { margin-left: -24px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-4 { margin-right: 24px !important; margin-left: 24px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-4 { margin-top: 24px !important; margin-bottom: 24px !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-5 { margin: 32px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-5 { margin-top: 32px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-5 { margin-right: 32px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-5 { margin-bottom: 32px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-5 { margin-left: 32px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n5 { margin-top: -32px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n5 { margin-right: -32px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n5 { margin-bottom: -32px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n5 { margin-left: -32px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-5 { margin-right: 32px !important; margin-left: 32px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-5 { margin-top: 32px !important; margin-bottom: 32px !important; }
+
+/* Set a $size margin to all sides at $breakpoint */
+.m-6 { margin: 40px !important; }
+
+/* Set a $size margin on the top at $breakpoint */
+.mt-6 { margin-top: 40px !important; }
+
+/* Set a $size margin on the right at $breakpoint */
+.mr-6 { margin-right: 40px !important; }
+
+/* Set a $size margin on the bottom at $breakpoint */
+.mb-6 { margin-bottom: 40px !important; }
+
+/* Set a $size margin on the left at $breakpoint */
+.ml-6 { margin-left: 40px !important; }
+
+/* Set a negative $size margin on top at $breakpoint */
+.mt-n6 { margin-top: -40px !important; }
+
+/* Set a negative $size margin on the right at $breakpoint */
+.mr-n6 { margin-right: -40px !important; }
+
+/* Set a negative $size margin on the bottom at $breakpoint */
+.mb-n6 { margin-bottom: -40px !important; }
+
+/* Set a negative $size margin on the left at $breakpoint */
+.ml-n6 { margin-left: -40px !important; }
+
+/* Set a $size margin on the left & right at $breakpoint */
+.mx-6 { margin-right: 40px !important; margin-left: 40px !important; }
+
+/* Set a $size margin on the top & bottom at $breakpoint */
+.my-6 { margin-top: 40px !important; margin-bottom: 40px !important; }
+
+/* responsive horizontal auto margins */
+.mx-auto { margin-right: auto !important; margin-left: auto !important; }
+
+@media (min-width: 544px) { /* Set a $size margin to all sides at $breakpoint */ .m-sm-0 { margin: 0 !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-0 { margin-top: 0 !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-0 { margin-right: 0 !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-0 { margin-bottom: 0 !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-0 { margin-left: 0 !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-0 { margin-right: 0 !important; margin-left: 0 !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-0 { margin-top: 0 !important; margin-bottom: 0 !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-1 { margin: 4px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-1 { margin-top: 4px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-1 { margin-right: 4px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-1 { margin-bottom: 4px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-1 { margin-left: 4px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n1 { margin-top: -4px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n1 { margin-right: -4px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n1 { margin-bottom: -4px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n1 { margin-left: -4px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-1 { margin-right: 4px !important; margin-left: 4px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-1 { margin-top: 4px !important; margin-bottom: 4px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-2 { margin: 8px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-2 { margin-top: 8px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-2 { margin-right: 8px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-2 { margin-bottom: 8px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-2 { margin-left: 8px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n2 { margin-top: -8px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n2 { margin-right: -8px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n2 { margin-bottom: -8px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n2 { margin-left: -8px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-2 { margin-right: 8px !important; margin-left: 8px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-2 { margin-top: 8px !important; margin-bottom: 8px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-3 { margin: 16px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-3 { margin-top: 16px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-3 { margin-right: 16px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-3 { margin-bottom: 16px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-3 { margin-left: 16px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n3 { margin-top: -16px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n3 { margin-right: -16px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n3 { margin-bottom: -16px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n3 { margin-left: -16px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-3 { margin-right: 16px !important; margin-left: 16px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-3 { margin-top: 16px !important; margin-bottom: 16px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-4 { margin: 24px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-4 { margin-top: 24px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-4 { margin-right: 24px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-4 { margin-bottom: 24px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-4 { margin-left: 24px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n4 { margin-top: -24px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n4 { margin-right: -24px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n4 { margin-bottom: -24px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n4 { margin-left: -24px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-4 { margin-right: 24px !important; margin-left: 24px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-4 { margin-top: 24px !important; margin-bottom: 24px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-5 { margin: 32px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-5 { margin-top: 32px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-5 { margin-right: 32px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-5 { margin-bottom: 32px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-5 { margin-left: 32px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n5 { margin-top: -32px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n5 { margin-right: -32px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n5 { margin-bottom: -32px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n5 { margin-left: -32px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-5 { margin-right: 32px !important; margin-left: 32px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-5 { margin-top: 32px !important; margin-bottom: 32px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-sm-6 { margin: 40px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-sm-6 { margin-top: 40px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-sm-6 { margin-right: 40px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-sm-6 { margin-bottom: 40px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-sm-6 { margin-left: 40px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-sm-n6 { margin-top: -40px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-sm-n6 { margin-right: -40px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-sm-n6 { margin-bottom: -40px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-sm-n6 { margin-left: -40px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-sm-6 { margin-right: 40px !important; margin-left: 40px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-sm-6 { margin-top: 40px !important; margin-bottom: 40px !important; } /* responsive horizontal auto margins */ .mx-sm-auto { margin-right: auto !important; margin-left: auto !important; } }
+
+@media (min-width: 768px) { /* Set a $size margin to all sides at $breakpoint */ .m-md-0 { margin: 0 !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-0 { margin-top: 0 !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-0 { margin-right: 0 !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-0 { margin-bottom: 0 !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-0 { margin-left: 0 !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-0 { margin-right: 0 !important; margin-left: 0 !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-0 { margin-top: 0 !important; margin-bottom: 0 !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-1 { margin: 4px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-1 { margin-top: 4px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-1 { margin-right: 4px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-1 { margin-bottom: 4px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-1 { margin-left: 4px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n1 { margin-top: -4px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n1 { margin-right: -4px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n1 { margin-bottom: -4px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n1 { margin-left: -4px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-1 { margin-right: 4px !important; margin-left: 4px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-1 { margin-top: 4px !important; margin-bottom: 4px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-2 { margin: 8px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-2 { margin-top: 8px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-2 { margin-right: 8px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-2 { margin-bottom: 8px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-2 { margin-left: 8px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n2 { margin-top: -8px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n2 { margin-right: -8px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n2 { margin-bottom: -8px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n2 { margin-left: -8px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-2 { margin-right: 8px !important; margin-left: 8px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-2 { margin-top: 8px !important; margin-bottom: 8px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-3 { margin: 16px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-3 { margin-top: 16px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-3 { margin-right: 16px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-3 { margin-bottom: 16px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-3 { margin-left: 16px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n3 { margin-top: -16px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n3 { margin-right: -16px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n3 { margin-bottom: -16px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n3 { margin-left: -16px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-3 { margin-right: 16px !important; margin-left: 16px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-3 { margin-top: 16px !important; margin-bottom: 16px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-4 { margin: 24px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-4 { margin-top: 24px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-4 { margin-right: 24px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-4 { margin-bottom: 24px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-4 { margin-left: 24px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n4 { margin-top: -24px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n4 { margin-right: -24px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n4 { margin-bottom: -24px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n4 { margin-left: -24px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-4 { margin-right: 24px !important; margin-left: 24px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-4 { margin-top: 24px !important; margin-bottom: 24px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-5 { margin: 32px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-5 { margin-top: 32px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-5 { margin-right: 32px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-5 { margin-bottom: 32px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-5 { margin-left: 32px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n5 { margin-top: -32px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n5 { margin-right: -32px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n5 { margin-bottom: -32px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n5 { margin-left: -32px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-5 { margin-right: 32px !important; margin-left: 32px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-5 { margin-top: 32px !important; margin-bottom: 32px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-md-6 { margin: 40px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-md-6 { margin-top: 40px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-md-6 { margin-right: 40px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-md-6 { margin-bottom: 40px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-md-6 { margin-left: 40px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-md-n6 { margin-top: -40px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-md-n6 { margin-right: -40px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-md-n6 { margin-bottom: -40px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-md-n6 { margin-left: -40px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-md-6 { margin-right: 40px !important; margin-left: 40px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-md-6 { margin-top: 40px !important; margin-bottom: 40px !important; } /* responsive horizontal auto margins */ .mx-md-auto { margin-right: auto !important; margin-left: auto !important; } }
+
+@media (min-width: 1012px) { /* Set a $size margin to all sides at $breakpoint */ .m-lg-0 { margin: 0 !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-0 { margin-top: 0 !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-0 { margin-right: 0 !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-0 { margin-bottom: 0 !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-0 { margin-left: 0 !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-0 { margin-right: 0 !important; margin-left: 0 !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-0 { margin-top: 0 !important; margin-bottom: 0 !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-1 { margin: 4px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-1 { margin-top: 4px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-1 { margin-right: 4px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-1 { margin-bottom: 4px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-1 { margin-left: 4px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n1 { margin-top: -4px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n1 { margin-right: -4px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n1 { margin-bottom: -4px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n1 { margin-left: -4px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-1 { margin-right: 4px !important; margin-left: 4px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-1 { margin-top: 4px !important; margin-bottom: 4px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-2 { margin: 8px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-2 { margin-top: 8px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-2 { margin-right: 8px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-2 { margin-bottom: 8px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-2 { margin-left: 8px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n2 { margin-top: -8px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n2 { margin-right: -8px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n2 { margin-bottom: -8px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n2 { margin-left: -8px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-2 { margin-right: 8px !important; margin-left: 8px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-2 { margin-top: 8px !important; margin-bottom: 8px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-3 { margin: 16px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-3 { margin-top: 16px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-3 { margin-right: 16px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-3 { margin-bottom: 16px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-3 { margin-left: 16px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n3 { margin-top: -16px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n3 { margin-right: -16px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n3 { margin-bottom: -16px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n3 { margin-left: -16px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-3 { margin-right: 16px !important; margin-left: 16px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-3 { margin-top: 16px !important; margin-bottom: 16px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-4 { margin: 24px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-4 { margin-top: 24px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-4 { margin-right: 24px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-4 { margin-bottom: 24px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-4 { margin-left: 24px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n4 { margin-top: -24px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n4 { margin-right: -24px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n4 { margin-bottom: -24px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n4 { margin-left: -24px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-4 { margin-right: 24px !important; margin-left: 24px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-4 { margin-top: 24px !important; margin-bottom: 24px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-5 { margin: 32px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-5 { margin-top: 32px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-5 { margin-right: 32px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-5 { margin-bottom: 32px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-5 { margin-left: 32px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n5 { margin-top: -32px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n5 { margin-right: -32px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n5 { margin-bottom: -32px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n5 { margin-left: -32px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-5 { margin-right: 32px !important; margin-left: 32px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-5 { margin-top: 32px !important; margin-bottom: 32px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-lg-6 { margin: 40px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-lg-6 { margin-top: 40px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-lg-6 { margin-right: 40px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-lg-6 { margin-bottom: 40px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-lg-6 { margin-left: 40px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-lg-n6 { margin-top: -40px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-lg-n6 { margin-right: -40px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-lg-n6 { margin-bottom: -40px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-lg-n6 { margin-left: -40px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-lg-6 { margin-right: 40px !important; margin-left: 40px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-lg-6 { margin-top: 40px !important; margin-bottom: 40px !important; } /* responsive horizontal auto margins */ .mx-lg-auto { margin-right: auto !important; margin-left: auto !important; } }
+
+@media (min-width: 1280px) { /* Set a $size margin to all sides at $breakpoint */ .m-xl-0 { margin: 0 !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-0 { margin-top: 0 !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-0 { margin-right: 0 !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-0 { margin-bottom: 0 !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-0 { margin-left: 0 !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-0 { margin-right: 0 !important; margin-left: 0 !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-0 { margin-top: 0 !important; margin-bottom: 0 !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-1 { margin: 4px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-1 { margin-top: 4px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-1 { margin-right: 4px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-1 { margin-bottom: 4px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-1 { margin-left: 4px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n1 { margin-top: -4px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n1 { margin-right: -4px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n1 { margin-bottom: -4px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n1 { margin-left: -4px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-1 { margin-right: 4px !important; margin-left: 4px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-1 { margin-top: 4px !important; margin-bottom: 4px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-2 { margin: 8px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-2 { margin-top: 8px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-2 { margin-right: 8px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-2 { margin-bottom: 8px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-2 { margin-left: 8px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n2 { margin-top: -8px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n2 { margin-right: -8px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n2 { margin-bottom: -8px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n2 { margin-left: -8px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-2 { margin-right: 8px !important; margin-left: 8px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-2 { margin-top: 8px !important; margin-bottom: 8px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-3 { margin: 16px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-3 { margin-top: 16px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-3 { margin-right: 16px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-3 { margin-bottom: 16px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-3 { margin-left: 16px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n3 { margin-top: -16px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n3 { margin-right: -16px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n3 { margin-bottom: -16px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n3 { margin-left: -16px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-3 { margin-right: 16px !important; margin-left: 16px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-3 { margin-top: 16px !important; margin-bottom: 16px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-4 { margin: 24px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-4 { margin-top: 24px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-4 { margin-right: 24px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-4 { margin-bottom: 24px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-4 { margin-left: 24px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n4 { margin-top: -24px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n4 { margin-right: -24px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n4 { margin-bottom: -24px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n4 { margin-left: -24px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-4 { margin-right: 24px !important; margin-left: 24px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-4 { margin-top: 24px !important; margin-bottom: 24px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-5 { margin: 32px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-5 { margin-top: 32px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-5 { margin-right: 32px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-5 { margin-bottom: 32px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-5 { margin-left: 32px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n5 { margin-top: -32px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n5 { margin-right: -32px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n5 { margin-bottom: -32px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n5 { margin-left: -32px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-5 { margin-right: 32px !important; margin-left: 32px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-5 { margin-top: 32px !important; margin-bottom: 32px !important; } /* Set a $size margin to all sides at $breakpoint */ .m-xl-6 { margin: 40px !important; } /* Set a $size margin on the top at $breakpoint */ .mt-xl-6 { margin-top: 40px !important; } /* Set a $size margin on the right at $breakpoint */ .mr-xl-6 { margin-right: 40px !important; } /* Set a $size margin on the bottom at $breakpoint */ .mb-xl-6 { margin-bottom: 40px !important; } /* Set a $size margin on the left at $breakpoint */ .ml-xl-6 { margin-left: 40px !important; } /* Set a negative $size margin on top at $breakpoint */ .mt-xl-n6 { margin-top: -40px !important; } /* Set a negative $size margin on the right at $breakpoint */ .mr-xl-n6 { margin-right: -40px !important; } /* Set a negative $size margin on the bottom at $breakpoint */ .mb-xl-n6 { margin-bottom: -40px !important; } /* Set a negative $size margin on the left at $breakpoint */ .ml-xl-n6 { margin-left: -40px !important; } /* Set a $size margin on the left & right at $breakpoint */ .mx-xl-6 { margin-right: 40px !important; margin-left: 40px !important; } /* Set a $size margin on the top & bottom at $breakpoint */ .my-xl-6 { margin-top: 40px !important; margin-bottom: 40px !important; } /* responsive horizontal auto margins */ .mx-xl-auto { margin-right: auto !important; margin-left: auto !important; } }
+
+.details-overlay[open] > summary::before { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 80; display: block; cursor: default; content: " "; background: transparent; }
+
+.details-overlay-dark[open] > summary::before { z-index: 99; background: rgba(27, 31, 35, 0.5); }
+
+.details-reset > summary { list-style: none; }
+
+.details-reset > summary::before { display: none; }
+
+.details-reset > summary::-webkit-details-marker { display: none; }
+
+/* Set the font size to 26px */
+.h1 { font-size: 26px !important; }
+
+@media (min-width: 768px) { .h1 { font-size: 32px !important; } }
+
+/* Set the font size to 22px */
+.h2 { font-size: 22px !important; }
+
+@media (min-width: 768px) { .h2 { font-size: 24px !important; } }
+
+/* Set the font size to 18px */
+.h3 { font-size: 18px !important; }
+
+@media (min-width: 768px) { .h3 { font-size: 20px !important; } }
+
+/* Set the font size to 16px */
+.h4 { font-size: 16px !important; }
+
+/* Set the font size to 14px */
+.h5 { font-size: 14px !important; }
+
+/* Set the font size to 12px */
+.h6 { font-size: 12px !important; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 600 !important; }
+
+/* Set the font size to 26px */
+.f1 { font-size: 26px !important; }
+
+@media (min-width: 768px) { .f1 { font-size: 32px !important; } }
+
+/* Set the font size to 22px */
+.f2 { font-size: 22px !important; }
+
+@media (min-width: 768px) { .f2 { font-size: 24px !important; } }
+
+/* Set the font size to 18px */
+.f3 { font-size: 18px !important; }
+
+@media (min-width: 768px) { .f3 { font-size: 20px !important; } }
+
+/* Set the font size to 16px */
+.f4 { font-size: 16px !important; }
+
+@media (min-width: 768px) { .f4 { font-size: 16px !important; } }
+
+/* Set the font size to 14px */
+.f5 { font-size: 14px !important; }
+
+/* Set the font size to 12px */
+.f6 { font-size: 12px !important; }
+
+/* Set the font size to 40px and weight to light */
+.f00-light { font-size: 40px !important; font-weight: 300 !important; }
+
+@media (min-width: 768px) { .f00-light { font-size: 48px !important; } }
+
+/* Set the font size to 32px and weight to light */
+.f0-light { font-size: 32px !important; font-weight: 300 !important; }
+
+@media (min-width: 768px) { .f0-light { font-size: 40px !important; } }
+
+/* Set the font size to 26px and weight to light */
+.f1-light { font-size: 26px !important; font-weight: 300 !important; }
+
+@media (min-width: 768px) { .f1-light { font-size: 32px !important; } }
+
+/* Set the font size to 22px and weight to light */
+.f2-light { font-size: 22px !important; font-weight: 300 !important; }
+
+@media (min-width: 768px) { .f2-light { font-size: 24px !important; } }
+
+/* Set the font size to 18px and weight to light */
+.f3-light { font-size: 18px !important; font-weight: 300 !important; }
+
+@media (min-width: 768px) { .f3-light { font-size: 20px !important; } }
+
+/* Set the font size to ${#h6-size} */
+.text-small { font-size: 12px !important; }
+
+/* Large leading paragraphs */
+.lead { margin-bottom: 30px; font-size: 20px; font-weight: 300; color: #586069; }
+
+/* Set the line height to ultra condensed */
+.lh-condensed-ultra { line-height: 1 !important; }
+
+/* Set the line height to condensed */
+.lh-condensed { line-height: 1.25 !important; }
+
+/* Set the line height to default */
+.lh-default { line-height: 1.5 !important; }
+
+/* Set the line height to zero */
+.lh-0 { line-height: 0 !important; }
+
+@media (min-width: 544px) { /* Set the line height to ultra condensed */ .lh-sm-condensed-ultra { line-height: 1 !important; } /* Set the line height to condensed */ .lh-sm-condensed { line-height: 1.25 !important; } /* Set the line height to default */ .lh-sm-default { line-height: 1.5 !important; } /* Set the line height to zero */ .lh-sm-0 { line-height: 0 !important; } }
+
+@media (min-width: 768px) { /* Set the line height to ultra condensed */ .lh-md-condensed-ultra { line-height: 1 !important; } /* Set the line height to condensed */ .lh-md-condensed { line-height: 1.25 !important; } /* Set the line height to default */ .lh-md-default { line-height: 1.5 !important; } /* Set the line height to zero */ .lh-md-0 { line-height: 0 !important; } }
+
+@media (min-width: 1012px) { /* Set the line height to ultra condensed */ .lh-lg-condensed-ultra { line-height: 1 !important; } /* Set the line height to condensed */ .lh-lg-condensed { line-height: 1.25 !important; } /* Set the line height to default */ .lh-lg-default { line-height: 1.5 !important; } /* Set the line height to zero */ .lh-lg-0 { line-height: 0 !important; } }
+
+@media (min-width: 1280px) { /* Set the line height to ultra condensed */ .lh-xl-condensed-ultra { line-height: 1 !important; } /* Set the line height to condensed */ .lh-xl-condensed { line-height: 1.25 !important; } /* Set the line height to default */ .lh-xl-default { line-height: 1.5 !important; } /* Set the line height to zero */ .lh-xl-0 { line-height: 0 !important; } }
+
+/* Text align to the right */
+.text-right { text-align: right !important; }
+
+/* Text align to the left */
+.text-left { text-align: left !important; }
+
+/* Text align to the center */
+.text-center { text-align: center !important; }
+
+@media (min-width: 544px) { /* Text align to the right */ .text-sm-right { text-align: right !important; } /* Text align to the left */ .text-sm-left { text-align: left !important; } /* Text align to the center */ .text-sm-center { text-align: center !important; } }
+
+@media (min-width: 768px) { /* Text align to the right */ .text-md-right { text-align: right !important; } /* Text align to the left */ .text-md-left { text-align: left !important; } /* Text align to the center */ .text-md-center { text-align: center !important; } }
+
+@media (min-width: 1012px) { /* Text align to the right */ .text-lg-right { text-align: right !important; } /* Text align to the left */ .text-lg-left { text-align: left !important; } /* Text align to the center */ .text-lg-center { text-align: center !important; } }
+
+@media (min-width: 1280px) { /* Text align to the right */ .text-xl-right { text-align: right !important; } /* Text align to the left */ .text-xl-left { text-align: left !important; } /* Text align to the center */ .text-xl-center { text-align: center !important; } }
+
+/* Set the font weight to normal */
+.text-normal { font-weight: 400 !important; }
+
+/* Set the font weight to bold */
+.text-bold { font-weight: 600 !important; }
+
+/* Set the font to italic */
+.text-italic { font-style: italic !important; }
+
+/* Make text uppercase */
+.text-uppercase { text-transform: uppercase !important; }
+
+/* Underline text */
+.text-underline { text-decoration: underline !important; }
+
+/* Don't underline text */
+.no-underline { text-decoration: none !important; }
+
+/* Don't wrap white space */
+.no-wrap { white-space: nowrap !important; }
+
+/* Normal white space */
+.ws-normal { white-space: normal !important; }
+
+/* Force long "words" to wrap if they exceed the width of the container */
+.break-word { word-break: break-word !important; word-wrap: break-word !important; overflow-wrap: break-word !important; }
+
+/* Specifically apply word-break: break-all; per MDN: > Note: In contrast to `word-break: break-word` and `overflow-wrap: break-word`, > `word-break: break-all` will create a break at the exact place where text would > otherwise overflow its container (even if putting an entire word on its own line > would negate the need for a break). see: https://developer.mozilla.org/en-US/docs/Web/CSS/word-break#Values */
+.wb-break-all { word-break: break-all !important; }
+
+.text-emphasized { font-weight: 600; color: #24292e; }
+
+.list-style-none { list-style: none !important; }
+
+/* Add a dark text shadow */
+.text-shadow-dark { text-shadow: 0 1px 1px rgba(27, 31, 35, 0.25), 0 1px 25px rgba(27, 31, 35, 0.75); }
+
+/* Add a light text shadow */
+.text-shadow-light { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+
+/* Set to monospace font */
+.text-mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important; }
+
+/* Disallow user from selecting text */
+.user-select-none { user-select: none !important; }
+
+/*# sourceMappingURL=primer.css.map */

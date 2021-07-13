@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Content Similarity Algorithm Tests | The Open Buddhist University</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Content Similarity Algorithm Tests" />
+<meta name="author" content="Khemarato Bhikkhu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A series of integration tests for the quality of the content recommendations." />
+<meta property="og:description" content="A series of integration tests for the quality of the content recommendations." />
+<link rel="canonical" href="https://buddhistuniversity.net/tests/similar_content" />
+<meta property="og:url" content="https://buddhistuniversity.net/tests/similar_content" />
+<meta property="og:site_name" content="The Open Buddhist University" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-13T12:29:14+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Content Similarity Algorithm Tests" />
+<script type="application/ld+json">
+{"description":"A series of integration tests for the quality of the content recommendations.","url":"https://buddhistuniversity.net/tests/similar_content","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://buddhistuniversity.net/tests/similar_content"},"author":{"@type":"Person","name":"Khemarato Bhikkhu"},"headline":"Content Similarity Algorithm Tests","dateModified":"2021-07-13T12:29:14+07:00","datePublished":"2021-07-13T12:29:14+07:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- The Google Font async wizardry below is courtesy of: https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+TC&family=Noto+Serif+JP&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+TC&family=Noto+Serif+JP&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+TC&family=Noto+Serif+JP&display=swap" />
+  </noscript>
+  <link href="/assets/primer.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://buddhistuniversity.net/feed.xml" title="The Open Buddhist University" /><link rel="apple-touch-icon" sizes="144x144" href="/assets/ms-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/imgs/logo.svg" color="#c69c6c">
+  <meta name="msapplication-TileColor" content="#c69c6c">
+  <meta name="theme-color" content="#c69c6c">
+  <script async src="https://kit.fontawesome.com/215a8ad627.js" crossorigin="anonymous"></script><script>
+      if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-159403467-1', 'auto');
+      ga('require', 'eventTracker', {});
+      ga('require', 'outboundLinkTracker', {
+        hitFilter: function(c,a) {
+          var v = c.get("eventValue") || 0.1;
+          var w = Math.floor(v);
+          var k = (a.getAttribute("data-content-path") || a.href) + ":clicked";
+          if (localStorage.getItem(k)) { c.set("eventValue", 0, true); } else {
+          // window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':c.get("eventLabel"),'revenue_value':v,'currency':'USD'});
+          c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w, true);
+          localStorage.setItem(k, 1);
+          }
+        }
+      });
+      ga('send', 'pageview');
+
+      // (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56243852"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+    }
+    </script>
+    <script async src="/assets/js/autotrack.js"></script>
+</head>
+
+  <body>
+
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>The Open Buddhist University</span></a>
+      <nav class="site-nav-links"><a class="page-link" href="/about/">About</a><a class="page-link" href="/courses/">Courses</a><a class="page-link" href="/library/">Library</a><a class="page-link" href="/blog/">Newsletter</a><a class="page-link" href="/search/">Search</a></nav>
+  </div>
+  
+</header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+  
+  
+  <header class="post-header">
+    <h1 class="post-title">Content Similarity Algorithm Tests</h1>
+  </header>
+  
+
+  <div class="post-content">
+    <p>A series of integration tests for the quality of the content recommendations.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“<a href="/content/av/talking-to-strangers_gladwell">Talking to Strangers</a>” should recommend “<a href="/content/monographs/what-every-body-is-saying_navarro-joe">What Every Body is Saying</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/arts-of-living-on-a-damaged-planet">Arts of Living on a Damaged Planet</a>” should recommend “<a href="/content/monographs/timefulness_bjornerud">Timefulness</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/av/baraka_fricke-ron">Baraka</a>” should recommend “<a href="/content/av/repetition_cooper-mcgloughlin">Repetition</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/short-history-of-nearly-everything_bryson-bill">A Short History of Nearly Everything</a>” should recommend “<a href="/content/av/burden-of-proof_gladwell-m">Burden of Proof</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/sapiens_harari-y">Sapiens</a>” should recommend “<a href="/content/monographs/world-until-yesterday_diamond-jared">The World Until Yesterday</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/citizen_rankine-claudia">Citizen</a>” should recommend “<a href="/content/av/carlos_gladwell-m">Carlos Doesn’t Remember</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/lao-buddhist-women_tsomo-karma-lekshe">Lao Buddhist Women</a>” should recommend “<a href="/content/monographs/traffic-in-heirarchy-keeler-ward">The Traffic in Hierarchy</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/oral-transmission_wynne">The Oral Transmission of Early Buddhist Literature</a>” should recommend “<a href="/content/articles/oral-dimensions-of-pali_analayo">Oral Dimensions of Pāli Discourses</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/mindfulness-in-plain-english_gunaratana">Mindfulness in Plain English</a>” should recommend “<a href="/content/booklets/how-to-meditate_yuttadhammo">How to Meditate</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/how-to-meditate_yuttadhammo">How to Meditate</a>” should recommend “<a href="/content/essays/instructions-to-insight-meditation_mahasi">Instructions to Insight Meditation</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/essays/what-work-is_levine-philip">What Work Is</a>” should recommend “<a href="/content/essays/you-can-have-it_levine-philip">You Can Have It</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/essays/someday-ill-love-ocean_vuong">Someday I’ll Love Ocean Vuong</a>” should recommend “<a href="/content/monographs/little-prince_saintexupery">The Little Prince</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/essays/rebirth-and-the-inbetween_sujato">Rebirth and the In-between State in Early Buddhism</a>” should recommend “<a href="/content/essays/when-does-human-life-begin_brahm">When Does Human Life Begin?</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/ordaining-renunciation_nirodha">On Ordaining and Renunciation</a>” should recommend “<a href="/content/essays/going-forth_viradhammo">Going Forth</a>”</td>
+      <td>FAIL ❌</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/essays/youre-not-a-bad-person_kashtan-miki">You’re Not a Bad Person</a>” should recommend “<a href="/content/essays/mindfulness-racial-bias_magee-rhonda">How Mindfulness Can Defeat Racial Bias</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/ptsd-in-the-slaughterhouse">PTSD in the Slaughterhouse</a>” should recommend “<a href="/content/essays/you-can-have-it_levine-philip">You Can Have It</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/unbearable_baskin-jon">The Unbearable</a>” should recommend “<a href="/content/av/limits-of-power_gladwell">The Limits of Power</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/behave_sapolsky-robert">Behave</a>” should recommend “<a href="/content/articles/challenges-of-the-disengaged-mind_wilson-et-al">Just Think</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/mindfulness-intervention-to-youth-issues-in-vietnam_le-trieu">Feasibility of a mindfulness-based intervention to address youth issues in Vietnam</a>” should recommend “<a href="/content/articles/mindfulness-in-palestine_pigni-a">A First-Person Account of Using Mindfulness as a Therapeutic Tool in the Palestinian Territories</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/in-search-of-schrodingers-cat_gribbin-john">In Search of Schrödinger’s Cat</a>” should recommend “<a href="/content/monographs/brief-history-of-time_hawking">A Brief History of Time</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/papers/venerated-objects-early-buddhism_harvey">Venerated Objects and Symbols of Early Buddhism</a>” should recommend “<a href="/content/articles/lotus-as-symbol_olson_carl">The Lotus as a Symbol in the Pali Tradition</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/papers/altruism-in-classical-buddhism_lewis-todd">Altruism in Classical Buddhism</a>” should recommend “<a href="/content/articles/cultivation-of-virtue_fink-charles">The Cultivation of Virtue in Buddhist Ethics</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/against-the-defilements_suchart">Against the Defilements</a>” should recommend “<a href="/content/booklets/kammatthana_mahabua"><em>Kammaṭṭhāna</em></a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/buddhist-wheel-symbol_karunaratne">The Buddhist Wheel Symbol</a>” should recommend “<a href="/content/papers/venerated-objects-early-buddhism_harvey">Venerated Objects and Symbols of Early Buddhism</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/understanding-the-chinese-buddhist-temple_negru-john">Understanding the Chinese Buddhist Temple</a>” should recommend “<a href="/content/booklets/popular-deities-in-chinese-buddhism_kuanming">Popular Deities of Chinese Buddhism</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/sn_bodhi">The Connected Discourses of the Buddha</a>” should recommend “<a href="/content/booklets/sn_sujato">Linked Discourses</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/an_bodhi">The Numerical Discourses of the Buddha</a>” should recommend “<a href="/content/booklets/an_sujato">The Numbered Discourses</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/the-buddhist-layman">The Buddhist Layman</a>” should recommend “<a href="/content/booklets/simple-guide-to-life_bogoda-r">A Simple Guide to Life</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/buddhist-hybrid-english_griffiths-paul">Buddhist Hybrid English</a>” should recommend “<a href="/content/monographs/philological-approach_norman">A Philological Approach to Buddhism</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/tracing-thought-through-things_stargardt">Tracing Thought Through Things</a>” should recommend “<a href="/content/booklets/authenticity_sujato-brahmali">The Authenticity of the Early Buddhist Texts</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/booklets/authenticity_sujato-brahmali">The Authenticity of the Early Buddhist Texts</a>” should recommend “<a href="/content/articles/hoary-past-hazy-memory_hinuber-oskar-v">Hoary Past and Hazy Memory</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/buzz-buzz-buzz_michelle-nijhuis">Buzz Buzz Buzz</a>” should recommend “<a href="/content/articles/should-trees-have-standing_stone-chris">Should Trees Have Standing</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/college-sexual-assault-survey">23% of women report sexual assault in college</a>” should recommend “<a href="/content/monographs/sexual-consent_popova">Sexual Consent</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/sexual-consent_popova">Sexual Consent</a>” should recommend “<a href="/content/monographs/what-every-body-is-saying_navarro-joe">What Every Body is Saying</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/compassionate-killing_gethin">Can Killing a Living Being Ever Be an Act of Compassion</a>” should recommend “<a href="/content/articles/trolly-car-dilemma_pandita">The Trolley Car Dilemma</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/historical-authenticity_wynne">The Historical Authenticity of Early Buddhist Literature</a>” should recommend “<a href="/content/booklets/authenticity_sujato-brahmali">The Authenticity of the Early Buddhist Texts</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/did-the-buddha-exist_wynne">Did the Buddha Exist</a>” should recommend “<a href="/content/articles/in-search-of-the-real-buddha_harvey">In Search of the Real Buddha</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/articles/giving-makes-us-happy">Giving money away makes us happy. Then why do so few of us do it?</a>” should recommend “<a href="/content/articles/meditation-moral-obligation_vox">Are We Morally Obligated to Meditate?</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/monographs/kids-these-days_harris-malcolm">Kids These Days</a>” should recommend “<a href="/content/monographs/debt_graeber-david">Debt</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/canon/mn44">MN 44</a>” should recommend “<a href="/content/articles/bhikkhuni-dhammadinna_analayo">Chos sbyin gyi mdo</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+    <tr>
+      <td>“<a href="/content/av/teardrops-of-time_fuhrmann-arnika">Teardrops of Time</a>” should recommend “<a href="/content/essays/i-lost-you_kalayanapong-angkarn">I Lost You</a>”</td>
+      <td>Pass ✅</td>
+      <td>of 10</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Totals:</td>
+      <td>40 Pass and 1 Failed</td>
+      <td>410 total recommendations</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</article>
+
+
+      </div>
+    </main>
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data><div class="wrapper">
+
+    <h2 class="footer-heading">The Open Buddhist University</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Khemarato Bhikkhu (Chief Librarian)</li><li><a class="u-email" href="mailto:theopenbuddhistuniversity@gmail.com">The Open Buddhist University @gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://tinyletter.com/buddhist-uni"><svg class="svg-icon"><use xlink:href="/assets/tinyletter-icon.svg#theicon"></use></svg> <span class="username" style="font-style: italic; font-family: Georgia, Times, serif;">TinyLetter</span></a></li><li><a href="https://github.com/buddhist-uni/buddhist-uni.github.io"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">GitHub</span></a></li><li><a href="https://www.twitter.com/buddhistuni"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Twitter</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A website dedicated to providing free, online courses and bibliographies in Buddhist Studies. </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
