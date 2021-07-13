@@ -17,6 +17,7 @@ exclude:
     - scripts/
     - content.bib
     - _authors/chiu-angela.md
+    - _authors/cone-margaret.md
     - _authors/deleanu-f.md
     - _authors/diamond-jared.md
     - _authors/gomtsul.md
@@ -48,7 +49,9 @@ exclude:
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
     - _content/articles/buddhism-and-blackness_vox.md
     - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
+    - _content/articles/burmese-manuscripts-in-the-loc_pruitt-william.md
     - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
+    - _content/articles/caveat-lector_cone-margaret.md
     - _content/articles/compassion-in-the-agamas-and-nikayas_analayo.md
     - _content/articles/ethicopolitical-significance-of-mindfulness_ng-edwin.md
     - _content/articles/four-eminent-monks-and-their-syncretistic-style_chu-william.md
@@ -57,6 +60,7 @@ exclude:
     - _content/articles/hoary-past-hazy-memory_hinuber-oskar-v.md
     - _content/articles/illness-as-metaphor_sontag.md
     - _content/articles/meditation-and-liberation-in-the-sravakabhumi_deleanu-florin.md
+    - _content/articles/micchaditthi_jaini-p-s.md
     - _content/articles/nighttime-and-refugees_jolliffe-pia.md
     - _content/articles/politics-of-higher-ordination_abeysekara-ananda.md
     - _content/articles/power-of-interconnectivity_ip-hongyap.md
@@ -140,6 +144,8 @@ exclude:
     - _content/canon/ud4.5.md
     - _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
     - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
+    - _content/essays/dalai-lama_dhammika.md
+    - _content/essays/euthanasia_dhammika.md
     - _content/essays/from-the-oral-tradition_nyarong-terton.md
     - _content/essays/great-perfection_chokyi-lodro.md
     - _content/essays/i-lost-you_kalayanapong-angkarn.md
