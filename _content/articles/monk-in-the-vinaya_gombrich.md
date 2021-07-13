@@ -10,6 +10,7 @@ course: monastic
 tags:
   - vinaya-studies
   - form
+  - academia
 status: featured
 year: 1995
 journal: jpts

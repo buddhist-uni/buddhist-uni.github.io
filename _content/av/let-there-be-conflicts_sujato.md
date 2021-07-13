@@ -11,7 +11,6 @@ tags:
   - ideology
   - view
   - compassion
-  - epistemology
   - speech
   - dialogue
 year: 2008

@@ -9,6 +9,7 @@ drive_links:
 course: ethics
 tags:
   - death
+  - euthanasia
 ---
 
 A short answer on the question of euthanasia.
