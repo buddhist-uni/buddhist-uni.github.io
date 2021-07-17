@@ -21,3 +21,6 @@ year: 2015
 
 
 An anthology of humorous stories from the Pali Canon, which makes the collection less intimidating and more approachable. Recommended for people just starting to read the canon, and wondering where to start.
+
+The book may have been inspired by [this 1981 paper in JPTS](https://archive.org/download/jpts-ix-1981/Humor%20in%20Pali%20Literature%20-%20Walpola%20Rahula_text.pdf){:target="_blank"} by [Walpola Rahula]({% link _authors/rahula-w.md %}).
+

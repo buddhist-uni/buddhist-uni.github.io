@@ -14,7 +14,7 @@ volume: 29
 course: hermeneutics
 pages: "153--168"
 tags:
-  - fascism
+  - extremism
   - sea
   - view
   - sri-lankan
