@@ -6,7 +6,6 @@ external_url: "https://www.nybooks.com/daily/2020/08/14/the-unbearable-toward-an
 drive_links: ["https://drive.google.com/file/d/1g3kr1z_m51-GF-5uCfneUoYS2ZgLaWD7/view?usp=drivesdk"]
 tags: 
   - extremism
-  - fascism
   - modernity
   - art-theory
   - emotions

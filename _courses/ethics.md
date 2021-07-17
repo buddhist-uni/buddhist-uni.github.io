@@ -263,6 +263,8 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 {% include content_blurb.html category="av" slug="buddhist-approach-to-economics_jayasaro" %}
 -  A Buddhist monk who rejects money has a lot to say about economics, perhaps because of the objectivity that distance affords.
 
+{% include content_box.html category="essays" slug="iyothee-tass_dhammika" %}
+
 {% include content_blurb.html category="articles" slug="refugees-and-fearlessness_kilby-christina" %}
 - There is a profound connection between internal states of delusion and macroeconomic problems.
 

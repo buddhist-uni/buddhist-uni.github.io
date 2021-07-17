@@ -12,8 +12,7 @@ tags:
   - thought
   - karma
   - free-will
-  - authoritarianism
-  - totalitarianism
+  - extremism
 ---
 
 > someone is a sequence of choices, and the question is: Will my next choice be conscious, and will my ability to make it be unfettered?
