@@ -1,9 +1,11 @@
 ---
 title: "I Wonder Why"
 authors: [thubten-chodron]
-external_url: "http://ftp.budaedu.org/ebooks/pdf/EN255.pdf"
+external_url: "https://archive.org/download/i-wonder-why-thubten-chodron/I%20Wonder%20Why%20-%20Thubten%20Chodron_text.pdf"
+source_url: "http://ftp.budaedu.org/ebooks/pdf/EN255.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1kkEVSKGa2gD6BjZ7WBrarLHdJkgY4WuX/view?usp=drivesdk"]
+drive_links:
+  - "https://drive.google.com/file/d/1jQUhPiTu9uFlaNQ4MuKmJrz8t0mUEs1Z/view?usp=sharing"
 year: 1988
 olid: OL32580792M
 course: form

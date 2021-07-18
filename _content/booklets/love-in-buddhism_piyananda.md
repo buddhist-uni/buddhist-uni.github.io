@@ -2,9 +2,10 @@
 title: "Love in Buddhism"
 authors:
   - "Bhante Walpola Piyananda"
-external_url: "http://ftp.budaedu.org/ebooks/pdf/EN382.pdf"
+source_url: "http://ftp.budaedu.org/ebooks/pdf/EN382.pdf"
+external_url: "https://archive.org/download/love-in-buddhism-bhante-walpola-piyananda/Love%20in%20Buddhism%20-%20Bhante%20Walpola%20Piyananda_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1TKOIF7lFGG5Vas9b_rs7mQTq0p0Nxi1c/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16Rfe0TbUzKFyrg_72S-EOyQHnrOCBKL1/view?usp=sharing"
 course: characters
 tags:
   - buddha
