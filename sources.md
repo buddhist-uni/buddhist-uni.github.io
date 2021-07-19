@@ -9,7 +9,9 @@ In addition to the content I've featured on this site, you can find lots more at
   * Ven [Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/publications-by-bhikkhu-analayo/)
 * [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html)
 * [Access to Insight](https://www.accesstoinsight.org/)
-* [SuttaCentral](https://suttacentral.net/) (and its [Discourse](https://discourse.suttacentral.net/search?q=pdf) forum)
+* [SuttaCentral](https://suttacentral.net/)
+  * Its ["Discourse" Forum](https://discourse.suttacentral.net/search?q=pdf)
+  * Bhante Sujato's books [on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK)
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
   * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php)
   * [Ajahn Suchart](https://www.phrasuchart.com/enbook/)
@@ -25,6 +27,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
 * [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/)
 * [SuttaReadings.net](http://www.suttareadings.net/audio/index-readers.html)
+* Bhante S. Dhammika's blog, "[BudBlooms](http://budblooms.org/)"
 * [Buddhist Studies Review](https://journals.equinoxpub.com/BSR/issue/archive)
 * [The Journal of Buddhist Ethics](https://blogs.dickinson.edu/buddhistethics/)
 * [The Buddhist Publication Society](http://www.bps.lk/library.php)
