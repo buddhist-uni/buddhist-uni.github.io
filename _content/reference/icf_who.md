@@ -1,11 +1,10 @@
 ---
 title: "International Classification of Functioning, Disability and Health (ICF)"
-authors: "The World Health Organization"
+authors: ["The World Health Organization"]
 external_url: "https://apps.who.int/classifications/icfbrowser/"
 course: world
 tags:
   - disability
-  - medicine
 ---
 
 A comprehensive list of what being a human involves.
