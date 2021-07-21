@@ -1,6 +1,7 @@
 ---
 title: "Sources"
 section: about
+layout: setlinktargets
 ---
 
 In addition to the content I've featured on this site, you can find lots more at the websites below, each hosting free content on Buddhism:
