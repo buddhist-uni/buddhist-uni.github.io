@@ -2,6 +2,7 @@
 title: "Reading Faithfully"
 external_url: "https://www.readingfaithfully.org/"
 course: sutta
+year: 2011
 status: featured
 tags:
   - hermeneutics

@@ -18,7 +18,8 @@ tags:
   - poetry
   - view
   - thought
-year: 720
+year: 1979
+translator: "Steven Bachelor"
 external_url: "https://www.tibethouse.jp/about/buddhism/text/pdfs/Bodhisattvas_way_English.pdf"
 source_url: "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zAntideva-bodhicaryAvatAra.htm"
 ---

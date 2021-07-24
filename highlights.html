@@ -1,0 +1,23 @@
+---
+title: Best / New Arrivals
+section: library
+permalink: /library/highlights
+image: https://illeakyw.sirv.com/Images/banners/origami.jpg
+sirv_options: blur=1
+big_image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Origami_%2813777498043%29.jpg
+image_width: 1280
+image_height: 853
+banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(13777498043).jpg">Helgi Halldórsson</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
+---
+
+<h4>Content published in:</h4>
+
+{% capture y %}{{ 'now' | date: "%Y" }}{% endcapture %}
+{% assign thisyear = site.content | where: "year", y | where_exp: "c", "c.status != 'featured'" %}
+{% assign featurecontent = site.content | where: "status", "featured" %}
+{% assign bests = thisyear | concat: featurecontent | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | group_by: "year" | sort: "name" | reverse %}
+{% for y in bests %}
+<h2>{{ y.name }}</h2>
+{% include featured_content_list.html contents=y.items %}
+{% endfor %}
+
