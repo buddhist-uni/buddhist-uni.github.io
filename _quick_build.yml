@@ -21,11 +21,10 @@ exclude:
     - _authors/deleanu-f.md
     - _authors/diamond-jared.md
     - _authors/gomtsul.md
+    - _authors/gleig-a.md
     - _authors/huxley-a.md
     - _authors/iwamura-jane.md
-    - _authors/khema.md
     - _authors/lew-karl.md
-    - _authors/norman.md
     - _authors/rankine-claudia.md
     - _authors/shi-zhiru.md
     - _authors/sontag.md
@@ -41,9 +40,9 @@ exclude:
     - _authors/keeler-ward.md
     - _authors/king-winston.md
     - _authors/menzel-peter.md
-    - _authors/mipham.md
     - _authors/popova.md
     - _authors/singer-peter.md
+    - _authors/vasubandhu.md
     - _content/articles/astrological-determinism_kotyk-j.md
     - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
     - _content/articles/bill-gates-tweeted_matthews-dylan.md
@@ -363,4 +362,35 @@ exclude:
     - _content/reference/pressing-out-pure-honey_rogell-sharda.md
     - _content/reference/ticivara.md
     - _content/reference/tipitaka.md
+    - _content/articles/sa-regarding-emptiness_lamotte.md
+    - _content/av/buddhism-beyond-modernity_gleig-a.md
+    - _content/av/fear-and-worry_pasanno.md
+    - _content/av/feminism_solnit.md
+    - _content/av/fifty-jataka_baker-phongpaichit.md
+    - _content/av/great-indoors.md
+    - _content/av/literature-of-gandhara_salomon-richard.md
+    - _content/av/moral-panics_cottom-klein.md
+    - _content/av/muslim-stereotypes-conceal-the-real-history_elverskog-johan.md
+    - _content/av/tornado-of-self_panyavaddho.md
+    - _content/av/values_jayasaro.md
+    - _content/av/yasodhara_sasson-v.md
+    - _content/booklets/single-bowl-of-sauce_buddhadasa.md
+    - _content/canon/an6.45.md
+    - _content/canon/karma-vibhanga.md
+    - _content/canon/mn25.md
+    - _content/canon/mv1-4.md
+    - _content/canon/sn36.19.md
+    - _content/canon/t1586.md
+    - _content/essays/chan-practice-and-faith_sheng-yen.md
+    - _content/essays/cushion-or-world_cintita.md
+    - _content/essays/monet-refuses-the-operation_mueller-lisel.md
+    - _content/monographs/buddhist-thought_williams-paul.md
+    - _content/monographs/early-buddhist-transmission_neelis-jason.md
+    - _content/monographs/li-bo-unkempt_smith-kidder.md
+    - _content/articles/omniscience_analayo.md
+    - _content/av/secret-identity_tal.md
+    - _content/essays/ashokas-engineers_dhammika.md
+    - _content/excerpts/samadhi_analayo.md
+    - _content/excerpts/sati_analayo.md
+
 
