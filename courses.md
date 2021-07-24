@@ -37,8 +37,8 @@ We hope you enjoy our offerings:
   </div>
   <div class="featuringrow">
     <div class="flabel"><strong>Featuring</strong>:</div>
-    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include content_authors_string.html authors=course.lecturers %}</div>{% endif %}
-    {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include content_authors_string.html authors=bauthors %}</div>{% endif %}
+    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
+    {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include content_authors_string.html link=true authors=bauthors %}</div>{% endif %}
   </div>
 </div>
 
