@@ -15,7 +15,22 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 {% capture y %}{{ 'now' | date: "%Y" }}{% endcapture %}
 {% assign thisyear = site.content | where: "year", y | where_exp: "c", "c.status != 'featured'" %}
 {% assign featurecontent = site.content | where: "status", "featured" %}
-{% assign bests = thisyear | concat: featurecontent | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | group_by: "year" | sort: "name" | reverse %}
+{% assign courses = site.courses | map: "slug" %}
+{% assign tags = site.tags | map: "slug" | concat: courses %}
+{% for c in thisyear %}
+  {% if tags contains c.course %}
+    {% assign featurecontent = featurecontent | push: c %}
+    {% continue %}
+  {% endif %}
+  {% for t in c.tags %}
+    {% if tags contains t %}
+      {% assign featurecontent = featurecontent | push: c %}
+      {% continue %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% assign bests = featurecontent | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | group_by: "year" | sort: "name" | reverse %}
 {% for y in bests %}
 <h2>{{ y.name }}</h2>
 {% include featured_content_list.html contents=y.items %}
