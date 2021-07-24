@@ -4,6 +4,7 @@ drive_links: ["https://drive.google.com/file/d/1nKelIAHnESuzswf3WTt_1mRt51jtN8Uh
 external_url: "https://archive.org/details/drums-and-bells-evening-chanting-qing-de-monastery"
 status: featured
 course: form
+year: 2013
 tags:
   - mahayana
   - chan

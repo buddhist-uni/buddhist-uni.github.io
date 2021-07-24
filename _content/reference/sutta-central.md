@@ -2,6 +2,7 @@
 title: SuttaCentral
 authors: [sujato]
 external_url: "https://suttacentral.net"
+year: 2007
 status: featured
 course: ebts
 tags:
