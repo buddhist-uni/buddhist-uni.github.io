@@ -25,7 +25,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
   {% for t in c.tags %}
     {% if tags contains t %}
       {% assign featurecontent = featurecontent | push: c %}
-      {% continue %}
+      {% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
