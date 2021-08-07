@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1w9m6mU7pvCJbe1VuWiKELjg95rKM2mjF/view?usp=drivesdk"
 course: indian
 tags:
-  - late-pali-lit
+  - theravada-roots
   - karma
 year: 2020
 month: apr

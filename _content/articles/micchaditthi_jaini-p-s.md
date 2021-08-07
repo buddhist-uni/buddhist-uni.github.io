@@ -18,7 +18,6 @@ tags:
   - sea
   - view
   - sri-lankan
-  - late-pali-lit
   - theravada-roots
 ---
 

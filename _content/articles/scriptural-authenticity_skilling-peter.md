@@ -3,7 +3,6 @@ title: "Scriptural Authenticity and the Śrāvaka Schools: An Essay towards an I
 authors: [skilling]
 course: sects
 tags:
-  - late-pali-lit
   - theravada-roots
 external_url: "http://www.ahandfulofleaves.org/documents/Scriptural%20Authenticity%20and%20the%20Sravaka%20Schools_An%20Essay%20towards%20an%20Indian%20Perspective_Peter%20Skilling_EB_41-2_2010.pdf"
 year: 2010

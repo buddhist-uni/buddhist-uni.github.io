@@ -1,6 +1,7 @@
 ---
 title: "On the Very Idea of the Pali Canon"
-authors: ["Steven Collins"]
+authors: [collins-steven]
+external_url: "https://archive.org/download/jpts-xv-1990/On%20the%20Very%20Idea%20of%20the%20Pa%CC%84li%20Canon%20-%20Steven%20Collins_text.pdf"
 formats: [pdf]
 file_links: ["exclusive_01/On%20the%20Very%20Idea%20of%20the%20Pali%20Canon%20-%20Steven%20Collins.pdf"]
 drive_links: ["https://drive.google.com/file/d/1hp9G39p0Z1hEItbpGOLoU0xKsaDuHxPh/view?usp=drivesdk"]
