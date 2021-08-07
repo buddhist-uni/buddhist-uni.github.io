@@ -164,7 +164,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Parallel to Robinson Chapters 7 and 8 on Sri Lanka and China
 
-As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of evening services, these two rare recordings capture, for me, something of the beauty of these two traditions:
+As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of their traditions' evening services, these two rare recordings capture, for me, something of their beauty:
 
 {% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
 - First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.

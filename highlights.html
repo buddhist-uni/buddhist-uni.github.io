@@ -12,9 +12,18 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 
 <h4>Content published in:</h4>
 
-{% capture y %}{{ 'now' | date: "%Y" }}{% endcapture %}
-{% assign thisyear = site.content | where: "year", y | where_exp: "c", "c.status != 'featured'" %}
-{% assign featurecontent = site.content | where: "status", "featured" %}
+{% capture year %}{{ 'now' | date: "%Y" }}{% endcapture %}
+{% assign thisyear = site.content | where: "year", year | where_exp: "c", "c.status != 'featured'" %}
+{% assign featurecontent = "" | split: "" %}
+{% assign fcon = site.content | where: "status", "featured" %}
+{% for c in fcon %}
+  {% include calculatestars.dat content=c %}
+  {% assign yd = year | minus: c.year %}
+  {% if yd >= 5 and stars < 5 %}
+    {% continue %}
+  {% endif %}
+  {% assign featurecontent = featurecontent | push: c %}
+{% endfor %}
 {% assign courses = site.courses | map: "slug" %}
 {% assign tags = site.tags | map: "slug" | concat: courses %}
 {% for c in thisyear %}

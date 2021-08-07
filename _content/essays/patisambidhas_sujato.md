@@ -10,6 +10,7 @@ course: theravada
 tags:
   - vipassana
   - language
+  - religion
   - pali-language
   - form
 ---

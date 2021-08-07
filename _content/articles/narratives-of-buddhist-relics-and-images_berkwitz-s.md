@@ -13,7 +13,6 @@ tags:
   - material-culture
   - art
   - theravada
-  - late-pali-lit
 ---
 
 > the alleged, extraordinary natures of such power­ful relics and images compelled certain individuals to narrate and recount how they were found or made, where they traveled, and the various miracles they performed as a testa­ment to their great power

@@ -13,5 +13,5 @@ year: 2001
 month: nov
 ---
 
-_Kaṭhina_ is arguably the most important holiday of the year for Theravadan Buddhists. This booklet lays out the history and significance of this tradition in an admirably non-sectarian way.
+_Kaṭhina_ is arguably the most important holiday of the year for Theravādin Buddhists. This booklet lays out the history and significance of this tradition in an admirably non-sectarian way.
 
