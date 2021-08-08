@@ -1,6 +1,7 @@
 ---
 title: "Digital Pāli Reader"
 status: featured
+year: 2011
 authors: [yuttadhammo]
 external_url: "https://www.digitalpalireader.online/_dprhtml/index.html"
 course: translating-pali

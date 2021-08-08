@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1CcxHIwK1-lB6nbgloCwMImbflhbBFiIW
 year: 1969
 booktitle: "Education in Ceylon I"
 chapter: 7
-publisher: "Ministry of Education and Cultural Affairs"
+publisher: "the Ministry of Education and Cultural Affairs"
 address: "Colombo"
 course: theravada-roots
 tags:
