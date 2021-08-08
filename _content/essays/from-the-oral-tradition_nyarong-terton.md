@@ -14,6 +14,7 @@ tags:
   - chan-literature
   - monastic
   - meditation
+year: 2013
 ---
 
 > the time for discovering Buddha directly, you must remain alone
