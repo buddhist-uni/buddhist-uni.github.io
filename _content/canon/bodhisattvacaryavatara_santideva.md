@@ -7,16 +7,12 @@ status: featured
 tags:
   - buddhism
   - cosmology
-  - karma
   - bodhisattva
   - mahayana
-  - mahayana-roots
-  - tibetan
   - tibetan-roots
   - engaged
   - effort
   - poetry
-  - view
   - thought
 year: 1979
 translator: "Steven Bachelor"
