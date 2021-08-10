@@ -78,9 +78,9 @@ Hopefully this course will help you answer that question.
 
 {% include content_box.html category="canon" slug="an5.172" %}
 
-The core of Buddhist Ethics is summed up well in this pithy sutta.  The five qualities listed here are called "The Five Precepts" and all Buddhists strive to preserve these five qualities.  Technically, observing these five moral precepts assiduously is sufficient to be considered an ethical person.
+The core of Buddhist Ethics is summed up well in this pithy sutta.  The five qualities listed here are called "The Five Precepts" and all Buddhists strive to preserve them.  Technically, observing these five moral precepts assiduously is sufficient to be considered an ethical person.
 
-If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to strictly observe these Five Precepts?
+If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to observe these Five Precepts? What are some issues they don't cover?
 
 #### Chapter 1: *The Shared Foundations of Buddhist Ethics*
 
@@ -91,6 +91,9 @@ The course will follow the sequence of the chapters in Harvey's *Introduction*. 
 
 {% include content_blurb.html category="articles" slug="what-the-buddha-would-not-do_analayo" %}
 - What kinds of things do liberated beings _never_ do? And why not?
+
+{% include content_blurb.html category="essays" slug="smoking_dhammika" %}
+- Bhante Dhammika demonstrates Buddhist ethical thought for us by examining the question of smoking within—and beyond—the framework of the five precepts.
 
 {% include content_blurb.html category="av" slug="early-buddhism_ethics_sujato-and-brahmali" %}
 - A lecture introducing Buddhist Ethics, particularly from the perspective of early Buddhism.
