@@ -86,9 +86,13 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Parallel to Robinson Ch 1: Awakening
 
+{% include content_blurb.html category="essays" slug="buddha-you-never-knew_dhammika" %}
+- The Buddha was a real, historical figure, but many of the stories about his life are myths still expanding today.
+
 {% include content_blurb.html category="booklets" slug="noble-quest_horner" %}
-- The Buddha tells the story of his own quest for Awakening, and encourages us to seek that which is not subject to death.
-- The language of this translation is old, and the myth even older. If it is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
+- What do the ancient texts say about the Buddha?
+- Here, the Buddha tells his own story, and encourages us to also seek the deathless.
+- If the language of this translation is too archaic for you, no worries! It's included here just to give you a taste of the ancient texts. 
 
 <i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 2: Dhamma, Medicine and Sociology
 {:.mb-0}
