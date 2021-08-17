@@ -186,6 +186,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [L] The Last Year
 1. {% include content_blurb.html category="articles" slug="sukaramaddava_ireland" %}
+1. {% include content_blurb.html category="articles" slug="cause-of-the-buddhas-death_mettanando-hinuber" %}
 1. [E] Relics of the Buddha
 1. [R] Bhagava
 

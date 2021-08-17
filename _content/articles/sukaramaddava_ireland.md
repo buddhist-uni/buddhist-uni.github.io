@@ -8,6 +8,8 @@ file_links:
 drive_links:
   - "https://drive.google.com/file/d/14r4pC26Fh7A-u64m34A5yIzyrjbi8s9x/view?usp=drivesdk"
 course: buddha
+tags:
+  - sukaramaddava
 year: 1993
 journal: bsr
 volume: 10
