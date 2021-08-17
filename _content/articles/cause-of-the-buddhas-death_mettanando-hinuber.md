@@ -1,7 +1,7 @@
 ---
 title: "The Cause of the Buddha's Death"
 authors:
-  - "Dhammanando Bhikkhu"
+  - "Mettanando Bhikkhu"
   - hinuber-oskar-v
 external_url: "https://archive.org/download/jpts-xxvi-2000/The%20Cause%20of%20the%20Buddha_s%20Death%20-%20Mettanando%20and%20Hinu%CC%88ber_text.pdf"
 drive_links:

@@ -12,6 +12,7 @@ course: mahayana-roots
 tags:
   - esoteric
   - buddhist-art
+  - deccan
 year: 2000
 journal: "Ars Orientalis"
 volume: 30
