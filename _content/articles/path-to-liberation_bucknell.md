@@ -7,6 +7,7 @@ source_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/downl
 drive_links:
   - "https://drive.google.com/file/d/14nwXs8TvxHNJqOjC03bnWN2t-judVNek/view?usp=drivesdk"
 course: path
+status: featured
 tags:
   - hermeneutics
   - sutta

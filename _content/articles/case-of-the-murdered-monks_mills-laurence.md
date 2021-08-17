@@ -1,7 +1,7 @@
 ---
 title: "The Case of the Murdered Monks"
 authors:
-  - mills-lawrence
+  - mills-laurence
 source_url: "http://www.palitext.com/JPTS_scans/JPTS_1992_XVI.pdf"
 external_url: "https://archive.org/download/jpts-xvi-1992/The%20Case%20of%20the%20Murdered%20Monks%20-%20Laurence%20Mills_text.pdf"
 drive_links:
