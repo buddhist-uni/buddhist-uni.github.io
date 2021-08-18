@@ -16,7 +16,6 @@ drive_links:
 course: buddha
 tags:
   - iddhi
-  - indian
 ---
 
 The Buddha was not omniscient.
