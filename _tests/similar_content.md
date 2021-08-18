@@ -42,6 +42,7 @@ test_cases:
     - [kids-these-days_harris-malcolm, debt_graeber-david]
     - [mn044, bhikkhuni-dhammadinna_analayo]
     - [teardrops-of-time_fuhrmann-arnika, i-lost-you_kalayanapong-angkarn]
+    - [shared-characters-in-jain-buddhist-and-hindu-narrative_appleton, story-of-the-horse-king_appleton]
 ---
 
 A series of integration tests for the quality of the content recommendations.
