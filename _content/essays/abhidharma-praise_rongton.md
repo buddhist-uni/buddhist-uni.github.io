@@ -6,9 +6,9 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/rongton/abhidharma-lineage-praise"
 drive_links:
   - "https://drive.google.com/file/d/1Od9WKHahcSeur7qzQ3GcRPmA4qU22Q1_/view?usp=drivesdk"
-course: indian
+course: abhidhamma
 tags:
-  - tibetan
+  - tibetan-roots
 year: 2020
 ---
 
