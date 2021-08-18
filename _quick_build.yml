@@ -203,7 +203,6 @@ exclude:
     - _content/av/buddhist-tourism-in-asia.md
     - _content/av/call-it-what-you-want_foster-the-people.md
     - _content/av/change_delong-robert.md
-    - _content/av/chemical-history-of-a-candle.md
     - _content/av/children-nuns-in-myanmar.md
     - _content/av/from-the-mountains-to-the-cities_nathan-mark.md
     - _content/av/gain-and-loss.md
@@ -394,5 +393,15 @@ exclude:
     - _content/essays/ashokas-engineers_dhammika.md
     - _content/excerpts/samadhi_analayo.md
     - _content/excerpts/sati_analayo.md
-
+    - _content/articles/buddhavamsa-of-the-abhayagiri_skilling.md
+    - _content/articles/dharmacakramudra-at-ajanta_huntington-chandrasekhar.md
+    - _content/articles/garavasutta-and-mahayanist-developments_lamotte-etienne.md
+    - _content/articles/nibbanasutta_hallisey-charles.md
+    - _content/articles/saddhammopayana_hazlewood-a.md
+    - _content/articles/studies-in-pali-grammarians_pind-ole-holten.md
+    - _content/articles/third-precept_collins-steven.md
+    - _content/articles/tundilovada_hallisey-charles.md
+    - _content/essays/buddhas-toothbrush_dhammika.md
+    - _content/excerpts/literary-activity-in-pali_jayawickrama.md
+    - _content/monographs/fa-hsien.md
 

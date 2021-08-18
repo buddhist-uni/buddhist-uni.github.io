@@ -739,6 +739,10 @@ div.featured_content_list {
         @include relative-font-size(1.11875);
         color: $grey-color-dark;
     }
+
+    .content_links {
+        margin-top: 8px;
+    }
 }
 
 ol {
