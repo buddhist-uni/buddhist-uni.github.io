@@ -9,9 +9,9 @@ journal: jiabs
 volume: 41
 pages: "169--208"
 status: featured
-course: indian
+course: mahayana-roots
 tags:
-  - mahayana-roots
+  - indian
   - monastic
   - selling
   - becon

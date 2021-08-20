@@ -12,7 +12,6 @@ course: indian
 tags:
   - sects
   - setting
-  - form
 status: featured
 ---
 

@@ -96,9 +96,6 @@ the history of the texts you're studying:
 {% include content_blurb.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" blurb="
 - We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts." %}
 
-{% include content_blurb.html category="booklets" slug="authenticity_sujato-brahmali" blurb="
-- And I also invite you to read their excellent and clear book summarizing the evidence we have for the historical authenticity of these texts." %}
-
 {% include content_blurb.html category="articles" slug="early-buddhism-with-kalupahana_payne" blurb="
 - On why it's important to study the early texts." %}
 
