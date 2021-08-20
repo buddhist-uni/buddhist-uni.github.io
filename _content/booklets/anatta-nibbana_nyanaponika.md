@@ -12,7 +12,6 @@ tags:
   - visuddhimagga
   - theravada
   - middle-way
-  - indian
   - dialogue
   - anatta
   - emptiness
