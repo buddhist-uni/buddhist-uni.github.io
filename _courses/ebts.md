@@ -63,25 +63,6 @@ The main textbook for this course is the (commercial) work **In The Buddha's Wor
 
 This book gives a systematic introduction to the Buddha's teachings, and will be the primary text for this class.
 
-### Lectures
-
-{% include content_blurb.html category="av" slug="in-the-buddhas-words_bodhi" %}
-- Bhikkhu Bodhi himself will be your lecturer for this class.
-
-Read a chapter of *In the Buddha's Words* (hereafter abbreviated as ItBW), and then
-listen to the lecture associated with that chapter before moving on to the next.
-Starting with chapter six, however, the content starts to get a bit more challenging
-and Bhikkhu Bodhi's lectures start to slow down. You may want to adjust your reading
-pace accordingly at that point.
-
-### Office Hours
-
-If any questions come up for you that aren't addressed in the lectures, I recommend 
-[searching the SuttaCentral Discourse Forum](https://discourse.suttacentral.net/search) 
-for something relevant to your question. If you can't find your question answered in 
-the archives, feel free to post it! There are many knowledgeable scholars and students 
-of Early Buddhism on the forum (including yours truly) and we would be happy to help!
-
 ### About the Texts
 
 As you make your way through ItBW, I encourage you to weave in the following works about 
@@ -102,12 +83,27 @@ the history of the texts you're studying:
 {% include content_blurb.html category="articles" slug="in-search-of-the-real-buddha_harvey" blurb="
 - About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions." %}
 
-{% include content_blurb.html category="papers" slug="birch-bark-to-digital-data_introduction_harrison-and-hartmann" blurb="
-- Gives an overview of the archeology and methodology employed by modern scholars.
-- It's okay to skim or even skip this one. Mostly it's presented here to give a “behind the scenes” peek at the scholarship that goes into ancient Buddhist texts." %}
-
 {% include content_blurb.html category="articles" slug="oral-transmission_wynne" %}
 - Argues against an improvisational oral transmission and shows why we should think of the texts as having been passed down to us (relatively) verbatim
+
+### Lectures
+
+{% include content_blurb.html category="av" slug="in-the-buddhas-words_bodhi" %}
+- Bhikkhu Bodhi himself will be your lecturer for this class.
+
+Read a chapter of *In the Buddha's Words* (hereafter abbreviated as ItBW), and then
+listen to the lecture associated with that chapter before moving on to the next.
+Starting with chapter six, however, the content starts to get a bit more challenging
+and Bhikkhu Bodhi's lectures start to slow down. You may want to adjust your reading
+pace accordingly at that point.
+
+### Office Hours
+
+If any questions come up for you that aren't addressed in the lectures, I recommend 
+[searching the SuttaCentral Discourse Forum](https://discourse.suttacentral.net/search) 
+for something relevant to your question. If you can't find your question answered in 
+the archives, feel free to post it! There are many knowledgeable scholars and students 
+of Early Buddhism on the forum (including yours truly) and we would be happy to help!
 
 ### One Additional Sutra
 
