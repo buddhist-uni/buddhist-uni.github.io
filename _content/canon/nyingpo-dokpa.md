@@ -1,5 +1,5 @@
 ---
-title: "The Sūtra of the Heart of Transcendent Wisdom: A Tibetan Heart Sūtra Liturgy"
+title: "The Sūtra of the Heart of Transcendent Wisdom: A Tibetan Heart Sūtra Liturgy"
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/heart-sutra-with-extras"
 year: 2010
 # ^ Total guess. TODO: find the real year and translator for this
