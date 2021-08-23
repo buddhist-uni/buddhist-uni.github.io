@@ -15,6 +15,7 @@ tags:
   - academia
   - west
   - power
+  - charisma
 ---
 
 As Buddhism came (comes) West, its followers have often been accused of following a "fad" or, worse, a cult. In this fascinating chapter, Ken Wilber provides a theoretical framework for distinguishing (or at least describing) the difference between "good" and "bad" forms of religious authority. 

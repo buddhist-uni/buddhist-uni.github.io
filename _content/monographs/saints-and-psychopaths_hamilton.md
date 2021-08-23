@@ -14,6 +14,7 @@ tags:
   - vinaya-studies
   - ethics
   - power
+  - charisma
 external_url: "https://eudoxos.github.io/saints/html/index.html"
 source_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/saints-and-psychopaths.pdf"
 ---

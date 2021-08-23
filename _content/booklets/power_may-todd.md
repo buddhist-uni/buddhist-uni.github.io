@@ -12,6 +12,7 @@ tags:
   - pedagogy
   - activism
   - society
+  - charisma
 year: 2012
 month: feb
 publisher: ias

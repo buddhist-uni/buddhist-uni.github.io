@@ -12,6 +12,7 @@ tags:
   - setting
   - path
   - power
+  - charisma
 year: 1989
 publisher: bps
 ---
