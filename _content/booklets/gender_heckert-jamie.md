@@ -11,6 +11,7 @@ tags:
   - gender
   - activism
   - people
+  - charisma
   - society
 year: 2012
 month: feb

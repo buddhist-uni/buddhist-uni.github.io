@@ -9,6 +9,7 @@ tags:
   - an
   - ethics
   - characters
+  - charisma
 year: 2018
 ---
 

@@ -11,6 +11,7 @@ tags:
   - race
   - engaged
   - power
+  - charisma
   - american
   - thought
 ---

@@ -126,6 +126,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [Nidanakatha] The Distant Epoch
 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
+1. {% include content_blurb.html category="essays" slug="food-of-awakening_dhammika" %}
 1. [Life] After the Enlightenment
 1. {% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}
 1. {% include content_blurb.html category="articles" slug="tathagata_bodhi" %}
@@ -140,13 +141,13 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [L] The Two Chief Disciples
 1. [L] Anathapindika: Feeder of the Poor
 
-1. [N] The Last Epoch
+1. [Nidanakatha] The Last Epoch
 1. [Refuge] sammā-sambuddho
 1. {% include inline_content.html category="canon" slug="dn28" %}
 
 ### Part 2: Establishing the Religion
 
-1. [E] Review: The Story of the Buddha
+1. [Entries] Review: The Story of the Buddha
 1. [[Teacher of the Devas](#teacher-of-devas_jootla)] Introduction: The Devas
 
 1. [Life] Formation of the Order of Nuns
@@ -161,7 +162,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [L] End of the First Twenty Years
 1. {% include content_blurb.html category="canon" slug="mn35" %}
-1. [T] Teaching the Devas
+1. [Teacher] Teaching the Devas
 1. [R] Locavidū
 
 1. [L] The Middle Period
