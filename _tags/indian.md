@@ -1,5 +1,5 @@
 ---
-title: "Indian Buddhism"
+title: "Early Indian Buddhism"
 parents: [form]
 sortkey: 5
 illustration: https://illeakyw.sirv.com/Images/tags/Ashokan_Pillar_Vaishali.jpg
