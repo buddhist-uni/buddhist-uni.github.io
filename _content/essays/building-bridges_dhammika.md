@@ -9,9 +9,10 @@ external_url: "http://budblooms.org/2020/04/04/building-bridges-for-the-buddha/"
 course: engaged
 status: featured
 tags:
-  - things
   - architecture
+  - infrastructure
   - bridges
+  - power
 ---
 
 A tour of pre-modern, Buddhist bridges and a comment on the deeper roots of engaged Buddhism.

@@ -7,7 +7,7 @@ course: view
 tags:
   - poetry
   - art
-  - things
+  - inner
   - aesthetics
   - samadhi
 status: featured

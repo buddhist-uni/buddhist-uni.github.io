@@ -10,7 +10,6 @@ tags:
   - modernity
   - biology
   - places
-  - things
   - toilets
 ---
 

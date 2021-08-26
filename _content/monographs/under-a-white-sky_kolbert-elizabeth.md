@@ -12,7 +12,6 @@ tags:
   - geoengineering
   - climate-change
   - anthropocene
-  - things
   - time
   - economics
   - power

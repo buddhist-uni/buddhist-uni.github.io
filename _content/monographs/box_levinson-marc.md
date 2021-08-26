@@ -3,10 +3,11 @@ title: "The Box: How the Shipping Container Made the World Smaller and the World
 authors:
   - "Marc Levinson"
 olid: OL7759049M
-course: economics
+course: wider
 tags:
-  - things
   - shipping
+  - manufacturing
+  - economics
   - unions
   - standardization
   - globalization

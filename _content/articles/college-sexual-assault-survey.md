@@ -5,7 +5,6 @@ external_url: "https://edition.cnn.com/2015/09/22/health/campus-sexual-assault-n
 course: world
 tags:
   - gender
-  - people
   - sex
   - consent
   - ethics

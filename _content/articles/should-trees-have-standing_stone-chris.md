@@ -7,14 +7,13 @@ volume: 45
 pages: "450--501"
 external_url: "https://iseethics.files.wordpress.com/2013/02/stone-christopher-d-should-trees-have-standing.pdf"
 drive_links: ["https://drive.google.com/file/d/1Gdegl9IsjA9ufkMOE4LK3GzsEG0jhQmJ/view?usp=drivesdk"]
-course: things
+course: society
 status: featured
 tags:
-  - society
   - rights
   - law
   - economics
-  - biology
+  - inner
   - nature
   - climate-change
   - activism

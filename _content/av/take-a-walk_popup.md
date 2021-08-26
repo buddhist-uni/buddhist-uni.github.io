@@ -5,7 +5,7 @@ year: 2021
 month: apr
 course: walking
 tags:
-  - people
+  - wider
 series: 99pi
 number: 419
 external_url: "https://99percentinvisible.org/episode/take-a-walk/"

@@ -6,7 +6,7 @@ olid: OL701348M
 course: california
 tags:
   - oceans
-  - things
+  - wider
   - places
   - progress
   - greed

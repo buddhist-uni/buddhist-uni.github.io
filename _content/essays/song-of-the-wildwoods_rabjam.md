@@ -6,6 +6,7 @@ translator: "Timothy Hinkle"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/enchanting-wildwoods"
 tags:
   - nature
+  - wider
   - monastic
   - tibetan
   - problems

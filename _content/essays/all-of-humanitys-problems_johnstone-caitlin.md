@@ -6,11 +6,8 @@ external_url: "https://caitlinjohnstone.com/2021/03/05/all-of-humanitys-problems
 drive_links:
   - "https://drive.google.com/file/d/1-eJg4qLBf3zGtDiomhSGDAeFvWhGRVdv/view?usp=drivesdk"
 tags:
-  - society
   - power
-  - communication
   - world
-  - time
 year: 2021
 ---
 

@@ -12,7 +12,7 @@ drive_links:
 course: philosophy-of-science
 tags:
   - science
-  - communication
+  - inner
 ---
 
 A representative selection of quotes from John Dewey's classic, 1925 monograph on the nature of science and epistemology.

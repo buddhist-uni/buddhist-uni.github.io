@@ -8,7 +8,7 @@ status: featured
 tags:
   - poetry
   - world
-  - people
+  - inner
   - function
   - time
   - livelihood

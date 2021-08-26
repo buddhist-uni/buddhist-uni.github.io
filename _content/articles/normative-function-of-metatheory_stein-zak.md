@@ -13,7 +13,7 @@ tags:
   - integral-theory
   - methatheory
   - philosophy-of-science
-  - communication
+  - inner
   - ideology
   - engaged
   - thought

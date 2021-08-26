@@ -9,8 +9,6 @@ course: world
 tags:
   - time
   - math
-  - communication
-  - society
 ---
 
 > The world is not a logic puzzle.

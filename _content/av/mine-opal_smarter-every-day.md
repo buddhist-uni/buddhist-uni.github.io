@@ -3,7 +3,7 @@ title: "How to Mine Opal Gems in the Outback"
 authors:
   - "Smarter Every Day"
 external_url: "https://youtu.be/zHecdSDz4uU"
-course: things
+course: wider
 tags:
   - geology
   - australia

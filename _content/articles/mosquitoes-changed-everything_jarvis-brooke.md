@@ -8,7 +8,7 @@ drive_links: ["https://drive.google.com/file/d/1Bob7LBb4CSnQ0CW2Art_-rvKrcRjZXR_
 year: 2019
 month: jul
 journal: "The New Yorker"
-course: things
+course: wider
 tags:
   - world
   - places

@@ -4,9 +4,8 @@ authors: ["Luisa Beck", "Roman Mars"]
 year: 2014
 month: sep
 external_url: "https://99percentinvisible.org/episode/the-straight-line-is-a-godless-line/"
-course: people
+course: inner
 tags:
-  - society
   - art-theory
   - architecture
 series: 99pi

@@ -10,7 +10,7 @@ file_links:
   - "exclusive_01/Neomaterialism%20(2019-09-30)%20-%20Timothy%20LeCain.m4a"
 drive_links:
   - "https://drive.google.com/file/d/1vLaFst5ZUn2f6agbSJp05hX796Alm7PX/view?usp=drivesdk"
-course: things
+course: wider
 tags:
   - world
   - materialism

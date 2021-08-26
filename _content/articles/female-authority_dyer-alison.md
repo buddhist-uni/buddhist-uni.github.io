@@ -5,11 +5,11 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?id=3285743&url=article&download=yes"
 drive_links:
   - "https://drive.google.com/file/d/1NP5wMBJyUJMzR_vKjTrGsQqMtquliRGR/view?usp=drivesdk"
-course: power
+course: society
 tags:
   - nyingma
   - tibetan
-  - communication
+  - power
   - charisma
   - nuns
 year: 2018

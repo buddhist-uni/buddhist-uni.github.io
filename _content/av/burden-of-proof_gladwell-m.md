@@ -4,9 +4,10 @@ authors: ["Malcolm Gladwell"]
 year: 2018
 month: may
 external_url: "http://revisionisthistory.com/episodes/22-burden-of-proof"
-course: science
+course: inner
 tags:
   - speech
+  - science
   - society
   - sports
 series: revisionist-history

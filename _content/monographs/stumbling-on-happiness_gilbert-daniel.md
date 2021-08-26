@@ -11,7 +11,7 @@ tags:
   - neuroscience
   - becon
   - economics
-  - people
+  - inner
   - time
   - psychology
   - future

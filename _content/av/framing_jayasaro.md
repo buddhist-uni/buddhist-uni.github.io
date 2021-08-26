@@ -9,6 +9,7 @@ course: thought
 tags:
   - view
   - communication
+  - inner
 year: 2007
 month: nov
 ---

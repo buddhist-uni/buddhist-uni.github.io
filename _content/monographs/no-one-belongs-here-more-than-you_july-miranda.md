@@ -5,7 +5,7 @@ authors:
 publisher: "Simon & Schuster"
 olid: OL7949156M
 year: 2007
-course: people
+course: inner
 tags:
   - religion
   - craft

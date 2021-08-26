@@ -6,7 +6,7 @@ year: 1946
 publisher: Beacon Press
 olid: OL7899399M
 tags:
-  - people
+  - inner
   - ideology
 ---
 

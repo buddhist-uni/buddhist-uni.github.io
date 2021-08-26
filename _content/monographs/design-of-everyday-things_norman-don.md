@@ -2,12 +2,12 @@
 title: "The Design of Everyday Things"
 authors:
   - "Don Norman"
-course: things
+course: society
 olid: OL10238426M
 status: featured
 tags:
   - design
-  - communication
+  - things
 year: 1988
 publisher: "Basic Books"
 ---
