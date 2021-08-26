@@ -5,7 +5,7 @@ authors:
 year: 2020
 olid: OL28235045M
 publisher: "Graywolf"
-course: people
+course: society
 oclc: 1193996162
 tags:
   - race

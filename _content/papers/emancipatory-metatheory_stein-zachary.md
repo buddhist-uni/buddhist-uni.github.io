@@ -12,7 +12,6 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1VeSYPATQTeJGyDHHHa6r43xPeUAZIAY7/view?usp=drivesdk"]
 course: engaged
 tags:
-  - communication
   - society
   - pedagogy
   - thought

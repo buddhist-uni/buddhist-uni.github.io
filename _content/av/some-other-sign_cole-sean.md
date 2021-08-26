@@ -12,7 +12,7 @@ tags:
   - cities
   - art-theory
   - poetry
-  - communication
+  - inner
   - speech
 status: featured
 ---

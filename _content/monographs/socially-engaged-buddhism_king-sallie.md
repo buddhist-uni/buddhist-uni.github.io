@@ -8,7 +8,6 @@ olid: OL22684571M
 course: engaged
 tags:
   - modernity
-  - society
   - becon
   - compassion
 ---

@@ -6,7 +6,7 @@ year: 2017
 month: nov
 olid: OL29762823M
 publisher: "Little, Brown"
-course: society
+course: education
 tags:
   - economics
   - labor
@@ -17,7 +17,6 @@ tags:
   - capitalism
   - millennials
   - america
-  - education
   - hr
   - time
   - power

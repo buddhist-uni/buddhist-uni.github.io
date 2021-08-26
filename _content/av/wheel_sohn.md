@@ -13,7 +13,7 @@ tags:
   - music
   - nekkhamma
   - becon
-  - society
+  - time
   - world
   - cosmology
 ---

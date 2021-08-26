@@ -12,7 +12,6 @@ tags:
   - places
   - india
   - mumbai
-  - people
   - economics
   - becon
   - class

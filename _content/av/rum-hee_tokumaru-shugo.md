@@ -9,7 +9,7 @@ tags:
   - time
   - music
   - adolescence
-  - people
+  - inner
   - disasters
   - death
   - grief

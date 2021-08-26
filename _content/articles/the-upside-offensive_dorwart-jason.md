@@ -6,8 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1THwiHSBBTCY4FHV-t7LrYPTOYEdGOM_7
 tags: 
   - disability
   - becon
-  - society
-course: people
+course: society
 year: 2019
 journal: "The Denver Post"
 ---

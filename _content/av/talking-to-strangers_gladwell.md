@@ -6,7 +6,7 @@ course: policing
 tags:
   - law
   - justice
-  - people
+  - society
   - america
   - speech
 publisher: Hachette Audio

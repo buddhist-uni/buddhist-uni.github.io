@@ -10,7 +10,7 @@ course: society
 tags:
   - economics
   - power
-  - things
+  - inner
   - law
 year: 2021
 month: jun

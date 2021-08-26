@@ -3,13 +3,13 @@ title: "Citizen: An American Lyric"
 authors:
   - rankine-claudia
 olid: OL25632207M
-course: caste
+course: inner
 tags:
   - america
   - poetry
   - violence
   - race
-  - people
+  - caste
   - power
   - society
 year: 2014

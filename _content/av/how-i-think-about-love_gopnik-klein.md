@@ -6,11 +6,11 @@ authors:
   - "Ezra Klein"
 year: 2019
 month: aug
-course: people
+course: society
 tags:
   - childhood
   - pedagogy
-  - society
+  - inner
   - neuroscience
   - age
 ---

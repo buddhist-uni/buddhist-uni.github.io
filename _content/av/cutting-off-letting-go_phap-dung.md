@@ -7,7 +7,7 @@ year: 2018
 status: featured
 course: power
 tags:
-  - communication
+  - inner
   - lay
   - mindfulness
   - daily-life

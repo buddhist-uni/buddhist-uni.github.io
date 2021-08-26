@@ -6,10 +6,9 @@ year: 1994
 olid: OL1084753M
 publisher: Counterpoint
 excerpt_url: "https://www.menzelphoto.com/portfolio/G0000GPaxwfSZQ0Q"
-course: things
+course: wider
 tags:
   - world
-  - society
   - economics
   - places
 status: featured

@@ -7,7 +7,6 @@ publisher: "Cornell"
 course: engaged
 tags:
   - power
-  - things
   - interfaith
   - pilgrimage
   - tibetan

@@ -13,7 +13,7 @@ tags:
   - secular
   - science
   - philosophy-of-science
-  - society
+  - inner
   - ideology
 ---
 

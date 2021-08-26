@@ -8,7 +8,7 @@ publisher: Norton
 status: featured
 course: places
 tags:
-  - society
+  - wider
   - power
   - modernity
   - europe

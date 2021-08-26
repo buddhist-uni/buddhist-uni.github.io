@@ -10,7 +10,7 @@ course: ethics
 tags:
   - gender
   - activism
-  - people
+  - inner
   - charisma
   - society
 year: 2012

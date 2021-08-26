@@ -7,7 +7,6 @@ course: books
 tags:
   - jazz
   - musicology
-  - communication
   - copyright
 series: 99pi
 number: 438

@@ -12,7 +12,7 @@ publisher: vox
 tags:
   - america
   - economics
-  - things
+  - wider
   - education
   - post-modernism
 ---

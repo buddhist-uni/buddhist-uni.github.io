@@ -3,7 +3,7 @@ title: "The Anthropocene Reviewed (Podcast)"
 authors:
   - "John Green"
 external_url: "https://www.wnycstudios.org/podcasts/anthropocene-reviewed"
-course: things
+course: wider
 tags:
   - america
 year: 2018

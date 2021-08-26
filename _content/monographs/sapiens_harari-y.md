@@ -10,10 +10,9 @@ tags:
   - time
   - biology
   - evolution
-  - society
+  - wider
   - power
   - ideology
-  - people
 year: 2011
 publisher: "Kinneret Zmora-Bitan Dvir"
 ---

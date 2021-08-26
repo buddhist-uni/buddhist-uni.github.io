@@ -8,7 +8,7 @@ tags:
   - ambulit
   - west
   - translation
-course: communication
+course: inner
 year: 2020
 journal: jgb
 volume: 21

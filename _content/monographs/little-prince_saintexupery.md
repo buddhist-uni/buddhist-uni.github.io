@@ -17,7 +17,7 @@ tags:
   - poetry
   - myth
   - ideology
-  - people
+  - inner
   - france
 ---
 

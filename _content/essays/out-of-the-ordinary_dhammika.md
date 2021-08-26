@@ -8,7 +8,6 @@ drive_links:
 course: ethics
 tags:
   - vinaya-controversies
-  - people
   - gender
   - british
 year: 2021

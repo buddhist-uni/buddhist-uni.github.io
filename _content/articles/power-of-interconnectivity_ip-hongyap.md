@@ -16,7 +16,6 @@ tags:
   - huayan
   - time
   - dialogue
-  - communication
   - compassion
   - power
   - free-will

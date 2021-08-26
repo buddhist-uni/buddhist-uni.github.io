@@ -14,7 +14,7 @@ tags:
   - problems
   - emotions
   - power
-  - people
+  - inner
   - science
 ---
 
