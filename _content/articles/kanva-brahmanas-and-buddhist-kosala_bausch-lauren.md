@@ -12,5 +12,5 @@ volume: 41
 pages: "27--53"
 ---
 
-> Gotama Buddha, at least as he is depicted in the Suttanipāta, was influenced by and is to be understood in light of Kosalan Vedic tradition.
+> Gotama Buddha, at least as he is depicted in the Suttanipāta, was influenced by and is to be understood in light of Kosalan Vedic tradition.
 
