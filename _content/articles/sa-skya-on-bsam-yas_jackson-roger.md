@@ -1,6 +1,6 @@
 ---
 title: "Sa skya pandita's Account of the bSam yas Debate: History as Polemic"
-authors: ["Roger Jackson"]
+authors: [jackson-roger]
 journal: jiabs
 year: 1982
 volume: 5
