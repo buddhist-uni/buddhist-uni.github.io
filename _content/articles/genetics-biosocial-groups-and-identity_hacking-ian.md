@@ -8,7 +8,7 @@ month: oct
 pages: "81--95"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1FI52NQ6ULDkgVJZiLJTzUSLA4E_GoOzI/view?usp=drivesdk"]
-course: inner
+course: world
 tags:
   - biology
   - genetics
@@ -16,7 +16,6 @@ tags:
   - medicine
   - time
   - society
-  - world
 status: featured
 publisher: mit
 ---
