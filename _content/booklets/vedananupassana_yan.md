@@ -3,6 +3,7 @@ title: "The Contemplation of Feelings"
 authors: [yan]
 external_url: "https://wbu.world/wp-content/uploads/2019/09/The-Contemplation-of-Feelings.pdf"
 year: 1980
+address: Bangkok
 publisher: "Mahāmakut Rajāvidyālaya Press"
 olid: OL32040804M
 drive_links:
@@ -10,7 +11,7 @@ drive_links:
 course: monastic
 tags:
   - vipassana
-  - feelings
+  - vedana
   - pedagogy
   - philosophy
 ---

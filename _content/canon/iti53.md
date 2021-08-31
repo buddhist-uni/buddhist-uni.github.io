@@ -10,7 +10,7 @@ tags:
   - iti
   - nibbana
   - canonical-poetry
-  - feelings
+  - vedana
 year: 1997
 ---
 

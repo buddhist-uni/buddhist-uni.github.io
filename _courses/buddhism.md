@@ -42,10 +42,12 @@ This is a self-paced course, which is estimated to take a few months to complete
 > “There are two conditions for the arising of right view. What two? The words of another and proper attention.” ~ [AN 2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5){:target="_blank" ga-event-value="0.25"}
 {: .epigraph }
 
-{% include content_blurb.html category="booklets" slug="buddha-and-his-dhamma_bodhi" blurb="
-- This work by Bhikkhu Bodhi gives a brief overview of Buddhism and summarizes what we'll cover in this course.
+
+{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+- The emotional heart of this course, and one of my favorite books.
+- Before we dive into the nuts and bolts of "Buddhism" proper, let us first explore the emotional experience of the Buddhist way, catching a glimpse of its beauty through the eyes of one of Buddhism's most celebrated teachers.
 - Start here!
-" %}
+
 ---
 
 Next, we listen to a couple talks by two of my own dear teachers, giving us an introduction to Buddhism.
@@ -86,9 +88,8 @@ The textbook remains, however, optional, as the free materials below provide an 
 
 The next part of the class tackles the Buddha's teachings. As this section is the primary focus of the course, it will be the longest.
 
-{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-
-The emotional heart of this course. Before we dive into the nuts and bolts of “Buddhist Philosophy” proper, we first explore the emotional experience of the Buddhist path, catching a glimpse of its beauty through the eyes and words of these celebrated Buddhist teachers.
+{% include content_blurb.html category="booklets" slug="buddha-and-his-dhamma_bodhi" %}
+- This work by Bhikkhu Bodhi gives a brief overview and introduction to Buddhism, summarizing what we learned about the Buddha.
 
 {% include content_box.html category="av" slug="how-to-be-positive_brahm" %}
 
