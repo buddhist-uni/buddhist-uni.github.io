@@ -13,6 +13,12 @@ image_center_x: 10%
 image_center_y: 51%
 big_image: https://upload.wikimedia.org/wikipedia/commons/e/ef/Mihinthalaya_Buddha_Statue.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Mihinthalaya_Buddha_Statue.jpg">Hasitha Senadheera</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
+epigraph: |
+  > 諸佛留藏經，  
+  > All the Buddhas have left us their scriptures  
+  > 只為人難化。  
+  > Only because humans are so hard to change.  
+  ~ [Shídé (拾得)]({% link _content/monographs/hanshan_rouzer-paul.md %}), ~8th c. Tang
 next_courses:
   - ebts
   - lay

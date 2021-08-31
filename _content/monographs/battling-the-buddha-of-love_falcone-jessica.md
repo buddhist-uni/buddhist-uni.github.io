@@ -7,6 +7,8 @@ publisher: "Cornell"
 course: engaged
 tags:
   - power
+  - globalization
+  - development
   - interfaith
   - pilgrimage
   - tibetan
