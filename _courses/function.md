@@ -18,7 +18,7 @@ epigraph: |
   > All the Buddhas have left us their scriptures  
   > 只為人難化。  
   > Only because humans are so hard to change.  
-  ~ [Shídé (拾得)]({% link _content/monographs/hanshan_rouzer-paul.md %}), ~8th c. Tang
+  ~ [Shídé (拾得)](/content/monographs/hanshan_rouzer-paul), ~8th c. Tang
 next_courses:
   - ebts
   - lay
