@@ -7,7 +7,8 @@ course: indian
 tags:
   - dialogue
   - philosophy
-  - form
+  - epistemology
+  - emptiness
 olid: OL1556684M
 ---
 

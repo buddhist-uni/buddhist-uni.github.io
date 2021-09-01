@@ -11,7 +11,7 @@ course: pali-canon
 tags:
   - theravada
   - burmese
-  - ebts
+  - manuscripts
   - historiography
 ---
 

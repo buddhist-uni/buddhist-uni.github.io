@@ -7,16 +7,16 @@ layout: default
     <h1 class="post-title">{% unless page.banner_info %}<i class="{{ page.icon }}"></i> {% endunless %}{{ page.title | escape }}</h1>
     {% if page.subtitle %}<h2 class="post-subtitle">{{ page.subtitle }}</h2>{% endif %}
   </header>
+  {% if page.epigraph %}
+  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
+  {% endif %}
+  
  {% capture toccontent %}
     {{ content }}  
     {% include course_footer.html course=page %}
   {% endcapture %}
   <h1>Table of Contents</h1> 
   {% include toc.html id="toc" html=toccontent h_min=2 h_max=3 %}
-
-  {% if page.epigraph %}
-  <div class="epigraph">{{ page.epigraph | markdownify }}</div>
-  {% endif %}
  
   <div class="post-content">
     {{ toccontent }}

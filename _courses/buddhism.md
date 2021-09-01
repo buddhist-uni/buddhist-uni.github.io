@@ -43,20 +43,19 @@ This is a self-paced course, which is estimated to take a few months to complete
 {: .epigraph }
 
 
-{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
-- The emotional heart of this course, and one of my favorite books.
-- Before we dive into the nuts and bolts of "Buddhism" proper, let us first explore the emotional experience of the Buddhist way, catching a glimpse of its beauty through the eyes of one of Buddhism's most celebrated teachers.
+{% include content_blurb.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+- Before we dive into the nuts and bolts of "Buddhism" proper, let us first explore the emotional experience of the Buddhist way, catching a glimpse of its beauty through the eyes of one of Buddhism's most celebrated teachers—and one of my favorite books.
 - Start here!
 
 ---
 
-Next, we listen to a couple talks by two of my own dear teachers, giving us an introduction to Buddhism.
+Then, listen to these talks by two of my own dear teachers, giving their own introduction to Buddhism.
 {: .mt-3 }
 
 {% include content_blurb.html category="av" slug="dhamma-advice_suchart" %}
 {% include content_blurb.html category="av" slug="buddhism-intro_yuttadhammo" %}
 
-What do you notice about these talks? What surprises you? What's interesting? Jot down whatever observations and questions you have after listening, and as we go through the course we'll refer back to these notes. 
+What do you notice about these three introductions? What surprised you? What was interesting? Jot down whatever observations and questions you have, and as we go through the course we'll refer back to these notes. 
 
 ### Textbook
 For those looking for a thorough, academic introduction to Buddhism, I recommend:
