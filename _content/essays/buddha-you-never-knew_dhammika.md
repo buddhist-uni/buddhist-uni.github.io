@@ -9,7 +9,7 @@ course: form
 tags:
   - ebts
   - buddha
-year: 2020
+year: 2015
 ---
 
 The earliest Buddhist texts don't actually say much about the Buddha, and don't include most of the popular legends about his life.

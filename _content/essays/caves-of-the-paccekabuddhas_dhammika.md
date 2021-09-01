@@ -2,7 +2,7 @@
 title: "The Lost Caves of the Pacceka Buddhas"
 authors: [dhammika]
 external_url: "http://budblooms.org/2020/05/10/the-lost-caves-of-the-pacceka/"
-year: 2020
+year: 2008
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1aFkupUVHzjk-jMcuQ4DF2YlrkUz5bjO6/view?usp=drivesdk"]
 course: pilgrimage

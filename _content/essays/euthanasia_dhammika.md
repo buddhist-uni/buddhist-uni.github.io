@@ -2,7 +2,7 @@
 title: "Buddhism and Euthanasia"
 authors: [dhammika]
 external_url: "http://budblooms.org/2020/04/04/buddhism-and-euthanasia/"
-year: 2020
+year: 2009
 tags:
   - ethics
   - dialogue

@@ -8,7 +8,9 @@ drive_links:
 tags:
   - setting
   - medicine
-year: 2020
+year: 2015
+month: oct
+source_url: "https://sdhammika.blogspot.com/2015/10/the-dhamma-of-dental-hygiene.html"
 ---
 
 The Buddha encouraged his disciples to regularly clean their teeth.
