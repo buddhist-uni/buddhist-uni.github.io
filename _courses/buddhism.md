@@ -49,7 +49,7 @@ This is a self-paced course, which is estimated to take a few months to complete
 
 ---
 
-Then, listen to these talks by two of my own dear teachers, giving their own introduction to Buddhism.
+Then, listen to these talks by two of my own dear teachers, giving their introduction to Buddhism.
 {: .mt-3 }
 
 {% include content_blurb.html category="av" slug="dhamma-advice_suchart" %}

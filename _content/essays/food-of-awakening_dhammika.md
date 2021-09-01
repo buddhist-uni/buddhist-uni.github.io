@@ -2,7 +2,9 @@
 title: "The Food of Awakening"
 authors: [dhammika]
 external_url: "http://budblooms.org/2020/04/03/the-food-of-awakening/"
-year: 2020
+source_url: "https://sdhammika.blogspot.com/2008/05/food-of-enlightenment.html"
+year: 2008
+month: may
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1o2wjaIdiLfoZhJTkBQSseY7bIDL8aK77/view?usp=drivesdk"]
 course: buddha
