@@ -145,11 +145,15 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {% include content_blurb.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
 - In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expedience. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated ad-infinitum in texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which has persisted to today.
 
+{% include content_blurb.html category="av" slug="abduction-of-queen-kakati_patrick-kit" %}
+- But, as Buddhism became more popular and spread around and out of India, it also picked up an artistic and mythological richness that textured and enlivened the tradition. Indeed, Buddhism’s ability to embrace and contextualize local mythology has long been a key to its ability to spread peacefully.
+- The story behind [this ancient, Buddhist statue](https://en.wikipedia.org/wiki/File:Gandhara,_garuda_adduce_la_regina_kakati,_periodo_kushan_200-400.JPG){:target="_blank"}.
+
 {% include content_blurb.html category="articles" slug="narratives-of-buddhist-relics-and-images_berkwitz-s" %}
-- As the memory of the Buddha faded and Buddhism spread around Asia, people longed for a connection back to the historical Buddha of India. One common expression of this was the creation and authentication of local "souvenirs" of the Buddha, which play a prominent role in popular Buddhism to this day.
+- Such foreign converts often yearned for a solid connection back to the Buddha. One common expression of this was the creation and authentication of local "souvenirs" which also play a prominent role in popular Buddhism to this day.
 
 {% include content_blurb.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
-- In addition to new relics and stories explaining them, many new teachings were also introduced. Today, as all the remaining traditions have their fair share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning about where we place our faith.
+- In addition to new relics and stories explaining them, many new teachings were also introduced. Today, as all the remaining traditions have picked up their fair share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning about where we place our faith.
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 6: Socialization for Death
 {:.mb-0}
