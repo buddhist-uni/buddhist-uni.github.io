@@ -320,6 +320,9 @@ Speaking of uncomfortable!
 {% include content_blurb.html category="booklets" slug="buddhism-and-sex_walshe" %}
 - A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy](http://revisionisthistory.com/episodes/09-generous-orthodoxy){:target="_blank" ga-event-value="0.3"}.
 
+{% include content_blurb.html category="essays" slug="gay-tragedy_dhammika" %}
+- A reminder that what we say matters.
+
 ### Conclusion
 
 Ajahn Brahm concludes by reminding us that between all the ethical debates and traditions and forms, there is a common core of good sense which we can rely on:

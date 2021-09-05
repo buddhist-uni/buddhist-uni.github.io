@@ -7,7 +7,8 @@ external_url: "http://blogs.dickinson.edu/buddhistethics/files/2014/01/Vasen-Bud
 journal: jbe
 year: 2014
 volume: 21
-course: ethics
+tags:
+  - ethics
 ---
 
 Buddhist ethics is about learning virtuous behavior, and as such can be seen as a form of "play."
