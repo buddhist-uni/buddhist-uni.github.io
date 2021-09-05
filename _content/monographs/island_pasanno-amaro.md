@@ -9,7 +9,6 @@ drive_links:
 year: 2009
 month: nov
 publisher: amaravati
-status: featured
 course: nibbana
 tags:
   - stages
