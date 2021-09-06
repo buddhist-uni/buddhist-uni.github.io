@@ -59,9 +59,9 @@ The other way is to **do the course as a series of “sutta study retreats”**.
 
 ## Course Outline
 
-In this course, we study the Early Buddhist Texts by reading half the Majjhima Nikaya and studying, in depth, its similarity to, and differences with, its parallels.
+In this course, we study the Early Buddhist Texts by reading about half of the Majjhima Nikaya.
 
-I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} to orient yourself and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} to give you a heads up on what to expect from this course.
+I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} to give you a heads up on what to expect from his course.
 
 ### Textbook
 
@@ -76,11 +76,13 @@ For the suttas not included in the above anthology, or to merely get an alternat
 
 All of which can be accessed online at [SuttaCentral.net](https://suttacentral.net/mn/){:target="_blank"}.
 
-#### About the Texts
+#### Optional: About the Texts
 
-In addition to the suttas themselves, I highly recommend reading them alongside Bhante Analayo's comparitive study:
+Advanced students, interested in engaging with the history and Northern versions of the texts, may want to read Bhante Analayo's comparitive studies after each sutta:
 
 {% include content_box.html category="monographs" slug="mn-comparison_analayo" %}
+
+If you're anything like me, you'll be amazed at how little the recensions differ, despite the thousands of miles and many hundreds of years between them. This striking congruence gives us solid confidence that the Majjhima Nikaya was well preserved.
 
 ### Lectures
 
@@ -90,13 +92,13 @@ Look ahead to the next lecture to see what sutta comes next (the first lecture, 
 
 1. Read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.3"}!) the sutta before class. 
 1. Listen to the lecture(s) associated with that sutta.
-1. Lastly, after class, look up the sutta in Analayo's *Comparative Study* to see how the Chinese (and other) parallels might enrich (or simplify!) our understanding of the Pāli text.
+1. Optionally, look up the sutta in Bhikkhu Analayo's *Comparative Study* to see how the Chinese (and other) parallels might enrich (or simplify!) our understanding of the Pāli text.
 1. Cross that sutta off your [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"}
 1. Repeat the above for the next sutta in Bhikkhu Bodhi’s lecture series.
 
-In this way, you'll start to develop the ability to read and understand the suttas independently and you'll get a rich grounding in the comparative scholarship too. If you're anything like me, you'll be amazed at how little difference there is between the northern and southern versions of the texts, considering the hundreds of years and thousands of miles that separated them.
+In this way, you'll start to develop the ability to read and understand the suttas independently.
 
-You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary, and understanding the suttas perfectly well on their own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
+You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary, and understanding the suttas on their own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
 
 ## Referring Back
 

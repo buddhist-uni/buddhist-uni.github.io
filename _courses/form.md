@@ -106,6 +106,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {% include content_blurb.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
 - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
+{% include content_blurb.html category="articles" slug="symbolism-of-the-early-stupa_harvey" %}
+- They're beautiful, aren't they? But what do they mean?
+
 {% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
 
