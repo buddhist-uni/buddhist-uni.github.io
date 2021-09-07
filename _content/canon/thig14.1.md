@@ -16,6 +16,7 @@ tags:
   - asubha
   - raga
   - bhikkhuni
+subcat: poetry
 year: 1995
 ---
 

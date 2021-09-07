@@ -12,6 +12,7 @@ tags:
   - canonical-poetry
   - vedana
 year: 1997
+subcat: poetry
 ---
 
 > by thoroughly understanding conceit, he has made an end of suffering.

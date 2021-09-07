@@ -11,7 +11,6 @@ tags:
   - sri-lankan
   - sinhalese
   - cosmology
-  - poetry
   - function
 ---
 

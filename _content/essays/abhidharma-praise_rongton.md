@@ -9,6 +9,7 @@ drive_links:
 course: abhidhamma
 tags:
   - tibetan-roots
+subcat: poetry
 year: 2020
 ---
 

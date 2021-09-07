@@ -4,6 +4,7 @@ slug: "thag.02.03"
 external_url: "https://docs.google.com/document/d/1PW41kR3UvC1KrH-DVi1rjL_ZGfcN22JesSuOhtYjscQ/edit"
 source_url: "https://suttacentral.net/thag2.3/en/sujato"
 translator: sujato
+subcat: poetry
 course: imagery
 tags:
   - hindrances

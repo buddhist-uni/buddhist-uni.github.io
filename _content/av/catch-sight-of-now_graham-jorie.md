@@ -8,13 +8,13 @@ course: grief
 status: featured
 tags:
   - daily-life
-  - poetry
   - time
   - places
   - nuns
   - emptiness
   - ambulit
   - mindfulness
+subcat: poetry
 journal: "The New Yorker"
 ---
 

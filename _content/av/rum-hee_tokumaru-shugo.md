@@ -1,13 +1,13 @@
 ---
 title: "Rum Hee"
 authors: ["Shugo Tokumaru (トクマルシューゴ)"]
+subcat: music
 year: 2009
 month: apr
 external_url: "https://youtu.be/2FJ99ju9rfw"
 course: aging
 tags: 
   - time
-  - music
   - adolescence
   - inner
   - disasters

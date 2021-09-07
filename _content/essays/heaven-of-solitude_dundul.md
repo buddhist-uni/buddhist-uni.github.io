@@ -7,9 +7,9 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/he
 drive_links:
   - "https://drive.google.com/file/d/1JNdXTziueZ-tjrj4PT8qs-oy5xkrpW0L/view?usp=drivesdk"
 course: world
+subcat: poetry
 tags:
   - places
-  - poetry
   - renunciation
   - viveka
 year: 2013

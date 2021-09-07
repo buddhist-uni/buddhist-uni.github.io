@@ -12,7 +12,7 @@ tags:
   - nature
   - problems
   - tibetan
-  - poetry
+subcat: poetry
 year: 2014
 ---
 

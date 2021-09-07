@@ -41,7 +41,7 @@ This course requires prior familiarity with [Buddhism]({% link _courses/buddhism
 
 ## Time Requirement
 
-This course is quite long if you hope to complete it. But don't worry: each of [the ten modules](https://drive.google.com/drive/folders/1JlG4P34WCAIMugD3WFcOrndq2pc1P7zO){:target="_blank" ga-event-value="0.3"} (not to mention each sutta) is fairly self-contained and can be studied independently based on your interests.  Feel free to pick and choose as you like.
+This course is quite long if you hope to complete it. But don't worry: each of [the ten modules](/series/mn-study_bodhi) (not to mention each sutta) is fairly self-contained and can be studied independently based on your interests.  Feel free to pick and choose as you like.
 
 For those looking to take the _entire_ course, there are three basic approaches:
 

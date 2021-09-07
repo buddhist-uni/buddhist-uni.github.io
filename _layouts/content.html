@@ -56,7 +56,7 @@ layout: default
     <img src="http://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="bookcover">
     {% endif %}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
-    <h1 class="post-title">{% include content_icon.html category=page.category %} {{ title | first }}</h1>
+    <h1 class="post-title">{% include content_icon.html category=page.category subcat=page.subcat %} {{ title | first }}</h1>
     {% if title.size > 1 %}<h2 class="post-subtitle">{{ title | shift | join: ": " }}</h2>{% endif %}
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page hide_reader=true link=true %}

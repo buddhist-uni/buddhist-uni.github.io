@@ -5,8 +5,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/in-thi
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15KXRhT7SIQZJo3qWSVv3NTG4HtV1T5XT/view?usp=drivesdk"]
 course: nibbana
-tags:
-  - poetry
+subcat: poetry
 ---
 
 >  In this pure awareness without basis or origin,  

@@ -11,6 +11,7 @@ tags:
   - canonical-poetry
   - nuns
 year: 2018
+subcat: poetry
 ---
 
 A nun overcomes her pride.

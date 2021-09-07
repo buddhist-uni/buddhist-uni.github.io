@@ -9,13 +9,13 @@ drive_links:
   - "https://drive.google.com/file/d/1fkYrjeb8GSxZOCaKtYrO0M0fivc3oKA-/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1zaDNhwRhaR2qWb0I2VKnoLCVfWyjteK6/view?usp=drivesdk"
 course: pali-canon
+subcat: poetry
 status: featured
 tags:
   - dhp
   - kn
   - ebts
   - philosophy
-  - poetry
   - canonical-poetry
   - theravada
   - path

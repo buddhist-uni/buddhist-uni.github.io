@@ -3,10 +3,10 @@ title: "The Blind Men and the Elephant"
 authors:
   - "Natalie Merchant"
 external_url: "https://youtu.be/3lyJLFMSVbY"
+subcat: music
 course: ambulit
 tags:
   - american
-  - music
 year: 2009
 ---
 

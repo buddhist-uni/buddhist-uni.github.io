@@ -11,7 +11,7 @@ tags:
   - kagyu
   - view
   - effort
-  - poetry
+subcat: poetry
 year: 2015
 ---
 

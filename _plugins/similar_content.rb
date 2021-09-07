@@ -50,6 +50,9 @@ module Jekyll
             score = rand + rand
             score *= config["s_i"]
             denom = config["d_i"]
+            if candidate["subcat"] and v["include_content.subcat"] == candidate["subcat"] then
+                score += config["scms"]
+            end
             if v["include_content.course"] then
                 if v["include_content.course"] == candidate["course"] then
                     score += config["ccms"]

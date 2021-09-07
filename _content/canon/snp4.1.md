@@ -6,6 +6,7 @@ translator: mills-laurence
 formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1ajGxeZ-vPWsDVgSFTluS-HeZTUFhiOJ4/view?usp=drivesdk"]
 course: imagery
+subcat: poetry
 tags:
   - snp
   - canonical-poetry

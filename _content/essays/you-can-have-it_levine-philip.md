@@ -1,12 +1,12 @@
 ---
 title: "You Can Have It"
+subcat: poetry
 authors: [levine-philip]
 external_url: "https://www.poetryfoundation.org/poems/49118/you-can-have-it"
 year: 1991
 course: ethics
 status: featured
 tags:
-  - poetry
   - world
   - inner
   - function

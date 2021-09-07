@@ -3,9 +3,9 @@ title: "Monet Refuses the Operation"
 authors: ["Lisel Mueller"]
 external_url: "https://www.poetryfoundation.org/poems/52577/monet-refuses-the-operation-56d231289e6db"
 year: 1996
+subcat: poetry
 course: view
 tags:
-  - poetry
   - art
   - inner
   - aesthetics

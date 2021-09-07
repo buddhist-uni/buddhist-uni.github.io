@@ -11,6 +11,7 @@ tags:
   - nature
   - mahayana
 year: 1906
+subcat: poetry
 ---
 
 > Svā Kṣitigarbha, Essence of the Earth, you who nurture all beings

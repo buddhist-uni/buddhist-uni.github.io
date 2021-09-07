@@ -6,6 +6,7 @@ external_url: "http://bhantesuddhaso.com/teachings/sutta/dhammapada-ch2-appamada
 drive_links:
   - "https://drive.google.com/file/d/1Ao2jKlo_8Iupxxud7yndmwsAmhkF5n0R/view?usp=drivesdk"
 course: pali-canon
+subcat: poetry
 tags:
   - dhp
   - effort

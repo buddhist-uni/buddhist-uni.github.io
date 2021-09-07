@@ -1,10 +1,10 @@
 ---
 title: "Houdini"
 authors: ["Foster the People"]
+subcat: music
 external_url: "https://www.youtube.com/watch?v=_GMQLjzVGfw"
 course: daily-life
 tags:
-  - music
   - problems
   - activism
 year: 2011

@@ -11,6 +11,7 @@ tags:
   - meditation
   - daily-life
 status: featured
+subcat: poetry
 ---
 
 > You might wish to drink the nectar of calm abiding...
