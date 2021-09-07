@@ -10,8 +10,8 @@ drive_links: ["https://drive.google.com/file/d/18yK9kaw3WRjsOceXZkL7I2I-fd3Czmmk
 course: mahayana
 tags:
   - tibetan
-  - poetry
   - path
+subcat: poetry
 ---
 
 > This is the instruction for confusion dawning as wisdom.

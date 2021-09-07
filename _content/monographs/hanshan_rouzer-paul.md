@@ -2,6 +2,7 @@
 title: "The Poetry of Hanshan (Cold Mountain), Shide, and Fenggan"
 authors: ["Paul Rouzer"]
 editor: "Christopher M. B. Nugent"
+subcat: poetry
 year: 2017
 publisher: "Walter de Gruyter Inc."
 olid: OL28356223M
@@ -13,7 +14,6 @@ course: chan-lit
 status: featured
 tags: 
   - chan
-  - poetry
   - renunciation
   - nature
 ---

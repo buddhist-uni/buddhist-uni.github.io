@@ -13,6 +13,7 @@ tags:
   - canonical-poetry
   - philosophy
 year: 1997
+subcat: poetry
 ---
 
 > The fire of lust burns mortals;

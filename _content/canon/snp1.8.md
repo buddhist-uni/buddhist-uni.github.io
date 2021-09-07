@@ -15,6 +15,7 @@ tags:
   - ebts
   - pali-canon
   - snp
+subcat: poetry
 year: 2004
 ---
 

@@ -12,9 +12,9 @@ tags:
   - sex
   - rebirth
   - origination
-  - poetry
   - ambulit
   - world
+subcat: poetry
 year: 2015
 ---
 

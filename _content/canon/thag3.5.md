@@ -11,6 +11,7 @@ tags:
   - lay
   - monastic
   - canonical-poetry
+subcat: poetry
 year: 2018
 ---
 

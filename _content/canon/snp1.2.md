@@ -13,6 +13,7 @@ tags:
   - nibbana
   - function
   - snp
+subcat: poetry
 year: 2015
 ---
 

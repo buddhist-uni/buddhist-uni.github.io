@@ -6,8 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1e0Imj2wAnemMxJSRbuJePObLoHrqa38i
 external_url: "https://www.bartleby.com/40/51.html"
 journal: bsr
 pages: "38--39"
+subcat: poetry
 tags:
-  - poetry
   - ethics
 course: lay
 ---

@@ -7,8 +7,8 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/17OYlBp-6voG0r-k5V-ZEhltk8l-fOT6K/view?usp=drivesdk"]
 course: daily-life
 status: featured
+subcat: poetry
 tags:
-  - poetry
   - tibetan
   - craft
   - chan-literature

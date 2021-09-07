@@ -4,10 +4,10 @@ authors: [sujato]
 external_url: "https://suttacentral.net"
 year: 2007
 status: featured
-course: ebts
+course: sutta
 tags:
   - agama
-  - sutta
+  - ebts
 ---
 
 SuttaCentral hosts sources and free translations of Early Buddhist Texts, meticulously organized by parallels, books,  languages and searchable with several large indexes.

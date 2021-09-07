@@ -11,6 +11,7 @@ tags:
   - philosophy
   - imagery
 year: 1995
+subcat: poetry
 ---
 
 Punnika points out how silly it is to believe in ritual bathing and successfully converts a Brahman who ends the verse by making it all about him.

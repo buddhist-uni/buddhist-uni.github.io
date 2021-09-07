@@ -9,13 +9,13 @@ google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE
 description: "A thorough tour of the Pāli texts which report the Buddha's character, accomplishments, life, and past."
 time: 2
 epigraph: |
-  > ཐབས་མཁས་གས་ེས་་གས་་འངས། །   
+  > ༈ ཐབས་མཁས་ཐུགས་རྗེས་ཤཱཀྱའི་རིགས་སུ་འཁྲུངས། །  
   > With skilful means and compassion, you were born in the Śākya clan,  
-  > གཞན་ིས་་བ་བད་ི་དང་འམས་པ། །  
+  > གཞན་གྱིས་མི་ཐུབ་བདུད་ཀྱི་དཔུང་འཇོམས་པ། །  
   > Unconquerable by others, you vanquished Māra's hordes,  
-  > གར་ི་ན་པོ་་ར་བིད་པ་། །  
+  > གསེར་གྱི་ལྷུན་པོ་ལྟ་བུར་བརྗིད་པའི་སྐུ། །  
   > Your physical form resplendent, like a mountain of gold.  
-  > ལ་པོ་ོད་ལ་ག་འཚལ་ལོ། །  
+  > ཤཱཀྱའི་རྒྱལ་པོ་ཁྱོད་ལ་ཕྱག་འཚལ་ལོ། །  
   > I pay homage to you, King of the Śākyas!  
   ~ [Drikung Kyobpa Jikten Sumgön](https://www.lotsawahouse.org/indian-masters/nagarjuna/great-praise-twelve-acts-buddha){:target="_blank" ga-event-value="0.5"}
 feedback_id: "The+Buddha"

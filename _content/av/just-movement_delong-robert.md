@@ -1,6 +1,7 @@
 ---
 title: "Just Movement"
 authors: ["Robert DeLong"]
+subcat: music
 external_url: "https://youtu.be/jltoFSLtDjM"
 year: 2013
 publisher: "Glassnote Records"
@@ -12,7 +13,6 @@ tags:
   - becon
   - world
   - ambulit
-  - music
 ---
 
 > We call that "Progress"  

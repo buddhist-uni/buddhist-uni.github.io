@@ -9,6 +9,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-cho
 course: indian
 tags:
   - pilgrimage
+subcat: poetry
 ---
 
 A poem from the Tibetan Tradition about one of the pilgrimage sites in Buddhist India: the spot to which the Buddha is said to have descended after teaching the devas.

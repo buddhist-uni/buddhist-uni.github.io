@@ -8,6 +8,7 @@ tags:
   - path
   - canonical-poetry
   - nibbana
+subcat: poetry
 year: 2013
 ---
 

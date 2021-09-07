@@ -8,6 +8,7 @@ course: function
 tags:
   - monastic
   - dhp
+subcat: poetry
 year: 1985
 ---
 

@@ -2,6 +2,7 @@
 title: "The Ancient Path To Enlightenment"
 authors:
   - "Da Bei Shan"
+subcat: film
 status: "rejected"
 reason: "No longer available 😞"
 course: tudong

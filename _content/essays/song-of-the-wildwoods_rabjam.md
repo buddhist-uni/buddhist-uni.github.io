@@ -11,6 +11,7 @@ tags:
   - tibetan
   - problems
   - society
+subcat: poetry
 ---
 
 > People are so difficult to be with —  

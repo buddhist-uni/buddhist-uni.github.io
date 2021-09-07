@@ -5,8 +5,8 @@ external_url: "https://www.poetryfoundation.org/poems/52173/what-work-is"
 year: 1991
 course: ethics
 status: featured
+subcat: poetry
 tags:
-  - poetry
   - america
   - meditation
   - engaged

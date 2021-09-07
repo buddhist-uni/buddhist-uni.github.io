@@ -11,6 +11,7 @@ tags:
   - caste
   - characters
 year: 2014
+subcat: poetry
 ---
 
 The heartwarming story of a low-born peasant becoming a true "brahmin" this sutta reminds us that karma is not destiny.

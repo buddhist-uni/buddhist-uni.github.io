@@ -12,8 +12,8 @@ tags:
   - tibetan-roots
   - engaged
   - effort
-  - poetry
   - thought
+subcat: poetry
 year: 1979
 translator: "Steven Bachelor"
 external_url: "https://www.tibethouse.jp/about/buddhism/text/pdfs/Bodhisattvas_way_English.pdf"

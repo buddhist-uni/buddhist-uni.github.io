@@ -2,6 +2,7 @@
 title: "Baraka"
 authors: ["Ron Fricke"]
 year: 1992
+subcat: film
 course: world
 tags:
   - film

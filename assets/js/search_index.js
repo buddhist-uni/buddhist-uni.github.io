@@ -24,6 +24,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
         "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
+        "subcategory": {{ p.subcat | jsonify }},
         "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.layout == 'imagerycoursepart' %}1.5{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{% assign a = a | strip | strip_html | strip_newlines | split: " and " %}{% assign authors = a | last | split: "unfindabletoken" %}{% if a.size > 1 %}{% assign authors = a | first | split: ", " %}{% assign sla = authors | last | replace: ",", "" %}{% assign authors = authors | pop | push: sla | push: a[1] %}{% endif %}{{ authors | jsonify }},
         "translator": {% assign conts = p.translator | split: ' and ' %}{% capture s %}{% include content_authors_string.html authors=conts %}{% endcapture %}{{ s | strip_newlines | jsonify }},
@@ -39,6 +40,7 @@ var idx = lunr(function () {
     this.field('translator');
     this.field('tags', { boost: 4 }); this.field('description', { boost: 2 });
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
+    this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
     for (var key in store) {
         var v = store[key];
@@ -47,7 +49,7 @@ var idx = lunr(function () {
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator),
             'tags': v.tags, 'description': utils.unaccented(v.description),
-            'in': v.category, 'type': v.type
+            'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }
 });

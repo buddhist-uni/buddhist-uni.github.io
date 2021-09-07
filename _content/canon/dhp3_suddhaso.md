@@ -6,6 +6,7 @@ external_url: "http://bhantesuddhaso.com/teachings/sutta/dhammapada-33-43-citta-
 drive_links:
   - "https://drive.google.com/file/d/1MqjP3Ha9X8QGznSQGcJ4pc7HtBIWS0sQ/view?usp=drivesdk"
 course: pali-canon
+subcat: poetry
 tags:
   - dhp
   - psychology

@@ -2,6 +2,7 @@
 title: "Tenuousness"
 authors: ["Andrew Bird"]
 external_url: "https://youtu.be/I9rmwllw5q8"
+subcat: music
 year: 2009
 month: jan
 course: world
@@ -11,7 +12,6 @@ tags:
   - philosophy-of-science
   - math
   - academia
-  - music
 publisher: "Fat Possum"
 ---
 

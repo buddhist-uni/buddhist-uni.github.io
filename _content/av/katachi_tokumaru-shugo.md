@@ -1,6 +1,7 @@
 ---
 title: "Katachi (形)"
 authors: ["Shugo Tokumaru (トクマルシューゴ)"]
+subcat: music
 year: 2013
 month: jan
 external_url: "https://youtu.be/a4RsOIBer5M"

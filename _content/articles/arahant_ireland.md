@@ -1,6 +1,7 @@
 ---
 title: "The Arahant"
 authors: [ireland]
+subcat: poetry
 year: 1999
 journal: bsr
 volume: 16
@@ -12,7 +13,6 @@ drive_links: ["https://drive.google.com/file/d/1xJNCV4cOYXfnaag4nZB1fOpMsfxP547o
 course: nibbana
 tags:
   - arahant
-  - poetry
   - sn
 ---
 

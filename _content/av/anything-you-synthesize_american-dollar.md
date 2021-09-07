@@ -2,6 +2,7 @@
 title: "Anything You Synthesize"
 authors:
   - "The American Dollar"
+subcat: music
 external_url: "https://youtu.be/aSU49AFzgtw"
 course: philosophy
 status: featured
