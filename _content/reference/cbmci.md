@@ -5,8 +5,8 @@ external_url: "https://holybooks-lichtenbergpress.netdna-ssl.com/wp-content/uplo
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1sphFeTJ3nNAjc1KAeKhdijWP5f0srGVC/view?usp=drivesdk"]
 year: 2016
-course: vinaya-studies
 tags:
+  - vinaya-studies
   - monastic-theravada
 ---
 

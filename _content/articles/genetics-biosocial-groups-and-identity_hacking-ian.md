@@ -16,7 +16,6 @@ tags:
   - medicine
   - time
   - society
-status: featured
 publisher: mit
 ---
 

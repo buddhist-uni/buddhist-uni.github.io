@@ -41,9 +41,12 @@ next_course_descs:
   - "Go further ahead in time, and study the school of Buddhism which grew out of the Abhidhamma traditions."
   - "In which we think through what the Dhamma means for everyday, household life."
 epigraph: |
-  > Sir, please explain suffering to me!  
-  Teach me about suffering!  
-  ~ [SN 12.17](https://suttacentral.net/sn12.17/en/sujato#4.9){:target="_blank"}
+  > Explain suffering to me  
+  ~ [SN 12.17](https://suttacentral.net/sn12.17/en/sujato#4.9){:target="_blank"}  
+  
+  > I wanna know  
+  > Where we're going  
+  ~ [Robert DeLong](https://www.youtube.com/watch?v=an9qlVyOb8E){:target="_blank"}
 ---
 
 ## What is Buddhist Philosophy?

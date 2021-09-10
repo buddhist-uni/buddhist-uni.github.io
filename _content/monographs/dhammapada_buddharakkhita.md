@@ -16,13 +16,6 @@ tags:
   - kn
   - ebts
   - philosophy
-  - canonical-poetry
-  - theravada
-  - path
-  - view
-  - thought
-  - ethics
-  - problems
   - function
   - buddhism
 year: 1959

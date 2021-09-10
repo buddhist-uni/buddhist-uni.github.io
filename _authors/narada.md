@@ -1,3 +1,3 @@
 ---
-title: "Ven Narada Thera"
+title: "Ven Nārada Mahāthera"
 ---
