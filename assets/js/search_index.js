@@ -38,7 +38,7 @@ var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
     this.field('author', { boost: 2 }); this.field('content');
     this.field('translator');
-    this.field('tags', { boost: 4 }); this.field('description', { boost: 2 });
+    this.field('tag', { boost: 4 }); this.field('description', { boost: 2 });
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
@@ -48,7 +48,7 @@ var idx = lunr(function () {
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator),
-            'tags': v.tags, 'description': utils.unaccented(v.description),
+            'tag': v.tags, 'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }

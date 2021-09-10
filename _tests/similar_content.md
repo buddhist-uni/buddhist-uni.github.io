@@ -12,7 +12,6 @@ test_cases:
     - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
     - [how-to-meditate_yuttadhammo, instructions-to-insight-meditation_mahasi]
     - [what-work-is_levine-philip, you-can-have-it_levine-philip]
-    - [someday-ill-love-ocean_vuong, little-prince_saintexupery]
     - [rebirth-and-the-inbetween_sujato, when-does-human-life-begin_brahm]
     - [ordaining-renunciation_nirodha, going-forth_viradhammo]
     - [youre-not-a-bad-person_kashtan-miki, mindfulness-racial-bias_magee-rhonda]

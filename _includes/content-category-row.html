@@ -1,10 +1,10 @@
 <tr>
+{% assign catcon = site.content | where: "category", include.category %}
 {% assign category =  site.categories | find: "slug", include.category %}
 <td>{% include content_icon.html category=include.category %} <a href="{{ category.url }}">{{ category.title }}</a>
 {% if category.subcats %}<ul>{% for subcat in category.subcats %}
-<li style="list-style:none;">{% include content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ site.content | where: "subcat", subcat | size }})</li>
+<li style="list-style:none;">{% include content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ catcon | where: "subcat", subcat | size }})</li>
 {% endfor %}</ul>{% endif %}
 </td>
-{% capture filter_exp %}c.path contains '/{{ include.category }}/'{% endcapture %}
-<td markdown="span">{{ site.content | where_exp: "c", filter_exp | size }}</td>
+<td markdown="span">{{ catcon | size }}</td>
 </tr>
