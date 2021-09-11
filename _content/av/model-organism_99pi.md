@@ -1,8 +1,7 @@
 ---
 title: "Model Organism"
 authors:
-  - "Roman Mars"
-  - "Chris Berube"
+  - "Emmett FitzGerald"
 external_url: "https://99percentinvisible.org/episode/model-organism"
 course: wider
 tags:
