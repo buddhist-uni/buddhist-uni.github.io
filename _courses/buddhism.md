@@ -13,8 +13,8 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Wooden_gate_with_o
 big_image: https://upload.wikimedia.org/wikipedia/commons/7/71/Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan.jpg
 time: 2
 epigraph: |
-  > Open are the doors to the deathless.  
-  ~ The Buddha (MN 26)
+  > Open are the doors to the deathless  
+  ~ [MN 26](https://suttacentral.net/mn26/en/bodhi){:target="_blank"}
 next_courses:
   - ebts
   - function

@@ -1,5 +1,5 @@
 ---
-title: "Daedalus"
+title: "Dædalus"
 external_url: "https://direct.mit.edu/daed"
 ---
 
