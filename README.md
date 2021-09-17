@@ -11,24 +11,52 @@ title: Behind the Scenes
 >  
 > ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
-# Studying
-
-There are two primary ways to use [this website](https://buddhistuniversity.net): taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
-
-The library contains all the best content I've found [on the internet](https://buddhistuniversity.net/sources/) organized [by topic](https://buddhistuniversity.net/tags/). These topical bibliographies are then compiled into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used more formally in your study group or class. There are already students and teachers around the world using the free material here in a variety of ways and I couldn't be prouder!
-
 # History
 
-This webpage started its life as [my personal library of Buddhist stuff on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r). 
+While studying in London, there was a room at the Queen Mary library I liked to hang out in.
+A large, dimly lit room, it was only accessible to us undergrads and the librarians.
+Tables and chairs lined the tinted glass walls and in the center were rows and rows of books.
+Called "The Undergraduate Reading Room," it contained a copy of every book for every class that semester.
 
-After reading stuff I found online, I would contemplate what I learned from it and who I’d recommend it to. Only after answering these questions would I then squirrel away the e.g. PDF into an appropriate Google Drive folder.
+It was built to ensure that even the poorest students at the university had access to their assigned reading, but the result was even cooler:
+The room offered an up-to-date, physical snapshot of the entire university.
 
-In this way, my library (like all personal libraries) has slowly grown to serve two purposes: 
+I'd walk around and run my hand down the shelves: Econ 101, Intro to Macroeconomics, Intro to Microeconomics... Education... Electrical Engineering... Film Studies... Whatever subject interested me, I'd pull the recommended text off the shelf, and read.
 
-1. to organize my own media for their safe-keeping, retrieval and revision, and  
+I spent many hours happily chipping away at my ignorance.
+I finished none of the books (even for my own classes!) but just skimming the collection gave me an appreciation for the breadth of the academy and for the richness of its disciplines.
+
+---
+
+In Asia, most sects of Buddhism have a standardized curriculum for monastics and those of faith.
+The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Protestant" Buddhism emerging in the English-speaking world still has no academic standards.
+Perhaps that makes sense since we're still in the process of understanding the darn thing!
+Our field is still new, I admit, but it is also large enough now that its students need guidance to get up to speed.
+
+When I ordained, I felt that need myself and looked around for syllabi to help me.
+I'm not afraid of studying history or questioning orthodoxy, but I'm also not okay with the materialistic reduction of religion.
+So, rejecting both Eastern/sectarian and Western/academic structures, I found myself assembling a curriculum for myself out of what I could find online.
+
+Fortunately, [there is quite a lot](https://buddhistuniversity.net/sources/)!
+
+[Having organized that material for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) in a way that reminded me fondly of the QMUL library, I started to share that folder with my friends, who in turn encouraged me to build [this website](https://buddhistuniversity.net).
+
+# Studying
+
+There are two primary ways to use the website: taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
+
+The library contains all the best content I've found organized [by topic](https://buddhistuniversity.net/tags/). These topical bibliographies are then compiled into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used in your study group or class. There are already students and teachers around the world using the free material here in a variety of ways and I couldn't be prouder!
+
+# Methodology
+
+After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate folder on Google Drive.
+
+In this way, my library (like all personal libraries) slowly grew to serve two purposes: 
+
+1. to organize the media for my own safe-keeping, retrieval and revision, and  
 2. for others (hello!) to peruse and, hopefully, benefit from.
 
-These two aims find unity in the pride that any book-worm feels towards their library. As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), this website contains (editorially and structurally) my own biases. **This is a feature not a bug.** I named my elephants with a great deal of thought, care, and delight and I hope that, as you explore my library, you will feel some of that delight too. 😊 🐘
+These two aims find unity in the pride that any book-worm inevitably feels towards their library. As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), this website contains (editorially and structurally) all of my personal biases. **This is a feature not a bug.** I named the elephants which carry my assembled treatises with thought, care, and delight and I hope that, as you explore my library, you will find some of that delight too. 😊 🐘
 
 # About the Code
 
@@ -81,19 +109,23 @@ Lastly,
 
 For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or post an issue or comment on GitHub.
 
-## Contributions
+## Reuse
 
-The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like. If you would like to contribute anything back, please message me, [open an issue](https://github.com/buddhist-uni/buddhist-uni.github.io/issues/new) or fork the repository and open a pull request!  
+The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like or fork the repository.
+
+You can also find [the entire database in Bibtex format on the website](https://buddhistuniversity.net/content.bib), in case that's useful.
 
 # Future Directions
 
-Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible to as many people as possible.
+Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible.
 
-I have also tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site, while technically a "blog," is **not** yet another newsfeed of digital ephemera. It is an experiment in a somewhat slower technology. It is my hope that this curriculum will provide a solid basis for Buddhist Studies for decades to come.
+If you'd like to contribute, take a look at [our issues page on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/issues) for some open tasks in need of help, or feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) with your idea!
+
+I have tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site, while technically a "blog," is **not** another newsfeed of digital ephemera. It is an experiment in slow technology. It is my hope that this curriculum will provide a basis for Buddhist Studies for decades to come.
 
 # Disclaimers
 
-- This repository, like all other things in life, is imperfect and subject to change.
+- This repository, like all things, is imperfect and subject to change.
 - While I have taken some pains to ensure that everything here is accurate and legal, please know that you use the University at your own risk.
 - The various views expressed in each work are the opinions of the respective author(s) and may or may not reflect my own.
 
@@ -103,7 +135,7 @@ A big thank you to [the content sources](https://www.buddhistuniversity.net/sour
 
 # Dedication
 
-To all my teachers---past, present and future. Especially you.
+This curriculum is humbly dedicated to all of my teachers---past, present and future. Especially you.
 
 [![DOI](https://zenodo.org/badge/244081930.svg)](https://zenodo.org/badge/latestdoi/244081930)
 
