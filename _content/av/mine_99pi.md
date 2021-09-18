@@ -4,7 +4,7 @@ authors:
   - "Roman Mars"
   - "Michael Heller"
   - "Jim Salzman"
-  - "Chris Berube"
+editor: "Chris Berube"
 external_url: "https://99percentinvisible.org/episode/mine"
 course: society
 tags:
