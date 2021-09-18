@@ -7,14 +7,14 @@ year: 2015
 volume: 29
 number: 1
 journal: "The Journal of Refugee Studies"
-course: time
+course: society
 tags:
   - refugees
   - thailand
   - karen
   - burma
   - night
-  - society
+  - time
   - world
 ---
 

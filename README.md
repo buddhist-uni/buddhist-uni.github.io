@@ -11,7 +11,7 @@ title: Behind the Scenes
 >  
 > ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
-# History
+# Preface
 
 While studying in London, there was a room at the Queen Mary library I liked to hang out in.
 A large, dimly lit room, it was only accessible to us undergrads and the librarians.
@@ -26,7 +26,7 @@ I'd walk around and run my hand down the shelves: Econ 101, Intro to Macroeconom
 I spent many hours happily chipping away at my ignorance.
 I finished none of the books (even for my own classes!) but just skimming the collection gave me an appreciation for the breadth of the academy and for the richness of its disciplines.
 
----
+# History
 
 In Asia, most sects of Buddhism have a standardized curriculum for monastics and those of faith.
 The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Protestant" Buddhism emerging in the English-speaking world still has no academic standards.
@@ -41,13 +41,13 @@ Fortunately, [there is quite a lot](https://buddhistuniversity.net/sources/)!
 
 [Having organized that material for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) in a way that reminded me fondly of the QMUL library, I started to share that folder with my friends, who in turn encouraged me to build [this website](https://buddhistuniversity.net).
 
-# Studying
+# Using the Site
 
 There are two primary ways to use the website: taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
 
 The library contains all the best content I've found organized [by topic](https://buddhistuniversity.net/tags/). These topical bibliographies are then compiled into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used in your study group or class. There are already students and teachers around the world using the free material here in a variety of ways and I couldn't be prouder!
 
-# Methodology
+# My Methodology
 
 After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate folder on Google Drive.
 

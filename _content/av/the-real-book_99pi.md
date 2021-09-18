@@ -1,5 +1,8 @@
 ---
 title: "The Real Book"
+editor: "Emmett FitzGerald"
+authors:
+  - "Mikel McCavana"
 year: 2021
 month: apr
 external_url: "https://99percentinvisible.org/episode/the-real-book/"

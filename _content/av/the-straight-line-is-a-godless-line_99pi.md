@@ -1,6 +1,6 @@
 ---
 title: "The Straight Line is a Godless Line"
-authors: ["Luisa Beck", "Roman Mars"]
+authors: ["Luisa Beck"]
 year: 2014
 month: sep
 external_url: "https://99percentinvisible.org/episode/the-straight-line-is-a-godless-line/"

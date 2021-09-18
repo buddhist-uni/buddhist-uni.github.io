@@ -8,8 +8,9 @@ journal: jgb
 year: 2005
 pages: "46--65"
 volume: 6
-course: gender
+course: body
 tags:
+  - gender
   - american
   - american-mahayana
   - engaged
