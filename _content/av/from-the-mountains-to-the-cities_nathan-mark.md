@@ -9,7 +9,7 @@ course: korean
 tags:
   - evangelism
   - engaged
-  - modernity
+  - modern
   - propagation
   - monastic-mahayana
 ---

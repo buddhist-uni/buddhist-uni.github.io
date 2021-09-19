@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1fHfdecSMGLkJG2WP0bd4R7MDYTPiMSUE/view?usp=drivesdk"
 course: lay
 tags:
-  - modernity
+  - modern
   - path
 year: 1985
 month: apr

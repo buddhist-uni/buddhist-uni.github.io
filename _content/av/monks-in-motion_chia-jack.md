@@ -12,7 +12,7 @@ tags:
   - singaporean
   - indonesian
   - mahayana
-  - modernity
+  - modern
 publisher: nbn
 ---
 

@@ -8,7 +8,7 @@ course: theravada
 tags:
   - burmese
   - burma
-  - modernity
+  - modern
   - west
   - form
 status: featured

@@ -7,7 +7,7 @@ course: society
 tags:
   - world
   - places
-  - modernity
+  - prehistory
   - time
   - power
   - tribalism

@@ -7,7 +7,7 @@ volume: 21
 pages: "29--50"
 external_url: "https://www.globalbuddhism.org/jgb/index.php/jgb/article/download/314/256"
 drive_links: ["https://drive.google.com/file/d/1E3I6s6Y14Il0QQCE1SxPEEv1IZleYdU9/view?usp=drivesdk"]
-course: modernity
+course: modern
 tags:
   - sri-lankan
   - theravada-chanting
