@@ -12,7 +12,7 @@ tags:
   - satipatthana
   - mindfulness
   - lay
-  - modernity
+  - modern
 year: 1963
 publisher: bps
 series: wheel

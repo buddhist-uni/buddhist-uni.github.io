@@ -7,7 +7,7 @@ publisher: hawaii
 olid: OL22684571M
 course: engaged
 tags:
-  - modernity
+  - modern
   - becon
   - compassion
 ---

@@ -12,7 +12,7 @@ tags:
   - dhp
   - thai
   - dhp-a
-  - modernity
+  - modern
 ---
 
 > Although the mediums and content have changed significantly, the methods used to instruct the Dhammapada have remained largely the same since the sixteenth century. Instruction still operates on a system of drawing selected Pali words from the text and offering expanded creative glosses and analogies to contemporary issues.

@@ -9,7 +9,7 @@ year: 2009
 journal: jgb
 volume: 10
 pages: "323--374"
-course: modernity
+course: modern
 tags:
   - engaged
   - chinese

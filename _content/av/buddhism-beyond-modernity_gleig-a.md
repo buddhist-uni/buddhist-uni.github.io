@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1afPe_uYjf6Bpn53HENeeELte0KPFLv9O
 course: american
 tags:
   - west
-  - modernity
+  - modern
 year: 2019
 month: apr
 series: classical-ideas
