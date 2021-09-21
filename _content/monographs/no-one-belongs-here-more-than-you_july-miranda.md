@@ -9,7 +9,7 @@ course: inner
 tags:
   - religion
   - craft
-  - fiction
+subcat: fiction
 ---
 
 > Remember this when you wake up in the morning and think you have nothing. Stand up and face the east. Now praise the sky and praise the light within each person under the sky. It’s okay to be unsure. But praise, praise, praise.

@@ -15,6 +15,7 @@ adms: 1 # author denom increment
 ccms: 1.4 # course-course match numerator inc
 ctms: 1.2 # course-tag match score
 ttms: 1.1 # tag-tag match score
+tpms: 0.4 # tag-parent match score
 scms: 1.2 # subcat match score
 aams: 1.0 # author-author match score 
 ccmm: 1.12 # category match multiplier

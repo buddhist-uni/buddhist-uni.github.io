@@ -7,7 +7,7 @@ publisher: nbn
 tags:
   - bureaucracy
   - gelug
-  - monastic
+  - modern
 year: 2021
 month: apr
 ---

@@ -22,7 +22,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
         "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
-        "tags": {{ p.tags | join: ' ' | replace: '-', ' ' | jsonify }},
+        "tags": {{ p.tags | unshift: p.course | join: ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.layout == 'imagerycoursepart' %}1.5{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
