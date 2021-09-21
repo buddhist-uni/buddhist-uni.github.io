@@ -4,12 +4,12 @@ authors:
   - "Susanna Clarke"
 olid: OL33030582M
 course: intellect
+subcat: fiction
 tags:
   - art
   - memory
   - religion
   - mythology
-  - fiction
   - prehistory
   - hermeneutics
   - places
@@ -25,4 +25,4 @@ address: "New York"
 A man imprisoned in The Labyrinth of Forgotten Things makes sense of his new/old/perpetual Home.
 
 The novel resists a simple, allegorical reading, but instead hums with symbolism and irony as it dances around its heady themes.
-While artists and scholars alike will enjoy turning those over, ultimately it is Piranesi's sincerity and emotional strength which ensure that the book won't soon be Forgotten.
+While intellectuals will enjoy turning those over, ultimately it is Piranesi's sincerity and emotional strength which ensure that the book won't soon be Forgotten.

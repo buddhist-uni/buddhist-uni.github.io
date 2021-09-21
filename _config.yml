@@ -151,6 +151,7 @@ defaults:
         layout: "content"
         base_value: 0.2
         section: "library"
+        tags: []
   -
     scope:
         path: ""

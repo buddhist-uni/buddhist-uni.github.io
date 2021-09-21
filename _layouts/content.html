@@ -6,12 +6,9 @@ layout: default
 {%- assign content_path = page.path | slice: 9, len -%}
 
 {%- comment -%}Populate tags: an array of a-tags linking to the topical tags{%- endcomment -%}
-{%- assign tagslugs = '' | split: '' -%}
+{%- assign tagslugs = page.tags -%}
 {%- if page.course -%}
-    {%- assign tagslugs = tagslugs | push: page.course -%}
-{%- endif -%}
-{%- if page.tags.size > 0 -%}
-    {%- assign tagslugs = tagslugs | concat: page.tags -%}
+    {%- assign tagslugs = tagslugs | unshift: page.course -%}
 {%- endif -%}
 {%- assign tags = '' | split: '' -%}
 {%- for t in tagslugs -%}

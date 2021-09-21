@@ -42,6 +42,11 @@ module Jekyll
             category = v["site.categories"].find{|c| c.data["slug"] == category}
         end
         category = category.to_liquid.to_h
+        tagparents = {}
+        for cofefe in v["site.tags"]
+            tag = cofefe.to_liquid.to_h
+            tagparents[tag["slug"]] = tag["parents"]
+        end
         for cofefe in v["site.content"]
             candidate = cofefe.to_liquid.to_h
             if candidate["status"] == "rejected" or candidate["path"] == v["include_content.path"] then
@@ -56,10 +61,23 @@ module Jekyll
             if v["include_content.course"] then
                 if v["include_content.course"] == candidate["course"] then
                     score += config["ccms"]
-                end
-                if candidate["tags"]&.size&.nonzero? then
+                else
                     if candidate["tags"].include? v["include_content.course"] then
                         score += config["ctms"]
+                    else
+                        ps = tagparents[v["include_content.course"]]
+                        if ps then
+                            if ps.include? candidate["course"] then
+                                score += config["tpms"]
+                            else
+                                for p in ps
+                                    if candidate["tags"]&.include? p then
+                                        score += config["tpms"]
+                                        break
+                                    end
+                                end
+                            end
+                        end
                     end
                 end
             end
@@ -71,10 +89,20 @@ module Jekyll
             end
             if candidate["tags"]&.size&.nonzero? then
                 denom += candidate["tags"].size * config["tdms"]
-                if v["include_content.tags.size"] then
-                    for t in v["include_content.tags"]
-                        if candidate["tags"].include? t then
-                            score += config["ttms"]
+                for t in v["include_content.tags"]
+                    if candidate["tags"].include? t then
+                        score += config["ttms"]
+                    else
+                        if tagparents[t] then
+                            for p in tagparents[t]
+                                if candidate["tags"].include? p then
+                                    score += config["tpms"]
+                                    break
+                                elsif candidate["course"] == p then
+                                    score += config["tpms"]
+                                    break
+                                end
+                            end
                         end
                     end
                 end
