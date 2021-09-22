@@ -9,17 +9,16 @@ similar_count: 10
 # Not tuned scientifically. Just guessing at appropriate values
 s_i: 0.2 # numerator prior
 d_i: 2.2 # denominator prior
-tdms: 2 # tag denom increment
-cdms: 2 # course denom increment
-adms: 1 # author denom increment
+tdms: 1.2 # tag denom increment
+cdms: 1.4 # course denom increment
+adms: 0.9 # author denom increment
 ccms: 1.4 # course-course match numerator inc
 ctms: 1.2 # course-tag match score
 ttms: 1.1 # tag-tag match score
-tpms: 0.4 # tag-parent match score
+tpms: 0.3 # tag-parent match score
 scms: 1.2 # subcat match score
-aams: 1.0 # author-author match score 
+aams: 0.9 # author-author match score 
 ccmm: 1.12 # category match multiplier
 scmm: 1.08 # similar category multiplier
-fcmm: 1.2 # featured content multiplier
-tsmm: 0.7 # two star content multiplier
-
+fcmm: 1.3 # featured content multiplier
+tsmm: 0.5 # two star content multiplier
