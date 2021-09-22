@@ -1,7 +1,7 @@
 ---
 title: "Twelve and a Half Crippled Verses"
 subcat: poetry
-authors: ["Lama Zhang Tsöndrü Drakpa"]
+authors: ["Lama Zhang Tsöndrü Drakpa"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lama-zhang-tsondru-drakpa/twelve-half-crippled-verses"
 year: 2020
 translator: "Lowell Cook"
