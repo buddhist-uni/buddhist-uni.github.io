@@ -19,4 +19,4 @@ tags:
 status: featured
 ---
 
-> If the fragmenting forces of late modernity have shattered the illusion of a fixed self, anātman provides a way of rethinking subjectivity in its absence.
+> If the fragmenting forces of late modernity have shattered the illusion of a fixed self, anātman provides a way of rethinking subjectivity in its absence.
