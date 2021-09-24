@@ -1,5 +1,5 @@
 ---
-title: Best / New Arrivals
+title: Highlights
 section: library
 permalink: /library/highlights
 image: https://illeakyw.sirv.com/Images/banners/origami.jpg
@@ -27,6 +27,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 {% assign courses = site.courses | map: "slug" %}
 {% assign tags = site.tags | map: "slug" | concat: courses %}
 {% for c in thisyear %}
+  {% unless c.course %}{% continue %}{% endunless %}
   {% if tags contains c.course %}
     {% assign featurecontent = featurecontent | push: c %}
     {% continue %}
@@ -42,6 +43,6 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 {% assign bests = featurecontent | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | group_by: "year" | sort: "name" | reverse %}
 {% for y in bests %}
 <h2>{{ y.name }}</h2>
-{% include featured_content_list.html contents=y.items %}
+{% include featured_content_list.html contents=y.items sortkey="title" %}
 {% endfor %}
 

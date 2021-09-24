@@ -7,9 +7,11 @@ olid: OL32040728M
 year: 2000
 publisher: The Royal Netherlands Academy of Arts and Sciences
 address: Amsterdam
-course: pali-canon
+course: theravada
 tags:
-  - theravada
+  - pali-canon
+  - indian
+  - theravada-roots
   - burmese
   - manuscripts
   - historiography

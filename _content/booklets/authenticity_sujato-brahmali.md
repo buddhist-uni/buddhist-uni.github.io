@@ -8,7 +8,6 @@ course: agama
 status: featured
 tags:
   - ebts
-  - setting
   - indian
   - historiography
   - academia

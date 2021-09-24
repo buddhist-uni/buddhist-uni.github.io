@@ -7,6 +7,7 @@ test_cases:
     - [short-history-of-nearly-everything_bryson-bill, burden-of-proof_gladwell-m]
     - [sapiens_harari-y, world-until-yesterday_diamond-jared]
     - [citizen_rankine-claudia, carlos_gladwell-m]
+    - [just-us_rankine-claudia, 1619]
     - [lao-buddhist-women_tsomo-karma-lekshe, traffic-in-heirarchy-keeler-ward]
     - [oral-transmission_wynne, oral-dimensions-of-pali_analayo]
     - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
