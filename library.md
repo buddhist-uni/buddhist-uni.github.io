@@ -19,13 +19,13 @@ You can explore the library by:
 ### [<i class="fas fa-tag"></i> Topic]({% link tags.html %})
 Find a topic that interests you in the [topic index]({% link tags.html %}) or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and then explore by clicking on the "[Subtopic](/tags/buddhism#children)" links at the bottom of the page. (Note that individual items in the library may appear in multiple bibliographies if tagged with multiple subjects.)
 
-### [<i class="fas fa-medal"></i> Best / New Arrivals]({% link highlights.html %})
+### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})
 Here you'll find the latest and greatest publications in the library sorted by year. And to stay up-to-date, subscribe to [the blog]({% link blog.md %}).
 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
 Type in what you're looking for and see what comes up!
 
-#### [<i class="fas fa-dice"></i> Random]({% link random.html %})
+### [<i class="fas fa-dice"></i> Random]({% link random.html %})
 Or explore the breadth of our recommendations in a more serendipitous way.
 
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})

@@ -23,12 +23,12 @@ The room offered an up-to-date, physical snapshot of the entire university.
 
 I'd walk around and run my hand down the shelves: Econ 101, Intro to Macroeconomics, Intro to Microeconomics... Education... Electrical Engineering... Film Studies... Whatever subject interested me, I'd pull the recommended text off the shelf, and read.
 
-I spent many hours happily chipping away at my ignorance.
+I spent many hours there happily chipping away at my ignorance.
 I finished none of the books (even for my own classes!) but just skimming the collection gave me an appreciation for the breadth of the academy and for the richness of its disciplines.
 
 # History
 
-In Asia, most sects of Buddhism have a standardized curriculum for monastics and those of faith.
+Most schools of Buddhism in Asia have a standardized curriculum for monastics and those of faith.
 The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Protestant" Buddhism emerging in the English-speaking world still has no academic standards.
 Perhaps that makes sense since we're still in the process of understanding the darn thing!
 Our field is still new, I admit, but it is also large enough now that its students need guidance to get up to speed.

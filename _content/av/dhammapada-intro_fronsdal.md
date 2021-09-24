@@ -1,7 +1,7 @@
 ---
 title: "Dhammapada Introduction"
 authors: [fronsdal]
-external_url: "http://media.audiodharma.org/mp3Dhammapada/Dhammapada_00_Introduction.mp3"
+source_url: "https://www.audiodharma.org/talks/1286/download"
 drive_links:
  - "https://drive.google.com/file/d/1ZWVsq2-rZlruy51QOoNpvumaouISpOjF/view?usp=drivesdk"
 course: pali-canon

@@ -25,7 +25,9 @@ You can find [a video introduction to the website on YouTube](https://youtu.be/T
 You can cite the website as:  
 Khemarato, {{ site.time | date: "%Y" }}. "{{ site.title }}". {{ site.time | date: "%B %-d" }}. *{{ site.url }}* [doi:{{ site.doi }}](https://doi.org/{{ site.doi }})
 
+Our tests are [mostly passing](/tests).
+
 _Homepage background image by [flowcomm](https://www.flickr.com/people/21162417@N07)_
-<i>licensed under <a href="https://creativecommons.org/licenses/by/2.0?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a>
+<i>licensed under <a href="https://creativecommons.org/licenses/by/2.0?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a>.</i>
 
 This website, like most, uses cookies to improve your experience. To opt-out, [click here](/settings)
