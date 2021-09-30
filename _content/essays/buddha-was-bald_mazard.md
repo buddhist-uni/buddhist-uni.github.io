@@ -7,7 +7,7 @@ year: 2010
 address: "Phnom Penh, Cambodia"
 course: buddha
 tags:
-  - art
+  - bart
   - caste
 ---
 

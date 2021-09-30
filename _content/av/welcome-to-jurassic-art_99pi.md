@@ -5,7 +5,7 @@ month: apr
 external_url: "https://99percentinvisible.org/episode/welcome-to-jurassic-art-redux/"
 course: biology
 tags:
-  - art-theory
+  - art
   - communication
   - science
   - dinosaurs

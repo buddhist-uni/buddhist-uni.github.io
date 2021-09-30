@@ -4,7 +4,6 @@ authors:
   - "Daniel Gilbert"
 year: 2006
 publisher: "Vintage"
-status: featured
 olid: OL3422699M
 course: world
 tags:

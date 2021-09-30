@@ -1,7 +1,7 @@
 ---
 title: "buddhisim [sic] art"
 external_url: "https://skfb.ly/6ZqKo"
-course: art
+course: bart
 tags:
   - sculpture
 ---

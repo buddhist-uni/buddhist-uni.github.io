@@ -6,7 +6,7 @@ month: sep
 external_url: "https://99percentinvisible.org/episode/the-straight-line-is-a-godless-line/"
 course: inner
 tags:
-  - art-theory
+  - art
   - architecture
 series: 99pi
 number: 134

@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1K1jLZCFtCnhVdfi6uN7cGU5cqXfhSLwE/view"
 course: form
 tags:
-  - art
+  - bart
   - borobudur
   - javanese
   - indian

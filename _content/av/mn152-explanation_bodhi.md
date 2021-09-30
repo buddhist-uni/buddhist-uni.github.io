@@ -1,5 +1,5 @@
 ---
-title: "MN 152 Discussion"
+title: "MN 152 Sutta Study Class"
 authors:
   - bodhi
 external_url: "https://dharmaseed.org/teacher/33/talk/36312/"

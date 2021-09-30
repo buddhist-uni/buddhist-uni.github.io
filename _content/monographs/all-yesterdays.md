@@ -6,7 +6,7 @@ year: 2012
 course: biology
 tags:
   - time
-  - art-theory
+  - art
   - dinosaurs
   - animalia
 olid: OL32277821M

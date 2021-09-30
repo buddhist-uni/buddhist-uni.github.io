@@ -1,7 +1,7 @@
 ---
 title: "Chinese Pure Land in the Human Realm"
 authors:
-  - "Charles Jones"
+  - jones-charles
 year: 2019
 month: nov
 formats: [m4a]
@@ -13,7 +13,7 @@ source_url: "https://newbooksnetwork.com/charles-b-jones-chinese-pure-land-buddh
 course: engaged
 tags:
   - chinese
-  - pure-land
+  - pureland
 ---
 
 > neither of those positions equipped anyone to address concrete social, political, or any other kind of human problem

@@ -12,7 +12,7 @@ tags:
   - modern-music
   - music
   - modernity
-  - art-theory
+  - art
   - culture
 status: featured
 year: 1988

@@ -12,7 +12,7 @@ address: Kandy
 course: form
 tags:
   - imagery
-  - ancient-art
+  - bart
   - theravada
 ---
 

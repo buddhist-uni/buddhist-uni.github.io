@@ -11,7 +11,7 @@ tags:
   - buddha
   - indian
   - iddhis
-  - art
+  - bart
 year: 2015
 journal: jocbs
 volume: 11
