@@ -9,7 +9,7 @@ tags:
   - thailand
   - cambodian
   - cambodian-art
-  - art
+  - bart
   - angkor
 course: west
 status: featured

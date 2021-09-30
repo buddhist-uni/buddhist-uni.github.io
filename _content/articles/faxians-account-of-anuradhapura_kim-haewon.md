@@ -11,7 +11,7 @@ tags:
   - anuradhapura
   - pilgrimage
   - korean
-  - art
+  - bart
 year: 2019
 journal: hijbs
 volume: 2

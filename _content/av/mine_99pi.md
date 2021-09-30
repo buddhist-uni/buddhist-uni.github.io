@@ -12,6 +12,7 @@ tags:
   - power
   - inner
   - law
+  - things
 year: 2021
 month: jun
 series: 99pi

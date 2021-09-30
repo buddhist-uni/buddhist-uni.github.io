@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1g3kr1z_m51-GF-5uCfneUoYS2ZgLaWD7
 tags: 
   - extremism
   - modernity
-  - art-theory
+  - art
   - emotions
   - aesthetics
 course: ideology

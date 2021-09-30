@@ -17,7 +17,7 @@ tags:
   - cambodian-art
   - power
   - parami
-  - art
+  - bart
 ---
 
 The Buddha statues of Southeast Asia have long been coveted and plundered. In this abbreviated recording, Angela Chiu explains how Thai Buddhists justified these iconic thefts in myth and legend.

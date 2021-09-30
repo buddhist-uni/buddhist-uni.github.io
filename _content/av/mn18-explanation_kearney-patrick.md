@@ -1,5 +1,5 @@
 ---
-title: "MN 18: Discussing the Sweet Essence"
+title: "MN 18: The Sweet Essence"
 authors:
   - kearney-patrick
 external_url: "https://dharmaseed.org/teacher/516/talk/32316/20150921-Patrick_Kearney-BMIMC-the_sweet_essence_part_1-32316.mp3"

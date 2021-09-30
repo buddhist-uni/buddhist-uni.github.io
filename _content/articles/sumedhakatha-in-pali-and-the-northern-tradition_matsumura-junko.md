@@ -8,7 +8,7 @@ drive_links:
 course: buddha
 tags:
   - rebirth-stories
-  - art
+  - bart
 year: 2010
 journal: jicpbs
 volume: 14

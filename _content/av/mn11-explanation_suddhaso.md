@@ -1,5 +1,5 @@
 ---
-title: "MN 11: Explaining the Cūḷasīhanāda Sutta"
+title: "MN 11: The Cūḷasīhanāda Sutta"
 authors:
   - suddhaso
 external_url: "https://fb.com/1698215973551436"

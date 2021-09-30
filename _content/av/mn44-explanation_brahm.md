@@ -1,5 +1,5 @@
 ---
-title: "MN 44: Discussing the Culavedalla Sutta"
+title: "MN 44: Culavedalla Sutta Study"
 authors:
   - brahm
 external_url: "https://bswa.org/teaching/mn44-culavedalla-sutta-shorter-series-questions-answers-ajahn-brahm/"

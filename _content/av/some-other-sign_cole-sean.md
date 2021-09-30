@@ -10,7 +10,7 @@ number: 59
 tags:
   - power
   - cities
-  - art-theory
+  - art
   - poetry
   - inner
   - speech

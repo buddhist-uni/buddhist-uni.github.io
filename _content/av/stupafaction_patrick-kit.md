@@ -9,7 +9,7 @@ drive_links:
 course: indian
 tags:
   - jataka
-  - art
+  - bart
   - sanchi
 ---
 

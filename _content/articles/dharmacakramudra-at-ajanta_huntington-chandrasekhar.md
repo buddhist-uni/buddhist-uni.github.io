@@ -11,7 +11,7 @@ drive_links:
 course: mahayana-roots
 tags:
   - esoteric
-  - buddhist-art
+  - bart
   - deccan
 year: 2000
 journal: "Ars Orientalis"
