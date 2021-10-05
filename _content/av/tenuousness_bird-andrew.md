@@ -5,12 +5,11 @@ external_url: "https://youtu.be/I9rmwllw5q8"
 subcat: music
 year: 2009
 month: jan
-course: world
 tags:
+  - world
   - ambulit
   - time
   - philosophy-of-science
-  - math
   - academia
 publisher: "Fat Possum"
 ---
