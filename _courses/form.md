@@ -237,12 +237,17 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
-{% include content_blurb.html category="av" slug="healing-is-possible_tnh" %}
-- An inspiring talk to a group of monastics, encouraging them to set a good example for their guests.
-
 #### Main Text
 
 {% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
+
+#### Coda
+
+{% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
+- Buddhist monasticism faces many challenges as it comes West, especially for nuns.
+
+{% include content_blurb.html category="av" slug="healing-is-possible_tnh" %}
+- An inspiring talk to a group of monastics, encouraging them to set a good example for their guests, showing how there need not be such a strict tension between personal practice and social engagement.
 
 ### Part 3: Personal Practice
 

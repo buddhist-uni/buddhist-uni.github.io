@@ -11,56 +11,41 @@ title: Behind the Scenes
 >  
 > ~ [Vasubandhu](https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/life-of-vasubandhu)
 
-# Preface
+# Background
 
-While studying in London, there was a room at the Queen Mary library I liked to hang out in.
-A large, dimly lit room, it was only accessible to us undergrads and the librarians.
-Tables and chairs lined the tinted glass walls and in the center were rows and rows of books.
-Called "The Undergraduate Reading Room," it contained a copy of every book for every class that semester.
+Most schools of Buddhism in Asia have a standardized curricula for monastics and those of faith.
+The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Modern" Buddhism emerging in the English-speaking world still has no academic standard.
+Perhaps that makes sense as we're still figuring it out!
+But while our field is new, it is also large enough now that students of Buddhist Studies need guidance through the vast corpus.
 
-It was built to ensure that even the poorest students at the university had access to their assigned reading, but the result was even cooler:
-The room offered an up-to-date, physical snapshot of the entire university.
-
-I'd walk around and run my hand down the shelves: Econ 101, Intro to Macroeconomics, Intro to Microeconomics... Education... Electrical Engineering... Film Studies... Whatever subject interested me, I'd pull the recommended text off the shelf, and read.
-
-I spent many hours there happily chipping away at my ignorance.
-I finished none of the books (even for my own classes!) but just skimming the collection gave me an appreciation for the breadth of the academy and for the richness of its disciplines.
-
-# History
-
-Most schools of Buddhism in Asia have a standardized curriculum for monastics and those of faith.
-The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Protestant" Buddhism emerging in the English-speaking world still has no academic standards.
-Perhaps that makes sense since we're still in the process of understanding the darn thing!
-Our field is still new, I admit, but it is also large enough now that its students need guidance to get up to speed.
-
-When I ordained, I felt that need myself and looked around for syllabi to help me.
-I'm not afraid of studying history or questioning orthodoxy, but I'm also not okay with the materialistic reduction of religion.
-So, rejecting both Eastern/sectarian and Western/academic structures, I found myself assembling a curriculum for myself out of what I could find online.
+When I ordained as a monk, I personally felt that need and looked around for a curriculum to help me.
+Rejecting both sectarian and secular structures, however, I found myself assembling my own study-plan from what I could find online.
 
 Fortunately, [there is quite a lot](https://buddhistuniversity.net/sources/)!
 
-[Having organized that material for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) in a way that reminded me fondly of the QMUL library, I started to share that folder with my friends, who in turn encouraged me to build [this website](https://buddhistuniversity.net).
+[Having organized that for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r), I started to share what I had compiled with my friends, who later encouraged me to build [this website](https://buddhistuniversity.net).
 
-# Using the Site
+# This Website
 
-There are two primary ways to use the website: taking [our self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
+There are two primary ways to use the site: taking [the self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
 
-The library contains all the best content I've found organized [by topic](https://buddhistuniversity.net/tags/). These topical bibliographies are then compiled into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used in your study group or class. There are already students and teachers around the world using the free material here in a variety of ways and I couldn't be prouder!
+The library contains all the best content I've found organized [by topic](https://buddhistuniversity.net/tags/) (as well as [a few other ways](https://buddhistuniversity.net/library/)).
 
-# My Methodology
+These topical bibliographies are then organized into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used in your study group or class. There are already students and teachers around the world using the material here in a variety of ways and I couldn't be prouder!
 
-After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate folder on Google Drive.
+# Methodology
 
-In this way, my library (like all personal libraries) slowly grew to serve two purposes: 
+After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate subfolder on [Google Drive](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf) which corresponds to the topic of the work.
 
-1. to organize the media for my own safe-keeping, retrieval and revision, and  
-2. for others (hello!) to peruse and, hopefully, benefit from.
+When a given folder has accumulated a fairly broad range of material, I then add its contents to this website, and add the related tag to the topics page.
 
-These two aims find unity in the pride that any book-worm inevitably feels towards their library. As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), this website contains (editorially and structurally) all of my personal biases. **This is a feature not a bug.** I named the elephants which carry my assembled treatises with thought, care, and delight and I hope that, as you explore my library, you will find some of that delight too. 😊 🐘
+As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), that ontology contains (editorially and structurally) my personal biases. **This is a feature not a bug.** I named my elephants with thought, care, and delight and I hope that, as you explore my library, you will find some of that delight too. 😊 🐘
 
 # About the Code
 
 This is a static HTML website built with [Jekyll](https://jekyllrb.com/) and served by [GitHub Pages](https://pages.github.com/).
+
+(Feel free to skip this section if you're not interested in the technical details.)
 
 ## Running the site locally
 
@@ -109,19 +94,20 @@ Lastly,
 
 For questions about the source code, feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) or post an issue or comment on GitHub.
 
-## Reuse
+# Reuse
 
-The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways. Feel free to reuse it in any (ethical) way you like or fork the repository.
+The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways or you can fork the repo to use the source code.
+[The entire database can also be found in Bibtex format here](https://buddhistuniversity.net/content.bib), in case that's helpful, for example for importing into an academic reference manager.
 
-You can also find [the entire database in Bibtex format on the website](https://buddhistuniversity.net/content.bib), in case that's useful.
+**Feel free to reuse this website in any (ethical) way you like** consistent with the attached MIT License.
 
 # Future Directions
 
-Over the next few years, I would like to expand the University's offerings further and further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible.
+Over the next few years, I'd like to expand the University's offerings further: into various regional forms of Buddhism, subtler points of Buddhist philosophy, the grand arcs of history, and much, much more. I'd also like to continue to improve the site's design and marketing, so it can be as accessible as possible.
 
-If you'd like to contribute, take a look at [our issues page on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/issues) for some open tasks in need of help, or feel free to [email me](mailto:khemarato.bhikkhu@gmail.com) with your idea!
+If you'd like to contribute, comment on [an open issue on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/issues) or [email me](mailto:khemarato.bhikkhu@gmail.com) with your own idea for a project and we'll take it from there!
 
-I have tried to select content with "staying power" to avoid, as much as possible, anything that will become outdated in a few years.  This site, while technically a "blog," is **not** another newsfeed of digital ephemera. It is an experiment in slow technology. It is my hope that this curriculum will provide a basis for Buddhist Studies for decades to come.
+It is my hope that this curriculum will provide a basis for Buddhist Studies for decades to come.
 
 # Disclaimers
 
