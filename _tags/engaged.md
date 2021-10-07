@@ -1,10 +1,10 @@
 ---
 title: "Engaged Buddhism"
 parents:
-  - modern
   - ethics
+  - modern
   - pureland
-description: An incomplete bibliography on Socially Engaged Buddhism.
+description: A partial bibliography of works about Socially Engaged Buddhism.
 illustration: https://illeakyw.sirv.com/Images/tags/Guanyin-Hallwylska.jpg
 illustration_width: 512
 illustration_height: 768

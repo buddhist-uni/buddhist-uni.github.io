@@ -4,7 +4,7 @@
     {%- assign t = include.level | plus: 1 -%}
     {%- if tag.level and tag.level < t -%}
         {%- continue -%}
-    {%- elsif tag.parents contains include.tag.slug -%}
+    {%- elsif tag.parents[0] == include.tag.slug -%}
         {%- assign childs = childs | push: tag -%}
     {%- endif -%}
 {%- endfor -%}
