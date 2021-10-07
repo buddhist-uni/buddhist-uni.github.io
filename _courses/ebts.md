@@ -9,7 +9,7 @@ lecturers:
 epigraph: |
   > Buddho ca kho kāruṇiko mahesi,  
   > Yo satthā lokassa sadevakassa;  
-  > [...] tadā avoca  
+  > [...] tadā avoca...  
   >  
   > The Enlightened One, the Sage of Great Compassion,  
   > The Teacher of the world with [all] its gods,  
@@ -81,6 +81,9 @@ the history of the texts you're studying:
 
 {% include content_blurb.html category="essays" slug="buddha-as-a-teacher_dhammika" %}
 - In what context and in what way were these teachings delivered? And to what purpose?
+
+{% include content_blurb.html category="excerpts" slug="vaca_analayo" %}
+- How did the Buddha speak?
 
 {% include content_blurb.html category="av" slug="early-buddhism_texts_sujato-and-brahmali" blurb="
 - We invite Ajahn Brahmali back, along with our friend (and founder of SuttaCentral) Ajahn Sujato, for a special guest class on the early texts." %}
