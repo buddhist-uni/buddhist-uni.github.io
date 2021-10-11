@@ -9,4 +9,4 @@ tags:
   - music
 ---
 
-Musicians telling the story of how one of their singles came to be made.
+Musicians tell the story of how one of their singles came to be made.
