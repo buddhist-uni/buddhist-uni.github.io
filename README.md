@@ -23,19 +23,19 @@ Rejecting both sectarian and secular structures, however, I found myself assembl
 
 Fortunately, [there is quite a lot](https://buddhistuniversity.net/sources/)!
 
-[Having organized that for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r), I started to share what I had compiled with my friends, who later encouraged me to build [this website](https://buddhistuniversity.net).
+[Having organized that in Google Drive for my own studies](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r), I started to share what I had compiled with my friends, who later encouraged me to turn it into [this website](https://buddhistuniversity.net).
 
 # This Website
 
-There are two primary ways to use the site: taking [the self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/library/).
+There are two primary ways to use the site: taking [the self-paced courses](https://www.buddhistuniversity.net/courses/) or hanging out at [the library](https://www.buddhistuniversity.net/content/).
 
 The library contains all the best content I've found organized [by topic](https://buddhistuniversity.net/tags/) (as well as [a few other ways](https://buddhistuniversity.net/library/)).
 
-These topical bibliographies are then organized into [course syllabi](https://buddhistuniversity.net/courses/) which can be studied online or used in your study group or class. There are already students and teachers around the world using the material here in a variety of ways and I couldn't be prouder!
+These topical bibliographies are then organized into course syllabi which can be studied online or used in your study group or class. There are already students and teachers around the world using the material here in a variety of ways and I couldn't be prouder!
 
 # Methodology
 
-After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate subfolder on [Google Drive](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf) which corresponds to the topic of the work.
+After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate [subfolder on Google Drive](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf) which corresponds to the topic of the work.
 
 When a given folder has accumulated a fairly broad range of material, I then add its contents to this website, and add the related tag to the topics page.
 
@@ -49,7 +49,7 @@ This is a static HTML website built with [Jekyll](https://jekyllrb.com/) and ser
 
 ## Running the site locally
 
-To run the site locally, clone the repo, then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. 
+To run the site locally, clone [the repo](https://github.com/buddhist-uni/buddhist-uni.github.io), then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. 
 
 To speed that up, you have two options:
 
@@ -87,7 +87,7 @@ You can think of each of the `_folders` in [the source code](https://github.com/
 - [_sass](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_sass) contains [the site's css](https://jekyllrb.com/docs/assets/).
 - [_series](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_series) - Are collections of `_content` items that were published as part of a `number`ed `series` (specified by fields on the content item)
 - [_tags](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags) - The bibliographic topics, arranged in a directed, ontological graph via the `parents` field.
-- [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with Integration Tests I have used during development in the past, and decided to keep around in case the code is useful in the future.
+- [_tests](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tests) - A couple of pages with [Integration Tests](https://buddhistuniversity.net/tests/content) I have used during development in the past, and decided to keep around in case the code is useful in the future.
 
 Lastly,
 - [.github/workflows](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/.github/workflows) contains my [GitHub Actions](https://docs.github.com/en/actions) [Workflow files](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions) which build the site and check for certain errors.
@@ -99,7 +99,7 @@ For questions about the source code, feel free to [email me](mailto:khemarato.bh
 The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways or you can fork the repo to use the source code.
 [The entire database can also be found in Bibtex format here](https://buddhistuniversity.net/content.bib), in case that's helpful, for example for importing into an academic reference manager.
 
-**Feel free to reuse this website in any (ethical) way you like** consistent with the attached MIT License.
+**Feel free to reuse this website in any (ethical) way you like** consistent with [the attached MIT License](https://mit-license.org/).
 
 # Future Directions
 
