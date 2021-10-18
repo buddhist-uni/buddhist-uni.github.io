@@ -41,6 +41,7 @@ In addition to the content I've featured on this site, you can find lots more at
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
 * [The Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
+* [The Oxford Research Encyclopedia of Religion](https://oxfordre.com/religion/search?siteToSearch=religion&q=Buddhist&searchBtn=Search&isQuickSearch=true)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
 * [The Agama Research Group](http://agamaresearch.dila.edu.tw/publications)
