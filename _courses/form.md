@@ -71,6 +71,8 @@ On forms and the formless.
 There are two textbooks for this first part of the course:
 
 {% include content_blurb.html category="booklets" slug="buddhist-sociological-thought_gnanarama" %}
+{:.mb-1}
+
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 
 #### Introduction
