@@ -38,7 +38,7 @@ Note that this course is still a work in progress by its author, John Kieschnick
 
 ### Prerequisites
 
-While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student with time and courage.
+While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student [with time and courage](http://www.pinyin.info/readings/texts/moser.html){:target="_blank"}.
 
 ## Textbooks
 
