@@ -150,7 +150,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 #### Attending to the Deathless
 
 {% include content_blurb.html category="canon" slug="snp5.15" %}
-- What knowledge eradicates ignorance?
+- Is "the deathless" the same as "nothingness"? What knowledge eradicates ignorance?
 
 {% include content_blurb.html category="booklets" slug="enlightenment_yuttadhammo" %}
 - An excellent, clear summary of the path and its fruit, connecting the dots between mindfulness meditation and the attaining of *nibbāna*.

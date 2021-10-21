@@ -45,6 +45,8 @@ test_cases:
     - [shared-characters-in-jain-buddhist-and-hindu-narrative_appleton, story-of-the-horse-king_appleton]
     - [politics-of-tourism-in-asia_richter-linda, battling-the-buddha-of-love_falcone-jessica]
     - [piranesi_clarke-susanna, no-one-belongs-here-more-than-you_july-miranda]
+    - [yasodhara_sasson-v, wife-and-son_gindin-matthew]
+    - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
 ---
 
 A series of integration tests for the quality of the content recommendations.
