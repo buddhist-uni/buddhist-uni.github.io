@@ -2,7 +2,7 @@
 title: "PTS Converter"
 source_url: "http://pts.ticao.de"
 external_url: "https://benmneb.github.io/pts-converter/"
-course: pali-canon
+tags: [pali-canon]
 year: 2018
 ---
 
