@@ -35,11 +35,13 @@ These topical bibliographies are then organized into course syllabi which can be
 
 # Methodology
 
-After reading stuff I find online, I  contemplate what I learned from it and who I’d recommend it to. Only after answering these questions affirmatively do I then squirrel away the e.g. PDF into an appropriate [subfolder on Google Drive](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf) which corresponds to the topic of the work.
+After reading/listening to something good online (or [elsewhere](https://buddhistuniversity.net/exclusive/)), I  consider what I learned from the piece and who I’d recommend it to.
+After answering those questions affirmatively, I squirrel away the e.g. PDF into an appropriate [subfolder on Google Drive](https://docs.google.com/document/u/2/d/1rGLm9Xh5de0e3hsMY2yyt97MWBuZJ1V1_q0jhGe7vpw/pub#h.c2mgbtxijho) corresponding to the topic at hand.
 
-When a given folder has accumulated a fairly broad range of material, I then add its contents to this website, and add the related tag to the topics page.
+When a given subfolder has accumulated a fairly broad range of material, I then add its contents to [this website](https://buddhistuniversity.net/content/), and add the folder as a new "tag" on [the topics page](https://buddhistuniversity.net/tags/).
 
-As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), that ontology contains (editorially and structurally) my personal biases. **This is a feature not a bug.** I named my elephants with thought, care, and delight and I hope that, as you explore my library, you will find some of that delight too. 😊 🐘
+As a [map of my mind](https://photos.app.goo.gl/Z8nvMf3Cbup6WA418), that ontology (editorially and structurally) contains all my personal biases.
+**This is a feature not a bug.** I named my elephants with thought, care, and delight and I hope that, as you explore my library, you will find some of that delight too. 😊 🐘
 
 # About the Code
 
