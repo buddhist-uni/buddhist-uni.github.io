@@ -75,7 +75,7 @@ Throughout this course, we'll be using a **Common Buddhist Text** as our primary
 Selections will be referenced like this:
 
 - [CBT] L.59
-  - For example, this refers to the passage in *Common Buddhist Text* about Ven Vaṅgīsa which contains a poem in praise of the Buddha. 
+  - For example, this refers to the passage in *Common Buddhist Text* about Ven Vaṅgīsa which contains a poem in praise of the Buddha. 
   - To look up the passage, search the PDF or skim the Table of Contents for the reference number ("L.59").
   - This passage, for example, is on page 84 of the above pdf (note: page numbers differ in the printed editions).
 
