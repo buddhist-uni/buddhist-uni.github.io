@@ -112,6 +112,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - The Buddha was a real, historical figure, but many of the stories about his life are myths still expanding today.
 
 [CBT] L.7–17
+{:.mb-0}
 - Here we get the Buddha's spiritual journey in his own words.
 - Notice the repetitive nature of the early, oral texts.
 
@@ -134,6 +135,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
 
 [CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
+{:.mb-0}
 - Here we get a few stories about the Buddha's life as a teacher from the early texts.
 
 <i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 3: Significance of Buddhist Chanting
@@ -155,16 +157,27 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - And this essay commends the virtues of offering flowers: a lovely practice still common across Buddhist Asia
 
 [CBT] M.5, Th.94
+{:.mb-0}
 - Buddhists lament the passing of their teacher and build monuments in his memory.
+
 [CBT] Th.157
+{:.mb-0}
 - This verse was especially popular to carve on early monuments to the Buddha.
+
 [CBT] Th.217
+{:.mb-0}
 - An account of the first council of the Buddha's disciples after his death, at which the teachings were first codified.
+
 [CBT] M.14
+{:.mb-0}
 - In praise of the Sutras, preserved after the Buddha's death.
+
 [CBT] M.36, M.38
+{:.mb-0}
 - On the practice of giving to the Sangha in order to transfer merit to one’s deceased relatives: a practice that became common in the years after the Buddha.
+
 [CBT] M.96
+{:.mb-0}
 - On the practice of releasing animals for merit, a tradition now found across the Buddhist world.
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 5 (we'll come back to 4 later): Buddhist Art Symbols For Religious Edification
@@ -177,12 +190,19 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
 
 [CBT] Th.210
+{:.mb-0}
 - The description of reality as perceived by an awakened being in the early texts became the basis for much speculation about the nature of reality after the Buddha's passing
+
 [CBT] M.143, M.16, M.111–112 (note: M.112 is mislabeled "M.114")
+{:.mb-0}
 - Nirvana came to be identified as being the same as ultimate reality, and as the essential nature of the mind.
+
 [CBT] M.44, M.61, M.103, M.137
+{:.mb-0}
 - "Emptiness"—also present in early Buddhism—was deployed to counter this essentializing tendency.
+
 [CBT] M.62, M.142
+{:.mb-0}
 - This eventually led to a "Middle Way" synthesis of these philosophical extremes.
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 4 (as promised): Aesthetics
@@ -209,18 +229,31 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - What effect does Buddhism's encouragement to reflect on death and impermanence have on how Buddhists perceive the cosmos, life, and the religion itself?
 
 [CBT] M.73, V.33, M.56–57, M.49, M.91, M.67, M.99
+{:.mb-0}
 - Practitioners came to be encouraged to aspire to Buddhahood themselves and to take the Bodhisattva Path rather than to take the "lesser" path of the disciple so as to maximize the benefit that their enlightenment can have for others.
+
 [CBT] M.68
+{:.mb-0}
 - Role models, guides, and supporters are crucial for this Bodhisattva Path.
+
 [CBT] M.55
+{:.mb-0}
 - Thankfully, there are advanced Bodhisattvas living now as gods who can be called upon to support you on your journey.
+
 [CBT] M.144, M.6
+{:.mb-0}
 - Even the Buddha himself came to be immortalized as a quasi-god.
+
 [CBT] M.107, M.154
+{:.mb-0}
 - If the Buddha isn't truly gone, then that means all the Buddhas of the past are also still out there, making them nearly indistinguishable from the advanced, heavenly Bodhisattvas.
+
 [CBT] M.158
+{:.mb-0}
 - We can even aspire to be reborn in one of those "Buddha fields" where a Buddha is currently teaching, which promises a fast track to enlightenment.
+
 [CBT] M.129
+{:.mb-0}
 - This all eventually came to mirror Hinduism so closely that this sutra directly equates the Buddha with Brahma and the Buddhists with the Brahmins. 
 
 ##### After Chapter 6 of Robinson on “Vajrayana”
@@ -233,8 +266,11 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
 [CBT] Th.208
+{:.mb-0}
 - The early textual basis for equating enlightenment with a "diamond-like" mind.
+
 [CBT] M.11, M.17, V.3, M.22, M.42, V.23, V.30, V.38, V.43, M.106, M.114, M.147–149
+{:.mb-0}
 - A few selections from the Vajrayana Canon showing its last developments in India. 
 
 <i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 7: Social Conflict
@@ -251,18 +287,31 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 - First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
 
 [CBT] Th.31
+{:.mb-0}
 - The ideal of the "Righteous Monarch" was hugely influential in the Theravada world and continues to justify monarchy in Thailand today.
+
 [CBT] Th.215
+{:.mb-0}
 - The Theravada monks, meanwhile, hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
+
 [CBT] Th.90–91, Th.146, Th.159
+{:.mb-0}
 - The Theravadin philosophical tradition loves to break Dharmas into exact parts and definitions.
+
 [CBT] Th.135, Th.152, Th.145
+{:.mb-0}
 - The Theravada is also famous for its "morbid" meditations on pain and death.
+
 [CBT] Th.52, Th.108
+{:.mb-0}
 - But Theravada isn't all bleak, as they also celebrate the beauty of the Dhamma and of good companionship.
+
 [CBT] Th.194
+{:.mb-0}
 - Very conservative in their practice of the monastic rules, Theravada monks still go on alms round and abstain from eating dinner to this day.
+
 [CBT] Th.117, Th.172, Th.181, Th.196, Th.226
+{:.mb-0}
 - Lastly, we read Theravada responses to some Mahayana ideas.
 
 
@@ -272,22 +321,39 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
 
 [CBT] Th.41, M.115
+{:.mb-0}
 - The Confucian social values of ancient China found a natural counterpart in certain early Buddhist teachings, which came to be emphasized.
+
 [CBT] Th.50, M.34
+{:.mb-0}
 - Here, for example, we compare the earlier (Theravada) perspective on honoring one's parents with the Chinese perspective.
+
 [CBT] M85–86
+{:.mb-0}
 - Yet there were some real innovations, such as the Chinese Buddhist embrace of vegetarianism.
+
 [CBT] Th.218, M.14
+{:.mb-0}
 - Notice here how sutras and scholarship themselves came to be objects of worship.
+
 [CBT] M.165
+{:.mb-0}
 - The Chan/Zen school, however, rejected this new focus on texts, and claimed an authority based on a transmission "outside" the Sutras.
+
 [CBT] M.80
+{:.mb-0}
 - They advocated a wise, flexible ethics not slavishly devoted to following monastic rules.
+
 [CBT] M.127
+{:.mb-0}
 - And a "direct, non-conceptual" experience of the truth,opposed to the mere "verbal" Dharma of the sutras.
+
 [CBT] M.31
+{:.mb-0}
 - Both these traditions (the scholarly and Chan) went through periods of patronage and persecution, which left a lasting lesson on the impermanence of fame immortalized in poetry such as this.
+
 [CBT] M.167
+{:.mb-0}
 - We end our section on China by reading this very famous story about the Sixth Patriarch of the Chan School.
 
 ##### Robinson Chapter 9: Korea and Vietnam
@@ -296,6 +362,7 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 - What does a Chinese monk's pilgrimage to Sri Lanka have to do with Korea?
 
 [CBT] M.18, M.26, M.78, M.108, M.118, M.149
+{:.mb-0}
 - The Vietnamese and Korean traditions have taken on a more "engaged" attitude towards Awakening and the Bodhisattva path.
 
 ##### Robinson Chapter 10: Japan
@@ -303,14 +370,23 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
 [CBT] M.27, M.102
+{:.mb-0}
 - Japanese Buddhists are famous for their patient austerity.
+
 [CBT] M.81
+{:.mb-0}
 - Yet they often have a rather lenient attitude towards e.g. alcohol.
+
 [CBT] M.105, M.159
+{:.mb-0}
 - A Bodhisattva can make vows to delay their awakening in order to construct an elaborate and appealing "Buddha field" into which their followers may be reborn. Here we read the vows of the Buddha Amitabha, whose worship is especially popular in Japanese Buddhism.
+
 [CBT] M.39, M.74
+{:.mb-0}
 - And here we read about the vast array of Buddha fields across the ocean-like multiverse and how to attain rebirth in one.
+
 [CBT] M.156
+{:.mb-0}
 - On the other hand, all such notions (even up to enlightenment itself) are in fact empty, and there is actually nothing to attain.
 
 ##### Robinson Chapter 11: Tibet
@@ -320,18 +396,31 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 - Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
 
 [CBT] V.47
+{:.mb-0}
 - How to help others, including the place for supernormal powers.
+
 [CBT] V.22
+{:.mb-0}
 - The Dharma is not an impermanent thing.
+
 [CBT] V.70
+{:.mb-0}
 - A passage from the "Tibetan Book of the Dead" on the nature of mind.
+
 [CBT] V.71–73
+{:.mb-0}
 - On the three kinds of knowledge. Philosophy in general, and epistemology in particular, is highly valued in Tibetan Buddhism.
+
 [CBT] V.78
+{:.mb-0}
 - Ultimate knowledge is, however, non-dual.
+
 [CBT] M.168, V.80
+{:.mb-0}
 - Tibetan Buddhism is (in)famous for its worldly teachers. These passages describe one such role model for the engaged Bodhisattva.
+
 [CBT] V.91
+{:.mb-0}
 - Exuberant guru and deity worship are also notable features of Tibetan Buddhism.
 
 <i class="fas fa-book-open"></i> <i>Aspects (of Buddhist Sociological Thought)</i> Chapter 8: Women's Social Role
@@ -341,6 +430,7 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 ##### Robinson Chapter 12: “Buddhism Comes West”
 
 [CBT] Th.23, Th.25, Th.26, Th.47, Th.104, Th.118, Th.129, Th.155, Th.203, Th.207
+{:.mb-0}
 - Western, "Protestant" Buddhists have selected certain strands from the early Canon to emphasize. Here, we read some of their favorite passages.
 
 {% include content_blurb.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
@@ -376,13 +466,20 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
-[CBT] Th.54, Th.85–88, Th.105,  
+[CBT] Th.54, Th.85–88, Th.105
+{:.mb-0}
 - Good friendship is vital on the path to Awakening.
+
 [CBT] Th.79
-- The Sangha are not priests. Buddhist monks cannot purify you, only you can purify you
+{:.mb-0}
+- The Sangha are not priests. Buddhist monks cannot purify you, only you can purify you.
+
 [CBT] M.89, Th.95
+{:.mb-0}
 - Still, you should receive the precepts from someone keeping them, and monks and nuns across the Buddhist world chant protective blessings for their lay supporters.
+
 [CBT] Th.190
+{:.mb-0}
 - The lay and monastic communities are vital to the support of each other.
 
 #### Main Text
@@ -390,6 +487,7 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
 
 [CBT] Th.191, Th.204
+{:.mb-0}
 - The core of the Sangha is the Ariya Sangha: those disciples who have attained awakening themselves. As long as they are present, and the community meets in harmony, the Dharma will thrive.
 
 #### Coda
@@ -409,8 +507,11 @@ The last third of our class tackles the more prescriptive, “micro” question 
 {% include content_box.html category="booklets" slug="lay-buddhist-practice_khantipalo" %}
 
 [CBT] Th.39–40, Th.49, Th.96, Th.112, Th.114
+{:.mb-0}
 - The Buddha’s description of (/prescription for) "the good life" for a householder.
+
 [CBT] Th.228, M.162
+{:.mb-0}
 - Citta the Householder shows what is possible for laypeople to achieve.
 
 #### Supplements
@@ -425,6 +526,7 @@ Listen to this alongside the section of Khantipalo about refuge and the triple g
 - Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about “taking refuge”
 
 [CBT] Th.89, Th.93, M.82
+{:.mb-0}
 - The path starts with faith.
 
 
@@ -437,10 +539,15 @@ A few more words are also due on the subject of restraint, beyond the five prece
 - What monastic behaviors and vows do you know about already? How do the monastic and “eight precept” observances help with these three duties? What do you think is their benefit? Can lay Buddhists practice these? Should they?
 
 [CBT] Th.21, Th.102, Th.122
+{:.mb-0}
 - On wholesome and unwholesome actions of body, speech, and mind.
+
 [CBT] M.109, M.124
+{:.mb-0}
 - On how to use meditation as an antidote to greed, hatred, and restlessness.
+
 [CBT] V.55–56
+{:.mb-0}
 - Does this admonishment to practice solitude contrast with the emphasis on the spiritual community we read earlier? How do you explain this tension?
 
 #### Praxis Conclusion 
@@ -449,11 +556,13 @@ A few more words are also due on the subject of restraint, beyond the five prece
 - Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
 [CBT] V.52, V.54
+{:.mb-0}
 - No matter what happens: never give up.
 
 ### Conclusion to the Class
 
 [CBT] Th.24
+{:.mb-0}
 - The purpose of learning is to calm the mind.
 
 {% include content_blurb.html category="av" slug="pseudobuddhism_brahm" %}
