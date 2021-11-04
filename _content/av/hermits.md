@@ -13,5 +13,4 @@ tags:
 year: 2015
 ---
 
-Bill Porter revisits the hermits of the Zhongnan Mountains 25 years after his first trip.
-
+Bill Porter revisits the hermits of the Zhongnan Mountains 25 years after [his first trip](/content/monographs/road-to-heaven_porter).
