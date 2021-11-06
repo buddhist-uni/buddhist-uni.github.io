@@ -4,12 +4,18 @@ section: about
 layout: setlinktargets
 ---
 
-# Individual Monastics
+# Sources
+
+Below is a list of the sources used in the construction of the University's curriculum.
+
+Only a tiny fraction of their contents could be featured on this website, so please see the links below for their complete archives.
+
+## Individual Monastics
 
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
   * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/publications-by-bhikkhu-analayo/)
 * [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html)
-* Bhante Sujato's books [on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK)
+* [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK)
 * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php)
 * [Ajahn Suchart](https://www.phrasuchart.com/enbook/)
 * [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books) ([Mirror](http://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf))
@@ -20,7 +26,7 @@ layout: setlinktargets
   - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
 * [PhotoDharma.net](https://www.photodharma.net/Books/Books.htm)
 
-# Monasteries and Traditions
+## Monasteries and Traditions
 
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
 * [The Ajahn Chah Tradition](https://forestsangha.org/teachings/books?language=English)
@@ -30,7 +36,7 @@ layout: setlinktargets
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)
 
-# Digital Libraries
+## Digital Libraries
 
 * [Access to Insight](https://www.accesstoinsight.org/)
 * [BuddhaNet](http://www.buddhanet.net/ebooks.htm)
@@ -48,7 +54,7 @@ layout: setlinktargets
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [Archive.org](https://archive.org/search.php?query=dhamma%20OR%20buddhism%20OR%20buddhist)
 
-# Open Access Publishers
+## Open Access Publishers
 
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
 * [The Buddhist Publication Society](http://www.bps.lk/library.php)
@@ -62,7 +68,8 @@ layout: setlinktargets
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
 
-# Periodicals
+## Periodicals
 
-- Please see [the journals index](/journals) for the links to all our favorite journals.
+{% for j in site.journals %}
+* [{{ j.title }}]({{ j.external_url }}){% endfor %}
 
