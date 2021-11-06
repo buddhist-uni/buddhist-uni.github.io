@@ -10,6 +10,7 @@ course: form
 tags:
   - philosophy
 year: 2015
+address: "Thailand"
 month: dec
 publisher: "Mahachulalongkorn"
 ---

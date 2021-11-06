@@ -1,5 +1,6 @@
 ---
 title: "The Journal of the International Association of Buddhist Studies"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/index"
+external_url: "https://poj.peeters-leuven.be/content.php?url=journal&journal_code=JIABS"
 ---
 
+The organ of [the International Association of Buddhist Studies](http://iabsinfo.net/), the journal used to be published by [Heidelberg University](https://journals.ub.uni-heidelberg.de/index.php/jiabs/index) but is now a partially open-access journal published by Peeters Online.
