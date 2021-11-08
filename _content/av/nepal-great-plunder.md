@@ -8,10 +8,12 @@ course: tibetan
 tags:
   - things
   - capitalism
-  - art
+  - bart
+  - west
   - asia
   - nepal
 publisher: "Al Jazeera"
+subcat: film
 ---
 
 > how the art world's hunger for ancient artifacts is destroying a culture
