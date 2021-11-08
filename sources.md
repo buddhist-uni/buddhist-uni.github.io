@@ -10,7 +10,7 @@ Below is a list of the sources used in the construction of the University's curr
 
 Only a tiny fraction of their contents could be featured on this website, so please see the links below for their complete archives.
 
-## Individual Monastics
+## Individual Authors
 
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
   * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/publications-by-bhikkhu-analayo/)
@@ -54,6 +54,11 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [Archive.org](https://archive.org/search.php?query=dhamma%20OR%20buddhism%20OR%20buddhist)
 
+## Periodicals
+
+{% for j in site.journals %}
+* [{{ j.title }}]({{ j.external_url }}){% endfor %}
+
 ## Open Access Publishers
 
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
@@ -65,11 +70,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Corporate Body of the Buddha Educational Foundation](http://www.budaedu.org/en/)
 * [The Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
+* [84000.co](https://84000.co/)
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
-
-## Periodicals
-
-{% for j in site.journals %}
-* [{{ j.title }}]({{ j.external_url }}){% endfor %}
-

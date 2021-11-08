@@ -568,6 +568,9 @@ A few more words are also due on the subject of restraint, beyond the five prece
 {% include content_blurb.html category="av" slug="pseudobuddhism_brahm" %}
 - Ajahn Brahm, in his light-hearted way, comments on the above verse.
 
+{% include content_blurb.html category="articles" slug="taking-form_franz-koun" %}
+- What form will your practice take?
+
 {% include content_blurb.html category="canon" slug="dedication_longchenpa" %}
 - It's common in many Buddhist cultures to end a meritorious event or auspicious occasion with a short dedication. Here is a typical such prayer from the Tibetan Tradition.
 
