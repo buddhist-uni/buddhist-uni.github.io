@@ -11,6 +11,7 @@ tags:
   - cambodian-art
   - bart
   - angkor
+  - capitalism
 course: west
 status: featured
 year: 2014

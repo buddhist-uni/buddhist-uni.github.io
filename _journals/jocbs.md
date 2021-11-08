@@ -1,6 +1,6 @@
 ---
 title: "The Journal of the Oxford Center for Buddhist Studies"
-external_url: "http://jocbs.org/index.php/jocbs"
+external_url: "http://www.jocbs.org/index.php/jocbs/issue/archive"
 publisher: "The Oxford Centre for Buddhist Studies"
 ---
 
