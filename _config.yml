@@ -36,6 +36,20 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 rss: rss
+feed:
+  posts_limit: 10000
+  collections:
+    content:
+      categories:
+        - articles
+        - av
+        - booklets
+        - canon
+        - essays
+        - excerpts
+        - monographs
+        - papers
+        - reference
 show_excerpts: true
 ## Feature Flags
 show_similars: true

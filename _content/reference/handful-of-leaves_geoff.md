@@ -2,6 +2,8 @@
 title: "Handful of Leaves: An Anthology from the Sutta Piṭaka"
 authors: [geoff]
 external_url: "https://www.dhammatalks.org/ebook_index.html#handfulOfLeaves"
+year: 2003
+month: mar
 formats: [epub, mobi]
 drive_links:
   - "https://drive.google.com/file/d/1n5tmHhJgAqXTIBRS5ivV8ww6uYkpro-j/view?usp=drivesdk"

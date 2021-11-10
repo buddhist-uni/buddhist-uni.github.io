@@ -1,6 +1,7 @@
 ---
 title: "Imagery in the Early Buddhist Texts"
 icon: "far fa-images"
+next_link: "/courses/imagery/intro"
 image: https://illeakyw.sirv.com/Images/banners/wheel_stele.jpg
 image_width: 1000
 image_center_y: 50%

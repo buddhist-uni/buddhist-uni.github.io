@@ -2,6 +2,8 @@
 title: "International Classification of Functioning, Disability and Health (ICF)"
 authors: ["The World Health Organization"]
 external_url: "https://apps.who.int/classifications/icfbrowser/"
+year: 2001
+month: may
 course: world
 tags:
   - disability

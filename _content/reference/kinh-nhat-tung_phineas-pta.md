@@ -7,6 +7,8 @@ tags:
   - chan
   - chanting
 course: vietnamese
+month: jun
+year: 2020
 ---
 
 > 南無本師釋迦牟尼佛  

@@ -7,6 +7,7 @@ year: 2020
 translator: "Lowell Cook"
 drive_links: ["https://drive.google.com/file/d/1as4PX4EPXhtavVz7jI-bxI0e4jvZLHsU/view?usp=drivesdk"]
 course: monastic
+status: featured
 tags:
   - mahayana
   - path

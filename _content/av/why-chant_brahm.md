@@ -9,6 +9,7 @@ tags:
   - nibbana
   - theravada
   - faith
+year: 2010 # a wild guess
 ---
 
 Ajahn Brahm explains why he does Pali chanting.

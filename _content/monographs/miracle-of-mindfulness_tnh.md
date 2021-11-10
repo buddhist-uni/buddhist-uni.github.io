@@ -1,7 +1,7 @@
 ---
 title: "The Miracle of Mindfulness"
 authors: [tnh]
-external_url: "https://www.bps.lk/olib/wh/wh234_Hanh_Miracle-of-Being-Awake.html"
+external_url: "https://www.bps.lk/olib/wh/wh234_Hanh_Miracle-of-Being-Awake.html#TheMiracleofBeingAwake"
 publisher: bps
 olid: OL27511236M
 series: wheel

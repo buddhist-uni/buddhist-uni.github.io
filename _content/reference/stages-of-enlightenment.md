@@ -7,6 +7,7 @@ course: function
 tags:
   - path
   - vipassana
+year: 2019
 ---
 
 A small chart summarizing the four stages of enlightenment.

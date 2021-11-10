@@ -29,6 +29,9 @@
   <meta name="theme-color" content="#c69c6c">
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
   <script async src="https://kit.fontawesome.com/215a8ad627.js" crossorigin="anonymous"></script>
+  {%- if page.next_link -%}
+    <link rel="next" href="{{ page.next_link }}">
+  {%- endif -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     <script>
       if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {

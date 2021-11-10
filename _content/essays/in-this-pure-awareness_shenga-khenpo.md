@@ -4,6 +4,7 @@ authors: [shenga-khenpo]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/in-this-pure-awareness"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15KXRhT7SIQZJo3qWSVv3NTG4HtV1T5XT/view?usp=drivesdk"]
+year: 2019
 course: nibbana
 subcat: poetry
 ---

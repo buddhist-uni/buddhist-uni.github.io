@@ -15,6 +15,7 @@ course: indian
 pages: "169--174"
 tags:
   - esoteric-theravada
+  - mahayana-roots
   - theravada-roots
 ---
 
