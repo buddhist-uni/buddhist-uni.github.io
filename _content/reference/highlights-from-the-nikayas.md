@@ -1,6 +1,7 @@
 ---
 title: "Highlights of the Four Nikayas"
 external_url: "https://readingfaithfully.org/highlights-of-the-nikayas-handouts/"
+year: 2020
 course: sutta
 ---
 

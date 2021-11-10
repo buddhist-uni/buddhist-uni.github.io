@@ -4,6 +4,7 @@ external_url: "https://tipitaka.org/"
 tags:
   - pali-commentaries
   - pali-canon
+year: 1998
 status: rejected
 reason: "DPR is better"
 ---

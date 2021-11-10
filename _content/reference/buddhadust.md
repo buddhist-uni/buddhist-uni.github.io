@@ -1,6 +1,7 @@
 ---
 title: "BuddhaDust: Suttas"
 external_url: "http://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm"
+year: 2010
 tags:
   - sutta
 ---

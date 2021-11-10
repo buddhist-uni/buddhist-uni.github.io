@@ -4,6 +4,7 @@ section: courses
 slug: courses
 title: Courses
 permalink: /courses/
+next_link: /courses/buddhism
 image_width: 1280
 image: "https://illeakyw.sirv.com/Images/banners/burmese-nuns-studying.jpg"
 image_center_x: 20%

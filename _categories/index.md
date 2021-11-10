@@ -4,7 +4,9 @@ permalink: "/content/"
 layout: page
 ---
 
-Here you will find links to all the content in the library organized by type.
+Here you will find links to every single item in the library organized by type.
+
+<a href="/feed/content.xml"><i class="fas fa-rss-square"></i> RSS</a>
 
 <table>
 <colgroup>

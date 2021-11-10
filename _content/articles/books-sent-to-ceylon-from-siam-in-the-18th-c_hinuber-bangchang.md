@@ -13,6 +13,7 @@ journal: jpts
 publisher: pts
 volume: 12
 course: theravada
+status: featured
 pages: "175--212"
 tags:
   - books

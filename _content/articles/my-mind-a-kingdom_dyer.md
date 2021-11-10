@@ -6,6 +6,9 @@ drive_links: ["https://drive.google.com/file/d/1e0Imj2wAnemMxJSRbuJePObLoHrqa38i
 external_url: "https://www.bartleby.com/40/51.html"
 journal: bsr
 pages: "38--39"
+year: 1988
+volume: 5
+number: 1
 subcat: poetry
 tags:
   - ethics

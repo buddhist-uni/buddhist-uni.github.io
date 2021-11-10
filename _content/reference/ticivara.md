@@ -2,6 +2,7 @@
 title: "Ti-Civara (Website)"
 external_url: "https://ticivara.github.io/"
 course: thai-vinaya
+year: 2020
 tags:
   - thai-forest
   - vinaya-studies

@@ -22,11 +22,6 @@ tags:
 > Cold Mountain will keep you long.  
 > A gentle breeze blows the hidden pines:  
 > The closer you come, the better it sounds.  
-> Below them sits a white-haired man  
-> Who's mumbling out Daoist texts.  
-> He’s not gone home for ten years now,  
-> For he’s forgotten how he came.  
-
 
 A corpus of over three hundred poems attributed to a legendary Tang (618–907) era recluse who took the name Hánshān (Cold Mountain) from the isolated hill on which he lived in the Tiantai 天台 range.
 In pre-modern times, editions of the collection usually included fifty-some poems attributed to Hanshan’s monastic companion, Shídé 拾得­ ("Foundling") and two poems attributed to another monk, Fēnggān 豐­干. 

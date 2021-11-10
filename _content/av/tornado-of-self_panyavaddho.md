@@ -5,6 +5,7 @@ external_url: "https://archive.org/download/TalksByAjaanPanyavaddho/AjahnPanyava
 drive_links:
   - "https://drive.google.com/file/d/1Xax4q1r4TAX7Qp30JRYfvVA-RzecXjQC/view?usp=drivesdk"
 course: emptiness
+year: 2003
 tags:
   - nibbana
   - nibbana-mind-stilled

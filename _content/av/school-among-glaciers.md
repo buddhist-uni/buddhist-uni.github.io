@@ -7,6 +7,7 @@ external_url: "https://youtu.be/YdO_k7rELFQ"
 course: modernity
 tags:
   - education
+  - places
   - asia
   - himalayas
   - bhutan

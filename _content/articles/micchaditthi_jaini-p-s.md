@@ -3,6 +3,7 @@ title: "A Note on Micchādiṭṭhi in Mahāvaṃsa 25.110"
 authors:
   - "P. S. Jaini"
 source_url: "http://www.palitext.com/JPTS_scans/JPTS_2007_XXIX.pdf"
+status: featured
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1gVXq3AoX2tZSrscHoylX9lkUAWK_hJar/view?usp=drivesdk"]
 file_links:

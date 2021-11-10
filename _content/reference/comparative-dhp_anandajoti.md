@@ -3,6 +3,8 @@ title: "A Comparative Table of Dhammapada Verses"
 authors:
   - anandajoti
 external_url: "https://bit.ly/3i4dWpA"
+month: sep
+year: 2020
 course: dhp-north
 tags:
   - dhp

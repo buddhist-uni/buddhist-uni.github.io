@@ -309,6 +309,9 @@ header.post-header, div.post-content {
 
 div.content_box blockquote {
     @include relative-font-size(1.11875);
+    @include media-query($on-palm) {
+        @include relative-font-size(1);
+    }
 }
 
 span.inline_drive_link {
@@ -585,11 +588,6 @@ article.tag .subtopics {
     font-size: 105%;
 }
 
-article.tag div.tagged_content {
-    margin-bottom: 23px;
-    font-size: 105%;
-}
-
 .content_links {
     font-family: $ui-font-family;
 }
@@ -601,6 +599,9 @@ article.tag .content_links {
 
 article.content-perma div.post-content {
     font-size: 18px;
+    @include media-query($on-palm) {
+        font-size: 17px;
+    }
 }
 
 article.content-perma iframe#ytplayer {
@@ -610,7 +611,7 @@ article.content-perma iframe#ytplayer {
 article.content-perma header img {
     margin-bottom: 20px;
     margin-left: 0px;
-    max-height: 250px;
+    @extend %olcoverimg;
 }
 
 article.content-perma .content_links .source {
@@ -692,6 +693,14 @@ div.content_rating div.star_rating {
     font-size: 110%;
 }
 
+%olcoverimg {
+    object-fit: cover;
+    background-color: lightgrey;
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 250px;
+}
+
 div.featured_content_list {
     ul {
         flex-wrap: wrap;
@@ -709,10 +718,8 @@ div.featured_content_list {
         height: fit-content;
         background-color: #fdfdfd;
         img {
+            @extend %olcoverimg;
             border: 15px solid white;
-            background-color: lightgrey;
-            min-height: 150px;
-            min-width: 150px;
         }
         @include media-query(450px) {
             width: 96%;
@@ -738,6 +745,9 @@ div.featured_content_list {
     .content_desc blockquote {
         @include relative-font-size(1.11875);
         color: $grey-color-dark;
+        @include media-query($on-palm) {
+            @include relative-font-size(1);
+        }
     }
 
     .content_links {
@@ -868,6 +878,15 @@ div.featuringrow div.lecturers {
     }
     .instructions {
         font-family: $base-font-family;
+    }
+}
+
+@include media-query($on-palm) {
+    main {
+        font-size: 15px;
+        .btn {
+            font-size: 13px;
+        }
     }
 }
 
