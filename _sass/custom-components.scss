@@ -39,6 +39,7 @@
 .TagLabel {
     @extend .Label, .Label--large;
     margin-right: 4px;
+    margin-bottom: 4px;
     border-color: $brand-color;
     color: $brand-color !important;
 }
