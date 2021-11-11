@@ -13,7 +13,7 @@ title: Behind the Scenes
 
 # Background
 
-Most schools of Buddhism in Asia have a standardized curricula for monastics and those of faith.
+Most schools of Buddhism in Asia have a standardized curriculum for monastics and those of faith.
 The Gelukpa has the "Geshe" degree, Thailand has the "Nak Tham" exams, but the "Modern" Buddhism focused on the earliest Buddhist texts which is emerging in the English-speaking world still has no such academic standard.
 Perhaps that makes sense as we're still figuring it out!
 But while our field is new, it is also large enough now that students of Buddhist Studies need guidance through the vast corpus.

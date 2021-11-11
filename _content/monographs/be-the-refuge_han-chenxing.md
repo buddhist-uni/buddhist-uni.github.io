@@ -14,5 +14,5 @@ tags:
 
 A heart-warming ethnography.
 
-After you've finished (or before you start!), listen to [this interview with the author](https://newbooksnetwork.com/be-the-refuge){:ga-event-value="0.3" target="_blank"} to hear more about the process behind writing the book.
+And after you've finished reading it (or before you start!), listen to [this interview with the author](https://newbooksnetwork.com/be-the-refuge){:ga-event-value="0.3" target="_blank"} to hear more about the process behind writing the book.
 
