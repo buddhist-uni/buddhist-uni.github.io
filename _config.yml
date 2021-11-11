@@ -40,6 +40,7 @@ feed:
   posts_limit: 10000
   collections:
     content:
+      tags: true
       categories:
         - articles
         - av

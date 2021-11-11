@@ -11,18 +11,12 @@ layout: default
     {% capture plink %}<a href="{{ parent.url }}">{{ parent.title }}</a>{% endcapture %}
     {% assign parents = parents | push: plink %}
 {% endfor %}
-{% capture backlink %}
-{% if parents.size > 0 %}
-<em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
-{% else %}
-<em class="back">Back: <a href="{% link tags.html %}">Topic Index</a></em>
-{% endif %}
-{% endcapture %}{% unless page.banner_info %}{{ backlink }}{% endunless %}
+{% unless page.banner_info %}
+<div class="back"><a href="{% link tags.html %}">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
+{% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
-{% if course %}
-<p><em>For a more structured walkthrough of this content, see the <a href="{{ course.url }}">course</a>.</em></p>
-{% endif %}
+<p>{% if course %}Also available: <a href="{{ course.url }}"><i class="{{ course.icon }}"></i> As a Syllabus</a><br>{% endif %}Subscribe via: <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS</a></p>
     
 <div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
 {% if page.illustration %}
@@ -91,6 +85,10 @@ layout: default
     {{ content_list }}
   </div>
 
-{{ backlink }}
+{% if parents.size > 0 %}
+<em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
+{% else %}
+<em class="back">Back: <a href="{% link tags.html %}">Topic Index</a></em>
+{% endif %}
 </article>
 
