@@ -56,7 +56,7 @@ Let me declare an island to you
 ~ Snp 5.10
 {: .epigraph}
 
-This excellent, free anthology will be our textbook for this class:
+This free anthology will be our textbook for the class:
 {% include content_box.html category="monographs" slug="island_pasanno-amaro" %}
 
 This secondary monograph will be threaded through the course to help contextualize the historical developments:

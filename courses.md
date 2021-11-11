@@ -3,6 +3,8 @@ layout: page
 section: courses
 slug: courses
 title: Courses
+rss_url: feed.xml
+rss_title: "Course Announcements"
 permalink: /courses/
 next_link: /courses/buddhism
 image_width: 1280
