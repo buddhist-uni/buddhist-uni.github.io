@@ -41,7 +41,7 @@ This website started off as a Google Drive folder, which still serves as this we
 ### <i class="fas fa-database"></i> For Librarians, Academics, and Other Collectors
 
 {% if site.show_bibtex %}
-You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}, suitable for importing into your favorite reference manager. You can find [an RSS Feed of all items in the library here](/feed/content.xml). If you need the database in some other format (json? RIS? MARC?), please send me an email and I'll be happy to write a converter for you.{% endif %}
+You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}, suitable for importing into your favorite reference manager. You can find [an RSS Feed of all items in the library here](/feed/content.xml).{% endif %}
 
 While most of the content here can be found via [the original publishers']({% link publishers.html %}), [journals']({% link journals.html %}) and [miscellaneous other]({% link sources.md %}) websites, some of the items in this library can't be found elsewhere. For those, see [the exclusive content page]({% link exclusive.md %}) or [download them all at once via this link](https://github.com/buddhist-uni/exclusive_01/archive/main.zip)).
 
