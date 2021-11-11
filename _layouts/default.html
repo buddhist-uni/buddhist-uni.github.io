@@ -32,6 +32,21 @@
   {%- if page.next_link -%}
     <link rel="next" href="{{ page.next_link }}">
   {%- endif -%}
+  {%- case page.collection -%}
+    {%- when "posts" -%}
+      <link rel="alternate" type="application/atom+xml" title="Blog Posts" href="/feed.xml" />
+    {%- when "tags" -%}
+      <link rel="alternate" type="application/atom+xml" title="Content | {{ page.title }}" href="/feed/content/{{ page.slug }}.xml" />
+    {%- when "categories" -%}
+     {%- if page.slug == "index" -%}
+      <link rel="alternate" type="application/atom+xml" title="All Library Content" href="/feed/content.xml" />
+     {%- else -%}
+      <link rel="alternate" type="application/atom+xml" title="Content | {{ page.title }}" href="/feed/content/{{ page.slug }}.xml" />
+     {%- endif -%}
+    {%- else -%}{%- if page.rss_url -%}
+      <link rel="alternate" type="application/atom+xml" title="{{ page.rss_title | default: page.title }}" href="{{ page.rss_url }}" />
+    {%- endif -%}
+  {%- endcase -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     <script>
       if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {

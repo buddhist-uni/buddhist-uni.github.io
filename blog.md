@@ -2,6 +2,7 @@
 title: "Newsletter"
 section: blog
 slug: blog
+rss_url: feed.xml
 layout: home
 list_title: "Updates"
 image: "https://illeakyw.sirv.com/Images/banners/monk-slap.jpeg"

@@ -4,6 +4,8 @@ section: library
 slug: library
 permalink: /library/
 next_link: /tags/
+rss_url: /feed/content.xml
+rss_title: "All Library Content"
 image: "https://illeakyw.sirv.com/Images/banners/nostalgic-gate.jpeg"
 image_width: 1280
 image_center_x: 50%
