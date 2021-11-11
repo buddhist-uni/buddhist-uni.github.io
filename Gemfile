@@ -19,7 +19,7 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", github: 'buddhist-uni/jekyll-feed', branch: 'collection-tags'
   gem "jekyll-sitemap", "~> 1.4.0"
   gem "jekyll-seo-tag", "~> 2.7.1"
 end
