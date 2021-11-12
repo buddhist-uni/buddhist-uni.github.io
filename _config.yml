@@ -35,7 +35,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-rss: rss
+rss: RSS Feeds
 feed:
   posts_limit: 10000
   collections:
