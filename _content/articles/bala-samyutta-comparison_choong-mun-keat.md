@@ -1,5 +1,5 @@
 ---
-title: "A Comparison of the Chinese and Pāli Versions of the Version *Bala Saṃyukta,* a Collection of Early Buddhist Discourses on Powers"
+title: "A Comparison of the Chinese and Pāli Versions of the Version *Bala Saṃyukta,* a Collection of Early Buddhist Discourses on Powers"
 authors:
   - choong-mk
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/15"
