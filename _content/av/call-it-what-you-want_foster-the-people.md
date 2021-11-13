@@ -5,9 +5,7 @@ subcat: music
 external_url: "https://www.youtube.com/watch?v=1prhCWO_518"
 course: epistemology
 tags:
-  - nibbana
-  - music
-  - thought
+  - language
   - philosophy
   - problems
   - renunciation
