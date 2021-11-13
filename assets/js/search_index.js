@@ -20,15 +20,15 @@ var store = { {% assign all = site.documents | concat: site.pages %}
     {% if p.url contains "/tests/" or pagesWithoutContent contains p.title %}{% continue %}{% endif %}
     "{{ p.url | slugify }}": {
         "type": "{{ p.collection | default: 'pages' }}",
-        "title": {{ p.title | markdownify | strip_html | strip_newlines | jsonify }},
-        "description": {{ p.description | markdownify | strip_html | strip_newlines | jsonify }},
+        "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
+        "description": {{ p.description | markdownify | strip_html | normalize_whitespace | jsonify }},
         "tags": {{ p.tags | unshift: p.course | join: ' ' | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.layout == 'imagerycoursepart' %}1.5{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
-        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{% assign a = a | strip | strip_html | strip_newlines | split: " and " %}{% assign authors = a | last | split: "unfindabletoken" %}{% if a.size > 1 %}{% assign authors = a | first | split: ", " %}{% assign sla = authors | last | replace: ",", "" %}{% assign authors = authors | pop | push: sla | push: a[1] %}{% endif %}{{ authors | jsonify }},
+        "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{% assign a = a | strip | strip_html | normalize_whitespace | split: " and " %}{% assign authors = a | last | split: "unfindabletoken" %}{% if a.size > 1 %}{% assign authors = a | first | split: ", " %}{% assign sla = authors | last | replace: ",", "" %}{% assign authors = authors | pop | push: sla | push: a[1] %}{% endif %}{{ authors | jsonify }},
         "translator": {% assign conts = p.translator | split: ' and ' %}{% capture s %}{% include content_authors_string.html authors=conts %}{% endcapture %}{{ s | strip_newlines | jsonify }},
-        "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | strip_newlines | replace: "</p", ' </p' | replace: "</div", " </div" | replace: "</li", " </li" | strip_html | jsonify | replace: "  ", " " | replace: "  ", " " }},
+        "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | normalize_whitespace | replace: "</p", ' </p' | replace: "</div", " </div" | replace: "</li", " </li" | strip_html | normalize_whitespace | jsonify }},
         "url": "{{ p.url }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}

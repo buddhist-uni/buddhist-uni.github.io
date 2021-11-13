@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/buddhist-uni/jekyll-feed.git
-  revision: 7769ab191219b023bc1f2e7b69c57e8d98d64a43
+  revision: cbc2683e4a86dde19acdad3ed27e1fe439274c1e
   branch: collection-tags
   specs:
     jekyll-feed (0.15.1)
