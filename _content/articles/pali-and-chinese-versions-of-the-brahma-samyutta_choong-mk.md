@@ -1,7 +1,7 @@
 ---
 title: "A Comparison of the Pāli and Chinese Versions of the *Brahma Saṃyutta*, a Collection of Early Buddhist Discourses on Brahmās, the Exalted Gods"
 authors:
-  - "Mun-Keat Choong"
+  - choong-mk
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8992/10465/11724"
 drive_links:
   - "https://drive.google.com/file/d/1b8GMkBdS87Q9HmttbIqSfumpiRqLk_3i/view?usp=drivesdk"
