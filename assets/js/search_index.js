@@ -13,7 +13,7 @@ var RMAX = 100;
 {%- assign backtoback = ccurly | append: ocurly -%}
 {%- assign doubleo = ocurly | append: ocurly -%}
 {%- assign doublec = ccurly | append: ccurly -%}
-{%- assign pagesWithoutContent = 'Authors,Search' | split: ',' -%}
+{%- assign pagesWithoutContent = 'Authors,Highlights,Search' | split: ',' -%}
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}

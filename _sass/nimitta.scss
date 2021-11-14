@@ -702,9 +702,8 @@ div.content_rating div.star_rating {
 %olcoverimg {
     object-fit: cover;
     background-color: lightgrey;
-    min-height: 150px;
     min-width: 150px;
-    max-height: 250px;
+    height: 250px;
 }
 
 div.featured_content_list {
