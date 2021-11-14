@@ -8,8 +8,8 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-last-modified-at.git
-  revision: 58165fe6206c35b8f3daabc3c474fbd02b60f844
-  branch: cache-git-information
+  revision: b4eb87d516edb42ced8af2182bb3b386a7d51693
+  branch: post-date
   specs:
     jekyll-last-modified-at (1.3.0)
       jekyll (>= 3.7, < 5.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-seo-tag.git
-  revision: e996efe8549cb5b93b8c65601ec068a7d1ed120d
+  revision: 904300ffacb9c48163c32a9989071d731f55162b
   branch: obu-custom-seo
   specs:
     jekyll-seo-tag (2.7.1)

@@ -10,6 +10,7 @@ layout: default
   {% if page.epigraph %}
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
   {% endif %}
+  <div class="frontmatter">Published: {{ page.date | date: "%b %Y" }}{% if page.last_modified_at > page.date %}<br>Updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}</div>
   
  {% capture toccontent %}
     {{ content }}  

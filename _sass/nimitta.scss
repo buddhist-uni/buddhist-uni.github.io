@@ -465,6 +465,10 @@ header.post-header h3.translator {
 
 article.course {
     padding-top: 15px;
+    div.frontmatter {
+        font-size: 85%;
+        padding: 40px 6px 20px;
+    }
     h2#further-reading {
         margin-bottom: -6px;
     }
@@ -676,6 +680,11 @@ article.content-perma h2 {
 
 article.content-perma .pub_desc {
     font-size: 95%;
+}
+
+article.content-perma table.metadata {
+    font-size: 89%;
+    margin-top: 18px;
 }
 
 details.bibtex .highlight {
