@@ -38,6 +38,7 @@ plugins:
   - jekyll-last-modified-at
 last-modified-at:
     use-git-cache: true
+    override-date: true
 rss: RSS Feeds
 feed:
   posts_limit: 10000
