@@ -10,7 +10,7 @@ jobs:
          - name: Checkout the Code
            uses: actions/checkout@v2
            with:
-             fetch-depth: 2
+             fetch-depth: 0
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.2
          - name: Restore Previous Gemfiles
