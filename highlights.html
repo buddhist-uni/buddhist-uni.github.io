@@ -11,24 +11,30 @@ image_height: 853
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_Buddhist_temple,_and_its_surroundings,_Kyoto;_November_2016_(01).jpg">雷太</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 ---
 
-<h4>Content published in:</h4>
+{% assign allcontent = site.content | where_exp: "c", "c.external_url or c.drive_links or c.file_links" %}
+{% capture thisyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
+{% assign lastyear = thisyear | minus: 1 %}
+<h2>Table of Contents</h2><ul id="toc">
+  <li><a href="#latest">Latest Arrivals</a></li>
+  <li><a href="#recent">Recently Published</a></li>
+  <li><a href="#bestof">Featured Content</a></li>
+</ul>
 
-{% capture year %}{{ 'now' | date: "%Y" }}{% endcapture %}
-{% assign thisyear = site.content | where: "year", year | where_exp: "c", "c.status != 'featured'" %}
-{% assign featurecontent = "" | split: "" %}
-{% assign fcon = site.content | where: "status", "featured" %}
-{% for c in fcon %}
-  {% include calculatestars.dat content=c %}
-  {% assign yd = year | minus: c.year %}
-  {% if yd >= 5 and stars < 5 %}
-    {% continue %}
-  {% endif %}
-  {% assign featurecontent = featurecontent | push: c %}
+<h2 id="latest">Latest Arrivals</h2>
+<p>Just added to the library:</p>
+{% assign newc = allcontent | sort: "date" | reverse | slice: 0, 10 %}
+{% for c in newc %}
+<div class="mb-3">{% include simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
 {% endfor %}
+<p>...  For the complete list, and to be informed about new arrivals, subscribe to <a href="/feed/content.xml">the content RSS Feed</a>.</p>
+
+{% assign allcontent = allcontent | where_exp: "c", "c.course" %}
+{% assign thisyears = allcontent | where: "year", thisyear %}
+{% assign lastyears = allcontent | where: "year", lastyear | where: "status", "featured" %}
 {% assign courses = site.courses | map: "slug" %}
 {% assign tags = site.tags | map: "slug" | concat: courses %}
-{% for c in thisyear %}
-  {% unless c.course %}{% continue %}{% endunless %}
+{% assign featurecontent = lastyears %}
+{% for c in thisyears %}
   {% if tags contains c.course %}
     {% assign featurecontent = featurecontent | push: c %}
     {% continue %}
@@ -40,10 +46,26 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
     {% endif %}
   {% endfor %}
 {% endfor %}
+<h2 id="recent">Recently Published</h2>
+<p>Within the last couple years.</p>
+{% include content_list.html contents=featurecontent orderby="-date" %}
 
-{% assign bests = featurecontent | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | group_by: "year" | sort: "name" | reverse %}
-{% for y in bests %}
-<h2>{{ y.name }}</h2>
+<h2 id="bestof">Featured Selections</h2>
+<p>Content highlighted in <a href="/blog">the newsletter</a>, arranged by year of first publication.</p>
+{% capture fe %}c.year < {{ lastyear }}{% endcapture %}
+{% assign fcon = allcontent | where: "status", "featured" | where_exp: "c", fe %}
+{% assign featurecontent = "" | split: "" %}
+{% for c in fcon %}
+  {% include calculatestars.dat content=c %}
+  {% assign yd = year | minus: c.year %}
+  {% if stars < 5 %}
+    {% continue %}
+  {% endif %}
+  {% assign featurecontent = featurecontent | push: c %}
+{% endfor %}
+{% assign featurecontent = featurecontent | group_by: "year" | sort: "name" | reverse %}
+{% for y in featurecontent %}
+<h3>{{ y.name }}</h3>
 {% include featured_content_list.html contents=y.items sortkey="title" %}
 {% endfor %}
 

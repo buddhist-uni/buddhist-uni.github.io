@@ -23,7 +23,7 @@ You can explore the library by:
 Find a topic that interests you in the [topic index]({% link tags.html %}) or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and then explore by clicking on the "[Subtopic](/tags/buddhism#children)" links at the bottom of the page. (Note that individual items in the library may appear in multiple bibliographies if tagged with multiple subjects.)
 
 ### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})
-Here you'll find the latest and greatest publications in the library sorted by year. And to stay up-to-date, subscribe to [the blog]({% link blog.md %}).
+Here you'll find the latest and greatest publications in the library sorted by year. And to stay up-to-date, subscribe to [the newsletter]({% link blog.md %}), [the RSS Feed](/feed/content.xml), or [Twitter](https://www.twitter.com/buddhistuni).
 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
 Type in what you're looking for and see what comes up!
