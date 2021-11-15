@@ -3,7 +3,12 @@
     {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
 {% endunless %}
 {% assign sortkey = include.orderby | default: "year" %}
-{% assign sorted = sorted | sort: sortkey %}
+{% assign fc = sortkey | slice: 0 %}
+{% if fc == '-' %}
+  {% assign sortkey = sortkey | remove_first: "-" %}{% assign sorted = sorted | sort: sortkey | reverse %}
+{% else %}
+  {% assign sorted = sorted | sort: sortkey %}
+{% endif %}
 {%- for content in sorted -%}
     {%- if content.status == 'featured' -%}
         {% include highlighted_content.html content=content %}

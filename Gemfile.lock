@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-last-modified-at.git
-  revision: c550c1da3ae38c6e018e369e9e509bb0da04b72c
+  revision: f6fa6213d83920c0b820fc8e62fae67259a111d7
   branch: post-date
   specs:
     jekyll-last-modified-at (1.3.0)
