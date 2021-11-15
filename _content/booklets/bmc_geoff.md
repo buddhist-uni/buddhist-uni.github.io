@@ -6,9 +6,9 @@ drive_links: ["https://drive.google.com/file/d/1YCuIx2RJrsQFS1ll2ryGVJZrpIpY0UgP
 formats: [epub]
 year: 2001
 olid: OL23822296M
-course: vinaya-studies
+course: monastic-theravada
 tags:
-  - monastic-theravada
+  - vinaya-studies
 status: featured
 ---
 

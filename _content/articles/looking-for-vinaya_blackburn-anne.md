@@ -12,7 +12,6 @@ number: 2
 course: vinaya-studies
 tags:
   - monastic-theravada
-  - navakovada
 status: featured
 ---
 

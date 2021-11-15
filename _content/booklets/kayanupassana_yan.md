@@ -7,6 +7,7 @@ address: Bangkok
 publisher: "Mahāmakut Rajāvidyālaya Press"
 drive_links:
   - "https://drive.google.com/file/d/1dNik-Gpe5Qn4CRwvbRsH2vXYqjyuM34Q/view?usp=drivesdk"
+course: navakovada
 tags:
   - sati
   - vipassana
