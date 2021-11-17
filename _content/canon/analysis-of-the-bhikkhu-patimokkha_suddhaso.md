@@ -10,8 +10,7 @@ course: vinaya-pitaka
 status: featured
 tags:
   - vinaya-studies
-  - monastic-theravada
-  - monastic
+  - theravada-vinaya
   - pali-canon
 ---
 

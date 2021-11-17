@@ -16,7 +16,6 @@ tags:
   - burma
   - sea
   - law
-  - vinaya-studies
   - monastic-theravada
 ---
 

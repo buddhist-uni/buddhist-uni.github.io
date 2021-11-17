@@ -6,6 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1dRo77vMDaF-XtvIVhI3qpcQXp-U2j_md
 tags: 
   - modern
   - monastic-theravada
+  - theravada-vinaya
 course: sri-lankan
 status: featured
 year: 1984

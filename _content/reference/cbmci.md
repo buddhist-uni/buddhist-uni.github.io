@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1sphFeTJ3nNAjc1KAeKhdijWP5f0srGVC
 year: 2016
 tags:
   - vinaya-studies
-  - monastic-theravada
+  - theravada-vinaya
 ---
 
 An easy-to-use summary of the information in [BMC 1](/content/booklets/bmc_geoff) which serves as a practical vinaya reference for Theravada monks.
