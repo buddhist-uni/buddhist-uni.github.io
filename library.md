@@ -20,10 +20,10 @@ You can explore the library by:
 {:.mb-0}
 
 ### [<i class="fas fa-tag"></i> Topic]({% link tags.html %})
-Find a topic that interests you in the [topic index]({% link tags.html %}) or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and then explore by clicking on the "[Subtopic](/tags/buddhism#children)" links at the bottom of the page. (Note that individual items in the library may appear in multiple bibliographies if tagged with multiple subjects.)
+Find a topic that interests you in the topic index or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and explore the library "room by room" by clicking on the "[Subtopic links](/tags/buddhism#children)" at the bottom of each bibliography. (Note that individual items in the library may appear in multiple bibliographies if they are tagged with multiple subjects.)
 
 ### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})
-Here you'll find the latest and greatest publications in the library sorted by year. And to stay up-to-date, subscribe to [the newsletter]({% link blog.md %}), [the RSS Feed](/feed/content.xml), or [Twitter](https://www.twitter.com/buddhistuni).
+Here you'll find the latest and greatest publications in the library sorted by year.
 
 ### [<i class="fas fa-search"></i> Search]({% link search.html %})
 Type in what you're looking for and see what comes up!
@@ -32,10 +32,10 @@ Type in what you're looking for and see what comes up!
 Or explore the breadth of our recommendations in a more serendipitous way.
 
 #### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
-If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can [find a partial list of our authors here]({% link authors.md %}).
+If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can find a partial list of our authors here.
 
 #### [<i class="fas fa-photo-video"></i> Content Type]({% link _categories/index.md %})
-In the mood to curl up with [a good book]({% link _categories/booklets.md %})? Or perhaps looking for [a talk]({% link _categories/av.md %}) to listen to?  Our listing [by content type]({% link _categories/index.md %}) is the canonical list of everything in the library.
+The content type pages contain the canonical list of everything in the library.
 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 This website started off as a Google Drive folder, which still serves as this website's primary file server. The Google Drive folder contains roughly the same content as this site, arranged similarly, just missing a few links here and there and containing a few extra goodies that haven't yet found their way over here. If you're looking for offline saving or are an avid user of Google Drive, this link is for you.

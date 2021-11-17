@@ -11,6 +11,7 @@ tags:
   - monastic
   - nuns
   - monastic-theravada
+  - theravada-vinaya
 status: featured
 ---
 

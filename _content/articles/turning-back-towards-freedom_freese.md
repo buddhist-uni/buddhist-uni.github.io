@@ -8,8 +8,8 @@ tags:
   - vinaya-pitaka
   - vinaya-studies
   - bhikkhuni
-  - monastic-theravada
-course: monastic
+  - monastic
+course: monastic-theravada
 year: 2011
 journal: present
 ---
