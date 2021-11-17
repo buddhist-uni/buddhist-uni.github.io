@@ -1,6 +1,6 @@
 ---
 title: "What is Buddhism for?"
-authors: ["David Loy]
+authors: ["David Loy"]
 external_url: "https://youtu.be/liHtGgGogoY"
 course: climate-change
 tags:
