@@ -1,5 +1,6 @@
 ---
 title: "Introducing four (!) new courses on Buddhism"
+date: 2020-03-04
 ---
 
 Today I'm happy to announce the publication of not one, but <strong>four</strong> new courses on the fundamentals of Buddhism:
