@@ -1,0 +1,17 @@
+---
+title: "Kalmykia: Europe's Only Buddhist Region"
+authors: ["Hendrik Welling"]
+subcat: film
+year: 2019
+month: jul
+external_url: "https://youtu.be/Ys4DqKOjxpE"
+course: continental
+tags: 
+  - europe
+  - inner-asia
+  - west
+  - kalmykia
+publisher: "DW Euromaxx"
+---
+
+A short travel documentary about the autonomous region of the Russian Federation which, between the Caucasus and the Caspian, is home to Europe's native Buddhists.
