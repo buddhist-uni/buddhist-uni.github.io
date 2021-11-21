@@ -2,7 +2,7 @@
 title: "A Geographic Perspective on the Sectarian Affiliations of the *Ekottarika Āgama*"
 authors: [kuan-tsefu]
 course: ea
-external_url: "http://jocbs.org/index.php/jocbs/article/download/18/38"
+external_url: "http://jocbs.org/index.php/jocbs/article/view/18/38"
 year: 2012
 pages: "179--208"
 drive_links:

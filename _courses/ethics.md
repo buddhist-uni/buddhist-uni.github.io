@@ -259,8 +259,8 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 {% include content_blurb.html category="articles" slug="task-for-mindfulness_analayo" %}
 - Mindfulness practices may be essential for facing climate change.
 
-{% include content_blurb.html category="articles" slug="resources-for-buddhist-environmentalism_ives-christopher" %}
-- With its focus on the mind and the social realm, Buddhist ethics still has some perspective to offer the environmental movement.
+{% include content_blurb.html category="essays" slug="climate-change-ethics-and-the-field-of-greed_von-der-heyde-victor" %}
+- Especially as Buddhists can use their practice to set a good example for others.
 
 #### Chapter 5: Economics
 

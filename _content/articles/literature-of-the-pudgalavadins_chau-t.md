@@ -8,7 +8,7 @@ year: 1984
 volume: 7
 number: 1
 pages: "7--16"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8616/2523"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8616/2523"
 drive_links: ["https://drive.google.com/file/d/1BmXZWCYtYzFuO2NHkhpsiCPosJ3jK2iQ/view?usp=drivesdk"]
 course: sects
 tags:

@@ -6,7 +6,7 @@ year: 2005
 volume: 28
 number: 2
 pages: "299--337"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8965/2858"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8965/2858"
 drive_links: ["https://drive.google.com/file/d/14CB-zFBsGtvIRoSBGHDlCMUDrKlfGONs/view?usp=drivesdk"]
 tags:
   - dhp

@@ -7,9 +7,9 @@ volume: 20
 pages: "541--571"
 external_url: "http://blogs.dickinson.edu/buddhistethics/files/2013/09/Ives-Buddhist-Environmental-Ethic-final1.pdf"
 drive_links: ["https://drive.google.com/file/d/1998SI94ndy7QUAj5NYE4ik4cBWUGivUG/view?usp=drivesdk"]
-course: ethics
+course: nature
 tags:
-  - nature
+  - ethics
   - engaged
   - american
 ---
