@@ -3,7 +3,7 @@ title: "The _Nidānakathā_:  Introduction to the Jātaka Stories"
 translator: rhys-davids
 editor: anandajoti
 year: 1880
-external_url: "https://bit.ly/2IoL5Qc"
+external_url: "https://www.ancient-buddhist-texts.net/English-Texts/Jataka/000a.htm"
 drive_links:
   - "https://drive.google.com/file/d/1SiVunwYuMRkf3CKJJptSgbL0aOvb3MZT/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1TF6ZNE_vLvYeJxT0S7gFkTpye_1cy-UN/view?usp=drivesdk"
