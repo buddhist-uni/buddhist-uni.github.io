@@ -1,7 +1,7 @@
 ---
 title: "Upping the Ante: budstud@millenium.end.edu"
 authors: ["Jamie Hubbard"]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8839/2746/8647"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8839/2746/8647"
 drive_links: ["https://drive.google.com/file/d/1-_7VrdAtNkTiR_oGS63Lllnr76SFX-2D/view?usp=drivesdk"]
 year: 1995
 volume: 18

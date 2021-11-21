@@ -4,7 +4,7 @@ authors: ["Dhivan Thomas Jones"]
 tags:
   - nibbana
   - imagery
-external_url: "http://www.jocbs.org/index.php/jocbs/article/download/145/168"
+external_url: "http://www.jocbs.org/index.php/jocbs/article/view/145/168"
 year: 2016
 volume: 11
 pages: "71--107"

@@ -1,7 +1,7 @@
 ---
 title: "Bodhisattva Precepts and their Comparability with Vinaya in Contemporary Chinese Buddhism"
 authors: ["Tzu-lung Chiu"]
-external_url: "http://www.jocbs.org/index.php/jocbs/article/download/208/269"
+external_url: "http://www.jocbs.org/index.php/jocbs/article/view/208/269"
 journal: jocbs
 year: 2019
 pages: "193--224"

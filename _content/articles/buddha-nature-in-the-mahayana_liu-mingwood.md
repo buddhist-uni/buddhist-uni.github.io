@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of the Buddha-Nature in the Mahāyāna *Mahāparinirvāṇa-Sūtra*"
 authors: ["Ming-Wood Liu"]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8578/2485"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8578/2485"
 drive_links: ["https://drive.google.com/file/d/170OInsD51RhlY0T4hdjAfHm53MGoTN3p/view?usp=drivesdk"]
 journal: jiabs
 volume: 5

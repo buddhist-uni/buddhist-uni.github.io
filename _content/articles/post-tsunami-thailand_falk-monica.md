@@ -2,7 +2,7 @@
 title: "Buddhism and Resilience in Post-tsunami Thailand"
 authors:
   - "Monica Lindberg Falk"
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/download/311/297"
+external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/311/297"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1XVvrvCuLW9v7dasCpAPz-togZxspE8a-/view?usp=drivesdk"]
 year: 2021

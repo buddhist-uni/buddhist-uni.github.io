@@ -1,7 +1,7 @@
 ---
 title: "Walking in the Valley of the Buddha: Buddhist Revival and Tourism Development in Bihar"
 authors: ["David Geary"]
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/download/183/195"
+external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/183/195"
 drive_links: ["https://drive.google.com/file/d/19IdfDxYCeV1tkLw6xax9MbzKHRwS-S9e/view?usp=drivesdk"]
 tags: 
   - india

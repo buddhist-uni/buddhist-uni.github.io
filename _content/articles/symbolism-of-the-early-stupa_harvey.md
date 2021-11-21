@@ -2,7 +2,7 @@
 title: "The Symbolism of the Early Stūpa"
 authors:
   - harvey
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8633/2540/"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8633/2540/"
 drive_links:
   - "https://drive.google.com/file/d/1j7vAluTUMXtNMAixr0nn7CVGFA9vbsFl/view?usp=drivesdk"
 course: form
