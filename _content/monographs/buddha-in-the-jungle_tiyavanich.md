@@ -4,6 +4,7 @@ authors:
   - tiyavanich
 course: thai
 tags:
+  - theravada
   - sea
 year: 2003
 oclc: 56467538
