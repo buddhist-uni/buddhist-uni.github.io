@@ -1,5 +1,5 @@
 ---
-title: "Crossing to the Farthest Shore: How Pāli Jātakas Launch the Buddhist Image of the Boat onto the Open Seas"
+title: "Crossing to the Farthest Shore: How Pāli Jātakas Launch the Buddhist Image of the Boat onto the Open Seas"
 authors: ["Sarah Shaw"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/29/31"
 drive_links: ["https://drive.google.com/file/d/16QqqwQpjs_emJUrrmkSR6ztQiFosoyhT/view?usp=drivesdk"]
