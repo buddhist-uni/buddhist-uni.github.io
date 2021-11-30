@@ -14,6 +14,7 @@ jobs:
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.2
          - name: Restore Previous Gemfiles
+           if: ${{ false }}
            uses: actions/cache@v2
            with:
              path: ${{ github.workspace }}/vendor
