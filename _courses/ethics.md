@@ -114,15 +114,20 @@ To help us explore these questions, we'll turn to the Tibetan Tradition's favori
 
 This entire half of the course technically covers only Chapter 2 of Harvey but really centers on The *Bodhisattvacaryāvatāra*.
 
-The Padmakara translation has a good introduction, and you may want to read that now, but the introduction more suitable for the purposes of this course is:
+A free version is linked above, but there are a number of better (copyrighted) translations available, including [the Padmakara edition](https://www.shambhala.com/the-way-of-the-bodhisattva.html){:target="_blank"} published by Shambhala.
+
+{% include content_blurb.html category="av" slug="buddhist-ethics-and-the-bodhicariyavatara_garfield" %}
+- Philosopher Jay Garfield talks about how he got into Buddhism from Western philosophy and shares with us what he finds so compelling about this particular text.
+- His lectures on the book compliment this course extremely well and are recommended alongside the material listed below. They can be purchased [online here](https://www.buddhiststudiesonline.com/bso-201){:target="_blank"}.
+
+Your chosen translation of the text may have a good introduction and, if so, you may want to read that now. But if not, this introduction is good for our purposes:
 
 {% include content_blurb.html category="articles" slug="ethics-in-indian-and-tibetan-buddhism_goodman-charles" %}
-- An encyclopedia entry on Indian and Tibetan Buddhism which lays the groundwork for our reading of this beloved classic. If you're finding the poem confusing or would like to know more about its historical context, this article and your translation's introduction (if any) should be a good place to start.
-- If you do read the entry, please note how Westerner philosophers tie themselves into knots trying to classify Buddhist Ethics according to their inferior theories and blind rejection of karma.
+- An encyclopedia entry on Indian and Tibetan Buddhism which lays the groundwork for our reading of this beloved classic.
 
-With that, let's read *Śāntideva* himself! Preferably twice. Seriously, it's that good.
+With that by way of introduction, let's now read *Śāntideva* himself! Preferably twice! Seriously, it's that good.
 
-Your first time, just read it all the way, straight through.  Let his language and imagery work their magic.  After reading it once on our own, we'll go back and reread the book together chapter by chapter to compare the poem with the Pali Canon.
+Your first time, I recommend reading it all the way through.  Let the poetic language, imagery and structure work their magic on you.  After reading it once for feel, go back and reread the book chapter-by-chapter with the additional readings below to put the work into dialogue with the Theravāda tradition.
 
 #### The Way of the Bodhisattva
 
@@ -134,7 +139,7 @@ In Buddhism, the highest good is awakening, and in this chapter Śāntideva expr
 - But what makes awakening good?
 
 {% include content_blurb.html category="canon" slug="mn3" %}
-- How did the Buddha suggest that we pay him homage?
+- How (and why) did the Buddha suggest that we pay him homage?
 
 ##### Chapter 2: Confession
 
