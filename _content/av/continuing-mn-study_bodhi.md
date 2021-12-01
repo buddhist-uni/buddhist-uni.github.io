@@ -1,0 +1,13 @@
+---
+title: "Continuing Study of the *Majjhima Nikāya*"
+authors: [bodhi]
+external_url: "https://youtube.com/playlist?list=PL23DE0292227250FA"
+course: mn
+series: mn-study_bodhi
+number: 11
+year: 2014
+---
+
+Bhikkhu Bodhi goes through and completes the Majjhimā Nikāya in this final series of lectures, covering all the suttas he skipped in the previous ten (!) parts.
+
+Recorded from 2009 to 2015, this series of over two hundred videos is nearly as long as the rest of the series combined.

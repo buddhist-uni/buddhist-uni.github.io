@@ -12,7 +12,7 @@ number: 10
 year: 2009
 ---
 
-A series of 32 lectures on a selection of suttas from the Majjhima Nikaya.
+A series of 32 lectures on a further selection of suttas from the Majjhima Nikaya.
 
 
 
