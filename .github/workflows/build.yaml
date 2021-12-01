@@ -14,13 +14,12 @@ jobs:
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.2
          - name: Restore Previous Gemfiles
-           if: ${{ false }}
            uses: actions/cache@v2
            with:
              path: ${{ github.workspace }}/vendor
-             key: ${{ runner.os }}-vendor-${{ hashFiles('**/Gemfile.lock') }}
+             key: ${{ runner.os }}-vendor-00-${{ hashFiles('**/Gemfile.lock') }}
              restore-keys: |
-                ${{ runner.os }}-vendor-
+                ${{ runner.os }}-vendor-00-
          - name: Install Jekyll and Build the Site
            uses: helaili/jekyll-action@2.2
            with:

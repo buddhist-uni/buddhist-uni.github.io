@@ -41,27 +41,17 @@ This course requires prior familiarity with [Buddhism]({% link _courses/buddhism
 
 ## Time Requirement
 
-This course is quite long if you hope to complete it. But don't worry: each of [the ten modules](/series/mn-study_bodhi) (not to mention each sutta) is fairly self-contained and can be studied independently based on your interests.  Feel free to pick and choose as you like.
+This course is quite long if you hope to complete it. But don't worry: each of [the modules](/series/mn-study_bodhi) (not to mention each sutta) is a fairly self-contained unit and can be studied independently based on your interests.  Feel free to pick and choose as you like!
 
-For those looking to take the _entire_ course, there are three basic approaches:
-
-### Approach 1: Slow and Steady
-
-Set aside **a few hours per week** to study the Majjhima Nikaya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"}. Make these a special “holy” day, dedicated to your practice and study. Read one sutta, listen to (some of) the lecture(s) on it and reflect. Don't worry about rushing through it… just pick up wherever you like and do what you can. Take your time. Meditate on it. Let this weekly ritual become part of your life. If you keep it up, in a couple years you'll be sad to know you've finished the course… but you'll be pleased to know that there are plenty of other suttas to continue with this special way of keeping the holy days.
-
-### Approach 2: As a Course
-
-Alternatively, you could do **three lectures (5hr) per week** (perhaps on Monday-Wednesday-Friday) as if this were a standard university course. The lectures will take about a year at this rate.
-
-### Approach 3: Intensively
-
-The other way is to **do the course as a series of “sutta study retreats”**. Bhikkhu Bodhi’s lectures have already been divided into ten parts, and any part might be taken as a “mini course” over a retreat. Do about three lectures (one or two suttas) each day — taking time to meditate in between, of course. Parts one through four are short and can be done in 2-day (weekend) retreats for example. What better way to spend your time than to immerse yourself in the words of the Buddha?
+For those looking to take the _entire_ course, I recommend setting aside **a few hours per week** to study the Majjhima Nikaya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"} — whatever works for you.
+Make these days a special “holy” day, dedicated to your practice and study. Read one sutta, listen to the lecture(s) on it and reflect.
+Take your time. Meditate on it. Let this weekly ritual become part of your life. If you keep it up, in a few years you may even be sad to know that you've finished the course!
 
 ## Course Outline
 
-In this course, we study the Early Buddhist Texts by reading about half of the Majjhima Nikaya.
+In this course, we study the Early Buddhist Texts by reading the Majjhima Nikaya.
 
-I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} to give you a heads up on what to expect from his course.
+I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} to get a sense of what to expect from this course.
 
 ### Textbook
 
@@ -70,7 +60,7 @@ The main text for this course is *The Middle Length Discourses of the Buddha* by
 {% include content_box.html category="booklets" slug="mn-selections_nyanamoli-bodhi" %}
 
 
-For the suttas not included in the above anthology, or to merely get an alternative translation, please also refer to the complete, free translation by Bhante Sujato: 
+For the suttas not included in the free anthology above, or to get an alternative translation, please also refer to the complete, free translation by Bhante Sujato: 
 
 {% include content_blurb.html category="booklets" slug="mn_sujato" %}
 
@@ -86,9 +76,11 @@ If you're anything like me, you'll be amazed at how little the recensions differ
 
 ### Lectures
 
-Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into ten parts](https://drive.google.com/drive/folders/1JlG4P34WCAIMugD3WFcOrndq2pc1P7zO){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection. 
+Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into nine parts](https://drive.google.com/drive/folders/1JlG4P34WCAIMugD3WFcOrndq2pc1P7zO){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection— until [parts 10](https://drive.google.com/folderview?id=1dK_tE9gHPRxP-rgkEbnlWG0NKd-3_1D8){: target="_blank"} and ["11" (on YouTube)](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"}, which do go back and cover all the skipped suttas. 
 
-Look ahead to the next lecture to see what sutta comes next (the first lecture, for example, is “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1bwnTOwD5jqtZUW9k1r8MdiNY9ndoDTLE/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"}” so you know to read [MN 26](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
+#### Instructions
+
+Look ahead to the next lecture to see which sutta comes next (the first lecture, for example, is called “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1bwnTOwD5jqtZUW9k1r8MdiNY9ndoDTLE/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"}” so you know to read [the 26th discourse](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
 
 1. Read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.3"}!) the sutta before class. 
 1. Listen to the lecture(s) associated with that sutta.
@@ -98,20 +90,20 @@ Look ahead to the next lecture to see what sutta comes next (the first lecture, 
 
 In this way, you'll start to develop the ability to read and understand the suttas independently.
 
-You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary, and understanding the suttas on their own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
+You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary, and understanding the suttas on your own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
 
 ## Referring Back
 
-As you deepen your study of Buddhism, you may (nay, should!) find yourself referring back to the Majjhima Nikaya often (to look up references or jog your memory). This “course” can also be used in that way: as a reference to be touched as needed. 
+As you deepen your study of Buddhism, you may (nay, should!) find yourself referring back to the Majjhima Nikaya often. This “course” can also be used in that way: as a reference to be touched as needed. The lecture series (and Bhante Analayo's comparative study) contains every sutta, so whichever you're interested in learning more about, you'll find above.
 
-Either way is an acceptable and appropriate use of this material. Feel free to jump in directly to the section of Bhikkhu Bodhi’s lectures relevant to your current interests, or simply refer to Bhante Analayo’s notes to see how a curious Pāli passage you came across compares to its parallels. There are many uses for this material and I encourage you to make it your own!
+Either (as a course or as a reference) is an appropriate use of this material. Feel free to jump in directly to the section of Bhikkhu Bodhi’s lectures relevant to your current interests, or refer to Bhante Analayo’s notes to see how a curious Pāli passage compares to its parallels. There are many uses for this material and I encourage you to make it your own!
 
 In case it's useful for such referencing, here's an index of the suttas by their Pāli name:
 
 {% include content_blurb.html category="reference" slug="mn-pali-name-index" %}
 - Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikaya (usually noted as “MN #”, e.g. “MN 3” for the third sutta)
 
-And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of what suttas you've read, so you know where to come back to later.
+And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of which suttas you've read, so you know where to come back to later.
 
 Happy Reading!
 
