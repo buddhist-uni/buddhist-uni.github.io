@@ -81,6 +81,9 @@ The textbook remains, however, optional, as the free materials below provide an 
 {% include content_blurb.html category="canon" slug="sn22.86" blurb="
 - Who was the Buddha in his own words? In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death. The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most." %}
 
+{% include content_blurb.html category="av" slug="triumph-over-mara" %}
+- A short video explaining the symbolism of an iconic statue depicting the Buddha's enlightenment.
+
 {% include content_blurb.html category="excerpts" slug="prayer-and-worship_malalasekera" %}
 - Contemporary Buddhists do indeed worship the Buddha, but what do they think about when they bow to the Buddha statue? Is it "prayer" when Buddhists chant?
 
@@ -179,5 +182,6 @@ I supplement the final chapters in Harvey on the recent history of Buddhism with
 
 - The Buddha's own overview of “the good life” (and a traditional blessing chant) I would like to end the class by offering you this summary of every good blessing. 
 **May your life thus be blessed!**
+
 
 
