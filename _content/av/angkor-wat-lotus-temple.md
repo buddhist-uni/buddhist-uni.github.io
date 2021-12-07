@@ -7,6 +7,7 @@ tags:
   - cambodia
 year: 2007
 publisher: "National Geographic"
+subcat: film
 ---
 
 A short,  nonverbal film introducing the visual splendor of the Angkor Wat ruins.

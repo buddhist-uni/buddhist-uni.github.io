@@ -12,4 +12,4 @@ tags:
 journal: tricycle
 ---
 
-In which an American expresses his ambivalence about calling himself a Buddhist despite his belief in its therapeutic and spiritual power: a common reaction among Westerners exposed to Buddhist practices.
+In which an American expresses his ambivalence about calling himself a Buddhist despite his belief in its therapeutic and even spiritual power: a common reaction among Westerners exposed to Buddhist practices.
