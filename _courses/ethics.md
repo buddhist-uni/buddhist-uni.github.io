@@ -324,9 +324,6 @@ Speaking of uncomfortable!
 
 #### Chapter 10: Sexuality
 
-{% include content_blurb.html category="booklets" slug="gender_heckert-jamie" %}
-- What _is_ gender, really?  And how can people feel entitled to change it?
-
 {% include content_blurb.html category="essays" slug="out-of-the-ordinary_dhammika" %}
 - The story of a pioneering, transgender Buddhist, and a word on how Buddhism's attitude towards transgenderism differs from that of the monotheistic religions.
 
