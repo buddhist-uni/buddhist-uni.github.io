@@ -6,11 +6,11 @@ external_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-gend
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1DmwT0ysT4rRQAw9PK2LuEl2LD-yu_-pN/view?usp=drivesdk"
-course: ethics
+course: inner
 tags:
   - gender
   - activism
-  - inner
+  - ethics
   - charisma
   - society
 year: 2012
