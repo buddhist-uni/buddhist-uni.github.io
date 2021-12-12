@@ -10,7 +10,10 @@ series: wheel
 number: 433
 address: Kandy
 course: buddhism
-tags: [theravada, buddha, philosophy]
+tags:
+  - theravada
+  - buddha
+  - philosophy
 ---
 
 A lucid and compelling introduction to Buddhism from a renowned contemporary scholar. Recommended for newcomers.

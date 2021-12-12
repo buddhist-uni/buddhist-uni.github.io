@@ -7,7 +7,12 @@ olid: OL32034186M
 drive_links:
   - "https://drive.google.com/file/d/1JpAHMtjRTytv5pGgQJn1UY_TMDFNfu9y/view?usp=drivesdk"
 course: imagery
-tags: [pali-language, philosophy, meditation, theravada, hermeneutics]
+tags:
+  - pali-language
+  - philosophy
+  - meditation
+  - theravada
+  - hermeneutics
 year: 2010
 publisher: "The Buddhist Association of the United States"
 ---

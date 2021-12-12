@@ -6,7 +6,11 @@ translator: sujato
 formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1O6IYnJQ4XGbCuFOrUTVoAaN4F_ffwTTI"]
 course: imagery
-tags: [an, ethics, meditation, lay]
+tags:
+  - an
+  - ethics
+  - meditation
+  - lay
 year: 2018
 ---
 

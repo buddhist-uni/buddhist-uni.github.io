@@ -6,7 +6,10 @@ month: oct
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1B3-SkCSpo31J5KSIY2HarYfCBOCqZQiB/view?usp=drivesdk"]
 external_url: "http://buddhistelibrary.org/en/albums/central/Dhamma_books/The_Anscestral_Stupas_of_Shwedagon.pdf"
-tags: [indian, theravada, burmese]
+tags:
+  - indian
+  - theravada
+  - burmese
 course: form
 ---
 

@@ -8,7 +8,8 @@ drive_links:
   - "https://drive.google.com/file/d/1hBUKx9Oj6lPH559XUx09Y4r72JU-ExQM/view?usp=drivesdk"
   - "https://drive.google.com/file/d/17uFphvqpWrhbWgXT7Gy3tWTE0rArA2m3/view?usp=drivesdk"
 course: lay
-tags: [sri-lankan]
+tags:
+  - sri-lankan
 year: 1994
 publisher: bps
 series: wheel

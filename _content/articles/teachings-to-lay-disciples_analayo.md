@@ -6,7 +6,8 @@ external_url: "https://journals.equinoxpub.com/BSR/article/view/7736"
 drive_links:
   - "https://drive.google.com/a/u.northwestern.edu/file/d/1JCDwDb1gTBR_lrxAEmpzOph8uOzOE8hC/view?usp=drivesdk"
 course: lay
-tags: [sa]
+tags:
+  - sa
 year: 2010
 journal: bsr
 volume: 27

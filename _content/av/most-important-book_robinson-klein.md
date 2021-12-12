@@ -7,13 +7,14 @@ year: 2020
 month: nov
 journal: vox
 external_url: "https://www.vox.com/2020/11/30/21726563/kim-stanley-robinson-the-ezra-klein-show-climate-change"
-course: world
+course: state
 tags:
   - climate-change
   - craft
-  - power
+  - world
   - becon
   - society
+  - time
 status: featured
 ---
 
