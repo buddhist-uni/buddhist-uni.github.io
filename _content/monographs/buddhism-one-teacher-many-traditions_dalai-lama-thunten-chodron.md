@@ -3,7 +3,8 @@ title: "Buddhism: One Teacher, Many Traditions"
 authors:
   - dalai-lama
   - thubten-chodron
-tags: [form]
+tags:
+  - form
 olid: OL27168632M
 year: 2014
 oclc: 944380654

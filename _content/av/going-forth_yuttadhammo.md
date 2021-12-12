@@ -7,7 +7,8 @@ external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Internet/1012
 formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1HjRq-r_XpMEMzTWgk47_ag5CGOyZsrkM/view?usp=drivesdk"]
 course: function
-tags: [monastic]
+tags:
+  - monastic
 status: featured
 ---
 

@@ -6,7 +6,10 @@ month: nov
 year: 2014
 drive_links: ["https://drive.google.com/file/d/1x-XOj7wyQwj8EgiXcK-prFLn2279cGDU/view?usp=drivesdk"]
 course: form
-tags: [indian, philosophy, west]
+tags:
+  - indian
+  - philosophy
+  - west
 ---
 
 > when counterfeit dhamma appears, the true Dhamma disappears, in the same way that when counterfeit money appears, true money disappears.

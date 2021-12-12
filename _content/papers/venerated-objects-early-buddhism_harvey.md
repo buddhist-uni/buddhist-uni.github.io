@@ -9,7 +9,9 @@ publisher: curzon
 year: 1990
 editor: "Karel Werner"
 course: form
-tags: [indian, imagery]
+tags:
+  - indian
+  - imagery
 ---
 
 > Just as the beautiful lotus blossom grows up from the mud and water, so one with an enlightened mind develops out of the ranks of ordinary beings

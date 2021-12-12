@@ -10,7 +10,8 @@ drive_links:
   - "https://drive.google.com/file/d/1Hp5uWsGfstqZVrp9QYE0xZbTn1ov4Fdz/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1zpEh88r4JOLFVOOngktW8MYoDOn7XNGE/view?usp=drivesdk"
 course: lay
-tags: [west]
+tags:
+  - west
 year: 1982
 publisher: bps
 series: wheel

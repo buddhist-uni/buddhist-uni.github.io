@@ -2,7 +2,9 @@
 title: "A Thematic Guide to the Numerical Discourses"
 external_url: "https://readingfaithfully.org/bhikkhu-bodhis-thematic-guide-to-the-anguttara-nikaya-linked-to-bhikkhu-sujatos-translations/"
 drive_links: ["https://drive.google.com/file/d/1wPrTZojVMWZ-cUwPboVnVlJxvp7sDrET/view?usp=drivesdk"]
-course: an
+course: sutta
+tags:
+  - an
 year: 2019
 ---
 

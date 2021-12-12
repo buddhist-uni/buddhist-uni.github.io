@@ -6,7 +6,9 @@ external_url: "https://suttacentral.net/an9.42/en/sujato"
 hidden_links:
   - "https://drive.google.com/file/d/1jsJfa-KXHRbztWpuOkHCK3ufsw7k4pom"
 course: imagery
-tags: [an, samatha]
+tags:
+  - an
+  - samatha
 year: 2018
 ---
 
