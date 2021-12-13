@@ -279,7 +279,8 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Parallel to Robinson's Regional Chapters 
 
-As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and take a brief listen to two Buddhists (one Sri Lankan and the other Chinese) chanting themselves to bed. Though not typical of their traditions' evening services, these two rare recordings capture, for me, something of their beauty.
+As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and consider the contemporary, lived traditions.
+While not representative of the diversity within each of the following "national" forms, I hope that the texts and clips below capture something of their beauty.
 
 ##### Robinson Chapter 7: Sri Lanka
 
@@ -425,6 +426,9 @@ As we transition to more contemporary forms of Buddhism, let us set aside *Aspec
 [CBT] V.91
 {:.mb-0}
 - Exuberant guru and deity worship are also notable features of Tibetan Buddhism.
+
+{% include content_blurb.html category="av" slug="guru-rinpoche-prayer_choying" %}
+- Here is a beautiful rendition of a popular Guru invocation, sung by a Tibetan Nun.
 
 <i class="fas fa-book-open"></i> <i>Aspects (of Buddhist Sociological Thought)</i> Chapter 8: Women's Social Role
 {:.mb-0}
