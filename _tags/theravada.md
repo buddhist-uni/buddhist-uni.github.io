@@ -1,8 +1,8 @@
 ---
 title: "Theravāda Buddhism"
 parents:
-  - sea
   - form
+  - sea
 sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/thai-ruins.jpg
 illustration_height: 1023
