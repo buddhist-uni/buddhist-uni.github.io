@@ -1,6 +1,6 @@
 {% assign content = include.content %}{% assign category = content.path | split: '/' %}{% assign category = category[1] %}
 {% assign value = content.base_value %}{% if content.status == "featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
-{% include content_icon.html category=category %}
+{% include content_icon.html category=category subcat=content.subcat %}
 {% assign content_path_len = content.path | size | minus: 12 %}
 {% assign content_path = content.path | slice: 9, content_path_len %}
 <span id="{{ content.slug }}" class="inline_content_title">{% if content.external_url %}<a target="_blank" data-content-path="{{ content_path }}" ga-event-value="{{ value }}" href="{{ content.external_url }}">{% endif %}{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if content.authors.size > 0 or content.reader %} – {% include content_authors_string.html content=content %}{% endif %}{% if content.external_url %}</a>{% endif %}</span>

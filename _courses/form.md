@@ -367,7 +367,7 @@ While not representative of the diversity within each of the following "national
 - The Vietnamese and Korean traditions have taken on a more "engaged" attitude towards Awakening and the Bodhisattva path.
 
 {% include content_blurb.html category="av" slug="korean-buddhist-art_aam" %}
-- A Korean nun beautifully demonstrates the Buddhist spirit of generosity.
+- A Korean nun demonstrates the Buddhist spirit of generosity.
 
 ##### Robinson Chapter 10: Japan
 
