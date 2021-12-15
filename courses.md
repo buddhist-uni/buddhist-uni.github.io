@@ -47,6 +47,18 @@ We hope you enjoy our offerings:
 
 {% endfor %}
 
+## External Courses
+
+### 1. [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/)
+
+<div class="coursedesc">
+  <div class="descrow">
+    <div class="cicon"><i class="fas fa-street-view"></i></div>
+    <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
+  </div>
+</div>
+
 ## Secular Courses (@MIT)
 
 OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which provide free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses. For OBU Students, I especially recommend:

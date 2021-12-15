@@ -5,6 +5,7 @@ authors:
 year: 2018
 external_url: "https://youtu.be/scUC736fYeo"
 course: mahayana
+subcat: film
 status: featured
 tags:
   - west
