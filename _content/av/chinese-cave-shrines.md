@@ -7,7 +7,7 @@ tags:
   - mahayana-roots
   - bart
 year: 2009
-publisher: "the Asian Art Museum"
+publisher: aam
 editor: "Michael Rohde"
 subcat: film
 ---

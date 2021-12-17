@@ -9,7 +9,7 @@ tags:
   - bart
 year: 2018
 month: sep
-publisher: The Asian Art Museum
+publisher: aam
 subcat: film
 ---
 

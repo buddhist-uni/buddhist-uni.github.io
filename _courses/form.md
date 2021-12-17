@@ -393,6 +393,9 @@ While not representative of the diversity within each of the following "national
 {:.mb-0}
 - On the other hand, all such notions (even up to enlightenment itself) are in fact empty, and there is actually nothing to attain.
 
+{% include content_blurb.html category="essays" slug="amida-buddha_bloom-a" %}
+- In this way, we can understand Pure Land Buddhism at multiple levels: the mythic, the psychological, and the non-dual.
+
 ##### Robinson Chapter 11: Tibet
 
 {% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
