@@ -8,7 +8,7 @@ tags:
   - bart
   - californian
 year: 2009
-publisher: the Asian Art Museum
+publisher: aam
 address: San Francisco
 ---
 

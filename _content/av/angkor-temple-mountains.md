@@ -6,7 +6,7 @@ tags:
   - cambodian
   - bart
 year: 2009
-publisher: "the Asian Art Museum"
+publisher: aam
 editor: "Brian Hogarth and Michael Rohde"
 subcat: film
 ---
