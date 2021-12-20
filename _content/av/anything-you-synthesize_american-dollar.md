@@ -17,5 +17,4 @@ tags:
 year: 2008
 ---
 
-A beautiful music video on the truth of *anicca*: that all things are "synthesized" and are thus subject to decay, disappearance, and death.
-
+A beautiful music video about the passing of time.
