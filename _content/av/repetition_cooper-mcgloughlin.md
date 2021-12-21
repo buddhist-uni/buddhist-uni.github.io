@@ -22,5 +22,4 @@ tags:
   - world
 ---
 
-A short, artistic video meditating on repetition, infinity, and mankind's relentless pursuit of "progress."
-
+An artistic music video about the infinite scale of *saṃsāra*.
