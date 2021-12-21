@@ -160,6 +160,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="articles" slug="what-the-nikayas-say-about-nibbana_brahmali" %}
   - It is very important (and very difficult!) to understand that the “experience” of _nibbāna_ is no experience at all!
   - Ajahn Brahmali here argues the other side of the “debate” from _The Island_, explaining how “_anidassana viññāṇa_” should be understood, not as a hidden, pure, or non-dual consciousness, but as something else entirely.
+  
+{% include content_blurb.html category="essays" slug="boundless-consciousness_sunyo" %}
+- And in this brilliant essay, Bhante Sunyo proposes a most elegant solution to the problem in this verse.
+
 
 #### The Unconditioned and Nonlocality
 
