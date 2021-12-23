@@ -3,7 +3,7 @@ max_size: 480
 double_size: 960
 loading_state: linear-gradient(lightgray, lightgray)
 # The reason we don't put the overlay in sirv is that large images are served from the source
-overlay: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.1))
+overlay: "linear-gradient(#5E241732, #5E241750)"
 sirv_options: blur=1
-footer_overlay: linear-gradient(rgba(253,253,253,1), rgba(253,253,253,.3), rgba(0,0,0,.001), rgba(0,0,0,0.9))
+footer_overlay: "linear-gradient(rgba(253,253,253,1), rgba(253,253,253,.3), #5555, #5558, #111C)"
 

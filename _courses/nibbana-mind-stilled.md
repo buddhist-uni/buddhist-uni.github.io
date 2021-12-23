@@ -10,7 +10,7 @@ image_center_y: 16%
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Khalili_Collection_Japanese_Meiji_Art_M159.jpg">The Khalili Collection</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 lecturers: [analayo]
 epigraph: |
-  > for the stilling of all formations, for the relinquishing of all attachments, for the destruction of craving, for dispassion, for cessation, for Nibbāna. He thinks thus:  
+  > "For the stilling of all formations, for the relinquishing of all attachments, for the destruction of craving, for dispassion, for cessation, for Nibbāna, he thinks thus..."  
   ~ MN 22
 time: 2
 description: "An advanced course on the subtle components of the mind and how to understand their inner workings in order to put an end to our raging whirlpool of selfish thinking."

@@ -1,4 +1,4 @@
-.frontpage .learning_styles ul {
+.learning_styles ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.frontpage .learning_styles li {
+.learning_styles li {
     width: 320px;
     min-height: 230px;
     padding: 20px;
@@ -20,67 +20,48 @@
     z-index: 5;
 }
 
-.frontpage .learning_styles .ls_name {
+.learning_styles .ls_name {
     font-size: 28px;
 }
 
-.frontpage .learning_styles .ls_icon {
+.learning_styles .ls_icon {
     font-size: 85px;
 }
 
-.frontpage .learning_styles .ls_desc {
+.learning_styles .ls_desc {
     padding: 5px;
 }
 
-.frontpage main {
+main {
     padding-bottom: 0px;
 }
 
-.frontpage h1, .frontpage p {
+h1, p {
     text-align: center;
 }
 
-.frontpage .welcome h1 {
+.welcome h1 {
     letter-spacing: -1px;
     margin-bottom: 9.6px;
     line-height: 1.3;
 }
 
-.frontpage .page-content {
+.page-content {
     padding-top: 10px;
 }
 
-.frontpage div.herotext {
+div.herotext {
     max-width: 30em;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    padding-top: 270px;
+    padding-top: 80px;
+    margin-bottom: -100px;
+    color: $banner-color;
 }
 
-.frontpage div.footerbackground {
-    background-image: url("https://illeakyw.sirv.com/Images/monk_on_phone.jpg?h=2490"), linear-gradient(white, #222);
-    height: 1540px;
-    max-width: 1540px;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: -250px;
-}
-
-@media only screen and (min-width: 770px) and (min-resolution: 1.5dppx) {
-    .frontpage div.footerbackground {
-        background-image: url("https://illeakyw.sirv.com/Images/monk_on_phone.jpg"), linear-gradient(white, #222);
-    }
-}
-
-.frontpage footer.site-footer {
-    border-top: 0px;
-    background-color: initial;
+footer.site-footer.footer-img {
+    margin-top: -216px;
+    height: 900px;
 }
 

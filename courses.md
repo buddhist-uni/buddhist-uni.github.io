@@ -50,6 +50,7 @@ We hope you enjoy our offerings:
 ## External Courses
 
 ### 1. [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
+{: .courselink}
 
 <div class="coursedesc">
   <div class="descrow">

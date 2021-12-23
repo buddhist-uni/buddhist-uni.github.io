@@ -7,13 +7,13 @@ description: "An introduction to the Buddhist Canon suitable for everyone based 
 lecturers:
   - bodhi
 epigraph: |
-  > Buddho ca kho kāruṇiko mahesi,  
+  > "Buddho ca kho kāruṇiko mahesi,  
   > Yo satthā lokassa sadevakassa;  
-  > [...] tadā avoca...  
+  > [...] tadā avoca..."  
   >  
-  > The Enlightened One, the Sage of Great Compassion,  
+  > "The Enlightened One, the Sage of Great Compassion,  
   > The Teacher of the world with [all] its gods,  
-  > Said to him...  
+  > Said to him..."  
   ~ [MN 86](https://suttacentral.net/mn86/en/sujato#6.18){:target="_blank"}
 time: 5
 icon: "far fa-map fa-rotate-90"

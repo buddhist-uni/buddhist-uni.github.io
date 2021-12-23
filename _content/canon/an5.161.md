@@ -5,13 +5,14 @@ external_url: "https://suttacentral.net/an5.161/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1mFTPdj_GrN63avW7mmHeOZBnJ3atH7YV"]
-course: thought
+course: imagery
 tags:
   - an
   - brahmavihara
   - daily-life
   - hindrances
   - ethics
+  - thought
 year: 2018
 ---
 

@@ -4,10 +4,11 @@ slug: "an.003.130"
 translator: sujato
 external_url: "https://suttacentral.net/an3.130/en/sujato"
 year: 2018
-course: anagami
+course: imagery
 tags:
   - an
   - stages
+  - anagami
   - iddhi
 ---
 

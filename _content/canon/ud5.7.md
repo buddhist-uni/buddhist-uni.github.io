@@ -2,6 +2,7 @@
 title: "Ud 5.7: Revata"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud5.7/en/anandajoti"
+course: imagery
 tags:
   - ud
   - canonical-poetry

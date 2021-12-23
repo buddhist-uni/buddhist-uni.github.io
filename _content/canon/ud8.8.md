@@ -4,7 +4,7 @@ translator: anandajoti
 external_url: "https://suttacentral.net/ud8.8/en/anandajoti"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1UukZ4WMukfIvRtIPXeQWQf3mKOr97mD-/view?usp=drivesdk"]
-course: death
+course: imagery
 tags:
   - ud
   - problems
@@ -12,6 +12,7 @@ tags:
   - emptiness
   - canonical-poetry
   - nibbana
+  - death
 year: 2008
 ---
 

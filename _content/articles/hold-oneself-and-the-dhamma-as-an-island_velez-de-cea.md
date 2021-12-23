@@ -15,6 +15,6 @@ tags:
   - anatta
 ---
 
-> if the Buddha exhorts his disciples to take attā and Dhamma as an island and refuge, those two terms, Dhamma and attā, denote the same reality. This identity [...] is highly problematic
+> if the Buddha exhorts his disciples to take *attā* and Dhamma as an island and refuge, those two terms, *dhamma* and *attā*, denote the same reality. This identity [...] is highly problematic
 
 A straightforward refutation of the absurd claim that a famous idiom of the Buddha contradicts the central doctrine of non-self.

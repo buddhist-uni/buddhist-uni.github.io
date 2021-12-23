@@ -15,17 +15,18 @@
   </noscript>
   <link href="/assets/primer.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/ms-icon-144x144.png %}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/apple-touch-icon.png %}">
-  <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{% link assets/favicon-96x96.png %}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/favicon-32x32.png %}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/favicon-16x16.png %}">
-  <link rel="manifest" href="{% link site.webmanifest %}">
-  <link rel="manifest" href="{% link manifest.json %}">
-  <link rel="mask-icon" href="{% link assets/imgs/logo.svg %}" color="#c69c6c">
-  <meta name="msapplication-TileColor" content="#c69c6c">
-  <meta name="theme-color" content="#c69c6c">
+  {% for cc in page.custom_css %}
+  <link rel="stylesheet" href="/assets/{{cc}}.css">{% endfor %}
+  <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/ms-icon-144x144.png %}?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/apple-touch-icon.png %}?v=1">
+  <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/favicon-32x32.png %}?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/favicon-16x16.png %}?v=1">
+  <link rel="manifest" href="{% link site.webmanifest %}?v=1">
+  <link rel="manifest" href="{% link manifest.json %}?v=1">
+  <link rel="mask-icon" href="{% link assets/imgs/logo.svg %}?v=1" color="#5E2417">
+  <meta name="msapplication-TileColor" content="#5E2417">
+  <meta name="theme-color" content="#5E2417">
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
   <script async src="https://kit.fontawesome.com/215a8ad627.js" crossorigin="anonymous"></script>
   {%- if page.next_link -%}

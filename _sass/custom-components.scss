@@ -1,5 +1,9 @@
 // Custom components built on top of Primer
 // and compiled in with them via assets/primer.scss
+.btn {
+    color: $text-color;
+}
+
 .RatingLabel {
     @extend .IssueLabel, .IssueLabel--big;
     color: white;
@@ -24,7 +28,7 @@
 
 .RatingLabel-5 {
     @extend .RatingLabel;
-    background-color: $blue;
+    background-color: #212385;
     font-family: $readable-font-family !important;
     font-size: 13px;
 }

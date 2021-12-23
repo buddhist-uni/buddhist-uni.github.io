@@ -9,7 +9,7 @@ sirv_options: "shadows=-1"
 big_image: https://images.metmuseum.org/CRDImages/as/original/DP123360.jpg
 banner_info: <a href="https://www.metmuseum.org/art/collection/search/38118">The Met</a>
 epigraph: |
-  > As to that, Sandaka, I shall give you a simile...  
+  > "As to that, Sandaka, I shall give you a simile..."  
   ~ [MN 76](/content/canon/mn76)
 time: 2
 description: "A rigerous tour of key words and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhethoric it deployed. This course also serves as an introduction to Pāli for nonspecialists."

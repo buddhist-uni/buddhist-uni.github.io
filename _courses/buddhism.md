@@ -13,7 +13,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Wooden_gate_with_o
 big_image: https://upload.wikimedia.org/wikipedia/commons/7/71/Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan.jpg
 time: 2
 epigraph: |
-  > Open are the doors to the deathless  
+  > "Open are the doors to the deathless!"  
   ~ [MN 26](https://suttacentral.net/mn26/en/bodhi){:target="_blank"}
 next_courses:
   - ebts
@@ -42,7 +42,8 @@ This is a self-paced course, which is estimated to take a few months to complete
 
 ## Course Outline
 ### Introduction
-> “There are two conditions for the arising of right view. What two? The words of another and proper attention.” ~ [AN 2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5){:target="_blank" ga-event-value="0.25"}
+> “There are two conditions for the arising of right view. What two? The words of another and proper attention.”  
+> ~ [AN 2.126](https://suttacentral.net/an2.118-129/en/sujato#125.1.5){:target="_blank" ga-event-value="0.25"}
 {: .epigraph }
 
 

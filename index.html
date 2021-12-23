@@ -1,79 +1,16 @@
 ---
-layout: nil
+layout: default
+custom_css:
+  - frontpage
+image: https://illeakyw.sirv.com/Images/banners/Buddhist_monk_on_cellphone.jpg
+big_image: https://upload.wikimedia.org/wikipedia/commons/9/97/Buddhist_monk_on_cellphone_%288064140438%29.jpg
+footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_monk_on_cellphone_(8064140438).jpg">flowcomm</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
+image_height: 2048
+image_width: 1365
+image_center_x: 50%
+image_center_y: 2%
 ---
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond">
-  <link href="/assets/primer.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/assets/frontpage.css">
-  {%- feed_meta -%}
-  <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/ms-icon-144x144.png %}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/apple-touch-icon.png %}">
-  <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{% link assets/favicon-96x96.png %}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/favicon-32x32.png %}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/favicon-16x16.png %}">
-  <link rel="next" href="/courses/">
-  <link rel="manifest" href="{% link site.webmanifest %}">
-  <link rel="manifest" href="{% link manifest.json %}">
-  <link rel="mask-icon" href="{% link assets/imgs/logo.svg %}" color="#c69c6c">
-  <meta name="msapplication-TileColor" content="#c69c6c">
-  <meta name="theme-color" content="#c69c6c">
-  <script async src="https://kit.fontawesome.com/215a8ad627.js" crossorigin="anonymous"></script>
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    <script>
-      if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('require', 'eventTracker', {});
-      ga('require', 'outboundLinkTracker', {
-        hitFilter: function(c,a) {
-          var v = c.get("eventValue") || 0.1;
-          var w = Math.floor(v);
-          var k = (a.getAttribute("data-content-path") || a.href) + ":clicked";
-          if (localStorage.getItem(k)) { c.set("eventValue", 0, true); } else {
-          // window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':c.get("eventLabel"),'revenue_value':v,'currency':'USD'});
-          c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w, true);
-          localStorage.setItem(k, 1);
-          }
-        }
-      });
-      ga('send', 'pageview');
-
-      // (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56243852"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
-    }
-    </script>
-    <script async src="/assets/js/autotrack.js"></script>
-  {%- endif -%}
-</head>
-
-  <body class="frontpage">
-
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
-      <nav class="site-nav-links">
-          {%- for path in site.header_pages -%}
-            {%- assign my_page = site.pages | find: "path", path -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endfor -%}
-      </nav>
-  </div>
-</header>
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="welcome"><h1><a href="{% link _posts/2020-03-13-welcome.md %}">Welcome to the Open Buddhist University</a></h1>
+    <div class="welcome"><h1><a href="{% link _posts/2020-03-13-welcome.md %}">Welcome to the Open Buddhist University</a></h1>
         <p>A place to chill and learn about Buddhism.</p></div>
         <h2>Featuring:</h2>
 
@@ -99,40 +36,3 @@ layout: nil
         <p>Completely free and open source, take the world of Buddhism with you everywhere you go.</p>
       </div>
 
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }} (Chief Librarian)
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:theopenbuddhistuniversity@gmail.com">The Open Buddhist University @gmail.com</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-  </div>
-</footer>
-    </div>
-    </main>
-  </body>
-</html>

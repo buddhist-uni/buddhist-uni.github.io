@@ -5,6 +5,9 @@ partial_build: true
 ## Turn off feature flags
 show_similars: false
 show_bibtex: false
+feed:
+  posts_limit: 1
+  collections: []
 
 exclude:
     - Gemfile
@@ -16,12 +19,14 @@ exclude:
     - vendor/ruby/
     - scripts/
     - content.bib
+    - _authors/harrison-paul.md
+    - _authors/rongton.md
+    - _authors/tiyavanich.md
     - _authors/chiu-angela.md
     - _authors/cone-margaret.md
     - _authors/deleanu-f.md
     - _authors/diamond-jared.md
     - _authors/gomtsul.md
-    - _authors/gleig-a.md
     - _authors/huxley-a.md
     - _authors/iwamura-jane.md
     - _authors/lew-karl.md
@@ -113,10 +118,8 @@ exclude:
     - _content/booklets/spirit-of-jihi_horide-ichirou.md
     - _content/canon/an10.93.md
     - _content/canon/an3.76.md
-    - _content/canon/an5.161.md
     - _content/canon/an5.180.md
     - _content/canon/an5.191.md
-    - _content/canon/an8.6.md
     - _content/canon/dn13.md
     - _content/canon/mn14.md
     - _content/canon/mn19.md
@@ -126,8 +129,6 @@ exclude:
     - _content/canon/mn33.md
     - _content/canon/mn57.md
     - _content/canon/mn90.md
-    - _content/canon/sn3.25.md
-    - _content/canon/snp4.2.md
     - _content/canon/sn1.11.md
     - _content/canon/sn1.20.md
     - _content/canon/sn12.40.md
@@ -139,7 +140,6 @@ exclude:
     - _content/canon/sn36.21.md
     - _content/canon/sn42.13.md
     - _content/canon/sn47.6.md
-    - _content/canon/thag3.5.md
     - _content/canon/thig12.1.md
     - _content/canon/ud4.4.md
     - _content/canon/ud4.5.md
@@ -253,7 +253,6 @@ exclude:
     - _content/canon/an10.58.md
     - _content/canon/an10.72.md
     - _content/canon/an3.100.md
-    - _content/canon/an3.130.md
     - _content/canon/an3.68.md
     - _content/canon/an3.72.md
     - _content/canon/an3.80.md
@@ -288,18 +287,12 @@ exclude:
     - _content/canon/sa18.md
     - _content/canon/sn11.15.md
     - _content/canon/sn2.25.md
-    - _content/canon/sn22.122.md
-    - _content/canon/sn33.4.md
     - _content/canon/sn35.116.md
-    - _content/canon/sn36.31.md
     - _content/canon/sn41.4.md
     - _content/canon/sn41.8.md
     - _content/canon/sn47.3.md
-    - _content/canon/sn52.10.md
     - _content/canon/thag12.2.md
     - _content/canon/ud1.10_sdoe.md
-    - _content/canon/ud5.7.md
-    - _content/canon/ud8.8.md
     - _content/essays/cultivate-concentration_mipham.md
     - _content/essays/if-education-is-not-the-answer_stein-zak.md
     - _content/essays/inviting-the-bell_cantrell-deborah.md
@@ -426,4 +419,110 @@ exclude:
     - _content/monographs/politics-of-tourism-in-asia_richter-linda.md
     - _content/papers/birch-bark-to-digital-data_introduction_harrison-and-hartmann.md
     - _content/papers/maritime-route-to-china_willemen-charles.md
+    - _content/booklets/noble-quest_horner.md
+    - _content/articles/turning-back-towards-freedom_freese.md
+    - _content/booklets/gender_heckert-jamie.md
+    - _content/reference/pts-ref-converter.md
+    - _content/reference/cbmci.md
+    - _content/av/tenuousness_bird-andrew.md
+    - _content/articles/laughing-buddha-doing-business_liong-cheng.md
+    - _content/articles/reading-teaching-dhammapadas_mcdaniel-justin.md
+    - _content/av/model-organism_99pi.md
+    - _content/booklets/dhammapada_pesala-narada.md
+    - _content/canon/mn76.md
+    - _content/essays/moving-from-dhyana-to-dhyana_patton.md
+    - _content/articles/three-souls-one-or-none_gombrich.md
+    - _content/av/heyoon_99pi.md
+    - _content/av/building-a-religious-empire_sullivan-brenton.md
+    - _content/av/stethoscope_99pi.md
+    - _content/av/sunshine-hotel_sound-portraits.md
+    - _content/articles/citta-in-the-turfan-finds_dietz-siglinde.md
+    - _content/av/creatures-of-cain_foo.md
+    - _content/articles/taixu-in-vietnam_devido-elise.md
+    - _content/monographs/piranesi_clarke-susanna.md
+    - _content/articles/notes-on-visuddhimagga-9_gombrich.md
+    - _content/papers/buddhism-and-secular-subjectivities_mcmahan-david.md
+    - _content/articles/sariputtas-three-works-on-the-samantapasadika_crosby-kate.md
+    - _content/articles/two-versions-of-the-atanatiya-sutra-in-sanskrit_sander-lore.md
+    - _content/articles/upping-the-ante_hubbard-jamie.md
+    - _content/articles/modernization-and-transnationalism-in-buddhist-almsgiving_jones-charles.md
+    - _content/av/from-bombay-with-love_99pi.md
+    - _content/monographs/brand-new-ancients_tempest-kate.md
+    - _content/monographs/power_han-byung-chul.md
+    - _content/excerpts/uttarakuru_analayo.md
+    - _content/av/caribou-home_song-exploder.md
+    - _content/av/cranberries-all-over-now_song-exploder.md
+    - _content/av/fleet-foxes-mearcstapa_song-exploder.md
+    - _content/av/girl-in-red-serotonin_song-exploder.md
+    - _content/av/kiwanuka-black-man-white-world_song-exploder.md
+    - _content/av/mann-patient-zero_song-exploder.md
+    - _content/av/microphones-i-want-wind_song-exploder.md
+    - _content/av/mumford-and-sons-beloved_song-exploder.md
+    - _content/av/tune-yards-water-fountain_song-exploder.md
+    - _content/av/waxahatchee-fire_song-exploder.md
+    - _content/monographs/early-buddhist-theory-of-knowledge_jayatilleke.md
+    - _content/booklets/opening-up-to-kindfulness_brahm.md
+    - _content/av/knowing-body-moving-mind_campbell-patricia.md
+    - _content/av/travels-in-the-netherworld_cuevas-bryan.md
+    - _content/av/anarchy-in-the-pureland_ritzinger-justin.md
+    - _content/av/conceiving-the-indian-patriarchs-in-china_young-stuart.md
+    - _content/monographs/be-the-refuge_han-chenxing.md
+    - _content/monographs/buddha-in-the-jungle_tiyavanich.md
+    - _content/av/being-mortal.md
+    - _content/av/dj-monk.md
+    - _content/av/making-wisdom-the-priority_munindo.md
+    - _content/av/thailands-last-resort.md
+    - _content/canon/an5.162.md
+    - _content/canon/an5.58.md
+    - _content/canon/mn98.md
+    - _content/canon/sn22.102.md
+    - _content/canon/snp3.9.md
+    - _content/av/fulfilling-buddhas-vision_chomchuen-w.md
+    - _content/av/into-the-woods_sondheim.md
+    - _content/av/kiki-and-burnout_willems-patrick.md
+    - _content/av/i-hear-her-words_collett-alice.md
+    - _content/monographs/road-to-heaven_porter.md
+    - _content/articles/bees-in-india_karttunen-klaus.md
+    - _content/av/nepal-great-plunder.md
+    - _content/av/queer-monks-in-thailand_vice.md
+    - _content/av/frontier-psychiatrist_avalaches.md
+    - _content/av/genghis-khan_miike-snow.md
+    - _content/av/since-i-left-you_avalaches.md
+    - _content/canon/mn1.md
+    - _content/articles/gamani-samyutta-comparison_choong-mun-keat.md
+    - _content/articles/pali-and-chinese-versions-of-the-devata-and-devaputta-samyuttas_choong-mk.md
+    - _content/articles/refrain-from-the-uraga-verses_jones-d-t.md
+    - _content/av/buddha-party_powers-john.md
+    - _content/av/i-kwan.md
+    - _content/articles/ethical-critique-of-wartime-zen_victoria-brian.md
+    - _content/av/buddhism_loy-david.md
+    - _content/av/kalmykia_euromaxx.md
+    - _content/articles/bodhisattva-precepts-and-there-compatability-with-vinaya_chiu-tzulung.md
+    - _content/articles/buddhicizing-or-ethnicizing-the-state_raghavan-suren.md
+    - _content/articles/coined-money_fynes-richard.md
+    - _content/av/right-view-comes-first_geoff.md
+    - _content/articles/under-the-gaze-of-the-buddha-megastatue_irons-ed.md
+    - _content/av/jung-shadows-silent-women_sujato.md
+    - _content/articles/crossing-to-the-farthest-shore_shaw-s.md
+    - _content/articles/decoding-two-miracles-of-the-buddha_likhitpreechakul.md
+    - _content/av/law-of-kamma_jayasaro.md
+    - _content/av/unmistaken-child.md
+    - _content/av/angkor-wat-lotus-temple.md
+    - _content/av/ocean-of-milk-ocean-of-blood_king-matt.md
+    - _content/av/why-science-says-buddhism-is-true_wright-robert.md
+    - _content/av/dalai-lamas-succession.md
+    - _content/av/samsara-excerpt_bruno.md
+    - _content/articles/vengeance-of-vertigo_wilderson-frank.md
+    - _content/av/first-female-geshe_kelsang.md
+    - _content/monographs/cheese-and-worms_ginzburg-carlo.md
+    - _content/av/after-buddhism_batchelor-stephen.md
+    - _content/av/forest-tradition_sujato.md
+    - _content/essays/alagaddupama-sutta-as-scriptural-source_premasiri.md
+    - _content/av/chinese-cave-shrines.md
+    - _content/articles/overcoming-compassion_fung-kei-cheng.md
+    - _content/av/but-sometimes_technology-connections.md
+    - _content/av/letting-go-developing_viradhammo.md
+    - _content/av/seeking-sakyamuni_jaffe-richard.md
+    - _content/av/mindful-way.md
+    - _content/av/worldly-saviors_hughes-april.md
 

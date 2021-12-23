@@ -1,15 +1,13 @@
 $on-palm: 720px;
-$plum: #74226c;
-$banner-color: #c69c6c;
-$text-color: #1d1e2c;
-$teal: #43aabb;
-$blue: #3e78b2;
+
+// $banner-color: #9B6022;
+$banner-color: #5E2417;
+$text-color: #070707;
+$blue: #0A51C2;
+$plum: $banner-color;
+$danger-color: $banner-color;
 $brand-color: $blue;
-$green-highlighter: #dbff76;
-$deep-red: #bb342f;
-$danger-color: #d33f49;
-$lylac: #c8b8db;
-$dark-green: #3c6e71;
+
 
 $ui-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $google-fonts: "EB Garamond", "Noto Serif TC", "Noto Serif JP";

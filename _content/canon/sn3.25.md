@@ -6,10 +6,10 @@ translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1T3mkTMGrqzEf1ypLCFgHk8XUWI--jq9y"]
 status: featured
-course: death
+course: imagery
 tags:
   - sn
-  - imagery
+  - death
   - philosophy
   - thought
   - view

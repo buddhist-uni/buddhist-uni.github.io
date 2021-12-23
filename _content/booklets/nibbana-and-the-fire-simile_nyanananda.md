@@ -14,7 +14,7 @@ tags:
   - origination
 ---
 
-> nibbāna is not a destination after death.
+> *nibbāna* is not a destination after death.
 
 A transcribed sermon arguing against this common misconception of *nibbāna*.
 
