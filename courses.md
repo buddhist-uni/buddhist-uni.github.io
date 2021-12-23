@@ -31,7 +31,7 @@ We hope you enjoy our offerings:
 {% assign bauthors = '' | split: '' %}
 {% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
 {% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
-<h3 {{onclick}} class="courselink">{{ forloop.index }}. <a href="{{ course.url }}">{{ course.title }}</a></h3>
+<h3 {{onclick}} class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
 
 <div class="coursedesc">
   <div class="descrow">
@@ -50,7 +50,7 @@ We hope you enjoy our offerings:
 
 ## External Courses
 
-### 1. [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
+### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
 {:onclick="location.href='http://bschawaii.org/shindharmanet/course/'" .courselink}
 
 <div class="coursedesc">
