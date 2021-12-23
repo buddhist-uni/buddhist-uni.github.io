@@ -818,8 +818,7 @@ h3.courselink {
     margin-bottom: 0;
     background-color: $banner-color;
     color: white;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     letter-spacing: 3px;
     a {
         color: white;
@@ -840,7 +839,7 @@ div.coursedesc {
 div.descrow {
     display: flex;
     width: 100%;
-    @include media-query($on-palm) {
+    @include media-query(450px) {
         display: initial;
     }
 }
@@ -879,12 +878,15 @@ div.descrow {
 div.descrow div.cicon {
     margin: auto 16px;
     width: inherit;
-    min-width: 82px;
+    min-width: 145px;
     text-align: center;
     font-size: 65px;
     @include media-query($on-palm) {
         float: left;
         padding: 0 15px 0 0;
+    }
+    @media screen and (min-width: 450px) {
+        max-width: 145px;
     }
 }
 
