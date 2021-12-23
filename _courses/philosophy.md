@@ -41,11 +41,11 @@ next_course_descs:
   - "Go further ahead in time, and study the school of Buddhism which grew out of the Abhidhamma traditions."
   - "In which we think through what the Dhamma means for everyday, household life."
 epigraph: |
-  > Explain suffering to me  
+  > "Explain suffering to me"  
   ~ [SN 12.17](https://suttacentral.net/sn12.17/en/sujato#4.9){:target="_blank"}  
   
-  > I wanna know  
-  > Where we're going  
+  > "I wanna know  
+  > Where we're going"  
   ~ [Robert DeLong](https://www.youtube.com/watch?v=an9qlVyOb8E){:target="_blank"}
 ---
 

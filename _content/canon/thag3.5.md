@@ -5,9 +5,10 @@ external_url: "https://suttacentral.net/thag3.5/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1xKOrx3OKOmC_igKieFZZwyCTjaRh8xkn"]
-course: hindrances
+course: imagery
 tags:
   - thag
+  - hindrances
   - lay
   - monastic
   - canonical-poetry

@@ -10,8 +10,8 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Vestnik_1946.jpg">
 time: 2
 description: "In this course we cover ethics from three angles---theory, practice and mythology---believing that none is intelligible without the rest. A course that, hopefully, will engage your heart as well as your head."
 epigraph: |
-  > Come, let me extol in sweet words of praise  
-  > The one who’s given up stains and delusions  
+  > "Come, let me extol in sweet words of praise  
+  > The one who’s given up stains and delusions"  
   ~ [Snp 5.19](https://suttacentral.net/snp5.19/en/sujato){:target="_blank" ga-event-value="0.2"}
 next_courses:
   - function

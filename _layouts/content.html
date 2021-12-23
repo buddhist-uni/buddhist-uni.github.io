@@ -133,9 +133,9 @@ layout: default
     {% if page.publisher %}{% assign publisher = site.publishers | find: "slug", page.publisher %}{% endif %}
     {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | find: "slug", page.editor %}{% endif %}
    
-   <p class="star_desc">
-        {{ tags }}
-   </p>
+   {% if tags.size > 0 %}<p class="star_desc">
+     About: {{ tags }}
+   </p>{% endif %}
  
     {% if page.status != "rejected" and page.course %}
         {% assign course = site.courses | find: "slug", page.course %}

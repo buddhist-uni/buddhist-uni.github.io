@@ -15,4 +15,4 @@ number: 1
 pages: "1--18"
 ---
 
-> The householder who is fully engaged in working and supporting his or her family may have to concentrate on dāna and sīla, [...] but teachings on the Four Noble Truths, or on various aspects of meditation, may also be included if the hearers are seen as ready to understand more of the Dhamma.
+> The householder who is fully engaged in working and supporting his or her family may have to concentrate on *dāna* and *sīla*, [...] but teachings on the Four Noble Truths, or on various aspects of meditation, may also be included if the hearers are seen as ready to understand more of the Dhamma.

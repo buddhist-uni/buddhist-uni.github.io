@@ -15,9 +15,9 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/e/ef/Mihinthalaya_Budd
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Mihinthalaya_Buddha_Statue.jpg">Hasitha Senadheera</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 epigraph: |
   > 諸佛留藏經，  
-  > All the Buddhas have left us their scriptures  
+  > "All the Buddhas have left us their scriptures  
   > 只為人難化。  
-  > Only because humans are so hard to change.  
+  > Only because humans are so hard to change."  
   ~ [Shídé (拾得)](/content/monographs/hanshan_rouzer-paul), ~8th c. Tang
 next_courses:
   - ebts
@@ -125,6 +125,7 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 ##### Chapter 4
 > ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#11.6){:target="_blank" ga-event-value="0.3"}
+{:.epigraph}
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 

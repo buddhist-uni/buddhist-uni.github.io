@@ -19,8 +19,9 @@
 @import "@primer/css/table-object/index.scss";
 @import "@primer/css/dropdown/dropdown.scss";
 
-// My Bug fixes go here
+// My Bug fixes go here, after the Components they're fixing
 .input-lg { height: 36px; line-height: 24px; min-width: 48px; }
+.btn { border-color: rgba(27, 31, 35, 0.5); }
 
 // My own custom Primer Components go here
 @import "support.scss";

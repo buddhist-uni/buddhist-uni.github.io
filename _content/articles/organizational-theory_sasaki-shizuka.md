@@ -15,4 +15,4 @@ tags:
   - form
 ---
 
-> the saṃgha is a collective body of people who wish to live doing only what they love to do---that is, Buddhist practices.
+> the *saṃgha* is a collective body of people who wish to live doing only what they love to do---that is, Buddhist practices.

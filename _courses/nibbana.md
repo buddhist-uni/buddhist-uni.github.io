@@ -20,12 +20,12 @@ next_course_descs:
   - "Bhikkhu Analayo walks us through a chapter of the Madhyama Āgama on the subject of how tranquility and insight work together to lead the mind to maturity."
   - "A course by Bhikkhu Ñāṇananda on Dependant Origination and the unraveling of Saṃsāra."
 epigraph: |
-  > This song is for the soil  
+  > "This song is for the soil  
   > That's toxic clear down to the bedrock  
   > Where no thing of consequence can grow  
   > Drop your seeds there, let them go  
   > Let them all go  
-  > Let 'em all go  
+  > Let 'em all go"  
   ~ [Cotton, The Mountain Goats](https://youtu.be/mZTslh_e2iE){:target="_blank" ga-event-value="0.5"}
 ---
 
@@ -189,7 +189,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 #### 'Reappears' Does Not Apply
 
 {% include content_blurb.html category="canon" slug="an4.195" %}
-> everything becomes cool when nothing is relished
+- "everything becomes cool when nothing is relished"
 
 {% include content_blurb.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
 - On what it feels like to transcend the categories

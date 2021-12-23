@@ -18,5 +18,5 @@ tags:
   - academia
 ---
 
-> One does not obtain sīla, let alone the Dhamma, from the historical process.
+> One does not obtain *sīla*, let alone the Dhamma, from the historical process.
 
