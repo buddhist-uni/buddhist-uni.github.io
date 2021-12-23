@@ -30,11 +30,12 @@ We hope you enjoy our offerings:
 {% assign textbooks = courseware | where: "category", "monographs" | concat: booklets %}
 {% assign bauthors = '' | split: '' %}
 {% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
-<h3 class="courselink">{{ forloop.index }}. <a href="{{ course.url }}">{{ course.title }}</a></h3>
+{% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
+<h3 {{onclick}} class="courselink">{{ forloop.index }}. <a href="{{ course.url }}">{{ course.title }}</a></h3>
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='{{ course.url }}'" class="cicon"><i class="{{ course.icon }}"></i></div>
+    <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>
     <div class="cdesc">{{ course.description | markdownify }}</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> {{ course.time }}</div>
   </div>
@@ -50,11 +51,11 @@ We hope you enjoy our offerings:
 ## External Courses
 
 ### 1. [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
-{: .courselink}
+{:onclick="location.href='http://bschawaii.org/shindharmanet/course/'" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div class="cicon"><i class="fas fa-street-view"></i></div>
+    <div onclick="location.href='http://bschawaii.org/shindharmanet/course/'" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>
