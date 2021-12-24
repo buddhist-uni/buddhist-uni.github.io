@@ -11,6 +11,7 @@ course: pilgrimage
 tags:
   - american
   - mahayana
+  - monastic-mahayana
 year: 1983
 olid: OL3552203M
 publisher: Dharma Realm Buddhist University

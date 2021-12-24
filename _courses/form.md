@@ -1,5 +1,5 @@
 ---
-title: The Form(s) of Buddhism
+title: The Form of Buddhism
 subtitle: A Course Syllabus
 google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 feedback_id: "The+Form(s)+of+Buddhism"
