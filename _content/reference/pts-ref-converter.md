@@ -1,5 +1,5 @@
 ---
-title: "PTS Converter"
+title: "PTS Reference Converter"
 source_url: "http://pts.ticao.de"
 external_url: "https://benmneb.github.io/pts-converter/"
 tags:

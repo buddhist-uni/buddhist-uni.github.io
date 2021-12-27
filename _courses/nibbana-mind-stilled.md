@@ -46,6 +46,7 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 
 {% include content_blurb.html category="av" slug="nibbana-lectures_analayo" %}
 - Bhikkhu Anālayo reads the above lectures, adding his own insightful reflections as well as giving us alternative translations for some of the suttas quoted.
+- If you prefer to watch the lectures on YouTube, they can be found [in this playlist](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank"}
 
 ## Course Outline
 
