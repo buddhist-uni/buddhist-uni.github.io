@@ -18,4 +18,4 @@ tags:
 
 Bhikkhu Analayo reads, with insightful commentary and alternative translations, the [Nibbāna Sermons](/content/monographs/nibbana_nyanananda) by [Bhikkhu Kaṭukurunde Ñāṇananda](/authors/nyanananda).
 
-You can get [the lecture notes here](https://drive.google.com/drive/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz).
+You can get [the lecture notes here](https://drive.google.com/drive/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank"} and can [watch the lectures on YouTube here](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank"}.
