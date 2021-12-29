@@ -17,7 +17,6 @@ course: philosophy
 tags:
   - raga
   - psychology
-  - imagery
   - hindrances
 ---
 
