@@ -21,5 +21,5 @@ status: featured
 
 My most highly recommended introduction to Buddhist meditation.
 
-Transcribed from [a series of YouTube videos](https://www.youtube.com/playlist?list=PL603BD0B03E12F5A1){:target="_blank" ga-event-value="{{ page.base_value }}"}, this short booklet concisely describes the practice as it's taught in the [Mahasi]({% link _authors/mahasi.md %}) *{% include tag-link.html text="vipassana" tag="vipassana" %}* tradition.
+Transcribed from [a series of YouTube videos](https://www.youtube.com/playlist?list=PL603BD0B03E12F5A1){:target="_blank" ga-event-value="{{ page.base_value }}"}, this short booklet concisely describes the practice as it's taught in the [Mahasi]({% link _authors/mahasi.md %}) {% include tag-link.html text="vipassana" tag="vipassana" %} tradition.
 
