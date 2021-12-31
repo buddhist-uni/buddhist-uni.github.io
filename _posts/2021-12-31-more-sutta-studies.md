@@ -5,7 +5,7 @@ title: More Sutta Studies with Bhikkhu Bodhi
 This month, we've added hundreds of lectures by [Bhikkhu Bodhi](/authors/bodhi) on the [Majjhima](/series/mn-study_bodhi) and [Aṅguttara](/courses/an) Nikāyas.
 
 [The Majjhima Nikāya course](/courses/mn) on this site had previously contained only Bhikkhu Bodhi's lectures through 2010 which were hosted [at the Bodhi monastery website](https://bodhimonastery.org/an-extended-study-of-the-majjhima-nikaya.html){:target="_blank"}.
-A "part 11" (from 2010--2015) going back and covering the suttas not covered in the first 10 sections does exist [on YouTube](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"} and can now be found [on this website](/content/av/continuing-mn-study_bodhi) too.
+A "part 11" (from 2010--2015) covering the suttas not covered in the first 10 sections, however, exists [on YouTube](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"} and can now be found [on this website](/content/av/continuing-mn-study_bodhi) too.
 
 And after thirteen years (!) of lecturing on the Majjhima Nikāya, Bhikkhu Bodhi decided to continue his sutta study classes by going through the Aṅguttara Nikāya: a series which is still on-going today.  You can follow that course [on YouTube here](https://youtube.com/playlist?list=PLgu0hJSLkqCWjjvc-lIKVn6CAUK95TbV4){:target="_blank"}.
 

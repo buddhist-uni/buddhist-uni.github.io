@@ -10,6 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1uSQGi6DhR6wGv6t8zV2TwzgD7pw7Kc12/view?usp=drivesdk"
 year: 2013
 course: sri-lanka
+status: featured
 tags:
   - state
   - theravada

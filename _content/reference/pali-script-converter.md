@@ -1,9 +1,9 @@
 ---
 title: "Pāli Script Converter"
 external_url: "http://aksharamukha.appspot.com/converter"
+course: pali-language
 tags:
-  - pali-language
-  - pali-canon
+  - sanskrit
 year: 2019
 ---
 

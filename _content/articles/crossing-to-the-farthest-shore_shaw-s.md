@@ -13,6 +13,7 @@ tags:
   - indian
   - imagery
   - oceans
+status: featured
 ---
 
 > Buddhist literature offers us the only narratives from this period that feature to any great extent the nautical or maritime traveller as hero.
