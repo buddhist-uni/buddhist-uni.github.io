@@ -19,6 +19,6 @@ publisher: Dharma Realm Buddhist University
 
 > Three steps, one bow: that was how they made their pilgrimage. […] an unadorned account of an authentic spiritual journey.
 
-A monk and novice write letters to their teacher as they protrate their way up the California coast.
+A monk and novice write letters to their teacher as they prostrate their way up the California coast.
 
 Note: this Second Edition is entitled *Highway Dharma Letters: Two Buddhist Pilgrims Write to Their Teacher*.
