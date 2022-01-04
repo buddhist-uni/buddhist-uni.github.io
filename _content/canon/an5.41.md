@@ -1,5 +1,5 @@
 ---
-title: "AN 5.41 The Ādiya Sutta: The Discourse on the Right Use (of Wealth)"
+title: "AN 5.41 The Ādiya Sutta: The Discourse on the Right Use [of Wealth]"
 translator: anandajoti
 slug: "an.005.041"
 drive_links: ["https://drive.google.com/file/d/1g_sc09v_sSVeVaZ5n6UqRUjbwNHQfxUr/view?usp=drivesdk"]
@@ -12,5 +12,5 @@ tags:
 ---
 
 > A man remembering this, a person established in Nobility,  
-Is praised right here (and now), and later rejoices in heaven.
+Is praised right here and now, and later rejoices in heaven.
 
