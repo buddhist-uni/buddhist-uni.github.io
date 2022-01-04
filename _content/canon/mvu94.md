@@ -13,4 +13,4 @@ year: 2009
 month: may
 ---
 
-A translation from the Mahāvastu on the Buddha's first journey after the Awakening to the place where he will give his first official teaching.
+A translation from the Mahāvastu on the Buddha's first journey after the Awakening to the place where he would give his first official teaching.
