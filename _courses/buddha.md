@@ -135,6 +135,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [Entries] Optional: The Four Ennobling Truths
 1. [Refuge] Arahaṁ
 
+1. {% include content_blurb.html slug="mvu94" category="canon" %}
+1. {% include content_blurb.html slug="lal26" category="canon" %}
+
 1. [Life] Spreading the Dhamma
 1. [L] The Two Chief Disciples
 1. [L] Anathapindika: Feeder of the Poor
