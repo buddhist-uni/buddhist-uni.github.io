@@ -2,7 +2,7 @@
 title: "Buddhism and Social Action"
 authors: ["Ken Jones"]
 year: 1981
-external_url: "https://www.bps.lk/library-search-select.php?id=wh285"
+external_url: "https://www.bps.lk/olib/wh/wh285_Jones_Buddhism-and-Social-Action.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1gWlWs3EPIb6fftaj4s1oK4L2AZi4k_PO/view?usp=drivesdk"

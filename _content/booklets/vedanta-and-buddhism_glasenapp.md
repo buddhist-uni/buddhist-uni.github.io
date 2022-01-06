@@ -1,7 +1,7 @@
 ---
 title: "Vedānta and Buddhism"
 authors: ["Helmuth von Glasenapp"]
-external_url: "https://www.bps.lk/library-search-select.php?id=wh002"
+external_url: "https://www.nku.edu/~kenneyr/Buddhism/lib/bps/wheels/wheel002.html"
 drive_links: ["https://drive.google.com/file/d/1wmbOHaIZkJ1vr6qRId4h9-RZ8opd1z6T/view?usp=drivesdk", "https://drive.google.com/file/d/1PYEpdekzqvI9tkdMP2pBJumlGyFl1qmZ/view?usp=drivesdk"]
 year: 1950
 publisher: bps

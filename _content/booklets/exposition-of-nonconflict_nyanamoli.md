@@ -2,7 +2,7 @@
 title: "The Exposition of Non-Conflict: MN 139"
 authors:
   - nyanamoli
-external_url: "https://www.bps.lk/library-search-select.php?id=wh269"
+external_url: "https://www.bps.lk/olib/wh/wh269_Nyanamoli_Exposition-of-Non-Conflict--Aranavibhanga-Sutta.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/149oxcYBrqNf1JBBUpoa1wcAYQGk-D1xr/view?usp=drivesdk"

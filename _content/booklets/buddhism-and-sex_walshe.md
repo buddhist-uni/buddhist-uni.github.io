@@ -2,7 +2,7 @@
 title: "Buddhism and Sex"
 authors: [walshe]
 year: 1975
-external_url: "https://www.bps.lk/library-search-select.php?id=wh225"
+external_url: "https://www.bps.lk/olib/wh/wh225_Walshe_Buddhism-and-Sex.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1HQ8Qm3tugKgw8fjteWDLkJ0PyRsl7hpf/view?usp=drivesdk"

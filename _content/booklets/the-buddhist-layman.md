@@ -4,7 +4,7 @@ authors:
   - bogoda-r
   - jootla
   - walshe
-external_url: "https://www.bps.lk/library-search-select.php?id=wh294"
+external_url: "https://www.bps.lk/olib/wh/wh294_Bogoda-etal_The-Buddhst-Layman--Four-Essays.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Hp5uWsGfstqZVrp9QYE0xZbTn1ov4Fdz/view?usp=drivesdk"

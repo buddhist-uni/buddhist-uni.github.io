@@ -2,7 +2,7 @@
 title: "Lay Buddhist Practice: The Shrine Room, Uposatha Day, Rains Residence"
 authors: [mills-laurence]
 year: 1974
-external_url: "https://www.bps.lk/library-search-select.php?id=wh206"
+external_url: "https://www.bps.lk/olib/wh/wh206_Khantipalo_Lay-Buddhist-Practice.html"
 publisher: bps
 series: wheel
 number: 206
