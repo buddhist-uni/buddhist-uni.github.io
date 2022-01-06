@@ -2,7 +2,7 @@
 title: "*Anattā* and *Nibbāna*: Egolessness and Deliverance"
 authors:
   - nyanaponika
-external_url: "https://www.bps.lk/library-search-select.php?id=wh011"
+external_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X/9/f/9fe69ccb810ba8abd9cd9e0df0c28bde1d5af015.pdf"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ciTM45arFN2cq9AFAHlM1yymS5Zf8hDi/view?usp=drivesdk"
@@ -15,7 +15,7 @@ tags:
   - dialogue
   - anatta
   - emptiness
-year: 1957
+year: 1959
 series: wheel
 number: 10
 publisher: bps

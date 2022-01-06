@@ -2,7 +2,8 @@
 title: "Escape to Reality"
 authors:
   - pereira
-external_url: "https://www.bps.lk/library-search-select.php?id=wh045"
+file_links:
+  - "exclusive_01/Escape-to-Reality--Buddhist-Essays_wh045_Pereira.pdf"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1WzYchXzoRpzMYZPaLL7cP-LSrbL_QIPS/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Going for Refuge and Taking the Precepts"
 authors:
   - bodhi
-external_url: "https://www.bps.lk/library-search-select.php?id=wh282"
+external_url: "https://www.bps.lk/olib/wh/wh282_Bodhi_Going-For-Refuge--Taking-The-Precepts.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Kqh8G1v3wNnxIKr0xEA3F4g6fNhnqsN7/view?usp=drivesdk"

@@ -7,7 +7,7 @@ authors:
   - gorkom
   - "Ācariya Dhammapāla"
 editor: bodhi
-external_url: "https://www.bps.lk/library-search-select.php?id=wh367"
+external_url: "https://www.nku.edu/~kenneyr/Buddhism/lib/bps/wheels/wheel367.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1-HzyeYYKjfCv-zp5g9Kcbj-ND-ejR2Mm/view?usp=drivesdk"
