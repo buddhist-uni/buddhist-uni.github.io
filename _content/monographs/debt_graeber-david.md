@@ -1,7 +1,7 @@
 ---
 title: "Debt: The First 5000 Years"
 authors:
-  - "David Graeber"
+  - graeber-david
 course: economics
 status: featured
 olid: OL27883779M
