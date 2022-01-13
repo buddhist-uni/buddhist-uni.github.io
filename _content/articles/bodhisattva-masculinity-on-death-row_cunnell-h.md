@@ -16,9 +16,10 @@ tags:
   - engaged
   - bodhisattva
   - chaplaincy
+  - reform
 status: featured
 ---
 
 >  'I smiled at the guards standing at my cell,' he writes. 'Being thrown in the Hole was worth the pleasure of seeing them still alive.'
 
-A review of Jarvis Masters’ spiritual memoir *Finding Freedom* analyzing the work as a critque of toxicity in an American prison and the presentation of an alternate "Bodhisattva" masculinity.
+A review of Jarvis Masters’ spiritual memoir *Finding Freedom* analyzing the work as a critque of toxicity in an American prison and the presentation of an alternate "Bodhisattva" masculinity possible even among killers.

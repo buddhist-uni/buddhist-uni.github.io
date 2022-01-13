@@ -6,10 +6,10 @@ external_url: "https://archive.org/download/jpts-x-1985/Where_s%20That%20Sutta%2
 source_url: "http://www.palitext.com/JPTS_scans/JPTS_1985_X.pdf"
 drive_links: 
   - "https://drive.google.com/file/d/1bXaLqLFWI9kXhAz604pvl6VFLhFTBnBE/view?usp=drivesdk"
-course: sutta
+course: an
 tags:
   - philosophy
-  - an
+  - sutta
 year: 1985
 journal: jpts
 publisher: pts
