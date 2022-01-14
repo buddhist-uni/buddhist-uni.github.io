@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1JohWUx5ZqiFXY_s9dlH49qaY0Gaak1P3/view?usp=drivesdk"
 course: sn
 tags:
-  - sutta
+  - an
 year: 2007
 journal: jpts
 volume: 29
