@@ -17,4 +17,4 @@ olid: OL34044840M
 
 An exploration of power reacting to a few modern philosophers on the subject.
 
-I found the work engaging and impressive, despite its odd avoidance of the psychological. As a Buddhist, I can't agree that "life as such cannot be understood in terms of causal relations," though I appreciate the book, insofar as it advocates and "leads to [...] an ethics and aesthetics of the *no one*: *friendliness* free of intentions, even free of *wishes*."
+I found the work engaging and impressive, despite its odd avoidance of the psychological. As a Buddhist, I can't agree that "life as such cannot be understood in terms of causal relations," though I appreciate the book, insofar as it advocates and "leads to [...] an ethics and aesthetics of the no one: friendliness free of intentions, even free of wishes."
