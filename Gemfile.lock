@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/buddhist-uni/jekyll-feed.git
-  revision: 1ba5baace5b948df18f229a64971cb8c1a9cee8a
+  revision: 96dc27b29609a30550f7d72146b170004c7bfc35
   branch: collection-tags
   specs:
-    jekyll-feed (0.15.1)
+    jekyll-feed (0.16.0)
       jekyll (>= 3.7, < 5.0)
 
 GIT
@@ -34,7 +34,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.15.4)
+    ffi (1.15.5)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.8.11)
@@ -65,7 +65,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.7.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -82,7 +82,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (3.26.1)
+    rouge (3.27.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)

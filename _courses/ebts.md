@@ -53,7 +53,7 @@ The [Intro to Buddhism course]({% link _courses/buddhism.md %}) is not a prerequ
 ### Time Commitment
 This course contains about 80 hours of lectures and reading, depending on how fast you read, and can take anywhere from 2 weeks to a year to finish. For example, 3 lectures (6hr) per week would make this a 15 week course.
 
-## Course Outline
+## The Course
 This course gives a thorough introduction to what the Buddha taught in his own words, and also explores how these words came down to us.
 
 ### Introduction

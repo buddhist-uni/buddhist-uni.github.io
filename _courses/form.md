@@ -50,7 +50,7 @@ The forms of Buddhism, then, are the various ways that people have looked back t
 This course assumes familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).
 
 
-## Course Outline
+## The Course
 This course proceeds in three parts: history, community, and practice. 
 
 The history portion of the course is the longest and describes the entire history of Buddhism. The second section analyzes this history to highlight the role of the monastic community, and the third section zooms all the way in to the individual practices.

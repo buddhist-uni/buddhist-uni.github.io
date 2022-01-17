@@ -28,7 +28,7 @@ The Pāli Language is the simplified form of Sanskrit that Theravada Buddhism us
 
 Pāli is not a tonal language and (like Sanskrit) is inflected, meaning that the nouns change suffixes depending on their role in the sentence. This course will introduce those various roles (called "cases") and give a lot of practice deciphering them.
 
-## Course Outline
+## The Course
 
 This course doesn't assume any prior knowledge of linguistics or classical languages, and so serves as a suitable introduction for anyone.  Note that the examples will **not** be drawn directly from the Pāli Canon.
 

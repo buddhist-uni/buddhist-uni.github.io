@@ -1,6 +1,5 @@
 ---
 title: "Sources"
-section: about
 layout: setlinktargets
 ---
 
