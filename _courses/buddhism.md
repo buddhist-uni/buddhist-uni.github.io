@@ -40,7 +40,7 @@ This course assumes English language proficiency.
 ### Time Commitment
 This is a self-paced course, which is estimated to take a few months to complete depending on your reading pace.
 
-## Course Outline
+## The Course
 ### Introduction
 > “There are two conditions for the arising of right view. What two? The words of another and proper attention.”  
 > ~ [AN 2.126](https://suttacentral.net/an2.118-129/en/sujato#an2.126:1.1){:target="_blank" ga-event-value="0.25"}

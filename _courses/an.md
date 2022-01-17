@@ -42,7 +42,7 @@ This course is technically a continuation of Bhikkhu Bodhi's epic, multi-year [c
 
 As of 2021, the course is still ongoing, with new lectures appearing every couple of weeks. I recommend watching one or two videos per week to slowly catch up, but you're welcome to watch at whatever pace works for you.
 
-## Course Outline
+## Course Contents
 
 This course goes sequentially through the Aṅguttara Nikaya, explaining each sutta or sutta cluster one at a time.
 

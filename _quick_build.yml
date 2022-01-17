@@ -19,6 +19,7 @@ exclude:
     - vendor/ruby/
     - scripts/
     - content.bib
+    - _authors/graeber-david.md
     - _authors/harrison-paul.md
     - _authors/rongton.md
     - _authors/tiyavanich.md
@@ -525,4 +526,22 @@ exclude:
     - _content/av/seeking-sakyamuni_jaffe-richard.md
     - _content/av/mindful-way.md
     - _content/av/worldly-saviors_hughes-april.md
+    - _content/av/tibetan-buddhism-creativity-and-imagination_pimentel-jessica.md
+    - _content/papers/you-are-responsible_dhammananda.md
+    - _content/av/feelings_yuttadhammo.md
+    - _content/monographs/klara-and-the-sun_ishiguro-kazuo.md
+    - _content/papers/why-meditation_piyananda.md
+    - _content/canon/an10.60.md
+    - _content/monographs/kim_kipling-rudyard.md
+    - _content/canon/sn35.95.md
+    - _content/essays/why-i-am-a-buddhist-monk_brahmali.md
+    - _content/av/oracle_cherniack-david.md
+    - _content/canon/mn74.md
+    - _content/monographs/bullshit-jobs_graeber-david.md
+    - _content/articles/bullshit-jobs_graeber-david.md
+    - _content/articles/what-language-did-the-buddha-speak_piyasilo.md
+    - _content/papers/what-is-this-religion_dhammananda.md
+    - _content/papers/what-kamma-is_thittila.md
+    - _content/av/on-the-crisis-in-myanmar_bodhi.md
+    - _content/booklets/beyond-birth_suchart.md
 

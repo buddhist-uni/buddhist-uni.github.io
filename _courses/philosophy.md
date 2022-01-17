@@ -85,7 +85,7 @@ You may want to keep a copy of the assigned suttas in front of you while listeni
 In addition to the suttas, this course assigns four short books in weeks 2, 4, 7, 8 and 9: [The Four Noble Truths]({% link _content/booklets/the-four-noble-truths_sumedho.md %}), [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Inspiring Dhamma]({% link _content/booklets/inspiring-dhamma_suchart.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
 
 
-## Course Outline
+## The Course
 
 This course gives a traditional, 10-week introduction to Theravada Buddhist Philosophy.
 

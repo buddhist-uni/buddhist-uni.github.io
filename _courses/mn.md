@@ -47,7 +47,7 @@ For those looking to take the _entire_ course, I recommend setting aside **a few
 Make these days a special “holy” day, dedicated to your practice and study. Read one sutta, listen to the lecture(s) on it and reflect.
 Take your time. Meditate on it. Let this weekly ritual become part of your life. If you keep it up, in a few years you may even be sad to know that you've finished the course!
 
-## Course Outline
+## Course Content
 
 In this course, we study the Early Buddhist Texts by reading the Majjhima Nikaya.
 

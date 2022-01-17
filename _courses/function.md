@@ -48,7 +48,7 @@ This course strives to be a rigorous overview of Buddhism suitable for everyoneâ
 
 For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 
-## Course Outline
+## The Course
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 
 
 ### Main Text

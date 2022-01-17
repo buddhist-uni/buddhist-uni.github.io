@@ -48,7 +48,7 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 - Bhikkhu Anālayo reads the above lectures, adding his own insightful reflections as well as giving us alternative translations for some of the suttas quoted.
 - If you prefer to watch the lectures on YouTube, they can be found [in this playlist](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank"}
 
-## Course Outline
+## Course Instructions
 
 [The course](https://drive.google.com/file/d/1-qnX1F6M3gxKQ2hCBeNhY15U6yHv1vdL/view?usp=sharing) procedes linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
 

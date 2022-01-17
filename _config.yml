@@ -111,6 +111,7 @@ defaults:
         path: ""
     values:
         layout: "page"
+        section: "about"
   -
     scope:
         path: ""

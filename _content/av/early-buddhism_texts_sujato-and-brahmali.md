@@ -1,7 +1,7 @@
 ---
 title: "Early Buddhist Texts"
 authors: [sujato, brahmali]
-external_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajahn-brahmali-ajahn-sujato/"
+source_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajahn-brahmali-ajahn-sujato/"
 month: mar
 year: 2013
 formats: [zip]

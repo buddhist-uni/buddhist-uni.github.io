@@ -87,7 +87,7 @@ A number of articles and essays will be weaved in throughout the course.  We’l
 {% include content_blurb.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
 - In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries.
 
-## Course Outline
+## The Course
 
 I've sequenced the above books into an inter-woven, narrative arc which I (at least!) find compelling. 
 
