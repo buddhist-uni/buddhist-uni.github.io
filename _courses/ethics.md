@@ -131,6 +131,9 @@ Your first time, I recommend reading it all the way through.  Let the poetic lan
 
 #### The Way of the Bodhisattva
 
+{% include content_blurb.html category="articles" slug="to-be-a-bodhisattva_garfield-jay" %}
+- This, more detailed, introduction to Śāntideva's work discusses its overall structure and phenomenological approach to ethics and how it breaks the mold of Western ethical categories.
+
 ##### Chapter 1: *The Excellence of Bodhicitta*
 
 In Buddhism, the highest good is awakening, and in this chapter Śāntideva expresses his devotion to that ideal and honors those who are advanced on the path towards to. This raises two questions:
