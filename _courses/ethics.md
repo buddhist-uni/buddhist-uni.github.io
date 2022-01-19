@@ -139,7 +139,7 @@ Your first time, I recommend reading it all the way through.  Let the poetic lan
 In Buddhism, the highest good is awakening, and in this chapter Śāntideva expresses his devotion to that ideal and honors those who are advanced on the path towards to. This raises two questions:
 
 {% include content_blurb.html category="articles" slug="cessation-and-axiology_breyer-daniel" %}
-- But what makes awakening good?
+- What makes awakening good?
 
 {% include content_blurb.html category="canon" slug="mn3" %}
 - How (and why) did the Buddha suggest that we pay him homage?
