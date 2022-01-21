@@ -2,7 +2,8 @@
 title: "MN 9.17: The Four Noble Truths"
 slug: "mn009.017"
 translator: bodhi
-external_url: "https://suttacentral.net/mn9/en/bodhi#sc17"
+source_url: "https://suttacentral.net/mn9/en/bodhi#sc17"
+external_url: "https://docs.google.com/document/d/1kixBz8xoJKj6TiB1Xg6Ir5WWLBhhefauR9BbL9rhYEg/edit"
 course: imagery
 tags:
   - mn

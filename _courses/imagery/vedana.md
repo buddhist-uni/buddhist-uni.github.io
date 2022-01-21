@@ -1,6 +1,6 @@
 ---
 title: "Vedanā — Feelings"
-image: https://illeakyw.sirv.com/Images/imagery-course/vedana.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vedana.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 8

@@ -4,9 +4,18 @@ layout: coursepart
 {% assign pslug = page.path | split: "/" | last | split: "." | first %}
 
 <figure>
-  <img src="{{ page.image }}?w=770" srcset="{{ page.image }} 1.5x">
+  <img style="width: 533px;" src="{{ page.image }}">
   <figcaption><p class="attribution">Illustration by Ayya Vimalayani aka "<a href="https://discourse.suttacentral.net/t/dhamma-doodles-grin/7206" target="_blank">Ven Yodha</a>"</p><p class="description">{{ page.description }}</p></figcaption>
 </figure>
+
+{% case page.order %}{% when 1 %}{% when 26 %}{% when 2 %}{% else %}
+<h3>Textbook</h3>
+<p>Read Chapter {{ page.order | minus: 2 | modulo: 12 | plus: 1 }} of:
+</li></ul></p>
+<p>{% if page.order < 14 %}{% include content_blurb.html category="monographs" slug="craving-to-liberation_analayo" %}
+{% else %}{% include content_blurb.html category="monographs" slug="grasping-to-emptiness_analayo" %}
+{% endif %}
+</p>{% endcase %}
 
 {{ content }}
 

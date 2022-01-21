@@ -1,3 +1,15 @@
+a.skip-to-main {
+    position: absolute;
+    transform: translateY(-120%);
+    background-color: white;
+    left: 6px;
+    padding: 8px;
+}
+a.skip-to-main:focus {
+    transform: translateY(6px);
+    z-index: 999;
+}
+
 header.site-header {
     z-index: 2;
     background-color: $banner-color;
@@ -147,7 +159,7 @@ figure figcaption {
         margin-bottom: 3px;
     }
     p.description {
-        font-size: 110%;
+        font-size: 130%;
     }
 }
 
@@ -348,19 +360,26 @@ footer a.u-email {
 
 .content_box {
     box-sizing: border-box;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+div.with_border {
     border: 1px solid gray;
     padding: 8px;
-    border-radius: 13px;
-    margin-bottom: 18px;
-    margin-top: 8px;
+    margin-top: 0px;
+    div.content_box_desc {
+        margin: 8px 1.2em 3px;
+    }
 }
 
 .simple_content {
     padding: 2px 5px;
 }
 
-.content_box div.content_box_desc {
-    margin: 8px 1.2em 3px;
+.content_box .content_box_desc {
+    margin: 1px 1.2em;
 }
 
 .content_box div.content_box_desc p,blockquote:last-child {
@@ -425,12 +444,23 @@ article.course ul li {
 }
 
 .continuecourse {
-    font-size: 110%;
     margin-left: auto;
     margin-right: auto;
     display: table;
     padding: 3px 80px;
     text-align: center;
+    a:first-child {
+        font-size: 120%;
+    }
+}
+
+.Toast-content {
+    h3 {
+        padding-top: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 div.nextcoursedesc {
@@ -622,7 +652,7 @@ article.tag .subtopics {
     font-family: $ui-font-family;
 }
 
-article.tag .content_links {
+.featured_content_list .content_links {
     text-align: end;
     margin-top: 10px;
 }

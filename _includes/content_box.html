@@ -1,8 +1,8 @@
-{% capture content_path %}_content/{{ include.category }}/{{ include.slug }}.md{% endcapture %}{% assign content = site.content | find: "path", content_path %}
+{% capture content_path %}_content/{{ include.category }}/{{ include.slug }}.md{% endcapture %}{% assign c = site.content | find: "path", content_path %}
 <div class="content_box">
-  <div class="{% if content.external_url %}content_box_header{% endif %}">
-    {% capture foo %}{% include content_title.html content=content %}{% endcapture %}
+  <div class="{% if c.external_url %}content_box_header{% endif %}">
+    {% capture foo %}{% include content_title.html content=c %}{% endcapture %}
     {{ foo | strip_newlines }}
   </div>
-  <div class="content_box_desc">{{ content.content | markdownify }}</div>
+  <div class="content_box_desc">{{ c.content | markdownify }}</div>
 </div>

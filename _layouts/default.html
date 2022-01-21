@@ -88,6 +88,7 @@
 </head>
 
   <body>
+<a class="skip-to-main" href="#main">Skip to content</a>
 
 <header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% elsif site.header_pages contains page.path %} smallsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
   <div class="wrapper">
@@ -103,7 +104,7 @@
 </header>
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div id="main" tabindex="-1" class="wrapper">
         {{ content | replace: 'target="_blank"', 'target="_blank" rel="noopener"' }}
       </div>
     </main>

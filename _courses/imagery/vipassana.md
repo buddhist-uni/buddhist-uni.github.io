@@ -1,6 +1,6 @@
 ---
 title: "Vipassanā — Insight"
-image: https://illeakyw.sirv.com/Images/imagery-course/vipassana.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vipassana.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 20

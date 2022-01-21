@@ -1,6 +1,6 @@
 ---
 title: "Rāga — Passion"
-image: https://illeakyw.sirv.com/Images/imagery-course/raga.JPG
+image: https://buddhistuniversity.net/imgs/imagery/raga.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 3
@@ -18,8 +18,6 @@ description: "Passion is the fire in our hearts that burns us alive. Far from ro
 ### Similes
 
 Read the introduction to Part 1 of [Hecker]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) now, and the similes: **7**, **14**, **39** and **44**.
-
-_(Don't forget to read Analayo Chapter 2!)_
 
 ### Reflections
 

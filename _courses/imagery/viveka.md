@@ -1,6 +1,6 @@
 ---
 title: "Viveka — Seclusion"
-image: https://illeakyw.sirv.com/Images/imagery-course/viveka.JPG
+image: https://buddhistuniversity.net/imgs/imagery/viveka.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 23

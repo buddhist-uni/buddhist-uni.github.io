@@ -1,6 +1,6 @@
 ---
 title: "Yoniso Manasikāra — Wise Attention"
-image: https://illeakyw.sirv.com/Images/imagery-course/yonisomanasikara.JPG
+image: https://buddhistuniversity.net/imgs/imagery/yonisomanasikara.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 19

@@ -1,6 +1,6 @@
 ---
 title: "Vimutti — Liberation"
-image: https://illeakyw.sirv.com/Images/imagery-course/vimutti.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vimutti.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 13

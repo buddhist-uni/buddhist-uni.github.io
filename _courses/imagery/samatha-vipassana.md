@@ -1,6 +1,6 @@
 ---
 title: "Samatha & Vipassanā — Tranquility & Insight"
-image: https://illeakyw.sirv.com/Images/imagery-course/samatha-vipassana.JPG
+image: https://buddhistuniversity.net/imgs/imagery/samatha-vipassana.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 21

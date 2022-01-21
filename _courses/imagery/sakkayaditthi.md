@@ -1,6 +1,6 @@
 ---
 title: "Sakkāyadiṭṭhi - Self View"
-image: https://illeakyw.sirv.com/Images/imagery-course/sakkayaditthi.JPG
+image: https://buddhistuniversity.net/imgs/imagery/sakkayaditthi.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 15
