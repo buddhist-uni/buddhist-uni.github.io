@@ -16,4 +16,4 @@ journal: tricycle
 
 > I knew I might be late for the morning talk if I didn’t hurry. Yet I didn’t
 
-A brief invitation to walk with mindfulness.
+A brief invitation to walking with mindfulness.
