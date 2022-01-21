@@ -1,0 +1,5 @@
+<div class="Toast Toast--{% case include.type %}{% when "warning" %}error{% when "question" %}warning{% endcase %}" style="max-width: 95%;">
+  <span class="Toast-icon"><i class="fas fa-{% case include.type %}{% when "warning" %}exclamation{% when "question" %}question{% else %}info{% endcase %}"></i></span>
+  <span class="Toast-content">{{ include.content | markdownify }}</span>
+</div>
+

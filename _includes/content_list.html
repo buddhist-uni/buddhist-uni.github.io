@@ -9,10 +9,10 @@
 {% else %}
   {% assign sorted = sorted | sort: sortkey %}
 {% endif %}
-{%- for content in sorted -%}
-    {%- if content.status == 'featured' -%}
-        {% include highlighted_content.html content=content %}
+{%- for c in sorted -%}
+    {%- if c.status == 'featured' -%}
+        {% include highlighted_content.html content=c %}
     {%- else -%}
-        {% include simple_content.html content=content %}
+        {% include simple_content.html content=c %}
     {%- endif -%}
 {%- endfor -%}

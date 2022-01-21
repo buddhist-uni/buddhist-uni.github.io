@@ -1,10 +1,10 @@
 <div class="simple_content">
 {% capture foo %}{% include simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
 <p><em>
-  {%- if content.status != "rejected" and content.course -%}
-    {% assign course = site.courses | find: "slug", content.course %}
+  {%- if include.content.status != "rejected" and include.content.course -%}
+    {% assign course = site.courses | find: "slug", include.content.course %}
     {%- if course -%}
-        Featured in the course, "<a href="{{ course.url }}#{{ content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"
+        Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"
     {%- endif -%}
   {%- endif -%}
 </em></p>

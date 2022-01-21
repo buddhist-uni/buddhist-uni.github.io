@@ -1,7 +1,7 @@
 ---
 title: "Vitakka — Thought"
 slug: "course parts don't get unique slugs"
-image: https://illeakyw.sirv.com/Images/imagery-course/vitakka.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vitakka.JPG
 layout: "imagerycoursepart"
 order: 18
 description: "We must be very careful where we place our thoughts, as one thought leads to another, leads to another, leads to..."

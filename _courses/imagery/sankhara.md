@@ -1,6 +1,6 @@
 ---
 title: "Saṅkhāra — Activity"
-image: https://illeakyw.sirv.com/Images/imagery-course/sankhara.JPG
+image: https://buddhistuniversity.net/imgs/imagery/sankhara.JPG
 order: 17
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"

@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<script>
+if (window.parent !== window) { // ask to break out of self-iframe
+    window.parent.postMessage({please: "navto", url: window.location.href}, "{{ site.url }}");
+}
+</script>
 {%- assign cslug = page.path | split: '/' -%}
 {%- assign cslug = cslug[1] -%}
 {%- assign course = site.courses | find: "slug", cslug -%}
@@ -13,20 +18,27 @@ layout: default
 <article class="coursepart">
 
   <header class="post-header">
-    <h1 class="post-title"><i class="{{ course.icon }}"></i> {{ course.title | escape }}</h1>
-    <div class="back"><a href="{{ course.url }}">Course Home</a> / </div>
-    <h2>{{ page.title }}</h2>
-    {% if prev %}
-      {% capture partn %}part {{ page.order }} of a course{% endcapture %}
-      <i>{{ course.part_header | replace: "part of a course", partn}}</i>
-    {% endif %}
+    <h1 class="post-title"><i class="{{ course.icon }}"></i> {{ page.title | escape }}</h1>
+    {% capture partn %}part {{ page.order }} of <a href="{{ course.url }}">a course</a>{% endcapture %}
+    <i>{{ course.part_header | replace: "part of a course", partn}}</i>
   </header>
   
   {{ content }}
-
+  
   {%- if next -%}
-    <div class="continuecourse"><a href="{{ next.url }}">Continue to part {{ next.order }}, <i>{{ next.title }}</i>...</a></div>
+    <div class="continuecourse"><a href="{{ next.url }}">Continue to part {{ next.order }}, <i>{{ next.title }}</i></a><br><br><a href="{% if prev %}{{ prev.url }}{% else %}{{ course.url }}{% endif %}">...or go back to {% if prev %}part {{ prev.order }}{% else %}the course homepage{% endif %}</a></div>
   {%- else -%}
     {% include course_footer.html course=course %}
   {%- endif -%}
- </article>
+</article>
+<script>
+if (window.parent === window && document.getElementsByTagName("iframe").length > 0) {
+    // if has iframe, listen for an incoming message requesting a nav
+    window.addEventListener("message", function(event) {
+        if (event.origin == "{{ site.url }}" && event.data.please == "navto") {
+            window.location.href = event.data.url;
+        }
+    }, false); // not capturing
+}
+</script>
+

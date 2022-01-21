@@ -1,6 +1,6 @@
 ---
 title: "Vedanānupassanā — Investigating Feelings"
-image: https://illeakyw.sirv.com/Images/imagery-course/vedananupassana.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vedananupassana.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 9

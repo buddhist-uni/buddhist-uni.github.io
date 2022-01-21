@@ -1,6 +1,6 @@
 ---
 title: "Sammādiṭṭhi - Right View"
-image: https://illeakyw.sirv.com/Images/imagery-course/sammaditthi.JPG
+image: https://buddhistuniversity.net/imgs/imagery/sammaditthi.JPG
 order: 16
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"

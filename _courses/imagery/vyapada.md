@@ -1,13 +1,11 @@
 ---
 title: "Vyāpāda — Hatred and Aversion"
 slug: "course parts don't get unique slugs"
-image: https://illeakyw.sirv.com/Images/imagery-course/vyapada.JPG
+image: https://buddhistuniversity.net/imgs/imagery/vyapada.JPG
 layout: "imagerycoursepart"
 order: 4
 description: "The opposite of love, acceptance, and compassion, <i>vyāpāda</i> hollows us out."
 ---
-
-_First, read Analayo's Craving chapter 3, then:_
 
 ### Suttas
 <p>

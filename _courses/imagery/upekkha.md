@@ -1,6 +1,6 @@
 ---
 title: "Upekkhā — Equanimity"
-image: https://illeakyw.sirv.com/Images/imagery-course/upekkha.JPG
+image: https://buddhistuniversity.net/imgs/imagery/upekkha.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 11

@@ -1,6 +1,6 @@
 ---
 title: "Sukha — Happiness"
-image: https://illeakyw.sirv.com/Images/imagery-course/sukha.JPG
+image: https://buddhistuniversity.net/imgs/imagery/sukha.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 10

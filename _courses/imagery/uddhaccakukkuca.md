@@ -1,6 +1,6 @@
 ---
 title: "Uddhaccakukkuca — Restlessness and Worry"
-image: https://illeakyw.sirv.com/Images/imagery-course/uddhaccakukkuca.JPG
+image: https://buddhistuniversity.net/imgs/imagery/uddhaccakukkuca.JPG
 slug: "course parts don't get unique slugs"
 layout: "imagerycoursepart"
 order: 6

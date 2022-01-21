@@ -15,15 +15,16 @@ layout: default
   <h1>Table of Contents</h1> 
   <ul id="toc">
     <li><a href="#what-is">What is {{ page.title }}?</a></li>
+    <li><a href="#we-will">In this course, you will...</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     {% if page.lecturers %}<li><a href="#lectures">Lectures</a></li>{% endif %}
-    <li><a href="#textbook">Textbook</a></li>
-    <li>Course Outline<ul>
-    {% for c in subcourses %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}
-    </ul></li>
+    <li><a href="#outline">Course Outline</a></li>
   </ul>
   <div class="post-content">
     {{ content }}
+    <h2 id="outline">Course Outline</h2>
+    <p>This course has {{ subcourses | size }} modules, which will proceed as follows:</p>
+    <ol>{% for s in subcourses %}<li><a href="{{ s.url }}">{{ s.title }}</a></li>{% endfor %}</ol>
   </div>
   
   {% assign next = subcourses | first %}
