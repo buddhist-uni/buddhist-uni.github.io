@@ -18,7 +18,7 @@ The fire of passion being “extinguished” gives us the term “*Nibbāna (nir
 - Traditional Buddhists, however, read their myths less as history than as guides to the spiritual journey.
 
 {% include content_blurb.html category="articles" slug="playing-with-fire_jurewicz" %}
-- Finally, rewinding the clock all the way back to the Buddha's own day, we learn how the Buddha played with ancient Vedic fire imagery to create his own, perhaps satirical, creation myth.
+- Finally, rewinding the clock all the way back to the Buddha's own day, we learn how the Buddha played with ancient Vedic fire imagery to create his own creation myth.
 
 ### Optional Reading
 
