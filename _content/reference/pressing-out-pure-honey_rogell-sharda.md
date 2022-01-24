@@ -2,7 +2,7 @@
 title: "Pressing Out Pure Honey"
 authors:
   - "Sharda Rogell"
-external_url: "https://www.shardarogell.com/rsu_docs/pressingoutpurehoney.pdf"
+external_url: "https://shardarogell.com/book"
 drive_links:
   - "https://drive.google.com/file/d/1tPNfOxq9huJ74abAEvAnFBQ9zXXRVsGQ/view?usp=drivesdk"
 tags:

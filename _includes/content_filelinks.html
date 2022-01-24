@@ -13,7 +13,7 @@
     {%- endif -%}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
-            {%- assign i = forloop.index | minus: 1 -%}
+            {% assign i = forloop.index | minus: 1 %}
             <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ include.content.formats[i] }}" href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ include.content.formats[i] }}</a>
         {%- endfor -%}
     {%- endif -%}
