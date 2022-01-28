@@ -12,5 +12,5 @@ month: dec
 publisher: nbn
 ---
 
-> Shikoku illness is a common term that people use to describe a sense of addiction to the pilgrimage
+> 'Shikoku illness' is a common term that people use to describe a sense of addiction to the pilgrimage
 
