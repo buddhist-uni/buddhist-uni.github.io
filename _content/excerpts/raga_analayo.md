@@ -13,12 +13,12 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 year: 2005
 drive_links:
  - "https://drive.google.com/file/d/1jjl4bseQgKJgUbM6mEyENPTdKLOWExTz/view?usp=drivesdk"
-course: philosophy
 tags:
-  - raga
+  - philosophy
   - psychology
   - hindrances
 ---
 
 A short encyclopedia entry on the meaning and place of *rāga* in the Pāli Canon.
 
+Note, an editted version of this article appears as chapter two of *[From Craving to Liberation](/content/monographs/craving-to-liberation_analayo)*.
