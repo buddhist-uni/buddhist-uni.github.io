@@ -238,8 +238,10 @@ The series of causes which lead to us constitute the disease for which our suffe
 
 Dependent Origination is a notoriously difficult concept in Buddhism, so before this week gets started in earnest, I wanted to invite Bhikkhu Brahmali here to help us understand one discourse which explains the second noble truth in this, a very special, bonus edition of “sutta spotlight”
 
+{% include content_blurb.html category="canon" slug="toh211" %}
+- We begin with the Buddha's own, pithy explanation of Dependent Arising in this Sutra preserved by the Tibetan Tradition.
 {% include content_blurb.html category="canon" slug="mn38" %}
-- A bhikkhu named Sāti promulgates the pernicious view that consciousness transmigrates from life to life. The Buddha reprimands him with a lengthy discourse on dependent origination, showing how all phenomena of existence arise and cease through conditions.
+- When a bhikkhu named Sāti promulgates the pernicious view that consciousness transmigrates from life to life, the Buddha reprimands him with a lengthy discourse on dependent origination, showing how all phenomena arise and cease through conditions.
 
 {% include content_blurb.html category="av" slug="mn38-explanation_brahmali" %}
 - Ajahn Brahmali covers this sutta in his ever-cheery style, explaining how rebirth is different from transmigration.

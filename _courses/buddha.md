@@ -155,6 +155,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% include content_blurb.html category="articles" slug="nuns-before-mahapajapati_williams-liz" %}
 1. {% include inline_content.html category="articles" slug="mahapajapati-pabaja_analayo" %} 
 
+1. {% include content_blurb.html category="excerpts" slug="vijjacarana_analayo" %}
 1. [Refuge] Vijjā-caraṇa-sampanno
 1. {% include inline_content.html category="excerpts" slug="tevijjavacchagottasutta_analayo" %}
 
