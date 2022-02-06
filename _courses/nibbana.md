@@ -203,12 +203,15 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
   - The Conclusion is worth a read to tie together our study of Nirvana's history.
   - Those interested in the primary sources may also wish to read the translations in Part Two. Even a quick skim may be helpful to get a general impression of the genre, but don't worry: this part won't be on the final exam!
 
-#### Epilogue: Knowing, Emptiness and the Radiant Mind
+#### Knowing, Emptiness and the Radiant Mind
 
 We wrap up this, the main, section of our course, with a brief word on the "Radiant Mind" and related perennial topics:
 
 {% include content_blurb.html category="articles" slug="luminous-mind_analayo" %}
   - Bhikkhu Analayo gives a careful, textual study of the supposedly “luminous” nature of the mind in early Buddhism.  Is such a view supported by the early texts or is this a later development?
+
+{% include content_blurb.html category="excerpts" slug="vihesa_analayo" %}
+  - If the Arahants are beyond "suffering" can they still experience pain? What is the difference between the two? What about painful thoughts?
 
 {% include content_blurb.html category="articles" slug="channa-suicide_analayo" %}
   - The curious case of an arahant committing suicide.  Can someone who has attained the goal decide to kill themselves?
