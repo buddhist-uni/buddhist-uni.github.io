@@ -230,15 +230,21 @@ In which we finally get to meditation!
 
 ##### Chapter 12
 
-{% include content_blurb.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
-- A transcript of a conversation with Ajahn Panyavaddho.
-- Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
+{% include content_blurb.html category="canon" slug="sn56.11" %}
+- In the Buddha's very first sermon, he tells his friends about his Enlightenment and the path he discovered for attaining it, waking up his first disciple and setting in motion the religion which continues rolling to this day.
+
+{% include content_blurb.html slug="most-important-teaching_munindo" category="av" %}
+- Ajahn Munindo talks about this sutta one [Vesāk day](https://en.wikipedia.org/wiki/Vesak){:target="_blank"} and explains how it can transform our lives.
 
 {% include content_blurb.html category="canon" slug="iti93" %}
-- And lastly, a short poem on enlightenment from the Canon.
+- And lastly, a short poem on enlightenment from the Buddha himself.
 
 
 ### Conclusion
+
+{% include content_blurb.html category="essays" slug="fundamentals-of-buddhism_panyavaddho" %}
+- A transcript of a conversation with Ajahn Panyavaddho.
+- Beyond being a nice recap of what we've covered in the course, I feel something of the wisdom and compassion of enlightenment coming through in the light-hearted sincerity of this exchange
 
 {% include content_blurb.html category="booklets" slug="escape-to-reality_pereira" %}
 - A rousing collection of essays on Buddhist wisdom and an earnest appeal to put the teachings into practice.

@@ -72,6 +72,9 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 
 #### What is *Nibbāna*?
 
+{% include content_blurb.html category="canon" slug="sn56.21" %}
+- At its core, Nibbāna is the penetrative understanding of the Four Noble Truths which ends the cycle of rebirth.
+
 <i class="fas fa-book"></i> The Introduction and Chapter 1 of *Metaphor and Literalism* (hereafter, "ML")
 {: .mb-0}
   - Will give an introduction to this text and to the term "*nibbāna*"

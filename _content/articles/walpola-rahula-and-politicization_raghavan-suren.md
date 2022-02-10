@@ -1,7 +1,7 @@
 ---
 title: "Ven. Walpola Rahula and the Politicisation of the Sinhala Sangha"
 authors:
-  - "Suren Raghavan"
+  - "Suren Rāghavan"
 external_url: "http://jocbs.org/index.php/jocbs/article/view/7"
 drive_links:
   - "https://drive.google.com/file/d/1rnBaQIvP7cY6xgfpWqFXqRVveGBLKvtq/view?usp=drivesdk"
