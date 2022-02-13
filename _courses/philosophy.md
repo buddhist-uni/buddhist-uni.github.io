@@ -194,6 +194,9 @@ The five aggregates of body and mind that we cling to as constituting a “self�
 {% include content_blurb.html category="essays" slug="am-i-my-khandas_cintita" %}
 - Through the simile of the chariot (similar to the “Ship of Theseus” from Western philosophy), Bhikkhu Cintita explains how the five aggregates are not-self.
 
+{% include content_blurb.html category="articles" slug="mind-body-in-pali-buddhism_harvey" %}
+- Mind-Body duality has long been a problem for Western philosophy. What does Buddhism have to say about the paradox of consciousness existing in a material world?
+
 {% include content_blurb.html category="canon" slug="sn5.10" %}
 - The Bhikkhuni Vajira sums up the above in this beautiful poem.
 
