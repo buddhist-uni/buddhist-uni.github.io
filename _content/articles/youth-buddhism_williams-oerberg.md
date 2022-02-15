@@ -1,0 +1,22 @@
+---
+title: 'Youth Buddhism: The Centrality of “Youth” in Modern Buddhism'
+authors:
+  - "Elizabeth Williams-Oerberg"
+external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/322/317"
+drive_links:
+  - "https://drive.google.com/file/d/1Ujim-4_F3nOXC2e2-vpvwtfwp8I8DIIm/view?usp=drivesdk"
+status: featured
+course: tibetan-diaspora
+tags:
+  - modern
+  - tibetan
+  - underage
+year: 2021
+journal: jgb
+volume: 22
+number: 1
+pages: "322--340"
+---
+
+> the case of “youth Buddhism” in Ladakh highlights how youth play a vital role in the revitalization and reformation of [modern] Buddhism.
+
