@@ -3,10 +3,9 @@ title: "Children of Time"
 authors:
   - "Adrian Tchaikovsky"
 subcat: fiction
-course: arthropods
 tags:
+  - arthropods
   - neoliberalism
-  - future
   - sci-fi
 year: 2015
 olid: OL27322146M
