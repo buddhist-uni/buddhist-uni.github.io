@@ -1,7 +1,7 @@
 ---
 title: "The Limits of Power"
 authors: ["Malcolm Gladwell"]
-external_url: "https://getpodcast.com/p/revisionisthistory/revisionisthistory_revisionist-history-presents-the-limits-of-power_0c754f22f4"
+external_url: "https://getpodcast.com/podcast/revisionisthistory/revisionist-history-presents-the-limits-of-power_0c754f22f4"
 course: power
 tags:
   - ireland
