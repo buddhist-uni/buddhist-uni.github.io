@@ -10,7 +10,7 @@ course: nibbana
 tags:
   - mahayana-roots
   - chan-roots
-  - tibetan-roots
+  - tantric-roots
   - agama
 year: 1994
 journal: bsr
