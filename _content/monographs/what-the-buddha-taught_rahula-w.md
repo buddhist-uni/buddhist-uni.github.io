@@ -5,7 +5,6 @@ external_url: "https://sites.google.com/site/rahulawhatthebuddha/home"
 drive_links:
   - "https://drive.google.com/file/d/1-6HZqVWeu0ls2CAyPJ3D-9ici9-rDdBl/view?usp=drivesdk"
 source_url: "http://ftp.budaedu.org/ebooks/pdf/EN132.pdf"
-alt_url: "http://www.ahandfulofleaves.org/documents/what%2520the%2520buddha%2520taught_rahula.pdf"
 year: 1959
 olid: OL7874505M
 publisher: oneworld
