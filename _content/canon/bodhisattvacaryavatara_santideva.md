@@ -9,7 +9,8 @@ tags:
   - cosmology
   - bodhisattva
   - mahayana
-  - tibetan-roots
+  - tibetan
+  - tantric-roots
   - engaged
   - effort
   - thought

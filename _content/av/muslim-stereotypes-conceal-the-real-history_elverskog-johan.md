@@ -7,9 +7,8 @@ external_url: "https://tricycle.org/podcast/buddhism-muslim-stereotypes/"
 formats: [mp3]
 drive_links:
   - "https://drive.google.com/file/d/1rZfn6nqLUkJZbYyRo5UyeaW63rYVSXtd/view?usp=drivesdk"
-course: tibetan-roots
+course: tantric-roots
 tags:
-  - indian
   - islam
 ---
 

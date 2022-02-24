@@ -11,7 +11,7 @@ journal: plato
 tags:
   - form
   - tibetan
-  - tibetan-roots
+  - tantric-roots
   - academia
 ---
 

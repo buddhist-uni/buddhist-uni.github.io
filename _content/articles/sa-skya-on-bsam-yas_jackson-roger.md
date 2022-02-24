@@ -11,6 +11,7 @@ drive_links: ["https://drive.google.com/file/d/1easB3vyCa1GId-eY7Clmvz-h6WFGRqZe
 course: historiography
 tags:
   - tibetan
+  - tibetan-roots
   - mahamudra
 status: featured
 ---

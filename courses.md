@@ -65,6 +65,10 @@ We hope you enjoy our offerings:
 
 OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which provide free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses. For OBU Students, I especially recommend:
 
+- [An Introduction to Biology](https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/){:.f3}
+  - To learn about the principles and methods of the modern life sciences.
+{:.mb-2}
+
 - [The Challenge of World Poverty](https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/){:.f3}
   - To understand the drivers, traps, and opportunities for global poverty with Nobel Laureates Abhijit Banerjee and Esther Duflo.
 {:.mb-2}

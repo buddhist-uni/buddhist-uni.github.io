@@ -10,7 +10,7 @@ translator: "Rigpa Translations"
 course: buddha
 tags:
   - form
-  - tibetan
+  - mahayana-roots
 ---
 
 > With skilful means and compassion, you were born in the Śākya clan...

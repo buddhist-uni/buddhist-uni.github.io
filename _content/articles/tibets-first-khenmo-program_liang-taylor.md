@@ -1,6 +1,5 @@
 ---
-title: "Tilling the Fields of Merit: The Institutionalization of Feminine
-Enlightenment in Tibet’s First *Khenmo* Program"
+title: "Tilling the Fields of Merit: The Institutionalization of Feminine Enlightenment in Tibet’s First *Khenmo* Program"
 authors:
   - "Jue Liang"
   - "Andrew S. Taylor"

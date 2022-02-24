@@ -5,7 +5,7 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8876/2783/8684"
 drive_links:
   - "https://drive.google.com/file/d/1mmGMzNOxGwLESuvJTS9WmIwK0RLGHyjt/view?usp=drivesdk"
-course: tibetan
+course: tibetan-roots
 tags:
   - tibet
   - gelug
