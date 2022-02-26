@@ -430,6 +430,9 @@ While not representative of the diversity within each of the following "national
 {:.mb-0}
 - Exuberant guru and deity worship are also notable features of Tibetan Buddhism.
 
+{% include content_blurb.html category="av" slug="drepung-loseling-buddha" %}
+- A Tibetan monk briefly shows off his temple's primary Buddha image, explaining the symbolism behind its gestures.
+
 {% include content_blurb.html category="av" slug="guru-rinpoche-prayer_choying" %}
 - Here is a beautiful rendition of a popular Guru invocation, sung by a Tibetan Nun.
 
