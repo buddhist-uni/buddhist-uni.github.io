@@ -5,7 +5,6 @@ year: 2012
 publisher: parallax
 tags:
   - ethics
-  - lay
   - vietnamese
 ---
 

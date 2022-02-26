@@ -12,7 +12,6 @@ course: pilgrimage
 status: featured
 tags:
   - engaged
-  - form
   - asia
 ---
 

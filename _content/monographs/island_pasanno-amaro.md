@@ -11,9 +11,6 @@ month: nov
 publisher: amaravati
 course: nibbana
 tags:
-  - stages
-  - function
-  - philosophy
   - view
   - thai-forest
   - chah

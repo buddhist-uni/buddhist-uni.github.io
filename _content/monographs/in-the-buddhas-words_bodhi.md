@@ -14,7 +14,6 @@ tags:
   - philosophy
   - function
   - path
-  - ethics
 ---
 
 The contemporary anthology of the Buddha's teachings, Bhikkhu Bodhi organizes the key content of the suttas into a logical and progressive series of ten chapters.
