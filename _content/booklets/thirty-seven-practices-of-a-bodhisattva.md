@@ -16,4 +16,4 @@ month: mar
 olid: OL37081050M
 ---
 
-A classic of Tibetan summary of Bodhisattva ethics and practices and how they transform your mind and character.
+A classic, Tibetan summary of Bodhisattva ethics and practices and how they transform your mind and character.

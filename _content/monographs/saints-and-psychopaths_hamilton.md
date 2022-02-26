@@ -8,7 +8,7 @@ year: 1995
 olid: OL884502M
 course: new-age
 tags:
-  - form
+  - west
   - pedagogy
   - selling
   - vinaya-studies

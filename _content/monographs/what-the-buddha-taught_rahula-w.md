@@ -10,9 +10,9 @@ olid: OL7874505M
 publisher: oneworld
 course: buddhism
 tags:
-  - function
   - philosophy
-  - sri-lankan
+  - theravada
+  - modern
 ---
 
 The classic introduction to Buddhist philosophy to the modern reader.
