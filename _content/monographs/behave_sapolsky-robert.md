@@ -22,3 +22,5 @@ tags:
 
 A magisterial and heart-felt survey of neuroscience, psychology, and biology which paints a broad but rigorous picture of how and why humans act the way they do--for better or for worse--and what we (individual meatbags) can do to be our best selves.
 
+The book is based on Sapolsky's Stanford course, ["Human Behavioral Biology", available on YouTube](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}.
+
