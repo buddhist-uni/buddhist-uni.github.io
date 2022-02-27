@@ -50,6 +50,18 @@ We hope you enjoy our offerings:
 
 ## External Courses
 
+### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
+{:onclick="location.href='http://www.nettletibetan.ca/'" .courselink}
+
+<div class="coursedesc">
+  <div class="descrow">
+    <div onclick="location.href='http://www.nettletibetan.ca/'" class="cicon"><i class="fas fa-tram"></i></div>
+    <div class="cdesc">Two courses on the Tibetan Language from the University of Toronto, taking you from identifying words all the way to translating your first Buddhist text. Note: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+  </div>
+</div>
+
+
 ### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
 {:onclick="location.href='http://bschawaii.org/shindharmanet/course/'" .courselink}
 
@@ -61,16 +73,39 @@ We hope you enjoy our offerings:
   </div>
 </div>
 
-## Secular Courses (@MIT)
+### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}
+{:onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" .courselink}
 
-OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which provide free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses. For OBU Students, I especially recommend:
+<div class="coursedesc">
+  <div class="descrow">
+    <div onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" class="cicon"><i class="fas fa-baby"></i></div>
+    <div class="cdesc">A stunning lecture series by Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+  </div>
+</div>
 
-- [An Introduction to Biology](https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/){:.f3}
-  - To learn about the principles and methods of the modern life sciences.
-{:.mb-2}
+### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3"}
+{:onclick="location.href='https://www.coursera.org/learn/modpo'" .courselink}
+
+<div class="coursedesc">
+  <div class="descrow">
+    <div onclick="location.href='https://www.coursera.org/learn/modpo'" class="cicon"><i class="fas fa-feather-alt"></i></div>
+    <div class="cdesc">An excellent introduction to the world of 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not only the history of the field but more how to approach and read a modern poem.
+    This course is highly recommended for anyone who likes poetry, but who never "got" this modern stuff.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+  </div>
+</div>
+
+## Open Courseware @MIT
+
+OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which have provided free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses since 2001. For OBU Students, I especially recommend checking out:
 
 - [The Challenge of World Poverty](https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/){:.f3}
   - To understand the drivers, traps, and opportunities for global poverty with Nobel Laureates Abhijit Banerjee and Esther Duflo.
+{:.mb-2}
+
+- [An Introduction to Biology](https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/){:.f3}
+  - To learn about the principles and methods of the modern life sciences.
 {:.mb-2}
 
 - [Sexual and Gender Identities](https://ocw.mit.edu/courses/womens-and-gender-studies/wgs-110j-sexual-and-gender-identities-spring-2016/){:.f3}
