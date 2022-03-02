@@ -1,6 +1,9 @@
 ---
 title: Wordle
 external_url: "https://www.powerlanguage.co.uk/wordle/"
+tags:
+  - language
+  - games
 year: 2021
 ---
 

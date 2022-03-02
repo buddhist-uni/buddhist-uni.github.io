@@ -15,13 +15,27 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-S
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
-The University organizes [content from across the Web]({% link library.md %}) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
+The Open Buddhist University organizes [content from across the Web]({% link library.md %}) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
 
-We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism. Courses with a "<i class="far fa-address-book"></i>" icon are detailed reading guides through works by the listed authors. Courses with a "<i class="fas fa-microphone-alt"></i>" icon also have associated lectures recorded by the listed instructor.
+## About Our Courses
 
-If you'd like to discuss what you're learning with other students of early Buddhism, I recommend posting your thoughts and questions to [the SuttaCentral Forum](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank"} or [emailing us at the University](mailto:theopenbuddhistuniversity@gmail.com).
+We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism.
+Being entirely DIY, **none of our courses offer certificates or degrees at this time.**
 
-We hope you enjoy our offerings:
+### Icon Key
+
+- <i class="far fa-address-book"></i>: This course contains written works by the listed authors
+- <i class="fas fa-microphone-alt"></i>: This course features lectures by the listed instructor
+- <i class="fas fa-weight-hanging"></i>: This course is estimated to take about X <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">semester credit hours per week</a> to complete.
+- <i class="fas fa-chalkboard-teacher"></i>: In lieu of course numbers, each OBU course gets a unique icon to identify it across the site.
+
+### Interactive Components
+
+If you'd like to discuss what you're learning, feel free to post your questions or thoughts on [the SuttaCentral Discourse Forum](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank"} or [email us](mailto:theopenbuddhistuniversity@gmail.com).
+Some courses contain links to (optional) Google Forms which serve for homework assignments and to collect course feedback.
+This site may use cookies to enhance your experience, but you can turn this off at any time in [settings](/settings).
+
+## Course List
 
 {% for cslug in site.data.course_order %}
 {% assign course = site.courses | find: "slug", cslug %}
@@ -50,14 +64,16 @@ We hope you enjoy our offerings:
 
 ## External Courses
 
+Courses hosted on other websites.
+
 ### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
 {:onclick="location.href='http://www.nettletibetan.ca/'" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="location.href='http://www.nettletibetan.ca/'" class="cicon"><i class="fas fa-tram"></i></div>
-    <div class="cdesc">Two courses on the Tibetan Language from the University of Toronto, taking you from identifying words all the way to translating your first Buddhist text. Note: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+    <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
 </div>
 
@@ -90,7 +106,7 @@ We hope you enjoy our offerings:
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="location.href='https://www.coursera.org/learn/modpo'" class="cicon"><i class="fas fa-feather-alt"></i></div>
-    <div class="cdesc">An excellent introduction to the world of 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not only the history of the field but more how to approach and read a modern poem.
+    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the field, but how to read.
     This course is highly recommended for anyone who likes poetry, but who never "got" this modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
