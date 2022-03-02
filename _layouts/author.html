@@ -22,13 +22,13 @@ layout: default
     <h3 id="readings">Readings:</h3>
     <div>{% include content_list.html contents=readcont orderby="year" %}</div>
     {% endif %}
-    {% if transcont.size > 0 %}
-    <h3 id="translations">Translations by {{ page.title }}:</h3>
-    <div>{% include content_list.html contents=transcont orderby="year" %}</div>
-    {% endif %}
     {% if editcont.size > 0 %}
     <h3 id="edits">Edited:</h3>
     <div>{% include content_list.html contents=editcont orderby="year" %}</div>
+    {% endif %}
+    {% if transcont.size > 0 %}
+    <h3 id="translations">Translations by {{ page.title }}:</h3>
+    <div>{% include content_list.html contents=transcont orderby="year" %}</div>
     {% endif %}
     </div>{% endunless %}
   </div>
