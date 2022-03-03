@@ -8,7 +8,7 @@ drive_links:
 course: ethics
 tags:
   - mn
-  - monastic
+  - monastic-advice
   - form
   - thought
 year: 2018

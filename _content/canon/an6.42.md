@@ -5,7 +5,7 @@ external_url: "https://suttacentral.net/an6.42/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/16YehBakXo-FBdw03RhtU_KJrZ4UvBHpZ"]
-course: monastic
+course: monastic-advice
 status: featured
 tags:
   - an

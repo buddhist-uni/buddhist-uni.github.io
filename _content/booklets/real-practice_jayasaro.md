@@ -6,10 +6,9 @@ external_url: "https://cdn.amaravati.org/wp-content/uploads/2014/09/The-Real-Pra
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1QpO5FJrXS4kcQIpQPqqaRTtnNZWoq6Uc/view?usp=drivesdk"
-course: monastic
+course: monastic-advice
 tags:
   - navakovada
-  - vinaya-studies
 year: 2008
 olid: OL32038522M
 ---

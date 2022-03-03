@@ -8,7 +8,7 @@ course: canonical-poetry
 tags:
   - sn
   - deva
-  - monastic
+  - monastic-advice
 year: 2018
 ---
 

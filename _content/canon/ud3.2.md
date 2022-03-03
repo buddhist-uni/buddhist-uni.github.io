@@ -3,7 +3,7 @@ title: "Ud 3.2: Nanda"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud3.2/en/anandajoti"
 drive_links: ["https://drive.google.com/file/d/1LZO6kPdJqjfqqmA0zCtAcC-wbFEtyxnq"]
-course: monastic
+course: monastic-advice
 tags:
   - ud
   - characters

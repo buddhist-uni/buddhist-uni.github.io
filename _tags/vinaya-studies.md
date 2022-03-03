@@ -1,7 +1,7 @@
 ---
 title: "Vinaya Studies"
-level: 4
-parents: [monastic, vinaya-pitaka]
+level: 5
+parents: [monastic-advice, vinaya-pitaka]
 illustration: https://illeakyw.sirv.com/Images/tags/Ajaan_Geoff_Almsround.jpg
 illustration_center_x: 55%
 illustration_width: 800

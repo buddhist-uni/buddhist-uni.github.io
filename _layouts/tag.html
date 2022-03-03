@@ -16,7 +16,7 @@ layout: default
 {% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
-<p>{% if course %}Also available: <a href="{{ course.url }}"><i class="{{ course.icon }}"></i> As a Syllabus</a><br>{% endif %}Subscribe via: <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS</a></p>
+<p>{% if course %}Also available: <a href="{{ course.url }}"><i class="{{ course.icon }}"></i> As a Syllabus</a><br>{% endif %}Subscribe to this topic via: <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS</a></p>
     
 <div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
 {% if page.illustration %}

@@ -5,10 +5,9 @@ translator: sujato
 external_url: "https://suttacentral.net/mn6/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1BnJOybXIoExm4OhHwne2qEvA4-3gS6Ru/view?usp=drivesdk"
-course: vinaya-studies
+course: monastic-advice
 tags:
   - mn
-  - monastic
 year: 2018
 ---
 

@@ -13,7 +13,7 @@ file_links:
 course: engaged
 tags:
   - viveka
-  - monastic
+  - monastic-advice
   - path
   - academia
 ---

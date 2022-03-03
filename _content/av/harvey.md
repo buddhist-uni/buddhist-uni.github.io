@@ -3,9 +3,9 @@ title: "Harvey"
 year: 1950
 subcat: film
 oclc: 137283538
-course: cosmology
+course: religion
 tags:
-  - religion
+  - view
 ---
 
 >  In this world, you must be oh so smart, or oh so pleasant. Well, for years I was smart. I recommend pleasant.

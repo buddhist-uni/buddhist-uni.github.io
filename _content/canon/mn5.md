@@ -9,7 +9,7 @@ course: ethics
 tags:
   - mn
   - mindfulness
-  - monastic
+  - monastic-advice
   - path
 year: 2018
 ---

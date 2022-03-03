@@ -10,7 +10,7 @@ tags:
   - an
   - philosophy
   - hermeneutics
-  - monastic
+  - monastic-advice
 year: 2018
 ---
 

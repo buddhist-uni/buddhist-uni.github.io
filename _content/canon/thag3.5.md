@@ -10,7 +10,7 @@ tags:
   - thag
   - hindrances
   - lay
-  - monastic
+  - monastic-advice
   - canonical-poetry
 subcat: poetry
 year: 2018
