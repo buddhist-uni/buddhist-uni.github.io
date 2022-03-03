@@ -9,7 +9,7 @@ drive_links: ["https://drive.google.com/file/d/18GDLtpzr9lD2WDvZTXb-Z6uEi424-z5v
 course: path
 status: featured
 tags:
-  - monastic
+  - monastic-advice
   - thai-forest
 ---
 

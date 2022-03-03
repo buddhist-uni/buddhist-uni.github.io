@@ -5,7 +5,6 @@ authors:
 translator: "John Purcell and Haim Watzman"
 olid: OL28326205M
 course: world
-status: featured
 tags:
   - time
   - biology

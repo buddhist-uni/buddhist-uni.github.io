@@ -16,4 +16,6 @@ month: mar
 olid: OL37081050M
 ---
 
-A classic, Tibetan summary of Bodhisattva ethics and practices and how they transform your mind and character.
+> Armed with the attitude of loving-kindness and compassion, we naturally no longer have any external enemies.
+
+A commentary on [the classic, Tibetan summary of Bodhisattva practices](/content/essays/practices-of-all-bodhisattvas_zangpo-tokme) explaining how they transform our mind and character.

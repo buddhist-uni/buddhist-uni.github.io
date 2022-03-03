@@ -8,7 +8,7 @@ publisher: "Mahāmakut Rajāvidyālaya Press"
 olid: OL32040804M
 drive_links:
   - "https://drive.google.com/file/d/1dZMMPiR2_lv9rxMIjReMAz1oHct2vZJu/view?usp=drivesdk"
-course: monastic
+course: monastic-advice
 tags:
   - vipassana
   - vedana

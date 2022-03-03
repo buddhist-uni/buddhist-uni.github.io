@@ -8,7 +8,7 @@ year: 2018
 course: imagery
 tags:
   - an
-  - monastic
+  - monastic-advice
   - pedagogy
 ---
 

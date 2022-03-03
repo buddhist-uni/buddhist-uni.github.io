@@ -6,7 +6,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/gyalse-thogme-zangpo
 drive_links:
   - "https://drive.google.com/file/d/1UOpLHJAUENw3y_bo_1fspHSg8lKbAKXt/view?usp=drivesdk"
 year: 2006
-course: monastic
+course: monastic-advice
 tags:
   - bodhisattva
   - monastic-mahayana

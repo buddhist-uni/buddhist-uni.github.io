@@ -4,7 +4,7 @@ slug: "an.005.075"
 external_url: "https://suttacentral.net/an5.75/en/sujato"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1XVXMJ0S4wU-VU-cihgxNZhPOoPQTKHCs"]
-course: monastic
+course: monastic-advice
 tags:
   - an
   - hindrances

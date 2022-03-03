@@ -11,7 +11,7 @@ tags:
   - imagery
   - samadhi
   - samatha
-  - monastic
+  - monastic-advice
   - characters
 year: 2018
 ---

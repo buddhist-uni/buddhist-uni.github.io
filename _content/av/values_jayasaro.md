@@ -12,7 +12,7 @@ tags:
   - pedagogy
   - monastic-theravada
   - form
-  - monastic
+  - monastic-advice
 authors:
   - jayasaro
 status: featured

@@ -6,7 +6,7 @@ month: jul
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/18Zsy1XZCPyMtyDTd0jTBnFqy8mdlXxZH/view?usp=drivesdk"]
 external_url: "https://bodhimonastery.org/docs/julyaug06bb.pdf"
-course: monastic
+course: monastic-advice
 tags:
   - west
   - western-monastic

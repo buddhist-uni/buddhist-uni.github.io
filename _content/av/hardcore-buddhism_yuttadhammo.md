@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1Ryp_uBkp_ELZm3p-m891BF9CFBFqsIug
 authors: [yuttadhammo]
 year: 2009
 month: nov
-course: monastic
+course: monastic-advice
 tags:
   - form
 ---

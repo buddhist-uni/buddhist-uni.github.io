@@ -12,7 +12,7 @@ tags:
   - tibetan
   - craft
   - chan-literature
-  - monastic
+  - monastic-advice
   - meditation
 year: 2013
 ---

@@ -9,7 +9,7 @@ publisher: bps
 series: wheel
 number: 112
 address: Kandy
-course: monastic
+course: monastic-advice
 tags:
   - agama
   - buddha

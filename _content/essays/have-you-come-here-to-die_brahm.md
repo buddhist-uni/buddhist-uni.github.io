@@ -8,7 +8,7 @@ drive_links:
 course: meditation
 tags:
   - death
-  - monastic
+  - monastic-advice
   - function
   - view
   - mindfulness
