@@ -9,7 +9,9 @@ tags:
   - places
   - prehistory
   - time
+  - science
   - power
+  - state
   - tribalism
 year: 2012
 month: dec

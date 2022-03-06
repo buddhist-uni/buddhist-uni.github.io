@@ -8,6 +8,7 @@ course: inner
 tags:
   - speech
   - science
+  - philosophy-of-science
   - society
   - sports
 series: revisionist-history
