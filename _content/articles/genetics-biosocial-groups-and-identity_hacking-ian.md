@@ -12,7 +12,6 @@ course: inner
 tags:
   - biology
   - genetics
-  - science
   - medicine
   - time
   - society

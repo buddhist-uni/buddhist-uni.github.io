@@ -10,7 +10,7 @@ course: natural-science
 tags:
   - geology
   - nature
-  - cosmology
+  - science
   - biology
   - climate-change
   - time

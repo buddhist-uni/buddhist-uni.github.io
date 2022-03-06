@@ -9,7 +9,7 @@ course: philosophy
 tags:
   - restlessness
   - progress
-  - science
+  - philosophy-of-science
   - becon
   - world
   - ambulit

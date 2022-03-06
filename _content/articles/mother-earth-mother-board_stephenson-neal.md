@@ -16,6 +16,7 @@ tags:
   - internet
   - globalization
   - oceans
+  - science
 ---
 
 > In which the hacker tourist ventures forth across the wide and wondrous meatspace of three continents, acquainting himself with the customs and dialects of previously unknown and unchronicled folk ... and other material pertaining to the business and technology of Undersea Fiber-Optic Cables, as well as an account of the laying of the longest wire on Earth
