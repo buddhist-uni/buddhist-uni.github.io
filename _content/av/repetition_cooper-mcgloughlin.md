@@ -12,7 +12,7 @@ tags:
   - samvega
   - music
   - cosmology
-  - modernity
+  - present
   - post-modernism
   - nature
   - philosophy

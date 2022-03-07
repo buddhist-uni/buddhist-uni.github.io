@@ -1,7 +1,7 @@
 ---
 title: Kannon and the Ideal of Compassion
 authors:
-  - Alfred Bloom
+  - bloom-a
 external_url: "https://bschawaii.org/shindharmanet/studies/kannon/"
 drive_links:
   - "https://drive.google.com/file/d/1NhtUOTrftLQdCYdV0uQw_oyfhtx34Qac/view?usp=drivesdk"

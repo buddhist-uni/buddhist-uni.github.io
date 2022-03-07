@@ -9,7 +9,7 @@ tags:
   - ideology
   - perennial
   - philosophy-of-science
-  - modernity
+  - present
   - dialogue
   - power
   - engaged

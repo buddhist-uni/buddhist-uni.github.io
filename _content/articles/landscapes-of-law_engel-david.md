@@ -18,7 +18,7 @@ tags:
   - becon
   - urbanization
   - globalization
-  - modernity
+  - present
 year: 2009
 journal: Law and Society Review
 volume: 43

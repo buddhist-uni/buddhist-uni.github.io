@@ -1,6 +1,6 @@
 ---
 title: "Citation Helper"
-external_url: "https://alt-homepage.netlify.app/"
+external_url: "https://sutta.readingfaithfully.org/"
 course: sutta
 year: 2022
 month: jan

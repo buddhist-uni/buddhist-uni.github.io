@@ -10,7 +10,7 @@ course: places
 tags:
   - wider
   - power
-  - modernity
+  - present
   - europe
   - americas
   - america

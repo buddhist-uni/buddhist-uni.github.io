@@ -7,7 +7,7 @@ course: becon
 tags:
   - labor
   - groups
-  - modernity
+  - present
   - world
 year: 2018
 month: may

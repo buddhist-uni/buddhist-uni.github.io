@@ -10,7 +10,7 @@ course: time
 status: featured
 tags:
   - economics
-  - modernity
+  - present
   - capitalism
   - industrialization
   - world

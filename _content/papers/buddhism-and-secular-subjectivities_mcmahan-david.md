@@ -12,7 +12,7 @@ editor: "Richard K. Payne"
 course: west
 tags:
   - inner
-  - modernity
+  - present
   - dialogue
   - secular
   - view

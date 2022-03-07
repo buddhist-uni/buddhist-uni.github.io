@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1ceQAmbbddtXIArfci_LG4iWmTvBVhc4-
 course: pilgrimage
 tags:
   - indian
-  - modernity
+  - present
   - biology
   - places
   - toilets

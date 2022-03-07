@@ -9,7 +9,7 @@ tags:
   - books
   - intellect
   - historiography
-  - modernity
+  - past
 year: 1980
 olid: OL4266213M
 oclc: 6040989

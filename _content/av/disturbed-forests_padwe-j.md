@@ -6,7 +6,7 @@ course: places
 tags:
   - jarai
   - cambodia
-  - modernity
+  - present
   - globalization
   - sea
 publisher: nbn
