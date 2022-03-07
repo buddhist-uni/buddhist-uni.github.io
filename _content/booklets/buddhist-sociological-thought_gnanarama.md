@@ -13,7 +13,7 @@ tags:
   - world
   - ideology
   - philosophy
-  - modernity
+  - present
 status: featured
 ---
 
