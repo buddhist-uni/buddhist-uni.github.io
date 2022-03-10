@@ -1,7 +1,7 @@
 ---
 title: "Dharma Pearls"
 authors:
-  - "Charles Patton"
+  - patton-c
 year: 2019
 month: oct
 external_url: "https://dharmapearls.net/index.html"

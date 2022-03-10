@@ -5,6 +5,7 @@ slug: courses
 title: Courses
 rss_url: feed.xml
 rss_title: "Course Announcements"
+custom_css: [courselist]
 permalink: /courses/
 next_link: /courses/buddhism
 image_width: 1280
@@ -19,15 +20,15 @@ The Open Buddhist University organizes [content from across the Web]({% link lib
 
 ## About Our Courses
 
-We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism.
-Being entirely DIY, **none of our courses offer certificates or degrees at this time.**
+We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism.  
+**Note:** None of our courses offer certificates or degrees at this time.
 
 ### Icon Key
 
-- <i class="far fa-address-book"></i>: This course contains written works by the listed authors
-- <i class="fas fa-microphone-alt"></i>: This course features lectures by the listed instructor
-- <i class="fas fa-weight-hanging"></i>: This course is estimated to take about X <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">semester credit hours per week</a> to complete.
-- <i class="fas fa-chalkboard-teacher"></i>: In lieu of course numbers, each OBU course gets a unique icon to identify it across the site.
+- <i class="fas fa-chalkboard-teacher"></i> = A unique icon to identify the course
+- <i class="far fa-address-book"></i> = Books by:
+- <i class="fas fa-microphone-alt"></i> = Lectures by:
+- {:.ccredits}<i class="fas fa-weight-hanging"></i> = <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">Semester Credit Hours</a>
 
 ### Interactive Components
 
@@ -35,7 +36,7 @@ If you'd like to discuss what you're learning, feel free to post your questions 
 Some courses contain links to (optional) Google Forms which serve for homework assignments and to collect course feedback.
 This site may use cookies to enhance your experience, but you can turn this off at any time in [settings](/settings).
 
-## Course List
+## Our Courses
 
 {% for cslug in site.data.course_order %}
 {% assign course = site.courses | find: "slug", cslug %}
@@ -95,7 +96,7 @@ Courses hosted on other websites.
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" class="cicon"><i class="fas fa-baby"></i></div>
-    <div class="cdesc">A stunning lecture series by Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
+    <div class="cdesc">A stunning lecture series by <i class="fas fa-microphone-alt"></i> Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
@@ -106,8 +107,8 @@ Courses hosted on other websites.
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="location.href='https://www.coursera.org/learn/modpo'" class="cicon"><i class="fas fa-feather-alt"></i></div>
-    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the field, but how to read.
-    This course is highly recommended for anyone who likes poetry, but who never "got" this modern stuff.</div>
+    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of poetry, but how to read it.
+    This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>

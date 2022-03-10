@@ -1,0 +1,117 @@
+---
+---
+
+@import "support";
+
+h3.courselink {
+    margin-bottom: 0;
+    background-color: $banner-color;
+    color: white;
+    padding: 1rem;
+    letter-spacing: 3px;
+    a {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+}
+
+div.coursedesc {
+    border: solid 1px $banner-color;
+    margin-bottom: 2rem;
+    box-shadow: 6px 6px 10px rgba($banner-color, 0.22);
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+div.descrow {
+    display: flex;
+    width: 100%;
+    @include media-query(450px) {
+        display: initial;
+    }
+}
+
+div.ccredits {
+    text-align: center;
+    min-width: 40px;
+    margin: auto;
+    margin-right: 5px;
+}
+.ccredits {
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+
+div.cdesc {
+    font-family: $readable-font-family;
+    font-size: 110%;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    margin-left: 0px;
+    @include media-query($on-palm) {
+        font-size: 100%;
+        padding: 8px 20px;
+    }
+}
+
+div.cdesc p {
+  margin-bottom: 0px;
+}
+
+div.descrow {
+    font-family: $base-font-family;
+}
+
+div.descrow div.cicon {
+    margin: auto 16px;
+    width: inherit;
+    min-width: 145px;
+    text-align: center;
+    font-size: 65px;
+    @include media-query($on-palm) {
+        float: left;
+        padding: 0 15px 0 0;
+    }
+    @media screen and (min-width: 450px) {
+        max-width: 145px;
+    }
+}
+
+div.featuringrow {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: right;
+    @include media-query($on-palm) {
+        font-size: 96%;
+    }
+}
+
+div.featuringrow div {
+    padding: 10px;
+    @include media-query($on-palm) {
+        padding: 5px;
+    }
+}
+
+div.featuringrow div.bauthors {
+    max-width: 77%;
+}
+
+div.featuringrow div.flabel {
+    font-family: $base-font-family;
+    margin-left: 25px;
+    margin-bottom: auto;
+    @include media-query($on-palm) {
+        margin-left: 10px;
+    }
+}
+
+div.featuringrow div.lecturers {
+    min-width: 20%;
+}
+

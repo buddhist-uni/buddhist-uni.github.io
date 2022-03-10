@@ -4,7 +4,7 @@ title: Behind the Scenes
 
 ### With Khemarato Bhikkhu
 
-> Alas! Asaṅga spent twelve years in the wilderness, practising meditation.  
+> Alas! He spent twelve years in the wilderness, practising meditation.  
 > Without achieving any success in meditation,  
 > He has instead compiled these treatises  
 > As a burden for an elephant’s back.  

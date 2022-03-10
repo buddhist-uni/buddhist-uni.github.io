@@ -17,3 +17,20 @@ $readable-font-size: 17px;
 
 $spacing-unit: 16px;
 
+//////
+// Imported from Minima v2.5.1
+/////
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
