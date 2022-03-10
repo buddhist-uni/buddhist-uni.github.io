@@ -7,12 +7,13 @@ status: featured
 journal: nyrb
 year: 2018
 month: feb
-course: gender
+course: inner
 tags:
   - thought
+  - gender
   - karma
   - free-will
-  - extremism
+  - migration
 ---
 
 > someone is a sequence of choices, and the question is: Will my next choice be conscious, and will my ability to make it be unfettered?
