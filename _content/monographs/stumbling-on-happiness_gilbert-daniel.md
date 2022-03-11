@@ -5,12 +5,11 @@ authors:
 year: 2006
 publisher: "Vintage"
 olid: OL3422699M
-course: world
+course: inner
 tags:
   - neuroscience
   - becon
   - economics
-  - inner
   - time
   - psychology
   - future
