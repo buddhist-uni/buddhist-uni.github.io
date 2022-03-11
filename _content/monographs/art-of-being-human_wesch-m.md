@@ -6,6 +6,7 @@ external_url: "https://newprairiepress.org/ebooks/20/"
 drive_links:
   - "https://drive.google.com/file/d/1XARJp8_MuavsSNlmvJfoWeSWh6W-00Tg/view?usp=drivesdk"
 course: world
+status: featured
 tags:
   - ideology
   - places

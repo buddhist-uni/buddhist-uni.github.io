@@ -10,7 +10,6 @@ tags:
   - biology
   - science
   - evolution
-  - wider
   - power
   - ideology
 year: 2011
