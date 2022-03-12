@@ -16,6 +16,6 @@ publisher: "The Buddha Dhamma Mandala Society"
 address: Singapore
 ---
 
-> the point of *Metta* is not what we feel about a person, at least not in the beginning, but rather what we aspire to
+> The point of *Metta* is not what we **feel** about a person, at least not in the beginning, but rather what we **aspire** to
 
 A thorough account of love and relationships from a Buddhist perspective.

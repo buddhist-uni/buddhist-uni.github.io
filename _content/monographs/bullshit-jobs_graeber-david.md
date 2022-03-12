@@ -6,9 +6,8 @@ external_url: "https://theanarchistlibrary.org/library/david-graeber-bullshit-jo
 course: becon
 tags:
   - labor
-  - groups
+  - business
   - present
-  - world
 year: 2018
 month: may
 olid: OL28705546M
