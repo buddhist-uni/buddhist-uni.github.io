@@ -16,6 +16,16 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-S
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
+<script>
+function goto(u,v) {
+   if (typeof ga === 'function') {
+     let w = Math.floor(v);
+     ga('send','event','Outbound Link','click',u,(Math.random()<v-w)?Math.ceil(v):w);
+   }
+   location.href=u;
+}
+</script>
+
 The Open Buddhist University organizes [content from across the Web]({% link library.md %}) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
 
 ## About Our Courses
@@ -67,12 +77,12 @@ This site may use cookies to enhance your experience, but you can turn this off 
 
 Courses hosted on other websites.
 
-### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="1"}
-{:onclick="location.href='http://www.nettletibetan.ca/'" .courselink}
+### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
+{:onclick="goto('http://www.nettletibetan.ca/',1)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='http://www.nettletibetan.ca/'" class="cicon"><i class="fas fa-tram"></i></div>
+    <div onclick="goto('http://www.nettletibetan.ca/',1)" class="cicon"><i class="fas fa-tram"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
@@ -80,33 +90,33 @@ Courses hosted on other websites.
 
 
 ### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
-{:onclick="location.href='http://bschawaii.org/shindharmanet/course/'" .courselink}
+{:onclick="goto('http://bschawaii.org/shindharmanet/course/',1.5)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='http://bschawaii.org/shindharmanet/course/'" class="cicon"><i class="fas fa-street-view"></i></div>
+    <div onclick="goto('http://bschawaii.org/shindharmanet/course/',1.5)" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>
 </div>
 
 ### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}
-{:onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" .courselink}
+{:onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" class="cicon"><i class="fas fa-baby"></i></div>
+    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-baby"></i></div>
     <div class="cdesc">A stunning lecture series by <i class="fas fa-microphone-alt"></i> Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
 
 ### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3"}
-{:onclick="location.href='https://www.coursera.org/learn/modpo'" .courselink}
+{:onclick="goto('https://www.coursera.org/learn/modpo',3)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='https://www.coursera.org/learn/modpo'" class="cicon"><i class="fas fa-feather-alt"></i></div>
+    <div onclick="goto('https://www.coursera.org/learn/modpo',3)" class="cicon"><i class="fas fa-feather-alt"></i></div>
     <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of poetry, but how to read it.
     This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
