@@ -11,6 +11,7 @@ tags:
   - monastic
 year: 1977
 publisher: BBC
+base_value: 0.4
 ---
 
 A short documentary about Wat Pah Pong featuring rare footage of Ajahn Chah himself.

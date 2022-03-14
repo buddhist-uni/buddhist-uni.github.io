@@ -11,6 +11,7 @@ course: future
 tags:
   - groups
 series: song-exploder
+base_value: 0.1
 number: 158
 ---
 

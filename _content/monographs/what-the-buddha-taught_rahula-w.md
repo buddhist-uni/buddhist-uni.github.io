@@ -9,6 +9,7 @@ year: 1959
 olid: OL7874505M
 publisher: oneworld
 course: buddhism
+base_value: 2.85
 tags:
   - philosophy
   - theravada

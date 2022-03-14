@@ -13,6 +13,7 @@ year: 2015
 address: "Thailand"
 month: dec
 publisher: "Mahachulalongkorn"
+base_value: 5
 ---
 
 An anthology of passages from the canonical and quasi-canonical texts of the three vehicles.

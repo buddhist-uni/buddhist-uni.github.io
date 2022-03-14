@@ -5,6 +5,7 @@ authors:
 year: 2019
 month: oct
 external_url: "https://dharmapearls.net/index.html"
+base_value: 0.6
 course: agama
 tags:
   - ma

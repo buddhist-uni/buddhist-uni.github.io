@@ -16,6 +16,7 @@ tags:
 year: 2007
 publisher: "The Corporate Body of the Buddha Education Foundation"
 address: "Taiwan"
+base_value: 2.5
 status: featured
 ---
 

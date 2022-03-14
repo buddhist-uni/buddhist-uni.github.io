@@ -15,6 +15,7 @@ tags:
   - world
 year: 1989
 publisher: Transit Media
+base_value: 0.25
 ---
 
 > We have been through such hardship and danger together. Now we must love one another.

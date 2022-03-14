@@ -10,6 +10,7 @@ drive_links:
 source_url: "https://archive.org/details/buddhistbirthsto01daviuoft/page/n3/mode/2up"
 publisher: "Trübner"
 address: "London"
+base_value: 2
 course: buddha
 tags:
   - pali-commentaries

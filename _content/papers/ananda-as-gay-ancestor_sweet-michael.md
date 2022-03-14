@@ -4,6 +4,7 @@ authors: ["Michael Sweet"]
 external_url: "https://www.academia.edu/25439710/Pining_Away_for_the_Sight_of_the_Handsome_Cobra_King_Ānanda_as_a_Gay_Ancestor_and_Role_Model"
 booktitle: "Queer Dharma: Voices of Gay Buddhists Volume 2"
 pages: "13--22"
+base_value: 0.7
 year: 2000
 editor: "Winston Leyland"
 publisher: "Gay Sunshine Press"

@@ -59,7 +59,7 @@ This course is taught, once again, by Bhikkhu Bodhi, but this time in two sectio
 
 Note that significant homework will be assigned in this class. As the homework is the bulk of the learning for the course, please be sure to do it.
 
-Note that there were also [a number of handouts](https://drive.google.com/drive/folders/1FGf4pi3NMLjWWZlxB2Gf8zJsddSBkm2m){:target="_blank"} and [tables](https://drive.google.com/drive/folders/1NIoiqrmTsCbwju9pYWVNe4LY9VbTjJPS){:target="_blank"} distributed during the class that may be helpful to review.
+Note that there were also [a number of handouts](https://drive.google.com/drive/folders/1FGf4pi3NMLjWWZlxB2Gf8zJsddSBkm2m){:target="_blank" ga-event-value="1"} and [tables](https://drive.google.com/drive/folders/1NIoiqrmTsCbwju9pYWVNe4LY9VbTjJPS){:target="_blank" ga-event-value="1"} distributed during the class that may be helpful to review.
 
 ### Office Hours
 

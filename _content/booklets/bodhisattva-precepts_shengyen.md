@@ -8,6 +8,7 @@ drive_links:
 olid: OL32173773M
 month: jul
 year: 2005
+base_value: 2.4
 course: mahayana
 tags:
   - ethics

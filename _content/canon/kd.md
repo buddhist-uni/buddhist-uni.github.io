@@ -12,6 +12,7 @@ tags:
   - indian
   - navakovada
 year: 2007
+base_value: 1
 ---
 
 The first book of the Khuddaka Nikāya, the Khuddakapāṭha was, in ancient times, a daily liturgy for novice monks.

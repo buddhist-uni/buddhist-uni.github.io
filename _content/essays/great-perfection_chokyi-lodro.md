@@ -11,6 +11,7 @@ tags:
   - dzogchen
   - stages
 year: 2017
+base_value: 0.2
 translator: "Adam Pearcey"
 ---
 

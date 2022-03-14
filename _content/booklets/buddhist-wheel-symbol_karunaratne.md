@@ -7,6 +7,7 @@ drive_links: ["https://drive.google.com/file/d/18Af28uErwMFS6Jz_0_gMc0m35rBEMMU1
 year: 1969
 publisher: bps
 series: wheel
+base_value: 1
 number: 137
 address: Kandy
 course: form

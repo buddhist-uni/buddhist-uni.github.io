@@ -52,13 +52,13 @@ A copy of the Aṅguttara Nikaya is required for this class.  Bhikkhu Bodhi's ow
 
 {% include content_blurb.html category="monographs" slug="an_bodhi" %}
 - The lecturer's own translation of the text.
-- A free preview can be found [on ReadingFaithfully, here](https://readingfaithfully.org/selections-from-the-numerical-discourses-free-kindle-epub-mobi/){:target="_blank"}.
+- A free preview can be found [on ReadingFaithfully, here](https://readingfaithfully.org/selections-from-the-numerical-discourses-free-kindle-epub-mobi/){:target="_blank" ga-event-value="2"}.
 
 You can also find Bhikkhu Sujato's translation free online:
 
 {% include content_blurb.html category="booklets" slug="an_sujato" %}
 - In addition to being freely available, it's also helpful to see alternative translations to get a sense of the breadth of meaning in the original.
-- Ajahn Geoff has also translated [a few suttas from the AN over at DhammaTalks.org](https://www.dhammatalks.org/suttas/AN/index_AN.html){:target="_blank" ga-event-value="0.3"}
+- Ajahn Geoff has also translated [a few suttas from the AN over at DhammaTalks.org](https://www.dhammatalks.org/suttas/AN/index_AN.html){:target="_blank" ga-event-value="0.4"}
 
 ### Lectures
 

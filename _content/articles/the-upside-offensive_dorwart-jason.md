@@ -8,6 +8,7 @@ tags:
   - becon
 course: society
 year: 2019
+base_value: 0.15
 journal: "The Denver Post"
 ---
 

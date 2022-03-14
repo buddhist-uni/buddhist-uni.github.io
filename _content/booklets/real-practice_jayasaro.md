@@ -11,6 +11,7 @@ tags:
   - navakovada
 year: 2008
 olid: OL32038522M
+base_value: 0.9
 ---
 
 Three inspiring talks to the monks of Wat Pananachat on monastic practice.

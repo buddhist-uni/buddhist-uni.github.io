@@ -10,6 +10,7 @@ course: meditation
 tags:
   - path
   - vipassana
+base_value: 2.4
 month: apr
 year: 2011
 olid: OL33183845M

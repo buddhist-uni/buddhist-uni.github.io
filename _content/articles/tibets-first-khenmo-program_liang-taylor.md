@@ -7,6 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1FKepkVOwWFvKEey1iC5hxLJfjHqv7dMl
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2020/08/Liang-and-Taylor__20_F-1.pdf"
 status: featured
 journal: jbe
+base_value: 0.5
 year: 2020
 volume: 27
 course: tibetan

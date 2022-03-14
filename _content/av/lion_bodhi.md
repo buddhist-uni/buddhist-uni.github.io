@@ -10,6 +10,7 @@ tags:
 series: mn-study_bodhi
 number: 8
 year: 2007
+base_value: 0.6
 ---
 
 A series of four lectures on MN 12: The Mahāsīhanāda Sutta (The Greater Discourse on the Lion’s Roar).

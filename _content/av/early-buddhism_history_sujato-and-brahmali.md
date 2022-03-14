@@ -13,6 +13,7 @@ tags:
   - buddhism
 series: early-buddhism_sujato-brahmali
 number: 1
+base_value: 0.6
 ---
 
 A day of lectures on the history of Buddhism which led off a series of lectures on Early Buddhism.

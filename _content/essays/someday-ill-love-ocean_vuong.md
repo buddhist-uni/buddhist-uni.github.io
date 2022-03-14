@@ -16,6 +16,7 @@ tags:
   - world
 subcat: poetry
 year: 2015
+base_value: 0.3
 ---
 
 > I swear, you will wake--  

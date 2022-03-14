@@ -10,6 +10,7 @@ tags:
 series: mn-study_bodhi
 number: 10
 year: 2009
+base_value: 0.6
 ---
 
 A series of 32 lectures on a further selection of suttas from the Majjhima Nikaya.

@@ -12,6 +12,7 @@ year: 2008
 month: sep
 publisher: Samsara Films
 subcat: film
+base_value: 1.3
 ---
 
 > This is thousands and thousands of times more important than my own life.

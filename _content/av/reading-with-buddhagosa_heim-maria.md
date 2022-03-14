@@ -4,7 +4,7 @@ authors:
   - "Maria Heim"
 editor: "Kate Hartmann"
 external_url: "https://podcast.buddhiststudiesonline.com/1759899/9450899-4-maria-heim-learning-how-to-read-buddhist-texts-with-buddhaghosa"
-course: theravada
+course: theravada # 2.5 stars
 tags:
   - hermeneutics
   - pali-canon

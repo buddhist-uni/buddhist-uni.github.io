@@ -9,6 +9,7 @@ course: buddha
 tags:
   - ebts
   - setting
+base_value: 3.2
 ---
 
 Peter Harvey gives a thorough discussion of the historical Buddha across these encyclopedia entries.

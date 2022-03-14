@@ -9,6 +9,7 @@ tags:
   - physics
   - ufos
   - aliens
+base_value: 0.8
 ---
 
 Three US Navy Videos of UFOs.

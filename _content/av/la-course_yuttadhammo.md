@@ -12,7 +12,7 @@ tags:
   - mindfulness
   - philosophy
   - american
-base_value: 1
+base_value: 1.6
 status: featured
 ---
 

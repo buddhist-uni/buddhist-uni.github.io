@@ -11,6 +11,7 @@ tags:
   - problems
   - view
 year: 2018
+base_value: 0.2
 ---
 
 > There are three ways: best, intermediate and inferior.

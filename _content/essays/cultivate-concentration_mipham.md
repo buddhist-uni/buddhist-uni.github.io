@@ -12,6 +12,7 @@ tags:
   - daily-life
 status: featured
 subcat: poetry
+base_value: 0.25
 ---
 
 > You might wish to drink the nectar of calm abiding...

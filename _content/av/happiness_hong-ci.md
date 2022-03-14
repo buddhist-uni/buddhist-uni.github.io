@@ -14,6 +14,7 @@ tags:
   - function
   - canadian
   - chan
+status: featured
 ---
 
 Ven Hong Ci eloquently invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment.

@@ -9,6 +9,7 @@ tags:
   - indian
   - abhidhamma
 year: 1915
+base_value: 4
 publisher: pts
 ---
 

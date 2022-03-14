@@ -15,6 +15,7 @@ journal: jpts
 publisher: pts
 volume: 10
 pages: "37--154"
+base_value: 0.9
 ---
 
 A large (117-page) index of subjects, similes, persons and places in the Numerical Discourses.

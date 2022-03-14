@@ -9,6 +9,7 @@ drive_links: ["https://drive.google.com/file/d/1G_n7rNi2pTuPg69GLulc0DC-oYutc52h
 course: ethics
 series: early-buddhism_sujato-brahmali
 number: 3
+base_value: 0.6
 ---
 
 An excellent introduction to ethics in Early Buddhism.

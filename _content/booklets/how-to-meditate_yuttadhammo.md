@@ -17,10 +17,11 @@ tags:
   - daily-life
 course: meditation
 status: featured
+base_value: 2.5
 ---
 
 My most highly recommended introduction to Buddhist meditation.
 
 Transcribed from [a series of YouTube videos](https://www.youtube.com/playlist?list=PL603BD0B03E12F5A1){:target="_blank" ga-event-value="{{ page.base_value }}"}, this short booklet concisely describes the practice as it's taught in the [Mahasi]({% link _authors/mahasi.md %}) {% include tag-link.html text="vipassana" tag="vipassana" %} tradition.
 
-For those practicing intensively according to this booklet, I encourage you to [sign up for one-on-one instruction here](https://meditation.sirimangalo.org/course){:ga-event-value="1" target="_blank"}.
+For those practicing intensively according to this booklet, I encourage you to [sign up for one-on-one instruction here](https://meditation.sirimangalo.org/course){:ga-event-value="2" target="_blank"}.

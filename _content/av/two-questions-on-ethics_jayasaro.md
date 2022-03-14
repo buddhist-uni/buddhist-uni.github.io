@@ -13,6 +13,7 @@ tags:
   - form
   - lay
   - thought
+base_value: 0.2
 ---
 
 On how to understand and hold the five precepts, through two common questions.

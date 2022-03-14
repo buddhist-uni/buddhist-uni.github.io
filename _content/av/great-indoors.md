@@ -11,6 +11,7 @@ tags:
   - places
   - cities
   - medicine
+base_value: 0.2
 number: 424
 series: 99pi
 ---

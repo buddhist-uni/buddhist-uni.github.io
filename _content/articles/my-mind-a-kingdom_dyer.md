@@ -13,6 +13,7 @@ subcat: poetry
 tags:
   - ethics
 course: lay
+base_value: 0.1
 ---
 
 Sir Edward Dyer rejoices in his virtue.

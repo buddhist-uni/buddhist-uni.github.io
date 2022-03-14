@@ -12,6 +12,7 @@ tags:
   - ethics
 year: 2013
 olid: OL37750593M
+base_value: 2.5
 publisher: "The Buddha Dhamma Mandala Society"
 address: Singapore
 ---

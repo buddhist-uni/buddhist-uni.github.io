@@ -8,6 +8,7 @@ year: 2016
 tags:
   - vinaya-studies
   - theravada-vinaya
+base_value: 2.5
 ---
 
 An easy-to-use summary of the information in [BMC 1](/content/booklets/bmc_geoff) which serves as a practical vinaya reference for Theravada monks.

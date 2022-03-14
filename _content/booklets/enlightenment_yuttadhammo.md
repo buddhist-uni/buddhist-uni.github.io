@@ -12,6 +12,7 @@ tags:
 status: featured
 year: 2020
 month: oct
+base_value: 2.5
 ---
 
 > As a result of seeing the truth of how craving leads to suffering, we have a moment where our minds cease all craving and release us from the incessant arising of experience

@@ -11,6 +11,7 @@ status: featured
 tags:
   - path
   - vipassana
+base_value: 3
 year: 1994
 ---
 

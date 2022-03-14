@@ -8,6 +8,7 @@ course: buddhism
 tags:
   - secular
   - american
+base_value: 0.2
 ---
 
 A short and sympathetic introduction to Buddhism especially for non-Buddhist Westerners.

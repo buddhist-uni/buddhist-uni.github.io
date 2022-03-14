@@ -9,6 +9,7 @@ file_links:
 drive_links:
   - "https://drive.google.com/file/d/14-JT9HotO_JgYx4Ofsxuy86-6ooMQ841/view?usp=drivesdk"
 course: form
+base_value: 0.2
 tags:
   - imagery
   - stages

@@ -13,6 +13,7 @@ tags:
   - bart
   - form
   - canadian
+base_value: 0.2
 ---
 
 A community of American Chinese Buddhists honors their past master by replicating one of his signature feats.

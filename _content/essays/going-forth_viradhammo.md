@@ -8,6 +8,7 @@ course: form
 tags:
   - monastic
   - emptiness
+base_value: 0.3
 status: featured
 ---
 

@@ -18,6 +18,6 @@ status: featured
 year: 1988
 ---
 
-> [Furtwängler's Bach](https://youtu.be/vRhDAl8FH5I){:target="_blank"} is no smug or mindless adaptation of Bach to the style of Wagner. It is a reaffirmation of the presence of Bach in Wagner and the simultaneous, reciprocal presence of Wagner in Bach.
+> [Furtwängler's Bach](https://youtu.be/vRhDAl8FH5I){:target="_blank" ga-event-value="0.2"} is no smug or mindless adaptation of Bach to the style of Wagner. It is a reaffirmation of the presence of Bach in Wagner and the simultaneous, reciprocal presence of Wagner in Bach.
 
-A forceful argument against the modern trend of "[historically authentic](https://youtu.be/rnAcRm7IL74){:target="_blank"}" musical performances.
+A forceful argument against the modern trend of "[historically authentic](https://youtu.be/rnAcRm7IL74){:target="_blank" ga-event-value="0.2"}" musical performances.

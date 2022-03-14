@@ -12,6 +12,7 @@ tags:
   - philosophy-of-science
   - academia
 publisher: "Fat Possum"
+base_value: 0.25
 ---
 
 > Love of hate acts as an axis uh huh  

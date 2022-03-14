@@ -4,6 +4,7 @@ authors: [stein-zak]
 external_url: "http://www.zakstein.org/wp-content/uploads/2014/10/Stein_CogMaturityFallacyFINAL.pdf"
 year: 2015
 book_title: "Metatheory for the Anthropocene: emancipatory praxis for planetary flourishing: critical realism and integral theory in dialogue, vol 2."
+base_value: 0.4
 chapter: 1
 address: "New York"
 publisher: "Routledge"

@@ -9,6 +9,7 @@ drive_links: ["https://drive.google.com/file/d/1JWy7WSs_neMZ9_e2M1ObpWDz8lmUi1LT
 course: lay
 tags:
   - tibetan
+base_value: 0.25
 ---
 
 A short uposatha ceremony from the Tibetan Tradition, focusing on the recollection of Avalokiteśvara.

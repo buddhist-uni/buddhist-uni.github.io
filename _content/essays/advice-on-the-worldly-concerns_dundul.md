@@ -11,6 +11,7 @@ tags:
   - emptiness
   - daily-life
 year: 2013
+base_value: 0.15
 ---
 
 > Be free from even so much as a single thought that is deceived

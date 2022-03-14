@@ -8,6 +8,7 @@ drive_links:
 authors:
   - "Ichirou Horide"
 year: 2005
+base_value: 0.8
 tags:
   - becon
   - japan

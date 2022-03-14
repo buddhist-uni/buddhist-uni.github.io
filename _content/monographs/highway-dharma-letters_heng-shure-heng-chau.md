@@ -13,6 +13,7 @@ tags:
   - mahayana
   - monastic-mahayana
 year: 1983
+base_value: 2.1
 olid: OL3552203M
 publisher: Dharma Realm Buddhist University
 ---

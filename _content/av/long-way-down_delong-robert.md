@@ -4,6 +4,7 @@ authors: ["Robert DeLong"]
 subcat: music
 year: 2014
 month: nov
+base_value: 0.2
 external_url: "https://www.youtube.com/watch?v=U-ZDBddRXFA"
 tags:
   - cosmology

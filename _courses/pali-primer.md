@@ -42,7 +42,7 @@ This course doesn't assume any prior knowledge of linguistics or classical langu
 
 Bhikkhu Bodhi will guide us through _DeSilva_ in 26, 2-hour lectures.
 
-In addition to the textbook, there are [a number of handouts](https://drive.google.com/drive/folders/1wiMJygvSGTaivFqmKSihI__IGrzGwCJy){:target="_blank"} that Bhikkhu Bodhi provided and will reference in his lectures, so be sure to download those too.
+In addition to the textbook, there are [a number of handouts](https://drive.google.com/drive/folders/1wiMJygvSGTaivFqmKSihI__IGrzGwCJy){:target="_blank" ga-event-value="1"} that Bhikkhu Bodhi provided and will reference in his lectures, so be sure to download those too.
 
 Note that significant homework will assigned between each lecture. As these assignments are the bulk of the learning for the course, please be sure to do them.
 

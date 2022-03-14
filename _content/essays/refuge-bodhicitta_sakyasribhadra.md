@@ -12,6 +12,7 @@ tags:
   - refuge
   - problems
 year: 2012
+base_value: 0.2
 ---
 
 > Continually, I shall take refuge...

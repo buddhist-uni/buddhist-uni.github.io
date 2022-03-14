@@ -15,6 +15,7 @@ tags:
   - daily-life
   - mindfulness
 year: 2015
+base_value: 0.15
 ---
 
 > Here in Dzogpachenpo, we settle, without contriving, in what we call the essence of mind

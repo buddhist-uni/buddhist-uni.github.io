@@ -17,4 +17,4 @@ tags:
 
 A very brief summary of the *Śrāvakabhūmi*: an ancient meditation manual preserved by the Yogācāra school.
 
-For a more detailed, structural analysis, see "[Some Remarks on the Textual History of the *Śrāvakabhūmi*](https://icabs.repo.nii.ac.jp/index.php?action=repository_action_common_download&item_id=254&item_no=1&attribute_id=22&file_no=1&page_id=13&block_id=17){:target="_blank" ga-event-value="0.3"}" by the same author.
+For a more detailed, structural analysis, see "[Some Remarks on the Textual History of the *Śrāvakabhūmi*](https://icabs.repo.nii.ac.jp/index.php?action=repository_action_common_download&item_id=254&item_no=1&attribute_id=22&file_no=1&page_id=13&block_id=17){:target="_blank" ga-event-value="0.35"}" by the same author.

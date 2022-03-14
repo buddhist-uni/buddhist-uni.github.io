@@ -15,6 +15,7 @@ tags:
   - monastic-advice
   - meditation
 year: 2013
+base_value: 0.15
 ---
 
 > the time for discovering Buddha directly, you must remain alone

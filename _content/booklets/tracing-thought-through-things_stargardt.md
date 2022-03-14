@@ -7,6 +7,7 @@ olid: OL32040728M
 year: 2000
 publisher: The Royal Netherlands Academy of Arts and Sciences
 address: Amsterdam
+base_value: 1
 course: theravada
 tags:
   - pali-canon

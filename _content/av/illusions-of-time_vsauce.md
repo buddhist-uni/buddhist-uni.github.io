@@ -7,6 +7,7 @@ course: time
 tags:
   - present
   - psychology
+base_value: 0.2
 ---
 
 How do humans perceive time?

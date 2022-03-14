@@ -12,6 +12,7 @@ tags:
   - west
   - kalmykia
 publisher: "DW Euromaxx"
+base_value: 0.2
 ---
 
 A short travel documentary about the autonomous region of the Russian Federation which, between the Caucasus and the Caspian, is home to Europe's native Buddhists.

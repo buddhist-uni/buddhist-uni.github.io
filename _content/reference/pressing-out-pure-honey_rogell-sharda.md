@@ -8,6 +8,7 @@ drive_links:
 tags:
   - mn
 year: 2003
+base_value: 1
 ---
 
 A short summary of every *sutta* in the Majjhima Nikaya.

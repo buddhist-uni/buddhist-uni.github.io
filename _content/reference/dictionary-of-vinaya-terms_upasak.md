@@ -14,6 +14,7 @@ course: vinaya-pitaka
 tags:
   - pali-dictionaries
   - vinaya-studies
+base_value: 2
 ---
 
 A dictionary of the Pāli vocabulary found in the *Vinaya Piṭaka*.

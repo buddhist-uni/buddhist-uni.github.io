@@ -6,6 +6,7 @@ external_url: "https://www.academia.edu/24977780/Venerated_Objects_and_Symbols_o
 booktitle: "Symbols in Art and Religion: The Indian and Comparative Perspectives"
 pages: "68--102"
 publisher: curzon
+base_value: 0.5
 year: 1990
 editor: "Karel Werner"
 course: form

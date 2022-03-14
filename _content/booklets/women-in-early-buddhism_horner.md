@@ -9,6 +9,7 @@ month: jan
 publisher: bps
 series: wheel
 number: 30
+base_value: 1
 course: setting
 tags:
   - gender

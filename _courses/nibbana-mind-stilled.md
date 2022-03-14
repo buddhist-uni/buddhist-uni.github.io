@@ -46,13 +46,13 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 
 {% include content_blurb.html category="av" slug="nibbana-lectures_analayo" %}
 - Bhikkhu Anālayo reads the above lectures, adding his own insightful reflections as well as giving us alternative translations for some of the suttas quoted.
-- If you prefer to watch the lectures on YouTube, they can be found [in this playlist](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank"}
+- If you prefer to watch the lectures on YouTube, they can be found [in this playlist](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank" ga-event-value="2"}
 
 ## Course Instructions
 
 [The course](https://drive.google.com/file/d/1-qnX1F6M3gxKQ2hCBeNhY15U6yHv1vdL/view?usp=sharing) procedes linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
 
-Of course, meditation and reflection "outside of class" is encouraged. As ever, if you have any questions, feel free to post on [DhammaWheel](https://www.dhammawheel.com/viewforum.php?f=13&sid=f7aa6f1d326313d8ef96bc802fb6ae02){:target="_blank"} or [SuttaCentral](https://discourse.suttacentral.net/t/bhikkhu-analayos-e-learning-course-on-the-nibbana-sermons-by-bhikkhu-katukurunde-na-ananda/3321/){:target="_blank"}.
+Of course, meditation and reflection "outside of class" is encouraged. As ever, if you have any questions, feel free to post on [DhammaWheel](https://www.dhammawheel.com/viewforum.php?f=13&sid=f7aa6f1d326313d8ef96bc802fb6ae02){:target="_blank"} or [SuttaCentral](https://discourse.suttacentral.net/t/bhikkhu-analayos-e-learning-course-on-the-nibbana-sermons-by-bhikkhu-katukurunde-na-ananda/3321/){:target="_blank" ga-event-value="0.6"}.
 
 This course is a real treat. I hope you enjoy it!
 

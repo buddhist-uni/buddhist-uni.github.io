@@ -11,6 +11,7 @@ tags:
   - ebts
 series: early-buddhism_sujato-brahmali
 number: 5
+base_value: 0.6
 ---
 
 Gives a basic introduction to Early Buddhist Philosophy, with a special emphasis on how it differs from later doctrinal developments.

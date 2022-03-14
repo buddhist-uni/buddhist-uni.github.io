@@ -11,6 +11,7 @@ drive_links:
 course: mahayana
 year: 2007
 olid: OL36138298M
+base_value: 0.6
 publisher: "Sheng Yen Education Foundation"
 address: Taipei
 ---
