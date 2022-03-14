@@ -10,6 +10,7 @@ tags:
   - dhp
   - agama
   - pali-language-research
+base_value: 0.3
 ---
 
 A searchable table of Dhammapada verses in Pali together with their known Indic parallels.

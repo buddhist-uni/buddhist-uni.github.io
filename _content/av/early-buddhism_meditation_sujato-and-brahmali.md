@@ -9,6 +9,7 @@ drive_links: ["https://drive.google.com/file/d/1V_qhv15XgTMGN3VvdtlvRs-Aff7_Gqws
 course: meditation
 series: early-buddhism_sujato-brahmali
 number: 4
+base_value: 0.6
 ---
 
 A solid introduction to meditation in the Early Buddhist Texts.

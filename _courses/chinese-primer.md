@@ -38,7 +38,7 @@ Note that this course is still a work in progress by its author, John Kieschnick
 
 ### Prerequisites
 
-While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student [with time and courage](http://www.pinyin.info/readings/texts/moser.html){:target="_blank"}.
+While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student [with time and courage](http://www.pinyin.info/readings/texts/moser.html){:target="_blank" ga-event-value="0.35"}.
 
 ## Textbooks
 
@@ -64,10 +64,10 @@ This is an extremely challenging but doable goal for someone new to Chinese. If 
 And even for the bilingual English-Chinese speakers, I recommend everyone get:
 {% include content_blurb.html category="reference" slug="pleco" %}
 - The world's best Chinese dictionaries.
-- Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank"} containing the vocab for the class and review said vocabulary in a flashcard-like interface.
-- Make sure to also download the (free) "Buddhist" Dictionary Add-on after you install the app, as it has many Buddhist terms the standard dictionary does not, based on [The Digital Dictionary of Buddhism](http://www.buddhism-dict.net/ddb/){:target="_blank"}.
+- Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank" ga-event-value="0.4"} containing the vocab for the class and review said vocabulary in a flashcard-like interface.
+- Make sure to also download the (free) "Buddhist" Dictionary Add-on after you install the app, as it has many Buddhist terms the standard dictionary does not, based on [The Digital Dictionary of Buddhism](http://www.buddhism-dict.net/ddb/){:target="_blank" ga-event-value="0.8"}.
 
-This [Chinese-Sanskrit Dictionary](http://www.ahandfulofleaves.org/documents/A%20Buddhist%20Chinese_Sanskrit%20Dict_Hirakawa.pdf){:target="_blank"} may also be helpful for translating Chinese Buddhist texts, keeping in mind that native Chinese and Buddhist Chinese aren't quite the same language:
+This [Chinese-Sanskrit Dictionary](http://www.ahandfulofleaves.org/documents/A%20Buddhist%20Chinese_Sanskrit%20Dict_Hirakawa.pdf){:target="_blank" ga-event-value="0.8"} may also be helpful for translating Chinese Buddhist texts, keeping in mind that native Chinese and Buddhist Chinese aren't quite the same language:
 
 {% include content_box.html category="articles" slug="buddhist-chinese_zhu-qingzhi" %}
 
@@ -89,6 +89,6 @@ Volume 3 (whose structure should, by now, be very familiar!) should be completed
 
 ## Continuing Study
 
-As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
+As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank" ga-event-value="1"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
 
 祝你一路順利! 

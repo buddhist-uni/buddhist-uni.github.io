@@ -31,10 +31,10 @@ Type in what you're looking for and see what comes up!
 ### [<i class="fas fa-dice"></i> Random]({% link random.html %})
 Or explore the breadth of our recommendations in a more serendipitous way.
 
-#### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
+### [<i class="fas fa-user-edit"></i> Author]({% link authors.md %})
 If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can find a partial list of our authors here.
 
-#### [<i class="fas fa-photo-video"></i> Content Type]({% link _categories/index.md %})
+### [<i class="fas fa-photo-video"></i> Content Type]({% link _categories/index.md %})
 The content type pages contain the canonical list of everything in the library.
 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}

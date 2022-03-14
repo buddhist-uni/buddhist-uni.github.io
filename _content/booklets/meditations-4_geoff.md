@@ -9,6 +9,7 @@ tags:
   - anapanasati
   - thai
 year: 2008
+base_value: 3
 ---
 
 > Your ability to stick with these qualities is what’s going to help them grow. When you notice yourself wandering off, ardency means that you bring the mind right back. If it wanders off again, bring it back again. You don’t give up. 

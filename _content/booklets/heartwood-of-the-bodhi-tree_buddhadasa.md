@@ -17,6 +17,7 @@ tags:
   - origination
   - vipassana
   - buddhism
+base_value: 3.5
 ---
 
 > To be female is to have the *dukkha* of a female. To be male is to have the *dukkha* of a male. [...] If we deludedly think ‘I am happy’ then we must suffer accordingly.

@@ -8,6 +8,7 @@ file_links:
 drive_links:
   - "https://drive.google.com/file/d/1CfUZfkveoKB32dLHcVJBIB4c9fTkx0F_/view?usp=drivesdk"
 course: chan-roots
+base_value: 0.9
 status: featured
 tags:
   - empress-wu

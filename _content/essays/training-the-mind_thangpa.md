@@ -5,6 +5,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/geshe-langri-thangpa
 year: 2012
 drive_links: ["https://drive.google.com/file/d/1lkTC_O7gzjnCey8BTtZi77nXvAZWyggq/view?usp=drivesdk"]
 course: thought
+base_value: 0.25
 subcat: poetry
 tags:
   - ethics

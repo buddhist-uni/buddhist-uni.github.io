@@ -14,6 +14,7 @@ tags:
   - tibetan
 subcat: poetry
 year: 2014
+base_value: 0.25
 ---
 
 > these delightful mountain solitudes,  

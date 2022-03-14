@@ -11,6 +11,7 @@ drive_links:
 tags:
   - sutta
   - pali-canon
+base_value: 6
 ---
 
 A large, free collection of sutta translations in ebook format, suitable for offline study.

@@ -9,6 +9,7 @@ tags:
   - ethics
 series: mn-study_bodhi
 number: 3
+base_value: 0.6
 year: 2003
 ---
 

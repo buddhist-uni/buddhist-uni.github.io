@@ -6,6 +6,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15KXRhT7SIQZJo3qWSVv3NTG4HtV1T5XT/view?usp=drivesdk"]
 year: 2019
 course: nibbana
+base_value: 0.2
 subcat: poetry
 ---
 

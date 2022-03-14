@@ -10,6 +10,7 @@ tags:
   - buddhism
   - society
   - art
+base_value: 0.2
 ---
 
 On the benefit of making things together.

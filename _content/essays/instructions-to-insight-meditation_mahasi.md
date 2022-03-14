@@ -12,6 +12,7 @@ tags:
   - mindfulness
   - path
   - burmese
+base_value: 0.5
 status: featured
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Early Buddhist Theory of Knowledge"
 authors:
-  - "K. N. Jayatilleke"
+  - jayatilleke
 course: epistemology
 tags:
   - setting

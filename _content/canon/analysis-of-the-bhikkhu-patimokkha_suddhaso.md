@@ -12,6 +12,7 @@ tags:
   - vinaya-studies
   - theravada-vinaya
   - pali-canon
+base_value: 4
 ---
 
 The canonical explication of the monastic rules.

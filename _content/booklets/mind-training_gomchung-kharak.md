@@ -14,6 +14,7 @@ tags:
 year: 2020
 month: jan
 olid: OL37632812M
+base_value: 4
 publisher: "Kagyu Monlam"
 address: "Gaya, India"
 ---

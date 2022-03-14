@@ -4,6 +4,7 @@ authors:
   - "Journeyman Pictures"
 external_url: "https://youtu.be/gC46L5kBsIs"
 course: tibetan
+base_value: 0.1
 tags:
   - tibet
   - kagyu

@@ -7,6 +7,7 @@ year: 2011
 course: mn
 tags:
   - agama
+base_value: 4
 status: featured
 formats: [PDFs]
 drive_links: ["https://drive.google.com/drive/folders/10onZWu01RgUkBHOLmulH32Y7I9JIyiAl"]

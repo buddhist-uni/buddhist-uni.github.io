@@ -15,6 +15,7 @@ tags:
   - wider
   - education
   - post-modernism
+base_value: 0.2
 ---
 
 > today’s rich are far less materialistic, but a far greater threat to equality

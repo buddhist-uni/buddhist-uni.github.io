@@ -7,6 +7,7 @@ external_url: "https://www.vox.com/future-perfect/2019/2/12/18215534/bill-gates-
 journal: vox
 year: 2019
 course: time
+base_value: 0.1
 status: featured
 tags:
   - economics

@@ -15,6 +15,7 @@ tags:
   - cosmology
   - world
 status: featured
+base_value: 0.25
 ---
 
 > 異なる声の元が  

@@ -4,6 +4,7 @@ year: 2020
 month: nov
 external_url: "https://youtu.be/ibpdNqrtar0"
 course: biology
+base_value: 0.2
 tags:
   - science
   - death

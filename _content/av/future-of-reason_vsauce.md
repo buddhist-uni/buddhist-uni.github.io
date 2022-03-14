@@ -10,6 +10,7 @@ tags:
   - time
   - math
   - science
+base_value: 0.2
 ---
 
 > The world is not a logic puzzle.

@@ -10,6 +10,7 @@ month: aug
 number: 1
 volume: 18
 status: featured
+base_value: 0.4
 course: theravada
 tags:
   - burmese

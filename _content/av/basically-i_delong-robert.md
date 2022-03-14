@@ -9,6 +9,7 @@ course: philosophy
 tags:
   - karma
 publisher: "Glassnote Records"
+base_value: 0.15
 ---
 
 > Basically, I wanna know  

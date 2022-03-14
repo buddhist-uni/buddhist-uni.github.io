@@ -9,6 +9,7 @@ course: meditation
 journal: "Frontiers in Human Neuroscience"
 volume: 6
 number: 292
+status: featured
 tags:
   - academia
   - neuroscience

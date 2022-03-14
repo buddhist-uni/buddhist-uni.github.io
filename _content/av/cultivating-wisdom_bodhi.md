@@ -10,6 +10,7 @@ tags:
 series: mn-study_bodhi
 number: 7
 year: 2006
+base_value: 0.6
 ---
 
 A series of 43 lectures on the stages of liberation and the gradual dawning of insight as presented in the Majjhima Nikaya.

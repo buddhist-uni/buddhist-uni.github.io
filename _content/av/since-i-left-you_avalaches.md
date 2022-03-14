@@ -11,6 +11,7 @@ tags:
   - groups
   - gender
 subcat: music
+base_value: 0.25
 ---
 
 > I found the world so new

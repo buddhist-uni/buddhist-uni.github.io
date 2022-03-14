@@ -12,7 +12,6 @@ month: jan
 publisher: "Scribner"
 address: "New York"
 source_url: "https://books.google.com/books?id=nMw-AAAAYAAJ"
-status: featured
 ---
 
 > if you carry much weight you will very soon condemn whatever way you carry it

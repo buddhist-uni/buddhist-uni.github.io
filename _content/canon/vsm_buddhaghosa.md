@@ -7,6 +7,7 @@ address: Colombo
 drive_links: ["https://drive.google.com/file/d/1gx7ytOh7SVUe9geJd80Bw0zkSYdQCzf-/view?usp=drivesdk", "https://drive.google.com/file/d/14YouLLMR99BWVZk1df711TdyIFChS_9V/view?usp=drivesdk"]
 external_url: "https://static.sirimangalo.org/vism/"
 course: theravada
+base_value: 4.5
 status: featured
 tags:
   - iddhi

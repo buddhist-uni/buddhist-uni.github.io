@@ -8,6 +8,7 @@ tags:
   - problems
   - activism
 year: 2011
+base_value: 0.15
 ---
 
 > Focus on your ability  

@@ -15,6 +15,7 @@ tags:
   - world
   - time
 year: 2008
+base_value: 0.25
 ---
 
 A beautiful music video about the passing of time.

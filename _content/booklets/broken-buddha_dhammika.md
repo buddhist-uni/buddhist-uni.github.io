@@ -6,8 +6,8 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1p9ag8X185EOUazI87pmSSy_td6Izr-3r/view?usp=drivesdk"]
 year: 2006
 course: monastic-theravada
-olid: OL32035595M
 status: featured
+olid: OL32035595M
 tags:
   - theravada
   - controversies

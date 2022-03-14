@@ -6,6 +6,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1oMzF4pmNJ3O7ELIzjm1LhBRp3b9kNjP9/view?usp=drivesdk"]
 year: 1999
 course: monastic
+base_value: 2.5
 tags:
   - monastic-theravada
 ---

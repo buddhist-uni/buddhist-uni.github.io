@@ -11,6 +11,7 @@ tags:
   - function
 year: 1994
 month: nov
+base_value: 1.7
 olid: OL23359905M
 ---
 

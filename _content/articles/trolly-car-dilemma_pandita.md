@@ -7,6 +7,7 @@ tags:
   - karma
   - thought
   - dialogue
+base_value: 0.2
 course: ethics
 year: 2014
 journal: jbe

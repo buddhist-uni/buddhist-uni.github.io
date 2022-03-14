@@ -15,6 +15,7 @@ year: 2022
 olid: OL37748276M
 publisher: "Rice University"
 address: "Houston, Texas"
+base_value: 4.9
 ---
 
 > Anthropological methods and insights can be transformative, making possible the kinds of empathy and dialogue necessary to solve our global problems.

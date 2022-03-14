@@ -12,6 +12,7 @@ tags:
   - places
   - thailand
   - world
+base_value: 0.25
 publisher: "Al Jazeera"
 ---
 

@@ -11,6 +11,7 @@ tags:
   - climate-change
   - colonialism
   - geology
+base_value: 0.2
 status: featured
 ---
 

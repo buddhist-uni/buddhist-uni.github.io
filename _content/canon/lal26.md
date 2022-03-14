@@ -11,6 +11,7 @@ tags:
   - agama-misc
 year: 2009
 month: aug
+base_value: 0.8
 ---
 
 A Sanskrit version of the Buddha's first sermon preserved in the Mahayana Canon.

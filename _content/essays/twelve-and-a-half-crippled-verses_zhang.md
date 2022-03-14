@@ -11,6 +11,7 @@ status: featured
 tags:
   - mahayana
   - path
+base_value: 0.25
 ---
 
 > Human born.  

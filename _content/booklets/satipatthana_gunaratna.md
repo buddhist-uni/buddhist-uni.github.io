@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1_k95kTZOVVE7GQh7rzF3XqoeUo_tPFck/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1LphIVaGN1id1-QLhqrdC_fyyPclbtG0y/view?usp=drivesdk"
 course: meditation
+base_value: 1
 tags:
   - satipatthana
   - mindfulness

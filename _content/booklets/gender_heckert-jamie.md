@@ -17,6 +17,7 @@ year: 2012
 month: feb
 publisher: ias
 series: lexicon
+base_value: 2.5
 number: 3
 olid: OL32035954M
 ---

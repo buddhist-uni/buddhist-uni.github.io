@@ -12,6 +12,7 @@ tags:
   - himalayas
   - bhutan
 subcat: film
+base_value: 0.6
 status: featured
 ---
 

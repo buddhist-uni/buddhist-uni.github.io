@@ -14,6 +14,7 @@ tags:
 year: 2014
 month: mar
 olid: OL37081050M
+base_value: 4
 ---
 
 > Armed with the attitude of loving-kindness and compassion, we naturally no longer have any external enemies.

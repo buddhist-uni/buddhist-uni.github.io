@@ -11,6 +11,7 @@ olid: OL32580792M
 course: form
 tags:
   - buddhism
+base_value: 2.5
 ---
 
 A straightforward, Q&A-style introduction to Buddhism.

@@ -10,6 +10,7 @@ external_url: "https://songexploder.net/fleet-foxes"
 course: ocean
 tags:
   - pilgrimage
+base_value: 0.2
 series: song-exploder
 number: 109
 ---

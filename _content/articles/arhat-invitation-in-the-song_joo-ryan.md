@@ -8,6 +8,7 @@ number: 1
 pages: "81--116"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8987/2880/8781"
 status: featured
+base_value: 0.6
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/16N2yLAZ8g5BVjqo82zmUNfz4lSMjTFi2/view?usp=drivesdk"]
 course: chan-roots

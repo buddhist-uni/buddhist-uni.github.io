@@ -11,6 +11,7 @@ tags:
   - ethics
 status: featured
 year: 2020
+base_value: 3.5
 ---
 
 > [In Buddhism, morality] is not concerned so much with the result of one’s actions on other people as it concerns the result of one’s actions on one’s own mind.

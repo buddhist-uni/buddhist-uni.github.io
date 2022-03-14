@@ -168,7 +168,7 @@ defaults:
     values:
         formats: [pdf, epub]
         layout: "content"
-        base_value: 0.2
+        base_value: 0.35
         section: "library"
         tags: []
   -
@@ -184,7 +184,6 @@ defaults:
         type: "content"
     values:
         category: "articles"
-        base_value: 0.25
   -
     scope:
         path: "_content/av"
@@ -192,54 +191,47 @@ defaults:
     values:
         formats: [mp3]
         category: "av"
-        base_value: "0.3"
   -
     scope:
         path: "_content/booklets"
         type: "content"
     values:
         category: "booklets"
-        base_value: "2.5"
+        base_value: "2"
   -
     scope:
         path: "_content/canon"
         type: "content"
     values:
         category: "canon"
-        base_value: "0.15"
   -
     scope:
         path: "_content/essays"
         type: "content"
     values:
         category: "essays"
-        base_value: "0.2"
   -
     scope:
         path: "_content/excerpts"
         type: "content"
     values:
         category: "excerpts"
-        base_value: "0.25"
   -
     scope:
         path: "_content/monographs"
         type: "content"
     values:
         category: "monographs"
-        base_value: "3.0"
+        base_value: "3.25"
   -
     scope:
         path: "_content/papers"
         type: "content"
     values:
         category: "papers"
-        base_value: "0.2"
   -
     scope:
         path: "_content/reference"
         type: "content"
     values:
         category: "reference"
-        base_value: "0.15"
-

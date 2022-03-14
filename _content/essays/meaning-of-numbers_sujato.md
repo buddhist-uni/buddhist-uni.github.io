@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1pU-6b--1p11FIlBR5nBqEIiaa8dqpUkD/view?usp=drivesdk"
 tags:
   - imagery
+base_value: 0.15
 year: 2019
 ---
 

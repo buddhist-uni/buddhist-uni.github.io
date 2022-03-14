@@ -7,6 +7,7 @@ year: 1980
 publisher: bps
 series: wheel
 number: 277
+base_value: 1.5
 address: Kandy
 course: path
 status: featured

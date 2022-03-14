@@ -7,6 +7,7 @@ external_url: "https://seeingthroughthenet.net/books/"
 drive_links:
   - "https://drive.google.com/file/d/13g2shl7nkV2DtXYucgaFZhFI0LhUidoT/view?usp=drivesdk"
 year: 2012
+base_value: 4.8
 course: nibbana-mind-stilled
 tags:
   - origination

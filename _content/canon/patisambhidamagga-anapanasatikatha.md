@@ -12,6 +12,7 @@ tags:
   - anapanasati
   - abhidhamma
   - abhidharma
+base_value: 0.4
 ---
 
 > These are the over two hundred kinds of knowledge that arise in one who develops concentration by mindfulness of breathing with sixteen grounds

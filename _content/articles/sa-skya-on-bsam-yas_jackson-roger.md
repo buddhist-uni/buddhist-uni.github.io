@@ -20,5 +20,5 @@ status: featured
 
 An early account of the legendary debate that forever oriented Tibetan Buddhism South towards India—and away from China.
 
-**Important Note!** Please also read pages 17–22 of [David Jackson's summary of the controversy this article stirred up](https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8772/2679/0){:target="_blank" ga-event-value="0.4"}, published eight years later in the same journal. Did you notice the original paper's key methodological flaw?
+**Important Note!** Please also read pages 17–22 of [David Jackson's summary of the controversy this article stirred up](https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8772/2679/0){:target="_blank" ga-event-value="0.5"}, published eight years later in the same journal. Did you notice the original paper's key methodological flaw?
 

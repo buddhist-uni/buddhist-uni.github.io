@@ -11,6 +11,7 @@ tags:
   - renunciation
   - ambulit
 year: 2011
+base_value: 0.2
 status: featured
 ---
 

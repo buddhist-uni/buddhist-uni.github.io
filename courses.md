@@ -67,12 +67,26 @@ This site may use cookies to enhance your experience, but you can turn this off 
 
 Courses hosted on other websites.
 
+<script>
+function sendto(url, v) {
+  if (ga) {
+    let w = Math.floor(v);
+    ga('send','event','Outbound Link','click',url,(Math.random()<v-w)?Math.ceil(v):w,{
+     'transport': 'beacon',
+     'hitCallback': function(){
+       location.href=url;
+     }
+    });
+  } else { location.href=url; }
+}
+</script>
+
 ### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
-{:onclick="location.href='http://www.nettletibetan.ca/'" .courselink}
+{:onclick="sendto('http://www.nettletibetan.ca/',1)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='http://www.nettletibetan.ca/'" class="cicon"><i class="fas fa-tram"></i></div>
+    <div onclick="sendto('http://www.nettletibetan.ca/',1)" class="cicon"><i class="fas fa-tram"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
@@ -80,33 +94,33 @@ Courses hosted on other websites.
 
 
 ### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
-{:onclick="location.href='http://bschawaii.org/shindharmanet/course/'" .courselink}
+{:onclick="sendto('http://bschawaii.org/shindharmanet/course/',1.5)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='http://bschawaii.org/shindharmanet/course/'" class="cicon"><i class="fas fa-street-view"></i></div>
+    <div onclick="sendto('http://bschawaii.org/shindharmanet/course/',1.5)" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>
 </div>
 
 ### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}
-{:onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" .courselink}
+{:onclick="sendto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='https://youtube.com/playlist?list=PL848F2368C90DDC3D'" class="cicon"><i class="fas fa-baby"></i></div>
+    <div onclick="sendto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-baby"></i></div>
     <div class="cdesc">A stunning lecture series by <i class="fas fa-microphone-alt"></i> Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
 
 ### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3"}
-{:onclick="location.href='https://www.coursera.org/learn/modpo'" .courselink}
+{:onclick="sendto('https://www.coursera.org/learn/modpo',3)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="location.href='https://www.coursera.org/learn/modpo'" class="cicon"><i class="fas fa-feather-alt"></i></div>
+    <div onclick="sendto('https://www.coursera.org/learn/modpo',3)" class="cicon"><i class="fas fa-feather-alt"></i></div>
     <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of poetry, but how to read it.
     This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
@@ -117,26 +131,26 @@ Courses hosted on other websites.
 
 OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which have provided free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses since 2001. For OBU Students, I especially recommend checking out:
 
-- [The Challenge of World Poverty](https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/){:.f3}
+- [The Challenge of World Poverty](https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/){:.f3 ga-event-value="2"}
   - To understand the drivers, traps, and opportunities for global poverty with Nobel Laureates Abhijit Banerjee and Esther Duflo.
 {:.mb-2}
 
-- [An Introduction to Biology](https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/){:.f3}
+- [An Introduction to Biology](https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/){:.f3 ga-event-value="2"}
   - To learn about the principles and methods of the modern life sciences.
 {:.mb-2}
 
-- [Sexual and Gender Identities](https://ocw.mit.edu/courses/womens-and-gender-studies/wgs-110j-sexual-and-gender-identities-spring-2016/){:.f3}
+- [Sexual and Gender Identities](https://ocw.mit.edu/courses/womens-and-gender-studies/wgs-110j-sexual-and-gender-identities-spring-2016/){:.f3 ga-event-value="0.5"}
   - To learn the surprising history of gender in America.
 {:.mb-2}
 
-- [The Rise of Modern Science](https://ocw.mit.edu/courses/science-technology-and-society/sts-003-the-rise-of-modern-science-fall-2010/index.htm){:.f3}
+- [The Rise of Modern Science](https://ocw.mit.edu/courses/science-technology-and-society/sts-003-the-rise-of-modern-science-fall-2010/index.htm){:.f3 ga-event-value="0.5"}
   - To break down the ahistorical mythology of modern science by taking a closer look at its primary sources.
 {:.mb-2}
 
-- [Gender and Representation of Asian Women](https://ocw.mit.edu/courses/anthropology/21a-470j-gender-and-representation-of-asian-women-spring-2010/){:.f3}
+- [Gender and Representation of Asian Women](https://ocw.mit.edu/courses/anthropology/21a-470j-gender-and-representation-of-asian-women-spring-2010/){:.f3 ga-event-value="0.5"}
   - To recognize how politics shape our perceptions.
 {:.mb-2}
 
-- [Communicating Across Cultures](https://ocw.mit.edu/courses/global-languages/21g-019-communicating-across-cultures-spring-2005/index.htm){:.f3}
+- [Communicating Across Cultures](https://ocw.mit.edu/courses/global-languages/21g-019-communicating-across-cultures-spring-2005/index.htm){:.f3 ga-event-value="0.5"}
   - To probe the challenges of intercultural dialogue with theoretical frameworks and practical exercises.
 {:.mb-2}

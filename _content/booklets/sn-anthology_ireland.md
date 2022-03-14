@@ -16,6 +16,7 @@ year: 1981
 publisher: bps
 series: wheel-sn-anthology
 number: 107
+base_value: 1.8
 ---
 
 > The world is led by craving,  

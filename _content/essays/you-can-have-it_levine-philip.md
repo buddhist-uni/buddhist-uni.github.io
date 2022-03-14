@@ -13,6 +13,7 @@ tags:
   - time
   - livelihood
   - karma
+base_value: 0.25
 ---
 
 > I give you back 1948.  

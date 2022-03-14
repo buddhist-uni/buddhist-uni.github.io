@@ -9,6 +9,7 @@ formats: [MP4s]
 course: an
 year: 2016
 month: oct
+base_value: 1
 ---
 
 An ongoing series of lectures going sequentially through the Numerical Discourses.

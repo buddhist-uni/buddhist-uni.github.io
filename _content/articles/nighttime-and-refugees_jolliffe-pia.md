@@ -8,6 +8,7 @@ volume: 29
 number: 1
 journal: "The Journal of Refugee Studies"
 course: society
+base_value: 0.75
 tags:
   - refugees
   - thailand

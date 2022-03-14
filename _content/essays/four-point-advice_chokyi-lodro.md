@@ -12,6 +12,7 @@ tags:
   - tibetan
   - path
 subcat: poetry
+base_value: 0.2
 ---
 
 > This is the instruction for confusion dawning as wisdom.

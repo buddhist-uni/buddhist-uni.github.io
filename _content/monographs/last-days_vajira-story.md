@@ -14,6 +14,7 @@ tags:
   - indian
   - death
 status: featured
+base_value: 1
 ---
 
 A classic translation of [this (DN 16)](/content/canon/dn16) important and immersive tale from the Pāli Canon. 

@@ -13,6 +13,7 @@ course: lay
 tags:
   - west
 year: 1982
+base_value: 1.2
 publisher: bps
 series: wheel
 number: 294

@@ -12,6 +12,7 @@ tags:
   - form
   - academia
 status: featured
+base_value: 0.2
 year: 1995
 journal: jpts
 publisher: pts

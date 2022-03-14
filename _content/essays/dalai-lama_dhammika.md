@@ -7,6 +7,7 @@ year: 2011
 course: tibetan
 tags:
   - buddhism
+base_value: 0.2
 ---
 
 Who is he and why is he so famous?

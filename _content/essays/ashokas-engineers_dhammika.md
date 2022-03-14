@@ -11,6 +11,7 @@ tags:
   - indian
   - historiography
 year: 2010
+base_value: 0.2
 ---
 
 A word of appreciation for King Ashoka's builders.

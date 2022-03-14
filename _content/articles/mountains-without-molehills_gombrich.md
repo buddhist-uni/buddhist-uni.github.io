@@ -8,6 +8,7 @@ file_links:
   - "exclusive_01/Case%20of%20the%20Missing%20Stupa%20-%20Richard%20Gombrich.pdf"
 year: 1990
 journal: jpts
+base_value: 0.25
 volume: 15
 course: sects
 tags:

@@ -15,6 +15,7 @@ tags:
   - charisma
 year: 2012
 month: feb
+base_value: 1
 publisher: ias
 series: lexicon
 number: 1

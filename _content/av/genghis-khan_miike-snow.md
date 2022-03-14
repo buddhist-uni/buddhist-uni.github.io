@@ -10,6 +10,7 @@ tags:
   - lgbt
   - feeling
 subcat: music
+base_value: 0.25
 publisher: "Downtown Records"
 ---
 

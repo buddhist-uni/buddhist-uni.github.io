@@ -16,4 +16,4 @@ tags:
 course: modern
 ---
 
-The introduction to [*Gems of Buddhist Wisdom*](https://archive.org/details/gems-of-buddhist-wisdom/){:target="_blank"} shows how many Buddhist evangelists reacted to the challenge of the West, giving a modern "sales pitch" for their religion.
+The introduction to [*Gems of Buddhist Wisdom*](https://archive.org/details/gems-of-buddhist-wisdom/){:target="_blank" ga-event-value="1"} shows how many Buddhist evangelists reacted to the challenge of the West, giving a modern "sales pitch" for their religion.

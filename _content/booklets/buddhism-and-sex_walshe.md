@@ -14,6 +14,7 @@ course: ethics
 tags: 
   - lay
   - sex
+base_value: 1
 ---
 
 > The young people of today are not usually impressed by the wisdom of their elders.

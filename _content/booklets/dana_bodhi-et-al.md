@@ -17,6 +17,7 @@ tags:
   - dana
   - function
 year: 1990
+base_value: 1.8
 series: wheel
 number: 367
 publisher: bps

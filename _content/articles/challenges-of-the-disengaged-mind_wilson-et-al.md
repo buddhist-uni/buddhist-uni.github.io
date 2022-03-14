@@ -6,6 +6,7 @@ external_url: "https://science.sciencemag.org/content/345/6192/75"
 drive_links:
   - "https://drive.google.com/file/d/1L0wRAPy8Locfe79c0CKjLUbT1H2iUrJn/view?usp=drivesdk"
 course: meditation
+base_value: 0.2
 status: featured
 tags:
   - thought
