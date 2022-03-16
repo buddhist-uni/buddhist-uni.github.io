@@ -228,6 +228,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {:.mb-0}
 - What effect does Buddhism's encouragement to reflect on death and impermanence have on how Buddhists perceive the cosmos, life, and the religion itself?
 
+{% include content_blurb.html category="essays" slug="pure-land_bloom" %}
+- All these factors—increased deification, a concern over death and the decline of the sasana, etc—fueled the movement towards what we now call "Pure Land" Buddhism: a next-life focused practice still very popular in East Asia today.
+
 [CBT] M.73, V.33, M.56–57, M.49, M.91, M.67, M.99
 {:.mb-0}
 - Practitioners came to be encouraged to aspire to Buddhahood themselves and to take the Bodhisattva Path rather than to take the "lesser" path of the disciple so as to maximize the benefit that their enlightenment can have for others.

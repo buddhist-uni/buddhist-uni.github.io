@@ -18,7 +18,7 @@ tags:
   - philosophy
   - hermeneutics
   - cosmology
-  - pure-land
+  - pureland
   - orthodoxy
 ---
 
