@@ -77,8 +77,7 @@ A seamstress and a leaking boat: Why do you think the Buddha chose to compare cr
 
 Please read Bhante Analayo's essay on *taṇhā* now (if you haven't already) and the introduction to Part 2 of the Hecker book, along with its similes numbered **16 (The Wheel of Existence)** and **57 (Sensual Desire)**.
 
-Once you've digested all that, and think you're ready, take this lesson's quiz:
-
 ## Quiz
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDdT74cnB7pzOVyZiqU2p9I41xXJUVmpZBJ7NySkhhjz9ePQ/viewform?embedded=true" width="100%" height="{{ site.data.courses.quiz.height }}" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+Once you've digested all that, and think you're ready, take [**this lesson's quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfDdT74cnB7pzOVyZiqU2p9I41xXJUVmpZBJ7NySkhhjz9ePQ/viewform){:target="_blank"}
+

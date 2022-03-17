@@ -126,8 +126,16 @@ defaults:
         type: "courses"
     values:
         layout: "course"
+        custom_css: ["course"]
         section: "courses"
-  - 
+  -
+    scope:
+        path: "_courses/buddhism/"
+        type: "courses"
+    values:
+        slug: "course parts don't get slugs"
+        layout: "buddhismcoursepart" 
+  -
     scope:
         path: ""
         type: "authors"
@@ -172,6 +180,7 @@ defaults:
         layout: "content"
         base_value: 0.35
         section: "library"
+        custom_css: ["content-perma"]
         tags: []
   -
     scope:

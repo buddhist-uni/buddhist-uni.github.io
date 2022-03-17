@@ -1,0 +1,98 @@
+{% assign rawfile = nil %}
+{% if include.content.slug %}
+    {% assign record = include.content %}
+{% else %}
+    {% assign record = site.content | where: "category", "av" | find: "slug", include.content %}
+{% endif %}
+{% unless content_path contains record.slug %}
+  {% include content_path.liquid content=record %}
+{% endunless %}
+{% if record.file_links[0] and record.file_links[0] != "" %}
+    {% assign rawfile = site.data.content.filehost | append: record.file_links[0] %}
+    {% assign ext = rawfile | slice: -4,4 %}
+{% elsif record.external_url and external_url_supports_xorigin_embeds %}
+    {% comment %}
+        Currently I don't know of any sites hosting files that allow them to be embedded
+        If one comes up later, make sure their domain passes the above condition.
+    {% endcomment %}
+    {% assign ext = record.external_url | slice: -4,4 %}
+    {% if ext == ".mp3" or ext == ".m4a" or ext == ".mp4" or ext == ".ogg" or ext == ".aac" %}
+        {% assign rawfile = record.external_url %}
+    {% endif %}
+{% endif %}
+{% if record.external_url contains "youtu" %}{% unless record.external_url contains "list" %}
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('ytplayer-{{ record.slug }}', {
+      height: '390',
+      width: '100%',
+      videoId: '{{ record.external_url | ytid }}',
+      playerVars: {
+        'playsinline': 1,
+        'modestbranding': 1,
+        'enablejsapi': 1,
+        'widget_referrer': '{{ page.url | absolute_url }}'
+      },
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });}
+    var started = false;
+    function onPlayerStateChange(event) {
+        {%- if jekyll.environment == 'production' and site.google_analytics -%}
+        if (!started && event.data == YT.PlayerState.PLAYING) {
+            ga('send','event','Video','play','{{ content_path }}');
+            started = true;
+        }
+        if (event.data == YT.PlayerState.ENDED) {
+            ga('send','event','Video','finish','{{ content_path }}');
+        }
+        {%- else -%}
+        console.log(event.data);
+        {%- endif -%}
+    }
+</script>
+<div id="ytplayer-{{ record.slug }}"></div>
+{% endunless %}{% comment %}Now we have a YouTube Playlist :\{% endcomment %}
+{% elsif rawfile %}
+    {% assign tag = "audio" %}
+    {% assign mime = "audio/mpeg" %}
+    {% case ext %}
+        {% when ".m4a" %}{% assign mime = "audio/x-m4a" %}
+        {% when ".mp4" %}{% assign mime = "video/mp4" %}{% assign tag="video" %}
+        {% when ".ogg" %}{% assign mime = "audio/ogg" %}
+        {% when ".aac" %}{% assign mime = "audio/aac" %}
+    {% endcase %}
+<{{ tag }} controls
+    style="width: 98%; margin-left: 1%"
+    crossorigin="anonymous"
+    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}')"
+    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}')"
+>
+    <source src="{{ rawfile }}" type="{{ mime }}">
+    Your browser doesn't support playing this audio/video file inline.
+</{{ tag }}>
+{% elsif record.external_url contains "archive.org/details/" %}
+<iframe src="{{ record.external_url | replace: "/details/", "/embed/" }}" width="100%" height="29" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+{% elsif record.drive_links[0] %}
+<iframe id="gdrive-player-{{ record.slug }}"
+   frameborder="0"
+   width="100%"
+   style="margin:5px;max-width:350px"
+   height="155"
+   src="{{ record.drive_links[0] | replace: '/view?', '/preview?' }}">
+</iframe>
+{% elsif record.external_url %}
+<iframe id="{{ record.slug }}"
+   width="90%" height="400"
+   src="{{ record.external_url }}">
+</iframe>
+{% else %}
+<p><strong>Sorry.  This movie is unavailable.</strong></p>
+{% endif %}
+

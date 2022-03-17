@@ -1,5 +1,4 @@
-{%- assign len = include.content.path | size | minus: 12 -%}
-{%- assign content_path = include.content.path | slice: 9, len -%}
+{% include content_path.liquid content=include.content %}
 <div class="content_links">
     {% assign value = include.content.base_value %}{% if include.content.status=="featured" %}{% assign value = value | times: site.data.ga.featured_value_multiplier %}{% endif %}
      {% if include.content.external_url %}

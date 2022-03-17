@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<script>
-if (window.parent !== window) { // ask to break out of self-iframe
-    window.parent.postMessage({please: "navto", url: window.location.href}, "{{ site.url }}");
-}
-</script>
 {%- assign cslug = page.path | split: '/' -%}
 {%- assign cslug = cslug[1] -%}
 {%- assign course = site.courses | find: "slug", cslug -%}
@@ -19,26 +14,21 @@ if (window.parent !== window) { // ask to break out of self-iframe
 
   <header class="post-header">
     <h1 class="post-title"><i class="{{ course.icon }}"></i> {{ page.title | escape }}</h1>
-    {% capture partn %}part {{ page.order }} of <a href="{{ course.url }}">a course</a>{% endcapture %}
-    <i>{{ course.part_header | replace: "part of a course", partn}}</i>
+    {% capture partn %} {{ page.order }} of {% endcapture %}
+    <i>{{ course.part_header | replace: " # of ", partn}}</i>
+    <select onchange="window.location.href=this.value;" id="course-parts-nav" style="max-width: 100%" name="part" form="hidden">
+        <option disabled selected hidden><i>Jump to section...</i></option>
+        <option value="{{ course.url }}">Course home</option>
+        {% for sub in subcourses %}<option {% if sub.url == page.url %}disabled {% endif %}value="{{ sub.url }}">{{ sub.order}}: {{ sub.title }}</option>{% endfor %}
+    </select>
   </header>
   
   {{ content }}
   
   {%- if next -%}
-    <div class="continuecourse"><a href="{{ next.url }}">Continue to part {{ next.order }}, <i>{{ next.title }}</i></a><br><br><a href="{% if prev %}{{ prev.url }}{% else %}{{ course.url }}{% endif %}">...or go back to {% if prev %}part {{ prev.order }}{% else %}the course homepage{% endif %}</a></div>
+    <div class="continuecourse"><a href="{{ next.url }}">Continue to Part {{ next.order }}, <i>{{ next.title }}</i></a><br><br><a href="{% if prev %}{{ prev.url }}{% else %}{{ course.url }}{% endif %}">...or go back to {% if prev %}part {{ prev.order }}{% else %}the course homepage{% endif %}</a></div>
   {%- else -%}
     {% include course_footer.html course=course %}
   {%- endif -%}
 </article>
-<script>
-if (window.parent === window && document.getElementsByTagName("iframe").length > 0) {
-    // if has iframe, listen for an incoming message requesting a nav
-    window.addEventListener("message", function(event) {
-        if (event.origin == "{{ site.url }}" && event.data.please == "navto") {
-            window.location.href = event.data.url;
-        }
-    }, false); // not capturing
-}
-</script>
 

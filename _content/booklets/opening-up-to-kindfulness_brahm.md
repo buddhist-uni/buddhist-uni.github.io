@@ -5,9 +5,9 @@ authors:
 external_url: "https://wiswo.org/books/outk/"
 drive_links:
   - "https://drive.google.com/file/d/1xiSUQ2i3InzLpSne604ZMT9qna-Ngyw9/view?usp=drivesdk"
-course: karma
+course: buddhism
 tags:
-  - buddhism
+  - karma
   - path
   - problems
   - brahmavihara
