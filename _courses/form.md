@@ -376,6 +376,10 @@ While not representative of the diversity within each of the following "national
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
+{% include content_blurb.html category="essays" slug="honen-waka-verse" %}
+- Many Pureland Buddhists have as their primary practice chanting the "nembutsu" of "Namu Amida Butsu" ("homage to Amitabha Buddha") in the hopes of being reborn in his Pure Land. 
+- Here we read twenty famous verses by Hōnen that reflect the depths of this practice.
+
 [CBT] M.27, M.102
 {:.mb-0}
 - Japanese Buddhists are famous for their patient austerity.
