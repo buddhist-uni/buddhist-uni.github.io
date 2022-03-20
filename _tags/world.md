@@ -17,4 +17,4 @@ image_center_x: 18%
 footer_info: <a href="https://www.metmuseum.org/art/collection/search/37240">The Met</a>, <a href="https://www.metmuseum.org/about-the-met/policies-and-documents/open-access">Public Domain</a>
 ---
 
-The Physical Universe. Earth.
+Earth and the primates reshaping it.
