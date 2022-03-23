@@ -31,7 +31,7 @@ The Open Buddhist University organizes [content from across the Web]({% link lib
 ## About Our Courses
 
 We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism.  
-**Note:** None of our courses offer certificates or degrees at this time.
+**Note:** None of our courses offer degrees or certificates.
 
 ### Icon Key
 
