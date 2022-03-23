@@ -1,5 +1,5 @@
 ---
-title: "Jesus and the Buddha: A Study of their Commonalities and Contrasts"
+title: "Jesus and the Buddha Compared"
 authors:
   - dhammika
 external_url: "http://budblooms.org/2020/05/28/jesus-and-the-buddha/"
@@ -13,6 +13,5 @@ olid: OL37762572M
 ---
 
 > My goal is to be honest; looking at the similarities, the differences 
-and the contradictions too. And I respect Jesus and the Buddha enough 
-to let them speak for themselves, that is, their words as presented in their 
-respective sacred scriptures. 
+and the contradictions too. I respect Jesus and the Buddha enough 
+to let them speak for themselves

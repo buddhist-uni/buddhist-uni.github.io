@@ -5,7 +5,7 @@ drive_links:
   - "https://drive.google.com/file/d/16oRuGWBBybfogWqPW7ziMeuXlcWIKo27/view?usp=drivesdk"
 external_url: "https://journal.fi/store/article/view/52400/16250"
 tags:
-  - animals
+  - animalia
   - nature
   - setting
 course: bees
