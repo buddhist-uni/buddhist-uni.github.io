@@ -2,7 +2,8 @@
 title: "Just Think: The challenges of the disengaged mind"
 authors:
   - "Timothy D. Wilson and others"
-external_url: "https://science.sciencemag.org/content/345/6192/75"
+external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/"
+source_url: "https://science.sciencemag.org/content/345/6192/75"
 drive_links:
   - "https://drive.google.com/file/d/1L0wRAPy8Locfe79c0CKjLUbT1H2iUrJn/view?usp=drivesdk"
 course: meditation
