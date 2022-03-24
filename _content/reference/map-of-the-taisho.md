@@ -2,7 +2,7 @@
 title: "Map of the Taisho"
 formats: [pdf]
 year: 2015
-external_url: "https://terebess.hu/zen/szoto/Map-of-the-Taisho.pdf"
+external_url: "http://terebess.hu/zen/szoto/Map-of-the-Taisho.pdf"
 drive_links: ["https://drive.google.com/file/d/1rL9Z_W8vcccsbEdlX_rCvyJKc_mK_4Fs/view?usp=drivesdk"]
 course: mahayana
 status: featured
