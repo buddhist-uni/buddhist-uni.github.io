@@ -8,12 +8,17 @@
             "type": "image/png"
         },
         {
+            "src": "/assets/ms-icon-310x310.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        },
+        {
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#c69c6c",
-    "background_color": "#ffffff",
+    "theme_color": "#5e2417",
+    "background_color": "#fdfdfd",
     "display": "standalone"
 }

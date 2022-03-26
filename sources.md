@@ -23,7 +23,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/)
 * [BuddhaDust](http://buddhadust.net)
   - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
-* [PhotoDharma.net](https://www.photodharma.net/Books/Books.htm)
 
 ## Monasteries and Traditions
 
@@ -34,6 +33,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Bodhi Monastery](https://bodhimonastery.org/religion/audios)
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)
+* [The Karma Kagyu](https://dharmaebooks.org/)
 
 ## Digital Libraries
 
@@ -45,10 +45,14 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Dharma Seed](https://dharmaseed.org/talks)
 * [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)
+* [Bhikkhu Anandajoti's Dharma Records](http://dharma-records.buddhasasana.net/)
+  * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
+  * [Dharma Documentaries](https://dharma-documentaries.net)
+  * [PhotoDharma](https://www.photodharma.net/Books/Books.htm)
+  * [Buddhasasana.net](http://www.buddhasasana.net/)
 * [DhammaWiki](https://dhammawiki.com/index.php/Main_Page)
-* [Dharma Documentaries](https://dharma-documentaries.net)
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
-* [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
+* [Study Buddhism](https://studybuddhism.com/)
 * [Abhidhamma.com](http://abhidhamma.com/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
