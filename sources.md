@@ -55,6 +55,8 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Study Buddhism](https://studybuddhism.com/)
 * [Abhidhamma.com](http://abhidhamma.com/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
+* [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)
+* [The Directory of Open Access Books](https://directory.doabooks.org/)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [Archive.org](https://archive.org/search.php?query=dhamma%20OR%20buddhism%20OR%20buddhist)
 
@@ -77,3 +79,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [84000.co](https://84000.co/)
 * [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
+* [Pressbooks](https://pressbooks.directory/)
+* [OpenStax](https://openstax.org/subjects)
+* [punctum books](https://punctumbooks.com/)
