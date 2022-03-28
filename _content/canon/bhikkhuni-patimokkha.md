@@ -1,12 +1,13 @@
 ---
 title: "The _Bhikkhuni Pātimokkha_"
-course: vinaya-pitaka
+course: monastic-advice
 slug: "pli-tv-bi-pm"
 status: featured
 tags:
   - monastic
   - bhikkhuni
   - pali-canon
+  - vinaya-pitaka
   - vinaya-studies
   - memorizing-the-patimokkha
 year: 2019
