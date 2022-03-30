@@ -16,4 +16,4 @@ publisher: wisdom
 
 A conversation on the central role of meditation in Buddhism.
 
-While I disagree with Bhante G's dismissal of mantras and labeling as techniques, his teachings on the *theory* of mindfulness are always worth a listen.
+While I disagree with Bhante G's dismissal of mantras and labeling as techniques, his teachings on the theory of mindfulness are always worth a listen.
