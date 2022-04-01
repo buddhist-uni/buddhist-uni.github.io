@@ -9,8 +9,10 @@ base_value: 0.25
 subcat: poetry
 tags:
   - ethics
-  - problems
+  - cosmology
 ---
 
 > By thinking of all sentient beings  
 As more precious than a wish-fulfilling jewel...
+
+For a commentary on these verses, see [Finding Genuine Practice](/content/booklets/finding-genuine-practice_karmapa).
