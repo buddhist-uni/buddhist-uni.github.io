@@ -97,6 +97,9 @@ the history of the texts you're studying:
 {% include content_blurb.html category="articles" slug="oral-transmission_wynne" %}
 - Argues against an improvisational oral transmission and shows why we should think of the texts as having been passed down to us (relatively) verbatim
 
+{% include content_blurb.html category="booklets" slug="footprints-in-the-dust_dhammika" %}
+- A down-to-earth biography of the Buddha based on the Pāḷi texts.
+
 ### Lectures
 
 {% include content_blurb.html category="av" slug="in-the-buddhas-words_bodhi" %}
