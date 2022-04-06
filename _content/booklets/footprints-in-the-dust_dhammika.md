@@ -2,8 +2,9 @@
 title: "Footprints in the Dust: The Life of the Buddha from the Most Ancient Sources"
 authors:
   - dhammika
+external_url: "https://budblooms.org/2022/04/05/footprints-in-the-dust-the-life-of-the-buddha-from-the-most-ancient-sources/"
 drive_links:
-  - "https://drive.google.com/file/d/1CNYHLIxVC4eI-Tz8T1l7xeY5ApzoYCBR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DU13c7uVflTBOTVe_7PS7y65zr6KDzNJ/view?usp=drivesdk"
 course: ebts
 tags:
   - buddha
