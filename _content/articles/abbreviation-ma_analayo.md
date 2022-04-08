@@ -2,7 +2,7 @@
 title: "Abbreviation in the *Madhyama-āgama*"
 authors:
   - analayo
-external_url: "https://www.academia.edu/46901673/Abbreviation_in_the_Madhyama_%C4%81gama" # TODO replace with a better link when Bhante posts it to buddhistunquiry
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/abbreviationma.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1T8yL7F7Xp6EXXektwI7a7XvADxviuqMa/view?usp=drivesdk"
 course: ma
