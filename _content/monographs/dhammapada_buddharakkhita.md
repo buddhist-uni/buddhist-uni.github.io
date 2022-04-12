@@ -17,7 +17,6 @@ tags:
   - ebts
   - philosophy
   - function
-  - buddhism
 year: 1959
 publisher: bps
 ---
