@@ -15,11 +15,12 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% capture thisyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
 {% assign lastyear = thisyear | minus: 1 %}
 <h2>Table of Contents</h2><ul id="toc">
-  <li><a href="#latest">Latest Arrivals</a></li>
+  {% if site.show_timestamps %}<li><a href="#latest">Latest Arrivals</a></li>{% endif %}
   <li><a href="#recent">Recently Published</a></li>
   <li><a href="#bestof">Featured Content</a></li>
 </ul>
 
+{% if site.show_timestamps %}
 <h2 id="latest">Latest Arrivals</h2>
 <p>Just added to the library:</p>
 {% assign newc = allcontent | sort: "date" | reverse | slice: 0, 20 %}
@@ -27,6 +28,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <div class="mb-3">{% include simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
 {% endfor %}
 <p>...  For the complete list, and to be informed about new arrivals, subscribe to <a href="/feed/content.xml">the content RSS Feed</a>.</p>
+{% endif %}
 
 {% assign allcontent = allcontent | where_exp: "c", "c.course" %}
 {% assign thisyears = allcontent | where: "year", thisyear %}
