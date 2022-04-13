@@ -456,6 +456,9 @@ While not representative of the diversity within each of the following "national
 {% include content_blurb.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
 - A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
 
+{% include content_blurb.html category="av" slug="zen-on-meditation_fischer-norman" %}
+- A Zen priest from California introduces us to his community and way of practice.
+
 {% include content_blurb.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
 - As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
