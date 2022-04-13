@@ -58,6 +58,7 @@ show_excerpts: true
 ## Feature Flags
 show_similars: true
 show_bibtex: true
+show_timestamps: false
 
 # Exclude from processing.
 exclude:
@@ -69,6 +70,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - scripts/
+  - .github/
 
 permalink: pretty
 

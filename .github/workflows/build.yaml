@@ -12,6 +12,9 @@ jobs:
            uses: actions/checkout@v2
            with:
              fetch-depth: 0
+         - run: |
+            cd $GITHUB_WORKSPACE
+            git log
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.2
          - name: Restore Previous Gemfiles
