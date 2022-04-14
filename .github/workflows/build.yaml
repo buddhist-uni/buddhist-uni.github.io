@@ -12,9 +12,11 @@ jobs:
            uses: actions/checkout@v2
            with:
              fetch-depth: 0
-         - run: |
+         - name: git log
+           run: |
             cd $GITHUB_WORKSPACE
-            git log
+            date --date="@$(git log -n 1 --format=%ct -- about.md)"
+            git --git-dir=.git log --name-only --date=unix --pretty=%%these-files-modified-at:%ct -n 6
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.2
          - name: Restore Previous Gemfiles
@@ -25,7 +27,7 @@ jobs:
              restore-keys: |
                 ${{ runner.os }}-vendor-00-
          - name: Install Jekyll and Build the Site
-           uses: helaili/jekyll-action@2.2
+           uses: helaili/jekyll-action@v2.3
            with:
              token: ${{ secrets.BUILD_ACTION_TOKEN }}
              target_branch: prod
