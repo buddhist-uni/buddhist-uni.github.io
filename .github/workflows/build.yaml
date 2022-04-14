@@ -12,9 +12,12 @@ jobs:
            uses: actions/checkout@v2
            with:
              fetch-depth: 0
+         - name: Test git log
+           run: |
+             git log --name-only -n 4
          - name: Normalize Unicode in the Previous Commit
-           uses: buddhist-uni/normalized-unicode-action@v0.2
-         - name: Install Ruby
+           uses: buddhist-uni/normalized-unicode-action@v0.2.1
+         - name: Install build requirements
            uses: ruby/setup-ruby@v1
            with:
              ruby-version: 2.6
@@ -26,7 +29,6 @@ jobs:
             cd $GITHUB_WORKSPACE
             HASH="$(git log -n 1 --format=%H)"
             echo "Building $HASH into $BUILD_DIR ..."
-            bundle install
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR
             cd $BUILD_DIR
             touch .nojekyll
@@ -34,5 +36,5 @@ jobs:
             git config user.name "OBU Build Bot"
             git config user.email "buddhist-uni@users.noreply.github.com"
             git add .
-            git commit -m "Automated GitHub build from ${HASH}"
+            git commit -m "Automated GitHub build from ${HASH}" --quiet
             git push --force "https://buddhist-uni:${{ secrets.BUILD_ACTION_TOKEN }}@github.com/buddhist-uni/buddhist-uni.github.io.git" temp:prod
