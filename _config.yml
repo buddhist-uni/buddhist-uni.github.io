@@ -58,7 +58,7 @@ show_excerpts: true
 ## Feature Flags
 show_similars: true
 show_bibtex: true
-show_timestamps: false
+show_timestamps: true
 
 # Exclude from processing.
 exclude:
