@@ -16,6 +16,7 @@ tags:
   - agama
   - chan-roots
   - chinese
+  - chinese-language
 next_courses:
   - tranquility-and-insight
 next_course_descs:
@@ -34,11 +35,13 @@ But, just as translating the Buddha's words into Chinese enriched Chinese societ
 
 This course teaches you how to read Buddhist texts in Chinese.
 
-Note that this course is still a work in progress by its author, John Kieschnick.  The copy presented here is up-to-date as of December 2020, but you should check out [Professor Kieschnick's original webpage](https://religiousstudies.stanford.edu/people/john-kieschnick/primer-chinese-buddhist-writings) to be sure you get the latest materials.
+Note that this course is still a work in progress by its author, John Kieschnick.  The copy presented here is up-to-date as of December 2020, but you should check out [Professor Kieschnick's original webpage](https://religiousstudies.stanford.edu/people/john-kieschnick/primer-chinese-buddhist-writings){ga-event-value="1"} to be sure you get the latest materials.
 
 ### Prerequisites
 
 While this course is primarily intended for English speakers with prior knowledge of Mandarin, it is designed to be (with the help of supplemental materials listed below) accessible to any student [with time and courage](http://www.pinyin.info/readings/texts/moser.html){:target="_blank" ga-event-value="0.35"}.
+
+For a quick introduction to how Indian Buddhist Texts were translated into Chinese, see: {% include inline_content.html category="papers" slug="translation-transcription-and-what-else_funayama-toru" %}
 
 ## Textbooks
 
