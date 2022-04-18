@@ -7,6 +7,9 @@ toc:
   - ['what-is', 'What is Buddhism?']
   - ['we-will', 'Course Results']
   - ['prereqs', 'Prerequisites']
+lecturers:
+  - bodhi
+  - others
 next_link: /courses/buddhism/frontmatter
 google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 

@@ -32,7 +32,7 @@ One of the hallmarks of Buddhism as a religion is that the Buddha emphatically r
 
 ## Further Reading
 
-{% include content_blurb.html category="booklets" slug="age-of-science_htoon-u-chan" blurb="
+{% include content_blurb.html category="booklets" slug="buddhism-and-the-age-of-science_u-chan-htoon" blurb="
 A classic introduction to the Buddhist worldview, especially vis-a-vis science and monotheism, by the author of Burma's first constitution.
 " %}
 
