@@ -1,0 +1,13 @@
+---
+layout: coursepart
+---
+{% assign pslug = page.path | split: "/" | last | split: "." | first %}
+
+<figure>
+  <figcaption><p class="description">{{ page.description }}</p></figcaption>
+  <img style="max-width:min(640px,100%);max-height:640px;" src="{{ page.image }}">
+  <figcaption><p class="attribution">Photo by {{ page.image_info }}</p></figcaption>
+</figure>
+
+{{ content }}
+

@@ -27,5 +27,6 @@ The fire of passion being “extinguished” gives us the term “*Nibbāna (nir
 
 ## Quiz
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0ngZFiv23Tknhwxqot8M5C7qJvZ2hs0nKuErpLnk4DzKy_A/viewform?embedded=true" width="100%" height="{{ site.data.courses.quiz.height }}" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form…</iframe>
+After each lesson we'll include a few reflection questions to test your comprehension of the lesson's material.  You can find [this lesson's quiz on Google Forms **here**](https://docs.google.com/forms/d/e/1FAIpQLSf0ngZFiv23Tknhwxqot8M5C7qJvZ2hs0nKuErpLnk4DzKy_A/viewform){:target="_blank"}
+
 

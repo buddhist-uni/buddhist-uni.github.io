@@ -10,7 +10,7 @@ A "part 11" (from 2010--2015) covering the suttas not covered in the first 10 se
 And after thirteen years (!) of lecturing on the Majjhima Nikāya, Bhikkhu Bodhi decided to continue his sutta study classes by going through the Aṅguttara Nikāya: a series which is still on-going today.  You can follow that course [on YouTube here](https://youtube.com/playlist?list=PLgu0hJSLkqCWjjvc-lIKVn6CAUK95TbV4){:target="_blank"}.
 
 Many thanks to [the eagle-eyed Redditor](https://www.reddit.com/r/Buddhism/comments/qp8jix/the_open_buddhist_university/hjw904a/?context=3){:target="_blank"} who pointed these links out to me and to everyone else who gave feedback on the website recently.
-The new, [bolder color scheme](/assets/apple-touch-icon.png) unveiled this month was also based on your suggestions, so thank you all again and please keep them coming!
+The new, [bolder color scheme](/assets/imgs/apple-touch-icon.png) unveiled this month was also based on your suggestions, so thank you all again and please keep them coming!
 
 As always, you can find me [over at SuttaCentral](https://discourse.suttacentral.net/?u=khemarato.bhikkhu)... where occasionally the content is as good as any you'll find in a prestigious journal:
 

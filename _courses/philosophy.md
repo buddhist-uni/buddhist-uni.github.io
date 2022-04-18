@@ -8,7 +8,7 @@ icon: "fas fa-chess-queen"
 image: "https://illeakyw.sirv.com/Images/banners/Odilon_Redon.jpeg"
 sirv_options: "saturation=1"
 image_width: 802
-image_center_y: 12%
+image_center_y: 36%
 image_center_x: 39%
 big_image: https://upload.wikimedia.org/wikipedia/commons/9/94/Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg">Odilon Redon</a>
@@ -82,7 +82,7 @@ Please read the suttas and other readings on your own “before class” and spe
 
 You may want to keep a copy of the assigned suttas in front of you while listening to the lectures, so that you can refer back to them and take notes as inspiration strikes, keeping in mind that the recordings (unlike live lectures!) can easily be paused.
 
-In addition to the suttas, this course assigns four short books in weeks 2, 4, 7, 8 and 9: [The Four Noble Truths]({% link _content/booklets/the-four-noble-truths_sumedho.md %}), [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Inspiring Dhamma]({% link _content/booklets/inspiring-dhamma_suchart.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
+In addition to the suttas, this course assigns four short books in weeks 4, 7, 8 and 9: [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Inspiring Dhamma]({% link _content/booklets/inspiring-dhamma_suchart.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
 
 
 ## The Course
@@ -149,9 +149,6 @@ The very core of Buddhist Philosophy, this week we introduce the Buddha’s diag
 
 {% include content_blurb.html category="canon" slug="mn141" %}
 - The Venerable Sariputta gives a detailed analysis of the Four Noble Truths.
-
-{% include content_blurb.html category="booklets" slug="the-four-noble-truths_sumedho" %}
-- The Venerable Sumedho gives a detailed analysis of the Four Noble Truths.
 
 {% include content_blurb.html category="canon" slug="mn63" %}
 - A Bhikkhu threatens to leave the Order unless the Buddha answers his metaphysical questions. With the simile of a man struck by a poisoned arrow, the Buddha makes plain exactly what he does and does not teach in this sutta mentioned in Bhikkhu Bodhi’s talk below.

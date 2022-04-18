@@ -244,7 +244,6 @@ exclude:
     - _content/booklets/faith-in-mind_sheng-yen.md
     - _content/booklets/how-to-fight_tnh.md
     - _content/booklets/kammatthana_mahabua.md
-    - _content/booklets/meditations-4_geoff.md
     - _content/booklets/power_may-todd.md
     - _content/booklets/releasing-life_powell-stephen.md
     - _content/booklets/small-boat-great-mountain_amaro.md
@@ -462,7 +461,6 @@ exclude:
     - _content/av/tune-yards-water-fountain_song-exploder.md
     - _content/av/waxahatchee-fire_song-exploder.md
     - _content/monographs/early-buddhist-theory-of-knowledge_jayatilleke.md
-    - _content/booklets/opening-up-to-kindfulness_brahm.md
     - _content/av/knowing-body-moving-mind_campbell-patricia.md
     - _content/av/travels-in-the-netherworld_cuevas-bryan.md
     - _content/av/anarchy-in-the-pureland_ritzinger-justin.md
@@ -582,4 +580,12 @@ exclude:
     - _content/monographs/museum-of-nonhumanity_gustofsson-haapoja.md
     - _content/canon/sn48.40.md
     - _content/av/culture-in-change.md
+    - _content/monographs/stumbling-on-happiness_gilbert-daniel.md
+    - _content/monographs/early-india_thapar-romila.md
+    - _content/av/buddhist-ethics_garfield-jay.md
+    - _content/av/editing-room_ozeki-ruth.md
+    - _content/booklets/like-milk-and-water-mixed_dhammika.md
+    - _content/booklets/message-in-samsara_ottama-ashin.md
+    - _content/articles/bodhisattva-precepts-and-their-compatability-with-vinaya_chiu-tzulung.md
+    - _content/booklets/relevance-of-buddhist-philosophy_jayatilleke.md
 

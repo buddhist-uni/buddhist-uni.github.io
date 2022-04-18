@@ -8,6 +8,24 @@
 // Primer CSS v15.2.0
 // Custom Build, including only a subset of Primer's features
 
+// Heading sizes - mobile
+// h4-h6 remain the same size on both mobile & desktop
+$h00-size-mobile: 40px;
+$h0-size-mobile: 36px;
+$h1-size-mobile: 28px;
+$h2-size-mobile: 24px;
+$h3-size-mobile: 22px;
+
+// Heading sizes - desktop
+$h00-size: 48px;
+$h0-size: 44px;
+$h1-size: 36px;
+$h2-size: 26px;
+$h3-size: 22px;
+$h4-size: 20px;
+$h5-size: 18px;
+$h6-size: 16px;
+
 // Core Definitions
 @import "@primer/css/support/index.scss";
 @import "@primer/css/base/index.scss";
@@ -20,17 +38,27 @@
 @import "@primer/css/dropdown/dropdown.scss";
 @import "@primer/css/toasts/toasts.scss";
 
-// My Bug fixes go here, after the Components they're fixing
+// Utilities should be imported after Components
+@import "@primer/css/utilities/margin.scss";
+@import "@primer/css/utilities/details.scss";
+@import "@primer/css/utilities/typography.scss";
+
+// My fixes go here, after the Components they're fixing
 .input-lg { height: 36px; line-height: 24px; min-width: 48px; }
 .btn { border-color: rgba(27, 31, 35, 0.5); }
 .Toast { margin: 20px 4px; }
 .Toast-icon { max-width: 6%; }
+.Toast-content {
+    h3 {
+        padding-top: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
 
 // My own custom Primer Components go here
 @import "support.scss";
 @import "custom-components.scss";
 
-// Any utilities I want should be imported last
-@import "@primer/css/utilities/margin.scss";
-@import "@primer/css/utilities/details.scss";
-@import "@primer/css/utilities/typography.scss";
+
