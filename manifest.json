@@ -2,13 +2,13 @@
  "name": "App",
  "icons": [
   {
-   "src": "\/assets\/ms-icon-70x70.png",
+   "src": "\/assets\/imgs\/ms-icon-70x70.png",
    "sizes": "70x70",
    "type": "image\/png",
    "density": "1.5"
   },
   {
-   "src": "\/assets\/ms-icon-144x144.png",
+   "src": "\/assets\/imgs\/ms-icon-144x144.png",
    "sizes": "144x144",
    "type": "image\/png",
    "density": "3.0"

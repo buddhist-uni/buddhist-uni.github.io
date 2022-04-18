@@ -10,10 +10,10 @@ series: wheel
 number: 308
 address: Kandy
 base_value: 2.3
-course: path
+course: buddhism
 status: featured
 tags: 
-  - buddhism
+  - path
   - function
   - meditation
   - theravada

@@ -1,7 +1,8 @@
 ---
 title: "Habits Towards Nibbāna"
 authors: [santussika]
-external_url: "http://www.karunabv.org/uploads/1/2/6/3/12630738/bia_habits_towards_nibbana.mp3"
+source_url: "http://www.karunabv.org/uploads/1/2/6/3/12630738/bia_habits_towards_nibbana.mp3"
+external_url: "https://dharmaseed.org/talks/player/66748.html"
 formats: [mp3]
 year: 2013
 month: sep

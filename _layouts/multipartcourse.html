@@ -7,24 +7,17 @@ layout: default
 
   <header class="post-header {% if page.banner_info %} overlay-into-banner{% endif %}">
     <h1 class="post-title">{% unless page.banner_info %}<i class="{{ page.icon }}"></i> {% endunless %}{{ page.title | escape }}</h1>
-    <h2 class="post-subtitle">An Online Course</h2>
+    <h2 class="post-subtitle">{{ page.subtitle | default: "An Online Course" }}</h2>
   </header>
   {% if page.epigraph %}
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
   {% endif %}
   <h1>Table of Contents</h1> 
   <ul id="toc">
-    <li><a href="#what-is">What is {{ page.title }}?</a></li>
-    <li><a href="#we-will">In this course, you will...</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    {% if page.lecturers %}<li><a href="#lectures">Lectures</a></li>{% endif %}
-    <li><a href="#outline">Course Outline</a></li>
+    {% for l in page.toc %}<li><a href="#{{ l[0] }}">{{ l[1] }}</a></li>{% endfor %}
   </ul>
   <div class="post-content">
     {{ content }}
-    <h2 id="outline">Course Outline</h2>
-    <p>This course has {{ subcourses | size }} modules, which will proceed as follows:</p>
-    <ol>{% for s in subcourses %}<li><a href="{{ s.url }}">{{ s.title }}</a></li>{% endfor %}</ol>
   </div>
   
   {% assign next = subcourses | first %}

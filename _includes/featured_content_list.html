@@ -7,7 +7,7 @@
 <div class="featured_content_list"><ul>
   {% for c in sorted %}
     <li>
-      {% if c.olid %}<a href="{{ c.url }}"><img src="http://covers.openlibrary.org/b/olid/{{ c.olid }}-L.jpg" alt="{{ c.title }}"></a>{% else %}
+      {% if c.olid %}<div class="ol-cover"><a href="{{ c.url }}">{{ c.title | markdownify | strip_html }}<img src="http://covers.openlibrary.org/b/olid/{{ c.olid }}-L.jpg" alt="{{ c.title }}"></a></div>{% else %}
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>{% endif %}
       <div class="star_label">{% include calculatestars.dat content=c %}{% unless stars == 3 %}<span class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</span>{% endunless %}</div>
       {% unless c.olid %}{% assign supex = false %}{% if c.external_url contains 'youtu' %}{% unless c.external_url contains "list" %}

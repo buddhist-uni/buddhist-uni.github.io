@@ -379,7 +379,7 @@ div.with_border {
 }
 
 .content_box .content_box_desc {
-    margin: 1px 1.2em;
+    margin: 1px 1.2em 11px;
 }
 
 .content_box div.content_box_desc p,blockquote:last-child {
@@ -416,65 +416,6 @@ div.author-list ul.author-sublist {
 .catcounts {
     font-size: 12px;
     padding: 0px 25px;
-}
-
-.epigraph {
-    margin: 20px auto 32px;
-    text-align: center;
-    width: fit-content;
-    max-width: 25em;
-}
-
-.epigraph blockquote {
-    padding: $spacing-unit/2 $spacing-unit;
-    border: 4px solid $grey-color-light;
-    width: auto;
-}
-
-.course-subtitle {
-    margin-left: 53px;
-    color: $grey-color;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 5px;
-}
-
-article.course ul li {
-    list-style: "∙ ";
-}
-
-.continuecourse {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-    padding: 3px 80px;
-    text-align: center;
-    a:first-child {
-        font-size: 120%;
-    }
-}
-
-.Toast-content {
-    h3 {
-        padding-top: 0;
-    }
-    p:last-child {
-        margin-bottom: 0;
-    }
-}
-
-div.nextcoursedesc {
-    margin: 2px 16px 16px;
-}
-
-a.nextcourselink {
-    font-family: $base-font-family;
-    font-size: 110%;
-}
-
-a.nextcourselink strong {
-    font-weight: 400;
-    margin-left: 0.2em;
 }
 
 article.home { // Blog
@@ -522,21 +463,6 @@ header.post-header h3.translator {
     font-style: italic;
 }
 
-article.course {
-    padding-top: 15px;
-    div.frontmatter {
-        font-size: 85%;
-        padding: 40px 6px 20px;
-    }
-    h2#further-reading {
-        margin-bottom: -6px;
-    }
-}
-
-article.course .post-header p {
-    margin-bottom: 0px;
-}
-
 %overlay-into-banner {
     text-shadow: $banner-shadow;
     color: white;
@@ -559,75 +485,6 @@ h1.overlay-into-banner {
     width: 100%;
     padding-left: 20%;
     padding-right: 20%;
-}
-
-// /tags/ page
-.tag-list1 img {
-    width: 100%;
-    overflow: hidden;
-    background-color: $banner-color;
-}
-.tagbox1 {
-    font-size: 140%;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 10px 1px;
-    img {
-        height: 125px;
-        object-fit: none;
-    }
-}
-.tag-list1 .children1 {
-    display: flex;
-    padding-bottom: 10px;
-    place-content: space-between;
-    @include media-query($on-palm) {
-        font-size: 90%;
-    }
-    @include media-query(319px) {
-        font-size: 70%;
-    }
-}
-div.tag-list2 {
-    padding: 6px 3px;
-    width: 34%;
-    img {
-        height: 125px;
-        object-fit: cover;
-    }
-}
-.tagbox2 {
-    font-size: 120%;
-    border: 1px solid darkgray;
-}
-.tagbox2,.tag-list3 {
-    border-radius: 10px;
-    padding: 7px 7px 1px;
-}
-.tag-list3 {
-    font-size: 105%;
-    border: 1px solid lightgray;
-    margin: 5px;
-}
-.children3 {
-    margin-left: 7px;
-    @include media-query(400px) {
-        margin-left: 1px;
-    }
-}
-.tagbox4,.tagbox5 {
-    margin: 10px 1px 10px 10px;
-    @include media-query(400px) {
-        margin: 9px 1px;
-    }
-
-}
-.children4 {
-    margin-left: 12px;
-    @include media-query(400px) {
-        margin-left: 3px;
-    }
-
 }
 
 article.tag .tag_desc {
@@ -657,123 +514,14 @@ article.tag .subtopics {
     margin-top: 10px;
 }
 
-article.content-perma div.post-content {
-    font-size: 18px;
-    @include media-query($on-palm) {
-        font-size: 17px;
-    }
-    blockquote {
-        p:before {
-            content: "“";
-            font-size: 150%;
-            line-height: 75%;
-        }
-        p:after {
-            content: "”";
-            font-size: 150%;
-            line-height: 75%;
-        }
-    }
-}
-
-article.content-perma iframe#ytplayer {
-    margin: 0px 3% 21px;
-}
-
-article.content-perma header img {
-    margin-bottom: 20px;
-    margin-left: 0px;
-    @extend %olcoverimg;
-}
-
-article.content-perma .content_links .source {
-    position: relative;
-    top: 2px;
-}
-
 .content_links .btn {
     padding: 5px 14px 8px;
-}
-
-article.content-perma .content_links .copyright {
-    summary {
-        width: fit-content;
-        padding-right: 20px;
-    }
-    i.fa-question-circle {
-        padding-left: 13px;
-    }
-    div {
-        border: 1px solid gray;
-        padding: 5px;
-        background-color: #EEF0FC;
-        border-radius: 3px;
-        font-size: 96%;
-    }
 }
 
 main header.post-header {
     h1,h2,h3,h4,h5,h6 {
         padding-top: 0px;
     }
-}
-
-article.content-perma h1.post-title {
-    font-size: 39px;
-    margin-bottom: 4px;
-
-    @include media-query($on-laptop) {
-        font-size: 32px;
-    }
-
-    @include media-query($on-palm) {
-        font-size: 26px;
-    }
-}
-
-article.content-perma .post-subtitle {
-    font-size: 22px;
-    line-height: 1;
-    margin-bottom: 6px;
-    @media screen and (min-width: 675px) {
-        font-size: 27px;
-    }
-    @media screen and (min-width: 800px) {
-        font-size: 30px;
-    }
-}
-
-article.content-perma h2 {
-    font-size: 20px;
-    margin-bottom: 7px;
-}
-
-article.content-perma .pub_desc {
-    font-size: 105%;
-}
-
-article.content-perma table.metadata {
-    font-size: 89%;
-    margin-top: 18px;
-}
-
-details.bibtex .highlight {
-    margin-bottom: 0px;
-}
-
-div.content_rating {
-    padding-bottom: 14px;
-}
-
-div.content_rating div.star_rating {
-    font-size: 110%;
-}
-
-%olcoverimg {
-    object-fit: cover;
-    background-color: lightgrey;
-    min-width: 150px;
-    height: 250px;
 }
 
 div.featured_content_list {
@@ -832,33 +580,6 @@ div.featured_content_list {
 
 ol {
     padding-left: 21px;
-}
-
-div.similar_content_footer {
-    border-top: 1px solid $grey-color;
-    padding: 16px 0px;
-    margin-top: 26px;
-    ul li {
-        padding-bottom: 8px;
-    }
-}
-
-#search-loading {
-    text-align: center;
-}
-
-#search-results {
-    margin-top: 40px;
-    li {
-        list-style: none;
-        margin-bottom: 25px;
-        h3 {
-            margin-bottom: 0px;
-        }
-    }
-    .instructions {
-        font-family: $base-font-family;
-    }
 }
 
 @include media-query($on-palm) {

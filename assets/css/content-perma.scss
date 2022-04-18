@@ -1,0 +1,117 @@
+---
+---
+
+@import "support";
+
+article.content-perma h1.post-title {
+    font-size: 39px;
+    margin-bottom: 4px;
+
+    @include media-query($on-laptop) {
+        font-size: 32px;
+    }
+
+    @include media-query($on-palm) {
+        font-size: 26px;
+    }
+}
+
+article.content-perma .post-subtitle {
+    font-size: 22px;
+    padding: 2px;
+    letter-spacing: 0;
+    @media screen and (min-width: 675px) {
+        font-size: 27px;
+    }
+    @media screen and (min-width: 800px) {
+        font-size: 30px;
+    }
+}
+
+article.content-perma h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+article.content-perma .pub_desc {
+    font-size: 105%;
+}
+
+article.content-perma table.metadata {
+    font-size: 89%;
+    margin-top: 18px;
+}
+
+details.bibtex .highlight {
+    margin-bottom: 0px;
+}
+
+div.content_rating {
+    padding-bottom: 14px;
+}
+
+div.content_rating div.star_rating {
+    font-size: 110%;
+}
+
+article.content-perma div.post-content {
+    font-size: 18px;
+    @include media-query($on-palm) {
+        font-size: 17px;
+    }
+    blockquote {
+        p:before {
+            content: "“";
+            font-size: 150%;
+            line-height: 75%;
+        }
+        p:after {
+            content: "”";
+            font-size: 150%;
+            line-height: 75%;
+        }
+    }
+}
+
+article.content-perma iframe#ytplayer {
+    margin: 0px 3% 21px;
+}
+
+article.content-perma header img {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    @extend %olcoverimg;
+}
+
+article.content-perma .content_links .source {
+    position: relative;
+    top: 2px;
+}
+
+article.content-perma .content_links .copyright {
+    summary {
+        width: fit-content;
+        padding-right: 20px;
+    }
+    i.fa-question-circle {
+        padding-left: 13px;
+    }
+    div {
+        border: 1px solid gray;
+        padding: 5px;
+        background-color: #EEF0FC;
+        border-radius: 3px;
+        font-size: 96%;
+    }
+}
+
+div.similar_content_footer {
+    border-top: 1px solid $grey-color;
+    padding: 16px 0px;
+    margin-top: 26px;
+    ul li {
+        padding-bottom: 8px;
+    }
+}
+
+

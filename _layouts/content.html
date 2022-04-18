@@ -2,8 +2,7 @@
 layout: default
 ---
 {%- comment -%}Establish the fancy content_path slug{%- endcomment -%}
-{%- assign len = page.path | size | minus: 12 -%}
-{%- assign content_path = page.path | slice: 9, len -%}
+{% include content_path.liquid content=page %}
 
 {%- comment -%}Populate tags: an array of a-tags linking to the topical tags{%- endcomment -%}
 {%- assign tagslugs = page.tags -%}
@@ -53,8 +52,8 @@ layout: default
     <img src="http://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="bookcover">
     {% endif %}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
-    <h1 class="post-title">{% include content_icon.html category=page.category subcat=page.subcat %} {{ title | first }}</h1>
-    {% if title.size > 1 %}<h2 class="post-subtitle">{{ title | shift | join: ": " }}</h2>{% endif %}
+    <h1 class="post-title">{% include content_icon.html category=page.category subcat=page.subcat %} {{ title | first }}
+    {%- if title.size > 1 -%}<span style="color:transparent">: </span><div class="post-subtitle">{{ title | shift | join: ": " }}</div>{%- endif -%}</h1>
     {% if page.authors.size > 0 %}<h2 class="author">
         By {% include content_authors_string.html content=page hide_reader=true link=true %}
     </h2>{% endif %}
@@ -78,44 +77,8 @@ layout: default
     {% include content_filelinks.html content=page %}
  </header>
   <div class="post-content">
-        {% if page.category == "av" and page.external_url contains "youtu" %}{% unless page.external_url contains "list" %}
-            <script>
-                var tag = document.createElement('script');
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                var player;
-                function onYouTubeIframeAPIReady() {
-                  player = new YT.Player('ytplayer', {
-                  height: '390',
-                  width: '94%',
-                  videoId: '{{ page.external_url | ytid }}',
-                  playerVars: {
-                    'playsinline': 1,
-                    'modestbranding': 1,
-                    'enablejsapi': 1,
-                    'widget_referrer': '{{ page.url | absolute_url }}'
-                  },
-                  events: {
-                    'onStateChange': onPlayerStateChange
-                  }
-                });}
-                var started = false;
-                function onPlayerStateChange(event) {
-                    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-                    if (!started && event.data == YT.PlayerState.PLAYING) {
-                        ga('send','event','Video','play','{{ content_path }}');
-                        started = true;
-                    }
-                    if (event.data == YT.PlayerState.ENDED) {
-                        ga('send','event','Video','finish','{{ content_path }}');
-                    }
-                    {%- else -%}
-                    console.log(event.data);
-                    {%- endif -%}
-                }
-            </script>
-            <div id="ytplayer"></div>
+        {% if page.category == "av" and page.external_url contains "youtu" or page.file_links[0] %}{% unless page.external_url contains "list" %}
+          {% include inline-av-player.html content=page %}
         {% endunless %}{% endif %}
         {{ content }}
   </div>

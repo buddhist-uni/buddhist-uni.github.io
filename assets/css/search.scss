@@ -1,0 +1,23 @@
+---
+---
+@import "support";
+
+#search-loading {
+    text-align: center;
+}
+
+#search-results {
+    margin-top: 40px;
+    li {
+        list-style: none;
+        margin-bottom: 25px;
+        h3 {
+            margin-bottom: 0px;
+        }
+    }
+    .instructions {
+        font-family: $base-font-family;
+    }
+}
+
+

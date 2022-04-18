@@ -1,0 +1,49 @@
+---
+title: "Arousing Mindfulness"
+description: "Being present is the extraordinary gift of being alive."
+image: https://buddhistuniversity.net/imgs/buddhism/curiosity.jpg
+image_info: <a href="https://commons.wikimedia.org/wiki/File:Concentrated_to_Curiosity.jpg">Amit Roy</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+order: 3
+---
+
+Mindfulness is perhaps Buddhism's most distinctive and important "psycho-technology."
+It is, succinctly, the ability to attend: to direct attention to the present reality and to recognize where we are and what we are doing.
+When we bring the mind back to the present moment and experience it fully, we live each moment and are able to remember every detail of our experience later.
+Directing attention also gives us the ability to regulate our emotions, as emotions are simply a product of what we attend to.
+
+## Reading Assignments
+
+Before each lecture, at the top of each module, I will assign a few reading assignments to prepare you for the next lecture and to provide some food for thought.
+
+This lesson we'll read a short booklet and a popular article on meditation:
+
+{% include content_box.html category="monographs" slug="miracle-of-mindfulness_tnh" %}
+{% include content_blurb.html category="articles" slug="meditation-moral-obligation_vox" blurb='
+An overview of the benefits of meditation, this article asks about moral "obligation" whereas Buddhism talks about "karma" which we can think about as "opportunities" versus Western "duties." How does reframing morality as an opportunity help you understand the question at the heart of this article?
+' %}
+
+{% include toast.html content="Feel free to take a couple days to do the readings and think about them before coming back to watch the lecture below. If you do, remember to bookmark this page (or the [Table of Contents](/courses/buddhism/frontmatter#outline)) so it's easy to find again later." %}
+
+## Lecture
+
+{% include content_blurb.html category="av" slug="happiness_hong-ci" blurb="
+Venerable Hong Ci is a Chinese-Canadian monk from Vancouver in the Chan (Chinese Zen) Tradition and in this lecture he explains what happiness really is.
+"%}
+{% include inline-av-player.html content="happiness_hong-ci" %}
+
+## Homework
+
+[**Here** are some questions to consider](https://docs.google.com/forms/d/e/1FAIpQLSc1yrC0jt_8kHhmhLTsOziQgDZL2DUfpqXAj7_LlkobWHjWgg/viewform?usp=sf_link){:target="_blank"} after the video.
+I'd love to hear what you thought of today's lesson, so please fill out the form!
+
+As always, you'll find the link to the next lesson below, but first...
+
+## Further Reading
+
+If you enjoyed this lesson and would like to learn more about the mechanics of mindfulness meditation,
+[Bhante G's book _**Mindfulness in Plain English**_](/content/monographs/mindfulness-in-plain-english_gunaratana) is considered the standard introduction to the subject.
+
+And if you're especially interested in how Buddhism  transforms our lives to create joy, please consider taking our course "[The Function of Buddhism](/courses/function)" after this one. It covers mindfulness in more depth and its relationship to ethics, and it also features the fantastic ["Los Angeles" lectures](/content/av/la-course_yuttadhammo) by Bhante Yuttadhammo, whom you already met in the previous class. So, check it out!
+
+Okay, now back to *this* course! 😅
+

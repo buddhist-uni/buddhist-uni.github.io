@@ -6,9 +6,9 @@ external_url: "https://www.abhayagiri.org/books/464-the-four-noble-truths"
 drive_links:
   - "https://drive.google.com/file/d/1VpyJE2B0cEZvg1rmPYWFqyVJf3-f-VN0/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1U0jRWH1XXLPGjEQ_JZttxyWeMbwQN2JZ/view?usp=drivesdk"
-course: philosophy
+course: buddhism
 tags:
-  - function
+  - philosophy
 year: 1994
 month: nov
 base_value: 1.7
