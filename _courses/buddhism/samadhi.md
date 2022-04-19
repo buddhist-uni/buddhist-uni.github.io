@@ -27,7 +27,7 @@ And Chapter 4 of WTBT is optional reading on wisdom's ultimate goal: *Nibbāna*
 This module, I'm excited to introduce you to Ayya Santussika Bhikkhuni: a Theravada nun living in California.
 
 {% include content_blurb.html category="av" slug="right-view_santussika" blurb='
-In this talk, Ayya explains revisits the teachings on karma and explains how to hold them wisely.
+In this talk, Ayya revisits the teachings on karma and explains how to hold them wisely.
 ' %}
 {% include inline-av-player.html content="right-view_santussika" %}
 
