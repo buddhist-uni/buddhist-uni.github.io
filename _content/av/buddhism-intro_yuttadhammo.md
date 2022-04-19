@@ -1,8 +1,10 @@
 ---
 title: "Introduction to Buddhism"
 authors: [yuttadhammo]
-external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/2010/100204_IntroBuddhism.mp3"
-drive_links: ["https://drive.google.com/file/d/15-Kw1ztByP8v1rdTFh6D7m83Eep-A9mn/view?usp=drivesdk"]
+source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/2010/100204_IntroBuddhism.mp3"
+file_links:
+  - "exclusive_01/Introduction%20to%20Buddhism%20(2010-02-04)%20-%20Yuttadhammo.mp3"
+drive_links: ["https://drive.google.com/file/d/1PFlfzJ3oe6bs0Mqml_o39BQIM3YbFHOS/view?usp=drivesdk"]
 course: buddhism
 tags:
   - function
