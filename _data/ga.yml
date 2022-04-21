@@ -1,2 +1,4 @@
 featured_value_multiplier: 2.0
-drive_folder_value: 0.5
+drive_folder_value: 0.6
+av_start_val: 0.4
+av_end_val: 3

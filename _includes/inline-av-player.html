@@ -46,11 +46,11 @@
     function onPlayerStateChange(event) {
         {%- if jekyll.environment == 'production' and site.google_analytics -%}
         if (!started && event.data == YT.PlayerState.PLAYING) {
-            ga('send','event','Video','play','{{ content_path }}');
+            ga('send','event','Video','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0);
             started = true;
         }
         if (event.data == YT.PlayerState.ENDED) {
-            ga('send','event','Video','finish','{{ content_path }}');
+            ga('send','event','Video','finish','{{ content_path }}',{{ site.data.ga.av_end_val }});
         }
         {%- else -%}
         console.log(event.data);
@@ -71,8 +71,8 @@
 <{{ tag }} controls
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}')"
-    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}')"
+    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0)"
+    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }})"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">
     Your browser doesn't support playing this audio/video file inline.
