@@ -8,7 +8,7 @@ pages: "68--102"
 publisher: curzon
 base_value: 0.5
 year: 1990
-editor: "Karel Werner"
+editor: werner-karel
 course: form
 tags:
   - indian

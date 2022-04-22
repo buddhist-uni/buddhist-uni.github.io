@@ -68,13 +68,17 @@ This course will give you:
 **Absolutely Free!**{:.text-underline .block .mt-5}
 
 This course is not [a commercial, academic tour of Buddhism](/content/monographs/intro-to-buddhism_harvey).
-This course will instead immerse you **in** Buddhism.
+This course will instead immerse you **in** Buddhism, teaching you the fundamental concepts and how they build up to a unique and compelling worldview.
 
 There will be homework and challenges, but there will *not*{:.underline} be grades or certificates. This is a self-directed course for those who are eager to learn what Buddhism is for themselves.
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-This course will take about **2 months**{:.text-underline} to complete and will contain readings and lectures in college-level English.
-To peruse the material in advance, see [the course bibliography](/tags/buddhism).
+This course will take about **2 months**{:.text-underline} to complete and will contain readings and lectures in college-level, American English.
+To peruse the material in advance, see [the bibliography](/tags/buddhism).
 
-When you're ready:
+Note: This course is geared towards complete beginners.
+If that isn't you, consider taking one of our more advanced intro-level courses instead, covering:
+- [The Words of the Buddha](/courses/ebts),
+- [Buddhist Practice](/courses/function),
+- or [Buddhism as a Religion](/courses/form)
