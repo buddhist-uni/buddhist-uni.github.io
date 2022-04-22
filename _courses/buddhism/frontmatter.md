@@ -26,9 +26,10 @@ This course will proceed in **14 modules**.
 
 Each module is a self-contained unit and contains assigned readings together with a lecture and some reflection questions.  It's recommended that you do the modules **in order**, doing **about two modules per week** as your schedule permits.
 
-Since this course will take at least a few weeks to complete, please take a moment now to bookmark this document. Perhaps share the link with a friend so you can find it later!
+Since this course will take at least a few weeks to complete, please take a moment now to bookmark this page.
+Perhaps share the link with a friend so you can find it later!
 
 {% include multipartcourse_outline.html course="buddhism" introtext="The 15 modules (including this one) will proceed as follows:" %}
 
-👆 jump to the module you're currently on by or 👇
+👆 jump to the module you're currently on or 👇
 
