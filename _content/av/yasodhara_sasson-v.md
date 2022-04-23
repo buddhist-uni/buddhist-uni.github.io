@@ -1,5 +1,6 @@
 ---
 title: Writing Yasodhara and the Buddha
+subcat: podcast
 authors: ["Vanessa Sasson"]
 year: 2021
 month: mar

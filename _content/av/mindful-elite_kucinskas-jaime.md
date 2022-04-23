@@ -1,5 +1,6 @@
 ---
 title: "The Mindful Elite"
+subcat: podcast
 authors:
   - "Jaime Kucinskas"
 external_url: "http://www.mindfulcranks.com/podcast-episodes/2019/2/12/episode-14-jaime-kucinskas-the-mindful-elite"

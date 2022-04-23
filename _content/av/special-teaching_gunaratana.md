@@ -1,5 +1,6 @@
 ---
 title: "A Special Teaching on Mindfulness"
+subcat: podcast
 authors:
   - gunaratana
 external_url: "https://wisdomexperience.org/wisdom-podcast/bhante-gunaratana/"

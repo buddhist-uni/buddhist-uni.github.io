@@ -1,5 +1,6 @@
 ---
 title: "Heyoon"
+subcat: podcast
 authors:
   - "Alex Goldman"
 external_url: "https://99percentinvisible.org/episode/heyoon"

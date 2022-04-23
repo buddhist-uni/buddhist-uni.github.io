@@ -1,5 +1,6 @@
 ---
 title: "What I Learned"
+subcat: podcast
 year: 2020
 month: dec
 authors:

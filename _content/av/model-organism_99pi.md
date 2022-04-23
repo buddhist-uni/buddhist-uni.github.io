@@ -1,5 +1,6 @@
 ---
 title: "Model Organism"
+subcat: podcast
 authors:
   - "Emmett FitzGerald"
 external_url: "https://99percentinvisible.org/episode/model-organism"

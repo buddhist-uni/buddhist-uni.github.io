@@ -1,5 +1,6 @@
 ---
 title: "The Buddha Party: How the People’s Republic of China Works to Define and Control Tibetan Buddhism"
+subcat: podcast
 authors: ["John Powers"]
 year: 2017
 month: nov

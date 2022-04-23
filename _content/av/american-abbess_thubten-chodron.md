@@ -1,5 +1,6 @@
 ---
 title: "An American Buddhist Abbess"
+subcat: podcast
 authors:
   - thubten-chodron
 external_url: "https://wisdomexperience.org/wisdom-podcast/thubten-chodron/"

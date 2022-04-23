@@ -1,5 +1,6 @@
 ---
 title: "How to Be Depressed"
+subcat: podcast
 authors:
   - "Matthew Sitman"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/depression"

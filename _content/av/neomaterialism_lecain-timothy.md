@@ -1,5 +1,6 @@
 ---
 title: "Neomaterialism"
+subcat: podcast
 authors:
  - "Timothy LeCain"
 year: 2019

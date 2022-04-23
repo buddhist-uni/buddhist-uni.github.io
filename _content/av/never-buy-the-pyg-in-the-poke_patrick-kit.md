@@ -1,5 +1,6 @@
 ---
 title: "Don't Buy the Pyg in the Poke"
+subcat: podcast
 authors: ["Kit Patrick"]
 year: 2017
 month: apr

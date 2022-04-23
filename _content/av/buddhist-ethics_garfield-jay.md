@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Ethics: A Philosophical Introduction"
+subcat: podcast
 authors:
   - garfield-jay
 editor: "Malcolm Keating"

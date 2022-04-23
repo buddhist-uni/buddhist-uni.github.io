@@ -1,5 +1,6 @@
 ---
 title: "Knowing Body, Moving Mind: Ritualizing and Learning at Two Buddhist Centers"
+subcat: podcast
 authors: ["Patricia Campbell"]
 year: 2011
 month: nov

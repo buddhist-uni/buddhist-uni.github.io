@@ -1,5 +1,6 @@
 ---
 title: "On the Fifty Jātaka"
+subcat: podcast
 authors:
   - "Chris Baker"
   - "Pasuk Phongpaichit"

@@ -1,5 +1,6 @@
 ---
 title: "Creatures of Cain"
+subcat: podcast
 authors: ["Erika Milam"]
 external_url: "https://timetoeatthedogs.com/2019/04/08/creatures-of-cain/"
 drive_links: ["https://drive.google.com/file/d/1erSwfaI_uzS1SlMWFZHnflXGBwVZJTNC/view?usp=drivesdk"]

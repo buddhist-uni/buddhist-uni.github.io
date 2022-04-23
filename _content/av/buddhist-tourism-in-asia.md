@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Tourism in Asia"
+subcat: podcast
 authors:
   - "Courtney Bruntz"
   - "Brooke Schedneck"

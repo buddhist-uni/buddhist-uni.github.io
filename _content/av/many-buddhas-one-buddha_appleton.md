@@ -1,5 +1,6 @@
 ---
 title: "Many Buddhas, One Buddha (Interview)"
+subcat: podcast
 authors:
  - appleton
 year: 2020

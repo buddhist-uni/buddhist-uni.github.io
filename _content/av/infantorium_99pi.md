@@ -1,5 +1,6 @@
 ---
 title: "The Infantorium"
+subcat: podcast
 authors: ["Katie Thornton"]
 editor: "Chris Berube and Joe Rosenberg"
 year: 2019

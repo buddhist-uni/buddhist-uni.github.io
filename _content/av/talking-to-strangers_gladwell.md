@@ -1,5 +1,6 @@
 ---
 title: "Talking to Strangers: What We Should Know About the People We Don't Know"
+subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2019
 course: policing

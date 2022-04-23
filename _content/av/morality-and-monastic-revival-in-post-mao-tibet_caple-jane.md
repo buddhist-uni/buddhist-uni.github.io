@@ -1,5 +1,6 @@
 ---
 title: "Morality and Monastic Revival in Post-Mao Tibet"
+subcat: podcast
 authors:
   - "Jane Caple"
 year: 2019

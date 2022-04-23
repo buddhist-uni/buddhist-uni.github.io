@@ -1,5 +1,6 @@
 ---
 title: "The Loneliness Epidemic"
+subcat: podcast
 authors:
   - "Vivek Murthy"
   - "Ezra Klein"

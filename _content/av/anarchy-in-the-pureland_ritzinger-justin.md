@@ -1,5 +1,6 @@
 ---
 title: "Anarchy in the Pure Land"
+subcat: podcast
 authors:
  - "Justin R. Ritzinger"
 year: 2017

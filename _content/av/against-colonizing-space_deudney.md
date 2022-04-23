@@ -1,5 +1,6 @@
 ---
 title: "The Argument Against Colonizing Space"
+subcat: podcast
 authors: ["Daniel Deudney", "Michael Robinson"]
 external_url: "https://player.fm/1BCrFbM"
 drive_links: ["https://drive.google.com/file/d/1lXTBooNpHepczvhsY0oNJTYyXWLuvNml/view?usp=drivesdk"]

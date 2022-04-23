@@ -1,5 +1,6 @@
 ---
 title: "Lives of Early Buddhist Nuns (Interview)"
+subcat: podcast
 authors:
   - collett-alice
 year: 2020

@@ -2,6 +2,7 @@
 title: "The Buddha's Teaching As It Is"
 authors:
   - bodhi
+subcat: course
 external_url: "https://bodhimonastery.org/the-buddhas-teaching-as-it-is.html"
 source_url: "http://www.buddhanet.net/audio-lectures.htm"
 drive_links:

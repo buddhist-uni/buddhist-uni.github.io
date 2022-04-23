@@ -1,5 +1,6 @@
 ---
 title: "Stupas and Stupefaction"
+subcat: podcast
 authors: ["Kit Patrick"]
 year: 2016
 month: jul

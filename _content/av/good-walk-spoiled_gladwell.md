@@ -1,5 +1,6 @@
 ---
 title: "A Good Walk Spoiled"
+subcat: podcast
 authors:
   - "Malcolm Gladwell"
 year: 2017

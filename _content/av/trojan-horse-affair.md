@@ -1,5 +1,6 @@
 ---
 title: "The Trojan Horse Affair"
+subcat: podcast
 authors:
   - "Brian Reed"
   - "Hamza Syed"

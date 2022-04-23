@@ -1,5 +1,6 @@
 ---
 title: "Conceiving the Indian Buddhist Patriarchs in China"
+subcat: podcast
 authors:
  - "Stuart Young"
 year: 2015

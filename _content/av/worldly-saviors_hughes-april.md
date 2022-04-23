@@ -1,5 +1,6 @@
 ---
 title: "Worldly Saviors and Imperial Authority in Medieval Chinese Buddhism"
+subcat: podcast
 authors:
   - "April D. Hughes"
 external_url: "https://newbooksnetwork.com/worldly-saviors-and-imperial-authority-in-medieval-chinese-buddhism"

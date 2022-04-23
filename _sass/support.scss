@@ -1,7 +1,8 @@
+// Set customizable Minima theme values
+
 $on-palm: 740px;
 $on-laptop: 800px;
 
-// $banner-color: #9B6022;
 $background-color: #fdfdfd;
 $banner-color: #5E2417;
 $text-color: #070707;
@@ -12,9 +13,6 @@ $brand-color: $blue;
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-
-
-
 
 $ui-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $google-fonts: "EB Garamond", "Noto Serif TC", "Noto Serif JP";
@@ -35,6 +33,7 @@ $spacing-unit: 16px;
 
 //////
 // Imported from Minima v2.5.1
+//   (Used by custom Primer components)
 /////
 
 // Use media queries like this:

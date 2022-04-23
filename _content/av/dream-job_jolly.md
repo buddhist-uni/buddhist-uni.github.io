@@ -1,5 +1,6 @@
 ---
 title: "Finding Your Dream Job"
+subcat: podcast
 authors:
   - "Jihii Jolly"
   - "Ike Ufomado"

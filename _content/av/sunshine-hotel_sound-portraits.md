@@ -1,5 +1,6 @@
 ---
 title: "The Sunshine Hotel"
+subcat: podcast
 authors: ["Nathan Smith"]
 publisher: "Sound Portraits"
 year: 1998

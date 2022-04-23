@@ -1,11 +1,16 @@
 ---
-# Only the main Sass file needs front matter
+# This main css file concats together:
+# - GitHub Primer
+# - The Jekyll Minima Theme
+# - My customizations
+#
+# Primer was installed via:
+#     npm install @primer/css https://github.com/primer/sync
+#     node node_modules/@primer/sync/cli.js buddhist-uni.github.io/_sass/
 ---
-// Pull in site config data
+// Pull in site config data here
 $bannerfullsize: {{ site.data.banner.max_size }}px;
 
-// Minima value overrides have to go before minima import
-@import "support";
+@import "primer";
 @import "minima";
 @import "nimitta";
-

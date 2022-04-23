@@ -1,5 +1,6 @@
 ---
 title: "The Stethoscope"
+subcat: podcast
 authors: ["Emmett FitzGerald"]
 year: 2017
 month: aug

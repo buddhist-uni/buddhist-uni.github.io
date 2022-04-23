@@ -1,5 +1,6 @@
 ---
 title: "The History of the World in Seven Cheap Things"
+subcat: podcast
 authors: ["Raj Patel"]
 year: 2020
 month: jan

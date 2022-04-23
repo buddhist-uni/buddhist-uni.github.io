@@ -1,5 +1,6 @@
 ---
 title: "Teardrops of Time: Buddhist Aesthetics in the Poetry of Angkarn Kallayanapong (Interview)"
+subcat: podcast
 authors: ["Arnika Fuhrmann"]
 external_url: "https://newbooksnetwork.com/teardrops-of-time"
 year: 2021

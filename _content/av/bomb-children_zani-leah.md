@@ -1,5 +1,6 @@
 ---
 title: "Bomb Children (Interview)"
+subcat: podcast
 authors: ["Leah Zani"]
 year: 2020
 external_url: "https://newbooksnetwork.com/leah-zani-bomb-children-life-in-the-former-battlefields-of-laos-duke-up-2019/"

@@ -1,5 +1,6 @@
 ---
 title: "On the Crisis in Myanmar"
+subcat: podcast
 authors:
   - bodhi
 external_url: "https://insightmyanmar.org/complete-shows/2021/7/4/episode-61-bhikkhu-bodhi-on-the-crisis-in-myanmar"

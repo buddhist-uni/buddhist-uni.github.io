@@ -1,5 +1,6 @@
 ---
 title: "The Real Book"
+subcat: podcast
 editor: "Emmett FitzGerald"
 authors:
   - "Mikel McCavana"

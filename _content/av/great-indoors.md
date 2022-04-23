@@ -1,5 +1,6 @@
 ---
 title: "The Great Indoors"
+subcat: podcast
 authors: ["Emily Anthes"]
 year: 2020
 month: nov

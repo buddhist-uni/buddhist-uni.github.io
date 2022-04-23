@@ -1,5 +1,6 @@
 ---
 title: "The History of Modern Tourism (Interview)"
+subcat: podcast
 authors:
  - "Eric Zuelow"
 year: 2020

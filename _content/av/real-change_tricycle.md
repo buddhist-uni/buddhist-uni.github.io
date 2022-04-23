@@ -1,5 +1,6 @@
 ---
 title: "Real Change"
+subcat: podcast
 authors:
   - "Sharon Salzberg"
   - "James Shaheen"
