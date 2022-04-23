@@ -1,5 +1,6 @@
 ---
 title: "Stories, Deception and the Bible"
+subcat: podcast
 authors:
   - "Margaret Atwood"
   - "Ezra Klein"

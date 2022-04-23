@@ -1,5 +1,6 @@
 ---
 title: "I Hear Her Words"
+subcat: podcast
 external_url: "https://newbooksnetwork.com/i-hear-her-words"
 authors: [collett-alice]
 year: 2021

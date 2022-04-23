@@ -1,5 +1,6 @@
 ---
 title: "Generous Orthodoxy"
+subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2016
 external_url: "http://revisionisthistory.com/episodes/09-generous-orthodoxy"

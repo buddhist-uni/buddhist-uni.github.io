@@ -1,6 +1,7 @@
 ---
 title: "Continuing Study of the *Majjhima Nikāya*"
 authors: [bodhi]
+subcat: course
 drive_links:
   - "https://drive.google.com/folderview?id=1gqvYqweZx-SoGNlZBsGoYxBBWOO3gG-n"
 formats: [MP3s]

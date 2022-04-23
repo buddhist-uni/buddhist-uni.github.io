@@ -1,5 +1,6 @@
 ---
 title: "Pilgrims Until We Die: Unending Pilgrimage in Shikoku"
+subcat: podcast
 authors:
   - Ian Reader
   - John Shultz

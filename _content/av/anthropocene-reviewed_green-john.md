@@ -1,5 +1,6 @@
 ---
 title: "The Anthropocene Reviewed (Podcast)"
+subcat: podcast
 authors:
   - "John Green"
 external_url: "https://www.wnycstudios.org/podcasts/anthropocene-reviewed"

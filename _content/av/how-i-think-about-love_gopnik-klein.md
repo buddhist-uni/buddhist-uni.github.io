@@ -1,5 +1,6 @@
 ---
 title: "How I Think About Love"
+subcat: podcast
 external_url: "https://www.vox.com/podcasts/2019/6/13/18677595/alison-gopnik-changed-how-i-think-about-love"
 authors:
   - "Alison Gopnik"

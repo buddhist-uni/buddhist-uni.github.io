@@ -1,5 +1,6 @@
 ---
 title: "Becoming the First Female Geshe"
+subcat: podcast
 authors:
   - "Geshema Kelsang Wangmo"
 editor: "Daniel Aitken"

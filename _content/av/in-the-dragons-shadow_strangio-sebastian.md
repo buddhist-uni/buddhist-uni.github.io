@@ -1,5 +1,6 @@
 ---
 title: "In the Dragon's Shadow (Interview)"
+subcat: podcast
 authors: ["Sebastian Strangio"]
 external_url: "https://newbooksnetwork.com/in-the-dragons-shadow"
 year: 2020

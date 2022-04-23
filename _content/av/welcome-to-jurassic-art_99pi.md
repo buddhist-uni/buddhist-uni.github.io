@@ -1,5 +1,6 @@
 ---
 title: "Welcome to Jurassic Art"
+subcat: podcast
 year: 2021
 month: apr
 external_url: "https://99percentinvisible.org/episode/welcome-to-jurassic-art-redux/"

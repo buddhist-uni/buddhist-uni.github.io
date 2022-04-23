@@ -1,5 +1,6 @@
 ---
 title: "Monks In Motion (Interview)"
+subcat: podcast
 authors:
  - "Jack Meng-Tat Chia"
 year: 2020

@@ -1,6 +1,7 @@
 ---
 title: "The Path to Liberation in the *Majjhima Nikāya*"
 authors: [bodhi]
+subcat: course
 source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 formats: [MP3s]
 drive_links: ["https://drive.google.com/drive/folders/1d8LN7DpZX76wwySekNYdipzkzTSwPwnJ"]

@@ -1,5 +1,6 @@
 ---
 title: "In the Editing Room"
+subcat: podcast
 authors:
   - "Ruth Ozeki"
 subcat: 

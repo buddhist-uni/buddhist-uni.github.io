@@ -1,5 +1,6 @@
 ---
 title: "The Moral Panics of Our Time"
+subcat: podcast
 authors:
   - "Tressie McMillan Cottom"
   - "Ezra Klein"

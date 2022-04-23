@@ -1,5 +1,6 @@
 ---
 title: "The Great Houses of Ancient India"
+subcat: podcast
 authors: ["Kit Patrick"]
 year: 2015
 source_url: "https://historyofindiapodcast.libsyn.com/2015/07"

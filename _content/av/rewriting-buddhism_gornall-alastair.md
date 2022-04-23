@@ -1,5 +1,6 @@
 ---
 title: "Rewriting Buddhism"
+subcat: podcast
 authors: ["Alastair Gornall"]
 year: 2021
 month: sep

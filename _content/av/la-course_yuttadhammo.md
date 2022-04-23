@@ -1,6 +1,7 @@
 ---
 title: The Los Angeles Course
 authors: [yuttadhammo]
+subcat: course
 year: 2009
 source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/"
 formats: [mp3s]

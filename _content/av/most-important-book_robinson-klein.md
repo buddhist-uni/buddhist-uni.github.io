@@ -1,5 +1,6 @@
 ---
 title: "The most important book I’ve read this year"
+subcat: podcast
 authors:
   - "Kim Stanley Robinson"
   - "Ezra Klein"

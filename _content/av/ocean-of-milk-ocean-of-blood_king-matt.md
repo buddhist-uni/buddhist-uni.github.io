@@ -1,5 +1,6 @@
 ---
 title: "Ocean of Milk, Ocean of Blood: A Mongolian Monk in the Ruins of the Qing"
+subcat: podcast
 authors:
  - "Matthew W. King"
 year: 2019

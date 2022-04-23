@@ -1,5 +1,6 @@
 ---
 title: "Storied Companions: Trauma, Cancer, and Finding Guides for Living in Buddhist Narratives"
+subcat: podcast
 authors:
   - "Karen Derris"
 editor: "Natasha Heller"

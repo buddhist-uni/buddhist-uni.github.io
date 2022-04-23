@@ -1,5 +1,6 @@
 ---
 title: "Some Other Sign that People Do Not Totally Regret Life"
+subcat: podcast
 authors: ["Sean Cole"]
 year: 2012
 month: jul

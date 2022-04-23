@@ -1,5 +1,6 @@
 ---
 title: "Abandoned Ships"
+subcat: podcast
 authors: ["Alex Atack"]
 external_url: "https://99percentinvisible.org/episode/abandoned-ships"
 course: economics

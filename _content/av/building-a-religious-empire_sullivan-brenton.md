@@ -1,5 +1,6 @@
 ---
 title: "Building a Religious Empire: Tibetan Buddhism, Bureaucracy, and the Rise of the Gelukpa"
+subcat: podcast
 authors: ["Brenton Sullivan"]
 external_url: "https://newbooksnetwork.com/building-a-religious-empire"
 course: tibetan

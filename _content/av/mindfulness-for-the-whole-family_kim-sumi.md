@@ -1,5 +1,6 @@
 ---
 title: "Mindfulness for the Whole Family"
+subcat: podcast
 authors:
   - "Sumi Loundon Kim"
 external_url: "https://wisdomexperience.org/wisdom-podcast/sumi-loundon-kim/"

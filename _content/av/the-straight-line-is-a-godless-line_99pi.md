@@ -1,5 +1,6 @@
 ---
 title: "The Straight Line is a Godless Line"
+subcat: podcast
 authors: ["Luisa Beck"]
 year: 2014
 month: sep

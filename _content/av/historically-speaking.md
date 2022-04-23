@@ -1,5 +1,6 @@
 ---
 title: "Historically Speaking"
+subcat: podcast
 authors: ["Leila Battison"]
 external_url: "https://www.20k.org/episodes/historicallyspeaking"
 course: world

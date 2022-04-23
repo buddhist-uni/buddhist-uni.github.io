@@ -1,5 +1,6 @@
 ---
 title: "Are Bosses Dictators?"
+subcat: podcast
 authors:
   - "Elizabeth Anderson"
   - "Ezra Klein"

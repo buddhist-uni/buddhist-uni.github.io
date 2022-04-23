@@ -1,5 +1,6 @@
 ---
 title: "Life in the Sangha in the *Majjhima Nikāya*"
+subcat: course
 authors: [bodhi]
 source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 formats: [MP3s]

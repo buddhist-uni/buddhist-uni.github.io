@@ -1,5 +1,6 @@
 ---
 title: "Malleable Mara (Interview)"
+subcat: podcast
 authors:
  - "Michael Nichols"
 year: 2021

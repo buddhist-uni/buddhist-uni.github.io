@@ -2,7 +2,7 @@
 title: "Buddhism is Kinda Out There, Man"
 authors:
   - "Exurb1a "
-subcat: video
+subcat: film
 external_url: "https://youtu.be/i2wLyhgeYsw"
 course: buddhism
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "From the Mountains to the Cities (Interview)"
+subcat: podcast
 authors: ["Mark Nathan"]
 year: 2020
 publisher: nbn

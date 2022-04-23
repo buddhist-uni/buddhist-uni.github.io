@@ -2,7 +2,7 @@
 title: "Free Speech Crisis: The Anatomy of a Moral Panic"
 authors:
   - "Michael Hobbes"
-subcat: video
+subcat: film
 external_url: "https://youtu.be/inqOqgklH68"
 course: communication
 tags:

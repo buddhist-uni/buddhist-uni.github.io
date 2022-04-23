@@ -1,5 +1,6 @@
 ---
 title: Buddhist Ethics and the Bodhicaryāvatāra
+subcat: podcast
 authors:
   - garfield-jay
 external_url: https://podcast.buddhiststudiesonline.com/1759899/9132273-3-jay-l-garfield-buddhist-ethics-and-the-bodhicaryavatara

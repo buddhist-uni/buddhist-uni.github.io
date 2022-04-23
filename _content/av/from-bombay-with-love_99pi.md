@@ -1,5 +1,6 @@
 ---
 title: "From Bombay With Love"
+subcat: podcast
 authors:
   - "Vivian Le"
 external_url: "https://99percentinvisible.org/episode/from-bombay-with-love"

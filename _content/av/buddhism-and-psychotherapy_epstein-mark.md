@@ -1,5 +1,6 @@
 ---
 title: "Buddhism and Psychotherapy"
+subcat: podcast
 authors: ["Mark Epstein"]
 external_url: "https://tricycle.org/podcast/buddhism-and-psychotherapy/"
 drive_links:

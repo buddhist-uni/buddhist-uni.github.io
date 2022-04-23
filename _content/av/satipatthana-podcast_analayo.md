@@ -1,5 +1,6 @@
 ---
 title: "The *Satipaṭṭhāna Sutta* in Early Buddhism and Contemporary Practice"
+subcat: podcast
 authors: [analayo]
 external_url: "https://wisdomexperience.org/wisdom-podcast/bhikkhu-analayo-2/"
 drive_links:

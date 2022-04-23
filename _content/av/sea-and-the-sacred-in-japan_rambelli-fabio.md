@@ -1,5 +1,6 @@
 ---
 title: "The Sea and the Sacred in Japan (Interview)"
+subcat: podcast
 authors:
  - "Fabio Rambelli"
 month: feb

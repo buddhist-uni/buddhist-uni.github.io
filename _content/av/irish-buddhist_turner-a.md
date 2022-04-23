@@ -1,5 +1,6 @@
 ---
 title: "The Irish Buddhist: The Forgotten Monk Who Faced Down The British Empire"
+subcat: podcast
 authors: [turner-a]
 external_url: "https://newbooksnetwork.com/alicia-turner-the-irish-buddhist-the-forgotten-monk-who-faced-down-the-british-empire-oxford-up-2020/"
 year: 2020

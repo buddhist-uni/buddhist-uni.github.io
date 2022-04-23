@@ -1,5 +1,6 @@
 ---
 title: "Śabda: Language in Classical Indian Thought"
+subcat: podcast
 authors:
   - "Johannes Bronkhorst"
 external_url: "https://newbooksnetwork.com/johannes-bronkhorst-a-sabda-reader-language-in-classical-indian-thought-columbia-up-2019"

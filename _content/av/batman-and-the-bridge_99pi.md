@@ -1,5 +1,6 @@
 ---
 title: "The Batman and the Bridge Builder"
+subcat: podcast
 authors: ["Emmett FitzGerald"]
 year: 2021
 month: feb

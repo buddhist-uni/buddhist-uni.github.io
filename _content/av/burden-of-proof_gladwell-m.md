@@ -1,5 +1,6 @@
 ---
 title: "Burden of Proof"
+subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2018
 month: may

@@ -1,5 +1,6 @@
 ---
 title: "Because Podcast"
+subcat: podcast
 authors: ["Gretchen McCulloch"]
 year: 2019
 month: nov

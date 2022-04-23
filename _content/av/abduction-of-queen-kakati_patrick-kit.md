@@ -1,5 +1,6 @@
 ---
 title: "The Abduction of Queen Kakati"
+subcat: podcast
 authors: ["Kit Patrick"]
 year: 2017
 month: jan

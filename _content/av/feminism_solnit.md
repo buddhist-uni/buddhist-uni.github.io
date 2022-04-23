@@ -1,5 +1,6 @@
 ---
 title: "Feminism Post-Weinstein"
+subcat: podcast
 authors: [solnit]
 journal: vox
 month: mar

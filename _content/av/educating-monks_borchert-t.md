@@ -1,5 +1,6 @@
 ---
 title: "Educating Monks: Minority Buddhism on China’s Southwest Border"
+subcat: podcast
 external_url: "https://newbooksnetwork.com/thomas-borchert-educating-monks-minority-buddhism-on-chinas-southwest-border-u-hawaii-press-2017/"
 authors: ["Thomas Borchert"]
 year: 2018

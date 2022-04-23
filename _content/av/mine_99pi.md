@@ -1,5 +1,6 @@
 ---
 title: "Mine!"
+subcat: podcast
 authors:
   - "Roman Mars"
   - "Michael Heller"

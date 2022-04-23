@@ -1,5 +1,6 @@
 ---
 title: "Saving Buddhism: The Impermanence of Religion in Colonial Burma"
+subcat: podcast
 authors: [turner-a]
 external_url: "https://newbooksnetwork.com/alicia-turner-saving-buddhism-the-impermanence-of-religion-in-colonial-burma-u-hawaii-press-2014/"
 year: 2014

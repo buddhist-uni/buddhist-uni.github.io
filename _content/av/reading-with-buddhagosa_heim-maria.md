@@ -1,5 +1,6 @@
 ---
 title: "Learning to Read Buddhist Texts"
+subcat: podcast
 authors:
   - "Maria Heim"
 editor: "Kate Hartmann"

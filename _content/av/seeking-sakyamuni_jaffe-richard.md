@@ -1,5 +1,6 @@
 ---
 title: "Seeking Śākyamuni"
+subcat: podcast
 authors:
   - "Richard M. Jaffe"
 external_url: "https://newbooksnetwork.com/seeking-sakyamuni"

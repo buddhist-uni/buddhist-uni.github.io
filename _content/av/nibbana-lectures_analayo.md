@@ -3,6 +3,7 @@ title: "The *Nibbāna* Lectures"
 authors:
  - analayo
 year: 2019
+subcat: course
 external_url: "https://www.buddhistinquiry.org/resources/offerings-analayo/lectures/"
 source_url: "https://seeingthroughthenet.net/wp-content/uploads/2018/03/Mind-Stilled_HTML.htm"
 drive_links:

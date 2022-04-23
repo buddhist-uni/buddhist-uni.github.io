@@ -1,5 +1,6 @@
 ---
 title: "Carlos Doesn't Remember"
+subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2016
 external_url: "http://revisionisthistory.com/episodes/04-carlos-doesnt-remember"

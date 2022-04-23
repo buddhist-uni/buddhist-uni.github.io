@@ -1,5 +1,6 @@
 ---
 title: "Take a Walk"
+subcat: podcast
 authors: ["Pop Up Magazine"]
 year: 2021
 month: apr

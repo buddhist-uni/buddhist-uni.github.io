@@ -1,5 +1,6 @@
 ---
 title: "The Buddhist Literature of Ancient Gandhāra (Interview)"
+subcat: podcast
 authors:
   - "Richard Salomon"
 year: 2019

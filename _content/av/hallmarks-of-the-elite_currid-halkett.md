@@ -1,5 +1,6 @@
 ---
 title: "How Whole Foods, yoga, and NPR became the hallmarks of the modern elite" 
+subcat: podcast
 authors:
   - "Elizabeth Currid-Halkett"
   - "Ezra Klein"
