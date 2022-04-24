@@ -1,6 +1,6 @@
 ---
 title: "The Journal of the Pali Text Society"
-external_url: "http://www.palitext.com/palitext/jours.htm"
+external_url: "http://www.palitext.com/palitext/JPTS_PDF.htm"
 publisher: pts
 ---
 
