@@ -147,6 +147,6 @@ OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){
   - To recognize how politics shape our perceptions.
 {:.mb-2}
 
-- [Communicating Across Cultures](https://ocw.mit.edu/courses/global-languages/21g-019-communicating-across-cultures-spring-2005/index.htm){:.f3 ga-event-value="0.5"}
+- [Communicating Across Cultures](https://ocw.mit.edu/courses/21g-019-communicating-across-cultures-spring-2005/){:.f3 ga-event-value="0.5"}
   - To probe the challenges of intercultural dialogue with theoretical frameworks and practical exercises.
 {:.mb-2}

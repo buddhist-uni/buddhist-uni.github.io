@@ -135,8 +135,8 @@ function clearTooltip(){this.setAttribute('class','btn copybutton');this.removeA
 function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltipped tooltipped-n');elem.setAttribute('aria-label',msg); setTimeout(clearTooltip.bind(elem), 4000);}
       </script>
       {% if site.show_timestamps %}<table class="metadata"><tbody>
-        <tr><td>Added</td><td>{{ page.date | date_to_rfc822 }}</td></tr>
-        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td>{{ page.last_modified_at | date_to_rfc822 }}</td></tr>{% endif %}
+        <tr><td>Added</td><td><span style="font-family: system-ui, sans;">{{ page.date | date_to_rfc822 }}</span></td></tr>
+        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span style="font-family: system-ui, sans;">{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}
       </tbody></table>{% endif %}
       </div>
     </details>{% endif %}
