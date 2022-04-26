@@ -9,8 +9,9 @@ order: 14
 # Readings
 
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-Continue with Chapters 45–46 of the Buddha's story.
+Continue with Chapters 45–46, which introduce the Buddha's greatest disciples: monastics and laity who still set the example for Buddhists to this day.
 " %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 11 covers the Ten Virtues (or "Perfections") we can cultivate in every moment of our lives.' %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
 We conclude our study of the Noble Eightfold Path with Chapter 8: "Wisdom"---and the ability to act for the benefit of others.
 ' %}

@@ -9,10 +9,13 @@ order: 7
 ## Reading Assignments
 
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-We continue with the Buddha's biography by reading Chapters 14–17.
+We continue with the Buddha's biography by reading Chapters 14–17 on the Buddha-to-be's wanderings in search of the path.
 " %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
+We skip ahead this module to Chapter 12 on the Four Noble Truths and The Noble Eightfold Path.
+' %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
-This module, we finally begin reading Bhikkhu Bodhi's own book about the Buddha's teachings, beginning with (appropriately enough) Chapter 1, where he discusses the character of the Buddhist path to awakening.
+And this module, we finally begin reading Bhikkhu Bodhi's own book about the Buddha's teachings, beginning with (appropriately enough) Chapter 1, wherein he discusses the character of the Buddhist path to awakening.
 " %}
 {% include content_blurb.html category="canon" slug="an8.53" blurb='
 In this story from the Buddhist canon, the Buddha teaches a nun which character traits the practice should produce when followed correctly: an important "compass" to help guide our understanding and spiritual efforts.

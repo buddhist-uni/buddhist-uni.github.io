@@ -8,25 +8,18 @@ order: 9
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-(**Optional**) Chapter 5 of WTBT gives his own take on the Noble Eightfold Path.
-If you've been enjoying Rahula's book, give it a try. If not: feel free to skip it.
-" %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
-We continue with Chapter 3 of *Path* on the *Intention* which leads to Enlightenment.
-Hint: it's not the desire to get enlightened!
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+We continue with Chapters 22–26 on the Buddha's first teachings after his Awakening.
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-Chapter 6 introduces the Buddhist concept of "*bhavana*" or "Mental Development"
+Chapter 6 introduces the Buddhist concept of "*bhavana*" or "Mental Development", analyzing the Path from the perspective of the mind.
 ' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-We continue with Chapters 22–26 of the Buddha's story.
-" %}
-{% include content_blurb.html category="canon" slug="sn22.86" blurb="
-We've been reading the Buddha's biography, but who was the Buddha in his own words?
-
-In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death.
-The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and the end of suffering, thus redirecting our attention from empty philosophical musings to the things that matter most. 
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+In Chapter 3 ("Right Intention") Bhikkhu Bodhi zooms in on the attitude with which we should undertake the practice.
+' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="Chapters 2 and 3 bring us back to meditation itself." %}
+{% include content_blurb.html category="canon" slug="sn42.6" blurb="
+One of the hallmarks of Buddhism as a religion is that the Buddha emphatically rejected salvation through faith and prayer alone. In this module's sutta, the Buddha illustrates this point with a simile. See if you can appreciate its dry humor!
 " %}
 
 ## Lecture

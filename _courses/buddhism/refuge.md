@@ -6,11 +6,11 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Silver_buddha_insid
 order: 4
 ---
 
-Wandering lost in Samsara, the compassionate wisdom and peerless example of the Buddha show us the way out of misery.
+The compassionate wisdom and peerless example of the Buddha show us the way out of Saṃsāra.
 
 ## Readings
 
-I'd like to introduce you now to the four texts we'll be reading through the remainder of the course:
+I'd like to introduce you now to the other four texts (in addition to _Being Nobody, Going Nowhere_) that we'll be reading through the remainder of this course:
 
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
 This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, accessible to modern readers even today, six decades later. 
@@ -20,7 +20,7 @@ A deeply human, simple but powerful retelling of the Buddha’s life story from 
 An excellent biography of the Buddha.
 " %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
-A precise yet readable overview of the Buddhist Path.
+A precise yet readable overview of the Buddhist Path by one of the greatest scholars of Pāḷi Buddhism alive today.
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
 A transcribed lecture series from the 1980s introducing Buddhism to a Western-educated audience.
@@ -29,15 +29,15 @@ A transcribed lecture series from the 1980s introducing Buddhism to a Western-ed
 We’ll break these up into bite-sized pieces over the coming lessons.
 
 For this module, let's **begin by reading:**
-- Chapters 1–3 of *The Biography* (don't worry: they're short chapters!)
+- Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born (Don't worry: they're short chapters!)
 - Chapter 1 of *What the Buddha Taught*
 - And (optionally) through Chapter 2 of *Fundamentals* if you'd like to learn a bit about ancient India
-- (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path).)
+- (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path) and will return to _Being Nobody_ in the next lesson.)
 
-**In addition** to cracking open our new books, you may want to check out:
+**In addition** to cracking open our new books, see:
 
 {% include content_blurb.html category="av" slug="triumph-over-mara" blurb="
-You may have seen the statue before of the Buddha sitting under the Bodhi tree and touching the Earth. This short video introduces its symbolism.
+This short video introduces the symbolism of a common Buddha statue.
 " %}
 {% include content_blurb.html category="excerpts" slug="prayer-and-worship_malalasekera" blurb='
 Contemporary Buddhists do indeed worship the Buddha, but what do they think about when they bow to the Buddha statue? Is it "prayer" when Buddhists chant?
@@ -54,7 +54,7 @@ In this first lecture, Bhikkhu Bodhi introduces himself and the class and gives 
 {% include inline-av-player.html content="triple-gem_bodhi" %}
 
 ## Further Reading
-If you enjoyed Bhikkhu Bodhi's lecture, I  recommend reading [**_The Buddha and his Dhamma_** by Bhikkhu Bodhi](/content/booklets/buddha-and-his-dhamma_bodhi) now (or later) for a deeper introduction.
+If you enjoyed Bhikkhu Bodhi's lecture, I  recommend reading [his booklet **_The Buddha and his Dhamma_**](/content/booklets/buddha-and-his-dhamma_bodhi) now (or later) for a deeper introduction.
 And for more about what refuge means to a Buddhist, see the excellent treatise: [**_Refuge_** by Thanissaro Bhikkhu](https://www.dhammatalks.org/ebook_index.html#refuge){:target="_blank" ga-event-value="3"}
 
 ## Homework

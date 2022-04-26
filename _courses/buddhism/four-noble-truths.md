@@ -15,7 +15,7 @@ We'll start with Rahula's description of the First Noble Truth (*Dukkha*) in Cha
 Then continue with Chapters 3 and 4 of *Fundamentals*: two lectures covering all four Truths.
 " %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-And, if you've been reading the Buddha's story, continue with Chapters 10–13.
+And, if you've been reading the Buddha's story, continue with Chapters 10–13 on the Buddha's Renunciation.
 " %}
 
 ## Lecture

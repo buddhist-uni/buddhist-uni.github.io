@@ -9,7 +9,7 @@ order: 13
 # Readings
 
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-Continue with Chapters 39–44 of the Buddha's story.
+Continue with Chapters 39–44 on how the Buddha responded to tragedy in the early Saṅgha.
 " %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
 The result of mindfulness is increased mental clarity.
@@ -18,6 +18,7 @@ Chapter 7 ("Concentration") discusses these heightened states of consciousness.
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
 Chapter 7 of *Fundamentals* discusses how Concentration leads to "Wisdom"
 ' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 9 ("Four Kinds of Happiness") outlines the happiness beyond sensual indulgence which is accessible through meditation.' %}
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
 And Chapter 4 of WTBT is optional reading on wisdom's ultimate goal: *Nibbāna*
 " %}

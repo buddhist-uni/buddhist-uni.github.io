@@ -9,7 +9,7 @@ order: 5
 ## Readings
 
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-This lesson, let's read Chapters 4–9." %}
+This lesson, let's read Chapters 4–9 on the Buddha's family." %}
 {% include content_blurb.html category="booklets" slug="on-love_jayasaro" blurb='
 A philosophical essay by a popular "foreign" monk in Thailand analyzing love from the Buddhist perspective.
 ' %}
@@ -22,12 +22,15 @@ Notice, though, how the Buddhaʼs description of love explicitly extends our com
 
 Also, rather than framing the sermon as a description of what love is (“patient, kind” etc), notice how the Buddha instead describes love as a practice, giving us instructions on what “should be done.” This shift away from descriptive philosophy and towards ethical praxis is one of the hallmarks of Buddhism, especially in contrast to Western philosophy.
 
-Also, consider reading this sutta out loud, remembering that the Buddhaʼs words were originally passed down by oral recitation. How does reading it out loud change your experience of the text?
+Consider reading this sutta out loud too, remembering that the Buddhaʼs words were originally passed down by oral recitation.
 ' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="
+Now read Ayya's explanation of this profound discourse in Chapter 8 of _Being Nobody_.
+" %}
 {% include content_blurb.html category="av" slug="loving-kindness-chant_abhayagiri" blurb="
-Now, listen to it chanted in the traditional style by a group of monks in California. 
+And finally, listen to the sutta chanted in the traditional style by a group of monks in California. 
 
-What benefits do you see in chanting this way, compared to simply reading the text as you did above?
+How did your experience of the sutta change since when you read it the first time?
 " %}
 
 ## Lecture

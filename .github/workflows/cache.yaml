@@ -1,0 +1,12 @@
+name: Cache Buster
+on:
+  - deployment_status
+jobs:
+  cloudflare:
+    name: CloudFlare Cache
+    if: github.event.deployment_status.state == "success"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "POST cache_purge:everything"
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE }}/purge_cache" -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" -H "Content-Type:application/json" --data '{"purge_everything":true}'
