@@ -8,15 +8,17 @@ order: 10
 
 # Assigned Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-We continue with Chapters 27–31 of the Buddha's story.
-" %}
+
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb='
 Chapter 6 introduces the Buddhist concept of *anatta* or "Non-Self"
 ' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-Chapters 11 and 12 explain the "Three Characterists" (of which *anatta* is the third)
-and the "Five Aggregates" which is a framework for deconstructing what we take to be our "self": our body and our mind..
+Chapter 11 explains the "Three Characterists" (of which *anatta* is the third)
+' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
+Chapter 10 covers "The Five Aggregates" which are, in brief, the body and mind which we cling to as if they were "us"' %}
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb='
+Chapters 27–31 cover the Buddha winning over several wealthy and powerful patrons, despite his "world-renouncing" teachings
 ' %}
 {% include content_blurb.html category="canon" slug="sn35.238" blurb="
 The Buddha gives a vivid simile which illustrates the Buddhist outlook on life in this memorable sutta.
@@ -26,7 +28,7 @@ The Buddha gives a vivid simile which illustrates the Buddhist outlook on life i
 ### Buddhist Art
 
 Art can be a powerful way to convey religious feeling. How would you depict the above sutta?
-Consider making your own work of Buddhist Art inspired by the above (or something from a previous lesson)..
+Consider making your own work of Buddhist Art inspired by the above (or something from a previous lesson).
 If you do, please share [your poem](https://discourse.suttacentral.net/t/original-dhamma-poems-composed-by-forum-members/20920?u=khemarato.bhikkhu){:target="_blank"}, [doodle](https://discourse.suttacentral.net/t/dhamma-doodles-grin/7206?u=khemarato.bhikkhu){:target="_blank"} or [whatever](https://discourse.suttacentral.net/t/using-art-to-teach-dhamma/7282?u=khemarato.bhikkhu){:target="_blank"} to the SuttaCentral Forum so we can rejoice in your work!
 ' %}
 

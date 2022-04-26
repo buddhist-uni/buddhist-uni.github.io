@@ -8,10 +8,10 @@ order: 15
 
 ## Readings
 
-Thanks for sticking it out to the end of the course!
-This module we'll do something a little different, and read a few more academic articles
-addressing Buddhism and the Western perspective:
-
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+We finish the Buddha's Biography with Chapters 47–48: his final teachings.
+" %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 13 sees this final chapter, not as an "end" but as "A New Beginning"' %}
 {% include content_blurb.html category="articles" slug="buddhism-and-modernity_powers-doug" blurb='
 Individualism, science, freedom and morality are four big, contemporary conversations which Buddhism has much to contribute to.
 ' %}
@@ -28,7 +28,7 @@ I would like to give the final word to Atiśa Dīpaṃkara.
 
 ## Lecture
 
-This video is kinda "out there", but I think it serves well as a humorous capstone:
+This video is kinda "out there", but I think it serves well as a humorous capstone to the course:
 {% include inline-av-player.html content="buddhism-is-out-there-man_exurbia" %}
 
 ## Homework

@@ -8,20 +8,21 @@ order: 12
 
 # Readings
 
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+We return to mindfulness now after having thoroughly covered the previous steps of the Noble Eightfold Path.
+As you read, reflect on how your understanding of "mindfulness" has changed (if at all) since [our second module](/courses/buddhism/mindfulness).
+' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 4 introduces the Four "Divine Abidings"—the mature emotions of a wise and compassionate person.
+' %}
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+We continue with Chapters 37–38, which cover the story of two of the Buddha's disciples who were able to change their ways.
+" %}
 {% include content_blurb.html category="canon" slug="sn45.8" blurb="
 Here is the Canonical definition of the Noble Eightfold Path from the Buddha himself.
 Now that we've covered (most) of the Path in some depth, this should be (mostly) review.
 
 I encourage you to keep this sutta open while listening to the lecture so you can follow along and anchor your understanding in the text.
 " %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
-We return to mindfulness now after having thoroughly covered the previous steps of the Noble Eightfold Path.
-As you read, reflect on how your understanding of "mindfulness" has changed (if at all) since [our second module](/courses/buddhism/mindfulness).
-' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-We continue with Chapters 37–38 of the Buddha's story.
-" %}
-
 
 ## Lecture
 

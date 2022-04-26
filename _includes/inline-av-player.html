@@ -69,7 +69,7 @@
         {% when ".aac" %}{% assign mime = "audio/aac" %}
     {% endcase %}
 <{{ tag }} controls
-    preload="none"
+    preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
     onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0)"
