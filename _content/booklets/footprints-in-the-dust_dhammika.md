@@ -6,6 +6,7 @@ external_url: "https://budblooms.org/2022/04/05/footprints-in-the-dust-the-life-
 drive_links:
   - "https://drive.google.com/file/d/1DU13c7uVflTBOTVe_7PS7y65zr6KDzNJ/view?usp=drivesdk"
 course: ebts
+status: featured
 tags:
   - buddha
   - setting
