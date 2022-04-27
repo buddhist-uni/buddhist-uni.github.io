@@ -8,6 +8,7 @@ source_url: "https://doi.org/10.1515/9783110413083-004"
 drive_links:
   - "https://drive.google.com/file/d/1O58llgr01TSZH-2KUAGC2MwMHFG-FJ4D/view?usp=drivesdk"
 course: chinese-primer
+status: featured
 tags:
   - agama
   - chan-roots
