@@ -9,10 +9,11 @@ course: state
 tags:
   - society
   - activism
+  - power
 year: 2020
 month: sept
 publisher: "the BBC"
 address: London
 ---
 
-Five first-hand accounts of resisting oppression from around the world.
+Five first-hand accounts of resisting oppression over the last 70 years.
