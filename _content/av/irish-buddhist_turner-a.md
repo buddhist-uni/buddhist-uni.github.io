@@ -8,15 +8,16 @@ publisher: nbn
 course: west
 tags:
   - colonialism
-  - burma
+  - burmese
   - class
   - sea
-  - globalization
   - irish
-  - theravada-history
+  - theravada-roots
   - farang
   - places
   - engaged
 ---
 
-The story of an itinerant, Irish laborer who ordains as a Buddhist monk in 1901 in British Burma and then campaigns tirelessly against colonialism.
+The story of an itinerant, Irish laborer who ordains as a Buddhist monk in 1900 in British Burma and then campaigns tirelessly against colonialism.
+
+An interview with the first author of [the book by the same name](/content/monographs/irish-buddhist_turner-cox-bocking).

@@ -10,7 +10,7 @@ The compassionate wisdom and peerless example of the Buddha show us the way out 
 
 ## Readings
 
-I'd like to introduce you now to the other four texts (in addition to _Being Nobody, Going Nowhere_) that we'll be reading through the remainder of this course:
+I'd like to introduce you now to the other four texts (in addition to [_Being Nobody, Going Nowhere_](/content/monographs/being-nobody-going-nowhere_khema)) that we'll be reading through the remainder of this course:
 
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
 This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, accessible to modern readers even today, six decades later. 
