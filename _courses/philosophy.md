@@ -147,6 +147,11 @@ The very core of Buddhist Philosophy, this week we introduce the Buddha’s diag
 {% include content_blurb.html category="articles" slug="right-view-and-the-four-noble-truths_analayo" %}
 - Venerable Analayo shows how the Four Noble Truths are akin to a medical treatment plan: from diagnosis to cure.
 
+{% include content_blurb.html category="excerpts" slug="truth_jayatilleke" blurb="
+It may be appropriate here to take a step back and ask what the Buddha meant by “Truth” in the first place.
+Can we discern something about the Buddha's epistemology from his teachings?
+" %}
+
 {% include content_blurb.html category="canon" slug="mn141" %}
 - The Venerable Sariputta gives a detailed analysis of the Four Noble Truths.
 
