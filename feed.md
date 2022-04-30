@@ -11,7 +11,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 ---
 
 RSS is a web technology that allows you to get notified when content is added to your favorite websites.
-Below you'll find all of our RSS Feeds:
+To use RSS, copy one of the feed URLs below into [an RSS reader](https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators){:target="_blank"} or [RSS-to-email service](https://blogtrottr.com/){:target="_blank"}.
 
 ## Blog Posts
 
