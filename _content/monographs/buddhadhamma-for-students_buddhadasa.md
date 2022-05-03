@@ -12,8 +12,10 @@ tags:
   - lay
   - underage
   - thai
-year: 1972
+year: 1968
+translator: bucknell
 publisher: "Buddha-Nigama"
+address: Bangkok
 ---
 
 > "The person" has to be killed before one can be an arahant. If what we call "the person" has not been killed, there is no way one can be an arahant.
