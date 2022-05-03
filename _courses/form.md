@@ -268,6 +268,8 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - One story, five countries.
 - Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
+{% include content_blurb.html category="reference" slug="electronic-atlas-of-monasteries_ciolek" blurb="Take a second to appreciate the explosive spread of Buddhism across Asia shown in these maps of medieval monasteries." %}
+
 [CBT] Th.208
 {:.mb-0}
 - The early textual basis for equating enlightenment with a "diamond-like" mind.
