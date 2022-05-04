@@ -2,13 +2,6 @@
 title: "Content Tests"
 ---
 
-Some markdown tests:
-
-1. Is ==this text== highlighted?
-	1. Is this a subpoint?
-2. Is `this.someCode()` ?
-3. Is ~~this striked through~~?
-
 A series of tests checking the integrity of the _content data
 
 

@@ -1,4 +1,5 @@
 _site
+.trash
 .obsidian
 .sass-cache
 .jekyll-cache
