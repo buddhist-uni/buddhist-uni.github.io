@@ -1,5 +1,5 @@
 ---
-title: "The Buddha's Remains: *mantra* in *Mañjuśrīmūlakalpa*"
+title: "The Buddha's Remains: *mantra* in the *Mañjuśrīmūlakalpa*"
 authors:
   - "Glenn Wallis"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8915/2808"

@@ -61,7 +61,6 @@ This is an extremely challenging but doable goal for someone new to Chinese. If 
 
 {% include content_box.html category="reference" slug="trainchinese" %}
 {% include content_box.html category="reference" slug="chineseskill" %}
-{% include content_box.html category="reference" slug="drops" %}
 {% include content_box.html category="reference" slug="chinese-grammar_ctcfl" %}
 
 And even for the bilingual English-Chinese speakers, I recommend everyone get:
