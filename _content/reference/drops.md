@@ -2,12 +2,10 @@
 title: "Drops"
 publisher: "Kahoot!"
 year: 2017
-course: chinese-primer
 external_url: "https://languagedrops.com/"
 tags:
   - mandarin
   - thai-language
-  - languages
   - japanese-language
   - korean-language
   - vietnamese-language
