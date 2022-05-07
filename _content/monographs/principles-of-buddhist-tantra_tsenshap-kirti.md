@@ -2,8 +2,7 @@
 title: "Principles of Buddhist Tantra: A Commentary on Chöjé Ngawang Palden's *Illumination of the Tantric Tradition*"
 authors:
   - "Kirti Tsenshap Rinpoché"
-translator: "Ian Coghlan"
-editor: "Voula Zarpani"
+translator: "Ian Coghlan and Voula Zarpani"
 course: tantric
 tags:
   - gelug
