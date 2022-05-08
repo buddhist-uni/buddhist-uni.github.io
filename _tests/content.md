@@ -19,10 +19,18 @@ A series of tests checking the integrity of the _content data
 | Content unexpectedly missing links | {% assign failures = site.content | where_exp: "c", "c.external_url == nil" | where_exp: "c", "c.drive_links == nil" | where_exp: "c", "c.source_url == nil" | where_exp: "c", "c.file_links == nil" | where_exp: "c", "c.category != 'monographs'" | where_exp: "c", "c.status != 'rejected'" | where_exp: "c", "c.subcat != 'film'" %}{% if failures.size == 0 %}Pass ✅{% else %}FAIL ❌{% endif %} | There are {{ failures.size }} missing links{% if failures.size >0 %}: {{ failures | map: "slug" | array_to_sentence_string }}{% endif %}.
 | Content missing year | {% assign failures = site.content | where_exp: "c", "c.year == nil" %}{% if failures.size == 0 %}Pass ✅{% else %}FAIL ❌{% endif %} | There are {{ failures.size }} missing years{% if failures.size >0 %}: {{ failures | map: "slug" | array_to_sentence_string }}{% endif %}.
 | Content missing from its course | {% assign failures = "" | split: "" %}{% for course in site.courses %}{% if course.layout == "multipartcourse" %}{% continue %}{% endif %} {% assign allcc = site.content | where: "course", course.slug | where_exp: "c", "c.category != 'canon'" | where: "c", "c.series != 'ms-study_bodhi'" %}{% for content in allcc %}{% unless course.content contains content.slug %}{% assign failures = failures | push: content %}{% endunless %}{% endfor %}{% endfor %}{% if failures.size == 0 %}Pass ✅{% else %}FAIL ❌{% endif %} | There are {{ failures.size }} found{% if failures.size >0 %}: {{ failures | map: "slug" | array_to_sentence_string }}{% endif %}.
-{% if site.partial_build %}| Partial build filters useless stuff | {% assign torem = "" | split: "" %}{% assign courseslugs = site.courses | map: "slug" %}{% assign manualslugs = "engaged,nature,chan" | split: "," %}{% assign tagslugs = site.tags | map: "slug" %}{% assign courseslugs = tagslugs | concat: courseslugs | concat: manualslugs %}{% for c in site.content %}{% if c.course and courseslugs contains c.course %}{% continue %}{% endif %}{% assign f = "go" %}{% for p in site.posts %}{% if p.content contains c.slug %}{% assign f = "pass" %}{% break %}{% endif %}{% endfor %}{% if f == "pass" %}{% continue %}{% endif %}{% assign torem = torem | push: c %}{% endfor %}{% if torem.size == 0 %}Pass ✅{% else %}FAIL ❌{% endif %} | Found {{ torem.size }} useless pieces{% if torem.size > 0 %} (listed below).
+{% if site.partial_build %}| Partial build filters useless stuff | {% assign torem = "" | split: "" %}{% assign courseslugs = site.courses | map: "slug" %}{% assign manualslugs = "tantric,nature,chan,samatha,vipassana,west,nuns,view,thought,society,inner,wider" | split: "," %}{% assign tagslugs = site.tags | map: "slug" %}{% assign courseslugs = tagslugs | concat: courseslugs | concat: manualslugs %}{% for c in site.content %}{% if c.course and courseslugs contains c.course %}{% continue %}{% endif %}{% assign f = "go" %}{% for p in site.posts %}{% if p.content contains c.slug %}{% assign f = "pass" %}{% break %}{% endif %}{% endfor %}{% if f == "pass" %}{% continue %}{% endif %}{% assign torem = torem | push: c %}{% endfor %}{% if torem.size == 0 %}Pass ✅{% else %}FAIL ❌{% endif %} | Found {{ torem.size }} useless pieces{% if torem.size > 0 %} (listed below).{% endif %}
+| Partial build doesn't filter useful stuff | {% assign toadd = '' | split: '' %}{% for path in site.exclude %}{% unless path contains "_content/" %}{% continue %}{% endunless %}{% assign slug = path | split: "/" | last | split: "." | first%}{% for p in site.pages %}{% if p.content contains slug %}{% assign toadd = toadd | push: path %}{% break %}{% endif %}{% endfor %}{% endfor %}{% if toadd.size == 0 %}Pass ✅ | Found no useful pieces excluded. {% else %}FAIL ❌ | Found {{ toadd.size }} useful pieces to add (see below). {% endif %}
+
+{% if torem.size > 0 or toadd.size > 0 %}
+`_quick_build.yml` changes:
 
 ```yml
+add_to_exclude:
 {% for c in torem %}    - {{ c.path }}
+{% endfor %}
+remove_from_exclude:
+{% for c in toadd %}    - {{ c }}
 {% endfor %}```
-{% endif %}.{% endif %}
+{% endif %}{% endif %}
 

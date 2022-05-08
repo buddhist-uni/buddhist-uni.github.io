@@ -13,17 +13,17 @@
   <noscript>
     <link rel="stylesheet" href="{{ gfont }}" />
   </noscript>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?u={% assign cssCacheToken = site.time | date: "%s" | slice: -3, 3 %}{{ cssCacheToken }}">
   {% for cc in page.custom_css %}
-  <link rel="stylesheet" href="/assets/css/{{cc}}.css">{% endfor %}
-  <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/imgs/ms-icon-144x144.png %}?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/imgs/apple-touch-icon.png %}?v=1">
-  <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/imgs/favicon-32x32.png %}?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/imgs/favicon-16x16.png %}?v=1">
-  <link rel="manifest" href="{% link site.webmanifest %}?v=1">
-  <link rel="manifest" href="{% link manifest.json %}?v=1">
-  <link rel="mask-icon" href="{% link assets/imgs/logo.svg %}?v=1" color="#5E2417">
+  <link rel="stylesheet" href="/assets/css/{{cc}}.css?u={{ cssCacheToken }}">{% endfor %}
+  <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/imgs/ms-icon-144x144.png %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/imgs/apple-touch-icon.png %}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/imgs/favicon-32x32.png %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/imgs/favicon-16x16.png %}">
+  <link rel="manifest" href="{% link site.webmanifest %}">
+  <link rel="manifest" href="{% link manifest.json %}">
+  <link rel="mask-icon" href="{% link assets/imgs/logo.svg %}" color="#5E2417">
   <meta name="msapplication-TileColor" content="#5E2417">
   <meta name="theme-color" content="#5E2417">
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
