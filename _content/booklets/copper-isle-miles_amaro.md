@@ -11,4 +11,4 @@ tags:
 year: 2021
 ---
 
-A short, photo-diary of Ajahn Amaro's 2019 pilgrimage to the holy sites of Sri Lanka.
+A short photo-diary of Ajahn Amaro's 2019 pilgrimage to the holy sites of Sri Lanka.
