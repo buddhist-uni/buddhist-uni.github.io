@@ -9,8 +9,7 @@ tags:
   - wider
 year: 1994
 month: oct
+olid: OL28995644M
 ---
 
 > basic realities about the world in which we live
-
-> knowledge of the truth underpins the functioning of free societies
