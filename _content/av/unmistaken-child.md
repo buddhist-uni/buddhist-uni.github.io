@@ -2,7 +2,7 @@
 title: Unmistaken Child
 authors:
   - Nati Baratz
-external_url: https://youtu.be/z8LSha1D1lE
+external_url: "https://youtu.be/Rvu7N4wyFpk"
 status: featured
 course: cosmology
 tags:

@@ -1,0 +1,16 @@
+---
+title: "The World Factbook"
+authors:
+  - "The CIA"
+external_url: "https://www.cia.gov/the-world-factbook/countries/world/"
+course: world
+tags:
+  - places
+  - wider
+year: 1994
+month: oct
+---
+
+> basic realities about the world in which we live
+
+> knowledge of the truth underpins the functioning of free societies
