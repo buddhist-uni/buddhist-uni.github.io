@@ -343,10 +343,9 @@ exclude:
     - _content/monographs/traffic-in-heirarchy-keeler-ward.md
     - _content/reference/agama-research-group.md
     - _content/reference/agama-translations_bingenheimer.md
-    - _content/reference/ati.md
-    - _content/reference/buddhadust.md
     - _content/reference/comparative-dhp_anandajoti.md
     - _content/reference/dpr.md
+    - _content/reference/buddhadust_olds-mike.md
     - _content/reference/gboard-dict.md
     - _content/reference/handful-of-leaves_geoff.md
     - _content/reference/kinh-nhat-tung_phineas-pta.md
@@ -587,4 +586,31 @@ exclude:
     - _content/booklets/message-in-samsara_ottama-ashin.md
     - _content/articles/bodhisattva-precepts-and-their-compatability-with-vinaya_chiu-tzulung.md
     - _content/booklets/relevance-of-buddhist-philosophy_jayatilleke.md
+    - _content/reference/drops.md
+    - _content/booklets/jesus-and-the-buddha_dhammika.md
+    - _content/booklets/buddhas-teachings_geoff.md
+    - _content/booklets/common-questions_sheng-yen.md
+    - _content/av/stories-deception-bible_atwood.md
+    - _content/booklets/facing-the-future_bodhi.md
+    - _content/booklets/buddhism-and-science.md
+    - _content/booklets/dhamma-for-the-asking-1_suchart.md
+    - _content/monographs/anatomy-of-a-moment_cercas-javier.md
+    - _content/av/listening-to-voices_ozeki-klein.md
+    - _content/reference/jataka-stories_appleton.md
+    - _content/reference/pali-windows-keybindings.md
+    - _content/monographs/lotus-transcendent.md
+    - _content/articles/buddhism-changed-the-west_solnit.md
+    - _content/articles/engaged-buddhism_yarnall.md
+    - _content/av/time_jayasaro.md
+    - _content/booklets/compassion-now_karmapa.md
+    - _content/canon/dhammapada_gnanananda.md
+    - _content/av/free-speech-crisis_hobbes-michael.md
+    - _content/papers/footprints-of-the-buddha_rambelli-fabio.md
+    - _content/articles/bodhi-and-arahattaphala_werner-karel.md
+    - _content/av/creatures-of-cain_milam-erika.md
+    - _content/av/why-adults-lose-the-beginners-mind_gopnik-klein.md
+    - _content/av/resistance-and-protest_bbc-history-hour.md
+    - _content/monographs/irish-buddhist_turner-cox-bocking.md
+    - _content/av/trauma_van-der-kolk-bessel.md
+    - _content/booklets/copper-isle-miles_amaro.md
 
