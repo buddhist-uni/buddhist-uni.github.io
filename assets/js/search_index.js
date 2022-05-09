@@ -202,7 +202,14 @@ function displaySearchResults(results) {
 }
 
 self.onmessage = function(e) {
-    var results = idx.search(e.data);
+    var results = [];
+    try {
+      results = idx.search(e.data);
+    } catch (err) {
+      if (err.message.indexOf("unrecognised field") >= 0 && e.data.indexOf(":") >= 0) {
+        results = idx.search(e.data.replaceAll(":",""));
+      } else { throw err; }
+    }
     if (!results.length){
       var words = e.data.split(" ");
       if (words.find(function(w){ return w.length <= 2; }) == undefined)

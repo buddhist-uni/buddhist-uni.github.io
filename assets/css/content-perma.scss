@@ -54,7 +54,7 @@ div.content_rating div.star_rating {
     font-size: 110%;
 }
 
-article.content-perma div.post-content {
+div.post-content {
     font-size: 18px;
     @include media-query($on-palm) {
         font-size: 17px;
@@ -83,12 +83,20 @@ article.content-perma header img {
     @extend %olcoverimg;
 }
 
-article.content-perma .content_links .source {
+div.content_links {
+  display: inline-block;
+}
+
+.content_size {
+  padding-left: 0.5em;
+}
+
+.content_links .source {
     position: relative;
     top: 2px;
 }
 
-article.content-perma .content_links .copyright {
+.content_links .copyright {
     summary {
         width: fit-content;
         padding-right: 20px;
