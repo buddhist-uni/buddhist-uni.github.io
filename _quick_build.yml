@@ -12,6 +12,8 @@ feed:
 exclude:
     - Gemfile
     - Gemfile.lock
+    - .obsidian/
+    - .github/
     - node_modules
     - vendor/bundle/
     - vendor/cache/

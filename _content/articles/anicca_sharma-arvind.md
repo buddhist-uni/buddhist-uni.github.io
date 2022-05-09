@@ -13,6 +13,7 @@ year: 1979
 journal: pbr
 volume: 4
 number: 1
+pages: "16--24"
 ---
 
 This essay gives an introduction to the three characteristics and, by analysis, their function.
