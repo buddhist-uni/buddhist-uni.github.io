@@ -13,6 +13,7 @@ month: sep
 publisher: Samsara Films
 subcat: film
 base_value: 1.3
+minutes: 103
 ---
 
 > This is thousands and thousands of times more important than my own life.
