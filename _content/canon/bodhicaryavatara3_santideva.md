@@ -5,7 +5,8 @@ authors:
 drive_links: ["https://drive.google.com/file/d/1Fijo8lm5O6ou9su_lPVmsOMn5-beyPVz/view?usp=drivesdk"]
 external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhicharyavatara-3"
 course: mahayana
-year: 720
+year: 2007
+translator: "Adam Pearcey"
 ---
 
 > For all the beings ailing in the world,  
