@@ -6,7 +6,7 @@ authors:
 external_url: "https://wisdomexperience.org/wisdom-podcast/jessica-pimentel/"
 course: american
 tags:
-  - tibetan
+  - tantric
   - daily-life
 year: 2020
 month: oct

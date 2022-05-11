@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1QWD3HHNnQjqh14mU0X0DWKLjJLrqoOoM/view?usp=drivesdk"
 course: meditation
 tags:
-  - tibetan
+  - tantric
   - dzogchen
   - nyingma
   - daily-life
