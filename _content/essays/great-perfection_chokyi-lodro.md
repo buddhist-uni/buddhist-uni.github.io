@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1zRyGyAJIvmomir57yLr8dZnCxAOcss--/view?usp=drivesdk"
 course: time
 tags:
-  - tibetan
+  - tantric
   - dzogchen
   - stages
 year: 2017
