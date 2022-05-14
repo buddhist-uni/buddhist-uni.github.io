@@ -17,4 +17,4 @@ number: 1
 pages: "51--96"
 ---
 
-Does tantric ritual "mean" anything?
+Is it even fair to ask what tantric rituals mean? Or are rituals what create meaning?

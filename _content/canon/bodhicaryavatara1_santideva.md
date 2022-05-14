@@ -1,5 +1,6 @@
 ---
 title: "_Bodhicaryāvatāra_ Chapter 1: The Benefits of Bodhicitta"
+subcat: poetry
 authors:
   - santideva
 drive_links: ["https://drive.google.com/file/d/1o1pHL63hIJsiHrS_L5C4afdinOtnWZkw/view?usp=drivesdk"]
