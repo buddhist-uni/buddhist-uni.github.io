@@ -17,6 +17,7 @@ tags:
   - time
   - vinaya-pitaka
   - monastic
+  - decline
 ---
 
 > laxity within the Sangha is stressed ubiquitously by the Buddha himself as the cause of the decline

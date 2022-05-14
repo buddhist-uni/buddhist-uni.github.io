@@ -8,7 +8,7 @@ course: form
 tags:
   - nyingma
   - dedication
-  - tibetan
+  - tantric
 ---
 
 A simple, four line dedication prayer from the Nyingma Tradition.

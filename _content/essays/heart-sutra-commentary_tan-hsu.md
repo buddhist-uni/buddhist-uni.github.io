@@ -5,6 +5,7 @@ authors:
 editor: "Nien An and Wang K'ai"
 translator: "Master Lok To"
 external_url: "http://www.buddhanet.net/e-learning/heartstr.htm"
+base_value: 1.75
 tags:
   - chinese
   - mahayana
