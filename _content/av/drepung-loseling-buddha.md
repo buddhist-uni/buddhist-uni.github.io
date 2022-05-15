@@ -13,6 +13,7 @@ tags:
   - bart
 year: 2020
 month: mar
+minutes: 1
 ---
 
 A very short video, explaining the symbolism behind a common, Tibetan Buddha statue.

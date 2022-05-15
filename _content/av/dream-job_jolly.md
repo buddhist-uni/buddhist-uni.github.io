@@ -18,6 +18,7 @@ month: aug
 publisher: sgi
 series: buddhist-solutions_sgi
 number: 3
+minutes: 43
 ---
 
 > figuring out what to do with your life and making it happen against all odds

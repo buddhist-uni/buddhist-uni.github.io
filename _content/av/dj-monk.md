@@ -11,6 +11,7 @@ tags:
   - music
   - japanese-monastic
   - mahayana-chanting
+minutes: 4
 ---
 
 Jodo Shinshu priest Gyosen Asakura takes his family vocation in a new direction.

@@ -10,6 +10,7 @@ tags:
 year: 2009
 month: nov
 publisher: aam
+minutes: 20
 ---
 
 > the deer can still be seen roaming around but the monasteries that were built here lie mostly in ruins

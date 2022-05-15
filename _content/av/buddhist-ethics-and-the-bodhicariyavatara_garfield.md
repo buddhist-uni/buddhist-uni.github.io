@@ -14,6 +14,7 @@ year: 2021
 month: sep
 series: bsp
 number: 3
+minutes: 84
 ---
 
 > There's enough overlap to make conversation possible and enough difference to make that conversation worthwhile.

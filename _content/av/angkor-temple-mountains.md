@@ -9,6 +9,7 @@ year: 2009
 publisher: aam
 editor: "Brian Hogarth and Michael Rohde"
 subcat: film
+minutes: 5
 ---
 
 A short film introducing the famous Cambodian temple ruins.

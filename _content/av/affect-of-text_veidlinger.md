@@ -14,6 +14,7 @@ tags:
 status: featured
 year: 2011
 month: jun
+minutes: 2
 ---
 
 Textual fundamentalism requires texts.

@@ -12,6 +12,7 @@ tags:
   - medicine
   - communication
 publisher: PBS
+minutes: 54
 ---
 
 A doctor confronts the end of life.

@@ -13,6 +13,7 @@ tags:
   - sea
 year: 2004
 publisher: "GTZ / GIZ"
+minutes: 37
 ---
 
 How government and market forces are reshaping traditional life in the Lao highlands.

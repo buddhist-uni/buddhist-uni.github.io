@@ -11,6 +11,7 @@ tags:
   - meditation
 year: 2011
 month: jan
+minutes: 44
 ---
 
 A talk giving a comprehensive overview of Buddhist practice, based on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi){:target="_blank" ga-event-value="0.3"}.

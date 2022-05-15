@@ -11,6 +11,7 @@ publisher: aam
 editor: "Michael Rohde"
 subcat: film
 base_value: 0.15
+minutes: 5
 ---
 
 A short film introducing three, famous, Chinese, Buddhist caves.

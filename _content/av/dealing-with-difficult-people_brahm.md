@@ -15,6 +15,7 @@ tags:
   - daily-life
   - speech
   - chaplaincy
+minutes: 67
 ---
 
 Ajahn Brahm gives a talk on how to achieve harmony in real life, where we all-too-often meet difficult people.

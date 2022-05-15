@@ -12,6 +12,7 @@ tags:
   - ideology
 year: 2007
 month: may
+minutes: 38
 ---
 
 > Are we really living according to our ideals?

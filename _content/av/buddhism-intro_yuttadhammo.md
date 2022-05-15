@@ -11,6 +11,7 @@ tags:
   - canadian
 year: 2010
 month: feb
+minutes: 41
 ---
 
 A concise introduction and overview of Buddhism. A perfect entry point for beginners, and touchstone for everyone.

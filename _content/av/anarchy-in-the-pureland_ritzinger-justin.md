@@ -11,6 +11,7 @@ tags:
   - chinese
   - pureland
 publisher: nbn
+minutes: 52
 ---
 
 The Buddhist modernizer Taixu was no reluctant translator, but was rather a committed utopian living in a chaotic time.

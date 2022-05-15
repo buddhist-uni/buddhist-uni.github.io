@@ -12,6 +12,7 @@ year: 2019
 month: apr
 series: classical-ideas
 number: 109
+minutes: 59
 ---
 
 A good introduction to some of the academic buzz-words thrown around when discussing contemporary, American Buddhism.

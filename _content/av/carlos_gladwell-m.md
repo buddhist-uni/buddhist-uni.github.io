@@ -16,6 +16,7 @@ tags:
 series: revisionist-history
 status: featured
 number: 4
+minutes: 37
 ---
 
 > A cautionary tale about how hard it is to rise from the bottom to the top--and why the American school system, despite its best efforts, continues to leave an extraordinary amount of talent on the table.

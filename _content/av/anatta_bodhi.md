@@ -14,6 +14,7 @@ course: buddhism
 tags:
   - inner
   - emptiness
+minutes: 64
 ---
 
 An introduction to the Five Aggregates and the Three Characteristics which underlie the doctrine of "Not-Self"

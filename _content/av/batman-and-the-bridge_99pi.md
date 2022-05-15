@@ -15,6 +15,7 @@ tags:
   - austin
 series: 99pi
 number: 432
+minutes: 33
 ---
 
 > but someone was about to arrive in Texas to stick up for these bats

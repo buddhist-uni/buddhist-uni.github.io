@@ -11,6 +11,7 @@ tags:
   - violence-after-ww2
 year: 2019
 month: apr
+minutes: 37
 ---
 
 > They want to make clear that other ways of thinking about humanity that are based on conceptions of biological difference and hierarchy are wrong.

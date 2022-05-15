@@ -8,6 +8,7 @@ tags:
   - power
 year: 2008
 month: may
+minutes: 54
 ---
 
 > Practicing Buddhism is the art of being peace, the art of promoting peace, in society and in the world. We all should learn this art. 

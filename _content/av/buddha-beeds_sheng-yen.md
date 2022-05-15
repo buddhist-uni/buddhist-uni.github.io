@@ -9,6 +9,7 @@ tags:
   - form
   - chinese
   - mantra
+minutes: 8
 ---
 
 A short explanation of the Buddhist "rosary" beed necklace.

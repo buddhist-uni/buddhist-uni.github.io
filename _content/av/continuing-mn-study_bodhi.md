@@ -11,6 +11,7 @@ series: mn-study_bodhi
 number: 11
 year: 2014
 base_value: 0.6
+minutes: 9039
 ---
 
 Bhikkhu Bodhi goes through and completes the Majjhimā Nikāya in this final series of lectures, covering all the suttas he skipped in the previous ten (!) parts.

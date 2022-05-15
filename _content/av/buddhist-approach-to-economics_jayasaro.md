@@ -9,6 +9,7 @@ tags:
   - becon
 year: 2008
 month: dec
+minutes: 89
 ---
 
 Ajahn Jayasaro's idea of a "Buddhist economics."

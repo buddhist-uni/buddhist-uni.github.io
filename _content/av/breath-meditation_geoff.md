@@ -9,6 +9,7 @@ status: rejected
 tags:
   - anapanasati
   - guided
+minutes: 126
 ---
 
 A guided meditation on the breath by Ajahn Geoff.

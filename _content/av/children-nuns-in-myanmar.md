@@ -11,6 +11,7 @@ tags:
 year: 2019
 month: dec
 publisher: "South China Morning Post"
+minutes: 3
 ---
 
 A short video on the girls who shave their heads to escape war.

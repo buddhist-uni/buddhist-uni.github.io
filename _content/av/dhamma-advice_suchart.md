@@ -11,6 +11,7 @@ tags:
   - function
   - navakovada
   - thai-forest
+minutes: 8
 ---
 
 A short overview of Buddhism from my own teacher. An excellent talk to revisit now and then.

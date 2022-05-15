@@ -10,6 +10,7 @@ tags:
   - ambulit
 address: Mississippi
 year: 2011
+minutes: 7
 ---
 
 Japanese chanting rendered as an African-American spiritual.

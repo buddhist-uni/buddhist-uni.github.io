@@ -12,6 +12,7 @@ tags:
   - ebts
 year: 2008
 base_value: 0.2
+minutes: 5
 ---
 
 A short introduction to the *Dhammapada*, from Gil Fronsdal's 2008 translation, read by the author.

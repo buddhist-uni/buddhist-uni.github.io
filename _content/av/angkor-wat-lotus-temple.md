@@ -7,6 +7,7 @@ tags:
 year: 2007
 publisher: "National Geographic"
 subcat: film
+minutes: 10
 ---
 
 A short,  nonverbal film introducing the visual splendor of the Angkor Wat ruins.

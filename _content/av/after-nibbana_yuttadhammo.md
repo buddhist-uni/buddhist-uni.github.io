@@ -10,6 +10,7 @@ tags:
   - vipassana
 year: 2010
 month: may
+minutes: 19
 ---
 
 "What's next?" doesn't apply to one who has let go of everything.

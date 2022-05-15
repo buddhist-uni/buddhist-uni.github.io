@@ -12,6 +12,7 @@ series: mn-study_bodhi
 number: 1
 year: 2003
 base_value: 0.6
+minutes: 323
 ---
 
 A series of five lectures covering MN 26, 4, and 36 which tell the story of the Buddha's spiritual quest and enlightenment.

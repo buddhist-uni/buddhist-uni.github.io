@@ -10,6 +10,7 @@ tags:
   - karma
 publisher: "Glassnote Records"
 base_value: 0.15
+minutes: 6
 ---
 
 > Basically, I wanna know  

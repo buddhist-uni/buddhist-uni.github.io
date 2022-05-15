@@ -14,6 +14,7 @@ tags:
   - chaplaincy
   - problems
   - family
+minutes: 74
 ---
 
 > That tree doesn't need to be more than the tree. A tree just needs to be a tree. But our society always asks us to be more, right? Can't we just be a human? Can we just be who we are?
