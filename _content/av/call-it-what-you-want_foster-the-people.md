@@ -13,6 +13,7 @@ tags:
 year: 2011
 base_value: 0.2
 status: featured
+minutes: 4
 ---
 
 > Yeah, we're locked up in ideas  

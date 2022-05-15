@@ -6,6 +6,7 @@ course: activism
 tags:
   - engaged
 year: 2020
+minutes: 18
 ---
 
 > Look at the Dalai Lama. For fifty years he's been cracking jokes about his torturers.

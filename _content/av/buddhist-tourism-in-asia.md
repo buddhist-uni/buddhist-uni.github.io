@@ -12,6 +12,7 @@ tags:
 year: 2020
 month: dec
 publisher: nbn
+minutes: 62
 ---
 
 > While tourism does disrupt, it is not at odds with larger Buddhist goals to spread the Dharma.

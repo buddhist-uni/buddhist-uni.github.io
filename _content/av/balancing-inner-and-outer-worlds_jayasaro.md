@@ -13,6 +13,7 @@ tags:
   - world
 year: 2008
 month: jun
+minutes: 105
 ---
 
 Some introductory words on Buddhism and basic instructions for meditators.

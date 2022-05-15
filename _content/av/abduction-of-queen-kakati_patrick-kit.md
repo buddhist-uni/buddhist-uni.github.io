@@ -13,6 +13,7 @@ tags:
   - bart
   - gandhara
   - inner
+minutes: 15
 ---
 
 The story behind [this odd, ancient statue](https://en.wikipedia.org/wiki/File:Gandhara,_garuda_adduce_la_regina_kakati,_periodo_kushan_200-400.JPG){:target="_blank"}

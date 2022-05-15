@@ -13,6 +13,7 @@ number: 6
 course: buddhism
 tags:
   - lay
+minutes: 140
 ---
 
 What did the Buddha teach to lay people, unable to renounce the world?

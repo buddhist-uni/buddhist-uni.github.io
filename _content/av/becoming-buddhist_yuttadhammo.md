@@ -8,6 +8,7 @@ external_url: "https://archive.org/details/becoming-buddhist-2010-08-29_yuttadha
 formats: [m4a]
 drive_links: ["https://drive.google.com/file/d/18jTvv7kupEdwVEfhRGqUqbLMndXadjC1/view?usp=drivesdk"]
 course: form
+minutes: 36
 ---
 
 Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about "taking refuge"

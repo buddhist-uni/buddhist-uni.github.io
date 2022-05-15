@@ -13,6 +13,7 @@ tags:
 series: song-exploder
 base_value: 0.1
 number: 158
+minutes: 24
 ---
 
 The Cranberries discuss what it was like to make their last album without their lead vocalist.

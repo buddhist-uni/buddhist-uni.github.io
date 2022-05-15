@@ -15,6 +15,7 @@ tags:
   - abhidhamma
 base_value: 1.1
 year: 1981
+minutes: 797
 ---
 
 These classic recordings give a thorough and dense overview of current, orthodox Theravada doctrine.

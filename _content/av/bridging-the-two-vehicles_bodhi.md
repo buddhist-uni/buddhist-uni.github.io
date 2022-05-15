@@ -9,6 +9,7 @@ course: form
 tags:
   - west
 status: featured
+minutes: 86
 ---
 
 Bhikkhu Bodhi encourages us, in this age of globalization, to recognize our shared Buddhist heritage and to bridge the gaps between the Buddhist schools which time and physical distance have created.

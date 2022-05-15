@@ -12,6 +12,7 @@ tags:
   - taiwanese
   - music
   - mahayana-chanting
+minutes: 18
 ---
 
 A lonely temple, nestled in the mountains of central Taiwan, says goodnight.

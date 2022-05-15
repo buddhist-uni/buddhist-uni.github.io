@@ -9,6 +9,7 @@ course: society
 tags:
   - language
   - internet
+minutes: 83
 ---
 
 A brief linguistic analysis of internet communication.

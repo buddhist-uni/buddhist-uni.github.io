@@ -16,6 +16,7 @@ tags:
   - mindfulness
 subcat: poetry
 journal: "The New Yorker"
+minutes: 5
 ---
 
 > slender citrine lip onto which I place, gently, this first handful of hair

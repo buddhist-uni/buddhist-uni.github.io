@@ -11,6 +11,7 @@ course: monastic
 tags:
   - west
   - american
+minutes: 20
 ---
 
 Some nuns in California share their experience of monastic life.

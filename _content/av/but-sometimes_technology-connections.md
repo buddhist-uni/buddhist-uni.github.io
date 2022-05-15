@@ -12,6 +12,7 @@ tags:
 year: 2018
 month: may
 address: Chicago
+minutes: 19
 ---
 
 > The fact that some intersections are still using incandescent bulbs is a little odd.

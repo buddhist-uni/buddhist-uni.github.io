@@ -12,6 +12,7 @@ series: mn-study_bodhi
 number: 2
 base_value: 0.4
 year: 2003
+minutes: 360
 ---
 
 A series of six lectures on how to approach Buddhism, covering [The Kālāma Sutta](https://bodhimonastery.org/to-the-kalamas.html){:target="_blank" ga-event-value="0.3"} in addition to MN 60, 46, and 95.

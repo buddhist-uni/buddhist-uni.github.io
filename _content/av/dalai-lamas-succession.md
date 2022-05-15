@@ -12,6 +12,7 @@ tags:
 year: 2009
 month: jan
 publisher: "the Australian Broadcasting Corporation"
+minutes: 15
 ---
 
 Can the Karmapa be accepted by his rival sect?

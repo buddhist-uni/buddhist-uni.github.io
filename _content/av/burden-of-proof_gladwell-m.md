@@ -14,6 +14,7 @@ tags:
   - sports
 series: revisionist-history
 number: 22
+minutes: 35
 ---
 
 > How much evidence do we need of the harmfulness of something before we act?

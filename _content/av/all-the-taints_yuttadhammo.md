@@ -11,6 +11,7 @@ tags:
   - imagery
 year: 2009
 month: sep
+minutes: 65
 ---
 
 A more detailed commentary on [MN 2 (the Sabbāsava Sutta)](https://suttacentral.net/mn2/en/bodhi){:target="_blank" ga-event-value="0.35"}.

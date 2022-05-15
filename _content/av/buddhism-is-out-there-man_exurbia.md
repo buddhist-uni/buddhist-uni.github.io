@@ -9,6 +9,7 @@ tags:
   - west
 year: 2021
 month: jun
+minutes: 20
 ---
 
 > This is not an attempt to convert anyone.

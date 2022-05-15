@@ -12,6 +12,7 @@ tags:
 publisher: "Magidson Films"
 external_url: "https://youtu.be/iHRpn_5nlDA"
 base_value: 0.85
+minutes: 97
 ---
 
 > It regards our planet and the life upon it. It stands outside of historical time. To another race, it would communicate: This is what you would see if you came here.  

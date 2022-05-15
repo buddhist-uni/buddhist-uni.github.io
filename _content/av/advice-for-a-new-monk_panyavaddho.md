@@ -8,6 +8,7 @@ tags:
   - navakovada
   - thai-forest
 year: 2002 # total guess
+minutes: 75
 ---
 
 > Until one has a taste of _samādhi_, one doesn’t know the value of the Dhamma and the teaching. Until a bhikkhu experiences _samādhi_, he fails to see the value of the Buddha’s teaching. He may read about it in books, but paper and ink are not very tasty food!

@@ -15,6 +15,7 @@ tags:
   - cold-war
   - bombs
   - anthropology  
+minutes: 51
 ---
 
 > I had this sureal sense of vertigo where I felt like I was constantly teetering over the edge of something that I didn't understand. The entire town was built on top of bombs.

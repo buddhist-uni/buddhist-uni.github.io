@@ -14,6 +14,7 @@ tags:
 status: featured
 year: 2020
 month: aug
+minutes: 35
 ---
 
 A sober analysis of the militant history—and future—of extra-planetary geopolitics.

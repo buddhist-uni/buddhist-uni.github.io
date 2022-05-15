@@ -12,6 +12,7 @@ tags:
 year: 2016
 month: jun
 base_value: 0.9
+minutes: 169
 ---
 
 Five classic lectures by Faraday on the physics of a candle, restaged by the "Engineering Guy" YouTube Channel.

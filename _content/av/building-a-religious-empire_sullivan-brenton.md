@@ -12,6 +12,7 @@ tags:
 year: 2021
 status: featured
 month: apr
+minutes: 72
 ---
 
 How did the Geluk school come to dominate Tibetan Buddhism?

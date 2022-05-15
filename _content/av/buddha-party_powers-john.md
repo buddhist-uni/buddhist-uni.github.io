@@ -12,6 +12,7 @@ tags:
   - chinese
   - china
   - communication
+minutes: 53
 ---
 
 > Even the most bizarre propaganda claims [about Tibet] are accepted by Hans [without] any apparent qualms about them. But on the part of Tibetans, the messages are completely counter-productive. The more the propaganda is imposed on them, the more resolute they become in their rejection of that propaganda.

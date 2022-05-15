@@ -11,6 +11,7 @@ course: ebts
 tags:
   - buddha
   - pedagogy
+minutes: 61
 ---
 
 An introductory lecture by Ajahn Brahmali in which he shares with us his love and enthusiasm for the Buddha’s teachings.

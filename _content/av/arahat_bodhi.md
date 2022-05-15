@@ -12,6 +12,7 @@ tags:
   - tranquility-and-insight
   - philosophy
 year: 2013
+minutes: 54
 ---
 
 A solid, scholastic introduction to what it means to graduate from Buddhist practice.

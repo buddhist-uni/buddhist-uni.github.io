@@ -12,6 +12,7 @@ tags:
   - becon
 year: 2007
 month: apr
+minutes: 43
 ---
 
 Ajahn Jayasaro explains to a couple Thai teachers what "Buddhist Education" means to him and for the world.

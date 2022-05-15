@@ -13,6 +13,7 @@ tags:
 year: 2016
 month: jan
 publisher: wisdom
+minutes: 58
 ---
 
 Stephen Batchelor explains how exposure to a wide variety of Buddhist traditions led him to craft his current, "secular" approach.

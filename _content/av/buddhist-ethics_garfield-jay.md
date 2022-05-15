@@ -14,6 +14,7 @@ tags:
 year: 2022
 month: feb
 publisher: nbn
+minutes: 64
 ---
 
 > The third, and most important, reason [Buddhism uses narratives to communicate its ethics] is that we are narratives ourselves.

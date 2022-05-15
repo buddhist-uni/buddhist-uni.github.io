@@ -14,6 +14,7 @@ tags:
   - inequality
   - becon
   - groups
+minutes: 89
 ---
 
 Ezra Klein interviews professor Elizabeth Anderson about [her ideas on workplace governance](https://www.vox.com/the-big-idea/2017/7/17/15973478/bosses-dictators-workplace-rights-free-markets-unions){:target="_blank" ga-event-value="0.35"} and on inequality and power in social organizations more broadly.

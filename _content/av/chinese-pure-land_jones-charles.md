@@ -13,6 +13,7 @@ tags:
   - chinese
   - pureland
 year: 2019
+minutes: 8
 ---
 
 An excerpt from an interview on Chinese Pure Land making the point that while we tend to think of Mahayana Devotionalism as a separate sect, historically it was seen rather as an optional practice available to all Buddhists.
