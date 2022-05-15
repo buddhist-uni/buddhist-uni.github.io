@@ -124,7 +124,7 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 (Lecture 3)
 
 ##### Chapter 4
-> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN8](https://suttacentral.net/mn8/en/sujato#12.2){:target="_blank" ga-event-value="0.3"}
+> ‘Others will be cruel, but here we will not be cruel.’ ~ [MN 8](https://suttacentral.net/mn8/en/sujato#12.2){:target="_blank" ga-event-value="0.3"}
 {:.epigraph}
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}

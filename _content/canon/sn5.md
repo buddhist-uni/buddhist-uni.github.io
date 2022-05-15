@@ -18,6 +18,6 @@ tags:
 ---
 
 > One to whom it might occur,  
-’I’m a woman’ or ’I’m a man’  
-Or ’I’m anything at all’--  
+‘I'm a woman’ or ‘I'm a man’  
+Or ‘I'm anything at all’--  
 Is fit for Māra to address.

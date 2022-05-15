@@ -17,5 +17,5 @@ tags:
   - world
 ---
 
-Bhikkhu Bodhi shares with the Abhayagiri community his favorite section of the Dhammapada: [verses 110–115](https://suttacentral.net/dhp100-115/en/buddharakkhita#110){:ga-event-value="0.25"}.
+Bhikkhu Bodhi shares with the Abhayagiri community his favorite section of the Dhammapada: [verses 110–115](https://suttacentral.net/dhp100-115/en/buddharakkhita?reference=main&highlight=false#sc110){:ga-event-value="0.25"}.
 

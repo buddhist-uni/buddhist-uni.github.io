@@ -2,6 +2,9 @@
 # Turns off intensive features and limits the build to make it faster for development
 partial_build: true
 
+## Make the site name obvious
+title: "local OBU QuickBuild™️"
+
 ## Turn off feature flags
 show_similars: false
 show_bibtex: false
