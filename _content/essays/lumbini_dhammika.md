@@ -8,6 +8,7 @@ drive_links:
 course: pilgrimage
 tags:
   - nepalese
+  - modern
 year: 2022
 ---
 
