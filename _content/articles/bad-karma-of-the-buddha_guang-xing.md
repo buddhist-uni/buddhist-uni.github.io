@@ -8,7 +8,7 @@ file_links:
 tags:
   - buddha
   - view
-course: indian
+course: sects
 year: 2002
 volume: 19
 number: 1

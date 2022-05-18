@@ -16,10 +16,10 @@ course: hermeneutics
 pages: "153--168"
 tags:
   - extremism
-  - sea
   - view
-  - sri-lankan
+  - sri-lankan-roots
   - theravada-roots
+  - medieval
 ---
 
 > so many warriors perished on the battlefield. The response of the arahants is truly astounding.

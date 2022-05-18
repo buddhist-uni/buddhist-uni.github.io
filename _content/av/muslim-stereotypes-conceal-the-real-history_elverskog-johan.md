@@ -11,6 +11,7 @@ drive_links:
 course: tantric-roots
 tags:
   - islam
+  - medieval
 ---
 
 A less one-sided account of Buddhism's decline in medieval Indian.

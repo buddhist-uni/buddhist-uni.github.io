@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1E06_lFubssk02k8QocP0QT3IeK8aBOb_/view?usp=drivesdk"
 course: pilgrimage
 tags:
-  - indian
+  - medieval
   - lay
   - deccan
 year: 2000

@@ -8,6 +8,7 @@ external_url: "https://newbooksnetwork.com/rewriting-buddhism"
 course: theravada
 tags: 
   - theravada-roots
+  - medieval
 publisher: nbn
 ---
 

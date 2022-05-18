@@ -10,7 +10,6 @@ course: theravada
 tags: 
   - dialogue
   - philosophy
-  - indian
   - navakovada
 base_value: 4
 ---

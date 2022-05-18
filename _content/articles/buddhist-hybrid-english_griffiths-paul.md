@@ -12,7 +12,6 @@ course: academia
 status: featured
 tags:
   - mahayana-roots
-  - tantric-roots
   - hermeneutics
   - philology
   - pali-language

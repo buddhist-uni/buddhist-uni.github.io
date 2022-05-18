@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1bdmf67hX-Zukg3Wc4zaRriSuiANXqUS0/view?usp=drivesdk"
 course: form
 tags:
+  - medieval
   - sri-lankan
   - anuradhapura
   - pilgrimage

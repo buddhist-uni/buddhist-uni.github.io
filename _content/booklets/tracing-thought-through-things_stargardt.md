@@ -8,11 +8,10 @@ year: 2000
 publisher: The Royal Netherlands Academy of Arts and Sciences
 address: Amsterdam
 base_value: 1
-course: theravada
+course: theravada-roots
 tags:
   - pali-canon
   - indian
-  - theravada-roots
   - burmese
   - manuscripts
   - historiography
@@ -20,5 +19,4 @@ tags:
 
 > This is striking proof of the general reliability with which Buddhist monks transmitted their texts
 
-The amazing story of ancient Pāli texts  in Burma, discovered to contain only minor differences from the contemporary canon.
-
+The amazing story of ancient Pāli texts in Burma, discovered to contain only minor differences from the contemporary canon.

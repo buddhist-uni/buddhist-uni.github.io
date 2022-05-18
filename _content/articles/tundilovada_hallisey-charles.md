@@ -8,11 +8,11 @@ journal: jpts
 volume: 15
 pages: "155--195"
 year: 1990
-course: theravada-roots
+course: medieval
 tags:
+  - theravada-roots
   - manuscripts
   - historiography
-  - form
 ---
 
 > I find it reasonable that a period that was characterized by both a low

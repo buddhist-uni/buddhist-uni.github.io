@@ -10,7 +10,7 @@ number: 2
 volume: 21
 pages: "197--215"
 journal: bsr
-course: indian
+course: medieval
 tags:
   - avadana
   - manuscripts

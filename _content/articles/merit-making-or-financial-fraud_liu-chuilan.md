@@ -11,7 +11,7 @@ pages: "169--208"
 status: featured
 course: mahayana-roots
 tags:
-  - indian
+  - medieval
   - monastic
   - selling
   - becon

@@ -11,6 +11,7 @@ pages: "81--105"
 course: indian
 tags:
   - avadana
+  - medieval
   - lay
   - material-culture
 status: featured

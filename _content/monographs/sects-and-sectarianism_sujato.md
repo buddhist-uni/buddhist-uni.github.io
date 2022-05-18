@@ -10,7 +10,7 @@ drive_links:
 course: sects
 tags:
   - vinaya-controversies
-  - indian
+  - medieval
   - form
   - dialogue
 year: 2007

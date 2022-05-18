@@ -18,6 +18,7 @@ tags:
   - printing
   - china
   - historiography
+  - medieval
 year: 2001
 journal: bsr
 volume: 18

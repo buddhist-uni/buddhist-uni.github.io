@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1vXgu9cCewPIUj73Z2pJgkqa_ggJm_KIq/view?usp=drivesdk"
 course: theravada
 tags:
-  - form
   - philosophy
+  - pali-canon
   - pali-commentaries
 year: 2022
 month: jan
