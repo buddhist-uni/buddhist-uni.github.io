@@ -9,9 +9,9 @@ drive_links:
   - "https://drive.google.com/file/d/1wt9Dv4t5oSXN2T6xYZ8xVzdL_WORj588/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1pHN_Pbwi8jnv8I9BRcF2mzIRjCKf5Ydt/view?usp=drivesdk"
 tags:
-  - indian
+  - medieval
   - chan-roots
-  - mahayana-roots
+  - pilgrimage
 olid: OL25495570M
 year: 1886
 publisher: oxford

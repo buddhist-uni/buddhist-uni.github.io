@@ -11,7 +11,7 @@ number: 2
 pages: "109--132"
 tags:
   - abhidhamma
-  - indian
+  - sects
   - dialogue
   - time
 course: sects

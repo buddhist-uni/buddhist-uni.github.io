@@ -7,10 +7,10 @@ journal: jocbs
 year: 2012
 volume: 3
 pages: "128--156"
-course: theravada-roots
+course: medieval
 tags:
   - jataka
-  - indian
+  - theravada-roots
   - imagery
   - oceans
 status: featured

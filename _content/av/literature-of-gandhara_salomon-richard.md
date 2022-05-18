@@ -9,7 +9,7 @@ publisher: nbn
 external_url: "https://newbooksnetwork.com/richard-salomon-the-buddhist-literature-of-ancient-gandhara-an-introduction-with-selected-translation-wisdom-publications-2018/"
 course: mahayana-roots
 tags:
-  - indian
+  - medieval
   - gandhara
 ---
 

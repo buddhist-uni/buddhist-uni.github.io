@@ -10,7 +10,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ouApfRu693FtiUneacjnLkfLNCXmXjmr/view?usp=drivesdk"]
 course: form
 tags:
-  - indian
+  - medieval
 ---
 
 Explains the strange way that Buddhists proselytize.

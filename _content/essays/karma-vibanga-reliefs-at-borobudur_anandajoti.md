@@ -10,7 +10,8 @@ tags:
   - bart
   - borobudur
   - javanese
-  - indian
+  - medieval
+  - avadana
   - karma
 year: 2020
 ---

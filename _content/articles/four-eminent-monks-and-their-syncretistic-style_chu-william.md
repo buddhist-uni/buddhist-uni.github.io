@@ -12,10 +12,10 @@ pages: "63--86"
 course: chan
 status: featured
 tags:
-  - interfaith
-  - chinese
+  - dialogue
   - chinese-religion
   - chan-roots
+  - medieval
 ---
 
 > simultaneously donning a tolerant posture while claiming the overriding-ness of one’s religion was in fact a distinct phenomenon from what could be called "synthesis," and has in actuality characterized many syncretistic endeavors in Chinese history.

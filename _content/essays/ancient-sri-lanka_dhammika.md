@@ -7,7 +7,7 @@ year: 2009
 month: mar
 course: sects
 tags:
-  - mahayana-roots
+  - medieval
   - theravada-roots
 ---
 

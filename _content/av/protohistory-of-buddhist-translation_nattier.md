@@ -5,10 +5,10 @@ authors:
 year: 2017
 month: jun
 external_url: "https://youtu.be/aCCkA12ynLs"
-course: agama
+course: medieval
 tags:
+  - agama
   - translation
-  - indian
 ---
 
 When were the Buddha's teachings first translated? And what can modern translators learn from that first generation?

@@ -8,10 +8,10 @@ booktitle: "第二屆世界佛教論壇論文集"
 pages: "253--267"
 publisher: "中國佛教協會"
 year: 2009
-base_value: 0.5
-course: chan-roots
+base_value: 0.4
+course: medieval
 tags:
-  - indian
+  - chan-roots
   - sea-mahayana
   - esoteric-theravada
 address: "Taipei"

@@ -12,6 +12,7 @@ source_url: "http://monastic-asia.wikidot.com/"
 base_value: 0.3
 course: form
 tags:
+  - medieval
   - mahayana-roots
   - tibetan-roots
   - tantric-roots

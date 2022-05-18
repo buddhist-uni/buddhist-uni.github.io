@@ -4,11 +4,12 @@ subcat: podcast
 authors:
   - "April D. Hughes"
 external_url: "https://newbooksnetwork.com/worldly-saviors-and-imperial-authority-in-medieval-chinese-buddhism"
-course: chan-roots
+course: medieval
 tags:
   - asia
   - ideology
   - state
+  - chan-roots
 year: 2021
 month: jun
 publisher: nbn

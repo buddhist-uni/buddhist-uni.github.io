@@ -2,9 +2,9 @@
 title: "Early Buddhist Transmission and Trade Networks: Mobility and Exchange within and beyond the Northwestern Borderlands of South Asia"
 authors:
   - "Jason Neelis"
-course: mahayana-roots
+course: medieval
 tags:
-  - indian
+  - mahayana-roots
   - chan-roots
 olid: OL24438910M
 external_url: "https://brill.com/downloadpdf/title/18172"

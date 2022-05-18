@@ -13,6 +13,7 @@ tags:
   - mahayana-roots
   - politics
   - places
+  - medieval
 ---
 
 > there was nothing "private" about either the king’s support of Buddhist communities, or the claims and requests that Buddhist intellectuals made of the king.

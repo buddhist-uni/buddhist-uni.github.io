@@ -8,7 +8,7 @@ external_url: "https://newbooksnetwork.com/naomi-appleton-many-buddhas-one-buddh
 publisher: nbn
 course: rebirth-stories
 tags:
-  - indian
+  - medieval
   - mahayana-roots
   - avadana
 ---
