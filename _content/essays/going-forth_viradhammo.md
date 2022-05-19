@@ -8,7 +8,6 @@ course: form
 tags:
   - monastic
   - emptiness
-  - medieval
 base_value: 0.3
 status: featured
 ---
