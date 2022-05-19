@@ -8,12 +8,12 @@ pages: "327--345"
 publisher: cambridge
 year: 2014
 editor: "Tansen Sen"
-course: indian
+course: medieval
 tags:
   - state
   - power
   - sea
-  - medieval
+  - indian
 ---
 
 > Aśoka (c. 268-232 BCE) and Jayavarman VII (1182-1220?), two of the greatest rulers of India and Southeast Asia, were Buddhists by any definition. However, the puzzling problem is that their deaths were followed by an inexorable decay of their erstwhile great empires.

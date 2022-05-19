@@ -17,5 +17,6 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/7/7d/N-BR-39_Ashokan_P
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:N-BR-39_Ashokan_Pillar_Vaishali_(13).jpg">Amaan Imam</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
-The shared history of the Buddhist traditions, from the Buddha's *parinirvāṇa* until the rise of the Mahāyāna. For India at the time of the Buddha, see [Buddha's India](/tags/setting).
+The common history of the Buddhist traditions in India, from the Buddha's *parinirvāṇa* until the closing of the Pāli Canon.
+For India at the time of the Buddha, see [Buddha's India](/tags/setting).
 
