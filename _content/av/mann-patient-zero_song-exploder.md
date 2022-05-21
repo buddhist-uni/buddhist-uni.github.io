@@ -15,6 +15,7 @@ tags:
 series: song-exploder
 number: 103
 base_value: 0.2
+minutes: 19
 ---
 
 > You look around and think, "I'm in the right neighborhood!" but honey you just moved in.

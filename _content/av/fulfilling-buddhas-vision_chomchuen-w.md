@@ -17,6 +17,7 @@ tags:
   - american
 subcat: film
 publisher: "Voice of America"
+minutes: 29
 ---
 
 The story of four pioneering Thai and American Bhikkhunis.

@@ -10,6 +10,7 @@ tags:
   - characters
   - setting
 month: jun
+minutes: 172
 ---
 
 Bhante Sujato walks us through [this deep sutta]({% link _content/canon/mn140.md %}), one of his (and, I must say, my) favorites, giving us a bit more info on the commentarial background story as well as the sutta’s parallels.

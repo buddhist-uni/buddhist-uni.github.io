@@ -15,6 +15,7 @@ tags:
   - problems
 series: song-exploder
 number: 208
+minutes: 19
 ---
 
 > A chemical imbalance got me twisting things  

@@ -11,6 +11,7 @@ year: 2021
 month: may
 series: "Domain of Science"
 base_value: 0.25
+minutes: 32
 ---
 
 An overview of the fundamental particles of the Standard Model.

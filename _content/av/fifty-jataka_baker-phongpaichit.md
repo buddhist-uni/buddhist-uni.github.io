@@ -13,6 +13,7 @@ tags:
   - jataka
   - pali-literature
 publisher: nbn
+minutes: 85
 ---
 
 > The Western adoption of Buddhism was fascinated by the intellectual side, but its enormous success in Southeast Asia and elsewhere came about by becoming so deeply embedded in the society.

@@ -12,6 +12,7 @@ tags:
   - samatha
 year: 2009
 month: oct
+minutes: 85
 ---
 
 Ajahn Brahm celebrates their Bhikkhuni ordination with a talk on this deep and profound sutta.

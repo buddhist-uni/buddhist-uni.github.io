@@ -13,6 +13,7 @@ tags:
   - modern
   - propagation
   - monastic-mahayana
+minutes: 93
 ---
 
 On how modern, Korean Buddhism has been shaped by the logic of "propagation" in the shadow of Christianity, the West, and authoritarianism.

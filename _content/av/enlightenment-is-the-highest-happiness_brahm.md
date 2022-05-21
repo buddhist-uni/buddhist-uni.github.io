@@ -10,6 +10,7 @@ tags:
   - buddhism
   - karma
   - lay
+minutes: 59
 ---
 
 The Buddha taught us how to be happy: not by chasing after it but by giving.

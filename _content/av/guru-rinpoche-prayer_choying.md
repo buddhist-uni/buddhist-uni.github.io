@@ -13,6 +13,7 @@ year: 2009
 month: oct
 base_value: 0.2
 series: "Music for Inner Peace"
+minutes: 5
 ---
 
 A beautiful and haunting rendition of the famous supplication, you can [read more about the prayer at Lotsawa House](https://www.lotsawahouse.org/topics/seven-line-prayer/){:target="_blank"}

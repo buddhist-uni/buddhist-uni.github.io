@@ -12,6 +12,7 @@ tags:
   - hindrances
 year: 2010
 month: dec
+minutes: 53
 ---
 
 > The anger, the aversion is something we've carried around and developed for a long time.

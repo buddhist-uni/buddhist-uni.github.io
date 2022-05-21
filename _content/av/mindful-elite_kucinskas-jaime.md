@@ -15,6 +15,7 @@ tags:
 status: featured
 year: 2019
 month: feb
+minutes: 82
 ---
 
 How mindfulness took over the board room, and how the board room took over mindfulness.

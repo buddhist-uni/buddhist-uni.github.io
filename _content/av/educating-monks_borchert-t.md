@@ -11,6 +11,7 @@ tags:
   - chinese
   - sea
 publisher: nbn
+minutes: 66
 ---
 
 > One day these novices come up to me after class and they say, "Mr. Tom, can we talk to you about something?" I say, "Of course" expecting some rich conversation about the religious life or something... and they start breaking out into two or three part harmony

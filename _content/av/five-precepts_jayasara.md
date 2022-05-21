@@ -11,6 +11,7 @@ base_value: 0.2
 tags:
   - lay
   - ethics
+minutes: 16
 ---
 
 Bhante J gives a brief and standard explanation of the basic precepts of Buddhist morality.

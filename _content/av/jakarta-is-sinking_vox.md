@@ -13,6 +13,7 @@ tags:
   - geology
 base_value: 0.2
 status: featured
+minutes: 11
 ---
 
 > the majority of its residents have to extract groundwater to survive. And it's causing the city to sink.

@@ -10,6 +10,7 @@ drive_links:
 tags:
   - buddhism
   - pali-canon
+minutes: 29
 ---
 
 Clinging makes a mess of life.

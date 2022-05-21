@@ -8,6 +8,7 @@ drive_links:
 course: philosophy
 year: 2005
 month: jan
+minutes: 87
 ---
 
 A relaxed talk on [MN 148]({% link _content/canon/mn148.md %}) and on our stubborn ignorance.

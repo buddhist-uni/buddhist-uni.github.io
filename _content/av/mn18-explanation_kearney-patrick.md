@@ -12,6 +12,7 @@ tags:
   - pedagogy
 year: 2015
 month: sep
+minutes: 56
 ---
 
 A detailed analysis of [this difficult sutta]({% link _content/canon/mn18.md %}) highlighting  the limits of concepts and the Buddha's rhetorical genius.

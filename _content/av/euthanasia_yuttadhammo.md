@@ -10,6 +10,7 @@ course: ethics
 tags:
   - death
   - euthanasia
+minutes: 12
 ---
 
 A short answer on the question of euthanasia.

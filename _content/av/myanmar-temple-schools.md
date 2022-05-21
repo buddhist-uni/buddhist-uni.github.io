@@ -10,6 +10,7 @@ drive_links:
 course: burma
 tags:
   - engaged
+minutes: 4
 ---
 
 > Aside from the Buddhist lessons, it teaches a standard curriculum of Burmese, English, math, and science. Recently, monastic schools have become an officially recognized part of the Myanmar's education system, and students can move from them to state schools.

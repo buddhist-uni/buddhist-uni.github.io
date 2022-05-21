@@ -11,6 +11,7 @@ tags:
   - medicine
 series: 99pi
 number: 381
+minutes: 35
 ---
 
 > Visitors would pay ten cents to enter a spacious room full of glass boxes that were incubators with tiny premature babies on display.

@@ -11,6 +11,7 @@ tags:
   - path
 year: 1985
 month: apr
+minutes: 62
 ---
 
 > We don't doubt that the Buddha attained nibbāna, but we doubt very much that we can

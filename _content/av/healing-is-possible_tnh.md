@@ -13,6 +13,7 @@ tags:
   - monastic
   - meditation
   - function
+minutes: 45
 ---
 
 > There is no way to healing. Healing is the way.

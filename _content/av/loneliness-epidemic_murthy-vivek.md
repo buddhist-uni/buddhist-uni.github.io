@@ -13,6 +13,7 @@ tags:
   - becon
   - thought
   - loneliness
+minutes: 76
 ---
 
 A conversation with Obama's Surgeon General on the epidemic of loneliness facing the modern world.

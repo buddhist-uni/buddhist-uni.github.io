@@ -12,6 +12,7 @@ tags:
 status: featured
 series: revisionist-history
 number: 9
+minutes: 36
 ---
 
 A Mennonite minister demonstrates how to balance austerity with compassion.

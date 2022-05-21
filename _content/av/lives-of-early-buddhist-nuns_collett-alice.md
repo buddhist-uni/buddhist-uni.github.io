@@ -16,6 +16,7 @@ tags:
   - bhikkhuni
   - pali-commentaries
   - gender
+minutes: 67
 ---
 
 > There's a huge amount of it that's positive! I'm not so surprised that there are negative attitudes towards women depicted in early Buddhist literature, because this is an ancient civilization with traditional values. So, the negativity doesn't surprise me. But all the **positivity** does. 

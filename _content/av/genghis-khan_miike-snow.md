@@ -12,6 +12,7 @@ tags:
 subcat: music
 base_value: 0.25
 publisher: "Downtown Records"
+minutes: 4
 ---
 
 > Sometimes I get a little bit Genghis Khan

@@ -18,6 +18,7 @@ year: 2021
 month: jun
 series: 99pi
 number: 449
+minutes: 30
 ---
 
 On the six stories we tell to justify ownership.

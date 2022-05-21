@@ -12,6 +12,7 @@ tags:
   - chah
 year: 2015
 month: dec
+minutes: 34
 ---
 
 > [We have to have] that sense of social responsibility **and** the phenomena of mind.

@@ -12,6 +12,7 @@ tags:
   - nibbana
 year: 2011
 month: jan
+minutes: 53
 ---
 
 > exactly what are we talking about when we're talking about "our feelings"

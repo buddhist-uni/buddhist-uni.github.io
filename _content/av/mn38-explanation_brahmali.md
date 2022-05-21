@@ -11,6 +11,7 @@ tags:
   - path
 year: 2007
 month: jan
+minutes: 86
 ---
 
 On Dependant Origination and its reversal to liberation.

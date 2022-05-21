@@ -9,6 +9,7 @@ month: nov
 course: monastic-advice
 tags:
   - form
+minutes: 36
 ---
 
 The "Five Kinds of Monks" and what it takes for the _sāsana_ to thrive.

@@ -7,6 +7,7 @@ month: feb
 course: form
 tags:
   - bart
+minutes: 20
 ---
 
 From the iconic period to the modern day in a few minutes. A very short introduction to Buddhist Art.

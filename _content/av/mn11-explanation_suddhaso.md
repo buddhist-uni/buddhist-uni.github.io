@@ -13,6 +13,7 @@ tags:
   - form
 year: 2017
 month: nov
+minutes: 57
 ---
 
 On how we can distinguish Buddhism from other philosophies.

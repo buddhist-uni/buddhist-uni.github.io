@@ -16,6 +16,7 @@ tags:
   - world
 status: featured
 base_value: 0.25
+minutes: 3
 ---
 
 > 異なる声の元が  

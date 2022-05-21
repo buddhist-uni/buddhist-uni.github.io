@@ -16,6 +16,7 @@ tags:
   - farang
   - places
   - engaged
+minutes: 48
 ---
 
 The story of an itinerant, Irish laborer who ordains as a Buddhist monk in 1900 in British Burma and then campaigns tirelessly against colonialism.

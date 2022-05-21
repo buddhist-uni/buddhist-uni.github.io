@@ -15,6 +15,7 @@ tags:
   - dialogue
 year: 2008
 month: june
+minutes: 36
 ---
 
 > We talk about "Right View" and "Wrong View," but what we actually have, if we really look at our minds, is confusion!

@@ -10,6 +10,7 @@ course: function
 tags:
   - monastic
 status: featured
+minutes: 46
 ---
 
 An overview of the Buddhist life and path, and what it really means to "go forth" into freedom.

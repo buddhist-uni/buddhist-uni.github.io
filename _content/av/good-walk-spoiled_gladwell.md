@@ -23,6 +23,7 @@ tags:
 status: featured
 series: revisionist-history
 number: 11
+minutes: 38
 ---
 
 The not-so-public parks of Los Angeles, CA.

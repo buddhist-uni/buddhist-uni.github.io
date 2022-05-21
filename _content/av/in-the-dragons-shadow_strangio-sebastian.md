@@ -11,6 +11,7 @@ course: sea
 tags:
   - china
   - asia
+minutes: 111
 ---
 
 > in the past two decades, as the Chinese economy has grown by leaps and bounds, the People’s Republic of China has begun to play an increasingly assertive role in mainland and maritime Southeast Asia

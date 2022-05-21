@@ -10,6 +10,7 @@ course: philosophy
 tags:
   - vipassana
   - abhidhamma
+minutes: 48
 ---
 
 A short talk on this profound sutta ([MN28](https://suttacentral.net/mn28){:target="_blank" ga-event-value="0.3"}) which serves as an EBT basis for the Abhidhamma.

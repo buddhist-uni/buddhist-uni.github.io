@@ -8,6 +8,7 @@ tags:
   - buddhism
   - meditation
   - neuroscience
+minutes: 9
 ---
 
 A short introduction to the neuroscience of meditation from a former skeptic.

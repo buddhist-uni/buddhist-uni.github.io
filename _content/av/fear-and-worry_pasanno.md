@@ -10,6 +10,7 @@ course: problems
 tags:
   - brahmavihara
   - function
+minutes: 56
 ---
 
 > You're not trying to push the stress away, or annihilate it or get rid of it, but just lifting it up and seeing it and then using it as a bridge so that it can take one to kindness and compassion.

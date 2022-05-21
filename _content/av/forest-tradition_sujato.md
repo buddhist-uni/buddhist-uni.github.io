@@ -10,6 +10,7 @@ course: thai-forest
 tags:
   - nature
   - australian
+minutes: 50
 ---
 
 The forest has long been recognized as the place for serious meditation.

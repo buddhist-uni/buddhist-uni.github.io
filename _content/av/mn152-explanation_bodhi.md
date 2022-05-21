@@ -10,6 +10,7 @@ tags:
   - stages
 year: 2000
 month: jul
+minutes: 60
 ---
 
 The last sutta in the Majjhima Nikaya stumps Bhikkhu Bodhi.

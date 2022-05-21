@@ -9,6 +9,7 @@ tags:
   - gender
 publisher: nbn
 month: nov
+minutes: 46
 ---
 
 > We learn to value women and their contributions.

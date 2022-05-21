@@ -12,6 +12,7 @@ tags:
   - psychology
   - problems
   - mindfulness
+minutes: 54
 ---
 
 > too many people live life as if they're in a fast car: looking through the window, always going on to the next thing

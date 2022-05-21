@@ -12,6 +12,7 @@ tags:
   - myth
   - cosmology
   - mara
+minutes: 38
 ---
 
 > Māra was largely a way to differentiate Buddhism from Hindu competitors by drawing on a number of Hindu stories and then subverting and redeploying their symbolism.

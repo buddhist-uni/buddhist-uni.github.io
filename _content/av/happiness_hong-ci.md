@@ -15,6 +15,7 @@ tags:
   - canadian
   - chan
 status: featured
+minutes: 15
 ---
 
 Ven Hong Ci eloquently invites us to get off the treadmill of pursuing sense pleasures, and to live fully in the present moment.

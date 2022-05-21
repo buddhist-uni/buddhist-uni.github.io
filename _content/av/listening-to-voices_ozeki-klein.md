@@ -14,6 +14,7 @@ tags:
 year: 2022
 month: jan
 publisher: nyt
+minutes: 61
 ---
 
 > in this state of not knowing, curiosity and engagement with the world arises. And that engagement, that curiosity is intimate and very, very alive.

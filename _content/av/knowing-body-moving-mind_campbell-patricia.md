@@ -14,6 +14,7 @@ tags:
   - ritual
   - perf-stud
 publisher: nbn
+minutes: 50
 ---
 
 Despite Protestant misgivings about them, "rituals" are a powerful way to embody a new outlook. In this interview, Dr. Campbell explains how meditation can be viewed as an embodied performance, and how this helps to explain its transformative power.
