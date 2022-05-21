@@ -11,6 +11,7 @@ tags:
   - thai-forest
   - inner
   - pedagogy
+minutes: 50
 ---
 
 > Triumphing over the dragon was a genuine heroic quest. That's not the problem. The problem is that at a later stage in life, we're not able to let go of that. We're not able to see, "What is the dragon that's in front of me right now?"

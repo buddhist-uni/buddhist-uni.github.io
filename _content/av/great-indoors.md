@@ -15,6 +15,7 @@ tags:
 base_value: 0.2
 number: 424
 series: 99pi
+minutes: 27
 ---
 
 > to create a healthy indoor space, make it more like the outdoors

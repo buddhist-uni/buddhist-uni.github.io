@@ -8,6 +8,7 @@ tags:
   - present
   - psychology
 base_value: 0.2
+minutes: 31
 ---
 
 How do humans perceive time?

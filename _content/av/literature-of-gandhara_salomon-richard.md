@@ -11,6 +11,7 @@ course: mahayana-roots
 tags:
   - medieval
   - gandhara
+minutes: 59
 ---
 
 > One of the great archeological finds of the 20th century, the Gandhāran Buddhist Texts, dating from the 1st century CE, are the oldest Buddhist manuscripts ever discovered. Richard Salomon discusses his pioneering research on these fascinating manuscripts, how the then obscure Gāndhārī language was deciphered, the historical and religious context from which these texts emerged, and the Gandhāran influence on other parts of the Buddhist world.

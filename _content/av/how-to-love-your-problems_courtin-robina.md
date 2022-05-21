@@ -13,6 +13,7 @@ tags:
   - west
 year: 2017
 month: jan
+minutes: 70
 ---
 
 > Don't think of this as "cosmic." It's not. It's practical.

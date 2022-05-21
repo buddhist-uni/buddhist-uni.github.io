@@ -14,6 +14,7 @@ tags:
 year: 2017
 month: dec
 publisher: wisdom
+minutes: 67
 ---
 
 > When we think about spiritual formation, I think it's done best when it's amplified through a community.

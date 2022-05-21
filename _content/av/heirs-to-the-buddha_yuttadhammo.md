@@ -12,6 +12,7 @@ tags:
   - form
   - indian
   - anuradhapura
+minutes: 36
 ---
 
 A talk delivered at the Bodhi Tree in Anuradhapura, Sri Lanka on the importance of symbols in Buddhism.

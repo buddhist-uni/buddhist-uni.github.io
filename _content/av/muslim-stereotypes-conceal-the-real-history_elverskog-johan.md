@@ -12,6 +12,7 @@ course: tantric-roots
 tags:
   - islam
   - medieval
+minutes: 30
 ---
 
 A less one-sided account of Buddhism's decline in medieval Indian.

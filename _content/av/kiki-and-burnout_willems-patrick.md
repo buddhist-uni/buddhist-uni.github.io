@@ -10,6 +10,7 @@ tags:
   - art
   - economy
   - capitalism
+minutes: 14
 ---
 
 A YouTube film critic experiences burnout while <span style="font-family: monospace;">X-TREME FREELANCING</span><sup>™️</sup>.

@@ -11,6 +11,7 @@ tags:
   - medieval
   - mahayana-roots
   - avadana
+minutes: 48
 ---
 
 An accessible introduction to the *Avadānaśataka* of the (*Mūla*)*Sarvāstivāda* Tradition including a basic explanation of the fragmented nature of "Middle Period" Indian Buddhism.

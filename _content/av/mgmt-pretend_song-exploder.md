@@ -14,6 +14,7 @@ tags:
   - fame
 series: song-exploder
 number: 62
+minutes: 15
 ---
 
 MGMT became famous for a song about pretending to be famous.

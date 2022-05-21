@@ -12,6 +12,7 @@ tags:
   - extremism
 status: featured
 year: 2013
+minutes: 44
 ---
 
 Those in power keep authority through the fair, impartial, and sympathetic application of justice. Where there is no justice, there is no legitimacy. Where there is no legitimacy, there will be no peace.

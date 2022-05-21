@@ -19,6 +19,7 @@ tags:
   - science
   - nature
   - language
+minutes: 5
 ---
 
 > We need to turn towards the Earth rather than think so much about abstract, higher worlds. This is the world that has made us, and it's a creative world. It's truly an extraordinary place, and we haven't given it enough credit I think, or appreciation.

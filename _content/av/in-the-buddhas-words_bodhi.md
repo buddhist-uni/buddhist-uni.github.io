@@ -13,6 +13,7 @@ tags:
   - sutta
   - philosophy
 base_value: 1
+minutes: 4824
 ---
 
 Bhikkhu Bodhi's own lectures on [his classic anthology]({% link _content/monographs/in-the-buddhas-words_bodhi.md %}) from the Pāli Canon.

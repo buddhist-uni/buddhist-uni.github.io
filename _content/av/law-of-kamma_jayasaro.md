@@ -12,6 +12,7 @@ tags:
   - origination
 year: 2008
 month: apr
+minutes: 53
 ---
 
 > This is what we're trying to do in meditation: we're recalibrating our whole way of experiencing ourselves and our life

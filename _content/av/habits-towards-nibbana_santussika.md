@@ -14,6 +14,7 @@ tags:
   - ethics
   - vinaya-studies
   - function
+minutes: 105
 ---
 
 Ayya Santussika gives a guided meditation, followed by a talk about her own practice of [The Sallekha Sutta](https://suttacentral.net/mn8/en/bodhi#sc13){:target="_blank" ga-event-value="0.35"}.

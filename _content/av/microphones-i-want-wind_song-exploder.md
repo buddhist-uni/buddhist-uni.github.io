@@ -13,6 +13,7 @@ tags:
   - music
 series: song-exploder
 number: 13
+minutes: 18
 ---
 
 > I have no head to hang in grief  

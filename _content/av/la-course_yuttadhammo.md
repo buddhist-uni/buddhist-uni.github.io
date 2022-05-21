@@ -15,6 +15,7 @@ tags:
   - american
 base_value: 1.6
 status: featured
+minutes: 753
 ---
 
 A series of Dhamma talks delivered to series beginners over the course of a few months in 2009. The talks give a penetrating introduction to the essence of the teachings and are recommended for all.

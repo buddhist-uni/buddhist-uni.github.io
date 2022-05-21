@@ -13,6 +13,7 @@ tags:
 year: 2022
 month: mar
 publisher: nbn
+minutes: 41
 ---
 
 > I think if we had more of that kind of sensibility operating in our world today we might not be in the pickle we're in now

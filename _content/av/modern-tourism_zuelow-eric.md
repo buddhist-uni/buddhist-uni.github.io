@@ -14,6 +14,7 @@ tags:
   - places
   - europe
   - tourism
+minutes: 35
 ---
 
 While religious pilgrimage existed in early Buddhism, modern Buddhist pilgrimage has been heavily influenced by European ideals of tourism and exploration. In *The History of Modern Tourism*, you'll gain an understanding of those values, enabling you to spot them in modern Buddhist discourse and marketing.

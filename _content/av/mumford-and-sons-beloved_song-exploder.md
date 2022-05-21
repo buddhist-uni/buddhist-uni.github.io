@@ -13,6 +13,7 @@ tags:
   - death
 series: song-exploder
 number: 154
+minutes: 21
 ---
 
 > Time is not on our side, but I'll pretend

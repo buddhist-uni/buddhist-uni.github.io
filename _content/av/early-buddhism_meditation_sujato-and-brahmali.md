@@ -10,6 +10,7 @@ course: meditation
 series: early-buddhism_sujato-brahmali
 number: 4
 base_value: 0.6
+minutes: 254
 ---
 
 A solid introduction to meditation in the Early Buddhist Texts.

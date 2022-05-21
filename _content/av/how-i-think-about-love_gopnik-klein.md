@@ -14,6 +14,7 @@ tags:
   - inner
   - neuroscience
   - age
+minutes: 95
 ---
 
 > You don't care for someone because you love them, you love them because you care

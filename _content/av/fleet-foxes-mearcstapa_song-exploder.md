@@ -13,6 +13,7 @@ tags:
 base_value: 0.2
 series: song-exploder
 number: 109
+minutes: 23
 ---
 
 > 'Mearcstapa' meant 'border-walker' [...] you're between the air and the water, you're apart from other people, you're on this separate journey [...but] what are you actually accomplishing on these trips?

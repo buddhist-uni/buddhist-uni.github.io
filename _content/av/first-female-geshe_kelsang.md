@@ -14,6 +14,7 @@ tags:
 year: 2017
 month: aug
 publisher: wisdom
+minutes: 76
 ---
 
 What it's like to get a Geshe degree.

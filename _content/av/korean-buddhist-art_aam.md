@@ -11,6 +11,7 @@ year: 2009
 publisher: aam
 subcat: film
 address: San Francisco
+minutes: 6
 ---
 
 > This is the second painting that Seol Min has donated to the people of San Francisco.

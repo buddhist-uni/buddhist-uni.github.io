@@ -15,6 +15,7 @@ tags:
   - mahayana
   - modern
 publisher: nbn
+minutes: 69
 ---
 
 A short biography of three Chinese Buddhist monks in modern Maritime Southeast Asia.

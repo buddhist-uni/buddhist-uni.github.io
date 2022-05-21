@@ -14,6 +14,7 @@ tags:
   - america
 year: 2020
 month: oct
+minutes: 67
 ---
 
 > What kind of creatures are we? And how should we relate to each-other?

@@ -11,6 +11,7 @@ tags:
   - view
   - path
   - problems
+minutes: 35
 ---
 
 Bhante Yuttadhammo outlines the five preparatory factors we need to be open to the truth and to see the world from the right perspective, hopefully illuminating why Right View can be thought of as both first and last step of the Noble Eightfold Path.

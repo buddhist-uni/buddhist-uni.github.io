@@ -11,6 +11,7 @@ tags:
   - math
   - science
 base_value: 0.2
+minutes: 30
 ---
 
 > The world is not a logic puzzle.

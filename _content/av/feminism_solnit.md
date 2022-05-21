@@ -11,6 +11,7 @@ tags:
   - californian
   - engaged
   - gender
+minutes: 105
 ---
 
 > We always say, "Nobody knew," and that means that everyone who knew was a nobody.

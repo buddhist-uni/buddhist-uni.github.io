@@ -16,6 +16,7 @@ tags:
 status: featured
 year: 2012
 month: oct
+minutes: 114
 ---
 
 An engaging lecture at Spirit Rock on using text critical methods and personal practice to narrow in on an understanding of early Buddhist meditation practices.

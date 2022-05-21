@@ -14,6 +14,7 @@ tags:
   - form
   - canadian
 base_value: 0.2
+minutes: 5
 ---
 
 A community of American Chinese Buddhists honors their past master by replicating one of his signature feats.

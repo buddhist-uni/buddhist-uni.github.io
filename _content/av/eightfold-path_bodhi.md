@@ -13,6 +13,7 @@ number: 5
 course: buddhism
 tags:
   - path
+minutes: 72
 ---
 
 An introductory lesson covering all eight steps.

@@ -12,6 +12,7 @@ tags:
   - inner
 year: 2007
 month: nov
+minutes: 48
 ---
 
 A loose but formal Dhamma talk on how our framing, especially of ourselves, gives rise to our behavior.

@@ -10,6 +10,7 @@ course: ethics
 series: early-buddhism_sujato-brahmali
 number: 3
 base_value: 0.6
+minutes: 254
 ---
 
 An excellent introduction to ethics in Early Buddhism.

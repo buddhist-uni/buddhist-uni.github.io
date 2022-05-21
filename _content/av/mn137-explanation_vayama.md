@@ -13,6 +13,7 @@ tags:
   - thought
 year: 2007
 month: nov
+minutes: 100
 ---
 
 > And once we become familiar with the nature of objects, because of seeing that,  one sees the implications — "this thing that I'm basing my happiness on is uncertain, is subject to change, is going to pass away"

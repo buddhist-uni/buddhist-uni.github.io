@@ -12,6 +12,7 @@ tags:
   - view
   - tranquility-and-insight
 status: featured
+minutes: 55
 ---
 
 > This is the kind of inquiry one has to make for oneself. We call that, "biting into the mango."

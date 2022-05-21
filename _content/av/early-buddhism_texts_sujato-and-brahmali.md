@@ -10,6 +10,7 @@ course: ebts
 series: early-buddhism_sujato-brahmali
 number: 2
 base_value: 0.6
+minutes: 248
 ---
 
 An excellent introduction to the Early Buddhist Texts.

@@ -8,6 +8,7 @@ external_url: "https://youtu.be/FWVxO1TTe5w"
 course: wider
 tags:
   - world
+minutes: 25
 ---
 
 A short documentary about the people who sift through landfill for a living.

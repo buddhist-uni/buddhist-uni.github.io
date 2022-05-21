@@ -12,6 +12,7 @@ tags:
   - khandha
 year: 2007
 month: feb
+minutes: 80
 ---
 
 A sick Ajahn Brahm explains for us the "Great Aggregate of Suffering" and why everyone quarrels so much.

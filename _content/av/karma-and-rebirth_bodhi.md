@@ -13,6 +13,7 @@ number: 3
 course: buddhism
 tags:
   - cosmology
+minutes: 66
 ---
 
 An overview of Rebirth and Karma from the Buddhist perspective.

@@ -13,6 +13,7 @@ tags:
   - thai-forest
 year: 2012
 month: jun
+minutes: 98
 ---
 
 Ajahn Brahm discusses the Buddha's qualities and tells some stories from his time as a monk in Thailand.

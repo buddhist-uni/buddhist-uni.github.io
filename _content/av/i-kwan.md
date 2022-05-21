@@ -12,6 +12,7 @@ tags:
 publisher: ZED Films
 subcat: film
 address: Paris
+minutes: 25
 ---
 
 > The fishing is good. Ma Be can be proud of his young pupil.

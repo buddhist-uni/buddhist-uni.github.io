@@ -12,6 +12,7 @@ tags:
   - communication
 year: 1989
 base_value: 1
+minutes: 151
 ---
 
 A treatise on love in all its forms, a fairy tale coming-of-age story, and also one of the best musicals of all time.

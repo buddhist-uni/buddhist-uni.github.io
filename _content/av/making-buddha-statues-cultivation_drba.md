@@ -11,6 +11,7 @@ tags:
   - society
   - art
 base_value: 0.2
+minutes: 4
 ---
 
 On the benefit of making things together.

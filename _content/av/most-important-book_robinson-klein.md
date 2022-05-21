@@ -16,6 +16,7 @@ tags:
   - becon
   - society
   - time
+minutes: 98
 ---
 
 > We're already geo-engineering the planet, we're just doing it accidentally and badly

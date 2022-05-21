@@ -13,6 +13,7 @@ tags:
   - function
   - chaplaincy
   - death
+minutes: 61
 ---
 
 > We manifest our humanity, we are most fully human, in learning.

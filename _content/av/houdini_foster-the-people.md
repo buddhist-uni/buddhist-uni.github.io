@@ -9,6 +9,7 @@ tags:
   - activism
 year: 2011
 base_value: 0.15
+minutes: 3
 ---
 
 > Focus on your ability  

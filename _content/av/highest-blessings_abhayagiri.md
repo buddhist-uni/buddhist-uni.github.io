@@ -15,6 +15,7 @@ tags:
   - lay
   - khp
   - world
+minutes: 4
 ---
 
 The monks of Abhayagiri chanting the canonical poem on life's highest blessings [from the Khp]({% link _content/canon/khp5.md %}).

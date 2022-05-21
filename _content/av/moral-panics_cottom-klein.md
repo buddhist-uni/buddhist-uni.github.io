@@ -11,6 +11,7 @@ course: inner
 tags:
   - power
   - internet
+minutes: 83
 ---
 
 > Acknowledging it doesn't change your vulnerability. You're vulnerable whether you develop a language to think about it or not.

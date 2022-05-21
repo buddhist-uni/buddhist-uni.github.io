@@ -13,6 +13,7 @@ number: 2
 course: buddhism
 tags:
   - view
+minutes: 65
 ---
 
 An introduction to the Four Noble Truths, Three Characteristics, and Three Cravings.
