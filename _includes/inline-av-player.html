@@ -35,7 +35,8 @@
       playerVars: {
         'playsinline': 1,
         'modestbranding': 1,
-        'enablejsapi': 1,
+        'enablejsapi': 1,{% if record.external_url contains "t=" %}
+        'start': {% assign timestamp = record.external_url | split: "?" | last | split: "t=" | last | split: "&" | first %}{% assign minutes = 0 %}{% if timestamp contains "m" %}{% assign minutes = timestamp | split: "m" | first | times: 60 %}{% endif %}{% assign timestamp = timestamp | split: "m" | last | split: "s" | first %}{{ timestamp | plus: minutes  }},{% endif %}
         'widget_referrer': '{{ page.url | absolute_url }}'
       },
       events: {
