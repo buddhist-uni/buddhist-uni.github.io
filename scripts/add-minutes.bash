@@ -11,7 +11,7 @@ for fd in *.md; do
   fi
   url=$(cat $fd  | sed -nr 's/^external_url: \"*([^"]*)\"*.*$/\1/p')
   if [[ -z "$url" ]]; then
-    url=$(cat $fd | sed -nr 's/.*drive\.google\.com\/([^"]+).*/https:\/\/drive.google.com\/\1/p')
+    url=$(cat $fd | sed -nr 's/.*drive\.google\.com\/([^"]+).*/https:\/\/drive.google.com\/\1/p' | head -1)
   fi
   if [[ -z "$url" ]]; then
     echo "  has no valid url"
@@ -19,7 +19,7 @@ for fd in *.md; do
   fi
   echo "  opening $url in edge..."
   wslview $url
-  read -p "  minutes:  " val
+  read -p "  $field:  " val
   if [[ -z "$val" ]]; then
     echo "  skipping"
     continue
