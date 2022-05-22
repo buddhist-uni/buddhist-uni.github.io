@@ -171,8 +171,8 @@ In part II, we finally turn to the Noble Eightfold Path, and the transcendant te
 
 ##### Chapter 7
 
-{% include content_blurb.html category="essays" slug="real-science_brahm" %}
-- Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
+{% include content_blurb.html category="articles" slug="challenges-of-the-disengaged-mind_wilson-et-al" %}
+- Scientists discover that people would rather electrocute themselves than be alone with their thoughts.
 
 {% include content_blurb.html category="av" slug="how-meditation-reshapes-the-brain_lazar-sara" %}
 - A neuroscientist talks about the subjective benefits of meditation and how they correlate with changes in the brain.
@@ -184,6 +184,9 @@ In part II, we finally turn to the Noble Eightfold Path, and the transcendant te
 
 
 ##### Chapter 8
+
+{% include content_blurb.html category="essays" slug="real-science_brahm" %}
+- Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
 {% include content_blurb.html category="canon" slug="an10.61" %}
 - The Buddha explains what fuel keeps ignorance going, and fuels the path out.
