@@ -6,16 +6,17 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/"
 source_url: "https://science.sciencemag.org/content/345/6192/75"
 drive_links:
   - "https://drive.google.com/file/d/1L0wRAPy8Locfe79c0CKjLUbT1H2iUrJn/view?usp=drivesdk"
-course: meditation
+course: function
 base_value: 0.2
 status: featured
 tags:
   - thought
-  - psychology
-  - problems
+  - hindrances
+  - inner
   - west
   - science
   - gender
+  - meditation
 year: 2014
 month: jul
 journal: Science

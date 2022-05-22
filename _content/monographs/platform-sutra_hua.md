@@ -1,6 +1,6 @@
 ---
 title: "The Sixth Patriarch’s Dharma Jewel Platform Sutra: A New Translation with the Commentary of Tripitaka Master Hua"
-translator: "Buddhist Text Translation Society"
+translator: "the Buddhist Text Translation Society"
 external_url: "https://www.thezensite.com/ZenTeachings/Translations/PlatformSutra_DharmaJewel.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1p-G8haEV-LEw6kFXkAca6mWgCQC9eIah/view?usp=drivesdk"
