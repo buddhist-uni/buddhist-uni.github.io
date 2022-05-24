@@ -1,7 +1,7 @@
 ---
 title: "A Note on the Term _Theravāda_"
 authors: [analayo]
-external_url: "https://journal.equinoxpub.com/BSR/article/view/13707"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/13707/15930"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1PsS_p0jQ1YE0oRnaq471rJlWyGDzkDz4/view?usp=drivesdk"]
 year: 2013

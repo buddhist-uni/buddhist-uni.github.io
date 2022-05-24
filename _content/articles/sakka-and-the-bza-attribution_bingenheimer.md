@@ -7,7 +7,7 @@ year: 2008
 volume: 25
 number: 2
 pages: "149--173"
-external_url: "https://doi.org/10.1558/bsrv.v25i2.149"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/22717/24844"
 drive_links: ["https://drive.google.com/file/d/1ni0VLzBvP3OEXtBlthJdHBpJ1-Hilcch/view?usp=drivesdk"]
 course: sa
 tags:
