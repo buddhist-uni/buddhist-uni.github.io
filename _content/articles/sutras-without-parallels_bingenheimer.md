@@ -2,7 +2,7 @@
 title: "Two Sūtras in the Chinese *Saṃyuktāgama* without Direct Pāli Parallels: Some Remarks on how to identify Later Additions to the Corpus"
 authors:
   - bingenheimer
-external_url: "https://journals.equinoxpub.com/BSR/article/view/18447"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/13705/15929"
 drive_links:
   - "https://drive.google.com/file/d/1QXRmLwhix7j8VMgQ8fzAC8M6WSNj8cFe/view?usp=drivesdk"
 course: agama

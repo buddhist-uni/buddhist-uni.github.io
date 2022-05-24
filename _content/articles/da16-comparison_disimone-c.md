@@ -1,7 +1,7 @@
 ---
 title: "Intertextuality, Contradiction, and Confusion in the Prasādanīya-sūtra, Sampasādanīya-sutta, and 自歡喜經 (Zì huānxǐ jīng)"
 authors: ["Charles DiSimone"]
-external_url: "https://journals.equinoxpub.com/BSR/article/viewFile/31644/pdf_1"
+source_url: "https://journal.equinoxpub.com/BSR/article/view/13727"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ckbm6ZV4PCbISuV8Pjc66cC5kIJzlZhI/view?usp=drivesdk"]
 journal: bsr

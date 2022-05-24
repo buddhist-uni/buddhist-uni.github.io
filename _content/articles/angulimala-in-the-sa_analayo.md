@@ -2,7 +2,7 @@
 title: "The Conversion of Aṅgulimāla in the *Saṃyukta-āgama*"
 authors:
   - analayo
-source_url: "https://journals.equinoxpub.com/BSR/article/view/6148"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/8880/10334"
 drive_links:
   - "https://drive.google.com/file/d/1ksElxc1YFbyBt-Gl5d0ErWFVYt1wICuT/view?usp=drivesdk"
 course: characters

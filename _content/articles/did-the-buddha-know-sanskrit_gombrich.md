@@ -1,7 +1,7 @@
 ---
 title: "Did the Buddha know Sanskrit?"
 authors: [gombrich]
-external_url: "https://journals.equinoxpub.com/BSR/article/view/19524/15601"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/13713/15937"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1HEfc4ngRlqRxL1MxzCD2kPrNFU3rEqPw/view?usp=drivesdk"]
 journal: bsr

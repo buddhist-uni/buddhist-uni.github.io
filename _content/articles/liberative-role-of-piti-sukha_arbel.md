@@ -2,7 +2,7 @@
 title: "The Liberative Role of Jhānic Joy (*Pīti*) and Pleasure (*Sukha*) in the Early Buddhist Path to Awakening"
 authors:
   - arbel
-external_url: "https://journals.equinoxpub.com/BSR/article/view/28328"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/9015/10488"
 drive_links:
   - "https://drive.google.com/file/d/1VsJ1GF2-GE8yn6Kj4DXd1DqR9kvlxK4m/view?usp=drivesdk"
 course: meditation
