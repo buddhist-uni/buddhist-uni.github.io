@@ -1,7 +1,7 @@
 ---
 title: "The *Ekottarika-āgama* Parallel to the *Saccavibhaṅga-sutta* and the Four (Noble) Truths"
 authors: [analayo]
-external_url: "https://doi.org/10.1558/bsrv.2006.23.2.145"
+external_url: "https://journal.equinoxpub.com/BSR/article/view/13661/15888"
 drive_links: ["https://drive.google.com/file/d/1m7eCAX69UY7OJSdIssvSi1socy7UtckH/view?usp=drivesdk"]
 year: 2006
 journal: bsr
