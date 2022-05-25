@@ -4,7 +4,8 @@ subcat: podcast
 authors:
   - "Margaret Atwood"
   - "Ezra Klein"
-external_url: "https://www.nytimes.com/2022/03/25/opinion/ezra-klein-podcast-margaret-atwood.html"
+external_url: "https://player.fm/series/the-ezra-klein-show/margaret-atwood-on-the-handmaids-tale-totalitarianism-and-ufos"
+source_url: "https://www.nytimes.com/2022/03/25/opinion/ezra-klein-podcast-margaret-atwood.html"
 course: intellect
 tags:
   - world
