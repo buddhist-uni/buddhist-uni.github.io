@@ -13,6 +13,7 @@ tags:
   - activism
 publisher: vox
 status: featured
+minutes: 62
 ---
 
 An introduction to [carnism](https://carnism.org/carnism/) and a discussion about the importance of mindfulness in living ethically.

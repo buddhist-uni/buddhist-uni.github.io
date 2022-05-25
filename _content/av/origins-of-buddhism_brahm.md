@@ -10,6 +10,7 @@ drive_links:
 course: ethics
 tags:
   - form
+minutes: 60
 ---
 
 Ajahn Brahm returns to the origins of Buddhism to help us understand the intentions and practice of "original" Buddhism.

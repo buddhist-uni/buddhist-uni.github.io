@@ -11,6 +11,7 @@ tags:
 year: 2018
 month: jan
 publisher: wisdom
+minutes: 75
 ---
 
 > The mind becomes clearer and clearer and you will be **delighted**.

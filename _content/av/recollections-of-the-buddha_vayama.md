@@ -12,6 +12,7 @@ tags:
   - meditation
   - form
   - buddhism
+minutes: 59
 ---
 
 An introduction to the contemplation of the Buddha and the use of faith on the path.

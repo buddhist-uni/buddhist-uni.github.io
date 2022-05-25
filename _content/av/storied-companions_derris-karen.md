@@ -14,6 +14,7 @@ tags:
 year: 2022
 month: feb
 publisher: nbn
+minutes: 66
 ---
 
 Professor Karen Derris talks about how Buddhist stories, often dismissed by Western scholars, became a major source of inspiration for her since her diagnosis with stage four brain cancer.

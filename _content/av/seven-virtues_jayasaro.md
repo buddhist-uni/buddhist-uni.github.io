@@ -11,6 +11,7 @@ course: engaged
 tags:
   - path
   - monastic
+minutes: 68
 ---
 
 > If there isn't a sense of voluntary commitment, [...] it wouldn't have the connection with the training of emotion and the training of wisdom which is necessary for it to be a "Buddhist" morality.

@@ -12,6 +12,7 @@ tags:
   - jataka
   - bart
   - sanchi
+minutes: 49
 ---
 
 Season 2, special episode D of *The History of India Podcast* is a guided, audio tour of the famous stupa at Sanchi.

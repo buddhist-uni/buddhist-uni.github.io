@@ -11,6 +11,7 @@ status: featured
 tags:
   - form
   - function
+minutes: 71
 ---
 
 > There's always something we can do to progress towards Awakening. And it's something that has benefits all along the way.

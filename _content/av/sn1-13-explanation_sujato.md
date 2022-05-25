@@ -11,6 +11,7 @@ month: jan
 tags:
   - sutta
   - sn
+minutes: 101
 ---
 
 > What's going on here? What's wrong with cows?

@@ -14,6 +14,7 @@ status: featured
 tags:
   - lay
   - thought
+minutes: 119
 ---
 
 Ajahn Brahm tells us all the secrets of life: from how to find a partner to getting what you really want.

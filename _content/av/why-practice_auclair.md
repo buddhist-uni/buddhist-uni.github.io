@@ -14,6 +14,7 @@ tags:
   - problems
   - samatha
   - thought
+minutes: 53
 ---
 
 A heartfelt and spellbinding talk on meditation practice and expectations.

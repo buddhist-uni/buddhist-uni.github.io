@@ -11,6 +11,7 @@ tags:
   - vinaya-pitaka
   - buddha
   - dhammacakkappavattana
+minutes: 24
 ---
 
 A peaceful talk retelling the story of the *Dhammacakkappavattana Sutta*.

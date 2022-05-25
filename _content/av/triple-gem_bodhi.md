@@ -14,6 +14,7 @@ course: buddhism
 tags:
   - buddha
   - function
+minutes: 56
 ---
 
 An introduction to the Dhamma and the Buddha's role as a teacher.

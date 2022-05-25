@@ -10,6 +10,7 @@ tags:
   - inner
 year: 2008
 month: feb
+minutes: 48
 ---
 
 > Deep down inside, you're really worth getting to know.

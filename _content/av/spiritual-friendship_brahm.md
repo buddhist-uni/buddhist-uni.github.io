@@ -9,6 +9,7 @@ course: engaged
 tags:
   - interfaith
   - form
+minutes: 119
 ---
 
 > When you build a spiritual, kind community, wherever you are in this world, that is what we rely on

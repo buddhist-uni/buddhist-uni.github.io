@@ -11,6 +11,7 @@ tags:
   - meditation
   - intellect
 journal: tricycle
+minutes: 34
 ---
 
 In which an American expresses his ambivalence about calling himself a Buddhist despite his belief in its therapeutic and even spiritual power: a common reaction among Westerners exposed to Buddhist practices.

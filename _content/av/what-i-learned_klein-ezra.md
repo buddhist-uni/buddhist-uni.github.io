@@ -10,6 +10,7 @@ course: communication
 tags:
   - society
 journal: vox
+minutes: 41
 ---
 
 > Do the reading

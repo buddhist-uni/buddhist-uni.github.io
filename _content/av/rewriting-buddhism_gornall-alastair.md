@@ -10,6 +10,7 @@ tags:
   - theravada-roots
   - medieval
 publisher: nbn
+minutes: 55
 ---
 
 > central to the process of reform was the production of new forms of Pali literature, which helped create a new conceptual and social coherence within the [Buddhist] community

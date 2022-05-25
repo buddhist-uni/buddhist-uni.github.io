@@ -12,6 +12,7 @@ tags:
   - philosophy
   - hindrances
   - effort
+minutes: 58
 ---
 
 > The life enriched by meditation is three dimensional: it's not a completely different realm, it's providing a new and clearer perspective.

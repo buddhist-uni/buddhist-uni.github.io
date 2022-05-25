@@ -14,6 +14,7 @@ tags:
   - form
   - decline
 status: featured
+minutes: 68
 ---
 
 To understand Buddhism, one must understand the tension between the knowledge of impermanence and the love of the Dharma. This sense of loss has defined Buddhism from the Buddha's Parinirvana through to the present day. 

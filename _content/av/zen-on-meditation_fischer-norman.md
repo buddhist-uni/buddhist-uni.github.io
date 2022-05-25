@@ -15,6 +15,7 @@ tags:
   - canadian
   - buddhism
 year: 2003
+minutes: 23
 ---
 
 > among practitioners, Zazen is affectionately known as "just sitting"

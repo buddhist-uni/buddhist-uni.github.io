@@ -10,6 +10,7 @@ course: nibbana
 tags:
   - stages
   - californian
+minutes: 49
 ---
 
 > There are only two things you need to  realize the path: the first is to start practicing and the second is to not stop.

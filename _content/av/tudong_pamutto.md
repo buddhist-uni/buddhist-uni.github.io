@@ -10,6 +10,7 @@ course: pilgrimage
 tags:
   - american
   - tudong
+minutes: 57
 ---
 
 Reflections on religious wandering in America.

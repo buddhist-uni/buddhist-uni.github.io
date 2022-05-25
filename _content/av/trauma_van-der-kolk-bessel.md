@@ -17,6 +17,7 @@ tags:
 year: 2021
 month: aug
 publisher: nyt
+minutes: 80
 ---
 
 > We have brains in order to get along with each other [...] Trauma destroys the capacity to imagine

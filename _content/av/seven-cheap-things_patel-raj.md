@@ -12,6 +12,7 @@ tags:
   - nature
   - things
 publisher: nbn
+minutes: 47
 ---
 
 How deeply understanding the dependant origination of the chicken nugget helps us understand the entire modern world and how it got the way it is.

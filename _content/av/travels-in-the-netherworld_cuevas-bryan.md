@@ -13,6 +13,7 @@ tags:
   - death
   - hell
   - tibetan
+minutes: 60
 ---
 
 An introduction to the *delok* literature of Tibet: the "fire and brimstone" morality tales which inherited the Indian "ghost story" tradition and contrast with the more philosophical "Book of the Dead" literature you may be familiar with.

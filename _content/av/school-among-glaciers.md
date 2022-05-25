@@ -14,6 +14,7 @@ tags:
 subcat: film
 base_value: 0.6
 status: featured
+minutes: 60
 ---
 
 A young teacher is assigned to Bhutan's most remote school.

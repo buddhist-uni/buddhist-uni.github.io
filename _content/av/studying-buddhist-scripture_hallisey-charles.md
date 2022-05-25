@@ -19,6 +19,7 @@ tags:
   - mahayana-canon
   - ethics
 status: featured
+minutes: 11
 ---
     
 > The text jumps inside me and helps. me. out.  

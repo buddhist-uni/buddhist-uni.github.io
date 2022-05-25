@@ -13,6 +13,7 @@ external_url: "https://youtu.be/N93IvR45D80"
 drive_links:
   - "https://drive.google.com/file/d/1hu0f75WV-WSonXbGqSgC0qO0jwvwG6S8/view?usp=drivesdk"
 source_url: "https://tnhaudio.org/2018/08/12/surrender-yourself-to-the-present-moment/"
+minutes: 55
 ---
 
 > I have arrived, I am home  

@@ -12,6 +12,7 @@ tags:
   - gender
 subcat: music
 base_value: 0.25
+minutes: 5
 ---
 
 > I found the world so new

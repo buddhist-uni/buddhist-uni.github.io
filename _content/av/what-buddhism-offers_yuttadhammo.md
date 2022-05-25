@@ -10,6 +10,7 @@ course: form
 tags:
   - buddhism
   - function
+minutes: 35
 ---
 
 The essence (as opposed to the expressions) of Buddhism. A lovely introduction.

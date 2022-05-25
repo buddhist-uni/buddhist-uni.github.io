@@ -13,6 +13,7 @@ formats: [m4a]
 course: buddhism
 tags:
   - meditation
+minutes: 19
 ---
 
 A short, guided meditation introducing mindfulness to the denizens of Second Life.

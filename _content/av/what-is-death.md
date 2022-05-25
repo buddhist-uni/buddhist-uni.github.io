@@ -8,6 +8,7 @@ base_value: 0.2
 tags:
   - science
   - death
+minutes: 9
 ---
 
 > Death is the moment when the system that maintains the far-from-equilibrium state ceases to exist.

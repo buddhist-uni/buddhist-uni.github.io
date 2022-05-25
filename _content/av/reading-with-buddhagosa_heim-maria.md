@@ -13,6 +13,7 @@ year: 2021
 month: oct
 series: bsp
 number: 4
+minutes: 63
 ---
 
 > once you've understood what the text is saying in this deeper way, you can find yourself addressed by it

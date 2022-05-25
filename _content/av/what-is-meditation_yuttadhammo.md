@@ -13,6 +13,7 @@ tags:
   - path
   - mindfulness
   - vipassana
+minutes: 24
 ---
 
 There are two kinds of meditation, *samatha* and *vipassana*. *Samatha* (or "tranquility" meditation) offers a break from life. *Vipassana* (or "insight" meditation) is our chance to learn from life.

@@ -9,6 +9,7 @@ tags:
   - secular
   - american
 base_value: 0.2
+minutes: 13
 ---
 
 A short and sympathetic introduction to Buddhism especially for non-Buddhist Westerners.

@@ -12,6 +12,7 @@ tags:
   - metta
 series: song-exploder
 number: 189
+minutes: 17
 ---
 
 > I take it for granted  

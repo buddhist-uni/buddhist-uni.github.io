@@ -13,6 +13,7 @@ tags:
   - ethics
   - chaplaincy
   - function
+minutes: 95
 ---
 
 Ayya Santussika gives a talk on her own transformation and overcoming five fears using four powers, including some especially good advice on how to relate to family.

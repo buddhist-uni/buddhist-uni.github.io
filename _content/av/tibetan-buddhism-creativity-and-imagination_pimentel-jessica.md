@@ -11,6 +11,7 @@ tags:
 year: 2020
 month: oct
 publisher: wisdom
+minutes: 59
 ---
 
 An award-winning actor and heavy-metal singer explains how she found Buddhism and works her practice into everything she does.

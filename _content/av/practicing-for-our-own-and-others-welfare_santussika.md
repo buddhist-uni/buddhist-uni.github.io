@@ -15,6 +15,7 @@ tags:
   - mindfulness
   - hindrances
   - west
+minutes: 45
 ---
 
 > it's easy to get out of balance

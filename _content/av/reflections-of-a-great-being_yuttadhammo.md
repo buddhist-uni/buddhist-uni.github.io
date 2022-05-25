@@ -10,6 +10,7 @@ course: monastic
 tags:
   - function
   - philosophy
+minutes: 35
 ---
 
 Most people aren't interested in seriously practicing Buddhism because most people don't appreciate renunciation, contentment, seclusion, effort, mindfulness, and wisdom.

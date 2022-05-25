@@ -14,6 +14,7 @@ tags:
   - copyright
 series: 99pi
 number: 438
+minutes: 42
 ---
 
 The history of the iconic book of Jazz Standards.

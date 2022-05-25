@@ -12,6 +12,7 @@ tags:
 year: 2020
 month: jun
 publisher: nbn
+minutes: 120
 ---
 
 > Without all of those stories—without the physicist's story, without the philosopher's story, without the artist's story—you're telling an incomplete narrative.

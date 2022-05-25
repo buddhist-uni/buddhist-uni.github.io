@@ -11,6 +11,7 @@ course: ocean
 tags:
   - japan
   - japanese-roots
+minutes: 73
 ---
 
 > I think it's really a different dimension, but an important one that needs to be explored if only because of the change in perspective that it gives us. Instead of taking for granted the land, and the philosophy and conceptual systems based on land, place yourself in a shifting, fluid context—the sea. What kind of sensorial universe, what systems of meaning would you be exposed to if you did that?

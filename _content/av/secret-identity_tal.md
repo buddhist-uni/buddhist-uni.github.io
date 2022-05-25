@@ -12,6 +12,7 @@ tags:
   - extremism
 series: tal
 number: 506
+minutes: 58
 ---
 
 A meditation on how contextual we are, and on what drives ordinary people to do extreme things.

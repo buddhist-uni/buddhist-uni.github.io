@@ -13,6 +13,7 @@ tags:
   - path
   - psychology
   - origination
+minutes: 56
 ---
 
 > Bad things are easy to think about! It's the good things that are difficult, because the kilesas don't like them.

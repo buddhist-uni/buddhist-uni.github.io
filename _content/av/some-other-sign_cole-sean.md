@@ -16,6 +16,7 @@ tags:
   - inner
   - speech
 status: featured
+minutes: 17
 ---
 
 > poets do not [normally] get this kind of attention

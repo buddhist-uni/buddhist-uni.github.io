@@ -9,6 +9,7 @@ course: medieval
 tags:
   - agama
   - translation
+minutes: 88
 ---
 
 When were the Buddha's teachings first translated? And what can modern translators learn from that first generation?

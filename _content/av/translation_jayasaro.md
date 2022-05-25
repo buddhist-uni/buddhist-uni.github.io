@@ -10,6 +10,7 @@ course: thought
 tags:
   - daily-life
   - lay
+minutes: 88
 ---
 
 > The way that we express our feelings is probably the major work of translation that we all do in our life.

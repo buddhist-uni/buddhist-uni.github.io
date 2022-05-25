@@ -12,6 +12,7 @@ tags:
 year: 2006
 oclc: 694526022
 publisher: "UFO TV"
+minutes: 54
 ---
 
 > To witness the eerie spectacle of a medium entering a trance state and being possessed by the Oracle is to confront profound questions

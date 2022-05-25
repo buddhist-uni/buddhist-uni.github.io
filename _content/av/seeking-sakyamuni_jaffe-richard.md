@@ -11,6 +11,7 @@ tags:
 year: 2021
 month: jan
 publisher: nbn
+minutes: 66
 ---
 
 How Japanese Buddhists looked West and helped create modern, global Buddhism.

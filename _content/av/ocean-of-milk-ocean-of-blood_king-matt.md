@@ -14,6 +14,7 @@ tags:
   - inner-asia
 status: featured
 publisher: nbn
+minutes: 64
 ---
 
 > What is the "otherwise" of modernism in Mongolia and Inner-Asia?

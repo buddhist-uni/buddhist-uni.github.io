@@ -12,6 +12,7 @@ course: tranquility-and-insight
 tags:
   - path
 base_value: 1.5
+minutes: 1028
 ---
 
 A lecture series on MĀ division 7 (sutras 72–86) revolving around the theme of balancing and developing tranquility with insight.
