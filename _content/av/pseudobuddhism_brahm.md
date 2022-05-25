@@ -10,6 +10,7 @@ drive_links:
 course: form
 tags:
   - meditation
+minutes: 67
 ---
 
 A few tips on recognizing and practicing authentic Buddhism.

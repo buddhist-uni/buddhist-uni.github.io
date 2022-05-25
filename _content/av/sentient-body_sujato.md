@@ -11,6 +11,7 @@ tags:
   - origination
 year: 2021
 month: may
+minutes: 50
 ---
 
 > We don't begin with fundamental things. We start with fundamental relations. Our mind and our body are constantly interrelated and interconnected.

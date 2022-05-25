@@ -13,6 +13,7 @@ tags:
 year: 2021
 month: jun
 publisher: nbn
+minutes: 48
 ---
 
 How the figure of the Bodhisattva and of the Wheel-Turning Monarch merged for political advantage when Buddhism left India.

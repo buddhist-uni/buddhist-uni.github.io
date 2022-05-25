@@ -15,6 +15,7 @@ tags:
   - grief
   - alcohol
   - brahmavihara
+minutes: 4
 ---
 
 > せせらぎが止まるよ 重なる髪かざり   

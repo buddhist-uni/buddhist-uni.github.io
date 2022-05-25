@@ -13,6 +13,7 @@ tags:
   - khandha
   - mindfulness
   - path
+minutes: 35
 ---
 
 A very brief introduction to the four foundations of mindfulness: the way to experience the five aggregates directly.

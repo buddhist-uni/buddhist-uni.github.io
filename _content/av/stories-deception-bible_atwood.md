@@ -15,6 +15,7 @@ tags:
 year: 2022
 month: mar
 publisher: nyt
+minutes: 68
 ---
 
 > You never begin by saying, "I’m going to be a tyrannist dictator, and I’m going to ruin your life." You don’t start out that way. You start out by saying, "I’m going to make things so much better. And you want that, don’t you, Ezra?"

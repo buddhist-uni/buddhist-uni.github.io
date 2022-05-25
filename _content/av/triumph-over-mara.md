@@ -12,6 +12,7 @@ month: sep
 publisher: aam
 subcat: film
 base_value: 0.25
+minutes: 2
 ---
 
 > There are many signs pointing to the Buddha-to-be's special qualities.

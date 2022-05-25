@@ -11,6 +11,7 @@ course: setting
 tags:
   - buddha
   - historiography
+minutes: 36
 ---
 
 Why Buddhists study history

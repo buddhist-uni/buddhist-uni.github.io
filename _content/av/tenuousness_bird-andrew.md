@@ -13,6 +13,7 @@ tags:
   - academia
 publisher: "Fat Possum"
 base_value: 0.25
+minutes: 4
 ---
 
 > Love of hate acts as an axis uh huh  

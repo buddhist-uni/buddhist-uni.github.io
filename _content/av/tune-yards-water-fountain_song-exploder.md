@@ -13,6 +13,7 @@ tags:
   - state
 series: song-exploder
 number: 32
+minutes: 14
 ---
 
 > A two-pound chicken tastes better with friends  

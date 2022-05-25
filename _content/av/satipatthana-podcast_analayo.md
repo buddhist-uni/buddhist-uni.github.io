@@ -14,6 +14,7 @@ tags:
   - mindfulness
   - pali-canon
   - tranquility-and-insight
+minutes: 53
 ---
 
 Bhikkhu Analayo briefly introduces his research and practice of the *Satipaṭṭhāna Sutta*, including his own gradual way of practicing the four establishments based on he feels are their essential qualities.

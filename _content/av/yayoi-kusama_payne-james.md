@@ -9,6 +9,7 @@ tags:
   - art
 year: 2022
 month: mar
+minutes: 17
 ---
 
 > This is a film about the simple polka dot. A dot that has obsessed Kusama for nine decades.

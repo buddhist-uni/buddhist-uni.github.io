@@ -11,6 +11,7 @@ tags:
   - form
   - meditation
   - vipassana
+minutes: 36
 ---
 
 An end to [The Los Angeles Course]({% link _content/av/la-course_yuttadhammo.md %}), Bhante encourages us to use our human life wisely.

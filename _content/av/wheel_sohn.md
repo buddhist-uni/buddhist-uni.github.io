@@ -16,6 +16,7 @@ tags:
   - time
   - world
   - philosophy
+minutes: 4
 ---
 
 An incredible music video, perfectly capturing the world-weary feeling of *saṃvega*.

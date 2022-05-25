@@ -14,6 +14,7 @@ tags:
   - world
 base_value: 0.25
 publisher: "Al Jazeera"
+minutes: 26
 ---
 
 > With its tropical climate, lower costs and culture of respect for the elderly, Thailand is attracting families dealing with dementia and Alzheimer's from as far away as Europe.

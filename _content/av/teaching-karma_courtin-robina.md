@@ -13,6 +13,7 @@ tags:
   - karma
   - west
   - pedagogy
+minutes: 7
 ---
 
 > I have never yet had the question why good things happen.

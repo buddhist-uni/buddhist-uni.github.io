@@ -13,6 +13,7 @@ status: featured
 year: 2020
 month: jul
 publisher: nbn
+minutes: 65
 ---
 
 An excellent walk-through of the classical Indian philosophies of language: from the Sanskrit grammars of Panini and Patanjali, to Brahmanical realism, Buddhist scepticism, and Jain agnosticism.

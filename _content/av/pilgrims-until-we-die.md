@@ -11,6 +11,7 @@ tags:
 year: 2021
 month: dec
 publisher: nbn
+minutes: 60
 ---
 
 > 'Shikoku illness' is a common term that people use to describe a sense of addiction to the pilgrimage

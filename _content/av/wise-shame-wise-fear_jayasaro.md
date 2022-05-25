@@ -11,6 +11,7 @@ tags:
   - problems
   - ethics
   - thought
+minutes: 45
 ---
 
 > someone with this wholesome state of mind looks at unwholesome, unkind actions and speech in the same way as if he were invited to excrete in the middle of a marketplace

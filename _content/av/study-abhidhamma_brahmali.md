@@ -7,6 +7,7 @@ external_url: "https://youtu.be/Z71dItwYcxs"
 course: pali-canon
 tags:
   - abhidhamma
+minutes: 10
 ---
     
 > Isn't the Abhidhamma the highest?

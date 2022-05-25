@@ -17,6 +17,7 @@ month: feb
 journal: "The New York Times"
 publisher: "Serial Productions"
 base_value: 1
+minutes: 317
 ---
 
 > A mysterious letter shocked Britain in 2014, alleging an Islamist plot to take over one city’s general schools. But who wrote it?

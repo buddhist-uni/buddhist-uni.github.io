@@ -17,6 +17,7 @@ year: 2021
 month: jul
 number: 61
 series: insight-myanmar
+minutes: 90
 ---
 
 > One of the toughest interviews I've ever had.

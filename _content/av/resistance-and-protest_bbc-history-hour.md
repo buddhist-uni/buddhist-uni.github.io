@@ -14,6 +14,7 @@ year: 2020
 month: sept
 publisher: "the BBC"
 address: London
+minutes: 53
 ---
 
 Five first-hand accounts of resisting oppression over the last 70 years.

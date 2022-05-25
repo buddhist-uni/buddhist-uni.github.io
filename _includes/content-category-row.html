@@ -6,5 +6,5 @@
 <li style="list-style:none;">{% include content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ catcon | where: "subcat", subcat | size }})</li>
 {% endfor %}</ul>{% endif %}
 </td>
-<td markdown="span">{{ catcon | size }}</td>
+<td markdown="span">{{ catcon | size }} {% if include.category == "av" %}<br />(&#62;{{ catcon | map: "minutes" | sum | divided_by: 60  }} hours!){% endif %}</td>
 </tr>

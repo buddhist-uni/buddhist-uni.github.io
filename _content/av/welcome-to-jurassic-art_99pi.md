@@ -12,6 +12,7 @@ tags:
   - dinosaurs
 series: 99pi
 number: 439
+minutes: 42
 ---
 
 How illustrations affect science.

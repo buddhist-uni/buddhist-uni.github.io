@@ -14,6 +14,7 @@ tags:
 year: 2017
 month: sep
 address: Berkeley, CA
+minutes: 73
 ---
 
 > "Right View" is to see and let go.

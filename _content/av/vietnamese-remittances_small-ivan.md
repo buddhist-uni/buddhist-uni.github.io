@@ -18,6 +18,7 @@ tags:
   - vietnamese
   - diaspora
   - globalization
+minutes: 6
 ---
 
 > I can have more economic opportunity and can therefore cultivate this generosity

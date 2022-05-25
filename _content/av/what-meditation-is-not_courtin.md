@@ -15,6 +15,7 @@ tags:
   - selling
   - vipassana
   - cittanupasana
+minutes: 6
 ---
 
 > Meditation is not a pill.

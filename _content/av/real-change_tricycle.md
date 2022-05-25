@@ -12,6 +12,7 @@ tags:
   - engaged
   - selling
 journal: tricycle
+minutes: 173
 ---
 
 A series of interviews with Sharon Salzberg and a few people profiled in her book of the same name.

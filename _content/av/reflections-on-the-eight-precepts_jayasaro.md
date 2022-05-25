@@ -10,6 +10,7 @@ course: ethics
 tags:
   - monastic
   - hindrances
+minutes: 50
 ---
 
 On the value of simplicity.

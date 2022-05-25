@@ -11,6 +11,7 @@ tags:
   - theravada
   - faith
 year: 2010 # a wild guess
+minutes: 5
 ---
 
 Ajahn Brahm explains why he does Pali chanting.

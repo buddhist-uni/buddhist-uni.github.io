@@ -10,6 +10,7 @@ drive_links:
 course: sects
 tags:
   - agriculture
+minutes: 52
 ---
 
 Special episode i of Season 3 of *The History of India Podcast* is a whimsical tour of ancient Indian farmland.

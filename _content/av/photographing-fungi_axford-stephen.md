@@ -9,6 +9,7 @@ tags:
   - biology
 year: 2020
 month: sep
+minutes: 32
 ---
 
 How a retired Australian's hobby accidentally became science.

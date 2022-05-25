@@ -15,6 +15,7 @@ tags:
 year: 2021
 month: apr
 publisher: nyt
+minutes: 64
 ---
 
 > you have this young brain that has a lot of what neuroscientists call "plasticity". It can change really easily, essentially. But it’s not very good at putting on its jacket and getting to preschool

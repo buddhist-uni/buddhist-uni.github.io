@@ -15,6 +15,7 @@ tags:
   - nibbana
   - origination
   - emptiness
+minutes: 2841
 ---
 
 Bhikkhu Analayo reads, with insightful commentary and alternative translations, the [Nibbāna Sermons](/content/monographs/nibbana_nyanananda) by [Bhikkhu Kaṭukurunde Ñāṇananda](/authors/nyanananda).

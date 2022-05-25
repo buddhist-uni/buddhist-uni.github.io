@@ -19,6 +19,7 @@ tags:
   - film
   - ambulit
   - world
+minutes: 6
 ---
 
 An artistic music video about the infinite scale of *saṃsāra*.

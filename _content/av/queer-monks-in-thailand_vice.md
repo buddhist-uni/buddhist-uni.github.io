@@ -12,6 +12,7 @@ tags:
   - thai
   - lgbt
 publisher: Vice
+minutes: 16
 ---
 
 > Thailand has long been known to be friendly to the queer community. However this is not always the case for gay monks
