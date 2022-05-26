@@ -4,7 +4,7 @@ authors:
   - "Pia Brancaccio"
 external_url: "https://glorisunglobalnetwork.org/wp-content/uploads/2020/04/hualin1.2_brancaccio.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1E06_lFubssk02k8QocP0QT3IeK8aBOb_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KTtgpi7-yTKJAKjM7nQsspD0esHnRlUq/view?usp=sharing"
 course: medieval
 tags:
   - mahayana-roots
