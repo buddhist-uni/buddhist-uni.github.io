@@ -12,17 +12,18 @@ course: pali-canon
 tags:
   - buddhism
   - ebts
+  - form
   - hermeneutics
   - dialogue
-  - rebirth-stories
-  - mahayana
   - mahayana-canon
-  - ethics
+  - communication
+  - historiography
+  - religion
 status: featured
 minutes: 11
 ---
     
-> The text jumps inside me and helps. me. out.  
+> The text jumps inside me to help me out.  
 ...  
 So, when you're studying Buddhism, what are you studying?  
 I know the answer. I'm studying **me**.  
