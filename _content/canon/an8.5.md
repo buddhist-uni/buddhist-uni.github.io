@@ -3,7 +3,8 @@ title: "AN 8.5: World (1)"
 slug: "an.008.005"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.5/en/bodhi"
-drive_links: ["https://drive.google.com/file/d/1MD3SvaIUKqew8BzyJBJ9f-R9pD8bsIkr"]
+drive_links:
+  - "https://drive.google.com/file/d/1fRM9xjR53zeNic0oA6XJYiZtdwzngKDa/view?usp=sharing"
 course: nibbana
 tags:
   - an

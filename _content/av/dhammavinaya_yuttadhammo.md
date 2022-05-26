@@ -5,7 +5,7 @@ year: 2010
 month: sep
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Internet/100901_Dhammavinaya.mp3"
 drive_links:
- - "https://drive.google.com/file/d/1Qcy_wonWOKEsbe7jrNxRgKDwQV37dzVM/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1ekvc3-nwegfHFnI5ZtJ7UrpQPFf16Hyz/view?usp=sharing"
 course: form
 tags:
   - function
