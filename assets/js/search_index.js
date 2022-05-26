@@ -204,20 +204,22 @@ function displaySearchResults(results) {
 self.onmessage = function(e) {
     var results = [];
     try {
-      results = idx.search(e.data);
+      results = idx.search(e.data.q);
     } catch (err) {
-      if (err.message.indexOf("unrecognised field") >= 0 && e.data.indexOf(":") >= 0) {
-        results = idx.search(e.data.replaceAll(":",""));
+      if (err.message.indexOf("unrecognised field") >= 0 && e.data.q.indexOf(":") >= 0) {
+        results = idx.search(e.data.q.replaceAll(":",""));
       } else { throw err; }
     }
     if (!results.length){
-      var words = e.data.split(" ");
+      var words = e.data.q.split(" ");
       if (words.find(function(w){ return w.length <= 2; }) == undefined)
         results = idx.search(words.join("~1 ") + "~1");
     }
     self.postMessage({
       "html": displaySearchResults(results),
-      "q": e.data
+      "count": results ? results.length : 0,
+      "q": e.data.q,
+      "qt": e.data.qt
     });
 }
 

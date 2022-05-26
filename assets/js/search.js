@@ -63,7 +63,7 @@
         q = sanitizeQuery(q);
         if (!q) return;
         if (pendingui){ clearTimeout(pendingui); pendingui = null; }
-        window.search_worker.postMessage(q);
+        window.search_worker.postMessage({'q': q, 'qt': performance.now()});
         clearTimeout(checker);
         checker = setTimeout(checkRunning, CHECKTIME);
         loadingIndicator.style.display = 'block';
@@ -85,7 +85,9 @@
       window.search_worker.onmessage = function(e) {
         running--;
         if (running == 0) {
-            searchResults.innerHTML = e.data.html;
+            var perf = ((performance.now() - e.data.qt)/1000).toFixed(2);
+            if (perf == "0.00") perf = "<0.01";
+            searchResults.innerHTML = '<li style="margin-bottom: 0;">Found ' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
             searchResults.onclick = maybeRegisterNavigation.bind(e.data);
@@ -115,7 +117,7 @@
         }
       }
       if (initialSearchTerm) {
-        window.search_worker.postMessage(initialSearchTerm);
+        window.search_worker.postMessage({'q':initialSearchTerm,'qt':performance.now()});
         running = 1;
       } else {
         loadingIndicator.style.display = 'none';
