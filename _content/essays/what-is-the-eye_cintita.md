@@ -7,7 +7,6 @@ drive_links: ["https://drive.google.com/file/d/1H9lVmSRQDYtAYiHBGqJKOTu3zEREeGLg
 course: philosophy
 tags:
   - origination
-  - chan
   - shikantaza
   - phenomenology
   - khandha

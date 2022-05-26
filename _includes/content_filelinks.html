@@ -16,11 +16,11 @@
             <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="drive.google.com/{{ content_path }}.{{ include.content.formats[i] }}" href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% else %}s fa-globe{% endif %}"></i> {{ include.content.formats[i] }}</a>
         {%- endfor -%}
     {%- endif -%}
-    {% if include.content.source_url %}
+    {% if page.source_url %}
         <a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} data-content-path="{{ content_path }}" ga-event-value="{{ value }}"><i class="fas fa-route"></i> Origin</a>
     {% endif %}
     {%- assign showworldcat = false -%}
-    {%- unless page.source_url or page.external_url or page.file_links or page.drive_links.size > 0 or include.newtab -%}
+    {%- unless include.content.source_url or include.content.external_url or include.content.file_links or include.content.drive_links.size > 0 or include.newtab -%}
         {%- assign showworldcat = true -%}
     {%- endunless -%}
     {%- if include.content.excerpt_url -%}

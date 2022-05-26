@@ -87,7 +87,7 @@
         if (running == 0) {
             var perf = ((performance.now() - e.data.qt)/1000).toFixed(2);
             if (perf == "0.00") perf = "<0.01";
-            searchResults.innerHTML = '<li style="margin-bottom: 0;">Found ' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
+            searchResults.innerHTML = '<li style="margin-bottom:0;text-align:right;">' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
             loadingIndicator.style.display = 'none';
             stillLoading.style.display = 'none';
             searchResults.onclick = maybeRegisterNavigation.bind(e.data);

@@ -1,5 +1,5 @@
 ---
-title: "Theravāda Buddhism"
+title: "Theravāda"
 parents:
   - form
   - sea
