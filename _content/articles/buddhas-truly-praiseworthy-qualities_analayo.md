@@ -8,7 +8,7 @@ file_links:
 journal: jpts
 year: 2009
 volume: 30
-pages: "137--60"
+pages: "137--160"
 course: agama
 status: featured
 tags:
