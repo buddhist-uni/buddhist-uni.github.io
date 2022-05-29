@@ -1,9 +1,9 @@
 <tr>
 {% assign catcon = site.content | where: "category", include.category %}
 {% assign category =  site.categories | find: "slug", include.category %}
-<td>{% include content_icon.html category=include.category %} <a href="{{ category.url }}">{{ category.title }}</a>
+<td>{% include_cached content_icon.html category=include.category %} <a href="{{ category.url }}">{{ category.title }}</a>
 {% if category.subcats %}<ul>{% for subcat in category.subcats %}
-<li style="list-style:none;">{% include content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ catcon | where: "subcat", subcat | size }})</li>
+<li style="list-style:none;">{% include_cached content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ catcon | where: "subcat", subcat | size }})</li>
 {% endfor %}</ul>{% endif %}
 </td>
 <td markdown="span">{{ catcon | size }} {% if include.category == "av" %}<br />(&#62;{{ catcon | map: "minutes" | sum | divided_by: 60  }} hours!){% endif %}</td>

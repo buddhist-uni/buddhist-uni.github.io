@@ -29,7 +29,7 @@
     {%- endif -%}
     {%- if showworldcat -%}
         {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}
-        {%- capture authors -%}{% include content_authors_string.html content=include.content %}{%- endcapture -%}
+        {%- capture authors -%}{% include_cached content_authors_string.html content=include.content %}{%- endcapture -%}
         {% assign authors = authors | strip_html | strip | cgi_escape %}
             <a class="btn" href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
             <i class="far fa-question-circle"></i>

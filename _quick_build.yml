@@ -51,8 +51,6 @@ exclude:
     - _authors/keeler-ward.md
     - _authors/king-winston.md
     - _authors/menzel-peter.md
-    - _authors/popova.md
-    - _authors/singer-peter.md
     - _authors/vasubandhu.md
     - _content/articles/astrological-determinism_kotyk-j.md
     - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
@@ -153,7 +151,6 @@ exclude:
     - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
     - _content/essays/dalai-lama_dhammika.md
     - _content/essays/euthanasia_dhammika.md
-    - _content/essays/from-the-oral-tradition_nyarong-terton.md
     - _content/essays/great-perfection_chokyi-lodro.md
     - _content/essays/i-lost-you_kalayanapong-angkarn.md
     - _content/essays/longing-to-ordain_sudhamma.md
@@ -188,7 +185,6 @@ exclude:
     - _content/articles/mosquitoes-changed-everything_jarvis-brooke.md
     - _content/articles/nuns-parajika_heirman-ann.md
     - _content/articles/reshaping-timelessness_deleanu.md
-    - _content/articles/should-trees-have-standing_stone-chris.md
     - _content/articles/to-be-or-not-to-be_gessen-masha.md
     - _content/articles/unbearable_baskin-jon.md
     - _content/av/1619.md
@@ -298,7 +294,6 @@ exclude:
     - _content/canon/sn47.3.md
     - _content/canon/thag12.2.md
     - _content/canon/ud1.10_sdoe.md
-    - _content/essays/cultivate-concentration_mipham.md
     - _content/essays/if-education-is-not-the-answer_stein-zak.md
     - _content/essays/inviting-the-bell_cantrell-deborah.md
     - _content/essays/kor-what_chandako.md
@@ -330,7 +325,6 @@ exclude:
     - _content/monographs/in-search-of-schrodingers-cat_gribbin-john.md
     - _content/monographs/in-the-hope-of-nibbana_king-winston.md
     - _content/monographs/kids-these-days_harris-malcolm.md
-    - _content/monographs/life-you-can-save_singer-peter.md
     - _content/monographs/mans-search-for-meaning_frankl-viktor.md
     - _content/monographs/material-world_menzel-peter.md
     - _content/monographs/meditators-life-of-the-buddha_analayo.md
@@ -339,7 +333,6 @@ exclude:
     - _content/monographs/saints-and-psychopaths_hamilton.md
     - _content/monographs/samsara-nirvana-and-buddha-nature_dalai-lama-thubten-chodron.md
     - _content/monographs/secrets-of-happiness_schoch-richard.md
-    - _content/monographs/sexual-consent_popova.md
     - _content/monographs/ship-of-gold_kinder-gary.md
     - _content/monographs/stillness-flowing_jayasaro.md
     - _content/monographs/superiority-conceit_analayo.md
