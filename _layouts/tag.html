@@ -66,7 +66,7 @@ layout: default
   {% endif %}{% if tag_content.size > 0 %}
   <div class="tagged_content">
   {% for c in tag_content %}
-    <div class="mb-3 inline_content">{% include calculatestars.dat content=c %}{% case stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{% capture foo %}{% include_cached simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
+    <div class="mb-3 inline_content">{% include calculatestars.dat content=c %}{% case stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
   </div>
   {% endif %}<p class="back"><a href="#top"><em>Back to the top</em>&#x2934;</a></p>{% endif %}
