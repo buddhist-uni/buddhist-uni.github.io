@@ -11,8 +11,8 @@
 {% endif %}
 {%- for c in sorted -%}
     {%- if c.status == 'featured' -%}
-        {% include highlighted_content.html content=c %}
+        {% include_cached highlighted_content.html content=c %}
     {%- else -%}
-        {% include simple_content.html content=c %}
+        {% include_cached simple_content.html content=c %}
     {%- endif -%}
 {%- endfor -%}

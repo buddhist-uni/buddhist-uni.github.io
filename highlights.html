@@ -25,7 +25,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <p>Just added to the library:</p>
 {% assign newc = allcontent | sort: "date" | reverse | slice: 0, 20 %}
 {% for c in newc %}
-<div class="mb-3">{% include simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
+<div class="mb-3">{% include_cached simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
 {% endfor %}
 <p>...  For the complete list, and to be informed about new arrivals, subscribe to <a href="/feed/content.xml">the content RSS Feed</a>.</p>
 {% endif %}
@@ -69,6 +69,6 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% for y in featurecontent %}
 <h3>{{ y.name }}</h3>
 {% for c in y.items %}
-<div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
+<div class="mb-3">{% include_cached simple_content_title.html content=c %}</div>{% endfor %}
 {% endfor %}
 

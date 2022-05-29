@@ -1,5 +1,5 @@
 <div class="simple_content">
-{% capture foo %}{% include simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
+{% capture foo %}{% include_cached simple_content_title.html content=include.content %}{% endcapture %}{{ foo | strip_newlines }}
 <p><em>
   {%- if include.content.status != "rejected" and include.content.course -%}
     {% assign course = site.courses | find: "slug", include.content.course %}

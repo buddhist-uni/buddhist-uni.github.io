@@ -54,6 +54,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-include-cache (0.2.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.2.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
@@ -93,6 +95,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-feed!
+  jekyll-include-cache
   jekyll-last-modified-at!
   jekyll-seo-tag!
   jekyll-sitemap (~> 1.4.0)

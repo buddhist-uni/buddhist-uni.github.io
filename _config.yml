@@ -34,6 +34,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-include-cache
   - jekyll-last-modified-at
 last-modified-at:
     use-git-cache: true

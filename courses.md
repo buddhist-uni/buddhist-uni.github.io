@@ -66,8 +66,8 @@ This site may use cookies to enhance your experience, but you can turn this off 
   </div>
   <div class="featuringrow">
     <div class="flabel"><strong>Featuring</strong>:</div>
-    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
-    {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include content_authors_string.html link=true authors=bauthors %}</div>{% endif %}
+    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include_cached content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
+    {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include_cached content_authors_string.html link=true authors=bauthors %}</div>{% endif %}
   </div>
 </div>
 
