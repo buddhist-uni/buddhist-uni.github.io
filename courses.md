@@ -77,12 +77,23 @@ This site may use cookies to enhance your experience, but you can turn this off 
 
 Courses hosted on other websites.
 
-### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
-{:onclick="goto('http://www.nettletibetan.ca/',1)" .courselink}
+### [The Arahant and the Four Noble Truths](http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
+{:onclick="goto('http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm,0.6)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://www.nettletibetan.ca/',1)" class="cicon"><i class="fas fa-tram"></i></div>
+    <div onclick="goto('http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm',0.6)" class="cicon"><i class="fas fa-mountain"></i></div>
+    <div class="cdesc">The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
+  </div>
+</div>
+
+### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
+{:onclick="goto('http://www.nettletibetan.ca/',0.5)" .courselink}
+
+<div class="coursedesc">
+  <div class="descrow">
+    <div onclick="goto('http://www.nettletibetan.ca/',0.5)" class="cicon"><i class="fas fa-tram"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
