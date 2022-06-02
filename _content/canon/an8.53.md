@@ -1,7 +1,8 @@
 ---
 title: "AN 8.53: In Brief"
 slug: "an.008.053"
-external_url: "https://suttacentral.net/an8.53/en/sujato"
+external_url: "https://sc.readingfaithfully.org/?an8.53"
+source_url: "https://suttacentral.net/an8.53/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk"]
