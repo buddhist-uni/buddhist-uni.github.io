@@ -1,5 +1,6 @@
 vendor
 node_modules
+assets/webfonts
 _site
 .trash
 .obsidian

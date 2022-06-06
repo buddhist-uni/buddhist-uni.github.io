@@ -1,4 +1,4 @@
-name: Build the site
+name: Build
 on:
   workflow_dispatch:
   push:
@@ -14,10 +14,17 @@ jobs:
              fetch-depth: 0
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.3
+         - uses: actions/setup-node@v3
+           with:
+             node-version: 18
+             cache: 'npm'
+             cache-dependency-path: 'package-lock.json'
+         - run: npm ci
+         - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
            uses: ruby/setup-ruby@v1
            with:
-             ruby-version: 2.6
+             ruby-version: 3.1
              bundler-cache: true
          - name: Build the site
            run: |
