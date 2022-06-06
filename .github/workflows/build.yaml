@@ -14,7 +14,8 @@ jobs:
              fetch-depth: 0
          - name: Normalize Unicode in the Previous Commit
            uses: buddhist-uni/normalized-unicode-action@v0.3
-         - uses: actions/setup-node@v3
+         - name: Install node
+           uses: actions/setup-node@v3
            with:
              node-version: 18
              cache: 'npm'

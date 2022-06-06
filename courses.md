@@ -37,7 +37,7 @@ We currently offer {{ site.data.course_order.size }} courses on the fundamentals
 
 - <i class="fas fa-chalkboard-teacher"></i> = A unique icon to identify the course
 - <i class="far fa-address-book"></i> = Books by:
-- <i class="fas fa-microphone-alt"></i> = Lectures by:
+- <i class="fas fa-person-chalkboard"></i> = Lectures by:
 - {:.ccredits}<i class="fas fa-weight-hanging"></i> = <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">Semester Credit Hours</a>
 
 ### Interactive Components
@@ -66,7 +66,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
   </div>
   <div class="featuringrow">
     <div class="flabel"><strong>Featuring</strong>:</div>
-    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-microphone-alt"></i> {% include_cached content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
+    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-person-chalkboard"></i> {% include_cached content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
     {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include_cached content_authors_string.html link=true authors=bauthors %}</div>{% endif %}
   </div>
 </div>
