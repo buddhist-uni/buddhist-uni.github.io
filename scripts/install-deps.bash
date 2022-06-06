@@ -4,5 +4,6 @@
 # npm install --no-bin-links
 # before running this script
 
-mkdir -p assets/webfonts && \
+rm -rf assets/webfonts && \
+  mkdir assets/webfonts && \
   cp node_modules/@fortawesome/fontawesome-free/webfonts/* assets/webfonts/ 
