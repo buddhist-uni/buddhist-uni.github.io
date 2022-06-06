@@ -1,0 +1,15 @@
+{
+  "name": "buddhist-uni.github.io",
+  "version": "2.2",
+  "description": "A digital library for Buddhist scholars.",
+  "repository": "buddhist-uni/buddhist-uni.github.io",
+  "license": "MIT",
+  "bugs": "https://github.com/buddhist-uni/buddhist-uni.github.io/issues",
+  "devDependencies": {
+    "@primer/css": "^15.2.0",
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  },
+  "scripts": {
+  },
+  "dependencies": {}
+}

@@ -45,5 +45,6 @@ This website started off as a Google Drive folder, which still serves as this we
 {% if site.show_bibtex %}
 You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-on="click" ga-event-category="Bibtex" ga-event-action="download" ga-event-label="content.bib" ga-event-value="1"}, suitable for importing into your favorite reference manager. You can find [an RSS Feed of all items in the library here](/feed/content.xml).{% endif %}
 
-While most of the content here can be found via [the original publishers']({% link publishers.html %}), [journals']({% link journals.html %}) and [miscellaneous other]({% link sources.md %}) websites, some of the items in this library can't be found elsewhere. For those, see [the exclusive content page]({% link exclusive.md %}) or [download them all at once via this link](https://github.com/buddhist-uni/exclusive_01/archive/main.zip)).
+While most of the content here can be found via [the original publishers']({% link publishers.html %}), [journals']({% link journals.html %}) and [miscellaneous other]({% link sources.md %}) websites, some of the items in this library can't be found elsewhere. For those, see [the list of our exclusive content]({% link exclusive.md %}) or simply [download them all at once](https://github.com/buddhist-uni/exclusive_01/archive/main.zip)).
 
+For more information about how the library is built, see [our Collection Development Policy](/COLLECTION_POLICY).

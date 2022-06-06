@@ -1,0 +1,32 @@
+---
+---
+
+@import "support";
+
+h1.post-title {
+    font-size: 39px;
+    margin-bottom: 0;
+
+    @include media-query($on-laptop) {
+        font-size: 32px;
+    }
+
+    @include media-query($on-palm) {
+        font-size: 26px;
+    }
+}
+
+header.post-header {
+  margin-bottom: 0;
+}
+
+div.post-content {
+  margin-top: 0;
+  h1:first-of-type {
+    padding-top: 0;
+  }
+}
+
+img[alt="Build status"] {
+  margin-bottom: 6px;
+}

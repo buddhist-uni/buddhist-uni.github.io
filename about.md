@@ -10,12 +10,12 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/b/b5/SrA_Jette_Carr%2C
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_USAF_(5)_(14532088103).jpg">U.S. Department of Defense</a>
 ---
 
-The Open Buddhist University is an unaccredited, digital learning center run by Khemarato Bhikkhu since 2020.
+The Open Buddhist University is an unaccredited, digital resource run by Khemarato Bhikkhu since 2020.
 
 It is based on
 [his personal library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 which he shared with his friends after his ordination in Thailand [in 2019.](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._}
-For more information about how this website is built, take a peek [behind the scenes]({% link README.md %})!
+For more information about how this website is run, take a peek [behind the scenes]({% link README.md %})!
 He hopes that you'll find this website useful and welcomes any feedback or questions at the email below.
 
 You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with Khemarato Bhikkhu and other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.

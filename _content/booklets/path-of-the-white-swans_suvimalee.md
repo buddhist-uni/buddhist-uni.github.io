@@ -12,7 +12,7 @@ tags:
 year: 2022
 olid: OL38226497M
 publisher: "Galgamuwa Visakharama Charitable Trust"
-address: "Mawatha, Sri Lanka"
+address: "Colombo, Sri Lanka"
 pages: "82"
 ---
 

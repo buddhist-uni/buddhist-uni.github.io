@@ -1,5 +1,5 @@
 ---
-title: "How to live without fear and worry?"
+title: "How to live without fear and worry"
 authors: [pasanno]
 month: may
 year: 2020

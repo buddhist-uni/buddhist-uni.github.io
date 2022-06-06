@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buddhistuniversity.net" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-159403467-1
 github_username:  buddhist-uni/buddhist-uni.github.io
+github_branch: master
 tinyletter_username: buddhist-uni
 twitter_username: buddhistuni
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]
@@ -31,6 +32,9 @@ doi: "10.5281/zenodo.4448510"
 
 # Build settings
 markdown: kramdown
+sass:
+  load_paths:
+    - "node_modules"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -248,3 +252,9 @@ defaults:
         type: "content"
     values:
         category: "reference"
+  -
+    scope:
+        path: "README.md"
+    values:
+        title: "Welcome to"
+        custom_css: ["readme"]
