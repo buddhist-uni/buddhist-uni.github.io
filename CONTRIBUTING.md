@@ -25,14 +25,27 @@ OBU is a static HTML website built with [Jekyll](https://jekyllrb.com/) and serv
 
 ### Running the site locally
 
-To run the site locally, clone [the repo](https://github.com/buddhist-uni/buddhist-uni.github.io), then run "[`bundle`](https://bundler.io/) `install`" and "`bundle exec` [`jekyll`](https://jekyllrb.com/docs/installation/) `serve`" keeping in mind that the build may take up to 30 mins. 
+To run the site locally:
 
+Install [Node](https://nodejs.org/en/download/package-manager/), [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and [Bundler](https://bundler.io/).
+Then run:
+
+```bash
+git clone https://github.com/buddhist-uni/buddhist-uni.github.io.git
+cd buddhist-uni.github.io
+npm ci
+bash scripts/install-deps.bash
+bundle install
+bundle exec jekyll serve
+```
+
+Keep in mind that the site build can take up to 40 mins depending on your machine.
 To speed that up, you have two options:
 
-1. You can add the `--config _config.yml,_quick_build.yml` build flag for a faster, but partial build.
-2. You can serve the production build locally like so:
+1. You can add the `--config _config.yml,_quick_build.yml` build flag for a faster, but partial build of the site.
+2. Or you can serve the production build locally like so:
 
-~~~
+~~~bash
 rm -rf _site
 git branch -D prod
 git pull
@@ -42,7 +55,7 @@ git checkout master
 JEKYLL_ENV=production bundle exec jekyll serve --incremental --skip-initial-build
 ~~~
 
-For more information on the build process, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).
+For more information on the build options, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).
 
 ### The Source Code
 
