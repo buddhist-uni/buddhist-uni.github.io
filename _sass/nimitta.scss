@@ -111,6 +111,10 @@ main {
     }
 }
 
+.footnotes {
+    font-size: 15px;
+}
+
 footer.site-footer {
     background-color: $banner-color;
     color: $background-color;
@@ -514,7 +518,7 @@ article.tag .subtopics {
     font-size: 105%;
 }
 
-.content_links {
+.content_links a {
     font-family: $ui-font-family;
 }
 

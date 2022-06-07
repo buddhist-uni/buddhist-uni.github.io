@@ -231,6 +231,10 @@ pre {
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
+  width: max-content;
+  max-width: 100%;
+  display: block;
+  overflow: auto;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;

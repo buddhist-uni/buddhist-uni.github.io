@@ -16,7 +16,7 @@ year: 1996
 month: aug
 address: Taiwan
 olid: OL37927110M
-pages: "31"
+pages: 31
 ---
 
 > Fulfill One's Duties and be Responsible

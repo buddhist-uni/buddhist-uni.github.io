@@ -8,7 +8,7 @@ tags:
   - meditation
 year: 2014
 publisher: "Sotoshu Shumucho"
-pages: "2"
+pages: 2
 ---
 
 > Position your buttocks in the center of the zafu and cross your legs.

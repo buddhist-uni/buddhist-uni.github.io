@@ -13,7 +13,7 @@ olid: OL20763545M
 oclc: 24007768
 publisher: "Dharma Drum"
 address: "Elmhurst, NY"
-pages: "145"
+pages: 145
 ---
 
 > Chan transcends knowledge, symbols, and all the apparatus of language.

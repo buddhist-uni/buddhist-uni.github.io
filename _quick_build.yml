@@ -18,6 +18,8 @@ exclude:
     - .obsidian/
     - .github/
     - node_modules
+    - package.json
+    - package-lock.json
     - vendor/bundle/
     - vendor/cache/
     - vendor/gems/
@@ -85,7 +87,6 @@ exclude:
     - _content/articles/the-upside-offensive_dorwart-jason.md
     - _content/articles/translation-through-a-zen-mind.md
     - _content/av/activism-and-empathy_courtin.md
-    - _content/av/ancient-path-to-enlightenment_dabei.md
     - _content/av/buddha-in-lanna_chiu-angela.md
     - _content/av/buddhism-and-education_jayasaro.md
     - _content/av/buddhist-education_jayasaro.md
@@ -621,5 +622,5 @@ exclude:
     - _content/av/what-remains-of-us.md
     - _content/monographs/orthodox-chinese-buddhism_sheng-yen.md
     - _content/reference/historical-dictionary-of-chan_wang-youru.md
-    - _content/booklets/tracing-thought-through-things_stargardt.md
     - _content/av/unesco_history-hour.md
+    - _content/articles/zen-and-prejudice_bodiford-william.md

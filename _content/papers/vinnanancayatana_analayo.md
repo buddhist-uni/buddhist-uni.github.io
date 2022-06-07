@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vinnanancayatana.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1Wj37zSxUiK1yRvP9GqOZzBNC44McGaEy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HLE2w6V5D6exexFmdaEDYwYjEcAjUeLG/view?usp=sharing"
 course: samatha
 tags:
   - arupa
