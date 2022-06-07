@@ -15,7 +15,7 @@ olid: OL8595772M
 oclc: 71812781
 publisher: "North Atlantic Books"
 address: "Berkeley, CA"
-pages: "278"
+pages: 278
 ---
 
 An English translation of a popular 1960s introduction to Buddhism for a Chinese audience.
