@@ -12,5 +12,4 @@ A BIG thank you to:
 
 It's a testament to Buddhist generosity that such an expansive and outstanding collection could be compiled (almost entirely) from free material.
 
-The Open Buddhist University is an HTML5 website [built with Jekyll](https://jekyllrb.com/) by Khemarato Bhikkhu.
-
+The Open Buddhist University is an HTML5 website [built with Jekyll](https://jekyllrb.com/).

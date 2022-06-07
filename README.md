@@ -70,7 +70,7 @@ The entire library can be downloaded as [a Bibtex database here](https://buddhis
 ## Contributing
 
 OBU would love your help!
-See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/CONTRIBUTING.md) for how to get started.
+See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/CONTRIBUTING.md) for how to get started, including how to run the site on your own machine.
 
 ## Acknowledgements
 

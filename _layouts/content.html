@@ -139,7 +139,7 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
         <tr><td>Added</td><td><span style="font-family: system-ui, sans;">{{ page.date | date_to_rfc822 }}</span></td></tr>
         {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span style="font-family: system-ui, sans;">{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}
       </tbody></table>{% endif %}
-      <span><a href="https://github.com/{{ site.github_username }}/blob/{{ site.github_branch }}/{{ page.path }}">View this entry's sourcecode on GitHub</a></span>
+      <span><a href="https://github.com/{{ site.github_repo }}/blob/{{ site.github_branch }}/{{ page.path }}">View this entry's source code on GitHub</a></span>
       </div>
     </details>{% endif %}
 
