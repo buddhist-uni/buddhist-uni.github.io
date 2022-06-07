@@ -93,7 +93,7 @@ Courses hosted on other websites.
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://www.nettletibetan.ca/',0.5)" class="cicon"><i class="fas fa-tram"></i></div>
+    <div onclick="goto('http://www.nettletibetan.ca/',0.5)" class="cicon"><i class="fas fa-person-hiking"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
