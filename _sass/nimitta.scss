@@ -269,9 +269,9 @@ h5 {
 
 $new-tab-icon-size: 0.95em;
 a[target="_blank"]:after {
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    content: " \f35d"; // https://fontawesome.com/v5/cheatsheet
+    content: " \f08e";
     vertical-align: super;
     font-size: 65%;
 }
@@ -396,6 +396,14 @@ i.fac-fojing {
 }
 i.fac-fojing:after {
     content: "佛經";
+}
+i.fac-academia {
+    font-style: normal;
+}
+i.fac-academia:after {
+    font-family: serif;
+    font-weight: bold;
+    content: "A";
 }
 
 .simple_content p {
