@@ -13,7 +13,7 @@ year: 2022
 olid: OL38226497M
 publisher: "Galgamuwa Visakharama Charitable Trust"
 address: "Colombo, Sri Lanka"
-pages: "82"
+pages: 82
 ---
 
 > the general Buddhist public even in Sri Lanka do not seem to know of what stuff the newly “resurrected” bhikkhunis are made.

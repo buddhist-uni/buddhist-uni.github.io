@@ -10,7 +10,7 @@ tags:
   - chinese
 year: 1993
 address: "Bronx, NY"
-pages: "285"
+pages: 285
 ---
 
 A typical example of a Chinese-English chanting book.

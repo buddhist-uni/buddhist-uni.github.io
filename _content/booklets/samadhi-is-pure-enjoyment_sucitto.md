@@ -14,7 +14,7 @@ tags:
   - feeling
 year: 2014
 olid: OL38229881M
-pages: "27"
+pages: 27
 ---
 
 > But what if samādhi was a relief?
