@@ -81,11 +81,9 @@ There's one significant primary text in this course, but it isn't an early text.
 
 A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
 
-{% include content_blurb.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" %}
-- A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions.
+{% include content_blurb.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" blurb="A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions." %}
 
-{% include content_blurb.html category="monographs" slug="genesis-of-bodhisattva_analayo" %}
-- In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries.
+{% include content_blurb.html category="monographs" slug="genesis-of-bodhisattva_analayo" blurb="In this monograph, the renowned scholar of early Buddhism explores what the early literature can tell us about how the Buddha became the Buddha: a topic of extraordinary importance in later centuries." %}
 
 ## The Course
 
@@ -105,10 +103,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 ### Part 1: Becoming the Buddha
 
 1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
-1. {% include content_blurb.html slug="dn30" category="canon" %}
-    - This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!
-1. {% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}
-1. {% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}
+1. {% capture foo %}{% include content_blurb.html slug="dn30" category="canon" blurb="This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] The Buddha's Family
 1. {% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}
 
@@ -120,22 +117,22 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [E] The Bodhisattva Career in the Theravada
 1. [Bodhisattva] Chapter 2: Meeting the Previous Buddha
-1. {% include content_blurb.html category="articles" slug="sumedhakatha-in-pali-and-the-northern-tradition_matsumura-junko" %}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="sumedhakatha-in-pali-and-the-northern-tradition_matsumura-junko" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Nidanakatha] The Distant Epoch
 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
-1. {% include content_blurb.html category="essays" slug="food-of-awakening_dhammika" %}
+1. {% capture foo %}{% include content_blurb.html category="essays" slug="food-of-awakening_dhammika" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Life] After the Enlightenment
-1. {% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}
-1. {% include content_blurb.html category="articles" slug="tathagata_bodhi" %}
+1. {% capture foo %}{% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="tathagata_bodhi" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="excerpts" slug="tathagata_analayo" %}
 
-1. {% include content_blurb.html category="articles" slug="weary-buddha_webster" %}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="weary-buddha_webster" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Entries] _Pratyeka-buddhas_
 1. [Entries] Optional: The Four Ennobling Truths
 1. [Refuge] Arahaṁ
 
-1. {% include content_blurb.html slug="mvu94" category="canon" %}
+1. {% capture foo %}{% include content_blurb.html slug="mvu94" category="canon" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html slug="lal26" category="canon" %}
 
 1. [Life] Spreading the Dhamma
@@ -152,10 +149,10 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [[Teacher of the Devas](#teacher-of-devas_jootla)] Introduction: The Devas
 
 1. [Life] Formation of the Order of Nuns
-1. {% include content_blurb.html category="articles" slug="nuns-before-mahapajapati_williams-liz" %}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="nuns-before-mahapajapati_williams-liz" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="articles" slug="mahapajapati-pabaja_analayo" %} 
 
-1. {% include content_blurb.html category="excerpts" slug="vijjacarana_analayo" %}
+1. {% capture foo %}{% include content_blurb.html category="excerpts" slug="vijjacarana_analayo" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Refuge] Vijjā-caraṇa-sampanno
 1. {% include inline_content.html category="excerpts" slug="tevijjavacchagottasutta_analayo" %}
 
@@ -163,7 +160,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [R] Sugato
 
 1. [L] End of the First Twenty Years
-1. {% include content_blurb.html category="canon" slug="mn35" %}
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="mn35" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Teacher] Teaching the Devas
 1. [R] Locavidū
 
@@ -172,7 +169,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [R] Anuttaro purisa-damma-sārathi 
 1. [L] The Person
-1. {% include content_blurb.html category="canon" slug="mn91" %}
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="mn91" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %}
 
 1. [L] The Doctrine
@@ -188,8 +185,8 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. Review: [T] Devas in the Buddha's Career
 
 1. [L] The Last Year
-1. {% include content_blurb.html category="articles" slug="sukaramaddava_ireland" %}
-1. {% include content_blurb.html category="articles" slug="cause-of-the-buddhas-death_mettanando-hinuber" %}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="sukaramaddava_ireland" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html category="articles" slug="cause-of-the-buddhas-death_mettanando-hinuber" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] Relics of the Buddha
 1. [R] Bhagava
 
