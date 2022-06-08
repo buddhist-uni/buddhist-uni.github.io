@@ -116,8 +116,8 @@ Courses hosted on other websites.
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-baby"></i></div>
-    <div class="cdesc">A stunning lecture series by <i class="fas fa-microphone-alt"></i> Robert Sapolsky on what makes people tick. Required watching for everyone who has to deal with humans.</div>
+    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
+    <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. His lectures went on to become a 2017 best-seller: <i>The Biology of Humans at Our Best and Worse</i>.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
@@ -128,7 +128,7 @@ Courses hosted on other websites.
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="goto('https://www.coursera.org/learn/modpo',3)" class="cicon"><i class="fas fa-feather-alt"></i></div>
-    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of poetry, but how to read it.
+    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the poems, but how to read them.
     This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>

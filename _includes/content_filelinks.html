@@ -7,7 +7,7 @@
     {% if include.content.file_links.size > 0 %}
         {%- for link in include.content.file_links -%}
             {%- assign i = forloop.index | minus: 1 -%}
-            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="{{ link }}" href={{ site.data.content.filehost | append: link }}><i class="fa{% case include.content.formats[i] %}{% when "pdf" %}r fa-file-pdf{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ include.content.formats[i] }}</a>
+            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} ga-event-value="{{ value }}" data-content-path="{{ content_path }}" ga-event-label="{{ link }}" href={{ site.data.content.filehost | append: link }}><i class="fa{% case include.content.formats[i] %}{% when "pdf" %}r fa-file-pdf{% when "jpeg" %}r fa-file-image{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ include.content.formats[i] }}</a>
         {%- endfor -%}
     {%- endif -%}
     {%- if include.content.drive_links.size > 0 -%}
