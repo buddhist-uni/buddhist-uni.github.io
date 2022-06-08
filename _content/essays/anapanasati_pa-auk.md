@@ -8,6 +8,7 @@ drive_links:
 course: samatha
 tags:
   - anapanasati
+  - meditation
 year: 2001 # a wild guess
 ---
 
