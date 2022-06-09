@@ -12,7 +12,7 @@
 {%- endif -%}
 
 {%- assign ctag = site.tags | find: "slug", include.course.slug -%}
-{%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" -%}
+{%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" | where_exp: "c", "c.course" -%}
 {%- capture furthercourses -%}
 {%- assign floobar = nil -%}
 {%- for course in site.courses include.course.next_courses -%}
