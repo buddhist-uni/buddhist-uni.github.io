@@ -15,6 +15,9 @@ tags:
 year: 2020
 month: oct
 minutes: 67
+series: know-your-enemy
+number: 22
+# actually was a bonus episode between 21 and 22
 ---
 
 > What kind of creatures are we? And how should we relate to each-other?
