@@ -6,7 +6,7 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Qing_Manjusri_Bodhi
 order: 10
 ---
 
-# Assigned Readings
+# Readings
 
 
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb='
@@ -28,8 +28,6 @@ The Buddha gives a vivid simile which illustrates the Buddhist outlook on life i
 ### Buddhist Art
 
 Art can be a powerful way to convey religious feeling. How would you depict the above sutta?
-Consider making your own work of Buddhist Art inspired by the above (or something from a previous lesson).
-If you do, please share [your poem](https://discourse.suttacentral.net/t/original-dhamma-poems-composed-by-forum-members/20920?u=khemarato.bhikkhu){:target="_blank"}, [doodle](https://discourse.suttacentral.net/t/dhamma-doodles-grin/7206?u=khemarato.bhikkhu){:target="_blank"} or [whatever](https://discourse.suttacentral.net/t/using-art-to-teach-dhamma/7282?u=khemarato.bhikkhu){:target="_blank"} to the SuttaCentral Forum so we can rejoice in your work!
 ' %}
 
 ## Lecture
