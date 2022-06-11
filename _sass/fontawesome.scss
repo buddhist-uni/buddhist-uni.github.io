@@ -5,3 +5,9 @@
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
 @import "@fortawesome/fontawesome-free/scss/brands.scss";
 
+// EB Garamond is a rather small font.
+// Scale these down 5% to match
+.fas, .far, .fab {
+    font-size: 95%;
+}
+
