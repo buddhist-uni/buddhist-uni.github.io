@@ -3,7 +3,7 @@ title: "The Buddha's Sons: In Favor of Orthodoxy"
 authors: ["Elson Snow"]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1BNwtLuHgNce0hrT0T-AL_2rEwyb4Z0JZ/view?usp=drivesdk"]
-external_url: "https://www.shin-ibs.edu/documents/pwj-one/one2/10Snow.pdf"
+source_url: "http://www.shin-ibs.edu/documents/pwj-one/one2/10Snow.pdf"
 journal: pw
 year: 1983
 pages: "27--28"

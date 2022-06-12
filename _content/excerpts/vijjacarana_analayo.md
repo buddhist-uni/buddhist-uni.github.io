@@ -9,7 +9,7 @@ number: 3
 pages: "601--605"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vijjacarana.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vijjacarana.pdf"
 year: 2009
 drive_links:
  - "https://drive.google.com/file/d/1Jy-EmdvXiT-tDjna5OISYS2ynkZ3P_il/view?usp=drivesdk"

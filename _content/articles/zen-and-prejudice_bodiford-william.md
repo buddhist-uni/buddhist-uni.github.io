@@ -3,7 +3,7 @@ title: "Zen and the Art of Religious Prejudice: Efforts to Reform a Tradition of
 authors:
   - "William Bodiford"
 source_url: "http://nirc.nanzan-u.ac.jp/nfile/2584"
-external_url: "http://www.thezensite.com/ZenEssays/CriticalZen/ZenandReligiousPrejudice.pdf"
+external_url: "https://www.thezensite.com/ZenEssays/CriticalZen/ZenandReligiousPrejudice.pdf"
 drive_links:
   - "https://drive.google.com/file/d/183aUJv03qMkUfMKUpYT8P8axHwvSlBx8/view?usp=drivesdk"
 status: featured

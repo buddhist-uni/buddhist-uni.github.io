@@ -2,7 +2,7 @@
 title: "Two Dogmas of Zen Buddhism"
 authors:
   - "George Wrisley"
-external_url: "http://www.thezensite.com/ZenEssays/Philosophical/Two_Dogmas_of_Zen_Buddhism.pdf"
+external_url: "https://www.thezensite.com/ZenEssays/Philosophical/Two_Dogmas_of_Zen_Buddhism.pdf"
 source_url: "https://www.georgewrisley.com/Two%20Dogmas%20of%20Zen%20Buddhism.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1T5yR9hGuMAF_RtFClFoNntDP2Zqyy_bW/view?usp=drivesdk"

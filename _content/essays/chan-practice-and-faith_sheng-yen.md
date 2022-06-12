@@ -2,7 +2,7 @@
 title: "Chan Practice and Faith"
 authors:
   - sheng-yen
-external_url: "http://www.shengyen.org/freebook/pdf/Chan_Practice_and_Faith.pdf"
+external_url: "https://www.shengyen.org/freebook/pdf/Chan_Practice_and_Faith.pdf"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1uXKsdJxEpcX0qG_cXvs_5KzF_BIO5MqO/view?usp=drivesdk"

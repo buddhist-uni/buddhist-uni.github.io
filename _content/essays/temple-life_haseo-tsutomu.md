@@ -2,7 +2,7 @@
 title: "Temple Life"
 authors:
   - "Haseo Tsutomu"
-external_url: "http://bschawaii.org/shindharmanet/wp-content/uploads/sites/3/2015/03/Tsutomu-Temple.pdf"
+external_url: "https://bschawaii.org/shindharmanet/wp-content/uploads/sites/3/2015/03/Tsutomu-Temple.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Q13CTQ2w7bSNx_aY54c5AaIMEMu26zrY/view?usp=drivesdk"
 course: monastic

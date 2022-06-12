@@ -2,7 +2,7 @@
 title: "Aspects of Early Buddhist Sociological Thought"
 authors: ["Ven Pategama Gnanarama"]
 year: 1998
-external_url: "http://www.buddhanet.net/pdf_file/social-thought6.pdf"
+external_url: "https://www.buddhanet.net/pdf_file/social-thought6.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/11FwElCZ5I-KM2bR2NoFyXT5bsN1mVyH-/view?usp=drivesdk"]
 olid: OL32061986M

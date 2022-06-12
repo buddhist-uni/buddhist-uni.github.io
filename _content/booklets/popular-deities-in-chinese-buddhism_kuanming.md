@@ -2,7 +2,7 @@
 title: "Popular Deities of Chinese Buddhism"
 authors:
   - "Kuan Ming"
-external_url: "http://www.buddhanet.net/pdf_file/ancientsgrfx.pdf"
+external_url: "https://www.buddhanet.net/pdf_file/ancientsgrfx.pdf"
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/13VOk2vlIMlKSStYagO9CRLbyTZotM4Jm/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Kathina: Then and Now"
 authors:
   - "Aggacitta Bhikkhu"
-external_url: "http://www.buddhanet.net/pdf_file/kathina.pdf"
+external_url: "https://www.buddhanet.net/pdf_file/kathina.pdf"
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1hFcEuZfaWrfAGgqnnlgoW9msWwz9AoKu/view?usp=drivesdk"

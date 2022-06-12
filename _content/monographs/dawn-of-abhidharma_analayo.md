@@ -2,7 +2,7 @@
 title: "The Dawn of Abhidharma"
 authors:
   - analayo
-external_url: "http://hup.sub.uni-hamburg.de/volltexte/2014/145/pdf/HamburgUP_HBS2_Analayo_Abhidharma.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dawn-abhidharma.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1NCQisWmjDPnA48QrIPCoWPAZXNKJBS5a/view?usp=drivesdk"
 course: indian

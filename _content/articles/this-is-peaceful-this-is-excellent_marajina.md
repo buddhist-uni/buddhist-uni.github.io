@@ -1,7 +1,7 @@
 ---
 title: "This is Peaceful, This is Excellent: Reflections on Monastic Life at Aranya Bodhi Hermitage"
 authors: [marajina]
-external_url: "http://www.bhikkhuni.net/wp-content/uploads/2013/06/etam-santam.pdf"
+external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/06/etam-santam.pdf"
 drive_links: ["https://drive.google.com/file/d/1aXzQg2L4iBu9DiSc07gEy1VbM6ov-Vb4/view?usp=drivesdk"]
 tags: 
   - monastic

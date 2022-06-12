@@ -9,7 +9,7 @@ number: 3
 pages: "669--671"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vipaka.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vipaka.pdf"
 year: 2009
 drive_links:
  - "https://drive.google.com/file/d/1v7lMJsD2JQDrXJQH_UZTEeIwkr5d-AC5/view?usp=drivesdk"
