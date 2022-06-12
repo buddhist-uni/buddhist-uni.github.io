@@ -2,7 +2,7 @@
 title: "The Cessation of Suffering and Buddhist Axiology"
 authors:
   - "Daniel Breyer"
-external_url: "http://blogs.dickinson.edu/buddhistethics/files/2015/12/Breyer-Axiology-final.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/12/Breyer-Axiology-final.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1QgEgoy3h8NkddsZZESMJNb1dxRnKkDPP/view?usp=drivesdk"
 course: ethics

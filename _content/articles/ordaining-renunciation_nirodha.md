@@ -1,7 +1,7 @@
 ---
 title: "On Ordaining and Renunciation"
 authors: ["Bhikkhuni Nirodha"]
-external_url: "http://www.bhikkhuni.net/wp-content/uploads/2013/06/bhikkhuni-nirodha.pdf"
+external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/06/bhikkhuni-nirodha.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1RzrEGLovQA6eKV4RAu7yRJyPSDN3mL26/view?usp=drivesdk"]
 year: 2012

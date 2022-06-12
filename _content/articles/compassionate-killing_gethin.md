@@ -2,7 +2,7 @@
 title: "Can Killing a Living Being Ever Be an Act of Compassion?: The Act of Killing in the Abhidhamma and Pali Commentaries"
 authors:
   - gethin
-external_url: "http://blogs.dickinson.edu/buddhistethics/files/2010/04/geth0401.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/geth0401.pdf"
 alternate_url: "https://www.urbandharma.org/pdf/geth0401.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1RVMxtZpJ676_wE182Rq1q1pdqtfqIZgb/view?usp=drivesdk"

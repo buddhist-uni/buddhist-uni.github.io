@@ -3,7 +3,7 @@ title: "The Buddhist Caves at Aurangabad: The Impact of the Laity"
 authors:
   - "Pia Brancaccio"
 source_url: "https://archive.org/details/arsorientalisart12000univ/page/40/mode/2up"
-external_url: "http://www.ahandfulofleaves.org/documents/The%20Buddhist%20Caves%20at%20Aurangabad_The%20Impact%20of%20the%20Laity_Brancaccio.pdf"
+external_url: "https://shorturl.at/rCFX8"
 drive_links:
   - "https://drive.google.com/file/d/1E06_lFubssk02k8QocP0QT3IeK8aBOb_/view?usp=drivesdk"
 course: pilgrimage
