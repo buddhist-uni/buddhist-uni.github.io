@@ -10,7 +10,7 @@ course: monastic
 status: featured
 tags:
   - mahayana
-  - path
+  - monastic-advice
 base_value: 0.25
 ---
 
