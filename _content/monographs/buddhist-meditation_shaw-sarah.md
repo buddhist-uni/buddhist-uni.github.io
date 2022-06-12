@@ -6,6 +6,7 @@ course: samatha
 tags:
   - sati
   - meditation # maybe should move here?
+  - theravada
 year: 2006
 olid: OL3403394M
 publisher: Routledge

@@ -1,7 +1,7 @@
 ---
 title: "Gotami’s Enlightenment Poem"
 translator: "Susan Murcott"
-external_url: "http://www.bhikkhuni.net/wp-content/uploads/2013/07/gotamis-enlightenment-poem_winter2011.pdf"
+external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/07/gotamis-enlightenment-poem_winter2011.pdf"
 journal: present
 year: 2011
 pages: 53
