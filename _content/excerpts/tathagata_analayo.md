@@ -9,7 +9,7 @@ number: 2
 pages: "277--283"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/tathagata.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/tathagata.pdf"
 year: 2008
 drive_links:
  - "https://drive.google.com/file/d/1TesyxwmN5phkiZ3B7Fpc6QDCCRUtIMoQ/view?usp=drivesdk"

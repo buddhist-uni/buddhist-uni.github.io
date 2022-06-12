@@ -9,7 +9,7 @@ number: 3
 pages: "807--808"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/yona.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/yona.pdf"
 year: 2009
 drive_links:
  - "https://drive.google.com/file/d/1Ka2Z2TXhVxngr2IyApdEKKHqL5zHhSF3/view?usp=drivesdk"

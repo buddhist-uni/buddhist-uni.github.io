@@ -7,7 +7,7 @@ publisher: dharmadrum
 year: 2013
 number: 13
 pages: "1--66"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/translations/sa03.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/translations/sa03.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1PclwThTe5zJMuoEl8-RU5hBzo7iTopxF/view?usp=drivesdk"]
 course: sa

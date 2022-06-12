@@ -1,8 +1,10 @@
 ---
 title: "Common Buddhist Text: Guidance and Insight from the Buddha"
 editor: "Ven Brahmapundit and Peter Harvey"
-external_url: "https://bit.ly/3xFY6vE"
+alternate_url: "http://www.icdv.net/pdf/cbt_final_dec29%202015.pdf"
 olid: OL35605236M
+file_links:
+  - "exclusive_01/Common%20Buddhist%20Text%20(2015-12-29).pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Lsvleiouh2Vx_IZFyCedzy8EHHUHokHt/view?usp=drivesdk"
 source_url: "https://www.watprayoon.com/files/book/2560-05-06-PBD3LATripidok.pdf"

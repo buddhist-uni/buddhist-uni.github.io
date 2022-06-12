@@ -13,7 +13,7 @@ tags:
   - thought
   - epistemology
   - gender
-external_url: "http://blogs.dickinson.edu/buddhistethics/files/2012/04/Goodwin-Right-View-Final-Edit-April-29-2012.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2012/04/Goodwin-Right-View-Final-Edit-April-29-2012.pdf"
 year: 2012
 month: apr
 drive_links:

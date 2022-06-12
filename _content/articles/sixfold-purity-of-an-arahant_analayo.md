@@ -4,7 +4,7 @@ authors: [analayo]
 journal: jbe
 year: 2008
 volume: 15
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/sixfold-purity.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/sixfold-purity.pdf"
 drive_links: ["https://drive.google.com/file/d/1SNlh0qik8D4qzRlbsNGz6PhWbAFWXtYq/view?usp=drivesdk"]
 course: philosophy
 tags:

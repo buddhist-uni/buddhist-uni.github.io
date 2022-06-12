@@ -5,7 +5,7 @@ course: agama
 tags:
   - ebts
   - comparative-studies
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/reflect-comp-agama.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/reflect-comp-agama.pdf"
 year: 2008
 volume: 21
 pages: "3--21"

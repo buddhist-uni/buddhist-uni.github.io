@@ -3,7 +3,7 @@ title: "Whose Zen?: Zen Nationalism Revisited"
 authors:
   - sharf-rob
 editor: "James W. Heisig and John Maraldo"
-external_url: "http://www.thezensite.com/ZenEssays/CriticalZen/whose%20zen_sharf.pdf"
+external_url: "https://www.thezensite.com/ZenEssays/CriticalZen/whose%20zen_sharf.pdf"
 source_url: "https://web.archive.org/web/20151003095520if_/http://buddhiststudies.berkeley.edu/people/faculty/sharf/documents/Sharf%201995%20Whose%20Zen.pdf"
 drive_links:
   - "https://drive.google.com/file/d/18pxkxff2Q175UKkrr-6MAMuM3BRu-SyS/view?usp=drivesdk"

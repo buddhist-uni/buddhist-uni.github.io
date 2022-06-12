@@ -1,7 +1,7 @@
 ---
 title: "The Bodhisattva Precepts"
 authors: [sheng-yen]
-external_url: "http://www.shengyen.org/freebook/pdf/The_Bodhisattva_Precepts_Directions_to_Buddhahood.pdf"
+external_url: "https://www.shengyen.org/freebook/pdf/The_Bodhisattva_Precepts_Directions_to_Buddhahood.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1niEjJ0Nsj38l5DCyG_YKJZqzcNiSxDOD/view?usp=drivesdk"
   - "https://drive.google.com/file/d/13JWAy3S25B5Qh-5c0DtWKJzTCZtnUCzv/view?usp=drivesdk"

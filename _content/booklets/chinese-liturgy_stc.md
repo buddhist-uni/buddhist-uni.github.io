@@ -1,7 +1,7 @@
 ---
 title: "The (Chinese) Buddhist Liturgy"
 publisher: "The Sutra Translation Committee of the United States and Canada"
-external_url: "http://ftp.budaedu.org/ebooks/pdf/CE002.pdf"
+source_url: "http://ftp.budaedu.org/ebooks/pdf/CE002.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1GnUjnr1qaG1AkdVvOsz3iKQsvENvt6h_/view?usp=drivesdk"
 course: mahayana

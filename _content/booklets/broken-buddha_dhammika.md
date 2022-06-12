@@ -1,7 +1,7 @@
 ---
 title: "Broken Buddha: Critical Reflections on Theravada and a Plea for a New Buddhism"
 authors: [dhammika]
-external_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/brokenbuddhanew.pdf"
+source_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/brokenbuddhanew.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1p9ag8X185EOUazI87pmSSy_td6Izr-3r/view?usp=drivesdk"]
 year: 2006

@@ -8,7 +8,7 @@ tags:
   - power
   - refugees
   - thought
-external_url: "http://blogs.dickinson.edu/buddhistethics/files/2019/12/Kilby_19_Final-1.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2019/12/Kilby_19_Final-1.pdf"
 year: 2019
 volume: 26
 pages: "307--327"

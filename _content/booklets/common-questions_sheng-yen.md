@@ -2,8 +2,7 @@
 title: "Common Questions in the Practice of Buddhism"
 authors:
   - sheng-yen
-external_url: "http://www.108wisdom.org/html/OTH_05.pdf"
-source_url: 
+source_url: "http://www.108wisdom.org/html/OTH_05.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Uh0PnUKcMWHFuW97isAp4F-n-Wd-M_qW/view?usp=drivesdk"
 tags:

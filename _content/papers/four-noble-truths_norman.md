@@ -2,7 +2,7 @@
 title: "The Four Noble Truths"
 authors: [norman]
 drive_links: ["https://drive.google.com/file/d/1sDFnrYLd-LXkLS-RQyQuSQL2WwvNpYgM/view?usp=drivesdk"]
-external_url: "http://www.ahandfulofleaves.org/documents/Articles/The%20Four%20Noble%20Truths_Norman_PTS_2003.pdf"
+source_url: "http://www.ahandfulofleaves.org/documents/Articles/The%20Four%20Noble%20Truths_Norman_PTS_2003.pdf"
 booktitle: "Indological and Buddhist Studies (Volume in Honor of Professor J.W. de Jong)"
 pages: "377--391"
 publisher: "the Australian National University Press"

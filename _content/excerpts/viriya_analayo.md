@@ -9,7 +9,7 @@ number: 3
 pages: "691--695"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/viriya.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/viriya.pdf"
 year: 2009
 drive_links:
  - "https://drive.google.com/file/d/1Wj37zSxUiK1yRvP9GqOZzBNC44McGaEy/view?usp=drivesdk"

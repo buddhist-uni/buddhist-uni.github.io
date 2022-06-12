@@ -7,7 +7,7 @@ publisher: dharmadrum
 year: 2014
 number: 15
 pages: "1--65"
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/translations/sa05.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/translations/sa05.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1i14ZsvSXsC_aQ0Yv0ENN8-qOh9OVW3Qa/view?usp=drivesdk"]
 course: sa

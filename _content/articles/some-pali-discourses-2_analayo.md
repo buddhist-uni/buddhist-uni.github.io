@@ -1,7 +1,7 @@
 ---
 title: "Some Pāli Discourses in the Light of their Chinese Parallels: Part 2"
 authors: [analayo]
-external_url: "http://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/some-pali-dis2.pdf"
+external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/some-pali-dis2.pdf"
 journal: bsr
 year: 2005
 volume: 22

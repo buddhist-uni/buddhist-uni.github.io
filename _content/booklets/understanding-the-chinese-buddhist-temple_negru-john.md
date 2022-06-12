@@ -2,7 +2,7 @@
 title: "Understanding the Chinese Buddhist Temple"
 authors: ["John Negru"]
 year: 2010
-external_url: "http://www.buddhistelibrary.org/en/albums/central/Dhamma_books/Understanding_the_Chinese_Buddhist_Temple.pdf"
+external_url: "https://www.buddhistelibrary.org/en/albums/central/Dhamma_books/Understanding_the_Chinese_Buddhist_Temple.pdf"
 publisher: "Sumeru Press"
 olid: OL32040798M
 drive_links:
