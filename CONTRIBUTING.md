@@ -42,7 +42,7 @@ bundle exec jekyll serve
 Keep in mind that the site build can take up to 40 mins depending on your machine.
 To speed that up, you have two options:
 
-1. You can add the `--config _config.yml,_quick_build.yml` build flag for a faster, but partial build of the site.
+1. You can add the `--config _config.yml,_quick_build.yml` build flag to Jekyll for a faster, but partial build of the site.
 2. Or you can serve the production build locally like so:
 
 ~~~bash
