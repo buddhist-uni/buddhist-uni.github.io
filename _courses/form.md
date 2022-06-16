@@ -407,9 +407,16 @@ While not representative of the diversity within each of the following "national
 
 ##### Robinson Chapter 11: Tibet
 
-{% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" %}
-- Now that we've covered all the "traditional" forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
-- Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
+{% include content_blurb.html category="av" slug="guru-rinpoche-prayer_choying" blurb="A Tibetan nun opens this lesson for us by singing a prayer to Guru Rinpoche." %}
+
+{% include content_blurb.html category="av" slug="drepung-loseling-buddha" blurb="A Tibetan monk shows us his temple's primary Buddha image, explaining the symbolism behind its gestures." %}
+
+{% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" blurb="
+Now that we've covered all the “traditional” forms of Buddhism, we can take a closer look at one particular element of cultural Buddhism that has been surprisingly ubiquitous across Buddhist cultures: misogyny.
+Allison Goodwin gives a brief outline of the discrimination faced by women in Buddhism, and a thoroughly cited argument for rejecting sexist views, even those that appear in the Buddhist Canon.
+" %}
+
+{% include content_blurb.html category="av" slug="gender-in-buddhism_liang-jue" blurb="A conversation between two scholars about the first women in Tibetan Buddhism." %}
 
 [CBT] V.47
 {:.mb-0}
@@ -438,12 +445,6 @@ While not representative of the diversity within each of the following "national
 [CBT] V.91
 {:.mb-0}
 - Exuberant guru and deity worship are also notable features of Tibetan Buddhism.
-
-{% include content_blurb.html category="av" slug="drepung-loseling-buddha" %}
-- A Tibetan monk briefly shows off his temple's primary Buddha image, explaining the symbolism behind its gestures.
-
-{% include content_blurb.html category="av" slug="guru-rinpoche-prayer_choying" %}
-- Here is a beautiful rendition of a popular Guru invocation, sung by a Tibetan Nun.
 
 <i class="fas fa-book-open"></i> <i>Aspects (of Buddhist Sociological Thought)</i> Chapter 8: Women's Social Role
 {:.mb-0}
