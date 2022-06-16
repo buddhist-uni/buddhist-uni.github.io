@@ -1,4 +1,4 @@
-name: Cache Buster
+name: Cache Invalidation
 on:
   workflow_run:
     workflows:
