@@ -56,7 +56,7 @@
   searchForm.onsubmit = prevent;
 
   try {
-      window.search_worker = new Worker("/assets/js/search_index.js");
+      window.search_worker = new Worker("/assets/js/search-worker.js");
       function newQuery(e) {
         var q = e;
         if (e.target) q = e.target.value;
