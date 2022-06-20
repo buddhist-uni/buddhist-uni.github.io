@@ -27,6 +27,7 @@ You can find [a video introduction to this website on YouTube](https://youtu.be/
 You can cite the website as:  
 Khemarato, {{ site.time | date: "%Y" }}. "{{ site.title }}". {{ site.time | date: "%B %-d" }}. *{{ site.url }}* [doi:{{ site.doi }}](https://doi.org/{{ site.doi }})
 
-Our tests are [mostly passing](/tests).
+Our tests are [mostly passing](/tests)
+and our website [🟢 is up right now!](https://stats.uptimerobot.com/4q0qQUzqKk)
 
-This website, like most, uses cookies to improve your experience. To opt-out, [click here](/settings)
+Like most services, we use cookies to improve your experience. To opt-out, [click here](/settings)

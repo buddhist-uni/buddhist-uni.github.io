@@ -1,6 +1,6 @@
 ---
 title: Wordle
-external_url: "https://www.powerlanguage.co.uk/wordle/"
+external_url: "https://www.nytimes.com/games/wordle/index.html"
 tags:
   - language
   - games
