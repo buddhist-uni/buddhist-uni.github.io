@@ -6,9 +6,9 @@ external_url: "https://www.academia.edu/3642668/Vipassana_meditation_handbook"
 source_url: "https://www.watbhaddanta.com/app/download/8827076286/Handbook+of+Vipassana+Meditation.pdf?t=1504544421"
 drive_links:
   - "https://drive.google.com/file/d/1dWqVTHZ2E4pSj6WVK5E030-mCal1BFPG/view?usp=drivesdk"
-course: vipassana
+course: theravada
 tags:
-  - thai
+  - vipassana
 year: 2009
 month: may
 address: Thailand

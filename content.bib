@@ -1,7 +1,39 @@
 ---
 layout: nil
 ---
+%%%%%%%%%
+% Name: The Open Buddhist University Library
+% Author: Khemarato Bhikkhu
+% Date: {{ site.time | date_to_string }}
+% License: MIT
+% Type: Bib(La)Tex Database
+% Size: {{ site.content.size }} Records
+% Encoding: UTF-8
+% URL: {{ page.url | absolute_url }}
+%%%%%%%%%
+
+%%%%%%%
+% Table of Contents
+% 1. Author Names
+% 2. Bibliographic Entries
+%%%%%%%
+
+%%%%%
+% 1. Author Names
+%
+% These are placed in string constants at the
+% head of the DB to make them easier to change.
+%%%%%
 {% for author in site.authors %}@STRING { {{ author.slug }} = "{{ author.title }}" }
 {% endfor %}
+
+%%%%%
+% 2. Bibliographic Entries
+%
+% Using the format specified by
+%   http://www.bibtex.org/Format/
+% along with a few additional fields from
+%   https://docs.jabref.org/advanced/fields
+%%%%%
 {% for content in site.content %}{% include content.bibtex content=content useslugs=true %}
 {% endfor %}
