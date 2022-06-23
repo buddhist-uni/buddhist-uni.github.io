@@ -11,7 +11,7 @@ tags:
   - activism
   - power
 year: 2020
-month: sept
+month: sep
 publisher: "the BBC"
 address: London
 minutes: 53

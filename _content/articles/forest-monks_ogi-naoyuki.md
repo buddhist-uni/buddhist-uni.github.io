@@ -10,7 +10,7 @@ tags:
   - thai
   - shin
 year: 2007
-month: Sept
+month: sep
 journal: "Turning Wheel"
 pages: "23--25"
 address: "Berkeley, CA"
