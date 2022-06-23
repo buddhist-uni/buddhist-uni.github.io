@@ -3,8 +3,7 @@ title: "Case Study of Ecstatic Meditation: fMRI and EEG Evidence of Self-Stimula
 authors:
   - "Michael R. Hagerty"
   - "Julian Isaacs"
-  - "Leigh Brasington"
-  - others
+  - "Leigh Brasington and others"
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659471/"
 source_url: "https://doi.org/10.1155/2013/653572"
 drive_links:

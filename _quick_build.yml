@@ -45,7 +45,6 @@ exclude:
     - _authors/suzuki-s.md
     - _authors/bjornerud.md
     - _authors/chandako.md
-    - _authors/dalai-lama.md
     - _authors/elverskog.md
     - _authors/ichimura-s.md
     - _authors/kearney-patrick.md
@@ -310,7 +309,6 @@ exclude:
     - _content/monographs/behave_sapolsky-robert.md
     - _content/monographs/box_levinson-marc.md
     - _content/monographs/brief-history-of-time_hawking.md
-    - _content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md
     - _content/monographs/camp-out_gould-jm.md
     - _content/monographs/citizen_rankine-claudia.md
     - _content/monographs/just-us_rankine-claudia.md
@@ -323,7 +321,6 @@ exclude:
     - _content/monographs/for-all-my-walking_santoka-taneda.md
     - _content/monographs/guns-germs-and-steel_diamond-jared.md
     - _content/monographs/in-search-of-schrodingers-cat_gribbin-john.md
-    - _content/monographs/in-the-hope-of-nibbana_king-winston.md
     - _content/monographs/kids-these-days_harris-malcolm.md
     - _content/monographs/mans-search-for-meaning_frankl-viktor.md
     - _content/monographs/material-world_menzel-peter.md
@@ -623,3 +620,13 @@ exclude:
     - _content/reference/historical-dictionary-of-chan_wang-youru.md
     - _content/av/unesco_history-hour.md
     - _content/articles/zen-and-prejudice_bodiford-william.md
+    - _content/av/ancient-path-to-enlightenment_dabei.md
+    - _content/essays/advice-to-gok-zangden_gangshar.md
+    - _content/essays/two-zen-dogmas_wrisley-george.md
+    - _content/av/renunciation-and-longing_pitkin-annabella.md
+    - _content/excerpts/introduction_olivelle.md
+    - _content/av/four-noble-truths_dalai-lama.md
+    - _content/booklets/unentangled-knowing_kee-nanayon.md
+    - _content/av/praise-of-compassion_thubten-chodron.md
+    - _content/monographs/within-our-own-hearts_khema.md
+    - _content/booklets/normality_teean.md

@@ -14,7 +14,7 @@ tags:
   - speech
   - dialogue
 year: 2008
-month: june
+month: jun
 minutes: 36
 ---
 

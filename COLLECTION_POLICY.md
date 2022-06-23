@@ -18,22 +18,22 @@ This document is primarily for onboarding new contributors, but it may also be o
 The OBU Library serves **English speakers** with a basic education and an **interest in Buddhism**.
 
 Its collections are **entirely digital** and are a combination of self-hosted files (on GitHub and Google Drive) and links to resources accessible on the broader internet.
-Each entry in the library is ideally hosted in two different locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
+Each entry in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
-That would be undesirable, even if it were possible.
-The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission to provide a free, undergraduate-style curriculum in Buddhist Studies.
+That would as undesirable as it is impossible.
+The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on Early Buddhism.
 
 ### The Pipeline
 
 The usual procedure for ingesting new content is as follows:
 
-1. Content freely available on the internet or directly given to OBU gets uploaded to [the ingestion folder on Google Drive](https://drive.google.com/drive/folders/16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_).
-2. That content is then deduped and sorted into "unreviewed" buckets on G-Drive by subject (if you'd like to become a reviewer for a particular subject, send a message and I can invite you to the appropriate subfolder).
-3. A reviewer then reviews a piece for acceptance or rejection. (See details below).
-4. Accepted pieces (rank3+) are moved to the appropriate folder in [the public Google Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) based on what subject that piece teaches (rejected items are archived in Google Drive).
-5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_content) and the (Drive) folder is added as a new [`_tag`](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_tags)
-6. When that tag has reached a level of maturity (with a diverse set of works providing good coverage), its content is reviewed, moved around if necessary, and organized into a syllabus on Google Docs. When ready, this draft syllabus is added as a new [`_course`](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_courses) of the same name. (See [the open issues on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/labels/writing) for courses awaiting a volunteer if you're interested in writing one!)
+1. Free content is found online and added to [this folder on Google Drive](https://drive.google.com/drive/folders/16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_).
+2. That content is then sorted by subject.
+3. A reviewer then reviews pieces in their subject area.
+4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) based on what subject they teach and rejected items are archived privately.
+5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/master/_content) and the (Drive) folder is added as a new "tag" on the website.
+6. When a tag has a diverse set of works, its content is reviewed again and organized into a course syllabus. (See [the open issues on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/labels/writing) for courses currently awaiting a volunteer if you're interested in writing one!)
 
 ## Inclusion Criteria
 
