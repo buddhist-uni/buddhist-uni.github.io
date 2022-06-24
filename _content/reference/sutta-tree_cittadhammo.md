@@ -1,7 +1,7 @@
 ---
 title: "Sutta Piṭaka Diagram"
 authors:
-  - '"Fractal" Cittadhammo'
+  - "'Fractal' Cittadhammo"
 external_url: "https://www.dhammacharts.org/suttapitaka-chart/"
 source_url: "https://github.com/DhammaCharts/suttapitaka-chart"
 formats: [png]

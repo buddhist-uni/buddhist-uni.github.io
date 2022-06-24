@@ -77,12 +77,12 @@ This site may use cookies to enhance your experience, but you can turn this off 
 
 Courses hosted on other websites.
 
-### [The Arahant and the Four Noble Truths](http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
-{:onclick="goto('http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm,0.6)" .courselink}
+### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
+{:onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm' ,0.6)" .courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm',0.6)" class="cicon"><i class="fas fa-mountain"></i></div>
+    <div onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm' ,0.6)" class="cicon"><i class="fas fa-mountain"></i></div>
     <div class="cdesc">The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>

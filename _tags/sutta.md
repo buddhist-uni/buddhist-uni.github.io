@@ -4,7 +4,7 @@ parents: [pali-canon]
 illustration: https://illeakyw.sirv.com/Images/tags/evam-me-sutam.jpg
 illustration_height: 871
 illustration_width: 600
-illustration_info: <a href="https://www.fourthmessenger.org/the-dawn-of-the-dhamma-illuminations-from-the-buddhas-first-discourse-by-ajahn-sucitto/">Ajahn Sucitto</a>
+illustration_info: <a href="https://www.fourthmessenger.org/art/">Ajahn Sucitto</a>
 illustration_center_x: 83%
 illustration_center_y: 40%
 image: https://illeakyw.sirv.com/Images/banners/sri-lankan-reclining-ruin.jpg

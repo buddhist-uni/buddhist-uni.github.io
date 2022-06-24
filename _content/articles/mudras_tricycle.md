@@ -1,6 +1,5 @@
 ---
 title: "Mudra: What Do Buddhist Hand Gestures Mean?"
-authors: []
 external_url: "https://tricycle.org/magazine/mudra/"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1RMxf7fE72GKRiQ9bD_jGf-XqPMWPYDAz/view?usp=drivesdk"]

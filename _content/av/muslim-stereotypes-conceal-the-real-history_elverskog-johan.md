@@ -1,6 +1,8 @@
 ---
 title: "How Buddhist and Muslim Stereotypes Conceal the Real History"
 subcat: podcast
+authors:
+  - elverskog
 year: 2018
 month: feb
 journal: tricycle

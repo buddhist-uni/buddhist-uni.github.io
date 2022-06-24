@@ -20,4 +20,4 @@ Note that the answer key for the book can be found [on Google Drive, here](https
 - [The Mahayana and Esoteric Texts](https://drive.google.com/drive/folders/1eikJ8065YqEpgda-d9h6_tHqkatWnjBb){:target="_blank" ga-event-value="4"}
 - [Chinese Epigraphy](https://drive.google.com/drive/folders/1eisxzhUiVuYY_1NoFkUIiUMFlpWQ0Eyw){:target="_blank" ga-event-value="4"} 
 
-All of the above can be found on [the author's website](https://religiousstudies.stanford.edu/people/john-kieschnick/primer-chinese-buddhist-writings){:target="_blank" ga-event-value="0.5"}.
+All of the above can be found on [the author's website](https://religiousstudies.stanford.edu/primer-chinese-buddhist-writings){:target="_blank" ga-event-value="0.5"}.
