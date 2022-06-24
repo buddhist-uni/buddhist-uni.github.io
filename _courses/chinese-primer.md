@@ -35,7 +35,7 @@ But, just as translating the Buddha's words into Chinese enriched Chinese societ
 
 This course teaches you how to read Buddhist texts in Chinese.
 
-Note that this course is still a work in progress by its author, John Kieschnick.  The copy presented here is up-to-date as of December 2020, but you should check out [Professor Kieschnick's original webpage](https://religiousstudies.stanford.edu/people/john-kieschnick/primer-chinese-buddhist-writings){:ga-event-value="1"} to be sure you get the latest materials.
+Note that this course is still a work in progress by its author, John Kieschnick.  The copy presented here is up-to-date as of December 2020, but you should check out [Professor Kieschnick's original webpage](https://religiousstudies.stanford.edu/primer-chinese-buddhist-writings){:ga-event-value="1"} to be sure you get the latest materials.
 
 ### Prerequisites
 

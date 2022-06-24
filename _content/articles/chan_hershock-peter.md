@@ -2,7 +2,8 @@
 title: "Chan Buddhism"
 authors:
   - "Peter Hershock"
-external_url: "https://plato.stanford.edu/entries/buddhism-chan/"
+source_url: "https://plato.stanford.edu/entries/buddhism-chan/"
+external_url: "https://seop.illc.uva.nl/entries/buddhism-chan/"
 drive_links:
   - "https://drive.google.com/file/d/1uR8f0f-vqIxaqCPtmsIJmdlzdfYJwxnj/view?usp=drivesdk"
 course: chan

@@ -6,7 +6,6 @@ booktitle: "Experience and Nature"
 pages: "1--347"
 year: 2000
 month: may
-source_url: "https://www.scienzepostmoderne.org/OpereComplete/Dewey.John..Experience%20and%20Nature%20(1925,%201929).pdf"
 drive_links:
  - "https://drive.google.com/file/d/1KByJXeYXTaKxRot6AMAYu5lYCSAWYZWo/view?usp=drivesdk"
 course: philosophy-of-science
