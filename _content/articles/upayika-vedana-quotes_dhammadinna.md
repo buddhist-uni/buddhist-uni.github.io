@@ -9,7 +9,8 @@ volume: 20
 journal: iijbs
 pages: "159--184"
 tags:
-  - vedana
+  - feeling
+  - vipassana
 ---
 
 This article contains annotated translations of canonical quotations in the Tibetan *Abhidharmakośopāyikā-ṭīkā* that parallel discourses nos. 467, 473, 474, 482, and 485–489 in the *Vedanā-saṃyukta* of the Chinese *Saṃyukta-āgama* (T 99).
