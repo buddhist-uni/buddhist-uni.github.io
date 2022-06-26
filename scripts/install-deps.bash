@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make sure to run:
-# npm install --no-bin-links
+# npm install --no-bin-links OR npm ci
 # before running this script
 
 rm -rf assets/webfonts && \

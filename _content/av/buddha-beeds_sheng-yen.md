@@ -10,6 +10,8 @@ tags:
   - chinese
   - mantra
 minutes: 8
+series: gdd
+number: 51
 ---
 
 A short explanation of the Buddhist "rosary" beed necklace.
