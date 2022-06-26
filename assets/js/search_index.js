@@ -192,7 +192,7 @@ function displaySearchResults(results) {
     if (results.length) {
       var ret = '';
       for (var i in results) {
-        if (i > RMAX) break;
+        if (i >= RMAX) break;
         ret += displaySearchResult(results[i], store[results[i].ref]);
       }
       return ret;
