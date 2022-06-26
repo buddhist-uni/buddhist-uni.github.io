@@ -9,7 +9,7 @@ status: featured
 base_value: 0.3
 course: chan
 tags:
-  - rinzai
+  - zen
   - view
 year: 1994 # approximate translation date
 ---

@@ -10,7 +10,7 @@ tags:
   - buddhism
   - function
   - ambulit
-  - japanese
+  - zen
   - mahayana
   - philosophy
   - meditation

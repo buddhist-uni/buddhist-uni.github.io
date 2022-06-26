@@ -9,6 +9,7 @@ drive_links:
 course: mahayana
 tags:
   - japanese
+  - soto
   - thought
 year: 1985
 publisher: "The San Francisco Zen Center"
