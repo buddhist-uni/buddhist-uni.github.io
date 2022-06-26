@@ -9,7 +9,7 @@ course: form
 tags:
   - chan
   - pureland
-  - japanese
+  - jodo
   - mahayana
 year: 1984 # Random guess
 ---

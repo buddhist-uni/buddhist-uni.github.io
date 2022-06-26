@@ -11,7 +11,7 @@ tags:
   - american-mahayana
   - daily-life
   - meditation
-  - japanese
+  - zen
   - canadian
   - buddhism
 year: 2003

@@ -6,7 +6,7 @@ editor: "Dave Ellison"
 course: chan
 tags:
   - mahayana-canon
-  - soto
+  - zen
 year: 2012
 olid: OL37394401M
 publisher: wisdom
