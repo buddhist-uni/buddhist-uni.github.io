@@ -8,6 +8,7 @@ external_url: "https://newbooksnetwork.com/renunciation-and-longing"
 course: tibetan
 tags:
   - monastic
+status: featured
 year: 2022
 month: may
 publisher: nbn
