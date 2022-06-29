@@ -8,6 +8,7 @@ source_url: "https://archive.org/details/bub_gb_M2S-7-lWzHIC"
 drive_links:
   - "https://drive.google.com/file/d/1cTZ8tOiaIKXGgDaVHRP6LqOMDpN4Wji5/view?usp=drivesdk"
 course: vipassana
+status: featured
 tags:
   - stages
 year: 1971
