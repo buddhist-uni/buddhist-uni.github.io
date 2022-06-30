@@ -1,5 +1,6 @@
 ---
 title: "Online Chinese grammar notes"
+authors: ["Shio-yun Kan"]
 external_url: "http://www.ctcfl.ox.ac.uk/Lang%20work/Grammar%20database/Grammar_database_content.htm"
 course: chinese-primer
 tags:

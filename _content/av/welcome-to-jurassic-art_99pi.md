@@ -1,5 +1,6 @@
 ---
 title: "Welcome to Jurassic Art"
+authors: ["Bob Bakker"]
 subcat: podcast
 year: 2021
 month: apr

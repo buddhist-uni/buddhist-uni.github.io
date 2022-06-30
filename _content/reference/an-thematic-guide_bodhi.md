@@ -6,6 +6,7 @@ course: sutta
 tags:
   - an
 year: 2019
+authors: [bodhi]
 ---
 
 A listing of the primary themes of the Aṅguttara Nikāya arranged according to the gradual training with references to the suttas on those themes. 
