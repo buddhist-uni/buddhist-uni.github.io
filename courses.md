@@ -21,6 +21,7 @@ function goto(u,v) {
    if (typeof ga === 'function') {
      let w = Math.floor(v);
      ga('send','event','Outbound Link','click',u,(Math.random()<v-w)?Math.ceil(v):w);
+     window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':u,'revenue_value':v,'currency':'USD'});
    }
    location.href=u;
 }
