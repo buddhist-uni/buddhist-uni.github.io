@@ -48,10 +48,12 @@
         {%- if jekyll.environment == 'production' and site.google_analytics -%}
         if (!started && event.data == YT.PlayerState.PLAYING) {
             ga('send','event','Video','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0);
+            window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'});
             started = true;
         }
         if (event.data == YT.PlayerState.ENDED) {
             ga('send','event','Video','finish','{{ content_path }}',{{ site.data.ga.av_end_val }});
+            window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'});
         }
         {%- else -%}
         console.log(event.data);
@@ -73,8 +75,8 @@
     preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0)"
-    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }})"
+    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'});"
+    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }}); window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'});"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">
     Your browser doesn't support playing this audio/video file inline.
