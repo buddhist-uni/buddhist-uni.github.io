@@ -142,7 +142,14 @@ defaults:
         type: "courses"
     values:
         slug: "course parts don't get slugs"
+        part_of_course: "buddhism"
         layout: "buddhismcoursepart" 
+  -
+    scope:
+        path: "_courses/imagery/"
+        type: "courses"
+    values:
+        part_of_course: "imagery"
   -
     scope:
         path: ""
