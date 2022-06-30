@@ -12,6 +12,10 @@ layout: default
   {% if page.epigraph %}
   <div class="epigraph">{{ page.epigraph | markdownify }}</div>
   {% endif %}
+  <h2 style="text-align:center;"><i class="{{ page.icon }}"></i></h2>
+  {% if site.show_timestamps %}
+  <div class="frontmatter">Published: {{ page.date | date: "%b %Y" }}{% assign moddate = site.courses | where: "part_of_course", page.slug | map: "last_modified_at" | push: page.last_modified_at | max %}{% if moddate > page.date %}<br>Updated: {{ moddate | date: "%B %-d, %Y" }}{% endif %}</div>{% endif %}
+ 
   <h1>Table of Contents</h1> 
   <ul id="toc">
     {% for l in page.toc %}<li><a href="#{{ l[0] }}">{{ l[1] }}</a></li>{% endfor %}
