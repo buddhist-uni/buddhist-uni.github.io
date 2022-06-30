@@ -32,418 +32,267 @@ exclude:
     - _authors/tiyavanich.md
     - _authors/chiu-angela.md
     - _authors/cone-margaret.md
-    - _authors/deleanu-f.md
-    - _authors/diamond-jared.md
     - _authors/gomtsul.md
-    - _authors/huxley-a.md
-    - _authors/iwamura-jane.md
     - _authors/lew-karl.md
-    - _authors/rankine-claudia.md
     - _authors/shi-zhiru.md
-    - _authors/sontag.md
-    - _authors/sudhamma.md
-    - _authors/suzuki-s.md
+    - _authors/gangshar.md
     - _authors/bjornerud.md
     - _authors/chandako.md
     - _authors/elverskog.md
     - _authors/ichimura-s.md
     - _authors/kearney-patrick.md
     - _authors/keeler-ward.md
-    - _authors/king-winston.md
-    - _authors/menzel-peter.md
     - _authors/vasubandhu.md
-    - _content/articles/astrological-determinism_kotyk-j.md
-    - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
-    - _content/articles/bill-gates-tweeted_matthews-dylan.md
-    - _content/articles/buddhism-and-blackness_vox.md
-    - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
-    - _content/articles/burmese-manuscripts-in-the-loc_pruitt-william.md
-    - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
-    - _content/articles/caveat-lector_cone-margaret.md
-    - _content/articles/compassion-in-the-agamas-and-nikayas_analayo.md
-    - _content/articles/ethicopolitical-significance-of-mindfulness_ng-edwin.md
-    - _content/articles/four-eminent-monks-and-their-syncretistic-style_chu-william.md
-    - _content/articles/genetics-biosocial-groups-and-identity_hacking-ian.md
-    - _content/articles/helmer-smith-and-gunnar-jarring_lienhard-s.md
-    - _content/articles/historical-authenticity_wynne.md
-    - _content/articles/hoary-past-hazy-memory_hinuber-oskar-v.md
-    - _content/articles/illness-as-metaphor_sontag.md
-    - _content/articles/meditation-and-liberation-in-the-sravakabhumi_deleanu-florin.md
-    - _content/articles/micchaditthi_jaini-p-s.md
-    - _content/articles/nighttime-and-refugees_jolliffe-pia.md
-    - _content/articles/old-bodies-like-carts_gombrich.md
-    - _content/articles/politics-of-higher-ordination_abeysekara-ananda.md
-    - _content/articles/power-of-interconnectivity_ip-hongyap.md
-    - _content/articles/prehinayanist-buddhism-in-the-pali_fallick-eric.md
-    - _content/articles/priming-the-lamp-of-dhamma_scheible-kristin.md
-    - _content/articles/reviving-the-buddha_pemaratana-soorakkulame.md
-    - _content/articles/revolutionary-thoreau_lossin-rh.md
-    - _content/articles/sa-skya-on-bsam-yas_jackson-roger.md
-    - _content/articles/stupa-sutra-sarira_barrett.md
-    - _content/articles/temple-looting-in-cambodia_mackenzie-davis.md
-    - _content/articles/temporary-ordination-in-sri-lanka_gombrich.md
-    - _content/articles/the-upside-offensive_dorwart-jason.md
-    - _content/articles/translation-through-a-zen-mind.md
-    - _content/av/activism-and-empathy_courtin.md
-    - _content/av/buddha-in-lanna_chiu-angela.md
-    - _content/av/buddhism-and-education_jayasaro.md
-    - _content/av/buddhist-education_jayasaro.md
-    - _content/av/burden-of-proof_gladwell-m.md
-    - _content/av/carlos_gladwell-m.md
-    - _content/av/cutting-off-letting-go_phap-dung.md
-    - _content/av/disturbed-forests_padwe-j.md
-    - _content/av/educating-monks_borchert-t.md
-    - _content/av/framing_jayasaro.md
-    - _content/av/generous-orthodoxy_gladwell-m.md
-    - _content/av/good-life-good-death_jayasaro.md
-    - _content/av/hidden-politics-of-sim-city.md
-    - _content/av/houdini_foster-the-people.md
-    - _content/av/how-i-think-about-love_gopnik-klein.md
-    - _content/av/illusions-of-time_vsauce.md
-    - _content/av/impermanence_khema.md
-    - _content/av/in-the-dragons-shadow_strangio-sebastian.md
-    - _content/av/irish-buddhist_turner-a.md
-    - _content/av/jakarta-is-sinking_vox.md
-    - _content/av/let-there-be-conflicts_sujato.md
-    - _content/av/lives-of-early-buddhist-nuns_collett-alice.md
-    - _content/av/sabda_bronkhorst.md
-    - _content/av/teardrops-of-time_fuhrmann-arnika.md
-    - _content/av/the-straight-line-is-a-godless-line_99pi.md
-    - _content/av/vietnamese-remittances_small-ivan.md
-    - _content/av/what-i-learned_klein-ezra.md
-    - _content/av/when-doing-the-right-thing-makes-you-a-criminal_hsiung-wayne.md
-    - _content/booklets/broken-buddha_dhammika.md
-    - _content/booklets/buddhist-romanticism_geoff.md
-    - _content/booklets/heartwood-of-the-bodhi-tree_buddhadasa.md
-    - _content/booklets/karma-vibanga_anandajoti.md
-    - _content/booklets/king-in-the-forest.md
-    - _content/booklets/ratthapala-sutta_nyanamoli.md
-    - _content/booklets/spirit-of-jihi_horide-ichirou.md
-    - _content/canon/an10.93.md
-    - _content/canon/an3.76.md
-    - _content/canon/an5.180.md
-    - _content/canon/an5.191.md
-    - _content/canon/dn13.md
-    - _content/canon/mn14.md
-    - _content/canon/mn19.md
-    - _content/canon/mn20.md
-    - _content/canon/mn21.md
-    - _content/canon/mn32.md
-    - _content/canon/mn33.md
-    - _content/canon/mn57.md
-    - _content/canon/mn90.md
-    - _content/canon/sn1.11.md
-    - _content/canon/sn1.20.md
-    - _content/canon/sn12.40.md
-    - _content/canon/sn22.36.md
-    - _content/canon/sn22.57.md
-    - _content/canon/sn22.95_garm.md
-    - _content/canon/sn3.7.md
-    - _content/canon/sn35.88.md
-    - _content/canon/sn36.21.md
-    - _content/canon/sn42.13.md
-    - _content/canon/sn47.6.md
-    - _content/canon/thig12.1.md
-    - _content/canon/ud4.4.md
-    - _content/canon/ud4.5.md
-    - _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
-    - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
-    - _content/essays/euthanasia_dhammika.md
-    - _content/essays/great-perfection_chokyi-lodro.md
-    - _content/essays/i-lost-you_kalayanapong-angkarn.md
-    - _content/essays/longing-to-ordain_sudhamma.md
-    - _content/essays/pastness-of-the-present_taruskin.md
-    - _content/essays/son_lerner-ben.md
-    - _content/essays/song-of-the-wildwoods_rabjam.md
-    - _content/excerpts/experience-and-nature_dewey-john.md
-    - _content/excerpts/responses-to-state-control_shi-zhiru.md
-    - _content/excerpts/sampajanna_analayo.md
-    - _content/monographs/arts-of-living-on-a-damaged-planet.md
-    - _content/monographs/ends-and-means_huxley-a.md
-    - _content/monographs/great-disciples_hecker-nyanaponika.md
-    - _content/monographs/how-to-fight_tnh.md
-    - _content/monographs/no-one-belongs-here-more-than-you_july-miranda.md
-    - _content/monographs/on-beauty-and-being-just_scarry-elaine.md
-    - _content/monographs/philological-approach_norman.md
-    - _content/monographs/short-history-of-nearly-everything_bryson-bill.md
-    - _content/monographs/virtual-orientalism_iwamura-jane.md
-    - _content/monographs/walking-the-noble-path_tnh.md
-    - _content/monographs/what-every-body-is-saying_navarro-joe.md
-    - _content/monographs/why-fish-dont-exist_miller-lulu.md
-    - _content/monographs/world-until-yesterday_diamond-jared.md
-    - _content/monographs/zen-mind-beginners-mind_suzuki-s.md
-    - _content/reference/buddhisim-art_bob1988.md
-    - _content/reference/sutta-central-voice.md
-    - _content/articles/bodhisattva-masculinity-on-death-row_cunnell-h.md
-    - _content/articles/buddhas-sons_snow-elson.md
-    - _content/articles/buddhist-hybrid-english_griffiths-paul.md
-    - _content/articles/decline-of-the-dhamma_williams-liz.md
-    - _content/articles/did-the-buddha-exist_wynne.md
-    - _content/articles/landscapes-of-law_engel-david.md
-    - _content/articles/mosquitoes-changed-everything_jarvis-brooke.md
-    - _content/articles/nuns-parajika_heirman-ann.md
-    - _content/articles/reshaping-timelessness_deleanu.md
-    - _content/articles/to-be-or-not-to-be_gessen-masha.md
-    - _content/articles/unbearable_baskin-jon.md
-    - _content/av/1619.md
-    - _content/av/abandoned-ships_atack-alex.md
-    - _content/av/against-colonizing-space_deudney.md
-    - _content/av/anthropocene-reviewed_green-john.md
-    - _content/av/antique-oxtongue-iron_my-mechanic.md
-    - _content/av/art-of-being-peace_tnh.md
-    - _content/av/basically-i_delong-robert.md
-    - _content/av/batman-and-the-bridge_99pi.md
-    - _content/av/because-podcast.md
-    - _content/av/birth-in-buddhism_langenberg-amy.md
-    - _content/av/blind-men-and-the-elephant_merchant-natalie.md
-    - _content/av/bomb-children_zani-leah.md
-    - _content/av/boss-dictator_anderson-elizabeth.md
-    - _content/av/breath-meditation_geoff.md
-    - _content/av/buddhas-footprint_elverskog.md
-    - _content/av/buddhist-tourism-in-asia.md
-    - _content/av/call-it-what-you-want_foster-the-people.md
-    - _content/av/change_delong-robert.md
-    - _content/av/children-nuns-in-myanmar.md
-    - _content/av/from-the-mountains-to-the-cities_nathan-mark.md
-    - _content/av/gain-and-loss.md
-    - _content/av/good-walk-spoiled_gladwell.md
-    - _content/av/hallmarks-of-the-elite_currid-halkett.md
-    - _content/av/harvey.md
-    - _content/av/is-the-future-predetermined_spacetime.md
-    - _content/av/katachi_tokumaru-shugo.md
-    - _content/av/limits-of-power_gladwell.md
-    - _content/av/loneliness-epidemic_murthy-vivek.md
-    - _content/av/long-way-down_delong-robert.md
-    - _content/av/many-buddhas-one-buddha_appleton.md
-    - _content/av/map-of-particles_domain-of-science.md
-    - _content/av/mine_99pi.md
-    - _content/av/mine-opal_smarter-every-day.md
-    - _content/av/mn152-explanation_bodhi.md
-    - _content/av/mn18-explanation_kearney-patrick.md
-    - _content/av/monks-in-motion_chia-jack.md
-    - _content/av/morality-and-monastic-revival-in-post-mao-tibet_caple-jane.md
-    - _content/av/myanmar-temple-schools.md
-    - _content/av/neomaterialism_lecain-timothy.md
-    - _content/av/photographing-fungi_axford-stephen.md
-    - _content/av/real-change_tricycle.md
-    - _content/av/repetition_cooper-mcgloughlin.md
-    - _content/av/rum-hee_tokumaru-shugo.md
-    - _content/av/sea-and-the-sacred-in-japan_rambelli-fabio.md
-    - _content/av/take-a-walk_popup.md
-    - _content/av/talking-to-strangers_gladwell.md
-    - _content/av/the-real-book_99pi.md
-    - _content/av/tranquility-and-insight_analayo.md
-    - _content/av/ufos_west-mick.md
-    - _content/av/welcome-to-jurassic-art_99pi.md
-    - _content/av/what-is-death.md
-    - _content/av/why-chant_brahm.md
-    - _content/booklets/buddhas-meditation-discourses.md
-    - _content/av/why-dont-animals-have-wheels_vsauce.md
-    - _content/booklets/enquiring-minds-journey_kovida.md
     - _content/booklets/faith-in-mind_sheng-yen.md
-    - _content/booklets/how-to-fight_tnh.md
-    - _content/booklets/kammatthana_mahabua.md
-    - _content/booklets/power_may-todd.md
-    - _content/booklets/releasing-life_powell-stephen.md
-    - _content/booklets/small-boat-great-mountain_amaro.md
-    - _content/booklets/sn-anthology_nyanananda.md
-    - _content/booklets/walking-the-noble-path_tnh.md
-    - _content/canon/an10.177.md
-    - _content/canon/an10.58.md
-    - _content/canon/an10.72.md
-    - _content/canon/an3.100.md
-    - _content/canon/an3.68.md
-    - _content/canon/an3.72.md
-    - _content/canon/an3.80.md
-    - _content/canon/an4.170_geoff.md
-    - _content/canon/an4.184.md
-    - _content/canon/an4.41.md
-    - _content/canon/an4.94.md
-    - _content/canon/an6.60.md
-    - _content/canon/an7.49.md
-    - _content/canon/an7.52.md
-    - _content/canon/an7.58.md
-    - _content/canon/an8.30.md
-    - _content/canon/an8.63.md
-    - _content/canon/an8.64.md
-    - _content/canon/dn15+cy_bodhi.md
-    - _content/canon/dn21.md
-    - _content/canon/dn22.md
-    - _content/canon/dn23.md
-    - _content/canon/iti111.md
-    - _content/canon/iti53.md
-    - _content/canon/mn105.md
-    - _content/canon/mn106.md
-    - _content/canon/mn113.md
-    - _content/canon/mn121.md
-    - _content/canon/mn127.md
-    - _content/canon/mn128.md
-    - _content/canon/mn152.md
-    - _content/canon/mn18.md
-    - _content/canon/mn40.md
-    - _content/canon/mn49.md
-    - _content/canon/mn68.md
-    - _content/canon/sa18.md
-    - _content/canon/sn11.15.md
-    - _content/canon/sn2.25.md
-    - _content/canon/sn35.116.md
-    - _content/canon/sn41.4.md
-    - _content/canon/sn41.8.md
-    - _content/canon/sn47.3.md
-    - _content/canon/thag12.2.md
-    - _content/canon/ud1.10_sdoe.md
-    - _content/essays/if-education-is-not-the-answer_stein-zak.md
-    - _content/essays/inviting-the-bell_cantrell-deborah.md
-    - _content/essays/kor-what_chandako.md
-    - _content/essays/locations-for-samadhi_rabjam.md
+    - _content/booklets/noble-quest_horner.md
+    - _content/papers/birch-bark-to-digital-data_introduction_harrison-and-hartmann.md
     - _content/essays/meaning-of-numbers_sujato.md
-    - _content/essays/mystique-of-abhidhamma_sujato.md
-    - _content/essays/rohinga-issue_maung-zarni.md
-    - _content/essays/someday-ill-love-ocean_vuong.md
-    - _content/essays/training-the-mind_thangpa.md
-    - _content/essays/vomiting-gold_gangshar.md
-    - _content/essays/who-was-the-buddha_wynne.md
+    - _content/monographs/samsara-nirvana-and-buddha-nature_dalai-lama-thubten-chodron.md
+    - _content/canon/mn40.md
+    - _content/canon/dn22.md
+    - _content/canon/dn15+cy_bodhi.md
+    - _content/av/mn18-explanation_kearney-patrick.md
+    - _content/canon/mn18.md
+    - _content/canon/dn21.md
+    - _content/canon/dn23.md
+    - _content/booklets/power_may-todd.md
+    - _content/essays/kor-what_chandako.md
+    - _content/articles/turning-back-towards-freedom_freese.md
+    - _content/articles/buddhist-practice-as-play_vasen-m.md
+    - _content/av/breath-meditation_geoff.md
+    - _content/booklets/buddhas-meditation-discourses.md
+    - _content/articles/buddhas-sons_snow-elson.md
+    - _content/av/repetition_cooper-mcgloughlin.md
+    - _content/reference/gboard-dict.md
+    - _content/canon/thag12.2.md
     - _content/excerpts/hacking-relationships_reagle-joseph.md
-    - _content/monographs/all-yesterdays.md
+    - _content/articles/buddhism-and-blackness_vox.md
+    - _content/monographs/my-year-of-dirt-and-water_franz-tracy.md
+    - _content/av/call-it-what-you-want_foster-the-people.md
+    - _content/av/houdini_foster-the-people.md
+    - _content/av/buddhas-footprint_elverskog.md
+    - _content/reference/pali-script-converter.md
+    - _content/reference/pts-ref-converter.md
+    - _content/reference/sutta-central-voice.md
+    - _content/excerpts/raga_analayo.md
+    - _content/reference/pali-linux-keybindings.md
+    - _content/av/buddha-in-lanna_chiu-angela.md
+    - _content/monographs/for-all-my-walking_santoka-taneda.md
+    - _content/av/why-chant_brahm.md
+    - _content/articles/buzz-buzz-buzz_michelle-nijhuis.md
+    - _content/av/loneliness-epidemic_murthy-vivek.md
+    - _content/av/bomb-children_zani-leah.md
+    - _content/reference/agama-translations_bingenheimer.md
     - _content/monographs/behave_sapolsky-robert.md
-    - _content/monographs/box_levinson-marc.md
+    - _content/monographs/kids-these-days_harris-malcolm.md
+    - _content/monographs/novice-to-master_morinaga-soko.md
+    - _content/monographs/timefulness_bjornerud.md
+    - _content/monographs/traffic-in-heirarchy-keeler-ward.md
+    - _content/monographs/ship-of-gold_kinder-gary.md
+    - _content/booklets/kammatthana_mahabua.md
+    - _content/monographs/debt_graeber-david.md
+    - _content/articles/unbearable_baskin-jon.md
+    - _content/monographs/thinking-fast-and-slow_kahneman-daniel.md
     - _content/monographs/brief-history-of-time_hawking.md
-    - _content/monographs/camp-out_gould-jm.md
-    - _content/monographs/citizen_rankine-claudia.md
-    - _content/monographs/just-us_rankine-claudia.md
+    - _content/monographs/in-search-of-schrodingers-cat_gribbin-john.md
+    - _content/monographs/short-history-of-nearly-everything_bryson-bill.md
+    - _content/monographs/secrets-of-happiness_schoch-richard.md
+    - _content/canon/sn11.15.md
+    - _content/monographs/guns-germs-and-steel_diamond-jared.md
+    - _content/av/when-doing-the-right-thing-makes-you-a-criminal_hsiung-wayne.md
+    - _content/monographs/saints-and-psychopaths_hamilton.md
+    - _content/booklets/sn-anthology_nyanananda.md
+    - _content/reference/handful-of-leaves_geoff.md
+    - _content/av/long-way-down_delong-robert.md
+    - _content/articles/bodhisattva-masculinity-on-death-row_cunnell-h.md
+    - _content/articles/bill-gates-tweeted_matthews-dylan.md
+    - _content/essays/brief-commentary-in-the-twelve-stanzas_gomtsul.md
+    - _content/av/from-the-mountains-to-the-cities_nathan-mark.md
+    - _content/canon/sa18.md
+    - _content/av/hallmarks-of-the-elite_currid-halkett.md
+    - _content/articles/revolutionary-thoreau_lossin-rh.md
+    - _content/articles/buddhist-hybrid-english_griffiths-paul.md
+    - _content/essays/vomiting-gold_gangshar.md
+    - _content/reference/comparative-dhp_anandajoti.md
     - _content/monographs/da1_ichimura-s.md
     - _content/monographs/da2_ichimura-s.md
     - _content/monographs/da3_ichimura-s.md
-    - _content/monographs/debt_graeber-david.md
-    - _content/monographs/design-of-everyday-things_norman-don.md
-    - _content/monographs/first-free-women_weingast-matty.md
-    - _content/monographs/for-all-my-walking_santoka-taneda.md
-    - _content/monographs/guns-germs-and-steel_diamond-jared.md
-    - _content/monographs/in-search-of-schrodingers-cat_gribbin-john.md
-    - _content/monographs/kids-these-days_harris-malcolm.md
-    - _content/monographs/mans-search-for-meaning_frankl-viktor.md
-    - _content/monographs/material-world_menzel-peter.md
-    - _content/monographs/meditators-life-of-the-buddha_analayo.md
-    - _content/monographs/my-year-of-dirt-and-water_franz-tracy.md
-    - _content/monographs/novice-to-master_morinaga-soko.md
-    - _content/monographs/saints-and-psychopaths_hamilton.md
-    - _content/monographs/samsara-nirvana-and-buddha-nature_dalai-lama-thubten-chodron.md
-    - _content/monographs/secrets-of-happiness_schoch-richard.md
-    - _content/monographs/ship-of-gold_kinder-gary.md
-    - _content/monographs/stillness-flowing_jayasaro.md
-    - _content/monographs/superiority-conceit_analayo.md
-    - _content/monographs/thinking-fast-and-slow_kahneman-daniel.md
-    - _content/monographs/timefulness_bjornerud.md
-    - _content/monographs/traffic-in-heirarchy-keeler-ward.md
+    - _content/av/activism-and-empathy_courtin.md
     - _content/reference/agama-research-group.md
-    - _content/reference/agama-translations_bingenheimer.md
-    - _content/reference/comparative-dhp_anandajoti.md
-    - _content/reference/dpr.md
-    - _content/reference/buddhadust_olds-mike.md
-    - _content/reference/gboard-dict.md
-    - _content/reference/handful-of-leaves_geoff.md
-    - _content/reference/kinh-nhat-tung_phineas-pta.md
+    - _content/av/good-life-good-death_jayasaro.md
     - _content/reference/one-up-discourses.md
-    - _content/reference/pali-linux-keybindings.md
-    - _content/reference/pali-script-converter.md
-    - _content/reference/pressing-out-pure-honey_rogell-sharda.md
+    - _content/av/many-buddhas-one-buddha_appleton.md
+    - _content/av/generous-orthodoxy_gladwell-m.md
+    - _content/monographs/first-free-women_weingast-matty.md
+    - _content/booklets/small-boat-great-mountain_amaro.md
+    - _content/booklets/broken-buddha_dhammika.md
+    - _content/av/is-the-future-predetermined_spacetime.md
+    - _content/essays/son_lerner-ben.md
+    - _content/monographs/mans-search-for-meaning_frankl-viktor.md
+    - _content/articles/did-the-buddha-exist_wynne.md
+    - _content/av/monks-in-motion_chia-jack.md
+    - _content/essays/pastness-of-the-present_taruskin.md
+    - _content/monographs/philological-approach_norman.md
+    - _content/articles/landscapes-of-law_engel-david.md
+    - _content/av/children-nuns-in-myanmar.md
+    - _content/av/myanmar-temple-schools.md
+    - _content/essays/rohinga-issue_maung-zarni.md
+    - _content/essays/great-perfection_chokyi-lodro.md
+    - _content/av/talking-to-strangers_gladwell.md
+    - _content/av/buddhist-tourism-in-asia.md
+    - _content/av/1619.md
+    - _content/essays/inviting-the-bell_cantrell-deborah.md
     - _content/reference/ticivara.md
-    - _content/reference/tipitaka.md
-    - _content/articles/sa-regarding-emptiness_lamotte.md
-    - _content/av/buddhism-beyond-modernity_gleig-a.md
-    - _content/av/fear-and-worry_pasanno.md
-    - _content/av/feminism_solnit.md
-    - _content/av/fifty-jataka_baker-phongpaichit.md
-    - _content/av/great-indoors.md
-    - _content/av/literature-of-gandhara_salomon-richard.md
-    - _content/av/moral-panics_cottom-klein.md
-    - _content/av/muslim-stereotypes-conceal-the-real-history_elverskog-johan.md
-    - _content/av/tornado-of-self_panyavaddho.md
-    - _content/av/values_jayasaro.md
-    - _content/av/yasodhara_sasson-v.md
-    - _content/booklets/single-bowl-of-sauce_buddhadasa.md
-    - _content/canon/an6.45.md
-    - _content/canon/karma-vibhanga.md
-    - _content/canon/mn25.md
+    - _content/av/what-is-death.md
     - _content/canon/mv1-4.md
-    - _content/canon/sn36.19.md
-    - _content/canon/t1586.md
-    - _content/essays/chan-practice-and-faith_sheng-yen.md
-    - _content/essays/cushion-or-world_cintita.md
-    - _content/essays/monet-refuses-the-operation_mueller-lisel.md
+    - _content/monographs/camp-out_gould-jm.md
+    - _content/av/what-i-learned_klein-ezra.md
+    - _content/av/limits-of-power_gladwell.md
+    - _content/articles/omniscience_analayo.md
+    - _content/av/good-walk-spoiled_gladwell.md
+    - _content/essays/who-was-the-buddha_wynne.md
+    - _content/monographs/stillness-flowing_jayasaro.md
+    - _content/av/illusions-of-time_vsauce.md
+    - _content/monographs/meditators-life-of-the-buddha_analayo.md
+    - _content/av/boss-dictator_anderson-elizabeth.md
+    - _content/essays/locations-for-samadhi_rabjam.md
+    - _content/av/disturbed-forests_padwe-j.md
+    - _content/reference/cbmci.md
+    - _content/av/buddhism-and-education_jayasaro.md
+    - _content/monographs/why-fish-dont-exist_miller-lulu.md
+    - _content/excerpts/responses-to-state-control_shi-zhiru.md
+    - _content/monographs/how-to-fight_tnh.md
+    - _content/monographs/walking-the-noble-path_tnh.md
+    - _content/av/jakarta-is-sinking_vox.md
+    - _content/av/educating-monks_borchert-t.md
+    - _content/reference/buddhisim-art_bob1988.md
+    - _content/articles/astrological-determinism_kotyk-j.md
+    - _content/essays/all-of-humanitys-problems_johnstone-caitlin.md
+    - _content/monographs/superiority-conceit_analayo.md
+    - _content/av/art-of-being-peace_tnh.md
+    - _content/av/against-colonizing-space_deudney.md
+    - _content/articles/merit-making-or-financial-fraud_liu-chuilan.md
+    - _content/booklets/king-in-the-forest.md
+    - _content/articles/buddhist-and-jaina-texts_caillat-colette.md
+    - _content/av/great-indoors.md
+    - _content/av/fifty-jataka_baker-phongpaichit.md
+    - _content/av/tornado-of-self_panyavaddho.md
+    - _content/monographs/li-bo-unkempt_smith-kidder.md
+    - _content/av/tenuousness_bird-andrew.md
+    - _content/av/cutting-off-letting-go_phap-dung.md
+    - _content/av/yasodhara_sasson-v.md
+    - _content/av/in-the-dragons-shadow_strangio-sebastian.md
+    - _content/av/teardrops-of-time_fuhrmann-arnika.md
+    - _content/essays/i-lost-you_kalayanapong-angkarn.md
+    - _content/av/fear-and-worry_pasanno.md
+    - _content/monographs/early-india_thapar-romila.md
+    - _content/av/hidden-politics-of-sim-city.md
+    - _content/av/sea-and-the-sacred-in-japan_rambelli-fabio.md
+    - _content/reference/pressing-out-pure-honey_rogell-sharda.md
+    - _content/av/buddhism-beyond-modernity_gleig-a.md
+    - _content/essays/abhidharma-praise_rongton.md
+    - _content/papers/maritime-route-to-china_willemen-charles.md
     - _content/monographs/buddhist-thought_williams-paul.md
     - _content/monographs/early-buddhist-transmission_neelis-jason.md
-    - _content/monographs/li-bo-unkempt_smith-kidder.md
-    - _content/articles/omniscience_analayo.md
-    - _content/av/secret-identity_tal.md
-    - _content/essays/ashokas-engineers_dhammika.md
-    - _content/excerpts/samadhi_analayo.md
+    - _content/monographs/history-of-buddhist-philosophy_kalupahana.md
+    - _content/monographs/fa-hsien.md
+    - _content/papers/relationship-between-buddhism-and-the-state_kulke-hermann.md
+    - _content/av/literature-of-gandhara_salomon-richard.md
+    - _content/canon/t1586.md
+    - _content/articles/sa-regarding-emptiness_lamotte.md
+    - _content/av/muslim-stereotypes-conceal-the-real-history_elverskog-johan.md
+    - _content/articles/decline-of-the-dhamma_williams-liz.md
+    - _content/av/the-real-book_99pi.md
+    - _content/av/welcome-to-jurassic-art_99pi.md
+    - _content/monographs/all-yesterdays.md
+    - _content/av/why-dont-animals-have-wheels_vsauce.md
+    - _content/av/map-of-particles_domain-of-science.md
+    - _content/av/photographing-fungi_axford-stephen.md
+    - _content/av/abandoned-ships_atack-alex.md
+    - _content/av/take-a-walk_popup.md
+    - _content/essays/mystique-of-abhidhamma_sujato.md
+    - _content/articles/once-upon-a-present_lenz-tim.md
+    - _content/av/real-change_tricycle.md
+    - _content/av/ufos_west-mick.md
+    - _content/booklets/single-bowl-of-sauce_buddhadasa.md
+    - _content/articles/nuns-parajika_heirman-ann.md
+    - _content/articles/reshaping-timelessness_deleanu.md
+    - _content/av/batman-and-the-bridge_99pi.md
+    - _content/essays/if-education-is-not-the-answer_stein-zak.md
+    - _content/articles/ethicopolitical-significance-of-mindfulness_ng-edwin.md
+    - _content/av/morality-and-monastic-revival-in-post-mao-tibet_caple-jane.md
+    - _content/articles/compassion-in-the-agamas-and-nikayas_analayo.md
+    - _content/reference/kinh-nhat-tung_phineas-pta.md
+    - _content/booklets/enquiring-minds-journey_kovida.md
+    - _content/booklets/releasing-life_powell-stephen.md
+    - _content/av/katachi_tokumaru-shugo.md
+    - _content/av/rum-hee_tokumaru-shugo.md
+    - _content/articles/politics-of-higher-ordination_abeysekara-ananda.md
+    - _content/articles/prehinayanist-buddhism-in-the-pali_fallick-eric.md
+    - _content/articles/priming-the-lamp-of-dhamma_scheible-kristin.md
+    - _content/articles/reviving-the-buddha_pemaratana-soorakkulame.md
+    - _content/articles/sa-skya-on-bsam-yas_jackson-roger.md
     - _content/excerpts/sati_analayo.md
-    - _content/articles/buddhavamsa-of-the-abhayagiri_skilling.md
-    - _content/articles/dharmacakramudra-at-ajanta_huntington-chandrasekhar.md
+    - _content/excerpts/experience-and-nature_dewey-john.md
+    - _content/av/vietnamese-remittances_small-ivan.md
+    - _content/excerpts/sampajanna_analayo.md
+    - _content/essays/song-of-the-wildwoods_rabjam.md
+    - _content/articles/power-of-interconnectivity_ip-hongyap.md
+    - _content/articles/temporary-ordination-in-sri-lanka_gombrich.md
+    - _content/av/secret-identity_tal.md
+    - _content/booklets/spirit-of-jihi_horide-ichirou.md
+    - _content/av/let-there-be-conflicts_sujato.md
+    - _content/canon/dn13.md
+    - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
+    - _content/articles/burmese-manuscripts-in-the-loc_pruitt-william.md
+    - _content/articles/caveat-lector_cone-margaret.md
+    - _content/articles/micchaditthi_jaini-p-s.md
+    - _content/essays/euthanasia_dhammika.md
+    - _content/essays/ashokas-engineers_dhammika.md
     - _content/articles/garavasutta-and-mahayanist-developments_lamotte-etienne.md
+    - _content/articles/old-bodies-like-carts_gombrich.md
+    - _content/articles/helmer-smith-and-gunnar-jarring_lienhard-s.md
+    - _content/articles/buddhavamsa-of-the-abhayagiri_skilling.md
     - _content/articles/nibbanasutta_hallisey-charles.md
-    - _content/articles/saddhammopayana_hazlewood-a.md
-    - _content/articles/studies-in-pali-grammarians_pind-ole-holten.md
     - _content/articles/third-precept_collins-steven.md
     - _content/articles/tundilovada_hallisey-charles.md
-    - _content/essays/buddhas-toothbrush_dhammika.md
     - _content/excerpts/literary-activity-in-pali_jayawickrama.md
-    - _content/monographs/fa-hsien.md
+    - _content/articles/saddhammopayana_hazlewood-a.md
+    - _content/articles/studies-in-pali-grammarians_pind-ole-holten.md
+    - _content/essays/buddhas-toothbrush_dhammika.md
+    - _content/articles/caves-in-western-deccan_brancaccio-pia.md
+    - _content/articles/dharmacakramudra-at-ajanta_huntington-chandrasekhar.md
     - _content/articles/buddha-as-vedagu_young-katherine.md
-    - _content/articles/buddhist-practice-as-play_vasen-m.md
-    - _content/articles/female-authority_dyer-alison.md
     - _content/articles/hold-oneself-and-the-dhamma-as-an-island_velez-de-cea.md
-    - _content/articles/merit-making-or-financial-fraud_liu-chuilan.md
     - _content/articles/oldest-dated-milindapanha_von-hinuber.md
     - _content/articles/oldest-pali-texts_stargardt.md
     - _content/articles/path-of-the-householder_bluck-robert.md
+    - _content/av/buddhism-and-psychotherapy_epstein-mark.md
+    - _content/booklets/kayanupassana_yan.md
+    - _content/monographs/hanshan_rouzer-paul.md
+    - _content/monographs/politics-of-tourism-in-asia_richter-linda.md
     - _content/articles/sambuddhe-verses_skilling.md
     - _content/articles/shukden-affair_dreyfus-george.md
-    - _content/articles/susima-sutta_bodhi.md
-    - _content/articles/tibets-first-khenmo-program_liang-taylor.md
-    - _content/av/buddhism-and-psychotherapy_epstein-mark.md
-    - _content/av/translation_jayasaro.md
-    - _content/booklets/kayanupassana_yan.md
     - _content/booklets/sutta-nipata-critical-analysis_jayawickrama.md
-    - _content/essays/abhidharma-praise_rongton.md
-    - _content/monographs/hanshan_rouzer-paul.md
-    - _content/monographs/history-of-buddhist-philosophy_kalupahana.md
-    - _content/monographs/politics-of-tourism-in-asia_richter-linda.md
-    - _content/papers/birch-bark-to-digital-data_introduction_harrison-and-hartmann.md
-    - _content/papers/maritime-route-to-china_willemen-charles.md
-    - _content/booklets/noble-quest_horner.md
-    - _content/articles/turning-back-towards-freedom_freese.md
-    - _content/booklets/gender_heckert-jamie.md
-    - _content/reference/pts-ref-converter.md
-    - _content/reference/cbmci.md
-    - _content/av/tenuousness_bird-andrew.md
     - _content/articles/laughing-buddha-doing-business_liong-cheng.md
     - _content/articles/reading-teaching-dhammapadas_mcdaniel-justin.md
-    - _content/av/model-organism_99pi.md
     - _content/booklets/dhammapada_pesala-narada.md
-    - _content/canon/mn76.md
     - _content/essays/moving-from-dhyana-to-dhyana_patton.md
     - _content/articles/three-souls-one-or-none_gombrich.md
     - _content/av/heyoon_99pi.md
     - _content/av/building-a-religious-empire_sullivan-brenton.md
-    - _content/av/stethoscope_99pi.md
     - _content/av/sunshine-hotel_sound-portraits.md
     - _content/articles/citta-in-the-turfan-finds_dietz-siglinde.md
-    - _content/av/creatures-of-cain_foo.md
     - _content/articles/taixu-in-vietnam_devido-elise.md
     - _content/monographs/piranesi_clarke-susanna.md
     - _content/articles/notes-on-visuddhimagga-9_gombrich.md
-    - _content/papers/buddhism-and-secular-subjectivities_mcmahan-david.md
     - _content/articles/sariputtas-three-works-on-the-samantapasadika_crosby-kate.md
     - _content/articles/two-versions-of-the-atanatiya-sutra-in-sanskrit_sander-lore.md
     - _content/articles/upping-the-ante_hubbard-jamie.md
     - _content/articles/modernization-and-transnationalism-in-buddhist-almsgiving_jones-charles.md
-    - _content/av/from-bombay-with-love_99pi.md
     - _content/monographs/brand-new-ancients_tempest-kate.md
     - _content/monographs/power_han-byung-chul.md
     - _content/excerpts/uttarakuru_analayo.md
-    - _content/av/caribou-home_song-exploder.md
     - _content/av/cranberries-all-over-now_song-exploder.md
     - _content/av/fleet-foxes-mearcstapa_song-exploder.md
     - _content/av/girl-in-red-serotonin_song-exploder.md
@@ -452,7 +301,6 @@ exclude:
     - _content/av/microphones-i-want-wind_song-exploder.md
     - _content/av/mumford-and-sons-beloved_song-exploder.md
     - _content/av/tune-yards-water-fountain_song-exploder.md
-    - _content/av/waxahatchee-fire_song-exploder.md
     - _content/monographs/early-buddhist-theory-of-knowledge_jayatilleke.md
     - _content/av/knowing-body-moving-mind_campbell-patricia.md
     - _content/av/travels-in-the-netherworld_cuevas-bryan.md
@@ -460,27 +308,20 @@ exclude:
     - _content/av/conceiving-the-indian-patriarchs-in-china_young-stuart.md
     - _content/monographs/be-the-refuge_han-chenxing.md
     - _content/monographs/buddha-in-the-jungle_tiyavanich.md
-    - _content/av/being-mortal.md
     - _content/av/dj-monk.md
     - _content/av/making-wisdom-the-priority_munindo.md
     - _content/av/thailands-last-resort.md
-    - _content/canon/an5.162.md
-    - _content/canon/an5.58.md
     - _content/canon/mn98.md
-    - _content/canon/sn22.102.md
     - _content/canon/snp3.9.md
-    - _content/av/fulfilling-buddhas-vision_chomchuen-w.md
     - _content/av/into-the-woods_sondheim.md
     - _content/av/kiki-and-burnout_willems-patrick.md
     - _content/av/i-hear-her-words_collett-alice.md
-    - _content/monographs/road-to-heaven_porter.md
     - _content/articles/bees-in-india_karttunen-klaus.md
     - _content/av/nepal-great-plunder.md
     - _content/av/queer-monks-in-thailand_vice.md
     - _content/av/frontier-psychiatrist_avalaches.md
     - _content/av/genghis-khan_miike-snow.md
     - _content/av/since-i-left-you_avalaches.md
-    - _content/canon/mn1.md
     - _content/articles/gamani-samyutta-comparison_choong-mun-keat.md
     - _content/articles/pali-and-chinese-versions-of-the-devata-and-devaputta-samyuttas_choong-mk.md
     - _content/articles/refrain-from-the-uraga-verses_jones-d-t.md
@@ -488,11 +329,10 @@ exclude:
     - _content/av/i-kwan.md
     - _content/articles/ethical-critique-of-wartime-zen_victoria-brian.md
     - _content/av/buddhism_loy-david.md
+    - _content/av/protohistory-of-buddhist-translation_nattier.md
     - _content/av/kalmykia_euromaxx.md
-    - _content/articles/bodhisattva-precepts-and-there-compatability-with-vinaya_chiu-tzulung.md
     - _content/articles/buddhicizing-or-ethnicizing-the-state_raghavan-suren.md
     - _content/articles/coined-money_fynes-richard.md
-    - _content/av/right-view-comes-first_geoff.md
     - _content/articles/under-the-gaze-of-the-buddha-megastatue_irons-ed.md
     - _content/av/jung-shadows-silent-women_sujato.md
     - _content/articles/crossing-to-the-farthest-shore_shaw-s.md
@@ -501,7 +341,6 @@ exclude:
     - _content/av/unmistaken-child.md
     - _content/av/angkor-wat-lotus-temple.md
     - _content/av/ocean-of-milk-ocean-of-blood_king-matt.md
-    - _content/av/why-science-says-buddhism-is-true_wright-robert.md
     - _content/av/dalai-lamas-succession.md
     - _content/av/samsara-excerpt_bruno.md
     - _content/articles/vengeance-of-vertigo_wilderson-frank.md
@@ -521,12 +360,10 @@ exclude:
     - _content/av/feelings_yuttadhammo.md
     - _content/monographs/klara-and-the-sun_ishiguro-kazuo.md
     - _content/papers/why-meditation_piyananda.md
-    - _content/canon/an10.60.md
+    - _content/booklets/buddhacarita_asvaghosa-cowell.md
     - _content/monographs/kim_kipling-rudyard.md
-    - _content/canon/sn35.95.md
     - _content/essays/why-i-am-a-buddhist-monk_brahmali.md
     - _content/av/oracle_cherniack-david.md
-    - _content/canon/mn74.md
     - _content/monographs/bullshit-jobs_graeber-david.md
     - _content/articles/bullshit-jobs_graeber-david.md
     - _content/articles/what-language-did-the-buddha-speak_piyasilo.md
@@ -534,8 +371,6 @@ exclude:
     - _content/papers/what-kamma-is_thittila.md
     - _content/av/on-the-crisis-in-myanmar_bodhi.md
     - _content/booklets/beyond-birth_suchart.md
-    - _content/excerpts/raga_analayo.md
-    - _content/articles/immortal-buddhas_radich-michael.md
     - _content/monographs/pali-canon-and-literature_webb-nyanatusita.md
     - _content/booklets/what-did-the-buddha-teach_yan.md
     - _content/av/sentient-body_sujato.md
@@ -544,21 +379,8 @@ exclude:
     - _content/reference/wordle.md
     - _content/articles/walpola-rahula-and-politicization_raghavan-suren.md
     - _content/av/trojan-horse-affair.md
-    - _content/canon/sn12.15.md
-    - _content/canon/sn12.2.md
-    - _content/canon/sn12.65.md
-    - _content/canon/sn22.82.md
-    - _content/canon/sn35.136.md
-    - _content/canon/sn35.23.md
-    - _content/canon/sn35.93.md
-    - _content/canon/sn36.23.md
-    - _content/canon/sn46.24.md
-    - _content/canon/sn46.6.md
-    - _content/canon/sn47.4.md
-    - _content/canon/an4.45.md
     - _content/articles/youth-buddhism_williams-oerberg.md
     - _content/monographs/duty-free-art_steyerl-hito.md
-    - _content/excerpts/seven-cheap-things-introduction_patel-moore.md
     - _content/monographs/children-of-time_tchaikovsky-adrian.md
     - _content/articles/refeminizing-death-westendorp-gould.md
     - _content/monographs/buddhism-goes-to-the-movies_green-ronald.md
@@ -572,15 +394,11 @@ exclude:
     - _content/monographs/museum-of-nonhumanity_gustofsson-haapoja.md
     - _content/canon/sn48.40.md
     - _content/av/culture-in-change.md
-    - _content/monographs/stumbling-on-happiness_gilbert-daniel.md
-    - _content/monographs/early-india_thapar-romila.md
-    - _content/av/buddhist-ethics_garfield-jay.md
     - _content/av/editing-room_ozeki-ruth.md
     - _content/booklets/like-milk-and-water-mixed_dhammika.md
     - _content/booklets/message-in-samsara_ottama-ashin.md
     - _content/articles/bodhisattva-precepts-and-their-compatability-with-vinaya_chiu-tzulung.md
     - _content/booklets/relevance-of-buddhist-philosophy_jayatilleke.md
-    - _content/reference/drops.md
     - _content/booklets/jesus-and-the-buddha_dhammika.md
     - _content/booklets/buddhas-teachings_geoff.md
     - _content/booklets/common-questions_sheng-yen.md
@@ -604,22 +422,15 @@ exclude:
     - _content/av/creatures-of-cain_milam-erika.md
     - _content/av/why-adults-lose-the-beginners-mind_gopnik-klein.md
     - _content/av/resistance-and-protest_bbc-history-hour.md
-    - _content/monographs/irish-buddhist_turner-cox-bocking.md
     - _content/av/trauma_van-der-kolk-bessel.md
     - _content/booklets/copper-isle-miles_amaro.md
-    - _content/papers/relationship-between-buddhism-and-the-state_kulke-hermann.md
-    - _content/articles/once-upon-a-present_lenz-tim.md
-    - _content/articles/caves-in-western-deccan_brancaccio-pia.md
-    - _content/av/protohistory-of-buddhist-translation_nattier.md
-    - _content/booklets/buddhacarita_asvaghosa-cowell.md
+    - _content/reference/buddhadust_olds-mike.md
     - _content/essays/heart-sutra-commentary_tan-hsu.md
     - _content/canon/sn20.7.md
     - _content/av/what-remains-of-us.md
     - _content/monographs/orthodox-chinese-buddhism_sheng-yen.md
-    - _content/reference/historical-dictionary-of-chan_wang-youru.md
     - _content/av/unesco_history-hour.md
     - _content/articles/zen-and-prejudice_bodiford-william.md
-    - _content/av/ancient-path-to-enlightenment_dabei.md
     - _content/essays/advice-to-gok-zangden_gangshar.md
     - _content/essays/two-zen-dogmas_wrisley-george.md
     - _content/av/renunciation-and-longing_pitkin-annabella.md
@@ -629,3 +440,5 @@ exclude:
     - _content/av/praise-of-compassion_thubten-chodron.md
     - _content/monographs/within-our-own-hearts_khema.md
     - _content/booklets/normality_teean.md
+    - _content/articles/pali-canon_payutto.md
+
