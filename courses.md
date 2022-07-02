@@ -34,11 +34,12 @@ The Open Buddhist University organizes [content from across the Web]({% link lib
 We currently offer {{ site.data.course_order.size }} courses on the fundamentals of Buddhism.  
 **Note:** None of our courses offer degrees or certificates.
 
-### Icon Key
+### Key
 
+- Click the course title to view it
 - <i class="fas fa-chalkboard-teacher"></i> = A unique icon to identify the course
-- <i class="far fa-address-book"></i> = Books by:
 - <i class="fas fa-person-chalkboard"></i> = Lectures by:
+- <i class="far fa-address-book"></i> = Books by:
 - {:.ccredits}<i class="fas fa-weight-hanging"></i> = <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">Semester Credit Hours</a>
 
 ### Interactive Components

@@ -12,7 +12,7 @@ layout: default
   {% endif %}
   <h2 style="text-align:center;"><i class="{{ page.icon }}"></i></h2>
   {% if site.show_timestamps %}
-  <div class="frontmatter">Published: {{ page.date | date: "%b %Y" }}{% if page.last_modified_at > page.date %}<br>Updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}</div>{% endif %}
+  <div class="frontmatter">Published: {{ page.date | date: "%b %Y" }}{% if page.last_modified_at > page.date %}<br>Modified: {{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}</div>{% endif %}
   
  {% capture toccontent %}
     {{ content }}  

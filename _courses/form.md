@@ -1,9 +1,9 @@
 ---
-title: The Form of Buddhism
-subtitle: A Course Syllabus
+title: Buddhism as a Religion
+subtitle: History, Community, and Practice
 google_doc_id: 1JeFeoRmuI8LLpo8MorIFJ7NBRSU_6euW9Is4raqazAU
 feedback_id: "The+Form(s)+of+Buddhism"
-description: "An introduction to the history and religious aspects of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
+description: "An introduction to the history and forms of Buddhism, including analysis of the Sangha and what it takes to call yourself a Buddhist."
 icon: "fas fa-vihara"
 image: "https://illeakyw.sirv.com/Images/banners/bolpur.jpg"
 image_width: 768
@@ -33,9 +33,7 @@ next_course_descs:
   - "A short history of the Dharma in the Land of the Fork, and the complex cultural interactions that ensued in the shadows of empire."
 ---
 
-## What is the Form of Buddhism?
-The Form of Buddhism is the “religious” side of Buddhism: the history, institutions, rituals and externalities that socially define the religion.
-
+## What is Buddhism as a Religion?
 Whether Buddhism even is a “religion” at all is, of course, a matter of some controversy. Is it a philosophy? A movement? A practice? An aesthetic? Who even counts as “a Buddhist”?
 
 In defining the bounds of “who is Buddhist”, some “middle way” may be desirable, between:
@@ -44,7 +42,7 @@ In defining the bounds of “who is Buddhist”, some “middle way” may be de
 
 In searching for such a middle way, I take on Bhante Yuttadhammo’s definition of Religion here, and say that “Religion is whatever you take seriously.” 
 
-The forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
+The religious forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
 ## Prerequisites
 This course assumes familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).

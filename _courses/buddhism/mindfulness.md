@@ -47,7 +47,7 @@ As always, you'll find the link to the next lesson below, but first...
 If you enjoyed this lesson and would like to learn more about the mechanics of mindfulness meditation,
 [Bhante G's book _**Mindfulness in Plain English**_](/content/monographs/mindfulness-in-plain-english_gunaratana) is considered the standard introduction to the subject.
 
-And if you're especially interested in how Buddhism  transforms our lives to create joy, please consider taking our course "[The Function of Buddhism](/courses/function)" after this one. It covers mindfulness in more depth and its relationship to ethics, and it also features the fantastic ["Los Angeles" lectures](/content/av/la-course_yuttadhammo) by Bhante Yuttadhammo, whom you already met in the previous class. So, check it out!
+And if you're especially interested in how Buddhism  transforms our lives to create joy, please consider taking our course "[The Practice of Buddhism](/courses/function)" after this one. It covers mindfulness in more depth and its relationship to ethics, and it also features the fantastic ["Los Angeles" lectures](/content/av/la-course_yuttadhammo) by Bhante Yuttadhammo, whom you already met in the previous class. So, check it out!
 
 Okay, now back to *this* course! 😅
 

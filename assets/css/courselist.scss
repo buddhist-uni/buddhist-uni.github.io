@@ -11,6 +11,9 @@ h3.courselink {
     letter-spacing: 3px;
     a {
         color: white;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
     }
     a:visited {
         color: white;
