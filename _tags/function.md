@@ -1,5 +1,5 @@
 ---
-title: "The Function of Buddhism"
+title: "Buddhist Practice"
 parents: [buddhism]
 sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/Lotus_Flower.jpeg
@@ -17,5 +17,4 @@ image_center_y: 40%
 big_image: https://upload.wikimedia.org/wikipedia/commons/c/c5/Lotus_in_a_Pond.jpg
 ---
 
-The transformational purpose of Buddhist practice.
-
+The transformational purpose of taking on the Buddha's education system.

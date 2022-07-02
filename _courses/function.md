@@ -1,8 +1,8 @@
 ---
-title: The Function of Buddhism
+title: The Practice of Buddhism
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 feedback_id: "The+Function+of+Buddhism"
-description: "An introduction to the Buddhist practice focusing on ethics and meditation and how they work to improve our lives."
+description: "An introduction to Buddhist practice focusing on how ethics and meditation work together to improve our lives."
 time: 2
 lecturers:
   - yuttadhammo
@@ -35,9 +35,9 @@ next_course_descs:
   - "Notoriously difficult to explain, *nibbāna* is still a critical concept for directing our practice.  In this class, we explore what _can_ be said about the unconditioned element."
 ---
 
-## What is the Function of Buddhism?
+## What is the Practice of Buddhism?
 
-The Function of Buddhism is to make us happy by supporting our cultivation of virtue, mental clarity, and wisdom.
+Buddhism is a practice meant to increase our happiness by encouraging our cultivation of moral virtues, mental clarity, and compassionate wisdom.
 
 Buddhism supports this “threefold training” by providing both essential, explanatory frameworks and practical guidance. The Buddha himself called this a “Dhamma-Vinaya,” or “Philosophy-Discipline,” but we might simply call it “a way of life” because Buddhism is meant to transform our entire lives from our selfish, restless, addicted, never-satisfied “default mode,”[^defaultmode] to the pinnacle of human potential—the total eradication of suffering. 
 
@@ -46,7 +46,7 @@ Buddhism supports this “threefold training” by providing both essential, exp
 
 This course strives to be a rigorous overview of Buddhism suitable for everyone—from beginners to experienced practitioners alike—and it is recommended for all.
 
-For a softer introduction to Buddhism, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
+For a softer introduction, featuring a variety of teachers, see *[Buddhism 101]({% link _courses/buddhism.md %})*.
 
 ## The Course
 I am satisfied that this course is both rigorous and accurate without compromising its lofty subject. 

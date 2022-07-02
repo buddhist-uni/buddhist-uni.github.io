@@ -16,6 +16,7 @@ tags:
   - theravada
 lecturers:
   - bodhi
+  - others
 next_courses:
   - mn
   - meditation
