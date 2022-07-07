@@ -9,7 +9,8 @@ description: ""
 
 ### Suttas
 <p>
-{% include content_blurb.html category="canon" slug="sn3.25" %} 
+{% include content_blurb.html category="canon" slug="sn3.25" %}
+{% include content_blurb.html category="canon" slug="sn17.8" %}
 {% include content_blurb.html category="canon" slug="an4.147" %}
 {% include content_blurb.html category="canon" slug="an7.15" %}
 {% include content_blurb.html category="canon" slug="ud6.4" %}

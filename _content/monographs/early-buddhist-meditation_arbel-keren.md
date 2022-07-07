@@ -6,6 +6,7 @@ status: featured
 course: vipassana
 tags:
   - samadhi
+  - path
 year: 2017
 olid: OL33655535M
 publisher: Routledge
