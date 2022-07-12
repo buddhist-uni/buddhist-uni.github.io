@@ -17,4 +17,4 @@ pages: 432
 
 > Fiction helps us remember that everything remains to be seen
 
-After teaching a course on Russian short-stories for a number of years, author George Saunders put his classes accumulated wisdom into a book of nonfiction about fiction.
+After teaching a course on Russian short-stories for a number of years, author George Saunders put his classes' accumulated wisdom into this book about fiction.

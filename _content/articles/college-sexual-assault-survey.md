@@ -1,5 +1,5 @@
 ---
-title: "23% of women report sexual assault in college"
+title: "Twenty-three percent of women report sexual assault in college"
 authors: ["Kelly Wallace"]
 external_url: "https://edition.cnn.com/2015/09/22/health/campus-sexual-assault-new-large-survey/index.html"
 course: world
