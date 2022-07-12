@@ -9,7 +9,7 @@ course: world
 status: featured
 tags:
   - capitalism
-  - nature
+  - natural
   - things
 publisher: nbn
 minutes: 47
