@@ -14,8 +14,10 @@ year: 2011
 olid: OL37811270M
 publisher: KTD Publications
 address: Woodstock, NY
+status: rejected
+reason: "recent scandals"
 ---
 
 > love and compassion cannot simply be dropped on people
 
-A short series of talks on compassion and entering the Bodhisattva Path delivered by His Holiness in India, February 2010.
+A short series of talks on compassion and entering the Bodhisattva Path delivered in India, February 2010.
