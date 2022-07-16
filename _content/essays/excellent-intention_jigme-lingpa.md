@@ -12,4 +12,6 @@ tags:
 base_value: 0.25
 ---
 
-A short uposatha ceremony from the Tibetan Tradition, focusing on the recollection of Avalokiteśvara.
+> The second day is similar to the first, except that you do not consume even the tiniest amount of food or drink
+
+A ceremony from the Tibetan Tradition, focusing on the recollection of Avalokiteśvara.

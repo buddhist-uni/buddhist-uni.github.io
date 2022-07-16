@@ -7,12 +7,11 @@ external_url: "https://dharmaebooks.org/finding-genuine-practice/"
 drive_links:
   - "https://drive.google.com/file/d/1IpHcx2msZHhUSBYWkD2tjgj3I96AlSm8/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1InF4vjrQqR4n3cWnQTRCEboDQCxAsnfQ/view?usp=drivesdk"
-course: mahayana
 tags:
+  - mahayana
   - tibetan
   - kagyu
-  - thought
-  - problems
+  - daily
 year: 2020
 month: jun
 olid: OL35169273M

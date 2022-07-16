@@ -1,5 +1,6 @@
 ---
 title: "Remember"
+subcat: poetry
 authors:
   - "Joy Harjo"
 reader: "Tracy K. Smith"
