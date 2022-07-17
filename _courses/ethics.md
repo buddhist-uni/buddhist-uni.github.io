@@ -86,6 +86,11 @@ The core of Buddhist Ethics is summed up well in this pithy sutta.  The five qua
 
 If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to observe these Five Precepts? What are some issues they don't cover?
 
+#### Analyzing the Five Precepts
+
+{% include content_blurb.html category="essays" slug="five-precepts_vajirananavarorasa" %}
+- This booklet by a former Supreme Patriarch (think, "Pope") of Thailand gives a traditional analysis of the Five Precepts, unpacking the many layers of meaning inside each point.
+
 #### Chapter 1: *The Shared Foundations of Buddhist Ethics*
 
 The course will follow the sequence of the chapters in Harvey's *Introduction*.  Go ahead and read Chapter 1 now, and when you're finished consider this:
