@@ -311,6 +311,9 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 {% include content_blurb.html category="canon" slug="mn135" %}
 - The Buddha explains how kamma accounts for the fortune and misfortune of beings.
 
+{% include content_blurb.html category="av" slug="reincarnation_sheng-yen" %}
+- A Chan Master answers a few, basic questions on reincarnation.
+
 {% include content_blurb.html category="av" slug="teaching-karma_courtin-robina" %}
 - Courtin describes how she introduces Karma to sceptical Westerners.
 

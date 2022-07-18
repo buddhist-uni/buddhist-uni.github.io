@@ -2,7 +2,8 @@
 title: "The Four Noble Truths"
 authors:
   - sumedho
-external_url: "https://www.abhayagiri.org/books/464-the-four-noble-truths"
+external_url: "https://amaravati.org/dhamma-books/the-four-noble-truths/"
+source_url: "https://www.abhayagiri.org/books/464-the-four-noble-truths"
 drive_links:
   - "https://drive.google.com/file/d/1VpyJE2B0cEZvg1rmPYWFqyVJf3-f-VN0/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1U0jRWH1XXLPGjEQ_JZttxyWeMbwQN2JZ/view?usp=drivesdk"
