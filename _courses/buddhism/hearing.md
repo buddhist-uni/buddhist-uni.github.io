@@ -29,7 +29,7 @@ This talk was originally followed by an evening of formal meditation practice, a
 
 ## More from Bhante Yuttadhammo
 
-After every lecture, we'll highlight some **further reading** related to what we just learned.
+After every lecture, we'll highlight some optional **further reading** related to what we just learned.
 This module, I'd like to point out Bhante Yuttadhammo's short, but excellent, meditation guidebook: [**How to Meditate: A Beginner's Guide to Peace**](https://www.sirimangalo.org/text/how-to-meditate/){:ga-event-value="5" target="_blank"}.
 It covers more details of his meditation technique, including how to do walking meditation and those "mindful prostrations" he mentioned at the end of his talk.
 
