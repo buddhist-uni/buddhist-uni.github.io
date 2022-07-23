@@ -117,11 +117,17 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 ##### Homework for Chapter 3
 
-{% include content_blurb.html category="av" slug="five-precepts_jayasara" %}
+{% include content_blurb.html category="av" slug="ozymandias" %}
+- This classic poem from the English canon captures the vanity of the pursuit of power given the vastness of time. This reading shows how belief in rebirth and its cosmological time scale helps put our lives into a more compassionate perspective.
 
-{% include content_blurb.html category="av" slug="guard-senses_hong-ci" %}
+{% include content_blurb.html category="av" slug="five-precepts_jayasara" %}
+- Avoid poor Ozymandias’ fate in five easy steps!
 
 {% include content_blurb.html category="canon" slug="an3.78" %}
+- Are observances, rules, and rituals essential or peripheral to the Buddhist path? What makes a practice "good?"
+
+{% include content_blurb.html category="av" slug="guard-senses_hong-ci" %}
+- Beyond the five, basic ethical precepts, guarding the senses is considered the higher ethics in Buddhism. This lecture introduces what that means and why it's so highly esteemed.
 
 (Lecture 3, etc)
 
