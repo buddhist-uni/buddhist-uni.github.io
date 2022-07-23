@@ -64,6 +64,7 @@ show_excerpts: true
 show_similars: true
 show_bibtex: true
 show_timestamps: true
+usepurgedcss: true
 
 # Exclude from processing.
 exclude:
