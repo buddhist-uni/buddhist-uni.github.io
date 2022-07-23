@@ -7,7 +7,7 @@ If you're looking to report a problem, feel free to [create an issue](https://gi
 
 If you'd like to propose a specific change, please [open a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
-If you'd like to get more involved, some project ideas are listed on [our issues page](https://github.com/buddhist-uni/buddhist-uni.github.io/issues). [Email me](mailto:khemarato.bhikkhu@gmail.com) a bit about yourself and we can get you started!
+If you'd like to get more involved, some project ideas are listed on [our issues page](https://github.com/buddhist-uni/buddhist-uni.github.io/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen). [Email me](mailto:khemarato.bhikkhu@gmail.com) a bit about yourself and we can get you started!
 
 For an introduction to the codebase, read on:
 
@@ -91,7 +91,7 @@ For questions about the source code, feel free to [email me](mailto:khemarato.bh
 The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways or you can fork the repo to use the source code.
 [The entire database can also be found in Bibtex format here](https://buddhistuniversity.net/content.bib), in case that's helpful, for example for importing into an academic reference manager.
 
-**Feel free to reuse this website in any (ethical) way you like** consistent with [the attached MIT License](https://mit-license.org/).
+**Feel free to reuse this website in any (ethical) way you like** consistent with [the attached MIT License](https://obu.mit-license.org/).
 
 A slightly out-of-date backup of the site's source code can be found at:
 

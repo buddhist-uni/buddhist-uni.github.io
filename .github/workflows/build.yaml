@@ -35,6 +35,7 @@ jobs:
             HASH="$(git log -n 1 --format=%H)"
             echo "Building $HASH into $BUILD_DIR ..."
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR
+            npx purgecss -v --content _site/*.html _site/**/*.html _site/assets/js/*.js --css _site/assets/css/main.css -o _site/assets/css/purged-main.css
             cd $BUILD_DIR
             touch .nojekyll
             git init -b temp

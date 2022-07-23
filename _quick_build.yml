@@ -27,6 +27,8 @@ exclude:
     - scripts/
     - content.bib
     - _authors/graeber-david.md
+    - _authors/dalai-lama.md
+    - _authors/king-wintston.md
     - _authors/harrison-paul.md
     - _authors/rongton.md
     - _authors/tiyavanich.md
@@ -376,7 +378,6 @@ exclude:
     - _content/av/sentient-body_sujato.md
     - _content/articles/watanabe-kaigyoku_penwell-cameron.md
     - _content/articles/ways-of-knowing-and-transmitting-religious-knowledge_salgado-nirmala.md
-    - _content/reference/wordle.md
     - _content/articles/walpola-rahula-and-politicization_raghavan-suren.md
     - _content/av/trojan-horse-affair.md
     - _content/articles/youth-buddhism_williams-oerberg.md
@@ -441,4 +442,14 @@ exclude:
     - _content/monographs/within-our-own-hearts_khema.md
     - _content/booklets/normality_teean.md
     - _content/articles/pali-canon_payutto.md
-
+    - _content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md
+    - _content/monographs/in-the-hope-of-nibbana_king-winston.md
+    - _content/av/ancient-path-to-enlightenment_dabei.md
+    - _content/av/glitters_chin-justin.md
+    - _content/av/strange-strong-gods_burton-tara-i.md
+    - _content/monographs/immune_dettmer-philipp.md
+    - _content/articles/jackals-in-pali_ohnuma-reiko.md
+    - _content/av/swimming-in-the-rain.md
+    - _content/monographs/swim-in-a-pond-in-the-rain_saunders-g.md
+    - _content/av/clock_chang.md
+    - _content/av/remember_harjo-joy.md
