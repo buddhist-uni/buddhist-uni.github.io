@@ -5,7 +5,8 @@ journal: jgb
 year: 2020
 volume: 21
 pages: "29--50"
-external_url: "https://www.globalbuddhism.org/jgb/index.php/jgb/article/view/314/256"
+external_url: "https://zenodo.org/record/4030979/files/314-867-1-PB.pdf"
+source_url: "https://www.globalbuddhism.org/article/view/1283/1120"
 drive_links: ["https://drive.google.com/file/d/1E3I6s6Y14Il0QQCE1SxPEEv1IZleYdU9/view?usp=drivesdk"]
 course: modern
 tags:

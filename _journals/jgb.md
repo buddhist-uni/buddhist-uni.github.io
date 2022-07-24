@@ -1,6 +1,6 @@
 ---
 title: "The Journal of Global Buddhism"
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/"
+external_url: "https://www.globalbuddhism.org/issue/archive"
 ---
 
 The Journal of Global Buddhism is an open access, peer reviewed scholarly journal studying the globalization of Buddhism, both historical and contemporary, and its transnational and transcontinental interrelatedness.

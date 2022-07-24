@@ -4,7 +4,8 @@ authors:
   - "Hung-yok Ip"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1lqqYasAydRUwD-DaU_Mb87tHxMDA2xvi/view?usp=drivesdk"]
-external_url: "https://www.globalbuddhism.org/jgb/index.php/jgb/article/view/93/106"
+external_url: "https://www.globalbuddhism.org/article/view/1157/992"
+source_url: "https://doi.org/10.5281/zenodo.1307108"
 year: 2009
 journal: jgb
 volume: 10
