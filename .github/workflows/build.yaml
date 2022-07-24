@@ -35,9 +35,11 @@ jobs:
             HASH="$(git log -n 1 --format=%H)"
             echo "Building $HASH into $BUILD_DIR ..."
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR
+            echo "Purging unused css..."
             shopt -s globstar
             npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
             test -s $BUILD_DIR/assets/css/purged-main.css
+            echo "Build complete. Pushing to prod branch..."
             cd $BUILD_DIR
             touch .nojekyll
             git init -b temp

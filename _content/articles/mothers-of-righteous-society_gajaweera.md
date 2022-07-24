@@ -2,7 +2,8 @@
 title: "The Mothers of the Righteous Society: Lay Buddhist Women as Agents of the Sinhala Nationalist Imaginary"
 authors:
   - "Nalika Gajaweera"
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/299/270"
+external_url: "https://zenodo.org/record/4147502/files/299-888-1-PB.pdf"
+source_url: "https://www.globalbuddhism.org/article/view/1287/1124"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1-zBQaT9jqC03Q4MFT2jTt-VpZvbSWdby/view?usp=drivesdk"]
 year: 2020

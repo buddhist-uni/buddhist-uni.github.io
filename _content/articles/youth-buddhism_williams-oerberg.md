@@ -2,7 +2,8 @@
 title: 'Youth Buddhism: The Centrality of “Youth” in Modern Buddhism'
 authors:
   - "Elizabeth Williams-Oerberg"
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/322/317"
+external_url: "https://zenodo.org/record/5764619/files/322-1114-1-PB.pdf"
+source_url: "https://www.globalbuddhism.org/article/view/1984/1723"
 drive_links:
   - "https://drive.google.com/file/d/1Ujim-4_F3nOXC2e2-vpvwtfwp8I8DIIm/view?usp=drivesdk"
 status: featured

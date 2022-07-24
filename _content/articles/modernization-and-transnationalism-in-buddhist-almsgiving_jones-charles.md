@@ -2,7 +2,8 @@
 title: "Modernization and Traditionalism in Buddhist Almsgiving: The Case of the Buddhist Compassion Relief Tzu-chi Association in Taiwan"
 authors:
   - jones-charles
-external_url: "http://www.globalbuddhism.org/jgb/index.php/jgb/article/view/99/113"
+external_url: "https://www.globalbuddhism.org/article/view/1151/986"
+source_url: "https://doi.org/10.5281/zenodo.1307104"
 drive_links:
   - "https://drive.google.com/file/d/1kSf0rQfGRmjUY1M_9v28rmiMNOHQBi3o/view?usp=drivesdk"
 course: modern
