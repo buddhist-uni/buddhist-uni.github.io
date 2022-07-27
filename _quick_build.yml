@@ -8,9 +8,6 @@ title: "local OBU QuickBuild™️"
 ## Turn off feature flags
 show_similars: false
 show_bibtex: false
-feed:
-  posts_limit: 1
-  collections: []
 
 exclude:
     - Gemfile

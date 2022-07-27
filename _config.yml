@@ -46,6 +46,7 @@ last-modified-at:
 rss: RSS Feeds
 feed:
   posts_limit: 10000
+  disable_in_development: true
   collections:
     content:
       tags: true
