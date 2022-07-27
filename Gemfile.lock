@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/buddhist-uni/jekyll-feed.git
-  revision: d917ab35535b58e3d6378abba58bf43d59123555
+  revision: 2bab1a9f248f799c5e6ddef3486f1e7c00e6e91b
   branch: collection-tags
   specs:
     jekyll-feed (0.16.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-seo-tag.git
-  revision: 904300ffacb9c48163c32a9989071d731f55162b
+  revision: bd197620a6d2e15febae2ed9871a18116844146e
   branch: obu-custom-seo
   specs:
     jekyll-seo-tag (2.7.1)
