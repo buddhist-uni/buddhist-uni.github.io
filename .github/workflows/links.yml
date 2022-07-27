@@ -9,16 +9,13 @@ jobs:
     steps:
         - name: Get the Code
           uses: actions/checkout@v2
-        - name: Rename .md files to .txt
-          run: |
-            cd $GITHUB_WORKSPACE
-            sudo apt-get install -y rename
-            find . -name "*.md" -exec rename 's/\.md$/.txt/' {} +
+          with:
+            branch: prod
         - name: Lychee Link Checker
           id: lychee
           uses: lycheeverse/lychee-action@v1.5.0
           with:
-            args: --user-agent "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" --base=https://buddhistuniversity.net --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude-mail --verbose --no-progress **/*.txt
+            args: --user-agent "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" --base=https://buddhistuniversity.net --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=gstatic.com --exclude-mail --verbose --no-progress --cache **/*.html
         - name: Create Issue
           if: ${{ steps.lychee.outputs.exit_code > 0 }}
           uses: peter-evans/create-issue-from-file@v2
