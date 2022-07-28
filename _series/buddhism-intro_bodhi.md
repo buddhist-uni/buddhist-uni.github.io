@@ -5,6 +5,7 @@ authors:
 years: 2018
 year: 2018
 category: av
+subcat: course
 course: buddhism
 tags:
   - philosophy

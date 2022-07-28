@@ -92,9 +92,9 @@ layout: default
         {% capture booktitle %}<a href="{{ fbook.url }}">{{ fbook.title }}</a>{% endcapture %}
       {%- endif -%}
     {%- endif -%}
-    {% if page.series %}{% assign series = site.series | find: "slug", page.series %}{% endif %}
+    {% if page.series %}{% assign series = site.series | find: "slug", page.series %}{% else %}{% assign series = nil %}{% endif %}
     {% if page.journal %}{% assign journal = site.journals | find: "slug", page.journal %}{% endif %}
-    {% if page.publisher %}{% assign publisher = site.publishers | find: "slug", page.publisher %}{% endif %}
+    {% if page.publisher %}{% assign publisher = page.publisher | default: series.publisher %}{% assign publisher = site.publishers | find: "slug", publisher %}{% endif %}
     {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | find: "slug", page.editor %}{% endif %}
    
    {% if tags.size > 0 %}<p class="star_desc">
@@ -108,7 +108,7 @@ layout: default
     {% endif %}
     <p class="pub_desc"><i>
         {%- if page.translator -%}Translated by {% if page.translator contains " " %}{% assign translator = nil %}{% else %}{% assign translator = site.authors | find: "slug", page.translator %}{% endif %}{% if translator %}<a href="{{ translator.url }}#translations">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}
-        {% if page.year or page.publisher or booktitle or page.journal or series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if booktitle %} in “{{ booktitle }}”{% endif %}{% if page.editor %} ({% if editor %}<a href="{{ editor.url }}">{{ editor.title }}</a>{% else %}{{ page.editor | split: " and " | array_to_sentence_string }}{% endif %} ed.){% endif %}{% if page.publisher %} by {% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}{% if page.address or publisher.address %}, {{ page.address | default: publisher.address }}{% endif %}{% endif %}{% if series %} {% if page.number %}as{% else %}in{% endif %} <a href="{{ series.url }}">{{ series.title }}</a>{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
+        {% if page.year or page.publisher or booktitle or page.journal or series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if booktitle %} in “{{ booktitle }}”{% endif %}{% if page.editor %} ({% if editor %}<a href="{{ editor.url }}">{{ editor.title }}</a>{% else %}{{ page.editor | split: " and " | array_to_sentence_string }}{% endif %} ed.){% endif %}{% if page.publisher %} by {% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}{% if page.address or publisher.address or series.address %}, {{ page.address | default: series.address | default: publisher.address }}{% endif %}{% endif %}{% if series %} {% if page.number %}as{% else %}in{% endif %} <a href="{{ series.url }}">{{ series.title }}</a>{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
     </i></p>
  
   {% if site.show_bibtex %}

@@ -3,6 +3,8 @@ title: "A Systematic Study of the Majjhima Nikāya"
 authors:
   - bodhi
 years: 2003--2015
+category: av
+subcat: course
 ---
 
 A series of nearly three hundred lectures on the entire *Majjhima Nikāya* delivered by Bhikkhu Bodhi over a thirteen-year period at Bodhi Monastery.

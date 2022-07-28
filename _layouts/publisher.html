@@ -14,9 +14,17 @@ layout: default
   <div class="post-content">
     {{ content }}
 
-<h4>Featured Publications:</h4>
-{% assign series = site.content | where: "publisher", page.slug %}
+{% assign series = site.series | where: "publisher", page.slug %}
+{% assign seriesslugs = series | map: "slug" %}
+{% if series.size > 0 %}<h4>Featured Series</h4>
 {% include content_list.html contents=series keep_rejects="true" %}
+{% endif %}
+{% assign allworks = site.content | where: "publisher", page.slug %}
+{% assign filtered = '' | split: '' %}
+{% for c in allworks %}{% unless seriesslugs contains c.series %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
+{% if filtered.size > 0 %}<h4>Featured Publications:</h4>
+{% include content_list.html contents=filtered keep_rejects="true" %}
+{% endif %}
   </div>
 
 </article>
