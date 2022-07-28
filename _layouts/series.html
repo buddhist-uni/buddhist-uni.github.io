@@ -8,8 +8,9 @@ layout: default
   <header class="post-header">
     <div class="back"><a href="/series/">Series</a> /</div>
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
-    <h1 class="post-title">{{ title[0] }}{% if title[1] %}<span style="color:transparent">: </span><br /><span style="font-size:85%">{{ title[1] }}</span>{% endif %}</h1>
+    <h1 class="post-title">{% if page.category or page.subcat %}{% include content_icon.html subcat=page.subcat category=page.category %}{% endif %}{{ title[0] }}{% if title[1] %}<span style="color:transparent">: </span><br /><span style="font-size:85%">{{ title[1] }}</span>{% endif %}</h1>
 {% if page.authors.size > 0 %}<h2 class="author">By {% include content_authors_string.html content=page hide_reader=true link=true %}</h2>{% endif %}
+{% if page.publisher %}<h2>Published by {% assign publisher = site.publishers | find: "slug", page.publisher %}{% if publisher %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ page.publisher }}{% endif %}</h2>{% endif %}
 {% if page.external_url %}
 <h3>Get the whole series <a target="_blank" ga-event-value="0.3" href="{{ page.external_url }}">online here</a>.</h3>
 {% endif %}

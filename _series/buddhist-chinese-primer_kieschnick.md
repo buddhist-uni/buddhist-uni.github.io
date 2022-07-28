@@ -4,6 +4,7 @@ external_url: "https://religiousstudies.stanford.edu/primer-chinese-buddhist-wri
 authors:
   - kieschnick
 years: 2017--2019
+category: booklets
 tags:
   - chinese
 ---
