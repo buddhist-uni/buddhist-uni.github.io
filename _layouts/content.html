@@ -75,7 +75,7 @@ layout: default
         </details>
     </div>{% endunless %}
     {% include content_filelinks.html content=page %}
-    {% if page.pages or page.minutes %}{% unless page.pages contains "," %}<span class="content_size">{% if page.pages contains "--" %}{% assign ps = page.pages | split: "--" %}{{ 1 | plus: ps[1] | minus: ps[0] }} pages{% elsif page.minutes %}{% if page.minutes < 70 %}{{ page.minutes }} min{% else %}{{ page.minutes | divided_by: 60 }}h {{ page.minutes | modulo: 60 }}m{% endif %}{% else %}{{ page.pages }} page{% if page.pages != 1 %}s{% endif %}{% endif %}</span>{% endunless %}{% endif %}
+    {% include content_size.html content=page %}
  </header>
   <div class="post-content">
         {% if page.category == "av" and page.external_url contains "youtu" or page.file_links[0] %}{% unless page.external_url contains "list" %}
