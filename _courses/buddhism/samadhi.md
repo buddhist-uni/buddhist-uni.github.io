@@ -11,6 +11,8 @@ order: 13
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
 Continue with Chapters 39–44 on how the Buddha responded to tragedy in the early Saṅgha.
 " %}
+- NOTE: Chapter 40 is missing from the above PDF. It can be [read online here](https://drive.google.com/file/d/1iD19Tw0IV-kUegKBOrlmh1x_rC6H5TZ8/view?usp=drivesdk){:target="_blank"}
+
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
 The result of mindfulness is increased mental clarity.
 Chapter 7 ("Concentration") discusses these heightened states of consciousness.
