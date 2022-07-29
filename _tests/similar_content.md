@@ -1,7 +1,6 @@
 ---
 title: "Content Similarity Algorithm Tests"
 test_cases:
-    - [talking-to-strangers_gladwell, what-every-body-is-saying_navarro-joe]
     - [arts-of-living-on-a-damaged-planet, timefulness_bjornerud]
     - [baraka_fricke-ron, repetition_cooper-mcgloughlin]
     - [short-history-of-nearly-everything_bryson-bill, burden-of-proof_gladwell-m]
