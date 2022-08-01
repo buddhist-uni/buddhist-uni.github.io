@@ -36,7 +36,7 @@ We currently offer {{ site.data.course_order.size }} courses on the fundamentals
 
 ### Key
 
-- Click the course title to view it
+- Click the course title to view the course
 - <i class="fas fa-chalkboard-teacher"></i> = A unique icon to identify the course
 - <i class="fas fa-person-chalkboard"></i> = Lectures by:
 - <i class="far fa-address-book"></i> = Books by:
@@ -119,7 +119,7 @@ Courses hosted on other websites.
 <div class="coursedesc">
   <div class="descrow">
     <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
-    <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. His lectures went on to become a 2017 best-seller: <i>The Biology of Humans at Our Best and Worse</i>.</div>
+    <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. This lecture series would go on to become the 2017 NYT best-seller, <i>Behave: The Biology of Humans at Our Best and Worse</i>.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
