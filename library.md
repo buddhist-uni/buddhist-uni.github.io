@@ -19,7 +19,7 @@ The same, great content featured in [the courses]({% link courses.md %}) along w
 You can explore the library by:
 {:.mb-0}
 
-### [<i class="fas fa-tag"></i> Topic]({% link tags.html %})
+### [<i class="fas fa-tag"></i> Topics]({% link tags.html %})
 Find a topic that interests you in the topic index or simply start from the top ([at "_Buddhism_")]({% link _tags/buddhism.md %}) and explore the library "room by room" by clicking on the "[Subtopic links](/tags/buddhism#children)" at the bottom of each bibliography. (Note that individual items in the library may appear in multiple bibliographies if they are tagged with multiple subjects.)
 
 ### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})
@@ -38,7 +38,7 @@ If there's a particular author you want to hear more from or you just want to ge
 The content type pages contain the canonical list of everything in the library.
 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
-This website started off as a Google Drive folder, which still serves as this website's primary file server. The Google Drive folder contains roughly the same content as this site, arranged similarly, just missing a few links here and there and containing a few extra goodies that haven't yet found their way over here. If you're looking for offline saving or are an avid user of Google Drive, this link is for you.
+This website started off as a Google Drive folder, which still serves as this website's primary file server. The Google Drive folder contains roughly the same content as this site, arranged similarly, just missing a few links here and there and containing a few extra goodies that haven't yet found their way over here. If you're an avid user of Google Drive, this link is for you.
 
 ### <i class="fas fa-database"></i> For Librarians, Academics, and Other Collectors
 

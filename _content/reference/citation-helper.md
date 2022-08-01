@@ -1,5 +1,5 @@
 ---
-title: "Citation Helper"
+title: "Sutta Citation Helper"
 external_url: "https://sutta.readingfaithfully.org/"
 course: sutta
 year: 2022
