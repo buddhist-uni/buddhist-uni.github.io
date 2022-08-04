@@ -50,13 +50,13 @@ For inclusion in the OBU library, a given work should be:
 
 The above factors are to be taken "on balance" such that a deficiency in one area may be compensated for by strength in another.
 For example, there are a few [works of fiction](https://buddhistuniversity.net/search/?q=%2Bis%3Afiction) in the library which fail IC1, but whose craft (IC2) and wholesome messages (IC3) make up for their lack of literal truth.
-The teachings of Chögyam Trungpa, however, fail IC7 and IC8 so thoroughly as to be inadmissible regardless of the works' other merits.
+On the other hand, the teachings of Chögyam Trungpa, for example, are so disreputable (IC7) and widely publicized (IC8) as to be inadmissible to our library, regardless of his works' potential merits.
 
-Note that IC4 (uniqueness) can be applied retroactively.
-If a better (more up-to-date, etc) work is found covering the same topic as an older work, than that older work should be archived in favor of the better one.
-[*In the Hope of Nibbana*](https://buddhistuniversity.net/content/monographs/in-the-hope-of-nibbana_king-winston) is an example of such a downranked work.
+Note that works are subject to reevaluation.
+If a better (more up-to-date, etc) work is found covering the same topic as an older work, for example, then the older work should be archived in favor of the newer one.
+[*In the Hope of Nibbana*](https://buddhistuniversity.net/content/monographs/in-the-hope-of-nibbana_king-winston) is a good example of such a work which was downranked after [better work](https://buddhistuniversity.net/content/booklets/nourishing-the-roots_bodhi) was found.
 
-Works that would otherwise not be added to the site for their low score on IC2 and/or IC4 should still be added as rank2 works (see below) if they score highly on IC8 to ensure they remain available online.
+Works that would otherwise not be added to the site for their low score on IC2 and/or IC4 should still be added as rank2 works (see below) if they score highly on IC8 to ensure that they remain accessible online.
 
 ## Acceptance Levels
 
@@ -64,7 +64,7 @@ Rather than a binary "accepted or rejected" status, items in the OBU library are
 
 - One-star pieces fail multiple IC categories and are never proactively added to the site. Their files are kept in a private archive on Google Drive of rejected works.
 - Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa) and are labeled "📦 Archived" on the site (see the table below).
-- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added.
+- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added as a tag.
 - Four-star pieces fail at most one IC category but receive very strong marks in multiple other areas. A four-star review means that this piece is highly recommended and should be added to the website right away (unless its IC5 score is particularly low).
 - Five-star pieces must fail none of the IC categories and must receive strong marks across the board. These are quite rare. They are not identified immediately, but are selected from the pool of recent four-star additions when it comes time to write the next blog post (usually every couple months).
 
@@ -82,14 +82,14 @@ Note: to view a piece's ranking directly on the website, click the "Bibtex Data"
 
 ## Ontology
 
-As a keen user of this library, it's worth taking some time to familiarize yourself with [the folder structure on Drive](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf).
+As a valued contributor to / keen user of this library, it's worth familiarizing yourself with [the library folder structure](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf).
 Contributors to the library should be able to answer basic questions about the collection such as:
 
-1. Where can I find a copy of the Jātaka tales?[^jataka]
-2. Where is "The Human World" folder?[^world]
+1. Where are the Jātaka tales?[^jataka]
+2. Where can one find information about Tibetan Buddhism?[^tibetan]
 3. What are the subcategories under Buddhist Philosophy?[^philosophy]
 
-Having this structure in your head will help you navigate the collection efficiently and helps reviewers direct works to the correct folders.
+Having this structure in your head will help you navigate the collection efficiently and helps reviewers direct works to their correct folders.
 
 ### Choosing a Folder
 
@@ -125,8 +125,8 @@ Thank you for your interest in the library and may you be blessed by the blessin
 
 ### Answers to the Ontology Quiz
 
-[^jataka]: Forms->Indian->Stories->Jataka
+[^jataka]: Buddhism->Forms->Indian->Stories->Jataka
 
-[^world]: Inside the "[Cosmology](https://drive.google.com/drive/folders/1-3P5u65MsX2gjuN46xqNV2dJxoAxrQDQ)" folder
+[^tibetan]: Buddhism->Forms->Mahayana->Vajrayana
 
 [^philosophy]: Right View and Right Thought
