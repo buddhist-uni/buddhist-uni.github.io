@@ -2,10 +2,11 @@
 title: "Power"
 authors:
   - "Todd May"
-external_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-power/"
+external_url: "https://theanarchistlibrary.org/library/todd-may-power"
+source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-power/"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1EpvxGNmrU8UTeRKDyU44HUZpgYA90pfQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16VXJ8Z6P1sRsOc1_NMnbrmkEyj_vLCUQ/view?usp=drivesdk"
 course: power
 tags:
   - monastic

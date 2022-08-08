@@ -2,10 +2,11 @@
 title: "Gender"
 authors:
   - "Jamie Heckert"
-external_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-gender/"
+external_url: "https://theanarchistlibrary.org/library/jamie-heckert-gender"
+source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-gender/"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1DmwT0ysT4rRQAw9PK2LuEl2LD-yu_-pN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16_F5Q6QqaX8vlIeIbduzIvYyvisRWZ6t/view?usp=drivesdk"
 course: inner
 tags:
   - gender
