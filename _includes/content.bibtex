@@ -4,7 +4,7 @@
 {%- endunless -%}
 {%- if include.content.from_book -%}{%- assign book = site.content | where: "slug", include.content.from_book | where: "category", "monographs" | first -%}{%- else -%}{%- assign book = nil -%}
 {%- assign series = site.series | find: "slug", include.content.series -%}
-{%- assign publisher = include.content.publisher | default: book.publisher | default: series.publisher -%}{%- assign publisher = site.publishers | find: "slug", publisher -%}
+{%- assign publisher = include.content.publisher | default: book.publisher | default: series.publisher -%}{%- assign publisher = site.publishers | find: "slug", publisher | default: publisher -%}
 {%- assign author = nil -%}
 {%- assign curlyspace = "} " -%}
 {%- assign curly = "}" -%}
@@ -19,7 +19,7 @@
 {% endif %}{% if include.content.booktitle %}    booktitle={% raw %}{{% endraw %}{{ include.content.booktitle }}},
 {% elsif book %}    booktitle={% raw %}{{% endraw %}{{ book.title | replace: "_", "" | replace: "*", "" }}},
 {% endif %}{% endif %}{% if include.content.editor %}    editor={% if include.useslugs %}{% if include.content.editor contains " " %}"{{ include.content.editor }}"{% else %}{{ include.content.editor }}{% endif %}{% else %}{% raw %}{{% endraw %}{% if include.content.editor contains " " %}{{ include.content.editor }}{% else %}{% assign editor = site.authors | find: "slug", include.content.editor %}{% if editor %}{{ editor.title }}{% else %}{{ include.content.editor }}{% endif %}{% endif %}}{% endif %},
-{% endif %}{% if include.content.publisher or publisher %}    publisher={% raw %}{{% endraw %}{% if publisher %}{{ publisher.title }}{% else %}{{ include.content.publisher }}{% endif %}},
+{% endif %}{% if include.content.publisher or publisher %}    publisher={% raw %}{{% endraw %}{% if publisher %}{{ publisher.title | default: publisher }}{% else %}{{ include.content.publisher }}{% endif %}},
 {% endif %}{% if include.content.school %}    school={% raw %}{{% endraw %}{{ include.content.school }}},
 {% endif %}{% if include.content.address or publisher.address %}    address={% raw %}{{% endraw %}{{ include.content.address | default: publisher.address }}},
 {% endif %}{% if include.content.year %}    year={{ include.content.year }},
