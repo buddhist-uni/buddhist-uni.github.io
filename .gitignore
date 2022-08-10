@@ -1,6 +1,7 @@
 vendor
 node_modules
 assets/webfonts
+_data/cssCacheToken.yml
 _site
 .trash
 .obsidian

@@ -3,7 +3,7 @@ title: "A world’s too little for thy tent, a grave too big for me"
 authors:
   - "Connie Voisine"
 subcat: poetry
-speaker: "Tracy K. Smith"
+reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/08/22/194-a-worlds-too-little-for-thy-tent-a-grave-too-big-for-me"
 course: world
 tags:

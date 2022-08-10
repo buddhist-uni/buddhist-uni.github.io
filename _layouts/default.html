@@ -13,9 +13,9 @@
   <noscript>
     <link rel="stylesheet" href="{{ gfont }}" />
   </noscript>
-  <link rel="stylesheet" href="/assets/css/{%- if jekyll.environment == 'production' and site.usepurgedcss -%}purged-{%- endif -%}main.css?u={% assign cssCacheToken = site.time | date: "%s" | slice: -3, 3 %}{{ cssCacheToken }}">
+  <link rel="stylesheet" href="/assets/css/{%- if jekyll.environment == 'production' and site.usepurgedcss -%}purged-{%- endif -%}main.css?u={{ site.data.cssCacheToken }}">
   {% for cc in page.custom_css %}
-  <link rel="stylesheet" href="/assets/css/{{cc}}.css?u={{ cssCacheToken }}">{% endfor %}
+  <link rel="stylesheet" href="/assets/css/{{cc}}.css?u={{ site.data.cssCacheToken }}">{% endfor %}
   <link rel="apple-touch-icon" sizes="144x144" href="{% link assets/imgs/ms-icon-144x144.png %}">
   <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/imgs/apple-touch-icon.png %}">
   <link rel="icon" type="image/png" sizes="192x192" href="{% link android-chrome-192x192.png %}">

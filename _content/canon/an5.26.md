@@ -6,6 +6,7 @@ drive_links: ["https://drive.google.com/file/d/19DuRGpqGRiQyJqIoRdhJ0JUTdOpV0Rf8
 external_url: "https://suttacentral.net/an5.26/en/sujato"
 year: 2018
 course: sutta
+status: featured
 tags:
   - an
   - path
