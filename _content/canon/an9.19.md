@@ -3,7 +3,7 @@ title: "AN 9.19: Devatā Sutta"
 translator: sujato
 slug: "an.009.019"
 external_url: "https://suttacentral.net/an9.19/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1DPRFCuaDRHUbZbGKLAPO2j9q9qBaolm1/view?usp=drivesdk"
 course: lay
 tags:

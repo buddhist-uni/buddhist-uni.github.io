@@ -404,6 +404,9 @@ This week we introduce the path of practice which leads to the state of mental p
 
 #### Homework
 
+{% include content_blurb.html category="canon" slug="an6.87" %}
+- What are the prerequisites for entering the path?
+
 {% include content_blurb.html category="booklets" slug="inspiring-dhamma_suchart" %}
 - Ajahn Suchart describes the path in his simple and direct way from the unique perspective of [the four *iddhipadas*](https://en.wikipedia.org/wiki/Iddhipada){:target="_blank" ga-event-value="0.25"}.
 
