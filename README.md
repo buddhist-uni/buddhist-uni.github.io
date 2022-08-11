@@ -74,7 +74,7 @@ See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github
 
 ## Acknowledgements
 
-There are too many to list here, so please see the [Acknowledgements Page](https://www.buddhistuniversity.net/ACKNOWLEDGEMENTS)
+see [Acknowledgements](https://www.buddhistuniversity.net/ACKNOWLEDGEMENTS)
 
 ## Dedication
 
