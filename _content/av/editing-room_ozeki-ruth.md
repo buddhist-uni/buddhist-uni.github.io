@@ -3,7 +3,6 @@ title: "In the Editing Room"
 subcat: podcast
 authors:
   - "Ruth Ozeki"
-subcat: 
 editor: "Rebecca Evans"
 external_url: "https://noveldialogue.org/2022/03/03/3-3-in-the-editing-room-with-ruth-ozeki-and-rebecca-evans-eh/"
 tags:
