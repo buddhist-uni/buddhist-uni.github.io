@@ -184,6 +184,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Chapter 4: “The Rise of Mahayana”
 
+{% include content_blurb.html category="articles" slug="second-buddha_loy" %}
+- Nagarjuna criticized the excessive developments of Buddhism in the centuries after the Buddha and reestablished emptiness as the central tenant of Buddhism, laying the philosophical groundwork for the Mahayana.
+
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
 

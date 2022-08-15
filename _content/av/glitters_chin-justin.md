@@ -10,7 +10,7 @@ drive_links:
 formats: [mp4]
 course: cosmology
 tags:
-  - lgbtq
+  - lgbt
   - californian
 year: 2012
 month: may

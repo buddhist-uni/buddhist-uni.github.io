@@ -94,6 +94,9 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {% include content_blurb.html category="articles" slug="synonyms-for-nibbana-from-tibet_skilling" %}
   - While sadly these forty synonyms were lost in the Chinese Tradition, Skilling shows that SN 43 (above) was preserved in Tibet.
 
+{% include content_blurb.html category="canon" slug="thig6.6" %}
+  - An exultation of the Buddha and the enlightened state.
+
 #### Fire, Heat, and Coolness
 
 Chapter two of _The Island_ gives us the basic metaphorical image behind the term "*Nibbāna*".
