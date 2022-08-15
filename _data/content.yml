@@ -16,7 +16,7 @@ ccms: 1.4 # course-course match numerator inc
 ctms: 1.2 # course-tag match score
 ttms: 1.1 # tag-tag match score
 tpms: 0.3 # tag-parent match score
-scms: 1.2 # subcat match score
+scms: 0.8 # subcat match score
 aams: 0.9 # author-author match score 
 ccmm: 1.12 # category match multiplier
 scmm: 1.08 # similar category multiplier
