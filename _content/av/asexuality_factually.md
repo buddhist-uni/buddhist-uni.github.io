@@ -10,6 +10,7 @@ drive_links:
 course: inner
 tags:
   - sexuality
+  - psychology
   - postmodernism
 year: 2020
 month: dec

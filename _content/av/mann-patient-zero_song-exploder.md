@@ -7,7 +7,7 @@ subcat: music
 year: 2017
 month: apr
 external_url: "https://songexploder.net/aimee-mann"
-course: cities
+course: places
 tags:
   - los-angeles
   - california
