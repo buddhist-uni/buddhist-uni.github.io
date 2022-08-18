@@ -32,7 +32,7 @@ test_cases:
     - [tracing-thought-through-things_stargardt, authenticity_sujato-brahmali]
     - [authenticity_sujato-brahmali, hoary-past-hazy-memory_hinuber-oskar-v]
     - [buzz-buzz-buzz_michelle-nijhuis, should-trees-have-standing_stone-chris]
-    - [college-sexual-assault-survey, sexual-consent_popova]
+    - [twenty-three-percent, sexual-consent_popova]
     - [sexual-consent_popova, what-every-body-is-saying_navarro-joe]
     - [compassionate-killing_gethin, trolly-car-dilemma_pandita]
     - [historical-authenticity_wynne, authenticity_sujato-brahmali]

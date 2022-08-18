@@ -2,7 +2,7 @@
 {% unless include.keep_rejects %}
     {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
 {% endunless %}
-{% assign sortkey = include.sortkey | default: "title" %}
+{% assign sortkey = include.sortkey | default: "slug" %}
 {% assign sorted = sorted | sort: sortkey %}
 <div class="featured_content_list"><ul>
   {% for c in sorted %}

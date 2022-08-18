@@ -8,6 +8,7 @@ tags:
   - sex
   - consent
   - ethics
+slug: "twenty-three-percent"
 year: 2015
 journal: "CNN"
 ---
