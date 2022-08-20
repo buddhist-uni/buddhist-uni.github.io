@@ -22,7 +22,8 @@ big_image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/%28Above%29_sBed
 {%- for letter in author_letters -%}
 <h3 id="{{ letter.name }}">{{ letter.name | upcase }}</h3>
 <ul class="author-sublist">
-{%- for author in letter.items -%}
+{%- assign authorsublist = letter.items | sort: "slug" -%}
+{%- for author in authorsublist -%}
     {%- assign catcounts = "" | split: "" -%}
     {%- capture filter -%}c.authors contains '{{ author.slug }}'{%- endcapture -%}
     {%- assign by_cat = all_content | where_exp: "c", filter | group_by: "category" -%}
