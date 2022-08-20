@@ -12,6 +12,7 @@ tags:
 year: 2015
 month: apr
 journal: plato
+pages: 19
 ---
 
 > What distinguished Chan were its novel use of language, its development of new narrative forms, and its valorization of the direct and embodied realization of Buddhist awakening.
