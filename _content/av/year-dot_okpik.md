@@ -13,6 +13,7 @@ tags:
   - migration
   - education
   - intellect
+  - origination
 year: 2020
 month: feb
 series: slowdown
