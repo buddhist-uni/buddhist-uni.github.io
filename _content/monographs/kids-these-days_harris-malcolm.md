@@ -13,12 +13,11 @@ tags:
   - economic-growth
   - sustainability
   - activism
-  - colonialism
   - capitalism
   - millennials
   - america
   - hr
-  - time
+  - present
   - power
 status: featured
 ---

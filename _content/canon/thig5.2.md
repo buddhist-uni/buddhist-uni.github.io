@@ -1,17 +1,18 @@
 ---
-title: "Thig 5.2: Aññatara"
+title: "Thig 5.2: Vimalā"
 slug: "thig.05.02"
 external_url: "https://suttacentral.net/thig5.2/en/soma"
 translator: "Ayya Soma"
-drive_links: ["https://drive.google.com/file/d/1_Izb5T3CO1_RX2UcKsYhPtVBAQyTQ6xN/view?usp=drivesdk"]
-course: hindrances
+drive_links: ["https://drive.google.com/file/d/1oPA2JEax6IRpPCqC-VW60W5DfJ-2Mx50/view?usp=drivesdk"]
+course: canonical-poetry
 tags:
   - thig
-  - nuns
+  - aging
 year: 2021
 subcat: poetry
 ---
 
-> For twenty-five years,  
-since I had gone forth,  
-I had not experienced serenity...
+> relying on my youth,  
+I despised anyone who was not my equal...
+
+A former courtesan roars her lion's roar.

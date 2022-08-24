@@ -1,6 +1,7 @@
 ---
 title: "The Library of Chinese Humanities"
 external_url: "https://www.degruyter.com/serial/loch-b/html#volumes"
+category: monographs
 publisher: degruyter
 ---
 
