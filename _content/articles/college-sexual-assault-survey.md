@@ -7,10 +7,9 @@ tags:
   - gender
   - sex
   - consent
-  - ethics
 slug: "twenty-three-percent"
 year: 2015
 journal: "CNN"
 ---
 
-A reminder that sexual violence is prevalent in the human realm, even among the educated, upper classes.
+A reminder that sexual violence is quite prevalent in the human realm, even among the educated, upper classes.

@@ -18,7 +18,7 @@ tags:
 status: featured
 year: 2019
 booktitle: "Buddhism and the Dynamics of Transculturality: New Approaches"
-publisher: "de Gruyter"
+publisher: degruyter
 address: "Boston"
 chapter: 7
 pages: "151--168"

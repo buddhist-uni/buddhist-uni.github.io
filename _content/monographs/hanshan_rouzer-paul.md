@@ -4,7 +4,9 @@ authors: ["Paul Rouzer"]
 editor: "Christopher M. B. Nugent"
 subcat: poetry
 year: 2017
-publisher: "Walter de Gruyter Inc."
+publisher: degruyter
+series: chinese-humanities
+number: 2
 olid: OL28356223M
 address: Berlin
 drive_links:
