@@ -3,7 +3,8 @@ title: "Why (Science Says) Buddhism is True"
 subcat: podcast
 authors:
   - "Robert Wright"
-external_url: "https://tricycle.org/podcast/robert-wright-science-buddhism/"
+external_url: "https://soundcloud.com/tricyclemag/robert-wright-why-science-says-buddhism-is-true"
+source_url: "https://tricycle.org/podcast/robert-wright-science-buddhism/"
 year: 2017
 month: oct
 course: west
