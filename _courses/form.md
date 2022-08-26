@@ -170,6 +170,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {:.mb-0}
 - In praise of the Sutras, preserved after the Buddha's death.
 
+{% include content_blurb.html category="av" slug="early-buddhist-oral-tradition_analayo" %}
+- How were these texts preserved? How reliable are they, and how should we think about the study of Buddhist history?
+
 [CBT] M.36, M.38
 {:.mb-0}
 - On the practice of giving to the Sangha in order to transfer merit to one’s deceased relatives: a practice that became common in the years after the Buddha.
