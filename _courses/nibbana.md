@@ -107,8 +107,11 @@ Chapter two of _The Island_ gives us the basic metaphorical image behind the ter
 
 And if you're still thinking that Nirvana is some heaven realm somewhere...
 
+{% include content_blurb.html category="canon" slug="thig5.10" %}
+- The Arahant Bhikkhuni Paṭācārā gives us the literal meaning of *nibbāna* in this beautiful poem from the *Therīgāthā*.
+
 {% include content_blurb.html category="booklets" slug="nibbana-and-the-fire-simile_nyanananda" %}
-  - Bhante Ñāṇananda disabuses us of that notion, by reminding us that "Nirvana" simply means relinguishing: letting go of fuel.
+  - Bhante Ñāṇananda disabuses us of the notion that Nibbāna is a place by reminding us that "extinguishing" means the "letting go" of a fire's fuel.
 
 {% include content_blurb.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
   - And Ajahn Geoff further explores ancient Indian phsysics to come up with a striking, new (old) take on this central metaphor. A long booklet, but well worth the read.
