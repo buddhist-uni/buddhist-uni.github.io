@@ -5,9 +5,9 @@ authors:
 external_url: "https://youtu.be/m0jKKzzv0WU"
 drive_links:
   - "https://drive.google.com/file/d/1aRbwZQdC06Fr2nKhx8ZSccJ9Id-gdSo2/view?usp=drivesdk"
-course: intellect
+course: inner
 tags:
-  - inner
+  - intellect
   - origination
 year: 2021
 month: may
