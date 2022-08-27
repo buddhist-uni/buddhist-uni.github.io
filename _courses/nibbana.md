@@ -114,7 +114,7 @@ And if you're still thinking that Nirvana is some heaven realm somewhere...
   - Bhante Ñāṇananda disabuses us of the notion that Nibbāna is a place by reminding us that "extinguishing" means the "letting go" of a fire's fuel.
 
 {% include content_blurb.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
-  - And Ajahn Geoff further explores ancient Indian phsysics to come up with a striking, new (old) take on this central metaphor. A long booklet, but well worth the read.
+  - And Ajahn Geoff further explores ancient Indian physics to come up with a striking, new (old) take on this central metaphor. A long booklet, but well worth the read.
 
 ### Part 2: Terrain
 
