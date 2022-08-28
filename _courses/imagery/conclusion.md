@@ -7,6 +7,12 @@ order: 26
 description: That's enough, venerable sir — what you have done, what you have offered. ~ <a href="https://www.accesstoinsight.org/tipitaka/sn/sn41/sn41.004.than.html" target="_blank" ga-event-value="0.4">SN 41.4</a>
 ---
 
+### Sutta
+
+{% include content_blurb.html category="canon" slug="thig16.1" %}
+
+In this final sutta, we see the Princess Sumedhā pull out all the stops: reviewing many of the Buddha's greatest similes and showing us all how to put them to good use!
+
 ### Final Reflections
 
 Thinking back to all the similes we read in this class: What similes do you remember most vividly? Did they have anything in common? Do you remember any similes involving water? Fire? Animals? Crafts? 
