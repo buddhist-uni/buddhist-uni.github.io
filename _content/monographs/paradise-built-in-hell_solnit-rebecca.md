@@ -2,7 +2,7 @@
 title: "A Paradise Built in Hell: The Extraordinary Communities That Arise in Disaster"
 authors:
   - solnit
-course: americas
+course: north-america
 tags:
   - cities
   - wider

@@ -9,7 +9,9 @@ series: chinese-humanities
 number: 2
 olid: OL28356223M
 address: Berlin
+formats: [GBook, pdf]
 drive_links:
+  - "https://play.google.com/store/books/details?id=EvpDDQAAQBAJ"
   - "https://drive.google.com/file/d/1cARmcgywwjk32bXW3sUH-dmHBb6hGDCk/view?usp=drivesdk"
 external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/27418/9781501501913.pdf"
 course: chan-lit

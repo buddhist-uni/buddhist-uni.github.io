@@ -17,8 +17,5 @@ number: 194
 minutes: 5
 ---
 
-> There aren’t enough doves  
-in North America to fill  
-the gondola of you.  
-Onions are fallible, only  
+> Onions are fallible, only  
 pretending to be infinite...  
