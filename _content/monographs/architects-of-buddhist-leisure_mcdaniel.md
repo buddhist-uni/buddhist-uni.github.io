@@ -3,7 +3,9 @@ title: "Architects of Buddhist Leisure: Socially Disengaged Buddhism in Asia's M
 authors:
   - "Justin Thomas McDaniel"
 external_url: "http://library.oapen.org/handle/20.500.12657/31632"
+formats: [GBook, pdf]
 drive_links:
+  - "https://play.google.com/store/books/details?id=kPLGDwAAQBAJ"
   - "https://drive.google.com/file/d/13wNJMbV4FW9IbTB-Jgy7c7IEpdUyj6Ti/view?usp=drivesdk"
 olid: OL27437616M
 year: 2017

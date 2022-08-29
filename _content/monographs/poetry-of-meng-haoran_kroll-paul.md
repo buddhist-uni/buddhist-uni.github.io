@@ -5,7 +5,9 @@ authors:
 subcat: poetry
 editor: "Stephen Owen"
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783110734690/html"
+formats: [GBook, pdf, epub]
 drive_links:
+  - "https://play.google.com/store/books/details?id=PV48EAAAQBAJ"
   - "https://drive.google.com/file/d/1b2Vd2xVtb9T1RwtnFFVSR0LEbQuQbeNy/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1b5CENsmbx5Hinm3nbkABxNdn91v36duG/view?usp=drivesdk"
 status: featured
