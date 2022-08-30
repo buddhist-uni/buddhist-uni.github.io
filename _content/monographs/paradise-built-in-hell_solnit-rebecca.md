@@ -9,6 +9,7 @@ tags:
   - state
   - power
   - disaster
+  - anarchy
 year: 2009
 olid: OL23079521M
 oclc: 303896716

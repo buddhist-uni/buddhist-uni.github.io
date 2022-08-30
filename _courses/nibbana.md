@@ -1,6 +1,6 @@
 ---
 title: "Nibbāna: The Goal of Buddhist Practice"
-subtitle: "An Reading Guide"
+subtitle: "A Reading Guide"
 google_doc_id: 1SSR6mG2xN7wuIEj1Fqs1pJFSfJGWjixdM9u22RED5nM
 feedback_id: "Nibb%C4%81na"
 icon: "far fa-heart"
