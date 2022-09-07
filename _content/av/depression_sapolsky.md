@@ -1,7 +1,7 @@
 ---
 title: "Depression"
 authors:
-  - "Robert Sapolksy"
+  - "Robert M. Sapolsky"
 external_url: "https://youtu.be/NOAgplgTxfc"
 course: inner
 tags:
