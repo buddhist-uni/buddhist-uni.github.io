@@ -10,7 +10,7 @@ tags:
   - psychology
 year: 2014 # maybe 2015?
 olid: OL39483170M
-publisher: "Press Books"
+publisher: "BC Campus"
 address: "Vancouver, BC"
 pages: 445
 ---

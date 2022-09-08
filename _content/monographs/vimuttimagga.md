@@ -15,4 +15,4 @@ publisher: bps
 pages: 362
 ---
 
-An ancient meditation manual preserved in Chinese translation and one of the sources for [Buddhaghosa's Visuddhimagga](/content/canon/vsm_buddhaghosa), the Vimuttimagga remains probably our clearest window into the pedagogical world of the earlies meditation teachers after the Buddha. 
+An ancient meditation manual preserved in Chinese translation and one of the sources for [Buddhaghosa's Visuddhimagga](/content/canon/vsm_buddhaghosa), the Vimuttimagga remains probably our clearest window into the pedagogical world of the first meditation teachers after the Buddha. 
