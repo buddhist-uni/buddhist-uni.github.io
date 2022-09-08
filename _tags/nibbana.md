@@ -18,5 +18,5 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/e/e2/Buddha_Temple_%2C
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha_Temple_%2C_Bodhgaya.jpg">WikiMedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
 ---
 
-The unconditional happiness that constitutes the goal of Buddhist practice.
+The unconditional happiness that constitutes the ultimate goal of Buddhist practice.
 
