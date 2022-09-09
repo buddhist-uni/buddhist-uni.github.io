@@ -143,6 +143,9 @@ For "homework," please read chapter two of _Buddhist Life_ and:
 
 {% include content_box.html category="av" slug="dealing-with-difficult-people_brahm" %}
 
+{% include content_box.html category="essays" slug="riverside-talk_tnh" %}
+- How can we acheive harmony given the state of the world? Is compassion even right in the face of injustice and violence?
+
 ##### Chapter 6
 
 {% include content_blurb.html category="reference" slug="stages-of-enlightenment" %}
