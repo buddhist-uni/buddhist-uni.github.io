@@ -129,4 +129,4 @@ Thank you for your interest in the library and may you be blessed by the blessin
 
 [^tibetan]: Buddhism->Forms->Mahayana->Vajrayana
 
-[^philosophy]: Right View and Right Thought
+[^philosophy]: Epistemology, Right View, and Right Thought
