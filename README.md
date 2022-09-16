@@ -55,6 +55,7 @@ OBU is strictly a digital library and therefore **cannot and does not** provide:
 - academic degrees
 - professional certification
 - spiritual counseling
+- housing
 - etc
 
 The library's resources are provided as-is with no guarantees.
