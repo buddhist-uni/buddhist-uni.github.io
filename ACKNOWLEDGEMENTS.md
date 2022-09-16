@@ -4,7 +4,7 @@ title: Acknowledgements
 
 A BIG thank you to:
 
-- [Google](https://about.google/) for hosting [the file library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)
+- [Google](https://about.google/) for hosting [our library of media files](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) and [web fonts](https://fonts.google.com/)
 - [GitHub](https://github.com/about/) for hosting the website and its source code, including their [Primer CSS](https://primer.style/) library
 - [FontAwesome](https://fontawesome.com/) and [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) for providing the images used throughout
 - [CloudFlare](https://www.cloudflare.com/) for securing the site
