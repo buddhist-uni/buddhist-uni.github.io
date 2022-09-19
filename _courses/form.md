@@ -499,6 +499,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="av" slug="mindfulness-for-the-whole-family_kim-sumi" %}
 - What is it like to grow up in a Buddhist community? What does it take to _make_ a Buddhist community?
 
+{% include content_blurb.html category="essays" slug="cultural-buddhism_yuttadhammo" %}
+- Should Buddhism in the West try to strip away "Cultural Buddhism" or preserve it?
+
 [CBT] Th.54, Th.85–88, Th.105
 {:.mb-0}
 - Good friendship is vital on the path to Awakening.
