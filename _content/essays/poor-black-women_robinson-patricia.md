@@ -6,7 +6,6 @@ external_url: "https://dukelibraries.contentdm.oclc.org/digital/api/collection/p
 source_url: "https://idn.duke.edu/ark:/87924/r3s39c"
 drive_links:
   - "https://drive.google.com/file/d/18rHpuYKGlpdRLydAHiSJwPsZfZKanApF/view?usp=drivesdk"
-status: featured
 course: inner
 tags:
   - groups

@@ -10,6 +10,7 @@ status: featured
 tags:
   - an
   - dialogue
+  - sutta
   - ideology
   - function
 year: 2000

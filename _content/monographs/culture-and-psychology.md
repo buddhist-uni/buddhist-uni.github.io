@@ -1,7 +1,7 @@
 ---
 title: "Culture and Psychology: How People Shape and are Shaped by Culture"
 authors:
-  - "L. D. Worthy"
+  - "Lisa D. Worthy"
   - "Trisha Lavigne"
   - "Fernando Romero"
 external_url: "https://open.maricopa.edu/culturepsychology/"
