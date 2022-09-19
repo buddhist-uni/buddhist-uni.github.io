@@ -10,7 +10,7 @@ course: intellect
 tags:
   - world
   - present
-  - political-science
+  - politics
   - climate-change
   - communication
 year: 2022

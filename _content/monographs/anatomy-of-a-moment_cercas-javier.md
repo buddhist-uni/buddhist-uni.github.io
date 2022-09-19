@@ -10,7 +10,7 @@ tags:
   - spain
   - fascism
   - political-ideology
-  - political-science
+  - politics
   - coups
   - military
   - state
