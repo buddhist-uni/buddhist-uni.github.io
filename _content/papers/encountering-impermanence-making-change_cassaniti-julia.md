@@ -13,8 +13,7 @@ tags:
   - anicca
 year: 2022
 month: mar
-publisher: "UCL Press"
-address: "London"
+publisher: ucl
 pages: "65--82"
 chapter: 5
 ---
