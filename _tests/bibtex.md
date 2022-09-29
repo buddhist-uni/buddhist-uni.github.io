@@ -1,6 +1,15 @@
 ---
 title: "Bibtex Tests"
 ---
+{% assign testc = site.content | find: "url", "/content/excerpts/buddhist-thought_williams-paul" %}
+```
+{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+```
+
+Bibtex contains opener: {% unless bib contains "@incollection{" %}FAIL ❌{% else %}Pass ✅{% endunless %}  
+Bibtex wraps title caps: {% unless bib contains "{S}elections" %}FAIL ❌{% else %}Pass ✅{% endunless %}  
+Bibtex properly italicizes within a title: {% unless bib contains "\textit{Buddhist Thought}" %}FAIL ❌{% else %}Pass ✅{% endunless %}  
+Bibtex contains unwrapped year: {% if bib contains "year={" %}FAIL ❌{% elsif bib contains "year=2000," %}Pass ✅{% else %}FAIL ❌{% endif %}  
 
 {% assign testc = site.content | find: "url", "/content/monographs/architects-of-buddhist-leisure_mcdaniel" %}
 ```

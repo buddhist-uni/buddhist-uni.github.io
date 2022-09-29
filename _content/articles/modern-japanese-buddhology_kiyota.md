@@ -17,4 +17,4 @@ pages: "17--36"
 
 > Japanese Buddhology today is highly  specialized,  placing  great emphasis  on  intense  textual  studies.
 
-How Chinese, and Western, scholastic approaches have informed the contemporary approach to Buddhist Studies in Japan.
+How Chinese and Western scholastic approaches have informed the contemporary approach to Buddhist Studies in Japan.
