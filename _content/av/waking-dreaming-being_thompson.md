@@ -9,7 +9,7 @@ course: inner
 tags:
   - consciousness
   - dialogue
-  - academia
+  - academic
   - neuroscience
 year: 2015
 month: feb

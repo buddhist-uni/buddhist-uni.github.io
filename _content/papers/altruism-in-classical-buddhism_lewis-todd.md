@@ -11,7 +11,7 @@ course: form
 tags:
   - ethics
   - west
-  - academia
+  - academic
   - karma
 ---
 

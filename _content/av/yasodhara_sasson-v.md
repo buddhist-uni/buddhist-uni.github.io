@@ -10,7 +10,7 @@ course: ambulit
 tags:
   - buddha
   - characters
-  - academia
+  - academic
 publisher: nbn
 minutes: 44
 ---

@@ -10,7 +10,7 @@ tags:
   - rebirth-stories
   - american
   - form
-  - academia
+  - academic
 year: 2022
 month: feb
 publisher: nbn

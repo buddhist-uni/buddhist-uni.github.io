@@ -13,7 +13,7 @@ tags:
   - form
   - tibetan
   - tantric-roots
-  - academia
+  - academic
 ---
 
 An encyclopedia entry on Buddhist Ethics across interpretations and traditions.

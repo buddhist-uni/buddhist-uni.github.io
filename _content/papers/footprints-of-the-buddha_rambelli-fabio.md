@@ -12,7 +12,7 @@ tags:
   - early-modern
   - modern
   - japanese-roots
-  - academia
+  - academic
   - historiography
   - asia
 status: featured

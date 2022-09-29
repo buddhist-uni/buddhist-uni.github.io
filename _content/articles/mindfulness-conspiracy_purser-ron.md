@@ -9,7 +9,7 @@ month: jun
 journal: "The Guardian"
 course: engaged
 tags:
-  - academia
+  - academic
   - selling
   - west
   - meditation

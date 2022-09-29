@@ -17,7 +17,7 @@ tags:
   - thought
   - metacognition
   - mindfulness
-  - academia
+  - academic
 ---
 
 > hypnotic response and meditation involve opposite processes

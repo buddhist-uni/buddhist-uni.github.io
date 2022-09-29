@@ -11,7 +11,7 @@ pages: "668--701"
 course: ethics
 tags:
   - west
-  - academia
+  - academic
   - karma
 ---
 

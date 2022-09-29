@@ -8,7 +8,7 @@ journal: jiabs
 year: 1981
 volume: 4
 number: 2
-course: academia
+course: academic
 status: featured
 tags:
   - mahayana-roots

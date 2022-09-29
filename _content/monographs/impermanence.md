@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/13UAGIbu5dA7o4x2WXMghTJ4gyxLwxcbg/view?usp=drivesdk"
 tags:
   - time
-  - academia
+  - academic
 year: 2022
 month: mar
 olid: OL39795838M

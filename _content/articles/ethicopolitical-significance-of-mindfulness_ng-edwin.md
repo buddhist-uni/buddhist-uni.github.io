@@ -11,7 +11,7 @@ pages: "353--384"
 journal: jbe
 tags:
   - engaged
-  - academia
+  - academic
   - society
   - mindfulness
 ---

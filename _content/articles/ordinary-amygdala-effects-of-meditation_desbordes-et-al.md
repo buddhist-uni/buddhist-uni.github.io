@@ -11,7 +11,7 @@ volume: 6
 number: 292
 status: featured
 tags:
-  - academia
+  - academic
   - neuroscience
   - path
   - mindfulness

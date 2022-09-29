@@ -7,7 +7,7 @@ editor: "Malcolm Keating"
 external_url: "https://newbooksnetwork.com/jay-l-garfield-buddhist-ethics-a-philosophical-exploration-oxford-up-2021"
 course: view
 tags:
-  - academia
+  - academic
   - ethics
   - buddhism
   - rebirth-stories
