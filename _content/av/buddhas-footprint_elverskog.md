@@ -7,7 +7,7 @@ course: becon
 status: featured
 publisher: nbn
 tags:
-  - academia
+  - academic
   - asia
   - nature
   - lay

@@ -10,7 +10,7 @@ booktitle: "From Birch Bark to Digital Data: Recent Advances in Buddhist Manuscr
 course: manuscripts
 tags:
   - agama
-  - academia
+  - academic
 ---
 
 Gives an overview of the archeology and methodology employed by modern scholars of early Buddhist texts.

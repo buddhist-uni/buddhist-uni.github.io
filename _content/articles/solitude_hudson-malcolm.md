@@ -16,7 +16,7 @@ tags:
   - viveka
   - monastic-advice
   - path
-  - academia
+  - academic
 ---
 
 > One does not obtain *sīla*, let alone the Dhamma, from the historical process.

@@ -9,7 +9,7 @@ drive_links:
 course: pali-language
 tags:
   - philology
-  - academia
+  - academic
 year: 2007
 journal: jpts
 publisher: pts

@@ -8,7 +8,7 @@ drive_links:
 course: tantric
 tags:
   - ethics
-  - academia
+  - academic
 year: 2021
 month: dec
 journal: jbe

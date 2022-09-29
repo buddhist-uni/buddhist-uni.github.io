@@ -11,7 +11,7 @@ course: indian
 tags:
   - pali-canon
   - setting
-  - academia
+  - academic
   - ebts
 ---
 

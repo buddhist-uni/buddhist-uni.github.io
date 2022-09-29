@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1wnrHQ_PmZlG78MIF11LepInOFCnnd2U-/view?usp=drivesdk"
 status: featured
 base_value: 0.85
-course: academia
+course: academic
 tags:
   - engaged
   - american

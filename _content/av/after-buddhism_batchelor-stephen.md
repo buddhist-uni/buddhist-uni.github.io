@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1Odr0hmoDSVMN0zAosjkTDjzVQL14QvH-
 course: secular
 tags:
   - selling
-  - academia
+  - academic
   - mahayana
   - west
 year: 2016

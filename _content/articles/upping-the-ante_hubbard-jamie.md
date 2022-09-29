@@ -8,7 +8,7 @@ volume: 18
 journal: jiabs
 tags:
   - internet
-  - academia
+  - academic
   - media
 ---
 

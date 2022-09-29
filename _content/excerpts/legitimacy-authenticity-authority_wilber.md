@@ -12,7 +12,7 @@ drive_links:
 course: monastic
 tags:
   - form
-  - academia
+  - academic
   - west
   - power
   - charisma

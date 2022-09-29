@@ -10,7 +10,7 @@ course: monastic
 tags:
   - vinaya-studies
   - form
-  - academia
+  - academic
 status: featured
 base_value: 0.2
 year: 1995

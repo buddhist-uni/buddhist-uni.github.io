@@ -11,7 +11,7 @@ course: meditation
 tags:
   - satipatthana
   - mindfulness
-  - academia
+  - academic
   - sutta
 status: featured
 year: 2012

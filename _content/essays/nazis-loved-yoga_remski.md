@@ -9,6 +9,7 @@ course: west
 tags:
   - new-age
   - conspirituality
+  - fascism
 year: 2021
 month: mar
 ---

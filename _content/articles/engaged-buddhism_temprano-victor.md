@@ -10,7 +10,7 @@ course: engaged
 journal: bsr
 pages: 2
 tags:
-  - academia
+  - academic
   - modernism
 status: featured
 ---

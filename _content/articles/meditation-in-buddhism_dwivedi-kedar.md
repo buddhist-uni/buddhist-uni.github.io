@@ -11,7 +11,7 @@ volume: 18
 course: function
 tags:
   - meditation
-  - academia
+  - academic
   - buddhism
   - psychology
 ---

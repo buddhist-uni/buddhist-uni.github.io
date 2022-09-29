@@ -12,7 +12,7 @@ tags:
   - chinese-religion
   - modern
   - taiwanese
-  - academia
+  - academic
 year: 2013
 journal: bsr
 volume: 30
