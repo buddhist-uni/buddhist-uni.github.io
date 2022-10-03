@@ -7,7 +7,12 @@ illustration_height: 680
 illustration_width: 1024
 illustration_center_y: 30%
 illustration_center_x: 60%
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Expedition_61_Soyuz_Landing_(NHQ202002060007).jpg">NASA</a>
+illustration_caption: >-
+  A key capacity of humans is their ability to use tools and cooperate.
+  In this photo, American astronaut Christina Koch is helped out of the Soyuz spacecraft by Russian officers minutes after landing in a remote part of Kazakhstan on Feb. 6, 2020.
+  Koch returned to Earth safely after a record-breaking 328 days in space.
+  Photo courtesy of
+  <a href="https://commons.wikimedia.org/wiki/File:Expedition_61_Soyuz_Landing_(NHQ202002060007).jpg">NASA</a>.
 image: https://illeakyw.sirv.com/Images/banners/Shuttle_Enterprise_Flight_to_New_York.jpg
 image_width: 1024
 image_height: 723
