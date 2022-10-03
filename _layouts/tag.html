@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="tag">                                                                                                
+<article class="tag">
   <header class="post-header">
 {% assign parents = '' | split: '' %}
 {% for pslug in page.parents %}
@@ -17,13 +17,13 @@ layout: default
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
 <p>{% if course %}Also available: <a href="{{ course.url }}"><i class="{{ course.icon }}"></i> As a Syllabus</a><br>{% endif %}Subscribe to this topic via: <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS</a></p>
-    
+
 <div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
 {% if page.illustration %}
 <figure>
     <img src="{{ page.illustration }}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if h > 500 %}{% assign h = 500 %}{% endif %}{% if page.illustration contains ".sirv.com" %}?h={{ h | round }}px" srcset="{{ page.illustration }} 1.5x{% endif %}" style="height: {{ h }}px; background-color: lightgrey; object-fit: cover; object-position: {{ page.illustration_center_x | default: "50%" }} {{ page.illustration_center_y | default: "50%"}};{% endif %}">
     <figcaption>
-        <p class="attribution">Courtesy of {{ page.illustration_info | replace: ' href="http', ' target="_blank" href="http'  }}</p>
+        <p class="attribution">{% assign a = page.illustration_caption %}{% unless a %}{% assign a = "Courtesy of " | append: page.illustration_info %}{% endunless %}{{ a | replace: ' href="http', ' target="_blank" href="http' }}</p>
     </figcaption>
 </figure>
 {% endif %}
