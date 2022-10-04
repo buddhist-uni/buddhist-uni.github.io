@@ -8,7 +8,7 @@ illustration_width: 1024
 illustration_center_y: 20%
 illustration_caption: >-
   A group of lay people dressed mostly in white chant a formal invitation to a group of monks dressed in brown at an event in Australia in 2017.
-  Despite its reputation as a "philosophy," Buddhism has as many rituals and traditions as any other lived religion.
+  Despite its reputation as a "philosophy," Buddhism has rituals and traditions like any other lived religion.
   (<a href="https://commons.wikimedia.org/wiki/File:Dhammagiri_Forest_Hermitage,_Buddhist_Monastery,_Brisbane,_Australia_www.dhammagiri.org.au_04.jpg">Gary A Collett</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/kung-fu-nun.jpg
 image_width: 1024

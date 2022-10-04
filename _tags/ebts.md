@@ -16,8 +16,9 @@ illustration_center_y: 20%
 illustration_height: 1107
 illustration_caption: >-
   A 2nd c. Gandharan statue of the Buddha in
-  <a href="https://commons.wikimedia.org/wiki/File:Gandharan_-_Seated_Buddha_in_the_Attitude_of_Preaching_-_Walters_25123.jpg">the Walters Art Museum</a>
-  seated in lotus position with his hands in a mudra of teaching.
+  <a href="https://commons.wikimedia.org/wiki/File:Gandharan_-_Seated_Buddha_in_the_Attitude_of_Preaching_-_Walters_25123.jpg">the Walters Art Museum</a>.
+  The Buddha is seated in lotus position and his hands are in a mudra of instruction.
+  The large, plain halo (along with the rest of the statue) would have originally been painted in bold color.
 ---
 
 The Buddha's life and teachings as they've been passed down to us.

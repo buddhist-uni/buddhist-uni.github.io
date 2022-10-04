@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 editor: "Max Pearson"
 external_url: "https://www.bbc.co.uk/programmes/w3cszkq2"
-course: social
+course: inner
 tags:
   - time
 year: 2021

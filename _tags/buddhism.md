@@ -12,7 +12,9 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Pearl_of_Searching
 illustration: https://www.buddhistuniversity.net/imgs/buddha_thangka.webp
 illustration_height: 1229
 illustration_center_y: 40%
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:The_Buddha._Gouache._Wellcome_L0069372.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+illustration_caption: >-
+  An iconographic painting of the Buddha in the Tibetan style from the early 20th century.
+  (<a href="https://commons.wikimedia.org/wiki/File:The_Buddha._Gouache._Wellcome_L0069372.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)
 ---
 
 The religion founded by the [Buddha](/tags/buddha) in approximately the 5th century BCE in the Ganges River Valley.
