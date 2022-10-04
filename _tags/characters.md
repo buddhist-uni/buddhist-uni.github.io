@@ -10,7 +10,7 @@ illustration_width: 1024
 illustration_height: 597
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/3/3a/Nalagiri%2C_a_ferocious_elephant%2C_sits_listening_to_Buddha_Wellcome_L0027851.jpg
 illustration_caption: >-
-  This Sanskrit manuscript features a drawing of the Buddha with two characters: the joyful Ananda and the elephant Nalagiri.
+  A closeup of a Sanskrit manuscript featuring a drawing of the Buddha with two characters: the joyful Ananda and the elephant Nalagiri.
   Stories of the early Saṅgha are found throughout Buddhist literature, from the Pāḷi Canon to northern texts such as this one in
   <a href="https://commons.wikimedia.org/wiki/File:Nalagiri,_a_ferocious_elephant,_sits_listening_to_Buddha_Wellcome_L0027851.jpg">the Wellcome Collection</a>.
 image: https://illeakyw.sirv.com/Images/banners/ascetic_Bodhisatta_with_Group_of_Five.jpg

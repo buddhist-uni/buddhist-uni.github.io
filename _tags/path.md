@@ -5,7 +5,13 @@ illustration: https://illeakyw.sirv.com/Images/tags/boat-crossing-sketch.jpg
 illustration_width: 716
 illustration_height: 1130
 illustration_center_y: 46%
-illustration_info: <a href="https://www.metmuseum.org/art/collection/search/49173">The Met</a>
+illustration_caption: >-
+  The fifth painting from Yuán Jǐ (原濟)'s 1695 album of calligraphy titled "Coming Home" (歸棹) currently housed at
+  <a href="https://www.metmuseum.org/art/collection/search/49173">The Met</a>
+  uses a trip down a foggy river as an allegory for the spiritual journey.
+  The Buddha often compared his teachings to a raft which ferries beings across a dangerous river to a far shore of safety, an allegorical tradition Shí Tāo (石濤 as he's more usually known) is certainly drawing on here when he writes opposite this painting,
+  ⟨ 放眼江天外，賒心寸草亭。⟩
+  "Looking beyond the river and sky, lose [your] heart in a grass hut."
 image: https://illeakyw.sirv.com/Images/banners/wenboren.jpg
 image_width: 1938
 image_height: 960
