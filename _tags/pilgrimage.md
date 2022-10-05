@@ -6,7 +6,9 @@ illustration: https://illeakyw.sirv.com/Images/tags/mahabodhi-meditating.jpeg
 illustration_center_x: 63%
 illustration_width: 1280
 illustration_height: 960
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Mahabodhi_temple_and_around_IRCTC_2017_(60).jpg">Vinayaraj V R</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
+illustration_caption: >-
+  A diverse group of pilgrims sit in quiet reflection around the Mahabodhi shrine at Bodh Gaya in 2017.
+  (<a href="https://commons.wikimedia.org/wiki/File:Mahabodhi_temple_and_around_IRCTC_2017_(60).jpg">Vinayaraj V R</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Sarnath.jpeg
 image_width: 1280
 image_height: 960
