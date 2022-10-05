@@ -7,7 +7,11 @@ illustration_width: 1280
 illustration_height: 830
 illustration_center_x: 65%
 illustration_center_y: 28%
-illustration_info: <a href="https://commons.m.wikimedia.org/wiki/File:StupaCircumDevotees.jpg">WikiMedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>
+illustration_caption: >-
+  An ancient relief shows two monks and a Bactrian Greek couple circumambulating a <i>stūpa</i>.
+  In the background, a group of merchants looks on approvingly.
+  As Buddhism spread across South and Inner Asia, regional differences in practices and interpretation gradually emerged, eventually leading to "18" schools.
+  (<a href="https://commons.m.wikimedia.org/wiki/File:StupaCircumDevotees.jpg">WikiMedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>)
 image: https://illeakyw.sirv.com/Images/banners/Ellora_Caves_Vishvakarma.jpg
 image_width: 1280
 image_height: 853

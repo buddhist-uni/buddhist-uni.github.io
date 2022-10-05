@@ -8,7 +8,9 @@ illustration_width: 966
 illustration_height: 768
 illustration_center_x: 50%
 illustration_center_y: 25%
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Hermitage_of_Valmiki,_Folio_from_the_%22Nadaun%22_Ramayana_(Adventures_of_Rama)_LACMA_AC1999.127.45.jpg">Los Angeles County Museum of Art</a>
+illustration_caption: >-
+  A modern artist's rendition of an idealized, ancient India from a series on the Ramayana in
+  <a href="https://commons.wikimedia.org/wiki/File:Hermitage_of_Valmiki,_Folio_from_the_%22Nadaun%22_Ramayana_(Adventures_of_Rama)_LACMA_AC1999.127.45.jpg">the Los Angeles County Museum of Art</a>.
 image: https://illeakyw.sirv.com/Images/banners/Nagarjuna_Sagar_Dam.jpg
 big_image: https://upload.wikimedia.org/wikipedia/commons/5/5f/Charming_Swan_In_The_Mist_Of_Paradise_At_Nagarjuna_Sagar_Dam.jpg
 image_width: 1280

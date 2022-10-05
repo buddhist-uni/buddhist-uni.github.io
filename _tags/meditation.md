@@ -6,7 +6,9 @@ illustration_height: 628
 illustration_width: 1024
 illustration_center_x: 20%
 illustration_center_y: 70%
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Meditating_in_Madison_Square_Park.jpg">Beyond My Ken</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+illustration_caption: >-
+  A small group of New Yorkers meditate together in Madison Square Park on a sunny Tuesday in June, 2010.
+  (<a href="https://commons.wikimedia.org/wiki/File:Meditating_in_Madison_Square_Park.jpg">Beyond My Ken</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/nanzen-ji_Kyoto.jpg
 image_width: 1280
 image_center_y: 4%
