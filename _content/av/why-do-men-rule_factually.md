@@ -20,7 +20,7 @@ tags:
   - ideology
 year: 2022
 month: mar
-series: "Factually"
+series: factually
 number: 149
 minutes: 79
 ---
