@@ -20,4 +20,6 @@ image_center_y: 40%
 big_image: https://upload.wikimedia.org/wikipedia/commons/c/c5/Lotus_in_a_Pond.jpg
 ---
 
-The transformational purpose of taking on the Buddha's education system.
+The Buddha taught a comprehensive, spiritual educational system whose purpose is to help us cultivate and grow our virtues, mental clarity, and wisdom.
+
+Below you'll find links to over a hundred items introducing Buddhist practice organized by type.

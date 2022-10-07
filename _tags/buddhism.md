@@ -17,5 +17,6 @@ illustration_caption: >-
   (<a href="https://commons.wikimedia.org/wiki/File:The_Buddha._Gouache._Wellcome_L0069372.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)
 ---
 
-The religion founded by the [Buddha](/tags/buddha) in approximately the 5th century BCE in the Ganges River Valley.
+The religion founded by [the Buddha](/tags/buddha) in approximately [the 5th century BCE](/tags/setting) in the Ganges River Valley.
 
+Below you'll find links to over a hundred free works introducing Buddhism organized by type.

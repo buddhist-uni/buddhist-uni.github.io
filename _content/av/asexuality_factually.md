@@ -14,7 +14,7 @@ tags:
   - postmodernism
 year: 2020
 month: dec
-series: "Factually"
+series: factually
 number: 82
 minutes: 61
 ---
