@@ -1,7 +1,7 @@
 ---
 title: "Tenzo Kyōkun: Instructions for the Cook"
 authors:
-  - "Eihei Dogen"
+  - dogen
 translator: "Anzan Hoshin and Yasuda Joshu Dainen"
 external_url: "https://wwzc.org/dharma-text/tenzo-kyokun-instructions-tenzo"
 drive_links:
