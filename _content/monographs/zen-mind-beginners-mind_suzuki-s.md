@@ -11,13 +11,9 @@ tags:
   - function
   - ambulit
   - zen
-  - mahayana
-  - philosophy
   - meditation
-  - problems
   - chaplaincy
   - thought
-  - mindfulness
 year: 1970
 publisher: Weatherhill
 ---

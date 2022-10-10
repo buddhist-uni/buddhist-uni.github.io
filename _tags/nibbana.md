@@ -8,7 +8,9 @@ illustration_height: 960
 illustration_center_x: 47%
 illustration_center_y: 82%
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/e/e1/Diamond_Throne_Vajrasana.jpg
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Diamond_Throne_Vajrasana.jpg">Evan Lovely</a>, <a href="https://creativecommons.org/licenses/by/2.0">BY 2.0</a>
+illustration_caption: >-
+  The Diamond Throne at Bodh Gaya where the Buddha attained Awakening.
+  (<a href="https://commons.wikimedia.org/wiki/File:Diamond_Throne_Vajrasana.jpg">Evan Lovely</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/mahabodhi.jpg
 image_width: 1280
 image_height: 960

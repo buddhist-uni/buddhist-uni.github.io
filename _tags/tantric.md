@@ -7,7 +7,7 @@ illustration_height: 826
 illustration_width: 1024
 illustration_center_y: 50%
 illustration_center_x: 50%
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Mandala_of_Vajradhatu.JPG">Wikimedia</a>
+illustration_caption: Mandalas such as this Vajradhatu mandala from Tibet are full of iconographic meaning. They are used as visual meditation guides in certain tantric practices.
 image: https://illeakyw.sirv.com/Images/banners/tantric_scroll.jpg
 image_width: 760
 image_center_x: 45%

@@ -6,7 +6,9 @@ illustration_center_x: 50%
 illustration_center_y: 50%
 illustration_width: 929
 illustration_height: 768
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Monks_Debating_Practice_At_Sera_Monastery.JPG">Thomas Fanghaenel</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
+illustration_caption: >-
+  Two Tibetan monks engage in a traditional debate in the crowded courtyard of Sera Monastery near Lhasa in 2007.
+  (<a href="https://commons.wikimedia.org/wiki/File:Monks_Debating_Practice_At_Sera_Monastery.JPG">Thomas Fanghaenel</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Buddha_Teaching_woodcut.jpg
 big_image: https://upload.wikimedia.org/wikipedia/commons/9/90/034_Buddha_Teaching_%2839570552165%29.jpg
 image_width: 1279

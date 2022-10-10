@@ -6,7 +6,11 @@ illustration: https://illeakyw.sirv.com/Images/tags/turning-arhat.jpeg
 illustration_height: 900
 illustration_center_y: 25%
 illustration_center_x: 40%
-illustration_info: <a href="https://images.metmuseum.org/CRDImages/as/original/DP163962.jpg">The Met</a>
+illustration_caption: >-
+  This Liao dynasty (c. 1000) statue at 
+  <a href="https://images.metmuseum.org/CRDImages/as/original/DP163962.jpg">The Met</a>
+  is a Chinese depiction of an Arhat.
+  While traditionally associated with the Mahayana, Chinese Buddhists also revered and preserved many early Buddhist ideas.
 image: https://illeakyw.sirv.com/Images/banners/wooden-monk.jpg
 image_width: 1024
 image_center_X: 46%

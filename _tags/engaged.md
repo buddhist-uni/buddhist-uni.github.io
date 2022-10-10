@@ -11,7 +11,10 @@ illustration_height: 768
 illustration_center_y: 60%
 illustration_center_x: 15%
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/e/ef/Guanyin_barmh%C3%A4rtighetens_gudinna_gjord_av_porslin_i_Kina_p%C3%A5_1700-talet_-_Hallwylska_museet_-_95549.tif
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Guanyin_barmh%C3%A4rtighetens_gudinna_gjord_av_porslin_i_Kina_p%C3%A5_1700-talet_-_Hallwylska_museet_-_95549.tif">the Hallwyl Museum</a>
+illustration_caption: >-
+  A small Guanyin statue at
+  <a href="https://commons.wikimedia.org/wiki/File:Guanyin_barmh%C3%A4rtighetens_gudinna_gjord_av_porslin_i_Kina_p%C3%A5_1700-talet_-_Hallwylska_museet_-_95549.tif">the Hallwyl Museum</a>
+  has many arms holding a variety of implements to symbolize the many ways she has to help sentient beings.
 image: https://illeakyw.sirv.com/Images/banners/Protest_against_Trident_II_Missile_Cape_Canaveral_Florida_1987_06.jpg
 image_width: 1280
 image_height: 913
