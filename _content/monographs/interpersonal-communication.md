@@ -15,6 +15,6 @@ publisher: "Milne Open Textbooks"
 address: "New York"
 ---
 
-An Open Textbook introducing inter-human relations.
+The theory and practice of human relations.
 
 You can get the student workbook [here](https://drive.google.com/file/d/1029Z_9NdRYn2Q9TH2sFLJrMtlVhMy_0O/view?usp=drivesdk).

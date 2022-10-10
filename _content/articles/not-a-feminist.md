@@ -16,7 +16,6 @@ tags:
   - ideology
 year: 2018
 journal: "Work and Occupations"
-publisher: mit
 volume: 45
 number: 2
 pages: "131--167"
