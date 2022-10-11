@@ -158,6 +158,10 @@ a.btn:visited {
 figure figcaption {
     width: 100%;
     text-align: center;
+    p {
+        max-width: 40em;
+        margin: auto;
+    }
     p.attribution {
         font-size: 90%;
         margin-bottom: 3px;
