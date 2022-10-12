@@ -14,7 +14,7 @@ tags:
   - power
   - engaged
   - karma
-  - west
+  - academic
   - world
 base_value: 2.25
 year: 1937

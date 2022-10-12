@@ -10,7 +10,7 @@ course: wider
 tags:
   - capitalism
   - economics
-  - west
+  - the-west
   - ecology
 year: 2017
 publisher: "University of California Press"
