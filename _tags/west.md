@@ -19,4 +19,4 @@ image_center_x: 35%
 image_center_y: 60%
 ---
 
-European society encounters Buddhism.
+The encounter between Europeans and the Dharmic cultures of Asia.

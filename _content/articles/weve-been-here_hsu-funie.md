@@ -2,7 +2,8 @@
 title: "We've Been Here All Along"
 authors:
   - "Funie Hsu"
-external_url: "https://tricycle.org/magazine/what-weve-been-all-along/"
+external_url: "https://www.huffpost.com/entry/weve-been-here-all-along_b_5a1324d7e4b0bfa88c1c1dc3"
+source_url: "https://www.lionsroar.com/weve-been-here-all-along/"
 drive_links:
   - "https://drive.google.com/file/d/1Zcnr-R8PIv1jKKURFPCiTaTAxoOV27Aj/view?usp=drivesdk"
 status: featured # hopefully banal someday
