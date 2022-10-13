@@ -8,7 +8,7 @@ authors:
 subcat: podcast
 external_url: "https://www.bbc.co.uk/programmes/p00547bk"
 status: featured
-course: west # solidly
+course: the-west # solidly
 tags:
   - ideology
   - education
