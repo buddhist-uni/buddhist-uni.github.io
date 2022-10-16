@@ -46,6 +46,8 @@ test_cases:
     - [piranesi_clarke-susanna, no-one-belongs-here-more-than-you_july-miranda]
     - [yasodhara_sasson-v, wife-and-son_gindin-matthew]
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
+    - [chithurst-story_sharp-george, comes-to-sussex_bbc]
+    - [kalmyks_dhammika, siberian-revival_journeyman]
 ---
 
 A series of integration tests for the quality of the content recommendations.
