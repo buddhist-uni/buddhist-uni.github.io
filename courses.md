@@ -9,7 +9,7 @@ custom_css: [courselist]
 permalink: /courses/
 next_link: /courses/buddhism
 image_width: 1280
-image: "https://illeakyw.sirv.com/Images/banners/burmese-nuns-studying.jpg"
+image: "https://www.buddhistuniversity.net/imgs/burmese-nuns-studying.jpg"
 image_center_x: 20%
 image_center_y: 46%
 big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg"
@@ -59,7 +59,6 @@ This site may use cookies to enhance your experience, but you can turn this off 
 {% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
 {% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
 <h3 {{onclick}} class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
-
 <div class="coursedesc">
   <div class="descrow">
     <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>

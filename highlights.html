@@ -2,7 +2,7 @@
 title: Highlights
 section: library
 permalink: /library/highlights
-image: https://illeakyw.sirv.com/Images/banners/Kyoto-temple.jpg
+image: "https://www.buddhistuniversity.net/imgs/Kyoto-temple.jpg"
 big_image: https://upload.wikimedia.org/wikipedia/commons/3/3d/Nanzen-ji%2C_a_Zen_Buddhist_temple%2C_and_its_surroundings%2C_Kyoto%3B_November_2016_%2801%29.jpg
 image_width: 1280
 image_center_y: 53%
@@ -21,7 +21,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 </ul>
 
 {% if site.show_timestamps %}
-<h2 id="latest">Latest Arrivals</h2>
+<h2 id="latest"><i class="fas fa-clock"></i> Latest Arrivals</h2>
 <p>Just added to the library:</p>
 {% assign newc = allcontent | sort: "date" | reverse | slice: 0, 20 %}
 {% for c in newc %}
@@ -48,11 +48,11 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
     {% endif %}
   {% endfor %}
 {% endfor %}
-<h2 id="recent">Recently Published</h2>
+<h2 id="recent"><i class="fas fa-calendar-week"></i> Recently Published</h2>
 <p>Within the last couple years.</p>
 {% include content_list.html contents=featurecontent orderby="-date" %}
 
-<h2 id="bestof">Featured Selections</h2>
+<h2 id="bestof"><i class="fas fa-medal"></i> Featured Selections</h2>
 <p>A couple works are selected as the cream of the crop each year.</p>
 {% capture fe %}c.year < {{ lastyear }}{% endcapture %}
 {% assign fcon = allcontent | where: "status", "featured" | where_exp: "c", fe %}
@@ -71,4 +71,3 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% for c in y.items %}
 <div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
 {% endfor %}
-

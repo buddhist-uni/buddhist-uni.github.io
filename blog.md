@@ -5,7 +5,7 @@ slug: blog
 rss_url: feed.xml
 layout: home
 list_title: "Updates"
-image: "https://illeakyw.sirv.com/Images/banners/monk-slap.jpeg"
+image: "https://www.buddhistuniversity.net/imgs/monk-slap.jpeg"
 image_width: 1280
 image_center_x: 48%
 image_center_y: 26%
@@ -23,4 +23,3 @@ Footnotes:
 [^drive]: For a preview of what's coming next, check out [the Google Drive folder](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}.
 
 [^changes]: For a full list of changes to the library, <a target="_blank" href="https://github.com/buddhist-uni/buddhist-uni.github.io/commits/master/_content">see GitHub</a>
-
