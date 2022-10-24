@@ -6,7 +6,7 @@ permalink: /library/
 next_link: /tags/
 rss_url: /feed/content.xml
 rss_title: "All Library Content"
-image: "https://illeakyw.sirv.com/Images/banners/nostalgic-gate.jpeg"
+image: "https://www.buddhistuniversity.net/imgs/nostalgic-gate.jpeg"
 image_width: 1280
 image_center_x: 50%
 image_center_y: 37%

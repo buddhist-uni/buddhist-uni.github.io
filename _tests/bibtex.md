@@ -29,3 +29,11 @@ Test is valid (content has series but no publisher or address): {% if testc.publ
 Bibtex pulls publisher from series: {% if bib contains "publisher={" %}Pass ✅{% else %}FAIL ❌{% endif %}  
 Bibtex makes this a book (due to having a publisher): {% if bib contains "@book{" %}Pass ✅{% else %}FAIL ❌{% endif %}  
 Bibtex pulls the address from the publisher: {% if bib contains "address={" %}Pass ✅{% else %}FAIL ❌{% endif %}  
+
+{% assign testc = site.content | find: "url", "/content/articles/anagarika-munindra-and-vipassana_pryor" %}
+```
+{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+```
+
+Test is valid (piece has doi source): {% if testc.source_url contains "doi.org" %}Pass ✅{% else %}FAIL ❌{% endif %}  
+Bibtex pulls doi from source: {% if bib contains "doi={" %}Pass ✅{% else %}FAIL ❌{% endif %}  

@@ -2,7 +2,7 @@
 title: About
 slug: about
 permalink: /about/
-image: "https://illeakyw.sirv.com/Images/banners/lost-monks.jpeg"
+image: "https://www.buddhistuniversity.net/imgs/lost-monks.jpeg"
 image_width: 1024
 image_center_x: 80%
 image_center_y: 18%
