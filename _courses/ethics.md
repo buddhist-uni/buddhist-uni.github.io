@@ -123,7 +123,6 @@ A free version is linked above, but there are a number of better (copyrighted) t
 
 {% include content_blurb.html category="av" slug="buddhist-ethics-and-the-bodhicariyavatara_garfield" %}
 - Philosopher Jay Garfield talks about how he got into Buddhism from Western philosophy and shares with us what he finds so compelling about this particular text.
-- His lectures on the book compliment this course extremely well and are recommended alongside the material listed below. They can be purchased [online here](https://www.buddhiststudiesonline.com/bso-201){:target="_blank"}.
 
 Your chosen translation of the text may have a good introduction and, if so, you may want to read that now. But if not, this introduction is good for our purposes:
 

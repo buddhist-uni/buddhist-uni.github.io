@@ -10,7 +10,6 @@ drive_links: ["https://drive.google.com/file/d/19kpB0yd1VqalIEsrZMTMzew2TwxqIuFK
 course: form
 tags:
   - ethics
-  - west
   - academic
   - karma
 ---

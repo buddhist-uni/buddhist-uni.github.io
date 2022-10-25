@@ -78,13 +78,11 @@
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
     .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
-    {% if page.image_width > site.data.banner.double_size %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ page.sirv_options | default: site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }{% endif %}
-    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }{% endif %}
-  </style>
-  {% endif %}
+    {% if page.image_width > site.data.banner.double_size and page.image contains ".sirv.com/" %}{% if page.image_center_x %}{% assign cx = page.image_width | minus: site.data.banner.double_size | times: page.image_center_x | divided_by: 100 | round %}{% else %}{% assign cx = "center" %}{% endif %}@media(max-width: {{ site.data.banner.max_size | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?cw={{ site.data.banner.double_size }}px&cx={{ cx | default: "0" }}{% if site.data.banner.sirv_options %}&{{ page.sirv_options | default: site.data.banner.sirv_options }}{% endif %}"), {{ site.data.banner.loading_state }}; } }
+    {% endif %}{% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }
+  {% endif %}</style>{% endif %}
 </head>
-
-  <body>
+<body>
 <a class="skip-to-main" href="#main">Skip to content</a>
 
 <header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% elsif site.header_pages contains page.path %} smallsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
@@ -142,7 +140,5 @@
   </div>
 
 </footer>
-
-  </body>
-
+</body>
 </html>

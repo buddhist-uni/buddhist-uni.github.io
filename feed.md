@@ -2,7 +2,7 @@
 title: RSS Feeds
 section: blog
 permalink: /feed
-image: https://illeakyw.sirv.com/Images/banners/origami.jpg
+image: "https://www.buddhistuniversity.net/imgs/origami.jpg"
 sirv_options: blur=2
 big_image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Origami_%2813777498043%29.jpg
 image_width: 1280

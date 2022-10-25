@@ -466,6 +466,9 @@ Allison Goodwin gives a brief outline of the discrimination faced by women in Bu
 {% include content_blurb.html category="av" slug="zen-on-meditation_fischer-norman" %}
 - A Zen priest from California introduces us to his community and way of practice.
 
+{% include content_blurb.html category="articles" slug="effects-of-mindfulness-intervention_chiodelli-et-al" %}
+- A major trend in Western adoption of Buddhist practices is the scientific study of meditation as a secular, therapeutic tool.
+
 {% include content_blurb.html category="av" slug="bridging-the-two-vehicles_bodhi" %}
 - As the Dhamma comes West, and globalization connects us all, we have a unique opportunity now to bridge the gaps that history and geography created... but only if we choose to do so.
 
