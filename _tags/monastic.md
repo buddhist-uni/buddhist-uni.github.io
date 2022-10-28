@@ -8,7 +8,7 @@ illustration_center_y: 37%
 illustration_center_x: 70%
 illustration_height: 1080
 illustration_width: 720
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:Dharamsala_(North_India)_(393088878).jpg">Steve Evans</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>
+illustration_caption: A Tibetan nun in Dharmasala, Indian holds a colorful umbrella to shield herself from the sun. (<a href="https://commons.wikimedia.org/wiki/File:Dharamsala_(North_India)_(393088878).jpg">Steve Evans</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en">CC BY 2.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/meditating_monk.jpg
 image_width: 1280
 image_center_y: 100%
