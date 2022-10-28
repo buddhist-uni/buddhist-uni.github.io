@@ -7,4 +7,4 @@ subcats:
   - fiction
 ---
 
-Usually copyrighted/commercial works, monographs are distinct from [booklets]({% link _categories/booklets.md %}) in that they were not self-published. They tend to be longer and more rigorously edited, though this is certainly not always the case.
+Monographs are books. They are distinct from [booklets]({% link _categories/booklets.md %}) in that they were professionally published. They tend to be copyrighted, longer and more thoroughly edited than booklets, but this is not always the case.
