@@ -7,6 +7,7 @@ external_url: "https://www.theguardian.com/global-development/2020/dec/07/uganda
 drive_links:
   - "https://drive.google.com/file/d/1kX_0ldrg4IIORHBeBR5matQetD-s7rTn/view?usp=drivesdk"
 course: west
+status: featured
 tags:
   - african
   - uganda

@@ -5,6 +5,7 @@ authors:
 subcat: podcast
 editor: "Scott Mitchell"
 external_url: "https://newbooksnetwork.com/lori-meeks-hokkeji-and-the-reemergence-of-female-monastic-orders-in-premodern-japan-university-of-hawaii-press-2010"
+status: featured
 course: nuns
 tags:
   - japanese # maybe to japanese-roots
