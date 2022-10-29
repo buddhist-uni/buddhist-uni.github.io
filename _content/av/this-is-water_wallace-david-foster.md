@@ -2,8 +2,7 @@
 title: "This is Water"
 authors:
   - "David Foster Wallace"
-external_url: "https://youtu.be/PhhC_N6Bm_s"
-source_url: "https://fs.blog/david-foster-wallace-this-is-water/"
+external_url: "https://fs.blog/david-foster-wallace-this-is-water/"
 drive_links:
   - "https://drive.google.com/file/d/1NE8pAYtsa3DrZpvwlvTaW2w3zHWTPbqo/view?usp=drivesdk"
 status: featured
