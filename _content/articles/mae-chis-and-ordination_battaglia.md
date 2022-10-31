@@ -6,6 +6,7 @@ external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/02/JBE-Batt
 drive_links:
   - "https://drive.google.com/file/d/1GtAEzCDYk7_kHdF25o4pQ1xARhtZJyv5/view?usp=drivesdk"
 course: nuns
+status: featured
 tags:
   - thai
 year: 2015

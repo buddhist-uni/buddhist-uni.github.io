@@ -9,6 +9,7 @@ formats:
 drive_links:
   - "https://drive.google.com/file/d/11mZCrNZHA8WiOGB9v05sgxmy9CDBSCpJ/view?usp=drivesdk"
 external_url: "https://www.voathai.com/a/in-ordination-bhikkhunis-seek-equality-documentary/6288747.html"
+status: featured
 course: nuns
 tags:
   - thai

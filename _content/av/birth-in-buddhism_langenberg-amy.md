@@ -3,6 +3,7 @@ title: "Birth in Buddhism (Interview)"
 subcat: podcast
 authors:
   - langenberg-amy
+status: featured
 external_url: "https://newbooksnetwork.com/amy-langenberg-birth-in-buddhism-the-suffering-fetus-and-female-freedom-routledge-2017/"
 course: nuns
 tags:
