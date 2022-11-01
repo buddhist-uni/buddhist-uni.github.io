@@ -14,6 +14,7 @@ tags:
   - japan
   - soto
   - craft
+  - memoir
   - ambulit
   - pottery
   - yakimono

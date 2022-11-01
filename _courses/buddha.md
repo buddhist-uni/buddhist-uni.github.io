@@ -109,6 +109,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [E] The Buddha's Family
 1. {% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}
 
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="snp3.1" %}{% endcapture %}{{ foo | strip_newlines }} (Bhante Sujato's translation here is <a href="https://discourse.suttacentral.net/t/snp-3-1-pabbajjasutta-the-going-forth/26844?u=khemarato.bhikkhu" target="_blank">preferred</a> to Ñanamoli's below)
 1. [Life] The Struggle for Enlightenment
 1. [[Bodhisattva Ideal - Analayo](#genesis-of-bodhisattva_analayo)] Chapter 1: Gautama as a Bodhisattva
 
