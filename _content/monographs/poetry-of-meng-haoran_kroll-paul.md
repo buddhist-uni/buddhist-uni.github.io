@@ -11,9 +11,9 @@ drive_links:
   - "https://drive.google.com/file/d/1b2Vd2xVtb9T1RwtnFFVSR0LEbQuQbeNy/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1b5CENsmbx5Hinm3nbkABxNdn91v36duG/view?usp=drivesdk"
 status: featured
-course: chan
+course: chan-lit
 tags:
-  - chan-lit
+  - chan
   - chan-roots
 year: 2021
 month: jul
