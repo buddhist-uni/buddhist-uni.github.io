@@ -8,7 +8,7 @@ illustration_width: 1280
 illustration_center_x: 62%
 illustration_center_y: 40%
 illustration_height: 853
-illustration_info: <a href="https://commons.wikimedia.org/wiki/File:POP_House_Meditaiton_Center_Thailand,_Khlong_Luang_,_Thailand_(Unsplash).jpg">Kosal Ley</a>, Public Domain
+illustration_caption: A laywoman meditates on a wooden deck overlooking a pond in central Thailand in 2017. (Photo by <a href="https://commons.wikimedia.org/wiki/File:POP_House_Meditaiton_Center_Thailand,_Khlong_Luang_,_Thailand_(Unsplash).jpg">Kosal Ley</a>)
 image: https://illeakyw.sirv.com/Images/banners/Chinese_laywoman_offers_incense.jpg
 image_width: 1280
 image_height: 960

@@ -243,6 +243,9 @@ details.banner-info {
     summary {
         font-size: 14px;
         text-align: center;
+        &:hover {
+            text-shadow: 2px 2px 2px black;
+        }
     }
     div a {
         color: white;
@@ -562,8 +565,9 @@ div.featured_content_list {
     }
 
     .content_title {
-        font-size: 105%;
+        font-size: 107%;
         font-weight: 500;
+        line-height: 1.2;
     }
     
     .star_label {

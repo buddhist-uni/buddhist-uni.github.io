@@ -117,8 +117,13 @@ div.similar_content_footer {
     border-top: 1px solid $grey-color;
     padding: 16px 0px;
     margin-top: 26px;
-    ul li {
-        padding-bottom: 8px;
+    ul {
+        list-style: none;
+        margin-left: 1px;
+        li {
+            padding-top: 3px;
+            padding-bottom: 8px;
+        }
     }
 }
 

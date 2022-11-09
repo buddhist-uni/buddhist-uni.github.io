@@ -3,6 +3,7 @@ title: "Pennies From the Pure Land: Practicing the Dharma, Hanging Out, and Rais
 authors:
   - "Jeff Wilson"
 external_url: "https://www.globalbuddhism.org/article/view/2002"
+status: featured
 drive_links:
   - "https://drive.google.com/file/d/1KlUgO1TKBAm21vj144T2yMevOd1hDtgG/view?usp=drivesdk"
 course: west

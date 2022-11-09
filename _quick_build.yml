@@ -36,7 +36,6 @@ exclude:
     - _authors/shi-zhiru.md
     - _authors/gangshar.md
     - _authors/bjornerud.md
-    - _authors/chandako.md
     - _authors/elverskog.md
     - _authors/ichimura-s.md
     - _authors/kearney-patrick.md
@@ -191,7 +190,6 @@ exclude:
     - _content/av/buddhism-beyond-modernity_gleig-a.md
     - _content/essays/abhidharma-praise_rongton.md
     - _content/papers/maritime-route-to-china_willemen-charles.md
-    - _content/monographs/buddhist-thought_williams-paul.md
     - _content/monographs/early-buddhist-transmission_neelis-jason.md
     - _content/monographs/history-of-buddhist-philosophy_kalupahana.md
     - _content/monographs/fa-hsien.md
@@ -241,7 +239,6 @@ exclude:
     - _content/av/secret-identity_tal.md
     - _content/booklets/spirit-of-jihi_horide-ichirou.md
     - _content/av/let-there-be-conflicts_sujato.md
-    - _content/canon/dn13.md
     - _content/articles/beginnings-of-the-buddhas-teachings-according-to-the-ea_bareau-andre.md
     - _content/articles/burmese-manuscripts-in-the-loc_pruitt-william.md
     - _content/articles/caveat-lector_cone-margaret.md
@@ -466,7 +463,6 @@ exclude:
     - _content/canon/thag19.1.md
     - _content/monographs/humankind_bregman-rutger.md
     - _content/monographs/paradise-built-in-hell_solnit-rebecca.md
-    - _content/av/why-do-men-rule_factually.md
     - _content/canon/mn59.md
     - _content/articles/person-as-narration_hershock.md
     - _content/av/seen-and-not-heard_lone-jana.md
@@ -475,4 +471,32 @@ exclude:
     - _content/articles/identity-politics_heyes-cressida.md
     - _content/canon/mn50.md
     - _content/canon/mn52.md
+    - _content/papers/encountering-impermanence-making-change_cassaniti-julia.md
+    - _content/av/chinese-buddhist-historeography_kieschnick.md
+    - _content/av/critical-race-theory-comics-and-schools_ewing-eve.md
+    - _content/papers/caring-for-the-social_geismar-h.md
+    - _content/articles/modern-japanese-buddhology_kiyota.md
+    - _content/articles/historical-turn_deeg-max.md
+    - _content/av/japanese-world-map_moerman-max.md
+    - _content/essays/obon_bloom.md
+    - _content/av/sounds-worth-saving_corbitt-fil.md
+    - _content/av/why-work_suzman.md
+    - _content/monographs/critical-theory-of-communication_fuchs.md
+    - _content/av/orwells-love-of-nature_solnit.md
+    - _content/articles/second-chance_malcolm-janet.md
+    - _content/av/diversity-and-karma_sheng-yen.md
+    - _content/essays/community-building_chandako.md
+    - _content/articles/being-stared-at_sheldrake-rupert.md
+    - _content/articles/not-a-feminist.md
+    - _content/monographs/interpersonal-communication.md
+    - _content/av/stories-your-mind-is-telling_aviv-rachel.md
+    - _content/av/humanism_in-our-time.md
+    - _content/av/forest-of-the-blind_king-matthew.md
+    - _content/articles/networking_xie-teresa.md
+    - _content/excerpts/brahmanacaranas_wijesekera.md
+    - _content/monographs/buddhist-and-vedic-studies_wijesekera.md
+    - _content/av/gut-instinct_gould-mark.md
+    - _content/excerpts/discoid-weapons_wijesekera.md
+    - _content/canon/sn10.4.md
+    - _content/canon/thag7.2.md
 

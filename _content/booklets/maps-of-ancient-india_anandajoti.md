@@ -9,6 +9,8 @@ source_url: "https://drive.google.com/file/d/1lajl2MtmzS5Yfk1uqeMb1E_zX3DpH_Gp/v
 course: indian
 tags:
   - setting
+  - setting-maps
+  - maps
   - medieval
 year: 2012
 base_value: 1.5

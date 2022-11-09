@@ -14,6 +14,7 @@ var RMAX = 100;
 {%- assign doubleo = ocurly | append: ocurly -%}
 {%- assign doublec = ccurly | append: ccurly -%}
 {%- assign pagesWithoutContent = 'Authors,Highlights,Search' | split: ',' -%}
+{%- assign emptylist = '' | split: '' -%}
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}
@@ -22,7 +23,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
         "description": {{ p.description | markdownify | strip_html | normalize_whitespace | jsonify }},
-        "tags": {{ p.tags | unshift: p.course | join: ' ' | jsonify }},
+        "tags": {{ p.tags | default: emptylist | unshift: p.course | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.layout == 'imagerycoursepart' %}1.5{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
@@ -48,7 +49,7 @@ var idx = lunr(function () {
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator),
-            'tag': v.tags, 'description': utils.unaccented(v.description),
+            'tag': v.tags.join(' '), 'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }
@@ -185,6 +186,16 @@ function displaySearchResult(result, item) {
     if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
         addMatchHighlights(result, item.translator, 'translator') +
         '</span>';
+    if (resultMatched(result, 'tag')) {
+        lc = 0;
+        for (var i in item.tags) {
+            if (!item.tags[i]) continue;
+            let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
+                addMatchHighlights(result, item.tags[i].replace('-',' '), 'tag', lc, lc + item.tags[i].length) + '</span>';
+            if (t.includes('<strong>')) ret += t;
+            lc += 1 + item.tags[i].length;
+        }
+    }
     return ret + '<p>' + blurb + '</p></li>';
 }
 

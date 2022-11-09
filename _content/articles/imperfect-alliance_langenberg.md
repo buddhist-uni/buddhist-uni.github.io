@@ -11,6 +11,7 @@ tags:
   - feminism
 year: 2018
 month: jun
+status: featured
 journal: Religions
 publisher: MDPI
 volume: 9

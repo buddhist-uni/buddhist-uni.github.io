@@ -14,13 +14,13 @@
       "relation": "compiles",
       "identifier": "https://www.buddhistuniversity.net"
     },{
-      "relation": "isDerivedFrom",
+      "relation": "isPreviousVersionOf",
       "identifier": "https://github.com/buddhist-uni/buddhist-uni.github.io"
     },{
-      "relation": "references",
+      "relation": "requires",
       "identifier": "https://doi.org/10.5281/zenodo.4450047"
     },{
-      "relation": "references",
+      "relation": "requires",
       "identifier": "https://doi.org/10.5281/zenodo.4740012"
     },{
       "relation": "isSupplementTo",

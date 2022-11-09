@@ -7,6 +7,7 @@ external_url: "https://jasonespada.com/wp-content/uploads/2017/11/Teachings-on-M
 drive_links:
   - "https://drive.google.com/file/d/1-Hi2FXlzdi41GfBrkFg-VYZCW6znlD1O/view?usp=drivesdk"
 course: meditation
+status: featured
 year: 2017
 month: nov
 address: "San Francisco"
