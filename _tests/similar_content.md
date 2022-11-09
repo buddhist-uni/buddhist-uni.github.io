@@ -48,6 +48,7 @@ test_cases:
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
     - [chithurst-story_sharp-george, comes-to-sussex_bbc]
     - [kalmyks_dhammika, siberian-revival_journeyman]
+    - [map-of-jambudipa, maps-of-ancient-india_anandajoti]
 ---
 
 A series of integration tests for the quality of the content recommendations.

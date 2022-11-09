@@ -6,5 +6,4 @@ similars:
   - monographs
 ---
 
-Any reference materials or tools for digital Buddhist scholars will be listed here.
-
+Reference materials and tools for digital scholars.

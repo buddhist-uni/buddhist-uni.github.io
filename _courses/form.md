@@ -502,6 +502,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="av" slug="mindfulness-for-the-whole-family_kim-sumi" %}
 - What is it like to grow up in a Buddhist community? What does it take to _make_ a Buddhist community?
 
+{% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
+- Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
+
 {% include content_blurb.html category="essays" slug="cultural-buddhism_yuttadhammo" %}
 - Should Buddhism in the West try to strip away "Cultural Buddhism" or preserve it?
 

@@ -26,6 +26,10 @@
     font-weight: normal;
 }
 
+summary.RatingLabel:hover {
+    box-shadow: 0px 0px 6px 0px slategray;
+}
+
 .RatingLabel-1 {
     @extend .RatingLabel;
     background-color: $danger-color;

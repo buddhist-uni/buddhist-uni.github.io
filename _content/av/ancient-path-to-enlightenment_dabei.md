@@ -3,8 +3,11 @@ title: "The Ancient Path To Enlightenment"
 authors:
   - "Da Bei Shan"
 subcat: film
-status: "rejected"
-reason: "No longer available 😞"
+external_url: https://youtube.com/playlist?list=PLMjTvqiiqwH1dUXK142N-S1aslFd6cT1O
+formats: [mp4s]
+drive_links:
+  - "https://drive.google.com/drive/folders/1NSf-SlWu46FQbYb1CvEu5ifJzkMbebe9"
+status: featured
 course: tudong
 tags:
   - chinese
@@ -12,9 +15,9 @@ tags:
   - pilgrimage
   - monastic-mahayana
   - monastic
+  - modern
 year: 2014
+minutes: 350
 ---
 
 A documentary series about monks in China sincerely practicing *dhutaṅga*.
-
-Sadly, the YouTube video was taken down. If you find another link, please send me an email below. 😁

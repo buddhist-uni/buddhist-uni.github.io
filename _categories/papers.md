@@ -6,5 +6,4 @@ similars:
   - articles
 ---
 
-Papers are short-to-medium length pieces of writing originally published in an edited collection, often after being presented at a conference. For self-published papers, see [essays]({% link _categories/essays.md %}) and for papers published in journals, see [articles]({% link _categories/articles.md %}).
-
+Papers are short-to-medium length pieces of writing that were published in an edited volume collecting works by many authors. For self-published papers, see [essays]({% link _categories/essays.md %}). For papers published in academic journals, see [articles]({% link _categories/articles.md %}). For papers published in a collection by a single author, see [excerpts](/content/excerpts).

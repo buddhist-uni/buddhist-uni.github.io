@@ -6,7 +6,7 @@ illustration_width: 678
 illustration_height: 1024
 illustration_center_x: 43%
 illustration_center_y: 60%
-illustration_info: <a href="https://commons.m.wikimedia.org/wiki/File:Divine_Flower_Blossom_(3026020722).jpg">THOR</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
+illustration_caption: <a href="https://commons.m.wikimedia.org/wiki/File:Divine_Flower_Blossom_(3026020722).jpg">"Divine Flower Blossom"</a> is a composite, monochrome artwork depicting cherry blossoms in negative over a close portrait of a Japanese Buddha statue. The entrance of the mind into stillness has <a href="http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Kuge_Flowers.htm">often</a> been compared to the delicate blooming of a flower.
 image: https://illeakyw.sirv.com/Images/banners/peaceful_waterfall.jpg
 image_width: 1280
 image_height: 853
