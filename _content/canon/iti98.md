@@ -10,7 +10,7 @@ tags:
   - dana
   - things
   - monastic-advice
-year: 2020
+year: 2017
 ---
 
 > there are these two kinds of gifts: a gift of material things & a gift of the Dhamma
