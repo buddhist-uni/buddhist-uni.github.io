@@ -4,7 +4,7 @@ authors:
   - sujato
 external_url: "https://discourse.suttacentral.net/t/on-deeds-of-war-both-bright-and-dark/26971?u=khemarato.bhikkhu"
 drive_links:
-  - "https://docs.google.com/document/d/1aDcrZstDdx8b6rn8j_Byc5hc12NyT0RGNYAmMXagvQk/edit?usp=drivesdk"
+  - "https://drive.google.com/open?id=1aDcrZstDdx8b6rn8j_Byc5hc12NyT0RGNYAmMXagvQk"
 formats: [GDoc]
 status: featured
 course: ethics
