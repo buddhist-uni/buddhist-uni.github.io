@@ -50,7 +50,7 @@ module Jekyll
         {c: 'fas fa-street-view', n: 'person in a circle', t: 'course', d: 'is about the Pure Land and its context'},
         {c: 'fas fa-person-circle-exclamation', n: 'person with an exclamation mark', t: 'course', d: 'is about how humans respond to their environment'}
     ]
-    @@operations = @@icons.map { |icon| {regex: Regexp.new('<i class="'+icon[:c]+'"'), replacement: '<i aria-hidden="true" title="This '+icon[:n]+' lets you know that the '+icon[:t]+' '+icon[:d]+'." class="'+icon[:c]+'"'} }
+    @@operations = @@icons.map { |icon| {regex: Regexp.new('<i class="'+icon[:c]+'"'), longreplacement: '<i aria-hidden="true" title="This '+icon[:n]+' lets you know that the '+icon[:t]+' '+icon[:d]+'." class="'+icon[:c]+'"', replacement: '<i aria-hidden="true" title="'+icon[:d]+'." class="'+icon[:c]+'"'} }
     def addicontips(inp)
       ret = inp
       for icon in @@operations
