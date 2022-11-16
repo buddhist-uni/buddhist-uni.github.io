@@ -73,7 +73,7 @@
     </script>
     <script async src="/assets/js/autotrack.js"></script>
   {%- endif -%}{%- if page.banner_info or page.footer_info -%}
-  {%- capture infobutton -%}<details class="banner-info details-reset"><summary><i class="fab fa-creative-commons"></i></summary><div>Photo by {{ page.banner_info | default: page.footer_info }}</div></details>{%- endcapture -%}
+  {%- capture infobutton -%}<details class="banner-info details-reset"><summary><i class="fab fa-creative-commons" aria-hidden="true" title="Click me to see this picture's copyright information."></i></summary><div>Photo by {{ page.banner_info | default: page.footer_info }}</div></details>{%- endcapture -%}
   <style>
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
@@ -100,7 +100,7 @@
 
     <main class="page-content" aria-label="Content">
       <div id="main" tabindex="-1" class="wrapper">
-        {{ content | replace: 'target="_blank"', 'target="_blank" rel="noopener"' }}
+        {{ content | replace: 'target="_blank"', 'target="_blank" rel="noopener"' | addicontips }}
       </div>
     </main>
 
