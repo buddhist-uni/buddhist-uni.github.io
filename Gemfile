@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", github: "buddhist-uni/jekyll", ref: '2e0b8d34'
+gem "jekyll", "~> 4.2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -25,7 +25,6 @@ end
 
 # For my own ruby code
 gem "priority_queue_cxx", "~> 0.3.4"
-gem "parallel", "~> 1.22"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
