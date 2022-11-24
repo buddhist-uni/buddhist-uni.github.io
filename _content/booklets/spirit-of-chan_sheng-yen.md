@@ -4,7 +4,6 @@ authors:
   - sheng-yen
 editor: "Guo Gu"
 external_url: "https://chancenter.org/download/free-books/In-the-Spirit-of-Chan.pdf"
-alternate_url: "https://holybooks-lichtenbergpress.netdna-ssl.com/wp-content/uploads/In-the-Spirit-of-Chan-An-Introduction-to-Chan-Buddhism.pdf"
 drive_links:
   - "https://play.google.com/store/books/details?id=0JdABAAAQBAJ"
   - "https://drive.google.com/file/d/1g2iRgRTqI37Hni7ZsFGmrx4xa9F25S2x/view?usp=drivesdk"
