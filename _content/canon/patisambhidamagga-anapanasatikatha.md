@@ -21,3 +21,5 @@ base_value: 0.4
  commentary on Buddhist meditation available in an Indic language
  
 The Path of Discrimination was a key influence on later meditation manuals (such as the medieval [*Visuddhimagga*](/content/canon/vsm_buddhaghosa)) and is the oldest such commentary in existence, giving us a rare insight into the early Indian commentarial and meditation traditions.
+
+For a translation of the entire Paṭisambhidāmagga, see [SuttaCentral](https://suttacentral.net/pitaka/sutta/minor/kn/ps){:target="_blank" ga-event-value="1"}
