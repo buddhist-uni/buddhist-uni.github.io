@@ -6,7 +6,7 @@ authors:
 external_url: "https://99percentinvisible.org/episode/heyoon"
 course: age
 tags:
-  - place
+  - places
   - world
   - michigan
 year: 2013
