@@ -11,7 +11,7 @@ tags:
   - education
   - becon
   - america
-  - age
+  - childhood
   - problems
 series: revisionist-history
 status: featured
