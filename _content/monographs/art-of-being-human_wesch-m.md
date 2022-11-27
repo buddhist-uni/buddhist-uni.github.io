@@ -11,7 +11,7 @@ tags:
   - ideology
   - places
   - anthropology
-  - ageing
+  - aging
 year: 2018
 olid: OL37544427M
 publisher: "New Prairie Press"
