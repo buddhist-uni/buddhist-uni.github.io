@@ -16,7 +16,7 @@ jobs:
              echo "YJIT=${{ env.YJIT }}"
              echo "TRUFFLE=${{ env.TRUFFLE }}"
          - name: Checkout the Code
-           uses: actions/checkout@v2
+           uses: actions/checkout@v3
            with:
              fetch-depth: 0
          - name: Normalize Unicode in the Previous Commit
@@ -30,13 +30,13 @@ jobs:
          - run: npm ci
          - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
-           if: ${{ !env.TRUFFLE }}
+           if: ${{ env.TRUFFLE == 'false' }}
            uses: ruby/setup-ruby@v1
            with:
              ruby-version: 3.1
              bundler-cache: true
          - name: Install fancy build requirements
-           if: ${{ env.TRUFFLE }}
+           if: ${{ env.TRUFFLE == 'true' }}
            uses: ruby/setup-ruby@v1
            with:
              ruby-version: truffleruby
@@ -47,8 +47,9 @@ jobs:
             mkdir $BUILD_DIR
             cd $GITHUB_WORKSPACE
             HASH="$(git log -n 1 --format=%H)"
-            echo "Building $HASH into $BUILD_DIR ..."
-            if $YJIT; then  export RUBYOPT="--enable=yjit";  echo "Will try to use YJIT..."; fi
+            echo "Building $HASH into $BUILD_DIR with:"
+            if $YJIT; then  export RUBYOPT="--enable=yjit"; fi
+            ruby --version
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
             echo "Purging unused css..."
             shopt -s globstar
