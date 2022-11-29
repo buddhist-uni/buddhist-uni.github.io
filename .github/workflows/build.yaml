@@ -7,7 +7,14 @@ on:
 jobs:
    Jekyll:
      runs-on: ubuntu-latest
+     env:
+         YJIT: ${{ endswith(github.run_number,'0') || endswith(github.run_number,'3') || endswith(github.run_number,'6') || endswith(github.run_number,'8') }}
+         TRUFFLE: ${{ endswith(github.run_number,'1') || endswith(github.run_number,'4') || endswith(github.run_number,'7') }}
      steps:
+         - name: Print Env Vars
+           run: |
+             echo "YJIT=${{ env.YJIT }}"
+             echo "TRUFFLE=${{ env.TRUFFLE }}"
          - name: Checkout the Code
            uses: actions/checkout@v2
            with:
@@ -23,9 +30,16 @@ jobs:
          - run: npm ci
          - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
+           if: ${{ !env.TRUFFLE }}
            uses: ruby/setup-ruby@v1
            with:
-             ruby-version: 3.0
+             ruby-version: 3.1
+             bundler-cache: true
+         - name: Install fancy build requirements
+           if: ${{ env.TRUFFLE }}
+           uses: ruby/setup-ruby@v1
+           with:
+             ruby-version: truffleruby
              bundler-cache: true
          - name: Build the site
            run: |
@@ -34,6 +48,7 @@ jobs:
             cd $GITHUB_WORKSPACE
             HASH="$(git log -n 1 --format=%H)"
             echo "Building $HASH into $BUILD_DIR ..."
+            if $YJIT; then  export RUBYOPT="--enable=yjit";  echo "Will try to use YJIT..."; fi
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
             echo "Purging unused css..."
             shopt -s globstar
