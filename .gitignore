@@ -5,6 +5,7 @@ _data/cssCacheToken.yml
 _site
 .trash
 .obsidian
+.bundle
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
