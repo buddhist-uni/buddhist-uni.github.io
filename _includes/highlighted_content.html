@@ -6,7 +6,7 @@
   {%- if include.content.course -%}
     {% assign course = site.courses | find: "slug", include.content.course %}
     {%- if course -%}
-        <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"</em></div>
+        <div class="course_link"><em>Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i class="{{ course.icon }}" style="font-style: italic;"></i> {{ course.title }}</a>"</em></div>
     {%- endif -%}
   {%- endif -%}
 </div>

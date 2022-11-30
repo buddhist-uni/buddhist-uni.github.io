@@ -574,6 +574,8 @@ Listen to this alongside the section of Khantipalo about refuge and the triple g
 {:.mb-0}
 - The path starts with faith.
 
+{% include content_blurb.html category="canon" slug="vv7.11" %}
+
 
 ##### Practicing Restraint
 

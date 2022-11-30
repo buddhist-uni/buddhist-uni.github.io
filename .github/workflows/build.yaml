@@ -7,9 +7,20 @@ on:
 jobs:
    Jekyll:
      runs-on: ubuntu-latest
+     env:
+         YJIT: ${{ endswith(github.run_number,'1') || endswith(github.run_number,'3') || endswith(github.run_number,'8') }}
+         MJIT: ${{ endswith(github.run_number,'0') || endswith(github.run_number,'5') }}
+         TRUFFLEVM: ${{ endswith(github.run_number,'9') || endswith(github.run_number,'6') }}
+         TRUFFLE: ${{ endswith(github.run_number,'2') || endswith(github.run_number,'4') || endswith(github.run_number,'7') }}
      steps:
+         - name: Print Env Vars
+           run: |
+             echo "YJIT=${{ env.YJIT }}"
+             echo "MJIT=${{ env.MJIT }}"
+             echo "TRUFFLE=${{ env.TRUFFLE }}"
+             echo "TRUFFLEVM=${{ env.TRUFFLEVM }}"
          - name: Checkout the Code
-           uses: actions/checkout@v2
+           uses: actions/checkout@v3
            with:
              fetch-depth: 0
          - name: Normalize Unicode in the Previous Commit
@@ -23,9 +34,22 @@ jobs:
          - run: npm ci
          - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
+           if: ${{ env.TRUFFLE == 'false' && env.TRUFFLEVM == 'false' }}
            uses: ruby/setup-ruby@v1
            with:
-             ruby-version: 2.6
+             ruby-version: 3.1
+             bundler-cache: true
+         - name: Install really fancy build requirements
+           if: ${{ env.TRUFFLEVM == 'true' }}
+           uses: ruby/setup-ruby@v1
+           with:
+             ruby-version: truffleruby+graalvm
+             bundler-cache: true
+         - name: Install fancy build requirements
+           if: ${{ env.TRUFFLE == 'true' }}
+           uses: ruby/setup-ruby@v1
+           with:
+             ruby-version: truffleruby
              bundler-cache: true
          - name: Build the site
            run: |
@@ -33,8 +57,11 @@ jobs:
             mkdir $BUILD_DIR
             cd $GITHUB_WORKSPACE
             HASH="$(git log -n 1 --format=%H)"
-            echo "Building $HASH into $BUILD_DIR ..."
-            JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR
+            echo "Building $HASH into $BUILD_DIR with:"
+            if $YJIT; then  export RUBYOPT="--enable=yjit"; fi
+            if $MJIT; then  export RUBYOPT="--enable=mjit"; fi
+            ruby --version
+            JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
             echo "Purging unused css..."
             shopt -s globstar
             npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css

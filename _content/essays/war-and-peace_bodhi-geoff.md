@@ -9,10 +9,12 @@ status: featured
 tags:
   - karma
   - mara
-  - becon
   - power
+  - war
   - violence
   - wwii
 ---
 
 A fascinating series of open letters between Ajahn Geoff and Bhikkhu Bodhi on the subject of "just war."
+
+For Bhante Sujato's reply to their debate, see his essay [*On deeds of war*](/content/essays/war-bright-and-dark_sujato).
