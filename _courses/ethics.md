@@ -84,7 +84,13 @@ Hopefully this course will help you answer that question.
 
 The core of Buddhist Ethics is summed up well in this pithy sutta.  The five qualities listed here are called "The Five Precepts" and all Buddhists strive to preserve them.  Technically, observing these five moral precepts assiduously is sufficient to be considered an ethical person.
 
-If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to observe these Five Precepts? What are some issues they don't cover?
+{% include content_blurb.html category="canon" slug="vv1.12" blurb="
+- Indeed, holding to generosity and the five precepts is believed to be a ticket to rebirth in heaven.
+" %}
+
+
+If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to observe these Five Precepts? Are there any ethical issues you think they don’t cover?
+
 
 #### Analyzing the Five Precepts
 
