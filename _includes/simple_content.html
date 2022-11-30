@@ -4,7 +4,7 @@
   {%- if include.content.status != "rejected" and include.content.course -%}
     {% assign course = site.courses | find: "slug", include.content.course %}
     {%- if course -%}
-        Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i style="font-style: italic;" class="{{ course.icon }}"></i> {{ course.title }}</a>"
+        Featured in the course, "<a href="{{ course.url }}#{{ include.content.slug }}"><i class="{{ course.icon }}" style="font-style: italic;"></i> {{ course.title }}</a>"
     {%- endif -%}
   {%- endif -%}
 </em></p>
