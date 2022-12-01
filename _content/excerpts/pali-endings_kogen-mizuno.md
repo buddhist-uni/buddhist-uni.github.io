@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1-LQ_TxE2VXsFFTLG-BZahJ6MoosjTuZz/view?usp=drivesdk"
 course: pali-language
 year: 1988
-publisher: Shiunjūsha
+publisher: Shiunjūsha
 address: Tokyo
 pages: "376--384"
 booktitle: "パーリ語辞典"

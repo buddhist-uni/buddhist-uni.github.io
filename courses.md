@@ -135,6 +135,18 @@ Courses hosted on other websites.
   </div>
 </div>
 
+### [The Making of Modern Ukraine](https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_){:ga-event-value="2"}
+{:onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_',2)" .courselink}
+
+<div class="coursedesc">
+  <div class="descrow">
+    <div onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_',2)" class="cicon"><i class="fac-ukraine"></i></div>
+    <div class="cdesc">Professor Timothy Snyder gives the deep history of Eastern Europe and the formation of the Ukrainian nation, discussing along the way the big question of why we should study history at all.
+    Be sure to check out <a href="https://snyder.substack.com/p/syllabus-of-my-ukraine-lecture-class" target="_blank">the course syllabus too</a> as the readings are an essential part of the course.</div>
+    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+  </div>
+</div>
+
 ## Open Courseware @MIT
 
 OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which have provided free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses since 2001. For OBU Students, I especially recommend checking out:
