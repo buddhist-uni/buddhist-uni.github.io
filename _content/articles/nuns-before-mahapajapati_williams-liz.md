@@ -14,7 +14,8 @@ journal: bsr
 course: buddha
 tags:
   - thig
-  - bhikkhuni-ordination-controversy
+  - bhikkhuni
+status: featured
 ---
 
 > there may have been Bhikkhunīs in existence before the request for ordination by Mahāpajāpatī
