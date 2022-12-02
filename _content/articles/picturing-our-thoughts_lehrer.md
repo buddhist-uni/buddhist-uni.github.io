@@ -9,7 +9,7 @@ course: inner
 tags:
   - neuroscience
   - history-of-science
-  - media-studies
+  - media
   - art
 year: 2008
 month: aug
