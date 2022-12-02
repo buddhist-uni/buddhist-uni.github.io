@@ -12,7 +12,7 @@ tags:
   - mahayana-canon
   - mahayana-roots
   - sects
-  - media-studies
+  - media
 year: 1998
 month: feb
 journal: "History of Religions"
