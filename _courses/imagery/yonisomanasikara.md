@@ -10,6 +10,7 @@ description: "The world is full of distractions from the spiritual path."
 ### Suttas
 <p>
 {% include content_blurb.html category="canon" slug="sn47.20" %} 
+{% include content_blurb.html category="canon" slug="an3.109" %}
 {% include content_blurb.html category="canon" slug="an3.130" %}
 {% include content_blurb.html category="canon" slug="dhp25.365-369" %}
 </p>
