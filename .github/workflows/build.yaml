@@ -8,17 +8,15 @@ jobs:
    Jekyll:
      runs-on: ubuntu-latest
      env:
-         YJIT: ${{ endswith(github.run_number,'1') || endswith(github.run_number,'3') || endswith(github.run_number,'8') }}
-         MJIT: ${{ endswith(github.run_number,'5') || endswith(github.run_number,'0')  }}
-         TRUFFLEVM: ${{ endswith(github.run_number,'6') }}
-         TRUFFLE: ${{ endswith(github.run_number,'2') || endswith(github.run_number,'4') || endswith(github.run_number,'7') || endswith(github.run_number,'9') }}
+         YJIT: ${{ endswith(github.run_number,'1') || endswith(github.run_number,'3') || endswith(github.run_number,'5') || endswith(github.run_number,'7') || endswith(github.run_number,'9') }}
+         MJIT: ${{ endswith(github.run_number,'8') || endswith(github.run_number,'2')  }}
+         TRUFFLE: ${{ endswith(github.run_number,'0') || endswith(github.run_number,'4') || endswith(github.run_number,'6') }}
      steps:
          - name: Print Env Vars
            run: |
              echo "YJIT=${{ env.YJIT }}"
              echo "MJIT=${{ env.MJIT }}"
              echo "TRUFFLE=${{ env.TRUFFLE }}"
-             echo "TRUFFLEVM=${{ env.TRUFFLEVM }}"
          - name: Checkout the Code
            uses: actions/checkout@v3
            with:
@@ -34,16 +32,10 @@ jobs:
          - run: npm ci
          - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
-           if: ${{ env.TRUFFLE == 'false' && env.TRUFFLEVM == 'false' }}
+           if: ${{ env.TRUFFLE == 'false' }}
            uses: ruby/setup-ruby@v1
            with:
              ruby-version: 3.1
-             bundler-cache: true
-         - name: Install really fancy build requirements
-           if: ${{ env.TRUFFLEVM == 'true' }}
-           uses: ruby/setup-ruby@v1
-           with:
-             ruby-version: truffleruby+graalvm
              bundler-cache: true
          - name: Install fancy build requirements
            if: ${{ env.TRUFFLE == 'true' }}

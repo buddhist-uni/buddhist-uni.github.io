@@ -8,6 +8,7 @@ course: pali-language
 tags:
   - characters
   - setting
+  - pali-dictionaries
 year: 1937
 publisher: "The Government of India"
 ---
