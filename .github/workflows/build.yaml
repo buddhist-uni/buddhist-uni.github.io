@@ -7,16 +7,7 @@ on:
 jobs:
    Jekyll:
      runs-on: ubuntu-latest
-     env:
-         YJIT: ${{ endswith(github.run_number,'1') || endswith(github.run_number,'3') || endswith(github.run_number,'5') || endswith(github.run_number,'7') || endswith(github.run_number,'9') }}
-         MJIT: ${{ endswith(github.run_number,'8') || endswith(github.run_number,'2')  }}
-         TRUFFLE: ${{ endswith(github.run_number,'0') || endswith(github.run_number,'4') || endswith(github.run_number,'6') }}
      steps:
-         - name: Print Env Vars
-           run: |
-             echo "YJIT=${{ env.YJIT }}"
-             echo "MJIT=${{ env.MJIT }}"
-             echo "TRUFFLE=${{ env.TRUFFLE }}"
          - name: Checkout the Code
            uses: actions/checkout@v3
            with:
@@ -32,16 +23,9 @@ jobs:
          - run: npm ci
          - run: bash ./scripts/install-deps.bash
          - name: Install build requirements
-           if: ${{ env.TRUFFLE == 'false' }}
            uses: ruby/setup-ruby@v1
            with:
              ruby-version: 3.1
-             bundler-cache: true
-         - name: Install fancy build requirements
-           if: ${{ env.TRUFFLE == 'true' }}
-           uses: ruby/setup-ruby@v1
-           with:
-             ruby-version: truffleruby
              bundler-cache: true
          - name: Build the site
            run: |
@@ -50,8 +34,7 @@ jobs:
             cd $GITHUB_WORKSPACE
             HASH="$(git log -n 1 --format=%H)"
             echo "Building $HASH into $BUILD_DIR with:"
-            if $YJIT; then  export RUBYOPT="--enable=yjit"; fi
-            if $MJIT; then  export RUBYOPT="--enable=mjit"; fi
+            export RUBYOPT="--enable=yjit"
             ruby --version
             JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
             echo "Purging unused css..."
