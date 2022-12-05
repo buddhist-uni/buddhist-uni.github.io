@@ -207,6 +207,8 @@ In part II, we finally turn to the Noble Eightfold Path, and the transcendant te
 - Interestingly, right intention is not the desire to attain liberation, and the desire for liberation doesn't lead to liberation. Rather, cultivating renunciation, goodwill and harmlessness, and developing the mind accordingly, is the motivation that leads to nibbāna.
 - While it's impossible to know “today I've made this much progress” it is possible over larger time spans to reflect and see how our practice has changed our character. 
 
+{% include content_blurb.html category="canon" slug="pv1.12" %}
+- The Buddhist goal is to overcome all suffering: to never cry or lament. This sutta shows how radical such detachment really is.
 
 {% include content_blurb.html category="booklets" slug="becoming-your-own-therapist_yeshe" %}
 - A short series of talks and Q-and-As on Buddhist wisdom by a modern Tibetan master. 
