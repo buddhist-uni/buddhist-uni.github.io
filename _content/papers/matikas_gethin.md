@@ -1,5 +1,5 @@
 ---
-title: "The Mātikās: Memorization, Mindfulness and the List"
+title: "The Mātikās: Memorization, Mindfulness and the List"
 authors: [gethin]
 drive_links: ["https://drive.google.com/file/d/1dDDSZWsYSTaaNBpAHTBrxGJxrffsyNha/view?usp=drivesdk"]
 external_url: "https://www.academia.edu/24132029/The_M%C4%81tik%C4%81s_Memorization_Mindfulness_and_the_List"
