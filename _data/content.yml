@@ -4,6 +4,7 @@ filehost: "https://buddhistuniversity.net/"
 ### Content Similarity Algorithm Parameters
 ## Number of similar works to recommend
 similar_count: 10
+candidate_min: 13 # min candidates to try before falling back to trying everything
 
 ## Algorithm paramaters
 # Not tuned scientifically. Just guessing at appropriate values

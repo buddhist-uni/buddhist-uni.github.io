@@ -49,19 +49,28 @@ test_cases:
     - [chithurst-story_sharp-george, comes-to-sussex_bbc]
     - [kalmyks_dhammika, siberian-revival_journeyman]
     - [map-of-jambudipa, maps-of-ancient-india_anandajoti]
+partial_cases:
+    - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
+    - [giving-makes-us-happy, meditation-moral-obligation_vox]
+    - [kalmyks_dhammika, siberian-revival_journeyman]
+    - [the-buddhist-layman, simple-guide-to-life_bogoda-r]
+    - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
+    - [venerated-objects-early-buddhism_harvey, lotus-as-symbol_olson_carl]
 ---
 
 A series of integration tests for the quality of the content recommendations.
 
-{% if site.partial_build %}
-To run these tests, build the site *without* `_quick_build.yml` which excludes many of this file's dependencies.
-{% else %}
+{%- assign cases = page.test_cases -%}
+{%- if site.partial_build -%}
+{%- assign cases = page.partial_cases -%}
+{%- endif -%}
 {%- assign succs = 0 -%}
 {%- assign fails = 0 -%}
 {% assign simcount = 0 %}
+
 | Test Name | Status  |  Notes |
-|-----------|---------|--------|{% for test in page.test_cases %}{% assign fc = site.content | find: "slug", test[0] %}{% assign sc = site.content | find: "slug", test[1] %}{% capture cont_req %}{% assign include_content = fc %}{% similar_content %}{% endcapture %}
-| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "[{{ sc.title | split: ':' | first }}]({{ sc.url }})"  | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
+|-----------|---------|--------|{% for test in cases %}{% assign fc = site.content | find: "slug", test[0] %}{% assign sc = site.content | find: "slug", test[1] %}{% capture cont_req %}{% assign include_content = fc %}{% similar_content %}{% endcapture %}
+| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "[{{ sc.title | split: ':' | first }}]({{ sc.url }})" <details><code>{{ cont_req | strip_html | strip_newlines }}</code></details> | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
 |-----|------|----|
 | Totals: | {{ succs }} Pass and {{ fails }} Failed | {{ simcount }} total recommendations |
-{%- endif -%}
+

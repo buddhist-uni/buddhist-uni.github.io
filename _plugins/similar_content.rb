@@ -1,7 +1,54 @@
 require 'fc'
+require 'set'
 
 module Jekyll
   class SimilarContentFooterTag < Liquid::Tag
+    @@config = nil
+    @@parents_for_tag = nil
+    @@content = nil
+    @@content_for_tag = nil
+
+    def dataInit(v)
+      puts "Prefetching data for similar_content footer..."
+      @@config = v["site.data.content"]
+      @@parents_for_tag = {}
+      @@content = []
+      @@content_for_tag = Hash.new { |h, k| h[k] = Set.new }
+      for cofefe in v["site.tags"]
+        tag = cofefe.to_liquid.to_h
+        @@parents_for_tag[tag["slug"]] = tag["parents"]
+      end
+      for cofefe in v["site.content"]
+        c = cofefe.to_liquid.to_h
+        if c["status"] == "rejected" then
+            next
+        end
+        @@content << c
+        for tag in c['tags']
+          @@content_for_tag[tag] << c
+        end
+        @@content_for_tag[c['course']] << c if c['course']
+      end
+      puts "Done prefetching"
+    end
+
+    def getCandidates(v, include_content)
+      candidates = Set[]
+      course = include_content['course']
+      tags = include_content['tags']
+      if course then
+        candidates.merge(@@content_for_tag[course])
+      end
+      for tag in tags
+        candidates.merge(@@content_for_tag[tag])
+      end
+      if candidates.size <= @@config['candidate_min'] then
+        puts "similar_content warning: only found %d likely candidates for %s" % [candidates.size, include_content['slug']]
+        return @@content
+      else
+        return candidates
+      end
+    end
 
     def initialize(tag_name, text, tokens)
       super
@@ -32,47 +79,44 @@ module Jekyll
     end
 
     def render(v)
-        config = v["site.data.content"]
-        for i in 1..config["similar_count"]
+        if @@config.nil? then
+            dataInit(v)
+        end
+        for i in 1..@@config["similar_count"]
             @similars.push({}, 0)
         end
+        include_content = v["include_content"].to_liquid.to_h
         category = v["category"]
         if category.nil? or category.is_a? String then
-            category = v["include_content.category"]
+            category = include_content["category"]
             category = v["site.categories"].find{|c| c.data["slug"] == category}
         end
         category = category.to_liquid.to_h
-        tagparents = {}
-        for cofefe in v["site.tags"]
-            tag = cofefe.to_liquid.to_h
-            tagparents[tag["slug"]] = tag["parents"]
-        end
-        for cofefe in v["site.content"]
-            candidate = cofefe.to_liquid.to_h
-            if candidate["status"] == "rejected" or candidate["path"] == v["include_content.path"] then
+        for candidate in getCandidates(v, include_content)
+            if candidate['path'] == include_content['path'] then
                 next
             end
             score = rand + rand
-            score *= config["s_i"]
-            denom = config["d_i"]
-            if candidate["subcat"] and v["include_content.subcat"] == candidate["subcat"] then
-                score += config["scms"]
+            score *= @@config["s_i"]
+            denom = @@config["d_i"]
+            if candidate["subcat"] and include_content["subcat"] == candidate["subcat"] then
+                score += @@config["scms"]
             end
-            if v["include_content.course"] then
-                if v["include_content.course"] == candidate["course"] then
-                    score += config["ccms"]
+            if include_content["course"] then
+                if include_content["course"] == candidate["course"] then
+                    score += @@config["ccms"]
                 else
-                    if candidate["tags"].include? v["include_content.course"] then
-                        score += config["ctms"]
+                    if candidate["tags"].include? include_content["course"] then
+                        score += @@config["ctms"]
                     else
-                        ps = tagparents[v["include_content.course"]]
+                        ps = @@parents_for_tag[include_content["course"]]
                         if ps then
                             if ps.include? candidate["course"] then
-                                score += config["tpms"]
+                                score += @@config["tpms"]
                             else
                                 for p in ps
                                     if candidate["tags"]&.include? p then
-                                        score += config["tpms"]
+                                        score += @@config["tpms"]
                                         break
                                     end
                                 end
@@ -82,24 +126,24 @@ module Jekyll
                 end
             end
             if candidate["course"] then
-                denom += config["cdms"]
-                if v["include_content.tags"]&.include? candidate["course"] then
-                    score += config["ctms"]
+                denom += @@config["cdms"]
+                if include_content["tags"]&.include? candidate["course"] then
+                    score += @@config["ctms"]
                 end
             end
             if candidate["tags"]&.size&.nonzero? then
-                denom += candidate["tags"].size * config["tdms"]
-                for t in v["include_content.tags"]
+                denom += candidate["tags"].size * @@config["tdms"]
+                for t in include_content["tags"]
                     if candidate["tags"].include? t then
-                        score += config["ttms"]
+                        score += @@config["ttms"]
                     else
-                        if tagparents[t] then
-                            for p in tagparents[t]
+                        if @@parents_for_tag[t] then
+                            for p in @@parents_for_tag[t]
                                 if candidate["tags"].include? p then
-                                    score += config["tpms"]
+                                    score += @@config["tpms"]
                                     break
                                 elsif candidate["course"] == p then
-                                    score += config["tpms"]
+                                    score += @@config["tpms"]
                                     break
                                 end
                             end
@@ -108,22 +152,22 @@ module Jekyll
                 end
             end
             if candidate["authors"]&.size&.nonzero? and v["include_content.authors.size"]&.nonzero? then
-                denom += candidate["authors"].size * config["adms"]
-                for a in v["include_content.authors"]
+                denom += candidate["authors"].size * @@config["adms"]
+                for a in include_content["authors"]
                     if candidate["authors"].include? a then
-                        score += config["aams"]
+                        score += @@config["aams"]
                     end
                 end
             end
-            if v["include_content.category"] == candidate["category"] then
-                score *= config["ccmm"]
+            if include_content["category"] == candidate["category"] then
+                score *= @@config["ccmm"]
             elsif category["similars"].to_a.include? candidate["category"] then
-                score *= config["scmm"]
+                score *= @@config["scmm"]
             end
             if candidate["status"] == "featured" then
-                score *= config["fcmm"]
+                score *= @@config["fcmm"]
             elsif not candidate.key? "course" then
-                score *= config["tsmm"]
+                score *= @@config["tsmm"]
             end
             score *= score / denom
             # It's a Heap, not a Stack
@@ -133,7 +177,7 @@ module Jekyll
         end
         ret = StringIO.new
         ret << '<div class="similar_content_footer"><p>You may also be interested in:</p><ul>'
-        final_list = Array.new(config["similar_count"])
+        final_list = Array.new(@@config["similar_count"])
         # Manually load and render the simple_content_title include
         simple_content_title = load_cached_partial("_includes/simple_content_title.html", v)
         @similars.pop_each { |obj, score|
