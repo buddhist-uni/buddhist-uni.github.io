@@ -8,7 +8,7 @@ external_url: "https://noveldialogue.org/2022/03/03/3-3-in-the-editing-room-with
 tags:
   - things
   - ambulit
-  - media-studies
+  - media
 year: 2022
 month: mar
 publisher: nbn
