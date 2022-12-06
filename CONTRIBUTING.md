@@ -36,26 +36,12 @@ cd buddhist-uni.github.io
 npm ci
 bash scripts/install-deps.bash
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental --trace
 ```
 
-Keep in mind that the site build can take up to 40 mins depending on your machine.
-To speed that up, you have two options:
+Note that you can add the `--config _config.yml,_quick_build.yml` build flag to `jekyll serve` for a faster, but partial build of the site.
 
-1. You can add the `--config _config.yml,_quick_build.yml` build flag to Jekyll for a faster, but partial build of the site.
-2. Or you can serve the production build locally like so:
-
-~~~bash
-rm -rf _site
-git branch -D prod
-git pull
-git checkout prod
-cp -r . _site
-git checkout master
-JEKYLL_ENV=production bundle exec jekyll serve --incremental --skip-initial-build
-~~~
-
-For more information on the build options, see [the Jekyll docs](https://jekyllrb.com/docs/usage/).
+For more information on the build options, see [the Jekyll docs](https://jekyllrb.com/docs/usage/) and for the production build script, see [build.yaml](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/.github/workflows/build.yaml).
 
 ### The Source Code
 

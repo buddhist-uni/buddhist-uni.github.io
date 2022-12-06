@@ -1,6 +1,3 @@
----
----
-
 The Open Buddhist University
 ============================
 

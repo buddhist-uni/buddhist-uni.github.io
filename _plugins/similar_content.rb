@@ -43,7 +43,7 @@ module Jekyll
         candidates.merge(@@content_for_tag[tag])
       end
       if candidates.size <= @@config['candidate_min'] then
-        puts "similar_content warning: only found %d likely candidates for %s" % [candidates.size, include_content['slug']]
+        puts "similar_content warning: only found %d likely candidates for %s" % [[candidates.size-1,0].max, include_content['url']]
         return @@content
       else
         return candidates

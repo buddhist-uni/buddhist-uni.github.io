@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: git clone prod
-          uses: actions/checkout@v3
+          uses: dawidd6/action-download-artifact@master
           with:
-            ref: prod
+            workflow: build.yaml
+            branch: master
+            name: github-pages
             path: prod
         - name: git clone master
           uses: actions/checkout@v3

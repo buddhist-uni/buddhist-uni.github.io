@@ -263,9 +263,3 @@ defaults:
         type: "content"
     values:
         category: "reference"
-  -
-    scope:
-        path: "README.md"
-    values:
-        title: "Welcome to"
-        custom_css: ["readme"]

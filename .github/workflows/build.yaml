@@ -1,11 +1,11 @@
-name: Build
+name: Build and Deploy
 on:
   workflow_dispatch:
   push:
     branches:
       - master
 jobs:
-  Jekyll:
+  Build:
     runs-on: ubuntu-latest
     env:
         BUILD_DIR: ${{ github.workspace }}/../jekyll_build
@@ -50,7 +50,7 @@ jobs:
           retention-days: 30
   Deploy:
     runs-on: ubuntu-latest
-    needs: Jekyll
+    needs: Build
     permissions:
       pages: write
       id-token: write
