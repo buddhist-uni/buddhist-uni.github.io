@@ -12,7 +12,7 @@ tags:
   - setting
 year: 1988
 month: mar
-journal: "the Journal of Pāli and Buddhist Studies"
+journal: jpbs
 volume: 1
 pages: "1--27"
 ---

@@ -9,3 +9,5 @@ minutes: 2
 ---
 
 A few dozen Pāḷi terms clearly pronounced to give an idea of its sound.
+
+See [ReadingFaithfully](https://readingfaithfully.org/pali-word-pronunciation-recordings/) for more such recordings, particularly of Pāli names.
