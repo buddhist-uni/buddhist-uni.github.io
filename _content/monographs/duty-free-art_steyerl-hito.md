@@ -9,7 +9,7 @@ drive_links:
 status: featured
 course: present
 tags:
-  - media-studies
+  - media
   - internet
   - art-theory
 year: 2017

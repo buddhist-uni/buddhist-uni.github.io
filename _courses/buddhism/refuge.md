@@ -16,8 +16,8 @@ I'd like to introduce you now to the other four texts (in addition to [_Being No
 This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, accessible to modern readers even today, more than fifty years later. 
 " %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master.
-An excellent biography of the Buddha.
+To understand Buddhism, we need to understand something of how Buddhists think about the Buddha.
+This book is my recommended telling of the Buddha's life because it presents some of the mythology traditionally surrounding the Buddha but in a more novelistic sketch that doesn't stray too far from the historical record, thus creating an eminently balanced *Biography*.  
 " %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
 A precise yet readable overview of the Buddhist Path by one of the greatest scholars of Pāḷi Buddhism alive today.

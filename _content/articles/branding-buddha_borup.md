@@ -9,7 +9,7 @@ drive_links:
 course: west
 tags:
   - continental
-  - media-studies
+  - media
 year: 2016
 month: aug
 journal: jgb
