@@ -7,6 +7,8 @@ on:
 jobs:
   Jekyll:
     runs-on: ubuntu-latest
+    env:
+        BUILD_DIR: ${{ github.workspace }}/../jekyll_build
     steps:
       - name: Checkout the Code
         uses: actions/checkout@v3
@@ -29,7 +31,6 @@ jobs:
           bundler-cache: true
       - name: Build the site
         run: |
-          BUILD_DIR="${GITHUB_WORKSPACE}/../jekyll_build"
           mkdir $BUILD_DIR
           cd $GITHUB_WORKSPACE
           HASH="$(git log -n 1 --format=%H)"
@@ -37,16 +38,52 @@ jobs:
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
-          echo "Purging unused css..."
+      - name: Purge CSS
+        run: |
           shopt -s globstar
           npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
           test -s $BUILD_DIR/assets/css/purged-main.css
-          echo "Build complete. Pushing to prod branch..."
-          cd $BUILD_DIR
-          touch .nojekyll
-          git init -b temp
-          git config user.name "OBU Build Bot"
-          git config user.email "buddhist-uni@users.noreply.github.com"
-          git add .
-          git commit -m "Automated GitHub build from ${HASH}" --quiet
-          git push --force "https://buddhist-uni:${{ secrets.BUILD_ACTION_TOKEN }}@github.com/buddhist-uni/buddhist-uni.github.io.git" temp:prod
+      - name: Upload Build as Artifact
+        uses: actions/upload-pages-artifact@main
+        with:
+          path: ${{ env.BUILD_DIR }}
+          retention-days: 30
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: Jekyll
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the Artifact to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
+      - name: Invalidate the CloudFlare Cache
+        shell: bash
+        run: |
+          echo "Hitting the CloudFlare API..."
+          HTTP_RESPONSE=$(curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE }}/purge_cache" -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" -H "Content-Type:application/json" -w "HTTP_STATUS:%{http_code}" --data '{"purge_everything":true}')
+          HTTP_BODY=$(echo "${HTTP_RESPONSE}" | sed -E 's/HTTP_STATUS\:[0-9]{3}$//')
+          HTTP_STATUS=$(echo "${HTTP_RESPONSE}" | tr -d '\n' | sed -E 's/.*HTTP_STATUS:([0-9]{3})$/\1/')
+          if [ "${HTTP_STATUS}" -eq "200" ]; then
+            SUCCESS=$(echo ${HTTP_BODY} | python3 -c "import sys, json;print(json.load(sys.stdin)['success'])")
+            if [ "${SUCCESS}" = "True" ]; then
+              echo "Successfully purged!"
+              echo "::group::Raw response"
+              echo "${HTTP_BODY}"
+              echo "::endgroup::"
+              exit 0
+            else
+              echo "Unsuccessful purge!"
+              echo "API response was:"
+              echo "${HTTP_BODY}"
+              exit 1
+            fi
+          else
+            echo "Request failed. API response was ($HTTP_STATUS): "
+            echo "${HTTP_BODY}"
+            exit 1
+          fi
