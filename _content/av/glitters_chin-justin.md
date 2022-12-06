@@ -19,4 +19,4 @@ address: "San Francisco"
 minutes: 3
 ---
 
-A poem written in response to the *[Absence of God](http://raqibshawstudio.com/artworks/618-raqib-shaw-absence-of-god-vii-2009/){:target="_blank"}* exploring the queerness of postmodern cosmology.
+A poem written in response to the *[Absence of God](https://whitecube.com/exhibitions/exhibition/raqib_shaw_hoxton_square_2009){:target="_blank"}* exploring the queerness of postmodern cosmology.

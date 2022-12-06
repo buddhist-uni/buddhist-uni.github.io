@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@main
         with:
           path: ${{ env.BUILD_DIR }}
-          retention-days: 30
+          retention-days: 62
   Deploy:
     runs-on: ubuntu-latest
     needs: Build
