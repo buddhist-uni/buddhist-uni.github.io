@@ -1,6 +1,8 @@
 ---
 title: "Ajahn Brahm"
 ---
-Ajahn Brahm is a British-born Theravada Buddhist monk. Currently, Ajahn Brahm is the abbot of Bodhinyana Monastery in Serpentine, Western Australia; Spiritual Adviser to the Buddhist Society of Victoria; Spiritual Adviser to the Buddhist Society of South Australia; Spiritual Patron of the Buddhist Fellowship in Singapore; Patron of the Brahm Centre in Singapore; Spiritual Adviser to the Anukampa Bhikkhuni Project in the UK; and Spiritual Director of the Buddhist Society of Western Australia (BSWA).
 
-_~ Adapted from [Wikipedia](https://en.wikipedia.org/wiki/Ajahn_Brahm)_
+Ajahn Brahm is a British-born Theravada Buddhist monk.
+He studied under [Ajahn Chah](/authors/chah) in Thailand before starting his own monastery—Bodhinyana—in Serpentine, Western Australia.
+
+He is the author of several commercially successful books about Buddhism and meditation and is an advisor to many Western Buddhist organizations and teachers, including [Ajahn Brahmali](/authors/brahmali) and [Bhante Sujato](/authors/sujato) with whom he's played an important role in the revival of the Theravada Bhikkhuni order.
