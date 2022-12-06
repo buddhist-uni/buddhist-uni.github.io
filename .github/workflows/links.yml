@@ -7,13 +7,17 @@ jobs:
   Links:
     runs-on: ubuntu-latest
     steps:
-        - name: git clone prod
+        - name: Download prod build
           uses: dawidd6/action-download-artifact@master
           with:
             workflow: build.yaml
             branch: master
             name: github-pages
             path: prod
+        - name: Extract prod
+          run: |
+            cd $GITHUB_WORKSPACE/prod
+            tar -xf artifact.tar
         - name: git clone master
           uses: actions/checkout@v3
           with:
