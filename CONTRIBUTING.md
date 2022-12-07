@@ -74,7 +74,7 @@ For questions about the source code, feel free to [email me](mailto:khemarato.bh
 
 ## Reuse
 
-The beauty of Jekyll is that it outputs plain HTML, which you can find in [the repo's "prod" branch](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/prod). This raw html can be reworked in a variety of ways or you can fork the repo to use the source code.
+The beauty of Jekyll is that it outputs plain HTML, which you can reuse in a variety of ways.
 [The entire database can also be found in Bibtex format here](https://buddhistuniversity.net/content.bib), in case that's helpful, for example for importing into an academic reference manager.
 
 **Feel free to reuse this website in any (ethical) way you like** consistent with [the attached MIT License](https://obu.mit-license.org/).
