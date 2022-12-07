@@ -56,7 +56,7 @@ OBU is strictly a digital library and therefore **cannot and does not** provide:
 - etc
 
 The library's resources are provided as-is with no guarantees.
-The views expressed in each work are strictly the opinions of their respective author(s) and may or may not reflect the views of OBU or [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/CONTRIBUTORS.md).
+The views expressed in each work are strictly the opinions of their respective author(s) and may or may not reflect the views of OBU or [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTORS.md).
 
 ## Reuse
 
@@ -75,7 +75,7 @@ Some of our courses are entirely from elsewhere. Those are clearly labeled as su
 ## Contributing
 
 OBU would love your help with finding content and building the website!
-See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/master/CONTRIBUTING.md) for how to get started, including how to run the site on your own machine.
+See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTING.md) for how to get started, including how to run the site on your own machine.
 
 ## Acknowledgements
 

@@ -11,30 +11,30 @@ jobs:
           uses: dawidd6/action-download-artifact@master
           with:
             workflow: build.yaml
-            branch: master
+            branch: main
             name: github-pages
             path: prod
         - name: Extract prod
           run: |
             cd $GITHUB_WORKSPACE/prod
             tar -xf artifact.tar && rm artifact.tar
-        - name: git clone master
+        - name: git clone main
           uses: actions/checkout@v3
           with:
-            ref: master
-            path: master
+            ref: main
+            path: main
         - name: install rename
           run: sudo apt-get install -y rename
         - name: rename *.md *.txt
           run: |
-            cd $GITHUB_WORKSPACE/master
+            cd $GITHUB_WORKSPACE/main
             find . -name "*.md" -exec rename 's/\.md$/.txt/' {} +
-        - name: lychee master/_content prod/(^content)
+        - name: lychee main/_content prod/(^content)
           id: lychee
           uses: lycheeverse/lychee-action@v1.5.0
           with:
             lycheeVersion: '0.10.1'
-            args: --user-agent "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" --base=https://buddhistuniversity.net --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=gstatic.com --exclude-mail --verbose --no-progress --cache --exclude-path=prod/content 'prod/**/*.html' 'master/_content/*/*.txt' prod/site.webmanifest prod/browserconfig.xml
+            args: --user-agent "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" --base=https://buddhistuniversity.net --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=fontawesome.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=github.com --exclude=openlibrary.org --exclude=twitter.com --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=gstatic.com --exclude-mail --verbose --no-progress --cache --exclude-path=prod/content 'prod/**/*.html' 'main/_content/*/*.txt' prod/site.webmanifest prod/browserconfig.xml
         - name: Create GitHub Issue
           uses: peter-evans/create-issue-from-file@v4
           with:
