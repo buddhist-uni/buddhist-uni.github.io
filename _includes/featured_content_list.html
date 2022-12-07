@@ -9,7 +9,7 @@
     <li>
       {% if c.olid %}<div class="ol-cover"><a href="{{ c.url }}">{{ c.title | markdownify | strip_html }}<img src="https://covers.openlibrary.org/b/olid/{{ c.olid }}-L.jpg" alt="{{ c.title }}"></a></div>{% else %}
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>{% endif %}
-      <div class="star_label">{% include calculatestars.dat content=c %}{% unless stars == 3 %}<span class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</span>{% endunless %}</div>
+      <div class="star_label">{% include calculatestars.liquid content=c %}{% unless stars == 3 %}<span class="RatingLabel-{{ stars }}">{% include starlabel.html stars=stars %}</span>{% endunless %}</div>
       {% unless c.olid %}{% assign supex = false %}{% if c.external_url contains 'youtu' %}{% unless c.external_url contains "list" %}
         <a href="{{ c.url }}"><img src="https://img.youtube.com/vi/{{ c.external_url | ytid }}/0.jpg" alt="{{ c.title }} Video Thumbnail"></a>{% assign supex = true %}{% endunless %}{% endif %}
         {% unless supex %}<div class="content_desc">{{ c.excerpt }}</div>{% endunless %}

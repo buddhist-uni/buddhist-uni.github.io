@@ -185,9 +185,15 @@ figure figcaption {
     }
 }
 
-.social-media-list .svg-icon {
-    padding: 0;
-    margin-right: 5px;
+.social-media-list {
+    .svg-icon {
+        padding: 0;
+        margin-right: 5px;
+    }
+    i.fab {
+        font-size: 19px;
+        margin-right: 4.5px;
+    }
 }
 
 .site-nav {

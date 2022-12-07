@@ -25,7 +25,8 @@ google_analytics: UA-159403467-1
 github_repo:  buddhist-uni/buddhist-uni.github.io
 github_branch: master
 tinyletter_username: buddhist-uni
-twitter_username: buddhistuni
+twitter_username_HIDDEN: buddhistuni
+mastodon_link: https://digipres.club/@obu
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]
 timezone: "Asia/Bangkok"
 doi: "10.5281/zenodo.4448510"
@@ -40,6 +41,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
   - jekyll-last-modified-at
+strict_front_matter: true
 last-modified-at:
     use-git-cache: true
     set-page-date: true
@@ -145,7 +147,15 @@ defaults:
     values:
         slug: "course parts don't get slugs"
         part_of_course: "buddhism"
-        layout: "buddhismcoursepart" 
+        layout: "buddhismcoursepart"
+  -
+    scope:
+        path: "_courses/function/"
+        type: "courses"
+    values:
+        slug: "course parts don't get slugs"
+        part_of_course: "function"
+        layout: "buddhismcoursepart"
   -
     scope:
         path: "_courses/imagery/"

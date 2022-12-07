@@ -2,7 +2,7 @@
 title: Buddhism 101
 subtitle: Ancient Wisdom, Modern Times
 layout: multipartcourse
-part_header: "Module # of An Introduction to Buddhism."
+part_header: "Module # of An Introduction to Buddhism"
 toc:
   - ['what-is', 'What is Buddhism?']
   - ['we-will', 'Course Results']

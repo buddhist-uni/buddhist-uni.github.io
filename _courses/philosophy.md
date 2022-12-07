@@ -186,6 +186,9 @@ The five aggregates of body and mind that we cling to as constituting a “self�
 
 #### Homework
 
+{% include content_blurb.html category="articles" slug="craving-dukkha_analayo" %}
+- Ven Analayo defines what the Buddha meant by *dukkha* and how it fits into the Four Noble Truths.
+
 {% include content_blurb.html category="canon" slug="sn35.85" %}
 - The defining characteristic of the Buddhist conception of the world is “emptiness.”
 - The question immediately arises: “The world is empty of what?” In this sutta, the Buddha gives us the answer: “It is empty of a self.”

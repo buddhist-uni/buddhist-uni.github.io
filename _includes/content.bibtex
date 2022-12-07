@@ -1,6 +1,6 @@
 {%- assign stars = include.stars -%}
 {%- unless stars -%}
-    {% include calculatestars.dat content=include.content %}
+    {% include calculatestars.liquid content=include.content %}
 {%- endunless -%}
 {%- if include.content.from_book -%}{%- assign book = site.content | where: "slug", include.content.from_book | where: "category", "monographs" | first -%}{%- else -%}{%- assign book = nil -%}{%- endif -%}
 {%- assign series = site.series | find: "slug", include.content.series -%}
