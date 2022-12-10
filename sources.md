@@ -74,6 +74,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
 * [The Buddhist Publication Society](http://www.bps.lk/library.php)
 * [Hamburg University Press](https://www.buddhismuskunde.uni-hamburg.de/en/publikationen/hamburg-buddhist-studies.html)
+* The Berkeley [Institute of Buddhist Studies](https://www.shin-ibs.edu/research/archived-publications-and-research-projects/)
 * [The Agama Research Group](http://agamaresearch.dila.edu.tw/publications)
 * [SuttaCentral](https://suttacentral.net/)
   * Its ["Discourse" Forum](https://discourse.suttacentral.net/search?q=pdf)

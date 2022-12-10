@@ -12,8 +12,8 @@ tags:
   - setting
 year: 1992
 booktitle: "The Buddhist Forum"
-publisher: "Institute of Buddhist Studies"
-address: Berkeley
+publisher: SOAS
+address: London
 volume: 2
 pages: "193--200"
 ---

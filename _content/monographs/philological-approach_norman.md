@@ -15,8 +15,11 @@ tags:
   - pali-canon
   - philology
   - hermeneutics
-drive_links: ["https://drive.google.com/file/d/1IEQDhBrks2V_XLdXX-j9i83TgKBAcZ6r/view?usp=drivesdk"]
-external_url: "https://ahandfulofleaves.files.wordpress.com/2011/11/a-philological-approach-to-buddhism_norman_tbf_1997.pdf"
+drive_links: ["https://drive.google.com/file/d/1yBz-EEUwE9EkZHbgvoinc1n9xi6UzrZE/view?usp=drivesdk"]
+external_url: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-v/"
+series: "Buddhist Forum"
+number: 5
+source_url: "https://ahandfulofleaves.files.wordpress.com/2011/11/a-philological-approach-to-buddhism_norman_tbf_1997.pdf"
 ---
 
 
