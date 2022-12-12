@@ -1,5 +1,5 @@
 ---
-title: "The Discourse on the Advice to Sigāla: Translation and Detailed Pali Grammatical Analysis"
+title: "The Discourse on the Advice to Sigāla: Translation and Detailed Pāli Grammatical Analysis"
 authors:
   - "John Kelly"
   - "Sue Sawyer"
