@@ -5,6 +5,7 @@ module Jekyll
   class SimilarContentFooterTag < Liquid::Tag
     @@config = nil
     @@parents_for_tag = nil
+    @@similar_cats = nil
     @@content = nil
     @@content_for_tag = nil
 
@@ -12,8 +13,13 @@ module Jekyll
       puts "Prefetching data for similar_content footer..."
       @@config = v["site.data.content"]
       @@parents_for_tag = {}
+      @@similar_cats = {}
       @@content = []
       @@content_for_tag = Hash.new { |h, k| h[k] = Set.new }
+      for cofefe in v["site.categories"]
+        cat = cofefe.to_liquid.to_h
+        @@similar_cats[cat['slug']] = cat['similars']
+      end
       for cofefe in v["site.tags"]
         tag = cofefe.to_liquid.to_h
         @@parents_for_tag[tag["slug"]] = tag["parents"]
@@ -86,12 +92,6 @@ module Jekyll
             @similars.push({}, 0)
         end
         include_content = v["include_content"].to_liquid.to_h
-        category = v["category"]
-        if category.nil? or category.is_a? String then
-            category = include_content["category"]
-            category = v["site.categories"].find{|c| c.data["slug"] == category}
-        end
-        category = category.to_liquid.to_h
         for candidate in getCandidates(v, include_content)
             if candidate['path'] == include_content['path'] then
                 next
@@ -161,7 +161,7 @@ module Jekyll
             end
             if include_content["category"] == candidate["category"] then
                 score *= @@config["ccmm"]
-            elsif category["similars"].to_a.include? candidate["category"] then
+            elsif @@similar_cats[include_content["category"]].include? candidate["category"] then
                 score *= @@config["scmm"]
             end
             if candidate["status"] == "featured" then

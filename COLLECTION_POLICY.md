@@ -4,7 +4,7 @@ title: "Collection Development Policy"
 
 This document outlines the method and criteria used for adding new content to the library.
 
-This document is primarily for onboarding new contributors, but it may also be of interest to users and patrons of the library.
+This document is primarily for onboarding [new contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTING.md), but it may also be of interest to users and patrons of the library.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -15,27 +15,29 @@ This document is primarily for onboarding new contributors, but it may also be o
 
 ## Overview
 
-The OBU Library serves **English speakers** with a basic education and an **interest in Buddhism**.
+The OBU Library serves **English speakers** with a **basic education** and an **interest in Buddhism**.
 
-Its collections are **entirely digital** and are a combination of self-hosted files (on GitHub and Google Drive) and links to resources accessible on the broader internet.
-Each entry in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
+Its collections are **entirely digital** and are a combination of self-hosted files (on GitHub and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
+Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
 That would as undesirable as it is impossible.
 The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on Early Buddhism.
 
+To that end, works found on the internet are accepted into the library on a **five-point scale** and are sorted into **subtopics (aka "tags")** for easy access. The rest of this document will outline how that is done.
+
 ### The Pipeline
 
 The usual procedure for ingesting new content is as follows:
 
-1. Free content is found online and added to [this folder on Google Drive](https://drive.google.com/drive/folders/16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_).
-2. That content is then sorted by subject.
-3. A reviewer then reviews pieces in their subject area.
-4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) based on what subject they teach and rejected items are archived privately.
-5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_content) and the (Drive) folder is added as a new "tag" on the website.
-6. When a tag has a diverse set of works, its content is reviewed again and organized into a course syllabus. (See [the open issues on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/labels/writing) for courses currently awaiting a volunteer if you're interested in writing one!)
+1. Free content is found online and added to [the ingestion queue on Google Drive](https://drive.google.com/drive/folders/16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_).
+2. That content is then sorted by subject area.
+3. A reviewer then evaluates the pieces in their subject area.
+4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) based on what subject they teach and rejected items are archived.
+5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_content) and the (Drive) folder is added as a new "[tag](https://buddhistuniversity.net/tags/)" on the website.
+6. When a tag has a diverse set of works, its contents are reviewed again and organized into a course syllabus. (See [the open issues on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/labels/writing) for courses currently awaiting a volunteer if you're interested in writing one!)
 
-## Inclusion Criteria
+## Inclusion Criteria (ICs)
 
 For inclusion in the OBU library, a given work should be:
 
@@ -49,24 +51,26 @@ For inclusion in the OBU library, a given work should be:
 8. Difficult to find online
 
 The above factors are to be taken "on balance" such that a deficiency in one area may be compensated for by strength in another.
-For example, there are a few [works of fiction](https://buddhistuniversity.net/search/?q=%2Bis%3Afiction) in the library which fail IC1, but whose craft (IC2) and wholesome messages (IC3) make up for their lack of literal truth.
-On the other hand, the teachings of Chögyam Trungpa, for example, are so disreputable (IC7) and widely publicized (IC8) as to be inadmissible to our library, regardless of his works' potential merits.
+For example, there are a few [works of fiction](https://buddhistuniversity.net/search/?q=%2Bis%3Afiction) in the library which fail IC1 (truthfulness), but whose craft (IC2) and wholesome messages (IC3) make up for their lack of literal truth.
+On the other hand, the teachings of Chögyam Trungpa, for example, are so disreputable (IC7) and widely publicized elsewhere (IC8) as to be inadmissible to our library, regardless of his works' potential other merits.
 
 Note that works are subject to reevaluation.
 If a better (more up-to-date, etc) work is found covering the same topic as an older work, for example, then the older work should be archived in favor of the newer one.
 [*In the Hope of Nibbana*](https://buddhistuniversity.net/content/monographs/in-the-hope-of-nibbana_king-winston) is a good example of such a work which was downranked after [better work](https://buddhistuniversity.net/content/booklets/nourishing-the-roots_bodhi) was found.
 
-Works that would otherwise not be added to the site for their low score on IC2 and/or IC4 should still be added as rank2 works (see below) if they score highly on IC8 to ensure that they remain accessible online.
+Works that would otherwise not be added to the site for their low score on IC2 and/or IC4 should still be added as rank2 works (see below) if they score highly on IC8 to ensure that they remain available online.
 
 ## Acceptance Levels
 
 Rather than a binary "accepted or rejected" status, items in the OBU library are given a 1–5 star rating based on their score on the Inclusion Criteria above.
 
-- One-star pieces fail multiple IC categories and are never proactively added to the site. Their files are kept in a private archive on Google Drive of rejected works.
-- Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa) and are labeled "📦 Archived" on the site (see the table below).
-- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added as a tag.
-- Four-star pieces fail at most one IC category but receive very strong marks in multiple other areas. A four-star review means that this piece is highly recommended and should be added to the website right away (unless its IC5 score is particularly low).
 - Five-star pieces must fail none of the IC categories and must receive strong marks across the board. These are quite rare. They are not identified immediately, but are selected from the pool of recent four-star additions when it comes time to write the next blog post (usually every couple months).
+- Four-star pieces fail at most one IC category but receive very strong marks in multiple other areas. A four-star review means that this piece is highly recommended and should be added to the website right away (unless its IC5 score is particularly low).
+- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added as a tag.
+- Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa) and are labeled "📦 Archived" on the site (see the table below).
+- One-star pieces fail multiple IC categories and are never proactively added to the site. Their files are kept in a private archive on Google Drive of rejected works.
+
+
 
 The following table summarizes the five levels and how they work on the website:
 
@@ -113,7 +117,7 @@ When a work is added into the website, its `course` field is set to the slug of 
 The work may also be tagged with additional `tags` which mark other topics the work is about.
 
 Tags should, but don't have to, correspond to folders on Drive.
-If they do, however, a work should not be tagged with both a folder **and** that folder's parent. Obviously a work about `thai` Buddhism is also about `theravada` and a work about `philosophy` is also about right `view`. Tags should mark wildly different places a work may have been added: for example `sutta` and `lay` for a work about Pāḷi discourses to lay people.
+If they do, however, a work should usually not be tagged with both a folder **and** that folder's parent. Obviously a work about `thai` Buddhism is also about `theravada` and a work about `philosophy` is also about right `view`. Tags should mark wildly distant places a work may have been added: for example `sutta` and `lay` for a work about Pāḷi discourses to lay people.
 
 ## Conclusion
 

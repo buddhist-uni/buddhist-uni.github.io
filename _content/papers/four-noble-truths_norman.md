@@ -14,3 +14,5 @@ address: "Canberra"
 ---
 
 > I suggest that the original form of the 'enlightenment' set was the 'basic' set: *idaṃ dukkhaṃ, ayaṃ dukkha-samudayo, ayaṃ dukkha-nirodho, ayaṃ dukkha-nirodha-gāminī paṭipadā* When these items became known as "Truths", they were [later] so designated: *idaṃdukkha-saccaṃ*, etc.
+
+And for a short post-script to this on the translation of the *ariya* part, see [Why "Noble?" (1990)](/content/papers/why-noble_norman).
