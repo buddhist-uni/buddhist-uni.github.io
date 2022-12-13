@@ -3,14 +3,14 @@ title: "The Pāli Canon"
 parents: [ebts, theravada]
 level: 3
 description: A bibliography of free works about the canon of the Theravada School of Buddhism.
-illustration: https://illeakyw.sirv.com/Images/banners/burmese-pali-manuscript.jpg
+illustration: https://illeakyw.sirv.com/Images/tags/sea-manuscript-closeup.jpg
 illustration_width: 1280
-illustration_height: 894
-illustration_center_y: 12%
-big_illustration: https://upload.wikimedia.org/wikipedia/commons/0/00/Burmese-Pali_Manuscript._Wellcome_L0026547.jpg
+illustration_height: 1008
+illustration_center_y: 30%
+big_illustration: https://iiif.wellcomecollection.org/image/L0030818/full/full/0/default.jpg
 illustration_caption: >-
-  Three folios of Pāli featuring different styles of the Burmese script (square, round, and bold) from
-  <a href="https://commons.wikimedia.org/wiki/File:Burmese-Pali_Manuscript._Wellcome_L0026547.jpg">the Wellcome Library</a> collection. <span style="white-space:nowrap;">(<a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)</span>
+  A closeup of a Thai, Pāli manuscript in
+  <a href="https://wellcomecollection.org/works/mqcx2ty6">the Wellcome Library</a> featuring an illustration of Devas in the margin. <span style="white-space:nowrap;">(<a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)</span>
 image: https://illeakyw.sirv.com/Images/banners/predictions_of_the_brahmins.jpg
 image_width: 1280
 image_height: 568

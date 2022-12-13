@@ -4,7 +4,7 @@ title: "Collection Development Policy"
 
 This document outlines the method and criteria used for adding new content to the library.
 
-This document is primarily for onboarding [new contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTING.md), but it may also be of interest to users and patrons of the library.
+This document is primarily for onboarding new contributors, but it may also be of interest to users and patrons of the library.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -17,7 +17,7 @@ This document is primarily for onboarding [new contributors](https://github.com/
 
 The OBU Library serves **English speakers** with a **basic education** and an **interest in Buddhism**.
 
-Its collections are **entirely digital** and are a combination of self-hosted files (on GitHub and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
+Its collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
 Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
@@ -64,13 +64,11 @@ Works that would otherwise not be added to the site for their low score on IC2 a
 
 Rather than a binary "accepted or rejected" status, items in the OBU library are given a 1–5 star rating based on their score on the Inclusion Criteria above.
 
-- Five-star pieces must fail none of the IC categories and must receive strong marks across the board. These are quite rare. They are not identified immediately, but are selected from the pool of recent four-star additions when it comes time to write the next blog post (usually every couple months).
-- Four-star pieces fail at most one IC category but receive very strong marks in multiple other areas. A four-star review means that this piece is highly recommended and should be added to the website right away (unless its IC5 score is particularly low).
-- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added as a tag.
-- Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa) and are labeled "📦 Archived" on the site (see the table below).
+- Five-star pieces must fail none of the IC categories and must receive strong marks across the board. These are quite rare. They are not identified immediately, but are selected from the pool of recent four-star additions when it comes time to write the next blog post (usually every couple months). Five-star pieces are featured in the newsletter and are recommended for everyone.
+- Four-star pieces fail at most one IC category and receive strong marks in multiple areas. A four-star review means that this piece is highly recommended to anyone interested in the topic and should be added to the website right away unless its IC5 score is particularly low.
+- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been added as a tag. Three-star pieces are recommended for those seriously studying the given topic.
+- Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for the items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added to the site (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa) and are labeled "📦 Archived" on the site (see the table below).
 - One-star pieces fail multiple IC categories and are never proactively added to the site. Their files are kept in a private archive on Google Drive of rejected works.
-
-
 
 The following table summarizes the five levels and how they work on the website:
 
