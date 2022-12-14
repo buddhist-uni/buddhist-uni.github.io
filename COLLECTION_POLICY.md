@@ -4,7 +4,7 @@ title: "Collection Development Policy"
 
 This document outlines the method and criteria used for adding new content to the library.
 
-This document is primarily for onboarding new contributors, but it may also be of interest to users and patrons of the library.
+This document is primarily for onboarding new contributors, but it may also be of interest to patrons of the library.
 
 ## Table of Contents
 - [Overview](#overview)

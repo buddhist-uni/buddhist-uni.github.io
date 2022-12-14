@@ -14,7 +14,7 @@ _Analayo's Craving chapter 4_
 {% include content_blurb.html category="canon" slug="an8.80" %} 
 {% include content_blurb.html category="canon" slug="thag3.5" %}
 {% include content_blurb.html category="canon" slug="iti34" %}
-{% include content_blurb.html category="canon" slug="sn46.55" %}
+{% include content_blurb.html category="canon" slug="an7.74" %}
 </p>
 
 ### Similes

@@ -12,6 +12,7 @@ tags:
   - body
   - society
   - ethics
+  - biology
 reason: "Duplicate of MN 98"
 year: 2018
 ---

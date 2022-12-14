@@ -12,6 +12,7 @@ description: "While some skeptical distance and investigation are necessary to l
 {% include content_blurb.html category="canon" slug="an10.13" %} 
 {% include content_blurb.html category="canon" slug="ud5.7" %}
 {% include content_blurb.html category="canon" slug="sn42.7" %}
+{% include content_blurb.html category="canon" slug="sn46.55" %}
 </p>
 
 ### Similes
