@@ -23,4 +23,4 @@ number: 1
 pages: "20--24"
 ---
 
-> studies suggest that diversity statements be aspirational, emphasize autonomy, and express a value for difference
+> studies suggest that diversity statements [should] be aspirational, emphasize autonomy, and express a value for difference

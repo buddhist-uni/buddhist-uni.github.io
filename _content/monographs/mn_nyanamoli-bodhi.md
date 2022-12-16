@@ -9,12 +9,8 @@ excerpt_url: "https://readingfaithfully.org/selections-from-the-middle-length-di
 year: 1995
 course: mn
 tags:
-  - ebts
   - pali-canon
-  - sutta
-  - setting
   - philosophy
-  - path
 status: featured
 ---
 

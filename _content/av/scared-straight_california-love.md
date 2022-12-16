@@ -10,6 +10,7 @@ course: social
 tags:
   - california
   - writing
+  - art
   - cities
 year: 2020
 month: jul
