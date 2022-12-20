@@ -8,7 +8,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     env:
-        BUILD_DIR: ${{ github.workspace }}/../jekyll_build
+        BUILD_DIR: /home/runner/work/buddhist-uni.github.io/jekyll_build
     steps:
       - name: Checkout the Code
         uses: actions/checkout@v3
