@@ -14,12 +14,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Checkout the Imgs
-        uses: actions/checkout@v3
-        with:
-          repository: buddhist-uni/imgs
-          path: imgs
-      - run: mv imgs ../
       - name: Normalize Unicode in the Previous Commit
         uses: buddhist-uni/normalized-unicode-action@v1
       - name: Install node
@@ -49,11 +43,25 @@ jobs:
           shopt -s globstar
           npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
           test -s $BUILD_DIR/assets/css/purged-main.css
+          mv $BUILD_DIR/image_variants.bash ./scripts/
+      - name: Restore Cached Imgs
+        uses: actions/cache@v3
+        id: imgcache
+        with:
+          path: ${{ env.BUILD_DIR }}/derived_imgs
+          key: imgderiver-v0-${{ hashFiles('./scripts/image_variants.bash') }}
+      - name: Checkout the Imgs
+        if: steps.imgcache.outputs.cache-hit != 'true'
+        uses: actions/checkout@v3
+        with:
+          repository: buddhist-uni/imgs
+          path: imgs
       - name: Generate Image Variants
+        if: steps.imgcache.outputs.cache-hit != 'true'
         run: |
             convert --version
-            bash $BUILD_DIR/image_variants.bash
-            rm $BUILD_DIR/image_variants.bash
+            mv imgs ../
+            bash ./scripts/image_variants.bash
       - name: Upload Build as Artifact
         uses: actions/upload-pages-artifact@main
         with:
