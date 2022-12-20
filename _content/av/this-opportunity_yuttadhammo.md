@@ -12,8 +12,13 @@ course: function
 tags:
   - form
   - meditation
-  - vipassana
+  - cosmology
 minutes: 36
+series: la-course_yuttadhammo
+number: 15
+status: featured
 ---
+
+> We waste our whole lives neglecting our minds. And this is really what our purpose is in being human: it's to develop our minds.
 
 An end to [The Los Angeles Course](/series/la-course_yuttadhammo), Bhante encourages us to use our human life wisely.
