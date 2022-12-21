@@ -4,7 +4,9 @@ permalink: image_variants.bash
 comment: |
   This is an html file with frontmatter so that jekyll will process it.
   It will become a bash script, which the GitHub Build script will run and delete.
-convops: "-verbose -strip -define webp:method=6 -define webp:thread-level=1"
+convops: "-verbose -strip -define webp:method=6"
+# "method" above is 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
+# We're using the default quality targets
 ---
 #!/bin/bash
 {% capture outdir %}{{site.destination}}/derived_imgs/{% endcapture %}echo "Outputting to {{ outdir }}"
