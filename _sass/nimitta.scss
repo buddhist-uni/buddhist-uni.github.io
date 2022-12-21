@@ -230,7 +230,7 @@ $banner-shadow: 0 0 8px black;
 }
 
 .banner-img.fullsize {
-    height: $bannerfullsize;
+    height: 480px;
     @media (min-width: 1800px) {
         height: 680px;
     }

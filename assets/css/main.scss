@@ -11,8 +11,8 @@
 #
 # FontAwesome was downloaded from: https://fontawesome.com/v5/download
 ---
-// Pull in site config data here
-$bannerfullsize: {{ site.data.banner.max_size }}px;
+// Pull in site config data you need here like so:
+// $varname: {{ site.data.file.value }}px;
 
 @import "primer";
 @import "minima";

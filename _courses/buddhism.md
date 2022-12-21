@@ -15,7 +15,7 @@ google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 
 description: "A general introduction to Buddhism suitable for everyone."
 icon: "fas fa-chalkboard-teacher"
-image: "https://illeakyw.sirv.com/Images/banners/Isshinin-entrance.jpeg"
+image: "https://buddhistuniversity.net/imgs/Isshinin-entrance.webp"
 image_width: 1280
 image_center_y: 41%
 image_center_x: 44%

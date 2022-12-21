@@ -1,6 +1,4 @@
 max_stretch: 1.25
-max_size: 480
-double_size: 960
 loading_state: linear-gradient(lightgray, lightgray)
 # The reason we don't put the overlay in sirv is that large images are served from the source
 overlay: "linear-gradient(#5E241732, #5E241750)"
