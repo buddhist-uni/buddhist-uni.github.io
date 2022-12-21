@@ -4,11 +4,14 @@ authors:
   - "G. P. Malalasekera"
 external_url: "https://www.palikanon.com/english/pali_names/dic_idx.html"
 source_url: "https://archive.org/details/in.ernet.dli.2015.281359"
-course: pali-language
+drive_links:
+  - "https://drive.google.com/file/d/1ojH-HrQKX8Vpha5QgwL213x7NmT-ImUu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AcuLvvqp0Bcgm_2s_yB65zNzdU4pigr5/view?usp=drivesdk"
+formats: ["Vol 1", "Vol 2"]
+course: pali-dictionaries
 tags:
   - characters
   - setting
-  - pali-dictionaries
 year: 1937
 publisher: "The Government of India"
 ---

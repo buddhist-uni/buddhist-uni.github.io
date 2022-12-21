@@ -4,6 +4,7 @@ permalink: image_variants.bash
 comment: |
   This is an html file with frontmatter so that jekyll will process it.
   It will become a bash script, which the GitHub Build script will run and delete.
+convops: "-verbose -strip -define webp:method=6 -define webp:thread-level=1"
 ---
 #!/bin/bash
 {% capture outdir %}{{site.destination}}/derived_imgs/{% endcapture %}echo "Outputting to {{ outdir }}"
@@ -12,12 +13,12 @@ cd "{{ site.source }}/../imgs"
 
 {% capture sourceurl %}{{site.data.content.filehost}}imgs/{% endcapture %}
 {% assign pages = site.courses | where: "part_of_course", "imagery" | where_exp: "p", "p.image contains sourceurl" %}
-echo "IMAGERY COURSE IMAGES"
+echo "====IMAGERY COURSE IMAGES===="
 mkdir -p '{{outdir}}imagery'
 {% for p in pages %}
-{% assign sourceimg = p.image | replace: sourceurl, '' %}identify '{{sourceimg}}'
-convert '{{sourceimg}}' -verbose -strip -write mpr:orig +delete \
-  mpr:orig {{ page.convops }} -resize 1066 -write '{{outdir}}{{sourceimg | replace: ".JPG", "-2x.webp" }}' +delete \
-  mpr:orig {{ page.convops }} -resize 533  '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'
+{% assign sourceimg = p.image | replace: sourceurl, '' %}
+convert '{{sourceimg}}' {{ page.convops }} -write mpr:orig \
+  -resize '1066x1280>' -write '{{outdir}}{{sourceimg | replace: ".JPG", ".webp" }}' +delete \
+  mpr:orig -resize 533 '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'
 {% endfor %}
 

@@ -32,25 +32,22 @@ jobs:
       - name: Build the site
         run: |
           mkdir $BUILD_DIR
-          cd $GITHUB_WORKSPACE
-          HASH="$(git log -n 1 --format=%H)"
-          echo "Building $HASH into $BUILD_DIR with:"
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
+          mv $BUILD_DIR/image_variants.bash ./scripts/
       - name: Purge CSS
         run: |
           shopt -s globstar
           npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
           test -s $BUILD_DIR/assets/css/purged-main.css
-          mv $BUILD_DIR/image_variants.bash ./scripts/
       - name: Derived Img Cache
         uses: actions/cache@v3
         id: imgcache
         with:
           path: ${{ env.BUILD_DIR }}/derived_imgs
           key: imgderiver-v0-${{ hashFiles('./scripts/image_variants.bash') }}
-      - name: Checkout the Imgs
+      - name: Checkout Raw Imgs
         if: steps.imgcache.outputs.cache-hit != 'true'
         uses: actions/checkout@v3
         with:
