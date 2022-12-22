@@ -3,6 +3,8 @@ title: The Higher Training
 order: 9
 description: 
 image: https://buddhistuniversity.net/imgs/function/5160dt.jpg
+image_width: 2978
+image_height: 3722
 image_info: <a href="https://www.metmuseum.org/art/collection/search/39707">The Met</a>
 ---
 

@@ -3,6 +3,8 @@ title: Conclusion
 order: 15
 description: 
 image: https://buddhistuniversity.net/imgs/function/DP231900.jpg
+image_width: 3001
+image_height: 4000
 image_info: <a href="https://www.metmuseum.org/art/collection/search/45432">The Met</a>
 ---
 

@@ -3,7 +3,8 @@ title: "Part 2: Buddhist Path"
 order: 8
 description: 
 image: https://buddhistuniversity.net/imgs/function/Chion-in.jpg
-image_info: <a href="https://commons.wikimedia.org/wiki/File:Bhamo-novicias-d02.jpg">Colegota</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/es/deed.en">CC BY-SA 2.5 ES</a>
+image_width: 3840
+image_height: 5760
 image_info: <a href="https://commons.wikimedia.org/wiki/File:%E7%9F%A5%E6%81%A9%E9%99%A2_Chion-in_(11152619496).jpg">Norio Nakayama</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>
 ---
 

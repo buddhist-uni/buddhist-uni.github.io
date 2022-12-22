@@ -2,6 +2,8 @@
 title: "Hearing the Dharma"
 description: "Buddhism always begins with an encounter."
 image: https://buddhistuniversity.net/imgs/buddhism/Yuttadhammo.jpeg
+image_width: 739
+image_height: 415
 image_info: <a href="https://youtu.be/mH2sEqrCza4" ga-event-value="0.75">Bhante Yuttadhammo</a>
 order: 2
 ---

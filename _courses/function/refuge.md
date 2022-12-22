@@ -3,6 +3,8 @@ title: Refuge
 order: 7
 description: 
 image: https://buddhistuniversity.net/imgs/function/Kodo_Sawaki_Zazen.jpg
+image_width: 1786
+image_height: 2551
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Kodo_Sawaki_Zazen.jpg">Antai-ji Archives (Hyogo, Japan)</a>
 ---
 

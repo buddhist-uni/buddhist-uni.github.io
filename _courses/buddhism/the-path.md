@@ -2,6 +2,8 @@
 title: "Entering the Path"
 description: "The Buddha's recommended approach is one of humility and pragmatism."
 image: https://buddhistuniversity.net/imgs/buddhism/Wat_Khung_Taphao_novice.jpg
+image_width: 1200
+image_height: 1600
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_child_monk_in_Wat_Khung_Taphao.jpg">เทวประภาส</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>
 order: 7
 ---

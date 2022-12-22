@@ -3,6 +3,8 @@ title: Harmlessness
 order: 4
 description: 
 image: https://buddhistuniversity.net/imgs/function/pakhao.jpg
+image_width: 718
+image_height: 961
 image_info: <a href="https://commons.wikimedia.org/wiki/File:BuddhistMonk02.jpg">Chitrapa</a>
 ---
 

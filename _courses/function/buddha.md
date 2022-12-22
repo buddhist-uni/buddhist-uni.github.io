@@ -3,6 +3,8 @@ title: The Buddha
 order: 2
 description: The Buddha is our teacher, guide, and spiritual friend who shows us the way out of our suffering.
 image: https://buddhistuniversity.net/imgs/function/Kamakura_Shakyamuni_at_Cleveland_Museum_of_Art.jpg
+image_width: 2661
+image_height: 3400
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Japan,_Kamakura_period_-_Shakyamuni_-_2015.501_-_Cleveland_Museum_of_Art.jpg">The Cleveland Museum of Art</a>
 ---
 

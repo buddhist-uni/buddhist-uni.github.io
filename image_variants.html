@@ -3,7 +3,8 @@ layout: nil
 permalink: image_variants.bash
 comment: |
   This is an html file with frontmatter so that jekyll will process it.
-  It will become a bash script, which the GitHub Build script will run and delete.
+  It will become a bash script per the permalink above,
+  which the Build script moves out and executes.
 convops: "-verbose -strip -define webp:method=6"
 # "method" above is 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
 # We're using the default quality targets
@@ -24,3 +25,21 @@ convert '{{sourceimg}}' {{ page.convops }} -write mpr:orig \
   mpr:orig -resize 533 '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'
 {% endfor %}
 
+echo "====BUDDHISM+FUNCTION COURSE IMAGES===="
+{% assign pages = site.courses | where_exp: "p", "p.image contains sourceurl and p.part_of_course contains 'u'" %}{% comment %}UGLY FRAGILE HACK as "imagery" happens to not contain a 'u' while buddhism and function do not{% endcomment %}
+mkdir '{{outdir}}buddhism'
+mkdir '{{outdir}}function'
+{%- for p in pages -%}
+{%- assign sourceimg = p.image | replace: sourceurl, '' | replace: "%2C", "," -%}
+{%- assign dest = sourceimg | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.png', '.webp' -%}
+{% if p.image_height > p.image_width and p.image_height >= 1536 %}
+convert "{{sourceimg}}" {{ page.convops }} -write mpr:orig \
+  -resize '1920x1920>' -write "{{outdir}}{{ dest }}" +delete \
+  mpr:orig -resize '1280x1280>' -write "{{outdir}}{{ dest | replace: ".webp", "-2x.webp" }}" +delete \
+  mpr:orig -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"
+{% else %}
+convert "{{sourceimg}}" {{ page.convops }} -write mpr:orig \
+  -resize '1280x1280>' -write "{{outdir}}{{ dest }}" +delete \
+  mpr:orig -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"
+{% endif %}
+{% endfor %}
