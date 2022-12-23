@@ -13,6 +13,8 @@ image: "https://www.buddhistuniversity.net/imgs/burmese-nuns-studying.jpg"
 image_center_x: 20%
 image_center_y: 46%
 big_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg"
+big_width: 2832
+big_height: 1896
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 

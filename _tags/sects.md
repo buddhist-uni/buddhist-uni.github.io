@@ -18,6 +18,8 @@ image_height: 853
 image_center_y: 45%
 image_center_x: 51%
 big_image: https://upload.wikimedia.org/wikipedia/commons/1/13/Ellora_Caves%2C_India%2C_The_Vishvakarma_Buddhist_Cave.jpg
+big_width: 3072
+big_height: 2048
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Ellora_Caves,_India,_The_Vishvakarma_Buddhist_Cave.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 

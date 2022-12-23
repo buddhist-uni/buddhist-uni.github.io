@@ -16,6 +16,8 @@ image_height: 1024
 image_center_x: 64%
 image_center_y: 34%
 big_image: https://upload.wikimedia.org/wikipedia/commons/8/89/Buddhist_nuns_Yangon.jpg
+big_width: 3250
+big_height: 2720
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_nuns_Yangon.jpg">kallerna</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 

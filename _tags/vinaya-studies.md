@@ -15,6 +15,8 @@ image_center_x: 76%
 image_width: 1280
 image_height: 851
 big_image: https://upload.wikimedia.org/wikipedia/commons/1/19/Chinese_Buddhist_Monk_Electric_Bike.jpeg
+big_width: 3008
+big_height: 2000
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Chinese_Buddhist_Monk_Electric_Bike.jpeg">Jo-Ann Gallagher</a>, <a href="https://creativecommons.org/licenses/by/2.0">BY 2.0</a>
 ---
 

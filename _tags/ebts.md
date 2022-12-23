@@ -9,6 +9,8 @@ image_height: 1024
 image_center_x: 45%
 image_center_y: 66%
 big_image: https://upload.wikimedia.org/wikipedia/commons/6/63/Ajanta_Cave_17%2C_antechamber_to_the_shrine%2C_Adoration_of_the_Buddha_%28color_illustration%29.jpg
+big_width: 1672
+big_height: 1375
 footer_info: © <a href="https://commons.wikimedia.org/wiki/User:Yann" title="User:Yann">Yann Forget</a>&nbsp;/&nbsp;<a class="external text" href="https://commons.wikimedia.org">Wikimedia Commons</a>
 illustration: https://illeakyw.sirv.com/Images/tags/buddha-statue-teaching.jpg
 illustration_center_x: 51.5%

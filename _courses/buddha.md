@@ -3,6 +3,9 @@ title: "The Buddha"
 subtitle: A Course Syllabus
 icon: "fas fa-hand-holding"
 image: "https://illeakyw.sirv.com/Images/banners/dipankara-sumedha.jpg"
+big_image: "https://github.com/buddhist-uni/original_size_imgs/raw/main/dipankara-sumedha.jpg"
+big_width: 2415
+big_height: 1274
 image_width: 2415
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Ascetic_Sumedha_and_Dipankara_Buddha.jpg">Hintha</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE

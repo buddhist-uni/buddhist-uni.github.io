@@ -11,6 +11,8 @@ illustration_caption: >-
   Two Western monks in a thin, Australian forest drive a golf cart off into late afternoon sunlight.
   (<a href="https://commons.wikimedia.org/wiki/File:Dhammagiri_206.jpg">Gary A Collett</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 big_image: https://live.staticflickr.com/2201/2259528661_7ffa43ed8b_o_d.jpg
+big_width: 3008
+big_height: 2000
 image: https://illeakyw.sirv.com/Images/banners/Amaravati_Buddhist_Monastery_5.jpg
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Amaravati_Buddhist_Monastery_5.jpg">Jake Barnes</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 image_width: 1024

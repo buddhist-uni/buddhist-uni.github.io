@@ -20,6 +20,8 @@ image_center_x: 30%
 image_center_y: 35%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Ascetic_Bodhisatta_Gotama_with_the_Group_of_Five.jpg">WikiMedia Commons</a>, Public Domain
 big_image: https://upload.wikimedia.org/wikipedia/commons/0/05/Ascetic_Bodhisatta_Gotama_with_the_Group_of_Five.jpg
+big_width: 2048
+big_height: 1308
 ---
 
 Even setting aside [The Buddha](/tags/buddha) himself, the Early Buddhist Texts are full of fascinating and compelling characters.

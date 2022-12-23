@@ -18,6 +18,8 @@ image_height: 960
 image_center_x: 50%
 image_center_y: 40%
 big_image: https://upload.wikimedia.org/wikipedia/commons/c/c5/Lotus_in_a_Pond.jpg
+big_width: 4608
+big_height: 3456
 ---
 
 The Buddha taught a comprehensive, spiritual educational system whose purpose is to help us cultivate and grow our virtues, mental clarity, and wisdom.

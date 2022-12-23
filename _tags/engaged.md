@@ -21,6 +21,8 @@ image_height: 913
 image_center_x: 40%
 image_center_y: 50%
 big_image: https://upload.wikimedia.org/wikipedia/commons/c/c6/Protest_against_Trident_II_Missile%2C_Cape_Canaveral_Florida%2C_1987_06.jpg
+big_width: 2850
+big_height: 2032
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Protest_against_Trident_II_Missile,_Cape_Canaveral_Florida,_1987_06.jpg">Infrogmation</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 

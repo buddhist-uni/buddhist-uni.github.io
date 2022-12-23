@@ -5,6 +5,8 @@ permalink: /feed
 image: "https://www.buddhistuniversity.net/imgs/origami.jpg"
 sirv_options: blur=2
 big_image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Origami_%2813777498043%29.jpg
+big_width: 5184
+big_height: 3456
 image_width: 1280
 image_height: 853
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(13777498043).jpg">Helgi Halldórsson</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>

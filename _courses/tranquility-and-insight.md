@@ -11,6 +11,8 @@ image_width: 1280
 image_center_x: 40%
 image_center_y: 56%
 big_image: https://upload.wikimedia.org/wikipedia/commons/5/52/Adachi_Museum_of_Art_Near_Matsue_Japanese_Garden_1.JPG
+big_width: 3635
+big_height: 2184
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Adachi_Museum_of_Art_Near_Matsue_Japanese_Garden_1.JPG">Matsue</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 description: "A short course on part of the Madhyama Āgama held in 2013, the sutras covered (MA 72-86) revolve around the interdependence of _samatha_ and _vipassana_ meditation and their co-creation of wisdom.  Bhikkhu Anālayo makes the difficult subject accessible in his inimitably methodical style."
 time: 1

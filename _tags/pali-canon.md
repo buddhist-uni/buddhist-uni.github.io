@@ -17,6 +17,8 @@ image_height: 568
 image_center_x: 45%
 image_center_y: 64%
 big_image: https://upload.wikimedia.org/wikipedia/commons/1/12/%28Left%29_The_predictions_of_the_brahmins%2C_Wellcome_L0030766.jpg
+big_width: 4998
+big_height: 2216
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:(Left)_The_predictions_of_the_brahmins,_Wellcome_L0030766.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 

@@ -14,6 +14,8 @@ image_width: 1440
 image_center_x: 10%
 image_center_y: 51%
 big_image: https://upload.wikimedia.org/wikipedia/commons/e/ef/Mihinthalaya_Buddha_Statue.jpg
+big_width: 6000
+big_height: 4000
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Mihinthalaya_Buddha_Statue.jpg">Hasitha Senadheera</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 epigraph: |
   > 諸佛留藏經，  

@@ -17,6 +17,8 @@ image_height: 960
 image_center_x: 51%
 image_center_y: 10%
 big_image: https://upload.wikimedia.org/wikipedia/commons/e/e2/Buddha_Temple_%2C_Bodhgaya.jpg
+big_width: 3264
+big_height: 2448
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha_Temple_%2C_Bodhgaya.jpg">WikiMedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
 ---
 

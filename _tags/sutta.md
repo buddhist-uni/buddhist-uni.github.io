@@ -18,6 +18,8 @@ image_width: 1024
 image_center_x: 18%
 image_center_y: 65%
 big_image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Polonnaruwa.JPG
+big_width: 4592
+big_height: 2576
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Polonnaruwa.JPG">V. Tagariello</a>
 ---
 

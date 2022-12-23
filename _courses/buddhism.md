@@ -21,6 +21,8 @@ image_center_y: 41%
 image_center_x: 44%
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan.jpg">Basile Morin</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 big_image: https://upload.wikimedia.org/wikipedia/commons/7/71/Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan.jpg
+big_width: 5973
+big_height: 4480
 time: 2
 epigraph: |
   > "Open are the doors to the deathless!"  

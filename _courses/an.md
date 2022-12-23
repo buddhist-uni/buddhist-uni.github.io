@@ -8,6 +8,8 @@ time: 10
 icon: "fas fa-dove"
 image: "https://illeakyw.sirv.com/Images/banners/Buddha_Teaching.jpg"
 big_image: "https://upload.wikimedia.org/wikipedia/commons/8/80/016_Buddha_Teaching_%289170019757%29.jpg"
+big_width: 4320
+big_height: 3240
 image_width: 1280
 image_height: 960
 image_center_x: 73%

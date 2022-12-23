@@ -18,6 +18,8 @@ image_height: 723
 image_center_x: 44%
 image_center_y: 12%
 big_image: https://upload.wikimedia.org/wikipedia/commons/6/60/Shuttle_Enterprise_Flight_to_New_York_%28201204270023HQ%29.jpg
+big_width: 3245
+big_height: 2291
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Shuttle_Enterprise_Flight_to_New_York_(201204270023HQ).jpg">NASA</a>
 ---
 

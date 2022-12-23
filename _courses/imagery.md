@@ -7,6 +7,8 @@ image_width: 1000
 image_center_y: 50%
 sirv_options: "shadows=-1"
 big_image: https://images.metmuseum.org/CRDImages/as/original/DP123360.jpg
+big_width: 2000
+big_height: 2000
 banner_info: <a href="https://www.metmuseum.org/art/collection/search/38118">The Met</a>
 epigraph: |
   > "As to that, Sandaka, I shall give you a simile..."  

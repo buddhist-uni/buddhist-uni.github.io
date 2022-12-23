@@ -15,6 +15,8 @@ image_height: 960
 image_center_y: 60%
 image_center_x: 70%
 big_image: https://upload.wikimedia.org/wikipedia/commons/7/7d/Dhamekh_Stupa%2C_where_the_Buddha_gave_the_first_sermon_on_the_Four_Noble_Truths_and_the_Eightfold_Path_to_his_five_disciples%2C_Sarnath.jpg
+big_width: 4000
+big_height: 3000
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Dhamekh_Stupa,_where_the_Buddha_gave_the_first_sermon_on_the_Four_Noble_Truths_and_the_Eightfold_Path_to_his_five_disciples,_Sarnath.jpg">Ken Wieland</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">BY-SA 2.0</a>
 ---
 

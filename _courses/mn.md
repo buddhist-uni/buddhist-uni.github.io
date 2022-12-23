@@ -14,6 +14,8 @@ image_width: 1338
 image_center_x: 99%
 image_center_y: 6%
 big_image: "https://upload.wikimedia.org/wikipedia/commons/2/24/044_Teaching_the_Five_Disciples_%289014362720%29.jpg"
+big_width: 3648
+big_height: 2617
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:044_Teaching_the_Five_Disciples_(9014362720).jpg">Photo Dharma</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 next_courses:
   - ma

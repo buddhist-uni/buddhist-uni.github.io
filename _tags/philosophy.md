@@ -14,6 +14,8 @@ image_width: 1280
 image_center_y: 55%
 image_center_x: 15%
 big_image: https://upload.wikimedia.org/wikipedia/commons/6/61/Buddha_in_Nirvana_%28Death_of_Sakyamuni%29%2C_Kamakura_period%2C_13th_century%2C_wood_-_Tokyo_National_Museum_-_DSC05096.jpg
+big_width: 5472
+big_height: 3648
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha_in_Nirvana_(Death_of_Sakyamuni),_Kamakura_period,_13th_century,_wood_-_Tokyo_National_Museum_-_DSC05096.jpg">Tokyo National Museum</a>
 ---
 

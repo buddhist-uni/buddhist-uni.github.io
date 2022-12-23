@@ -11,6 +11,8 @@ image_width: 802
 image_center_y: 36%
 image_center_x: 39%
 big_image: https://upload.wikimedia.org/wikipedia/commons/9/94/Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg
+big_width: 3472
+big_height: 4430
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_Buddha_-_Google_Art_Project.jpg">Odilon Redon</a>
 tags:
   - theravada

@@ -12,6 +12,8 @@ illustration_caption: >-
   (<a href="https://commons.wikimedia.org/wiki/File:Monks_Debating_Practice_At_Sera_Monastery.JPG">Thomas Fanghaenel</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Buddha_Teaching_woodcut.jpg
 big_image: https://upload.wikimedia.org/wikipedia/commons/9/90/034_Buddha_Teaching_%2839570552165%29.jpg
+big_width: 5811
+big_height: 3583
 image_width: 1279
 image_height: 789
 image_center_y: 55%

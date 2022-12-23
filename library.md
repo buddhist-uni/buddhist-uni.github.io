@@ -10,7 +10,9 @@ image: "https://www.buddhistuniversity.net/imgs/nostalgic-gate.jpeg"
 image_width: 1280
 image_center_x: 50%
 image_center_y: 37%
-big_image: "https://upload.wikimedia.org/wikipedia/commons/7/79/%E9%81%82%E6%98%8C%E6%96%B0%E6%98%8C%E5%A4%A7%E4%BD%9B%E5%AF%BA_-_3.jpg"
+big_image: "https://github.com/buddhist-uni/original_size_imgs/raw/main/gate.jpg"
+big_width: 1921
+big_height: 1080
 banner_info: <a href="https://commons.m.wikimedia.org/wiki/File:%E9%81%82%E6%98%8C%E6%96%B0%E6%98%8C%E5%A4%A7%E4%BD%9B%E5%AF%BA_-_3.jpg">黑揍红</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 ---
 

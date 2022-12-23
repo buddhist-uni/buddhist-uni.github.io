@@ -7,6 +7,8 @@ image_width: 1024
 image_center_x: 80%
 image_center_y: 18%
 big_image: https://upload.wikimedia.org/wikipedia/commons/b/b5/SrA_Jette_Carr%2C_USAF_%285%29_%2814532088103%29.jpg
+big_width: 4017
+big_height: 2779
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_USAF_(5)_(14532088103).jpg">U.S. Department of Defense</a>
 ---
 

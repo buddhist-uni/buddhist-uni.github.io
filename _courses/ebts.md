@@ -20,6 +20,8 @@ icon: "far fa-map fa-rotate-90"
 image: "https://illeakyw.sirv.com/Images/banners/buddha-myth.jpg"
 image_width: 668
 big_image: https://upload.wikimedia.org/wikipedia/commons/8/84/The_Victory_of_Buddha_-_Myths_of_the_Hindus_%26_Buddhists.jpg
+big_width: 1645
+big_height: 2360
 image_center_y: 13%
 image_center_x: 87%
 banner_info: <a href="https://archive.org/details/mythsofthehindus00niveuoft">Abanindro Nath Tagore</a>

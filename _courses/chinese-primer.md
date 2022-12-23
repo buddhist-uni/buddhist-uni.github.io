@@ -9,8 +9,9 @@ image: https://illeakyw.sirv.com/Images/banners/baisigou_sutra.jpg
 sirv_options: contrast=1
 image_width: 1280
 image_center_y: 34%
-# Smaller image with increased contrast actually looks better than the full resolution photo
-# big_image: https://upload.wikimedia.org/wikipedia/commons/2/2c/Baisigou_Square_Pagoda_Chinese_Buddhist_sutra_B.jpg
+big_image: https://github.com/buddhist-uni/original_size_imgs/raw/main/Baisigou_Square_Pagoda_Chinese_Buddhist_sutra_B.jpg
+big_width: 3841
+big_height: 2233
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Baisigou_Square_Pagoda_Chinese_Buddhist_sutra_B.jpg">BabelStone</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 tags:
   - agama

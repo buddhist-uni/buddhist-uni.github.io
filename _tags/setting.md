@@ -13,6 +13,8 @@ illustration_caption: >-
   <a href="https://commons.wikimedia.org/wiki/File:Hermitage_of_Valmiki,_Folio_from_the_%22Nadaun%22_Ramayana_(Adventures_of_Rama)_LACMA_AC1999.127.45.jpg">the Los Angeles County Museum of Art</a>.
 image: https://illeakyw.sirv.com/Images/banners/Nagarjuna_Sagar_Dam.jpg
 big_image: https://upload.wikimedia.org/wikipedia/commons/5/5f/Charming_Swan_In_The_Mist_Of_Paradise_At_Nagarjuna_Sagar_Dam.jpg
+big_width: 6000
+big_height: 3796
 image_width: 1280
 image_height: 810
 image_center_x: 81%

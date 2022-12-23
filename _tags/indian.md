@@ -16,6 +16,8 @@ image_height: 695
 image_center_x: 33%
 image_center_y: 30%
 big_image: https://upload.wikimedia.org/wikipedia/commons/7/7d/N-BR-39_Ashokan_Pillar_Vaishali_%2813%29.jpg
+big_width: 3039
+big_height: 1650
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:N-BR-39_Ashokan_Pillar_Vaishali_(13).jpg">Amaan Imam</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 

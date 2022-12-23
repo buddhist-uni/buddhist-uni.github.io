@@ -10,6 +10,8 @@ image_width: 480
 image_center_x: 30%
 image_center_y: 29%
 big_image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/%28Above%29_sBed-byed_%28Gopaka%29%2C_holding_a_book%3B_Wellcome_V0018272_%28cropped%29.jpg"
+big_width: 1265
+big_height: 2025
 ---
 {%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
 {%- assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" | sort: "name" -%}

@@ -18,6 +18,8 @@ image_height: 912
 image_center_y: 55%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha,_resisting_the_demons_of_Mara,_Wellcome_V0046085.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">BY 4.0</a>
 big_image: https://upload.wikimedia.org/wikipedia/commons/2/26/Buddha%2C_resisting_the_demons_of_Mara%2C_Wellcome_V0046085.jpg
+big_width: 3135
+big_height: 2233
 ---
 
 The similes, metaphors and diction of the early canon.
