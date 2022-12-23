@@ -6,6 +6,8 @@ external_url: "https://ped.readingfaithfully.org/"
 source_url: "https://dsal.uchicago.edu/dictionaries/pali/"
 drive_links:
   - "https://drive.google.com/file/d/1myPcLRNjZ5dB2JhqHOOzCZh2cZE1mEef/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1g03tizZMKcUnGh1x2x3mF2YnXJX1L2q5/view?usp=drivesdk"
+formats: [pdf, mobi]
 course: pali-dictionaries
 tags:
   - pali-language
