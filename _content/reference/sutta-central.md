@@ -8,6 +8,7 @@ course: sutta
 tags:
   - agama
   - ebts
+  - pali-dictionaries
 ---
 
-SuttaCentral hosts sources and free translations of Early Buddhist Texts, meticulously organized by parallels, books,  languages and searchable with several large indexes.
+SuttaCentral hosts sources and free translations of Early Buddhist Texts, meticulously organized by parallels, books,  languages and searchable with several large indexes and built-in dictionary tools.

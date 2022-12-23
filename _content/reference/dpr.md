@@ -8,6 +8,7 @@ course: translating-pali
 tags:
   - pali-commentaries
   - pali-canon
+  - pali-dictionaries
 base_value: 1
 ---
 
