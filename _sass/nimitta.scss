@@ -285,17 +285,6 @@ h5 {
 }
 
 $new-tab-icon-size: 0.95em;
-a[target="_blank"]:after {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    content: " \f08e";
-    vertical-align: super;
-    font-size: 65%;
-}
-
-a.btn[target="_blank"]:after {
-    content: "";
-}
 
 .back {
     font-family: $base-font-family;
