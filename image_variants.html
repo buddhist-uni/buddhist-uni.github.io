@@ -5,9 +5,10 @@ comment: |
   This is an html file with frontmatter so that jekyll will process it.
   It will become a bash script per the permalink above,
   which the Build script moves out and executes.
-convops: "-verbose -strip -define webp:method=6"
+convops: "-verbose -strip -define webp:method=6 -define webp:pass=6 -define webp:target-psnr=49"
 # "method" above is 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
-# We're using the default quality targets
+# "pass" tells it to do 6 passes to dial in the quality
+# which is "target"ting a Peak Signal-to-Noise-Ratio of 49, which was a nice balance of quality and size in testing
 ---
 #!/bin/bash
 {% capture outdir %}{{site.destination}}/derived_imgs/{% endcapture %}echo "Outputting to {{ outdir }}"
@@ -20,26 +21,35 @@ echo "====IMAGERY COURSE IMAGES===="
 mkdir -p '{{outdir}}imagery'
 {% for p in pages %}
 {% assign sourceimg = p.image | replace: sourceurl, '' %}
-convert '{{sourceimg}}' {{ page.convops }} -write mpr:orig \
-  -resize '1066x1280>' -write '{{outdir}}{{sourceimg | replace: ".JPG", ".webp" }}' +delete \
-  mpr:orig -resize 533 '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'
-{% endfor %}
+convert '{{sourceimg}}' {{ page.convops }} \
+  -resize '1066x1280>' -write '{{outdir}}{{sourceimg | replace: ".JPG", ".webp" }}' \
+  -resize 533 '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'{% assign foreground = forloop.rindex | modulo: 2 %}{% if foreground == 0 %} &>.out &
+pid=$!{% elsif forloop.index >= 2 %}
+wait $pid
+cat .out
+{% endif %}{% endfor %}
 
 echo "====BUDDHISM+FUNCTION COURSE IMAGES===="
 {% assign pages = site.courses | where_exp: "p", "p.image contains sourceurl and p.part_of_course contains 'u'" %}{% comment %}UGLY FRAGILE HACK as "imagery" happens to not contain a 'u' while buddhism and function do not{% endcomment %}
 mkdir '{{outdir}}buddhism'
 mkdir '{{outdir}}function'
 {%- for p in pages -%}
+{%- assign foreground = forloop.rindex | modulo: 2 -%}
 {%- assign sourceimg = p.image | replace: sourceurl, '' | replace: "%2C", "," -%}
 {%- assign dest = sourceimg | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.png', '.webp' -%}
 {% if p.image_height > p.image_width and p.image_height >= 1536 %}
-convert "{{sourceimg}}" {{ page.convops }} -write mpr:orig \
-  -resize '1920x1920>' -write "{{outdir}}{{ dest }}" +delete \
-  mpr:orig -resize '1280x1280>' -write "{{outdir}}{{ dest | replace: ".webp", "-2x.webp" }}" +delete \
-  mpr:orig -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"
+convert "{{sourceimg}}" {{ page.convops }} \
+  -resize '1920x1920>' -write "{{outdir}}{{ dest }}" \
+  -resize '1280x1280>' -write "{{outdir}}{{ dest | replace: ".webp", "-2x.webp" }}" \
 {% else %}
 convert "{{sourceimg}}" {{ page.convops }} -write mpr:orig \
-  -resize '1280x1280>' -write "{{outdir}}{{ dest }}" +delete \
-  mpr:orig -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"
-{% endif %}
-{% endfor %}
+  -resize '1280x1280>' -write "{{outdir}}{{ dest }}" \
+{% endif %}  -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"{% if foreground == 0 %} &>.out &
+pid=$!
+{% elsif forloop.index >= 2 %}
+wait $pid
+cat .out
+{% endif %}{% endfor %}
+
+rm .out
+
