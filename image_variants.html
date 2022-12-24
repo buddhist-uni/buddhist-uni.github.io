@@ -5,10 +5,12 @@ comment: |
   This is an html file with frontmatter so that jekyll will process it.
   It will become a bash script per the permalink above,
   which the Build script moves out and executes.
-convops: "-verbose -strip -define webp:method=6 -define webp:pass=6 -define webp:target-psnr=49"
-# "method" above is 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
-# "pass" tells it to do 6 passes to dial in the quality
-# which is "target"ting a Peak Signal-to-Noise-Ratio of 49, which was a nice balance of quality and size in testing
+convops: "-verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49"
+# "verbose" echos each write it does
+# "strip"s metadata
+# "method" is a 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
+# "pass" tells it to do N passes to dial in the quality (5=inconsistent -> 7=reliable)
+# which is "target"ting a Peak Signal-to-Noise-Ratio ("psnr") of 49 dB (~0.002% error, near the limit for 8-bit images)
 ---
 #!/bin/bash
 {% capture outdir %}{{site.destination}}/derived_imgs/{% endcapture %}echo "Outputting to {{ outdir }}"
@@ -42,7 +44,7 @@ convert "{{sourceimg}}" {{ page.convops }} \
   -resize '1920x1920>' -write "{{outdir}}{{ dest }}" \
   -resize '1280x1280>' -write "{{outdir}}{{ dest | replace: ".webp", "-2x.webp" }}" \
 {% else %}
-convert "{{sourceimg}}" {{ page.convops }} -write mpr:orig \
+convert "{{sourceimg}}" {{ page.convops }} \
   -resize '1280x1280>' -write "{{outdir}}{{ dest }}" \
 {% endif %}  -resize '640x640>' "{{outdir}}{{ dest | replace: ".webp", "-1x.webp" }}"{% if foreground == 0 %} &>.out &
 pid=$!
@@ -52,4 +54,3 @@ cat .out
 {% endif %}{% endfor %}
 
 rm .out
-

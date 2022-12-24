@@ -3,7 +3,6 @@ title: "Let There Be Conflicts"
 authors: [sujato]
 file_links:
   - "exclusive_01/Let%20There%20be%20Conflicts%20(2008-06-27)%20-%20Bhante%20Sujato.mp3"
-source_url: "https://podcasts.apple.com/us/podcast/dhammanet/id590226200?i=1000347334140"
 drive_links:
   - "https://drive.google.com/file/d/1BHjDjKbunDFU_RYSSNhyu-Q0rjJRAcXp/view?usp=drivesdk"
 course: problems

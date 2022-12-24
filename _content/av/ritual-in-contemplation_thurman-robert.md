@@ -5,7 +5,6 @@ authors:
 subcat: film
 external_url: "https://youtu.be/M_IDNMD39JA?t=9m40s"
 formats: [mp4]
-source_url: "https://www.metmuseum.org/metmedia/video/collections/asian/tantric-buddhism"
 drive_links:
   - "https://drive.google.com/file/d/11mVyN4mTupzk_pXEpV_qFCGwUK0QSfNR/view?usp=drivesdk"
 course: tantric
