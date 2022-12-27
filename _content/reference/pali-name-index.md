@@ -6,7 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1WUuqzmNoU-AN-_5v2FlhHkHL3BRGT7ZY
 source_url: https://readingfaithfully.org/pali-sutta-name-index/
 year: 2022
 month: dec
-courses: sutta
+course: sutta
 tags:
   - pali-dictionaries
 ---
