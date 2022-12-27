@@ -4,9 +4,9 @@ authors:
   - "Kitiyakara Voralaksana Krommaphra Chandaburinarünath"
 drive_links:
   - "https://drive.google.com/file/d/1hlxZr3SJX3cdfclLQMpBi9hhuKy-zyob/view?usp=drivesdk"
-course: pali-dictionaries
+course: buddhist-thai
 tags:
-  - thai-language
+  - pali-dictionaries
 year: 1969
 month: nov
 address: Bangkok
