@@ -53,11 +53,18 @@ jobs:
         with:
           repository: buddhist-uni/imgs
           path: imgs
+      - name: Checkout Big Imgs
+        if: steps.imgcache.outputs.cache-hit != 'true'
+        uses: actions/checkout@v3
+        with:
+          repository: buddhist-uni/original_size_imgs
+          path: original_size_imgs
       - name: Generate Image Variants
         if: steps.imgcache.outputs.cache-hit != 'true'
         run: |
             convert --version
             mv imgs ../
+            mv original_size_imgs ../
             bash ./scripts/image_variants.bash
       - name: Upload Build as Artifact
         uses: actions/upload-pages-artifact@main

@@ -52,5 +52,41 @@ pid=$!
 wait $pid
 cat .out
 {% endif %}{% endfor %}
+rm .out
 
+echo "====BIG_IMAGE BANNERS===="
+cd ../original_size_imgs
+mkdir {{outdir}}banners
+{% assign pages = site.documents | concat: site.pages | uniq | where_exp: "p", "p.big_image" %}
+{%- for p in pages -%}
+{%- assign foreground = forloop.rindex | modulo: 2 -%}
+{%- if p.footer_info -%}
+  {%- assign height = 650 -%}
+{%- else -%}
+  {%- if p.next_courses -%}{%- assign height = 680 -%}
+  {%- elsif site.header_pages contains p.path -%}{%- assign height = 200 -%}
+  {%- else -%}{%- assign height = 240 -%}{%- endif -%}
+{%- endif -%}
+{%- assign imagename = p.big_image | split: "/" | last | replace: "%26", "&" | replace: "%27", "'" | replace: "%2C", "," | replace: "%3B", ";" | replace: "%28", "(" | replace: "%29", ")" -%}
+{%- assign dest = outdir | append: "banners/" | append: imagename | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.JPG', '.webp' -%}
+{%- assign th = height | times: 2 -%}
+{%- assign adest = dest | replace: ".webp", "-400-2x.webp" -%}
+{%- assign bdest = dest | replace: ".webp", "-640-1x.webp" -%}
+{%- assign cdest = dest | replace: ".webp", "-640-2x.webp" -%}
+{%- assign ddest = dest | replace: ".webp", "-1920-1x.webp" -%}
+{%- assign edest = dest | replace: ".webp", "-1920-2x.webp" -%}
+{%- assign fdest = dest | replace: ".webp", "-2880-2x.webp" -%}
+convert "{{ imagename }}" {{ page.convops }} -write mpr:orig \
+  {% include ratio-resize.magick th=th aw=p.big_width ah=p.big_height cx=p.image_center_x cy=p.image_center_y last=false tw=2880 tfname=fdest %} +delete \
+  mpr:orig {% include ratio-resize.magick th=height aw=p.big_width ah=p.big_height cx=p.image_center_x cy=p.image_center_y last=false tw=1920 tfname=ddest %} +delete \
+  mpr:orig {% include ratio-resize.magick th=th aw=p.big_width ah=p.big_height cx=p.image_center_x cy=p.image_center_y last=false tw=1920 tfname=edest %} +delete \
+  mpr:orig {% if p.next_courses and p.banner_info %}{% assign height = 480 %}{% assign th = 960 %}{% endif %}{% include ratio-resize.magick aw=p.big_width ah=p.big_height cx=p.image_center_x cy=p.image_center_y last=false tw=1280 th=th tfname=cdest %} \
+  -resize '640x{{ height }}>' -write "{{ bdest }}" +delete \
+  mpr:orig {% include ratio-resize.magick aw=p.big_width ah=p.big_height cx=p.image_center_x cy=p.image_center_y last=true tw=800 th=th tfname=adest %}{% if foreground == 0 %} &>.out &
+pid=$!
+{% elsif forloop.index >= 2 %}
+wait $pid
+cat .out
+{% else %}
+{% endif %}{% endfor %}
 rm .out
