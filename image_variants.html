@@ -5,7 +5,7 @@ comment: |
   This is an html file with frontmatter so that jekyll will process it.
   It will become a bash script per the permalink above,
   which the Build script moves out and executes.
-convops: "-verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49"
+convops: "-verbose -strip -define webp:method=5 -define webp:pass=6 -define webp:target-psnr=49"
 # "verbose" echos each write it does
 # "strip"s metadata
 # "method" is a 1-6 scale from Fastest to Best Compression (each step ~= +20% time/-1.4% size)
@@ -62,6 +62,7 @@ mkdir {{outdir}}banners
 {%- assign foreground = forloop.rindex | modulo: 2 -%}
 {%- if p.footer_info -%}
   {%- assign height = 650 -%}
+  {%- if p.path == "index.html" -%}{%- assign height = 900 -%}{%- endif -%}
 {%- else -%}
   {%- if p.next_courses -%}{%- assign height = 680 -%}
   {%- elsif site.header_pages contains p.path -%}{%- assign height = 200 -%}

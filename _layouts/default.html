@@ -77,9 +77,16 @@
   <style>
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
+    {% if page.big_image %}{%- assign dynimg = page.big_image | split: "/" | last | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.JPG', '.webp' %}{% assign dynimg = site.data.content.filehost | append: "derived_imgs/banners/" | append: dynimg -%}
+       .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-2x.webp" }}"), url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; }
+       @media(max-width: 710px and max-resolution: 1.11dppx){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+       @media(max-width: 480px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-400-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+       @media(min-width: {% assign mw = page.image_width | times: site.data.banner.max_stretch %}{{ mw }}px) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+       @media(((min-width: {{ mw | divided_by: 2.0 | round: 1 }}px) and (min-resolution: 2dppx)) or ((min-width: {{ mw | divided_by: 3.0 | round: 1 }}px) and (min-resolution: 3dppx)) or ((min-width: {{ mw | divided_by: 1.5 | round: 1 }}px) and (min-resolution: 1.5dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+       @media((min-width: 2400px) or ((min-width: 1200px) and (min-resolution: 2dppx)) or ((min-width: 800px) and (min-resolution: 3dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-2880-2x.webp" }}"), url("{{ dynimg | replace: ".webp", "-1920-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+  {%- else -%}
     .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
-    {% if page.image_width and page.big_image %}@media(min-width: {{ page.image_width | times: site.data.banner.max_stretch }}px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ page.big_image }}"), url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; } }
-  {% endif %}</style>{% endif %}
+  {%- endif -%}</style>{% endif %}
 </head>
 <body>
 <a class="skip-to-main" href="#main">Skip to content</a>
