@@ -19,12 +19,12 @@ cd imgs
 {% capture sourceurl %}{{site.data.content.filehost}}imgs/{% endcapture %}
 {% assign pages = site.courses | where: "part_of_course", "imagery" | where_exp: "p", "p.image contains sourceurl" %}
 echo "====IMAGERY COURSE IMAGES===="
-mkdir -p '{{outdir}}imagery'
+mkdir -p "{{outdir}}imagery"
 {% for p in pages %}
 {% assign sourceimg = p.image | replace: sourceurl, '' %}
-convert '{{sourceimg}}' {{ page.convops }} \
-  -resize '1066x1280>' -write '{{outdir}}{{sourceimg | replace: ".JPG", ".webp" }}' \
-  -resize 533 '{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}'{% assign foreground = forloop.rindex | modulo: 2 %}{% if foreground == 0 %} &>.out &
+convert "{{sourceimg}}" {{ page.convops }} \
+  -resize '1066x1280>' -write "{{outdir}}{{sourceimg | replace: ".JPG", ".webp" }}" \
+  -resize 533 "{{outdir}}{{sourceimg | replace: ".JPG", "-1x.webp" }}"{% assign foreground = forloop.rindex | modulo: 2 %}{% if foreground == 0 %} &>.out &
 pid=$!{% elsif forloop.index >= 2 %}
 wait $pid
 cat .out
@@ -32,8 +32,8 @@ cat .out
 
 echo "====BUDDHISM+FUNCTION COURSE IMAGES===="
 {% assign pages = site.courses | where_exp: "p", "p.image contains sourceurl and p.part_of_course contains 'u'" %}{% comment %}UGLY FRAGILE HACK as "imagery" happens to not contain a 'u' while buddhism and function do not{% endcomment %}
-mkdir '{{outdir}}buddhism'
-mkdir '{{outdir}}function'
+mkdir "{{outdir}}buddhism"
+mkdir "{{outdir}}function"
 {%- for p in pages -%}
 {%- assign foreground = forloop.rindex | modulo: 2 -%}
 {%- assign sourceimg = p.image | replace: sourceurl, '' | replace: "%2C", "," -%}
@@ -55,7 +55,7 @@ rm .out
 
 echo "====BIG_IMAGE BANNERS===="
 cd ../original_size_imgs
-mkdir {{outdir}}banners
+mkdir "{{outdir}}banners"
 {% assign pages = site.documents | concat: site.pages | uniq | where_exp: "p", "p.big_image" %}
 {%- for p in pages -%}
 {%- assign foreground = forloop.rindex | modulo: 2 -%}
