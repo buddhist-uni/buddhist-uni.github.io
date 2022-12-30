@@ -35,12 +35,7 @@ jobs:
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
-      - name: Purge CSS
-        run: |
-          shopt -s globstar
-          npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
-          test -s $BUILD_DIR/assets/css/purged-main.css
-      - name: Push Img Deriver # Loving ripped off @cpina
+      - name: Push Img Deriver # Lovingly ripped off @cpina
         env:
           SSH_DEPLOY_KEY: ${{ secrets.DERIVED_IMGS_SSH_KEY }}
           EMAIL: theopenbuddhistuniversity@gmail.com
@@ -64,6 +59,11 @@ jobs:
             git status
             git diff-index --quiet HEAD || git commit -m "Lastest build script from build ${{ github.run_id  }}"
             git push "$GIT_CMD_REPOSITORY" --set-upstream main
+      - name: Purge CSS
+        run: |
+          shopt -s globstar
+          npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
+          test -s $BUILD_DIR/assets/css/purged-main.css
       - name: Upload Build as Artifact
         uses: actions/upload-pages-artifact@main
         with:
