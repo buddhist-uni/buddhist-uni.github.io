@@ -7,6 +7,7 @@ drive_links:
 file_links:
   - "exclusive_01/Ksatra-dharma%20and%20Raja-dharma%20-%20Wijesekera.pdf"
 course: setting
+status: featured
 tags:
   - state
 year: 1970

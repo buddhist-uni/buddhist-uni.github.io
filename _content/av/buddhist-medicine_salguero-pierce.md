@@ -7,6 +7,7 @@ file_links:
 drive_links:
   - "https://drive.google.com/file/d/1DMeX4n_WDM4HQizlaf-M4GSG0KOcfQCD/view?usp=drivesdk"
 course: form
+status: featured
 tags:
   - medicine
   - medieval

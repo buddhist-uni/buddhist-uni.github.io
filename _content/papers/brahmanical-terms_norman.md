@@ -8,6 +8,7 @@ alternate_url: "http://www.ahandfulofleaves.org/documents/Articles/Theravada%20B
 drive_links:
   - "https://drive.google.com/file/d/11aWngyzdfoTRz4v_B_xmS3A3vzoaU7ia/view?usp=drivesdk"
 course: pali-language
+status: featured
 tags:
   - setting
 year: 1992

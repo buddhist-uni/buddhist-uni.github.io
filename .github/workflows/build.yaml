@@ -41,6 +41,17 @@ jobs:
           shopt -s globstar
           npx purgecss -v --content $BUILD_DIR/**/*.html $BUILD_DIR/assets/js/*.js --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
           test -s $BUILD_DIR/assets/css/purged-main.css
+      - name: Push Img Deriver
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.DERIVED_IMGS_SSH_KEY }}
+        with:
+          source-directory: $BUILD_DIR/imgscript
+          target-directory: script
+          target-branch: main
+          destination-github-username: 'buddhist-uni'
+          destination-repository-name: 'derived-imgs'
+          user-email: 'theopenbuddhistuniversity@gmail.com'
       - name: Derived Img Cache
         uses: actions/cache@v3
         id: imgcache

@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1ojH-HrQKX8Vpha5QgwL213x7NmT-ImUu/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1AcuLvvqp0Bcgm_2s_yB65zNzdU4pigr5/view?usp=drivesdk"
 formats: ["Vol 1", "Vol 2"]
+status: featured
 course: pali-dictionaries
 tags:
   - characters
