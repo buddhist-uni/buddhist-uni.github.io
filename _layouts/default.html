@@ -77,7 +77,7 @@
   <style>
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
-    {% if page.big_image %}{%- assign dynimg = page.big_image | split: "/" | last | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.JPG', '.webp' %}{% assign dynimg = site.data.content.filehost | append: "derived_imgs/banners/" | append: dynimg -%}
+    {% if page.big_image %}{%- assign dynimg = page.big_image | split: "/" | last | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.JPG', '.webp' %}{% assign dynimg = site.data.content.filehost | append: "derived-imgs/banners/" | append: dynimg -%}
        .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-2x.webp" }}"), url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; }
        @media((max-width: 720px) and (max-resolution: 1.3dppx)){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
        @media(max-width: 480px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-400-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }

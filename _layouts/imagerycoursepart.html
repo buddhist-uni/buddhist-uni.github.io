@@ -4,7 +4,7 @@ layout: coursepart
 {% assign pslug = page.path | split: "/" | last | split: "." | first %}
 
 <figure>
-  <img style="width: 533px;" src="{{ page.image }}" srcset="{% assign image = page.image | replace: '/imgs/', '/derived_imgs/' | replace: '.JPG', '.webp' %}{{ image }} 2x, {{ image | replace: '.webp', '-1x.webp' }}">
+  <img style="width: 533px;" src="{{ page.image }}" srcset="{% assign image = page.image | replace: '/imgs/', '/derived-imgs/' | replace: '.JPG', '.webp' %}{{ image }} 2x, {{ image | replace: '.webp', '-1x.webp' }}">
   <figcaption><p class="attribution">Illustration by Ayya Vimalayani aka "<a href="https://discourse.suttacentral.net/t/dhamma-doodles-grin/7206" target="_blank">Ven Yodha</a>"</p><p class="description">{{ page.description }}</p></figcaption>
 </figure>
 
