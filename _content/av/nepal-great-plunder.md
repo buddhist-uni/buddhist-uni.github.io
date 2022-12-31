@@ -12,7 +12,7 @@ tags:
   - west
   - asia
   - nepal
-  - nepali
+  - nepalese
   - tibetan-art
 publisher: "Al Jazeera"
 subcat: film

@@ -63,8 +63,8 @@ This course follows the excellent textbook by Bhikkhu Cintita:
 
 {% include content_blurb.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
-This book forms the backbone of the course and it is highly recommended that you read it: even if you skip everything else!
+This book forms the backbone of the course and is highly recommended.
 
-The book is divided into two, unsurprising halves: *Buddhist Life* and *Buddhist Path*. These two divisions roughly follow the exterior and interior transformation of the practitioner, and also follows the gradual explanation of Buddhism---from the mundane to the transcendent---often used by the Buddha himself.
+The book is divided into two, unsurprising halves: *Buddhist Life* and *Buddhist Path*: the exterior and interior transformation of the practitioner which follows the gradual path of Buddhism---from the mundane to the transcendent---often taught by the Buddha himself.
+
 This course will follow that sequence.
-

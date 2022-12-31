@@ -10,7 +10,7 @@ drive_links:
 status: featured
 course: engaged
 tags:
-  - nepali
+  - nepalese
   - nuns
   - gender
 year: 2018

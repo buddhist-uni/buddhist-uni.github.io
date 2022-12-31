@@ -270,6 +270,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {% include content_blurb.html category="articles" slug="mudras_tricycle" %}
 - Taking an important role during the later development of Buddhist art and esoterica, mudras such as the “Anjali” of respect are now ubiquitous in the Buddhist cultural sphere, and are nearly synonymous with Buddhism itself.
 
+{% include content_blurb.html category="articles" slug="central-asian_kudara" %}
+- While largely not Buddhist today, the deserts of Central Asia were key to the medieval spread of Buddhism.
+
 {% include content_blurb.html category="articles" slug="story-of-the-horse-king_appleton" %}
 - One story, five countries.
 - Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
