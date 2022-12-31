@@ -1,5 +1,7 @@
 ## File links
 filehost: "https://buddhistuniversity.net/"
+noreferrerhosts:
+  - "https://www.shin-ibs.edu"
 
 ### Content Similarity Algorithm Parameters
 ## Number of similar works to recommend
