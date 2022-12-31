@@ -23,13 +23,13 @@ To use RSS, copy one of the feed URLs below into [an RSS reader](https://en.wiki
 
 | All Library Content | [{{ "/feed/content.xml" | absolute_url }}](/feed/content.xml) |
 
-### By Topic
+### Library Content by Topic
 
 | Buddhism (General) | [{{ "/feed/content/buddhism.xml" | absolute_url }}](/feed/content/buddhism.xml) |
 {% for tag in site.tags %}{% if tag.slug == "buddhism" %}{% continue %}{% endif %}| {{ tag.title }} | [{{ "/feed/content/" | append: tag.slug | append: ".xml" | absolute_url }}](/feed/content/{{ tag.slug }}.xml) |
 {% endfor %}
 
-### By Type
+### Library Content by Type
 
 {% for cat in site.categories %}{% if cat.slug == "index" %}{% continue %}{% endif %}| {{ cat.title }} | [{{ "/feed/content/" | append: cat.slug | append: ".xml" | absolute_url }}](/feed/content/{{ cat.slug }}.xml) |
 {% endfor %}
