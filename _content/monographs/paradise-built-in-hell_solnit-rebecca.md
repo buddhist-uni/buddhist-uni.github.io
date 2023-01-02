@@ -8,7 +8,7 @@ tags:
   - wider
   - state
   - power
-  - disaster
+  - disasters
   - anarchy
 year: 2009
 olid: OL23079521M
