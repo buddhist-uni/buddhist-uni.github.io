@@ -6,9 +6,11 @@ course: literature
 tags:
   - time
   - climate-change
+  - anthropocene
   - imperialism
   - history-of-science
   - disasters
+  - natural
 year: 2016
 oclc: 975472444
 olid: OL26449641M

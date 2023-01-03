@@ -1,8 +1,6 @@
 ---
 title: "Pāli Wordle"
 external_url: "https://labs.buddhistuniversity.net/wordle-pali"
-authors:
-  - "Khemarato Bhikkhu"
 course: pali-dictionaries
 tags:
   - games

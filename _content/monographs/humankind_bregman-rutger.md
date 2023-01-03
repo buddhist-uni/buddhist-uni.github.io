@@ -3,7 +3,7 @@ title: "Humankind: A Hopeful History"
 authors:
   - "Rutger Bregman"
 translator: "Elizabeth Manton and Erica Moore"
-course: social
+course: state
 tags:
   - cosmology
   - intellect

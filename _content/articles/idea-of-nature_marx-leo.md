@@ -10,7 +10,7 @@ drive_links: ["https://drive.google.com/file/d/1gdv7C3sLw0fYis5_2psCpc9p5nA2sI-y
 course: world
 tags:
   - biology
-  - nature
+  - natural
   - natural-sciences
   - climate-change
   - time
