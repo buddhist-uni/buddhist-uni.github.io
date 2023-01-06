@@ -2,17 +2,16 @@
 title: Unmistaken Child
 authors:
   - Nati Baratz
-external_url: "https://youtu.be/Rvu7N4wyFpk"
 status: featured
-course: cosmology
+oclc: 458628639
+course: tibetan
 tags:
   - rebirth
-  - tibetan
+  - monastic-tibetan
 year: 2008
 month: sep
 publisher: Samsara Films
 subcat: film
-base_value: 1.3
 minutes: 103
 ---
 
