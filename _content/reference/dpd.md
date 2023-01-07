@@ -10,4 +10,4 @@ status: featured
 year: 2022
 ---
 
-A cross-platform desktop (and Android) application for looking up Pāli terms with unparalleled support for declensions, conjugations, and compound words including full declension charts, examples from the Pāli Canon, a grammar helper, and more.
+A cross-platform application for looking up Pāli terms with unparalleled support for declensions, conjugations, and compound words including full declension charts, examples from the Pāli Canon, a grammar helper, and more.
