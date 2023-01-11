@@ -1,4 +1,5 @@
 vendor
+__pycache__
 node_modules
 assets/webfonts
 _data/cssCacheToken.yml
