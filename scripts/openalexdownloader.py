@@ -42,6 +42,7 @@ import json
 import re
 import string
 from time import sleep
+from strutils import *
 try:
   from yaspin import yaspin
   from tqdm import tqdm
@@ -52,26 +53,6 @@ except:
   exit(1)
 
 titlefilter = re.compile('(<[^<]+?>)|(\[[^\[]+?\])|["”“„«»›‹‘’]')
-whitespace = re.compile('\s+')
-
-def trunc(longstr, maxlen=12) -> str:
-  return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
-
-def random_letters(length):
-    return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
-
-def prompt(question: str, default = None) -> bool:
-    reply = None
-    hint = "(y/n)"
-    if default == "y":
-      hint = "[y]/n"
-    if default == "n":
-      hint = "y/[n]"
-    while reply not in ("y", "n"):
-        reply = input(f"{question} {hint}: ").casefold()
-        if not reply:
-          reply = default
-    return (reply == "y")
 
 def assert_cd_is_writable():
   try:
@@ -163,42 +144,6 @@ def download(url: str, filename: str, expected_type=None) -> bool:
     raise e
   del progress
   return True
-
-# Makes the authors string for the work
-# https://docs.openalex.org/api-entities/works/work-object#authorships
-def authorstr(work: dict, maxn: int) -> str:
-    authors = list(map(lambda a: a['author']['display_name'].replace(',', ''), work['authorships']))
-    if len(authors) > maxn:
-      authors = authors[:(maxn-1)]
-      authors.append('et al')
-    return ", ".join(authors)
-
-# Reconstructs an abstract from OA's
-# inverted index:
-# https://docs.openalex.org/api-entities/works/work-object#abstract_inverted_index
-def abstract(index: dict) -> str:
-  max_i = max(map(lambda ps: max(ps), index.values()))
-  ret = [""]*(max_i+1)
-  for k in index:
-    word = whitespace.sub(' ', k.strip())
-    for i in index[k]:
-      ret[i] = word
-  return " ".join(ret)
-
-def print_work(work: dict, indent=0):
-    s = "".join([" "]*indent)
-    print(f"{s}Title: {work['title']}")
-    print(f"{s}Author(s): {authorstr(work, 6)}")
-    print(f"{s}Venue: {work['host_venue']['display_name']}")
-    print(f"{s}Year: {work['publication_year']}")
-    try:
-      print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
-    except:
-      print(f"{s}Pages: ??")
-    print(f"{s}Cited By: {work['cited_by_count']}")
-    if work['abstract_inverted_index']:
-      print(f"{s}Abstract: {abstract(work['abstract_inverted_index'])}")
-    print(f"{s}URL: {url}")
 
 # The Main Script
 
