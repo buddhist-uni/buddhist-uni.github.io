@@ -1,5 +1,5 @@
 ---
-title: Bhikkhu Bodhi
+title: "Bhikkhu Bodhi"
 ---
 
 Bhikkhu Bodhi is an American Buddhist monk from New York City. Born in Brooklyn in 1944, he obtained a B.A. from Brooklyn College (1966) and a PhD in Philosophy from Claremont Graduate School (1972).

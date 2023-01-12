@@ -1,4 +1,4 @@
 ---
-title: Khenpo Shenga
+title: "Khenpo Shenga"
 ---
 

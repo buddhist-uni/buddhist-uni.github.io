@@ -21,9 +21,7 @@ APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,host
 
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-A725F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"}
 
-METADATA_FILENAME = ".openalexdownloader.json"
-
-FNAME_MAXLEN = 192 # 126 is safer
+FNAME_MAXLEN = 192 # 126 might be safer
 
 import requests
 import random
@@ -33,6 +31,7 @@ import re
 import string
 from time import sleep
 from strutils import *
+from openaleximporter import make_library_entry_for_work
 try:
   from yaspin import yaspin
   from tqdm import tqdm
@@ -41,6 +40,10 @@ except:
   print("Install the dependancies first by running:")
   print("  pip install pathvalidate yaspin tqdm")
   exit(1)
+
+METADATA_DIR = os.path.expanduser(os.path.normpath("~/.local/share/openalexdownloader"))
+PLACE_FILE = os.path.join(METADATA_DIR, "place.json")
+SEEN_FILE = os.path.join(METADATA_DIR, "works_seen.txt")
 
 titlefilter = re.compile('(<[^<]+?>)|(\[[^\[]+?\])|["”“„«»›‹‘’]')
 
@@ -69,7 +72,7 @@ def download(url: str, filename: str, expected_type=None) -> bool:
     print(f"  URL: {url}")
     print(f"  Filename: {filename}")
     return False
-  except requests.exceptions.ConnectionError:
+  except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
     print("  TIMEOUT ERROR! Trying again...")
     with yaspin(text="Waiting 15 seconds first...", timer=True).clock:
       sleep(15)
@@ -135,14 +138,22 @@ def download(url: str, filename: str, expected_type=None) -> bool:
   del progress
   return True
 
+
 # The Main Script
 
 if __name__ == "__main__":
+  os.makedirs(METADATA_DIR, exist_ok=True)
+  metadata = {"i": 0, "url": None}
+  if os.path.exists(PLACE_FILE):
+     with open(PLACE_FILE) as fd:
+       metadata = json.load(fd)
   if not prompt(f"Will dump all files to \"{os.getcwd()}\" Is this okay?", "y"):
     quit(1)
   assert_cd_is_writable()
-  if download(APIURL, "works.json") and os.path.exists(METADATA_FILENAME):
-    os.remove(METADATA_FILENAME)
+  if not os.path.exists("works.json") or metadata["url"] != APIURL:
+    if download(APIURL, "works.json"):
+      metadata["i"] = 0
+      metadata["url"] = APIURL
   with open("works.json") as fd:
     data = json.load(fd)
   try:
@@ -152,30 +163,39 @@ if __name__ == "__main__":
     print(json.dumps(data))
     os.remove("works.json")
     quit(1)
-  metadata = {"i": 0}
-  if os.path.exists(METADATA_FILENAME):
-    if prompt("Pick up where you left off?", "y"):
-     with open(METADATA_FILENAME) as fd:
-      metadata = json.load(fd)
+  works_seen = FileSyncedSet(SEEN_FILE, lambda w: w['id'].split('/')[-1])
   for index in range(metadata["i"], total):
     metadata["i"] = index
-    with open(METADATA_FILENAME, "w") as fd:
+    with open(PLACE_FILE, "w") as fd:
       json.dump(metadata, fd)
     work = data["results"][index]
     suffix = f" - {authorstr(work, 2)}.pdf"
     filename = sanitize_filename(whitespace.sub(' ', titlefilter.sub('', f"{trunc(work['title'].title(), FNAME_MAXLEN - len(suffix))}{suffix}")), replacement_text="_")
     url = work['open_access']['oa_url']
+    if work in works_seen:
+      print(f"\n{index+1}/{total} - {trunc(filename, 20)} already seen before...")
+      continue
     if os.path.exists(filename):
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} already downloaded...")
+      works_seen.add(work)
       continue
     print(f"\n{index+1}/{total} - {work['type']}")
     print_work(work, indent=2)
     if prompt(f"Download {index+1}?", "n"):
       if download(url, filename):
         print("Downloaded successfully!")
-        sleep(0.5)
+        entrypath = make_library_entry_for_work(work, "_drafts/_content")
       else:
-        input("Download failed. Press enter to continue...")
+        print("Download failed.")
+        if prompt("Would you like to make an entry for it anyway?", "y"):
+          url = input("Use a different url (leave blank for no)?")
+          if url:
+            work['open_access']['oa_url'] = url
+          entrypath = make_library_entry_for_work(work, "_drafts/_content")
+        else:
+          entrypath = None
+      if entrypath:
+        print(f"Wrote a draft entry to {entrypath}")
+    works_seen.add(work)
   print("Finished!")
-  os.remove(METADATA_FILENAME)
   os.remove("works.json")

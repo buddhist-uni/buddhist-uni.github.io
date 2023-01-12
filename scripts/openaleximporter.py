@@ -27,16 +27,15 @@ def fetch_work_data(workid):
   r = requests.get(f"https://api.openalex.org/works/{workid}")
   return json.loads(r.text)
 
-MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 def make_library_entry_for_work(work, content_path="_content") -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
-    case 'book-section' | 'book-part' | 'book-chapter':
+    case 'book-section' | 'book-part':
         category = 'excerpts'
     case 'monograph' | 'book' | 'book-set' | 'book-series' | 'edited-book':
         category = 'monographs'
-    case 'report':
+    case 'report' | 'book-chapter':
         category = 'papers'
     case 'reference-entry' | 'database' | 'dataset' | 'reference-book' | 'standard':
         category = 'reference'
@@ -56,7 +55,9 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
       os.makedirs(file_path)
     else:
       raise FileNotFoundError(f"{file_path} requested but doesn't exist")
-  title = whitespace.sub(' ', work['title'].title())
+  title = title_case(work['title'])
+  title = whitespace.sub(' ', title)
+  title = italics.sub('*', title)
   filename = slugify(
     title,
     max_length=40,
@@ -68,10 +69,14 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
   try:
     author = work['authorships'][0]['author']['display_name']
     assert(work['authorships'][0]['author_position'] == 'first')
-    try:
+    aslug = get_author_slug(author)
+    if aslug:
+      author = aslug
+    else:
+      try:
         pivot = author.rindex(' ')
         author = f"{author[1+pivot:]} {author[:pivot]}"
-    except ValueError:
+      except ValueError:
         pass
     if len(work['authorships']) > 1:
         author += " et al"
@@ -85,72 +90,84 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
     fd.write(f"title: >-\n    {title}\n")
     fd.write("authors:\n")
     for i in range(min(4, len(work['authorships']))):
-        fd.write(f"  - \"{work['authorships'][i]['author']['display_name']}\"\n")
-    if len(work['authorships']) >= 5:
+        author = work['authorships'][i]['author']['display_name']
+        aslug = get_author_slug(author)
+        if aslug:
+            author = aslug
+        else:
+            author = f"\"{author}\""
+        fd.write(f"  - {author}\n")
+    aslug = get_author_slug(work['authorships'][-1]['author']['display_name'])
+    if len(work['authorships']) == 5 and aslug:
+        fd.write(f"  - {aslug}")
+    elif len(work['authorships']) >= 5:
         fd.write(f"  - \"{work['authorships'][4]['author']['display_name']}")
-    if len(work['authorships']) > 5:
-        fd.write(" and others")
-    if len(work['authorships']) >= 5:
+        if len(work['authorships']) > 5:
+          fd.write(" and others")
         fd.write("\"\n")
     if subcat != '':
         fd.write(f"subcat: {subcat}\n")
     if category in ('papers', 'excerpts', 'monographs'):
         fd.write("editor: \n")
     fd.write("external_url: \"")
+    oa_url = work['open_access']['oa_url']
+    doi = work["doi"]
+    if doi == oa_url:
+        doi = None
     alternate_url = None
     if 'alternate_host_venues' in work:
       try:
         alternate_url = next(filter(
-            lambda url: url != work['doi'] and url != work['open_access']['oa_url'],
+            lambda url: url != doi and url != oa_url and url,
             map(lambda v: v['url'], work['alternate_host_venues'])
         ))
       except StopIteration:
         pass
-    if work['open_access']['oa_url']:
-        fd.write(work['open_access']['oa_url'])
-        if work['doi'] or alternate_url:
+    if oa_url:
+        fd.write(oa_url)
+        if doi or alternate_url:
             fd.write("\"\nsource_url: \"")
-    if work['doi']:
-        fd.write(work['doi'])
-        if not work['open_access']['oa_url'] and alternate_url:
+    if doi:
+        fd.write(doi)
+        if not oa_url and alternate_url:
             fd.write("\"\nsource_url: \"")
-    if alternate_url and not (work['doi'] and work['open_access']['oa_url']):
+    if alternate_url and not (doi and oa_url):
         fd.write(alternate_url)
     fd.write("\"\ndrive_links:\n  - \"\"\nstatus: featured\ncourse: \ntags:\n  - \n")
     fd.write(f"year: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
+    venue = title_case(work['host_venue']['display_name'].replace('"', "\\\""))
     if category == 'monographs':
         fd.write("olid: \n")
+    elif category in ('excerpts', 'papers'):
+        fd.write(f"booktitle: \"{venue}\"\n")
     elif category == 'articles':
         journal = work['host_venue']['id'].split('/')[-1]
         if journal in journals.slugs:
           journal = journals.slugs[journal]
         else:
-          journal = work['host_venue']['display_name'].replace('"', "\\\"")
-          journal = f"\"{journal}\""
+          journal = f"\"{venue}\""
         fd.write(f"journal: {journal}\n")
-        if not work['biblio']['volume']:
-            fd.write("volume: \n")
-        if not work['biblio']['issue']:
-            fd.write("number: \n")
+        if not work['biblio']['volume'] and not work['biblio']['issue']:
+            fd.write("volume: \nnumber: \n")
     if work['biblio']['volume']:
         fd.write(f"volume: {work['biblio']['volume']}\n")
     if work['biblio']['issue']:
         fd.write(f"number: {work['biblio']['issue']}\n")
     try:
         fd.write(f"pages: \"{int(work['biblio']['first_page'])}--{int(work['biblio']['last_page'])}\"\n")
-    except (TypeError, KeyError):
+    except (TypeError, KeyError, ValueError):
         if category in ('monographs', 'booklets', 'essays', 'reference'):
             fd.write("pages: \n")
         if category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
     if work['host_venue']['publisher']:
-        fd.write(f"publisher: \"{work['host_venue']['publisher']}\"\n")
-    elif category in ('monographs', 'excerpts'):
+        fd.write(f"publisher: \"{title_case(work['host_venue']['publisher'])}\"\n")
+    elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")
     if category in ('monographs', 'excerpts'):
         fd.write("address: \"\"\n")
-    fd.write('---\n\n>')
+    fd.write(f"openalexid: {work['id'].split('/')[-1]}\n---\n\n>")
     abstract = deque(invert_inverted_index(work['abstract_inverted_index']))
     line_len = 1
     while len(abstract) > 0:
@@ -197,6 +214,7 @@ def prompt_for_work() -> str:
           i -= 1
         if (ch == 'B') and ('results' in r) and (len(r['results']) > i + 1):
           i += 1
+        # TODO: Handle left/right editing
     else:
       i = 0
       r = {}
@@ -222,7 +240,7 @@ def prompt_for_work() -> str:
     termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
   return r['results'][i]['id'].split("/")[-1]
 
-def main():
+def _main():
   while True:
     workid = prompt_for_work()
     with yaspin():
@@ -231,9 +249,9 @@ def main():
     if prompt("Is this the correct work?"):
       break
   filepath = make_library_entry_for_work(work)
-  print(f"\nOpening {filepath} for final editing")
+  print(f"\nOpening {filepath}\n")
   os.system(f"open '{filepath}' || termux-open '{filepath}' || vim '{filepath}'")
 
 if __name__ == "__main__":
-  main()
+  _main()
 

@@ -5,9 +5,13 @@ import os
 import json
 import re
 import string
+from functools import cache
+from collections import defaultdict
 from math import floor, ceil
 
 whitespace = re.compile('\s+')
+italics = re.compile('</?i[^<>]*>')
+MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
 def cout(*args):
   print(*args, flush=True, end="")
@@ -22,6 +26,20 @@ def trunc(longstr, maxlen=12) -> str:
 def random_letters(length):
     return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
 
+def uppercase_ratio(s: str) -> float:
+    if not s:
+      return 0
+    alph = list(filter(str.isalpha, s))
+    return sum(map(str.isupper, alph)) / len(alph)
+
+def title_case(s: str) -> str:
+  if not s:
+    return ''
+  p = uppercase_ratio(s)
+  if p < 0.05 or p > 0.25:
+    return s.title()
+  return s
+
 def prompt(question: str, default = None) -> bool:
     reply = None
     hint = "(y/n)"
@@ -35,9 +53,29 @@ def prompt(question: str, default = None) -> bool:
           reply = default
     return (reply == "y")
 
+class FileSyncedSet:
+  def __init__(self, fname, normalizer=None):
+    self.fname = fname
+    self.items = set()
+    self.norm = normalizer or (lambda a: str(a))
+    if os.path.exists(fname):
+      with open(fname) as fd:
+        for l in fd:
+          self.items.add(l[:-1])
+  def add(self, item):
+    item = self.norm(item)
+    if item not in self.items:
+      self.items.add(item)
+      with open(self.fname, "a") as fd:
+        fd.write(f"{item}\n")
+  def __contains__(self, item):
+    return self.norm(item) in self.items
+
 # Reconstructs a text from an inverted index:
 # https://docs.openalex.org/api-entities/works/work-object#abstract_inverted_index
 def invert_inverted_index(index: dict) -> list:
+  if not index:
+    return []
   max_i = max(map(lambda ps: max(ps), index.values()))
   ret = [""]*(max_i+1)
   for k in index:
@@ -70,7 +108,7 @@ def print_work(work: dict, indent=0):
     print(f"{s}Year: {work['publication_year']}")
     try:
       print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
-    except TypeError:
+    except (TypeError, KeyError, ValueError):
       print(f"{s}Pages: ?")
     print(f"{s}Cited By: {work['cited_by_count']}")
     if work['abstract_inverted_index']:
@@ -83,3 +121,20 @@ def serp_result(work: dict, margin=10) -> str:
   space = width - margin - 4
   return whitespace.sub(' ', f"{trunc(work['display_name'], floor(0.7*space))} by {trunc(work['hint'], ceil(0.3*space))}")
 
+@cache
+def get_author_slugs():
+  ret = defaultdict(lambda: None)
+  authordir = os.path.normpath(os.path.join(os.path.dirname(__file__), "../_authors"))
+  for fn in os.listdir(authordir):
+    fullpath = os.path.join(authordir, fn)
+    with open(fullpath) as fd:
+      if fd.readline() != "---\n":
+        raise ValueError(f"{fn} doesn't start with ---")
+      aname = fd.readline().split('"')
+      if aname[0] != 'title: ':
+        raise ValueError(f"{fn} doesn't start with a quoted title")
+      ret[aname[1]] = fn.split(".")[0]
+  return ret
+
+def get_author_slug(name: str):
+  return get_author_slugs()[name]
