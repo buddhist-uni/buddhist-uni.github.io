@@ -13,6 +13,7 @@ status: featured
 course: wider
 tags:
   - time
+  - historiography
   - groups
   - power
 year: 2019

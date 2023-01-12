@@ -1,6 +1,5 @@
 #!/bin/python3
 
-from time import sleep
 from urllib import parse as url
 from collections import deque
 import sys
@@ -10,6 +9,7 @@ import termios
 import json
 import re
 from strutils import *
+import journals
 try:
   import requests
   from yaspin import yaspin
@@ -97,30 +97,38 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
     if category in ('papers', 'excerpts', 'monographs'):
         fd.write("editor: \n")
     fd.write("external_url: \"")
-    alternate_urls = []
+    alternate_url = None
     if 'alternate_host_venues' in work:
-        alternate_urls = filter(
-            lambda url: url not in [work['doi'], work['open_access']['oa_url']],
+      try:
+        alternate_url = next(filter(
+            lambda url: url != work['doi'] and url != work['open_access']['oa_url'],
             map(lambda v: v['url'], work['alternate_host_venues'])
-        )
+        ))
+      except StopIteration:
+        pass
     if work['open_access']['oa_url']:
         fd.write(work['open_access']['oa_url'])
-        if work['doi'] or len(alternate_urls) >= 1:
+        if work['doi'] or alternate_url:
             fd.write("\"\nsource_url: \"")
     if work['doi']:
         fd.write(work['doi'])
-        if not work['open_access']['oa_url'] and len(alternate_urls) >= 1:
+        if not work['open_access']['oa_url'] and alternate_url:
             fd.write("\"\nsource_url: \"")
-    if not (work['doi'] and work['open_access']['oa_url']):
-        fd.write(alternate_urls[0])
+    if alternate_url and not (work['doi'] and work['open_access']['oa_url']):
+        fd.write(alternate_url)
     fd.write("\"\ndrive_links:\n  - \"\"\nstatus: featured\ncourse: \ntags:\n  - \n")
     fd.write(f"year: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     if category == 'monographs':
         fd.write("olid: \n")
     elif category == 'articles':
-        journal = work['host_venue']['display_name'].replace('"', "\\\"")
-        fd.write(f"journal: \"{journal}\"\n")
+        journal = work['host_venue']['id'].split('/')[-1]
+        if journal in journals.slugs:
+          journal = journals.slugs[journal]
+        else:
+          journal = work['host_venue']['display_name'].replace('"', "\\\"")
+          journal = f"\"{journal}\""
+        fd.write(f"journal: {journal}\n")
         if not work['biblio']['volume']:
             fd.write("volume: \n")
         if not work['biblio']['issue']:
@@ -224,7 +232,7 @@ def main():
       break
   filepath = make_library_entry_for_work(work)
   print(f"\nOpening {filepath} for final editing")
-  os.system(f"open '{filepath}' || vim '{filepath}'")
+  os.system(f"open '{filepath}' || termux-open '{filepath}' || vim '{filepath}'")
 
 if __name__ == "__main__":
   main()

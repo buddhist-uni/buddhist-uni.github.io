@@ -13,21 +13,11 @@
 # To use, update APIURL below
 # Update User-Agent for fewer 403s
 
-# Journals
-# See e.g. https://api.openalex.org/venues/V120086578 for more info
-BSR   = "V139284966"
-JIABS = "V2764843907"
-JGB   = "V2739015590"
-IJDS  = "V2739402052"
-HIJBS = "V4210175251"
-JBE   = "V2764747367"
-JJRS  = "V120086578"
-JCB   = "V107624032"
-
 import openalexconcepts as concepts
+import journals
 
 # https://docs.openalex.org/
-APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,host_venue.id:!{BSR},host_venue.id:!{JIABS},host_venue.id:!{JGB},host_venue.id:!{JJRS},host_venue.id:!{IJDS},host_venue.id:!{JBE},host_venue.id:!{HIJBS},host_venue.id:!{JCB},concepts.id:{concepts.BUDDHISM}|{concepts.BUDDHA},cited_by_count:%3E0,publication_year:%3E1970,publication_year:%3C2021&sort=cited_by_count:desc&per_page=200&page=3"
+APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,host_venue.id:!{journals.BSR},host_venue.id:!{journals.JIABS},host_venue.id:!{journals.JGB},host_venue.id:!{journals.JJRS},host_venue.id:!{journals.IJDS},host_venue.id:!{journals.JBE},host_venue.id:!{journals.HIJBS},host_venue.id:!{journals.JCB},concepts.id:{concepts.BUDDHISM}|{concepts.BUDDHA},cited_by_count:%3E0,publication_year:%3E1970,publication_year:%3C2021&sort=cited_by_count:desc&per_page=200&page=3"
 
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-A725F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"}
 
