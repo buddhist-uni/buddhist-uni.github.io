@@ -8,10 +8,19 @@ import string
 from functools import cache
 from collections import defaultdict
 from math import floor, ceil
+try:
+  from titlecase import titlecase
+except:
+  print("pip install titlecase")
+  quit(1)
 
 whitespace = re.compile('\s+')
-italics = re.compile('</?i[^<>]*>')
+italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+HOSTNAME_BLACKLIST = {
+  "www.questia.com",
+}
 
 def cout(*args):
   print(*args, flush=True, end="")
@@ -32,12 +41,16 @@ def uppercase_ratio(s: str) -> float:
     alph = list(filter(str.isalpha, s))
     return sum(map(str.isupper, alph)) / len(alph)
 
+# leaves a string unmolested if the ratio looks reasonable
+# could be smarter but this is good enough™️
 def title_case(s: str) -> str:
   if not s:
     return ''
   p = uppercase_ratio(s)
-  if p < 0.05 or p > 0.25:
-    return s.title()
+  # 11% with high confidence!
+  if p < 0.11 or p > 0.20:
+    return titlecase(s)
+  # If the ratio looks good, trust
   return s
 
 def prompt(question: str, default = None) -> bool:
@@ -57,7 +70,8 @@ class FileSyncedSet:
   def __init__(self, fname, normalizer=None):
     self.fname = fname
     self.items = set()
-    self.norm = normalizer or (lambda a: str(a))
+    # normalizer must return a string with no newlines
+    self.norm = normalizer or (lambda a: str(a).replace("/n", " "))
     if os.path.exists(fname):
       with open(fname) as fd:
         for l in fd:
@@ -98,12 +112,6 @@ def authorstr(work: dict, maxn: int) -> str:
 
 def print_work(work: dict, indent=0):
     s = "".join([" "]*indent)
-    print(f"{s}Title: {work['title']}")
-    print(f"{s}Author(s): {authorstr(work, 6)}")
-    try:
-      print(f"{s}DOI: {work['doi']}")
-    except KeyError:
-      pass
     print(f"{s}Venue: {work['host_venue']['display_name']}")
     print(f"{s}Year: {work['publication_year']}")
     try:
@@ -113,6 +121,13 @@ def print_work(work: dict, indent=0):
     print(f"{s}Cited By: {work['cited_by_count']}")
     if work['abstract_inverted_index']:
       print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
+    print(f"{s}Title: {work['title']}")
+    print(f"{s}Author(s): {authorstr(work, 6)}")
+    try:
+      if work['doi'] != work['open_access']['oa_url']:
+        print(f"{s}DOI: {work['doi']}")
+    except KeyError:
+      pass
     print(f"{s}URL: {work['open_access']['oa_url']}")
 
 

@@ -14,15 +14,17 @@ DAEDALUS = "V107749620"
 NYRB     = "V122513169"
 NYRB_ALT = "V4306476742"
 PLATO    = "V2737990715"
-# Not yet added
 JJRS     = "V120086578"
 JCB      = "V107624032"
 
+# from OA to OBU IDs
 slugs = {
   ARIRIAB: "aririab",
   BSR: "bsr",
   JIABS: "jiabs",
   JGB: "jgb",
+  JJRS: "jjrs",
+  JCB: "jcb",
   IJDS: "ijds",
   HIJBS: "hijbs",
   JBE: "jbe",

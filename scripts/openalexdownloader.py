@@ -17,7 +17,9 @@ import openalexconcepts as concepts
 import journals
 
 # https://docs.openalex.org/
-APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,host_venue.id:!{journals.BSR},host_venue.id:!{journals.JIABS},host_venue.id:!{journals.JGB},host_venue.id:!{journals.JJRS},host_venue.id:!{journals.IJDS},host_venue.id:!{journals.JBE},host_venue.id:!{journals.HIJBS},host_venue.id:!{journals.JCB},concepts.id:{concepts.BUDDHISM}|{concepts.BUDDHA},cited_by_count:%3E0,publication_year:%3E1970,publication_year:%3C2021&sort=cited_by_count:desc&per_page=200&page=3"
+# APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,host_venue.id:!{journals.BSR},host_venue.id:!{journals.JIABS},host_venue.id:!{journals.JGB},host_venue.id:!{journals.JJRS},host_venue.id:!{journals.IJDS},host_venue.id:!{journals.JBE},host_venue.id:!{journals.HIJBS},host_venue.id:!{journals.JCB},concepts.id:!{concepts.BUDDHISM},concepts.id:!{concepts.BUDDHA},concepts.id:{concepts.MEDITATION},cited_by_count:%3E300,publication_year:%3E1970,publication_year:%3C2021&per_page=50&sort=cited_by_count:desc"
+# APIURL="https://api.openalex.org/works?filter=abstract.search:Ibsen+House,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
+# APIURL = "https://api.openalex.org/works?filter=host_venue.id:V107624032,is_oa:true&per_page=100"
 
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-A725F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"}
 
@@ -31,14 +33,15 @@ import re
 import string
 from time import sleep
 from strutils import *
-from openaleximporter import make_library_entry_for_work
+from openaleximporter import make_library_entry_for_work, alt_url_for_work
 try:
   from yaspin import yaspin
   from tqdm import tqdm
   from pathvalidate import sanitize_filename
+  from bs4 import BeautifulSoup
 except:
   print("Install the dependancies first by running:")
-  print("  pip install pathvalidate yaspin tqdm")
+  print("  pip install pathvalidate yaspin tqdm beautifulsoup4")
   exit(1)
 
 METADATA_DIR = os.path.expanduser(os.path.normpath("~/.local/share/openalexdownloader"))
@@ -46,6 +49,12 @@ PLACE_FILE = os.path.join(METADATA_DIR, "place.json")
 SEEN_FILE = os.path.join(METADATA_DIR, "works_seen.txt")
 
 titlefilter = re.compile('(<[^<]+?>)|(\[[^\[]+?\])|["”“„«»›‹‘’]')
+
+PDF_LINKS = {
+  "https://doi.org/10.18874/jjrs.": ("/pdf/download", lambda s: s),
+  "https://doi.org/10.1080/14639947.": ("/doi/epdf/", lambda i: "https://www.tandfonline.com"+i.replace("epdf","pdf").replace('needAccess=true&role=button','download=true')),  
+
+}
 
 def assert_cd_is_writable():
   try:
@@ -64,15 +73,45 @@ def download(url: str, filename: str, expected_type=None) -> bool:
   if os.path.exists(filename):
     if not prompt(f"  \"{filename}\" exists! Overwrite?", "n"):
       return False
+  
+  link_pattern = None
+  for k, v in PDF_LINKS.items():
+    if url.startswith(k):
+      link_pattern = v
+      break
+  if link_pattern:
+      nurl = None
+      with yaspin(text="Parsing html..."):
+          r = requests.get(url, headers=REQUEST_HEADERS, timeout=20)
+          parser = BeautifulSoup(r.text, "lxml")
+          for a in parser.find_all('a'):
+            l = a.get("href")
+            if not l:
+              continue
+            if link_pattern[0] in l:
+                nurl = link_pattern[1](l)
+                break
+      if nurl:
+        print(f"  Trying again with custom redirect \"{nurl}\"...")
+        return download(nurl, filename, expected_type)
+      else:
+        print(f"  Failed to parse DOI!")
+  
+  is_doi = url.split("/")[2] == "doi.org"
   try:
    with yaspin(text="Connecting...").dots2:
-    r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=15)
+    r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=(5 if is_doi else 15))
   except requests.exceptions.SSLError:
     print("  ERROR: SSL Connection Failed!")
     print(f"  URL: {url}")
     print(f"  Filename: {filename}")
     return False
   except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
+    if is_doi:
+      print("  TIMED OUT. Not trying again.")
+      print(f"  URL: {url}")
+      print(f"  Filename: {filename}")
+      return False
     print("  TIMEOUT ERROR! Trying again...")
     with yaspin(text="Waiting 15 seconds first...", timer=True).clock:
       sleep(15)
@@ -91,10 +130,14 @@ def download(url: str, filename: str, expected_type=None) -> bool:
   except:
     pass
   firstchunk = next(r.iter_content(chunk_size=128))
-  if (expected_type == "pdf" and not firstchunk.startswith(b"%PDF-")) or (expected_type != "pdf" and expected_type not in (type+disposition)):
+  bad_pdf = (expected_type == "pdf" and not firstchunk.startswith(b"%PDF-"))
+  if bad_pdf or (expected_type != "pdf" and expected_type not in (type+disposition)):
     print(f"  ERROR: expected {expected_type} but got {type}")
     print(f"  Full header: {r.headers}")
-    print(f"  Response: {''.join(firstchunk.decode('utf-8').splitlines())}…")
+    try:
+      print(f"  UTF-8 Response: {''.join(firstchunk.decode('utf-8').splitlines())}…")
+    except UnicodeDecodeError:
+      print(f"  Binary Response: {firstchunk}…")
     r.close()
     print(f"  Filename: {filename}")
     print(f"  URL: {url}")
@@ -125,12 +168,14 @@ def download(url: str, filename: str, expected_type=None) -> bool:
       progress.close()
       print("Got no new data, trying again...")
       fd.seek(0)
-      with yaspin(text=f"Downloading...").bouncingBall:
+      with yaspin(text=f"Downloading...").bouncingBall as spinner:
         r.close()
         # some servers dislike streaming/sniffing and prefer you dl in one go
         r = requests.get(url, headers=REQUEST_HEADERS, timeout=30)
         fd.write(r.content)
-      print(f"Got {len(r.content)} bytes this time")
+        spinner.text = "Got it!"
+        spinner.ok("( ^.^  )")
+      print(f"{len(r.content)} bytes this time")
       return True
   except Exception as e:
     os.remove(filename)
@@ -147,8 +192,9 @@ if __name__ == "__main__":
   if os.path.exists(PLACE_FILE):
      with open(PLACE_FILE) as fd:
        metadata = json.load(fd)
-  if not prompt(f"Will dump all files to \"{os.getcwd()}\" Is this okay?", "y"):
-    quit(1)
+  else:
+    if not prompt(f"Will dump all files to \"{os.getcwd()}\" Is this okay?", "y"):
+      quit(1)
   assert_cd_is_writable()
   if not os.path.exists("works.json") or metadata["url"] != APIURL:
     if download(APIURL, "works.json"):
@@ -170,8 +216,20 @@ if __name__ == "__main__":
       json.dump(metadata, fd)
     work = data["results"][index]
     suffix = f" - {authorstr(work, 2)}.pdf"
-    filename = sanitize_filename(whitespace.sub(' ', titlefilter.sub('', f"{trunc(work['title'].title(), FNAME_MAXLEN - len(suffix))}{suffix}")), replacement_text="_")
+    filename = sanitize_filename(whitespace.sub(' ', titlefilter.sub('', f"{trunc(title_case(work['title']), FNAME_MAXLEN - len(suffix))}{suffix}")), replacement_text="_")
     url = work['open_access']['oa_url']
+    alturl = alt_url_for_work(work, url)
+    if (not url) or (url.split("/")[2] in HOSTNAME_BLACKLIST):
+      url = work["doi"]
+    if not (work["doi"] == url or alturl):
+      alturl = work["doi"]
+    if not url:
+      url = alturl
+      alturl = None
+    if not url:
+      print(f"\n{index+1}/{total} - {trunc(filename, 20)} cannot be downloaded...")
+      works_seen.add(work)
+      continue
     if work in works_seen:
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} already seen before...")
       continue
@@ -179,23 +237,34 @@ if __name__ == "__main__":
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} already downloaded...")
       works_seen.add(work)
       continue
-    print(f"\n{index+1}/{total} - {work['type']}")
+    print(f"\n{index+1}/{total} - {work['type']} - {work['id'].split('/')[-1]}")
     print_work(work, indent=2)
+    # you can fully automate by replacing prompt below with your inclusion criteria
+    # for example all but titles in a blacklist, do:
+    # if not any(map(lambda w: w in work['title'].lower(), ["introduction", "review", "editor", etc]):
     if prompt(f"Download {index+1}?", "n"):
-      if download(url, filename):
+      succ = download(url, filename)
+      if not succ and alturl:
+        print("Trying another url...")
+        succ = download(alturl, filename)
+      if succ:
         print("Downloaded successfully!")
         entrypath = make_library_entry_for_work(work, "_drafts/_content")
       else:
         print("Download failed.")
-        if prompt("Would you like to make an entry for it anyway?", "y"):
+        if prompt("Would you like to make an entry for it anyway?"):
           url = input("Use a different url (leave blank for no)?")
           if url:
             work['open_access']['oa_url'] = url
-          entrypath = make_library_entry_for_work(work, "_drafts/_content")
+          entrypath = make_library_entry_for_work(work, draft=True)
         else:
           entrypath = None
+          if work['host_venue']['id']:
+            print(f"In case you want to blacklist it, the host.id was: {work['host_venue']['id'].split('/')[-1]}")
       if entrypath:
         print(f"Wrote a draft entry to {entrypath}")
     works_seen.add(work)
-  print("Finished!")
+  print("Finished url:")
+  print(metadata["url"])
+  input("Press enter to exit :)")
   os.remove("works.json")

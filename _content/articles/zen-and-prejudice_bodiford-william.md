@@ -13,7 +13,7 @@ tags:
   - japanese
   - caste
 year: 1996
-journal: "the Japanese Journal of Religious Studies"
+journal: jjrs
 volume: 23
 number: 1
 pages: "1--27"

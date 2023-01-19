@@ -3,6 +3,7 @@ __pycache__
 node_modules
 assets/webfonts
 _data/cssCacheToken.yml
+_drafts/_content
 _site
 .trash
 .obsidian

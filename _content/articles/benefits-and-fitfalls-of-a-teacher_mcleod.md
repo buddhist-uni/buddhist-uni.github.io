@@ -10,7 +10,7 @@ tags:
   - modern
 year: 2005
 month: may
-journal: "Contemporary Buddhism"
+journal: jcb
 publisher: Routledge
 volume: 6
 number: 1

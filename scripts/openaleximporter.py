@@ -27,7 +27,19 @@ def fetch_work_data(workid):
   r = requests.get(f"https://api.openalex.org/works/{workid}")
   return json.loads(r.text)
 
-def make_library_entry_for_work(work, content_path="_content") -> str:
+def alt_url_for_work(work, oa_url):
+  ret = None
+  if 'alternate_host_venues' in work:
+    try:
+      ret = next(filter(
+          lambda url: url != work['doi'] and url != oa_url and url and (url.split("/")[2] not in HOSTNAME_BLACKLIST),
+          map(lambda v: v['url'], work['alternate_host_venues'])
+      ))
+    except StopIteration:
+      pass
+  return ret
+
+def make_library_entry_for_work(work, draft=False) -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
@@ -49,9 +61,13 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
     case _:
         raise ValueError(f"Unexpected work type \"{work['type']}\" found")
 
-  file_path = os.path.normpath(os.path.join(os.path.dirname(__file__), f"../{content_path}/{category}"))
+  if draft:
+    content_path = "_drafts/_content"
+  else:
+    content_path = f"_content/{category}"
+  file_path = os.path.normpath(os.path.join(os.path.dirname(__file__), f"../{content_path}"))
   if not os.path.exists(file_path):
-    if prompt(f"{file_path} doesn't exist. Create it?"):
+    if draft and prompt(f"{file_path} doesn't exist. Create it?"):
       os.makedirs(file_path)
     else:
       raise FileNotFoundError(f"{file_path} requested but doesn't exist")
@@ -81,7 +97,7 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
     if len(work['authorships']) > 1:
         author += " et al"
     filename += f"_{slugify(author)}"
-  except KeyError:
+  except (KeyError, IndexError):
     pass
   filename += '.md'
   file_path = os.path.join(file_path, filename)
@@ -111,18 +127,16 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
         fd.write("editor: \n")
     fd.write("external_url: \"")
     oa_url = work['open_access']['oa_url']
+    if oa_url and oa_url.split("/")[2] in HOSTNAME_BLACKLIST:
+      oa_url = None
     doi = work["doi"]
+    alternate_url = alt_url_for_work(work, oa_url)
     if doi == oa_url:
+      if alternate_url:
+        oa_url = alternate_url
+        alternate_url = None
+      else:
         doi = None
-    alternate_url = None
-    if 'alternate_host_venues' in work:
-      try:
-        alternate_url = next(filter(
-            lambda url: url != doi and url != oa_url and url,
-            map(lambda v: v['url'], work['alternate_host_venues'])
-        ))
-      except StopIteration:
-        pass
     if oa_url:
         fd.write(oa_url)
         if doi or alternate_url:
@@ -136,7 +150,10 @@ def make_library_entry_for_work(work, content_path="_content") -> str:
     fd.write("\"\ndrive_links:\n  - \"\"\nstatus: featured\ncourse: \ntags:\n  - \n")
     fd.write(f"year: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
-    venue = title_case(work['host_venue']['display_name'].replace('"', "\\\""))
+    try:
+      venue = title_case(work['host_venue']['display_name'].replace('"', "\\\""))
+    except AttributeError:
+      venue = ""
     if category == 'monographs':
         fd.write("olid: \n")
     elif category in ('excerpts', 'papers'):
