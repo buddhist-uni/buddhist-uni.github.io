@@ -16,6 +16,7 @@ status: featured
 year: 2010
 address: "Hamburg, Germany"
 publisher: "Hamburg UP"
+pages: 132
 ---
 
 > I invite the reader to join me in a search for what could be found in the textual corpus of early Buddhist discourses

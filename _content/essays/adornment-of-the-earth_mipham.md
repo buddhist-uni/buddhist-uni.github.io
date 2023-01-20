@@ -13,6 +13,7 @@ tags:
 year: 1906
 subcat: poetry
 base_value: 0.2
+pages: 4
 ---
 
 > Svā Kṣitigarbha, Essence of the Earth, you who nurture all beings

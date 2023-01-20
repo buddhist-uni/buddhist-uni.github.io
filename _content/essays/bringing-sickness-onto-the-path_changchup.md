@@ -12,6 +12,7 @@ tags:
   - view
 year: 2018
 base_value: 0.2
+pages: 1
 ---
 
 > There are three ways: best, intermediate and inferior.

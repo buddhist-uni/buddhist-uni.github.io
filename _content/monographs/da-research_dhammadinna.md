@@ -6,6 +6,7 @@ publisher: dharmadrum
 course: da
 drive_links: ["https://drive.google.com/file/d/1IjAs-IkYGuxOLMuGnSzgHY--xftLdFA2/view?usp=drivesdk"]
 external_url: "https://www.dropbox.com/s/rk0mtc0a3g2guxn/ResearchDirgha.pdf"
+pages: 236
 ---
 
 > Thanks to the discovery and ongoing publication of the incomplete Sanskrit Dīrgha-āgama manuscript from Gilgit, three different versions of the Collection of Long Discourses are now available for comparative study: the Pali Dīgha-nikāya transmitted within the Theravāda tradition, the just-mentioned Dīrgha-āgama in Sanskrit, identified as Sarvāstivāda or Mūlasarvāstivāda, and the Chinese translation of an Indic Dīrgha-āgama (長阿含經), generally considered to be affiliated with the Dharmaguptakas.

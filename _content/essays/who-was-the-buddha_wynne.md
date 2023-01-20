@@ -9,6 +9,7 @@ tags:
 status: rejected
 year: 2019
 month: dec
+pages: 9
 ---
 
 > aspects of the myth must be stripped away

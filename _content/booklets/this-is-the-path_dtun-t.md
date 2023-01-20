@@ -13,6 +13,7 @@ tags:
 year: 2009
 month: nov
 olid: OL32038902M
+pages: 70
 ---
 
 > Once the mind has been made peaceful, we then allow the mind to rest for some time in this calm state. Once it begins to think and proliferate again, we then take up the body for contemplation. Contemplation and samādhi are practiced in alternation like this.

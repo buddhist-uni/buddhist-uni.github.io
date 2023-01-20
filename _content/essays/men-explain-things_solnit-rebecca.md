@@ -10,6 +10,7 @@ status: featured
 tags:
   - gender
   - speech
+pages: 8
 ---
 
 > Mansplaining is not a universal flaw of the gender, just the intersection between overconfidence and cluelessness where some portion of that gender gets stuck.

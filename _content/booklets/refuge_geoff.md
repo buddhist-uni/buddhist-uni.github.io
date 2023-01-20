@@ -12,6 +12,7 @@ olid: OL37817303M
 tags:
   - ebts
 address: Valley Center, CA
+pages: 94
 ---
 
 A collection of essays and readings from the Pali Canon introducing the Triple Gem.

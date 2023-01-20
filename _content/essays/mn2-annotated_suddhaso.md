@@ -14,6 +14,7 @@ tags:
   - ethics
   - pali-canon
   - mn
+pages: 14
 ---
 
 > There is no single "swiss-army knife" technique that works equally well at all times; instead, we must carefully examine our present conditions and determine what practice is most relevant.

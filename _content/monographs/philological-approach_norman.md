@@ -20,6 +20,7 @@ external_url: "https://www.shin-ibs.edu/research/archived-publications-and-resea
 series: "Buddhist Forum"
 number: 5
 source_url: "https://ahandfulofleaves.files.wordpress.com/2011/11/a-philological-approach-to-buddhism_norman_tbf_1997.pdf"
+pages: 184
 ---
 
 

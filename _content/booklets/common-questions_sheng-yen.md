@@ -14,6 +14,7 @@ month: oct
 olid: OL37766816M
 publisher: "The Sheng Yen Education Foundation"
 address: Taipei
+pages: 210
 ---
 
 A collection of frequently asked questions about Chinese Mahayana Buddhism: an excellent start for understanding the basics and common misconceptions among Chinese laity.

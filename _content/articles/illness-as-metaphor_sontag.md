@@ -19,6 +19,7 @@ tags:
   - mindfulness
   - problems
 status: featured
+pages: 31
 ---
 
 > the most truthful way of regarding illness — and the healthiest way of being ill — is one most puriﬁed of, most resistant to, metaphoric thinking

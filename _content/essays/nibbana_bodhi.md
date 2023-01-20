@@ -7,6 +7,7 @@ drive_links: ["https://drive.google.com/file/d/1-RiEQMpqM3cGULi8kJEgmsU87PTfpqXv
 external_url: "https://www.dhammatalks.net/Books16/Bhikkhu_Bodhi-Nibbana.pdf"
 year: 1981
 course: nibbana
+pages: 4
 ---
 
 A condensed transcript of [_The Buddha's Teaching As It Is_]({% link _content/av/as-it-is_bodhi.md %}) lecture six, this short essay gives a definition and typology of *nibbāna*.

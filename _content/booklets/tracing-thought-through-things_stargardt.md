@@ -15,6 +15,7 @@ tags:
   - burmese
   - manuscripts
   - historiography
+pages: 63
 ---
 
 > This is striking proof of the general reliability with which Buddhist monks transmitted their texts

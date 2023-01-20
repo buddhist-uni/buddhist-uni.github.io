@@ -12,6 +12,7 @@ tags:
   - mahayana
   - monastic-advice
 base_value: 0.25
+pages: 2
 ---
 
 > Human born.  

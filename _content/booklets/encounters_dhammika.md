@@ -12,6 +12,7 @@ year: 1990
 publisher: "Buddhist Research Society"
 address: "Singapore"
 olid: OL13212554M
+pages: 104
 ---
 
 > Fourteen writers here describe how they came to be Buddhists.

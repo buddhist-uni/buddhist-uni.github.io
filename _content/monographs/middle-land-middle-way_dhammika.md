@@ -10,6 +10,7 @@ publisher: bps
 course: pilgrimage
 tags:
   - indian
+pages: 250
 ---
 
 > the modern pilgrim needs to have some idea about the religious, historical and archaeological background of each of the sacred places

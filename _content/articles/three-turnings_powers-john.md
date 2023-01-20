@@ -10,6 +10,7 @@ course: mahayana
 journal: orer
 tags:
   - mahayana-canon
+pages: 17
 ---
 
 > Subsequent wheels build on and correct misconceptions in earlier ones, and the schema construes each successive dispensation as more profound than the preceding one(s) and as better representing the Buddha’s final thought.

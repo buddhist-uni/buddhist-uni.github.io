@@ -14,6 +14,7 @@ year: 1980
 olid: OL4266213M
 oclc: 6040989
 publisher: "Johns Hopkins"
+pages: 177
 ---
 
 > Menocchio was certain that at death man reverted to the elements of which he was composed. But an irresistible yearning drove him to picture some sort of survival after death.

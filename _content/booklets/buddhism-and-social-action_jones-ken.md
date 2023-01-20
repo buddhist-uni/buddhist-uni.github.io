@@ -18,6 +18,7 @@ tags:
   - west
 status: featured
 base_value: 2
+pages: 41
 ---
 
 > From suffering arises desire to end suffering. The secular humanistic activist sets himself the endless task of satisfying that desire, and perhaps hopes to end social suffering by constructing utopias. The Buddhist, on the other hand, is concerned ultimately with the transformation of desire.

@@ -13,6 +13,7 @@ tags:
   - path
 subcat: poetry
 base_value: 0.2
+pages: 1
 ---
 
 > This is the instruction for confusion dawning as wisdom.

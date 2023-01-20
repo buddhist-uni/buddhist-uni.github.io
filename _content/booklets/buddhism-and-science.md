@@ -18,6 +18,7 @@ month: apr
 publisher: bps
 series: wheel
 number: 3
+pages: 19
 ---
 
 > Buddhism is not likely to be at variance with science so long as scientists confine themselves to their methodology and their respective fields without making a dogma of materialism.

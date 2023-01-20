@@ -11,6 +11,7 @@ journal: aririab
 tags:
   - agama
 volume: 24
+pages: "23--36"
 ---
 
 > such problems makes it advisable not to rely on the Pāli version for reconstructing the Madhyama-āgama parallel.

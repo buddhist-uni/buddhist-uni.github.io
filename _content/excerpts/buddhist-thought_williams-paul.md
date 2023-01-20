@@ -8,6 +8,7 @@ year: 2000
 from_book: buddhist-thought_williams-paul
 tags:
   - abhidhamma
+pages: 30
 ---
 
 A few pages on the early schools of Indian Buddhism and the emergence of the Mahayana.

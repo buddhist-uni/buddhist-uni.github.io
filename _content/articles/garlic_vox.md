@@ -11,6 +11,7 @@ tags:
 year: 2022
 month: apr
 journal: vox
+pages: 5
 ---
 
 > My tastebuds had been longing for something, and I couldn’t quite figure out what it was.

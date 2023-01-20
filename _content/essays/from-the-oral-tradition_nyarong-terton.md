@@ -16,6 +16,7 @@ tags:
   - meditation
 year: 2013
 base_value: 0.15
+pages: 1
 ---
 
 > the time for discovering Buddha directly, you must remain alone

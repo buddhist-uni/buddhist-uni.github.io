@@ -17,6 +17,7 @@ tags:
   - monastic-mahayana
   - bodhisattva
   - brahmavihara
+pages: 22
 ---
 
 > They feel safe around you, and because you, out of genuine compassion, never intend to harm them but only try to be of help, they also feel a sort of joy in your presence.

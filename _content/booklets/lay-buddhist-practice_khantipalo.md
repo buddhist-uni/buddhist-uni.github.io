@@ -12,6 +12,7 @@ course: form
 tags:
   - lay
 status: featured
+pages: 48
 ---
 
 A straightforward and practical guide, this book gives detailed descriptions and explanations for the most important religious practices for lay Buddhists. Good reading for anthropologists of Buddhism, for those who have recently converted, or those who are thinking about it, this book is absolutely essential and remains my first recommendation for learning how to be a Buddhist. 

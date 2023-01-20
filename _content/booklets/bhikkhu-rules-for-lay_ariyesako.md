@@ -9,6 +9,7 @@ course: monastic
 base_value: 2.5
 tags:
   - monastic-theravada
+pages: 123
 ---
 
 A clear and thorough introduction to the monastic rules, especially as practiced in the contemporary Theravada Tradition.

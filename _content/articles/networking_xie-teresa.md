@@ -11,6 +11,7 @@ tags:
 year: 2022
 month: oct
 journal: vox
+pages: 5
 ---
 
 > a simple guide that shows you the term isn’t as cringey or scary as it’s all made out to be

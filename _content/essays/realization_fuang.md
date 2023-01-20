@@ -13,6 +13,7 @@ tags:
   - anapanasati
   - thai
   - thai-forest
+pages: 3
 ---
 
 > So, keep on practicing. There's nothing to be afraid of. You'll **have** to reap results, there's no doubt about it.

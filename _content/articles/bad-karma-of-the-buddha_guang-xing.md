@@ -14,6 +14,7 @@ volume: 19
 number: 1
 journal: bsr
 status: featured
+pages: "19--29"
 ---
 
 > The Buddha's bad karma refers to ten problematic incidents that happened in the life of the historical Buddha. [...] The texts related to the bad karma of the Buddha can be divided into two groups: those texts accepting the bad karma and those rejecting the whole matter.

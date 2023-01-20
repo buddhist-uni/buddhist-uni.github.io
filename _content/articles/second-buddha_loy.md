@@ -11,6 +11,7 @@ tags:
   - mahayana-roots
 year: 2006
 journal: tricycle
+pages: 4
 ---
 
 > Nagarjuna uses concepts to undermine the thought-constructed ways in which we understand the world

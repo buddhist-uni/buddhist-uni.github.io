@@ -11,6 +11,7 @@ tags:
   - chan-roots
 drive_links: ["https://drive.google.com/file/d/1OsGaev0q9S-JhJkOvS1ItCHdP5kIQqF9/view?usp=drivesdk"]
 external_url: "https://agamaresearch.dila.edu.tw/wp-content/uploads/2013/10/Palumbo-2013.pdf"
+pages: 364
 ---
 
 > I will consider the *Zengyi ahan jing* chiefly as the product of historical actors, three-dimensional human beings engaging their own world, rather than the putative witness to some ill-defined sectarian tradition

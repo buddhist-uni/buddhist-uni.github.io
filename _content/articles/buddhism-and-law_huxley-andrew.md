@@ -18,6 +18,7 @@ tags:
   - sea
   - law
   - monastic-theravada
+pages: "47--95"
 ---
 
 > the vinaya is nearly as central to the Buddhist religion as the shari'a is to Islam. If we were to rank religions in order of legalism, Theravada would come at the legalistic end of the scale, near to Islam and far from, for example, Taoism.

@@ -15,6 +15,7 @@ tags:
   - buddhism
   - function
   - mindfulness
+pages: 8
 ---
 
 > There’s a way we want to spend our time, but we don’t do that because we don’t have the sense that time is short, time is precious. And the way to systematically raise the sense of urgency---Buddhism calls it samvega, spiritual urgency---is to bring the scarcity of time front and center in one’s consciousness: I am going to die. This show is not going to go on forever. 

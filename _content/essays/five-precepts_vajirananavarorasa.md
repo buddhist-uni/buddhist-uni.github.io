@@ -10,6 +10,7 @@ course: ethics
 tags:
   - lay
 year: 1912 # approximately correct for the original publication. Translation unknown.
+pages: 41
 ---
 
 A traditional analysis of the Five Precepts from the great reformer of Thai Buddhism.

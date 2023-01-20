@@ -14,6 +14,7 @@ year: 1983
 publisher: bps
 series: wheel-sn-anthology
 number: 183
+pages: 56
 ---
 
 > Joy is verily for him who is sad  

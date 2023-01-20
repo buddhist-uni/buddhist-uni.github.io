@@ -18,6 +18,7 @@ tags:
   - nibbana
   - vipassana
 year: 2005
+pages: 105
 ---
 
 An extremely profound and exceptionally rare book, *Arahattamagga* gives an unfiltered first-hand account of what it's actually like to walk the entire Path—from its tumultuous beginning to its extraordinary finish.

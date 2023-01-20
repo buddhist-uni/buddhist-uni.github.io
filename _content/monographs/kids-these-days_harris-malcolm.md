@@ -20,6 +20,7 @@ tags:
   - present
   - power
 status: featured
+pages: 261
 ---
 
 > The rate of change is visibly unsustainable. The profiteers call this process "disruption," while commentators on the left generally call it "neoliberalism" or "late capitalism." Millennials know it better as "the world," or "America," or "Everything." And Everything sucks.

@@ -9,6 +9,7 @@ course: pilgrimage
 tags:
   - setting
   - historiography
+pages: 22
 ---
 
 A reminder that our archeological and geographic knowledge about the Buddhist holy sites is still not as certain as we would normally like to assume.

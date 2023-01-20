@@ -12,6 +12,7 @@ tags:
   - setting
 year: 2022
 olid: OL37799940M
+pages: 240
 ---
 
 > Ānanda’s tears and the Buddha’s expression of gratitude and thanks are testament to the close bond between the two men, one that went beyond their kin relationship.

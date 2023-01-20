@@ -12,6 +12,7 @@ tags:
 year: 1996
 publisher: "the Young Men's Buddhist Association of America"
 address: "Bronx, NY"
+pages: 26
 ---
 
 An interactive commentary on the Heart Sutra compiled from a nine-day retreat on the text.

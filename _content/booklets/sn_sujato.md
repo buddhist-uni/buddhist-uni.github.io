@@ -11,6 +11,7 @@ year: 2019
 course: sn
 tags:
   - sutta
+pages: 765
 ---
 
 A public domain translation of the Saṃyutta Nikāya into straightforward English, made from the translations on [SuttaCentral](https://suttacentral.net/sn){:target="_blank"}.

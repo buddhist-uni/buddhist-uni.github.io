@@ -13,6 +13,7 @@ tags:
   - power
   - vinaya-studies
   - bhikkhuni
+pages: "369--399"
 ---
 
 All monastics, but Bhikkhunis especially, feel a tension between practicing restraint for their own development and practicing in ways that others expect. This article discusses the role of power and tradition within one such context.

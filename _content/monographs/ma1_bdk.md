@@ -15,6 +15,7 @@ drive_links: ["https://drive.google.com/file/d/1FZcYR-2ZXWhAeqtDuE-ZPvK1lc2YZURV
 external_url: "https://bdkamerica.org/product/the-madhyama-agama-middle-length-discourses-volume-i/"
 series: ma_bdk
 number: 1
+pages: 556
 ---
 
 A translation of MA Discourses 1–71.

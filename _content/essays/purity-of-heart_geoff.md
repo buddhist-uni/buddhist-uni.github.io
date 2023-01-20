@@ -14,6 +14,7 @@ tags:
   - meditation
   - nibbana
   - origination
+pages: 2
 ---
 
 > During my first weeks with my teacher, Ajaan Fuang, I began to realize that he had psychic powers.

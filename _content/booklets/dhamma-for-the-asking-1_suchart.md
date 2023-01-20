@@ -14,6 +14,7 @@ tags:
 year: 2014
 month: nov
 olid: OL37784632M
+pages: 380
 ---
 
 > what the Buddha knew and what he told us is a hard-to-come-by, transcendental truth which will make us happy all the time

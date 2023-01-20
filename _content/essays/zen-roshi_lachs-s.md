@@ -12,6 +12,7 @@ tags:
   - zen
 year: 2002
 month: oct
+pages: 17
 ---
 
 > Was Baker's commitment to Zen practice much greater than a number of other of Suzuki's close, very committed senior disciples?

@@ -15,6 +15,7 @@ tags:
   - capitalism
   - industrialization
   - world
+pages: 14
 ---
 
 > The world went from a situation where most of humanity had no need of money at all to one where today most of humanity struggles to survive on extremely small amounts of money. The graph casts this as a decline in poverty, but in reality what was going on was a process of dispossession

@@ -15,6 +15,7 @@ year: 2013
 month: aug
 journal: "Strike! Magazine"
 number: 3
+pages: 4
 ---
 
 > what does it say about our society that it seems to generate an extremely limited demand for talented poet-musicians, but an apparently infinite demand for specialists in corporate law?

@@ -19,6 +19,7 @@ olid: OL27663011M
 oclc: 1023106279
 publisher: Bloomsbury
 address: London
+pages: 416
 ---
 
 > General Gutiérrez Mellado pulls his arm violently out of the Prime Minister’s grip; then the burst of gunfire erupts.

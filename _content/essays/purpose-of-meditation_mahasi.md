@@ -17,6 +17,7 @@ tags:
   - vipassana
   - stages
   - stream-entry
+pages: 23
 ---
 
 > *Kammaṭṭhāna* meditation should be practised so as to reach *Nibbāna*, thereby escaping from all kinds of misery

@@ -9,6 +9,7 @@ course: nuns
 tags:
   - british
 year: 2007
+pages: 40
 ---
 
 A pair of articles published in [BSRV](/journals/bsr) on the history of the peculiar nuns order founded at Chithurst and [Amaravati](/publishers/amaravati) in 1983.

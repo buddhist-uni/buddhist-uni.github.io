@@ -15,6 +15,7 @@ status: featured
 journal: "InTensions Journal"
 publisher: "York University"
 volume: 5
+pages: 41
 ---
 
 > revolutionaries suffer subjective vertigo when they meet the state’s disciplinary violence with the revolutionary violence of the subaltern; but they are spared objective vertigo. This is because the most disorienting aspects of their lives are induced

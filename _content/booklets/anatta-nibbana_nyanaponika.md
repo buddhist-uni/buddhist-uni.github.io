@@ -19,6 +19,7 @@ year: 1959
 series: wheel
 number: 10
 publisher: bps
+pages: 16
 ---
 
 > Western writers too readily described Buddhism as a nihilistic doctrine teaching annihilation as its highest goal, a view these writers condemned as philosophically absurd and ethically reprehensible. Similar statements still sometimes appear in prejudiced non-Buddhist literature. The pendular reaction to that view was the conception of Nibbāna as existence. It was now interpreted in the light of already familiar religious and philosophical notions [such] as pure being, pure consciousness, pure self or some other metaphysical concept.  

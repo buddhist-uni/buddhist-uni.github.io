@@ -20,6 +20,7 @@ address: London
 volume: 8
 number: 11
 month: nov
+pages: "17--18"
 ---
 
 > In the *Nettipakarana* there is a three-fold definition of a *sutta* which may be useful to consider and may help one think more deeply about these sayings.

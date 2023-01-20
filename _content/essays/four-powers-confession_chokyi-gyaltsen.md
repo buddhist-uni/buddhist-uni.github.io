@@ -12,6 +12,7 @@ tags:
   - confession
   - thought
 year: 2019
+pages: 5
 ---
 
 > Overpowered by the three poisons, I have committed the five boundless crimes...

@@ -8,6 +8,7 @@ year: 2019
 course: sutta
 tags:
   - dn
+pages: 20
 ---
 
 Bhikkhu Sujato's general introduction to the *Dīgha Nikāya*.

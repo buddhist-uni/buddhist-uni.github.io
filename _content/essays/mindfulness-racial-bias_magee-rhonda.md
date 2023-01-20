@@ -15,6 +15,7 @@ tags:
   - thought
 year: 2015
 month: may
+pages: 8
 ---
 
 > While they won’t end racism, mindfulness and other contemplative practices do support ways of being in the world that reflect less of the biases that each of us holds

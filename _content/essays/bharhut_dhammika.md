@@ -7,6 +7,7 @@ year: 2012
 tags:
   - archeology
 course: indian
+pages: 5
 ---
 
 > Of all the discoveries Cunningham ever made he always considered that at Bharhut to be the most significant.

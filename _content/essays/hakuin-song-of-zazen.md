@@ -12,6 +12,7 @@ tags:
   - zen
   - view
 year: 1994 # approximate translation date
+pages: 2
 ---
 
 > All beings by nature are Buddha,  

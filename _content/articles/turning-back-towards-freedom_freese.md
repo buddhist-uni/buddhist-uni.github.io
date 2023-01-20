@@ -12,6 +12,7 @@ tags:
 course: monastic-theravada
 year: 2011
 journal: present
+pages: "24--32"
 ---
 
 An interview with the first Theravada Bhikkhunis to hold a _Pātimokkha_ recitation in North America, they describe the ceremony itself and its significance.

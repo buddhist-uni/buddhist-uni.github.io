@@ -16,6 +16,7 @@ tags:
   - burmese
 base_value: 0.5
 status: featured
+pages: 10
 ---
 
 >  If a sensation of itchiness intervenes and the yogi desires to scratch because it is hard to bear, both the sensation and the desire to get rid of it should be noted, without immediately getting rid of the sensation by scratching.

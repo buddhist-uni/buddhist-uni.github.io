@@ -14,6 +14,7 @@ tags:
   - pali-canon
   - ebts
   - function
+pages: 40
 ---
 
 A short anthology of texts from the Pali Canon framed by the Noble Eightfold Path. An excellent study guide.

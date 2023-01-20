@@ -12,6 +12,7 @@ tags:
   - engaged
   - function
   - dialogue
+pages: 10
 ---
 
 > The idea of the Buddha nature, or the earlier idea that "this mind is brightly shining, but it is defiled by visiting defilements," point to a potential for good deep in everyone...

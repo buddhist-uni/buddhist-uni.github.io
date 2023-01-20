@@ -13,6 +13,7 @@ tags:
   - sati
   - vipassana
   - kaya
+pages: 83
 ---
 
 A series of 19 talks given by His Holiness to a group of Westerners on the practice of meditation on the body.

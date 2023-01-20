@@ -11,6 +11,7 @@ tags:
   - form
 year: 2009
 month: jun
+pages: 8
 ---
 
 > So far the Bhikkhuni Sangha has mainly been comprised of individuals scattered here and there with no consistent standard. They have had to be very strong people in order to get where they are, but the next step is to take these strong individuals and form a community.

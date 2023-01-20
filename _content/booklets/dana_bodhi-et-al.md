@@ -21,6 +21,7 @@ base_value: 1.8
 series: wheel
 number: 367
 publisher: bps
+pages: 40
 ---
 
 A collection of essays on generosity.

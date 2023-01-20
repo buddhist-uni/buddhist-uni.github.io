@@ -15,6 +15,7 @@ tags:
   - hermeneutics
 year: 2010
 publisher: "The Buddhist Association of the United States"
+pages: 160
 ---
 
 > Consistent precedence given to the development of contentment during all activities as well as when settling down for formal meditation goes a long way in preparing the ground for what is, in a way, the direct result of contentment: a mind that is happily settled within and therefore able to gain deep concentration.

@@ -14,6 +14,7 @@ tags:
   - pali-canon
 year: 2014
 publisher: "Hamburg"
+pages: 172
 ---
 
 > The fossils found clearly show that there has been a development from reptile to bird, even though the particular animal whose remains have been discovered was of course not the first one to start jumping or gliding from one tree to the next. Comparable to the fossils of an archaeopteryx, some early discourses reflect particular stages in the development of Buddhist thought.

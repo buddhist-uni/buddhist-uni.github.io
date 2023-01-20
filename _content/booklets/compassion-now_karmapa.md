@@ -16,6 +16,7 @@ publisher: KTD Publications
 address: Woodstock, NY
 status: rejected
 reason: "recent scandals"
+pages: 104
 ---
 
 > love and compassion cannot simply be dropped on people

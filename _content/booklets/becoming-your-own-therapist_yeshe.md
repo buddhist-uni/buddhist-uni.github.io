@@ -1,9 +1,9 @@
 ---
 title: "Becoming Your Own Therapist"
 authors: [yeshe]
-external_url: "https://www.buddhanet.net/pdf_file/becoming1.pdf"
+external_url: "https://www.lamayeshe.com/sites/default/files/pdf/115_pdf.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1KIk3xObv0BG7cJkManHIiNJpInaUc3lO/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ubhQZkx_MPDCFN_jbA5IOarGFendd-CE/view?usp=drivesdk"]
 olid: OL24961989M
 year: 1998
 course: function
@@ -12,6 +12,7 @@ tags:
   - path
   - buddhism
   - tibet-west
+pages: 57
 ---
 
 > when you understand the nature of your own mind, you’ll be able to control it naturally; you won’t have to push

@@ -4,7 +4,7 @@ layout: multipartcourse
 part_header: "Module # of An Introduction to Buddhist Practice"
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
 feedback_id: "The+Function+of+Buddhism"
-description: "An introduction to Buddhist practice focusing on how ethics and meditation work together to improve our lives."
+description: "An overview of Buddhist practice focusing on how ethics and meditation work together to improve our lives."
 time: 2
 lecturers:
   - yuttadhammo

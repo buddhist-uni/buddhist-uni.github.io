@@ -18,6 +18,7 @@ tags:
 course: meditation
 status: featured
 base_value: 2.5
+pages: 43
 ---
 
 My most highly recommended introduction to Buddhist meditation.

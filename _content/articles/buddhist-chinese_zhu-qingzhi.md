@@ -10,6 +10,7 @@ volume: 31
 course: chinese-primer
 tags:
   - agama
+pages: "485--504"
 ---
 
 > The differences between Buddhist Chinese and the native Chinese language found in non-Buddhist documents are obvious.

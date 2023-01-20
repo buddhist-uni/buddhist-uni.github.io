@@ -21,6 +21,7 @@ olid: OL33912269M
 publisher: degruyter
 series: chinese-humanities
 number: 9
+pages: 468
 ---
 
 > Although Ru and Dao are disparate gateways,  

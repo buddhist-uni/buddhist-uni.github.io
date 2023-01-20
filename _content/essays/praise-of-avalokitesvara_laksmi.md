@@ -11,6 +11,7 @@ course: tantric
 tags:
   - tantric-roots
 year: 2019
+pages: 4
 ---
 
 A famous poem about Avalokiteśvara known in Tibet as "The Po Praise"

@@ -14,6 +14,7 @@ course: vinaya-pitaka
 tags:
   - theravada
   - characters
+pages: "137--146"
 ---
 
 > Ananda, Upali and Devadatta act out a theoretical quarrel about Buddhist attitudes to law

@@ -13,6 +13,7 @@ tags:
 year: 1998
 publisher: Grove
 status: featured
+pages: 507
 ---
 
 > the *Sonora* passed through the Golden Gate and steamed out upon the broad Pacific, heading south, carrying five hundred passengers, thirty-eight thousand letters, and a consigned shipment of gold totaling $1,595,497.13

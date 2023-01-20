@@ -11,6 +11,7 @@ tags:
   - becon
   - dana
 status: featured
+pages: 3
 ---
 
 Ajahn Geoff explains how the monastic institution works by creating an economy of gifts.

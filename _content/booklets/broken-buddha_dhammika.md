@@ -10,6 +10,7 @@ olid: OL32035595M
 tags:
   - theravada
   - controversies
+pages: 80
 ---
 
 An excoriating but faithful look "behind the scenes" at some of the problems of contemporary Theravada in South(east) Asia.

@@ -12,6 +12,7 @@ course: indian
 tags:
   - characters
   - rebirth-stories
+pages: 39
 ---
 
 > The ability of a lineage to carry a particular association is of great benefit to the narratives, for it provides both weight and flexibility. 

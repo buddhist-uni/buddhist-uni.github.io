@@ -11,6 +11,7 @@ tags:
   - gender
   - british
 year: 2021
+pages: 4
 ---
 
 One of the first transgender men in Britain, Michael Dillon, was also a pioneering Buddhist monk.

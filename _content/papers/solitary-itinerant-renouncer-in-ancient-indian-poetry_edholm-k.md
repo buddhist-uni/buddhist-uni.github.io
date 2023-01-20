@@ -19,6 +19,7 @@ publisher: "Stockholm UP"
 booktitle: "Songs on the Road"
 address: "Stockholm"
 chapter: 3
+pages: "35--66"
 ---
 
 > The ancient Indian gāthā – a proverbial, succinct type of single-stanza poetry, often collected in thematic sets – became a favoured form of expression among groups of ascetics from the middle to the end of the 1st millennium BCE.

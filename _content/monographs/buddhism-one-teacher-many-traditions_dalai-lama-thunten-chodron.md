@@ -10,6 +10,7 @@ year: 2014
 oclc: 944380654
 month: nov
 publisher: wisdom
+pages: 318
 ---
 
 > We are a huge and diverse Buddhist family following the same wise and compassionate Teacher, Śākyamuni Buddha. I believe our diversity is one of our strengths. It has allowed Buddhism to spread throughout the world and to benefit billions of people on this planet.

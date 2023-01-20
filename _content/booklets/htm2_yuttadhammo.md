@@ -11,6 +11,7 @@ tags:
   - problems
   - origination
 year: 2016 # maybe earlier
+pages: 19
 ---
 
 A short collection of essays addressing questions and problems that came up for readers of [the first volume](/content/booklets/how-to-meditate_yuttadhammo).

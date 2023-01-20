@@ -8,6 +8,7 @@ course: vinaya-studies
 tags:
   - vinaya-pitaka
 base_value: 1.5
+pages: 210
 ---
 
 In the 1970s, Ajahn Brahm began writing his own translation of and commentary on the *Vinaya* in order to support his fellow, Western monks who, at the time, lacked such a resource in English. 

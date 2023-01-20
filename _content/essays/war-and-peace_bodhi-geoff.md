@@ -13,6 +13,7 @@ tags:
   - war
   - violence
   - wwii
+pages: 33
 ---
 
 A fascinating series of open letters between Ajahn Geoff and Bhikkhu Bodhi on the subject of "just war."

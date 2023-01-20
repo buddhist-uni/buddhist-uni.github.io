@@ -18,6 +18,7 @@ tags:
   - monastic
   - problems
   - cosmology
+pages: 382
 ---
 
 > Just as the sun is valued not only for its own intrinsic radiance but also for its ability to illuminate the world, so the brilliance of the Buddha is determined not only by the clarity of his Teaching but by his ability to illuminate those who came to him for refuge

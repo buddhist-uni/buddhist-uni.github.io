@@ -14,6 +14,7 @@ tags:
   - thai
   - problems
   - iddhipada
+pages: 20
 ---
 
 > ‘Iddhi’ means greatness and ‘pāda’ means path. Together they form the path to success. Whether it be in the Dhamma or the worldly sense, one simply needs the four bases of spiritual power in order to succeed.

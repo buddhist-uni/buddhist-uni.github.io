@@ -14,6 +14,7 @@ tags:
   - philosophy
   - theravada
   - modern
+pages: 192
 ---
 
 The classic introduction to Buddhist philosophy to the modern reader.

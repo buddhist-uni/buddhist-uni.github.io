@@ -14,6 +14,7 @@ year: 2011
 journal: bsr
 volume: 28
 number: 1
+pages: "3--78"
 ---
 
 A thorough, statistical survey of the Pāli suttas addressed to lay people, analyzing their breakdown by gender, caste, and attainment.

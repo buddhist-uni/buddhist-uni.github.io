@@ -14,6 +14,7 @@ tags:
 year: 1985
 publisher: "The San Francisco Zen Center"
 address: "San Francisco, CA"
+pages: 4
 ---
 
 > arouse the thought of enlightenment...

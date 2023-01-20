@@ -16,6 +16,7 @@ tags:
   - path
   - ethics
   - problems
+pages: 223
 ---
 
 My favorite translation of the Dhammapada, including accurate summaries of the stories that traditionally accompanied the verses—some of the most beloved commentarial stories in all of Buddhism.

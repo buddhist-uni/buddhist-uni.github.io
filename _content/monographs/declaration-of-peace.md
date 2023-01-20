@@ -12,6 +12,7 @@ year: 2020
 olid: OL37079470M
 publisher: "Heavenly Culture, World Peace, Restoration of Light"
 address: Seoul
+pages: 308
 ---
 
 > The DPCW is drafted, to some extent, to take account of the evolution in international politics, and the failures of the existing international legal norms dedicated to securing international peace.

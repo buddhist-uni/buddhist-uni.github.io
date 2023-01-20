@@ -12,6 +12,7 @@ course: pilgrimage
 year: 2005
 publisher: wisdom
 base_value: 6
+pages: 368
 ---
 
 Two English Buddhists retell the story of their trek around the Holy Sites of India™️ in this entertaining and thoughtful travel log.

@@ -12,6 +12,7 @@ tags:
   - fascism
 year: 2021
 month: mar
+pages: 8
 ---
 
 > For fascists, yoga was an occult tool for purifying and exalting the individual body as a microcosm of the triumphant nation.

@@ -11,6 +11,7 @@ tags:
 year: 2022
 month: mar
 journal: vox
+pages: 6
 ---
 
 > A community is defined by four criteria: membership, influence, integration and fulfillment of needs, and shared emotional connection.

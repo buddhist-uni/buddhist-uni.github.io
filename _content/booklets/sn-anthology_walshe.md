@@ -16,6 +16,7 @@ year: 1984
 publisher: bps
 series: wheel-sn-anthology
 number: 318
+pages: 67
 ---
 
 > Who, concentrated, leaves conceits behind,  

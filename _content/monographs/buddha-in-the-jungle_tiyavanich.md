@@ -11,6 +11,7 @@ oclc: 56467538
 olid: OL3691328M
 publisher: Silkworm
 address: "Chiang Mai, Thailand"
+pages: 380
 ---
 
 An oral history of Thai Buddhism from about 1850–1950.

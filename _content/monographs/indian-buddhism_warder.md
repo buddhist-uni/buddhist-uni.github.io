@@ -11,6 +11,7 @@ course: indian
 tags:
   - sects
   - setting
+pages: 600
 ---
 
 > Theravāda, Zen and Lamaism, for all their superficial differences, share common ground in the practice of meditation, which is the ground of original Buddhism and qualifies them to take the name

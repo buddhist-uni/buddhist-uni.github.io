@@ -10,6 +10,7 @@ tags:
   - dialogue
 year: 1999
 month: jul
+pages: 7
 ---
 
 > While [Engaged Buddhists] constantly imply that social activists would do well to adopt meditation, mindfulness, compassion, nonviolence and other Buddhist qualities, they rarely acknowledge that they themselves might have anything to learn from non-Buddhists

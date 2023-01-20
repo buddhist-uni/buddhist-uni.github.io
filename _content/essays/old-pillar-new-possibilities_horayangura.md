@@ -9,6 +9,7 @@ course: monastic
 tags:
   - nuns
   - thai
+pages: 17
 ---
 
 Why ordain when you can practice meditation as a lay person?

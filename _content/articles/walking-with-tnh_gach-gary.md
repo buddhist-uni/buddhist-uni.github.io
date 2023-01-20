@@ -13,6 +13,7 @@ year: 2022
 month: jan
 base_value: 0.1
 journal: tricycle
+pages: 4
 ---
 
 > I knew I might be late for the morning talk if I didn’t hurry. Yet I didn’t

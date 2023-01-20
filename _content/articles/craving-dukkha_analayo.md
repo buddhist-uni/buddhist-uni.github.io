@@ -9,6 +9,7 @@ drive_links: ["https://drive.google.com/file/d/13me29X0Tk44xTcvo-pDlA62ejh7GUXKs
 course: philosophy
 tags:
   - function
+pages: "35--42"
 ---
 
 > The teaching of the four noble truths reflects a medical scheme of diagnosis, which proceeds from recognition of the disease, dukkha, to identifying its cause, craving.

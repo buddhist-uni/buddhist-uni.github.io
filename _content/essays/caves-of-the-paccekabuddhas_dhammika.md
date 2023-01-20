@@ -9,6 +9,7 @@ course: pilgrimage
 tags:
   - wider
   - himalayas
+pages: 6
 ---
 
 > On every horizon there were soaring peaks.

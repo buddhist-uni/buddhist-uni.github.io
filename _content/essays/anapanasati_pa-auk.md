@@ -10,6 +10,7 @@ tags:
   - anapanasati
   - meditation
 year: 2001 # a wild guess
+pages: 6
 ---
 
 > most yogis succeed with that method

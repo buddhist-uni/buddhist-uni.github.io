@@ -12,6 +12,7 @@ base_value: 0.75
 tags: 
   - imagery
   - origination
+pages: 18
 ---
 
 > *nibbāna* is not a destination after death.

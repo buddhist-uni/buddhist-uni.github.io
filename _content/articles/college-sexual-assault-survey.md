@@ -10,6 +10,7 @@ tags:
 slug: "twenty-three-percent"
 year: 2015
 journal: "CNN"
+pages: 4
 ---
 
 A reminder that sexual violence is quite prevalent in the human realm, even among the educated, upper classes.

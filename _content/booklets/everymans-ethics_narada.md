@@ -15,6 +15,7 @@ series: wheel
 number: 14
 publisher: bps
 base_value: 1.5
+pages: 21
 ---
 
 Four important suttas on ethics. The translations in this booklet are a bit dated, but not bad.

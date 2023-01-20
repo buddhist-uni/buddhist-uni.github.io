@@ -7,6 +7,7 @@ year: 2008
 course: vinaya-studies
 tags:
   - bhikkhuni
+pages: 18
 ---
 
 An overview of some of the Vinaya rules regarding communally owned property according to the Theravada Tradition.

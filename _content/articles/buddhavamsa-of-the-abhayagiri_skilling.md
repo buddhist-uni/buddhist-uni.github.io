@@ -12,6 +12,7 @@ course: theravada-roots
 tags:
   - bodhisatta
   - vinaya-controversies
+pages: "165--175"
 ---
 
 > The Abhayagiri monks were broad-minded in outlook; they maintained contacts with foreign Buddhist schools, and themselves established bases in India and in South-east Asia. 

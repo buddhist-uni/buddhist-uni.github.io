@@ -10,6 +10,7 @@ course: vinaya-studies
 month: oct
 year: 2021
 journal: lions-roar
+pages: 9
 ---
 
 > A spiritual community is nothing if it cannot take care of its most vulnerable.

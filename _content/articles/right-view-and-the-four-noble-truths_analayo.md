@@ -12,6 +12,7 @@ tags:
   - sa
   - view
   - stream-entry
+pages: "11--43"
 ---
 
 Venerable Analayo shows how the Four Noble Truths are akin to a medical treatment plan—from diagnosis to cure—and explains "the significance of [their] realization as the fulfilment of right view."

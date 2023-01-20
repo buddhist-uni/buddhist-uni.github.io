@@ -13,6 +13,7 @@ tags:
   - world
 year: 2011
 publisher: "Melville House"
+pages: 544
 ---
 
 > If history shows anything, it is that there's no better way to justify relations founded on violence---to make such relations seem moral---than by reframing them in the language of debt---above all, because it immediately makes it seem that it's the victim who's doing something wrong.

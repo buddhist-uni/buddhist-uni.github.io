@@ -9,6 +9,7 @@ tags:
 year: 1988
 olid: OL22201384M
 publisher: "Bantam Dell"
+pages: 198
 ---
 
 > The universe doesn't allow perfection.

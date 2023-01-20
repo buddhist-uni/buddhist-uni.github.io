@@ -9,6 +9,7 @@ course: vinaya-studies
 tags:
   - bhikkhuni
   - vinaya-pitaka
+pages: 163
 ---
 
 Slightly less conservatively preserved than the monks', the Bhikkhunī Pātimokkha should be studied comparatively to get a sense for what their original rules might have been: a scholarly process which continues to this day.

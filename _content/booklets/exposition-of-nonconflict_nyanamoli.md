@@ -18,6 +18,7 @@ series: wheel
 number: 269
 publisher: bps
 base_value: 1
+pages: 19
 ---
 
 An important sutta on Right Speech, giving the Buddha's famous injunction to "not insist on local language."

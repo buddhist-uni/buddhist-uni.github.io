@@ -14,6 +14,7 @@ course: setting
 tags:
   - gender
   - characters
+pages: 13
 ---
 
 > Women are often the main upholders and supporters of a religion or faith or movement. This was certainly so with Buddhism when it was at its beginnings

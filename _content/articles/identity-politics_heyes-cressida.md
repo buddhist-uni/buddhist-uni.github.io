@@ -13,6 +13,7 @@ tags:
   - inner
   - activism
   - politics
+pages: 18
 ---
 
 > ways of understanding their [group's] distinctiveness which challenge dominant characterizations with the goal of greater self-determination

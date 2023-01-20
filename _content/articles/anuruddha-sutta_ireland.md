@@ -14,6 +14,7 @@ course: nibbana
 status: featured
 tags:
   - view
+pages: "1--5"
 ---
 
 > By the ariya, the cessation of sakkaya is seen as happiness. This is the reverse of the outlook of the entire world!

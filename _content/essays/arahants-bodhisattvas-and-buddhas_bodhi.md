@@ -15,6 +15,7 @@ tags:
   - ebts
   - rebirth-stories
 status: featured
+pages: 20
 ---
 
 > I would say that the Nikāyas and Āgamas give us a "historical-realistic perspective" on the Buddha, while the Mahāyāna sūtras give us a "cosmic-metaphysical perspective."

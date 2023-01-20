@@ -12,6 +12,7 @@ year: 2016
 olid: OL40209258M
 publisher: verlag
 address: Bochum, Germany
+pages: 234
 ---
 
 A thorough examination of all extant parallels of the story of the establishment of the Bhikkhuni Saṅgha with a careful eye to what they tell us about the redactors of the Canon.

@@ -16,6 +16,7 @@ tags:
   - becon
   - future
   - class
+pages: 14
 ---
 
 > One thing we can be certain of is that capitalism will end.

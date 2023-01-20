@@ -15,6 +15,7 @@ tags:
   - vinaya-studies
   - gender
   - ethics
+pages: 18
 ---
 
 To understand the vinaya correctly, we have to understand it in its historical context and as the product of a (continuing) historical process.

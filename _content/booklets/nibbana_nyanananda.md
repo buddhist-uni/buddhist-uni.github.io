@@ -15,6 +15,7 @@ tags:
   - emptiness
   - epistemology
 olid: OL32036296M
+pages: 800
 ---
 
 > all pathways for verbal expression, terminology and designation converge on this whirlpool between name-and-form and consciousness

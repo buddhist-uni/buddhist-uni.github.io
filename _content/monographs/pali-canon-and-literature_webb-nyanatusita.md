@@ -11,6 +11,7 @@ tags:
 year: 2011
 olid: OL36678385M
 publisher: bps
+pages: 231
 ---
 
 A handy reference guide to the Pāḷi Canon and the important, later works of Pāḷi literature, including an extensive bibliography, this book is useful for identifying Pāḷi texts by name.

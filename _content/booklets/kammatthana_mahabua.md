@@ -13,6 +13,7 @@ tags:
   - vipassana
 base_value: 3
 year: 1994
+pages: 224
 ---
 
 > We must use *sati-paññā* to sound out and see the *dukkha*. To see clearly the heat with insight. Then turn to see our Heart – is that also red-hot as well? Or is it only the body parts (*dhātu-khandha*) that are heated? If one possesses discernment then the Heart will not be moved. It will be cool within the mass of fire which is the body burning with the fires of *dukkha*. This is the way of those who practise.

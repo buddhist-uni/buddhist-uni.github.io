@@ -17,6 +17,7 @@ base_value: 1.2
 publisher: bps
 series: wheel
 number: 294
+pages: 45
 ---
 
 > Meditation may seem disappointing and even almost useless for quite a long time, but if you persevere in it, results are bound to come. But these results may not be at all the sort of thing you expect. And you may not even be the person who first becomes aware of them.  So press on regardless, and don’t look for results. If you can see the point of this piece of advice you have already in fact made useful progress.

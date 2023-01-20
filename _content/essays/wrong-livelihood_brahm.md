@@ -9,6 +9,7 @@ course: monastic
 tags:
   - livelihood
   - vinaya-studies
+pages: 3
 ---
 
 A short essay on what constitutes wrong livelihood for a monastic.

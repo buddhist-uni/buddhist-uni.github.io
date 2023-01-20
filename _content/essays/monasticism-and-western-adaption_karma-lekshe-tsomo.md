@@ -8,6 +8,7 @@ year: 1999
 course: form
 tags:
   - nuns
+pages: 6
 ---
 
 > The general public, including Western Buddhists themselves, often assumes that Buddhist monastics are cared for by an order, as are Christian monastics, and are surprised to learn that newly-ordained Western nuns and monks may be left to deal with issues of sustenance completely on their own.

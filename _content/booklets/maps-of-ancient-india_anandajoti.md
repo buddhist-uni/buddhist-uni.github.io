@@ -14,6 +14,7 @@ tags:
   - medieval
 year: 2012
 base_value: 1.5
+pages: 62
 ---
 
 > Here you will find presented a number of maps of places in Ancient Asia to help as a reference for those interested in understanding the geography and history presented in Buddhist texts.

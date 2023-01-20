@@ -11,6 +11,7 @@ tags:
   - indian
   - philosophy
 olid: OL1556684M
+pages: 304
 ---
 
 > Those who wanted to uphold the radical non-substantialist position of early Buddhism were faced with the dual task of responding to the enormously substantialist and absolutist think­ing of the non-Buddhist traditions as well as to those within the Buddhist tradition who fell prey to such thinking. 

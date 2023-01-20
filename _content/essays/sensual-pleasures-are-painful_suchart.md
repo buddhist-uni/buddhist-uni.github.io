@@ -13,6 +13,7 @@ tags:
   - meditation
   - philosophy
   - monastic-advice
+pages: 14
 ---
 
 > We have to practice step by step to attain succeeding levels of happiness, starting with the happiness that arises from giving, to the happiness from keeping the precepts, not hurting others, to the happiness from samadhi or mental discipline.

@@ -12,6 +12,7 @@ tags:
   - samadhi
 status: featured
 base_value: 0.25
+pages: 1
 ---
 
 > Doctor, if only you could see  

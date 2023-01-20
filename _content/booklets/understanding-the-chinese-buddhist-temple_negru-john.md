@@ -12,6 +12,7 @@ tags:
   - chan
   - chinese
   - canadian
+pages: 58
 ---
 
 A guided photo tour of Ching Kwok Buddhist Temple in Toronto's Chinatown.

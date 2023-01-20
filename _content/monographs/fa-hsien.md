@@ -15,6 +15,7 @@ tags:
 olid: OL25495570M
 year: 1886
 publisher: oxford
+pages: 116
 ---
 
 > This man is one of those who have seldom been seen from ancient times to the present. Since the Great Doctrine flowed on to the East there has been no one to be compared with Hien in his forgetfulness of self and search for the Law.

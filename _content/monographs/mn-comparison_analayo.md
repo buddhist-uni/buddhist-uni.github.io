@@ -11,6 +11,7 @@ base_value: 4
 status: featured
 formats: [PDFs]
 drive_links: ["https://drive.google.com/drive/folders/10onZWu01RgUkBHOLmulH32Y7I9JIyiAl"]
+pages: 1055
 ---
 
 A thorough examination of each discourse in the *Majjhima-nikāya* in the light of its parallels.

@@ -10,6 +10,7 @@ status: featured
 course: sutta
 tags: 
   - mn
+pages: 313
 ---
 
 A Creative Commons licensed selection of suttas from [Wisdom's celebrated translation](/content/monographs/mn_nyanamoli-bodhi), representing about a third of the full book.

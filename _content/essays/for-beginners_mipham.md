@@ -12,6 +12,7 @@ tags:
   - meditation
   - view
 year: 2012
+pages: 1
 ---
 
 > Kyeho! All activities within saṃsāra are pointless

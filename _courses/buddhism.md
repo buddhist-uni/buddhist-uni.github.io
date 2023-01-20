@@ -13,7 +13,7 @@ lecturers:
 next_link: /courses/buddhism/frontmatter
 google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 
-description: "A general introduction to Buddhism suitable for everyone."
+description: "A general introduction to Buddhism for beginners."
 icon: "fas fa-chalkboard-teacher"
 image: "https://buddhistuniversity.net/imgs/Isshinin-entrance.webp"
 image_width: 1280
@@ -76,7 +76,7 @@ There will be homework and challenges, but there will *not*{:.underline} be grad
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-This course will take about **2 months**{:.text-underline} to complete and will contain readings and lectures in college-level, American English.
+This course will take about **2 months** to complete and will contain readings and lectures in college-level, American English.
 To peruse the material in advance, see [the bibliography](/tags/buddhism).
 
 Note: This course is geared towards complete beginners.

@@ -12,6 +12,7 @@ tags:
   - philosophy
   - epistemology
   - rebirth
+pages: 6
 ---
 
 > Co-incidence of two phenomena, even when repeated, does not mean that one phenomenon is the cause of the other. To claim that activity in the brain causes awareness, or mind, is plainly unscientific.

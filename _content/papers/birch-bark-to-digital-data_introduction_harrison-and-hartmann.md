@@ -11,6 +11,7 @@ course: manuscripts
 tags:
   - agama
   - academic
+pages: 16
 ---
 
 Gives an overview of the archeology and methodology employed by modern scholars of early Buddhist texts.

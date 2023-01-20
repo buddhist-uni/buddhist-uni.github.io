@@ -58,6 +58,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
 * [Study Buddhism](https://studybuddhism.com/)
 * [Abhidhamma.com](http://abhidhamma.com/)
+* [The Kabaaye Buddhist Research Library](http://www.kbrl.gov.mm/catalog/Index/58)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)

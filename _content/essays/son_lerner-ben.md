@@ -12,6 +12,7 @@ tags:
   - time
 subcat: poetry
 base_value: 0.2
+pages: 1
 ---
 
 > The song goes on forever then it stops. Its basic idea is that time can be defeated for an hour if everyone breathes together, but songs are not made out of ideas

@@ -15,6 +15,7 @@ tags:
   - becon
   - food
   - locavorism
+pages: 30
 ---
 
 > this paper aims for a philosophically more nuanced discussion of the case for and against eating locally. I assess, in turn, locavore arguments based on environmental preservation, human health, community support, agrarian values and political concerns

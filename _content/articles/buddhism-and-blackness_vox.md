@@ -15,6 +15,7 @@ tags:
   - race
   - american
   - tnh
+pages: 9
 ---
 
 On [Thích Nhất Hạnh](/authors/tnh)'s enduring legacy in African American activism.

@@ -12,6 +12,7 @@ tags:
 year: 2022
 month: apr
 journal: lions-roar
+pages: 6
 ---
 
 > Worlds upon worlds appear, each with bejeweled pagodas, within each pagoda a buddha

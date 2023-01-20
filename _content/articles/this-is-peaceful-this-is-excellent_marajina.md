@@ -11,6 +11,7 @@ tags:
 course: philosophy
 year: 2012
 journal: present
+pages: "29--30"
 ---
 
 > Beside the creek, one can forget language altogether and watch meaning slip away with the current. It is humbling and awe-inspiring to merge into the creekside, just another natural formation.

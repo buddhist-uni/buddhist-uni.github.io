@@ -15,6 +15,7 @@ tags:
 year: 2020
 publisher: "Simon & Schuster"
 address: "New York"
+pages: 240
 ---
 
 > the trick that has helped me squint at the bleakness and see them more clearly is to admit, with every breath, that you have no idea what you are looking at.

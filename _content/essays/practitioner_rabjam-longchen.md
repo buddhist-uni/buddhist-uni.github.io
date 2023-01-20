@@ -10,6 +10,7 @@ course: path
 tags:
   - meditation
   - thought
+pages: 3
 ---
 
 > With your own mind under control, help others in any way you can,  

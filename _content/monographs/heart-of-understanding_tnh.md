@@ -12,6 +12,7 @@ tags:
   - chan
   - huayan
   - american
+pages: 56
 ---
 
 > Then one day, [the young man] utters these three words. When the young lady hears this, she trembles, because it is such an important statement. When you say something like that with your whole being, not just with your mouth or your intellect, but with your whole being, it can transform the world. A statement that has such power of transformation is called a mantra.

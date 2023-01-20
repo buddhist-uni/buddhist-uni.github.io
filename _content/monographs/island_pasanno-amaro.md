@@ -16,6 +16,7 @@ tags:
   - view
   - thai-forest
   - chah
+pages: 355
 ---
 
 A compendium of 'essence' teachings on _nibbāna_, as they appear in the Pāli Canon and in contemporary traditions.

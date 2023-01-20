@@ -19,6 +19,7 @@ tags:
   - function
 year: 1959
 publisher: bps
+pages: 124
 ---
 
 A classic translation of the primary book of poetry from the Pāli Canon.

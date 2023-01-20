@@ -10,6 +10,7 @@ tags:
 year: 1980
 publisher: bps
 olid: OL2829538M
+pages: 86
 ---
 
 A translation of the traditional commentary and subcommentary to one of the most challenging discourses in the Pāli Canon: [MN 1](/content/canon/mn1).

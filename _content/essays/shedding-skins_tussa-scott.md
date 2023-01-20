@@ -7,6 +7,7 @@ external_url: "https://nalandainstitute.org/2019/01/10/shedding-skins-reflection
 tags:
   - disrobed
 course: monastic
+pages: 4
 ---
 
 Ultimately, Buddhism isn't about "becoming" anything. A former Tibetan monk points out one of the amazing things about the Buddhist (as opposed to some other) monastic traditions: it's always possible to disrobe. 

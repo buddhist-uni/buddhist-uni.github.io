@@ -18,6 +18,7 @@ tags:
   - buddhism
 year: 2013
 address: Bangkok
+pages: 100
 ---
 
 > This book is intended to provide an introduction to the teachings of the Buddha which will shed some light on a subject that, to non-Buddhists, can appear both unexpectedly rational and exotically strange.

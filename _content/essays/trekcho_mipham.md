@@ -10,6 +10,7 @@ course: samatha
 tags:
   - dzogchen
 year: 2018
+pages: 2
 ---
 
 > simply abide by that natural state,  

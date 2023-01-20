@@ -11,6 +11,7 @@ tags:
   - engaged
 year: 2014
 month: dec
+pages: 3
 ---
 
 A short portrait of Ayya Jayati on the occasion of her first winter as a Bhikkhuni.

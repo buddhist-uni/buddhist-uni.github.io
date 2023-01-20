@@ -12,6 +12,7 @@ tags:
   - economics
   - places
 status: featured
+pages: 27
 ---
 
 Traveling around the globe and living for a week with average families from a variety of countries, sixteen photographers collaborated with thirty families to make this revealing series of portraits.

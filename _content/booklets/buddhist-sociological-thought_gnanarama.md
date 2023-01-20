@@ -16,6 +16,7 @@ tags:
   - philosophy
   - present
 status: featured
+pages: 209
 ---
 
 > Buddhism is a middle course, a _via media_; pragmatic and innovative

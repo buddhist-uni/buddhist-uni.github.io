@@ -11,6 +11,7 @@ tags:
   - meditation
   - philosophy
   - path
+pages: 6
 ---
 
 > When you are repelled by everything, there is nothing to grasp onto and craving becomes impossible.

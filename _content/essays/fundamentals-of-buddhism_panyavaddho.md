@@ -10,6 +10,7 @@ tags:
   - philosophy
   - farang
   - thai-forest
+pages: 9
 ---
 
 > We've got these defilements, they are within us and they keep coming up all the time. They act like demons. They cause one trouble the whole time. So one does the meditation practice and it's quite hard work for quite a long time, but steadily the results come. Bit by bit they come. 

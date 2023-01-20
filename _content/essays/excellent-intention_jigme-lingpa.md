@@ -10,6 +10,7 @@ course: lay
 tags:
   - tibetan
 base_value: 0.25
+pages: 5
 ---
 
 > The second day is similar to the first, except that you do not consume even the tiniest amount of food or drink

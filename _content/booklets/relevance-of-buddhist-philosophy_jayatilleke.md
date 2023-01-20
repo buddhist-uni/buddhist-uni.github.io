@@ -12,6 +12,7 @@ tags:
   - view
   - modern
   - dialogue
+pages: 18
 ---
 
 > my main intention is to indicate a new approach to philosophy which the Buddha tends to suggest in the modern context

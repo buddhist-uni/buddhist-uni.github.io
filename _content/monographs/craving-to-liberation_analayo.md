@@ -15,6 +15,7 @@ tags:
   - hermeneutics
 year: 2009
 publisher: "The Buddhist Association of the United States"
+pages: 168
 ---
 
 > These two complementary perspectives on happiness — distinguishing between unwholesome and wholesome types and treating the stages of development of its wholesome manifestations — run like a red thread through the entire compass of the teachings in the Pāli discourses, from instructions on basic morality through the path of mental purification all the way up to full awakening.

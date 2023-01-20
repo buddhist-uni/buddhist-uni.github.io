@@ -11,6 +11,7 @@ tags:
   - karma
   - lay
   - theravada
+pages: 9
 ---
 
 > The ghosts who lust for our dedication [of merits] are like beggars. Only a tiny fraction of the merits we have accumulated can be shared with them

@@ -9,6 +9,7 @@ drive_links: ["https://drive.google.com/file/d/1zMd7jKMY_L0obI20vrPUwKmxCoG3Lqcd
 course: lay
 tags:
   - tibetan
+pages: 1
 ---
 
 A short list of moral qualities that every Buddhist should strive to uphold.

@@ -16,6 +16,7 @@ tags:
   - vedana
   - pedagogy
   - philosophy
+pages: 38
 ---
 
 A short but dense treatment of _vedanānupassanā_ from several non-standard directions, especially suitable for renunciants. 

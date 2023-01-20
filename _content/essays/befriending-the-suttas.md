@@ -10,6 +10,7 @@ tags:
   - pali-canon
   - philosophy
   - daily-life
+pages: 10
 ---
 
 > A good sutta is one that inspires you to stop reading it.

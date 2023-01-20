@@ -8,6 +8,7 @@ course: tibetan
 tags:
   - buddhism
 base_value: 0.2
+pages: 3
 ---
 
 Who is he and why is he so famous?

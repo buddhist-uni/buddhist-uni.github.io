@@ -11,6 +11,7 @@ tags:
   - pali-dictionaries
 year: 1996
 journal: jpts
+pages: 96
 ---
 
 > the relevant Pāli data about [ten technical] terms occurring in the Vinaya, [its commentaries] and in secondary literature

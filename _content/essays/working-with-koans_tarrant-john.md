@@ -11,6 +11,7 @@ tags:
   - rinzai
   - koan
 year: 2006
+pages: 7
 ---
 
 > If you have been unable to penetrate through, I guarantee you that when the last day of your life arrives, you will be frantic.

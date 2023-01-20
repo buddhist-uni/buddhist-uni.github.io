@@ -14,6 +14,7 @@ tags:
 year: 2018
 month: nov
 journal: Vice
+pages: 18
 ---
 
 > David had a hunch about what had caused his panic attack: his meditation practice.

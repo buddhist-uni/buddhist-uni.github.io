@@ -9,6 +9,7 @@ year: 2014
 volume: 21
 tags:
   - ethics
+pages: "537--568"
 ---
 
 Buddhist ethics is about learning virtuous behavior, and as such can be seen as a form of "play."

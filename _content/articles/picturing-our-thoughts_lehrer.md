@@ -14,6 +14,7 @@ tags:
 year: 2008
 month: aug
 journal: "The Boston Globe"
+pages: 6
 ---
 
 > The brain scan image—a silhouette of the skull, highlighted with bright splotches of primary color—has also become a staple of popular culture, a symbol of how scientific advances are changing the way we think about ourselves.

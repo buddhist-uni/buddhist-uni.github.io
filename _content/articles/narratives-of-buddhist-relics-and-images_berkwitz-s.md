@@ -13,6 +13,7 @@ tags:
   - material-culture
   - bart
   - theravada
+pages: 28
 ---
 
 > the alleged, extraordinary natures of such powerful relics and images compelled certain individuals to narrate and recount how they were found or made, where they traveled, and the various miracles they performed as a testament to their great power

@@ -15,6 +15,7 @@ month: dec
 olid: OL32509368M
 publisher: "Milne Open Textbooks"
 address: "New York"
+pages: 570
 ---
 
 The theory and practice of human relations.

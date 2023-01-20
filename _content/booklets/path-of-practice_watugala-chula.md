@@ -11,6 +11,7 @@ tags:
   - theravada-monasticism
 year: 2020
 month: jan
+pages: 67
 ---
 
 > an anthology of discourse excerpts from the Pāli Canon [...] best used by readers who have already spent time in study and look to focus more on their practice. It can also be helpful for someone who likes to dive right into practice and prefers to keep reading to a minimum.

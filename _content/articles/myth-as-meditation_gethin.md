@@ -16,6 +16,7 @@ year: 2006
 volume: 28
 journal: jpts
 publisher: pts
+pages: "63--112"
 ---
 
 > The narrative of MSud also tells the story of Mahāsudassana’s withdrawal from his city into its inner sanctum, the Palace of Dhamma — a journey from the outer world of the city to the inner world of the Palace of Dhamma

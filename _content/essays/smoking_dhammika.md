@@ -9,6 +9,7 @@ course: ethics
 tags:
   - medicine
 year: 2008
+pages: 2
 ---
 
 Smoking does not break the fifth precept, but should still be avoided.

@@ -13,6 +13,7 @@ course: form
 year: 2014
 volume: 21
 journal: jbe
+pages: "57--95"
 ---
 
 This paper reminds us that behind the abstract and academic discussions of monasticism there are real communities and relationships.

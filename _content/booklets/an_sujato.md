@@ -11,6 +11,7 @@ year: 2019
 tags:
   - sutta
 course: an
+pages: 1434
 ---
 
 A public domain translation of the Aṅguttara Nikāya into straightforward English, made from the translations on [SuttaCentral](https://suttacentral.net/an){:target="_blank"}.

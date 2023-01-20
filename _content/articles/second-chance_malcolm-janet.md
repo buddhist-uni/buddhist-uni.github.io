@@ -12,6 +12,7 @@ tags:
 year: 2020
 month: sep
 journal: nyrb
+pages: 8
 ---
 
 > When I took the stand at the trial in San Francisco in 1993 I could not have done worse

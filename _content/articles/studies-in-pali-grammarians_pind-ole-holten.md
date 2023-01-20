@@ -12,6 +12,7 @@ tags:
   - pali-commentaries
 year: 1989
 journal: jpts
+pages: 48
 ---
 
 > whenever Buddhaghosa refers to grammar or grammarians in support of his analysis of a grammatical or semantical problem in the Pāli, he is referring to Pāṇinian grammar. This apparently is also the case in those instances where he deals with a number of syntactical problems, without mentioning the source upon which his analysis is based.

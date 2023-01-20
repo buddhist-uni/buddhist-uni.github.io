@@ -9,6 +9,7 @@ course: tantric
 tags: [mahayana]
 year: 2007
 translator: "Adam Pearcey"
+pages: 2
 ---
 
 > We must decide, with firm conviction, that all that appears to us is nothing but our own deluded perception

@@ -9,6 +9,7 @@ tags:
   - meditation
   - mindfulness
   - sutta
+pages: 265
 ---
 
 A public domain anthology of 34 suttas on the subject of meditation.

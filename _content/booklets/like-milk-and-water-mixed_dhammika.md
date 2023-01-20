@@ -15,6 +15,7 @@ olid: OL37750593M
 base_value: 2.5
 publisher: "The Buddha Dhamma Mandala Society"
 address: Singapore
+pages: 167
 ---
 
 > The point of *Metta* is not what we **feel** about a person, at least not in the beginning, but rather what we **aspire** to

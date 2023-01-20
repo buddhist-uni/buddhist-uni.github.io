@@ -16,6 +16,7 @@ olid: OL36138298M
 base_value: 0.6
 publisher: "Sheng Yen Education Foundation"
 address: Taipei
+pages: 26
 ---
 
 > committing one’s life towards a path to awakening is, in fact, freeing not binding

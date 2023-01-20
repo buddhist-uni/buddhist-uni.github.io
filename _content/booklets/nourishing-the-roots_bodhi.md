@@ -17,6 +17,7 @@ year: 1978
 series: wheel
 number: 259
 publisher: bps
+pages: 27
 ---
 
 Some philosophical essays on the role of ethics on the path.

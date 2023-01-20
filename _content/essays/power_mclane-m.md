@@ -12,6 +12,7 @@ tags:
 year: 2020
 month: nov
 journal: nyrb
+pages: 1
 ---
 
 > a defense against reality

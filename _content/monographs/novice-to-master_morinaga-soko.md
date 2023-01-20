@@ -10,6 +10,7 @@ year: 2004
 course: japanese-monastic
 tags:
   - monastic
+pages: 77
 ---
 
 > in people and in things, there is no such thing as trash.

@@ -16,6 +16,7 @@ tags:
   - vassa
   - effort
   - emptiness
+pages: 3
 ---
 
 A short description of what it's like to be an arahant, along with an admonishment to practice diligently, delivered near the end of Luangta's life.

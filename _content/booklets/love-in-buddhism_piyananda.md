@@ -14,6 +14,7 @@ tags:
 year: 2013
 publisher: "Dharma Vijaya"
 address: "Los Angeles"
+pages: 50
 ---
 
 A collection of commentarial and canonical Pāli stories telling how the Buddha demonstrated his great compassion.

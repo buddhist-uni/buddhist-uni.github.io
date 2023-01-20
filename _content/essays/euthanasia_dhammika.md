@@ -7,6 +7,7 @@ tags:
   - ethics
   - dialogue
   - euthanasia
+pages: 13
 ---
 
 A ranking of the usual arguments for and against and an invitation to further dialogue on the subject.

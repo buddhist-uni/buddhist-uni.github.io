@@ -13,6 +13,7 @@ tags:
 year: 2001
 address: "Nollamara, Western Australia"
 month: oct
+pages: 12
 ---
 
 > It is remarkable that there was a cosmology in Buddhism twenty-five centuries ago that doesn't conflict with modern physics.

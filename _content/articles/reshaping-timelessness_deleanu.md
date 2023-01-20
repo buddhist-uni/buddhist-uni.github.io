@@ -14,6 +14,7 @@ tags:
   - dialogue
   - hermeneutics
 status: featured
+pages: "1--42"
 ---
 
 > Deep contemplative experiences and the philosophical conclusions which they yield are beyond history. Or are they?...

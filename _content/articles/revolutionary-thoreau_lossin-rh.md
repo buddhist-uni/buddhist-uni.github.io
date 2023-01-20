@@ -11,6 +11,7 @@ tags:
   - ideology
   - power
   - america
+pages: 11
 ---
 
 > Belief systems and abstract commitments are, of course, indispensable to social change. But when this isolated interiority becomes the sovereign justification for political action, there are only two possible conclusions: either a quietist withdrawal for endless self-reflection or a dangerous willingness to achieve political ends through violent means.

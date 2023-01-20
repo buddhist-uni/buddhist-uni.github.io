@@ -12,6 +12,7 @@ tags:
   - beauty
   - aesthetics
   - art
+pages: 144
 ---
 
 > The beautiful, almost without any effort of our own, acquaints us with the mental event of conviction, and so pleasurable a mental state is this that ever afterwards one is willing to labor, struggle, wrestle with the world to locate enduring sources of conviction--to locate what is true. ...beauty is a starting place for education.

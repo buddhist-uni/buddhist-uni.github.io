@@ -12,6 +12,7 @@ tags:
   - pali-canon
   - philosophy
 status: featured
+pages: 1424
 ---
 
 The best translation in English of the most important collection of the Buddha's discourses, with a lengthy introduction, sutta summaries, and helpful endnotes summarizing important commentarial points, this book is a must have for any student of Buddhism.

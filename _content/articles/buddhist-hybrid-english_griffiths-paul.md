@@ -16,6 +16,7 @@ tags:
   - philology
   - pali-language
   - sanskrit
+pages: "17--32"
 ---
 
 > how to interpret Buddhist Sanskrit texts in such a way as to avoid unnecessary bastardization of the English language, while still performing the scholarly task of making available the meaning of such texts to the scholarly community

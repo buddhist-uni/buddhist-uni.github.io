@@ -12,6 +12,7 @@ tags:
   - west
   - buddhism
 status: featured
+pages: 153
 ---
 
 > The Monastic Sangha is both training ground and dwelling place for the Noble Sangha, much like a university is both a training ground and a dwelling place for scholars.

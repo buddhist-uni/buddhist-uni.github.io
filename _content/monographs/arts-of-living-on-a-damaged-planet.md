@@ -11,6 +11,7 @@ tags:
   - biology
   - climate-change
   - anthropocene
+pages: 368
 ---
 
 > "Anthropocene" is the proposed name for a geologic epoch in which humans have become the major force determining the continuing livability of the earth. The word tells a big story: living arrangements that took millions of years to put into place are being undone in the blink of an eye. The hubris of conquerors and corporations makes it uncertain what we can bequeath to our next generations, human and not human.

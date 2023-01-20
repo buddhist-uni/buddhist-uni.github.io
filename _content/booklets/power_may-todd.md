@@ -21,6 +21,7 @@ publisher: ias
 series: lexicon
 number: 1
 olid: OL32038516M
+pages: 4
 ---
 
 > power need not be only repressive. Think of how our parents, schools, employers, and even peers mold our behavior. This molding doesn’t just stop us from doing certain things. It makes or encourages us

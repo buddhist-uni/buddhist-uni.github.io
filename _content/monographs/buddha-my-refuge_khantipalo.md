@@ -15,6 +15,7 @@ tags:
   - thought
 year: 1990
 publisher: bps
+pages: 63
 ---
 
 > here is a book to take up at quiet times

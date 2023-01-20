@@ -13,6 +13,7 @@ tags:
   - vinaya-controversies
   - medicine
   - world
+pages: 4
 ---
 
 A defense of abortion and IVF rights from the Buddhist perspective.

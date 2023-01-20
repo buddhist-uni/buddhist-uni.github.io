@@ -9,6 +9,7 @@ drive_links:
 year: 1947
 school: "University of London"
 course: snp
+pages: 84
 ---
 
 > The Sutta Nipāta contains older and younger material side by side.

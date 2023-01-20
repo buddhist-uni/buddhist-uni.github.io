@@ -17,6 +17,7 @@ tags:
   - function
   - philosophy
   - religion
+pages: 294
 ---
 
 > When Westerners come to Buddhism, they usually approach it through the doors of psychology, history of religions, or perennial philosophy, all of which are dominated by Romantic ways of thinking.

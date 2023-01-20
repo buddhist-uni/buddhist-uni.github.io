@@ -17,6 +17,7 @@ publisher: bps
 series: wheel-sn-anthology
 number: 107
 base_value: 1.8
+pages: 41
 ---
 
 > The world is led by craving,  

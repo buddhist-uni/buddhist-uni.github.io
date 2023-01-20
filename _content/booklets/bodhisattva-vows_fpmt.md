@@ -11,6 +11,7 @@ tags:
   - bodhisattva
 year: 1981
 month: sep
+pages: 12
 ---
 
 The eighteen root vows and forty-six branch vows for engaging bodhicitta along with notes on guarding the vows from degeneration.

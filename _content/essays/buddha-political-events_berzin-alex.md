@@ -9,6 +9,7 @@ tags:
   - buddha
   - ebts
   - pali-canon
+pages: 10
 ---
 
 > The original picture that emerges from the Pali literature, however, reveals a very human person who, living in troubled, insecure times, faced numerous difficulties and challenges, both personally and to his monastic community. Here, we shall outline this earliest version of Buddha’s life, based on the scholarly research of Stephen Batchelor presented in his *Confession of a Buddhist Atheist*.

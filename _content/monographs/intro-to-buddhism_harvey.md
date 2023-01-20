@@ -7,6 +7,7 @@ year: 2013
 edition: Second
 address: "New York"
 course: buddhism
+pages: 374
 ---
 
 The best academic textbook for introducing Buddhism.

@@ -19,6 +19,7 @@ year: 1962
 series: wheel
 number: 45
 publisher: bps
+pages: 31
 ---
 
 > They are the mature ones, the old campaigners of saṃsāra, who have had their fill of loving and hating. They are beginning to feel instinctively that freedom lies in letting go. It is to such people really that the Buddha spoke. The rest merely happened to be present

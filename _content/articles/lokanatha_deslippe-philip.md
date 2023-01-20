@@ -12,6 +12,7 @@ tags:
 year: 2017
 month: dec
 journal: tricycle
+pages: 11
 ---
 
 > With a convert’s zeal, the young monk resolved to travel

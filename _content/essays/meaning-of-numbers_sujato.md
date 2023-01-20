@@ -9,6 +9,7 @@ tags:
   - imagery
 base_value: 0.15
 year: 2019
+pages: 1
 ---
 
 > numerological observations were made in the number entries in the Rhys Davidsʼ and Stedeʼs Pāli-English Dictionary, but I am aware of little since then. However, we can make a few general observations.

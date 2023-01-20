@@ -10,6 +10,7 @@ course: society
 year: 2019
 base_value: 0.15
 journal: "The Denver Post"
+pages: 3
 ---
 
 > This decision is about business. Just not exactly in the way he meant.

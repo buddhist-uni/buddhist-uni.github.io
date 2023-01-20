@@ -20,6 +20,7 @@ base_value: 2.25
 year: 1937
 status: featured
 publisher: "Chatto & Windus"
+pages: 326
 ---
 
 > Technological progress has merely provided us with more efficient means for going backwards.

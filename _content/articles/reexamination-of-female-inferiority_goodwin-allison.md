@@ -19,6 +19,7 @@ month: apr
 drive_links:
   - "https://drive.google.com/file/d/16nxR6R5xp-27-8SPL-rHFGeTDqXHzgHC/view?usp=drivesdk"
 journal: jbe
+pages: "198--343"
 ---
 
 > Discriminatory views and practices are the antithesis of Right View, and they undermine the Middle Path by perpetuating identification with concepts of independent, constant, inherently existing selves and others

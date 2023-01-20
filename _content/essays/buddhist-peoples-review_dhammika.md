@@ -10,6 +10,7 @@ tags:
   - christianity
   - interfaith
 year: 2013 # ±8 years
+pages: 9
 ---
 
 > Having lost much of their following in the West, churches are now beginning to look for opportunities elsewhere.

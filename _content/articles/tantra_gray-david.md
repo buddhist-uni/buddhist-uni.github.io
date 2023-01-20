@@ -16,6 +16,7 @@ tags:
 year: 2016
 month: apr
 journal: orer
+pages: 27
 ---
 
 > Buddhist tantric traditions were strongly influenced at their inception by preexisting Śaiva Hindu traditions, but they also drew on a growing body of ritual and magical practices that had been developing for several centuries in Mahāyāna Buddhist circles.

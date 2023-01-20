@@ -7,6 +7,7 @@ year: 2008
 course: vinaya-studies
 tags:
   - power
+pages: 2
 ---
 
 Sangha decisions are always made locally. The Vinaya doesn't countenance centralized, monastic authority.

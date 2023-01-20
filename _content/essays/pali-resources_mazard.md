@@ -9,6 +9,7 @@ tags:
   - theravada
 year: 2005
 month: nov
+pages: 18
 ---
 
 > The fact that there are so many scripts is hardly a pretext for learning none of them.

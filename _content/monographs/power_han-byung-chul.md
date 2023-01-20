@@ -11,6 +11,7 @@ tags:
 oclc: 1114608461
 address: Cambridge
 olid: OL34044840M
+pages: 120
 ---
 
 > Power allows the ego to be with him- or herself in the other. It creates a continuity of the self.

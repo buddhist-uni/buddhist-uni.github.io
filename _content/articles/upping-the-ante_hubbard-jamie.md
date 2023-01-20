@@ -10,6 +10,7 @@ tags:
   - internet
   - academic
   - media
+pages: "309--322"
 ---
 
 > The three major aspects of computer technology that most visibly have taken over older technologies are word processing, electronic communication, and the development of large scale archives of both text and visual materials.

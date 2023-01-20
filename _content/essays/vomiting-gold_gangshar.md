@@ -12,6 +12,7 @@ tags:
   - cittanusati
   - tibetan
   - dzogchen
+pages: 2
 ---
 
 > extract the essence of leisure and fortune. To do this you must reflect upon impermanence.

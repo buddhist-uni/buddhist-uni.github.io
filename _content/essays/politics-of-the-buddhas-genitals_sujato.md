@@ -11,6 +11,7 @@ status: featured
 tags:
   - gender
   - indian
+pages: 3
 ---
 
 > It is inescapable that, whatever the reading, according to the early texts the Buddha did not have "normal" genitals. And the only reading actually supported by a canonical text is that the Buddha was intersex, and his genitals looked like a woman’s.

@@ -11,6 +11,7 @@ tags:
   - chan
 year: 2015
 month: mar
+pages: 2
 ---
 
 > I have no problems with doing 'Otsutome' at the Hondo of our temple every morning and every evening. Chanting sutras to praise the virtue of Amida Buddha, and reciting the nembutsu to express gratitude for the process of interdependence at the end of Otsutome makes me feel great!

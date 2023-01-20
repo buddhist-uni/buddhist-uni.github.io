@@ -14,6 +14,7 @@ year: 1963
 month: may
 publisher: "George Allen & Unwin"
 address: "London"
+pages: 519
 ---
 
 > In this work the questions pertaining to the means of knowledge known to, criticized in and accepted by the Buddhism of the Pali Canon are fully discussed.

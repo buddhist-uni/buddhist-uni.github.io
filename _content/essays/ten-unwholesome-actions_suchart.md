@@ -10,6 +10,7 @@ tags:
   - karma
   - lay
   - thought
+pages: 5
 ---
 
 > If we are satisfied, then we will not want more. Wanting more is delusion. We think that it will be better if we can just have this person. But instead of getting better, many problems follow.

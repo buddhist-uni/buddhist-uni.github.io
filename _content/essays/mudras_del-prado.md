@@ -9,6 +9,7 @@ course: tantric
 tags:
   - bart
 year: 2004
+pages: 5
 ---
 
 > Buddhas and Bodisattvas and frequently other deities are shown with their hands forming a number of different ritualized and stylized poses (Mudrās).

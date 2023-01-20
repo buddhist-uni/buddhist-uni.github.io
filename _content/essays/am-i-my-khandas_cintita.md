@@ -10,6 +10,7 @@ tags:
   - vipassana
   - inner
 year: 2018
+pages: 14
 ---
 
 > Let's consider how a person, me, arises in your experience. First certain colors and shapes arise, largely maroon. A sense of foreboding ensues. The features arise: "monk," "shaveling," then the discernment "worthy of offerings." The features arise: "wire-rimmed glasses," "wry grin" and finally "Bhikkhu Cintita," then the discernment "maybe not so worthy of offerings." At some point in this process you are convinced that I exist

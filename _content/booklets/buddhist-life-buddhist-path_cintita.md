@@ -15,6 +15,7 @@ tags:
   - ethics
   - thought
   - path
+pages: 284
 ---
 
 > You will experience many sensual pleasures in your life: food, music, sex and zombie movies. You should become aware as well of the great joy, a pleasure beyond the sensual, that comes with generosity. Become aware that this joy is greatest when your intentions are purest, when the recipients of your generosity are worthy and when the manner of giving is proper. This joy is the direct experience of the merit you have earned.

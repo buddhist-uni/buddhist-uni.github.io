@@ -12,6 +12,7 @@ tags:
 year: 2022
 month: aug
 journal: vox
+pages: 8
 ---
 
 > Hannah Arendt knew what was at stake. In 1951, she published a hefty book, *The Origins of Totalitarianism*, which traced the roots of what was happening in Europe...

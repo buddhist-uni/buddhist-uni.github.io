@@ -11,6 +11,7 @@ number: 2
 course: setting
 tags:
   - cities
+pages: "7--22"
 ---
 
 > early Buddhism rode to popular acceptance on the crest of a significant urban revolution that swept across large parts of the Gangetic region in the sixth century B.C. 

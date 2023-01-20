@@ -10,6 +10,7 @@ course: monastic-advice
 tags:
   - west
   - western-monastic
+pages: 4
 ---
 
 Six changes in the modern world that monasticism will have to adapt to, and that present new opportunities.

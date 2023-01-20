@@ -16,6 +16,7 @@ year: 2020
 month: jun
 olid: OL35169273M
 publisher: "KTD Publications"
+pages: 66
 ---
 
 > Genuine dharma practice is not separate from life. Generally, when everything is going well, anyone can appear to be a good dharma practitioner. However, when things go wrong, when adversity strikes, that is the real test

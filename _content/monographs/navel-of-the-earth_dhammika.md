@@ -14,6 +14,7 @@ tags:
   - india
 course: pilgrimage
 status: featured
+pages: 241
 ---
 
 The surprising history of the Diamond Seat—and the drama surrounding it—in the centuries after the Buddha first sat there.

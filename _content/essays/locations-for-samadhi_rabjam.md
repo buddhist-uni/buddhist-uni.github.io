@@ -10,6 +10,7 @@ course: places
 tags:
   - meditation
   - world
+pages: 3
 ---
 
 > On mountaintops, in secluded forests and on islands and the like,  

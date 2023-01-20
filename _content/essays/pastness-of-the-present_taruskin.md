@@ -16,6 +16,7 @@ tags:
   - culture
 status: featured
 year: 1988
+pages: "90--154"
 ---
 
 > [Furtwängler's Bach](https://youtu.be/vRhDAl8FH5I){:target="_blank" ga-event-value="0.2"} is no smug or mindless adaptation of Bach to the style of Wagner. It is a reaffirmation of the presence of Bach in Wagner and the simultaneous, reciprocal presence of Wagner in Bach.

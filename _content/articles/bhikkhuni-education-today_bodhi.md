@@ -13,6 +13,7 @@ course: monastic
 year: 2009
 month: may
 journal: present
+pages: "16--20"
 ---
 
 Six challenges (opportunities) faced by monasticism in the modern world.

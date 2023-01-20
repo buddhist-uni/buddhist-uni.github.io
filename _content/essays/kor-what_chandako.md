@@ -9,6 +9,7 @@ tags:
   - thai-forest
   - navakovada
 year: 2019
+pages: 17
 ---
 
 > What we’re referring to when we speak of “Korwat” is the monastic etiquette and protocol.

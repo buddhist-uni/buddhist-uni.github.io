@@ -10,6 +10,7 @@ tags:
   - medieval
   - philosophy
   - west
+pages: 5
 ---
 
 > when counterfeit dhamma appears, the true Dhamma disappears, in the same way that when counterfeit money appears, true money disappears.

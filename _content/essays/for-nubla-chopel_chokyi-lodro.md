@@ -11,6 +11,7 @@ course: tantric
 tags:
   - nyingma
 year: 2022
+pages: 2
 ---
 
 > reflect on the trials of saṃsāra  

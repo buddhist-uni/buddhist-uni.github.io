@@ -16,6 +16,7 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ofXHsVinNFQMuQiujRgnYXhjaEbSyfm-/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1QfOykbZflJ9Yc3oZnekh9rMBuzamFd79/view?usp=drivesdk"
+pages: 187
 ---
 
 There is still so much we don't know about dinosaurs. Why not let our imaginations run a bit wild?

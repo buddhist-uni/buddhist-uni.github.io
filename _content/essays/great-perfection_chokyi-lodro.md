@@ -13,6 +13,7 @@ tags:
 year: 2017
 base_value: 0.2
 translator: "Adam Pearcey"
+pages: 1
 ---
 
 > For the likes of you, the qualities of the path  

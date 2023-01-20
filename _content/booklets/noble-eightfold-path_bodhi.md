@@ -18,6 +18,7 @@ tags:
   - meditation
   - theravada
 olid: OL23113286M
+pages: 82
 ---
 
 A lucid and compelling explanation of the Noble Eightfold Path by a renowned contemporary scholar of Pāli and Early Buddhism. Highly recommended for everyone interested in Buddhism.

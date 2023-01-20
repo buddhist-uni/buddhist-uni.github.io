@@ -12,6 +12,7 @@ tags:
   - theravada
   - mindfulness
   - kammatthana
+pages: 2
 ---
 
 A short paper listing the forty meditation objects of the _Vissuddhimagga_ along with the kinds of people for whom it is said to be suitable.

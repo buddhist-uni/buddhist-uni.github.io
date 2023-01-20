@@ -19,6 +19,7 @@ tags:
   - daily-life
   - chaplaincy
   - world
+pages: 109
 ---
 
 In this beautiful letter to a friend (and one of my favorite books period), Thay offers practical advice and encouragement to cultivate mindfulness: the quality of presence and wakefulness in our life. From washing the dishes to answering the phone, he reminds us that each moment holds within it the seeds of understanding and peace. Highly recommended for all, especially newcomers to Buddhism or meditation, or anyone looking to brighten their day. 

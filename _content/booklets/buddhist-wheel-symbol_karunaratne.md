@@ -13,6 +13,7 @@ tags:
   - imagery
   - bart
   - theravada
+pages: 23
 ---
 
 > The _dhamma-cakka_, the ever moving Wheel of Law, is the most prominent symbol of the Buddhists.

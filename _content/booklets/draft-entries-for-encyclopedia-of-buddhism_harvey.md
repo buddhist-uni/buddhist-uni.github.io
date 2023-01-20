@@ -10,6 +10,7 @@ tags:
   - ebts
   - setting
 base_value: 3.2
+pages: 131
 ---
 
 Peter Harvey gives a thorough discussion of the historical Buddha across these encyclopedia entries.

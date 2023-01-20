@@ -12,6 +12,7 @@ tags:
   - theravada-roots
   - burmese
 course: form
+pages: 19
 ---
 
 A brief, visual history of the Theravada stupa.

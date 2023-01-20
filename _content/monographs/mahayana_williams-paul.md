@@ -9,6 +9,7 @@ olid: OL10203914M
 course: mahayana
 tags:
   - mahayana-canon
+pages: 320
 ---
 
 The authoritative, scholarly introduction to Mahayana Buddhism's vast textual history.

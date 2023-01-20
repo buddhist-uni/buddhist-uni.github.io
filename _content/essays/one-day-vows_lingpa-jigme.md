@@ -13,6 +13,7 @@ tags:
   - tibetan
 year: 2021
 publisher: "the Longchen Nyingtik Project"
+pages: 5
 ---
 
 > on the eighth and full and new moon days,  

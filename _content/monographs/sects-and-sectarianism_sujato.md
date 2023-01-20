@@ -18,6 +18,7 @@ publisher: "The Corporate Body of the Buddha Education Foundation"
 address: "Taiwan"
 base_value: 2.5
 status: featured
+pages: 158
 ---
 
 > When examined closely, the doctrines of the schools cannot be explained away as simplistic errors or alien infiltrations or deliberate corruptions. It would then follow that more sympathetic and gentle perspectives on the schools are likely to be more objective

@@ -17,6 +17,7 @@ tags:
   - charisma
 external_url: "https://eudoxos.github.io/saints/html/index.html"
 source_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/saints-and-psychopaths.pdf"
+pages: 145
 ---
 
 > Psychopaths are more likely to be attracted to singing, dancing, love, light, miracles, and channeling. Usually psychopaths have a great deal of trouble sitting quiet and still. I appreciate the boring facade of Buddhism, as it is a great protection.

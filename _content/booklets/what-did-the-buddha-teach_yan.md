@@ -12,6 +12,7 @@ tags:
   - modern
 year: 1994
 olid: OL36815251M
+pages: 26
 ---
 
 A short collection of three essays on the fundamentals of Buddhism by His Holiness, the Late Supreme Patriarch of Thailand, intended to introduce foreigners to the religion.

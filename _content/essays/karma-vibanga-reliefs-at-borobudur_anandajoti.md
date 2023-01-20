@@ -14,6 +14,7 @@ tags:
   - avadana
   - karma
 year: 2020
+pages: 160
 ---
 
 > the deed in the early text [[MN135](https://suttacentral.net/mn135/en/bodhi){: target="_blank" ga-event-value="0.15"}] is simply stated to be the killing, or refraining from killing, of living beings, and so on. The specific types of actions, and their approval are not mentioned. In the [later] Sanskrit text we get a list of normally around ten causes that lead to the result, many of which are illustrated

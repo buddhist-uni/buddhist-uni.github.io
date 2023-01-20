@@ -17,6 +17,7 @@ tags:
 year: 1983
 month: oct
 base_value: 1
+pages: 16
 ---
 
 Buddhadasa reminds us that real renunciation and liberation happen in the mind, not externally. If we take the Dhamma "to heart," we can carry the monastery with us everywhere we go.

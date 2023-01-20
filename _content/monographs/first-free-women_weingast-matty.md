@@ -10,6 +10,7 @@ oclc: 1141064097
 year: 2020
 status: rejected
 publisher: shambhala
+pages: 100
 ---
 
 > If you’re going to tell yourself a story,  

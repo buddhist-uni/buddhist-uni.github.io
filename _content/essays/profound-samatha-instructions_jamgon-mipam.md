@@ -10,6 +10,7 @@ course: samatha
 tags:
   - hindrances
 year: 2019
+pages: 4
 ---
 
 > allow the mind, which is the source, to settle

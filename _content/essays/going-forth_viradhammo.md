@@ -10,6 +10,7 @@ tags:
   - emptiness
 base_value: 0.3
 status: featured
+pages: 1
 ---
 
 A beautiful sermon on the value of monasticism.

@@ -17,6 +17,7 @@ tags:
   - sects
   - sautantrika
   - mahayana-roots
+pages: 157
 ---
 
 Gives a thorough summary of how *nibbāna* evolved as a concept in ancient India as a reaction to the ideas of rival sects.

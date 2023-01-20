@@ -13,6 +13,7 @@ tags:
   - emptiness
 year: 1999
 publisher: "White Wind Zen Community"
+pages: 3
 ---
 
 > Only a few have heard that "painted rice cakes do not satisfy hunger" and none have really understood what it meant. I've asked several of these skin bags about it and everybody was quite certain without even bothering to look into it.

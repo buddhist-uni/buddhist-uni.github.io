@@ -12,6 +12,7 @@ tags:
   - meditation
 year: 2005
 publisher: "Rangjung Yeshe"
+pages: 10
 ---
 
 > It is very important to distinguish between mind and awareness.

@@ -15,6 +15,7 @@ course: nibbana
 tags:
   - arahant
   - sn
+pages: 1
 ---
 
 A short, ecstatic poem from the SN.

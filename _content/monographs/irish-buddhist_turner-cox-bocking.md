@@ -18,6 +18,7 @@ year: 2020
 olid: OL28068990M
 oclc: 1125276804
 publisher: oxford
+pages: 288
 ---
 
 > Dhammaloka's life is a window into the relationships at the heart of empire, a glimpse into alternative possibilities of the struggle against colonialism.

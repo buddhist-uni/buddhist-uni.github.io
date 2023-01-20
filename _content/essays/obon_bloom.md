@@ -11,6 +11,7 @@ tags:
 year: 2007
 month: jul
 publisher: "Hawaii Pacific Press"
+pages: 3
 ---
 
 > during this season we remember and celebrate the lives of all our departed loved ones

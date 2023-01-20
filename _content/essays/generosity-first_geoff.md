@@ -14,6 +14,7 @@ tags:
   - path
   - west
 drive_links: ["https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk"]
+pages: 6
 ---
 
 > ...when these people meditate they’re awfully grim.

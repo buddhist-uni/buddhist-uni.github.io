@@ -12,6 +12,7 @@ tags:
   - historiography
 year: 2010
 base_value: 0.2
+pages: 5
 ---
 
 A word of appreciation for King Ashoka's builders.

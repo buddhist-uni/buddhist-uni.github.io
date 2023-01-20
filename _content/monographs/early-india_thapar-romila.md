@@ -10,6 +10,7 @@ tags:
   - tantric-roots
 year: 2002
 publisher: "Penguin Group"
+pages: 592
 ---
 
 > the major focus of each chapter is the attempt to broadly interrelate the political, economic, social and religious aspects of a period with the intention of showing where and why changes have occurred

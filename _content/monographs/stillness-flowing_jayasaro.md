@@ -20,6 +20,7 @@ tags:
   - farang
   - west
   - monastic-theravada
+pages: 802
 ---
 
 > It is as if an arrow has been pulled out of your heart.

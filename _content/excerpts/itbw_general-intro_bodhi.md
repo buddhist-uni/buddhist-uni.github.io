@@ -9,6 +9,7 @@ year: 2004
 tags:
   - pali-canon
   - sutta
+pages: 14
 ---
 
 Bhikkhu Bodhi explains the history and structure of the Pāli Canon.

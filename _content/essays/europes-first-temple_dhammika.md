@@ -9,6 +9,7 @@ course: west
 tags:
   - russian
 year: 2009 # an educated guess
+pages: 5
 ---
 
 > In 1909 Lama Dorjev proposed to the Tsarist government that a Buddhist temple be set up in St. Petersburg

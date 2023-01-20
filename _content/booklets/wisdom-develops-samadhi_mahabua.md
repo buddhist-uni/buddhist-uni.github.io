@@ -19,6 +19,7 @@ tags:
   - thought
   - problems
 year: 2003
+pages: 41
 ---
 
 One of the few books written directly by Luangta, this meditation manual represents some of his clearest advice on developing the path.

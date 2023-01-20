@@ -12,6 +12,7 @@ year: 2010
 journal: bsr
 volume: 27
 number: 1
+pages: "3--14"
 ---
 
 > The assumption of a rigid division between monastics as recipients of liberating teachings and laity instructed in the gaining of merit and the way to a good rebirth does not accurately reflect early Buddhist thought.

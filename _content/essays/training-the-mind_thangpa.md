@@ -10,6 +10,7 @@ subcat: poetry
 tags:
   - ethics
   - cosmology
+pages: 1
 ---
 
 > By thinking of all sentient beings  

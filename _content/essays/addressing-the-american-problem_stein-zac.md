@@ -18,6 +18,7 @@ tags:
 year: 2007
 note: "presented at the Annual Meeting of the Neural Information Processing Society, Workshop for the Hierarchical Organization of Behavior"
 address: "Vancouver"
+pages: 2
 ---
 
 We, moderns but especially Americans, have a fundamental misunderstanding of cognitive development: we assume that higher-level functioning is always desired and so disparage and neglect fundamental cognitive skills.

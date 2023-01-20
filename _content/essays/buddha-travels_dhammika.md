@@ -9,6 +9,7 @@ course: setting
 tags:
   - pilgrimage
   - buddha
+pages: 4
 ---
 
 > The Buddha’s movements northwards were of course limited by the then impenetrable jungles of the Himalayan foothills and it is unlikely that he ever went further south than the southern edge of the Ganges watershed. Still, this would mean that his wanderings covered an area roughly equivalent to 200,000 square kilometres, a huge area by any standards.

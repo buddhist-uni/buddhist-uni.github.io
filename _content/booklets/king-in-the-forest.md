@@ -8,6 +8,7 @@ drive_links: ["https://drive.google.com/file/d/1NFxuDsrOwTEoAlPHyKDlTPF30Lm6Z6iY
 tags:
   - characters
   - lay
+pages: 70
 ---
 
 A simple anthology of stories involving King Pasenadi compiled from the Pāli Canon and its commentaries.

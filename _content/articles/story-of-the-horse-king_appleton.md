@@ -10,6 +10,7 @@ course: form
 tags:
   - medieval
   - myth
+pages: "187--201"
 ---
 
 Tracks one fable as it moved out of India and through the Buddhist world, giving us a glimpse into both the historical places Buddhism spread to and the process of mythic assimilation.

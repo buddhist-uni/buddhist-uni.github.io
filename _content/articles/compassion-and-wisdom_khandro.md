@@ -13,6 +13,7 @@ tags:
 year: 2000
 month: jul
 journal: "Shambala Sun"
+pages: 7
 ---
 
 > All of us want some happiness and no one wants to suffer, so every action we take is motivated by the thought of how can I be happy, how can I avoid pain. In a world already divided in so many ways, we create a world of our own.

@@ -13,6 +13,7 @@ tags:
   - development
   - globalization
 drive_links: ["https://drive.google.com/file/d/19Tm4OB2-slmHmgv8Lt3OGWUZjo9Mi8lz/view?usp=drivesdk"]
+pages: 161
 ---
 
 > tourism is a highly political phenomenon, the implications of which have been only rarely perceived and almost nowhere fully understood. [...] If tourism policy does not integrate or anticipate its political component, then policies and the people affected by them will suffer.

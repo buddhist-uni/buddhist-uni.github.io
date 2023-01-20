@@ -14,6 +14,7 @@ year: 1991
 olid: OL1536954M
 publisher: "The Metropolitan Museum of Art"
 address: "New York"
+pages: 234
 ---
 
 A collection of mostly Buddhist artwork from across premodern South Asia and India's cultural sphere.

@@ -13,6 +13,7 @@ tags:
 year: 2001
 month: sep
 address: "Riverside Church, NY"
+pages: 4
 ---
 
 > the real enemy of man is not man. The real enemy is our ignorance, discrimination, fear, craving, and violence.

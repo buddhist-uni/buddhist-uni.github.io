@@ -14,6 +14,7 @@ journal: plato
 tags:
   - ideology
   - psychology
+pages: 20
 ---
 
 > humans exhibit a tendency to identify, adopt, and enforce the norms of their local communities.

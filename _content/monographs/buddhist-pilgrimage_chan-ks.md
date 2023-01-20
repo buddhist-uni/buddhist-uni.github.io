@@ -12,6 +12,7 @@ olid: OL32197249M
 publisher: "Majujaya Indah"
 address: Malaysia
 course: pilgrimage
+pages: 207
 ---
 
 > For the intending pilgrim, it is imperative to understand that a pilgrimage is essentially a spiritual journey in veneration of the Blessed One. This act of veneration purifies one’s thoughts, speech and action and through it, many noble qualities can be developed.

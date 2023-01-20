@@ -14,6 +14,7 @@ tags:
   - stream-entry
   - vipassana
 status: featured
+pages: 33
 ---
 
 > This treatise explains the progress of insight, together with the corresponding stages of purification. It has been written in brief for the benefit of meditators who have obtained distinctive results in their practice, so that they may more easily understand their experience.

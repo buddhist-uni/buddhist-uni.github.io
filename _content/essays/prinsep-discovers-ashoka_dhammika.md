@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1yeeEkjbSHV2oHZduuSYmjD8nfzqX74Z0/view?usp=drivesdk"
 course: west
 year: 2012 # wild guess, def ≤2020
+pages: 2
 ---
 
 > 180 years ago nobody really knew anything authentic about King Asoka

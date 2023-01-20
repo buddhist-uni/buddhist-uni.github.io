@@ -11,6 +11,7 @@ number: 425
 tags:
   - philosophy
   - cosmology
+pages: 50
 ---
 
 > My object in discussing the three themes of the ancient Teaching is to invite all sincerely, seriously investigating people to question deeply the so-called “given realities” of our lives and to reflect thoroughly on the nature and predicament of our existence.

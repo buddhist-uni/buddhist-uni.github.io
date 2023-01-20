@@ -13,6 +13,7 @@ tags:
   - theravada
   - indian
   - religion
+pages: 25
 ---
 
 > I’m gripped by a somewhat peculiar trepidation as I tiptoe into the hallowed portals of the abhidhamma, my feet echoing too loudly in the cavernous austerity.

@@ -15,6 +15,7 @@ tags:
 year: 2017
 month: may
 journal: lions-roar
+pages: 11
 ---
 
 > white supremacy has created an American culture in which other practitioners, namely White practitioners, have been granted the freedom to be Buddhist in safer and more public ways. Instead of facing systemic injustice for embracing a spirituality that departs from the Judeo-Christian norm, White Buddhists are often lauded for this difference.

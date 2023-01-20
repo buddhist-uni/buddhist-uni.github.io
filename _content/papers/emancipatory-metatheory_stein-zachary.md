@@ -21,6 +21,7 @@ tags:
   - education
   - psychology
   - becon
+pages: 37
 ---
 
 > the majority of philosophy is based on assumptions about the basic cognitive endowments of average individuals that totally disregard what is known about human development

@@ -15,6 +15,7 @@ tags:
   - path
   - nibbana
 base_value: 1
+pages: 13
 ---
 
 I. B. Horner's rather dated translation of a key sutta where the Buddha describes his own spiritual journey.

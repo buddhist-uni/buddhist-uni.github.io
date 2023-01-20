@@ -10,6 +10,7 @@ subcat: fiction
 year: 2013
 olid: OL27181355M
 publisher: "Picador"
+pages: 46
 ---
 
 > We must stay hopeful;  

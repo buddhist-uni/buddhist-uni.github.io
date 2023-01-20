@@ -15,6 +15,7 @@ tags:
   - time
   - economics
   - power
+pages: 256
 ---
 
 > a book about people trying to solve problems created by people trying to solve problems

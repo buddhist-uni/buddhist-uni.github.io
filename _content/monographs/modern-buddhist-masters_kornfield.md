@@ -13,6 +13,7 @@ tags:
   - vipassana
   - west
 status: featured
+pages: 320
 ---
 
 > teachings from twelve of the greatest masters and monasteries in the Theravada tradition

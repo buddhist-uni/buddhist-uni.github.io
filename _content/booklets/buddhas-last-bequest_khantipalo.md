@@ -16,6 +16,7 @@ tags:
   - death
   - form
 base_value: 1.2
+pages: 16
 ---
 
 A translation of a sutra preserved in Chinese, which tells the story of the Buddha's final instructions to the Sangha.

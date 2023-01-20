@@ -13,6 +13,7 @@ address: "London"
 course: setting
 tags:
   - indian
+pages: 320
 ---
 
 The classic textbook on India at the time of the Buddha.

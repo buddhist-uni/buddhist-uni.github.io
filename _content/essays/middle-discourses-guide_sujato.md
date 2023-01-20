@@ -8,6 +8,7 @@ year: 2019
 course: sutta
 tags:
   - mn
+pages: 24
 ---
 
 Bhikkhu Sujato's general introduction to the *Majjhima Nikāya*.

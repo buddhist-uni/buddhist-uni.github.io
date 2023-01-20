@@ -10,6 +10,7 @@ tags:
   - buddha
   - buddhism
   - pedagogy
+pages: 4
 ---
 
 > The Buddha was the first religious teacher who meant his message to be proclaimed to all humankind and who made a concrete effort to do this.

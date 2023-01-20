@@ -16,6 +16,7 @@ year: 1983
 base_value: 2.1
 olid: OL3552203M
 publisher: Dharma Realm Buddhist University
+pages: 250
 ---
 
 > Three steps, one bow: that was how they made their pilgrimage. […] an unadorned account of an authentic spiritual journey.

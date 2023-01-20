@@ -11,6 +11,7 @@ tags:
   - sutta
   - an
   - philosophy
+pages: 245
 ---
 
 A selection of suttas from the Numerical Discourses of the Buddha.

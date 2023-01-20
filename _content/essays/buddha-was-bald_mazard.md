@@ -9,6 +9,7 @@ course: buddha
 tags:
   - bart
   - caste
+pages: 20
 ---
 
 > One of the most obvious fallacies of modern Theravada Buddhism is the depiction of the Buddha with a full head of hair.

@@ -11,6 +11,7 @@ tags:
 year: 2022
 month: jan
 journal: tricycle
+pages: 2
 ---
 
 > Just one

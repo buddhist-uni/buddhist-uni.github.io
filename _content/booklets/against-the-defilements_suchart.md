@@ -12,6 +12,7 @@ tags:
   - ethics
   - daily-life
   - thai-forest
+pages: 90
 ---
 
 An inspiring collection of talks on the essence of renunciation.

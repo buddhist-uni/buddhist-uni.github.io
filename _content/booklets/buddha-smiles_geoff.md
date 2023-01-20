@@ -16,6 +16,7 @@ tags:
   - speech
 year: 2015
 base_value: 2
+pages: 159
 ---
 
 > the Buddha himself rarely smiles in the Canon, and when he does, the reasons for his smile are never hilarious.  Still, the Canon’s reputation for being devoid of humor is undeserved. It’s there in the Canon, but it often goes unrecognized.   

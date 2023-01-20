@@ -14,6 +14,7 @@ course: theravada
 tags: 
   - theravada-chanting
   - sri-lankan
+pages: 34
 ---
 
 A collection of Buddhist devotional chants common in Sri Lanka.

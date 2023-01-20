@@ -15,6 +15,7 @@ tags:
   - philosophy-of-science
   - inner
   - ideology
+pages: 4
 ---
 
 An intriguing (re)definition of religion, science, and culture.

@@ -14,6 +14,7 @@ tags:
   - theravada
   - buddha
   - philosophy
+pages: 14
 ---
 
 A lucid and compelling introduction to Buddhism from a renowned contemporary scholar. Recommended for newcomers.

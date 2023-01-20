@@ -16,6 +16,7 @@ tags:
   - geology
   - world
 olid: OL32066674M
+pages: 50
 ---
 
 > Traditional Indian geography was always a strange amalgam of a few facts and a lot of fiction. But facts there are.

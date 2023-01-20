@@ -13,6 +13,7 @@ tags:
 year: 1987
 olid: OL2476710M
 publisher: wisdom
+pages: 170
 ---
 
 > The only time we can live is now

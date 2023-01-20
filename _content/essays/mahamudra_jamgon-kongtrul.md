@@ -12,6 +12,7 @@ tags:
   - mahamudra
   - mahayana
 year: 2015
+pages: 1
 ---
 
 > there's no teaching more profound  

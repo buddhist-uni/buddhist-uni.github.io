@@ -12,6 +12,7 @@ tags:
   - orientalism
   - media
   - film
+pages: 214
 ---
 
 > Growing tolerance toward Asian peoples and cultures was fostered in a mass-mediated environment in which the role of the visual image took on increasing importance. While this environment allowed a popular engagement with Asian religious traditions, it also relied on and reinforced certain racialized notions of Asianness and Asian religiosity. These notions form patterns of representation that, because they are linked to such positive images, go unchallenged and unseen.

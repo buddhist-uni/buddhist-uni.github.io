@@ -15,6 +15,7 @@ tags:
   - indian
   - buddhism
 status: featured
+pages: "94--95"
 ---
 
 On separating out early from later Buddhism and why it matters.

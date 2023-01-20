@@ -12,6 +12,7 @@ tags:
   - chan-lit
   - chan-roots
   - poetry
+pages: 344
 ---
 
 > I, Li Bo, love wine completely, right now. How to attain the immortality within wine? This Dao always gets muddled. Don’t look for it in a ladle! The deity of drunkenness will give transmission to whoever is chosen.

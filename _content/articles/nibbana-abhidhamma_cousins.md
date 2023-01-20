@@ -13,6 +13,7 @@ tags:
   - abhidhamma
   - indian
   - pali-canon
+pages: "95--109"
 ---
 
 > the main force of the *nikāyas* is to discount speculation about *nibbāna*. It is the *summum bonum*. To seek to know more is to manufacture obstacles. By the time of the early *Abhidhamma* the situation is much clearer. The whole Buddhist tradition is agreed that *nibbāna* is the unconditioned

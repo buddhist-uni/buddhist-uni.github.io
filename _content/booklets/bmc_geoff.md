@@ -11,6 +11,7 @@ tags:
   - vinaya-studies
 status: featured
 base_value: 3.5
+pages: 990
 ---
 
 Unfortunately idiosyncratic and giving undue weight to certain Thai subcommentaries, this vinaya textbook remains the gold standard for Western, Theravada monks or anyone looking to seriously study the monastic rules.

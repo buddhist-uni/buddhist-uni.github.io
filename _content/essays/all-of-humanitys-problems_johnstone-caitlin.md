@@ -9,6 +9,7 @@ tags:
   - power
   - world
 year: 2021
+pages: 4
 ---
 
 > Manipulation only works if its target isn’t aware that they’re being manipulated

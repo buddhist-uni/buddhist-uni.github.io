@@ -12,6 +12,7 @@ tags:
 year: 2014
 month: may
 journal: lions-roar
+pages: 10
 ---
 
 > What on earth is the Buddha’s life story doing disguised in the tale of a Christian saint? 

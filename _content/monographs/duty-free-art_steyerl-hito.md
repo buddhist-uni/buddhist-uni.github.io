@@ -16,6 +16,7 @@ year: 2017
 olid: OL26945408M
 publisher: Verso Books
 address: London
+pages: 247
 ---
 
 > the present feels as if it is constituted by emptying out the future to sustain a looping version of a past that never existed

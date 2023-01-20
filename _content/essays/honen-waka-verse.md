@@ -14,6 +14,7 @@ tags:
   - japanese
   - path
 year: 2015
+pages: 5
 ---
 
 > Just as I was talking about the unhindered Light,  

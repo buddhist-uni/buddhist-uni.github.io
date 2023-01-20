@@ -12,6 +12,7 @@ tags:
 year: 2014
 month: jul
 publisher: "Alliance for Bhikkhunīs"
+pages: 3
 ---
 
 > One way to practice dana is by giving money, and another is by giving time.

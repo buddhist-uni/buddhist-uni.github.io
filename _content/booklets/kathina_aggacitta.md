@@ -12,6 +12,7 @@ tags:
 year: 2001
 month: nov
 base_value: 1
+pages: 94
 ---
 
 _Kaṭhina_ is arguably the most important holiday of the year for Theravādin Buddhists. This booklet lays out the history and significance of this tradition in an admirably non-sectarian way.

@@ -11,6 +11,7 @@ year: 2019
 course: dn
 tags:
   - sutta
+pages: 608
 ---
 
 A public domain translation of the Digha Nikāya into straightforward English, made from the translations on [SuttaCentral](https://suttacentral.net/dn){:target="_blank"}.

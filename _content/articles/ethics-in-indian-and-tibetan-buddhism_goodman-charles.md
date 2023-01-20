@@ -14,6 +14,7 @@ tags:
   - tibetan
   - tantric-roots
   - academic
+pages: 20
 ---
 
 An encyclopedia entry on Buddhist Ethics across interpretations and traditions.

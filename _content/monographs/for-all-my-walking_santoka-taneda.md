@@ -14,6 +14,7 @@ tags:
   - world
 year: 2003
 publisher: "Columbia UP"
+pages: 128
 ---
 
 A lovely, sad collection of haiku and diaries written while wandering Japan.

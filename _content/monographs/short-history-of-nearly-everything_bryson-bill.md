@@ -11,6 +11,7 @@ tags:
 year: 2003
 month: may
 publisher: "Broadway Books"
+pages: 624
 ---
 
 > There are three stages in scientific discovery. First, people deny that it is true, then they deny that it is important; finally they credit the wrong person.

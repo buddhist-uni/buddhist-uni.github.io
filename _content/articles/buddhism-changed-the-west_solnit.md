@@ -9,6 +9,7 @@ tags:
 year: 2022
 month: feb
 journal: The Guardian
+pages: 3
 ---
 
 An obituary for [Thich Nhat Hanh](/authors/tnh) by a renowned leftist author celebrating his, and Buddhism's, civilizing influence on Western culture.

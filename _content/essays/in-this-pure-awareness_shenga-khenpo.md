@@ -8,6 +8,7 @@ year: 2019
 course: nibbana
 base_value: 0.2
 subcat: poetry
+pages: 1
 ---
 
 >  In this pure awareness without basis or origin,  

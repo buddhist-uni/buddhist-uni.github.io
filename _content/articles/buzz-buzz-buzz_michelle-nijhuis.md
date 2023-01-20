@@ -16,6 +16,7 @@ tags:
   - bees
 year: 2020
 journal: nyrb
+pages: 10
 ---
 
 > animals are not passive objects for humans to ignore or argue over--or collect--but "individuals with their own perspectives on life," and members of communities with which our species coexists. That animals are in this sense political actors is an underrecognized and, to my mind, potentially powerful point

@@ -15,6 +15,7 @@ tags:
   - mahayana-canon
   - pali-commentaries
   - medieval
+pages: 15
 ---
 
 > A period of disorientation or depression is a small price to pay for more accurate knowledge.

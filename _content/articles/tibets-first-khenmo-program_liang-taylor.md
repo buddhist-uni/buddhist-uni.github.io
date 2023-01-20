@@ -16,6 +16,7 @@ tags:
   - gender
   - activism
   - nyingma
+pages: "231--262"
 ---
 
 > "A monastery is a place where equality is preached but not practiced; a *gar* is a place where equality is practiced but not preached."

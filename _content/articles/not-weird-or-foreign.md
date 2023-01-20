@@ -14,6 +14,7 @@ tags:
 year: 2020
 month: dec
 journal: "the Guardian"
+pages: 4
 ---
 
 A photo essay celebrating Bhante Buddharakkhita: Uganda's first Buddhist monk.

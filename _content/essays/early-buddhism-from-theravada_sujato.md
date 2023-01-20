@@ -13,6 +13,7 @@ tags:
 year: 2022
 month: jan
 base_value: 0.8
+pages: 30
 ---
 
 > Theravada, like any religious tradition, has evolved and changed over the years.

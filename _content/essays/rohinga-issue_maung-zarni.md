@@ -10,6 +10,7 @@ tags:
   - rohingya
   - sea
 publisher: "Anadolu Agency"
+pages: 9
 ---
 
 > I think we cannot talk about the Rohingya genocide or this persecution of Muslims in Burma without talking about western and Asian investors

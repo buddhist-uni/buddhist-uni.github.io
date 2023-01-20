@@ -8,6 +8,7 @@ course: physics
 tags: 
   - quantum-physics
   - science
+pages: 302
 ---
 
 > It isn't just that Bohr's atom with its electron "orbits" is a false picture; all pictures are false, and there is no physical analogy we can make to understand what goes on inside atoms. Atoms behave like atoms, nothing else

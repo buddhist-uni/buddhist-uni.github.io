@@ -11,6 +11,7 @@ tags:
 year: 1998
 month: sep
 address: Toronto
+pages: 19
 ---
 
 > Intuition is the key to establishing any organization

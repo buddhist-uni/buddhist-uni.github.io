@@ -14,6 +14,7 @@ tags:
 year: 2004
 olid: OL32559507M
 base_value: 1
+pages: 154
 ---
 
 A Canadian monk's spiritual journey, from Asia to Canada and back again.

@@ -15,6 +15,7 @@ publisher: bps
 series: wheel
 number: 397
 base_value: 1.2
+pages: 29
 ---
 
 > This essay will help the Buddhist lay follower to understand, from a practical angle, the main points of the Buddha’s teachings as they bear on the conduct of daily life. Constant practice of these principles will ensure that they are built into his character, enabling him to develop into a well-rounded human being, a centre of sanity in a confused world adrift in fashionable philosophies full of empty promises.

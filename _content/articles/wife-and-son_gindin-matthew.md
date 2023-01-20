@@ -10,6 +10,7 @@ drive_links: ["https://drive.google.com/file/d/133ajEzy4NPSPWApjNtsO82YU6fWxgSNt
 course: buddha
 tags:
   - characters
+pages: 6
 ---
 
 > Not only is there no mention of a wife or child in the Buddha’s recounting of his renunciation, he seems to suggest that he was still living at home with [both] his parents

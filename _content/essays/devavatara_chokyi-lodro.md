@@ -11,6 +11,7 @@ tags:
   - pilgrimage
 base_value: 0.2
 subcat: poetry
+pages: 2
 ---
 
 A poem from the Tibetan Tradition about one of the pilgrimage sites in Buddhist India: the spot to which the Buddha is said to have descended after teaching the devas.

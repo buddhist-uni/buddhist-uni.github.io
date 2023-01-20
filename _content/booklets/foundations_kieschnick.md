@@ -8,7 +8,8 @@ file_links:
   - "exclusive_01/Buddhist%20Chinese%20Primer%20Volume%201%20-%20John%20Kieschnick.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1JQX2CxjPeKpXUDF6UCDJup8_VFVHLPAi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vbo69IQEv8rtvMHFXSbpk5DC-5Eetl-R/view?usp=drivesdk"
+pages: 158
 course: chinese-primer
 year: 2017
 series: buddhist-chinese-primer_kieschnick

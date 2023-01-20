@@ -12,6 +12,7 @@ course: meditation
 year: 2014
 journal: cjbs
 number: 10
+pages: "73--91"
 ---
 
 Combining academic and experiential study of the *Satipaṭṭhānas*, Bhikkhu Analayo sugests a new understanding of the four bases that he claims allows for more continuous practice and a unified understanding.

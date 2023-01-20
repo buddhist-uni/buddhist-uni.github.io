@@ -19,6 +19,7 @@ tags:
 year: 2015
 olid: OL28354359M
 publisher: punctum
+pages: 281
 ---
 
 > Museum of Nonhumanity calls for the deconstruction of the categories of animality and humanity in order to enter a new, more inclusive era.

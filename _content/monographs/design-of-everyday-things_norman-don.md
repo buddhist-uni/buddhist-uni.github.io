@@ -10,6 +10,7 @@ tags:
   - things
 year: 1988
 publisher: "Basic Books"
+pages: 270
 ---
 
 > Design is really an act of communication, which means having a deep understanding of the person with whom the designer is communicating.

@@ -20,6 +20,7 @@ tags:
   - chan
   - renunciation
   - nature
+pages: 420
 ---
 
 > If you want to find a resting place,  

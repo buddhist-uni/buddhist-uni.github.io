@@ -13,6 +13,7 @@ tags:
 year: 2015
 olid: OL28412107M
 publisher: bps
+pages: 262
 ---
 
 A dictionary of Pāli flora and fauna along with a fascinating introduction to the natural world of the Early Buddhist Texts.

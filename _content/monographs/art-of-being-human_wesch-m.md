@@ -16,6 +16,7 @@ year: 2018
 olid: OL37544427M
 publisher: "New Prairie Press"
 address: "Manhattan, Kansas"
+pages: 357
 ---
 
 > You have to live your way into a new way of thinking.

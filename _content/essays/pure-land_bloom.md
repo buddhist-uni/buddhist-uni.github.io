@@ -12,6 +12,7 @@ tags:
   - jodo-shinshu
   - mahayana
 year: 1984 # Random guess
+pages: 3
 ---
 
 > Because of the difficulty of understanding the more abstruse concepts of Buddhism, popular Buddhism took over and modified Indian mythology

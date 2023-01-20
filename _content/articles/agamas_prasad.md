@@ -13,6 +13,7 @@ year: 1993
 journal: bsr
 volume: 10
 number: 1
+pages: "45--56"
 ---
 
 > Any kind of study in this field [of Buddhism] remains incomplete unless the materials of the Chinese Āgamas are tapped and utilized.

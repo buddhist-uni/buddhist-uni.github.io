@@ -13,6 +13,7 @@ tags:
   - pakiyadhamma
   - renunciation
   - tibetan
+pages: 6
 ---
 
 > Here I have set down for those who wish to follow the bodhisattva path,  

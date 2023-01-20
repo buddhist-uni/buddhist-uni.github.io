@@ -12,6 +12,7 @@ tags:
   - setting
   - indian
   - myth
+pages: 11
 ---
 
 > Buddhist texts are, by and large, nice. There’s no draconian punishments, no irrational fervor, no ‘smiting with swords’. A serene air of reason, balance, and sanity pervades.  

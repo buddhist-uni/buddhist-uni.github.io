@@ -17,6 +17,7 @@ year: 2012
 month: dec
 olid: OL27628407M
 publisher: "Viking Press"
+pages: 499
 ---
 
 > The shift from hunting-gathering to farming began only about 11,000 years ago; the first metal tools were produced only about 7,000 years ago; and the first state government and the first writing arose only around 5,400 years ago. "Modern" conditions have prevailed, even just locally, for only a tiny fraction of human history

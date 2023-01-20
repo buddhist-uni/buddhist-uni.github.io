@@ -16,6 +16,7 @@ olid: OL32173702M
 tags:
   - chan
   - west
+pages: 10
 ---
 
 > he believed in nothing but himself. Actually, this is neither Buddhism nor Chan

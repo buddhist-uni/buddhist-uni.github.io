@@ -14,6 +14,7 @@ tags:
 year: 2021
 month: jun
 journal: "Los Angeles Review of Books"
+pages: 12
 ---
 
 > true crime can never be my guilty pleasure because it’s a part of my history.

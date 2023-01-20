@@ -15,6 +15,7 @@ tags:
   - caste
   - tamil
 year: 2020
+pages: 2
 ---
 
 The inspiring (and frustrating) story of one modern, South Indian reformer who turned towards Buddhism as a refuge from exploitation.

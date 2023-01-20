@@ -17,6 +17,7 @@ year: 1995
 journal: jpts
 publisher: pts
 volume: 21
+pages: "193--197"
 ---
 
 > The brahmins would indeed take umbrage at being closely associated with the officiant, because the very fact of his being there as an officiant means that he is doing a paid job and so lowers his status below theirs. [The brahmins, in contrast,] have no duties; they are gracing the occasion.

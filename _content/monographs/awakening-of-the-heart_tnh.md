@@ -12,6 +12,7 @@ tags:
   - philosophy
   - meditation
   - mahayana-canon
+pages: 530
 ---
 
 A beautiful collection of commentaries on sutras from both the early and later canons by one of Buddhism's most revered contemporary teachers.

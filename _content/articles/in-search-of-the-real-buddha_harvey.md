@@ -13,6 +13,7 @@ tags:
   - buddhism
   - form
   - indian
+pages: 10
 ---
 
 About the Buddha of the Early Texts compared with the later hagiographies… and our own materialistic assumptions.

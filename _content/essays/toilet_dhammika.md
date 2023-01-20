@@ -11,6 +11,7 @@ tags:
   - biology
   - places
   - toilets
+pages: 2
 ---
 
 > Even today it has been estimated that nearly half the population of India defecate in the open, a major cause of [...] water born disease.

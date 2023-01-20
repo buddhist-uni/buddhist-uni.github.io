@@ -16,6 +16,7 @@ tags:
   - thought
 year: 1970
 publisher: Weatherhill
+pages: 132
 ---
 
 > Zen practice is the direct expression of our true nature. Strictly speaking, for a human being, there is no other practice than this

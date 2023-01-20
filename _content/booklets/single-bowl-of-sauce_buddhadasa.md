@@ -15,6 +15,7 @@ tags:
   - world
   - interfaith
 publisher: "Buddhadāsa Indapañño Archives" 
+pages: 130
 ---
 
 > We must have a system of spiritual culture which is appropriate to the modern world and which can accord with the principles of every religion

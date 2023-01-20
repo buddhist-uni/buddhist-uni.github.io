@@ -17,6 +17,7 @@ month: oct
 olid: OL6992998M
 oclc: 236914
 publisher: "Macmillan & Co."
+pages: 138
 ---
 
 The classic, British novel about two Buddhists in colonial India shows both Britain's smugness and fascination with Buddhism at century's turn.

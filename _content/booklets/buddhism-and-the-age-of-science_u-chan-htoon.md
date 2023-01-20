@@ -15,6 +15,7 @@ year: 1962
 publisher: bps
 series: wheel
 number: 36
+pages: 38
 ---
 
 > Buddhist philosophy regards a being not as an enduring entity but as a dynamic process

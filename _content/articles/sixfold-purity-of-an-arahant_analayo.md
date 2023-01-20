@@ -14,6 +14,7 @@ tags:
   - nibbana
   - arahant
   - thought
+pages: "241--277"
 ---
 
 A thorough description of what makes someone fully enlightened, explaining how arahantship is the culmination and perfection of the path.

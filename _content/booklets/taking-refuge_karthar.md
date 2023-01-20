@@ -12,6 +12,7 @@ tags:
   - philosophy
 year: 2002
 olid: OL27588046M
+pages: 35
 ---
 
 > This book is intended to give a basic understanding of taking refuge to those who are new to the Buddhist path, and to bring greater understanding to those already acquainted with it.

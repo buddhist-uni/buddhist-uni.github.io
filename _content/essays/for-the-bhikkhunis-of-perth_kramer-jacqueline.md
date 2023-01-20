@@ -11,6 +11,7 @@ tags:
   - nuns
   - bhikkhuni
   - australian
+pages: 2
 ---
 
 A short celebration of the Perth Bhikkhunis, and how important it is for people to see monastics.

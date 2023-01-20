@@ -12,6 +12,7 @@ tags:
   - language
   - religion
   - pali-language
+pages: 8
 ---
 
 There is a common religious tendency to mythologize and eternalize the historical particularities of your given religion: claiming, for example, that the Sanskrit language of the Vedas is the language of the universe itself. Sadly, Theravada Buddhism too isn't immune from such narcissistic excess.

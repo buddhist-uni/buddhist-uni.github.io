@@ -13,6 +13,7 @@ tags:
   - nyingma
   - offering
 year: 2020
+pages: 5
 ---
 
 > Ho! Out of the great purity and equalness of appearance and existence,  

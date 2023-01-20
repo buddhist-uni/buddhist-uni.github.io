@@ -12,6 +12,7 @@ tags:
   - sinhalese
   - cosmology
   - function
+pages: 30
 ---
 
 > without showing any disrespect simply because it is worded in Sinhala, if you listen to this marvellous Dhamma with worshipful devotion and gladness, you will surely gain heavenly bliss

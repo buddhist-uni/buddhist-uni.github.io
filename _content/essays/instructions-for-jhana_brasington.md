@@ -10,6 +10,7 @@ tags:
   - samadhi
 year: 2002
 month: apr
+pages: 5
 ---
 
 > You begin by sitting in a comfortable, upright position...

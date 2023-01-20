@@ -13,6 +13,7 @@ tags:
 status: featured
 subcat: poetry
 base_value: 0.25
+pages: 2
 ---
 
 > You might wish to drink the nectar of calm abiding...

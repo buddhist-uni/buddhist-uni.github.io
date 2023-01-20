@@ -17,6 +17,7 @@ tags:
   - philosophy
   - philosophy-of-science
 status: featured
+pages: "72--78"
 ---
 
 > ...recognize that this view is not scientific discovery: it is ideology.

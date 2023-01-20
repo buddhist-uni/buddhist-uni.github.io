@@ -11,6 +11,7 @@ course: buddhism
 tags:
   - philosophy
 olid: OL20682532M
+pages: 134
 ---
 
 A series of 14 lectures on the basic doctrines of Buddhism.

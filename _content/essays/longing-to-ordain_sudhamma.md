@@ -10,6 +10,7 @@ tags:
   - nuns
   - sri-lankan
 year: 2007
+pages: 3
 ---
 
 > I, too, am a bhikkhuni. The bhikkhuni sangha did not perish, but long ago spread from here to China

@@ -18,6 +18,7 @@ journal: bsr
 volume: 32
 number: 2
 status: featured
+pages: "179--205"
 ---
 
 > the common interpretation of the *jhānas* as absorption-concentration attainments [is] incompatible with the teachings of the Pāli Nikāyas. [...] one attains the jhānas, not by one-pointed concentration and absorption into a meditation object, but by releasing and letting go of the foothold of the unwholesome mind [...] the entrance into the first jhāna is the actualization and embodiment of insight practice.

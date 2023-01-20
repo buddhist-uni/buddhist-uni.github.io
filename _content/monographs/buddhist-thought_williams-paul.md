@@ -8,6 +8,7 @@ olid: OL3777039M
 publisher: Routledge
 tags:
   - indian
+pages: 322
 ---
 
 A history of Indian Buddhism, with a particular emphasis on the emergence of the Mahayana.

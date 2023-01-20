@@ -16,6 +16,7 @@ tags:
   - path
   - mindfulness
 year: 2019
+pages: 2
 ---
 
 > Even as I work on eliminating the amplification of suffering, I can also turn to looking to ways I might start to amplify more life-serving experiences. Do I sense, anywhere in my body, a bit of well-being? Or even a bit of pleasure, or joy, appreciation, or love? Am I willing to let my attention rest there?

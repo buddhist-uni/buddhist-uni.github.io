@@ -15,6 +15,7 @@ tags:
   - classical-poetry
 year: 1894
 olid: OL4707491M
+pages: 187
 ---
 
 > It is an early Sanskrit poem written in India on the legendary history of Buddha, and therefore contains much that is of interest for the history of Buddhism, besides its special importance as illustarating the early history of classical Sanskrit literature.

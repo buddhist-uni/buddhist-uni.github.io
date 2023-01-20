@@ -9,6 +9,7 @@ external_url: "https://cdn.amaravati.org/wp-content/uploads/2014/09/Rituals-and-
 course: theravada
 tags:
   - thai
+pages: 25
 ---
 
 A brief overview of the rituals and holidays observed by modern (especially Thai) Theravada Buddhists.

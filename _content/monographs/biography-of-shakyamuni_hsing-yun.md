@@ -19,6 +19,7 @@ tags:
   - form
   - setting
   - chan-lit
+pages: 214
 ---
 
 A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master. My most highly recommended biography of the Buddha.

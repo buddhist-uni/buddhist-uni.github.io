@@ -12,6 +12,7 @@ address: "Colombo"
 course: theravada-roots
 tags:
   - sri-lanka
+pages: "76--88"
 ---
 
 An overview of the Pāli literature of Sri Lanka in the first millennium of the common era.

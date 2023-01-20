@@ -20,6 +20,7 @@ year: 2000
 publisher: bps
 series: wheel
 number: 438
+pages: 42
 ---
 
 > When we adopt a Buddhist perspective on the wounds that afflict our world today, we soon realize that these wounds are symptomatic: a warning signal that something is fundamentally awry with the way we lead our lives.

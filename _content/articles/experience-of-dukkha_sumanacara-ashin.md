@@ -13,6 +13,7 @@ tags:
 course: path
 year: 2019
 journal: jbe
+pages: "109--138"
 ---
 
 > how lust, hatred, delusion and other negative emotions are considered to cause physical and mental pain among [unenlightened beings]

@@ -12,6 +12,7 @@ tags:
   - sutta
 status: featured
 excerpt_url: "https://readingfaithfully.org/selections-from-the-connected-discourses-free-kindle-epub-mobi/"
+pages: 2080
 ---
 
 The best translation in English of the SN, with scholarly and helpful endnotes and introductions. The beautifully printed physical volume also comes with handy subject and proper name indexes which unfortunately were not properly included in the ebook version.

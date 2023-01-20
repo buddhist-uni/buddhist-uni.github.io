@@ -14,6 +14,7 @@ course: ideology
 year: 2020
 month: aug
 journal: nyrb
+pages: 12
 ---
 
 > ask whether it is necessary--or wise--to abandon the field of the emotional sublime to the fascists

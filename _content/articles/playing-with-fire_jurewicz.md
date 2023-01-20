@@ -16,6 +16,7 @@ year: 2000
 journal: jpts
 publisher: pts
 volume: 26
+pages: "136--149"
 ---
 
 > this similarity is neither accidental, nor caused by the Buddha's inability to free himself from the mental paradigms of his culture. I would rather argue that he formulated _Pratityasamutpada_ as a polemic against Vedic thought.

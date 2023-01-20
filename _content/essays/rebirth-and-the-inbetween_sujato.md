@@ -10,6 +10,7 @@ tags:
   - rebirth
   - death
   - abhidhamma
+pages: 10
 ---
 
 > while the Theravādins have preserved the clearest and best-understood early texts referring to the in-between state, their philosophical posture prevented them from investigating and describing this in any detail. For that we shall have to listen to the other schools, starting with the Puggalavādins and Sarvāstivādins, as passed down through the Chinese and Tibetan traditions.

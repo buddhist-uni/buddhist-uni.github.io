@@ -9,6 +9,7 @@ month: may
 course: engaged
 tags:
   - power
+pages: 74
 ---
 
 > Is it an "applied" Buddhism that is a recent development within Buddhism proper, or is it perhaps a dimension of traditional Buddhism that has always belonged properly to it?

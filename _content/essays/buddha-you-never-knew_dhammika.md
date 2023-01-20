@@ -10,6 +10,7 @@ tags:
   - ebts
   - buddha
 year: 2015
+pages: 4
 ---
 
 The earliest Buddhist texts don't actually say much about the Buddha, and don't include most of the popular legends about his life.

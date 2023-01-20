@@ -11,6 +11,7 @@ course: indian
 journal: plato
 tags:
   - abhidhamma
+pages: 18
 ---
 
 An encyclopedia entry introducing the Abhidharma and Indian Buddhism.

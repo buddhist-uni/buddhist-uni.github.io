@@ -10,6 +10,7 @@ tags:
   - pureland
   - mahayana
 year: 1986 # guess
+pages: 3
 ---
 
 > Amida Buddha emerged in Mahayana Buddhism from among the multitude of Buddhas, Bodhisattvas, or other Indian divine beings to become the primary expression of Unconditional Compassion and Universal Wisdom [for Pure Land Buddhists]

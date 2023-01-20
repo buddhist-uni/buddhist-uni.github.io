@@ -15,6 +15,7 @@ tags:
   - lay
   - sex
 base_value: 1
+pages: 15
 ---
 
 > The young people of today are not usually impressed by the wisdom of their elders.

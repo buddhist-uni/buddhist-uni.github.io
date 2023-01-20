@@ -12,6 +12,7 @@ tags:
   - californian
 year: 2015
 month: mar
+pages: 11
 ---
 
 > Practices like yoga and meditation were woven throughout Occupy [Wall Street], and were integral to its endurance and impact; they were not a sideshow.

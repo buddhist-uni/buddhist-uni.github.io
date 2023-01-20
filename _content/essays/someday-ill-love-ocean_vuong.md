@@ -17,6 +17,7 @@ tags:
 subcat: poetry
 year: 2015
 base_value: 0.3
+pages: 2
 ---
 
 > I swear, you will wake--  

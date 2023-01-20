@@ -15,6 +15,7 @@ tags:
 # The following is according to GoodReads
 year: 2005
 editor: "Anna Muresu and Leslie Shaw"
+pages: 264
 ---
 
 > You can see that every moment is birth and death. There is nothing you can keep, and there is nothing you can hold on to, because things are arising and passing away so quickly.

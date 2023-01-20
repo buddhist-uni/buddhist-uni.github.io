@@ -10,6 +10,7 @@ tags:
   - bodhisattvas
   - guanyin
 year: 2008 # Total Guess
+pages: 3
 ---
 
 > Kannon has taken many forms in Japan and is probably the most venerated of Buddhist divinities.

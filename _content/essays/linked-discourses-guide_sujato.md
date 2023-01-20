@@ -8,6 +8,7 @@ year: 2019
 course: sutta
 tags:
   - sn
+pages: 56
 ---
 
 Bhikkhu Sujato's general introduction to the *Saṁyutta Nikāya*.

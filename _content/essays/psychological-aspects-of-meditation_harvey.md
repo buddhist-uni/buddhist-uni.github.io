@@ -8,6 +8,7 @@ year: 1997
 course: function
 tags:
   - meditation
+pages: 18
 ---
 
 > Overall, Buddhist practice can be seen as a combination of two processes: the cultivation and growth of wholesome, positive mental states, and the weakening, and final eradication, of mental ‘defilements’.

@@ -9,6 +9,7 @@ course: theravada
 tags:
   - californian
   - theravada-chanting
+pages: 85
 ---
 
 The devotional used for daily chanting at Āloka and Karuṇā Vihāras in California, derived from the Thai style and adapted for use by the American Bhikkhunis.

@@ -12,6 +12,7 @@ course: ebts
 tags:
   - indian
   - oral
+pages: "97--127"
 ---
 
 Argues against an improvisational oral transmission and shows why we should think of the texts as having been recited verbatim

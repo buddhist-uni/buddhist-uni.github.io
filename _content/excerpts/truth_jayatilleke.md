@@ -15,6 +15,7 @@ year: 1971
 publisher: bps
 chapter: 4
 booktitle: "Facets of Buddhist Thought"
+pages: "21--31"
 ---
 
 > the Buddha confined himself to asserting statements which were true and useful, though pleasant or unpleasant, so that the Dhamma is pragmatic, although it does not subscribe to a pragmatic theory of truth.

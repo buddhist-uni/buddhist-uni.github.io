@@ -8,6 +8,7 @@ year: 2019
 course: sutta
 tags:
   - an
+pages: 25
 ---
 
 Bhikkhu Sujato's general introduction to the *Aṅguttara Nikāya*.

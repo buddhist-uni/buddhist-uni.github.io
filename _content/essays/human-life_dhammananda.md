@@ -12,6 +12,7 @@ tags:
   - origination
 year: 2007
 month: sep
+pages: 2
 ---
 
 > Our body is not life, but just a house. Life is energy. The coming together of mental, kammic and cosmic forces — that is life.

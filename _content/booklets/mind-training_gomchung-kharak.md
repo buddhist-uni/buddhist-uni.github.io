@@ -17,6 +17,7 @@ olid: OL37632812M
 base_value: 4
 publisher: "Kagyu Monlam"
 address: "Gaya, India"
+pages: 19
 ---
 
 > I’m giving advice as a remedy.  

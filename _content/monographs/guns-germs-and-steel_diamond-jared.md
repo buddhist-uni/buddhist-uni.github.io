@@ -16,6 +16,7 @@ tags:
   - america
   - africa
   - race
+pages: 480
 ---
 
 > The spread of farming from those few sites of origin usually did not occur as a result of the hunter-gatherers' elsewhere adopting farming; hunter-gatherers tend to be conservative.... Instead, farming spread mainly through farmers' outbreeding hunters, developing more potent technology, and then killing the hunters or driving them off of all lands suitable for agriculture.

@@ -9,6 +9,7 @@ tags:
   - pali-canon
   - indian
 status: featured
+pages: 26
 ---
 
 > Reverend Sirs, I would like the reverend bhikkhus and bhikkhunis---as well as the laymen and laywomen---to listen to these passages frequently and to ponder on them.

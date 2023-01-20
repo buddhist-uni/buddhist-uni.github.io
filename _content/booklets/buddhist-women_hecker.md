@@ -14,6 +14,7 @@ address: Kandy
 course: characters
 tags:
   - pali-canon
+pages: 43
 ---
 
 An anthology of stories about Buddhist women from the Pāli Canon.
