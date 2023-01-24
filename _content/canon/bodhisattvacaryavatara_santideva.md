@@ -18,7 +18,7 @@ subcat: poetry
 year: 1979
 translator: "Steven Bachelor"
 base_value: 3
-external_url: "https://www.tibethouse.jp/about/buddhism/text/pdfs/Bodhisattvas_way_English.pdf"
+external_url: "https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf"
 source_url: "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zAntideva-bodhicaryAvatAra.htm"
 ---
 

@@ -10,12 +10,13 @@ drive_links:
 course: pilgrimage
 tags:
   - chinese-roots
+  - media
 year: 2017
 month: sep
 journal: "Religions"
 volume: 8
-number: 10
-pages: "206--206"
+number: 206
+pages: 29
 publisher: "MDPI"
 openalexid: W2759215172
 ---

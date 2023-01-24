@@ -14,5 +14,5 @@ year: 2020
 
 > I offered eight fallen flowers to the stupa...
 
-[Gregory Schopen](https://www.degruyter.com/document/doi/10.1515/9780824851224-008/pdf){:target="_blank"} (among others) has pondered the lack of stupa-related rules in [the Theravada Vinaya](/tags/vinaya-pitaka) and wondered if this might reflect a sectarian difference in stupa worship.
+[Gregory Schopen](https://doi.org/10.1515/9780824851224-008){:target="_blank"} (among others) has pondered the lack of stupa-related rules in [the Theravada Vinaya](/tags/vinaya-pitaka) and wondered if this might reflect a sectarian difference in stupa worship.
 This *sutta* from the Theravadan *Vimāna Vatthu* shows that they not only knew of this common devotional practice, they celebrated it.

@@ -1,7 +1,7 @@
 ---
 title: "If education is not the answer you are asking the wrong question"
 authors: [stein-zak]
-external_url: "https://www.zakstein.org/wp-content/uploads/2014/10/If-education-is-not-the-answer-you-are-asking-the-wrong-question.pdf"
+source_url: "http://www.zakstein.org/publications.html"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1JSJXTMMjD1YXutRLcs2cDrwbWKKbnEQM/view?usp=drivesdk"]
 course: activism
