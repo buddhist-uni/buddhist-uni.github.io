@@ -13,7 +13,7 @@ month: sep
 olid: OL36665288M
 oclc: 1320870463
 publisher: "Drawn and Quarterly"
-address: "Montréal, Québec"
+address: "Montréal, Québec"
 pages: 448
 ---
 
