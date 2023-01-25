@@ -6,6 +6,10 @@ i.fas { display: block; font-size: 43px; }
 td { text-align: center; }
 table { font-family: system-ui, sans; }
 </style>
+<script>
+window.dataLayer = window.dataLayer || [];
+if (typeof gtag == 'undefined') function gtag(){dataLayer.push(arguments);}
+</script>
 
 <h3>Usage Statistics</h3>
 <p>This site uses Google Analytics to get anonymous usage data which we use to improve the site and to feel good about what we've built. It means a lot to us that you come here and we love to see you here.</p>
@@ -17,7 +21,7 @@ table { font-family: system-ui, sans; }
 <table><tbody><tr>
     <td style="display: none;" id="incog-off"><i class="fas fa-user-tie"></i> Currently, you are dressed in business casual and your usage of the site is anonymously visible to us. Hello!</td>
     <td style="display: none;" id="incog-on"><i class="fas fa-user-secret"></i> You are now <span style="font-family: monospace;">Incognito</span>. Your use of this website is <span style="font-family: cursive;">invisible</span> to us.</td>
-    <td><button class="btn btn-danger" id="incog-toggle" onclick="if(localStorage.getItem('doNotTrack')=='1'){localStorage.removeItem('doNotTrack');localStorage.setItem('TRACK', 1);}else{localStorage.removeItem('TRACK');localStorage.setItem('doNotTrack', 1);}location.reload();">Go Incognito...</button></td>
+    <td><button class="btn btn-danger" id="incog-toggle" onclick="if(localStorage.getItem('doNotTrack')=='1'){localStorage.removeItem('doNotTrack');localStorage.setItem('TRACK', 1);gtag('event','tracking_opt_in',{});}else{localStorage.removeItem('TRACK');localStorage.setItem('doNotTrack', 1);gtag('event','tracking_opt_out',{});}location.reload();">Go Incognito...</button></td>
 </tr></tbody></table>
 </div>
 

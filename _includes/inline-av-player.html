@@ -75,8 +75,9 @@
     preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'});"
-    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }}); window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'});"
+    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'}); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: (100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ include.content.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});"
+    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }}); window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'}); gtag('event', 'video_complete', {{ gtagdata }});"
+    ontimeupdate="Math.random()<0.01?gtag('event', 'video_progress', {{ gtagdata }}):undefined"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">
     Your browser doesn't support playing this audio/video file inline.

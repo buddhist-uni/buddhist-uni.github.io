@@ -39,6 +39,7 @@
           if (this.q != initialSearchTerm) {
             window.history.pushState(this, "", nuri);
             if (typeof ga != 'undefined') ga('send', 'pageview', {location: nuri});
+            if (typeof gtag != 'undefined') gtag('event', 'search', {search_term: this.q});
             initialSearchTerm = this.q;
           } else {
             window.history.replaceState(this, "", nuri);
