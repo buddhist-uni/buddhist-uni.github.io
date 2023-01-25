@@ -22,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buddhistuniversity.net" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-159403467-1
+GA4: G-B3PH0LF6QQ
 github_repo:  buddhist-uni/buddhist-uni.github.io
 github_branch: master
 tinyletter_username: buddhist-uni
