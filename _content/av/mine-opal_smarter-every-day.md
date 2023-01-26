@@ -7,6 +7,7 @@ course: wider
 tags:
   - geology
   - australia
+  - mining
 year: 2016
 month: dec
 minutes: 13

@@ -8,6 +8,8 @@ tags:
   - canada
   - wider
   - migration
+  - mining
+  - gender
 year: 2022
 month: sep
 olid: OL36665288M
