@@ -84,6 +84,7 @@
 </{{ tag }}>
 {% elsif record.external_url contains "archive.org/details/" %}
 <iframe src="{{ record.external_url | replace: "/details/", "/embed/" }}" width="100%" height="29" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+{% elsif record.embedded_html %}{{ record.embedded_html }}
 {% elsif record.drive_links[0] %}
 <iframe id="gdrive-player-{{ record.slug }}"
    frameborder="0"
