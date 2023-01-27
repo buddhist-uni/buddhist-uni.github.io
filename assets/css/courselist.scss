@@ -7,9 +7,13 @@ h3.courselink {
     margin-bottom: 0;
     background-color: $banner-color;
     color: white;
-    padding: 1rem;
+    padding: 0;
     letter-spacing: 3px;
     a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
         color: white;
         text-decoration: underline;
         text-underline-offset: 2px;
