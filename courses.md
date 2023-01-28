@@ -61,7 +61,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
 {% assign bauthors = '' | split: '' %}
 {% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
 {% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
-<h3 {{onclick}} class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
+<h3 class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
 <div class="coursedesc">
   <div class="descrow">
     <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>
@@ -82,7 +82,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
 Courses hosted on other websites.
 
 ### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
-{:onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm' ,0.6)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
@@ -93,7 +93,7 @@ Courses hosted on other websites.
 </div>
 
 ### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
-{:onclick="goto('http://www.nettletibetan.ca/',0.5)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
@@ -105,7 +105,7 @@ Courses hosted on other websites.
 
 
 ### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
-{:onclick="goto('http://bschawaii.org/shindharmanet/course/',1.5)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
@@ -116,7 +116,7 @@ Courses hosted on other websites.
 </div>
 
 ### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}
-{:onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
@@ -127,7 +127,7 @@ Courses hosted on other websites.
 </div>
 
 ### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3"}
-{:onclick="goto('https://www.coursera.org/learn/modpo',3)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
@@ -139,7 +139,7 @@ Courses hosted on other websites.
 </div>
 
 ### [The Making of Modern Ukraine](https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_){:ga-event-value="2"}
-{:onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_',2)" .courselink}
+{:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
