@@ -501,6 +501,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
 - Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
 
+{% include content_blurb.html category="canon" slug="iti107" %}
+- The Buddha summarizes this ideal relationship between the monastics and the laity.
+
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
