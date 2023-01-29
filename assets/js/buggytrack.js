@@ -88,7 +88,7 @@ const BuggyTracker = function (d) {
     if(!this._uid){this._uid=Math.random()*10000000;localStorage.setItem("uid", this._uid);}
     } return this._uid;
   };
-  this.sendEvent=function(oid,value,list,categories){gtag('event','purchase',{
+  this.sendEvent=function(oid,value,categories){gtag('event','purchase',{
     transaction_id: "T_"+cyrb53(this.getUID()+":"+oid),
     value: value,
     items: [{
@@ -99,7 +99,7 @@ const BuggyTracker = function (d) {
       item_category3: categories[2], 
       item_category4: categories[3], 
       item_category5: categories[4], 
-      item_list_name: list,
+      item_list_name: whenceContent(d.referrer),
       item_brand: window.WEBSITE_SECTION
     }]
   });};
@@ -128,7 +128,7 @@ const BuggyTracker = function (d) {
       categories.unshift('External Link');
     }
     if (!categories[4]) categories[4]=inferLinkType(link);
-    this.sendEvent(oid,value,whenceContent(d.referrer),categories);
+    this.sendEvent(oid,value,categories);
   }};
   d.addEventListener("click", this, {useCapture: true});
   d.addEventListener("contextmenu", this, {useCapture: true, passive: true});
