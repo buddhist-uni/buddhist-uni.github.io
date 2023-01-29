@@ -20,12 +20,13 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sag
 
 <script>
 function goto(u,v) {
-   if (typeof ga === 'function') {
+   try {
      let w = Math.floor(v);
      ga('send','event','Outbound Link','click',u,(Math.random()<v-w)?Math.ceil(v):w);
      window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':u,'revenue_value':v,'currency':'USD'});
-     gtag('event', 'click', {outbound: true, link_url: u, link_domain: u.split('/')[2], link_classes: 'courselistitem', link_id: '', link_text: '', value: v});
-   }
+     gtag('event', 'click', {outbound: true, link_url: u, link_domain: u.split('/')[2], link_classes: 'courselistitem', link_id: '', link_text: ''});
+     buggytrack.sendEvent(u,v,['External Link','courses','external_courses','Icon Link','Unknown/HTML']);
+   } catch(e) { console.error(e); }
    location.href=u;
 }
 </script>
