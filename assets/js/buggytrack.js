@@ -17,46 +17,46 @@ const BuggyTracker = function (d) {
   const courser = /^\/courses\/([a-z_-]+)[\/]?([a-z0-9_-]*)$/;
   const blogr = /^\/blog\/20[2-7][0-9]\/[01][0-9]\/[0-3][0-9]\/[a-z_-]+$/;
   const lp = d.createElement('a');
-  const whenceContent=function(referrer,r,l,m){
+  function whenceContent(referrer,r,l,m){
     lp.href=referrer;l=d.location;
     if (lp.host!=l.host) return null;
     if (referrer) r=lp.pathname; else r='';
-    if (r == '/search/') return "search-results";
-    if (r == '/library/highlights') return "highlights";
-    if (r == '/content/random/') return "randomizer";
-    if (r == '/exclusive/') return "exclusive-content-list";
+    if (r == '/search/') return "Search Results";
+    if (r == '/library/highlights') return "Highlights";
+    if (r == '/content/random/') return "Randomizer";
+    if (r == '/exclusive/') return "Exclusive Content";
     l = l.pathname; m = l.match(tagr) || r.match(tagr);
-    if(m) return m[1]+"-tag-page";
+    if(m) return "Tag Page: "+m[1];
     m = l.match(courser) || r.match(courser);
-    if(m) return m[1]+"-course";
+    if(m) return "Course: "+m[1];
     m = l.match(blogr) || r.match(blogr);
-    if(m) return "blog-post";
+    if(m) return "Blog Post";
     m = r.match(/^\/content\/([a-z]+)\/$/);
-    if(m) return "master-"+m[1]+"-list";
+    if(m) return "Master "+m[1]+" List";
     m = r.match(/^\/content\/([a-z]+)\/([a-z0-9_-]+)$/);
-    if(m) return "related-content";
+    if(m) return "Related Content";
     m = r.match(/^\/publishers\/([a-z-]+)$/);
-    if(m) return "publisher-page";
+    if(m) return "Publisher Page";
     m = r.match(/^\/authors\/([a-z-]+)$/);
-    if(m) return "author-page";
+    if(m) return "Author Page";
     m = r.match(/^\/series\/([a-z-]+)$/);
-    if(m) return "series-page";
+    if(m) return "Series Page";
     m = r.match(/^\/journals\/([a-z-]+)$/);
-    if(m) return "journal-page";
+    if(m) return "Journal Page";
     return null;
-  };
-  const whenceLink=function(link,l,gp){
+  }
+  function linkType(link,l,gp){
     l=d.location.pathname; gp=link.parentElement.parentElement;
-    if(link.parentElement.className=='courselink' && l=='/courses/') return 'external-course-list';
-    if(link.className=='f3' && l=='/courses/') return 'mit-course-list';
-    if(gp.className=='social-media-list') return 'social-media-list';
-    if(gp.tagName=='UL' && l=='/sources/') return 'sources-list';
-    return null;
-  };
-  const getGAUID = function(){
+    if(link.parentElement.className=='courselink' && l=='/courses/') return 'External Course';
+    if(link.className=='f3' && l=='/courses/') return 'MIT Course';
+    if(gp.className=='social-media-list') return 'Social Media Link';
+    if(gp.tagName=='UL' && l=='/sources/') return 'Sources Page Link';
+    return 'Link';
+  }
+  function getGAUID(){
     try{return d.cookie.match(/_ga=(.+?);/)[1].split('.').slice(-2).join(".");}
     catch(e){return null;}
-  };
+  }
   this.getUID=function(){if(!this._uid){
     this._uid = localStorage.getItem("uid") || getGAUID();
     if(!this._uid){this._uid=Math.random()*10000000;localStorage.setItem("uid", this._uid);}
@@ -66,7 +66,7 @@ const BuggyTracker = function (d) {
     transaction_id: "T_"+cyrb53(this.getUID()+":"+oid),
     value: value,
     items: [{
-      item_id: oid, price: value, item_category: category, item_list_id: list
+      item_id: oid, price: value, item_category: category, item_list_name: list, item_brand: window.WEBSITE_SECTION
     }]
   });};
   this.handleEvent=function(e,link){link=e.target.closest('a');if(link && link.host != d.location.host) {
@@ -74,8 +74,14 @@ const BuggyTracker = function (d) {
     var oid = cid || link.href;
     var value = link.getAttribute('ga-event-value')*1 || 0.15;
     if (localStorage.getItem(oid+":click")) value=0; else localStorage.setItem(oid+":click",1);
-    var list=null;if(cid){list=whenceContent(d.referrer);}else{list=whenceLink(link)}
-    if(value) this.sendEvent(oid,value,list,cid?'content-click':'link-click');
+    var list=null,category=null;
+    if(cid){
+      list=whenceContent(d.referrer);
+      category='Content';
+    }else{
+      category=linkType(link);
+    }
+    if(value) this.sendEvent(oid,value,list,category);
   }};
   d.addEventListener("click", this, {useCapture: true});
   d.addEventListener("contextmenu", this, {useCapture: true, passive: true});
