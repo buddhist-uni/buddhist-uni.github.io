@@ -14,7 +14,10 @@ const cyrb53 = function(str) {
 };
 const BuggyTracker = function (d) {
   const tagr = /^\/tags\/([a-z-]+)[\/]?$/;
+  const seriesr = /^\/publishers\/([a-z-]+)$/;
+  const journalr = /^\/journals\/([a-z-]+)$/;
   const courser = /^\/courses\/([a-z_-]+)[\/]?([a-z0-9_-]*)$/;
+  const publisherr = /^\/publishers\/([a-z-]+)$/;
   const blogr = /^\/blog\/20[2-7][0-9]\/[01][0-9]\/[0-3][0-9]\/[a-z_-]+$/;
   const lp = d.createElement('a');
   function whenceContent(referrer,r,l,m){
@@ -35,23 +38,46 @@ const BuggyTracker = function (d) {
     if(m) return "Master "+m[1]+" List";
     m = r.match(/^\/content\/([a-z]+)\/([a-z0-9_-]+)$/);
     if(m) return "Related Content";
-    m = r.match(/^\/publishers\/([a-z-]+)$/);
+    m = r.match(publisherr);
     if(m) return "Publisher Page";
     m = r.match(/^\/authors\/([a-z-]+)$/);
     if(m) return "Author Page";
-    m = r.match(/^\/series\/([a-z-]+)$/);
+    m = r.match(seriesr);
     if(m) return "Series Page";
-    m = r.match(/^\/journals\/([a-z-]+)$/);
+    m = r.match(journalr);
     if(m) return "Journal Page";
     return null;
   }
-  function linkType(link,l,gp){
-    l=d.location.pathname; gp=link.parentElement.parentElement;
-    if(link.parentElement.className=='courselink' && l=='/courses/') return 'External Course';
-    if(link.className=='f3' && l=='/courses/') return 'MIT Course';
-    if(gp.className=='social-media-list') return 'Social Media Link';
-    if(gp.tagName=='UL' && l=='/sources/') return 'Sources Page Link';
-    return 'Link';
+  function linkInfo(link,l,p,gp,m){
+    l=d.location.pathname;p=link.parentElement;gp=p.parentElement;
+    m=l.match(publisherr);
+    if(m && p.tagName=='H3') return ['publishers', m[1]];
+    m=l.match(seriesr);
+    if(m && p.tagName=='H3') return ['series', m[1]];
+    m=l.match(journalr);
+    if(m && p.tagName=='H3') return ['journals', m[1]];
+    if(p.className=='courselink' && l=='/courses/')
+      return ['courses', 'external_courses'];
+    if(link.className=='f3' && l=='/courses/') return ['courses', 'mit_courses'];
+    if(gp.className=='social-media-list') return ['marketing', 'social_media_links', link.hostname];
+    if(gp.className=='contact-list') return ['marketing', 'contact_links', temp1.pathname];
+    if(gp.tagName=='UL' && l=='/sources/')
+      return [
+        link.closest('div').getAttribute('data-link-type'),
+        link.getAttribute('data-slug') || link.text,
+        'Sources Page Link'
+      ];
+    return ['Generic Links', d.location.pathname, (link.closest('header'))?'Header Link':'Body Link'];
+  }
+  function inferLinkType(link){
+    if (link.host.startsWith('youtu')) return 'YouTube';
+    switch (link.pathname.slice(-4)) {
+      case '.htm': return 'htm';
+      case 'html': return 'html';
+      case '.mp3': return 'mp3';
+      case '.pdf': return 'pdf';
+    }
+    return 'Unknown/HTML';
   }
   function getGAUID(){
     try{return d.cookie.match(/_ga=(.+?);/)[1].split('.').slice(-2).join(".");}
@@ -62,26 +88,47 @@ const BuggyTracker = function (d) {
     if(!this._uid){this._uid=Math.random()*10000000;localStorage.setItem("uid", this._uid);}
     } return this._uid;
   };
-  this.sendEvent=function(oid,value,list,category){gtag('event','purchase',{
+  this.sendEvent=function(oid,value,list,categories){gtag('event','purchase',{
     transaction_id: "T_"+cyrb53(this.getUID()+":"+oid),
     value: value,
     items: [{
-      item_id: oid, price: value, item_category: category, item_list_name: list, item_brand: window.WEBSITE_SECTION
+      item_id: oid,
+      price: value,
+      item_category: categories[0], 
+      item_category2: categories[1], 
+      item_category3: categories[2], 
+      item_category4: categories[3], 
+      item_category5: categories[4], 
+      item_list_name: list,
+      item_brand: window.WEBSITE_SECTION
     }]
   });};
-  this.handleEvent=function(e,link){link=e.target.closest('a');if(link && link.host != d.location.host) {
+  this.handleEvent=function(e,link){link=e.target.closest('a');if(!link) return;
+   var value = link.getAttribute('ga-event-value')*1;
+   if(link.host != d.location.host || value > 0) {
     var cid = link.getAttribute('data-content-path');
     var oid = cid || link.href;
-    var value = link.getAttribute('ga-event-value')*1 || 0.15;
-    if (localStorage.getItem(oid+":click")) value=0; else localStorage.setItem(oid+":click",1);
-    var list=null,category=null;
+    if (localStorage.getItem(oid+":click")) return; else localStorage.setItem(oid+":click",1);
+    value ||= 0.15;
+    var categories=null;
     if(cid){
-      list=whenceContent(d.referrer);
-      category='Content';
+      var category = link.getAttribute('data-content-subcat');
+      if (category) category = link.getAttribute('data-content-category')+'/'+category;
+      else category = link.getAttribute('data-content-category');
+      categories = [
+        'Content',
+        category,
+        link.getAttribute('data-content-course'),
+        link.getAttribute('data-content-link-type'),
+        link.getAttribute('data-content-link-ext')
+      ];
     }else{
-      category=linkType(link);
+      categories=linkInfo(link);
+      if (!categories[2]) categories[2] = 'Main External URL';
+      categories.unshift('External Link');
     }
-    if(value) this.sendEvent(oid,value,list,category);
+    if (!categories[4]) categories[4]=inferLinkType(link);
+    this.sendEvent(oid,value,whenceContent(d.referrer),categories);
   }};
   d.addEventListener("click", this, {useCapture: true});
   d.addEventListener("contextmenu", this, {useCapture: true, passive: true});

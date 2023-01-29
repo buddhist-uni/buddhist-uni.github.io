@@ -1,7 +1,7 @@
 {% assign c = include.content %}{% assign category = c.path | split: '/' %}{% assign category = category[1] %}
 {% include_cached content_icon.html category=category subcat=c.subcat %}
 {% include content_path.liquid content=c %}
-<span id="{{ c.slug }}">{% if c.external_url %}<a target="_blank" {% include content_link_data_attributes.html content=c linktype="Main External URL" linkfmt="Unknown/HTML" %} href="{{ c.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if c.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{% endif %}{{ c.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if c.authors.size > 0 or c.reader %} – {% include content_authors_string.html content=c %}{% endif %}{% if c.external_url %}</a>{% endif %}</span>
+<span id="{{ c.slug }}">{% if c.external_url %}<a target="_blank" {% include content_link_data_attributes.html content=c linktype="Main External URL" linkfmt="" %} href="{{ c.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if c.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{% endif %}{{ c.title | markdownify | remove: '<p>' | remove: '</p>' }}{% if c.authors.size > 0 or c.reader %} – {% include content_authors_string.html content=c %}{% endif %}{% if c.external_url %}</a>{% endif %}</span>
 {% if c.drive_links %}<span>
 {%- for link in c.file_links -%}
   {%- assign linkfmt = c.formats[forloop.index0] -%}

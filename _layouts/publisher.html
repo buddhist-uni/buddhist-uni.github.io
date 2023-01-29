@@ -7,6 +7,7 @@ layout: default
     <div class="back"><a href="/publishers/">Publishers</a> /</div>
     <h1 class="post-title">{{ page.title | escape }}</h1>
 {% if page.external_url %}
+{%- comment -%}buggytrack.js uses the fact that these are h3{%- endcomment -%}
 <h3><a target="_blank" href="{{ page.external_url }}">Online here</a></h3>
 {% endif %}
   </header>

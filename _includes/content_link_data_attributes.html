@@ -4,7 +4,7 @@
 {%- if c.status == "featured" -%}{%- assign value = value | times: site.data.ga.featured_value_multiplier -%}{%- endif -%}
 {%- if include.linktype == "Preview" -%}{%- assign value = value | times: 0.5 -%}{%- endif -%}
 {%- if include.linktype == "WorldCat" -%}{%- assign value = 0.15 -%}{%- endif -%}
-ga-event-value="{{ value }}" data-content-path="{{ content_path }}" data-content-link-type="{{ include.linktype }}" data-content-link-ext="{{ include.linkfmt }}" data-content-category="{{ c.category }}" data-content-subcat="{{ c.subcat }}" data-content-course="{{ c.course | default: 'archive' }}"
+ga-event-value="{{ value }}" data-content-path="{{ content_path }}" data-content-link-type="{{ include.linktype }}" {% if include.linkfmt %}data-content-link-ext="{{ include.linkfmt }}" {% endif %}data-content-category="{{ c.category }}" data-content-subcat="{{ c.subcat }}" data-content-course="{{ c.course | default: 'archive' }}"
 {%- comment -%}
   Only the common, data attributes are added here.
   The specific HREFs, etc are added in-situ

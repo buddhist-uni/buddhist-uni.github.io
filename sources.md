@@ -9,21 +9,24 @@ Below is a list of the sources used in the construction of the University's curr
 
 Only a tiny fraction of their contents could be featured on this website, so please see the links below for their complete archives.
 
+<div markdown="1" data-link-type="authors">{% comment %}These data are used by buggytrack.js{% endcomment %}
 ## Individual Authors
 
-* [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
-  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo/publications/)
-* [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html)
-* [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK)
-* [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php)
-* [Ajahn Suchart](https://www.phrasuchart.com/enbook/)
-* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books) ([Mirror](http://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf))
-* [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html)
-* [Bhante S. Dhammika's writing at "BudBlooms"](http://budblooms.org/)
-* [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/)
-* [BuddhaDust](http://buddhadust.net)
-  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
+* [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html){:data-slug="analayo"} (at Hamburg)
+  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo/publications/){:data-slug="analayo"}
+* [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html){:data-slug="geoff"}
+* [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK){:data-slug="sujato"}
+* [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php){:data-slug="boowa"}
+* [Ajahn Suchart](https://www.phrasuchart.com/enbook/){:data-slug="suchart"}
+* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](http://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
+* [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html){:data-slug="yuttadhammo"}
+* [Bhante S. Dhammika's writing at "BudBlooms"](http://budblooms.org/){:data-slug="dhammika"}
+* [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/){:data-slug="rf"}
+* [BuddhaDust](http://buddhadust.net){:data-slug="Mike Olds"}
+  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks){:data-slug="subhuti"}
+</div>
 
+<div markdown="1" data-link-type="schools">
 ## Monasteries and Traditions
 
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
@@ -34,7 +37,9 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)
 * [The Karma Kagyu](https://dharmaebooks.org/)
+</div>
 
+<div markdown="1" data-link-type="libraries">
 ## Digital Libraries
 
 * [Access to Insight](https://www.accesstoinsight.org/)
@@ -68,12 +73,16 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The MindRxiv](https://mindrxiv.org/discover?subject=MindRxiv%7CArts%20and%20Humanities%7CReligion%7CBuddhist%20Studies)
 * [SSRN](https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm)
 * [OpenAlex.org](https://docs.openalex.org/)
+</div>
 
+<div markdown="1" data-link-type="journals">
 ## Periodicals
 
 {% for j in site.journals %}
-* [{{ j.title }}]({{ j.external_url }}){% endfor %}
+* [{{ j.title }}]({{ j.external_url }}){:data-slug="{{ j.slug }}"}{% endfor %}
+</div>
 
+<div markdown="1" data-link-type="publishers">
 ## Open Access Publishers
 
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
@@ -93,3 +102,4 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Pressbooks](https://pressbooks.directory/)
 * [OpenStax](https://openstax.org/subjects)
 * [punctum books](https://punctumbooks.com/)
+</div>

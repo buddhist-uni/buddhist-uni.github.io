@@ -2,6 +2,7 @@ vendor
 __pycache__
 node_modules
 assets/webfonts
+assets/css/purged-main.css
 _data/cssCacheToken.yml
 _drafts/_content
 _site

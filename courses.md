@@ -80,7 +80,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
 ## External Courses
 
 Courses hosted on other websites.
-
+{% comment %}Note that the .courselink classes below are used by buggytrack.js{% endcomment %}
 ### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
 {:.courselink}
 
@@ -153,7 +153,7 @@ Courses hosted on other websites.
 ## Open Courseware @MIT
 
 OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){:target="_blank"}, which have provided free syllabi and other course materials for a large number of their Undergraduate and Graduate-level courses since 2001. For OBU Students, I especially recommend checking out:
-
+{% comment %}These .f3 classes below are used by BuggyTrack{% endcomment %}
 - [The Challenge of World Poverty](https://ocw.mit.edu/courses/economics/14-73-the-challenge-of-world-poverty-spring-2011/){:.f3 ga-event-value="2"}
   - To understand the drivers, traps, and opportunities for global poverty with Nobel Laureates Abhijit Banerjee and Esther Duflo.
 {:.mb-2}
