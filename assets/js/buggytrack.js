@@ -47,9 +47,9 @@ const BuggyTracker = function (d) {
     if(m) return "Series Page";
     m = l.match(journalr) || r.match(journalr);
     if(m) return "Journal Page";
-    if (!referrer) return 'Directly → '+l.pathname;
-    if (lp.host!=l.host) return lp.hostname+" → "+l.pathname;
-    return (l==r)?(r):(r+" → "+l);
+    if (!referrer) return 'Direct → '+l;
+    if (lp.host!=d.location.host) return lp.hostname+" → "+l;
+    return l==r?r:r+" → "+l;
   }
   function linkInfo(link,l,p,gp,m){
     l=d.location.pathname;p=link.parentElement;gp=p.parentElement;
