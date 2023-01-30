@@ -19,16 +19,17 @@ const BuggyTracker = function (d) {
   const courser = /^\/courses\/([a-z_-]+)[\/]?([a-z0-9_-]*)$/;
   const publisherr = /^\/publishers\/([a-z-]+)$/;
   const blogr = /^\/blog\/20[2-7][0-9]\/[01][0-9]\/[0-3][0-9]\/[a-z_-]+$/;
+  const authorr = /^\/authors\/([a-z-]+)$/;
   const lp = d.createElement('a');
   function whenceContent(referrer,r,l,m){
     lp.href=referrer;l=d.location;
-    if (lp.host!=l.host) return null;
-    if (referrer) r=lp.pathname; else r='';
+    r=(referrer&&lp.host==l.host)?lp.pathname:'';
     if (r == '/search/') return "Search Results";
     if (r == '/library/highlights') return "Highlights";
     if (r == '/content/random/') return "Randomizer";
     if (r == '/exclusive/') return "Exclusive Content";
-    l = l.pathname; m = l.match(tagr) || r.match(tagr);
+    l = l.pathname;
+    m = l.match(tagr) || r.match(tagr);
     if(m) return "Tag Page: "+m[1];
     m = l.match(courser) || r.match(courser);
     if(m) return "Course: "+m[1];
@@ -38,15 +39,17 @@ const BuggyTracker = function (d) {
     if(m) return "Master "+m[1]+" List";
     m = r.match(/^\/content\/([a-z]+)\/([a-z0-9_-]+)$/);
     if(m) return "Related Content";
-    m = r.match(publisherr);
+    m = l.match(publisherr) || r.match(publisherr);
     if(m) return "Publisher Page";
-    m = r.match(/^\/authors\/([a-z-]+)$/);
+    m = l.match(authorr) || r.match(authorr);
     if(m) return "Author Page";
-    m = r.match(seriesr);
+    m = l.match(seriesr) || r.match(seriesr);
     if(m) return "Series Page";
-    m = r.match(journalr);
+    m = l.match(journalr) || r.match(journalr);
     if(m) return "Journal Page";
-    return null;
+    if (!referrer) return 'Directly → '+l.pathname;
+    if (lp.host!=l.host) return lp.hostname+" → "+l.pathname;
+    return (l==r)?(r):(r+" → "+l);
   }
   function linkInfo(link,l,p,gp,m){
     l=d.location.pathname;p=link.parentElement;gp=p.parentElement;
@@ -124,10 +127,10 @@ const BuggyTracker = function (d) {
       ];
     }else{
       categories=linkInfo(link);
-      if (!categories[2]) categories[2] = 'Main External URL';
+      categories[2] ||= 'Main External URL';
       categories.unshift('External Link');
     }
-    if (!categories[4]) categories[4]=inferLinkType(link);
+    categories[4] ||= inferLinkType(link);
     this.sendEvent(oid,value,categories);
   }};
   d.addEventListener("click", this, {useCapture: true});
