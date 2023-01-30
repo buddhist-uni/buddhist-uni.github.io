@@ -176,6 +176,9 @@ Accepting our faults is a critical starting point for ethical development, and a
 - A rather remarkable sutta, in which the Buddha admits that it's often painful to strictly follow the precepts.
 - Given that following the precepts sometimes leads to pain, why does the Buddha still recommend them?
 
+{% include content_blurb.html category="canon" slug="sn1.78" %}
+- Shantideva wishes in this chapter to become "the very medicine itself" for sentient beings, but here the Buddha tells us *not* to "give away" ourselves. How do you understand this contradiction?
+
 {% include content_blurb.html category="booklets" slug="dana_bodhi-et-al" %}
 - The corner stone of Buddhist morality is generosity, for all other virtues start in its renunciation and care for others. But clearly there are better and worse ways to give, as rich people often demonstrate. What factors make giving better or worse?
 
