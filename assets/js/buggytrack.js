@@ -54,26 +54,26 @@ const BuggyTracker = function (d) {
   function linkInfo(link,l,p,gp,m){
     l=d.location.pathname;p=link.parentElement;gp=p.parentElement;
     m=l.match(publisherr);
-    if(m && p.tagName=='H3') return ['publishers', m[1]];
+    if(m && p.tagName=='H3') return ['publishers', m[1], 'html'];
     m=l.match(seriesr);
     if(m && p.tagName=='H3') return ['series', m[1]];
     m=l.match(journalr);
-    if(m && p.tagName=='H3') return ['journals', m[1]];
+    if(m && p.tagName=='H3') return ['journals', m[1], 'html'];
     if(p.className=='courselink' && l=='/courses/')
       return ['courses', 'external_courses'];
-    if(link.className=='f3' && l=='/courses/') return ['courses', 'mit_courses'];
-    if(gp.className=='social-media-list') return ['marketing', 'social_media_links', link.hostname];
-    if(gp.className=='contact-list') return ['marketing', 'contact_links', temp1.pathname];
+    if(link.className=='f3' && l=='/courses/') return ['courses', 'mit_courses', 'html'];
+    if(gp.className=='social-media-list') return ['marketing', 'social_media_links'];
+    if(gp.className=='contact-list') return ['marketing', 'contact_links'];
     if(gp.tagName=='UL' && l=='/sources/')
       return [
         link.closest('div').getAttribute('data-link-type'),
         link.getAttribute('data-slug') || link.text,
-        'Sources Page Link'
+        'html'
       ];
-    return ['Generic Links', d.location.pathname, (link.closest('header'))?'Header Link':'Body Link'];
+    return ['Generic Links', d.location.pathname];
   }
   function inferLinkType(link){
-    if (link.host.startsWith('youtu')) return 'YouTube';
+    if (link.host.startsWith('youtu')) return 'YouTube (link)';
     switch (link.pathname.slice(-4)) {
       case '.htm': return 'htm';
       case 'html': return 'html';
@@ -122,14 +122,15 @@ const BuggyTracker = function (d) {
         'Content',
         category,
         link.getAttribute('data-content-course'),
-        link.getAttribute('data-content-link-type'),
+        null,
         link.getAttribute('data-content-link-ext')
       ];
     }else{
       categories=linkInfo(link);
-      categories[2] ||= 'Main External URL';
+      categories.splice(2,0,null);
       categories.unshift('External Link');
     }
+    categories[3] = link.host || link.pathname;
     categories[4] ||= inferLinkType(link);
     this.sendEvent(oid,value,categories);
   }};
