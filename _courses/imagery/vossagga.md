@@ -9,6 +9,7 @@ description: "Enlightenment is not another item on our todo list. It is the erra
 
 ### Suttas
 <p>
+{% include content_blurb.html category="canon" slug="sn1.1" %}
 {% include content_blurb.html category="canon" slug="an4.178" %}
 {% include content_blurb.html category="canon" slug="snp5.4" %}
 {% include content_blurb.html category="canon" slug="snp1.2" %}
