@@ -77,7 +77,7 @@ const BuggyTracker = function (d) {
     return ['Generic Links', l];
   }
   function inferLinkType(link){
-    if (link.host.startsWith('youtu')) return 'YouTube (link)';
+    if (link.host.includes('youtu')) return 'YouTube (link)';
     switch (link.pathname.slice(-4)) {
       case '.htm': return 'html';
       case 'html': return 'html';

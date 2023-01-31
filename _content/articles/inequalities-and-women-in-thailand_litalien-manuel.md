@@ -2,7 +2,7 @@
 title: "Social Inequalities and the Promotion of Women in Buddhism in Thailand"
 authors:
   - "Manuel Litalien"
-external_url: "http://blogs.dickinson.edu/buddhistethics/files/2018/08/Litalien-Social-Inequality-Thailand-final.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2018/08/Litalien-Social-Inequality-Thailand-final.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1mlL3S2cNGQ7Sa8YAl2Jo1uiUvbC6oQHq/view?usp=drivesdk"
 status: featured
