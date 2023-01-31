@@ -19,15 +19,8 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sag
 ---
 
 <script>
-function goto(u,v) {
-   try {
-     let w = Math.floor(v);
-     ga('send','event','Outbound Link','click',u,(Math.random()<v-w)?Math.ceil(v):w);
-     window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':u,'revenue_value':v,'currency':'USD'});
-     gtag('event', 'click', {outbound: true, link_url: u, link_domain: u.split('/')[2], link_classes: 'courselistitem', link_id: '', link_text: ''});
-     buggytrack.sendEvent(u,v,['External Link','courses','external_courses',u.split('/')[2],'Unknown/HTML']);
-   } catch(e) { console.error(e); }
-   location.href=u;
+function goto(u) {
+  document.querySelector('a[href="'+u+'"]').click();
 }
 </script>
 
@@ -82,23 +75,23 @@ This site may use cookies to enhance your experience, but you can turn this off 
 
 Courses hosted on other websites.
 {% comment %}Note that the .courselink classes below are used by buggytrack.js{% endcomment %}
-### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6"}
+### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6" data-content-authors="analayo"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm' ,0.6)" class="cicon"><i class="fas fa-mountain"></i></div>
+    <div onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm')" class="cicon"><i class="fas fa-mountain"></i></div>
     <div class="cdesc">The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>
 </div>
 
-### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5"}
+### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5" data-content-authors="Frances Garrett"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://www.nettletibetan.ca/',0.5)" class="cicon"><i class="fas fa-cable-car"></i></div>
+    <div onclick="goto('http://www.nettletibetan.ca/')" class="cicon"><i class="fas fa-cable-car"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
@@ -110,41 +103,41 @@ Courses hosted on other websites.
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://bschawaii.org/shindharmanet/course/',1.5)" class="cicon"><i class="fas fa-street-view"></i></div>
+    <div onclick="goto('http://bschawaii.org/shindharmanet/course/')" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>
 </div>
 
-### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}
+### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3" data-content-authors="Robert Sapolsky"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D',3)" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
+    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D')" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
     <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. This lecture series would go on to become the 2017 NYT best-seller, <i>Behave: The Biology of Humans at Our Best and Worse</i>.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
 
-### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3"}
+### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3" data-content-authors="Al Filreis"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('https://www.coursera.org/learn/modpo',3)" class="cicon"><i class="fas fa-feather-alt"></i></div>
+    <div onclick="goto('https://www.coursera.org/learn/modpo')" class="cicon"><i class="fas fa-feather-alt"></i></div>
     <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the poems, but how to read them.
     This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
   </div>
 </div>
 
-### [The Making of Modern Ukraine](https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_){:ga-event-value="2"}
+### [The Making of Modern Ukraine](https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_){:ga-event-value="2" data-content-authors="Timothy Snyder"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_',2)" class="cicon"><i class="fac-ukraine"></i></div>
+    <div onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_')" class="cicon"><i class="fac-ukraine"></i></div>
     <div class="cdesc">Professor Timothy Snyder gives the deep history of Eastern Europe and the formation of the Ukrainian nation, discussing along the way the big question of why we should study history at all.
     Be sure to check out <a href="https://snyder.substack.com/p/syllabus-of-my-ukraine-lecture-class" target="_blank">the course syllabus too</a> as the readings are an essential part of the course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>

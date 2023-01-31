@@ -54,14 +54,16 @@ const BuggyTracker = function (d) {
   function linkInfo(link,l,p,gp,m){
     l=d.location.pathname;p=link.parentElement;gp=p.parentElement;
     m=l.match(publisherr);
-    if(m && p.tagName=='H3') return ['publishers', m[1], 'html'];
+    if(m) return p.tagName=='H3'?['publishers',m[1],'html']:['Generic Links',m[1]];
     m=l.match(seriesr);
-    if(m && p.tagName=='H3') return ['series', m[1]];
+    if(m) return [p.tagName=='H3'?'series':'Generic Links',m[1]];
     m=l.match(journalr);
-    if(m && p.tagName=='H3') return ['journals', m[1], 'html'];
-    if(p.className=='courselink' && l=='/courses/')
-      return ['courses', 'external_courses'];
-    if(link.className=='f3' && l=='/courses/') return ['courses', 'mit_courses', 'html'];
+    if(m) return p.tagName=='H3'?['journals',m[1],'html']:['Generic Links',m[1]];
+    if(l=='/courses/'){
+      if(p.className=='courselink') return ['courses', 'external_courses'];
+      if(link.className=='f3') return ['courses', 'mit_courses', 'html'];
+      return ['Generic Links','courses'];
+    }
     if(gp.className=='social-media-list') return ['marketing', 'social_media_links'];
     if(gp.className=='contact-list') return ['marketing', 'contact_links'];
     if(gp.tagName=='UL' && l=='/sources/')
@@ -70,12 +72,14 @@ const BuggyTracker = function (d) {
         link.getAttribute('data-slug') || link.text,
         'html'
       ];
-    return ['Generic Links', d.location.pathname];
+    m=l.match(courser)||l.match(tagr)||l.match(authorr);
+    if(m) return ['Generic Links',m[1]];
+    return ['Generic Links', l];
   }
   function inferLinkType(link){
     if (link.host.startsWith('youtu')) return 'YouTube (link)';
     switch (link.pathname.slice(-4)) {
-      case '.htm': return 'htm';
+      case '.htm': return 'html';
       case 'html': return 'html';
       case '.mp3': return 'mp3';
       case '.pdf': return 'pdf';
@@ -91,48 +95,54 @@ const BuggyTracker = function (d) {
     if(!this._uid){this._uid=Math.random()*10000000;localStorage.setItem("uid", this._uid);}
     } return this._uid;
   };
-  this.sendEvent=function(oid,value,categories){gtag('event','purchase',{
-    transaction_id: "T_"+cyrb53(this.getUID()+":"+oid),
-    value: value,
-    items: [{
-      item_id: oid,
-      price: value,
-      item_category: categories[0], 
-      item_category2: categories[1], 
-      item_category3: categories[2], 
-      item_category4: categories[3], 
-      item_category5: categories[4], 
-      item_list_name: whenceContent(d.referrer),
-      item_brand: window.WEBSITE_SECTION
-    }]
-  });};
-  this.handleEvent=function(e,link){link=e.target.closest('a');if(!link) return;
+  this.sendEvent=function(oid,name,value,categories,thost){
+    if (localStorage.getItem(oid+":click")) return; else localStorage.setItem(oid+":click",1);
+    gtag('event','purchase',{
+      transaction_id: "T_"+cyrb53(this.getUID()+":"+oid),
+      value: value,
+      items: [{
+        item_id: oid,
+        item_name: name,
+        price: value,
+        item_category: window.WEBSITE_SECTION+' '+categories[0], 
+        item_category2: categories[1], 
+        item_category3: categories[2], 
+        item_category4: categories[3], 
+        item_category5: categories[4], 
+        item_list_name: whenceContent(d.referrer),
+        item_brand: thost
+      }]
+    });
+  };
+  this.handleEvent=function(e){this.handleClick(e.target.closest('a'));};
+  this.handleClick=function(link){if(!link) return;
    var value = link.getAttribute('ga-event-value')*1;
    if(link.host != d.location.host || value > 0) {
     var cid = link.getAttribute('data-content-path');
     var oid = cid || link.href;
-    if (localStorage.getItem(oid+":click")) return; else localStorage.setItem(oid+":click",1);
     value ||= 0.15;
-    var categories=null;
+    var categories=null,name=null;
     if(cid){
       var category = link.getAttribute('data-content-subcat');
       if (category) category = link.getAttribute('data-content-category')+'/'+category;
       else category = link.getAttribute('data-content-category');
       categories = [
-        'Content',
+        'content',
         category,
         link.getAttribute('data-content-course'),
-        null,
+        link.getAttribute('data-content-authors'),
         link.getAttribute('data-content-link-ext')
       ];
+      name = link.getAttribute('data-content-title');
     }else{
       categories=linkInfo(link);
-      categories.splice(2,0,null);
-      categories.unshift('External Link');
+      categories.splice(2,0,link.getAttribute('data-content-authors')||'(unknown)');
+      categories.unshift('link');
+      name = link.text;
     }
-    categories[3] = link.host || link.pathname;
+    thost = link.host || link.pathname;
     categories[4] ||= inferLinkType(link);
-    this.sendEvent(oid,value,categories);
+    this.sendEvent(oid,name,value,categories,thost);
   }};
   d.addEventListener("click", this, {useCapture: true});
   d.addEventListener("contextmenu", this, {useCapture: true, passive: true});
