@@ -49,13 +49,11 @@
         {%- if jekyll.environment == 'production' and site.google_analytics -%}
         if (!started && event.data == YT.PlayerState.PLAYING) {
             ga('send','event','Video','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0);
-            window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'});
             started = true;
             buggytrack.sendEvent('{{ content_path }}','{{ title }}',{{ site.data.ga.av_start_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}',"{{ record.authors | join: ", " }}",'Embedded YouTube Video'],'youtu.be');
         }
         if (event.data == YT.PlayerState.ENDED) {
             ga('send','event','Video','finish','{{ content_path }}',{{ site.data.ga.av_end_val }});
-            window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'});
             buggytrack.sendEvent('{{ content_path }}#end','{{ title }}',{{ site.data.ga.av_end_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}',"{{ record.authors | join: ", " }}",'Embedded YouTube Video'],'youtu.be');
         }
         {%- else -%}
@@ -78,8 +76,8 @@
     preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); window.uetq = window.uetq || []; window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_start_val }},'currency':'USD'}); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: (100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});buggytrack.sendEvent('{{ content_path }}','{{ title }}',{{ site.data.ga.av_start_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
-    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }}); window.uetq.push('event','c',{'event_category':'ol','event_label':'{{ content_path }}','revenue_value':{{ site.data.ga.av_end_val }},'currency':'USD'}); gtag('event', 'video_complete', {{ gtagdata }});buggytrack.sendEvent('{{ content_path }}#end','{{ title }}',{{ site.data.ga.av_end_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
+    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: (100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});buggytrack.sendEvent('{{ content_path }}','{{ title }}',{{ site.data.ga.av_start_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
+    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ content_path }}',{{ site.data.ga.av_end_val }}); gtag('event', 'video_complete', {{ gtagdata }});buggytrack.sendEvent('{{ content_path }}#end','{{ title }}',{{ site.data.ga.av_end_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
     ontimeupdate="Math.random()<0.00390625?gtag('event', 'video_progress', {{ gtagdata }}):undefined"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">
