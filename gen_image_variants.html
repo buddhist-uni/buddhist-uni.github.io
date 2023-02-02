@@ -31,7 +31,7 @@ cat .out
 {% endif %}{% endfor %}
 
 echo "====BUDDHISM+FUNCTION COURSE IMAGES===="
-{% assign pages = site.courses | where_exp: "p", "p.image contains sourceurl and p.part_of_course contains 'u'" %}{% comment %}UGLY FRAGILE HACK as "imagery" happens to not contain a 'u' while buddhism and function do not{% endcomment %}
+{% assign pages = site.courses | where_exp: "p", "p.image contains sourceurl and p.part_of_course contains 'u'" %}{% comment %}UGLY FRAGILE HACK as "imagery" happens to not contain a 'u' while buddhism and function do{% endcomment %}
 mkdir "{{outdir}}buddhism"
 mkdir "{{outdir}}function"
 {%- for p in pages -%}

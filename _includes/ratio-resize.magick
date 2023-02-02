@@ -6,7 +6,7 @@
         tfname - the target filename
         last   - -write to file unless last
     Outputs:
-        an ImageMagick command for resizing "mpr:orig" to $twX$th -> $tfname
+        an ImageMagick command for resizing to $twX$th -> $tfname
 {%- endcomment -%}
 {%- assign tr = include.th | plus: 0.0 -%}{%- assign tr = include.tw | divided_by: tr -%}
 {%- assign ar = include.ah | plus: 0.0 -%}{%- assign ar = include.aw | divided_by: ar -%}

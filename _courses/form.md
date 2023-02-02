@@ -495,6 +495,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
 - A beautiful sermon on the value of monasticism.
 
+{% include content_blurb.html category="canon" slug="sn6.13" %}
+- Brahma Sahampati praises those enlightened renunciants from whom blessings flow.
+
 {% include content_blurb.html category="av" slug="making-buddha-statues-cultivation_drba" %}
 - A video about a community coming together to make ten thousand Buddha statues by hand.
 
