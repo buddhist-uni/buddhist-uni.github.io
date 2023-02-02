@@ -5,7 +5,7 @@ authors: ["Raj Patel"]
 year: 2020
 month: jan
 external_url: "https://newbooksnetwork.com/raj-patel-a-history-of-the-world-in-seven-cheap-things-u-california-press-2017"
-course: world
+course: wider
 status: featured
 tags:
   - capitalism
