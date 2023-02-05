@@ -76,7 +76,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '{{ site.GA4 }}', {'currency':'USD'});
+      gtag('config', '{{ site.GA4 }}', {'currency':'USD','content_group':'{{ page.section }}'});
     }
     </script>
   {%- endif -%}{%- if page.banner_info or page.footer_info -%}
@@ -89,7 +89,7 @@
        @media((max-width: 720px) and (max-resolution: 1.3dppx)){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
        @media(max-width: 480px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-400-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
        @media((min-width: 1600px) or ((min-width: 1280px) and (min-resolution: 1.25dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-       @media(((min-width: 800px) and (min-resolution: 2dppx)) or ((min-width: 533px) and (min-resolution: 3dppx)) or ((min-width: 1066px) and (min-resolution: 1.5dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-2x.webp" }}"), url("{{ dynimg | replace: ".webp", "-1920-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
+       @media(((min-width: 800px) and (min-resolution: 2dppx)) or ((min-width: 533px) and (min-resolution: 3dppx)) or ((min-width: 1066px) and (min-resolution: 1.5dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
        @media((min-width: 2400px) or ((min-width: 1200px) and (min-resolution: 2dppx)) or ((min-width: 800px) and (min-resolution: 3dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-2880-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
   {%- else -%}
     .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
