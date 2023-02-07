@@ -35,30 +35,6 @@ jobs:
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
-      - name: Push Img Deriver # Lovingly ripped off @cpina
-        env:
-          SSH_DEPLOY_KEY: ${{ secrets.DERIVED_IMGS_SSH_KEY }}
-          EMAIL: theopenbuddhistuniversity@gmail.com
-        run: |
-            mkdir --parents "$HOME/.ssh"
-            DEPLOY_KEY_FILE="$HOME/.ssh/deploy_key"
-            echo "${SSH_DEPLOY_KEY}" > "$DEPLOY_KEY_FILE"
-            chmod 600 "$DEPLOY_KEY_FILE"
-            SSH_KNOWN_HOSTS_FILE="$HOME/.ssh/known_hosts"
-            ssh-keyscan -H "github.com" > "$SSH_KNOWN_HOSTS_FILE"
-            export GIT_SSH_COMMAND="ssh -i "$DEPLOY_KEY_FILE" -o UserKnownHostsFile=$SSH_KNOWN_HOSTS_FILE"
-            GIT_CMD_REPOSITORY="git@github.com:buddhist-uni/derived-imgs.git"
-            CLONE_DIR=$(mktemp -d)
-            git config --global user.email "$EMAIL"
-            git config --global user.name "buddhist-uni"
-            git clone --single-branch --depth 1 --branch main "$GIT_CMD_REPOSITORY" "$CLONE_DIR"
-            cd "$CLONE_DIR"
-            ls -la .
-            mv $BUILD_DIR/gen_image_variants.bash ./
-            git add .
-            git status
-            git diff-index --quiet HEAD || git commit -m "Lastest build script from build ${{ github.run_id  }}"
-            git push "$GIT_CMD_REPOSITORY" --set-upstream main
       - name: Purge CSS
         run: |
           shopt -s globstar

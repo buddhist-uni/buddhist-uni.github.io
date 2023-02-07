@@ -3,7 +3,7 @@ title: "The Buddha"
 subtitle: A Course Syllabus
 icon: "fas fa-hand-holding"
 image: "https://illeakyw.sirv.com/Images/banners/dipankara-sumedha.jpg"
-big_image: "https://github.com/buddhist-uni/original_size_imgs/raw/main/dipankara-sumedha.jpg"
+big_image: "https://github.com/buddhist-uni/big_imgs/raw/main/banners/courses/dipankara-sumedha.jpg"
 big_width: 2415
 big_height: 1274
 image_width: 2415

@@ -84,14 +84,16 @@
   <style>
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
-    {% if page.big_image %}{%- assign dynimg = page.big_image | split: "/" | last | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.JPG', '.webp' %}{% assign dynimg = site.data.content.filehost | append: "derived-imgs/banners/" | append: dynimg -%}
-       .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-2x.webp" }}"), url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; }
-       @media((max-width: 720px) and (max-resolution: 1.3dppx)){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-640-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-       @media(max-width: 480px){ .{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-400-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-       @media((min-width: 1600px) or ((min-width: 1280px) and (min-resolution: 1.25dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-1x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-       @media(((min-width: 800px) and (min-resolution: 2dppx)) or ((min-width: 533px) and (min-resolution: 3dppx)) or ((min-width: 1066px) and (min-resolution: 1.5dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-1920-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-       @media((min-width: 2400px) or ((min-width: 1200px) and (min-resolution: 2dppx)) or ((min-width: 800px) and (min-resolution: 3dppx))) { .{{ classname}} { background-image: {{ overlay }}, url("{{ dynimg | replace: ".webp", "-2880-2x.webp" }}"), {{ site.data.banner.loading_state }}; } }
-  {%- else -%}
+    {%- if page.big_image %}
+       {%- assign dynimg = page.image | split: "/" | last | replace: '.webp', '-[WIDTH]-[DPPX]x.webp' | replace: '.jpg', '-[WIDTH]-[DPPX]x.webp' | replace: '.jpeg', '-[WIDTH]-[DPPX]x.webp' | replace: '.JPG', '-[WIDTH]-[DPPX]x.webp' %}{% assign dynimg = site.data.content.filehost | append: "big_imgs/banners/" | append: dynimg -%}
+       {%- capture singlecss -%}.{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: "[DPPX]", 1 }}"), {{ site.data.banner.loading_state }}; }{%- endcapture -%}
+       {%- capture doublecss -%}.{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: "[DPPX]", 2 }}"), url("{{ dynimg | replace: "[DPPX]", 1 }}"), {{ site.data.banner.loading_state }}; }{%- endcapture -%}
+       {{ doublecss | replace: "[WIDTH]", site.data.banner.widths[0] }}
+       @media(max-resolution: 1.9dppx) { {{ singlecss | replace: "[WIDTH]", site.data.banner.widths[0] }} }
+       {% for bwidth in site.data.banner.widths %}{% if forloop.first %}{% continue %}{% endif %}
+        @media(min-width: {{ site.data.banner.min_widths[forloop.index0] }}px) { {{ singlecss | replace: "[WIDTH]", bwidth }} {% if page.big_width < site.data.banner.twox_widths[forloop.index0] %}}{% break %}{% endif %}
+          @media(min-resolution: 2dppx) { {{ doublecss | replace: "[WIDTH]", bwidth }} } }{% endfor %}
+ {%- else -%}
     .{{ classname }} { background-image: {{ overlay }}, url("{{ page.image }}?{{ page.sirv_options | default: site.data.banner.sirv_options }}"), {{ site.data.banner.loading_state }}; }
   {%- endif -%}</style>{% endif %}
 </head>

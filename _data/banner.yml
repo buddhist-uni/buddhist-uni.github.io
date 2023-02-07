@@ -1,7 +1,12 @@
-max_stretch: 1.25
+max_stretch: 1.2
 loading_state: linear-gradient(lightgray, lightgray)
-# The reason we don't put the overlay in sirv is that large images are served from the source
 overlay: "linear-gradient(#5E241732, #5E241750)"
-sirv_options: blur=1
 footer_overlay: "linear-gradient(rgba(253,253,253,1), rgba(253,253,253,.3), #5555, #5558, #111C)"
+# these need to stay in sync with big_imgs/build.py:BannerImageDeriver
+widths: [400, 594, 881, 1308, 1940, 2880, 4274, 6343]
+min_dpp: 1.75
+# multiply the above together for convenience:
+twox_widths: [700, 1040, 1542, 2289, 3395, 5040, 7480, 11100]
+# multiply by max_stretch here for convenience:
+min_widths: [0, 480, 712, 1057, 1569, 2329, 3456, 5129, 7612]
 
