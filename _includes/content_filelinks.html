@@ -1,7 +1,6 @@
 {% include content_path.liquid content=include.content %}
-<div class="content_links">
-     {% if include.content.external_url %}
-        {% assign linkfmt = "" %}
+<div class="content_links">{% if page.collection == "content" %}Get it:{% endif %}
+     {% if include.content.external_url %}{% assign linkfmt = "" %}
         {%- capture linkbody -%}<i class="fa{% if include.content.external_url contains "youtu" %}{% assign linkfmt = "YouTube (link)" %}b fa-youtube"></i> YouTube{% elsif include.content.external_url contains "//www.academia.edu/" %}c-academia"></i>cademia.edu{% assign linkfmt = "Academia.edu" %}{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".pdf" %}{% assign linkfmt = "pdf" %}file-pdf"></i> pdf{% elsif ext == ".mp3" %}{% assign linkfmt = "mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}{% assign linkfmt = "zip" %}file-archive"></i> zip{% else %}{% if ext == ".htm" %}{% assign linkfmt = "html" %}{% elsif ext == "html" %}{% assign linkfmt = "html" %}{% endif %}{% case include.content.category %}{% when "av" %}volume-up{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}{%- endcapture -%}
         <a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a>
     {% endif %}

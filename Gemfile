@@ -18,7 +18,7 @@ gem "jekyll", "~> 4.2.0"
 group :jekyll_plugins do
   gem "jekyll-feed", github: 'buddhist-uni/jekyll-feed', branch: 'collection-tags'
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", branch: 'obu-custom-seo'
+  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", ref: '644037c'
   gem "jekyll-last-modified-at", github: "buddhist-uni/jekyll-last-modified-at", branch: 'post-date'
   gem 'jekyll-include-cache'
 end

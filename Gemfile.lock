@@ -17,8 +17,8 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-seo-tag.git
-  revision: bd197620a6d2e15febae2ed9871a18116844146e
-  branch: obu-custom-seo
+  revision: 644037c4bdc815bbd973bb2aad139428d0a2eea7
+  ref: 644037c
   specs:
     jekyll-seo-tag (2.7.1)
       jekyll (>= 3.8, < 5.0)
