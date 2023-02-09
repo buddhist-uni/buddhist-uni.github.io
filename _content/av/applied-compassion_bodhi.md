@@ -1,7 +1,7 @@
 ---
 title: "Applied Compassion"
 authors: [bodhi]
-external_url: "http://www.karunabv.org/uploads/1/2/6/3/12630738/__applying_compassion_bbodhi_110312.mp3"
+external_url: "https://www.karunabv.org/uploads/1/2/6/3/12630738/__applying_compassion_bbodhi_110312.mp3"
 drive_links: ["https://drive.google.com/file/d/1WWNWWk9JwMpNmnJQyv98KpYLHl1b5bZX/view?usp=drivesdk"]
 course: engaged
 tags:
