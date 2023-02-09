@@ -1,7 +1,7 @@
 ---
 title: "Pilgrimage"
 parents: [form]
-sortkey: 9
+sortkey: 13
 status: published
 illustration: https://illeakyw.sirv.com/Images/tags/mahabodhi-meditating.jpeg
 illustration_center_x: 63%

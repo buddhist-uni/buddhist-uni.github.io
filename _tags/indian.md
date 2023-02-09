@@ -1,8 +1,8 @@
 ---
 title: "Early Indian Buddhism"
 status: published
-parents: [form]
-sortkey: 7
+parents: [roots]
+sortkey: 12
 illustration: https://illeakyw.sirv.com/Images/tags/Ashokan_Pillar_Vaishali.jpg
 illustration_height: 1024
 illustration_width: 576

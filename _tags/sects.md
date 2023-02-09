@@ -2,7 +2,6 @@
 title: "Early Sects"
 parents: [indian]
 status: published
-level: 4
 illustration: https://illeakyw.sirv.com/Images/tags/stupa-worship.jpeg
 illustration_width: 1280
 illustration_height: 830

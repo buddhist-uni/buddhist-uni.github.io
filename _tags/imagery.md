@@ -1,7 +1,7 @@
 ---
 title: "Imagery in the EBTs"
 status: published
-sortkey: 4
+sortkey: 8
 level: 3
 parents: [ebts, philosophy]
 illustration: https://illeakyw.sirv.com/Images/tags/first-sermon-stele.jpg

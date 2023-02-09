@@ -1,5 +1,5 @@
 ---
 title: "Theravādan Monasticism"
 status: unpublished
-parents: [monastic, theravada]
+parents: [theravada, monastic]
 ---

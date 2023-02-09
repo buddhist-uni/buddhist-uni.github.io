@@ -1,5 +1,5 @@
 ---
 title: "Mahāyāna Monasticism"
 status: unpublished
-parents: [monastic, mahayana]
+parents: [mahayana, monastic]
 ---

@@ -3,7 +3,7 @@ title: "Monastic Buddhism"
 status: published
 description: A bibliography of free works introducing the purpose behind Buddhist Monasticism and how monks live.
 sortkey: 5
-parents: [form]
+parents: [sangha]
 illustration: https://illeakyw.sirv.com/Images/tags/rainbow-umbrella-nun.jpeg
 illustration_center_y: 37%
 illustration_center_x: 70%

@@ -84,6 +84,9 @@ div.tag-list3:last-child {
 .tag-list4:has(.children4) .tagbox4 {
     padding: 2px 4px $spacing-unit 4px;
 }
+.tag-list4:not(:has(.children4)) .tagbox4 {
+    padding: 2px 4px;
+}
 .tag-list5:has(.children5) {
     border: 1px solid gray;
 }
