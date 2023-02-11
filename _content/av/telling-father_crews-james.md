@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2021/06/28/303-telling-my-father"
-course: social
+course: groups
 status: featured
 tags:
   - lgbt

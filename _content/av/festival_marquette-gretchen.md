@@ -5,9 +5,9 @@ authors:
 subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2020/04/13/361-song-for-the-festival"
-course: social # 2.5⭐
 tags:
   - desire
+  - social
 year: 2020
 month: apr
 series: slowdown
