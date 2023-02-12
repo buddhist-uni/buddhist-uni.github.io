@@ -1,6 +1,6 @@
 ---
 ---
-@use "sass:math";
+
 @import "support";
 
 article.course {
@@ -26,7 +26,7 @@ article.course .post-header p {
 }
 
 .epigraph blockquote {
-    padding: math.div($spacing-unit, 2) $spacing-unit;
+    padding: $spacing-unit/2 $spacing-unit;
     border: 4px solid $grey-color-light;
     width: auto;
 }
