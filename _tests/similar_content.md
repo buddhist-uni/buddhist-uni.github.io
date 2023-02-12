@@ -1,6 +1,7 @@
 ---
 title: "Content Similarity Algorithm Tests"
 test_cases:
+    - [drop-off_twomey-molly, raincoat_limon-ada]
     - [arts-of-living-on-a-damaged-planet, timefulness_bjornerud]
     - [baraka_fricke-ron, repetition_cooper-mcgloughlin]
     - [short-history-of-nearly-everything_bryson-bill, burden-of-proof_gladwell-m]
