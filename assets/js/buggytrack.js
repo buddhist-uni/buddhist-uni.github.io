@@ -16,6 +16,7 @@ const BuggyTracker = function (d) {
   const tagr = /^\/tags\/([a-z-]+)[\/]?$/;
   const seriesr = /^\/publishers\/([a-z-]+)$/;
   const journalr = /^\/journals\/([a-z-]+)$/;
+  const contentr = /^\/content\/([a-z]+)\/([a-z0-9_-]+)$/;
   const courser = /^\/courses\/([a-z_-]+)[\/]?([a-z0-9_-]*)$/;
   const publisherr = /^\/publishers\/([a-z-]+)$/;
   const blogr = /^\/blog\/20[2-7][0-9]\/[01][0-9]\/[0-3][0-9]\/[a-z_-]+$/;
@@ -37,7 +38,7 @@ const BuggyTracker = function (d) {
     if(m) return "Blog Post";
     m = r.match(/^\/content\/([a-z]+)\/$/);
     if(m) return "Master "+m[1]+" List";
-    m = r.match(/^\/content\/([a-z]+)\/([a-z0-9_-]+)$/);
+    m = r.match(contentr);
     if(m) return "Related Content";
     m = l.match(publisherr) || r.match(publisherr);
     if(m) return "Publisher Page";
@@ -47,6 +48,7 @@ const BuggyTracker = function (d) {
     if(m) return "Series Page";
     m = l.match(journalr) || r.match(journalr);
     if(m) return "Journal Page";
+    if(l.match(contentr)) l = "Content Page";
     if (!referrer) return 'Direct → '+l;
     if (lp.host!=d.location.host) return lp.hostname+" → "+l;
     return l==r?r:r+" → "+l;

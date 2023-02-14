@@ -21,6 +21,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](http://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
 * [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html){:data-slug="yuttadhammo"}
 * [Bhante S. Dhammika's writing at "BudBlooms"](http://budblooms.org/){:data-slug="dhammika"}
+  * and [his old blog](https://sdhammika.blogspot.com/) (now discontinued)
 * [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/){:data-slug="rf"}
 * [BuddhaDust](http://buddhadust.net){:data-slug="Mike Olds"}
   - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks){:data-slug="subhuti"}

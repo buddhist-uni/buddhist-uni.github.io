@@ -20,7 +20,7 @@ next_courses:
 next_course_descs:
   - "In this course, we illuminate and inhabit the thought world of the Buddha by continuing our close examination of the language, images, and metaphors of 24 other key doctrinal terms from the Early Buddhist Texts."
   - "Bhikkhu Analayo walks us through a chapter of the Madhyama Āgama on the subject of how tranquility and insight work together to lead the mind to maturity."
-  - "A course by Bhikkhu Ñāṇananda on Dependant Origination and the unraveling of Saṃsāra."
+  - "A course by Bhikkhu Ñāṇananda on Dependent Origination and the unraveling of Saṃsāra."
 epigraph: |
   > "This song is for the soil  
   > That's toxic clear down to the bedrock  
@@ -120,7 +120,7 @@ And if you're still thinking that Nirvana is some heaven realm somewhere...
 
 ### Part 2: Terrain
 
-This is the main section of the course. We'll cover the rest of _Metaphor and Literalism_ and the core philosophical dimentions of *nibbāna*.
+This is the main section of the course. We'll cover the rest of _Metaphor and Literalism_ and the core philosophical dimensions of *nibbāna*.
 
 #### This, That, and Other Things
 

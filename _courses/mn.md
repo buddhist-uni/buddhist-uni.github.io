@@ -1,7 +1,7 @@
 ---
 title: "The Majjhima Nikāya"
 subtitle: "The Middle Length Discourses of the Buddha"
-description: "A rigerous tour of the Majjhima Nikāya led by Bhikkhu Bodhi and supplemented by the excellent comparative scholarship of Bhikkhu Anālayo, this course will give you an excellent grounding in the most readable and important of the Early Buddhist Texts."
+description: "A rigorous tour of the Majjhima Nikāya led by Bhikkhu Bodhi and supplemented by the excellent comparative scholarship of Bhikkhu Anālayo, this course will give you an excellent grounding in the most readable and important of the Early Buddhist Texts."
 lecturers:
   - bodhi
 time: 20

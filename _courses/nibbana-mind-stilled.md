@@ -28,13 +28,13 @@ next_course_descs:
 
 ## What is the Stilling of the Mind?
 
-The core of dependant origination is the reciprocal relationship between consciousness and name-and-form. We think that we exist because we feel like we exist and we feel like we exist because we think we do.
+The core of dependent origination is the reciprocal relationship between consciousness and name-and-form. We think that we exist because we feel like we exist and we feel like we exist because we think we do.
 
 Unraveling this self-perpetuating feedback loop requires significant effort to cut through our conceptual layers to see the reality of our experience unfiltered by ignorance. When ignorance is broken through, the activity of name-and-form completely stops and consciousness is unconditioned. This, just this, is the cessation of suffering.
 
 ## Prerequisites
 
-This is an advanced course which assumes considerable prior engagement with [the Pali Suttas]({% link _tags/sutta.md %}) and [Buddhist Philosophy]({% link _courses/philosophy.md %}) (in particular {% include tag-link.html tag="origination" text="Dependant Origination" %} and {% include tag-link.html tag="psychology" text="Buddhist Psychology" %}).
+This is an advanced course which assumes considerable prior engagement with [the Pali Suttas]({% link _tags/sutta.md %}) and [Buddhist Philosophy]({% link _courses/philosophy.md %}) (in particular {% include tag-link.html tag="origination" text="Dependent Origination" %} and {% include tag-link.html tag="psychology" text="Buddhist Psychology" %}).
 
 ## Textbook
 
@@ -50,7 +50,7 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 
 ## Course Instructions
 
-[The course](https://drive.google.com/file/d/1-qnX1F6M3gxKQ2hCBeNhY15U6yHv1vdL/view?usp=sharing) procedes linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
+[The course](https://drive.google.com/file/d/1-qnX1F6M3gxKQ2hCBeNhY15U6yHv1vdL/view?usp=sharing) proceeds linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
 
 Of course, meditation and reflection "outside of class" is encouraged. As ever, if you have any questions, feel free to post on [DhammaWheel](https://www.dhammawheel.com/viewforum.php?f=13&sid=f7aa6f1d326313d8ef96bc802fb6ae02){:target="_blank"} or [SuttaCentral](https://discourse.suttacentral.net/t/bhikkhu-analayos-e-learning-course-on-the-nibbana-sermons-by-bhikkhu-katukurunde-na-ananda/3321/){:target="_blank" ga-event-value="0.6"}.
 

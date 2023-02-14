@@ -28,7 +28,7 @@ next_course_descs:
 
 Starting with haphazard translations of Indian Sutras and culminating in majestic works of literature and philosophy, texts written in Chinese characters have long been crucial to the development of Buddhism in China---and by extension all of East Asia.
 
-But Sanskrit and Pali are very different languages from Chinese. Chinese is not inflected, largely monosyllabic and has a vastly different phonology and cosmology.  This made the job of translating Indian Sutras into Chinese writing very difficult, and thus makes our job decyphering their work just as tricky.
+But Sanskrit and Pali are very different languages from Chinese. Chinese is not inflected, largely monosyllabic and has a vastly different phonology and cosmology.  This made the job of translating Indian Sutras into Chinese writing very difficult, and thus makes our job deciphering their work just as tricky.
 
 But, just as translating the Buddha's words into Chinese enriched Chinese society, so too do the Chinese Buddhist Texts enrich ours when translated into English. 
 
@@ -48,7 +48,7 @@ For a quick introduction to how Indian Buddhist Texts were translated into Chine
 
 The course is, as mentioned above, largely a copy-paste of John Kieschnick's excellent (currently six volume!) [_Primer in Chinese Buddhist Writings_]({% link _series/buddhist-chinese-primer_kieschnick.md %}).
 
-It procedes in four parts, corresponding to his three numbered volumes followed by the three supplemental volumes.
+It proceeds in four parts, corresponding to his three numbered volumes followed by the three supplemental volumes.
 
 ### Volume 1: Foundations
 
@@ -92,6 +92,6 @@ Volume 3 (whose structure should, by now, be very familiar!) should be completed
 
 ## Continuing Study
 
-As we wrap up, I'd like to give a brief shoutout here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank" ga-event-value="1"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
+As we wrap up, I'd like to give a brief shout-out here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank" ga-event-value="1"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
 
 祝你一路順利! 

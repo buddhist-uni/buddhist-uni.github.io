@@ -14,7 +14,7 @@ epigraph: |
   > "As to that, Sandaka, I shall give you a simile..."  
   ~ [MN 76](/content/canon/mn76)
 time: 2
-description: "A rigerous tour of key words and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhethoric it deployed. This course also serves as an introduction to Pāli for nonspecialists."
+description: "A rigorous tour of key words and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhetoric it deployed. This course also serves as an introduction to Pāli for nonspecialists."
 part_header: "This is part # of a course going through the similes and metaphors of the Buddha."
 toc:
   - ['what-is', 'What is Imagery in the Early Buddhist Texts?']

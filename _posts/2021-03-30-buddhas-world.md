@@ -10,7 +10,7 @@ In [Buddha's India](/tags/setting), I've highlighted works that help explain the
 
 Buddhism itself, of course, also adapted in the centuries since its founder. Considering the diversity of early Buddhist schools, it may be tempting to project the current diversity of Buddhism back onto ancient India, but Florin Deleanu points out that this may be mistaken in his excellent [overview of the *Śrāvakabhūmi*](/content/articles/meditation-and-liberation-in-the-sravakabhumi_deleanu-florin), a meditation manual preserved by a Mahayana school which closely parallels the *Visuddhimagga*. The differences are minor, but telling.
 
-There is more to say about Indian Buddhism, of course, but I'll save some for next month. So, for now, I'll just leave you with this facinating [Chemical History of a Candle](/content/av/chemical-history-of-a-candle): one of my favorite science videos on YouTube. Not related to anything, just thought I'd share :_)
+There is more to say about Indian Buddhism, of course, but I'll save some for next month. So, for now, I'll just leave you with this fascinating [Chemical History of a Candle](/content/av/chemical-history-of-a-candle): one of my favorite science videos on YouTube. Not related to anything, just thought I'd share :_)
 
 If you have any videos, articles, feedback or anything else _you'd_ like to share, as always, feel free to drop me a line. Until then,
 

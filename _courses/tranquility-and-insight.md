@@ -79,6 +79,6 @@ In addition to the main Madhyama Āgama sutras above, a number of discourses fro
 {% include content_blurb.html category="canon" slug="an10.72" %}
 {% include content_blurb.html category="canon" slug="mn113" %}
 
-As you study these parallel Pāli and Āgama discourses, remember that these two recensions were seperated by thousands of miles and hundreds of years. Note the similarities and differences.  How reliable do you feel the Early Buddhist Texts are now, as records of what the Buddha actually taught?
+As you study these parallel Pāli and Āgama discourses, remember that these two recensions were separated by thousands of miles and hundreds of years. Note the similarities and differences.  How reliable do you feel the Early Buddhist Texts are now, as records of what the Buddha actually taught?
 
 

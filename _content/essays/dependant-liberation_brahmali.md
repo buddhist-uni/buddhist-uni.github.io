@@ -1,5 +1,5 @@
 ---
-title: "Dependant Liberation"
+title: "Dependent Liberation"
 authors: [brahmali]
 year: 2012
 month: mar
