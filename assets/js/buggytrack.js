@@ -50,7 +50,7 @@ const BuggyTracker = function (d) {
     if(m) return "Journal Page";
     if(l.match(contentr)) l = "Content Page";
     if (!referrer) return 'Direct → '+l;
-    if (lp.host!=d.location.host) return lp.hostname+" → "+l;
+    if (lp.host!=d.location.host) return (lp.hostname.includes('.google.')?'Google':lp.hostname)+" → "+l;
     return l==r?r:r+" → "+l;
   }
   function linkInfo(link,l,p,gp,m){

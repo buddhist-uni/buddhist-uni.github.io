@@ -13,7 +13,8 @@ gem "jekyll", "~> 4.3.2"
 # sass-converter 3 uses Dart
 # I haven't found a way yet to make it work on Termux
 # so for now let's limit ourselves to v2.x
-gem "jekyll-sass-converter", ">= 2.0", "< 3.0"
+gem "jekyll-sass-converter", ">= 3.0"
+gem "sass-embedded", ">= 1.58.3"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -37,5 +38,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-# Have to specify this hidden dependency explicitly (iirc also for Termux) 
 gem "webrick", "~> 1.7"
