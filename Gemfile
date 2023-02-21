@@ -8,13 +8,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.2"
-
-# sass-converter 3 uses Dart
-# I haven't found a way yet to make it work on Termux
-# so for now let's limit ourselves to v2.x
-gem "jekyll-sass-converter", ">= 3.0"
-gem "sass-embedded", ">= 1.58.3"
+gem "jekyll", "~> 4.3"
+# our sass code is currently written for converter v3
+gem "jekyll-sass-converter", ">= 3.0", "< 4.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

@@ -97,15 +97,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 4.3.2)
+  jekyll (~> 4.3)
   jekyll-feed!
   jekyll-include-cache
   jekyll-last-modified-at!
-  jekyll-sass-converter (>= 3.0)
+  jekyll-sass-converter (>= 3.0, < 4.0)
   jekyll-seo-tag!
   jekyll-sitemap (~> 1.4.0)
   priority_queue_cxx (~> 0.3.4)
-  sass-embedded (>= 1.58.3)
   tzinfo-data
   webrick (~> 1.7)
 
