@@ -1,7 +1,7 @@
 ---
 title: "Buddhist Meditation: An Anthology of Texts from the Pāli Canon"
 authors:
-  - "Sarah Shaw"
+  - shaw-s
 course: samatha
 tags:
   - sati
