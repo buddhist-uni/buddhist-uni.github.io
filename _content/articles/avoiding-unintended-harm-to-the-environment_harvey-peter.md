@@ -3,7 +3,6 @@ title: >-
     Avoiding Unintended Harm To The Environment And The Buddhist Ethic Of Intention
 authors:
   - harvey
-alternate_url: "http://enlight.lib.ntu.edu.tw/FULLTEXT/JR-AN/an147029.pdf"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/harvey-article1.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1swrsVVdQxHGuGd_xUlznS7OfyIxCaMpm/view?usp=drivesdk"

@@ -2,6 +2,7 @@
 filehost: "https://buddhistuniversity.net/"
 noreferrerhosts:
   - "https://www.shin-ibs.edu"
+  - "https://www.tibethouse.jp"
 
 ### Content Similarity Algorithm Parameters
 ## Number of similar works to recommend
