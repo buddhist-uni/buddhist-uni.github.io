@@ -5,7 +5,7 @@ authors:
   - "Malcolm Gladwell"
 year: 2017
 month: jun
-external_url: "http://revisionisthistory.com/episodes/11-a-good-walk-spoiled"
+external_url: "https://revisionisthistory.com/episodes/11-a-good-walk-spoiled"
 course: class
 tags:
   - power

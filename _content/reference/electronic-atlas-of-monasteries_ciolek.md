@@ -8,7 +8,7 @@ authors:
 subcat: map
 editor: "T. Matthew Ciolek"
 external_url: "http://www.ciolek.com/GEO-MONASTIC/geo-monasteries-home.html"
-source_url: "http://monastic-asia.wikidot.com/"
+source_url: "https://monastic-asia.wikidot.com/"
 base_value: 0.3
 course: form
 tags:

@@ -3,7 +3,7 @@ title: "Tuṇḍilovāda: An Allegedly Non-Canonical Sutta"
 authors: [hallisey-charles]
 external_url: "https://archive.org/download/jpts-xv-1990/Tun%CC%A3d%CC%A3ilova%CC%84da_%20An%20Allegedly%20Non-Canonical%20Sutta%20-%20Charles%20Hallisey_text.pdf"
 drive_links: ["https://drive.google.com/file/d/1amm-6Ysil4DWxoV_deBIvDqv6NYTPGAO/view?usp=drivesdk"]
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_1990_XV.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1990_XV.pdf"
 journal: jpts
 volume: 15
 pages: "155--195"

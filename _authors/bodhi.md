@@ -10,8 +10,8 @@ He was appointed editor of the [Buddhist Publication Society]({% link _publishe
 
 Ven. Bodhi has many important publications to his credit, either as author, translator, or editor, including  *the Majjhima Nikaya*  (co-translated with Ven. Bhikkhu Nanamoli) (1995), *The Connected Discourses of the Buddha* (2000), and [*In the Buddha’s Words*]({% link _content/monographs/in-the-buddhas-words_bodhi.md %}) (2005).
 
-In May 2000 he gave [the keynote address]({% link _content/booklets/buddha-and-his-dhamma_bodhi.md %}) at the United Nations at its first official celebration of Vesak. He returned to the U.S. in 2002 and currently resides at [Chuang Yen Monastery](http://www.baus.org/){:target="_blank"} and teaches there and at [Bodhi Monastery](https://bodhimonastery.org/){:target="_blank"}.
+In May 2000 he gave [the keynote address]({% link _content/booklets/buddha-and-his-dhamma_bodhi.md %}) at the United Nations at its first official celebration of Vesak. He returned to the U.S. in 2002 and currently resides at [Chuang Yen Monastery](https://www.baus.org/){:target="_blank"} and teaches there and at [Bodhi Monastery](https://bodhimonastery.org/){:target="_blank"}.
 
-He is also the chairman of the [Yin Shun Foundation](http://yinshun.org/){:target="_blank"} and [Buddhist Global Relief](https://www.buddhistglobalrelief.org/){:target="_blank" ga-event-value="0.25"}.
+He is also the chairman of the [Yin Shun Foundation](https://yinshun.org/){:target="_blank"} and [Buddhist Global Relief](https://www.buddhistglobalrelief.org/){:target="_blank" ga-event-value="0.25"}.
 
 *~ From [the Bodhi Monastery bio](https://bodhimonastery.org/ven-bhikkhu-bodhi.html){:target="_blank"}*

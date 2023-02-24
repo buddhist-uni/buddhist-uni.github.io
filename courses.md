@@ -86,24 +86,24 @@ Courses hosted on other websites.
   </div>
 </div>
 
-### [An Introduction to Classical Tibetan](http://www.nettletibetan.ca/){:ga-event-value="0.5" data-content-authors="Frances Garrett"}
+### [An Introduction to Classical Tibetan](https://www.nettletibetan.ca/){:ga-event-value="0.5" data-content-authors="Frances Garrett"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://www.nettletibetan.ca/')" class="cicon"><i class="fas fa-cable-car"></i></div>
+    <div onclick="goto('https://www.nettletibetan.ca/')" class="cicon"><i class="fas fa-cable-car"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
   </div>
 </div>
 
 
-### [Shin Buddhism in Modern Culture](http://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
+### [Shin Buddhism in Modern Culture](https://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
 {:.courselink}
 
 <div class="coursedesc">
   <div class="descrow">
-    <div onclick="goto('http://bschawaii.org/shindharmanet/course/')" class="cicon"><i class="fas fa-street-view"></i></div>
+    <div onclick="goto('https://bschawaii.org/shindharmanet/course/')" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
     <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
   </div>

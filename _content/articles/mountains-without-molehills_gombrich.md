@@ -1,7 +1,7 @@
 ---
 title: "Making Mountains Without Molehills: The Case of the Missing Stūpa"
 authors: [gombrich]
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_1990_XV.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1990_XV.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1J3DRX4dV9LAjkQJl_aaj4nl_sATBULxk/view?usp=drivesdk"]
 file_links:

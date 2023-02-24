@@ -11,6 +11,7 @@ booktitle: "The Big Book of Exit Strategies"
 course: wider
 tags:
   - detroit
+  - perception
   - journalism
 year: 2016
 publisher: "Alice James"

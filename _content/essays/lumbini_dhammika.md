@@ -2,7 +2,7 @@
 title: "Lumbini"
 authors:
   - dhammika
-external_url: "http://budblooms.org/2022/05/08/lumbini-birth-and-rebirth/"
+external_url: "https://budblooms.org/2022/05/08/lumbini-birth-and-rebirth/"
 drive_links:
   - "https://drive.google.com/file/d/1jffl1cEkqyLK65MLpdCpEziRVYU03BSQ/view?usp=drivesdk"
 course: pilgrimage

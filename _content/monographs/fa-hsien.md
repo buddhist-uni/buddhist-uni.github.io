@@ -3,7 +3,7 @@ title: "A Record of Buddhistic Kingdoms"
 authors:
   - "Fa Hsien"
 translator: "James Legge"
-external_url: "http://www.gutenberg.org/ebooks/2124"
+external_url: "https://www.gutenberg.org/ebooks/2124"
 source_url: "https://archive.org/details/recordofbuddhist00fahsuoft"
 drive_links:
   - "https://drive.google.com/file/d/1wt9Dv4t5oSXN2T6xYZ8xVzdL_WORj588/view?usp=drivesdk"

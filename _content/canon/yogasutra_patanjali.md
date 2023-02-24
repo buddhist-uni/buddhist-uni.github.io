@@ -4,7 +4,7 @@ authors:
   - "Śrī Patañjali"
 translator: "Khemarato Bhikkhu"
 external_url: "https://buddhistuniversity.net/patanjali-yoga-sutra/"
-source_url: "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_pataJjali-yogasUtra-alt.htm"
+source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_pataJjali-yogasUtra-alt.htm"
 file_links:
   - "patanjali-yoga-sutra/YogaSutra.pdf"
 formats: [pdf]

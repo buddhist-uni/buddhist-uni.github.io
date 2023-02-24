@@ -2,7 +2,7 @@
 title: "Have you come here to die?"
 authors:
   - brahm
-external_url: "http://dhammatalks.net/Books7/Ajahn_Brahm_Have_you_come_here_to_die.htm"
+external_url: "https://dhammatalks.net/Books7/Ajahn_Brahm_Have_you_come_here_to_die.htm"
 drive_links:
   - "https://drive.google.com/file/d/14y1-7avbpcCro3xoor55opyATlA8YfUN/view?usp=drivesdk"
 course: meditation

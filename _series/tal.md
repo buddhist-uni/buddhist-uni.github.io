@@ -2,7 +2,7 @@
 title: "This American Life"
 authors:
   - "Ira Glass"
-external_url: "http://thisamericanlife.org"
+external_url: "https://thisamericanlife.org"
 category: av
 tags:
   - america

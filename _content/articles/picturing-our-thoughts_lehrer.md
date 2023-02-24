@@ -2,7 +2,7 @@
 title: "Picturing Our Thoughts"
 authors:
   - "Jonah Lehrer"
-external_url: "http://archive.boston.com/bostonglobe/ideas/articles/2008/08/17/picturing_our_thoughts/"
+external_url: "https://archive.boston.com/bostonglobe/ideas/articles/2008/08/17/picturing_our_thoughts/"
 drive_links:
   - "https://drive.google.com/file/d/1Z4aXDSsbX_5M-LivDjBi-sf-AXBR4tCI/view?usp=drivesdk"
 course: inner

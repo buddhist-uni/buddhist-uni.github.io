@@ -1,6 +1,6 @@
 ---
 title: "Dharma Drum Publishing"
-external_url: "http://www.chancenter.org/chanctr/ddp/ddp.html"
+external_url: "https://www.chancenter.org/chanctr/ddp/ddp.html"
 address: Taipei
 ---
 

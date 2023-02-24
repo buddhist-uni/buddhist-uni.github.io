@@ -4,7 +4,7 @@ authors: [dhammika]
 year: 2009
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1r8kbj9By3RWIHR2hc3n-WsKVaOUtQ5Fi/view?usp=drivesdk"]
-external_url: "http://budblooms.org/2020/04/04/building-bridges-for-the-buddha/"
+external_url: "https://budblooms.org/2020/04/04/building-bridges-for-the-buddha/"
 course: engaged
 status: featured
 tags:

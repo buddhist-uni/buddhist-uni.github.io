@@ -4,7 +4,7 @@ authors:
   - skilling
 file_links:
   - "exclusive_01/Zombies%20and%20Half-Zombies%20-%20Peter%20Skilling.pdf"
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_2007_XXIX.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 drive_links: 
   - "https://drive.google.com/file/d/1gQfS5XJ3Ab9u7RjzKWgl2jCBGYTlCzH0/view?usp=drivesdk"
 course: vinaya-studies

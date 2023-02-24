@@ -12,4 +12,4 @@ base_value: 1
 pages: 182
 ---
 
-Being an [unreliable](https://discourse.suttacentral.net/uploads/short-url/alyBBtkewA1MQBlpFvzPyBWIQYe.pdf){:target="_blank"} [translation](http://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"} of Dīrga Āgama sūtras 11–20.
+Being an [unreliable](https://discourse.suttacentral.net/uploads/short-url/alyBBtkewA1MQBlpFvzPyBWIQYe.pdf){:target="_blank"} [translation](https://agamaresearch.dila.edu.tw/a-new-english-translation-of-the-dirgha-agama-taisho-){:target="_blank"} of Dīrga Āgama sūtras 11–20.

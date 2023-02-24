@@ -2,7 +2,7 @@
 title: "The Vengeance of Vertigo: Aphasia and Abjection in the Political Trials of Black Insurgents"
 authors:
   - "Frank B. Wilderson III"
-external_url: "http://www.yorku.ca/intent/issue5/articles/frankbwildersoniii.php"
+external_url: "https://www.yorku.ca/intent/issue5/articles/frankbwildersoniii.php"
 drive_links: 
   - "https://drive.google.com/file/d/1rbTtXGNwa54mdsXNKJ67edbg3Fqe7BNs/view?usp=drivesdk"
 course: violence-since-ww2

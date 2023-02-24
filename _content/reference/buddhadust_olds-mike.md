@@ -2,7 +2,7 @@
 title: "BuddhaDust: Suttas"
 authors:
   - "Michael M. Olds"
-external_url: "http://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm"
+external_url: "https://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm"
 base_value: 1
 year: 2010
 course: pali-texts

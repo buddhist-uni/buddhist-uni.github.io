@@ -4,4 +4,4 @@ external_url: "https://www.jstage.jst.go.jp/browse/jpbs/list/-char/en"
 address: Kyoto
 ---
 
-The organ of the Japanese "[Society for the Study of Pali and Buddhist Culture](http://sspbc.web.fc2.com/sspbc2.html)."
+The organ of the Japanese "[Society for the Study of Pali and Buddhist Culture](https://sspbc.web.fc2.com/sspbc2.html)."

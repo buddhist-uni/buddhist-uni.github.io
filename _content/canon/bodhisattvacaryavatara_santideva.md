@@ -19,7 +19,7 @@ year: 1979
 translator: "Steven Bachelor"
 base_value: 3
 external_url: "https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf"
-source_url: "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zAntideva-bodhicaryAvatAra.htm"
+source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zAntideva-bodhicaryAvatAra.htm"
 ---
 
 This epic poem on grasping firmly the intention to awaken has inspired many generations of Buddhists to live a more ethical and spiritual life and it captures beautifully the aesthetic of Buddhist ethics. Well worth reading again and again and again.

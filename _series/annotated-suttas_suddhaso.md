@@ -1,6 +1,6 @@
 ---
 title: "Annotated Discourses"
-external_url: "http://bhantesuddhaso.com/teachings/annotated-discourses/"
+external_url: "https://bhantesuddhaso.com/teachings/annotated-discourses/"
 authors:
   - suddhaso
 years: 2016--2020

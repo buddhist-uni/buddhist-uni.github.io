@@ -2,7 +2,7 @@
 title: "The Gāravasutta of the Saṃyutta-nikāya and its Mahāyānist Developments"
 authors: [lamotte]
 external_url: "https://archive.org/download/jpts-ix-1981/Mahayanist%20Garavasutta%20-%20Etienne%20Lamotte_text.pdf"
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_1981_IX.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1981_IX.pdf"
 journal: jpts
 year: 1981
 volume: 9
