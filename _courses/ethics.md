@@ -68,7 +68,7 @@ There are two textbooks for this class: one dry and one wet.
 Our "wet" textbook is the Sanskrit classic:
 {% include content_blurb.html category="canon" slug="bodhisattvacaryavatara_santideva" %}
 - This epic poem on grasping firmly the intention to awaken has inspired many generations of Buddhists (myself included) to live a more ethical and spiritual life and it captures beautifully the aesthetic of Buddhist ethics. Well worth reading again and again and again.
-- There are a few English translations of this classic of world literature. Steven Bachelor has a translation available [online here](https://www.tibethouse.jp/about/buddhism/text/pdfs/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
+- There are a few English translations of this classic of world literature. Steven Bachelor has a translation available [online here](https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
 
 ## The Course
 
