@@ -1,3 +1,3 @@
 ---
-title: "Richard Payne"
+title: "Richard K. Payne"
 ---
