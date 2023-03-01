@@ -76,7 +76,13 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '{{ site.GA4 }}', {'currency':'USD','content_group':'{{ page.section }}'});
+      gtag('config', '{{ site.GA4 }}', {
+        'pixel_ratio':Math.round(window.devicePixelRatio*10)/10,
+        'viewport_width':window.innerWidth,
+        'viewport_height':window.innerHeight,
+        'currency':'USD',
+        'content_group':'{{ page.section }}'
+      });
     }
     </script>
   {%- endif -%}{%- if page.banner_info or page.footer_info -%}
