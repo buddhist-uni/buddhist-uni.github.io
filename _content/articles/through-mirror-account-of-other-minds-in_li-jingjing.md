@@ -3,7 +3,7 @@ title: >-
     Through the Mirror: The Account of Other Minds in Chinese Yogācāra Buddhism
 authors:
   - "Jingjing Li"
-external_url: "https://doi.org/10.1007/s11712-019-09674-3"
+external_url: "https://doi.org/10.1007/s11712-022-09863-7"
 source_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3A2912482/view"
 drive_links:
   - "https://drive.google.com/file/d/1_p1RojKNG-7kcHXTgEBRn9vXRg2HCbnT/view?usp=drivesdk"
