@@ -13,8 +13,8 @@ year: 2020
 month: jul
 journal: "Religions"
 volume: 11
-number: 8
-pages: "381--381"
+number: 381
+pages: 16
 publisher: "Mdpi"
 openalexid: W3045084047
 ---

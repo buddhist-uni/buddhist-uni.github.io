@@ -21,5 +21,5 @@ volume: 4
 pages: "141--162"
 ---
 
-> The Vinaya has outlasted Hammurabi and Justinian['s Code] because it is a set of spiritual exercises rather than a legal system.
+> The Vinaya has outlasted Hammurabi and Justinian because it is a set of spiritual exercises rather than a legal system.
 

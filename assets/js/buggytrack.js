@@ -14,9 +14,9 @@ const cyrb53 = function(str) {
 };
 const BuggyTracker = function (d) {
   const tagr = /^\/tags\/([a-z-]+)[\/]?$/;
-  const seriesr = /^\/publishers\/([a-z-]+)$/;
+  const seriesr = /^\/publishers\/([a-z-_]+)$/;
   const journalr = /^\/journals\/([a-z-]+)$/;
-  const contentr = /^\/content\/([a-z]+)\/([a-z0-9_-]+)$/;
+  const contentr = /^\/content\/([a-z]+)\/([a-z0-9_+\.-]+)$/;
   const courser = /^\/courses\/([a-z_-]+)[\/]?([a-z0-9_-]*)$/;
   const publisherr = /^\/publishers\/([a-z-]+)$/;
   const blogr = /^\/blog\/20[2-7][0-9]\/[01][0-9]\/[0-3][0-9]\/[a-z_-]+$/;
@@ -31,13 +31,13 @@ const BuggyTracker = function (d) {
     if (r == '/exclusive/') return "Exclusive Content";
     l = l.pathname;
     m = l.match(tagr) || r.match(tagr);
-    if(m) return "Tag Page: "+m[1];
+    if(m) return "Tag Page";
     m = l.match(courser) || r.match(courser);
     if(m) return "Course: "+m[1];
     m = l.match(blogr) || r.match(blogr);
     if(m) return "Blog Post";
     m = r.match(/^\/content\/([a-z]+)\/$/);
-    if(m) return "Master "+m[1]+" List";
+    if(m) return "Master Content List";
     m = r.match(contentr);
     if(m) return "Related Content";
     m = l.match(publisherr) || r.match(publisherr);
