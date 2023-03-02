@@ -5,9 +5,9 @@ authors:
 subcat: poetry
 reader: "Ada Limón"
 external_url: "https://www.slowdownshow.org/episode/2022/01/11/586-poem-that-leaves-behind-the-ocean"
-course: wider
+course: poetry
 tags:
-  - poetry # move here?
+  - wider
   - death
   - natural
 year: 2022
