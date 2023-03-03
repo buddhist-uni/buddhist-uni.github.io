@@ -76,6 +76,8 @@ const BuggyTracker = function (d) {
       ];
     m=l.match(courser)||l.match(tagr)||l.match(authorr);
     if(m) return ['Generic Links',m[1]];
+    m=window.topic_category;
+    if(m) return ['Generic Links', m];
     return ['Generic Links', l];
   }
   function inferLinkType(link){

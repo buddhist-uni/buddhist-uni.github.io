@@ -47,6 +47,7 @@ layout: default
 <article class="content-perma">
 
   <header class="post-header">
+    <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
     {% if page.olid %}
     <img src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="the book cover">
