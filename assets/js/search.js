@@ -59,18 +59,26 @@
   try {
       window.search_worker = new Worker("/assets/js/search_index.js");
       function newQuery(e) {
-        var q = e;
-        if (e.target) q = e.target.value;
-        q = sanitizeQuery(q);
-        if (!q) return;
-        if (pendingui){ clearTimeout(pendingui); pendingui = null; }
-        window.search_worker.postMessage({'q': q, 'qt': performance.now()});
-        clearTimeout(checker);
-        checker = setTimeout(checkRunning, CHECKTIME);
-        loadingIndicator.style.display = 'block';
-        searchForm.onsubmit = prevent;
-        running++;
-      }
+		var q = e;
+		if (e.target) q = e.target.value;
+		q = sanitizeQuery(q);
+		if (!q) return;
+		if (pendingui){ clearTimeout(pendingui); pendingui = null; }
+
+		// Retrieve selected type
+		var typeFilter = document.getElementById("search-type-filter");
+		var typeFilterValue = typeFilter.value;
+		if (typeFilterValue !== "all") {
+			q += " is:" + typeFilterValue;
+		}
+
+		window.search_worker.postMessage({'q': q, 'qt': performance.now()});
+		clearTimeout(checker);
+		checker = setTimeout(checkRunning, CHECKTIME);
+		loadingIndicator.style.display = 'block';
+		searchForm.onsubmit = prevent;
+		running++;
+	}
       window.onpopstate = function (e) {
         if (e.state) {
             searchBox.blur();
