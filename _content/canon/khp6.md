@@ -1,5 +1,5 @@
 ---
-title: "Khp 6: The Ratana Sutta"
+title: "Khp 6: Ratana Sutta"
 external_url: "https://suttafriends.org/sutta/khp6/"
 subcat: poetry
 drive_links:
