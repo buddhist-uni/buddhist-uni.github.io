@@ -63,12 +63,15 @@
 		if (e.target) q = e.target.value;
 		q = sanitizeQuery(q);
 		if (!q) return;
-		if (pendingui){ clearTimeout(pendingui); pendingui = null; }
+		if (pendingui) {
+			clearTimeout(pendingui);
+			pendingui = null;
+		}
 
 		// Retrieve selected type
 		var typeFilter = document.getElementById("search-type-filter");
 		var typeFilterValue = typeFilter.value;
-		if (typeFilterValue !== "all") {
+		if (typeFilterValue && typeFilterValue !== "") {
 			q += " is:" + typeFilterValue;
 		}
 
