@@ -61,18 +61,19 @@
       function newQuery(e) {
 		var q = e;
 		if (e.target) q = e.target.value;
+
+		// Retrieve selected type
+		var typeFilter = document.getElementById("search-type-filter");
+		var typeFilterValue = typeFilter.value;
+		if (typeFilterValue && typeFilterValue !== "") {			
+			q += " +is:" + typeFilterValue;
+		}
+		
 		q = sanitizeQuery(q);
 		if (!q) return;
 		if (pendingui) {
 			clearTimeout(pendingui);
 			pendingui = null;
-		}
-
-		// Retrieve selected type
-		var typeFilter = document.getElementById("search-type-filter");
-		var typeFilterValue = typeFilter.value;
-		if (typeFilterValue && typeFilterValue !== "") {
-			q += " is:" + typeFilterValue;
 		}
 
 		window.search_worker.postMessage({'q': q, 'qt': performance.now()});
