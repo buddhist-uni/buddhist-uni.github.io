@@ -66,7 +66,7 @@
 		var typeFilter = document.getElementById("search-type-filter");
 		var typeFilterValue = typeFilter.value;
 		if (typeFilterValue && typeFilterValue !== "") {			
-			q += " +is:" + typeFilterValue;
+			q += " +in:" + typeFilterValue;
 		}
 		
 		q = sanitizeQuery(q);
