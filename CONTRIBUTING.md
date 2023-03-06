@@ -36,7 +36,7 @@ cd buddhist-uni.github.io
 npm ci
 bash scripts/install-deps.bash
 bundle install
-bundle exec jekyll serve -tIl
+bundle exec jekyll serve -tI
 ```
 
 Note that you can add the `--config _config.yml,_quick_build.yml` build flag to `jekyll serve` for a faster, but partial build of the site.
