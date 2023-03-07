@@ -26,7 +26,7 @@
 
   var initialSearchTerm = sanitizeQuery(getQueryVariable('q'));
   setTitle(initialSearchTerm);
-  var searchBox = document.getElementById('search-box');
+  const searchBox = document.getElementById('search-box');
   searchBox.setAttribute("value", initialSearchTerm);
   window.history.replaceState({"html": "", "q": initialSearchTerm}, "", window.location.href);
 
@@ -63,10 +63,17 @@
 		if (e.target) q = e.target.value;
 
 		// Retrieve selected type
-		var typeFilter = document.getElementById("search-type-filter");
+		const typeFilter = document.getElementById("search-type-filter");
 		var typeFilterValue = typeFilter.value;
 		if (typeFilterValue && typeFilterValue !== "") {			
-			q += " +in:" + typeFilterValue;
+			// Check if the search query has special Lunr syntax
+			if (/([+:>-]|\b)in:/.test(searchQuery)) {
+				// Search query has special syntax, use it as is				
+				q += " +in:" + typeFilterValue;
+			} else {
+				// No special syntax, use search term as content search
+				q = "+content:" + q + " +in:" + typeFilterValue;
+			}
 		}
 		
 		q = sanitizeQuery(q);
