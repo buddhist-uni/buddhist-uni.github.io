@@ -13,7 +13,6 @@
   var stillLoading = document.getElementById('still-loading');
   var running = 0;
   var checkRunning = function(){
-  var checkRunning = function(){
     if (running > 0) {
         stillLoading.style.display = 'block';
     }
