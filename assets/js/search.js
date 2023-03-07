@@ -27,6 +27,7 @@
   var initialSearchTerm = sanitizeQuery(getQueryVariable('q'));
   setTitle(initialSearchTerm);
   const searchBox = document.getElementById('search-box');
+  const typeFilter = document.getElementById("search-type-filter");
   searchBox.setAttribute("value", initialSearchTerm);
   window.history.replaceState({"html": "", "q": initialSearchTerm}, "", window.location.href);
 
@@ -59,16 +60,18 @@
   try {
       window.search_worker = new Worker("/assets/js/search_index.js");
       function newQuery(e) {
-		var q = e;
-		if (e.target) q = e.target.value;
-
-		// Retrieve selected type
-		const typeFilter = document.getElementById("search-type-filter");
+		var q = searchBox.value;
 		var typeFilterValue = typeFilter.value;
+
+		if (e.target === searchBox) {
+			q = e.target.value;
+		} else if (e.target === typeFilter) {
+			typeFilterValue = e.target.value;
+		}
 		if (typeFilterValue && typeFilterValue !== "") {			
 			// Check if the search query has special Lunr syntax
-			if (/([+:>-]|\b)in:/.test(q)) {
-				// Search query has special syntax, use it as is				
+			if (/([+:>-]|\b)in:/.test(q) || q.trim() === '') {
+				// Search query has special syntax, or is blank, use it as is				
 				q += " +in:" + typeFilterValue;
 			} else {
 				// No special syntax, use search term as content search
@@ -147,6 +150,7 @@
       }
       searchBox.addEventListener('input', newQuery);
       searchBox.addEventListener('propertychange', newQuery); // IE8
+	  typeFilter.addEventListener('change', newQuery);
       setTimeout(searchBox.focus.bind(searchBox), 610);
   } catch (e) {
     loadingIndicator.style.display = 'none';
