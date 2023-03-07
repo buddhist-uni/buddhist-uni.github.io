@@ -13,6 +13,7 @@
   var stillLoading = document.getElementById('still-loading');
   var running = 0;
   var checkRunning = function(){
+  var checkRunning = function(){
     if (running > 0) {
         stillLoading.style.display = 'block';
     }
@@ -67,7 +68,7 @@
 		var typeFilterValue = typeFilter.value;
 		if (typeFilterValue && typeFilterValue !== "") {			
 			// Check if the search query has special Lunr syntax
-			if (/([+:>-]|\b)in:/.test(searchQuery)) {
+			if (/([+:>-]|\b)in:/.test(q)) {
 				// Search query has special syntax, use it as is				
 				q += " +in:" + typeFilterValue;
 			} else {
