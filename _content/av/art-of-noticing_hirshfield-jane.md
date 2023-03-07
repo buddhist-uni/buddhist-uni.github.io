@@ -9,6 +9,7 @@ status: featured
 course: poetry
 tags:
   - inner
+  - daily-life
 year: 2023
 month: mar
 publisher: nyt
