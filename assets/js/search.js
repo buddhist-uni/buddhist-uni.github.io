@@ -62,21 +62,16 @@
       function newQuery(e) {
 		var q = searchBox.value;
 		var typeFilterValue = typeFilter.value;
+		var filterQuery = "";
 
 		if (e.target === searchBox) {
 			q = e.target.value;
 		} else if (e.target === typeFilter) {
 			typeFilterValue = e.target.value;
 		}
-		if (typeFilterValue && typeFilterValue !== "") {			
-			// Check if the search query has special Lunr syntax
-			if (/([+:>-]|\b)in:/.test(q) || q.trim() === '') {
-				// Search query has special syntax, or is blank, use it as is				
-				q += " +in:" + typeFilterValue;
-			} else {
-				// No special syntax, use search term as content search
-				q = "+content:" + q + " +in:" + typeFilterValue;
-			}
+		
+		if (typeFilterValue && typeFilterValue !== "") {
+			filterQuery = "+in:" + typeFilterValue;
 		}
 		
 		q = sanitizeQuery(q);
@@ -86,7 +81,7 @@
 			pendingui = null;
 		}
 
-		window.search_worker.postMessage({'q': q, 'qt': performance.now()});
+		window.search_worker.postMessage({'q': q, 'filterquery': filterQuery, 'qt': performance.now()});
 		clearTimeout(checker);
 		checker = setTimeout(checkRunning, CHECKTIME);
 		loadingIndicator.style.display = 'block';
