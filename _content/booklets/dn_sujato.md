@@ -1,12 +1,12 @@
 ---
 title: "The Long Discourses"
 authors: [sujato]
-external_url: "https://readingfaithfully.org/digha-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/"
-formats: [GBook, pdf, epub]
+external_url: "https://suttacentral.net/edition/dn/en/sujato"
+formats: [GBook, PDFs, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=peWWDwAAQBAJ"
-  - "https://drive.google.com/file/d/1oJspRtnJSgt3n5LZG-3HJsM1pOQSvyiH/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1HvcK9WzhGwIlrR4lv9TX3UbqVjL69mgz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zpRiMrCpkHvrkK8_3Vd8T6M4KioyS740/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yM0lmf41jc9naX_2qbxpLiv25GZlJiV3/view?usp=drivesdk"
 year: 2019
 course: dn
 tags:

@@ -1,12 +1,12 @@
 ---
 title: "Linked Discourses"
 authors: [sujato]
-external_url: "https://readingfaithfully.org/samyutta-nikaya-translated-bhikkhu-sujato-free-epub-kindle-pdf/"
-formats: [GBook, pdf, epub]
+external_url: "https://suttacentral.net/edition/sn/en/sujato"
+formats: [GBook, PDFs, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=n-mWDwAAQBAJ"
-  - "https://drive.google.com/file/d/1CJxuwk15-WJrU6GWPi78RDodk1YM2Mdu/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/12z151OXj-o5WQcAs4ZF7QAiTKZtV_K29/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1za4WrJbXf-lMBmqhHnAc78E4ZQ1qDxY_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yV7X-YmKJOUVCP6hhw7OtOIlGlKpLAFG/view?usp=drivesdk"
 year: 2019
 course: sn
 tags:
