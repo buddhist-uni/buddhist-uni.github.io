@@ -4,7 +4,7 @@ authors:
   - sheng-yen
 translator: "Hao-De Zou"
 external_url: "https://www.shengyen.org/freebook/pdf/The_Meaning_of_Life.pdf"
-source_url: "http://www.chancenter.org/chanctr/ddp/talks/meaningoflife.html"
+source_url: "https://www.chancenter.org/chanctr/ddp/talks/meaningoflife.html"
 formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=-JhABAAAQBAJ"

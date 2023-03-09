@@ -2,7 +2,7 @@
 title: "Building resilience and preventing burnout among aid workers in Palestine: A personal account of mindfulness based staff care"
 authors:
   - pigni-a
-external_url: "https://www.interventionjournal.com/sites/default/files/Building_resilience_and_preventing_burnout_among.6.pdf"
+external_url: "https://www.interventionjournal.org/downloadpdf.asp?issn=1571-8883;year=2014;volume=12;issue=2;spage=231;epage=239;aulast=Pigni;type=2"
 drive_links:
   - "https://drive.google.com/file/d/1rc8F23bRrDkGRELZfHYYGtACC8SxuyZ_/view?usp=drivesdk"
 course: engaged

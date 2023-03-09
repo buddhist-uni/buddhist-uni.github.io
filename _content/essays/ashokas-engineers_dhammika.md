@@ -2,7 +2,7 @@
 title: "King Ashoka's Amazing Engineers"
 authors:
   - dhammika
-external_url: "http://budblooms.org/2020/05/11/king-asokas-amazing-engineers/"
+external_url: "https://budblooms.org/2020/05/11/king-asokas-amazing-engineers/"
 drive_links:
   - "https://drive.google.com/file/d/17tSudKqH45MU8of1kEGKe4I1pqHGdO9Z/view?usp=drivesdk"
 course: ashoka

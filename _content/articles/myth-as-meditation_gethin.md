@@ -2,7 +2,7 @@
 title: "Mythology as Meditation: From the _Mahāsudassana Sutta_ to the _Sukhāvatīvyūha Sūtra_"
 authors:
   - gethin
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_28_2006.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_28_2006.pdf"
 file_links:
   - "exclusive_01/Mythology%20as%20Meditation%20-%20Rupert%20Gethin.pdf"
 drive_links:

@@ -4,7 +4,7 @@ authors:
   - "Master T'an Hsu"
 editor: "Nien An and Wang K'ai"
 translator: "Master Lok To"
-external_url: "http://www.buddhanet.net/e-learning/heartstr.htm"
+external_url: "https://www.buddhanet.net/e-learning/heartstr.htm"
 base_value: 1.75
 tags:
   - chinese

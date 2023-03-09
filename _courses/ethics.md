@@ -68,7 +68,7 @@ There are two textbooks for this class: one dry and one wet.
 Our "wet" textbook is the Sanskrit classic:
 {% include content_blurb.html category="canon" slug="bodhisattvacaryavatara_santideva" %}
 - This epic poem on grasping firmly the intention to awaken has inspired many generations of Buddhists (myself included) to live a more ethical and spiritual life and it captures beautifully the aesthetic of Buddhist ethics. Well worth reading again and again and again.
-- There are a few English translations of this classic of world literature. Steven Bachelor has a translation available [online here](https://www.tibethouse.jp/about/buddhism/text/pdfs/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
+- There are a few English translations of this classic of world literature. Steven Bachelor has a translation available [online here](https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
 
 ## The Course
 
@@ -175,6 +175,9 @@ Accepting our faults is a critical starting point for ethical development, and a
 {% include content_blurb.html category="canon" slug="mn46" %}
 - A rather remarkable sutta, in which the Buddha admits that it's often painful to strictly follow the precepts.
 - Given that following the precepts sometimes leads to pain, why does the Buddha still recommend them?
+
+{% include content_blurb.html category="canon" slug="sn1.78" %}
+- Shantideva wishes in this chapter to become "the very medicine itself" for sentient beings, but here the Buddha tells us *not* to "give away" ourselves. How do you understand this contradiction?
 
 {% include content_blurb.html category="booklets" slug="dana_bodhi-et-al" %}
 - The corner stone of Buddhist morality is generosity, for all other virtues start in its renunciation and care for others. But clearly there are better and worse ways to give, as rich people often demonstrate. What factors make giving better or worse?
@@ -344,7 +347,7 @@ Speaking of uncomfortable!
 - The story of a pioneering, transgender Buddhist, and a word on how Buddhism's attitude towards transgenderism differs from that of the monotheistic religions.
 
 {% include content_blurb.html category="booklets" slug="buddhism-and-sex_walshe" %}
-- A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy](http://revisionisthistory.com/episodes/09-generous-orthodoxy){:target="_blank" ga-event-value="0.3"}.
+- A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy](https://revisionisthistory.com/episodes/09-generous-orthodoxy){:target="_blank" ga-event-value="0.3"}.
 
 {% include content_blurb.html category="essays" slug="gay-tragedy_dhammika" %}
 - A reminder that what we say matters.

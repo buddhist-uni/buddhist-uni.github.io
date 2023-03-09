@@ -2,6 +2,8 @@
 title: "Bhikkhu Cintita"
 ---
 
-Monk Bhikkhu Cintita was born  in San Francisco, California in 1949.After meeting the burmese abbot Ashin Ariyadhamma, Cintita stayed in Burma for 13 months, learning under Dr. Ashin Nyanissara who would ordain him in 2009. He is currently living at the Sitagu Buddha Vihara in Austin, Texas, as a resident monk.
+Bhikkhu Cintita was born in San Francisco, California in 1949 and had a career in linguistics and A.I. before ordaining as a Zen priest in 2003.
 
-_~ From [Sitagu Buddha Vihara](http://sitagu.org/austin/About/about.html)_
+After meeting the Burmese abbot Ashin Ariyadhamma in 2009, Cintita stayed in Burma for 13 months, learning under Ashin Nyanissara who reordained him in the Theravada Tradition. He is currently living at the Sitagu Buddha Vihara in Austin, Texas.
+
+_~ From [his online C.V.](https://bhikkhucintita.wordpress.com/home/venerable-cintita/through-the-looking-glass-biographical/curriculum-vitae/)_

@@ -3,7 +3,7 @@ title: "Old Pillar, New Possibilites: What the Revival of the Bhikkhuni Sangha C
 authors: ["Nissara Horayangura"]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1qQn4fW2LwBOBH8qXa5lNMcyd1Li1EWAz/view?usp=drivesdk"]
-external_url: "http://www.bhikkhuni.net/old-pillar-new-possibilities/"
+external_url: "https://www.bhikkhuni.net/old-pillar-new-possibilities/"
 year: 2009
 course: monastic
 tags:

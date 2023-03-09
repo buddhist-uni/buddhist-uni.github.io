@@ -2,7 +2,7 @@
 title: "The Politics of Tourism in Asia"
 authors:
   - "Linda K. Richter"
-external_url: "http://hdl.handle.net/10125/62915"
+external_url: "https://hdl.handle.net/10125/62915"
 olid: OL2050128M
 year: 1989
 publisher: hawaii

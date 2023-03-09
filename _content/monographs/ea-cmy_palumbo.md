@@ -18,6 +18,6 @@ pages: 364
 
 A lengthy monograph on the historical circumstances surrounding the production and dissemination of T.125 — a process that would have an enduring impact on Chinese Buddhism.
 
-Note that certain "combining" diacritics were dropped in the PDF due to a publishing error. The corrected diacritics are [listed here](http://agamaresearch.dila.edu.tw/wp-content/uploads/2013/10/Palumbo-2013-corrigenda.pdf){:target="_blank"}.
+Note that certain "combining" diacritics were dropped in the PDF due to a publishing error. The corrected diacritics are [listed here](https://agamaresearch.dila.edu.tw/wp-content/uploads/2013/10/Palumbo-2013-corrigenda.pdf){:target="_blank"}.
 
 

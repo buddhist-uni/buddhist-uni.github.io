@@ -2,7 +2,7 @@
 title: "Categories of Sutta in the Pāli Nikāyas"
 authors:
   - manne-joy
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_1990_XV.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1990_XV.pdf"
 file_links:
   - "exclusive_01/Categories%20of%20Sutta%20-%20Joy%20Manné.pdf"
 drive_links:

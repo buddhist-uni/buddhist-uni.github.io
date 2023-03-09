@@ -1,5 +1,5 @@
 ---
-title: "On Having No Head: Zen and the Rediscovery of the Obvious"
+title: "On Having No Head: A Contribution to Zen in the West"
 authors:
   - "Douglas E. Harding"
 external_url: "http://www.kbrl.gov.mm/book/details/002218"

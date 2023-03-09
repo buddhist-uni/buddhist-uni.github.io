@@ -1,0 +1,24 @@
+---
+title: "There are Birds Here"
+authors:
+  - "Jamaal May"
+subcat: poetry
+external_url: "https://www.poetryfoundation.org/poetrymagazine/poems/56764/there-are-birds-here"
+alternate_url: "https://www.poetryoutloud.org/poem/there-are-birds-here/"
+drive_links:
+  - "https://drive.google.com/file/d/1Dsw_6u7uBGbIrxhXEGwfoND32RDrPGrc/view?usp=drivesdk"
+booktitle: "The Big Book of Exit Strategies"
+course: wider
+tags:
+  - detroit
+  - perception
+  - journalism
+year: 2016
+publisher: "Alice James"
+pages: 2
+---
+
+> and no his smile isn’t much  
+like a skeleton at all. And no  
+his neighborhood is not like a war zone
+

@@ -4,7 +4,7 @@ subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2018
 month: may
-external_url: "http://revisionisthistory.com/episodes/22-burden-of-proof"
+external_url: "https://revisionisthistory.com/episodes/22-burden-of-proof"
 course: inner
 tags:
   - speech

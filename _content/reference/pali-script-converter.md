@@ -1,6 +1,6 @@
 ---
 title: "Pāli Script Converter"
-external_url: "http://aksharamukha.appspot.com/converter"
+external_url: "https://aksharamukha.appspot.com/converter"
 course: pali-language
 tags:
   - sanskrit

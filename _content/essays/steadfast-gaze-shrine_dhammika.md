@@ -2,8 +2,8 @@
 title: "The Shrine of Steadfast Gaze"
 authors:
   - dhammika
-external_url: "http://budblooms.org/2022/11/15/the-shrine-of-steadfast-gaze-where-is-it/"
-source_url: "http://island.lk/where-is-animisa-cetiya/"
+external_url: "https://budblooms.org/2022/11/15/the-shrine-of-steadfast-gaze-where-is-it/"
+source_url: "https://island.lk/where-is-animisa-cetiya/"
 drive_links:
   - "https://drive.google.com/file/d/1Z4pD9myZtEkzIINouubPG3TcN2PDSb2d/view?usp=drivesdk"
 course: pilgrimage

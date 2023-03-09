@@ -1,7 +1,7 @@
 ---
 title: "Preliminary Remarks on Two Versions of the Āṭānāṭīya (Āṭānāṭika)-Sūtra in Sanskrit"
 authors: ["Lore Sander"]
-external_url: "http://doi.org/10.15056/00000057"
+external_url: "https://doi.org/10.15056/00000057"
 drive_links: ["https://drive.google.com/file/d/1zf1zdvslGO-SQjnxZOMJ_kIuAvkt8KYY/view?usp=drivesdk"]
 tags: 
   - manuscripts

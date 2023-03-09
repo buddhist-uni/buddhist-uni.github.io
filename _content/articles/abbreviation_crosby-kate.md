@@ -2,7 +2,7 @@
 title: "*Saṅkhepasārasaṅgaha*: Abbreviation in Pāli"
 authors:
   - crosby-kate
-source_url: "http://www.palitext.com/JPTS_scans/JPTS_2007_XXIX.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1L8bjVq0xRFPFOpCnvLsS_frh_rI0TGND/view?usp=drivesdk"]
 file_links:

@@ -3,7 +3,7 @@ title: "The Buddha"
 subtitle: A Course Syllabus
 icon: "fas fa-hand-holding"
 image: "https://illeakyw.sirv.com/Images/banners/dipankara-sumedha.jpg"
-big_image: "https://github.com/buddhist-uni/original_size_imgs/raw/main/dipankara-sumedha.jpg"
+big_image: "https://github.com/buddhist-uni/big_imgs/raw/main/banners/courses/dipankara-sumedha.jpg"
 big_width: 2415
 big_height: 1274
 image_width: 2415
@@ -110,6 +110,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] The Buddha's Family
+1. {% capture foo %}{% include content_blurb.html slug="gotama-family_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}
 
 1. {% capture foo %}{% include content_blurb.html slug="dn14" blurb="This mythic sutta gives the story of the Buddha we may be familiar with… but attributes it to the Buddha Vipassī! It wasn't until later that this story came to be normalized as true of all Buddhas: our own included." category="canon" %}{% endcapture %}{{ foo | strip_newlines }}

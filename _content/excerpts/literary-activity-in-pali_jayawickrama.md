@@ -1,6 +1,6 @@
 ---
 title: "Literary Activity in Pali"
-authors: ["N. A. Jayawickrama"]
+authors: [jayawickrama]
 external_url: "https://archive.org/download/literary-activity-in-pali-1969-n-a-jayawickrama/Literary%20Activity%20in%20Pali%20%281969%29%20-%20N%20A%20Jayawickrama_text.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1CcxHIwK1-lB6nbgloCwMImbflhbBFiIW/view?usp=drivesdk"]

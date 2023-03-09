@@ -4,7 +4,7 @@ authors:
   - norman
 file_links:
   - "exclusive_01/External%20sandhi%20in%20Pa%CC%84li%20-%20K%20R%20Norman.pdf"
-source_url: "https://www.palitext.com/JPTS_scans/JPTS_1993_XIX.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1993_XIX.pdf"
 drive_links: 
   - "https://drive.google.com/file/d/14U4Qx0JG1dcNkhQn290gsRnzf9dT8fbj/view?usp=drivesdk"
 course: pali-language

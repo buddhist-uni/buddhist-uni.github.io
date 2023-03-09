@@ -1,7 +1,7 @@
 ---
 title: "The Story of the Horse-King and the Merchant Siṃhala, in Buddhist Texts"
 authors: [appleton]
-external_url: "http://dx.doi.org/10.1558/bsrv.2006.23.2.187"
+external_url: "https://dx.doi.org/10.1558/bsrv.2006.23.2.187"
 journal: bsr
 year: 2007
 month: feb

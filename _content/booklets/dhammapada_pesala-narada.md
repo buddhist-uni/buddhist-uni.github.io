@@ -4,6 +4,7 @@ authors:
   - "Bhikkhu Pesala"
   - narada
 external_url: "http://www.aimwell.org/dhammapada.html"
+source_url: "http://www.kbrl.gov.mm/book/details/000469"
 status: featured
 year: 2006
 course: dhp

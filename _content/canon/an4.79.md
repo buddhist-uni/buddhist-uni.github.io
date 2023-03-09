@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1S_pj8eiekYSOhaoL9HZcPPi0xTIwa1WY/view?usp=drivesdk"
 course: business
 tags:
+  - an
   - karma
   - becon
 year: 2018

@@ -2,7 +2,7 @@
 title: "On the Normative Function of Metatheoretical Endeavors"
 authors: [stein-zak]
 external_url: "https://integral-review.org/issues/vol_6_no_3_stein_on_the_normative_function_of_metatheoretical_endeavors.pdf"
-source_url: "https://www.zakstein.org/wp-content/uploads/2014/10/Stein_metatheory2010.pdf"
+source_url: "http://www.zakstein.org/publications.html"
 drive_links: ["https://drive.google.com/file/d/1YfQ1JLyILLvnkCeh7Ukj4ljNUH2XOK-s/view?usp=drivesdk"]
 year: 2010
 volume: 6

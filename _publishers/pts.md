@@ -1,6 +1,6 @@
 ---
 title: "The Pali Text Society"
-external_url: "http://www.palitext.com"
+external_url: "https://palitextsociety.org"
 address: "Bristol"
 ---
 

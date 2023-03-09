@@ -1,7 +1,7 @@
 ---
 title: "Far From the Madding Strife for Hollow Pleasures: Meditation and Liberation in the *Śrāvakabhūmi*"
 authors: [deleanu-f]
-external_url: "http://doi.org/10.15056/00000014"
+external_url: "https://doi.org/10.15056/00000014"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1aXMhnR6-amSSZExM8osVUAsUQLT06pCZ/view?usp=drivesdk"]
 year: 2012

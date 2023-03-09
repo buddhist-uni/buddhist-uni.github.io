@@ -1,5 +1,5 @@
 ---
-title: "Buddha Beeds"
+title: "Buddha Beads"
 authors: [sheng-yen]
 year: 2012
 external_url: "https://youtu.be/ZSJbJQa1cfk"
@@ -15,5 +15,5 @@ subcat: film
 number: 51
 ---
 
-A short explanation of the Buddhist "rosary" beed necklace.
+A short explanation of the Buddhist "rosary" bead necklace.
 

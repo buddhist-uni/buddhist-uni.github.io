@@ -15,4 +15,4 @@ publisher: wisdom
 pages: 656
 ---
 
-Originally published as _Thus Have I Heard_, this modern translation of the Digha Nikaya is striking for its rare combination of accessible erudition and respectful scepticism.
+Originally published as _Thus Have I Heard_, this modern translation of the Digha Nikaya is striking for its rare combination of accessible erudition and respectful skepticism.

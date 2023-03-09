@@ -14,4 +14,4 @@ month: jan
 minutes: 86
 ---
 
-On Dependant Origination and its reversal to liberation.
+On Dependent Origination and its reversal to liberation.

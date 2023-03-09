@@ -18,3 +18,5 @@ pages: 240
 > Ānanda’s tears and the Buddha’s expression of gratitude and thanks are testament to the close bond between the two men, one that went beyond their kin relationship.
 
 A down-to-earth biography of the Buddha based on the Pāli Canon.
+
+You can see a short (20-minute) interview with Bhante about the book [on YouTube](https://youtu.be/QWvbu4bmQLM) to get an idea of its contents and his humanistic approach.

@@ -12,6 +12,7 @@ description: "Also sometimes translated as \"concentration,\" <i>samādhi</i> is
 {% include content_blurb.html category="canon" slug="sn22.5" %}
 {% include content_blurb.html category="canon" slug="an4.41" %}
 {% include content_blurb.html category="canon" slug="thag2.3" %}
+{% include content_blurb.html category="canon" slug="snp1.1" %}
 </p>
 
 ### Similes

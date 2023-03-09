@@ -8,7 +8,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.3"
+# our sass code is currently written for converter v3
+gem "jekyll-sass-converter", ">= 3.0", "< 4.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -18,7 +20,7 @@ gem "jekyll", "~> 4.2.0"
 group :jekyll_plugins do
   gem "jekyll-feed", github: 'buddhist-uni/jekyll-feed', branch: 'collection-tags'
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", branch: 'obu-custom-seo'
+  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", ref: '644037c'
   gem "jekyll-last-modified-at", github: "buddhist-uni/jekyll-last-modified-at", branch: 'post-date'
   gem 'jekyll-include-cache'
 end

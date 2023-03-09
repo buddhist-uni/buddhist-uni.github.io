@@ -22,4 +22,4 @@ Mind is their chief.
 
 A straightforward translation of the Dhammapada based on a contemporary Sinhalese translation.
 
-For a nearly-complete list of Dhammapada translations in English, see [Bodhgaya News](http://www.bodhgayanews.net/dhammapada.htm){:target="_blank"}.
+For a nearly-complete list of Dhammapada translations in English, see [Bodhgaya News](https://web.archive.org/web/20221022014745/http://www.bodhgayanews.net/dhammapada.htm){:target="_blank"}.

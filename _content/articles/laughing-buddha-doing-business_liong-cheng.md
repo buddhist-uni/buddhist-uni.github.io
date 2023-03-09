@@ -3,7 +3,7 @@ title: "The Laughing Buddha: Doing business and the art of motivation"
 authors:
   - "Ang Sik Liong"
   - "Low Kim Cheng Patrick"
-external_url: "http://ssrn.com/abstract=2140478"
+external_url: "https://ssrn.com/abstract=2140478"
 drive_links:
   - "https://drive.google.com/file/d/1Q-4qE-kM939HdEQm0FX7A-IeFtKWWWbw/view?usp=drivesdk"
 tags:

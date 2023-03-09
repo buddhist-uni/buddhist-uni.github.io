@@ -4,6 +4,7 @@
 # Tested:
 BUDDHA         = "C524757792"
 BUDDHISM       = "C75699723"
+# Nothing in addition to the above
 #BUDDH_STUD    = "C546175201"
 #BODHISATTVA   = "C2777826289"
 #BUDDHIST_PHIL = "C500621485"

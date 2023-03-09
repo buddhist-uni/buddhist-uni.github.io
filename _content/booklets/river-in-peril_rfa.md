@@ -1,0 +1,23 @@
+---
+title: "A River in Peril: The Mekong Under China"
+authors:
+  - "Radio Free Asia"
+editor: "Dan Southerland"
+external_url: "https://www.rfa.org/english/bookshelf/Mekong.pdf"
+source_url: "https://www.rfa.org/english/news/special/riverinperil/"
+drive_links:
+  - "https://drive.google.com/file/d/1TYK2SuweJ3cXOv2N_c8guxNLJIKCyizD/view?usp=drivesdk"
+course: wider
+tags:
+  - asia
+  - present
+year: 2016
+month: dec
+olid: OL46532919M
+publisher: RFA
+address: Washington DC
+pages: 40
+---
+
+> In 2009, an [anonymous] RFA cameraman followed the Mekong River from its source in Tibet to Vietnam and the South China Sea. Traveling more than 2,700 miles through six nations, they gathered stories from the local people as the river faced radical change.
+

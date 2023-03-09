@@ -23,5 +23,6 @@ var alltheurls = [
 {%- endfor -%}
 ];
 var i = Math.floor(Math.random() * alltheurls.length);
+if (typeof gtag != 'undefined') gtag('event', 'random_item', {link_url: alltheurls[i]});
 location.replace(alltheurls[i]);
 </script>

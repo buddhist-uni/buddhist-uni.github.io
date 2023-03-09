@@ -9,21 +9,25 @@ Below is a list of the sources used in the construction of the University's curr
 
 Only a tiny fraction of their contents could be featured on this website, so please see the links below for their complete archives.
 
+<div markdown="1" data-link-type="authors">{% comment %}These data are used by buggytrack.js{% endcomment %}
 ## Individual Authors
 
-* [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html) (at Hamburg)
-  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo/publications/)
-* [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html)
-* [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK)
-* [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php)
-* [Ajahn Suchart](https://www.phrasuchart.com/enbook/)
-* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books) ([Mirror](http://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf))
-* [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html)
-* [Bhante S. Dhammika's writing at "BudBlooms"](http://budblooms.org/)
-* [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/)
-* [BuddhaDust](http://buddhadust.net)
-  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks)
+* [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html){:data-slug="analayo"} (at Hamburg)
+  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo/publications/){:data-slug="analayo"}
+* [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html){:data-slug="geoff"}
+* [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK){:data-slug="sujato"}
+* [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php){:data-slug="boowa"}
+* [Ajahn Suchart](https://www.phrasuchart.com/enbook/){:data-slug="suchart"}
+* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](https://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
+* [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html){:data-slug="yuttadhammo"}
+* [Bhante S. Dhammika's writing at "BudBlooms"](https://budblooms.org/){:data-slug="dhammika"}
+  * and [his old blog](https://sdhammika.blogspot.com/) (now discontinued)
+* [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/){:data-slug="rf"}
+* [BuddhaDust](https://buddhadust.net){:data-slug="Mike Olds"}
+  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks){:data-slug="subhuti"}
+</div>
 
+<div markdown="1" data-link-type="schools">
 ## Monasteries and Traditions
 
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
@@ -34,29 +38,32 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)
 * [The Karma Kagyu](https://dharmaebooks.org/)
+</div>
 
+<div markdown="1" data-link-type="libraries">
 ## Digital Libraries
 
 * [Access to Insight](https://www.accesstoinsight.org/)
-* [BuddhaNet](http://www.buddhanet.net/ebooks.htm)
-* [DhammaTalks.net](http://dhammatalks.net/)
+* [BuddhaNet](https://www.buddhanet.net/ebooks.htm)
+* [DhammaTalks.net](https://dhammatalks.net/)
 * The [Handful of Leaves Library](http://www.ahandfulofleaves.org/Library.html)
-* [SuttaReadings.net](http://www.suttareadings.net/audio/index-readers.html)
+* [SuttaReadings.net](https://www.suttareadings.net/audio/index-readers.html)
 * [Dharma Seed](https://dharmaseed.org/talks)
 * [Audio Dharma](https://www.audiodharma.org/)
-* [A Buddhist Library](http://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
-* [A Buddhist eLibrary](http://www.buddhistelibrary.org/en/index.php?lang=english)
+* [A Buddhist Library](https://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
+* [A Buddhist eLibrary](https://www.buddhistelibrary.org/en/index.php?lang=english)
 * [The Buddhist Studies WWW Virtual Library](http://www.ciolek.com/WWWVL-Buddhism.html)
 * [The Pagoda Library](https://pagoda.or.th/ebook-english-books.html)
-* [Bhikkhu Anandajoti's Dharma Records](http://dharma-records.buddhasasana.net/)
+* [Bhikkhu Anandajoti's Dharma Records](https://dharma-records.buddhasasana.net/)
   * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
   * [Dharma Documentaries](https://dharma-documentaries.net)
   * [PhotoDharma](https://www.photodharma.net/Books/Books.htm)
-  * [Buddhasasana.net](http://www.buddhasasana.net/)
+  * [Buddhasasana.net](https://www.buddhasasana.net/)
 * [The Zen Site](http://www.thezensite.com/index.html)
 * [DhammaWiki](https://dhammawiki.com/index.php/Main_Page)
-* [Bhikkhuni.net](http://www.bhikkhuni.net/library/)
+* [Bhikkhuni.net](https://www.bhikkhuni.net/library/)
 * [Study Buddhism](https://studybuddhism.com/)
+* [TibetHouse.jp](https://www.tibethouse.jp/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e4%bb%8f%e6%95%99/%e5%90%84%e7%a8%ae%e7%b5%8c%e6%9c%acpdf%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89/)
 * [Abhidhamma.com](http://abhidhamma.com/)
 * [The Kabaaye Buddhist Research Library](http://www.kbrl.gov.mm/catalog/Index/58)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
@@ -68,19 +75,23 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The MindRxiv](https://mindrxiv.org/discover?subject=MindRxiv%7CArts%20and%20Humanities%7CReligion%7CBuddhist%20Studies)
 * [SSRN](https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm)
 * [OpenAlex.org](https://docs.openalex.org/)
+</div>
 
+<div markdown="1" data-link-type="journals">
 ## Periodicals
 
 {% for j in site.journals %}
-* [{{ j.title }}]({{ j.external_url }}){% endfor %}
+* [{{ j.title }}]({{ j.external_url }}){:data-slug="{{ j.slug }}"}{% endfor %}
+</div>
 
+<div markdown="1" data-link-type="publishers">
 ## Open Access Publishers
 
 * [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
-* [The Buddhist Publication Society](http://www.bps.lk/library.php)
+* [The Buddhist Publication Society](https://www.bps.lk/library.php)
 * [Hamburg University Press](https://www.buddhismuskunde.uni-hamburg.de/en/publikationen/hamburg-buddhist-studies.html)
 * The Berkeley [Institute of Buddhist Studies](https://www.shin-ibs.edu/research/archived-publications-and-research-projects/)
-* [The Agama Research Group](http://agamaresearch.dila.edu.tw/publications)
+* [The Agama Research Group](https://agamaresearch.dila.edu.tw/publications)
 * [SuttaCentral](https://suttacentral.net/)
   * Its ["Discourse" Forum](https://discourse.suttacentral.net/search?q=pdf)
 * [The New Books Network](https://newbooksnetwork.com/category/religion-faith/buddhist-studies/)
@@ -88,8 +99,9 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [84000.co](https://84000.co/)
-* [Hong Kong University Theses](http://hub.hku.hk/handle/10722/50080)
+* [Hong Kong University Theses](https://hub.hku.hk/handle/10722/50080)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
 * [Pressbooks](https://pressbooks.directory/)
 * [OpenStax](https://openstax.org/subjects)
 * [punctum books](https://punctumbooks.com/)
+</div>

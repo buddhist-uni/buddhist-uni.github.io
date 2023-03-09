@@ -3,7 +3,7 @@ title: "Where's that sutta?"
 authors:
   - mills-laurence
 source_url: "https://archive.org/download/jpts-x-1985/Where_s%20That%20Sutta%20-%20Khantipalo_text.pdf"
-ultimate_source_url: "http://www.palitext.com/JPTS_scans/JPTS_1985_X.pdf"
+ultimate_source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1985_X.pdf"
 drive_links: 
   - "https://drive.google.com/file/d/1uxeRRVQSCwjftqW8NV6PHdHWnnpmvUQO/view?usp=drivesdk"
 course: an

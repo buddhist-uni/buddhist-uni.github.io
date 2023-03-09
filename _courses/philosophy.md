@@ -127,7 +127,7 @@ We start the course proper by talking about the founder and central figure of Bu
 
 <i class="fas fa-volume-up"></i> [BB-001_The_Buddha.mp3](https://drive.google.com/file/d/1vf43WM6V6DDSZLB_JUV9773XW5QyC0wU/view?usp=drivesdk){:target="_blank" ga-event-value="0.4"}
 {: .mb-0}
-- Bhikkhu Bodhi introduces us to the cosmology of Buddhism and the wonderous appearance of a Buddha in the world.
+- Bhikkhu Bodhi introduces us to the cosmology of Buddhism and the wondrous appearance of a Buddha in the world.
 
 #### Sutta Spotlight
 
@@ -320,10 +320,10 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 - A Chan Master answers a few, basic questions on reincarnation.
 
 {% include content_blurb.html category="av" slug="teaching-karma_courtin-robina" %}
-- Courtin describes how she introduces Karma to sceptical Westerners.
+- Courtin describes how she introduces Karma to skeptical Westerners.
 
 {% include content_blurb.html category="essays" slug="paticca-samuppada_brahm" %}
-- While dependent origination can be understood as describing both our moment-to-moment “rebirth” as well as our rebirth from lifetime to lifetime, many modern scholars sceptical of rebirth have tended to downplay the latter interpretation. Ajahn Brahm defends that interpretation by citing the Buddha's own analysis of the twelve factors. 
+- While dependent origination can be understood as describing both our moment-to-moment “rebirth” as well as our rebirth from lifetime to lifetime, many modern scholars skeptical of rebirth have tended to downplay the latter interpretation. Ajahn Brahm defends that interpretation by citing the Buddha's own analysis of the twelve factors. 
 
 
 {% include content_blurb.html category="canon" slug="an5.57" %}

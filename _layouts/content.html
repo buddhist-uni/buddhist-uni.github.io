@@ -47,6 +47,7 @@ layout: default
 <article class="content-perma">
 
   <header class="post-header">
+    <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
     {% if page.olid %}
     <img src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="the book cover">
@@ -78,7 +79,7 @@ layout: default
     {% include content_size.html content=page %}
  </header>
   <div class="post-content">
-        {% if page.category == "av" and page.external_url contains "youtu" or page.file_links[0] %}{% unless page.external_url contains "list" %}
+        {% if page.category == "av" and page.external_url contains "youtu" or page.file_links[0] or page.embedded_html %}{% unless page.external_url contains "list" %}
           {% include inline-av-player.html content=page %}
         {% endunless %}{% endif %}
         {{ content }}

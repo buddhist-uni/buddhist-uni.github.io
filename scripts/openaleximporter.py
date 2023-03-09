@@ -159,8 +159,10 @@ def make_library_entry_for_work(work, draft=False) -> str:
     elif category in ('excerpts', 'papers'):
         fd.write(f"booktitle: \"{venue}\"\n")
     elif category == 'articles':
-        journal = work['host_venue']['id'].split('/')[-1]
-        if journal in journals.slugs:
+        journal = work['host_venue']['id']
+        if journal:
+          journal = journal.split('/')[-1]
+        if journal and journal in journals.slugs:
           journal = journals.slugs[journal]
         else:
           journal = f"\"{venue}\""

@@ -17,4 +17,4 @@ pages: "180--205"
 
 Argues that the Pātimokkha ceremony as we know it today may have been a construction of the Second Council meant to tie together the dispersing and evolving monastic communities following the decline of the first generation of 'the little Buddhas' by codifying the ways of said elders.
 
-The way I read it, the article largely agrees with [Bhante Sujato's conclusion](/content/monographs/sects-and-sectarianism_sujato) that there was harmony by the end of the second (and third) councils and that the real sectarian splits occured much later due to distance rather than schism.
+The way I read it, the article largely agrees with [Bhante Sujato's conclusion](/content/monographs/sects-and-sectarianism_sujato) that there was harmony by the end of the second (and third) councils and that the real sectarian splits occurred much later due to distance rather than schism.

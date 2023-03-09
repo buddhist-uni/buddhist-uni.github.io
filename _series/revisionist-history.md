@@ -2,7 +2,7 @@
 title: "Revisionist History Podcast"
 authors:
   - "Malcolm Gladwell"
-external_url: "http://revisionisthistory.com/"
+external_url: "https://revisionisthistory.com/"
 publisher: Pushkin
 years: 2016–2020
 category: av
