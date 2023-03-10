@@ -14,8 +14,8 @@ custom_css: ["search"]
     </button>
   </div>
   <div class="TableObject-item">
-    <select id="search-type-filter" name="type" class="form-select" aria-label="Type">
-      <option value="">All types</option>
+    <select id="search-in-filter" name="in" class="form-select" aria-label="In">
+      <option value="">All content types</option>
       <option value="articles">Articles</option> 
       <option value="av">Av</option> 
       <option value="booklets">Booklets</option> 
@@ -25,6 +25,19 @@ custom_css: ["search"]
       <option value="essays">Essays</option> 
       <option value="excerpts">Excerpts</option>
       <option value="reference">Reference</option>
+    </select>
+  </div>
+  <div class="TableObject-item">
+    <select id="search-type-filter" name="type" class="form-select" aria-label="Type">
+      <option value="">All non-content types</option>
+      <option value="pages">Pages</option> 
+      <option value="authors">Authors</option> 
+      <option value="courses">Courses</option> 
+      <option value="journals">Journals</option> 
+      <option value="posts">Posts</option> 
+      <option value="publishers">Publishers</option> 
+      <option value="series">Series</option> 
+      <option value="tags">Tags</option>
     </select>
   </div>
 </form>
