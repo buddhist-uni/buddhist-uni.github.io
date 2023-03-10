@@ -23,22 +23,45 @@
     if (ret.length < QMIN) return '';
     return ret;
   }
-
-  var initialSearchTerm = sanitizeQuery(getQueryVariable('q'));
-  setTitle(initialSearchTerm);
+  
   const searchBox = document.getElementById('search-box');
   const inFilter = document.getElementById("search-in-filter");
   const typeFilter = document.getElementById("search-type-filter");
+
+  // Initialize search box
+  var initialSearchTerm = sanitizeQuery(getQueryVariable('q'));
   searchBox.setAttribute("value", initialSearchTerm);
-  window.history.replaceState({ "html": "", "q": initialSearchTerm }, "", window.location.href);
+
+  // Initialize inFilter
+  var inFilterValue = sanitizeQuery(getQueryVariable('in'));
+  if (inFilterValue !== null && inFilterValue !== '') {
+    inFilter.value = inFilterValue;
+  }
+
+  // Initialize typeFilter
+  var typeFilterValue = sanitizeQuery(getQueryVariable('type'));
+  if (typeFilterValue !== null && typeFilterValue !== '') {
+    typeFilter.value = typeFilterValue;
+  }
+
+  setTitle(initialSearchTerm);
+
+  window.history.replaceState({ "html": "", "q": initialSearchTerm, "in": inFilterValue, "type": typeFilterValue }, "", window.location.href);
 
   var checker = setTimeout(checkRunning, CHECKTIME);
+
   function maybeRegisterNavigation() {
     if (this.q == sanitizeQuery(searchBox.value)) {
       clearTimeout(pendingui);
-      var nuri = UpdateQueryString('q', this.q);
+      var nuri = '?q=' + encodeURIComponent(this.q);
+      if (inFilter.value !== '') {
+        nuri += '&in=' + encodeURIComponent(inFilter.value);
+      }
+      if (typeFilter.value !== '') {
+        nuri += '&type=' + encodeURIComponent(typeFilter.value);
+      }
       setTitle(this.q);
-      if (this.q != initialSearchTerm) {
+      if (this.q != initialSearchTerm || inFilterValue !== inFilter.value || typeFilterValue !== typeFilter.value) {
         window.history.pushState(this, "", nuri);
         if (typeof ga != 'undefined') ga('send', 'pageview', { location: nuri });
         if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
@@ -66,7 +89,7 @@
       var typeFilterValue = typeFilter.value;
       var inFilterQuery = "";
       var typeFilterQuery = "";
-    
+
       if (e.target === searchBox) {
         q = e.target.value;
       } else if (e.target === inFilter) {
@@ -74,22 +97,22 @@
       } else if (e.target === typeFilter) {
         typeFilterValue = e.target.value;
       }
-    
+
       if (inFilterValue && inFilterValue !== "") {
         inFilterQuery = "+in:" + inFilterValue;
       }
-    
+
       if (typeFilterValue && typeFilterValue !== "") {
         typeFilterQuery = "+type:" + typeFilterValue;
       }
-    
+
       q = sanitizeQuery(q);
       if (!q) return;
       if (pendingui) {
         clearTimeout(pendingui);
         pendingui = null;
       }
-    
+
       window.search_worker.postMessage({ 'q': q, 'filterquery': inFilterQuery + ' ' + typeFilterQuery, 'qt': performance.now() });
       clearTimeout(checker);
       checker = setTimeout(checkRunning, CHECKTIME);
@@ -144,13 +167,19 @@
       }
     }
     if (initialSearchTerm) {
-      window.search_worker.postMessage({ 'q': initialSearchTerm, 'qt': performance.now() });
+      const inFilterValue = sanitizeQuery(getQueryVariable('in'));
+      const typeFilterValue = sanitizeQuery(getQueryVariable('type'));
+      const inFilterQuery = inFilterValue ? ' in:' + inFilterValue : '';
+      const typeFilterQuery = typeFilterValue ? ' type:' + typeFilterValue : '';
+      window.search_worker.postMessage({ 'q': initialSearchTerm, 'filterquery': inFilterQuery + ' ' + typeFilterQuery, 'qt': performance.now() });
       running = 1;
-    } else {
+    }
+    
+     else {
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
       searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo%20%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi+%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, and &quot;in&quot; (articles, av, booklets, monographs, canon, papers, essays, excerpts, or reference).</li><li class="instructions"><strong>Search is fuzzy</strong> and will match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
-      window.history.replaceState({ "html": searchResults.innerHTML, "q": "" }, "", "/search/");
+      window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "typefilter": typefilter, "infilter": infilter }, "", "/search/?typefilter=" + encodeURIComponent(typefilter) + "&infilter=" + encodeURIComponent(infilter));
     }
     searchBox.addEventListener('input', newQuery);
     searchBox.addEventListener('propertychange', newQuery); // IE8
