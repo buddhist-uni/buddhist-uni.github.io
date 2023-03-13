@@ -10,6 +10,7 @@ status: featured
 course: hermeneutics
 tags:
   - logic
+  - epistemology
   - dialogue
 year: 2010
 month: jul
