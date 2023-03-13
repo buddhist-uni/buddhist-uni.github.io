@@ -213,25 +213,34 @@ function displaySearchResults(results) {
 }
 
 self.onmessage = function(e) {
-    var results = [];
-    try {
-      results = idx.search(e.data.q);
-    } catch (err) {
-      if (err.message.indexOf("unrecognised field") >= 0 && e.data.q.indexOf(":") >= 0) {
-        results = idx.search(e.data.q.replaceAll(":",""));
-      } else { throw err; }
-    }
-    if (!results.length){
-      var words = e.data.q.split(" ");
-      if (words.find(function(w){ return w.length <= 2; }) == undefined)
-        results = idx.search(words.join("~1 ") + "~1");
-    }
-    self.postMessage({
-      "html": displaySearchResults(results),
-      "count": results ? results.length : 0,
-      "q": e.data.q,
-      "qt": e.data.qt
+  var results = [];
+  try {
+    results = idx.search(e.data.q);
+  } catch (err) {
+    if (err.message.indexOf("unrecognised field") >= 0 && e.data.q.indexOf(":") >= 0) {
+      results = idx.search(e.data.q.replaceAll(":",""));
+    } else { throw err; }
+  }
+  if (!results.length){
+    var words = e.data.q.split(" ");
+    if (words.find(function(w){ return w.length <= 2; }) == undefined)
+      results = idx.search(words.join("~1 ") + "~1");
+  }
+  if (e.data.filterquery && e.data.filterquery !== "") {
+    var filteredResults = idx.search(e.data.filterquery);
+    results = results.filter(function(result) {
+      return filteredResults.some(function(filteredResult) {
+        return filteredResult.ref === result.ref;
+      });
     });
+  }
+  self.postMessage({
+    "html": displaySearchResults(results),
+    "count": results ? results.length : 0,
+    "q": e.data.q,
+    "filterquery": e.data.filterquery,
+    "qt": e.data.qt
+  });
 }
 
 
