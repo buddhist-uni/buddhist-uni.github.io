@@ -238,6 +238,7 @@ self.onmessage = function(e) {
     "html": displaySearchResults(results),
     "count": results ? results.length : 0,
     "q": e.data.q,
+    "filterquery": e.data.filterquery,
     "qt": e.data.qt
   });
 }

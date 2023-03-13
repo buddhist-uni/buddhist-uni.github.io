@@ -28,34 +28,35 @@
   const typeFilter = document.getElementById("search-type-filter");
 
   // Initialize search box
-  var initialSearchTerm = sanitizeQuery(getQueryVariable('q'));
-  searchBox.setAttribute("value", initialSearchTerm);
+  var originalSearchTerm = sanitizeQuery(getQueryVariable('q'));
+  searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize typeFilter
-  var typeFilterValue = sanitizeQuery(getQueryVariable('type'));
-  if (typeFilterValue !== null && typeFilterValue !== '') {
-    typeFilter.value = typeFilterValue;
+  var originalTypeFilterValue = sanitizeQuery(getQueryVariable('type'));
+  if (originalTypeFilterValue !== null && originalTypeFilterValue !== '') {
+    typeFilter.value = originalTypeFilterValue;
   }
 
-  setTitle(initialSearchTerm);
+  setTitle(originalSearchTerm);
 
-  window.history.replaceState({ "html": "", "q": initialSearchTerm, "type": typeFilterValue }, "", window.location.href);
+  window.history.replaceState({ "html": "", "q": originalSearchTerm, "type": originalTypeFilterValue }, "", window.location.href);
 
   var checker = setTimeout(checkRunning, CHECKTIME);
 
   function maybeRegisterNavigation() {
-    if (this.q == sanitizeQuery(searchBox.value)) {
+    if (this.q == sanitizeQuery(searchBox.value) && this.filterquery == sanitizeQuery(typeFilter.value)) {
       clearTimeout(pendingui);
       var nuri = '?q=' + encodeURIComponent(this.q);
-      if (typeFilter.value !== '') {
-        nuri += '&type=' + encodeURIComponent(typeFilter.value);
+      if (this.filterquery !== null && this.filterquery !== '') {
+        nuri += '&type=' + encodeURIComponent(this.filterquery);
       }
       setTitle(this.q);
-      if (this.q != initialSearchTerm || typeFilterValue !== typeFilter.value) {
+      if (this.q != originalSearchTerm || this.filterquery != originalTypeFilterValue) {
         window.history.pushState(this, "", nuri);
         if (typeof ga != 'undefined') ga('send', 'pageview', { location: nuri });
         if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
-        initialSearchTerm = this.q;
+        originalSearchTerm = this.q;
+        originalTypeFilterValue = this.filterquery;
       } else {
         window.history.replaceState(this, "", nuri);
       }
@@ -106,7 +107,8 @@
       if (e.state) {
         searchBox.blur();
         searchBox.value = e.state.q;
-        initialSearchTerm = e.state.q;
+        originalSearchTerm = e.state.q;
+        typeFilter.value = e.state.filterquery ?? "";
         searchResults.innerHTML = e.state.html;
         setTitle(e.state.q);
         if (!e.state.html) {
@@ -148,10 +150,10 @@
         displayError(e);
       }
     }
-    if (initialSearchTerm) {
+    if (originalSearchTerm) {
       const typeFilterValue = sanitizeQuery(getQueryVariable('type'));
       const typeFilterQuery = typeFilterValue ? ' ' + typeFilterValue : '';
-      window.search_worker.postMessage({ 'q': initialSearchTerm, 'filterquery': typeFilterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': typeFilterQuery, 'qt': performance.now() });
       running = 1;
     }
     
@@ -159,7 +161,7 @@
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
       searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo%20%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi+%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, and &quot;in&quot; (articles, av, booklets, monographs, canon, papers, essays, excerpts, or reference).</li><li class="instructions"><strong>Search is fuzzy</strong> and will match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
-      window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "type": typeFilterValue }, "", window.location.href);
+      window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "type": originalTypeFilterValue }, "", window.location.href);
     }
     searchBox.addEventListener('input', newQuery);
     searchBox.addEventListener('propertychange', newQuery); // IE8
@@ -169,6 +171,6 @@
     console.error(e)
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
-      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(initialSearchTerm) + '">Click here to try Google instead</a></li>';
+      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();
