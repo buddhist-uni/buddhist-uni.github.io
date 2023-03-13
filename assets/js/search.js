@@ -25,38 +25,38 @@
   }
   
   const searchBox = document.getElementById('search-box');
-  const typeFilter = document.getElementById("search-type-filter");
+  const filterDropdown = document.getElementById("search-filter");
 
-  // Initialize search box
+  // Initialize search box and remember original value
   var originalSearchTerm = sanitizeQuery(getQueryVariable('q'));
   searchBox.setAttribute("value", originalSearchTerm);
 
-  // Initialize typeFilter
-  var originalTypeFilterValue = sanitizeQuery(getQueryVariable('type'));
-  if (originalTypeFilterValue !== null && originalTypeFilterValue !== '') {
-    typeFilter.value = originalTypeFilterValue;
+  // Initialize filter dropdown and remember original value
+  var originalFilterValue = sanitizeQuery(getQueryVariable('filter'));
+  if (originalFilterValue !== null && originalFilterValue !== '') {
+    filterDropdown.value = originalFilterValue;
   }
 
   setTitle(originalSearchTerm);
 
-  window.history.replaceState({ "html": "", "q": originalSearchTerm, "type": originalTypeFilterValue }, "", window.location.href);
+  window.history.replaceState({ "html": "", "q": originalSearchTerm, "filter": originalFilterValue }, "", window.location.href);
 
   var checker = setTimeout(checkRunning, CHECKTIME);
 
   function maybeRegisterNavigation() {
-    if (this.q == sanitizeQuery(searchBox.value) && this.filterquery == sanitizeQuery(typeFilter.value)) {
+    if (this.q == sanitizeQuery(searchBox.value) && this.filterquery == sanitizeQuery(filterDropdown.value)) {
       clearTimeout(pendingui);
       var nuri = '?q=' + encodeURIComponent(this.q);
       if (this.filterquery !== null && this.filterquery !== '') {
-        nuri += '&type=' + encodeURIComponent(this.filterquery);
+        nuri += '&filter=' + encodeURIComponent(this.filterquery);
       }
       setTitle(this.q);
-      if (this.q != originalSearchTerm || this.filterquery != originalTypeFilterValue) {
+      if (this.q != originalSearchTerm || this.filterquery != originalFilterValue) {
         window.history.pushState(this, "", nuri);
         if (typeof ga != 'undefined') ga('send', 'pageview', { location: nuri });
         if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
         originalSearchTerm = this.q;
-        originalTypeFilterValue = this.filterquery;
+        originalFilterValue = this.filterquery;
       } else {
         window.history.replaceState(this, "", nuri);
       }
@@ -76,17 +76,17 @@
     window.search_worker = new Worker("/assets/js/search_index.js");
     function newQuery(e) {
       var q = searchBox.value;
-      var typeFilterValue = typeFilter.value;
-      var typeFilterQuery = "";
+      var filterValue = filterDropdown.value;
+      var filterQuery = "";
 
       if (e.target === searchBox) {
         q = e.target.value;
-      } else if (e.target === typeFilter) {
-        typeFilterValue = e.target.value;
+      } else if (e.target === filterDropdown) {
+        filterValue = e.target.value;
       }
 
-      if (typeFilterValue && typeFilterValue !== "") {
-        typeFilterQuery = typeFilterValue;
+      if (filterValue && filterValue !== "") {
+        filterQuery = filterValue;
       }
 
       q = sanitizeQuery(q);
@@ -96,7 +96,7 @@
         pendingui = null;
       }
 
-      window.search_worker.postMessage({ 'q': q, 'filterquery': typeFilterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': q, 'filterquery': filterQuery, 'qt': performance.now() });
       clearTimeout(checker);
       checker = setTimeout(checkRunning, CHECKTIME);
       loadingIndicator.style.display = 'block';
@@ -108,7 +108,7 @@
         searchBox.blur();
         searchBox.value = e.state.q;
         originalSearchTerm = e.state.q;
-        typeFilter.value = e.state.filterquery ?? "";
+        filterDropdown.value = e.state.filterquery ?? "";
         searchResults.innerHTML = e.state.html;
         setTitle(e.state.q);
         if (!e.state.html) {
@@ -151,9 +151,9 @@
       }
     }
     if (originalSearchTerm) {
-      const typeFilterValue = sanitizeQuery(getQueryVariable('type'));
-      const typeFilterQuery = typeFilterValue ? ' ' + typeFilterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': typeFilterQuery, 'qt': performance.now() });
+      const filterValue = sanitizeQuery(getQueryVariable('filter'));
+      const filterQuery = filterValue ? ' ' + filterValue : '';
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
       running = 1;
     }
     
@@ -161,11 +161,11 @@
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
       searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo%20%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi+%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, and &quot;in&quot; (articles, av, booklets, monographs, canon, papers, essays, excerpts, or reference).</li><li class="instructions"><strong>Search is fuzzy</strong> and will match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
-      window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "type": originalTypeFilterValue }, "", window.location.href);
+      window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "filter": originalFilterValue }, "", window.location.href);
     }
     searchBox.addEventListener('input', newQuery);
     searchBox.addEventListener('propertychange', newQuery); // IE8
-    typeFilter.addEventListener('change', newQuery);
+    filterDropdown.addEventListener('change', newQuery);
     setTimeout(searchBox.focus.bind(searchBox), 610);
   } catch (e) {
     console.error(e)
