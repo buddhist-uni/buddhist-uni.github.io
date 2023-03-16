@@ -18,8 +18,8 @@ import journals
 
 # https://docs.openalex.org/
 # APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,host_venue.id:!{journals.BSR},host_venue.id:!{journals.JIABS},host_venue.id:!{journals.JGB},host_venue.id:!{journals.JJRS},host_venue.id:!{journals.IJDS},host_venue.id:!{journals.JBE},host_venue.id:!{journals.HIJBS},host_venue.id:!{journals.JCB},concepts.id:!{concepts.BUDDHISM},concepts.id:!{concepts.BUDDHA},concepts.id:{concepts.MEDITATION},cited_by_count:%3E300,publication_year:%3E1970,publication_year:%3C2021&per_page=50&sort=cited_by_count:desc"
-#APIURL="https://api.openalex.org/works?filter=title.search:Earnest,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
-APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
+APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
+#APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
 
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-A725F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"}
 
