@@ -9,6 +9,7 @@ description: "There is a time for learning from others, but the real work of eng
 
 ### Suttas
 <p>
+{% include content_blurb.html category="canon" slug="sn9.1" %}
 {% include content_blurb.html category="canon" slug="an6.42" %}
 {% include content_blurb.html category="canon" slug="an7.67" %}
 {% include content_blurb.html category="canon" slug="an9.42" %}
