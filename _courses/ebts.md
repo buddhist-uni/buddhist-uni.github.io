@@ -113,6 +113,8 @@ Starting with chapter six, however, the content starts to get a bit more challen
 and Bhikkhu Bodhi's lectures start to slow down. You may want to adjust your reading
 pace accordingly at that point.
 
+Some of Bhikkhu Bodhi's handouts for the course can be found [here](https://drive.google.com/drive/folders/1EbTdp2jf0ED2oIShXSaREEQwEGyBa8gW).
+
 ### Office Hours
 
 If any questions come up for you that aren't addressed in the lectures, I recommend 

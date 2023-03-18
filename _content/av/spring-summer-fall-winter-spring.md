@@ -13,6 +13,7 @@ year: 2003
 month: sep
 oclc: 916006065
 external_url: "https://youtube.com/playlist?list=PL6E3262FC8C5EC4D9"
+canary_url: "https://youtu.be/K9mrmvGvXOs"
 base_value: 1
 publisher: "Pandora Films"
 minutes: 105

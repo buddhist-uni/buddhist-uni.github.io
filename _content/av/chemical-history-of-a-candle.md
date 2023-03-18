@@ -5,6 +5,7 @@ authors:
   - "Don DeCoste"
   - "Bill Hammack"
 external_url: "https://youtube.com/playlist?list=PL0INsTTU1k2UCpOfRuMDR-wlvWkLan1_r"
+canary_url: "https://youtu.be/B8vSLgaW9WQ"
 course: science
 status: featured
 tags:

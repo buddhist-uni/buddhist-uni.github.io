@@ -5,6 +5,7 @@ authors:
 year: 2019
 subcat: course
 external_url: "https://www.buddhistinquiry.org/resources/offerings-analayo/lectures/"
+canary_url: "https://www.buddhistinquiry.org/wp-content/uploads/2017/01/Nibbana-04.pdf"
 source_url: "https://seeingthroughthenet.net/wp-content/uploads/2018/03/Mind-Stilled_HTML.htm"
 drive_links:
  - "https://drive.google.com/drive/folders/1ZRb1KbPTFmWELHeddGURT3y4Sbe3sgEO"

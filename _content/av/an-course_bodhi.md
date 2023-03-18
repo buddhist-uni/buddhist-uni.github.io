@@ -4,6 +4,7 @@ authors:
   - bodhi
 subcat: course
 external_url: "https://youtube.com/playlist?list=PLgu0hJSLkqCWjjvc-lIKVn6CAUK95TbV4"
+canary_url: "https://youtu.be/NTabU4Zbtfs"
 drive_links: 
   - "https://drive.google.com/folderview?id=1A0xJnRLgF0f1M8B5eEs2cOeiOKAlTtRw"
 formats: [MP4s]
