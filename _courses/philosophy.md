@@ -310,17 +310,20 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 
 #### Homework
 
-{% include content_blurb.html category="articles" slug="rebirth-and-the-west_analayo" %}
-- On belief in rebirth and the Buddhist path in historical perspective.
-
 {% include content_blurb.html category="canon" slug="mn135" %}
 - The Buddha explains how kamma accounts for the fortune and misfortune of beings.
 
+{% include content_blurb.html category="av" slug="teaching-karma_courtin-robina" %}
+- Ven. Courtin describes how she introduces Karma to skeptical Westerners.
+
+{% include content_blurb.html category="articles" slug="depressive-attributional-style-not-that_liu-michelle-s-et-al" %}
+- Belief that our problems are caused by our own deficiencies often contributes to depression, yet Buddhists seem immune to this effect. Why do you think that is? Is the Buddhist philosophy of Karma really "Depressive" as defined in this paper? Why or why not?
+
+{% include content_blurb.html category="articles" slug="rebirth-and-the-west_analayo" %}
+- On belief in rebirth and the Buddhist path in historical perspective.
+
 {% include content_blurb.html category="av" slug="reincarnation_sheng-yen" %}
 - A Chan Master answers a few, basic questions on reincarnation.
-
-{% include content_blurb.html category="av" slug="teaching-karma_courtin-robina" %}
-- Courtin describes how she introduces Karma to skeptical Westerners.
 
 {% include content_blurb.html category="essays" slug="paticca-samuppada_brahm" %}
 - While dependent origination can be understood as describing both our moment-to-moment “rebirth” as well as our rebirth from lifetime to lifetime, many modern scholars skeptical of rebirth have tended to downplay the latter interpretation. Ajahn Brahm defends that interpretation by citing the Buddha's own analysis of the twelve factors. 
