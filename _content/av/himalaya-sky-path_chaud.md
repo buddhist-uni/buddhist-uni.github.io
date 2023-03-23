@@ -9,7 +9,7 @@ course: cosmology
 tags:
   - tibetan
   - monastic-tibetan
-  - family
+  - families
   - rebirth
 year: 2008
 month: dec

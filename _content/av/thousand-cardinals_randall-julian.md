@@ -9,7 +9,7 @@ course: inner
 tags:
   - migration # could move here
   - present
-  - family
+  - families
   - mythology
 year: 2022
 month: jun

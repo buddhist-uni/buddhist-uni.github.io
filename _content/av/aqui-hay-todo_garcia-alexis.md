@@ -9,7 +9,7 @@ course: social
 tags:
   - california
   - places
-  - family
+  - families
 year: 2020
 month: sep
 series: slowdown

@@ -24,3 +24,5 @@ minutes: 31
 The incredible stories of Brian Eno's [Oblique Strategies](https://www.oblique-strategies.com/)
 and Keith Jarrett’s [Koln Concert](https://youtu.be/bZhTwoO0Fd8)
 and why diversity is better than it feels.
+
+For the exciting part two, see [Frankenstein versus the Volcano](/content/av/frankenstein-volcano_harford-tim).
