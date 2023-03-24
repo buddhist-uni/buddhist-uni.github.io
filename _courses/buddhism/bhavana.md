@@ -12,7 +12,7 @@ order: 9
 We continue with Chapters 22–26 on the Buddha's first teachings after his Awakening.
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-Chapter 6 introduces the Buddhist concept of "*bhavana*" or "Mental Development", analyzing the Path from the perspective of the mind.
+[Chapter 6](https://www.buddhanet.net/fundbud7.htm) introduces the Buddhist concept of "*bhavana*" or "Mental Development", analyzing the Path from the perspective of the mind.
 ' %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
 In Chapter 3 ("Right Intention") Bhikkhu Bodhi zooms in on the attitude with which we should undertake the practice.

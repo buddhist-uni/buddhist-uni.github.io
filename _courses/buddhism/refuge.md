@@ -31,7 +31,7 @@ We’ll break these up into bite-sized pieces over the coming lessons.
 For this module, let's **begin by reading:**
 - Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born (Don't worry: they're short chapters!)
 - Chapter 1 of *What the Buddha Taught*
-- And (optionally) through Chapter 2 of *Fundamentals* if you'd like to learn a bit about ancient India
+- And (optionally) [the Introduction](https://www.buddhanet.net/funbud1.htm), [Chapter 1](https://www.buddhanet.net/fundbud2.htm) and [Chapter 2](https://www.buddhanet.net/fundbud3.htm) of *Fundamentals* if you'd like to learn a bit about ancient India
 - (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path) and will return to _Being Nobody_ in the next lesson.)
 
 **In addition** to cracking open our new books, see:
