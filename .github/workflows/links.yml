@@ -36,7 +36,7 @@ jobs:
           uses: lycheeverse/lychee-action@v1.6.0
           with:
             lycheeVersion: '0.11.1'
-            args: --user-agent "${{ env.USER_AGENT }}" --base=https://buddhistuniversity.net --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=researchgate.net --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=dhammawheel.com --exclude=github.com --exclude=openlibrary.org --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=gstatic.com --exclude-mail --verbose --no-progress --cache --exclude-path=prod/content 'prod/**/*.html' 'main/_content/*/*.txt' prod/site.webmanifest prod/browserconfig.xml
+            args: --user-agent "${{ env.USER_AGENT }}" --exclude=bps.lk --exclude-link-local --timeout=30 --retry-wait-time=3 --max-redirects=8 --exclude=researchgate.net --exclude=illeakyw.sirv.com --exclude=googleapis.com --exclude=google.com --exclude=accesstoinsight.org --exclude=suttacentral.net --exclude=dhammawheel.com --exclude=github.com --exclude=openlibrary.org --exclude=google-analytics.com --exclude=worldcat.org --exclude=tinyletter.com --exclude=schema.org --exclude=gstatic.com --exclude-mail --verbose --no-progress --cache --exclude-path=prod/content 'prod/**/*.html' 'main/_content/*/*.txt' prod/site.webmanifest prod/browserconfig.xml
         - name: Create GitHub Issue
           uses: peter-evans/create-issue-from-file@v4
           with:
