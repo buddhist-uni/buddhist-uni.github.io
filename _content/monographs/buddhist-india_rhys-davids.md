@@ -1,10 +1,10 @@
 ---
 title: "Buddhist India"
 authors: [rhys-davids]
-source_url: "http://www.ahandfulofleaves.org/documents/Buddhist%20India_TWRDavids.pdf"
+external_url: "https://web.archive.org/web/20221007094435if_/https://www.ahandfulofleaves.org/documents/Buddhist%20India_TWRDavids.pdf"
 drive_links:
   - "https://drive.google.com/file/d/100pPruQ7DT0Mrp4GkVpWAscNynRaK1rd/view?usp=drivesdk"
-external_url: "https://archive.org/details/buddhistindiaytw00davi"
+source_url: "https://archive.org/details/buddhistindiaytw00davi"
 year: 1903
 month: jul
 olid: OL6928567M

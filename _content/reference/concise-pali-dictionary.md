@@ -4,7 +4,7 @@ authors:
   - "Buddhadatta Mahathera"
 external_url: "https://dictionary.sutta.org/"
 source_url: "https://www.budsas.org/ebud/dict-pe/index.htm"
-pdf_source: "http://www.ahandfulofleaves.org/documents/Concise%20Pali%20English%20Dictionary_Buddhadatta.pdf"
+pdf_source: "https://web.archive.org/web/20210715174320if_/https://www.ahandfulofleaves.org/documents/Concise%20Pali%20English%20Dictionary_Buddhadatta.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1PCCCfAaDAxzwmXQXiZApRPGcwf2f7Z5e/view?usp=drivesdk"
 course: pali-dictionaries

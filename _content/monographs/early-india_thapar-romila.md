@@ -4,7 +4,7 @@ authors:
   - "Romila Thapar"
 oclc: 1001285480
 olid: OL7352386M
-hidden_url: "http://www.ahandfulofleaves.org/documents/History%20of%20Early%20India%20From%20the%20Origins%20to%20AD%201300_Thapar.pdf"
+hidden_url: "https://web.archive.org/web/20220701102802if_/https://www.ahandfulofleaves.org/documents/History%20of%20Early%20India%20From%20the%20Origins%20to%20AD%201300_Thapar.pdf"
 tags:
   - setting
   - tantric-roots

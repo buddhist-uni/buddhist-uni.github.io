@@ -3,7 +3,7 @@ title: "Why Are the Four Noble Truths Called “Noble”?"
 authors:
   - norman
 editor: "Y. Karunadasa"
-source_url: "http://www.ahandfulofleaves.org/documents/Articles/Why%20are%20the%20Four%20Noble%20Truths%20Called%20Noble_Norman_PTS_2008.pdf"
+external_url: "https://web.archive.org/web/20221219044043if_/https://www.ahandfulofleaves.org/documents/Articles/Why%20are%20the%20Four%20Noble%20Truths%20Called%20Noble_Norman_PTS_2008.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1he5oix6PYZ31q1EpaLDS1PjrIjLdmovf/view?usp=drivesdk"
 course: pali-language

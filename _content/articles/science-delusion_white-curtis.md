@@ -3,7 +3,6 @@ title: "The Science Delusion"
 authors: [white-curtis]
 journal: tricycle
 year: 2014
-alternate_url: "http://www.ahandfulofleaves.org/documents/The%20Science%20Delusion_White_Heuman_Tricycle_23_3.pdf"
 file_links:
   - "exclusive_01/The%20Science%20Delusion%20(article)%20-%20Curtis%20White.pdf"
 source_url: "https://tricycle.org/magazine/science-delusion/"

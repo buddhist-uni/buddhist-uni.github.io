@@ -4,7 +4,6 @@ authors:
   - norman
 editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/11Norman.pdf"
-alternate_url: "http://www.ahandfulofleaves.org/documents/Articles/Theravada%20Buddhism%20and%20Brahmanical%20Hinduism_Brahmanical%20Terms%20in%20Buddhist%20Guise_TBF_Norman.pdf"
 drive_links:
   - "https://drive.google.com/file/d/11aWngyzdfoTRz4v_B_xmS3A3vzoaU7ia/view?usp=drivesdk"
 course: pali-language

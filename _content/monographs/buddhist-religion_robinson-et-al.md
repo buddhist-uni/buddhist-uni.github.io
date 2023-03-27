@@ -2,7 +2,7 @@
 title: "The Buddhist Religion: A Historical Introduction"
 authors: [robinson, johnson-willard, geoff]
 oclc: 1017725397
-external_url: "http://www.ahandfulofleaves.org/documents/The%20Buddhist%20Religion%20A%20Historical%20Introduction_%20Robinson.pdf"
+external_url: "https://web.archive.org/web/20221224191833if_/https://www.ahandfulofleaves.org/documents/The%20Buddhist%20Religion%20A%20Historical%20Introduction_%20Robinson.pdf"
 edition: Fourth
 year: 1997
 olid: OL972734M

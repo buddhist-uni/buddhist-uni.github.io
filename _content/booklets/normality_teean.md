@@ -4,7 +4,7 @@ authors:
   - "Luangpor Teean"
 editor: "Dave James"
 translator: "Tone Jinavamso"
-source_url: "http://www.ahandfulofleaves.org/documents/Normality_LPTeean_2009.pdf"
+external_url: "https://web.archive.org/web/20220714000708if_/https://www.ahandfulofleaves.org/documents/Normality_LPTeean_2009.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1ksqGKZHMRZn2OjtLSbzFVo-l5Qa6QnJe/view?usp=drivesdk"
 course: thai

@@ -4,7 +4,7 @@ authors: [skilling]
 course: sects
 tags:
   - theravada-roots
-source_url: "http://www.ahandfulofleaves.org/documents/Scriptural%20Authenticity%20and%20the%20Sravaka%20Schools_An%20Essay%20towards%20an%20Indian%20Perspective_Peter%20Skilling_EB_41-2_2010.pdf"
+external_url: "https://web.archive.org/web/20220301024116if_/https://ahandfulofleaves.org/documents/Scriptural%20Authenticity%20and%20the%20Sravaka%20Schools_An%20Essay%20towards%20an%20Indian%20Perspective_Peter%20Skilling_EB_41-2_2010.pdf"
 year: 2010
 pages: "179--208"
 drive_links:
