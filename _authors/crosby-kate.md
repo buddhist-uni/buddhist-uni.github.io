@@ -2,8 +2,11 @@
 title: "Kate Crosby"
 ---
 
-Kate Crosby joined King’s as Professor of Buddhist Studies in April 2013. She came to King’s from SOAS where she was Director of the Centre of Buddhist Studies and Seiyu Kiriyama Reader in Buddhist Studies. Before that she held posts in Buddhism, Pali and Sanskrit at the universities of Edinburgh, Lancaster and Cardiff, as well as teaching in Oxford at a number of colleges and the Oriental Institute. She has held visiting professorships at the Universities of McGill, Montreal, Dongguk, Seoul and the Buddhist Institute, Phnom Penh. She studied Sanskrit, Pali and other Buddhist languages, Indian religions and Buddhism at Oxford (MA and D.Phil., St. Hugh’s and St. Peter’s). She also studied at the universities of Hamburg and Kelaniya (Sri Lanka), as a Commonwealth Scholar, and with traditional teachers in Pune, Varanasi and Kathmandu.
+After reading Sanskrit with Pali at St Hugh’s College, Oxford (1986−1989), Kate Crosby studied at the University of Hamburg and the University of Kelaniya, Sri Lanka, before returning to Oxford to complete her DPhil in medieval Sri Lankan literature in 1999.
+She combines textual research on Sanskrit, Pali and vernacular literature with fieldwork in mainland Southeast Asia and Sri Lanka.
+In addition to editions and translations, her publications cover the history, ethics and practices of Theravada Buddhism.
 
-In addition to textual work using mainly classical languages, as well as some in mixed Pali-Sinhala, she has conducted fieldwork in most Theravada countries. She is co-editor of the international peer-review journal Contemporary Buddhism and a member of the Theravada Civilizations Project.
+Kate Crosby joined King’s College London as Professor of Buddhist Studies in April 2013 after being Director of the Centre of Buddhist Studies at SOAS.
+In addition to teaching and continuing her own research, Professor Crosby also co-edits the international journal [Contemporary Buddhism](https://www.tandfonline.com/action/showOpenAccess?journalCode=rcbh20).
 
-_~ From [Kings College London] (https://www.kcl.ac.uk/people/kate-crosby)
+_~ From [Balliol](https://www.balliol.ox.ac.uk/professor-kate-crosby) and [Kings College](https://www.kcl.ac.uk/people/kate-crosby)_

@@ -6,7 +6,7 @@
   "license": "MIT",
   "bugs": "https://github.com/buddhist-uni/buddhist-uni.github.io/issues",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@primer/css": "^20.2.0",
     "purgecss": "^4.1.3"
   },

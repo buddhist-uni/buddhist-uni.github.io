@@ -16,7 +16,7 @@ Continue with Chapters 45–46, which introduce the Buddha's greatest disciples:
 We conclude our study of the Noble Eightfold Path with Chapter 8: "Wisdom"---and the ability to act for the benefit of others.
 ' %}
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb='
-(Optional) Chapter 8 covers "The World Today"---or at least the world of the 1960s (when it was written!).
+(**Optional**) The final chapter on ["The World Today"](https://sites.google.com/site/rahulawhatthebuddha/what-the-buddha-taught)---or at least the world of the 1960s, when this chapter was written!
 ' %}
 {% include content_blurb.html category="canon" slug="khp5" blurb="
 Read the Buddha's own overview of 'the good life'

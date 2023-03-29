@@ -53,7 +53,7 @@ Take your time. Meditate on it. Let this weekly ritual become part of your life.
 
 In this course, we study the Early Buddhist Texts by reading the Majjhima Nikaya.
 
-I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} to get a sense of what to expect from this course.
+I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} and [this introductory analysis by Bhante Analayo](/content/articles/centrality-of-mindfulness-related_analayo) to get a sense of what to expect from this course.
 
 ### Textbook
 
