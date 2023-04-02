@@ -4,6 +4,7 @@ authors:
   - norman
 editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/11Norman.pdf"
+source_url: "https://www.academia.edu/15728091/The_Buddhist_Forum_II"
 drive_links:
   - "https://drive.google.com/file/d/11aWngyzdfoTRz4v_B_xmS3A3vzoaU7ia/view?usp=drivesdk"
 course: pali-language
@@ -15,6 +16,7 @@ booktitle: "The Buddhist Forum"
 publisher: SOAS
 address: London
 volume: 2
+chapter: 11
 pages: "193--200"
 ---
 

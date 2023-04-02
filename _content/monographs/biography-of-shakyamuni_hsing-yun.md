@@ -22,6 +22,6 @@ tags:
 pages: 214
 ---
 
-A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master. My most highly recommended biography of the Buddha.
+A deeply human, simple but powerful retelling of the Buddha’s life story from a renowned modern master.
 
 Note: The above PDF link is missing Chapter 40. You can read the missing chapter [online here](https://drive.google.com/file/d/1iD19Tw0IV-kUegKBOrlmh1x_rC6H5TZ8/view?usp=drivesdk){:target="_blank"}.

@@ -18,6 +18,7 @@ booktitle: "The Buddhist Forum"
 publisher: SOAS
 address: London
 volume: 4
+chapter: 8
 pages: "141--162"
 ---
 

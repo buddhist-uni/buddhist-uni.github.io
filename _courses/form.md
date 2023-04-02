@@ -39,7 +39,7 @@ next_course_descs:
 Whether Buddhism even is a “religion” at all is, of course, a matter of some controversy. Is it a philosophy? A movement? A practice? An aesthetic? Who even counts as “a Buddhist”?
 
 In defining the bounds of “who is Buddhist”, some “middle way” may be desirable, between:
-1. The conservative, “prescriptive” definition (The Buddha once said that only enlightened beings count as his followers!)
+1. The conservative, “prescriptive” definition (The Buddha [once said](https://www.dhammatalks.org/suttas/SN/SN55_40.html) that only beings on their way to enlightenment count as his followers!)
 2. And the completely liberal, “historical” definition (The Buddha's life has materially impacted everything from ancient trade routes, to Islamic art, Christian conflicts, IKEA designs, software engineering practices… nearly every human life today.)
 
 In searching for such a middle way, I take on Bhante Yuttadhammo’s definition of Religion here, and say that “Religion is whatever you take seriously.” 

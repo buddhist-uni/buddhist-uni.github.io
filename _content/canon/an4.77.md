@@ -6,6 +6,7 @@ external_url: "https://suttacentral.net/an4.77/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1q_GAi-c9MHtbG2gLdEbxzMRfllj9u5Nz/view?usp=drivesdk"
 course: thought
+status: featured
 tags:
   - karma
   - iddhi

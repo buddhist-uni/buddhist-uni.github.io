@@ -14,7 +14,7 @@ tags:
   - bart
 year: 2020
 month: oct
-journal: "Ars Orientalis"
+journal: ao
 volume: 50
 pages: "33--54"
 openalexid: W3123722351

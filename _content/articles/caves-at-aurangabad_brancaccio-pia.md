@@ -13,12 +13,11 @@ tags:
   - lay
   - deccan
 year: 2000
-journal: "Ars Orientalis"
+journal: ao
 volume: 30
 notes: "Supplement"
 number: 1
 pages: "41--50"
-publisher: "The University of Michigan"
 ---
 
 > In contrast to the monastic emphasis at Ajanta, Aurangabad seems to have been more open to laity, emerging as a religious sanctuary serving primarily the nonordained

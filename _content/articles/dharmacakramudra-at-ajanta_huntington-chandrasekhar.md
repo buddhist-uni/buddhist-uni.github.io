@@ -14,7 +14,7 @@ tags:
   - bart
   - deccan
 year: 2000
-journal: "Ars Orientalis"
+journal: ao
 volume: 30
 notes: "Supplement"
 number: 1

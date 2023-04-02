@@ -21,6 +21,4 @@ Read the introduction to Part 1 of [Hecker]({% link _content/monographs/similes-
 
 ### Reflections
 
-I notice that the passion images (a stream, an ocean, an affliction) are more wet and natural than the images for its near-synonym “craving” (though of course still negative). What does this say about the Buddhist attitude towards passion (especially vis-a-vis craving)? How are they different?
-
-
+When you're ready, [click here for this module's reflection question](https://docs.google.com/forms/d/e/1FAIpQLSc2c_00wnahvOQgYoj6YTFdnzaa0-CustS95CYZQIBZYM9YNg/viewform?usp=sf_link).
