@@ -24,7 +24,7 @@ big_width: 1645
 big_height: 2360
 image_center_y: 13%
 image_center_x: 87%
-banner_info: <a href="https://archive.org/details/mythsofthehindus00niveuoft">Abanindro Nath Tagore</a>
+banner_info: <a href="https://archive.org/details/mythsofthehindus00niveuoft/page/n9/mode/1up">Abanindro Nath Tagore</a>
 next_courses:
   - function
   - mn

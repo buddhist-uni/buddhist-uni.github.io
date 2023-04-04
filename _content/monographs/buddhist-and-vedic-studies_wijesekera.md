@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/19q54jtZq6XkcPG537mc4sB91HXY-Kb2Q/view?usp=drivesdk"
 tags:
   - sutta
-  - indic
+  - indic-religions
 year: 1994
 publisher: "Motilal Banarsidass"
 address: "Delhi"

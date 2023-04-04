@@ -29,18 +29,18 @@ Our mission is to provide:
 - **University-Quality**
 - **Pan-Sectarian**
 - **Open-Access**
-- **Undergraduate-Level**
 
 resources in English for those interested in Buddhism.
 
-We curate a selection of academic material leveraging what modern scholarship says about pre-sectarian Buddhism to present today's Buddhist traditions in a sympathetic but historical light.
-Our collection is intended as a comprehensive curriculum for students and teachers of Buddhism, though researchers may find some of our references helpful as well!
+We curate a selection of academic material leveraging both what modern scholars and deeply-engaged practitioners have to say in order to present today's Buddhist traditions in a sympathetic but historically-accurate light.
+Our collection is intended as a comprehensive curriculum for students and teachers of Buddhism, but researchers will no doubt find our resources helpful as well!
 
-For more details on how we source our content, see [the Collection Policy Framework](https://buddhistuniversity.net/COLLECTION_POLICY).
+For more details on how our content is sourced, see our [Collection Policy](https://buddhistuniversity.net/COLLECTION_POLICY).
 
 ## Usage
 
-The Open Buddhist University is free to use and can be found online at: [https://buddhistuniversity.net/](https://buddhistuniversity.net/)
+The Open Buddhist University is and will always be completely free to use.
+It can be accessed online at: [https://buddhistuniversity.net/](https://buddhistuniversity.net/)
 
 [Click here](https://youtu.be/TPmTxHuQ9AI?t=22s) for a video tour of the site.
 

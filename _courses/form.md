@@ -383,6 +383,10 @@ While not representative of the diversity within each of the following "national
 {% include content_blurb.html category="av" slug="korean-buddhist-art_aam" %}
 - A Korean nun demonstrates the Buddhist spirit of generosity.
 
+{% include content_blurb.html category="articles" slug="temple-stay-as-transformative-travel_ross-susan-l-et-al" %}
+- A Korean visits a temple and reflects on "transformation" tourism.
+- Is this a positive example of Buddhism adapting to the modern world or a negative example of the Dharma becoming a commodity?
+
 ##### Robinson Chapter 10: Japan
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
