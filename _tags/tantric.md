@@ -2,6 +2,7 @@
 title: "Vajrayāna"
 sortkey: 3
 parents: [mahayana]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/Mandala_of_Vajradhatu.jpeg
 illustration_height: 826
 illustration_width: 1024

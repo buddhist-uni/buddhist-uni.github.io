@@ -1,5 +1,6 @@
 ---
 title: "Mahāyāna"
+status: published
 parents: [form]
 sortkey: 2
 illustration: https://illeakyw.sirv.com/Images/tags/Tang-Guanyin.jpg

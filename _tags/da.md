@@ -1,6 +1,7 @@
 ---
 title: "The Dīrgha Āgama"
 parents: [agama]
+status: published
 is_canon: true # changes the layout slightly
 sortkey: 1
 ---

@@ -8,8 +8,8 @@ year: 2010
 course: pali-texts
 tags:
   - sutta
-  - mn-trans
-  - dn-trans
+  - mn-translation
+  - dn-translation
 ---
 
 A complete copy of the four main Nikāyas of the Sutta Piṭaka in their original language, along with many fine translations in English, including M. Old's entertaining and thoughtful originals.

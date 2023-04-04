@@ -1,6 +1,7 @@
 ---
 title: "Buddhist Philosophy"
 parents: [path]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/jade-teaching.jpg
 illustration_height: 973
 illustration_width: 1024

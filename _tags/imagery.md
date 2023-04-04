@@ -1,5 +1,6 @@
 ---
 title: "Imagery in the EBTs"
+status: published
 sortkey: 4
 level: 3
 parents: [ebts, philosophy]

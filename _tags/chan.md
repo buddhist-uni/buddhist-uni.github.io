@@ -1,5 +1,6 @@
 ---
 title: "Chan / Zen"
+status: published
 parents: [mahayana, chinese-religion]
 sortkey: 2
 illustration: https://illeakyw.sirv.com/Images/tags/Patriarchs_of_Zen.jpg

@@ -1,5 +1,6 @@
 ---
 title: "The Buddha"
+status: published
 sortkey: 1
 level: 3
 parents:

@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/10JX_2P5b_ZJ3X5wj3dwSC8XUUOWh0cU-/view?usp=drivesdk"
 course: nuns
 tags:
-  - apadana
+  - avadana
   - rebirth-stories
   - characters
 year: 2011

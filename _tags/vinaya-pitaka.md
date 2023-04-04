@@ -1,6 +1,7 @@
 ---
 title: "The Vinaya"
 parents: [pali-canon]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/life-of-the-buddha.jpg
 illustration_width: 965
 illustration_height: 611

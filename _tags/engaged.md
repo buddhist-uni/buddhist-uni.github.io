@@ -1,5 +1,6 @@
 ---
 title: "Engaged Buddhism"
+status: published
 parents:
   - ethics
   - modern

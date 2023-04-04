@@ -1,0 +1,4 @@
+---
+title: "Religion"
+parents: [ideology]
+---

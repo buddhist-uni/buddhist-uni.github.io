@@ -1,5 +1,6 @@
 ---
 title: "The Digha Nikāya"
+status: published
 parents: [sutta]
 is_canon: true # changes the layout slightly
 sortkey: 1

@@ -26,7 +26,7 @@ layout: default
 
 {% assign tags = '' | split: '' %}
 {% for t in page.tags %}
-  {% assign tag = site.tags | find: "slug", t %}
+  {% assign tag = site.tags | where: "status", "published" | find: "slug", t %}
   {% if tag %}
     {% capture taglink %}<a href="{{ tag.url }}">{{ tag.title }}</a>{% endcapture %}
     {% assign tags = tags | push: taglink %}

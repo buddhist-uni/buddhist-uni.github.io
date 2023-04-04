@@ -1,6 +1,7 @@
 ---
 title: "Samatha"
 parents: [meditation]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/Buddha_Flower_Blossom.jpg
 illustration_width: 678
 illustration_height: 1024

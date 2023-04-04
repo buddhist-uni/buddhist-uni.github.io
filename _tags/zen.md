@@ -1,0 +1,4 @@
+---
+title: "Zen"
+parents: [japanese]
+---

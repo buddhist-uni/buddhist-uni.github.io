@@ -11,7 +11,7 @@ subcat: poetry
 tags:
   - tibetan
   - craft
-  - chan-literature
+  - chan-lit
   - monastic-advice
   - meditation
 year: 2013

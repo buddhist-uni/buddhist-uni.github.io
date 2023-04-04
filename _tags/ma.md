@@ -1,5 +1,6 @@
 ---
 title: "The Madhyama Āgama"
+status: published
 parents: [agama]
 is_canon: true # changes the layout slightly
 sortkey: 2

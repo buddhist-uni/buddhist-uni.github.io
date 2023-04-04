@@ -1,0 +1,4 @@
+---
+title: "Ideology"
+parents: [intellect]
+---
