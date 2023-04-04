@@ -1,0 +1,5 @@
+---
+title: "Psychology"
+parents: [perception]
+---
+

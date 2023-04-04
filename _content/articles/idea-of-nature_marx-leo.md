@@ -9,9 +9,8 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1gdv7C3sLw0fYis5_2psCpc9p5nA2sI-y/view?usp=drivesdk"]
 course: world
 tags:
-  - biology
   - natural
-  - natural-sciences
+  - science
   - climate-change
   - time
   - globalization

@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1oqhf31ieLBPtNeGMPBm5AriUFlOEFnRP/view?usp=drivesdk"
 course: chan
 tags:
-  - history
+  - roots
 year: 2008
 month: may
 address: "Sunnyvale, CA"

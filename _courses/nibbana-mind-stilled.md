@@ -14,6 +14,9 @@ epigraph: |
   ~ MN 22
 time: 2
 description: "An advanced course on the subtle components of the mind and how to understand their inner workings in order to put an end to our raging whirlpool of selfish thinking."
+tags:
+  - nibbana
+  - origination
 next_courses:
   - tranquility-and-insight
   - nibbana

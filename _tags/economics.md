@@ -1,0 +1,5 @@
+---
+title: "Economics"
+parents: [state]
+---
+

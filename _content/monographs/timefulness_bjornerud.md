@@ -6,13 +6,10 @@ year: 2018
 month: sep
 publisher: princeton
 status: featured
-course: natural-science
+course: science
 tags:
   - geology
   - nature
-  - science
-  - biology
-  - climate-change
   - time
   - world
 olid: OL27816874M

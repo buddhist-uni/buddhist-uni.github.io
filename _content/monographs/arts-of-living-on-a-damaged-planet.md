@@ -6,7 +6,6 @@ year: 2017
 publisher: "The University of Minnesota Press"
 course: wider
 tags:
-  - natural-sciences
   - science
   - biology
   - climate-change

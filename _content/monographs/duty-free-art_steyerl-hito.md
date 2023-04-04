@@ -11,7 +11,7 @@ course: present
 tags:
   - media
   - internet
-  - art-theory
+  - art
 year: 2017
 olid: OL26945408M
 publisher: Verso Books

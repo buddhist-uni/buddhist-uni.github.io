@@ -1,5 +1,5 @@
 ---
 title: "Contemplating Death"
-parents: [problems, aging, biology]
+parents: [problems, aging]
 ---
 

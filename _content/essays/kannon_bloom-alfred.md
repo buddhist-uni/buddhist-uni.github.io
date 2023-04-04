@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1NhtUOTrftLQdCYdV0uQw_oyfhtx34Qac/view?usp=drivesdk"
 course: mahayana
 tags:
-  - bodhisattvas
+  - bodhisattva
   - guanyin
 year: 2008 # Total Guess
 pages: 3

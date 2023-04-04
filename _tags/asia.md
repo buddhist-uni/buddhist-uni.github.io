@@ -1,0 +1,5 @@
+---
+title: "Asia"
+parents: [places]
+---
+

@@ -17,7 +17,7 @@ tags:
   - agama
   - chan-roots
   - chinese
-  - chinese-language
+  - mandarin
 next_courses:
   - tranquility-and-insight
 next_course_descs:

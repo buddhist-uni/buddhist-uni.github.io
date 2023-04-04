@@ -1,4 +1,0 @@
----
-title: "Rebirth"
-parents: [cosmology]
----

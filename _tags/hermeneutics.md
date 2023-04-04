@@ -1,0 +1,5 @@
+---
+title: "Hermenuetics"
+parents: [thought]
+---
+

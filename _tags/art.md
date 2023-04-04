@@ -1,0 +1,5 @@
+---
+title: "Art"
+parents: [feeling]
+---
+

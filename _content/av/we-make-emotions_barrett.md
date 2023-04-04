@@ -11,7 +11,7 @@ alternate_urls:
   - "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vdGhlZXpyYWtsZWluc2hvdw/episode/Y2ZiMjMxZWUtZmE3My0xMWU4LTkyN2EtZDdlZTE1ZjcwZTc0?ep=14"
 course: inner
 tags:
-  - feelings
+  - feeling
 year: 2019
 month: oct
 journal: vox

@@ -11,7 +11,7 @@ status: featured
 course: architecture
 tags:
   - groups
-  - feelings
+  - feeling
   - places
 year: 2023
 month: mar

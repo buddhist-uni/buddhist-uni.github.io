@@ -9,7 +9,6 @@ course: animals
 tags:
   - power
   - nature
-  - natural-sciences
   - biology
   - animalia
   - world

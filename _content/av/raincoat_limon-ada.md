@@ -6,7 +6,7 @@ subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/01/01/27-the-raincoat"
 status: featured
-course: family
+course: families
 tags:
   - social
 year: 2019

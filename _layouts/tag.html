@@ -28,7 +28,7 @@ layout: default
 </figure>
 {% endif %}
 
-{% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
+{% capture cfilter %}t.parents contains "{{ page.slug }}"{% if page.status == 'published' %} and t.status == "published"{% endif %}{% endcapture %}
 {% assign childtags = site.tags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
