@@ -4,7 +4,7 @@ authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/bareawareness.pdf"
 drive_links: ["https://drive.google.com/file/d/1aBdraDrs2yOC9NYyeW_5rjfbgQcNAgYH/view?usp=drivesdk"]
 tags:
-  - mindfulness
+  - sati
   - shikantaza
   - effort
 course: meditation

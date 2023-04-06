@@ -10,7 +10,6 @@ drive_links:
 course: meditation
 tags:
   - satipatthana
-  - mindfulness
   - academic
   - sutta
 status: featured

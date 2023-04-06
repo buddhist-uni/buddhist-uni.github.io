@@ -13,8 +13,6 @@ status: featured
 tags:
   - academic
   - neuroscience
-  - path
-  - mindfulness
   - daily-life
 pages: 15
 ---

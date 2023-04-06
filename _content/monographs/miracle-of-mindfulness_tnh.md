@@ -15,10 +15,9 @@ tags:
   - function
   - meditation
   - thought
-  - mindfulness
+  - sati
   - daily-life
   - chaplaincy
-  - world
 pages: 109
 ---
 

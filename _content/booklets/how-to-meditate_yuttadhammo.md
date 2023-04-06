@@ -9,10 +9,9 @@ drive_links:
   - "https://drive.google.com/file/d/17o_m0KpctsWn-sV_0NuX4_Sxy2Fuv7-x/view?usp=drivesdk"
 tags:
   - buddhism
-  - path
   - function
   - vipassana
-  - mindfulness
+  - sati
   - burmese
   - daily-life
 course: meditation

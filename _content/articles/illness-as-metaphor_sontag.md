@@ -8,7 +8,6 @@ journal: nyrb
 year: 1978
 course: inner
 tags:
-  - illness
   - death
   - disease
   - grief
@@ -16,8 +15,6 @@ tags:
   - thought
   - language
   - speech
-  - mindfulness
-  - problems
 status: featured
 pages: 31
 ---

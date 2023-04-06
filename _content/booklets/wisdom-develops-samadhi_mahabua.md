@@ -11,8 +11,7 @@ drive_links:
 course: philosophy
 status: featured
 tags:
-  - meditation
-  - mindfulness
+  - sati
   - path
   - vipassana
   - samadhi

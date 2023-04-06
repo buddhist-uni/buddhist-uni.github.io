@@ -11,11 +11,9 @@ course: function
 tags:
   - thought
   - meditation
-  - mindfulness
-  - samatha
   - canadian
   - chan
-  - world
+  - things
   - power
 minutes: 26
 ---

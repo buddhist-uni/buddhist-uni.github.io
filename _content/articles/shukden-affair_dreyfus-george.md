@@ -11,7 +11,7 @@ tags:
   - gelug
   - shugden
   - ideology
-  - group-identity
+  - groups
   - power
 year: 1998
 journal: jiabs

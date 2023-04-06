@@ -6,7 +6,7 @@ editor: "Matthew O'Connell"
 external_url: "https://newbooksnetwork.com/contemplative-existential-psychotherapy-and-dzogchen"
 course: dialogue
 tags:
-  - mindfulness
+  - sati
   - dzogchen
   - academic
 year: 2023

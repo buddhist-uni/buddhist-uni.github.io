@@ -1,5 +1,5 @@
 ---
 title: "The Internet"
-parents: [places]
+parents: [places, media]
 ---
 

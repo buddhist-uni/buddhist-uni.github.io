@@ -12,23 +12,22 @@ import { graphviz } from "https://cdn.jsdelivr.net/npm/d3-graphviz@5/+esm";
 
 {% assign knownslugs = '' | split: '' %}
 
-graphviz("#disp").height(3300).width(900).fit(true).zoom(false).renderDot(`digraph { rankdir="LR" 
+graphviz("#disp").height(1800).width(1200).fit(true).zoom(false).renderDot(`digraph { rankdir="LR" 
   node [style="dashed" fontname="arial"]
   {% comment %}Node Information{% endcomment %}
   { rank=same world buddhism }
+  splines=false;
   {% for t in site.tags %}{% assign knownslugs = knownslugs | push: t.slug %}{{ t.slug | replace: "-", "_" }} [label="{{ t.slug }}" tooltip="{{ t.title }}" URL="{{ t.url }}" style="{% if t.status == "published" %}bold" fontsize="15{% else %}solid{% endif %}"]
   {% endfor %}{% for c in site.data.course_order %}{% if knownslugs contains c %}{% continue %}{% endif %}
-  {{ c | replace: "-", "_" }} [label="{{ c }}" URL="/courses/{{ c }}" style="bold"]{% assign knownslugs = knownslugs | push: c %}{% endfor %}
+  {{ c | replace: "-", "_" }} [label="{{ c }}" URL="/courses/{{ c }}" style="bold" shape="Mdiamond"]{% assign knownslugs = knownslugs | push: c %}{% endfor %}
   {% comment %}Edge Information{% endcomment %}
-  {% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} {% if forloop.index0 > 0 %}[style="dashed"]{% endif %}{% break %}
+  {% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{% unless knownslugs contains p %}{% continue %}{% endunless %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} {% if forloop.index0 > 0 %}[penwidth={% if t.status == "published" %}0.8{% else %}0.5{% endif %}]{% else %}[penwidth={% if t.status == "published" %}2{% else %}1{% endif %} weight=7]{% endif %}
   {% endfor %}{% endfor %}{% comment %}TODO: ability to toggle the "break"ed edges off and on{% endcomment %}
-  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"]{% break %}
-  {% endfor %}{% endfor %}}`);
+  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"] {% endfor %}{% endfor %}}`);
 
 const othertags = [{% for c in site.content %}{% if c.course %}{% unless knownslugs contains c.course %}"{{ c.course }}",{% endunless %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t %}"{{ t }}",{% endunless %}{% endfor %}{% endfor %}];
 const ots = Array.from(new Set(othertags)).sort();
-d3.select("#others").html(`<h2>Misc Tags</h2><table><tr><th>Tag</th><th>Content Count</th></tr>${ots.map((t)=>`<tr><td>${t}</td><td>${othertags.filter((a)=>a==t).length}</td></tr>`).join('')}</table>`);
+d3.select("#others").html(`<h2>Misc Tags</h2><p>Below is a list of all the "shadow" tags which have been used on library content but which haven't yet been added to the above ontology. Some of these are vaguely planned for addition in the far future, but some are just keywords.</p><table><tr><th>Tag</th><th>Content Count</th></tr>${ots.map((t)=>`<tr><td>${t}</td><td>${othertags.filter((a)=>a==t).length}</td></tr>`).join('')}</table>`);
 
-d3.select("#hello").text("Below you'll find a simple flowchart of all the published and planned tags. Below that is a table of all the other miscelaneous keywords currently in use.");
+d3.select("#hello").text("Below you'll find a flowchart explaining the relationship between all the published and planned tags. Scroll left to right to see deeper into the ontology. Click on any node to open it up. Courses without associated tags are given diamonds. Published tags are in bold and secondary connections are given thinner lines.");
 </script>
-

@@ -1,5 +1,5 @@
 ---
 title: "Stages of the Path"
-parents: [path]
+parents: [path, nibbana]
 ---
 

@@ -1,5 +1,5 @@
 ---
 title: "Arahants"
-parents: [stages, nibbana]
+parents: [stages]
 ---
 

@@ -9,10 +9,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1mbopM-l37IcGF_u3l3J5LKhIiZWicgM8/view?usp=drivesdk"]
 course: function
 tags:
-  - meditation
   - vipassana
-  - mindfulness
-  - path
   - burmese
 base_value: 0.5
 status: featured

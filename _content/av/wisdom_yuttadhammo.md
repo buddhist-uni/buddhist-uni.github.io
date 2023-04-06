@@ -8,11 +8,9 @@ month: apr
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Internet/100427_Wisdom.mp3"
 course: philosophy
 tags:
-  - meditation
+  - sati
   - vipassana
   - khandha
-  - mindfulness
-  - path
 minutes: 35
 ---
 

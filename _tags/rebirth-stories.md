@@ -1,6 +1,6 @@
 ---
 title: "Canonical Rebirth Stories"
-parents: [indian, kn]
+parents: [indian, sutta]
 ---
 
 Rebirth stories in the Pāḷi Canon.

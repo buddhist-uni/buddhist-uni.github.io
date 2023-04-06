@@ -9,13 +9,10 @@ year: 1980
 course: path
 status: featured
 tags:
-  - visuddhimagga
-  - function
+  - vsm
   - nibbana
-  - meditation
   - samadhi
   - vipassana
-  - stages
   - stream-entry
 pages: 23
 ---

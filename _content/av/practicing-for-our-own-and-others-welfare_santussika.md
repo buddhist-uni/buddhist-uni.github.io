@@ -11,10 +11,9 @@ status: featured
 course: engaged
 tags:
   - path
-  - speech
-  - mindfulness
-  - hindrances
-  - west
+  - thought
+  - sati # problems?
+  - american
 minutes: 45
 ---
 

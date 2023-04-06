@@ -9,12 +9,10 @@ course: meditation
 status: featured
 tags:
   - path
-  - cognitive-development
+  - intellect
   - psychology
   - american
-  - philosophy
-  - thought
-  - mindfulness
+  - sati
 year: 2007
 note: "presented at the Annual Meeting of the Neural Information Processing Society, Workshop for the Hierarchical Organization of Behavior"
 address: "Vancouver"

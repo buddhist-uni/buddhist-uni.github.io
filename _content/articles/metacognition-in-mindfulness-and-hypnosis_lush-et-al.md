@@ -16,7 +16,6 @@ tags:
   - free-will
   - thought
   - metacognition
-  - mindfulness
   - academic
 pages: "1--10"
 ---

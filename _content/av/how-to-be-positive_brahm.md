@@ -11,7 +11,7 @@ course: buddhism
 tags:
   - psychology
   - problems
-  - mindfulness
+  - sati
 minutes: 54
 ---
 

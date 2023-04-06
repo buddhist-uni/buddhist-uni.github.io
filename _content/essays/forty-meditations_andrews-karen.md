@@ -8,9 +8,9 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1hHiCTuhmjOhtdccVrO5ZelA9avms3C3H/view?usp=drivesdk"]
 course: meditation
 tags:
-  - visuddhimagga
+  - vsm
   - theravada
-  - mindfulness
+  - sati
   - kammatthana
 pages: 2
 ---

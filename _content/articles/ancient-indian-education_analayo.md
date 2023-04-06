@@ -12,7 +12,7 @@ journal: Mindfulness
 status: featured
 volume: 10
 tags:
-  - mindfulness
+  - sati
 ---
 
 > Young Brahmins would already begin memorizing the sacred texts by rote when they were about eight years old, and some began the training still earlier. Only after having completed this task successfully, following years of memorization, would they study the meaning of what they had memorized.

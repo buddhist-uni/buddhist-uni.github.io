@@ -10,9 +10,6 @@ drive_links:
 course: meditation
 tags:
   - function
-  - path
-  - mindfulness
-  - vipassana
 minutes: 24
 ---
 

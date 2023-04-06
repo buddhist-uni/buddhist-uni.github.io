@@ -4,7 +4,7 @@ authors: ["Jiyong Geng", "Qiang Pi"]
 external_url: "https://www.globalbuddhism.org/article/view/1272/1109"
 drive_links: ["https://drive.google.com/file/d/1ysGxVrOIvNgEMpsh53kqymhh7CA73Vzq/view?usp=drivesdk"]
 tags:
-  - classic-poetry
+  - classical-poetry
   - ambulit
   - west
   - translation

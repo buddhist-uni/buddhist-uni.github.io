@@ -12,9 +12,7 @@ journal: vox
 course: meditation
 tags:
   - death
-  - buddhism
   - function
-  - mindfulness
 pages: 8
 ---
 

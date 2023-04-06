@@ -10,7 +10,7 @@ alternative_url: "https://www.listennotes.com/podcasts/factually-with/how-to-do-
 course: world
 tags:
   - media
-  - mindfulness
+  - sati
   - perception
   - capitalism
 year: 2019

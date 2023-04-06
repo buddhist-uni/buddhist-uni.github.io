@@ -10,10 +10,7 @@ volume: 10
 course: meditation
 tags:
   - anapanasati
-  - focus
-  - mindfulness
-  - visuddhimagga
-  - concentration
+  - vsm
 pages: 13
 ---
 

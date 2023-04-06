@@ -8,7 +8,6 @@ drive_links:
 course: meditation
 tags:
   - retreats
-  - mindfulness
   - chah
 year: 2012
 publisher: amaravati

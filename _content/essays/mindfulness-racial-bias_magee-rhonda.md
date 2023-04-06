@@ -7,12 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1S-oWjkg-QLFi249iDQu91x_2EsxnZPSf/view?usp=drivesdk"
 course: meditation
 tags:
-  - race
-  - engaged
-  - ethics
   - californian
-  - mindfulness
   - thought
+  - perception
 year: 2015
 month: may
 pages: 8

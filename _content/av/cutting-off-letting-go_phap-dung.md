@@ -9,9 +9,9 @@ course: power
 tags:
   - inner
   - lay
-  - mindfulness
   - daily-life
   - chaplaincy
+  - renunciation
   - problems
   - families
 minutes: 74
