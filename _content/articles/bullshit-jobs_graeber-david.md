@@ -10,7 +10,7 @@ course: time
 tags:
   - capitalism
   - labor
-  - society
+  - social
 year: 2013
 month: aug
 journal: "Strike! Magazine"

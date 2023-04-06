@@ -1,5 +1,5 @@
 ---
-title: "Biology"
+title: "The Biological Sciences"
 parents: [science]
 ---
 

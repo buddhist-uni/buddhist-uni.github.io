@@ -12,7 +12,7 @@ journal: jbe
 tags:
   - engaged
   - academic
-  - society
+  - social
   - mindfulness
 ---
 

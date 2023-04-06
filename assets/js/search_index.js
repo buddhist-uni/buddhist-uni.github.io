@@ -18,7 +18,7 @@ var RMAX = 100;
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}
-    {% if p.url contains "/tests/" or pagesWithoutContent contains p.title %}{% continue %}{% endif %}
+    {% if p.url contains "/tests/" or pagesWithoutContent contains p.title or p.status == "unpublished" %}{% continue %}{% endif %}
     "{{ p.url | slugify }}": {
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},

@@ -1,4 +1,4 @@
 ---
-title: "Academia and Buddhism"
+title: "Buddhism in Academia"
 parents: [west]
 ---

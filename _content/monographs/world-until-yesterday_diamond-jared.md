@@ -3,16 +3,9 @@ title: "The World Until Yesterday: What Can We Learn from Traditional Societies?
 authors:
   - diamond-jared
 status: featured
-course: society
+course: social
 tags:
-  - world
-  - places
-  - prehistory
-  - time
-  - science
-  - power
-  - state
-  - tribalism
+  - past
 year: 2012
 month: dec
 olid: OL27628407M

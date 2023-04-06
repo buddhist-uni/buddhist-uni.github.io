@@ -7,11 +7,11 @@ authors:
   - "Jim Salzman"
 editor: "Chris Berube"
 external_url: "https://99percentinvisible.org/episode/mine"
-course: society
+course: social
 tags:
+  - perception
   - economics
   - power
-  - inner
   - law
   - things
 year: 2021

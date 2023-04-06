@@ -7,8 +7,7 @@ external_url: "https://youtu.be/u-2BdSdoP6o"
 course: form
 subcat: film
 tags:
-  - buddhism
-  - society
+  - groups
   - art
 base_value: 0.2
 minutes: 4

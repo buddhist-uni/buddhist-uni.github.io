@@ -7,11 +7,11 @@ authors:
   - "Ezra Klein"
 year: 2019
 month: aug
-course: society
+course: groups
 tags:
   - childhood
   - pedagogy
-  - inner
+  - feeling
   - neuroscience
 minutes: 95
 ---

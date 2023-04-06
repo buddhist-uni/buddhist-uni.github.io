@@ -7,10 +7,9 @@ drive_links: ["https://drive.google.com/file/d/1JSJXTMMjD1YXutRLcs2cDrwbWKKbnEQM
 course: activism
 tags:
   - education
-  - time
-  - epistemology
-  - society
-  - engaged
+  - future
+  - dialogue
+  - social
 year: 2019
 publisher: Perspectiva Press
 address: London

@@ -7,7 +7,7 @@ subcat: music
 year: 2020
 month: jul
 external_url: "https://songexploder.net/waxahatchee"
-course: society
+course: social
 tags:
   - metta
 series: song-exploder

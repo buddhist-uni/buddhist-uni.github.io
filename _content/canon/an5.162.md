@@ -9,7 +9,7 @@ course: problems
 tags:
   - an
   - ethics
-  - society
+  - social
   - imagery
 status: featured
 year: 2018

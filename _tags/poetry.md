@@ -1,4 +1,4 @@
 ---
-title: "Poetry"
+title: "Poetry (General)"
 parents: [literature]
 ---

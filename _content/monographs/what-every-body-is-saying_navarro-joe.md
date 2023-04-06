@@ -4,13 +4,11 @@ authors:
   - "Joe Navarro"
 year: 2008
 publisher: "HarperCollins"
-course: society
+course: communication
 status: featured
 olid: OL30694360M
 tags:
   - body-language
-  - communication
-  - speech
   - chaplaincy
 pages: 250
 ---

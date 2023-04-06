@@ -5,12 +5,10 @@ authors:
 course: sex
 tags:
   - consent
-  - speech
   - communication
   - ethics
   - lay
   - chaplaincy
-  - society
 year: 2019
 olid: OL27337332M
 source_url: "https://direct.mit.edu/books/book/4304/Sexual-Consent"

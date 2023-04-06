@@ -1,5 +1,5 @@
 ---
-title: "Pāḷi Canon Poetry"
+title: "Poetry of the Pāḷi Canon"
 parents: [sutta]
 ---
 

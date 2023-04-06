@@ -1,5 +1,5 @@
 ---
-title: "Activism"
+title: "Social Activism"
 parents: [engaged]
 ---
 

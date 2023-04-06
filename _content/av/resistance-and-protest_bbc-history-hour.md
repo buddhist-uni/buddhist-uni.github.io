@@ -7,7 +7,6 @@ subcat: podcast
 external_url: "https://www.bbc.co.uk/programmes/w3cszkpd"
 course: state
 tags:
-  - society
   - activism
   - power
 year: 2020

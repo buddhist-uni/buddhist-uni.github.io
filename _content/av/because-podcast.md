@@ -5,9 +5,8 @@ authors: ["Gretchen McCulloch"]
 year: 2019
 month: nov
 external_url: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vdGhlZXpyYWtsZWluc2hvdw/episode/Y2ZjZWViMGUtZmE3My0xMWU4LTkyN2EtOGI5ZTNjZTViZDJl"
-course: society
+course: communication
 tags:
-  - language
   - internet
 minutes: 83
 ---

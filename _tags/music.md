@@ -1,5 +1,5 @@
 ---
-title: "Music"
+title: "Music (General)"
 parents: [art]
 ---
 

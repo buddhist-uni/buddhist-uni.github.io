@@ -10,8 +10,6 @@ month: dec
 course: world
 status: featured
 tags:
-  - time
-  - society
   - economics
   - becon
   - future

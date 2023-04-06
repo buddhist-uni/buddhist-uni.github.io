@@ -11,10 +11,10 @@ external_url: "https://www.vox.com/2020/11/30/21726563/kim-stanley-robinson-the-
 course: state
 tags:
   - climate-change
-  - craft
+  - writing-fiction
+  - literature
   - world
   - becon
-  - society
   - time
 minutes: 98
 ---

@@ -11,12 +11,9 @@ number: 1
 course: buddhism
 tags:
   - west
-  - modern
-  - society
-  - power
+  - present
   - ethics
-  - philosophy
-  - thought
+  - dialogue
 pages: "67--76"
 ---
 

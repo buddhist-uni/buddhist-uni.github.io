@@ -5,9 +5,10 @@ authors:
 year: 2019
 publisher: Polity
 course: power
-tags:
-  - society
+tags:	
   - ideology
+  - dialogue
+  - social
 oclc: 1114608461
 address: Cambridge
 olid: OL34044840M

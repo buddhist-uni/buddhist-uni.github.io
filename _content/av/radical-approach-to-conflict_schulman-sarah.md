@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2021/06/22/opinion/ezra-klein-podcast-sarah-schulman.html"
 status: featured
-course: society
+course: social
 tags:
   - activism
 year: 2021
