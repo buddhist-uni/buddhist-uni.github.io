@@ -1,5 +1,6 @@
 ---
 title: "Right View"
+status: unpublished
 parents: [philosophy]
 ---
 

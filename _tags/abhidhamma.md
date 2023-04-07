@@ -1,5 +1,6 @@
 ---
 title: "The Abhidhamma"
+status: unpublished
 parents: [theravada, pali-canon, abhidharma]
 ---
 

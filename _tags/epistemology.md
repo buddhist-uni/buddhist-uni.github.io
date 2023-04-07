@@ -1,5 +1,6 @@
 ---
 title: "Epistemology"
+status: unpublished
 parents: [philosophy]
 ---
 

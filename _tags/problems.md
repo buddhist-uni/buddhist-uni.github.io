@@ -1,5 +1,6 @@
 ---
 title: "Right Effort"
+status: unpublished
 parents: [meditation]
 ---
 

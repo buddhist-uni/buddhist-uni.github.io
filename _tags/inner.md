@@ -1,5 +1,6 @@
 ---
 title: "The Inner World"
+status: unpublished
 parents: [world]
 ---
 

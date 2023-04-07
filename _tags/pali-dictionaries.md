@@ -1,8 +1,8 @@
 ---
 title: "Pāli Dictionaries"
+status: published
 parents: [pali-language]
 sortkey: 1
-status: published
 ---
 
 References for looking up the meaning of Pāli terms.

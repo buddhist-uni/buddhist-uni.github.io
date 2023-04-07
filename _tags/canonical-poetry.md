@@ -1,5 +1,6 @@
 ---
 title: "Poetry of the Pāḷi Canon"
+status: unpublished
 parents: [sutta]
 ---
 

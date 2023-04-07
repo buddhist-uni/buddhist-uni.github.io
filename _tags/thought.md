@@ -1,5 +1,6 @@
 ---
 title: "Right Thought"
+status: unpublished
 parents: [philosophy, intellect]
 ---
 

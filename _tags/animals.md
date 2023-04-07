@@ -1,5 +1,6 @@
 ---
 title: "Buddhism and Animals"
+status: unpublished
 parents: [nature, animalia]
 ---
 

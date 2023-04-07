@@ -1,5 +1,6 @@
 ---
 title: "The Intellect"
+status: unpublished
 parents: [inner]
 ---
 
