@@ -1,9 +1,9 @@
 ---
 title: "Engaged Buddhism"
+status: published
 parents:
   - ethics
   - modern
-  - pureland
 description: A bibliography of works about Socially Engaged Buddhism.
 illustration: https://illeakyw.sirv.com/Images/tags/Guanyin-Hallwylska.jpg
 illustration_width: 512

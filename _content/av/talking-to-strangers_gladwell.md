@@ -7,9 +7,8 @@ course: policing
 tags:
   - law
   - justice
-  - society
+  - social
   - america
-  - speech
 publisher: Hachette Audio
 external_url: "https://share.libbyapp.com/title/4639728"
 minutes: 525

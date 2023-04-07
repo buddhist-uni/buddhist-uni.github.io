@@ -6,9 +6,7 @@ external_url: "https://99percentinvisible.org/episode/abandoned-ships"
 course: economics
 tags:
   - ocean
-  - labor
-  - power
-  - society
+  - social
 year: 2021
 month: may
 series: 99pi

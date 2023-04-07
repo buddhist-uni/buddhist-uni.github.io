@@ -5,7 +5,7 @@ authors: ["Emily Anthes"]
 year: 2020
 month: nov
 external_url: "https://99percentinvisible.org/episode/the-great-indoors/"
-course: natural-sciences
+course: science
 tags:
   - indoors
   - nature

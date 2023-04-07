@@ -2,7 +2,7 @@
 title: "Ends and Means: An Enquiry Into the Nature of Ideals and Into the Methods Employed for Their Realization"
 authors:
   - huxley-a
-course: society
+course: social
 olid: OL20389837M
 external_url: "https://archive.org/download/endsandmeans035237mbp/endsandmeans035237mbp.pdf"
 tags:
@@ -12,10 +12,8 @@ tags:
   - present
   - dialogue
   - power
-  - engaged
   - karma
   - academic
-  - world
 base_value: 2.25
 year: 1937
 status: featured

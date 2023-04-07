@@ -9,11 +9,8 @@ drive_links:
   - "https://drive.google.com/file/d/1XljEDLUxRmX31d6fD1fSVjrAJ8Yo-y6O/view?usp=drivesdk"
 course: nibbana
 tags:
-  - visuddhimagga
-  - theravada
-  - middle-way
+  - vsm
   - dialogue
-  - anatta
   - emptiness
 year: 1959
 series: wheel

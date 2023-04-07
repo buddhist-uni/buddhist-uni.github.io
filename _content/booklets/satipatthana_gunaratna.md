@@ -11,7 +11,6 @@ course: meditation
 base_value: 1
 tags:
   - satipatthana
-  - mindfulness
   - lay
   - modern
 year: 1963

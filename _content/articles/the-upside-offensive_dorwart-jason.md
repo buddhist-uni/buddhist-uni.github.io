@@ -5,8 +5,8 @@ external_url: "https://www.denverpost.com/2019/02/01/guest-commentary-as-a-quadr
 drive_links: ["https://drive.google.com/file/d/1THwiHSBBTCY4FHV-t7LrYPTOYEdGOM_7/view?usp=drivesdk"]
 tags: 
   - disability
-  - becon
-course: society
+  - economics
+course: groups
 year: 2019
 base_value: 0.15
 journal: "The Denver Post"

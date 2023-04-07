@@ -8,7 +8,7 @@ status: featured
 course: social
 tags:
   - historiography
-  - history-of-sociology
+  - sociology-roots
   - music
   - americas
 year: 2020

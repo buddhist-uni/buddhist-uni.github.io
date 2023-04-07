@@ -9,7 +9,7 @@ source_url: "https://www.nytimes.com/2021/08/24/opinion/ezra-klein-podcast-van-d
 status: featured
 course: feeling
 tags:
-  - society
+  - social
   - psychology
   - memory
   - trauma

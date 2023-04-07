@@ -1,7 +1,8 @@
 ---
 title: "Buddhism Comes West"
-parents: [form]
+parents: [form, present]
 sortkey: 3
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/Dhammagiri-golf-cart.jpg
 illustration_height: 711
 illustration_width: 1024

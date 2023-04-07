@@ -11,7 +11,7 @@ tags:
   - race
   - caste
   - power
-  - society
+  - social
 year: 2014
 oclc: 1101773886
 publisher: "Graywolf"

@@ -36,7 +36,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% assign thisyears = allcontent | where: "year", thisyear %}
 {% assign lastyears = allcontent | where: "year", lastyear | where: "status", "featured" %}
 {% assign courses = site.courses | map: "slug" %}
-{% assign tags = site.tags | map: "slug" | concat: courses %}
+{% assign tags = site.tags | where: "status", "published" | map: "slug" | concat: courses %}
 {% assign featurecontent = lastyears %}
 {% for c in thisyears %}
   {% if tags contains c.course %}

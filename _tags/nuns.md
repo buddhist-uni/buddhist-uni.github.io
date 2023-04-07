@@ -1,6 +1,7 @@
 ---
 title: "Nuns"
 description: "A list of free books and articles about Buddhist nuns."
+status: published
 sortkey: 3
 parents: [monastic]
 illustration: https://illeakyw.sirv.com/Images/tags/frankfurt-july-2007.jpg

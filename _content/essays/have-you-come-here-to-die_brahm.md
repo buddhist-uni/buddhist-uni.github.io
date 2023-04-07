@@ -10,8 +10,7 @@ tags:
   - death
   - monastic-advice
   - function
-  - view
-  - mindfulness
+  - philosophy
 year: 2004
 status: featured
 pages: 9

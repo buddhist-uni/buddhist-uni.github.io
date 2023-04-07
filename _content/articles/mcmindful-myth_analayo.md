@@ -4,13 +4,11 @@ authors:
   - analayo
 external_url: "https://link.springer.com/content/pdf/10.1007/s12671-019-01264-x.pdf"
 source_url: "https://dx.doi.org/10.1007/s12671-019-01264-x"
-drive_links:
+hidden_links:
   - "https://drive.google.com/file/d/17csSqY9bgTmummvBVElGKhdHdp2jxLZj/view?usp=drivesdk"
-course: west
+course: selling
 tags:
-  - selling
-  - mindfulness
-  - engaged
+  - modern
 year: 2020
 journal: "Mindfulness"
 volume: 11

@@ -9,7 +9,7 @@ external_url: "https://99percentinvisible.org/episode/the-sunshine-hotel/"
 source_url: "https://storycorps.org/stories/the-sunshine-hotel/"
 course: cities
 tags:
-  - society
+  - social
   - new-york
   - poverty
 series: 99pi

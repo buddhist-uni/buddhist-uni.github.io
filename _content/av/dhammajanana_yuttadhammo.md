@@ -10,7 +10,7 @@ file_links: ["function-data/LA-Lectures_Yuttadhammo/03%20-%20Knowing%20the%20Dha
 course: function
 tags:
   - ethics
-  - hermenuetics
+  - hermeneutics
 minutes: 61
 series: la-course_yuttadhammo
 number: 4

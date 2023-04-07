@@ -6,14 +6,11 @@ olid: OL33030582M
 course: intellect
 subcat: fiction
 tags:
-  - art
   - memory
   - religion
   - mythology
-  - prehistory
-  - hermeneutics
-  - places
-  - society
+  - migration
+  - labor
 oclc: 1250435935
 publisher: "Bloomsbury"
 year: 2020

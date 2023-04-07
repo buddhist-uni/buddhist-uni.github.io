@@ -7,7 +7,7 @@ reader: "Major Jackson"
 external_url: "https://www.slowdownshow.org/episode/2023/03/03/826-how"
 course: world
 tags:
-  - feelings
+  - feeling
   - time
 year: 2023
 month: mar

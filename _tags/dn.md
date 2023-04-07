@@ -1,5 +1,6 @@
 ---
-title: "The Digha Nikāya"
+title: "Digha Nikāya"
+status: published
 parents: [sutta]
 is_canon: true # changes the layout slightly
 sortkey: 1

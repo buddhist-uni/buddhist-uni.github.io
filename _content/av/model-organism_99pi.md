@@ -7,7 +7,6 @@ external_url: "https://99percentinvisible.org/episode/model-organism"
 course: wider
 tags:
   - biology
-  - natural-sciences
   - climate-change
   - anthropocene
 year: 2021

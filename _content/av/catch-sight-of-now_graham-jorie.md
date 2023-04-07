@@ -8,12 +8,11 @@ course: grief
 status: featured
 tags:
   - daily-life
-  - time
-  - places
+  - present
   - nuns
   - emptiness
   - ambulit
-  - mindfulness
+  - sati
 subcat: poetry
 journal: "The New Yorker"
 minutes: 5

@@ -8,7 +8,7 @@ drive_links:
 course: ethics
 tags:
   - mn
-  - mindfulness
+  - sati
   - monastic-advice
   - path
 year: 2018

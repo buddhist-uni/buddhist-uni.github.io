@@ -5,12 +5,11 @@ authors:
 year: 2020
 olid: OL28235045M
 publisher: "Graywolf"
-course: society
+course: groups
 oclc: 1193996162
 tags:
   - race
   - activism
-  - speech
   - communication
   - america
 pages: 352

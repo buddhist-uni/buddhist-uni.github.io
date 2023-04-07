@@ -11,7 +11,7 @@ course: pilgrimage
 tags:
   - setting
   - tibetan
-  - himalaya
+  - himalayas
   - central-asia
   - geology
   - world

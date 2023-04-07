@@ -1,6 +1,7 @@
 ---
 title: "Characters in the EBTs"
 sortkey: 3
+status: published
 parents:
   - ebts
 illustration: "https://illeakyw.sirv.com/Images/banners/elephant-taming-manuscript.jpg"

@@ -8,7 +8,7 @@ address: "New York"
 olid: OL32034215M
 course: world
 tags:
-  - natural-sciences
+  - science
   - geoengineering
   - climate-change
   - anthropocene

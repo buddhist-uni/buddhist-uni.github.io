@@ -10,11 +10,7 @@ base_value: 2.5
 course: form
 tags:
   - ethics
-  - society
-  - world
-  - ideology
-  - philosophy
-  - present
+  - daily-life
 status: featured
 pages: 209
 ---

@@ -1,6 +1,7 @@
 ---
-title: "The Saṃyutta Nikāya"
+title: "Saṃyutta Nikāya"
 parents: [sutta]
+status: published
 is_canon: true # changes the layout slightly
 sortkey: 3
 ---

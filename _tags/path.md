@@ -1,6 +1,7 @@
 ---
 title: "The Buddhist Path"
 parents: [function]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/boat-crossing-sketch.jpg
 illustration_width: 716
 illustration_height: 1130

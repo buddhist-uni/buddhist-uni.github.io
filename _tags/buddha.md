@@ -1,10 +1,10 @@
 ---
 title: "The Buddha"
+status: published
 sortkey: 1
 level: 3
 parents:
   - ebts
-  - cosmology
 illustration: https://illeakyw.sirv.com/Images/tags/buddha.jpg
 illustration_height: 1024
 illustration_width: 1022

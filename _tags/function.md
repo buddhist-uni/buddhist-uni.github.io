@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Practice"
+status: published
 parents: [buddhism]
 sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/Lotus_Flower.jpeg

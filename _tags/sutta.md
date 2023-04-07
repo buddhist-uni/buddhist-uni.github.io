@@ -1,6 +1,7 @@
 ---
 title: "The Suttas"
 parents: [pali-canon]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/evam-me-sutam.jpg
 illustration_height: 871
 illustration_width: 600

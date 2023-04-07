@@ -6,11 +6,12 @@ translator: "Timothy Hinkle"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/enchanting-wildwoods"
 tags:
   - nature
-  - wider
-  - monastic
+  - world
+  - monastic-advice
   - tibetan
   - problems
-  - society
+  - time
+  - literature
 subcat: poetry
 pages: 11
 ---

@@ -10,7 +10,7 @@ tags:
   - dn
   - buddha
   - indian
-  - iddhis
+  - iddhi
   - bart
 year: 2015
 journal: jocbs

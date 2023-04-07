@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Meditation"
+status: published
 parents: [path]
 illustration: https://illeakyw.sirv.com/Images/tags/Meditating_in_Madison_Square_Park.jpg
 illustration_height: 628

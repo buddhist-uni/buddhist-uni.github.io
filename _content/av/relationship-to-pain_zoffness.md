@@ -8,7 +8,7 @@ external_url: "https://www.nytimes.com/2023/02/21/opinion/17eks-ezra-klein-podca
 course: inner
 tags:
   - pain
-  - feelings
+  - feeling
   - medicine
 year: 2023
 month: feb

@@ -7,7 +7,7 @@ editor: "Alex Carroll"
 external_url: "https://newbooksnetwork.com/ronald-e-purser-mcmindfulness-how-mindfulness-became-the-new-capitalist-spirituality-repeater-books-2019"
 course: west
 tags:
-  - mindfulness
+  - sati
   - capitalism
   - dialogue
 year: 2019

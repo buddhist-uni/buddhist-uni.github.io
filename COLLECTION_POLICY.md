@@ -114,8 +114,7 @@ For example, a work about Buddhist Cosmology should be placed in "Cosmology" not
 When a work is added into the website, its `course` field is set to the slug of the folder it was accepted into on Google Drive.
 The work may also be tagged with additional `tags` which mark other topics the work is about.
 
-Tags should, but don't have to, correspond to folders on Drive.
-If they do, however, a work should usually not be tagged with both a folder **and** that folder's parent. Obviously a work about `thai` Buddhism is also about `theravada` and a work about `philosophy` is also about right `view`. Tags should mark wildly distant places a work may have been added: for example `sutta` and `lay` for a work about Pāḷi discourses to lay people.
+See [the "Adding items" wiki page](https://github.com/buddhist-uni/buddhist-uni.github.io/wiki/Adding-items-to-the-library) for more information.
 
 ## Conclusion
 

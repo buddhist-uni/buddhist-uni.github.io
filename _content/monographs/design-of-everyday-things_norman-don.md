@@ -2,7 +2,7 @@
 title: "The Design of Everyday Things"
 authors:
   - "Don Norman"
-course: society
+course: communication
 olid: OL10238426M
 status: featured
 tags:

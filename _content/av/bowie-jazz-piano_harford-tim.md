@@ -12,7 +12,7 @@ course: world
 tags:
   - music
   - problems
-  - feelings
+  - feeling
 year: 2019
 month: dec
 publisher: "Pushkin"

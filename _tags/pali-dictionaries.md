@@ -1,5 +1,6 @@
 ---
 title: "Pāli Dictionaries"
+status: published
 parents: [pali-language]
 sortkey: 1
 ---

@@ -8,7 +8,7 @@ drive_links:
 course: buddhism
 tags:
   - ethics
-  - society
+  - social
   - ideology
 year: 2007
 month: may

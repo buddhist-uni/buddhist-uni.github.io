@@ -5,14 +5,13 @@ external_url: "https://suttacentral.net/snp3.9/en/suddhaso"
 translator: suddhaso
 formats: [pdf]
 hidden_links: ["https://drive.google.com/file/d/1jWbWkoZXPcHln4f2wTqE_VWyvRM91MpJ/view?usp=drivesdk"]
-course: caste
+course: body
 subcat: poetry
+status: featured
 tags:
   - snp
-  - body
-  - society
   - ethics
-  - biology
+  - caste
 reason: "Duplicate of MN 98"
 year: 2018
 ---

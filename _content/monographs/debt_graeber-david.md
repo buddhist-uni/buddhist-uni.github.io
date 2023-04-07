@@ -7,10 +7,8 @@ status: featured
 olid: OL27883779M
 tags:
   - debt
-  - anthropology
-  - society
-  - power
-  - world
+  - time
+  - social
 year: 2011
 publisher: "Melville House"
 pages: 544

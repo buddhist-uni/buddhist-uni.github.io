@@ -9,7 +9,6 @@ status: featured
 course: west
 tags:
   - american
-  - history
   - monastic
 year: 2013
 month: aug

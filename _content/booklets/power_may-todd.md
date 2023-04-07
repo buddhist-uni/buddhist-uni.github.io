@@ -7,13 +7,13 @@ source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-power/
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/16VXJ8Z6P1sRsOc1_NMnbrmkEyj_vLCUQ/view?usp=drivesdk"
-course: power
+course: social
 tags:
   - monastic
   - pedagogy
   - activism
-  - society
-  - charisma
+  - power
+  - political-ideology
 year: 2012
 month: feb
 base_value: 1

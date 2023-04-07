@@ -7,7 +7,7 @@ year: 2015
 volume: 29
 number: 1
 journal: "The Journal of Refugee Studies"
-course: society
+course: social
 base_value: 0.75
 tags:
   - refugees
@@ -16,7 +16,7 @@ tags:
   - burma
   - night
   - time
-  - world
+status: featured
 pages: "1--18"
 ---
 

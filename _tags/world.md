@@ -2,6 +2,7 @@
 title: "The (Human) World"
 parents: [cosmology]
 level: 1
+status: published
 illustration: https://buddhistuniversity.net/imgs/Expedition_61_Soyuz_Landing.jpg
 illustration_height: 680
 illustration_width: 1024

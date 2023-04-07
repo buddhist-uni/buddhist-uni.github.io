@@ -5,10 +5,10 @@ drive_links:
   - "https://drive.google.com/file/d/14H-z0b83ZGSR7M_X9jfYdvZoZza41VbR/view?usp=drivesdk"
 file_links:
   - "exclusive_01/On%20Buddhist%20Education%20(2007.04.08)%20-%20Ajahn%20Jayasaro.mp3"
-course: society
+course: education
 tags:
   - sustainability
-  - education
+  - social
   - becon
 year: 2007
 month: apr

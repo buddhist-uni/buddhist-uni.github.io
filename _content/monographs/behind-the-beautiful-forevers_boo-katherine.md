@@ -8,19 +8,14 @@ olid: OL25094126M
 course: world
 status: featured
 tags:
-  - society
   - places
   - india
   - mumbai
-  - economics
-  - becon
+  - inequality
   - class
-  - caste
-  - craft
   - journalism
   - future
   - power
-  - refugees
   - renunciation
 pages: 250
 ---

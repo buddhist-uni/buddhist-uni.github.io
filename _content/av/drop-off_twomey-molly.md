@@ -7,7 +7,7 @@ reader: "Pádraig Ó Tuama"
 external_url: "https://onbeing.org/programs/molly-twomey-the-drop-off/"
 course: social
 tags:
-  - feelings
+  - feeling
 year: 2022
 month: oct
 publisher: "On Being"

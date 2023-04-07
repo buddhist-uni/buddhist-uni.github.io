@@ -8,10 +8,8 @@ course: tranquility-and-insight
 tags:
   - an
   - path
-  - mindfulness
+  - sati
   - brahmavihara
-  - satipatthana
-  - meditation
 year: 2018
 ---
 

@@ -7,14 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1r-c-55bjluZ7nfhTGNvPXVQVjEhB9QAx/view?usp=drivesdk"
 course: meditation
 tags:
-  - lasers
-  - problems
   - speech
   - mbsr
   - chaplaincy
-  - nvc
-  - path
-  - mindfulness
 year: 2019
 pages: 2
 ---

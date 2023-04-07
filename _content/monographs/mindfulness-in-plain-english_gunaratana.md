@@ -13,7 +13,6 @@ course: meditation
 tags:
   - buddhism
   - function
-  - mindfulness
 pages: 104
 ---
 

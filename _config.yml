@@ -198,6 +198,7 @@ defaults:
     values:
         layout: "tag"
         section: "library"
+        status: "unpublished"
         illustration_width: 750
   -
     scope:

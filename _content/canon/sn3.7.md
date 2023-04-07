@@ -7,11 +7,8 @@ drive_links: ["https://drive.google.com/file/d/1I81Z3vPXfv-tpM1VF_pF14BmCf1Oa3RC
 course: speech
 tags:
   - sn
-  - ethics
-  - thought
-  - lay
+  - karma
   - samvega
-  - society
 year: 1998
 ---
 

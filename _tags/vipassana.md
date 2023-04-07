@@ -1,6 +1,7 @@
 ---
 title: "Vipassanā"
 parents: [meditation]
+status: published
 illustration: https://illeakyw.sirv.com/Images/tags/Ecstasy_Buddha_Rajasekharan_2019.jpg
 illustration_width: 755
 illustration_height: 1023

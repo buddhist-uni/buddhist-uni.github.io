@@ -15,11 +15,7 @@ drive_links:
  - "https://drive.google.com/file/d/1MDFN5DeDwpf6pE8Mg96usIcQGTdb4USj/view?usp=drivesdk"
 course: daily-life
 tags:
-  - mindfulness
   - meditation
-  - thought
-  - sense-restraint
-  - path
 status: featured
 ---
 

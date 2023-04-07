@@ -1,5 +1,6 @@
 ---
 title: Buddhism
+status: published
 level: 1
 parents: [indic-religions]
 image: https://illeakyw.sirv.com/Images/banners/searching.jpg

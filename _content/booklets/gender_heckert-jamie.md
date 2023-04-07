@@ -10,10 +10,6 @@ drive_links:
 course: inner
 tags:
   - gender
-  - activism
-  - ethics
-  - charisma
-  - society
 year: 2012
 month: feb
 publisher: ias

@@ -1,6 +1,9 @@
 {%- assign childs = "" | split: "" -%}
 {%- if include.level < 5 -%}
 {%- for tag in site.tags -%}
+    {%- unless tag.status == "published" -%}
+        {%- continue -%}
+    {%- endunless -%}
     {%- assign t = include.level | plus: 1 -%}
     {%- if tag.level and tag.level < t -%}
         {%- continue -%}
