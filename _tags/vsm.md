@@ -1,4 +1,4 @@
 ---
-title: "The Visuddhimagga"
+title: "Visuddhimagga"
 parents: [pali-commentaries, path]
 ---

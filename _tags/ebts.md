@@ -1,5 +1,5 @@
 ---
-title: "The Early Buddhist Texts"
+title: "Early Buddhist Texts"
 status: published
 parents: [buddhism]
 sortkey: 3

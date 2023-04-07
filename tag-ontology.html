@@ -2,7 +2,15 @@
 title: "The Tag Ontology Viewer"
 ---
 
-<div id="hello">Loading... <i class="fas fa-spinner fa-spin-pulse"></i></div>
+<div id="hello">
+  Below you'll find a flowchart explaining the relationship between all the published and planned tags.
+  Scroll left to right to see deeper into the ontology.
+  Click on any node to open it up.
+  Courses without associated tags are given diamonds.
+  Published tags are in bold.
+</div>
+<input id="secondaries" checked type="checkbox"><label for="secondaries" style="font-weight: unset;"> Show secondary edges →</label><br>
+<div id="loading">Loading... <i class="fas fa-spinner fa-spin-pulse"></i></div>
 <div id="disp" style="overflow-x: auto;"></div>
 <div id="others"></div>
 
@@ -10,24 +18,64 @@ title: "The Tag Ontology Viewer"
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import { graphviz } from "https://cdn.jsdelivr.net/npm/d3-graphviz@5/+esm";
 
-{% assign knownslugs = '' | split: '' %}
+var edgetoggle = d3.select("input#secondaries");
+edgetoggle.disabled = true;
 
-graphviz("#disp").height(1800).width(1200).fit(true).zoom(false).renderDot(`digraph { rankdir="LR" 
-  node [style="dashed" fontname="arial"]
-  {% comment %}Node Information{% endcomment %}
-  { rank=same world buddhism }
-  splines=false;
+function transitionFactory() {
+   return d3.transition("main").ease(d3.easeLinear).duration(300);
+}
+
+{% assign knownslugs = '' | split: '' %}
+const nodedata = `
   {% for t in site.tags %}{% assign knownslugs = knownslugs | push: t.slug %}{{ t.slug | replace: "-", "_" }} [label="{{ t.slug }}" tooltip="{{ t.title }}" URL="{{ t.url }}" style="{% if t.status == "published" %}bold" fontsize="15{% else %}solid{% endif %}"]
   {% endfor %}{% for c in site.data.course_order %}{% if knownslugs contains c %}{% continue %}{% endif %}
   {{ c | replace: "-", "_" }} [label="{{ c }}" URL="/courses/{{ c }}" style="bold" shape="Mdiamond"]{% assign knownslugs = knownslugs | push: c %}{% endfor %}
-  {% comment %}Edge Information{% endcomment %}
-  {% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{% unless knownslugs contains p %}{% continue %}{% endunless %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} {% if forloop.index0 > 0 %}[penwidth={% if t.status == "published" %}0.8{% else %}0.5{% endif %}]{% else %}[penwidth={% if t.status == "published" %}2{% else %}1{% endif %} weight=7]{% endif %}
-  {% endfor %}{% endfor %}{% comment %}TODO: ability to toggle the "break"ed edges off and on{% endcomment %}
-  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"] {% endfor %}{% endfor %}}`);
+`;
+
+const primaryedgedata = `
+  {% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{% unless knownslugs contains p %}{% continue %}{% endunless %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} [penwidth={% if t.status == "published" %}2{% else %}1{% endif %} weight=7]{% break %}
+  {% endfor %}{% endfor %}
+  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"] {% break %}{% endfor %}{% endfor %}
+`;
+const secondaryedgedata = `
+{% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{% unless knownslugs contains p and forloop.index0 > 0 %}{% continue %}{% endunless %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} [penwidth={% if t.status == "published" %}0.8{% else %}0.5{% endif %}]
+  {% endfor %}{% endfor %}
+  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t and forloop.index0 > 0 %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"] {% endfor %}{% endfor %}
+`;
+
+var graph = graphviz("#disp").fit(true).zoom(false).transition(transitionFactory).tweenShapes(true).on("initEnd", render);
+
+function render() {
+  var splines = "splines=true;";
+  var edgedata = primaryedgedata;
+  if (edgetoggle.checked !== false) {
+    splines = "splines=false;";
+    edgedata += secondaryedgedata;
+  }
+  graph.renderDot(`digraph { rankdir="LR" 
+    node [style="dashed" fontname="arial"]
+    ${splines}
+    { rank=same world buddhism }
+    ${nodedata}
+    ${edgedata}
+  }`).on("end",function(){
+     var thesvg = document.querySelector("#disp svg");
+     thesvg.setAttribute("width", parseFloat(thesvg.getAttribute("width"))*0.8);
+     thesvg.setAttribute("height", parseFloat(thesvg.getAttribute("height"))*0.8);
+     edgetoggle.disabled = false;
+     d3.select("div#loading").style("display", "none");
+  });
+}
+
+edgetoggle.on("change",updateGraph);
+function updateGraph() {
+  this.disabled = true;
+  edgetoggle = this;
+  d3.select("div#loading").style("display", "block");
+  setTimeout(render);
+}
 
 const othertags = [{% for c in site.content %}{% if c.course %}{% unless knownslugs contains c.course %}"{{ c.course }}",{% endunless %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t %}"{{ t }}",{% endunless %}{% endfor %}{% endfor %}];
 const ots = Array.from(new Set(othertags)).sort();
 d3.select("#others").html(`<h2>Misc Tags</h2><p>Below is a list of all the "shadow" tags which have been used on library content but which haven't yet been added to the above ontology. Some of these are vaguely planned for addition in the far future, but some are just keywords.</p><table><tr><th>Tag</th><th>Content Count</th></tr>${ots.map((t)=>`<tr><td>${t}</td><td>${othertags.filter((a)=>a==t).length}</td></tr>`).join('')}</table>`);
-
-d3.select("#hello").text("Below you'll find a flowchart explaining the relationship between all the published and planned tags. Scroll left to right to see deeper into the ontology. Click on any node to open it up. Courses without associated tags are given diamonds. Published tags are in bold and secondary connections are given thinner lines.");
 </script>

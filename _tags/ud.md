@@ -1,5 +1,5 @@
 ---
-title: "The Udāna"
+title: "Udāna"
 parents: [canonical-poetry]
 ---
 

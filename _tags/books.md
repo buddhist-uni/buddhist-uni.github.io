@@ -1,4 +1,4 @@
 ---
-title: "Books"
+title: "The Book"
 parents: [things, media]
 ---

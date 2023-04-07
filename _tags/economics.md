@@ -1,5 +1,5 @@
 ---
-title: "Economics"
+title: "Economics (General)"
 parents: [state]
 ---
 

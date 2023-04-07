@@ -1,5 +1,5 @@
 ---
-title: "Power"
+title: "Political Power"
 parents: [groups]
 ---
 

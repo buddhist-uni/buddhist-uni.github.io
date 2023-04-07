@@ -9,14 +9,8 @@ publisher: "Reynal & Hitchcock"
 course: world
 tags:
   - underage
-  - problems
-  - thought
-  - emptiness
-  - origination
   - myth
-  - ideology
-  - inner
-  - france
+  - karma
 pages: 83
 ---
 

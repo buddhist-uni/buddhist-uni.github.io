@@ -1,5 +1,5 @@
 ---
-title: "The Sinitic Religions"
+title: "Sinitic Religion"
 parents: [religion, china]
 ---
 

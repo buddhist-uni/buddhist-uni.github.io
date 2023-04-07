@@ -1,5 +1,5 @@
 ---
-title: "The Itivuttaka"
+title: "Itivuttaka"
 parents: [canonical-poetry]
 ---
 

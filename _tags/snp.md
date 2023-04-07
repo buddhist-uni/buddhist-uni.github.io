@@ -1,5 +1,5 @@
 ---
-title: "The Sutta Nipata"
+title: "Sutta Nipata"
 parents: [canonical-poetry]
 ---
 

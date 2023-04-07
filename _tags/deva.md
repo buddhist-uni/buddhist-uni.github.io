@@ -1,4 +1,4 @@
 ---
-title: "The Devas"
+title: "Devas"
 parents: [cosmology]
 ---

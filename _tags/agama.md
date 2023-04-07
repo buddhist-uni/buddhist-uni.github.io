@@ -1,5 +1,5 @@
 ---
-title: "Āgamas Studies"
+title: "Āgama Studies"
 status: published
 parents: [ebts]
 sortkey: 9

@@ -1,5 +1,5 @@
 ---
-title: "The Dīrgha Āgama"
+title: "Dīrgha Āgama"
 parents: [agama]
 status: published
 is_canon: true # changes the layout slightly

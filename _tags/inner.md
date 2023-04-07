@@ -1,5 +1,5 @@
 ---
-title: "Inner World"
+title: "The Inner World"
 parents: [world]
 ---
 

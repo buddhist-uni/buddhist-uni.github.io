@@ -1,5 +1,5 @@
 ---
-title: "The Saṃyukta Āgama"
+title: "Saṃyukta Āgama"
 parents: [agama]
 is_canon: true # changes the layout slightly
 sortkey: 3

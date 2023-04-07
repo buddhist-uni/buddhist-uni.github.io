@@ -1,4 +1,4 @@
 ---
-title: "Ideology"
+title: "Ideology (General)"
 parents: [intellect]
 ---

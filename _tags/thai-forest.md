@@ -1,4 +1,4 @@
 ---
-title: "The Thai Forest Tradition"
+title: "Thai Forest Tradition"
 parents: [thai]
 ---

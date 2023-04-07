@@ -1,5 +1,5 @@
 ---
-title: "Wider World"
+title: "The Wider World"
 parents: [world]
 image: https://illeakyw.sirv.com/Images/banners/shono.jpg
 big_image: https://images.metmuseum.org/CRDImages/as/original/DP123196.jpg

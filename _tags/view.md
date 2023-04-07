@@ -1,6 +1,6 @@
 ---
 title: "Right View"
-parents: [philosophy, inner]
+parents: [philosophy]
 ---
 
 The foundation of the Noble Eightfold Path.

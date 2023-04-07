@@ -5,8 +5,6 @@ authors:
 translator: "Elizabeth Manton and Erica Moore"
 course: state
 tags:
-  - cosmology
-  - intellect
   - past
   - sociology-roots
   - world

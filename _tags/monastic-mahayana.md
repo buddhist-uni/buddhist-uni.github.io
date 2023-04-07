@@ -1,4 +1,4 @@
 ---
-title: "Mahayana Monasticism"
+title: "Mahāyāna Monasticism"
 parents: [monastic, mahayana]
 ---

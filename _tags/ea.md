@@ -1,5 +1,5 @@
 ---
-title: "The Ekottarika Āgama"
+title: "Ekottarika Āgama"
 status: published
 parents: [agama]
 is_canon: true # changes the layout slightly
