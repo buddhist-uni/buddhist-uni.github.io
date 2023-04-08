@@ -21,12 +21,17 @@
     border-radius: 9px;
     margin: auto;
     margin-bottom: 7px;
-    cursor: pointer;
     z-index: 5;
 }
 
 .learning_styles .ls_name {
     font-size: 28px;
+    padding-top: 0;
+    a {
+        display: inline-block;
+        width: 100%;
+        padding-top: 20px;
+    }
 }
 
 .learning_styles .ls_icon {
