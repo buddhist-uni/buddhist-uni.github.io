@@ -10,8 +10,10 @@ illustration_height: 894
 illustration_center_y: 12%
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/0/00/Burmese-Pali_Manuscript._Wellcome_L0026547.jpg
 illustration_caption: >-
-  Three folios of Pāli featuring different styles of the Burmese script (square, round, and bold) from
-  <a href="https://commons.wikimedia.org/wiki/File:Burmese-Pali_Manuscript._Wellcome_L0026547.jpg">the Wellcome Library</a> collection. <span style="white-space:nowrap;">(<a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)</span>
+  Three folios of Pāli from
+  <a href="https://commons.wikimedia.org/wiki/File:Burmese-Pali_Manuscript._Wellcome_L0026547.jpg">the Wellcome Library</a>
+  are set on display to show three styles of writing the Burmese script: square, round, and bold.
+  <span style="white-space:nowrap;">(<a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)</span>
 image: https://illeakyw.sirv.com/Images/banners/thai-manuscript.jpg
 image_width: 1536
 image_height: 638

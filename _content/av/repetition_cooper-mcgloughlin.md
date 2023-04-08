@@ -4,20 +4,14 @@ authors:
   - "Max Cooper"
   - "Kevin McGloughlin"
 external_url: "https://youtu.be/nO9aot9RgQc"
-subcat: music
+subcat: film
 year: 2019
 course: becon
 tags:
   - samvega
-  - music
   - cosmology
   - present
-  - post-modernism
-  - nature
   - philosophy
-  - view
-  - film
-  - ambulit
   - world
 minutes: 6
 ---

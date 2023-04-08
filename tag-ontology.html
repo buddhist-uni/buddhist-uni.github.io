@@ -9,7 +9,7 @@ title: "The Tag Ontology Viewer"
   Courses without associated tags are given diamonds.
   Published tags are in bold.
 </div>
-<input id="secondaries" checked type="checkbox"><label for="secondaries" style="font-weight: unset;"> Show secondary edges →</label><br>
+<input id="secondaries" type="checkbox"><label for="secondaries" style="font-weight: unset;"> Show secondary edges →</label><br>
 <div id="loading">Loading... <i class="fas fa-spinner fa-spin-pulse"></i></div>
 <div id="disp" style="overflow-x: auto;"></div>
 <div id="others"></div>
@@ -40,7 +40,8 @@ const primaryedgedata = `
 const secondaryedgedata = `
 {% for t in site.tags %}{% if t.level == 1 %}{% continue %}{% endif %}{% for p in t.parents %}{% unless knownslugs contains p and forloop.index0 > 0 %}{% continue %}{% endunless %}{{p | replace: "-", "_" }} -> {{t.slug | replace: "-", "_" }} [penwidth={% if t.status == "published" %}0.8{% else %}0.5{% endif %}]
   {% endfor %}{% endfor %}
-  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t and forloop.index0 > 0 %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"] {% endfor %}{% endfor %}
+  {% for c in site.courses %}{% if c.slug == "philosophy" %}{% continue %}{% endif %}{% for t in c.tags %}{% unless knownslugs contains t and forloop.index0 > 0 %}{% continue %}{% endunless %}{{ t | replace: "-", "_" }} -> {{ c.slug | replace: "-", "_" }} [style="dashed"]
+  {% endfor %}{% endfor %}
 `;
 
 var graph = graphviz("#disp").fit(true).zoom(false).transition(transitionFactory).tweenShapes(true).on("initEnd", render);
@@ -48,7 +49,7 @@ var graph = graphviz("#disp").fit(true).zoom(false).transition(transitionFactory
 function render() {
   var splines = "splines=true;";
   var edgedata = primaryedgedata;
-  if (edgetoggle.checked !== false) {
+  if (edgetoggle.checked) {
     splines = "splines=false;";
     edgedata += secondaryedgedata;
   }

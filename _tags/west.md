@@ -9,7 +9,7 @@ illustration_width: 1024
 illustration_center_x: 55%
 illustration_center_y: 45%
 illustration_caption: >-
-  Two Western monks in a thin, Australian forest drive a golf cart off into late afternoon sunlight.
+  Two Western monks in a thin, Australian forest drive their golf cart off into the late afternoon sunlight.
   (<a href="https://commons.wikimedia.org/wiki/File:Dhammagiri_206.jpg">Gary A Collett</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 big_image: https://live.staticflickr.com/2201/2259528661_7ffa43ed8b_o_d.jpg
 big_width: 3008

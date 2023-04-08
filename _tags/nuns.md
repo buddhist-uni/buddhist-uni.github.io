@@ -10,7 +10,7 @@ illustration_width: 1276
 #illustration_center_x: 93%
 illustration_center_x: 68%
 illustration_center_y: 20%
-illustration_caption: Bhikkhunis pose together at a conference in Frankfurt in 2007. (Courtesy of <a href="https://gooddhammablog.wordpress.com/">Ayya Sudhamma</a>)
+illustration_caption: Bhikkhunis pose together at a conference in Frankfurt in 2007. (Photo courtesy of <a href="https://gooddhammablog.wordpress.com/">Ayya Sudhamma</a>)
 image: https://illeakyw.sirv.com/Images/banners/thilashin_in_Yangon.jpg
 image_width: 1224
 image_height: 1024

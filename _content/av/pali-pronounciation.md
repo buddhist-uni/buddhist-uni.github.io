@@ -10,4 +10,4 @@ minutes: 2
 
 A few dozen Pāḷi terms clearly pronounced to give an idea of its sound.
 
-See [ReadingFaithfully](https://readingfaithfully.org/pali-word-pronunciation-recordings/) for more such recordings, particularly of Pāli names.
+See [Professor Khan's Forvo page](https://forvo.com/user/sameeruddowlakhan/pronounced-words/pi/) for more such recordings and [ReadingFaithfully](https://readingfaithfully.org/pali-word-pronunciation-recordings/) for some Pāli names.

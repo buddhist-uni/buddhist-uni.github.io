@@ -13,7 +13,7 @@ tags:
   - inequality
   - present
   - charity
-  - scientific-materialism
+  - materialism
   - places
 pages: 259
 ---

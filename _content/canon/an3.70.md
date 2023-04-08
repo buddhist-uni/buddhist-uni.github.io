@@ -8,7 +8,7 @@ year: 2018
 course: lay
 tags:
   - an
-  - pali-chanting
+  - theravada-chanting
   - deva
   - uposatha
   - ethics

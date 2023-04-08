@@ -9,8 +9,7 @@ status: featured
 course: nature
 tags:
   - intellect
-  - ideology
-  - scientific-materialism
+  - materialism
   - wider
   - ambulit
   - capitalism

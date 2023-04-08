@@ -10,11 +10,9 @@ pages: "5--33"
 journal: cjbs
 course: pali-canon
 tags:
-  - oral
   - pericope
-  - ebts
-  - sutta
-  - pali-chanting
+  - indian
+  - theravada-chanting
 ---
 
 Examines the literary style of the Pāli Canon and explains how its textual features are a product of its performative context.

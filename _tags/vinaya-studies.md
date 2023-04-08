@@ -8,7 +8,7 @@ illustration_center_x: 55%
 illustration_width: 800
 illustration_height: 730
 illustration_caption: >-
-  Ajahn Geoff uncovers his alms bowl to receive rice from a family in downtown Portland one brisk October morning in 2008.
+  <a href="/authors/geoff">Ajahn Geoff</a> uncovers his alms bowl to receive rice from a family in downtown Portland one brisk October morning in 2008.
   (<a href="https://commons.wikimedia.org/wiki/File:Ajaan_Geoff_Almsround.jpg">Mary Reinard</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Chinese_Buddhist_Monk_Electric_Bike.jpeg
 image_center_y: 33%

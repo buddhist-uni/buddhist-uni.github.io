@@ -12,10 +12,8 @@ status: featured
 publisher: vox
 tags:
   - america
-  - economics
   - wider
-  - education
-  - post-modernism
+  - postmodernism
 base_value: 0.2
 minutes: 74
 ---

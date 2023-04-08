@@ -12,9 +12,8 @@ tags:
   - function
   - ebts
   - snp
-  - american
   - west
-  - pali-chanting
+  - theravada-chanting
 minutes: 3
 ---
 
