@@ -5,7 +5,7 @@ authors:
   - "Phan Tuấn Anh"
 tags:
   - chan
-  - chanting
+  - mahayana-chanting
 course: vietnamese
 month: jun
 year: 2020
