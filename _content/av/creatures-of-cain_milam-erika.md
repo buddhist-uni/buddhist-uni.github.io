@@ -8,7 +8,7 @@ course: time
 tags:
   - world
   - science
-  - violence-after-ww2
+  - violence-since-ww2
 year: 2019
 month: apr
 minutes: 37
