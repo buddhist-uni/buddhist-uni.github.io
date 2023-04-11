@@ -4,7 +4,7 @@ authors:
   - "Stephen Hawking"
 course: physics
 tags:
-  - physical-science
+  - science
   - time
 year: 1988
 olid: OL22201384M

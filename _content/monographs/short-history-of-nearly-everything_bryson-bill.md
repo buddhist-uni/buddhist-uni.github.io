@@ -7,7 +7,6 @@ olid: OL7441792M
 status: featured
 tags:
   - world
-  - physical-science
 year: 2003
 month: may
 publisher: "Broadway Books"

@@ -9,7 +9,7 @@ canary_url: "https://youtu.be/B8vSLgaW9WQ"
 course: science
 status: featured
 tags:
-  - physical-sciences
+  - physics
 year: 2016
 month: jun
 base_value: 0.9
