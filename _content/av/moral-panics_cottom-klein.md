@@ -7,7 +7,8 @@ authors:
 year: 2021
 month: apr
 external_url: "https://nyt.simplecastaudio.com/3026b665-46df-4d18-98e9-d1ce16bbb1df/episodes/94a58661-c2ae-4f77-bf60-8e83669e3b36/audio/128/default.mp3"
-course: inner
+source_url: "https://www.nytimes.com/2021/04/13/podcasts/ezra-klein-podcast-tressie-mcmillan-cottom-transcript.html"
+course: intellect # fairly confident
 tags:
   - power
   - internet

@@ -17,9 +17,9 @@ minutes: 5
 
 > you think  
 You’re a kind of monster  
->  
+> &nbsp;  
 And maybe you are,  
 Just not an ugly one.  
->  
+> &nbsp;  
 That whole business  
 Will come later.

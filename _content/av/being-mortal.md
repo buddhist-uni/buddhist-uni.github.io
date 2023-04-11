@@ -7,8 +7,8 @@ external_url: "https://youtu.be/lQhI3Jb7vMg"
 source_url: "https://www.pbs.org/wgbh/frontline/documentary/being-mortal/"
 year: 2015
 month: feb
-course: inner
 tags:
+  - body
   - death
   - medicine
   - communication

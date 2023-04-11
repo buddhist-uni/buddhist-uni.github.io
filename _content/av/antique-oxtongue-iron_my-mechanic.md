@@ -3,7 +3,9 @@ title: "Antique Ox-Tongue Iron Restoration (Video)"
 authors:
   - "my mechanics"
 external_url: "https://youtu.be/UVkbYlQfNqE"
-course: inner
+course: things
+tags:
+  - feeling
 year: 2020
 month: feb
 minutes: 24
