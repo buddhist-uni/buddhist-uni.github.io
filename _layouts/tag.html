@@ -1,12 +1,16 @@
 ---
 layout: default
 ---
+{%- assign alltags = site.tags -%}
+{%- if page.status == 'published' -%}
+    {%- assign alltags = alltags | where: "status", "published" -%}
+{%- endif -%}
 
 <article class="tag">
   <header class="post-header">
 {% assign parents = '' | split: '' %}
 {% for pslug in page.parents %}
-    {% assign parent = site.tags | find: "slug", pslug %}
+    {% assign parent = alltags | find: "slug", pslug %}
     {% unless parent %}{% continue %}{% endunless %}
     {% capture plink %}<a href="{{ parent.url }}">{{ parent.title }}</a>{% endcapture %}
     {% assign parents = parents | push: plink %}
@@ -31,8 +35,8 @@ Please be aware that this tag is still under construction and as such is missing
 </figure>
 {% endif %}
 
-{% capture cfilter %}t.parents contains "{{ page.slug }}"{% if page.status == 'published' %} and t.status == "published"{% endif %}{% endcapture %}
-{% assign childtags = site.tags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
+{% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
+{% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
     {% capture clink %}<a href="{{ child.url }}">{{ child.title }}</a>{% endcapture %}

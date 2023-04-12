@@ -18,7 +18,7 @@ pages: 18
 ---
 
 > At
-approximately nine o’clock at night on January 26, 1700, a magnitude-9.0 earthquake
+approximately nine o’clock at night on January 26, 1700 A.D., a magnitude-9.0 earthquake
 struck the Pacific Northwest, causing sudden land subsidence, drowning coastal forests,
 and, out in the ocean, lifting up a wave half the length of a continent.
 
