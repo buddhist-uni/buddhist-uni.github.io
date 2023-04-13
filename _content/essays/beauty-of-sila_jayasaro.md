@@ -8,6 +8,7 @@ course: monastic
 tags:
   - ethics
   - vinaya-studies
+  - disgust
 pages: 14
 ---
 

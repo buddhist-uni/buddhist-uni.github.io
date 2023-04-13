@@ -84,14 +84,14 @@ Note: to view a piece's ranking directly on the website, click the "Bibtex Data"
 
 ## Ontology
 
-As a valued contributor to / keen user of this library, it's worth familiarizing yourself with [the library folder structure](https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf).
-Contributors to the library should be able to answer basic questions about the collection such as:
+As a valued contributor to / keen user of this library, it's worth familiarizing yourself with [the library's folder/tag structure](https://buddhistuniversity.net/tag-ontology/).
+This will allow you to answer basic questions about the collection such as:
 
 1. Where are the Jātaka tales?[^jataka]
-2. Where can one find information about Tibetan Buddhism?[^tibetan]
+2. Where is Tibetan Buddhism?[^tibetan]
 3. What are the subcategories under Buddhist Philosophy?[^philosophy]
 
-Having this structure in your head will help you navigate the collection efficiently and helps reviewers direct works to their correct folders.
+Having this structure in your head will help you navigate the collection efficiently and direct works to their correct folders/tags.
 
 ### Choosing a Folder
 
@@ -126,7 +126,7 @@ Thank you for your interest in the library and may you be blessed by the blessin
 
 ### Answers to the Ontology Quiz
 
-[^jataka]: Buddhism->Forms->Indian->Stories->Jataka
+[^jataka]: Buddhism->Forms->Indian->Rebirth Stories->Jataka
 
 [^tibetan]: Buddhism->Forms->Mahayana->Vajrayana
 

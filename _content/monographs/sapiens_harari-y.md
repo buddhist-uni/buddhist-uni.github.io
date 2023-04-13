@@ -4,11 +4,8 @@ authors:
   - "Yuval Noah Harari"
 translator: "John Purcell and Haim Watzman"
 olid: OL28326205M
-course: world
+course: wider
 tags:
-  - time
-  - biology
-  - science
   - evolution
   - power
   - ideology

@@ -1,6 +1,6 @@
 ---
 title: "The Brahmaviharas"
 status: unpublished
-parents: [samatha, thought]
+parents: [samatha, thought, feeling]
 ---
 

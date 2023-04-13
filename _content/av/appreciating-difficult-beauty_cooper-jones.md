@@ -11,6 +11,7 @@ tags:
   - disability
   - sati
   - inner
+  - beauty
 year: 2022
 month: sep
 publisher: nyt
