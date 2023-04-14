@@ -12,7 +12,8 @@ tags:
 year: 2023
 month: feb
 publisher: nbn
-minutes: 
+minutes: 89
+subcat: podcast
 ---
 
 > Tuning in, meditatively, all these things can loosen up. And it's the loosening that's the main thing.
