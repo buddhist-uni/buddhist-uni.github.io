@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1iHKQarYlo7KtsQn2rrOpHSWgiFxukBKz/view?usp=drivesdk"
 course: sa
 tags:
-  - devas
+  - deva
   - sn
 year: 2020
 journal: jocbs

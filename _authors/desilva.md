@@ -1,8 +1,8 @@
 ---
 title: "Lily de Silva"
 ---
-Lily de Silva was Professor of Pali and Buddhist Studies at the University of Peradeniya in Sri Lanka and a regular contributor to Buddhist scholarly and popular journals.
 
-Professor de Silva is also the editor of the subcommentary to he Digha Nikaya and several other translations and a Pali language primer published by the Pali Text Society of London.
+Lily de Silva (1928–2005) was a Pali scholar at the University of Ceylon, Peradeniya, where she received a B.A. with First Class Honors in Pali and the Woodward Prize for Pali and, in 1967, her Ph.D.
+She stayed at the University to teach and quickly became Chair of the Department of Pali and Buddhist Studies where she remained until her retirement in 1994.
 
-_~ From [The Buddho Foundation](https://buddho.org/about-the-author/lily-de-silva/)_
+_~ From [Access to Insight](https://www.accesstoinsight.org/lib/authors/index.html#desilva) and [her obituary in the Daily Mirror](https://www.dailymirror.lk/opinion/dr-lily-de-silva-professor-emerita-a-great-scholar-in-pali-and-buddhism/172-94221)_
