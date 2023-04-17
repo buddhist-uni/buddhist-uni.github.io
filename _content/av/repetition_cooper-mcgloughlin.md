@@ -6,13 +6,10 @@ authors:
 external_url: "https://youtu.be/nO9aot9RgQc"
 subcat: film
 year: 2019
-course: becon
+course: cosmology
 tags:
   - samvega
-  - cosmology
   - present
-  - philosophy
-  - world
 minutes: 6
 ---
 

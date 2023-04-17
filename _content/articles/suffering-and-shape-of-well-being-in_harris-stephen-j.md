@@ -9,6 +9,7 @@ drive_links:
 tags:
   - dialogue
   - monastic
+  - ethics
 year: 2014
 month: nov
 journal: "Asian Philosophy"
