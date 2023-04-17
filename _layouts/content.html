@@ -102,6 +102,14 @@ layout: default
      About: {{ tags }}
    </p>{% endif %}
  
+ {%- if page.category == "monographs" -%}
+   {% assign pieces = site.content | where: "from_book", page.slug | sort: "pages" | sort: "chapter", "first" %}
+   {% if pieces.size > 0 %}<p class="pieces_desc">
+     Excerpts from this book also in the library: <ul>{% for c in pieces %}
+        <li>{% include simple_content.html content=c %}</li>
+   {% endfor %}</ul></p>{% endif %}
+ {%- endif -%}
+ 
     {% if page.status != "rejected" and page.course %}
         {% assign course = site.courses | find: "slug", page.course %}
         {% if course %}<p class="featured_desc">Featured in the course, "<a href="{{ course.url }}#{{ page.slug }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a>."
