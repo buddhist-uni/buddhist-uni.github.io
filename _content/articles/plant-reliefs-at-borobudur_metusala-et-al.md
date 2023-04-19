@@ -8,7 +8,7 @@ authors:
 external_url: "https://smujo.id/biodiv/article/view/5530/3877"
 source_url: "https://doi.org/10.13057/biodiv/d210549"
 drive_links:
-  - "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
+  - "https://drive.google.com/file/d/1OOaxIWCbDcVwrUYaLt2F8u6q3FXcYzSf/view?usp=drivesdk"
 course: nature 
 tags:
   - bart

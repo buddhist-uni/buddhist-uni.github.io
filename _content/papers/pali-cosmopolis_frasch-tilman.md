@@ -10,7 +10,6 @@ file_links:
 course: theravada
 tags:
   - theravada-roots
-  - sri-lankan-roots
 year: 2017
 from_book: sri-lanka-crossroads_ucl
 publisher: ucl
