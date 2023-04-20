@@ -13,7 +13,7 @@ drive_links:
  - "https://drive.google.com/file/d/1VX1a9MKkT7bRanHRUGbciebo0dXM7yzn/view?usp=drivesdk"
 tags:
   - abhidhamma
-course: kamma
+course: karma
 ---
 
 > *Kamma* is neither fatalism nor a doctrine of predetermination.

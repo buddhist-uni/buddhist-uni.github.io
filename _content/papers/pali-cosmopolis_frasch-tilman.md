@@ -10,6 +10,7 @@ file_links:
 course: theravada
 tags:
   - theravada-roots
+  - indian-ocean
 year: 2017
 from_book: sri-lanka-crossroads_ucl
 publisher: ucl

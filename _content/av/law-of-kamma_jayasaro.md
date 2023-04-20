@@ -8,7 +8,7 @@ drive_links:
   - https://drive.google.com/file/d/1GOo1GHlJAfOzU5wad_AYi2dFx0m9oZJn/view?usp=drivesdk
 course: daily-life
 tags:
-  - kamma
+  - karma
   - origination
 year: 2008
 month: apr
