@@ -3,7 +3,7 @@ title: "Integrating the Path"
 description: "The path to Enlightenment is not a straight line."
 image: "https://buddhistuniversity.net/imgs/buddhism/Bodhgaya_path.jpg"
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Big_Buddha_statue,_Bodhgaya.jpg">Ineb-2553</a>
-order: 12
+order: 11
 ---
 
 # Readings

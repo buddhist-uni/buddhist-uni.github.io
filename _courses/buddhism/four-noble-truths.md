@@ -3,7 +3,7 @@ title: "Seeing the Four Noble Truths"
 description: "The fundamental doctrine of Buddhism is that peace is possible even amidst the impermanence of the world."
 image: https://buddhistuniversity.net/imgs/buddhism/Amaravati_Autumn.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Amaravati_Buddhist_Monastery_(UK)_3.jpg">Jake Barnes</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
-order: 6
+order: 5
 ---
 
 ## Reading Assignments

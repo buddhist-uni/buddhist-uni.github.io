@@ -3,7 +3,7 @@ title: "Living Well"
 description: "While aimed at renunciation and liberation, the Buddha's teachings also offer practical advice for living in the world."
 image: https://buddhistuniversity.net/imgs/buddhism/sitting_on_my_meditation_rock.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Sitting_on_my_meditation_rock.jpg">Joi Ito</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
-order: 14
+order: 13
 ---
 
 # Readings

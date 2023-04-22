@@ -7,6 +7,8 @@ toc:
   - ['what-is', 'What is Buddhism?']
   - ['we-will', 'Course Results']
   - ['prereqs', 'Prerequisites']
+  - ['office', 'Office Hours']
+  - ['outline', 'Course Outline']
 lecturers:
   - bodhi
   - others
@@ -74,13 +76,29 @@ This course will instead immerse you **in** Buddhism, teaching you the fundament
 
 There will be homework and challenges, but there will *not*{:.underline} be grades or certificates. This is a self-directed course for those who are eager to learn what Buddhism is for themselves.
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Is this course right for me?</h2>
 
 This course will take about **2 months** to complete and will contain readings and lectures in college-level, American English.
 To peruse the material in advance, see [the bibliography](/tags/buddhism).
 
-Note: This course is geared towards complete beginners.
-If that isn't you, consider taking one of our more advanced intro-level courses instead, covering:
+Note that this course is geared towards **complete beginners**.
+If that's not you, please take one of our more advanced introductory courses instead:
 - [The Words of the Buddha](/courses/ebts),
 - [Buddhist Practice](/courses/function),
 - or [Buddhism as a Religion](/courses/form)
+
+<h2 id="office">Office Hours</h2>
+
+If you would like to get in touch with the instructor, please feel free to [send me an email](mailto:{{ site.email }}).
+You can connect with other students of Buddhism over at [the SuttaCentral Forum](https://discourse.suttacentral.net/t/frequently-asked-questions-faq/24?u=khemarato.bhikkhu){:target="_blank" ._}
+
+<h2 id=""></h2>
+
+{% include multipartcourse_outline.html course="buddhism" introtext="This course will proceed in <b>14 modules</b> as follows:" %}
+
+It's recommended that you do the modules **in order**, doing **about two modules per week** as your schedule permits.
+
+Since this course will take at least a few weeks to complete, please take a moment now to bookmark this page or share the link with a friend so you can find it later!
+
+👆 jump to the module you're currently on or 👇
+

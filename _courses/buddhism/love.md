@@ -3,7 +3,7 @@ title: "Cultivating Love"
 description: "Buddhism has a reputation for austerity, but it also contains profound teachings on love and the family life."
 image: https://buddhistuniversity.net/imgs/buddhism/lotus_father.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:2018_Lotus_and_Water_Lily_Festival_(464b79d4-f903-4530-81e8-d6f7f48fdcef).jpg">Rachel Hendrix</a>
-order: 5
+order: 4
 ---
 
 ## Readings

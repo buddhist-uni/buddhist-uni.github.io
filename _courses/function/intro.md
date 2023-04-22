@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: "Part 1: Buddhist Life"
 order: 1
 description: An overview of the spiritual journey and this course.
 image: https://buddhistuniversity.net/imgs/function/Tsongmo_Lake_Sikkim.jpeg

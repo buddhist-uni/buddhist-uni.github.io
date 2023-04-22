@@ -3,7 +3,7 @@ title: "Refining the Mind"
 description: "Buddhism provides a set of tools for gaining clarity in our everyday lives."
 image: https://buddhistuniversity.net/imgs/buddhism/delhi_walking_monk.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Paharganj_Market_Buddhist_Monk.jpg">Pallav Journo</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-order: 9
+order: 8
 ---
 
 ## Reading Assignments

@@ -3,7 +3,7 @@ title: "Taking Refuge in the Triple Gem"
 description: "Buddhism provides a home for us suffering beings."
 image: https://buddhistuniversity.net/imgs/buddhism/Silver_buddha_inside_Jing'an_Temple%2C_Shanghai.png
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Silver_buddha_inside_Jing%27an_Temple,_Shanghai.png">Kanegen</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
-order: 4
+order: 3
 ---
 
 The compassionate wisdom and peerless example of the Buddha show us the way out of Saṃsāra.

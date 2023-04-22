@@ -3,7 +3,7 @@ title: "Understanding Karma"
 description: "All beings are caught in the cycle of fortune and misfortune."
 image: https://buddhistuniversity.net/imgs/buddhism/yama_samsara_wheel-wellcome.jpg
 image_info: <a href="https://wellcomecollection.org/works/jshqht6m">The Wellcome Collection</a>
-order: 8
+order: 7
 ---
 
 ## Reading Assignments

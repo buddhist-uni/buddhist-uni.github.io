@@ -3,7 +3,7 @@ title: "Deconstructing the Self"
 description: "We use the sword of wisdom to cut our stubborn attachment to who and what we think we are."
 image: https://buddhistuniversity.net/imgs/buddhism/Qing_Manjusri_Bodhisattva.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Qing_Manjusri_Bodhisattva.jpg">Gary Todd</a>
-order: 10
+order: 9
 ---
 
 # Readings

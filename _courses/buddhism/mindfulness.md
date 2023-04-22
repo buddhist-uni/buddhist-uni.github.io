@@ -3,7 +3,7 @@ title: "Arousing Mindfulness"
 description: "Being present is the extraordinary gift of being alive."
 image: https://buddhistuniversity.net/imgs/buddhism/curiosity.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Concentrated_to_Curiosity.jpg">Amit Roy</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-order: 3
+order: 2
 ---
 
 Mindfulness is perhaps Buddhism's most distinctive and important "psycho-technology."

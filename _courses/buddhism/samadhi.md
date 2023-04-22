@@ -3,7 +3,7 @@ title: "Widening our Perspective"
 description: "Wisdom is the ability to recognize and contextualize our experience."
 image: "https://buddhistuniversity.net/imgs/buddhism/monk_at_galle_fort_sl_oceanside.jpg"
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Un_bonze_Sri_Lankais_en_regardant_la_mar%C3%A9e_(vue_arri%C3%A8re_-_23_janvier_2011).jpg">Serge Ottaviani</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>
-order: 13
+order: 12
 ---
 
 # Readings

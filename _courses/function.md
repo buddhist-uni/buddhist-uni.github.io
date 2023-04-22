@@ -1,5 +1,6 @@
 ---
 title: The Practice of Buddhism
+subtitle: A Theoretical Outline
 layout: multipartcourse
 part_header: "Module # of An Introduction to Buddhist Practice"
 google_doc_id: 1KiNBaviEPXc7ZgRrgM-wzhguOLdA7OyUy_hKhtqHg-0
@@ -41,6 +42,7 @@ toc:
   - ['what-is', 'What is the Practice of Buddhism?']
   - ['prereqs', 'Prerequisites']
   - ['text', 'Textbook']
+  - ['outline', 'Course Outline']
 ---
 
 <h2 id="what-is">What is the Practice of Buddhism?</h2>
@@ -67,4 +69,7 @@ This book forms the backbone of the course and is highly recommended.
 
 The book is divided into two, unsurprising halves: *Buddhist Life* and *Buddhist Path*: the exterior and interior transformation of the practitioner which follows the gradual path of Buddhism---from the mundane to the transcendent---often taught by the Buddha himself.
 
-This course will follow that sequence.
+{% include multipartcourse_outline.html course="function" introtext="This course will procede in 15 modules following the chapters in Buddhist Life, Buddhist Path:" %}
+
+👆 jump to the module you're currently on or 👇
+

@@ -5,7 +5,7 @@ image: https://buddhistuniversity.net/imgs/buddhism/Yuttadhammo.jpeg
 image_width: 739
 image_height: 415
 image_info: <a href="https://youtu.be/mH2sEqrCza4" ga-event-value="0.75">Bhante Yuttadhammo</a>
-order: 2
+order: 1
 ---
 
 For our first lecture of this course, I'd like to invite you to meet Bhante Yuttadhammo.

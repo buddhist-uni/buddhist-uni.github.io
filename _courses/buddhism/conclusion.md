@@ -3,7 +3,7 @@ title: "Creating a Better Tomorrow"
 description: "Buddhism offers a fresh perspective on how to address the problems of modernity."
 image: https://buddhistuniversity.net/imgs/buddhism/yellow_hats_at_a_Kyoto_temple.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_a_Buddhist_temple_in_eastern_Kyoto,_Kyoto_Prefecture;_September_2008_(07).jpg">Kate Davidson</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
-order: 15
+order: 14
 ---
 
 ## Readings

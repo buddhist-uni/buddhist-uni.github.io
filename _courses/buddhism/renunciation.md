@@ -3,7 +3,7 @@ title: "Facing our Problems"
 description: "Right Effort is when we stop turning away from complexity."
 image: https://buddhistuniversity.net/imgs/buddhism/fancy_buddha_back.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:The_story_of_enlightenment.jpg">Sumantha Photography</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-order: 11
+order: 10
 ---
 
 ## Assigned Readings

@@ -55,7 +55,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
 {% assign bauthors = '' | split: '' %}
 {% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
 {% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
-<h3 class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
+<h3 id="{{ course.slug }}" class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
 <div class="coursedesc">
   <div class="descrow">
     <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>

@@ -10,10 +10,9 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Japan,_Kamakura_per
 
 ## Homework
 
-Before each lecture, we'll have some "homework" assignments.
+For the rest of the class, we'll have some "homework" assignments before each lecture.
 
 For this module, please read **Chapter 1** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
-to learn a bit about the Buddha before coming back here to listen to the talks.
 
 ## Lectures
 
@@ -22,5 +21,5 @@ to learn a bit about the Buddha before coming back here to listen to the talks.
 
 {% include content_blurb.html category="av" slug="kalyanamitta_yuttadhammo" %}
 {% include inline-av-player.html content="kalyanamitta_yuttadhammo" %}
-- What makes someone a "good friend?" And why is good friendship "the whole of the holy life?"
+- What makes someone a "good friend?" And why is good friendship said to be "the whole of the holy life?"
 
