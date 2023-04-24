@@ -4,8 +4,7 @@ authors:
   - "David Wengrow"
 subcat: podcast
 editor: "Adam Conover"
-external_url: "https://omny.fm/shows/factually-with-adam-conover/a-new-history-of-humanity-with-david-wengrow"
-source_url: "https://www.earwolf.com/episode/a-new-history-of-humanity-with-david-wengrow/"
+external_url: "https://www.earwolf.com/episode/a-new-history-of-humanity-with-david-wengrow/"
 course: world
 tags:
   - groups

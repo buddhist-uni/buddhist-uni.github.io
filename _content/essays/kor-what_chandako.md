@@ -2,7 +2,7 @@
 title: "Kor What?"
 authors:
   - chandako
-external_url: "https://www.watpahnanachat.org/kor-what"
+source_url: "https://web.archive.org/web/20180521160006/https://www.watpahnanachat.org/kor-what"
 drive_links:
   - "https://drive.google.com/file/d/1GB0_tN53Axag85zVx0F3Gtjg1CRuz8Hg/view?usp=drivesdk"
 tags:

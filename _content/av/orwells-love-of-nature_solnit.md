@@ -4,8 +4,7 @@ authors:
   - solnit
 subcat: podcast
 editor: "Adam Conover"
-external_url: "https://omny.fm/shows/factually-with-adam-conover/george-orwells-love-of-nature-with-rebecca-solnit"
-source_url: "https://www.earwolf.com/episode/george-orwells-love-of-nature-with-rebecca-solnit/"
+external_url: "https://www.earwolf.com/episode/george-orwells-love-of-nature-with-rebecca-solnit/"
 course: activism # maybe plants? (pseudo-archived)
 tags:
   - present
