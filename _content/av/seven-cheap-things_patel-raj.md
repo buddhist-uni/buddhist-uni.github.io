@@ -16,3 +16,5 @@ minutes: 47
 ---
 
 How deeply understanding the dependent origination of the chicken nugget helps us understand the entire modern world and how it got the way it is.
+
+You can read the introduction to his book [online here](https://drive.google.com/file/d/124pK0hotK-8-XuYgzWqY6eLoaycuKgLv/view?usp=drivesdk){:ga-event-value="0.8"}.

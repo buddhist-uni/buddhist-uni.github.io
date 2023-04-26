@@ -6,12 +6,9 @@ year: 2018
 month: sep
 publisher: princeton
 status: featured
-course: science
+course: wider
 tags:
   - geology
-  - nature
-  - time
-  - world
 olid: OL27816874M
 pages: 224
 ---

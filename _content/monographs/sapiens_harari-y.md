@@ -4,11 +4,10 @@ authors:
   - "Yuval Noah Harari"
 translator: "John Purcell and Haim Watzman"
 olid: OL28326205M
-course: wider
+course: world
 tags:
   - evolution
   - power
-  - ideology
 year: 2011
 publisher: "Kinneret Zmora-Bitan Dvir"
 pages: 464

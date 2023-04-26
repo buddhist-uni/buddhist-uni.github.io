@@ -8,9 +8,7 @@ publisher: Counterpoint
 excerpt_url: "https://www.menzelphoto.com/portfolio/G0000GPaxwfSZQ0Q"
 course: wider
 tags:
-  - world
   - economics
-  - places
 status: featured
 pages: 27
 ---
