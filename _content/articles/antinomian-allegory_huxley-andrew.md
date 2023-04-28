@@ -11,6 +11,7 @@ source_url: "https://journal.equinoxpub.com/BSR/article/view/14358"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/11Ya7AOSA6Fh6q_cAlKTdbDO-4SrF8GHH/view?usp=drivesdk"]
 course: vinaya-pitaka
+status: featured
 tags:
   - theravada
   - characters

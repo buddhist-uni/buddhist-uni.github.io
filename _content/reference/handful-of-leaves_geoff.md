@@ -8,10 +8,11 @@ formats: [epub, mobi]
 drive_links:
   - "https://drive.google.com/file/d/1n5tmHhJgAqXTIBRS5ivV8ww6uYkpro-j/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Srh0y6X_kTGqhnAhhLCHA7lpM1rulb_Q/view?usp=drivesdk"
+course: sutta
+olid: OL23998167M
 tags:
-  - sutta
   - pali-canon
 base_value: 6
 ---
 
-A large, free collection of sutta translations in ebook format, suitable for offline study.
+A large, free collection of sutta translations in ebook format, suitable for offline study on an ereader of your choice.

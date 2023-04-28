@@ -15,7 +15,7 @@ lecturers:
 next_link: /courses/buddhism/frontmatter
 google_doc_id: 1JL7KA6JF7nQAVKyRd3vah6E818DGTBLPlCyqGnzDJtg
 feedback_id: "Buddhism+101" 
-description: "A general introduction to Buddhism for beginners."
+description: "A general introduction to Buddhism for absolute beginners."
 icon: "fas fa-chalkboard-teacher"
 image: "https://buddhistuniversity.net/imgs/Isshinin-entrance.webp"
 image_width: 1280
