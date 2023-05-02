@@ -8,8 +8,9 @@ drive_links:
 course: modern
 tags:
   - engaged
-  - shin
+  - jodo
   - becon
+  - japanese-imperial
 year: 2019
 journal: hijbs
 volume: 2

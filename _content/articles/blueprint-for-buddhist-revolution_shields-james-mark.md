@@ -10,10 +10,9 @@ drive_links:
 status: featured
 course: dialogue
 tags:
-  - modern
-  - activism
-  - japanese-roots
-  - nichiren
+  - engaged
+  - japanese
+  - japanese-imperial
 year: 2012
 month: jul
 journal: jjrs

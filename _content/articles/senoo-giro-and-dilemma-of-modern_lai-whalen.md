@@ -1,0 +1,33 @@
+---
+title: "Seno’o Girō and the Dilemma of Modern Buddhism: Leftist Prophet of the Lotus Sutra"
+authors:
+  - "Whalen Lai"
+external_url: "https://pdfs.semanticscholar.org/5ca3/6237c90dfbafea24454a519d2b0bc9e4c099.pdf"
+source_url: "https://doi.org/10.18874/jjrs.11.1.1984.7-42"
+drive_links:
+  - "https://drive.google.com/file/d/1oGeV_y0HeyoLTeeC9sOAR_kNm3lOrg4h/view?usp=drivesdk"
+course: chan
+tags:
+  - japanese-imperial
+  - japanese-roots
+  - nichiren
+  - becon
+  - modern
+  - state
+  - dialogue
+year: 1984
+month: feb
+journal: jjrs
+volume: 11
+number: 1
+pages: "7--42"
+publisher: "Nanzan Institute for Religion and Culture"
+openalexid: W2341598016
+---
+
+> Seno'o Giro's personal pilgrimage spanned tradition and 
+modernity, and took him from the political right to the 
+extreme left such that in the vicissitudes of this one life is
+somehow recapitulated the whole dilemma of Japanese Buddhism since the Meiji Restoration.
+It highlights well the unresolved conflicts at the heart of modern liberal Buddhism.
+

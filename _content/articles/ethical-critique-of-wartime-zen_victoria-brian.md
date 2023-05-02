@@ -14,6 +14,7 @@ tags:
   - intellect
   - monastic-mahayana
   - nibbana
+  - japanese-imperial
 ---
 
 > unlike other Buddhist traditions based on teachings contained in one or more Buddhist sūtras, the Zen school validates itself on the basis of being "a transmission outside the sutras" (*kyōge betsuden*).
@@ -21,3 +22,5 @@ tags:
 > But what happens in those cases when the "enlightened master" isn’t truly enlightened?
 
 Given certain Zen Masters' vociferous support of Japan's militarism during World War II, how can their students today claim to have a legitimate "Dharma transmission"?
+
+For a critique of Brian Victoria's attack on Makiguchi specifically, see [*A Critical Analysis* by Daniel Metraux](/content/articles/critical-analysis-of-brian-victoria-s_metraux-daniel-a).
