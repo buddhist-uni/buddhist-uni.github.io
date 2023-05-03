@@ -1,7 +1,7 @@
 ---
 title: "Devil’s Valley to Omega Point: Reflections on the Emergence of a Theme from the Nō"
 authors: 
-  - "T.H. Barrett"
+  - "T. H. Barrett"
 editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/01Barrett.pdf"
 source: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-ii/"
@@ -15,7 +15,7 @@ tags:
   - intercultural
 year: 1992
 oclc: 61271660
-publisher: School of Oriental and African Studies
+publisher: "School of Oriental and African Studies"
 address: "London"
 volume: 2
 booktitle: "The Buddhist Forum VOLUME II Seminar Papers 1988–90"
