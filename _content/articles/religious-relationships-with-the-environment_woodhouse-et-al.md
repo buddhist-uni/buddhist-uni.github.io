@@ -12,12 +12,11 @@ drive_links:
 formats: [pdf]
 course: nature
 tags:
-  - anthropology
   - environmentalism
   - tibet
-  - ethics
+  - places
 year: 2015
-journal: Human Ecology
+journal: "Human Ecology"
 volume: 43
 pages: "295--307"
 ---
