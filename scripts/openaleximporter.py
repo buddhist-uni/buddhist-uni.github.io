@@ -9,6 +9,7 @@ import termios
 import json
 import re
 from strutils import *
+from itertools import chain
 import journals
 try:
   import requests
@@ -29,11 +30,11 @@ def fetch_work_data(workid):
 
 def alt_url_for_work(work, oa_url):
   ret = None
-  if 'alternate_host_venues' in work:
+  if 'locations' in work:
     try:
       ret = next(filter(
           lambda url: url != work['doi'] and url != oa_url and url and (url.split("/")[2] not in HOSTNAME_BLACKLIST),
-          map(lambda v: v['url'], work['alternate_host_venues'])
+          chain(map(lambda v: v['pdf_url'], work['locations']), map(lambda v: v['landing_page_url'], work['locations']))
       ))
     except StopIteration:
       pass
@@ -151,7 +152,7 @@ def make_library_entry_for_work(work, draft=False) -> str:
     fd.write(f"year: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     try:
-      venue = title_case(work['host_venue']['display_name'].replace('"', "\\\""))
+      venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
     except AttributeError:
       venue = ""
     if category == 'monographs':
@@ -159,7 +160,7 @@ def make_library_entry_for_work(work, draft=False) -> str:
     elif category in ('excerpts', 'papers'):
         fd.write(f"booktitle: \"{venue}\"\n")
     elif category == 'articles':
-        journal = work['host_venue']['id']
+        journal = work['primary_location']['source']['id']
         if journal:
           journal = journal.split('/')[-1]
         if journal and journal in journals.slugs:
@@ -180,8 +181,8 @@ def make_library_entry_for_work(work, draft=False) -> str:
             fd.write("pages: \n")
         if category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
-    if work['host_venue']['publisher']:
-        fd.write(f"publisher: \"{title_case(work['host_venue']['publisher'])}\"\n")
+    if work['primary_location']['source']['host_organization_name']:
+        fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
     elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")
     if category in ('monographs', 'excerpts'):

@@ -259,8 +259,8 @@ if __name__ == "__main__":
           entrypath = make_library_entry_for_work(work, draft=True)
         else:
           entrypath = None
-          if work['host_venue']['id']:
-            print(f"In case you want to blacklist it, the host.id was: {work['host_venue']['id'].split('/')[-1]}")
+          if work['primary_location']['source']['id']:
+            print(f"In case you want to blacklist it, the source.id was: {work['primary_location']['source']['id'].split('/')[-1]}")
       if entrypath:
         print(f"Wrote a draft entry to {entrypath}")
     works_seen.add(work)

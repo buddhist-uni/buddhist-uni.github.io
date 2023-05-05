@@ -112,7 +112,7 @@ def authorstr(work: dict, maxn: int) -> str:
 
 def print_work(work: dict, indent=0):
     s = "".join([" "]*indent)
-    print(f"{s}Venue: {work['host_venue']['display_name']}")
+    print(f"{s}Source: {work['primary_location']['source']['display_name']}")
     print(f"{s}Year: {work['publication_year']}")
     try:
       print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
