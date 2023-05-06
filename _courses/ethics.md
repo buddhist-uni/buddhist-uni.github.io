@@ -154,6 +154,9 @@ In Buddhism, the highest good is awakening, and in this chapter Śāntideva expr
 {% include content_blurb.html category="canon" slug="mn3" %}
 - How (and why) did the Buddha suggest that we pay him homage?
 
+{% include content_blurb.html category="canon" slug="iti76" %}
+- The Buddha famously said that good friendship is the whole of the holy life. This poem from the Buddha explains that point whilst (oddly?) encouraging (?) us to desire fame and fortune.
+
 ##### Chapter 2: Confession
 
 Accepting our faults is a critical starting point for ethical development, and a practice that the Buddha talked much about:
