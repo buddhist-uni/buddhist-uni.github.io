@@ -9,7 +9,7 @@ formats: [pdf]
 course: nature
 tags:
   - dialogue
-  - east-asian-buddhism
+  - chan
   - huayan
   - madyamaka
   - origination
