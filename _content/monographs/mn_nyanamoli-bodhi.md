@@ -19,4 +19,4 @@ The best translation in English of the most important collection of the Buddha's
 
 About a third of the suttas have been made available for free by the publisher and have been collected into [this open source booklet]({% link _content/booklets/mn-selections_nyanamoli-bodhi.md %}) for your consideration, however the full book is preferred and well worth the investment.
 
-The curious can view Bhikkhu Ñāṇamoli's hand-written draft [online courtesy of Path Press](https://pathpress.wordpress.com/2013/09/22/nanamoli-majjhima-nikaya/).
+The original draft of the book by Bhikkhu Ñāṇamoli can now be found online as either [his handwritten notes](https://buddhadust.net/backmatter/indexes/idx_downloads.htm#nanamoli-mnmss) or as [an incomplete, typed manuscript](https://archive.org/details/a-treasury-of-the-buddhas-words_202305){:ga-event-value=1}.
