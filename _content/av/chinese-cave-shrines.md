@@ -3,7 +3,7 @@ title: "Chinese Buddhist Cave Shrines"
 external_url: "https://youtu.be/UH3X1H6pYjY"
 course: medieval
 tags:
-  - chan-roots
+  - east-asian-roots
   - mahayana-roots
   - bart
 year: 2009

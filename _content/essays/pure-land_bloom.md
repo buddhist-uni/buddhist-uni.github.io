@@ -7,10 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1Nk-WFVl0mRdWJLIFtOK33pB6SXQjZG8b/view?usp=drivesdk"
 course: form
 tags:
-  - chan
-  - pureland
-  - jodo-shinshu
-  - mahayana
+  - east-asian
+  - jodo
 year: 1984 # Random guess
 pages: 3
 ---

@@ -7,7 +7,7 @@ editor: "Lance Pursey"
 external_url: "https://newbooksnetwork.com/buddhist-historiography-in-china"
 course: historiography
 tags:
-  - chan-roots
+  - east-asian-roots
 year: 2022
 month: sep
 publisher: nbn

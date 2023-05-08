@@ -7,7 +7,7 @@ external_url: "https://www.thezensite.com/ZenTeachings/Translations/Essence-of-M
 source_url: "https://buddhagate.org/the-essence-of-mahayana-practice/"
 drive_links:
   - "https://drive.google.com/file/d/1oqhf31ieLBPtNeGMPBm5AriUFlOEFnRP/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - roots
 year: 2008

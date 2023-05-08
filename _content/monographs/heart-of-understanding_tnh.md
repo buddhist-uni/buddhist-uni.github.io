@@ -9,7 +9,6 @@ course: philosophy
 tags: 
   - buddhism
   - mahayana
-  - chan
   - huayan
   - american
 pages: 56

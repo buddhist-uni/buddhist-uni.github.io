@@ -8,11 +8,8 @@ oclc: 191024052
 status: featured
 course: mahayana
 tags:
-  - chan
   - chinese
-  - taiwanese
   - west
-  - american
   - american-mahayana
 year: 2008
 publisher: "Doubleday"

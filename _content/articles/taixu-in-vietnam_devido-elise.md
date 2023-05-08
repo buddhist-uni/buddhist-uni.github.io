@@ -13,7 +13,7 @@ pages: "413--458"
 course: modern
 tags:
   - vietnamese
-  - chan
+  - east-asian-roots
   - engaged
 ---
 

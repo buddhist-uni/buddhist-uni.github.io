@@ -1,5 +1,5 @@
 ---
 title: "Chán Literature"
 status: unpublished
-parents: [chan, literature]
+parents: [east-asian, literature]
 ---

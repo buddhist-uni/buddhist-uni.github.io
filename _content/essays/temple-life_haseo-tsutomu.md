@@ -7,8 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Q13CTQ2w7bSNx_aY54c5AaIMEMu26zrY/view?usp=drivesdk"
 course: monastic
 tags:
-  - japanese
-  - chan
+  - east-asian
 year: 2015
 month: mar
 pages: 2

@@ -9,7 +9,7 @@ formats: [pdf]
 course: nature
 tags:
   - dialogue
-  - chan
+  - east-asian
   - huayan
   - west
 year: 2015

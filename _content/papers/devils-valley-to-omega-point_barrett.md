@@ -10,7 +10,7 @@ drive_links:
 formats: [pdf]
 course: nature
 tags:
-  - chan-roots
+  - east-asian-roots
   - daoism
   - intercultural
 year: 1992

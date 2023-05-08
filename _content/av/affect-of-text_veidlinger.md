@@ -10,7 +10,7 @@ course: vinaya-studies
 tags:
   - form
   - thai-forest
-  - chan-roots
+  - east-asian-roots
 status: featured
 year: 2011
 month: jun

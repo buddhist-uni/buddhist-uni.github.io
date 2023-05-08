@@ -5,7 +5,7 @@ authors:
 status: featured
 oclc: 875173212
 olid: OL3421500M
-course: chan
+course: east-asian
 tags:
   - buddhism
   - function

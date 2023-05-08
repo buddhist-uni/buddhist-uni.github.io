@@ -5,7 +5,6 @@ authors:
 course: medieval
 tags:
   - mahayana-roots
-  - chan-roots
 olid: OL24438910M
 external_url: "https://brill.com/downloadpdf/title/18172"
 drive_links:

@@ -6,7 +6,7 @@ external_url: "https://www.thezensite.com/ZenEssays/HistoricalZen/The_Dragon-Gir
 source_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8561/2468"
 drive_links:
   - "https://drive.google.com/file/d/1Xm4morxPxxuynIsvBd9kTG1XfANUpsMi/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - gender
   - nibbana

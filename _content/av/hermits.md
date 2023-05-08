@@ -6,7 +6,7 @@ authors:
 subcat: film
 status: featured
 external_url: "https://youtu.be/lm-PuRXepxE"
-course: chan
+course: east-asian
 tags:
   - renunciation
   - chinese-religion

@@ -4,7 +4,7 @@ external_url: "https://phineas-pta.github.io/kinh_nhat_tung/"
 authors:
   - "Phan Tuấn Anh"
 tags:
-  - chan
+  - east-asian
   - mahayana-chanting
 course: vietnamese
 month: jun

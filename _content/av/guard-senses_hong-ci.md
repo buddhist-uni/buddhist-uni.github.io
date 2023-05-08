@@ -12,7 +12,7 @@ tags:
   - thought
   - meditation
   - canadian
-  - chan
+  - east-asian
   - things
   - power
 minutes: 26

@@ -4,7 +4,7 @@ authors:
   - sheng-yen
 editor: "Ernest Heau"
 translator: "Mind Yee Wang and Paul Kennedy and Karen Swaine"
-course: chan
+course: east-asian
 tags:
   - meditation
 year: 1982

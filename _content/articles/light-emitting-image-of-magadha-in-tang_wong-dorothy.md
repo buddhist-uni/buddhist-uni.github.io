@@ -10,7 +10,7 @@ status: featured
 course: medieval
 tags:
   - pilgrimage
-  - chan-roots
+  - east-asian-roots
   - bart
 year: 2020
 month: oct

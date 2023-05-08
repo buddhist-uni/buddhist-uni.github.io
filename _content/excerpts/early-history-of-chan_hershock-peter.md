@@ -6,9 +6,10 @@ external_url: "https://archive.org/download/chan-buddhism-ch-3-early-chan-peter-
 drive_links:
   - "https://drive.google.com/file/d/1cHCa2LJPnzvXAMDTZwUYE11Ri9LqEruo/view?usp=drivesdk"
 status: featured
-course: chan
+course: east-asian
 tags:
-  - chan-roots
+  - east-asian-roots
+  - chan
 year: 2005
 publisher: hawaii
 series: "Dimensions of Asian Spirituality"

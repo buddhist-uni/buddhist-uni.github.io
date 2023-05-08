@@ -13,7 +13,7 @@ tags:
   - west
   - function
   - canadian
-  - chan
+  - east-asian
 status: featured
 minutes: 15
 ---

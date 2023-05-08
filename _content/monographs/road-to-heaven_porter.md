@@ -8,7 +8,7 @@ address: San Francisco
 course: chinese
 tags:
   - chinese-religion
-  - chan-roots
+  - east-asian-roots
   - monastic-mahayana
   - china
 oclc: 308207371

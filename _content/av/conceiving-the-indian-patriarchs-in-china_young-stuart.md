@@ -6,7 +6,7 @@ authors:
 year: 2015
 month: apr
 external_url: "https://newbooksnetwork.com/stuart-young-conceiving-the-indian-buddhist-patriarchs-in-china-u-of-hawaii-press-2014"
-course: chan-roots
+course: east-asian-roots
 publisher: nbn
 minutes: 71
 ---

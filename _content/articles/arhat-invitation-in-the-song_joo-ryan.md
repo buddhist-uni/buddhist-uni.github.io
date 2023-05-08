@@ -11,10 +11,10 @@ status: featured
 base_value: 0.6
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/16N2yLAZ8g5BVjqo82zmUNfz4lSMjTFi2/view?usp=drivesdk"]
-course: chan-roots
+course: east-asian-roots
 tags:
   - song
-  - chan
+  - chinese
 ---
 
 > it appears contradictory that Chinese who follow the teachings of Mahāyāna Buddhism have worshipped arhats. [...] who was the arhat for Chinese Buddhists?

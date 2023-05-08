@@ -6,10 +6,10 @@ external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/vie
 status: featured
 drive_links:
   - "https://drive.google.com/file/d/1flK1RkujBjhQrPfecmvlptwON2fdk2VI/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - pureland
-  - chan-roots
+  - east-asian-roots
 year: 1987
 month: jun
 journal: jiabs

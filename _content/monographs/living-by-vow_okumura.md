@@ -3,7 +3,7 @@ title: "Living by Vow: A Practical Introduction to Eight Essential Zen Chants an
 authors:
   - "Shohaku Okumura"
 editor: "Dave Ellison"
-course: chan
+course: east-asian
 tags:
   - mahayana-canon
   - zen

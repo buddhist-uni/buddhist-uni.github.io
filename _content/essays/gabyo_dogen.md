@@ -8,7 +8,7 @@ source_url: "http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Gabyo_JoshuJ
 drive_links:
   - "https://drive.google.com/file/d/1oT_lzhfvhhHUbNXJQ-T-QELPFzYxFavs/view?usp=drivesdk"
 status: featured
-course: chan
+course: east-asian
 tags:
   - emptiness
 year: 1999

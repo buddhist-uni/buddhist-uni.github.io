@@ -1,5 +1,5 @@
 ---
-title: "Chan / Zen"
+title: "East Asian Buddhism"
 status: published
 parents: [mahayana, chinese-religion]
 sortkey: 2
@@ -23,5 +23,5 @@ big_height: 2334
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Gango-ji_Buddhist_temple_in_Nara_in_the_early_morning_light_of_the_east_on_October_29,_2018.jpg">Gpwitteveen</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
-The many, mostly-exoteric forms of Buddhism found across East Asia.
+Chan, Zen, Pure Land, and the other (most-exoteric) forms of Buddhism found across East Asia.
 

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.thezensite.com/ZenTeachings/HuaTou_Lachs.pdf"
 drive_links:
   - "https://drive.google.com/file/d/11dAv1N9PxZqm9mVmjxuW_cykOiDd-aQl/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - meditation
 year: 2012

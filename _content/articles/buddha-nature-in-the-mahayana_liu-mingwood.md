@@ -11,10 +11,7 @@ year: 1982
 status: featured
 course: mahayana
 tags:
-  - mahayana-canon
-  - mahayana-roots
-  - chan
-  - chan-roots
+  - east-asian-roots
   - nibbana
 ---
 

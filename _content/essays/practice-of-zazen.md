@@ -3,7 +3,7 @@ title: "The Practice of Zazen"
 external_url: "https://www.sotozen.com/eng/library/leaflet/practice/index.html"
 drive_links:
   - "https://drive.google.com/file/d/1eDl3hZq3eXNvnmG3-HL-Urmj-PSZbiEy/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - meditation
 year: 2014

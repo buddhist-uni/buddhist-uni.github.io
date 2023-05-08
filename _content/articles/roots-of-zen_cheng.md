@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.thezensite.com/ZenEssays/Nagarjuna/roots_of_zen.htm"
 drive_links:
   - "https://drive.google.com/file/d/1D5AiFJUXjTEc9MMuHvSkSPc3sLHHLONj/view?usp=drivesdk"
-course: chan
+course: east-asian
 year: 1981
 journal: "the Journal of Chinese Philosophy"
 publisher: "Dialogue Publishing"

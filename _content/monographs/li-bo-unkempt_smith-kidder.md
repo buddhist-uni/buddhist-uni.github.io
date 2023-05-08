@@ -10,7 +10,7 @@ course: daoism
 status: featured
 tags:
   - chan-lit
-  - chan-roots
+  - east-asian-roots
   - poetry
 pages: 344
 ---
