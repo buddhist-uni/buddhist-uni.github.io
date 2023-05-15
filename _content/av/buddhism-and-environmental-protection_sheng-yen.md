@@ -9,8 +9,6 @@ status: featured
 course: nature
 tags:
   - chan
-  - environmentalism
-  - sutras
 address: Taipei
 year: 2013
 minutes: 9
