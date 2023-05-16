@@ -12,13 +12,14 @@ tags:
   - landscape
   - mountains
   - ritual
+  - roots
 year: 2021
 month: jun
 journal: orer
 publisher: oxford
-address: "Oxford"
 pages: 21
 ---
+
 > Instead of focusing primarily on universal concepts found in ancient texts, scholars are just as likely to look at how local communities have drawn on Buddhist ontology, ethics, cosmology, symbolism, and rituals to develop Buddhist responses to local environmental needs, developing contemporary Buddhist environmentalisms
 
-In this article, the author reviews the current state of "eco-Buddhism", providing the arguments for and against the idea. The article also provides a good summary of various traditional aspects of Buddhism's relationship with the environment.
+In this article, the author reviews various traditional aspects of Buddhism's relationship with the environment as well as the current state of "eco-Buddhism", providing some of the arguments for and against the idea.

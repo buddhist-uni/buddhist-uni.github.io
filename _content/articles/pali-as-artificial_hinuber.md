@@ -10,7 +10,7 @@ course: pali-language
 tags:
   - theravada-roots
 year: 1982
-journal: "The Journal of the International Association of Sanskrit Studies"
+journal: jiass
 volume: 10
 pages: "133--140"
 ---

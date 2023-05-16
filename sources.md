@@ -20,6 +20,11 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Ajahn Suchart](https://www.phrasuchart.com/enbook/){:data-slug="suchart"}
 * [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](https://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
 * [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html){:data-slug="yuttadhammo"}
+* [Bhikkhu Anandajoti's Dharma Records](https://dharma-records.buddhasasana.net/){:data-slug="anandajoti"}
+  * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
+  * [Dharma Documentaries](https://dharma-documentaries.net)
+  * [PhotoDharma](https://www.photodharma.net/Books/Books.htm)
+  * [Buddhasasana.net](https://www.buddhasasana.net/)
 * [Bhante S. Dhammika's writing at "BudBlooms"](https://budblooms.org/){:data-slug="dhammika"}
   * and [his old blog](https://sdhammika.blogspot.com/) (now discontinued)
 * [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/){:data-slug="rf"}
@@ -54,11 +59,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [A Buddhist eLibrary](https://www.buddhistelibrary.org/en/index.php?lang=english)
 * [The Buddhist Studies WWW Virtual Library](http://www.ciolek.com/WWWVL-Buddhism.html)
 * [The Pagoda Library](https://pagoda.or.th/ebook-english-books.html)
-* [Bhikkhu Anandajoti's Dharma Records](https://dharma-records.buddhasasana.net/)
-  * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
-  * [Dharma Documentaries](https://dharma-documentaries.net)
-  * [PhotoDharma](https://www.photodharma.net/Books/Books.htm)
-  * [Buddhasasana.net](https://www.buddhasasana.net/)
 * [The Zen Site](http://www.thezensite.com/index.html)
 * [DhammaWiki](https://dhammawiki.com/index.php/Main_Page)
 * [Bhikkhuni.net](https://www.bhikkhuni.net/library/)
