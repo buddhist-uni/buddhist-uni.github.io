@@ -10,6 +10,7 @@ course: nibbana
 tags:
   - mahayana-roots
   - agama
+  - yogacara
 year: 1994
 journal: bsr
 volume: 11
