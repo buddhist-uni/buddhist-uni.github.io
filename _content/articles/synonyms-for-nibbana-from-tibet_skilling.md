@@ -12,6 +12,7 @@ tags:
   - chan-roots
   - tantric-roots
   - agama
+  - yogacara
 year: 1994
 journal: bsr
 volume: 11
