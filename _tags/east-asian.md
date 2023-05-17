@@ -23,5 +23,5 @@ big_height: 2334
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Gango-ji_Buddhist_temple_in_Nara_in_the_early_morning_light_of_the_east_on_October_29,_2018.jpg">Gpwitteveen</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
-Chan, Zen, Pure Land, and the other exoteric forms of Mahāyāna Buddhism found in East Asia.
+Chan, Zen, Pure Land, Tiantai / Tendai, and the other exoteric forms of Mahāyāna Buddhism found in East Asia.
 For esoteric Buddhism, see ["Vajrayāna"](/tags/tantric).
