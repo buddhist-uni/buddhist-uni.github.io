@@ -4,13 +4,12 @@ authors:
   - sheng-yen
 external_url: "https://www.youtube.com/watch?v=-sULY8kX6Z8"
 drive_links:
-  - "https://docs.google.com/document/d/1uT51dErjMj7IfI3f2IfXfiZIP2mMQorhMzNm8rnLogM/edit?usp=share_link"
-status: featured
+  - "https://drive.google.com/file/d/1j1-RbeGQ4rK3U9aLXB1mNn7YGO7R2s7g/view?usp=share_link"
 course: nature
 tags:
   - chan
 address: Taipei
-year: 2013
+year: 2013 #Youtube pub date
 minutes: 9
 ---
 
