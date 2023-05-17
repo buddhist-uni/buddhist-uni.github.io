@@ -1,22 +1,21 @@
 ---
-title: "Viewpoint: Are well-intended Buddhist practices an under-appreciated threat to global aquatic biodiversity?"
+title: "Are well-intended Buddhist practices an under-appreciated threat to global aquatic biodiversity?"
 authors:
   - "Mark Everard"
   - "Adrian C. Pinder"
   - "Rajeev Raghavan"
   - "Gaurav Kataria"
 external_url: "https://onlinelibrary.wiley.com/doi/10.1002/aqc.2997"
-source_url: "https://onlinelibrary.wiley.com/doi/10.1002/aqc.2997"
 drive_links:
   - "https://drive.google.com/file/d/1uVM12-3kPxhJOXhL3FpAbYX5ipA4QTir/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:
   - oceans
-  - mery release
+  - mercy-release
+  - biology
 year: 2019
 journal: "Aquatic Conservation: Marine and Freshwater Ecosystems"
-publisher: 
 volume: 29 
 number: 1
 pages: "136--141"
