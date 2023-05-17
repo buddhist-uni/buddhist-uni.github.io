@@ -11,7 +11,6 @@ status: featured
 tags:
   - view
   - wider
-  - mind
   - materialism
   - tress
 year: 2013
