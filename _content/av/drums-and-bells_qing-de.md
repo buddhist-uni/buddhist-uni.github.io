@@ -9,9 +9,7 @@ course: form
 year: 2013
 tags:
   - mahayana
-  - chan
   - chinese
-  - taiwanese
   - music
   - mahayana-chanting
 minutes: 18

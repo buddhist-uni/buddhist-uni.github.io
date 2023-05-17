@@ -7,7 +7,7 @@ year: 2019
 pages: "193--224"
 volume: 17
 tags:
-  - chan-vinaya
+  - east-asian-vinaya
   - chinese
   - monastic-mahayana
 ---

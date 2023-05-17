@@ -11,7 +11,7 @@ year: 2009
 base_value: 0.4
 course: medieval
 tags:
-  - chan-roots
+  - east-asian-roots
   - sea-mahayana
   - esoteric-theravada
 address: "Taipei"

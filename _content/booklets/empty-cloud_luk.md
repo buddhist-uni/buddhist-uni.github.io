@@ -6,7 +6,7 @@ external_url: "https://www.thezensite.com/ZenTeachings/Master_Hsu-Yun_Discourses
 drive_links:
   - "https://drive.google.com/file/d/1ovZvqzEmMz8KMWMqT0OJVh2OKcvBppWW/view?usp=drivesdk"
 status: featured
-course: chan
+course: east-asian
 tags:
   - emptiness
   - meditation

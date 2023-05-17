@@ -10,7 +10,7 @@ drive_links:
 course: sects
 tags:
   - cosmology
-  - chan-roots
+  - east-asian-roots
 year: 2019
 month: jul
 journal: "Dao Journal of Comparative Philosophy"

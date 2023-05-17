@@ -14,7 +14,7 @@ drive_links:
   - "https://drive.google.com/file/d/1GJYYKfdfqE6wixLPWW8bLXLpMRQQrhBD/view?usp=drivesdk"
 formats: [mp4]
 status: featured
-course: chan
+course: east-asian
 tags:
   - form
   - korean

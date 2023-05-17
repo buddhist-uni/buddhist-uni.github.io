@@ -14,6 +14,7 @@ year: 2005
 month: jul
 olid: OL32173702M
 tags:
+  - east-asian
   - chan
   - west
 pages: 10

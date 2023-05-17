@@ -9,7 +9,7 @@ tags:
   - asia
   - ideology
   - state
-  - chan-roots
+  - east-asian-roots
 year: 2021
 month: jun
 publisher: nbn

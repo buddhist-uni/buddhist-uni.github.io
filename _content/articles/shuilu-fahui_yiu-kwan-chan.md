@@ -5,12 +5,10 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8873/10327"
 drive_links:
   - "https://drive.google.com/file/d/1WfDFEZW_aGspyRpRvsk-0MnotZtpI9zY/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
-  - chinese
   - cantonese
   - monastic-mahayana
-  - pureland
 year: 2008
 journal: bsr
 volume: 25

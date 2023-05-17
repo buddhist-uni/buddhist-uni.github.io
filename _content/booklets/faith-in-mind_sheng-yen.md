@@ -3,7 +3,7 @@ title: "Faith in Mind"
 authors: [sheng-yen]
 external_url: "https://terebess.hu/english/hsin3.html"
 tags:
-  - chan
+  - east-asian
   - problems
 base_value: 3
 olid: OL20701915M

@@ -6,7 +6,7 @@ external_url: "http://www.thezensite.com/ZenTeachings/Teishos/Working_With_Koans
 source_url: "https://web.archive.org/web/20101224132231/http://www.dharmaweb.org/index.php/Working_with_Koans_John_Tarrant%2C_Roshi"
 drive_links:
   - "https://drive.google.com/file/d/10gPGGcXD8r4kjF6PPzfPKOnawpwbr3fj/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - rinzai
   - koan

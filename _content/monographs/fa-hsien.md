@@ -10,7 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1pHN_Pbwi8jnv8I9BRcF2mzIRjCKf5Ydt/view?usp=drivesdk"
 tags:
   - medieval
-  - chan-roots
+  - east-asian-roots
   - pilgrimage
 olid: OL25495570M
 year: 1886

@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1ziY6awQFsBH7dC1OHtqrUsnCCKNVhsAv/view?usp=drivesdk"
 formats: [mp4]
 status: featured
-course: chan
+course: east-asian
 tags:
   - bart
 year: 2011

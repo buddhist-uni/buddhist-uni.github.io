@@ -15,7 +15,7 @@ big_height: 2233
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Baisigou_Square_Pagoda_Chinese_Buddhist_sutra_B.jpg">BabelStone</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 tags:
   - agama
-  - chan-roots
+  - east-asian-roots
   - chinese
   - mandarin
 next_courses:

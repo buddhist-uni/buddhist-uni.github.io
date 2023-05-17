@@ -12,6 +12,7 @@ base_value: 0.25
 tags:
   - daily-life
   - buddhism
+  - chan
 minutes: 10
 series: gdd
 number: 3

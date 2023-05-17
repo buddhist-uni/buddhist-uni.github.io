@@ -6,7 +6,7 @@ external_url: "https://pdfs.semanticscholar.org/5ca3/6237c90dfbafea24454a519d2b0
 source_url: "https://doi.org/10.18874/jjrs.11.1.1984.7-42"
 drive_links:
   - "https://drive.google.com/file/d/1oGeV_y0HeyoLTeeC9sOAR_kNm3lOrg4h/view?usp=drivesdk"
-course: chan
+course: east-asian
 tags:
   - japanese-imperial
   - japanese-roots

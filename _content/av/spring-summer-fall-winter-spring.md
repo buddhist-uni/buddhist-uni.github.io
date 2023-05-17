@@ -5,7 +5,7 @@ authors:
 subcat: film
 course: world
 tags:
-  - chan
+  - east-asian
   - korea
   - bart
   - cosmology

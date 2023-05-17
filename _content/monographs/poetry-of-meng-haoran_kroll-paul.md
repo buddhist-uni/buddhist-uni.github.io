@@ -13,8 +13,7 @@ drive_links:
 status: featured
 course: chan-lit
 tags:
-  - chan
-  - chan-roots
+  - east-asian-roots
 year: 2021
 month: jul
 olid: OL33912269M

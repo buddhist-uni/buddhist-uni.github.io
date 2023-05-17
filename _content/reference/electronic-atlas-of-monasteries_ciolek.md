@@ -17,7 +17,7 @@ tags:
   - tibetan-roots
   - tantric-roots
   - theravada-roots
-  - chan-roots
+  - east-asian-roots
   - sects
 year: 2009
 ---

@@ -9,7 +9,7 @@ base_value: 0.25
 course: mahayana
 tags:
   - soto
-  - chan
+  - east-asian-roots
   - engaged
 year: 1971
 publisher: "Vintage Books"

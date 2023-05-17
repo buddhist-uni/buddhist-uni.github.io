@@ -7,7 +7,7 @@ file_links:
   - "exclusive_01/Stupa%2C%20Sutra%2C%20and%20Sharira%20in%20China%20656-706%20-%20Barrett.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1CfUZfkveoKB32dLHcVJBIB4c9fTkx0F_/view?usp=drivesdk"
-course: chan-roots
+course: east-asian-roots
 base_value: 0.9
 status: featured
 tags:

@@ -2,7 +2,7 @@
 title: "Trust in Mind: The Rebellion of Chinese Zen"
 authors:
   - "Mu Soeng"
-course: chan
+course: east-asian
 tags:
   - emptiness
 year: 2004

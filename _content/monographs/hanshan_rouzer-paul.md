@@ -17,7 +17,7 @@ external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/27418/978
 course: chan-lit
 status: featured
 tags: 
-  - chan
+  - east-asian
   - renunciation
   - nature
 pages: 420

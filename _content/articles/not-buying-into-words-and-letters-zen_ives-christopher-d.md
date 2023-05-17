@@ -9,7 +9,7 @@ course: ideology
 tags:
   - engaged
   - zen
-  - chan
+  - east-asian
   - dialogue
   - emptiness
 year: 2006

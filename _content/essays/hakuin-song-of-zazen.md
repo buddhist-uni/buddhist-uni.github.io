@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1pGxFnSFcs64UFpNU8O3tIl4P7-3Azbm3/view?usp=drivesdk"
 status: featured
 base_value: 0.3
-course: chan
+course: east-asian
 tags:
   - zen
   - view

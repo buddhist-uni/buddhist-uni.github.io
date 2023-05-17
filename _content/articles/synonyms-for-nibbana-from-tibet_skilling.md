@@ -9,8 +9,6 @@ drive_links:
 course: nibbana
 tags:
   - mahayana-roots
-  - chan-roots
-  - tantric-roots
   - agama
 year: 1994
 journal: bsr

@@ -8,7 +8,7 @@ drive_links:
 status: featured
 course: mahayana
 tags:
-  - chan-roots
+  - east-asian-roots
   - tantric
   - mahayana-canon
   - dharani

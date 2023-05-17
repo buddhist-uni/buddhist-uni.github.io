@@ -10,7 +10,7 @@ course: becon
 tags:
   - japanese-imperial
   - modern
-  - chan
+  - east-asian
   - dialogue
 year: 2022
 publisher: "SUNY Press"

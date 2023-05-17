@@ -8,10 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/13VOk2vlIMlKSStYagO9CRLbyTZotM4Jm/view?usp=drivesdk"
 course: mahayana
 tags:
-  - chan
   - chinese
-  - japanese
-  - tibetan
 year: 1985
 olid: OL32038515M
 pages: 127

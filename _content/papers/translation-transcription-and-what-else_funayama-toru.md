@@ -11,7 +11,7 @@ course: chinese-primer
 status: featured
 tags:
   - agama
-  - chan-roots
+  - east-asian-roots
 year: 2019
 booktitle: "Buddhism and the Dynamics of Transculturality: New Approaches"
 publisher: degruyter

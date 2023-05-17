@@ -9,7 +9,7 @@ drive_links:
 course: intellect
 tags:
   - emptiness
-  - chan
+  - east-asian
   - dogen
 year: 2016 # definitive
 pages: 45

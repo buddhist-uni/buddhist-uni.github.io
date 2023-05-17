@@ -8,7 +8,7 @@ external_url: "https://youtu.be/rLjolJ4mTk0"
 drive_links:
   - "https://drive.google.com/file/d/1xI5XakkhCeBYOektmUmrELljCi--Vtqw/view?usp=drivesdk"
 formats: [mp4]
-course: chan
+course: east-asian
 tags:
   - zen
   - form

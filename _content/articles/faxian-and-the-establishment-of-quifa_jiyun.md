@@ -9,7 +9,7 @@ course: pilgrimage
 tags:
   - faxian
   - chinese
-  - chan-roots
+  - east-asian-roots
 year: 2019
 journal: hijbs
 volume: 2

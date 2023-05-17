@@ -9,12 +9,12 @@ year: 2006
 volume: 29
 number: 1
 pages: "63--86"
-course: chan
+course: east-asian
 status: featured
 tags:
   - dialogue
   - chinese-religion
-  - chan-roots
+  - east-asian-roots
   - medieval
 ---
 

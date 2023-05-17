@@ -3,6 +3,7 @@ title: "The Historical Dictionary of Chan Buddhism"
 authors:
   - "Youru Wang"
 tags:
+  - east-asian
   - chan
 year: 2017
 olid: OL35955510M

@@ -8,7 +8,9 @@ drive_links:
   - "https://play.google.com/store/books/details?id=0JdABAAAQBAJ"
   - "https://drive.google.com/file/d/1g2iRgRTqI37Hni7ZsFGmrx4xa9F25S2x/view?usp=drivesdk"
 formats: [GBook, pdf]
-course: chan
+course: east-asian
+tags:
+  - chan
 year: 1998
 olid: OL8715100M
 publisher: "Dharma Drum"
