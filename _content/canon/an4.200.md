@@ -10,6 +10,7 @@ tags:
   - an
   - arahant
 year: 2018
+pages: 4
 ---
 
 > four things are born of love and hate

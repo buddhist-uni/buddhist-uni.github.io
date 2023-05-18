@@ -11,6 +11,7 @@ tags:
   - philosophy
   - world
 year: 2000
+pages: 1
 ---
 
 > Gain and loss, disrepute and fame,  

@@ -13,6 +13,7 @@ drive_links:
   - "https://drive.google.com/file/d/1v58tYgHQVULXBME0G7_bCc80j6-NIsdE/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1vrHpIoRysBt33msq4gzoU7wKdhcBuP0m/view?usp=drivesdk"
 base_value: 5
+pages: 2992
 ---
 
 The first English translation of the Vinaya Pitaka, [Bhikkhu Sujato]({% link _authors/sujato.md %}) and [Bhikkhu Brahmali]({% link _authors/brahmali.md %}) prepared this ebook version of the PTS volumes.

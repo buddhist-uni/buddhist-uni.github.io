@@ -14,6 +14,7 @@ tags:
   - class
   - chaplaincy
 status: featured
+pages: 1
 ---
 
 The Buddha is confronted by an angry and rude Brahmin.

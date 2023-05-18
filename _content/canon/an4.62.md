@@ -13,6 +13,7 @@ tags:
   - an
   - ethics
   - becon
+minutes: 3
 ---
 
 > Householder, there are these four kinds of happiness that may be achieved by a layperson

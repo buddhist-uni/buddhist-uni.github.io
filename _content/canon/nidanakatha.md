@@ -18,6 +18,7 @@ tags:
   - rebirth-stories
   - bodhisatta
   - theravada
+pages: 210
 ---
 
 The traditional, commentarial introduction to the Pāli Jātaka collection containing the most famous mythologized biography of the Buddha.

@@ -14,6 +14,7 @@ tags:
   - theravada-vinaya
   - pali-canon
 base_value: 4
+pages: 526
 ---
 
 The canonical explication of the monastic rules.

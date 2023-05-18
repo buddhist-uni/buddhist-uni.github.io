@@ -9,6 +9,7 @@ tags:
   - nyingma
   - dedication
   - tantric
+pages: 1
 ---
 
 A simple, four line dedication prayer from the Nyingma Tradition.

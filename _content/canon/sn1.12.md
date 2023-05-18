@@ -12,6 +12,7 @@ tags:
   - sn
 year: 2018
 subcat: poetry
+pages: 1
 ---
 
 > Standing to one side, that deity recited this verse...

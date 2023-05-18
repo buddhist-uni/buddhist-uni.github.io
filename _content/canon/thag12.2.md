@@ -12,6 +12,7 @@ tags:
   - characters
 year: 2014
 subcat: poetry
+pages: 2
 ---
 
 The heartwarming story of a low-born peasant becoming a true "brahmin" this sutta reminds us that karma is not destiny.

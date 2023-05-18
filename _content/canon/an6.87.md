@@ -10,6 +10,7 @@ tags:
   - an
   - karma
 year: 2018
+pages: 1
 ---
 
 > Someone with six qualities is able to enter the sure path

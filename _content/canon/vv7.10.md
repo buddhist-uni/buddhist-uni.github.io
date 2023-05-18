@@ -10,6 +10,7 @@ status: featured
 tags:
   - vv
 year: 2020
+pages: 5
 ---
 
 > In this desert, there are no fruits, roots or any food or drink. There is no way to make a fire. There is only dust and scorching sand.

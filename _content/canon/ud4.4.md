@@ -10,6 +10,7 @@ tags:
   - yakkha
   - samadhi
 year: 2008
+pages: 3
 ---
 
 Venerable Sāriputta and Venerable Mahāmoggallāna meditate together in peace not even a _yakkha_ could disturb.

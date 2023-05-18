@@ -13,6 +13,7 @@ tags:
   - world
   - daily-life
 year: 2000
+pages: 2
 ---
 
 > An instructed noble disciple also meets gain and loss, disrepute and fame, blame and praise, and pleasure and pain.

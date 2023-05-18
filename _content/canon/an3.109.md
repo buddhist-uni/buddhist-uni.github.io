@@ -11,6 +11,7 @@ tags:
   - an
   - intellect
   - meditation
+pages: 1
 ---
 
 > It’s like a bungalow with a bad roof. The roof peak, rafters, and walls are unprotected. They get soaked, and become rotten.

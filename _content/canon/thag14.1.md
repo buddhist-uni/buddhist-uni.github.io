@@ -10,6 +10,7 @@ tags:
   - thag
   - path
 year: 2014
+pages: 3
 ---
 
 > I have been aware of loving-kindness,  

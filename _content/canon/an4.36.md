@@ -11,6 +11,7 @@ tags:
   - an
   - buddha
   - philosophy
+pages: 2
 ---
 
 > Remember me, brahmin, as a Buddha.

@@ -11,6 +11,7 @@ tags:
   - sn
   - deva
   - arahant
+pages: 2
 ---
 
 > why bother a renunciate?

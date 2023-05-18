@@ -10,6 +10,7 @@ tags:
   - samatha
   - samadhi
 year: 2018
+pages: 4
 ---
 
 The Buddha compares samādhi to a fortress that cannot be overwhelmed.

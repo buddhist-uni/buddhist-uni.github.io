@@ -10,6 +10,7 @@ tags:
   - tranquility-and-insight
   - meditation
 year: 2018
+pages: 1
 ---
 
 > [There is] a time for listening to the teaching, a time for discussing the teaching, a time for serenity, and a time for discernment.

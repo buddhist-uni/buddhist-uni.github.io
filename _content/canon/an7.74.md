@@ -13,6 +13,7 @@ tags:
   - death
   - philosophy
 year: 2018
+pages: 2
 ---
 
 > life as a human is short, brief, and fleeting, full of suffering and distress. Be thoughtful and wake up! Do what’s good and lead the spiritual life, for no-one born can escape death.

@@ -11,6 +11,7 @@ course: buddha
 tags:
   - form
   - mahayana-roots
+pages: 8
 ---
 
 > With skilful means and compassion, you were born in the Śākya clan...

@@ -11,6 +11,7 @@ tags:
   - nibbana
   - samadhi
 year: 2018
+pages: 1
 ---
 
 > having seen with wisdom, their defilements come to an end. And they understand that with wisdom. To this extent the Buddha spoke of the one freed by wisdom

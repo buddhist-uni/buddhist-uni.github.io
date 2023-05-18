@@ -18,6 +18,7 @@ tags:
   - bhikkhuni
 subcat: poetry
 year: 1995
+pages: 5
 ---
 
 Subha Bhikkhuni finds a creative solution to sexual harassment.

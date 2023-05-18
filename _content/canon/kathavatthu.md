@@ -10,6 +10,7 @@ tags:
 year: 1915
 base_value: 4
 publisher: pts
+pages: 468
 ---
 
 A book in the Abhidhamma Canon  explicitly dealing with the doctrinal controversies that arose between the Indian schools of Buddhism and the   Theravada.

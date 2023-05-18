@@ -11,6 +11,7 @@ tags:
   - philosophy
   - speech
 year: 2008
+pages: 6
 ---
 
 The famous simile of the blind men and the elephant.

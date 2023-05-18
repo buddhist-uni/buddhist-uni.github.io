@@ -10,6 +10,7 @@ tags:
   - an
   - thought
 year: 1997
+pages: 2
 ---
 
 > Some excellent thoroughbred people are like this

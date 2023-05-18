@@ -13,6 +13,7 @@ tags:
 year: 2008
 month: may
 address: "Sunnyvale, CA"
+pages: 24
 ---
 
 > To enter the Great Way there are many paths, but essentially they are of two means: by Principle and by Practice.

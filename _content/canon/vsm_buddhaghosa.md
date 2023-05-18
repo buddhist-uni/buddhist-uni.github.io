@@ -8,6 +8,7 @@ drive_links: ["https://drive.google.com/file/d/1gx7ytOh7SVUe9geJd80Bw0zkSYdQCzf-
 external_url: "https://static.sirimangalo.org/vism/"
 course: theravada
 base_value: 4.5
+pages: 853
 status: featured
 tags:
   - iddhi

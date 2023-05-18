@@ -10,6 +10,7 @@ tags:
   - cosmology
   - nibbana
 year: 2021
+pages: 1
 ---
 
 > Guttā, why did you go forth?

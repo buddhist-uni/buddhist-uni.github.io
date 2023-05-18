@@ -10,6 +10,7 @@ tags:
   - path
   - stages
 year: 2018
+pages: 2
 ---
 
 The Buddha illustrates the seven kinds of practitioners with a simile.

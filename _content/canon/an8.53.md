@@ -19,6 +19,7 @@ tags:
   - an
   - thought
 year: 2018
+pages: 1
 ---
 
 > It would be good, lord, if the Blessed One would teach me the Dhamma in brief

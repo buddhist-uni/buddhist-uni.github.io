@@ -15,4 +15,4 @@ minutes: 9
 
 > The term enviromentalism does not appear in the sutras, but everywhere in the sutras you can see things related to environmntalism.
 
-Ven. Master Sheng Yen explains the implicit understanding of environmental conservation in Buddhist sutras.
+Ven. Master Sheng Yen explains the implicit understanding of environmental conservation in Buddhism.

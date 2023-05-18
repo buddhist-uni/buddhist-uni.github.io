@@ -9,6 +9,7 @@ course: mahayana
 tags:
   - tibetan
   - repentance
+pages: 10
 ---
 
 > I confess each and every misdeed.  

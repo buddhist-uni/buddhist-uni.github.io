@@ -14,6 +14,7 @@ tags:
   - monastic
   - origination
 year: 2015
+pages: 2
 ---
 
 > let a mindful one avoid at every turn  

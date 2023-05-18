@@ -5,6 +5,7 @@ year: 2019
 translator: "Adam Pearcey"
 drive_links: ["https://drive.google.com/file/d/1tY1x-PuIV7lFFwVLO11sM0FIa6iOBKvp/view?usp=drivesdk"]
 course: mahayana
+pages: 11
 ---
 
 > zuk tongpa o | tongpanyi kyang zuk so  

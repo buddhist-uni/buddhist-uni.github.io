@@ -13,6 +13,7 @@ tags:
   - dana
   - rebirth-stories
 year: 2018
+pages: 3
 ---
 
 > Once upon a time, householder, there was a brahmin named Velāma...

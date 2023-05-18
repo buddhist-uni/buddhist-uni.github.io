@@ -9,6 +9,7 @@ tags:
   - an
   - lay
 year: 2012
+pages: 4
 ---
 
 > Mahānāma, why do you say that they will make it as Vajjis?

@@ -19,6 +19,7 @@ tags:
   - mn
   - pali-canon
 year: 2009
+pages: 7
 ---
 
 Diverse problems demand a diverse range of responses. Rather than selling a "one size fits all" solution, in this sutta the Buddha outlines seven methods for dealing with the afflictions of life and in so doing gives us a comprehensive overview of Buddhist practices.

@@ -9,6 +9,7 @@ tags:
   - mn
   - philosophy
 year: 2009
+pages: 2
 ---
 
 Venerable Sāriputta gives a detailed explanation of right view in terms of the Four Noble Truths.

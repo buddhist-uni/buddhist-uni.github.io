@@ -9,6 +9,7 @@ course: lay
 tags:
   - an
   - becon
+pages: 6
 ---
 
 > A man remembering this, a person established in Nobility,  

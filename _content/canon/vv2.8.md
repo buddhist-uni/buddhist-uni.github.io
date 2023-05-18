@@ -10,6 +10,7 @@ tags:
   - vv
   - theravada
 year: 2020
+pages: 2
 ---
 
 > I had unshakable faith in the Triple Gem. I practiced the precepts and delighted in giving and sharing.

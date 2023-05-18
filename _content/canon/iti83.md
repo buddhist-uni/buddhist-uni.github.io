@@ -10,6 +10,7 @@ tags:
   - death
   - deva
 year: 1997
+pages: 2
 ---
 
 > When a deva is due to pass away from a company of devas, five prognostic signs appear...

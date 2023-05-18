@@ -10,6 +10,7 @@ tags:
   - an
   - philosophy
 year: 1994
+pages: 3
 ---
 
 > He understands thus: ‘Formerly there was greed which was bad, and now there is none, which is good. Formerly there was hate, which was bad, and now there is none, which is good. Formerly there was delusion, which was bad, and now there is none, which is good.’ So here and now in this very life he is parched no more

@@ -13,6 +13,7 @@ tags:
   - tranquility-and-insight
   - nibbana
 year: 2018
+pages: 2
 ---
 
 > They focus on the cessation of identification, and their mind is eager, confident, settled, and decided about it. You’d expect that mendicant to stop identifying.

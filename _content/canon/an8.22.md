@@ -13,6 +13,7 @@ tags:
   - dana
   - rebirth-stories
 year: 2012
+pages: 3
 ---
 
 > I do not recall any mental exultation arising because deities come to me

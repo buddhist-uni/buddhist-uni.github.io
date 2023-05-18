@@ -14,6 +14,7 @@ tags:
   - nibbana
   - death
 year: 2008
+pages: 3
 ---
 
 > For those who have one love, they have one suffering.  

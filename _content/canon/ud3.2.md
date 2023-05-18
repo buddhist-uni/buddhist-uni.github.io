@@ -11,6 +11,7 @@ tags:
   - cosmology
   - nibbana
 year: 2008
+pages: 4
 ---
 
 The Buddha promises his half-brother Nanda five hundred celestial nymphs if he stays in the holy life. The gambit works, demonstrating the transformative potential of the monastic life.

@@ -12,6 +12,7 @@ course: nibbana
 tags:
   - snp
   - philosophy
+minutes: 4
 ---
 
 > The ignorant dullard who creates acquisition  

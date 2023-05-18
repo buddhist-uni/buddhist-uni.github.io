@@ -10,6 +10,7 @@ tags:
   - an
   - function
   - imagery
+pages: 2
 ---
 
 > It seems that we are actually impermanent, though we thought ourselves permanent;

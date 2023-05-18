@@ -5,6 +5,7 @@ external_url: "https://docs.google.com/document/d/1PW41kR3UvC1KrH-DVi1rjL_ZGfcN2
 source_url: "https://suttacentral.net/thag2.3/en/sujato"
 translator: sujato
 subcat: poetry
+pages: 1
 course: imagery
 tags:
   - hindrances

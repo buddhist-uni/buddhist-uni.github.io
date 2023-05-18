@@ -13,6 +13,7 @@ tags:
   - vedana
 year: 1997
 subcat: poetry
+pages: 1
 ---
 
 > by thoroughly understanding conceit, he has made an end of suffering.

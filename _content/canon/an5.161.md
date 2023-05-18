@@ -14,6 +14,7 @@ tags:
   - ethics
   - thought
 year: 2018
+pages: 1
 ---
 
 > use these five methods to completely get rid of resentment when it has arisen towards anyone

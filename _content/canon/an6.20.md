@@ -11,6 +11,7 @@ tags:
   - death
   - imagery
 year: 1997
+pages: 1
 ---
 
 > he should put forth extra desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness for the abandoning of those very same evil, unskillful qualities. Just as when a person whose turban or head is on fire

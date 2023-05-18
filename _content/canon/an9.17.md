@@ -12,6 +12,7 @@ tags:
   - monastic-advice
   - dana
 year: 2018
+pages: 1
 ---
 
 > Visiting a family with nine factors is worthwhile

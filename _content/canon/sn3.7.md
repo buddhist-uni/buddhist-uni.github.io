@@ -10,6 +10,7 @@ tags:
   - karma
   - samvega
 year: 1998
+pages: 2
 ---
 
 King Pasenadi realizes how silly it is, the things that make people lie.

@@ -13,6 +13,7 @@ tags:
   - meditation
 year: 2016
 series: annotated-suttas_suddhaso
+pages: 3
 ---
 
 A straightforward, annotated translation of the second chapter of the Dhammapada.

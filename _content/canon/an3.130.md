@@ -10,6 +10,7 @@ tags:
   - stages
   - anagami
   - iddhi
+pages: 1
 ---
 
 > Well, Reverend Anuruddha, when you say: ‘With clairvoyance that is purified and surpasses the human, I survey the entire galaxy,’ that’s your conceit.

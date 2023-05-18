@@ -11,6 +11,7 @@ tags:
   - interfaith
   - dialogue
 year: 2018
+pages: 2
 ---
 
 The Buddha compares ancient and contemporary Brahminic practices to those of dogs.

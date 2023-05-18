@@ -10,6 +10,7 @@ tags:
   - an
   - engaged
 year: 2012
+pages: 2
 ---
 
 > In what way, Bhante, is one a lay follower?

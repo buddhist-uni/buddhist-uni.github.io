@@ -12,6 +12,7 @@ tags:
   - nibbana
   - becon
 year: 2018
+pages: 4
 ---
 
 Debt in the world, debt in the training, and the highest freedom from debt.

@@ -10,6 +10,7 @@ tags:
   - sn
 course: path
 year: 2000
+pages: 1
 ---
 
 > One should not pursue a course  

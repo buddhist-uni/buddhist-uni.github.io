@@ -11,6 +11,7 @@ tags:
   - dana
   - karma
 year: 2020
+pages: 1
 ---
 
 > I did not have valuable things to offer. But still, I offered some

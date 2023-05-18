@@ -10,6 +10,7 @@ tags:
   - deva
   - monastic-advice
 year: 2018
+pages: 2
 ---
 
 A deva gently encourages a group of wayward monks.

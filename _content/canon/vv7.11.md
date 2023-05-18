@@ -10,6 +10,7 @@ tags:
   - vv
   - meditation
 year: 2020
+pages: 1
 ---
 
 > I arranged those flowers beautifully while recollecting the great qualities of the Supreme Buddha.

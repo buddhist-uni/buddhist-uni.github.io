@@ -9,6 +9,7 @@ course: speech
 tags:
   - sn
   - thought
+pages: 1
 ---
 
 > Man is born  

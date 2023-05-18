@@ -9,6 +9,7 @@ course: time
 tags:
   - an
   - samadhi
+pages: 1
 ---
 
 > Bhikkhus, there are these four Dhamma factors, primal, of long standing, traditional, ancient...

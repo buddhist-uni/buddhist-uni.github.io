@@ -12,6 +12,7 @@ tags:
   - an
   - samadhi
 year: 2007
+pages: 3
 ---
 
 > what is confinement, and what is the opening amid confinement that the Buddha spoke of?

@@ -10,6 +10,7 @@ tags:
   - snp
   - renunciation
 year: 2018
+pages: 3
 ---
 
 A rare glimpse into the Bodhisattva's journey.

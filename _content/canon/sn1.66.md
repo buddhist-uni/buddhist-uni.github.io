@@ -12,6 +12,7 @@ tags:
   - desire
 subcat: poetry
 year: 2000
+pages: 1
 ---
 
 > By what is the world afflicted?  

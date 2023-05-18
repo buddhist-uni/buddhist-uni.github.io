@@ -12,6 +12,7 @@ tags:
   - philosophy
   - navakovada
 base_value: 4
+pages: 207
 ---
 
 An abridged translation of the much-beloved, ancient Pāli classic of Theravāda doctrine.

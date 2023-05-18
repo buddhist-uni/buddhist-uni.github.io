@@ -10,6 +10,7 @@ tags:
   - setting
 year: 2018
 subcat: poetry
+pages: 1
 ---
 
 A short sutta celebrating a Bhikkhunī meditation teacher.

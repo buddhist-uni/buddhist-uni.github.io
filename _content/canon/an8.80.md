@@ -14,6 +14,7 @@ tags:
   - becon
   - thought
 year: 2018
+pages: 4
 ---
 
 > Mendicants, there are eight grounds for laziness.

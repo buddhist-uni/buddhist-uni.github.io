@@ -12,6 +12,7 @@ tags:
   - lay
   - stream-entry
 year: 2018
+pages: 1
 ---
 
 > Having these six qualities the householder Tapussa is certain

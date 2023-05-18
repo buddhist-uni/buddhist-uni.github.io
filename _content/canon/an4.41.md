@@ -15,6 +15,7 @@ tags:
   - daily-life
   - iddhi
   - jhana
+pages: 2
 ---
 
 > There is a way of developing immersion further

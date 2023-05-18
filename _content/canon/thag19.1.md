@@ -12,6 +12,7 @@ tags:
   - problems
   - monastic-advice
 year: 2014
+pages: 8
 ---
 
 > Oh, when will I stay in a mountain cave,  

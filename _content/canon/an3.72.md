@@ -10,6 +10,7 @@ tags:
   - an
   - speech
   - pedagogy
+pages: 2
 ---
 
 The Buddha draws out his interlocutor's own wisdom to answer a tricky question.

@@ -13,6 +13,7 @@ tags:
   - feeling
   - imagery
   - function
+pages: 1
 ---
 
 > And how is an individual like an inscription in rock?

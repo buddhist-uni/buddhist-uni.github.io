@@ -9,6 +9,7 @@ course: monastic-advice
 tags:
   - an
 year: 2018
+pages: 2
 ---
 
 > a mendicant with four qualities is worthy of offerings

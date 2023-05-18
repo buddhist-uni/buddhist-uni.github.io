@@ -9,6 +9,7 @@ year: 2018
 course: speech
 tags:
   - sn
+pages: 2
 ---
 
 > speech that has four factors is well spoken

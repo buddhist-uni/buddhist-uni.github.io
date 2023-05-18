@@ -9,6 +9,7 @@ course: cosmology
 tags:
   - an
   - deva
+pages: 2
 ---
 
 > On the eighth day of the fortnight, mendicants, the ministers and counselors of the Four Great Kings wander about the world...

@@ -8,6 +8,7 @@ year: 2013
 course: lay
 tags:
   - an
+pages: 12
 ---
 
 > The Noble Disciple, householder,

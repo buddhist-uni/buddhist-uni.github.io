@@ -10,6 +10,7 @@ tags:
   - vv
   - form
 year: 2020
+pages: 1
 ---
 
 > Raising my hands and putting my palms and fingers together, I saluted

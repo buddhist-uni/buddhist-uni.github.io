@@ -10,6 +10,7 @@ tags:
   - an
   - thought
 year: 2018
+pages: 2
 ---
 
 > What six? Firstly, a noble disciple recollects...

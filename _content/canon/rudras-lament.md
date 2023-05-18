@@ -10,6 +10,7 @@ tags:
   - tantra
   - cosmology
   - karma
+pages: 11
 ---
 
 > Kind protector, compassionate deity, heed me now, I pray

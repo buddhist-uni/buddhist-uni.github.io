@@ -8,6 +8,7 @@ course: stages
 tags:
   - an
 year: 2018
+pages: 3
 ---
 
 > There are these nine people who, dying with something left over, are exempt from hell, the animal realm, and the ghost realm.

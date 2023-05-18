@@ -14,6 +14,7 @@ tags:
   - ideology
   - function
 year: 2000
+pages: 5
 ---
 
 > Kālāmas, do not go by oral tradition, by lineage of teaching, by hearsay, by a collection of scriptures, by logic...

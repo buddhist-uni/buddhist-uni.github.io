@@ -11,6 +11,7 @@ tags:
   - karma
   - monastic-advice
 year: 2018
+pages: 2
 ---
 
 > having fulfilled our duty, free of remorse and regret, we were reborn in a superior realm

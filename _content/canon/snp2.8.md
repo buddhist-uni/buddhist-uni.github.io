@@ -9,6 +9,7 @@ course: monastic
 tags:
   - snp
 year: 2018
+pages: 2
 ---
 
 > a knowledge master,  

@@ -10,6 +10,7 @@ tags:
   - function
   - tantric
   - an
+pages: 1
 ---
 
 > what is the person whose mind is like a diamond?

@@ -16,6 +16,7 @@ tags:
   - origination
   - hermeneutics
 year: 2018
+pages: 3
 ---
 
 A group of monks tries to figure out the meaning of a difficult poem uttered by the Buddha. After offering several interpretations, the Buddha gives his answer.

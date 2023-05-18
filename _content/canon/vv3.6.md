@@ -11,6 +11,7 @@ tags:
   - dana
   - rebirth-stories
 year: 2020
+pages: 3
 ---
 
 > But I offered them much more food than you did! Yet, I have been born in a lower heavenly world. Having offered very little, how did you receive more happiness than me?

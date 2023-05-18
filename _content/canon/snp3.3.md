@@ -12,6 +12,7 @@ tags:
   - ebts
   - epistemology
 year: 1994
+pages: 1
 ---
 
 > Truth, indeed, is deathless speech

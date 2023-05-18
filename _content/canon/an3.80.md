@@ -8,6 +8,7 @@ course: cosmology
 tags:
   - an
   - characters
+pages: 2
 ---
 
 Ānanda gets the Buddha to talk about the scale of the universe.

@@ -12,6 +12,7 @@ tags:
   - dana
 subcat: poetry
 year: 2000
+pages: 1
 ---
 
 > When one’s house is ablaze  

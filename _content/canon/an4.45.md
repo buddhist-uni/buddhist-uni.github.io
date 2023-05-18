@@ -12,6 +12,7 @@ tags:
   - an
   - body
   - sati
+pages: 1
 ---
 
 > Yet it is just within this fathom-long body, with its perception & intellect, that I declare that there is the cosmos, the origination of the cosmos, the cessation of the cosmos, and the path of practice leading to the cessation of the cosmos.

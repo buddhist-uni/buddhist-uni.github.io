@@ -10,6 +10,7 @@ tags:
   - karma
   - jains
 year: 2018
+pages: 4
 ---
 
 A Jain follower espouses a version of fatalism which the Buddha then refutes.

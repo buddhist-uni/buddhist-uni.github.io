@@ -10,6 +10,7 @@ tags:
   - vv
   - problems
 year: 2020
+pages: 1
 ---
 
 > Because of this meritorious deed, I have been born as a very beautiful deva and enjoy all the wonderful things that delight my heart.

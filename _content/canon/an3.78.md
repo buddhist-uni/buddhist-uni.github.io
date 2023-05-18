@@ -12,6 +12,7 @@ tags:
   - interfaith
   - dialogue
   - religion
+pages: 1
 ---
 
 > Ānanda, are all precepts and observances, lifestyles, and spiritual paths fruitful?

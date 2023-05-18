@@ -8,6 +8,7 @@ course: emptiness
 tags:
   - an
   - dialogue
+pages: 1
 ---
 
 > But when discourses spoken by the Realized One—deep, profound, transcendent, dealing with emptiness—are being recited the mendicants do want to listen. They pay attention and apply their minds

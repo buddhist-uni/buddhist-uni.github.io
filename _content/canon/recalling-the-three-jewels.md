@@ -8,6 +8,7 @@ course: mahayana
 tags:
   - buddhism
 year: 2001
+pages: 8
 ---
 
 A simple, daily recitation of the qualities of the triple gem from the Tibetan Tradition.

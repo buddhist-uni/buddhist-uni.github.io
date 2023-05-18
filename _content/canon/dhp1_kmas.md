@@ -17,6 +17,7 @@ tags:
   - ebts
 subcat: poetry
 year: 2009
+minutes: 4
 ---
 
 A beautiful reading of some of the most famous verses in Buddhism.

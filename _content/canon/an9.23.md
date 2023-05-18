@@ -10,6 +10,7 @@ tags:
   - an
   - social
 year: 2018
+pages: 1
 ---
 
 > Craving is a cause of seeking. Seeking is a cause of gaining...

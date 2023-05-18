@@ -11,6 +11,7 @@ tags:
   - agama-misc
 year: 2009
 month: may
+pages: 18
 ---
 
 A translation from the Mahāvastu on the Buddha's first journey after the Awakening to the place where he would give his first official teaching.

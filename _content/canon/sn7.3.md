@@ -12,6 +12,7 @@ tags:
   - canonical-poetry
 year: 2020
 subcat: poetry
+pages: 2
 ---
 
 > if you’re patient, mindful and calm,  

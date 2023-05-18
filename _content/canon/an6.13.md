@@ -14,6 +14,7 @@ tags:
   - hindrances
   - thought
 year: 2018
+pages: 2
 ---
 
 > ‘I’ve developed the heart’s release by love... Yet somehow ill will still occupies my mind.’

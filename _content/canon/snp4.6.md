@@ -11,6 +11,7 @@ tags:
   - renunciation
   - vipassana
 year: 1983
+pages: 1
 ---
 
 > A wise man is not deluded by what is perceived by the senses. He does not expect purity by any other way.

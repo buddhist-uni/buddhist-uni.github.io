@@ -8,6 +8,7 @@ tags:
   - ud
   - monastic-advice
 year: 2021
+pages: 1
 ---
 
 > Mendicants, it is not appropriate for you who have gone forth to talk about such things.

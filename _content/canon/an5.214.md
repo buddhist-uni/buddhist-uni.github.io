@@ -10,6 +10,7 @@ tags:
   - communication
   - dialogue
 year: 2018
+pages: 1
 ---
 
 > five drawbacks for a person who talks a lot

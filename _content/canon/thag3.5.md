@@ -13,6 +13,7 @@ tags:
   - canonical-poetry
 subcat: poetry
 year: 1995
+pages: 1
 ---
 
 > doing his manly duties,  

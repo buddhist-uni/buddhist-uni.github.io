@@ -14,6 +14,7 @@ tags:
   - tranquility-and-insight
   - snp
 year: 2005
+pages: 2
 ---
 
 > Faith is the seed, practice the rain,  

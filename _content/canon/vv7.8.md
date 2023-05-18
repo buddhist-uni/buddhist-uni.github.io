@@ -11,6 +11,7 @@ tags:
   - monastic-advice
   - sects
 year: 2020
+pages: 2
 ---
 
 > Although I did not have anything with which to practice generosity, I encouraged others.

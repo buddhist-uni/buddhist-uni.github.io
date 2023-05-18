@@ -12,6 +12,7 @@ tags:
   - sutta
 year: 2019
 subcat: poetry
+pages: 10
 ---
 
 > No life is eternal, not even that of the gods;  

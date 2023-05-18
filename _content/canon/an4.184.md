@@ -12,6 +12,7 @@ tags:
   - view
   - tmt
 year: 2018
+pages: 3
 ---
 
 The Buddha assures a layman that some people, while subject to death, have truly overcome the fear of death.

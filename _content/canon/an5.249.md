@@ -12,6 +12,7 @@ tags:
   - meditation
   - lay
 year: 2018
+pages: 2
 ---
 
 > Mendicants, there are these five drawbacks to a charnel ground.

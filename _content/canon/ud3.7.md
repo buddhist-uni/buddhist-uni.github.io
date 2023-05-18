@@ -12,6 +12,7 @@ tags:
   - dana
   - monastic
 year: 2021
+pages: 2
 ---
 
 > But Mahākasspa refused those deities...

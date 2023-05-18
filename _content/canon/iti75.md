@@ -10,6 +10,7 @@ tags:
   - imagery
   - dana
 year: 1997
+pages: 2
 ---
 
 > What kind of person, bhikkhus, is like a rainless cloud?

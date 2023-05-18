@@ -10,6 +10,7 @@ tags:
   - philosophy
 year: 2021
 subcat: poetry
+pages: 2
 ---
 
 > All suffering is fully understood,  

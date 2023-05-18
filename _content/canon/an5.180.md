@@ -11,6 +11,7 @@ tags:
   - characters
   - charisma
 year: 2018
+pages: 3
 ---
 
 The Buddha smiles and tells the story of a true spiritual leader.

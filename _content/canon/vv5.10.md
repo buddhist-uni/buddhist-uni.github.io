@@ -10,6 +10,7 @@ tags:
   - vv
   - material-culture
 year: 2020
+pages: 1
 ---
 
 > I offered eight fallen flowers to the stupa...

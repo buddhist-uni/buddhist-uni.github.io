@@ -10,6 +10,7 @@ tags:
   - deva
   - characters
 year: 2018
+pages: 2
 ---
 
 > the god Kāmada said to the Buddha, “It’s too hard, Blessed One! It’s just too hard!”

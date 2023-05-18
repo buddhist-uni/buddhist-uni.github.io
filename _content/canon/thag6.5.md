@@ -12,6 +12,7 @@ tags:
   - pali-canon
 subcat: poetry
 year: 2018
+pages: 2
 ---
 
 > When a person lives heedlessly,  

@@ -11,6 +11,7 @@ tags:
   - sn
 year: 2018
 subcat: poetry
+pages: 1
 ---
 
 > What should one who desires the good

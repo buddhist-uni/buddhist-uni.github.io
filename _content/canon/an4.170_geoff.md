@@ -9,6 +9,7 @@ tags:
   - an
   - vipassana
 year: 1998
+pages: 2
 ---
 
 > whoever---monk or nun---declares the attainment of arahantship in my presence, they all do it by means of one or another of four paths.

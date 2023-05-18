@@ -10,6 +10,7 @@ tags:
   - nibbana
 subcat: poetry
 year: 2013
+pages: 1
 ---
 
 The Buddha illustrates letting go with the simile of a boat in need of bailing out.

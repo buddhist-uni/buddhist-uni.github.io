@@ -15,6 +15,7 @@ tags:
   - american
 year: 2006
 month: jan
+minutes: 11
 ---
 
 > although I have long waited upon the Teacher and *bhikkhus* worthy of esteem, never before have I heard such a talk on the Dhamma

@@ -12,6 +12,7 @@ tags:
   - form
   - thought
 year: 2018
+pages: 4
 ---
 
 > "Be my heirs in the teaching, not in material things."

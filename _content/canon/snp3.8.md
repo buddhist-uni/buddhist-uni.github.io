@@ -8,6 +8,7 @@ source_url: "https://accesstoinsight.org/tipitaka/kn/snp/snp.3.08.than.html"
 drive_links:
   - "https://drive.google.com/file/d/1W82dvTtBKV17qwN5u3vX1Xag4ebMd2FL/view?usp=drivesdk"
 course: grief
+pages: 3
 tags:
   - snp
   - death

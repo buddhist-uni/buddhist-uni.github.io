@@ -12,6 +12,7 @@ tags:
   - time
   - intellect
 year: 2018
+pages: 1
 ---
 
 > Witless fools behave  

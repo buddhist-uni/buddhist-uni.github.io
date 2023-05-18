@@ -14,6 +14,7 @@ tags:
   - karma
   - theravada-roots
 olid: OL32035986M
+pages: 181
 ---
 
 A composite text bringing together many Buddhist stories about karma and its ripening into a comprehensive index of pedagogical snippets.

@@ -14,6 +14,7 @@ tags:
   - philosophy
 year: 1997
 subcat: poetry
+pages: 2
 ---
 
 > The fire of lust burns mortals;

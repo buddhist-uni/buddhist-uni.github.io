@@ -9,6 +9,7 @@ tags:
   - an
   - lay
 year: 2018
+pages: 1
 ---
 
 > A lay follower living at home with these five qualities is self-assured.

@@ -14,6 +14,7 @@ tags:
   - thought
   - imagery
 year: 2012
+pages: 4
 ---
 
 On the eight ways that people become defensive when admonished: a useful mirror for how we handle criticism. When was the last time you were “like a wild colt?”

@@ -10,6 +10,7 @@ tags:
   - death
   - sutta
 year: 2020
+pages: 1
 ---
 
 > I do not cry over my dead son. He went to another life according to his karma.

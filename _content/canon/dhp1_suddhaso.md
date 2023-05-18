@@ -12,6 +12,7 @@ tags:
   - philosophy
 year: 2016
 series: annotated-suttas_suddhaso
+pages: 5
 ---
 
 A straightforward, annotated translation of the first chapter of the Dhammapada.

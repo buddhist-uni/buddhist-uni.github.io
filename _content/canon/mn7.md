@@ -13,6 +13,7 @@ tags:
   - nibbana
   - setting
 year: 2018
+pages: 5
 ---
 
 The Vattha Sutta is a beautiful and somewhat unusual description of the path to stream entry and beyond.

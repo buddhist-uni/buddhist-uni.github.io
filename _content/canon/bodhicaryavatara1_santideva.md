@@ -11,6 +11,7 @@ tags:
   - thought
 year: 2007
 translator: "Adam Pearcey"
+pages: 5
 ---
 
 > In accordance with the scriptures, I shall now in brief describe  

@@ -14,6 +14,7 @@ tags:
   - phenomenology
   - philosophy
 year: 2018
+pages: 2
 ---
 
 > Mendicants, there are these seven kinds of wealth. What seven? The wealth of faith, ethical conduct, conscience, prudence, learning, generosity, and wisdom.

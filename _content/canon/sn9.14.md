@@ -11,6 +11,7 @@ tags:
   - sn
   - action
   - deva
+pages: 2
 ---
 
 In which a _deva_ chastises a monk for sniffing a flower!

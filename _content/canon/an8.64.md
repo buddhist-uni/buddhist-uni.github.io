@@ -12,6 +12,7 @@ tags:
   - cosmology
   - an
 year: 2018
+pages: 3
 ---
 
 The Buddha describes his progressive knowledge of the devas.

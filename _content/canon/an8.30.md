@@ -13,6 +13,7 @@ tags:
   - characters
   - cessation
 year: 2012
+pages: 7
 ---
 
 The Buddha gently encourages Venerable Anuruddha to stop thinking and to delight in cessation.

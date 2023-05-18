@@ -10,6 +10,7 @@ tags:
   - snp
   - philosophy
 year: 2018
+pages: 9
 ---
 
 > When a mendicant meditates rightly contemplating a pair of teachings in this way—diligent, keen, and resolute—they can expect one of two results: enlightenment in the present life or, if there’s something left over, non-return.

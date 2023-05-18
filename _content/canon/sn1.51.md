@@ -10,6 +10,7 @@ course: thought
 tags:
   - sn
   - aging
+pages: 1
 ---
 
 > What is good      all the way through old age?

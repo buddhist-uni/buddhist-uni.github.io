@@ -8,6 +8,7 @@ tags:
   - pali-commentaries
   - vinaya-pitaka
 year: 1982 # a wild guess
+pages: 45
 ---
 
 > The present compilation brings together in English translation the most important Pali Vinaya texts dealing with the first rule in the *Sanghādisesa* section of the Bhikkhu Pātimokkha: the training rule on intentional emission of semen — one of the disciplinary rules most fundamental to [a bhikkhu's] training.

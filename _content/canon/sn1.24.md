@@ -10,6 +10,7 @@ tags:
   - sati
 course: thought # definitely
 year: 2000
+pages: 1
 ---
 
 > Should one rein in the mind from everything...

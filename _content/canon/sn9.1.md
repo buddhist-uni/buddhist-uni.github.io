@@ -11,6 +11,7 @@ course: imagery
 tags:
   - sn
   - monastic-advice
+pages: 1
 ---
 
 > You, a person:  

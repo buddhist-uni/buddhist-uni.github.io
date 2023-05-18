@@ -12,6 +12,7 @@ tags:
   - sukha
   - bodhisattva
 year: 2018
+pages: 1
 ---
 
 The Buddha explains that only the enlightened can truly teach.

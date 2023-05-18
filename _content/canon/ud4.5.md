@@ -9,6 +9,7 @@ tags:
   - buddha
   - imagery
 year: 2008
+pages: 3
 ---
 
 In this sutta we see the Buddha exemplifying the two uses of nature on the path: as a site for seclusion and as an opportunity for reflection.

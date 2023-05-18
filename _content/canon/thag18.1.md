@@ -10,6 +10,7 @@ tags:
   - monastic-advice
   - viveka
 year: 2021
+pages: 4
 ---
 
 > Some people almost faint trying to climb up the mountain where I live.

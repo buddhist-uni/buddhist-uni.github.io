@@ -12,6 +12,7 @@ tags:
   - friendship
   - stream-entry
 year: 1998
+pages: 2
 ---
 
 > As for the individual who has attained neither internal tranquillity of awareness nor insight into phenomena through heightened discernment, he should approach an individual who has attained both internal tranquillity of awareness & insight into phenomena

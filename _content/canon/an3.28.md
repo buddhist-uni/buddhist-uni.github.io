@@ -9,6 +9,7 @@ course: speech
 tags:
   - an
   - path
+pages: 1
 ---
 
 > what, bhikkhus, is the person whose speech is like dung?

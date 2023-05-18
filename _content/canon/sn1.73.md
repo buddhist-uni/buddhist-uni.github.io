@@ -7,6 +7,7 @@ tags:
   - sn
   - view
 year: 2000
+pages: 1
 ---
 
 > What here is a man’s best treasure?

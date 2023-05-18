@@ -11,6 +11,7 @@ tags:
   - sati
   - brahmavihara
 year: 2018
+pages: 3
 ---
 
 The Buddha instructs a monk to sequentially develop the four Brahmaviharas and the four satipaṭṭhānā.

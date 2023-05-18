@@ -15,6 +15,7 @@ tags:
   - charisma
 year: 1989
 publisher: bps
+pages: 40
 ---
 
 > Is it possible, venerable sir, to point out any fruit of recluseship that is visible here and now?

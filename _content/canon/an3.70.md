@@ -12,6 +12,7 @@ tags:
   - deva
   - uposatha
   - ethics
+pages: 9
 ---
 
 The Buddha describes how a lay Buddhist should keep a sabbath day: by recollecting the triple gem together with the gods and by keeping the moral precepts beloved and kept by the noble ones.

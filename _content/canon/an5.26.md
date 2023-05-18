@@ -12,6 +12,7 @@ tags:
   - path
   - ebts
   - hermeneutics
+pages: 2
 ---
 
 > Mendicants, there are these five opportunities for freedom.

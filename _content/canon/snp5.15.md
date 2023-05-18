@@ -9,6 +9,7 @@ tags:
   - anagami
   - vipassana
 year: 2021
+pages: 1
 ---
 
 > One who has entirely given up the body, ...

@@ -11,6 +11,7 @@ tags:
   - thought
   - hindrances
 year: 2021
+pages: 1
 ---
 
 > Hey, mind! Now I will stop you

@@ -14,6 +14,7 @@ tags:
   - american
   - psychology
 year: 2006
+minutes: 8
 ---
 
 > indeed there is no thing there

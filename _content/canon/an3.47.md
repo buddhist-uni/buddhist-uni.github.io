@@ -10,6 +10,7 @@ course: philosophy
 tags:
   - an
   - nibbana
+pages: 2
 ---
 
 > conditioned phenomena have these three characteristics...

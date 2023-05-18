@@ -14,6 +14,7 @@ tags:
   - pilgrimage
   - ordination
   - setting
+pages: 127
 ---
 
 The canonical account of the Buddha's first days and the story of how the religion was founded.

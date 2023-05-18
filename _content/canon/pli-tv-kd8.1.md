@@ -13,6 +13,7 @@ tags:
   - medicine
   - setting
   - pali-canon
+pages: 9
 ---
 
 > "It would not be appropriate for me to give the Buddha a powerful laxative."

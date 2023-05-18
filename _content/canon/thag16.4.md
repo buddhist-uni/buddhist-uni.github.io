@@ -12,6 +12,7 @@ tags:
   - rebirth
   - imagery
 year: 2014
+pages: 4
 ---
 
 > See this fancy puppet,  

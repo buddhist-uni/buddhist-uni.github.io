@@ -11,6 +11,7 @@ tags:
   - problems
   - sati
 year: 2000
+pages: 2
 ---
 
 > give up sense pleasures even if it’s painful:  

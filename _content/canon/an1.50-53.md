@@ -12,6 +12,7 @@ tags:
   - mind
   - samadhi
 year: 1995
+pages: 1
 ---
 
 > Luminous, monks, is the mind.

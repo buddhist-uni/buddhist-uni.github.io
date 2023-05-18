@@ -12,6 +12,7 @@ tags:
   - thought
 year: 2014
 month: aug
+pages: 8
 ---
 
 > Here, monastics, for the donor there are three factors, and for the receivers there are three factors.

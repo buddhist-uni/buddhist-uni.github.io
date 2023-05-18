@@ -14,6 +14,7 @@ tags:
   - caste
 reason: "Duplicate of MN 98"
 year: 2018
+pages: 8
 ---
 
 > We ask Gotama, the Eye that has arisen in the world:  

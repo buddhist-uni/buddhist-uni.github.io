@@ -9,6 +9,7 @@ year: 2000
 course: philosophy
 tags: 
   - sn
+pages: 2
 ---
 
 > Why now do you assume ‘a being’?

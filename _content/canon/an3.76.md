@@ -12,6 +12,7 @@ tags:
   - origination
   - karma
   - imagery
+pages: 3
 ---
 
 > So, Ānanda, deeds are the field, consciousness is the seed, and craving is the moisture.

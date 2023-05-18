@@ -11,6 +11,7 @@ tags:
   - imagery
   - canonical-poetry
 year: 2007
+pages: 1
 ---
 
 > Even in a confining place they find it,  

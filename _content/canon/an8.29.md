@@ -9,6 +9,7 @@ course: cosmology
 tags:
   - an
 year: 2018
+pages: 3
 ---
 
 > Mendicants, there are eight lost opportunities for spiritual practice.

@@ -10,6 +10,7 @@ tags:
   - sati
 year: 2014
 subcat: poetry
+pages: 2
 ---
 
 > the fool shut in on every side,  

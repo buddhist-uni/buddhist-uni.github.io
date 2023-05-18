@@ -12,6 +12,7 @@ tags:
   - nibbana
   - thought
 year: 1998
+pages: 1
 ---
 
 > A monk endowed with six qualities is capable of realizing the unexcelled cooled state.

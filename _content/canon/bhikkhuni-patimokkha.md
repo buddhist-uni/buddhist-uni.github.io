@@ -20,6 +20,7 @@ drive_links:
   - "https://drive.google.com/file/d/1ZSPMnEh0_jEOxMGxrX1h-vk2aaDo0MC0/view?usp=drivesdk"
 publisher: "Santipada Publications"
 base_value: 2
+pages: 154
 ---
 
 The monastic rules for Theravada Bhikkhunis, prepared in a bilingual English-Pali edition for study and recitation.

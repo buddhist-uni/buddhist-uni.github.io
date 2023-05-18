@@ -18,6 +18,7 @@ tags:
   - path
   - ethics
 subcat: poetry
+pages: 2
 ---
 
 A recipe for the good life, from having good friends to the realization of Nibbāna, this chant is a favorite of Theravada Buddhists the world over, myself included.

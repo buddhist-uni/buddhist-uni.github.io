@@ -12,6 +12,7 @@ tags:
   - state
   - rebirth-stories
 year: 2018
+pages: 14
 ---
 
 > Let the king provide funding for those who work in trade.

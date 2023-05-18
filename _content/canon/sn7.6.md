@@ -11,6 +11,7 @@ tags:
   - vipassana
   - nibbana
 status: featured
+pages: 1
 ---
 
 > who can untangle this tangle?

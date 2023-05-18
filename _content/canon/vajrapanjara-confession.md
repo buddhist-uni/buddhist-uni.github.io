@@ -10,6 +10,7 @@ tags:
   - form
   - thought
 year: 2020
+pages: 2
 ---
 
 > In the Three Jewels, I take refuge...

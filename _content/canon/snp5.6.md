@@ -17,6 +17,7 @@ tags:
   - arahant
   - vipassana
   - epistemology
+minutes: 3
 ---
 
 The Buddha gives pithy answers to Upasīva about the path to liberation and the status of anāgāmīs and arahants.

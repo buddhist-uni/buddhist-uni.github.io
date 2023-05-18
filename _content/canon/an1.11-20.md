@@ -9,6 +9,7 @@ course: hindrances
 tags:
   - an
 year: 2020
+pages: 3
 ---
 
 > Monks, I do not see a single thing that gives rise to sense desire like the feature of attractiveness.

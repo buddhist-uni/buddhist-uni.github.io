@@ -11,6 +11,7 @@ tags:
   - sati
   - buddha
 year: 2021
+pages: 3
 status: featured
 ---
 

@@ -12,6 +12,7 @@ tags:
   - food
   - ethics
 year: 2020
+pages: 2
 ---
 
 > if sentient beings only knew, as I do, the fruit of giving and sharing, they would not eat without first giving

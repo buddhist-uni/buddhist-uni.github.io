@@ -12,6 +12,7 @@ tags:
   - hell
   - philosophy
 year: 2018
+pages: 5
 ---
 
 > Kokālika has been reborn in the Pink Lotus hell because of his resentment for Sāriputta and Moggallāna.

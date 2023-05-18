@@ -12,6 +12,7 @@ tags:
   - pali-canon
 status: featured
 year: 2015
+pages: 7
 ---
 
 > Knowledge of Silence I’ll convey,  

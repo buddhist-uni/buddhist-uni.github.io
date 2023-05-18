@@ -12,7 +12,7 @@ tags:
   - view
   - wider
   - materialism
-  - tress
+  - trees
 year: 2013
 minutes: 42
 ---

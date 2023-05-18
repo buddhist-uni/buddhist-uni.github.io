@@ -10,6 +10,7 @@ course: lay
 tags:
   - an
   - becon
+pages: 2
 ---
 
 > The blind person, the one-eyed person, and the two-eyed person.

@@ -11,6 +11,7 @@ tags:
   - cosmology
   - function
 year: 2020
+pages: 1
 ---
 
 > Because of these meritorious deeds, I have been born as a very beautiful devata

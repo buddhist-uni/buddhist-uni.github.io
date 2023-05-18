@@ -8,6 +8,7 @@ external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhichary
 course: mahayana
 year: 2007
 translator: "Adam Pearcey"
+pages: 5
 ---
 
 > For all the beings ailing in the world,  

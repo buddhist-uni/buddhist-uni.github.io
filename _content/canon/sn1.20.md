@@ -11,6 +11,7 @@ tags:
   - pedagogy
   - sn
 year: 2000
+pages: 4
 ---
 
 > sensual pleasures are time-consuming, full of suffering and despair, and the danger in them is greater still

@@ -15,6 +15,7 @@ year: 2016
 olid: OL37813318M
 publisher: Mahamegha
 address: Polgahawela, Sri Lanka
+pages: 20
 ---
 
 > All actions in this life are preceded by mind.

@@ -8,6 +8,7 @@ course: imagery
 tags:
   - an
 year: 2018
+pages: 3
 ---
 
 The Buddha explains that ethics is necessary but insufficient for reaching nibbāna with the simile of the boat and the simile of the archer.

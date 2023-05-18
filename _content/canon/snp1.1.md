@@ -11,6 +11,7 @@ tags:
   - snp
 subcat: poetry
 year: 1994
+pages: 2
 ---
 
 > such a monk gives up the here and the beyond,  

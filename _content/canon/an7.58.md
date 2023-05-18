@@ -10,6 +10,7 @@ tags:
   - an
   - buddha
 year: 2018
+pages: 2
 ---
 
 > Mendicants, there are four areas where the Realized One has nothing to hide, and three ways he is irreproachable.

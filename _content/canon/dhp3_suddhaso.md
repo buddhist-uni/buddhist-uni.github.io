@@ -13,6 +13,7 @@ tags:
   - path
 year: 2016
 series: annotated-suttas_suddhaso
+pages: 4
 ---
 
 A straightforward, annotated translation of the third chapter of the Dhammapada.

@@ -8,6 +8,7 @@ source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformatio
 file_links:
   - "patanjali-yoga-sutra/YogaSutra.pdf"
 formats: [pdf]
+pages: 14
 course: indic-religions
 tags:
   - yoga

@@ -9,6 +9,7 @@ course: monastic-advice
 tags:
   - mn
 year: 2018
+pages: 4
 ---
 
 > let them fulfill their precepts, be committed to inner serenity of the heart, not neglect absorption, be endowed with discernment, and frequent empty huts.

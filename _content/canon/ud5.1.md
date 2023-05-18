@@ -10,6 +10,7 @@ tags:
   - marriage
   - karma
 year: 2008
+pages: 2
 ---
 
 A Queen gives her King an honest answer, and the Buddha gives us the very pith of ethics.

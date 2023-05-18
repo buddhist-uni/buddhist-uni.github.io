@@ -14,6 +14,7 @@ tags:
   - cosmology
   - thought
 year: 1998
+pages: 4
 ---
 
 The Buddha explains why even the same gift may result in different benefits for different people, explaining karma and giving a hint at the nature of Buddhist ethics.
