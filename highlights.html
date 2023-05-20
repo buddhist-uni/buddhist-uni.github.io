@@ -60,9 +60,8 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% assign fcon = allcontent | where: "status", "featured" | where_exp: "c", fe %}
 {% assign featurecontent = "" | split: "" %}
 {% for c in fcon %}
-  {% include calculatestars.liquid content=c %}
   {% assign yd = year | minus: c.year %}
-  {% if stars < 5 %}
+  {% if c.stars < 5 %}
     {% continue %}
   {% endif %}
   {% assign featurecontent = featurecontent | push: c %}

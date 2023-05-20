@@ -1,7 +1,3 @@
-{%- assign stars = include.stars -%}
-{%- unless stars -%}
-    {% include calculatestars.liquid content=include.content %}
-{%- endunless -%}
 {%- if include.content.from_book -%}{%- assign book = site.content | where: "slug", include.content.from_book | where: "category", "monographs" | first -%}{%- else -%}{%- assign book = nil -%}{%- endif -%}
 {%- assign series = site.series | find: "slug", include.content.series -%}
 {%- assign publisher = include.content.publisher | default: book.publisher | default: series.publisher -%}{%- assign publisher = site.publishers | find: "slug", publisher | default: publisher -%}
@@ -35,6 +31,6 @@
 {% endif %}{% if include.content.oclc %}    oclc={% raw %}{{% endraw %}{{ include.content.oclc }}},
 {% endif %}{% if include.content.olid %}    olid={% raw %}{{% endraw %}{{ include.content.olid }}},
 {% endif %}{% if include.content.source_url contains "doi.org/" %}    doi={% raw %}{{% endraw %}{{ include.content.source_url | split: "doi.org/" | last }}},
-{% endif %}    ranking={% raw %}{{% endraw %}rank{{ stars }}},
+{% endif %}    ranking={% raw %}{{% endraw %}rank{{ include.content.stars }}},
     url={% raw %}{{% endraw %}{% if include.content.external_url %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
 }

@@ -1,4 +1,3 @@
-{% include content_path.liquid content=include.content %}
 <div class="content_links">{% if page.collection == "content" %}Get it:{% endif %}
      {% if include.content.external_url %}{% assign linkfmt = "" %}
         {%- capture linkbody -%}<i class="fa{% if include.content.external_url contains "youtu" %}{% assign linkfmt = "YouTube (link)" %}b fa-youtube"></i> YouTube{% elsif include.content.external_url contains "//www.academia.edu/" %}c-academia"></i>cademia.edu{% assign linkfmt = "Academia.edu" %}{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".pdf" %}{% assign linkfmt = "pdf" %}file-pdf"></i> pdf{% elsif ext == ".mp3" %}{% assign linkfmt = "mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}{% assign linkfmt = "zip" %}file-archive"></i> zip{% else %}{% if ext == ".htm" %}{% assign linkfmt = "html" %}{% elsif ext == "html" %}{% assign linkfmt = "html" %}{% endif %}{% case include.content.category %}{% when "av" %}volume-up{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}{%- endcapture -%}
@@ -13,7 +12,7 @@
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} ga-event-label="drive.google.com/{{ content_path }}.{{ linkfmt }}" href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
+            <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} ga-event-label="drive.google.com/{{ include.content.content_path }}.{{ linkfmt }}" href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}
@@ -31,7 +30,7 @@
         {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}
         {%- capture authors -%}{% include content_authors_string.html content=include.content %}{%- endcapture -%}
         {% assign authors = authors | strip_html | strip | cgi_escape %}
-            <a class="btn" {% include content_link_data_attributes.html content=include.content linktype="WorldCat" linkfmt="WorldCat" %} ga-event-label="worldcat.org/{{ content_path }}" href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
+            <a class="btn" {% include content_link_data_attributes.html content=include.content linktype="WorldCat" linkfmt="WorldCat" %} ga-event-label="worldcat.org/{{ include.content.content_path }}" href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
             <i class="far fa-question-circle"></i>
         </summary><div>
             <i class="far fa-copyright"></i> This fine, Copyrighted work cannot be shared {% if include.content.excerpt_url %}in its entirety{% else %}directly{% endif %}, however WorldCat&trade; can help you find a copy at a nearby library{% if include.content.category == 'monographs' %} or wherever you get books{% endif %}.
