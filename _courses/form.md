@@ -558,6 +558,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="av" slug="healing-is-possible_tnh" %}
 - An inspiring talk to a group of monastics, encouraging them to set a good example for their guests, showing how there need not be such a strict tension between personal practice and social engagement.
 
+{% include content_blurb.html category="canon" slug="an3.124" %}
+- What to look out for when choosing a Saṅgha....
+
 ### Part 3: Personal Practice
 
 The last third of our class tackles the more prescriptive, “micro” question of our own, individual practice: What should one do to be a Buddhist?
