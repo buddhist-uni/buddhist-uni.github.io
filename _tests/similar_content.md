@@ -1,10 +1,9 @@
 ---
-title: "Content Similarity Algorithm Tests"
+title: "Similar Content Algo Tests"
 test_cases:
     - [drop-off_twomey-molly, raincoat_limon-ada]
     - [arts-of-living-on-a-damaged-planet, timefulness_bjornerud]
     - [baraka_fricke-ron, repetition_cooper-mcgloughlin]
-    - [short-history-of-nearly-everything_bryson-bill, burden-of-proof_gladwell-m]
     - [sapiens_harari-y, world-until-yesterday_diamond-jared]
     - [citizen_rankine-claudia, carlos_gladwell-m]
     - [just-us_rankine-claudia, 1619]
@@ -15,9 +14,7 @@ test_cases:
     - [what-work-is_levine-philip, you-can-have-it_levine-philip]
     - [rebirth-and-the-inbetween_sujato, when-does-human-life-begin_brahm]
     - [ordaining-renunciation_nirodha, going-forth_viradhammo]
-    - [youre-not-a-bad-person_kashtan-miki, mindfulness-racial-bias_magee-rhonda]
     - [ptsd-in-the-slaughterhouse, you-can-have-it_levine-philip]
-    - [unbearable_baskin-jon, limits-of-power_gladwell]
     - [behave_sapolsky-robert, challenges-of-the-disengaged-mind_wilson-et-al]
     - [mindfulness-intervention-to-youth-issues-in-vietnam_le-trieu, mindfulness-in-palestine_pigni-a]
     - [in-search-of-schrodingers-cat_gribbin-john, brief-history-of-time_hawking]
@@ -44,22 +41,29 @@ test_cases:
     - [teardrops-of-time_fuhrmann-arnika, i-lost-you_kalayanapong-angkarn]
     - [shared-characters-in-jain-buddhist-and-hindu-narrative_appleton, story-of-the-horse-king_appleton]
     - [politics-of-tourism-in-asia_richter-linda, battling-the-buddha-of-love_falcone-jessica]
+    - [venerated-objects-early-buddhism_harvey, lotus-as-symbol_olson_carl]
+    - [authenticity_sujato-brahmali, early-buddhism_texts_sujato-and-brahmali]
+    - [in-search-of-the-real-buddha_harvey, early-buddhism-with-kalupahana_payne]
+    - [birth-of-insight_braun-erik, saving-buddhism_turner-a]
+    - [philological-approach_norman, buddhist-hybrid-english_griffiths-paul]
+    - [outpost_soucy-alex, still-neutral_criminal]
     - [piranesi_clarke-susanna, no-one-belongs-here-more-than-you_july-miranda]
     - [yasodhara_sasson-v, wife-and-son_gindin-matthew]
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
     - [chithurst-story_sharp-george, comes-to-sussex_bbc]
     - [kalmyks_dhammika, siberian-revival_journeyman]
-    - [map-of-jambudipa, maps-of-ancient-india_anandajoti]
 partial_cases:
+    - [map-of-jambudipa, maps-of-ancient-india_anandajoti]
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
     - [giving-makes-us-happy, meditation-moral-obligation_vox]
     - [kalmyks_dhammika, siberian-revival_journeyman]
     - [the-buddhist-layman, simple-guide-to-life_bogoda-r]
     - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
-    - [venerated-objects-early-buddhism_harvey, lotus-as-symbol_olson_carl]
 ---
 
-A series of integration tests for the quality of the content recommendations.
+A series of test cases to measure the quality of the content recommendations algorithm.
+
+The passing rate at the bottom is a general indicator of the algo's recall rate (~75% passing is considered good enough).
 
 {%- assign cases = page.test_cases -%}
 {%- if site.partial_build -%}

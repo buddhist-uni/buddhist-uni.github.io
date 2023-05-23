@@ -8,7 +8,7 @@ external_url: "https://wisdomexperience.org/wisdom-podcast/geshema-kelsang-wangm
 course: monastic-tibetan
 tags:
   - geshe
-  - nun
+  - nuns
   - gelug
   - tibetan
 year: 2017

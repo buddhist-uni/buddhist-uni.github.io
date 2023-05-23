@@ -1,5 +1,5 @@
 ---
-title: "Bibtex Tests"
+title: "Bibtex Rendering Tests"
 ---
 {% assign testc = site.content | find: "url", "/content/excerpts/buddhist-thought_williams-paul" %}
 ```
