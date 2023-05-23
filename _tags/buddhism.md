@@ -12,7 +12,7 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/d/dd/Pearl_of_Searchin
 big_width: 1800
 big_height: 1364
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Pearl_of_Searching.jpg">Nicholas Roerich</a>
-illustration: https://www.buddhistuniversity.net/imgs/buddha_thangka.webp
+illustration: https://www.buddhistuniversity.net/imgs/tags/tags/buddha_thangka.webp
 illustration_height: 1229
 illustration_center_y: 40%
 illustration_caption: >-
