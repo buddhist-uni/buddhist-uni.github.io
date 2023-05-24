@@ -58,3 +58,29 @@ jobs:
       - name: Deploy the Artifact to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
+      - name: Invalidate the CloudFlare Cache
+        shell: bash
+        run: |
+          echo "Hitting the CloudFlare API..."
+          HTTP_RESPONSE=$(curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE }}/purge_cache" -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" -H "Content-Type:application/json" -w "HTTP_STATUS:%{http_code}" --data '{"purge_everything":true}')
+          HTTP_BODY=$(echo "${HTTP_RESPONSE}" | sed -E 's/HTTP_STATUS\:[0-9]{3}$//')
+          HTTP_STATUS=$(echo "${HTTP_RESPONSE}" | tr -d '\n' | sed -E 's/.*HTTP_STATUS:([0-9]{3})$/\1/')
+          if [ "${HTTP_STATUS}" -eq "200" ]; then
+            SUCCESS=$(echo ${HTTP_BODY} | python3 -c "import sys, json;print(json.load(sys.stdin)['success'])")
+            if [ "${SUCCESS}" = "True" ]; then
+              echo "Successfully purged!"
+              echo "::group::Raw response"
+              echo "${HTTP_BODY}"
+              echo "::endgroup::"
+              exit 0
+            else
+              echo "Unsuccessful purge!"
+              echo "API response was:"
+              echo "${HTTP_BODY}"
+              exit 1
+            fi
+          else
+            echo "Request failed. API response was ($HTTP_STATUS): "
+            echo "${HTTP_BODY}"
+            exit 1
+          fi
