@@ -3,7 +3,7 @@ title: "The Five Buddha Districts on the Yunnan-Burma Frontier: A Political Syst
 authors:
   - "Jianxiong Ma"
 external_url: "https://escholarship.org/content/qt2fh63851/qt2fh63851.pdf"
-source_url: "https://cross-currents.berkeley.edu/e-journal/issue-8/ma"
+source_url: "https://web.archive.org/web/20220317224102/https://cross-currents.berkeley.edu/e-journal/issue-8/ma"
 drive_links:
   - "https://drive.google.com/file/d/1TQYOAKtLxNMdgWY8dylC1UUNzcbZu1fQ/view?usp=drivesdk"
 status: featured

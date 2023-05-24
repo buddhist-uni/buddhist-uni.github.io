@@ -1,7 +1,7 @@
 ---
 title: "Common Buddhist Text: Guidance and Insight from the Buddha"
 editor: "Ven Brahmapundit and Peter Harvey"
-alternate_url: "http://www.icdv.net/pdf/cbt_final_dec29%202015.pdf"
+alternate_url: "https://web.archive.org/web/20220126161759if_/http://www.icdv.net/pdf/cbt_final_dec29%202015.pdf"
 olid: OL35605236M
 file_links:
   - "exclusive_01/Common%20Buddhist%20Text%20(2015-12-29).pdf"

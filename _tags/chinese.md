@@ -4,4 +4,4 @@ status: unpublished
 parents: [east-asian]
 ---
 
-For medieval Chinese Buddhism, see [Chan Roots](/tags/chan-roots).
+For medieval Chinese Buddhism, see [Chan Roots](/tags/east-asian-roots).
