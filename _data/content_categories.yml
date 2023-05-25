@@ -1,9 +1,13 @@
-- articles
-- av
-- booklets
+- title: Books
+  subs:
+   - booklets
+   - monographs
 - canon
-- essays
-- excerpts
-- monographs
-- papers
+- title: Documents
+  subs:
+   - articles
+   - essays
+   - excerpts
+   - papers
+- av
 - reference

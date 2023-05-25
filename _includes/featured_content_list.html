@@ -2,7 +2,7 @@
 {% unless include.keep_rejects %}
     {% assign sorted = sorted | where_exp: "c", "c.status != 'rejected'" %}
 {% endunless %}
-{% assign sorted = sorted | sort: "slug" | reverse | sort: "minutes", "first" | sort: "page_count", "first" | reverse %}
+{% assign sorted = sorted | sort: "title" | reverse | sort: "expected_value", "first" | reverse %}
 <div class="featured_content_list"><ul>
   {% for c in sorted %}
     <li>

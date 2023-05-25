@@ -58,13 +58,29 @@ Please be aware that this tag is still under construction and as such is missing
   {% assign categories = categories | where_exp: "c", "c != 'canon'" | push: "canon" %}
 {% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
-{% for catslug in categories %}
-  {% assign category = site.categories | find: "slug", catslug %}
-  {% assign cat_content = all_content | where: "category", catslug %}
-  {% assign course_content = cat_content | where: "course", page.slug %}
-  {% assign tag_content = cat_content | where_exp: "c", filter_exp | sort: "slug" %}
-  {% assign series_content = site.series | where: "category", catslug | where_exp: "c", filter_exp %}
-  {% assign tag_content = tag_content | concat: series_content %}
+{% assign all_series = site.series | where_exp: "c", filter_exp | sort: "title" %}
+{% assign all_course_content = all_content | where: "course", page.slug %}
+  {% assign all_tag_content = all_content | where_exp: "c", filter_exp %}
+{% for catentry in categories %}
+  {% assign category = site.categories | find: "slug", catentry %}
+  {% if category %}
+    {% assign catslug = catentry %}
+    {% assign course_content = all_course_content | where: "category", catslug %}
+    {% assign tag_content = all_tag_content | where: "category", catslug %}
+    {% assign series_content = all_series | where: "category", catslug %}
+  {% else %}
+    {% assign catslug = catentry.title | slugify %}
+    {% assign category = catentry %}
+    {% assign course_content = '' | split: '' %}
+    {% assign tag_content = '' | split: '' %}
+    {% assign series_content = '' | split: '' %}
+    {% for catsub in category.subs %}
+      {% assign tag_content = all_tag_content | where: "category", catsub | concat: tag_content %}
+      {% assign course_content = all_course_content | where: "category", catsub | concat: course_content %}
+      {% assign series_content = all_series | where: "category", catsub | concat: series_content %}
+    {% endfor %}
+  {% endif %}
+  {% assign tag_content = tag_content | sort: "title" | concat: series_content %}
   {% assign count = course_content.size | plus: tag_content.size %}
   {% if count > 0 %}
   <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
