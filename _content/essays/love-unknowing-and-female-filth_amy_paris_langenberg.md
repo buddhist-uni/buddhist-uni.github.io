@@ -15,7 +15,8 @@ tags:
 year: 2021
 publisher: degruyter
 address: "Germany"
-from_book: Primary Sources and Asian Pasts
+booktitle: "Primary Sources and Asian Pasts"
 pages: "308--340"
 ---
-"Buddhist tale of the impure, disgusting, and violent female body and the suffering of the fetus within the womb, so seemingly negative toward women, in fact operated discursively and affectively to support premodern female Buddhist monasticism by helping to generate a moral-social imaginary in which female fertility and sexuality cannot be the highest good of womanhood. A discourse that denies the auspiciousness and sexual desirability of women as fundamental truths – as classical Buddhism does – would have posed a disruption to authoritative customs and norms regarding female nature and female virtue in premodern South Asia."
+
+> the Buddhist tale of the impure, disgusting, and violent female body and the suffering of the fetus within the womb, so seemingly negative toward women, in fact operated discursively and affectively to support premodern female Buddhist monasticism by helping to generate a moral-social imaginary in which female fertility and sexuality cannot be the highest good of womanhood.
