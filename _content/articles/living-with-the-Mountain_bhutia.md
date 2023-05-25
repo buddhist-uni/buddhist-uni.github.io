@@ -12,8 +12,8 @@ tags:
   - modern-indian
   - mountains
   - ritual
-  - protective deities
-  - sikkihm
+  - protective-deities
+  - sikkim
   - tibetan
   - bon
   - globalization
@@ -22,4 +22,4 @@ journal: jbe
 volume: 28
 pages: "261--294"
 ---
-This article shows the complications that arise when religous traditions come in contact with the challenges of the modern world. The government of Sikkim is under pressure to allow climbers to access the world's third highest mountain, Mount Kanchenjung, held to be very sacred to the local community as the dwelling place of a protective deity. THe article furthers discusses the rituals of the local community and their belief in the agentive role of the deity.
+This article shows the complications that arise when religous traditions come in contact with the challenges of the modern world. The government of Sikkim is under pressure to allow climbers to access the world's third highest mountain, Mount Kanchenjung, held to be very sacred to the local community as the dwelling place of a protective deity. The article furthers discusses the rituals of the local community and their belief in the agentive role of the deity.
