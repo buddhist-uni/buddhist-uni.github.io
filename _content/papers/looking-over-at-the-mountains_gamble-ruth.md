@@ -12,7 +12,7 @@ tags:
   - tibet
   - mahamudra
   - poetry
-  - mountain
+  - mountains
   - places
 year: 2011
 publisher: "Finnish Oriental Society"
