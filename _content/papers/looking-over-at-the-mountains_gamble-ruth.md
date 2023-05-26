@@ -12,13 +12,16 @@ tags:
   - tibet
   - mahamudra
   - poetry
-  - mountains
+  - mountain
+  - places
 year: 2011
-publisher: Finnish Oriental Society
+publisher: "Finnish Oriental Society"
 address: "Helsinki"
 volume: 109
-series: Studia Orientalia
-from_book: Himalayan Nature Representations and Reality
-pages: "1--16"
+series: "Studia Orientalia"
+booktitle: "Himalayan Nature Representations and Reality"
+pages: "1--15"
 ---
-This article highlights the metaphorical landscape, such as "sense of place" and "psychogeography", used in the poetry of the third Karmapa, Rangjung Dorje.
+> in Rangjung Dorje’s poems, the environment is presented as a catalyst for seeing the enlightened “view”.
+This paper looks at the metaphorical landscape that Rangjung Dorje’s poems evoke, or, to incorporate a helpful term from contemporary literary studies, their 
+“psychogeography”, their “sense of place”. 
