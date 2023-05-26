@@ -153,14 +153,17 @@ def make_library_entry_for_work(work, draft=False) -> str:
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     try:
       venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
-    except AttributeError:
+    except (TypeError, KeyError, AttributeError):
       venue = ""
     if category == 'monographs':
         fd.write("olid: \n")
     elif category in ('excerpts', 'papers'):
         fd.write(f"booktitle: \"{venue}\"\n")
     elif category == 'articles':
-        journal = work['primary_location']['source']['id']
+        try:
+          journal = work['primary_location']['source']['id']
+        except (TypeError, KeyError, AttributeError):
+          journal = ""
         if journal:
           journal = journal.split('/')[-1]
         if journal and journal in journals.slugs:
@@ -181,7 +184,7 @@ def make_library_entry_for_work(work, draft=False) -> str:
             fd.write("pages: \n")
         if category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
-    if work['primary_location']['source']['host_organization_name']:
+    if work['primary_location']['source'] and work['primary_location']['source']['host_organization_name']:
         fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
     elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")
