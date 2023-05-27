@@ -15,7 +15,7 @@ whitelist=(
 invalid_files=()
 
 # Get tracked files using git ls-files and store them in an array
-readarray -t tracked_files < <(git ls-files)
+readarray -t tracked_files < <(git diff-tree --no-commit-id --diff-filter=d --diff-merges=1 --name-only -r HEAD)
 
 for file in "${tracked_files[@]}"; do
   if [[ -f "$file" ]]; then
@@ -24,6 +24,7 @@ for file in "${tracked_files[@]}"; do
     if [[ " ${whitelist[@]} " =~ " $filename " ]]; then
       continue
     fi
+    echo "Checking $file..."
     if ! grep -qE '^[+0-9a-z_\.-]+$' <<< "$filename"; then
       invalid_files+=("$file")
     fi

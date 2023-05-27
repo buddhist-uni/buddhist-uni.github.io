@@ -11,7 +11,7 @@ layout: default
   <div class="post-content">
     <div class="description">{{ content }}</div>{% unless site.partial_build %}
     <div class="content">
-      <h2>Selected Works</h2>
+      <h2>Selected Works <small>(in chronological order)</small></h2>
         {% capture filter %}c.authors contains '{{ page.slug }}'{% endcapture %}
     {% assign contents = site.content | where_exp: "c", filter %}
     {% assign transcont = site.content | where: "translator", page.slug %}

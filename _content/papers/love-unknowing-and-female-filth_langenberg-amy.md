@@ -7,6 +7,7 @@ source_url: "https://doi.org/10.1515/9783110674088-012"
 drive_links:
   - "https://drive.google.com/file/d/1vh9BaxP8ORYmgD1FBIRTvjvWAJe2IQJe/view?usp=share_link"
 formats: [pdf]
+status: featured
 course: nature
 tags:
   - gender

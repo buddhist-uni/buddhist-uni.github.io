@@ -13,12 +13,12 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_US
 ---
 
 The Open Buddhist University is an unaccredited, digital resource run by Khemarato Bhikkhu since 2020.
+Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of "Early Buddhism."[^ebts]
 
-It is based on
-[his personal library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
-which he shared with his friends after his ordination in Thailand [in 2019.](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._}
-For more information about how the collection is managed, take a peek [behind the scenes](https://buddhistuniversity.net/COLLECTION_POLICY/)!
-He hopes that you'll find this website useful and welcomes any feedback or questions at the email at the bottom of the page.
+The website is based on
+[Khemarato Bhikkhu's personal library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
+which he [shared publicly](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._} after his ordination in Thailand in 2019.
+He hopes that you'll find these resources helpful and welcomes any feedback or questions at the email at the bottom of the page.
 
 You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with Khemarato Bhikkhu and other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
  
@@ -33,3 +33,7 @@ Our tests are [✅ mostly passing](/tests)
 and our website [🟢 is up right now!](https://stats.uptimerobot.com/4q0qQUzqKk)
 
 Like most services, we use cookies to improve your experience. To opt-out, [click here](/settings)
+
+Footnotes:
+
+[^ebts]: "Early Buddhism" is the *pre-*sectarian form of Buddhism being discovered and championed by such contemporary scholar/practitioners as [Venerable Analayo](/authors/analayo). For the difference between Early Buddhism and Theravāda Buddhism, see [Bhante Sujato's checklist](/content/essays/early-buddhism-from-theravada_sujato). For more information about OBU's curatorial philosophy, please read [our collection policy document](/COLLECTION_POLICY/).

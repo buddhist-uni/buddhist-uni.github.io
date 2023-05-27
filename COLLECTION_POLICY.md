@@ -16,15 +16,16 @@ This document is primarily for onboarding new contributors, but it may also be o
 ## Overview
 
 The OBU Library serves **English speakers** with a **basic education** and an **interest in Buddhism**.
+It takes, to the extent possible, **the stance of pre-sectarian "Early Buddhism"** as championed by such practitioner/scholars as [Bhante Analayo](https://buddhistuniversity.net/authors/analayo), whose approach has been characterized as simultaneously faithful/religious and historical/critical.
 
-Its collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
+The OBU collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
 Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
 That would as undesirable as it is impossible.
-The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on Early Buddhism.
+The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on Early Buddhism to the English-speaking world.**
 
-To that end, works found on the internet are accepted into the library on a **five-point scale** and are sorted into **subtopics (aka "tags")** for easy access. The rest of this document will outline how that is done.
+To that end, works found on the internet are accepted into the library on a five-point scale and are sorted into subtopics (aka "tags") for easy access. The rest of this document will outline how that is done.
 
 ### The Pipeline
 
@@ -48,7 +49,7 @@ For inclusion in the OBU library, a given work should be:
 5. On an important topic of wide interest to Buddhists
 6. Available for free
 7. From a reputable source
-8. Difficult to find online
+8. Difficult to find elsewhere online
 
 The above factors are to be taken "on balance" such that a deficiency in one area may be compensated for by strength in another.
 For example, there are a few [works of fiction](https://buddhistuniversity.net/search/?q=%2Bis%3Afiction) in the library which fail IC1 (truthfulness), but whose craft (IC2) and wholesome messages (IC3) make up for their lack of literal truth.

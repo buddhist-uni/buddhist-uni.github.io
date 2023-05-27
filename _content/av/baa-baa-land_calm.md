@@ -5,8 +5,8 @@ authors:
   - "Peter Freedman"
 subcat: film
 external_url: "https://youtu.be/0UygLV4znHw"
-course: time
 tags:
+  - time
   - minimalism
   - film
   - britain
