@@ -3,7 +3,7 @@
 {%- if c.status == "featured" -%}{%- assign value = value | times: site.data.ga.featured_value_multiplier -%}{%- endif -%}
 {%- if include.linktype == "Preview" -%}{%- assign value = value | times: 0.5 -%}{%- endif -%}
 {%- if include.linktype == "WorldCat" -%}{%- assign value = 0.15 -%}{%- endif -%}
-data-content-title="{{ c.title | smartify | markdownify | strip_html | strip }}" ga-event-value="{{ value }}" data-content-path="{{ c.content_path }}" data-content-link-ext="{{ include.linkfmt | default: include.linktype }}" data-content-category="{{ c.category }}" data-content-subcat="{{ c.subcat }}" data-content-course="{{ c.course | default: 'archive' }}" data-content-authors="{{ c.authors | join: ", " | default: c.reader | default: c.translator }}"
+data-content-title="{{ c.title | smartify | markdownify | strip_html | strip }}" ga-event-value="{{ value }}" data-content-value="{% if include.linktype == "WorldCat" and c.excerpt_url %}{% assign value = c.expected_value | divided_by: 100.0 | round: 3 %}{% if value < 0.01 %}0.01{% else %}{{ value }}{% endif %}{% else %}{{ c.expected_value  }}{% endif %}" data-content-path="{{ c.content_path }}" data-content-link-ext="{{ include.linkfmt | default: include.linktype }}" data-content-category="{{ c.category }}" data-content-subcat="{{ c.subcat }}" data-content-course="{{ c.course | default: 'archive' }}" data-content-authors="{{ c.authors | join: ", " | default: c.reader | default: c.translator }}"
 {%- comment -%}
   Only the common, data attributes are added here.
   The specific HREFs, etc are added in-situ

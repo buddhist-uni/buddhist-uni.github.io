@@ -20,9 +20,11 @@ Here you will find links to every single item in the library organized by type.
 </tr>
 </thead>
 <tbody>
-{% for catslug in site.data.content_categories %}
+{% for catentry in site.data.content_categories %}
+{% assign cats = catentry | split: "dne,,,,,dne" %}{% assign cats = catentry.subs | default: cats %}
+{% for catslug in cats %}
 {% include content-category-row.html category=catslug %}
-{% endfor %}
+{% endfor %}{% endfor %}
 </tbody>
 </table>
 

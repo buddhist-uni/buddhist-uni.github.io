@@ -19,8 +19,12 @@
         <a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Source" linkfmt="" %}"><i class="fas fa-route"></i> Origin</a>
     {% endif %}
     {%- assign showworldcat = false -%}
-    {%- unless include.content.source_url or include.content.external_url or include.content.file_links or include.content.drive_links.size > 0 or include.newtab -%}
-        {%- assign showworldcat = true -%}
+    {%- unless include.content.source_url or include.content.external_url or include.content.file_links or include.content.drive_links.size > 0 -%}
+        {%- if include.newtab -%}
+            {%- unless include.content.excerpt_url -%}[recommended but under copyright]{%- endunless -%}
+        {%- else -%}
+            {%- assign showworldcat = true -%}
+        {%- endif -%}
     {%- endunless -%}
     {%- if include.content.excerpt_url -%}
         {%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}

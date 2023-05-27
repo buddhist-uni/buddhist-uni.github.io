@@ -37,18 +37,31 @@
 {%- unless ctag.is_canon -%}
 {%- assign categories = site.data.content_categories -%}
 {%- capture filter_exp -%}c.tags contains '{{ include.course.slug }}'{%- endcapture -%}
-{%- assign serieses = site.series | where_exp: "c", filter_exp -%}
+{%- assign all_series = site.series | where_exp: "c", filter_exp -%}
 {%- assign all_content = all_content | where_exp: "c", filter_exp -%}
 {%- if all_content.size > 0 -%}
 <h2 id="further-reading">Further Reading</h2>
-{%- for catslug in categories -%}
-  {%- assign cat_content = all_content | where: "category", catslug -%}
-  {%- assign cat_serieses = serieses | where: "category", catslug -%}
-  {%- assign tagged_content = cat_serieses | concat: cat_content -%}
-  {%- if tagged_content.size > 0 -%}
-    {%- assign category = site.categories | find: "slug", catslug -%}
+{% for catentry in categories %}
+  {% assign category = site.categories | where: "slug", catentry %}
+  {% if category.size == 1 %}
+    {% assign category = category | first %}
+    {% assign catslug = catentry %}
+    {% assign tag_content = all_content | where: "category", catslug %}
+    {% assign series_content = all_series | where: "category", catslug %}
+  {% else %}
+    {% assign catslug = catentry.title | slugify %}
+    {% assign category = catentry %}
+    {% assign tag_content = '' | split: '' %}
+    {% assign series_content = '' | split: '' %}
+    {% for catsub in catentry.subs %}
+      {% assign tag_content = all_content | where: "category", catsub | concat: tag_content %}
+      {% assign series_content = all_series | where: "category", catsub | concat: series_content %}
+    {% endfor %}
+  {% endif %}
+  {%- assign tag_content = series_content | concat: tag_content -%}
+  {%- if tag_content.size > 0 -%}
     <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
-    <div>{% include content_list.html contents=tagged_content orderby="slug" %}</div>
+    <div>{% include content_list.html contents=tag_content orderby="-expected_value" %}</div>
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}

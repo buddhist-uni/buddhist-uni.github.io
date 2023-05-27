@@ -120,7 +120,7 @@ const BuggyTracker = function (d) {
   };
   this.handleEvent=function(e){this.handleClick(e.target.closest('a'));};
   this.handleClick=function(link){if(!link) return;
-   var value = link.getAttribute('ga-event-value')*1;
+   var value = (link.getAttribute('data-content-value') || link.getAttribute('ga-event-value'))*1;
    if(link.host != d.location.host || value > 0) {
     var cid = link.getAttribute('data-content-path');
     var oid = cid || link.href;

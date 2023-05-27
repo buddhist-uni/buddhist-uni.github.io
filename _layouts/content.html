@@ -44,7 +44,7 @@ layout: default
             <div class="RatingDetails">{% if page.stars == 1 %}
                 This work is no longer recommended{% if page.reason %}, because: <code>{{ page.reason }}</code>{% endif %}. Look below for possible alternatives.
                 {% elsif page.stars == 2 %}This work is only recommended for those with a special interest.
-                {% elsif page.stars == 5 %}One of the best works in the library, &quot;{{ title | first | strip }}&quot; was featured in the <a href="{{ page.featured_post.url }}">{{ page.featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
+                {% elsif page.stars == 5 %}was featured in the <a href="{{ page.featured_post.url }}">{{ page.featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
                 This is a piece of exceptional quality, recommended for everyone.
             {% endif %}</div>
         </details>
@@ -119,10 +119,11 @@ cb.on('error', function(e){showTooltip(e.trigger,'Error');});
 function clearTooltip(){this.setAttribute('class','btn copybutton');this.removeAttribute('aria-label');}
 function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltipped tooltipped-n');elem.setAttribute('aria-label',msg); setTimeout(clearTooltip.bind(elem), 4000);}
       </script>
-      {% if site.show_timestamps %}<table class="metadata"><tbody>
+      <table class="metadata"><tbody>{% if site.show_timestamps %}
         <tr><td>Added</td><td><span style="font-family: system-ui, sans;">{{ page.date | date_to_rfc822 }}</span></td></tr>
-        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span style="font-family: system-ui, sans;">{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}
-      </tbody></table>{% endif %}
+        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span style="font-family: system-ui, sans;">{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}{% endif %}
+        <tr><td>Sorting Value</td><td><span style="font-family: system-ui, sans;">{{ page.expected_value }}</span></td></tr>
+      </tbody></table>
       <span><a href="https://github.com/{{ site.github_repo }}/blob/{{ site.github_branch }}/{{ page.path }}">View this entry's source code on GitHub</a></span>
       </div>
     </details>{% endif %}
