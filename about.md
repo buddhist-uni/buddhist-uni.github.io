@@ -21,6 +21,8 @@ which he [shared publicly](https://discourse.suttacentral.net/t/bgl-a-buddhist-g
 He hopes that you'll find these resources helpful and welcomes any feedback or questions at the email at the bottom of the page.
 
 You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with Khemarato Bhikkhu and other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
+
+Thanks to [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/graphs/contributors) for your help building the site.
  
 ![yaktocat]({% link assets/imgs/yaktocat.png %}){:style="max-height: 448px;"}
 50% feline 🐱, 50% cephalopod 🐙, and 100% Fierce Dharma Protector 👹, our university mascot is the **Yaktocat**.
