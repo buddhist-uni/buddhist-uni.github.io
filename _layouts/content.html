@@ -44,7 +44,7 @@ layout: default
             <div class="RatingDetails">{% if page.stars == 1 %}
                 This work is no longer recommended{% if page.reason %}, because: <code>{{ page.reason }}</code>{% endif %}. Look below for possible alternatives.
                 {% elsif page.stars == 2 %}This work is only recommended for those with a special interest.
-                {% elsif page.stars == 5 %}One of the best works in the library, &quot;{{ title | first | strip }}&quot; was featured in the <a href="{{ page.featured_post.url }}">{{ page.featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
+                {% elsif page.stars == 5 %}was featured in the <a href="{{ page.featured_post.url }}">{{ page.featured_post.date | date: "%B %Y" }} newsletter</a> and is highly recommended for all.{% else %}
                 This is a piece of exceptional quality, recommended for everyone.
             {% endif %}</div>
         </details>

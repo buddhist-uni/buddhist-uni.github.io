@@ -68,7 +68,7 @@ module Jekyll
         # stars and featuring post
         item.data['stars'] = base_stars_for_item(item)
         item.data['featured_post'] = nil
-        item.data['free'] = item.data['external_url'] or item.data['file_links'] or item.data['drive_links']
+        item.data['free'] = !!(item.data['external_url'] or item.data['file_links'] or item.data['drive_links'])
         if item.data['stars'].to_i == 4 and item.data['free']
             item.data['featured_post'] = get_featured_post_for_item(item)
             if item.data['featured_post']

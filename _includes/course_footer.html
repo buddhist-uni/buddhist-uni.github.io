@@ -42,8 +42,9 @@
 {%- if all_content.size > 0 -%}
 <h2 id="further-reading">Further Reading</h2>
 {% for catentry in categories %}
-  {% assign category = site.categories | find: "slug", catentry %}
-  {% if category %}
+  {% assign category = site.categories | where: "slug", catentry %}
+  {% if category.size == 1 %}
+    {% assign category = category | first %}
     {% assign catslug = catentry %}
     {% assign tag_content = all_content | where: "category", catslug %}
     {% assign series_content = all_series | where: "category", catslug %}
@@ -52,15 +53,15 @@
     {% assign category = catentry %}
     {% assign tag_content = '' | split: '' %}
     {% assign series_content = '' | split: '' %}
-    {% for catsub in category.subs %}
-      {% assign tag_content = all_tag_content | where: "category", catsub | concat: tag_content %}
+    {% for catsub in catentry.subs %}
+      {% assign tag_content = all_content | where: "category", catsub | concat: tag_content %}
       {% assign series_content = all_series | where: "category", catsub | concat: series_content %}
     {% endfor %}
   {% endif %}
   {%- assign tag_content = series_content | concat: tag_content -%}
   {%- if tag_content.size > 0 -%}
     <h4 id="further-{{ catslug }}">{{ category.title }}</h4>
-    <div>{% include content_list.html contents=tag_content orderby="expected_value" %}</div>
+    <div>{% include content_list.html contents=tag_content orderby="-expected_value" %}</div>
   {%- endif -%}
 {%- endfor -%}
 {%- endif -%}

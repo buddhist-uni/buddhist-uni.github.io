@@ -16,7 +16,7 @@ layout: default
     {% assign parents = parents | push: plink %}
 {% endfor %}
 {% unless page.banner_info %}
-<div class="back"><a href="{% link tags.html %}">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
+<div class="back"><a href="{% link tags.html %}" style="font-size: 130%;">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
 {% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
@@ -60,10 +60,11 @@ Please be aware that this tag is still under construction and as such is missing
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% assign all_series = site.series | where_exp: "c", filter_exp | sort: "title" %}
 {% assign all_course_content = all_content | where: "course", page.slug %}
-  {% assign all_tag_content = all_content | where_exp: "c", filter_exp %}
+{% assign all_tag_content = all_content | where_exp: "c", filter_exp %}
 {% for catentry in categories %}
-  {% assign category = site.categories | find: "slug", catentry %}
-  {% if category %}
+  {% assign category = site.categories | where: "slug", catentry %}
+  {% if category.size == 1 %}
+    {% assign category = category | first %}
     {% assign catslug = catentry %}
     {% assign course_content = all_course_content | where: "category", catslug %}
     {% assign tag_content = all_tag_content | where: "category", catslug %}
@@ -80,14 +81,15 @@ Please be aware that this tag is still under construction and as such is missing
       {% assign series_content = all_series | where: "category", catsub | concat: series_content %}
     {% endfor %}
   {% endif %}
-  {% assign tag_content = tag_content | sort: "title" | concat: series_content %}
+  {% assign tag_content = tag_content | sort: "slug" | reverse | sort: "expected_value" | reverse | concat: series_content %}
   {% assign count = course_content.size | plus: tag_content.size %}
   {% if count > 0 %}
   <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
   {% if course_content.size > 0 %}
+    <p>Featured:</p>
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
-  <div class="tagged_content">
+  <p>See also:</p><div class="tagged_content">
   {% for c in tag_content %}
     <div class="mb-3 inline_content">{% case c.stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
