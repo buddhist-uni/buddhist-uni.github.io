@@ -15,4 +15,5 @@ year: 2017
 publisher: "Lotsawa House"
 pages: 2
 ---
-From the Tibetan tradition, a confession and purification of the various wrongs committed against the earth, spirits, and gods.
+
+A confession and purification of the various wrongs committed against the earth, spirits, and gods from the Tibetan tradition.
