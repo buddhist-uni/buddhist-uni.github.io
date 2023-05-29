@@ -273,7 +273,7 @@ def _main():
       break
   filepath = make_library_entry_for_work(work)
   print(f"\nOpening {filepath}\n")
-  os.system(f"open '{filepath}' || termux-open '{filepath}' || vim '{filepath}'")
+  system_open(filepath)
 
 if __name__ == "__main__":
   _main()

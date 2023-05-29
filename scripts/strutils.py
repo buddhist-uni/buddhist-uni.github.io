@@ -5,6 +5,7 @@ import os
 import json
 import re
 import string
+import readline
 from functools import cache
 from collections import defaultdict
 from math import floor, ceil
@@ -28,6 +29,15 @@ def cout(*args):
 def stdout_make_room(lines: int):
   cout(''.join(["\n"]*lines))
   cout(f"\033[{lines}A")
+
+def input_with_prefill(prompt, text):
+    def hook():
+        readline.insert_text(text)
+        readline.redisplay()
+    readline.set_pre_input_hook(hook)
+    result = input(prompt)
+    readline.set_pre_input_hook()
+    return result
 
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
@@ -65,6 +75,9 @@ def prompt(question: str, default = None) -> bool:
         if not reply:
           reply = default
     return (reply == "y")
+
+def system_open(filepath):
+  os.system(f"open '{filepath}' || termux-open '{filepath}' || vim '{filepath}'")
 
 class FileSyncedSet:
   def __init__(self, fname, normalizer=None):

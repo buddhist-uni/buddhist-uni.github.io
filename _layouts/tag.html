@@ -86,10 +86,10 @@ Please be aware that this tag is still under construction and as such is missing
   {% if count > 0 %}
   <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
   {% if course_content.size > 0 %}
-    <p>Featured:</p>
+    {% if tag_content.size > 0 %}<p>Featured:</p>{% endif %}
     {% include featured_content_list.html contents=course_content %}
   {% endif %}{% if tag_content.size > 0 %}
-  <p>See also:</p><div class="tagged_content">
+  {% if course_content.size > 0 %}<p>See also:</p>{% endif %}<div class="tagged_content">
   {% for c in tag_content %}
     <div class="mb-3 inline_content">{% case c.stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}

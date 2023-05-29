@@ -1,5 +1,6 @@
 ---
 title: "Pv 1.3 Pūtimukha Sutta: Stinky Mouth"
+slug: "pv1.03"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/pv1-3/"
 drive_links:

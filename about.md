@@ -20,7 +20,7 @@ The website is based on
 which he [shared publicly](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._} after his ordination in Thailand in 2019.
 He hopes that you'll find these resources helpful and welcomes any feedback or questions at the email at the bottom of the page.
 
-You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with Khemarato Bhikkhu and other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
+You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
 
 Thanks to [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/graphs/contributors) for your help building the site.
  
@@ -38,4 +38,4 @@ Like most services, we use cookies to improve your experience. To opt-out, [clic
 
 Footnotes:
 
-[^ebts]: "Early Buddhism" is the *pre-*sectarian form of Buddhism being discovered and championed by such contemporary scholar/practitioners as [Venerable Analayo](/authors/analayo). For the difference between Early Buddhism and Theravāda Buddhism, see [Bhante Sujato's checklist](/content/essays/early-buddhism-from-theravada_sujato). For more information about OBU's curatorial philosophy, please read [our collection policy document](/COLLECTION_POLICY/).
+[^ebts]: "Early Buddhism" is the *pre-*sectarian form of Buddhism being discovered and championed by such contemporary scholar/practitioners as [Venerable Analayo](/authors/analayo). For the difference between Early Buddhism and Theravāda Buddhism, see [Bhante Sujato's checklist](/content/essays/early-buddhism-from-theravada_sujato). For more information about OBU's curatorial philosophy, please read [our collection development policy](/COLLECTION_POLICY/).

@@ -8,7 +8,6 @@ drive_links:
 course: engaged
 tags:
   - burmese
-  - activism
 year: 2012
 volume: 19
 journal: jbe
@@ -17,3 +16,4 @@ pages: "95--129"
 
 >  I allow you, monks, to turn the bowl upside down
 
+How the Burmese saṅgha used the allowance in [AN 8.87](/content/canon/an8.87) to protest injustice.
