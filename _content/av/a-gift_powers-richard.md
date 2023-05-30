@@ -6,7 +6,7 @@ authors:
 subcat: podcast
 external_url: "https://www.nytimes.com/2021/09/28/podcasts/transcript-ezra-klein-interviews-richard-powers.html"
 status: featured
-course: nature
+course: natural
 tags:
   - intellect
   - materialism

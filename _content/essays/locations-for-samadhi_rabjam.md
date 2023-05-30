@@ -10,6 +10,7 @@ course: places
 tags:
   - meditation
   - world
+  - nature
 pages: 3
 ---
 

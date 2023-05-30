@@ -12,6 +12,7 @@ tags:
   - places
   - renunciation
   - viveka
+  - nature
 year: 2013
 pages: 2
 ---
