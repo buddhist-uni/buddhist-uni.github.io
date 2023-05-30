@@ -76,7 +76,7 @@ def process_pdf(pdf_file):
   print(f"Attempting to upload \"{filename}\" to Google Drive...")
   filegid = upload_to_google_drive(pdf_file, args.client, filename=filename)
   if not filegid:
-    print("Failed!")
+    print("Failed to upload!")
     quit(1)
   drive_link = f"https://drive.google.com/file/d/{filegid}/view?usp=drivesdk"
   slug = scdata['uid']

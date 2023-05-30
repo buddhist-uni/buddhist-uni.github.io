@@ -124,7 +124,7 @@ const BuggyTracker = function (d) {
    if(link.host != d.location.host || value > 0) {
     var cid = link.getAttribute('data-content-path');
     var oid = cid || link.href;
-    value ||= 0.15;
+    value ||= 0.07;
     var categories=null,name=null;
     if(cid){
       var category = link.getAttribute('data-content-subcat');

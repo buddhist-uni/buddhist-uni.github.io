@@ -1,5 +1,5 @@
 ---
-title: "Self-Referential Passages in Mahāyāna Sutra Literature"
+title: "Self-Referential Passages in Mahāyāna Sutra Literature"
 authors:
   - "Alexander James O'Niell"
 external_url: "https://www.shin-ibs.edu/documents/pwj4/1/4-2-Oneill.pdf"

@@ -90,7 +90,7 @@ module Jekyll
             if item.data['category'].to_s == 'canon'
                 stars += 1.0
             end
-            item.data['expected_value'] = 0.025 * stars * item.data['expected_mins'].to_f
+            item.data['expected_value'] = 0.02 * stars * item.data['expected_mins'].to_f
         else
             item.data['expected_value'] = item.data['base_value'].to_f
             if item.data['status'].to_s == 'featured'

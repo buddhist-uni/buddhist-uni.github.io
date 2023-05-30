@@ -487,6 +487,9 @@ Zooming out from the individual training, Buddhist philosophy (contrary to popul
 {% include content_blurb.html category="canon" slug="mn95" %}
 - The Buddha instructs a young brahmin on the preservation of truth, the discovery of truth, and the final arrival at truth.
 
+{% include content_blurb.html category="av" slug="truth_santussika" %}
+- Ayya and her students discuss the Canki Sutta and how to use a light touch when dealing with the messy, social world.
+
 {% include content_blurb.html category="monographs" slug="buddhadhamma-for-students_buddhadasa" %}
 - 48 probing questions about Buddhist philosophy and life answered by a renowned Thai modernist.
 
