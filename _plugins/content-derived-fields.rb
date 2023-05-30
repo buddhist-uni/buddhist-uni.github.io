@@ -13,8 +13,8 @@ module Jekyll
     # and validation against video watch data in GA4
     # Numbers are therefore highly approximate
     @@etm = {
-        max_expected_mins: 70.0,
-        max_expected_mins_featured: 105.0,
+        max_expected_mins: 60.0,
+        max_expected_mins_featured: 90.0,
         x_inter: -0.2,
         y_asymt: -165.0,
         mins_per_page: 2.0
@@ -90,7 +90,9 @@ module Jekyll
             if item.data['category'].to_s == 'canon'
                 stars += 1.0
             end
-            item.data['expected_value'] = 0.02 * stars * item.data['expected_mins'].to_f
+            # 2.5 cents per star per minute. Make sure to keep this value in sync with
+            # _include/inline-av-player.html which logs av watch time at the same value
+            item.data['expected_value'] = 0.025 * stars * item.data['expected_mins'].to_f
         else
             item.data['expected_value'] = item.data['base_value'].to_f
             if item.data['status'].to_s == 'featured'

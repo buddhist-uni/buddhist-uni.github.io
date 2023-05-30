@@ -18,6 +18,8 @@
         {% assign rawfile = record.external_url %}
     {% endif %}
 {%- endif -%}
+{% comment %}keep the below in sync with _plugins/content-derived-fields.rb{% endcomment -%} 
+{%- capture millisecperdol -%}{{ 60 | divided_by: 0.025 | divided_by: record.stars }}{%- endcapture -%}
 {% if record.external_url contains "youtu" %}{% unless record.external_url contains "list" %}
 <script>
     var tag = document.createElement('script');
@@ -41,17 +43,40 @@
         'onStateChange': onPlayerStateChange
       }
     });}
+    function logWatchTime() {
+        if (window.loggingInterval) extraTime += Date.now() - window.lastLogTime;
+        window.lastLogTime = Date.now();
+        let millidollars = extraTime/{{ millisecperdol }};
+        if (millidollars > 0.5) {
+            buggytrack.sendEvent('{{ record.content_path }}#'+Math.round(this.getCurrentTime()),'{{ title }}',Math.round(millidollars)/1000,['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}',"{{ record.authors | join: ", " }}",'Embedded YouTube Video'],'youtu.be');
+            extraTime = (millidollars - Math.round(millidollars))*{{ millisecperdol }};
+        }
+    }
     var started = false;
+    window.loggingInterval = null;
+    var extraTime = 0;
+    window.lastLogTime = Date.now();
     function onPlayerStateChange(event) {
-        {%- if jekyll.environment == 'production' and site.google_analytics -%}
-        if (!started && event.data == YT.PlayerState.PLAYING) {
+        {%- if jekyll.environment == 'production' and site.google_analytics %}
+        if (event.data == YT.PlayerState.PLAYING) {
+          if (!window.loggingInterval) {
+            window.lastLogTime = Date.now();
+            window.loggingInterval = setInterval(logWatchTime.bind(event.target), 10000);
+          }
+          if (!started) {
             ga('send','event','Video','play','{{ record.content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0);
             started = true;
-            buggytrack.sendEvent('{{ record.content_path }}','{{ title }}',{{ site.data.ga.av_start_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}',"{{ record.authors | join: ", " }}",'Embedded YouTube Video'],'youtu.be');
+        }} else {
+          if (window.loggingInterval) {
+            clearInterval(window.loggingInterval);
+            window.loggingInterval = null;
+            extraTime += Date.now() - window.lastLogTime;
+            window.lastLogTime = Date.now();
+            setTimeout(logWatchTime.bind(event.target), 0);
+          }
         }
         if (event.data == YT.PlayerState.ENDED) {
             ga('send','event','Video','finish','{{ record.content_path }}',{{ site.data.ga.av_end_val }});
-            buggytrack.sendEvent('{{ record.content_path }}#end','{{ title }}',{{ site.data.ga.av_end_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}',"{{ record.authors | join: ", " }}",'Embedded YouTube Video'],'youtu.be');
         }
         {%- else -%}
         console.log(event.data);
@@ -70,16 +95,52 @@
         {% when ".aac" %}{% assign mime = "audio/aac" %}
     {% endcase %}
 <{{ tag }} controls
+    id="{% capture tid %}{{ record.slug }}-inline-{{ tag }}-player{% endcapture %}{{ tid }}"
     preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="ga('send','event','{{ tag | capitalize }}','play','{{ record.content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: Math.round(100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});buggytrack.sendEvent('{{ record.content_path }}','{{ title }}',{{ site.data.ga.av_start_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
-    onended="ga('send','event','{{ tag | capitalize }}','finish','{{ record.content_path }}',{{ site.data.ga.av_end_val }}); gtag('event', 'video_complete', {{ gtagdata }});buggytrack.sendEvent('{{ record.content_path }}#end','{{ title }}',{{ site.data.ga.av_end_val }},['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');"
+    onplay="if(!localStorage.getItem('{{tid}}-start')){ga('send','event','{{ tag | capitalize }}','play','{{ record.content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: Math.round(100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});localStorage.setItem('{{tid}}-start','1');}"
+    onended="if(!localStorage.getItem('{{tid}}-end')){ga('send','event','{{ tag | capitalize }}','finish','{{ record.content_path }}',{{ site.data.ga.av_end_val }});gtag('event', 'video_complete', {{ gtagdata }});localStorage.setItem('{{tid}}-end','1');}"
     ontimeupdate="Math.random()<0.00390625?gtag('event', 'video_progress', {{ gtagdata }}):undefined"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">
     Your browser doesn't support playing this audio/video file inline.
 </{{ tag }}>
+<script>
+var setupInlineMedia = function() {
+    const elem = document.getElementById('{{tid}}');
+    var extraTime = 0;
+    var previously = Date.now();
+    var interval = null;
+    function logTimeSpent() {
+        if (interval){ extraTime += Date.now() - previously; }
+        previously = Date.now();
+        let millidollars = extraTime/{{ millisecperdol }};
+        if (millidollars > 0.5) {
+            buggytrack.sendEvent('{{ record.content_path }}#'+Math.round(elem.currentTime),'{{ title }}',Math.round(millidollars)/1000,['content','av{% if record.subcat %}/{{ record.subcat }}{% endif %}','{{ record.course | default: 'archive' }}','{{ record.authors | join: ", " | replace: "'", "\'" }}','Inline HTML5 {{ tag }} Player'],'buddhistuniversity.net');
+            extraTime = (millidollars - Math.round(millidollars))*{{ millisecperdol }};
+        }
+    }
+    function logStart(event){
+        if(!interval) {
+            previously = Date.now();
+            interval = window.setInterval(logTimeSpent, 10000);
+        }
+    }
+    function logPause(event){
+        if (interval) {
+            clearInterval(interval);
+            interval = null;
+            extraTime += Date.now() - previously;
+            previously = Date.now();
+            setTimeout(logTimeSpent, 0);
+        }
+    }
+    elem.addEventListener('pause', logPause);
+    elem.addEventListener('play', logStart);
+};
+setupInlineMedia();
+</script>
 {% elsif record.external_url contains "archive.org/details/" %}
 <iframe src="{{ record.external_url | replace: "/details/", "/embed/" }}" width="100%" height="29" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 {% elsif record.embedded_html %}{{ record.embedded_html }}
