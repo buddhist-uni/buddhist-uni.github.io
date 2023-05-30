@@ -1,4 +1,5 @@
 import os.path
+from functools import cache
 try:
   from google.auth.transport.requests import Request
   from google.oauth2.credentials import Credentials
@@ -13,6 +14,10 @@ except:
 SCOPES = ['https://www.googleapis.com/auth/drive']
 CREDFILE = os.path.expanduser('~/gtoken.json')
 
+def folderlink_to_id(link):
+  return link if not link else link.replace("https://drive.google.com/drive/folders/", "")
+
+@cache
 def session(client_secrets):
     creds = None
     if os.path.exists(CREDFILE):
@@ -52,3 +57,19 @@ def upload_to_google_drive(file_path, client_file, filename=None, folder_id=None
     except Exception as e:
         print("An error occurred:", str(e))
         return False
+
+def create_drive_shortcut(client_file, gfid, filename, folder_id):
+  drive_service = session(client_file)
+  shortcut_metadata = {
+       'Name': filename,
+       'mimeType': 'application/vnd.google-apps.shortcut',
+       'shortcutDetails': {
+          'targetId': gfid
+       },
+       'parents': [folder_id]
+  }
+  shortcut = drive_service.files().create(
+    body=shortcut_metadata,
+    fields='id,shortcutDetails'
+  ).execute()
+  return shortcut.get('id')

@@ -1,7 +1,7 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
 from strutils import input_with_prefill, prompt, system_open
-from gdrive import upload_to_google_drive
+from gdrive import upload_to_google_drive, folderlink_to_id, create_drive_shortcut
 
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
 
@@ -49,7 +49,7 @@ def guess_id_from_filename(name):
   # AN 8 -> AN 8.(?)
   return name+'.'
 
-def process_pdf(pdf_file):
+def process_pdf(pdf_file, gfolders):
   print(f"Processing {pdf_file}...")
   pdf_file = Path(pdf_file)
   pages = get_page_count(pdf_file)
@@ -73,18 +73,30 @@ def process_pdf(pdf_file):
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}: {eng_name}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
-  print(f"Attempting to upload \"{filename}\" to Google Drive...")
-  filegid = upload_to_google_drive(pdf_file, args.client, filename=filename)
-  if not filegid:
-    print("Failed to upload!")
-    quit(1)
-  drive_link = f"https://drive.google.com/file/d/{filegid}/view?usp=drivesdk"
+  course = input_with_prefill("course: ", "")
+  folder_id = None
+  shortcut_folder = None
+  drive_links = "drive_links"
+  if course not in gfolders:
+    print("Hmmm... I don't know that course! Will just put the file in root then.")
+  else:
+    shortcut_folder = folderlink_to_id(gfolders[course]['private'])
+    folder_id = folderlink_to_id(gfolders[course]['public'])
+    if shortcut_folder and not folder_id:
+      folder_id = shortcut_folder
+      shortcut_folder = None
+      drive_links = "hidden_links"
   slug = scdata['uid']
   slugfield = slug
   parsed = re.match(sutta_id_re, slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
   nums = list(map(int, nums))
+  extra_fields = ""
+  if book in ['sn', 'iti', 'snp', 'thig', 'thag', 'ud']:
+    if prompt("Is this poetry?", "n"):
+      extra_fields = f"""
+subcat: poetry{extra_fields}"""
   match book:
     case "dn":
       slugfield = f"dn{nums[0]:02d}"
@@ -122,6 +134,17 @@ def process_pdf(pdf_file):
       year = input_with_prefill("year: ", "19")
   if not pages:
     pages = input_with_prefill("pages: ", "")
+  print(f"Attempting to upload \"{filename}\" to Google Drive...")
+  filegid = upload_to_google_drive(pdf_file, args.client, filename=filename, folder_id=folder_id)
+  if not filegid:
+    print("Failed to upload!")
+    quit(1)
+  drive_link = f"https://drive.google.com/file/d/{filegid}/view?usp=drivesdk"
+  if shortcut_folder:
+    print("Creating the private shortcut...")
+    shortcutid = create_drive_shortcut(args.client, filegid, filename, shortcut_folder)
+    if not shortcutid:
+      print("Warning! Failed to create the shortcut")
   mdfile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_content/canon/{slug}.md")))
   if mdfile.exists():
     if not prompt("File exists! Overwrite?"):
@@ -130,11 +153,11 @@ def process_pdf(pdf_file):
   mdfile.write_text(f"""---
 title: "{title}"
 translator: {trans['author_uid']}
-slug: "{slugfield}"
+slug: "{slugfield}"{extra_fields}
 external_url: "{external_url}"
-drive_links:
+{drive_links}:
   - "{drive_link}"
-course: 
+course: {course}
 tags:
   - 
   - {book}
@@ -153,18 +176,20 @@ if __name__ == "__main__":
   if not args.source.exists():
     print(f"{args.source} doesn't exist")
     quit(1)
-  if args.source.is_file():
-    process_pdf(args.source)
-    quit(0)
-  if not args.source.is_dir():
-    print(f"What kind of file is that??")
-    quit(1)
+  foldersdatafile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_data/drive_folders.json")))
+  gfolders = json.loads(foldersdatafile.read_text())
   pdfs = []
-  for child in args.source.iterdir():
-    if child.is_file() and child.suffix.lower() == ".pdf":
-      pdfs.append(child)
-  if not pdfs:
-    print("No PDF found. Waiting for one...")
-    pdfs = get_new_pdfs(args.source)
+  if args.source.is_file():
+    pdfs = [args.source]
+  else:
+    if not args.source.is_dir():
+      print(f"What kind of file is that??")
+      quit(1)
+    for child in args.source.iterdir():
+      if child.is_file() and child.suffix.lower() == ".pdf":
+        pdfs.append(child)
+    if not pdfs:
+      print("No PDF found. Waiting for one...")
+      pdfs = get_new_pdfs(args.source)
   for pdf in pdfs:
-    process_pdf(pdf)
+    process_pdf(pdf, gfolders)
