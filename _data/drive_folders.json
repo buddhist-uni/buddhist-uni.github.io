@@ -1,4 +1,8 @@
 {
+"groups": {
+  "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq",
+  "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13"
+},
 "interfaith": {
   "public": null,
   "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw"
@@ -6,6 +10,10 @@
 "monastic": {
   "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV",
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e"
+},
+"path": {
+  "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5",
+  "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG"
 },
 "problems": {
   "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u",

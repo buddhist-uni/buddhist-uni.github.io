@@ -46,6 +46,9 @@ def get_suttacentral_metadata(sutta):
   return json.loads(ret.text)[0]
 
 def guess_id_from_filename(name):
+  # Iti 8_ Foobar baz -> Iti 8
+  if "_" in name:
+    return name.split("_")[0]
   # AN 8 -> AN 8.(?)
   return name+'.'
 
@@ -61,6 +64,11 @@ def process_pdf(pdf_file, gfolders):
       break
     print(f"Got \"{scdata['acronym']}\" instead. Try again.")
   en_trans = [t for t in scdata['translations'] if t['lang']=='en']
+  slug = scdata['uid']
+  mdfile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_content/canon/{slug}.md")))
+  if mdfile.exists():
+    if not prompt("File already exists! Continue anyway?"):
+      return
   print(f"Got {len(en_trans)} English translations: {list(map(lambda t: t['author_short'], en_trans))}")
   if not en_trans:
     quit(1)
@@ -73,7 +81,7 @@ def process_pdf(pdf_file, gfolders):
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}: {eng_name}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
-  course = input_with_prefill("course: ", "")
+  course = input("course: ")
   folder_id = None
   shortcut_folder = None
   drive_links = "drive_links"
@@ -86,12 +94,11 @@ def process_pdf(pdf_file, gfolders):
       folder_id = shortcut_folder
       shortcut_folder = None
       drive_links = "hidden_links"
-  slug = scdata['uid']
   slugfield = slug
   parsed = re.match(sutta_id_re, slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
-  nums = list(map(int, nums))
+  nums = list(map(lambda v: int(v) if v else None, nums))
   extra_fields = ""
   if book in ['sn', 'iti', 'snp', 'thig', 'thag', 'ud']:
     if prompt("Is this poetry?", "n"):
@@ -133,7 +140,7 @@ subcat: poetry{extra_fields}"""
     else:
       year = input_with_prefill("year: ", "19")
   if not pages:
-    pages = input_with_prefill("pages: ", "")
+    pages = input("pages: ")
   print(f"Attempting to upload \"{filename}\" to Google Drive...")
   filegid = upload_to_google_drive(pdf_file, args.client, filename=filename, folder_id=folder_id)
   if not filegid:
@@ -145,10 +152,6 @@ subcat: poetry{extra_fields}"""
     shortcutid = create_drive_shortcut(args.client, filegid, filename, shortcut_folder)
     if not shortcutid:
       print("Warning! Failed to create the shortcut")
-  mdfile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_content/canon/{slug}.md")))
-  if mdfile.exists():
-    if not prompt("File exists! Overwrite?"):
-      return
   title = title.replace('"', '\\"')
   mdfile.write_text(f"""---
 title: "{title}"
