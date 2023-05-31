@@ -7,9 +7,17 @@
   "public": null,
   "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw"
 },
+"karma": {
+  "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX",
+  "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT"
+},
 "monastic": {
   "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV",
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e"
+},
+"nature": {
+  "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T",
+  "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5"
 },
 "path": {
   "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5",

@@ -24,7 +24,7 @@ A collection of essays on what Buddhism can contribute to global, environmental 
 Includes:
 - *Preface* by Bhikkhu Bodhi
 - *An Ethical Approach to Environmental Protection* by H.H. the Dalai Lama
-- *The Buddhist Attitude Towards Nature* by Lily de Silva
+- [*The Buddhist Attitude Towards Nature* by Lily de Silva](https://www.accesstoinsight.org/lib/authors/desilva/attitude.html){:target="_blank"}
 - *Buddhist Philosophy as Inspiration to Ecodevelopment* by Klas Sandell
 - *In Search of a Buddhist Environmental Ethics* by Padmasiri de Silva
 - *Norwegian Ecophilosophy and Ecopolitics and Their Influence from Buddhism* by Sigmund Kvaloy

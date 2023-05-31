@@ -9,6 +9,7 @@ tags:
   - thag
   - monastic-advice
   - viveka
+  - nature
 year: 2021
 pages: 4
 ---

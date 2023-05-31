@@ -8,7 +8,7 @@ illustration_width: 1440
 illustration_caption: >-
   Avolokiteshvara Bodhisattva sits among mossy rocks and tall flowers as he beholds a lotus bearing Amitabha
   in this 18th c Tibetan/Chinese painting itself held by <a href="https://artsandculture.google.com/asset/wd/6gHlKIrgWrb1HQ)">the Rubin</a>.
-  Buddhists have long adored nature as the ideal setting for either striving or relaxing.
+  Buddhists have long adored nature as the ideal setting for striving and relaxing.
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/d/d6/Avalokiteshvara%2C_One_of_the_Eight_Great_Bodhisattvas_-_Google_Art_Project.jpg
 illustration_center_x: 20%
 illustration_center_y: 16%
@@ -22,4 +22,3 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/e/e8/Leshan_China_Budd
 ---
 
 How do Buddhists view the natural world?
-
