@@ -88,6 +88,9 @@ The core of Buddhist Ethics is summed up well in this pithy sutta.  The five qua
 - Indeed, holding to generosity and the five precepts is believed to be a ticket to rebirth in heaven.
 " %}
 
+{% include content_blurb.html category="canon" slug="an8.40" blurb="
+- While failing to uphold them leads... elsewhere in Saṃsāra...
+" %}
 
 If Buddhist Ethics can be summarized so quickly, why a whole course?  What challenges do you see in trying to observe these Five Precepts? Are there any ethical issues you think they don’t cover?
 
