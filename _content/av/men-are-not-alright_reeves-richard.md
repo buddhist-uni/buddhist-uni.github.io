@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/03/10/opinion/ezra-klein-podcast-richard-reeves.html"
-status: featured
+status: featured # solidly. Almost 5 stars
 course: gender
 tags:
   - aging

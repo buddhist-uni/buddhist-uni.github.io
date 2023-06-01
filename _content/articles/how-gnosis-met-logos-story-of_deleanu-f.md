@@ -6,6 +6,7 @@ external_url: "http://id.nii.ac.jp/1153/00000475/"
 drive_links:
   - "https://drive.google.com/file/d/1XaoWK6tkH_Xl8x96h_0x4-uBKc-TXsYc/view?usp=drivesdk"
 course: epistemology
+status: featured
 tags:
   - hermeneutics
   - samadhi
@@ -24,3 +25,4 @@ model, Dharmakīrti explains that the contemplative must first grasp the
 objects through cognition born of listening, ascertain them through
 reflection based on reasoning, and finally cognise them through meditative cultivation. 
 This leads to valid perception.
+

@@ -8,9 +8,9 @@ authors:
 external_url: "https://oer.galileo.usg.edu/geo-textbooks/2/"
 drive_links:
   - "https://drive.google.com/file/d/1ZmHCmajHR4MJj_RCLC9TTvKz5pgAp5Zj/view?usp=drivesdk"
-course: wider
+course: wider # solidly three stars
 tags:
-  - places # should probably move here once wider is fuller
+  - places # should probably move here once wider is fuller though
 year: 2018
 olid: OL46533467M
 publisher: "University of Georgia"

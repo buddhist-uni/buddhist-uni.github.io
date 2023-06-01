@@ -7,6 +7,7 @@ external_url: "https://www.shin-ibs.edu/documents/SCEAR%201/SCEAR1eReader.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1-uAgLtHhYnRLzjGCWQwrT-wQmV6rBH4N/view?usp=drivesdk"
 course: religion
+status: featured # 3.5 stars, but willing to feature as it's in "religion"
 tags:
   - japanese
   - pilgrimage

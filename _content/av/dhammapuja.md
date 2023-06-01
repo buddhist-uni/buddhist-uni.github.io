@@ -5,6 +5,7 @@ authors:
 external_url: "https://dhammapuja.com/"
 source_url: "https://pali.ejinjue.org/chanting/"
 course: theravada
+status: featured
 tags:
   - theravada-chanting
 year: 2018

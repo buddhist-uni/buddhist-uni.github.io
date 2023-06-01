@@ -6,6 +6,7 @@ subcat: film
 external_url: "https://youtu.be/cXlHQpT0JmE"
 base_value: 1.5
 course: cosmology
+status: featured
 tags:
   - tibetan
   - monastic-tibetan

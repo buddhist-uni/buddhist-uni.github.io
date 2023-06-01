@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1HUlLEe-cstTA7QtVFgyj8P-Q_6m07Ge4/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Sri%20Lanka%20and%20the%20Theravada%20Buddhist%20ecumene%20c.%20500%E2%80%931500.pdf"
-course: theravada
+course: theravada # very solidly three stars, but may move down to "roots"
 tags:
   - theravada-roots
   - indian-ocean

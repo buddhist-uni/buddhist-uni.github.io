@@ -5,11 +5,12 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/03/03/opinion/ezra-klein-podcast-jane-hirshfield.html"
-status: featured
+status: featured # solidly. Almost 5 stars
 course: poetry
 tags:
   - inner
   - daily-life
+  - ambulit
 year: 2023
 month: mar
 publisher: nyt
