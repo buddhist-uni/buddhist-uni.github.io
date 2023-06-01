@@ -1,6 +1,7 @@
 ---
 title: "Selections from *Buddhist Thought*"
 authors: [williams-paul]
+slug: "buddhist-thought-excerpt"
 drive_links:
   - "https://drive.google.com/file/d/1mlU34uT8YqFhkb7g5105-vptlzPHmS7s/view?usp=drivesdk"
 course: sects
