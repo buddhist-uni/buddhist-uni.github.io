@@ -6,10 +6,10 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/heaven-of-solitude"
 drive_links:
   - "https://drive.google.com/file/d/1JNdXTziueZ-tjrj4PT8qs-oy5xkrpW0L/view?usp=drivesdk"
-course: world
+course: cities
 subcat: poetry
 tags:
-  - places
+  - world
   - renunciation
   - viveka
   - nature

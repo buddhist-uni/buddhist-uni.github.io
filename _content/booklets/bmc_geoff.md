@@ -6,9 +6,9 @@ drive_links: ["https://drive.google.com/file/d/1YCuIx2RJrsQFS1ll2ryGVJZrpIpY0UgP
 formats: [epub]
 year: 2001
 olid: OL23822296M
-course: theravada-vinaya
+course: vinaya-studies
 tags:
-  - vinaya-studies
+  - navakovada
 status: featured
 base_value: 3.5
 pages: 990

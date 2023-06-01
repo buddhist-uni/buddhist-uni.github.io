@@ -4,6 +4,12 @@ from strutils import input_with_prefill, prompt, system_open
 from gdrive import upload_to_google_drive, folderlink_to_id, create_drive_shortcut
 
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
+NONSC_TRANSLATORS = [{
+  'author_short': 'Gnanananda',
+  'author_uid': '"Ven. Kiribathgoda Gnanananda"',
+  'author': "Ven. Gnanananda",
+  'publication_date': 2020
+}]
 
 def command_line_args():
     parser = argparse.ArgumentParser(
@@ -69,13 +75,13 @@ def process_pdf(pdf_file, gfolders):
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
-  print(f"Got {len(en_trans)} English translations: {list(map(lambda t: t['author_short'], en_trans))}")
-  if not en_trans:
-    quit(1)
-  trans = 0
-  if len(en_trans) > 1:
-    trans = int(input_with_prefill("Which trans? ", "0"))
-  trans = en_trans[trans]
+  print(f"Possible English translations: {list(map(lambda t: t['author_short'], en_trans+NONSC_TRANSLATORS))}")
+  transidx = int(input_with_prefill("Which one is this [index]? ", "0"))
+  if transidx < len(en_trans):
+    trans = en_trans[transidx]
+  transidx -= len(en_trans)
+  if transidx >= 0:
+    trans = NONSC_TRANSLATORS[transidx]
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
@@ -132,7 +138,10 @@ subcat: poetry{extra_fields}"""
     case _:
       print(f"Haven't yet implemented slug logic for {book}")
       quit(1)
-  external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
+  if transidx < 0:
+    external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
+  else:
+    external_url = f"https://suttafriends.org/sutta/{book}{nums[0]}-{nums[1]}/"
   year = trans['publication_date']
   if not year:
     if trans['author_uid'] == 'sujato':

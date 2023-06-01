@@ -27,8 +27,16 @@
   "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5",
   "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG"
 },
+"pilgrimage": {
+  "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G",
+  "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm"
+},
 "problems": {
   "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u",
   "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0"
+},
+"theravada": {
+  "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8",
+  "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA"
 }
 }
