@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Legal Consequences of *pārājika*"
 authors:
   - analayo

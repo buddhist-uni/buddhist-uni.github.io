@@ -21,4 +21,8 @@ volume: 29
 number: 1
 pages: "136--141"
 ---
-This article discusses the unintended consequences of the "mercy release" practice, which is the relase of aquatic wildlife into the oceans. This practice, at times, introduces invasive species, creating ecological risks. The authors recommend public education, particularly about invasive species, to reduce unintended harm to the environment.
+
+This article discusses the unintended consequences of the "mercy release" practice, which is the release of wildlife directly into nature.
+This practice, at times, introduces invasive species, creating ecological risks.
+
+The authors recommend public education, particularly about invasive species, as a way to reduce the unintended harm to the environment caused by these practices.

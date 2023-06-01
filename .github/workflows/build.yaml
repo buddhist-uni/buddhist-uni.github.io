@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Check Filenames
+      - name: Check Filenames and Headers
         shell: bash
         run: |
           whitelist=(
@@ -26,9 +26,10 @@ jobs:
             "README.md"
             "Gemfile"
             "Gemfile.lock"
-            "_data/cssCacheToken.yml"
+            "cssCacheToken.yml"
           )
           invalid_files=()
+          exit_code=0
           readarray -t tracked_files < <(git diff-tree --no-commit-id --diff-filter=d --diff-merges=1 --name-only -r HEAD)
           for file in "${tracked_files[@]}"; do
             if [[ -f "$file" ]]; then
@@ -41,6 +42,14 @@ jobs:
               if ! grep -qE '^[+0-9a-z_\.-]+$' <<< "$filename"; then
                 invalid_files+=("$file")
               fi
+              if [[ "${file: -3}" == ".md" ]]; then
+                first_bytes=$(xxd -p -l 4 "$file")  # Read the first 4 bytes in hexadecimal format
+
+                if [[ $first_bytes != "2d2d2d0a" ]]; then
+                    echo "Invalid header in file: $file"
+                    exit_code=1
+                fi
+              fi
             fi
           done
           if [[ ${#invalid_files[@]} -gt 0 ]]; then
@@ -51,7 +60,7 @@ jobs:
             exit 1
           else
             echo "All files have valid names."
-            exit 0
+            exit $exit_code
           fi
       - name: Normalize Unicode in the Previous Commit
         uses: buddhist-uni/normalized-unicode-action@v1

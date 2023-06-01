@@ -19,4 +19,4 @@ pages: 2
 > The thing that first comes to mind is the Buddha’s immediate connection with trees, the fact that he was born under a tree, had an early spiritual experience under a Eugenia jambolala tree, became
 Awakened under a Ficus religiosa, and passed away between two Shorea robusta. But it would be a mistake to think that this was the most significant connection between the Buddha or Buddhism and trees.
 
-This article briefly discusses the importance of trees outside of the usual incidents tied to the Buddha Shakyamuni's life
+This article briefly discusses the importance of trees outside of the usual incidents tied to the Buddha Shakyamuni's life.

@@ -10,6 +10,7 @@ drive_links:
 course: pali-dictionaries
 tags:
   - setting
+  - nature
 year: 2015
 olid: OL28412107M
 publisher: bps
