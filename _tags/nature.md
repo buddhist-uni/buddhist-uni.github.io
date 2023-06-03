@@ -1,6 +1,6 @@
 ---
 title: "Buddhism and Nature"
-status: unpublished
+status: published
 parents: [ethics, natural]
 illustration: https://illeakyw.sirv.com/Images/tags/Avalokiteshvara_Flower.jpg
 illustration_height: 2047
