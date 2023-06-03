@@ -1,4 +1,8 @@
 {
+"buddha": {
+  "public": "https://drive.google.com/drive/folders/13WkPn6574tdzGOCfYDcM24OxVlMvw_QP",
+  "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi"
+},
 "ethics": {
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_",
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT"
@@ -34,6 +38,10 @@
 "problems": {
   "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u",
   "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0"
+},
+"speech": {
+  "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U",
+  "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG"
 },
 "theravada": {
   "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8",

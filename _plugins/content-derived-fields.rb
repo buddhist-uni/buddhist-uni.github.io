@@ -28,14 +28,25 @@ module Jekyll
         if mins == 0
             return nil
         end
+        if !(item.data['free']) and item.data['excerpt_url']
+            mins *= 0.15 # expect excerpts to contain 15% of the original
+        end
         ratio = (1.0 - @@etm[:offset]) / (mins - @@etm[:y_asymt])
         ratio *= mins
         ratio += @@etm[:offset]
         if item.data['status'].to_s == 'featured'
-            return @@etm[:max_expected_mins_featured] * ratio
+            ret = @@etm[:max_expected_mins_featured] * ratio
         else
-            return @@etm[:max_expected_mins] * ratio
+            ret = @@etm[:max_expected_mins] * ratio
         end
+        # make adjustments based on relative conversion likelihood for harder-to-access items
+        if !(item.data['drive_links']) and item.data['subcat'].to_s == 'podcast'
+            ret *= 0.5
+        end
+        if !(item.data['free']) and !(item.data['excerpt_url'])
+            ret *= 0.01
+        end
+        return ret
     end
 
     def self.get_featured_post_for_item(item)
@@ -84,6 +95,7 @@ module Jekyll
         end
 
         # set the expected value of downloading this item
+        # note this relies on many of the previously computed field values!
         item.data['expected_mins'] = expected_mins(item)
         if item.data['expected_mins']
             stars = item.data['stars'].to_f
@@ -94,16 +106,10 @@ module Jekyll
             # _include/inline-av-player.html which logs av watch time at the same value
             item.data['expected_value'] = 0.025 * stars * item.data['expected_mins'].to_f
         else
+            # use old algo as a fallback in case of no pages/minutes value
             item.data['expected_value'] = item.data['base_value'].to_f
             if item.data['status'].to_s == 'featured'
                 item.data['expected_value'] *= 2.0
-            end
-        end
-        if not item.data['free']
-            if item.data['excerpt_url']
-                item.data['expected_value'] /= 2.0
-            else
-                item.data['expected_value'] /= 100.0 # chance someone actually seeks this out
             end
         end
         item.data['expected_value'] = item.data['expected_value'].to_f.round(3)
