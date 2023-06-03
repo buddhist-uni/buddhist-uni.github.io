@@ -16,4 +16,6 @@ tags:
 year: 2013
 minutes: 42
 ---
-> Many people have this paradigm of seeing it all as natural. If you take the Materialist stance, you'd have to say that things like rape and murder are natural [too because] you don't have a clear framework with which to explain morality.
+
+> Many people have this paradigm of seeing it all as natural, but...
+
