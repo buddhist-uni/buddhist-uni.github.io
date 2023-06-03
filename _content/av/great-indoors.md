@@ -7,10 +7,7 @@ month: nov
 external_url: "https://99percentinvisible.org/episode/the-great-indoors/"
 course: science
 tags:
-  - indoors
-  - nature
   - places
-  - cities
   - medicine
 base_value: 0.2
 number: 424

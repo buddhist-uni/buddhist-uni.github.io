@@ -6,6 +6,7 @@ external_url: "https://suttacentral.net/an4.21/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1CVv1v88PiUUEJOPeb4XoXhLfAtaf9lKx/view?usp=drivesdk"
 course: monastic
+status: featured
 tags:
   - buddha # should probably go in "buddha" but this sutta is in Nya's *Life* so I felt no need to duplicate it
   - an

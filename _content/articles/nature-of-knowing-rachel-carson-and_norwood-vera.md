@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1-2CRALfaI5c2eRPmcYLHEXIYQk2FSPfi/view?usp=drivesdk"
 course: wider
 tags:
-  - nature
+  - natural
   - literature
 year: 1987
 month: jul
