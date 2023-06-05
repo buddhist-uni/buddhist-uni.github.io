@@ -552,6 +552,10 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
 - Buddhist monasticism faces many challenges as it comes West, especially for nuns.
 
+{% include content_blurb.html category="av" slug="profound-silence" %}
+- A short film about one challenge to making Saṅghas truly welcoming places.
+- Are there any minority groups that have not felt or might not feel welcome in your community? What norms or behaviors contribute to that? Are there any people you'd have a hard time "greeting with a smile?"
+
 {% include content_blurb.html category="articles" slug="benefits-and-pitfalls-of-a-teacher_mcleod" %}
 - There are many benefits and challenges to the Teacher–Student relationship in Buddhism.
 
