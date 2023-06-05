@@ -13,6 +13,7 @@ tags:
   - daily-life
 status: featured
 pages: 209
+course_time_multiplier: 0.5
 ---
 
 > Buddhism is a middle course, a _via media_; pragmatic and innovative

@@ -4,10 +4,10 @@ authors:
   - "Space Time"
 subcat: film
 external_url: "https://youtu.be/R-eIUxwcQo4"
-course: wider
+course: future
 tags:
   - space
-  - future
+  - wider
 year: 2023
 month: apr
 publisher: PBS

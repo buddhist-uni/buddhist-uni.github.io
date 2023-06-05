@@ -16,6 +16,7 @@ tags:
   - mahayana-roots
 base_value: 4
 pages: 76
+course_time_multiplier: 20 # wild guess
 ---
 
 > This volume assumes knowledge of [the first](/content/booklets/foundations_kieschnick), introducing three types of writings from texts translated in China from Indian originals in medieval times.

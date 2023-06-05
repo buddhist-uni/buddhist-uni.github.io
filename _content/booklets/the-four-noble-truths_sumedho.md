@@ -15,6 +15,7 @@ month: nov
 base_value: 1.7
 olid: OL23359905M
 pages: 47
+course_time_multiplier: 0
 ---
 
 > The First Noble Truth is not: ‘I am suffering and I want to end it.’ The insight is, ‘There is suffering’. Now you are looking at the pain or the anguish you feel not from the perspective of ‘It’s mine’ but as a reflection: ‘There is suffering, this dukkha’. It is coming from the position of ‘the Buddha seeing the Dhamma.’ The insight is simply the acknowledgement that there is this suffering without making it personal.

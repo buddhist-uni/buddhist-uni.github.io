@@ -15,6 +15,7 @@ tags:
   - buddha
   - philosophy
 pages: 14
+course_time_multiplier: 0
 ---
 
 A lucid and compelling introduction to Buddhism from a renowned contemporary scholar. Recommended for newcomers.

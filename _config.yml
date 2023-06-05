@@ -208,6 +208,7 @@ defaults:
         formats: [pdf, epub]
         layout: "content"
         base_value: 0.35
+        course_time_multiplier: 1.0
         section: "library"
         custom_css: ["content-perma"]
         tags: []

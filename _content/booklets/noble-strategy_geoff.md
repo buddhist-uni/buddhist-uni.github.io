@@ -12,6 +12,7 @@ tags:
 year: 1999
 olid: OL23998169M
 pages: 52
+course_time_multiplier: 0
 ---
 
 > Ours, of course, is not the only culture

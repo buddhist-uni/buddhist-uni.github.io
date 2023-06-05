@@ -13,6 +13,7 @@ tags:
   - buddhism
 base_value: 2.5
 pages: 105
+course_time_multiplier: 0.3
 ---
 
 A straightforward, Q&A-style introduction to Buddhism.

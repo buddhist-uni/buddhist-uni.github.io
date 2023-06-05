@@ -5,9 +5,10 @@ authors:
 year: 2020
 translator: "Thái Bình"
 external_url: "https://youtu.be/FWVxO1TTe5w"
-course: wider
+course: things
 tags:
   - world
+  - inequality
 minutes: 25
 ---
 

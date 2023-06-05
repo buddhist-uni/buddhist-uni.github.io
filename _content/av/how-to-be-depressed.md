@@ -6,7 +6,7 @@ authors:
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/depression"
 drive_links: ["https://drive.google.com/file/d/1Lfs4Krhq7arA0KKPAU6RFQjAZFOvY0gg/view?usp=drivesdk"]
 status: featured
-course: social
+course: world # maybe down to social some day
 tags:
   - feeling
   - political-ideology

@@ -7,6 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/11DamMO5czVCfulV4gnNxNLSJWuCHy6Wb/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1TvRv1TBxnMDRzFjumTAA7hsXhOgot5LM/view?usp=drivesdk"
 base_value: 0.4
+course_time_multiplier: 0
 course: buddhism
 tags:
   - interfaith

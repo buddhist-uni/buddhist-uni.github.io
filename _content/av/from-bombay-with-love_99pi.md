@@ -4,8 +4,9 @@ subcat: podcast
 authors:
   - "Vivian Le"
 external_url: "https://99percentinvisible.org/episode/from-bombay-with-love"
-course: wider
+course: social
 tags:
+  - places
   - film
   - intercultural
   - globalization

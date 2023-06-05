@@ -12,6 +12,7 @@ number: 3
 course: chinese-primer
 base_value: 4
 pages: 217
+course_time_multiplier: 20 # wild guess
 ---
 
 This textbook, [following up](/content/booklets/foundations_kieschnick) on the [previous](/content/booklets/indian-tradition_kieschnick) two in [the series](/series/buddhist-chinese-primer_kieschnick), takes us past the Chinese translations of Indian texts in order to introduce the corpus of premodern texts of Chinese origin.
