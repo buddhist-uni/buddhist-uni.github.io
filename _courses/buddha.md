@@ -191,6 +191,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. Review: [T] Devas in the Buddha's Career
 
 1. [L] The Last Year
+1. (Optionally) For a short lecture series on the Maha Parinibbana Sutta by Bhante Sujato, see parts [one](https://youtu.be/1m29ZnP5rUU), [two](https://youtu.be/stMR-4nZkms), [three](https://youtu.be/acAVJUTMqps), and [four](https://youtu.be/2mMochJjWIg) on YouTube
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="sukaramaddava_ireland" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="cause-of-the-buddhas-death_mettanando-hinuber" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] Relics of the Buddha

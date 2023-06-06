@@ -10,9 +10,10 @@ alternate_url: "https://web.archive.org/web/20220104090050if_/http://www.shin-ib
 drive_links:
   - "https://drive.google.com/file/d/1xqtnZRNo-ml980-wg6mQUYjsmb94NRem/view?usp=drivesdk"
 status: featured
-course: vinaya-pitaka
+course: vinaya-studies
 tags:
-  - vinaya-studies
+  - vinaya-pitaka
+  - monastic
 year: 1996
 booktitle: "The Buddhist Forum"
 publisher: SOAS
