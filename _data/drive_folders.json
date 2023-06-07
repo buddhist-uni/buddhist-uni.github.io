@@ -1,66 +1,78 @@
 {
-"buddha": {
-  "public": "https://drive.google.com/drive/folders/13WkPn6574tdzGOCfYDcM24OxVlMvw_QP",
-  "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi"
-},
-"clothes": {
-  "public": null,
-  "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC"
-},
-"epistemology": {
-  "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm",
-  "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ"
-},
-"ethics": {
-  "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_",
-  "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT"
-},
-"groups": {
-  "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq",
-  "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13"
-},
-"interfaith": {
-  "public": null,
-  "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw"
-},
-"karma": {
-  "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX",
-  "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT"
-},
-"monastic": {
-  "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV",
-  "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e"
-},
-"nature": {
-  "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T",
-  "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5"
-},
-"path": {
-  "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5",
-  "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG"
-},
-"pilgrimage": {
-  "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G",
-  "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm"
-},
-"problems": {
-  "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u",
-  "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0"
-},
-"speech": {
-  "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U",
-  "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG"
-},
-"theravada": {
-  "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8",
-  "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA"
-},
-"view": {
-  "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474",
-  "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95"
-},
-"vipassana": {
-  "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0",
-  "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA"
-}
+ "buddha": {
+  "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi",
+  "public": "https://drive.google.com/drive/folders/13WkPn6574tdzGOCfYDcM24OxVlMvw_QP"
+ },
+ "buddhism": {
+  "private": "https://drive.google.com/drive/folders/1hoOjASlXmF4Gab56vJp6hgnvE8QjLcXI",
+  "public": "https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf"
+ },
+ "clothes": {
+  "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
+  "public": null
+ },
+ "ea": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1234QK_JdiurFhgADDnpgWHOsicIIcine"
+ },
+ "epistemology": {
+  "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ",
+  "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm"
+ },
+ "ethics": {
+  "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT",
+  "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_"
+ },
+ "function": {
+  "private": "https://drive.google.com/drive/folders/1Bf7XfBFL7G152-Aw1cjTErZ2IR3pu2O_",
+  "public": "https://drive.google.com/drive/folders/1--gofqLr9HDCwoGVYU88WbzDVaYYEGcJ"
+ },
+ "groups": {
+  "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
+  "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
+ },
+ "interfaith": {
+  "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw",
+  "public": null
+ },
+ "karma": {
+  "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
+  "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
+ },
+ "monastic": {
+  "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",
+  "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV"
+ },
+ "nature": {
+  "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
+  "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
+ },
+ "path": {
+  "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG",
+  "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5"
+ },
+ "pilgrimage": {
+  "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
+  "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G"
+ },
+ "problems": {
+  "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0",
+  "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u"
+ },
+ "speech": {
+  "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG",
+  "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U"
+ },
+ "theravada": {
+  "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA",
+  "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8"
+ },
+ "view": {
+  "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95",
+  "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474"
+ },
+ "vipassana": {
+  "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
+  "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0"
+ }
 }

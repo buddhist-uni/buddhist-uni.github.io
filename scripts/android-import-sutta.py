@@ -58,8 +58,9 @@ def guess_id_from_filename(name):
   # AN 8 -> AN 8.(?)
   return name+'.'
 
-def process_pdf(pdf_file, gfolders):
+def process_pdf(pdf_file, foldersdatafile):
   print(f"Processing {pdf_file}...")
+  gfolders = json.loads(foldersdatafile.read_text())
   pdf_file = Path(pdf_file)
   pages = get_page_count(pdf_file)
   guess = guess_id_from_filename(pdf_file.stem)
@@ -92,14 +93,17 @@ def process_pdf(pdf_file, gfolders):
   shortcut_folder = None
   drive_links = "drive_links"
   if course not in gfolders:
-    print("Hmmm... I don't know that course! Will just put the file in root then.")
-  else:
-    shortcut_folder = folderlink_to_id(gfolders[course]['private'])
-    folder_id = folderlink_to_id(gfolders[course]['public'])
-    if shortcut_folder and not folder_id:
-      folder_id = shortcut_folder
-      shortcut_folder = None
-      drive_links = "hidden_links"
+    print("Hmmm... I don't know that Google Drive folder! Let's add it:")
+    folderurl = input("Public link: ") or None
+    shortcuturl = input("Private link: ") or None
+    gfolders[course] = {"public":folderurl,"private":shortcuturl}
+    foldersdatafile.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
+  shortcut_folder = folderlink_to_id(gfolders[course]['private'])
+  folder_id = folderlink_to_id(gfolders[course]['public'])
+  if shortcut_folder and not folder_id:
+    folder_id = shortcut_folder
+    shortcut_folder = None
+    drive_links = "hidden_links"
   slugfield = slug
   parsed = re.match(sutta_id_re, slug)
   book = parsed.group(1)
@@ -189,7 +193,6 @@ if __name__ == "__main__":
     print(f"{args.source} doesn't exist")
     quit(1)
   foldersdatafile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_data/drive_folders.json")))
-  gfolders = json.loads(foldersdatafile.read_text())
   pdfs = []
   if args.source.is_file():
     pdfs = [args.source]
@@ -204,4 +207,4 @@ if __name__ == "__main__":
       print("No PDF found. Waiting for one...")
       pdfs = get_new_pdfs(args.source)
   for pdf in pdfs:
-    process_pdf(pdf, gfolders)
+    process_pdf(pdf, foldersdatafile)
