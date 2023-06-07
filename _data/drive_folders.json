@@ -7,6 +7,10 @@
   "public": null,
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC"
 },
+"epistemology": {
+  "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm",
+  "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ"
+},
 "ethics": {
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_",
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT"
@@ -54,5 +58,9 @@
 "view": {
   "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474",
   "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95"
+},
+"vipassana": {
+  "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0",
+  "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA"
 }
 }

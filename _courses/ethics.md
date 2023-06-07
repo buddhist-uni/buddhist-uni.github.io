@@ -311,6 +311,9 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 {% include content_blurb.html category="essays" slug="war-and-peace_bodhi-geoff" %}
 - An argument between two highly respected Theravada monks on the subject of whether war can ever be justified, Bhikkhu Bodhi wonders out loud, “War: what _is_ it good for?” and Thanissaro Bhikkhu responds with, “Absolutely nothing!”
 
+{% include content_blurb.html category="canon" slug="an10.30" %}
+- What do you make of the King's behavior here? Is he a sincere Buddhist? And what do you think of the Buddha's reaction?
+
 {% include content_blurb.html category="essays" slug="war-bright-and-dark_sujato" %}
 - Bhante Sujato replies to Bhikkhus Bodhi and Thanissaro, reminding them that the Buddha's ethical tetralemma avoids such harsh dualities as "should" and "must not"
 

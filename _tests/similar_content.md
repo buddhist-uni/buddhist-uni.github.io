@@ -52,6 +52,7 @@ test_cases:
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]
     - [chithurst-story_sharp-george, comes-to-sussex_bbc]
     - [kalmyks_dhammika, siberian-revival_journeyman]
+    - [understanding-comics_mccloud-scott, picturing-our-thoughts_lehrer]
 partial_cases:
     - [map-of-jambudipa, maps-of-ancient-india_anandajoti]
     - [rewriting-buddhism_gornall-alastair, idea-of-the-pali-canon_collins-steven]

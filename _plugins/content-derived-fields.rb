@@ -21,10 +21,7 @@ module Jekyll
     }
     @@etm[:offset] = @@etm[:x_inter] / @@etm[:y_asymt]
     def self.expected_mins(item)
-        mins = item.data['minutes'].to_f
-        if item.data['page_count'] and mins == 0
-            mins = item.data['page_count'].to_f * @@etm[:mins_per_page]
-        end
+        mins = item.data['total_mins'].to_f
         if mins == 0
             return nil
         end
@@ -93,6 +90,11 @@ module Jekyll
           a, b = item.data['pages'].to_s.split('--').map(&:to_i)
           item.data['page_count'] = b - a + 1
         end
+        item.data['total_mins'] = item.data['minutes'].to_f
+        if item.data['page_count'] and !(item.data['minutes'])
+            item.data['total_mins'] = item.data['page_count'].to_f * @@etm[:mins_per_page]
+        end
+        item.data['course_mins'] = (item.data['total_mins'] * item.data['course_time_multiplier']).round()
 
         # set the expected value of downloading this item
         # note this relies on many of the previously computed field values!

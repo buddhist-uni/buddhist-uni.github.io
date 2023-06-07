@@ -23,5 +23,5 @@ big_height: 1707
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Monks_in_Wat_Phra_Singh_-_Chiang_Mai.jpg">JJ Harrison</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>
 ---
 
-The *Vinaya Piṭaka* is the first section of the *Pāli Canon*. It contains the code of conduct for the [monks and nuns](/tags/monastic) of the [Theravada tradition](/tags/theravada) along with many entertaining stories from the early sangha.
+The *Vinaya Piṭaka* is the first section of the *Pāli Canon*. It contains the code of conduct for the [monks and nuns](/tags/monastic) of the [Theravada tradition](/tags/theravada) along with many entertaining stories from the early saṅgha.
 
