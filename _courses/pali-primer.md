@@ -7,7 +7,6 @@ lecturers:
   - bodhi
 tags:
   - pali-language
-time: 4
 icon: "fas fa-parking"
 image: https://illeakyw.sirv.com/Images/banners/royal-herald.jpg
 image_width: 1204

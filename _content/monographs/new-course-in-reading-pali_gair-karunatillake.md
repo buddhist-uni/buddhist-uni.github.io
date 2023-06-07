@@ -8,6 +8,7 @@ publisher: "Motilal Banarsidass"
 address: "Delhi"
 course: pali-new-course
 pages: 202
+course_time_multiplier: 10
 ---
 A classic introductory textbook for reading the Pāli Canon in its original language, this reader walks the student through progressively more challenging selections, introducing and explaining the grammatical concepts and vocabulary every step of the way.
 

@@ -10,7 +10,7 @@ formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1vbo69IQEv8rtvMHFXSbpk5DC-5Eetl-R/view?usp=drivesdk"
 pages: 158
-course_time_multiplier: 30.0 # wild guess
+course_time_multiplier: 12
 course: chinese-primer
 year: 2017
 series: buddhist-chinese-primer_kieschnick

@@ -13,6 +13,7 @@ status: featured
 olid: OL9081283M
 base_value: 3.5
 pages: 50
+course_time_multiplier: 10
 ---
 
 An excellent primer introducing, step-by-step, the basic grammatical concepts essential to understanding the Pāli language. 

@@ -13,6 +13,7 @@ tags:
 status: featured
 excerpt_url: "https://readingfaithfully.org/selections-from-the-numerical-discourses-free-kindle-epub-mobi/"
 pages: 1868
+course_time_multiplier: 0
 ---
 
 The best English translation of the AN, with many helpful indexes, introductions, notes and appendixes to aid your study and use of this exquisite collection.

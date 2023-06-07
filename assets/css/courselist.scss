@@ -42,9 +42,8 @@ div.descrow {
 
 div.ccredits {
     text-align: center;
-    min-width: 40px;
-    margin: auto;
-    margin-right: 5px;
+    min-width: 80px;
+    margin: auto 5px;
 }
 .ccredits {
     @include media-query($on-palm) {

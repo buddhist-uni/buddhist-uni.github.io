@@ -11,7 +11,6 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/1/13/WHEN_I_HAVE_CAMER
 big_width: 4452
 big_height: 2516
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:WHEN_I_HAVE_CAMERA_IN_MY_HAND,_I_KNOW_NO_RULES.jpg">Ecstatic Atelier</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
-time: 1
 description: "This course weaves together two free monographs and a number of booklets to explore Nirvana from a critical perspective, giving a thorough introduction to the meaning, logic and history behind the Buddhists' ultimate goal."
 next_courses:
   - imagery

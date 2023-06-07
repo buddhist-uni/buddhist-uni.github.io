@@ -12,6 +12,7 @@ course: an
 year: 2016
 month: oct
 base_value: 1
+minutes: 14700 # estimate, and climbing all the time!
 ---
 
 An ongoing series of lectures going sequentially through the Numerical Discourses.

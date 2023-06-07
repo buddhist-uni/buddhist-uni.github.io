@@ -37,7 +37,7 @@ We currently offer {{ site.data.course_order.size }} courses on the fundamentals
 - <i class="fas fa-chalkboard-teacher"></i> = A unique icon to identify the course
 - <i class="fas fa-person-chalkboard"></i> = Lectures by:
 - <i class="far fa-address-book"></i> = Books by:
-- {:.ccredits}<i class="fas fa-weight-hanging"></i> = <a target="_blank" href="https://en.wikipedia.org/wiki/Course_credit#Credit_hours">Semester Credit Hours</a>
+- {:.ccredits}<i class="far fa-clock"></i> = Approximate time to complete the course
 
 ### Interactive Components
 
@@ -60,7 +60,7 @@ This site may use cookies to enhance your experience, but you can turn this off 
   <div class="descrow">
     <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>
     <div class="cdesc">{{ course.description | markdownify }}</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> {{ course.time }}</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br>&#126;{{ courseware | map: "course_mins" | sum | times: course.course_time_multiplier | divided_by: 600.0 | round | times: 10 }} hrs</div>
   </div>
   <div class="featuringrow">
     <div class="flabel"><strong>Featuring</strong>:</div>
@@ -82,7 +82,7 @@ Courses hosted on other websites.
   <div class="descrow">
     <div onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm')" class="cicon"><i class="fas fa-mountain"></i></div>
     <div class="cdesc">The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~20 hrs</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ Courses hosted on other websites.
   <div class="descrow">
     <div onclick="goto('https://www.nettletibetan.ca/')" class="cicon"><i class="fas fa-cable-car"></i></div>
     <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 4</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~160 hrs</div>
   </div>
 </div>
 
@@ -105,7 +105,7 @@ Courses hosted on other websites.
   <div class="descrow">
     <div onclick="goto('https://bschawaii.org/shindharmanet/course/')" class="cicon"><i class="fas fa-street-view"></i></div>
     <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 1</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~30 hrs</div>
   </div>
 </div>
 
@@ -116,7 +116,7 @@ Courses hosted on other websites.
   <div class="descrow">
     <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D')" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
     <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. This lecture series would go on to become the 2017 NYT best-seller, <i>Behave: The Biology of Humans at Our Best and Worse</i>.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~40 hrs</div>
   </div>
 </div>
 
@@ -128,7 +128,7 @@ Courses hosted on other websites.
     <div onclick="goto('https://www.coursera.org/learn/modpo')" class="cicon"><i class="fas fa-feather-alt"></i></div>
     <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the poems, but how to read them.
     This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~90 hrs</div>
   </div>
 </div>
 
@@ -139,8 +139,8 @@ Courses hosted on other websites.
   <div class="descrow">
     <div onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_')" class="cicon"><i class="fac-ukraine"></i></div>
     <div class="cdesc">Professor Timothy Snyder gives the deep history of Eastern Europe and the formation of the Ukrainian nation, discussing along the way the big question of why we should study history at all.
-    Be sure to check out <a href="https://snyder.substack.com/p/syllabus-of-my-ukraine-lecture-class" target="_blank">the course syllabus too</a> as the readings are an essential part of the course.</div>
-    <div class="ccredits"><i class="fas fa-weight-hanging"></i> 2</div>
+    Be sure to check out <a href="https://snyder.substack.com/p/syllabus-of-my-ukraine-lecture-class" target="_blank">the course syllabus too</a> as the readings are an important part of the course.</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br> ~40 hrs</div>
   </div>
 </div>
 

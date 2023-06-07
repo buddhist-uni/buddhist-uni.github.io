@@ -4,7 +4,7 @@ subtitle: "The Numerical Discourses of the Buddha"
 lecturers:
   - bodhi
 description: "An ongoing series of talks by Bhikkhu Bodhi going sequentially through the Numerical Discourses, explaining how the collection was compiled and how we might apply its wisdom to our everyday lives."
-time: 10
+course_time_multiplier: 1
 icon: "fas fa-dove"
 image: "https://illeakyw.sirv.com/Images/banners/Buddha_Teaching.jpg"
 big_image: "https://upload.wikimedia.org/wikipedia/commons/8/80/016_Buddha_Teaching_%289170019757%29.jpg"

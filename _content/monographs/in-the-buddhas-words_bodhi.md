@@ -14,6 +14,7 @@ tags:
   - function
   - path
 pages: 485
+course_time_multiplier: 0
 ---
 
 The contemporary anthology of the Buddha's teachings, Bhikkhu Bodhi organizes the key content of the suttas into a logical and progressive series of ten chapters.

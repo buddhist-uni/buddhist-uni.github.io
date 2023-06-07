@@ -10,6 +10,7 @@ drive_links:
 course: pali-new-course
 base_value: 1.6
 minutes: 5273
+course_time_multiplier: 0.5 # one of two options for lectures to watch
 ---
 
 Bhikkhu Bodhi continues to teach the same group of students from [the primer course]({% link _content/av/pali-primer_bodhi.md %}), this time teaching from [Gair and Karunatillake]({% link _content/monographs/new-course-in-reading-pali_gair-karunatillake.md %}) in a sequence of 53 lectures.

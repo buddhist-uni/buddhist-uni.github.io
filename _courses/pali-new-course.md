@@ -8,7 +8,6 @@ lecturers:
   - bodhi
 tags:
   - pali-language
-time: 3
 icon: "fab fa-product-hunt"
 image: https://illeakyw.sirv.com/Images/banners/sinhalese_covers.jpg
 image_width: 1280
