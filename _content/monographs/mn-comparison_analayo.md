@@ -12,6 +12,7 @@ status: featured
 formats: [PDFs]
 drive_links: ["https://drive.google.com/drive/folders/10onZWu01RgUkBHOLmulH32Y7I9JIyiAl"]
 pages: 1055
+course_time_multiplier: 2 # it's often not an easy read
 ---
 
 A thorough examination of each discourse in the *Majjhima-nikāya* in the light of its parallels.
