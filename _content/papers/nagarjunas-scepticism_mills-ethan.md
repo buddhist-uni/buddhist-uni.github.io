@@ -10,6 +10,7 @@ file_links:
 course: view
 tags:
   - mahayana-roots
+  - madhyamaka
   - emptiness
 year: 2020
 from_book: buddhism-and-scepticism_hanner
