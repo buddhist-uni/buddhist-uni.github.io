@@ -12,8 +12,8 @@ course: right view
 tags:
   - cosmology
   - world
-  - kamma/karma
-  - iddhi/siddhi
+  - karma
+  - iddhi
 year: 2018
 pages: "11"
 ---
