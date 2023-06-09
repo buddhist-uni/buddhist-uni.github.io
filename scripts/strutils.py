@@ -30,12 +30,22 @@ def stdout_make_room(lines: int):
   cout(''.join(["\n"]*lines))
   cout(f"\033[{lines}A")
 
-def input_with_prefill(prompt, text):
+def input_with_prefill(prompt, text, validator=None):
     def hook():
         readline.insert_text(text)
         readline.redisplay()
     readline.set_pre_input_hook(hook)
-    result = input(prompt)
+    while True:
+      result = input(prompt)
+      if not validator:
+        break
+      try:
+        if validator(result):
+          break
+        else:
+          continue
+      except:
+        continue
     readline.set_pre_input_hook()
     return result
 

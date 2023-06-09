@@ -1,7 +1,7 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
 from strutils import input_with_prefill, prompt, system_open
-from gdrive import upload_to_google_drive, folderlink_to_id, create_drive_shortcut
+from gdrive import upload_to_google_drive, get_gfolders_for_course, create_drive_shortcut, DRIVE_LINK
 
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
 NONSC_TRANSLATORS = [{
@@ -58,9 +58,8 @@ def guess_id_from_filename(name):
   # AN 8 -> AN 8.(?)
   return name+'.'
 
-def process_pdf(pdf_file, foldersdatafile):
+def process_pdf(pdf_file):
   print(f"Processing {pdf_file}...")
-  gfolders = json.loads(foldersdatafile.read_text())
   pdf_file = Path(pdf_file)
   pages = get_page_count(pdf_file)
   guess = guess_id_from_filename(pdf_file.stem)
@@ -77,7 +76,7 @@ def process_pdf(pdf_file, foldersdatafile):
     if not prompt("File already exists! Continue anyway?"):
       return
   print(f"Possible English translations: {list(map(lambda t: t['author_short'], en_trans+NONSC_TRANSLATORS))}")
-  transidx = int(input_with_prefill("Which one is this [index]? ", "0"))
+  transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(NONSC_TRANSLATORS)))
   if transidx < len(en_trans):
     trans = en_trans[transidx]
   transidx -= len(en_trans)
@@ -89,17 +88,8 @@ def process_pdf(pdf_file, foldersdatafile):
   title = f"{sutta} {pali_name}: {eng_name}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
   course = input("course: ")
-  folder_id = None
-  shortcut_folder = None
+  folder_id, shortcut_folder = get_gfolders_for_course(course)
   drive_links = "drive_links"
-  if course not in gfolders:
-    print("Hmmm... I don't know that Google Drive folder! Let's add it:")
-    folderurl = input("Public link: ") or None
-    shortcuturl = input("Private link: ") or None
-    gfolders[course] = {"public":folderurl,"private":shortcuturl}
-    foldersdatafile.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
-  shortcut_folder = folderlink_to_id(gfolders[course]['private'])
-  folder_id = folderlink_to_id(gfolders[course]['public'])
   if shortcut_folder and not folder_id:
     folder_id = shortcut_folder
     shortcut_folder = None
@@ -159,7 +149,7 @@ subcat: poetry{extra_fields}"""
   if not filegid:
     print("Failed to upload!")
     quit(1)
-  drive_link = f"https://drive.google.com/file/d/{filegid}/view?usp=drivesdk"
+  drive_link = DRIVE_LINK.format(filegid)
   if shortcut_folder:
     print("Creating the private shortcut...")
     shortcutid = create_drive_shortcut(args.client, filegid, filename, shortcut_folder)
@@ -192,7 +182,6 @@ if __name__ == "__main__":
   if not args.source.exists():
     print(f"{args.source} doesn't exist")
     quit(1)
-  foldersdatafile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_data/drive_folders.json")))
   pdfs = []
   if args.source.is_file():
     pdfs = [args.source]
@@ -207,4 +196,4 @@ if __name__ == "__main__":
       print("No PDF found. Waiting for one...")
       pdfs = get_new_pdfs(args.source)
   for pdf in pdfs:
-    process_pdf(pdf, foldersdatafile)
+    process_pdf(pdf)
