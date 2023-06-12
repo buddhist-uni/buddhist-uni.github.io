@@ -1,0 +1,18 @@
+{%- assign slug = include.slug | default: include.title | slugify -%}
+{%- comment %}Note .coursecard class also used by buggytrack.js{% endcomment -%}
+<div class="coursecard"><a type="button" class="courselink" {% if include.url contains "http" and include.value %}ga-event-value="{{ include.value }}" data-content-authors="{{ include.authors | join: ", " }}"{% endif %} href="{{ include.url }}"><div class="inner-coursecard">
+<h3 id="{{ slug }}">{{ include.title }}</h3>
+<div class="coursedesc">
+  <div class="descrow">
+    <div class="cicon"><i class="{{ include.icon }}"></i></div>
+    <div class="cdesc">{{ include.description | markdownify }}</div>
+    <div class="ccredits"><i class="far fa-clock"></i><br>&#126;{{ include.time }} hrs</div>
+  </div>{% if include.lecturers.size > 0 or include.bauthors.size > 0 %}
+  <div class="featuringrow">
+    <div class="flabel"><strong>{% if include.bauthors.size > 0 %}Featuring{% else %}Taught by{% endif %}</strong>:</div>
+    {% if include.lecturers.size > 0 %}<div class="lecturers"><i class="fas fa-person-chalkboard"></i> {% include_cached content_authors_string.html authors=include.lecturers %}</div>{% endif %}
+    {% if include.bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include_cached content_authors_string.html authors=include.bauthors %}</div>{% endif %}
+  </div>{% endif %}
+</div>
+</div></a></div>
+

@@ -18,12 +18,6 @@ big_height: 1896
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
-<script>
-function goto(u) {
-  document.querySelector('a[href="'+u+'"]').click();
-}
-</script>
-
 The Open Buddhist University organizes [content from across the Web]({% link library.md %}) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
 
 ## About Our Courses
@@ -51,98 +45,84 @@ This site may use cookies to enhance your experience, but you can turn this off 
 {% assign course = site.courses | find: "slug", cslug %}
 {% assign courseware = site.content | where: "course", cslug %}
 {% assign booklets = courseware | where: "category", "booklets" %}
-{% assign textbooks = courseware | where: "category", "monographs" | concat: booklets %}
+{% assign textbooks = courseware | where: "category", "monographs" | concat: booklets | sort: "course_mins", "first" | reverse %}
 {% assign bauthors = '' | split: '' %}
-{% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
+{% for b in textbooks %}{% assign tbas = b.authors %}{% unless tbas.size > 3%}{% for tba in tbas %}{% unless bauthors contains tba %}{% assign bauthors = bauthors | push: tba %}{% break %}{% endunless %}{% endfor %}{% endunless %}{% endfor %}
+{% if bauthors.size >= 5 %}{% assign bauthors = bauthors | slice: 0, 3 | push: "others" %}{% endif %}
 {% capture onclick %}onclick="location.href='{{ course.url }}'"{% endcapture %}
-<h3 id="{{ course.slug }}" class="courselink"><a href="{{ course.url }}">{{ course.title }}</a></h3>
-<div class="coursedesc">
-  <div class="descrow">
-    <div {{onclick}} class="cicon"><i class="{{ course.icon }}"></i></div>
-    <div class="cdesc">{{ course.description | markdownify }}</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br>&#126;{{ courseware | map: "course_mins" | sum | times: course.course_time_multiplier | divided_by: 600.0 | round | times: 10 }} hrs</div>
-  </div>
-  <div class="featuringrow">
-    <div class="flabel"><strong>Featuring</strong>:</div>
-    {% if course.lecturers %}<div class="lecturers"><i class="fas fa-person-chalkboard"></i> {% include_cached content_authors_string.html link=true authors=course.lecturers %}</div>{% endif %}
-    {% if bauthors.size > 0 %}<div class="bauthors"><i class="far fa-address-book"></i> {% include_cached content_authors_string.html link=true authors=bauthors %}</div>{% endif %}
-  </div>
-</div>
-
+{% assign time = courseware | map: "course_mins" | sum | times: course.course_time_multiplier | divided_by: 600.0 | round | times: 10 %}
+{% include course-card.html slug=course.slug url=course.url title=course.title icon=course.icon description=course.description time=time lecturers=course.lecturers bauthors=bauthors %}
 {% endfor %}
 
 ## External Courses
 
 Courses hosted on other websites.
-{% comment %}Note that the .courselink classes below are used by buggytrack.js{% endcomment %}
-### [The Arahant and the Four Noble Truths](https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm){:ga-event-value="0.6" data-content-authors="analayo"}
-{:.courselink}
+{% assign authors = "analayo" | split: "," %}
+{% include course-card.html
+  url="https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm"
+  value="0.6"
+  title="The Arahant and the Four Noble Truths"
+  icon="fas fa-mountain"
+  description="The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha."
+  time="20"
+  lecturers=authors
+%}
 
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm')" class="cicon"><i class="fas fa-mountain"></i></div>
-    <div class="cdesc">The prequel course to Ven. Analayo's <i>Tranquility and Insight</i> course above, this 11 lecture series covers Madhyama-āgama Chapters 3 and 4, centering on the Venerable Arahants at the time of the Buddha.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~20 hrs</div>
-  </div>
-</div>
+{% assign authors = "Frances Garret" | split: "," %}
+{% include course-card.html
+  url="https://www.nettletibetan.ca/"
+  value="0.5"
+  title="An Introduction to Classical Tibetan"
+  icon="fas fa-cable-car"
+  description='Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with the Tibetan script. If that\'s not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.'
+  time="160"
+  lecturers=authors
+%}
 
-### [An Introduction to Classical Tibetan](https://www.nettletibetan.ca/){:ga-event-value="0.5" data-content-authors="Frances Garrett"}
-{:.courselink}
-
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://www.nettletibetan.ca/')" class="cicon"><i class="fas fa-cable-car"></i></div>
-    <div class="cdesc">Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with <a target="_blank" href="https://en.wikipedia.org/wiki/Tibetan_script">the Tibetan script</a>. If that's not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~160 hrs</div>
-  </div>
-</div>
+{% include course-card.html
+  url="https://bschawaii.org/shindharmanet/course/"
+  value="0.5"
+  title="Shin Buddhism in Modern Culture"
+  icon="fas fa-street-view"
+  description="A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States."
+  time="30"
+%}
 
 
-### [Shin Buddhism in Modern Culture](https://bschawaii.org/shindharmanet/course/){:ga-event-value="1.5"}
-{:.courselink}
+{% assign authors = "Robert Sapolsky" | split: "," %}
+{% include course-card.html
+  url="https://youtube.com/playlist?list=PL848F2368C90DDC3D"
+  value="3"
+  title="Human Behavioral Biology"
+  icon="fas fa-person-circle-exclamation"
+  description="Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. This lecture series would go on to become the 2017 NYT best-seller, <i>Behave: The Biology of Humans at Our Best and Worse</i>."
+  time="40"
+  lecturers=authors
+%}
 
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://bschawaii.org/shindharmanet/course/')" class="cicon"><i class="fas fa-street-view"></i></div>
-    <div class="cdesc">A short, interactive overview of Jodo Shinshu, from Shinran's life to Japanese Buddhism in the modern United States.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~30 hrs</div>
-  </div>
-</div>
 
-### [Human Behavioral Biology](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3" data-content-authors="Robert Sapolsky"}
-{:.courselink}
+{% assign authors = "Al Filreis" | split: "," %}
+{% include course-card.html
+  url="https://www.coursera.org/learn/modpo"
+  value="3"
+  title="Modern and Contemporary American Poetry"
+  icon="fas fa-feather-alt"
+  description='An excellent introduction to 20th Century, American poetry from the University of Pennsylvania graduate school, "ModPo" teaches you not just the history of the poems, but how to read them. This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.'
+  time="90"
+  lecturers=authors
+%}
 
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://youtube.com/playlist?list=PL848F2368C90DDC3D')" class="cicon"><i class="fas fa-person-circle-exclamation"></i></div>
-    <div class="cdesc">Robert Sapolsky's classic Stanford course explains what makes people tick and should be considered required watching for anyone who interacts with humans. This lecture series would go on to become the 2017 NYT best-seller, <i>Behave: The Biology of Humans at Our Best and Worse</i>.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~40 hrs</div>
-  </div>
-</div>
 
-### [Modern and Contemporary American Poetry](https://www.coursera.org/learn/modpo){:ga-event-value="3" data-content-authors="Al Filreis"}
-{:.courselink}
-
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://www.coursera.org/learn/modpo')" class="cicon"><i class="fas fa-feather-alt"></i></div>
-    <div class="cdesc">An excellent introduction to 20th Century, American poetry from the University of Pennsylvania's graduate school, "ModPo" teaches you not just the history of the poems, but how to read them.
-    This course is highly recommended for anyone who likes poetry, but who never "got" that modern stuff.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~90 hrs</div>
-  </div>
-</div>
-
-### [The Making of Modern Ukraine](https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_){:ga-event-value="2" data-content-authors="Timothy Snyder"}
-{:.courselink}
-
-<div class="coursedesc">
-  <div class="descrow">
-    <div onclick="goto('https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_')" class="cicon"><i class="fac-ukraine"></i></div>
-    <div class="cdesc">Professor Timothy Snyder gives the deep history of Eastern Europe and the formation of the Ukrainian nation, discussing along the way the big question of why we should study history at all.
-    Be sure to check out <a href="https://snyder.substack.com/p/syllabus-of-my-ukraine-lecture-class" target="_blank">the course syllabus too</a> as the readings are an important part of the course.</div>
-    <div class="ccredits"><i class="far fa-clock"></i><br> ~40 hrs</div>
-  </div>
-</div>
+{% assign authors = "Timothy Snyder" | split: "," %}
+{% include course-card.html
+  url="https://youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+  value="2"
+  title="The Making of Modern Ukraine"
+  icon="fac-ukraine"
+  description='Professor Timothy Snyder gives the deep history of Eastern Europe and the formation of the Ukrainian nation, discussing along the way the big question of why we should study history at all. Be sure to check out the course syllabus in addition to the lectures as the readings are an important part of the course.'
+  time="40"
+  lecturers=authors
+%}
 
 ## Open Courseware @MIT
 

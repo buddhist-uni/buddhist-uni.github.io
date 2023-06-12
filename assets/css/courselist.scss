@@ -3,31 +3,38 @@
 
 @import "support";
 
-h3.courselink {
+.coursecard {
+    margin-bottom: 2rem;
+}
+
+a.courselink {
+    color: $text-color;
+    box-shadow: 6px 6px 10px rgba($banner-color, 0.2);
+}
+
+a.courselink:hover {
+    text-decoration: none;
+    transform: scale3d(1.01, 1.01, 1.01) translate3d(0.1rem, -0.25rem, 20rem);
+    box-shadow: 3px 11px 10px rgba($banner-color, 0.25);
+    transition: all 0.15s cubic-bezier(0, 0, 0.5, 1) 0s;
+}
+
+.courselink h3 {
     margin-bottom: 0;
     background-color: $banner-color;
     color: white;
-    padding: 0;
     letter-spacing: 3px;
-    a {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        padding: 1rem;
-        color: white;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-        text-decoration-thickness: 1px;
-    }
-    a:visited {
-        color: white;
-    }
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
 }
 
 div.coursedesc {
     border: solid 1px $banner-color;
-    margin-bottom: 2rem;
-    box-shadow: 6px 6px 10px rgba($banner-color, 0.22);
     padding-right: 10px;
     padding-top: 15px;
 }

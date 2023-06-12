@@ -62,7 +62,7 @@ const BuggyTracker = function (d) {
     m=l.match(journalr);
     if(m) return p.tagName=='H3'?['journals',m[1],'html']:['Generic Links',m[1]];
     if(l=='/courses/'){
-      if(p.className=='courselink') return ['courses', 'external_courses'];
+      if(p.className=='coursecard') return ['courses', 'external_courses'];
       if(link.className=='f3') return ['courses', 'mit_courses', 'html'];
       return ['Generic Links','courses'];
     }
