@@ -22,6 +22,6 @@ number: 337
 pages: 53
 ---
 
-> >The Buddha calls right view the forerunner of the path (pubbaṅgama), which gives direction and efficacy to the other seven path factors.
+> The Buddha calls right view the forerunner of the path (pubbaṅgama), which gives direction and efficacy to the other seven path factors.
 
 Bhikkhu Ñāṇamoli's translation of MN 9 and its commentary by Buddhaghosa. This sutta, expounded not by the Buddha but Sāriputta, is an expansive study into all that makes up Right View and how Right View serves as the foundation for the rest of the Noble Eightfold Path.

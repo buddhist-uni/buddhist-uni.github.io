@@ -1,6 +1,6 @@
 {%- assign slug = include.slug | default: include.title | slugify -%}
 {%- comment %}Note .coursecard class also used by buggytrack.js{% endcomment -%}
-<div class="coursecard"><a type="button" class="courselink" {% if include.url contains "http" and include.value %}ga-event-value="{{ include.value }}" data-content-authors="{{ include.authors | join: ", " }}"{% endif %} href="{{ include.url }}"><div class="inner-coursecard">
+<div class="coursecard"><a type="button" class="courselink" {% if include.url contains "http" and include.value %}ga-event-value="{{ include.value }}" data-content-authors="{{ include.lecturers | join: ", " }}"{% endif %} href="{{ include.url }}"><div class="inner-coursecard">
 <h3 id="{{ slug }}">{{ include.title }}</h3>
 <div class="coursedesc">
   <div class="descrow">
