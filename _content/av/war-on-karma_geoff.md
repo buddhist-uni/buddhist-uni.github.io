@@ -6,12 +6,11 @@ external_url: "https://www.dharmaseed.org/talks/5979/"
 drive_links:
   - "https://drive.google.com/file/d/1bZb8_fSP2lXQ2BDoKV70OSg5OI8rP8hX/view?usp=drive_link"
 formats: [mp3]
-course: view
+course: thought 
 tags:
   - karma
-  - time
-  - rebirth
-  -origination
+  - west
+  - origination
 year: 2006
 month: feb
 minutes: 79
