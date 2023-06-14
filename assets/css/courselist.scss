@@ -10,13 +10,13 @@
 a.courselink {
     color: $text-color;
     box-shadow: 6px 6px 10px rgba($banner-color, 0.2);
+    transition: all 0.15s cubic-bezier(0, 0, 0.5, 1) 0s;
 }
 
 a.courselink:hover {
     text-decoration: none;
     transform: scale3d(1.01, 1.01, 1.01) translate3d(0.1rem, -0.25rem, 20rem);
     box-shadow: 3px 11px 10px rgba($banner-color, 0.25);
-    transition: all 0.15s cubic-bezier(0, 0, 0.5, 1) 0s;
 }
 
 .courselink h3 {
