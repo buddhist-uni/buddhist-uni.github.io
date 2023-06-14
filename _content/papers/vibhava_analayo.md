@@ -1,5 +1,5 @@
 ---
-title: "vibhava"
+title: "Vibhava"
 authors:
   - analayo
 editor: "W. G. Weeraratne"
@@ -15,9 +15,9 @@ drive_links:
  - "https://drive.google.com/file/d/1YMbKba66zd18Q7r66C6kTpI1CZyPAVQw/view?usp=drive_link"
 course: view
 tags:
-  - origination
   - vibhava
-  - metaphysics
-  - pali-texts
+  - nihilism
+  - death
+  - theravada
 ---
 An importnat summary of non-exsitence and annihilation as taught in the Pali suttas.
