@@ -18,3 +18,5 @@ chapter: 2
 ---
 
 > Everything is always at once a subject and object
+
+A close reading of the medieval story of a boy raised by wolves and a wider meditation on man's place in the world.

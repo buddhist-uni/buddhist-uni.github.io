@@ -6,15 +6,14 @@ drive_links: ["https://drive.google.com/file/d/13xhIMK6YGALN_rlmWlb9PX-6R1WKovDb
 external_url: "https://www.vox.com/future-perfect/2019/2/12/18215534/bill-gates-global-poverty-chart"
 journal: vox
 year: 2019
-course: time
+course: wider
 base_value: 0.1
 status: featured
 tags:
   - economics
+  - development
   - present
-  - capitalism
   - industrialization
-  - world
 pages: 14
 ---
 
