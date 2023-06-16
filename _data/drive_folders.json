@@ -23,6 +23,10 @@
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
  },
+ "death": {
+  "private": "https://drive.google.com/drive/folders/10YatRWc7d6An-b0JHlwL7YbrnnjaWWJ2",
+  "public": "https://drive.google.com/drive/folders/1CejhWVHrZncxhdmoGFcCAfqt8cEeuDwI"
+ },
  "ea": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1234QK_JdiurFhgADDnpgWHOsicIIcine"
@@ -47,6 +51,10 @@
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
   "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
  },
+ "intellect": {
+  "private": "https://drive.google.com/drive/folders/1Jb9_bpetYri68jrI1BqdDwlwo3ZCCLDO",
+  "public": "https://drive.google.com/drive/folders/1KCHrWiAqWN6ZXVV-JcWRa3dcm0OsJzGH"
+ },
  "interfaith": {
   "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw",
   "public": null
@@ -66,6 +74,10 @@
  "origination": {
   "private": "https://drive.google.com/drive/folders/1NVMVxbG9nUPJO5tdH7UcatcQkPod-mwa",
   "public": "https://drive.google.com/drive/folders/105_iCx8G0RDryGDf_6cJru6EQMVFnYs2"
+ },
+ "pali-canon": {
+  "private": "https://drive.google.com/drive/folders/1-ZiJYwAQ6Tmfk5Oo2KCWPScR8ukSWxEm",
+  "public": "https://drive.google.com/drive/folders/1-39OcD_O7ULeBYDFaYdZVfTUlgMd5avP"
  },
  "path": {
   "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG",
