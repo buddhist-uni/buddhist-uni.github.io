@@ -8,8 +8,20 @@ NONSC_TRANSLATORS = [{
   'author_short': 'Gnanananda',
   'author_uid': '"Ven. Kiribathgoda Gnanananda"',
   'author': "Ven. Gnanananda",
-  'publication_date': 2020
-}]
+  'publication_date': 2020,
+  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/suttafriends.json"))).read_text())
+},
+{
+  'author_short': 'Thanissaro',
+  'author_uid': 'geoff',
+  'author': "Thanissaro Bhikkhu",
+  'publication_date': 2009, # fake news!
+  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
+}
+]
+
+def make_nonsc_url(website, book, nums):
+  return f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
 
 def command_line_args():
     parser = argparse.ArgumentParser(
@@ -58,6 +70,25 @@ def guess_id_from_filename(name):
   # AN 8 -> AN 8.(?)
   return name+'.'
 
+def is_in_website(website, book, nums):
+  if not book in website:
+    return False
+  book = website[book]
+  if "complete" in book and book["complete"]:
+    return True
+  if not "available" in book:
+    return False
+  book = book["available"]
+  if not int(nums[0]) in book and not str(nums[0]) in book:
+    return False
+  if not nums[1]:
+    return True
+  book = book[str(nums[0])]
+  return int(nums[1]) in book
+
+def get_possible_trans(book, nums):
+  return list(filter(lambda t: is_in_website(t['website_data'], book, nums), NONSC_TRANSLATORS))
+
 def process_pdf(pdf_file):
   print(f"Processing {pdf_file}...")
   pdf_file = Path(pdf_file)
@@ -75,13 +106,18 @@ def process_pdf(pdf_file):
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
-  print(f"Possible English translations: {list(map(lambda t: t['author_short'], en_trans+NONSC_TRANSLATORS))}")
-  transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(NONSC_TRANSLATORS)))
+  parsed = re.match(sutta_id_re, slug)
+  book = parsed.group(1)
+  nums = [parsed.group(2), parsed.group(3)]
+  nums = list(map(lambda v: int(v) if v else None, nums))
+  nonsc_trans = get_possible_trans(book, nums)
+  print(f"Possible English translations: {list(map(lambda t: t['author_short'], en_trans+nonsc_trans))}")
+  transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(nonsc_trans)))
   if transidx < len(en_trans):
     trans = en_trans[transidx]
   transidx -= len(en_trans)
   if transidx >= 0:
-    trans = NONSC_TRANSLATORS[transidx]
+    trans = nonsc_trans[transidx]
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
@@ -95,10 +131,6 @@ def process_pdf(pdf_file):
     shortcut_folder = None
     drive_links = "hidden_links"
   slugfield = slug
-  parsed = re.match(sutta_id_re, slug)
-  book = parsed.group(1)
-  nums = [parsed.group(2), parsed.group(3)]
-  nums = list(map(lambda v: int(v) if v else None, nums))
   extra_fields = ""
   if book in ['sn', 'iti', 'snp', 'thig', 'thag', 'ud']:
     if prompt("Is this poetry?", "n"):
@@ -135,7 +167,7 @@ subcat: poetry{extra_fields}"""
   if transidx < 0:
     external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
   else:
-    external_url = f"https://suttafriends.org/sutta/{book}{nums[0]}-{nums[1]}/"
+    external_url = make_nonsc_url(trans['website_data'], book, nums)
   year = trans['publication_date']
   if not year:
     if trans['author_uid'] == 'sujato':
