@@ -15,7 +15,7 @@ illustration_width: 1200
 illustration_center_x: 14%
 illustration_center_y: 30%
 illustration_caption: >-
-  Workers collect salt in <i>đòn gánh</i> baskets under a cloudy sunset in Ninh Hòa, Vietnam one evening in May 2014.
+  Workers collect salt in <i>đòn gánh</i> baskets under a cloudy sunset in Ninh Hòa, Vietnam in May 2014.
   The salt is collected from <a href="https://en.wikipedia.org/wiki/Salt_evaporation_pond">evaporated sea water</a> in one of the many clever tricks humans use to extract useful substances from their environment.
   (<a href="https://commons.wikimedia.org/wiki/File:Ninh_H%C3%B2a_salt_production_-_alt.JPG">Tycho Shansov</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>)
 ---

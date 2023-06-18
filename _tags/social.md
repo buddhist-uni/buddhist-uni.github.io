@@ -16,9 +16,10 @@ illustration_width: 1024
 illustration_center_x: 47%
 illustration_center_y: 50%
 illustration_caption: >-
-  Four middle-aged men (two European and two Korean) enjoy cigarettes together after a generous seafood picnic on the Pacific coast of North Korea.
-  (<a href="https://www.flickr.com/photos/northkoreatravel/14582323293/">CC</a>)
+  Four middle-aged men (two European and two Korean) enjoy cigarettes together after a generous, seafood picnic on the Pacific coast of North Korea in this propaganda photo
+  <a href="https://www.flickr.com/photos/northkoreatravel/14582323293/">released</a>
+  by the North Korean state tourism company.
+  (<a href="https://creativecommons.org/licenses/by-sa/2.0">CC SA 2.0</a>)
 ---
 
-The particular patterns that emerge when humans come together to form communities.
-
+When humans form communities, they are capable of banding together in groups of almost any size: from two-person couples to multi-billion-person, supranational unions.

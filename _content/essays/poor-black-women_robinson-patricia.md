@@ -6,19 +6,16 @@ external_url: "https://dukelibraries.contentdm.oclc.org/digital/api/collection/p
 source_url: "https://idn.duke.edu/ark:/87924/r3s39c"
 drive_links:
   - "https://drive.google.com/file/d/18rHpuYKGlpdRLydAHiSJwPsZfZKanApF/view?usp=drivesdk"
-course: inner
+course: body
 tags:
-  - groups
-  - body
-  - race
-  - health
-  - politics
-  - gender
-  - usa
+  - social
+  - caste
+  - intersectionality
+  - america
 year: 1968
 publisher: "the New England Free Press"
 address: "Boston, MA"
 pages: 4
 ---
 
-Were contraceptives given to "poor, black women" as a form of eugenics or empowerment?
+A debate between the men and women of the Black Power Movement on their stance towards contraceptives.

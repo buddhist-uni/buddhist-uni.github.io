@@ -11,7 +11,6 @@ course: monastic
 tags:
   - nibbana
   - dialogue
-  - inner
   - hermeneutics
   - thought
 year: 1983

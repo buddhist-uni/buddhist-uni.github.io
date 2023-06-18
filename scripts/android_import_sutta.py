@@ -15,7 +15,7 @@ NONSC_TRANSLATORS = [{
   'author_short': 'Thanissaro',
   'author_uid': 'geoff',
   'author': "Thanissaro Bhikkhu",
-  'publication_date': 2009, # fake news!
+  'publication_date': "2009 # fake news!",
   'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
 }
 ]

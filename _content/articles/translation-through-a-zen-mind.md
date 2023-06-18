@@ -6,9 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1ysGxVrOIvNgEMpsh53kqymhh7CA73Vzq
 tags:
   - classical-poetry
   - ambulit
-  - west
   - translation
-course: inner
+course: west
 year: 2020
 journal: jgb
 volume: 21

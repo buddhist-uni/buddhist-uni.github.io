@@ -13,8 +13,7 @@ tags:
   - japanese-roots
   - modern
   - intercultural
-  - intellect
-  - social
+  - ideology
 year: 2006
 month: feb
 journal: plato

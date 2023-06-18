@@ -10,6 +10,7 @@ tags:
   - sutta
   - indic-religions
 year: 1994
+oclc: 30546679
 publisher: "Motilal Banarsidass"
 address: "Delhi"
 pages: 361

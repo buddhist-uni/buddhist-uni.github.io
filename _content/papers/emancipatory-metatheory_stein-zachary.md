@@ -11,7 +11,7 @@ publisher: "Routledge"
 editor: "Roy Bhaskar"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1VeSYPATQTeJGyDHHHa6r43xPeUAZIAY7/view?usp=drivesdk"]
-course: engaged
+course: becon
 tags:
   - social
   - dialogue
@@ -19,7 +19,6 @@ tags:
   - power
   - education
   - intellect
-  - becon
 pages: 37
 ---
 

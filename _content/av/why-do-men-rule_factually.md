@@ -15,7 +15,6 @@ tags:
   - gender
   - patriarchy
   - economics
-  - wider
   - past
   - ideology
 year: 2022

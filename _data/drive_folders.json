@@ -7,6 +7,14 @@
   "private": "https://drive.google.com/drive/folders/1n1CgTwagj5GPkFKiluRPPcsa71p3rVkc",
   "public": null
  },
+ "becon": {
+  "private": "https://drive.google.com/drive/folders/1ZJZmELY1okW8okorjfBTpztEbyl3v3ih",
+  "public": "https://drive.google.com/drive/folders/11D09xk2DMgIMDAXTprM9SlgtrVsQ2NIO"
+ },
+ "body": {
+  "private": "https://drive.google.com/drive/folders/1JVjjKk1G54bzVeJR4Xa0fcA3oHqikPFK",
+  "public": "https://drive.google.com/drive/folders/1KH_fXizokWIhkN8KU86_7UXSwSQMY7Y9"
+ },
  "buddha": {
   "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi",
   "public": "https://drive.google.com/drive/folders/13WkPn6574tdzGOCfYDcM24OxVlMvw_QP"
@@ -22,6 +30,10 @@
  "clothes": {
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
+ },
+ "cosmology": {
+  "private": "https://drive.google.com/drive/folders/17zWCoFCX5QOHFHJKdsP2bw-AYlURoryC",
+  "public": "https://drive.google.com/drive/folders/1-3P5u65MsX2gjuN46xqNV2dJxoAxrQDQ"
  },
  "death": {
   "private": "https://drive.google.com/drive/folders/10YatRWc7d6An-b0JHlwL7YbrnnjaWWJ2",
@@ -66,6 +78,10 @@
  "monastic": {
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",
   "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV"
+ },
+ "natural": {
+  "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
+  "public": null
  },
  "nature": {
   "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
@@ -118,6 +134,10 @@
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
   "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0"
+ },
+ "west": {
+  "private": "https://drive.google.com/drive/folders/1-Gu_Bu38mBsIP7-nfZ-8Twk45andzHyF",
+  "public": "https://drive.google.com/drive/folders/10p_kHWFRy6JqfGHi8mhIhbGwx8-gDf7S"
  },
  "world": {
   "private": "https://drive.google.com/drive/folders/1I7MwmV6dCFuuT4EzYkwtfdpZRqMBpk_e",

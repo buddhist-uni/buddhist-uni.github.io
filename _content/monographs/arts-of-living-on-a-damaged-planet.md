@@ -4,9 +4,8 @@ editor: "Elaine Gan and Anna Tsing and Heather Swanson and Nils Bubandt"
 olid: OL28627468M
 year: 2017
 publisher: "The University of Minnesota Press"
-course: wider
 tags:
-  - science
+  - wider
   - biology
   - climate-change
   - anthropocene
