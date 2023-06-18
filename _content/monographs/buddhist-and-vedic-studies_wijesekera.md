@@ -11,7 +11,7 @@ tags:
   - indic-religions
 year: 1994
 oclc: 30546679
-publisher: "Motilal Banarsidass"
+publisher: mlbd
 address: "Delhi"
 pages: 361
 ---

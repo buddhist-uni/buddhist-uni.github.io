@@ -13,6 +13,7 @@ year: 1956
 journal: "Adyar Library Bulletin"
 volume: 20
 number: 3
+chapter: 22
 pages: "275--284"
 from_book: buddhist-and-vedic-studies_wijesekera
 ---

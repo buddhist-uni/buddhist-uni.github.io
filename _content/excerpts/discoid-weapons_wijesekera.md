@@ -13,6 +13,7 @@ year: 1961
 journal: "Adyar Library Bulletin"
 volume: 25
 pages: "293--303"
+chapter: 24
 from_book: buddhist-and-vedic-studies_wijesekera
 ---
 

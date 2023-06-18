@@ -13,8 +13,6 @@ tags:
   - indic-religions
   - upanishads
 year: 1941
-publisher: "Motilal Banarsidass"
-address: "Delhi"
 from_book: buddhist-and-vedic-studies_wijesekera
 pages: "3--12"
 chapter: 1

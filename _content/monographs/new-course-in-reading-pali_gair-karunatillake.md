@@ -4,7 +4,7 @@ authors: ["James W. Gair", "W. S. Karunatillake"]
 external_url: "https://archive.org/download/NewPaliCourse/New%20Pali%20Course_text.pdf"
 olid: OL9070254M
 year: 1998
-publisher: "Motilal Banarsidass"
+publisher: mlbd
 address: "Delhi"
 course: pali-new-course
 pages: 202

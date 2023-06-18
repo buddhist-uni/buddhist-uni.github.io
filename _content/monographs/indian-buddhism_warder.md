@@ -2,7 +2,7 @@
 title: "Indian Buddhism"
 authors: [warder]
 external_url: "https://web.archive.org/web/20220718065623if_/https://www.ahandfulofleaves.org/documents/Indian%20Buddhism_Warder_1970-2004.pdf"
-publisher: "Motilal Banarsidass"
+publisher: mlbd
 oclc: 1112879728
 olid: OL9070093M
 year: 1970
