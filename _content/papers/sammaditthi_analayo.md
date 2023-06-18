@@ -6,7 +6,7 @@ editor: "W. G. Weeraratne"
 booktitle: "Encyclopaedia of Buddhism"
 volume: 7
 number: 4
-pages: "15--18"
+pages: "675--679"
 publisher: "The Department of Buddhist Affairs"
 address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/samma-ditthi.pdf"
