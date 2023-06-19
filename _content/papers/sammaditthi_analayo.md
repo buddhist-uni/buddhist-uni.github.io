@@ -1,5 +1,5 @@
 ---
-title: "Sammaditthi"
+title: "Sammādiṭṭhi"
 authors:
  - analayo
 editor: "W. G. Weeraratne"
@@ -16,7 +16,6 @@ drive_links:
 course: view
 tags:
   - path
-  - karma
   - vipassana
   - wise-attention
 ---
