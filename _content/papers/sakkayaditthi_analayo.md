@@ -1,5 +1,5 @@
 ---
-title: "Sakkayaditthi"
+title: "Sakkāyadiṭṭhi"
 authors:
  - analayo
 editor: "W. G. Weeraratne"
@@ -16,9 +16,8 @@ drive_links:
 course: view
 tags:
   - phenomenology
-  - origination
   - karma
-  - rebirth
+  - inner
 ---
 
-A brief summary of the of personhood in early Buddhism.
+A brief summary of personhood in early Buddhism.
