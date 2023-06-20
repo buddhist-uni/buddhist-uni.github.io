@@ -2,6 +2,7 @@ import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
 from strutils import input_with_prefill, prompt, system_open
 from gdrive import upload_to_google_drive, get_gfolders_for_course, create_drive_shortcut, DRIVE_LINK
+from archive_site import save_url_to_archiveorg
 
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
 NONSC_TRANSLATORS = [{
@@ -15,13 +16,21 @@ NONSC_TRANSLATORS = [{
   'author_short': 'Thanissaro',
   'author_uid': 'geoff',
   'author': "Thanissaro Bhikkhu",
-  'publication_date': "2009 # fake news!",
+  'publication_date': None,
   'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
 }
 ]
 
 def make_nonsc_url(website, book, nums):
-  return f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
+  url = f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
+  print("Testing nonSC URL to make sure it's legit...")
+  resp = requests.get(url)
+  if resp.ok:
+    print("Looks good!")
+  else:
+    print(f"ERROR: Constructed unGETable url \"{url}\"")
+    quit(1)
+  return url
 
 def command_line_args():
     parser = argparse.ArgumentParser(
@@ -89,6 +98,77 @@ def is_in_website(website, book, nums):
 def get_possible_trans(book, nums):
   return list(filter(lambda t: is_in_website(t['website_data'], book, nums), NONSC_TRANSLATORS))
 
+def get_geoff_source_url(trans, dturl, book, nums):
+  url = get_possible_geoff_source_url(trans, book, nums)
+  if url == "":
+    return ""
+  if not trans['publication_date']:
+    # fetch url to pull pub data
+    print("Trying to fetch ATI version for year...")
+    resp = requests.get(url)
+    if not resp.ok:
+      print(f"ERROR: Request failed unexpectedly with status {resp.status_code}")
+      quit(1)
+    if resp.text.find("<title>Lost in samsara</title>") >= 0:
+      print("ATI doesn't seem to have this sutta. Oh well.")
+      print("Trying the Wayback Machine...")
+      resp = requests.head("http://web.archive.org/web/1970/"+dturl)
+      if resp.ok:
+        m = re.search(" at ([12][90][0-9][0-9])", resp.headers['x-archive-redirect-reason'])
+        if not m:
+          print("Got unexpected Archive.org response:\n\t"+resp.headers['x-archive-redirect-reason'])
+          quit(1)
+        print("Got year: "+m.groups(0)[0])
+        trans['publication_date'] = f"{m.groups(0)[0]} # or earlier"
+      else:
+        print("Seems to have not been saved!")
+        save_url_to_archiveorg(dturl)
+      return ""
+    m = re.search("\[SOURCE_COPYRIGHT_YEAR\]=\{([12][90][0-9][0-9])\}", resp.text)
+    if not m:
+      m = re.search("\[ATI_YEAR\]=\{([12][90][0-9][0-9])\}", resp.text)
+    if not m:
+      print(f"ERROR: Couldn't find YEAR metadata in {url}")
+      quit(1)
+    print(f"Got year: {m.groups(0)[0]}")
+    trans['publication_date'] = m.groups(0)[0]
+  return f"\nsource_url: \"{url}\""
+
+def get_possible_geoff_source_url(trans, book, nums):
+  ret = ""
+  match book:
+    case "dn":
+      ret = f"dn/dn.{nums[0]:02d}.0.than.html"
+    case "mn":
+      ret = f"mn/mn.{nums[0]:03d}.than.html"
+    case "sn":
+      ret = f"sn/sn{nums[0]:02d}/sn{nums[0]:02d}.{nums[1]:03d}.than.html"
+    case "an":
+      ret = f"an/an{nums[0]:02d}/an{nums[0]:02d}.{nums[1]:03d}.than.html"
+    case "ud":
+      trans['publication_date'] = 2012
+      ret = f"kn/ud/ud.{nums[0]}.{nums[1]:02d}.than.html"
+    case "snp":
+      ret = f"kn/snp/snp.{nums[0]}.{nums[1]:02d}.than.html"
+    case "iti":
+      trans['publication_date'] = 2001
+      num = int(nums[0])
+      ret = "kn/iti/iti."
+      if num <= 27:
+        ret += f"1.001-027.than.html#iti-{num:03d}"
+      elif num <= 49:
+        ret += f"2.028-049.than.html#iti-0{num}"
+      elif num <= 99:
+        ret += f"3.050-099.than.html#iti-0{num}"
+      else:
+        ret += f"4.100-112.than.html#iti-{num}"
+    case _:
+      print(f"WARNING: Haven't implemented Geoff logic for {book} yet! :(")
+      return ""
+  if ret == "":
+    return ""
+  return "https://accesstoinsight.org/tipitaka/" + ret
+
 def process_pdf(pdf_file):
   print(f"Processing {pdf_file}...")
   pdf_file = Path(pdf_file)
@@ -115,9 +195,11 @@ def process_pdf(pdf_file):
   transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(nonsc_trans)))
   if transidx < len(en_trans):
     trans = en_trans[transidx]
+    external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
   transidx -= len(en_trans)
   if transidx >= 0:
     trans = nonsc_trans[transidx]
+    external_url = make_nonsc_url(trans['website_data'], book, nums)
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
@@ -132,10 +214,13 @@ def process_pdf(pdf_file):
     drive_links = "hidden_links"
   slugfield = slug
   extra_fields = ""
+  if trans['author_uid'] == 'geoff':
+    extra_fields = get_geoff_source_url(trans, external_url, book, nums)
   if book in ['sn', 'iti', 'snp', 'thig', 'thag', 'ud']:
     if prompt("Is this poetry?", "n"):
       extra_fields = f"""
 subcat: poetry{extra_fields}"""
+    print("Alright")
   match book:
     case "dn":
       slugfield = f"dn{nums[0]:02d}"
@@ -164,16 +249,12 @@ subcat: poetry{extra_fields}"""
     case _:
       print(f"Haven't yet implemented slug logic for {book}")
       quit(1)
-  if transidx < 0:
-    external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
-  else:
-    external_url = make_nonsc_url(trans['website_data'], book, nums)
   year = trans['publication_date']
   if not year:
     if trans['author_uid'] == 'sujato':
       year = "2018"
     else:
-      year = input_with_prefill("year: ", "19")
+      year = input_with_prefill("year: ", "2010 # a wild guess")
   if not pages:
     pages = input("pages: ")
   print(f"Attempting to upload \"{filename}\" to Google Drive...")

@@ -1,0 +1,17 @@
+---
+title: "Ud 1.4 Huṁhuṅka Sutta: Whiny"
+translator: sujato
+slug: "ud1.4"
+subcat: poetry
+external_url: "https://suttacentral.net/ud1.4/en/sujato"
+drive_links:
+  - "https://drive.google.com/file/d/1IRtD78jKv_PnFyPXkc1PVQzXlXaXvZ0R/view?usp=drivesdk"
+course: speech
+tags:
+  - canonical-poetry
+  - ud
+year: 2018
+pages: 1
+---
+
+> what are the things that make one a brahmin?

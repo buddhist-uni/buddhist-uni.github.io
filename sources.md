@@ -104,4 +104,5 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Pressbooks](https://pressbooks.directory/)
 * [OpenStax](https://openstax.org/subjects)
 * [punctum books](https://punctumbooks.com/)
+* [The National Academies](https://www.nationalacademies.org/publications)
 </div>
