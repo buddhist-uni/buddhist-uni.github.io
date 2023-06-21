@@ -9,6 +9,7 @@ course: nepalese
 tags:
   - sociology
   - things
+  - himalayas
 year: 2022
 month: dec
 publisher: nbn

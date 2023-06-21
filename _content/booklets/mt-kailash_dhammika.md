@@ -12,7 +12,6 @@ tags:
   - setting
   - tibetan
   - himalayas
-  - central-asia
   - geology
   - world
 olid: OL32066674M

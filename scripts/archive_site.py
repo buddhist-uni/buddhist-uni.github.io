@@ -6,16 +6,14 @@ import json
 import time
 import os
 import xml.etree.ElementTree as XML
-try:
-  import tqdm
-except:
-  print("  pip install tqdm")
-  quit(1)
+ARCHIVE_ORG_AUTH_FILE = '~/archive.org.auth'
 
-# Must be in the format "LOW {accesskey}:{secretkey}"
-# Get your keys here: https://archive.org/account/s3.php
-ARCHIVE_ORG_AUTH_FILE = Path(os.path.expanduser('~/archive.org.auth'))
-ARCHIVE_ORG_AUTH = ARCHIVE_ORG_AUTH_FILE.read_text()
+ARCHIVE_ORG_AUTH_PATH = Path(os.path.expanduser(ARCHIVE_ORG_AUTH_FILE))
+if ARCHIVE_ORG_AUTH_PATH.exists():
+  ARCHIVE_ORG_AUTH = ARCHIVE_ORG_AUTH_PATH.read_text()
+else:
+  print(f"Please make a new {ARCHIVE_ORG_AUTH_FILE} text file and put in it the information from https://archive.org/account/s3.php in the following format: \"LOW <accesskey>:<secretkey>\"")
+  quit(1)
 
 SITEMAP_NAMESPACE = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
@@ -52,8 +50,12 @@ def save_url_to_archiveorg(url):
     return False
 
 if __name__ == "__main__":
-  from tqdm import tqdm, trange
-  skip_past = "https://buddhistuniversity.net/authors/gross-rita"
+  try:
+    from tqdm import tqdm, trange
+  except:
+    print("  pip install tqdm")
+    quit(1)
+  skip_past = "Last successful URL"
   urls = list(all_urls_in_website("https://buddhistuniversity.net"))
   def wait_secs(n):
     print(f"Waiting {n} seconds...")

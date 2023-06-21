@@ -17,8 +17,8 @@ GIT
 
 GIT
   remote: https://github.com/buddhist-uni/jekyll-seo-tag.git
-  revision: 644037c4bdc815bbd973bb2aad139428d0a2eea7
-  ref: 644037c
+  revision: 9d3cf620ed53cc2b0d0f5a6cefffed2aeb34289b
+  ref: 9d3cf62
   specs:
     jekyll-seo-tag (2.7.1)
       jekyll (>= 3.8, < 5.0)
@@ -37,9 +37,9 @@ GEM
     eventmachine (1.2.7)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.23.1)
+    google-protobuf (3.23.3)
     http_parser.rb (0.8.0)
-    i18n (1.13.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     jekyll (4.3.2)
       addressable (~> 2.4)
@@ -88,11 +88,11 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (4.1.1)
+    rouge (4.1.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.62.1)
-      google-protobuf (~> 3.21)
-      rake (>= 10.0.0)
+    sass-embedded (1.63.5)
+      google-protobuf (~> 3.23)
+      rake (>= 13.0.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     unicode-display_width (2.4.2)
@@ -115,4 +115,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.4.6
+   2.4.10
