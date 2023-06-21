@@ -20,4 +20,6 @@ tags:
   - climate-change
 minutes: 6
 ---
-In this short clip, Karine Gagné talks about the changing landscape of Ladakh mainly due to the various military exchanges and climate flucuations. All of these cahnges have made it difficult for the local people, farmers and herders, to thrive.
+
+In this short clip, Karine Gagné talks about the changing landscape of Ladakh mainly due to the various military exchanges and climate fluctuations.
+All of these changes have made it difficult for the local people, farmers and herders, to thrive.
