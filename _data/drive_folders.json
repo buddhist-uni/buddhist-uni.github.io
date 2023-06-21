@@ -67,6 +67,10 @@
   "private": "https://drive.google.com/drive/folders/1Bf7XfBFL7G152-Aw1cjTErZ2IR3pu2O_",
   "public": "https://drive.google.com/drive/folders/1--gofqLr9HDCwoGVYU88WbzDVaYYEGcJ"
  },
+ "future": {
+  "private": "https://drive.google.com/drive/folders/1GVXaFYW5Q4lZSo51lu6Z5gEXBy8PUyt5",
+  "public": "https://drive.google.com/drive/folders/1U7bngJmaIPVlV41fvqEQUKoKDblvUN2F"
+ },
  "groups": {
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
   "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
@@ -118,6 +122,10 @@
  "pilgrimage": {
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
   "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G"
+ },
+ "places": {
+  "private": "https://drive.google.com/drive/folders/1CrvHBlXyF4FGFqFqSbJh7NfCR2Mix5-e",
+  "public": "https://drive.google.com/drive/folders/1K_7u0vaUVl0NVQs7I9v-4kvkZM1mAQGP"
  },
  "problems": {
   "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0",
