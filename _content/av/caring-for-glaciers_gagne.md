@@ -1,5 +1,5 @@
 ---
-title: "Caring for Glaciers"
+title: "Caring for the Land in Ladakh"
 authors:
   - "Karine Gagné"
 drive_links:
@@ -12,14 +12,14 @@ course: nature
 year: 2019
 month: nov
 tags:
+  - present
   - agriculture
   - pastoralism
-  - landscape
-  - sustainability
+  - inner-asia
   - himalayas
-  - climate-change
 minutes: 6
 ---
 
-In this short clip, Karine Gagné talks about the changing landscape of Ladakh mainly due to the various military exchanges and climate fluctuations.
-All of these changes have made it difficult for the local people, farmers and herders, to thrive.
+> Whatever the hardship, one should never abandon their land or their animals.
+
+On how the modernization of the Kashmiri economy is experienced as a _moral_ disruption by the agropastoralists of Ladakh.
