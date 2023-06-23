@@ -4,8 +4,9 @@ input_file = "urls.txt"
 output_file = "filteredurls.txt"
 
 # Regular expression patterns
-exclude_pattern = r"https?://(web\.)?archive\.org"
-include_pattern = r"(https?://(?!.*archive\.org)\S*?(\.html?|\.mp3|\.pdf)|https?://\S*?/download\S*)"
+archive_org = r"https?://(web\.)?archive\.org"
+dropbox = r"https?://(www\.)?dropbox\.com"
+include_pattern = r"(https?://(?!.*archive\.org)\S*?(\.html?|\.mp3|\pdf)|https?://\S*?/download\S*)"
 
 # Set to store unique URLs
 unique_urls = set()
@@ -14,8 +15,8 @@ unique_urls = set()
 with open(input_file, "r") as f_in:
     # Read each line from the input file
     for line in f_in:
-        # Exclude URLs matching the exclude pattern
-        if re.search(exclude_pattern, line):
+        # Exclude URLs matching the exclude patterns
+        if re.search(dropbox, line) or re.search(archive_org, line):
             continue
 
         # Find the URLs matching the include pattern

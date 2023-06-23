@@ -1,0 +1,19 @@
+---
+title: "Climate Change and Ecosystems"
+authors:
+  - "The National Academy of Sciences"
+  - "The Royal Society"
+external_url: "https://nap.nationalacademies.org/25504"
+drive_links:
+  - "https://drive.google.com/file/d/1PR6GhWnppoIf8DM8NiIhX8Hg8Zorf_Xx/view?usp=drivesdk"
+course: wider
+tags:
+  - natural
+year: 2019
+olid: OL48573959M
+publisher: "National Academies Press"
+address: "Washington D. C."
+pages: 28
+---
+
+A short and definitive introduction to the science of ecology under global warming.

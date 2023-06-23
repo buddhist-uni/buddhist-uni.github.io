@@ -63,6 +63,10 @@
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT",
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_"
  },
+ "food": {
+  "private": "https://drive.google.com/drive/folders/1-_WRVmoQvnBuTaIIwyhZtcAZ_HYfDbPq",
+  "public": "https://drive.google.com/drive/folders/15-pCmfm7_2Y0LV4rDv8Nu1jx1uVhwZB3"
+ },
  "form": {
   "private": "https://drive.google.com/drive/folders/1BbDzkS35-1iw5omhBhJze9EA3i2VmQG1",
   "public": "https://drive.google.com/drive/folders/1-1O5_oyfnmgA9HKyPFykxHKYlTEQr7CD"
@@ -139,6 +143,10 @@
   "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG",
   "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U"
  },
+ "state": {
+  "private": "https://drive.google.com/drive/folders/159o1bq04DRMMbF4vLuIjz2r47xrSpsqK",
+  "public": "https://drive.google.com/drive/folders/1L7kkMipRUwgQIlb3Jorwao5pPz__qZPs"
+ },
  "theravada": {
   "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA",
   "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8"
@@ -166,6 +174,10 @@
  "west": {
   "private": "https://drive.google.com/drive/folders/1-Gu_Bu38mBsIP7-nfZ-8Twk45andzHyF",
   "public": "https://drive.google.com/drive/folders/10p_kHWFRy6JqfGHi8mhIhbGwx8-gDf7S"
+ },
+ "wider": {
+  "private": "https://drive.google.com/drive/folders/1IAkVeFb5RwR5nZyw8IE7eVoQ82gB1zMj",
+  "public": "https://drive.google.com/drive/folders/1I2ItDgYOKOlT5WENwgZlgc3YXeym60O3"
  },
  "world": {
   "private": "https://drive.google.com/drive/folders/1I7MwmV6dCFuuT4EzYkwtfdpZRqMBpk_e",
