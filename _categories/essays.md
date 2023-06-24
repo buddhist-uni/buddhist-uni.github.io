@@ -6,8 +6,6 @@ similars:
   - papers
   - excerpts
   - booklets
-subcats:
-  - poetry
 ---
 
 Essays are short pieces of writing that were published independently, for example on a blog.

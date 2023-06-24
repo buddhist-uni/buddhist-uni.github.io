@@ -1,8 +1,11 @@
 <tr>
 {% assign catcon = site.content | where: "category", include.category %}
+{% assign poetrycon = catcon | where: "subcat", "poetry" %}
 {% assign category =  site.categories | find: "slug", include.category %}
 <td>{% include_cached content_icon.html category=include.category %} <a href="{{ category.url }}">{{ category.title }}</a>
-{% if category.subcats %}<ul>{% for subcat in category.subcats %}
+{% if category.subcats or poetrycon.size > 0 %}<ul>{% if poetrycon.size > 0 %}
+<li style="list-style:none;">{% include_cached content_icon.html subcat="poetry" %} <a href="/search/?q=%2Bis%3Apoetry&filter=%2Bin%3A{{ include.category }}">poetry</a> ({{ poetrycon | size }})</li>
+{% endif %}{% for subcat in category.subcats %}
 <li style="list-style:none;">{% include_cached content_icon.html category=include.category subcat=subcat %} <a href="/search/?q=%2Bis%3A{{ subcat }}">{{ subcat }}</a> ({{ catcon | where: "subcat", subcat | size }})</li>
 {% endfor %}</ul>{% endif %}
 </td>
