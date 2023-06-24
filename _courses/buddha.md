@@ -7,7 +7,7 @@ big_image: "https://github.com/buddhist-uni/big_imgs/raw/main/banners/courses/di
 big_width: 2415
 big_height: 1274
 image_width: 2415
-banner_info: <a href="https://commons.wikimedia.org/wiki/File:Ascetic_Sumedha_and_Dipankara_Buddha.jpg">Hintha</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
+banner_info: Hintha, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE
 description: "A thorough tour of the Pāli texts which report the Buddha's character, accomplishments, life, and history."
 epigraph: |

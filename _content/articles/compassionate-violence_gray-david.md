@@ -2,7 +2,7 @@
 title: "Compassionate Violence?: On the Ethical Implications of Tantric Buddhist Ritual"
 authors:
   - "David B. Gray"
-source_url: "https://blogs.dickinson.edu/buddhistethics/2010/05/10/ethical-implications-of-tantric-buddhist-ritual/"
+source_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/gray-article.pdf"
 drive_links:
   - "https://drive.google.com/file/d/17NyzeJ75Ytyy-6oXcfXGp-aq02vX4si4/view?usp=drivesdk"
 course: tantric

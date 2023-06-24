@@ -7,7 +7,7 @@ tags:
   - setting
   - interfaith
 olid: OL6859744M
-external_url: "https://archive.org/download/EarlyBuddhistTheoryOfKnowledge/Early%20Buddhist%20Theory%20of%20Knowledge.pdf"
+external_url: "https://archive.org/details/EarlyBuddhistTheoryOfKnowledge"
 drive_links:
   - "https://drive.google.com/file/d/1h86ckmJRXx6HW4n9pcAXJiuzSr1es5K8/view?usp=drivesdk"
 year: 1963

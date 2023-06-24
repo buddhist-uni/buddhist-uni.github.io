@@ -8,7 +8,7 @@ pages: "107--125"
 publisher: mit
 year: 2019
 month: apr
-external_url: "https://direct.mit.edu/books/chapter-pdf/270049/9780262352031_cbp.pdf"
+external_url: "https://direct.mit.edu/books/book/chapter-pdf/2089535/9780262352031_cbp.pdf"
 hidden_links:
  - "https://drive.google.com/file/d/1jR1fMMGf-Fwji3LNvfPIFF25eYxq2uOi/view?usp=drivesdk"
 course: sex
