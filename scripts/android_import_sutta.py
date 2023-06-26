@@ -271,7 +271,7 @@ subcat: poetry{extra_fields}"""
   title = title.replace('"', '\\"')
   mdfile.write_text(f"""---
 title: "{title}"
-translator: {trans['author_uid'].replace('thanissaro','geoff')}
+translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','')}
 slug: "{slugfield}"{extra_fields}
 external_url: "{external_url}"
 {drive_links}:

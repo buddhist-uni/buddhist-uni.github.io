@@ -74,7 +74,7 @@ def save_url_to_archiveorg(url):
     return False
 
 def archive_urls(urls, skip_urls_archived_in_last_days=365):
-  successes = 0
+  successes = []
   def wait_secs(n):
     print(f"Waiting {n} seconds...")
     for i in trange(n):
@@ -99,17 +99,20 @@ def archive_urls(urls, skip_urls_archived_in_last_days=365):
       consecutive_failures += 1
       wait_secs(60)
       if save_url_to_archiveorg(url):
-        successes += 1
+        successes.append(url)
         consecutive_failures = 0
       else:
         consecutive_failures += 1
     else:
-      successes += 1
+      successes.append(url)
       consecutive_failures = 0
     if consecutive_failures > 5:
       print("ERROR: This doesn't seem to be working...")
       quit(1)
     wait_secs(5)
+  print(f"Saved {len(successes)} URLs:")
+  for url in successes:
+    print(f"  {url}")
   return successes
 
 if __name__ == "__main__":
