@@ -16,6 +16,7 @@ NYRB_ALT = "S4306476742"
 PLATO    = "S2737990715"
 JJRS     = "S120086578"
 JCB      = "S107624032"
+JOCBS    = "S2764611450"
 
 # from OA to OBU IDs
 slugs = {
@@ -25,6 +26,7 @@ slugs = {
   JGB: "jgb",
   JJRS: "jjrs",
   JCB: "jcb",
+  JOCBS: "jocbs",
   IJDS: "ijds",
   HIJBS: "hijbs",
   JBE: "jbe",

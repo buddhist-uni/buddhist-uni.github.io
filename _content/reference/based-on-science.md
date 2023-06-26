@@ -4,6 +4,7 @@ authors:
   - "The National Academies of Science Engineering and Medicine"
 external_url: "https://www.nationalacademies.org/based-on-science"
 course: world
+publisher: nap
 tags:
   - science
   - body
