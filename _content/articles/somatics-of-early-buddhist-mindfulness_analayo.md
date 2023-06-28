@@ -16,7 +16,7 @@ journal: "Mindfulness"
 volume: 11
 number: 6
 pages: "1520--1526"
-publisher: "Springer Science+Business Media"
+publisher: "Springer"
 openalexid: W3021248157
 ---
 

@@ -71,6 +71,10 @@
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT",
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_"
  },
+ "families": {
+  "private": "https://drive.google.com/drive/folders/1Bua_wnN2z1g4gv9dGr8L7v98fgXpM9Ax",
+  "public": null
+ },
  "food": {
   "private": "https://drive.google.com/drive/folders/1-_WRVmoQvnBuTaIIwyhZtcAZ_HYfDbPq",
   "public": "https://drive.google.com/drive/folders/15-pCmfm7_2Y0LV4rDv8Nu1jx1uVhwZB3"
@@ -107,9 +111,17 @@
   "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
   "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
  },
+ "migration": {
+  "private": "https://drive.google.com/drive/folders/1QGkiY9tuodOqJc2HVqmq2KgZYiUF3i4h",
+  "public": "https://drive.google.com/drive/folders/1gxyBc_StG08RjpqcYMeVkmpctbkt2Na_"
+ },
  "monastic": {
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",
   "public": "https://drive.google.com/drive/folders/10rt9JA35EUL4OmDTqPoOm8pnSceQVdZV"
+ },
+ "monastic-advice": {
+  "private": "https://drive.google.com/drive/folders/1_bi-GBSyVLSxe5Ar403RMuWQ64iNbWme",
+  "public": "https://drive.google.com/drive/folders/1_cmkHsPxVfBV737H5_-jZS4sGBFazEkG"
  },
  "mongolian": {
   "private": "https://drive.google.com/drive/folders/1-h0UAl2qoDG5TWA1siEQXRxMpC_Eoij9",
@@ -155,6 +167,10 @@
   "private": "https://drive.google.com/drive/folders/194KL_w7eLiqpg2_eN0Y5-hJDrzB2l2SR",
   "public": "https://drive.google.com/drive/folders/19UVSpr_ouC2rnoK8Hhcg-hN0Yv_EUUqx"
  },
+ "social": {
+  "private": "https://drive.google.com/drive/folders/1I8kQJMTjT_79aVtwa5RR0xXamscmet3L",
+  "public": "https://drive.google.com/drive/folders/1HxSx2Qcz3WhKBP7m3l4YTGaYGCGuTNF1"
+ },
  "speech": {
   "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG",
   "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U"
@@ -170,6 +186,10 @@
  "theravada-roots": {
   "private": "https://drive.google.com/drive/folders/15hWYGUU2zA1msiRYyIDFFdpExxYTHOmK",
   "public": "https://drive.google.com/drive/folders/1FJ7tLTKW4umYWe2yh--kbKKzkbsfz3t3"
+ },
+ "things": {
+  "private": "https://drive.google.com/drive/folders/1FXjio5RGERPYMWnfHMexfjx-vCaJkemh",
+  "public": "https://drive.google.com/drive/folders/1KtL3ufNi-W-4gQOb_HF6IwvL-3mxMJbj"
  },
  "thought": {
   "private": "https://drive.google.com/drive/folders/14XmICi7JCdedd3ewhQILQXhL-YcFi_Di",
@@ -198,5 +218,9 @@
  "world": {
   "private": "https://drive.google.com/drive/folders/1I7MwmV6dCFuuT4EzYkwtfdpZRqMBpk_e",
   "public": "https://drive.google.com/drive/folders/10eKEuCT3bgZAs4SnuLqzg7_oMYmI6s-k"
+ },
+ "writing": {
+  "private": "https://drive.google.com/drive/folders/1VaKky6FCaitlxEBsCHx9-eQLt6Jo5Y_o",
+  "public": "https://drive.google.com/drive/folders/1VgmzBc_D-45tvLI05ZyKuGiRTJxhoOnf"
  }
 }
