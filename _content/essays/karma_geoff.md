@@ -9,8 +9,7 @@ formats: [pdf]
 course: view 
 tags:
   - karma
-  - effort
 year: 2000
-pages: "3"
+pages: 3
 ---
 A brief overview of karma, especially its liberating potential over the mistaken view of predetermination.
