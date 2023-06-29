@@ -20,5 +20,8 @@ address: "Oxford"
 booktitle: "The fundamental wisdom of the middle way: Nāgārjuna's Mūlamadhyamakakārikā"
 pages: 12
 ---
-> By a misperception of emptiness a person of little intelligence is destroyed.
+
+> By a misperception of emptiness  
+A person of little intelligence is destroyed.
+
 A translation of a select seventy verses from Nāgārjuna's Mūlamadhyamakakārikā.
