@@ -20,7 +20,7 @@ journal: "Proceedings of the National Academy of Sciences of the United States o
 volume: 118
 number: 33
 pages: "1--9"
-publisher: "National Academy of Sciences"
+publisher: nap
 openalexid: W3192940159
 ---
 
