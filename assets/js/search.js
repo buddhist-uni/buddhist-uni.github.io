@@ -53,7 +53,6 @@
       setTitle(this.q);
       if (this.q != originalSearchTerm || this.filterquery != originalFilterValue) {
         window.history.pushState(this, "", nuri);
-        if (typeof ga != 'undefined') ga('send', 'pageview', { location: nuri });
         if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
         originalSearchTerm = this.q;
         originalFilterValue = this.filterquery;
