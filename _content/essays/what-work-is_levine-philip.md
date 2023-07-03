@@ -10,10 +10,9 @@ subcat: poetry
 tags:
   - america
   - meditation
-  - engaged
   - gender
-  - class
-  - problems
+  - labor
+  - compassion
 pages: 2
 ---
 

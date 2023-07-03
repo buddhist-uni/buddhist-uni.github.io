@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1M7d5NXKEdffwhUH4Vb6NgEIsH77Mgaaf/view?usp=drivesdk"
 course: problems
 tags:
-  - feelings
+  - feeling
   - doubt
   - an
 year: 2018

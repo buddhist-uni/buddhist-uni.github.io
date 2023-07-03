@@ -1,6 +1,7 @@
 ---
-title: "[Selected Verses from] Mulamadhyamakakarika"
+title: "[Selected Verses from the] Mulamadhyamakakarika"
 translator: garfield-jay
+authors: ["Rev. Yin Shun"]
 external_url: "https://aaari.info/notes/03-06-06Tam2.pdf"
 drive_links:
   - "https://drive.google.com/file/d/187T2v8GMkuY7rT6Rl7a_oeXXSWKLn7u3/view?usp=drive_link"
@@ -12,9 +13,8 @@ tags:
   - madhyamaka
   - mahayana
   - emptiness
-  - sects  
-editor: "Rev. Yin Shun"
-year: 1995 
+  - sects
+year: 1995
 publisher: oxford
 address: "Oxford"
 booktitle: "The fundamental wisdom of the middle way: Nāgārjuna's Mūlamadhyamakakārikā"

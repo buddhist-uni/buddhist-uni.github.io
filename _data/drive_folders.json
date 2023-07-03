@@ -39,6 +39,10 @@
   "private": "https://drive.google.com/drive/folders/1fOtpegAsyDkPGD8fEELbwHtPG_ab0hOk",
   "public": "https://drive.google.com/drive/folders/149gY1BelJlHzKlLP9pZuT9RPNQcnyChp"
  },
+ "characters": {
+  "private": "https://drive.google.com/drive/folders/1LxiUnQ8GafMqYfJeC68FTxQ8xeH4FbE7",
+  "public": "https://drive.google.com/drive/folders/11vO86SK9DGAbLdmZbQqlRqATwdIjDwni"
+ },
  "clothes": {
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
@@ -67,6 +71,10 @@
   "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ",
   "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm"
  },
+ "esl": {
+  "private": "https://drive.google.com/drive/folders/1AmbOXa3DqwfLOguExzURrxE2eoE6OEOu",
+  "public": "https://drive.google.com/drive/folders/1X9PeBe3TOYTyoUEzS3n4IALtf_iRq3BY"
+ },
  "ethics": {
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT",
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_"
@@ -90,6 +98,10 @@
  "future": {
   "private": "https://drive.google.com/drive/folders/1GVXaFYW5Q4lZSo51lu6Z5gEXBy8PUyt5",
   "public": "https://drive.google.com/drive/folders/1U7bngJmaIPVlV41fvqEQUKoKDblvUN2F"
+ },
+ "gender": {
+  "private": "https://drive.google.com/drive/folders/1FRKg7P0kT8Tzd2rPVLZauEWKAsb9v6RG",
+  "public": "https://drive.google.com/drive/folders/1kOMSQMEbcqc_bgf2iQ55adc0e8lrkMne"
  },
  "groups": {
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",

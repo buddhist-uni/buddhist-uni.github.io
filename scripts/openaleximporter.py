@@ -203,12 +203,11 @@ def make_library_entry_for_work(work, draft=False) -> str:
     fd.write('\n\n')
   return file_path
 
-def prompt_for_work() -> str:
-  query = ""
+def prompt_for_work(query) -> str:
   print("Type part of the name of the work, hit Tab to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
   SEARCH_ROOM = 5
   stdout_make_room(SEARCH_ROOM)
-  cout("Search> \033[s")
+  cout(f"Search> \033[s{query}")
   stdin = sys.stdin.fileno()
   old_settings = termios.tcgetattr(stdin)
   tty.setraw(stdin)
@@ -261,11 +260,12 @@ def prompt_for_work() -> str:
   finally:
     cout(f"\033[u\033[{SEARCH_ROOM}E\n")
     termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
-  return r['results'][i]['id'].split("/")[-1]
+  return (r['results'][i]['id'].split("/")[-1], query)
 
 def _main():
+  query = ""
   while True:
-    workid = prompt_for_work()
+    workid, query = prompt_for_work(query)
     with yaspin():
       work = fetch_work_data(workid)
     print_work(work)
