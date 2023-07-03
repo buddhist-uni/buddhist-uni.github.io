@@ -15,6 +15,7 @@ year: 2017
 month: jan
 journal: lions-roar
 address: "Halifax, Nova Scotia"
-pages: "7"
+pages: 7
 ---
-An explanation of what it means for a teaching to be Buddhist through the lens of the four seals 
+
+An explanation of what it means for a teaching to be Buddhist through the lens of the four seals.
