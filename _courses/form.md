@@ -390,6 +390,9 @@ While not representative of the diversity within each of the following "national
 
 {% include content_box.html category="av" slug="introduction-to-buddhist-art_smith-doug" %}
 
+{% include content_blurb.html category="av" slug="buddhism-and-shinto_breakfast-religion" %}
+- A short introduction to the history of Shinto and Buddhism in Japan.
+
 {% include content_blurb.html category="essays" slug="honen-waka-verse" %}
 - Many Pureland Buddhists have as their primary practice chanting the "nembutsu" of "Namu Amida Butsu" ("homage to Amitabha Buddha") in the hopes of being reborn in his Pure Land. 
 - Here we read twenty famous verses by Hōnen that reflect the depths of this practice.
@@ -420,6 +423,8 @@ While not representative of the diversity within each of the following "national
 ##### Robinson Chapter 11: Tibet
 
 {% include content_blurb.html category="av" slug="guru-rinpoche-prayer_choying" blurb="A Tibetan nun opens this lesson for us by singing a prayer to Guru Rinpoche." %}
+
+{% include content_blurb.html category="av" slug="tibetan-buddhism_breakfast-religion" blurb="A short introduction to Tibetan Buddhism" %}
 
 {% include content_blurb.html category="av" slug="drepung-loseling-buddha" blurb="A Tibetan monk shows us his temple's primary Buddha image, explaining the symbolism behind its gestures." %}
 

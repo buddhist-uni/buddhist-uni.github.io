@@ -3,9 +3,9 @@ title: "Bullshit Jobs"
 authors:
   - graeber-david
 external_url: "https://theanarchistlibrary.org/library/david-graeber-bullshit-jobs"
-course: becon
+course: labor
 tags:
-  - labor
+  - becon
   - business
   - present
 year: 2018
