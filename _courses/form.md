@@ -513,6 +513,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
+{% include content_blurb.html category="av" slug="buddhist-hells_breakfast-religion" %}
+- A taste of how Buddhist practices and beliefs are richer than the Western caricatures of them.
+
 {% include content_blurb.html category="av" slug="mindfulness-for-the-whole-family_kim-sumi" %}
 - What is it like to grow up in a Buddhist community? What does it take to _make_ a Buddhist community?
 
