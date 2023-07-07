@@ -1,5 +1,6 @@
 ---
 title: "A Map of Jambudīpa"
+subcat: map
 year: 2023
 external_url: "https://labs.buddhistuniversity.net/jambudipa_map"
 source_url: "https://discourse.suttacentral.net/t/is-there-a-nice-literary-map-of-early-buddhism/27301/114?u=khemarato.bhikkhu"

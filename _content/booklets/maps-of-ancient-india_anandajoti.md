@@ -1,5 +1,6 @@
 ---
 title: "Maps of Ancient Buddhist Asia"
+subcat: map
 authors:
   - anandajoti
 external_url: "https://bit.ly/ABT-MP"

@@ -203,6 +203,10 @@
   "private": "https://drive.google.com/drive/folders/159o1bq04DRMMbF4vLuIjz2r47xrSpsqK",
   "public": "https://drive.google.com/drive/folders/1L7kkMipRUwgQIlb3Jorwao5pPz__qZPs"
  },
+ "thai-forest": {
+  "private": "https://drive.google.com/drive/folders/1QB24T8R-SdjKS-wBA90y6LjfWoV1c5ZD",
+  "public": "https://drive.google.com/drive/folders/1-c5ndLHFbYsVA-pz-Fr5MmFWYbj0lneG"
+ },
  "theravada": {
   "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA",
   "public": "https://drive.google.com/drive/folders/10pRbRuJGlq9nPViAgJJelLt7rfRKlNZ8"
@@ -218,6 +222,10 @@
  "thought": {
   "private": "https://drive.google.com/drive/folders/14XmICi7JCdedd3ewhQILQXhL-YcFi_Di",
   "public": "https://drive.google.com/drive/folders/10m3PLa7dpPX0czTWEQPTJX9d5mNCfUcv"
+ },
+ "tibetan-roots": {
+  "private": "https://drive.google.com/drive/folders/1EeBj6okpScEbvRDXXr_9QMl5F1-fcD0K",
+  "public": "https://drive.google.com/drive/folders/12oz72_upzGOlFcNKrVuy4iYVhXsjsWPo"
  },
  "time": {
   "private": "https://drive.google.com/drive/folders/1FXkb4MdkM2E9CK1hvP7Fxm37f1MTUeWx",
@@ -238,6 +246,10 @@
  "wider": {
   "private": "https://drive.google.com/drive/folders/1IAkVeFb5RwR5nZyw8IE7eVoQ82gB1zMj",
   "public": "https://drive.google.com/drive/folders/1I2ItDgYOKOlT5WENwgZlgc3YXeym60O3"
+ },
+ "with-brahmins": {
+  "private": "https://drive.google.com/drive/folders/1Jzp_DAIs3h3cbCBPPUz8w3GyaEe1qI7f",
+  "public": null
  },
  "world": {
   "private": "https://drive.google.com/drive/folders/1I7MwmV6dCFuuT4EzYkwtfdpZRqMBpk_e",
