@@ -11,6 +11,10 @@
   "private": "https://drive.google.com/drive/folders/1XmdOa0vsdASEQUqGehr9gWYkER_M3f2E",
   "public": "https://drive.google.com/drive/folders/11Vw1aPuTWfqA3CX3rhKFA08xOSpmQkG1"
  },
+ "american": {
+  "private": "https://drive.google.com/drive/folders/1W2QuInFh3jdeTONTqd1ykf_2zP3fNz4q",
+  "public": "https://drive.google.com/drive/folders/11H_41aaoGlazBPm3Yp_YD48UcdnwfxGF"
+ },
  "asia": {
   "private": "https://drive.google.com/drive/folders/198TBBIt-uTixQgxzh0BPB-U8hWWjqM0z",
   "public": "https://drive.google.com/drive/folders/1LIR6PYyjfI2RXrAWkZ-IwckrsOx1DHLf"
@@ -35,6 +39,10 @@
   "private": "https://drive.google.com/drive/folders/1hoOjASlXmF4Gab56vJp6hgnvE8QjLcXI",
   "public": "https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf"
  },
+ "burmese": {
+  "private": "https://drive.google.com/drive/folders/1FfFWmY3_ipIKn8h_svWMEwE_RLrZY_rq",
+  "public": "https://drive.google.com/drive/folders/11XmV4DuEbY7Ah5R88_JjqzSvOz5tSIQm"
+ },
  "chan-lit": {
   "private": "https://drive.google.com/drive/folders/1fOtpegAsyDkPGD8fEELbwHtPG_ab0hOk",
   "public": "https://drive.google.com/drive/folders/149gY1BelJlHzKlLP9pZuT9RPNQcnyChp"
@@ -42,6 +50,10 @@
  "characters": {
   "private": "https://drive.google.com/drive/folders/1LxiUnQ8GafMqYfJeC68FTxQ8xeH4FbE7",
   "public": "https://drive.google.com/drive/folders/11vO86SK9DGAbLdmZbQqlRqATwdIjDwni"
+ },
+ "chinese": {
+  "private": "https://drive.google.com/drive/folders/12EJSMgN8qSJgfR_hDbn-WZgKJG2FgIxk",
+  "public": "https://drive.google.com/drive/folders/10wy41zZvx4S2iKDtO8WdHGingJY224Gj"
  },
  "cities": {
   "private": "https://drive.google.com/drive/folders/1DcakLSKHtpZUeDlEmUhq7YHYIdc4Yt0r",
@@ -87,6 +99,10 @@
   "private": "https://drive.google.com/drive/folders/1Bua_wnN2z1g4gv9dGr8L7v98fgXpM9Ax",
   "public": null
  },
+ "feeling": {
+  "private": "https://drive.google.com/drive/folders/1J_su5UhzgQLO4cF-jWQDXRjBMdUxBUfG",
+  "public": "https://drive.google.com/drive/folders/1KC2dxZyV-f9K0qaX2kXivZ-JaYh_eEhW"
+ },
  "food": {
   "private": "https://drive.google.com/drive/folders/1-_WRVmoQvnBuTaIIwyhZtcAZ_HYfDbPq",
   "public": "https://drive.google.com/drive/folders/15-pCmfm7_2Y0LV4rDv8Nu1jx1uVhwZB3"
@@ -123,6 +139,10 @@
   "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw",
   "public": null
  },
+ "internet": {
+  "private": "https://drive.google.com/drive/folders/1-RvAEcAnULO34CZluB_2pFoN_CVCbLVd",
+  "public": null
+ },
  "karma": {
   "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
   "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
@@ -130,6 +150,10 @@
  "labor": {
   "private": "https://drive.google.com/drive/folders/1O6-X1wUK4Ja3tV_T1QukEI4z1DN_8TkA",
   "public": null
+ },
+ "mahayana-roots": {
+  "private": "https://drive.google.com/drive/folders/12TNuqwLXrzeH0oGB5Wx1aI0HP7-BOGgr",
+  "public": "https://drive.google.com/drive/folders/10uCuB-WfgLwOoBd1ZJVMOsHN3F1rjxiM"
  },
  "meditation": {
   "private": "https://drive.google.com/drive/folders/1-Q5426IBgx2h-guzI5RHoc5PmYah3Ucd",
