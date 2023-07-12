@@ -65,7 +65,7 @@ div.post-content {
             font-size: 150%;
             line-height: 75%;
         }
-        p:after {
+        > :last-child:after {
             content: "”";
             font-size: 150%;
             line-height: 75%;

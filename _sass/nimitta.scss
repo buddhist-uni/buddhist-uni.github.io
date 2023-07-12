@@ -16,6 +16,8 @@ header.site-header {
     border: none;
     .wrapper {
         max-width: 100%;
+        padding-bottom: 3px;
+        backdrop-filter: blur(0.3px);
     }
     .site-nav-links {
         float: right;
@@ -302,7 +304,7 @@ div.content_box blockquote {
         font-size: 133%;
         line-height: 75%;
     }
-    p:after {
+    > :last-child:after {
         content: "”";
         font-size: 133%;
         line-height: 75%;
