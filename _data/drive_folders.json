@@ -227,6 +227,10 @@
   "private": "https://drive.google.com/drive/folders/115ywoNILqwwLktf3PStavMNKYsIhEfxG",
   "public": "https://drive.google.com/drive/folders/1M92lt7BCYJ0YxwCMkyaHElXLddW4kt2U"
  },
+ "stages": {
+  "private": "https://drive.google.com/drive/folders/119ct_-qv582dWaTdLmfNRx89bOEE8wRC",
+  "public": null
+ },
  "state": {
   "private": "https://drive.google.com/drive/folders/159o1bq04DRMMbF4vLuIjz2r47xrSpsqK",
   "public": "https://drive.google.com/drive/folders/1L7kkMipRUwgQIlb3Jorwao5pPz__qZPs"
@@ -234,6 +238,10 @@
  "thai-forest": {
   "private": "https://drive.google.com/drive/folders/1QB24T8R-SdjKS-wBA90y6LjfWoV1c5ZD",
   "public": "https://drive.google.com/drive/folders/1-c5ndLHFbYsVA-pz-Fr5MmFWYbj0lneG"
+ },
+ "the-west": {
+  "private": "https://drive.google.com/drive/folders/1aBcAZij5n1c9aY8JFeQyzW7slSlosCnJ",
+  "public": null
  },
  "theravada": {
   "private": "https://drive.google.com/drive/folders/1--uH6Fuh_hYMCwLi5TQ3RKJNDrszTWMA",
