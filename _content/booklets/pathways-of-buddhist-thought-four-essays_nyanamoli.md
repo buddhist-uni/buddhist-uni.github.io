@@ -1,23 +1,25 @@
 ---
-title: "Pathways of Buddhist Thought Four Essays"
+title: "Pathways of Buddhist Thought: Four Essays"
 authors:
   - nyanamoli
-external_url: "https://www.bps.lk/olib/wh/wh052_Nyanamoli_Pathways-Of-Buddhist-Thought--Four-Essays.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh052_Nyanamoli_Pathways-Of-Buddhist-Thought--Four-Essays.html"
 drive_links:
   - "https://drive.google.com/file/d/10nsDXmod0VTuhqKjpj7fOKUrKc_-U9-e/view?usp=sharing"
+  - "https://drive.google.com/file/d/1AVDLjlcrasmBvA01FLJjTFvt-yIxsTHh/view?usp=drive_link"
 formats: [pdf]
-course: thought
+course: view
 tags:
   - saddha
-  - cessation
+  - function
   - consciousness
 year: 1963
 publisher: bps
 address: "Kandy"
-series: "The Wheel"
-pages: 67
+series: wheel
+pages: 30
 ---
 
-> Is Buddhism a religion or philosophy? Would the reader not like to deal with this for himself?
+> Religion tends to rely upon faith alone, and philosophy on understanding alone.
+> But the Buddha, in his teaching of the Truths, stresses the even balancing of five faculties: faith, energy, mindfulness, concentration, and understanding
 
 These four essays serve as a stimulating introduction to important aspects of Buddhist thought, i.e. the eightfold noble path, faith and its purpose, cessation, and consciouness.
