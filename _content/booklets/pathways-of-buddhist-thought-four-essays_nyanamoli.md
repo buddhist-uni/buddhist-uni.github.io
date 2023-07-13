@@ -6,7 +6,6 @@ external_url: "https://www.bps.lk/olib/wh/wh052_Nyanamoli_Pathways-Of-Buddhist-T
 drive_links:
   - "https://drive.google.com/file/d/10nsDXmod0VTuhqKjpj7fOKUrKc_-U9-e/view?usp=sharing"
   - "https://drive.google.com/file/d/1AVDLjlcrasmBvA01FLJjTFvt-yIxsTHh/view?usp=drive_link"
-formats: [pdf]
 course: view
 tags:
   - saddha
