@@ -1,4 +1,5 @@
 from gdrive import *
+from strutils import input_with_tab_complete
 
 clientsecrets = Path("~/library-utils-client-secret.json")
 
@@ -26,6 +27,12 @@ def move_gfile(glink, course):
   print("Done!")
 
 if __name__ == "__main__":
-  glink = input("Google Drive Link: ")
-  course = input("course: ")
-  move_gfile(glink, course)
+  glinks = []
+  while True:
+    glink = input("Google Drive Link (None to continue): ")
+    if not glink:
+      break
+    glinks.append(glink)
+  course = input_with_tab_complete("course: ", get_known_courses())
+  for glink in glinks:
+    move_gfile(glink, course)

@@ -27,6 +27,10 @@
   "private": "https://drive.google.com/drive/folders/1ZJZmELY1okW8okorjfBTpztEbyl3v3ih",
   "public": "https://drive.google.com/drive/folders/11D09xk2DMgIMDAXTprM9SlgtrVsQ2NIO"
  },
+ "bodhisattva": {
+  "private": "https://drive.google.com/drive/folders/17rcx75yYPMgO2tsJKaL8j9Y-PFM6unwq",
+  "public": null
+ },
  "body": {
   "private": "https://drive.google.com/drive/folders/1JVjjKk1G54bzVeJR4Xa0fcA3oHqikPFK",
   "public": "https://drive.google.com/drive/folders/1KH_fXizokWIhkN8KU86_7UXSwSQMY7Y9"
@@ -38,6 +42,10 @@
  "buddhism": {
   "private": "https://drive.google.com/drive/folders/1hoOjASlXmF4Gab56vJp6hgnvE8QjLcXI",
   "public": "https://drive.google.com/drive/folders/1-zOQ53Le2uYZp6lCjuLZUA38H6zvlrzf"
+ },
+ "burma": {
+  "private": "https://drive.google.com/drive/folders/1EtpBV-PhOVgECSc6_j7EvKp_c7fXg77H",
+  "public": null
  },
  "burmese": {
   "private": "https://drive.google.com/drive/folders/1FfFWmY3_ipIKn8h_svWMEwE_RLrZY_rq",
@@ -130,6 +138,10 @@
  "groups": {
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
   "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
+ },
+ "inequality": {
+  "private": "https://drive.google.com/drive/folders/1OFrjY0Mv3fGmBOJe514HC5wYHiwx7PAa",
+  "public": null
  },
  "inner": {
   "private": "https://drive.google.com/drive/folders/1INOE8m2kQ_UbFmlAfibnd2YygLOTUel-",

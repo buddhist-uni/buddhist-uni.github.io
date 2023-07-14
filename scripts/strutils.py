@@ -49,6 +49,15 @@ def input_with_prefill(prompt, text, validator=None):
     readline.set_pre_input_hook()
     return result
 
+def input_with_tab_complete(prompt, typeahead_suggestions):
+    readline.set_completer(lambda text, state: (
+      [s for s in typeahead_suggestions if s.startswith(text)][state]
+))
+    readline.parse_and_bind('tab: complete')
+    ret = input(prompt)
+    readline.set_completer(None)
+    return ret
+
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
 

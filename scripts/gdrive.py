@@ -27,6 +27,10 @@ def link_to_id(link):
 def folderlink_to_id(link):
   return link if not link else link.replace(FOLDER_LINK_PREFIX, "")
 
+def get_known_courses():
+  gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
+  return list(filter(None, gfolders.keys()))
+
 def get_gfolders_for_course(course):
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
   if course not in gfolders:
