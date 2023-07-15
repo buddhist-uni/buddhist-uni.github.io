@@ -1,5 +1,5 @@
 ---
-title: "Self-Awareness, Self-Regulation, and Self-Transcendence (S-Art): A Framework for Understanding the Neurobiological Mechanisms of Mindfulness"
+title: "Self-Awareness, Self-Regulation, and Self-Transcendence (S-ART): A Framework for Understanding the Neurobiological Mechanisms of Mindfulness"
 authors:
   - "David R. Vago"
   - "David Silbersweig"
