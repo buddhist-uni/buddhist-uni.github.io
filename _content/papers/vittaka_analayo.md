@@ -17,8 +17,7 @@ course: thought
 tags:
   - jhana
   - imagery
-  - ethics
-  - reasoning
+  - meditation
 ---
 
-A summary of vittaka (reasoning), with special attention to its ethical perspective, pschological analysis, role in the jhanas, and the various imageries used to explain the term.
+A summary of vittaka (reasoning), with special attention to its ethical perspective, psychology, role in the jhanas, and the various images used to explain the term.
