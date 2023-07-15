@@ -1,6 +1,5 @@
 ---
-title: "How to Transform Sickness and Other
-Circumstances"
+title: "How to Transform Sickness and Other Circumstances"
 authors:
   - "Gyalsé Tokmé Zangpo"
 translator: "Adam Pearcey"
@@ -11,12 +10,11 @@ drive_links:
 formats: [pdf]
 course: thought
 tags:
-  - tibet
-  - mahayana
+  - problems
   - resilience
 year: 2007
 publisher: "Lotsawa House"
-pages: "2"
+pages: "1"
 ---
 
 > In response to a question from a Sakya geshé, asking what should be done in the event of sickness and the rest, I, the monk Tokmé, who discourses on the Dharma, set down these ways of bringing sickness and other circumstances onto the spiritual path.
