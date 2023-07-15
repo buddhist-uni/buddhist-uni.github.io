@@ -15,7 +15,7 @@ drive_links:
  - "https://drive.google.com/file/d/1tAocR6HJqtMp5nPcFyYRgdXPDenth-k9/view?usp=sharing"
 course: thought
 tags:
-  - investigation
+  - vipassana
 ---
 
-A brief summary of the vīmaṃsā, investigation.
+> the Buddha emphatically advised his disciples to become wise ones and "investigators"
