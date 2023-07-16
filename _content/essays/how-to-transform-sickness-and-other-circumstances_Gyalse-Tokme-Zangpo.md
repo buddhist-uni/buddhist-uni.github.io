@@ -11,10 +11,9 @@ formats: [pdf]
 course: thought
 tags:
   - problems
-  - resilience
 year: 2007
 publisher: "Lotsawa House"
-pages: "1"
+pages: 1
 ---
 
 > In response to a question from a Sakya geshé, asking what should be done in the event of sickness and the rest, I, the monk Tokmé, who discourses on the Dharma, set down these ways of bringing sickness and other circumstances onto the spiritual path.
