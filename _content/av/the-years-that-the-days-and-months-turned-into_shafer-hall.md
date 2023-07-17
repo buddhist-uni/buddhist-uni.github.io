@@ -21,5 +21,5 @@ number: 680
 minutes: 5
 ---
 
-> I was the angry one, and I was the sad one,
+> I was the angry one, and I was the sad one,  
 and I am the head shaking in wonder
