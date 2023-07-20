@@ -12,6 +12,7 @@ course: thought
 tags:
   - imagination
   - poetry
+  - ambulit
   - wider
 year: 2022
 month: may
@@ -23,3 +24,7 @@ minutes: 5
 
 > I was the angry one, and I was the sad one,  
 and I am the head shaking in wonder
+
+How "Buddhist" do you think this poem is?
+Can it be interpreted in multiple ways?
+How does it make you feel about the world?

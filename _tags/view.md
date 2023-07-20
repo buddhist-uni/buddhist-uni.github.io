@@ -10,7 +10,7 @@ illustration_width: 1337
 illustration_center_x: 94%
 illustration_center_y: 71%
 illustration_caption: >-
-  This Edo-period statue of Jizō carries a staff in his right hand and a jewel in his left, symbolizing the Bodhisattva's balance between compassion on one hand and emptiness on the other.
+  This Edo-period statue of Jizō carries a staff in his right hand and a jewel in his left, symbolizing the Bodhisattva's balance between viewing beings with compassion on one hand and as empty on the other.
   (Image courtesy of <a href="https://www.metmuseum.org/art/collection/search/44892">The Met</a>)
 image: https://illeakyw.sirv.com/Images/banners/Four_Heavenly_Messengers.jpg
 image_width: 1713

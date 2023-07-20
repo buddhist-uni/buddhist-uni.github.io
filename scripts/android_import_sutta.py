@@ -1,7 +1,7 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
-from strutils import input_with_prefill, prompt, system_open
-from gdrive import upload_to_google_drive, get_gfolders_for_course, create_drive_shortcut, DRIVE_LINK
+from strutils import input_with_prefill, prompt, system_open, input_with_tab_complete
+from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archive_site import save_url_to_archiveorg
 
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
@@ -205,7 +205,7 @@ def process_pdf(pdf_file):
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}: {eng_name}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
-  course = input("course: ")
+  course = input_with_tab_complete("course: ", get_known_courses())
   folder_id, shortcut_folder = get_gfolders_for_course(course)
   drive_links = "drive_links"
   if shortcut_folder and not folder_id:

@@ -21,7 +21,7 @@ illustration_center_y: 25%
 illustration_caption: >-
   A contemplative statue of Maitreya: the future Buddha.
   In Buddhism, "Right" thought is defined by its intentionality: the kinds of words, deeds, and life such thinking leads to.
-  (Japanese Bronze, c. 7th c. Photo courtesy of <a href="https://commons.wikimedia.org/wiki/File:original.jpg">The Cleveland Museum of Art</a>)
+  (Japanese Bronze, c. 7th c. Photo courtesy of <a href="https://pin.it/1h4JQqZ">The Cleveland Museum of Art</a>)
 ---
 
 Thoughts of renunciation, good will, and harmlessness.
