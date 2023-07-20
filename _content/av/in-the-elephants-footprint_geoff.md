@@ -8,14 +8,12 @@ drive_links:
 formats: [mp3]
 course: view
 tags:
-  - dukkha
-  - craving
-  - sutta
-  - four-noble-truths
-  - three-characteristics
+  - thought
+  - vipassana
+  - desire
 year: 2018
 month: apr
 minutes: 36
 ---
 
-A detailed look a the Four Noble Truths and the three characteristics, and how they apply to a practitioner's daily life.
+A detailed look a the Four Noble Truths and the three characteristics, and how they apply to the practitioner's life.
