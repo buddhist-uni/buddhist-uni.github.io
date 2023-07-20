@@ -9,8 +9,8 @@ tags:
   - ethics
   - conflict
   - engaged
-  - thought
   - chaplaincy
+  - dialogue
   - anger
 pages: 120
 ---

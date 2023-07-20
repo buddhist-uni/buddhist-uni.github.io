@@ -13,8 +13,6 @@ month: nov
 publisher: amaravati
 course: nibbana
 tags:
-  - view
-  - thai-forest
   - chah
 pages: 355
 ---

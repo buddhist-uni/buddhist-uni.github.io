@@ -10,7 +10,6 @@ status: featured
 tags:
   - biology
   - khandha
-  - thought
   - problems
   - emotions
   - power
