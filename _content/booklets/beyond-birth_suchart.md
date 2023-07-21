@@ -17,4 +17,4 @@ address: Bangkok
 pages: 310
 ---
 
-> when thereʼs fuel, fire will keep burning until thereʼs nothing left
+> … when thereʼs fuel, fire will keep burning until thereʼs nothing left

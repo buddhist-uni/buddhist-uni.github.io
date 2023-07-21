@@ -18,4 +18,4 @@ tags:
   - vipassana
 ---
 
-> the Buddha emphatically advised his disciples to become wise ones and "investigators"
+> … the Buddha emphatically advised his disciples to become wise ones and "investigators"

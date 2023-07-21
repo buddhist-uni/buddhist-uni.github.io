@@ -18,4 +18,4 @@ number: 17
 pages: 141
 ---
 
-> an overview of the main stylistic features of early Buddhist sutras and the organizational principles employed in the formation of textual collections of sutras that support the idea of these texts and collections being transmitted as fixed entities and the ways in which such texts changed and were changed over time
+> … an overview of the main stylistic features of early Buddhist sutras and the organizational principles employed in the formation of textual collections of sutras that support the idea of these texts and collections being transmitted as fixed entities and the ways in which such texts changed and were changed over time

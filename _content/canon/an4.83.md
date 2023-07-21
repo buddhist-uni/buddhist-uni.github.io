@@ -13,6 +13,6 @@ year: 2018
 pages: 1
 ---
 
-> don’t arouse faith in things that are dubious
+> … don’t arouse faith in things that are dubious
 
 On the importance (!) of judgement.

@@ -16,5 +16,5 @@ pages: "135--154"
 openalexid: W2326695167
 ---
 
-> the controversial basis for such identification, the tomb’s now-vanished inscription of “shēlì 猞猁,” resulted from an unverifiable reading by a local archaeologist working under adverse conditions and an unqualified confirmation ... distorting the picture of early Buddhism and its material culture in China.
+> … the controversial basis for such identification, the tomb’s now-vanished inscription of “shēlì 猞猁,” resulted from an unverifiable reading by a local archaeologist working under adverse conditions and an unqualified confirmation ... distorting the picture of early Buddhism and its material culture in China.
 

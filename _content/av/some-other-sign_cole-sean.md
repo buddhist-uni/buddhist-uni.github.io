@@ -19,7 +19,7 @@ status: featured
 minutes: 17
 ---
 
-> poets do not [normally] get this kind of attention
+> … poets do not [normally] get this kind of attention
 
 The story of an unusual fence in New York City and its bold rejection of cynicism.
 

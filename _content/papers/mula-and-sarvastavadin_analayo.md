@@ -13,5 +13,5 @@ tags:
   - sects
 ---
 
-> the term Mūla-sarvāstivāda can serve a purpose as a designation for a specific, identifiable Āgama lineage of textual transmission
+> … the term Mūla-sarvāstivāda can serve a purpose as a designation for a specific, identifiable Āgama lineage of textual transmission
 

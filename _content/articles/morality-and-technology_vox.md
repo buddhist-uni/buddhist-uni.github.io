@@ -15,5 +15,5 @@ journal: vox
 pages: 13
 ---
 
-> digital technology often seems to make it harder for us to respond in the right way when someone is suffering and needs our help
+> … digital technology often seems to make it harder for us to respond in the right way when someone is suffering and needs our help
 

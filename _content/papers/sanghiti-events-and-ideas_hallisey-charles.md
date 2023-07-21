@@ -20,4 +20,4 @@ pages: "133--148"
 booktitle: "The Buddhist Forum"
 ---
 
-> in sketching out what the councils were, I hope to indicate how they might be fruitfully studied
+> … in sketching out what the councils were, I hope to indicate how they might be fruitfully studied

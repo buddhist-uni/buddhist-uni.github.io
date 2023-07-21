@@ -14,4 +14,4 @@ journal: lions-roar
 pages: 2
 ---
 
-> you can’t escape them
+> … you can’t escape them

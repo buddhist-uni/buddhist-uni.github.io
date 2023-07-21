@@ -12,5 +12,5 @@ journal: bsr
 course: theravada
 ---
 
-> the trajectory of the term theravāda from its earliest occurrence in the Pāli canon to its present day usage as a designation of the form of Buddhism found in Sri Lanka and Southeast Asia.
+> … the trajectory of the term theravāda from its earliest occurrence in the Pāli canon to its present day usage as a designation of the form of Buddhism found in Sri Lanka and Southeast Asia.
 

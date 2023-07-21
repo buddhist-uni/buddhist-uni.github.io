@@ -14,4 +14,4 @@ status: featured
 pages: 10
 ---
 
-> it may be America’s destiny not to make Buddhism perfect but to make it banal
+> … it may be America’s destiny not to make Buddhism perfect but to make it banal

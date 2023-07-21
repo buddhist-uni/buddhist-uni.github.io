@@ -17,7 +17,7 @@ tags:
   - japanese-imperial
 ---
 
-> unlike other Buddhist traditions based on teachings contained in one or more Buddhist sūtras, the Zen school validates itself on the basis of being "a transmission outside the sutras" (*kyōge betsuden*).
+> … unlike other Buddhist traditions based on teachings contained in one or more Buddhist sūtras, the Zen school validates itself on the basis of being "a transmission outside the sutras" (*kyōge betsuden*).
 > That is to say, a transmission of the Buddha-dharma from the enlightened mind of a Zen master to his/her disciple(s).
 > But what happens in those cases when the "enlightened master" isn’t truly enlightened?
 

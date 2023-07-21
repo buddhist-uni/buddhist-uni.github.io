@@ -15,5 +15,5 @@ number: 4
 pages: "607--634"
 ---
 
-> the EĀ contains numerous salient features of Mahāsāṃghika doctrine, particularly the transcendence of Buddhas and Bodhisattvas. This study also argues that the seeming affinity between several legends in the EĀ and those in the Mūlasarvāstivāda Vinaya is likely to have resulted from Mahāsāṃghika influence on the Mūlasarvāstivādins. 
+> … the EĀ contains numerous salient features of Mahāsāṃghika doctrine, particularly the transcendence of Buddhas and Bodhisattvas. This study also argues that the seeming affinity between several legends in the EĀ and those in the Mūlasarvāstivāda Vinaya is likely to have resulted from Mahāsāṃghika influence on the Mūlasarvāstivādins. 
 

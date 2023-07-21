@@ -12,4 +12,4 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 pages: 490
 ---
 
-> revised versions of articles published previously. Each study is based on a partial or complete translation of the Saṃyukta-āgama discourse in question, followed by an examination of some aspects that I felt to be of further interest.
+> … revised versions of articles published previously. Each study is based on a partial or complete translation of the Saṃyukta-āgama discourse in question, followed by an examination of some aspects that I felt to be of further interest.

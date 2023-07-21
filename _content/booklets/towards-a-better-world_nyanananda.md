@@ -15,7 +15,7 @@ tags:
 pages: 30
 ---
 
-> without showing any disrespect simply because it is worded in Sinhala, if you listen to this marvellous Dhamma with worshipful devotion and gladness, you will surely gain heavenly bliss
+> … without showing any disrespect simply because it is worded in Sinhala, if you listen to this marvellous Dhamma with worshipful devotion and gladness, you will surely gain heavenly bliss
 
 A Sinhalese poem on the dangers of Saṃsāra and the benefits of the practice, showing that the southern lineage of Buddhism also had a thriving literary tradition.
 

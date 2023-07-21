@@ -20,5 +20,5 @@ number: 370
 pages: 55
 ---
 
-> it is necessary to work for the total removal within oneself of sakkāya-diṭṭhi, which is the root cause of rebirth in the miserable states of existence. Sakkāya-diṭṭhi can only be destroyed completely by the noble path and fruit: the three supramundane virtues of morality, concentration, and wisdom. It is therefore imperative to work for the development of these virtues. How should one do the work? By means of noting
+> … it is necessary to work for the total removal within oneself of sakkāya-diṭṭhi, which is the root cause of rebirth in the miserable states of existence. Sakkāya-diṭṭhi can only be destroyed completely by the noble path and fruit: the three supramundane virtues of morality, concentration, and wisdom. It is therefore imperative to work for the development of these virtues. How should one do the work? By means of noting
 

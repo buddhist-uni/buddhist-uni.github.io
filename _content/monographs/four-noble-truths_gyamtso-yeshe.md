@@ -13,4 +13,4 @@ address: "Woodstock, NY"
 pages: 54
 ---
 
-> the four noble truths, the four seals of the view, the four mindfulnesses, the four schools of Buddhist philosophy, and the four reliances
+> … the four noble truths, the four seals of the view, the four mindfulnesses, the four schools of Buddhist philosophy, and the four reliances

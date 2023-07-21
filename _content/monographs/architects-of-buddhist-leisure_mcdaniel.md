@@ -18,6 +18,6 @@ tags:
 pages: 214
 ---
 
-> building spectacular ecumenical leisure sites often runs into problems
+> … building spectacular ecumenical leisure sites often runs into problems
 
 A clear-eyed but sympathetic analysis of the pervasive construction of Buddhist tourist attractions in Asia, what they accomplish and don't.

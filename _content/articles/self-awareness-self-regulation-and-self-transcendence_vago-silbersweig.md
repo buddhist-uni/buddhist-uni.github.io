@@ -20,7 +20,7 @@ publisher: "Frontiers Media"
 openalexid: W2005022581
 ---
 
-> an integrative theoretical framework and systems-based neurobiological model that explains the mechanisms by which mindfulness reduces biases related to self-processing and creates a sustainable healthy mind.
+> … an integrative theoretical framework and systems-based neurobiological model that explains the mechanisms by which mindfulness reduces biases related to self-processing and creates a sustainable healthy mind.
 
 > Mindfulness is described through systematic mental training that develops meta-awareness (self-awareness), an ability to effectively modulate one's behavior (self-regulation), and a positive relationship between self and other that transcends self-focused needs and increases prosocial characteristics (self-transcendence).
 > This framework of self-awareness, -regulation, and -transcendence (S-ART) illustrates a method for becoming aware of the conditions that cause (and remove) distortions or biases.

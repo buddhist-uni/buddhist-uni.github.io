@@ -14,5 +14,5 @@ tags:
   - vinaya-studies
 ---
 
-> all the Vinayas have four *pārājika* precepts considered to be peculiar to nuns
+> … all the Vinayas have four *pārājika* precepts considered to be peculiar to nuns
 

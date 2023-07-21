@@ -18,5 +18,5 @@ journal: bsr
 pages: "33--66"
 ---
 
-> the *Nikāyas* do not see *Nibbāna* as a form of consciousness, including such exceptional kinds of consciousness as *anidassana viññāṇa* and *appatiṭṭhita viññāṇa*. Nor can *Nibbāna* be regarded as equivalent to mind, or any particular state of mind.
+> … the *Nikāyas* do not see *Nibbāna* as a form of consciousness, including such exceptional kinds of consciousness as *anidassana viññāṇa* and *appatiṭṭhita viññāṇa*. Nor can *Nibbāna* be regarded as equivalent to mind, or any particular state of mind.
 

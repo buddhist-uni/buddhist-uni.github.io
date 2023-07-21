@@ -14,4 +14,4 @@ tags:
 pages: 1
 ---
 
-> in three cases one may be understood to have faith and confidence
+> … in three cases one may be understood to have faith and confidence

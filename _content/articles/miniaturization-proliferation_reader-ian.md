@@ -18,6 +18,6 @@ volume: 1
 pages: "50--66"
 ---
 
-> once one village area had set up a pilgrimage route, it was not long before neighbouring communities did the same
+> … once one village area had set up a pilgrimage route, it was not long before neighbouring communities did the same
 
 On the mimetic nature of one particular Japanese, religious practice.

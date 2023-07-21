@@ -23,4 +23,4 @@ openalexid: W1978242176
 
 > The temple represents an objectification of a model of the mind which underlies Sherpa religious thinking
 
-> an interpretation of the structure and symbolism of a Sherpa Buddhist temple in northeastern Nepal
+> … an interpretation of the structure and symbolism of a Sherpa Buddhist temple in northeastern Nepal

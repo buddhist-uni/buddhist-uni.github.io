@@ -24,7 +24,7 @@ pages: 184
 ---
 
 
-> in many cases, I did not know how the inscriptions could possibly mean what I had said they meant, and as a result of not knowing _how_ they could mean what I had said, I had great doubts about what they did actually mean. And so my study of the Aśokan inscriptions led to a situation where every year I understood less and less.
+> … in many cases, I did not know how the inscriptions could possibly mean what I had said they meant, and as a result of not knowing _how_ they could mean what I had said, I had great doubts about what they did actually mean. And so my study of the Aśokan inscriptions led to a situation where every year I understood less and less.
 
 
 A classic series of ten lectures exploring the languages of ancient India and how they help us unravel the mysteries of early Buddhist history.

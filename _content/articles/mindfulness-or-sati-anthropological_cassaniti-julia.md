@@ -20,6 +20,6 @@ pages: "105--120"
 openalexid: W3167841122
 ---
 
-> mindfulness and sati have [relationships] to particular conceptions of Temporality, Affect, Power, Ethics, and Selfhood.
+> … mindfulness and sati have [relationships] to particular conceptions of Temporality, Affect, Power, Ethics, and Selfhood.
 
 > Based on ethnographic data gathered from over 700 psychiatrists, Buddhist monks, lay practitioners, and others in Thailand, Myanmar, Sri Lanka, and the United States, the article suggests some key mental associations in mindfulness and sati that converge and diverge across different cultural contexts.

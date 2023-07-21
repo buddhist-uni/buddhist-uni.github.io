@@ -22,4 +22,4 @@ publisher: "De Gruyter"
 openalexid: W2257522466
 ---
 
-> multiple ethical systems are vying for recognition regarding the self-immolations, and a certain Buddhist ambivalence around extreme acts of devotion complicate any easy designations of the act
+> … multiple ethical systems are vying for recognition regarding the self-immolations, and a certain Buddhist ambivalence around extreme acts of devotion complicate any easy designations of the act

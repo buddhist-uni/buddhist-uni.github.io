@@ -15,6 +15,6 @@ year: 2012
 pages: 2
 ---
 
-> wine at minimum conduces to madness
+> … wine at minimum conduces to madness
 
 The karmic results of breaking the five precepts.

@@ -13,4 +13,4 @@ year: 2012
 pages: 1
 ---
 
-> there are these four right strivings. What four?
+> … there are these four right strivings. What four?

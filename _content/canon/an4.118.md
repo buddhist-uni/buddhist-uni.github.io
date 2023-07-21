@@ -15,4 +15,4 @@ year: 2018
 pages: 1
 ---
 
-> four inspiring places that a faithful gentleman should go to see
+> … four inspiring places that a faithful gentleman should go to see

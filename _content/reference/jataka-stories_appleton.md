@@ -9,4 +9,4 @@ year: 2013
 publisher: "The University of Edinburgh"
 ---
 
-> a free online searchable database of jātakas in Indian texts and art
+> … a free online searchable database of jātakas in Indian texts and art

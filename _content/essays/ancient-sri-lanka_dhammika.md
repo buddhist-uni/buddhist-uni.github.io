@@ -12,4 +12,4 @@ tags:
 pages: 4
 ---
 
-> while Indians like Mahinda, Buddhaghosa, Dhammapala and Ramachandra Bharati, were able to have a profound influence on Sri Lankan Buddhism, Sri Lankans were able to have equally profound effects on Indian Buddhism
+> … while Indians like Mahinda, Buddhaghosa, Dhammapala and Ramachandra Bharati, were able to have a profound influence on Sri Lankan Buddhism, Sri Lankans were able to have equally profound effects on Indian Buddhism

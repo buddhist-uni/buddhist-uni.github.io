@@ -18,5 +18,5 @@ month: dec
 pages: 13
 ---
 
-> humans are driven by feelings. We feel the world, and when things feel right, we get a greater sense of meaning. And so it is with Buddhism.
+> … humans are driven by feelings. We feel the world, and when things feel right, we get a greater sense of meaning. And so it is with Buddhism.
 

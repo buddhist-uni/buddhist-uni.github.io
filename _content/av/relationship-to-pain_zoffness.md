@@ -16,4 +16,4 @@ publisher: nyt
 minutes: 66
 ---
 
-> hurt and harm are not the same. You can have damage to your body without accompanying pain. You can have pain without accompanying tissue damage. [...] what we know about chronic pain is that the brain does become more sensitive over time, and it misinterprets these danger messages as amplified when they don’t need to be.
+> … hurt and harm are not the same. You can have damage to your body without accompanying pain. You can have pain without accompanying tissue damage. [...] what we know about chronic pain is that the brain does become more sensitive over time, and it misinterprets these danger messages as amplified when they don’t need to be.

@@ -22,6 +22,6 @@ Setting alight this searing pain
 With only my fate to blame  
 For the fierce flame that brands me.
 
-> learn about—and listen to—the Cambodian Dharma song tradition
+> … learn about—and listen to—the Cambodian Dharma song tradition
 
 In Khmer and English translation.

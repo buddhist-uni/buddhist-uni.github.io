@@ -13,4 +13,4 @@ volume: 25
 pages: "61--71"
 ---
 
-> avoid assuming too easily that an abbreviation without a marker has occurred
+> … avoid assuming too easily that an abbreviation without a marker has occurred

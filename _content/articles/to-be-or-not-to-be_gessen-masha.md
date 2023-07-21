@@ -17,4 +17,4 @@ tags:
 pages: 11
 ---
 
-> someone is a sequence of choices, and the question is: Will my next choice be conscious, and will my ability to make it be unfettered?
+> … someone is a sequence of choices, and the question is: Will my next choice be conscious, and will my ability to make it be unfettered?

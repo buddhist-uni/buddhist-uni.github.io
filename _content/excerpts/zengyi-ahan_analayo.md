@@ -18,5 +18,5 @@ tags:
   - ea
 ---
 
-> the *Ekottarika Āgama* preserved in Chinese translation is a text with rather complex features, combining some material that could be relatively early with other texts that clearly reflect later developments.
+> … the *Ekottarika Āgama* preserved in Chinese translation is a text with rather complex features, combining some material that could be relatively early with other texts that clearly reflect later developments.
 

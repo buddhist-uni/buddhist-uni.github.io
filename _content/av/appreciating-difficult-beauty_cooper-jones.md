@@ -18,6 +18,6 @@ publisher: nyt
 minutes: 75
 ---
 
-> what is the good life? What does that mean? Can it be experienced? And how do we go about building that?
+> … what is the good life? What does that mean? Can it be experienced? And how do we go about building that?
 
 A wide ranging conversation on embodied philosophy.

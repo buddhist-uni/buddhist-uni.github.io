@@ -15,6 +15,6 @@ journal: jpts
 pages: "263--284"
 ---
 
-> prostitutes do not, or at least do not necessarily do, wrong, and do not break the Third Precept. Men who visit them likewise do not
+> … prostitutes do not, or at least do not necessarily do, wrong, and do not break the Third Precept. Men who visit them likewise do not
 
 A preliminary investigation of the orthodox, Theravāda definition of "sexual misconduct."

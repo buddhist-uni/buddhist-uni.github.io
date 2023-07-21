@@ -14,4 +14,4 @@ year: 2012
 pages: 1
 ---
 
-> possessing eight qualities, a bhikkhu is worthy of going on a mission
+> … possessing eight qualities, a bhikkhu is worthy of going on a mission

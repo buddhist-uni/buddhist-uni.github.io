@@ -17,6 +17,6 @@ address: "San Francisco, CA"
 pages: 4
 ---
 
-> arouse the thought of enlightenment...
+> … arouse the thought of enlightenment...
 
 The first five of Dogen's ten points of advice on entering the path.

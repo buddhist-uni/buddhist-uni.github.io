@@ -17,4 +17,4 @@ number: 669
 minutes: 5
 ---
 
-> all the things Cal doesn’t get to do. I want to curse
+> … all the things Cal doesn’t get to do. I want to curse

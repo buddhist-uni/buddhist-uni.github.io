@@ -16,6 +16,6 @@ volume: 11
 pages: "1--25"
 ---
 
-> stereotypes flew in both directions: white Buddhists were called arrogant, over-focused on enlightenment,  self-absorbed.  Asian  Buddhists  were  called  too  devotional, too hierarchical, over-focused on social and cultural activities.
+> … stereotypes flew in both directions: white Buddhists were called arrogant, over-focused on enlightenment,  self-absorbed.  Asian  Buddhists  were  called  too  devotional, too hierarchical, over-focused on social and cultural activities.
 
 An examination of racial categorization in American Buddhism.

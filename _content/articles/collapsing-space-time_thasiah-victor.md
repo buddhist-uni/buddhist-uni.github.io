@@ -15,5 +15,5 @@ volume: 29
 pages: "23--46"
 ---
 
-> his 1962–1966 memoirs and 1963 poem “Butterflies over the Golden Mustard Fields” set out what we call his ecological humanism: his paradoxical overcoming of self-alienation through a close rapport with relatively wild nature.
+> … his 1962–1966 memoirs and 1963 poem “Butterflies over the Golden Mustard Fields” set out what we call his ecological humanism: his paradoxical overcoming of self-alienation through a close rapport with relatively wild nature.
 

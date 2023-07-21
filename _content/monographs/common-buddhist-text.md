@@ -22,4 +22,4 @@ course_time_multiplier: 0.7
 
 An anthology of passages from the canonical and quasi-canonical texts of the three vehicles.
 
-> to increase awareness among Buddhists of their own rich heritage of religious and ethical thinking as well as to increase understanding among non-Buddhists of the fundamental values and principles of Buddhism. It seeks to strike a balance between what is common to the Buddhist traditions and the diversity of perspectives among them.
+> … to increase awareness among Buddhists of their own rich heritage of religious and ethical thinking as well as to increase understanding among non-Buddhists of the fundamental values and principles of Buddhism. It seeks to strike a balance between what is common to the Buddhist traditions and the diversity of perspectives among them.

@@ -18,6 +18,6 @@ volume: 11
 pages: "9--24"
 ---
 
-> literalism, if not originating from artistic representations, would certainly have been encouraged by them.
+> … literalism, if not originating from artistic representations, would certainly have been encouraged by them.
 
 Venerable Anālayo makes a compelling argument that fire miracles in the Canon came from symbolism and early Buddhist artistic motifs that came to be taken too literally, showing one example of how early Buddhist art influenced the texts.

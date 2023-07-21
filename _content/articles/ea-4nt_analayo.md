@@ -14,6 +14,6 @@ tags:
   - philosophy
 ---
 
-> at an earlier time references to the four noble truths in this and other discourses may have been without the qualification ‘noble’
+> … at an earlier time references to the four noble truths in this and other discourses may have been without the qualification ‘noble’
 
 An example of the minor differences to be found between the Āgamas and their Pāli Parallels.

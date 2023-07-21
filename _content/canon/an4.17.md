@@ -12,4 +12,4 @@ tags:
 pages: 1
 ---
 
-> there are these four ways of taking a wrong course
+> … there are these four ways of taking a wrong course

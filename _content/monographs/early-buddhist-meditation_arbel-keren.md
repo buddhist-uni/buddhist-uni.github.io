@@ -14,5 +14,5 @@ address: New York
 pages: 224
 ---
 
-> this study critically examines the traditional Buddhist distinction between the ‘practice of serenity’ (*samatha-bhāvanā*) and the ‘practice of insight’ (*vipassanā-bhāvanā*); doing so challenges the traditional positioning of the four jhānas under the category of ‘serenity (or concentration) meditation’ and the premise regarding their secondary and superfluous role in the path
+> … this study critically examines the traditional Buddhist distinction between the ‘practice of serenity’ (*samatha-bhāvanā*) and the ‘practice of insight’ (*vipassanā-bhāvanā*); doing so challenges the traditional positioning of the four jhānas under the category of ‘serenity (or concentration) meditation’ and the premise regarding their secondary and superfluous role in the path
 

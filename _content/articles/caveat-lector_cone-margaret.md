@@ -17,5 +17,5 @@ volume: 29
 pages: "95--106"
 ---
 
-> what we have is the product of centuries of careful copying, careless copying, knowledge, incompetence, inspired emendation and bungling. And none of that stopped with the beginning of Western scholarship.
+> … what we have is the product of centuries of careful copying, careless copying, knowledge, incompetence, inspired emendation and bungling. And none of that stopped with the beginning of Western scholarship.
 

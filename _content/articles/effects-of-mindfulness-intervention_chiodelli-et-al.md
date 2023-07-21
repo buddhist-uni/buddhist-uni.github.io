@@ -21,5 +21,5 @@ number: 21
 pages: 10
 ---
 
-> the effects of a brief mindfulness program for emotional regulation and levels of mindfulness on senior students in Brazil.
+> … the effects of a brief mindfulness program for emotional regulation and levels of mindfulness on senior students in Brazil.
 

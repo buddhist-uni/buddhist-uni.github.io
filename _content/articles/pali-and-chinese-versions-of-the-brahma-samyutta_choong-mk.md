@@ -19,4 +19,4 @@ number: 2
 journal: bsr
 ---
 
-> individual Brahmās (Sahāṃpati, Baka and an unnamed Brahmā) have different characters ... lower than the Buddha and his great disciples[, their] individual names are a new design, not shared in the Vedic tradition of Brahmanism.
+> … individual Brahmās (Sahāṃpati, Baka and an unnamed Brahmā) have different characters ... lower than the Buddha and his great disciples[, their] individual names are a new design, not shared in the Vedic tradition of Brahmanism.

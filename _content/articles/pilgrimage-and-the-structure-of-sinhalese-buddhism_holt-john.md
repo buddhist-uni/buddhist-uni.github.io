@@ -17,6 +17,6 @@ number: 2
 pages: "23--40"
 ---
 
-> there are at least three major orientations within Sinhalese religion: 1) Bodh Gaya, commemorating the enlightenment experience; 2) Kataragama, where access to transformative "this-worldly" sacral power is sought; and 3) Kandy, where religion legitimates a people's cultural and political past and present through civil ceremony
+> … there are at least three major orientations within Sinhalese religion: 1) Bodh Gaya, commemorating the enlightenment experience; 2) Kataragama, where access to transformative "this-worldly" sacral power is sought; and 3) Kandy, where religion legitimates a people's cultural and political past and present through civil ceremony
 
 > What all three pilgrimages have in common is functional in nature: the need to cope with various manifestations of dukkha

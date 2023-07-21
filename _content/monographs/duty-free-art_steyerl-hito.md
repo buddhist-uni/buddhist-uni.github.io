@@ -19,6 +19,6 @@ address: London
 pages: 247
 ---
 
-> the present feels as if it is constituted by emptying out the future to sustain a looping version of a past that never existed
+> … the present feels as if it is constituted by emptying out the future to sustain a looping version of a past that never existed
 
 A collection of philosophical essays by a celebrated artist grappling with our current, global predicament.

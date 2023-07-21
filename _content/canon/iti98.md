@@ -14,4 +14,4 @@ year: 2017
 pages: 1
 ---
 
-> there are these two kinds of gifts: a gift of material things & a gift of the Dhamma
+> … there are these two kinds of gifts: a gift of material things & a gift of the Dhamma

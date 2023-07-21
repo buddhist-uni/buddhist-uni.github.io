@@ -15,4 +15,4 @@ volume: 9
 pages: "99--112"
 ---
 
-> partisans of Mahāyāna did not reject the Śrāvaka scriptures, or even their philosophies. Mahāyānists practiced the *Vinaya*, often quite earnestly, and studied the *Sūtra*s and the *Abhidharma*.
+> … partisans of Mahāyāna did not reject the Śrāvaka scriptures, or even their philosophies. Mahāyānists practiced the *Vinaya*, often quite earnestly, and studied the *Sūtra*s and the *Abhidharma*.

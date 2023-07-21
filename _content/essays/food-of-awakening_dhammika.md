@@ -13,4 +13,4 @@ tags:
 pages: 2
 ---
 
-> curiously, while a great deal of attention is given to the Buddha’s last meal, almost none has been given to his first meal after he became awakened, and about which it is possible to say something concrete
+> … curiously, while a great deal of attention is given to the Buddha’s last meal, almost none has been given to his first meal after he became awakened, and about which it is possible to say something concrete

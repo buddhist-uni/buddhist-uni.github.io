@@ -12,7 +12,7 @@ month: nov
 pages: 30
 ---
 
-> one gains firsthand understanding of the way things
+> … one gains firsthand understanding of the way things
 are, without reliance on opinions or theories, a direct experience,
 which has its own vitality. It also gives rise to the sense of deep calm
 that comes from knowing something for oneself

@@ -20,7 +20,7 @@ tags:
 pages: "1--10"
 ---
 
-> hypnotic response and meditation involve opposite processes
+> … hypnotic response and meditation involve opposite processes
 
 Meditation plunges us into the depths of the (normally) subconscious processes of intentions forming and contending in the mind. As we become more familiar with these processes, we can more quickly and accurately identify when, how and why the mind moves: pushing back the curtain of ignorance on the workings of our subconscious mind and reducing our tendency to be hypnotized and controlled.
 

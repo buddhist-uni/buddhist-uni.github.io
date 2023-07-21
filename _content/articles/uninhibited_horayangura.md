@@ -14,6 +14,6 @@ journal: "Bangkok Post"
 pages: "1--8"
 ---
 
-> it had to stand on its own feet.
+> … it had to stand on its own feet.
 
 On the formation of the Dhammasara nunnery in Australia.

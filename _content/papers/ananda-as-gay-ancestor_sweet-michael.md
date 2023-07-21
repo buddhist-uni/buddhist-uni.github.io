@@ -16,4 +16,4 @@ tags:
   - californian
 ---
 
-> the queerness of the figure of Ānanda, whose name can be variously translated as "joy," "bliss," or "happiness," fairly lept off the pages at me
+> … the queerness of the figure of Ānanda, whose name can be variously translated as "joy," "bliss," or "happiness," fairly lept off the pages at me

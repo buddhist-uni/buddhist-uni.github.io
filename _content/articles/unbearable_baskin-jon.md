@@ -17,6 +17,6 @@ journal: nyrb
 pages: 12
 ---
 
-> ask whether it is necessary--or wise--to abandon the field of the emotional sublime to the fascists
+> … ask whether it is necessary--or wise--to abandon the field of the emotional sublime to the fascists
 
 

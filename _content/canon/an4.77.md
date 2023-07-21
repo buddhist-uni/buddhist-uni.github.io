@@ -16,4 +16,4 @@ year: 2018
 pages: 2
 ---
 
-> these four things are unthinkable. They should not be thought about
+> … these four things are unthinkable. They should not be thought about

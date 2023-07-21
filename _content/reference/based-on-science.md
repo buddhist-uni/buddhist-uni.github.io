@@ -11,7 +11,7 @@ tags:
 year: 2020
 ---
 
-> the most up-to-date, evidence-based information on science and health questions that affect the decisions we make each day
+> … the most up-to-date, evidence-based information on science and health questions that affect the decisions we make each day
 
 America's top scientists give concise answers to the public's most commonly asked questions, such as:
 - [Can earthquakes liquefy soil?](https://www.nationalacademies.org/based-on-science/can-earthquakes-liquefy-soil)

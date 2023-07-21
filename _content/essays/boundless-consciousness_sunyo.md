@@ -17,5 +17,5 @@ base_value: 0.5
 pages: 10
 ---
 
-> some see in *viññāṇa anidassana* a kind of consciousness essentially equal to *nibbāna*. But there are many problems with this
+> … some see in *viññāṇa anidassana* a kind of consciousness essentially equal to *nibbāna*. But there are many problems with this
 

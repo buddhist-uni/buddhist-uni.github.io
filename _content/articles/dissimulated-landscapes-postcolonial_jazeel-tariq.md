@@ -24,7 +24,7 @@ pages: "61--79"
 openalexid: W2051525129
 ---
 
-> as valuable as the familiar theoretical and conceptual languages of Euro-American landscape geography are, they also risk concealing a range of different aesthetics, social formations, and experiences that unfold in the non-Euro-American landscape.
+> … as valuable as the familiar theoretical and conceptual languages of Euro-American landscape geography are, they also risk concealing a range of different aesthetics, social formations, and experiences that unfold in the non-Euro-American landscape.
 > They risk dissimulating the politics of places as they are produced and lived contextually.
 
 > In the paper I work this argument through a critical engagement of the landscape architecture of Sri Lanka's most famous tropical—modernist architect, Geoffrey Bawa; I specifically focus on his favorite, intensely choreographed, view at the estate Lunuganga on Sri Lanka's south coast.

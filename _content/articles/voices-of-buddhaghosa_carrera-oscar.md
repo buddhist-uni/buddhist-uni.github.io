@@ -17,8 +17,8 @@ volume: 17
 pages: "11--29"
 ---
 
-> this self-effacing, almost anonymous commentator's proneness to being loved or hated, exalted or reviled, is certainly one of the least expected outcomes of Buddhist history.
+> … this self-effacing, almost anonymous commentator's proneness to being loved or hated, exalted or reviled, is certainly one of the least expected outcomes of Buddhist history.
 
-> one traditional account of Buddhaghosa’s own death has the moribund commentator mentally revising the three meanings of the word ‘death’ while expiring, and it seems clear that this, rather than a parody of pedantic intellectualism, was intended as praise
+> … one traditional account of Buddhaghosa’s own death has the moribund commentator mentally revising the three meanings of the word ‘death’ while expiring, and it seems clear that this, rather than a parody of pedantic intellectualism, was intended as praise
 
 On modern Theravāda's ongoing struggle to appraise the legacy of their tradition's greatest scholar.

@@ -17,7 +17,7 @@ olid: OL37784632M
 pages: 380
 ---
 
-> what the Buddha knew and what he told us is a hard-to-come-by, transcendental truth which will make us happy all the time
+> … what the Buddha knew and what he told us is a hard-to-come-by, transcendental truth which will make us happy all the time
 
 A collection of Than Ajahn Suchart's early Dhamma talks in English.
 

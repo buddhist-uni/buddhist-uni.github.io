@@ -18,4 +18,4 @@ pages: 30
 
 > Theravada, like any religious tradition, has evolved and changed over the years.
 
-> some major points of distinction between Early Buddhism and Theravada
+> … some major points of distinction between Early Buddhism and Theravada

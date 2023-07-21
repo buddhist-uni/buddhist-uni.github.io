@@ -15,4 +15,4 @@ volume: 22
 pages: "25--62"
 ---
 
-> mae chis are not, on the whole, eager to relinquish their present status
+> … mae chis are not, on the whole, eager to relinquish their present status

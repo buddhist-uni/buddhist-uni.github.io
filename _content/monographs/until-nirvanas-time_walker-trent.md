@@ -23,7 +23,7 @@ for which I fervently pray
 come true at once and come to be  
 from now until nirvana’s time!
 
-> highlights of the Cambodian Dharma song tradition.
+> … highlights of the Cambodian Dharma song tradition.
 > Many of the most popular songs are included, along with others of exceptional interest or literary merit. All of the major themes of the genre are covered: the life of the Buddha, gratitude to parents, the impermanence of the body, and [the] aspiration for nirvana.
 
 Listen to the author perform a few of the songs from this book [on Shambhala's website](https://www.shambhala.com/songs-from-until-nirvanas-time/).

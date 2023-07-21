@@ -16,4 +16,4 @@ volume: 28
 pages: "339--402"
 ---
 
-> an ethical theory centered on the experience of an individual where perception and affect are the loci of moral development
+> … an ethical theory centered on the experience of an individual where perception and affect are the loci of moral development

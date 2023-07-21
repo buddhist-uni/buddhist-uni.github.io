@@ -19,4 +19,4 @@ tags:
   - modern
 ---
 
-> independence was perceived as an opportunity for a particular ethnic group
+> … independence was perceived as an opportunity for a particular ethnic group

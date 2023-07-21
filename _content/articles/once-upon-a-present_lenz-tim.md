@@ -16,6 +16,6 @@ tags:
   - manuscripts
 ---
 
-> we might regard Big Hand as a student, perhaps a young monk struggling to become fluent
+> … we might regard Big Hand as a student, perhaps a young monk struggling to become fluent
 
 A speculative interpretation of some quirky Gandhāran fragments.

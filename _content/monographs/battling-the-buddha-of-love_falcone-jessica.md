@@ -16,4 +16,4 @@ tags:
 pages: 320
 ---
 
-> a history of the future of the Maitreya Project 2.0, a non-existent statue that nonetheless has touched many lives around the world, for better and for worse
+> … a history of the future of the Maitreya Project 2.0, a non-existent statue that nonetheless has touched many lives around the world, for better and for worse

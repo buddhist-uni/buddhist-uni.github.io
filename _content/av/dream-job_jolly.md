@@ -21,6 +21,6 @@ number: 3
 minutes: 43
 ---
 
-> figuring out what to do with your life and making it happen against all odds
+> … figuring out what to do with your life and making it happen against all odds
 
 A very American take on Zen.

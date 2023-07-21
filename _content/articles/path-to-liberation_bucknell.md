@@ -18,7 +18,7 @@ number: 2
 pages: "7--40"
 ---
 
-> the eightfold path is but
+> … the eightfold path is but
 one of several differently worded statements of Gotama's course of practice
 
 An astute comparison of five alternative formulations of the path and an excellent example of how to study the Pāli Canon.

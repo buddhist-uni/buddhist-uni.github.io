@@ -21,4 +21,4 @@ publisher: "Akadémiai Kiadó"
 openalexid: W2029796324
 ---
 
-> a detailed analysis of the guidelines on sleeping practices as stipulated in Buddhist monastic disciplinary texts and in Chinese manuals.
+> … a detailed analysis of the guidelines on sleeping practices as stipulated in Buddhist monastic disciplinary texts and in Chinese manuals.

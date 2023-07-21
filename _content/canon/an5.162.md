@@ -16,7 +16,7 @@ year: 2018
 pages: 3
 ---
 
-> you should ignore that person’s impure behavior
+> … you should ignore that person’s impure behavior
 
 A series of remarkable similes illustrate the lengths we should go to to remove resent.
 

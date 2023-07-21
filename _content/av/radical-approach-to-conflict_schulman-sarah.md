@@ -15,5 +15,5 @@ publisher: nyt
 minutes: 62
 ---
 
-> in order to understand the truth of any situation, you have to start from the position that every person is equally valuable, and that what they have to say must be heard. And whether that is in a clique where somebody is being shunned and blamed for everything, or whether that’s an entire class of people whose experiences are not taken into account, it’s the same formula from the bottom to the top: let everyone speak and let everyone be heard.
+> … in order to understand the truth of any situation, you have to start from the position that every person is equally valuable, and that what they have to say must be heard. And whether that is in a clique where somebody is being shunned and blamed for everything, or whether that’s an entire class of people whose experiences are not taken into account, it’s the same formula from the bottom to the top: let everyone speak and let everyone be heard.
 

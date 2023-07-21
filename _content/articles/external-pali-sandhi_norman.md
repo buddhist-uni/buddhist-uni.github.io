@@ -17,6 +17,6 @@ volume: 19
 pages: "203--213"
 ---
 
-> external sandhi in Pali consists of a series of contractions of
+> … external sandhi in Pali consists of a series of contractions of
 final vowels with the initial vowels of following words, or the loss of the
 nasalisation and the contraction of the vowel remaining

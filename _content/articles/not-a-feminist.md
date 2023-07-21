@@ -21,4 +21,4 @@ number: 2
 pages: "131--167"
 ---
 
-> engineering education successfully turns potential critics into agents of cultural reproduction
+> … engineering education successfully turns potential critics into agents of cultural reproduction

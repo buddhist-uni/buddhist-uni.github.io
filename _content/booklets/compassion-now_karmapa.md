@@ -19,6 +19,6 @@ reason: "recent scandals"
 pages: 104
 ---
 
-> love and compassion cannot simply be dropped on people
+> … love and compassion cannot simply be dropped on people
 
 A short series of talks on compassion and entering the Bodhisattva Path delivered in India, February 2010.

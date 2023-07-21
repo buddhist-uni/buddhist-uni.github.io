@@ -15,5 +15,5 @@ journal: nyrb
 pages: 1
 ---
 
-> a defense against reality
+> … a defense against reality
 

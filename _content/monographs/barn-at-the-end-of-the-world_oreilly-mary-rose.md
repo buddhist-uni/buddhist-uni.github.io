@@ -15,4 +15,4 @@ address: Minneapolis
 pages: 317
 ---
 
-> memoir, a genre that gives us access to that lost Middlemarch of reflection
+> … memoir, a genre that gives us access to that lost Middlemarch of reflection

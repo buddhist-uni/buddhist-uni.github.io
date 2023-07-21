@@ -17,6 +17,6 @@ number: 1
 pages: "24--26"
 ---
 
-> it could be interpreted as a dish that was 'made well softened,' that is to say, 'easily digestible' and thus suitable
+> … it could be interpreted as a dish that was 'made well softened,' that is to say, 'easily digestible' and thus suitable
 
 A possible exoneration of poor Cunda the Smith.

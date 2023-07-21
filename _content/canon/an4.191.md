@@ -13,6 +13,6 @@ year: 2020
 pages: 2
 ---
 
-> when the teachings have been followed by ear, recited by speech, examined by mind, and well penetrated by view, four rewards can be expected
+> … when the teachings have been followed by ear, recited by speech, examined by mind, and well penetrated by view, four rewards can be expected
 
 The Buddha assures us that we can attain stream entry as a *deva*.

@@ -17,4 +17,4 @@ journal: tricycle
 minutes: 50
 ---
 
-> how we see the world is dependent upon what we expect to see
+> … how we see the world is dependent upon what we expect to see

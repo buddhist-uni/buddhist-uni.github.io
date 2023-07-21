@@ -14,6 +14,6 @@ publisher: "Hawaii Pacific Press"
 pages: 3
 ---
 
-> during this season we remember and celebrate the lives of all our departed loved ones
+> … during this season we remember and celebrate the lives of all our departed loved ones
 
 A brief introduction to the idea behind the Japanese "ghost" festival.

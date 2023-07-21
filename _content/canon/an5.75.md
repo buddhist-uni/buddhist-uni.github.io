@@ -15,4 +15,4 @@ year: 2018
 pages: 4
 ---
 
-> five people similar to warriors are found among the monks
+> … five people similar to warriors are found among the monks

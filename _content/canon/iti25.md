@@ -10,6 +10,6 @@ year: 2020
 pages: 1
 ---
 
-> there is no bad deed they would not do
+> … there is no bad deed they would not do
 
 For the full context behind this short saying, see [MN 61](/content/canon/mn61).

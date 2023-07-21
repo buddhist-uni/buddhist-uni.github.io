@@ -15,6 +15,6 @@ publisher: nyt
 minutes: 69
 ---
 
-> explanations do things to us and change the way we think about the future and change our expectations for who we can be
+> … explanations do things to us and change the way we think about the future and change our expectations for who we can be
 
 On the interaction between story-telling and medicine in psychological disorders.

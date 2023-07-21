@@ -21,6 +21,6 @@ number: 715
 minutes: 5
 ---
 
-> i have so much hope for the future
+> … i have so much hope for the future
 
-> i hope everyone gets everything they deserve
+> … i hope everyone gets everything they deserve
