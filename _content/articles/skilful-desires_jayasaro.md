@@ -14,7 +14,7 @@ tags:
   - problems
 year: 2014
 month: oct
-journal: Forest Sangha
+journal: "Forest Sangha"
 publisher: amaravati 
 address: "Hertfordshire, UK"
 volume: 2557
@@ -22,6 +22,6 @@ number: 93
 pages: "12--14"
 ---
 
-> The Buddha spoke of two kinds of desire: desire that arises from ignorance and delusion which is called taṇhā – craving – and desire that arises from wisdom and intelligence, which is called kusala-chanda, or dhamma-chanda, or most simply chanda.
+> The Buddha spoke of two kinds of desire: desire that arises from ignorance and delusion which is called taṇhā—craving—and desire that arises from wisdom and intelligence, which is called kusala-chanda
 
-Adapted from a Dhamma talk of Ajahn Jayasāro, this article explains the role that skilful desires (chanda) and the four right exertions (sammappadhāna) play in a practitioner's development.
+Adapted from a Dhamma talk of Ajahn Jayasāro, this article explains the role that skilful desires (*chanda*) and the four right exertions (*sammappadhāna*) play in a practitioner's development.

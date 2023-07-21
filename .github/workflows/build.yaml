@@ -62,8 +62,6 @@ jobs:
             echo "All files have valid names."
             exit $exit_code
           fi
-      - name: Normalize Unicode in the Previous Commit
-        uses: buddhist-uni/normalized-unicode-action@v1
       - name: Install node
         uses: actions/setup-node@v3
         with:
