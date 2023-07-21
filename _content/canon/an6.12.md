@@ -14,4 +14,4 @@ year: 1997
 pages: 1
 ---
 
-> these six are conditions that are conducive to amiability, that engender feelings of endearment and respect
+> … these six are conditions that are conducive to amiability, that engender feelings of endearment and respect

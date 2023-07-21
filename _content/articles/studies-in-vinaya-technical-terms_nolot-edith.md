@@ -14,7 +14,7 @@ journal: jpts
 pages: 96
 ---
 
-> the relevant Pāli data about [ten technical] terms occurring in the Vinaya, [its commentaries] and in secondary literature
+> … the relevant Pāli data about [ten technical] terms occurring in the Vinaya, [its commentaries] and in secondary literature
 
 Contents:
 1. *saṃgha-kamma*, "procedure"

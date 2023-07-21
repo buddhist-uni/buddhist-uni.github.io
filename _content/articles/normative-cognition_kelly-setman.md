@@ -17,4 +17,4 @@ tags:
 pages: 20
 ---
 
-> humans exhibit a tendency to identify, adopt, and enforce the norms of their local communities.
+> … humans exhibit a tendency to identify, adopt, and enforce the norms of their local communities.

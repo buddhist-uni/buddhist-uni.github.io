@@ -16,4 +16,4 @@ pages: "339--352"
 from_book: buddhist-and-vedic-studies_wijesekera
 ---
 
-> in the canonical Buddhist texts [...] *kṣatriya-dharma* (The Way of the Warrior) is openly condemned as anti-social, whereas generally in the orthodox Hindu view, *kṣatriya-dharma* is considered as the norm or legitimate duty of kings
+> … in the canonical Buddhist texts [...] *kṣatriya-dharma* (The Way of the Warrior) is openly condemned as anti-social, whereas generally in the orthodox Hindu view, *kṣatriya-dharma* is considered as the norm or legitimate duty of kings

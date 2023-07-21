@@ -18,4 +18,4 @@ tags:
   - function
 ---
 
-> one of the most outstanding testimonies to the Buddha’s capability as a teacher is the conversion of the killer Aṅgulimāla.
+> … one of the most outstanding testimonies to the Buddha’s capability as a teacher is the conversion of the killer Aṅgulimāla.

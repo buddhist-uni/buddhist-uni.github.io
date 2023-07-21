@@ -15,4 +15,4 @@ month: jan
 minutes: 53
 ---
 
-> exactly what are we talking about when we're talking about "our feelings"
+> … exactly what are we talking about when we're talking about "our feelings"

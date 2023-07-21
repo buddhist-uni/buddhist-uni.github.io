@@ -15,4 +15,4 @@ year: 2017
 pages: 23
 ---
 
-> an overview of how bhikkhunis, or fully ordained nuns, came into being, disappeared and are now reappearing again
+> … an overview of how bhikkhunis, or fully ordained nuns, came into being, disappeared and are now reappearing again

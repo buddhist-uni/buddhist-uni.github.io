@@ -19,4 +19,4 @@ tags:
   - sri-lanka
 ---
 
-> a historically and contextually sensitive understanding of elite lay Buddhist women in Sri Lanka, bringing a "critical yet empathetic look" at their participation in ethno-nationalist Sinhala Buddhist hegemony
+> … a historically and contextually sensitive understanding of elite lay Buddhist women in Sri Lanka, bringing a "critical yet empathetic look" at their participation in ethno-nationalist Sinhala Buddhist hegemony

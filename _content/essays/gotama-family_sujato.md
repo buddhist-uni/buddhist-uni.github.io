@@ -13,5 +13,5 @@ month: mar
 pages: 1
 ---
 
-> it was common for khattiyans to be referred to by brahmanical priestly names
+> … it was common for khattiyans to be referred to by brahmanical priestly names
 

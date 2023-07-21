@@ -14,6 +14,6 @@ tags:
 minutes: 111
 ---
 
-> in the past two decades, as the Chinese economy has grown by leaps and bounds, the People’s Republic of China has begun to play an increasingly assertive role in mainland and maritime Southeast Asia
+> … in the past two decades, as the Chinese economy has grown by leaps and bounds, the People’s Republic of China has begun to play an increasingly assertive role in mainland and maritime Southeast Asia
 
 A country-by-country profile of Southeast Asia and its relations with the PRC.

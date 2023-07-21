@@ -17,6 +17,6 @@ year: 2018
 pages: 3
 ---
 
-> near Kallavāḷamutta Village, Venerable Mahāmoggallāna was nodding off while meditating...
+> … near Kallavāḷamutta Village, Venerable Mahāmoggallāna was nodding off while meditating...
 
 Seven methods for overcoming drowsiness in your meditation.

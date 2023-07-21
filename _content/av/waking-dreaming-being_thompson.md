@@ -17,4 +17,4 @@ publisher: nbn
 minutes: 63
 ---
 
-> a view of our sense of self as an emergent process of "I-making" that is constructed in relation to our environment and the body on which it depends
+> … a view of our sense of self as an emergent process of "I-making" that is constructed in relation to our environment and the body on which it depends

@@ -26,6 +26,6 @@ number: 1
 pages: "1--64"
 ---
 
-> what was the religious environment that encouraged the spread of the new technology of printing in late seventh century China?
+> … what was the religious environment that encouraged the spread of the new technology of printing in late seventh century China?
 
 The captivating story of how Empress Wu's struggle for legitimacy led to the printing of the first mass-produced Buddhist text.

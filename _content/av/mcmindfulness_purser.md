@@ -16,4 +16,4 @@ publisher: nbn
 minutes: 91
 ---
 
-> mindfulness is being used to reinforce the capitalist system
+> … mindfulness is being used to reinforce the capitalist system

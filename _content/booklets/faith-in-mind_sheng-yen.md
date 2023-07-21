@@ -11,7 +11,7 @@ year: 1985
 pages: 36
 ---
 
-> trying to control the breath, it becomes abnormal.
+> … trying to control the breath, it becomes abnormal.
 Don't pay attention to any phenomenon that occurs to the body;
 if you are concerned with it, problems will arise.
 It is the same with the mind.

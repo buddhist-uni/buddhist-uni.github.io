@@ -19,4 +19,4 @@ subcat: film
 minutes: 26
 ---
 
-> how the art world's hunger for ancient artifacts is destroying a culture
+> … how the art world's hunger for ancient artifacts is destroying a culture

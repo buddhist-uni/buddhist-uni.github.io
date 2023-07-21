@@ -20,7 +20,7 @@ publisher: "University of Chicago Press"
 openalexid: W1995145010
 ---
 
-> the natural world does not function as home or household for its human 
+> … the natural world does not function as home or household for its human 
 children.
 Finding herself and her fellows to be outsiders, trespassers in a
 world that is distinctly "other," she declares both nuturing and managerial

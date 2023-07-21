@@ -18,5 +18,5 @@ number: 221
 pages: 14
 ---
 
-> the jackal is used to suggest that heretics, heterodox teachers, and other negatively perceived figures should be condemned not merely because of the actions they engage in or the teachings they propagate, but also because they are *constitutionally inferior*
+> … the jackal is used to suggest that heretics, heterodox teachers, and other negatively perceived figures should be condemned not merely because of the actions they engage in or the teachings they propagate, but also because they are *constitutionally inferior*
 

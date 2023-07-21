@@ -16,4 +16,4 @@ address: London
 minutes: 53
 ---
 
-> the fight for disability rights in the UK and India, the remarkable life of Helen Keller, how a Rwandan Paralympic volleyball team made history, and the invention of the Invacar
+> … the fight for disability rights in the UK and India, the remarkable life of Helen Keller, how a Rwandan Paralympic volleyball team made history, and the invention of the Invacar

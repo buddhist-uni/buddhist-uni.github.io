@@ -17,4 +17,4 @@ number: 1
 pages: "63--78"
 ---
 
-> fundraising is a form of Dharma practice, gathering with peers is a way to raise money, and Buddhism is practiced as a form of group solidarity and support. These tight weaves have enabled temples to thrive in racially and religiously hostile lands
+> … fundraising is a form of Dharma practice, gathering with peers is a way to raise money, and Buddhism is practiced as a form of group solidarity and support. These tight weaves have enabled temples to thrive in racially and religiously hostile lands

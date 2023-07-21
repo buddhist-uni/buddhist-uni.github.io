@@ -24,7 +24,7 @@ publisher: "Taylor & Francis"
 openalexid: W2010589381
 ---
 
-> the history, myth and cult of a Burmese Buddha image standing in the middle of the [Shan] city of Chiang Tung and the ways in which religious visual culture expresses ethnic-religious identity.
+> … the history, myth and cult of a Burmese Buddha image standing in the middle of the [Shan] city of Chiang Tung and the ways in which religious visual culture expresses ethnic-religious identity.
 
 Religious art, as a symbol of culture, is inevitably political.
 And yet, for whatever reasons an icon might be installed, it's only a matter of time before it becomes adopted by its hosts.

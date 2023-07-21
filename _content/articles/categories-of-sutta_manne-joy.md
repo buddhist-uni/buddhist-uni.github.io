@@ -14,6 +14,6 @@ volume: 15
 pages: "29--87"
 ---
 
-> the criteria for the categorisation of three types of sutta: Sermons, Debates, and Consultations.
+> … the criteria for the categorisation of three types of sutta: Sermons, Debates, and Consultations.
 
 

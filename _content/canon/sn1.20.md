@@ -14,6 +14,6 @@ year: 2000
 pages: 4
 ---
 
-> sensual pleasures are time-consuming, full of suffering and despair, and the danger in them is greater still
+> … sensual pleasures are time-consuming, full of suffering and despair, and the danger in them is greater still
 
 A deva tried to convince a young monk to enjoy sensual pleasures and the Buddha rebukes the angel with a series of verses explaining that this young monk is already an arahant.

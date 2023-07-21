@@ -13,4 +13,4 @@ year: 2020
 pages: 2
 ---
 
-> all beings are subject to death. Death is their end
+> … all beings are subject to death. Death is their end

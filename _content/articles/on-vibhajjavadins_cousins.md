@@ -20,6 +20,6 @@ publisher: "Equinox"
 openalexid: W3160954567
 ---
 
-> a third century CE inscription [is dedicated] ‘to the Theriya teachers, followers of the Vibhajjavāda, bringers of the faith to the Kashmiri, Gandhāran, Bactrian and Vanavāsan peoples and to the island of Ceylon, dwellers in the Mahāvihāra’
+> … a third century CE inscription [is dedicated] ‘to the Theriya teachers, followers of the Vibhajjavāda, bringers of the faith to the Kashmiri, Gandhāran, Bactrian and Vanavāsan peoples and to the island of Ceylon, dwellers in the Mahāvihāra’
 
 A reevaluation of the Indian lineage behind the Theravāda.

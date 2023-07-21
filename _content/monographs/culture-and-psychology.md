@@ -19,4 +19,4 @@ address: "Phoenix, AZ"
 pages: 340
 ---
 
-> how culture reflects and shapes the mind and behavior of its members
+> … how culture reflects and shapes the mind and behavior of its members

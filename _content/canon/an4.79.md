@@ -14,4 +14,4 @@ year: 2018
 pages: 1
 ---
 
-> what is the reason why for different people the same kind of business undertaking might fail, while another doesn’t meet expectations, another meets expectations, and another exceeds expectations?
+> … what is the reason why for different people the same kind of business undertaking might fail, while another doesn’t meet expectations, another meets expectations, and another exceeds expectations?

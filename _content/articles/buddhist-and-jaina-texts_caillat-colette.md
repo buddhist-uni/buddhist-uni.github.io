@@ -15,5 +15,5 @@ tags:
   - setting
 ---
 
-> the Buddhists' approach appears to have been much bolder than that of most of their contemporaries.
+> … the Buddhists' approach appears to have been much bolder than that of most of their contemporaries.
 

@@ -13,6 +13,6 @@ tags:
 pages: 1
 ---
 
-> what is the person whose mind is like a diamond?
+> … what is the person whose mind is like a diamond?
 
 Showing the Canonical basis for the "Vajra" image which would become important in later Buddhism.

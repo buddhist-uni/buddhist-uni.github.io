@@ -13,6 +13,6 @@ year: 2022
 pages: 7
 ---
 
-> the first of the four major holy places of Buddhism, being where the person who was to become the Buddha was born.
+> … the first of the four major holy places of Buddhism, being where the person who was to become the Buddha was born.
 
 A short history of Lumbini.

@@ -18,7 +18,7 @@ publisher: bps
 pages: 63
 ---
 
-> here is a book to take up at quiet times
+> … here is a book to take up at quiet times
 
 A haphazard collection of inspirational quotes on the Lord Buddha's nine virtuous qualities taken mostly from the Pāli Canon.
 

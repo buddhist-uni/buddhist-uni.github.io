@@ -19,7 +19,7 @@ tags:
 publisher: mit
 ---
 
-> the belief that we humans occupy a realm of being separate from the rest of nature encourages what he all-too-politely refers to as "environmentally irresponsible behavior."
+> … the belief that we humans occupy a realm of being separate from the rest of nature encourages what he all-too-politely refers to as "environmentally irresponsible behavior."
 
 
 A history of modern conceptualizations of "nature" and an early defense of the so-called "first/second nature" split—a concept we now call "the anthropocene."

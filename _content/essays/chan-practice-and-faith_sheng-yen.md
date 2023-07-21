@@ -20,5 +20,5 @@ tags:
 pages: 10
 ---
 
-> he believed in nothing but himself. Actually, this is neither Buddhism nor Chan
+> … he believed in nothing but himself. Actually, this is neither Buddhism nor Chan
 

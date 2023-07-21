@@ -16,6 +16,6 @@ drive_links:
 course: setting
 ---
 
-> report of valiant soldiers from a master-slave society in Greece should have been brought home by the Indian soldiers that had participated in Xerxe's campaign
+> … report of valiant soldiers from a master-slave society in Greece should have been brought home by the Indian soldiers that had participated in Xerxe's campaign
 
 It is plausible that the Buddha heard of the Spartans.

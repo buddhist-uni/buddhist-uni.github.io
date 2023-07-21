@@ -23,7 +23,7 @@ publisher: cambridge
 openalexid: W1913492547
 ---
 
-> excavations revealed a sequence of early structures preceding the major rebuilding by Asoka
+> … excavations revealed a sequence of early structures preceding the major rebuilding by Asoka
 
 See [this post by Bhante Sujato](https://discourse.suttacentral.net/t/birthdate-of-the-buddha-hints-from-archeology/2591/5?u=khemarato.bhikkhu) explaining that it's quite expected that Maya would haven given birth at a pre-existing shrine.
 And see [this response by Richard Gombrich](https://ocbs.org/wp-content/uploads/2015/09/rfg1213.pdf) further refuting the paper's proposed chronology.

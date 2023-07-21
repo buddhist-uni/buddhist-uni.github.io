@@ -15,6 +15,6 @@ tags:
 pages: 57
 ---
 
-> when you understand the nature of your own mind, you’ll be able to control it naturally; you won’t have to push
+> … when you understand the nature of your own mind, you’ll be able to control it naturally; you won’t have to push
 
 Some introductory remarks on Buddhism and questions answered by Lama Yeshe, the popular Tibetan master.

@@ -18,6 +18,6 @@ tags:
 publisher: mit
 ---
 
-> madness itself is not a role that can be played any old how. In every generation are quite firm rules about how you should behave when you are crazy.
+> … madness itself is not a role that can be played any old how. In every generation are quite firm rules about how you should behave when you are crazy.
 
 A meditation on the impact of biotechnology on society.

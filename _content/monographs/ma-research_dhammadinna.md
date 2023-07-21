@@ -9,4 +9,4 @@ external_url: "https://www.dropbox.com/s/s74ur44hi4h255m/ResearchMadhyama.pdf"
 pages: 373
 ---
 
-> the third volume of proceedings of the Āgama seminars held by the Āgama Research Group at the Dharma Drum Institute of Liberal Arts (formerly Dharma Drum Buddhist College) during the last weekend of October 2015
+> … the third volume of proceedings of the Āgama seminars held by the Āgama Research Group at the Dharma Drum Institute of Liberal Arts (formerly Dharma Drum Buddhist College) during the last weekend of October 2015

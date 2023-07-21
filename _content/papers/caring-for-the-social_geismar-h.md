@@ -21,4 +21,4 @@ pages: "205--225"
 chapter: 12
 ---
 
-> care and skill provide blueprints for museums to manage the precarity, obsolescence and impermanence that inflect the techniques and technologies used to make many of their collections, as well as to support the discourses of preservation that underpin traditional definitions of heritage and conservation
+> … care and skill provide blueprints for museums to manage the precarity, obsolescence and impermanence that inflect the techniques and technologies used to make many of their collections, as well as to support the discourses of preservation that underpin traditional definitions of heritage and conservation

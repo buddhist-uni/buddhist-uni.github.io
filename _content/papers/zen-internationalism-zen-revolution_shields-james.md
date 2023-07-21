@@ -20,5 +20,5 @@ pages: "319--343"
 chapter: 12
 ---
 
-> the lives and thought of two rather different radical, Zen Buddhists of late Meiji Japan in order to discern
+> … the lives and thought of two rather different radical, Zen Buddhists of late Meiji Japan in order to discern
 whether and in what ways their progressive political ideals were influenced by Chan thought and practice.

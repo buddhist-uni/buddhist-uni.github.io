@@ -16,6 +16,6 @@ number: 16
 minutes: 9
 ---
 
-> social interaction is more complex and frequent than before
+> … social interaction is more complex and frequent than before
 
 A few sage words on "playing around."

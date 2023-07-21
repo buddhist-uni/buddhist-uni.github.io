@@ -18,6 +18,6 @@ booktitle: "Facets of Buddhist Thought"
 pages: "21--31"
 ---
 
-> the Buddha confined himself to asserting statements which were true and useful, though pleasant or unpleasant, so that the Dhamma is pragmatic, although it does not subscribe to a pragmatic theory of truth.
+> … the Buddha confined himself to asserting statements which were true and useful, though pleasant or unpleasant, so that the Dhamma is pragmatic, although it does not subscribe to a pragmatic theory of truth.
 
 A short introduction to early Buddhist epistemology from its preeminent, modern scholar.

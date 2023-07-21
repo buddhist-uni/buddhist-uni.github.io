@@ -14,4 +14,4 @@ year: 2018
 pages: 1
 ---
 
-> a bad person and a worse person, a good person and a better person
+> … a bad person and a worse person, a good person and a better person

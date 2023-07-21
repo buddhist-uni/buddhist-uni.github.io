@@ -16,6 +16,6 @@ tags:
 pages: 18
 ---
 
-> ways of understanding their [group's] distinctiveness which challenge dominant characterizations with the goal of greater self-determination
+> … ways of understanding their [group's] distinctiveness which challenge dominant characterizations with the goal of greater self-determination
 
 A definitive introduction to the subject.

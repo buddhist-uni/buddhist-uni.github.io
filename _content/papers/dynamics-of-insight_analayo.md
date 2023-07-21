@@ -18,6 +18,6 @@ pages: "25--56"
 booktitle: "Buddhist Meditation Traditions: An International Symposium (佛教禪坐傳統研討會論文集)"
 ---
 
-> a brief survey of three modern day insight meditation traditions (I), followed by examining their common roots in the medieval scheme of insight knowledges (II), which in turn I trace back to the early discourses in the Pāli Nikāyas (III).
+> … a brief survey of three modern day insight meditation traditions (I), followed by examining their common roots in the medieval scheme of insight knowledges (II), which in turn I trace back to the early discourses in the Pāli Nikāyas (III).
 
 For a talk on this paper, [see here](/content/av/dynamics-of-insight_analayo).

@@ -16,7 +16,7 @@ status: featured
 pages: 320
 ---
 
-> teachings from twelve of the greatest masters and monasteries in the Theravada tradition
+> … teachings from twelve of the greatest masters and monasteries in the Theravada tradition
 
 This classic book on insight meditation introduced the West to the Theravada Tradition of Southeast Asia and launched the career of not only its author, but also many of his readers who subsequently sought out, learned from, and carried on the tradition of these venerable masters. 
 

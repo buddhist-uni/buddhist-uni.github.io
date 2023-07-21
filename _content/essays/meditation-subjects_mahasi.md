@@ -16,5 +16,5 @@ number: 77
 pages: 12
 ---
 
-> meditation is carried out for the purpose of realising nibbāna and thereby escaping from the ills of life
+> … meditation is carried out for the purpose of realising nibbāna and thereby escaping from the ills of life
 

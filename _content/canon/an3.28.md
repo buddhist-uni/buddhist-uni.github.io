@@ -12,4 +12,4 @@ tags:
 pages: 1
 ---
 
-> what, bhikkhus, is the person whose speech is like dung?
+> … what, bhikkhus, is the person whose speech is like dung?

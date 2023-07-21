@@ -14,7 +14,7 @@ tags:
 pages: 10
 ---
 
-> whenever we practise the bodhisattva’s actions--the trainings in generosity, discipline, patience, diligence, meditation and wisdom--it will cause this bodhicitta that is the union of emptiness and compassion to increase further and further.
+> … whenever we practise the bodhisattva’s actions--the trainings in generosity, discipline, patience, diligence, meditation and wisdom--it will cause this bodhicitta that is the union of emptiness and compassion to increase further and further.
 
 A transcript of a short talk on how the [_Bodhisattvacaryāvatāra_]({% link _content/canon/bodhisattvacaryavatara_santideva.md %}) is taught in the Tibetan tradition.
 

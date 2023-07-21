@@ -14,4 +14,4 @@ pages: "207--247"
 journal: jiabs
 ---
 
-> scholars have had little to no luck in identifying a Brahmanical source for the 32 marks of a great Man, in spite of the fact that the Buddhist texts are nearly unanimous is stating that this is a Brahmanical concept
+> … scholars have had little to no luck in identifying a Brahmanical source for the 32 marks of a great Man, in spite of the fact that the Buddhist texts are nearly unanimous is stating that this is a Brahmanical concept

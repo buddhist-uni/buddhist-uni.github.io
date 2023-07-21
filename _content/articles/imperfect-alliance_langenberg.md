@@ -19,4 +19,4 @@ number: 6
 pages: "190--213"
 ---
 
-> female monastics lead agentive, creative, and sometimes rebellious female lives that in subtle and not so subtle ways resist the label ‘feminist’
+> … female monastics lead agentive, creative, and sometimes rebellious female lives that in subtle and not so subtle ways resist the label ‘feminist’

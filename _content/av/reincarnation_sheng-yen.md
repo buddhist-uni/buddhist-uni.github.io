@@ -16,4 +16,4 @@ number: 9
 minutes: 9
 ---
 
-> this world of ours, when seen as part of the universe, is as tiny as a grain of sand
+> … this world of ours, when seen as part of the universe, is as tiny as a grain of sand

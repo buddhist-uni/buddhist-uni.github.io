@@ -19,4 +19,4 @@ tags:
   - gender
 ---
 
-> based on what can be culled from the Madhyama-āgama discourse in comparison with the other versions, it seems possible to arrive at a coherent narrative of [the founding] of the order of nuns.
+> … based on what can be culled from the Madhyama-āgama discourse in comparison with the other versions, it seems possible to arrive at a coherent narrative of [the founding] of the order of nuns.

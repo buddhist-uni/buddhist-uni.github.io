@@ -14,4 +14,4 @@ journal: jbe
 pages: "153--179"
 ---
 
-> bodily conduct that harms oneself, harms others, harms both; that destroys wisdom and fosters evil; that does not [lead to] attaining Nibbāna, does not lead to knowledge, does not lead to awakening, and does not lead to Nibbāna.
+> … bodily conduct that harms oneself, harms others, harms both; that destroys wisdom and fosters evil; that does not [lead to] attaining Nibbāna, does not lead to knowledge, does not lead to awakening, and does not lead to Nibbāna.

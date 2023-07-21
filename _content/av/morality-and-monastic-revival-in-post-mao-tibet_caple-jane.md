@@ -15,5 +15,5 @@ tags:
 minutes: 54
 ---
 
-> the problem with tourism as it manifested itself in places like Kumbum was that it was the kind of tourism which might actually give monasteries a very bad reputation, rather than being something productive
+> … the problem with tourism as it manifested itself in places like Kumbum was that it was the kind of tourism which might actually give monasteries a very bad reputation, rather than being something productive
 

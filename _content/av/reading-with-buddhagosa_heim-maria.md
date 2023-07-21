@@ -16,6 +16,6 @@ number: 4
 minutes: 63
 ---
 
-> once you've understood what the text is saying in this deeper way, you can find yourself addressed by it
+> … once you've understood what the text is saying in this deeper way, you can find yourself addressed by it
 
 A very brief overview of Buddhaghosa's commentarial project.

@@ -16,5 +16,5 @@ number: 1
 pages: "90--105"
 ---
 
-> one of the most spectacular and popular rituals in Chinese Buddhism, *Shuilu fahui* [...] constructs and represents a unified religious world
+> … one of the most spectacular and popular rituals in Chinese Buddhism, *Shuilu fahui* [...] constructs and represents a unified religious world
 

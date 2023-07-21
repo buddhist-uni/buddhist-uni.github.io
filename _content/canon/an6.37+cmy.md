@@ -17,4 +17,4 @@ pages: 8
 
 > Here, monastics, for the donor there are three factors, and for the receivers there are three factors.
 
-> together with its commentary interleaved, [...] it should give the student an idea of how the word commentaries work
+> … together with its commentary interleaved, [...] it should give the student an idea of how the word commentaries work

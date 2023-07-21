@@ -17,7 +17,7 @@ number: 2
 pages: "1--13"
 ---
 
-> scholarship has always interpreted the resurgence of Buddhist activity at Ajanta and neighboring sites as a regional phenomenon linked to the prestige of a dominating group and to internal political strives.
+> … scholarship has always interpreted the resurgence of Buddhist activity at Ajanta and neighboring sites as a regional phenomenon linked to the prestige of a dominating group and to internal political strives.
 > Yet at a closer look, it appears that much like in earlier times, the life of these rock-cut sites in the fifth century continued to be closely related to a network of commercial activities
 
 Buddhists, and the worshippers of Avalokitesvara in particular, spread along Indian Ocean and Central Asian trade routes during the early medieval period, returning wealth and dynamism to the Buddhist communities of India.

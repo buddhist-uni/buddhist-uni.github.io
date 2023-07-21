@@ -20,6 +20,6 @@ tags:
   - things
 ---
 
-> there will be resistance to giving the thing rights until it can be seen and valued for itself; yet, it is hard to see it and value it for itself until we can bring ourselves to give it rights — which is almost inevitably going to sound inconceivable
+> … there will be resistance to giving the thing rights until it can be seen and valued for itself; yet, it is hard to see it and value it for itself until we can bring ourselves to give it rights — which is almost inevitably going to sound inconceivable
 
 On the history, and future, of how we define property and rights.

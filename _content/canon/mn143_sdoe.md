@@ -18,6 +18,6 @@ month: jan
 minutes: 11
 ---
 
-> although I have long waited upon the Teacher and *bhikkhus* worthy of esteem, never before have I heard such a talk on the Dhamma
+> … although I have long waited upon the Teacher and *bhikkhus* worthy of esteem, never before have I heard such a talk on the Dhamma
 
 A beautiful reading of [this wonderful and profound sutta](https://suttacentral.net/mn143/en/sujato){:target="_blank" ga-event-value="0.30"}.

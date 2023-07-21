@@ -23,6 +23,6 @@ address: "Washington DC"
 openalexid: W2130574076
 ---
 
-> a group randomly assigned to 5 days of meditation practice with the integrative body–mind training method shows significantly better attention and control of stress than a similarly chosen control group given relaxation training.
+> … a group randomly assigned to 5 days of meditation practice with the integrative body–mind training method shows significantly better attention and control of stress than a similarly chosen control group given relaxation training.
 
 A randomized, controlled trial shows that even just a few days of meditation is effective beyond a simple calming effect.

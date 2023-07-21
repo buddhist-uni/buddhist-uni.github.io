@@ -15,4 +15,4 @@ series: 99pi
 minutes: 27
 ---
 
-> to create a healthy indoor space, make it more like the outdoors
+> … to create a healthy indoor space, make it more like the outdoors

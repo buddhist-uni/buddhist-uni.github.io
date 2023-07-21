@@ -18,5 +18,5 @@ number: 1
 pages: "209--226"
 ---
 
-> past-life accounts of women as disciples of former buddhas add a new dimension to the notion of female discipleship in early Buddhism. Gotama was not alone in having a fourfold community
+> … past-life accounts of women as disciples of former buddhas add a new dimension to the notion of female discipleship in early Buddhism. Gotama was not alone in having a fourfold community
 

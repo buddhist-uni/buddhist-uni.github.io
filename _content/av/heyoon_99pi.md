@@ -16,4 +16,4 @@ number: 83
 minutes: 27
 ---
 
-> he longed for a place to escape to. And then he found Heyoon.
+> … he longed for a place to escape to. And then he found Heyoon.

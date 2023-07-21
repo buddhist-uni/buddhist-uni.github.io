@@ -16,4 +16,4 @@ pages: 304
 
 > Those who wanted to uphold the radical non-substantialist position of early Buddhism were faced with the dual task of responding to the enormously substantialist and absolutist think­ing of the non-Buddhist traditions as well as to those within the Buddhist tradition who fell prey to such thinking. 
 
-> a consolidation of thirty years of research and reflection on early Buddhism as well as on some of the major schools and philosophers associated with the later Buddhist tradi­tions
+> … a consolidation of thirty years of research and reflection on early Buddhism as well as on some of the major schools and philosophers associated with the later Buddhist tradi­tions

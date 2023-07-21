@@ -13,4 +13,4 @@ pages: "60--88"
 journal: jocbs
 ---
 
-> while the vast bulk of teachings is shared in common between the three versions, there are a few minor points of difference.
+> … while the vast bulk of teachings is shared in common between the three versions, there are a few minor points of difference.

@@ -18,7 +18,7 @@ tags:
 pages: 256
 ---
 
-> a book about people trying to solve problems created by people trying to solve problems
+> … a book about people trying to solve problems created by people trying to solve problems
 
 A few case studies of man setting out to fix his environment. 
 

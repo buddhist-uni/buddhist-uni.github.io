@@ -20,6 +20,6 @@ pages: 12
 openalexid: W277249823
 ---
 
-> for all of its rhetoric about not relying on words and letters and functioning compassionately as a politically detached, iconoclastic religion, Zen has generally failed to criticize ideologies--and specific social and political conditions--that stand in tension with core Buddhist values.
+> … for all of its rhetoric about not relying on words and letters and functioning compassionately as a politically detached, iconoclastic religion, Zen has generally failed to criticize ideologies--and specific social and political conditions--that stand in tension with core Buddhist values.
 
 > Yet a close examination of Zen theory and praxis indicates that the tradition does possess resources for resisting dominant ideologies and engaging in critique.

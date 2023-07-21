@@ -14,4 +14,4 @@ tags:
 pages: 3
 ---
 
-> the Bhikkhu Sangha alone can ordain women as bhikkhunis, based on the Buddha’s statement: "I allow you, bhikkhus, to ordain Bhikkhunis." This allowance was never rescinded by the Buddha.
+> … the Bhikkhu Sangha alone can ordain women as bhikkhunis, based on the Buddha’s statement: "I allow you, bhikkhus, to ordain Bhikkhunis." This allowance was never rescinded by the Buddha.

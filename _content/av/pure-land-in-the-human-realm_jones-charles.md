@@ -17,4 +17,4 @@ tags:
 minutes: 6
 ---
 
-> neither of those positions equipped anyone to address concrete social, political, or any other kind of human problem
+> … neither of those positions equipped anyone to address concrete social, political, or any other kind of human problem

@@ -13,6 +13,6 @@ year: 2018
 pages: 2
 ---
 
-> people collected it and drank it and bathed in it and used it for their own purpose. Since that water was properly utilized, it’s used, not wasted.
+> … people collected it and drank it and bathed in it and used it for their own purpose. Since that water was properly utilized, it’s used, not wasted.
 
 In which the Buddha encourages us to take advantage of the abundance we've received.

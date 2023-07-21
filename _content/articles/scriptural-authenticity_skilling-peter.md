@@ -16,7 +16,7 @@ volume: 41
 number: 2
 ---
 
-> texts achieve authority through use
+> … texts achieve authority through use
 
 An exploration of the canons of the "18" schools, and how they may have thought about textual "authenticity."
  

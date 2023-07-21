@@ -21,6 +21,6 @@ tags:
 pages: 8
 ---
 
-> deliverance from *saṃsāra*, i.e., the sorrow-laden round of existence, cannot consist in the re-absorption into an eternal Absolute which is at the root of all manifoldness, but can only be achieved by a complete extinguishing of all factors which condition the processes constituting life and world.
+> … deliverance from *saṃsāra*, i.e., the sorrow-laden round of existence, cannot consist in the re-absorption into an eternal Absolute which is at the root of all manifoldness, but can only be achieved by a complete extinguishing of all factors which condition the processes constituting life and world.
 
 

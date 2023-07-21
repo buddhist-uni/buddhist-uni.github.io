@@ -18,6 +18,6 @@ publisher: nyt
 minutes: 61
 ---
 
-> in this state of not knowing, curiosity and engagement with the world arises. And that engagement, that curiosity is intimate and very, very alive.
+> … in this state of not knowing, curiosity and engagement with the world arises. And that engagement, that curiosity is intimate and very, very alive.
 
 A defense of taking seriously the life in things and expanding the range of "normal" ways of being with the world.

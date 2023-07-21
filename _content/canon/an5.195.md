@@ -13,4 +13,4 @@ year: 2018
 pages: 2
 ---
 
-> those Licchavis clothed Piṅgiyānī with five hundred upper robes. And Piṅgiyānī clothed the Buddha with them.
+> … those Licchavis clothed Piṅgiyānī with five hundred upper robes. And Piṅgiyānī clothed the Buddha with them.

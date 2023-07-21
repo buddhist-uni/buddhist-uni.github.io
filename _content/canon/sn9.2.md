@@ -14,4 +14,4 @@ tags:
 pages: 2
 ---
 
-> why bother a renunciate?
+> … why bother a renunciate?

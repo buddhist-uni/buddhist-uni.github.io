@@ -16,5 +16,5 @@ volume: 10
 pages: "375--412"
 ---
 
-> the Buddhist nuns' revival movement fit into the broader women's liberation discourse and the national modernization project
+> … the Buddhist nuns' revival movement fit into the broader women's liberation discourse and the national modernization project
 

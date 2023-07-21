@@ -12,6 +12,6 @@ tags:
 pages: 2
 ---
 
-> speech that has four factors is well spoken
+> … speech that has four factors is well spoken
 
 For Thanissaro Bhikkhu's translation of this sutta, see [Snp 3.3](/content/canon/snp3.3).

@@ -14,4 +14,4 @@ olid: OL41241402M
 pages: 27
 ---
 
-> tables and notes I typed up when I was first learning Pāḷi, which have rather surprisingly lasted
+> … tables and notes I typed up when I was first learning Pāḷi, which have rather surprisingly lasted

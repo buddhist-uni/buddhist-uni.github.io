@@ -10,4 +10,4 @@ course: sects
 pages: "247--269"
 ---
 
-> different solutions to the Sarvāstivādin / Mūlasarvāstivādin problem: that they were two entirely separate sects, or that one was the source from which the other emerged, or that the two were different groupings within an individual sect, or even that there was only one sect known by two different terms
+> … different solutions to the Sarvāstivādin / Mūlasarvāstivādin problem: that they were two entirely separate sects, or that one was the source from which the other emerged, or that the two were different groupings within an individual sect, or even that there was only one sect known by two different terms

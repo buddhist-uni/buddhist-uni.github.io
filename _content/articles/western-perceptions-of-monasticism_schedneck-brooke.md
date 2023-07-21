@@ -16,7 +16,7 @@ number: 2
 pages: "229--246"
 ---
 
-> monasticism in
+> … monasticism in
 general is not ideal for some Western Buddhists—it is seen by some as too 
 restrictive or anti-modern. While others find value in monasticism, they are
 aware of those who critique it, and some of these therefore offer instead a

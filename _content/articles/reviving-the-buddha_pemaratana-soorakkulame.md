@@ -18,5 +18,5 @@ tags:
 status: featured
 ---
 
-> the evidence found in early printed liturgical booklets that promote Buddha-vandanā points to a different kind of modernization. This article reveals how Buddhist activists in the late nineteenth and early twentieth centuries made use of the capabilities presented in the colonial context, including print technology, to promote this devotional ritual practice as a principal marker of a newly constructed Buddhist identity.
+> … the evidence found in early printed liturgical booklets that promote Buddha-vandanā points to a different kind of modernization. This article reveals how Buddhist activists in the late nineteenth and early twentieth centuries made use of the capabilities presented in the colonial context, including print technology, to promote this devotional ritual practice as a principal marker of a newly constructed Buddhist identity.
 

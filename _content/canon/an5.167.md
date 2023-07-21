@@ -13,4 +13,4 @@ year: 2020
 pages: 3
 ---
 
-> a monk who wishes to criticize another should first establish five resolutions
+> … a monk who wishes to criticize another should first establish five resolutions

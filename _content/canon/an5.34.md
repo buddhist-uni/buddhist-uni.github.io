@@ -14,4 +14,4 @@ tags:
 pages: 2
 ---
 
-> can you point out a fruit of giving that’s apparent in the present life?
+> … can you point out a fruit of giving that’s apparent in the present life?

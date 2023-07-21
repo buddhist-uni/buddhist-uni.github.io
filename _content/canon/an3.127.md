@@ -14,4 +14,4 @@ tags:
 pages: 2
 ---
 
-> he sank and melted down and wasn’t able to stay still. It’s like when ghee or oil is poured onto sand: it sinks and melts down, and can’t remain
+> … he sank and melted down and wasn’t able to stay still. It’s like when ghee or oil is poured onto sand: it sinks and melts down, and can’t remain

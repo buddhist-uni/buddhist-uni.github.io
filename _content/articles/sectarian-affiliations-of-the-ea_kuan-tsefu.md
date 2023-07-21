@@ -10,4 +10,4 @@ drive_links:
 journal: jocbs
 ---
 
-> the Ekottarika Āgama could be affiliated to the Mahāsāṃghikas or the Mūlasarvāstivādins.
+> … the Ekottarika Āgama could be affiliated to the Mahāsāṃghikas or the Mūlasarvāstivādins.

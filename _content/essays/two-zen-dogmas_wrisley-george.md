@@ -15,6 +15,6 @@ year: 2016 # definitive
 pages: 45
 ---
 
-> language, concepts, and meanings are embodied through our dispositions, abilities, comportment, and actions
+> … language, concepts, and meanings are embodied through our dispositions, abilities, comportment, and actions
 
 After identifying two related, Zen "dogmas"—(1) that language obscures reality and that (2) Buddhist practice is about cultivating the *experience* of emptiness—this essay sets about to refute these by examining the way that concepts are *enacted* and *embodied*.

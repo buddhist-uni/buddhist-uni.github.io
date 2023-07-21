@@ -20,4 +20,4 @@ publisher: "Springer"
 openalexid: W3021248157
 ---
 
-> mindfulness of postures served as a way of facing fear
+> … mindfulness of postures served as a way of facing fear

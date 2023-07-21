@@ -18,7 +18,7 @@ tags:
   - medieval
 ---
 
-> simultaneously donning a tolerant posture while claiming the overriding-ness of one’s religion was in fact a distinct phenomenon from what could be called "synthesis," and has in actuality characterized many syncretistic endeavors in Chinese history.
+> … simultaneously donning a tolerant posture while claiming the overriding-ness of one’s religion was in fact a distinct phenomenon from what could be called "synthesis," and has in actuality characterized many syncretistic endeavors in Chinese history.
 
 How Ming era Buddhist apologists adapted Chan to Yogacara doctrine.
 

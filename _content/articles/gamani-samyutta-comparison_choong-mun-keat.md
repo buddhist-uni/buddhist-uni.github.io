@@ -13,4 +13,4 @@ tags:
   - sa
 ---
 
-> similarities and differences in structure and doctrinal content [between] this samyutta in the Pāli version and its counterpart 相應 xiangying in the two Chinese versions
+> … similarities and differences in structure and doctrinal content [between] this samyutta in the Pāli version and its counterpart 相應 xiangying in the two Chinese versions

@@ -16,4 +16,4 @@ address: USA
 pages: 165
 ---
 
-> here is something that will certainly pass for an apocalypse until the real thing comes along.
+> … here is something that will certainly pass for an apocalypse until the real thing comes along.

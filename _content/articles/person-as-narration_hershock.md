@@ -18,4 +18,4 @@ number: 4
 pages: "685--701"
 ---
 
-> the person represents the whole dynamic confluence of characters and actions in the world. Distinctions such as self and other, outside and inside, operate only as conventions within a story.
+> … the person represents the whole dynamic confluence of characters and actions in the world. Distinctions such as self and other, outside and inside, operate only as conventions within a story.

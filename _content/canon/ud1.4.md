@@ -14,4 +14,4 @@ year: 2018
 pages: 1
 ---
 
-> what are the things that make one a brahmin?
+> … what are the things that make one a brahmin?

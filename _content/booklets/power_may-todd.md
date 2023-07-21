@@ -24,6 +24,6 @@ olid: OL32038516M
 pages: 4
 ---
 
-> power need not be only repressive. Think of how our parents, schools, employers, and even peers mold our behavior. This molding doesn’t just stop us from doing certain things. It makes or encourages us
+> … power need not be only repressive. Think of how our parents, schools, employers, and even peers mold our behavior. This molding doesn’t just stop us from doing certain things. It makes or encourages us
 
 A short pamphlet defining power in the political sense. When we think about [how the sangha works]({% link _content/av/how-the-sangha-works_sujato.md %}), it's useful to reflect on the complex and variable nature of power and authority.

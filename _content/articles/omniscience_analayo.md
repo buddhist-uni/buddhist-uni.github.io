@@ -15,5 +15,5 @@ tags:
   - buddha
 ---
 
-> a fair number of occurrences in the Buddha’s life would be difficult to explain if he had been omniscient
+> … a fair number of occurrences in the Buddha’s life would be difficult to explain if he had been omniscient
 

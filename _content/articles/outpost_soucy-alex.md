@@ -16,4 +16,4 @@ volume: 9
 pages: "107--128"
 ---
 
-> what do Buddhists do in the absence of resources to set up temples and attract monastics?
+> … what do Buddhists do in the absence of resources to set up temples and attract monastics?

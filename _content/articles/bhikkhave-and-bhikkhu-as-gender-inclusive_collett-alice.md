@@ -13,6 +13,6 @@ journal: jbe
 pages: "760--797"
 ---
 
-> in neither case do the terms function as indicators that the address or the detail of the teaching is solely for monks
+> … in neither case do the terms function as indicators that the address or the detail of the teaching is solely for monks
 
 A note on the apparent lack of Bhikkhunis in the audience of many suttas.

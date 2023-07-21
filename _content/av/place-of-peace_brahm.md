@@ -15,4 +15,4 @@ month: jul
 minutes: 49
 ---
 
-> if you smile, the cars will go faster
+> … if you smile, the cars will go faster

@@ -14,4 +14,4 @@ year: 2018
 pages: 2
 ---
 
-> these five things lead to the decline and disappearance of the true teaching
+> … these five things lead to the decline and disappearance of the true teaching

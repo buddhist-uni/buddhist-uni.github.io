@@ -16,4 +16,4 @@ number: 492
 minutes: 5
 ---
 
-> when the day calls i will answer
+> … when the day calls i will answer

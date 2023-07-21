@@ -14,5 +14,5 @@ volume: 20
 pages: "44--161"
 ---
 
-> most of the [plants'] names
+> … most of the [plants'] names
 and their etymologies prove to be quite meaningful

@@ -17,4 +17,4 @@ number: 86
 minutes: 19
 ---
 
-> back in the 1800s, Ellis Chesbrough was the man. And no one has ever worked harder to save Chicago from its own poop.
+> … back in the 1800s, Ellis Chesbrough was the man. And no one has ever worked harder to save Chicago from its own poop.

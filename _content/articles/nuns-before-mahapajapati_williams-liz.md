@@ -18,5 +18,5 @@ tags:
 status: featured
 ---
 
-> there may have been Bhikkhunīs in existence before the request for ordination by Mahāpajāpatī
+> … there may have been Bhikkhunīs in existence before the request for ordination by Mahāpajāpatī
 

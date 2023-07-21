@@ -16,6 +16,6 @@ tags:
   - abhidhamma
 ---
 
-> whatever (is) seen, heard, or thought, the good say 'putting down'
+> … whatever (is) seen, heard, or thought, the good say 'putting down'
 
 A short note on the grounds for valid knowledge in the pre-Abhidhamma Pāli.

@@ -19,6 +19,6 @@ pages: "197--225"
 openalexid: W2769091761
 ---
 
-> samādhi power was, among other uses, employed to enhance the meditator’s ability to kill others.
+> … samādhi power was, among other uses, employed to enhance the meditator’s ability to kill others.
 > This article focuses on the abuse of samādhi power within Imperial Japan (1868-1945) with the express hope that once exposed and understood, its abuse will never be repeated.
 

@@ -17,5 +17,5 @@ tags:
 minutes: 45
 ---
 
-> it's easy to get out of balance
+> … it's easy to get out of balance
 
