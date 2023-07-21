@@ -18,5 +18,5 @@ number: 358
 minutes: 5
 ---
 
-> … my first try I made a hit...
+> my first try I made a hit...
 

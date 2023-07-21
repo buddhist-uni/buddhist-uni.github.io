@@ -18,7 +18,7 @@ base_value: 0.25
 pages: 5
 ---
 
-> these delightful mountain solitudes,  
+> … these delightful mountain solitudes,  
 Are like the family estate to the supreme guide’s heirs,  
 And, as the best of protectors himself has said,  
 To rely on solitude is indeed the pinnacle of joys!
