@@ -9,6 +9,7 @@ tags:
   - zen
 year: 2012
 olid: OL37394401M
+external_url: "https://archive.org/details/livingbyvowpract0000okum/page/n2/mode/1up"
 publisher: wisdom
 pages: 350
 ---

@@ -18,7 +18,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK){:data-slug="sujato"}
 * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php){:data-slug="boowa"}
 * [Ajahn Suchart](https://www.phrasuchart.com/enbook/){:data-slug="suchart"}
-* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](https://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
+* [Bhikkhu Buddhadasa's Suan Mokkh](https://www.suanmokkh.org/books){:data-slug="buddhadasa"} ([Mirror](https://web.archive.org/web/20210412074634/https://www.bia.or.th/en/index.php/teachings-by-buddhadasa-bhikkhu/ebooks/pdf){:data-slug="buddhadasa"})
 * [Truth is Within (Yuttadhammo Bhikkhu)](https://yuttadhammo.sirimangalo.org/p/about.html){:data-slug="yuttadhammo"}
 * [Bhikkhu Anandajoti's Dharma Records](https://dharma-records.buddhasasana.net/){:data-slug="anandajoti"}
   * [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/Texts-and-Translations/TT-index.htm)
@@ -95,7 +95,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [SuttaCentral](https://suttacentral.net/)
   * Its ["Discourse" Forum](https://discourse.suttacentral.net/search?q=pdf)
 * [The New Books Network](https://newbooksnetwork.com/category/religion-faith/buddhist-studies/)
-* [The Corporate Body of the Buddha Educational Foundation](http://www.budaedu.org/en/)
+* [The Corporate Body of the Buddha Educational Foundation](http://www.budaedu.org/ebooks/6-EN.php)
 * [The Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [84000.co](https://84000.co/)

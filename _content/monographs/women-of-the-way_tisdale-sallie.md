@@ -2,6 +2,7 @@
 title: "Women of the Way: Discovering 2,500 Years of Buddhist Wisdom"
 authors:
   - "Sallie Tisdale"
+external_url: "https://archive.org/details/womenofwaydiscov00tisd/page/n4/mode/1up"
 course: nuns
 tags:
   - rebirth-stories

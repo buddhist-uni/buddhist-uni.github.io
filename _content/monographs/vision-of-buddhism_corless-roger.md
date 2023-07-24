@@ -2,6 +2,7 @@
 title: "The Vision of Buddhism: The Space Under the Tree"
 authors:
   - "Roger Corless"
+external_url: "https://archive.org/details/visionofbuddhism0000corl/mode/1up"
 tags:
   - buddhism
   - form

@@ -2,6 +2,7 @@
 title: "Buddhism Goes to the Movies: An Introduction to Buddhist Thought and Practice"
 authors:
   - "Ronald Green"
+external_url: "https://archive.org/details/buddhismgoestomo0000gree/mode/1up"
 tags:
   - film
   - form

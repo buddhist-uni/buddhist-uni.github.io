@@ -3,7 +3,7 @@ title: "Sapiens: A Brief History of Humankind"
 authors:
   - "Yuval Noah Harari"
 translator: "John Purcell and Haim Watzman"
-external_url: "https://archive.org/details/sapiensbriefhist0000hara_a2m1/"
+external_url: "https://archive.org/details/sapiensbriefhist0000hara_a2m1/mode/1up"
 olid: OL28326205M
 course: world
 tags:

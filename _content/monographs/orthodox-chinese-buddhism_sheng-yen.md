@@ -9,6 +9,7 @@ tags:
   - mahayana
   - buddhism
 # maybe in chan course? But already have a lot of Sheng Yen intro there
+external_url: "https://archive.org/details/orthodoxchineseb0000shen/mode/1up"
 year: 2007
 month: aug
 olid: OL8595772M

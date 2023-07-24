@@ -12,7 +12,7 @@ tags:
   - rights
 month: dec
 year: 1948
-olid: OL27362704M
+olid: OL33222820M
 pages: 8
 ---
 

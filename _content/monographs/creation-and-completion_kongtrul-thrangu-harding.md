@@ -9,6 +9,7 @@ tags:
   - kagyu
 year: 1996
 olid: OL8308509M
+external_url: "https://archive.org/details/bdrc-W00KG02861/page/n6/mode/1up"
 oclc: 880452520
 publisher: wisdom
 pages: 144

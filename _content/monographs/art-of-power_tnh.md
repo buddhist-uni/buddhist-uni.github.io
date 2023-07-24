@@ -2,6 +2,7 @@
 title: "The Art of Power"
 authors:
   - tnh
+external_url: "https://archive.org/details/artofpower0000nhat/page/n6/mode/1up"
 course: lay
 tags:
   - power

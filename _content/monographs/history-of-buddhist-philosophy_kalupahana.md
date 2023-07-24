@@ -11,6 +11,7 @@ tags:
   - indian
   - philosophy
 olid: OL1556684M
+external_url: "https://archive.org/details/historyofbuddhis0000kalu/mode/1up"
 pages: 304
 ---
 

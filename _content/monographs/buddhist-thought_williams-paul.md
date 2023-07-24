@@ -1,6 +1,7 @@
 ---
 title: "Buddhist Thought: A Complete Introduction to the Indian Tradition"
 authors: [williams-paul, "Anthony Tribe"]
+external_url: "https://archive.org/details/buddhistthoughtc0000will/page/n4/mode/1up"
 course: mahayana-roots
 year: 2000
 address: London
