@@ -4,6 +4,7 @@ authors:
   - "Herbie Hancock"
   - "Daisaku Ikeda"
   - "Wayne Shorter"
+external_url: "https://archive.org/details/reachingbeyondim0000hanc/page/n2/mode/1up"
 tags:
   - dialogue
   - jazz

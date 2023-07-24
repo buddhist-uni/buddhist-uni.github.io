@@ -13,6 +13,9 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:A_man_in_yoga_asana
 {% include content_blurb.html category="essays" slug="dependant-liberation_brahmali" %}
 - Ajahn Brahmali explains how ethics and meditation naturally lead to enlightenment.
 
+{% include content_blurb.html category="canon" slug="iti96" %}
+- In this sutta, the Buddha explains that enlightenment is primarily about letting go of our attachment to sensual pleasures and becoming.
+
 {% include content_blurb.html category="canon" slug="an11.2" %}
 - This sutta makes the same point: If one merely focuses on ethics, and becomes consummate in ethics, the path to liberation unfolds on its own.
 

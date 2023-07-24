@@ -2,6 +2,7 @@
 title: "The Anatomy of a Moment"
 authors:
   - "Javier Cercas"
+external_url: "https://archive.org/details/anatomyofmomentt0000cerc/page/n4/mode/1up"
 translator: "Anne McLean"
 course: acting
 tags:
