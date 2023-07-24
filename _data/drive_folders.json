@@ -83,6 +83,10 @@
   "private": "https://drive.google.com/drive/folders/17zWCoFCX5QOHFHJKdsP2bw-AYlURoryC",
   "public": "https://drive.google.com/drive/folders/1-3P5u65MsX2gjuN46xqNV2dJxoAxrQDQ"
  },
+ "craft": {
+  "private": "https://drive.google.com/drive/folders/1CFmLNjI6wqNcK4S8dCpzgRuXPnDHw0Xj",
+  "public": "https://drive.google.com/drive/folders/1FnCuWujVpUbpmSyjRe8aMgnirIoonmxD"
+ },
  "death": {
   "private": "https://drive.google.com/drive/folders/10YatRWc7d6An-b0JHlwL7YbrnnjaWWJ2",
   "public": "https://drive.google.com/drive/folders/1CejhWVHrZncxhdmoGFcCAfqt8cEeuDwI"
@@ -91,9 +95,17 @@
   "private": "https://drive.google.com/drive/folders/1K33uusdM71vj7Yu5qvX55WAnnw4lyZOZ",
   "public": null
  },
+ "dialogue": {
+  "private": "https://drive.google.com/drive/folders/1T2QcWyCanAEQWuRr9G4g8oj7NPcUHQ8Q",
+  "public": "https://drive.google.com/drive/folders/11kpn4Hf-3E81Hf3mHBjjdQ9yEy_A0GaJ"
+ },
  "ea": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1234QK_JdiurFhgADDnpgWHOsicIIcine"
+ },
+ "east-asian-roots": {
+  "private": "https://drive.google.com/drive/folders/1dsxzckxKqYgGvJkQPjts_C_FwvpVoRdn",
+  "public": "https://drive.google.com/drive/folders/10ugZMtIGz_dtWMz2ClNWv9RRdAo4nvLr"
  },
  "education": {
   "private": "https://drive.google.com/drive/folders/1Ic5_ItnhnM4apugaFfL2DjUOfAh6P0xs",
