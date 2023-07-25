@@ -16,6 +16,7 @@ drive_links:
 course: thought
 tags:
   - contentment
+  - things
   - feeling
 ---
 
