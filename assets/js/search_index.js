@@ -3,6 +3,8 @@ layout: nil
 ---
 importScripts("/assets/js/lunr.min.js");
 importScripts("/assets/js/utils.js");
+function unaccent(e) { return e.update(utils.unaccented); }
+lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
 // Parameters
 var BMAX = 250; // Max blurb size in characters
@@ -44,6 +46,7 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
+    this.pipeline.add(unaccent);
     for (var key in store) {
         var v = store[key];
         this.add({
@@ -225,17 +228,37 @@ function displaySearchResults(results) {
 
 self.onmessage = function(e) {
   var results = [];
+  var warning = "";
+  var words = e.data.q.split(" ");
+  for (var i = 0; i < words.length; i++) {
+    const s = words[i].trim();
+    if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
+      words[i] = "+" + s;
+    } else {
+      words[i] = s;
+    }
+  }
+  var query = words.join(' ').trim();
   try {
-    results = idx.search(e.data.q);
+    results = idx.search(query);
+    if (!results.length){
+      warning = "<li>No results found matching all of your terms. Results found matching <em>any</em> term:</li>";
+      results = idx.search(e.data.q.trim());
+    }
   } catch (err) {
-    if (err.message.indexOf("unrecognised field") >= 0 && e.data.q.indexOf(":") >= 0) {
-      results = idx.search(e.data.q.replaceAll(":",""));
+    if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
+      results = idx.search(e.data.q.replaceAll(":"," "));
     } else { throw err; }
   }
   if (!results.length){
-    var words = e.data.q.split(" ");
-    if (words.find(function(w){ return w.length <= 2; }) == undefined)
+    words = e.data.q.split(" ");
+    if (words.find(function(w){ return w.length <= 2; }) == undefined) {
       results = idx.search(words.join("~1 ") + "~1");
+      if (results.length)
+        warning = "<li>No results found for your query. Perhaps you meant:</li>";
+      else
+        warning = "";
+    }
   }
   if (e.data.filterquery && e.data.filterquery !== "") {
     var filteredResults = idx.search(e.data.filterquery);
@@ -246,6 +269,7 @@ self.onmessage = function(e) {
     });
   }
   self.postMessage({
+    "warninghtml": warning,
     "html": displaySearchResults(results),
     "count": results ? results.length : 0,
     "q": e.data.q,
