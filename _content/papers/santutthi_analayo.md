@@ -16,6 +16,7 @@ drive_links:
 course: thought
 tags:
   - contentment
+  - feeling
 ---
 
 A brief summary of contentment as used in the Pāli Tipiṭaka.
