@@ -3,6 +3,8 @@ title: "Recognizing the Dhamma: a study guide"
 authors:
   - geoff
 external_url: "https://www.dhammatalks.org/Archive/Writings/Ebooks/RecognizingtheDhamma_181215.pdf"
+drive_url: "https://drive.google.com/file/d/1TCvWjpFNN4fKfne6Ja-S0taRGpRNPTCu/view?usp=drive_link"
+drive_url: :https://drive.google.com/file/d/15S-Oj6mPsSRw004kfbeISUPm3sov4bMn/view?usp=drive_link"
 course: thought
 tags:
   - sutta
