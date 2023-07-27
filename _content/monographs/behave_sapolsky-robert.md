@@ -6,7 +6,7 @@ month: may
 olid: OL27351361M
 publisher: "Penguin"
 external_url: "https://archive.org/details/behavebiologyofh0000sapo/page/n4/mode/1up"
-course: neuroscience
+course: inner
 status: featured
 tags:
   - biology
@@ -14,7 +14,7 @@ tags:
   - problems
   - emotions
   - power
-  - inner
+  - neuroscience
   - science
 pages: 790
 ---
@@ -23,5 +23,5 @@ pages: 790
 
 A magisterial and heart-felt survey of neuroscience, psychology, and biology which paints a broad but rigorous picture of how and why humans act the way they do--for better or for worse--and what we (individual meatbags) can do to be our best selves.
 
-The book is based on Sapolsky's Stanford course, ["Human Behavioral Biology", available on YouTube](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}.
+The book is based on Sapolsky's Stanford course, ["Human Behavioral Biology", available for free on YouTube](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}.
 

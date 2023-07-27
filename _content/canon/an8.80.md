@@ -9,10 +9,7 @@ course: meditation
 tags:
   - an
   - hindrances
-  - problems
-  - ethics
-  - becon
-  - thought
+# thought covered by Geoff's "Recognizing" Anthology
 year: 2018
 pages: 4
 ---

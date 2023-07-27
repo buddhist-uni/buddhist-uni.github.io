@@ -148,6 +148,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="snp5.4" %}
   - What is the difference between an Ordinary and an Enlightened being?
 
+{% include content_blurb.html category="canon" slug="sn21.10" %}
+  - What makes one truly renounced?
+
 {% include content_blurb.html category="booklets" slug="anatta-nibbana_nyanaponika" %}
   - How is “extinguishing” the Middle Way? How is it not nihilism?  How is "extinguishing" different from "annihilation"?
 

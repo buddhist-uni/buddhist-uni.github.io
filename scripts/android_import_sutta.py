@@ -269,17 +269,22 @@ subcat: poetry{extra_fields}"""
     if not shortcutid:
       print("Warning! Failed to create the shortcut")
   title = title.replace('"', '\\"')
+  coursefields = ""
+  if course:
+    coursefields = f"""course: {course}
+status: featured
+"""
   mdfile.write_text(f"""---
 title: "{title}"
-translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','')}
+translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','').replace('mills','mills-laurence')}
 slug: "{slugfield}"{extra_fields}
 external_url: "{external_url}"
 {drive_links}:
   - "{drive_link}"
-course: {course}
-tags:
+{coursefields}tags:
   - 
   - {book}
+# thought tag covered by Geoff's "Recognizing" anthology
 year: {year}
 pages: {pages}
 ---

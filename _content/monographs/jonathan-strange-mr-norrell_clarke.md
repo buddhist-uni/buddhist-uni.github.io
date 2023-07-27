@@ -4,7 +4,6 @@ authors:
   - "Susanna Clarke"
 subcat: fiction
 external_url: "https://archive.org/details/jonathanstrangem00clar/page/n6/mode/1up"
-status: featured
 course: literature
 tags:
   - england
@@ -18,6 +17,6 @@ address: "New York"
 pages: 782
 ---
 
-> Magic shall be written on the faces of the stony hills but their minds shall not be able to contain it
+> The first thing a student of magic learns is that there are books *about* magic and books *of* magic.
 
-A reverse myth imagining the emergence of magic in 19th-century England.
+A reverse myth imagining the re-emergence of magic in 19th-century England.

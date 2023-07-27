@@ -46,7 +46,7 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
-    this.pipeline.add(unaccent);
+    // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
     for (var key in store) {
         var v = store[key];
         this.add({
@@ -242,7 +242,7 @@ self.onmessage = function(e) {
   try {
     results = idx.search(query);
     if (!results.length){
-      warning = "<li>No results found matching all of your terms. Results found matching <em>any</em> term:</li>";
+      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
       results = idx.search(e.data.q.trim());
     }
   } catch (err) {
@@ -255,7 +255,7 @@ self.onmessage = function(e) {
     if (words.find(function(w){ return w.length <= 2; }) == undefined) {
       results = idx.search(words.join("~1 ") + "~1");
       if (results.length)
-        warning = "<li>No results found for your query. Perhaps you meant:</li>";
+        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
       else
         warning = "";
     }
