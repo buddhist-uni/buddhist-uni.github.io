@@ -1,5 +1,5 @@
 ---
-title: "Recognizing the Dhamma: a study guide"
+title: "Recognizing the Dhamma: A study guide"
 authors:
   - geoff
 external_url: "https://www.dhammatalks.org/Archive/Writings/Ebooks/RecognizingtheDhamma_181215.pdf"
