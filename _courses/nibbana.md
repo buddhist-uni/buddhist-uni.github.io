@@ -278,5 +278,8 @@ We finally come to the last, but perhaps most important, part of our course: the
 {% include content_blurb.html category="av" slug="after-nibbana_yuttadhammo" %}
   - "What's next?" What happens after enlightenment?
 
+{% include content_blurb.html category="canon" slug="thag6.10" %}
+  - Even children can get enlightened, though they may not show it...
+
 With those final words of inspiration, our course is now finished.  The rest is up to us.
 
