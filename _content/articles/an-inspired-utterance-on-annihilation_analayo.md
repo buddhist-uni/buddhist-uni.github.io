@@ -8,12 +8,11 @@ drive_links:
   - "https://drive.google.com/file/d/1-jXKK2Pu0kYORqjECuJf15VjVQj6Xt9n/view?usp=sharing"
 course: thought
 tags:
-  - sutta
-  - agama
   - anatta
   - udana
   - sa
   - emptiness
+  - nibbana
 year: 2021
 journal: "Sri Lanka International Journal of Buddhist Studies" 
 publisher: SIBA
