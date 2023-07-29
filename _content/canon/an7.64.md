@@ -11,6 +11,8 @@ course: karma
 tags:
   - an
   - anger
+  - hindrances
+# thought tag covered by "Recognizing" anthology
 year: 1998
 pages: 3
 ---

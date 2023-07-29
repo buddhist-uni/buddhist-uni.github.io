@@ -8,6 +8,7 @@ external_url: "https://www.slowdownshow.org/episode/2022/03/01/621-the-wrong-que
 course: america
 tags:
   - communication
+  - public-health
   - activism
 year: 2022
 month: mar
