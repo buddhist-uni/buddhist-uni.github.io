@@ -1,3 +1,4 @@
+---
 title: "On the Ignorance of the Learned"
 authors:
   - "Dodrupchen Jikmé Tenpé Nyima"

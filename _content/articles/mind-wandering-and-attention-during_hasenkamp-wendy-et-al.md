@@ -5,7 +5,7 @@ authors:
   - "Christine D. Wilson-Mendenhall"
   - "Erica Duncan"
   - "Lawrence W. Barsalou"
-external_url: "http://mindrxiv.org/4fnt6/download"
+external_url: "https://mindrxiv.org/4fnt6/download"
 source_url: "https://doi.org/10.1016/j.neuroimage.2011.07.008"
 drive_links:
   - "https://drive.google.com/file/d/1bp5dQSmwEr8mUDIl4Nu6vSQ6vW_C8Xq8/view?usp=drivesdk"
