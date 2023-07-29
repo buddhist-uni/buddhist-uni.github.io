@@ -1,7 +1,8 @@
 ---
 title: "An Inspired Utterance on Annihilation"
 authors:
-  - "Iromi Ariyaratne"
+  - analayo
+editor: "Iromi Ariyaratne"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/inspiredutterance.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1-jXKK2Pu0kYORqjECuJf15VjVQj6Xt9n/view?usp=sharing"
@@ -10,10 +11,13 @@ tags:
   - sutta
   - agama
   - anatta
+  - udana
+  - sa
+  - emptiness
 year: 2021
 journal: "Sri Lanka International Journal of Buddhist Studies" 
-publisher: 
-address: ""
+publisher: SIBA
+address: "Kundasale, Sri Lanka"
 volume: 7
 number: 1
 pages: 12
