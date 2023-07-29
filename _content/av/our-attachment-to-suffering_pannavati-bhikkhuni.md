@@ -8,7 +8,8 @@ drive_links:
 course: thought
 tags:
   - dukkha
-  - 
+  - dukkha
+  - emptiness
 year: 2017
 month: dec
 minutes: 62
