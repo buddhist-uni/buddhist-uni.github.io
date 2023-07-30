@@ -203,7 +203,7 @@ def process_pdf(pdf_file):
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
-  title = f"{sutta} {pali_name}: {eng_name}"
+  title = f"{sutta} {pali_name}{': '+eng_name if eng_name else ''}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
   course = input_with_tab_complete("course: ", get_known_courses())
   folder_id, shortcut_folder = get_gfolders_for_course(course)
@@ -284,7 +284,6 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
-# thought tag covered by Geoff's "Recognizing" anthology
 year: {year}
 pages: {pages}
 ---
