@@ -8,10 +8,10 @@ drive_links:
 course: thought
 tags:
   - dukkha
-  - dukkha
+  - problems
   - emptiness
 year: 2017
 month: dec
 minutes: 62
 ---
-This dharma talk focuses on the various ways suffering manifests in daily life, particularly as differnt forms of violence
+This dharma talk focuses on the various ways suffering manifests in daily life, particularly as inter-related types of violence
