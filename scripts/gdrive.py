@@ -22,7 +22,7 @@ FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 
 def link_to_id(link):
-  return re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/', link).groups()[0]
+  return re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?', link).groups()[0]
 
 def folderlink_to_id(link):
   return link if not link else link.replace(FOLDER_LINK_PREFIX, "")

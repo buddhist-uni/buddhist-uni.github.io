@@ -10,7 +10,6 @@ description: "The three kinds of feeling — pleasant, painful, and neutral feel
 ### Suttas
 <p>
 {% include content_blurb.html category="canon" slug="sn36.6" %} 
-{% include content_blurb.html category="canon" slug="sn35.247" %}
 {% include content_blurb.html category="canon" slug="sn36.11" %}
 </p>
 
