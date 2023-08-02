@@ -11,7 +11,6 @@ description: "The opposite of love, acceptance, and compassion, <i>vyāpāda</i>
 <p>
 {% include content_blurb.html category="canon" slug="an4.110" %}
 {% include content_blurb.html category="canon" slug="sn1.71" %}
-{% include content_blurb.html category="canon" slug="an5.249" %}
 {% include content_blurb.html category="canon" slug="sn7.2" %}
 {% include content_blurb.html category="canon" slug="an5.161" %}
 </p>

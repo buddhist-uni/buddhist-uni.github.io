@@ -11,7 +11,6 @@ description: "The culmination of the path, <i>vimutti</i> is the heart at rest, 
 <p>
 {% include content_blurb.html category="canon" slug="an10.81" %} 
 {% include content_blurb.html category="canon" slug="an10.117" %} 
-{% include content_blurb.html category="canon" slug="an3.25" %}
 {% include content_blurb.html category="canon" slug="an6.13" %}
 {% include content_blurb.html category="canon" slug="an9.44" %}
 {% include content_blurb.html category="canon" slug="sn12.27" %}

@@ -8,6 +8,7 @@ drive_links:
 course: monastic-advice
 tags:
   - an
+# imagery covered by Hecker's similes
 year: 2018
 pages: 2
 ---

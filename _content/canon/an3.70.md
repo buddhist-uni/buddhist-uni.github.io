@@ -12,6 +12,7 @@ tags:
   - deva
   - uposatha
   - ethics
+# imagery covered by Hecker's similes
 pages: 9
 ---
 

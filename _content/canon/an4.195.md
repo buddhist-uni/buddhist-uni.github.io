@@ -9,6 +9,7 @@ tags:
   - an
   - karma
   - jains
+# imagery covered by Hecker's similes
 year: 2018
 pages: 4
 ---

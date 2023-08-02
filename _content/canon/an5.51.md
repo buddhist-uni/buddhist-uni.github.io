@@ -9,7 +9,7 @@ course: hindrances
 tags:
   - an
   - samadhi
-  - imagery
+# imagery covered by Hecker's similes
 pages: 2
 ---
 

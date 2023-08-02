@@ -163,6 +163,9 @@ In Buddhism, the highest good is awakening, and in this chapter Śāntideva expr
 
 Accepting our faults is a critical starting point for ethical development, and a practice that the Buddha talked much about:
 
+{% include content_blurb.html category="canon" slug="an5.249" %}
+- The Buddha compares an unethical person to a charnal pit to point out the downsides of unethical conduct.
+
 {% include content_blurb.html category="canon" slug="an8.14" %}
 - How do you react when someone criticizes you? Can you recognize yourself or someone you know in each of these eight ways?
 
@@ -170,7 +173,7 @@ Accepting our faults is a critical starting point for ethical development, and a
 - Venerable Mahā Moggallāna lists 16 qualities that make someone easy to admonish.
 
 {% include content_blurb.html category="canon" slug="sn42.8" %}
-- The Buddha points out that even a killer only spends a small amount of their time actually killing, pointing out how hard it is to know ourselves.
+- The Buddha points out that even a killer only spends a small amount of their time actually killing, pointing out how hard it is to know ourselves—and how easy it is to delude ourselves!
 
 ##### Chapter 3: Taking Hold of Bodhicitta
 

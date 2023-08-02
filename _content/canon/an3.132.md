@@ -11,8 +11,8 @@ course: speech
 tags:
   - an
   - feeling
-  - imagery
   - function
+# imagery covered by Hecker's similes
 pages: 1
 ---
 
