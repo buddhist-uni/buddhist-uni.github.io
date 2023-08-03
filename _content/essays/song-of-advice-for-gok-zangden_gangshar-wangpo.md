@@ -11,7 +11,8 @@ year: 2018
 pages: 1
 tags:
   - dedication
-  - discrimination
+  - thought
 subcat: poetry
+---
 
 Khenpo Gangshar shares three verses to inspire the development of undistracted awareness.
