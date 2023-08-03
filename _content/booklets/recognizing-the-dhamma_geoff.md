@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/15S-Oj6mPsSRw004kfbeISUPm3sov4bMn/view?usp=drive_link"
 course: thought
 tags:
-  - sutta
+  - pali-canon
   - fetters
 year: 2013 
 pages: 103

@@ -3,7 +3,7 @@ title: Overlapping Parallels
 ---
 
 {% assign output = "" | split: "" %}
-{% assign ignore = "mn,an,sn,dn,ud,snp" | split: "," %}
+{% assign ignore = "ma,sa,ea,da,mn,an,sn,dn,ud,snp,kn,vv" | split: "," %}
 
 {% assign allcanon = site.content | where: "category", "canon" %}
 {% for fromsutta in allcanon %}
