@@ -15,6 +15,13 @@ tags:
   - an
 year: 2018
 pages: 3
+parallels:
+  - ma83
+  - t47
+# Partial parallels from SC
+#  - ea19.3
+#  - mn37
+#  - mnd14
 ---
 
 > … near Kallavāḷamutta Village, Venerable Mahāmoggallāna was nodding off while meditating...

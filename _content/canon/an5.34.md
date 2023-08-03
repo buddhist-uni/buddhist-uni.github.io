@@ -12,6 +12,13 @@ tags:
   - karma
   - ethics
 pages: 2
+parallels:
+  - an7.57
+  - ea32.10
+  - ea52.6
+  - sf130
+# Partial parallels from SC
+#  - pe3
 ---
 
 > … can you point out a fruit of giving that’s apparent in the present life?

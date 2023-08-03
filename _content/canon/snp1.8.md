@@ -18,6 +18,8 @@ tags:
 subcat: poetry
 year: 2004
 pages: 2
+parallels:
+  - kp9
 ---
 
 > One should sustain this recollection

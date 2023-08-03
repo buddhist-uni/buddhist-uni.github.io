@@ -11,6 +11,12 @@ tags:
   - samadhi
 year: 2018
 pages: 4
+parallels:
+  - ea39.4
+  - ma3
+# Partial parallels from SC
+#  - mil3.1.12
+#  - mil7.4.10
 ---
 
 The Buddha compares *samādhi* to a fortress that cannot be overwhelmed.

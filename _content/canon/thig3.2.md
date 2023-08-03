@@ -11,6 +11,8 @@ tags:
 year: 2018
 subcat: poetry
 pages: 1
+parallels:
+  - thi-ap11
 ---
 
 A short sutta celebrating a Bhikkhunī meditation teacher.

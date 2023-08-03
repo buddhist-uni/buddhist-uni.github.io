@@ -13,6 +13,8 @@ tags:
   - an
 year: 2012
 pages: 2
+parallels:
+  - kv22.7
 ---
 
 > … wine at minimum conduces to madness

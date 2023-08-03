@@ -9,6 +9,10 @@ course: lay
 tags:
   - an
 pages: 12
+parallels: []
+# Partial parallels from SC
+#  - an5.41
+#  - ma126
 ---
 
 > The Noble Disciple, householder,

@@ -14,6 +14,9 @@ tags:
   - function
 # imagery covered by Hecker's similes
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - pp2.3
 ---
 
 > And how is an individual like an inscription in rock?

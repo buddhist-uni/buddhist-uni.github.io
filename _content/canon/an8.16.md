@@ -12,6 +12,9 @@ tags:
   - an
 year: 2012
 pages: 1
+parallels:
+  - pe5
+  - pli-tv-kd17
 ---
 
 > … possessing eight qualities, a bhikkhu is worthy of going on a mission

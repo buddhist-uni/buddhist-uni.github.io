@@ -11,6 +11,13 @@ tags:
   - an
 year: 2012
 pages: 2
+parallels:
+  - an8.14
+  - sa924
+  - sa925
+  - sa-2.149
+  - sa-2.150
+  - t115
 ---
 
 > Whether or not other bhikkhus train, I will train.

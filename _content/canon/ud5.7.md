@@ -13,6 +13,15 @@ tags:
   - thought
 year: 2008
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - kv2.3
+#  - t212.30
+#  - t213.29
+#  - tha-ap544
+#  - uv29
+#  - uv-kg29
+#  - uvs29
 ---
 
 > Whatever doubts there are...  

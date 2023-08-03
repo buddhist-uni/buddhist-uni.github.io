@@ -12,6 +12,9 @@ tags:
   - deva
   - rebirth-stories
 pages: 2
+parallels:
+  - sa594
+  - sa-2.188
 ---
 
 > … he sank and melted down and wasn’t able to stay still. It’s like when ghee or oil is poured onto sand: it sinks and melts down, and can’t remain

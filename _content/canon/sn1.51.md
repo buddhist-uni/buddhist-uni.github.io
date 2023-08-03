@@ -11,6 +11,16 @@ tags:
   - sn
   - aging
 pages: 1
+parallels:
+  - sa1015
+  - sa-2.242
+# Partial parallels from SC
+#  - t210.5
+#  - t212.7
+#  - t213.6
+#  - uv6
+#  - uv-kg6
+#  - uvs6
 ---
 
 > What is good      all the way through old age?

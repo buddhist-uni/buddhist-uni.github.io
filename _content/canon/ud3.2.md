@@ -12,6 +12,13 @@ tags:
   - nibbana
 year: 2008
 pages: 4
+parallels: []
+# Partial parallels from SC
+#  - mil5.3.3
+#  - t213.32
+#  - uv32
+#  - uv-kg32
+#  - uvs32
 ---
 
 The Buddha promises his half-brother Nanda five hundred celestial nymphs if he stays in the holy life. The gambit works, demonstrating the transformative potential of the monastic life.

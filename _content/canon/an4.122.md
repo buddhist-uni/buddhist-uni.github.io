@@ -11,6 +11,8 @@ tags:
   - imagery
 year: 2018
 pages: 2
+parallels:
+  - mn67
 ---
 
 > … a gentleman who goes forth from the lay life to homelessness in this teaching and training should anticipate four dangers

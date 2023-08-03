@@ -11,6 +11,9 @@ tags:
 course: thought # definitely
 year: 2000
 pages: 1
+parallels:
+  - sa1281
+  - sa-2.279
 ---
 
 > Should one rein in the mind from everything...

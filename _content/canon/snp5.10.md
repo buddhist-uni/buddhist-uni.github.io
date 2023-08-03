@@ -16,6 +16,10 @@ tags:
   - philosophy
   - imagery
 minutes: 1
+parallels: []
+# Partial parallels from SC
+#  - cnd2
+#  - cnd13
 ---
 
 > a perilous flood has arisen,  

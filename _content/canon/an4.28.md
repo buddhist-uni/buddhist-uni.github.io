@@ -12,6 +12,25 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2012
 pages: 2
+parallels:
+  - t1536.6
+# Partial parallels from SC
+#  - an4.6
+#  - an5.42
+#  - dhp221-234
+#  - dn33
+#  - gdhp224-242
+#  - mnd16
+#  - pdhp278-305
+#  - t210.25
+#  - t212.23
+#  - t212.30
+#  - t213.22
+#  - t213.29
+#  - ud7.6
+#  - uv22
+#  - uv-kg22
+#  - uvs22
 ---
 
 > Any bhikkhu who is skillful in this, diligent, clearly comprehending and ever mindful, is said to be standing in an ancient, primal noble lineage.

@@ -10,6 +10,25 @@ tags:
   - ud
 year: 2008
 pages: 4
+parallels:
+  - mil5.2.5
+  - ud2.4
+# Partial parallels from SC
+#  - dhp306-319
+#  - gdhp259-273
+#  - iti48
+#  - pdhp96-120
+#  - snp3.10
+#  - t210.30
+#  - t212.9
+#  - t212.33
+#  - t213.8
+#  - t213.32
+#  - uv8
+#  - uv32
+#  - uv-kg8
+#  - uv-kg32
+#  - uvs8
 ---
 
 > having heard that rough speech broadcast around,  

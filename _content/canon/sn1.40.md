@@ -11,6 +11,9 @@ tags:
 course: path
 year: 2000
 pages: 1
+parallels:
+  - sa1273
+  - sa-2.271
 ---
 
 > One should not pursue a course  

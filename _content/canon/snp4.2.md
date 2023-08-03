@@ -14,6 +14,13 @@ tags:
   - canonical-poetry
 year: 2015
 pages: 2
+parallels:
+  - pli-tv-kd5
+  - ud5.6
+# Partial parallels from SC
+#  - mnd2
+#  - pe1
+#  - t198
 ---
 
 > The person who’s to their body-cave  

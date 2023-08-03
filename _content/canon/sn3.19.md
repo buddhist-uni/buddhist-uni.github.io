@@ -11,6 +11,10 @@ tags:
   - sn
 year: 2018
 pages: 2
+parallels:
+  - ea23.4
+  - sa1232
+  - sa-2.59
 ---
 
 > … people collected it and drank it and bathed in it and used it for their own purpose. Since that water was properly utilized, it’s used, not wasted.

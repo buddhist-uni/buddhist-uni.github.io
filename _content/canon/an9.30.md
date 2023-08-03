@@ -12,6 +12,13 @@ tags:
   - problems
 year: 2018
 pages: 1
+parallels:
+  - an10.80
+# Partial parallels from SC
+#  - an9.29
+#  - an10.79
+#  - dn33
+#  - dn34
 ---
 
 Nine kinds of resentment and how to handle them.

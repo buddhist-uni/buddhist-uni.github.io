@@ -11,6 +11,13 @@ tags:
   - meditation
 year: 2018
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - an3.95
+#  - an10.61
+#  - an10.62
+#  - sn12.23
+#  - sn55.38
 ---
 
 > [There is] a time for listening to the teaching, a time for discussing the teaching, a time for serenity, and a time for discernment.

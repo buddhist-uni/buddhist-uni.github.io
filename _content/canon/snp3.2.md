@@ -13,6 +13,14 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2015
 pages: 4
+parallels:
+  - lal18
+  - san-lo-mvu55
+# Partial parallels from SC
+#  - cnd11
+#  - mnd8
+#  - mnd13
+#  - sn4.24
 ---
 
 > As I strove to subdue myself  

@@ -13,6 +13,31 @@ tags:
   - intellect
 year: 2018
 pages: 1
+parallels:
+  - sa1276
+  - sa-2.274
+  - sf3
+  - sf9
+  - sf210
+# Partial parallels from SC
+#  - dhp60-75
+#  - mil3.4.5
+#  - pdhp96-120
+#  - pdhp174-194
+#  - t210.13
+#  - t210.17
+#  - t212.5
+#  - t212.10
+#  - t212.29
+#  - t213.4
+#  - t213.9
+#  - t213.28
+#  - uv4
+#  - uv9
+#  - uv-kg4
+#  - uv-kg9
+#  - uvs4
+#  - uvs9
 ---
 
 > Witless fools behave  

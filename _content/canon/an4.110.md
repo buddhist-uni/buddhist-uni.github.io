@@ -12,6 +12,9 @@ tags:
   - groups
 year: 2018
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - pp2.4
 ---
 
 > … these four people similar to vipers are found in the world

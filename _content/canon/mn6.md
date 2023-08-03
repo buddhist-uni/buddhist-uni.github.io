@@ -10,6 +10,13 @@ tags:
   - mn
 year: 2018
 pages: 4
+parallels:
+  - an10.71
+  - ma105
+# Partial parallels from SC
+#  - an2.32-41
+#  - dn2
+#  - sn47.46
 ---
 
 > … let them fulfill their precepts, be committed to inner serenity of the heart, not neglect absorption, be endowed with discernment, and frequent empty huts.

@@ -12,6 +12,10 @@ tags:
   - speech
 year: 2008
 pages: 6
+parallels: []
+# Partial parallels from SC
+#  - uv33
+#  - uv-kg33
 ---
 
 The famous simile of the blind men and the elephant.

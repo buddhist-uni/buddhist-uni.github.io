@@ -15,6 +15,16 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2012
 pages: 2
+parallels:
+  - ea28.3
+# Partial parallels from SC
+#  - pli-tv-kd16
+#  - sn10.8
+#  - t212.31
+#  - t213.30
+#  - uv30
+#  - uv-kg30
+#  - uvs30
 ---
 
 > I am one of those in the world who sleep well.

@@ -11,6 +11,10 @@ tags:
   - an
 year: 2018
 pages: 2
+parallels:
+  - sf245
+# Partial parallels from SC
+#  - an5.143
 ---
 
 > … those Licchavis clothed Piṅgiyānī with five hundred upper robes. And Piṅgiyānī clothed the Buddha with them.

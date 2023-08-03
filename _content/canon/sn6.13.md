@@ -12,6 +12,11 @@ tags:
   - canonical-poetry
   - characters
 pages: 2
+parallels:
+  - sa1191
+  - sa-2.104
+# Partial parallels from SC
+#  - thag2.11
 ---
 
 > Where dreadful serpents slither,  

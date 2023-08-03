@@ -12,6 +12,17 @@ tags:
   - sn
 year: 2000
 pages: 1
+parallels:
+  - ea31.9
+  - sa576
+  - sa-2.161
+# Partial parallels from SC
+#  - dn16
+#  - dn17
+#  - ja95
+#  - sn6.15
+#  - sn15.20
+#  - thag20.1
 ---
 
 > They do not know bliss  

@@ -13,6 +13,13 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 3
+parallels:
+  - pli-tv-kd5
+  - ud5.6
+# Partial parallels from SC
+#  - mnd9
+#  - sn22.3
+#  - t198
 ---
 
 > What is this body full of piss and shit?  

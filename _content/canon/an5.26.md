@@ -13,6 +13,8 @@ tags:
   - ebts
   - hermeneutics
 pages: 2
+parallels:
+  - t1536.14
 ---
 
 > Mendicants, there are these five opportunities for freedom.

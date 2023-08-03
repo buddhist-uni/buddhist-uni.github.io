@@ -15,6 +15,15 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - pli-tv-kd17
+#  - snp1.1
+#  - t212.31
+#  - t213.30
+#  - uv30
+#  - uv-kg30
+#  - uvs30
 ---
 
 > Oh, what bliss! Oh, what bliss!

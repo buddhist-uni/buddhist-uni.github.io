@@ -13,6 +13,14 @@ tags:
   - monastic
 year: 2021
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - t210.34
+#  - t212.33
+#  - t213.32
+#  - uv32
+#  - uv-kg32
+#  - uvs32
 ---
 
 > But Mahākasspa refused those deities...

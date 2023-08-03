@@ -14,6 +14,9 @@ tags:
 subcat: poetry
 year: 1995
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - dn31
 ---
 
 > doing his manly duties,  

@@ -13,6 +13,16 @@ tags:
   - monastic-advice
 year: 2014
 pages: 8
+parallels: []
+# Partial parallels from SC
+#  - dhp320-333
+#  - t210.31
+#  - t212.32
+#  - t213.31
+#  - thag1.77
+#  - uv31
+#  - uv-kg31
+#  - uvs31
 ---
 
 > Oh, when will I stay in a mountain cave,  

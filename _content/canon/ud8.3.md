@@ -11,6 +11,14 @@ tags:
   - epistemology
 year: 2008
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - ne14
+#  - t212.27
+#  - t213.26
+#  - uv26
+#  - uv-kg26
+#  - uvs26
 ---
 
 > There is, monks, an unborn, unbecome, unmade, unconditioned.

@@ -14,6 +14,10 @@ tags:
 year: 1995
 subcat: poetry
 pages: 3
+parallels:
+  - thi-ap38
+# Partial parallels from SC
+#  - ja530
 ---
 
 Punnika points out how silly it is to believe in ritual bathing and successfully converts a Brahman who ends the verse by making it all about him.

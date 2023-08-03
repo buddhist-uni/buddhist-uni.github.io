@@ -16,6 +16,16 @@ tags:
 subcat: poetry
 year: 2015
 pages: 4
+parallels: []
+# Partial parallels from SC
+#  - mil5.3.12
+#  - mil7.2.4
+#  - ne9
+#  - pe2
+#  - sa1004
+#  - sa-2.142
+#  - sn1.12
+#  - sn4.8
 ---
 
 > Whoso has boys, has sorrow of his boys,  

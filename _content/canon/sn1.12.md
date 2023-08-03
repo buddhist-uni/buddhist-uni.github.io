@@ -13,6 +13,12 @@ tags:
 year: 2018
 subcat: poetry
 pages: 1
+parallels:
+  - sa1004
+  - sa-2.142
+  - sn4.8
+# Partial parallels from SC
+#  - snp1.2
 ---
 
 > Standing to one side, that deity recited this verse...

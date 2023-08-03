@@ -12,6 +12,9 @@ tags:
   - an
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an4.160
 ---
 
 > … these five things lead to the decline and disappearance of the true teaching

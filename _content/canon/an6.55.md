@@ -14,6 +14,17 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 4
+parallels:
+  - ea23.3
+  - lzh-dg-kd5
+  - lzh-mi-kd6
+  - ma123
+  - pli-tv-kd5
+  - sa254
+  - sf274
+  - sf278
+# Partial parallels from SC
+#  - kv1.2
 ---
 
 > When your harp’s strings were tuned too tight, was it resonant and playable?

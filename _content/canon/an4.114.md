@@ -11,6 +11,18 @@ tags:
 # imagery covered by Hecker's similes
 year: 2018
 pages: 2
+parallels:
+  - an5.140
+  - ea-2.26
+# Partial parallels from SC
+#  - an4.157
+#  - an4.164
+#  - an4.165
+#  - mn2
+#  - mn125
+#  - pli-tv-bi-vb-pc71
+#  - pli-tv-bu-vb-pc65
+#  - pli-tv-kd1
 ---
 
 > … a mendicant with four qualities is worthy of offerings

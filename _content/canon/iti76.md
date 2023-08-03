@@ -13,6 +13,11 @@ tags:
   - iti
 year: 2001
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - ja503
+#  - ja545
+#  - thag12.1
 ---
 
 > Aspiring to these three forms of bliss, a wise person should guard his virtue.

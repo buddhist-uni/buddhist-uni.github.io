@@ -20,6 +20,9 @@ tags:
   - thought
 year: 2018
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - pli-tv-kd20
 ---
 
 > It would be good, lord, if the Blessed One would teach me the Dhamma in brief

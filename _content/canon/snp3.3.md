@@ -13,6 +13,21 @@ tags:
   - epistemology
 year: 1994
 pages: 1
+parallels:
+  - sa1218
+  - sa-2.253
+  - sn8.5
+# Partial parallels from SC
+#  - pe3
+#  - sag
+#  - t210.8
+#  - t210.38
+#  - t212.9
+#  - t213.8
+#  - thag21.1
+#  - uv8
+#  - uv-kg8
+#  - uvs8
 ---
 
 > Truth, indeed, is deathless speech

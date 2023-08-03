@@ -11,6 +11,8 @@ tags:
   - social
 year: 2018
 pages: 1
+parallels:
+  - dn15
 ---
 
 > Craving is a cause of seeking. Seeking is a cause of gaining...

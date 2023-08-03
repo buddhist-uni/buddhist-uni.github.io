@@ -13,6 +13,11 @@ tags:
   - sn
 year: 2020
 pages: 2
+parallels:
+  - d296
+  - sa1226
+  - sa-2.53
+  - san-mu-kd17
 ---
 
 > A prince or princess in the royal family, a snake, a fire, and a monk. These four things should not be looked down on or belittled because they are young.

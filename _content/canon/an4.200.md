@@ -11,6 +11,16 @@ tags:
   - arahant
 year: 2018
 pages: 4
+parallels:
+  - sa985
+# Partial parallels from SC
+#  - mn44
+#  - mn109
+#  - ne20
+#  - ps1.2
+#  - sn22.44
+#  - sn41.3
+#  - vb17
 ---
 
 > … four things are born of love and hate

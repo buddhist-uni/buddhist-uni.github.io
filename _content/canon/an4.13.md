@@ -11,6 +11,11 @@ tags:
   - an
 year: 2012
 pages: 1
+parallels:
+  - an4.69
+  - an4.275
+  - sa875
+  - sa876
 ---
 
 > … there are these four right strivings. What four?

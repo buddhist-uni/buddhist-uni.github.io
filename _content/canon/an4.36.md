@@ -12,6 +12,13 @@ tags:
   - buddha
   - philosophy
 pages: 2
+parallels:
+  - ea38.3
+  - gf10
+  - sa101
+  - sa-2.267
+# Partial parallels from SC
+#  - kv18.1
 ---
 
 > Remember me, brahmin, as a Buddha.

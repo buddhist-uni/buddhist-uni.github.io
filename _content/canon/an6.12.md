@@ -12,6 +12,11 @@ tags:
   - monastic-advice
 year: 1997
 pages: 1
+parallels:
+  - an6.11
+  - dn33
+  - ea37.1
+  - t1536.15
 ---
 
 > … these six are conditions that are conducive to amiability, that engender feelings of endearment and respect

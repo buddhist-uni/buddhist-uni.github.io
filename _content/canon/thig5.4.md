@@ -13,6 +13,10 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 1
+parallels:
+  - thi-ap25
+# Partial parallels from SC
+#  - thig2.1
 ---
 
 > Nandā, see this bag of bones...

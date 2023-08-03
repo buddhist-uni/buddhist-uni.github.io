@@ -1,9 +1,11 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
 from strutils import input_with_prefill, prompt, system_open, input_with_tab_complete
+from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archive_site import save_url_to_archiveorg
 
+yaml_list_prefix = '\n  - '
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
 NONSC_TRANSLATORS = [{
   'author_short': 'Gnanananda',
@@ -257,6 +259,9 @@ subcat: poetry{extra_fields}"""
       year = input_with_prefill("year: ", "2010 # a wild guess")
   if not pages:
     pages = input("pages: ")
+  parallels = get_parallels_yaml(scdata['uid'])
+  if parallels:
+    parallels += "\n"
   print(f"Attempting to upload \"{filename}\" to Google Drive...")
   filegid = upload_to_google_drive(pdf_file, args.client, filename=filename, folder_id=folder_id)
   if not filegid:
@@ -286,7 +291,7 @@ external_url: "{external_url}"
   - {book}
 year: {year}
 pages: {pages}
----
+{parallels}---
 
 > 
 """)

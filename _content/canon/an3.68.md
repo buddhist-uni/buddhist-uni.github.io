@@ -15,6 +15,10 @@ tags:
   - wise-attention
   - thought
 pages: 2
+parallels:
+  - an10.108
+  - ea21.7
+  - ea-2.45
 ---
 
 What is the difference between greed, hatred, and delusion?

@@ -15,6 +15,16 @@ tags:
   - snp
 year: 2005
 pages: 2
+parallels:
+  - sa98
+  - sa-2.264
+  - sa-3.1
+  - sf25
+  - sn7.11
+# Partial parallels from SC
+#  - sn7.8
+#  - sn7.9
+#  - snp3.4
 ---
 
 > Faith is the seed, practice the rain,  

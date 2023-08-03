@@ -14,6 +14,14 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 4
+parallels: []
+# Partial parallels from SC
+#  - an11.16
+#  - cnd5
+#  - cnd15
+#  - mn52
+#  - mn64
+#  - mnd14
 ---
 
 > They contemplate the phenomena there—included in form, feeling, perception, choices, and consciousness—as impermanent, as suffering, as diseased, as a boil, as a dart, as misery, as an affliction, as alien, as falling apart, as empty, as not-self.

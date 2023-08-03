@@ -11,6 +11,9 @@ tags:
   - function
   - an
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - pp2.3
 ---
 
 > … what is the person whose mind is like a diamond?

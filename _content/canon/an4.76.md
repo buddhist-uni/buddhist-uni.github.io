@@ -13,6 +13,8 @@ tags:
   - an
 year: 2018
 pages: 1
+parallels:
+  - dn16
 ---
 
 > … at the time of his final extinguishment. There the Buddha addressed the mendicants...

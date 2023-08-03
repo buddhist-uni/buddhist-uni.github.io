@@ -13,6 +13,8 @@ tags:
   - effort
 year: 2018
 pages: 4
+parallels:
+  - ea33.3
 ---
 
 > … five people similar to warriors are found among the monks

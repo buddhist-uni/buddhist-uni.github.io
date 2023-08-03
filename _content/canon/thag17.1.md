@@ -11,6 +11,19 @@ tags:
   - medieval
 year: 2014
 pages: 5
+parallels: []
+# Partial parallels from SC
+#  - dhp1-20
+#  - gdhp182-200
+#  - ja221
+#  - ja514
+#  - pdhp84-95
+#  - t210.9
+#  - t212.30
+#  - t213.29
+#  - uv29
+#  - uv-kg29
+#  - uvs29
 ---
 
 > In the future  

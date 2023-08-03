@@ -21,6 +21,9 @@ tags:
   - meditation
   - path
 minutes: 6
+parallels:
+  - an3.39
+  - ma117
 ---
 
 > … beings are intoxicated with life and engage in misconduct by body, speech, and mind. But when one often reflects upon [death], the intoxication with life is diminished.

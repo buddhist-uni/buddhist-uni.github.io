@@ -13,6 +13,12 @@ tags:
   - becon
 year: 2018
 pages: 4
+parallels:
+  - ma125
+# Partial parallels from SC
+#  - an3.85
+#  - iti30
+#  - iti64
 ---
 
 Debt in the world, debt in the training, and the highest freedom from debt.

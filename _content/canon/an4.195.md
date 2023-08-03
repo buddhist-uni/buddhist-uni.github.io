@@ -12,6 +12,10 @@ tags:
 # imagery covered by Hecker's similes
 year: 2018
 pages: 4
+parallels:
+  - ma12
+# Partial parallels from SC
+#  - sn42.12
 ---
 
 A Jain follower espouses a version of fatalism which the Buddha then refutes.

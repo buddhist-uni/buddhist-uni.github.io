@@ -10,6 +10,17 @@ tags:
   - an
   - deva
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an3.38
+#  - ea24.6
+#  - ja489
+#  - ja541
+#  - sa1117
+#  - sa-2.46
+#  - sht-sutta55
+#  - sn10.5
+#  - thig2.7
 ---
 
 > On the eighth day of the fortnight, mendicants, the ministers and counselors of the Four Great Kings wander about the world...

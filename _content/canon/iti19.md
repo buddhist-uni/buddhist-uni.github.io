@@ -13,6 +13,10 @@ tags:
   - iti
 year: 2001
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - an10.40
+#  - pli-tv-kd17
 ---
 
 > Blissful is concord in the Saṅgha.

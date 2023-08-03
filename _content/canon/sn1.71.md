@@ -18,6 +18,27 @@ tags:
 subcat: poetry
 year: 2000
 pages: 1
+parallels:
+  - ne37
+  - sa1285
+  - sa-2.283
+# Partial parallels from SC
+#  - gdhp274-289
+#  - sa1116
+#  - sa1158
+#  - sa1309
+#  - sa-2.45
+#  - sa-2.81
+#  - sa-2.308
+#  - sn2.3
+#  - sn7.1
+#  - sn11.21
+#  - t210.25
+#  - t212.21
+#  - t213.20
+#  - uv20
+#  - uv-kg20
+#  - uvs20
 ---
 
 > What is the one thing, O Gotama,

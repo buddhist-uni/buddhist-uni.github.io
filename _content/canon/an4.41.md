@@ -16,6 +16,12 @@ tags:
   - iddhi
   - jhana
 pages: 2
+parallels:
+  - arv12
+  - t1536.7
+# Partial parallels from SC
+#  - an3.32
+#  - snp5.4
 ---
 
 > There is a way of developing immersion further

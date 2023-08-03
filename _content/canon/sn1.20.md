@@ -12,6 +12,13 @@ tags:
   - sn
 year: 2000
 pages: 4
+parallels:
+  - sa1078
+  - sa-2.17
+# Partial parallels from SC
+#  - iti63
+#  - ja167
+#  - sag
 ---
 
 > … sensual pleasures are time-consuming, full of suffering and despair, and the danger in them is greater still

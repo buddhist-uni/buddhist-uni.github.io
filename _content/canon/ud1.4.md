@@ -12,6 +12,13 @@ tags:
   - ud
 year: 2018
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - ne37
+#  - pli-tv-kd1
+#  - uv33
+#  - uv-kg33
+#  - uvs33
 ---
 
 > … what are the things that make one a brahmin?

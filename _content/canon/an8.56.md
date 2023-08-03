@@ -11,6 +11,10 @@ tags:
   - an
 year: 2018
 pages: 1
+parallels:
+  - an6.23
+  - cnd23
+  - ea-2.28
 ---
 
 > Mendicants, ‘danger’ is a term for sensual pleasures...

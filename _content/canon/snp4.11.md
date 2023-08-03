@@ -15,6 +15,12 @@ tags:
   - snp
   - speech
 minutes: 6
+parallels:
+  - pli-tv-kd5
+  - ud5.6
+# Partial parallels from SC
+#  - mnd11
+#  - t198
 ---
 
 > Whenever there are arguments and quarrels, tears and anguish, arrogance and pride, and grudges and insults to go with them, can you explain how these things come about?

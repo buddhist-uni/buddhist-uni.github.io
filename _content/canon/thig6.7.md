@@ -11,6 +11,13 @@ tags:
   - nibbana
 year: 2021
 pages: 1
+parallels:
+  - dhp146-156
+  - t210.19
+  - t212.32
+  - t213.31
+  - uv31
+  - uv-kg31
 ---
 
 > Guttā, why did you go forth?

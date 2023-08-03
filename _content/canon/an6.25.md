@@ -11,6 +11,12 @@ tags:
   - thought
 year: 2018
 pages: 2
+parallels:
+  - an6.10
+  - sa931
+  - sa-2.156
+  - t1536.16
+  - t1537.8
 ---
 
 > What six? Firstly, a noble disciple recollects...

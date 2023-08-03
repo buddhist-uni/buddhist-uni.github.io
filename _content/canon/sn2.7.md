@@ -12,6 +12,11 @@ tags:
   - canonical-poetry
 year: 2007
 pages: 1
+parallels:
+  - sa1305
+  - sa-2.304
+# Partial parallels from SC
+#  - an9.42
 ---
 
 > Even in a confining place they find it,  

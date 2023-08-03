@@ -14,6 +14,8 @@ tags:
 status: featured
 year: 2018
 pages: 3
+parallels:
+  - ma25
 ---
 
 > … you should ignore that person’s impure behavior

@@ -11,6 +11,12 @@ tags:
   - path
 year: 2018
 pages: 2
+parallels:
+  - ma138
+  - sf210
+# Partial parallels from SC
+#  - iti22
+#  - ne37
 ---
 
 > Don’t fear good deeds. For ‘good deeds’ is a term for happiness.

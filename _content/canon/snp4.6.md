@@ -12,6 +12,14 @@ tags:
   - vipassana
 year: 1983
 pages: 1
+parallels:
+  - pli-tv-kd5
+  - ud5.6
+# Partial parallels from SC
+#  - mnd6
+#  - orphan
+#  - pe1
+#  - t198
 ---
 
 > A wise man is not deluded by what is perceived by the senses. He does not expect purity by any other way.

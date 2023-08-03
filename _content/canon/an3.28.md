@@ -10,6 +10,14 @@ tags:
   - an
   - path
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - cnd22
+#  - mn41
+#  - mn114
+#  - mnd7
+#  - mnd14
+#  - pp2.3
 ---
 
 > … what, bhikkhus, is the person whose speech is like dung?

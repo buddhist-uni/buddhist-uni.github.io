@@ -11,6 +11,11 @@ tags:
 year: 2021
 subcat: poetry
 pages: 2
+parallels:
+  - thi-ap17
+# Partial parallels from SC
+#  - g3dhp21-30
+#  - thag5.8
 ---
 
 > All suffering is fully understood,  

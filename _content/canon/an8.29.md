@@ -10,6 +10,21 @@ tags:
   - an
 year: 2018
 pages: 3
+parallels:
+  - ea42.1
+  - ma124
+# Partial parallels from SC
+#  - dhp306-319
+#  - dn34
+#  - gdhp97-134
+#  - pdhp216-238
+#  - t210.30
+#  - t212.6
+#  - t213.5
+#  - thag17.2
+#  - uv5
+#  - uv-kg5
+#  - uvs5
 ---
 
 > Mendicants, there are eight lost opportunities for spiritual practice.

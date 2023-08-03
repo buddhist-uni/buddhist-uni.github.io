@@ -12,6 +12,12 @@ tags:
   - snp
 year: 2015
 pages: 2
+parallels:
+  - pli-tv-kd5
+  - ud5.6
+# Partial parallels from SC
+#  - mnd5
+#  - t198
 ---
 
 > Whoever should take to himself certain views,

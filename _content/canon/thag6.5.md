@@ -13,6 +13,22 @@ tags:
 subcat: poetry
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - dhp334-359
+#  - gdhp91-96
+#  - gdhp97-134
+#  - ja475
+#  - ja516
+#  - pdhp137-156
+#  - sag
+#  - snp2.10
+#  - t210.32
+#  - t212.3
+#  - t213.3
+#  - uv3
+#  - uv-kg3
+#  - uvs3
 ---
 
 > When a person lives heedlessly,  

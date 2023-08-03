@@ -12,6 +12,22 @@ tags:
 subcat: poetry
 year: 1994
 pages: 2
+parallels:
+  - gdhp51-90
+  - pdhp398-414
+  - t213.18
+  - uv18
+  - uv32
+  - uv-kg18
+  - uvs18
+# Partial parallels from SC
+#  - pli-tv-kd17
+#  - t212.31
+#  - t213.30
+#  - ud2.10
+#  - uv30
+#  - uv-kg30
+#  - uvs30
 ---
 
 > such a monk gives up the here and the beyond,  

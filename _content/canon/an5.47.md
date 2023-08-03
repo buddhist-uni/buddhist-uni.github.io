@@ -10,6 +10,12 @@ tags:
   - function
 year: 2012
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an4.52
+#  - sn11.14
+#  - sn55.26
+#  - thag8.2
 ---
 
 > … there are these five kinds of wealth. What five?

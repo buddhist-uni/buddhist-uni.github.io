@@ -14,6 +14,10 @@ tags:
   - karma
 year: 2020
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an8.1
+#  - ja451
 ---
 
 > … of all the grounds for making worldly merit, none are worth a sixteenth part of the heart’s release by love.

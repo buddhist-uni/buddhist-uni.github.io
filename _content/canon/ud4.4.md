@@ -11,6 +11,18 @@ tags:
   - samadhi
 year: 2008
 pages: 3
+parallels: []
+# Partial parallels from SC
+#  - mil5.1.1
+#  - ne37
+#  - pe2
+#  - pe8
+#  - t212.32
+#  - t213.31
+#  - thag2.36
+#  - uv31
+#  - uv-kg31
+#  - uvs31
 ---
 
 Venerable Sāriputta and Venerable Mahāmoggallāna meditate together in peace not even a _yakkha_ could disturb.

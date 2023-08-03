@@ -13,6 +13,14 @@ tags:
 status: featured
 year: 2000
 pages: 1
+parallels:
+  - sa1267
+  - sa-2.180
+  - sag
+# Partial parallels from SC
+#  - mnd15
+#  - sf105
+#  - sn2.18
 ---
 
 > By not halting, friend, and by not straining I crossed the flood.

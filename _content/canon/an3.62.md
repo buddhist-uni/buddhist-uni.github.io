@@ -12,6 +12,9 @@ tags:
   - an
 year: 2012
 pages: 3
+parallels:
+  - sa758
+  - sf252
 ---
 
 > When villages, towns, and cities are burning up, there is sometimes an occasion when the mother finds her son and the son finds his mother.

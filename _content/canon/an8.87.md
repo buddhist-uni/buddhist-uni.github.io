@@ -11,6 +11,8 @@ tags:
   - an
 year: 2018
 pages: 1
+parallels:
+  - pli-tv-kd15
 ---
 
 > … the Saṅgha may, if it wishes, turn the bowl upside down for a lay follower on eight grounds.

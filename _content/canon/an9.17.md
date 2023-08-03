@@ -13,6 +13,8 @@ tags:
   - dana
 year: 2018
 pages: 1
+parallels:
+  - an7.13
 ---
 
 > Visiting a family with nine factors is worthwhile

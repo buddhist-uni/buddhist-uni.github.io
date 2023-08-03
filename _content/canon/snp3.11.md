@@ -13,6 +13,20 @@ tags:
 status: featured
 year: 2015
 pages: 7
+parallels:
+  - san-lo-mvu102
+  - san-mu-kd17
+# Partial parallels from SC
+#  - cnd17
+#  - dhp129-145
+#  - kv1.2
+#  - mil7.8.1
+#  - pdhp195-215
+#  - t210.18
+#  - t212.6
+#  - t213.5
+#  - uv5
+#  - uv-kg5
 ---
 
 > Knowledge of Silence I’ll convey,  

@@ -13,6 +13,8 @@ tags:
 year: 2021
 subcat: poetry
 pages: 1
+parallels:
+  - thi-ap20
 ---
 
 > I am not lazy nor conceited,  

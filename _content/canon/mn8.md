@@ -12,6 +12,12 @@ tags:
   - function
 year: 2009
 pages: 12
+parallels:
+  - ea47.9
+  - ma91
+# Partial parallels from SC
+#  - cnd9
+#  - mnd2
 ---
 
 > ‘Others will be cruel; we shall not be cruel here’

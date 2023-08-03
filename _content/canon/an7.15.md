@@ -11,6 +11,13 @@ tags:
   - stages
 year: 2018
 pages: 2
+parallels:
+  - ea39.3
+  - ma4
+  - t29
+# Partial parallels from SC
+#  - kv19.7
+#  - pp2.7
 ---
 
 The Buddha illustrates the seven kinds of practitioners with a simile.

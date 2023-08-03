@@ -14,6 +14,8 @@ tags:
 subcat: poetry
 year: 1995
 pages: 1
+parallels:
+  - thi-ap16
 ---
 
 > Coming out from my day’s abiding  

@@ -13,6 +13,11 @@ tags:
 subcat: poetry
 year: 2000
 pages: 1
+parallels:
+  - sf21
+# Partial parallels from SC
+#  - an3.52
+#  - ja424
 ---
 
 > When one’s house is ablaze  

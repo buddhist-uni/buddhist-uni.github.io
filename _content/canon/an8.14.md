@@ -15,6 +15,14 @@ tags:
   - imagery
 year: 2012
 pages: 4
+parallels:
+  - an8.13
+  - sa924
+  - sa925
+  - sa-2.149
+  - sa-2.150
+# Partial parallels from SC
+#  - vb17
 ---
 
 On the eight ways that people become defensive when admonished: a useful mirror for how we handle criticism. When was the last time you were “like a wild colt?”

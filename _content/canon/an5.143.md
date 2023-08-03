@@ -11,6 +11,9 @@ tags:
   - an
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an5.195
 ---
 
 > You Licchavis are so fixated on sensual pleasures!

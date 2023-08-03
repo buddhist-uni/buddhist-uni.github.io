@@ -11,6 +11,10 @@ tags:
   - renunciation
 year: 2018
 pages: 3
+parallels:
+  - lzh-dg-kd1
+  - san-lo-mvu52
+  - san-mu-kd17
 ---
 
 A rare glimpse into the Bodhisattva's journey.

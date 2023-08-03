@@ -15,6 +15,14 @@ tags:
   - death
 year: 2008
 pages: 3
+parallels: []
+# Partial parallels from SC
+#  - ne15
+#  - pe1
+#  - t212.6
+#  - t213.5
+#  - uv5
+#  - uv-kg5
 ---
 
 > For those who have one love, they have one suffering.  

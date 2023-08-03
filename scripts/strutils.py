@@ -16,12 +16,25 @@ except:
   quit(1)
 
 whitespace = re.compile('\s+')
+digits = re.compile('(\d+)')
 italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
 }
+
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+def natural_key(text):
+    '''
+    alist.sort(key=natural_keys) sorts in human order
+    '''
+    return [ atoi(c) for c in digits.split(text) ]
+
+def naturally_sorted(alist):
+  return sorted(alist, key=natural_key)
 
 def cout(*args):
   print(*args, flush=True, end="")

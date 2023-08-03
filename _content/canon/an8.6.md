@@ -14,6 +14,8 @@ tags:
   - daily-life
 year: 2000
 pages: 2
+parallels:
+  - lzh-mg-bu-vb-pj4
 ---
 
 > An instructed noble disciple also meets gain and loss, disrepute and fame, blame and praise, and pleasure and pain.

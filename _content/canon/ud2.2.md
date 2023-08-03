@@ -9,6 +9,15 @@ tags:
   - monastic-advice
 year: 2021
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - ne37
+#  - pe2
+#  - t212.31
+#  - t213.30
+#  - uv30
+#  - uv-kg30
+#  - uvs30
 ---
 
 > Mendicants, it is not appropriate for you who have gone forth to talk about such things.

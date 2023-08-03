@@ -13,6 +13,8 @@ tags:
   - an
 year: 2018
 pages: 3
+parallels:
+  - ma73
 ---
 
 The Buddha describes his progressive knowledge of the devas.

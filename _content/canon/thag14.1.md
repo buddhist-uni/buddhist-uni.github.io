@@ -11,6 +11,28 @@ tags:
   - path
 year: 2014
 pages: 3
+parallels: []
+# Partial parallels from SC
+#  - dhp306-319
+#  - gdhp97-134
+#  - ja392
+#  - pdhp216-238
+#  - sn9.14
+#  - t210.30
+#  - t212.6
+#  - t212.33
+#  - t213.5
+#  - t213.32
+#  - thag2.38
+#  - thag11.1
+#  - thag17.2
+#  - ud3.4
+#  - uv5
+#  - uv32
+#  - uv-kg5
+#  - uv-kg32
+#  - uvs5
+#  - uvs32
 ---
 
 > I have been aware of loving-kindness,  

@@ -13,6 +13,12 @@ tags:
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - sn1.21
+#  - sn2.16
+#  - thag1.40
+#  - thag20.1
 ---
 
 > Like they’re struck by a sword…

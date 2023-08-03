@@ -11,6 +11,9 @@ tags:
 year: 2021
 subcat: poetry
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - thag6.6
 ---
 
 > For twenty-five years,  

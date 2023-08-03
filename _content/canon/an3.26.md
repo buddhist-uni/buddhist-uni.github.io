@@ -11,6 +11,16 @@ tags:
   - an
 year: 2012
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an3.27
+#  - ja397
+#  - pp2.3
+#  - t212.26
+#  - t213.25
+#  - uv25
+#  - uv-kg25
+#  - uvs25
 ---
 
 > There is a person who is not to be associated with...

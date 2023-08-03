@@ -13,6 +13,23 @@ tags:
   - imagery
 year: 2014
 pages: 4
+parallels: []
+# Partial parallels from SC
+#  - dhp146-156
+#  - ja467
+#  - ja524
+#  - mn82
+#  - ne9
+#  - ne37
+#  - orphan
+#  - snp1.3
+#  - t210.19
+#  - t212.28
+#  - t213.27
+#  - thag20.1
+#  - uv27
+#  - uv-kg27
+#  - uvs27
 ---
 
 > See this fancy puppet,  

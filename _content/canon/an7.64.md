@@ -15,6 +15,10 @@ tags:
 # thought tag covered by "Recognizing" anthology
 year: 1998
 pages: 3
+parallels:
+  - ma129
+# Partial parallels from SC
+#  - iti88
 ---
 
 > … an enemy wishes of an enemy, 'O, may this person sleep badly!'
