@@ -289,6 +289,7 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
+# imagery tag covered by Hecker's Similes
 year: {year}
 pages: {pages}
 {parallels}---
