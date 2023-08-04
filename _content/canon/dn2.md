@@ -13,6 +13,7 @@ tags:
   - path
   - power
   - charisma
+# imagery covered by Hecker's similes
 year: 1989
 publisher: bps
 pages: 40
@@ -74,6 +75,7 @@ parallels:
 #  - mn53
 #  - mn60
 #  - mn76
+# Hecker lists mn77
 #  - mn79
 #  - mn94
 #  - mn101

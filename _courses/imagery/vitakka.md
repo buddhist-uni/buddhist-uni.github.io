@@ -10,7 +10,6 @@ description: "We must be very careful where we place our thoughts, as one though
 ### Suttas
 <p>
 {% include content_blurb.html category="canon" slug="iti87" %} 
-{% include content_blurb.html category="canon" slug="sn47.19" %}
 {% include content_blurb.html category="canon" slug="an7.6" %}
 </p>
 

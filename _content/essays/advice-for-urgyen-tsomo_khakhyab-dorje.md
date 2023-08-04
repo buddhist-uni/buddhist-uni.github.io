@@ -18,4 +18,4 @@ address: "East Sussex, UK"
 pages: 1
 ---
 
-Here, the 15th Karmapa, Khakhyab Dorje, gives his heartfelt advice to the great dakini Urgyen Tsomo, inspiring her to turn away from samsara, to keep her vows, and dive deep in the practice of the sacred Dharma.
+Five good thoughts for a great dakini.

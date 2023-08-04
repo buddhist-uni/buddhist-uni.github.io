@@ -8,11 +8,11 @@ drive_links:
 course: tranquility-and-insight
 tags:
   - an
-  - imagery
   - samadhi
   - samatha
   - monastic-advice
   - characters
+# imagery covered by Hecker's similes
 year: 2018
 pages: 5
 parallels:

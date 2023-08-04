@@ -12,6 +12,7 @@ tags:
   - emptiness
   - tranquility-and-insight
   - nibbana
+# imagery covered by Hecker's similes
 year: 2018
 pages: 2
 parallels:

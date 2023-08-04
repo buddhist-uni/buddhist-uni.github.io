@@ -4,13 +4,15 @@ slug: "an.004.107"
 translator: sujato
 external_url: "https://suttacentral.net/an4.107/en/sujato"
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1cEUZW1Jifhmm6YL5GBa_rfqnGmdzOZ7S"]
-course: imagery
+drive_links:
+  - "https://drive.google.com/file/d/1cEUZW1Jifhmm6YL5GBa_rfqnGmdzOZ7S"
+course: hermeneutics
 tags:
   - an
   - philosophy
-  - hermeneutics
+  - pariyatti
   - monastic-advice
+# imagery covered by Hecker's similes
 year: 2018
 pages: 2
 ---

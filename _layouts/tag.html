@@ -84,7 +84,7 @@ Please be aware that this tag is still under construction and as such is missing
   {% assign tag_content = tag_content | sort: "slug" | reverse | sort: "expected_value" | reverse | concat: series_content %}
   {% assign count = course_content.size | plus: tag_content.size %}
   {% if count > 0 %}
-  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
+  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% assign tag_content = tag_content | sort: "slug" %}{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
   {% if course_content.size > 0 %}
     {% if tag_content.size > 0 %}<p>Featured:</p>{% endif %}
     {% include featured_content_list.html contents=course_content %}
