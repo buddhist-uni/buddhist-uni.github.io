@@ -17,7 +17,7 @@ course: sati
 tags:
   - factors
   - samadhi
-  - liberation
+  - vimutti
   - nibbana
   - vipassana
 ---
