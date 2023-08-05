@@ -15,7 +15,6 @@ drive_links:
  - "https://drive.google.com/file/d/1foJ10YJ8C0-kwAbKxYxF5apzMr9zu787/view?usp=sharing"
 course: sati
 tags:
-  - factors
   - samadhi
   - vimutti
   - nibbana
