@@ -267,6 +267,10 @@
   "private": "https://drive.google.com/drive/folders/1bdwG_bFFs04MY7wPlgke9fXYztpFSKbO",
   "public": "https://drive.google.com/drive/folders/13J8p48_bSejgRbOLBmEf5c-NfxzeeJVS"
  },
+ "pali-readers": {
+  "private": "https://drive.google.com/drive/folders/16sLUn_akdLrTev_eyZXsOvQ-ZnIe9Bog",
+  "public": "https://drive.google.com/drive/folders/12-NXrP-Xybys3J93_8zm50gsY2wxsTa9"
+ },
  "path": {
   "private": "https://drive.google.com/drive/folders/142ZYLfm4cfNUGLYGQkOD5Rh9gV0EIlHG",
   "public": "https://drive.google.com/drive/folders/10_7DoIFl_1TkZL4HN7h8h_peSnPKn8l5"
@@ -382,6 +386,10 @@
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
   "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0"
+ },
+ "warder": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1LQHTo3DtqYzoEcWcUbRXgBYD6uPTfSrP"
  },
  "west": {
   "private": "https://drive.google.com/drive/folders/1-Gu_Bu38mBsIP7-nfZ-8Twk45andzHyF",
