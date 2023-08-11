@@ -211,6 +211,10 @@
   "private": "https://drive.google.com/drive/folders/1O6-X1wUK4Ja3tV_T1QukEI4z1DN_8TkA",
   "public": null
  },
+ "language": {
+  "private": "https://drive.google.com/drive/folders/1-LSJmc_WueR7KTveUA4er9R0ODZ00mTg",
+  "public": "https://drive.google.com/drive/folders/1VxixU5FlIjk1WrMDM5rL2_PiDC7YqOet"
+ },
  "mahayana": {
   "private": "https://drive.google.com/drive/folders/1N5iJ_lc6r-qbxn-ND_ObHQpLBSVc2kvM",
   "public": "https://drive.google.com/drive/folders/10nn-AddtgKz0QQBU8rea_B06yLoVGCL9"
@@ -238,6 +242,10 @@
  "mongolian": {
   "private": "https://drive.google.com/drive/folders/1-h0UAl2qoDG5TWA1siEQXRxMpC_Eoij9",
   "public": null
+ },
+ "music": {
+  "private": "https://drive.google.com/drive/folders/1LVyw4NFyPTsNeibw1MDi-RSlEg-K3iMt",
+  "public": "https://drive.google.com/drive/folders/152kkHZvV411S2mNgPxzggrm2zzpZW6hk"
  },
  "natural": {
   "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
@@ -313,6 +321,10 @@
  },
  "sea": {
   "private": "https://drive.google.com/drive/folders/1DoyXVlIwUMVCWuK1yU_jhymALMmJiAHX",
+  "public": null
+ },
+ "selling": {
+  "private": "https://drive.google.com/drive/folders/1ZHDu28g5HrUm2o8g4THChxwAN45mekLQ",
   "public": null
  },
  "social": {

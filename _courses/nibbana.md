@@ -78,9 +78,15 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {% include content_blurb.html category="canon" slug="sn56.21" %}
 - At its core, Nibbāna is the penetrative understanding of the Four Noble Truths which ends the cycle of rebirth.
 
+{% include content_blurb.html category="canon" slug="sn12.58" %}
+- The Buddha explains in brief how meditation leads to the breaking of Dependent Origination.
+
 <i class="fas fa-book"></i> The Introduction and Chapter 1 of *Metaphor and Literalism* (hereafter, "ML")
 {: .mb-0}
   - Will give an introduction to this text and to the term "*nibbāna*"
+
+{% include content_blurb.html category="canon" slug="sn22.54" %}
+  - The sutta that, finally, explains this course's epigraph.
 
 {% include content_blurb.html category="essays" slug="nibbana_bodhi" %}
   - A standard definition and straightforward typology of Nibbāna.
