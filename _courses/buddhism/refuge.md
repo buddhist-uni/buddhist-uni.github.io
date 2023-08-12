@@ -57,6 +57,8 @@ In this first lecture, Bhikkhu Bodhi introduces himself and the class and gives 
 If you enjoyed Bhikkhu Bodhi's lecture, I  recommend reading [his booklet **_The Buddha and his Dhamma_**](/content/booklets/buddha-and-his-dhamma_bodhi) now (or later) for a deeper introduction.
 And for more about what refuge means to a Buddhist, see the excellent treatise: [**_Refuge_** by Thanissaro Bhikkhu](https://www.dhammatalks.org/ebook_index.html#refuge){:target="_blank" ga-event-value="3"}
 
+And if you want to take refuge yourself, here's a video of the ceremony you can follow along with [on YouTube](https://youtu.be/_o9ScjUn2Ec){:ga-event-value="1"}.
+
 ## Homework
 Check your understanding with [**this lesson's quiz**](https://docs.google.com/forms/d/e/1FAIpQLSeD2xA680u1sTWF8gdEXDcvkb1dFcAryg30rXCH5eu4xcswZg/viewform?usp=sf_link){:target="_blank"},
 then click below for the next module whenever you're ready

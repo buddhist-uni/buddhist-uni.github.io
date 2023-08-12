@@ -84,7 +84,7 @@ Please read the suttas and other readings on your own “before class” and spe
 
 You may want to keep a copy of the assigned suttas in front of you while listening to the lectures, so that you can refer back to them and take notes as inspiration strikes, keeping in mind that the recordings (unlike live lectures!) can easily be paused.
 
-In addition to the suttas, this course assigns four short books in weeks 4, 7, 8 and 9: [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Inspiring Dhamma]({% link _content/booklets/inspiring-dhamma_suchart.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
+In addition to the suttas, this course assigns four short books in weeks 4, 8 and 9: [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
 
 
 ## The Course
@@ -413,9 +413,6 @@ This week we introduce the path of practice which leads to the state of mental p
 
 {% include content_blurb.html category="canon" slug="an6.87" %}
 - What are the prerequisites for entering the path?
-
-{% include content_blurb.html category="booklets" slug="inspiring-dhamma_suchart" %}
-- Ajahn Suchart describes the path in his simple and direct way from the unique perspective of [the four *iddhipadas*](https://en.wikipedia.org/wiki/Iddhipada){:target="_blank" ga-event-value="0.25"}.
 
 {% include content_blurb.html category="canon" slug="sn36.11" %}
 - One somewhat confusing point of Buddhist philosophy is that all three feelings (painful, neutral and pleasant) are included under “dukkha.” Thankfully for us, a monk at the time of the Buddha decided to ask him about that.

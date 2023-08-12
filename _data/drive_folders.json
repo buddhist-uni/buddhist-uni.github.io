@@ -97,7 +97,7 @@
  },
  "desire": {
   "private": "https://drive.google.com/drive/folders/1K33uusdM71vj7Yu5qvX55WAnnw4lyZOZ",
-  "public": null
+  "public": "https://drive.google.com/drive/folders/1R5UKsIE_1dcX_PUFqv9Zyn9ens9xWX5X"
  },
  "dialogue": {
   "private": "https://drive.google.com/drive/folders/1T2QcWyCanAEQWuRr9G4g8oj7NPcUHQ8Q",
@@ -286,6 +286,10 @@
  "perception": {
   "private": "https://drive.google.com/drive/folders/11_XH6qyBai0Ar8H45MEgg_tEupdEVfCb",
   "public": "https://drive.google.com/drive/folders/12qopldlGJuWHc5V42zuKaQP4FK0LipdG"
+ },
+ "philosophy": {
+  "private": "https://drive.google.com/drive/folders/14ETJMqi_pGo-x2e1SXKQa0TodhVVhgVL",
+  "public": "https://drive.google.com/drive/folders/1-iA7cY342aZRzVaHV3D063siGaVcS1US"
  },
  "pilgrimage": {
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",

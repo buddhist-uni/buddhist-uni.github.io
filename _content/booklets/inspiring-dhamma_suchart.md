@@ -8,7 +8,7 @@ year: 2017
 address: Bangkok
 base_value: 2.9
 olid: OL32035973M
-course: philosophy
+course: thought
 tags:
   - path
   - thai
