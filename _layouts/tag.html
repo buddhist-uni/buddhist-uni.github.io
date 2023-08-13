@@ -39,12 +39,21 @@ Please be aware that this tag is still under construction and as such is missing
 {% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
-    {% capture clink %}<a href="{{ child.url }}">{{ child.title }}</a>{% endcapture %}
+    {% capture clink %}<a href="{{ child.url }}"><i class="fas fa-tag"></i> {{ child.title }}</a>{% endcapture %}
     {% assign children = children | push: clink %}
 {% endfor %}
+{% if page.status == "published" %}
+  {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" | sort: "title" | sort: "sortkey" %}
+  {% for child in childtags %}
+    {% if site.data.drive_folders[child.slug].public %}
+      {% capture clink %}<a href="{{ site.data.drive_folders[child.slug].public }}"><i class="fab fa-google-drive"></i> {{ child.title }}</a>{% endcapture %}
+      {% assign children = children | push: clink %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 {% for course in site.courses %}
     {% if course.tags contains page.slug %}
-        {% capture clink %}<i><a href="{{ course.url }}">{{ course.title }}</a> (Course)</i>{% endcapture %}
+        {% capture clink %}<i><a href="{{ course.url }}"><i class="{{ course.icon }}"></i> {{ course.title }}</a> (Course)</i>{% endcapture %}
         {% assign children = children | push: clink %}
     {% endif %}
 {% endfor %}

@@ -477,6 +477,13 @@ article.tag header figure {
 
 article.tag .subtopics {
     font-size: 105%;
+    line-height: 1.6;
+    ul {
+        list-style: none;
+    }
+    i {
+        padding-right: 0.5em;
+    }
 }
 
 .content_links a {
