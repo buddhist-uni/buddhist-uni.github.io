@@ -4,15 +4,16 @@ slug: "snp.1.04"
 translator: "Andrew Olendzki"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.04.olen.html"
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1couczIzgT5Qigh-PeIOvo4SBLvUy1OSh/view?usp=drivesdk"]
-course: imagery
+drive_links:
+  - "https://drive.google.com/file/d/1couczIzgT5Qigh-PeIOvo4SBLvUy1OSh/view?usp=drivesdk"
+course: setting
 subcat: poetry
 tags:
   - canonical-poetry
   - function
-  - nibbana
   - tranquility-and-insight
   - snp
+# imagery covered by Hecker's Similes
 year: 2005
 pages: 2
 parallels:
