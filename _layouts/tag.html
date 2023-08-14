@@ -39,7 +39,7 @@ Please be aware that this tag is still under construction and as such is missing
 {% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
-    {% capture clink %}<a href="{{ child.url }}"><i class="fas fa-tag"></i> {{ child.title }}</a>{% endcapture %}
+    {% capture clink %}<a href="{{ child.url }}"><i class="fas fa-folder-open"></i> {{ child.title }}</a>{% endcapture %}
     {% assign children = children | push: clink %}
 {% endfor %}
 {% if page.status == "published" %}
