@@ -9,10 +9,11 @@ drive_links:
 course: sati
 tags:
   - problems
-  - soto
   - zen
+  - hearing
+  - samatha
 year: 2008
-journal: Pacific World: "Journal of the Institute of Buddhist Studies"
+journal: pw
 publisher: Institute of Buddhist Studies
 address: "Berkeley, CA"
 volume: 10
