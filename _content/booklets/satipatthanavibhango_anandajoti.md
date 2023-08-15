@@ -1,5 +1,5 @@
 ---
-title: "Satipaṭṭhānavibhaṅgo (Vibh. 7):Analysis of the Ways of Attending to Mindfulness"
+title: "Satipaṭṭhānavibhaṅgo (Vibh. 7): Analysis of the Ways of Attending to Mindfulness"
 authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Satipatthanavibhanga/"
@@ -13,5 +13,5 @@ month: nov
 pages: 137
 ---
 
-Edited and annotated section of Vibhaṅga, the second book of the Pāḷi
-Abhidhammapiṭaka, dealing with the central teaching on mindfulness meditation
+A line-by-line translation of the seventh section of the Vibhaṅga, the second book of the Pāḷi
+Abhidhamma Piṭaka, giving an analysis of the central teaching on mindfulness meditation.
