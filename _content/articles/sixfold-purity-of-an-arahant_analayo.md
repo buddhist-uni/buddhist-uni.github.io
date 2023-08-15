@@ -10,10 +10,8 @@ course: philosophy
 tags:
   - ma
   - monastic
-  - path
-  - nibbana
+  - function
   - arahant
-  - thought
 pages: "241--277"
 ---
 

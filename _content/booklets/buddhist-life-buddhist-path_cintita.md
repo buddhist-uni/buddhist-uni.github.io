@@ -11,10 +11,8 @@ course: function
 status: featured
 tags: 
   - buddhism
-  - form
   - ethics
   - thought
-  - path
 pages: 284
 ---
 

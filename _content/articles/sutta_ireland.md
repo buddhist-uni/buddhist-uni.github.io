@@ -8,9 +8,6 @@ drive_links:
 course: sutta
 tags:
   - ebts
-  - pali-canon
-  - philosophy
-  - thought
   - form
   - hermeneutics
 year: 1964

@@ -10,8 +10,7 @@ drive_links:
 course: ethics
 tags:
   - path
-  - philosophy
-  - mind
+  - ideology
   - thought
 year: 1978
 series: wheel
@@ -21,5 +20,3 @@ pages: 27
 ---
 
 Some philosophical essays on the role of ethics on the path.
-
-

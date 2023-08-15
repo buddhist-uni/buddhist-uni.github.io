@@ -1,6 +1,6 @@
 ---
 title: "The Social World"
-status: unpublished
+status: published
 parents: [world]
 level: 2
 image: https://illeakyw.sirv.com/Images/banners/Town_Square.jpg

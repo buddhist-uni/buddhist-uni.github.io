@@ -11,7 +11,6 @@ drive_links:
   - "https://drive.google.com/file/d/1_ukdVnEtDqDEOpZ-C9BxJRZtMbFJdeph/view?usp=drivesdk"
 course: karma
 tags:
-  - thought
   - iddhi
   - imagery
 ---

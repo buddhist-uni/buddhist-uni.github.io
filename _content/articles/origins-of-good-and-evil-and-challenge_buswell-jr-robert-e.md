@@ -9,7 +9,7 @@ drive_links:
 tags:
   - korean
   - interfaith
-  - thought
+  - philosophy
 year: 2019
 month: dec
 journal: "Acta Koreana"

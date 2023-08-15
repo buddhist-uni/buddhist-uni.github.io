@@ -10,10 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1An1tcAEXEtwp3r2WEJ1G2KfYeriZQ-y0/view?usp=drivesdk"
 course: function
 tags:
-  - nibbana
-  - power
   - renunciation
-  - thought
   - philosophy
 year: 1962
 series: wheel

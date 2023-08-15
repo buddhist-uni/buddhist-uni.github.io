@@ -163,6 +163,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% include inline_content.html category="excerpts" slug="tevijjavacchagottasutta_analayo" %}
 
 1. [L] The Quarrel at Kosambi
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="an6.43" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [R] Sugato
 
 1. [L] End of the First Twenty Years

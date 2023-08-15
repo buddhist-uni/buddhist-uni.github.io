@@ -1,6 +1,6 @@
 ---
 title: "The Inner World"
-status: unpublished
+status: published
 parents: [world]
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/DP170787-s.jpg

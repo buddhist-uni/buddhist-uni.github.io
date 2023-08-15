@@ -8,9 +8,7 @@ tags:
   - hermeneutics
   - ethics
   - indian
-  - view
   - karma
-  - thought
   - epistemology
   - gender
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2012/04/Goodwin-Right-View-Final-Edit-April-29-2012.pdf"

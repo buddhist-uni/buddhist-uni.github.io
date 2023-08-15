@@ -1,6 +1,6 @@
 ---
 title: "Right Thought"
-status: unpublished
+status: published
 parents: [philosophy, intellect]
 sortkey: 2
 image: https://illeakyw.sirv.com/Images/banners/Hupao.jpg

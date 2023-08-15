@@ -1,6 +1,6 @@
 ---
 title: "Right View"
-status: unpublished
+status: published
 parents: [philosophy]
 sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/Buddhist_Monk_Staff_MET.jpg
