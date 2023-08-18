@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1RqMj8T6F0oVb_1I18EjOXtm5q5bf-KLT/view?usp=drivesdk"
 course: sati
 tags:
+  - kayagatasati
   - ma
-  - body
 year: 2007
 journal: iijbs
 volume: 8
@@ -16,4 +16,4 @@ pages: "175--194"
 ---
 
 A translation of the Chinese Version of the Kāyagatāsati Sutta (MA 81),
-which differs considerably from [the Pāli version of the text](/content/canon/mn119).
+which differs somewhat from [the Pāli version of the text](/content/canon/mn119).

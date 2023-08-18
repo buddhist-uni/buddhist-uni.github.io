@@ -52,7 +52,7 @@ def make_library_entry_for_work(work, draft=False) -> str:
         category = 'papers'
     case 'reference-entry' | 'database' | 'dataset' | 'reference-book' | 'standard':
         category = 'reference'
-    case 'proceedings-article' | 'journal-article':
+    case 'proceedings-article' | 'journal-article' | 'article':
         category = 'articles'
     case 'posted-content':
         category = 'essays'
