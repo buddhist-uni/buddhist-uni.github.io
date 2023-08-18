@@ -23,5 +23,3 @@ pages: "3--7"
 
 > The deep silence that is underneath all things is always present,
 always available.
-
-This article highlights the importance of silence in Buddhist practice and the various ways this silence is distrubed.
