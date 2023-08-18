@@ -16,7 +16,7 @@
 
 <div class="tag-list{{ include.level }}">
     <div class="tagbox{{ include.level }}" onclick="location.href='{{ include.tag.url }}';">
-        {%- if include.level == 2 or include.level == 4 and childs.size > 0 -%}
+        {%- if include.level == 2 -%}
             {%- assign puttitleontop = true -%}
         {%- else -%}
             {%- assign puttitleontop = false -%}

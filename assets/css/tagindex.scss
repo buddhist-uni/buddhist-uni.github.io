@@ -48,12 +48,11 @@ $topradii: 10px 10px 0px 0px;
     }
 }
 .tagbox2 {
-    font-size: 125%;
+    font-size: 120%;
     text-align: center;
 }
 .tagbox3 {
-    font-size: 116%;
-    font-weight: bold;
+    font-size: 115%;
     margin: 3px;
 }
 .tagbox4 {
@@ -83,7 +82,6 @@ div.tag-list3:last-child {
     background-color: darken($grey-color-light, 10%);
 }
 .tag-list4:has(.children4) .tagbox4 {
-    text-align: center;
     padding: 2px 4px $spacing-unit 4px;
 }
 .tag-list5:has(.children5) {
