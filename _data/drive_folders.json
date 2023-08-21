@@ -23,6 +23,10 @@
   "private": "https://drive.google.com/drive/folders/1W2QuInFh3jdeTONTqd1ykf_2zP3fNz4q",
   "public": "https://drive.google.com/drive/folders/11H_41aaoGlazBPm3Yp_YD48UcdnwfxGF"
  },
+ "art": {
+  "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
+  "public": "https://drive.google.com/drive/folders/1yr6n4SgItSZ7isFrsAyo9_NvTB1M9BZR"
+ },
  "asia": {
   "private": "https://drive.google.com/drive/folders/198TBBIt-uTixQgxzh0BPB-U8hWWjqM0z",
   "public": "https://drive.google.com/drive/folders/1LIR6PYyjfI2RXrAWkZ-IwckrsOx1DHLf"
@@ -42,6 +46,10 @@
  "body": {
   "private": "https://drive.google.com/drive/folders/1JVjjKk1G54bzVeJR4Xa0fcA3oHqikPFK",
   "public": "https://drive.google.com/drive/folders/1KH_fXizokWIhkN8KU86_7UXSwSQMY7Y9"
+ },
+ "books": {
+  "private": "https://drive.google.com/drive/folders/1OqcQ5wipm6l2XREXT_7I8VxeIgpjy-Zg",
+  "public": null
  },
  "buddha": {
   "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi",
@@ -70,6 +78,10 @@
  "characters": {
   "private": "https://drive.google.com/drive/folders/1LxiUnQ8GafMqYfJeC68FTxQ8xeH4FbE7",
   "public": "https://drive.google.com/drive/folders/11vO86SK9DGAbLdmZbQqlRqATwdIjDwni"
+ },
+ "china": {
+  "private": "https://drive.google.com/drive/folders/11b1pEgPlPBDSdEv96DqoMKip2NajZnC0",
+  "public": null
  },
  "chinese": {
   "private": "https://drive.google.com/drive/folders/12EJSMgN8qSJgfR_hDbn-WZgKJG2FgIxk",
@@ -106,6 +118,10 @@
  "ea": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1234QK_JdiurFhgADDnpgWHOsicIIcine"
+ },
+ "east-asian": {
+  "private": "https://drive.google.com/drive/folders/1f1nTy6m6yOsmdg9isK6AE5HjszK4d4B_",
+  "public": "https://drive.google.com/drive/folders/13NLwGkmoiM1NefIxCN9xoYNMevO3CbOl"
  },
  "east-asian-roots": {
   "private": "https://drive.google.com/drive/folders/1dsxzckxKqYgGvJkQPjts_C_FwvpVoRdn",
@@ -222,6 +238,10 @@
  "mahayana-roots": {
   "private": "https://drive.google.com/drive/folders/12TNuqwLXrzeH0oGB5Wx1aI0HP7-BOGgr",
   "public": "https://drive.google.com/drive/folders/10uCuB-WfgLwOoBd1ZJVMOsHN3F1rjxiM"
+ },
+ "mahayana-vinaya": {
+  "private": "https://drive.google.com/drive/folders/1fZ6vu6IrGU-1lJT95j60Ohwd6dflrAaC",
+  "public": null
  },
  "meditation": {
   "private": "https://drive.google.com/drive/folders/1-Q5426IBgx2h-guzI5RHoc5PmYah3Ucd",

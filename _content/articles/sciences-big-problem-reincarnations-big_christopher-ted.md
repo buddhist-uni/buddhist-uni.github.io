@@ -7,7 +7,7 @@ external_url: "https://www.mdpi.com/2077-1444/8/8/155/pdf"
 source_url: "https://doi.org/10.3390/rel8080155"
 drive_links:
   - "https://drive.google.com/file/d/1DFRZeyZlZTY3U0_baKKg2vlgMsvjBFbG/view?usp=drivesdk"
-course: cosmology # prolly down to rebirth
+course: cosmology
 tags:
   - biology
   - modern

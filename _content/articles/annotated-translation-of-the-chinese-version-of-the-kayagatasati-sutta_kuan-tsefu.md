@@ -15,5 +15,5 @@ volume: 8
 pages: "175--194"
 ---
 
-A translation of the Chinese Version of the Kāyagatāsati Sutta (MA 81),
+A translation of the Chinese Version of the Kāyagatāsati Sutta ([MA 81](/content/canon/ma81)),
 which differs somewhat from [the Pāli version of the text](/content/canon/mn119).
