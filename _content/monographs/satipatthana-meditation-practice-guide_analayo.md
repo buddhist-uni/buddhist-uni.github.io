@@ -7,15 +7,13 @@ drive_links:
   - "https://drive.google.com/file/d/1pBhjHfVWRqLxMsneSjSt2FLFNU_SdLkk/view?usp=sharing"
 course: sati
 tags:
-  - death
-  - vedana
-  - dharmas
-  - kaya
-  - mind
-  - nibbana
+  - meditation
+  - vipassana
+  - feelings
 year: 2018
 month: oct
 oclc: 1124315439
+olid: OL26977037M
 publisher: "Windhorse Publications"
 address: "Cambridge, UK"
 pages: 256
