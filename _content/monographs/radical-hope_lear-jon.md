@@ -6,7 +6,6 @@ external_url: "https://archive.org/details/radicalhopeethic00lear/page/n6/mode/1
 hidden_links:
   - "https://drive.google.com/file/d/1hPvewFDEvva5tsIlJ3Dk4GKx6dpVFYkj/view?usp=drivesdk"
 course: ideology
-status: featured
 tags:
   - time
   - culture
@@ -23,7 +22,7 @@ pages: 178
 > When the buffalo went away the hearts of my people fell to the ground and they could not lift them up again.
 After this nothing happened.
 
-What happens when all of your culture's ways of meaning disappear?
+What happens after all your culture's ways of making meaning disappear?
 How can you move forward when the future is literally inconceivable?
 
-A philosophical meditation on the courageous life of the great Apsáalooké (Crow Indian), Chief Plenty Coups.
+A philosophical meditation on the courageous life of the great Apsáalooké (Crow Indian) Chief Plenty Coups.
