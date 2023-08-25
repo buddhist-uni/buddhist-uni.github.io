@@ -3,6 +3,10 @@
   "private": null,
   "public": "https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa"
  },
+ "abhidhamma": {
+  "private": "https://drive.google.com/drive/folders/17CJqmQhkER76D0PzLfSqbjDuXmokgo_e",
+  "public": "https://drive.google.com/drive/folders/10If3acGA6qnYheGpA0pRyKRir9rt4Sxt"
+ },
  "activism": {
   "private": "https://drive.google.com/drive/folders/1FRIx6sR03qR7I8N6wux9Mem_2yBm06Hi",
   "public": "https://drive.google.com/drive/folders/13VWmT2o0hswWeBg3TUg5rRkRgFBtbfYq"
@@ -26,6 +30,10 @@
  "anapanasati": {
   "private": "https://drive.google.com/drive/folders/12faBB13gvGhpNrnxt3kMSi25sAUY1L9h",
   "public": "https://drive.google.com/drive/folders/1-wOJ9NFbpNuIHA3I6au0yrkAV3u9NyFP"
+ },
+ "animals": {
+  "private": "https://drive.google.com/drive/folders/1-b0EkuiMjwrv6YsJjkn4zh_e76zcWHwj",
+  "public": "https://drive.google.com/drive/folders/13WU-Ikvbam93LFX5o1IPaRhHrcZeLuKM"
  },
  "art": {
   "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
@@ -98,6 +106,10 @@
  "clothes": {
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
+ },
+ "communication": {
+  "private": "https://drive.google.com/drive/folders/1KvoZHNm3ogSjMPj8iaC9tNllOv0CB1t_",
+  "public": "https://drive.google.com/drive/folders/1L1UPrE7KoHQbqsS2G-frUGm6ublwSQgV"
  },
  "cosmology": {
   "private": "https://drive.google.com/drive/folders/17zWCoFCX5QOHFHJKdsP2bw-AYlURoryC",
@@ -223,6 +235,10 @@
   "private": "https://drive.google.com/drive/folders/1DS-NnHXmgRFd8COT9GipXHSGuNpYMihc",
   "public": null
  },
+ "japanese": {
+  "private": "https://drive.google.com/drive/folders/19cxC1hod9rORJqNZiQX1AaESB3PjB8pm",
+  "public": "https://drive.google.com/drive/folders/14AUczeHZIaChGJ8SfWpC8k46PEMSi6H0"
+ },
  "journalism": {
   "private": "https://drive.google.com/drive/folders/1_3OvMqqb9QDDyLFl4Yzr8YZaiuNw58QS",
   "public": null
@@ -230,6 +246,14 @@
  "karma": {
   "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
   "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
+ },
+ "kn": {
+  "private": "https://drive.google.com/drive/folders/1-LY1WbLzc7-nHIOwPft_cGEM1-vPluRe",
+  "public": "https://drive.google.com/drive/folders/1ln8s7QDiYDra96CFqHZGIZP1IgB-unx3"
+ },
+ "korean": {
+  "private": "https://drive.google.com/drive/folders/1S0vWnz-wnuIAjTTJT-8WWtetaie4IbkT",
+  "public": "https://drive.google.com/drive/folders/1uSWqV7npNl1F5UQwaKQoXeVxqkCkF5Aa"
  },
  "labor": {
   "private": "https://drive.google.com/drive/folders/1O6-X1wUK4Ja3tV_T1QukEI4z1DN_8TkA",
@@ -327,6 +351,10 @@
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
   "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G"
  },
+ "place": {
+  "private": "https://drive.google.com/drive/folders/1CrvHBlXyF4FGFqFqSbJh7NfCR2Mix5-e",
+  "public": "https://drive.google.com/drive/folders/1K_7u0vaUVl0NVQs7I9v-4kvkZM1mAQGP"
+ },
  "places": {
   "private": "https://drive.google.com/drive/folders/1CrvHBlXyF4FGFqFqSbJh7NfCR2Mix5-e",
   "public": "https://drive.google.com/drive/folders/1K_7u0vaUVl0NVQs7I9v-4kvkZM1mAQGP"
@@ -342,6 +370,10 @@
  "rebirth": {
   "private": "https://drive.google.com/drive/folders/14kwlyPUNih-tta_HvHfxwsM3QEFtgNvy",
   "public": "https://drive.google.com/drive/folders/10l-T7KNFWKj2ifHORzSDQELqJy3ftG4-"
+ },
+ "rebirth-stories": {
+  "private": "https://drive.google.com/drive/folders/1bAAX4M-Te-RatagvA3j13bc6JPoKUT4d",
+  "public": "https://drive.google.com/drive/folders/12gbHZP-ewbj0d9kGop11Wb6z_4EDBW3w"
  },
  "roots": {
   "private": "https://drive.google.com/drive/folders/1vU74WexzIHUZGYzNRs6yB9ipZYzfi_DE",
@@ -383,6 +415,10 @@
   "private": "https://drive.google.com/drive/folders/1SBiSLEs9kLRBK3-84LIkUF859HI76wO9",
   "public": null
  },
+ "sri-lankan": {
+  "private": "https://drive.google.com/drive/folders/1FgjT3lRCF8hIMqb_S5jsPYrkQLyQKgd2",
+  "public": "https://drive.google.com/drive/folders/11Zdcgd7ne0FIV3woWt32tqHlFJN8WmEw"
+ },
  "stages": {
   "private": "https://drive.google.com/drive/folders/119ct_-qv582dWaTdLmfNRx89bOEE8wRC",
   "public": null
@@ -394,6 +430,10 @@
  "tantric": {
   "private": "https://drive.google.com/drive/folders/1J34zI1iDc0iddITPLHaPP5PTFcz-j4Na",
   "public": "https://drive.google.com/drive/folders/12e7oPcEcTeJgLeULHJcW6oLA2i4zlblm"
+ },
+ "thai": {
+  "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",
+  "public": "https://drive.google.com/drive/folders/13TiJQEOQ-uWolJPsMjoQ7bQHsHZk7cMO"
  },
  "thai-forest": {
   "private": "https://drive.google.com/drive/folders/1QB24T8R-SdjKS-wBA90y6LjfWoV1c5ZD",
