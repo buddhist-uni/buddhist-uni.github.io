@@ -461,31 +461,6 @@ h1.overlay-into-banner {
     padding-right: 20%;
 }
 
-article.tag .tag_desc {
-    font-size: 105%;
-    font-family: $readable-font-family;
-    margin-top: 20px;
-}
-
-article.tag .tag_desc p {
-    margin-bottom: 6px;
-}
-
-article.tag header figure {
-    padding-top: 15px;
-}
-
-article.tag .subtopics {
-    font-size: 105%;
-    line-height: 1.6;
-    ul {
-        list-style: none;
-    }
-    i {
-        padding-right: 0.5em;
-    }
-}
-
 .content_links a {
     font-family: $ui-font-family;
 }

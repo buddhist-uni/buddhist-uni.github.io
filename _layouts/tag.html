@@ -39,8 +39,11 @@ Please be aware that this tag is still under construction and as such is missing
 {% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
+  {% if child.illustration %}
+    {% capture clink %}<a href="{{ child.url }}"><div class="subtopic-card">{% include taglist-img.html tag=child %} <span class="subtopic-img-label">{{ child.title }} »</span></div></a>{% endcapture %}
+  {% else %}
     {% capture clink %}<a href="{{ child.url }}"><i class="fas fa-folder-open"></i> {{ child.title }}</a>{% endcapture %}
-    {% assign children = children | push: clink %}
+  {% endif %}{% assign children = children | push: clink %}
 {% endfor %}
 {% if page.status == "published" %}
   {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" | sort: "title" | sort: "sortkey" %}
