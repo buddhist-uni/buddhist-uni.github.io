@@ -14,6 +14,11 @@ For the rest of the class, we'll have some "homework" assignments before each le
 
 For this module, please read **Chapter 1** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
+And also:
+
+{% include content_blurb.html category="canon" slug="sn56.31" %}
+- In this famous sutta, the Buddha explains why he taught the Four Noble Truths among all the many truths that he had discovered.
+
 ## Lectures
 
 {% include content_blurb.html category="av" slug="enlightenment-is-the-highest-happiness_brahm" %}

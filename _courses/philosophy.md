@@ -154,6 +154,9 @@ It may be appropriate here to take a step back and ask what the Buddha meant by 
 Can we discern something about the Buddha's epistemology from his teachings?
 " %}
 
+{% include content_blurb.html category="canon" slug="sn56.33" %}
+- And why teach these truths anyway?
+
 {% include content_blurb.html category="canon" slug="mn141" %}
 - The Venerable Sariputta gives a detailed analysis of the Four Noble Truths.
 

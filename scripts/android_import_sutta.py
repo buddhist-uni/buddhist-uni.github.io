@@ -15,21 +15,41 @@ NONSC_TRANSLATORS = [{
   'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/suttafriends.json"))).read_text())
 },
 {
-  'author_short': 'Thanissaro',
+  'author_short': 'DT.org',
   'author_uid': 'geoff',
   'author': "Thanissaro Bhikkhu",
   'publication_date': None,
   'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
+},
+{
+  'author_short': 'ATI',
+  'author_uid': None,
+  'author': None,
+  'publication_date': None,
+  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/accesstoinsight_nongeoffsuttas.json"))).read_text())
 }
 ]
 
 def make_nonsc_url(website, book, nums):
-  url = f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
-  print("Testing nonSC URL to make sure it's legit...")
-  resp = requests.get(url)
-  if resp.ok:
-    print("Looks good!")
+  url = ""
+  if website['constants']['rootUrl'] == "https://accesstoinsight.org":
+    book = website[book]['available']
+    if type(book) is dict:
+      book = book[str(nums[0])]
+      num = nums[1]
+    else:
+      num = nums[0]
+    url = next(e[1] for e in book if e[0] == num)
   else:
+    url = f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
+  print("Testing nonSC URL to make sure it's legit...")
+  try:
+    resp = requests.head(url)
+    if resp.ok:
+      print("Looks good!")
+    else:
+      raise Exception
+  except:
     print(f"ERROR: Constructed unGETable url \"{url}\"")
     quit(1)
   return url
@@ -95,10 +115,45 @@ def is_in_website(website, book, nums):
   if not nums[1]:
     return True
   book = book[str(nums[0])]
-  return int(nums[1]) in book
+  if type(book) is dict or type(book[0]) is int:
+    return int(nums[1]) in book
+  return int(nums[1]) in list(map(lambda e: int(e[0]), book))
 
 def get_possible_trans(book, nums):
   return list(filter(lambda t: is_in_website(t['website_data'], book, nums), NONSC_TRANSLATORS))
+
+def year_from_ati_data(text):
+    m = re.search("\[SOURCE_COPYRIGHT_YEAR\]=\{([12][90][0-9][0-9])\}", text)
+    if not m:
+      m = re.search("\[ATI_YEAR\]=\{([12][90][0-9][0-9])\}", text)
+    if not m:
+      print(f"ERROR: Couldn't find YEAR metadata")
+      quit(1)
+    print(f"Got year: {m.groups(0)[0]}")
+    return m.groups(0)[0]
+
+def fill_in_trans_data(trans, url):
+  # geoff year will be filled in later by source url (below)
+  if not trans['author_short']=='ATI':
+    return trans
+  m = re.search("\.([a-z]+)\.html$", url)
+  if not m:
+    print(f"ERROR: Badly formatted ATI link {url}")
+    quit(1)
+  match m.groups(0)[0]:
+    case "irel":
+      trans['author_uid'] = "ireland"
+      trans['author'] = "John D. Ireland"
+      trans['author_short'] = "ATI (Ireland)"
+    case _:
+      print(f"ERROR: Unknown author '{m.groups(0)[0]}'")
+      quit(1)
+  resp = requests.get(url)
+  if not resp.ok or resp.text.find("<title>Lost in samsara</title>") >= 0:
+      print(f"ERROR: ATI request failed unexpectedly with status {resp.status_code}")
+      quit(1)
+  trans["publication_date"] = year_from_ati_data(resp.text)
+  return trans
 
 def get_geoff_source_url(trans, dturl, book, nums):
   url = get_possible_geoff_source_url(trans, book, nums)
@@ -126,14 +181,7 @@ def get_geoff_source_url(trans, dturl, book, nums):
         print("Seems to have not been saved!")
         save_url_to_archiveorg(dturl)
       return ""
-    m = re.search("\[SOURCE_COPYRIGHT_YEAR\]=\{([12][90][0-9][0-9])\}", resp.text)
-    if not m:
-      m = re.search("\[ATI_YEAR\]=\{([12][90][0-9][0-9])\}", resp.text)
-    if not m:
-      print(f"ERROR: Couldn't find YEAR metadata in {url}")
-      quit(1)
-    print(f"Got year: {m.groups(0)[0]}")
-    trans['publication_date'] = m.groups(0)[0]
+    trans['publication_date'] = year_from_ati_data(resp.text)
   return f"\nsource_url: \"{url}\""
 
 def get_possible_geoff_source_url(trans, book, nums):
@@ -202,6 +250,7 @@ def process_pdf(pdf_file):
   if transidx >= 0:
     trans = nonsc_trans[transidx]
     external_url = make_nonsc_url(trans['website_data'], book, nums)
+    trans = fill_in_trans_data(trans, external_url)
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())

@@ -155,6 +155,10 @@
   "private": "https://drive.google.com/drive/folders/18I-CK_Bs5YPmA00XIj9bLpW7Vw1sRQdG",
   "public": "https://drive.google.com/drive/folders/1-3v0U8vQvVyS6gl4SpRaN9IuRAhv7JwL"
  },
+ "english": {
+  "private": "https://drive.google.com/drive/folders/1xVxDAWJ5kQdNRRPhJaTD5npSzDwXxW_Y",
+  "public": null
+ },
  "epistemology": {
   "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ",
   "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm"
@@ -274,6 +278,10 @@
  "mahayana-vinaya": {
   "private": "https://drive.google.com/drive/folders/1fZ6vu6IrGU-1lJT95j60Ohwd6dflrAaC",
   "public": null
+ },
+ "media": {
+  "private": "https://drive.google.com/drive/folders/1UwUhVVWK11-9IEfjjYxohfp6EwK3XHQH",
+  "public": "https://drive.google.com/drive/folders/1BxeY-yPGetYf8VZmXJxHwK5C6tikpVGF"
  },
  "meditation": {
   "private": "https://drive.google.com/drive/folders/1-Q5426IBgx2h-guzI5RHoc5PmYah3Ucd",
@@ -474,6 +482,10 @@
  "view": {
   "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95",
   "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474"
+ },
+ "vinaya-studies": {
+  "private": "https://drive.google.com/drive/folders/1b8nEWOz3Z0CiRUECksk70MFNTRvttgFs",
+  "public": "https://drive.google.com/drive/folders/13txioFMBUj8Fsyvo6JQxDVFwsEc4IH6b"
  },
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
