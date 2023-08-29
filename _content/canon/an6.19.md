@@ -9,9 +9,7 @@ course: meditation
 status: featured
 tags:
   - an
-  - death
   - thought
-  - present
 year: 1997
 pages: 1
 parallels:
