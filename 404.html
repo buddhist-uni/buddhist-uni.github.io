@@ -6,21 +6,45 @@ title: Page not found
 
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
-    max-width: 600px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1622354688049-e1a21bcb88bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
   }
-  h1 {
+  h1,
+  p {
+    color: #000000;
+    text-shadow: 0px 0px 3px #ffffff;
+  }
+  h1.not-found-code {
     margin: 30px 0;
-    font-size: 4em;
+    font-size: 6em;
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
     line-height: 1;
     letter-spacing: -1px;
   }
+  p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  p.not-found {
+    font-size: 2em;
+  }
+
+  p.not-found-info {
+    font-size: 1em;
+  }
 </style>
-
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <h1 class="not-found-code">404</h1>
+  <p class="not-found"><strong>Page not found :(</strong></p>
+  <p class="not-found-info">The requested page could not be found.</p>
 </div>
