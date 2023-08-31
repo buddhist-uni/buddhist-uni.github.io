@@ -17,6 +17,7 @@ publisher: nap
 from_book: drama-of-the-commons_nrc
 pages: "403--442"
 chapter: 12
+status: featured
 ---
 
 > Humans have cooperative sentiments usually assumed to be absent in rational choice theories.

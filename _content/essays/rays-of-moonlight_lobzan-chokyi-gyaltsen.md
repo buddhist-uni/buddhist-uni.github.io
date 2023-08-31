@@ -9,9 +9,12 @@ drive_links:
 course: thought
 tags:
   - confession
+status: featured
 year: 2019
 publisher: "Lotsawa House"
 address: "East Sussex, UK"
 pages: 5 
 ---
-A short prayer of confession to the Buddha and Bodhisattvas of misdeeds and the resolve not to repeat them for the good of oneself and of others.
+
+A short prayer of confession and rededication to the path.
+
