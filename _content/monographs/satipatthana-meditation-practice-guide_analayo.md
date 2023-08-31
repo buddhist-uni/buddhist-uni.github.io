@@ -6,6 +6,7 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 drive_links:
   - "https://drive.google.com/file/d/1pBhjHfVWRqLxMsneSjSt2FLFNU_SdLkk/view?usp=sharing"
 course: sati
+status: featured
 tags:
   - meditation
   - vipassana

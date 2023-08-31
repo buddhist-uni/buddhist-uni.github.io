@@ -5,7 +5,7 @@ similars:
   - canon
   - monographs
 subcats:
-  - maps
+  - map
 ---
 
 Reference materials and tools for digital scholars.

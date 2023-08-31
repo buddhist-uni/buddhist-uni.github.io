@@ -27,6 +27,10 @@
   "private": "https://drive.google.com/drive/folders/1W2QuInFh3jdeTONTqd1ykf_2zP3fNz4q",
   "public": "https://drive.google.com/drive/folders/11H_41aaoGlazBPm3Yp_YD48UcdnwfxGF"
  },
+ "an": {
+  "private": "https://drive.google.com/drive/folders/1Je29wEUYl2b1PDNo651wgZmvcGFk69jQ",
+  "public": "https://drive.google.com/drive/folders/10v7g1EnONNm0NZVF_HU3w0sCqPZfIuQY"
+ },
  "anapanasati": {
   "private": "https://drive.google.com/drive/folders/12faBB13gvGhpNrnxt3kMSi25sAUY1L9h",
   "public": "https://drive.google.com/drive/folders/1-wOJ9NFbpNuIHA3I6au0yrkAV3u9NyFP"
@@ -78,6 +82,10 @@
  "burmese": {
   "private": "https://drive.google.com/drive/folders/1FfFWmY3_ipIKn8h_svWMEwE_RLrZY_rq",
   "public": "https://drive.google.com/drive/folders/11XmV4DuEbY7Ah5R88_JjqzSvOz5tSIQm"
+ },
+ "canadian": {
+  "private": "https://drive.google.com/drive/folders/1-p8SWDaEda3vby9yfffrjvxB7coi7LFK",
+  "public": "https://drive.google.com/drive/folders/11SZeeJrkgTKqGn5fGt-BzfdNCUOePRWw"
  },
  "canonical-poetry": {
   "private": "https://drive.google.com/drive/folders/1bBcbP3ipByy4hheq5bRmywfmZwsqeGd-",
@@ -290,6 +298,10 @@
  "migration": {
   "private": "https://drive.google.com/drive/folders/1QGkiY9tuodOqJc2HVqmq2KgZYiUF3i4h",
   "public": "https://drive.google.com/drive/folders/1gxyBc_StG08RjpqcYMeVkmpctbkt2Na_"
+ },
+ "mn": {
+  "private": "https://drive.google.com/drive/folders/1JR9qSFrL0i1sJoQiHkLLq3Y93c_wmoDh",
+  "public": "https://drive.google.com/drive/folders/10tYyKkRoQRwFO3KGjc6IoaP_hnMs0y1A"
  },
  "monastic": {
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",
