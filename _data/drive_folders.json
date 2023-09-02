@@ -39,6 +39,10 @@
   "private": "https://drive.google.com/drive/folders/1-b0EkuiMjwrv6YsJjkn4zh_e76zcWHwj",
   "public": "https://drive.google.com/drive/folders/13WU-Ikvbam93LFX5o1IPaRhHrcZeLuKM"
  },
+ "apadana": {
+  "private": "https://drive.google.com/drive/folders/1al_pgWvSbWWUWgpf_ULJUI0yL6xR89Zr",
+  "public": "https://drive.google.com/drive/folders/12JDRn48Vn0hRMSXnL2d_4s_EBxpQtZQa"
+ },
  "art": {
   "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
   "public": "https://drive.google.com/drive/folders/1yr6n4SgItSZ7isFrsAyo9_NvTB1M9BZR"
@@ -450,6 +454,10 @@
  "tantric": {
   "private": "https://drive.google.com/drive/folders/1J34zI1iDc0iddITPLHaPP5PTFcz-j4Na",
   "public": "https://drive.google.com/drive/folders/12e7oPcEcTeJgLeULHJcW6oLA2i4zlblm"
+ },
+ "tantric-roots": {
+  "private": "https://drive.google.com/drive/folders/12blFyH7lI4bN5BDrKTaAzJnEooqnAaP1",
+  "public": "https://drive.google.com/drive/folders/10zbVgIHl-iGWzVLlADUCMc08BKFxkGAT"
  },
  "thai": {
   "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",
