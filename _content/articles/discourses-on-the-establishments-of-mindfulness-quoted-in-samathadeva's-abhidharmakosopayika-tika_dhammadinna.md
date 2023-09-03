@@ -1,5 +1,5 @@
 ---
-title: "Discourses on the establishments of mindfulness (smṛtyupasthānas) quoted in Śamathadeva’s Abhidharmakośopāyikā-ṭīkā"
+title: "Discourses on the establishments of mindfulness (*smṛtyupasthānas*) quoted in Śamathadeva’s *Abhidharmakośopāyikā-ṭīkā*"
 authors:
   - dhammadinna
 external_url: "https://www.academia.edu/37864714/Discourses_on_the_establishments_of_mindfulness_sm%E1%B9%9Btyupasth%C4%81nas_quoted_in_%C5%9Aamathadeva_s_Abhidharmako%C5%9Bop%C4%81yik%C4%81_%E1%B9%AD%C4%ABk%C4%81"
@@ -7,13 +7,10 @@ drive_links:
   - "https://drive.google.com/file/d/1y528FIdqbrPhmleu6B2XVTtt0rsTi9XC/view?usp=sharing"
 course: sati
 tags:
-  - Smṛtyupasthāna
   - meditation
+  - sa
 year: 2018
-month: 
-olid: 
-oclc: 
-journal: Journal of Buddhist Studies
+journal: "Journal of Buddhist Studies"
 publisher: "Centre for Buddhist Studies, Sri Lanka &
 The Buddha-Dharma Centre of Hong Kong"
 address: "Sri Lanka"
