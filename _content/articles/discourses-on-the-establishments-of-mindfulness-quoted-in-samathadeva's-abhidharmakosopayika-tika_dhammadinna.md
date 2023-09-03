@@ -7,14 +7,12 @@ drive_links:
   - "https://drive.google.com/file/d/1y528FIdqbrPhmleu6B2XVTtt0rsTi9XC/view?usp=sharing"
 course: sati
 tags:
-  - meditation
   - sa
 year: 2018
 journal: "Journal of Buddhist Studies"
-publisher: "Centre for Buddhist Studies, Sri Lanka &
-The Buddha-Dharma Centre of Hong Kong"
+publisher: "Centre for Buddhist Studies"
 address: "Sri Lanka"
-volume: XV
+volume: 15
 pages: "23--38"
 ---
 
