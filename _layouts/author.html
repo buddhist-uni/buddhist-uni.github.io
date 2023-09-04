@@ -14,9 +14,11 @@ layout: default
       <h2>Selected Works <small>(in chronological order)</small></h2>
         {% capture filter %}c.authors contains '{{ page.slug }}'{% endcapture %}
     {% assign contents = site.content | where_exp: "c", filter %}
-    {% assign transcont = site.content | where: "translator", page.slug %}
+    {% capture filter %}c.translator contains " and {{page.slug}}" or c.translator contains "{{page.slug}} and " or c.translator == "{{page.slug}}"{% endcapture %}
+    {% assign transcont = site.content | where_exp: "c", filter %}
+    {% capture filter %}c.editor contains " and {{page.slug}}" or c.editor contains "{{page.slug}} and " or c.editor == "{{page.slug}}"{% endcapture %}
+    {% assign editcont = site.content | where_exp: "c", filter %}
     {% assign readcont = site.content | where: "reader", page.slug %}
-    {% assign editcont = site.content | where: "editor", page.slug %}
     <div>{% include content_list.html contents=contents orderby="year" %}</div>
     {% if readcont.size > 0 %}
     <h3 id="readings">Readings:</h3>
