@@ -16,4 +16,4 @@ volume: 15
 pages: "23--38"
 ---
 
-A collection of canonical quotations found in the Tibetan Abhidharmakośopāyikā-ṭīkā and their paralles in the Saṃyukta-āgama, all of which highlight the four foundations of mindfulness, their development, arising and their passing away, and the delight in their cultivation .
+A collection of canonical quotations found in the Tibetan Abhidharmakośopāyikā-ṭīkā parallel to the Saṃyukta-āgama, all of which highlight the four foundations of mindfulness, their development, arising and passing away, and one's delight in their cultivation .
