@@ -229,7 +229,7 @@ function displaySearchResults(results) {
 self.onmessage = function(e) {
   var results = [];
   var warning = "";
-  var words = e.data.q.split(" ");
+  var words = e.data.q.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
@@ -251,7 +251,7 @@ self.onmessage = function(e) {
     } else { throw err; }
   }
   if (!results.length){
-    words = e.data.q.split(" ");
+    words = e.data.q.trim().split(" ");
     if (words.find(function(w){ return w.length <= 2; }) == undefined) {
       results = idx.search(words.join("~1 ") + "~1");
       if (results.length)
