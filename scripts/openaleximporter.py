@@ -241,7 +241,8 @@ def prompt_for_work(query) -> str:
     ch = sys.stdin.read(1)
     if ch in ['\t', '\r', '\x04'] and 'results' not in r:
        cout("\033[u\033[3E")
-       existing_drafts = draft_files_matching(query)
+       with yaspin(text="Scanning drafts..."):
+         existing_drafts = draft_files_matching(query)
        if existing_drafts:
         if len(existing_drafts) > 1:
             cout(f"Found {len(existing_drafts)} existing _draft files: ")
@@ -254,7 +255,7 @@ def prompt_for_work(query) -> str:
                 shutil.move(existing_drafts[0], new_path)
                 system_open(new_path)
                 quit(0)
-       with yaspin(text="Searching..."):
+       with yaspin(text="Searching OpenAlex..."):
          i = 0
          r = search_openalex_for_works(query)
     elif ch == '\x03':
