@@ -3,9 +3,9 @@ from strutils import input_with_tab_complete
 
 clientsecrets = Path("~/library-utils-client-secret.json")
 
-def move_gfile(glink, course):
+def move_gfile(glink, folders):
   gfid = link_to_id(glink)
-  public_fid, private_fid = get_gfolders_for_course(course)
+  public_fid, private_fid = folders
   file = move_drive_file(clientsecrets, gfid, public_fid or private_fid)
   shortcuts = get_shortcuts_to_gfile(clientsecrets, gfid)
   if public_fid and private_fid:
@@ -34,5 +34,6 @@ if __name__ == "__main__":
       break
     glinks.append(glink)
   course = input_with_tab_complete("course: ", get_known_courses())
+  folders = get_gfolders_for_course(course)
   for glink in glinks:
-    move_gfile(glink, course)
+    move_gfile(glink, folders)

@@ -9,7 +9,7 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8719860"
 source_url: "https://doi.org/10.1073/pnas.2112552118"
 drive_links:
   - "https://drive.google.com/file/d/1cON3CAF62-Qw_4OOKioCwI-0SK8CCGP3/view?usp=drivesdk"
-course: social
+course: social # borderline, probably to move down or archive some day...
 tags:
   - poli-sci
   - social-media

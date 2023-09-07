@@ -100,6 +100,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [84000.co](https://84000.co/)
 * [Hong Kong University Theses](https://hub.hku.hk/handle/10722/50080)
+* [The Met](https://www.metmuseum.org/art/metpublications/search-publication-results?searchType=C&Tag=Buddhism&title=&author=&pt=0&tc=0&dept=0&fmt=downloadpdf&sort=PublicationYear%7CDesc)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
 * [Pressbooks](https://pressbooks.directory/)
 * [OpenStax](https://openstax.org/subjects)
