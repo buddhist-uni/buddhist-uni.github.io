@@ -21,6 +21,9 @@ image_info: <a href="https://www.metmuseum.org/art/collection/search/39707">The 
 {% include content_blurb.html category="canon" slug="an3.66" %}
 - Venerable Nandaka teaches about the true purpose of the spiritual path and how one can navigate between various paths to find the true one.
 
+{% include content_blurb.html category="canon" slug="sn45.152" %}
+- The Buddha explains that the Path inclines one towards Nibbāna.
+
 {% include content_box.html category="canon" slug="mn24" %}
 
 {% include content_blurb.html category="excerpts" slug="rathavinita_analayo" %}
