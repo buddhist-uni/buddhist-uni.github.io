@@ -16,6 +16,7 @@ drive_links:
 course: samadhi
 tags:
   - kilesa
+  - hindrances
 ---
 
-A brief but insightful explanation of the Upakkilesa Sutta.
+A brief but insightful explanation of the [Upakkilesa Sutta](/content/canon/mn128).
