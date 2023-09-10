@@ -2,7 +2,7 @@
 title: "The Jhānas and the Lay Disciples: According to the Pāli Suttas"
 authors:
   - bodhi
-external_url: "http://dhammatalks.net/Books10/Bhikkhu_Bodhi_The_Jhanas_and_the_Lay_Disciples.htm"
+external_url: "https://web.archive.org/web/20040812172805/http://www.buddhanet.net/budsas/ebud/ebdha267.htm"
 source_url: ""
 drive_links:
   - "https://drive.google.com/file/d/1fKmtexkIEFaJJHZ64TUyka2VGMmthPKJ/view?usp=sharing"
@@ -11,7 +11,10 @@ tags:
   - theravada
   - jhana
   - stages
-pages: "14"
+  - lay
+year: 2004
+month:jun
+pages: 14
 ---
 
 > I myself believe there is strong evidence in the Nikāyas that the jhānas
