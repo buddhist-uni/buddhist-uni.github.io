@@ -288,7 +288,10 @@ subcat: poetry{extra_fields}"""
       except ValueError: # Range sutta
         slugfield = f"sn.{int(nums[0]):03d}.{int(nums[1].split('-')[0]):03d}-{int(nums[1].split('-')[1]):03d}"
     case "an":
-      slugfield = f"an.{nums[0]:03d}.{nums[1]:03d}"
+      try:
+        slugfield = f"an.{nums[0]:03d}.{nums[1]:03d}"
+      except ValueError:
+        slugfield = f"an.{int(nums[0]):03d}.{int(nums[1].split('-')[0]):03d}-{int(nums[1].split('-')[1]):03d}"
     case "ud":
       slugfield = slug
     case "vv":
@@ -344,7 +347,6 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
-# imagery tag covered by Hecker's Similes
 year: {year}
 pages: {pages}
 {parallels}---

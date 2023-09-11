@@ -515,6 +515,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="canon" slug="iti107" %}
 - The Buddha summarizes this ideal relationship between the monastics and the laity.
 
+{% include content_blurb.html category="canon" slug="an3.20" %}
+- ... and explains how a Bhikkhu has benefactors.
+
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
