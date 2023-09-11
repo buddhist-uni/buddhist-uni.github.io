@@ -258,6 +258,8 @@ self.onmessage = function(e) {
         warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
       else
         warning = "";
+    } else {
+      warning = "";
     }
   }
   if (e.data.filterquery && e.data.filterquery !== "") {
