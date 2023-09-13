@@ -19,10 +19,14 @@ whitespace = re.compile('\s+')
 digits = re.compile('(\d+)')
 italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+abnormalchars = re.compile('[^\w\s]')
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
 }
+
+def sanitize_string(text):
+  return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
 
 def atoi(text):
     return int(text) if text.isdigit() else text
@@ -127,6 +131,9 @@ class FileSyncedSet:
       self.items.add(item)
       with open(self.fname, "a") as fd:
         fd.write(f"{item}\n")
+  def delete_file(self):
+    os.remove(self.fname)
+    self.items = set()
   def __contains__(self, item):
     return self.norm(item) in self.items
 

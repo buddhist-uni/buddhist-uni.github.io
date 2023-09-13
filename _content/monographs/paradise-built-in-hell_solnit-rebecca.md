@@ -3,7 +3,6 @@ title: "A Paradise Built in Hell: The Extraordinary Communities That Arise in Di
 authors:
   - solnit
 course: north-america
-external_url: "https://archive.org/details/paradisebuiltinh0000soln_f2d4/page/n6/mode/1up"
 status: featured
 tags:
   - cities

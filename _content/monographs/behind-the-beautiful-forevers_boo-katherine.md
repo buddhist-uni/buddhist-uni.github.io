@@ -4,7 +4,6 @@ authors: ["Katherine Boo"]
 year: 2012
 month: feb
 publisher: "Random House"
-external_url: "https://archive.org/details/behindbeautifulf0000book_u7o2/mode/1up"
 olid: OL25094126M
 course: world
 status: featured

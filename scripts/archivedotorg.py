@@ -9,6 +9,7 @@ import re
 import time
 from datetime import datetime, timedelta
 import os
+from strutils import sanitize_string
 try:
   from tqdm import tqdm, trange
 except:
@@ -40,36 +41,82 @@ def last_archived_datetime(url):
   timestamp = resp.headers['x-archive-redirect-reason'].split(' at ')[1]
   return datetime.strptime(timestamp, '%Y%m%d%H%M%S')
 
-def arch_url_to_id(item):
+def extract_archiveorg_id(item):
   match = re.search(r'https?:\/\/archive.org\/details\/([a-z0-9_-]+)\/?', item)
   if match:
     return match.groups()[0]
-  return item
+  return None
 
-def find_lendable_archiveorg_url_for_metadata(workinfo):
-  print(f"Searching Archive.org for lendable copies of \"{workinfo['title']}\"...")
-  print(f"Finding work OLID for {workinfo['olid']}...")
-  olid = openlibrary_edition_to_work_id(workinfo['olid'])
-  print(f"Got {olid}")
-  print(f"Searching by OLID:{olid}...")
-  ser = requests.get("https://archive.org/advancedsearch.php", params={
-      "q": f"collection:inlibrary AND language:eng AND openlibrary_work:({olid})",
+def search_archiveorg_lending_library(query):
+  return archive_org_session.get("https://archive.org/advancedsearch.php", params={
+      "q": f"collection:inlibrary AND language:eng AND {query}",
       "sort": "lending___available_to_borrow desc, loans__status__max_lendable_copies desc, lending___max_lendable_copies desc",
       "rows": 12,
       "output": "json"
-    }).json()
-  # print(ser['responseHeader'])
-  ser = ser['response']
-  print(f"Found {ser['numFound']} lendable work(s)")
-  for doc in ser['docs']:
-    if doc['imagecount'] >= workinfo['pages']:
-      print(f"Going with \"{doc['title']}\" by \"{doc['creator']}\" ({doc['year']})")
-      return f"https://archive.org/details/{doc['identifier']}/mode/1up"
+    }).json()['response']
+
+def is_doc_sane_for_work(doc, workinfo):
+  return doc['imagecount'] >= workinfo['pages'] and doc['year'] >= workinfo['year']
+
+class _AO_SearchStrat(object):
+  def __init__(self, workinfo):
+    self.info = workinfo
+  def is_applicable(self):
+    return True
+  def get_response(self):
+    raise NotImplementedError(f"Override the get_response function for {self.__class__}")
+
+class _AO_OLIDSearchStrat(_AO_SearchStrat):
+  def is_applicable(self):
+    self.olid = None
+    if 'olid' in self.info and self.info['olid']:
+      print(f"Finding work OLID for {self.info['olid']}...")
+      self.olid = openlibrary_edition_to_work_id(self.info['olid'])
+      print(f"Got {self.olid}")
+    return not not self.olid
+     
+  def get_response(self):
+    print(f"Searching by OLID:{self.olid}...")
+    return search_archiveorg_lending_library(f"openlibrary_work:({self.olid})")
+
+class _AO_OCLCSearchStrat(_AO_SearchStrat):
+  def is_applicable(self):
+    return 'oclc' in self.info and self.info['oclc']
+  def get_response(self):
+    print(f"Searching by oclc={self.info['oclc']}...")
+    return search_archiveorg_lending_library(self.info['oclc'])
+
+class _AO_DefaultSearchStrat(_AO_SearchStrat):
+  def get_response(self):
+    title = self.info['title'].split(':')[0]
+    if title.count(' ') == 0:
+      title = self.info['title']
+    title = sanitize_string(" ".join(filter(lambda w: "'" not in w and len(w)>2, title.split(" "))))
+    author = " ".join(filter(lambda w: len(w)>2, self.info['authors'][0].split("-")[0].split(" ")))
+    print(f"Searching works by title=\"{title}\" and author=\"{author}\" instead...")
+    return search_archiveorg_lending_library(f"title:({title}) AND creator:({author})")
+
+def find_lendable_archiveorg_url_for_metadata(workinfo):
+  print(f"Searching Archive.org for lendable copies of \"{workinfo['title']}\"...")
+  docs = []
+  strats = [_AO_DefaultSearchStrat, _AO_OCLCSearchStrat, _AO_OLIDSearchStrat]
+  while len(docs) == 0 and len(strats) > 0:
+    strat = strats.pop()(workinfo)
+    if not strat.is_applicable():
+      continue
+    ser = strat.get_response()
+    print(f"Found {ser['numFound']} lendable work(s): {list(map(lambda a: a['identifier'], ser['docs']))}")
+    docs = list(filter(lambda doc: is_doc_sane_for_work(doc, workinfo), ser['docs']))
+    if ser['numFound'] > 0 and len(docs) == 0:
+      print("But none of those seem suitable...")
+  if len(docs) >= 1:
+    doc = docs[0]
+    print(f"Going with \"{doc['title']}\" by \"{doc.get('creator', 'None')}\" ({doc['year']})")
+    return f"https://archive.org/details/{doc['identifier']}/mode/1up"
   print("Unable to find a suitable copy :(")
   return None
 
 def is_archiveorg_item_lendable(itemid):
-  itemid = arch_url_to_id(itemid)
   resp = archive_org_session.get("https://archive.org/services/availability", params={"identifier": itemid})
   data = resp.json()
   if not resp.ok or not data["success"]:
@@ -77,10 +124,18 @@ def is_archiveorg_item_lendable(itemid):
   try:
     return data['responses'][itemid]['is_lendable'] or data['responses'][itemid]['status'] == 'open'
   except KeyError:
-    raise KeyError(f"Archive.org Availability API returned: \"{data['responses'][itemid]['error_message']}\"")
+    message = data['responses'][itemid]['error_message']
+    if message == 'not found':
+      return False
+    raise KeyError(f"Archive.org Availability API returned: \"{message}\"")
 
 def openlibrary_edition_to_work_id(editionid):
-  data = requests.get(f"https://openlibrary.org/books/{editionid}.json").json()
+  try:
+    resp = requests.get(f"https://openlibrary.org/books/{editionid}.json")
+    data = resp.json()
+  except json.decoder.JSONDecodeError:
+    print(f"!! WARNING: Failed to get Work ID for {editionid} with message: \"{resp.text}\"!!!")
+    return None
   return data['works'][0]['key'].replace("/works/", "")
 
 def save_url_to_archiveorg(url):

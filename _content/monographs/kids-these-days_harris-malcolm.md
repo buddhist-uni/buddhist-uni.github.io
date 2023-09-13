@@ -6,7 +6,6 @@ year: 2017
 month: nov
 olid: OL29762823M
 publisher: "Little, Brown"
-external_url: "https://archive.org/details/kidsthesedayshum0000harr/page/n4/mode/1up"
 course: education
 tags:
   - economics

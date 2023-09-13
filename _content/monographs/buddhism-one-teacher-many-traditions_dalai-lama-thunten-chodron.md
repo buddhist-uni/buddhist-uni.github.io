@@ -9,6 +9,7 @@ olid: OL27168632M
 year: 2014
 oclc: 944380654
 month: nov
+external_url: "https://archive.org/details/buddhismoneteach0000bsta/mode/1up"
 publisher: wisdom
 pages: 318
 ---

@@ -5,7 +5,6 @@ authors:
 translator: "Rebecca Li and Kenneth Wapner"
 olid: OL24248587M
 oclc: 191024052
-external_url: "https://archive.org/details/footprintsinsnow0000shen/page/n6/mode/1up"
 status: featured
 course: mahayana
 tags:

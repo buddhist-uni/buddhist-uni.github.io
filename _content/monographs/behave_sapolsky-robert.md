@@ -5,7 +5,6 @@ year: 2017
 month: may
 olid: OL26655986M
 publisher: "Penguin"
-external_url: "https://archive.org/details/behavebiologyofh0000sapo/page/n4/mode/1up"
 course: inner
 status: featured
 tags:

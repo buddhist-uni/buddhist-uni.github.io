@@ -11,6 +11,7 @@ tags:
   - sutta
 year: 1987
 status: featured
+external_url: "https://archive.org/details/longdiscoursesof0000unse/mode/1up"
 publisher: wisdom
 pages: 656
 ---
