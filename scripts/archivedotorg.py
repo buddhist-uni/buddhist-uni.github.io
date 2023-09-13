@@ -1,4 +1,4 @@
-"""Saves every page across the site to Archive.org's Wayback Machine"""
+#!/bin/python3
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -75,7 +75,7 @@ def is_archiveorg_item_lendable(itemid):
   if not resp.ok or not data["success"]:
     raise RuntimeError("Failed to connect to the Archive.org availability API")
   try:
-    return data['responses'][itemid]['is_lendable']
+    return data['responses'][itemid]['is_lendable'] or data['responses'][itemid]['status'] == 'open'
   except KeyError:
     raise KeyError(f"Archive.org Availability API returned: \"{data['responses'][itemid]['error_message']}\"")
 
@@ -138,5 +138,3 @@ def archive_urls(urls, skip_urls_archived_in_last_days=365):
   for url in successes:
     print(f"  {url}")
   return successes
-
-
