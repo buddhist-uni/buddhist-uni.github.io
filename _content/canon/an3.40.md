@@ -12,6 +12,8 @@ tags:
   - epistemology
   - karma
 pages: 3
+parallels:
+  - t1548.25
 ---
 
 > Bhikkhus, there are these three authorities. What three? Oneself as one’s authority, the world as one’s authority, and the Dhamma as one’s authority.

@@ -15,6 +15,13 @@ tags:
   - philosophy
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an7.5
+#  - an7.7
+#  - g3dhp1-10
+#  - pdhp327-341
+#  - thag8.2
 ---
 
 > Mendicants, there are these seven kinds of wealth. What seven? The wealth of faith, ethical conduct, conscience, prudence, learning, generosity, and wisdom.

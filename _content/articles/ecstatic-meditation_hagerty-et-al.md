@@ -19,7 +19,7 @@ publisher: "Hindawi"
 pages: "1--12"
 ---
 
-> the subject indicated extremely high magnitude of
+> … the subject indicated extremely high magnitude of
 reward, [yet] the objective activation
 of the reward system was not extreme.
 

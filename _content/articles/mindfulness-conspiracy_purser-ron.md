@@ -16,4 +16,4 @@ tags:
 pages: 12
 ---
 
-> anything that offers success in our unjust society without trying to change it is not revolutionary—it just helps people cope. 
+> … anything that offers success in our unjust society without trying to change it is not revolutionary—it just helps people cope. 

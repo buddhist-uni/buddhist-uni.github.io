@@ -10,8 +10,12 @@ drive_links:
 course: sati
 tags:
   - samatha
+  - dedication
+  - thought
 year: 2018
 pages: 1
 ---
 
 > Allowing inner awareness to be unrestricted...
+
+Three verses to inspire the development of undistracted awareness.

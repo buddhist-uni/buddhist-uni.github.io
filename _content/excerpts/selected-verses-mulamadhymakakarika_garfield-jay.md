@@ -17,11 +17,11 @@ tags:
 year: 1995
 publisher: oxford
 address: "Oxford"
-booktitle: "The fundamental wisdom of the middle way: Nāgārjuna's Mūlamadhyamakakārikā"
+booktitle: "The fundamental wisdom of the middle way: Nāgārjuna's Mūlamadhyamakakārikā"
 pages: 12
 ---
 
 > By a misperception of emptiness  
 A person of little intelligence is destroyed.
 
-A translation of a select seventy verses from Nāgārjuna's Mūlamadhyamakakārikā.
+A translation of a select seventy verses from Nāgārjuna's Mūlamadhyamakakārikā.

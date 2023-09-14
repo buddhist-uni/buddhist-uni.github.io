@@ -12,6 +12,6 @@ month: dec
 pages: 9
 ---
 
-> aspects of the myth must be stripped away
+> … aspects of the myth must be stripped away
 
 An invitation to imagine a more austere figure than the prince of myth.

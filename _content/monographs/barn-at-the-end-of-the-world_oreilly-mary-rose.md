@@ -10,9 +10,10 @@ tags:
 year: 2000
 olid: OL33472M
 oclc: 41601119
+external_url: "https://archive.org/details/barnatendofworld0000orei/mode/1up"
 publisher: Milkweed
 address: Minneapolis
 pages: 317
 ---
 
-> memoir, a genre that gives us access to that lost Middlemarch of reflection
+> … memoir, a genre that gives us access to that lost Middlemarch of reflection

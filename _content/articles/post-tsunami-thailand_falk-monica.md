@@ -19,5 +19,5 @@ tags:
   - engaged
 ---
 
-> the role of Buddhist temples in providing aid and taking care of survivors in the wake of the disaster, including the indispensable function of Buddhist monks to conduct funerals and other ceremonies, and their vital responsibility for helping the survivors overcome their suffering.
+> … the role of Buddhist temples in providing aid and taking care of survivors in the wake of the disaster, including the indispensable function of Buddhist monks to conduct funerals and other ceremonies, and their vital responsibility for helping the survivors overcome their suffering.
 

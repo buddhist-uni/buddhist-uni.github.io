@@ -13,6 +13,8 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Luang_Phor_Somchai_
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
+{% include content_box.html category="canon" slug="an3.35" %}
+
 {% include content_box.html category="canon" slug="an7.6" %}
 
 {% include toast.html type="question" content='Why are the above considered forms of "wealth?" What does "prosperity" mean in this *sutta*? Using the ideas from Shklar\'s essay, how does this kind of "wealth" create a more "prosperous" society?' %}

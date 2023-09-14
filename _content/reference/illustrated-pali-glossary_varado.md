@@ -16,4 +16,4 @@ month: apr
 pages: 1224
 ---
 
-> dictionary with examples from the Theravāda Pāli Canon
+> … dictionary with examples from the Theravāda Pāli Canon

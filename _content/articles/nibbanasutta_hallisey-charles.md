@@ -19,4 +19,4 @@ tags:
 
 > The *Nibbānasutta* displays, at least in part, the processes through which summaries and new suttas were created in the Theravada tradition.
 
-A late, apocryphal "sutta" in the Theravāda tradition, building on the famous simile of Nibbāna as a hidden, jungle city—a simile first found [in SN 12.65](/content/canon/sn12.65).
+A late, apocryphal "sutta" in the Theravāda tradition, building on [the famous simile of Nibbāna as a hidden, jungle city](/content/canon/sn12.65).

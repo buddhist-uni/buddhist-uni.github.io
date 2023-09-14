@@ -12,6 +12,9 @@ tags:
   - nibbana
 year: 2018
 pages: 2
+parallels:
+  - ps2.1
+  - sa560
 ---
 
 > All of the monks and nuns who declare in my presence that they have attained perfection, did so by one or other of four paths.

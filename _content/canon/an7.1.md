@@ -10,6 +10,8 @@ tags:
   - an
 year: 2018
 pages: 1
+parallels:
+  - an8.3
 ---
 
 > A mendicant with seven qualities is liked and approved by their spiritual companions

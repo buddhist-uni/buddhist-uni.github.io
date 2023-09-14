@@ -13,6 +13,11 @@ tags:
 subcat: poetry
 year: 2000
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - mnd15
+#  - ne6
+#  - thag6.13
 ---
 
 > By what is the world afflicted?  

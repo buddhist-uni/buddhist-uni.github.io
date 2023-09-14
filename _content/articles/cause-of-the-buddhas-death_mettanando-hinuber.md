@@ -18,5 +18,5 @@ volume: 26
 pages: "105--117"
 ---
 
-> it is most likely that the Buddha suffered from mesenteric infarction caused by an occlusion of an opening of the superior mesenteric artery
+> … it is most likely that the Buddha suffered from mesenteric infarction caused by an occlusion of an opening of the superior mesenteric artery
 

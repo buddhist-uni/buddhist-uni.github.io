@@ -18,7 +18,7 @@ pages: 56
 
 > These are the over two hundred kinds of knowledge that arise in one who develops concentration by mindfulness of breathing with sixteen grounds
 
-> the earliest extant, detailed
+> … the earliest extant, detailed
  commentary on Buddhist meditation available in an Indic language
  
 The Path of Discrimination was a key influence on later meditation manuals (such as the medieval [*Visuddhimagga*](/content/canon/vsm_buddhaghosa)) and is the oldest such commentary in existence, giving us a rare insight into the early Indian commentarial and meditation traditions.

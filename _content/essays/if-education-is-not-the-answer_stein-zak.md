@@ -16,4 +16,4 @@ address: London
 pages: 16
 ---
 
-> there is no viable future for civilisation that does not include a radical change in the nature of our educational systems
+> … there is no viable future for civilisation that does not include a radical change in the nature of our educational systems

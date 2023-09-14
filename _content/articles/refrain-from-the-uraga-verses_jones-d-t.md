@@ -13,4 +13,4 @@ drive_links:
 journal: jocbs
 ---
 
-> a consideration of metaphor in the uraga verses refrain, and how the refrain may be an example of early Buddhist non-dualism
+> … a consideration of metaphor in the uraga verses refrain, and how the refrain may be an example of early Buddhist non-dualism

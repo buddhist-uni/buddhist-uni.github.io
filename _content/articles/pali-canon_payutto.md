@@ -17,4 +17,4 @@ journal: "Manusya: Journal of Humanities"
 pages: "93--132"
 ---
 
-> the Pali Canon is in effect where Buddhists can still have an audience with their Teacher and learn his Teaching even though he passed away over 2,500 years ago
+> … the Pali Canon is in effect where Buddhists can still have an audience with their Teacher and learn his Teaching even though he passed away over 2,500 years ago

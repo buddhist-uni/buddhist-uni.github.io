@@ -13,5 +13,5 @@ month: nov
 minutes: 78
 ---
 
-> we always speak about Buddhism as a religion of compassion, but then I saw the way Buddhism is developing in the US, especially (I have to say) amongst the White, upper-middle class, convert Buddhists... I don't want to paint an overly-grim picture, but why aren't there more Buddhist organizations acting to relieve the suffering in the world? 
+> … we always speak about Buddhism as a religion of compassion, but then I saw the way Buddhism is developing in the US, especially (I have to say) amongst the White, upper-middle class, convert Buddhists... I don't want to paint an overly-grim picture, but why aren't there more Buddhist organizations acting to relieve the suffering in the world? 
 

@@ -13,7 +13,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_US
 ---
 
 The Open Buddhist University is an unaccredited, digital resource run by Khemarato Bhikkhu since 2020.
-Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of "Early Buddhism."[^ebts]
+Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of Early Buddhism.[^ebts]
 
 The website is based on
 [Khemarato Bhikkhu's personal library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
@@ -38,4 +38,4 @@ Like most services, we use cookies to improve your experience. To opt-out, [clic
 
 Footnotes:
 
-[^ebts]: "Early Buddhism" is the *pre-*sectarian form of Buddhism being discovered and championed by such contemporary scholar/practitioners as [Venerable Analayo](/authors/analayo). For the difference between Early Buddhism and Theravāda Buddhism, see [Bhante Sujato's checklist](/content/essays/early-buddhism-from-theravada_sujato). For more information about OBU's curatorial philosophy, please read [our collection development policy](/COLLECTION_POLICY/).
+[^ebts]: For more information about OBU's curatorial philosophy, see [our collection development policy](/COLLECTION_POLICY/).

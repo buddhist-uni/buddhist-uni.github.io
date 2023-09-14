@@ -3,7 +3,7 @@ title: "Ajaan Mahā Boowa in London"
 authors:
   - boowa
 translator: panyavaddho
-editor: "M. R. Sermsri Kasemsri and Michael Shameklis and Ajahn Suchart"
+editor: "M. R. Sermsri Kasemsri and Michael Shameklis and suchart"
 external_url: "https://forestdhamma.org/ebooks/english/pdf/Acariya_Maha_Boowa_in_London.pdf"
 source_url: "http://luangta.eu/site/books/book01_london.php"
 drive_links:

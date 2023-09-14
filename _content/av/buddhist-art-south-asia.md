@@ -13,6 +13,6 @@ publisher: aam
 minutes: 20
 ---
 
-> the deer can still be seen roaming around but the monasteries that were built here lie mostly in ruins
+> … the deer can still be seen roaming around but the monasteries that were built here lie mostly in ruins
 
 A brief introduction to ancient Buddhist Art in India.

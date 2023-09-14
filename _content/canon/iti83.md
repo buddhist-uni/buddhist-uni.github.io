@@ -11,6 +11,10 @@ tags:
   - deva
 year: 1997
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - tha-ap189
+#  - tha-ap329
 ---
 
 > When a deva is due to pass away from a company of devas, five prognostic signs appear...

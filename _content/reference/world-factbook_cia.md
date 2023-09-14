@@ -11,4 +11,4 @@ month: oct
 olid: OL28995644M
 ---
 
-> basic realities about the world in which we live
+> … basic realities about the world in which we live

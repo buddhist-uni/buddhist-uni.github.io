@@ -10,12 +10,12 @@ tags:
   - thig
   - characters
   - monastic
-  - thought
   - upekkha
   - nuns
   - asubha
   - raga
   - bhikkhuni
+# thought tag covered by "Recognizing the Dhamma" anthology
 subcat: poetry
 year: 1995
 pages: 5

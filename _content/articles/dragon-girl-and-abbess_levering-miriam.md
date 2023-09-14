@@ -18,5 +18,5 @@ number: 1
 pages: "19--35"
 ---
 
-> quietly  ignoring  much  in  the  Buddhist  heritage  that  suggested  that  birth  as  a  woman  indicated  that  one  was  less  prepared  to  attain  enlightenment  than  men, Ch'an  teachers  urged  upon  their  students  the  point  of  view  that  enlightenment was  available  to  everyone  at  all  times;  any  other  view  was  seen  as  a  hindrance  to  practice
+> … quietly  ignoring  much  in  the  Buddhist  heritage  that  suggested  that  birth  as  a  woman  indicated  that  one  was  less  prepared  to  attain  enlightenment  than  men, Ch'an  teachers  urged  upon  their  students  the  point  of  view  that  enlightenment was  available  to  everyone  at  all  times;  any  other  view  was  seen  as  a  hindrance  to  practice
 

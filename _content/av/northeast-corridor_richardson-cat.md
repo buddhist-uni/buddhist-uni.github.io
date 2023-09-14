@@ -7,7 +7,7 @@ reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2020/02/18/322-northeast-corridor"
 course: inner
 tags:
-  - usa
+  - america
   - aging
   - romance
 year: 2020

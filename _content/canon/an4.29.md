@@ -10,6 +10,10 @@ tags:
   - an
   - samadhi
 pages: 1
+parallels:
+  - t1536.7
+# Partial parallels from SC
+#  - ne37
 ---
 
 > Bhikkhus, there are these four Dhamma factors, primal, of long standing, traditional, ancient...

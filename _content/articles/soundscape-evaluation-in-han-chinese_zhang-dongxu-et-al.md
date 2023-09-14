@@ -23,5 +23,5 @@ publisher: "Elsevier BV"
 openalexid: W2346046805
 ---
 
-> the average sound levels at the four temples over the course of an entire day were between 47.0 and 52.7 dBA, and approximately 70% of those surveyed tended to evaluate the temples’ soundscapes as comfortable and harmonious.
+> … the average sound levels at the four temples over the course of an entire day were between 47.0 and 52.7 dBA, and approximately 70% of those surveyed tended to evaluate the temples’ soundscapes as comfortable and harmonious.
 > When the sound level of a temple was higher than 60 dBA, respondents were more likely to feel uncomfortable

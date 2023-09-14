@@ -19,6 +19,6 @@ address: Taipei
 pages: 26
 ---
 
-> committing one’s life towards a path to awakening is, in fact, freeing not binding
+> … committing one’s life towards a path to awakening is, in fact, freeing not binding
 
 How a Bodhisattva should hold the Triple Gem.

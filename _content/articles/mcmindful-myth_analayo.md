@@ -15,6 +15,6 @@ volume: 11
 pages: "472--479"
 ---
 
-> expecting mindfulness teachers to stimulate political activism is not in keeping with relevant Buddhist antecedents
+> … expecting mindfulness teachers to stimulate political activism is not in keeping with relevant Buddhist antecedents
 
 A response to [Ron Purser](/content/av/mcmindfulness_purser).

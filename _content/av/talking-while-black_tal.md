@@ -16,4 +16,4 @@ number: 758
 minutes: 60
 ---
 
-> two stories of people trying to figure out what to say or if they should say anything in this moment of backlash.
+> … two stories of people trying to figure out what to say or if they should say anything in this moment of backlash.

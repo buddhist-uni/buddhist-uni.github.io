@@ -12,4 +12,4 @@ year: 2018
 pages: 2
 ---
 
-> seven principles that prevent decline
+> … seven principles that prevent decline

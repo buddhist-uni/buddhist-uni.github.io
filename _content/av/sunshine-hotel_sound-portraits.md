@@ -10,7 +10,7 @@ source_url: "https://storycorps.org/stories/the-sunshine-hotel/"
 course: cities
 tags:
   - social
-  - new-york
+  - nyc
   - poverty
 series: 99pi
 number: 175

@@ -18,4 +18,4 @@ tags:
   - feeling
 ---
 
-> even an *arahant* can be "vexed"
+> … even an *arahant* can be "vexed"

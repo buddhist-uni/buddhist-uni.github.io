@@ -13,6 +13,10 @@ tags:
 year: 2021
 pages: 3
 status: featured
+parallels:
+  - cnd4
+# Partial parallels from SC
+#  - cnd22
 ---
 
 > I shall keep reciting the Way to the Beyond

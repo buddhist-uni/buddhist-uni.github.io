@@ -20,4 +20,4 @@ number: 667
 pages: 16
 ---
 
-> in its profit-driven, medicalised, de-ritualized and patriarchal form, modern death care fundamentally distorts humans’ relationship to mortality, and through it, nature. In response, the New Death Movement promotes a (re)new(ed) way of ‘doing death’, one coded as spiritual and feminine, and based on the acceptance of natural cycles of decay and rebirth.
+> … in its profit-driven, medicalised, de-ritualized and patriarchal form, modern death care fundamentally distorts humans’ relationship to mortality, and through it, nature. In response, the New Death Movement promotes a (re)new(ed) way of ‘doing death’, one coded as spiritual and feminine, and based on the acceptance of natural cycles of decay and rebirth.

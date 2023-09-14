@@ -17,7 +17,7 @@ tags:
   - historiography
 ---
 
-> the particular wording introducing these place names can tell us much about the development of the literary form of early Buddhist texts and about the historical memory of the early authors
+> … the particular wording introducing these place names can tell us much about the development of the literary form of early Buddhist texts and about the historical memory of the early authors
 
 Despite an extremely unfortunate (and, tellingly, uncited) dig at the very end against the Lord Buddha's final words, this (otherwise) well researched and moderate take on mining the EBTs for historical fact gives us a good idea of how the texts were composed and when.
 

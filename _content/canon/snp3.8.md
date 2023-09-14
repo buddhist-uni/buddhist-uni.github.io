@@ -13,6 +13,18 @@ tags:
   - snp
   - death
 year: 2000
+parallels: []
+# Partial parallels from SC
+#  - g3dhp41-50
+#  - gdhp139-161
+#  - ja461
+#  - ja538
+#  - mnd6
+#  - t210.37
+#  - t212.1
+#  - t213.1
+#  - uv1
+#  - uv-kg1
 ---
 
 > not by weeping & grief  

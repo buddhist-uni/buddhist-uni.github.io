@@ -15,5 +15,5 @@ tags:
 status: featured
 ---
 
-> both works typify a style of writing in Buddhist Studies that seems to blur the line between religious writing and academic analysis
+> … both works typify a style of writing in Buddhist Studies that seems to blur the line between religious writing and academic analysis
 

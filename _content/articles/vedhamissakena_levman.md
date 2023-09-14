@@ -14,5 +14,5 @@ number: 5
 pages: "21--35"
 ---
 
-> the Pāli and Buddhist Sanskrit forms were sometimes contradictory, reflecting the redactors’ different interpretations of the oral transmission. By comparing these different forms, it is possible to isolate a proto-form which explains the ambiguities and is closer to the original
+> … the Pāli and Buddhist Sanskrit forms were sometimes contradictory, reflecting the redactors’ different interpretations of the oral transmission. By comparing these different forms, it is possible to isolate a proto-form which explains the ambiguities and is closer to the original
 

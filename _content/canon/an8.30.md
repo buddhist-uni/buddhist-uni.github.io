@@ -14,6 +14,13 @@ tags:
   - cessation
 year: 2012
 pages: 7
+parallels:
+  - ea42.6
+  - ma74
+  - t46
+# Partial parallels from SC
+#  - dn34
+#  - thag16.9
 ---
 
 The Buddha gently encourages Venerable Anuruddha to stop thinking and to delight in cessation.

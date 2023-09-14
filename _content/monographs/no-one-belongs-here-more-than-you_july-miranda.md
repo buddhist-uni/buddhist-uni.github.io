@@ -3,6 +3,7 @@ title: "No One Belongs Here More than You"
 authors:
   - "Miranda July"
 publisher: "Simon & Schuster"
+external_url: "https://archive.org/details/noonebelongshere0000july/page/n4/mode/1up"
 olid: OL7949156M
 year: 2007
 course: inner

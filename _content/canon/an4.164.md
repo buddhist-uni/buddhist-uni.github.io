@@ -11,6 +11,11 @@ tags:
   - path
 year: 2012
 pages: 1
+parallels:
+  - t1536.7
+# Partial parallels from SC
+#  - an4.114
+#  - an5.140
 ---
 
 > Monks, there are these four modes of practice. Which four? Intolerant practice, tolerant practice, self-controlled practice, and even practice.

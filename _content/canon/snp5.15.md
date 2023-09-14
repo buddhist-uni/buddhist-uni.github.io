@@ -10,6 +10,10 @@ tags:
   - vipassana
 year: 2021
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - cnd2
+#  - cnd18
 ---
 
 > One who has entirely given up the body, ...

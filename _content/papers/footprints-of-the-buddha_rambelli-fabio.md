@@ -24,7 +24,7 @@ chapter: 7
 pages: "151--168"
 ---
 
-> when the Japanese kept insisting that Buddhism was a specific religion that originated in north India, westerners were puzzled.
+> … when the Japanese kept insisting that Buddhism was a specific religion that originated in north India, westerners were puzzled.
 There was no cult of Buddha in India, and northern India in particular was largely Muslim.
 
 On the early modern encounters between Europeans and Japanese Buddhists and how they shaped each other's understanding of Asia.

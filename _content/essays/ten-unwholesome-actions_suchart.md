@@ -9,7 +9,6 @@ course: ethics
 tags:
   - karma
   - lay
-  - thought
 pages: 5
 ---
 

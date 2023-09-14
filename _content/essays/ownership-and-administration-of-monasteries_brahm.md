@@ -12,4 +12,4 @@ year: 1995
 pages: 2
 ---
 
-> the owners of the monastery are the worldwide and "timewide" community of monks and nuns
+> … the owners of the monastery are the worldwide and "timewide" community of monks and nuns

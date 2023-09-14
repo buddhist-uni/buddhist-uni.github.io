@@ -24,5 +24,5 @@ publisher: "American Psychological Association"
 openalexid: W2153837488
 ---
 
-> individuals with high self-esteem did not respond to mortality salience with increased worldview defense, whereas individuals with moderate self-esteem did.
+> … individuals with high self-esteem did not respond to mortality salience with increased worldview defense, whereas individuals with moderate self-esteem did.
 

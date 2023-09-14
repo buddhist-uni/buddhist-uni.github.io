@@ -78,9 +78,15 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {% include content_blurb.html category="canon" slug="sn56.21" %}
 - At its core, Nibbāna is the penetrative understanding of the Four Noble Truths which ends the cycle of rebirth.
 
+{% include content_blurb.html category="canon" slug="sn12.58" %}
+- The Buddha explains in brief how meditation leads to the breaking of Dependent Origination.
+
 <i class="fas fa-book"></i> The Introduction and Chapter 1 of *Metaphor and Literalism* (hereafter, "ML")
 {: .mb-0}
   - Will give an introduction to this text and to the term "*nibbāna*"
+
+{% include content_blurb.html category="canon" slug="sn22.54" %}
+  - The sutta that, finally, explains this course's epigraph.
 
 {% include content_blurb.html category="essays" slug="nibbana_bodhi" %}
   - A standard definition and straightforward typology of Nibbāna.
@@ -147,6 +153,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 {% include content_blurb.html category="canon" slug="snp5.4" %}
   - What is the difference between an Ordinary and an Enlightened being?
+
+{% include content_blurb.html category="canon" slug="sn21.10" %}
+  - What makes one truly renounced?
 
 {% include content_blurb.html category="booklets" slug="anatta-nibbana_nyanaponika" %}
   - How is “extinguishing” the Middle Way? How is it not nihilism?  How is "extinguishing" different from "annihilation"?
@@ -269,11 +278,17 @@ We finally come to the last, but perhaps most important, part of our course: the
 {% include content_blurb.html category="essays" slug="empty-citta_mahabua" %}
   - Ajahn Maha Boowa describes what it's like to be an arahant in this short talk delivered near the end of his life.
 
+{% include content_blurb.html category="canon" slug="thag15.2" %}
+  - A poetic description of the enlightened one as a spiritual "giant."
+
 {% include content_blurb.html category="articles" slug="arahant_ireland" %}
   - A short, ecstatic poem from the SN.
 
 {% include content_blurb.html category="av" slug="after-nibbana_yuttadhammo" %}
   - "What's next?" What happens after enlightenment?
+
+{% include content_blurb.html category="canon" slug="thag6.10" %}
+  - Even children can get enlightened, though they may not show it...
 
 With those final words of inspiration, our course is now finished.  The rest is up to us.
 

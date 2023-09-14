@@ -17,6 +17,6 @@ tags:
   - chinese
 ---
 
-> it appears contradictory that Chinese who follow the teachings of Mahāyāna Buddhism have worshipped arhats. [...] who was the arhat for Chinese Buddhists?
+> … it appears contradictory that Chinese who follow the teachings of Mahāyāna Buddhism have worshipped arhats. [...] who was the arhat for Chinese Buddhists?
 
 A translation of a number of primary sources which, taken together, paint a surprisingly complete picture of the arhat "invitation" ritual of ~11th c. China, including what these events looked like, where they were performed, how they were imagined, who conducted them and what benefits the sponsors hoped to gain from them.

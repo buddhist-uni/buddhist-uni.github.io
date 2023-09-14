@@ -14,4 +14,4 @@ publisher: wisdom
 pages: 144
 ---
 
-> a concise yet thorough exposition of the essentials of Tibetan Buddhist meditation practice
+> … a concise yet thorough exposition of the essentials of Tibetan Buddhist meditation practice

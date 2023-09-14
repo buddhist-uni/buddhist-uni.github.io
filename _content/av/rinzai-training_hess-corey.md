@@ -17,6 +17,6 @@ month: nov
 minutes: 6
 ---
 
-> a lot of the practice is figuring out how to get your whole self moving in one direction
+> … a lot of the practice is figuring out how to get your whole self moving in one direction
 
 A former Rinzai Zen monk explains the intense training he underwent in Japan.

@@ -18,7 +18,7 @@ number: 1
 base_value: 4
 ---
 
-> a series of lessons that introduce basic vocabulary and grammar, drawing on one authentic text 
+> … a series of lessons that introduce basic vocabulary and grammar, drawing on one authentic text 
 
 Note that the website and PDF linked above are *not* precisely identical versions. The **answer key** for the [web version can be found here](http://www.primerbuddhism.org/volume1/vol1key.html){:target="_blank" ga-event-value="2"} and [here are the pdf answers](https://drive.google.com/file/d/1_e6MPzbUrlmb0t7J0ZLifSxRiGO0i3xc/view?usp=drivesdk){:target="_blank" ga-event-value="2"}
 

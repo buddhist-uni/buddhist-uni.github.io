@@ -9,5 +9,5 @@ external_url: "https://www.academia.edu/39171328/Research_on_the_Sa%E1%B9%83yukt
 pages: 1007
 ---
 
-> fundamental methodological points posed by the study of the Collections of Connected Discourses as windows into the formation of early Buddhist texts and the organisation of their transmission
+> … fundamental methodological points posed by the study of the Collections of Connected Discourses as windows into the formation of early Buddhist texts and the organisation of their transmission
 

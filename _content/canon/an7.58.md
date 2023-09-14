@@ -11,6 +11,10 @@ tags:
   - buddha
 year: 2018
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - dn33
+#  - mil5.3.4
 ---
 
 > Mendicants, there are four areas where the Realized One has nothing to hide, and three ways he is irreproachable.

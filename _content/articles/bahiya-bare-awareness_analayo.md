@@ -14,5 +14,5 @@ journal: iijbs
 pages: 16
 ---
 
-> there is a place for "bare awareness" or "bare attention" within the early Buddhist scheme of meditation
+> … there is a place for "bare awareness" or "bare attention" within the early Buddhist scheme of meditation
 

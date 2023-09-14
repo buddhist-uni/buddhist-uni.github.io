@@ -22,4 +22,4 @@ pages: "33--39"
 publisher: "The University of Michigan"
 ---
 
-> the identification of Vairocana in these caves suggests that some form of the Tantric soteriological methodology explained in the *Mahāvairocanasūtra* was extant in the fifth century
+> … the identification of Vairocana in these caves suggests that some form of the Tantric soteriological methodology explained in the *Mahāvairocanasūtra* was extant in the fifth century

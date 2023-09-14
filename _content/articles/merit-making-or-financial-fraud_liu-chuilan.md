@@ -20,7 +20,7 @@ tags:
   - historiography
 ---
 
-> wealth and power did not seem to ease disruptive conflict
+> … wealth and power did not seem to ease disruptive conflict
 
 The fascinating details of monastic life in medieval Dunhuang as told by their cave-preserved legal documents.
 

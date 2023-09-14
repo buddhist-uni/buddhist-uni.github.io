@@ -15,4 +15,4 @@ address: "Vancouver, BC"
 pages: 445
 ---
 
-> how hereditary (nature) and experiential (nurture) variables interact to influence the thoughts, feelings, and behavior of individuals
+> … how hereditary (nature) and experiential (nurture) variables interact to influence the thoughts, feelings, and behavior of individuals

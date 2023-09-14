@@ -11,6 +11,30 @@ tags:
   - biology
 year: 2020
 pages: 2
+parallels:
+  - ea26.7
+  - sa1227
+  - sa-2.54
+# Partial parallels from SC
+#  - an5.36
+#  - g3dhp41-50
+#  - ja450
+#  - ne21
+#  - ne37
+#  - pe1
+#  - sn1.32
+#  - sn1.43
+#  - sn2.23
+#  - sn3.4
+#  - sn3.20
+#  - t210.24
+#  - t212.6
+#  - t213.5
+#  - uv1
+#  - uv5
+#  - uv-kg1
+#  - uv-kg5
+#  - uvs5
 ---
 
-> all beings are subject to death. Death is their end
+> … all beings are subject to death. Death is their end

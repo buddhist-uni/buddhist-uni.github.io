@@ -10,7 +10,7 @@ base_value: 0.2
 minutes: 13
 ---
 
-> the act of disappearing is not illegal in and of itself.
+> … the act of disappearing is not illegal in and of itself.
 You have the right to go missing.
 But believing that no one would miss you?
 That's ridiculous

@@ -12,6 +12,13 @@ tags:
   - action
   - deva
 pages: 2
+parallels:
+  - ja392
+  - sa1338
+  - sa-2.358
+# Partial parallels from SC
+#  - thag14.1
+#  - thag17.2
 ---
 
 In which a _deva_ chastises a monk for sniffing a flower!

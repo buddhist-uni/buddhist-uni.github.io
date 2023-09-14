@@ -16,6 +16,7 @@ header.site-header {
     border: none;
     .wrapper {
         max-width: 100%;
+        padding-bottom: 3px;
     }
     .site-nav-links {
         float: right;
@@ -302,7 +303,7 @@ div.content_box blockquote {
         font-size: 133%;
         line-height: 75%;
     }
-    p:after {
+    > :last-child:after {
         content: "”";
         font-size: 133%;
         line-height: 75%;
@@ -460,24 +461,6 @@ h1.overlay-into-banner {
     padding-right: 20%;
 }
 
-article.tag .tag_desc {
-    font-size: 105%;
-    font-family: $readable-font-family;
-    margin-top: 20px;
-}
-
-article.tag .tag_desc p {
-    margin-bottom: 6px;
-}
-
-article.tag header figure {
-    padding-top: 15px;
-}
-
-article.tag .subtopics {
-    font-size: 105%;
-}
-
 .content_links a {
     font-family: $ui-font-family;
 }
@@ -500,7 +483,7 @@ div.featured_content_list {
         margin-left: 5px;
     }
 
-    li {
+    .featured_content_list_item {
         width: 47%;
         padding: 17px 17px 7px;
         margin: 5px;
@@ -576,4 +559,3 @@ ol {
         }
     }
 }
-

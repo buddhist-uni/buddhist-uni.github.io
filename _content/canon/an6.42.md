@@ -14,6 +14,13 @@ tags:
   - thought
 year: 2018
 pages: 3
+parallels:
+  - sa1201-1300
+  - sa1250
+  - sa1251
+# Partial parallels from SC
+#  - an5.30
+#  - an8.86
 ---
 
 > Let them enjoy the filthy, lazy pleasure of possessions, honor, and popularity.

@@ -8,13 +8,15 @@ drive_links:
 course: tranquility-and-insight
 tags:
   - an
-  - imagery
   - samadhi
   - samatha
   - monastic-advice
   - characters
+# imagery covered by Hecker's similes
 year: 2018
 pages: 5
+parallels:
+  - ma82
 ---
 
 The junior monk Citta Hatthisāriputta rudely interrupts his seniors, and is admonished by Mahākoṭṭhita. His friends speak up in his defense, but Mahākoṭṭhita warns them how hard it is to know another's heart (_citta_) or where they are headed (_sāreti_).

@@ -3,6 +3,7 @@ title: "Dharma Rain: Sources of Buddhist Environmentalism"
 authors: # actually editors but yolo
   - "Stephanie Kaza"
   - "Kenneth Kraft"
+external_url: "https://archive.org/details/dharmarainsource00kaza/page/n2/mode/1up"
 secret_url: "https://terebess.hu/zen/Dharma-Rain.pdf"
 course: nature
 tags:

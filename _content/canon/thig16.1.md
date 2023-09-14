@@ -13,6 +13,8 @@ tags:
 year: 2019
 subcat: poetry
 pages: 10
+parallels:
+  - thi-ap1
 ---
 
 > No life is eternal, not even that of the gods;  

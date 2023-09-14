@@ -198,6 +198,7 @@ defaults:
     values:
         layout: "tag"
         section: "library"
+        custom_css: ["tag"]
         status: "unpublished"
         illustration_width: 750
   -

@@ -14,6 +14,12 @@ tags:
   - setting
 year: 2018
 pages: 5
+parallels:
+  - ea13.5
+  - ma93
+  - sa1185
+  - sa-2.98
+  - t51
 ---
 
 The Vattha Sutta is a beautiful and somewhat unusual description of the path to stream entry and beyond.

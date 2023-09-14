@@ -13,6 +13,12 @@ tags:
   - dhamma
 year: 2012
 pages: 3
+parallels: []
+# Partial parallels from SC
+#  - kv18.1
+#  - sa1188
+#  - sa-2.101
+#  - sn6.2
 ---
 
 > It is painful to dwell without reverence and deference. Now what ascetic or brahmin can I honor, respect, and dwell in dependence on?

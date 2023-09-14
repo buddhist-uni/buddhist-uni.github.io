@@ -5,6 +5,7 @@ year: 1997
 month: may
 olid: OL24732786M
 publisher: Norton
+external_url: "https://archive.org/details/gunsgermssteelfa0000diam_x4r7/page/n2/mode/1up"
 status: featured
 course: places
 tags:

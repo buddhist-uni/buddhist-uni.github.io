@@ -11,6 +11,8 @@ tags:
   - monastic-advice
 year: 2020
 pages: 3
+parallels:
+  - sa497
 ---
 
-> a monk who wishes to criticize another should first establish five resolutions
+> … a monk who wishes to criticize another should first establish five resolutions

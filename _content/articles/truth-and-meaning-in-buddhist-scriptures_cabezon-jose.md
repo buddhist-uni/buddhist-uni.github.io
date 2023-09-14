@@ -16,6 +16,6 @@ tags:
 
 > There is indeed a third alternative for resolving such inconsistencies, and it comes in the form of the doctrines of neyārtha and nītārtha. It is neither the authenticity nor the pragmatic truth of the [offending] scriptures which the [Mahayana] tradition questions, but [rather] their intended meaning. 
 
-> what text does not contradict reality? Different schools of Buddhist philosophy have answered this question in different ways. Indeed, it is this fact which makes them different.
+> … what text does not contradict reality? Different schools of Buddhist philosophy have answered this question in different ways. Indeed, it is this fact which makes them different.
 
 An introduction to Mahāyāna hermeneutics.

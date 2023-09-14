@@ -15,6 +15,6 @@ number: 1
 pages: "333--357"
 ---
 
-> for Śāntideva, since vice is always ultimately rooted in confusion, and the elimination of confusion issues in virtue, there can never be a situation in which one really knows what is right but chooses what is wrong. There is always a failure of knowledge, not just of will, in vicious action.
+> … for Śāntideva, since vice is always ultimately rooted in confusion, and the elimination of confusion issues in virtue, there can never be a situation in which one really knows what is right but chooses what is wrong. There is always a failure of knowledge, not just of will, in vicious action.
 
 An introduction to [Śāntideva's *Bodhicaryāvatāra*](/content/canon/bodhisattvacaryavatara_santideva).

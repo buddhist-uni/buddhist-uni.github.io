@@ -16,4 +16,4 @@ number: 1
 pages: "61--79"
 ---
 
-> the situation of the nuns  who  are  neither  strictly  lay,  nor  monastic,  allows  for  a  variety  of  ways  of  learning  and  conveying Buddhisms - ways  that  are both  molded  by  and  in  turn  define  contemporary religious changes
+> … the situation of the nuns  who  are  neither  strictly  lay,  nor  monastic,  allows  for  a  variety  of  ways  of  learning  and  conveying Buddhisms - ways  that  are both  molded  by  and  in  turn  define  contemporary religious changes

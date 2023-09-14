@@ -16,4 +16,4 @@ volume: 14
 pages: "239--271"
 ---
 
-> several Buddhist commentators, in advancing the notion of "compassionate violence," also advanced an ethical double standard
+> … several Buddhist commentators, in advancing the notion of "compassionate violence," also advanced an ethical double standard

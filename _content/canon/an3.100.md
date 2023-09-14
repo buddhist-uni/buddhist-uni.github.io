@@ -14,6 +14,8 @@ tags:
   - power
   - charisma
 pages: 3
+parallels:
+  - ma11
 ---
 
 > What kind of person isn’t thrown in jail for stealing half a dollar, a dollar, or a hundred dollars? A person who is rich, affluent, and wealthy.

@@ -10,6 +10,9 @@ tags:
   - an
   - becon
 pages: 6
+parallels:
+  - an4.61
+  - ma126
 ---
 
 > A man remembering this, a person established in Nobility,  

@@ -13,7 +13,6 @@ drive_links:
  - "https://drive.google.com/file/d/1x9aZHwOjLodM3sWZSYhWvk8zT2XpQMq3/view?usp=drivesdk"
 tags:
   - problems
-  - thought
   - karma
   - ethics
 ---

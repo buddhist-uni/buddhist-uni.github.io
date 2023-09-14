@@ -19,7 +19,7 @@ status: featured
 pages: 31
 ---
 
-> the most truthful way of regarding illness — and the healthiest way of being ill — is one most puriﬁed of, most resistant to, metaphoric thinking
+> … the most truthful way of regarding illness — and the healthiest way of being ill — is one most puriﬁed of, most resistant to, metaphoric thinking
 
 A classic and much-cited essay on the (mis)use of metaphors to describe disease.
 

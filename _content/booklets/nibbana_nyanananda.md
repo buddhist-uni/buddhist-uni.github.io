@@ -19,7 +19,7 @@ pages: 800
 course_time_multiplier: 0
 ---
 
-> all pathways for verbal expression, terminology and designation converge on this whirlpool between name-and-form and consciousness
+> … all pathways for verbal expression, terminology and designation converge on this whirlpool between name-and-form and consciousness
 
 The Nivane Niveema are a series of thirty-three sermons on Nibbāna, originally delivered in Sinhala
 during the period 1988–1991 and given to the assembly of monks in Nissaraṇa Vanaya, Meethirigala,

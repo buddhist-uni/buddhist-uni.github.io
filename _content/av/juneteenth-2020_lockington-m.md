@@ -7,7 +7,7 @@ reader: "Ada Limón"
 external_url: "https://www.slowdownshow.org/episode/2022/06/20/700-juneteenth-2020"
 course: inner
 tags:
-  - usa
+  - america
   - time
 year: 2022
 month: jun

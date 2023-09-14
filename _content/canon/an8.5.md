@@ -12,6 +12,11 @@ tags:
   - world
 year: 2000
 pages: 1
+parallels:
+  - ea43.8
+# Partial parallels from SC
+#  - dn33
+#  - ne37
 ---
 
 > Gain and loss, disrepute and fame,  

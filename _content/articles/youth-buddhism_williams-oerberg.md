@@ -19,5 +19,5 @@ number: 1
 pages: "322--340"
 ---
 
-> the case of “youth Buddhism” in Ladakh highlights how youth play a vital role in the revitalization and reformation of [modern] Buddhism.
+> … the case of “youth Buddhism” in Ladakh highlights how youth play a vital role in the revitalization and reformation of [modern] Buddhism.
 

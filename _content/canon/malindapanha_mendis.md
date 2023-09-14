@@ -17,5 +17,5 @@ pages: 207
 
 An abridged translation of the much-beloved, ancient Pāli classic of Theravāda doctrine.
 
-> in Burma the book has actually been included in the Sutta Piṭaka itself, as part of the _Khuddaka Nikāya_ or Miscellaneous Collection. Although the Buddhists of the other Theravāda countries have not gone quite so far in expressing their esteem, in all those lands where the Pali Tipiṭaka reigns supreme the _Milindapañhā_ stands just behind it as a weighty textual source
+> … in Burma the book has actually been included in the Sutta Piṭaka itself, as part of the _Khuddaka Nikāya_ or Miscellaneous Collection. Although the Buddhists of the other Theravāda countries have not gone quite so far in expressing their esteem, in all those lands where the Pali Tipiṭaka reigns supreme the _Milindapañhā_ stands just behind it as a weighty textual source
 

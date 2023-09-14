@@ -18,6 +18,6 @@ year: 2003
 minutes: 23
 ---
 
-> among practitioners, Zazen is affectionately known as "just sitting"
+> … among practitioners, Zazen is affectionately known as "just sitting"
 
 A brief introduction to West Coast Zen.

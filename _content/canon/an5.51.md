@@ -9,8 +9,13 @@ course: hindrances
 tags:
   - an
   - samadhi
-  - imagery
+# imagery covered by Hecker's similes
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - sa707
+#  - sn46.37
+#  - sn46.39
 ---
 
 > The river would keep flowing swiftly for a long way, carrying all before it.

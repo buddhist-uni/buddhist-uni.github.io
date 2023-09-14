@@ -14,4 +14,4 @@ year: 2012
 pages: 2
 ---
 
-> whatever is seen, heard, sensed, cognized, reached, sought after, examined by the mind—that I know.
+> … whatever is seen, heard, sensed, cognized, reached, sought after, examined by the mind—that I know.

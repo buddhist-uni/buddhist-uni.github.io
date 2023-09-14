@@ -14,6 +14,13 @@ tags:
   - ud
 year: 2012
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - t212.18
+#  - t213.17
+#  - uv17
+#  - uv-kg17
+#  - uvs17
 ---
 
 > What need for a well  

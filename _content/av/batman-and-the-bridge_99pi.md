@@ -18,5 +18,5 @@ number: 432
 minutes: 33
 ---
 
-> but someone was about to arrive in Texas to stick up for these bats
+> … but someone was about to arrive in Texas to stick up for these bats
 

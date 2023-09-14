@@ -14,6 +14,6 @@ tags:
   - buddha
 ---
 
-> besides numerous incontestably very late elements, it also contains many other extremely ancient elements
+> … besides numerous incontestably very late elements, it also contains many other extremely ancient elements
 
 A translation and analysis of the Ekottara Āgama's Mahāparinibbāna Sutta.

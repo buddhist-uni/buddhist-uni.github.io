@@ -1,0 +1,47 @@
+---
+---
+@import "support";
+
+.tag_desc {
+    font-size: 105%;
+    font-family: $readable-font-family;
+    margin-top: 20px;
+}
+
+.tag_desc p {
+    margin-bottom: 6px;
+}
+
+header figure {
+    padding-top: 15px;
+}
+
+.subtopics {
+    font-size: 105%;
+    line-height: 1.6;
+    ul {
+        list-style: none;
+    }
+    li {
+        width: fit-content;
+    }
+    i {
+        padding-right: 0.5em;
+    }
+    .subtopic-card {
+        border-radius: 10px;
+        width: fit-content;
+        background-color: $grey-color-light;
+        margin-bottom: $spacing-unit;
+        img {
+            width: 248px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: $topradii;
+        }
+        .subtopic-img-label {
+            padding-left: 1.5em;
+        }
+    }
+}
+

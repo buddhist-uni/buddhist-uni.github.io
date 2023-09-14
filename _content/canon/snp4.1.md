@@ -15,6 +15,18 @@ tags:
   - origination
 year: 2015
 pages: 2
+parallels:
+  - sag
+  - t198
+# Partial parallels from SC
+#  - ja467
+#  - mnd1
+#  - ne4
+#  - ne15
+#  - orphan
+#  - pe2
+#  - pli-tv-kd5
+#  - ud5.6
 ---
 
 > let a mindful one avoid at every turn  

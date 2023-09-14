@@ -10,6 +10,13 @@ course: philosophy
 tags: 
   - sn
 pages: 2
+parallels:
+  - sa1202
+  - sa-2.218
+# Partial parallels from SC
+#  - kv1.1
+#  - mil3.1.1
+#  - mnd15
 ---
 
 > Why now do you assume ‘a being’?

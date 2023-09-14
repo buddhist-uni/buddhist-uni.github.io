@@ -13,6 +13,12 @@ tags:
   - snp
   - philosophy
 minutes: 4
+parallels: []
+# Partial parallels from SC
+#  - an3.32
+#  - an4.41
+#  - cnd2
+#  - cnd7
 ---
 
 > The ignorant dullard who creates acquisition  

@@ -11,6 +11,14 @@ tags:
   - karma
 year: 2008
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - sn3.8
+#  - t212.6
+#  - t213.5
+#  - uv5
+#  - uv-kg5
+#  - uvs5
 ---
 
 A Queen gives her King an honest answer, and the Buddha gives us the very pith of ethics.

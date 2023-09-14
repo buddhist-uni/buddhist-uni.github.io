@@ -2,6 +2,7 @@
 title: "The Lotus and the Lion: Buddhism and the British Empire"
 authors:
   - "J. Jeffrey Franklin"
+external_url: "https://archive.org/details/lotuslionbuddhis0000fran/mode/1up"
 course: west
 tags:
   - british
@@ -15,7 +16,7 @@ address: Ithaca, NY
 pages: 273
 ---
 
-> the boundary between colonizer and colonized always is dangerously and excitingly permeable
+> … the boundary between colonizer and colonized always is dangerously and excitingly permeable
 
 > My interest is in the fact that the young Rudyard Kipling’s first exposure to Buddhism was in London, not India or Tibet or Japan; that he wrote the novel *Kim* for the most part from Rottingdean in Sussex; that most of the textual sources on which he drew were written and published in England, not Asia. My focus is upon the textualized Buddhism fashioned by Englishmen
 

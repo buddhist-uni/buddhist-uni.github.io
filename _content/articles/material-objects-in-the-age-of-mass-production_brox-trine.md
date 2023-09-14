@@ -21,4 +21,4 @@ volume: 20
 pages: "105--125"
 ---
 
-> although objects manufactured in factories for profit are not made or handled according to Buddhist tradition, the "aura" can be produced in different ways and at different points of an object’s life
+> … although objects manufactured in factories for profit are not made or handled according to Buddhist tradition, the "aura" can be produced in different ways and at different points of an object’s life

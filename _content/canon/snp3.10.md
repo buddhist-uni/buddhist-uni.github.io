@@ -13,6 +13,37 @@ tags:
   - philosophy
 year: 2018
 pages: 5
+parallels: []
+# Partial parallels from SC
+#  - an4.3
+#  - an10.89
+#  - dhp116-128
+#  - dhp306-319
+#  - ea21.5
+#  - gdhp259-273
+#  - iti48
+#  - ja367
+#  - ne37
+#  - pdhp96-120
+#  - sa1278
+#  - sa-2.276
+#  - sn1.22
+#  - sn6.9
+#  - sn6.10
+#  - sn7.4
+#  - t210.8
+#  - t210.17
+#  - t210.30
+#  - t212.9
+#  - t212.29
+#  - t213.8
+#  - t213.28
+#  - ud4.8
+#  - uv8
+#  - uv28
+#  - uv-kg8
+#  - uv-kg28
+#  - uvs8
 ---
 
 > Kokālika has been reborn in the Pink Lotus hell because of his resentment for Sāriputta and Moggallāna.

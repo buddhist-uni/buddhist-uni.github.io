@@ -12,6 +12,17 @@ tags:
   - an
 year: 2018
 pages: 1
+parallels:
+  - an9.71
+  - an10.14
+  - da10
+  - dn33
+  - dn34
+  - ea51.4
+  - ma206
+  - mn16
+  - t1536.12
+  - vb17
 ---
 
 > Mendicants, there are these five kinds of emotional barrenness. What five? …

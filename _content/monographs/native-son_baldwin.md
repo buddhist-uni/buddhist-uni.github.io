@@ -2,6 +2,7 @@
 title: "Notes of a Native Son"
 authors:
   - "James Baldwin"
+external_url: "https://archive.org/details/notesofnative00bald/page/n2/mode/1up"
 course: race
 tags:
   - social
@@ -16,4 +17,4 @@ address: USA
 pages: 165
 ---
 
-> here is something that will certainly pass for an apocalypse until the real thing comes along.
+> … here is something that will certainly pass for an apocalypse until the real thing comes along.

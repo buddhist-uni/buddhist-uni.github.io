@@ -17,6 +17,6 @@ year: 2006
 minutes: 8
 ---
 
-> indeed there is no thing there
+> … indeed there is no thing there
 
 A beautiful reading of [this wonderful and profound sutta](https://suttacentral.net/ud1.10/en/anandajoti){:target="_blank" ga-event-value="0.4"} on realizing the essence of emptiness.

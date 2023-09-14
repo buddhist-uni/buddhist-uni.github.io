@@ -16,4 +16,4 @@ number: 2
 pages: "141--166"
 ---
 
-> some groups of suttas in the Aṅguttara Nikāya with saṃyutta-like nature were probably moved from the Saṃyutta Nikāya to the Aṅguttara Nikāya within the Pali tradition. Evidence of a comparable movement into the Ekottarika Āgama is also available.
+> … some groups of suttas in the Aṅguttara Nikāya with saṃyutta-like nature were probably moved from the Saṃyutta Nikāya to the Aṅguttara Nikāya within the Pali tradition. Evidence of a comparable movement into the Ekottarika Āgama is also available.

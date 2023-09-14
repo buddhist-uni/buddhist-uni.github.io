@@ -8,9 +8,8 @@ drive_links: ["https://drive.google.com/file/d/1Ahq-eIJnKscBm5srYZmEZA1tJZjT_Q27
 publisher: "The Suan Usom Foundation"
 status: featured
 olid: OL8308477M
-course: view
+course: emptiness
 tags: 
-  - emptiness
   - nibbana
   - anagami
   - philosophy

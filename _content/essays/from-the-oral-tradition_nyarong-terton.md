@@ -19,7 +19,7 @@ base_value: 0.15
 pages: 1
 ---
 
-> the time for discovering Buddha directly, you must remain alone
+> … the time for discovering Buddha directly, you must remain alone
 
 A short poem on overcoming our barriers and sticking to the practice.
 

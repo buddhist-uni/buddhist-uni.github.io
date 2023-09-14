@@ -11,6 +11,9 @@ tags:
   - samvega
 year: 1998
 pages: 2
+parallels:
+  - sa1231
+  - sa-2.57
 ---
 
 King Pasenadi realizes how silly it is, the things that make people lie.

@@ -1,6 +1,6 @@
 ---
 title: "Common Buddhist Text: Guidance and Insight from the Buddha"
-editor: "Ven Brahmapundit and Peter Harvey"
+editor: "Ven Brahmapundit and harvey"
 alternate_url: "https://web.archive.org/web/20220126161759if_/http://www.icdv.net/pdf/cbt_final_dec29%202015.pdf"
 olid: OL35605236M
 file_links:
@@ -22,4 +22,4 @@ course_time_multiplier: 0.7
 
 An anthology of passages from the canonical and quasi-canonical texts of the three vehicles.
 
-> to increase awareness among Buddhists of their own rich heritage of religious and ethical thinking as well as to increase understanding among non-Buddhists of the fundamental values and principles of Buddhism. It seeks to strike a balance between what is common to the Buddhist traditions and the diversity of perspectives among them.
+> … to increase awareness among Buddhists of their own rich heritage of religious and ethical thinking as well as to increase understanding among non-Buddhists of the fundamental values and principles of Buddhism. It seeks to strike a balance between what is common to the Buddhist traditions and the diversity of perspectives among them.

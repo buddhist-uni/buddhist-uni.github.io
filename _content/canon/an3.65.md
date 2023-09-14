@@ -15,6 +15,10 @@ tags:
   - function
 year: 2000
 pages: 5
+parallels:
+  - ma16
+# Partial parallels from SC
+#  - an4.193
 ---
 
 > Kālāmas, do not go by oral tradition, by lineage of teaching, by hearsay, by a collection of scriptures, by logic...

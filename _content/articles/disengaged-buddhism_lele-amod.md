@@ -16,7 +16,7 @@ tags:
 status: featured
 ---
 
-> the most important sources of suffering are not something that activism can fix
+> … the most important sources of suffering are not something that activism can fix
 
 If you'd like to share your, or read other people's, thoughts on this, be sure to check out [the lively discussion on SuttaCentral about this article](https://discourse.suttacentral.net/t/disengaged-buddhism/14664?u=khemarato.bhikkhu).
 

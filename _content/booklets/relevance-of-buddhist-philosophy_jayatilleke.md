@@ -15,6 +15,6 @@ tags:
 pages: 18
 ---
 
-> my main intention is to indicate a new approach to philosophy which the Buddha tends to suggest in the modern context
+> … my main intention is to indicate a new approach to philosophy which the Buddha tends to suggest in the modern context
 
 A pitch for taking Buddhist Philosophy seriously

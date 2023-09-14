@@ -4,6 +4,7 @@ authors:
   - menzel-peter
 year: 1994
 olid: OL1084753M
+external_url: "https://archive.org/details/materialworldglo00menz/mode/1up"
 publisher: Counterpoint
 excerpt_url: "https://www.menzelphoto.com/portfolio/G0000GPaxwfSZQ0Q"
 course: wider

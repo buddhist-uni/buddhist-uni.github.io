@@ -11,6 +11,10 @@ tags:
   - an
   - becon
 pages: 2
+parallels:
+  - ea-2.3
+  - ea-2.41
+  - sf11
 ---
 
 > The blind person, the one-eyed person, and the two-eyed person.

@@ -14,6 +14,12 @@ tags:
   - rebirth-stories
 year: 2018
 pages: 3
+parallels:
+  - ea27.3
+  - ma155
+  - t72
+  - t73
+  - t74
 ---
 
 > Once upon a time, householder, there was a brahmin named Velāma...

@@ -15,6 +15,6 @@ tags:
   - thag-pali
 ---
 
-> the tradition is utterly confused and at a loss what to read. The commentarial tradition of interpretation, however, is unequivocal: the word *ve(X)a-* means ‘strap, thong’ [...] and most modern scholars have joined them.
+> … the tradition is utterly confused and at a loss what to read. The commentarial tradition of interpretation, however, is unequivocal: the word *ve(X)a-* means ‘strap, thong’ [...] and most modern scholars have joined them.
 
 A compelling, new reading of the famous simile in the *Mahāparinabbāna Sutta* of the Buddha's body being held together "by straps."

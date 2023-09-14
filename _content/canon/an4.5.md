@@ -12,6 +12,11 @@ tags:
   - sati
 year: 2000
 pages: 2
+parallels:
+  - t1536.9
+# Partial parallels from SC
+#  - ne37
+#  - pe8
 ---
 
 > give up sense pleasures even if it’s painful:  

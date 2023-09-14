@@ -8,6 +8,7 @@ import tty
 import termios
 import json
 import re
+import shutil
 from strutils import *
 from itertools import chain
 import journals
@@ -52,7 +53,7 @@ def make_library_entry_for_work(work, draft=False) -> str:
         category = 'papers'
     case 'reference-entry' | 'database' | 'dataset' | 'reference-book' | 'standard':
         category = 'reference'
-    case 'proceedings-article' | 'journal-article':
+    case 'proceedings-article' | 'journal-article' | 'article':
         category = 'articles'
     case 'posted-content':
         category = 'essays'
@@ -203,8 +204,30 @@ def make_library_entry_for_work(work, draft=False) -> str:
     fd.write('\n\n')
   return file_path
 
+def draft_files_matching(query):
+  matching_files = []
+  query_slug = slugify(query)
+  draft_folder_path = os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_drafts/_content"))
+  
+  for root, dirs, files in os.walk(draft_folder_path):
+    for file in files:
+      file_path = os.path.join(root, file)
+      
+      # Check if the file name contains the query string in slugified form
+      if query_slug in slugify(file):
+        matching_files.append(file_path)
+        continue
+      
+      # Check if the third ("title") line of the file contains the query string (ignoring capitalization)
+      with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        if len(lines) >= 3 and query.lower() in lines[2].lower():
+          matching_files.append(file_path)
+  
+  return matching_files
+
 def prompt_for_work(query) -> str:
-  print("Type part of the name of the work, hit Tab to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
+  print("Type part of the name of the work, hit Tab or Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
   SEARCH_ROOM = 5
   stdout_make_room(SEARCH_ROOM)
   cout(f"Search> \033[s{query}")
@@ -218,7 +241,21 @@ def prompt_for_work(query) -> str:
     ch = sys.stdin.read(1)
     if ch in ['\t', '\r', '\x04'] and 'results' not in r:
        cout("\033[u\033[3E")
-       with yaspin(text="Searching..."):
+       with yaspin(text="Scanning drafts..."):
+         existing_drafts = draft_files_matching(query)
+       if existing_drafts:
+        if len(existing_drafts) > 1:
+            cout(f"Found {len(existing_drafts)} existing _draft files: ")
+            cout(" AND ".join(existing_drafts))
+            raise NotImplementedError("Multiple matching draft files found")
+        else:
+            cout(f"Found matching _draft file: {existing_drafts[0]}\033[u\033[3E")
+            if prompt("Use this file?"):
+                new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(existing_drafts[0]))
+                shutil.move(existing_drafts[0], new_path)
+                system_open(new_path)
+                quit(0)
+       with yaspin(text="Searching OpenAlex..."):
          i = 0
          r = search_openalex_for_works(query)
     elif ch == '\x03':

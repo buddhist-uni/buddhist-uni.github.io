@@ -4,15 +4,15 @@ slug: "an.005.249"
 external_url: "https://suttacentral.net/an5.249/en/sujato"
 translator: sujato
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1O6IYnJQ4XGbCuFOrUTVoAaN4F_ffwTTI"]
-course: imagery
+drive_links: ["https://drive.google.com/file/d/1O6IYnJQ4XGbCuFOrUTVoAaN4F_ffwTTI"]
+course: ethics
+# imagery covered by Hecker's similes
 tags:
   - an
-  - ethics
-  - meditation
-  - lay
+  - problems
+  - world
 year: 2018
 pages: 2
 ---
 
-> Mendicants, there are these five drawbacks to a charnel ground.
+> Mendicants, there are these five drawbacks to a charnel ground...

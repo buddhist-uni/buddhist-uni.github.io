@@ -14,7 +14,7 @@ tags:
   - buddha
 ---
 
-> it is perhaps not so much the funeral itself, but rather the description which is so unusual and exceptional
+> … it is perhaps not so much the funeral itself, but rather the description which is so unusual and exceptional
 
 The _Mahāparinibbānasutta_ records funeral rites in more detail than any (even roughly) contemporary Indic text.  This paper explores how far we may trust its description and what causes may explain its uniqueness in ancient Indian literature.
 

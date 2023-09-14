@@ -20,7 +20,7 @@ pages: 15
 
 > A period of disorientation or depression is a small price to pay for more accurate knowledge.
 
-> whether or not a story could have been captured by a camcorder as an empirical fact does not really matter. Its truth lies in its symbolic meanings
+> … whether or not a story could have been captured by a camcorder as an empirical fact does not really matter. Its truth lies in its symbolic meanings
 
 An impassioned call for dogmatic Buddhists to take seriously both historical fact **and** religious myth.
 

@@ -19,6 +19,6 @@ publisher: nyt
 minutes: 61
 ---
 
-> you have this young brain that has a lot of what neuroscientists call "plasticity". It can change really easily, essentially. But it’s not very good at putting on its jacket and getting to preschool
+> … you have this young brain that has a lot of what neuroscientists call "plasticity". It can change really easily, essentially. But it’s not very good at putting on its jacket and getting to preschool
 
 A deeply optimistic and warm view of children as "explorers."

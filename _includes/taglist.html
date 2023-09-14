@@ -16,13 +16,23 @@
 
 <div class="tag-list{{ include.level }}">
     <div class="tagbox{{ include.level }}" onclick="location.href='{{ include.tag.url }}';">
+        {%- if include.level == 2 -%}
+            {%- assign puttitleontop = true -%}
+        {%- else -%}
+            {%- assign puttitleontop = false -%}
+        {%- endif -%}
         {%- if include.level <= 1 -%}
             {%- assign w = 225 -%}{%- if include.level == 1 -%}{% assign w = 750 %}{%- endif -%}
             <img style="object-position: {{ include.tag.image_center_x | default: "center" }} {{ include.tag.image_center_y | default: "center" }};" src="{{ include.tag.image }}{% if include.tag.image_height %}?cw={{ w }}&cx={{ include.tag.image_width | minus: w | times: include.tag.image_center_x | divided_by: 100.0 | round }}&ch=125&cy={{ include.tag.image_height | minus: 125 | times: include.tag.image_center_y | divided_by: 100.0 | round }}{% endif %}">
         {%- elsif include.level <= 5 and include.tag.illustration -%}
-            <img style="object-position: {{ include.tag.illustration_center_x | default: "center" }} {{ include.tag.illustration_center_y | default: "center" }};" src="{% if include.tag.use_sirv %}{{ include.tag.illustration }}?cw=448&ch=250&cx={% if include.tag.illustration_center_x %}{{ include.tag.illustration_width | minus: 448 | times: include.tag.illustration_center_x | divided_by: 100.0 | round }}{% else %}center{% endif %}&cy={% if include.tag.illustration_center_y %}{{ include.tag.illustration_height | minus: 250 | times: include.tag.illustration_center_y | divided_by: 100.0 | round }}{% else %}center{% endif %}{% else %}https://buddhistuniversity.net/big_imgs/tags/{{ include.tag.illustration | split: "/" | last | split: "." | first }}-preview.webp{% endif %}">
+            {% if puttitleontop %}
+              <a href="{{ include.tag.url }}">{{ include.tag.title }}</a>
+            {% endif %}
+            {% include taglist-img.html tag=include.tag %}
         {%- endif -%}
-        <a href="{{ include.tag.url }}">{{ include.tag.title }} »</a>
+        {% unless puttitleontop %}
+          <a href="{{ include.tag.url }}">{% unless include.tag.illustration or include.level != 5 %}↳ {% endunless %}{{ include.tag.title }} »</a>
+        {% endunless %}
     </div>
     {% if childs.size > 0 %}<div class="children{{ include.level }}">
         {%- for c in childs -%}

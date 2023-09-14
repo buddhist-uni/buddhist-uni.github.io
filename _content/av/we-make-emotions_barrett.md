@@ -19,5 +19,5 @@ journal: vox
 minutes: 96
 ---
 
-> emotions are not biologically hardwired into our brains but are constructed by our minds
+> … emotions are not biologically hardwired into our brains but are constructed by our minds
 

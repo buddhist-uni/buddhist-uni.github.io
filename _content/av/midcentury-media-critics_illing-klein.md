@@ -9,6 +9,7 @@ course: communication
 tags:
   - media
   - democracy
+  - present
 year: 2022
 month: jul
 publisher: nyt

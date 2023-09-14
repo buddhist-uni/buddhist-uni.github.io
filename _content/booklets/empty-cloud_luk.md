@@ -14,6 +14,6 @@ year: 2008 # sometime 2006–2012
 pages: 135
 ---
 
-> the practicer will become like a dead man who, while following others in their normal activities, does not give rise to the least differentiation or attachment
+> … the practicer will become like a dead man who, while following others in their normal activities, does not give rise to the least differentiation or attachment
 
 The extraordinary life and teachings of the modern-day Chan Master "Empty Cloud".

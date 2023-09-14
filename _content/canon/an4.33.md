@@ -11,6 +11,8 @@ tags:
   - function
   - imagery
 pages: 2
+parallels:
+  - sn22.78
 ---
 
 > It seems that we are actually impermanent, though we thought ourselves permanent;

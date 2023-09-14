@@ -2,6 +2,7 @@
 title: "The Saffron Road: A Journey with Buddha’s Daughters"
 authors:
   - "Christine Toomey"
+external_url: "https://archive.org/details/insearchofbuddha0000chri/page/n6/mode/1up"
 tags:
   - nuns
 year: 2015

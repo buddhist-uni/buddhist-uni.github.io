@@ -17,6 +17,6 @@ number: 1
 pages: "41--57"
 ---
 
-> self-referential passages functioned as self-promotion strategies suited to the employment of the emerging medium of the manuscript
+> … self-referential passages functioned as self-promotion strategies suited to the employment of the emerging medium of the manuscript
 
-> these devices come to be constitutive of Mahāyāna doctrine, as it is argued the Mahāyāna sutra texts themselves are constitutive of the Buddha’s true body.
+> … these devices come to be constitutive of Mahāyāna doctrine, as it is argued the Mahāyāna sutra texts themselves are constitutive of the Buddha’s true body.

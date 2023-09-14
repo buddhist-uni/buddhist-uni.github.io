@@ -24,5 +24,5 @@ publisher: nap
 openalexid: W3192940159
 ---
 
-> municipalities of Spain with a history of a stronger inquisitorial presence show lower economic performance, educational attainment, and trust today.
+> … municipalities of Spain with a history of a stronger inquisitorial presence show lower economic performance, educational attainment, and trust today.
 > The effects persist after controlling for historical indicators of religiosity and wealth

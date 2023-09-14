@@ -13,6 +13,11 @@ tags:
   - sutta
 year: 2018
 pages: 2
+parallels:
+  - an8.86
+  - sa1250
+# Partial parallels from SC
+#  - an6.42
 ---
 
 > Let them enjoy the filthy, lazy pleasure of possessions, honor, and popularity.

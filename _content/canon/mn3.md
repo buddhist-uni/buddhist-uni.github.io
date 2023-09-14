@@ -13,6 +13,11 @@ tags:
   - thought
 year: 2018
 pages: 4
+parallels:
+  - ea18.3
+  - ma88
+# Partial parallels from SC
+#  - mil6.1.2
 ---
 
 > "Be my heirs in the teaching, not in material things."

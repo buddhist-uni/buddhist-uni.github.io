@@ -15,5 +15,5 @@ year: 2017
 pages: 46
 ---
 
-> a look at some of the puzzles or problems that bhikkhunīs are working on within the Theravāda tradition
+> … a look at some of the puzzles or problems that bhikkhunīs are working on within the Theravāda tradition
 

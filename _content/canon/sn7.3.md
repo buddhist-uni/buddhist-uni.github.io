@@ -13,6 +13,21 @@ tags:
 year: 2020
 subcat: poetry
 pages: 2
+parallels:
+  - sa1151
+  - sa-2.74
+  - sa-3.25
+# Partial parallels from SC
+#  - sn7.2
+#  - sn11.4
+#  - sn11.5
+#  - t210.25
+#  - t212.21
+#  - t213.20
+#  - thag6.12
+#  - uv20
+#  - uv-kg20
+#  - uvs20
 ---
 
 > if you’re patient, mindful and calm,  

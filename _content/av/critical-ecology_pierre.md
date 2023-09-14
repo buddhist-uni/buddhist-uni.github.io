@@ -19,6 +19,6 @@ month: aug
 minutes: 75
 ---
 
-> though money is an idea, basically, it represents stuff, and stuff is made of carbon
+> … though money is an idea, basically, it represents stuff, and stuff is made of carbon
 
 An interview with the woman spearheading the new discipline explaining how human social structures impact the environment.

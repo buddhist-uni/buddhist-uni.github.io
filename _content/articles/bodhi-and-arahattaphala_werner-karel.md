@@ -22,7 +22,7 @@ number: 1
 pages: "167--181"
 ---
 
-> the redefinition of arahantship cannot be looked upon as successful.
+> … the redefinition of arahantship cannot be looked upon as successful.
 > The relaxed criteria would have enabled many monks of lesser attainment, as well as status-seeking monks, to proclaim themselves arahants.
 > [...] In its devalued form it simply could not satisfy the spiritual aspiration of those who sought the ultimate goal.
 

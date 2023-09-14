@@ -11,6 +11,10 @@ tags:
   - monastic-advice
 year: 2018
 pages: 2
+parallels:
+  - sa1343
+  - sa-2.363
+  - sn9.13
 ---
 
 A deva gently encourages a group of wayward monks.

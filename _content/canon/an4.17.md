@@ -10,6 +10,17 @@ tags:
   - perception
   - path
 pages: 1
+parallels:
+  - t1536.8
+# Partial parallels from SC
+#  - an4.19
+#  - dn31
+#  - dn33
+#  - ja443
+#  - ne37
+#  - pe3
+#  - pli-tv-pvr7
+#  - vb17
 ---
 
-> there are these four ways of taking a wrong course
+> … there are these four ways of taking a wrong course

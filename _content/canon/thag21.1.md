@@ -14,6 +14,35 @@ tags:
   - problems
 year: 2014
 pages: 10
+parallels: []
+# Partial parallels from SC
+#  - dhp179-196
+#  - divy
+#  - iti24
+#  - mil2
+#  - sn8.2
+#  - sn8.5
+#  - sn8.6
+#  - sn8.10
+#  - sn15.10
+#  - snp2.12
+#  - snp3.3
+#  - t210.8
+#  - t210.22
+#  - t212.9
+#  - t212.28
+#  - t213.8
+#  - t213.27
+#  - thi-ap36
+#  - thig7.2
+#  - thig7.3
+#  - thig13.3
+#  - thig13.4
+#  - uv8
+#  - uv27
+#  - uv-kg8
+#  - uv-kg27
+#  - uvs8
 ---
 
 > Even if a thousand mighty princes and great archers,  

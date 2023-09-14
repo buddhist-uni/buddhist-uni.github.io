@@ -86,7 +86,7 @@
 <a class="skip-to-main" href="#main">Skip to content</a>
 
 <header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% elsif site.header_pages contains page.path %} smallsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
-  <div class="wrapper">
+  <div class="wrapper"{% if page.banner_info %} style="backdrop-filter: blur(0.3px);"{% endif %}>
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img height="48" src="/assets/imgs/logo.png" alt="logo"></img><span>{{ site.title | escape }}</span></a>
       <nav class="site-nav-links">
           {%- for path in site.header_pages -%}

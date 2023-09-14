@@ -11,6 +11,6 @@ tags:
 pages: 6
 ---
 
-> people from 30 yojana around flocked to witness this spectacle, and you can well believe it. This must have been the most astonishing and spectacular thing that they had ever seen
+> … people from 30 yojana around flocked to witness this spectacle, and you can well believe it. This must have been the most astonishing and spectacular thing that they had ever seen
 
 On how the early legend of Sankassa gives us confidence that the Pāli-Canon was well-preserved.

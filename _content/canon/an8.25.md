@@ -11,6 +11,9 @@ tags:
   - engaged
 year: 2012
 pages: 2
+parallels:
+  - sa929
+  - sa-2.154
 ---
 
 > In what way, Bhante, is one a lay follower?

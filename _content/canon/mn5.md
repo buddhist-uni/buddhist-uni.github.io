@@ -13,6 +13,10 @@ tags:
   - path
 year: 2018
 pages: 7
+parallels:
+  - ea25.6
+  - ma87
+  - t49
 ---
 
 > What is the cause, what is the reason why, of the two persons without a blemish, one is said to be worse and one better?

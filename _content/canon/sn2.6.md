@@ -11,7 +11,11 @@ tags:
   - characters
 year: 2018
 pages: 2
+parallels:
+  - ne37
+  - sa1313
+  - sa-2.312
 ---
 
-> the god Kāmada said to the Buddha, “It’s too hard, Blessed One! It’s just too hard!”
+> … the god Kāmada said to the Buddha, “It’s too hard, Blessed One! It’s just too hard!”
 

@@ -11,6 +11,9 @@ tags:
   - thought
 year: 1997
 pages: 2
+parallels:
+  - sa922
+  - sa-2.148
 ---
 
 > Some excellent thoroughbred people are like this

@@ -14,6 +14,10 @@ tags:
   - philosophy
 year: 2018
 pages: 2
+parallels:
+  - an6.54
+  - an7.66
+  - ma160
 ---
 
-> life as a human is short, brief, and fleeting, full of suffering and distress. Be thoughtful and wake up! Do what’s good and lead the spiritual life, for no-one born can escape death.
+> … life as a human is short, brief, and fleeting, full of suffering and distress. Be thoughtful and wake up! Do what’s good and lead the spiritual life, for no-one born can escape death.

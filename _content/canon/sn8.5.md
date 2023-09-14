@@ -10,8 +10,22 @@ course: speech
 tags:
   - sn
 pages: 2
+parallels:
+  - sa1218
+  - sa-2.253
+  - snp3.3
+# Partial parallels from SC
+#  - sag
+#  - t210.8
+#  - t210.38
+#  - t212.9
+#  - t213.8
+#  - thag21.1
+#  - uv8
+#  - uv-kg8
+#  - uvs8
 ---
 
-> speech that has four factors is well spoken
+> … speech that has four factors is well spoken
 
 For Thanissaro Bhikkhu's translation of this sutta, see [Snp 3.3](/content/canon/snp3.3).

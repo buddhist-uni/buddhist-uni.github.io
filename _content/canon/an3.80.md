@@ -9,6 +9,11 @@ tags:
   - an
   - characters
 pages: 2
+parallels:
+  - sa401-500
+  - sa423
+  - sa424
+  - sa425
 ---
 
 Ānanda gets the Buddha to talk about the scale of the universe.

@@ -15,7 +15,7 @@ tags:
 pages: 2
 ---
 
-> extract the essence of leisure and fortune. To do this you must reflect upon impermanence.
+> … extract the essence of leisure and fortune. To do this you must reflect upon impermanence.
 
 A kind and playful letter to a student on how to meditate in the right direction.
 

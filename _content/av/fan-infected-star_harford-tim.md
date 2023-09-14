@@ -17,4 +17,4 @@ publisher: "Pushkin"
 minutes: 31
 ---
 
-> the kind of tragedy that befell Tierney and her daughter can be averted if we appeal to the better parts of human nature
+> … the kind of tragedy that befell Tierney and her daughter can be averted if we appeal to the better parts of human nature

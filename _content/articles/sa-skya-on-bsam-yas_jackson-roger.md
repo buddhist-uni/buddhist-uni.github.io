@@ -16,7 +16,7 @@ tags:
 status: featured
 ---
 
-> does the garuda alight from the sky on the treetop with his wings grown instantaneously to maturity, or once he has been born in a crag or elsewhere, must his wings mature gradually?
+> … does the garuda alight from the sky on the treetop with his wings grown instantaneously to maturity, or once he has been born in a crag or elsewhere, must his wings mature gradually?
 
 An early account of the legendary debate that forever oriented Tibetan Buddhism South towards India—and away from China.
 

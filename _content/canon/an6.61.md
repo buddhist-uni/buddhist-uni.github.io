@@ -17,6 +17,10 @@ tags:
   - hermeneutics
 year: 2018
 pages: 3
+parallels:
+  - sa1164
+# Partial parallels from SC
+#  - snp5.3
 ---
 
 A group of monks tries to figure out the meaning of a difficult poem uttered by the Buddha. After offering several interpretations, the Buddha gives his answer.

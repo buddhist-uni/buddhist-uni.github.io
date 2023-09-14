@@ -5,6 +5,7 @@ authors:
 year: 1989
 publisher: Routledge
 hidden_url: "https://web.archive.org/web/20220301024311if_/https://ahandfulofleaves.org/documents/Mahayana%20Buddhism_Williams.pdf"
+external_url: "https://archive.org/details/mahayanabuddhism0000will/page/n6/mode/1up"
 olid: OL10203914M
 course: mahayana
 tags:

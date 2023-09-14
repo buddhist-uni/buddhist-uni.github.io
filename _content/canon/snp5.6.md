@@ -18,6 +18,13 @@ tags:
   - vipassana
   - epistemology
 minutes: 3
+parallels: []
+# Partial parallels from SC
+#  - cnd2
+#  - cnd9
+#  - kv2.4
+#  - mnd2
+#  - ne37
 ---
 
 The Buddha gives pithy answers to Upasīva about the path to liberation and the status of anāgāmīs and arahants.

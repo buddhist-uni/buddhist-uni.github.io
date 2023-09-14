@@ -5,7 +5,7 @@
 {% assign sorted = sorted | sort: "title" | reverse | sort: "expected_value", "first" | reverse %}
 <div class="featured_content_list"><ul>
   {% for c in sorted %}
-    <li>
+    <li class="featured_content_list_item">
       {% if c.olid %}<div class="ol-cover"><a href="{{ c.url }}">{{ c.title | markdownify | strip_html }}<img src="https://covers.openlibrary.org/b/olid/{{ c.olid }}-L.jpg" alt="{{ c.title }}"></a></div>{% else %}
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>{% endif %}
       <div class="star_label">{% unless c.stars == 3 %}<span class="RatingLabel-{{ c.stars }}">{% include starlabel.html stars=c.stars %}</span>{% endunless %}</div>

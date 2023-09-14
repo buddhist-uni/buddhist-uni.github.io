@@ -14,6 +14,6 @@ address: "Los Angeles"
 pages: 138
 ---
 
-> advice to Saṅgha members teaching to Americans; to Buddhist lay teachers and practicioners, both present and future, who are interested in engaging in [missionary] activities.
+> … advice to Saṅgha members teaching to Americans; to Buddhist lay teachers and practicioners, both present and future, who are interested in engaging in [missionary] activities.
 
 A collection of essays from a monk who's been teaching in California for 42 years.

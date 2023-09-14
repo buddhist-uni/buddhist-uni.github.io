@@ -18,6 +18,6 @@ volume: 5
 pages: 41
 ---
 
-> revolutionaries suffer subjective vertigo when they meet the state’s disciplinary violence with the revolutionary violence of the subaltern; but they are spared objective vertigo. This is because the most disorienting aspects of their lives are induced
+> … revolutionaries suffer subjective vertigo when they meet the state’s disciplinary violence with the revolutionary violence of the subaltern; but they are spared objective vertigo. This is because the most disorienting aspects of their lives are induced
 
-> the scholarly act of embracing members of the Black Liberation Army as beings worthy of empathic critique
+> … the scholarly act of embracing members of the Black Liberation Army as beings worthy of empathic critique

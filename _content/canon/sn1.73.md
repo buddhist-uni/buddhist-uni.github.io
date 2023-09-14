@@ -8,6 +8,9 @@ tags:
   - view
 year: 2000
 pages: 1
+parallels:
+  - sa1013
+  - sa-2.240
 ---
 
 > What here is a man’s best treasure?

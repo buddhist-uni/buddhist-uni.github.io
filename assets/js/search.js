@@ -119,8 +119,8 @@
       running--;
       if (running == 0) {
         var perf = ((performance.now() - e.data.qt) / 1000).toFixed(2);
-        if (perf == "0.00") perf = "<0.01";
-        searchResults.innerHTML = '<li style="margin-bottom:0;text-align:right;">' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
+        if (perf == "0.00") perf = "&lt;0.01";
+        searchResults.innerHTML = e.data.warninghtml + '<li style="margin-bottom:0;text-align:right;">' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
         loadingIndicator.style.display = 'none';
         stillLoading.style.display = 'none';
         searchResults.onclick = maybeRegisterNavigation.bind(e.data);
@@ -159,7 +159,7 @@
      else {
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
-      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
+      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
       window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "filter": originalFilterValue }, "", window.location.href);
     }
     searchBox.addEventListener('input', newQuery);

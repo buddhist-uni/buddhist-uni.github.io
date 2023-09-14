@@ -2,6 +2,7 @@
 title: "Zen Mind, Beginner's Mind"
 authors:
   - suzuki-s
+external_url: "https://archive.org/details/zenmindbeginners00suzu/mode/1up"
 status: featured
 oclc: 875173212
 olid: OL3421500M

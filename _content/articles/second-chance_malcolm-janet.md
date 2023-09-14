@@ -15,6 +15,6 @@ journal: nyrb
 pages: 8
 ---
 
-> When I took the stand at the trial in San Francisco in 1993 I could not have done worse
+> When I took the stand at the trial in San Francisco in 1993 I could not have done worse...
 
 A writer for *The New Yorker* gets a second chance to prove her innocence.

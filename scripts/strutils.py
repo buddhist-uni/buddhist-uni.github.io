@@ -16,12 +16,29 @@ except:
   quit(1)
 
 whitespace = re.compile('\s+')
+digits = re.compile('(\d+)')
 italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+abnormalchars = re.compile('[^\w\s]')
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
 }
+
+def sanitize_string(text):
+  return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
+
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+def natural_key(text):
+    '''
+    alist.sort(key=natural_keys) sorts in human order
+    '''
+    return [ atoi(c) for c in digits.split(text) ]
+
+def naturally_sorted(alist):
+  return sorted(alist, key=natural_key)
 
 def cout(*args):
   print(*args, flush=True, end="")
@@ -48,6 +65,15 @@ def input_with_prefill(prompt, text, validator=None):
         continue
     readline.set_pre_input_hook()
     return result
+
+def input_with_tab_complete(prompt, typeahead_suggestions):
+    readline.set_completer(lambda text, state: (
+      [s for s in typeahead_suggestions if s.startswith(text)][state]
+))
+    readline.parse_and_bind('tab: complete')
+    ret = input(prompt)
+    readline.set_completer(None)
+    return ret
 
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
@@ -105,6 +131,9 @@ class FileSyncedSet:
       self.items.add(item)
       with open(self.fname, "a") as fd:
         fd.write(f"{item}\n")
+  def delete_file(self):
+    os.remove(self.fname)
+    self.items = set()
   def __contains__(self, item):
     return self.norm(item) in self.items
 

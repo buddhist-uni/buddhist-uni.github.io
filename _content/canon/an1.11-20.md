@@ -10,6 +10,12 @@ tags:
   - an
 year: 2020
 pages: 3
+parallels:
+  - ea9.9
+  - sf203
+# Partial parallels from SC
+#  - ea9.10
+#  - pe3
 ---
 
 > Monks, I do not see a single thing that gives rise to sense desire like the feature of attractiveness.

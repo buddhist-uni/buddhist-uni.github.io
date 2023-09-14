@@ -15,6 +15,28 @@ tags:
 reason: "Duplicate of MN 98"
 year: 2018
 pages: 8
+parallels:
+  - mn98
+# Partial parallels from SC
+#  - an3.58
+#  - an3.59
+#  - dhp383-423
+#  - gdhp1-50
+#  - iti99
+#  - mn91
+#  - orphan
+#  - pdhp34-49
+#  - sn7.8
+#  - sn7.13
+#  - snp5.14
+#  - t210.35
+#  - t212.34
+#  - t213.33
+#  - thag12.2
+#  - thig4.1
+#  - uv33
+#  - uv-kg33
+#  - uvs33
 ---
 
 > We ask Gotama, the Eye that has arisen in the world:  

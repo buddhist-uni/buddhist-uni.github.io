@@ -11,6 +11,9 @@ tags:
   - an
   - nibbana
 pages: 2
+parallels:
+  - ea22.5
+  - kv1.1
 ---
 
-> conditioned phenomena have these three characteristics...
+> … conditioned phenomena have these three characteristics...

@@ -21,4 +21,4 @@ number: 803
 minutes: 62
 ---
 
-> stories of humans encountering non-human intelligences
+> … stories of humans encountering non-human intelligences

@@ -12,7 +12,7 @@ tags:
   - nibbana
   - dialogue
   - hermeneutics
-  - thought
+  - view
 year: 1983
 month: oct
 base_value: 1

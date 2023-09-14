@@ -14,5 +14,5 @@ year: 2020
 month: mar
 ---
 
-> from the frequency-sorted word list from Schmidt’s dictionary and the definitions & parts of speech from Sutta Central’s copy of the Concise Pali-English Dictionary.
+> … from the frequency-sorted word list from Schmidt’s dictionary and the definitions & parts of speech from Sutta Central’s copy of the Concise Pali-English Dictionary.
 

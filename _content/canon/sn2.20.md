@@ -12,6 +12,16 @@ tags:
   - deva
 year: 2018
 pages: 2
+parallels:
+  - ea51.8
+  - ma28
+  - mn143
+  - sa593
+  - sa1032
+  - sa-2.187
+  - sht-sutta66
+  - sn1.48
+  - sn55.26
 ---
 
 > This is indeed that Jeta’s Grove,  

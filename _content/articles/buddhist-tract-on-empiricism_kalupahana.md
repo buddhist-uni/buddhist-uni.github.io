@@ -19,5 +19,5 @@ publisher: hawaii
 openalexid: W2325467451
 ---
 
-> any theory which goes beyond the
+> … any theory which goes beyond the
 data of sensory experience could lead to a lot of unnecessary speculation and diatribes resulting in vexation. 

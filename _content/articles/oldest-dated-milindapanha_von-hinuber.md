@@ -15,6 +15,6 @@ tags:
   - milindapanha
 ---
 
-> it is not without interest to have a glance at the last folios of an old manuscript of the Mil from North Thailand.
+> … it is not without interest to have a glance at the last folios of an old manuscript of the Mil from North Thailand.
 
 A report of a Milindapañha manuscript dated 1495 CE found in a temple in Amphoe Ko Kha containing the previously-lost end of the work.

@@ -21,4 +21,4 @@ pages: "66--76"
 > Lanka’s pre-eminence was not a given, as by the early thirteenth century, the religious and intellectual centre began to shift towards Bagan in Myanmar.
 But the sudden decline of Bagan after the Mongol conquest at the end of the thirteenth century prevented the completion of Theravāda’s ‘great translocation’ to Southeast Asia.
 
-> an outline of the Pāli cosmopolis during the second millennium of the Buddhist Era
+> … an outline of the Pāli cosmopolis during the second millennium of the Buddhist Era

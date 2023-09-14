@@ -22,4 +22,4 @@ pages: "67--93"
 
 How the early Buddhists took the burial mounds and sacrificial posts of prehistoric India and adapted them to fit their new religious context:
 
-> the stūpa symbolises the Dharma and the transformations it brings
+> … the stūpa symbolises the Dharma and the transformations it brings

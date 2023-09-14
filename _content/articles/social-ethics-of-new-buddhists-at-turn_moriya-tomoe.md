@@ -22,5 +22,5 @@ publisher: "Nanzan Institute for Religion and Culture"
 openalexid: W2313649430
 ---
 
-> two Buddhist responses to rising nationalism and the restriction of freedom of religion and thought
+> … two Buddhist responses to rising nationalism and the restriction of freedom of religion and thought
 

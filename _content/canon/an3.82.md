@@ -11,6 +11,9 @@ tags:
   - monastic-advice
   - pedagogy
 pages: 1
+parallels:
+  - ea16.4
+  - sa828
 ---
 
 An ass might follow the cows, but if it can't moo...

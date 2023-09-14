@@ -3,18 +3,17 @@ title: "Behave: The Biology of Humans at Our Best and Worst"
 authors: ["Robert M. Sapolsky"]
 year: 2017
 month: may
-olid: OL27351361M
+olid: OL26655986M
 publisher: "Penguin"
-course: neuroscience
+course: inner
 status: featured
 tags:
   - biology
   - khandha
-  - thought
   - problems
   - emotions
   - power
-  - inner
+  - neuroscience
   - science
 pages: 790
 ---
@@ -23,5 +22,5 @@ pages: 790
 
 A magisterial and heart-felt survey of neuroscience, psychology, and biology which paints a broad but rigorous picture of how and why humans act the way they do--for better or for worse--and what we (individual meatbags) can do to be our best selves.
 
-The book is based on Sapolsky's Stanford course, ["Human Behavioral Biology", available on YouTube](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}.
+The book is based on Sapolsky's Stanford course, ["Human Behavioral Biology", available for free on YouTube](https://youtube.com/playlist?list=PL848F2368C90DDC3D){:ga-event-value="3"}.
 

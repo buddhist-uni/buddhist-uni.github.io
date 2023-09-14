@@ -13,6 +13,11 @@ tags:
 year: 2014
 subcat: poetry
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - mn98
+#  - snp3.9
+#  - thag20.1
 ---
 
 The heartwarming story of a low-born peasant becoming a true "brahmin" this sutta reminds us that karma is not destiny.

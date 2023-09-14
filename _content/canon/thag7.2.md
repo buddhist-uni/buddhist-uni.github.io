@@ -11,6 +11,15 @@ tags:
 year: 2014
 subcat: poetry
 pages: 2
+parallels: []
+# Partial parallels from SC
+#  - an4.65
+#  - sag
+#  - t212.23
+#  - t213.22
+#  - uv22
+#  - uv-kg22
+#  - uvs22
 ---
 
 > the fool shut in on every side,  

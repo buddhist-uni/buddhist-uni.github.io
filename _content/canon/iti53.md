@@ -14,6 +14,10 @@ tags:
 year: 1997
 subcat: poetry
 pages: 1
+parallels: []
+# Partial parallels from SC
+#  - sn36.5
+#  - thag17.2
 ---
 
-> by thoroughly understanding conceit, he has made an end of suffering.
+> … by thoroughly understanding conceit, he has made an end of suffering.

@@ -18,4 +18,4 @@ pages: "291--319"
 volume: 10
 ---
 
-> the sudden wealth generated during Taiwan’s period of rapid economic development created a need to give that wealth meaning [...] Ciji provided a way of adapting traditional Buddhist rhetoric and imagery to facilitate the move from traditional "almsgiving" to "modern scientific charity."
+> … the sudden wealth generated during Taiwan’s period of rapid economic development created a need to give that wealth meaning [...] Ciji provided a way of adapting traditional Buddhist rhetoric and imagery to facilitate the move from traditional "almsgiving" to "modern scientific charity."

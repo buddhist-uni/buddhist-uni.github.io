@@ -10,7 +10,6 @@ description: "Seeing in terms of the Four Noble Truths is the foundation which s
 ### Suttas
 <p>
 {% include content_blurb.html category="canon" slug="sn35.85" %}
-{% include content_blurb.html category="canon" slug="sn35.246" %}
 {% include content_blurb.html category="canon" slug="sn22.95" %}
 {% include content_blurb.html category="canon" slug="snp5.15" %}
 </p>

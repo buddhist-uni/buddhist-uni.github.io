@@ -18,6 +18,6 @@ volume: 7
 pages: "1--90"
 ---
 
-> the discontinuity [with premodern forms of Buddhism] that the modernists emphasize is just that, an emphasis—it is less an observation than it is an ideologically motivated construction
+> … the discontinuity [with premodern forms of Buddhism] that the modernists emphasize is just that, an emphasis—it is less an observation than it is an ideologically motivated construction
 
 An important note about how and why Western scholarship is reshaping the Buddhism it claims to study.

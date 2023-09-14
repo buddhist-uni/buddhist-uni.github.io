@@ -10,6 +10,14 @@ tags:
   - imagery
 year: 2008
 pages: 3
+parallels:
+  - pli-tv-kd10
+# Partial parallels from SC
+#  - t212.32
+#  - t213.31
+#  - uv31
+#  - uv-kg31
+#  - uvs31
 ---
 
 In this sutta we see the Buddha exemplifying the two uses of nature on the path: as a site for seclusion and as an opportunity for reflection.

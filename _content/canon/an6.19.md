@@ -9,11 +9,12 @@ course: meditation
 status: featured
 tags:
   - an
-  - death
   - thought
-  - present
 year: 1997
 pages: 1
+parallels:
+  - an8.73
+  - ea40.8
 ---
 
 > O, that I might live for the interval that it takes to swallow having chewed up one morsel of food!

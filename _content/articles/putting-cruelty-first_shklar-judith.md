@@ -13,7 +13,6 @@ course: function
 tags:
   - ethics
   - west
-  - engaged
   - power
   - cruelty
   - ideology

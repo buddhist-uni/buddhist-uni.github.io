@@ -18,6 +18,9 @@ tags:
   - ethics
 year: 2018
 pages: 3
+parallels:
+  - sa1147
+  - sa-2.70
 ---
 
 > Suppose a trustworthy and reliable man were to come from the east. He’d approach you and say: ‘Please sir, you should know this. I come from the east. There I saw a huge mountain that reached the clouds. And it was coming this way, crushing all creatures.’

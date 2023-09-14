@@ -14,6 +14,6 @@ pages: "57--63"
 journal: jgb
 ---
 
-> conservation by neglect and the slow rate of urbanization has been a virtue in these areas and has helped to preserve many of these ancient Buddhist sites
+> … conservation by neglect and the slow rate of urbanization has been a virtue in these areas and has helped to preserve many of these ancient Buddhist sites
 
 

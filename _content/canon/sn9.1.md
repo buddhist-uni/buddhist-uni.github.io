@@ -12,6 +12,9 @@ tags:
   - sn
   - monastic-advice
 pages: 1
+parallels:
+  - sa1333
+  - sa-2.353
 ---
 
 > You, a person:  

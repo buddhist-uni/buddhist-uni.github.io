@@ -17,6 +17,6 @@ publisher: "Mdpi"
 openalexid: W4297006559
 ---
 
-> the early Qing Chinese Buddhist monk Zaisan Hongzan’s belief in Maitreya and Tuṣita Heaven pure lands, as reflected in his collection of miracle tales and biographies, should be understood in a broader socio-religious context of Chan decline and monastic revival in late imperial China.
+> … the early Qing Chinese Buddhist monk Zaisan Hongzan’s belief in Maitreya and Tuṣita Heaven pure lands, as reflected in his collection of miracle tales and biographies, should be understood in a broader socio-religious context of Chan decline and monastic revival in late imperial China.
 
 > Hongzan vividly displayed his concerns about literary Chan practice and argued for the pivotal and urgent need for Vinaya among monastic communities.

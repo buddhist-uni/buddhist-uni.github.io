@@ -17,6 +17,6 @@ number: 2
 pages: "105--121"
 ---
 
-> after the parinibbāna... Ānanda may have made Kosambī his base
+> … after the parinibbāna... Ānanda may have made Kosambī his base
 
 An interesting example of what can be gleaned from a place-centered reading of the Pāli Canon.

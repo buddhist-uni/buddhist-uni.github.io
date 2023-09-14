@@ -17,6 +17,6 @@ volume: 65
 pages: "122--137"
 ---
 
-> studies gave statistically significant positive results indicating that people really could tell when they were being looked at from behind
+> … studies gave statistically significant positive results indicating that people really could tell when they were being looked at from behind
 
 A review of the studies investigating this common form of telepathy.

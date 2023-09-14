@@ -16,6 +16,6 @@ address: "Colombo, Sri Lanka"
 pages: 82
 ---
 
-> the general Buddhist public even in Sri Lanka do not seem to know of what stuff the newly “resurrected” bhikkhunis are made.
+> … the general Buddhist public even in Sri Lanka do not seem to know of what stuff the newly “resurrected” bhikkhunis are made.
 
 A biography of the Venerable Badalgama Dhammanandani, Head Bhikkhuni of Visakharamaya Temple about seven kilometers into the hinterland of Veyangoda, Sri Lanka.

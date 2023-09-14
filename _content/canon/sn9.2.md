@@ -12,6 +12,9 @@ tags:
   - deva
   - arahant
 pages: 2
+parallels:
+  - sa1332
+  - sa-2.352
 ---
 
-> why bother a renunciate?
+> … why bother a renunciate?
