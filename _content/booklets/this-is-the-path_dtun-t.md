@@ -8,7 +8,6 @@ drive_links:
 course: path
 tags:
   - thai-forest
-  - meditation
   - brahmavihara
 year: 2009
 month: nov

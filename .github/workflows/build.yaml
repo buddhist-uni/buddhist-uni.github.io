@@ -24,6 +24,7 @@ jobs:
             "CONTRIBUTING.md"
             "CONTRIBUTORS.md"
             "README.md"
+            "README.txt"
             "Gemfile"
             "Gemfile.lock"
             "cssCacheToken.yml"

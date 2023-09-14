@@ -2,8 +2,7 @@
 title: "Rethinking Meditation: Buddhist Meditative Practice in Ancient and Modern Worlds"
 authors:
   - mcmahan-david
-status: featured
-course: west
+course: west # solidly 3 stars
 tags:
   - meditation
 year: 2023

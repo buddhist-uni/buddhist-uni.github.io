@@ -9,8 +9,6 @@ status: featured
 course: mahayana
 tags:
   - path
-  - philosophy
-  - meditation
   - mahayana-canon
 pages: 530
 ---
