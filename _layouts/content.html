@@ -97,18 +97,11 @@ layout: default
   {% if site.show_bibtex %}
     <details class="details-reset bibtex" ontoggle="deetstoggler();">
       <summary class="btn">Bibtex Data <span class="dropdown-caret"></span></summary>
-      <script>function deetstoggler(e) {
-        var k = "{{ page.content_path }}.bibtex.toggled";
-        if (!localStorage.getItem(k)) {
-          ga('send','event','Bibtex','firstopen','{{ page.content_path }}');
-          localStorage.setItem(k, 1);
-        }
-      }</script>
       <div>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
-      <button ga-on="click" ga-event-category="Bibtex" ga-event-action="copy" ga-event-label="{{ page.content_path }}" class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
+      <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
       <script src="{{ "/assets/js/clipboard.js" | relative_url }}"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');

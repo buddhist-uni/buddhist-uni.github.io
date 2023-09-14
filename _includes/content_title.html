@@ -4,9 +4,9 @@
 {% if c.drive_links %}<span>
 {%- for link in c.file_links -%}
   {%- assign linkfmt = c.formats[forloop.index0] -%}
-  <span class="inline_drive_link"> (<a target="_blank" ga-event-label="{{ link }}" {% include content_link_data_attributes.html content=c linktype="Self-Hosted" linkfmt=linkfmt %} href="{{ site.data.content.filehost | append: link }}"><i class="fa{% case linkfmt %}{% when "pdf" %}r fa-file-pdf{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i>.{{ linkfmt }}</a>)</span>
+  <span class="inline_drive_link"> (<a target="_blank" {% include content_link_data_attributes.html content=c linktype="Self-Hosted" linkfmt=linkfmt %} href="{{ site.data.content.filehost | append: link }}"><i class="fa{% case linkfmt %}{% when "pdf" %}r fa-file-pdf{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i>.{{ linkfmt }}</a>)</span>
 {%- endfor -%}
 {%- for link in c.drive_links -%}
   {%- assign linkfmt = c.formats[forloop.index0] -%}
-  <span class="inline_drive_link"> (<a target="_blank" ga-event-label="drive.google.com/{{ c.content_path }}.{{ linkfmt }}" {% include content_link_data_attributes.html content=c linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i>.{{ linkfmt }}</a>)</span>
+  <span class="inline_drive_link"> (<a target="_blank" {% include content_link_data_attributes.html content=c linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i>.{{ linkfmt }}</a>)</span>
 {%- endfor -%}</span>{%- endif -%}

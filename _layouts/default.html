@@ -48,31 +48,10 @@
     <script>
       window.WEBSITE_SECTION = '{{ page.section }}';
       if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
-        function mkscrpt(g,i,o,a,m,s){i=window;s=document;o='script';a=s.createElement(o),
+      function mkscrpt(g,i,o,a,m,s){i=window;s=document;o='script';a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);}
-        mkscrpt('https://www.googletagmanager.com/gtag/js?id={{ site.GA4 }}');
-        mkscrpt('/assets/js/autotrack.js');
-        mkscrpt('/assets/js/buggytrack.js?v=1');
-        (function(i,g,r){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();mkscrpt(g);
-        })(window,'https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('require', 'eventTracker', {});
-      ga('require', 'outboundLinkTracker', {
-        hitFilter: function(c,a) {
-          var v = c.get("eventValue") || 0.15;
-          var k = (a.getAttribute("data-content-path") || a.href) + ":clicked";
-          if (localStorage.getItem(k)) { c.set("eventValue", 0, true); } else {
-          var w = Math.floor(v);
-          c.set("eventValue", (Math.random()<v-w)?Math.ceil(v):w, true);
-          localStorage.setItem(k, 1);
-          }
-        }
-      });
-      ga('send', 'pageview');
-      
-      // GA4
+      mkscrpt('https://www.googletagmanager.com/gtag/js?id={{ site.GA4 }}');
+      mkscrpt('/assets/js/buggytrack.js');
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
