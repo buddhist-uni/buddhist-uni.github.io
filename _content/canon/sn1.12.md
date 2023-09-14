@@ -22,3 +22,6 @@ parallels:
 ---
 
 > Standing to one side, that deity recited this verse...
+
+We think our attachments bring us happiness, but they really bring sorrow.
+

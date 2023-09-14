@@ -14,3 +14,6 @@ pages: 2
 ---
 
 > I offered all those flowers with a happy mind
+
+Following the precepts, leading a restrained life, practicing generosity, and having faith brings much happiness.
+

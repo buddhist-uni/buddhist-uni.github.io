@@ -19,3 +19,6 @@ parallels:
 
 > Gone beyond all things,  
 Even the gods revere him
+
+When going for a bath, the Buddha encounters a giant royal elephant. But a spiritual giant is even more impressive.
+

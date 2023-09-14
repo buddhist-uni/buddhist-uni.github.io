@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 import re
 
-from strutils import FileSyncedSet
+from strutils import FileSyncedSet, git_root_folder
 from archivedotorg import (
   find_lendable_archiveorg_url_for_metadata,
   extract_archiveorg_id,
@@ -52,7 +52,7 @@ def refresh_lending_url_for_file(monograph_file):
   return True
 
 if __name__ == "__main__":
-  monographs_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_content/monographs/")))
+  monographs_folder = git_root_folder.joinpath("_content", "monographs")
   processed = FileSyncedSet("processed_monographs.txt")
   for monograph_file in monographs_folder.iterdir():
     if monograph_file in processed:

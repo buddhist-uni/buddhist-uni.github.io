@@ -24,3 +24,6 @@ parallels: []
 ---
 
 > There is a person who is not to be associated with...
+
+You should associate with people who are equal or better than you.
+

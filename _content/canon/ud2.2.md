@@ -21,3 +21,6 @@ parallels: []
 ---
 
 > Mendicants, it is not appropriate for you who have gone forth to talk about such things.
+
+When monks have gathered, they shouldn’t spend their time gossiping.
+

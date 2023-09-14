@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > … there are these two kinds of gifts: a gift of material things & a gift of the Dhamma
+
+And so too with sharing and assistance.
+

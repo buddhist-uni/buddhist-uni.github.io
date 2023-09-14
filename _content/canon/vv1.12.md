@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > Because of these meritorious deeds, I have been born as a very beautiful devata
+
+A deva explains how keeping the precepts and being a follower of the Supreme Buddha can bring happiness.
+

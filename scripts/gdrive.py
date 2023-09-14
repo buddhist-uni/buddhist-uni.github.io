@@ -1,5 +1,7 @@
+#!/bin/python3
+
 import os.path
-from pathlib import Path
+from strutils import git_root_folder
 import json
 import re
 from functools import cache
@@ -16,7 +18,7 @@ except:
 # If modifying these scopes, have to redo the token.json.
 SCOPES = ['https://www.googleapis.com/auth/drive']
 CREDFILE = os.path.expanduser('~/gtoken.json')
-FOLDERS_DATA_FILE = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/drive_folders.json")))
+FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
 FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'

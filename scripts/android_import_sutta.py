@@ -1,32 +1,38 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
-from strutils import input_with_prefill, prompt, system_open, input_with_tab_complete
+from strutils import (
+  git_root_folder,
+  input_with_prefill,
+  prompt,
+  system_open,
+  input_with_tab_complete,
+  sutta_id_re
+)
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archivedotorg import save_url_to_archiveorg
 
 yaml_list_prefix = '\n  - '
-sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$'
 NONSC_TRANSLATORS = [{
   'author_short': 'Gnanananda',
   'author_uid': '"Ven. Kiribathgoda Gnanananda"',
   'author': "Ven. Gnanananda",
   'publication_date': 2020,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/suttafriends.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "suttafriends.json").read_text())
 },
 {
   'author_short': 'DT.org',
   'author_uid': 'geoff',
   'author': "Thanissaro Bhikkhu",
   'publication_date': None,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "dhammatalks.json").read_text())
 },
 {
   'author_short': 'ATI',
   'author_uid': None,
   'author': None,
   'publication_date': None,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/accesstoinsight_nongeoffsuttas.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "accesstoinsight_nongeoffsuttas.json").read_text())
 }
 ]
 
@@ -232,11 +238,11 @@ def process_pdf(pdf_file):
     print(f"Got \"{scdata['acronym']}\" instead. Try again.")
   en_trans = [t for t in scdata['translations'] if t['lang']=='en']
   slug = scdata['uid']
-  mdfile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_content/canon/{slug}.md")))
+  mdfile = git_root_folder.joinpath("_content", "canon", f"{slug}.md")
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
-  parsed = re.match(sutta_id_re, slug)
+  parsed = sutta_id_re.match(slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
   try:

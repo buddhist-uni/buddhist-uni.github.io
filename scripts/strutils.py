@@ -6,7 +6,8 @@ import json
 import re
 import string
 import readline
-from functools import cache
+from pathlib import Path
+from functools import cache, reduce
 from collections import defaultdict
 from math import floor, ceil
 try:
@@ -20,16 +21,22 @@ digits = re.compile('(\d+)')
 italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 abnormalchars = re.compile('[^\w\s]')
+sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
 }
+
+git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
 
 def sanitize_string(text):
   return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
 
 def atoi(text):
     return int(text) if text.isdigit() else text
+
+def cumsum(vec):
+    return reduce(lambda a,x: a+[a[-1]+x] if a else [x], vec, [])
 
 def natural_key(text):
     '''
@@ -194,7 +201,7 @@ def serp_result(work: dict, margin=10) -> str:
 @cache
 def get_author_slugs():
   ret = defaultdict(lambda: None)
-  authordir = os.path.normpath(os.path.join(os.path.dirname(__file__), "../_authors"))
+  authordir = git_root_folder.joinpath("_authors")
   for fn in os.listdir(authordir):
     fullpath = os.path.join(authordir, fn)
     with open(fullpath) as fd:

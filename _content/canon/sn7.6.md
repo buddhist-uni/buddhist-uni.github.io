@@ -35,3 +35,5 @@ parallels:
 
 > … who can untangle this tangle?
 
+A brahmin with matted hair asks the Buddha how we can become disentangled. This short set of verses became one of the most important in all of Theravāda Buddhism when it was used as the cornerstone of Buddhaghosa's [*Visuddhimagga*](/content/canon/vsm_buddhaghosa).
+
