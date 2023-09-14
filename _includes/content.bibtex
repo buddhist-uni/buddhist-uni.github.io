@@ -32,5 +32,5 @@
 {% endif %}{% if include.content.olid %}    olid={% raw %}{{% endraw %}{{ include.content.olid }}},
 {% endif %}{% if include.content.source_url contains "doi.org/" %}    doi={% raw %}{{% endraw %}{{ include.content.source_url | split: "doi.org/" | last }}},
 {% endif %}    ranking={% raw %}{{% endraw %}rank{{ include.content.stars }}},
-    url={% raw %}{{% endraw %}{% if include.content.external_url %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
+    url={% raw %}{{% endraw %}{% if include.content.external_url %}{% unless include.content.external_url contains "archive.org/details/" %}{{ include.content.external_url }}{%  else %}{{ include.content.url | absolute_url }}{% endunless %}{%  else %}{{ include.content.url | absolute_url }}{% endif %}}
 }

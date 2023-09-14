@@ -24,6 +24,10 @@ else:
   print(f"Please make a new {ARCHIVE_ORG_AUTH_FILE} text file and put in it the information from https://archive.org/account/s3.php in the following format: \"LOW <accesskey>:<secretkey>\"")
   quit(1)
 
+ARCHIVEID_BLACKLIST = {
+  "elartedelasabidu0000dala"
+}
+
 retry_strategy = Retry(total=2, backoff_factor=0.5)
 http_adapter = HTTPAdapter(max_retries=retry_strategy)
 archive_org_session = requests.Session()
@@ -56,7 +60,7 @@ def search_archiveorg_lending_library(query):
     }).json()['response']
 
 def is_doc_sane_for_work(doc, workinfo):
-  return doc['imagecount'] >= workinfo['pages'] and doc['year'] >= workinfo['year']
+  return doc['imagecount'] >= workinfo['pages'] and doc['year'] >= workinfo['year'] and doc['identifier'] not in ARCHIVEID_BLACKLIST
 
 class _AO_SearchStrat(object):
   def __init__(self, workinfo):
@@ -93,6 +97,8 @@ class _AO_DefaultSearchStrat(_AO_SearchStrat):
       title = self.info['title']
     title = sanitize_string(" ".join(filter(lambda w: "'" not in w and len(w)>2, title.split(" "))))
     author = " ".join(filter(lambda w: len(w)>2, self.info['authors'][0].split("-")[0].split(" ")))
+    if author == 'tnh':
+      author = "Thich Nhat Hanh"
     print(f"Searching works by title=\"{title}\" and author=\"{author}\" instead...")
     return search_archiveorg_lending_library(f"title:({title}) AND creator:({author})")
 

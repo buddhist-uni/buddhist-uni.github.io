@@ -3,7 +3,7 @@ from pathlib import Path
 from strutils import input_with_prefill, prompt, system_open, input_with_tab_complete
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
-from archive_site import save_url_to_archiveorg
+from archivedotorg import save_url_to_archiveorg
 
 yaml_list_prefix = '\n  - '
 sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$'

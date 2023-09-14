@@ -51,6 +51,10 @@
   "private": "https://drive.google.com/drive/folders/198TBBIt-uTixQgxzh0BPB-U8hWWjqM0z",
   "public": "https://drive.google.com/drive/folders/1LIR6PYyjfI2RXrAWkZ-IwckrsOx1DHLf"
  },
+ "bangladeshi": {
+  "private": "https://drive.google.com/drive/folders/1BGi8zjblJKUJB3vkq5BtHPSKU8GyxBb6",
+  "public": null
+ },
  "bart": {
   "private": "https://drive.google.com/drive/folders/1n1CgTwagj5GPkFKiluRPPcsa71p3rVkc",
   "public": null
@@ -259,6 +263,10 @@
   "private": "https://drive.google.com/drive/folders/19cxC1hod9rORJqNZiQX1AaESB3PjB8pm",
   "public": "https://drive.google.com/drive/folders/14AUczeHZIaChGJ8SfWpC8k46PEMSi6H0"
  },
+ "japanese-roots": {
+  "private": "https://drive.google.com/drive/folders/12pZtqPVLErtZGlaVHacHRLgRs-qhSzpZ",
+  "public": null
+ },
  "journalism": {
   "private": "https://drive.google.com/drive/folders/1_3OvMqqb9QDDyLFl4Yzr8YZaiuNw58QS",
   "public": null
@@ -374,6 +382,10 @@
  "philosophy": {
   "private": "https://drive.google.com/drive/folders/14ETJMqi_pGo-x2e1SXKQa0TodhVVhgVL",
   "public": "https://drive.google.com/drive/folders/1-iA7cY342aZRzVaHV3D063siGaVcS1US"
+ },
+ "philosophy-of-science": {
+  "private": "https://drive.google.com/drive/folders/19JCMumQxLCMd6Dd7x7zhCcOXjedh0oZT",
+  "public": null
  },
  "pilgrimage": {
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
@@ -502,6 +514,10 @@
  "time": {
   "private": "https://drive.google.com/drive/folders/1FXkb4MdkM2E9CK1hvP7Fxm37f1MTUeWx",
   "public": "https://drive.google.com/drive/folders/1KWPlshYAzaItcKxvtUTeTbqfzIeH3s9Z"
+ },
+ "underage": {
+  "private": "https://drive.google.com/drive/folders/1T-bLnnsQSJzZ5_8ROl6MRhPZWyujRvEp",
+  "public": "https://drive.google.com/drive/folders/11E9yWp2AoJKyY3UX-Y1woJHcr90f-nEm"
  },
  "vietnam": {
   "private": "https://drive.google.com/drive/folders/1266coIbaWKHGzch_1MIkCF9XSSbEsSn_",
