@@ -13,3 +13,6 @@ pages: 1
 ---
 
 > A lay follower living at home with these five qualities is self-assured.
+
+Confidence or lack thereof in layfolk is due to their precepts.
+

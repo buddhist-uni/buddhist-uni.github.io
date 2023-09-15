@@ -17,3 +17,6 @@ parallels:
 ---
 
 > In what way, Bhante, is one a lay follower?
+
+Questioned by his relative Mahānāma, the Buddha explains what makes someone a Buddhist lay follower, a virtuous lay follower, and a lay follower practicing for the welfare of all.
+

@@ -57,7 +57,8 @@ title: Overlapping Parallels
 {% endfor %}{% endfor %}
 
 {% if output.size > 0 %}
-NOTE: Cleaning these up is a work in progress.
+NOTE: Cleaning these up is a large project currently in progress.
+
 Found {{ output.size }} pairs of suttas with overlapping tags:
 
 | From | To Sutta |  Tags in common |
@@ -66,3 +67,21 @@ Found {{ output.size }} pairs of suttas with overlapping tags:
 {% else %}
 Pass ✅ - No parallels have overlapping tags
 {% endif %}
+
+## Anthologies
+
+In addition to the sutta parallels above, suttas should be deduped against the anthologies that contain them (e.g. if a sutta is in an assigned anthology, it shouldn't also be assigned to that course separately as well).
+So far, suttas have been added and deduped from:
+  - Ajahn Geoff's *The Buddha Smiles*
+  - Ajahn Geoff's *Recognizing the Dhamma*
+  - Hecker's *Similes of the Buddha*
+
+Anthologies yet to be processed:
+  - *The Island* (if any sutta quotes are lengthy enough)
+  - Nyanamoli's *Life of the Buddha*
+  - Sarah Shaw's *Buddhist Meditation* 
+  - along with Jason Espada's anthology
+  - Bhikkhu Bodhi's selections in the Sutta tag
+  - *Common Buddhist Text*
+  - Chula's *Path* (just archive it?)
+  - The many wheel publications containing whole sutta translations

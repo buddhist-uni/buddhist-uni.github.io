@@ -19,3 +19,6 @@ parallels: []
 with the wealth he has attained through industry and effort,
 accumulated through the strength of his arms, through the sweat of his brow, righteously, in accordance with the Dhamma,
 performs four suitable deeds.
+
+Four things that are desirable, but hard to get; and how to get them.
+

@@ -18,3 +18,6 @@ pages: 2
 ---
 
 > How does a person both make a hole and live in it?
+
+Four people similar to mice.
+

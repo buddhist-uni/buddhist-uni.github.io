@@ -23,3 +23,6 @@ parallels:
 blame and praise, pleasure and pain:  
 these conditions that people meet  
 are impermanent, transient, and subject to change.
+
+The eight worldly conditions in brief.
+

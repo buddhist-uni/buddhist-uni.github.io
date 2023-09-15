@@ -25,3 +25,6 @@ parallels:
 ---
 
 > There is a way of developing immersion further
+
+Developing convergence for pleasure, understanding, mindfulness, and for ending the defilements.
+

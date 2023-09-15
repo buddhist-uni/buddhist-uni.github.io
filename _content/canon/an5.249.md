@@ -16,3 +16,6 @@ pages: 2
 ---
 
 > Mendicants, there are these five drawbacks to a charnel ground...
+
+How a person may have the same defects as a cemetery.
+

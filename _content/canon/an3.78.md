@@ -16,3 +16,6 @@ pages: 1
 ---
 
 > Ānanda, are all precepts and observances, lifestyles, and spiritual paths fruitful?
+
+Not all paths go up the same mountain.
+

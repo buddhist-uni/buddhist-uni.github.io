@@ -20,3 +20,6 @@ parallels:
 ---
 
 > Don’t fear good deeds. For ‘good deeds’ is a term for happiness.
+
+The incalculable benefits of merits that last for aeons.
+

@@ -8,6 +8,7 @@ from strutils import (
   input_with_tab_complete,
   sutta_id_re
 )
+from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archivedotorg import save_url_to_archiveorg
@@ -343,6 +344,8 @@ subcat: poetry{extra_fields}"""
     coursefields = f"""course: {course}
 status: featured
 """
+  blurb = get_blurb_for_suttaid(slug)
+  blurb = f"\n\n{blurb}\n<!---->" if blurb else ""
   mdfile.write_text(f"""---
 title: "{title}"
 translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','').replace('mills','mills-laurence')}
@@ -357,7 +360,7 @@ year: {year}
 pages: {pages}
 {parallels}---
 
-> 
+> {blurb}
 """)
   system_open(mdfile)
   pdf_file.unlink()

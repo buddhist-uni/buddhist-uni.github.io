@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import os.path
+from pathlib import Path
 from strutils import git_root_folder
 import json
 import re

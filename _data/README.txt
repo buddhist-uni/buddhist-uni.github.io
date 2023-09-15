@@ -13,6 +13,8 @@ TheSunShade / Readingfaithfully
 The accesstoinsight, dhammatalks and suttafriends json files are reformatted versions of the json data embedded here: https://github.com/thesunshade/citation-helper/tree/main/src/webSites
 DhammaTalks will regularly add new content so that file needs periodic manual syncing.
 
+Note that (for now) the SuttaCentral Blurb Data and Citation Helper Data are currently only being used by the Python importers in the `scripts` directory and are not used by Jekyll.
+
 Google Drive
 ------------
 The drive_folders.json file is a manually maintained map of links to the folders on drive behind each published and planned tag.

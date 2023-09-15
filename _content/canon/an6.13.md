@@ -18,3 +18,6 @@ pages: 2
 ---
 
 > ‘I’ve developed the heart’s release by love... Yet somehow ill will still occupies my mind.’
+
+The Buddha’s teachings are effective, so we can’t claim to have practiced them fully if we’re still afflicted by various forms of suffering.
+

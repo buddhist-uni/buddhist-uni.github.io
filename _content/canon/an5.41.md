@@ -18,3 +18,5 @@ parallels:
 > A man remembering this, a person established in Nobility,  
 Is praised right here and now, and later rejoices in heaven.
 
+The legitimate purposes of wealth.
+

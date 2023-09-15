@@ -20,3 +20,6 @@ parallels:
 ---
 
 > … these six are conditions that are conducive to amiability, that engender feelings of endearment and respect
+
+Six warm-hearted qualities practiced among the mendicants.
+

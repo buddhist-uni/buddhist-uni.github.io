@@ -467,6 +467,10 @@
   "private": "https://drive.google.com/drive/folders/159o1bq04DRMMbF4vLuIjz2r47xrSpsqK",
   "public": "https://drive.google.com/drive/folders/1L7kkMipRUwgQIlb3Jorwao5pPz__qZPs"
  },
+ "sutta": {
+  "private": "https://drive.google.com/drive/folders/1JFyR5WuEeBdjb4kFWxzBpj3p9gIIeK9E",
+  "public": "https://drive.google.com/drive/folders/1-UwTSJqPOQ2PIk3DKX5cw3m4I211m7Du"
+ },
  "tantric": {
   "private": "https://drive.google.com/drive/folders/1J34zI1iDc0iddITPLHaPP5PTFcz-j4Na",
   "public": "https://drive.google.com/drive/folders/12e7oPcEcTeJgLeULHJcW6oLA2i4zlblm"
@@ -502,6 +506,10 @@
  "thought": {
   "private": "https://drive.google.com/drive/folders/14XmICi7JCdedd3ewhQILQXhL-YcFi_Di",
   "public": "https://drive.google.com/drive/folders/10m3PLa7dpPX0czTWEQPTJX9d5mNCfUcv"
+ },
+ "tibet": {
+  "private": "https://drive.google.com/drive/folders/1MbxFtKah4cdxRS1UIMQe7zC7QAEiGLMe",
+  "public": null
  },
  "tibetan": {
   "private": "https://drive.google.com/drive/folders/10XTsw3Ap2chIX3KYtfIzQlf3UoP1sS_b",

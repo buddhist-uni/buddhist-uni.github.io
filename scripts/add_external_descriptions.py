@@ -6,6 +6,7 @@ from pathlib import Path
 
 from strutils import (
   input_with_prefill,
+  does_md_only_contain_quotes,
   git_root_folder,
   cumsum,
   sutta_id_re
@@ -20,13 +21,6 @@ except:
 data_folder = git_root_folder.joinpath("_data")
 VV_VAGGA_COUNTS = cumsum([0, 17, 11, 10, 12, 14, 10, 11])
 
-def does_md_only_contain_quotes(text):
-  paragraphs = list(filter(lambda p: not not p, map(lambda p: p.strip(), text.split("\n\n"))))
-  for p in paragraphs:
-    if not p.startswith('>'):
-      return False
-  return True
-
 BLURBS = {
   'an',
   'sn',
@@ -40,23 +34,27 @@ BLURBS = {
 }
 BLURBS = {k: json.loads(data_folder.joinpath(f"{k}-blurbs_root-en.json").read_text()) for k in BLURBS}
 
-def process_canon_file(file):
-  file = Path(file)
-  suttaid = sutta_id_re.match(file.stem)
+def get_blurb_for_suttaid(suttaid_str):
+  suttaid_str = suttaid_str.lower()
+  suttaid = sutta_id_re.match(suttaid_str)
   if not suttaid:
-    print(" Not a sutta")
-    return False
+    return None
   book = suttaid.group(1)
   if book == 'vv':
     nums = [int(suttaid.group(2)), int(suttaid.group(3))]
     suttaid = f"vv{nums[1]+VV_VAGGA_COUNTS[nums[0]-1]}"
-    print(f"  {file.stem} => {suttaid}")
   else:
-    suttaid = file.stem
+    suttaid = suttaid_str
   try:
-    blurb = BLURBS[book][f"{book}-blurbs:{suttaid}"]
+    return BLURBS[book][f"{book}-blurbs:{suttaid}"].strip()
   except KeyError:
-    print(" No blurb for this sutta :(")
+    return None
+
+def process_canon_file(file):
+  file = Path(file)
+  blurb = get_blurb_for_suttaid(file.stem)
+  if not blurb:
+    print(" No blurb found")
     return False
   filetext = file.read_text()
   page = frontmatter.loads(filetext)
@@ -75,8 +73,7 @@ def process_canon_file(file):
   return True
 
 if __name__ == "__main__":
-  canon_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_content/canon/")))
+  canon_folder = git_root_folder.joinpath("_content", "canon")
   for file in canon_folder.iterdir():
     print(f"Processing {file.stem}...")
     process_canon_file(file)
-

@@ -26,3 +26,6 @@ parallels:
 ---
 
 > … a mendicant with four qualities is worthy of offerings
+
+A mendicant like a king’s elephant.
+

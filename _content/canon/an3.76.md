@@ -19,3 +19,5 @@ parallels:
 
 > So, Ānanda, deeds are the field, consciousness is the seed, and craving is the moisture.
 
+How consciousness, karma, and craving create and sustain future lives.
+

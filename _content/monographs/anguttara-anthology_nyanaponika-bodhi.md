@@ -6,9 +6,8 @@ drive_links: ["https://drive.google.com/file/d/11oCAZmD2SCuuz_f2EUtvpiUhePH8mwbR
 external_url: "https://www.bps.lk/library-search-select.php?id=bp222s"
 year: 2007
 publisher: bps
-course: pali-canon
+course: sutta
 tags:
-  - sutta
   - an
   - philosophy
 pages: 245
