@@ -32,7 +32,7 @@ The Aṅguttara Nikaya (AN) is the last of the four main books (*nikāya*) of th
 
 The Buddha often taught according to numbered lists throughout his career as a teacher, as anyone familiar with Buddhist doctrine will know. In fact, this memorable quality of a list is one of its great advantages as a format and the AN takes full advantage of this technique and hence its name.
 
-From [DN 33](/content/canon/dn33), we know that the Saṅgha would often recite the Buddha's teachings in numerical order even during the Buddha's own lifetime, so it isn't hard to imagine how the tradition came [to form the Aṅguttara Nikaya](/content/articles/structure-and-formation-of-anguttara_kuan-tsefu-et-al) as we have it today. The first book (AN 1) contains a multitude of teachings on "one thing", the second book (AN 2) contains teachings on "two things", etc.
+From [DN 33](/content/canon/dn33), we know that the Saṅgha would often recite the Buddha's teachings in numerical order even during the Buddha's own lifetime, so it isn't hard to imagine how the tradition came to form the Aṅguttara Nikaya as we have it today. The first book (AN 1) contains a multitude of teachings on "one thing", the second book (AN 2) contains teachings on "two things", etc.
 
 The Aṅguttara Nikaya contains some of the most practical suttas in the entire canon: for monastics and the laity. Being organized around a theme as abstract as numbers (starting with the number one!), the AN contains a rich variety of subjects sure to appeal to readers of any level or interest.
 
