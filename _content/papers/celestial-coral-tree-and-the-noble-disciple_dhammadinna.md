@@ -17,7 +17,6 @@ booktitle: "Dharmayātrā, Felicitation Volume in Honour of Ven. Dr. Tampalawela
 pages: "92--99"
 ---
 
-> ... the fourth meditative absorption, this is just like that tree gradually
- blooming.
+> ... the fourth meditative absorption, this is just like that tree gradually blooming.
 
-A translation of a discourse from the Chinese Ekottarika-āgama that parallels the  AN 7.69, the Pāricchattaka Sutta.
+A translation of a discourse from the Ekottarika-āgama which parallels [the Pāricchattaka Sutta](https://suttacentral.net/an7.69/en/sujato).
