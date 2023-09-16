@@ -22,3 +22,6 @@ parallels:
 ---
 
 > … can you point out a fruit of giving that’s apparent in the present life?
+
+The Buddha teaches General Sīha the benefits of giving.
+

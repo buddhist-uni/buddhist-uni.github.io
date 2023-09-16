@@ -15,3 +15,5 @@ parallels:
 ---
 
 > A mendicant with seven qualities is liked and approved by their spiritual companions
+
+<!---->

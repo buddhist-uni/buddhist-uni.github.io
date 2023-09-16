@@ -13,3 +13,6 @@ pages: 1
 ---
 
 > … a person of integrity, when asked, does not reveal another person's bad points, to say nothing of when unasked
+
+On speaking well and ill of others.
+

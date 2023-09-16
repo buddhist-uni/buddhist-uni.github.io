@@ -16,3 +16,6 @@ parallels:
 ---
 
 > Craving is a cause of seeking. Seeking is a cause of gaining...
+
+Nine things that are rooted in craving.
+

@@ -43,3 +43,6 @@ while silent flow the great rivers.
 but silent is what’s full,  
 the fool is like the pot half-filled,  
 the wise one is like a lake  
+
+A sutta in two parts. The first part gives an account of events soon after the birth of the Bodhisatta. The second part describes the way of the sage.
+

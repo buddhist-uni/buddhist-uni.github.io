@@ -16,3 +16,6 @@ pages: 1
 ---
 
 > That bhikkhu sees the Dhamma. Seeing the Dhamma, he sees [the Tathāgata].
+
+To see the Dhamma is to see the Buddha and to be close to him, even when physically far away.
+

@@ -587,6 +587,9 @@ The last third of our class tackles the more prescriptive, “micro” question 
 {:.mb-0}
 - The Buddha’s description of (/prescription for) "the good life" for a householder.
 
+{% include content_blurb.html category="canon" slug="ud2.5" %}
+- But the best life is marked by renunciation.
+
 [CBT] Th.228, M.162
 {:.mb-0}
 - Citta the Householder shows what is possible for laypeople to achieve.

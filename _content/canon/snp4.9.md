@@ -24,3 +24,6 @@ parallels:
 
 > What is this body full of piss and shit?  
 I wouldn’t even want to touch it with my foot.
+
+Māgandiya offers the Buddha his daughter in marriage. The Buddha refuses and further subdues Māgandiya’s pride by describing a state of peace Māgandiya doesn’t even understand.
+

@@ -33,3 +33,6 @@ parallels:
 > if you’re patient, mindful and calm,  
 then you act for the good of both  
 for yourself and the other person
+
+A brahmin visits the Buddha and abuses him, but the Buddha responds with patience.
+

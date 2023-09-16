@@ -22,3 +22,6 @@ parallels:
 
 > Whoever should take to himself certain views,
 thinking them the best...
+
+The conceit that comes from clinging to practices or views—even if they’re supreme—is a fetter.
+

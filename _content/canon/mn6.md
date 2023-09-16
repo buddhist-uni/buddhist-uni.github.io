@@ -20,3 +20,6 @@ parallels:
 ---
 
 > … let them fulfill their precepts, be committed to inner serenity of the heart, not neglect absorption, be endowed with discernment, and frequent empty huts.
+
+Careful observance of ethical precepts is the foundation of all higher achievements in the spiritual life.
+

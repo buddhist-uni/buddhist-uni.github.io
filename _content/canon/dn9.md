@@ -55,3 +55,6 @@ parallels:
 ---
 
 > Potthapada—having other views, other practices, other satisfactions, other aims, other teachers—it’s hard for you to know whether perception is a person’s self or if perception is one thing and self another.
+
+The Buddha discusses with a wanderer the nature of perception and how it evolves through deeper states of meditation. None of these, however, should be identified with a self or soul.
+

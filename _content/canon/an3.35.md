@@ -28,3 +28,6 @@ parallels:
 ---
 
 > I am one of those in the world who sleep well.
+
+The Buddha sleeps well, even on cold, hard ground.
+

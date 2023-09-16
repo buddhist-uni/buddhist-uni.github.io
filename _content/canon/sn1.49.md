@@ -14,3 +14,6 @@ pages: 2
 
 > These brighten up the heavens  
 Where they’ve been reborn.
+
+The Buddha is asked about the future destiny of people who are generous—and not.
+

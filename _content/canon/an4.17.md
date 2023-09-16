@@ -24,3 +24,6 @@ parallels:
 ---
 
 > … there are these four ways of taking a wrong course
+
+Making decisions prejudiced by favoritism, hostility, stupidity, and cowardice will lead in a bad direction.
+

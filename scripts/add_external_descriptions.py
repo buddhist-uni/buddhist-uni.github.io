@@ -3,6 +3,7 @@
 import os
 import json
 from pathlib import Path
+from random import shuffle
 
 from strutils import (
   input_with_prefill,
@@ -74,6 +75,8 @@ def process_canon_file(file):
 
 if __name__ == "__main__":
   canon_folder = git_root_folder.joinpath("_content", "canon")
-  for file in canon_folder.iterdir():
+  files = list(canon_folder.iterdir())
+  shuffle(files)
+  for file in files:
     print(f"Processing {file.stem}...")
     process_canon_file(file)

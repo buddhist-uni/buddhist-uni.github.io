@@ -21,3 +21,6 @@ parallels: []
 ---
 
 > … by thoroughly understanding conceit, he has made an end of suffering.
+
+How the three types of feeling should be viewed.
+
