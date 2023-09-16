@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1WDPH3ZBL2i7712DYQb1FSJtR_WfeMphO/view?usp=sharing"
 course: samadhi
 tags:
-  - EA
-  - renunciation
+  - ea
+  - monastic
   - path
 year: 2021
 publisher: "Nuvis"
@@ -17,4 +17,7 @@ booktitle: "Dharmayātrā, Felicitation Volume in Honour of Ven. Dr. Tampalawela
 pages: "92--99"
 ---
 
-A translation of a discourse from the Chinese Ekottarika-āgama (Zengyi ahan jing 增壹阿含經, T 125).
+> ... the fourth meditative absorption, this is just like that tree gradually
+ blooming.
+
+A translation of a discourse from the Chinese Ekottarika-āgama that parallels the  AN 7.69, the Pāricchattaka Sutta.
