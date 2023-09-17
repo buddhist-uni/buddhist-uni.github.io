@@ -20,4 +20,4 @@ pages: 14
 become an essential factor for those intent on advancing from the stage
 of once-returning to that of non-returner.
 
-Addressing the deabate of the jhanas role in attaining nibbana, Bhikku Bodhi argues that, while not critical for attaining stream-entry, the jhanas are vital to further attainments
+Addressing the deabate of the jhānas' role in attaining nibbāna, Bhikku Bodhi argues that, while not critical for attaining stream-entry, the jhānas are vital to further attainments.
