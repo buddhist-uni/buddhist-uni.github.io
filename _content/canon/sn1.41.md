@@ -24,3 +24,6 @@ parallels:
 The vessel taken out  
 Is the one that is useful,  
 Not the one left burnt inside.
+
+A deity recites some verses to the Buddha.
+

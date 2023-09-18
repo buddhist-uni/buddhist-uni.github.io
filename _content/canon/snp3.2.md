@@ -25,3 +25,6 @@ parallels:
 
 > As I strove to subdue myself  
 beside the broad Nerañjarā...
+
+Māra attempts to dissuade the Bodhisatta from his path.
+

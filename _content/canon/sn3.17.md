@@ -30,3 +30,6 @@ parallels:
 ---
 
 > The astute praise diligence in making merit.
+
+Pasenadi asks the Buddha if there is one thing that secures benefit both in this life and the next.
+

@@ -24,3 +24,5 @@ parallels: []
 > It is painful to dwell without reverence and deference. Now what ascetic or brahmin can I honor, respect, and dwell in dependence on?
 
 > Let me then honor, respect, and dwell in dependence only on this Dhamma to which I have become fully enlightened.
+
+Who should a Buddha revere?

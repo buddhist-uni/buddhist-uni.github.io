@@ -21,3 +21,6 @@ parallels:
 > You’re right, brahmin, I don’t have  
 fourteen oxen  
 missing ...
+
+A brahmin is searching for his lost oxen when he sees the Buddha meditating peacefully in the forest. He laments the many sorrows of his life, celebrating the Buddha’s happiness and freedom from worldly sorrows.
+

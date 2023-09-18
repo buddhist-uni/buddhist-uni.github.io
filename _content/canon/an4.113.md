@@ -17,3 +17,6 @@ parallels:
 ---
 
 > Some excellent thoroughbred people are like this
+
+A thoroughbred responds when it sees a goad.
+

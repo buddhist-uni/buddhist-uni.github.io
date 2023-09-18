@@ -10,6 +10,7 @@ course: speech
 tags:
   - monastic-advice
   - sangha
+  - thai-forest
   - an
 year: 1998
 pages: 1

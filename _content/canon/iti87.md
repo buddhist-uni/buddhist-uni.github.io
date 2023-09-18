@@ -24,3 +24,6 @@ parallels:
 ---
 
 > Bhikkhus, these three kinds of unwholesome thoughts produce blindness, lack of vision, and absence of knowledge; they obstruct wisdom, lead to vexation, and are not conducive to Nibbāna.
+
+Along with three kinds of wholesome thoughts.
+

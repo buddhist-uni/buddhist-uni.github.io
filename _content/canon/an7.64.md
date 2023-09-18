@@ -22,3 +22,6 @@ parallels:
 ---
 
 > … an enemy wishes of an enemy, 'O, may this person sleep badly!'
+
+When someone is angry, they wish ill upon their enemy and are disappointed if they do well.
+

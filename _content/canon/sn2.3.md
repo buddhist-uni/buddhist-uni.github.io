@@ -35,3 +35,6 @@ parallels:
 
 > What is the one thing
 whose killing you approve?
+
+The god Māgha asks the Buddha about what one should slay in order to sleep well.
+

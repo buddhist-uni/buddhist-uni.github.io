@@ -18,3 +18,6 @@ parallels:
 ---
 
 > When they’ve been given up and eliminated, there are fine corruptions: thoughts of family, country, and being looked up to. A sincere, capable mendicant gives these up, gets rid of, eliminates, and obliterates them.
+
+Meditation is like purifying gold. A meditator should progressively eliminate more and more refined corruptions.
+

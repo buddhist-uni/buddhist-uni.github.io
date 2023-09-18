@@ -18,3 +18,6 @@ parallels:
 ---
 
 > O, that I might live for the interval that it takes to swallow having chewed up one morsel of food!
+
+Many of those who practice mindfulness of death don’t do so urgently enough.
+

@@ -32,3 +32,6 @@ parallels:
 
 > such a monk gives up the here and the beyond,  
 just as a serpent sheds its worn-out skin
+
+As we advance along the path, we shed our old attachments.
+

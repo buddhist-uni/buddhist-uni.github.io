@@ -15,3 +15,4 @@ pages: 2
 
 > I had unshakable faith in the Triple Gem. I practiced the precepts and delighted in giving and sharing.
 
+A deva explains how they came to be reborn in heaven.

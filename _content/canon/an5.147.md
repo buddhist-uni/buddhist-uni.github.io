@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > These are the five gifts of a bad person.
+
+Good and bad ways of offering gifts.
+

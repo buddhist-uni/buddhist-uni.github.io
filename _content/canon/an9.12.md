@@ -12,3 +12,6 @@ pages: 3
 ---
 
 > There are these nine people who, dying with something left over, are exempt from hell, the animal realm, and the ghost realm.
+
+Sāriputta visits some wanderers, who claim that only perfected ones are free from bad rebirth. Sāriputta has no opinion on this, but asks the Buddha, who replies that even stream-enterers are freed from lower rebirths.
+

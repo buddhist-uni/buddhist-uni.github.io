@@ -23,4 +23,7 @@ parallels: []
 #  - uvs32
 ---
 
-> But Mahākasspa refused those deities...
+> But Mahākassapa refused those deities...
+
+A deva-king disguises himself to give alms to Ven. Mahā Kassapa.
+
