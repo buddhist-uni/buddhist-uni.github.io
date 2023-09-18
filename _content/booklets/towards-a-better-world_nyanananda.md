@@ -6,6 +6,7 @@ drive_links: ["https://drive.google.com/file/d/1pgebSDoujZArcUIJ8KM2h8k4EiTcel9C
 year: 2000
 publisher: Dharma Grantha Mudrana Bhāraya
 address: Sri Lanka
+olid: OL49629310M
 course: theravada
 tags:
   - sri-lankan

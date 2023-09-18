@@ -11,6 +11,7 @@ tags:
   - vinaya-studies
 year: 2001
 month: nov
+olid: OL49629301M
 base_value: 1
 pages: 94
 ---

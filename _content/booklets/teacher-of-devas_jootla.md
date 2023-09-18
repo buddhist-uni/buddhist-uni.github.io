@@ -10,6 +10,8 @@ year: 1997
 series: wheel
 publisher: bps
 number: 414
+olid: OL42886919M
+source_url: "https://archive.org/details/teacherofdevasbu0000joot"
 course: buddha
 tags:
   - deva

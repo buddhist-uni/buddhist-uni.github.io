@@ -6,6 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh206_Khantipalo_Lay-Buddhist-Practice
 publisher: bps
 series: wheel
 number: 206
+olid: OL3083347M
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1o9scR-fXvuuHaNB1xc0IkxNTM5lkdxF7/view?usp=drivesdk", "https://drive.google.com/file/d/1m9dJNOdLcs54FgMHi6xjaKMoNlYgE5NT/view?usp=drivesdk"]
 course: form

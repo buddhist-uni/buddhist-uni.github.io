@@ -12,6 +12,7 @@ course: function
 tags:
   - renunciation
   - philosophy
+olid: OL49629292M
 year: 1962
 series: wheel
 number: 45

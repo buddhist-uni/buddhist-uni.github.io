@@ -14,7 +14,7 @@ tags:
   - thought
   - abhidhamma
 year: 1963
-base_value: 0.8
+olid: OL13056097M
 series: wheel
 number: 61
 publisher: bps
