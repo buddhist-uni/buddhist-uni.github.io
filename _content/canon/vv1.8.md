@@ -14,3 +14,6 @@ pages: 2
 ---
 
 > One day, I saw several monks who were very thirsty and had fallen to the ground. I got up quickly and offered them water to drink.
+
+A deva explains the merit accumulated when she offered water to a monk who had fallen.
+

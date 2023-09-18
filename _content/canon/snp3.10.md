@@ -47,3 +47,6 @@ parallels: []
 ---
 
 > Kokālika has been reborn in the Pink Lotus hell because of his resentment for Sāriputta and Moggallāna.
+
+A follower of Devadatta slanders Ven. Sāriputta and Ven. Moggallāna and, after suffering a painful disease, dies. The sutta then gives a graphic description of the sufferings awaiting him in hell.
+

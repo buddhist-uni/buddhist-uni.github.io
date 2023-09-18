@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > I went in search of the world’s gratification, and I found it.
+
+The Buddha became awakened by understanding gratification, as well as its danger and escape.
+

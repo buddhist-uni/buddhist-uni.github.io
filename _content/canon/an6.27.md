@@ -15,3 +15,6 @@ pages: 2
 ---
 
 > There are six proper occasions for going to see an esteemed mendicant...
+
+The right time to visit a monastic is when you need guidance and support.
+

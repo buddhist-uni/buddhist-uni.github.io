@@ -16,3 +16,6 @@ parallels:
 ---
 
 > … a mendicant who abuses and insults their spiritual companions can expect...
+
+Why a monk shouldn’t speak ill of his peers.
+

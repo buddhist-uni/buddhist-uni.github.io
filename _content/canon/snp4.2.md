@@ -25,3 +25,6 @@ parallels:
 
 > The person who’s to their body-cave  
 Clouded by many moods...
+
+Those who remain attached to the body, to sensuality, and to their sense of “mine” will have a hard time freeing themselves from fear of death and from further rebirths.
+

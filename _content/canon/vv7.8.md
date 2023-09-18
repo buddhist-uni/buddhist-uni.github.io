@@ -15,3 +15,6 @@ pages: 2
 ---
 
 > Although I did not have anything with which to practice generosity, I encouraged others.
+
+A deva explains how worshiping the relics of a Buddha can bring much happiness.
+

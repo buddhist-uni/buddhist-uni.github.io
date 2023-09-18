@@ -20,3 +20,6 @@ parallels:
 ---
 
 > Monk, don’t be bitter. If you’re bitter, corrupted by putrefaction, flies will, without a doubt, plague and infest you.
+
+The Buddha helps a monk in distress by teaching of “bitterness”, “rotting flesh”, and “insects”.
+

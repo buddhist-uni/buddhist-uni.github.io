@@ -24,3 +24,6 @@ parallels: []
 ---
 
 > On the eighth day of the fortnight, mendicants, the ministers and counselors of the Four Great Kings wander about the world...
+
+The gods rejoice when they see people practicing well.
+

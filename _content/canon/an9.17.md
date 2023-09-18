@@ -18,3 +18,6 @@ parallels:
 ---
 
 > Visiting a family with nine factors is worthwhile
+
+Nine factors in how a family should relate to the Saṅgha.
+
