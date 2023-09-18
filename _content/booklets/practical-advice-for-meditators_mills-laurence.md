@@ -15,7 +15,8 @@ year: 1968
 olid: OL13056099M
 publisher: bps
 address: "Kandy"
-series: "The Wheel Publication No. 116"
+series: wheel
+number: 116
 ---
 
 > The wild elephant of the mind, long accustomed to roam in the jungle of desires, does not take readily to taming, or to being tied to the post of practice ...
