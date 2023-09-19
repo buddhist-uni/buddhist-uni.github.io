@@ -14,3 +14,6 @@ pages: 1
 ---
 
 > Because of this meritorious deed, I have been born as a very beautiful deva and enjoy all the wonderful things that delight my heart.
+
+A deva explains the results of taking care of one’s parents and having confidence in monks.
+

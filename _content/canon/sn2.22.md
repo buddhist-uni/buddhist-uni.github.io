@@ -43,3 +43,6 @@ parallels:
 > Witless fools behave  
 like their own worst enemies,  
 doing wicked deeds...
+
+The deity Khema utters a series of verses in praise of good deeds. The Buddha responds with a simile for someone who departs the path of the good.
+

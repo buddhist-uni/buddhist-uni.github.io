@@ -29,3 +29,6 @@ parallels:
 
 > Just as the great ocean has but one taste, the taste of salt, so too, this Dhamma and discipline has but one taste: the taste of liberation.
 This is the sixth astounding and amazing quality...
+
+Spirits delight in the ocean for eight reasons, and likewise the mendicants delight in the Dhamma for eight similar reasons.
+
