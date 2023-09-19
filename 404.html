@@ -5,41 +5,55 @@ title: Page not found
 ---
 
 <style type="text/css" media="screen">
+  main.page-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #main.wrapper {
+    flex: 1;
+    display: flex;
+    margin: 0;
+    max-width: 100vw;
+    padding: 0;
+  }
   .container {
-    position: absolute;
     margin: 0;
     padding: 0;
+    /* opacity: 50%; */
+    background-color: #b3a1a1;
+    background-blend-mode: screen;
     background-image: url("https://images.unsplash.com/photo-1622354688049-e1a21bcb88bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
   }
-  h1,
-  p {
-    color: #000000;
+  .container h1,
+  .container p {
+    color: #5e2417;
     text-shadow: 0px 0px 3px #ffffff;
   }
-  h1.not-found-code {
+  .container h1.not-found-code {
     margin: 30px 0;
     font-size: 6em;
     font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: -1px;
   }
-  p {
+  .container p {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  p.not-found {
+  .container p.not-found {
     font-size: 2em;
   }
 
-  p.not-found-info {
+  .container p.not-found-info {
     font-size: 1em;
   }
 </style>
