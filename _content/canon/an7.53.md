@@ -15,3 +15,6 @@ pages: 3
 ---
 
 > I had an only son called Nanda who I loved dearly. The rulers forcibly abducted him on some pretext and had him executed. But I can’t recall getting upset ...
+
+Sāriputta and Moggallāna are on tour in the southern hills. A deity informs the laywoman Veḷukaṇṭakī that they are approaching. When Sāriputta expresses his amazement that she speaks with the gods, she goes on to list her other amazing qualities.
+

@@ -1,7 +1,9 @@
 ---
 title: "[Selected Verses from the] Mulamadhyamakakarika"
 translator: garfield-jay
-authors: ["Rev. Yin Shun"]
+authors:
+  - nagarjuna
+editor: "Rev. Yin Shun"
 external_url: "https://aaari.info/notes/03-06-06Tam2.pdf"
 drive_links:
   - "https://drive.google.com/file/d/187T2v8GMkuY7rT6Rl7a_oeXXSWKLn7u3/view?usp=drive_link"

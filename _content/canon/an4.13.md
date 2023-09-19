@@ -19,3 +19,6 @@ parallels:
 ---
 
 > … there are these four right strivings. What four?
+
+A definition of Right Effort.
+

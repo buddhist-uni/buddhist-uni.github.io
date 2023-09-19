@@ -33,3 +33,6 @@ parallels:
 
 > Man is born  
 with an axe in his mouth.
+
+Brahmā Tudu tries to persuade Kokālika to have faith in Sāriputta and Moggallāna.
+

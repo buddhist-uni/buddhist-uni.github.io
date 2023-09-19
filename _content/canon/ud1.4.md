@@ -22,3 +22,6 @@ parallels: []
 ---
 
 > … what are the things that make one a brahmin?
+
+A truly excellent person doesn’t display pride.
+

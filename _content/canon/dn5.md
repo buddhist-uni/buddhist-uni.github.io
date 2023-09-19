@@ -61,3 +61,6 @@ parallels:
 Let the king guarantee food and wages for those in government service.
 Then the people, occupied with their own work, will not harass the realm.
 The king’s revenues will be great.
+
+A brahmin wishes to undertake a great sacrifice and asks for the Buddha’s advice. The Buddha tells a legend of the past in which a king is persuaded to give up violent sacrifice and instead to devote his resources to supporting the needy citizens of his realm. However, even such a beneficial and non-violent sacrifice pales in comparison to the spiritual sacrifice of giving up our attachments.
+

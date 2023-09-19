@@ -14,3 +14,6 @@ pages: 2
 ---
 
 > I was a servant working in other people’s houses. But I was very fortunate...
+
+Only those who do good deeds are reborn in heaven.
+

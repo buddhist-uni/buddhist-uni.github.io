@@ -20,3 +20,6 @@ parallels:
 > Bhikkhus, possessing three factors, a shopkeeper soon attains vast and abundant wealth...
 
 > And how does a bhikkhu have benefactors?
+
+Shopkeepers and mendicants both have to be clever, responsible, and well supported.
+

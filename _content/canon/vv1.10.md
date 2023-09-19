@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > I did not have valuable things to offer. But still, I offered some
+
+Even a small offering of sesame seeds to the Buddha brought much merit.
+

@@ -14,3 +14,6 @@ pages: 1
 ---
 
 > To my amazement, I was reborn in the heavenly Nandana Park as a goddess!
+
+A deva explains how offering a honey covered cake led her to rebirth in a heavenly park.
+

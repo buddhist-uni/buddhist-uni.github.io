@@ -43,3 +43,6 @@ parallels:
 Is one a brahmin by birth, or by action?  
 Explain to us what we do not understand –  
 how to know a brahmin.
+
+What makes someone respectable?
+

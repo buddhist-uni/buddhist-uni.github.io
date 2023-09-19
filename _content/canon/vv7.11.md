@@ -15,3 +15,5 @@ pages: 1
 
 > I arranged those flowers beautifully while recollecting the great qualities of the Supreme Buddha.
 
+Arahant Moggallana asks what meritorious action a deva did to became so powerful.
+

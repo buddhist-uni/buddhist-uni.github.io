@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > I do not perceive another single factor so helpful as good friendship...
+
+Friendship with admirable people is the prime external factor to help those in training.
+

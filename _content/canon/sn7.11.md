@@ -28,3 +28,6 @@ parallels:
 
 > Tell me how you’re a farmer when asked:  
 how am I to recognize your farming?
+
+A brahmin farmer criticizes the Buddha for failing to be productive, merely living off the work of others, so the Buddha explains his line of work.
+

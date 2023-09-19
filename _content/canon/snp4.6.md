@@ -23,3 +23,6 @@ parallels:
 ---
 
 > A wise man is not deluded by what is perceived by the senses. He does not expect purity by any other way.
+
+Life is short. Possessiveness brings grief. Freedom comes from abandoning any sense of “mine.”
+
