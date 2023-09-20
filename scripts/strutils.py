@@ -1,6 +1,9 @@
 #!/bin/python3
 
 import random
+import sys
+import termios
+import tty
 import os
 import json
 import re
@@ -15,6 +18,26 @@ try:
 except:
   print("pip install titlecase")
   quit(1)
+
+ANSI_COLOR_DIM = "\033[2m"
+ANSI_COLOR_RESET = "\033[0m"
+ANSI_SAVE_POSITION = "\033[s"
+ANSI_RESTORE_POSITION = "\033[u"
+ANSI_ERASE_HERE_TO_END = "\033[0J"
+ANSI_ERASE_HERE_TO_LINE_END = "\033[0K"
+def ANSI_RETURN_N_UP(n):
+  return f"\033[{n}F"
+def ANSI_RETURN_N_DOWN(n):
+  return f"\033[{n}E"
+def ANSI_MOVE_LEFT(n):
+  return f"\033[{n}D"
+def ANSI_MOVE_RIGHT(n):
+  return f"\033[{n}C"
+def ANSI_MOVE_DOWN(n):
+  return f"\033[{n}B"
+def ANSI_MOVE_UP(n):
+  return f"\033[{n}A"
+# For more, see https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 
 whitespace = re.compile('\s+')
 digits = re.compile('(\d+)')
@@ -51,8 +74,54 @@ def cout(*args):
   print(*args, flush=True, end="")
 
 def stdout_make_room(lines: int):
+  cout(ANSI_SAVE_POSITION)
   cout(''.join(["\n"]*lines))
-  cout(f"\033[{lines}A")
+  cout(ANSI_RESTORE_POSITION)
+  cout(ANSI_MOVE_UP(lines))
+  cout(ANSI_SAVE_POSITION)
+
+def radio_dial(options):
+  SEARCH_ROOM = 3
+  i = 0
+  length = len(options)
+  stdout_make_room(SEARCH_ROOM)
+  stdin = sys.stdin.fileno()
+  old_settings = termios.tcgetattr(stdin)
+  tty.setraw(stdin)
+  try:
+    while True:
+      cout(f"{ANSI_RESTORE_POSITION}{ANSI_ERASE_HERE_TO_END}{ANSI_RESTORE_POSITION}")
+      if i > 0:
+        cout(f"{ANSI_COLOR_DIM}   {i}/{length}: {options[i-1]}{ANSI_COLOR_RESET}")
+      cout(ANSI_RETURN_N_DOWN(1))
+      cout(f" > {i+1}/{length}: {options[i]}")
+      if length > i + 1:
+        cout(ANSI_RETURN_N_DOWN(1))
+        cout(f"{ANSI_COLOR_DIM}   {i+2}/{length}: {options[i+1]}{ANSI_COLOR_RESET}")
+      ch = sys.stdin.read(1)
+      if ch == '\x03':
+        raise KeyboardInterrupt()
+      elif ch in ['\r', '\x04', '\n']:
+        break
+      elif ch == '\x1b': # ESC
+        ch = sys.stdin.read(1)
+        if ch == '[': # we're getting a control char (e.g. arrow keys)
+          ch = sys.stdin.read(1)
+          # A=up, B=down, C=right, D=left, H=home, F=end
+          if i > 0 and (ch == 'A' or ch == 'D'):
+            i -= 1
+          if (ch == 'B' or ch == 'C') and (length > i + 1):
+            i += 1
+          if ch == "F":
+            i = length - 1
+          if ch == 'H':
+            i = 0
+      else:
+        pass
+  finally:
+    cout(f"{ANSI_RESTORE_POSITION}{ANSI_RETURN_N_DOWN(SEARCH_ROOM)}\n")
+    termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
+  return i
 
 def input_with_prefill(prompt, text, validator=None):
     def hook():
@@ -199,11 +268,6 @@ def print_work(work: dict, indent=0):
       pass
     print(f"{s}URL: {work['open_access']['oa_url']}")
 
-
-def serp_result(work: dict, margin=10) -> str:
-  width = os.get_terminal_size().columns
-  space = width - margin - 4
-  return whitespace.sub(' ', f"{trunc(work['display_name'], floor(0.7*space))} by {trunc(work['hint'], ceil(0.3*space))}")
 
 @cache
 def get_author_slugs():

@@ -2,10 +2,7 @@
 
 from urllib import parse as url
 from collections import deque
-import sys
 import os
-import tty
-import termios
 import json
 import re
 import shutil
@@ -19,6 +16,11 @@ try:
 except:
   print("pip install requests yaspin python-slugify")
   quit(1)
+
+def serp_result(work: dict, margin=10) -> str:
+  width = os.get_terminal_size().columns
+  space = width - margin - 4
+  return whitespace.sub(' ', f"{trunc(work['display_name'], floor(0.7*space))} by {trunc(work['hint'], ceil(0.3*space))}")
 
 OPENALEX_SEARCH_RESULT_COUNT = 10
 def search_openalex_for_works(query):
@@ -227,83 +229,37 @@ def draft_files_matching(query):
   return matching_files
 
 def prompt_for_work(query) -> str:
-  print("Type part of the name of the work, hit Tab or Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
-  SEARCH_ROOM = 5
-  stdout_make_room(SEARCH_ROOM)
-  cout(f"Search> \033[s{query}")
-  stdin = sys.stdin.fileno()
-  old_settings = termios.tcgetattr(stdin)
-  tty.setraw(stdin)
-  r = {}
-  i = 0
-  try:
-   while '\r' not in query:
-    ch = sys.stdin.read(1)
-    if ch in ['\t', '\r', '\x04'] and 'results' not in r:
-       cout("\033[u\033[3E")
-       with yaspin(text="Scanning drafts..."):
-         existing_drafts = draft_files_matching(query)
-       if existing_drafts:
-        if len(existing_drafts) > 1:
-            cout(f"Found {len(existing_drafts)} existing _draft files: ")
-            cout(" AND ".join(existing_drafts))
-            raise NotImplementedError("Multiple matching draft files found")
-        else:
-            cout(f"Found matching _draft file: {existing_drafts[0]}\033[u\033[3E")
-            if prompt("Use this file?"):
-                new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(existing_drafts[0]))
-                shutil.move(existing_drafts[0], new_path)
-                system_open(new_path)
-                quit(0)
-       with yaspin(text="Searching OpenAlex..."):
-         i = 0
-         r = search_openalex_for_works(query)
-    elif ch == '\x03':
-      raise KeyboardInterrupt()
-    elif ch in ['\r', '\x04']:
-      break
-    elif ch == '\t':
-      continue
-    elif ch == '\x1b': # ESC
-      ch = sys.stdin.read(1)
-      if ch == '[': # we're getting a control char (e.g. arrow keys)
-        ch = sys.stdin.read(1)
-        # A=up, B=down, C=right, D=left, H=home, F=end
-        if ch == 'A' and i > 0:
-          i -= 1
-        if (ch == 'B') and ('results' in r) and (len(r['results']) > i + 1):
-          i += 1
-        # TODO: Handle left/right editing
-    else:
-      i = 0
-      r = {}
-      if ch == '\x7f': # BACKSPACE
-        query = query[:-1]
+  print("Type part of the name of the work, hit Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
+  query = input_with_prefill("Search> ", query)
+  with yaspin(text="Scanning drafts..."):
+    existing_drafts = draft_files_matching(query)
+    if existing_drafts:
+      if len(existing_drafts) > 1:
+        cout(f"Found {len(existing_drafts)} existing _draft files: ")
+        cout(" AND ".join(existing_drafts))
+        raise NotImplementedError("Multiple matching draft files found")
       else:
-        query += ch
-    cout(f"\033[u\033[0J{query}\033[E")
-    if 'results' in r and len(r['results']) > 0:
-      cout(f"Results:\033[E")
-      if i > 0:
-        cout(f"\033[2m   {i}/{len(r['results'])}: {serp_result(r['results'][i-1])}\033[0m")
-      cout(f"\033[E")
-      cout(f" > {i+1}/{len(r['results'])}: {serp_result(r['results'][i])}")
-      if len(r['results']) > i + 1:
-        cout(f"\033[E")
-        cout(f"\033[2m   {i+2}/{len(r['results'])}: {serp_result(r['results'][i+1])}\033[0m")
-    else:
-      cout(f"\033[2ENo results (hit tab/enter to search)")
-    cout(f"\033[u\033[{len(query)}C")
-  finally:
-    cout(f"\033[u\033[{SEARCH_ROOM}E\n")
-    termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
+        print(f"Found matching _draft file: {existing_drafts[0]}")
+        if prompt("Use this file?"):
+          new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(existing_drafts[0]))
+          shutil.move(existing_drafts[0], new_path)
+          system_open(new_path)
+          quit(0)
+  r = {}
+  with yaspin(text="Searching OpenAlex..."):
+    r = search_openalex_for_works(query)
+  if 'results' not in r or len(r['results']) == 0:
+    print("No results found :(")
+    return prompt_for_work(query)
+  print("Results:")
+  i = radio_dial([serp_result(res) for res in r['results']])
   return (r['results'][i]['id'].split("/")[-1], query)
 
 def _main():
   query = ""
   while True:
     workid, query = prompt_for_work(query)
-    with yaspin():
+    with yaspin(text="Fetching work info..."):
       work = fetch_work_data(workid)
     print_work(work)
     if prompt("Is this the correct work?"):
