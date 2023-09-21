@@ -26,7 +26,7 @@ publisher: "Elsevier BV"
 openalexid: W2072095421
 ---
 
-> ... the “Axial Age,” presents a puzzle: why did this emerge at the same time as distinct moralizing religions, with highly similar features in different civilizations?
+> ... the “Axial Age” presents a puzzle: why did this emerge at the same time as distinct moralizing religions, with highly similar features in different civilizations?
 The puzzle may be solved by quantitative historical evidence that demonstrates an exceptional uptake in energy capture (general prosperity) just before the Axial Age in these three regions.
 
 > Statistical modeling confirms that economic development, not political complexity or population size, accounts for the timing of the Axial Age.

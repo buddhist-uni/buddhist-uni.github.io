@@ -10,7 +10,7 @@ status: featured
 tags:
   - meditation
   - vipassana
-  - feelings
+  - feeling
 year: 2018
 month: oct
 oclc: 1124315439

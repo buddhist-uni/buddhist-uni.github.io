@@ -7,6 +7,7 @@ import json
 import re
 import shutil
 from strutils import *
+import gdrive
 from itertools import chain
 import journals
 try:
@@ -43,7 +44,7 @@ def alt_url_for_work(work, oa_url):
       pass
   return ret
 
-def make_library_entry_for_work(work, draft=False) -> str:
+def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
@@ -151,8 +152,13 @@ def make_library_entry_for_work(work, draft=False) -> str:
             fd.write("\"\nsource_url: \"")
     if alternate_url and not (doi and oa_url):
         fd.write(alternate_url)
-    fd.write("\"\ndrive_links:\n  - \"\"\nstatus: featured\ncourse: \ntags:\n  - \n")
-    fd.write(f"year: {work['publication_year']}\n")
+    fd.write(f"\"\ndrive_links:\n  - \"{glink}\"\n")
+    if course != '':
+      fd.write("course: ")
+      if course:
+        fd.write(slugify(course))
+      fd.write("\nstatus: featured\n")
+    fd.write(f"tags:\n  - \nyear: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     try:
       venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
@@ -231,20 +237,25 @@ def draft_files_matching(query):
 def prompt_for_work(query) -> str:
   print("Type part of the name of the work, hit Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
   query = input_with_prefill("Search> ", query)
+  existing_drafts = None
   with yaspin(text="Scanning drafts..."):
     existing_drafts = draft_files_matching(query)
-    if existing_drafts:
-      if len(existing_drafts) > 1:
-        cout(f"Found {len(existing_drafts)} existing _draft files: ")
-        cout(" AND ".join(existing_drafts))
-        raise NotImplementedError("Multiple matching draft files found")
-      else:
-        print(f"Found matching _draft file: {existing_drafts[0]}")
-        if prompt("Use this file?"):
-          new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(existing_drafts[0]))
-          shutil.move(existing_drafts[0], new_path)
-          system_open(new_path)
-          quit(0)
+  if existing_drafts:
+    use_draft = None
+    if len(existing_drafts) > 1:
+      print(f"Found {len(existing_drafts)} existing _draft files. Should we use one of those?")
+      i = radio_dial([os.path.basename(fd) for fd in existing_drafts]+["None of the above"])
+      if i < len(existing_drafts):
+        use_draft = existing_drafts[i]
+    else:
+      print(f"Found matching _draft file: {existing_drafts[0]}")
+      if prompt("Use this file?"):
+        use_draft = existing_drafts[0]
+    if use_draft:
+        new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(use_draft))
+        shutil.move(use_draft, new_path)
+        system_open(new_path)
+        quit(0)
   r = {}
   with yaspin(text="Searching OpenAlex..."):
     r = search_openalex_for_works(query)
@@ -264,7 +275,33 @@ def _main():
     print_work(work)
     if prompt("Is this the correct work?"):
       break
-  filepath = make_library_entry_for_work(work)
+  with yaspin(text="Searching Drive for file..."):
+    title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
+    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf'").execute()
+  if "files" not in gfiles:
+    raise RuntimeError("Unexpected GDrive API response: "+gfiles)
+  gfiles = gfiles["files"]
+  gfile = None
+  if len(gfiles) == 0:
+    print("No suitable files found.")
+  elif len(gfiles) == 1:
+    gfile = gfiles[0]
+    print(f"Got \"{gfile['name']}\"")
+    if not prompt("Is this correct?"):
+      gfile = None
+  else:
+    print(f"Got {len(gfiles)} candidates.\nPlease select one:")
+    i = radio_dial([f['name'] for f in gfiles]+["Other (I'll supply a URL manually)"])
+    if i < len(gfiles):
+      gfile = gfiles[i]
+  if gfile:
+    glink = gdrive.DRIVE_LINK.format(gfile['id'])
+  else:
+    glink = input("Google Drive Link: ")
+  course = input_with_tab_complete("course: ", gdrive.get_known_courses())
+  folders = gdrive.get_gfolders_for_course(course)
+  gdrive.move_gfile(glink, folders)
+  filepath = make_library_entry_for_work(work, course=course, glink=glink)
   print(f"\nOpening {filepath}\n")
   system_open(filepath)
 
