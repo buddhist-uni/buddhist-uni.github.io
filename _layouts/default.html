@@ -44,7 +44,7 @@
       <link rel="alternate" type="application/atom+xml" title="{{ page.rss_title | default: page.title }}" href="{{ page.rss_url }}" />
     {%- endif -%}
   {%- endcase -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- if jekyll.environment == 'production' -%}
     <script>
       window.WEBSITE_SECTION = '{{ page.section }}';
       if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
