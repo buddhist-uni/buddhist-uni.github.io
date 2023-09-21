@@ -17,3 +17,6 @@ parallels:
 ---
 
 > It’s like a bungalow with a bad roof. The roof peak, rafters, and walls are unprotected. They get soaked, and become rotten.
+
+Protecting your mind is like protecting a house.
+

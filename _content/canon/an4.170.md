@@ -18,3 +18,6 @@ parallels:
 ---
 
 > All of the monks and nuns who declare in my presence that they have attained perfection, did so by one or other of four paths.
+
+Ways of practicing serenity and discernment.
+

@@ -21,3 +21,6 @@ parallels:
 ---
 
 > "Be my heirs in the teaching, not in material things."
+
+Venerable Sāriputta explains how by following the Buddha’s example we can experience the spiritual fruits of his path.
+

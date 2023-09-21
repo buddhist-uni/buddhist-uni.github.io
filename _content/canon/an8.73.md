@@ -19,3 +19,6 @@ parallels:
 ---
 
 > Oh if I’d only live as long as it takes to breathe out after breathing in, or to breathe in after breathing out, I’d focus on the Buddha’s instructions and I could really achieve a lot.
+
+Various mendicants practice mindfulness of death, but do so inadequately. The Buddha explains how to do so with proper urgency,
+

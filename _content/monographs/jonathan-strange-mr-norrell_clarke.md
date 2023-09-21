@@ -3,7 +3,6 @@ title: "Jonathan Strange and Mr Norrell"
 authors:
   - "Susanna Clarke"
 subcat: fiction
-external_url: "https://archive.org/details/jonathanstrangem00clar/page/n6/mode/1up"
 course: literature
 tags:
   - england

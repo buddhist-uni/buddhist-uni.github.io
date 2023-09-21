@@ -9,6 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/13rWmO2smHcAg6Si6ndXEX4qVd5EWHUMa/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1P7N665SNkiLvu6UfD9PThJ8LdzjP0dtm/view?usp=drivesdk"
 formats: [pdf, epub]
+olid: OL31153405M
 year: 2013
 month: nov
 publisher: "Buddha's Light Publishing"

@@ -16,6 +16,7 @@ big_height: 2025
 {%- assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
 {%- assign author_letters = site.authors | group_by_exp: "a", "a.slug | slice: 0" | sort: "name" -%}
 {%- assign readers = all_content | where_exp: "c", "c.reader" | group_by: "reader" -%}
+{%- comment -%}Note that there's a subtle bug below: this cannot find works that were translated by multiple authors. Since this is rare, I haven't prioritized fixing it...{%- endcomment -%}
 {%- assign translators = all_content | where_exp: "c", "c.translator" | group_by: "translator" -%}
 
 {% for letter in author_letters %}[{{ letter.name | upcase }}](#{{ letter.name }})  {% endfor %}

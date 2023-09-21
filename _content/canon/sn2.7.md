@@ -22,3 +22,5 @@ parallels:
 > Even in a confining place they find it,  
 the Dhamma for the attainment of unbinding.
 
+Pañcālacaṇḍa praises the Buddha for finding the opening amid the confinement of the world. But the Buddha affirms that anyone with mindfulness and stillness may find such an escape.
+

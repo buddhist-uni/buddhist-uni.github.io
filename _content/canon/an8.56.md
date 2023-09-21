@@ -18,3 +18,6 @@ parallels:
 ---
 
 > Mendicants, ‘danger’ is a term for sensual pleasures...
+
+The Buddha explains how addiction to sensual pleasures is perilous.
+

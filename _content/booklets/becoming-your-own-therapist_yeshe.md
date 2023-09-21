@@ -9,8 +9,6 @@ year: 1998
 course: function
 tags:
   - meditation
-  - path
-  - buddhism
   - tibet-west
 pages: 57
 ---

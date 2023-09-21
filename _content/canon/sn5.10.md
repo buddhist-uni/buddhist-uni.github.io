@@ -23,3 +23,6 @@ parallels:
 Mara, is that your speculative view?
 This is a heap of sheer formations:
 Here no being is found.
+
+Māra asks the nun Vajirā about who has created this being. Recognizing him, she points out that the word “being” is nothing more than a convention used to designate the aggregates, just as the word “cart” is used when its parts are assembled.
+

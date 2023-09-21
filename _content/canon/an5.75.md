@@ -18,3 +18,6 @@ parallels:
 ---
 
 > … five people similar to warriors are found among the monks
+
+Some warriors, like some monks, falter before the threat of battle, while others emerge victorious.
+

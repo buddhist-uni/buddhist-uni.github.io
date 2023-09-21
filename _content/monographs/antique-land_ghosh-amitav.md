@@ -2,7 +2,6 @@
 title: "In an Antique Land: History in the Guise of a Traveller's Tale"
 authors:
   - "Amitav Ghosh"
-external_url: "https://archive.org/details/inantiqueland0000ghos_m9b3/mode/1up"
 course: historiography
 tags:
   - middle-east

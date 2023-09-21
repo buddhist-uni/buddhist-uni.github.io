@@ -515,6 +515,9 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="canon" slug="iti107" %}
 - The Buddha summarizes this ideal relationship between the monastics and the laity.
 
+{% include content_blurb.html category="canon" slug="an3.20" %}
+- ... and explains how a Bhikkhu has benefactors.
+
 {% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
 - A paper on how the flourishing of the monastic community affects everyone around them.
 
@@ -583,6 +586,9 @@ The last third of our class tackles the more prescriptive, “micro” question 
 [CBT] Th.39–40, Th.49, Th.96, Th.112, Th.114
 {:.mb-0}
 - The Buddha’s description of (/prescription for) "the good life" for a householder.
+
+{% include content_blurb.html category="canon" slug="ud2.5" %}
+- But the best life is marked by renunciation.
 
 [CBT] Th.228, M.162
 {:.mb-0}

@@ -9,6 +9,8 @@ year: 1963
 publisher: bps
 series: wheel
 number: 54
+olid: OL12223241M
+source_url: "https://archive.org/details/the-mirror-of-the-dhamma"
 address: Kandy
 course: theravada
 tags: 

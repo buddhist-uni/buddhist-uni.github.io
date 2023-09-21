@@ -34,3 +34,6 @@ parallels:
 ---
 
 > Any bhikkhu who is skillful in this, diligent, clearly comprehending and ever mindful, is said to be standing in an ancient, primal noble lineage.
+
+Contentment with any old robe, alms-food, lodgings, and love of meditation: these are ancient traditions of the noble ones.
+

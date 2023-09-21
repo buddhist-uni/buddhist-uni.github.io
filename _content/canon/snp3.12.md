@@ -32,3 +32,6 @@ parallels: []
 ---
 
 > When a mendicant meditates rightly contemplating a pair of teachings in this way—diligent, keen, and resolute—they can expect one of two results: enlightenment in the present life or, if there’s something left over, non-return.
+
+Not all dualities are misleading. This sutta teaches ways to contemplate the duality of the origination and cessation of stress and suffering so as to reach awakening.
+

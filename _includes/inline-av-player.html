@@ -52,7 +52,6 @@
             extraTime = (millidollars - Math.round(millidollars))*{{ millisecperdol }};
         }
     }
-    var started = false;
     window.loggingInterval = null;
     var extraTime = 0;
     window.lastLogTime = Date.now();
@@ -63,10 +62,7 @@
             window.lastLogTime = Date.now();
             window.loggingInterval = setInterval(logWatchTime.bind(event.target), 10000);
           }
-          if (!started) {
-            ga('send','event','Video','play','{{ record.content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0);
-            started = true;
-        }} else {
+        } else {
           if (window.loggingInterval) {
             clearInterval(window.loggingInterval);
             window.loggingInterval = null;
@@ -74,9 +70,6 @@
             window.lastLogTime = Date.now();
             setTimeout(logWatchTime.bind(event.target), 0);
           }
-        }
-        if (event.data == YT.PlayerState.ENDED) {
-            ga('send','event','Video','finish','{{ record.content_path }}',{{ site.data.ga.av_end_val }});
         }
         {%- else -%}
         console.log(event.data);
@@ -99,8 +92,8 @@
     preload="metadata"
     style="width: 98%; margin-left: 1%"
     crossorigin="anonymous"
-    onplay="if(!localStorage.getItem('{{tid}}-start')){ga('send','event','{{ tag | capitalize }}','play','{{ record.content_path }}',Math.random()<{{ site.data.ga.av_start_val }}?1:0); gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: Math.round(100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});localStorage.setItem('{{tid}}-start','1');}"
-    onended="if(!localStorage.getItem('{{tid}}-end')){ga('send','event','{{ tag | capitalize }}','finish','{{ record.content_path }}',{{ site.data.ga.av_end_val }});gtag('event', 'video_complete', {{ gtagdata }});localStorage.setItem('{{tid}}-end','1');}"
+    onplay="if(!localStorage.getItem('{{tid}}-start')){gtag('event', 'video_start',{% capture gtagdata %} {video_duration: this.duration, video_current_time: this.currentTime, video_percent: Math.round(100*this.currentTime/this.duration), visible: true, video_url: '{{ rawfile }}', video_provider: '{% assign r = rawfile | split: '/' %}{{ r[2] }}', video_title: {{ record.title | jsonify | replace: '"', "'" }}}{% endcapture %}{{ gtagdata }});localStorage.setItem('{{tid}}-start','1');}"
+    onended="if(!localStorage.getItem('{{tid}}-end')){gtag('event', 'video_complete', {{ gtagdata }});localStorage.setItem('{{tid}}-end','1');}"
     ontimeupdate="Math.random()<0.00390625?gtag('event', 'video_progress', {{ gtagdata }}):undefined"
 >
     <source src="{{ rawfile }}" type="{{ mime }}">

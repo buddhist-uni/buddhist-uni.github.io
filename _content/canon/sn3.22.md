@@ -38,3 +38,6 @@ parallels:
 ---
 
 > … all beings are subject to death. Death is their end
+
+Pasenadi laments the death of his aged grandmother.
+

@@ -17,3 +17,6 @@ minutes: 3
 ---
 
 > Householder, there are these four kinds of happiness that may be achieved by a layperson
+
+The happiness of ownership, using wealth, debtlessness, and blamelessness.
+

@@ -17,3 +17,6 @@ pages: 1
 ---
 
 > If he strikes an elephant, he does it carefully...
+
+When the Buddha teaches, he respects his audience.
+

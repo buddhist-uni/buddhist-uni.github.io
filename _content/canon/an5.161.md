@@ -18,3 +18,6 @@ pages: 1
 ---
 
 > … use these five methods to completely get rid of resentment when it has arisen towards anyone
+
+Five reflections to eliminate enmity in brief.
+

@@ -15,3 +15,6 @@ pages: 1
 ---
 
 > … a bad person and a worse person, a good person and a better person
+
+Is it better to preach the Dhamma or to practice it?
+

@@ -25,3 +25,6 @@ parallels: []
 
 > What need for a well  
 if there were waters always?
+
+Wanderers of other sects try to keep the Buddha from drinking the water in a well.
+

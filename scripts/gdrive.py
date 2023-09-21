@@ -1,5 +1,11 @@
+#!/bin/python3
+
 import os.path
 from pathlib import Path
+from strutils import (
+  git_root_folder,
+  input_with_tab_complete
+)
 import json
 import re
 from functools import cache
@@ -13,10 +19,14 @@ except:
   print("pip install google google-api-python-client google_auth_oauthlib")
   quit(1)
 
-# If modifying these scopes, have to redo the token.json.
+# If modifying these scopes, have to redo the client secrets json.
 SCOPES = ['https://www.googleapis.com/auth/drive']
+# The client secrets file can be made and downloaded from your developer console:
+# https://console.developers.google.com/apis/credentials
+CLIENTSECRETS = os.path.expanduser("~/library-utils-client-secret.json")
+# This credentials file is created automatically by this script when the user logs in
 CREDFILE = os.path.expanduser('~/gtoken.json')
-FOLDERS_DATA_FILE = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/drive_folders.json")))
+FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
 FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
@@ -44,7 +54,7 @@ def get_gfolders_for_course(course):
   return (folder_id, shortcut_folder)
 
 @cache
-def session(client_secrets):
+def session():
     creds = None
     if os.path.exists(CREDFILE):
         creds = Credentials.from_authorized_user_file(CREDFILE, SCOPES)
@@ -52,15 +62,17 @@ def session(client_secrets):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
+            if not os.path.exists(CLIENTSECRETS):
+              raise RuntimeError(f"{CLIENTSECRETS} does not exist.")
             flow = InstalledAppFlow.from_client_secrets_file(
-                os.path.expanduser(client_secrets), SCOPES)
+              CLIENTSECRETS, SCOPES)
             creds = flow.run_local_server(port=0)
         with open(CREDFILE, 'w') as token:
             token.write(creds.to_json())
     return build('drive', 'v3', credentials=creds)
 
-def upload_to_google_drive(file_path, client_file, filename=None, folder_id=None):
-    drive_service = session(client_file)
+def upload_to_google_drive(file_path, filename=None, folder_id=None):
+    drive_service = session()
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
         file_metadata['parents'] = [folder_id]
@@ -84,8 +96,8 @@ def upload_to_google_drive(file_path, client_file, filename=None, folder_id=None
         print("An error occurred:", str(e))
         return False
 
-def create_drive_shortcut(client_file, gfid, filename, folder_id):
-  drive_service = session(client_file)
+def create_drive_shortcut(gfid, filename, folder_id):
+  drive_service = session()
   shortcut_metadata = {
        'Name': filename,
        'mimeType': 'application/vnd.google-apps.shortcut',
@@ -100,16 +112,16 @@ def create_drive_shortcut(client_file, gfid, filename, folder_id):
   ).execute()
   return shortcut.get('id')
 
-def deref_possible_shortcut(client_file, gfid):
+def deref_possible_shortcut(gfid):
   """Returns the id of what gfid is pointing to OR gfid"""
-  service = session(client_file)
+  service = session()
   res = service.files().get(fileId=gfid, fields="shortcutDetails").execute()
   if "shortcutDetails" in res:
     return res["shortcutDetails"]["targetId"]
   return gfid
 
-def move_drive_file(client_file, file_id, folder_id, previous_parents=None):
-  service = session(client_file)
+def move_drive_file(file_id, folder_id, previous_parents=None):
+  service = session()
   if previous_parents is None:
     # pylint: disable=maybe-no-member
     file = service.files().get(fileId=file_id, fields='parents').execute()
@@ -125,11 +137,46 @@ def move_drive_file(client_file, file_id, folder_id, previous_parents=None):
   print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
 
-def get_shortcuts_to_gfile(client_file, target_id):
+def get_shortcuts_to_gfile(target_id):
   # note the following assumes only one page of results
   # if you are expecting >100 results
   # please implement paging when calling files.list
-  return session(client_file).files().list(q=f"shortcutDetails.targetId='{target_id}'", spaces='drive', fields='files(id,name,parents)').execute()['files']
+  return session().files().list(q=f"shortcutDetails.targetId='{target_id}'", spaces='drive', fields='files(id,name,parents)').execute()['files']
 
-def trash_drive_file(client_file, target_id):
-  return session(client_file).files().update(fileId=target_id, body={"trashed": True}).execute()
+def trash_drive_file(target_id):
+  return session().files().update(fileId=target_id, body={"trashed": True}).execute()
+
+def move_gfile(glink, folders):
+  gfid = link_to_id(glink)
+  public_fid, private_fid = folders
+  file = move_drive_file(gfid, public_fid or private_fid)
+  shortcuts = get_shortcuts_to_gfile(gfid)
+  if public_fid and private_fid:
+    if len(shortcuts) != 1:
+      print("Creating a (new, private) shortcut...")
+      create_drive_shortcut(gfid, file.get('name'), private_fid)
+    else:
+      s=shortcuts[0]
+      print(f"Moving existing shortcut from  {FOLDER_LINK.format(s['parents'][0])}  to  {FOLDER_LINK.format(private_fid)}  ...")
+      move_drive_file(s['id'], private_fid, previous_parents=s['parents'])
+  else:
+    if len(shortcuts) == 1:
+      s=shortcuts[0]
+      print(f"Trashing the existing shortcut in {FOLDER_LINK.format(s['parents'][0])} ...")
+      trash_drive_file(s['id'])
+  if len(shortcuts)>1:
+    urls = "     ".join(map(lambda f: FOLDER_LINK.format(f['parents'][0]), shortcuts))
+    raise NotImplementedError(f"Please decide what to do with the multiple old shortcuts in:    {urls}")
+  print("Done!")
+
+if __name__ == "__main__":
+  glinks = []
+  while True:
+    glink = input("Google Drive Link (None to continue): ")
+    if not glink:
+      break
+    glinks.append(glink)
+  course = input_with_tab_complete("course: ", get_known_courses())
+  folders = get_gfolders_for_course(course)
+  for glink in glinks:
+    move_gfile(glink, folders)

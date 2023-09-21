@@ -20,3 +20,6 @@ parallels:
 
 > ‘The straight way’ that path is called,  
 And ‘fearless’ is its destination.
+
+To escape from the Forest of Delusion, one needs the vehicle of the Dhamma.
+

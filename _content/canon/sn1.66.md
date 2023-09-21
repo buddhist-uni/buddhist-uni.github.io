@@ -22,3 +22,6 @@ parallels: []
 
 > By what is the world afflicted?  
 By what is it enveloped?
+
+The world is burning with desire.
+

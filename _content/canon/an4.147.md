@@ -21,3 +21,5 @@ parallels: []
 ---
 
 > [There is] a time for listening to the teaching, a time for discussing the teaching, a time for serenity, and a time for discernment.
+
+<!---->

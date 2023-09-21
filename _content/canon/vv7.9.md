@@ -16,3 +16,6 @@ pages: 3
 ---
 
 > You seek something that cannot be obtained. I am sure that you will die from sadness: it is impossible to get the sun and moon
+
+A deva shows a grieving father the way to end his sorrow.
+

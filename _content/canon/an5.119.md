@@ -14,3 +14,6 @@ pages: 1
 ---
 
 > A nun with five qualities is cast down to hell...
+
+Five good and five bad qualities that determine a nun’s destiny after death.
+

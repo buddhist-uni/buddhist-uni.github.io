@@ -26,3 +26,6 @@ parallels: []
 
 > Whatever doubts there are...  
 The meditators give up all these
+
+The Buddha rejoices in Ven. Revata's diligent meditation.
+

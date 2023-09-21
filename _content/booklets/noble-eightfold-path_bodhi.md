@@ -14,8 +14,6 @@ course: buddhism
 status: featured
 tags: 
   - path
-  - function
-  - meditation
   - theravada
 olid: OL23113286M
 pages: 82

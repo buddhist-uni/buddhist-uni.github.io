@@ -19,3 +19,6 @@ parallels:
 ---
 
 > Mendicants, there are eight grounds for laziness.
+
+And the corresponding eight grounds for energy.
+

@@ -30,3 +30,5 @@ this is the island with nothing further.
 I call this [island] ‘*nibbāna*,’  
 the extinction of old age and death.
 
+How to recognize an emancipated person.
+

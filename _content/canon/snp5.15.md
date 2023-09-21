@@ -19,3 +19,5 @@ parallels: []
 > One who has entirely given up the body, ...
 how should one like that be guided?
 
+How to develop insight after mastering the perception of nothingness.
+

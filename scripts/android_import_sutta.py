@@ -1,32 +1,39 @@
 import requests, os, re, argparse, time, subprocess, json
 from pathlib import Path
-from strutils import input_with_prefill, prompt, system_open, input_with_tab_complete
+from strutils import (
+  git_root_folder,
+  input_with_prefill,
+  prompt,
+  system_open,
+  input_with_tab_complete,
+  sutta_id_re
+)
+from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
-from archive_site import save_url_to_archiveorg
+from archivedotorg import save_url_to_archiveorg
 
 yaml_list_prefix = '\n  - '
-sutta_id_re = r'^([a-zA-Z]+)(\d+)[\.]?(\d*)$'
 NONSC_TRANSLATORS = [{
   'author_short': 'Gnanananda',
   'author_uid': '"Ven. Kiribathgoda Gnanananda"',
   'author': "Ven. Gnanananda",
   'publication_date': 2020,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/suttafriends.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "suttafriends.json").read_text())
 },
 {
   'author_short': 'DT.org',
   'author_uid': 'geoff',
   'author': "Thanissaro Bhikkhu",
   'publication_date': None,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/dhammatalks.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "dhammatalks.json").read_text())
 },
 {
   'author_short': 'ATI',
   'author_uid': None,
   'author': None,
   'publication_date': None,
-  'website_data': json.loads(Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../_data/accesstoinsight_nongeoffsuttas.json"))).read_text())
+  'website_data': json.loads(git_root_folder.joinpath("_data", "accesstoinsight_nongeoffsuttas.json").read_text())
 }
 ]
 
@@ -227,20 +234,23 @@ def process_pdf(pdf_file):
   while True:
     sutta = input_with_prefill("Sutta ID? ", guess)
     scdata = get_suttacentral_metadata(sutta)
-    if scdata['acronym'] == sutta:
+    if scdata and scdata['acronym'] and scdata['acronym'].replace('–','-') == sutta:
       break
     print(f"Got \"{scdata['acronym']}\" instead. Try again.")
   en_trans = [t for t in scdata['translations'] if t['lang']=='en']
   slug = scdata['uid']
-  mdfile = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), f"../_content/canon/{slug}.md")))
+  mdfile = git_root_folder.joinpath("_content", "canon", f"{slug}.md")
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
-  parsed = re.match(sutta_id_re, slug)
+  parsed = sutta_id_re.match(slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
-  nums = list(map(lambda v: int(v) if v else None, nums))
-  nonsc_trans = get_possible_trans(book, nums)
+  try:
+    nums = list(map(lambda v: int(v) if v else None, nums))
+    nonsc_trans = get_possible_trans(book, nums)
+  except ValueError:
+    nonsc_trans = [] # TODO: look up range suttas correctly
   print(f"Possible English translations: {list(map(lambda t: t['author_short'], en_trans+nonsc_trans))}")
   transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(nonsc_trans)))
   if transidx < len(en_trans):
@@ -280,9 +290,15 @@ subcat: poetry{extra_fields}"""
     case "ma":
       slugfield = f"ma{nums[0]:03d}"
     case "sn":
-      slugfield = f"sn.{nums[0]:03d}.{nums[1]:03d}"
+      try:
+        slugfield = f"sn.{nums[0]:03d}.{nums[1]:03d}"
+      except ValueError: # Range sutta
+        slugfield = f"sn.{int(nums[0]):03d}.{int(nums[1].split('-')[0]):03d}-{int(nums[1].split('-')[1]):03d}"
     case "an":
-      slugfield = f"an.{nums[0]:03d}.{nums[1]:03d}"
+      try:
+        slugfield = f"an.{nums[0]:03d}.{nums[1]:03d}"
+      except ValueError:
+        slugfield = f"an.{int(nums[0]):03d}.{int(nums[1].split('-')[0]):03d}-{int(nums[1].split('-')[1]):03d}"
     case "ud":
       slugfield = slug
     case "vv":
@@ -328,6 +344,8 @@ subcat: poetry{extra_fields}"""
     coursefields = f"""course: {course}
 status: featured
 """
+  blurb = get_blurb_for_suttaid(slug)
+  blurb = f"\n\n{blurb}\n<!---->" if blurb else ""
   mdfile.write_text(f"""---
 title: "{title}"
 translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','').replace('mills','mills-laurence')}
@@ -338,12 +356,11 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
-# imagery tag covered by Hecker's Similes
 year: {year}
 pages: {pages}
 {parallels}---
 
-> 
+> {blurb}
 """)
   system_open(mdfile)
   pdf_file.unlink()

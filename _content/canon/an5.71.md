@@ -16,3 +16,6 @@ pages: 2
 ---
 
 > These five things, when developed and cultivated, have freedom of heart and freedom by wisdom as their fruit and benefit.
+
+Five meditations that lead to freedom and the Buddha supplies five similes which subtly illustrate five aspects of awakening.
+

@@ -24,3 +24,6 @@ parallels:
 ---
 
 > Whenever there are arguments and quarrels, tears and anguish, arrogance and pride, and grudges and insults to go with them, can you explain how these things come about?
+
+The Buddha is questioned on the source of quarrels and disputes, and on the highest level of spiritual attainment.
+

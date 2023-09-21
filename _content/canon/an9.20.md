@@ -25,3 +25,6 @@ parallels:
 > Once upon a time, householder, there was a brahmin named Velāma...
 
 > [...but] it would be more fruitful to develop the perception of impermanence—even for as long as a finger-snap—than to do all of these things
+
+The wealthy and devoted lay supporter Anāthapiṇḍika rather curiously says that only poor alms are given in his home. The Buddha praises gracious and bounteous generosity, but meditation surpasses even the greatest offering.
+

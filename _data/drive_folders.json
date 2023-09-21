@@ -27,6 +27,10 @@
   "private": "https://drive.google.com/drive/folders/1W2QuInFh3jdeTONTqd1ykf_2zP3fNz4q",
   "public": "https://drive.google.com/drive/folders/11H_41aaoGlazBPm3Yp_YD48UcdnwfxGF"
  },
+ "an": {
+  "private": "https://drive.google.com/drive/folders/1Je29wEUYl2b1PDNo651wgZmvcGFk69jQ",
+  "public": "https://drive.google.com/drive/folders/10v7g1EnONNm0NZVF_HU3w0sCqPZfIuQY"
+ },
  "anapanasati": {
   "private": "https://drive.google.com/drive/folders/12faBB13gvGhpNrnxt3kMSi25sAUY1L9h",
   "public": "https://drive.google.com/drive/folders/1-wOJ9NFbpNuIHA3I6au0yrkAV3u9NyFP"
@@ -35,6 +39,10 @@
   "private": "https://drive.google.com/drive/folders/1-b0EkuiMjwrv6YsJjkn4zh_e76zcWHwj",
   "public": "https://drive.google.com/drive/folders/13WU-Ikvbam93LFX5o1IPaRhHrcZeLuKM"
  },
+ "apadana": {
+  "private": "https://drive.google.com/drive/folders/1al_pgWvSbWWUWgpf_ULJUI0yL6xR89Zr",
+  "public": "https://drive.google.com/drive/folders/12JDRn48Vn0hRMSXnL2d_4s_EBxpQtZQa"
+ },
  "art": {
   "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
   "public": "https://drive.google.com/drive/folders/1yr6n4SgItSZ7isFrsAyo9_NvTB1M9BZR"
@@ -42,6 +50,10 @@
  "asia": {
   "private": "https://drive.google.com/drive/folders/198TBBIt-uTixQgxzh0BPB-U8hWWjqM0z",
   "public": "https://drive.google.com/drive/folders/1LIR6PYyjfI2RXrAWkZ-IwckrsOx1DHLf"
+ },
+ "bangladeshi": {
+  "private": "https://drive.google.com/drive/folders/1BGi8zjblJKUJB3vkq5BtHPSKU8GyxBb6",
+  "public": null
  },
  "bart": {
   "private": "https://drive.google.com/drive/folders/1n1CgTwagj5GPkFKiluRPPcsa71p3rVkc",
@@ -78,6 +90,14 @@
  "burmese": {
   "private": "https://drive.google.com/drive/folders/1FfFWmY3_ipIKn8h_svWMEwE_RLrZY_rq",
   "public": "https://drive.google.com/drive/folders/11XmV4DuEbY7Ah5R88_JjqzSvOz5tSIQm"
+ },
+ "cambodia": {
+  "private": "https://drive.google.com/drive/folders/11t3jwijnRkwfsEtzf6WkSBSY40ohmmJj",
+  "public": null
+ },
+ "canadian": {
+  "private": "https://drive.google.com/drive/folders/1-p8SWDaEda3vby9yfffrjvxB7coi7LFK",
+  "public": "https://drive.google.com/drive/folders/11SZeeJrkgTKqGn5fGt-BzfdNCUOePRWw"
  },
  "canonical-poetry": {
   "private": "https://drive.google.com/drive/folders/1bBcbP3ipByy4hheq5bRmywfmZwsqeGd-",
@@ -243,6 +263,10 @@
   "private": "https://drive.google.com/drive/folders/19cxC1hod9rORJqNZiQX1AaESB3PjB8pm",
   "public": "https://drive.google.com/drive/folders/14AUczeHZIaChGJ8SfWpC8k46PEMSi6H0"
  },
+ "japanese-roots": {
+  "private": "https://drive.google.com/drive/folders/12pZtqPVLErtZGlaVHacHRLgRs-qhSzpZ",
+  "public": null
+ },
  "journalism": {
   "private": "https://drive.google.com/drive/folders/1_3OvMqqb9QDDyLFl4Yzr8YZaiuNw58QS",
   "public": null
@@ -258,6 +282,10 @@
  "korean": {
   "private": "https://drive.google.com/drive/folders/1S0vWnz-wnuIAjTTJT-8WWtetaie4IbkT",
   "public": "https://drive.google.com/drive/folders/1uSWqV7npNl1F5UQwaKQoXeVxqkCkF5Aa"
+ },
+ "korean-roots": {
+  "private": "https://drive.google.com/drive/folders/14YtXsZyL5R7VgF5QV8WSkjed__YwS9BK",
+  "public": null
  },
  "labor": {
   "private": "https://drive.google.com/drive/folders/1O6-X1wUK4Ja3tV_T1QukEI4z1DN_8TkA",
@@ -290,6 +318,10 @@
  "migration": {
   "private": "https://drive.google.com/drive/folders/1QGkiY9tuodOqJc2HVqmq2KgZYiUF3i4h",
   "public": "https://drive.google.com/drive/folders/1gxyBc_StG08RjpqcYMeVkmpctbkt2Na_"
+ },
+ "mn": {
+  "private": "https://drive.google.com/drive/folders/1JR9qSFrL0i1sJoQiHkLLq3Y93c_wmoDh",
+  "public": "https://drive.google.com/drive/folders/10tYyKkRoQRwFO3KGjc6IoaP_hnMs0y1A"
  },
  "monastic": {
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",
@@ -355,6 +387,10 @@
   "private": "https://drive.google.com/drive/folders/14ETJMqi_pGo-x2e1SXKQa0TodhVVhgVL",
   "public": "https://drive.google.com/drive/folders/1-iA7cY342aZRzVaHV3D063siGaVcS1US"
  },
+ "philosophy-of-science": {
+  "private": "https://drive.google.com/drive/folders/19JCMumQxLCMd6Dd7x7zhCcOXjedh0oZT",
+  "public": null
+ },
  "pilgrimage": {
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
   "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G"
@@ -382,6 +418,10 @@
  "rebirth-stories": {
   "private": "https://drive.google.com/drive/folders/1bAAX4M-Te-RatagvA3j13bc6JPoKUT4d",
   "public": "https://drive.google.com/drive/folders/12gbHZP-ewbj0d9kGop11Wb6z_4EDBW3w"
+ },
+ "religion": {
+  "private": "https://drive.google.com/drive/folders/14GErtS42mymKir-oBAHnTydy1h_-C2Ay",
+  "public": null
  },
  "roots": {
   "private": "https://drive.google.com/drive/folders/1vU74WexzIHUZGYzNRs6yB9ipZYzfi_DE",
@@ -435,9 +475,17 @@
   "private": "https://drive.google.com/drive/folders/159o1bq04DRMMbF4vLuIjz2r47xrSpsqK",
   "public": "https://drive.google.com/drive/folders/1L7kkMipRUwgQIlb3Jorwao5pPz__qZPs"
  },
+ "sutta": {
+  "private": "https://drive.google.com/drive/folders/1JFyR5WuEeBdjb4kFWxzBpj3p9gIIeK9E",
+  "public": "https://drive.google.com/drive/folders/1-UwTSJqPOQ2PIk3DKX5cw3m4I211m7Du"
+ },
  "tantric": {
   "private": "https://drive.google.com/drive/folders/1J34zI1iDc0iddITPLHaPP5PTFcz-j4Na",
   "public": "https://drive.google.com/drive/folders/12e7oPcEcTeJgLeULHJcW6oLA2i4zlblm"
+ },
+ "tantric-roots": {
+  "private": "https://drive.google.com/drive/folders/12blFyH7lI4bN5BDrKTaAzJnEooqnAaP1",
+  "public": "https://drive.google.com/drive/folders/10zbVgIHl-iGWzVLlADUCMc08BKFxkGAT"
  },
  "thai": {
   "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",
@@ -467,6 +515,14 @@
   "private": "https://drive.google.com/drive/folders/14XmICi7JCdedd3ewhQILQXhL-YcFi_Di",
   "public": "https://drive.google.com/drive/folders/10m3PLa7dpPX0czTWEQPTJX9d5mNCfUcv"
  },
+ "tibet": {
+  "private": "https://drive.google.com/drive/folders/1MbxFtKah4cdxRS1UIMQe7zC7QAEiGLMe",
+  "public": null
+ },
+ "tibetan": {
+  "private": "https://drive.google.com/drive/folders/10XTsw3Ap2chIX3KYtfIzQlf3UoP1sS_b",
+  "public": "https://drive.google.com/drive/folders/148Qi_c5POGoGYWKuM0-FgEpxy7T6pdaG"
+ },
  "tibetan-roots": {
   "private": "https://drive.google.com/drive/folders/1EeBj6okpScEbvRDXXr_9QMl5F1-fcD0K",
   "public": "https://drive.google.com/drive/folders/12oz72_upzGOlFcNKrVuy4iYVhXsjsWPo"
@@ -474,6 +530,10 @@
  "time": {
   "private": "https://drive.google.com/drive/folders/1FXkb4MdkM2E9CK1hvP7Fxm37f1MTUeWx",
   "public": "https://drive.google.com/drive/folders/1KWPlshYAzaItcKxvtUTeTbqfzIeH3s9Z"
+ },
+ "underage": {
+  "private": "https://drive.google.com/drive/folders/1T-bLnnsQSJzZ5_8ROl6MRhPZWyujRvEp",
+  "public": "https://drive.google.com/drive/folders/11E9yWp2AoJKyY3UX-Y1woJHcr90f-nEm"
  },
  "vietnam": {
   "private": "https://drive.google.com/drive/folders/1266coIbaWKHGzch_1MIkCF9XSSbEsSn_",

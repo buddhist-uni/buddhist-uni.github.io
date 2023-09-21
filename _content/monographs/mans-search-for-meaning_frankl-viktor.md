@@ -3,6 +3,7 @@ title: "Man's Search For Meaning"
 authors:
   - "Viktor Frankl"
 year: 1946
+external_url: "https://archive.org/details/manssearchformea0000vikt_x0q6/mode/1up"
 publisher: Beacon Press
 olid: OL7899399M
 tags:

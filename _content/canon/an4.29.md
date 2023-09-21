@@ -17,3 +17,6 @@ parallels:
 ---
 
 > Bhikkhus, there are these four Dhamma factors, primal, of long standing, traditional, ancient...
+
+Contentment, good will, mindfulness and convergence are basic principles of the Dhamma.
+

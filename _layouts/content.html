@@ -30,7 +30,7 @@ layout: default
     <h1 class="post-title">{% if page.subcat %}{% include content_icon.html category=page.category subcat=page.subcat %} {% endif %}{{ title | first }}
     {%- if title.size > 1 -%}<span style="color:transparent">: </span><div class="post-subtitle">{{ title | shift | join: ": " }}</div>{%- endif -%}</h1>
     {% if page.authors.size > 0 %}<h2 class="author">
-        By {% include content_authors_string.html content=page hide_reader=true link=true %}
+        By {% include_cached content_authors_string.html content=page hide_reader=true link=true %}
     </h2>{% endif %}
     {% if page.reader %}
     {% if page.reader contains " " %}{% assign reader = nil %}{% else %}{% assign reader = site.authors | find: "slug", page.reader %}{% endif %}
@@ -70,7 +70,6 @@ layout: default
     {% if page.series %}{% assign series = site.series | find: "slug", page.series %}{% else %}{% assign series = nil %}{% endif %}
     {% if page.journal %}{% assign journal = site.journals | find: "slug", page.journal %}{% endif %}
     {% if page.publisher or series %}{% assign publisher = page.publisher | default: series.publisher %}{% assign publisher = site.publishers | find: "slug", publisher | default: publisher %}{% else %}{% assign publisher = nil %}{% endif %}
-    {% if page.editor == nil or page.editor contains " " %}{% assign editor = nil %}{% else %}{% assign editor = site.authors | find: "slug", page.editor %}{% endif %}
    
    {% if tags.size > 0 %}<p class="star_desc">
      About: {{ tags }}
@@ -90,26 +89,19 @@ layout: default
         </p>{% endif %}
     {% endif %}
     <p class="pub_desc"><i>
-        {%- if page.translator -%}Translated by {% if page.translator contains " " %}{% assign translator = nil %}{% else %}{% assign translator = site.authors | find: "slug", page.translator %}{% endif %}{% if translator %}<a href="{{ translator.url }}#translations">{{ translator.title }}</a>{% else %}{{ page.translator }}{% endif %}.{% endif %}
-        {% if page.year or publisher or booktitle or page.journal or page.series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if booktitle %} in “{{ booktitle }}”{% endif %}{% if page.editor %} ({% if editor %}<a href="{{ editor.url }}">{{ editor.title }}</a>{% else %}{{ page.editor | split: " and " | array_to_sentence_string }}{% endif %} ed.){% endif %}{% if publisher %} by {% if publisher.title %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ publisher }}{% endif %}{% if page.address or publisher.address or series.address %}, {{ page.address | default: series.address | default: publisher.address }}{% endif %}{% endif %}{% if page.series %} {% if page.number %}as{% else %}in{% endif %} {% if series %}<a href="{{ series.url }}">{{ series.title }}</a>{% else %}"{{ page.series }}"{% endif %}{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
+        {%- if page.translator -%}Translated by {% assign translators = page.translator | split: " and " %}{% include_cached content_authors_string.html authors=translators link=true %}.{% endif %}
+        {% if page.year or publisher or booktitle or page.journal or page.series %}Published{% if page.year %} in {{ page.year }}{% endif %}{% if page.journal %} in {% if journal %}<a href="{{ journal.url }}">{{ journal.title }}</a>{% else %}{{ page.journal }}{% endif %}{% endif %}{% if booktitle %} in “{{ booktitle }}”{% endif %}{% if page.editor %} ({% assign editors = page.editor | split: " and " %}{% include_cached content_authors_string.html authors=editors link=true %} ed.){% endif %}{% if publisher %} by {% if publisher.title %}<a href="{{ publisher.url }}">{{ publisher.title }}</a>{% else %}{{ publisher }}{% endif %}{% if page.address or publisher.address or series.address %}, {{ page.address | default: series.address | default: publisher.address }}{% endif %}{% endif %}{% if page.series %} {% if page.number %}as{% else %}in{% endif %} {% if series %}<a href="{{ series.url }}">{{ series.title }}</a>{% else %}"{{ page.series }}"{% endif %}{% if page.number %} number {{ page.number }}{% endif %}{% endif %}.{% endif %}
 
     </i></p>
  
   {% if site.show_bibtex %}
     <details class="details-reset bibtex" ontoggle="deetstoggler();">
       <summary class="btn">Bibtex Data <span class="dropdown-caret"></span></summary>
-      <script>function deetstoggler(e) {
-        var k = "{{ page.content_path }}.bibtex.toggled";
-        if (!localStorage.getItem(k)) {
-          ga('send','event','Bibtex','firstopen','{{ page.content_path }}');
-          localStorage.setItem(k, 1);
-        }
-      }</script>
       <div>
 {% capture bibtex %}{% include content.bibtex content=page %}{% endcapture %}
 {% capture md %}```tex
 {{ bibtex }}```{% endcapture %}{{ md | markdownify }}
-      <button ga-on="click" ga-event-category="Bibtex" ga-event-action="copy" ga-event-label="{{ page.content_path }}" class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
+      <button class="btn copybutton" data-clipboard-text="{{ bibtex | replace: '"', "'" }}"><i class="fas fa-copy"></i> Copy to clipboard</button>
       <script src="{{ "/assets/js/clipboard.js" | relative_url }}"></script>
       <script>
 var cb = new ClipboardJS('.copybutton');

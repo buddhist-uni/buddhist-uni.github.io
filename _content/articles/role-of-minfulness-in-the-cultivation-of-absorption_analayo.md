@@ -17,4 +17,5 @@ volume: 10
 pages: "2341--2351" 
 ---
 
-This article takes an in-depth look at the role mindfulness plays in the development of the four jhanas.
+> Throughout, mindfulness has the task of establishing and maintaining the kind of mental presence that enables a precise appraisal of the current condition of the body and the mind.
+

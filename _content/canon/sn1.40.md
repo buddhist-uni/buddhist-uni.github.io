@@ -18,3 +18,6 @@ parallels:
 
 > One should not pursue a course  
 That is painful and harmful.
+
+Kokanada gives a pithy teaching in verse.
+

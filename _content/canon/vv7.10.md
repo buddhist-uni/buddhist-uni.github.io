@@ -15,3 +15,5 @@ pages: 5
 
 > In this desert, there are no fruits, roots or any food or drink. There is no way to make a fire. There is only dust and scorching sand.
 
+A deva named Serissaka explains how he came to enjoy a comfortable life and what we can do to achieve the same.
+

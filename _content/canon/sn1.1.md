@@ -24,3 +24,6 @@ parallels:
 ---
 
 > By not halting, friend, and by not straining I crossed the flood.
+
+How the Buddha crossed the flood of suffering.
+

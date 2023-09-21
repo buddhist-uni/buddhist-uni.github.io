@@ -15,3 +15,6 @@ pages: 2
 ---
 
 > … whatever is seen, heard, sensed, cognized, reached, sought after, examined by the mind—that I know.
+
+The Buddha knows what can be known and thus remains poised in the midst of the world.
+

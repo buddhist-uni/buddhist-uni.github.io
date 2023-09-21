@@ -24,6 +24,7 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Kodo_Sawaki_Zazen.j
     1. [AN 4.32](https://suttacentral.net/an4.32/en/bodhi){:target="_blank" ga-event-value="0.2"}: “These are the four means of sustaining a favorable relationship.”
     1. [AN 6.51](https://suttacentral.net/an6.51/en/sujato){:target="_blank" ga-event-value="0.2"}: “How does a mendicant get to hear a teaching they haven’t heard before?”
     1. [AN 5.151](https://suttacentral.net/an5.151/en/sujato){:target="_blank" ga-event-value="0.2"}: “Someone with these five qualities is able to enter the sure path”
+    1. [SN 45.49](https://suttacentral.net/sn45.49/en/bodhi){:target="_blank" ga-event-value="0.2"}: “And how does a bhikkhu who has a good friend develop and cultivate the Noble Eightfold Path?”
 
 ## Lecture
 

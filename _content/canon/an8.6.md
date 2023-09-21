@@ -19,3 +19,6 @@ parallels:
 ---
 
 > An instructed noble disciple also meets gain and loss, disrepute and fame, blame and praise, and pleasure and pain.
+
+The eight worldly conditions in detail.
+

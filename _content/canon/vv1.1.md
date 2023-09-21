@@ -15,3 +15,5 @@ pages: 1
 
 > Raising my hands and putting my palms and fingers together, I saluted
 
+Arahant Moggallana asks a deva about his previous good karma.
+

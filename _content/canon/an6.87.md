@@ -14,3 +14,6 @@ pages: 1
 ---
 
 > Someone with six qualities is able to enter the sure path
+
+Things that enable or obstruct true understanding while listening to the teachings.
+

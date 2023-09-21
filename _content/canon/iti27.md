@@ -21,3 +21,6 @@ parallels: []
 ---
 
 > … of all the grounds for making worldly merit, none are worth a sixteenth part of the heart’s release by love.
+
+Goodwill far outshines all other ways of making merit.
+

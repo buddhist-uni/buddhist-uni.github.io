@@ -20,3 +20,6 @@ parallels:
 ---
 
 > What six? Firstly, a noble disciple recollects...
+
+A way to escape from greed.
+

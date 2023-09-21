@@ -5,7 +5,6 @@ authors:
 year: 2006
 publisher: "Vintage"
 olid: OL3422699M
-external_url: "https://archive.org/details/stumblingonhappi0000gilb/page/n6/mode/1up"
 course: inner
 tags:
   - neuroscience

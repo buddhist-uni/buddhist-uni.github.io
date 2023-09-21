@@ -27,3 +27,6 @@ parallels: []
 ---
 
 > Oh, what bliss! Oh, what bliss!
+
+A former king, now a monk, exclaims to himself.
+

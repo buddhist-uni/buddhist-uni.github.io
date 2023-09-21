@@ -13,3 +13,6 @@ pages: 4
 ---
 
 > Just as a palm fruit that has just been removed from its stalk is pure and bright, so Master Gotama’s faculties are tranquil and the color of his skin is pure and bright.
+
+What high and luxurious bed does the Buddha use?
+

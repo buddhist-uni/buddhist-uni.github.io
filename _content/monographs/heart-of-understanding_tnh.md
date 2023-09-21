@@ -2,6 +2,7 @@
 title: "The Heart of Understanding: Commentaries on the Prajnaparamita Heart Sutra"
 authors: [tnh]
 year: 1987
+external_url: "https://archive.org/details/heartofunderstan00nhrich/mode/1up"
 publisher: parallax
 olid: OL8416201M
 status: featured

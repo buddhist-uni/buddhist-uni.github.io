@@ -17,7 +17,7 @@ tags:
   - dana
   - function
 year: 1990
-base_value: 1.8
+olid: OL49629322M
 series: wheel
 number: 367
 publisher: bps

@@ -18,3 +18,6 @@ parallels:
 ---
 
 > … at the time of his final extinguishment. There the Buddha addressed the mendicants...
+
+As he lay dying, the Buddha encouraged his disciples to ask any last questions.
+

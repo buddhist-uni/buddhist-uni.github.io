@@ -17,3 +17,6 @@ parallels:
 ---
 
 > Mendicants, these six things are unsurpassable. What six? The unsurpassable seeing, listening, acquisition, training, service, and recollection.
+
+But none of them compare with the Dhamma.
+

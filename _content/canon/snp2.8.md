@@ -16,3 +16,6 @@ pages: 2
 evolved, learned, and unflappable—  
 can help others to contemplate,  
 so long as they are prepared to listen carefully.
+
+A good teacher, like a good boatman, is one who knows firsthand how to cross to the further shore.
+

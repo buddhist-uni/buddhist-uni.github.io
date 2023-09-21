@@ -20,3 +20,6 @@ parallels: []
 ---
 
 > Blissful is concord in the Saṅgha.
+
+Concord in the Sangha leads to the welfare and happiness of many beings, both human and divine.
+

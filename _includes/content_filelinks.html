@@ -6,13 +6,13 @@
     {% if include.content.file_links.size > 0 %}
         {%- for link in include.content.file_links -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} ga-event-label="{{ link }}" href={{ site.data.content.filehost | append: link }}><i class="fa{% case linkfmt %}{% when "pdf" %}r fa-file-pdf{% when "jpeg" %}r fa-file-image{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ linkfmt }}</a>
+            <a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href={{ site.data.content.filehost | append: link }}><i class="fa{% case linkfmt %}{% when "pdf" %}r fa-file-pdf{% when "jpeg" %}r fa-file-image{% when "mp3" %}r fa-file-audio{% when "m4a" %}r fa-file-audio{% when "epub" %}s fa-tablet-alt{% when "png" %}r fa-file-image{% when "mp3s" %}r fa-file-open{% when "zip" %}r fa-file-archive{% when "pdfs" %}r fa-file-open{% when "wma" %}r fa-file-audio{% else %}r fa-file{% endcase %}"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} ga-event-label="drive.google.com/{{ include.content.content_path }}.{{ linkfmt }}" href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
+            <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}
@@ -28,13 +28,13 @@
     {%- endunless -%}
     {%- if include.content.excerpt_url -%}
         {%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}
-        <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" {% include content_link_data_attributes.html content=include.content linktype="Preview" linkfmt="html" %} ga-event-label="{{ include.content.excerpt_url }}"><i class="fas fa-book-reader"></i> Preview</a>
+        <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" {% include content_link_data_attributes.html content=include.content linktype="Preview" linkfmt="html" %}><i class="fas fa-book-reader"></i> Preview</a>
     {%- endif -%}
     {%- if showworldcat -%}
         {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}
         {%- capture authors -%}{% include content_authors_string.html content=include.content %}{%- endcapture -%}
         {% assign authors = authors | strip_html | strip | cgi_escape %}
-            <a class="btn" {% include content_link_data_attributes.html content=include.content linktype="WorldCat" linkfmt="WorldCat" %} ga-event-label="worldcat.org/{{ include.content.content_path }}" href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
+            <a class="btn" {% include content_link_data_attributes.html content=include.content linktype="WorldCat" linkfmt="WorldCat" %} href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
             <i class="far fa-question-circle"></i>
         </summary><div>
             <i class="far fa-copyright"></i> This fine, Copyrighted work cannot be shared {% if include.content.excerpt_url %}in its entirety{% else %}directly{% endif %}, however WorldCat&trade; can help you find a copy at a nearby library{% if include.content.category == 'monographs' %} or wherever you get books{% endif %}.

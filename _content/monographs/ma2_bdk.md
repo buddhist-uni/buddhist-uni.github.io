@@ -6,8 +6,7 @@ authors:
 year: 2020
 publisher: bdk
 course: ma
-tags:
-  - meditation
+# could tag with meditation maybe?
 status: featured
 drive_links: ["https://drive.google.com/file/d/1Zq4A82jM9dA4emU2aHxsjOFyDg_L0CIa/view?usp=drivesdk"]
 external_url: "https://bdkamerica.org/product/the-madhyama-%E2%80%82gama-middle-length-discourses-volume-ii/"

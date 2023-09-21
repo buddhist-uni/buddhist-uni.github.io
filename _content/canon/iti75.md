@@ -14,3 +14,6 @@ pages: 2
 ---
 
 > What kind of person, bhikkhus, is like a rainless cloud?
+
+Three types of people: one like a cloud without rain, one who rains locally, and one who rains everywhere.
+

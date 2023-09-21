@@ -13,3 +13,6 @@ pages: 3
 ---
 
 > Here, a bhikkhu lives in dependence on the Teacher or on a certain fellow monk in the position of a teacher, toward whom he has set up a keen sense of moral shame and moral dread, affection and reverence...
+
+Eight conditions that lead to the arising of wisdom, its growth and perfection.
+

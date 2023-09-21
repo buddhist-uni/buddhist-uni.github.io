@@ -2,7 +2,7 @@
 title: "The Lotus and the Lion: Buddhism and the British Empire"
 authors:
   - "J. Jeffrey Franklin"
-external_url: "https://archive.org/details/lotuslionbuddhis00fran_0/page/n6/mode/1up"
+external_url: "https://archive.org/details/lotuslionbuddhis0000fran/mode/1up"
 course: west
 tags:
   - british

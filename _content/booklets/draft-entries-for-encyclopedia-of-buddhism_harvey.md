@@ -9,7 +9,7 @@ course: buddha
 tags:
   - ebts
   - setting
-base_value: 3.2
+olid: OL10203297M
 pages: 131
 ---
 

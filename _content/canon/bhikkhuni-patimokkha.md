@@ -13,7 +13,7 @@ tags:
 year: 2019
 month: aug
 translator: geoff
-editor: "Sujato and David Martin Briggs and Melanie Fritz and Che Chong Peng and Tathālokā and Nimmalā"
+editor: "sujato and David Martin Briggs and Melanie Fritz and Che Chong Peng and tathaloka and Nimmalā"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2019/09/Bhikkhuni-Patimokkha-Fourth-Edition_Pali-and-English-International-Edition-by-FoEBT-4-August-2019.pdf"
 formats: [pdf]
 drive_links:

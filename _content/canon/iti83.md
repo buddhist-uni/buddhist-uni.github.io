@@ -18,3 +18,6 @@ parallels: []
 ---
 
 > When a deva is due to pass away from a company of devas, five prognostic signs appear...
+
+How does a god die?
+

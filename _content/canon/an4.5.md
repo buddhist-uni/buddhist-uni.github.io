@@ -21,3 +21,6 @@ parallels:
 
 > give up sense pleasures even if it’s painful:  
 they call this person “one who goes against the stream.”
+
+This sutta defines a person who goes _with_ the stream; a person who goes _against_ the stream; a stable person; and one who has crossed over.
+

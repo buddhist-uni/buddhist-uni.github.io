@@ -18,3 +18,6 @@ parallels:
 ---
 
 > … why bother a renunciate?
+
+When a mendicant falls asleep in the middle of the day, a deity tries to rouse them. But not all is at it seems.
+

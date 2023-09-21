@@ -2,7 +2,6 @@
 title: "The World Until Yesterday: What Can We Learn from Traditional Societies?"
 authors:
   - diamond-jared
-external_url: "https://archive.org/details/worlduntilyester0000diam/page/n4/mode/1up"
 status: featured
 course: social
 tags:

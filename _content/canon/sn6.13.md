@@ -23,3 +23,6 @@ parallels:
 where the lightning flashes and the sky thunders  
 in the dark of the night;  
 there meditates a mendicant
+
+Brahmā Sahampati appears to the Buddha and speaks in praise of the renunciates staying fearless in the deep forest, and celebrates the many who have found freedom.
+

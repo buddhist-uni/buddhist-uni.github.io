@@ -22,3 +22,6 @@ parallels:
 ---
 
 > Remember me, brahmin, as a Buddha.
+
+The brahmin Doṇa is filled with wonder when he sees the Buddha’s footprints.
+

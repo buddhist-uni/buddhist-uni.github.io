@@ -15,3 +15,6 @@ pages: 2
 ---
 
 > … having fulfilled our duty, free of remorse and regret, we were reborn in a superior realm
+
+Some deities come to the Buddha and speak of their practice in their past life.
+

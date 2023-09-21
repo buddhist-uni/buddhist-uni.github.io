@@ -16,3 +16,6 @@ pages: 3
 ---
 
 > But when gold is freed from these five defilements, it is malleable, wieldy, and luminous, pliant and properly fit for work.
+
+The hindrances are like corruptions in gold.
+

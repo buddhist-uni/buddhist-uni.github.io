@@ -22,3 +22,6 @@ parallels:
 ---
 
 > … these four things are unthinkable. They should not be thought about
+
+If you try to think about these things you will go mad or get frustrated.
+

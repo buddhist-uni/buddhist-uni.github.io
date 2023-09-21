@@ -14,3 +14,6 @@ pages: 1
 ---
 
 > Mendicants, I’m not even comfortable thinking about a place where mendicants argue…
+
+When mendicants fight, the Buddha doesn’t like it.
+
