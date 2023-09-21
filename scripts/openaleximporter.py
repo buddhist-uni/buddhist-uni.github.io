@@ -287,8 +287,6 @@ def _main():
   elif len(gfiles) == 1:
     gfile = gfiles[0]
     print(f"Got \"{gfile['name']}\"")
-    if not prompt("Is this correct?"):
-      gfile = None
   else:
     print(f"Got {len(gfiles)} candidates.\nPlease select one:")
     i = radio_dial([f['name'] for f in gfiles]+["Other (I'll supply a URL manually)"])

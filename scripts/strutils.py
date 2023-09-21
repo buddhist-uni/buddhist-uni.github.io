@@ -73,12 +73,43 @@ def naturally_sorted(alist):
 def cout(*args):
   print(*args, flush=True, end="")
 
+def get_cursor_position():
+    """Returns (row, col)""" # á la termios.tcgetwinsize
+    # code courtesy of https://stackoverflow.com/a/69582478/1229747
+    stdinMode = termios.tcgetattr(sys.stdin)
+    _ = termios.tcgetattr(sys.stdin)
+    _[3] = _[3] & ~(termios.ECHO | termios.ICANON)
+    termios.tcsetattr(sys.stdin, termios.TCSAFLUSH, _)
+    try:
+        sys.stdout.write("\x1b[6n")
+        sys.stdout.flush()
+        _ = ""
+        while not (_ := _ + sys.stdin.read(1)).endswith('R'):
+            pass
+        res = re.match(r".*\[(?P<y>\d*);(?P<x>\d*)R", _)
+    finally:
+        termios.tcsetattr(sys.stdin, termios.TCSAFLUSH, stdinMode)
+    if(res):
+        return (atoi(res.group("y")), atoi(res.group("x")))
+    return (-1, -1)
+
 def stdout_make_room(lines: int):
+  """Saves the current cursor position and ensures n lines are free below it
+  
+  returns the number of lines the terminal actually shifted up by"""
   cout(ANSI_SAVE_POSITION)
+  if lines <= 0:
+    return 0
+  br, bc = get_cursor_position()
+  nr, nc = termios.tcgetwinsize(sys.stdout)
+  diff = lines + br - nr
   cout(''.join(["\n"]*lines))
   cout(ANSI_RESTORE_POSITION)
-  cout(ANSI_MOVE_UP(lines))
-  cout(ANSI_SAVE_POSITION)
+  if diff > 0:
+    cout(ANSI_MOVE_UP(diff))
+    cout(ANSI_SAVE_POSITION)
+    return diff
+  return 0
 
 def radio_dial(options):
   SEARCH_ROOM = 3

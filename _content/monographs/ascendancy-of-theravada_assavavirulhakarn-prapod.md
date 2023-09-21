@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/details/ascendancyofther0000prap"
 course: theravada-roots
 year: 2010
-month: sept
+month: sep
 olid: OL25100696M
 oclc: 613433204
 publisher: "Silkworm Books"
