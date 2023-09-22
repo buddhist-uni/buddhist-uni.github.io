@@ -95,7 +95,7 @@ def get_cursor_position():
 
 def stdout_make_room(lines: int):
   """Saves the current cursor position and ensures n lines are free below it
-  
+
   returns the number of lines the terminal actually shifted up by"""
   cout(ANSI_SAVE_POSITION)
   if lines <= 0:
@@ -116,6 +116,8 @@ def radio_dial(options):
   i = 0
   length = len(options)
   stdout_make_room(SEARCH_ROOM)
+  space = os.get_terminal_size().columns - 10
+  options = [trunc(t, space) for t in options]
   stdin = sys.stdin.fileno()
   old_settings = termios.tcgetattr(stdin)
   tty.setraw(stdin)

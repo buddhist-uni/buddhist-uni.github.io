@@ -28,3 +28,6 @@ parallels:
 ---
 
 > When your harp’s strings were tuned too tight, was it resonant and playable?
+
+When Venerable Soṇa thinks of disrobing, the Buddha comes and encourages him with the famous simile of the lute that is tuned neither too loose nor too tight.
+

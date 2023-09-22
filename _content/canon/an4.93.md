@@ -16,3 +16,6 @@ pages: 2
 ---
 
 > As for the person who has neither serenity nor discernment: in order to get those skillful qualities, they should apply intense enthusiasm...
+
+How each kind of person should practice.
+

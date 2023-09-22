@@ -22,3 +22,6 @@ parallels:
 ---
 
 > When a mendicant is committed to development, they might not wish: ‘If only my mind was freed from the defilements by not grasping!’ Even so, their mind *is* freed...
+
+Liberation doesn’t happen because you wish for it, but because you develop the factors of the path.
+

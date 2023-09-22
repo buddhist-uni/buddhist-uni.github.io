@@ -17,3 +17,6 @@ parallels:
 ---
 
 > Should one rein in the mind from everything...
+
+Or only from what is unwholesome?
+

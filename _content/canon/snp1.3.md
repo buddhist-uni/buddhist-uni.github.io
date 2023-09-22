@@ -42,3 +42,6 @@ parallels:
 
 > … seeing this danger in association,  
 fare singly as the rhino’s horn.
+
+If you can’t find a good teacher, it’s better to wander alone than to consort with fools.
+

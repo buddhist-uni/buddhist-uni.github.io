@@ -20,3 +20,6 @@ pages: 2
 > Linked together by bones and sinews,  
 plastered over with flesh and hide,  
 and covered by the skin …
+
+Gain victory over the defilements with this one weird trick (contemplation of the unattractiveness of the body).
+

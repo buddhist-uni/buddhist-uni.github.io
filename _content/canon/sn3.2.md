@@ -28,3 +28,6 @@ parallels:
 ---
 
 > … as a reed is destroyed by its own fruit.
+
+Pasenadi asks of the things that cause suffering when they arise from within.
+

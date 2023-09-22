@@ -24,3 +24,6 @@ parallels:
 ---
 
 > … four things are born of love and hate
+
+And how to not be burned by them.
+

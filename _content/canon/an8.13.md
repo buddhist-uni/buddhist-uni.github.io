@@ -21,3 +21,6 @@ parallels:
 ---
 
 > Whether or not other bhikkhus train, I will train.
+
+With eight qualities a royal thoroughbred is worthy of a king.
+

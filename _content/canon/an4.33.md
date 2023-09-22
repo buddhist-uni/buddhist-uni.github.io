@@ -18,3 +18,5 @@ parallels:
 > It seems that we are actually impermanent, though we thought ourselves permanent;
 it seems that we are actually transient, though we thought ourselves everlasting
 
+A lion’s roar terrifies beasts. The Buddha’s teaching terrifies the gods.
+

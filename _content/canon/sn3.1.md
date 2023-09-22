@@ -21,3 +21,6 @@ parallels:
 ---
 
 > A prince or princess in the royal family, a snake, a fire, and a monk. These four things should not be looked down on or belittled because they are young.
+
+King Pasenadi meets the Buddha for the first time. He wonders how the Buddha can claim to be awakened when he is still so young. The Buddha teaches him four things that should not be looked down on for their youth.
+

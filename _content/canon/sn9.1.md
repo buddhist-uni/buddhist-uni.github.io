@@ -19,3 +19,6 @@ parallels:
 
 > You, a person:  
 subdue your desire for people.
+
+A monk in the forest lets his mind drift to thoughts of the lay life, and is exhorted by a local deity.
+
