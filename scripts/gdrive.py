@@ -10,13 +10,14 @@ import json
 import re
 from functools import cache
 try:
+  from yaspin import yaspin
   from google.auth.transport.requests import Request
   from google.oauth2.credentials import Credentials
   from google_auth_oauthlib.flow import InstalledAppFlow
   from googleapiclient.discovery import build
   from googleapiclient.http import MediaFileUpload
 except:
-  print("pip install google google-api-python-client google_auth_oauthlib")
+  print("pip install yaspin google google-api-python-client google_auth_oauthlib")
   quit(1)
 
 # If modifying these scopes, have to redo the client secrets json.
@@ -42,16 +43,44 @@ def get_known_courses():
   return list(filter(None, gfolders.keys()))
 
 def get_gfolders_for_course(course):
+  """Returns a (public, private) tuple of GIDs"""
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
+  parts = course.split('/')
+  course = parts[0]
   if course not in gfolders:
     print("Hmmm... I don't know that Google Drive folder! Let's add it:")
-    folderurl = input("Public link: ") or None
-    shortcuturl = input("Private link: ") or None
-    gfolders[course] = {"public":folderurl,"private":shortcuturl}
+    publicurl = input("Public link: ") or None
+    privateurl = input("Private link: ") or None
+    gfolders[course] = {"public":publicurl,"private":privateurl}
     FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
-  shortcut_folder = folderlink_to_id(gfolders[course]['private'])
-  folder_id = folderlink_to_id(gfolders[course]['public'])
-  return (folder_id, shortcut_folder)
+  
+  private_folder = folderlink_to_id(gfolders[course]['private'])
+  public_folder = folderlink_to_id(gfolders[course]['public'])
+  if len(parts) > 1:
+    if not parts[1]: # use "course/" syntax to move to the private version of the course
+      return (None, private_folder)
+    with yaspin(text="Loading subfolders..."):
+      subfolders = get_subfolders(private_folder)
+    print(f"Got subfolders: {[f.get('name') for f in subfolders]}")
+    q = parts[1].lower()
+    for subfolder in subfolders:
+      if subfolder['name'].lower().startswith(q):
+        print(f"Going with \"{subfolder['name']}\"")
+        return (None, subfolder['id'])
+    for subfolder in subfolders:
+      if q in subfolder['name'].lower():
+        print(f"Going with \"{subfolder['name']}\"")
+        return (None, subfolder['id'])
+    print(f"No subfolder found matching \"{q}\"")
+    q = input_with_prefill("Create new subfolder: ", parts[1])
+    if not q:
+      raise RuntimeError("Expected a filename")
+    subfolder = create_folder(q, private_folder)
+    if not subfolder:
+      raise RuntimeError("Error creating subfolder. Got null API response.")
+    system_open(FOLDER_LINK.format(private_folder))
+    return (None, subfolder)
+  return (public_folder, private_folder)
 
 @cache
 def session():
@@ -70,6 +99,15 @@ def session():
         with open(CREDFILE, 'w') as token:
             token.write(creds.to_json())
     return build('drive', 'v3', credentials=creds)
+
+def get_subfolders(folderid):
+  folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder'"
+  childrenFoldersDict = session().files().list(
+    q=folderquery,
+    spaces='drive',
+    fields='files(id, name)'
+  ).execute()
+  return childrenFoldersDict['files']
 
 def upload_to_google_drive(file_path, filename=None, folder_id=None):
     drive_service = session()
@@ -96,10 +134,22 @@ def upload_to_google_drive(file_path, filename=None, folder_id=None):
         print("An error occurred:", str(e))
         return False
 
+def create_folder(name, parent_folder):
+  metadata = {
+    'name': name,
+    'mimeType': 'application/vnd.google-apps.folder',
+    'parents': [parent_folder]
+  }
+  ret = session().files().create(
+    body=metadata,
+    fields='id'
+  ).execute()
+  return ret.get('id')
+
 def create_drive_shortcut(gfid, filename, folder_id):
   drive_service = session()
   shortcut_metadata = {
-       'Name': filename,
+       'name': filename,
        'mimeType': 'application/vnd.google-apps.shortcut',
        'shortcutDetails': {
           'targetId': gfid

@@ -11,6 +11,10 @@
   "private": "https://drive.google.com/drive/folders/1FRIx6sR03qR7I8N6wux9Mem_2yBm06Hi",
   "public": "https://drive.google.com/drive/folders/13VWmT2o0hswWeBg3TUg5rRkRgFBtbfYq"
  },
+ "agama": {
+  "private": "https://drive.google.com/drive/folders/11rdItNqaUYhV3KbVGS6XR72HLeWM3d86",
+  "public": "https://drive.google.com/drive/folders/1-M69Vbs3VSd2t_oVIwWA2FB_xQJgkQ0G"
+ },
  "aging": {
   "private": "https://drive.google.com/drive/folders/18aHM6fThA1zeLMunS7MIsa6UbjM-6hPI",
   "public": "https://drive.google.com/drive/folders/1d9FVRx81URWYJSqcFHc1NTROsvVhIn__"
@@ -295,6 +299,10 @@
   "private": "https://drive.google.com/drive/folders/1-LSJmc_WueR7KTveUA4er9R0ODZ00mTg",
   "public": "https://drive.google.com/drive/folders/1VxixU5FlIjk1WrMDM5rL2_PiDC7YqOet"
  },
+ "literature": {
+  "private": "https://drive.google.com/drive/folders/11h8EdKlfjZLw6_8dfm7zoggvLJtAgXiF",
+  "public": "https://drive.google.com/drive/folders/1tnUtVW589i89ey8u96j2TIkE5kMZPNbI"
+ },
  "mahayana": {
   "private": "https://drive.google.com/drive/folders/1N5iJ_lc6r-qbxn-ND_ObHQpLBSVc2kvM",
   "public": "https://drive.google.com/drive/folders/10nn-AddtgKz0QQBU8rea_B06yLoVGCL9"
@@ -346,6 +354,10 @@
  "nature": {
   "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
   "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
+ },
+ "neuroscience": {
+  "private": "https://drive.google.com/drive/folders/1JuAkV5cYQ28pZKp-BvNJOvUX5q4XA5gB",
+  "public": null
  },
  "nibbana": {
   "private": "https://drive.google.com/drive/folders/1RqAK7YL9Q3TcQB7FKMpGyhqOd1S0t61z",
