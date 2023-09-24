@@ -1,5 +1,5 @@
 ---
-title: "pigni-a"
+title: "Practising mindfulness at the checkpoint"
 authors:
   - pigni-a
 external_url: "https://www.opendemocracy.net/en/transformation/practising-mindfulness-at-checkpoint/"
@@ -10,10 +10,11 @@ tags:
   - sati
   - resilience
   - social-work
+  - activism 
 year: 2013
 month: jul
 publisher: "openDemocracy"
-pages: "4"
+pages: 4
 ---
 
 > Mindfulness provides a breathing space to take stock and re-energize our actions from a place of care, awareness and creativity.
