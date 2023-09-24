@@ -2,7 +2,7 @@
 title: "Buddhism and Secular Subjectivities: Individualism and Fragmentation in the Mirror of Secularism"
 authors: [mcmahan-david]
 drive_links: ["https://drive.google.com/file/d/1zh1dGAGiw5780Ni2n9IJXsggRmvoXK6k/view?usp=drivesdk"]
-external_url: "https://www.academia.edu/52561836/Buddhism_and_Secular_Subjectivities_Individualism_and_Fragmentation_in_the_Mirrors_of_Secularism"
+external_url: "https://www.academia.edu/101078892/Buddhism_and_Secular_Subjectivities_Individualism_and_Fragmentation_in_the_Mirrors_of_Secularism"
 booktitle: "Secularizing Buddhism"
 pages: "57--78"
 chapter: 2

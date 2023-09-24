@@ -147,6 +147,10 @@
   "private": "https://drive.google.com/drive/folders/16UZZ0wjvwI1_beczQUKMoPs3-R0x6gAa",
   "public": "https://drive.google.com/drive/folders/1-mbQvml3pyTys10G9aKz2N36TFiQOX3F"
  },
+ "dana": {
+  "private": "https://drive.google.com/drive/folders/14o80arJi1zbQxQ8pPNk0dwsU8caB221S",
+  "public": null
+ },
  "death": {
   "private": "https://drive.google.com/drive/folders/10YatRWc7d6An-b0JHlwL7YbrnnjaWWJ2",
   "public": "https://drive.google.com/drive/folders/1CejhWVHrZncxhdmoGFcCAfqt8cEeuDwI"
@@ -194,6 +198,10 @@
  "ethics": {
   "private": "https://drive.google.com/drive/folders/1C71RS4k0cj_ThiA2MXZgWP3-c8mvNGCT",
   "public": "https://drive.google.com/drive/folders/1-YQu-rB2CsfWNHrHhmt9NPEfHuqzGpQ_"
+ },
+ "europe": {
+  "private": "https://drive.google.com/drive/folders/17o2uwCPbzoTDlTJYxmOOKTESp2uEbbIe",
+  "public": null
  },
  "families": {
   "private": "https://drive.google.com/drive/folders/1Bua_wnN2z1g4gv9dGr8L7v98fgXpM9Ax",

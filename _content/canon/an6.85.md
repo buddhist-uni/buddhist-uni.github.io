@@ -17,4 +17,4 @@ pages: 1
 
 > A monk endowed with six qualities is capable of realizing the unexcelled cooled state.
 
-<!---->
+For a comparison of different translations, see [this table](https://docs.google.com/document/d/1zn6HAnAP4V2aqJOKA_K65D3qMM-FKVzi/edit?usp=drivesdk&ouid=100121264257053757190&rtpof=true&sd=true).

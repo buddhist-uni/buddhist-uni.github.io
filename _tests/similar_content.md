@@ -12,7 +12,7 @@ test_cases:
     - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
     - [how-to-meditate_yuttadhammo, instructions-to-insight-meditation_mahasi]
     - [what-work-is_levine-philip, you-can-have-it_levine-philip]
-    - [rebirth-and-the-inbetween_sujato, when-does-human-life-begin_brahm]
+    - [when-does-human-life-begin_brahm, rebirth-and-the-inbetween_sujato]
     - [ordaining-renunciation_nirodha, going-forth_viradhammo]
     - [ptsd-in-the-slaughterhouse, you-can-have-it_levine-philip]
     - [behave_sapolsky-robert, challenges-of-the-disengaged-mind_wilson-et-al]

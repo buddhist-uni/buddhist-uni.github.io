@@ -3,7 +3,6 @@ title: "Children of Time"
 authors:
   - "Adrian Tchaikovsky"
 subcat: fiction
-external_url: "https://archive.org/details/childrenoftime0000tcha_k7z6/page/n6/mode/1up"
 course: arthropods
 tags:
   - neoliberalism
