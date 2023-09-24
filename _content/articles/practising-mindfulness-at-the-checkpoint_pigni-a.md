@@ -13,7 +13,7 @@ tags:
 year: 2013
 month: jul
 publisher: "openDemocracy"
-pages: "6"
+pages: "4"
 ---
 
 > Mindfulness provides a breathing space to take stock and re-energize our actions from a place of care, awareness and creativity.
