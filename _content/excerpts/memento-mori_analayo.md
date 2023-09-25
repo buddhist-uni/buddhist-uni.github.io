@@ -8,11 +8,9 @@ drive_links:
 course: problems
 tags:
   - death
-  - memory
-  - recollection
-  - EA
-  - suttas
-  - agamas
+  - sati
+  - ea
+  - tmt
 year: 2017
 publisher: "Buddhist World Press"
 address: "Delhi"
