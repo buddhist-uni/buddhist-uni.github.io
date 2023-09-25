@@ -9,7 +9,7 @@ drive_links:
 course: problems
 tags:
   - confession
-  - Tibetan 
+  - tibetan 
 year: 2007
 publisher: "Lotsawa House"
 pages: 3
