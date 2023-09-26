@@ -70,9 +70,6 @@ def command_line_args():
     parser.add_argument("-s", "--source",
       help="The PDF file *or* the folder containing the PDF file(s) to injest.",
       type=Path, default=Path('../../Download/'))
-    parser.add_argument("--client",
-      help="The Google Drive Authorized Cloud App json secrets file.",
-      type=Path, default=Path("~/library-utils-client-secret.json"))
     return parser.parse_args()
 
 def get_page_count(pdf_path):
@@ -328,14 +325,14 @@ subcat: poetry{extra_fields}"""
   if parallels:
     parallels += "\n"
   print(f"Attempting to upload \"{filename}\" to Google Drive...")
-  filegid = upload_to_google_drive(pdf_file, args.client, filename=filename, folder_id=folder_id)
+  filegid = upload_to_google_drive(pdf_file, filename=filename, folder_id=folder_id)
   if not filegid:
     print("Failed to upload!")
     quit(1)
   drive_link = DRIVE_LINK.format(filegid)
   if shortcut_folder:
     print("Creating the private shortcut...")
-    shortcutid = create_drive_shortcut(args.client, filegid, filename, shortcut_folder)
+    shortcutid = create_drive_shortcut(filegid, filename, shortcut_folder)
     if not shortcutid:
       print("Warning! Failed to create the shortcut")
   title = title.replace('"', '\\"')

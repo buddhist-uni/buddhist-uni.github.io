@@ -156,7 +156,7 @@ function categoryName(c) {
         case 'booklets': return '<i class="fas fa-book-open"></i> Book';
         case 'monographs': return '<i class="fas fa-book"></i> Book';
         case 'papers': return '<i class="far fa-file-powerpoint"></i> Paper';
-        case 'essays': return '<i class="far fa-sticky-note fa-rotate-270"></i> Essay';
+        case 'essays': return '<i class="far fa-file-word"></i> Essay';
         case 'canon': return '<i class="fas fa-dharmachakra"></i> Canonical Work';
         case 'reference': return '<i class="fas fa-atlas"></i> Reference Work';
         case 'excerpts': return '<i class="fas fa-book-reader"></i> Excerpt';

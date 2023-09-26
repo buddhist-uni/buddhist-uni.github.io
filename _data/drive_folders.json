@@ -43,6 +43,10 @@
   "private": "https://drive.google.com/drive/folders/12faBB13gvGhpNrnxt3kMSi25sAUY1L9h",
   "public": "https://drive.google.com/drive/folders/1-wOJ9NFbpNuIHA3I6au0yrkAV3u9NyFP"
  },
+ "animalia": {
+  "private": "https://drive.google.com/drive/folders/1LPa4a5IfLhXgnlCG1b7GJhEkjh3eTtk0",
+  "public": null
+ },
  "animals": {
   "private": "https://drive.google.com/drive/folders/1-b0EkuiMjwrv6YsJjkn4zh_e76zcWHwj",
   "public": "https://drive.google.com/drive/folders/13WU-Ikvbam93LFX5o1IPaRhHrcZeLuKM"
@@ -50,6 +54,10 @@
  "apadana": {
   "private": "https://drive.google.com/drive/folders/1al_pgWvSbWWUWgpf_ULJUI0yL6xR89Zr",
   "public": "https://drive.google.com/drive/folders/12JDRn48Vn0hRMSXnL2d_4s_EBxpQtZQa"
+ },
+ "architecture": {
+  "private": "https://drive.google.com/drive/folders/1xZ_snWf8FrukcoQEEpRHxu8OETO6OzD2",
+  "public": null
  },
  "art": {
   "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
@@ -335,6 +343,10 @@
   "private": "https://drive.google.com/drive/folders/1-LSJmc_WueR7KTveUA4er9R0ODZ00mTg",
   "public": "https://drive.google.com/drive/folders/1VxixU5FlIjk1WrMDM5rL2_PiDC7YqOet"
  },
+ "lay": {
+  "private": "https://drive.google.com/drive/folders/1DNqiR0JJIHGEG2IbRa-CkA6ZtLz-Eolw",
+  "public": "https://drive.google.com/drive/folders/10euqUSC6gnrjmpUXiQ_EE4pFnZ8TPRoI"
+ },
  "literature": {
   "private": "https://drive.google.com/drive/folders/11h8EdKlfjZLw6_8dfm7zoggvLJtAgXiF",
   "public": "https://drive.google.com/drive/folders/1tnUtVW589i89ey8u96j2TIkE5kMZPNbI"
@@ -366,6 +378,10 @@
  "mn": {
   "private": "https://drive.google.com/drive/folders/1JR9qSFrL0i1sJoQiHkLLq3Y93c_wmoDh",
   "public": "https://drive.google.com/drive/folders/10tYyKkRoQRwFO3KGjc6IoaP_hnMs0y1A"
+ },
+ "modern-poetry": {
+  "private": "https://drive.google.com/drive/folders/113FPo0kOVTbAiLiq3pGoaGcFoRYwTJm5",
+  "public": null
  },
  "monastic": {
   "private": "https://drive.google.com/drive/folders/1DBwsM4C9REw6Ssk9kDzExJDGTc8ZuG8e",

@@ -6,7 +6,7 @@ module Jekyll
         {c: 'fas fa-user-slash', n: 'person with a slash through him', t: 'course', d: 'is about selflessness'},
         {c: 'far fa-address-book', n: 'address book', t: 'course', d: 'will assign books by...'},
         {c: 'far fa-newspaper', n: 'newspaper', t: 'piece', d: 'appeared in an edited periodical'},
-        {c: 'far fa-sticky-note fa-rotate-270', n: 'sheet of paper', t: 'piece', d: 'was published as an independent essay'},
+        {c: 'far fa-file-word', n: 'sheet of paper', t: 'piece', d: 'was published as an independent essay'},
         {c: 'fas fa-dice', n: 'pair of dice', t: 'link', d: 'will take you somewhere random'},
         {c: 'fas fa-dharmachakra', n: 'Dharma Wheel', t: 'piece', d: 'is canonical'},
         {c: 'fas fa-volume-up', n: 'speaker', t: 'piece', d: 'is meant to be listened to'},

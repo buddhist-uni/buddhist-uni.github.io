@@ -1,7 +1,7 @@
 ---
 title: "What the Buddha Taught"
 authors: [rahula-w]
-external_url: "https://sites.google.com/site/rahulawhatthebuddha/home"
+external_url: "https://web.archive.org/web/20210411140724/https://sites.google.com/site/rahulawhatthebuddha/home"
 drive_links:
   - "https://drive.google.com/file/d/1-6HZqVWeu0ls2CAyPJ3D-9ici9-rDdBl/view?usp=drivesdk"
 source_url: "http://ftp.budaedu.org/ebooks/pdf/EN132.pdf"
