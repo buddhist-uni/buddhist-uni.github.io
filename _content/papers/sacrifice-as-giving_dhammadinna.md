@@ -15,7 +15,7 @@ tags:
 year: 2023
 publisher: "The International Research Institute for Advanced Buddhology, Soka University"
 address: "Tokyo"
-series: "BIBLIOTHECA PHILOLOGICA et PHILOSOPHICA BUDDHICA"
+series: "Bibliotheca Philosophica et Philosophica Buddhica"
 number: 15
 booktitle: "Śāntamatiḥ: Manuscripts for Life"
 pages: "63--87"

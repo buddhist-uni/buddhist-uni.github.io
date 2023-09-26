@@ -7,6 +7,10 @@
   "private": "https://drive.google.com/drive/folders/17CJqmQhkER76D0PzLfSqbjDuXmokgo_e",
   "public": "https://drive.google.com/drive/folders/10If3acGA6qnYheGpA0pRyKRir9rt4Sxt"
  },
+ "academic": {
+  "private": "https://drive.google.com/drive/folders/12k-aa6kgmtUzbEqc1TJd0NxY7jg6M_oo",
+  "public": "https://drive.google.com/drive/folders/1CxcMCA5WqfqjBwPOj0TlK77ulHIDCjsg"
+ },
  "activism": {
   "private": "https://drive.google.com/drive/folders/1FRIx6sR03qR7I8N6wux9Mem_2yBm06Hi",
   "public": "https://drive.google.com/drive/folders/13VWmT2o0hswWeBg3TUg5rRkRgFBtbfYq"
@@ -54,6 +58,10 @@
  "asia": {
   "private": "https://drive.google.com/drive/folders/198TBBIt-uTixQgxzh0BPB-U8hWWjqM0z",
   "public": "https://drive.google.com/drive/folders/1LIR6PYyjfI2RXrAWkZ-IwckrsOx1DHLf"
+ },
+ "avadana": {
+  "private": "https://drive.google.com/drive/folders/1al_pgWvSbWWUWgpf_ULJUI0yL6xR89Zr",
+  "public": "https://drive.google.com/drive/folders/12JDRn48Vn0hRMSXnL2d_4s_EBxpQtZQa"
  },
  "bangladeshi": {
   "private": "https://drive.google.com/drive/folders/1BGi8zjblJKUJB3vkq5BtHPSKU8GyxBb6",
@@ -142,6 +150,10 @@
  "craft": {
   "private": "https://drive.google.com/drive/folders/1CFmLNjI6wqNcK4S8dCpzgRuXPnDHw0Xj",
   "public": "https://drive.google.com/drive/folders/1FnCuWujVpUbpmSyjRe8aMgnirIoonmxD"
+ },
+ "da": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1277VHi6irmGHt37nonFuulCdimdD3Mpl"
  },
  "daily-life": {
   "private": "https://drive.google.com/drive/folders/16UZZ0wjvwI1_beczQUKMoPs3-R0x6gAa",
@@ -243,12 +255,24 @@
   "private": "https://drive.google.com/drive/folders/1G_JxMbUPccSVXYTfmmCDKn3E0xtOHzhs",
   "public": "https://drive.google.com/drive/folders/1-muXaBJRAmmQw3nZTQskQyHjeXCYWnCK"
  },
+ "historiography": {
+  "private": "https://drive.google.com/drive/folders/1ChxN7tv7NduWVTvU8JwgusDyQkQsazef",
+  "public": null
+ },
  "imagery": {
   "private": "https://drive.google.com/drive/folders/1LzSiI0P9lSZ8uBuZXw8hMz6uRXtz3GaG",
   "public": "https://drive.google.com/drive/folders/1-FdgQxbfMn1_OzuzO8xdDbyDx3CqV4MS"
  },
+ "indic-religion": {
+  "private": "https://drive.google.com/drive/folders/176_9SGd8XcIgYjJs5-avvASWEeHNVn1i",
+  "public": null
+ },
  "inequality": {
   "private": "https://drive.google.com/drive/folders/1OFrjY0Mv3fGmBOJe514HC5wYHiwx7PAa",
+  "public": null
+ },
+ "infrastructure": {
+  "private": "https://drive.google.com/drive/folders/150kHTNKnjDbFCl_ZELJNJi7UZWRkUNSM",
   "public": null
  },
  "inner": {
@@ -278,6 +302,10 @@
  "japanese-roots": {
   "private": "https://drive.google.com/drive/folders/12pZtqPVLErtZGlaVHacHRLgRs-qhSzpZ",
   "public": null
+ },
+ "jataka": {
+  "private": "https://drive.google.com/drive/folders/1aBshfHwg8dSsjLeKEMoqytG6PkM0URAo",
+  "public": "https://drive.google.com/drive/folders/11zjjOToMDnwLMERg7ddQrGrKED6sqM2x"
  },
  "journalism": {
   "private": "https://drive.google.com/drive/folders/1_3OvMqqb9QDDyLFl4Yzr8YZaiuNw58QS",
@@ -454,6 +482,10 @@
  "sati": {
   "private": "https://drive.google.com/drive/folders/194KL_w7eLiqpg2_eN0Y5-hJDrzB2l2SR",
   "public": "https://drive.google.com/drive/folders/19UVSpr_ouC2rnoK8Hhcg-hN0Yv_EUUqx"
+ },
+ "science": {
+  "private": "https://drive.google.com/drive/folders/16vqXKdwzlQyhaYyxp6-dRU93799902L4",
+  "public": null
  },
  "sea": {
   "private": "https://drive.google.com/drive/folders/1DoyXVlIwUMVCWuK1yU_jhymALMmJiAHX",
