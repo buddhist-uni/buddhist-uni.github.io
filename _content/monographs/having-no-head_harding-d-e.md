@@ -3,9 +3,10 @@ title: "On Having No Head: A Contribution to Zen in the West"
 authors:
   - "Douglas E. Harding"
 external_url: "http://www.kbrl.gov.mm/book/details/002218"
-course: samadhi
 tags:
+  - samadhi
   - inner
+  - west-zen
 year: 1961
 olid: OL44778490M
 publisher: "the Buddhist Society"
