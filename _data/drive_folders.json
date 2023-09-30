@@ -267,6 +267,10 @@
   "private": "https://drive.google.com/drive/folders/1ChxN7tv7NduWVTvU8JwgusDyQkQsazef",
   "public": null
  },
+ "iddhi": {
+  "private": "https://drive.google.com/drive/folders/1359SpMgK4-tFtwr9qSInl9vbjtzuZis7",
+  "public": null
+ },
  "imagery": {
   "private": "https://drive.google.com/drive/folders/1LzSiI0P9lSZ8uBuZXw8hMz6uRXtz3GaG",
   "public": "https://drive.google.com/drive/folders/1-FdgQxbfMn1_OzuzO8xdDbyDx3CqV4MS"
@@ -475,6 +479,10 @@
   "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0",
   "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u"
  },
+ "psychology": {
+  "private": "https://drive.google.com/drive/folders/1fumD38xSjmx4XtO2qVv3fGUkPLCmipBC",
+  "public": null
+ },
  "rebirth": {
   "private": "https://drive.google.com/drive/folders/14kwlyPUNih-tta_HvHfxwsM3QEFtgNvy",
   "public": "https://drive.google.com/drive/folders/10l-T7KNFWKj2ifHORzSDQELqJy3ftG4-"
@@ -618,6 +626,10 @@
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
   "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0"
+ },
+ "war": {
+  "private": "https://drive.google.com/drive/folders/1iIUJzJCoCWFZ5hRc67xbE94LaGGpQ2QX",
+  "public": null
  },
  "warder": {
   "private": null,

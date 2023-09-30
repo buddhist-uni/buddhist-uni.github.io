@@ -47,6 +47,7 @@ def make_nonsc_url(website, book, nums):
     else:
       num = nums[0]
     url = next(e[1] for e in book if e[0] == num)
+    url = f"{website['constants']['rootUrl']}{url}"
   else:
     url = f"{website['constants']['rootUrl']}{website[book]['links']['all']}{website['constants']['chapterConnector'].join(map(str,filter(None,nums)))}{website['constants']['suffixUrl']}"
   print("Testing nonSC URL to make sure it's legit...")
@@ -149,6 +150,10 @@ def fill_in_trans_data(trans, url):
       trans['author_uid'] = "ireland"
       trans['author'] = "John D. Ireland"
       trans['author_short'] = "ATI (Ireland)"
+    case 'piya':
+      trans['author_uid'] = '"Piyadassi Thera"'
+      trans['author'] = "Piyadassi Thera"
+      trans['author_short'] = "ATI (Piya)"
     case _:
       print(f"ERROR: Unknown author '{m.groups(0)[0]}'")
       quit(1)
