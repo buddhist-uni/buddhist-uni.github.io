@@ -81,6 +81,7 @@ def get_gfolders_for_course(course):
     if not subfolder:
       raise RuntimeError("Error creating subfolder. Got null API response.")
     system_open(FOLDER_LINK.format(private_folder))
+    input("Press enter to continue...")
     return (None, subfolder)
   return (public_folder, private_folder)
 

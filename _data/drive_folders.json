@@ -83,6 +83,10 @@
   "private": "https://drive.google.com/drive/folders/1ZJZmELY1okW8okorjfBTpztEbyl3v3ih",
   "public": "https://drive.google.com/drive/folders/11D09xk2DMgIMDAXTprM9SlgtrVsQ2NIO"
  },
+ "biology": {
+  "private": "https://drive.google.com/drive/folders/1g-EW4H85f4u2LLFExLzemLI3iUrlgvno",
+  "public": null
+ },
  "bodhisattva": {
   "private": "https://drive.google.com/drive/folders/17rcx75yYPMgO2tsJKaL8j9Y-PFM6unwq",
   "public": null
@@ -114,6 +118,10 @@
  "cambodia": {
   "private": "https://drive.google.com/drive/folders/11t3jwijnRkwfsEtzf6WkSBSY40ohmmJj",
   "public": null
+ },
+ "cambodian": {
+  "private": "https://drive.google.com/drive/folders/1Y84zOcbY6ibE24PfTS9KViTRC_H5gfDi",
+  "public": "https://drive.google.com/drive/folders/11kXcsdKJzH01_XTXezpqaoRtTtM4mp0c"
  },
  "canadian": {
   "private": "https://drive.google.com/drive/folders/1-p8SWDaEda3vby9yfffrjvxB7coi7LFK",
@@ -178,6 +186,10 @@
  "desire": {
   "private": "https://drive.google.com/drive/folders/1K33uusdM71vj7Yu5qvX55WAnnw4lyZOZ",
   "public": "https://drive.google.com/drive/folders/1R5UKsIE_1dcX_PUFqv9Zyn9ens9xWX5X"
+ },
+ "development": {
+  "private": "https://drive.google.com/drive/folders/1lSy40QBX03mbjGLn9fG4ucvenNbiVW9Z",
+  "public": null
  },
  "dialogue": {
   "private": "https://drive.google.com/drive/folders/1T2QcWyCanAEQWuRr9G4g8oj7NPcUHQ8Q",
@@ -271,6 +283,10 @@
   "private": "https://drive.google.com/drive/folders/1359SpMgK4-tFtwr9qSInl9vbjtzuZis7",
   "public": null
  },
+ "ideology": {
+  "private": "https://drive.google.com/drive/folders/1V1gB_SHkD0OdISFATINAjn_uMuE4Am5r",
+  "public": "https://drive.google.com/drive/folders/1NAw7nHfLrB6ycvUTqcUHPdcl-FjMf8eW"
+ },
  "imagery": {
   "private": "https://drive.google.com/drive/folders/1LzSiI0P9lSZ8uBuZXw8hMz6uRXtz3GaG",
   "public": "https://drive.google.com/drive/folders/1-FdgQxbfMn1_OzuzO8xdDbyDx3CqV4MS"
@@ -281,6 +297,10 @@
  },
  "inequality": {
   "private": "https://drive.google.com/drive/folders/1OFrjY0Mv3fGmBOJe514HC5wYHiwx7PAa",
+  "public": null
+ },
+ "info-capitalism": {
+  "private": "https://drive.google.com/drive/folders/1gMOpx-k_OR6HyVsEgobk7wVqfIQ9GcUN",
   "public": null
  },
  "infrastructure": {
@@ -351,6 +371,10 @@
   "private": "https://drive.google.com/drive/folders/1DNqiR0JJIHGEG2IbRa-CkA6ZtLz-Eolw",
   "public": "https://drive.google.com/drive/folders/10euqUSC6gnrjmpUXiQ_EE4pFnZ8TPRoI"
  },
+ "lit-crit": {
+  "private": "https://drive.google.com/drive/folders/1ClVqELdvPABMZLSS4UZWwOd6nTV-NNdN",
+  "public": null
+ },
  "literature": {
   "private": "https://drive.google.com/drive/folders/11h8EdKlfjZLw6_8dfm7zoggvLJtAgXiF",
   "public": "https://drive.google.com/drive/folders/1tnUtVW589i89ey8u96j2TIkE5kMZPNbI"
@@ -370,6 +394,10 @@
  "media": {
   "private": "https://drive.google.com/drive/folders/1UwUhVVWK11-9IEfjjYxohfp6EwK3XHQH",
   "public": "https://drive.google.com/drive/folders/1BxeY-yPGetYf8VZmXJxHwK5C6tikpVGF"
+ },
+ "medicine": {
+  "private": "https://drive.google.com/drive/folders/1FPBu217nONdRTWiEx1yY2ni2ZRNO1DX1",
+  "public": null
  },
  "meditation": {
   "private": "https://drive.google.com/drive/folders/1-Q5426IBgx2h-guzI5RHoc5PmYah3Ucd",
@@ -422,6 +450,10 @@
  "origination": {
   "private": "https://drive.google.com/drive/folders/1NVMVxbG9nUPJO5tdH7UcatcQkPod-mwa",
   "public": "https://drive.google.com/drive/folders/105_iCx8G0RDryGDf_6cJru6EQMVFnYs2"
+ },
+ "pacific": {
+  "private": "https://drive.google.com/drive/folders/1iuR6JEyVmLIJ3igIRYWE_NrOfTYIYGb3",
+  "public": null
  },
  "pali-canon": {
   "private": "https://drive.google.com/drive/folders/1-ZiJYwAQ6Tmfk5Oo2KCWPScR8ukSWxEm",
@@ -509,6 +541,10 @@
  },
  "science": {
   "private": "https://drive.google.com/drive/folders/16vqXKdwzlQyhaYyxp6-dRU93799902L4",
+  "public": null
+ },
+ "science-roots": {
+  "private": "https://drive.google.com/drive/folders/180AS5OiLQem-gXEdDypy_cSlEhHKEKMC",
   "public": null
  },
  "sea": {
