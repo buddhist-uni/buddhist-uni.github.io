@@ -2,6 +2,8 @@
 
 import os.path
 from pathlib import Path
+import requests
+from io import BytesIO
 from strutils import (
   git_root_folder,
   system_open,
@@ -13,17 +15,18 @@ import re
 from functools import cache
 try:
   from yaspin import yaspin
+  from bs4 import BeautifulSoup
   from google.auth.transport.requests import Request
   from google.oauth2.credentials import Credentials
   from google_auth_oauthlib.flow import InstalledAppFlow
   from googleapiclient.discovery import build
-  from googleapiclient.http import MediaFileUpload
+  from googleapiclient.http import MediaIoBaseUpload, MediaFileUpload
 except:
-  print("pip install yaspin google google-api-python-client google_auth_oauthlib")
+  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib")
   quit(1)
 
-# If modifying these scopes, have to redo the client secrets json.
-SCOPES = ['https://www.googleapis.com/auth/drive']
+# If modifying these scopes, have to login again.
+SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/youtube.readonly']
 # The client secrets file can be made and downloaded from your developer console:
 # https://console.developers.google.com/apis/credentials
 CLIENTSECRETS = os.path.expanduser("~/library-utils-client-secret.json")
@@ -33,9 +36,11 @@ FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
 FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
+DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 
 def link_to_id(link):
-  return re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=drivesdk)?$', link).groups()[0]
+  ret = re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=drivesdk)?$', link)
+  return ret.groups()[0] if ret else None
 
 def folderlink_to_id(link):
   return link if not link else link.replace(FOLDER_LINK_PREFIX, "")
@@ -86,7 +91,7 @@ def get_gfolders_for_course(course):
   return (public_folder, private_folder)
 
 @cache
-def session():
+def google_credentials():
     creds = None
     if os.path.exists(CREDFILE):
         creds = Credentials.from_authorized_user_file(CREDFILE, SCOPES)
@@ -101,7 +106,18 @@ def session():
             creds = flow.run_local_server(port=0)
         with open(CREDFILE, 'w') as token:
             token.write(creds.to_json())
-    return build('drive', 'v3', credentials=creds)
+    return creds
+
+@cache
+def session():
+    return build('drive', 'v3', credentials=google_credentials())
+
+@cache
+def youtube():
+    return build('youtube', 'v3', credentials=google_credentials())
+
+def get_ytvideo_snippet(ytid):
+  return youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
 
 def get_subfolders(folderid):
   folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder'"
@@ -112,15 +128,31 @@ def get_subfolders(folderid):
   ).execute()
   return childrenFoldersDict['files']
 
+def create_doc(filename=None, html=None, rtf=None, folder_id=None):
+  if html and rtf:
+    raise ValueError("Please specify either rtf or html. Not both.")
+  drive_service = session()
+  metadata = {'mimeType': 'application/vnd.google-apps.document'}
+  media = None
+  if filename:
+    metadata['name'] = filename
+  if folder_id:
+    metadata['parents'] = [folder_id]
+  if html:
+    media = MediaIoBaseUpload(BytesIO(bytes(html, 'UTF-8')), mimetype='text/html', resumable=True)
+  if rtf:
+    media = MediaIoBaseUpload(BytesIO(bytes(rtf, 'UTF-8')), mimetype='application/rtf', resumable=True)
+  return _perform_upload(metadata, media)
+
 def upload_to_google_drive(file_path, filename=None, folder_id=None):
-    drive_service = session()
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
         file_metadata['parents'] = [folder_id]
-
-    # Create media file upload object
     media = MediaFileUpload(file_path, resumable=True)
+    return _perform_upload(file_metadata, media)
 
+def _perform_upload(file_metadata, media):
+    drive_service = session()
     try:
         # Upload the file
         request = drive_service.files().create(body=file_metadata, media_body=media)
@@ -134,7 +166,7 @@ def upload_to_google_drive(file_path, filename=None, folder_id=None):
         print(response)
         return response['id']
     except Exception as e:
-        print("An error occurred:", str(e))
+        print("An error occurred: ", str(e))
         return False
 
 def create_folder(name, parent_folder):
@@ -222,14 +254,29 @@ def move_gfile(glink, folders):
     raise NotImplementedError(f"Please decide what to do with the multiple old shortcuts in:    {urls}")
   print("Done!")
 
+def guess_link_title(url):
+  try:
+    title = BeautifulSoup(requests.get(url).text, "html.parser").find("title").get_text().replace(" - YouTube", "")
+    return re.sub(r"\(GDD-([0-9]+) Master Sheng Yen\)", r" (GDD-\1) - Master Sheng Yen", title)
+  except:
+    return ""
+
 if __name__ == "__main__":
-  glinks = []
+  glink_gens = []
+  # a list of generator lambdas not direct links
+  # so that we can defer doc creation to the end
   while True:
-    glink = input("Google Drive Link (None to continue): ")
-    if not glink:
+    link = input("Link (None to continue): ")
+    if not link:
       break
-    glinks.append(glink)
+    if not link_to_id(link):
+      if "youtu" in link:
+        link = link.split("?si=")[0]
+      title = input_with_prefill("title: ", guess_link_title(link))
+      glink_gens.append(lambda title=title, link=link: DOC_LINK.format(create_doc(title, html=f"""<h2>{title}</h2><a href="{link}">{link}</a>""")))
+    else:
+      glink_gens.append(lambda r=link: r)
   course = input_with_tab_complete("course: ", get_known_courses())
   folders = get_gfolders_for_course(course)
-  for glink in glinks:
-    move_gfile(glink, folders)
+  for glink_gen in glink_gens:
+    move_gfile(glink_gen(), folders)
