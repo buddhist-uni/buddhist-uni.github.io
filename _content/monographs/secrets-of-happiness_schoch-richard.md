@@ -4,7 +4,6 @@ authors:
   - "Richard Schoch"
 course: religion
 olid: OL19157423M
-external_url: "https://archive.org/details/secretsofhappine0000scho/page/n6/mode/1up"
 tags:
   - interfaith
 year: 2006

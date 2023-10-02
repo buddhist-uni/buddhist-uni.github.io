@@ -8,7 +8,6 @@ tags:
 year: 2004
 month: may
 olid: OL8308626M
-external_url: "https://archive.org/details/trustinmindrebel0000muso/page/n4/mode/1up"
 oclc: 54007034
 publisher: wisdom
 status: featured

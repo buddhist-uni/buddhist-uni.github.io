@@ -11,6 +11,8 @@ status: featured
 course: world
 tags:
   - anthropology
+  - culture
+  - communication
 year: 2022
 olid: OL37748276M
 publisher: "Rice University"

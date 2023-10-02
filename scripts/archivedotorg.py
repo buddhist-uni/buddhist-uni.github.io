@@ -25,6 +25,7 @@ else:
   quit(1)
 
 ARCHIVEID_BLACKLIST = {
+  "unehistoiredetou0000na",
   "elartedelasabidu0000dala"
 }
 
@@ -123,6 +124,8 @@ def find_lendable_archiveorg_url_for_metadata(workinfo):
   return None
 
 def is_archiveorg_item_lendable(itemid):
+  if itemid in ARCHIVEID_BLACKLIST:
+    return False
   resp = archive_org_session.get("https://archive.org/services/availability", params={"identifier": itemid})
   data = resp.json()
   if not resp.ok or not data["success"]:

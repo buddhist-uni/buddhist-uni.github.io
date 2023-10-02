@@ -9,7 +9,6 @@ tags:
   - world
 year: 2003
 month: may
-external_url: "https://archive.org/details/unehistoiredetou0000na/mode/1up"
 publisher: "Broadway Books"
 pages: 624
 ---
