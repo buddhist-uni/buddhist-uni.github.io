@@ -2,14 +2,14 @@
 title: "Problems for Monks and Lay People"
 authors:
   - yuttadhammo
+external_link: "https://youtu.be/puytcR2XRag"
 drive_links:
   - "https://drive.google.com/file/d/1xByaTXFcNif5VyzMNUITZYaggfiYzCZK/view?usp=sharing"
 formats: [mp3]
 course: problems
 tags:
-  - meditation
+  - path
   - renunciation
-  - sila
 year: 2010
 month: aug
 minutes: "14"
