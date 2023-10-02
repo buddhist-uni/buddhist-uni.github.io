@@ -43,6 +43,10 @@
   "private": "https://drive.google.com/drive/folders/12faBB13gvGhpNrnxt3kMSi25sAUY1L9h",
   "public": "https://drive.google.com/drive/folders/1-wOJ9NFbpNuIHA3I6au0yrkAV3u9NyFP"
  },
+ "anatomy": {
+  "private": "https://drive.google.com/drive/folders/1TF7Rmyo-h9DPmygNnjt9kyr3m7dd3Rsx",
+  "public": null
+ },
  "animalia": {
   "private": "https://drive.google.com/drive/folders/1LPa4a5IfLhXgnlCG1b7GJhEkjh3eTtk0",
   "public": null
@@ -267,6 +271,10 @@
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
   "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
  },
+ "health": {
+  "private": "https://drive.google.com/drive/folders/1-0TL_vDXckSXVkGBBVQ_dQswZ9ddJuAf",
+  "public": null
+ },
  "hermeneutics": {
   "private": "https://drive.google.com/drive/folders/19n6Uzxym1SND1UkN5z88bG1iZcxa51_V",
   "public": "https://drive.google.com/drive/folders/10mFk6MBQ4-LyfkKANrCMD-bvDfQ6UON7"
@@ -439,6 +447,10 @@
   "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
   "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
  },
+ "nepalese": {
+  "private": "https://drive.google.com/drive/folders/1POQDz9MPjyq14vrn-ddnir1WwrYIvsNG",
+  "public": "https://drive.google.com/drive/folders/115fQ4U1X5FGsA5f4tpm0XLDR61fUAGcM"
+ },
  "neuroscience": {
   "private": "https://drive.google.com/drive/folders/1JuAkV5cYQ28pZKp-BvNJOvUX5q4XA5gB",
   "public": null
@@ -551,6 +563,10 @@
   "private": "https://drive.google.com/drive/folders/1DoyXVlIwUMVCWuK1yU_jhymALMmJiAHX",
   "public": null
  },
+ "sects": {
+  "private": "https://drive.google.com/drive/folders/12vVBz1M1X6i7L4iuoUSqvmpdSK5SuJDA",
+  "public": "https://drive.google.com/drive/folders/1D1ivjc4ZJ6cXzCqy1KZkDXOaWpB77QXA"
+ },
  "selling": {
   "private": "https://drive.google.com/drive/folders/1ZHDu28g5HrUm2o8g4THChxwAN45mekLQ",
   "public": null
@@ -658,6 +674,10 @@
  "vinaya-studies": {
   "private": "https://drive.google.com/drive/folders/1b8nEWOz3Z0CiRUECksk70MFNTRvttgFs",
   "public": "https://drive.google.com/drive/folders/13txioFMBUj8Fsyvo6JQxDVFwsEc4IH6b"
+ },
+ "violence-since-ww2": {
+  "private": "https://drive.google.com/drive/folders/1Dg1WwRPy3Y9tuNpN4qYSJL5fmsZAWAjh",
+  "public": null
  },
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
