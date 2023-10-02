@@ -8,15 +8,17 @@ drive_links:
 course: problems
 tags:
   - sense-restraint
+  - manuscripts
+  - sa
 year: 1978
 journal: jiabs
-publisher: Heidelberg University
+publisher: "Heidelberg University"
 address: "Heidelberg, Germany"
 volume: 1
 number: 1
 pages: "25--33"
 ---
 
-> "...if a monk avoids positive or negative inclinations when using his senses, Mara would not get access, would not get a hold."
+> ... if a monk avoids positive or negative inclinations when using his senses, Mara would not get access, would not get a hold.
 
-A brief description of Mahāmaudgalyāyana's sermon on sense-restraint. The author then shares and translates Sanskrit fragments of this sermon found in Turfan (Turpan).
+A brief description of Mahāmaudgalyāyana's sermon on sense-restraint ([SN 35.243](/content/canon/sn35.243) / SA 1176) along with a translated Sanskrit fragment of this sermon found in Turfan (Turpan).
