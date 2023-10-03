@@ -10,7 +10,8 @@ course: east-asian
 tags:
   - emptiness
   - meditation
-year: 2008 # sometime 2006–2012
+olid: OL45232481M
+year: 1996
 pages: 135
 ---
 

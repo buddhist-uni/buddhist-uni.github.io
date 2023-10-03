@@ -423,6 +423,10 @@
   "private": "https://drive.google.com/drive/folders/1JR9qSFrL0i1sJoQiHkLLq3Y93c_wmoDh",
   "public": "https://drive.google.com/drive/folders/10tYyKkRoQRwFO3KGjc6IoaP_hnMs0y1A"
  },
+ "modern": {
+  "private": "https://drive.google.com/drive/folders/1-ViT1IA-W2CNMeB4m4ECZgmjpz6eLyO0",
+  "public": "https://drive.google.com/drive/folders/1LVOEDx60Xv4i3-kj8h8EDjX1BcQWf28U"
+ },
  "modern-poetry": {
   "private": "https://drive.google.com/drive/folders/113FPo0kOVTbAiLiq3pGoaGcFoRYwTJm5",
   "public": null
@@ -618,6 +622,10 @@
  "tantric-roots": {
   "private": "https://drive.google.com/drive/folders/12blFyH7lI4bN5BDrKTaAzJnEooqnAaP1",
   "public": "https://drive.google.com/drive/folders/10zbVgIHl-iGWzVLlADUCMc08BKFxkGAT"
+ },
+ "tea": {
+  "private": "https://drive.google.com/drive/folders/17RLYDWCkvnD3Gh5KCAHV9B--blM7LkBI",
+  "public": null
  },
  "thai": {
   "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",
