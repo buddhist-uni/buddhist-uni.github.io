@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1zl5mU7HSCq3Xg26fEtm4-DRyNL_u9-Hy/view?usp=sharing"
 formats: [mp3]
 course: problems
+status: featured
 tags:
   - death
   - family
