@@ -10,9 +10,10 @@ course: problems
 tags:
   - refuge
   - lamentation
-  - guru
+  - guru-worship
 year: 2021
 publisher: "Lotsawa House"
+subcat: poetry
 pages: 3
 ---
 
@@ -20,4 +21,4 @@ pages: 3
 I shall not deceive myself with so many pointless acts,
 But end my days striving in the practice of profound Dharma.
 
-In this short lamentation, Jamyang Khyentse Chökyi Lodrö invokes the blessings of his guru, Jamyang Loter Wangpo, to live an honest life of Dharma practise, despite his shortcomings. .
+In this short lamentation, Jamyang Khyentse Chökyi Lodrö invokes the blessings of his guru, Jamyang Loter Wangpo, to live an honest life of Dharma practise, despite his shortcomings.
