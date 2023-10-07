@@ -7,7 +7,7 @@ translator: "Tenzin Jamchen (Sean Price)"
 editor: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/konchok-tenpe-dronme/verses-of-advice-for-meditating-on-impermanence"
 drive_links:
-  - "https://drive.google.com/file/d/12vcddqC1a8DjlAiEvtQjN3FKS2JnL4Ni/view?usp=sharing"
+  - "https://drive.google.com/file/d/12vcddqC1a8DjlAiEvtQjN3FKS2JnL4Ni/view?usp=drivesdk"
 course: death
 tags:
   - anicca
