@@ -11,6 +11,8 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Lotus_flower_(97865
 
 **Chapter 12** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
+{% include content_box.html slug="four-stages_sona" category="av" %}
+
 {% include content_blurb.html category="canon" slug="sn56.11" %}
 - In the Buddha's very first sermon, he tells his friends about his Enlightenment and the path he discovered for attaining it, waking up his first disciple and setting in motion the religion which continues rolling to this day.
 

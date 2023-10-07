@@ -251,6 +251,10 @@
   "private": "https://drive.google.com/drive/folders/1J_su5UhzgQLO4cF-jWQDXRjBMdUxBUfG",
   "public": "https://drive.google.com/drive/folders/1KC2dxZyV-f9K0qaX2kXivZ-JaYh_eEhW"
  },
+ "feminism": {
+  "private": "https://drive.google.com/drive/folders/1W-YgTABpFBZ99fk9TiYlt948hjwG0D-k",
+  "public": null
+ },
  "food": {
   "private": "https://drive.google.com/drive/folders/1-_WRVmoQvnBuTaIIwyhZtcAZ_HYfDbPq",
   "public": "https://drive.google.com/drive/folders/15-pCmfm7_2Y0LV4rDv8Nu1jx1uVhwZB3"
@@ -342,6 +346,10 @@
  "japanese": {
   "private": "https://drive.google.com/drive/folders/19cxC1hod9rORJqNZiQX1AaESB3PjB8pm",
   "public": "https://drive.google.com/drive/folders/14AUczeHZIaChGJ8SfWpC8k46PEMSi6H0"
+ },
+ "japanese-pureland": {
+  "private": "https://drive.google.com/drive/folders/1AKaIP6lI9FQ1uUeXbJgHp0a-FjVL7hcO",
+  "public": null
  },
  "japanese-roots": {
   "private": "https://drive.google.com/drive/folders/12pZtqPVLErtZGlaVHacHRLgRs-qhSzpZ",
@@ -522,6 +530,18 @@
  "places": {
   "private": "https://drive.google.com/drive/folders/1CrvHBlXyF4FGFqFqSbJh7NfCR2Mix5-e",
   "public": "https://drive.google.com/drive/folders/1K_7u0vaUVl0NVQs7I9v-4kvkZM1mAQGP"
+ },
+ "poli-sci": {
+  "private": "https://drive.google.com/drive/folders/1g7XUiQHQruUSvfzvEl4finAU256epKak",
+  "public": null
+ },
+ "polical-ideology": {
+  "private": "https://drive.google.com/drive/folders/1V9-SbnlVWEIdJ-ELE4S0Oy-i5yJWjCjO",
+  "public": null
+ },
+ "political-ideology": {
+  "private": "https://drive.google.com/drive/folders/1V9-SbnlVWEIdJ-ELE4S0Oy-i5yJWjCjO",
+  "public": null
  },
  "present": {
   "private": "https://drive.google.com/drive/folders/1-olGBHPSRLpaUWzc6HKigQWNvhTbmnAN",
