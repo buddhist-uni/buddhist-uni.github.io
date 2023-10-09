@@ -10,6 +10,7 @@ course: groups
 tags:
   - an
   - monastic-advice
+# nibbana tag covered by *The Island*
 year: 1997
 pages: 1
 parallels:

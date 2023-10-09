@@ -11,6 +11,7 @@ course: ethics
 tags:
   - form
   - iti
+# nibbana tag covered by *The Island*
 year: 2001
 pages: 2
 parallels: []

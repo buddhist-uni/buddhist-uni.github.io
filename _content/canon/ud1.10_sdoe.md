@@ -10,9 +10,9 @@ status: featured
 tags:
   - ud
   - vipassana
-  - nibbana
   - american
   - psychology
+# nibbana covered by *The Island*
 year: 2006
 minutes: 8
 ---

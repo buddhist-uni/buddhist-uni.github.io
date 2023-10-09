@@ -13,6 +13,7 @@ tags:
   - pali-canon
   - ud
 # thought tag covered by Geoff's "Recognizing" anthology
+# nibbana tag covered by *The Island*
 year: 2018
 pages: 2
 parallels: []

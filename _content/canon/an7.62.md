@@ -9,6 +9,7 @@ status: featured
 tags:
   - an
   - path
+# nibbana tag covered by *The Island*
 year: 2018
 pages: 2
 parallels:

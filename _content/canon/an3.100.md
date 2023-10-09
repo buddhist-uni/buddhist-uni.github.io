@@ -13,6 +13,7 @@ tags:
   - class
   - power
   - charisma
+# nibbana covered by *The Island*
 pages: 3
 parallels:
   - ma11

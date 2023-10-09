@@ -8,16 +8,11 @@ drive_links:
 course: path
 status: featured
 tags:
-  - meditation
-  - ethics
-  - vipassana
-  - philosophy
   - thought
-  - dukkha
   - problems
-  - daily-life
   - mn
   - pali-canon
+# nibbana covered by *The Island*
 year: 2009
 pages: 7
 parallels:

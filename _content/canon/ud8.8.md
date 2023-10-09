@@ -11,8 +11,8 @@ tags:
   - thought
   - emptiness
   - canonical-poetry
-  - nibbana
   - death
+# nibbana tag covered by *The Island*
 year: 2008
 pages: 3
 parallels: []

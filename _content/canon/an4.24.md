@@ -10,6 +10,7 @@ tags:
   - buddha
   - iddhi
   - an
+# nibbana covered by *The Island*
 year: 2012
 pages: 2
 ---

@@ -7,8 +7,8 @@ drive_links: ["https://drive.google.com/file/d/1Uvev_7_LQ62itkzjYIWOGZ8MPyYQMmZF
 course: philosophy
 tags:
   - ud
-  - nibbana
   - epistemology
+# nibbana covered by *The Island*
 year: 2008
 pages: 1
 parallels: []

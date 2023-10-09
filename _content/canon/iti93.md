@@ -8,10 +8,10 @@ drive_links: ["https://drive.google.com/file/d/1FyiwGkfkzfeFYwUUKgdl9AwvFyVXFzuC
 course: function
 tags:
   - iti
-  - nibbana
   - imagery
   - canonical-poetry
   - philosophy
+# nibbana covered by *The Island*
 year: 1997
 subcat: poetry
 pages: 2

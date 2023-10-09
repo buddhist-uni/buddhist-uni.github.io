@@ -9,6 +9,7 @@ year: 2000
 course: philosophy
 tags: 
   - sn
+# nibbana covered by *The Island*
 pages: 2
 parallels:
   - sa1202

@@ -11,6 +11,7 @@ tags:
   - imagery
   - buddha
   - iti
+# nibbana covered by *The Island*
 year: 1997
 pages: 1
 ---

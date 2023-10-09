@@ -6,10 +6,12 @@ subcat: poetry
 external_url: "https://suttacentral.net/iti58/en/ireland"
 drive_links:
   - "https://drive.google.com/file/d/1Y2smdS5Vcn5HTos_TsM-RfcWxZOxa4Vb/view?usp=drivesdk"
-course: nibbana
+course: hindrances
 tags:
   - inner
+  - desire
   - iti
+# nibbana covered by *The Island*
 year: 1997
 pages: 1
 parallels: []

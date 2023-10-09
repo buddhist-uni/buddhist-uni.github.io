@@ -12,6 +12,7 @@ tags:
   - an
   - body
   - sati
+# nibbana covered by *The Island*
 pages: 1
 parallels:
   - an4.46

@@ -9,6 +9,7 @@ tags:
   - nama-rupa
   - abhidhamma
   - pali-commentaries
+# nibbana covered by *The Island*
 publisher: bps
 year: 1984
 base_value: 1.2

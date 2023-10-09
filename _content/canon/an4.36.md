@@ -11,6 +11,7 @@ tags:
   - an
   - buddha
   - philosophy
+# nibbana covered by *The Island*
 pages: 2
 parallels:
   - ea38.3

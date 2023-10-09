@@ -8,6 +8,7 @@ tags:
   - dialogue
   - view
   - mn
+# nibbana covered by *The Island*
 year: 1998
 pages: 5
 parallels:

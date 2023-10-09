@@ -11,6 +11,7 @@ tags:
   - problems
   - an
 # imagery tag covered by Hecker's Similes
+# nibbana covered by *The Island*
 year: 2018
 subcat: poetry
 pages: 2
