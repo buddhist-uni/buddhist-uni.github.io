@@ -154,6 +154,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="snp5.4" %}
   - What is the difference between an Ordinary and an Enlightened being?
 
+{% include content_blurb.html category="canon" slug="iti58" %}
+  - Though in the world, the arahant is no longer of it.
+
 {% include content_blurb.html category="canon" slug="sn21.10" %}
   - What makes one truly renounced?
 

@@ -16,9 +16,9 @@ illustration_width: 1024
 illustration_center_x: 47%
 illustration_center_y: 50%
 illustration_caption: >-
-  In this promo shot, two Asian men share cigarettes with two European men after a generous, seafood picnic along the Pacific coast of North Korea.
+  In this promo shot, two Asian men share cigarettes with two European men after a generous, seafood picnic along the Pacific coast of North Korea in 2014.
   (<a href="https://www.flickr.com/photos/northkoreatravel/14582323293/">Uri</a>,
-  <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, 2014)
+  <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>)
 ---
 
 When humans form communities, they are capable of banding together in groups of almost any size: from two-person couples to international organizations.

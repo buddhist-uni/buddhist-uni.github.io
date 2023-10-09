@@ -307,7 +307,15 @@
   "private": "https://drive.google.com/drive/folders/1LzSiI0P9lSZ8uBuZXw8hMz6uRXtz3GaG",
   "public": "https://drive.google.com/drive/folders/1-FdgQxbfMn1_OzuzO8xdDbyDx3CqV4MS"
  },
+ "indian": {
+  "private": "https://drive.google.com/drive/folders/12iE1rpRQ-_mPrFpj54j337XwMJlotYrA",
+  "public": "https://drive.google.com/drive/folders/10VoXUOnt2ZHKdQS_MqfT3dr1zg8Lw0kk"
+ },
  "indic-religion": {
+  "private": "https://drive.google.com/drive/folders/176_9SGd8XcIgYjJs5-avvASWEeHNVn1i",
+  "public": null
+ },
+ "indic-religions": {
   "private": "https://drive.google.com/drive/folders/176_9SGd8XcIgYjJs5-avvASWEeHNVn1i",
   "public": null
  },
@@ -469,6 +477,10 @@
  },
  "neuroscience": {
   "private": "https://drive.google.com/drive/folders/1JuAkV5cYQ28pZKp-BvNJOvUX5q4XA5gB",
+  "public": null
+ },
+ "new-york": {
+  "private": "https://drive.google.com/drive/folders/1Zd8T6gLsusT7md1gF_ysE7U9FPJf5OdZ",
   "public": null
  },
  "nibbana": {
@@ -682,6 +694,10 @@
  "tibetan": {
   "private": "https://drive.google.com/drive/folders/10XTsw3Ap2chIX3KYtfIzQlf3UoP1sS_b",
   "public": "https://drive.google.com/drive/folders/148Qi_c5POGoGYWKuM0-FgEpxy7T6pdaG"
+ },
+ "tibetan-language": {
+  "private": "https://drive.google.com/drive/folders/1XX6NIeS1j4zCIAI0XqRGSJo126GmxoW-",
+  "public": null
  },
  "tibetan-roots": {
   "private": "https://drive.google.com/drive/folders/1EeBj6okpScEbvRDXXr_9QMl5F1-fcD0K",

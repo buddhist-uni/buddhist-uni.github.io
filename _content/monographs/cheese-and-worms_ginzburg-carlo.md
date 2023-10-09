@@ -21,7 +21,7 @@ pages: 177
 
 > Menocchio was certain that at death man reverted to the elements of which he was composed. But an irresistible yearning drove him to picture some sort of survival after death.
 
-A riveting reconstruction of the thought-world of a particular, early modern, Italian peasant whom had fashioned for himself an unpopular popular cosmology.
+A riveting reconstruction of the thought-world of a particular, early-modern, Italian peasant who had fashioned for himself an unpopular popular cosmology.
 
 > The victory of written over oral culture has been, principally, the victory of the abstract over the empirical.
 

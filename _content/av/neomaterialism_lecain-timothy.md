@@ -1,6 +1,5 @@
 ---
 title: "Neomaterialism"
-subcat: podcast
 authors:
  - "Timothy LeCain"
 year: 2019
@@ -13,10 +12,8 @@ drive_links:
   - "https://drive.google.com/file/d/1vLaFst5ZUn2f6agbSJp05hX796Alm7PX/view?usp=drivesdk"
 course: wider
 tags:
-  - world
   - materialism
   - becon
-  - science
   - nature
   - language
 minutes: 5
