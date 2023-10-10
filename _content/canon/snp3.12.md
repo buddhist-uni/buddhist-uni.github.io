@@ -9,6 +9,7 @@ course: pali-canon
 tags:
   - snp
   - philosophy
+# nibbana tag covered by *The Island*
 year: 2018
 pages: 9
 parallels: []

@@ -114,9 +114,6 @@ Chapter two of _The Island_ gives us the basic metaphorical image behind the ter
 
 And if you're still thinking that Nirvana is some heaven realm somewhere...
 
-{% include content_blurb.html category="canon" slug="thig5.10" %}
-- The Arahant Bhikkhuni Paṭācārā gives us the literal meaning of *nibbāna* in this beautiful poem from the *Therīgāthā*.
-
 {% include content_blurb.html category="booklets" slug="nibbana-and-the-fire-simile_nyanananda" %}
   - Bhante Ñāṇananda disabuses us of the notion that Nibbāna is a place by reminding us that "extinguishing" means the "letting go" of a fire's fuel.
 
@@ -197,7 +194,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### The Unapprehendability of the Enlightened
 
-{% include content_box.html category="canon" slug="snp5.6" %}
+{% include content_box.html category="canon" slug="snp5.7" %}
 
 {% include content_blurb.html category="canon" slug="mn71" %}
 - Even in the Buddha's day (all the more so later) people tried to attribute omniscience to the Buddha: a claim he rejected.

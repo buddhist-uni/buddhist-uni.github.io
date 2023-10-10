@@ -15,6 +15,8 @@ tags:
   - function
   - philosophy
   - imagery
+# nibbana tag covered by *The Island*
+# but I'll allow this one
 minutes: 1
 parallels: []
 # Partial parallels from SC

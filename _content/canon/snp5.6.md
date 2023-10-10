@@ -1,23 +1,18 @@
 ---
-title: "Snp 5.6: The Questions of Upasīva"
+title: "Snp 5.6 Dhotakamāṇavapucchā: The Questions of the Student Dhotaka"
+translator: sujato
 slug: "snp.5.06"
-reader: sucitto
-external_url: "https://suttareadings.net/audio/snp.5.06.suci.mp3"
-formats: [mp3]
+subcat: poetry
+external_url: "https://suttacentral.net/snp5.6/en/sujato"
 drive_links:
- - "https://drive.google.com/file/d/1JoVhBanj0t8Yr2DZdoAgxPhKP2Kjm6TD/view?usp=drivesdk"
-source_url: "https://suttacentral.net/snp5.6/en/mills"
-year: 2006
-course: nibbana
+  - "https://drive.google.com/file/d/1-GG6eHz65Mhmst09iS7hQzWXBiZCa7R5/view?usp=drivesdk"
+course: vipassana
 tags:
+  - stages
   - snp
-  - path
-  - philosophy
-  - anagami
-  - arahant
-  - vipassana
-  - epistemology
-minutes: 3
+# nibbana tag covered by *The Island*
+year: 2018
+pages: 2
 parallels: []
 # Partial parallels from SC
 #  - cnd2
@@ -27,4 +22,8 @@ parallels: []
 #  - ne37
 ---
 
-The Buddha gives pithy answers to Upasīva about the path to liberation and the status of anāgāmīs and arahants.
+> I rejoice, great seer,  
+in that supreme peace
+
+How can one become freed of all doubts?
+How does one continue to advance even after stream-entry?

@@ -5,11 +5,12 @@ external_url: "https://suttacentral.net/thig5.10/en/soma"
 translator: "Ayya Soma"
 drive_links: ["https://drive.google.com/file/d/1ptZGC3ifqC5bOuhct1x7gep8puqHzETR/view?usp=drivesdk"]
 status: featured
-course: nibbana
+course: path
 tags:
   - thig
   - canonical-poetry
   - imagery
+# nibbana tag covered by *The Island*
 year: 2021
 subcat: poetry
 pages: 1
