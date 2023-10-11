@@ -9,7 +9,9 @@ tags:
   - snp
   - canonical-poetry
   - sati
+  - faith
   - buddha
+# nibbana tag covered by *The Island*
 year: 2021
 pages: 3
 status: featured

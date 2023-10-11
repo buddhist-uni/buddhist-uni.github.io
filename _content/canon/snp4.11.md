@@ -14,7 +14,6 @@ course: origination
 tags:
   - snp
   - speech
-# nibbana tag covered by *The Island*
 minutes: 6
 parallels:
   - pli-tv-kd5

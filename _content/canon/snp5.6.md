@@ -9,8 +9,8 @@ drive_links:
 course: vipassana
 tags:
   - stages
+  - nibbana
   - snp
-# nibbana tag covered by *The Island*
 year: 2018
 pages: 2
 parallels: []

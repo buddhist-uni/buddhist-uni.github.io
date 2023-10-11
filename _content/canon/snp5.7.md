@@ -8,7 +8,7 @@ drive_links:
  - "https://drive.google.com/file/d/1JoVhBanj0t8Yr2DZdoAgxPhKP2Kjm6TD/view?usp=drivesdk"
 source_url: "https://suttacentral.net/snp5.7/en/mills?lang=en&reference=none&highlight=false"
 year: 2006
-course: nibbana
+course: nibbana # duplicate with *The Island* but that's okay...
 tags:
   - snp
   - anagami
