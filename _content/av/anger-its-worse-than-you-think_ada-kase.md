@@ -1,8 +1,9 @@
 ---
-title: "Anger - It's Worse Than You Think and How to Manage It"
+title: "Anger: It's Worse Than You Think and How to Manage It"
 authors:
   - "Ada Kase"
-external_url: "https://www.amazon.com/The-Buddhist-Auntie-Podcast/dp/B08JJQWDVG"
+file_links:
+  - "exclusive_01/Anger_-_It's_Worse_Than_You_Think_and_How_to_Manage_It%20(2019-01-24)%20-%20Buddhist%20Auntie.mp3"
 drive_links:
   - "https://drive.google.com/file/d/1xTYGdCYpuLi8l5bZZ-Wx0pVU203PYBjz/view?usp=sharing"
 format: [mp3]
