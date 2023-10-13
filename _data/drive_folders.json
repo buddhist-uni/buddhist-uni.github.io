@@ -207,6 +207,10 @@
   "private": null,
   "public": "https://drive.google.com/drive/folders/1234QK_JdiurFhgADDnpgWHOsicIIcine"
  },
+ "east-asia": {
+  "private": "https://drive.google.com/drive/folders/1DlOJh1bxDtyyTV2peQA6_yBRENOZjpnP",
+  "public": null
+ },
  "east-asian": {
   "private": "https://drive.google.com/drive/folders/1f1nTy6m6yOsmdg9isK6AE5HjszK4d4B_",
   "public": "https://drive.google.com/drive/folders/13NLwGkmoiM1NefIxCN9xoYNMevO3CbOl"
@@ -306,6 +310,10 @@
  "imagery": {
   "private": "https://drive.google.com/drive/folders/1LzSiI0P9lSZ8uBuZXw8hMz6uRXtz3GaG",
   "public": "https://drive.google.com/drive/folders/1-FdgQxbfMn1_OzuzO8xdDbyDx3CqV4MS"
+ },
+ "india": {
+  "private": "https://drive.google.com/drive/folders/1UYHPWaGqphKxE0aC0XudUD5fuQ_Safzr",
+  "public": null
  },
  "indian": {
   "private": "https://drive.google.com/drive/folders/12iE1rpRQ-_mPrFpj54j337XwMJlotYrA",
@@ -629,6 +637,10 @@
  },
  "social-work": {
   "private": "https://drive.google.com/drive/folders/15hr_UhtxvRoawTY7q4cGlm66Wvlj5D08",
+  "public": null
+ },
+ "south-asia": {
+  "private": "https://drive.google.com/drive/folders/1Ezc_c64N-7AygzmxW7n0NeOkiWpxeILh",
   "public": null
  },
  "speech": {

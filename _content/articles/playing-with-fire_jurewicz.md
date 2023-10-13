@@ -20,3 +20,5 @@ pages: "136--149"
 ---
 
 > … this similarity is neither accidental, nor caused by the Buddha's inability to free himself from the mental paradigms of his culture. I would rather argue that he formulated _Pratityasamutpada_ as a polemic against Vedic thought.
+
+For Venerable Sunyo's sceptical reaction, see ["Is Dependent Origination a Parody?"](https://discourse.suttacentral.net/t/is-dependent-origination-a-parody-of-vedic-cosmology/30841?u=khemarato.bhikkhu).
