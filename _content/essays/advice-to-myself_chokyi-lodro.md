@@ -5,7 +5,6 @@ authors:
 subcat: poetry
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/advice-to-self-song"
-source_url: ""
 drive_links:
   - "https://drive.google.com/file/d/1jLlmueSREJ0uSVuoHBLrikgIzeGSp1H6/view?usp=sharing"
 course: problems
@@ -13,7 +12,7 @@ tags:
   - refuge
   - lamentation
   - guru-worship
-  - death
+  - thought
 year: 2021
 publisher: "Lotsawa House"
 pages: 2
