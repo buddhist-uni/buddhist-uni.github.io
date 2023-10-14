@@ -1,0 +1,15 @@
+ipython
+pathvalidate
+yaspin
+tqdm
+beautifulsoup4
+requests
+python-slugify
+python-frontmatter
+tqdm
+bs4
+google
+google-api-python-client
+google_auth_oauthlib
+titlecase
+
