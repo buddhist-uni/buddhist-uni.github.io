@@ -358,6 +358,7 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
+# nibbana tag covered by *The Island*
 year: {year}
 pages: {pages}
 {parallels}---

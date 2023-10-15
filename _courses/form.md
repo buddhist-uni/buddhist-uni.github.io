@@ -88,14 +88,7 @@ There are two textbooks for this first part of the course:
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 - The main textbook for this part, *Robinson* will give us an accessible and enjoyable survey of Buddhism’s long history across Asia and beyond.
 
-{% include content_blurb.html category="booklets" slug="buddhist-sociological-thought_gnanarama" %}
-- A more theoretical text, *Gnanarama* will provide an introduction to how Buddhists  themselves thought about the sociology of religion.
-- Feel free to skip the readings from this book if you're not as interested in theory.
-
-
 #### Introduction
-
-Let us start off by reading Chapter 1 (“Towards a Definition”) of _Aspects of Early Buddhist Sociological Thought_ to round off our discussion of how Buddhism can be defined as a “religion” and how it may relate to other concepts you've heard of.
 
 {% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" %}
 - For a refresher on the basics of Buddhism, I recommend skimming this Q&A with Thubten Chodron before we dive into the more detailed history below.
@@ -115,10 +108,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - Here we get the Buddha's spiritual journey in his own words.
 - Notice the repetitive nature of the early, oral texts.
 
-<i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 2: Dhamma, Medicine and Sociology
-{:.mb-0}
-- This chapter introduces us to the central metaphor of Buddhism as a medical science, and the social implications of that framing.
-
 ##### Parallel to Robinson Ch 2: Teacher
 
 {% include content_blurb.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
@@ -136,10 +125,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 [CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
 {:.mb-0}
 - Here we get a few stories about the Buddha's life as a teacher from the early texts.
-
-<i class="fas fa-book-open"></i> <i>Aspects (of Early Buddhist Sociological Thought)</i> Chapter 3: Significance of Buddhist Chanting
-{:.mb-0}
-- Even in the Buddha’s time, monks would recite the teachings verbatim to acclimate to them and keep them in mind. Over time, this chanting became seen as apotropaic and was therefore ritualized quite early on. Today, chanting features prominently across Buddhist traditions and practices.
 
 ##### Parallel to Robinson chapter 3: “Development”
 
@@ -182,10 +167,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {:.mb-0}
 - On the practice of releasing animals for merit, a tradition now found across the Buddhist world.
 
-<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 5 (we'll come back to 4 later): Buddhist Art Symbols For Religious Edification
-{:.mb-0}
-- Art, offerings and other public devotions provided early (and current)  Buddhists with an effective, yet soft, way to spread the religion.
-
 ##### Chapter 4: “The Rise of Mahayana”
 
 {% include content_blurb.html category="articles" slug="second-buddha_loy" %}
@@ -210,10 +191,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {:.mb-0}
 - This eventually led to a "Middle Way" synthesis of these philosophical extremes.
 
-<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 4 (as promised): Aesthetics
-{:.mb-0}
-- Aesthetics was actually a major point of departure for the Early Mahayana, who rejected the cold austerity of the Abhidhamma in favor of more beautiful expressions of enlightened wisdom.
-
 ##### Chapter 5: “The Pantheon”
 
 {% include content_blurb.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
@@ -228,10 +205,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 {% include content_blurb.html category="essays" slug="true-dhamma-has-disappeared_geoff" %}
 - In addition to new relics and stories explaining them, many new teachings were also introduced. Today, as all the remaining traditions have picked up their fair share of shady teachers, deity cults, and doctrinal confusion, Ajahn Geoff reminds us that we have to be discerning about where we place our faith.
-
-<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 6: Socialization for Death
-{:.mb-0}
-- What effect does Buddhism's encouragement to reflect on death and impermanence have on how Buddhists perceive the cosmos, life, and the religion itself?
 
 {% include content_blurb.html category="essays" slug="pure-land_bloom" %}
 - All these factors—increased deification, a concern over death and the decline of the sasana, etc—fueled the movement towards what we now call "Pure Land" Buddhism: a next-life focused practice still very popular in East Asia today.
@@ -284,15 +257,10 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 [CBT] M.11, M.17, V.3, M.22, M.42, V.23, V.30, V.38, V.43, M.106, M.114, M.147–149
 {:.mb-0}
-- A few selections from the Vajrayana Canon showing its last developments in India. 
-
-<i class="fas fa-book-open"></i> <i>Aspects</i> Chapter 7: Social Conflict
-- A short essay on the Buddhist understanding of conflict
-- See also, [CBT] Th.17–20
+- A few selections from the Vajrayana Canon showing its last developments in India.
 
 ##### Parallel to Robinson's Regional Chapters 
 
-As we transition to more contemporary forms of Buddhism, let us set aside *Aspects of Early Buddhist Sociological Thought* for now, and consider the contemporary, lived traditions.
 While not representative of the diversity within each of the following "national" forms, I hope that the texts and clips below capture something of their beauty.
 
 ##### Robinson Chapter 7: Sri Lanka
@@ -462,10 +430,6 @@ Allison Goodwin gives a brief outline of the discrimination faced by women in Bu
 [CBT] V.91
 {:.mb-0}
 - Exuberant guru and deity worship are also notable features of Tibetan Buddhism.
-
-<i class="fas fa-book-open"></i> <i>Aspects (of Buddhist Sociological Thought)</i> Chapter 8: Women's Social Role
-{:.mb-0}
-- We (finally) return to *Aspects*' final chapter for a look at how the Buddha originally taught women.
 
 ##### Robinson Chapter 12: “Buddhism Comes West”
 

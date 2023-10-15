@@ -12,6 +12,7 @@ course: pali-canon
 tags:
   - setting
   - buddha
+  - funerals
 ---
 
 > … it is perhaps not so much the funeral itself, but rather the description which is so unusual and exceptional
