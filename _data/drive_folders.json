@@ -480,7 +480,7 @@
   "public": null
  },
  "nature": {
-  "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
+  "private": "https://drive.google.com/drive/folders/17-tTd1sgvVq6hPWT-A2SkWtJjLIXp2J_",
   "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
  },
  "nepalese": {
@@ -578,6 +578,10 @@
  "psychology": {
   "private": "https://drive.google.com/drive/folders/1fumD38xSjmx4XtO2qVv3fGUkPLCmipBC",
   "public": null
+ },
+ "pv": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/10CYC75SOhrdrwKEiqxo1i6dchMcJVojh"
  },
  "rebirth": {
   "private": "https://drive.google.com/drive/folders/14kwlyPUNih-tta_HvHfxwsM3QEFtgNvy",
@@ -691,6 +695,10 @@
   "private": "https://drive.google.com/drive/folders/1QB24T8R-SdjKS-wBA90y6LjfWoV1c5ZD",
   "public": "https://drive.google.com/drive/folders/1-c5ndLHFbYsVA-pz-Fr5MmFWYbj0lneG"
  },
+ "thai-language": {
+  "private": "https://drive.google.com/drive/folders/1-8tZEpUGxmtFvh_KWjdqgCNxbPYiuu9l",
+  "public": null
+ },
  "the-west": {
   "private": "https://drive.google.com/drive/folders/1aBcAZij5n1c9aY8JFeQyzW7slSlosCnJ",
   "public": null
@@ -782,5 +790,9 @@
  "writing": {
   "private": "https://drive.google.com/drive/folders/1VaKky6FCaitlxEBsCHx9-eQLt6Jo5Y_o",
   "public": "https://drive.google.com/drive/folders/1VgmzBc_D-45tvLI05ZyKuGiRTJxhoOnf"
+ },
+ "yoga": {
+  "private": "https://drive.google.com/drive/folders/182H6YPba1grfY11EIOsB4S8JcF7_YDyV",
+  "public": null
  }
 }

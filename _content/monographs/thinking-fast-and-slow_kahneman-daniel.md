@@ -6,7 +6,6 @@ year: 2011
 month: oct
 publisher: "Farrar, Straus and Giroux"
 status: featured
-external_url: "https://archive.org/details/thinkingfastslow0000kahn_b1q8/page/n8/mode/1up"
 olid: OL25416865M
 course: neuroscience
 tags:
