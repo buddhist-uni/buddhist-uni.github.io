@@ -351,6 +351,10 @@
   "private": "https://drive.google.com/drive/folders/1Jb9_bpetYri68jrI1BqdDwlwo3ZCCLDO",
   "public": "https://drive.google.com/drive/folders/1KCHrWiAqWN6ZXVV-JcWRa3dcm0OsJzGH"
  },
+ "intelligence": {
+  "private": "https://drive.google.com/drive/folders/1CJYg4RaqixBZet4wEBzDiqtYaONhAlam",
+  "public": null
+ },
  "interfaith": {
   "private": "https://drive.google.com/drive/folders/15YeRKcjlk0zFZvlqQbISY_AHgXKiQhNw",
   "public": null
@@ -386,6 +390,10 @@
  "karma": {
   "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
   "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
+ },
+ "kashmiri": {
+  "private": "https://drive.google.com/drive/folders/1n70RFPiy2ijPns7POVNiumpVtIyJGb2M",
+  "public": null
  },
  "kn": {
   "private": "https://drive.google.com/drive/folders/1-LY1WbLzc7-nHIOwPft_cGEM1-vPluRe",
@@ -522,6 +530,10 @@
  "pali-readers": {
   "private": "https://drive.google.com/drive/folders/16sLUn_akdLrTev_eyZXsOvQ-ZnIe9Bog",
   "public": "https://drive.google.com/drive/folders/12-NXrP-Xybys3J93_8zm50gsY2wxsTa9"
+ },
+ "parenting": {
+  "private": "https://drive.google.com/drive/folders/1QcBkApuDIO1tgqhB7WCtfP-x89wQQ1Xd",
+  "public": null
  },
  "past": {
   "private": "https://drive.google.com/drive/folders/1E6CkAnkLGX0vH6qeOls6_6myfkncaDGa",

@@ -120,7 +120,7 @@ def get_ytvideo_snippet(ytid):
   return youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
 
 def get_subfolders(folderid):
-  folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder'"
+  folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
   childrenFoldersDict = session().files().list(
     q=folderquery,
     spaces='drive',
@@ -226,7 +226,7 @@ def get_shortcuts_to_gfile(target_id):
   # note the following assumes only one page of results
   # if you are expecting >100 results
   # please implement paging when calling files.list
-  return session().files().list(q=f"shortcutDetails.targetId='{target_id}'", spaces='drive', fields='files(id,name,parents)').execute()['files']
+  return session().files().list(q=f"shortcutDetails.targetId='{target_id}' and trashed=false", spaces='drive', fields='files(id,name,parents)').execute()['files']
 
 def trash_drive_file(target_id):
   return session().files().update(fileId=target_id, body={"trashed": True}).execute()
