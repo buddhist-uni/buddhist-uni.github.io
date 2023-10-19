@@ -5,6 +5,7 @@ from pathlib import Path
 import requests
 from io import BytesIO
 from strutils import (
+  titlecase,
   git_root_folder,
   system_open,
   input_with_prefill,
@@ -79,9 +80,10 @@ def get_gfolders_for_course(course):
         print(f"Going with \"{subfolder['name']}\"")
         return (None, subfolder['id'])
     print(f"No subfolder found matching \"{q}\"")
-    q = input_with_prefill("Create new subfolder: ", parts[1])
+    q = input_with_prefill("Create new subfolder: ", titlecase(parts[1]))
     if not q:
-      raise RuntimeError("Expected a filename")
+      print("Okay, will just put in the private folder then.")
+      return (None, private_folder)
     subfolder = create_folder(q, private_folder)
     if not subfolder:
       raise RuntimeError("Error creating subfolder. Got null API response.")
