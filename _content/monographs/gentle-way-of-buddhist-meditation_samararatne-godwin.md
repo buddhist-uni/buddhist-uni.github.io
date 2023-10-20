@@ -13,7 +13,7 @@ tags:
   - daily-life
 year: 2007
 oclc: 795331142
-publisher: Inward Path Publisher
+publisher: Inward Path Publisher"
 address: "Malaysia"
 pages: 274
 ---
