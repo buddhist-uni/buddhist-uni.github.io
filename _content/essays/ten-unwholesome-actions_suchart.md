@@ -14,4 +14,4 @@ pages: 5
 
 > If we are satisfied, then we will not want more. Wanting more is delusion. We think that it will be better if we can just have this person. But instead of getting better, many problems follow.
 
-A short talk on the ten kinds of unwholesome action from [MN41]({% link _content/canon/mn41.md %}).
+A short talk on the ten kinds of unwholesome action from [MN41](/content/canon/mn41).

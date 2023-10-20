@@ -50,7 +50,7 @@ next_course_descs:
 The Early Buddhist Texts are the subset of the canonical literature of the different Buddhist schools which accurately report the teachings of the historical Buddha. These texts have undergone (indeed, continue to undergo) some revision and contemporary scholarship continues to debate subtle points, but most scholars agree that the Pali Suttas and Chinese Āgamas are historically reliable witnesses to the Buddha's life and direct teachings. Whether they are spiritually reliable, however, is a matter for us to investigate.
 
 ## Prerequisites
-The [Intro to Buddhism course]({% link _courses/buddhism.md %}) is not a prerequisite for this course. Though some familiarity with Buddhism will be helpful, this course is suitable for serious beginners.
+The [Intro to Buddhism course](/courses/buddhism) is not a prerequisite for this course. Though some familiarity with Buddhism will be helpful, this course is suitable for serious beginners.
 
 ### Time Commitment
 This course contains about 80 hours of lectures and reading, depending on how fast you read, and can take anywhere from 2 weeks to a year to finish. For example, 3 lectures (6hr) per week would make this a 15 week course.

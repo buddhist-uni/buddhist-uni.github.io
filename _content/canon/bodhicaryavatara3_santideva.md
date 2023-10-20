@@ -17,6 +17,6 @@ May I become the doctor and the cure
 
 
 A free translation of chapter 3 from the
-[_Bodhisattvacaryāvatāra_]({% link _content/canon/bodhisattvacaryavatara_santideva.md %})
+[_Bodhisattvacaryāvatāra_](/content/canon/bodhisattvacaryavatara_santideva)
 on joyfully taking hold of "bodhicitta."
 

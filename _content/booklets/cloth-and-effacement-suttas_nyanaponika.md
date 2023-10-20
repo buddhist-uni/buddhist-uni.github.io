@@ -21,4 +21,4 @@ publisher: bps
 pages: 33
 ---
 
-A translation of [MN 7]({% link _content/canon/mn7.md %}) and [MN 8]({% link _content/canon/mn8.md %}) with a philosophical introduction to these important suttas.
+A translation of [MN 7](/content/canon/mn7) and [MN 8](/content/canon/mn8) with a philosophical introduction to these important suttas.

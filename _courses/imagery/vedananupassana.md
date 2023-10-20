@@ -16,7 +16,7 @@ description: "We always have the option to investigate (rather than react to) ou
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **11**, **58**, and **60**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **11**, **58**, and **60**.
 
 ### Reflections
 

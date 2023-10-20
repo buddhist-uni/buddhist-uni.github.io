@@ -12,7 +12,7 @@ tags:
 year: 2021
 publisher: "Centre of Buddhist Studies, University of Hong Kong"
 address: "Hong Kong"
-series: "HKU: CBS publication series"
+#series: "HKU: CBS publication series"
 booktitle: "Illuminating the Dharma: Buddhist Studies in Honour of Venerable Professor K.L. Dhammajoti"
 editor: "Toshiichi Endo"
 pages: "11--27"

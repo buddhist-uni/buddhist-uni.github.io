@@ -16,7 +16,7 @@ description: "The world is full of distractions from the spiritual path."
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **19**, **42**, **45** and **63**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **19**, **42**, **45** and **63**.
 
 ### Reflection
 

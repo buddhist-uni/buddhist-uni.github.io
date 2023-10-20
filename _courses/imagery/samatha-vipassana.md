@@ -16,7 +16,7 @@ description: "There is no meditation for he who lacks wisdom, nor wisdom for he 
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **6**, **36**, **49** and **65**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **6**, **36**, **49** and **65**.
 
 ### Reflection
 

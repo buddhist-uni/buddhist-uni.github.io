@@ -11,4 +11,4 @@ authors: [bodhi]
 
 A listing of the primary themes of the Aṅguttara Nikāya arranged according to the gradual training with references to the suttas on those themes. 
 
-Adapted from the index of the same name in [Bhikkhu Bodhi's AN translation]({% link _content/monographs/an_bodhi.md %}).
+Adapted from the index of the same name in [Bhikkhu Bodhi's AN translation](/content/monographs/an_bodhi).

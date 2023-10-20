@@ -8,12 +8,12 @@ But first, the courses!
 
 This month I've added three new courses on the primary languages of the Early Buddhist Texts: Chinese and Pāli.
 
-[Chinese Buddhist Writing]({% link _courses/chinese-primer.md %}) is a course for Buddhists with some prior knowledge of Mandarin (or who are willing to hussle to get those fundamentals elsewhere) who would like help reading Chinese Buddhist scriptures. This course goes character-by-character through the different strata of Chinese texts, giving a comprehensive introduction to Buddhist Chinese from ancient Indian translations to esoteric treatises.
+[Chinese Buddhist Writing](/courses/chinese-primer) is a course for Buddhists with some prior knowledge of Mandarin (or who are willing to hussle to get those fundamentals elsewhere) who would like help reading Chinese Buddhist scriptures. This course goes character-by-character through the different strata of Chinese texts, giving a comprehensive introduction to Buddhist Chinese from ancient Indian translations to esoteric treatises.
 
-[The Pāli Primer Course]({% link _courses/pali-primer.md %}) is a fun introduction to the Pāli Language for everyone, and for those who have some background already, [the intermediate Pāli course]({% link _courses/pali-new-course.md %}) will get you into the suttas themselves. Both classes are taught by the Venerable Bhikkhu Bodhi.
+[The Pāli Primer Course](/courses/pali-primer) is a fun introduction to the Pāli Language for everyone, and for those who have some background already, [the intermediate Pāli course](/courses/pali-new-course) will get you into the suttas themselves. Both classes are taught by the Venerable Bhikkhu Bodhi.
 
 {% if site.show_bibtex %}
-In case it's helpful to academics, I've added the [Bibtex information](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file){:target="_blank"} for _all_ the items in the library to the bottom of each piece's [permalink page]({% link _content/booklets/tracing-thought-through-things_stargardt.md %}). And for those who use bibliographic software, like [JabRef](https://www.jabref.org/){:target="_blank"}, you can now download [**the entire library** as a single `.bib file`](/content.bib) for importing into your reference manager of choice, [here]({% link library.md %}#additional-information).
+In case it's helpful to academics, I've added the [Bibtex information](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file){:target="_blank"} for _all_ the items in the library to the bottom of each piece's [permalink page](/content/booklets/tracing-thought-through-things_stargardt). And for those who use bibliographic software, like [JabRef](https://www.jabref.org/){:target="_blank"}, you can now download [**the entire library** as a single `.bib file`](/content.bib) for importing into your reference manager of choice, [here](/library#additional-information).
 {% endif %}
 
 And, on a more serious note, 2020 has been a year.

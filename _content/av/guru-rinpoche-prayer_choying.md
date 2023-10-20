@@ -12,7 +12,6 @@ tags:
 year: 2009
 month: oct
 base_value: 0.2
-series: "Music for Inner Peace"
 minutes: 5
 ---
 

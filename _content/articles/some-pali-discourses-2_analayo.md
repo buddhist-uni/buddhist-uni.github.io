@@ -16,4 +16,4 @@ tags:
 
 >  Placing the Pali discourses and their counterparts in the Chinese Āgamas side by side often brings to light an impressive degree of agreement, even down to rather minor details. This close agreement testifies to the emphasis on verbatim recall in the oral transmission of the early discourses. In this respect the early Buddhist oral tradition forms a class of its own in the ambit of oral literature
 
-An excellent introduction on the use of comparative studies to discern the history of the Buddhist Texts, particularly showing the influence of Abhidhammic thought on the Pāli Canon. Find [part one here]({% link _content/articles/some-pali-discourses-1_analayo.md %}).
+An excellent introduction on the use of comparative studies to discern the history of the Buddhist Texts, particularly showing the influence of Abhidhammic thought on the Pāli Canon. Find [part one here](/content/articles/some-pali-discourses-1_analayo).

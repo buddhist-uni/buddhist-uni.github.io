@@ -21,4 +21,4 @@ minutes: 797
 
 These classic recordings give a thorough and dense overview of current, orthodox Theravada doctrine.
 
-Note that, _pace_ the title, this philosophy is not what the Buddha taught "as it is" but is rather {% include tag-link.html text="the Pāli" tag="pali-canon" %} as interpreted by the commentarial tradition. 
+Note that, _pace_ the title, this philosophy is not what the Buddha taught "as it is" but is rather [the Pāli](/tags/pali-canon) as interpreted by the commentarial tradition. 

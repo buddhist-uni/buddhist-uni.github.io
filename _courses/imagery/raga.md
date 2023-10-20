@@ -18,7 +18,7 @@ description: "Passion is the fire in our hearts that burns us alive. Far from ro
 
 ### Similes
 
-Read the introduction to Part 1 of [Hecker]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) now, and the similes: **7**, **14**, **39** and **44**.
+Read the introduction to Part 1 of [Hecker](/content/monographs/similes-of-the-buddha_hecker) now, and the similes: **7**, **14**, **39** and **44**.
 
 ### Reflections
 

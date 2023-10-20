@@ -13,6 +13,6 @@ minutes: 5273
 course_time_multiplier: 0.5 # one of two options for lectures to watch
 ---
 
-Bhikkhu Bodhi continues to teach the same group of students from [the primer course]({% link _content/av/pali-primer_bodhi.md %}), this time teaching from [Gair and Karunatillake]({% link _content/monographs/new-course-in-reading-pali_gair-karunatillake.md %}) in a sequence of 53 lectures.
+Bhikkhu Bodhi continues to teach the same group of students from [the primer course](/content/av/pali-primer_bodhi), this time teaching from [Gair and Karunatillake](/content/monographs/new-course-in-reading-pali_gair-karunatillake) in a sequence of 53 lectures.
 
 

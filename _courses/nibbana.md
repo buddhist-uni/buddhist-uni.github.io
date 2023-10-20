@@ -46,7 +46,7 @@ This “dhamma eye of wisdom” opens when we see for ourselves that absolutely 
 
 ## Prerequisites
 
-This course assumes prior knowledge about [Buddhist practice]({% link _courses/function.md %}). Familiarity with the [early texts]({% link _courses/ebts.md %}) and [Buddhist philosophy]({% link _courses/philosophy.md %}) is recommended but not required. 
+This course assumes prior knowledge about [Buddhist practice](/courses/function). Familiarity with the [early texts](/courses/ebts) and [Buddhist philosophy](/courses/philosophy) is recommended but not required. 
 
 
 ## Textbooks
@@ -143,7 +143,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="an8.5" %}
   - How does an arahant relate to the world?
 
-{% include content_blurb.html category="article" slug="anuruddha-sutta_ireland" %}
+{% include content_blurb.html category="canon" slug="sn9.6" %}
+  - How does an arahant see the world?
+
+{% include content_blurb.html category="articles" slug="anuruddha-sutta_ireland" %}
   - To an enlightened being, even sensual pleasures are seen as painful for how fleeting they are indeed!
 
 #### To Be or Not to Be

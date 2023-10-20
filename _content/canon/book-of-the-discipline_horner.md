@@ -16,7 +16,7 @@ base_value: 5
 pages: 2992
 ---
 
-The first English translation of the Vinaya Pitaka, [Bhikkhu Sujato]({% link _authors/sujato.md %}) and [Bhikkhu Brahmali]({% link _authors/brahmali.md %}) prepared this ebook version of the PTS volumes.
+The first English translation of the Vinaya Pitaka, [Bhikkhu Sujato](/authors/sujato) and [Bhikkhu Brahmali](/authors/brahmali) prepared this ebook version of the PTS volumes.
 
 **Beware though!** This translation is known to have many mistakes! For a partial list, see [*Tiradhammo (JPTS 19)*](https://archive.org/download/jpts-xix-1993/Corrections%20to%20The%20Book%20of%20Discipline-%20Thiradhammo_text.pdf){:target="_blank" ga-event-value="0.35"}
 

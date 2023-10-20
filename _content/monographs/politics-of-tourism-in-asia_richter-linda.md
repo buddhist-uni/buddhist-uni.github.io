@@ -18,5 +18,5 @@ pages: 161
 
 > … tourism is a highly political phenomenon, the implications of which have been only rarely perceived and almost nowhere fully understood. [...] If tourism policy does not integrate or anticipate its political component, then policies and the people affected by them will suffer.
 
-A monograph to help tourism development planners to avoid disasters like [Lama Zopa Rinpoche's 2012 "Maitreya" debacle]({% link _content/monographs/battling-the-buddha-of-love_falcone-jessica.md %}).
+A monograph to help tourism development planners to avoid disasters like [Lama Zopa Rinpoche's 2012 "Maitreya" debacle](/content/monographs/battling-the-buddha-of-love_falcone-jessica).
 If only he had read this book!

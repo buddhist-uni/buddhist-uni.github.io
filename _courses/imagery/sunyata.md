@@ -16,7 +16,7 @@ description: "Seeing in terms of the Four Noble Truths is the foundation which s
 
 ### Similes
 
-This being the last section of our course, we will read the three remaining similes from [_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) we haven't covered yet: **4**, **30**, and **73**. Congratulations! You've now finished the entire book!
+This being the last section of our course, we will read the three remaining similes from [_Hecker_](/content/monographs/similes-of-the-buddha_hecker) we haven't covered yet: **4**, **30**, and **73**. Congratulations! You've now finished the entire book!
 
 ### Reflection
 

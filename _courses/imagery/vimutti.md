@@ -18,7 +18,7 @@ description: "The culmination of the path, <i>vimutti</i> is the heart at rest, 
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **34** and **69**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **34** and **69**.
 
 ### Reflections
 

@@ -15,7 +15,6 @@ tags:
 year: 2022
 month: jun
 publisher: "the BBC"
-series: "In Our Time"
 minutes: 49
 ---
 

@@ -21,4 +21,4 @@ big_height: 4000
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:BUDDHA-OIL_PAINTING.jpg">Rajasekharan Parameswaran</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>
 ---
 
-The founder of [the Buddhist religion]({% link _tags/buddhism.md %}), whose 45-year ministry was memorized and passed down by his disciples in the corpus of literature we now call the Early Buddhist Texts.
+The founder of [the Buddhist religion](/tags/buddhism), whose 45-year ministry was memorized and passed down by his disciples in the corpus of literature we now call the Early Buddhist Texts.

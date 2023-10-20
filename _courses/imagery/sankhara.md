@@ -16,7 +16,7 @@ description: "Our delusion tells us that we have to do something to fix the worl
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **64**, **81** and **82**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **64**, **81** and **82**.
 
 ### Extra Credit
 {% include content_blurb.html category="canon" slug="dn2" %}

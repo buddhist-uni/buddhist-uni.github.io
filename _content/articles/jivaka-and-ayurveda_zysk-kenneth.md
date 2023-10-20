@@ -18,4 +18,4 @@ pages: "70--86"
 
 > The Pali account of the physician Jīvaka illustrates a well-established āyurvedic medical tradition and preserves at least one practice not found in classical āyurveda.
 
-Comparing [Jīvaka's story]({% link _content/canon/pli-tv-kd8.1.md %}) to the old āyurvedic texts.
+Comparing [Jīvaka's story](/content/canon/pli-tv-kd8.1) to the old āyurvedic texts.

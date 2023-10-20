@@ -16,7 +16,7 @@ layout: default
     {% assign parents = parents | push: plink %}
 {% endfor %}
 {% unless page.banner_info %}
-<div class="back"><a href="{% link tags.html %}" style="font-size: 130%;">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
+<div class="back"><a href="/tags" style="font-size: 130%;">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
 {% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
@@ -125,7 +125,7 @@ Please be aware that this tag is still under construction and as such is missing
 {% if parents.size > 0 %}
 <em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
 {% else %}
-<em class="back">Back: <a href="{% link tags.html %}">Topic Index</a></em>
+<em class="back">Back: <a href="/tags">Topic Index</a></em>
 {% endif %}
 </article>
 

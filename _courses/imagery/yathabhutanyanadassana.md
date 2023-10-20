@@ -16,7 +16,7 @@ description: "The culmination of insight, <i>yathābhūtañāṇadassana</i> is 
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **17**, **28**, **67** and **84**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **17**, **28**, **67** and **84**.
 
 ### Reflections
 

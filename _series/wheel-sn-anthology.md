@@ -5,7 +5,7 @@ publisher: bps
 years: 1981–1984
 ---
 
-A series of three short anthologies from the Saṃyutta Nikāya by different translators published as part of the larger [Wheel Series]({% link _series/wheel.md %}).
+A series of three short anthologies from the Saṃyutta Nikāya by different translators published as part of the larger [Wheel Series](/series/wheel).
 
 Taken as a whole, these three booklets form a substantial (about 150 page) anthology of the SN, but when compared, the three anthologies also make for an interesting contrast in translation styles.
 

@@ -16,7 +16,7 @@ description: "The culmination of meditation, <i>upekkhā</i> allows us to be pea
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **29**, **37**, **43** and **80**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **29**, **37**, **43** and **80**.
 
 ### Reflections
 

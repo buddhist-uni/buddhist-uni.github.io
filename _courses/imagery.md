@@ -69,7 +69,7 @@ Because of this, coming to understand the words and images of the Canon can be b
 
 ## Prerequisites
 
-This course assumes some prior familiarity with [the Early Buddhist Texts]({% link _courses/ebts.md %}).
+This course assumes some prior familiarity with [the Early Buddhist Texts](/courses/ebts).
 
 {% include multipartcourse_outline.html course="imagery" %}
 

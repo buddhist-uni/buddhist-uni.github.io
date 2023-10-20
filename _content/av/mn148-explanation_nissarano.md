@@ -11,4 +11,4 @@ month: jan
 minutes: 87
 ---
 
-A relaxed talk on [MN 148]({% link _content/canon/mn148.md %}) and on our stubborn ignorance.
+A relaxed talk on [MN 148](/content/canon/mn148) and on our stubborn ignorance.

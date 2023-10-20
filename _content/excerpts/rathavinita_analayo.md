@@ -19,4 +19,4 @@ tags:
   - imagery
 ---
 
-A short summary and explanation of [MN 24]({% link _content/canon/mn24.md %}): the simile of the charioteer which explains how the Buddhist path functions to bootstrap us out of delusion.
+A short summary and explanation of [MN 24](/content/canon/mn24): the simile of the charioteer which explains how the Buddhist path functions to bootstrap us out of delusion.

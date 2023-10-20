@@ -13,4 +13,4 @@ base_value: 0.5
 pages: 17
 ---
 
-An alternate translation of [MN 82]({% link _content/canon/mn82.md %}).
+An alternate translation of [MN 82](/content/canon/mn82).

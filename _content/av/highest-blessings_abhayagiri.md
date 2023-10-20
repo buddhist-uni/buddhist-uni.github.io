@@ -18,5 +18,5 @@ tags:
 minutes: 4
 ---
 
-The monks of Abhayagiri chanting the canonical poem on life's highest blessings [from the Khp]({% link _content/canon/khp5.md %}).
+The monks of Abhayagiri chanting the canonical poem on life's highest blessings [from the Khp](/content/canon/khp5).
 

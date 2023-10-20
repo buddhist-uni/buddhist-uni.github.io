@@ -19,7 +19,7 @@ _Analayo's Craving chapter 4_
 
 ### Similes
 
-Read [_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes numbered: **21**, **50**, **54** and **75**.
+Read [_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes numbered: **21**, **50**, **54** and **75**.
 
 ### Reflections
 

@@ -16,7 +16,6 @@ tags:
 year: 2001
 month: feb
 publisher: "the BBC"
-series: "In Our Time"
 minutes: 28
 ---
 

@@ -17,7 +17,7 @@ description: "Insight, or literally \"clear seeing,\" is a result of paying clos
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **38**, **68**, **71** and **83**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **38**, **68**, **71** and **83**.
 
 ### Reflection
 

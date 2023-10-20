@@ -46,7 +46,7 @@ In searching for such a middle way, I take on Bhante Yuttadhammo’s definition 
 The religious forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
 ## Prerequisites
-This course assumes familiarity with [the fundamentals of Buddhism]({% link _courses/buddhism.md %}), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).
+This course assumes familiarity with [the fundamentals of Buddhism](/courses/buddhism), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).
 
 
 ## The Course
@@ -599,7 +599,7 @@ A few more words are also due on the subject of restraint, beyond the five prece
 #### Praxis Conclusion 
 
 {% include content_blurb.html category="av" slug="dhammavinaya_yuttadhammo" %}
-- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course]({% link _courses/buddhism.md %})) and tells us how we can recognize when our own practice of Buddhism goes off track.
+- Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course](/courses/buddhism)) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
 [CBT] V.52, V.54
 {:.mb-0}

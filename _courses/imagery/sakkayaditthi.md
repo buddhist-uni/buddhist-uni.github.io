@@ -17,7 +17,7 @@ description: "The self is an assumption we construct from our dreams."
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **3**, **18**, **24** and **25**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **3**, **18**, **24** and **25**.
 
 ### Reflections
 

@@ -13,5 +13,5 @@ minutes: 2831
 course_time_multiplier: 0.5 # one of two options for lecture series
 ---
 
-Bhikkhu Bodhi teaches from [Gair and Karunatillake]({% link _content/monographs/new-course-in-reading-pali_gair-karunatillake.md %}) for a fresh group of students in a series of 34 lectures.
+Bhikkhu Bodhi teaches from [Gair and Karunatillake](/content/monographs/new-course-in-reading-pali_gair-karunatillake) for a fresh group of students in a series of 34 lectures.
 

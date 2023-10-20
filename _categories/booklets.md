@@ -8,4 +8,4 @@ subcats:
   - thesis
 ---
 
-Self-published, free books, often (though not always) shorter than commercial [monographs]({% link _categories/monographs.md %}) booklets are longer than [essays](/content/essays).
+Self-published, free books, often (though not always) shorter than commercial [monographs](/categories/monographs) booklets are longer than [essays](/content/essays).

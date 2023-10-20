@@ -17,7 +17,7 @@ description: "Enlightenment is not another item on our todo list. It is the erra
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **35**, **48**, **77** and **85**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **35**, **48**, **77** and **85**.
 
 ### Reflection
 

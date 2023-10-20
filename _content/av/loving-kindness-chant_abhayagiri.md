@@ -17,4 +17,4 @@ tags:
 minutes: 3
 ---
 
-The monks from Abhayagiri chanting the much beloved sutta on Loving-Kindness: [Snp1.8]({% link _content/canon/snp1.8.md %}).
+The monks from Abhayagiri chanting the much beloved sutta on Loving-Kindness: [Snp1.8](/content/canon/snp1.8).

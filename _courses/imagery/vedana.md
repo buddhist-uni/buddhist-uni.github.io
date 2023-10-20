@@ -15,7 +15,7 @@ description: "The three kinds of feeling — pleasant, painful, and neutral feel
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **8**, **9**, and **12**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **8**, **9**, and **12**.
 
 ### Reflections
 

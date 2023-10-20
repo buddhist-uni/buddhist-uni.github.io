@@ -45,7 +45,7 @@ For a quick introduction to how Indian Buddhist Texts were translated into Chine
 
 ## Textbooks
 
-The course is, as mentioned above, largely a copy-paste of John Kieschnick's excellent (currently six volume!) [_Primer in Chinese Buddhist Writings_]({% link _series/buddhist-chinese-primer_kieschnick.md %}).
+The course is, as mentioned above, largely a copy-paste of John Kieschnick's excellent (currently six volume!) [_Primer in Chinese Buddhist Writings_](/series/buddhist-chinese-primer_kieschnick).
 
 It proceeds in four parts, corresponding to his three numbered volumes followed by the three supplemental volumes.
 

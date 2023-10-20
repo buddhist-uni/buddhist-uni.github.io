@@ -12,7 +12,8 @@ tags:
   - chan
 year: 2005
 publisher: hawaii
-series: "Dimensions of Asian Spirituality"
+series: doas_hawaii
+number: 2
 chapter: 4
 booktitle: "Chan Buddhism"
 pages: "66--80"

@@ -15,7 +15,7 @@ description: "While some skeptical distance and investigation are necessary to l
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes numbered: **20**, **32**, **41** and **76**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes numbered: **20**, **32**, **41** and **76**.
 
 ### Reflections
 

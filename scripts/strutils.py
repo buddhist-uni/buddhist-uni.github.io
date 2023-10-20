@@ -240,13 +240,22 @@ class FileSyncedSet:
     if os.path.exists(fname):
       with open(fname) as fd:
         for l in fd:
-          self.items.add(l[:-1])
+          l = l[:-1]
+          self.items.add(l) if l else None
   def add(self, item):
     item = self.norm(item)
     if item not in self.items:
       self.items.add(item)
       with open(self.fname, "a") as fd:
         fd.write(f"{item}\n")
+  def remove(self, item):
+    item = self.norm(item)
+    if item not in self.items:
+      return
+    self.items.remove(item)
+    with open(self.file_name, "w") as fd:
+      for item in self.items:
+        fd.write(f"{item}\n") if item else None
   def delete_file(self):
     os.remove(self.fname)
     self.items = set()

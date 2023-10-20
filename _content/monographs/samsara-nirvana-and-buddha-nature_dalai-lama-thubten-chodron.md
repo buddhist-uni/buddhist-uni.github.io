@@ -11,7 +11,7 @@ tags:
   - mahayana
   - philosophy
 series: library-of-wisdom-and-compassion
-volume: 3
+number: 3
 pages: 440
 ---
 

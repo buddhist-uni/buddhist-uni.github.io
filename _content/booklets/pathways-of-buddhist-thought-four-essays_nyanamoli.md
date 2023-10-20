@@ -15,6 +15,7 @@ year: 1963
 publisher: bps
 address: "Kandy"
 series: wheel
+number: 52
 pages: 30
 ---
 

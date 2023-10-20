@@ -18,5 +18,5 @@ pages: 5
 The way to adopt the discipline of all the buddhas’ heirs.
 
 A verse translation of chapter 1 from the
-[_Bodhisattvacaryāvatāra_]({% link _content/canon/bodhisattvacaryavatara_santideva.md %})
+[_Bodhisattvacaryāvatāra_](/content/canon/bodhisattvacaryavatara_santideva)
 on "bodhicitta."

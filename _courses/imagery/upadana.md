@@ -6,7 +6,7 @@ layout: "imagerycoursepart"
 order: 14
 description: "We grasp to the limited things of the world out of fear of falling, not realizing that it's the attachment that is hurting us."
 ---
-Having now finished _Excursions_ volume 1, we are halfway through our course and ready to move on to [_Excursions_ volume 2]({% link _content/monographs/grasping-to-emptiness_analayo.md %}). Congratulations on making it this far!
+Having now finished _Excursions_ volume 1, we are halfway through our course and ready to move on to [_Excursions_ volume 2](/content/monographs/grasping-to-emptiness_analayo). Congratulations on making it this far!
 
 ### Suttas
 <p>
@@ -16,7 +16,7 @@ Having now finished _Excursions_ volume 1, we are halfway through our course and
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **2**, **5**, **10** and **13**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **2**, **5**, **10** and **13**.
 
 ### Reflections
 

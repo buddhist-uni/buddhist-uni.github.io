@@ -17,7 +17,7 @@ description: "Happiness can result from our efforts, but is double-sided: there 
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **1**, **22**, **27** and **51**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **1**, **22**, **27** and **51**.
 
 ### Reflections
 

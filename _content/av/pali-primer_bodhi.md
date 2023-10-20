@@ -10,5 +10,5 @@ base_value: 1.8
 minutes: 2700
 ---
 
-Bhikkhu Bodhi's lectures on [DeSilva's _Pāli Primer_]({% link _content/booklets/pali-primer_desilva.md %}). You can get [the course handouts here](https://drive.google.com/drive/folders/1wiMJygvSGTaivFqmKSihI__IGrzGwCJy){:target="_blank"  ga-event-value="0.35"}.
+Bhikkhu Bodhi's lectures on [DeSilva's _Pāli Primer_](/content/booklets/pali-primer_desilva). You can get [the course handouts here](https://drive.google.com/drive/folders/1wiMJygvSGTaivFqmKSihI__IGrzGwCJy){:target="_blank"  ga-event-value="0.35"}.
 

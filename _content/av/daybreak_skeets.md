@@ -13,7 +13,7 @@ tags:
   - language-poetry
 year: 2021
 month: oct
-series: "Poetry Unbound"
+#series: "Poetry Unbound"
 minutes: 18
 ---
 

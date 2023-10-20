@@ -2,10 +2,10 @@
 title: "Just Movement"
 authors: ["Robert DeLong"]
 subcat: music
-external_url: "https://youtu.be/jltoFSLtDjM"
+external_url: "https://www.youtube.com/watch?v=KDcGsZeHZIg"
 year: 2013
 publisher: "Glassnote Records"
-course: philosophy
+course: view
 tags:
   - restlessness
   - progress

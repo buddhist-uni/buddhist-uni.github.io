@@ -34,7 +34,7 @@ This course is an introduction to reading the Pāli Canon in its original langua
 
 ### Prerequisites
 
-Though you need not have taken [the "Level 1" Primer Course]({% link _courses/pali-primer.md %}) to take this class, some prior knowledge of Pāli or Sanskrit is required. This course also assumes prior comfort with [the doctrinal content of the Canon]({% link _courses/ebts.md %}) as it focuses more on language acquisition than philosophical engagement.
+Though you need not have taken [the "Level 1" Primer Course](/courses/pali-primer) to take this class, some prior knowledge of Pāli or Sanskrit is required. This course also assumes prior comfort with [the doctrinal content of the Canon](/courses/ebts) as it focuses more on language acquisition than philosophical engagement.
 
 ### Time Requirement
 
@@ -49,7 +49,7 @@ There are approximately 40 hours of lectures (depending on which section you tak
 This course is taught, once again, by Bhikkhu Bodhi, but this time in two sections.
 
 {% include content_blurb.html category="av" slug="second-pali-course_bodhi" %}
-- This version of the course was taught in 53 lectures to students who had just completed [his "Primer" course]({% link _courses/pali-primer.md %}).
+- This version of the course was taught in 53 lectures to students who had just completed [his "Primer" course](/courses/pali-primer).
 - If you are taking this "Level 2" course having just completed the "Level 1" course, this is likely the set of lectures you'll want to take as it picks up exactly where the previous course left off.
 
 {% include content_blurb.html category="av" slug="new-pali-course_bodhi" %}

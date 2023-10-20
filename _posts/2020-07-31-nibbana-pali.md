@@ -2,7 +2,7 @@
 title: "Two New Bibliographies"
 ---
 
-This month I'm happy to announce two bibliographies on more advanced topics: [*nibbāna*]({% link _tags/nibbana.md %}) and [the Pāli Canon]({% link _tags/pali-canon.md %}).
+This month I'm happy to announce two bibliographies on more advanced topics: [*nibbāna*](/tags/nibbana) and [the Pāli Canon](/tags/pali-canon).
 
 I'm especially happy to finally share with you:
 
@@ -16,7 +16,7 @@ I'm especially happy to finally share with you:
 {% assign content = site.content | where_exp: "c", "cslugs contains c.slug" %}
 <div class="narrow">{% include content_list.html contents=content %}</div>
 
-All classics, which I recommend most highly to any serious student---along with the rest of [the library]({% link library.md %}), of course, which remains open 7 days a week (regardless of Covid-19).
+All classics, which I recommend most highly to any serious student---along with the rest of [the library](/library), of course, which remains open 7 days a week (regardless of Covid-19).
 
 As always, feel free to email any questions or comments you may have.
 

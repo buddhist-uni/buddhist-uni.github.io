@@ -39,7 +39,7 @@ Finally, in addition to striking such delicate balances, the Majjhima Nikāya al
 
 ## Prerequisites
 
-This course requires prior familiarity with [Buddhism]({% link _courses/buddhism.md %}) and [its purpose]({% link _courses/function.md %}).
+This course requires prior familiarity with [Buddhism](/courses/buddhism) and [its purpose](/courses/function).
 
 ## Time Requirement
 

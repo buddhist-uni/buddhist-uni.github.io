@@ -17,7 +17,7 @@ description: "The opposite of love, acceptance, and compassion, <i>vyāpāda</i>
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes numbered: **52**, **61**, **66** and **70**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes numbered: **52**, **61**, **66** and **70**.
 
 ### Reflections
 

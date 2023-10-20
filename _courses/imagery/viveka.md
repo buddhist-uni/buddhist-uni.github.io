@@ -17,7 +17,7 @@ description: "There is a time for learning from others, but the real work of eng
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **15**, **33**, and **59**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **15**, **33**, and **59**.
 
 ### Reflection
 

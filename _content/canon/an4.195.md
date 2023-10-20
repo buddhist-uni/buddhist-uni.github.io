@@ -20,4 +20,4 @@ parallels:
 
 A Jain follower espouses a version of fatalism which the Buddha then refutes.
 
-This somewhat confusing discourse has a parallel in [MĀ 12]({% link _content/monographs/ma1_bdk.md %}), which I recommend reading alongside this account as it helps to clarify things somewhat.
+This somewhat confusing discourse has a parallel in [MĀ 12](/content/monographs/ma1_bdk), which I recommend reading alongside this account as it helps to clarify things somewhat.

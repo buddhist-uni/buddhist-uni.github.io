@@ -18,8 +18,8 @@ year: 2011
 publisher: "Finnish Oriental Society"
 address: "Helsinki"
 volume: 109
-series: "Studia Orientalia"
 booktitle: "Himalayan Nature Representations and Reality"
+journal: store
 pages: "1--15"
 ---
 > in Rangjung Dorje’s poems, the environment is presented as a catalyst for seeing the enlightened “view”.

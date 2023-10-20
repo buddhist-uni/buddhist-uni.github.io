@@ -12,5 +12,5 @@ tags:
 pages: 31
 ---
 
-Ajahn Sujato's general introduction to [Sutta Central]({% link _content/reference/sutta-central.md %}) is worth a read as an overview of the Pāli Canon and an introduction into the setting of the Early Buddhist Texts.
+Ajahn Sujato's general introduction to [Sutta Central](/content/reference/sutta-central) is worth a read as an overview of the Pāli Canon and an introduction into the setting of the Early Buddhist Texts.
 

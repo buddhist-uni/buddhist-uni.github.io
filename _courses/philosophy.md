@@ -63,7 +63,7 @@ Buddhist Philosophy is thus the way of thinking which leads beyond thought.
  
 ## Prerequisites
 
-This course assumes some familiarity with [the purpose of Buddhism]({% link _courses/function.md %}). Prior comfort with [the Early Buddhist Texts]({% link _courses/ebts.md %}) is not required, though may be helpful.
+This course assumes some familiarity with [the purpose of Buddhism](/courses/function). Prior comfort with [the Early Buddhist Texts](/courses/ebts) is not required, though may be helpful.
 
 ## Lectures
 
@@ -84,7 +84,7 @@ Please read the suttas and other readings on your own “before class” and spe
 
 You may want to keep a copy of the assigned suttas in front of you while listening to the lectures, so that you can refer back to them and take notes as inspiration strikes, keeping in mind that the recordings (unlike live lectures!) can easily be paused.
 
-In addition to the suttas, this course assigns four short books in weeks 4, 8 and 9: [The Heart of Understanding]({% link _content/monographs/heart-of-understanding_tnh.md %}), [Wisdom Develops Samadhi]({% link _content/booklets/wisdom-develops-samadhi_mahabua.md %}), and [BuddhaDhamma for University Students]({% link _content/monographs/buddhadhamma-for-students_buddhadasa.md %}) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
+In addition to the suttas, this course assigns four short books in weeks 4, 8 and 9: [The Heart of Understanding](/content/monographs/heart-of-understanding_tnh), [Wisdom Develops Samadhi](/content/booklets/wisdom-develops-samadhi_mahabua), and [BuddhaDhamma for University Students](/content/monographs/buddhadhamma-for-students_buddhadasa) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
 
 
 ## The Course

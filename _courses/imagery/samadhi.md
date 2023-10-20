@@ -17,7 +17,7 @@ description: "Also sometimes translated as \"concentration,\" <i>samādhi</i> is
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **26**, **62**, and **74**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **26**, **62**, and **74**.
 
 ### Reflection
 

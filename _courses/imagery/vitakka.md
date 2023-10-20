@@ -15,7 +15,7 @@ description: "We must be very careful where we place our thoughts, as one though
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **23**, **40** and **79**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **23**, **40** and **79**.
 
 ### Reflection
 

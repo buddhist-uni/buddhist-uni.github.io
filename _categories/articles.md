@@ -6,4 +6,4 @@ similars:
   - essays
 ---
 
-Short-to-medium-length pieces of writing originally published in a periodical (journal, newspaper, magazine, etc). For short pieces published in non-periodic collections, see [papers]({% link _categories/papers.md %}). For blog posts, see [essays](/content/essays/).
+Short-to-medium-length pieces of writing originally published in a periodical (journal, newspaper, magazine, etc). For short pieces published in non-periodic collections, see [papers](/categories/papers). For blog posts, see [essays](/content/essays/).

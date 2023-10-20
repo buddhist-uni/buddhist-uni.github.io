@@ -15,7 +15,7 @@ description: "An energetic person will tend to use all of their energy chasing e
 
 ### Similes
 
-Read [_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes numbered: **47**, **53**, **55** and **56**.
+Read [_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes numbered: **47**, **53**, **55** and **56**.
 
 ### Reflections
 

@@ -21,7 +21,7 @@ Bonus:
 
 ### Similes
 
-[_Hecker_]({% link _content/monographs/similes-of-the-buddha_hecker.md %}) similes: **31**, **46**, **72** and **78**.
+[_Hecker_](/content/monographs/similes-of-the-buddha_hecker) similes: **31**, **46**, **72** and **78**.
 
 ### Reflections
 

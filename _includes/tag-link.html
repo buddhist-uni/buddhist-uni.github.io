@@ -1,1 +1,0 @@
-{% assign tag = site.tags | where: "status", "published" | find: "slug", include.tag %}{% if tag %}<a href="{{ tag.url }}">{% endif %}{% if include.text %}{{ include.text }}{% else %}{{ tag.title }}{% endif %}{% if tag %}</a>{% endif %}

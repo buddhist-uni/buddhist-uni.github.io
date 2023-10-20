@@ -18,3 +18,6 @@ pages: "1--5"
 ---
 
 > By the ariya, the cessation of sakkaya is seen as happiness. This is the reverse of the outlook of the entire world!
+
+Some explanitory comments on [SN 9.6](/content/canon/sn9.6) and on how the enlightened see the world.
+
