@@ -20,5 +20,5 @@ pages: 210
 
 A modern Zen master tells his story of hardship and diaspora, showing how Buddhism moved from China to Taiwan and, eventually, the West.
 
-
+For the 2020 documentary, see [*Master Sheng Yen (Film)*](/content/av/true-colors-master-sheng-yen).
 

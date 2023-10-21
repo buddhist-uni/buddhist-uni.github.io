@@ -25,3 +25,4 @@ parallels: []
 
 The escape from conditions exists.
 
+See also, [Iti 43](/content/canon/iti43).
