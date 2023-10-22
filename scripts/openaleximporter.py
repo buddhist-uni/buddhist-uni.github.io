@@ -164,6 +164,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
       venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
     except (TypeError, KeyError, AttributeError):
       venue = ""
+    journal = ""
     if category == 'monographs':
         fd.write("olid: \n")
     elif category in ('excerpts', 'papers'):
@@ -193,7 +194,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
             fd.write("pages: \n")
         if category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
-    if work['primary_location']['source'] and work['primary_location']['source']['host_organization_name']:
+    if work['primary_location']['source'] and work['primary_location']['source']['host_organization_name'] and (journal == '' or '"' in journal):
         fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
     elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")

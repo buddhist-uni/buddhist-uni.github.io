@@ -17,11 +17,10 @@ tags:
   - advertising
 year: 2021
 month: dec
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 118
 number: 52
 pages: 11
-publisher: "National Academy of Sciences"
 openalexid: W4200428383
 ---
 

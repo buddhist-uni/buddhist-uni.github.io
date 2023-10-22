@@ -461,41 +461,17 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
 - Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
 
-{% include content_blurb.html category="canon" slug="sn45.2" %}
-- Joseph Goldstein reads the Buddha's own take on “the entire spiritual life.”
-
 {% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
 - A beautiful sermon on the value of monasticism.
-
-{% include content_blurb.html category="canon" slug="sn6.13" %}
-- Brahma Sahampati praises those enlightened renunciants from whom blessings flow.
-
-{% include content_blurb.html category="av" slug="making-buddha-statues-cultivation_drba" %}
-- A video about a community coming together to make ten thousand Buddha statues by hand.
 
 {% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
 - Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
 
-{% include content_blurb.html category="canon" slug="iti107" %}
-- The Buddha summarizes this ideal relationship between the monastics and the laity.
-
-{% include content_blurb.html category="canon" slug="an3.20" %}
-- ... and explains how a Bhikkhu has benefactors.
-
-{% include content_blurb.html category="articles" slug="we-love-our-nuns_mrozik" %}
-- A paper on how the flourishing of the monastic community affects everyone around them.
-
 {% include content_blurb.html category="av" slug="buddhist-hells_breakfast-religion" %}
-- A taste of how Buddhist practices and beliefs are richer than the Western caricatures of them.
-
-{% include content_blurb.html category="av" slug="mindfulness-for-the-whole-family_kim-sumi" %}
-- What is it like to grow up in a Buddhist community? What does it take to _make_ a Buddhist community?
+- A taste of how rich Buddhist practices and beliefs can be in—and beyond—the human world.
 
 {% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
 - Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
-
-{% include content_blurb.html category="essays" slug="cultural-buddhism_yuttadhammo" %}
-- Should Buddhism in the West try to strip away "Cultural Buddhism" or preserve it?
 
 [CBT] Th.54, Th.85–88, Th.105
 {:.mb-0}
@@ -526,18 +502,8 @@ Zooming in slightly from the historical perspective, we next turn our attention 
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
 - Buddhist monasticism faces many challenges as it comes West, especially for nuns.
 
-{% include content_blurb.html category="av" slug="profound-silence" %}
-- A short film about one challenge to making Saṅghas truly welcoming places.
-- Are there any minority groups that have not felt or might not feel welcome in your community? What norms or behaviors contribute to that? Are there any people you'd have a hard time "greeting with a smile?"
-
-{% include content_blurb.html category="articles" slug="benefits-and-pitfalls-of-a-teacher_mcleod" %}
-- There are many benefits and challenges to the Teacher–Student relationship in Buddhism.
-
-{% include content_blurb.html category="av" slug="healing-is-possible_tnh" %}
-- An inspiring talk to a group of monastics, encouraging them to set a good example for their guests, showing how there need not be such a strict tension between personal practice and social engagement.
-
 {% include content_blurb.html category="canon" slug="an3.124" %}
-- What to look out for when choosing a Saṅgha....
+- What to look out for when choosing a Saṅgha.
 
 ### Part 3: Personal Practice
 
@@ -551,9 +517,6 @@ The last third of our class tackles the more prescriptive, “micro” question 
 {:.mb-0}
 - The Buddha’s description of (/prescription for) "the good life" for a householder.
 
-{% include content_blurb.html category="canon" slug="ud2.5" %}
-- But the best life is marked by renunciation.
-
 [CBT] Th.228, M.162
 {:.mb-0}
 - Citta the Householder shows what is possible for laypeople to achieve.
@@ -566,9 +529,6 @@ We have two supplements for *Khantipalo*:
 
 Listen to this alongside the section of Khantipalo about refuge and the triple gem:
 
-{% include content_blurb.html category="av" slug="becoming-buddhist_yuttadhammo" %}
-- Bhante Yuttadhammo talks about what it means to be a Buddhist, and how to think about “taking refuge”
-
 [CBT] Th.89, Th.93, M.82
 {:.mb-0}
 - The path starts with faith.
@@ -579,10 +539,6 @@ Listen to this alongside the section of Khantipalo about refuge and the triple g
 ##### Practicing Restraint
 
 A few more words are also due on the subject of restraint, beyond the five precepts. Please consider this alongside the section on “practice”
-
-{% include content_blurb.html category="canon" slug="sn35.239" %}
-- Explains the three primary duties of a monk: guarding the senses, moderation in eating, and the devotion to wakefulness. 
-- What monastic behaviors and vows do you know about already? How do the monastic and “eight precept” observances help with these three duties? What do you think is their benefit? Can lay Buddhists practice these? Should they?
 
 [CBT] Th.21, Th.102, Th.122
 {:.mb-0}

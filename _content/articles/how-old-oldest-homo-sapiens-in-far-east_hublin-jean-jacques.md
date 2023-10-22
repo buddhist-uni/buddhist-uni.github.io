@@ -11,11 +11,10 @@ tags:
   - asia
 year: 2021
 month: feb
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 118
 number: 10
 pages: 3
-publisher: "National Academy of Sciences"
 openalexid: W3131552392
 ---
 

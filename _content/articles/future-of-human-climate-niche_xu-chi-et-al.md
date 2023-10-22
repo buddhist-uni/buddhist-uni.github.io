@@ -19,11 +19,10 @@ tags:
   - international
 year: 2020
 month: may
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 117
 number: 21
 pages: "11350--11355"
-publisher: "National Academy of Sciences"
 openalexid: W3021189791
 ---
 

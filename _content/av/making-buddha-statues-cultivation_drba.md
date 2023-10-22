@@ -4,7 +4,7 @@ authors:
  - "Dharma Realm Buddhist Association"
 year: 2018
 external_url: "https://youtu.be/u-2BdSdoP6o"
-course: form
+course: sangha
 subcat: film
 tags:
   - groups

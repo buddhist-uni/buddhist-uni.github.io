@@ -5,7 +5,7 @@ authors:
   - "Sumi Loundon Kim"
 external_url: "https://wisdomexperience.org/wisdom-podcast/sumi-loundon-kim/"
 status: featured
-course: form
+course: sangha
 tags:
   - underage
   - american

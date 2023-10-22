@@ -15,7 +15,7 @@ tags:
   - academic
 year: 2007
 month: oct
-journal: "Proceedings of the National Academy of Sciences"
+journal: pnas
 volume: 104
 number: 43
 pages: "17152--17156"

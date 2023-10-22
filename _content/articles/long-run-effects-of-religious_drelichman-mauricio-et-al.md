@@ -16,7 +16,7 @@ tags:
   - discrimination
 year: 2021
 month: aug
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 118
 number: 33
 pages: "1--9"

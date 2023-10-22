@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1KUGUJAGZ-32dnFFcOlhlg-9O1Y5HpeW0/view?usp=drivesdk"
 external_url: "https://suttacentral.net/sn6.13/en/sujato"
 year: 2018
-course: form
+course: sangha
 tags:
   - sn
   - canonical-poetry

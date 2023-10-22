@@ -12,11 +12,10 @@ drive_links:
 course: feeling
 year: 2013
 month: dec
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 111
 number: 2
 pages: "646--651"
-publisher: "National Academy of Sciences"
 openalexid: W2137412454
 ---
 

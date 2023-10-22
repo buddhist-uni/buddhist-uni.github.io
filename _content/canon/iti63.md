@@ -1,5 +1,5 @@
 ---
-title: "Iti 63: Time"
+title: "Iti 63 Addhā Sutta: Times"
 subcat: poetry
 slug: "iti063"
 drive_links:

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.thezensite.com/ZenTeachings/Miscellaneous/Benefits_and_Pitfalls-McLeod.pdf"
 drive_links:
   - "https://drive.google.com/file/d/12a411HnDDCTW7HoDcD8sKn1iue2Uh272/view?usp=drivesdk"
-course: form
+course: sangha
 tags:
   - modern
 year: 2005

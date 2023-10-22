@@ -13,11 +13,10 @@ tags:
   - body-language
 year: 2021
 month: sep
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 118
 number: 37
 pages: 8
-publisher: "National Academy of Sciences"
 openalexid: W3180871660
 ---
 

@@ -16,11 +16,10 @@ tags:
   - world
 year: 2015
 month: oct
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 112
 number: 45
 pages: "13811--13816"
-publisher: "National Academy of Sciences"
 openalexid: W2141211757
 ---
 

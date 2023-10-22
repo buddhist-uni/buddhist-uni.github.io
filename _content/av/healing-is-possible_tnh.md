@@ -6,12 +6,10 @@ drive_links:
   - "https://drive.google.com/file/d/163rvsz5KsYvZebvqnMnYdgfRIiVkStdx/view?usp=drivesdk"
 month: mar
 year: 2013
-course: form
+course: sangha
 tags:
   - problems
   - chaplaincy
-  - monastic
-  - meditation
   - function
 minutes: 45
 ---

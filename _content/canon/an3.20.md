@@ -5,7 +5,7 @@ slug: "an.003.020"
 external_url: "https://suttacentral.net/an3.20/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1nSkLbmUtXbjJP1gFTzpkbIDFg2nOYqqP/view?usp=drivesdk"
-course: form
+course: sangha
 tags:
   - monastic-advice
   - becon

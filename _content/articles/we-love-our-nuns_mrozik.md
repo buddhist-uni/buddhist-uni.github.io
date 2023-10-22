@@ -4,12 +4,10 @@ authors: [mrozik]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2014/02/Mrozik-Bhikkhuni-final3.pdf"
 drive_links: ["https://drive.google.com/file/d/1wvuvpIU0-pmvu_VvyKxIutqCi43i9Jgq/view?usp=drivesdk"]
 tags: 
-  - monastic
   - nuns
   - sri-lankan
   - vinaya-studies
-  - bhikkhuni
-course: form
+course: sangha
 year: 2014
 volume: 21
 journal: jbe

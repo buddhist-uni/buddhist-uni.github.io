@@ -17,6 +17,7 @@ PLATO    = "S2737990715"
 JJRS     = "S120086578"
 JCB      = "S107624032"
 JOCBS    = "S2764611450"
+PNAS     = "S125754415"
 
 # from OA to OBU IDs
 slugs = {
@@ -35,4 +36,5 @@ slugs = {
   NYRB: "nyrb",
   NYRB_ALT: "nyrb",
   PLATO: "plato",
+  PNAS: "pnas",
 }

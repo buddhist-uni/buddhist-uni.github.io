@@ -6,7 +6,7 @@ subcat: poetry
 external_url: "https://suttacentral.net/ud2.5/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1IXq51tbehVWEfeoWhbW7OlllUMnJ-zjP/view?usp=drivesdk"
-course: form
+course: sangha
 tags:
   - wider
   - renunciation

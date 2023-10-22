@@ -13,11 +13,10 @@ tags:
   - learning
 year: 2022
 month: aug
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 119
 number: 34
 pages: 8
-publisher: "National Academy of Sciences"
 openalexid: W4292066480
 ---
 

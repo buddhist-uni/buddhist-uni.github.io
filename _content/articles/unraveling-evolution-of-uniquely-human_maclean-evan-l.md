@@ -12,11 +12,10 @@ tags:
   - world
 year: 2016
 month: jun
-journal: "Proceedings of the National Academy of Sciences of the United States of America"
+journal: pnas
 volume: 113
 number: 23
 pages: "6348--6354"
-publisher: "National Academy of Sciences"
 openalexid: W2414351991
 ---
 
