@@ -3,7 +3,7 @@ title: "Illustrated Glossary of Pāli Terms"
 authors:
   - "Bhikkhu Varado"
 status: rejected
-reason: "by request of the author"
+reason: "the author no longer stands by the work"
 external_url: "https://web.archive.org/web/20210306145440/https://pali-glossary.github.io/content/glossary.html"
 formats: [docx, pdf, epub]
 drive_links:

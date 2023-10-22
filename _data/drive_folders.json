@@ -551,6 +551,10 @@
   "private": "https://drive.google.com/drive/folders/11_XH6qyBai0Ar8H45MEgg_tEupdEVfCb",
   "public": "https://drive.google.com/drive/folders/12qopldlGJuWHc5V42zuKaQP4FK0LipdG"
  },
+ "perf-stud": {
+  "private": "https://drive.google.com/drive/folders/1CmihmQJBP1zMMSuv8oVcvDnUCunLbojG",
+  "public": null
+ },
  "philosophy": {
   "private": "https://drive.google.com/drive/folders/14ETJMqi_pGo-x2e1SXKQa0TodhVVhgVL",
   "public": "https://drive.google.com/drive/folders/1-iA7cY342aZRzVaHV3D063siGaVcS1US"
@@ -746,6 +750,10 @@
  "tibetan": {
   "private": "https://drive.google.com/drive/folders/10XTsw3Ap2chIX3KYtfIzQlf3UoP1sS_b",
   "public": "https://drive.google.com/drive/folders/148Qi_c5POGoGYWKuM0-FgEpxy7T6pdaG"
+ },
+ "tibetan-art": {
+  "private": "https://drive.google.com/drive/folders/13WKcKVBpBdXvka7H_htZlH44ADUZIumB",
+  "public": null
  },
  "tibetan-language": {
   "private": "https://drive.google.com/drive/folders/1XX6NIeS1j4zCIAI0XqRGSJo126GmxoW-",

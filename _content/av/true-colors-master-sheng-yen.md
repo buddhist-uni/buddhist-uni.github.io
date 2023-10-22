@@ -9,8 +9,9 @@ external_url: "https://youtu.be/oIjCjGszu64"
 status: featured
 course: modern
 tags:
-  - chinese
+  - east-asian
   - form
+  - monastic-mahayana
 year: 2020
 oclc: 1281114317
 publisher: "CNEX Studio"
