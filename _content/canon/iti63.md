@@ -11,6 +11,7 @@ tags:
   - language
   - translation
   - hermeneutics
+# nibbana tag covered by *The Island*
 year: 2023
 pages: 5
 ---
