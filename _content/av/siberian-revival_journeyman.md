@@ -4,7 +4,6 @@ authors:
   - "Chris Clark"
 subcat: film
 external_url: "https://youtu.be/4b_0BQtFsss"
-source_url: "https://www.journeyman.tv/film/164/"
 base_value: 0.2
 course: west
 tags:

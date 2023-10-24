@@ -3,7 +3,7 @@ title: "Skilful Desires"
 authors:
   - jayasaro
 external_url: "https://amaravati.org/skilful-desires/"
-source_url: "https://www.fsnewsletter.org/pdf/FSN_93_2014.pdf"
+source_url: "https://web.archive.org/web/20220628200633if_/https://www.fsnewsletter.org/pdf/FSN_93_2014.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1DR3GY91K8j3k00LY_eXighencf-7neu-/view?usp=sharing"
 formats: [pdf]

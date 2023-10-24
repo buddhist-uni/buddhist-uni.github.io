@@ -5,7 +5,6 @@ authors:
 year: 2009
 publisher: hawaii
 olid: OL22684571M
-external_url: "https://archive.org/details/sociallyengagedb0000king/page/n4/mode/1up"
 course: engaged
 tags:
   - modern

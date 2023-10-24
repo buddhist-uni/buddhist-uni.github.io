@@ -3,8 +3,8 @@ title: "The Ancient Path To Enlightenment"
 authors:
   - "Da Bei Shan"
 subcat: film
-external_url: https://youtube.com/playlist?list=PLMjTvqiiqwH1dUXK142N-S1aslFd6cT1O
-canary_url: "https://youtu.be/--M1LqgWUVw"
+external_url: https://youtube.com/playlist?list=PLhbt7oEqL154vHxqk90PLBt67yLatcJb2
+canary_url: "https://youtu.be/f-_HNVk15Eg"
 formats: [mp4s]
 drive_links:
   - "https://drive.google.com/drive/folders/1NSf-SlWu46FQbYb1CvEu5ifJzkMbebe9"

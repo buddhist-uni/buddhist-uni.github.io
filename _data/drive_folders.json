@@ -143,6 +143,10 @@
   "private": "https://drive.google.com/drive/folders/1bBcbP3ipByy4hheq5bRmywfmZwsqeGd-",
   "public": "https://drive.google.com/drive/folders/12WaH2DmLwl18yiJMgQL4F2fT7D61RKZ7"
  },
+ "caste": {
+  "private": "https://drive.google.com/drive/folders/18p09oCaW9WdmJ2VcV1gkNVaxIpqtAJGd",
+  "public": null
+ },
  "chan-lit": {
   "private": "https://drive.google.com/drive/folders/1fOtpegAsyDkPGD8fEELbwHtPG_ab0hOk",
   "public": "https://drive.google.com/drive/folders/149gY1BelJlHzKlLP9pZuT9RPNQcnyChp"
@@ -158,6 +162,10 @@
  "chinese": {
   "private": "https://drive.google.com/drive/folders/12EJSMgN8qSJgfR_hDbn-WZgKJG2FgIxk",
   "public": "https://drive.google.com/drive/folders/10wy41zZvx4S2iKDtO8WdHGingJY224Gj"
+ },
+ "christianity": {
+  "private": "https://drive.google.com/drive/folders/1SYMW148HHFVY0ZFj5wIeE6Xka49XFTI-",
+  "public": null
  },
  "cities": {
   "private": "https://drive.google.com/drive/folders/1DcakLSKHtpZUeDlEmUhq7YHYIdc4Yt0r",
@@ -501,6 +509,10 @@
  },
  "neuroscience": {
   "private": "https://drive.google.com/drive/folders/1JuAkV5cYQ28pZKp-BvNJOvUX5q4XA5gB",
+  "public": null
+ },
+ "new-age": {
+  "private": "https://drive.google.com/drive/folders/1XiYR5Gs9msjCkhf9_VJA1JNBfficrLJp",
   "public": null
  },
  "new-york": {

@@ -14,6 +14,7 @@ tags:
   - tibetan-roots
   - mahayana
   - emptiness
+  - metaphysics
 year: 1978
 publisher: hawaii
 booktitle: "Mahāyāna Buddhist Meditation: Theory and Practice"
@@ -21,4 +22,4 @@ pages: "3--45"
 chapter: 1
 ---
 
-A thorough overview of the history of Indian Buddhist metaphysics from the perspective of the Tibetan (*Mādhyamika*) *siddhānta* literature.
+An excellent overview of the history of Indian Buddhist metaphysics from the perspective of the Tibetan (*Mādhyamika*) *siddhānta* literature.

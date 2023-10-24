@@ -26,6 +26,7 @@ else:
 
 ARCHIVEID_BLACKLIST = {
   "unehistoiredetou0000na",
+  "delinegaliteparm0000prof",
   "elartedelasabidu0000dala"
 }
 

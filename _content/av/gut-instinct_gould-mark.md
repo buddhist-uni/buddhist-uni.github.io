@@ -4,9 +4,8 @@ authors:
   - "Mark Gould"
 subcat: film
 editor: "Nick Brenner"
-source_url: "https://www.journeyman.tv/film/5653/gut-instinct"
 external_url: "https://youtu.be/Z1a6iZcQLEg"
-real_source_url: "https://vimeo.com/ondemand/gutinstinct"
+source_url: "https://vimeo.com/ondemand/gutinstinct"
 course: modern
 tags:
   - epidemiology

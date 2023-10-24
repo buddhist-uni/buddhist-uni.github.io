@@ -4,8 +4,7 @@ subcat: podcast
 authors: ["Vanessa Sasson"]
 year: 2021
 month: mar
-source_url: "https://newbooksnetwork.com/yasodhara-and-the-buddha"
-external_url: "https://www.listennotes.com/podcasts/new-books-in-gender/vanessa-r-sasson-yasodhara-bhJR-qn_xau/"
+external_url: "https://newbooksnetwork.com/yasodhara-and-the-buddha"
 course: ambulit
 tags:
   - buddha

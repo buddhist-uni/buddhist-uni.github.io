@@ -2,7 +2,6 @@
 title: "The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger"
 authors:
   - "Marc Levinson"
-external_url: "https://archive.org/details/boxhowshippingco0000levi/page/n2/mode/1up"
 olid: OL7759049M
 course: wider
 tags:
