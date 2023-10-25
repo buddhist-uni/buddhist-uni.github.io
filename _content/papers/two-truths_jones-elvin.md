@@ -14,6 +14,7 @@ tags:
   - tibetan-roots
   - mahayana
   - emptiness
+  - epistemology
   - metaphysics
 year: 1978
 publisher: hawaii
