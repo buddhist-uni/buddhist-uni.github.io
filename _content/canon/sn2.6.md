@@ -19,5 +19,5 @@ parallels:
 
 > … the god Kāmada said to the Buddha, “It’s too hard, Blessed One! It’s just too hard!”
 
-The deity Kāmada addresses the Buddha with a series of cryptic statements lamenting the difficulty of spiritual practice. The Buddha agrees, but points out that true practitioners do it even though it’s hard.
+The deity Kāmada addresses the Buddha with a series of cryptic statements lamenting the difficulty of spiritual practice. The Buddha agrees, but points out that true practitioners do it even though it’s hard.
 

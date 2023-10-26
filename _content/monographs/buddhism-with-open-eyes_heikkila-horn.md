@@ -1,7 +1,7 @@
 ---
 title: "Buddhism with Open Eyes: Belief and Practice of Santi Asoke"
 authors:
-  - "Marja-Leena Heikkilä-Horn"
+  - "Marja-Leena Heikkilä-Horn"
 external_url: "https://www.academia.edu/4244347/Buddhism_With_Open_Eyes_1997_"
 course: thai
 tags:

@@ -27,5 +27,5 @@ parallels:
 > This is indeed that Jeta’s Grove,  
 frequented by the Saṅgha of hermits...
 
-A deity who had been the Buddha’s supporter Anāthapiṇḍika in his former life comes to the Buddha and speaks verses in celebration of the Jeta’s Grove, good deeds, the Dhamma, and Venerable Sāriputta.
+A deity who had been the Buddha’s supporter Anāthapiṇḍika in his former life comes to the Buddha and speaks verses in celebration of the Jeta’s Grove, good deeds, the Dhamma, and Venerable Sāriputta.
 
