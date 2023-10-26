@@ -5,7 +5,7 @@ slug: "ud2.1"
 external_url: "https://suttacentral.net/ud2.1/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1MNjo2Em7JEdWxhHOmVZt24tKbQ07dgT8/view?usp=drivesdk"
-course: theravada
+course: theravada-roots
 status: featured
 tags:
   - bart

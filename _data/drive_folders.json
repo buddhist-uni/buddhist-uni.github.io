@@ -135,6 +135,10 @@
   "private": "https://drive.google.com/drive/folders/1Y84zOcbY6ibE24PfTS9KViTRC_H5gfDi",
   "public": "https://drive.google.com/drive/folders/11kXcsdKJzH01_XTXezpqaoRtTtM4mp0c"
  },
+ "canada": {
+  "private": "https://drive.google.com/drive/folders/1nW5zffsV_-Lip-VbGA7ENkZI71g6ha6n",
+  "public": null
+ },
  "canadian": {
   "private": "https://drive.google.com/drive/folders/1-p8SWDaEda3vby9yfffrjvxB7coi7LFK",
   "public": "https://drive.google.com/drive/folders/11SZeeJrkgTKqGn5fGt-BzfdNCUOePRWw"
@@ -575,6 +579,10 @@
   "private": "https://drive.google.com/drive/folders/19JCMumQxLCMd6Dd7x7zhCcOXjedh0oZT",
   "public": null
  },
+ "photography": {
+  "private": "https://drive.google.com/drive/folders/1ML91HvtAhsYN3gOk957YWSsNHY_6vmh4",
+  "public": null
+ },
  "pilgrimage": {
   "private": "https://drive.google.com/drive/folders/1MTE4p-MXW0KBBXsxwz6i6Rfj1m7-eshm",
   "public": "https://drive.google.com/drive/folders/11zHeyGF-Ts6Jpef-byP9lKa7Kv3fLt0G"
@@ -586,6 +594,10 @@
  "places": {
   "private": "https://drive.google.com/drive/folders/1CrvHBlXyF4FGFqFqSbJh7NfCR2Mix5-e",
   "public": "https://drive.google.com/drive/folders/1K_7u0vaUVl0NVQs7I9v-4kvkZM1mAQGP"
+ },
+ "poetry": {
+  "private": "https://drive.google.com/drive/folders/1-75vsuPfxyRFJgIlh7bi8fuj1lXGqKIq",
+  "public": null
  },
  "poli-sci": {
   "private": "https://drive.google.com/drive/folders/1g7XUiQHQruUSvfzvEl4finAU256epKak",

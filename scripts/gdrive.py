@@ -40,7 +40,7 @@ DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 
 def link_to_id(link):
-  ret = re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk)?$', link)
+  ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk)?$', link)
   return ret.groups()[0] if ret else None
 
 def folderlink_to_id(link):

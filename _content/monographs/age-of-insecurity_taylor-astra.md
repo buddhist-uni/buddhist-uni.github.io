@@ -1,5 +1,5 @@
 ---
-title: "Age of Insecurity: Coming Together as Things Fall Apart"
+title: "The Age of Insecurity: Coming Together as Things Fall Apart"
 authors:
   - "Astra Taylor"
 course: present
