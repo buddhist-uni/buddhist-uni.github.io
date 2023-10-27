@@ -9,7 +9,9 @@ course: problems
 tags:
   - sati
   - vipassana
+  - mahasi
 pages: 5
+year: 2013
 ---
 
 > Progress in meditation is about giving up and letting go, not becoming and taking on new constructs.
