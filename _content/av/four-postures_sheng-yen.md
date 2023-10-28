@@ -12,7 +12,7 @@ course: meditation
 tags:
   - daily-life
   - function
-year: 2010 # definitely earlier, but when?
+year: 1995 # maybe? Sometime after 94
 series: gdd
 number: 104
 minutes: 9

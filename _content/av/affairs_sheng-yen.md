@@ -10,7 +10,7 @@ formats: [mp4]
 course: lay
 tags:
   - ethics
-year: 2012 # certainly earlier, but when?
+year: 1994
 series: gdd
 number: 16
 minutes: 9

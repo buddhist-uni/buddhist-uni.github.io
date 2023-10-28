@@ -11,7 +11,7 @@ course: social
 tags:
   - speech
   - karma
-year: 2010 # earlier, but when?
+year: 1994
 series: gdd
 number: 6
 minutes: 9

@@ -2,7 +2,7 @@
 title: "Chan Practice in Daily Life"
 subcat: film
 authors: [sheng-yen]
-year: 2012
+year: 1994
 external_url: "https://youtu.be/k0bGu_hTEpQ"
 drive_links:
   - "https://drive.google.com/file/d/1oSO5-U4It4TX6lfDYSh22ibX36YsLkE3/view?usp=drivesdk"

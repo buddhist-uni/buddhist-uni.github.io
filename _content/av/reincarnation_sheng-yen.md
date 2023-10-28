@@ -10,7 +10,7 @@ formats: [mp4]
 course: philosophy
 tags:
   - cosmology
-year: 2012 # YT upload. Real date??
+year: 1994
 series: gdd
 number: 9
 minutes: 9

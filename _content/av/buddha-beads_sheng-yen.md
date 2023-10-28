@@ -1,7 +1,7 @@
 ---
 title: "Buddha Beads"
 authors: [sheng-yen]
-year: 2012
+year: 1994
 external_url: "https://youtu.be/ZSJbJQa1cfk"
 course: mahayana
 base_value: 0.2

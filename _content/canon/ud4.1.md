@@ -8,7 +8,7 @@ drive_links:
 course: path
 status: featured
 tags:
-  - problems
+  - sangha
   - ud
 # nibbana tag covered by *The Island*
 year: 2018
