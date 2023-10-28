@@ -10,7 +10,10 @@ status: featured
 tags:
   - chan
 address: Taipei
-year: 2013 #Youtube pub date
+year: 1994
+series: gdd
+number: 47
+subcat: film
 minutes: 9
 ---
 

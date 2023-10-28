@@ -4,7 +4,7 @@ authors: ["Clayton Ashley"]
 external_url: "https://youtu.be/_51_YJQpeg0"
 month: apr
 year: 2021
-course: city
+course: cities
 tags:
   - math
 minutes: 13
