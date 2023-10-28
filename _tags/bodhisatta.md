@@ -4,3 +4,4 @@ status: unpublished
 parents: [indian]
 ---
 
+From the Theravada perspective.

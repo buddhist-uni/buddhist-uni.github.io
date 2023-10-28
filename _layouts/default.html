@@ -69,7 +69,7 @@
   <style>
     {%- assign classname = "banner-img" -%}{%- if page.footer_info -%}{%- assign classname = "footer-img" -%}{%- endif -%}
     {%- assign overlay = site.data.banner.overlay -%}{%- if page.footer_info -%}{%- assign overlay = site.data.banner.footer_overlay -%}{%- endif -%}
-    {%- if page.big_image %}
+    {%- if page.big_image -%}
        {%- assign dynimg = page.image | split: "/" | last | replace: '.webp', '-[WIDTH]-[DPPX]x.webp' | replace: '.jpg', '-[WIDTH]-[DPPX]x.webp' | replace: '.jpeg', '-[WIDTH]-[DPPX]x.webp' | replace: '.JPG', '-[WIDTH]-[DPPX]x.webp' %}{% assign dynimg = site.data.content.filehost | append: "big_imgs/banners/" | append: dynimg -%}
        {%- capture singlecss -%}.{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: "[DPPX]", 1 }}"), {{ site.data.banner.loading_state }}; }{%- endcapture -%}
        {%- capture doublecss -%}.{{ classname }} { background-image: {{ overlay }}, url("{{ dynimg | replace: "[DPPX]", 2 }}"), url("{{ dynimg | replace: "[DPPX]", 1 }}"), {{ site.data.banner.loading_state }}; }{%- endcapture -%}

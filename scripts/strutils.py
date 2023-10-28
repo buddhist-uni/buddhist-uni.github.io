@@ -16,7 +16,7 @@ from math import floor, ceil
 try:
   from titlecase import titlecase
 except:
-  print("pip install titlecase")
+  print("pip install titlecase pyyaml")
   quit(1)
 
 ANSI_COLOR_DIM = "\033[2m"

@@ -4,3 +4,4 @@ status: unpublished
 parents: [mahayana]
 ---
 
+The Mahayana path.

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.html": "liquid"
+    },
+    "editor.tabSize": 2
+}

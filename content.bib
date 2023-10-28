@@ -30,5 +30,5 @@ layout: nil
 % 2. Bibliographic Entries
 %   in the order they were added to the library 
 %%%%%
-{% for content in site.content %}{% include content.bibtex content=content useslugs=true %}
+{% for content in site.content %}{% include content.bibtex.liquid content=content useslugs=true %}
 {% endfor %}

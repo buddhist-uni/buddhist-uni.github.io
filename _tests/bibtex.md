@@ -3,7 +3,7 @@ title: "Bibtex Rendering Tests"
 ---
 {% assign testc = site.content | find: "url", "/content/excerpts/buddhist-thought_williams-paul" %}
 ```
-{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+{% capture bib %}{% include content.bibtex.liquid content=testc %}{% endcapture %}{{ bib }}
 ```
 
 Bibtex contains opener: {% unless bib contains "@incollection{" %}FAIL ❌{% else %}Pass ✅{% endunless %}  
@@ -13,7 +13,7 @@ Bibtex contains unwrapped year: {% if bib contains "year={" %}FAIL ❌{% elsif b
 
 {% assign testc = site.content | find: "url", "/content/monographs/architects-of-buddhist-leisure_mcdaniel" %}
 ```
-{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+{% capture bib %}{% include content.bibtex.liquid content=testc %}{% endcapture %}{{ bib }}
 ```
 
 Test is valid (content has publisher but no address): {% if testc.address %}FAIL ❌{% else %}{% if testc.publisher %}Pass ✅{% else %}FAIL ❌{% endif %}{% endif %}  
@@ -22,7 +22,7 @@ Publisher pulls name from DB: {% if bib contains "University of Hawai'i Press" %
 
 {% assign testc = site.content | find: "url", "/content/booklets/buddhist-wheel-symbol_karunaratne" %}
 ```
-{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+{% capture bib %}{% include content.bibtex.liquid content=testc %}{% endcapture %}{{ bib }}
 ```
 
 Test is valid (content has series but no publisher or address): {% if testc.publisher or testc.address %}FAIL ❌{% else %}{% if testc.series %}Pass ✅{% else %}FAIL ❌{% endif %}{% endif %}  
@@ -32,7 +32,7 @@ Bibtex pulls the address from the publisher: {% if bib contains "address={" %}Pa
 
 {% assign testc = site.content | find: "url", "/content/articles/anagarika-munindra-and-vipassana_pryor" %}
 ```
-{% capture bib %}{% include content.bibtex content=testc %}{% endcapture %}{{ bib }}
+{% capture bib %}{% include content.bibtex.liquid content=testc %}{% endcapture %}{{ bib }}
 ```
 
 Test is valid (piece has doi source): {% if testc.source_url contains "doi.org" %}Pass ✅{% else %}FAIL ❌{% endif %}  
