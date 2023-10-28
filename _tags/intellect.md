@@ -4,4 +4,4 @@ status: unpublished
 parents: [inner]
 ---
 
-Saṅkhāra
+Saṅkhāra: How humans think and decide.

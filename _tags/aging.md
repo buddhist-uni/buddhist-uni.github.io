@@ -4,5 +4,5 @@ status: unpublished
 parents: [body, time]
 ---
 
-The process of getting older and the process of human development and decline.
+The process of getting older: human development and decline.
 

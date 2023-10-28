@@ -4,4 +4,4 @@ status: unpublished
 parents: [social]
 ---
 
-The dynamics between people across time.
+Sociology is the study of the dynamics that exist between people across time.

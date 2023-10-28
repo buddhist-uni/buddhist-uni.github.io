@@ -4,4 +4,4 @@ status: unpublished
 parents: [view]
 ---
 
-Mundane Right View
+Mundane Right View. The Buddhist explanation of Saṃsāra.
