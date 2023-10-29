@@ -21,6 +21,7 @@ exclude:
     - vendor/cache/
     - vendor/gems/
     - vendor/ruby/
+    - exports/
     - scripts/
     - content.bib
     - _authors/graeber-david.md

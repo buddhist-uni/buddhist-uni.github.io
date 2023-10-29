@@ -12,6 +12,12 @@ illustration_caption: >-
   This delicate, eleventh-century bronze of Amitabha Buddha in meditation is a testament to the artist's careful attention to detail.
   (Image courtesy of <a href="https://www.clevelandart.org/art/1942.1082">the Cleveland Museum of Art</a>)
 use_sirv: true
+image: https://illeakyw.sirv.com/Images/banners/popovic-overlook.jpg
+image_width: 1920
+image_height: 1536
+footer_info: <a href="https://unsplash.com/photos/woman-sitting-on-cliff-overlooking-mountains-during-daytime-Zf0-90SpDD0">Milan Popovic</a>
+image_center_x: 54%
+image_center_y: 73%
 ---
 
 *Sammā Sati* (Right Mindfulness) is the the keen, dispassionate observation of the body, feelings, and mind as they actually are.

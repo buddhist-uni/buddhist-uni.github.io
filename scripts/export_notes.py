@@ -63,7 +63,7 @@ def export_tag(tag: website.TagFile, outdir: Path) -> None:
   outpath.write_text(f"""---
 title: "{tag.title}"
 aliases:
-  - "{tag.title.lower()}"
+  - "{tag.title}"
 url: "{website.baseurl}{tag.url}"
 tags:
   - "#concept"
@@ -78,6 +78,8 @@ def export_author(author: website.AuthorFile, outdir: Path):
   outpath = outdir.joinpath(f"{author.slug}.md")
   outpath.write_text(f"""---
 title: "{author.title}"
+aliases:
+  - "{author.title}"
 url: "{website.baseurl}{author.url}"
 tags:
   - "#obu-author"
@@ -127,7 +129,7 @@ def export_content(content: website.ContentFile, outdir: Path) -> None:
   outpath.write_text(f"""---
 title: "{content.title}"
 aliases:
-  - "{content.title.split(':')[0].lower()}"
+  - "{content.title.split(':')[0]}"
 url: "{website.baseurl}{content.url}"
 tags:
   - "#obu-biblio"

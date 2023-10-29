@@ -9,6 +9,8 @@ year: 1987
 journal: jpts
 volume: 11
 course: dn-pali
+tags:
+  - agama
 pages: "73--78"
 ---
 
