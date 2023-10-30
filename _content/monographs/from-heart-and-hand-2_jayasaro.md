@@ -17,4 +17,4 @@ pages: 86
 ---
 
 A collection of one-page Dhamma summaries handwritten daily by
-Ajahn Jayasaro "to all those with limited time at their disposal.
+Ajahn Jayasaro "to all those with limited time at their disposal."
