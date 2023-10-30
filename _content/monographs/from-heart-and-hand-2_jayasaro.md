@@ -5,13 +5,13 @@ authors:
 external_url: "https://www.jayasaro.panyaprateep.org/uploads/book/1/5/files/00000005.pdf"
 drive_links:
   - "https://drive.google.com/file/d/13iv_X6yywtdrjQD6cvQUXomVsRimgWU6/view?usp=sharing"
-course: problems
+course: metta
 tags:
-  - metta
-  - karma
+  - problems
   - thought
   - buddhism
 year: 2019
+olid: OL49821212M
 publisher: "Panyaprateep Foundation"
 pages: 86
 ---
