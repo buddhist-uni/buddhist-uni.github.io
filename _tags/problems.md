@@ -21,13 +21,15 @@ illustration_caption: >-
 #   This thangka depicts Vajrakilaya, the wrathful form of Vajrasattva, crushing demons underfoot.
 #   It represents the victory of Right Effort over our various obstacles and obscurations.
 #   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Vajrakilaya_(8557221604).jpg">Yurei Fukuro</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>)
-use_sirv: true
-image: https://illeakyw.sirv.com/Images/banners/ricko-pan.jpg
+image: https://illeakyw.sirv.com/Images/banners/raimond-klavins.jpg
 image_width: 1920
-image_height: 1278
-footer_info: <a href="https://unsplash.com/photos/woman-sitting-on-floor-near-window-eeQ6MSqVN2A">Rico Pan</a>
-image_center_x: 50%
-image_center_y: 40%
+image_height: 1280
+footer_info: <a href="https://unsplash.com/photos/yellow-and-white-umbrella-near-brown-rock-formation-lhSujG8i8mE">Raimond Klavins</a>, <a href="https://unsplash.com/license">Unsplash</a>
+image_center_x: 45%
+image_center_y: 20%
+big_image: https://unsplash.com/photos/lhSujG8i8mE/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk4NzI3MTg2fA&force=true
+big_height: 4000
+big_width: 6000
 ---
 
 *Vayama* is the application of effort to overcome our problems via suppressing the unwholesome and encouraging the wholesome qualities within ourselves.
