@@ -9,7 +9,7 @@ max_stretch: 1.33
 # (see big_imgs/build.py:BannerImageDeriver)
 loading_state: linear-gradient(lightgray, lightgray)
 overlay: "linear-gradient(#5E241732, #5E241750)"
-footer_overlay: "linear-gradient(rgba(253,253,253,1), rgba(253,253,253,.3), #5555, #5558, #111C)"
+footer_overlay: "linear-gradient(#ffffffff, #ffffffdd, #ffffffbb, #ffffff9b, #ffffff7c, #f0f0f06f, #e1e1e162, #d2d2d255, #b1b1b155, #91919155, #72727255, #55555555, #5555555e, #55555568, #55555571, #5555557b, #4f4f4f85, #4949498f, #43434399, #363636a5, #292929b2, #1d1d1dbf, #111111cc)"
 # these need to stay in sync with big_imgs/build.py:BannerImageDeriver
 widths: [400, 594, 881, 1308, 1940, 2880, 4274, 6343]
 min_dpp: 1.75
