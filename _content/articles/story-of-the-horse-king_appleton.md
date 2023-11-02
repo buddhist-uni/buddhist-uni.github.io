@@ -5,10 +5,11 @@ external_url: "https://dx.doi.org/10.1558/bsrv.2006.23.2.187"
 journal: bsr
 year: 2007
 month: feb
-drive_links: ["https://drive.google.com/file/d/1EMyzy472xx8nv1g4Bhfc_kHGmoH-IVM1/view?usp=drivesdk"]
-course: form
+drive_links:
+  - "https://drive.google.com/file/d/1EMyzy472xx8nv1g4Bhfc_kHGmoH-IVM1/view?usp=drivesdk"
+course: roots
 tags:
-  - medieval
+  - rebirth-stories
   - myth
 pages: "187--201"
 ---

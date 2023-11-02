@@ -88,11 +88,10 @@ There are two textbooks for this first part of the course:
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
 - The main textbook for this part, *Robinson* will give us an accessible and enjoyable survey of Buddhism’s long history across Asia and beyond.
 
-#### Introduction
+#### Refresher
 
 {% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" %}
-- For a refresher on the basics of Buddhism, I recommend skimming this Q&A with Thubten Chodron before we dive into the more detailed history below.
-- There's no need to read it thoroughly: just read the answers to whatever questions interest you.
+- For a refresher on the basics of Buddhism, you can skim the questions in this Q&A with Tibetan Nun Thubten Chodron before we dive into the more detailed history below.
 
 #### Supplementary Material to *Robinson*
 
@@ -110,8 +109,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Parallel to Robinson Ch 2: Teacher
 
-{% include content_blurb.html category="av" slug="early-buddhism_history_sujato-and-brahmali" %}
-- An Introduction to Buddhist History
+[CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
+{:.mb-0}
+- Here we get a few stories about the Buddha's life as a teacher from the early texts.
 
 {% include content_blurb.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
 - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
@@ -121,10 +121,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 {% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
-
-[CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
-{:.mb-0}
-- Here we get a few stories about the Buddha's life as a teacher from the early texts.
 
 ##### Parallel to Robinson chapter 3: “Development”
 
@@ -136,9 +132,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 {% include content_blurb.html category="articles" slug="lotus-as-symbol_olson_carl" %}
 - One such object which became notably ubiquitous across Buddhist cultures is the lotus flower.  This article explores the ancient origins and meaning of this potent symbol.
-
-{% include content_blurb.html category="essays" slug="offering-flowers_dodrupchen" %}
-- And this essay commends the virtues of offering flowers: a lovely practice still common across Buddhist Asia
 
 [CBT] M.5, Th.94
 {:.mb-0}
@@ -155,9 +148,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 [CBT] M.14
 {:.mb-0}
 - In praise of the Sutras, preserved after the Buddha's death.
-
-{% include content_blurb.html category="av" slug="early-buddhist-oral-tradition_analayo" %}
-- How were these texts preserved? How reliable are they, and how should we think about the study of Buddhist history?
 
 [CBT] M.36, M.38
 {:.mb-0}
@@ -244,10 +234,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 {% include content_blurb.html category="articles" slug="central-asian_kudara" %}
 - While largely not Buddhist today, the deserts of Central Asia were key to the medieval spread of Buddhism.
-
-{% include content_blurb.html category="articles" slug="story-of-the-horse-king_appleton" %}
-- One story, five countries.
-- Shows how each nation where Buddhism spread adapted the Indic mythology to explain their own local conditions, and gives us a fascinating window into the spread of Buddhism across Asia.
 
 {% include content_blurb.html category="reference" slug="electronic-atlas-of-monasteries_ciolek" blurb="Take a second to appreciate the explosive spread of Buddhism across Asia shown in these maps of medieval monasteries." %}
 

@@ -8,7 +8,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/dodrupchen-III/offer
 # The year below is a wild guess.
 # The translation was archived by 2012
 year: 2004
-course: form
+course: sangha
 tags:
   - flowers
   - communication

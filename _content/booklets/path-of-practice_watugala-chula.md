@@ -5,10 +5,10 @@ authors:
 external_url: "https://dhammavinaya.com/wp-content/uploads/2020/01/Path-of-Practice.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1vaMQZcdhOx9PGZ87YjMSTVbEOsEHyI4S/view?usp=drivesdk"
-course: path
 tags:
   - pali-canon
-  - theravada-monasticism
+  - monastic-theravada
+  - path
 year: 2020
 month: jan
 pages: 67

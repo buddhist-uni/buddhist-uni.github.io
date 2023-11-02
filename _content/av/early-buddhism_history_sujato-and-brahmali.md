@@ -6,9 +6,8 @@ month: feb
 year: 2013
 formats: [zip]
 drive_links: ["https://drive.google.com/file/d/1ijhtCUQK5H0VMVpit92aElJNzRkxZKFl/view?usp=drivesdk"]
-course: form
+course: roots
 tags:
-  - west
   - setting
   - buddhism
 series: early-buddhism_sujato-brahmali

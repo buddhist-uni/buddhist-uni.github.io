@@ -7,7 +7,7 @@ editor: "Daniel Aitken"
 external_url: "https://wisdomexperience.org/wisdom-podcast/143-ven-analayo/"
 drive_links:
   - "https://drive.google.com/file/d/1pByQeFvbcmzt6wKb0bnnKkHyNuvAmSwT/view?usp=drivesdk"
-course: form
+course: roots
 tags:
   - pali-canon
   - historiography
