@@ -6,7 +6,7 @@ year: 2019
 translator: "Adam Pearcey"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1JWy7WSs_neMZ9_e2M1ObpWDz8lmUi1LT/view?usp=drivesdk"]
-course: lay
+course: sangha
 tags:
   - tibetan
 base_value: 0.25

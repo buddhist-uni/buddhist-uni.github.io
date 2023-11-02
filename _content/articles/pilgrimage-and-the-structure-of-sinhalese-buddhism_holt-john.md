@@ -5,11 +5,11 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3286306&sid="
 drive_links:
   - "https://drive.google.com/file/d/1pPariT_j2rHTQtktaW4nOmAPZP1hXEFx/view?usp=drivesdk"
-course: pilgrimage
+course: sangha
 tags:
+  - pilgrimage
   - sri-lankan
   - sea
-  - theravada
 year: 1982
 journal: jiabs
 volume: 5

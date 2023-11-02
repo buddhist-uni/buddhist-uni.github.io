@@ -5,13 +5,14 @@ translator: sujato
 drive_links: ["https://drive.google.com/file/d/16x6Kg7OLTlbsNufXNPxtYnNp4u1xEjYn/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an3.70/en/sujato"
 year: 2018
-course: lay
+course: sangha
 tags:
   - an
   - theravada-chanting
   - deva
   - uposatha
   - ethics
+  - faith
 # imagery covered by Hecker's similes
 pages: 9
 parallels:

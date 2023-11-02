@@ -6,11 +6,9 @@ drive_links: ["https://drive.google.com/file/d/1Za_TzEqVjWkq70SMeuoFhYpuhmouFu9M
 authors: [sujato]
 year: 2014
 month: oct
-course: monastic
+course: sangha
 tags:
-  - sangha
   - vinaya-studies
-  - form
 minutes: 54
 ---
 

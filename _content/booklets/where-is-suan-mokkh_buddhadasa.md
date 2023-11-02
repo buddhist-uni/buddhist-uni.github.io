@@ -7,7 +7,7 @@ olid: OL32040806M
 external_url: "https://www.suanmokkh.org/books/21"
 drive_links:
   - "https://drive.google.com/file/d/111zLEVmdgEKUdtj5jYCx2W5RUbRa4196/view?usp=drivesdk"
-course: monastic
+course: sangha
 tags:
   - nibbana
   - dialogue

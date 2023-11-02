@@ -6,10 +6,9 @@ drive_links:
   - "https://drive.google.com/file/d/1rEVKyWy6jfB4foS3qSIaXjyQgJzq9pQC/view?usp=drivesdk"
 month: oct
 year: 2013
-course: lay
+course: sangha
 status: featured
 tags:
-  - form
   - function
 minutes: 71
 ---

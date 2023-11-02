@@ -9,11 +9,9 @@ publisher: "Anchor Books"
 year: 1983
 drive_links:
  - "https://drive.google.com/file/d/1ROJszDDsnMqW9VVOg92Pz6H9l1FXXjZR/view?usp=drivesdk"
-course: monastic
+course: sangha
 tags:
-  - form
   - academic
-  - west
   - power
   - charisma
 ---

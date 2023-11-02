@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.dhammatalks.net/Books2/Bhante_Dhammananda_Human_Life.htm"
 drive_links:
   - "https://drive.google.com/file/d/1snx3q4LTdBKjTxS_ebA7QUoEI2-kPeLr/view?usp=drivesdk"
-course: lay
+course: sangha
 tags:
   - philosophy
   - world

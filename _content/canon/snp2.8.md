@@ -4,8 +4,9 @@ slug: "snp.2.08"
 external_url: "https://suttacentral.net/snp2.8/en/sujato"
 translator: sujato
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/19Gq7eFPfK5qzaQ_0Y_CvY56s7KaBEzk9/view?usp=drivesdk"]
-course: monastic
+drive_links:
+  - "https://drive.google.com/file/d/19Gq7eFPfK5qzaQ_0Y_CvY56s7KaBEzk9/view?usp=drivesdk"
+course: sangha
 tags:
   - snp
 year: 2018

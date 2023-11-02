@@ -5,7 +5,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1qQn4fW2LwBOBH8qXa5lNMcyd1Li1EWAz/view?usp=drivesdk"]
 external_url: "https://www.bhikkhuni.net/old-pillar-new-possibilities/"
 year: 2009
-course: monastic
+course: sangha
 tags:
   - nuns
   - thai
