@@ -2,7 +2,6 @@
 title: "Right Effort"
 status: unpublished
 parents: [meditation]
-sortkey: 3
 illustration: https://illeakyw.sirv.com/Images/tags/Vajrasattva.jpg
 illustration_height: 3000
 illustration_width: 2400

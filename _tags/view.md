@@ -2,7 +2,6 @@
 title: "Right View"
 status: published
 parents: [philosophy]
-sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/Buddhist_Monk_Staff_MET.jpg
 illustration_height: 1757
 illustration_width: 1337

@@ -2,7 +2,6 @@
 title: "Mahāyāna"
 status: published
 parents: [form]
-sortkey: 2
 illustration: https://illeakyw.sirv.com/Images/tags/Tang-Guanyin.jpg
 illustration_height: 1024
 illustration_width: 768

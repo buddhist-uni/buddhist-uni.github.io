@@ -2,7 +2,6 @@
 title: "Teachings for Monastics"
 status: published
 parents: [monastic]
-sortkey: 10
 illustration: https://illeakyw.sirv.com/Images/tags/Monks_Debating_Practice_At_Sera_Monastery.jpeg
 illustration_center_x: 50%
 illustration_center_y: 50%

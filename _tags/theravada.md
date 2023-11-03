@@ -4,7 +4,6 @@ parents:
   - form
   - sea
 status: published
-sortkey: 1
 illustration: https://illeakyw.sirv.com/Images/tags/thai-ruins.jpg
 illustration_height: 1023
 illustration_center_y: 95%

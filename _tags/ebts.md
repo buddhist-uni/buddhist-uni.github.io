@@ -2,7 +2,6 @@
 title: "Early Buddhist Texts"
 status: published
 parents: [buddhism]
-sortkey: 3
 image: https://illeakyw.sirv.com/Images/banners/ajanta-teaching.jpg
 sirv_options: blur=1&brightness=-2
 image_width: 1245

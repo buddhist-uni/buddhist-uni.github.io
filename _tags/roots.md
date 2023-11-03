@@ -2,7 +2,6 @@
 title: "The History of Buddhism"
 parents: [form]
 status: published
-sortkey: 12
 illustration: https://illeakyw.sirv.com/Images/tags/kamakura-postcard.jpg
 illustration_height: 1246
 illustration_width: 843

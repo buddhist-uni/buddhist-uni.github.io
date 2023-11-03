@@ -2,7 +2,6 @@
 title: "Āgama Studies"
 status: published
 parents: [ebts]
-sortkey: 9
 illustration: https://illeakyw.sirv.com/Images/tags/turning-arhat.jpeg
 illustration_height: 900
 illustration_center_y: 25%

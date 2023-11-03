@@ -1,7 +1,6 @@
 ---
 title: "Lay Buddhism"
 status: published
-sortkey: 4
 parents: [sangha]
 description: A bibliography of free works on how to practice Buddhism as a householder.
 illustration: https://illeakyw.sirv.com/Images/tags/laywoman-meditating.jpeg

@@ -1,6 +1,5 @@
 ---
 title: "Buddha's India"
-sortkey: 7
 status: published
 parents:
   - ebts

@@ -2,7 +2,6 @@
 title: "The Forms of Buddhism"
 status: published
 parents: [buddhism]
-sortkey: 2
 illustration: https://illeakyw.sirv.com/Images/tags/dhammagiri_offering.jpg
 illustration_height: 636
 illustration_width: 1024

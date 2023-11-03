@@ -1,7 +1,6 @@
 ---
 title: "Mindfulness"
 status: unpublished
-sortkey: 4
 parents: [meditation]
 illustration: https://illeakyw.sirv.com/Images/tags/1942.1082_print.jpg
 illustration_height: 1689
