@@ -1,7 +1,7 @@
 ---
 title: "The Bodhisatta Path"
 status: unpublished
-parents: [indian]
+parents: [form]
 ---
 
 From the Theravāda perspective.

@@ -36,7 +36,7 @@ Please be aware that this tag is still under construction and as such is missing
 {% endif %}
 
 {% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
-{% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
+{% assign childtags = alltags | where_exp: "t", cfilter %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
   {% if child.illustration %}
@@ -46,7 +46,7 @@ Please be aware that this tag is still under construction and as such is missing
   {% endif %}{% assign children = children | push: clink %}
 {% endfor %}
 {% if page.status == "published" %}
-  {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" | sort: "title" | sort: "sortkey" %}
+  {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" %}
   {% for child in childtags %}
     {% if site.data.drive_folders[child.slug].public %}
       {% capture clink %}<a href="{{ site.data.drive_folders[child.slug].public }}"><i class="fab fa-google-drive"></i> {{ child.title }}</a>{% endcapture %}

@@ -1,6 +1,6 @@
 ---
 title: "The Pāli Canon"
-parents: [ebts, theravada]
+parents: [ebts]
 status: published
 sortkey: 6
 level: 3

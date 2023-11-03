@@ -115,9 +115,9 @@ collections:
        - form.md
        - ebts.md
        - path.md
+       - philosophy.md
        - ethics.md
        - meditation.md
-       - philosophy.md
        - sati.md
        - view.md
        - thought.md
@@ -125,10 +125,13 @@ collections:
        - characters.md
        - pali-canon.md
        - samatha.md
+       - vipassana.md
        - problems.md
        - samadhi.md
+       - hindrances.md
        - daily-life.md
        - brahmavihara.md
+       - sangha.md
        - speech.md
        - sutta.md
        - dn.md
@@ -151,11 +154,11 @@ collections:
        - emptiness.md
        - stream-entry.md
        - death.md
-       - karma.md
-       - setting.md
        - cosmology.md
+       - karma.md
        - rebirth.md
        - roots.md
+       - setting.md
        - theravada.md
        - mahayana.md
        - vinaya-pitaka.md
