@@ -8,8 +8,9 @@ source_url: "https://doi.org/10.18874/jjrs.39.2.2012.333-351"
 drive_links:
   - "https://drive.google.com/file/d/1hc2EN5F94mcp2E_qzHfiToX6mBIzqjtX/view?usp=drivesdk"
 status: featured
-course: dialogue
+course: roots
 tags:
+  - dialogue
   - engaged
   - japanese
   - japanese-imperial
