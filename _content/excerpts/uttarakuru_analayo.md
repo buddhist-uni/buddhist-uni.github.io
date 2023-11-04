@@ -17,6 +17,8 @@ course: cosmology
 tags:
   - becon
   - setting
+  - places
+  - myth
 ---
 
 The early Buddhist idea of a paradisiacal human society.
