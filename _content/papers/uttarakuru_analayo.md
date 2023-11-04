@@ -17,6 +17,7 @@ course: cosmology
 tags:
   - places
   - myth
+  - becon
   ---
 
-An explanation of the Northern Kuru country, complete with scriptural references.
+An overview of the "Northern Kuru country": a mythical utopia in Buddhist scriptures.
