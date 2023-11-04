@@ -6,14 +6,14 @@ external_url: "https://www.bps.lk/olib/wh/wh305_Kloppenborg_Paccekabuddha-Concep
 drive_links:
   - "https://drive.google.com/file/d/1UjtEVCir4HE8CdOx3Zrv1HvVinVuIQZa/view?usp=drive_link"
   - "https://drive.google.com/file/d/1orAgVjHpl64YY0z7WPaIrNY1Wsnrcc2g/view?usp=drive_link"
-course: path
+course: cosmology
 tags:
-  - meditation
+  - path
   - interfaith
   - paccekabuddha
 year: 1983
 oclc: 17511360
-publisher: BPS
+publisher: bps
 address: "Kandy, Sri Lanka"
 number: 305
 series: wheel
@@ -29,4 +29,6 @@ other terms that could be used to denote ascetics: muni, isi,
 samaṇa, tāpasa, jaṭila, terms which emphasise different
 aspects of asceticism
 
-An in-depth study of the Paccekabuddha as described in Pali Canonical and Commentarial Literature. This includes pre-Buddhist ideas of sages, i.e. munis, and the importance given to renunciation and solitude in the suttas. Also, this work looks at a Paccekabuddha's way of life and meditation practices, leading to nibbāna. As the Buddha tells us, "no one but me equals a paccekabuddha" (Isigili Sutta). 
+An in-depth study of the Paccekabuddha as described in Pali Canonical and Commentarial Literature.
+This includes pre-Buddhist ideas of sages, i.e. munis, and the importance given to renunciation and solitude in the suttas.
+Also, this work looks at a Paccekabuddha's way of life and meditation practices, leading to nibbāna. As the Buddha tells us, "no one but me equals a paccekabuddha" (Isigili Sutta). 
