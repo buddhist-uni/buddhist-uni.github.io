@@ -1,7 +1,7 @@
 ---
 title: "Uttarakuru"
 authors:
- - analayo
+  - analayo
 editor: "W. G. Weeraratne"
 booktitle: "Encyclopaedia of Buddhism"
 volume: 8
@@ -18,6 +18,6 @@ tags:
   - places
   - myth
   - becon
-  ---
+---
 
 An overview of the "Northern Kuru country": a mythical utopia in Buddhist scriptures.
