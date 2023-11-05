@@ -118,6 +118,7 @@ collections:
        - philosophy.md
        - ethics.md
        - meditation.md
+       - problems.md
        - sati.md
        - view.md
        - thought.md
@@ -126,12 +127,10 @@ collections:
        - pali-canon.md
        - samatha.md
        - vipassana.md
-       - problems.md
        - samadhi.md
        - hindrances.md
        - daily-life.md
        - brahmavihara.md
-       - sangha.md
        - speech.md
        - sutta.md
        - dn.md
@@ -153,14 +152,15 @@ collections:
        - thig.md
        - emptiness.md
        - stream-entry.md
+       - theravada.md
        - death.md
+       - mahayana.md
        - cosmology.md
        - karma.md
        - rebirth.md
+       - sangha.md
        - roots.md
        - setting.md
-       - theravada.md
-       - mahayana.md
        - vinaya-pitaka.md
        - nuns.md
        - engaged.md

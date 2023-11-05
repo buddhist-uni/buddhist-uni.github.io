@@ -2,13 +2,15 @@
 title: "Saṅgha"
 status: published
 parents: [form]
-use_sirv: true
-image: https://illeakyw.sirv.com/Images/banners/2013_Myanmar_Luyten-De-Hauwere_Bagan_018_gupyaukgyi_myinkaba_temple_mural.jpg
+image: https://illeakyw.sirv.com/Images/banners/Monks_in_Thailand.jpeg
 image_width: 1280
-image_height: 723
-image_center_x: 35%
-image_center_y: 10%
-footer_info: <a href="https://commons.wikimedia.org/wiki/File:2013_Myanmar_Luyten-De-Hauwere_Bagan_018_gupyaukgyi_myinkaba_temple_mural.jpg">Chris and Denis Luyten-De Hauwere</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+image_height: 852
+image_center_x: 30%
+image_center_y: 40%
+big_image: https://upload.wikimedia.org/wikipedia/commons/9/99/Monks_in_Thailand.JPG
+big_width: 1936
+big_height: 1288
+footer_info: <a href="https://commons.wikimedia.org/wiki/File:Monks_in_Thailand.JPG">Sry85</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>
 illustration: https://illeakyw.sirv.com/Images/tags/Phra_Buddha_Mettapanyanath_01.jpg
 illustration_width: 1108
 illustration_height: 1478

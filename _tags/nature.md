@@ -12,15 +12,15 @@ illustration_caption: >-
 big_illustration: https://upload.wikimedia.org/wikipedia/commons/d/d6/Avalokiteshvara%2C_One_of_the_Eight_Great_Bodhisattvas_-_Google_Art_Project.jpg
 illustration_center_x: 20%
 illustration_center_y: 16%
-image: https://illeakyw.sirv.com/Images/banners/Mae_Klang_Waterfall_monk.jpg
-image_height: 866
-image_width: 1280
-image_center_x: 80%
-image_center_y: 60%
-footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_monk_in_Mae_Klang_Waterfall.jpg">Devaprapas</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
-big_image: https://upload.wikimedia.org/wikipedia/commons/e/e8/Leshan_China_Buddhist-Monk-01.jpg
-big_height: 2243
-big_width: 3317
+image: https://illeakyw.sirv.com/Images/banners/michael-ahn.jpg
+image_height: 1495
+image_width: 1920
+image_center_x: 75%
+image_center_y: 36%
+footer_info: <a href="https://unsplash.com/photos/a-tree-in-front-of-a-building-with-mountains-in-the-background-JnAOMje89F8">Michael Ahn</a>
+big_image: https://unsplash.com/photos/JnAOMje89F8/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk5MDg4NjcwfA&force=true
+big_height: 2828
+big_width: 3631
 ---
 
 How do Buddhists view the natural world?

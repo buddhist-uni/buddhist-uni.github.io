@@ -1,6 +1,6 @@
 ---
 title: "Samādhi"
-status: unpublished
+status: published
 parents: [meditation]
 illustration: https://illeakyw.sirv.com/Images/tags/1964-556-Buddha-Shakyamuni.jpg
 illustration_height: 1500
