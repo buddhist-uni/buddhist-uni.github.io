@@ -10,7 +10,7 @@ tags:
   - nature
   - karma
   - cambodian
-  - modern 
+  - theravada-roots
 year: 2003
 journal: pw
 volume: 3
@@ -22,4 +22,4 @@ pages: "85--115"
 Buddhist virtue, and the moral rendering of the physical universe apparent
 in late nineteenth-century Khmer vernacular texts.
 
-This article looks at Buddhist literature in nineteenth-century Khmer. It argues that the literature of this period was a direct response to French colonialism, and though modern Cambodians questioned religious traditions and cosmologies, the law of karma and the framework of a moral universe persisted in their writings.
+This article looks at Buddhist literature in nineteenth-century Khmer. It argues that the literature of this period was a direct response to French colonialism, and though modern Cambodians questioned religious traditions and cosmologies, the law of karma and the framework of a moral universe persisted.
