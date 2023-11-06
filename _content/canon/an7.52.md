@@ -9,10 +9,7 @@ course: karma
 tags:
   - an
   - dana
-  - lay
   - ethics
-  - cosmology
-  - thought
 year: 1998
 pages: 4
 ---

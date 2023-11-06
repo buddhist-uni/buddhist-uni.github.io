@@ -7,12 +7,9 @@ drive_links: ["https://drive.google.com/file/d/1ZuNmlS31B_0L5GWplk_r_zruUDP0USo-
 status: featured
 course: buddhism
 tags:
-  - function
-  - canonical-poetry
   - ethics
+  - canonical-poetry
   - thought
-  - form
-  - ebts
   - pali-canon
   - snp
 subcat: poetry

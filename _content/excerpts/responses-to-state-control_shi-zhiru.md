@@ -18,6 +18,7 @@ tags:
   - engaged
   - taixu
   - modern
+  - sangha
 ---
 
 How Buddhism emerged from China's violent thrust into modernity.

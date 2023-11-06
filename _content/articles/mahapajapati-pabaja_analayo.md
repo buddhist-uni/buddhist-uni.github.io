@@ -15,7 +15,6 @@ tags:
   - ma
   - bhikkhuni
   - nuns
-  - indian
   - gender
 ---
 

@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1IQ52IuBT9dVjGPzooheCEj5XH6StYARN/view?usp=drivesdk"
 course: pali-canon
 tags:
+  - sangha
   - an
 # imagery tag covered by Hecker's Similes
 year: 1998

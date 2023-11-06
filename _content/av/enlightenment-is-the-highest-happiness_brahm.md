@@ -7,7 +7,6 @@ year: 2002
 month: jul
 course: function
 tags:
-  - buddhism
   - karma
   - lay
 minutes: 59

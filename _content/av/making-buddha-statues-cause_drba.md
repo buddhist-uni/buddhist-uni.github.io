@@ -11,7 +11,6 @@ tags:
   - west
   - chinese
   - bart
-  - form
   - canadian
 base_value: 0.2
 minutes: 5

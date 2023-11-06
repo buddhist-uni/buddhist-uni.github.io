@@ -9,9 +9,7 @@ drive_links:
 file_links: ["function-data/LA-Lectures_Yuttadhammo/01%20-%20Kalyanamitta%20(2009-05-24).mp3"]
 course: function
 tags:
-  - groups
-  - speech
-  - monastic
+  - sangha
 minutes: 58
 series: la-course_yuttadhammo
 number: 2

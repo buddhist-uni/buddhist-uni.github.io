@@ -9,7 +9,7 @@ year: 2009
 month: jul
 course: theravada
 tags:
-  - form
+  - bart
   - pilgrimage
 pages: 1
 ---

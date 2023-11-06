@@ -4,7 +4,7 @@ authors: [geoff]
 external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/asoka.html"
 year: 1993
 drive_links: ["https://drive.google.com/file/d/1tj1RHe_LIaTt9wBvQ9v5d-RRWK3Q_Op-/view?usp=drivesdk"]
-course: monastic-advice
+course: sangha
 tags:
   - pali-canon
   - indian

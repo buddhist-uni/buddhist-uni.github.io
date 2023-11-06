@@ -10,6 +10,7 @@ tags:
   - ethics
   - characters
   - charisma
+  - sangha
 year: 2018
 pages: 3
 ---

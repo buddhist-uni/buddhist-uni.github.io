@@ -9,14 +9,9 @@ status: featured
 tags: 
   - theravada
   - theravada-chanting
-  - lay
-  - monastic
+  - sangha
   - khp
-  - kn
   - canonical-poetry
-  - function
-  - path
-  - ethics
 subcat: poetry
 pages: 2
 ---

@@ -12,9 +12,9 @@ status: featured
 tags:
   - dhp
   - function
-  - path
   - death
   - world
+  - sangha
 minutes: 48
 ---
 

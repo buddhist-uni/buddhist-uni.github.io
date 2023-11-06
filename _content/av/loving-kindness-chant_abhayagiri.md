@@ -8,9 +8,6 @@ formats: [mp3]
 drive_links: ["https://drive.google.com/file/d/1V1-v8JPm-hw9URWYKwUZkvtYWEpNq5qv/view?usp=drivesdk"]
 course: buddhism
 tags:
-  - form
-  - function
-  - ebts
   - snp
   - west
   - theravada-chanting

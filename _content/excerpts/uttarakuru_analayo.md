@@ -19,6 +19,7 @@ tags:
   - setting
   - places
   - myth
+  - sangha
 ---
 
 The early Buddhist idea of a paradisiacal human society.

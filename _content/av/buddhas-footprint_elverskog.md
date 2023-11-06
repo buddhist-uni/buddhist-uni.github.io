@@ -9,12 +9,11 @@ tags:
   - academic
   - asia
   - nature
-  - lay
   - prosperity
   - materialism
   - selling
   - engaged
-  - indian
+  - roots
   - avadana
 year: 2020 
 minutes: 89

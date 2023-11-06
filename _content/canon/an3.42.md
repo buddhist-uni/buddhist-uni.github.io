@@ -10,7 +10,7 @@ course: path
 tags:
   - an
   - faith
-  - lay
+  - sangha
 pages: 1
 parallels:
   - ea-2.43
