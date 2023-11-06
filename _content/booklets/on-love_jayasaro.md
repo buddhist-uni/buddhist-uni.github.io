@@ -8,16 +8,10 @@ year: 2010
 status: featured
 course: buddhism
 tags:
-  - function
   - ethics
   - brahmavihara
-  - metta
-  - philosophy
   - psychology
-  - emotions
-  - love
   - lay
-  - sex
   - thought
 olid: OL32038496M
 base_value: 1.5

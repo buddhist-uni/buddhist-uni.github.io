@@ -17,7 +17,7 @@ status: featured
 tags:
   - west
   - ethics
-  - lay
+  - sangha
 ---
 
 > We are committed to living simply and sharing our time, energy, and material resources with those in need.

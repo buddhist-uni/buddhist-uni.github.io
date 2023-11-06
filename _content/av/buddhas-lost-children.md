@@ -16,8 +16,7 @@ formats: [mp4]
 status: featured
 course: thai
 tags:
-  - thai-forest
-  - monastic
+  - sangha
 year: 2006
 oclc: 230269343
 publisher: "EMS Films"

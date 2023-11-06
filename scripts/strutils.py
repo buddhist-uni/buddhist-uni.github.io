@@ -156,6 +156,16 @@ def radio_dial(options):
     termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
   return i
 
+def input_list(prompt):
+  print(prompt)
+  ret = []
+  while True:
+    item = input(" - ")
+    if not item:
+      break
+    ret.append(item)
+  return ret
+
 def input_with_prefill(prompt, text, validator=None):
     def hook():
         readline.insert_text(text)
@@ -236,7 +246,7 @@ class FileSyncedSet:
     self.fname = fname
     self.items = set()
     # normalizer must return a string with no newlines
-    self.norm = normalizer or (lambda a: str(a).replace("/n", " "))
+    self.norm = normalizer or (lambda a: str(a).replace("\n", " "))
     if os.path.exists(fname):
       with open(fname) as fd:
         for l in fd:
@@ -253,12 +263,24 @@ class FileSyncedSet:
     if item not in self.items:
       return
     self.items.remove(item)
-    with open(self.file_name, "w") as fd:
+    self._rewrite_file()
+  def _rewrite_file(self):
+    with open(self.fname, "w") as fd:
       for item in self.items:
         fd.write(f"{item}\n") if item else None
   def delete_file(self):
     os.remove(self.fname)
     self.items = set()
+  def peak(self):
+    ret = self.items.pop()
+    self.items.add(ret)
+    return ret
+  def pop(self):
+    ret = self.items.pop()
+    self._rewrite_file()
+    return ret
+  def __len__(self):
+    return len(self.items)
   def __contains__(self, item):
     return self.norm(item) in self.items
 

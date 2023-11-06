@@ -5,7 +5,7 @@ drive_links:
   - "https://drive.google.com/file/d/1c94TyZWIQR7keOyMOcbX_nLjI6w2B7QQ/view?usp=drivesdk"
 course: vinaya-studies
 tags:
-  - monastic
+  - sangha
   - economics
   - neuroscience
   - selling

@@ -12,6 +12,7 @@ course: east-asian
 tags:
   - zen
   - form
+  - time
 year: 2012
 publisher: "Kodaiji Temple"
 address: Kyoto

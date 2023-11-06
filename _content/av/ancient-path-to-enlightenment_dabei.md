@@ -11,8 +11,8 @@ drive_links:
 status: featured
 course: tudong
 tags:
+  - form
   - chinese
-  - vinaya-studies
   - pilgrimage
   - monastic-mahayana
   - monastic

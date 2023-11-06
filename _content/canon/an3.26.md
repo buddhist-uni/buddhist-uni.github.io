@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1G8L01UT1KPyNvZuitrnIUyGke2y5PAs_/view?usp=drivesdk"
 course: groups
 tags:
-  - ethics
+  - sangha
   - an
 year: 2012
 pages: 2

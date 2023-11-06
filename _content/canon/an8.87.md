@@ -8,6 +8,7 @@ drive_links:
 course: vinaya-studies
 tags:
   - dana
+  - sangha
   - an
 year: 2018
 pages: 1

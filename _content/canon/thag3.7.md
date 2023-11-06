@@ -5,7 +5,7 @@ external_url: "https://suttacentral.net/thag3.7/en/sujato"
 translator: sujato
 tags:
   - thag
-  - form
+  - sangha
   - path
 year: 2014
 pages: 1

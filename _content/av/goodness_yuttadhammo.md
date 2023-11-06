@@ -10,7 +10,7 @@ file_links: ["function-data/LA-Lectures_Yuttadhammo/02%20-%20Goodness%20(2009-04
 course: function
 tags:
   - karma
-  - form
+  - sangha
 status: featured
 minutes: 55
 series: la-course_yuttadhammo

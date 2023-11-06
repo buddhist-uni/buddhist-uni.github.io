@@ -17,6 +17,7 @@ baseurl = config.get('url')
 
 class JekyllFile(frontmatter.Post):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
+    fd = Path(fd)
     if 'slug' not in kwargs:
       kwargs['slug'] = fd.stem
     super().__init__(content, handler=handler, **kwargs)
@@ -87,27 +88,28 @@ class TagCollection():
 
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
+    fd = Path(fd)
     super().__init__(fd, content, handler, **kwargs)
     self.url = f"/content/{self.relative_path.parts[1]}/{fd.stem}"
 
 content = []
-for contentfolder in root_folder.joinpath('_content').iterdir():
-  if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):
-    continue
-  for contentfile in contentfolder.iterdir():
-    if contentfile.is_dir() or contentfile.name.startswith('.'):
-      continue
-    content.append(ContentFile.load(contentfile))
-
 tags = TagCollection()
-for tagfile in root_folder.joinpath('_tags').iterdir():
-  if (not tagfile.is_file()) or tagfile.name.startswith('.'):
-    continue
-  tags.add(TagFile.load(tagfile))
-tags.finalize()
-
 authors = AuthorCollection()
-for authorfile in root_folder.joinpath('_authors').iterdir():
-  if (not authorfile.is_file()) or authorfile.name.startswith('.'):
-    continue
-  authors.add(AuthorFile.load(authorfile))
+
+def load():
+  for contentfolder in root_folder.joinpath('_content').iterdir():
+    if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):
+      continue
+    for contentfile in contentfolder.iterdir():
+      if contentfile.is_dir() or contentfile.name.startswith('.'):
+        continue
+      content.append(ContentFile.load(contentfile))
+  for tagfile in root_folder.joinpath('_tags').iterdir():
+    if (not tagfile.is_file()) or tagfile.name.startswith('.'):
+      continue
+    tags.add(TagFile.load(tagfile))
+  tags.finalize()
+  for authorfile in root_folder.joinpath('_authors').iterdir():
+    if (not authorfile.is_file()) or authorfile.name.startswith('.'):
+      continue
+    authors.add(AuthorFile.load(authorfile))

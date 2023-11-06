@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/12aV2cp1RVGD1QDlDWifgeihXNuvrtqlZ/view?usp=drivesdk"
 course: nuns
 tags:
-  - form
+  - sangha
 year: 2014
 month: jul
 publisher: "Alliance for Bhikkhunīs"

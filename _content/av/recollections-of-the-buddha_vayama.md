@@ -10,7 +10,6 @@ course: path
 tags:
   - buddha
   - meditation
-  - form
   - buddhism
 minutes: 59
 ---

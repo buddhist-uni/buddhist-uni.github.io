@@ -7,7 +7,7 @@ drive_links:
 course: buddhism
 tags:
   - modern
-  - lay
+  - sangha
   - path
 year: 1985
 month: apr

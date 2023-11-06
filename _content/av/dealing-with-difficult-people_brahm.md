@@ -10,7 +10,7 @@ status: featured
 course: function
 tags:
   - ethics
-  - lay
+  - sangha
   - thought
   - daily-life
   - speech
