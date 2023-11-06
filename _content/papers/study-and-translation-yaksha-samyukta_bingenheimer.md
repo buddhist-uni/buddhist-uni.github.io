@@ -2,19 +2,17 @@
 title: "A Study and Translation of the Yakṣa-saṃyukta in the Shorter Chinese Saṃyukta-āgama"
 authors:
   - bingenheimer
-editor: dhammadinnā
+editor: dhammadinna
 external_url: "https://mbingenheimer.net/publications/bingenheimer.2020.yakshaSamyukta.pdf"
 drive_links:
-  - "https://drive.google.com/drive/folders/1-3P5u65MsX2gjuN46xqNV2dJxoAxrQDQ"
+  - "https://drive.google.com/file/d/1RL5fEb4smQfNYkTh24RDn3ddpmrYGjxa/view?usp=drivesdk"
 course: cosmology
 tags:
-  - S
   - manuscripts
 year: 2020
-oclc: 1225958086
-publisher: "Dharma Drum Publishing Corporation"
-address: "Taiwan"
-booktitle: sa-research_dhammadinna
+publisher: dharmadrum
+address: "Taipei"
+from_book: sa-research_dhammadinna
 pages: "763--843"
 ---
 
