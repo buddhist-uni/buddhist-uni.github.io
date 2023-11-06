@@ -10,12 +10,8 @@ course: imagery
 tags:
   - sn
   - death
-  - philosophy
   - thought
-  - view
   - time
-  - power
-  - ethics
 year: 2018
 pages: 3
 parallels:

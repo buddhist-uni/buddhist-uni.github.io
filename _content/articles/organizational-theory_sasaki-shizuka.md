@@ -11,8 +11,7 @@ pages: "202--216"
 journal: hijbs
 course: vinaya-studies
 tags:
-  - monastic
-  - form
+  - sangha
 ---
 
 > … the *saṃgha* is a collective body of people who wish to live doing only what they love to do---that is, Buddhist practices.

@@ -6,8 +6,9 @@ subcat: podcast
 editor: "Daigengna Duoer"
 external_url: "https://newbooksnetwork.com/in-the-forest-of-the-blind"
 status: featured
-course: dialogue
+course: roots
 tags:
+  - dialogue
   - historiography
   - academic
   - academia

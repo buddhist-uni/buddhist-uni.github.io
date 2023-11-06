@@ -12,7 +12,6 @@ tags:
   - vegetarianism
   - becon
   - karma
-  - livelihood
 pages: 3
 ---
 

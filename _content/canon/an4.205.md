@@ -8,7 +8,6 @@ drive_links:
 course: speech
 tags:
   - social
-  - ethics
   - an
 year: 2018
 pages: 1

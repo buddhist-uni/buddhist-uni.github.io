@@ -11,11 +11,9 @@ drive_links: ["https://drive.google.com/file/d/1rAYhpwekeXKhl1g0YGz6i58sN0Eotrc9
 tags:
   - form
   - pali-canon
-  - buddha
-  - path
   - nibbana
 base_value: 1
 pages: 13
 ---
 
-I. B. Horner's rather dated translation of a key sutta where the Buddha describes his own spiritual journey.
+I. B. Horner's rather dated translation of [a key sutta](/content/canon/mn26) where the Buddha describes his own spiritual journey.

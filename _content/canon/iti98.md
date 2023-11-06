@@ -10,6 +10,7 @@ tags:
   - dana
   - things
   - monastic-advice
+  - sangha
 year: 2017
 pages: 1
 ---

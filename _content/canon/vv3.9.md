@@ -8,7 +8,7 @@ drive_links:
 course: rebirth-stories
 tags:
   - vv
-  - lay
+  - sangha
 year: 2020
 pages: 2
 ---

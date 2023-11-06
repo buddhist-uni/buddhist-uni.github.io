@@ -12,6 +12,7 @@ tags:
   - historiography
   - academic
 pages: 153
+olid: OL37026567M
 ---
 
 A concise and readable survey of early Buddhist studies, showing the wide evidence we have in support of the authenticity of the EBTs and how we can know about ancient India at all.

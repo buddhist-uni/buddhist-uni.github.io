@@ -10,6 +10,7 @@ tags:
   - setting
   - characters
   - gender
+  - sangha
 year: 2001
 journal: jiabs
 volume: 24

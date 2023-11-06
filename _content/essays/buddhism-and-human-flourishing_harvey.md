@@ -7,10 +7,7 @@ year: 2013
 course: buddhism
 tags:
   - west
-  - secular
-  - becon
-  - engaged
-  - function
+  - sangha
   - dialogue
 pages: 10
 ---

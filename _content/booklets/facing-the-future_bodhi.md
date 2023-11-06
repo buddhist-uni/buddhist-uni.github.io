@@ -16,6 +16,7 @@ tags:
   - becon
   - monastic-advice
   - monastic-theravada
+  - sangha
 year: 2000
 publisher: bps
 series: wheel

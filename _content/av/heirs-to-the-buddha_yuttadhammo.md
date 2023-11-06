@@ -9,7 +9,7 @@ month: apr
 course: pilgrimage
 status: featured
 tags:
-  - form
+  - bart
   - indian
   - anuradhapura
 minutes: 36

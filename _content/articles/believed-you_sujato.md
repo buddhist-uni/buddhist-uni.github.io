@@ -6,6 +6,7 @@ drive_links: ["https://drive.google.com/file/d/12fyEguuAvcviTl-loavS8fwkPk-iXdxl
 tags:
   - gender
   - groups
+  - sangha
 course: vinaya-studies
 month: oct
 year: 2021

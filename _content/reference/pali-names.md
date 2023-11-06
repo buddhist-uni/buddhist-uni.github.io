@@ -15,6 +15,7 @@ tags:
   - setting
 year: 1937
 publisher: "The Government of India"
+olid: OL6365787M
 ---
 
 Thousands of entries covering the people, places, animals, books, etc of the Pāli Canon.

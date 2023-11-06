@@ -8,10 +8,9 @@ file_links:
   - "exclusive_01/Buddhist%20Values%20(2008.12.07)%20-%20Ajahn%20Jayasaro.mp3"
 course: thought
 tags:
-  - speech
+  - sangha
   - pedagogy
   - monastic-theravada
-  - form
   - monastic-advice
 authors:
   - jayasaro

@@ -8,7 +8,7 @@ year: 2009
 month: nov
 course: monastic-advice
 tags:
-  - form
+  - sangha
 minutes: 36
 ---
 

@@ -9,6 +9,7 @@ course: nuns
 tags:
   - west
   - engaged
+  - sangha
 year: 2014
 month: dec
 pages: 3

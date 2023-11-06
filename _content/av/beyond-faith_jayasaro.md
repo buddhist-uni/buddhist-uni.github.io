@@ -9,6 +9,7 @@ course: buddhism
 tags:
   - ethics
   - social
+  - sangha
   - ideology
 year: 2007
 month: may

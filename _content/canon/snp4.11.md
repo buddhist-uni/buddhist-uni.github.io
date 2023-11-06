@@ -14,6 +14,7 @@ course: origination
 tags:
   - snp
   - speech
+  - sangha
 minutes: 6
 parallels:
   - pli-tv-kd5

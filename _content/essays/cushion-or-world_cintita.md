@@ -9,7 +9,7 @@ external_url: "https://bhikkhucintita.wordpress.com/2013/12/19/the-cushion-or-th
 course: west
 tags:
   - engaged
-  - lay
+  - sangha
 status: featured
 pages: 10
 ---

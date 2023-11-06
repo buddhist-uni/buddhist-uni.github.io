@@ -8,7 +8,7 @@ drive_links:
 formats: [m4a]
 course: samatha
 tags:
-  - monastic
+  - renunciation
   - function
 year: 2015
 month: jul

@@ -5,7 +5,6 @@ external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/06/etam-santam.
 drive_links: ["https://drive.google.com/file/d/1aXzQg2L4iBu9DiSc07gEy1VbM6ov-Vb4/view?usp=drivesdk"]
 tags: 
   - monastic
-  - nuns
   - californian
   - american
 course: philosophy

@@ -165,6 +165,7 @@ if __name__ == "__main__":
   content_out_folder.mkdir()
   author_out_folder = output_folder.joinpath(AUTHOR_FOLDER_NAME)
   author_out_folder.mkdir()
+  website.load()
   for tag in website.tags:
     export_tag(tag, tags_out_folder)
   for content in website.content:

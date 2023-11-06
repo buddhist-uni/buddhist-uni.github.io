@@ -11,6 +11,7 @@ tags:
   - sati
   - faith
   - buddha
+  - sangha
 # nibbana tag covered by *The Island*
 year: 2021
 pages: 3

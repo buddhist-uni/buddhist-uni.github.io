@@ -8,7 +8,7 @@ file_links:
 source_url: "https://newbooksnetwork.com/daniel-veidlinger-spreading-the-dhamma-writing-orality-and-textual-transmission-in-buddhist-northern-thailand-university-of-hawaii-press-2006"
 course: vinaya-studies
 tags:
-  - form
+  - roots
   - thai-forest
   - east-asian-roots
 status: featured

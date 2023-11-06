@@ -7,10 +7,8 @@ year: 2012
 month: aug
 course: philosophy
 tags:
-  - monastic
-  - bhikkhuni
   - nuns
-  - vinaya-studies
+  - bhikkuni-controversy
 pages: 3
 ---
 

@@ -8,7 +8,7 @@ drive_links:
 course: path
 tags:
   - saddha
-  - monastic
+  - sangha
   - an
 year: 2018
 pages: 3

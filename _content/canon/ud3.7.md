@@ -10,7 +10,7 @@ tags:
   - characters
   - deva
   - dana
-  - monastic
+  - sangha
 year: 2021
 pages: 2
 parallels: []

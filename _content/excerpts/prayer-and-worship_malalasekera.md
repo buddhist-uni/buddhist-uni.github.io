@@ -14,7 +14,7 @@ drive_links:
  - "https://drive.google.com/file/d/1dFk_Sl2hY2yU9aQ-HdeduGH77Ve-4jcE/view?usp=drivesdk"
 course: buddhism
 tags:
-  - form
+  - sangha
   - sri-lankan
 ---
 

@@ -9,7 +9,7 @@ course: groups
 tags:
   - brahmavihara
   - love
-  - ethics
+  - sangha
 year: 2013
 olid: OL37750593M
 base_value: 2.5

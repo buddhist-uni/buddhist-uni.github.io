@@ -5,10 +5,10 @@ year: 2016
 month: jul
 external_url: "https://youtu.be/ROIlbFmhEAY"
 drive_links: ["https://drive.google.com/file/d/1x6hY6S0aQcaGM8Gc_dQEVZ9qrOPsYRcE/view?usp=drivesdk"]
-course: engaged
+course: sangha
 tags:
   - interfaith
-  - form
+  - engaged
 minutes: 119
 ---
 

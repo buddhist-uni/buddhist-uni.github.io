@@ -11,7 +11,7 @@ status: featured
 tags:
   - renunciation
   - social
-  - form # maybe down to sangha
+  - sangha
   - snp
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2015

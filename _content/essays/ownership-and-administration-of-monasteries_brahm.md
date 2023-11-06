@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Y9RuQy4CV1uvc_mq4FLxjUR4iF_IH1lY/view?usp=drivesdk"
 course: vinaya-studies
 tags:
-  - form
+  - sangha
 year: 1995
 pages: 2
 ---

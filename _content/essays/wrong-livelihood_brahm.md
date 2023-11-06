@@ -7,7 +7,6 @@ month: aug
 drive_links: ["https://drive.google.com/file/d/1kygzGsWX4FnFrRR79VXnTkK_IaeCYFDg/view?usp=drivesdk"]
 course: monastic
 tags:
-  - livelihood
   - vinaya-studies
 pages: 3
 ---
