@@ -13,6 +13,7 @@ tags:
 year: 1994
 publisher: bps
 pages: 138
+olid: OL1254935M
 ---
 
 Bhante's personal glossary he used throughout his translation work as a supplement to the [PTS PED](/content/reference/ped).
