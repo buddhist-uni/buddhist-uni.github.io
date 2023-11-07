@@ -5,14 +5,10 @@ authors: [turner-a]
 external_url: "https://newbooksnetwork.com/alicia-turner-saving-buddhism-the-impermanence-of-religion-in-colonial-burma-u-hawaii-press-2014/"
 year: 2014
 publisher: nbn
-course: theravada
+course: roots
 tags:
   - burmese
-  - burma
   - modern
-  - west
-  - form
-  - decline
 status: featured
 minutes: 68
 ---

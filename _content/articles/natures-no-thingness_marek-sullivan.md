@@ -19,4 +19,4 @@ volume: 22
 pages: "285--317"
 ---
 
-In this essay, the author responds to critiques of holistic eco-Buddhism which "draws on the Madhyamaka/Huayan doctrines of dependent origination (pratītyasamutpāda) and mutual non-obstruction (無礙 wu’ai) for inspiration towards a 'holistic' or 'deep ecological' environmental ethic founded on identification with the natural world."
+In this essay, the author responds to critiques of eco-Buddhism by "[drawing] on the Madhyamaka/Huayan doctrines of dependent origination (pratītyasamutpāda) and mutual non-obstruction (無礙 wu’ai) for inspiration towards a 'holistic' or 'deep ecological' environmental ethic founded on identification with the natural world."

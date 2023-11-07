@@ -9,13 +9,11 @@ year: 2011
 number: 1
 volume: 2011
 pages: "12--38"
-course: setting
+course: roots
 tags:
   - deva
   - dialogue
   - cosmology
-  - characters
-  - indian
   - ma
 status: featured
 ---

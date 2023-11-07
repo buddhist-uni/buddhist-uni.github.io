@@ -14,6 +14,7 @@ course: theravada
 tags:
   - pali-canon
   - theravada-roots
+  - roots
   - historiography
 ---
 

@@ -12,9 +12,7 @@ olid: OL3420009M
 course: nibbana
 tags:
   - abhidharma
-  - abhidhamma
   - indian
-  - sects
   - sautantrika
   - mahayana-roots
 pages: 157

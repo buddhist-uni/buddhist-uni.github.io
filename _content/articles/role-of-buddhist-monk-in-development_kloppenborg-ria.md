@@ -7,7 +7,7 @@ source_url: "https://doi.org/10.1163/22134379-90003429"
 drive_links:
   - "https://drive.google.com/file/d/1Sju2ltDlvzy21FLqvTx4MQpq5tGJW-q9/view?usp=drivesdk"
 tags:
-  - modern
+  - engaged
   - monastic-theravada
 year: 1984
 month: jan

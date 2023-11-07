@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1yH7vB-FpwXDbKaNEDNOWcPgcjmjbFL6v/view?usp=drivesdk"
 course: ethics
 tags:
-  - form
+  - sangha
   - iti
 # nibbana tag covered by *The Island*
 year: 2001
