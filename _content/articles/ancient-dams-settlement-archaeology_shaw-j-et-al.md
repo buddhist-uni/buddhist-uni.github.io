@@ -8,9 +8,8 @@ external_url: "https://www.tandfonline.com/doi/pdf/10.1623/hysj.48.2.277.44695?n
 source_url: "https://doi.org/10.1623/hysj.48.2.277.44695"
 drive_links:
   - "https://drive.google.com/file/d/1tCalezwi657SNQhyGjm1X9bzRJVHMVwf/view?usp=share_link"
-course: indian
+course: roots
 tags:
-  - medieval
   - hydrology
   - geology
 year: 2003

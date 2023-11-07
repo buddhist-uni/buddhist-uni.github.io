@@ -7,9 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1HUlLEe-cstTA7QtVFgyj8P-Q_6m07Ge4/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Sri%20Lanka%20and%20the%20Theravada%20Buddhist%20ecumene%20c.%20500%E2%80%931500.pdf"
-course: theravada # very solidly three stars, but may move down to "roots"
+course: roots
 tags:
-  - theravada-roots
+  - theravada
   - indian-ocean
 year: 2017
 from_book: sri-lanka-crossroads_ucl

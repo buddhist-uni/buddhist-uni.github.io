@@ -6,15 +6,14 @@ journal: ijds
 year: 2014
 volume: 1
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/12Xa6DBaU-I1ifdDyv58Jt9mB79FkoxcZ/view?usp=drivesdk"]
-course: mahayana
+drive_links:
+  -:"https://drive.google.com/file/d/12Xa6DBaU-I1ifdDyv58Jt9mB79FkoxcZ/view?usp=drivesdk"
+course: roots
 status: featured
 tags:
-  - form
+  - mahayana
   - hermeneutics
-  - mahayana-canon
   - pali-commentaries
-  - medieval
 pages: 15
 ---
 

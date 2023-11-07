@@ -5,10 +5,9 @@ authors:
 external_url: "https://www.lionsroar.com/reviews-how-the-buddha-became-st-josaphat/"
 drive_links:
   - "https://drive.google.com/file/d/1iJBnOHIUmfRKT0_bAQvfbU0MIgNfjy51/view?usp=drivesdk"
-course: west # maybe move to history
+course: roots
 tags:
   - premodern
-  - medieval
 year: 2014
 month: may
 journal: lions-roar

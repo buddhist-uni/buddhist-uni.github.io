@@ -12,7 +12,6 @@ tags:
   - buddha
   - buddhism
   - form
-  - indian
 pages: 10
 ---
 

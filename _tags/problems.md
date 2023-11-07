@@ -9,9 +9,9 @@ illustration_width: 2400
 illustration_center_x: 45%
 illustration_center_y: 30%
 illustration_caption: >-
-  In this statue,
+  In this symbolic representation of Right Effort
   <a href="https://www.artic.edu/artworks/26091/vajrasattva-seated-on-lotus-flower-with-hands-grasping-a-thunderbolt-vajra-and-bell-ghanta-with-thunderbolt-handle">at the Art Institute of Chicago</a>,
-  Vajrasattva looks down compassionately at his students as he wields a vajra to clear away their obscurations.
+  Vajrasattva looks down compassionately at his students as he wields a vajra to clear away their (our) obscurations.
 # illustration: https://illeakyw.sirv.com/Images/tags/Vajrakilaya_smaller.jpg
 # illustration_height: 1492
 # illustration_width: 1195
@@ -32,5 +32,5 @@ big_height: 4000
 big_width: 6000
 ---
 
-*Vayama* is the application of effort to overcome our problems via suppressing the unwholesome and encouraging the wholesome qualities within ourselves.
+*Vayama* is the application of effort to overcome our problems via overcoming the unwholesome and encouraging the wholesome qualities within ourselves.
 

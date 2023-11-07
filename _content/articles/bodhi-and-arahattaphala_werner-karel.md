@@ -10,11 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Q_kyHpcgWKfd8J4nZgrEl5B5NWOpFrij/view?usp=drivesdk"
 status: featured
 course: mahayana-roots
-# Uncertain placement
-tags:
-  - indian
-  - sects
-  - mahayana
+# Uncertain what tags...
 year: 1981
 journal: jiabs
 volume: 14

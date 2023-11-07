@@ -10,7 +10,7 @@ number: 2
 journal: bsr
 course: nibbana
 tags:
-  - abhidhamma
+  - abhidharma
   - indian
   - pali-canon
 pages: "95--109"

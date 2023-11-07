@@ -10,11 +10,12 @@ year: 2010
 month: may
 course: abhidhamma
 tags: 
-  - theravada
-  - indian
+  - dialogue
+  - sects
   - religion
 pages: 25
 ---
 
 > I’m gripped by a somewhat peculiar trepidation as I tiptoe into the hallowed portals of the abhidhamma, my feet echoing too loudly in the cavernous austerity.
 
+> The Buddha was not a butterfly collector.

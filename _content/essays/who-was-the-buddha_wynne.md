@@ -3,7 +3,7 @@ title: "Who Was the Buddha?"
 authors: [wynne]
 external_url: "https://aeon.co/essays/was-the-buddha-an-awakened-prince-or-a-humble-itinerant"
 tags:
-  - form
+  - roots
   - buddhism
   - buddha
 status: rejected

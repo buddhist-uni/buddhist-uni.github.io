@@ -11,8 +11,6 @@ drive_links: ["https://drive.google.com/file/d/1SXVENICQX42VWItyUaT8pHKhq5N27uD5
 course: buddhism
 tags:
   - west
-  - secular
-  - science
   - philosophy
   - philosophy-of-science
 status: featured

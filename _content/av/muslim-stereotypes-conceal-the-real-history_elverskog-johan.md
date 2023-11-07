@@ -10,10 +10,10 @@ external_url: "https://tricycle.org/podcast/buddhism-muslim-stereotypes/"
 formats: [mp3]
 drive_links:
   - "https://drive.google.com/file/d/1rZfn6nqLUkJZbYyRo5UyeaW63rYVSXtd/view?usp=drivesdk"
-course: tantric-roots
+course: roots
 tags:
   - islam
-  - medieval
+  - tantric-roots
 minutes: 30
 ---
 
