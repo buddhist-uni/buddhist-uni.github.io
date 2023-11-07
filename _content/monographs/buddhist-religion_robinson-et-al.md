@@ -11,8 +11,8 @@ publisher: Wadsworth
 course: form
 tags:
   - buddhism
+  - roots
   - mahayana
-  - philosophy
 status: featured
 pages: 314
 ---

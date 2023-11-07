@@ -1,7 +1,7 @@
 ---
 title: "Saṅgha"
 status: published
-parents: [form]
+parents: [form, ethics]
 image: https://illeakyw.sirv.com/Images/banners/Monks_in_Thailand.jpeg
 image_width: 1280
 image_height: 852
