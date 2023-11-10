@@ -6,6 +6,8 @@ external_url: "http://dhammatalks.net/Books10/Bhikkhu_Bodhi_The_Jhanas_and_the_L
 source_url: "https://web.archive.org/web/20040812172805/http://www.buddhanet.net/budsas/ebud/ebdha267.htm"
 drive_links:
   - "https://drive.google.com/file/d/1fKmtexkIEFaJJHZ64TUyka2VGMmthPKJ/view?usp=sharing"
+  - "https://drive.google.com/file/d/1XTCPT7l3CD034b1C_gi_prIYul0G0pHo/view?usp=drivesdk"
+formats: [pdf, mp3]
 course: samadhi
 tags:
   - jhana-controversy

@@ -107,6 +107,10 @@
   "private": "https://drive.google.com/drive/folders/1OqcQ5wipm6l2XREXT_7I8VxeIgpjy-Zg",
   "public": null
  },
+ "brahmavihara": {
+  "private": "https://drive.google.com/drive/folders/1KjsRy4SxUYSwHRxiXWK2Cb5OziSpXIIM",
+  "public": "https://drive.google.com/drive/folders/1-rjn46aW3B-kFJ-fHuJZy5a8Sn_Pmg0C"
+ },
  "buddha": {
   "private": "https://drive.google.com/drive/folders/1dadG76By7eI4zKuDdofy4ZphlqKhdPwi",
   "public": "https://drive.google.com/drive/folders/13WkPn6574tdzGOCfYDcM24OxVlMvw_QP"
@@ -518,6 +522,10 @@
  "nature": {
   "private": "https://drive.google.com/drive/folders/17-tTd1sgvVq6hPWT-A2SkWtJjLIXp2J_",
   "public": "https://drive.google.com/drive/folders/10FhXe3dtyCmt_uQt0VXD8hpMJaDCjS2T"
+ },
+ "navakovada": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/14T4hsAsgLne4hJIu7DQbIx_M3BbuXJ-L"
  },
  "nepalese": {
   "private": "https://drive.google.com/drive/folders/1POQDz9MPjyq14vrn-ddnir1WwrYIvsNG",

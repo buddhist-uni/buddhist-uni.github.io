@@ -8,10 +8,11 @@ authors:
   - "Ācariya Dhammapāla"
 editor: bodhi
 external_url: "https://www.bps.lk/olib/wh/wh367_Bodhi_Dana--The-Practice-of-Giving.html"
-formats: [pdf, epub]
+formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/1-HzyeYYKjfCv-zp5g9Kcbj-ND-ejR2Mm/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1WcAU9PEfPRICYmGyacv8YwzYphJIcST2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r5xhNoAuUloAWXjYGoj3NAH8f1bulLa1/view?usp=drivesdk"
 course: ethics
 tags:
   - dana
@@ -26,3 +27,4 @@ pages: 40
 
 A collection of essays on generosity.
 
+You can also [listen to this book on YouTube](https://youtu.be/vnwMfaPayOM).

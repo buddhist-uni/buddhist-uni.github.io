@@ -25,3 +25,5 @@ pages: 42
 ---
 
 > When we adopt a Buddhist perspective on the wounds that afflict our world today, we soon realize that these wounds are symptomatic: a warning signal that something is fundamentally awry with the way we lead our lives.
+
+You can also [listen to this book on Pariyatti's website](https://store.pariyatti.org/facing-the-future).
