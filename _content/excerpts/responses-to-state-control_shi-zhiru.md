@@ -17,8 +17,7 @@ status: featured
 tags:
   - engaged
   - taixu
-  - modern
-  - sangha
+  - form
 ---
 
 How Buddhism emerged from China's violent thrust into modernity.

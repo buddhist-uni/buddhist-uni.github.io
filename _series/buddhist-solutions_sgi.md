@@ -4,6 +4,7 @@ tags:
   - sgi
   - nichiren
   - american-mahayana
+  - problems
 category: av
 subcat: podcast
 external_url: "https://buddhistsolutions.transistor.fm/"

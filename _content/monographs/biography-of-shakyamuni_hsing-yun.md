@@ -17,8 +17,7 @@ course: buddhism
 status: featured
 tags:
   - buddha
-  - form
-  - setting
+  - roots
   - chan-lit
 pages: 214
 ---

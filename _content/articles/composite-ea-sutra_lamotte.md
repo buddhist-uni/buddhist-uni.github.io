@@ -12,7 +12,7 @@ drive_links:
 course: ea
 tags:
   - nibbana
-  - mahayana-roots
+  - roots
 year: 1995
 journal: bsr
 volume: 12

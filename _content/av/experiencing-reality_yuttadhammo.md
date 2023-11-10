@@ -16,4 +16,4 @@ minutes: 27
 
 > Here, I'd like to talk about those things that the meditator will often misunderstand to be unbeneficial or improper practice or a sign that the practice is going wrong when in fact these things are a sign that one is practicing correctly.
 
-A talk about how right perception of the hindrances or three characteristics is often misunderstood by meditators as "wrong" when they expect meditation to always lead immediately to "blissful" states.
+A talk about how right perception of the three characteristics is often misunderstood by meditators as "wrong" when they expect meditation to always lead immediately to "blissful" states.

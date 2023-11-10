@@ -188,6 +188,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### The Unconditioned and Nonlocality
 
+{% include content_blurb.html category="canon" slug="an3.47" %}
+- A short, enigmatic description of conditioned phenomena (saṃsāra) and unconditioned phenomena (nibbāna).
+
 {% include content_blurb.html category="articles" slug="nibbana-abhidhamma_cousins" %}
   - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _nibbāna_ develop into the “unconditioned element”?
 

@@ -380,9 +380,6 @@ We open with some suttas from other collections than the MN, which Bhikkhu Bodhi
 {% include content_blurb.html category="articles" slug="sixfold-purity-of-an-arahant_analayo" %}
 - A thorough description of what makes someone fully enlightened.
 
-{% include content_blurb.html category="canon" slug="an3.47" %}
-- A short, enigmatic description of conditioned phenomena (saṃsāra) and unconditioned phenomena (nibbāna).
-
 {% include content_blurb.html category="canon" slug="ud8.3" %}
 - A short exclamation on the existence of Nibbāna. 
 
