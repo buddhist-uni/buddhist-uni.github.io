@@ -10,6 +10,7 @@ drive_links:
 course: vinaya-studies
 tags:
   - indian
+  - iddhi
 year: 2007
 journal: jpts
 publisher: pts

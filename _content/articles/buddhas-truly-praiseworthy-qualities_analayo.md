@@ -15,7 +15,7 @@ tags:
   - buddha
   - ma
   - path
-  - indian
+  - roots
 ---
 
 > Given the fact that the praiseworthy qualities of the Buddha are the main theme of the *Mahāsakuludāyi-sutta* and its parallel, it is not surprising if the tendency to elevate the Buddha’s status would to some degree also have influenced the reciters responsible for transmitting the discourse. A comparison of the two versions in fact reveals several instances where this tendency is at work

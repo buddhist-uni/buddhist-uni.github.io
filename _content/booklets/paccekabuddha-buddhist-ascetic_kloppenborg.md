@@ -12,6 +12,7 @@ tags:
   - interfaith
   - paccekabuddha
 year: 1983
+olid: OL5231071M
 oclc: 17511360
 publisher: bps
 address: "Kandy, Sri Lanka"

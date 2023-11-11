@@ -13,6 +13,7 @@ tags:
   - pericope
   - indian
   - theravada-chanting
+  - theravada-roots
 ---
 
 Examines the literary style of the Pāli Canon and explains how its textual features are a product of its performative context.

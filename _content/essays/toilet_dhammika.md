@@ -6,7 +6,7 @@ year: 2008
 drive_links: ["https://drive.google.com/file/d/1ceQAmbbddtXIArfci_LG4iWmTvBVhc4-/view?usp=drivesdk"]
 course: pilgrimage
 tags:
-  - indian
+  - roots
   - present
   - biology
   - places

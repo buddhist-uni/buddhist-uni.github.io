@@ -1,6 +1,7 @@
 ---
 title: "The Wheel"
 external_url: "https://www.bps.lk/library_wheels.php"
+alternate_url: "https://store.pariyatti.org/Wheel-Publications_c_386-1-3.html"
 publisher: bps
 years: 1958–2002
 category: booklets

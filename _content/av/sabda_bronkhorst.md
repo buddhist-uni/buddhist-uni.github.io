@@ -4,7 +4,7 @@ subcat: podcast
 authors:
   - "Johannes Bronkhorst"
 external_url: "https://newbooksnetwork.com/johannes-bronkhorst-a-sabda-reader-language-in-classical-indian-thought-columbia-up-2019"
-course: indian
+course: roots
 tags:
   - mahayana-roots
   - language

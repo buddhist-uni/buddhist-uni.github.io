@@ -7,8 +7,7 @@ year: 2014
 course: agama
 status: featured
 tags:
-  - ebts
-  - indian
+  - roots
   - historiography
   - academic
 pages: 153

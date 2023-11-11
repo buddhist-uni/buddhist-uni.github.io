@@ -11,8 +11,6 @@ formats: [m4a]
 course: pali-canon
 tags:
   - buddhism
-  - ebts
-  - form
   - hermeneutics
   - dialogue
   - mahayana-canon

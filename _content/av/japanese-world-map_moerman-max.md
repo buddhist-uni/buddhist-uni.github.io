@@ -9,7 +9,7 @@ status: featured
 course: japanese
 tags:
   - maps
-  - modern
+  - roots
   - dialogue
 year: 2022
 month: sep

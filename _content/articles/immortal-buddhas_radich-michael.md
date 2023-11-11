@@ -11,7 +11,7 @@ number: 1
 pages: "227--290"
 course: tantric
 tags:
-  - mahayana-roots
+  - roots
 ---
 
 > [Mahayana] doctrines eventually propose that the Buddha is completely immortal, and that his immortality is reflected in his embodiment in an utterly indestructible substance (Skt. _vajra_)

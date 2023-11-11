@@ -178,13 +178,17 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### Unsupported and Unsupportive Consciousness
 
+**Note** *The Island*’s understanding of *Viññāṇaṁ anidassanaṁ* here as being a description of *nibbāna* is popular but incorrect (as the following essays explain)...
+
 {% include content_blurb.html category="articles" slug="what-the-nikayas-say-about-nibbana_brahmali" %}
   - It is very important (and very difficult!) to understand that the “experience” of _nibbāna_ is no experience at all!
-  - Ajahn Brahmali here argues the other side of the “debate” from _The Island_, explaining how “_anidassana viññāṇa_” should be understood, not as a hidden, pure, or non-dual consciousness, but as something else entirely.
+  - Ajahn Brahmali here argues the other side of the “debate” from _The Island_, explaining how “_anidassana viññāṇa_” should be understood, not as a hidden, pure, or non-dual consciousness, but as something else entirely...
   
 {% include content_blurb.html category="essays" slug="boundless-consciousness_sunyo" %}
-- And in this brilliant essay, Bhante Sunyo proposes a most elegant solution to the problem in this verse.
+- In this brilliant essay, Bhante Sunyo proposes a elegant solution to the problem in this verse.
 
+{% include content_blurb.html category="essays" slug="consciousness-where-nothing_sujato" %}
+- And Ven. Sujato puts the final nail in the coffin by putting this sutta back into its historical context.
 
 #### The Unconditioned and Nonlocality
 
