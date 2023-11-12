@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1soEvs7w15_LdqZKUkgs1MHqffYZtL8in/view?usp=drivesdk"
 course: path
 tags:
-  - indian
+  - roots
 year: 1961
 olid: OL24981374M
 publisher: bps

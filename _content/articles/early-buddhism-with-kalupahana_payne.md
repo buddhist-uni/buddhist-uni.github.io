@@ -12,8 +12,6 @@ number: 7
 course: ebts
 tags:
   - form
-  - indian
-  - buddhism
 status: featured
 pages: "94--95"
 ---

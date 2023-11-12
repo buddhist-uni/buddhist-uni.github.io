@@ -12,7 +12,6 @@ tags:
   - ebts
   - myth
   - setting
-  - indian
   - imagery
   - karma
   - abhidhamma

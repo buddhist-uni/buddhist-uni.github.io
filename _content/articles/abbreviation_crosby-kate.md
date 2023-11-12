@@ -11,12 +11,10 @@ year: 2007
 journal: jpts
 publisher: pts
 volume: 29
-course: indian
+course: roots
 pages: "169--174"
 tags:
   - esoteric-theravada
-  - mahayana-roots
-  - theravada-roots
 ---
 
 > Omission even in cases of variation is possible, where a sample gives an impression of the whole

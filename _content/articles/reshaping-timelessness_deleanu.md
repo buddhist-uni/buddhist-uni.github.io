@@ -10,7 +10,6 @@ course: mahayana-roots
 tags:
   - samadhi
   - path
-  - sects
   - dialogue
   - hermeneutics
 status: featured

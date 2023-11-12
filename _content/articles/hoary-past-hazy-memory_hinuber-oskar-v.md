@@ -12,7 +12,6 @@ pages: "193--210"
 course: setting
 tags:
   - ebts
-  - pali-canon
   - indian
   - historiography
 ---

@@ -5,9 +5,9 @@ external_url: "https://budblooms.org/2020/05/10/ancient-sri-lanka-through-the-ey
 drive_links: ["https://drive.google.com/file/d/14c9YnSw9rTceOnRnB2uf3D-oDugj-iG6/view?usp=drivesdk"]
 year: 2009
 month: mar
-course: sects
+course: medieval
 tags:
-  - medieval
+  - sects
   - theravada-roots
 pages: 4
 ---

@@ -30,7 +30,7 @@ layout: default
     {% endif %}
     {% if transcont.size > 0 %}
     <h3 id="translations">Translations by {{ page.title }}:</h3>
-    <div>{% include content_list.html contents=transcont orderby="year" %}</div>
+    <div>{% include content_list.html contents=transcont orderby="slug" %}</div>
     {% endif %}
     </div>{% endunless %}
   </div>

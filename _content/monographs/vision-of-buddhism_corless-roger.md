@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/details/visionofbuddhism0000corl/mode/1up"
 tags:
   - buddhism
-  - form
+  - roots
 year: 1989
 olid: OL2208173M
 oclc: 19815489

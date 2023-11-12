@@ -7,18 +7,16 @@ file_links:
   - "exclusive_01/Stupa%2C%20Sutra%2C%20and%20Sharira%20in%20China%20656-706%20-%20Barrett.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1CfUZfkveoKB32dLHcVJBIB4c9fTkx0F_/view?usp=drivesdk"
-course: east-asian-roots
+course: roots
 base_value: 0.9
 status: featured
 tags:
+  - east-asian-roots
   - empress-wu
   - tang
-  - clan
   - books
-  - printing
   - china
   - historiography
-  - medieval
 year: 2001
 journal: bsr
 volume: 18
