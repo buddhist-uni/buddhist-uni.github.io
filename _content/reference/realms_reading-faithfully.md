@@ -8,6 +8,7 @@ tags:
   - karma
   - rebirth
 publisher: "Reading Faithfully"
+pages:3
 ---
 
 Reference charts that map out the Buddha's teachings on the realms of rebirth.
