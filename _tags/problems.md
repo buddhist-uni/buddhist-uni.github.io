@@ -31,5 +31,5 @@ big_height: 4000
 big_width: 6000
 ---
 
-*Vayama* is the application of effort to overcome our problems via overcoming the unwholesome and encouraging the wholesome qualities within ourselves.
+*Vayama* is the application of effort to overcome our problems by surmounting the unwholesome and encouraging the wholesome qualities within ourselves.
 

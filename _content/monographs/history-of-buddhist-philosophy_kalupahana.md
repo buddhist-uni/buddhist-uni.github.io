@@ -2,6 +2,7 @@
 title: "A History of Buddhist Philosophy: Continuities and Discontinuities"
 authors: [kalupahana]
 year: 1992
+external_url: "https://archive.org/details/historyofbuddhistphilosophycontinuitiesanddiscontinuitiesdavidkalupahanaj._915_e/mode/1up"
 publisher: hawaii
 course: dialogue
 tags:

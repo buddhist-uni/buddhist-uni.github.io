@@ -10,6 +10,7 @@ tags:
 year: 2003
 olid: OL8627281M
 oclc: 881280431
+external_url: "https://archive.org/details/globalcivilizationbuddhistislamicdialoguedaisakuikedamajidtehranian2000_202003_547_K/mode/1up"
 publisher: "British Academic Press"
 address: "London"
 pages: 182

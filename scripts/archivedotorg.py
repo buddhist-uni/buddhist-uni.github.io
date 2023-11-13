@@ -27,6 +27,7 @@ else:
 ARCHIVEID_BLACKLIST = {
   "unehistoiredetou0000na",
   "delinegaliteparm0000prof",
+  "earlyidentityexperiencecontitutionofbeingaccordingtoearlybuddhismsuehamiltonseeotherbooks_648_V",
   "elartedelasabidu0000dala"
 }
 
@@ -48,21 +49,27 @@ def last_archived_datetime(url):
   return datetime.strptime(timestamp, '%Y%m%d%H%M%S')
 
 def extract_archiveorg_id(item):
-  match = re.search(r'https?:\/\/archive.org\/details\/([a-z0-9_-]+)\/?', item)
+  match = re.search(r'https?:\/\/archive.org\/details\/([\.a-zA-Z0-9_-]+)\/?', item)
   if match:
     return match.groups()[0]
   return None
 
 def search_archiveorg_lending_library(query):
   return archive_org_session.get("https://archive.org/advancedsearch.php", params={
-      "q": f"collection:inlibrary AND language:eng AND {query}",
+      "q": f"(collection:JaiGyan OR collection:inlibrary) AND language:(san OR eng) AND {query}",
       "sort": "lending___available_to_borrow desc, loans__status__max_lendable_copies desc, lending___max_lendable_copies desc",
       "rows": 12,
       "output": "json"
     }).json()['response']
 
 def is_doc_sane_for_work(doc, workinfo):
-  return doc['imagecount'] >= workinfo['pages'] and doc['year'] >= workinfo['year'] and doc['identifier'] not in ARCHIVEID_BLACKLIST
+  if doc['identifier'] in ARCHIVEID_BLACKLIST:
+    return False
+  if 'imagecount' in doc and doc['imagecount'] < workinfo['pages']:
+    return False
+  if 'year' in doc and doc['year'] < workinfo['year']:
+    return False
+  return True
 
 class _AO_SearchStrat(object):
   def __init__(self, workinfo):
@@ -101,8 +108,8 @@ class _AO_DefaultSearchStrat(_AO_SearchStrat):
     author = " ".join(filter(lambda w: len(w)>2, self.info['authors'][0].split("-")[0].split(" ")))
     if author == 'tnh':
       author = "Thich Nhat Hanh"
-    print(f"Searching works by title=\"{title}\" and author=\"{author}\" instead...")
-    return search_archiveorg_lending_library(f"title:({title}) AND creator:({author})")
+    print(f"Searching works matching \"{title} {author}\" instead...")
+    return search_archiveorg_lending_library(f"title:({title}) AND {author}")
 
 def find_lendable_archiveorg_url_for_metadata(workinfo):
   print(f"Searching Archive.org for lendable copies of \"{workinfo['title']}\"...")
@@ -119,7 +126,7 @@ def find_lendable_archiveorg_url_for_metadata(workinfo):
       print("But none of those seem suitable...")
   if len(docs) >= 1:
     doc = docs[0]
-    print(f"Going with \"{doc['title']}\" by \"{doc.get('creator', 'None')}\" ({doc['year']})")
+    print(f"Going with \"{doc['title']}\" by \"{doc.get('creator', 'None')}\" ({doc.get('year') or doc.get('publicdate')[:4]})")
     return f"https://archive.org/details/{doc['identifier']}/mode/1up"
   print("Unable to find a suitable copy :(")
   return None

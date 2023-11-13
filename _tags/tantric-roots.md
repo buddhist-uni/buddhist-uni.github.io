@@ -1,7 +1,7 @@
 ---
 title: "Late Indian Buddhism"
 status: unpublished
-parents: [tantric, roots, mahayana-roots]
+parents: [tantric, mahayana-roots]
 ---
 
 The historical roots of Buddhist Tantra.

@@ -3,6 +3,7 @@ title: "Socially Engaged Buddhism"
 authors:
   - "Sallie B. King"
 year: 2009
+external_url: "https://archive.org/details/sociallyengagedbuddhismsalliekingb._964_M/mode/1up"
 publisher: hawaii
 olid: OL22684571M
 course: engaged
