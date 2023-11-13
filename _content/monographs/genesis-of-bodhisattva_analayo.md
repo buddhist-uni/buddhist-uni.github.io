@@ -11,7 +11,7 @@ tags:
   - maitreya
   - cosmology
   - rebirth-stories
-  - indian
+  - roots
 status: featured
 year: 2010
 olid: OL49629294M

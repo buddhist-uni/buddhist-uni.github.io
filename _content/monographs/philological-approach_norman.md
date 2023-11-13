@@ -9,10 +9,8 @@ olid: OL7868615M
 course: pali-language
 tags:
   - historiography
-  - setting
-  - indian
+  - roots
   - sanskrit
-  - pali-canon
   - philology
   - hermeneutics
 drive_links: ["https://drive.google.com/file/d/1yBz-EEUwE9EkZHbgvoinc1n9xi6UzrZE/view?usp=drivesdk"]

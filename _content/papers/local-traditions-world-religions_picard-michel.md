@@ -8,7 +8,7 @@ drive_links:
 # almost featured
 course: west
 tags:
-  - religion
+  - religion # maybe move here?
   - academia
   - modern
 year: 2017

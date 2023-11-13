@@ -14,7 +14,6 @@ tags:
   - form
   - modern
   - religion
-  - tibetan
 year: 2019
 journal: jgb
 volume: 20

@@ -1,3 +1,3 @@
 ---
-title: "Laurence Khantipalo Mills"
+title: "Laurence Khantipālo Mills"
 ---

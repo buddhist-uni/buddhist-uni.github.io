@@ -7,13 +7,11 @@ volume: 41
 pages: "421--472"
 external_url: "https://doi.org/10.2143/JIABS.41.0.3285748"
 drive_links: ["https://drive.google.com/file/d/1mtvz9Jv0B9vD3_hHX6TTI8ZCVCUKRgax/view?usp=drivesdk"]
-course: indian
+course: roots
 tags:
   - law
-  - mahayana-roots
   - politics
   - places
-  - medieval
 ---
 
 > … there was nothing "private" about either the king’s support of Buddhist communities, or the claims and requests that Buddhist intellectuals made of the king.

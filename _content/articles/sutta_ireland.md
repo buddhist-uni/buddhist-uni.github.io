@@ -8,7 +8,7 @@ drive_links:
 course: sutta
 tags:
   - ebts
-  - form
+  - roots
   - hermeneutics
 year: 1964
 journal: Sangha

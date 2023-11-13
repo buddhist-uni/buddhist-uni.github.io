@@ -10,6 +10,7 @@ status: featured
 course: west
 tags:
   - modern
+  - monastic
 year: 2011
 journal: bsr
 volume: 28

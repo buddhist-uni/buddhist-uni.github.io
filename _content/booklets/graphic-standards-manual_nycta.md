@@ -10,6 +10,7 @@ drive_links:
 course: communication
 tags:
   - nyc
+  - infrastructure
   - graphic-design
 year: 1970
 address: "New York"
