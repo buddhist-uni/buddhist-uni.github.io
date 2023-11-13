@@ -11,7 +11,6 @@
         {%- assign childs = childs | push: tag -%}
     {%- endif -%}
 {%- endfor -%}
-{%- assign childs = childs | sort: "sortkey" -%}
 {%- endif -%}
 
 <div class="tag-list{{ include.level }}">

@@ -1,6 +1,6 @@
 ---
 title: "The Pāli Canon"
-parents: [ebts, theravada]
+parents: [ebts]
 status: published
 level: 3
 description: A bibliography of free works about the canon of the Theravada School of Buddhism.

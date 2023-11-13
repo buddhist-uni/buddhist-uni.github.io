@@ -1,7 +1,7 @@
 ---
 title: "Free Will"
 status: unpublished
-parents: [dialogue, academic]
+parents: [dialogue]
 ---
 
 The question of whether our decisions are predetermined.

@@ -1,6 +1,5 @@
 ---
 title: "Characters in the EBTs"
-sortkey: 3
 status: published
 parents:
   - ebts

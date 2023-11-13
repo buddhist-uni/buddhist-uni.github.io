@@ -1,9 +1,9 @@
 ---
 title: "Buddha's India"
-sortkey: 2
 status: published
 parents:
   - ebts
+  - roots
 illustration: https://illeakyw.sirv.com/Images/tags/Hermitage_of_Valmiki.jpg
 illustration_width: 966
 illustration_height: 768

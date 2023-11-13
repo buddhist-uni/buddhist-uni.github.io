@@ -28,7 +28,7 @@ layout: default
 Please be aware that this tag is still under construction and as such is missing information and may be changed or removed at any time. Please pardon our dust as you peruse this incomplete bibliography.' %}{% endunless %}
 {% if page.illustration %}
 <figure>
-    <img {% if page.use_sirv %}src="{{ page.illustration }}"{% else %}srcset="https://buddhistuniversity.net/big_imgs/tags/{% assign ill = page.illustration | split: "/" | last | split: "." | pop | join: "." %}{{ ill }}-1x.webp, https://buddhistuniversity.net/big_imgs/tags/{{ ill }}.webp 2x" src="{{ page.illustration | replace: "https://illeakyw.sirv.com/Images/", "https://buddhistuniversity.net/imgs/tags/" }}"{% endif %}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if h > 500 %}{% assign h = 500 %}{% endif %} style="height: {{ h }}px; background-color: lightgrey; object-fit: cover; object-position: {{ page.illustration_center_x | default: "50%" }} {{ page.illustration_center_y | default: "50%"}};{% endif %}">
+    <img {% if page.use_sirv %}src="{{ page.illustration }}"{% else %}srcset="https://buddhistuniversity.net/big_imgs/tags/{% assign ill = page.illustration | split: "/" | last | split: "." | pop | join: "." %}{{ ill }}-1x.webp, https://buddhistuniversity.net/big_imgs/tags/{{ ill }}.webp 2x" src="{{ page.illustration | replace: "https://illeakyw.sirv.com/Images/", "https://buddhistuniversity.net/imgs/tags/" }}"{% endif %}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if h > 550 %}{% assign h = 550 %}{% endif %} style="height: {{ h }}px; background-color: lightgrey; object-fit: cover; object-position: {{ page.illustration_center_x | default: "50%" }} {{ page.illustration_center_y | default: "50%"}};{% endif %}">
     <figcaption>
         <p class="attribution">{% assign a = page.illustration_caption %}{% unless a %}{% assign a = "Courtesy of " | append: page.illustration_info %}{% endunless %}{{ a | replace: ' href="http', ' target="_blank" href="http' }}</p>
     </figcaption>
@@ -36,7 +36,7 @@ Please be aware that this tag is still under construction and as such is missing
 {% endif %}
 
 {% capture cfilter %}t.parents contains "{{ page.slug }}"{% endcapture %}
-{% assign childtags = alltags | where_exp: "t", cfilter | sort: "title" | sort: "sortkey" %}
+{% assign childtags = alltags | where_exp: "t", cfilter %}
 {% assign children = '' | split: '' %}
 {% for child in childtags %}
   {% if child.illustration %}
@@ -46,7 +46,7 @@ Please be aware that this tag is still under construction and as such is missing
   {% endif %}{% assign children = children | push: clink %}
 {% endfor %}
 {% if page.status == "published" %}
-  {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" | sort: "title" | sort: "sortkey" %}
+  {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" %}
   {% for child in childtags %}
     {% if site.data.drive_folders[child.slug].public %}
       {% capture clink %}<a href="{{ site.data.drive_folders[child.slug].public }}"><i class="fab fa-google-drive"></i> {{ child.title }}</a>{% endcapture %}
@@ -109,23 +109,30 @@ Please be aware that this tag is still under construction and as such is missing
   {% endif %}<p class="back"><a href="#top"><em>Back to the top</em>&#x2934;</a></p>{% endif %}
 {% endfor %}
 
-{% if children.size > 0 %}
-<div class="subtopics"><h3 id="children">Subtopics ({{ children.size }})</h3>
+<div class="subtopics"><h3 id="topics">Related Topics ({{ parents.size | plus: children.size }})</h3>
+{% if parents.size > 0 %}
+<h4 id="parents">Supertopic{% if parents.size > 1 %}s ({{ parents.size }}){% endif %}</h4>
+{% assign unillustrated = "" | split: "" %}
+<ul>{% for pslug in page.parents %}
+  {% assign parent = alltags | find: "slug", pslug %}{% unless parent %}{% continue %}{% endunless %}
+  {% if parent.illustration %}
+    <a href="{{ parent.url }}"><div class="subtopic-card">{% include taglist-img.html tag=parent %} <span class="subtopic-img-label">{{ parent.title }} »</span></div></a>
+  {% else %}
+    {% capture clink %}<a href="{{ parent.url }}"><i class="fas fa-folder-open"></i> {{ parent.title }}</a>{% endcapture %}
+    {% assign unillustrated = unillustrated | push: clink %}
+  {% endif %}
+{% endfor %}{% for clink in unillustrated %}{{ clink }}{% endfor %}</ul>
+{% endif %}{% if children.size > 0 %}
+<h4 id="children">Subtopics ({{ children.size }})</h4>
 <ul>{% for child in children %}
     <li>{{ child }}</li>
-{% endfor %}</ul>
+{% endfor %}</ul>{% endif %}
 </div>
-{% endif %}
 {% endcapture %}
    <h2 id="top" class="toc_header">Table of Contents</h2>
     {% include toc.html html=content_list h_min=3 h_max=3 id="toc" class="tag_toc" %}
     {{ content_list }}
   </div>
-
-{% if parents.size > 0 %}
-<em class="back">Supertopic{% if parents.size > 1 %}s{% endif %}: {{ parents | array_to_sentence_string }}</em>
-{% else %}
-<em class="back">Back: <a href="/tags">Topic Index</a></em>
-{% endif %}
+<em class="back">Back to <a href="/tags">the Topic Index</a></em>
 </article>
 
