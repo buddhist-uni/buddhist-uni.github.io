@@ -1,5 +1,5 @@
 ---
-title: "The Forms of Buddhism"
+title: "The Buddhist Religion"
 status: published
 parents: [buddhism]
 illustration: https://illeakyw.sirv.com/Images/tags/dhammagiri_offering.jpg
@@ -21,5 +21,4 @@ image_center_x: 39%
 image_center_y: 51%
 ---
 
-The social, historical, and religious aspects of Buddhism.
-
+The social, historical, and cultural aspects of Buddhism as a religion.

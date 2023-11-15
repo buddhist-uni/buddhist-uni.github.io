@@ -75,7 +75,7 @@ The following table summarizes the five levels and how they work on the website:
 
 | Ranking | Label | Code | Effect | Example |
 |---|---|---|---|---|
-| rank1 | 📦 Deprecated | `status: rejected` and `reason: [explanation]` | The work will be delisted everywhere on the website except for search, where it will be downranked. | [The Ancient Path to Enlightenment](https://buddhistuniversity.net/content/av/ancient-path-to-enlightenment_dabei) ([code](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/_content/av/ancient-path-to-enlightenment_dabei.md)) was delisted after the video was taken down. |
+| rank1 | 📦 Deprecated | `status: rejected` and `reason: [explanation]` | The work will be delisted everywhere on the website except for search, where it will be downranked. | [The "Tipitaka" website](https://buddhistuniversity.net/content/reference/tipitaka) ([code](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/_content/reference/tipitaka.md)) was delisted after [the new DPR website](https://buddhistuniversity.net/content/reference/dpr) was launched. |
 | rank2 | 📦 Archived | `course: nil` | Archived works are downranked in search and content recommendations. | [One Teacher, Many Traditions](https://buddhistuniversity.net/content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md)) Failed IC6 and IC4, but scored highly enough on the rest to deserve an "honorable mention" as a rank2 piece |
 | rank3 | [none] | `course: [value]` | An accepted work will be featured on the `/tags/[value]` page. | [The Buddha's Remains](https://buddhistuniversity.net/content/articles/buddhas-remains_wallis-glenn) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/articles/buddhas-remains_wallis-glenn.md)) Somewhat dry (IC2), niche (IC5) and Googlable (IC8), this otherwise-solid piece was accepted as a standard entry |
 | rank4 | ⭐ Recommended | `status: featured` | These works are upranked in search and content recommendations and they get highlighted in content lists. | [The Buddha's Genitals](https://buddhistuniversity.net/content/essays/politics-of-the-buddhas-genitals_sujato) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/essays/politics-of-the-buddhas-genitals_sujato.md)) This piece, in contrast, hits solid marks across the board, being a unique and interesting take buried in an online forum. |
@@ -131,4 +131,4 @@ Thank you for your interest in the library and may you be blessed by the blessin
 
 [^tibetan]: Buddhism->Forms->Mahayana->Vajrayana
 
-[^philosophy]: Epistemology, Right View, and Right Thought
+[^philosophy]: Right View and Right Thought

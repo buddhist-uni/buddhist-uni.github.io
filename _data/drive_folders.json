@@ -95,6 +95,10 @@
   "private": "https://drive.google.com/drive/folders/1ZJZmELY1okW8okorjfBTpztEbyl3v3ih",
   "public": "https://drive.google.com/drive/folders/11D09xk2DMgIMDAXTprM9SlgtrVsQ2NIO"
  },
+ "bhutanese": {
+  "private": "https://drive.google.com/drive/folders/1BfJI4RIv8naNhQC-zfeSyNP4hJQZgknV",
+  "public": null
+ },
  "biology": {
   "private": "https://drive.google.com/drive/folders/1g-EW4H85f4u2LLFExLzemLI3iUrlgvno",
   "public": null
@@ -277,6 +281,10 @@
  },
  "europe": {
   "private": "https://drive.google.com/drive/folders/17o2uwCPbzoTDlTJYxmOOKTESp2uEbbIe",
+  "public": null
+ },
+ "extremism": {
+  "private": "https://drive.google.com/drive/folders/1VT040plc1y-bLpy5bA_E4G1APqjwFQ74",
   "public": null
  },
  "families": {

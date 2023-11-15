@@ -12,3 +12,5 @@ tags:
 ---
 
 A dictionary file of common Pāli terms for the Android GBoard based on [the Access to Insight Glossary](http://www.accesstoinsight.org/glossary.html).
+
+And make sure to add [the "Sanskrit (Latin)" keyboard](https://discourse.suttacentral.net/uploads/short-url/3a2fjr5gCIOXRwVOXLp8mnxE7Rf.jpeg) to get access to all the ḍīācṛīṭīcś.
