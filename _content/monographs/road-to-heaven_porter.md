@@ -7,7 +7,7 @@ publisher: Mercury House
 address: San Francisco
 course: chinese
 tags:
-  - chinese-religion
+  - east-asian-religion
   - east-asian-roots
   - monastic-mahayana
   - china

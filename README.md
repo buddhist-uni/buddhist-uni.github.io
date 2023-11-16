@@ -35,7 +35,7 @@ resources in English for those interested in Buddhism.
 We curate a selection of academic material leveraging both what modern scholars and deeply-engaged practitioners have to say in order to present today's Buddhist traditions in a sympathetic but historically-accurate light.
 Our collection is intended as a comprehensive curriculum for students and teachers of Buddhism, but researchers will no doubt find our resources helpful as well!
 
-For more details on how our content is sourced, see our [Collection Policy](https://buddhistuniversity.net/COLLECTION_POLICY).
+For more details on how our content is sourced, see our [Sources List](https://buddhistuniversity.net/sources/) as well as our [Collection Development Policy](https://buddhistuniversity.net/COLLECTION_POLICY).
 
 ## Usage
 
@@ -56,7 +56,7 @@ OBU is strictly a digital library and therefore **cannot and does not** provide:
 - etc
 
 The library's resources are provided as-is with no guarantees.
-The views expressed in each work are strictly the opinions of their respective author(s) and may or may not reflect the views of OBU or [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTORS.md).
+The views expressed in each work are strictly the opinions of their respective author(s) and may or may not reflect the views of OBU or [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/graphs/contributors?from=2020-12-30&type=c).
 
 ## Reuse
 
@@ -72,14 +72,16 @@ roughly organized.
 
 Some of our courses are entirely from elsewhere. Those are clearly labeled as such.
 
+All our courses are self-paced, meaning that the lectures and readings are provided online for you to take on your own at whatever pace is comfortable for you.
+
 ## Contributing
 
 OBU would love your help with finding content and building the website!
-See the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTING.md) for how to get started, including how to run the site on your own machine.
+See [the Issues page](https://github.com/buddhist-uni/buddhist-uni.github.io/issues) for open tasks needing help and see the [Contribution Guide](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/CONTRIBUTING.md) for more information.
 
 ## Acknowledgements
 
-see [Acknowledgements](https://www.buddhistuniversity.net/ACKNOWLEDGEMENTS)
+[ACKNOWLEDGEMENTS.md](https://www.buddhistuniversity.net/ACKNOWLEDGEMENTS)
 
 ## Dedication
 

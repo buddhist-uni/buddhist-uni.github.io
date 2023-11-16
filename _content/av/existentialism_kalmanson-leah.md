@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Malcolm Keating"
 external_url: "https://newbooksnetwork.com/cross-cultural-existentialism"
 course: east-asian
-# maybe eventually rotate to chinese-religions
+# maybe eventually rotate to east-asian-religion
 tags:
   - confucianism
   - academic

@@ -14,7 +14,7 @@ status: featured
 tags:
   - dialogue
   - chinese-religion
-  - east-asian-roots
+  - mahayana-roots
   - medieval
 ---
 
