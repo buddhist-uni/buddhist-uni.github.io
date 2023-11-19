@@ -251,16 +251,13 @@ While not representative of the diversity within each of the following "national
 
 ##### Robinson Chapter 7: Sri Lanka
 
-{% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
-- First, we have this extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
-
 [CBT] Th.31
 {:.mb-0}
 - The ideal of the "Righteous Monarch" was hugely influential in the Theravada world and continues to justify monarchy in Thailand today.
 
 [CBT] Th.215
 {:.mb-0}
-- The Theravada monks, meanwhile, hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
+- The Theravada monks hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
 
 [CBT] Th.90–91, Th.146, Th.159
 {:.mb-0}
@@ -280,13 +277,18 @@ While not representative of the diversity within each of the following "national
 
 [CBT] Th.117, Th.172, Th.181, Th.196, Th.226
 {:.mb-0}
-- Lastly, we read Theravada responses to some Mahayana ideas.
+- Lastly, we read some Theravada responses to a few Mahayana ideas.
 
+{% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
+- An extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
 
 ##### Robinson Chapter 8: China
 
 {% include content_blurb.html category="av" slug="drums-and-bells_qing-de" %}
-- A monk at a lonely temple, deep in the mountains of Taiwan, says goodbye to the day with drum and bell.
+- A monk at a lonely temple, deep in the mountains of Taiwan, says goodnight with drum and bell.
+
+{% include content_blurb.html category="av" slug="buddhism-in-china" %}
+- A very brief overview of the history of Chinese Buddhism.
 
 [CBT] Th.41, M.115
 {:.mb-0}

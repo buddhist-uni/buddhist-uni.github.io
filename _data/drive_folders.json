@@ -471,6 +471,10 @@
   "private": "https://drive.google.com/drive/folders/1DNqiR0JJIHGEG2IbRa-CkA6ZtLz-Eolw",
   "public": "https://drive.google.com/drive/folders/10euqUSC6gnrjmpUXiQ_EE4pFnZ8TPRoI"
  },
+ "leadership": {
+  "private": "https://drive.google.com/drive/folders/1KRB922TA_d8J1ou757XKRhItYoxzYPqx",
+  "public": null
+ },
  "lit-crit": {
   "private": "https://drive.google.com/drive/folders/1ClVqELdvPABMZLSS4UZWwOd6nTV-NNdN",
   "public": null
@@ -530,6 +534,10 @@
  "monastic-advice": {
   "private": "https://drive.google.com/drive/folders/1_bi-GBSyVLSxe5Ar403RMuWQ64iNbWme",
   "public": "https://drive.google.com/drive/folders/1_cmkHsPxVfBV737H5_-jZS4sGBFazEkG"
+ },
+ "mongolia": {
+  "private": "https://drive.google.com/drive/folders/1Dg9TbpWw68hIedok8DIfMC8Rq7gc1E4I",
+  "public": null
  },
  "mongolian": {
   "private": "https://drive.google.com/drive/folders/1-h0UAl2qoDG5TWA1siEQXRxMpC_Eoij9",
@@ -867,6 +875,10 @@
   "private": "https://drive.google.com/drive/folders/1266coIbaWKHGzch_1MIkCF9XSSbEsSn_",
   "public": null
  },
+ "vietnamese": {
+  "private": "https://drive.google.com/drive/folders/1Y5bk_3X97ypPQZ5zaXZGnA6UXK8PJd3Z",
+  "public": null
+ },
  "view": {
   "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95",
   "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474"
@@ -917,6 +929,10 @@
  },
  "yoga": {
   "private": "https://drive.google.com/drive/folders/182H6YPba1grfY11EIOsB4S8JcF7_YDyV",
+  "public": null
+ },
+ "zen": {
+  "private": "https://drive.google.com/drive/folders/18e43aI0iaPzA7WHy4e1qSs6rq-uUHHV4",
   "public": null
  }
 }

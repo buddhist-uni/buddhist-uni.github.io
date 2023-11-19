@@ -343,8 +343,8 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 {: .mb-0}
 - Bhikkhu Bodhi gives a detailed explanation of rebirth and kamma according to the Theravada Abhidhamma.
 
-{% include content_blurb.html category="essays" slug="rebirth-and-the-inbetween_sujato" %}
-- Ajahn Sujato corrects the rigid (read: erroneous) Theravada rejection of the bardo — the time between lives — giving justifications for it and some of his own thoughts on rebirth.
+{% include content_blurb.html category="canon" slug="sn44.9" %}
+- The Buddha himself explains how the interval between death and rebirth is possible and not in contradiction to Dependent Origination, *contra* the Theravāda orthodoxy.
 
 #### Sutta Spotlight
 
