@@ -8,10 +8,10 @@ drive_links:
 course: cosmology
 tags:
   - evolution
-  - animals
+  - animalia
   - science
 year: 2021
-month: Jul
+month: jul
 journal: vox
 pages: 12
 ---
