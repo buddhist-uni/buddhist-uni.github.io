@@ -5,6 +5,7 @@ authors:
 subcat: film
 editor: "Fred Tjong"
 external_url: "https://youtu.be/TlksQYTzkFU"
+formats: [mp4]
 drive_links:
   - "https://drive.google.com/file/d/15OrXQdbbfurAE9mzs2ON9T5C0R4GYLi_/view?usp=drivesdk"
 course: form # 2.8 stars. Happy to replace if something better comes along...

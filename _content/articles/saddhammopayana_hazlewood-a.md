@@ -9,10 +9,13 @@ external_url: "https://archive.org/download/jpts-xii-1988/Saddhammopayana_%20Gif
 drive_links: ["https://drive.google.com/file/d/1bdY1YrP8PAMBOnfW4Ppn3C_tXlhwwsry/view?usp=drivesdk"]
 course: theravada-roots
 tags:
-  - view
+  - cosmology
   - dialogue
 ---
 
 A translation of a medieval, Sri Lankan letter summarizing the Dhamma in Pāli verse for a friend. 
 
-The epistle had some influence on later summaries of the doctrine. It shows how   essential cosmology and ethics has been for the preservation and dissemination of "the True Dhamma."
+The (possibly tenth century?) epistle had some influence on later summaries of the doctrine.
+It shows how essential cosmology and ethics has been for the preservation and dissemination of "the True Dhamma."
+
+This article contains just the translation from [Hazlewood's 1983 Master's thesis](https://web.archive.org/web/20200214035718if_/https://openresearch-repository.anu.edu.au/bitstream/1885/11296/1/Hazlewood_A.A._1983.pdf) on the text.

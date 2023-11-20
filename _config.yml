@@ -130,8 +130,8 @@ collections:
        - samadhi.md
        - hindrances.md
        - daily-life.md
-       - brahmavihara.md
        - speech.md
+       - theravada.md
        - sutta.md
        - dn.md
        - mn.md
@@ -139,6 +139,9 @@ collections:
        - an.md
        - nibbana.md
        - stages.md
+       - brahmavihara.md
+       - mahayana.md
+       - sangha.md
        - lay.md
        - monastic.md
        - dana.md
@@ -152,13 +155,10 @@ collections:
        - thig.md
        - emptiness.md
        - stream-entry.md
-       - theravada.md
        - death.md
-       - mahayana.md
        - cosmology.md
        - karma.md
        - rebirth.md
-       - sangha.md
        - roots.md
        - setting.md
        - vinaya-pitaka.md
