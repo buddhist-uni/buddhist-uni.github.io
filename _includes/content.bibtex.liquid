@@ -1,6 +1,7 @@
 {%- if include.content.from_book -%}{%- assign book = site.content | where: "slug", include.content.from_book | where: "category", "monographs" | first -%}{%- else -%}{%- assign book = nil -%}{%- endif -%}
 {%- assign series = site.series | find: "slug", include.content.series -%}
-{%- assign publisher = include.content.publisher | default: book.publisher | default: series.publisher -%}{%- assign publisher = site.publishers | find: "slug", publisher | default: publisher -%}
+{%- assign journal = site.journals | find: "slug", include.content.journal -%}
+{%- assign publisher = include.content.publisher | default: book.publisher | default: series.publisher | default: journal.publisher -%}{%- assign publisher = site.publishers | find: "slug", publisher | default: publisher -%}
 {%- assign author = nil -%}
 {%- assign curlyspace = "} " -%}
 {%- assign curly = "}" -%}
@@ -17,10 +18,10 @@
 {% endif %}{% if include.content.editor %}    editor={% assign editors = include.content.editor | split: " and " %}{% if include.useslugs %}{% for t in editors %}{% if t contains " " %}"{{ t }}"{% else %}{{ t }}{% endif %}{% unless forloop.last %} # " and " # {% endunless %}{% endfor %}{% else %}{% raw %}{{% endraw %}{% capture t %}{% include_cached content_authors_string.html authors=editors %}{% endcapture %}{{ t | strip | replace: ", and ", " and " | replace: ", ", " and " }}}{% endif %},
 {% endif %}{% if include.content.publisher or publisher %}    publisher={% raw %}{{% endraw %}{% if publisher %}{{ publisher.title | default: publisher | replace: "&", escand }}{% else %}{{ include.content.publisher | replace: "&", escand }}{% endif %}},
 {% endif %}{% if include.content.school %}    school={% raw %}{{% endraw %}{{ include.content.school }}},
-{% endif %}{% if include.content.address or publisher.address %}    address={% raw %}{{% endraw %}{{ include.content.address | default: publisher.address }}},
+{% endif %}{% if include.content.address or publisher.address or journal.address %}    address={% raw %}{{% endraw %}{{ include.content.address | default: journal.address | default: publisher.address }}},
 {% endif %}{% if include.content.year %}    year={{ include.content.year }},
 {% endif %}{% if include.content.month %}    month={{ include.content.month }},
-{% endif %}{% if include.content.journal %}    journal={% raw %}{{% endraw %}{% assign journal = site.journals | find: "slug", include.content.journal %}{% if journal %}{{ journal.title | replace: "&", escand }}{% else %}{{ include.content.journal | replace: "&", escand }}{% endif %}},
+{% endif %}{% if include.content.journal %}    journal={% raw %}{{% endraw %}{% if journal %}{{ journal.title | replace: "&", escand }}{% else %}{{ include.content.journal | replace: "&", escand }}{% endif %}},
 {% endif %}{% if include.content.volume %}    volume={{ include.content.volume }},
 {% endif %}{% if include.content.series %}    series={% raw %}{{% endraw %}{% if series %}{{ series.title }}{% else %}{{ include.content.series }}{% endif %}},
 {% endif %}{% if include.content.number %}    number={{ include.content.number }},

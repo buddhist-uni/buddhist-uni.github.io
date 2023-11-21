@@ -37,3 +37,12 @@ Bibtex pulls the address from the publisher: {% if bib contains "address={" %}Pa
 
 Test is valid (piece has doi source): {% if testc.source_url contains "doi.org" %}Pass ✅{% else %}FAIL ❌{% endif %}  
 Bibtex pulls doi from source: {% if bib contains "doi={" %}Pass ✅{% else %}FAIL ❌{% endif %}  
+
+{% assign testc = site.content | find: "url", "/content/articles/notes-on-visuddhimagga-9_gombrich" %}
+```
+{% capture bib %}{% include content.bibtex.liquid content=testc %}{% endcapture %}{{ bib }}
+```
+
+Test is valid (piece has journal but no publisher or address): {% if testc.address or testc.publisher %}FAIL ❌{% else %}{% if testc.journal == 'jpts' %}Pass ✅{% else %}FAIL ❌{% endif %}{% endif %}  
+Bibtex pulls publisher from the journal: {% if bib contains "publisher=" %}Pass ✅{% else %}FAIL ❌{% endif %}  
+Bibtex pulls address from the publisher: {% if bib contains "address=" %}Pass ✅{% else %}FAIL ❌{% endif %}  

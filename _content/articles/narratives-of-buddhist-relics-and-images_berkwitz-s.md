@@ -6,7 +6,7 @@ external_url: "https://www.academia.edu/39327120/_Narratives_of_Buddhist_Relics_
 source_url: "https://doi.org/10.1093/acrefore/9780199340378.013.587"
 year: 2019
 month: may
-journal: "Oxford Research Encyclopedia of Religion"
+journal: orer
 publisher: oxford
 course: form
 tags:

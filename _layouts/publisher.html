@@ -15,6 +15,13 @@ layout: default
   <div class="post-content">
     {{ content }}
 
+{% assign journals = site.journals | where: "publisher", page.slug %}
+{% assign journalslugs = journals | map: "slug" %}
+{% if journals.size > 0 %}<h4>Featured Journals</h4>
+  {% for journal in journals %}
+    <div><i class="far fa-newspaper"></i> <a href="{{ journal.url }}">{{ journal.title }}</a></div>
+  {% endfor %}
+{% endif %}
 {% assign series = site.series | where: "publisher", page.slug %}
 {% assign seriesslugs = series | map: "slug" %}
 {% if series.size > 0 %}<h4>Featured Series</h4>
@@ -22,7 +29,7 @@ layout: default
 {% endif %}
 {% assign allworks = site.content | where: "publisher", page.slug %}
 {% assign filtered = '' | split: '' %}
-{% for c in allworks %}{% unless seriesslugs contains c.series %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
+{% for c in allworks %}{% unless seriesslugs contains c.series or journalslugs contains c.journal %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
 {% if filtered.size > 0 %}<h4>Featured Publications:</h4>
 {% include content_list.html contents=filtered keep_rejects="true" %}
 {% endif %}

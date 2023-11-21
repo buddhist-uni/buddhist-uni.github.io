@@ -40,7 +40,7 @@ DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 
 def link_to_id(link):
-  ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk)?$', link)
+  ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link)?$', link)
   return ret.groups()[0] if ret else None
 
 def folderlink_to_id(link):
@@ -102,7 +102,7 @@ def google_credentials():
             creds.refresh(Request())
         else:
             if not os.path.exists(CLIENTSECRETS):
-              raise RuntimeError(f"{CLIENTSECRETS} does not exist.")
+              raise RuntimeError(f"{CLIENTSECRETS} does not exist.\nDownload it at https://console.developers.google.com/apis/credentials")
             flow = InstalledAppFlow.from_client_secrets_file(
               CLIENTSECRETS, SCOPES)
             creds = flow.run_local_server(port=0)
