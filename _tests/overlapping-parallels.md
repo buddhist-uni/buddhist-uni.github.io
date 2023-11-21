@@ -78,10 +78,10 @@ So far, suttas have been added and deduped from:
 
 Anthologies yet to be processed:
   - *The Island* (if any sutta quotes are lengthy enough)
+  - Ajahn Geoff's *Noble Conversation*
   - Nyanamoli's *Life of the Buddha*
   - Sarah Shaw's *Buddhist Meditation* 
   - along with Jason Espada's anthology
   - Bhikkhu Bodhi's selections in the Sutta tag
   - *Common Buddhist Text*
-  - Chula's *Path* (just archive it?)
   - The many wheel publications containing whole sutta translations

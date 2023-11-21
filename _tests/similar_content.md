@@ -64,7 +64,7 @@ partial_cases:
 
 A series of test cases to measure the quality of the content recommendations algorithm.
 
-The passing rate at the bottom is a general indicator of the algo's recall rate (~75% passing is considered good enough).
+The passing rate at the bottom is a general indicator of the algo's recall rate. It's not meant to be 100%.
 
 {%- assign cases = page.test_cases -%}
 {%- if site.partial_build -%}
