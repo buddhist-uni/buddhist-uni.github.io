@@ -1,7 +1,7 @@
 ---
 title: "Translation of Pancagatidipani"
 authors:
-  - hazlewood-a
+  - Ann Appleby Hazlewood
 external_url: "https://archive.org/download/jpts-xi-1987/Pancagatidipani_%20Illumination%20of%20the%20Five%20Realms%20of%20Existence%20-%20Ann%20Appleby%20Hazlewood_text.pdf"
 drive_links:
   - "https://drive.google.com/file/d/10jzF4gZhLTwEwvbB2MHWyI1FHe-9DXDl/view?usp=sharing"
