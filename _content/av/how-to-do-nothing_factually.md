@@ -5,7 +5,6 @@ authors:
 subcat: podcast
 editor: "Adam Conover"
 external_url: "https://www.earwolf.com/episode/how-to-do-nothing-with-jenny-odell/"
-alternative_url: "https://www.listennotes.com/podcasts/factually-with/how-to-do-nothing-with-jenny-S_fGklEPeyZ/"
 course: world
 tags:
   - media

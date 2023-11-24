@@ -15,17 +15,17 @@ This document is primarily for onboarding new contributors, but it may also be o
 
 ## Overview
 
-The OBU Library serves **English speakers** with a **basic education** and an **interest in Buddhism**.
-It takes, to the extent possible, **the stance of pre-sectarian "Early Buddhism"** as championed by such practitioner/scholars as [Bhante Analayo](https://buddhistuniversity.net/authors/analayo), whose approach has been characterized as simultaneously faithful/religious and historical/critical.
+The OBU Library serves **English speakers** with at least a **basic education** and an **interest in Buddhism**.
+It takes, to the extent possible, **the pan-sectarian, historical perspective** championed by such contemporary practitioner/scholars as [Bhante Analayo](https://buddhistuniversity.net/authors/analayo).
 
-The OBU collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
+The Open Buddhist University collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
 Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
 That would as undesirable as it is impossible.
-The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on Early Buddhism to the English-speaking world.**
+The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on [Early Buddhism](https://www.buddhistinquiry.org/wp-content/uploads/2023/11/Early-Buddhism.pdf) to the English-speaking world.**
 
-To that end, works found on the internet are accepted into the library on a five-point scale and are sorted into subtopics (aka "tags") for easy access. The rest of this document will outline how that is done.
+To that end, works found on the internet are accepted into the library on a five-point scale and are sorted into subtopics (aka "folders" or "tags") for easy access. The rest of this document will outline how that is done.
 
 ### The Pipeline
 

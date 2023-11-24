@@ -27,6 +27,13 @@ else:
 ARCHIVEID_BLACKLIST = {
   "unehistoiredetou0000na",
   "delinegaliteparm0000prof",
+  "discoveringroyal0000drew",
+  "regulusvelpueris0000sain",
+  "xiaowangzilittle0000fash_o5z8",
+  "xiaowangzilittle0000sain_b1x8",
+  "xiaowangzilittle0000sain",
+  "xiaowangzilittle0000sain_t5z5",
+  "lederniervoldupe0000vill",
   "earlyidentityexperiencecontitutionofbeingaccordingtoearlybuddhismsuehamiltonseeotherbooks_648_V",
   "elartedelasabidu0000dala"
 }
@@ -105,11 +112,18 @@ class _AO_DefaultSearchStrat(_AO_SearchStrat):
     if title.count(' ') == 0:
       title = self.info['title']
     title = sanitize_string(" ".join(filter(lambda w: "'" not in w and len(w)>2, title.split(" "))))
-    author = " ".join(filter(lambda w: len(w)>2, self.info['authors'][0].split("-")[0].split(" ")))
+    author = ""
+    try:
+      author = " ".join(filter(lambda w: len(w)>2, self.info['authors'][0].split("-")[0].split(" ")))
+    except KeyError:
+      pass
     if author == 'tnh':
       author = "Thich Nhat Hanh"
-    print(f"Searching works matching \"{title} {author}\" instead...")
-    return search_archiveorg_lending_library(f"title:({title}) AND {author}")
+    sst = f"title:({title})"
+    if author:
+      sst += f" AND {author}"
+    print(f"Searching works matching \"{sst}\" instead...")
+    return search_archiveorg_lending_library(sst)
 
 def find_lendable_archiveorg_url_for_metadata(workinfo):
   print(f"Searching Archive.org for lendable copies of \"{workinfo['title']}\"...")

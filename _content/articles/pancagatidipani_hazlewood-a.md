@@ -16,7 +16,11 @@ publisher: pts
 pages: "133--159"
 ---
 
-A brief introduction and English translation of the *Pañcagati-Dīpanaṃ* ("Illumination of the Five Realms of Existence") thought to be a Southeast Asian recension of Aśvaghoṣa's *Chagatidīpanī* (*Sadgatikārikā*?).
+> Having heard what was said by the Completely
+Awakened One, I shall now speak briefly about
+deeds good and bad to be done or to be eschewed by you.
+
+A brief introduction to and English translation of the *Pañcagati-Dīpanaṃ* ("Illumination of the Five Realms of Existence") thought to be a Southeast Asian recension of Aśvaghoṣa's *Chagatidīpanī* (*Sadgatikārikā*?).
 
 This text explains the five realms of rebirth and the actions which lead to rebirth in each one.
-It's an excellent example of how the teaching on karma was elaborated after the Buddha's passing, and how teachings circulated around Asia even in premodern times.
+It's an excellent example of how the teachings on karma were elaborated after the Buddha's passing, and how those teachings circulated around Asia in premodern times.

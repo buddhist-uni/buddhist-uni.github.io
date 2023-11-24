@@ -4,5 +4,5 @@ external_url: "https://palitextsociety.org/journals-of-the-pali-text-society-fre
 publisher: pts
 ---
 
-An irregular journal dedicated to the academic study of the Pali language and its literature.
+An irregular journal dedicated to the academic study of the Pāli language and its literature.
 

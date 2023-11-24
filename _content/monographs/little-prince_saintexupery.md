@@ -2,7 +2,6 @@
 title: "The Little Prince"
 authors: ["Antoine de Saint-Exupéry"]
 translator: "Richard Howard"
-external_url: "https://archive.org/details/littleprince00sain_0/mode/1up"
 olid: OL48619M
 year: 1943
 month: apr

@@ -4,7 +4,6 @@ authors:
   - "Laura Gustafsson"
   - "Terike Haapoja"
 external_url: "https://punctumbooks.com/titles/museum-of-nonhumanity/"
-source_url: "http://museumofnonhumanity.org/"
 drive_links:
   - "https://drive.google.com/file/d/1ETWBr4Zy6Is2H_45IIHewOyk2sEIXzBE/view?usp=drivesdk"
 tags:

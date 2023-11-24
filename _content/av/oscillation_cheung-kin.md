@@ -13,6 +13,7 @@ tags:
   - view
   - intellect
   - karma
+  - modern
 year: 2023
 month: nov
 minutes: 5

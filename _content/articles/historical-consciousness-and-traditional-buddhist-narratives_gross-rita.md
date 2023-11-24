@@ -7,7 +7,7 @@ year: 2014
 volume: 1
 formats: [pdf]
 drive_links:
-  -:"https://drive.google.com/file/d/12Xa6DBaU-I1ifdDyv58Jt9mB79FkoxcZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12Xa6DBaU-I1ifdDyv58Jt9mB79FkoxcZ/view?usp=drivesdk"
 course: roots
 status: featured
 tags:

@@ -19,7 +19,7 @@ layout: default
 {% assign journalslugs = journals | map: "slug" %}
 {% if journals.size > 0 %}<h4>Featured Journals</h4>
   {% for journal in journals %}
-    <div><i class="far fa-newspaper"></i> <a href="{{ journal.url }}">{{ journal.title }}</a></div>
+    <div class="simple_content"><i class="far fa-newspaper"></i> <a href="{{ journal.url }}">{{ journal.title }}</a></div>
   {% endfor %}
 {% endif %}
 {% assign series = site.series | where: "publisher", page.slug %}
