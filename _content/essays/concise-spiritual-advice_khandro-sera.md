@@ -13,13 +13,15 @@ tags:
   - karma
   - sati
   - thought
-  - bodhicitta
+  - bodhisattva
 year: 2020
-publisher: Lotsawa House
+publisher: "Lotsawa House"
 pages: 2
 ---
 
-> Pray to your master and to the Three Jewels,
-and strive to be wholesome – physically, verbally and mentally.
+> Pray to your master and to the Three Jewels,  
+and strive to be wholesome –  physically, verbally and mentally.
 
-In this brief poem, the great Tulku and Yogini, Sera Khandro, exhorts readers to wholeheartedly practice the Dharma. Khandro points out the importance of impermanence and karma to help practitioners overcome attachments and develop wholesome behavior. Other pieces of advice are to remain in solitude, establish mindfulness, and develop bodhicitta.
+In this brief poem, the great Tulku and Yogini, Sera Khandro, exhorts readers to wholeheartedly practice the Dharma.
+Khandro points out the importance of impermanence and karma to help practitioners overcome attachments and develop wholesome behavior.
+Other pieces of advice are to remain in solitude, establish mindfulness, and develop bodhicitta.
