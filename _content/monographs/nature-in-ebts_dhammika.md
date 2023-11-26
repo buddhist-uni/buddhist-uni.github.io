@@ -11,6 +11,7 @@ course: pali-dictionaries
 tags:
   - setting
   - nature
+  - plants
 year: 2015
 olid: OL28412107M
 publisher: bps

@@ -12,9 +12,9 @@ tags:
   - law
   - ideology
   - art
-  - animals
   - animalia
   - future
+  - posthumanism
 year: 2015
 olid: OL28354359M
 publisher: punctum

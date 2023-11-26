@@ -1,6 +1,6 @@
 ---
 title: "Nibbāna: The Mind Stilled"
-subtitle: "An Online Course on Buddhist Philosophy"
+subtitle: "An Online Course on Buddhist Psychology"
 google_doc_id: 1-iknxgZN1v5DFiFxWdcI8XtcgS-EY_QH
 icon: "fas fa-cloud-sun"
 image: "https://illeakyw.sirv.com/Images/banners/metalfish.jpeg"

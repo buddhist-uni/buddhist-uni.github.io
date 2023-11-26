@@ -24,4 +24,4 @@ big_height: 2291
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Shuttle_Enterprise_Flight_to_New_York_(201204270023HQ).jpg">NASA</a>
 ---
 
-Earth and the primates reshaping it.
+Earth and [the primates](https://en.wikipedia.org/wiki/Human) reshaping it.

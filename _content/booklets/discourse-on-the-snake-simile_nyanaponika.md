@@ -10,7 +10,7 @@ tags:
   - pali-commentaries
   - imagery
   - mn
-year: 1974
+year: 1963
 oclc: 33110015
 publisher: bps
 address: "Kandy"

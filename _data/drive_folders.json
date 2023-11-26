@@ -515,6 +515,10 @@
   "private": "https://drive.google.com/drive/folders/1-Q5426IBgx2h-guzI5RHoc5PmYah3Ucd",
   "public": "https://drive.google.com/drive/folders/1-fErn7oJ5hVPm5rD0xIaqGvrriInSGys"
  },
+ "middle-east": {
+  "private": "https://drive.google.com/drive/folders/1E3HF47YHfkes9pTwIC7IBxZMhOxLkQd6",
+  "public": null
+ },
  "migration": {
   "private": "https://drive.google.com/drive/folders/1QGkiY9tuodOqJc2HVqmq2KgZYiUF3i4h",
   "public": "https://drive.google.com/drive/folders/1gxyBc_StG08RjpqcYMeVkmpctbkt2Na_"
@@ -585,6 +589,10 @@
  },
  "north-america": {
   "private": "https://drive.google.com/drive/folders/1rY8N5C73O8K9YcQ4Z-pUj-7S8b4geFYu",
+  "public": null
+ },
+ "ocean": {
+  "private": "https://drive.google.com/drive/folders/187W8IktaVkq7-u8Fjt80X9yxN2itaK7b",
   "public": null
  },
  "origination": {

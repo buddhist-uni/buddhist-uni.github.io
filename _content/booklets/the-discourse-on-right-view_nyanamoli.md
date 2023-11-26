@@ -15,7 +15,7 @@ tags:
   - mn
 oclc: 33109236
 olid: OL49629318M
-year: 1991
+year: 1986 # ±1 year
 publisher: bps
 address: "Kandy"
 series: wheel

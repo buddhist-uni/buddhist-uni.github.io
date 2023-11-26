@@ -26,11 +26,13 @@ jobs:
           python filterurls.py # creates scripts/archivable_urls/filteredurls.txt
           cd ~
           printf "${{ secrets.ARCHIVE_ORG_AUTH }}" > archive.org.auth
-          pip install tqdm
+          pip install tqdm titlecase pyyaml
       - name: Archive Archivable External Links
         shell: bash
         run: |
-            python -c "from scripts.archive_site import *; urls = Path('scripts/archivable_urls/filteredurls.txt').read_text().split(); archive_urls(urls)"
+            cd scripts
+            python -c "from archivedotorg import *; urls = Path('archivable_urls/filteredurls.txt').read_text().split(); archive_urls(urls)"
       - name: Archive Internal Pages
         run: |
-          python scripts/archive_site.py
+          cd scripts
+          python archive_site.py

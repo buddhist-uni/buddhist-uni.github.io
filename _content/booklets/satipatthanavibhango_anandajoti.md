@@ -5,9 +5,9 @@ authors:
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Satipatthanavibhanga/"
 drive_links:
   - "https://drive.google.com/file/d/1ghH10LlbCx4R8LlQKU2DRRcyVjMZBRFI/view?usp=sharing"
-course: sati
+course: abhidhamma
 tags:
-  - abhidhamma
+  - sati
 year: 2013
 month: nov
 pages: 137
