@@ -3,20 +3,17 @@ title: "The Buddhist Perspective on Time and Space"
 authors:
   - hsingyun
 translator: "Amy Lam and Jeanne Tsai"
-editor: "Fo Guang Shan International Translation Center"
 external_url: "https://www.fgsitc.org/wp-content/uploads/2023/04/A17-The-Buddhist-Perspective-on-Time-and-Space-2019.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1AvK3oc6NJbrcUKSqGWjl8YL4meq0RYCN/view?usp=drivesdk"
 course: cosmology
 tags:
-  - time
-  - space
+  - wider
   - philosophy
-  - east-asia
 year: 1998
 publisher: "Fo Guang Shan International Translation Center"
 address: "Taiwan"
-pages: 32
+pages: 18
 ---
 
 > Our daily lives in the vast universe are integrally related to and can never be separated from time and space. How successful a person is and how effective one handles one’s affairs depend on one’s management of interpersonal relationships, one’s utilization of time, and one’s allocation of space.
