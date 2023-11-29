@@ -9,7 +9,6 @@ drive_links:
 course: cosmology
 tags:
   - wider
-  - philosophy
 year: 1998
 publisher: "Fo Guang Shan International Translation Center"
 address: "Taiwan"
