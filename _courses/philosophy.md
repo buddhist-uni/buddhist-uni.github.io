@@ -84,7 +84,7 @@ Please read the suttas and other readings on your own “before class” and spe
 
 You may want to keep a copy of the assigned suttas in front of you while listening to the lectures, so that you can refer back to them and take notes as inspiration strikes, keeping in mind that the recordings (unlike live lectures!) can easily be paused.
 
-In addition to the suttas, this course assigns four short books in weeks 4, 8 and 9: [The Heart of Understanding](/content/monographs/heart-of-understanding_tnh), [Wisdom Develops Samadhi](/content/booklets/wisdom-develops-samadhi_mahabua), and [BuddhaDhamma for University Students](/content/monographs/buddhadhamma-for-students_buddhadasa) respectively, so be advised to budget a little extra time for the homework these weeks. Note also that one of these books (*The Heart of Understanding*) is a commercial work which you'll have to acquire on your own.
+In addition to the suttas, this course assigns four short books in weeks 4 and 9: [The Heart of Understanding](/content/monographs/heart-of-understanding_tnh) and [BuddhaDhamma for University Students](/content/monographs/buddhadhamma-for-students_buddhadasa) respectively, so be advised to budget a little extra time for the homework two weeks.
 
 
 ## The Course
@@ -450,9 +450,6 @@ Formal mind training is of course the hallmark of Buddhism. This course though i
 
 {% include content_blurb.html category="av" slug="fgbmr-address-2014_hsin-bao" %}
 - The Venerable Hsing Bao discusses the difficulties of practice, and how we slowly become more Buddha-like by seeing the world through the eyes of a Buddha.
-
-{% include content_blurb.html category="booklets" slug="wisdom-develops-samadhi_mahabua" %}
-- The modern, Thai meditation master Luang Ta Maha Boowa explains the path and purpose of meditation.
 
 #### Lecture
 

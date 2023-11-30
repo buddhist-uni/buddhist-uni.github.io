@@ -5,7 +5,7 @@ authors:
 external_url: "https://youtu.be/nSkgk1nnjck"
 drive_links:
   - "https://drive.google.com/file/d/1OY4aWh8rTSNt0hFpudBPDOV3VimncGDe/view?usp=drivesdk"
-course: function
+course: function # solidly
 tags:
   - stages
 year: 2019

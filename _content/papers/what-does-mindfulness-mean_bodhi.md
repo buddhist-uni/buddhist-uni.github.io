@@ -10,6 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1v8J_7dJGp8nO4LuWk7bW1_-lPR-jFQOf/view?usp=drivesdk"
 formats: [pdf, mp3]
 course: sati
+status: featured
 tags:
   - meditation
   - academic

@@ -6,6 +6,7 @@ external_url: "http://jocbs.org/index.php/jocbs/article/view/164"
 drive_links:
   - "https://drive.google.com/file/d/1Zn11FkVSFN9QGpz11EXJcdCt1QZm7jvh/view?usp=drivesdk"
 course: emptiness
+status: featured
 tags:
   - mahayana
   - prajnaparamita

@@ -9,6 +9,7 @@ real_source_url: "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203987
 drive_links:
   - "https://drive.google.com/file/d/1oAf71CWttB7tAQDSdwD4vVpJyHEg9qIQ/view?usp=drivesdk"
 course: roots
+status: featured
 tags:
   - east-asian-roots
   - bart

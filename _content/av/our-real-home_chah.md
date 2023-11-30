@@ -2,7 +2,7 @@
 title: "Our Real Home"
 authors:
   - "Ajahn Chah"
-translator: amaro
+reader: amaro
 external_url: "https://amaravati.org/audio/part-1-ch13-our-real-home/"
 drive_links:
   - "https://drive.google.com/file/d/1zl5mU7HSCq3Xg26fEtm4-DRyNL_u9-Hy/view?usp=sharing"
@@ -17,6 +17,12 @@ year: 2012
 minutes: 27
 ---
 
-> Build your home. Let go. Let go until the mind reaches the peace that is free from advancing, free from retreating and free from stopping still.
+> Look at the body with wisdom and realize this.
+If your house is flooded or burnt to the ground, whatever the threat to it, let it concern only the house.
+If there's a flood, don't let it flood your mind.
+If there's a fire, don't let it burn your heart.
+Let it be merely the house which is outside of you that is flooded or burned.
+Now is the time to allow the mind to let go of its attachments.
 
-This is a reading of Ajahn Chah's sermon to an aged lay follower by Ajahn Amaro. Here, Ajahn Chah gives advice such as letting go of the declining body, reciting Buddho, and seeing the impermanence of all things.
+Ajahn Chah gives an inspiring talk to a dying disciple.
+
