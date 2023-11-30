@@ -13,6 +13,7 @@ year: 2003
 month: may
 minutes: 98
 ---
+
 > Kamma gives us oppurutnities to learn.
 
 In his usual wit and humor, Ajahn Bram explains the functioning of kamma in our daily lives and its realtion to the various rebirths one can have.

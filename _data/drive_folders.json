@@ -499,6 +499,10 @@
   "private": "https://drive.google.com/drive/folders/1fZ6vu6IrGU-1lJT95j60Ohwd6dflrAaC",
   "public": null
  },
+ "math": {
+  "private": "https://drive.google.com/drive/folders/1H2HSZV5VOw5NwhO5xkUh5hzGRzcJeJf4",
+  "public": null
+ },
  "media": {
   "private": "https://drive.google.com/drive/folders/1UwUhVVWK11-9IEfjjYxohfp6EwK3XHQH",
   "public": "https://drive.google.com/drive/folders/1BxeY-yPGetYf8VZmXJxHwK5C6tikpVGF"
@@ -637,6 +641,10 @@
  },
  "perf-stud": {
   "private": "https://drive.google.com/drive/folders/1CmihmQJBP1zMMSuv8oVcvDnUCunLbojG",
+  "public": null
+ },
+ "philippines": {
+  "private": "https://drive.google.com/drive/folders/1P2oMNLLoTTDtyhX2kYWoRxZlt5_ftcC3",
   "public": null
  },
  "philosophy": {

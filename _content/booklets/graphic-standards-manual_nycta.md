@@ -15,7 +15,7 @@ tags:
 year: 1970
 olid: OL36639318M
 address: "New York"
-pages: 182
+pages: 10 # based on estimated time spent
 ---
 
 > It is vital that all signs be read easily and understood quickly.
