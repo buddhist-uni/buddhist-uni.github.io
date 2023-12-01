@@ -2,7 +2,7 @@
 title: "Kamma and Rebirth"
 authors:
   - brahm
-external_url: "https://everydaydhamma.net/podcast/ajahn-brahm-podcast/episode/kamma-and-rebirth-ajahn-brahm"
+external_url: "https://discourse.suttacentral.net/uploads/short-url/3BrI7qdC3K9StEE5llolfB84Mx0.mp3"
 drive_links:
   - "https://drive.google.com/file/d/13e_Q8gfAIXdNrcyPyAimTzKBztbhves4/view?usp=sharing"
 course: cosmology
