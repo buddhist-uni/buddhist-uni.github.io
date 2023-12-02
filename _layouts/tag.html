@@ -49,7 +49,7 @@ Please be aware that this tag is still under construction and as such is missing
   {% assign childtags = site.tags | where_exp: "t", cfilter | where: "status", "unpublished" %}
   {% for child in childtags %}
     {% if site.data.drive_folders[child.slug].public %}
-      {% capture clink %}<a href="{{ site.data.drive_folders[child.slug].public }}"><i class="fab fa-google-drive"></i> {{ child.title }}</a>{% endcapture %}
+      {% capture clink %}<a data-content-path="tags/{{child.slug}}" data-content-category="tag" data-content-course="{{child.slug}}" data-content-link-ext="Drive Folder" data-content-title="{{ child.title | smartify | markdownify | strip_html | strip }}" data-content-value="{{ site.data.ga.drive_folder_value }}" href="{{ site.data.drive_folders[child.slug].public }}"><i class="fab fa-google-drive"></i> {{ child.title }}</a>{% endcapture %}
       {% assign children = children | push: clink %}
     {% endif %}
   {% endfor %}
