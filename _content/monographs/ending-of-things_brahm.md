@@ -8,9 +8,9 @@ drive_links:
 course: emptiness
 tags:
   - anicca
-  - anatta
-  - khandha
-  - wise-attention
+  - problems
+  - inner
+  - sati
 year: 2001
 publisher: bps
 address: "Sri Lanka"
@@ -23,4 +23,4 @@ pages: 26
 phenomena, then experiencing the worst that human
 life can give does not make one tremble.
 
-Ajahn Brahm explains the meaning of emptiness, or nothingness, as he puts it, as the self-less and impermenant nature of all phenomena. After this detailed explanation, the Ajahn points out that not realizing this emptiness causes most people's suffering; therefore, one should strive to still the mind and see the most beautiful jewel there could ever be—nothingness."
+Ajahn Brahm explains the meaning of emptiness, or nothingness, as he puts it, as the self-less and impermenant nature of all phenomena. After this detailed explanation, the Ajahn points out that not realizing this emptiness causes most people's suffering; therefore, one should strive "to still the mind and see the most beautiful jewel there could ever be—nothingness."
