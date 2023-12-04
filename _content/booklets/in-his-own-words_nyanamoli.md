@@ -9,6 +9,7 @@ publisher: bps
 series: wheel
 number: 428
 address: Kandy
+olid: OL9148965M
 course: path
 tags:
   - pali-canon
