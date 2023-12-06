@@ -7,8 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1canT7fPPSyPy5nOp_ehbWBFGNb2EGztB/view?usp=sharing"
 course: cosmology
 tags:
-  - karma
+  - rebirth
   - philosophy
+  - dialogue
 year: 2000
 journal: "Buddhist Publication Society Newsletter"
 publisher: bps

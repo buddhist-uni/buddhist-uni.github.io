@@ -21,3 +21,5 @@ pages: 223
 ---
 
 My favorite translation of the Dhammapada, including accurate summaries of the stories that traditionally accompanied the verses—some of the most beloved commentarial stories in all of Buddhism.
+
+The older, Bhante Narada version of the book can be acquired in physical form **for free** via [the Corporate Body of the Buddha Educational Foundation](https://www.budaedu.org/en/book/).

@@ -1,7 +1,8 @@
 ---
 title: "A New Course in Reading Pāli"
 authors: ["James W. Gair", "W. S. Karunatillake"]
-external_url: "https://archive.org/download/NewPaliCourse/New%20Pali%20Course_text.pdf"
+external_url: "https://discourse.suttacentral.net/uploads/short-url/lsqsBe24kMKOiePIqAIc523B7AF.pdf"
+source_url: "https://archive.org/download/NewPaliCourse/New%20Pali%20Course_text.pdf"
 olid: OL9070254M
 year: 1998
 publisher: mlbd

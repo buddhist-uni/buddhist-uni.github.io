@@ -21,3 +21,5 @@ pages: 167
 > The point of *Metta* is not what we **feel** about a person, at least not in the beginning, but rather what we **aspire** to
 
 A thorough account of love and relationships from a Buddhist perspective.
+
+For a **free** physical copy of this book, contact [the Corporate Body of the Buddha Educational Foundation](https://www.budaedu.org/en/book/).

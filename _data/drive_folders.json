@@ -211,6 +211,10 @@
   "private": "https://drive.google.com/drive/folders/1CFmLNjI6wqNcK4S8dCpzgRuXPnDHw0Xj",
   "public": "https://drive.google.com/drive/folders/1FnCuWujVpUbpmSyjRe8aMgnirIoonmxD"
  },
+ "crime": {
+  "private": "https://drive.google.com/drive/folders/1BxYMhph5sHxc0u8hnjZtW0snUwkmdYaH",
+  "public": null
+ },
  "da": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1277VHi6irmGHt37nonFuulCdimdD3Mpl"
@@ -238,6 +242,10 @@
  "dialogue": {
   "private": "https://drive.google.com/drive/folders/1T2QcWyCanAEQWuRr9G4g8oj7NPcUHQ8Q",
   "public": "https://drive.google.com/drive/folders/11kpn4Hf-3E81Hf3mHBjjdQ9yEy_A0GaJ"
+ },
+ "drugs": {
+  "private": "https://drive.google.com/drive/folders/1wXFE9Rkmb89rOe4iG6kGbxaDU58pLu5S",
+  "public": null
  },
  "ea": {
   "private": null,
@@ -593,6 +601,10 @@
  },
  "north-america": {
   "private": "https://drive.google.com/drive/folders/1rY8N5C73O8K9YcQ4Z-pUj-7S8b4geFYu",
+  "public": null
+ },
+ "nyc": {
+  "private": "https://drive.google.com/drive/folders/1Zd8T6gLsusT7md1gF_ysE7U9FPJf5OdZ",
   "public": null
  },
  "ocean": {
