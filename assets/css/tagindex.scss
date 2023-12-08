@@ -12,6 +12,11 @@ $topradii: 10px 10px 0px 0px;
     background-color: $banner-color;
     border-radius: $topradii;
   }
+  div {
+    overflow-x: hidden;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
 }
 .tagbox1 {
     font-size: 140%;
@@ -91,7 +96,7 @@ div.tag-list3:last-child {
     border: 1px solid gray;
 }
 .tag-list5 {
-    padding-bottom: 7px;
+    margin-bottom: 7px;
 }
 .children4 {
     margin-left: 12px;
@@ -100,4 +105,23 @@ div.tag-list3:last-child {
         margin-left: 4px;
     }
 }
-
+.tag-list6:has(img) {
+    background-color: darken($grey-color-light, 17%);
+}
+.tag-list6 {
+    font-size: 95%;
+    margin: 7px 3px 6px 4px;
+}
+.tag-list6:has(.children6) .tagbox6 {
+    padding: 2px 4px $spacing-unit 4px;
+}
+.tag-list6:not(:has(.children6)) .tagbox6 {
+    padding: 2px 4px;
+}
+.children6 {
+    margin-left: 12px;
+    margin-right: 4px;
+    @include media-query(400px) {
+        margin-left: 4px;
+    }
+}

@@ -1,5 +1,5 @@
 {%- assign childs = "" | split: "" -%}
-{%- if include.level < 5 -%}
+{%- if include.level < 6 -%}
 {%- for tag in site.tags -%}
     {%- unless tag.status == "published" -%}
         {%- continue -%}
@@ -23,7 +23,7 @@
         {%- if include.level <= 1 -%}
             {%- assign w = 225 -%}{%- if include.level == 1 -%}{% assign w = 750 %}{%- endif -%}
             <img style="object-position: {{ include.tag.image_center_x | default: "center" }} {{ include.tag.image_center_y | default: "center" }};" src="{{ include.tag.image }}{% if include.tag.image_height %}?cw={{ w }}&cx={{ include.tag.image_width | minus: w | times: include.tag.image_center_x | divided_by: 100.0 | round }}&ch=125&cy={{ include.tag.image_height | minus: 125 | times: include.tag.image_center_y | divided_by: 100.0 | round }}{% endif %}">
-        {%- elsif include.level <= 5 and include.tag.illustration -%}
+        {%- elsif include.level <= 6 and include.tag.illustration -%}
             {% if puttitleontop %}
               <a href="{{ include.tag.url }}">{{ include.tag.title }}</a>
             {% endif %}
