@@ -20,3 +20,5 @@ pages: 41
 One of the few books written directly by Luangta, this meditation manual represents some of his clearest advice on developing the path.
 
 > The heart which is not controlled by a _kammaṭṭhāna_ is liable to the arising of "outgoing exuberance" throughout life [...which] has been the enemy of all beings for countless ages, and a person who wants to subdue the "outgoing exuberance" of his own heart will need to compel his heart to take the medicine – which is the _kammaṭṭhāna_.
+
+While the book's title goes against the usual presentation of "*sila*, *samādhi*, [then] *paññā*," the idea that "wisdom develops samādhi" is supported by such suttas as [SN 48.45](/content/canon/sn48.45).

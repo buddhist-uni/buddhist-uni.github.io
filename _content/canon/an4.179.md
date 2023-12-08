@@ -9,7 +9,6 @@ course: sati
 tags:
   - problems
   - renunciation
-  - attention
   - an
 # nibbana tag covered by *The Island*
 year: 2018
@@ -18,4 +17,4 @@ pages: 1
 
 > What is the cause, Reverend Sāriputta, what is the reason why some sentient beings aren’t fully extinguished in the present life?
 
-<!---->
+For the Buddha's answer to this question, see [SN 35.131](/content/canon/sn35.131).

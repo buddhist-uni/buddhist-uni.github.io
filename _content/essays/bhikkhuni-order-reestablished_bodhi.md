@@ -8,7 +8,7 @@ month: aug
 course: philosophy
 tags:
   - nuns
-  - bhikkuni-controversy
+  - bhikkuni-ordination
 pages: 3
 ---
 

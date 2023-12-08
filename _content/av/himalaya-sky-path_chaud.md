@@ -9,7 +9,7 @@ course: cosmology
 status: featured
 tags:
   - tibetan
-  - monastic-tibetan
+  - form
   - families
   - rebirth
 year: 2008
