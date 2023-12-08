@@ -1,8 +1,8 @@
 ---
 title: "The Buddhist Cosmos: A Comprehensive Survey of the Early Buddhist Worldview; according to Theravāda and Sarvāstivāda sources"
 authors:
-  - "punnadhammo Mahathero"
-external_url: "https://arrowriver.ca/book/bookDown.php?format=pdf"
+  - "Punnadhammo Mahāthero"
+external_url: "https://arrowriver.ca/book/cosmoBook.php"
 drive_links:
   - "https://drive.google.com/file/d/1RdJt6dEzcKKHNRZrwuPMYYJg0JKOvx1Y/view?usp=sharing"
 course: cosmology
@@ -11,8 +11,6 @@ tags:
   - anicca
 year: 2018
 olid: OL41017074M
-publisher: "Arrow River Forest Hermitage"
-address: "Canada"
 pages: 700
 ---
 
