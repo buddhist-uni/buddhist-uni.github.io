@@ -19,4 +19,5 @@ of all manifestation, action (kamma) and result of action (vipāka). It is depen
 contingent, imperfect, and all forms within it are impermanent and subject to change
 and dissolution.
 
-This book details the early Buddhist views of the cosmos, the English translation of saṃsāra. Using mostly Pali sources, Punnadhammo Mahathero covers topics such as time, space, various realms, and the beings that inhabit them.
+This book details the early Buddhist view of the cosmos.
+Using mostly Pali sources, Punnadhammo Mahathero covers topics such as time, space, the various realms, and the qualities of the beings that inhabit them.
