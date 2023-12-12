@@ -21,4 +21,4 @@ pages: 6
 
 Poet Louise Glück graciously accepts the 2020 Nobel Prize in Literature in a master class of rhetoric and humility.
 
-You can also watch Glück rereading her speech for [the Nobel YouTube channel](https://youtu.be/0aE0lSWnvC8) just months before she passed away from cancer in October of 2023.
+You can also watch Glück rereading her speech for [the Nobel YouTube channel](https://youtu.be/0aE0lSWnvC8) just months before she passed away from cancer in 2023.

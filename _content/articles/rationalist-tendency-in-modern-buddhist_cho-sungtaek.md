@@ -10,6 +10,7 @@ file_links:
 course: hermeneutics
 tags:
   - academic
+  - sutta
   - epistemology
 year: 2002
 journal: "Philosophy East and West"
