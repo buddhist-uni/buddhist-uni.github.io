@@ -358,7 +358,7 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
-# nibbana tag covered by *The Island*
+# buddha tag covered by Nyanamoli's *Life*
 year: {year}
 pages: {pages}
 {parallels}---

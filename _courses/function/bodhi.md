@@ -19,6 +19,9 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Lotus_flower_(97865
 {% include content_blurb.html slug="most-important-teaching_munindo" category="av" %}
 - Ajahn Munindo talks about this sutta one [Vesāk day](https://en.wikipedia.org/wiki/Vesak){:target="_blank"} and explains how it can transform our lives.
 
+{% include content_blurb.html category="canon" slug="sn55.51" %}
+- At the end of that sutta, Koṇḍañña "understood".  What did he understand?  And how do we follow his example?
+
 {% include content_blurb.html category="canon" slug="iti93" %}
 - And lastly, a short poem on enlightenment from the Buddha himself.
 

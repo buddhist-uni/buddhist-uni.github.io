@@ -10,6 +10,7 @@ tags:
   - academic
   - epistemology
   - ideology
+  - psychology
 year: 2014
 month: jul
 journal: "Philosopher's Imprint"

@@ -72,14 +72,14 @@ Pass ✅ - No parallels have overlapping tags
 
 In addition to the sutta parallels above, suttas should be deduped against the anthologies that contain them (e.g. if a sutta is in an assigned anthology, it shouldn't also be assigned to that course separately as well).
 So far, suttas have been added and deduped from:
+  - *The Island*
   - Ajahn Geoff's *The Buddha Smiles*
   - Ajahn Geoff's *Recognizing the Dhamma*
   - Hecker's *Similes of the Buddha*
 
 Anthologies yet to be processed:
-  - *The Island* (if any sutta quotes are lengthy enough)
-  - Ajahn Geoff's *Noble Conversation*
   - Nyanamoli's *Life of the Buddha*
+  - Ajahn Geoff's *Noble Conversation*
   - Sarah Shaw's *Buddhist Meditation* 
   - along with Jason Espada's anthology
   - Bhikkhu Bodhi's selections in the Sutta tag
