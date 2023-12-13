@@ -9,8 +9,8 @@ drive_links:
 course: thought
 tags:
   - monastic-advice
-  - buddha
   - iti
+# buddha tag covered by Nyanamoli's *Life*
 year: 1997
 pages: 2
 parallels: []

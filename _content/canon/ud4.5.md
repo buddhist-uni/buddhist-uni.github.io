@@ -6,8 +6,8 @@ drive_links: ["https://drive.google.com/file/d/1Uke5IpH89rIttkmwIOC2kggAGRPpy7wm
 course: nature
 tags:
   - ud
-  - buddha
   - imagery
+# buddha tag covered by Nyanamoli's *Life*
 year: 2008
 pages: 3
 parallels:

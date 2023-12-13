@@ -12,6 +12,7 @@ tags:
   - emptiness
   - canonical-poetry
   - death
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana tag covered by *The Island*
 year: 2008
 pages: 3

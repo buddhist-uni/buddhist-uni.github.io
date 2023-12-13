@@ -11,6 +11,7 @@ tags:
   - thought
   - monastic
   - sn
+# buddha tag covered by Nyanamoli's *Life*
 # imagery tag covered by Hecker's Similes
 year: 2018
 pages: 2

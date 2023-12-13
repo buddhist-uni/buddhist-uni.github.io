@@ -12,6 +12,7 @@ tags:
   - karma
   - dana
   - rebirth-stories
+# buddha tag covered by Nyanamoli's *Life*
 year: 2018
 pages: 3
 parallels:

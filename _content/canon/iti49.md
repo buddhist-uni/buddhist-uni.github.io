@@ -10,6 +10,7 @@ course: view
 tags:
   - hindrances
   - iti
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana tag covered by *The Island*
 year: 1997
 pages: 1

@@ -10,6 +10,7 @@ status: featured
 tags:
   - mn
   - function
+# buddha tag covered by Nyanamoli's *Life*
 year: 2009
 pages: 12
 parallels:

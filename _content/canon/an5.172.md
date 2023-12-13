@@ -8,6 +8,7 @@ course: ethics
 tags:
   - an
   - lay
+# buddha tag covered by Nyanamoli's *Life*
 year: 2018
 pages: 1
 ---

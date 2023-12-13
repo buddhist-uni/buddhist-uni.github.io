@@ -12,6 +12,7 @@ tags:
   - an
   - body
   - sati
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
 pages: 1
 parallels:

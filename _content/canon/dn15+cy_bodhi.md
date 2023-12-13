@@ -10,6 +10,7 @@ tags:
   - abhidhamma
   - pali-commentaries
 # nibbana covered by *The Island*
+# buddha tag covered by Nyanamoli's *Life*
 publisher: bps
 year: 1984
 base_value: 1.2

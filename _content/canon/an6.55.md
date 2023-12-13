@@ -11,6 +11,7 @@ tags:
   - imagery
   - monastic-advice
   - an
+# buddha tag covered by Nyanamoli's *Life*
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018
 pages: 4

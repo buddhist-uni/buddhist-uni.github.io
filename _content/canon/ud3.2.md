@@ -10,6 +10,7 @@ tags:
   - deva
   - cosmology
   - nibbana
+# buddha tag covered by Nyanamoli's *Life*
 year: 2008
 pages: 4
 parallels: []

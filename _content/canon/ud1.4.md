@@ -10,6 +10,7 @@ course: speech
 tags:
   - canonical-poetry
   - ud
+# buddha tag covered by Nyanamoli's *Life*
 year: 2018
 pages: 1
 parallels: []

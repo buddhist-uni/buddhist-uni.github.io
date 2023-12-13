@@ -8,9 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1Vv9WuMxa7F96C9StK6hvjxPmbk9WQIMZ/view?usp=drivesdk"
 course: canonical-poetry
 tags:
-  - buddha
   - snp
 # thought tag covered by Geoff's "Recognizing" anthology
+# buddha tag covered by Nyanamoli's *Life*
 year: 2015
 pages: 4
 parallels:

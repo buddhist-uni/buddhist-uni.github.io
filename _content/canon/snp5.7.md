@@ -14,6 +14,7 @@ tags:
   - anagami
   - arahant
   - epistemology
+# buddha tag covered by Nyanamoli's *Life*
 minutes: 3
 parallels: []
 # Partial parallels from SC

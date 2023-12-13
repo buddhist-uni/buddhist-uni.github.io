@@ -12,6 +12,7 @@ tags:
   - function
   - philosophy
   - canonical-poetry
+# buddha tag covered by Nyanamoli's *Life*
 year: 2015
 pages: 2
 parallels:

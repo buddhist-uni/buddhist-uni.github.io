@@ -12,6 +12,7 @@ tags:
   - thought
   - pali-canon
   - snp
+# buddha tag covered by Nyanamoli's *Life*
 subcat: poetry
 year: 2004
 pages: 2

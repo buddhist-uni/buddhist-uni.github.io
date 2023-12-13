@@ -14,6 +14,7 @@ tags:
   - power
   - charisma
 # imagery covered by Hecker's similes
+# buddha tag covered by Nyanamoli's *Life*
 year: 1989
 publisher: bps
 pages: 40

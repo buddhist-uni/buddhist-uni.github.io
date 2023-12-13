@@ -9,8 +9,8 @@ course: pali-canon
 status: featured
 tags:
   - an
-  - buddha
   - philosophy
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
 pages: 2
 parallels:

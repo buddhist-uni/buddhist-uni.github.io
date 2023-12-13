@@ -11,6 +11,7 @@ tags:
   - thought
   - underage
   - sn
+# buddha tag covered by Nyanamoli's *Life*
 year: 2020
 pages: 2
 parallels:

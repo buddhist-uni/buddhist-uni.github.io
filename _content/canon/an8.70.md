@@ -9,6 +9,7 @@ course: cosmology
 tags:
   - geology # might move here, idk
   - an
+# buddha tag covered by Nyanamoli's *Life*
 year: 2018
 pages: 6
 parallels:

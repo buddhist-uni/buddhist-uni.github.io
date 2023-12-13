@@ -8,6 +8,7 @@ source_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Udana
 course: speech
 tags:
   - ud
+# buddha tag covered by Nyanamoli's *Life*
 year: 2008
 pages: 4
 parallels:

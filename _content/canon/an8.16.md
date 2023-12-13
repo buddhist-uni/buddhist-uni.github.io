@@ -10,6 +10,7 @@ tags:
   - form
   - pilgrimage
   - an
+# buddha tag covered by Nyanamoli's *Life*
 year: 2012
 pages: 1
 parallels:

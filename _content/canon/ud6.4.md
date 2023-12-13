@@ -10,6 +10,7 @@ tags:
   - cosmology
   - philosophy
   - speech
+# buddha tag covered by Nyanamoli's *Life*
 year: 2008
 pages: 6
 parallels: []

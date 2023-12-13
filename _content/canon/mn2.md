@@ -12,6 +12,7 @@ tags:
   - problems
   - mn
   - pali-canon
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
 year: 2009
 pages: 7

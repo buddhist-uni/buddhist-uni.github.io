@@ -10,6 +10,7 @@ course: nibbana
 tags:
   - an
   - philosophy
+# buddha tag covered by Nyanamoli's *Life*
 pages: 2
 parallels:
   - ea22.5

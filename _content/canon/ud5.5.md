@@ -11,6 +11,7 @@ tags:
   - pali-canon
   - sangha
   - ud
+# buddha tag covered by Nyanamoli's *Life*
 # imagery tag covered by Hecker's Similes
 # nibbana covered by *The Island*
 year: 1997

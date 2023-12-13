@@ -7,9 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1_qER_84CL_wK_DYZLMNlzqQkto1bMd7V/view?usp=drivesdk"
 course: epistemology
 tags:
-  - buddha
   - iddhi
   - an
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
 year: 2012
 pages: 2

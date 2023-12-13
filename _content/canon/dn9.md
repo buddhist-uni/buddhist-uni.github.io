@@ -9,6 +9,7 @@ course: interfaith
 tags:
   - epistemology
   - dn
+# buddha tag covered by Nyanamoli's *Life*
 year: 2003
 pages: 14
 parallels:

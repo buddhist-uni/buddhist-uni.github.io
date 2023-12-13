@@ -8,6 +8,7 @@ course: philosophy
 tags:
   - ud
   - epistemology
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
 year: 2008
 pages: 1

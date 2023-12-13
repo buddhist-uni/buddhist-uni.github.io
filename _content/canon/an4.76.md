@@ -7,10 +7,10 @@ drive_links:
   - "https://drive.google.com/file/d/1lX1SpPYMM1IIKMUpyDKayIm0UcvW4K8U/view?usp=drivesdk"
 course: speech
 tags:
-  - buddha
   - pedagogy
   - compassion
   - an
+# buddha tag covered by Nyanamoli's *Life*
 year: 2018
 pages: 1
 parallels:

@@ -13,6 +13,7 @@ tags:
   - function
   - tranquility-and-insight
   - snp
+# buddha tag covered by Nyanamoli's *Life*
 # imagery covered by Hecker's Similes
 year: 2005
 pages: 2

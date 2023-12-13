@@ -9,9 +9,9 @@ drive_links:
 course: canonical-poetry
 status: featured
 tags:
-  - buddha
   - bart
   - sn
+# buddha tag covered by Nyanamoli's *Life*
 year: 2000
 pages: 4
 parallels:

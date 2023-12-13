@@ -10,6 +10,7 @@ subcat: poetry
 tags:
   - snp
   - pali-canon
+# buddha tag covered by Nyanamoli's *Life*
 status: featured
 year: 2015
 pages: 7

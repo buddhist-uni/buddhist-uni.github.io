@@ -13,6 +13,7 @@ tags:
   - sutta
   - ideology
   - function
+# buddha tag covered by Nyanamoli's *Life*
 year: 2000
 pages: 5
 parallels:

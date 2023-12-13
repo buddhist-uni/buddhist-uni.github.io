@@ -9,6 +9,7 @@ course: emptiness
 tags:
   - samadhi
   - ud
+# buddha tag covered by Nyanamoli's *Life*
 # nibbana tag covered by *The Island*
 year: 2018
 pages: 1

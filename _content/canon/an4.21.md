@@ -8,9 +8,9 @@ drive_links:
 course: sangha
 status: featured
 tags:
-  - buddha # should probably go in "buddha" but this sutta is in Nya's *Life* so I felt no need to duplicate it
   - an
   - dhamma
+# buddha tag covered by Nyanamoli's *Life*
 year: 2012
 pages: 3
 parallels: []
