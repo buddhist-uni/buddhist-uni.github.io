@@ -9,13 +9,14 @@ illustration_width: 1280
 illustration_center_x: 90%
 illustration_center_y: 30%
 illustration_caption: >-
-  A diverse group of stakeholders met around a simple, lace-covered table in Nueva Loja
+  A diverse group of stakeholders met in 2018 around a simple, lace-covered table in Nueva Loja
   to discuss the needs of Sucumbíos' children with representatives of
-  <a href="https://commons.wikimedia.org/wiki/File:Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg">UNICEF Ecuador</a> in 2018.
+  <a href="https://commons.wikimedia.org/wiki/File:Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg">UNICEF Ecuador</a>.
   Most of the table is taken up by a large outline of the province, notes, and various writing implements.
-  Three women around the table indicate that they are thoughtfully listening to the woman closest to the camera
-  by making eye contact with her and by placing their left hands near their lips.
-  Humans use a large variety of "media" (from maps to body language) to share their knowledge, thoughts, and feelings with each other.
+  Women around the table indicate that they are thoughtfully listening to the woman closest to the camera
+  by making eye contact with her and by placing their left hand near their lips.
+  Humans use a large variety of "media" (from maps to body language) to share their knowledge, thoughts, and feelings with each other
+  and to cooperate towards their shared goals.
 image: https://illeakyw.sirv.com/Images/banners/railway_crossing_Kamakura_Japan.jpg
 image_width: 2560
 image_height: 1707

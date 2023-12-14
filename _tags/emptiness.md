@@ -11,7 +11,7 @@ illustration_center_y: 84%
 illustration_caption: >-
   This painting by
   <a href="https://commons.wikimedia.org/wiki/File:Ohara_monkey-moon.jpg">Ohara Shoson</a>
-  depicts a monkey reaching for a lake's reflection of the moon.
+  (1926) depicts a monkey reaching for a lake's reflection of the moon.
   Like the monkey, we foolishly grasp at beautiful forms, not realizing their illusory nature.
 image: https://illeakyw.sirv.com/Images/banners/60220.jpg
 image_width: 3270
