@@ -8,6 +8,7 @@ module Jekyll
     @@similar_cats = nil
     @@content = nil
     @@content_for_tag = nil
+    @@canon_tags = nil
 
     def dataInit(v)
       puts "Prefetching data for similar_content footer..."
@@ -15,6 +16,7 @@ module Jekyll
       @@parents_for_tag = {}
       @@similar_cats = {}
       @@content = []
+      @@canon_tags = Set.new
       @@content_for_tag = Hash.new { |h, k| h[k] = Set.new }
       for cofefe in v["site.categories"]
         cat = cofefe.to_liquid.to_h
@@ -23,6 +25,9 @@ module Jekyll
       for cofefe in v["site.tags"]
         tag = cofefe.to_liquid.to_h
         @@parents_for_tag[tag["slug"]] = tag["parents"]
+        if tag["is_canon"]
+            @@canon_tags << tag["slug"]
+        end
       end
       for cofefe in v["site.content"]
         c = cofefe.to_liquid.to_h
@@ -133,16 +138,21 @@ module Jekyll
             end
             if candidate["tags"]&.size&.nonzero? then
                 denom += candidate["tags"].size * @@config["tdms"]
-                for t in include_content["tags"]
-                    if candidate["tags"].include? t then
-                        score += @@config["ttms"]
+                for t in candidate["tags"]
+                    ttms = @@config["ttms"]
+                    if @@canon_tags.include? t and candidate["category"] == "canon"
+                        ttms *= @@config["ctmm"]
+                        denom -= @@config["tdms"] * (1.0 - @@config["ctmm"])
+                    end
+                    if include_content["tags"].include? t then
+                        score += ttms
                     else
                         if @@parents_for_tag[t] then
                             for p in @@parents_for_tag[t]
-                                if candidate["tags"].include? p then
+                                if include_content["tags"].include? p then
                                     score += @@config["tpms"]
                                     break
-                                elsif candidate["course"] == p then
+                                elsif include_content["course"] == p then
                                     score += @@config["tpms"]
                                     break
                                 end

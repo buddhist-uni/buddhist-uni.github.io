@@ -7,6 +7,7 @@ olid: OL28326205M
 course: world
 tags:
   - evolution
+  - past
   - power
 year: 2011
 publisher: "Kinneret Zmora-Bitan Dvir"

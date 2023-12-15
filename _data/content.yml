@@ -25,3 +25,4 @@ ccmm: 1.12 # category match multiplier
 scmm: 1.08 # similar category multiplier
 fcmm: 1.2 # featured content multiplier
 tsmm: 0.5 # two star content multiplier
+ctmm: 0.5 # downweight canon book tag matches

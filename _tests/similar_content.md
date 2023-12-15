@@ -62,7 +62,7 @@ partial_cases:
     - [mindfulness-in-plain-english_gunaratana, how-to-meditate_yuttadhammo]
 ---
 
-A series of test cases to measure the quality of the content recommendations algorithm.
+A series of hand-labeled examples to estimate the quality of the content recommendations algorithm.
 
 The passing rate at the bottom is a general indicator of the algo's recall rate. It's not meant to be 100%.
 
@@ -76,7 +76,7 @@ The passing rate at the bottom is a general indicator of the algo's recall rate.
 
 | Test Name | Status  |  Notes |
 |-----------|---------|--------|{% for test in cases %}{% assign fc = site.content | find: "slug", test[0] %}{% assign sc = site.content | find: "slug", test[1] %}{% capture cont_req %}{% assign include_content = fc %}{% similar_content %}{% endcapture %}
-| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "[{{ sc.title | split: ':' | first }}]({{ sc.url }})" <details><code>{{ cont_req | strip_html | strip_newlines }}</code></details> | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Pass ✅{% else %}{% assign fails = fails | plus: 1 %}FAIL ❌{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
+| "[{{ fc.title | split: ':' | first }}]({{ fc.url }})" should recommend "[{{ sc.title | split: ':' | first }}]({{ sc.url }})" <details><code>{{ cont_req | strip_html | strip_newlines }}</code></details> | {% if cont_req contains test[1] %}{% assign succs = succs | plus: 1 %}Included{% else %}{% assign fails = fails | plus: 1 %}Not included{% endif %}  | of {% assign c = cont_req | split: "</li>" | size | minus: 2 %}{% assign simcount = simcount | plus: c %}{{ c }}  |{% endfor %}
 |-----|------|----|
-| Totals: | {{ succs }} Pass and {{ fails }} Failed | {{ simcount }} total recommendations |
+| Totals: | {{ succs }} included out of {% assign total = fails | plus: succs %}{{total}} cases ({{ succs | times: 100 | divided_by: total }}%) | {{ simcount }} total recommendations |
 
