@@ -1,7 +1,7 @@
 ---
 title: "Absorption: Human Nature and Buddhist Liberation"
 authors:
-  - "Johannes Bronkhorst"
+  - bronkhorst
 external_url: "https://archive.org/download/absorptionhumannaturebuddhistliberationjohannesbronkhorst_919_b/Absorption%20Human%20Nature%20%26%20Buddhist%20Liberation%20Johannes%20Bronkhorst.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1JlOMeBDlMhKIpPJKwwrY7mLkRsLyygg-/view?usp=drivesdk"

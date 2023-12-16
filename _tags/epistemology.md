@@ -6,7 +6,7 @@ illustration: "https://illeakyw.sirv.com/Images/tags/Blind_monks_examining_an_el
 use_sirv: true
 illustration_height: 742
 illustration_width: 1024
-illustration_center_x: 5%
+illustration_center_x: 50%
 illustration_center_y: 90%
 illustration_caption: >-
   <a href="https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg">This 19th c woodblock by Hanabusa Itchō</a>
