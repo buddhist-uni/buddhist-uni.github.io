@@ -5,12 +5,12 @@ slug: "an.003.035"
 external_url: "https://suttacentral.net/an3.35/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1sGSaw6zYWF7eZrDWSP--pHgtZJiP3rdL/view?usp=drivesdk"
-course: function
+course: buddha
 tags:
   - meditation
   - sleep
   - inner
-  - buddha
+  - function
   - an
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2012

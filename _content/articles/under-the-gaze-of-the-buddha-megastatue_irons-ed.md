@@ -12,6 +12,7 @@ tags:
   - chinese
   - globalization
   - pilgrimage
+  - architecture
   - foguangshan
 ---
 

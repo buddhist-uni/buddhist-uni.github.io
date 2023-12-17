@@ -13,7 +13,7 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Luang_Phor_Somchai_
 
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
-{% include content_box.html category="canon" slug="an3.35" %}
+{% include content_box.html category="canon" slug="sn38.2" %}
 
 {% include content_box.html category="canon" slug="an7.6" %}
 

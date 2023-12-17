@@ -185,13 +185,17 @@ def input_with_prefill(prompt, text, validator=None):
     readline.set_pre_input_hook()
     return result
 
-def input_with_tab_complete(prompt, typeahead_suggestions):
+def input_with_tab_complete(prompt, typeahead_suggestions, delims=None):
+    prev_complr = readline.get_completer()
+    prev_delims = readline.get_completer_delims()
     readline.set_completer(lambda text, state: (
       [s for s in typeahead_suggestions if s.startswith(text)][state]
 ))
+    readline.set_completer_delims(delims or ' /')
     readline.parse_and_bind('tab: complete')
     ret = input(prompt)
-    readline.set_completer(None)
+    readline.set_completer(prev_complr)
+    readline.set_completer_delims(prev_delims)
     return ret
 
 def trunc(longstr, maxlen=12) -> str:

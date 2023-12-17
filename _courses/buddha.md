@@ -176,8 +176,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [R] Anuttaro purisa-damma-sārathi 
 1. [L] The Person
-1. {% capture foo %}{% include content_blurb.html category="canon" slug="mn91" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include inline_content.html category="canon" slug="mn91" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %}
+1. {% include inline_content.html category="canon" slug="an3.35" %}
 
 1. [L] The Doctrine
 1. [E] Anatman

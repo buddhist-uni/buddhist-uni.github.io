@@ -14,7 +14,7 @@ month: mar
 pages: 2
 ---
 
-> It was about saving my psychological cake while I drove around happily eating it. When I 
-could finally admit this to myself, I saw that the license plate had to go ...
-
 > Bombu refers to a foolish being such as myself.
+
+> When I
+could finally admit this to myself, I saw that the license plate had to go ...
