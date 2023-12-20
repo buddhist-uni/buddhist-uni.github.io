@@ -161,8 +161,12 @@ Can we discern something about the Buddha's epistemology from his teachings?
 - The Venerable Sariputta gives a detailed analysis of the Four Noble Truths.
 
 {% include content_blurb.html category="canon" slug="mn63" %}
-- A Bhikkhu threatens to leave the Order unless the Buddha answers his metaphysical questions. With the simile of a man struck by a poisoned arrow, the Buddha makes plain exactly what he does and does not teach in this sutta mentioned in Bhikkhu Bodhi’s talk below.
-- Last week we learned about Buddhist cosmology, while this sutta eschews metaphysics! What gives?! How do you explain this contradiction?
+- A Bhikkhu threatens to leave the Order unless the Buddha answers his metaphysical questions. With the simile of a man struck by a poisoned arrow, the Buddha makes plain exactly what he does not teach in this sutta mentioned in Bhikkhu Bodhi’s talk below.
+
+{% include content_blurb.html category="canon" slug="sn44.2" %}
+- And in this sutta, the Buddha explains what he does teach.
+
+Last week we learned about Buddhist cosmology, while these suttas seem to eschew metaphysics. What gives? How do you explain this seeming contradiction?
 
 #### Lecture
 

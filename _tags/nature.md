@@ -24,3 +24,4 @@ big_width: 3631
 ---
 
 How do Buddhists view the natural world?
+Is there such a thing as Bioethics in Buddhism?

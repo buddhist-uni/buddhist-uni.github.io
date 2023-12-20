@@ -8,7 +8,7 @@ external_url: "https://www.nytimes.com/2021/06/29/podcasts/transcript-ezra-klein
 status: featured
 course: time
 tags:
-  - labor
+  - labor # maybe move here?
   - desire
   - marketing
   - social

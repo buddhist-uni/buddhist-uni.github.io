@@ -4,4 +4,5 @@ status: unpublished
 parents: [view]
 ---
 
-Paṭicca-samuppāda
+*Paṭicca-samuppāda* is the teaching on causes and conditional relations.
+

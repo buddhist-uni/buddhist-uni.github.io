@@ -11,7 +11,7 @@ course: problems
 status: featured
 tags:
   - death
-  - family
+  - families
   - anicca
 year: 2012
 minutes: 27
