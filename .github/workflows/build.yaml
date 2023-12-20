@@ -87,7 +87,7 @@ jobs:
           npx purgecss -v --content "$BUILD_DIR/**/*.html" "$BUILD_DIR/assets/js/*.js" --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
           test -s $BUILD_DIR/assets/css/purged-main.css
       - name: Upload Build as Artifact
-        uses: actions/upload-pages-artifact@main
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ${{ env.BUILD_DIR }}
           retention-days: 62
@@ -103,7 +103,7 @@ jobs:
     steps:
       - name: Deploy the Artifact to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v3
       - name: Invalidate the CloudFlare Cache
         shell: bash
         run: |
