@@ -335,6 +335,10 @@
   "private": "https://drive.google.com/drive/folders/1GVXaFYW5Q4lZSo51lu6Z5gEXBy8PUyt5",
   "public": "https://drive.google.com/drive/folders/1U7bngJmaIPVlV41fvqEQUKoKDblvUN2F"
  },
+ "games": {
+  "private": "https://drive.google.com/drive/folders/1VjIkM9u-b-62tRmIyxnLji6shfgEAuOu",
+  "public": null
+ },
  "gender": {
   "private": "https://drive.google.com/drive/folders/1FRKg7P0kT8Tzd2rPVLZauEWKAsb9v6RG",
   "public": "https://drive.google.com/drive/folders/1kOMSQMEbcqc_bgf2iQ55adc0e8lrkMne"
@@ -858,6 +862,10 @@
  "thai": {
   "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",
   "public": "https://drive.google.com/drive/folders/13TiJQEOQ-uWolJPsMjoQ7bQHsHZk7cMO"
+ },
+ "thai-art": {
+  "private": "https://drive.google.com/drive/folders/1B9R5QwhgPgkqqeBSq5pi-ycAJM9sa6eX",
+  "public": null
  },
  "thai-forest": {
   "private": "https://drive.google.com/drive/folders/1QB24T8R-SdjKS-wBA90y6LjfWoV1c5ZD",
