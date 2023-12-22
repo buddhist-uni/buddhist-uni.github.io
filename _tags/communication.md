@@ -9,14 +9,14 @@ illustration_width: 1280
 illustration_center_x: 90%
 illustration_center_y: 30%
 illustration_caption: >-
-  A diverse group of stakeholders met in 2018 around a simple, lace-covered table in Nueva Loja
+  Stakeholders met around a simple, lace-covered table in Nueva Loja
   to discuss the needs of Sucumbíos' children with representatives of
-  <a href="https://commons.wikimedia.org/wiki/File:Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg">UNICEF Ecuador</a>.
-  Most of the table is taken up by a large outline of the province, notes, and various writing implements.
-  Women around the table indicate that they are thoughtfully listening to the woman closest to the camera
-  by making eye contact with her and by placing their left hand near their lips.
-  Humans use a large variety of "media" (from maps to body language) to share their knowledge, thoughts, and feelings with each other
-  and to cooperate towards their shared goals.
+  <a href="https://commons.wikimedia.org/wiki/File:Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg">UNICEF Ecuador in 2018</a>.
+  Most of the table is taken up by a large outline of the province, note paper, and various writing implements.
+  A woman at the table indicates that she is thoughtfully listening to the woman speaking
+  by making eye contact and by placing her left hand on her (own) face, near her lips.
+  Humans use a large variety of "media" (from phones to body language) to share their knowledge, thoughts, and feelings with each other
+  and to coordinate their activities.
 image: https://illeakyw.sirv.com/Images/banners/railway_crossing_Kamakura_Japan.jpg
 image_width: 2560
 image_height: 1707
@@ -28,4 +28,4 @@ image_center_x: 30%
 image_center_y: 30%
 ---
 
-How humans transmit and interpret information.
+How humans transmit and interpret information to and from each other.
