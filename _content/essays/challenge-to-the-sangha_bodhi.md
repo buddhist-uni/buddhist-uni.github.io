@@ -5,7 +5,7 @@ year: 2006
 month: jul
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/18Zsy1XZCPyMtyDTd0jTBnFqy8mdlXxZH/view?usp=drivesdk"]
-external_url: "https://bodhimonastery.org/docs/julyaug06bb.pdf"
+external_url: "https://web.archive.org/web/20151015063214if_/http://bodhimonastery.org/docs/julyaug06bb.pdf"
 course: monastic-advice
 tags:
   - west

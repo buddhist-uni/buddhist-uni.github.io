@@ -2,7 +2,7 @@
 title: "Approaching the *Dhamma* via the *Majjhima Nikāya*"
 authors: [bodhi]
 subcat: course
-external_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
+source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 formats: [MP3s]
 drive_links: ["https://drive.google.com/drive/folders/1d1u_Lk6TUu0xJ45jBVSppYYOMeBDl37C"]
 course: mn

@@ -16,7 +16,7 @@ tags:
   - power
   - charisma
   - sangha # maybe move here?
-external_url: "https://eudoxos.github.io/saints/html/index.html"
+external_url: "https://edhamma.github.io/saints/html/index.html"
 source_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/saints-and-psychopaths.pdf"
 pages: 145
 ---

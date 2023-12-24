@@ -2,7 +2,7 @@
 title: "The Buddha's Enlightenment in the *Majjhima Nikāya*"
 authors: [bodhi]
 subcat: course
-external_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html#_ftnref1"
+source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html#_ftnref1"
 formats: [MP3s]
 drive_links: ["https://drive.google.com/drive/folders/1cuBO_gjZ_mrUBD0UWoUedT1a19XQzOCC"]
 course: mn
