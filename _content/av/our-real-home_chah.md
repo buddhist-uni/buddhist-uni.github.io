@@ -1,7 +1,7 @@
 ---
 title: "Our Real Home"
 authors:
-  - "Ajahn Chah"
+  - chah
 reader: amaro
 external_url: "https://amaravati.org/audio/part-1-ch13-our-real-home/"
 drive_links:

@@ -1,7 +1,7 @@
 ---
 title: "Unshakable Peace"
 authors:
-  - "Ajahn Chah"
+  - chah
 external_url: "https://www.ajahnchah.org/book/Unshakeable_Peace1_2.php"
 drive_links:
   - "https://drive.google.com/file/d/1okvRvn03qkFmKQ4-DWJ0RGSWJSMZ9f2D/view?usp=drivesdk"
