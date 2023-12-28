@@ -45,6 +45,7 @@ italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 abnormalchars = re.compile('[^\w\s]')
 sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
+yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
@@ -110,6 +111,75 @@ def stdout_make_room(lines: int):
     cout(ANSI_SAVE_POSITION)
     return diff
   return 0
+
+def checklist_prompt(options: list[str], default=False):
+  selections = []
+  if isinstance(default, list):
+    selections = default[:len(options)] + [False] * max(0, len(options) - len(default))
+  else:
+    selections = [default for i in options]
+  tsize = os.get_terminal_size()
+  length = len(options)
+  i = 0
+  room = min(tsize.lines - 2, length) + 1
+  r = (0, room-1)
+  space = tsize.columns - 6
+  options = [trunc(t, space) for t in options]
+  stdin = sys.stdin.fileno()
+  stdout_make_room(room)
+  old_settings = termios.tcgetattr(stdin)
+  tty.setraw(stdin)
+  try:
+    while True:
+      cout(f"{ANSI_RESTORE_POSITION}{ANSI_ERASE_HERE_TO_END}{ANSI_RESTORE_POSITION}")
+      for j in range(r[0], r[1]):
+        if j == i:
+          cout(">")
+        else:
+          cout(" ")
+        cout("[")
+        if selections[j]:
+          cout("X")
+        else:
+          cout(" ")
+        cout(f"] {options[j]}")
+        cout(ANSI_RETURN_N_DOWN(1))
+      if i == length:
+        cout("> ")
+      else:
+        cout("  ")
+      cout("Accept")
+      ch = sys.stdin.read(1)
+      if ch == '\x03':
+        raise KeyboardInterrupt()
+      elif ch in ['\r', '\x04', '\n', ' ', 'x', 'X', '-']:
+        if i == length:
+          break
+        else:
+          selections[i] = not selections[i]
+      elif ch == '\x1b': # ESC
+        ch = sys.stdin.read(1)
+        if ch == '[': # we're getting a control char (e.g. arrow keys)
+          ch = sys.stdin.read(1)
+          # A=up, B=down, C=right, D=left, H=home, F=end
+          if i > 0 and (ch == 'A' or ch == 'D'):
+            i -= 1
+            if i < r[0]:
+              r = (r[0]-1, r[1]-1)
+          if (ch == 'B' or ch == 'C') and (length > i):
+            i += 1
+            if i > r[1]:
+              r = (r[0]+1, r[1]+1)
+          if ch == "F":
+            i = length
+            r = (length-room+1, length)
+          if ch == 'H':
+            i = 0
+            r = (0, room-1)
+  finally:
+    cout(f"{ANSI_RESTORE_POSITION}{ANSI_RETURN_N_DOWN(room)}\n")
+    termios.tcsetattr(stdin, termios.TCSADRAIN, old_settings)
+  return selections
 
 def radio_dial(options):
   SEARCH_ROOM = 3

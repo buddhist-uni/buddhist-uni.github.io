@@ -24,7 +24,7 @@ url: "https://buddhistuniversity.net" # the base hostname & protocol for your si
 GA4: G-B3PH0LF6QQ
 github_repo:  buddhist-uni/buddhist-uni.github.io
 github_branch: main
-tinyletter_username: buddhist-uni
+substack_username: buddhistuniversity
 twitter_username_HIDDEN: buddhistuni
 mastodon_link: https://digipres.club/@obu
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]

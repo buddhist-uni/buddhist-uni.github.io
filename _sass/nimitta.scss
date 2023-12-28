@@ -191,9 +191,21 @@ figure figcaption {
         padding: 0;
         margin-right: 5px;
     }
-    i.fab {
+    i.fab, i.fas, i.far {
+        width: 0.9em;
         font-size: 19px;
         margin-right: 4.5px;
+    }
+    i.fa-bookmark::after {
+        content: "";
+        height: 2px;
+        border: 2.5px solid $banner-color;
+        display: block;
+        transform: translate(-3px, -16.7px);
+        width: 1em;
+    }
+    i.fa-bookmark {
+        transform: scaleX(1.2) translateX(2px);
     }
 }
 

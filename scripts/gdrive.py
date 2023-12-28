@@ -7,9 +7,8 @@ from io import BytesIO
 from strutils import (
   titlecase,
   git_root_folder,
-  system_open,
   input_with_prefill,
-  input_with_tab_complete
+  input_with_tab_complete,
 )
 import json
 import re
@@ -119,7 +118,8 @@ def youtube():
     return build('youtube', 'v3', credentials=google_credentials())
 
 def get_ytvideo_snippet(ytid):
-  return youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
+  snippet = youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
+  return {k: snippet[k] for k in ['title', 'description', 'tags'] if k in snippet}
 
 def get_subfolders(folderid):
   folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
