@@ -191,22 +191,35 @@ figure figcaption {
         padding: 0;
         margin-right: 5px;
     }
+    // make FontAwesome icons match the svg style
     i.fab, i.fas, i.far {
         width: 0.9em;
         font-size: 19px;
         margin-right: 4.5px;
-    }
-    i.fa-bookmark::after {
-        content: "";
-        height: 2px;
-        border: 2.5px solid $banner-color;
-        display: block;
-        transform: translate(-3px, -16.7px);
-        width: 1em;
+        text-shadow: none;
     }
     i.fa-bookmark {
-        transform: scaleX(1.2) translateX(2px);
+        transform: scaleX(1.15) translateX(1px);
     }
+}
+
+/*
+   This is a pretty hacky way of making the bookmark look more
+   like the real Substack logo by adding a pseudoelement with a
+   background-colored border that "erases" two lines of the
+   bookmark icon.
+   
+   This effect doesn't work if the footer has an image.
+
+   TODO: just make a real svg icon for the Substack logo...
+*/
+footer:not(.footer-img) .social-media-list i.fa-bookmark::after {
+    content: "";
+    height: 2px;
+    border: 2.5px solid $banner-color;
+    display: block;
+    transform: translate(-3px, -16.7px);
+    width: 1em;
 }
 
 .site-nav {
