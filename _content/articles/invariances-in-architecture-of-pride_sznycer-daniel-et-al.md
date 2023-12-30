@@ -30,3 +30,4 @@ This display conveys achievement and dominance, is produced by congenitally blin
 
 > Pride is a universal system that is part of our species’ cooperative biology.
 
+See also this research group's related article [on shame](/content/articles/cross-cultural-invariances-in_sznycer-daniel-et-al).

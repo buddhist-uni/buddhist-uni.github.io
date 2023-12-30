@@ -1,7 +1,7 @@
 ---
 title: "Testosterone Causes Both Prosocial and Antisocial Status-Enhancing Behaviors in Human Males"
 authors:
-  - "Jean‐Claude Dreher"
+  - "Jean-Claude Dreher"
   - "Simon Dunne"
   - "Agnieszka Pazderska"
   - "Thomas Frodl"

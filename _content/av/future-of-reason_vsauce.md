@@ -5,10 +5,10 @@ authors:
 year: 2021
 month: apr
 external_url: "https://youtu.be/_ArVh3Cj9rw"
-course: world
+course: time
 tags:
-  - time
-  - math
+  - world
+  - intelligence
   - science
 base_value: 0.2
 minutes: 30

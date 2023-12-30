@@ -164,9 +164,7 @@ Can we discern something about the Buddha's epistemology from his teachings?
 - A Bhikkhu threatens to leave the Order unless the Buddha answers his metaphysical questions. With the simile of a man struck by a poisoned arrow, the Buddha makes plain exactly what he does not teach in this sutta mentioned in Bhikkhu Bodhi’s talk below.
 
 {% include content_blurb.html category="canon" slug="sn44.2" %}
-- And in this sutta, the Buddha explains what he does teach.
-
-Last week we learned about Buddhist cosmology, while these suttas seem to eschew metaphysics. What gives? How do you explain this seeming contradiction?
+- And in this sutta, the Buddha explains [what](https://discourse.suttacentral.net/t/i-declare-only-suffering-and-its-cessation-the-buddha-indeed/31825?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.4"} he does teach.
 
 #### Lecture
 
