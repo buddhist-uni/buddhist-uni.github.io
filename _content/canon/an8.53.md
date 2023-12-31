@@ -19,6 +19,7 @@ tags:
   - an
   - thought
 # buddha tag covered by Nyanamoli's *Life*
+# nuns tag covered by Anandajoti's Gotamisuttani
 year: 2018
 pages: 1
 parallels: []

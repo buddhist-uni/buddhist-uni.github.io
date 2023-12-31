@@ -6,8 +6,8 @@ translator: "Ajahn Puriso"
 external_url: "https://www.buddhanet.net/pdf_file/taste-freedom.pdf"
 alternate_url: "https://www.bps.lk/olib/bp/bp525s_Chah_A-Taste-Of-Freedom.pdf"
 drive_links:
- - "https://drive.google.com/file/d/1r9wSxFo4aJ3IBLe7iD7eXokqg0A-1xDA/view?usp=drive_link"
- - "https://drive.google.com/file/d/1vh9ISAQmVpGuuSrdfNAbyZhvXD6SEoqU/view?usp=sharing"
+  - "https://drive.google.com/file/d/1b6VaDVjHCviSTWdecsnpvIsHq2upd_Ee/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vh9ISAQmVpGuuSrdfNAbyZhvXD6SEoqU/view?usp=sharing"
 course: emptiness
 tags:
   - meditation
