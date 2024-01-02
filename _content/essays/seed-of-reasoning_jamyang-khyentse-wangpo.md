@@ -10,8 +10,8 @@ drive_links:
 course: emptiness
 tags:
   - philosophy
-  - problems
-  - 
+  - dialogue
+  - origination
 year: 2018
 publisher: "Lotsawa House"
 pages: 3
@@ -19,4 +19,4 @@ pages: 3
 
 > If something is interdependent, it is necessarily emptiness.
 
-In this short teaching, Jamyang Khyentse Wangpo explains five logical arguments of Nagarjuna's Mādhyamaka (Middle Way).
+In this short teaching, Jamyang Khyentse Wangpo summarizes five logical arguments of Nagarjuna's Mādhyamaka (Middle Way).
