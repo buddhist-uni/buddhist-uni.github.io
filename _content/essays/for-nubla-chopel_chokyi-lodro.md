@@ -1,7 +1,7 @@
 ---
 title: "Advice for Nubla Kunzang Chöpel"
 authors:
-  - "Jamyang Khyentse Chökyi Lodrö"
+  - chokyi-lodro
 translator: "Adam Pearcey"
 subcat: poetry
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/advice-for-nubla-kunzang-chopel"

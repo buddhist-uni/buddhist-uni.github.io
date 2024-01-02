@@ -78,8 +78,11 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {% include content_blurb.html category="canon" slug="sn56.21" %}
 - At its core, Nibbāna is the penetrative understanding of the Four Noble Truths which ends the cycle of rebirth.
 
+{% include content_blurb.html category="canon" slug="an3.55" %}
+- The other basic definition of Nibbāna is as the destruction of Greed, Hatred, and Delusion. Here, the Buddha explains how the passing of these states gives us a taste of what the ultimate is like.
+
 {% include content_blurb.html category="canon" slug="sn12.58" %}
-- The Buddha explains in brief how meditation leads to the breaking of Dependent Origination.
+- The Buddha explains in brief how meditation leads to the breaking of Dependent Origination (and thus, rebirth).
 
 <i class="fas fa-book"></i> The Introduction and Chapter 1 of *Metaphor and Literalism* (hereafter, "ML")
 {: .mb-0}

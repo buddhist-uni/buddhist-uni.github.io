@@ -3,13 +3,18 @@
 import os.path
 from pathlib import Path
 import requests
+import struct
 from io import BytesIO
 from strutils import (
   titlecase,
   git_root_folder,
   input_with_prefill,
   input_with_tab_complete,
+  file_info,
+  prompt,
+  approx_eq,
 )
+import pdfutils
 import json
 import re
 from functools import cache
@@ -223,6 +228,80 @@ def move_drive_file(file_id, folder_id, previous_parents=None):
     fields='id, parents, name').execute()
   print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
+
+EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
+
+def files_exactly_named(file_name):
+  f = file_name.replace("'", "\\'")
+  return session().files().list(
+    q=f"name='{f}' AND 'me' in owners AND mimeType!='application/vnd.google-apps.shortcut'",
+    fields=EXACT_MATCH_FIELDS,
+  ).execute()['files']
+
+def my_pdfs_containing(text):
+  text = text.replace("'", "\\'")
+  return session().files().list(
+    q=f"fullText contains '{text}' AND 'me' in owners AND mimeType='application/pdf'",
+    fields=EXACT_MATCH_FIELDS,
+  ).execute()['files']
+
+def has_file_already(file_in_question, default="prompt"):
+  hash, size = file_info(file_in_question)
+  file_in_question = Path(file_in_question)
+  cfs = files_exactly_named(file_in_question.name)
+  for gf in cfs:
+    if hash == gf['md5Checksum'] or (approx_eq(size, int(gf['size']), absdiff=1024, percent=2.0) or len(gf['name']) > 11):
+      return True
+    else:
+      print(f"  Found file with that name sized {gf['size']} instead of {size}.")
+      if default=="prompt":
+        if prompt("Consider that a match?"):
+          return True
+      else:
+        if default:
+          return True
+  if file_in_question.suffix == ".pdf":
+    print("  Attempting to search by PDF contents...")
+    try:
+      text = pdfutils.get_searchable_contents(file_in_question)
+    except struct.error:
+      text = ""
+    if len(text) < 16:
+      print("  failed to extract text from the PDF")
+      return False
+    cfs = my_pdfs_containing(text)
+    for gf in cfs:
+        if hash == gf['md5Checksum'] or approx_eq(size, int(gf['size']), absdiff=512):
+            return True
+        if gf['originalFilename'] == file_in_question.name:
+          if approx_eq(size, int(gf['size']), percent=5.0) and len(gf['originalFilename']) > 7:
+            return True
+          print(f"  Found a file now named {gf['name']} sized {gf['size']} instead of {size}.")
+          if default=="prompt":
+            if prompt("Consider that a match?"):
+              return True
+          else:
+            if default:
+              return True
+    if len(cfs) == 1:
+        gf = cfs[0]
+        print(f"  Found file \"{gf['name']}\" with that text sized {gf['size']} instead of {size}.")
+        if default=="prompt":
+          if prompt("Consider that a match?"):
+            return True
+        else:
+          if default:
+            print("  But I'm not confident enough in the match to delete the file, sorry!")
+    if len(cfs) > 1:
+        if default=="prompt":
+          print(f"  Found {len(cfs)} fuzzy matches:")
+          for gf in cfs:
+            print(f"    {gf['name']}")
+          if prompt("Are any of those a match?"):
+              return True
+        else:
+          print(f"  Ignoring the {len(cfs)} fuzzy matches found")
+  return False
 
 def get_shortcuts_to_gfile(target_id):
   # note the following assumes only one page of results
