@@ -15,11 +15,9 @@ drive_links:
  - "https://drive.google.com/file/d/1aBVK5zLr5YDtOUJyuHONLmnzcGp34QWN/view?usp=sharing"
 course: emptiness
 tags:
-  - nibbana
-  - problems
-  - citta
-  - vipassana
-  - philosophy
+  - meditation
 ---
 
-A brief summary of the most important concept of emptiness.
+> suññatā is a term pregnant with meaning and of central significance in all Buddhist traditions.
+
+An introduction to the semantics, philosophy, and soteriology of "emptiness."
