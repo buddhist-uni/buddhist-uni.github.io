@@ -29,5 +29,5 @@ openalexid: W2811153129
 
 You can also watch on YouTube:
   - [a clip from the film discussed in this article](https://youtu.be/wakr9i2E-88)
-  - [a sped-up version of another film from the series](https://youtu.be/0HGv3ItyTIY))
-  - and [an interview with Ng about his article](https://youtu.be/7G6e5CR2ahI)
+  - [a sped-up version of another film from the series](https://youtu.be/0HGv3ItyTIY)
+  - and [an interview with Ng about this article](https://youtu.be/7G6e5CR2ahI)

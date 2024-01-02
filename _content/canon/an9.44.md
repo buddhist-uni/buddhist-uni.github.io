@@ -3,13 +3,12 @@ title: "AN 9.44: Freed by Wisdom"
 translator: sujato
 slug: "an.009.044"
 external_url: "https://suttacentral.net/an9.44/en/sujato"
-course: imagery
+drive_links:
+  - "https://drive.google.com/file/d/1pMatGlux4hBFavA47c_nnWpyl5i3Qbjj/view?usp=drivesdk"
+course: samadhi
 tags:
   - an
-  - philosophy
   - tranquility-and-insight
-  - nibbana
-  - samadhi
 year: 2018
 pages: 1
 ---

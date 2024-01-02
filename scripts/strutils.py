@@ -3,8 +3,10 @@
 import random
 import sys
 import termios
+import hashlib
 import tty
 import os
+import io
 import json
 import re
 import string
@@ -53,6 +55,20 @@ HOSTNAME_BLACKLIST = {
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
 
+def approx_eq(a, b, absdiff=1.0, percent=1.0):
+  diff = a - b
+  m = a
+  if diff < 0:
+    diff = 0 - diff
+    m = b
+  if diff < absdiff:
+    return True
+  if m < 0:
+    m = diff - m
+  if (100.0 * diff / m) < percent:
+    return True
+  return False
+
 def sanitize_string(text):
   return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
 
@@ -73,6 +89,13 @@ def naturally_sorted(alist):
 
 def cout(*args):
   print(*args, flush=True, end="")
+
+def iolen(fd):
+  pos = fd.tell() # get current position
+  fd.seek(0, io.SEEK_END) # move to the end
+  length = fd.tell() # get final position
+  fd.seek(pos) # restore original position
+  return length
 
 def get_cursor_position():
     """Returns (row, col)""" # á la termios.tcgetwinsize
@@ -357,6 +380,15 @@ class FileSyncedSet:
     return len(self.items)
   def __contains__(self, item):
     return self.norm(item) in self.items
+
+def file_info(file_name):
+  md5 = hashlib.md5()
+  size = 0
+  with open(file_name, "rb") as f:
+    while chunk := f.read(1024):
+        md5.update(chunk)
+        size += len(chunk)
+  return (md5.hexdigest(), size)
 
 # Reconstructs a text from an inverted index:
 # https://docs.openalex.org/api-entities/works/work-object#abstract_inverted_index
