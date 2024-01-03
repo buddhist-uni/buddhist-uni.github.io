@@ -32,41 +32,21 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <p>...  For the complete list, and to be informed about new arrivals, subscribe to <a href="/feed/content.xml">the content RSS Feed</a>.</p>
 {% endif %}
 
-{% assign allcontent = allcontent | where_exp: "c", "c.course" %}
-{% assign thisyears = allcontent | where: "year", thisyear %}
-{% assign lastyears = allcontent | where: "year", lastyear | where: "status", "featured" %}
+{% assign allcontent = allcontent | where: "status", "featured" %}
 {% assign courses = site.courses | map: "slug" %}
 {% assign tags = site.tags | where: "status", "published" | map: "slug" | concat: courses %}
-{% assign featurecontent = lastyears %}
-{% for c in thisyears %}
-  {% if tags contains c.course %}
-    {% assign featurecontent = featurecontent | push: c %}
-    {% continue %}
-  {% endif %}
-  {% for t in c.tags %}
-    {% if tags contains t %}
-      {% assign featurecontent = featurecontent | push: c %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+{% assign thisyears = allcontent | where: "year", thisyear | where_exp: "c", "tags contains c.course" %}
+{% assign lastyears = allcontent | where: "year", lastyear | where_exp: "c", "tags contains c.course" %}
+{% assign featurecontent = lastyears  | concat: thisyears %}
 <h2 id="recent"><i class="fas fa-calendar-week"></i> Recently Published</h2>
 <p>Within the last couple years.</p>
-{% include content_list.html contents=featurecontent orderby="-date" %}
+{% for c in featurecontent %}
+<div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
 
 <h2 id="bestof"><i class="fas fa-medal"></i> Featured Selections</h2>
 <p>A couple works are selected as the cream of the crop each year.</p>
 {% capture fe %}c.year < {{ lastyear }}{% endcapture %}
-{% assign fcon = allcontent | where: "status", "featured" | where_exp: "c", fe %}
-{% assign featurecontent = "" | split: "" %}
-{% for c in fcon %}
-  {% assign yd = year | minus: c.year %}
-  {% if c.stars < 5 %}
-    {% continue %}
-  {% endif %}
-  {% assign featurecontent = featurecontent | push: c %}
-{% endfor %}
-{% assign featurecontent = featurecontent | group_by: "year" | sort: "name" | reverse %}
+{% assign featurecontent = allcontent | where_exp: "c", fe | where: "stars", 5 | group_by: "year" | sort: "name" | reverse %}
 {% for y in featurecontent %}
 <h3>{{ y.name }}</h3>
 {% for c in y.items %}
