@@ -10,6 +10,7 @@ tags:
   - social
   - media
   - places
+  - loneliness
 year: 2023
 month: apr
 publisher: nyt

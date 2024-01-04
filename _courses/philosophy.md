@@ -131,7 +131,8 @@ We start the course proper by talking about the founder and central figure of Bu
 #### Sutta Spotlight
 
 {% include content_blurb.html category="booklets" slug="lions-roar_nyanamoli" %}
-- In MN 12 (we'll read MN 11 later), the Buddha expounds the ten powers of a Tathāgata, his four kinds of intrepidity, and other superior qualities, which entitle him to “roar his lions roar in the assemblies.”
+- In MN 12 (the second, "Greater" discourse in this booklet), the Buddha expounds the ten powers of a Tathāgata, his four kinds of intrepidity, and other superior qualities, which entitle him to “roar his lions roar in the assemblies.”
+- (We'll read the "Lesser" Lion's Roar Sutta in a future lesson...)
 
 {% include content_blurb.html category="av" slug="mn12-explanation_brahm" %}
 - Ajahn Brahm teaches this sutta and gives a few stories from his time as a monk in Thailand in this wonderful and highly recommended talk. Don't miss it!
