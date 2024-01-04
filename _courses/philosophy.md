@@ -130,8 +130,8 @@ We start the course proper by talking about the founder and central figure of Bu
 
 #### Sutta Spotlight
 
-{% include content_blurb.html category="canon" slug="mn12" %}
-- The Buddha expounds the ten powers of a Tathāgata, his four kinds of intrepidity, and other superior qualities, which entitle him to “roar his lions roar in the assemblies.”
+{% include content_blurb.html category="booklets" slug="lions-roar_nyanamoli" %}
+- In MN 12 (we'll read MN 11 later), the Buddha expounds the ten powers of a Tathāgata, his four kinds of intrepidity, and other superior qualities, which entitle him to “roar his lions roar in the assemblies.”
 
 {% include content_blurb.html category="av" slug="mn12-explanation_brahm" %}
 - Ajahn Brahm teaches this sutta and gives a few stories from his time as a monk in Thailand in this wonderful and highly recommended talk. Don't miss it!
@@ -396,9 +396,8 @@ We open with some suttas from other collections than the MN, which Bhikkhu Bodhi
 
 #### Sutta Spotlight
 
-{% include content_blurb.html category="canon" slug="mn11" %}
-- The Buddha declares that only in his Dispensation can the four grades of noble individuals be found, explaining how his teaching can be distinguished from other creeds through its unique rejection of all doctrines of self.
-
+{% include content_blurb.html category="booklets" slug="lions-roar_nyanamoli" %}
+- In MN 11, the Buddha declares that only in his Dispensation can the four grades of noble individuals be found, explaining how his teaching can be distinguished from other creeds through its unique rejection of all doctrines of self.
 
 {% include content_blurb.html category="av" slug="mn11-explanation_suddhaso" %}
 - Bhante Suddhaso explains this sutta and mentions how it relates to other philosophies.
