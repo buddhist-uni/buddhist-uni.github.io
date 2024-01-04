@@ -4,12 +4,15 @@ authors:
   - "Daniel Z. Korman"
 external_url: "https://plato.stanford.edu/entries/ordinary-objects/"
 drive_links:
-  - "https://plato.stanford.edu/entries/ordinary-objects/"
+  - "https://drive.google.com/file/d/1i0hRUA5F9mybZbTWPBbx1d0SFmQMTe-i/view?usp=drive_link"
 course: emptiness
 tags:
   - philosophy
+  - perception
+  - dialogue
+  - things
 year: 2011
-publisher: "Stanford Encyclopedia of Philosophy"
+publisher: plato
 pages: 47
 ---
 
