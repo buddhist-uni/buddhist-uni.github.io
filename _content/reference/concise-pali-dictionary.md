@@ -9,6 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1PCCCfAaDAxzwmXQXiZApRPGcwf2f7Z5e/view?usp=drivesdk"
 course: pali-dictionaries
 olid: OL32982157M
+pages: 315
 year: 1949
 ---
 
