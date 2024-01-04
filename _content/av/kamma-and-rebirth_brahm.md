@@ -14,6 +14,6 @@ month: may
 minutes: 98
 ---
 
-> Kamma gives us oppurutnities to learn.
+> Kamma gives us opportunities to learn.
 
-In his usual wit and humor, Ajahn Bram explains the functioning of kamma in our daily lives and its realtion to the various rebirths one can have.
+In his usual wit and humor, Ajahn Brahm explains the functioning of kamma in our daily lives and its relation to the various rebirths one can have.

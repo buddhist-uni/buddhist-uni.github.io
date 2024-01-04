@@ -95,6 +95,8 @@ module Jekyll
             item.data['total_mins'] = item.data['page_count'].to_f * @@etm[:mins_per_page]
             if item.data['category'] == 'canon'
                 item.data['total_mins'] *= 2.5 # Assume canonical works require deeper reading
+            elsif item.data['category'] == 'reference'
+                item.data['total_mins'] *= 0.1 # Assume reference works will only be partially read
             end
         end
         item.data['course_mins'] = (item.data['total_mins'] * item.data['course_time_multiplier']).round()
