@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1i0hRUA5F9mybZbTWPBbx1d0SFmQMTe-i/view?usp=drive_link"
 course: emptiness
 tags:
-  - philosophy
   - perception
   - dialogue
   - things

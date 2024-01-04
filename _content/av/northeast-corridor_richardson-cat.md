@@ -9,7 +9,7 @@ course: inner
 tags:
   - america
   - aging
-  - romance
+  - romanticism
 year: 2020
 month: feb
 series: slowdown

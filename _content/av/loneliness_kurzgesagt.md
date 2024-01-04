@@ -6,6 +6,7 @@ external_url: "https://youtu.be/n3Xv_g3g-mA"
 course: social
 tags:
   - feeling
+  - loneliness
   - health
 year: 2019
 month: feb
