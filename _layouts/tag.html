@@ -69,6 +69,9 @@ Please be aware that this tag is still under construction and as such is missing
 {% if page.is_canon %}
   {% assign categories = categories | where_exp: "c", "c != 'canon'" | push: "canon" %}
 {% endif %}
+{% if page.is_reference %}
+  {% assign categories = categories | where_exp: "c", "c != 'reference'" | unshift: "reference" %}
+{% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% assign all_series = site.series | where_exp: "c", filter_exp | sort: "title" %}
 {% assign all_course_content = all_content | where: "course", page.slug %}
