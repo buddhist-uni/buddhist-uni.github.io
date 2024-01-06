@@ -71,6 +71,10 @@
   "private": "https://drive.google.com/drive/folders/1xZ_snWf8FrukcoQEEpRHxu8OETO6OzD2",
   "public": null
  },
+ "archive": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa"
+ },
  "art": {
   "private": "https://drive.google.com/drive/folders/1LjS7lRKBuNtMjAS_LlxK3Pr1UuMxme44",
   "public": "https://drive.google.com/drive/folders/1yr6n4SgItSZ7isFrsAyo9_NvTB1M9BZR"
@@ -195,6 +199,10 @@
   "private": "https://drive.google.com/drive/folders/14XPg2MzUesZON410-KUHu6_JFI6e1Qfx",
   "public": null
  },
+ "climate-change": {
+  "private": "https://drive.google.com/drive/folders/18vhtNG3Q_R1uBI45u1pSFVeqygnd_iAp",
+  "public": "https://drive.google.com/drive/folders/1MYf_DlrF3yLte3eAgCZAGk2lUhgkBTq3"
+ },
  "clothes": {
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
@@ -262,6 +270,10 @@
  "east-asian-roots": {
   "private": "https://drive.google.com/drive/folders/1dsxzckxKqYgGvJkQPjts_C_FwvpVoRdn",
   "public": "https://drive.google.com/drive/folders/10ugZMtIGz_dtWMz2ClNWv9RRdAo4nvLr"
+ },
+ "ebts": {
+  "private": "https://drive.google.com/drive/folders/1BhDdraWTpTt118lNMbM7vGZMYfw6fTjq",
+  "public": "https://drive.google.com/drive/folders/1-2TVk3zAOCa-Jh2exR16WLmu4gWxS0qt"
  },
  "economics": {
   "private": "https://drive.google.com/drive/folders/14HLIR4pZhcJWobu6wk-kzGP-CGOTc7ao",

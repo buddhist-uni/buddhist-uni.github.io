@@ -10,6 +10,11 @@ a.skip-to-main:focus {
     z-index: 999;
 }
 
+/* improves punctuation in supported browsers */
+html {
+  hanging-punctuation: first last;
+}
+
 header.site-header {
     z-index: 2;
     background-color: $banner-color;
@@ -73,6 +78,14 @@ $ipad-margin: 40px;
 main.page-content {
     z-index: 2;
     padding: 15px 0;
+}
+
+/* Better default scroll to #target behavior */
+@media(prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
 }
 
 main {
@@ -310,6 +323,10 @@ h5 {
     font-style: italic;
 }
 
+p, li {
+    text-wrap: pretty;
+}
+
 .back {
     font-family: $base-font-family;
 }
@@ -498,6 +515,10 @@ main header.post-header {
     h1,h2,h3,h4,h5,h6 {
         padding-top: 0px;
     }
+}
+
+.p-name {
+    text-wrap: balance;
 }
 
 div.featured_content_list {
