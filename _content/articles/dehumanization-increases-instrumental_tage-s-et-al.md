@@ -10,6 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1bbMK9ul0BSPZAhjIsCjmC4S7XaPXq_jA/view?usp=drivesdk"
 tags: # 2 stars as the conclusion is so obvious
   - perception
+  - groups
   - violence
   - extremism
 year: 2017

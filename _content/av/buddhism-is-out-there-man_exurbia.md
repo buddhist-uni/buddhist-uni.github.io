@@ -4,8 +4,8 @@ authors:
   - "Exurb1a "
 subcat: film
 external_url: "https://youtu.be/i2wLyhgeYsw"
-course: buddhism
 tags:
+  - buddhism
   - west
 year: 2021
 month: jun
