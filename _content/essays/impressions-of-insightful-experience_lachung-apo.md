@@ -2,7 +2,7 @@
 title: "Impressions of an Insightful Experience"
 authors:
   - "Lachung Apo"
-translator: Adam Pearcey
+translator: "Adam Pearcey"
 subcat: poetry
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lachung-apo/aho-ye"
 drive_links:
@@ -15,7 +15,6 @@ year: 2018
 pages: 1
 ---
 
-> The tongue of rational argument, which clings to reality and delusion,
-Is severed by the Great Perfection.
+> Aho ye! When looking at these outer appearances...
 
 A translation of Lachung Apo's short poem on attaining Great Perfection (Dzogchen/Mahamudra).
