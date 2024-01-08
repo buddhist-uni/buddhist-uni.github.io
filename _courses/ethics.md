@@ -359,6 +359,9 @@ Speaking of uncomfortable!
 {% include content_blurb.html category="essays" slug="out-of-the-ordinary_dhammika" %}
 - The story of a pioneering, transgender Buddhist, and a word on how Buddhism's attitude towards transgenderism differs from that of the monotheistic religions.
 
+{% include content_blurb.html category="articles" slug="being-different-with-dignity_cheng-fung-kei" %}
+- Buddhists are mostly accepting of homosexuality: especially in comparison to other religions.
+
 {% include content_blurb.html category="booklets" slug="buddhism-and-sex_walshe" %}
 - A refreshingly humble and non-dogmatic essay on everyone's favorite topic, embodying the spirit of [generous orthodoxy](https://revisionisthistory.com/episodes/09-generous-orthodoxy){:target="_blank" ga-event-value="0.3"}.
 

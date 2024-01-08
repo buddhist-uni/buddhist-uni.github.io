@@ -26,13 +26,6 @@ While this course has been almost-entirely from the Theravada perspective,
 I would like to give the final word to Atiśa Dīpaṃkara.
 " %}
 
-## Lecture
-
-This video is kinda "out there", but I think it serves well as a humorous capstone to the course:
-{% include inline-av-player.html content="buddhism-is-out-there-man_exurbia" %}
-
 ## Homework
 
 Your homework for this module is to take what you've learned and make the world a better place! Wherever and however you can 😊
-
-
