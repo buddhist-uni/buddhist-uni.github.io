@@ -28,6 +28,7 @@ jobs:
             "Gemfile"
             "Gemfile.lock"
             "cssCacheToken.yml"
+            ".gitignore"
           )
           invalid_files=()
           exit_code=0

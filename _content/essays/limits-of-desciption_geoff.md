@@ -13,4 +13,6 @@ year: 2017
 pages: 16
 ---
 
-In this essay, Ṭhānissaro Bhikkhu discusses a debate on "not self" as either a linguistic strategy or as an ontology. Ṭhānissaro Bhikkhu objectively presents his view and the [opposing view of Venerable Bhikkhu Bodhi](/content/excerpts/anatta-as-ontology_bodhi).
+Ṭhānissaro Bhikkhu defends his view that "not self" is a linguistic strategy not an ontology.
+
+This essay is in particular a response to [Venerable Bhikkhu Bodhi's thoughtful critique of this position](/content/excerpts/anatta-as-ontology_bodhi).

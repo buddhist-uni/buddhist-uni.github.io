@@ -12,6 +12,7 @@ _site
 .bundle
 .sass-cache
 .jekyll-cache
+.gcache
 .jekyll-metadata
 .ruby-version
 *.swp

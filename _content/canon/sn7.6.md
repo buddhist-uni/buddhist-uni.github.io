@@ -8,8 +8,9 @@ year: 1998
 course: imagery
 tags:
   - sn
+  - path
   - vipassana
-  - nibbana
+# buddha tag covered by Nyanamoli's *Life*
 status: featured
 pages: 1
 parallels:

@@ -19,6 +19,7 @@ import json
 import re
 from functools import cache
 try:
+  import joblib
   from yaspin import yaspin
   from bs4 import BeautifulSoup
   from google.auth.transport.requests import Request
@@ -27,7 +28,7 @@ try:
   from googleapiclient.discovery import build
   from googleapiclient.http import MediaIoBaseUpload, MediaFileUpload
 except:
-  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib")
+  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib")
   quit(1)
 
 # If modifying these scopes, have to login again.
@@ -42,6 +43,8 @@ FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
+
+disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
 
 def link_to_id(link):
   ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link)?$', link)
@@ -122,10 +125,12 @@ def session():
 def youtube():
     return build('youtube', 'v3', credentials=google_credentials())
 
+@disk_memorizor.cache
 def get_ytvideo_snippet(ytid):
   snippet = youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
   return {k: snippet[k] for k in ['title', 'description', 'tags'] if k in snippet}
 
+@disk_memorizor.cache(cache_validation_callback=joblib.expires_after(days=28))
 def get_subfolders(folderid):
   folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
   childrenFoldersDict = session().files().list(

@@ -238,6 +238,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 We wrap up this, the main, section of our course, with a brief word on the "Radiant Mind" and related perennial topics:
 
+{% include content_blurb.html category="canon" slug="sn1.23" %}
+- A short poem (which inspired the Visuddhimagga) on how the path creates “unentangled” knowledge.
+
 {% include content_blurb.html category="articles" slug="luminous-mind_analayo" %}
   - Bhikkhu Analayo gives a careful, textual study of the supposedly “luminous” nature of the mind in early Buddhism.  Is such a view supported by the early texts or is this a later development?
 
