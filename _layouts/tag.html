@@ -119,9 +119,9 @@ Please be aware that this tag is still under construction and as such is missing
 <ul>{% for pslug in page.parents %}
   {% assign parent = alltags | find: "slug", pslug %}{% unless parent %}{% continue %}{% endunless %}
   {% if parent.illustration %}
-    <a href="{{ parent.url }}"><div class="subtopic-card">{% include taglist-img.html tag=parent %} <span class="subtopic-img-label">{{ parent.title }} »</span></div></a>
+    <li><a href="{{ parent.url }}"><div class="subtopic-card">{% include taglist-img.html tag=parent %} <span class="subtopic-img-label">{{ parent.title }} »</span></div></a></li>
   {% else %}
-    {% capture clink %}<a href="{{ parent.url }}"><i class="fas fa-folder-open"></i> {{ parent.title }}</a>{% endcapture %}
+    {% capture clink %}<li><a href="{{ parent.url }}"><i class="fas fa-folder-open"></i> {{ parent.title }}</a></li>{% endcapture %}
     {% assign unillustrated = unillustrated | push: clink %}
   {% endif %}
 {% endfor %}{% for clink in unillustrated %}{{ clink }}{% endfor %}</ul>

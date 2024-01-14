@@ -90,7 +90,8 @@ class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
     fd = Path(fd)
     super().__init__(fd, content, handler, **kwargs)
-    self.url = f"/content/{self.relative_path.parts[1]}/{fd.stem}"
+    self.category = self.relative_path.parts[1]
+    self.url = f"/content/{self.category}/{fd.stem}"
 
 content = []
 tags = TagCollection()

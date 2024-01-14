@@ -4,6 +4,7 @@ yaspin
 tqdm
 beautifulsoup4
 requests
+regex
 python-slugify
 python-frontmatter
 tqdm
