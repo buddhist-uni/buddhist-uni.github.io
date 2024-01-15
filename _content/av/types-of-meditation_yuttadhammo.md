@@ -14,4 +14,4 @@ month: jun
 minutes: 96
 ---
 
-In this talk, followed by questions and answers, Yuttadhammo explains the different understandings of meditation and their common factors, such as mindfulness and concentration.
+In this talk, followed by questions and answers, Yuttadhammo explains the different categories of meditation and their common factors, such as mindfulness and concentration.

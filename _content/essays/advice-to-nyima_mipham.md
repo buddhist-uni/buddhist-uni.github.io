@@ -16,7 +16,7 @@ publisher: "Lotsawa House"
 pages: 3
 ---
 
-> Leave behind the analogies of foolish minds and modes of speech,
+> Leave behind the analogies of foolish minds and modes of speech,  
 And look instead into the mind for which there can be no analogy.
 
 
