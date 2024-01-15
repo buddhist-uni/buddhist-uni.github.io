@@ -1,6 +1,5 @@
 ---
-title: "Beyond Reasonable Doubt? A Note on Dharmakīrti
-and Scepticism"
+title: "Beyond Reasonable Doubt?: A Note on Dharmakīrti and Scepticism"
 authors:
   - "Vincent Eltschinger"
 external_url: "https://philpapers.org/archive/ELTBRD.pdf"
@@ -9,10 +8,10 @@ drive_links:
 course: epistemology
 tags:
   - scepticism
-  - stoicism
-  - logic
+  - stoicism 
 year: 2020
-booktitle: "Buddhism and Scepticism: Historical, Philosophical, and Comparative Perspectives"
+from_book: buddhism-and-scepticism_hanner
+chapter: 3
 pages: "37--53" 
 ---
 
