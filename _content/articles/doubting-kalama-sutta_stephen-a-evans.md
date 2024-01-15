@@ -9,7 +9,6 @@ course: epistemology
 tags:
   - ethics
   - faith
-
 year: 2007
 month: may
 journal: bsr
