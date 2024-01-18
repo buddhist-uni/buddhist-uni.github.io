@@ -7,12 +7,14 @@ drive_links:
   - "https://drive.google.com/file/d/1GrO0-Iiz75FIchradGLURiEpuCr7Ze2I/view?usp=sharing"
 course: epistemology
 tags:
-  - scepticism
-  - stoicism 
+  - stoicism
+# scepticism and dialogue tags covered by the book
 year: 2020
 from_book: buddhism-and-scepticism_hanner
 chapter: 3
 pages: "37--53" 
 ---
 
-This paper discusses the basic epistemological views of the 6th-century Buddhist philosopher Dharmakīrti. The author shows how Dharmakīrti differs from Mādhyamika philosophers and shares interesting aspects with the Stoics. The paper also covers Dharmakīrti's views on perception, inference, and scriptual authority as means of valid knowledge.
+The 6th-century Buddhist philosopher Dharmakīrti differs from Mādhyamika philosophers but shares some interesting aspects with the Stoics.
+
+The paper also covers Dharmakīrti's views on perception, inference, and scriptual authority as means of valid knowledge.

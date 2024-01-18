@@ -4,7 +4,8 @@ authors:
   - "99 Percent Invisible"
 subcat: podcast
 external_url: "https://99percentinvisible.org/episode/matters-of-time/"
-course: time # perhaps archive, once better versions of these stories are found
+tags:
+  - time
 year: 2021
 month: may
 series: 99pi

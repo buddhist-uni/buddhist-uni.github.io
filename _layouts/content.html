@@ -78,7 +78,7 @@ layout: default
  {%- if page.category == "monographs" -%}
    {% assign pieces = site.content | where: "from_book", page.slug | sort: "pages" | sort: "chapter", "first" %}
    {% if pieces.size > 0 %}<p class="pieces_desc">
-     Excerpts from this book also in the library: <ul>{% for c in pieces %}
+     Part{% if pieces.size > 1 %}s{% endif %} of this book {% if pieces.size > 1 %}are{% else %}is{% endif %} also in the library as: <ul>{% for c in pieces %}
         <li>{% include simple_content.html content=c %}</li>
    {% endfor %}</ul></p>{% endif %}
  {%- endif -%}

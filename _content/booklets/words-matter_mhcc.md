@@ -6,7 +6,7 @@ editor: "Corinne Henderson"
 external_url: "https://mhcc.org.au/wp-content/uploads/2022/10/Recovery-Oriented-Language-Guide-3rd-edition.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1s9iE34zs2f1HLIKadRfWA9HPvq-T5D02/view?usp=drivesdk"
-course: communication
+course: speech
 tags:
   - grief
   - psychology

@@ -9,7 +9,7 @@ illustration_width: 1024
 illustration_center_x: 55%
 illustration_center_y: 70%
 illustration_caption: >-
-  The <i><a href="https://en.wikipedia.org/wiki/Bhavacakra">Bhavacakra</a></i> depicts how Yama (the god of death, aka "Māra")
+  The <i><a href="https://en.wikipedia.org/wiki/Bhavacakra">Bhavacakra</a></i> depicts how Yama (the god of death)
   holds all beings (from heaven to hell) within the "round" of rebirth.
   Only the Buddhas stand outside Saṃsāra pointing the way to Nibbāna, here represented by the moon.
 image: https://illeakyw.sirv.com/Images/banners/mathieu-perrier.jpg
