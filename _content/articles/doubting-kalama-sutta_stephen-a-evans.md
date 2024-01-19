@@ -9,6 +9,7 @@ course: epistemology
 tags:
   - ethics
   - faith
+  - sangha
 year: 2007
 month: may
 journal: bsr
@@ -17,4 +18,4 @@ number: 1
 pages: "91--107"
 ---
 
-This article presents a different take on the Kālāma Sutta. The author suggests that the sutta is specifically about faith in a teacher and transformative practice, over the more common interpretation that the sutta is an early text on Buddhist epistemology.
+This article presents a different take on the Kālāma Sutta [(/content/canon/an3.65)]. The author suggests that the sutta is specifically about faith in a teacher and transformative practice, over the more common interpretation that the sutta is an early text on Buddhist epistemology.
