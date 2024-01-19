@@ -330,7 +330,14 @@ subcat: poetry{extra_fields}"""
   if parallels:
     parallels += "\n"
   print(f"Attempting to upload \"{filename}\" to Google Drive...")
-  filegid = upload_to_google_drive(pdf_file, filename=filename, folder_id=folder_id)
+  author = trans['author_uid'].replace('thanissaro','geoff').replace('-thera','').replace('mills','mills-laurence')
+  filegid = upload_to_google_drive(
+    pdf_file,
+    creator='LibraryUtils.SuttaUploader',
+    custom_properties={'sutta':sutta,'slug':slugfield,'translator':author},
+    filename=filename,
+    folder_id=folder_id,
+  )
   if not filegid:
     print("Failed to upload!")
     quit(1)
@@ -350,7 +357,7 @@ status: featured
   blurb = f"\n\n{blurb}\n<!---->" if blurb else ""
   mdfile.write_text(f"""---
 title: "{title}"
-translator: {trans['author_uid'].replace('thanissaro','geoff').replace('-thera','').replace('mills','mills-laurence')}
+translator: {author}
 slug: "{slugfield}"{extra_fields}
 external_url: "{external_url}"
 {drive_links}:

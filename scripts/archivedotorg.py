@@ -14,15 +14,14 @@ try:
   from tqdm import tqdm, trange
 except:
   print("  pip install tqdm")
-  quit(1)
+  exit(1)
 ARCHIVE_ORG_AUTH_FILE = '~/archive.org.auth'
 
 ARCHIVE_ORG_AUTH_PATH = Path(os.path.expanduser(ARCHIVE_ORG_AUTH_FILE))
 if ARCHIVE_ORG_AUTH_PATH.exists():
   ARCHIVE_ORG_AUTH = ARCHIVE_ORG_AUTH_PATH.read_text().strip()
 else:
-  print(f"Please make a new {ARCHIVE_ORG_AUTH_FILE} text file and put in it the information from https://archive.org/account/s3.php in the following format: \"LOW <accesskey>:<secretkey>\"")
-  quit(1)
+  raise RuntimeError(f"Please make a new {ARCHIVE_ORG_AUTH_FILE} text file and put in it the information from https://archive.org/account/s3.php in the following format: \"LOW <accesskey>:<secretkey>\"")
 
 ARCHIVEID_BLACKLIST = {
   "unehistoiredetou0000na",

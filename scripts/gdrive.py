@@ -4,6 +4,8 @@ import os.path
 from pathlib import Path
 import requests
 import struct
+from datetime import datetime
+from math import floor
 from io import BytesIO
 from strutils import (
   titlecase,
@@ -13,11 +15,16 @@ from strutils import (
   file_info,
   prompt,
   approx_eq,
+  whitespace,
+  yt_url_to_plid_re,
+  yt_url_to_id_re,
 )
 import pdfutils
 import json
 import re
 from functools import cache
+from scrape_utils import extract_simplified_html_for_url
+from archivedotorg import archive_urls
 try:
   import joblib
   from yaspin import yaspin
@@ -27,9 +34,10 @@ try:
   from google_auth_oauthlib.flow import InstalledAppFlow
   from googleapiclient.discovery import build
   from googleapiclient.http import MediaIoBaseUpload, MediaFileUpload
+  from youtube_transcript_api import YouTubeTranscriptApi
 except:
-  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib")
-  quit(1)
+  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api")
+  exit(1)
 
 # If modifying these scopes, have to login again.
 SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/youtube.readonly']
@@ -125,10 +133,31 @@ def session():
 def youtube():
     return build('youtube', 'v3', credentials=google_credentials())
 
-@disk_memorizor.cache
-def get_ytvideo_snippet(ytid):
-  snippet = youtube().videos().list(id=ytid,part="snippet").execute().get("items")[0].get("snippet")
-  return {k: snippet[k] for k in ['title', 'description', 'tags'] if k in snippet}
+def get_ytvideo_snippets(ytids):
+  snippets = []
+  data = youtube().videos().list(id=','.join(ytids),part="snippet,topicDetails").execute().get("items", [])
+  data = {vid['id']: vid for vid in data}
+  for ytid in ytids:
+    vid = data.get(ytid,{})
+    ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails'] if k in vid['snippet']}
+    ret['contentDetails'] = vid.get('contentDetails')
+    snippets.append(ret)
+  return snippets
+
+def get_ytvideo_snippets_for_playlist(plid):
+  deets = youtube().playlistItems().list(
+    playlistId=plid,
+    part='snippet',
+    maxResults=100,
+  ).execute()
+  return [e['snippet'] for e in deets.get("items",[])]
+
+def get_ytplaylist_snippet(plid):
+  deets = youtube().playlists().list(
+    id=plid,
+    part='snippet',
+  ).execute()
+  return deets['items'][0]['snippet']
 
 @disk_memorizor.cache(cache_validation_callback=joblib.expires_after(days=28))
 def get_subfolders(folderid):
@@ -140,9 +169,16 @@ def get_subfolders(folderid):
   ).execute()
   return childrenFoldersDict['files']
 
-def create_doc(filename=None, html=None, rtf=None, folder_id=None):
-  if html and rtf:
-    raise ValueError("Please specify either rtf or html. Not both.")
+def string_to_media(s, mimeType):
+  return MediaIoBaseUpload(
+    BytesIO(bytes(s, 'UTF-8')),
+    mimetype=mimeType,
+    resumable=True,
+  )
+
+def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None):
+  if bool(html) == bool(rtf):
+    raise ValueError("Please specify either rtf OR html.")
   drive_service = session()
   metadata = {'mimeType': 'application/vnd.google-apps.document'}
   media = None
@@ -150,16 +186,24 @@ def create_doc(filename=None, html=None, rtf=None, folder_id=None):
     metadata['name'] = filename
   if folder_id:
     metadata['parents'] = [folder_id]
+  if custom_properties:
+    metadata['properties'] = custom_properties
+  else:
+    metadata['properties'] = dict()
+  if 'createdBy' not in metadata['properties']:
+    metadata['properties']['createdBy'] = creator or 'LibraryUtils'
   if html:
-    media = MediaIoBaseUpload(BytesIO(bytes(html, 'UTF-8')), mimetype='text/html', resumable=True)
+    media = string_to_media(html, 'text/html')
   if rtf:
-    media = MediaIoBaseUpload(BytesIO(bytes(rtf, 'UTF-8')), mimetype='application/rtf', resumable=True)
+    media = string_to_media(rtf, 'application/rtf')
   return _perform_upload(metadata, media)
 
-def upload_to_google_drive(file_path, filename=None, folder_id=None):
+def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None):
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
         file_metadata['parents'] = [folder_id]
+    file_metadata['properties'] = custom_properties or dict()
+    file_metadata['properties']['createdBy'] = creator or 'LibraryUtils'
     media = MediaFileUpload(file_path, resumable=True)
     return _perform_upload(file_metadata, media)
 
@@ -233,6 +277,23 @@ def move_drive_file(file_id, folder_id, previous_parents=None):
     fields='id, parents, name').execute()
   print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
+
+def all_files_matching(query, fields, page_size=30):
+  files = session().files()
+  fields = f"files({fields}),nextPageToken"
+  params = {
+    'q': query,
+    'fields': fields,
+    'pageSize': page_size,
+  }
+  results = files.list(**params).execute()
+  for item in results.get('files', []):
+    yield item
+  while 'nextPageToken' in results:
+    params['pageToken'] = results['nextPageToken']
+    results = files.list(**params).execute()
+    for item in results.get('files', []):
+      yield item
 
 EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
 
@@ -347,8 +408,67 @@ def guess_link_title(url):
   except:
     return ""
 
+def make_link_doc_html(title, link):
+  ret = f"""<h1>{title}</h1><h2><a href="{link}">{link}</a></h2>"""
+  if 'youtu' in link:
+    if 'playlist' in link:
+      ret += make_ytplaylist_summary_html(yt_url_to_plid_re.search(link).groups()[0])
+    else:
+      vid = yt_url_to_id_re.search(link)
+      if vid:
+        ret += make_ytvideo_summary_html(vid.groups()[0])
+  else:
+    contents = extract_simplified_html_for_url(link)
+    if contents:
+      ret += f"<h2>Website Contents Preview (as of {datetime.now().strftime('%Y-%m-%d')})</h2>"
+      ret += contents
+  return ret
+
+def htmlify_ytdesc(description):
+  return description.replace('\n\n', '<br /').replace('\n', '<br />')
+
+def _yt_thumbnail(snippet):
+  if 'high' in snippet['thumbnails']:
+    return snippet['thumbnails']['high']['url']
+  return snippet['thumbnails']['default']['url']
+
+def make_ytvideo_summary_html(vid):
+  snippet = get_ytvideo_snippets([vid])[0]
+  ret = ""
+  if snippet.get('description'):
+    desc = htmlify_ytdesc(snippet['description'])
+    ret += f"""<h2>Video Description (from YouTube)</h2><p>{desc}</p>"""
+  ret += f"""<h2>Thumbnail</h2><p><img src="{_yt_thumbnail(snippet)}" /></p>"""
+  if len(snippet.get('tags',[])) > 0:
+    ret += f"""<h2>Video Tags</h2><p>{snippet['tags']}</p>"""
+  transcript = None
+  try:
+    transcript = YouTubeTranscriptApi.get_transcript(vid)
+  except:
+    pass
+  if transcript:
+    ret += "<h2>Video Subtitles</h2>"
+    for line in transcript:
+      ret += f"""<p><a href="https://youtu.be/{vid}?t={floor(line['start'])}">{floor(line['start']/60)}:{round(line['start']%60):02d}</a> {whitespace.sub(' ', line['text'])}</p>"""
+  return ret
+
+def make_ytplaylist_summary_html(ytplid):
+  ret = ""
+  plsnip = get_ytplaylist_snippet(ytplid)
+  desc = htmlify_ytdesc(plsnip.get('description', ''))
+  if desc:
+    ret += f"""<h2>Description (from YouTube)</h2><p>{desc}</p>"""
+  videos = get_ytvideo_snippets_for_playlist(ytplid)
+  if len(videos) > 0:
+    ret += "<h2>Videos</h2>"
+    for video in videos:
+      ret += f"""<h3>{int(video['position'])+1}. <a href="https://youtu.be/{video['resourceId']['videoId']}">{video['title']}</a></h3>"""
+      ret += f"""<p><img src="{_yt_thumbnail(video)}" /></p>"""
+  return ret
+
 if __name__ == "__main__":
   glink_gens = []
+  urls_to_save = []
   # a list of generator lambdas not direct links
   # so that we can defer doc creation to the end
   while True:
@@ -358,11 +478,31 @@ if __name__ == "__main__":
     if not link_to_id(link):
       if "youtu" in link:
         link = link.split("?si=")[0]
+      else:
+        urls_to_save.append(link)
       title = input_with_prefill("title: ", guess_link_title(link))
-      glink_gens.append(lambda title=title, link=link: DOC_LINK.format(create_doc(title, html=f"""<h2>{title}</h2><a href="{link}">{link}</a>""")))
+      if len(link) > 121:
+        with yaspin(text="Shortening long URL..."):
+          link = requests.get('http://tinyurl.com/api-create.php?url='+link).text
+      glink_gens.append(
+        lambda title=title, link=link: DOC_LINK.format(
+            create_doc(
+              filename=title,
+              html=make_link_doc_html(title, link),
+              custom_properties={
+                "createdBy": "LibraryUtils.LinkSaver",
+                "url": link,
+              },
+            )
+        )
+      )
     else:
       glink_gens.append(lambda r=link: r)
   course = input_with_tab_complete("course: ", get_known_courses())
   folders = get_gfolders_for_course(course)
   for glink_gen in glink_gens:
     move_gfile(glink_gen(), folders)
+  print("Files moved!")
+  if len(urls_to_save) > 0:
+    print("Ensuring URLs are saved to Archive.org...")
+    archive_urls(urls_to_save)

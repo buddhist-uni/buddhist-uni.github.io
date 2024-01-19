@@ -1,4 +1,4 @@
-"""Saves every page across the site to Archive.org's Wayback Machine"""
+#!/bin/python3
 
 import requests
 import xml.etree.ElementTree as XML

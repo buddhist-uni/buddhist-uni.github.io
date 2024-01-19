@@ -48,6 +48,7 @@ MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 
 abnormalchars = re.compile('[^\w\s]')
 sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
 yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
+yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
