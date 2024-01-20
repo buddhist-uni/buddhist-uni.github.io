@@ -7,8 +7,8 @@ subcat: music
 year: 2016
 month: jan
 external_url: "https://songexploder.net/mgmt"
-course: world
 tags:
+  - world
   - communication
   - intellect
   - fame

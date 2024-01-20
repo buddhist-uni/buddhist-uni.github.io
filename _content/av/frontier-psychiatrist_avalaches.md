@@ -4,8 +4,8 @@ authors:
   - "The Avalanches"
 year: 2001
 external_url: "https://youtu.be/qLrnkK2YEcE"
-course: media
 tags:
+  - media
   - intellect
   - psychology
   - aging

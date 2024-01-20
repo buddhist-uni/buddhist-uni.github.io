@@ -5,8 +5,8 @@ authors:
 year: 2015
 month: dec
 external_url: "https://youtu.be/P_SlAzsXa7E"
-course: groups
 tags:
+  - groups
   - lgbt
   - feeling
 subcat: music
