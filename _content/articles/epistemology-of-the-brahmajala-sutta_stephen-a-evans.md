@@ -3,10 +3,11 @@ title: "Epistemology of the Brahmajala Sutta"
 authors:
   - "Stephen A. Evans"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8892"
+drive_links: "https://drive.google.com/file/d/12IPXQcjqip1auvfJnqiHC6qCvBf2jdzb/view?usp=drive_link"
 course: epistemology
 tags:
-  - view
-
+  - ethics
+  - sati
 year: 2009
 month: sep
 journal: bsr
