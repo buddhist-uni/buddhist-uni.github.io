@@ -15,7 +15,7 @@ illustration_caption: >-
   On the table is a large outline of the province along with note paper and various writing implements.
   A woman at the table indicates that she is thoughtfully listening to the woman speaking
   by making eye contact and placing her left hand near her lips.
-  Humans use a large variety of "media" (from cell phones to body language) to coordinate their activities and share their knowledge with each other.
+  Humans use a large variety of "media" (from cell phones to body language) to share their knowledge and feelings with each other.
 image: https://illeakyw.sirv.com/Images/banners/railway_crossing_Kamakura_Japan.jpg
 image_width: 2560
 image_height: 1707

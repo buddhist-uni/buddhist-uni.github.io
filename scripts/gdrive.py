@@ -23,7 +23,6 @@ import pdfutils
 import json
 import re
 from functools import cache
-from scrape_utils import extract_simplified_html_for_url
 from archivedotorg import archive_urls
 try:
   import joblib
@@ -417,11 +416,6 @@ def make_link_doc_html(title, link):
       vid = yt_url_to_id_re.search(link)
       if vid:
         ret += make_ytvideo_summary_html(vid.groups()[0])
-  else:
-    contents = extract_simplified_html_for_url(link)
-    if contents:
-      ret += f"<h2>Website Contents Preview (as of {datetime.now().strftime('%Y-%m-%d')})</h2>"
-      ret += contents
   return ret
 
 def htmlify_ytdesc(description):

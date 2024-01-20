@@ -22,17 +22,15 @@ def regen_link_doc(docid, title=None, link=None):
 if __name__ == '__main__':
   QUERY = " and ".join([
     "mimeType='application/vnd.google-apps.document'",
+    "modifiedTime < '2024-01-19T16:00:00'",
     "trashed=false",
     "'me' in writers",
     "properties has { key='createdBy' and value='LibraryUtils.LinkSaver' }",
   ])
   urls = []
-  for file in gdrive.all_files_matching(QUERY, FIELDS, page_size=2):
-    print(f"Regenerating '{file['name']}'...")
+  for file in gdrive.all_files_matching(QUERY, FIELDS):
+    print(f"Saving '{file['name']}'...")
     link = file['properties']['url']
     regen_link_doc(file['id'], title=file['name'], link=link)
-    if 'youtu' not in link:
-      urls.append(link)
-  print(f"Ensuring all {len(urls)} (non-YT) URLs are saved to Archive.org...")
-  archive_urls(urls)
-
+    if 'youtu' not in link and 'archive.org' not in link:
+      archive_urls([link])
