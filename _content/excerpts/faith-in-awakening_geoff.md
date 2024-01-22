@@ -3,6 +3,7 @@ title: "Faith In Awakening"
 authors:
   - geoff
 external_url: "https://www.dhammatalks.org/books/PurityOfHeart/Section0005.html"
+source_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/faithinawakening.html#:~:text=The%20Buddha%20achieved%20it%20through,your%20own%20potential%20for%20Awakening"
 drive_links:
   - "https://drive.google.com/file/d/1BjYTgn4vfN20U5TZ49-Gf02-P-rnmJdq/view?usp=sharing"
 course: epistemology
@@ -10,6 +11,8 @@ tags:
   - faith
   - psychology
   - empiricism
+  - intellect
+  - west
 year: 2006
 booktitle: "Purity of Heart"
 pages: 10
