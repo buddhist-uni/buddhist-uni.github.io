@@ -97,6 +97,13 @@ content = []
 tags = TagCollection()
 authors = AuthorCollection()
 
+def entry_with_drive_id(gid):
+  for entry in content:
+    for link in entry.get('drive_links', []):
+      if gid in link:
+        return entry
+  return None
+
 def load():
   for contentfolder in root_folder.joinpath('_content').iterdir():
     if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):

@@ -6,11 +6,13 @@ level: 2
 image: https://illeakyw.sirv.com/Images/banners/Town_Square.jpg
 image_height: 833
 image_width: 1280
+big_image: https://upload.wikimedia.org/wikipedia/commons/b/bb/People_on_Old_Town_Square_3.jpg
+big_height: 2224
+big_width: 3416
 image_center_x: 55%
 image_center_y: 50%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:People_on_Old_Town_Square_3.jpg">Tiia Monto</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-illustration: https://illeakyw.sirv.com/Images/tags/Chilbo_picnic.jpg
-use_sirv: true
+illustration: https://buddhistuniversity.net/imgs/tags/tags/Chilbo_picnic.jpg
 illustration_height: 575
 illustration_width: 1024
 illustration_center_x: 47%

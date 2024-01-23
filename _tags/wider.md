@@ -5,11 +5,13 @@ parents: [world]
 image: https://illeakyw.sirv.com/Images/banners/Tanguar_haor.jpg
 image_height: 798
 image_width: 1280
+big_image: https://upload.wikimedia.org/wikipedia/commons/a/a2/Tanguar_haor%2C_Bangladesh_01.jpg
+big_width: 3700
+big_height: 2308
 image_center_x: 70%
 image_center_y: 85%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Tanguar_haor,_Bangladesh_01.jpg">Abdul Momin</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-illustration: https://illeakyw.sirv.com/Images/tags/salt_production.jpg
-use_sirv: true
+illustration: https://buddhistuniversity.net/imgs/tags/tags/salt_production.jpg
 illustration_height: 675
 illustration_width: 1200
 illustration_center_x: 14%

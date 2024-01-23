@@ -6,7 +6,7 @@ import requests
 import struct
 from datetime import datetime
 from math import floor
-from io import BytesIO
+from io import BytesIO, BufferedIOBase
 from strutils import (
   titlecase,
   git_root_folder,
@@ -32,7 +32,12 @@ try:
   from google.oauth2.credentials import Credentials
   from google_auth_oauthlib.flow import InstalledAppFlow
   from googleapiclient.discovery import build
-  from googleapiclient.http import MediaIoBaseUpload, MediaFileUpload
+  from googleapiclient.http import (
+    MediaIoBaseUpload,
+    MediaIoBaseDownload,
+    MediaFileUpload,
+    BatchHttpRequest,
+  )
   from youtube_transcript_api import YouTubeTranscriptApi
 except:
   print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api")
@@ -64,6 +69,12 @@ def get_known_courses():
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
   return list(filter(None, gfolders.keys()))
 
+def add_tracked_folder(slug, public, private, gfolders=None):
+  gfolders = gfolders or json.loads(FOLDERS_DATA_FILE.read_text())
+  gfolders[slug] = {'public': public, 'private': private}
+  FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
+  return gfolders
+
 def get_gfolders_for_course(course):
   """Returns a (public, private) tuple of GIDs"""
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
@@ -73,8 +84,7 @@ def get_gfolders_for_course(course):
     print("Hmmm... I don't know that Google Drive folder! Let's add it:")
     publicurl = input("Public link: ") or None
     privateurl = input("Private link: ") or None
-    gfolders[course] = {"public":publicurl,"private":privateurl}
-    FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
+    gfolders = add_tracked_folder(course, publicurl, privateurl, gfolders=gfolders)
   
   private_folder = folderlink_to_id(gfolders[course]['private'])
   public_folder = folderlink_to_id(gfolders[course]['public'])
@@ -197,6 +207,28 @@ def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None,
     media = string_to_media(rtf, 'application/rtf')
   return _perform_upload(metadata, media)
 
+def get_file_contents(fileid):
+  """Downloads and returns the contents of fileid in a BytesIO buffer"""
+  buffer = BytesIO()
+  download_file(fileid, buffer)
+  return buffer
+  
+def download_file(fileid, destination: Path | str | BufferedIOBase):
+  """Downloads the contents of the file to destination"""
+  if isinstance(destination, BufferedIOBase):
+    buffer = destination
+  else:
+    buffer = open(destination, 'wb')
+  request = session().files().get_media(fileId=fileid)
+  downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
+  yet = False
+  print(f"Downloading {fileid}")
+  while not yet:
+    status, yet = downloader.next_chunk(3)
+    print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
+  if not isinstance(destination, BufferedIOBase):
+    buffer.close()
+
 def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None):
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
@@ -260,7 +292,7 @@ def deref_possible_shortcut(gfid):
     return res["shortcutDetails"]["targetId"]
   return gfid
 
-def move_drive_file(file_id, folder_id, previous_parents=None):
+def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
   service = session()
   if previous_parents is None:
     # pylint: disable=maybe-no-member
@@ -268,16 +300,18 @@ def move_drive_file(file_id, folder_id, previous_parents=None):
     previous_parents = file.get('parents')
   if type(previous_parents) is list:
     previous_parents = ",".join(previous_parents)
-  print(f"Moving {file_id} from [{previous_parents}] to [{folder_id}]...")
+  if verbose:
+    print(f"Moving {file_id} from [{previous_parents}] to [{folder_id}]...")
   file = service.files().update(
     fileId=file_id,
     addParents=folder_id,
     removeParents=previous_parents,
     fields='id, parents, name').execute()
-  print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
+  if verbose:
+    print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
 
-def all_files_matching(query, fields, page_size=30):
+def all_files_matching(query: str, fields: str, page_size=100):
   files = session().files()
   fields = f"files({fields}),nextPageToken"
   params = {
@@ -293,6 +327,27 @@ def all_files_matching(query, fields, page_size=30):
     results = files.list(**params).execute()
     for item in results.get('files', []):
       yield item
+
+def batch_get_files_by_id(IDs: list, fields: str):
+  ret = []
+  if len(IDs) > 100:
+    for i in range(0, len(IDs), 100):
+      ret.extend(batch_get_files_by_id(IDs[i:i+100],fields))
+    return ret
+  def _getter_callback(rid, resp, error):
+    if error:
+      print(f"Warning! Failed to `get` fileId={rid}")
+    else:
+      ret.append(resp)
+  batcher = BatchHttpRequest(
+    callback=_getter_callback,
+    batch_uri="https://www.googleapis.com/batch/drive/v3",
+  )
+  for fid in IDs:
+    request = session().files().get(fileId=fid, fields=fields)
+    batcher.add(request_id=fid, request=request)
+  batcher.execute()
+  return ret
 
 EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
 
@@ -328,7 +383,7 @@ def has_file_already(file_in_question, default="prompt"):
   if file_in_question.suffix == ".pdf":
     print("  Attempting to search by PDF contents...")
     try:
-      text = pdfutils.get_searchable_contents(file_in_question)
+      text = pdfutils.readpdf(file_in_question, max_len=1500, normalize=3)
     except struct.error:
       text = ""
     if len(text) < 16:
