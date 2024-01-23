@@ -4,10 +4,9 @@ status: featured
 year: 2011
 authors: [yuttadhammo]
 external_url: "https://www.digitalpalireader.online/_dprhtml/index.html"
-course: translating-pali
+course: pali-language
 tags:
   - pali-commentaries
-  - pali-canon
   - pali-dictionaries
 base_value: 1
 ---

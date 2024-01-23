@@ -8,6 +8,7 @@ drive_links:
 course: epistemology
 tags:
   - stoicism
+  - yogacara
 # scepticism and dialogue tags covered by the book
 year: 2020
 from_book: buddhism-and-scepticism_hanner

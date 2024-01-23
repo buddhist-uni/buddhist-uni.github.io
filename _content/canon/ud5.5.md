@@ -8,17 +8,16 @@ drive_links:
 course: vinaya-studies
 status: featured
 tags:
-  - pali-canon
-  - sangha
   - ud
 # buddha tag covered by Nyanamoli's *Life*
 # imagery tag covered by Hecker's Similes
 # nibbana covered by *The Island*
 year: 1997
 pages: 3
+parallels:
+  - an8.19
+  - an8.20
 # Partial parallels from SC
-#  - an8.19
-#  - an8.20
 #  - pli-tv-kd19
 #  - t212.7
 #  - t213.6

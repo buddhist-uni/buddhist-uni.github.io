@@ -8,13 +8,13 @@ illustration_width: 1280
 illustration_center_x: 90%
 illustration_center_y: 30%
 illustration_caption: >-
-  Stakeholders met around a simple, lace-covered table in Nueva Loja
-  to discuss the needs of Sucumbíos' children with representatives of
+  A small group of people sit around a simple, lace-covered table
+  to discuss the needs of Sucumbíos' children for
   <a href="https://commons.wikimedia.org/wiki/File:Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg">UNICEF Ecuador in 2018</a>.
-  On the table is a large outline of the province along with note paper and various writing implements.
-  A woman at the table indicates that she is thoughtfully listening to the woman speaking
+  On the table is a map of the province along with note paper and various writing implements.
+  A woman indicates that she is thoughtfully listening to the person speaking
   by making eye contact and placing her left hand near her lips.
-  Humans use a large variety of "media" (from cell phones to body language) to share their knowledge and feelings with each other.
+  Humans use many different "media" to share their knowledge and feelings with each other.
 image: https://illeakyw.sirv.com/Images/banners/railway_crossing_Kamakura_Japan.jpg
 image_width: 2560
 image_height: 1707

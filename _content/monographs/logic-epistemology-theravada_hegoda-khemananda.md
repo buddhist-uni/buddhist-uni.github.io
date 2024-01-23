@@ -10,8 +10,8 @@ translator: "Asangha Tilakaratne"
 course: abhidhamma
 tags:
   - logic
-  - philosophy
-  - anatta
+  - epistemology
+  - dialogue
   - pedagogy
 year: 1993
 olid: OL9149097M
@@ -20,4 +20,4 @@ publisher: "Dharma Paryeshanalaya"
 pages: 120
 ---
 
-This book is a systematic presentation of Buddhist logic using Pāli sources, thus representing the Theravada tradition. The work also includes a thorough Pāli-English glossary.
+A systematic presentation of Theravāda Buddhist logic from the Pāli tradition.

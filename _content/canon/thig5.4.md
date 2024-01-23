@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/11Fxmw8REjmnqJnrWaO12BjNWD9aYpJxH/view?usp=drivesdk"
 course: sati
 tags:
-  - kayanusati
+  - kayagatasati
   - thig
 # thought tag covered by Geoff's "Recognizing" anthology
 year: 2018

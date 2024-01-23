@@ -9,6 +9,7 @@ course: epistemology
 tags:
   - faith
   - sangha
+  - hermeneutics
 year: 2007
 month: may
 journal: bsr

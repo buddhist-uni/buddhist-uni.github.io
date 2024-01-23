@@ -16,7 +16,7 @@ tags:
   - future
   - environment
   - migration
-  - international
+  - international-relations
 year: 2020
 month: may
 journal: pnas

@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1he5oix6PYZ31q1EpaLDS1PjrIjLdmovf/view?usp=drivesdk"
 course: pali-language
 tags:
-  - translation-studies
+  - translation
 year: 1990
 address: Colombo
 booktitle: "Ānanda: Essays in Honour of Ananda W. P. Guruge"

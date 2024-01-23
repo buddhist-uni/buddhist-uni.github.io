@@ -7,7 +7,7 @@ external_url: "https://suttafriends.org/dhammapada/"
 drive_links:
   - "https://drive.google.com/file/d/1JuKQUuyaH1NE9BoxpAj3q9097_g1Z-so/view?usp=drivesdk"
 base_value: 1
-course: translating-dhp
+course: dhp-translation
 tags:
   - dhp
   - buddhism

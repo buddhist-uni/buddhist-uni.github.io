@@ -9,7 +9,7 @@ drive_links:
 course: body
 status: featured
 tags:
-  - kayanusati
+  - kayagatasati
   - vipassana
   - snp
 # thought tag covered by Geoff's "Recognizing" anthology

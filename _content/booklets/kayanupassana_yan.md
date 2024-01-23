@@ -12,7 +12,7 @@ course: navakovada
 tags:
   - sati
   - vipassana
-  - kaya
+  - kayagatasati
 pages: 83
 ---
 
