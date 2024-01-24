@@ -4,7 +4,7 @@ authors:
   - "Carlo Ginzburg"
 translator: "John and Anne Tedeschi"
 status: featured
-external_url: "https://archive.org/details/cheesewormscosmo00ginz/page/n4/mode/1up"
+external_url: "https://archive.org/details/cheesewormscosmo00ginz/mode/1up"
 course: religion
 tags:
   - communication

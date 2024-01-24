@@ -3,7 +3,7 @@ title: "Understanding Comics: The Invisible Art"
 authors:
   - "Scott McCloud"
 status: featured
-external_url: "https://archive.org/details/understandingcom00mccl/page/n2/mode/1up"
+external_url: "https://archive.org/details/understandingcom00mccl/mode/1up"
 course: media
 tags:
   - art

@@ -2,7 +2,7 @@
 title: "A Concise History of Buddhism"
 authors:
   - "Andrew Skilton"
-external_url: "https://archive.org/details/concisehistoryof0000skil_s7h3/mode/1up"
+external_url: "https://archive.org/details/concisehistoryof0000skil/mode/1up"
 course: roots # probably archive once I have a (or several) less "concise" textbook(s)
 tags:
   - buddhism

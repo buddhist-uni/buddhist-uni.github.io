@@ -3,7 +3,7 @@ title: "Ship of Gold in the Deep Blue Sea: The History and Discovery of the Worl
 authors:
   - "Gary Kinder"
 olid: OL701348M
-external_url: "https://archive.org/details/shipofgoldindeep0000kind_w7i9/page/n3/mode/1up"
+external_url: "https://archive.org/details/shipofgoldindeep00kind/mode/1up"
 course: california
 tags:
   - oceans

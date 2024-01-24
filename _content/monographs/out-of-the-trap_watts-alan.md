@@ -3,7 +3,7 @@ title: "Out of the Trap"
 authors:
   - "Alan Watts"
 editor: "Mark Watts"
-external_url: "https://archive.org/details/outoftrapselecte00watt/page/n1/mode/1up"
+external_url: "https://archive.org/details/outoftrapselecte00watt/mode/1up"
 tags:
   - nature
   - west

@@ -11,7 +11,7 @@ year: 1975
 olid: OL26023621M
 oclc: 795707307
 publisher: "Curzon Press"
-external_url: "https://archive.org/details/monksmagicanalys0000bjte/page/n4/mode/1up"
+external_url: "https://archive.org/details/monksmagicrevisi0000terw/mode/1up"
 pages: 312
 ---
 

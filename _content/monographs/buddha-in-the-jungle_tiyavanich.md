@@ -2,7 +2,7 @@
 title: "The Buddha in the Jungle"
 authors:
   - tiyavanich
-external_url: "https://archive.org/details/buddhainjungle0000tiya/page/n4/mode/1up"
+external_url: "https://archive.org/details/buddhainjungle0000tiya/mode/1up"
 course: thai
 tags:
   - theravada

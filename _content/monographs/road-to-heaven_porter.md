@@ -14,7 +14,7 @@ tags:
 oclc: 308207371
 olid: OL1737221M
 status: featured
-external_url: "https://archive.org/details/roadtoheavenenco00port/page/n2/mode/1up"
+external_url: "https://archive.org/details/roadtoheavenenco00port/mode/1up"
 pages: 220
 ---
 

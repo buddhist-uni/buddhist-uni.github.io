@@ -2,7 +2,7 @@
 title: "Citizen: An American Lyric"
 authors:
   - rankine-claudia
-external_url: "https://archive.org/details/citizenamericanl0000rank_m1h9/page/n4/mode/1up"
+external_url: "https://archive.org/details/citizenamericanl0000rank_m1h9/mode/1up"
 olid: OL25632207M
 subcat: poetry
 course: social

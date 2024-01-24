@@ -1,7 +1,7 @@
 ---
 title: "An Introduction to Buddhism: Teachings, History and Practices"
 authors: [harvey]
-external_url: "https://archive.org/details/anintroductiontobuddhismpeterharvey/"
+external_url: "https://archive.org/details/anintroductiontobuddhismteachingshistoryandpracticespeterharvey_366_u/mode/1up"
 publisher: cambridge
 olid: OL21097374M
 year: 2013

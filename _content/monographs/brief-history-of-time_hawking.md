@@ -2,7 +2,7 @@
 title: "A Brief History of Time: From the Big Bang to Black Holes"
 authors:
   - "Stephen Hawking"
-external_url: "https://archive.org/details/isbn_9780307291226/mode/1up"
+external_url: "https://archive.org/details/stephenhawkingsb0000unse/mode/1up"
 course: physics
 tags:
   - science

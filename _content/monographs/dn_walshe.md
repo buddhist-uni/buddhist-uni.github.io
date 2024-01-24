@@ -11,7 +11,7 @@ tags:
   - sutta
 year: 1987
 status: featured
-external_url: "https://archive.org/details/dighanikayalongdiscoursesofthebuddhamauricewalshewisdom_683_z/mode/1up"
+external_url: "https://archive.org/details/dighanikayalongdiscoursesofthebuddhamauricewalshe_4_B/mode/1up"
 publisher: wisdom
 pages: 656
 ---

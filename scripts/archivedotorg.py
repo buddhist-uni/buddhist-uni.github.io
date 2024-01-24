@@ -166,7 +166,11 @@ def openlibrary_edition_to_work_id(editionid):
   except json.decoder.JSONDecodeError:
     print(f"!! WARNING: Failed to get Work ID for {editionid} with message: \"{resp.text}\"!!!")
     return None
-  return data['works'][0]['key'].replace("/works/", "")
+  try:
+    return data['works'][0]['key'].replace("/works/", "")
+  except:
+    print(f"!! WARNING: Edition {editionid} has no Work ID!")
+    return None
 
 def save_url_to_archiveorg(url):
   print(f"Saving {url} to the Wayback Machine now...")

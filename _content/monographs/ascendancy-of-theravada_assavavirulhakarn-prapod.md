@@ -2,7 +2,7 @@
 title: "The Ascendancy of Theravāda Buddhism in Southeast Asia"
 authors:
   - "Prapod Assavavirulhakarn"
-external_url: "https://archive.org/details/ascendancyofther0000prap"
+external_url: "https://archive.org/details/ascendancyofther0000prap/mode/1up"
 course: theravada-roots
 year: 2010
 month: sep
