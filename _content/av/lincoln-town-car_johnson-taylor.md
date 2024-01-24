@@ -20,4 +20,4 @@ minutes: 5
 
 > My grandfather would spell certain words so that the dog couldn’t comprehend...
 
-Note: The poem's epigraph mentions [this photograph](https://artpil.com/wp-content/uploads/2021/11/deana-lawson-ica-trap-car-2016.jpg) 
+Note: The poem's epigraph mentions [this photograph](https://web.archive.org/web/20231126141630/https://artpil.com/wp-content/uploads/2021/11/deana-lawson-ica-trap-car-2016.jpg).

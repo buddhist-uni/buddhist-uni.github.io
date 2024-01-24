@@ -2,7 +2,7 @@
 title: "Resources for Learning Pali"
 authors:
   - "Eisel Mazard"
-external_url: "http://www.pali.pratyeka.org"
+external_url: "https://web.archive.org/web/20120111145741/http://pali.pratyeka.org/"
 base_value: 0.8
 course: pali-language
 tags:

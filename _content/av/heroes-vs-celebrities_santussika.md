@@ -5,7 +5,6 @@ authors:
 subcat: podcast
 editor: "Sol Hanna"
 external_url: "https://youtu.be/DMleA9ntzEA"
-source_url: "https://www.treasuremountain.stream/e/heroes-versus-celebrities-in-the-age-of-social-media-ayya-santussika/"
 drive_links:
   - "https://drive.google.com/file/d/1T7U29hnjhbhtAwvzoVv8GOVdJbL3Iw0b/view?usp=drivesdk"
 course: social

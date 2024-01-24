@@ -22,4 +22,4 @@ pages: 167
 
 A thorough account of love and relationships from a Buddhist perspective.
 
-For a **free** physical copy of this book, contact [the Corporate Body of the Buddha Educational Foundation](https://www.budaedu.org/en/book/).
+For a **free** physical copy of this book, contact [the Corporate Body of the Buddha Educational Foundation](https://www-old.budaedu.org/en/book/).

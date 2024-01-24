@@ -2,7 +2,7 @@
 title: "Instructions to Insight Meditation"
 authors: [mahasi]
 year: 2010
-source_url: "http://www.tathagata.org/sites/default/files/Instructions%20to%20Insight%20meditation%20-%20Mahasi%20Sayadaw.pdf"
+external_url: "https://web.archive.org/web/20240106125218if_/https://www.tathagata.org/sites/default/files/Instructions%20to%20Insight%20meditation%20-%20Mahasi%20Sayadaw.pdf"
 file_links:
   - "exclusive_01/Instructions%20to%20Insight%20meditation%20-%20Mahasi%20Sayadaw.pdf"
 formats: [pdf]
