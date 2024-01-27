@@ -10,8 +10,9 @@ tags:
   - consciousness
   - nibbana
   - vipassana
+  - phenomenology
 year: 2021
-from_book: "Buddhism in Dialogue with Contemporary Societies"
+booktitle: "Buddhism in Dialogue with Contemporary Societies"
 pages: "101--133"
 ---
 
