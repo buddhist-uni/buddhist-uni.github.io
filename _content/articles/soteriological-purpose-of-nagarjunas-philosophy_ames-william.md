@@ -15,7 +15,7 @@ year: 1988
 journal: jiabs
 publisher: "International Association of Buddhist Studies"
 volume: 11
-series: 2
+number: 2
 pages: "7--20"
 ---
 

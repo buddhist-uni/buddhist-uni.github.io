@@ -11,7 +11,7 @@ illustration_caption: >-
   <a href="https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg">This 19th c woodblock by Hanabusa Itchō</a>
   depicts the famous parable from <a href="/content/canon/ud6.4">Ud 6.4</a>
   where the Buddha compared the various religious sectarians to blind men attempting to describe an elephant.
-  Compared to a Buddha who sees, we are each only able to partially grasp the truth.
+  Compared to <a href="/content/canon/an10.21">a Buddha who sees</a>, we are each only able to partially grasp the truth.
 image: https://illeakyw.sirv.com/Images/banners/2020-03-15-bonn-rheinaue-blindenbrunnen-02.jpg
 image_width: 2560
 image_height: 1707
