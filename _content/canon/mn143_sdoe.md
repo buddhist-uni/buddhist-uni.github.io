@@ -3,6 +3,8 @@ title: "MN 143: Advice to Anāthapiṇḍika"
 reader: doering
 translator: bodhi
 external_url: "https://www.suttareadings.net/audio/mn.143.sdoe.mp3"
+formats:
+  - mp3
 drive_links:
   - "https://drive.google.com/file/d/1zGz8W12ZREdrSHHgyYpuFHsDHbyFb9IY/view?usp=drivesdk"
 course: pali-canon

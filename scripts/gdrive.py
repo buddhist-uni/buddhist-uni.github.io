@@ -207,13 +207,13 @@ def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None,
     media = string_to_media(rtf, 'application/rtf')
   return _perform_upload(metadata, media)
 
-def get_file_contents(fileid):
+def get_file_contents(fileid, verbose=True):
   """Downloads and returns the contents of fileid in a BytesIO buffer"""
   buffer = BytesIO()
-  download_file(fileid, buffer)
+  download_file(fileid, buffer, verbose=verbose)
   return buffer
   
-def download_file(fileid, destination: Path | str | BufferedIOBase):
+def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True):
   """Downloads the contents of the file to destination"""
   if isinstance(destination, BufferedIOBase):
     buffer = destination
@@ -222,10 +222,12 @@ def download_file(fileid, destination: Path | str | BufferedIOBase):
   request = session().files().get_media(fileId=fileid)
   downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
   yet = False
-  print(f"Downloading {fileid}")
+  if verbose:
+    print(f"Downloading {fileid}")
   while not yet:
     status, yet = downloader.next_chunk(3)
-    print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
+    if verbose:
+      print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
   if not isinstance(destination, BufferedIOBase):
     buffer.close()
 

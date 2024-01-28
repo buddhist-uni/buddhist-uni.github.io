@@ -92,6 +92,11 @@ class ContentFile(JekyllFile):
     super().__init__(fd, content, handler, **kwargs)
     self.category = self.relative_path.parts[1]
     self.url = f"/content/{self.category}/{fd.stem}"
+    if not self.get('formats'):
+      if self.category == 'av':
+        self.formats = ['mp3']
+      else:
+        self.formats = ['pdf', 'epub']
 
 content = []
 tags = TagCollection()
