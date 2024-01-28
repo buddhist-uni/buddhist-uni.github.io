@@ -1,6 +1,6 @@
 ---
 title: "Communication Studies"
-status: unpublished
+status: published
 parents: [social]
 illustration: https://buddhistuniversity.net/imgs/tags/tags/Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg
 illustration_height: 848

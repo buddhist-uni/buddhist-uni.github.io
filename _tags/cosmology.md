@@ -1,6 +1,6 @@
 ---
 title: "Saṃsāra"
-status: unpublished
+status: published
 parents: [view]
 illustration: https://buddhistuniversity.net/imgs/tags/tags/yama.jpg
 illustration_height: 1367

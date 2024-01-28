@@ -1,6 +1,6 @@
 ---
 title: "Pramāṇa"
-status: unpublished
+status: published
 parents: [view]
 illustration: "https://buddhistuniversity.net/imgs/tags/tags/Blind_monks_examining_an_elephant.jpg"
 illustration_height: 742
@@ -23,4 +23,4 @@ image_center_x: 45%
 image_center_y: 40%
 ---
 
-Epistemology is the study of the nature of truth and what we mortals might do to know it.
+Epistemology is the study of the nature of truth and what we—with our limited faculties and understanding—might do to come to know truth.

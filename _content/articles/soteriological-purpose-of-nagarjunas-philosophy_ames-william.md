@@ -8,7 +8,9 @@ drive_links:
 course: epistemology
 tags:
   - emptiness
-  - nibbana
+  - dialogue
+  - vipassana
+  - madhyamaka
 year: 1988
 journal: jiabs
 publisher: "International Association of Buddhist Studies"

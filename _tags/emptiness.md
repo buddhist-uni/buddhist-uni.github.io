@@ -1,6 +1,6 @@
 ---
 title: "Śūnyatā"
-status: unpublished
+status: published
 parents: [view]
 illustration: "https://buddhistuniversity.net/imgs/tags/tags/Ohara_monkey-moon.jpg"
 illustration_height: 1431
