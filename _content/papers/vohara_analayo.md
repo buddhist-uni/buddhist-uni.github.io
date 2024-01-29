@@ -1,5 +1,5 @@
 ---
-title: "Vohāra"
+title: "Vohāra" (Transactions)
 authors:
  - analayo
 editor: "W. G. Weeraratne"
@@ -16,6 +16,7 @@ drive_links:
 course: epistemology
 tags:
   - speech
+  - language
 ---
 
 A brief summary of the term vohāra, common speech, and in particular its role in Buddhist views of language use. 
