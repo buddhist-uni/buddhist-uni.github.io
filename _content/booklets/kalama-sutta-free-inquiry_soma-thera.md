@@ -2,13 +2,16 @@
 title: "Kālāma Sutta: The Buddha's Charter of Free Inquiry"
 authors:
   - "Soma Thera"
-external_url: "https://www.bps.lk/olib/wh/wh008_Soma_Buddhas-Charter-of-Free-Inquiry.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh008_Soma_Buddhas-Charter-of-Free-Inquiry.html"
 drive_links:
   - "https://drive.google.com/file/d/1PTxGx_8w2seQv5cfYn2N7OZ4a3mIxooc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1dwAY-YcrJMeoVAcBXwYI9BePhbS616fu/view?usp=drivesdk"
+source_url: "https://archive.org/details/kalamasutta0000soma/mode/1up"
 course: epistemology
 tags:
   - karma
   - problems
+  - thought
 year: 1959
 olid: OL50566773M
 oclc: 717885901
