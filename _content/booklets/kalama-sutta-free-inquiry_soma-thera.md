@@ -9,7 +9,6 @@ drive_links:
 source_url: "https://archive.org/details/kalamasutta0000soma/mode/1up"
 course: epistemology
 tags:
-  - karma
   - problems
   - thought
 year: 1959

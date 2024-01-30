@@ -1,5 +1,5 @@
 ---
-title: "Vohāra" (Transactions)
+title: "Vohāra (Transactions)"
 authors:
  - analayo
 editor: "W. G. Weeraratne"
@@ -19,4 +19,4 @@ tags:
   - language
 ---
 
-A brief summary of the term vohāra, common speech, and in particular its role in Buddhist views of language use. 
+A brief summary of the term vohāra, common speech, and in particular its role in Buddhist views of language. 

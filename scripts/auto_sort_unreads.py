@@ -1,29 +1,45 @@
 #!/bin/python3
 
 import argparse
-from math import sqrt
-from typing import Any
-from collections.abc import Mapping
+import math
 from pathlib import Path
 import json
-from typing import Callable, Iterable, Literal, Mapping
+from typing import (
+    Any,
+    Callable,
+    Iterable,
+    Literal,
+    Mapping,
+)
 import regex
 import random
-
 from functools import cache, partial
+
 import numpy as np
 from numpy.typing import ArrayLike
 import gensim.downloader
 from nltk.stem.snowball import SnowballStemmer
 from scipy import sparse
-from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
+from sklearn.feature_extraction.text import (
+    TfidfTransformer,
+    CountVectorizer,
+)
 from sklearn.pipeline import Pipeline
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from sklearn.base import BaseEstimator, ClassifierMixin, TransformerMixin
-from sklearn.utils.validation import check_X_y, check_is_fitted, check_array
+from sklearn.base import (
+    BaseEstimator,
+    ClassifierMixin,
+    TransformerMixin,
+)
+from sklearn.utils.validation import (
+    check_X_y,
+    check_is_fitted,
+    check_array,
+)
 from sklearn.utils.multiclass import unique_labels
+import joblib
 from tqdm import tqdm
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
 from unidecode import unidecode
@@ -33,7 +49,7 @@ from strutils import (
     prompt,
 )
 import website
-import joblib
+from website import ContentFile
 import gdrive
 from pdfutils import readpdf
 
@@ -46,81 +62,23 @@ PUBLIC_FOLDER_FOR_PRIVATE = {
     gdrive.folderlink_to_id(pair['private']): gdrive.folderlink_to_id(pair['public'])
     for pair in DRIVE_FOLDERS.values() if pair['private'] and pair['public']
 }
-
-@cache
-def latent_model():
-    # Use a 50-dimensional topic space trained on en.wikipedia
-    # This model has a number of limitations, especially that it is En only
-    # but, still, reducing the dimensionality to 50 should give us a nice
-    # balance of expressiveness to learn on limited data
-    return gensim.downloader.load("glove-wiki-gigaword-50")
-
-simple_seps = regex.compile('[\W\s_]+')
+SLUG_FOR_PRIVATE_FOLDERID = {
+    gdrive.folderlink_to_id(DRIVE_FOLDERS[slug]['private']): slug
+    for slug in DRIVE_FOLDERS if DRIVE_FOLDERS[slug]['private']
+}
 STOP_WORDS = set(git_root_folder.joinpath('scripts/stop_words.txt').read_text().split('\n'))
 STOP_WORDS.update([w.lower() for w in STOP_WORDS])
-def simple_tokenize(s):
-    ret = simple_seps.split(s)
-    return [w for w in ret if not w.isnumeric() and w not in STOP_WORDS and len(w) > 3]
+stemmer = SnowballStemmer('english')
+STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
 
-def tokenized_website_entries_for_tags(tags: list[str], categories=None) -> dict[str,list[str]]:
-    ret = {}
-    tags = set(tags)
-    for t in tags:
-        ret[t] = []
-        tag = website.tags.get(t)
-        if tag:
-            text = tag.title + " " + tag.content
-            ret[t].append(simple_tokenize(text))
-    for c in website.content:
-        if categories and c.category not in categories:
-            continue
-        text = c.title + ' ' + c.content
-        if c.course in tags:
-            ret[c.course].append(simple_tokenize(text))
-            continue
-        if not c.tags:
-            continue
-        tags_intersection = tags & set(c.tags)
-        if len(tags_intersection) == 1:
-            ret[next(iter(tags_intersection))].append(simple_tokenize(text))
-        # else not sure what to do. Add this title under multiple tags?
-    return ret
-
-def project_into_semantic_space(tokenized_titles_by_tag:dict[str,list[str]]) -> tuple[list,list]:
-    x = []
-    y = []
-    for tag in tokenized_titles_by_tag:
-        for title in tokenized_titles_by_tag[tag]:
-            title_bag = [w.lower() for w in set(title)]
-            try:
-                vector = latent_model().get_mean_vector(title_bag)
-            except ValueError:
-                print("  Warning: Discarding a work with an empty (all-numeric?) title")
-                continue
-            if np.sum(np.square(vector)) == 0:
-                print("  Warning: No embedding found for "+title_bag.__str__()+". Discarding this datapoint!")
-                continue
-            x.append(vector)
-            y.append(tag)
-    return (x, y)
-
-def train_predictor_on_semantic_space(x, y):
-    # For predictions in semantic spaces you want to use
-    # a Support Vector Machine Classifier (or SVC for short)
-    # as these are built to learn regions of vector spaces.
-    # We've using the OvR Multiclass strategy here because:
-    #   - Grouping the "rest" together leverages limited
-    #     data better during training than One vs One Class.
-    #   - It scales better to a large number of classes
-    #   - It's easier to extract multiple class
-    #     predictions (via model.decision_function(x) > 0)
-    #
-    # The theoretical advantage of OVR(SVC) was confirmed
-    #   against kNN, Ridge, and LinearSVC via Cross
-    #   Validation. In tests on our data, SVC variants
-    #   always outperformed other models, with the OVR
-    #   strat slightly outperforming Linear and OVO SVC.
-    return OneVsRestClassifier(SVC(kernel='rbf')).fit(x,y)
+def normalize_text(text: str) -> str:
+    text = unidecode(text).lower()
+    text = (
+        stemmer.stem(word)
+        for word in regex.split(r"[^a-z]+", text)
+        if len(word) >= 4 and word not in STOP_WORDS
+    )
+    return ' '.join(text)
 
 def get_all_trainable_drive_folders() -> dict[str,list[str]]:
     """Returns a dict mapping tag-like slug to the gdrive folder IDs to use for it.
@@ -129,15 +87,10 @@ def get_all_trainable_drive_folders() -> dict[str,list[str]]:
         "buddha" => [<Buddha>, <Unread (Buddha)>, <Archive (Buddha)>]
     There will be ambiguous cases.
     These will be prompted for and the answers cached."""
-    folders_map = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
-    buddhism_folder = gdrive.folderlink_to_id(folders_map['buddhism']['private'])
-    world_folder = gdrive.folderlink_to_id(folders_map['world']['private'])
-    folders_map = {
-        gdrive.folderlink_to_id(folders_map[slug]['private']): slug
-        for slug in folders_map if folders_map[slug]['private']
-    }
-    ret = _get_trainable_drive_folders(buddhism_folder, folders_map, {})
-    return _get_trainable_drive_folders(world_folder, folders_map, ret)
+    buddhism_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['buddhism']['private'])
+    world_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['world']['private'])
+    ret = _get_trainable_drive_folders(buddhism_folder, {})
+    return _get_trainable_drive_folders(world_folder, ret)
 
 ORGANIZATIONAL_SUBFOLDERS_FILE = DATA_DIRECTORY.joinpath('organizational_subfolders.json')
 ORGANIZATIONAL_SUBFOLDERS = []
@@ -148,8 +101,8 @@ IGNORE_SUBFOLDERS = []
 if SUBFOLDERS_IGNORE_FILE.exists():
     IGNORE_SUBFOLDERS = json.loads(SUBFOLDERS_IGNORE_FILE.read_text())
 
-def _get_trainable_drive_folders(this_folder:str, folders_map:dict[str,str], ret:dict[str,list[str]]) -> dict[str,list[str]]:
-    slug = folders_map[this_folder]
+def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> dict[str,list[str]]:
+    slug = SLUG_FOR_PRIVATE_FOLDERID[this_folder]
     ret[slug] = [this_folder]
     subfolders = gdrive.get_subfolders(this_folder)
     for subfolder in subfolders:
@@ -159,13 +112,13 @@ def _get_trainable_drive_folders(this_folder:str, folders_map:dict[str,str], ret
         if 'unread' in name.lower() or 'archive' in name.lower() or subfolder['id'] in ORGANIZATIONAL_SUBFOLDERS:
             ret[slug].append(subfolder['id'])
             continue
-        if subfolder['id'] not in folders_map:
+        if subfolder['id'] not in SLUG_FOR_PRIVATE_FOLDERID:
             print(f"Folder {slug}/\"{subfolder['name']}\" isn't in the hierarchy.")
             new_slug = input("Add it as slug (blank for no): ")
             if new_slug:
                 public_folder = input("Public folder link: ").split('?')[0]
                 gdrive.add_tracked_folder(new_slug, public_folder, gdrive.FOLDER_LINK_PREFIX+subfolder['id'])
-                folders_map[subfolder['id']] = new_slug
+                SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']] = new_slug
             else:
                 if prompt(f"Consider this folder a part of {slug}? (y=merge, n=ignore) "):
                     ORGANIZATIONAL_SUBFOLDERS.append(subfolder['id'])
@@ -176,32 +129,28 @@ def _get_trainable_drive_folders(this_folder:str, folders_map:dict[str,str], ret
                     SUBFOLDERS_IGNORE_FILE.write_text(json.dumps(IGNORE_SUBFOLDERS))
                     ret[slug].append(subfolder['id'])
                 continue
-        ret = _get_trainable_drive_folders(subfolder['id'], folders_map, ret)
+        ret = _get_trainable_drive_folders(subfolder['id'], ret)
     return ret
 
 def get_drive_folder_heirarchy() -> dict[str, dict[str, list[str]]]:
     """returns a mapping from slug to {'ancestors': [], 'children': [], 'descendants': []}"""
-    folders_map = json.loads(gdrive.FOLDERS_DATA_FILE.read_text()) # slug -> private, public
-    root_folder = gdrive.folderlink_to_id(folders_map['root']['private'])
-    folders_map = {
-        gdrive.folderlink_to_id(folders_map[slug]['private']): slug
-        for slug in folders_map if folders_map[slug]['private']
-    }
+    root_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
+    
     drive_map = dict()
-    return _get_drive_folder_heirarchy(root_folder, folders_map, [], drive_map)
+    return _get_drive_folder_heirarchy(root_folder, SLUG_FOR_PRIVATE_FOLDERID, [], drive_map)
 
-def _get_drive_folder_heirarchy(this_folder_id:str, folders_map: dict[str,str], ancestors: list[str], drive_map: dict[str, dict]):
+def _get_drive_folder_heirarchy(this_folder_id:str, ancestors: list[str], drive_map: dict[str, dict]):
     this_folder = {
         'ancestors': ancestors,
         'children': [],
         'descendants': [],
     }
-    drive_map[folders_map[this_folder_id]] = this_folder
-    this_folder_slug = folders_map[this_folder_id]
+    drive_map[SLUG_FOR_PRIVATE_FOLDERID[this_folder_id]] = this_folder
+    this_folder_slug = SLUG_FOR_PRIVATE_FOLDERID[this_folder_id]
     all_children = gdrive.get_subfolders(this_folder_id)
     for child_folder in all_children:
         child_id = child_folder['id']
-        child_slug = folders_map.get(child_id)
+        child_slug = SLUG_FOR_PRIVATE_FOLDERID.get(child_id)
         if not child_slug:
             continue
         this_folder['children'].append(child_slug)
@@ -210,7 +159,6 @@ def _get_drive_folder_heirarchy(this_folder_id:str, folders_map: dict[str,str], 
             drive_map[daddy]['descendants'].append(child_slug)
         drive_map = _get_drive_folder_heirarchy(
             child_id,
-            folders_map,
             ancestors+[this_folder_slug],
             drive_map,
         )
@@ -310,6 +258,7 @@ def _get_trainable_files_in_folder(folderid, verbose):
     return ret + gdrive.batch_get_files_by_id(list(shortcutIds), FILE_FIELDS)
 
 def get_folder_to_tag_mapping(trainable_folders=None):
+    """Given a parent id, what tag does this file belong to?"""
     if not trainable_folders:
         trainable_folders = get_all_trainable_drive_folders()
     return {
@@ -317,17 +266,6 @@ def get_folder_to_tag_mapping(trainable_folders=None):
         for tag in trainable_folders.keys()
         for folder in trainable_folders[tag]
     }
-
-def gfiles_organized_by_tags(trainable_folders=None, trainable_files=None):
-    if not trainable_folders:
-        trainable_folders = get_all_trainable_drive_folders()
-    if not trainable_files:
-        trainable_files = get_all_trainable_files_in_folders(trainable_folders)
-    ret = {tag: [] for tag in trainable_folders.keys()}
-    folder_to_tag = get_folder_to_tag_mapping(trainable_folders=trainable_folders)
-    for file in trainable_files:
-        ret[folder_to_tag[file['parent']]].append(file)
-    return ret
 
 @disk_memorizor.cache(
     cache_validation_callback=joblib.expires_after(days=14),
@@ -360,20 +298,6 @@ def get_trainable_gfiles_from_site():
         ret.append(f)
     return ret
 
-def tokenized_filename(gfile:dict) -> str:
-    name = unidecode(gfile['name']).lower()
-    if gfile['mimeType'] != 'application/vnd.google-apps.shortcut':
-        name = '.'.join(name.split('.')[0:-1])
-    return list({
-        word for word in regex.split(r'[^a-z]+', name)
-        if word not in STOP_WORDS and len(word) > 3
-    })
-
-def tokenized_drive_names_by_tag():
-    ret = gfiles_organized_by_tags()
-    for tag in ret:
-        ret[tag] = list(map(tokenized_filename, ret[tag]))
-    return ret
 
 PDF_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawpdftext')
 if not PDF_TEXT_FOLDER.exists():
@@ -413,37 +337,27 @@ def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_fil
         print(e)
         completenormalizedtextfile.touch() # mark as no data
 
-stemmer = SnowballStemmer('english')
-STEMMED_STOP_WORDS = {stemmer.stem(word.lower()) for word in STOP_WORDS}
-
-def normalize_text(text: str) -> str:
-    text = unidecode(text).lower()
-    text = (
-        stemmer.stem(word)
-        for word in regex.split(r"[^a-z]+", text)
-        if len(word) >= 4 and word not in STOP_WORDS
-    )
-    return ' '.join(text)
-
-def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000):
+def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, folders=None, all_files=None):
     """If sample_size is None, goes from smaller to larger files,
     otherwise a random sample is chosen
     
     If this task is interupted, simply `rm *.incomplete`
     """
-    print("Getting all pdf file ids...")
-    folders = get_all_trainable_drive_folders()
-    all_files = get_all_trainable_files_in_folders(folders)
-    all_files += get_trainable_gfiles_from_site()
+    if not folders:
+        folders = get_all_trainable_drive_folders()
+    if not all_files:
+        all_files = get_all_trainable_files_in_folders(folders)
+        all_files += get_trainable_gfiles_from_site()
     all_files = [
-        file for file in 
-        all_files
-        if file['mimeType'] == 'application/pdf' and
+        file for file in all_files if
+        file['mimeType'] == 'application/pdf' and
         file['size'] <= max_size and
         file['size'] >= min_size and
         (not NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt").exists())
     ]
-    if sample_size:
+    if len(all_files) == 0:
+        return
+    if sample_size and sample_size<len(all_files):
         all_files = random.sample(all_files, sample_size)
     else:
         random.shuffle(all_files)
@@ -452,13 +366,6 @@ def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150
         save_pdf_text_for_drive_file,
         all_files,
         max_workers=parallelism,
-    )
-
-def new_vectorizer():
-    return CountVectorizer(
-        lowercase=False, # already lower()ed by the normalization step above
-        stop_words=[w for w in STEMMED_STOP_WORDS if w], # filter by stems (any added since normalizing)
-        min_df=15,
     )
 
 class DataPoint():
@@ -493,37 +400,111 @@ class DataPoint():
         return self.content_vector
 
 class DataSource:
-    def get_all_datapoints(self) -> list[DataPoint]:
+    def __init__(self) -> None:
+        self.data = []
+        self.folders = get_all_trainable_drive_folders()
+    
+    def load_data(self):
         raise NotImplementedError()
 
-class GoogleDriveFilesDataSource(DataSource):
-    def __init__(self, unread_confidence=0.2) -> None:
+    def get_all_datapoints(self) -> list[DataPoint]:
+        if not self.data:
+           self.load_data()
+        return self.data
+
+    def tags_for_wc(wc: ContentFile) -> list[tuple]:
+        if wc.course in self.folders:
+            tags = [(wc.course, 2.5)]
+        else:
+            tags = []
+        for t in wc.get('tags',[]):
+            if t in self.folders:
+                tags.append((t, 1))
+        return tags
+
+    def add_datapoints(self, title: str, content: str, tags: list[tuple], confidence=1.0, normalize=True):
+        if len(tags) == 0 or not (title or content):
+            return
+        weight = sum([t[1] for t in tags])
+        if weight * confidence <= 0:
+            return
+        weight = confidence / weight
+        if normalize:
+            title = normalize_text(title)
+            content = normalize_text(content)
+        for tag in tags:
+            self.data.append(
+                DataPoint(
+                    title=title,
+                    content=content,
+                    tag=tag[0],
+                    confidence=weight*tag[1],
+                )
+            )
+
+class WebsiteDataSource(DataSource):
+    def __init__(
+        self,
+    ) -> None:
         super().__init__()
+
+    def load_data(self):
+        print("Loading website DataPoints...")
+        for wc in tqdm(website.content):
+            self.add_datapoints(
+                title=wc.title,
+                content=wc.content,
+                tags=self.tags_for_wc(wc),
+            )
+
+class GoogleDriveFilesDataSource(DataSource):
+    def __init__(
+        self,
+        unread_confidence=0.2,
+        use_site_tags=True,
+    ) -> None:
+        super().__init__()
+        self.use_site_tags = use_site_tags
         self.unread_confidence = unread_confidence
 
-    def get_all_datapoints(self) -> list[DataPoint]:
-        folders = get_all_trainable_drive_folders()
-        tag_for_folder = get_folder_to_tag_mapping(trainable_folders=folders)
-        all_files = get_all_trainable_files_in_folders(folders)
-        all_the_data = []
+    def load_data(self):
+        tag_for_folder = get_folder_to_tag_mapping(trainable_folders=self.folders)
+        all_files = get_all_trainable_files_in_folders(self.folders)
+        content_for_gdid = {}
+        if self.use_site_tags:
+            all_files += get_trainable_gfiles_from_site()
+            content_for_gdid = {
+                gdrive.link_to_id(link): content
+                for content in website.content
+                for link in content.get('drive_links',[])
+            }
+        save_all_pdf_texts(
+            folders=self.folders,
+            all_files=all_files,
+            max_size=1000000,
+            parallelism=8,
+        )
         print("Building Google Drive DataPoints...")
         for file in tqdm(all_files):
             content = ''
-            tag = tag_for_folder[file['parent']]
+            if file['id'] in content_for_gdid:
+                wc = content_for_gdid[file['id']]
+                tags = self.tags_for_wc(wc)
+            else:
+                tags = [(tag_for_folder[file['parent']], 1)]
             fp = NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt")
             if fp.exists():
                 content = fp.read_text()
             title = normalize_text(file['name'])
-            if title or content:
-                all_the_data.append(DataPoint(
-                    title=title,
-                    content=content,
-                    tag=tag,
-                    confidence=1.0 \
-                        if folders[tag][0] == file['parent'] \
-                        else self.unread_confidence,
-                ))
-        return all_the_data
+            self.add_datapoints(
+                title,
+                content,
+                tags,
+                confidence=1.0 \
+                    if self.folders[tag][0] == file['parent'] \
+                    else self.unread_confidence,
+                normalize=False,
+            )
 
 """BEGIN SKLEARN CODE"""
 
@@ -543,18 +524,33 @@ class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
         else:
             raise ValueError("The transformer has not been fitted yet.")
 
+class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
+    def __init__(self, label=None):
+        self.label = label
+    def fit(self, X, y=None):
+        if self.label is None and y:
+            self.label = y[0]
+        self.classes_ = [self.label]
+        return self
+    def predict(self, X):
+        return np.full(shape=(X.shape[0],), fill_value=self.label)
 
 class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
     """My custom sklearn classifier for making one step prediction"""
-    def __init__(self, classifierclass=LogisticRegression) -> None:
+    def __init__(
+        self,
+        classifierclass=LogisticRegression,
+        min_df=15,
+    ) -> None:
         super().__init__()
+        self.min_df = min_df
         self.classifierclass = classifierclass
 
     def fit(self, X, y, sample_weight=None):
         X, y = check_X_y(X, y, accept_sparse=True)
         self.classes_ = unique_labels(y)
         self.pipeline_ = Pipeline(steps=[
-            ('filter_rare_words', RemoveSparseFeatures()),
+            ('filter_rare_words', RemoveSparseFeatures(k=self.min_df)),
             ('tfidf', TfidfTransformer()),
             ('classifier', self.classifierclass())
         ])
@@ -571,29 +567,41 @@ class OBUTopicClassifier:
     def __init__(
         self,
         data_sources: list[DataSource],
+        min_df=15, # filter vocab rarer than this
         min_points: int = 50, # tags with less than this many data points will be filtered out
     ) -> None:
         self.data_sources = data_sources
         self.min_points = min_points
+        self.min_df
     
     def train(self):
         """The big main function"""
-        self.load_data()
-        self.count_words()
+        self._load_data()
+        self._count_words()
         self.drive_map = get_drive_folder_heirarchy()
-        # TODO: Train a OBUNodeClassifier for each tag
-        self.classifiers_ = {
-            'root': self.train_node('root'),
-        }
+        to_train = ['root']
+        self.classifiers_ = dict()
+        while len(to_train) > 0:
+          slug = to_train.pop()
+          if slug in self.classifiers_:
+            continue
+          classifier = self.train_node(slug)
+          self.classifiers_[slug] = classifier
+          to_train.extend(list(classifier.classes_))
+        return self
 
-    def load_data(self):
+    def _load_data(self):
         self.all_the_data_ = []
         for datasource in self.data_sources:
             self.all_the_data_.extend(datasource.get_all_datapoints())
     
-    def count_words(self):
+    def _count_words(self):
         print("Counting all the words across the entire dataset...")
-        self.vectorizer_ = new_vectorizer()
+        self.vectorizer_ = CountVectorizer(
+            lowercase=False, # already lowered
+            stop_words=[w for w in STOP_WORDS if w],
+            min_df=self.min_df,
+        )
         X_raw = []
         for datapoint in self.all_the_data_:
             X_raw.append(datapoint.get_normalized_title())
@@ -617,18 +625,20 @@ class OBUTopicClassifier:
             confidence = datapoint.get_confidence()
             if title.nnz > 0:
                 x.append(title)
-                w.append(confidence * sqrt(title.nnz))
+                w.append(confidence * math.log(1+title.nnz))
             if content.nnz > 0:
                 x.append(content)
-                w.append(confidence * sqrt(content.nnz))
+                w.append(confidence * math.log(1+content.nnz))
         return (x, w)
 
-    def train_node(self, tag:str) -> OBUNodeClassifier:
+    def train_node(self, tag:str) -> BaseEstimator:
+        print(f"Training '{tag}' classifier...")
         relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
         X, w = self._training_data_from_datapoints(
             (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
         )
         y = [tag] * len(w)
+        child_count = 0
         for child in self.drive_map[tag]['children']:
             relevant_tags = set([child] + self.drive_map[child]['descendants'])
             child_X, child_w = self._training_data_from_datapoints(
@@ -638,18 +648,36 @@ class OBUTopicClassifier:
             w.extend(child_w)
             if len(child_w) >= self.min_points:
                 y.extend([child] * len(child_w))
+                child_count += 1
             else:
                 y.extend([tag] * len(child_w))
-        node_classifier = OBUNodeClassifier()
+        if child_count > 0:
+            node_classifier = OBUNodeClassifier(min_df=self.min_df)
+        else:
+            node_classifier = ZeroLearningClassifier(label=tag)
         X = sparse.vstack(X)
         return node_classifier.fit(X, y, sample_weight=w)
 
     def predict(self, X, normalized=False) -> ArrayLike:
-        """Given (normalized?) strings, predict the topics"""
+        """Given an array of (normalized?) strings, predict the topics"""
         if not normalized:
             X = list(map(normalize_text, X))
         X = self.vectorizer_.transform(X)
-        return self.classifiers_['root'].predict(X)
+        prev_prediction = ['']*X.shape[0]
+        curr_prediction = ['root']*X.shape[0]
+        predicting = True
+        while predicting:
+            next_prediction = []
+            predicting = False
+            for i in range(X.shape[0]):
+                if prev_prediction[i] == curr_prediction[i]:
+                    next_prediction.append(curr_prediction[i])
+                else:
+                    predicting = True
+                    next_prediction.append(self.classifiers_[curr_prediction[i]].predict(X[i,:])[0])
+            prev_prediction = curr_prediction
+            curr_prediction = next_prediction
+        return curr_prediction
 
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(
@@ -657,4 +685,4 @@ if __name__ == "__main__":
     )
     argument_parser.parse_args()
     # TODO
-    OBUTopicClassifier(data_sources=[GoogleDriveFilesDataSource()]).train()
+    big_classifier = OBUTopicClassifier(data_sources=[GoogleDriveFilesDataSource()]).train()
