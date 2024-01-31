@@ -12,6 +12,7 @@ drive_links:
 course: death # 2.5 stars?
 tags:
   - cosmology
+  - path
 year: 2019
 month: jul
 journal: "Frontiers in Psychology"

@@ -25,3 +25,5 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Shuttle_Enterprise
 ---
 
 Earth and [the primates](https://en.wikipedia.org/wiki/Human) reshaping it.
+
+Secular topics to help you understand and navigate today's world.

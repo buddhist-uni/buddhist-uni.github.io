@@ -8,6 +8,7 @@ external_url: "https://www.pnas.org/content/pnas/107/32/14425.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1008662107"
 drive_links:
   - "https://drive.google.com/file/d/1mtBRPacnBsR8kXlywrURhCqLczaeELCr/view?usp=drivesdk"
+status: featured
 course: communication
 tags:
   - neuroscience

@@ -9,9 +9,13 @@ drive_links:
 course: emptiness
 tags:
   - meditation
+  - karma
+  - epistemology
 year: 2014
 month: jun
 minutes: 96
 ---
+
+> You will never let go of the things you love. So you don't have to worry.
 
 In this talk, followed by questions and answers, Yuttadhammo explains the different categories of meditation and their common factors, such as mindfulness and concentration.

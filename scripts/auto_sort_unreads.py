@@ -4,20 +4,12 @@ import argparse
 import math
 from pathlib import Path
 import json
-from typing import (
-    Any,
-    Callable,
-    Iterable,
-    Literal,
-    Mapping,
-)
 import regex
 import random
-from functools import cache, partial
+import hashlib
 
 import numpy as np
 from numpy.typing import ArrayLike
-import gensim.downloader
 from nltk.stem.snowball import SnowballStemmer
 from scipy import sparse
 from sklearn.feature_extraction.text import (
@@ -25,9 +17,7 @@ from sklearn.feature_extraction.text import (
     CountVectorizer,
 )
 from sklearn.pipeline import Pipeline
-from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
 from sklearn.base import (
     BaseEstimator,
     ClassifierMixin,
@@ -52,10 +42,11 @@ import website
 from website import ContentFile
 import gdrive
 from pdfutils import readpdf
+from epubutils import read_epub
 
 DATA_DIRECTORY = Path('/media/khbh/Data/autosort/')
-
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
+
 website.load()
 DRIVE_FOLDERS = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
 PUBLIC_FOLDER_FOR_PRIVATE = {
@@ -137,7 +128,7 @@ def get_drive_folder_heirarchy() -> dict[str, dict[str, list[str]]]:
     root_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
     
     drive_map = dict()
-    return _get_drive_folder_heirarchy(root_folder, SLUG_FOR_PRIVATE_FOLDERID, [], drive_map)
+    return _get_drive_folder_heirarchy(root_folder, [], drive_map)
 
 def _get_drive_folder_heirarchy(this_folder_id:str, ancestors: list[str], drive_map: dict[str, dict]):
     this_folder = {
@@ -302,33 +293,63 @@ def get_trainable_gfiles_from_site():
 PDF_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawpdftext')
 if not PDF_TEXT_FOLDER.exists():
     PDF_TEXT_FOLDER.mkdir()
+EPUB_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawepubtext')
+if not EPUB_TEXT_FOLDER.exists():
+    EPUB_TEXT_FOLDER.mkdir()
 NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
 if not NORMALIZED_TEXT_FOLDER.exists():
     NORMALIZED_TEXT_FOLDER.mkdir()
 
 def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=50000000):
+    _save_text_for_drive_file(
+        drivefile,
+        overwrite,
+        in_memory_filesize_limit,
+        PDF_TEXT_FOLDER,
+        'pdf',
+        readpdf,
+    )
+
+def save_epub_text_for_drive_file(drivefile: dict, overwrite=False):
+    _save_text_for_drive_file(
+        drivefile,
+        overwrite,
+        0,
+        EPUB_TEXT_FOLDER,
+        'epub',
+        read_epub,
+    )
+
+def _save_text_for_drive_file(
+    drivefile: dict,
+    overwrite: bool,
+    in_memory_filesize_limit: int,
+    text_folder: Path,
+    extension: str,
+    reader_func: callable,
+):
     name = f"{drivefile['id']}.txt"
     incompletenormalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(f"{name}.incomplete")
     completenormalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
-    incompleterawtextfile = PDF_TEXT_FOLDER.joinpath(f"{name}.incomplete")
-    completerawtextfile = PDF_TEXT_FOLDER.joinpath(name)
+    incompleterawtextfile = text_folder.joinpath(f"{name}.incomplete")
+    completerawtextfile = text_folder.joinpath(name)
     if (not overwrite) and completenormalizedtextfile.exists():
         return
     try:
         if not completerawtextfile.exists():
-            name = f"{drivefile['id']}.pdf"
-            incompletepdffile = PDF_TEXT_FOLDER.joinpath(f"{name}.incomplete")
-            completepdffile = PDF_TEXT_FOLDER.joinpath(name)
+            name = f"{drivefile['id']}.{extension}"
+            incomplete_orig_file = text_folder.joinpath(f"{name}.incomplete")
+            complete_orig_file = text_folder.joinpath(name)
             pdffile = None
-            if not completepdffile.exists():
+            if not complete_orig_file.exists():
                 if int(drivefile['size']) < in_memory_filesize_limit:
                     pdffile = gdrive.get_file_contents(drivefile['id'], verbose=False)
                 else:
-                    gdrive.download_file(drivefile['id'], incompletepdffile, verbose=False)
-                    incompletepdffile.rename(completepdffile)
+                    gdrive.download_file(drivefile['id'], incomplete_orig_file, verbose=False)
+                    incomplete_orig_file.rename(complete_orig_file)
             if not pdffile:
-                pdffile = open(completepdffile, 'rb')
-            incompleterawtextfile.write_text(readpdf(pdffile))
+                pdffile = complete_orig_file
+            incompleterawtextfile.write_text(reader_func(pdffile))
             incompleterawtextfile.rename(completerawtextfile)
         incompletenormalizedtextfile.write_text(normalize_text(completerawtextfile.read_text()))
         incompletenormalizedtextfile.replace(completenormalizedtextfile)
@@ -337,7 +358,7 @@ def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_fil
         print(e)
         completenormalizedtextfile.touch() # mark as no data
 
-def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, folders=None, all_files=None):
+def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, folders=None, all_files=None):
     """If sample_size is None, goes from smaller to larger files,
     otherwise a random sample is chosen
     
@@ -350,7 +371,7 @@ def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150
         all_files += get_trainable_gfiles_from_site()
     all_files = [
         file for file in all_files if
-        file['mimeType'] == 'application/pdf' and
+        file['mimeType'] in ['application/pdf', 'application/epub+zip'] and
         file['size'] <= max_size and
         file['size'] >= min_size and
         (not NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt").exists())
@@ -361,12 +382,24 @@ def save_all_pdf_texts(parallelism=6, sample_size=None, min_size=0, max_size=150
         all_files = random.sample(all_files, sample_size)
     else:
         random.shuffle(all_files)
-    print(f"Downloading {len(all_files)} pdfs and extracting their text...")
-    tqdm_process_map(
-        save_pdf_text_for_drive_file,
-        all_files,
-        max_workers=parallelism,
-    )
+    pdf_files = [file for file in all_files if file['mimeType'] == 'application/pdf']
+    epub_files = [file for file in all_files if file['mimeType'] == 'application/epub+zip']
+    del all_files
+    if len(pdf_files) > 0:
+        print(f"Downloading {len(pdf_files)} pdfs and extracting their text...")
+        tqdm_process_map(
+            save_pdf_text_for_drive_file,
+            pdf_files,
+            max_workers=parallelism,
+        )
+    if len(epub_files) > 0:
+        print(f"Downloading {len(epub_files)} epubs and extracting their text...")
+        tqdm_process_map(
+            save_epub_text_for_drive_file,
+            epub_files,
+            max_workers=parallelism,
+        )
+
 
 class DataPoint():
     def __init__(
@@ -412,7 +445,7 @@ class DataSource:
            self.load_data()
         return self.data
 
-    def tags_for_wc(wc: ContentFile) -> list[tuple]:
+    def tags_for_wc(self, wc: ContentFile) -> list[tuple]:
         if wc.course in self.folders:
             tags = [(wc.course, 2.5)]
         else:
@@ -450,6 +483,13 @@ class WebsiteDataSource(DataSource):
 
     def load_data(self):
         print("Loading website DataPoints...")
+        for tag in tqdm(website.tags):
+            self.add_datapoints(
+                title=tag.content + (" " + tag.title) * 4,
+                content='',
+                tags=[tag.slug],
+                confidence=10,
+            )
         for wc in tqdm(website.content):
             self.add_datapoints(
                 title=wc.title,
@@ -462,10 +502,14 @@ class GoogleDriveFilesDataSource(DataSource):
         self,
         unread_confidence=0.2,
         use_site_tags=True,
+        download_threads=6,
+        download_max_size=3000000,
     ) -> None:
         super().__init__()
         self.use_site_tags = use_site_tags
         self.unread_confidence = unread_confidence
+        self.download_max_size = download_max_size
+        self.download_threads = download_threads
 
     def load_data(self):
         tag_for_folder = get_folder_to_tag_mapping(trainable_folders=self.folders)
@@ -478,11 +522,11 @@ class GoogleDriveFilesDataSource(DataSource):
                 for content in website.content
                 for link in content.get('drive_links',[])
             }
-        save_all_pdf_texts(
+        save_all_drive_texts(
             folders=self.folders,
             all_files=all_files,
-            max_size=1000000,
-            parallelism=8,
+            max_size=self.download_max_size,
+            parallelism=self.download_threads,
         )
         print("Building Google Drive DataPoints...")
         for file in tqdm(all_files):
@@ -492,6 +536,8 @@ class GoogleDriveFilesDataSource(DataSource):
                 tags = self.tags_for_wc(wc)
             else:
                 tags = [(tag_for_folder[file['parent']], 1)]
+            if not tags:
+                continue
             fp = NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt")
             if fp.exists():
                 content = fp.read_text()
@@ -501,7 +547,7 @@ class GoogleDriveFilesDataSource(DataSource):
                 content,
                 tags,
                 confidence=1.0 \
-                    if self.folders[tag][0] == file['parent'] \
+                    if self.folders[tags[0][0]][0] == file['parent'] \
                     else self.unread_confidence,
                 normalize=False,
             )
@@ -527,7 +573,7 @@ class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
 class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, label=None):
         self.label = label
-    def fit(self, X, y=None):
+    def fit(self, X, y=None, sample_weight=None):
         if self.label is None and y:
             self.label = y[0]
         self.classes_ = [self.label]
@@ -559,8 +605,35 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
 
     def predict(self, X):
         check_is_fitted(self)
-        X = check_array(X)
+        X = check_array(X, accept_sparse=True)
         return self.pipeline_.predict(X)        
+
+def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> CountVectorizer:
+    hasher = hashlib.md5(usedforsecurity=False)
+    for s in X_raw:
+        hasher.update(s.encode())
+    for s in stop_words:
+        hasher.update(s.encode())
+    hasher.update(str(min_df).encode())
+    hashval = hasher.hexdigest()
+    vocabfile = DATA_DIRECTORY.joinpath('vocab_cache')
+    vocabfile.mkdir(exist_ok=True)
+    vocabfile = vocabfile.joinpath(hashval+'.pkl')
+    if vocabfile.exists():
+        print("  CountVectorizer cache hit")
+        return CountVectorizer(
+            lowercase=False,
+            vocabulary=joblib.load(vocabfile),
+        )
+    print("  CountVectorizer cache miss (loading)...")
+    ret = CountVectorizer(
+        lowercase=False, # already lowered
+        stop_words=stop_words,
+        min_df=min_df,
+    )
+    ret.fit(X_raw)
+    joblib.dump(ret.vocabulary_, vocabfile, compress=2)
+    return ret
 
 class OBUTopicClassifier:
     """Class for bridging my world and the sklearn world"""
@@ -572,12 +645,13 @@ class OBUTopicClassifier:
     ) -> None:
         self.data_sources = data_sources
         self.min_points = min_points
-        self.min_df
+        self.min_df = min_df
     
     def train(self):
         """The big main function"""
         self._load_data()
         self._count_words()
+        print("Making the folder heirarchy...")
         self.drive_map = get_drive_folder_heirarchy()
         to_train = ['root']
         self.classifiers_ = dict()
@@ -594,19 +668,21 @@ class OBUTopicClassifier:
         self.all_the_data_ = []
         for datasource in self.data_sources:
             self.all_the_data_.extend(datasource.get_all_datapoints())
+        print("Sorting the datapoints...")
+        self.all_the_data_.sort(key=lambda a: a.get_normalized_content())
     
     def _count_words(self):
         print("Counting all the words across the entire dataset...")
-        self.vectorizer_ = CountVectorizer(
-            lowercase=False, # already lowered
-            stop_words=[w for w in STOP_WORDS if w],
-            min_df=self.min_df,
-        )
         X_raw = []
         for datapoint in self.all_the_data_:
             X_raw.append(datapoint.get_normalized_title())
             X_raw.append(datapoint.get_normalized_content())
-        X_raw = self.vectorizer_.fit_transform(X_raw)
+        self.vectorizer_ = build_vectorizer(
+            X_raw,
+            sorted([w for w in STOP_WORDS if w]),
+            self.min_df,
+        )
+        X_raw = self.vectorizer_.transform(X_raw)
         for i in range(0, int(X_raw.shape[0]), 2):
             t_v, c_v = X_raw[i:i+2]
             self.all_the_data_[int(i/2)].set_title_vector(t_v)

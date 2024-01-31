@@ -11,6 +11,7 @@ course: modern
 tags:
   - japanese
   - tantric
+  - sangha
   - religion
 year: 2011
 month: may

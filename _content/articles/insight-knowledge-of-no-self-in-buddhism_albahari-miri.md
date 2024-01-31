@@ -5,7 +5,7 @@ authors:
 external_url: "http://hdl.handle.net/2027/spo.3521354.0014.021"
 drive_links:
   - "https://drive.google.com/file/d/1yxdXelnGrfcpxjJNVJ74pJRLVYQnDy55/view?usp=drivesdk"
-course: emptiness
+course: emptiness # solidly three stars
 tags:
   - academic
   - epistemology
