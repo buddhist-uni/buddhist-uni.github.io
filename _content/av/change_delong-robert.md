@@ -7,6 +7,7 @@ month: jan
 external_url: "https://www.youtube.com/watch?v=Ir5BKnyo8gM"
 tags:
   - vipassana
+  - thought
   - problems
 publisher: "Glassnote Records"
 minutes: 4

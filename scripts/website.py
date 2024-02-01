@@ -110,6 +110,8 @@ def entry_with_drive_id(gid):
   return None
 
 def load():
+  if content:
+    return
   for contentfolder in root_folder.joinpath('_content').iterdir():
     if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):
       continue

@@ -48,10 +48,19 @@ import gdrive
 from pdfutils import readpdf
 from epubutils import read_epub
 
-DATA_DIRECTORY = Path('/media/khbh/Data/autosort/')
+CONFIG_FILE = Path.home().joinpath('.auto_sort_unreads_rc.json')
+CONFIG = dict()
+DATA_DIRECTORY = ''
+if CONFIG_FILE.exists():
+    CONFIG = json.loads(CONFIG_FILE.read_text())
+    DATA_DIRECTORY = CONFIG.get('data_directory')
+if not DATA_DIRECTORY:
+    DATA_DIRECTORY = input("Please provide the absolute path to a directory to store all the data in: ")
+    CONFIG['data_directory'] = DATA_DIRECTORY
+    CONFIG_FILE.write_text(json.dumps(CONFIG))
+DATA_DIRECTORY = Path(DATA_DIRECTORY)
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
 
-website.load()
 DRIVE_FOLDERS = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
 PUBLIC_FOLDER_FOR_PRIVATE = {
     gdrive.folderlink_to_id(pair['private']): gdrive.folderlink_to_id(pair['public'])
@@ -65,6 +74,8 @@ STOP_WORDS = set(git_root_folder.joinpath('scripts/stop_words.txt').read_text().
 STOP_WORDS.update([w.lower() for w in STOP_WORDS])
 stemmer = SnowballStemmer('english')
 STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
+
+COURSE_TAG_WEIGHT = 2.5
 
 def normalize_text(text: str) -> str:
     text = unidecode(text).lower()
@@ -168,7 +179,8 @@ TRAINABLE_MIMETYPES = set([
     'application/vnd.google-apps.document',
 ])
 
-def get_all_trainable_files_in_folders(trainable_folders, verbose=False) -> list[dict]:
+@cache
+def get_all_trainable_files_in_folders(verbose=False) -> list[dict]:
     """Cached list of PDFs in folders (follows file links)
 
     Args:
@@ -177,6 +189,7 @@ def get_all_trainable_files_in_folders(trainable_folders, verbose=False) -> list
     Returns: a list of Google Drive JSON objects
     """
     ret = []
+    trainable_folders = get_all_trainable_drive_folders()
     if isinstance(trainable_folders, dict):
         if isinstance(next(iter(trainable_folders.values())), list):
             trainable_folders = [item for sublist in trainable_folders.values() for item in sublist]
@@ -254,10 +267,9 @@ def _get_trainable_files_in_folder(folderid, verbose):
         print(f"  Had to load {len(shortcutIds)} targets individually")
     return ret + gdrive.batch_get_files_by_id(list(shortcutIds), FILE_FIELDS)
 
-def get_folder_to_tag_mapping(trainable_folders=None):
+def get_folder_to_tag_mapping():
     """Given a parent id, what tag does this file belong to?"""
-    if not trainable_folders:
-        trainable_folders = get_all_trainable_drive_folders()
+    trainable_folders = get_all_trainable_drive_folders()
     return {
         folder: tag
         for tag in trainable_folders.keys()
@@ -269,7 +281,8 @@ def get_folder_to_tag_mapping(trainable_folders=None):
     verbose=0,
 )
 def get_trainable_gfiles_from_site():
-    exclude = get_all_trainable_files_in_folders(get_all_trainable_drive_folders())
+    exclude = get_all_trainable_files_in_folders()
+    website.load()
     exclude = {f['id'] for f in exclude}
     additionals = []
     for content in website.content:
@@ -295,8 +308,10 @@ def get_trainable_gfiles_from_site():
         ret.append(f)
     return ret
 
-def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_folder:dict=None):
+def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_folder:dict=None) -> dict[str, list[tuple[str,float|int]]]:
+    """The eponomous ids are the keys of the returned dict, the values are the tag tuples as needed by the YouTubeDataSource"""
     ret = dict() # mapping id to tags
+    website.load()
     for content in website.content:
         if not (content.external_url and 'youtu' in content.external_url):
             continue
@@ -308,9 +323,9 @@ def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_
         ytid = ytid.groups()[0]
         tags = []
         if content.course:
-            tags.append(content.course)
+            tags.append((content.course, COURSE_TAG_WEIGHT))
         if content.tags:
-            tags.extend(content.tags)
+            tags.extend(((t,1) for t in content.tags))
         if ytid in ret:
             raise RuntimeError("Duplicate YTID Found in website: " + ytid)
         ret[ytid] = tags
@@ -326,8 +341,10 @@ def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_
             if not ytid:
                 continue
             ytid = ytid.groups()[0]
+            if ytid in ret:
+                continue
             tag = tag_for_folder.get(file['parent'])
-            ret[ytid] = [tag]
+            ret[ytid] = [(tag, 1)]
     elif all_the_google_drive_files or tag_for_folder:
         raise ValueError("Please supply both files and tagmap to extract YTIDs")
     return ret
@@ -373,14 +390,18 @@ def flatten_youtube_transcript(transcript:list[dict]):
     ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
     return regex.sub(r'\[.{0,35}\]', '', ret)
 
-def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
+def flatten_youtube_metadata(video_data: dict) -> str:
     ret = (video_data['title'] + ' ') * 3
     if video_data.get('description'):
-        ret += ' ' + video_data['description']
+        ret += video_data['description'] + ' '
     if video_data.get('tags'):
-        ret += ' ' + ' '.join(video_data['tags']*5)
+        ret += ' '.join(video_data['tags']*5) + ' '
+    return ret
+
+def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
+    ret = flatten_youtube_metadata(video_data)
     if video_data.get('transcript'):
-        ret += ' ' + flatten_youtube_transcript(video_data['transcript'])
+        ret += flatten_youtube_transcript(video_data['transcript'])
     return normalize_text(ret)
 
 PDF_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawpdftext')
@@ -451,16 +472,14 @@ def _save_text_for_drive_file(
         print(e)
         completenormalizedtextfile.touch() # mark as no data
 
-def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, folders=None, all_files=None):
+def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, all_files=None):
     """If sample_size is None, goes from smaller to larger files,
     otherwise a random sample is chosen
     
     If this task is interupted, simply `rm *.incomplete`
     """
-    if not folders:
-        folders = get_all_trainable_drive_folders()
     if not all_files:
-        all_files = get_all_trainable_files_in_folders(folders)
+        all_files = get_all_trainable_files_in_folders()
         all_files += get_trainable_gfiles_from_site()
     all_files = [
         file for file in all_files if
@@ -540,7 +559,7 @@ class DataSource:
 
     def tags_for_wc(self, wc: ContentFile) -> list[tuple]:
         if wc.course in self.folders:
-            tags = [(wc.course, 2.5)]
+            tags = [(wc.course, COURSE_TAG_WEIGHT)]
         else:
             tags = []
         for t in wc.get('tags',[]):
@@ -575,7 +594,8 @@ class WebsiteDataSource(DataSource):
         super().__init__()
 
     def load_data(self):
-        print("Loading website DataPoints...")
+        print("Loading website tags...")
+        website.load()
         for tag in tqdm(website.tags):
             self.add_datapoints(
                 title=tag.content + (" " + tag.title) * 4,
@@ -583,12 +603,32 @@ class WebsiteDataSource(DataSource):
                 tags=[(tag.slug, 1)],
                 confidence=10,
             )
+        print("Loading website DataPoints...")
         for wc in tqdm(website.content):
             self.add_datapoints(
                 title=wc.title,
                 content=wc.content,
                 tags=self.tags_for_wc(wc),
             )
+
+class YouTubeDataSource(DataSource):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def load_data(self):
+        ytids = extract_all_youtube_ids(
+            get_all_trainable_files_in_folders(),
+            self.folders
+        )
+        ytvideos = get_ytdata_for_ids(ytids)
+        print("Loading YouTube DataPoints...")
+        for vid in tqdm(ytvideos):
+            self.add_datapoints(
+                title=flatten_youtube_metadata(vid),
+                content=flatten_youtube_transcript(vid['transcript']),
+                tags=ytids[vid['id']],
+            )
+
 
 class GoogleDriveFilesDataSource(DataSource):
     def __init__(
@@ -605,8 +645,9 @@ class GoogleDriveFilesDataSource(DataSource):
         self.download_threads = download_threads
 
     def load_data(self):
-        tag_for_folder = get_folder_to_tag_mapping(trainable_folders=self.folders)
-        all_files = get_all_trainable_files_in_folders(self.folders)
+        website.load()
+        tag_for_folder = get_folder_to_tag_mapping()
+        all_files = get_all_trainable_files_in_folders()
         content_for_gdid = {}
         if self.use_site_tags:
             all_files += get_trainable_gfiles_from_site()
@@ -616,7 +657,6 @@ class GoogleDriveFilesDataSource(DataSource):
                 for link in content.get('drive_links',[])
             }
         save_all_drive_texts(
-            folders=self.folders,
             all_files=all_files,
             max_size=self.download_max_size,
             parallelism=self.download_threads,
@@ -834,6 +874,7 @@ class OBUTopicClassifier:
         # but it proved too slow to train and impossible to parallelize :\
         # GradientBoosting significantly underperformed (as expected)
         # SVC Cross Validation suggested C=0.1 regularization but YT test data disagreed
+        # see a couple hundred lines below for a performance summary against a holdout
         self.base_classifier = base_classifier if base_classifier is not None else LinearSVC(
             dual='auto', # suppress annoying warning hehe
         )
@@ -956,6 +997,7 @@ class OBUTopicClassifier:
 
     def save_as(self, filepath: Path | str):
         """Save only the essential data to a pickle file (.pkl)"""
+        self.vectorizer_.transform([]) # prime the vectorizer in case it hasn't been used yet
         joblib.dump((self.vectorizer_.vocabulary_, self.classifiers_), filepath, compress=3)
 
     @classmethod
@@ -967,11 +1009,13 @@ class OBUTopicClassifier:
 def report_model_score_against_youtube_data(model:OBUTopicClassifier, gdrive_also=True):
     if gdrive_also:
         yt_tags = extract_all_youtube_ids(
-            get_all_trainable_files_in_folders(get_all_trainable_drive_folders()),
+            get_all_trainable_files_in_folders(),
             get_folder_to_tag_mapping(),
         )
     else:
         yt_tags = extract_all_youtube_ids()
+    for k in yt_tags:
+        yt_tags[k] = [t[0] for t in yt_tags[k]]
     video_data = get_ytdata_for_ids([ytid for ytid in yt_tags.keys() if yt_tags[ytid]])
     print(f"Analyzing predictions for {len(video_data)} videos...")
     X_test = [get_normalized_text_for_youtube_vid(vid) for vid in video_data]
@@ -1038,19 +1082,26 @@ def report_model_score_against_youtube_data(model:OBUTopicClassifier, gdrive_als
 
 # As of Feb 1, 2024, the LinearSVC Classifier performed as follows on the YouTube Holdout:
 # ----------
-# Of the 373 videos, their predicted tags break down as follows:
-# S Tier (first tag match): 29.0%
-# A Tier (tag match):       10.7%
-# B Tier (ancestor match):  13.4%
-# C Tier (any tag ancestor): 5.4%
-# D Tier (direct relative): 11.0%
-# E Tier (no relation):     30.6%
+# Of the 166 videos on the website, their predicted tags break down as follows:
+# S Tier (first tag match): 21.7%
+# A Tier (tag match):       24.7%
+# B Tier (ancestor match):  3.0%
+# C Tier (any tag ancestor):13.9%
+# D Tier (direct relative): 16.3%
+# E Tier (no relation):     20.5%
 
+def import_links(command_args):
+    print("Here is where my code will go for importing links")
 
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(
         prog="python3 auto_sort_unreads.py",
+        description="A set of tools for bulk importing unread items into the appropriate subfolders.",
     )
-    argument_parser.parse_args()
-    # TODO
-    
+    command_group = argument_parser.add_subparsers(required=True, dest='command')
+
+    links_subparser = command_group.add_parser('import_links')
+    links_subparser.set_defaults(func=import_links)
+
+    command_args = argument_parser.parse_args()
+    command_args.func(command_args)
