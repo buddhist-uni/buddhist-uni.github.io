@@ -3,6 +3,7 @@ Also
 April
 August
 Been
+Channel
 content
 Course
 courses
@@ -15,6 +16,7 @@ February
 Film
 Friday
 From
+Full
 Have
 http
 https
@@ -22,14 +24,18 @@ January
 July
 June
 Lecture
+Like
 March
 Monday
+Movie
 November
 October
 Part
+Patreon
 Saturday
 September
 Some
+Subscribe
 Subtitles
 Sunday
 tags
@@ -51,3 +57,4 @@ What
 Which
 will
 With
+YouTube

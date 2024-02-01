@@ -7,6 +7,8 @@ import json
 import regex
 import random
 import hashlib
+from functools import cache
+from textwrap import dedent
 
 import numpy as np
 from numpy.typing import ArrayLike
@@ -18,11 +20,13 @@ from sklearn.feature_extraction.text import (
 )
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
 from sklearn.base import (
     BaseEstimator,
     ClassifierMixin,
     TransformerMixin,
 )
+from sklearn.base import clone as sklearn_clone
 from sklearn.utils.validation import (
     check_X_y,
     check_is_fitted,
@@ -30,7 +34,7 @@ from sklearn.utils.validation import (
 )
 from sklearn.utils.multiclass import unique_labels
 import joblib
-from tqdm import tqdm
+from tqdm import tqdm, trange
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
 from unidecode import unidecode
 
@@ -71,6 +75,7 @@ def normalize_text(text: str) -> str:
     )
     return ' '.join(text)
 
+@cache
 def get_all_trainable_drive_folders() -> dict[str,list[str]]:
     """Returns a dict mapping tag-like slug to the gdrive folder IDs to use for it.
     
@@ -123,6 +128,7 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
         ret = _get_trainable_drive_folders(subfolder['id'], ret)
     return ret
 
+@cache
 def get_drive_folder_heirarchy() -> dict[str, dict[str, list[str]]]:
     """returns a mapping from slug to {'ancestors': [], 'children': [], 'descendants': []}"""
     root_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
@@ -289,6 +295,93 @@ def get_trainable_gfiles_from_site():
         ret.append(f)
     return ret
 
+def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_folder:dict=None):
+    ret = dict() # mapping id to tags
+    for content in website.content:
+        if not (content.external_url and 'youtu' in content.external_url):
+            continue
+        if 'list' in content.external_url:
+            continue # TODO handle playlistst?
+        ytid = gdrive.yt_url_to_id_re.search(content.external_url)
+        if not ytid:
+            continue
+        ytid = ytid.groups()[0]
+        tags = []
+        if content.course:
+            tags.append(content.course)
+        if content.tags:
+            tags.extend(content.tags)
+        if ytid in ret:
+            raise RuntimeError("Duplicate YTID Found in website: " + ytid)
+        ret[ytid] = tags
+    if all_the_google_drive_files and tag_for_folder:
+        for file in all_the_google_drive_files:
+            props = file.get('properties')
+            if not props:
+                continue
+            url = props.get('url')
+            if not url:
+                continue
+            ytid = gdrive.yt_url_to_id_re.search(url)
+            if not ytid:
+                continue
+            ytid = ytid.groups()[0]
+            tag = tag_for_folder.get(file['parent'])
+            ret[ytid] = [tag]
+    elif all_the_google_drive_files or tag_for_folder:
+        raise ValueError("Please supply both files and tagmap to extract YTIDs")
+    return ret
+
+YOUTUBE_DATA_FOLDER = DATA_DIRECTORY.joinpath('youtube_metadata')
+if not YOUTUBE_DATA_FOLDER.exists():
+    YOUTUBE_DATA_FOLDER.mkdir()
+
+def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
+    ids_to_fetch = []
+    ret = []
+    for ytid in youtube_ids:
+        cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{ytid}.json")
+        if cachefile.exists():
+            ret.append(json.loads(cachefile.read_text()))
+        else:
+            ids_to_fetch.append(ytid)
+    if ids_to_fetch:
+        print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
+        snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
+        transcripts, _ = gdrive.YouTubeTranscriptApi.get_transcripts(
+            ids_to_fetch, continue_after_error=True)
+        if len(snippets) != len(ids_to_fetch):
+            raise ValueError("Didn't get all the snippets?")
+        for vid in snippets:
+            if transcripts.get(vid['id']):
+                vid['transcript'] = transcripts[vid['id']]
+            else:
+                vid['transcript'] = {}
+            cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{vid['id']}.json")
+            cachefile.write_text(json.dumps(vid))
+            ret.append(vid)
+    return ret
+
+YT_STOP_LINES = set([
+    '',
+    'foreign',
+    'cheers',
+    '[Music]',
+])
+def flatten_youtube_transcript(transcript:list[dict]):
+    """Note: does not normalize!"""
+    ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
+    return regex.sub(r'\[.{0,35}\]', '', ret)
+
+def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
+    ret = (video_data['title'] + ' ') * 3
+    if video_data.get('description'):
+        ret += ' ' + video_data['description']
+    if video_data.get('tags'):
+        ret += ' ' + ' '.join(video_data['tags']*5)
+    if video_data.get('transcript'):
+        ret += ' ' + flatten_youtube_transcript(video_data['transcript'])
+    return normalize_text(ret)
 
 PDF_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawpdftext')
 if not PDF_TEXT_FOLDER.exists():
@@ -487,7 +580,7 @@ class WebsiteDataSource(DataSource):
             self.add_datapoints(
                 title=tag.content + (" " + tag.title) * 4,
                 content='',
-                tags=[tag.slug],
+                tags=[(tag.slug, 1)],
                 confidence=10,
             )
         for wc in tqdm(website.content):
@@ -573,98 +666,200 @@ class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
 class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, label=None):
         self.label = label
+        self.classes_ = []
     def fit(self, X, y=None, sample_weight=None):
-        if self.label is None and y:
+        if self.label is None and len(y) > 0:
             self.label = y[0]
-        self.classes_ = [self.label]
+            self.classes_ = [self.label]
         return self
     def predict(self, X):
         return np.full(shape=(X.shape[0],), fill_value=self.label)
+    def explain_yourself(self, *args):
+        return f"I'm a leaf node that always predicts '{self.label}'"
+    
+def explain_logit(c: LogisticRegression, vocabulary: ArrayLike):
+    ret = ''
+    for i in range(len(c.classes_) if len(c.classes_) > 2 else 1):
+        ret += f" {c.classes_[i]}:\n"
+        coefs = c.coef_[i]
+        indexes = np.argsort(coefs)[::-1][:5]
+        coefs = coefs[indexes]
+        terms = vocabulary[indexes]
+        ret += f"   The most indicative terms within this folder are:\n"
+        for j in range(5):
+            ret += f"     {terms[j]} - {coefs[j]}\n"
+        ret += f"   And the most anti-indicative terms for this folder were:\n"
+        indexes = np.argsort(c.coef_[i])[:5]
+        coefs = c.coef_[i][indexes]
+        terms = vocabulary[indexes]
+        for j in range(5):
+            ret += f"     {terms[j]} - {coefs[j]}\n"
+    return ret
 
 class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
-    """My custom sklearn classifier for making one step prediction"""
+    """
+    My custom sklearn classifier for making one step prediction
+    
+    It takes a base_classifier instance (Logit by default)
+    and wraps it in a Pipeline that also does whatever last-minute
+    feature selection and normalization we need.
+    """
     def __init__(
         self,
-        classifierclass=LogisticRegression,
+        base_classifier:BaseEstimator=None,
         min_df=15,
     ) -> None:
         super().__init__()
         self.min_df = min_df
-        self.classifierclass = classifierclass
+        if isinstance(base_classifier, BaseEstimator):
+            self.base_classifier = sklearn_clone(base_classifier)
+        else:
+            self.base_classifier = LogisticRegression(max_iter=300)
 
     def fit(self, X, y, sample_weight=None):
         X, y = check_X_y(X, y, accept_sparse=True)
         self.classes_ = unique_labels(y)
+        self.N_ = len(y)
         self.pipeline_ = Pipeline(steps=[
             ('filter_rare_words', RemoveSparseFeatures(k=self.min_df)),
             ('tfidf', TfidfTransformer()),
-            ('classifier', self.classifierclass())
+            ('classifier', self.base_classifier)
         ])
         self.pipeline_.fit(X, y, classifier__sample_weight=sample_weight)
         return self
+    def explain_yourself(self, vocabulary: ArrayLike):
+        ret = f"I'm a NodeClassifier trained on {self.N_} points\n"
+        word_mask = self.pipeline_.steps[0][1]
+        ret += f"I filter the features from {word_mask.num_features_in} words to {word_mask.num_features_out}\n"
+        word_mask = word_mask.sparse_mask
+        vocabulary = vocabulary[word_mask]
+        classifier = self.pipeline_.steps[2][1]
+        ret += f"I then predict one of {self.classes_} using {classifier}\n"
+        if isinstance(classifier, LogisticRegression):
+            ret += explain_logit(classifier, vocabulary)
+        return ret
 
     def predict(self, X):
         check_is_fitted(self)
         X = check_array(X, accept_sparse=True)
         return self.pipeline_.predict(X)        
 
-def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> CountVectorizer:
+class TqdmCountVectorizer(CountVectorizer):
+    def _count_vocab(self, raw_documents, fixed_vocab):
+        return super()._count_vocab(
+            tqdm(raw_documents),
+            fixed_vocab,
+        )
+
+def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tuple[CountVectorizer, ArrayLike]:
+    print("  Hashing the input data...")
     hasher = hashlib.md5(usedforsecurity=False)
-    for s in X_raw:
-        hasher.update(s.encode())
-    for s in stop_words:
+    for s in tqdm(X_raw + stop_words):
         hasher.update(s.encode())
     hasher.update(str(min_df).encode())
     hashval = hasher.hexdigest()
     vocabfile = DATA_DIRECTORY.joinpath('vocab_cache')
     vocabfile.mkdir(exist_ok=True)
-    vocabfile = vocabfile.joinpath(hashval+'.pkl')
+    X_file = vocabfile.joinpath(hashval+'.X_raw.pkl')
+    vocabfile = vocabfile.joinpath(hashval+'.vocab.pkl')
     if vocabfile.exists():
         print("  CountVectorizer cache hit")
-        return CountVectorizer(
+        vocab = joblib.load(vocabfile)
+        ret = CountVectorizer(
             lowercase=False,
-            vocabulary=joblib.load(vocabfile),
+            vocabulary=vocab,
         )
+        if X_file.exists():
+            return (ret, joblib.load(X_file))
+        print("  But transform miss :/ (Loading...)")
+        procer = TqdmCountVectorizer(
+            lowercase=False,
+            vocabulary=vocab,
+        )
+        X_raw = procer.transform(X_raw)
+        joblib.dump(X_raw, X_file, compress=4)
+        return (ret, X_raw)
     print("  CountVectorizer cache miss (loading)...")
-    ret = CountVectorizer(
+    ret = TqdmCountVectorizer(
         lowercase=False, # already lowered
         stop_words=stop_words,
         min_df=min_df,
     )
-    ret.fit(X_raw)
+    X_raw = ret.fit_transform(X_raw)
+    print("  Computed. Saving to disk...")
     joblib.dump(ret.vocabulary_, vocabfile, compress=2)
-    return ret
+    joblib.dump(X_raw, X_file, compress=4)
+    return (
+        CountVectorizer(lowercase=False, vocabulary=ret.vocabulary_),
+        X_raw,
+    )
 
 class OBUTopicClassifier:
-    """Class for bridging my world and the sklearn world"""
+    """
+    Given a list of DataSources, learns a mapping from arbitrary strings to topic slugs.
+    This is useful for automatically sorting unseen items into appropriate Unread folders.
+
+    Example
+    -------
+    big_classifier = OBUTopicClassifier(WebsiteDataSource())
+    big_classifier.train()
+    big_classifier.predict(['Introduction to Buddhism', 'How to Meditate: A Guide to Peace'])
+    # should return ^ ['buddhism', 'meditation']
+    """
     def __init__(
         self,
-        data_sources: list[DataSource],
+        data_sources: list[DataSource] = None,
         min_df=15, # filter vocab rarer than this
         min_points: int = 50, # tags with less than this many data points will be filtered out
+        max_depth: int = 10, # tags at this level will be considered leaf nodes
+        base_classifier: BaseEstimator = None,
+        # fill both these to skip training
+        classifiers: dict[str, OBUNodeClassifier | ZeroLearningClassifier] = None,
+        vocabulary = None,
     ) -> None:
         self.data_sources = data_sources
         self.min_points = min_points
         self.min_df = min_df
+        self.max_depth = max_depth
+        if (not vocabulary) != (not classifiers):
+            raise ValueError("To short-circuit training, load both vocabulary and the classifiers")
+        self.classifiers_ = classifiers
+        if vocabulary:
+            self.vectorizer_ = CountVectorizer(lowercase=False, vocabulary=vocabulary)
+        elif not data_sources:
+            raise ValueError("You need to supply a DataSource to train the model")
+        # Two Main options for Classifier here: Logit or SVMs
+        # for LogisticRegression, just set (max_iter=300) and keep the rest default
+        # solver='saga' penalty='elasticnet' l1_ratio=0.5 performed slightly better in CV
+        # but it proved too slow to train and impossible to parallelize :\
+        # GradientBoosting significantly underperformed (as expected)
+        # SVC Cross Validation suggested C=0.1 regularization but YT test data disagreed
+        self.base_classifier = base_classifier if base_classifier is not None else LinearSVC(
+            dual='auto', # suppress annoying warning hehe
+        )
     
     def train(self):
         """The big main function"""
+        if self.classifiers_:
+            raise RuntimeError("Attempting to train a trained OBUTopicClassifier")
         self._load_data()
         self._count_words()
-        print("Making the folder heirarchy...")
-        self.drive_map = get_drive_folder_heirarchy()
-        to_train = ['root']
+        to_train = [('root', 0)] # (slug, level)
         self.classifiers_ = dict()
         while len(to_train) > 0:
-          slug = to_train.pop()
-          if slug in self.classifiers_:
-            continue
-          classifier = self.train_node(slug)
-          self.classifiers_[slug] = classifier
-          to_train.extend(list(classifier.classes_))
+            slug, cur_level = to_train.pop()
+            if slug in self.classifiers_:
+                continue
+            if cur_level < self.max_depth:
+                classifier = self.train_node(slug)
+            else:
+                classifier = ZeroLearningClassifier(label=slug)
+            self.classifiers_[slug] = classifier
+            to_train.extend([(child_slug, cur_level+1) for child_slug in classifier.classes_])
         return self
 
     def _load_data(self):
+        self.drive_map = get_drive_folder_heirarchy()
         self.all_the_data_ = []
         for datasource in self.data_sources:
             self.all_the_data_.extend(datasource.get_all_datapoints())
@@ -677,13 +872,12 @@ class OBUTopicClassifier:
         for datapoint in self.all_the_data_:
             X_raw.append(datapoint.get_normalized_title())
             X_raw.append(datapoint.get_normalized_content())
-        self.vectorizer_ = build_vectorizer(
+        self.vectorizer_, X_raw = build_vectorizer(
             X_raw,
             sorted([w for w in STOP_WORDS if w]),
             self.min_df,
         )
-        X_raw = self.vectorizer_.transform(X_raw)
-        for i in range(0, int(X_raw.shape[0]), 2):
+        for i in trange(0, int(X_raw.shape[0]), 2):
             t_v, c_v = X_raw[i:i+2]
             self.all_the_data_[int(i/2)].set_title_vector(t_v)
             self.all_the_data_[int(i/2)].set_content_vector(c_v)
@@ -708,7 +902,7 @@ class OBUTopicClassifier:
         return (x, w)
 
     def train_node(self, tag:str) -> BaseEstimator:
-        print(f"Training '{tag}' classifier...")
+        print(f"Building '{tag}' classifier job...")
         relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
         X, w = self._training_data_from_datapoints(
             (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
@@ -728,10 +922,15 @@ class OBUTopicClassifier:
             else:
                 y.extend([tag] * len(child_w))
         if child_count > 0:
-            node_classifier = OBUNodeClassifier(min_df=self.min_df)
+            node_classifier = OBUNodeClassifier(
+                min_df=self.min_df,
+                base_classifier=self.base_classifier,
+            )
         else:
-            node_classifier = ZeroLearningClassifier(label=tag)
+            print("  Nothing to learn")
+            return ZeroLearningClassifier(label=tag)
         X = sparse.vstack(X)
+        print(f"Actually training '{tag}' now...")
         return node_classifier.fit(X, y, sample_weight=w)
 
     def predict(self, X, normalized=False) -> ArrayLike:
@@ -755,10 +954,103 @@ class OBUTopicClassifier:
             curr_prediction = next_prediction
         return curr_prediction
 
+    def save_as(self, filepath: Path | str):
+        """Save only the essential data to a pickle file (.pkl)"""
+        joblib.dump((self.vectorizer_.vocabulary_, self.classifiers_), filepath, compress=3)
+
+    @classmethod
+    def load(cls, filepath: Path | str):
+        """Loads a new instance of OBUTopicClassifier from the given save_as'ed .pkl file"""
+        vocabulary, classifiers = joblib.load(filepath)
+        return cls(vocabulary=vocabulary, classifiers=classifiers)
+
+def report_model_score_against_youtube_data(model:OBUTopicClassifier, gdrive_also=True):
+    if gdrive_also:
+        yt_tags = extract_all_youtube_ids(
+            get_all_trainable_files_in_folders(get_all_trainable_drive_folders()),
+            get_folder_to_tag_mapping(),
+        )
+    else:
+        yt_tags = extract_all_youtube_ids()
+    video_data = get_ytdata_for_ids([ytid for ytid in yt_tags.keys() if yt_tags[ytid]])
+    print(f"Analyzing predictions for {len(video_data)} videos...")
+    X_test = [get_normalized_text_for_youtube_vid(vid) for vid in video_data]
+    y_pred = model.predict(X_test, normalized=True)
+    #  Report on a tier:
+    # S tier = first tag match
+    # A tier = pred in tags
+    # B tier = pred in first tag ancestors
+    # C tier = pred in any tag ancestor
+    # D tier = pred in any tag descendant
+    # E tier = pred unrelated entirely
+    vid_bins = {t: [] for t in 'sabcde'}
+    drive_map = get_drive_folder_heirarchy()
+    for i in range(len(video_data)):
+        vid = video_data[i]
+        pred = y_pred[i]
+        tags = yt_tags[vid['id']]
+        vid['prediction'] = pred
+        vid['tags'] = tags
+        if pred == tags[0]:
+            vid_bins['s'].append(vid)
+            continue
+        if pred in tags:
+            vid_bins['a'].append(vid)
+            continue
+        if pred in drive_map.get(tags[0],{'ancestors': []})['ancestors']:
+            vid_bins['b'].append(vid)
+            continue
+        for tag in tags[1:]:
+            if pred in drive_map.get(tag,{'ancestors':[]})['ancestors']:
+                vid_bins['c'].append(vid)
+                break
+        if vid in vid_bins['c']:
+            continue
+        for tag in tags:
+            if tag not in drive_map:
+                continue
+            if pred in drive_map[tag]['descendants']:
+                vid_bins['d'].append(vid)
+                break
+            p = drive_map[tag]['ancestors'][-1]
+            if pred in drive_map[p]['children']:
+                vid_bins['d'].append(vid)
+                break
+        if vid not in vid_bins['d']:
+            vid_bins['e'].append(vid)
+    s = len(video_data)
+    print(
+        dedent(f"""\
+               Analysis Complete!
+               Of the {s} videos, their predicted tags break down as follows:
+               S Tier (first tag match): {len(vid_bins['s'])/s:2.1%}
+               A Tier (tag match):       {len(vid_bins['a'])/s:2.1%}
+               B Tier (ancestor match):  {len(vid_bins['b'])/s:2.1%}
+               C Tier (any tag ancestor):{len(vid_bins['c'])/s:2.1%}
+               D Tier (direct relative): {len(vid_bins['d'])/s:2.1%}
+               E Tier (no relation):     {len(vid_bins['e'])/s:2.1%}
+                
+               (This Function will return the vid data in bins for you to analyze)
+               """
+        )
+    )
+    return vid_bins
+
+# As of Feb 1, 2024, the LinearSVC Classifier performed as follows on the YouTube Holdout:
+# ----------
+# Of the 373 videos, their predicted tags break down as follows:
+# S Tier (first tag match): 29.0%
+# A Tier (tag match):       10.7%
+# B Tier (ancestor match):  13.4%
+# C Tier (any tag ancestor): 5.4%
+# D Tier (direct relative): 11.0%
+# E Tier (no relation):     30.6%
+
+
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(
         prog="python3 auto_sort_unreads.py",
     )
     argument_parser.parse_args()
     # TODO
-    big_classifier = OBUTopicClassifier(data_sources=[GoogleDriveFilesDataSource()]).train()
+    

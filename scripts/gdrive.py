@@ -144,12 +144,17 @@ def youtube():
 
 def get_ytvideo_snippets(ytids):
   snippets = []
+  if len(ytids) > 50:
+    for i in range(0, len(ytids), 50): # YTAPI has a 50 id limit
+      snippets.extend(get_ytvideo_snippets(ytids[i:i+50]))
+    return snippets
   data = youtube().videos().list(id=','.join(ytids),part="snippet,topicDetails").execute().get("items", [])
   data = {vid['id']: vid for vid in data}
   for ytid in ytids:
     vid = data.get(ytid,{})
     ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails'] if k in vid['snippet']}
     ret['contentDetails'] = vid.get('contentDetails')
+    ret['id'] = ytid
     snippets.append(ret)
   return snippets
 
