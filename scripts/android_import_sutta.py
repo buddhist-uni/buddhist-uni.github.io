@@ -12,6 +12,8 @@ from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archivedotorg import save_url_to_archiveorg
+from pdfutils import readpdf
+from tag_predictor import TagPredictor
 
 yaml_list_prefix = '\n  - '
 NONSC_TRANSLATORS = [{
@@ -232,6 +234,7 @@ def process_pdf(pdf_file):
   print(f"Processing {pdf_file}...")
   pdf_file = Path(pdf_file)
   pages = get_page_count(pdf_file)
+  pdf_text = readpdf(pdf_file)
   guess = guess_id_from_filename(pdf_file.stem)
   while True:
     sutta = input_with_prefill("Sutta ID? ", guess)
@@ -263,12 +266,14 @@ def process_pdf(pdf_file):
     trans = nonsc_trans[transidx]
     external_url = make_nonsc_url(trans['website_data'], book, nums)
     trans = fill_in_trans_data(trans, external_url)
+  blurb = get_blurb_for_suttaid(slug)
+  course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}{': '+eng_name if eng_name else ''}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
-  course = input_with_tab_complete("course: ", get_known_courses())
+  course = input_with_tab_complete("course: ", get_known_courses(), prefill=course)
   folder_id, shortcut_folder = get_gfolders_for_course(course)
   drive_links = "drive_links"
   if shortcut_folder and not folder_id:
@@ -353,7 +358,6 @@ subcat: poetry{extra_fields}"""
     coursefields = f"""course: {course}
 status: featured
 """
-  blurb = get_blurb_for_suttaid(slug)
   blurb = f"\n\n{blurb}\n<!---->" if blurb else ""
   mdfile.write_text(f"""---
 title: "{title}"
