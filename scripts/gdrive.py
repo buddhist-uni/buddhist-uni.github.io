@@ -27,6 +27,7 @@ from archivedotorg import archive_urls
 try:
   import joblib
   from yaspin import yaspin
+  from tqdm import tqdm
   from bs4 import BeautifulSoup
   from google.auth.transport.requests import Request
   from google.oauth2.credentials import Credentials
@@ -227,12 +228,18 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
   request = session().files().get_media(fileId=fileid)
   downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
   yet = False
-  if verbose:
-    print(f"Downloading {fileid}")
+  if verbose is True:
+      print(f"Downloading {fileid}")
+  prev = 0
   while not yet:
     status, yet = downloader.next_chunk(3)
-    if verbose:
-      print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
+    if verbose is not False:
+      if isinstance(verbose, tqdm):
+        cur = status.resumable_progress
+        verbose.update(cur - prev)
+        prev = cur
+      else:
+        print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
   if not isinstance(destination, BufferedIOBase):
     buffer.close()
 
@@ -334,6 +341,60 @@ def all_files_matching(query: str, fields: str, page_size=100):
     results = files.list(**params).execute()
     for item in results.get('files', []):
       yield item
+
+def download_folder_contents_to(gdfid: str, target_directory: Path | str, recursive=False, follow_links=False):
+  target_directory = Path(target_directory)
+  target_directory.mkdir(exist_ok=True)
+  total_size = 0
+  subfolders = []
+  linked_files = []
+  downloads = []
+  for child in all_files_matching(
+    f"'{gdfid}' in parents and trashed=false",
+    "size,name,id,mimeType,shortcutDetails"
+  ):
+    childpath = target_directory.joinpath(child['name'])
+    if child['mimeType'] == 'application/vnd.google-apps.shortcut':
+      if not follow_links:
+        continue
+      if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+        if recursive:
+          subfolders.append((child['shortcutDetails']['targetId'], childpath))
+      else:
+        linked_files.append(child['shortcutDetails']['targetId'])
+      continue
+    if child['mimeType'] == 'application/vnd.google-apps.folder':
+      if not recursive:
+        continue
+      subfolders.append((child['id'], childpath))
+      continue
+    if childpath.exists():
+      continue
+    size = int(child.get('size',0))
+    if not size:
+      continue
+    total_size += size
+    downloads.append((child['id'], childpath))
+  if linked_files:
+    for child in batch_get_files_by_id(linked_files, "size,id,name"):
+      size = int(child.get('size',0))
+      if size:
+        total_size += size
+        downloads.append((child['id'], target_directory.joinpath(child['name'])))
+  if not downloads:
+    print(f"Nothing to download in '{target_directory.name}'")
+  else:
+    print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
+    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
+      for f in downloads:
+        download_file(f[0], f[1], pbar)
+  for cfid, child_path in subfolders:
+    download_folder_contents_to(
+      cfid,
+      child_path,
+      recursive=recursive,
+      follow_links=follow_links,
+    )
 
 def batch_get_files_by_id(IDs: list, fields: str):
   ret = []

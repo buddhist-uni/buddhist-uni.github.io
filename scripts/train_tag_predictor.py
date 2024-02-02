@@ -52,6 +52,7 @@ SLUG_FOR_PRIVATE_FOLDERID = {
     gdrive.folderlink_to_id(DRIVE_FOLDERS[slug]['private']): slug
     for slug in DRIVE_FOLDERS if DRIVE_FOLDERS[slug]['private']
 }
+CANON_TAGS = set(['an', 'sn', 'mn', 'dn', 'dhp', 'snp', 'khp', 'ea', 'da', 'ma', 'sa', 'ud', 'iti', 'snp', 'thag', 'thig'])
 
 COURSE_TAG_WEIGHT = 2.5
 
@@ -388,6 +389,7 @@ if not EPUB_TEXT_FOLDER.exists():
 NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
 if not NORMALIZED_TEXT_FOLDER.exists():
     NORMALIZED_TEXT_FOLDER.mkdir()
+NORMALIZED_DRIVE_FOLDER = '18DYRQaVER_kP_CebfgAJuy3Tdhf5249r'
 
 def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=50000000):
     _save_text_for_drive_file(
@@ -540,6 +542,8 @@ class DataSource:
         else:
             tags = []
         for t in wc.get('tags',[]):
+            if wc.category == "canon" and t in CANON_TAGS:
+                continue
             if t in self.folders:
                 tags.append((t, 1))
         return tags

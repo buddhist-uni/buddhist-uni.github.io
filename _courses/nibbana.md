@@ -78,6 +78,9 @@ In part one of our course, we do a deep analysis of the word "*nibbāna*" and tr
 {% include content_blurb.html category="canon" slug="sn56.21" %}
 - At its core, Nibbāna is the penetrative understanding of the Four Noble Truths which ends the cycle of rebirth.
 
+{% include content_blurb.html category="canon" slug="sn56.23" %}
+- This is also what makes someone "Enlightened"
+
 {% include content_blurb.html category="canon" slug="an3.55" %}
 - The other basic definition of Nibbāna is as the destruction of Greed, Hatred, and Delusion. Here, the Buddha explains how the passing of these states gives us a taste of what the ultimate is like.
 

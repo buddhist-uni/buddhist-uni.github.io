@@ -248,6 +248,8 @@ def process_pdf(pdf_file):
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
+  blurb = get_blurb_for_suttaid(slug)
+  course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
   parsed = sutta_id_re.match(slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
@@ -266,8 +268,6 @@ def process_pdf(pdf_file):
     trans = nonsc_trans[transidx]
     external_url = make_nonsc_url(trans['website_data'], book, nums)
     trans = fill_in_trans_data(trans, external_url)
-  blurb = get_blurb_for_suttaid(slug)
-  course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
   print(f"Going with {trans['author_short']}")
   pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
