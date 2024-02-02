@@ -390,6 +390,12 @@ def flatten_youtube_transcript(transcript:list[dict]):
     ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
     return regex.sub(r'\[.{0,35}\]', '', ret)
 
+def md_stripper(markdown):
+    """Very dumb. Just rm links because other
+    features are rare in my content"""
+    markdown = regex.sub(r'\]\([h/].{5,100}\)', '', markdown)
+    return regex.sub(r'\{.{5,60}\}', '', markdown)
+
 def flatten_youtube_metadata(video_data: dict) -> str:
     ret = (video_data['title'] + ' ') * 3
     if video_data.get('description'):
@@ -520,17 +526,19 @@ class DataPoint():
         content=None,
         tag=None,
         confidence=1.0,
+        title_weight=4,
     ) -> None:
         self.title = title or ''
         self.content = content or ''
         self.tag = tag
         self.confidence = confidence
+        self.title_weight = int(title_weight)
     def get_normalized_title(self):
         return self.title
     def get_normalized_content(self):
         if not self.content:
             return ''
-        return self.content + 4 * (' ' + self.title)
+        return self.content + self.title_weight * (' ' + self.title)
     def get_tag(self):
         return self.tag
     def get_confidence(self):
@@ -567,7 +575,7 @@ class DataSource:
                 tags.append((t, 1))
         return tags
 
-    def add_datapoints(self, title: str, content: str, tags: list[tuple], confidence=1.0, normalize=True):
+    def add_datapoints(self, title: str, content: str, tags: list[tuple], confidence=1.0, normalize=True, title_weight=4):
         if len(tags) == 0 or not (title or content):
             return
         weight = sum([t[1] for t in tags])
@@ -584,6 +592,7 @@ class DataSource:
                     content=content,
                     tag=tag[0],
                     confidence=weight*tag[1],
+                    title_weight=title_weight,
                 )
             )
 
@@ -598,18 +607,24 @@ class WebsiteDataSource(DataSource):
         website.load()
         for tag in tqdm(website.tags):
             self.add_datapoints(
-                title=tag.content + (" " + tag.title) * 4,
-                content='',
+                title=md_stripper(tag.content) + (" " + tag.title) * 4,
                 tags=[(tag.slug, 1)],
                 confidence=10,
             )
         print("Loading website DataPoints...")
         for wc in tqdm(website.content):
-            self.add_datapoints(
-                title=wc.title,
-                content=wc.content,
-                tags=self.tags_for_wc(wc),
-            )
+            content = md_stripper(wc.content)
+            if wc.category == 'canon':
+                self.add_datapoints(
+                    title=wc.title + ' ' + content,
+                    tags=self.tags_for_wc(wc),
+                )
+            else:
+                self.add_datapoints(
+                    title=wc.title,
+                    content=content,
+                    tags=self.tags_for_wc(wc),
+                )
 
 class YouTubeDataSource(DataSource):
     def __init__(self) -> None:
@@ -627,6 +642,7 @@ class YouTubeDataSource(DataSource):
                 title=flatten_youtube_metadata(vid),
                 content=flatten_youtube_transcript(vid['transcript']),
                 tags=ytids[vid['id']],
+                title_weight=1,
             )
 
 
@@ -911,8 +927,12 @@ class OBUTopicClassifier:
         print("Counting all the words across the entire dataset...")
         X_raw = []
         for datapoint in self.all_the_data_:
-            X_raw.append(datapoint.get_normalized_title())
-            X_raw.append(datapoint.get_normalized_content())
+            content = datapoint.get_normalized_title()
+            if content:
+                X_raw.append(content)
+            content = datapoint.get_normalized_content()
+            if content:
+                X_raw.append(content)
         self.vectorizer_, X_raw = build_vectorizer(
             X_raw,
             sorted([w for w in STOP_WORDS if w]),
