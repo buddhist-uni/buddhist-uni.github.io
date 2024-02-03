@@ -224,7 +224,7 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
   if isinstance(destination, BufferedIOBase):
     buffer = destination
   else:
-    buffer = open(destination, 'wb')
+    buffer = open(str(destination)+'.part', 'wb')
   request = session().files().get_media(fileId=fileid)
   downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
   yet = False
@@ -242,6 +242,7 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
         print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
   if not isinstance(destination, BufferedIOBase):
     buffer.close()
+    Path(str(destination)+'.part').rename(destination)
 
 def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None):
     file_metadata = {'name': (filename or os.path.basename(file_path))}
@@ -252,7 +253,7 @@ def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=Non
     media = MediaFileUpload(file_path, resumable=True)
     return _perform_upload(file_metadata, media)
 
-def _perform_upload(file_metadata, media):
+def _perform_upload(file_metadata, media, verbose=True):
     drive_service = session()
     try:
         # Upload the file
@@ -260,11 +261,12 @@ def _perform_upload(file_metadata, media):
         response = None
         while response is None:
             status, response = request.next_chunk()
-            if status:
+            if status and verbose:
                 print("Uploaded %d%%." % int(status.progress() * 100))
+        if verbose:
 
-        print("File uploaded successfully:")
-        print(response)
+          print("File uploaded successfully:")
+          print(response)
         return response['id']
     except Exception as e:
         print("An error occurred: ", str(e))
@@ -349,38 +351,39 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
   subfolders = []
   linked_files = []
   downloads = []
-  for child in all_files_matching(
-    f"'{gdfid}' in parents and trashed=false",
-    "size,name,id,mimeType,shortcutDetails"
-  ):
-    childpath = target_directory.joinpath(child['name'])
-    if child['mimeType'] == 'application/vnd.google-apps.shortcut':
-      if not follow_links:
+  with yaspin(text="Loading file list..."):
+    for child in all_files_matching(
+      f"'{gdfid}' in parents and trashed=false",
+      "size,name,id,mimeType,shortcutDetails"
+    ):
+      childpath = target_directory.joinpath(child['name'])
+      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
+        if not follow_links:
+          continue
+        if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+          if recursive:
+            subfolders.append((child['shortcutDetails']['targetId'], childpath))
+        else:
+          linked_files.append(child['shortcutDetails']['targetId'])
         continue
-      if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
-        if recursive:
-          subfolders.append((child['shortcutDetails']['targetId'], childpath))
-      else:
-        linked_files.append(child['shortcutDetails']['targetId'])
-      continue
-    if child['mimeType'] == 'application/vnd.google-apps.folder':
-      if not recursive:
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        if not recursive:
+          continue
+        subfolders.append((child['id'], childpath))
         continue
-      subfolders.append((child['id'], childpath))
-      continue
-    if childpath.exists():
-      continue
-    size = int(child.get('size',0))
-    if not size:
-      continue
-    total_size += size
-    downloads.append((child['id'], childpath))
-  if linked_files:
-    for child in batch_get_files_by_id(linked_files, "size,id,name"):
+      if childpath.exists():
+        continue
       size = int(child.get('size',0))
-      if size:
-        total_size += size
-        downloads.append((child['id'], target_directory.joinpath(child['name'])))
+      if not size:
+        continue
+      total_size += size
+      downloads.append((child['id'], childpath))
+    if linked_files:
+      for child in batch_get_files_by_id(linked_files, "size,id,name"):
+        size = int(child.get('size',0))
+        if size:
+          total_size += size
+          downloads.append((child['id'], target_directory.joinpath(child['name'])))
   if not downloads:
     print(f"Nothing to download in '{target_directory.name}'")
   else:

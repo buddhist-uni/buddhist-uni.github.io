@@ -35,7 +35,9 @@ from epubutils import read_epub
 import tag_predictor
 from tag_predictor import (
     normalize_text,
+    save_normalized_text,
     DATA_DIRECTORY,
+    NORMALIZED_TEXT_FOLDER,
     MODELS_DIRECTORY,
     TagPredictor,
     STOP_WORDS,
@@ -386,10 +388,6 @@ if not PDF_TEXT_FOLDER.exists():
 EPUB_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawepubtext')
 if not EPUB_TEXT_FOLDER.exists():
     EPUB_TEXT_FOLDER.mkdir()
-NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
-if not NORMALIZED_TEXT_FOLDER.exists():
-    NORMALIZED_TEXT_FOLDER.mkdir()
-NORMALIZED_DRIVE_FOLDER = '18DYRQaVER_kP_CebfgAJuy3Tdhf5249r'
 
 def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=50000000):
     _save_text_for_drive_file(
@@ -420,30 +418,25 @@ def _save_text_for_drive_file(
     reader_func: callable,
 ):
     name = f"{drivefile['id']}.txt"
-    incompletenormalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(f"{name}.incomplete")
-    completenormalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
     incompleterawtextfile = text_folder.joinpath(f"{name}.incomplete")
     completerawtextfile = text_folder.joinpath(name)
     if (not overwrite) and completenormalizedtextfile.exists():
         return
     try:
         if not completerawtextfile.exists():
-            name = f"{drivefile['id']}.{extension}"
-            incomplete_orig_file = text_folder.joinpath(f"{name}.incomplete")
-            complete_orig_file = text_folder.joinpath(name)
+            orig_file = text_folder.joinpath(f"{drivefile['id']}.{extension}")
             pdffile = None
-            if not complete_orig_file.exists():
+            if not orig_file.exists():
                 if int(drivefile['size']) < in_memory_filesize_limit:
                     pdffile = gdrive.get_file_contents(drivefile['id'], verbose=False)
                 else:
-                    gdrive.download_file(drivefile['id'], incomplete_orig_file, verbose=False)
-                    incomplete_orig_file.rename(complete_orig_file)
+                    gdrive.download_file(drivefile['id'], orig_file, verbose=False)
             if not pdffile:
-                pdffile = complete_orig_file
+                pdffile = orig_file
             incompleterawtextfile.write_text(reader_func(pdffile))
             incompleterawtextfile.rename(completerawtextfile)
-        incompletenormalizedtextfile.write_text(normalize_text(completerawtextfile.read_text()))
-        incompletenormalizedtextfile.replace(completenormalizedtextfile)
+        text = normalize_text(completerawtextfile.read_text())
+        save_normalized_text(drivefile['id'], text)
     except Exception as e:
         print(f"Warning! There was an error downloading and parsing {drivefile['id']}:")
         print(e)

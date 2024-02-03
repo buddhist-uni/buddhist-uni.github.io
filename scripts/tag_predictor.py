@@ -50,6 +50,34 @@ STOP_WORDS.update([w.lower() for w in STOP_WORDS])
 stemmer = SnowballStemmer('english')
 STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
 
+NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
+NORMALIZED_DRIVE_FOLDER = '18DYRQaVER_kP_CebfgAJuy3Tdhf5249r'
+
+def save_normalized_text(drive_file_id, normalized_text):
+    name = f"{drive_file_id}.pkl"
+    NORMALIZED_TEXT_FOLDER.mkdir(exist_ok=True)
+    normalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
+    if normalizedtextfile.exists():
+        return
+    import gdrive
+    mimeType = "application/octet-stream"
+    metadata = {
+      "mimeType": mimeType,
+      "name": name,
+      "parents": [NORMALIZED_DRIVE_FOLDER],
+    }
+    buffer = gdrive.BytesIO()
+    joblib.dump(normalized_text, buffer, compress=6)
+    media = gdrive.MediaIoBaseUpload(
+      buffer,
+      mimetype=mimeType,
+      resumable=True,
+    )
+    gdrive._perform_upload(metadata, media, verbose=False)
+    with normalizedtextfile.open("wb") as writer:
+      writer.write(buffer.getbuffer())
+    buffer.close()
+
 def normalize_text(text: str) -> str:
     text = unidecode(text).lower()
     text = (
