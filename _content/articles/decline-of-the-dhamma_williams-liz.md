@@ -11,14 +11,14 @@ volume: 19
 number: 1
 pages: "41--47"
 journal: bsr
-course: karma
+openalexid: W3185097274
+course: monastic
 tags:
-  - gender
-  - time
+  - karma
   - vinaya-pitaka
-  - monastic
-  - decline
 ---
 
-> … laxity within the Sangha is stressed ubiquitously by the Buddha himself as the cause of the decline
+What is it really that leads to the decline of the religion?
+
+> … laxity within the Sangha is stressed ubiquitously by the Buddha himself as the cause of the decline of the Dhamma.
 

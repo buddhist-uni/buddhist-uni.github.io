@@ -1,21 +1,23 @@
 ---
-title: Decoding Two “Miracles” of the Buddha
+title: "Decoding Two “Miracles” of the Buddha"
 authors:
   - "Paisarn Likhitpreechakul"
-external_url: "http://jocbs.org/index.php/jocbs/article/view/20/20"
+external_url: "http://www.jocbs.org/index.php/jocbs/article/view/20/20"
+drive_links:
+  - "https://drive.google.com/file/d/1_ukdVnEtDqDEOpZ-C9BxJRZtMbFJdeph/view?usp=drivesdk"
+course: thought
+status: featured
+tags:
+  - myth
+  - buddha
+  - iddhi
+  - imagery
+year: 2012
+month: sep
 journal: jocbs
 volume: 2
 pages: "209--222"
-year: 2012
-drive_links:
-  - "https://drive.google.com/file/d/1_ukdVnEtDqDEOpZ-C9BxJRZtMbFJdeph/view?usp=drivesdk"
-course: karma
-tags:
-  - iddhi
-  - imagery
+openalexid: W2263589702
 ---
 
-> … at the foundation of Brahmanical philosophies, including Śaivism, is the belief that no karma is incurred if one does not attach oneself to the actions or their results
-
-An analysis of the twin and Aṅgulimāla conversion miracles as mythic refutations of alternate karma theories.
-
+> This article proposes to “decode” the twin miracle and the miracle to convert Aṅgulimāla as coded repudiations of rival karma theories, and to examine their relevance to the modern world.

@@ -6,14 +6,6 @@ with yaspin(text="Initializing..."):
     system_open,
     input_with_tab_complete,
   )
-  import gdrive
-  from pdfutils import readpdf
-  from epubutils import read_epub
-  from tag_predictor import (
-    TagPredictor,
-    normalize_text,
-    save_normalized_text,
-  )
   
   course_list = None
   predictor= None
@@ -25,6 +17,15 @@ for fp in local_files:
   print(f"Opening {fp.name}...")
   system_open(fp)
   with yaspin(text="Processing..."):
+    import gdrive
+    from pdfutils import readpdf
+    from epubutils import read_epub
+    from tag_predictor import (
+      TagPredictor,
+      normalize_text,
+      save_normalized_text,
+    )
+    
     if predictor is None:
       course_list = gdrive.get_known_courses()
       predictor = TagPredictor.load()
