@@ -6,8 +6,7 @@ subcat: course
 external_url: "https://www.youtube.com/@BuddhistLibrarySydney/search?query=theory%20of%20knowledge"
 drive_links:
   - "https://drive.google.com/drive/folders/1IQmEOeL-y5ZN1OCHMnyF8b_76mBfiqLT"
-formats: ["mp3s"]
-status: featured
+formats: ["M4As"]
 course: epistemology
 tags:
   - empiricism
