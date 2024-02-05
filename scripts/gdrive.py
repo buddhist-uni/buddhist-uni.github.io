@@ -327,13 +327,13 @@ def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
     print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
 
-def all_files_matching(query: str, fields: str, page_size=100):
+def all_files_matching(query: str, fields: str):
   files = session().files()
   fields = f"files({fields}),nextPageToken"
   params = {
     'q': query,
     'fields': fields,
-    'pageSize': page_size,
+    'pageSize': 100,
   }
   results = files.list(**params).execute()
   for item in results.get('files', []):

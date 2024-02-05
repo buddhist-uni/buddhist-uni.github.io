@@ -340,7 +340,15 @@ def prompt(question: str, default = None) -> bool:
     return (reply == "y")
 
 def system_open(filepath):
-  os.system(f"open '{filepath}' || termux-open '{filepath}' || vim '{filepath}'")
+  filepath = str(filepath)\
+    .replace(" ", "\\ ")\
+    .replace("$", "\\$")\
+    .replace('"', "\\\"")\
+    .replace("`", "\\`")\
+    .replace("(", "\\(")\
+    .replace(")", "\\)")\
+    .replace("'", "\\\'")
+  os.system(f"open {filepath} || termux-open {filepath} || vim {filepath}")
 
 class FileSyncedSet:
   def __init__(self, fname, normalizer=None):
