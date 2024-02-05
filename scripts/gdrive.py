@@ -4,7 +4,6 @@ import os.path
 from pathlib import Path
 import requests
 import struct
-from datetime import datetime
 from math import floor
 from io import BytesIO, BufferedIOBase
 from strutils import (
@@ -22,6 +21,7 @@ from strutils import (
 import pdfutils
 import json
 import re
+import shutil
 from functools import cache
 from archivedotorg import archive_urls
 try:
@@ -159,13 +159,26 @@ def get_ytvideo_snippets(ytids):
     snippets.append(ret)
   return snippets
 
-def get_ytvideo_snippets_for_playlist(plid):
+def get_ytvideo_snippets_for_playlist(plid, maxResults=None, pageToken=None):
+  if maxResults is None or maxResults < 1:
+    maxResults = 0 # let 0 => Inf
+    page_size = 50 # YouTube API has a max page size of 50
+  else:
+    page_size = min(50, maxResults)
   deets = youtube().playlistItems().list(
     playlistId=plid,
     part='snippet',
-    maxResults=100,
+    maxResults=page_size,
+    pageToken=pageToken,
   ).execute()
-  return [e['snippet'] for e in deets.get("items",[])]
+  ret = [e['snippet'] for e in deets.get("items",[])]
+  if (maxResults == 0 or maxResults > 50) and deets.get("nextPageToken"):
+    ret.extend(get_ytvideo_snippets_for_playlist(
+      plid,
+      maxResults=(maxResults-50),
+      pageToken=deets.get('nextPageToken'),
+    ))
+  return ret
 
 def get_ytplaylist_snippet(plid):
   deets = youtube().playlists().list(
@@ -211,7 +224,7 @@ def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None,
     media = string_to_media(html, 'text/html')
   if rtf:
     media = string_to_media(rtf, 'application/rtf')
-  return _perform_upload(metadata, media)
+  return _perform_upload(metadata, media, verbose=False)
 
 def get_file_contents(fileid, verbose=True):
   """Downloads and returns the contents of fileid in a BytesIO buffer"""
@@ -273,6 +286,9 @@ def _perform_upload(file_metadata, media, verbose=True):
         return False
 
 def create_folder(name, parent_folder):
+  # dance to invalidate the get_subfolders cache
+  cachekey = get_subfolders._get_output_identifiers(parent_folder)
+  get_subfolders.store_backend.clear_item(cachekey)
   metadata = {
     'name': name,
     'mimeType': 'application/vnd.google-apps.folder',
@@ -326,6 +342,17 @@ def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
   if verbose:
     print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
+
+def has_file_matching(query: str):
+  resp = session().files().list(
+    q=query,
+    pageSize=1,
+    fields='files(id)',
+  ).execute()
+  resp = resp.get('files')
+  if not resp:
+    return None
+  return resp[0]['id']
 
 def all_files_matching(query: str, fields: str):
   files = session().files()
@@ -554,6 +581,14 @@ def _yt_thumbnail(snippet):
 
 def make_ytvideo_summary_html(vid):
   snippet = get_ytvideo_snippets([vid])[0]
+  transcript = None
+  try:
+    transcript = YouTubeTranscriptApi.get_transcript(vid)
+  except:
+    pass
+  return _make_ytvideo_summary_html(vid, snippet, transcript)
+
+def _make_ytvideo_summary_html(vid, snippet, transcript):
   ret = ""
   if snippet.get('description'):
     desc = htmlify_ytdesc(snippet['description'])
@@ -561,11 +596,6 @@ def make_ytvideo_summary_html(vid):
   ret += f"""<h2>Thumbnail</h2><p><img src="{_yt_thumbnail(snippet)}" /></p>"""
   if len(snippet.get('tags',[])) > 0:
     ret += f"""<h2>Video Tags</h2><p>{snippet['tags']}</p>"""
-  transcript = None
-  try:
-    transcript = YouTubeTranscriptApi.get_transcript(vid)
-  except:
-    pass
   if transcript:
     ret += "<h2>Video Subtitles</h2>"
     for line in transcript:
@@ -578,7 +608,7 @@ def make_ytplaylist_summary_html(ytplid):
   desc = htmlify_ytdesc(plsnip.get('description', ''))
   if desc:
     ret += f"""<h2>Description (from YouTube)</h2><p>{desc}</p>"""
-  videos = get_ytvideo_snippets_for_playlist(ytplid)
+  videos = get_ytvideo_snippets_for_playlist(ytplid, maxResults=50)
   if len(videos) > 0:
     ret += "<h2>Videos</h2>"
     for video in videos:

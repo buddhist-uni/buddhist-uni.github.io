@@ -87,6 +87,67 @@ def normalize_text(text: str) -> str:
     )
     return ' '.join(text)
 
+YOUTUBE_DATA_FOLDER = DATA_DIRECTORY.joinpath('youtube_metadata')
+if not YOUTUBE_DATA_FOLDER.exists():
+    YOUTUBE_DATA_FOLDER.mkdir()
+
+def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
+    ids_to_fetch = []
+    ret = []
+    for ytid in youtube_ids:
+        cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{ytid}.json")
+        if cachefile.exists():
+            ret.append(json.loads(cachefile.read_text()))
+        else:
+            ids_to_fetch.append(ytid)
+    if ids_to_fetch:
+        print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
+        import gdrive
+        snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
+        transcripts, _ = gdrive.YouTubeTranscriptApi.get_transcripts(
+            ids_to_fetch, continue_after_error=True)
+        if len(snippets) != len(ids_to_fetch):
+            raise ValueError("Didn't get all the snippets?")
+        for vid in snippets:
+            if transcripts.get(vid['id']):
+                vid['transcript'] = transcripts[vid['id']]
+            else:
+                vid['transcript'] = {}
+            cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{vid['id']}.json")
+            cachefile.write_text(json.dumps(vid))
+            ret.append(vid)
+    return ret
+
+YT_STOP_LINES = set([
+    '',
+    'foreign',
+    'cheers',
+    '[Music]',
+])
+def flatten_youtube_transcript(transcript:list[dict]):
+    """Note: does not normalize!"""
+    ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
+    return regex.sub(r'\[.{0,35}\]', '', ret)
+
+def md_stripper(markdown):
+    """Very dumb. Just rm links because other
+    features are rare in my content"""
+    markdown = regex.sub(r'\]\([h/].{3,100}\)', '', markdown)
+    return regex.sub(r'\{.{3,60}\}', '', markdown)
+
+def flatten_youtube_metadata(video_data: dict) -> str:
+    ret = (video_data['title'] + ' ') * 3
+    if video_data.get('description'):
+        ret += video_data['description'] + ' '
+    if video_data.get('tags'):
+        ret += ' '.join(video_data['tags']*5) + ' '
+    return ret
+
+def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
+    ret = flatten_youtube_metadata(video_data)
+    if video_data.get('transcript'):
+        ret += flatten_youtube_transcript(video_data['transcript'])
+    return normalize_text(ret)
 
 class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
     def __init__(self, k=15):

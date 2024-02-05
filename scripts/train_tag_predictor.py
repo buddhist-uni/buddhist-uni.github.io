@@ -38,9 +38,15 @@ from tag_predictor import (
     save_normalized_text,
     DATA_DIRECTORY,
     NORMALIZED_TEXT_FOLDER,
+    NORMALIZED_DRIVE_FOLDER,
     MODELS_DIRECTORY,
     TagPredictor,
     STOP_WORDS,
+    flatten_youtube_metadata,
+    flatten_youtube_transcript,
+    get_normalized_text_for_youtube_vid,
+    md_stripper,
+    get_ytdata_for_ids,
 )
 
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
@@ -79,6 +85,7 @@ SUBFOLDERS_IGNORE_FILE = DATA_DIRECTORY.joinpath('ignored_subfolders.json')
 IGNORE_SUBFOLDERS = []
 if SUBFOLDERS_IGNORE_FILE.exists():
     IGNORE_SUBFOLDERS = json.loads(SUBFOLDERS_IGNORE_FILE.read_text())
+RUN_RECENTLY = True
 
 def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> dict[str,list[str]]:
     slug = SLUG_FOR_PRIVATE_FOLDERID[this_folder]
@@ -185,6 +192,7 @@ def get_all_trainable_files_in_folders(verbose=False) -> list[dict]:
     verbose=0,
 )
 def _get_trainable_files_in_folder(folderid, verbose):
+    RUN_RECENTLY = False # invalidate some other caches too while we're at it
     ret = []
     if verbose:
         print(f"Finding trainable files in {folderid}...")
@@ -321,67 +329,6 @@ def extract_all_youtube_ids(all_the_google_drive_files:list[dict]=None, tag_for_
         raise ValueError("Please supply both files and tagmap to extract YTIDs")
     return ret
 
-YOUTUBE_DATA_FOLDER = DATA_DIRECTORY.joinpath('youtube_metadata')
-if not YOUTUBE_DATA_FOLDER.exists():
-    YOUTUBE_DATA_FOLDER.mkdir()
-
-def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
-    ids_to_fetch = []
-    ret = []
-    for ytid in youtube_ids:
-        cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{ytid}.json")
-        if cachefile.exists():
-            ret.append(json.loads(cachefile.read_text()))
-        else:
-            ids_to_fetch.append(ytid)
-    if ids_to_fetch:
-        print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
-        snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
-        transcripts, _ = gdrive.YouTubeTranscriptApi.get_transcripts(
-            ids_to_fetch, continue_after_error=True)
-        if len(snippets) != len(ids_to_fetch):
-            raise ValueError("Didn't get all the snippets?")
-        for vid in snippets:
-            if transcripts.get(vid['id']):
-                vid['transcript'] = transcripts[vid['id']]
-            else:
-                vid['transcript'] = {}
-            cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{vid['id']}.json")
-            cachefile.write_text(json.dumps(vid))
-            ret.append(vid)
-    return ret
-
-YT_STOP_LINES = set([
-    '',
-    'foreign',
-    'cheers',
-    '[Music]',
-])
-def flatten_youtube_transcript(transcript:list[dict]):
-    """Note: does not normalize!"""
-    ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
-    return regex.sub(r'\[.{0,35}\]', '', ret)
-
-def md_stripper(markdown):
-    """Very dumb. Just rm links because other
-    features are rare in my content"""
-    markdown = regex.sub(r'\]\([h/].{3,100}\)', '', markdown)
-    return regex.sub(r'\{.{3,60}\}', '', markdown)
-
-def flatten_youtube_metadata(video_data: dict) -> str:
-    ret = (video_data['title'] + ' ') * 3
-    if video_data.get('description'):
-        ret += video_data['description'] + ' '
-    if video_data.get('tags'):
-        ret += ' '.join(video_data['tags']*5) + ' '
-    return ret
-
-def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
-    ret = flatten_youtube_metadata(video_data)
-    if video_data.get('transcript'):
-        ret += flatten_youtube_transcript(video_data['transcript'])
-    return normalize_text(ret)
-
 PDF_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawpdftext')
 if not PDF_TEXT_FOLDER.exists():
     PDF_TEXT_FOLDER.mkdir()
@@ -420,7 +367,8 @@ def _save_text_for_drive_file(
     name = f"{drivefile['id']}.txt"
     incompleterawtextfile = text_folder.joinpath(f"{name}.incomplete")
     completerawtextfile = text_folder.joinpath(name)
-    if (not overwrite) and completenormalizedtextfile.exists():
+    normalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(f"{drivefile['id']}.pkl")
+    if (not overwrite) and normalizedtextfile.exists():
         return
     try:
         if not completerawtextfile.exists():
@@ -440,7 +388,7 @@ def _save_text_for_drive_file(
     except Exception as e:
         print(f"Warning! There was an error downloading and parsing {drivefile['id']}:")
         print(e)
-        completenormalizedtextfile.touch() # mark as no data
+        normalizedtextfile.write_bytes(b'\x80\x04N.') # mark as no data
 
 def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, all_files=None):
     """If sample_size is None, goes from smaller to larger files,
@@ -451,12 +399,15 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
     if not all_files:
         all_files = get_all_trainable_files_in_folders()
         all_files += get_trainable_gfiles_from_site()
+    # restore the cache from Google Drive first
+    if not RUN_RECENTLY:
+        gdrive.download_folder_contents_to(NORMALIZED_DRIVE_FOLDER, NORMALIZED_TEXT_FOLDER)
     all_files = [
         file for file in all_files if
         file['mimeType'] in ['application/pdf', 'application/epub+zip'] and
         file['size'] <= max_size and
         file['size'] >= min_size and
-        (not NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt").exists())
+        (not NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.pkl").exists())
     ]
     if len(all_files) == 0:
         return
@@ -654,9 +605,9 @@ class GoogleDriveFilesDataSource(DataSource):
                 tags = [(tag_for_folder[file['parent']], 1)]
             if not tags:
                 continue
-            fp = NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.txt")
+            fp = NORMALIZED_TEXT_FOLDER.joinpath(f"{file['id']}.pkl")
             if fp.exists():
-                content = fp.read_text()
+                content = joblib.load(fp)
             title = normalize_text(file['name'])
             self.add_datapoints(
                 title,
@@ -705,6 +656,9 @@ def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tu
         joblib.dump(X_raw, X_file, compress=4)
         return (ret, X_raw)
     print("  CountVectorizer cache miss (loading)...")
+    if not RUN_RECENTLY:
+        for fp in DATA_DIRECTORY.joinpath('vocab_cache').glob("*.pkl"):
+            fp.unlink()
     ret = TqdmCountVectorizer(
         lowercase=False, # already lowered
         stop_words=stop_words,
@@ -763,8 +717,11 @@ class OBUTopicClassifier:
     
     def train(self):
         """The big main function"""
+        # Honestly, if I were coding this again, I'd do this differently
+        # and have a X_raw cache for a set of DataSources as it's fairly common
+        # to train two different models on the same set of Sources, but oh well
         self._load_data()
-        self._count_words()
+        self._count_words() 
         to_train = [('root', 0)] # (slug, level)
         self.classifiers_ = dict()
         while len(to_train) > 0:
@@ -866,7 +823,9 @@ class OBUTopicClassifier:
 
     def save_as(self, filepath: Path | str):
         """Save only the essential data to a pickle file (.pkl)"""
-        joblib.dump((self.vectorizer_.vocabulary_, self.classifiers_), filepath, compress=3)
+        if Path(filepath).exists():
+            Path(filepath).replace(str(filepath)+'.prev')
+        joblib.dump((self.vectorizer_.vocabulary_, self.classifiers_), filepath)
 
 
 def report_model_score_against_youtube_data(model:TagPredictor, gdrive_also=True):
@@ -941,15 +900,15 @@ def report_model_score_against_youtube_data(model:TagPredictor, gdrive_also=True
     )
     return vid_bins
 
-# As of Feb 2, 2024, the LinearSVC Classifier performed as follows on the YouTube Holdout:
+# As of Feb 3, 2024, the LinearSVC Classifier performed as follows on the YouTube Holdout:
 # ----------
-# Of the 166 videos on the website, their predicted tags break down as follows:
+# Of the 167 videos, their predicted tags break down as follows:
 # S Tier (first tag match): 22.2%
-# A Tier (tag match):       25.7%
+# A Tier (tag match):       26.3%
 # B Tier (ancestor match):  3.6%
 # C Tier (any tag ancestor):13.2%
 # D Tier (direct relative): 15.0%
-# E Tier (no relation):     20.4%
+# E Tier (no relation):     19.8%
 
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(
