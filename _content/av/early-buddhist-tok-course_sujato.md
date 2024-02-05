@@ -19,4 +19,10 @@ publisher: "Buddhist Library"
 minutes: 583
 ---
 
-This is a five-part series on Jayatilake's "Early Buddhist Theory of Knowledge"[(/content/monographs/early-buddhist-theory-of-knowledge_jayatilleke)] given by Bhante Sujato. The main topics are: 1. the historical background of non-Buddhist thought at the time of the Buddha; 2. the use and limits of logic; 3. the roles of authority and reason; and 4. the limits of knowledge.
+This is a five-part series on Jayatilake's "Early Buddhist Theory of Knowledge"[(/content/monographs/early-buddhist-theory-of-knowledge_jayatilleke)] given by Bhante Sujato. The main topics are: 
+1. the historical background of non-Buddhist thought at the time of the Buddha 
+2. the Buddha's critque of exsiting attitudes
+3. the use and limits of logic
+4. the roles of authority and reason
+5. the limits of knowledge. 
+More info on the classes can be found on the courses info pages [on the SBL](https://buddhistlibrary.org.au/events/early-buddhist-theory-of-knowledge/) and [SC:D&D](https://discourse.suttacentral.net/t/early-buddhist-theory-of-knowledge-course-outline-for-the-buddhist-library/21213?u=khemarato.bhikkhu) websites.
