@@ -47,6 +47,14 @@
   "private": "https://drive.google.com/drive/folders/18aHM6fThA1zeLMunS7MIsa6UbjM-6hPI",
   "public": "https://drive.google.com/drive/folders/1d9FVRx81URWYJSqcFHc1NTROsvVhIn__"
  },
+ "ai": {
+  "private": "https://drive.google.com/drive/folders/1u42f90OQCGEFVh-CIgJPe8M3NfTtRIeR",
+  "public": null
+ },
+ "algebra": {
+  "private": "https://drive.google.com/drive/folders/1piQsh_mce0TWKIIPw2jwlqV68Pi7tRsJ",
+  "public": null
+ },
  "ambulit": {
   "private": "https://drive.google.com/drive/folders/1XmdOa0vsdASEQUqGehr9gWYkER_M3f2E",
   "public": "https://drive.google.com/drive/folders/11Vw1aPuTWfqA3CX3rhKFA08xOSpmQkG1"
@@ -406,6 +414,10 @@
  "ebts": {
   "private": "https://drive.google.com/drive/folders/1BhDdraWTpTt118lNMbM7vGZMYfw6fTjq",
   "public": "https://drive.google.com/drive/folders/1-2TVk3zAOCa-Jh2exR16WLmu4gWxS0qt"
+ },
+ "ecology": {
+  "private": "https://drive.google.com/drive/folders/1DdK6-HwkpyjPJdp8hacKiY5H1ZFe0CUQ",
+  "public": null
  },
  "economics": {
   "private": "https://drive.google.com/drive/folders/14HLIR4pZhcJWobu6wk-kzGP-CGOTc7ao",

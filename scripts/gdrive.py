@@ -149,13 +149,13 @@ def get_ytvideo_snippets(ytids):
     for i in range(0, len(ytids), 50): # YTAPI has a 50 id limit
       snippets.extend(get_ytvideo_snippets(ytids[i:i+50]))
     return snippets
-  data = youtube().videos().list(id=','.join(ytids),part="snippet,topicDetails").execute().get("items", [])
-  data = {vid['id']: vid for vid in data}
-  for ytid in ytids:
-    vid = data.get(ytid,{})
+  data = youtube().videos().list(id=','.join(ytids),part="snippet,contentDetails").execute().get("items", [])
+  for vid in data:
     ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails'] if k in vid['snippet']}
-    ret['contentDetails'] = vid.get('contentDetails')
-    ret['id'] = ytid
+    ret['contentDetails'] = vid.get('contentDetails', {})
+    if not ret.get('tags'):
+      ret['tags'] = []
+    ret['id'] = vid['id']
     snippets.append(ret)
   return snippets
 
@@ -580,16 +580,30 @@ def _yt_thumbnail(snippet):
   return snippet['thumbnails']['default']['url']
 
 def make_ytvideo_summary_html(vid):
-  snippet = get_ytvideo_snippets([vid])[0]
-  transcript = None
-  try:
-    transcript = YouTubeTranscriptApi.get_transcript(vid)
-  except:
-    pass
+  from tag_predictor import YOUTUBE_DATA_FOLDER
+  cachef = YOUTUBE_DATA_FOLDER.joinpath(f"{vid}.json")
+  if cachef.exists():
+    snippet = json.loads(cachef.read_text())
+    transcript = snippet.get('transcript',[])
+  else:
+    snippet = get_ytvideo_snippets([vid])[0]
+    transcript = None
+    try:
+      transcript = YouTubeTranscriptApi.get_transcript(vid)
+      snippet['transcript'] = transcript
+    except:
+      pass
+    cachef.write_text(json.dumps(snippet))
   return _make_ytvideo_summary_html(vid, snippet, transcript)
 
 def _make_ytvideo_summary_html(vid, snippet, transcript):
   ret = ""
+  duration = (snippet.get('contentDetails') or {}).get('duration')
+  if duration:
+    if duration.startswith('PT'):
+      duration = duration[2:]
+    duration = re.sub(r'([HM])([0-9])', r'\1 \2', duration)
+    ret += f"<h2>Duration</h2><p>{duration}</p>"
   if snippet.get('description'):
     desc = htmlify_ytdesc(snippet['description'])
     ret += f"""<h2>Video Description (from YouTube)</h2><p>{desc}</p>"""

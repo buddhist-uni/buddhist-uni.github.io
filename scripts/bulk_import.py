@@ -128,7 +128,7 @@ def create_gdoc(url: str, title: str, html: str, folder_id: str):
     filename=title,
     html=f"<h1>{title}</h1><h2><a href=\"{url}\">{url}</a></h2>{html}",
     custom_properties={
-      "createBy": "LibraryUtils.LinkSaver",
+      "createdBy": "LibraryUtils.LinkSaver",
       "url": url,
     },
     folder_id=folder_id,
