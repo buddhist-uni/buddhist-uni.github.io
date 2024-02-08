@@ -1,5 +1,5 @@
 ---
-title: "Paths across Borders: Comparative Refl ections on Japanese and Indo-Tibetan Models of the Buddhist Path"
+title: "Paths across Borders: Comparative Reflections on Japanese and Indo-Tibetan Models of the Buddhist Path"
 authors:
   - "David L. Gardiner"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-12/05Gardiner.pdf"

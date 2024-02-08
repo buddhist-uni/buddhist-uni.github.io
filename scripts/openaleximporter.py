@@ -236,7 +236,6 @@ def draft_files_matching(query):
   return matching_files
 
 def prompt_for_work(query) -> str:
-  print("Type part of the name of the work, hit Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
   query = input_with_prefill("Search> ", query)
   existing_drafts = None
   with yaspin(text="Scanning drafts..."):
@@ -262,20 +261,30 @@ def prompt_for_work(query) -> str:
     r = search_openalex_for_works(query)
   if 'results' not in r or len(r['results']) == 0:
     print("No results found :(")
-    return prompt_for_work(query)
-  print("Results:")
-  i = radio_dial([serp_result(res) for res in r['results']])
-  return (r['results'][i]['id'].split("/")[-1], query)
-
-def _main():
-  query = ""
+    if prompt("Try again?"):
+      return prompt_for_work(query)
+    else:
+      return (None, query)
   while True:
-    workid, query = prompt_for_work(query)
+    print("Results:")
+    i = radio_dial([serp_result(res) for res in r['results']] + ['Try a new search?', 'Give up?'])
+    if i==len(r['results']):
+      return prompt_for_work(query)
+    if i-1==len(r['results']):
+      return (None, query)
+    workid = r['results'][i]['id'].split("/")[-1]
     with yaspin(text="Fetching work info..."):
       work = fetch_work_data(workid)
     print_work(work)
     if prompt("Is this the correct work?"):
-      break
+      return (work, query)
+
+def _main():
+  query = ""
+  print("Type part of the name of the work, hit Enter to search, arrows to scroll through the results, and hit Enter when you've selected the right one.\n")
+  work, query = prompt_for_work(query)
+  if not work:
+    quit(0)
   with yaspin(text="Searching Drive for file..."):
     title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
     gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf'").execute()
