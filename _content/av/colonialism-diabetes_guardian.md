@@ -1,7 +1,13 @@
 ---
 title: "How British Colonialism Increased Diabetes in South Asians"
+authors:
+  - "Neelam Tailor"
+  - "Ali Assaf"
+  - "Joseph Pierce"
+  - "Ryan Baxter"
+external_url: "https://www.theguardian.com/world/video/2023/oct/12/how-british-colonialism-increased-diabetes-in-south-asians"
 subcat: film
-external_url: "https://youtu.be/z8Qv7zZBxq8"
+source_url: "https://youtu.be/z8Qv7zZBxq8"
 course: wider
 tags:
   - south-asia
