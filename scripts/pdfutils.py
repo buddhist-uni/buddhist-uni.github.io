@@ -2,6 +2,7 @@
 from strutils import (
   whitespace,
 )
+from pathlib import Path
 
 try:
   import pypdf
@@ -9,7 +10,7 @@ except:
   print("pip install pypdf")
   exit(1)
 
-def readpdf(pdf_file, max_len=None, normalize=1):
+def readpdf(pdf_file: str | Path, max_len=None, normalize=1) -> str:
   """Returns a pdf's text.
   
   normalize:

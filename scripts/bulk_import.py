@@ -3,6 +3,7 @@
 from collections import defaultdict
 import argparse
 from tqdm import tqdm
+from pathlib import Path
 
 import json
 from yaml import load as read_yaml
@@ -12,7 +13,10 @@ from tag_predictor import (
   TagPredictor,
   get_normalized_text_for_youtube_vid,
   get_ytdata_for_ids,
+  normalize_text,
+  save_normalized_text,
 )
+from pdfutils import readpdf
 
 course_predictor = TagPredictor.load()
 
@@ -103,6 +107,60 @@ class BulkItemImporter:
     )
     self.unread_folderid_for_course[course] = subfolder
     return subfolder
+
+class BulkPDFImporter(BulkItemImporter):
+  def __init__(self, pdf_type) -> None:
+    super().__init__()
+    self.pdf_type = pdf_type
+    match pdf_type:
+      case 'academia.edu':
+        self.folder_name = "🏛️ Academia.edu"
+      case _:
+        raise ValueError("Invalid PDF type: "+pdf_type)
+
+  def get_unread_subfolder_name(self) -> str:
+    return self.folder_name
+  
+  def can_import_item(self, item: str) -> bool:
+    return item.lower().endswith('.pdf') \
+      and Path(item).is_file() # so far, only support local files
+  
+  def import_items(self, items: list[str]):
+    files = [Path(item) for item in items]
+    if self.pdf_type == "academia.edu":
+      """Academia.edu PDFs use _s instead of spaces
+      Replace them with spaces for my sanity"""
+      for fp in list(files):
+        name = fp.name
+        if "_" in name:
+          name = name.replace("_", " ")
+          new_name = fp.parent.joinpath(name)
+          fp.rename(new_name)
+          files.remove(fp)
+          files.append(new_name)
+    print("Uploading PDFs to Drive...")
+    for fp in tqdm(files):
+      if gdrive.has_file_already(fp, default=False):
+        tqdm.write(f"Skipping {fp} as that file is already on Drive!")
+        fp.unlink()
+        files.remove(fp)
+        continue
+      text = normalize_text(readpdf(fp, normalize=0))
+      name = normalize_text((' '+fp.stem) * 3)
+      course = course_predictor.predict([text+name], normalized=True)[0]
+      folder = self.get_folder_id_for_course(course)
+      uploaded = gdrive.upload_to_google_drive(
+        fp,
+        folder_id=folder,
+        filename=fp.name,
+        creator="LibraryUtils.BulkPDFImporter",
+        verbose=False,
+      )
+      if uploaded:
+        fp.unlink()
+        save_normalized_text(uploaded, text)
+      else:
+        tqdm.write(f"Failed to upload {fp}!")
 
 class GDocURLImporter(BulkItemImporter):
   def filter_already_imported_items(self, items:list[str]) -> list[str]:
@@ -223,7 +281,11 @@ ITEM_IMPORTERS = [
 ]
 IMPORTERS = {k: v for k, v in ITEM_IMPORTERS}
 
-def import_items(items: list[str]):
+def import_items(items: list[str], pdf_type=None):
+  if pdf_type:
+    pdf_importer = BulkPDFImporter(pdf_type)
+    ITEM_IMPORTERS.append(('PDFs', pdf_importer))
+    IMPORTERS['PDFs'] = pdf_importer
   grouped_items = defaultdict(list)
   for item in items:
     has_match = False
@@ -234,6 +296,8 @@ def import_items(items: list[str]):
         break
     if not has_match:
       print(f"Warning! No importer found for \"{item}\"!")
+      if item.lower().endswith('.pdf') and not pdf_type:
+        print(f"You need to specify a \"pdf type\" to import PDFs!")
   for k in grouped_items:
     items = grouped_items[k]
     if len(items) <= 50:
@@ -261,6 +325,13 @@ These items can be:
   - A YouTube Playlist Link (each video added seperately)
   - A YAML or JSON file containing a list of any of the above
 """)
+  argparser.add_argument(
+    '--pdf-type',
+    dest="pdf_type",
+    nargs="?",
+    choices=['academia.edu'],
+    help="Which subfolder to sort PDFs into (required if importing PDFs)",
+  )
   args = argparser.parse_args()
   raw_items = []
   for item in args.items:
@@ -274,5 +345,5 @@ These items can be:
     else:
       raw_items.append(item)
   print(f"Got {len(raw_items)} items to import.")
-  import_items(raw_items)
+  import_items(raw_items, pdf_type=args.pdf_type)
   

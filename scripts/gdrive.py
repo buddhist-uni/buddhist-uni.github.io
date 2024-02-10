@@ -257,14 +257,14 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
     buffer.close()
     Path(str(destination)+'.part').rename(destination)
 
-def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None):
+def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None, verbose=True):
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
         file_metadata['parents'] = [folder_id]
     file_metadata['properties'] = custom_properties or dict()
     file_metadata['properties']['createdBy'] = creator or 'LibraryUtils'
     media = MediaFileUpload(file_path, resumable=True)
-    return _perform_upload(file_metadata, media)
+    return _perform_upload(file_metadata, media, verbose=verbose)
 
 def _perform_upload(file_metadata, media, verbose=True):
     drive_service = session()
@@ -277,7 +277,6 @@ def _perform_upload(file_metadata, media, verbose=True):
             if status and verbose:
                 print("Uploaded %d%%." % int(status.progress() * 100))
         if verbose:
-
           print("File uploaded successfully:")
           print(response)
         return response['id']
@@ -463,7 +462,7 @@ def my_pdfs_containing(text):
     fields=EXACT_MATCH_FIELDS,
   ).execute()['files']
 
-def has_file_already(file_in_question, default="prompt"):
+def has_file_already(file_in_question, default="prompt") -> bool:
   hash, size = file_info(file_in_question)
   file_in_question = Path(file_in_question)
   cfs = files_exactly_named(file_in_question.name)
@@ -471,21 +470,20 @@ def has_file_already(file_in_question, default="prompt"):
     if hash == gf['md5Checksum'] or (approx_eq(size, int(gf['size']), absdiff=1024, percent=2.0) or len(gf['name']) > 11):
       return True
     else:
-      print(f"  Found file with that name sized {gf['size']} instead of {size}.")
       if default=="prompt":
+        print(f"  Found file with that name sized {gf['size']} instead of {size}.")
         if prompt("Consider that a match?"):
           return True
       else:
         if default:
           return True
   if file_in_question.suffix == ".pdf":
-    print("  Attempting to search by PDF contents...")
     try:
       text = pdfutils.readpdf(file_in_question, max_len=1500, normalize=3)
     except struct.error:
       text = ""
     if len(text) < 16:
-      print("  failed to extract text from the PDF")
+      # failed to extract text from the PDF
       return False
     cfs = my_pdfs_containing(text)
     for gf in cfs:
@@ -494,31 +492,24 @@ def has_file_already(file_in_question, default="prompt"):
         if gf['originalFilename'] == file_in_question.name:
           if approx_eq(size, int(gf['size']), percent=5.0) and len(gf['originalFilename']) > 7:
             return True
-          print(f"  Found a file now named {gf['name']} sized {gf['size']} instead of {size}.")
           if default=="prompt":
+            print(f"  Found a file now named {gf['name']} sized {gf['size']} instead of {size}.")
             if prompt("Consider that a match?"):
               return True
           else:
             if default:
               return True
-    if len(cfs) == 1:
-        gf = cfs[0]
-        print(f"  Found file \"{gf['name']}\" with that text sized {gf['size']} instead of {size}.")
-        if default=="prompt":
-          if prompt("Consider that a match?"):
-            return True
-        else:
-          if default:
-            print("  But I'm not confident enough in the match to delete the file, sorry!")
-    if len(cfs) > 1:
-        if default=="prompt":
-          print(f"  Found {len(cfs)} fuzzy matches:")
-          for gf in cfs:
-            print(f"    {gf['name']}")
-          if prompt("Are any of those a match?"):
-              return True
-        else:
-          print(f"  Ignoring the {len(cfs)} fuzzy matches found")
+    if len(cfs) == 1 and default == "prompt":
+      gf = cfs[0]
+      print(f"  Found file \"{gf['name']}\" with that text sized {gf['size']} instead of {size}.")
+      if prompt("Consider that a match?"):
+        return True
+    if len(cfs) > 1 and default=="prompt":
+      print(f"  Found {len(cfs)} fuzzy matches:")
+      for gf in cfs:
+        print(f"    {gf['name']}")
+      if prompt("Are any of those a match?"):
+          return True
   return False
 
 def get_shortcuts_to_gfile(target_id):
