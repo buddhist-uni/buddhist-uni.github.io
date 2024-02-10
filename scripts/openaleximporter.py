@@ -237,6 +237,8 @@ def draft_files_matching(query):
 
 def prompt_for_work(query) -> str:
   query = input_with_prefill("Search> ", query)
+  if not query:
+    return (None, query)
   existing_drafts = None
   with yaspin(text="Scanning drafts..."):
     existing_drafts = draft_files_matching(query)

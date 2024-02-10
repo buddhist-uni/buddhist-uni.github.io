@@ -251,6 +251,10 @@ While not representative of the diversity within each of the following "national
 
 ##### Robinson Chapter 7: Sri Lanka
 
+
+{% include content_blurb.html category="articles" slug="relationship-btw-buddhist-monks-and-lay-in-cambodia_kiyoyuki-koike" %}
+- A brief overview of the Theravada "Wat" (monastery) and its relationship with the lay community.
+
 [CBT] Th.31
 {:.mb-0}
 - The ideal of the "Righteous Monarch" was hugely influential in the Theravada world and continues to justify monarchy in Thailand today.

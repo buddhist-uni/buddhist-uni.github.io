@@ -3,7 +3,7 @@ title: "Awakening the Body"
 authors:
   - "Willa Baker"
 subcat: podcast
-editor: "Pierce Salguero"
+editor: salguero-p
 external_url: "https://blueberyl.buzzsprout.com/2044347/13155896-9-awakening-the-body-with-willa-baker"
 drive_links:
   - "https://drive.google.com/file/d/17lFvIJfArHwH1OtGeC3nCEjmVG0mLcNW/view?usp=drivesdk"

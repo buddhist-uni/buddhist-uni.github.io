@@ -3,7 +3,7 @@ title: "A Buddhist Approach to Self-care Sovereignty"
 authors:
   - "Pamela Boyce Simms"
 subcat: podcast
-editor: "Pierce Salguero"
+editor: salguero-p
 external_url: "https://blueberyl.buzzsprout.com/2044347/14117506-14-a-buddhist-approach-to-self-care-sovereignty-with-pamela-boyce-simms"
 source_url: ""
 drive_links:

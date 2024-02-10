@@ -1,7 +1,7 @@
 ---
 title: "Buddhist Medicine"
 authors:
-  - "Pierce Salguero"
+  - salguero-p
 file_links:
   - "exclusive_01/Buddhist%20Medicine%20-%20Pierce%20Salguero.mp3"
 drive_links:
