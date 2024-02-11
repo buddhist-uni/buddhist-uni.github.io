@@ -9,9 +9,11 @@ course: karma
 tags:
   - ahimsa
   - crime
+  - state
+  - america
 year: 2020
 month: nov
-journal: "Vox"
+journal: vox
 pages: 3 
 ---
 
