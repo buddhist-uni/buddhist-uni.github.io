@@ -11,7 +11,7 @@ course: books
 tags:
   - jazz
   - musicology
-  - copyright
+  - ip-law
 series: 99pi
 number: 438
 minutes: 42

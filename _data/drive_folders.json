@@ -959,6 +959,10 @@
   "private": "https://drive.google.com/drive/folders/1-ZiJYwAQ6Tmfk5Oo2KCWPScR8ukSWxEm",
   "public": "https://drive.google.com/drive/folders/1-39OcD_O7ULeBYDFaYdZVfTUlgMd5avP"
  },
+ "pali-commentaries": {
+  "private": "https://drive.google.com/drive/folders/1-e3SnXhQ43KuWlks_HYX90Ty3bbwJEHv",
+  "public": null
+ },
  "pali-dictionaries": {
   "private": "https://drive.google.com/drive/folders/15vwcOHVUyv-4eAtXpi8c8A3bXbveChdP",
   "public": "https://drive.google.com/drive/folders/10LJy85LdEoIKQvUUnbN-lWoOZE14XK11"
@@ -1035,12 +1039,8 @@
   "private": "https://drive.google.com/drive/folders/1-75vsuPfxyRFJgIlh7bi8fuj1lXGqKIq",
   "public": null
  },
- "poli-sci": {
+ "politics": {
   "private": "https://drive.google.com/drive/folders/1g7XUiQHQruUSvfzvEl4finAU256epKak",
-  "public": null
- },
- "polical-ideology": {
-  "private": "https://drive.google.com/drive/folders/1V9-SbnlVWEIdJ-ELE4S0Oy-i5yJWjCjO",
   "public": null
  },
  "political-ideology": {

@@ -171,6 +171,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 #### Not Made of That
 
+{% include content_blurb.html category="canon" slug="sn22.48" %}
+- Nibbāna can be seen as the purification of the aggregates: washing them of clinging.
+
 {% include content_blurb.html category="essays" slug="advice-on-the-worldly-concerns_dundul" %}
   - What is “non-duality” and, more importantly, how does one practice it?
 

@@ -11,7 +11,7 @@ drive_links:
   - "https://drive.google.com/file/d/1cON3CAF62-Qw_4OOKioCwI-0SK8CCGP3/view?usp=drivesdk"
 course: social # borderline, probably to move down or archive some day...
 tags:
-  - poli-sci
+  - politics
   - social-media
   - ideology
   - advertising

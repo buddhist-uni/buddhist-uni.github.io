@@ -480,7 +480,7 @@ def has_file_already(file_in_question, default="prompt") -> bool:
   if file_in_question.suffix == ".pdf":
     try:
       text = pdfutils.readpdf(file_in_question, max_len=1500, normalize=3)
-    except struct.error:
+    except:
       text = ""
     if len(text) < 16:
       # failed to extract text from the PDF

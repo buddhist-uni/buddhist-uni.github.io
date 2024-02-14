@@ -269,7 +269,7 @@ def process_pdf(pdf_file):
     external_url = make_nonsc_url(trans['website_data'], book, nums)
     trans = fill_in_trans_data(trans, external_url)
   print(f"Going with {trans['author_short']}")
-  pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").strip())
+  pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").replace("aa", "a A").strip())
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}{': '+eng_name if eng_name else ''}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"

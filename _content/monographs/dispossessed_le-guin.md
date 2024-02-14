@@ -6,7 +6,7 @@ secret_url: "https://web.archive.org/web/20220414002323if_/https://files.libcom.
 subcat: fiction
 course: social # solidly
 tags:
-  - political-ideologies
+  - political-ideology
   - time
   - sci-fi
 year: 1974

@@ -5,7 +5,7 @@ category: av
 subcat: podcast
 tags:
   - america
-  - political-ideologies
+  - political-ideology
 external_url: "https://www.dissentmagazine.org/category/podcast/know-your-enemy/page/5/"
 ---
 

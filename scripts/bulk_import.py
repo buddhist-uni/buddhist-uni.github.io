@@ -1,24 +1,27 @@
 #!/bin/python3
 
-from collections import defaultdict
-import argparse
-from tqdm import tqdm
-from pathlib import Path
+from yaspin import yaspin
 
-import json
-from yaml import load as read_yaml
+with yaspin(text="Loading..."):
+  from collections import defaultdict
+  import argparse
+  from tqdm import tqdm
+  from pathlib import Path
 
-import gdrive
-from tag_predictor import (
-  TagPredictor,
-  get_normalized_text_for_youtube_vid,
-  get_ytdata_for_ids,
-  normalize_text,
-  save_normalized_text,
-)
-from pdfutils import readpdf
+  import json
+  from yaml import load as read_yaml
 
-course_predictor = TagPredictor.load()
+  import gdrive
+  from tag_predictor import (
+    TagPredictor,
+    get_normalized_text_for_youtube_vid,
+    get_ytdata_for_ids,
+    normalize_text,
+    save_normalized_text,
+  )
+  from pdfutils import readpdf
+
+course_predictor = None
 
 class ItemListParser:
   def __init__(self) -> None:
@@ -138,12 +141,10 @@ class BulkPDFImporter(BulkItemImporter):
           fp.rename(new_name)
           files.remove(fp)
           files.append(new_name)
-    print("Uploading PDFs to Drive...")
     for fp in tqdm(files):
       if gdrive.has_file_already(fp, default=False):
         tqdm.write(f"Skipping {fp} as that file is already on Drive!")
         fp.unlink()
-        files.remove(fp)
         continue
       text = normalize_text(readpdf(fp, normalize=0))
       name = normalize_text((' '+fp.stem) * 3)
@@ -333,17 +334,20 @@ These items can be:
     help="Which subfolder to sort PDFs into (required if importing PDFs)",
   )
   args = argparser.parse_args()
+  with yaspin(text="Loading tag predictor..."):
+    course_predictor = TagPredictor.load()
   raw_items = []
-  for item in args.items:
-    sublist = []
-    for parser in LIST_PARSERS:
-      if parser.can_read_item(item):
-        sublist = parser.read_item(item)
-        break
-    if sublist:
-      raw_items.extend(sublist)
-    else:
-      raw_items.append(item)
+  with yaspin(text="Parsing items..."):
+    for item in args.items:
+      sublist = []
+      for parser in LIST_PARSERS:
+        if parser.can_read_item(item):
+          sublist = parser.read_item(item)
+          break
+      if sublist:
+        raw_items.extend(sublist)
+      else:
+        raw_items.append(item)
   print(f"Got {len(raw_items)} items to import.")
   import_items(raw_items, pdf_type=args.pdf_type)
   
