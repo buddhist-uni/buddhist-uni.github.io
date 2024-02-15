@@ -3,7 +3,7 @@ title: "The Global Human Day"
 authors:
   - "William Fajzel"
   - "Eric D. Galbraith"
-  - "Christopher Barrington‐Leigh"
+  - "Christopher Barrington-Leigh"
   - "Jacques Charmes"
   - "Elena Frie and others"
 external_url: "https://ddd.uab.cat/pub/artpub/2023/1996567c9f21/pnas.2219564120.pdf"
