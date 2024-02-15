@@ -10,6 +10,7 @@ from strutils import *
 import gdrive
 from itertools import chain
 import journals
+import publishers
 try:
   import requests
   from yaspin import yaspin
@@ -195,6 +196,10 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
         if category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
     if work['primary_location']['source'] and work['primary_location']['source']['host_organization_name'] and (journal == '' or '"' in journal):
+      publisherid = work['primary_location']['source']['host_organization'].split("openalex.org/")[1]
+      if publisherid in publishers.slugs:
+        fd.write(f"publisher: {publishers.slugs[publisherid]}\n")
+      else:
         fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
     elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")

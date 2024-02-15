@@ -9,7 +9,7 @@ status: featured
 course: karma
 tags:
   - da
-  - ethics
+  - view
 year: 2013
 journal: "Asian Literature and Translation"
 publisher: "Cardiff University Press"
@@ -18,4 +18,6 @@ number: 6
 pages: "1--14"
 ---
 
-A translation of the twelfth discourse in the Chinese Dīrgha-āgama with a short introduction by Bhikkhu Anālayo. This discourse is without known parallels, though it does share similarities with the Saṅgīti-sūtra and the Daśottara-sūtra. Further, this discourse is a reminder that, however important the development of wholesome mental states and the elimination of unwholesome mental states, it is equally important to develop states conducive to Nirvāṇa.
+A translation of the twelfth discourse in the Chinese Dīrgha-āgama with a short introduction by Bhikkhu Anālayo.
+
+This discourse, without known parallels, is a reminder that, however important the development of wholesome mental states and the elimination of unwholesome mental states, it is equally important to also develop those states conducive to Nirvāṇa if you want to escape Saṃsāra.

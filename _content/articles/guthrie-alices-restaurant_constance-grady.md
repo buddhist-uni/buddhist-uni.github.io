@@ -19,4 +19,6 @@ pages: 3
 
 > I mean, thank God that the people that run this world are not smart enough to keep running it forever.
 
-A short news article about Arlo Guthrie's song "Alice's Resturant." The song relates how Guthrie was arrested and fined for improper trash disposal, and how this simple act kept him from being drafted into the Vietnam War. Since being released in 1967, the song has been played on the radio throughout the United States on Thanksgiving Day. 
+A short news article about [Arlo Guthrie's song "Alice's Resturant."](https://en.wikipedia.org/wiki/Alice%27s_Restaurant)
+
+It tells the story of how Guthrie was arrested and fined for a simple act of kindness and how this record kept him from being drafted into the Vietnam War. Since being released in 1967, the song has become a Thanksgiving Day staple across the United States.

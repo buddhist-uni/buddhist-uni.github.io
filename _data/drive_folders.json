@@ -203,6 +203,10 @@
   "private": "https://drive.google.com/drive/folders/1FfFWmY3_ipIKn8h_svWMEwE_RLrZY_rq",
   "public": "https://drive.google.com/drive/folders/11XmV4DuEbY7Ah5R88_JjqzSvOz5tSIQm"
  },
+ "burmese-language": {
+  "private": "https://drive.google.com/drive/folders/1CqXR6eUQ3QwgWpZLAw2MY3GrH07X6yHa",
+  "public": null
+ },
  "burmese-roots": {
   "private": "https://drive.google.com/drive/folders/1Co7JBgh836Svk_k1K4NigzwC-bLSW6oQ",
   "public": ""
@@ -1039,12 +1043,12 @@
   "private": "https://drive.google.com/drive/folders/1-75vsuPfxyRFJgIlh7bi8fuj1lXGqKIq",
   "public": null
  },
- "politics": {
-  "private": "https://drive.google.com/drive/folders/1g7XUiQHQruUSvfzvEl4finAU256epKak",
-  "public": null
- },
  "political-ideology": {
   "private": "https://drive.google.com/drive/folders/1V9-SbnlVWEIdJ-ELE4S0Oy-i5yJWjCjO",
+  "public": null
+ },
+ "politics": {
+  "private": "https://drive.google.com/drive/folders/1g7XUiQHQruUSvfzvEl4finAU256epKak",
   "public": null
  },
  "power": {
@@ -1325,6 +1329,10 @@
  },
  "tibetan-language": {
   "private": "https://drive.google.com/drive/folders/1XX6NIeS1j4zCIAI0XqRGSJo126GmxoW-",
+  "public": null
+ },
+ "tibetan-medicine": {
+  "private": "https://drive.google.com/drive/folders/15kP-hPJZysHlZYz-1m1-Sr9ZCwN06qfh",
   "public": null
  },
  "tibetan-roots": {
