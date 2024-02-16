@@ -1,8 +1,8 @@
 ---
 title: "Good Kamma! Bad Kamma! What Exactly is Kamma?"
 authors:
-  - "Shravasti Dhammika"
-external_url: "https://wiswo.org/books/_resources/book-downloads/gkbk/gkbk.pdf"
+  - dhammika
+external_url: "https://budblooms.org/download/good-kamma-bad-kamma-what-exactly-is-kamma/"
 drive_links:
   - "https://drive.google.com/file/d/1D0wv6VDmKYi4BXXf4eURLf4S4gvW4S41/view?usp=sharing"
 course: karma
@@ -12,7 +12,7 @@ tags:
 year: 2015
 olid: OL51015676M
 oclc: 946504596
-pages: "1--56"
+pages: "51"
 ---
 
 > Mahānāma once confided to the Buddha his anxiety about dying at a time when his mind was
