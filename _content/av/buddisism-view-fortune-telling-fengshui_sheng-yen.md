@@ -11,7 +11,7 @@ tags:
   - mind
   - iddhi
 address: Taipei
-year: Taipei
+year: 1994
 publisher: Dharma Drum Publishing
 series: Great Dharma Drum
 number: 8
