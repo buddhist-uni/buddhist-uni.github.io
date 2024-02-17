@@ -20,4 +20,4 @@ minutes: 9
 
 > So, for Buddhists, as long as they try to cultivate a mind of equinimity and fortrightness, as long as they are compassionate, or use wisdom and an objective attitude to deal with whatever comes up, then there is no need to worry about whether one has a good fortune or not, or whether Fengshui is correct or not.
 
-Ven. Master Sheng Yen explains that, while supernatural things such as fortunetelling or fengshui are not totally superstitious, they are not accurate. The mind has the ability to transform and change its fate, so Buddhists need only be concerned with developing a wholesome mind..
+Ven. Master Sheng Yen explains that, while supernatural things such as fortunetelling or fengshui are not totally superstitious, they are not accurate. The mind has the ability to transform and change its fate, so Buddhists need only be concerned with developing a wholesome mind.
