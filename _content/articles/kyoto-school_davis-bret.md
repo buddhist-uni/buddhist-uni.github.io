@@ -6,7 +6,7 @@ source_url: "https://plato.stanford.edu/entries/kyoto-school/"
 external_url: "https://seop.illc.uva.nl/entries/kyoto-school/"
 drive_links:
   - "https://drive.google.com/file/d/1heuxBfqM4sHr3NKJ3j6E42oqYyO6sh5l/view?usp=drivesdk"
-course: dialogue
+course: dialogue # maybe down to modern-japanese-philosophy?
 tags:
   - kyoto-school
   - japanese-imperial

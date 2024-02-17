@@ -1,19 +1,26 @@
 # OpenAlex.org Topic IDs
 
-BUDDHIST_STUDIES = "T11563"
-MINDFULNESS      = "T10708"
+# About all Indic and Asian Religions
+BUDDHIST_STUDIES  = "T11563"
+
+# meditation, positive psychology stuff
+MINDFULNESS       = "T10708"
 
 # Mostly about Indonesian Muslims
-SEA_RELIGION     = "T14022"
+SEA_RELIGION      = "T14022"
 
 # Untested
-THE_SILK_ROAD    = "T12890"
-SOUTHEAST_ASIA   = "T13002"
-EAST_ASIA        = "T11198"
-EAST_ASIA_DEVEL  = "T13057"
-ASIAN_GENDER     = "T12728"
-ASIAN_AMERICA    = "T12323"
-INDIAN_OCEAN     = "T13215"
+CHINESE_RELIGIONS = "T10893"
+PARANORMAL_PSYCH  = "T12448"
+THE_SILK_ROAD     = "T12890"
+SOUTHEAST_ASIA    = "T13002"
+EAST_ASIA         = "T11198"
+EAST_ASIA_DEVELOP = "T13057"
+CHINA_PERIPH      = "T13073"
+VIETNAM           = "T13802"
+ASIAN_GENDER      = "T12728"
+ASIAN_AMERICA     = "T12323"
+INDIAN_OCEAN      = "T13215"
 
 class DeprecatedConcepts:
   """The old concepts API"""

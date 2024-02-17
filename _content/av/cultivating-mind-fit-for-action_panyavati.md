@@ -1,13 +1,14 @@
 ---
 title: "Cultivating a Mind Fit for Action"
 authors:
-  - panyavati
+  - "Pannavati Bhikkhuni"
 external_url: "https://dharmaseed.org/talks/52603/"
 drive_links:
   - "https://drive.google.com/file/d/1AjuBi0PNamlkkpa_9_OsEoEMesiKW4ir/view?usp=drive_link"
 course: karma
 tags:
   - problems
+  - engaged
 year: 2018
 month: oct
 minutes: 63

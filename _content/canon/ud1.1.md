@@ -8,8 +8,7 @@ drive_links:
 course: nibbana
 status: featured
 tags:
-  - origination
-  - philosophy
+  - view
   - buddhism
   - ud
 # buddha tag covered by Nyanamoli's *Life*

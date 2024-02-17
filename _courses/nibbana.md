@@ -152,6 +152,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="an8.5" %}
   - How does an arahant relate to the world?
 
+{% include content_blurb.html category="canon" slug="ud7.7" %}
+  - The Enlightened don't make an object of anything.
+
 {% include content_blurb.html category="canon" slug="sn9.6" %}
   - How does an arahant see the world?
 
@@ -176,6 +179,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 {% include content_blurb.html category="canon" slug="sn22.48" %}
 - Nibbāna can be seen as the purification of the aggregates: washing them of clinging.
+
+{% include content_blurb.html category="canon" slug="ud8.2" %}
+- Letting go is hard to see for those with craving.
 
 {% include content_blurb.html category="essays" slug="advice-on-the-worldly-concerns_dundul" %}
   - What is “non-duality” and, more importantly, how does one practice it?

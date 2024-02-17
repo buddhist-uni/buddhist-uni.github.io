@@ -250,6 +250,10 @@ In your own words, how does seeing the Three Characteristics prepare the mind fo
 
 The series of causes which lead to us constitute the disease for which our suffering is only the most obvious symptom.
 
+{% include content_blurb.html category="canon" slug="ud1.2" %}
+- Dependent Origination is the cornerstone of Buddhist philosophy, as the Buddha himself declared shortly after achieving Awakening
+
+
 #### (Special Bonus!) Sutta Spotlight
 
 Dependent Origination is a notoriously difficult concept in Buddhism, so before this week gets started in earnest, I wanted to invite Bhikkhu Brahmali here to help us understand one discourse which explains the second noble truth in this, a very special, bonus edition of “sutta spotlight”

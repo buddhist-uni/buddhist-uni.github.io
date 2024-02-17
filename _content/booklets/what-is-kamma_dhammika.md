@@ -8,11 +8,10 @@ drive_links:
 course: karma
 tags:
   - rebirth
-  - nibbana
 year: 2015
 olid: OL51015676M
 oclc: 946504596
-pages: "51"
+pages: 51
 ---
 
 > Mahānāma once confided to the Buddha his anxiety about dying at a time when his mind was
@@ -20,4 +19,3 @@ confused and bewildered (musati), thinking it might result in him having a negat
 The Buddha reassured him that because he had developed various spiritual qualities for a long
 time, he had nothing to fear if such a thing should happen.
 
-In this short booklet, Dhammika gives an explanation of kamma  and its ripening (vipāka). This is followed by showing how kamma plays a role in developing the mind, rebirth, and nibbāna.
