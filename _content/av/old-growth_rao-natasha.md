@@ -15,5 +15,5 @@ number: 641
 minutes: 5
 ---
 
-> The truth is  
-money is in war, not poetry...
+> Backward crossovers into years before: airy  
+afternoons licking the wooden spoon...
