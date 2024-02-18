@@ -12,7 +12,7 @@ tags:
   - faith
 year: 2020
 month: may
-series: No Doubt: A Shin Buddhist Approach
+publisher: No Doubt: A Shin Buddhist Approach
 minutes: 31
 ---
 
