@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1B_12mi5l5UkduqmuplkCCuKd1fN4nppu/view?usp=drive_link"
 course: karma
 tags:
-  - chan
-  - mind
+  - east-asian
+  - problems
   - iddhi
 address: Taipei
 year: 1994
