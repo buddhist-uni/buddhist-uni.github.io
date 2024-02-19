@@ -14,7 +14,6 @@ pages: "127--149"
 course: feeling
 tags:
   - citta
-  - mind
   - abhidharma
 ---
 

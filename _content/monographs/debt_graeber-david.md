@@ -5,7 +5,6 @@ authors:
 course: economics
 status: featured
 olid: OL27883779M
-external_url: "https://archive.org/details/debtfirst5000yea0000grae/mode/1up"
 tags:
   - debt
   - time

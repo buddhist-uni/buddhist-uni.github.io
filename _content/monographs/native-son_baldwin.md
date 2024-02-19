@@ -2,7 +2,7 @@
 title: "Notes of a Native Son"
 authors:
   - "James Baldwin"
-external_url: "https://archive.org/details/notesofnativeson0000bald_a9c2/mode/1up"
+external_url: "https://archive.org/details/notesofnative00bald/mode/1up"
 course: race
 tags:
   - social

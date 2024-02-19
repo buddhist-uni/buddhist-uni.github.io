@@ -26,6 +26,7 @@ else:
 ARCHIVEID_BLACKLIST = {
   "unehistoiredetou0000na",
   "delinegaliteparm0000prof",
+  "isbn_9782228906555",
   "discoveringroyal0000drew",
   "regulusvelpueris0000sain",
   "xiaowangzilittle0000fash_o5z8",
