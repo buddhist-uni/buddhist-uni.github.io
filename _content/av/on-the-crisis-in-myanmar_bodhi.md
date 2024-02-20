@@ -23,3 +23,5 @@ minutes: 90
 > One of the toughest interviews I've ever had.
 
 Bhikkhu Bodhi responds to ethical questions posed by Buddhists in Burma facing extraordinary violence from their military junta.
+
+For Bhikkhu Bodhi's return to the podcast a year later [see episode 104](https://insightmyanmar.org/complete-shows/2022/5/14/episode-104-the-venerable-bhikkhu-bodhi-returns).

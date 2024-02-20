@@ -5,22 +5,19 @@ translator: sujato
 external_url: "https://suttacentral.net/an7.62/en/sujato"
 drive_links: ["https://drive.google.com/file/d/1tirm33G1D18vzulMOEnuWaNMDYclX185/view?usp=drivesdk"]
 course: pali-canon
-status: featured
 tags:
   - an
-  - path
+  - rebirth-stories
 # nibbana tag covered by *The Island*
 year: 2018
 pages: 2
 parallels:
   - ma138
   - sf210
-# Partial parallels from SC
-#  - iti22
-#  - ne37
+  - iti22
+  - ne37
 ---
 
-> Don’t fear good deeds. For ‘good deeds’ is a term for happiness.
+> I had over a thousand sons who were valiant and heroic, crushing the armies of my enemies.
 
-The incalculable benefits of merits that last for aeons.
-
+The Buddha recalls the results of his good deeds.

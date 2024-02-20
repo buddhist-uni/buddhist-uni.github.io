@@ -7,8 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1zQC7axta2F0gZG2SUZqb8Aq6RCKt8niK/view?usp=drive_link"
 course: karma
 tags:
-  - theravada
-  - ritual
+  - form
 year: 2020
 month: sep
 pages: 5
