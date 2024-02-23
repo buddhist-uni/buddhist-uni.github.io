@@ -5,10 +5,12 @@ from yaspin import yaspin
 with yaspin(text="Loading..."):
   from collections import defaultdict
   import argparse
+  import re
   import requests
   from tqdm import tqdm
   from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from pathlib import Path
+  from datetime import datetime
 
   import json
   from yaml import load as read_yaml
@@ -203,58 +205,144 @@ def get_html(url):
   try:
     return requests.get(url).text
   except:
+    tqdm.write(f"WARNING: There was an error fetching {url}! Skipping...")
     return ''
 
 class DharmaSeedURLImporter(GDocURLImporter):
   DOMAIN = 'https://dharmaseed.org'
+  MIN_DESC_LEN = 70
+  MIN_MINS = 15
+  TERM_BLACKLIST = [
+    'Q&A',
+    'Q & A',
+    'Q and A',
+    'Q And A',
+    'Questions and Answers',
+    'Question & Answer',
+    'Opening Talk',
+    'Conclusion Talk',
+    ' Retreat '
+    ' Part ',
+    'PART',
+    ' #',
+  ]
 
   def get_unread_subfolder_name(self) -> str:
     return "🌱 Dharma Seed"
 
   def can_import_item(self, item: str) -> bool:
-    return item.startswith(self.DOMAIN)
+    # for now we only support importing teacher pages
+    return item.startswith(self.DOMAIN + "/teacher/")
 
   def import_items(self, items: list[str]):
-    print(f"Getting {len(items)} DharmaSeed URLs...")
-    htmls = tqdm_thread_map(get_html, items, max_workers=min(len(items), 8))
-    print("Importing...")
+    from bs4 import BeautifulSoup
+    tqdm.write("Getting first teacher pages...")
+    single_page_urls = []
+    all_pages_urls = []
+    for url in items:
+      if '?' in url:
+        single_page_urls.append(url)
+      else:
+        all_pages_urls.append(url)
+    htmls = tqdm_thread_map(
+      get_html,
+      [
+        url+'?page=1&page_items=100'
+        for url in all_pages_urls
+      ] + single_page_urls,
+      max_workers=min(len(items), 8)
+    )
+    further_items = []
+    for i in range(len(all_pages_urls)):
+      html = htmls[i]
+      if not html:
+        continue
+      url = all_pages_urls[i]
+      soup = BeautifulSoup(html, features='lxml')
+      paginator = soup.find('div', class_="paginator")
+      if not paginator:
+        continue
+      pages = paginator.find_all('a', class_="page")
+      # a bit hacky but it works for now
+      further_items.extend([
+        url + l.attrs['href'] for l in pages
+      ])
+    if len(further_items) > 0:
+      tqdm.write("Getting the rest of the pages...")
+      htmls.extend(tqdm_thread_map(get_html, further_items, max_workers=min(len(further_items), 8)))
+    tqdm.write("Importing items from pages...")
     for html in tqdm(htmls):
       if html:
         self._import_item(html)
-  
+
   def _import_item(self, html: str):
+    """Takes a teacher page and saves a gdoc for each talk.
+    
+    Filters out talks that are:
+      - retreats
+      - unavailable
+      - undescribed (desc < self.MIN_DESC_LEN)
+      - longer than 2 hours
+      - shorter than self.MIN_MINS
+      - "Q&A" (or other self.TERM_BLACKLIST terms)
+    
+    This function aggressively asserts that values are as expected, so that
+    if the parser ever gets a page structured differently, you'll know.
+    """
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(html, features='lxml')
-    name = soup.find('div', class_="bodyhead").contents[0].strip()
-    tracklist = soup.find('div', id=lambda x: x and x.startswith('tracklist'))
-    collection = soup.find('a', href=lambda x: x and x.startswith('/collections/'), class_="talkteacher")
-    collection_title = collection.get_text().strip()
-    if not tracklist:
-      tqdm.write(f"ERROR! No tracklist found in \"{name}\"!")
-      return
+    teacher_name = soup.select_one('a.talkteacher b').get_text()
+    talks = soup.select("div.talklist > table")
+    if len(talks) < 1:
+      raise AssertionError(f"Failed to find at least 1 talk on {teacher_name}'s page")
     tracks = []
-    for track in tracklist.children:
-      if isinstance(track, str):
+    for talk in talks:
+      tds = talk.find('table').find_all('td')
+      if len(tds) < 3:
         continue
-      rows = [r.find('td') for r in track.find_all('tr')]
-      rows = [r for r in rows if r]
-      if len(rows) < 3:
-        tqdm.write(f"ERROR! Found only {len(rows)} table rows for a track in \"{name}\"!")
+      unavailable = bool(tds[1].find('i'))
+      button_count = len(tds[1].find_all('a'))
+      if button_count == 3: # this is a retreat
         continue
-      track_data = {}
-      track_data['date'] = rows[0].contents[0].strip()
-      link = rows[0].find('a')
-      track_data['url'] = self.DOMAIN + link.attrs['href']
-      track_data['title'] = link.get_text().strip()
-      track_data['duration'] = rows[0].find('i').get_text().strip()
-      track_data['teacher'] = rows[1].find('a', class_="talkteacher").get_text()
-      track_data['desc'] = rows[2].find('div', class_="talk-description").get_text().strip()
-      tracks.append(track_data)
+      assert unavailable != (button_count == 2)
+      if unavailable:
+        continue
+      track = dict()
+      track['duration'] = tds[0].find('i').get_text().strip()
+      timeparts = track['duration'].split(':')
+      assert len(timeparts) in [2, 3]
+      if len(timeparts) == 2 and int(timeparts[0]) < self.MIN_MINS:
+        continue
+      if len(timeparts) == 3 and int(timeparts[0]) > 1:
+        continue
+      desc = talk.find('div', class_="talk-description")
+      if desc:
+        track['desc'] = re.sub(r'\(.{4,60}\)', '', desc.get_text().strip())
+      else:
+        continue
+      if len(track['desc']) < self.MIN_DESC_LEN:
+        continue
+      link = tds[0].contents[1]
+      assert link.name == 'a'
+      track['title'] = link.get_text().strip()
+      if any(
+        needle in track['title'] or needle in track['desc']
+        for needle in self.TERM_BLACKLIST
+      ):
+        continue
+      track['date'] = tds[0].contents[0].strip()
+      # This will raise a ValueError if the date is invalid
+      datetime.strptime(track['date'], '%Y-%m-%d')
+      track['url'] = self.DOMAIN + link.attrs['href']
+      tracks.append(track)
+    if len(tracks) == 0:
+      return
     already = self.already_imported_items([d['url'] for d in tracks])
     tracks = [d for d in tracks if d['url'] not in already]
+    if len(tracks) == 0:
+      return
     for track in tqdm(tracks, desc="Predicting courses"):
       text = [track['title']] * 3
-      text.extend([collection_title] * 3)
       text.append(track['desc'])
       text = ' '.join(text)
       track['course'] = course_predictor.predict([text])[0]
@@ -262,7 +350,7 @@ class DharmaSeedURLImporter(GDocURLImporter):
     for track in tqdm(tracks, desc="Uploading"):
       create_gdoc(
         url=track['url'],
-        title=f"{track['title']} ({track['date']}) - {track['teacher']}",
+        title=f"{track['title']} ({track['date']}) - {teacher_name}",
         html=f"""<h2>Duration</h2><p>{track['duration']}</p>
           <h2>Description (from DharmaSeed)</h2><p>{track['desc']}</p>""",
         folder_id=track['folder'],
