@@ -5,7 +5,9 @@ from yaspin import yaspin
 with yaspin(text="Loading..."):
   from collections import defaultdict
   import argparse
+  import requests
   from tqdm import tqdm
+  from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from pathlib import Path
 
   import json
@@ -165,6 +167,10 @@ class BulkPDFImporter(BulkItemImporter):
 
 class GDocURLImporter(BulkItemImporter):
   def filter_already_imported_items(self, items:list[str]) -> list[str]:
+    already = self.already_imported_items(items)
+    return [item for item in items if item not in already]
+  
+  def already_imported_items(self, items:list[str]) -> set[str]:
     print(f"Seeing if we've imported any of these already...")
     files = gdrive.session().files()
     already = set()
@@ -180,7 +186,7 @@ class GDocURLImporter(BulkItemImporter):
       for file in resp:
         already.add(file['properties']['url'])
     print(f"Found {len(already)} URLs already added")
-    return [item for item in items if item not in already]
+    return already
 
 def create_gdoc(url: str, title: str, html: str, folder_id: str):
   return gdrive.create_doc(
@@ -192,6 +198,76 @@ def create_gdoc(url: str, title: str, html: str, folder_id: str):
     },
     folder_id=folder_id,
   )
+
+def get_html(url):
+  try:
+    return requests.get(url).text
+  except:
+    return ''
+
+class DharmaSeedURLImporter(GDocURLImporter):
+  DOMAIN = 'https://dharmaseed.org'
+
+  def get_unread_subfolder_name(self) -> str:
+    return "🌱 Dharma Seed"
+
+  def can_import_item(self, item: str) -> bool:
+    return item.startswith(self.DOMAIN)
+
+  def import_items(self, items: list[str]):
+    print(f"Getting {len(items)} DharmaSeed URLs...")
+    htmls = tqdm_thread_map(get_html, items, max_workers=min(len(items), 8))
+    print("Importing...")
+    for html in tqdm(htmls):
+      if html:
+        self._import_item(html)
+  
+  def _import_item(self, html: str):
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, features='lxml')
+    name = soup.find('div', class_="bodyhead").contents[0].strip()
+    tracklist = soup.find('div', id=lambda x: x and x.startswith('tracklist'))
+    collection = soup.find('a', href=lambda x: x and x.startswith('/collections/'), class_="talkteacher")
+    collection_title = collection.get_text().strip()
+    if not tracklist:
+      tqdm.write(f"ERROR! No tracklist found in \"{name}\"!")
+      return
+    tracks = []
+    for track in tracklist.children:
+      if isinstance(track, str):
+        continue
+      rows = [r.find('td') for r in track.find_all('tr')]
+      rows = [r for r in rows if r]
+      if len(rows) < 3:
+        tqdm.write(f"ERROR! Found only {len(rows)} table rows for a track in \"{name}\"!")
+        continue
+      track_data = {}
+      track_data['date'] = rows[0].contents[0].strip()
+      link = rows[0].find('a')
+      track_data['url'] = self.DOMAIN + link.attrs['href']
+      track_data['title'] = link.get_text().strip()
+      track_data['duration'] = rows[0].find('i').get_text().strip()
+      track_data['teacher'] = rows[1].find('a', class_="talkteacher").get_text()
+      track_data['desc'] = rows[2].find('div', class_="talk-description").get_text().strip()
+      tracks.append(track_data)
+    already = self.already_imported_items([d['url'] for d in tracks])
+    tracks = [d for d in tracks if d['url'] not in already]
+    for track in tqdm(tracks, desc="Predicting courses"):
+      text = [track['title']] * 3
+      text.extend([collection_title] * 3)
+      text.append(track['desc'])
+      text = ' '.join(text)
+      track['course'] = course_predictor.predict([text])[0]
+      track['folder'] = self.get_folder_id_for_course(track['course'])
+    for track in tqdm(tracks, desc="Uploading"):
+      create_gdoc(
+        url=track['url'],
+        title=f"{track['title']} ({track['date']}) - {track['teacher']}",
+        html=f"""<h2>Duration</h2><p>{track['duration']}</p>
+          <h2>Description (from DharmaSeed)</h2><p>{track['desc']}</p>""",
+        folder_id=track['folder'],
+      )
+
 
 """
 INSTRUCTIONS FOR IMPORTING THE WATCH LATER PLAYLIST
@@ -279,6 +355,7 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
 
 ITEM_IMPORTERS = [
   ('YouTube Videos', BulkYouTubeVideoImporter()),
+  ('DharmaSeed Talks', DharmaSeedURLImporter()),
 ]
 IMPORTERS = {k: v for k, v in ITEM_IMPORTERS}
 
