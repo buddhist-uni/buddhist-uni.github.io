@@ -20,4 +20,4 @@ pages: 116
 
 > This man is one of those who have seldom been seen from ancient times to the present. Since the Great Doctrine flowed on to the East there has been no one to be compared with Hien in his forgetfulness of self and search for the Law.
 
-The extraordinary first-hand account of Buddhism in South Asia during the fifth century and of one monk's journey to bring the early Buddhist texts back to China.
+The extraordinary first-hand account of Buddhism in South Asia during the fifth century and of one monk's journey to bring the true Buddhist texts back to China.

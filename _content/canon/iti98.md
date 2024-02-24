@@ -5,12 +5,9 @@ translator: geoff
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti98.html"
 drive_links:
   - "https://drive.google.com/file/d/1PJElo6WdEmiPQdqUPUeZjqnlXCDPHUbj/view?usp=drivesdk"
-course: engaged
+course: dana
 tags:
-  - dana
-  - things
-  - monastic-advice
-  - sangha
+  - monastic
 year: 2017
 pages: 1
 ---

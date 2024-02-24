@@ -211,6 +211,8 @@ def get_possible_geoff_source_url(trans, book, nums):
       ret = f"kn/ud/ud.{nums[0]}.{nums[1]:02d}.than.html"
     case "snp":
       ret = f"kn/snp/snp.{nums[0]}.{nums[1]:02d}.than.html"
+    case "thag":
+      ret = f"kn/thag/thag.{nums[0]:02d}.{nums[1]:02d}.than.html"
     case "iti":
       trans['publication_date'] = 2001
       num = int(nums[0])
@@ -248,7 +250,7 @@ def process_pdf(pdf_file):
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
-  blurb = get_blurb_for_suttaid(slug)
+  blurb = get_blurb_for_suttaid(slug) or ''
   course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
   parsed = sutta_id_re.match(slug)
   book = parsed.group(1)
@@ -369,7 +371,6 @@ external_url: "{external_url}"
 {coursefields}tags:
   - 
   - {book}
-# buddha tag covered by Nyanamoli's *Life*
 year: {year}
 pages: {pages}
 {parallels}---
