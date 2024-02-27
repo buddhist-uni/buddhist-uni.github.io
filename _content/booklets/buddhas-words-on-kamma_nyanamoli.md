@@ -1,11 +1,11 @@
 ---
-title: "The Buddha’s Words on Kamma Four Discourses of the Buddha from the Majjhima Nikāya"
+title: "The Buddha’s Words on Kamma: Four Discourses of the Buddha from the Majjhima Nikāya"
 authors:
   - nyanamoli
 external_url: "https://www.bps.lk/olib/wh/wh248_Nyanamoli_Buddhas-Words-On-Kamma.html"
 drive_links:
-  - "https://drive.google.com/file/d/1vQmjbzZbuiJWLnISmZDIFCQx38fyDwqf/view?usp=drive_link"
   - "https://drive.google.com/open?id=1jhNG5RfOuD9wIvRHuQx8kCyraFFnTR6H&usp=drive_copy"
+  - "https://drive.google.com/file/d/1vQmjbzZbuiJWLnISmZDIFCQx38fyDwqf/view?usp=drive_link"
 course: karma
 tags:
   - ethics
@@ -14,8 +14,8 @@ tags:
 year: 1977
 publisher: bps
 series: wheel
-number: 248/249
-pages: 58
+number: 248
+pages: 29
 ---
 
 > Now a great producer of happiness is the making of good kamma. What is good about it? It is rooted in non-greed (generosity, renunciation), or in non-hate (loving kindness, compassion) or finally in non-delusion (wisdom, understanding). 
