@@ -4,8 +4,8 @@ authors:
   - nyanamoli
 external_url: "https://www.bps.lk/olib/wh/wh248_Nyanamoli_Buddhas-Words-On-Kamma.html"
 drive_links:
-  - "https://drive.google.com/open?id=1jhNG5RfOuD9wIvRHuQx8kCyraFFnTR6H&usp=drive_copy"
-  - "https://drive.google.com/file/d/1vQmjbzZbuiJWLnISmZDIFCQx38fyDwqf/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1jhNG5RfOuD9wIvRHuQx8kCyraFFnTR6H/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vQmjbzZbuiJWLnISmZDIFCQx38fyDwqf/view?usp=drivesdk"
 course: karma
 tags:
   - ethics
