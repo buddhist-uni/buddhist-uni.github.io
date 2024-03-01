@@ -9,7 +9,6 @@ course: path
 status: featured
 tags:
   - an
-  - karma
   - dana
   - rebirth-stories
 # buddha tag covered by Nyanamoli's *Life*
