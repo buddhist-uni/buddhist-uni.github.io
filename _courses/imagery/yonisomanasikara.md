@@ -11,6 +11,7 @@ description: "The world is full of distractions from the spiritual path."
 <p>
 {% include content_blurb.html category="canon" slug="an3.109" %}
 {% include content_blurb.html category="canon" slug="an3.130" %}
+{% include content_blurb.html category="canon" slug="an3.133" %}
 {% include content_blurb.html category="canon" slug="dhp25.365-369" %}
 </p>
 
@@ -20,7 +21,7 @@ description: "The world is full of distractions from the spiritual path."
 
 ### Reflection
 
-The similes here are among the most dramatic in the course. Why do you think that is?
+The similes here are among the most dramatic and dynamic in the course. Why do you think that is?
 
 
 

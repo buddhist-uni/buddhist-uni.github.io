@@ -76,9 +76,9 @@ So far, suttas have been added and deduped from:
   - Ajahn Geoff's *The Buddha Smiles*
   - Ajahn Geoff's *Recognizing the Dhamma*
   - Hecker's *Similes of the Buddha*
+  - Nyanamoli's *Life of the Buddha*
 
 Anthologies yet to be processed:
-  - Nyanamoli's *Life of the Buddha*
   - Ajahn Geoff's *Noble Conversation*
   - Sarah Shaw's *Buddhist Meditation* 
   - along with Jason Espada's anthology

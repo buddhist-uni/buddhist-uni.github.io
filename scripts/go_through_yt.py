@@ -59,7 +59,7 @@ class YTQueueDB():
     self.last_refreshed = None
     if DB_PATH.is_file():
       self.load_state(json.loads(DB_PATH.read_text()))
-    if not self.last_refreshed or self.last_refreshed < (datetime.now() - timedelta(days=90)):
+    if not self.last_refreshed or self.last_refreshed < (datetime.now() - timedelta(days=700)):
       self.refresh()
       self.save_state()
     random.shuffle(self.videos)
@@ -102,6 +102,8 @@ class YTQueueDB():
     ret = self.videos[self.i]
     self.i += 1
     return ret
+  def __len__(self):
+    return len(self.videos)
 
   def mark_previous_completed(self):
     del self.videos[self.i-1]
@@ -112,6 +114,7 @@ if __name__ == "__main__":
     queue = YTQueueDB()
   while vid := queue.next():
     print(str(vid))
+    print(f"What to do with video {queue.i} of {len(queue)}?")
     choice = radio_dial([
       "Open...",
       "Skip...",

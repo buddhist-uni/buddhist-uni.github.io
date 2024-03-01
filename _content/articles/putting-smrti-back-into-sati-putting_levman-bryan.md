@@ -1,7 +1,7 @@
 ---
 title: "Putting *Smṛti* Back Into *Sati* (Putting Remembrance Back Into Mindfulness)"
 authors:
-  - "Bryan Levman"
+  - levman
 external_url: "http://jocbs.org/index.php/jocbs/article/view/167"
 drive_links:
   - "https://drive.google.com/file/d/1e2579fYULkcnJwUYSYOX8H7QtkaXqjgx/view?usp=drivesdk"

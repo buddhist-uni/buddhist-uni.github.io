@@ -262,7 +262,7 @@ def prompt_for_work(query) -> str:
         new_path = os.path.join(os.path.join(os.path.dirname(existing_drafts[0]), "../../_content/articles/"), os.path.basename(use_draft))
         shutil.move(use_draft, new_path)
         system_open(new_path)
-        quit(0)
+        return (None, query)
   r = {}
   with yaspin(text="Searching OpenAlex..."):
     r = search_openalex_for_works(query)
@@ -285,6 +285,7 @@ def prompt_for_work(query) -> str:
     print_work(work)
     if prompt("Is this the correct work?"):
       return (work, query)
+  return (None, query)
 
 def _main():
   query = ""

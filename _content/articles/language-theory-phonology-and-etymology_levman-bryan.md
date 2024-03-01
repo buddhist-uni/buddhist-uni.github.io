@@ -1,7 +1,7 @@
 ---
 title: "Language Theory, Phonology and Etymology in Buddhism and Their Relationship to Brahmanism"
 authors:
-  - "Bryan Levman"
+  - levman
 external_url: "https://journal.equinoxpub.com/BSR/article/download/9069/10542/45617"
 source_url: "https://doi.org/10.1558/bsrv.31031"
 drive_links:

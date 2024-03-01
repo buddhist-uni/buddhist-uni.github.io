@@ -19,3 +19,6 @@ pages: 3
 > Therapy assumes that someone is sick and that there is a cure, e.g., a personal solution. I am greatly offended that I or any other woman is thought to need therapy in the first place. Women are messed over, not messed up! We need to change the objective conditions, not adjust to them.
 
 A highly influential, feminist essay which is still informing leftist thought today.
+
+For a conversation on what it means, check out
+ [Chris Hayes' interview with Brittney Cooper](/content/av/personal-political_cooper).

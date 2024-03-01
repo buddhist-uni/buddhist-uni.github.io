@@ -10,9 +10,6 @@ course: karma
 tags:
   - meditation
   - brahmavihara
-  - anicca
-  - view
-  - ethics
 year: 1990
 olid: OL51160321M
 oclc: 33109213
