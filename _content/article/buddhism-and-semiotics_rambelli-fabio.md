@@ -10,7 +10,7 @@ tags:
   - east-asian
   - yogacara
   - language
-publisher: "The Zen Site"
+j
 pages: 6
 ---
 
