@@ -1,0 +1,21 @@
+---
+title: "Can Humanity Change?"
+authors:
+  - "Jiddu Krishnamurti"
+editor: "David Skitt"
+external_url: ""
+drive_links:
+  - "https://drive.google.com/file/d/14d9oy9DQyjqZ3j26LrO5jRcYOiIV1NVF/view?usp=drive_link"
+course: dialogue
+tags:
+  - consciousness
+  - effort
+year: 2003
+month: nov
+olid: OL8845858M
+oclc: 51804656
+publisher: shambhala
+pages: 140
+---
+
+This book brings together unique conversations between Jiddu Krishnamurti and scholars such as the Buddhist monk Walpola Rahula and physicist David Bohm. They took place in London in the late 1970s and mostly covered topics of consciousness and mental development. Krishamurti is well-known for his stances against any organized religion and the spiritual practices they proffer. Both come through clearly in this collection.
