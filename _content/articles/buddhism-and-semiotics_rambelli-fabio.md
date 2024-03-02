@@ -7,10 +7,12 @@ drive_links:
   - "https://drive.google.com/file/d/1FMTye0ePjhE3KI1cAdxp9wYdOmUHtTWA/view?usp=sharing"
 course: dialogue
 tags:
-  - east-asian
   - yogacara
   - language
-j
+journal: "The Semiotic Review of Books"
+volume: 16
+number: 1
+year: 1995
 pages: 6
 ---
 
