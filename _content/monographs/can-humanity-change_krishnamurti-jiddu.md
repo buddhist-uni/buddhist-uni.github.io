@@ -3,7 +3,6 @@ title: "Can Humanity Change?"
 authors:
   - "Jiddu Krishnamurti"
 editor: "David Skitt"
-external_url: ""
 drive_links:
   - "https://drive.google.com/file/d/14d9oy9DQyjqZ3j26LrO5jRcYOiIV1NVF/view?usp=drive_link"
 course: dialogue
