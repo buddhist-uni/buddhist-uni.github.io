@@ -2,10 +2,10 @@
 title: "Śūnyatā"
 status: published
 parents: [view]
-illustration: "https://buddhistuniversity.net/imgs/tags/tags/Ohara_monkey-moon.jpg"
+illustration: "https://illeakyw.sirv.com/Images/tags/Ohara_monkey-moon.jpg"
 illustration_height: 1431
 illustration_width: 755
-illustration_center_x: 70%
+illustration_center_x: 65%
 illustration_center_y: 84%
 illustration_caption: >-
   This painting by

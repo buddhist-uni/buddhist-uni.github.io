@@ -14,7 +14,7 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Monks_in_Thailand.
 illustration: https://illeakyw.sirv.com/Images/tags/Phra_Buddha_Mettapanyanath_01.jpg
 illustration_width: 1108
 illustration_height: 1478
-illustration_center_x: 2%
+illustration_center_x: 5%
 illustration_center_y: 71%
 illustration_caption: >-
   Two monks and seven laymen guide a large, sandstone Buddha image as it is lowered onto a pedestal outside a temple in Uttaradit, Thailand in 2017.

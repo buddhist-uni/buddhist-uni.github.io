@@ -10,7 +10,7 @@ tags:
   - yogacara
   - language
 journal: "The Semiotic Review of Books"
-volume: 16
+volume: 6
 number: 1
 year: 1995
 pages: 6
