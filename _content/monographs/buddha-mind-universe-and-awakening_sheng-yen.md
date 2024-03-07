@@ -1,0 +1,22 @@
+---
+title: "The Buddha Mind, Universe, and Awakening"
+authors:
+  - sheng-yen
+external_url: "https://www.shengyen.org/freebook/pdf/The_Buddha_Mind,_Universe,_and_Awakening.pdf"
+drive_links:
+  - "https://drive.google.com/file/d/1iGVeo31NGVlyyE6vISL_hB3NE6HGTLWO/view?usp=drive_link"
+course: dialogue
+tags:
+  - physics
+  - karma
+  - chan
+  - yogacara
+year: 2009
+month: jul
+publisher: dharmadrum
+pages: 29
+---
+
+> But gaining mystical experience is not the purpose of our spiritual practice. The purpose of spiritual practice is to empty ourselves of self-identity.
+
+A fascinating conversation between Master Shng-Yen and former astronaut Dr. Edgar Mitchell, narrated by Professor Raymond Yeh. The discussion began with Mitchell recounting his mystical experience upon returning to Earth after a lunar mission. What follows is a dialogue covering topics such as spiritual practice, experience, and karma, just to name a few.
