@@ -8,9 +8,9 @@ pages: "387--426"
 publisher: dharmadrum
 year: 2020
 editor: dhammadinna
-course: agama
-tags:
-  - sects
+course: sects
+# SA tag covered by *Research*
+# Agama tag covered by *Studies in Agama and Vinaya Lit*
 ---
 
 > … the term Mūla-sarvāstivāda can serve a purpose as a designation for a specific, identifiable Āgama lineage of textual transmission

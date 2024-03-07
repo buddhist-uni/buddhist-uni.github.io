@@ -4,7 +4,6 @@ authors:
   - "Jiddu Krishnamurti"
 editor: "David Skitt"
 tags:
-  - consciousness
   - dialogue
   - west
   - effort

@@ -25,6 +25,7 @@ from sklearn.base import (
     TransformerMixin,
 )
 import joblib
+import warnings
 from unidecode import unidecode
 
 from strutils import (
@@ -261,5 +262,8 @@ class TagPredictor:
         """Loads a new instance of OBUTopicClassifier from the given save_as'ed .pkl file"""
         if not filepath:
             filepath = MODELS_DIRECTORY.joinpath('default.pkl')
-        vocabulary, classifiers = joblib.load(filepath)
+        from sklearn.exceptions import InconsistentVersionWarning
+        with warnings.catch_warnings():
+            warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
+            vocabulary, classifiers = joblib.load(filepath)
         return cls(vocabulary, classifiers)

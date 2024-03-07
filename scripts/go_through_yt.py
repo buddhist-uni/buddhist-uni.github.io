@@ -106,7 +106,8 @@ class YTQueueDB():
     return len(self.videos)
 
   def mark_previous_completed(self):
-    del self.videos[self.i-1]
+    self.i-=1
+    del self.videos[self.i]
     self.save_state()
 
 if __name__ == "__main__":

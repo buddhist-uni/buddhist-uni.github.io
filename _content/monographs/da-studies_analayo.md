@@ -4,9 +4,9 @@ authors:
   - analayo
 year: 2017
 publisher: dharmadrum
-course: agama
+course: da
 tags:
-  - da
+  - agama
 drive_links: ["https://drive.google.com/file/d/1Mvy8EqCRWN1Hjeb2AAcQ9vPcph16Ol5w/view?usp=drivesdk"]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dastudies.pdf"
 pages: 672

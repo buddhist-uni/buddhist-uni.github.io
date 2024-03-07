@@ -4,7 +4,6 @@ import argparse
 from pathlib import Path
 
 from gdrive import has_file_already
-from pdfminer.psparser import PSEOF
 
 def test_and_maybe_delete(file: Path, doit=True, recurse=True, default_answer="prompt"):
   if file.is_dir():
@@ -18,14 +17,9 @@ def test_and_maybe_delete(file: Path, doit=True, recurse=True, default_answer="p
     print("  Skipping...")
     return
   print(f"\nExamining {str(file)}...")
-  try:
-    has = has_file_already(file, default=default_answer)
-    if has:
-      print("  Found it!")
-  except PSEOF:
-    print("  bad PDF")
-    has = True
+  has = has_file_already(file, default=default_answer)
   if has:
+    print("  Found it!")
     if doit:
       print("  ! Deleting!")
       file.unlink()

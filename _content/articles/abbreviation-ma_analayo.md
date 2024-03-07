@@ -8,8 +8,7 @@ drive_links:
 course: ma
 year: 2021
 journal: aririab
-tags:
-  - agama
+# agama tag covered by *Studies in Agama and Vinaya Lit*
 volume: 24
 pages: "23--36"
 ---

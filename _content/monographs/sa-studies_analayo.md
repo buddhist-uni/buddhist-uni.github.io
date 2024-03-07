@@ -4,9 +4,7 @@ authors:
   - analayo
 year: 2015
 publisher: dharmadrum
-course: agama
-tags:
-  - sa
+course: sa
 drive_links: ["https://drive.google.com/file/d/1CRenTTIVY8uUo_MIwDPmUZ502Sq-adml/view?usp=drivesdk"]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/sastudies.pdf"
 pages: 490
