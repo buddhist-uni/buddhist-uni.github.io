@@ -7,9 +7,10 @@ drive_links:
   - "https://drive.google.com/file/d/12PwjdzveKzQyUbY0zJVoSjTgSSG_dOyw/view?usp=sharing"
 course: dialogue
 tags:
-  - chan
-  - west
+  - koan
+  - academic
   - language
+  - epistemology
 year: 2007
 month: nov
 journal: "Asian Philosophy"
