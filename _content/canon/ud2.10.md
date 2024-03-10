@@ -1,10 +1,10 @@
 ---
 title: "Ud 2.10 Bhaddiya Sutta: With Bhaddiya"
-translator: sujato
+translator: ireland
 slug: "ud2.10"
-external_url: "https://suttacentral.net/ud2.10/en/sujato"
+external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.2.10.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/1um0C4DU_qd9R4SmjrTzqTbnFH_VVpjgx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16Sp0T81iRKjMs8yMBykBwLLvzRoGG6yV/view?usp=drivesdk"
 course: characters
 status: featured
 tags:
@@ -14,7 +14,7 @@ tags:
   - ud
 # thought tag covered by Geoff's "Recognizing" anthology
 # nibbana tag covered by *The Island*
-year: 2018
+year: 1998
 pages: 2
 parallels: []
 # Partial parallels from SC
@@ -29,5 +29,5 @@ parallels: []
 
 > Oh, what bliss! Oh, what bliss!
 
-A former king, now a monk, exclaims to himself.
+A former king, now a monk, talks to himself.
 

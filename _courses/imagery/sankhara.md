@@ -11,6 +11,7 @@ description: "Our delusion tells us that we have to do something to fix the worl
 <p>
 {% include content_blurb.html category="canon" slug="sn33.4" %} 
 {% include content_blurb.html category="canon" slug="sn12.67" %}
+{% include content_blurb.html category="canon" slug="an3.99" %}
 {% include content_blurb.html category="canon" slug="iti27" %}
 </p>
 

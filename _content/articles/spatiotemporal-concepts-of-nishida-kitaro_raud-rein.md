@@ -9,11 +9,10 @@ course: dialogue
 tags:
   - philosophy-of-science
   - academic
-  - east-asian
-  - chan
+  - zen
 year: 2004
 month: jan
-journal: Philosophy East and West
+journal: "Philosophy East and West"
 volume: 54
 number: 1
 pages: "29--51" 

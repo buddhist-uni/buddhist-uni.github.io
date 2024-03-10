@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.youtube.com/watch?v=kOrIWq0YgNw"
 drive_links:
   - "https://drive.google.com/file/d/1B_12mi5l5UkduqmuplkCCuKd1fN4nppu/view?usp=drive_link"
+formats:
+  - "mp4"
 course: karma
 tags:
   - east-asian

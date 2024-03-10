@@ -5,9 +5,10 @@ slug: "an.005.104"
 external_url: "https://suttacentral.net/an5.104/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1pIPjsOJI0gef9KyPMiiNNFaP_kfGxbda/view?usp=drivesdk"
-course: monastic
+course: monastic # maybe down to -advice?
 tags:
   - buddha
+  - function
   - an
 year: 2018
 pages: 1

@@ -15,6 +15,8 @@ tags:
   - intellect
   - karma
   - modern
+  - asian-american
+  - medicine
 year: 2023
 month: nov
 minutes: 5

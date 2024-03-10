@@ -9,8 +9,9 @@ illustration_height: 1107
 illustration_center_x: 3%
 illustration_center_y: 20%
 illustration_caption: >-
-  We are burned by our bad actions.
-  (<a href="https://wellcomecollection.org/works/t3rd8ckv/images?id=pfqnz5un">Kawanabe Kyōsai</a>, 1874)
+  <a href="https://wellcomecollection.org/works/t3rd8ckv/images?id=pfqnz5un">This 1874 woodblock by Kawanabe Kyōsai</a>
+  depicts Japanese people dodging flames and turning into demons as they make alcohol, butcher meat, and blindly embrace "modernity."
+  Buddhists believe that such "Wrong Livelihood" lowers our consciousness to the level of ghosts or demons and should thus be avoided.
 image: https://illeakyw.sirv.com/Images/banners/Good_deed.jpg
 image_width: 2560
 image_height: 1920
@@ -20,3 +21,6 @@ image_center_y: 25%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Good_deed.jpg">Maren Humburg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---
 
+Kamma literally means "action" but in Indian philosophy it specifically refers to theories of the consequences of our actions.
+
+The Buddha taught that it is the moral valence of our actions and the motivations behind them—whether wholesome or unwholesome—which determines whether an action will yield positive or negative consequences for us and others in the future.

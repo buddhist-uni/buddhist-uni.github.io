@@ -16,4 +16,4 @@ pages: 4
 
 > Conversation is a means of accomplishing many subtle and indirect things.
 
-A well-written musing about an alternate understanding of what it means to "preach to the choir."
+A well-written musing encouraging us to not be so shy about "preaching to the choir."
