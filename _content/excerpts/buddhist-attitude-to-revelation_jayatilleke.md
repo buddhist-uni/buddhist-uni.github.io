@@ -2,6 +2,8 @@
 title: "The Buddhist Attitude to Revelation"
 authors:
   - jayatilleke
+file_links:
+- "exclusive_01/The%20Buddhist%20Attitude%20to%20Revelation%20-%20Jayatilleke.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1ZWlDyvpqTlhgjFcDS8s5a3pNcxFlufvu/view?usp=sharing"
 course: dialogue
