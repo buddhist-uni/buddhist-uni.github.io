@@ -8,9 +8,9 @@ course: karma
 tags:
   - path
   - problems
-publisher: Lam Rim Buddhist Centre South Africa
+publisher: "Lam Rim Buddhist Centre South Africa"
 address: "South Africa"
-pages: 40
+pages: 34
 ---
 
 This is a collection of Pabongka Rinpoches's teachings on Lamrim as found in Wisdom Publications's Liberation in the Palm of Your Hand.
