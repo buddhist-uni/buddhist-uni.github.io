@@ -1,7 +1,7 @@
 ---
 title: "Sīhanāda - The Lion's Roar: Or What the Buddha Was Supposed To Be Willing to Defend in Debate"
 authors:
-  - "Joy Manne"
+  - manne-joy
 file_links:
   - "exclusive_01/The%20Lion's%20Roar%20-%20Joy%20Manne%CC%81.pdf"
 source_url: "https://doi.org/10.1558/bsrv.v13i1.14944"
@@ -13,7 +13,7 @@ tags:
   - rhetoric
 year: 1996
 journal: bsr
-volume: 10
+volume: 13
 number: 1
 pages: "7--36"
 ---
