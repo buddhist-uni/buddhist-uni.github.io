@@ -17,6 +17,7 @@ publisher: bps
 address: "Kandy"
 booktitle: "Facets of Buddhist Thought"
 pages: "33--42"
+chapter: 4
 ---
 
 > The Buddhist attitude to any such revelation would be that of
