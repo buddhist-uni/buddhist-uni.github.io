@@ -9,8 +9,7 @@ drive_links:
 course: dialogue
 tags:
   - epistemology
-  - upanishads
-  - jains
+  - setting
   - materialism
 year: 2000
 publisher: bps
