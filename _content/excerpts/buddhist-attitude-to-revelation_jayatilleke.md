@@ -24,4 +24,6 @@ accepting what is true, good and sound and rejecting what is false,
 evil and unsound after a dispassionate analysis of its contents
 without giving way to prejudice, hatred, fear or ignorance.
 
-This chapter of K. N. Jayatilleke's Faces of Buddhist Thought outlines three broad means of spiritual knowledge, where Buddhist thought fits in, and how this compares to the major religious thought at the time of the Buddha. The three means are revelation, reason, and direct experience. Jayatilleke places Buddhism squarely in the third category. He then explores these means of knowledge are viewed by the materialists, Jains, and follwers of the Vedas, comparing them all the while with Buddhist thought.
+K. N. Jayatilleke outlines three broad means of spiritual knowledge, where Buddhist thought fits in, and how this compares to the major religious thought at the time of the Buddha.
+
+The three means are: revelation, reason, and direct experience. Jayatilleke places Buddhism squarely in the third category. He then explores these means of knowledge as viewed by the materialists, Jains, and followers of the Vedas, comparing them with Buddhist thought.
