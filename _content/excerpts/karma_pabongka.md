@@ -9,9 +9,12 @@ course: karma
 tags:
   - path
   - problems
-publisher: "Lam Rim Buddhist Centre South Africa"
-address: "South Africa"
+publisher: wisdom
+year: 1988
+booktitle: "Liberation in the Palm of Your Hand"
 pages: 34
 ---
 
-This is a collection of Pabongka Rinpoches's teachings on Lamrim as found in Wisdom Publications's Liberation in the Palm of Your Hand.
+How understanding karma contributes to the gradual path.
+
+This selection from *Liberation in the Palm of Your Hand* was published for free distribution by the Lam Rim Buddhist Centre of South Africa.
