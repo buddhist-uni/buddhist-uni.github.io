@@ -24,7 +24,6 @@ pages: 320 # it's a dense text that's earned every page!
 
 > Education of whatever type cannot be sustained without some notion of imparting a belief system.
 
-> What I have been doing here is positioning knowledge acquisition and retention as pre-eminent dispositions of human beings and thus giving a privileged position to epistemology in the scheme of things.
-> And what this means is that other human attributes and activities such as learning, ethics, or ways of behaving supervene on knowledge: [and] the form that learning can assume depends on the epistemology that is adopted.
+A rigorous philosophical analysis of how humans acquire mental categories which argues that human _values_ are always already present in any act of teaching or learning, thus solving some of Wittgenstein's problem and encouraging us to ask radical questions about what our current education system actually values, and what it might be designed to value instead.
 
-> This valuing goes all the way down, into our descriptions of the world, into those attempts we make at creating better futures and into our relations with other people.
+> [... because ] this valuing goes all the way down into our descriptions of the world, into those attempts we make at creating better futures, and into our relations with other people.

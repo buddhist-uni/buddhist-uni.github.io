@@ -5,14 +5,16 @@ slug: "an.003.035"
 external_url: "https://suttacentral.net/an3.35/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1sGSaw6zYWF7eZrDWSP--pHgtZJiP3rdL/view?usp=drivesdk"
-course: buddha
+course: karma # uncertain...
 tags:
   - meditation
   - sleep
   - inner
   - function
+  - pali-canon
   - an
 # thought tag covered by Geoff's "Recognizing" anthology
+# buddha tag covered by Nyanamoli's *Life*
 year: 2012
 pages: 2
 parallels:

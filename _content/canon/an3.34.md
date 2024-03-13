@@ -1,20 +1,23 @@
 ---
-title: "AN 3.34 Nidāna Sutta: Causes"
-translator: geoff
+title: "AN 3.34 Nidāna Sutta: Sources"
+translator: bodhi
 slug: "an.003.034"
-source_url: "https://accesstoinsight.org/tipitaka/an/an03/an03.034.than.html"
-external_url: "https://www.dhammatalks.org/suttas/AN/AN3_34.html"
+external_url: "https://suttacentral.net/an3.34/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/13Jx08-_SDaowBxfrUUYPt3q1FL7Q34r7/view?usp=drivesdk"
-course: karma
+  - "https://drive.google.com/file/d/1SHksDhnm8VXpoMZS6Spi6npX0WXN_e02/view?usp=drivesdk"
+course: nibbana
 tags:
-  - arahant
+  - imagery
   - origination
-  - nibbana
   - an
-# buddha tag covered by Nyanamoli's *Life*
-year: 1999
-pages: 3
+year: 2012
+pages: 2
+parallels:
+  - an6.39
 ---
 
-Karma arises out of greed, hatred, and delusion.
+> ...a mendicant arousing knowledge  
+of the outcome of greed, hate, and delusion,  
+would cast off all bad destinies.
+
+Greed, hatred, and delusion as planting karmic "seeds."

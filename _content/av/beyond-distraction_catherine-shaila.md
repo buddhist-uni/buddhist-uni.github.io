@@ -1,5 +1,6 @@
 ---
 title: "Beyond Distraction"
+subcat: podcast
 authors:
   - "Shaila Catherine"
 external_url: "https://wisdomexperience.org/wisdom-podcast/138-shaila-catherine/"

@@ -8,11 +8,12 @@ drive_links:
 course: karma
 status: featured
 tags:
-  - origination
   - feelings
   - an
 year: 2018
 pages: 1
+parallels:
+    - an3.34
 ---
 
 > Mendicants, there are these three sources that give rise to deeds. What three? Greed, hate, and delusion are sources that give rise to deeds.
