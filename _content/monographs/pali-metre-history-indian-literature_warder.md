@@ -8,6 +8,7 @@ drive_links:
 course: canonical-poetry
 tags:
   - pali-language-research
+  - pali-metre
 year: 1967
 oclc: 957316
 publisher: pts
