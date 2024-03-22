@@ -1,7 +1,7 @@
 ---
 title: "Buddhanīti Saṅgaho: a collection of Buddhist Wisdom Verses"
 editor: "Rerukane Candavimala Mahā Nāhimi"
-translator" anandajoti
+translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Buddhist-Wisdom-Verses/Buddhist-Wisdom-Verses.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1g6dgGv0uOAZU_DOdpzksj86Lu_INw65i/view?usp=sharing"
