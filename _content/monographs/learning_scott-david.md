@@ -13,6 +13,7 @@ tags:
   - education
   - communication
   - philosophy-of-science
+  - postmodernism
 year: 2021
 olid: OL51271457M
 publisher: "UCL Press"
@@ -24,6 +25,6 @@ pages: 320 # it's a dense text that's earned every page!
 
 > Education of whatever type cannot be sustained without some notion of imparting a belief system.
 
-A rigorous philosophical analysis of how humans acquire mental categories which argues that human _values_ are always already present in any act of teaching or learning, thus solving some of Wittgenstein's problem and encouraging us to ask radical questions about what our current education system actually values, and what it might be designed to value instead.
+A rigorous philosophical analysis of how humans acquire mental categories which argues that human _values_ are always already present in any act of teaching or learning, thus solving some of Wittgenstein's problems and encouraging us to ask radical questions about what our education system currently values, and what it might be designed to value instead, because...
 
-> [... because ] this valuing goes all the way down into our descriptions of the world, into those attempts we make at creating better futures, and into our relations with other people.
+> ... this valuing goes all the way down into our descriptions of the world, into those attempts we make at creating better futures, and into our relations with other people.

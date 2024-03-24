@@ -247,6 +247,10 @@
   "private": "https://drive.google.com/drive/folders/18KjogqVdxVGo2qBpiT2PMQBVaYoFiXUz",
   "public": ""
  },
+ "cars": {
+  "private": "https://drive.google.com/drive/folders/1pdH1Di3FIb0dfIOFl0240TvLh6ytS-kA",
+  "public": null
+ },
  "caste": {
   "private": "https://drive.google.com/drive/folders/18p09oCaW9WdmJ2VcV1gkNVaxIpqtAJGd",
   "public": null
@@ -494,6 +498,10 @@
  "form": {
   "private": "https://drive.google.com/drive/folders/1BbDzkS35-1iw5omhBhJze9EA3i2VmQG1",
   "public": "https://drive.google.com/drive/folders/1-1O5_oyfnmgA9HKyPFykxHKYlTEQr7CD"
+ },
+ "france": {
+  "private": "https://drive.google.com/drive/folders/11O7D6EZpP4pi9etoZeMUZYrq6CVe6pkD",
+  "public": null
  },
  "free-will": {
   "private": "https://drive.google.com/drive/folders/1WqypZqhCawJtDT5SRxLCJKHE2Su1RAPK",
@@ -774,6 +782,10 @@
  "literature": {
   "private": "https://drive.google.com/drive/folders/11h8EdKlfjZLw6_8dfm7zoggvLJtAgXiF",
   "public": "https://drive.google.com/drive/folders/1tnUtVW589i89ey8u96j2TIkE5kMZPNbI"
+ },
+ "london": {
+  "private": "https://drive.google.com/drive/folders/1my6NlVPrQIYZeE6y8DLx8B5Iqe3vbQxB",
+  "public": null
  },
  "mahayana": {
   "private": "https://drive.google.com/drive/folders/1N5iJ_lc6r-qbxn-ND_ObHQpLBSVc2kvM",

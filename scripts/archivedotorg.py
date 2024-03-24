@@ -29,6 +29,8 @@ ARCHIVEID_BLACKLIST = {
   "isbn_9782228906555",
   "discoveringroyal0000drew",
   "regulusvelpueris0000sain",
+  "einekurzegeschic0000yuva",
+  "unabrevehistoria0000bill",
   "xiaowangzilittle0000fash_o5z8",
   "xiaowangzilittle0000sain_b1x8",
   "xiaowangzilittle0000sain",

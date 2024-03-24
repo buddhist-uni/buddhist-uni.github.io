@@ -5,7 +5,7 @@ authors:
 year: 2019
 publisher: Polity
 course: power
-tags:	
+tags:
   - ideology
   - dialogue
   - social

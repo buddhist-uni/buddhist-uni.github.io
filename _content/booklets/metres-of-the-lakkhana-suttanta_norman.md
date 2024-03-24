@@ -1,8 +1,8 @@
 ---
-title: "The Metres of the Lakkhaṇa-suttanta DN30"
+title: "The Metres of the Lakkhaṇa-suttanta (DN 30)"
 authors:
   - norman
-external_url: "https://archive.org/details/norman-lakkhana-dn30-1-4/norman-lakkhana-dn30-1-4/page/n7/mode/2up"
+external_url: "https://archive.org/compress/norman-lakkhana-dn30-1-4/formats=ADDITIONAL%20TEXT%20PDF&file=/norman-lakkhana-dn30-1-4.zip"
 drive_links:
   - "https://drive.google.com/file/d/1wKSlTPNxx8SbVSX6wKigh4tsx_sDluGx/view?usp=drive_link"
 course: canonical-poetry
@@ -14,4 +14,4 @@ address: "Oxford"
 pages: 36
 ---
 
-A collection of K.R. Norman's five-part series of articles on the different meters found in the [Lakkhaṇasutta of the Dīgha-nikāya](/content/canon/dn30).
+A collection of K.R. Norman's five-part series of articles on the different meters found in [the 30th Sutta of the Dīgha Nikāya](/content/canon/dn30).

@@ -9,6 +9,7 @@ tags:
 subcat: fiction
 year: 2013
 olid: OL27181355M
+external_url: "https://archive.org/details/brandnewancients0000kate/mode/1up"
 publisher: "Picador"
 pages: 46
 ---

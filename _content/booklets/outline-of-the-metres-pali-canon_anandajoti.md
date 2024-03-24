@@ -13,4 +13,4 @@ month: may
 pages: 17
 ---
 
-A thorough and well-written treatise on meters that are found in the Pāli canon.
+A thorough and well-written treatise on the different poetic meters found in the Pāli canon.
