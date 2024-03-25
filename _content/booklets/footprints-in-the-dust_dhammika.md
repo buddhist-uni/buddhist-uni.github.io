@@ -20,5 +20,4 @@ pages: 240
 
 A down-to-earth biography of the Buddha based on the Pāli Canon.
 
-An interactive, electronic edition can be read [online here](https://wiswo.org/books/footprints/)
-and you can see a short (20-minute) interview with Bhante about the book [on YouTube](https://youtu.be/QWvbu4bmQLM) to get an idea of its contents and his humanistic approach.
+An interactive, electronic edition can be read [online here](https://wiswo.org/books/footprints/).

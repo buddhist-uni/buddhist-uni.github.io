@@ -4,4 +4,4 @@ status: unpublished
 parents: [indian, sutta]
 ---
 
-Rebirth stories in the Pāḷi Canon.
+Stories of past (and future) lives found in the Buddhist Canon.

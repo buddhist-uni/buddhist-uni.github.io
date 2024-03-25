@@ -11,7 +11,6 @@ tags:
   - animalia
 olid: OL32277821M
 external_url: "https://darrennaish.files.wordpress.com/2019/01/kosemen-2017-updated-edition-of-book-all-your-yesterdays.pdf"
-source_url: "https://irregularbooks.art/#all_your_yesterdays"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ofXHsVinNFQMuQiujRgnYXhjaEbSyfm-/view?usp=drivesdk"

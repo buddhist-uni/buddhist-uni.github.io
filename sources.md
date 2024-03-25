@@ -13,7 +13,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 ## Individual Authors
 
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html){:data-slug="analayo"} (at Hamburg)
-  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo-old/publications/){:data-slug="analayo"}
+  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo-old__trashed/publications/){:data-slug="analayo"}
 * [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html){:data-slug="geoff"}
 * [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK){:data-slug="sujato"}
 * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php){:data-slug="boowa"}

@@ -4,9 +4,8 @@ authors:
   - "Tim Harford"
 subcat: podcast
 editor: "Julia Barton"
-external_url: "https://youtu.be/vyF75uUElb4"
+external_url: "https://www.pushkin.fm/podcasts/cautionary-tales/bowie-jazz-and-the-unplayable-piano"
 source_url: "https://timharford.com/2019/12/cautionary-tales-ep-7-bowie-jazz-and-the-unplayable-piano/"
-another_source: "https://www.pushkin.fm/podcasts/cautionary-tales/bowie-jazz-and-the-unplayable-piano"
 alternate_url: "https://soundcloud.com/blinkist/cautionary-tales-bowie-jazz-and-the-unplayable-piano"
 course: world
 tags:
