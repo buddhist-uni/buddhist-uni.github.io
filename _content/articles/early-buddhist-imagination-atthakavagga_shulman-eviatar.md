@@ -9,10 +9,11 @@ course: canonical-poetry
 tags:
   - snp
   - imagery
+  - hermeneutics
 year: 2012
 journal: jiabs
 volume: 35
-number: 1-2
+number: 2
 pages: "363--411"
 ---
 
