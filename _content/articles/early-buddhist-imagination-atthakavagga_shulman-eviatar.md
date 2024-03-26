@@ -17,4 +17,9 @@ number: 2
 pages: "363--411"
 ---
 
-This article discusses the antiquity of the Aṭṭhakavagga, found in the Suttanipāta. It does not look at this chapter in an attempt to understand early Buddhist teachings, but instead as an early example of Buddhist poetry. Viewing the Aṭṭhakavagga this way reveals that the text is not concerned with historical doctrine. Rather, using metaphors and other ambigous expressions, the text aims to produce multiple levels of meaning. The article draws on and critiques older research on the Aṭṭhakavagga by scholars such as K.R. Norman and Tilmann Vetter.
+This article discusses the antiquity of the Aṭṭhakavagga, found in the Suttanipāta.
+It does not look at this chapter in an attempt to understand early Buddhist teachings, but instead as an early example of Buddhist poetry.
+
+Viewing the Aṭṭhakavagga this way reveals that the text is not concerned with historical doctrine.
+Rather, using metaphors and other ambigous expressions, the text aims to produce multiple levels of meaning.
+The article draws on and critiques older research on the Aṭṭhakavagga by scholars such as K.R. Norman and Tilmann Vetter.

@@ -21,4 +21,4 @@ pages: 738
 
 Still the most comprehensive dictionary of Pāḷi a hundred years later, the PED has today been thoroughly digitized and made available online.
 
-The PED is slowly being supplanted by a new *Dictionary of Pāli*, whose fourth and final volume [is currently under preparation by Martin Straube at the PTS](https://palitextsociety.org/current-projects-in-pali-studies/){:target="_blank"}.
+The PED is slowly being supplanted by a new [*Dictionary of Pāli*](https://gandhari.org/dop), whose fourth and final volume [is currently under preparation by Martin Straube](https://palitextsociety.org/current-projects-in-pali-studies/){:target="_blank"}.
