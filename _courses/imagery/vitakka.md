@@ -11,6 +11,7 @@ description: "We must be very careful where we place our thoughts, as one though
 <p>
 {% include content_blurb.html category="canon" slug="iti87" %} 
 {% include content_blurb.html category="canon" slug="an7.6" %}
+{% include content_blurb.html category="canon" slug="an5.12" %}
 </p>
 
 ### Similes
