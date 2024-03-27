@@ -5,6 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh135_Gunaratna_Message-of-the-Saints--Thera-Theri-Gatha.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1DVFxp_O5cu9jdlBUteDmqMLeku-mQ-lZ/view?usp=sharing"
+  - "https://drive.google.com/file/d/1QXpZ6KpNGl4vWCG_7S5BPtCAidYYEhQk/view?usp=sharing"
 course: canonical-poetry
 tags:
   - pali-literature
