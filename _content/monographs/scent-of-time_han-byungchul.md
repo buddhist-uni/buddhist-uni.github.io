@@ -1,7 +1,7 @@
 ---
 title: "The Scent of Time: A Philosophical Essay on the Art of Lingering"
 authors:
-  - "Byung-Chul Han"
+  - han-byung-chul
 translator: "Daniel Steuer"
 course: time # probably down to `present` in due course
 tags:

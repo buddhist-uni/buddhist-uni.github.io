@@ -12,7 +12,6 @@ tags:
   - present
   - dialogue
   - power
-  - karma
   - academic
 base_value: 2.25
 year: 1937

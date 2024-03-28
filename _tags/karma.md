@@ -10,8 +10,8 @@ illustration_center_x: 3%
 illustration_center_y: 20%
 illustration_caption: >-
   <a href="https://wellcomecollection.org/works/t3rd8ckv/images?id=pfqnz5un">This 1874 woodblock by Kawanabe Kyōsai</a>
-  depicts Japanese people dodging flames and turning into demons as they make alcohol, butcher meat, and blindly embrace "modernity."
-  Buddhists believe that such "Wrong Livelihood" lowers our consciousness to the level of ghosts or demons and should thus be avoided.
+  depicts Japanese people dodging flames and turning into demons as they make alcohol, butcher meat, and blindly embrace Western Capitalism.
+  Buddhists believe that "Wrong Livelihood" lowers our consciousness to the level of ghosts or demons.
 image: https://illeakyw.sirv.com/Images/banners/Good_deed.jpg
 image_width: 2560
 image_height: 1920

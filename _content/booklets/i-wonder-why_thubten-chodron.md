@@ -1,17 +1,16 @@
 ---
 title: "I Wonder Why"
 authors: [thubten-chodron]
-external_url: "https://archive.org/download/i-wonder-why-thubten-chodron/I%20Wonder%20Why%20-%20Thubten%20Chodron_text.pdf"
-source_url: "http://ftp.budaedu.org/ebooks/pdf/EN255.pdf"
+external_url: "https://thubtenchodron.org/books/i-wonder-why-2/"
+source_url: "https://archive.org/download/i-wonder-why-thubten-chodron/I%20Wonder%20Why%20-%20Thubten%20Chodron_text.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1jQUhPiTu9uFlaNQ4MuKmJrz8t0mUEs1Z/view?usp=sharing"
+  - "https://drive.google.com/file/d/1N1498Px9MjU5FiSMABT-Byz83hZuE6qs/view?usp=drivesdk"
 year: 1988
 olid: OL32580792M
 course: form
 tags:
-  - buddhism
-base_value: 2.5
+  - tantric
 pages: 105
 course_time_multiplier: 0.3
 ---

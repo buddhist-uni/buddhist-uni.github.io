@@ -158,6 +158,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="sn9.6" %}
   - How does an arahant see the world?
 
+{% include content_blurb.html category="canon" slug="an9.25" %}
+  - An Arahant is one whose mind is consolidated and beyond conditions.
+
 {% include content_blurb.html category="articles" slug="anuruddha-sutta_ireland" %}
   - To an enlightened being, even sensual pleasures are seen as painful for how fleeting they are indeed!
 

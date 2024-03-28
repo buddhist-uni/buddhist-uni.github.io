@@ -1,7 +1,7 @@
 ---
 title: "What is Power?"
 authors:
-  - "Byung-Chul Han"
+  - han-byung-chul
 year: 2019
 publisher: Polity
 course: power
