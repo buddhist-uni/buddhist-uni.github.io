@@ -58,6 +58,15 @@ def last_archived_datetime(url):
   return datetime.strptime(timestamp, '%Y%m%d%H%M%S')
 
 def extract_archiveorg_id(item):
+  """
+    Extracts the Archive.org ID from the given URL.
+
+    Args:
+      item (str): The URL to extract the Archive.org ID from.
+
+    Returns:
+      str or None: The extracted Archive.org ID if found, None otherwise.
+  """
   match = re.search(r'https?:\/\/archive.org\/details\/([\.a-zA-Z0-9_-]+)\/?', item)
   if match:
     return match.groups()[0]

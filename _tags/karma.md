@@ -1,8 +1,7 @@
 ---
 title: "Karma"
-status: unpublished
+status: published
 parents: [thought, cosmology]
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Japanese_Business_Man.jpg
 illustration_width: 760
 illustration_height: 1107
@@ -15,7 +14,9 @@ illustration_caption: >-
 image: https://illeakyw.sirv.com/Images/banners/Good_deed.jpg
 image_width: 2560
 image_height: 1920
-# big_image: https://upload.wikimedia.org/wikipedia/commons/a/a7/Good_deed.jpg
+big_image: https://upload.wikimedia.org/wikipedia/commons/a/a7/Good_deed.jpg
+big_width: 5184
+big_height: 3888
 image_center_x: 54%
 image_center_y: 25%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Good_deed.jpg">Maren Humburg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
