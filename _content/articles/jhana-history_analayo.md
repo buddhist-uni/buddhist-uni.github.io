@@ -22,4 +22,4 @@ openalexid: W2994116183
 > From pre-Buddhist antecedents via the Buddha’s own mastery of absorption until
 modern times, different constructs of absorption have developed which show considerable variation in terms of their concentrative depth and subjective experience.
 
-For [Ajahn Brahmali](/authors/brahmali)'s reactions to this article, see: ["What Ven. Anālayo gets wrong about samādhi"](https://discourse.suttacentral.net/t/what-ven-analayo-gets-wrong-about-samadhi-a-review-of-a-brief-history-of-buddhist-absorption/33175?u=khemarato.bhikkhu).
+For [Ajahn Brahmali](/authors/brahmali)'s reactions to this article, see: ["What Ven. Anālayo gets wrong about samādhi."](https://discourse.suttacentral.net/t/what-ven-analayo-gets-wrong-about-samadhi-a-review-of-a-brief-history-of-buddhist-absorption/33175?u=khemarato.bhikkhu)

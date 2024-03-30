@@ -15,3 +15,5 @@ minutes: 12
 > One of the greatest illusions in life is continuity...
 
 For the fascinating story of how we learned about this special day, millions of years ago, see [Preston, 2019](/content/articles/day-dinos-died_preston-douglas).
+
+And for an alternate theory of what killed the dinosaurs, see [Kurzgesagt's video on the Deccan Traps](https://youtu.be/pjoQdz0nxf4).

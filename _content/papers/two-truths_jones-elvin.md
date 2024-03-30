@@ -10,7 +10,6 @@ file_links:
   - "exclusive_01/Systems%20of%20Two%20Truths%20-%20Jones.pdf"
 course: dialogue
 tags:
-  - roots
   - tibetan-roots
   - mahayana
   - emptiness
