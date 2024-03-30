@@ -6,8 +6,8 @@ external_url: "https://link.springer.com/content/pdf/10.1007/s12671-021-01646-0.
 source_url: "https://doi.org/10.1007/s12671-021-01646-0"
 drive_links:
   - "https://drive.google.com/file/d/1yeFqRa4swCFipPotoNR4uJ0e9ui70AQT/view?usp=drivesdk"
+course: meditation
 tags:
-  - meditation
   - ebts
 year: 2021
 month: jul
