@@ -7,6 +7,7 @@ external_url: "https://doi.org/10.4324/9781315748115-46"
 drive_links:
   - "https://drive.google.com/file/d/1CyEP2bKyEYDKw-iWDx7THRm282GuISur/view?usp=drivesdk"
 course: roots
+status: featured
 tags:
   - modern
 year: 2014

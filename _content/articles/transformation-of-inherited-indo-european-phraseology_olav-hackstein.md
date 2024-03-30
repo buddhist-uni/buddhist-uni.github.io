@@ -6,6 +6,7 @@ external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134549&
 drive_links:
   - "https://drive.google.com/file/d/1NVzUGptMFQaElYOfbL64yDfZb5p90DSj/view?usp=sharing"
 course: karma
+status: featured
 tags:
   - language
   - pali-dictionaries

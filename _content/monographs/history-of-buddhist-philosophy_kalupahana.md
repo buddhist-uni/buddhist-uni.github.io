@@ -4,6 +4,7 @@ authors: [kalupahana]
 year: 1992
 external_url: "https://archive.org/details/historyofbuddhistphilosophycontinuitiesanddiscontinuitiesdavidkalupahanaj._915_e/mode/1up"
 publisher: hawaii
+status: featured # in the 2024-03 blog but as a direct link to keep this 4 stars
 course: dialogue
 tags:
   - roots

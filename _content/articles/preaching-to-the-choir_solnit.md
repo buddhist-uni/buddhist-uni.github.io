@@ -1,5 +1,5 @@
 ---
-title: "Preaching to The Choir"
+title: "Preaching to the Choir"
 authors:
   - solnit
 external_url: "https://harpers.org/archive/2017/11/preaching-to-the-choir/"
