@@ -8,8 +8,8 @@ drive_links:
   - "https://drive.google.com/file/d/1QXpZ6KpNGl4vWCG_7S5BPtCAidYYEhQk/view?usp=sharing"
 course: canonical-poetry
 tags:
-  - pali-literature
-  - theravada
+  - characters
+  - pali-canon
 year: 1969
 olid: OL51493374M
 oclc: 33110223
@@ -18,4 +18,5 @@ series: wheel
 number: 135
 pages: 23
 ---
-A collection of poems from the Thera and Therī Gāthā sections of the Pāli Canon, contains summaries of the commentarial background stories. It showcases the beauty and inspiration of the early Theravada elders, both monks and nuns.
+
+A collection of poems from the Thera and Therī Gāthās of the Pāli Canon, contains summaries of their commentarial background stories as well showcasing the inspiring stories of the early Buddhist monks and nuns.

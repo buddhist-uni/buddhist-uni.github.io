@@ -307,6 +307,9 @@ We finally come to the last, but perhaps most important, part of our course: the
 {% include content_blurb.html category="av" slug="stages-of-awakening_anandabodhi" %}
   - A short talk on balancing faith and knowledge against expectations.
 
+{% include content_blurb.html category="canon" slug="iti41" %}
+  - Those without "noble wisdom" are missing out.
+
 #### "Ah, What Bliss!" — Conclusion
 
 {% include content_blurb.html category="essays" slug="empty-citta_mahabua" %}

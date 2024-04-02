@@ -2,23 +2,28 @@
 title: "Inspiration from Enlightened Nuns"
 authors:
   - jootla
-external_url: "https://www.buddhanet.net/pdf_file/inspire-nuns6.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh349_Jootla_Inspiration-From-Enlightened-Nuns.html"
+alternate_url: "https://www.buddhanet.net/pdf_file/inspire-nuns6.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/10yFrRIAZP_VpMqX9ED-ac_oqSjOBdk5h/view?usp=drive_link"
-  - "https://drive.google.com/file/d/1OSzWjolklHUM_Fnfg9zT8Oht9m6vvkS_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SzRN5Pn-8uVfMMTqSfrFLS4eMIBSdfnG/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1RtRdfbV4yaFQGWBuVpe9Jnfsaj2-Yzia/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10yFrRIAZP_VpMqX9ED-ac_oqSjOBdk5h/view?usp=drive_link"
 formats: [pdf, epub, mp3]
-course: canonical-poetry
+course: canonical-poetry # solid
 tags:
-  - pali-literature
+  - pali-canon
   - imagery
+  - nuns
+  - thig
 year: 1984
 month: jan
 olid: OL9148953M
+series: wheel
+number: 349
 publisher: bps
-minutes: 124
+minutes: 33
 ---
 
-This is the official audiobook of Susan E. Jootla's 1984 print work of the same name. The book explores the poems from the Therigatha, a collection of poems written by venerable nuns (bhikkhunis). Therigatha is a part of the Pāli Canon.
+> When we confront our rebellious minds as we try to follow [the Buddha's] path, we can take heart from the tales of nuns who had to put forth years and years of intense, persistent effort before they eliminated all their defilements.
 
 You can also [listen to this book on Pariyatti's YouTube Channel](https://www.youtube.com/watch?v=_0Mhjcb26tA).
