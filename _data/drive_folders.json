@@ -279,6 +279,10 @@
   "private": "https://drive.google.com/drive/folders/1LxiUnQ8GafMqYfJeC68FTxQ8xeH4FbE7",
   "public": "https://drive.google.com/drive/folders/11vO86SK9DGAbLdmZbQqlRqATwdIjDwni"
  },
+ "chemistry": {
+  "private": "https://drive.google.com/drive/folders/16GLBj8Dm_yoDOWIJmH5tvG6xT6PmArqi",
+  "public": null
+ },
  "china": {
   "private": "https://drive.google.com/drive/folders/11b1pEgPlPBDSdEv96DqoMKip2NajZnC0",
   "public": null
@@ -337,6 +341,10 @@
  },
  "crime": {
   "private": "https://drive.google.com/drive/folders/1BxYMhph5sHxc0u8hnjZtW0snUwkmdYaH",
+  "public": null
+ },
+ "cs": {
+  "private": "https://drive.google.com/drive/folders/17giZBdGVbNEEv7HZxuG2wySVUJjSHZSY",
   "public": null
  },
  "da": {

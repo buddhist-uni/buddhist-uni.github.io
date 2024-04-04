@@ -12,6 +12,7 @@ description: "Insight, or literally \"clear seeing,\" is a result of paying clos
 {% include content_blurb.html category="canon" slug="sn22.122" %} 
 {% include content_blurb.html category="canon" slug="sn7.6" %}
 {% include content_blurb.html category="canon" slug="sn22.57" %}
+{% include content_blurb.html category="canon" slug="sn48.54" %}
 {% include content_blurb.html category="canon" slug="iti111" %}
 </p>
 

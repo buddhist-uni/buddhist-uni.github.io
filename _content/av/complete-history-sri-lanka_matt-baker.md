@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.youtube.com/watch?v=DH3lEbQkOzk"
 course: theravada-roots
 tags:
-  - sri-lanka
+  - south-asia
 year: 2022
 minutes: 47
 ---
