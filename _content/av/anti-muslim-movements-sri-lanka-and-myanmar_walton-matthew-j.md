@@ -9,11 +9,12 @@ course: theravada-roots
 tags:
   - sri-lanka
   - burma
-  - ideology 
+  - nationalism
+  - religion 
   - politics
 year: 2014
 month: aug
-series: Asian Studies Centre
+publisher: oxford
 minutes: 59
 ---
 
