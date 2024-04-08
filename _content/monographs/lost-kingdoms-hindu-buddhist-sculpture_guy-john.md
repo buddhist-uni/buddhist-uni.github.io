@@ -7,13 +7,13 @@ drive_links:
 course: theravada-roots
 tags:
   - bart
-  - southeast-asia
+  - sea
 year: 2014
 olid: OL38368022M
 oclc: 871203082
 publisher: "The Metropolitan Museum of Art"
 address: "New York"
-pages: 270
+pages: 305
 ---
 
-This exhibition catalog from The Met presents the world of Hindu-Buddhist sculptural art in Southeast Asia from the 5th to 8th centuries. It highlights little-known sculptural traditions, giving this geographical area of the art world its own independent voice. The work has many insightful essays from leading scholars in the fields of Hindu and Buddhist studies and Southeast Asian area studies. Besides looking at the artistic side of the sculptures, the included pieces and essays also tell the political history of the region. 
+This exhibition catalog from The Met presents the world of "Hindu-Buddhist sculptural art in early Southeast Asia" from the 5th to 8th centuries. It highlights little-known sculptural traditions, giving this geographical area of the art world its own independent voice. The work has many insightful essays from leading scholars in the fields of Hindu and Buddhist studies and Southeast Asian area studies. Besides looking at the artistic side of the sculptures, the included pieces and essays also tell the political history of the region. 
