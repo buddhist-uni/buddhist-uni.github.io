@@ -10,7 +10,6 @@ course: theravada-roots
 tags:
   - pali-literature
   - sanskrit
-  - ethics
   - literature
   - south-asia
 year: 2017
@@ -19,4 +18,4 @@ pages: "77--93"
 chapter: 4
 ---
 
-This book chapter explores ethics in Pāli literature, particularly during the medieval period in Sri Lanka. It delves into how moral values and cosmopolitan ideals were expressed and conveyed through literary works, shedding light on the intricate relationship between literature, morality, and societal values in medieval Pāli literary theory.
+This book chapter explores ethics in Pāli literature, particularly during the medieval period in Sri Lanka. It delves into how moral values and cosmopolitan ideals were expressed and conveyed through literary works, shedding light on the intricate relationship between literature, morality, and societal values especially in medieval, Theravāda literature.

@@ -8,7 +8,7 @@ drive_links:
 course: theravada-roots
 tags:
   - cosmology
-  - southeast-asia
+  - sea
   - maps
   - bart
 year: 1994
