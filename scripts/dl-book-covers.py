@@ -11,10 +11,27 @@ if not BOOKCOVER_DIR.is_dir():
   BOOKCOVER_DIR.mkdir()
 
 def download_cover(olid):
-  response = requests.get(f"https://covers.openlibrary.org/b/olid/{olid}-L.jpg?default=false")
-  assert response.status_code == 200
-  with open(BOOKCOVER_DIR.joinpath(f"{olid}.jpg"), "wb") as f:
-    f.write(response.content)
+  retries = 0
+  while retries < 4:
+    if retries > 0:
+      print("  Retrying...")
+    try:
+      response = requests.get(
+        f"https://covers.openlibrary.org/b/olid/{olid}-L.jpg?default=false",
+        timeout=15,
+        allow_redirects=True,
+      )
+      if response.status_code == 200 and response.content:
+        with open(BOOKCOVER_DIR.joinpath(f"{olid}.jpg"), "wb") as f:
+          f.write(response.content)
+        return True
+      else:
+        print(f"  Failed to download with status {response.status_code}")
+    except requests.exceptions.RequestException as e:
+      print(f"  Failed to download with error {e}")
+    retries += 1
+  raise RuntimeError(f"Failed to download {olid} 4 times")
+    
 
 website.load()
 for page in website.content:
