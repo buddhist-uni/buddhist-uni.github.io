@@ -9,6 +9,7 @@ course: sangha
 status: featured
 tags:
   - meditation
+  - time
   - an
 year: 2012
 pages: 2

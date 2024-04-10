@@ -13,4 +13,4 @@ year: 2012
 pages: 1
 ---
 
-Give conditions that help meditation progress smoothly.
+Five conditions that help meditation progress smoothly.

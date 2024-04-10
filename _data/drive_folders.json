@@ -283,6 +283,10 @@
   "private": "https://drive.google.com/drive/folders/16GLBj8Dm_yoDOWIJmH5tvG6xT6PmArqi",
   "public": null
  },
+ "childrens-dhamma": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1DJlzm5wIhjVHe_lvGuwCbuFPUSsnhLJ7"
+ },
  "china": {
   "private": "https://drive.google.com/drive/folders/11b1pEgPlPBDSdEv96DqoMKip2NajZnC0",
   "public": null
@@ -618,10 +622,6 @@
  "indian": {
   "private": "https://drive.google.com/drive/folders/12iE1rpRQ-_mPrFpj54j337XwMJlotYrA",
   "public": "https://drive.google.com/drive/folders/10VoXUOnt2ZHKdQS_MqfT3dr1zg8Lw0kk"
- },
- "indic-religion": {
-  "private": "https://drive.google.com/drive/folders/176_9SGd8XcIgYjJs5-avvASWEeHNVn1i",
-  "public": null
  },
  "indic-religions": {
   "private": "https://drive.google.com/drive/folders/176_9SGd8XcIgYjJs5-avvASWEeHNVn1i",
