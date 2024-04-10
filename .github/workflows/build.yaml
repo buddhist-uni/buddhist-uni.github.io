@@ -64,6 +64,25 @@ jobs:
             echo "All files have valid names."
             exit $exit_code
           fi
+      - name: Download prod build
+        uses: dawidd6/action-download-artifact@master
+        with:
+          workflow: build.yaml
+          branch: main
+          name: github-pages
+          path: prod
+      - name: Prepare cover images
+        run: |
+          cd $GITHUB_WORKSPACE/prod
+          tar -xf artifact.tar
+          cd assets/imgs
+          mkdir -p covers
+          mv covers/ "$GITHUB_WORKSPACE/assets/imgs/"
+          cd $GITHUB_WORKSPACE
+          rm -rf prod
+          cd scripts
+          pip install titlecase pyyaml python-frontmatter
+          python dl-book-covers.py
       - name: Install node
         uses: actions/setup-node@v4
         with:

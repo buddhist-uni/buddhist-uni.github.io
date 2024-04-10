@@ -5,9 +5,9 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/BL1/02Glassman.pdf"
 drive_links:
   - "https://drive.google.com/file/d/10YujWZaKFPw4DK0-Yu4kCO7kr_-zVxNn/view?usp=drivesdk"
-course: east-asian-roots
+course: medieval
 tags:
-  - medieval
+  - east-asian-roots
   - sengoku
 year: 1999
 journal: "the Journal of Buddhist Literature"

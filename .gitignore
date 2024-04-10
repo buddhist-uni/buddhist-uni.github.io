@@ -3,6 +3,7 @@ __pycache__
 node_modules
 exports
 assets/webfonts
+assets/imgs/covers/
 assets/css/purged-main.css
 _data/cssCacheToken.yml
 _drafts/_content

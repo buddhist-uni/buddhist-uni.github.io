@@ -24,7 +24,7 @@ layout: default
     <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
     {% if page.olid %}
-    <img src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false" alt="the book cover">
+    <img src="https://buddhistuniversity.net/assets/imgs/covers/{{ page.olid }}.jpg" alt="the book cover">
     {% endif %}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% if page.subcat %}{% include content_icon.html category=page.category subcat=page.subcat %} {% endif %}{{ title | first }}
