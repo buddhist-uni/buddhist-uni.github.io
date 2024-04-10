@@ -1,5 +1,5 @@
 ---
-title: "AN 3.25: A Diamond"
+title: "AN 3.25 Vajirūpama Sutta: A Diamond"
 translator: bodhi
 slug: "an.003.025"
 drive_links: ["https://drive.google.com/file/d/1yCUAj3gRFpXekCmp7Zd5y6a7iVCcUySY/view?usp=drivesdk"]
