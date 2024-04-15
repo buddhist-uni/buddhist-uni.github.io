@@ -9,7 +9,7 @@ year: 1998
 course: function
 tags:
   - meditation
-  - tibet-west
+  - western-tibetan
 pages: 57
 ---
 

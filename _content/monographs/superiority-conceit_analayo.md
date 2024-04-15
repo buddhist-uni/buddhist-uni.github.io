@@ -7,7 +7,6 @@ publisher: wisdom
 olid: OL29985207M
 tags:
   - form
-  - epistemology
   - dialogue
 pages: 192
 ---
