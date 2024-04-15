@@ -1,5 +1,5 @@
 ---
-title: "DN 5: The Kūṭadanta Sutta"
+title: "DN 5 Kūṭadanta Sutta: With Kūṭadanta"
 slug: "dn05"
 external_url: "https://suttacentral.net/dn5/en/sujato"
 translator: sujato
