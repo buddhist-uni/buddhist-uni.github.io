@@ -2,13 +2,15 @@
 title: "Notes on Brahmanic Gods in Theravadin Cambodia"
 authors:
   - "Saveros Pou"
-external_url: "http://www.asiainstitutetorino.it/Indologica/volumes/vol14/vol14_art23_POU.pdf"
+external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Notes%20on%20Brahmanic%20Gods%20in%20Theravadin%20Cambodia_text.pdf"
+source_url: "http://www.asiainstitutetorino.it/Indologica/volumes/vol14/vol14_art23_POU.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1zVR_86BJ2qojHQHUBExA-Rc6iPkf27Wc/view?usp=sharing"
 course: theravada-roots
 tags:
   - brahminic
-  - deities
+  - roots
+  - deva
 year: 1988
 journal: jiass
 publisher: "The Asia Institute"
