@@ -5,15 +5,15 @@ authors:
 external_url: "https://lecture2go.uni-hamburg.de/l2go/-/get/v/66544"
 drive_links:
   - "https://drive.google.com/file/d/1xXv8KXB81fjstkzVc3m8HxKdvHHlbLXU/view?usp=sharing"
+formats: [mp4]
 course: theravada-roots
 tags:
   - pali-literature
-  - thailand
-  - pali-commentaries
+  - lanna
 year: 2023
 month: may
-publisher: Numata Center for Buddhist Studies
-address: "Hamburg, GER"
+publisher: "Numata Center for Buddhist Studies"
+address: "Hamburg, Germany"
 minutes: 47
 ---
 
