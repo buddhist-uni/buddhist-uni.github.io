@@ -5,10 +5,10 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/openingdebate.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1q1u1XmUL7yaxFRSuKsk3jwc4eA5y-TPt/view?usp=sharing"
-course: theravada-roots
+course: dialogue
 tags:
   - anatta
-  - debate
+  - theravada-roots
 year: 2021
 journal: "Sri Lanka International Journal of Buddhist Studies"
 publisher:"Sri Lanka International Buddhist Academy" 
