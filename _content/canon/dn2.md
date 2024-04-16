@@ -1,5 +1,5 @@
 ---
-title: "DN 2: The Fruits of Recluseship"
+title: "DN 2 Sāmaññaphala Sutta: The Fruits of Recluseship"
 slug: "dn02"
 external_url: "https://suttacentral.net/dn2/en/bodhi"
 translator: bodhi
