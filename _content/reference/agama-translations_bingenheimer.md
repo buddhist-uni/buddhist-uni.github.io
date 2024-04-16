@@ -11,3 +11,4 @@ tags:
 year: 2001
 ---
 
+For an interactive version of the bibliography, see [this webapp](https://tripitaka.netlify.app/).

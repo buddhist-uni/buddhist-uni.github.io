@@ -17,4 +17,4 @@ address: "Hamburg, Germany"
 minutes: 47
 ---
 
-In this talk, Walker gives a brief overview of the intellectual culture of Lanna (present-day northern Thailand) during the late fifteenth and early sixteenth centuries. He proceeds to elucidate certain exegetical methods crafted by Lan Na monks and lay scholars throughout the initial century of Burmese governance, thus addressing notable gaps in scholarly understanding within the intellectual landscape of the late sixteenth and early seventeenth centuries.
+In this talk, Walker gives a brief overview of the intellectual culture of Lanna (present-day northern Thailand) during the late fifteenth and early sixteenth centuries. He proceeds to elucidate certain exegetical methods crafted by Lan Na monks and lay scholars throughout the initial century of Burmese governance, showing how Thai Buddhist culture came to accept and extend Burmese scholasticism.

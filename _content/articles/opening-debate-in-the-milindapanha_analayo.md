@@ -8,10 +8,10 @@ drive_links:
 course: dialogue
 tags:
   - anatta
-  - theravada-roots
+  - indian
 year: 2021
 journal: "Sri Lanka International Journal of Buddhist Studies"
-publisher:"Sri Lanka International Buddhist Academy" 
+publisher: "Sri Lanka International Buddhist Academy" 
 address: "Sri Lanka"
 volume: 7
 number: 2

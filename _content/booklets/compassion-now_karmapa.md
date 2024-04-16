@@ -1,7 +1,7 @@
 ---
 title: "Compassion Now!"
 authors:
-  - "The Karmapa, Ogyen Trinley Dorje"	
+  - "The Karmapa, Ogyen Trinley Dorje"
 translator: "Lama Yeshe Gyamtso"
 external_url: "https://dharmaebooks.org/compassion-now/"
 formats: [epub]

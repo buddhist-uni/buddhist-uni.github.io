@@ -19,4 +19,4 @@ pages: "7--22"
 openalexid: W2569186312
 ---
 
-A response to the Buddhist Modernists (especially [Jayatilleke](/content/monographs/early-buddhist-theory-of-knowledge_jayatilleke))	who claim that Dependent Origination is "scientific" explaining that the salvific goal of Buddhism makes its epistemology necessarily different from the descriptions of science.
+A response to the Buddhist Modernists (especially [Jayatilleke](/content/monographs/early-buddhist-theory-of-knowledge_jayatilleke)) who claim that Dependent Origination is "scientific" explaining that the salvific goal of Buddhism makes its epistemology necessarily different from the descriptions of science.

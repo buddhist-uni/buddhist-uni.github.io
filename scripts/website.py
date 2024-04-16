@@ -12,7 +12,7 @@ except:
   print("  pip install pyyaml python-frontmatter")
   quit(1)
 
-config = yaml.load(root_folder.joinpath('_config.yml').read_text(), Loader=yaml.CLoader)
+config = yaml.load(root_folder.joinpath('_config.yml').read_text(), Loader=yaml.Loader)
 baseurl = config.get('url')
 
 class JekyllFile(frontmatter.Post):

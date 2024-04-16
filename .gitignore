@@ -16,4 +16,5 @@ _site
 .gcache
 .jekyll-metadata
 .ruby-version
+.Rhistory
 *.swp

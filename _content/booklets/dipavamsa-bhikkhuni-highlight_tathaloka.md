@@ -1,5 +1,5 @@
 ---
-title: "Dipavamsa ~ Bhikkhuni Highlights: Selected Excerpts With Summaries and Comments From The Dipavamsa, an Ancient Buddhist Historical Record. "
+title: "Dipavamsa Bhikkhuni Highlights: Selected Excerpts With Summaries and Comments"
 editor: tathaloka
 translator: "Hermann Oldenberg"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/08/Diipavamsa_BhikkhuniHighlights.pdf"
@@ -20,4 +20,4 @@ through the great forest, the prince came to the ocean.
 The great four-fold army with the Bhikkhuni congregation at its head,
 proceeded to the great sea, carrying the excellent Bo tree.  
 
-Edited by Ayya Tathaaloa, this booklet consists of selected verses from the Dīpavaṃsa, the oldest historical record of Sri Lanka. These selecteion come from the Hermann Oldenberg's 1879 translation. Further, these selections cover King Ashoka's conversion, Mahinda's conversion of the island, as well as praises of the Buddha and Sangha while capturing the presence and importance of bhikkhunis.
+A few scenes from the oldest history of Sri Lanka highlighting the contributions of and attitudes towards the Buddhist nuns taken from Oldenberg's (public domain) 1879 translation.

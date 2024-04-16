@@ -9,7 +9,7 @@ drive_links:
 course: theravada-roots
 tags:
   - brahminic
-  - roots
+  - medieval
   - deva
 year: 1988
 journal: jiass

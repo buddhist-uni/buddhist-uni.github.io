@@ -8,5 +8,5 @@ years: 2013--2020
 publisher: bdk
 ---
 
-An ongoing effort by Bukkyō Dendō Kyōkai America to translate the Madhyama Āgama into four English volumes.
+The Bukkyō Dendō Kyōkai America's project to translate the Madhyama Āgama into English was split across four volumes:
 

@@ -256,6 +256,10 @@ Accepting our faults is a critical starting point for ethical development, and a
 
 ##### Chapter 10: Conclusion
 
+{% include content_blurb.html category="canon" slug="an10.73" %}
+- The Buddha summarizes the good things in life and how to get them.
+
+
 What did you think going through *The Way of the Bodhisattva* a second time? Was anything new?  How does it compare to the philosophy of the Pali Suttas? Did you notice any significant differences?
 
 At this point you should now have a firm grasp of Buddhist Ethics.  For our "Midterm Exam", write an essay comparing Buddhist Ethics to the popular ethics of your own culture. What do they agree on? Where do they diverge?
