@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1geKxM6-0Z2OPMAKBQz5kSrITjM2WZ1Y1/view?usp=drivesdk"
 course: nuns
 tags:
-  - australian
+  - australasian
 year: 2009
 month: jul
 journal: "Bangkok Post"

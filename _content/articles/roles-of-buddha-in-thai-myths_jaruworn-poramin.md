@@ -11,7 +11,7 @@ tags:
   - thai
   - jataka
   - medieval
-  - myths
+  - myth
 year: 2005
 journal: "Manusya"
 volume: 9

@@ -8,7 +8,7 @@ year: 2012
 course: monastic
 journal: present
 tags:
-  - australian
+  - australasian
 pages: 2
 ---
 

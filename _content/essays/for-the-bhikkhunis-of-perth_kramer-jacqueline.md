@@ -10,7 +10,7 @@ tags:
   - monastic
   - nuns
   - bhikkhuni
-  - australian
+  - australasian
 pages: 2
 ---
 

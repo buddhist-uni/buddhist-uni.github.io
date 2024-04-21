@@ -9,7 +9,7 @@ drive_links:
 course: thai-forest
 tags:
   - nature
-  - australian
+  - australasian
 minutes: 50
 ---
 

@@ -22,6 +22,9 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Lotus_flower_(97865
 {% include content_blurb.html category="canon" slug="sn55.51" %}
 - At the end of that sutta, Koṇḍañña "understood".  What did he understand?  And how do we follow his example?
 
+{% include content_blurb.html category="canon" slug="iti97" %}
+- The Buddha summarizes this ultimate goal of the teachings as the perfection of the threefold training in Sīla, Samādhi and Paññā.
+
 {% include content_blurb.html category="canon" slug="iti93" %}
 - And lastly, a short poem on enlightenment from the Buddha himself.
 
