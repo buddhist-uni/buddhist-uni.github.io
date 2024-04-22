@@ -8,8 +8,8 @@ drive_links:
   - "https://play.google.com/store/books/details?id=FmhIrCNdttsC"
   - "https://drive.google.com/file/d/1t3f2dSTwYQMFhq8HZEwpNOSImqWh5Odc/view?usp=drivesdk"
 formats: [GBook, epub]
-course: intellect # maybe 2 stars
 tags:
+  - intellect
   - education
 year: 1910
 olid: OL27920458M
