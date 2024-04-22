@@ -20,4 +20,4 @@ pages: 168
 
 > [Psychoanalysis] rearranges things inside the mind the way surgery rearranges things inside the body. It’s that impersonal and that radical. [Yet] the changes achieved are very small.
 
-An excellent—thoughtful, funny—introduction to the world of Freudian psychoanalysis centered around the "case study" of one (pseudonymous) New York analyst, placing his work in the context of his field, its histories and controversies.
+An excellent—thoughtful, funny—introduction to the world of Freudian psychoanalysis centered around the "case study" of one (pseudonymous) New York analyst, placing his work in the context of the field, its histories and its controversies.
