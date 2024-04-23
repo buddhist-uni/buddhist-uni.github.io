@@ -1,5 +1,5 @@
 ---
-title: "The Dharmacakrapravartana Sūtra"
+title: "Lal 26 Dharmacakrapravartana Sūtra"
 slug: "lal.26"
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces-in-Sanskrit/Dharmacakrapravartanasutram.htm"

@@ -1,5 +1,5 @@
 ---
-title: "Khuddakapāṭha"
+title: "The Khuddakapāṭha"
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Khuddakapatha/Khuddakapatha.htm"
 drive_links: 

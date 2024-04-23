@@ -11,26 +11,43 @@ layout: default
   <div class="post-content">
     <div class="description">{{ content }}</div>{% unless site.partial_build %}
     <div class="content">
-      <h2>Selected Works <small>(in chronological order)</small></h2>
-        {% capture filter %}c.authors contains '{{ page.slug }}'{% endcapture %}
+    {% capture filter %}c.authors contains '{{ page.slug }}'{% endcapture %}
     {% assign contents = site.content | where_exp: "c", filter %}
     {% capture filter %}c.translator contains " and {{page.slug}}" or c.translator contains "{{page.slug}} and " or c.translator == "{{page.slug}}"{% endcapture %}
-    {% assign transcont = site.content | where_exp: "c", filter %}
+    {% assign transcont = site.content | where_exp: "c", filter | where_exp: "c", "c.status != 'rejected'" | sort: "slug" %}
     {% capture filter %}c.editor contains " and {{page.slug}}" or c.editor contains "{{page.slug}} and " or c.editor == "{{page.slug}}"{% endcapture %}
     {% assign editcont = site.content | where_exp: "c", filter %}
     {% assign readcont = site.content | where: "reader", page.slug %}
-    <div>{% include content_list.html contents=contents orderby="year" %}</div>
-    {% if readcont.size > 0 %}
-    <h3 id="readings">Readings:</h3>
-    <div>{% include content_list.html contents=readcont orderby="year" %}</div>
-    {% endif %}
-    {% if editcont.size > 0 %}
-    <h3 id="edits">Edited:</h3>
-    <div>{% include content_list.html contents=editcont orderby="year" %}</div>
-    {% endif %}
+  
+    {%- assign contents = contents | concat: editcont | concat: readcont | where_exp: "c", "c.status != 'rejected'" -%}
+    {%- assign editcont = editcont | map: "url" -%}
+    {%- assign c_by_year = contents | group_by: "year" | sort: "name" -%}
+    <h2>Selected Works by year</h2>
+    <div>
+      <p>{%- for year in c_by_year -%}<a href="#{{year.name}}">{{year.name}}</a>{% unless forloop.last %} • {% endunless %}{%- endfor -%}</p>
+        {%- if transcont.size > 0 -%}
+          <p><a href="#translations">Click here</a> to see {{ page.title }}'s translations.</p>
+        {%- endif -%}    
+      {%- for year in c_by_year -%}
+        <h3 id="{{year.name}}">{{year.name}}</h3>
+        {%- assign year_items = year.items | sort: 'title' -%}
+        <div class="minimal_content_list">
+          {% for c in year_items %}<div class="mb-3 inline_content">
+            {% case c.stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{%- include_cached content_icon.html category=c.category subcat=c.subcat -%}
+            <a href="{{c.url}}">{{ c.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+            {%- if editcont contains c.url -%}(edited){%- endif -%}
+          </div>{% endfor %}
+        </div>
+      {%- endfor -%}
+    </div>
     {% if transcont.size > 0 %}
     <h3 id="translations">Translations by {{ page.title }}:</h3>
-    <div>{% include content_list.html contents=transcont orderby="slug" %}</div>
+    <div class="minimal_content_list">
+      {% for c in transcont %}<div class="mb-3 inline_content">
+        {% case c.stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{%- include_cached content_icon.html category=c.category subcat=c.subcat -%}
+        <a href="{{c.url}}">{{ c.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+      </div>{% endfor %}
+    </div>
     {% endif %}
     </div>{% endunless %}
   </div>
