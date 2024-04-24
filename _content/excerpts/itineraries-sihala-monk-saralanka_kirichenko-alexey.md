@@ -1,5 +1,5 @@
 ---
-title: "The Itineraries of “Sīhaḷa Monk” Sāralaṅkā"
+title: "The Itineraries of “Sīhaḷa Monk” Sāralaṅkā: Buddhist Interactions in Eighteenth-Century Southern Asia"
 authors:
   - "Alexey Kirichenko"
 external_url: "https://muse.jhu.edu/pub/5/oa_edited_volume/chapter/2379328/pdf"
@@ -8,11 +8,12 @@ drive_links:
   - "https://drive.google.com/file/d/1D3v6tfZAdCfYWN6QhqOo4ZSWtX4UbGBk/view?usp=sharing"
 course: theravada-roots
 tags:
-  - sri-lankan-roots
-  - vinaya-studies
+  - monastic
+  - nationalism
   - pali-literature
 year: 2019
-booktitle: "Buddhist Interactions in Eighteenth-Century Southern Asia"
+booktitle: "Buddhist and Islamic Orders in Southern Asia: Comparative Perspectives"
+chapter: 3
 pages: "48--74"
 ---
 
