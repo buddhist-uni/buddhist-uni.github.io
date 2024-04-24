@@ -13,7 +13,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 ## Individual Authors
 
 * [Bhikkhu Analayo's scholarly work](https://www.buddhismuskunde.uni-hamburg.de/en/personen/analayo.html){:data-slug="analayo"} (at Hamburg)
-  * [Ven Anayalo’s Work at the Barre Center for Buddhist Studies](https://www.buddhistinquiry.org/resources/offerings-analayo-old__trashed/publications/){:data-slug="analayo"}
 * [DhammaTalks.org](https://www.dhammatalks.org/ebook_index.html){:data-slug="geoff"}
 * [Bhante Sujato's books on Lulu](https://www.lulu.com/search?adult_audience_rating=00&page=1&pageSize=10&q=sujato&project_type=EBOOK){:data-slug="sujato"}
 * [Ajahn Maha Boowa](http://www.luangta.eu/site/books.php){:data-slug="boowa"}
@@ -69,7 +68,8 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)
-* [The Directory of Open Access Books](https://directory.doabooks.org/)
+* [The Directory of Open Access Books](https://www.doabooks.org/)
+* [The Directory of Open Access Journals](https://doaj.org/)
 * [Archive.org](https://archive.org/search.php?query=dhamma%20OR%20buddhism%20OR%20buddhist)
 * [The SocArXiv](https://osf.io/preprints/socarxiv/discover?q=Buddhist)
 * [The MindRxiv](https://mindrxiv.org/discover?subject=MindRxiv%7CArts%20and%20Humanities%7CReligion%7CBuddhist%20Studies)
@@ -100,7 +100,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [84000.co](https://84000.co/)
 * [Hong Kong University Theses](https://hub.hku.hk/handle/10722/50080)
-* [The Met](https://www.metmuseum.org/art/metpublications/search-publication-results?searchType=C&Tag=Buddhism&title=&author=&pt=0&tc=0&dept=0&fmt=downloadpdf&sort=PublicationYear%7CDesc)
+* [The Met](https://www.metmuseum.org/search-results?q=buddhist&searchFacet=Publications)
 * [Oxford Buddhist Bibliographies](https://www.oxfordbibliographies.com/browse?module_0=obo-9780195393521)
 * [Pressbooks](https://pressbooks.directory/)
 * [OpenStax](https://openstax.org/subjects)
