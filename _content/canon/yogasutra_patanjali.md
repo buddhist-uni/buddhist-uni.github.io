@@ -3,11 +3,8 @@ title: "The Yoga Sūtra"
 authors:
   - "Śrī Patañjali"
 translator: "Khemarato Bhikkhu"
-external_url: "https://buddhistuniversity.net/patanjali-yoga-sutra/"
+external_url: "https://khemarato.github.io/patanjali-yoga-sutra/"
 source_url: "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_pataJjali-yogasUtra-alt.htm"
-file_links:
-  - "patanjali-yoga-sutra/YogaSutra.pdf"
-formats: [pdf]
 pages: 14
 course: indic-religions
 tags:
@@ -17,7 +14,6 @@ tags:
 # can add "path" tag after I add my commentary
 year: 2022
 month: jul
-publisher: "The Open Buddhist University Press"
 ---
 
 > Yoga is now explained.
