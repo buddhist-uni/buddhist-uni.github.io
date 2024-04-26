@@ -7,7 +7,6 @@ publisher: Polity
 course: power
 tags:
   - ideology
-  - dialogue
   - social
 oclc: 1114608461
 address: Cambridge

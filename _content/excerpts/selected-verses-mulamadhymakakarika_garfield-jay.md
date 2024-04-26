@@ -11,7 +11,6 @@ formats: [pdf]
 status: featured
 course: view
 tags:
-  - nagarjuna
   - madhyamaka
   - mahayana
   - emptiness

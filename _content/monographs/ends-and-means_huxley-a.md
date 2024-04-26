@@ -10,9 +10,7 @@ tags:
   - perennial
   - philosophy-of-science
   - present
-  - dialogue
   - power
-  - academic
 base_value: 2.25
 year: 1937
 status: featured
