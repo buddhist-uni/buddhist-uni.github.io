@@ -12,6 +12,7 @@ drive_links:
   - "https://drive.google.com/file/d/12n0M2W3uzUCsRwb3rt6fVHoZdIbivKii/view?usp=drivesdk"
 course: nature
 year: 1987
+olid: OL51670502M
 series: wheel
 number: 346
 publisher: bps

@@ -33,8 +33,11 @@ for fp in local_files:
     gf = None
     for f in gfs:
       if REMOTE_FOLDER in f['parents']:
+        if gf is not None:
+            print(gf['id'])
+            print(f['id'])
+            raise RuntimeError("WARNING! Found multiple files with that same name in the Go Through Folder on Drive!")
         gf = f
-        break
     if gfs and not gf:
       print("File moved already! Moving on...")
       fp.unlink()
@@ -62,10 +65,10 @@ for fp in local_files:
     query = fp.stem.replace("_text", "").split(" -")[0]
     work, _ = prompt_for_work(query.replace("_", " "))
     if work:
+      gdrive.move_gfile(glink, gfolder)
       filepath = make_library_entry_for_work(work, course=course, glink=glink)
       print(f"\nOpening {filepath}\n")
       system_open(filepath)
-      gdrive.move_gfile(glink, gfolder)
       fp.unlink()
       exit(0)
     else:

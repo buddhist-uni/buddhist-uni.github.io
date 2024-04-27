@@ -11,6 +11,8 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Luang_Phor_Somchai_
 
 **Chapter 4: _Purity_** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
+{% include content_box.html category="articles" slug="meditation-retreat-better-vacation_blasche-gerhard-et-al" %}
+
 {% include content_box.html category="articles" slug="putting-cruelty-first_shklar-judith" %}
 
 {% include content_box.html category="canon" slug="sn38.2" %}
