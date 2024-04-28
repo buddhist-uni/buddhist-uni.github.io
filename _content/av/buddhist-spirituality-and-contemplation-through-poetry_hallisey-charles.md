@@ -8,8 +8,11 @@ drive_links:
   - "https://drive.google.com/file/d/1gTxUCv3VpxponxLrc_C2Pom3Mgxwqasu/view?usp=drive_link"
 course: theravada-roots
 tags:
-  - path
+  - dialogue
   - perception
+  - bart
+  - canonical-poetry
+  - nature
 year: 2018
 month: oct
 minutes: 88
