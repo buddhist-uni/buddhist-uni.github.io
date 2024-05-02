@@ -451,7 +451,7 @@ EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,p
 def files_exactly_named(file_name):
   f = file_name.replace("'", "\\'")
   return session().files().list(
-    q=f"name='{f}' AND 'me' in owners AND mimeType!='application/vnd.google-apps.shortcut'",
+    q=f"name='{f}' AND 'me' in owners AND mimeType!='application/vnd.google-apps.shortcut' AND trashed=false",
     fields=EXACT_MATCH_FIELDS,
   ).execute()['files']
 

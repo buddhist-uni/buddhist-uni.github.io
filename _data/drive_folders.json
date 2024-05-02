@@ -543,6 +543,10 @@
   "private": "https://drive.google.com/drive/folders/19U9DD3OSoHpDV-mAc-kLfJEiNr978jhI",
   "public": ""
  },
+ "germany": {
+  "private": "https://drive.google.com/drive/folders/10vbdXrXf8tlS-sR3ClneXjhTjd90Noyw",
+  "public": null
+ },
  "globalization": {
   "private": "https://drive.google.com/drive/folders/1TzSDCARIi6ThAysMLQA9Jb1VHeCKPkIw",
   "public": ""
@@ -830,6 +834,10 @@
  "mandarin": {
   "private": "https://drive.google.com/drive/folders/1006UiP7prrsywNYqXert7VZRUhEYNRuJ",
   "public": ""
+ },
+ "manuscripts": {
+  "private": "https://drive.google.com/drive/folders/13Z7ad4L-IbxNRH9LwUwjRGuNfyV4hdUD",
+  "public": null
  },
  "maps": {
   "private": "https://drive.google.com/drive/folders/1UAIe94MZ5lDWtOkXVlDYUHRdCeGLqeF0",

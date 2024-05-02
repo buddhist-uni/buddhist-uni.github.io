@@ -57,7 +57,7 @@ for fp in local_files:
     course = predictor.predict([text], normalized=True)[0] + "/unread"
   course = input_with_tab_complete("course: ", course_list, prefill=course)
   gfolder = gdrive.get_gfolders_for_course(course)
-  if "/" not in course:
+  if gfolder[0]:
     from openaleximporter import (
       prompt_for_work,
       make_library_entry_for_work,
