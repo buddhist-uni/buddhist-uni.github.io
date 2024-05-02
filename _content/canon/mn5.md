@@ -1,5 +1,5 @@
 ---
-title: "MN 5: Unblemished"
+title: "MN 5 Anaṅgaṇa Sutta: Unblemished"
 translator: sujato
 external_url: "https://suttacentral.net/mn5/en/sujato"
 slug: "mn005"

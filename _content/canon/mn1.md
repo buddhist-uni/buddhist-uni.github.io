@@ -1,5 +1,5 @@
 ---
-title: "MN 1: Mūlapariyāya Sutta (The Root of All Things)"
+title: "MN 1 Mūlapariyāya Sutta: The Root of All Things"
 slug: "mn001"
 translator: geoff
 external_url: "https://accesstoinsight.org/tipitaka/mn/mn.001.than.html"

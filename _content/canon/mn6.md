@@ -1,5 +1,5 @@
 ---
-title: "MN 6: One Might Wish"
+title: "MN 6 Ākaṅkheyya Sutta: One Might Wish"
 slug: "mn006"
 translator: sujato
 external_url: "https://suttacentral.net/mn6/en/sujato"
