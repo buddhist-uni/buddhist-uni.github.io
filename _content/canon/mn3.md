@@ -1,5 +1,5 @@
 ---
-title: "MN 3: Heirs in the Teaching"
+title: "MN 3 Dhammadāyāda Sutta: Heirs in the Teaching"
 translator: sujato
 slug: "mn003"
 external_url: "https://suttacentral.net/mn3/en/sujato"

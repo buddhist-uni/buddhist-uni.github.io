@@ -1,5 +1,5 @@
 ---
-title: "MN 2: Sabbāsava Sutta (All the Taints)"
+title: "MN 2 Sabbāsava Sutta: All the Taints"
 slug: "mn002"
 translator: bodhi
 external_url: "https://suttacentral.net/mn2/en/bodhi"
