@@ -1,5 +1,5 @@
 ---
-title: "Mindfulness‐based Interventions for Obesity‐related Eating Behaviours: A Literature Review"
+title: "Mindfulness-based Interventions for Obesity-related Eating Behaviours: A Literature Review"
 authors:
   - "Gillian O’Reilly"
   - "Lauren Cook"
