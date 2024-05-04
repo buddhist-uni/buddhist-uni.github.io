@@ -2,7 +2,6 @@
 title: "Buddhist Spirituality and the Contemplation of Nature Through Poetry"
 authors:
   - hallisey-charles
-subcat: poetry
 external_url: "https://www.youtube.com/watch?v=Shwt5kEc7ww"
 drive_links:
   - "https://drive.google.com/file/d/1gTxUCv3VpxponxLrc_C2Pom3Mgxwqasu/view?usp=drive_link"
@@ -11,6 +10,7 @@ tags:
   - dialogue
   - perception
   - bart
+  - poetry 
   - canonical-poetry
   - nature
 year: 2018
