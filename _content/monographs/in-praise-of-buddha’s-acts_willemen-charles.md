@@ -4,8 +4,10 @@ translator: "Charles Willemen"
 external_url: "https://bdkamerica.org/download/1896"
 drive_links:
   - "https://drive.google.com/file/d/1ogsp86UfZguXkm1Z_qVrd2fCggIxKfX0/view?usp=sharing"
-course: rebirth-stories
+course: canonical-poetry
 tags:
+  - buddha
+  - mahayana-roots
   - classical-poetry
   - literature
 year: 2009
