@@ -1,6 +1,6 @@
 ---
 title: "Early Buddhist Wisdom"
-authors: [sujato, brahmali]
+authors: [sujato]
 source_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajahn-brahmali-ajahn-sujato/"
 month: jun
 year: 2013
@@ -11,7 +11,6 @@ tags:
   - ebts
 series: early-buddhism_sujato-brahmali
 number: 5
-base_value: 0.6
 minutes: 242
 ---
 

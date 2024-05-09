@@ -102,7 +102,7 @@ The class is structured into 10 "weeks." Each week assigns some suttas and other
 But before we get started, here is a brief introduction to Wisdom in Early Buddhism.
 
 {% include content_blurb.html category="av" slug="early-buddhism_wisdom_sujato-and-brahmali" %}
-- Bhante Sujato and Brahmali give us a guest lecture on wisdom to start our course.
+- Bhante Sujato gives us a guest lecture on wisdom to start our course.
 - They introduce the main points we'll analyze in depth, and also briefly explain why this course doesn't follow the “conventional versus ultimate realities” dichotomy that many have used to explain Buddhist philosophy.
 - **Start here!**
 

@@ -80,9 +80,13 @@ jobs:
           mv covers/ "$GITHUB_WORKSPACE/assets/imgs/"
           cd $GITHUB_WORKSPACE
           rm -rf prod
-          cd scripts
-          pip install titlecase pyyaml python-frontmatter
-          python dl-book-covers.py
+          if git show | grep -q "olid"; then
+              cd scripts
+              pip install titlecase pyyaml python-frontmatter
+              python dl-book-covers.py
+          else
+              echo "The previous commit didn't touch any olid's, so short-circuiting the download script"
+          fi
       - name: Install node
         uses: actions/setup-node@v4
         with:
