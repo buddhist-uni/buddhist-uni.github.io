@@ -8,7 +8,7 @@ year: 2007
 course: inner
 tags:
   - religion
-  - craft
+  - writing-fiction
 subcat: fiction
 pages: 224
 ---

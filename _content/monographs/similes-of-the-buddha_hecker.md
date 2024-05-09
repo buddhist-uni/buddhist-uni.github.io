@@ -11,7 +11,7 @@ tags:
   - philosophy
   - ebts
   - pedagogy
-  - craft
+  - writing
 year: 2009
 publisher: bps
 pages: 110

@@ -13,7 +13,6 @@ tags:
   - american-mahayana
   - japan
   - soto
-  - craft
   - memoir
   - ambulit
   - pottery

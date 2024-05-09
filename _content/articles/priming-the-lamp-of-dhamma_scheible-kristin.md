@@ -12,7 +12,6 @@ course: hermeneutics
 tags:
   - sri-lankan
   - iddhi
-  - craft
   - pedagogy
   - myth
   - form

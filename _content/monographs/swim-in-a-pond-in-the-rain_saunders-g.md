@@ -2,7 +2,7 @@
 title: "A Swim in a Pond in the Rain: In Which Four Russians Give a Master Class on Writing, Reading, and Life"
 authors:
   - "George Saunders"
-course: craft
+course: writing-fiction
 tags:
   - reading
   - short-stories

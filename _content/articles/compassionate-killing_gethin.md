@@ -11,7 +11,6 @@ status: featured
 tags:
   - karma
   - abhidhamma
-  - mara
   - theravada
   - psychology
   - power

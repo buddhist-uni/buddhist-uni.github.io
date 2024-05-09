@@ -125,6 +125,7 @@ collections:
        - buddha.md
        - characters.md
        - pali-canon.md
+       - anapanasati.md
        - samatha.md
        - vipassana.md
        - samadhi.md
@@ -142,10 +143,12 @@ collections:
        - brahmavihara.md
        - mahayana.md
        - sangha.md
+       - compassion.md
        - lay.md
        - monastic.md
        - dana.md
        - imagery.md
+       - satipatthana.md
        - canonical-poetry.md
        - dhp.md
        - ud.md
@@ -192,11 +195,13 @@ collections:
        - sects.md
        - abhidharma.md
        - rebirth-stories.md
+       - mara.md
        - jataka.md
        - vv.md
        - pv.md
        - avadana.md
        - east-asian.md
+       - pureland.md
        - tantric.md
        - japanese.md
        - zen.md
@@ -226,6 +231,7 @@ collections:
        - american.md
        - ambulit.md
        - academic.md
+       - chaplaincy.md
        - selling.md
        - becon.md
        - underage.md
@@ -248,6 +254,7 @@ collections:
        - perception.md
        - psychology.md
        - time.md
+       - grief.md
        - communication.md
        - intellect.md
        - ideology.md
@@ -262,22 +269,33 @@ collections:
        - science.md
        - future.md
        - aging.md
+       - health.md
        - biology.md
+       - medicine.md
        - race.md
+       - politics.md
        - law.md
+       - caste.md
        - gender.md
+       - desire.md
        - families.md
        - food.md
        - animalia.md
+       - senses.md
        - natural.md
+       - neuroscience.md
+       - writing.md
        - economics.md
        - capitalism.md
        - media.md
+       - philosophy-of-science.md
+       - materialism.md
        - internet.md
        - language.md
        - literature.md
        - art.md
        - poetry.md
+       - craft.md
        - music.md
        - historiography.md
        - asia.md
@@ -303,6 +321,7 @@ collections:
        - maps.md
        - books.md
        - mandarin.md
+       - architecture.md
   categories:
      output: true
      permalink: /content/:path

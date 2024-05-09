@@ -30,7 +30,6 @@ To use RSS, copy one of the feed URLs below into [an RSS reader](https://en.wiki
 
 ### Library Content by Topic
 
-{% assign alltags = site.tags | sort: "title" %}
-| Buddhism (General) | [{{ "/feed/content/buddhism.xml" | absolute_url }}](/feed/content/buddhism.xml) |
-{% for tag in alltags %}{% if tag.slug == "buddhism" %}{% continue %}{% endif %}| {{ tag.title }} | [{{ "/feed/content/" | append: tag.slug | append: ".xml" | absolute_url }}](/feed/content/{{ tag.slug }}.xml) |
+{% assign alltags = site.tags %}
+{% for tag in alltags %}| {{ tag.title }} | [{{ "/feed/content/" | append: tag.slug | append: ".xml" | absolute_url }}](/feed/content/{{ tag.slug }}.xml) |
 {% endfor %}
