@@ -6,8 +6,7 @@ authors:
 years: 2020
 category: av
 tags:
-  - pali-literature
-  - theravada-roots
+  - path
   - vsm
 ---
 
