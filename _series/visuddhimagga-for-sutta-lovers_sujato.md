@@ -1,5 +1,5 @@
 ---
-title: "The Visuddhimagga for Sutta lovers"
+title: "The Visuddhimagga for Sutta Lovers"
 external_url: "https://learn.dhammanet.org/courses/introductory/the-visuddhimagga-for-sutta-lovers/"
 authors:
   - sujato
