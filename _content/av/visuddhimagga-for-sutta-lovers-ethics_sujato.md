@@ -17,4 +17,4 @@ number: 2
 minutes: 56
 ---
 
-In this second part of his four-part series on the Visuddhimagga, Bhante Sujato covers the develoopment of right conduct according to Buddhaghosa.
+In this second part of his four-part series on the Visuddhimagga, Bhante Sujato covers the development of right conduct according to Buddhaghosa.
