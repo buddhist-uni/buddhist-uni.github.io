@@ -5,7 +5,7 @@ authors:
 external_url: "https://budblooms.org/2020/04/04/erotica-in-the-pali-tipitaka/"
 drive_links:
   - "https://drive.google.com/file/d/1a7m_UW8XiaCIxYoJXr3eQSrLSzupICbV/view?usp=drive_link"
-course: rebirth-stories
+course: canonical-poetry
 tags:
   - pali-literature
   - jataka
