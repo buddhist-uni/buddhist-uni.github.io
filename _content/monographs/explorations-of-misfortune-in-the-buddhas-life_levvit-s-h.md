@@ -8,7 +8,6 @@ drive_links:
   - "https://drive.google.com/file/d/1dvQCgO2ZnVS6jpbLL4NvK_ye4_qaT0bj/view?usp=drivesdk"
 course: rebirth-stories
 tags:
-  - pali-literature
   - bodhisatta
   - apadana
   - buddha

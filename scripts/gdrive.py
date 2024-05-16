@@ -286,8 +286,8 @@ def _perform_upload(file_metadata, media, verbose=True):
 
 def create_folder(name, parent_folder):
   # dance to invalidate the get_subfolders cache
-  cachekey = get_subfolders._get_output_identifiers(parent_folder)
-  get_subfolders.store_backend.clear_item(cachekey)
+  cachekey = get_subfolders._get_args_id(parent_folder)
+  get_subfolders.store_backend.clear_item((get_subfolders.func_id, cachekey))
   metadata = {
     'name': name,
     'mimeType': 'application/vnd.google-apps.folder',

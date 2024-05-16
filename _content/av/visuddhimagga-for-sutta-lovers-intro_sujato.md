@@ -1,5 +1,6 @@
 ---
 title: "Introduction And Historical Background to the Visuddhimagga"
+subcat: course
 authors:
   - sujato
 external_url: "https://www.youtube.com/watch?v=JbD1tT3tb2Q"

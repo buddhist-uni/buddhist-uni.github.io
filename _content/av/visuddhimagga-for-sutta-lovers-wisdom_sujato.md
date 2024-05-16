@@ -1,5 +1,6 @@
 ---
 title: "Wisdom: How To See Reality According to the Visuddhimagga"
+subcat: course
 authors:
   - sujato
 external_url: "https://www.youtube.com/watch?v=Qji6Cb9K75o"

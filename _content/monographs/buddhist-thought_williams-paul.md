@@ -8,7 +8,7 @@ address: London
 olid: OL3777039M
 publisher: Routledge
 tags:
-  - indian
+  - dialogue
 pages: 322
 ---
 

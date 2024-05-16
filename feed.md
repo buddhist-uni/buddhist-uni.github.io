@@ -14,7 +14,6 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Origami_(137774980
 
 RSS is a web technology that allows you to get notified when content is added to your favorite websites.
 To use RSS, copy one of the feed URLs below into [an RSS reader](https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators){:target="_blank"} or [RSS-to-email service](https://blogtrottr.com/){:target="_blank"}.
-
 For more tips on using RSS and for links to other Buddhist feeds, see [the RSS wiki on SuttaCentral](https://discourse.suttacentral.net/t/buddhist-rss-feeds-a-way-to-get-free-of-the-social-media-bubble/22253?u=khemarato.bhikkhu).
 
 ## Blog Posts

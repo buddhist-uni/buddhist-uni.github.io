@@ -8,10 +8,10 @@ drive_links:
 course: rebirth-stories
 tags:
   - bodhisatta
-  - mahayana-canon
+  - abhidharma
 year: 2017
 olid: OL51691636M
 pages: 18
 ---
 
-This is a translation of chapter 4 of the Lalitavistara Sūtra, a Sanskrit Mahayana Buddhist sutra, by Ānandajoti Bhikkhu. In this chapter, the Bodhisattva gives a dharma teaching to the gods in Tushita just before his imminent rebirth, in which he will attain full awakening, becoming the Buddha Shakyamuni. The teaching is presented as a list of the main mental states and factors to be developed for awakening.
+This is a translation of part of chapter 4 of the Lalitavistara Sūtra, in which the Bodhisattva gives a dharma teaching to the gods in Tushita just before his imminent rebirth presenting a list of the mental states and factors to be developed for awakening.

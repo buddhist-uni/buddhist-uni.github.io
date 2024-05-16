@@ -6,6 +6,7 @@ authors:
   - bucknell
 years: 2013--2020
 publisher: bdk
+category: monographs
 ---
 
 The Bukkyō Dendō Kyōkai America's project to translate the Madhyama Āgama into English was split across four volumes:

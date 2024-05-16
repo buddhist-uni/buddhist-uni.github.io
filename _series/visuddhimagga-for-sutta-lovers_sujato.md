@@ -5,6 +5,7 @@ authors:
   - sujato
 years: 2020
 category: av
+subcat: course
 tags:
   - path
   - vsm
