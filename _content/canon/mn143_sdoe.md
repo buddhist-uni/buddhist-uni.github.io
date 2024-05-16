@@ -1,5 +1,5 @@
 ---
-title: "MN 143: Advice to Anāthapiṇḍika"
+title: "MN 143 Anāthapiṇḍikovāda Sutta: Advice to Anāthapiṇḍika"
 reader: doering
 translator: bodhi
 external_url: "https://www.suttareadings.net/audio/mn.143.sdoe.mp3"
