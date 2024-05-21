@@ -1,5 +1,5 @@
 ---
-title: "bell hooks Spiritual Vision: Buddhist, Christian, and Feminist"
+title: "bell hooks’ Spiritual Vision: Buddhist, Christian, and Feminist"
 authors:
   - "Nadra Nittle"
 tags:
