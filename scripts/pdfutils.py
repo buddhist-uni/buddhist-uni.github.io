@@ -2,6 +2,7 @@
 from strutils import (
   whitespace,
 )
+import subprocess
 from pathlib import Path
 
 try:
@@ -9,6 +10,14 @@ try:
 except:
   print("pip install pypdf")
   exit(1)
+
+def get_page_count(pdf_path) -> int | None:
+    try:
+        result = subprocess.run(['exiftool', '-n', '-p', '$PageCount', str(pdf_path)], capture_output=True, text=True)
+        page_count = int(result.stdout.strip())
+        return page_count
+    except:
+        return None
 
 def readpdf(pdf_file: str | Path, max_len=None, normalize=1) -> str:
   """Returns a pdf's text.
