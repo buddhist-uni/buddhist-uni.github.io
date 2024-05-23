@@ -2,7 +2,7 @@
 title: "Society at the Time of the Buddha"
 authors:
   - "Narendra K. Wagle"
-external_url: "https://archive.org/details/societyattimeofb0000wagl"
+external_url: "https://archive.org/details/societyattimeofb0000wagl/mode/1up"
 course: setting
 tags:
   - pali-language

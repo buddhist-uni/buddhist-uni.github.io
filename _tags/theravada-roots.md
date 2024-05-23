@@ -9,8 +9,8 @@ illustration_width: 1670
 illustration_center_x: 60%
 illustration_center_y: 45%
 illustration_caption: >-
-  This nineteenth century, Burmese gouache painting depicts twenty-four monks receiving almsbowls of rice from well-dressed laymen while others around them busy themselves with various tasks.
-  Behind them, a ceremonial pole flies a Naga-like banner (Courtesy of the <a href="https://wellcomecollection.org/works/jnjmgqjw/images?id=dx95ypxm">Wellcome Library</a>)
+  This nineteenth century, Burmese gouache painting depicts twenty-four monks receiving almsbowls of rice from well-dressed laymen while others busy themselves with various tasks.
+  Above them, a Naga-like banner flies in the breeze (Courtesy of the <a href="https://wellcomecollection.org/works/jnjmgqjw/images?id=dx95ypxm">Wellcome Library</a>)
 image: https://illeakyw.sirv.com/Images/banners/Bagan%2C_Myanmar%2C_Htilominlo_Temple_compound_surrounded_by_forest.jpg
 image_width: 2560
 image_height: 1439

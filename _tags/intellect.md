@@ -9,7 +9,7 @@ illustration_width: 738
 illustration_center_x: 75%
 illustration_center_y: 15%
 illustration_caption: >-
-  In <a href="https://commons.wikimedia.org/wiki/Category:Illustrations_of_The_Wonderful_Wizard_of_Oz_by_William_Wallace_Denslow">The Wonderful Wizard of Oz</a>, Dorothy gazes thoughtfully at Scarecrow, pondering the figure's lack of a brain (1900, Public Domain).
+  In <a href="https://commons.wikimedia.org/wiki/Category:Illustrations_of_The_Wonderful_Wizard_of_Oz_by_William_Wallace_Denslow">The Wonderful Wizard of Oz</a>, Dorothy gazes thoughtfully at Scarecrow, pondering his thoughtlessness (1900, Public Domain).
 image: https://illeakyw.sirv.com/Images/banners/intersections.jpg
 image_width: 2048
 image_height: 1365

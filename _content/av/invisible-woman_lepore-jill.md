@@ -13,7 +13,7 @@ tags:
   - social
 year: 2020
 month: may
-series: "The Last Archive"
+series: last-archive
 number: 3
 minutes: 37
 ---

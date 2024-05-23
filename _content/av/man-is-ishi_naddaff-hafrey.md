@@ -16,7 +16,7 @@ tags:
   - preservation
 year: 2023
 month: jun
-series: "The Last Archive"
+series: last-archive
 number: 19 # Season 4, Episode 2
 minutes: 25
 ---

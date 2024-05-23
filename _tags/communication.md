@@ -5,7 +5,7 @@ parents: [social]
 illustration: https://buddhistuniversity.net/imgs/tags/tags/Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg
 illustration_height: 848
 illustration_width: 1280
-illustration_center_x: 90%
+illustration_center_x: 100%
 illustration_center_y: 30%
 illustration_caption: >-
   A small group of people sit around a simple, lace-covered table
