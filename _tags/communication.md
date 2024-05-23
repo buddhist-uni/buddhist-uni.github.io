@@ -2,12 +2,11 @@
 title: "Communication Studies"
 status: published
 parents: [social]
-illustration: https://illeakyw.sirv.com/Images/tags/Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg
-use_sirv: true
+illustration: https://buddhistuniversity.net/imgs/tags/tags/Amparo_Pe%C3%B1aherrera_at_a_meeting_in_Ecuador_in_2018.jpg
 illustration_height: 848
 illustration_width: 1280
 illustration_center_x: 80%
-illustration_center_y: 60%
+illustration_center_y: 50%
 illustration_caption: >-
   A small group of people sit around a simple, lace-covered table
   to discuss the needs of Sucumbíos' children for
