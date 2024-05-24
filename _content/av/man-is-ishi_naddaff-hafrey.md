@@ -14,6 +14,7 @@ tags:
   - time
   - colonization
   - preservation
+  - world
 year: 2023
 month: jun
 series: last-archive

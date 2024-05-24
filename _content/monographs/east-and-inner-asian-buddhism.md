@@ -1,5 +1,5 @@
 ---
-title: "Companion to East and Inner Asian Buddhism"
+title: "East and Inner Asian Buddhism"
 authors:
   - "Mario Poceski"
 external_url: "https://terebess.hu/zen/mesterek/wile.pdf"
