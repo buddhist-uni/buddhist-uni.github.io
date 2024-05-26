@@ -3,7 +3,6 @@ title: "Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Underci
 authors: ["Katherine Boo"]
 year: 2012
 month: feb
-external_url: "https://archive.org/details/isbn_9781620903858/mode/1up"
 publisher: "Random House"
 olid: OL25094126M
 course: world

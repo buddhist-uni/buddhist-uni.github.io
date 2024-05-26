@@ -1,5 +1,6 @@
 ---
 title: "Ethics: How to Behave According to the Visuddhimagga"
+subcat: course
 authors:
   - sujato
 external_url: "https://www.youtube.com/watch?v=IVpcsSIObzU"

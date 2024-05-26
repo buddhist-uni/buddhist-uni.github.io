@@ -7,7 +7,8 @@ import hashlib
 import tty
 import os
 import io
-import json
+import fcntl
+import struct
 import re
 import string
 import readline
@@ -118,6 +119,19 @@ def get_cursor_position():
         return (atoi(res.group("y")), atoi(res.group("x")))
     return (-1, -1)
 
+def get_terminal_size():
+  try:
+    return termios.tcgetwinsize(sys.stdout)
+  except AttributeError: # before python 3.11
+    for fd in (0, 1, 2):
+      try:
+        h, w, hp, wp = struct.unpack('HHHH', fcntl.ioctl(fd, termios.TIOCGWINSZ, struct.pack('HHHH', 0, 0, 0, 0)))
+        return w, h
+      except OSError:
+        pass
+    # if all else fails, fall back to env variables or some sane, default values
+    return int(os.environ.get('COLUMNS', 80)), int(os.environ.get('LINES', 24))
+
 def stdout_make_room(lines: int):
   """Saves the current cursor position and ensures n lines are free below it
 
@@ -126,7 +140,7 @@ def stdout_make_room(lines: int):
   if lines <= 0:
     return 0
   br, bc = get_cursor_position()
-  nr, nc = termios.tcgetwinsize(sys.stdout)
+  nr, nc = get_terminal_size()
   diff = lines + br - nr
   cout(''.join(["\n"]*lines))
   cout(ANSI_RESTORE_POSITION)

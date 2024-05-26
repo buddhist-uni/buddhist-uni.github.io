@@ -11,7 +11,7 @@ tags:
   - religion
 year: 2023
 month: jul
-series: "The Last Archive (Podcast)"
+series: last-archive
 number: 22
 minutes: 44
 ---

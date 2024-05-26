@@ -11,7 +11,7 @@ tags:
 year: 2023
 month: jul
 publisher: "Pushkin Industries"
-series: "The Last Archive"
+series: last-archive
 number: 46 # approx: season 4 number 6
 minutes: 45
 ---

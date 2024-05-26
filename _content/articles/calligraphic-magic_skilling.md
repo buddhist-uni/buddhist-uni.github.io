@@ -10,6 +10,7 @@ course: theravada-roots
 tags: # honestly could move up or down!
   - thai-roots
   - roots
+  - writing
   - bart
 year: 2018
 month: dec

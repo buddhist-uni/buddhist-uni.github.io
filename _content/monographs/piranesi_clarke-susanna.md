@@ -3,9 +3,9 @@ title: "Piranesi: A Novel"
 authors:
   - "Susanna Clarke"
 olid: OL33030582M
-course: intellect
 subcat: fiction
 tags:
+  - intellect
   - memory
   - religion
   - mythology

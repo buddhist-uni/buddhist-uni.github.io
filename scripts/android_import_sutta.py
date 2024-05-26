@@ -12,7 +12,7 @@ from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archivedotorg import save_url_to_archiveorg
-from pdfutils import readpdf
+from pdfutils import readpdf, get_page_count
 from tag_predictor import TagPredictor
 
 yaml_list_prefix = '\n  - '
@@ -74,14 +74,6 @@ def command_line_args():
       help="The PDF file *or* the folder containing the PDF file(s) to injest.",
       type=Path, default=Path('../../Download/'))
     return parser.parse_args()
-
-def get_page_count(pdf_path):
-    try:
-        result = subprocess.run(['exiftool', '-n', '-p', '$PageCount', str(pdf_path)], capture_output=True, text=True)
-        page_count = int(result.stdout.strip())
-        return page_count
-    except:
-        return None
 
 def get_new_pdfs(directory):
     ret = []

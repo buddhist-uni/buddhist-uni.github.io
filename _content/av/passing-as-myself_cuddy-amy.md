@@ -3,8 +3,7 @@ title: "Passing As Myself"
 authors:
   - "Amy Cuddy"
 subcat: podcast
-external_url: "https://on.soundcloud.com/otymexKZc1sGwYGA7"
-source_url: "https://www.storycollider.org/stories/2016/1/4/amy-cuddy-passing-as-myself"
+external_url: "https://www.storycollider.org/stories/2016/1/4/amy-cuddy-passing-as-myself"
 drive_links:
   - "https://drive.google.com/file/d/1SrciLJKu-OueVTuJpCDNLLI-yE_a4CA3/view?usp=drivesdk"
 course: intellect

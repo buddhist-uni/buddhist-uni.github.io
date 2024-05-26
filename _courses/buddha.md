@@ -169,6 +169,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [L] End of the First Twenty Years
 1. {% capture foo %}{% include content_blurb.html category="canon" slug="mn35" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Teacher] Teaching the Devas
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="an8.69" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [R] Locavidū
 
 1. [L] The Middle Period

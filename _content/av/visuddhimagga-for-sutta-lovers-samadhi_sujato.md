@@ -1,5 +1,6 @@
 ---
 title: "Samadhi: How to Meditate According to the Visuddhimagga"
+subcat: course
 authors:
   - sujato
 external_url: "https://www.youtube.com/watch?v=cGpcNC9rlnc"
