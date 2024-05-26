@@ -2,12 +2,14 @@
 title: "An Eye Transplant and a Pound of Flesh"
 authors:
   - dhammika
-external_url: "https://mandalas.life/get/an-eye-transplant-and-a-pound-of-flesh/"
+external_url: "http://budblooms.org/2020/05/10/an-eye-transplant-and-a-pound-of-flesh/"
 drive_links:
   - "https://drive.google.com/file/d/1Xi2jG1BMqQkxG8-MtrJHTxcGn6dZwwjm/view?usp=sharing"
 course: rebirth-stories
 tags:
   - jataka
+  - dana
+  - ethics
 pages: 7
 ---
 
