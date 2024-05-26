@@ -10,7 +10,8 @@ drive_links:
 course: rebirth-stories
 tags:
   - borobudur
-  - art
+  - bart
+  - indonesian
 year: 2019
 olid: OL51724288M
 publisher: "Ehipassiko Foundation"
