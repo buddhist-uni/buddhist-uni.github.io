@@ -1199,6 +1199,10 @@
   "private": "https://drive.google.com/drive/folders/1vU74WexzIHUZGYzNRs6yB9ipZYzfi_DE",
   "public": "https://drive.google.com/drive/folders/1KReYQmPh4qaQxYg3yvIfgP9AH2MwBuzB"
  },
+ "russia": {
+  "private": "https://drive.google.com/drive/folders/1f_TS7roYlnkO_hARW2W54GdLB99jV6jw",
+  "public": null
+ },
  "sa": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/12IOpXJbdUES6hl36jycAMNy1kIgPjP4U"
@@ -1262,6 +1266,10 @@
  "sex": {
   "private": "https://drive.google.com/drive/folders/14OKWMwgiMN7ZfGs7sAOIKUnex7unO7eC",
   "public": ""
+ },
+ "shinto": {
+  "private": "https://drive.google.com/drive/folders/12a7HF1SB3a6wSTFbgNC-8AZ6DSQPSI4q",
+  "public": null
  },
  "silicon-valley": {
   "private": "https://drive.google.com/drive/folders/132lAfUQ2dZ1TPH5G_xxt8Q6YuDpTmVO7",

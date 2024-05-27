@@ -12,10 +12,13 @@ tags:
   - borobudur
   - bart
   - indonesian
+  - mahayana-roots
 year: 2019
 olid: OL51724288M
 publisher: "Ehipassiko Foundation"
 pages: 475
 ---
 
-In this work, Anandajoti Bhikkhu gives a brief introduction to the Gaṇḍavyūha Reliefs at Borobudur, followed by a complete set of photographs with explanations of each. This book is bilingual, with the Indonesian translation of Anandajoti's explanations on the same page.
+A bilingual guided tour of the Gaṇḍavyūha Reliefs at Borobudur in English and Indonesian.
+
+For an academic discussion of this Mahayana Sutra and its parallels, see [Levman's 2005 article in CJBS](/content/articles/buddhalaksana-and-gandavyuha-sutra_levman).

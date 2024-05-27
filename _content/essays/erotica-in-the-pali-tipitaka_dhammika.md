@@ -8,10 +8,8 @@ drive_links:
 course: canonical-poetry
 tags:
   - pali-literature
-  - jataka
-  - sex
 year: 2020
 pages: 3
 ---
 
-Here, Bhante S. Dhammika highlights two places in the Pāli Tipiṭaka that have erotic content, one in the Dīgha Nikāya and the other in the Jātaka. Dhammika uses Walshe’s translation, Dīgha Nikāya. 
+Two places in the Pāli Tipiṭaka (one in the Dīgha Nikāya and the other in a Jātaka) with erotic poetry.

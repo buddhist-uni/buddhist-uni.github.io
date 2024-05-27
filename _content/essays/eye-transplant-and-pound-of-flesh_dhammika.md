@@ -15,4 +15,4 @@ pages: 7
 
 >A true hero will be prepared to sacrifice much of himself or herself for others.
 
-This brief essay discusses two similar Jataka stories that show how the Bodhisattva sacrificed himself to relieve the suffering of others. S. Dhammika highlights that the purpose of these stories is to inspire followers to give much of themselves to others.
+This brief essay discusses two similar Jataka stories that show how the Bodhisattva sacrificed himself to relieve the suffering of others. S. Dhammika muses on the purpose of such stories.
