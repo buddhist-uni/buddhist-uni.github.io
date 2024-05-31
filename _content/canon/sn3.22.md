@@ -1,5 +1,5 @@
 ---
-title: "SN 3.22: Grandmother"
+title: "SN 3.22 Ayyakā Sutta: Grandmother"
 slug: "sn.003.022"
 external_url: "https://suttafriends.org/sutta/sn3-22/"
 translator: "Ven. Kiribathgoda Gnanananda"

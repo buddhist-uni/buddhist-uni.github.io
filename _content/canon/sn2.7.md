@@ -1,5 +1,5 @@
 ---
-title: "SN 2.7: In Judgement"
+title: "SN 2.7 Pañcālacaṇḍa Sutta: In Judgement"
 slug: "sn.002.007"
 external_url: "https://www.dhammatalks.org/suttas/SN/SN2_7.html"
 source_url: "https://www.accesstoinsight.org/tipitaka/sn/sn02/sn02.007.than.html"

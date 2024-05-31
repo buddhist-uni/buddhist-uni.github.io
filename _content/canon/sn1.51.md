@@ -1,5 +1,5 @@
 ---
-title: "SN 1.51: Old Age"
+title: "SN 1.51 Jarā Sutta: Old Age"
 translator: geoff
 slug: "sn.001.051"
 external_url: "https://www.dhammatalks.org/suttas/SN/SN1_51.html"

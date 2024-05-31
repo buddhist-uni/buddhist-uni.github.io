@@ -1,5 +1,5 @@
 ---
-title: "SN 2.3: The Māgha Sutta"
+title: "SN 2.3 Māgha Sutta: With Māgha"
 slug: "sn.002.003"
 external_url: "https://daily.readingfaithfully.org/sn-2-3-maghasutta-with-magha/"
 source_url: "https://suttacentral.net/sn2.3/en/sujato"

@@ -1,5 +1,5 @@
 ---
-title: "SN 7.2: The Gift of Anger"
+title: "SN 7.2 Akkosa Sutta: The Abuser"
 translator: sujato
 slug: "sn.007.002"
 external_url: "https://docs.google.com/document/d/1RpM-l5wCJX_JkCp5DYIm0lnMsy3Q9u36lbWjWLQLcpE/edit"

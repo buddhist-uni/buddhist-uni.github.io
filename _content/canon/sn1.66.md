@@ -1,5 +1,5 @@
 ---
-title: "SN 1.66: Afflicted"
+title: "SN 1.66 Attahata Sutta: Afflicted"
 slug: "sn.001.066"
 external_url: "https://suttacentral.net/sn1.66/en/bodhi"
 translator: bodhi

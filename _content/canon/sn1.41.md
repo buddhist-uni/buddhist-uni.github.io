@@ -1,5 +1,5 @@
 ---
-title: "SN 1.41: Ablaze"
+title: "SN 1.41 Āditta Sutta: Ablaze"
 slug: "sn.001.041"
 external_url: "https://suttacentral.net/sn1.41/en/bodhi"
 translator: bodhi

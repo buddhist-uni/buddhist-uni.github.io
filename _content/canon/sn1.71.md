@@ -1,5 +1,5 @@
 ---
-title: "SN 1.71: Having Slain"
+title: "SN 1.71 Chetvā Sutta: Having Slain"
 slug: "sn.001.071"
 external_url: "https://suttacentral.net/sn1.71/en/bodhi"
 translator: bodhi

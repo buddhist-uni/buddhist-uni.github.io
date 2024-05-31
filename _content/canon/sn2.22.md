@@ -1,5 +1,5 @@
 ---
-title: "SN 2.22: The Khema Sutta"
+title: "SN 2.22 Khema Sutta: With Khema"
 slug: "sn.002.022"
 external_url: "https://suttacentral.net/sn2.22/en/sujato"
 translator: sujato

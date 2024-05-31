@@ -1,5 +1,5 @@
 ---
-title: "SN 1.78: Desire"
+title: "SN 1.78 Kāma Sutta: Desire"
 external_url: "https://suttacentral.net/sn1.78/en/sujato"
 translator: sujato
 slug: "sn.001.078"

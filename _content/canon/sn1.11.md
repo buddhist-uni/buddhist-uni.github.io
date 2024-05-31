@@ -1,5 +1,5 @@
 ---
-title: "SN 1.11: Nandana"
+title: "SN 1.11 Nandana Sutta: Nandana"
 external_url: "https://suttacentral.net/sn1.11/en/bodhi"
 translator: bodhi
 slug: "sn.001.011"

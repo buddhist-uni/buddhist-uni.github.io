@@ -1,5 +1,5 @@
 ---
-title: "SN 2.20: Anāthapiṇḍika"
+title: "SN 2.20 Anāthapiṇḍika SUtta: With Anāthapiṇḍika"
 slug: "sn.002.020"
 external_url: "https://suttacentral.net/sn2.20/en/sujato"
 translator: sujato

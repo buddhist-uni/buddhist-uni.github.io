@@ -1,5 +1,5 @@
 ---
-title: "SN 5.10: Vajira"
+title: "SN 5.10 Vajirā Sutta: Vajira"
 slug: "sn.005.010"
 translator: bodhi
 formats: [pdf]
