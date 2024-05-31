@@ -1,5 +1,5 @@
 ---
-title: "SN 9.14: The Scent Thief"
+title: "SN 9.14 Gandhatthena Sutta: The Scent Thief"
 translator: sujato
 slug: "sn.009.014"
 external_url: "https://suttacentral.net/sn9.14/en/sujato"

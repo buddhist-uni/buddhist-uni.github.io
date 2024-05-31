@@ -1,5 +1,5 @@
 ---
-title: "SN 2.25: Jantu"
+title: "SN 2.25 Jantu Sutta: With Jantu"
 slug: "sn.002.025"
 external_url: "https://suttacentral.net/sn2.25/en/sujato"
 translator: sujato

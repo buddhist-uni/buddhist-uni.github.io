@@ -1,5 +1,5 @@
 ---
-title: "SN 9.2: Getting Up"
+title: "SN 9.2 Upaṭṭhāna Sutta: Getting Up"
 translator: sujato
 slug: "sn.009.002"
 external_url: "https://suttacentral.net/sn9.2/en/sujato"

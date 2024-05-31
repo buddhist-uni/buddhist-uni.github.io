@@ -1,5 +1,5 @@
 ---
-title: "SN 1.40: Pajjunna’s Daughter"
+title: "SN 1.40 Dutiyapajjunnadhītu Suttaṁ: Pajjunna’s Daughter"
 external_url: "https://suttacentral.net/sn1.40/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1IrOwGUraW0OSTZxau-v3-ahwtxyFyb_j/view?usp=drivesdk"

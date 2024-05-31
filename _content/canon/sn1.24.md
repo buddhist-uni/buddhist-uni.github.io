@@ -1,5 +1,5 @@
 ---
-title: "SN 1.24: Reining in the Mind"
+title: "SN 1.24 Manonivāraṇa Sutta: Reining in the Mind"
 external_url: "https://suttacentral.net/sn1.24/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1Irx7DWCJyQLrnhJ7kODsP-sFtQ7AreXQ/view?usp=drivesdk"

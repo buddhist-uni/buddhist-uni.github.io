@@ -1,5 +1,5 @@
 ---
-title: "SN 1.20: Samiddhi"
+title: "SN 1.20 Samiddhi Sutta: Samiddhi"
 external_url: "https://suttacentral.net/sn1.20/en/bodhi"
 translator: bodhi
 slug: "sn.001.020"

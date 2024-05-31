@@ -1,5 +1,5 @@
 ---
-title: "SN 6.9: Turū Brahma Sutta"
+title: "SN 6.9: Turū Brahma Sutta: With the Brahmā Tudu"
 translator: sujato
 slug: "sn.006.009"
 external_url: "https://daily.readingfaithfully.org/sn-6-9-turubrahmasutta-with-the-brahma-tudu/"

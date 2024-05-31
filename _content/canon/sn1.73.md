@@ -1,5 +1,5 @@
 ---
-title: "SN 1.73: Treasure"
+title: "SN 1.73 Vitta Sutta: Treasure"
 external_url: "https://suttacentral.net/sn1.73/en/bodhi"
 translator: bodhi
 slug: "sn.001.073"

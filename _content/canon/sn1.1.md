@@ -1,5 +1,5 @@
 ---
-title: "SN 1.1: Crossing the Flood"
+title: "SN 1.1 Oghataraṇa Sutta: Crossing the Flood"
 external_url: "https://suttacentral.net/sn1.1/en/bodhi"
 drive_links:
   - "https://drive.google.com/file/d/1K4kPz84L53eprjkdcZ8tFgyOedntwMsh/view?usp=drivesdk"

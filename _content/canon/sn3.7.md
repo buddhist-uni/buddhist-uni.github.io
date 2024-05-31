@@ -1,5 +1,5 @@
 ---
-title: "SN 3.7: In Judgement"
+title: "SN 3.7 Atthakarana Sutta: In Judgement"
 slug: "sn.003.007"
 external_url: "https://www.accesstoinsight.org/tipitaka/sn/sn03/sn03.007.than.html"
 translator: geoff

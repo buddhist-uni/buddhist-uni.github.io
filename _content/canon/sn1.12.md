@@ -1,5 +1,5 @@
 ---
-title: "SN 1.12: Delight"
+title: "SN 1.12 Nandati Sutta: Delight"
 external_url: "https://suttacentral.net/sn1.12/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1K8OTioqoG4dDEgb4OUfU0wHdcV9m5jAb/view?usp=drivesdk"

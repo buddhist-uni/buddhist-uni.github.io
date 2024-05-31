@@ -1,5 +1,5 @@
 ---
-title: "SN 2.6: The Kāmada Sutta"
+title: "SN 2.6 Kāmada Sutta: With Kāmada"
 slug: "sn.002.006"
 external_url: "https://suttacentral.net/sn2.6/en/sujato"
 translator: sujato
