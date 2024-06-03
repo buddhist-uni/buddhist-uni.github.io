@@ -127,7 +127,9 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [[Buddha, My Refuge](#buddha-my-refuge_khantipalo)] Introduction
 1. {% capture foo %}{% include content_blurb.html category="essays" slug="food-of-awakening_dhammika" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="sn12.10" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="shape-of-victory_smith-doug" %}{% endcapture %}{{ foo | strip_newlines }}
+
 1. [Life] After the Enlightenment
 1. {% capture foo %}{% include content_blurb.html slug="epithets-buddha_ireland" category="articles" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="tathagata_bodhi" %}{% endcapture %}{{ foo | strip_newlines }}

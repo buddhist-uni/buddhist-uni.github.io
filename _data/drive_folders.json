@@ -139,6 +139,10 @@
   "private": "https://drive.google.com/drive/folders/1al_pgWvSbWWUWgpf_ULJUI0yL6xR89Zr",
   "public": "https://drive.google.com/drive/folders/12JDRn48Vn0hRMSXnL2d_4s_EBxpQtZQa"
  },
+ "balkans": {
+  "private": "https://drive.google.com/drive/folders/1EeJO0Sdg_E3eskxVttm3-CjyuqWD0Swm",
+  "public": null
+ },
  "bangladeshi": {
   "private": "https://drive.google.com/drive/folders/1BGi8zjblJKUJB3vkq5BtHPSKU8GyxBb6",
   "public": null
@@ -335,6 +339,10 @@
   "private": "https://drive.google.com/drive/folders/1KvoZHNm3ogSjMPj8iaC9tNllOv0CB1t_",
   "public": "https://drive.google.com/drive/folders/1L1UPrE7KoHQbqsS2G-frUGm6ublwSQgV"
  },
+ "computational-linguistics": {
+  "private": "https://drive.google.com/drive/folders/1ZVXfecxs5nTT-_HvD2GUyNZOxVQBSSwk",
+  "public": "https://drive.google.com/drive/folders/1VK7-XJKqEQIQbPXMlsUhvGJufLoRBXnw"
+ },
  "computer-science": {
   "private": "https://drive.google.com/drive/folders/17giZBdGVbNEEv7HZxuG2wySVUJjSHZSY",
   "public": ""
@@ -390,6 +398,10 @@
  "depression": {
   "private": "https://drive.google.com/drive/folders/1UP_5VB7Fcr-8h5_V5oEWjDlgNvS9SUUi",
   "public": ""
+ },
+ "design": {
+  "private": "https://drive.google.com/drive/folders/1osyPf6tpbgCW1Hs3iF-7qUYLJPiEP-ry",
+  "public": null
  },
  "desire": {
   "private": "https://drive.google.com/drive/folders/1K33uusdM71vj7Yu5qvX55WAnnw4lyZOZ",
@@ -609,6 +621,10 @@
  },
  "history-of-medicine": {
   "private": "https://drive.google.com/drive/folders/1O3ad4SwS_D6Zm8oG8C3--lLtkNUph5hM",
+  "public": null
+ },
+ "history-of-science": {
+  "private": "https://drive.google.com/drive/folders/180AS5OiLQem-gXEdDypy_cSlEhHKEKMC",
   "public": null
  },
  "hong-kong": {
@@ -1081,6 +1097,10 @@
  },
  "photography": {
   "private": "https://drive.google.com/drive/folders/1ML91HvtAhsYN3gOk957YWSsNHY_6vmh4",
+  "public": null
+ },
+ "photojournalism": {
+  "private": "https://drive.google.com/drive/folders/1FV5MGP9cn9IE1IS5TmZ2TrKysmOYTIXu",
   "public": null
  },
  "physics": {

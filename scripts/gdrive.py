@@ -571,9 +571,11 @@ def _yt_thumbnail(snippet):
   return snippet['thumbnails']['default']['url']
 
 def make_ytvideo_summary_html(vid):
-  from tag_predictor import YOUTUBE_DATA_FOLDER
-  cachef = YOUTUBE_DATA_FOLDER.joinpath(f"{vid}.json")
-  if cachef.exists():
+  # temporarily bypass caching during SciPy bug
+  # from tag_predictor import YOUTUBE_DATA_FOLDER
+  # cachef = YOUTUBE_DATA_FOLDER.joinpath(f"{vid}.json")
+  # if cachef.exists():
+  if False:
     snippet = json.loads(cachef.read_text())
     transcript = snippet.get('transcript',[])
   else:
@@ -584,7 +586,7 @@ def make_ytvideo_summary_html(vid):
       snippet['transcript'] = transcript
     except:
       pass
-    cachef.write_text(json.dumps(snippet))
+    # cachef.write_text(json.dumps(snippet))
   return _make_ytvideo_summary_html(vid, snippet, transcript)
 
 def _make_ytvideo_summary_html(vid, snippet, transcript):

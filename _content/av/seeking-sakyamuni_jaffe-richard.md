@@ -1,12 +1,12 @@
 ---
-title: "Seeking Śākyamuni"
+title: "Seeking Śākyamuni: South Asia in the Formation of Modern Japanese Buddhism"
 subcat: podcast
 authors:
   - "Richard M. Jaffe"
 external_url: "https://newbooksnetwork.com/seeking-sakyamuni"
 course: modern
 tags:
-  - japanese
+  - japanese-roots
   - globalization
 year: 2021
 month: jan
