@@ -1,8 +1,8 @@
 ---
-title: "Karma-vibhaṅgam"
+title: "Karma-vibhaṅga"
 editor: "Sylvain Lévi"
 translator: anandajoti
-external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Karma-vibhanga/Karma-vibhanga.pdf"
+external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Karma-vibhanga/"
 drive_links:
   - "https://drive.google.com/file/d/1N8mDGdmZ34DYpWuhcqN3cmv0pLGN6mgy/view?usp=sharing"
 course: rebirth-stories
