@@ -11,7 +11,7 @@ course: abhidhamma
 tags:
   - inner
   - view
-year: 1980
+year: 1976
 month: may
 journal: bsr
 volume: 1

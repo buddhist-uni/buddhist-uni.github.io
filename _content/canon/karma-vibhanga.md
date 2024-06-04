@@ -1,18 +1,17 @@
 ---
-title: "The Karma-vibhaṅga: The Analysis of Deeds"
+title: "(Mahā) Karma-Vibhaṅga: The Analysis of Deeds"
 translator: anandajoti
+editor: "Sylvain Lévi"
 year: 2020
 month: apr
-drive_links: ["https://drive.google.com/file/d/1N8mDGdmZ34DYpWuhcqN3cmv0pLGN6mgy/view?usp=drivesdk", "https://drive.google.com/file/d/1w9m6mU7pvCJbe1VuWiKELjg95rKM2mjF/view?usp=drivesdk"]
-external_url: "https://bit.ly/2DFoGbs"
+drive_links:
+  - "https://drive.google.com/file/d/1N8mDGdmZ34DYpWuhcqN3cmv0pLGN6mgy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w9m6mU7pvCJbe1VuWiKELjg95rKM2mjF/view?usp=drivesdk"
+external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Karma-vibhanga/"
 source_url: "https://suttacentral.net/mkv"
-base_value: 2
-course: rebirth-stories
+course: karma
 tags:
-  - avadana
-  - indian
-  - karma
-  - theravada-roots
+  - abhidharma
 olid: OL32035986M
 pages: 181
 ---
