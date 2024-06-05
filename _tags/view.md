@@ -1,5 +1,6 @@
 ---
 title: "Right View"
+hashtag: buddhism
 status: published
 parents: [philosophy]
 illustration: https://illeakyw.sirv.com/Images/tags/Buddhist_Monk_Staff_MET.jpg

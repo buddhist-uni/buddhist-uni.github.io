@@ -1,5 +1,6 @@
 ---
 title: "Materialism"
+hashtag: atheist
 status: unpublished
 parents: [ideology]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Buddha's India"
 status: published
+hashtag: buddha
 parents:
   - ebts
   - roots

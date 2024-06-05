@@ -1,6 +1,7 @@
 ---
 title: "The Present"
 status: unpublished
+hashtag: today
 parents: [time]
 ---
 

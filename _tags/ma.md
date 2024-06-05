@@ -1,6 +1,7 @@
 ---
 title: "Madhyama Āgama"
 status: published
+hashtag: BuddhaQuotes
 parents: [agama, mn]
 is_canon: true # changes the layout slightly
 ---

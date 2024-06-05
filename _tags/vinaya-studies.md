@@ -1,5 +1,6 @@
 ---
 title: "Vinaya Studies"
+hashtag: vinaya
 status: published
 parents: [vinaya-pitaka, monastic-advice]
 illustration: https://illeakyw.sirv.com/Images/tags/Ajaan_Geoff_Almsround.jpg

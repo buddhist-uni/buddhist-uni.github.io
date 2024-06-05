@@ -2,6 +2,7 @@
 title: "The Pāli Language"
 parents: [pali-canon, language]
 level: 4
+hashtag: pali
 status: published
 description: A bibliography of free works about the language of the Pāli Canon.
 illustration: https://illeakyw.sirv.com/Images/banners/burmese-pali-manuscript.jpg

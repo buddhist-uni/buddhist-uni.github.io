@@ -1,5 +1,6 @@
 ---
 title: "Engaged Buddhism"
+hashtag: EngagedBuddhism
 status: published
 parents:
   - ethics

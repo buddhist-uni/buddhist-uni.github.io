@@ -1,5 +1,6 @@
 ---
 title: "Digha Nikāya"
+hashtag: BuddhaQuotes
 status: published
 parents: [sutta]
 is_canon: true # changes the layout slightly

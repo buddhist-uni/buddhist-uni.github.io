@@ -1,6 +1,7 @@
 ---
 title: "The Wider World"
 status: published
+hashtag: world
 parents: [world]
 image: https://illeakyw.sirv.com/Images/banners/Tanguar_haor.jpg
 image_height: 798

@@ -1,6 +1,7 @@
 ---
 title: "Late Indian Buddhism"
 status: unpublished
+hashtag: tantra
 parents: [tantric, mahayana-roots]
 ---
 

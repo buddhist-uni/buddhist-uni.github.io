@@ -21,7 +21,7 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/1/12/%28Left%29_The_pr
 big_width: 4998
 big_height: 2216
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:(Left)_The_predictions_of_the_brahmins,_Wellcome_L0030766.jpg">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
-hashtag: "buddhaquotes"
+hashtag: BuddhaQuotes
 ---
 
 The Tipiṭaka is the canon of the Theravada School and is the only complete collection of texts from an early sect of Buddhism to survive to the present day.

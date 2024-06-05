@@ -1,6 +1,7 @@
 ---
 title: "The Social World"
 status: published
+hashtag: society
 parents: [world]
 level: 2
 image: https://illeakyw.sirv.com/Images/banners/Town_Square.jpg

@@ -1,6 +1,7 @@
 ---
 title: "Early Indian Buddhism"
 status: published
+hashtag: EarlyBuddhism
 parents: [roots]
 illustration: https://illeakyw.sirv.com/Images/tags/Ashokan_Pillar_Vaishali.jpg
 illustration_height: 1024

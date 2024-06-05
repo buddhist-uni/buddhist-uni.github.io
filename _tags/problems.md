@@ -1,6 +1,7 @@
 ---
 title: "Right Effort"
 status: published
+hashtag: motivation
 parents: [meditation]
 illustration: https://illeakyw.sirv.com/Images/tags/Vajrasattva.jpg
 illustration_height: 3000

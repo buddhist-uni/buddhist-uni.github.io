@@ -1,5 +1,6 @@
 ---
 title: "The Vinaya"
+hashtag: vinaya
 parents: [pali-canon]
 status: published
 illustration: https://illeakyw.sirv.com/Images/tags/life-of-the-buddha.jpg

@@ -1,6 +1,7 @@
 ---
 title: "Indic Religions"
 status: unpublished
+hashtag: india
 parents: [religion, south-asia]
 ---
 

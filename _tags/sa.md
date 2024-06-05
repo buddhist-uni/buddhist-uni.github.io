@@ -1,5 +1,6 @@
 ---
 title: "Saṃyukta Āgama"
+hashtag: BuddhaQuotes
 parents: [agama, sn]
 is_canon: true # changes the layout slightly
 status: published

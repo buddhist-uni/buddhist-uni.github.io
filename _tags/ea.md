@@ -1,6 +1,7 @@
 ---
 title: "Ekottarika Āgama"
 status: published
+hashtag: BuddhaQuotes
 parents: [agama, an]
 is_canon: true # changes the layout slightly
 ---

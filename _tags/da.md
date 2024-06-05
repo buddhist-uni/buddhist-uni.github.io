@@ -1,6 +1,7 @@
 ---
 title: "Dīrgha Āgama"
 parents: [agama, dn]
+hashtag: BuddhaQuotes
 status: published
 is_canon: true # changes the layout slightly
 ---

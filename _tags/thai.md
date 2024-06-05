@@ -1,6 +1,6 @@
 ---
 title: "Thai Buddhism"
-hashtag: Thailand
+hashtag: ThaiBuddhism
 status: unpublished
 parents: [theravada, thailand]
 ---

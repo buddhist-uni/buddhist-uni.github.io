@@ -2,6 +2,7 @@
 title: "History of the Theravāda"
 status: unpublished
 parents: [theravada, roots]
+hashtag: theravada
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/burmese_gouache.jpg
 illustration_height: 1140

@@ -1,6 +1,7 @@
 ---
 title: "Saṃyutta Nikāya"
 parents: [sutta]
+hashtag: BuddhaQuotes
 status: published
 is_canon: true # changes the layout slightly
 ---

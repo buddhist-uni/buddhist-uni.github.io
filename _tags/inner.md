@@ -1,6 +1,7 @@
 ---
 title: "The Inner World"
 status: published
+hashtag: life
 parents: [world]
 illustration: https://buddhistuniversity.net/imgs/tags/tags/DP170787-s.jpg
 illustration_height: 990

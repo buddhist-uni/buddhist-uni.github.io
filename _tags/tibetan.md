@@ -1,6 +1,6 @@
 ---
 title: "Tibetan Buddhism"
 status: unpublished
-hashtag: TibetanBuddhism
+hashtag: tibet
 parents: [tantric, tibet]
 ---

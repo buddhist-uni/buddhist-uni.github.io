@@ -1,6 +1,7 @@
 ---
 title: "Thai Monastic Curriculum"
 status: unpublished
+hashtag: ThaiBuddhism
 parents: [monastic-theravada, thai]
 image: https://illeakyw.sirv.com/Images/banners/Thai-monks-studying.jpg
 image_width: 1280

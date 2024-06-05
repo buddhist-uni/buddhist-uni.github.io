@@ -1,6 +1,7 @@
 ---
 title: "Aṅguttara Nikāya"
 status: published
+hashtag: BuddhaQuotes
 parents: [sutta]
 is_canon: true # changes the layout slightly
 ---
