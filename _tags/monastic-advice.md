@@ -1,5 +1,6 @@
 ---
 title: "Teachings for Monastics"
+hashtag: MonkLife
 status: published
 parents: [monastic]
 illustration: https://illeakyw.sirv.com/Images/tags/Monks_Debating_Practice_At_Sera_Monastery.jpeg

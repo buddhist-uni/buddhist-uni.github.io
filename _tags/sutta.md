@@ -1,5 +1,6 @@
 ---
 title: "The Suttas"
+hashtag: BuddhismQuotes
 parents: [pali-canon]
 status: published
 illustration: https://illeakyw.sirv.com/Images/tags/evam-me-sutam.jpg

@@ -1,6 +1,7 @@
 ---
 title: "Buddhist Philosophy in Dialogue"
 status: published
+hashtag: philosophy
 parents: [thought, roots, speech]
 illustration: https://illeakyw.sirv.com/Images/tags/monks_navy_doctor.jpg
 illustration_height: 685

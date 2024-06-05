@@ -2,6 +2,7 @@
 title: "The Brahmaviharas"
 status: unpublished
 parents: [samatha, thought, feeling]
+hashtag: "love"
 ---
 
 The four altruistic emotions:

@@ -1,5 +1,6 @@
 ---
 title: "Stages of the Path"
+hashtag: SpiritualAwakening
 status: unpublished
 parents: [path, nibbana]
 ---

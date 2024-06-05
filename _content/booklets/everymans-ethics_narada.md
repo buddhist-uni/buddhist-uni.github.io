@@ -19,3 +19,9 @@ pages: 21
 ---
 
 Four important suttas on ethics. The translations in this booklet are a bit dated, but not bad.
+
+The suttas featured are:
+  - [DN 31](/content/canon/dn31)
+  - [Snp 2.4](/content/canon/snp2.4)
+  - [Snp 1.6](/content/canon/snp1.6)
+  - [AN 8.54](/content/canon/an8.54)

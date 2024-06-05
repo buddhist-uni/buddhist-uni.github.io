@@ -1,5 +1,6 @@
 ---
 title: "The Buddhist Path"
+hashtag: MeditationJourney
 parents: [function]
 status: published
 illustration: https://illeakyw.sirv.com/Images/tags/boat-crossing-sketch.jpg

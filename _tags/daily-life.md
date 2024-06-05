@@ -1,5 +1,6 @@
 ---
 title: "Meditating in Daily Life"
+hashtag: life
 status: unpublished
 parents: [problems, modern]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Monastic Buddhism"
+hashtag: monk
 status: published
 description: A bibliography of free works introducing the purpose behind Buddhist Monasticism and how monks live.
 parents: [sangha]

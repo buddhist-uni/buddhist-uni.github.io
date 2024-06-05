@@ -1,5 +1,6 @@
 ---
 title: "Nibbāna"
+hashtag: enlightenment
 parents: [function]
 status: published
 illustration: https://illeakyw.sirv.com/Images/banners/Diamond_Throne_Vajrasana.jpg

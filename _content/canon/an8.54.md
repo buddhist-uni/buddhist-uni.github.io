@@ -9,6 +9,7 @@ course: becon
 status: featured
 tags:
   - an
+# lay and ethics covered by wh014
 year: 2018
 pages: 3
 parallels:

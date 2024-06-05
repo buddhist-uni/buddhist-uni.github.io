@@ -19,6 +19,7 @@ big_image: https://upload.wikimedia.org/wikipedia/commons/7/76/Portrait_of_a_mon
 big_width: 3744
 big_height: 3744
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_a_monk-MGR_Lyon-IMG_9873-black.jpg">Rama</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">BY-SA 2.0 FR</a>
+hashtag: "sutras"
 ---
 
 The northern recension of the early Buddhist texts has been the subject of much, recent, text-critical scholarship.

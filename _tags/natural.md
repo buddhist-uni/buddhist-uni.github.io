@@ -1,5 +1,6 @@
 ---
 title: "The Natural World"
+hashtag: nature
 status: unpublished
 parents: [places]
 ---

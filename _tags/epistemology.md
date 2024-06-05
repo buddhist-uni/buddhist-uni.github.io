@@ -1,6 +1,7 @@
 ---
 title: "Pramāṇa"
 status: published
+hashtag: truth
 parents: [view]
 illustration: "https://illeakyw.sirv.com/Images/tags/Blind_monks_examining_an_elephant.jpg"
 illustration_height: 742

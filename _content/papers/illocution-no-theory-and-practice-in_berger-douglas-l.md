@@ -10,6 +10,7 @@ drive_links:
 course: mahayana-roots # maybe down to madhyamaka
 tags:
   - nagarjuna
+  - dialogue
 year: 1998
 booktitle: "The Paideia Archive: Twentieth World Congress of Philosophy"
 volume: 24

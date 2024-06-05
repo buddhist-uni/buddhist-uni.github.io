@@ -1,5 +1,6 @@
 ---
 title: "The Buddhist Religion"
+hashtag: buddhist
 status: published
 parents: [buddhism]
 illustration: https://illeakyw.sirv.com/Images/tags/dhammagiri_offering.jpg

@@ -9,9 +9,10 @@ drive_links:
   - "https://drive.google.com/file/d/1w9m6mU7pvCJbe1VuWiKELjg95rKM2mjF/view?usp=drivesdk"
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Karma-vibhanga/"
 source_url: "https://suttacentral.net/mkv"
-course: karma
+course: abhidharma
 tags:
-  - abhidharma
+  - karma
+  - rebirth-stories
 olid: OL32035986M
 pages: 181
 ---

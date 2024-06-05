@@ -1,5 +1,6 @@
 ---
 title: "East Asian Buddhism"
+hashtag: zen
 status: published
 parents: [mahayana, east-asian-religion]
 illustration: https://illeakyw.sirv.com/Images/tags/Patriarchs_of_Zen.jpg

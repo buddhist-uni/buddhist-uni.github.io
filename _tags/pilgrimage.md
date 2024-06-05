@@ -1,6 +1,7 @@
 ---
 title: "Pilgrimage"
 parents: [form]
+hashtag: travel
 status: published
 illustration: https://illeakyw.sirv.com/Images/tags/mahabodhi-meditating.jpeg
 illustration_center_x: 63%

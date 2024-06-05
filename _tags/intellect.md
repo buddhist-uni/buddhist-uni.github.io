@@ -1,5 +1,6 @@
 ---
 title: "The Intellect"
+hashtag: mind
 status: unpublished
 parents: [inner]
 use_sirv: true

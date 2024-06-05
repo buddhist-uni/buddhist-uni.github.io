@@ -1,5 +1,6 @@
 ---
 title: "Right Thought"
+hashtag: wisdom
 status: published
 parents: [philosophy, intellect]
 image: https://illeakyw.sirv.com/Images/banners/Hupao.jpg

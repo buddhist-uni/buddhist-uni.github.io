@@ -1,5 +1,6 @@
 ---
 title: "Buddhist Practice"
+hashtag: "dharma"
 status: published
 parents: [buddhism]
 illustration: https://illeakyw.sirv.com/Images/tags/Lotus_Flower.jpeg

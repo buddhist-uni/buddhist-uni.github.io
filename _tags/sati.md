@@ -1,5 +1,6 @@
 ---
 title: "Mindfulness"
+hashtag: mindfulness
 status: published
 parents: [meditation]
 illustration: https://illeakyw.sirv.com/Images/tags/1942.1082_print.jpg
