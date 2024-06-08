@@ -1,18 +1,16 @@
 ---
 title: "A Hoard of Inscribed Gandharan Metalware"
 authors:
-  - "Richard Salomon"
-external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article"
+  - salomon-richard
+external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article&download=yes"
 drive_links:
   - "https://drive.google.com/file/d/15iT7pBJA3fO7dGUrfuC7Ve3MPa_yGagk/view?usp=sharing"
-course: medieval
+course: sects
 tags:
   - indian
   - archeology
 year: 2022
 journal: jiabs
-publisher: 
-address: ""
 volume: 45
 pages: "253--290"
 ---
