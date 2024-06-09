@@ -1,7 +1,7 @@
 ---
 title: "A Hoard of Inscribed Gandharan Metalware"
 authors:
-  - salomon-richard
+  - "Richard Salomon
 external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article&download=yes"
 drive_links:
   - "https://drive.google.com/file/d/15iT7pBJA3fO7dGUrfuC7Ve3MPa_yGagk/view?usp=sharing"
