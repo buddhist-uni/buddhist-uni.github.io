@@ -7,6 +7,7 @@ course: medieval
 tags:
   - japan
   - japanese-roots
+  - sangha
 year: 1996
 journal: jjrs
 publisher: "Nanzan Institute for Religion and Culture"
