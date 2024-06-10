@@ -1,5 +1,5 @@
 ---
-title: "Can Monks Practice Astrology? Astrology and the Vinaya in China."
+title: "Can Monks Practice Astrology?: Astrology and the Vinaya in China"
 authors:
   -  "Jeffrey Kotyk"
 external_url: "https://www.academia.edu/34408763/_Can_Monks_Practice_Astrology_Astrology_and_the_Vinaya_in_China_"
@@ -14,7 +14,7 @@ tags:
 year: 2017
 booktitle: "Rules of Engagement: Medieval Traditions of Buddhist Monastic Regulation"
 publisher: "Hamburg University Press"
-address:"Hamburg"
+address: "Hamburg, Germany"
 chapter: 17
 pages: "503-–517"
 ---
@@ -24,4 +24,6 @@ exegete Daoxuan in China insisted that astrology was not to be practiced by
 a Buddhist monk or nun. Despite this fact, a tradition of Buddhist astrology
 nevertheless emerged in China from the eighth century and came to full maturity in the ninth century.
 
-This article examines early Buddhist vinaya rules on astrolgoy in both India and China. The author shows that, though all varieties of astrology are forbidden in earlier texts, Buddhist monastics in China still developed and practiced it. The analysis delves into the motivations behind this tradition and its significance for the evolution of Buddhism in China.
+This article examines early Buddhist Vinaya rules on astrology in both India and China.
+The author shows that, though all varieties of astrology are forbidden in earlier texts, Buddhist monastics in China still developed and practiced it.
+The analysis delves into the motivations and justifications for this tradition and its significance for the evolution of Buddhism in East Asia.
