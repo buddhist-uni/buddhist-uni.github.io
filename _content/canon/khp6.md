@@ -4,12 +4,13 @@ external_url: "https://suttafriends.org/sutta/khp6/"
 subcat: poetry
 drive_links:
   - "https://drive.google.com/file/d/1uqtBhNJG3MVUrmrBh1jV7m0anDKNzmpT/view?usp=drivesdk"
-course: theravada
+course: buddha
 tags:
-  - theravada-chanting
   - deva
   - khp
   - canonical-poetry
+  - sangha
+# theravada (+chanting) covered by wh054
 year: 2020
 minutes: 21
 ---

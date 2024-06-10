@@ -13,7 +13,6 @@ series: wheel
 number: 241
 course: canonical-poetry
 tags:
-  - imagery
   - path
   - snp
 pages: 28

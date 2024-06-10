@@ -316,6 +316,8 @@ subcat: poetry{extra_fields}"""
       slugfield = f"pv{nums[0]}.{nums[1]:02d}"
     case "iti":
       slugfield = f"iti{nums[0]:03d}"
+    case "kp":
+      slugfield = f"khp{nums[0]}"
     case _:
       print(f"Haven't yet implemented slug logic for {book}")
       quit(1)

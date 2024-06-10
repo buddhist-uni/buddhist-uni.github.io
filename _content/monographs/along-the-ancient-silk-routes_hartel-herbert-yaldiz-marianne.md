@@ -4,7 +4,7 @@ authors:
   - "Herbert Härtel"
   - "Marianne Yaldiz"
 external_url: "https://cdn.sanity.io/files/cctd4ker/production/93ca9a62747483bb5f6240e41122b53e823ac5ff.pdf"
-source_url: " https://www.metmuseum.org/met-publications/along-the-ancient-silk-routes-central-asian-art-from-the-west-berlin-state-museums"
+source_url: "https://www.metmuseum.org/met-publications/along-the-ancient-silk-routes-central-asian-art-from-the-west-berlin-state-museums"
 drive_links:
   - "https://drive.google.com/file/d/1ZhiJ6qRcyKYayiuvPx1kLj45kq1JN-XR/view?usp=sharing"
 course: medieval

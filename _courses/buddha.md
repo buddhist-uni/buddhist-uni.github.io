@@ -188,6 +188,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [R] Satthā deva-manussānaṁ
 1. [T] Devas Honor the Buddha
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="khp6" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [L] Devadatta
 
 1. [R] Buddho

@@ -1,0 +1,22 @@
+---
+title: "Kp 9 Mettā Sutta: The Teaching on Love"
+translator: nyanamoli
+subcat: poetry
+slug: "khp9"
+external_url: "https://suttacentral.net/kp9/en/nanamoli"
+drive_links:
+  - "https://drive.google.com/file/d/1ys5Ob4ozKs70Usxv6UJXqBzqQoLgVSdE/view?usp=drivesdk"
+course: ethics
+status: featured
+tags:
+  - canonical-poetry
+  - kp
+# buddha tag covered by Nyanamoli's *Life*
+# theravada (+chanting) covered by wh054
+year: 1987
+pages: 2
+parallels:
+  - snp1.8
+---
+
+> 

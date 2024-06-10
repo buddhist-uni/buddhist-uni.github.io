@@ -4,16 +4,20 @@ authors:
   - "Kuroda Toshio"
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/935/pdf/download"
 course: medieval
+status: featured
 tags:
-  - japan
   - japanese-roots
-  - sangha
+  - form
+  - past
 year: 1996
 journal: jjrs
 publisher: "Nanzan Institute for Religion and Culture"
 volume: 23
-number: 3-4
+number: 3
 pages: "287--319"
 ---
 
-This article explores how Buddhism influenced every part of medieval Japan, from villages and warrior families to bustling cities. It even examines wandering monks who challenged authority, showing how religion shaped both daily life and intellectual thought. The author particularly examines wandering monks who challenged the established social order, showing how religion shaped both daily life and intellectual thought.
+> The relationship between Buddhism and society was apparent in nearly every aspect of medieval life...
+
+> Thaumaturgic thinking and a polytheistic outlook pervaded premodern agricultural life. Much as we in modern times depend on scientific technology, people in premodern times relied on magical ceremonies for an abundant harvest.
+

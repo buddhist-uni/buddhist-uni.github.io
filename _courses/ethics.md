@@ -75,7 +75,9 @@ Our "wet" textbook is the Sanskrit classic:
 
 We start the course with this poem by American poet Philip Levine. Go ahead and click the link above now to read the poem. Think about its last line. What _is_ work?
 
-Hopefully this course will help you answer that question.
+For the Buddha's answer to this question, see:
+
+{% include content_box.html category="canon" slug="kp9" %}
 
 ### Part 1: Foundations
 

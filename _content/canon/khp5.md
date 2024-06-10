@@ -6,12 +6,11 @@ drive_links: ["https://drive.google.com/file/d/1ZkSosgqWjweN4BkaquDtfHjYn7JczPg-
 source_url: "https://suttacentral.net/kp5/en/sujato"
 course: buddhism
 status: featured
-tags: 
-  - theravada
-  - theravada-chanting
+tags:
   - sangha
   - khp
   - canonical-poetry
+# theravada (+chanting) covered by wh054
 subcat: poetry
 pages: 2
 ---

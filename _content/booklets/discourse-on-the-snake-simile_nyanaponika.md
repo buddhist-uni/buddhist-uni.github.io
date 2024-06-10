@@ -21,5 +21,5 @@ pages: 34
 
 > [The] discourse appears indeed as a rather formidable assemblage of stern messages. Yet, for one who is familiar with the Buddha Word, this will be softened by the fact that in numerous discourses the Buddha spoke of his Teaching as one that offers "gradual training, gradual progress." It is here that the Buddha's gentleness and compassion appears, his forbearance with human frailties, and his wise and patient guidance of men.
 
-Nyanaponika Thera's translation of MN 22 including notes mostly from the commentarial tradition.
+Nyanaponika Thera's translation of [MN 22](/content/canon/mn22) including notes mostly from the commentarial tradition.
 Contains well-known Buddhist similies such as the famous one on getting hold of a snake and the parabale of the raft illustrating the right way to hold views.

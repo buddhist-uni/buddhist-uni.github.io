@@ -11,7 +11,6 @@ course: ethics
 status: featured
 tags:
   - conflict
-  - speech
   - communication
 year: 1979
 series: wheel
