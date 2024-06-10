@@ -10,6 +10,7 @@ course: ethics
 status: featured
 tags:
   - canonical-poetry
+  - social
   - kp
 # buddha tag covered by Nyanamoli's *Life*
 # theravada (+chanting) covered by wh054
@@ -19,4 +20,7 @@ parallels:
   - snp1.8
 ---
 
-> 
+> Let him be able, and upright and straight,  
+Easy to speak to, gentle, and not proud...
+
+"What should be done" by us Buddhists.
