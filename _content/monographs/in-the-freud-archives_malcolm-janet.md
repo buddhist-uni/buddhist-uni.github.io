@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/details/infreudarchives00malc/page/n4/mode/1up"
 course: academia
 tags:
-  - psychoanalysis
+  - psychotherapy
   - groups
   - history-of-science
   - journalism

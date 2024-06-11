@@ -9,6 +9,7 @@ status: featured
 tags:
   - function
   - snp
+# canonical-poetry (+path) covered by wh241
 subcat: poetry
 year: 1994
 pages: 2

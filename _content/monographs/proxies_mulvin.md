@@ -22,4 +22,4 @@ pages: 200
 Such knowledge production relies on accessible representations of the world, and proxies are the people, artifacts, places, and moments invested with the authority to represent the world.
 To interrogate the use of proxies is to ask: to whom or to what do we delegate the power to represent the world?
 
-> Proxies are instrumental to developing 'group-licensed ways of seeing,' and they are crucial to the ways we learn how to participate in our communities by training ourselves through common references, by com-ing to see problems as akin, and by taking for granted that others in our community share those references and those ways of seeing.
+> Proxies are instrumental to developing 'group-licensed ways of seeing,' and they are crucial to the ways we learn how to participate in our communities by training ourselves through common references, by coming to see problems as akin, and by taking for granted that others in our community share those references and those ways of seeing.

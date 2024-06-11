@@ -20,3 +20,5 @@ pages: 28
 
 > We must recall here that it is attachment to these five aggregates that has to be given up and that this is a gradual process.
 We must not expect our habitual likes and dislikes, our enjoyments and desires to vanish all at once; nor can they be broken by force.
+
+A translation and analysis of [Snp 1.1](/content/canon/snp1.1).
