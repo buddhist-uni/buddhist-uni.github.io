@@ -4,7 +4,7 @@ editor: "Susan Andrews and Jinhua Chen and Cuilan Liu"
 authors:
   -  "Jeffrey Kotyk"
 external_url: "https://www.academia.edu/34408763/_Can_Monks_Practice_Astrology_Astrology_and_the_Vinaya_in_China_"
-source url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/hamburgup-hbs09-full.pdf"
+source_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/hamburgup-hbs09-full.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1FEAJAhNQwGIgvO1dYEY1csVcPJBLxnJh/view?usp=drive_link"
 course: medieval
