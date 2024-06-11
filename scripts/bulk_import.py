@@ -487,6 +487,7 @@ if __name__ == "__main__":
     nargs="+",
     help="""The items (or source of the items) to upload.
 These items can be:
+  - A PDF of type --pdf-type
   - A YouTube Video Link
   - A YouTube Playlist Link (each video added seperately)
   - A YAML or JSON file containing a list of any of the above

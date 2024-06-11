@@ -17,7 +17,7 @@ booktitle: "Rules of Engagement: Medieval Traditions of Buddhist Monastic Regula
 publisher: "Hamburg University Press"
 address: "Hamburg, Germany"
 chapter: 17
-pages: "503-–517"
+pages: "503--517"
 ---
 
 > The vinaya canon, some major sutras and the writings of eminent vinaya
