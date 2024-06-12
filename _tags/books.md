@@ -1,7 +1,7 @@
 ---
 title: "The Book"
 status: unpublished
-parents: [things, media]
+parents: [media]
 ---
 
 The history of bound pages.

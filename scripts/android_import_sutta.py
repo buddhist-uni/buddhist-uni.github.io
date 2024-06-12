@@ -13,8 +13,7 @@ from parallels import get_parallels_yaml
 from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
 from archivedotorg import save_url_to_archiveorg
 from pdfutils import readpdf, get_page_count
-# Bypassing for now due to SciPy crash
-# from tag_predictor import TagPredictor
+from tag_predictor import TagPredictor
 
 yaml_list_prefix = '\n  - '
 NONSC_TRANSLATORS = [{
@@ -229,7 +228,7 @@ def process_pdf(pdf_file):
   print(f"Processing {pdf_file}...")
   pdf_file = Path(pdf_file)
   pages = get_page_count(pdf_file)
-  # pdf_text = readpdf(pdf_file)
+  pdf_text = readpdf(pdf_file)
   guess = guess_id_from_filename(pdf_file.stem)
   while True:
     sutta = input_with_prefill("Sutta ID? ", guess)
@@ -244,8 +243,7 @@ def process_pdf(pdf_file):
     if not prompt("File already exists! Continue anyway?"):
       return
   blurb = get_blurb_for_suttaid(slug) or ''
-  # course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
-  course = ''
+  course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
   parsed = sutta_id_re.match(slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]

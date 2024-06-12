@@ -3,6 +3,8 @@ title: "Debt: The First 5000 Years"
 authors:
   - graeber-david
 course: economics
+external_url: "https://archive.org/details/DebtTheFirst5000Years/page/n2/mode/1up"
+alternative_link: "https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fulllist/special/statesofdamage/syllabus201516/graeber-debt_the_first_5000_years.pdf"
 status: featured
 olid: OL27883779M
 tags:

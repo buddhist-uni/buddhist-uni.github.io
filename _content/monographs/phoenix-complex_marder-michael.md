@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1ytSlb0gASNrU3vyoktnkEH7BbYbeerp8/view?usp=drivesdk"
 tags:
   - mythology
+  - natural
   - time
 year: 2023
 olid: OL42751992M
