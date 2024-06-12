@@ -1,5 +1,6 @@
 ---
 title: "Media Studies"
+hashtag: "mediaStudies"
 status: unpublished
 parents: [communication]
 ---

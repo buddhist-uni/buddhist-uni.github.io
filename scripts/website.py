@@ -1,5 +1,7 @@
 
 from typing import Any
+import subprocess
+from datetime import datetime
 from strutils import (
   Path,
   git_root_folder as root_folder
@@ -14,6 +16,7 @@ except:
 
 config = yaml.load(root_folder.joinpath('_config.yml').read_text(), Loader=yaml.Loader)
 baseurl = config.get('url')
+filecreationtimes = dict()
 
 class JekyllFile(frontmatter.Post):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -23,6 +26,7 @@ class JekyllFile(frontmatter.Post):
     super().__init__(content, handler=handler, **kwargs)
     self.absolute_path = fd
     self.relative_path = fd.relative_to(root_folder)
+    self.created_at = filecreationtimes[str(self.relative_path)]
   
   @classmethod
   def load(cls, f: Path, **kwargs):
@@ -85,6 +89,10 @@ class TagCollection():
     return iter(self.tags.values())
   def __len__(self):
     return len(self.tags)
+  def __contains__(self, item):
+    if isinstance(item, TagFile):
+      return item.slug in self.tags
+    return bool(self.get(item))
 
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -109,9 +117,31 @@ def entry_with_drive_id(gid):
         return entry
   return None
 
+def get_file_creation_times():
+  """Returns a dict from relative filepath strings to datetime stamps"""
+  filecreationtimes = dict()
+  SYGIL = '%these-files-modified-at:'
+  git_history = subprocess.run(
+    ["git", "--git-dir", root_folder.joinpath(".git"),
+     "log", "--name-only", "--date=unix",
+     f"--pretty=%{SYGIL}%ct"
+    ],
+    capture_output=True, text=True, check=True).stdout.splitlines()
+  timestamp = datetime.now()
+  for line in git_history:
+    if SYGIL in line:
+      timestamp = datetime.fromtimestamp(int(line[len(SYGIL):]))
+      continue
+    if line == "":
+      continue
+    filecreationtimes[line] = timestamp
+  return filecreationtimes
+
+
 def load():
   if content:
     return
+  filecreationtimes.update(get_file_creation_times())
   for contentfolder in root_folder.joinpath('_content').iterdir():
     if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):
       continue
@@ -119,6 +149,7 @@ def load():
       if contentfile.is_dir() or contentfile.name.startswith('.'):
         continue
       content.append(ContentFile.load(contentfile))
+  content.sort(key=lambda c: c.created_at)
   for tagfile in root_folder.joinpath('_tags').iterdir():
     if (not tagfile.is_file()) or tagfile.name.startswith('.'):
       continue

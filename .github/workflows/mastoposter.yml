@@ -1,0 +1,20 @@
+name: Mastodon Autoposter
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8,20 * * *"
+jobs:
+  mastoposter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install Dependencies
+        run: pip install Mastodon.py titlecase pyyaml python-frontmatter
+      - name: Run Mastoposter
+        shell: bash
+        run: |
+          cd scripts
+          MASTODON_TOKEN="${{ secrets.MASTODON_TOKEN }}" python mastoposter.py
