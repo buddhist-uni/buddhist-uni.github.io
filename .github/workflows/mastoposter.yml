@@ -2,7 +2,7 @@ name: Mastodon Autoposter
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8,20 * * *"
+    - cron: "0 14,22 * * *"
 jobs:
   mastoposter:
     runs-on: ubuntu-latest

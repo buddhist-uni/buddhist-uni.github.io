@@ -182,21 +182,21 @@ if __name__ == "__main__":
   print("Selecting the next post...", flush=True)
   last_few_urls = [p['card']['url'][len(website.baseurl):] for p in last_few_posts if p['card']]
   idx_to_post = None
-  for ridx, c in enumerate(reversed(website.content)):
+  filtered_content = [c for c in website.content if c.external_url or c.drive_links]
+  for ridx, c in enumerate(reversed(filtered_content)):
     if c.url in last_few_urls:
       break
-    idx_to_post = len(website.content) - 1 - ridx
+    idx_to_post = len(filtered_content) - 1 - ridx
   if idx_to_post is None:
     print("::error title=Nothing to do::No new items left to post to Mastodon")
-    quit(1)
-  # skip unfree content
-  while not (website.content[idx_to_post].external_url or website.content[idx_to_post].drive_links):
-    idx_to_post += 1
-    if idx_to_post >= len(website.content):
-      print("::error title=Nothing to do::No new items left to post to Mastodon")
-      quit(1)
-  print(f"::notice title=Post Selection::Posted item {idx_to_post+1} of {len(website.content)} (~{len(website.content)-idx_to_post-1} remaining after this one)", flush=True)
-  status = write_post_for_item(website.content[idx_to_post])
+    import sys
+    sys.exit(1)
+  mtype = "notice"
+  remaining = len(filtered_content) - idx_to_post-1
+  if remaining <= 2:
+    mtype = "warning"
+  print(f"::{mtype} title=Post Selection::Posted item {idx_to_post+1} of {len(filtered_content)} free items ({remaining} remaining after this)", flush=True)
+  status = write_post_for_item(filtered_content[idx_to_post])
   masto_info = mastodon.status_post(
     status=status,
     language="en",
