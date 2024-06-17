@@ -8,8 +8,8 @@ drive_links:
 course: medieval
 tags:
   - ghandara
-  - mythology
-  - mahayana
+  - mahayana-roots
+  - inner-asia
 year: 2002
 journal: pw
 volume: 4
@@ -21,4 +21,4 @@ great cities of North India or China, many of them became enamored of the
 paradoxical presence of metropolitan sophistication and rural isolation
 that Central Asia afforded
 
-In this article, Davidson posits Central Asia's centrality, via the Silk Road, in not only disseminating Buddhism but shaping it as well. He highlights the numerous texts, such as sutras, vinayas, and mythologies, that have come from this area and influenced Buddhism in India, China, and Tibet. He ends the article with consideration for the adventurous and mysterious image that Central Asia held for these cultures.
+Long seen as a mythical land (See, "[Uttarakuru](/content/excerpts/uttarakuru_analayo)"), Inner Asia was central (via the Silk Road) in not only disseminating Buddhism across Asia in but shaping its mythos as well.

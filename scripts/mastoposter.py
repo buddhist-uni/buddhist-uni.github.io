@@ -60,7 +60,7 @@ def get_category_for_item(page: website.ContentFile) -> tuple[str, str]:
       category = "book"
       match page.subcat:
         case "poetry":
-          category = "book of poetry"
+          category = "book of #poetry"
         case "thesis":
           category = "thesis"
     case "canon":
@@ -94,7 +94,7 @@ def get_category_for_item(page: website.ContentFile) -> tuple[str, str]:
       category = "book"
       match page.subcat:
         case "poetry":
-          category = "book of poetry"
+          category = "book of #poetry"
         case "fiction":
           category = "novel"
     case "reference":
@@ -102,10 +102,10 @@ def get_category_for_item(page: website.ContentFile) -> tuple[str, str]:
       category = "resource"
     case _:
       raise RuntimeError("Unknown category")
-  if page.translator:
+  if page.translator and page.subcat != "music":
     if category[-1] in ['m', 'y']:
       category += " in"
-    category += " #translation"
+    category += " translation"
   return (emoji, category)
 
 def hashtagify(text: str) -> str:
@@ -205,4 +205,10 @@ if __name__ == "__main__":
   print("::group::Mastodon Response")
   print(json.dumps(masto_info, indent=2, default=str))
   print("::endgroup::")
-
+  print("::group::Future Posts")
+  while idx_to_post < len(filtered_content) - 1:
+    print("")
+    idx_to_post += 1
+    print(write_post_for_item(filtered_content[idx_to_post]))
+    print("")
+  print("::endgroup::")
