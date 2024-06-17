@@ -16,4 +16,4 @@ number: 1
 pages: "85--114"
 ---
 
-In this article, McBride gives a nuanced view of dhāraṇī and spells during the Sui Dynasty period through the end of the Tang, roughly 500–907 C.E. For this exposition, he focuses on three Chinese intellectuals: Jingying Huiyuan (523–592), Daoshi (596–683), and Amoghavajra (705-774). All three people offer a unique understanding of dhāraṇī and spells.
+A nuanced view of dhāraṇī and spells during the Sui Dynasty period through the end of the Tang, roughly 500–907 C.E focusing on three Chinese intellectuals: Jingying Huiyuan (523–592), Daoshi (596–683), and Amoghavajra (705-774).
