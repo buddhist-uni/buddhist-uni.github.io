@@ -18,4 +18,6 @@ volume: 52
 pages: "713--727"
 ---
 
-This article looks at how Buddhism affects businesses started by Buddhists. The researchers believe Buddhist ideas can help these businesses succeed, partly by encouraging the owners to take risks. They studied over 1,000 businesses in China and found evidence to support their ideas. This study aims to add to the understanding of religion, risk-taking, business success, and the differences between Eastern and Western religions in these areas.
+This article looks at how Buddhism affects businesses started by Buddhists. The researchers believe Buddhist ideas can help these businesses succeed, partly by encouraging the owners to take risks. They studied over 1,000 businesses in China and found evidence to support their ideas.
+
+This study gives some additional perspective on why Buddhism has always been a particularly attractive religion to traders and merchants.
