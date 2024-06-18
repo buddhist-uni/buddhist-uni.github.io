@@ -9,7 +9,7 @@ status: featured
 course: intelligence
 tags:
   - labor
-  - information-capitalism
+  - info-capitalism
   - inner
 year: 2021
 month: jul

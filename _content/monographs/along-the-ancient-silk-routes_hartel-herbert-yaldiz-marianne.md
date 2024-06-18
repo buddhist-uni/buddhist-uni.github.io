@@ -10,7 +10,7 @@ drive_links:
 course: medieval
 tags:
   - bart
-  - gandhara
+  - central-asian
   - mahayana-roots
 year: 1982
 olid: OL3513951M

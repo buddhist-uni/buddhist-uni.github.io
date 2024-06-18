@@ -13,6 +13,7 @@ course: mahayana
 tags:
   - east-asian-roots
   - nibbana
+  - tathagatagarbha
 ---
 
 > Indeed, it is no exaggeration to say that the MNS has provided the

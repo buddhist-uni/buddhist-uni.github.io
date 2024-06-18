@@ -11,7 +11,7 @@ course: form
 tags:
   - jataka
   - bart
-  - gandhara
+  - central-asian
   - inner
 minutes: 15
 ---

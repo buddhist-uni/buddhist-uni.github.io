@@ -10,6 +10,7 @@ year: 2019
 tags:
   - mahayana
   - philosophy
+  - tathagatagarbha
 series: library-of-wisdom-and-compassion
 number: 3
 pages: 440

@@ -10,7 +10,7 @@ external_url: "https://newbooksnetwork.com/richard-salomon-the-buddhist-literatu
 course: mahayana-roots
 tags:
   - medieval
-  - gandhara
+  - central-asian
 minutes: 59
 ---
 

@@ -2,7 +2,7 @@
 title: "Psychopolitics: Neoliberalism and New Technologies of Power"
 authors:
   - han-byung-chul
-course: information-capitalism # very solidly. Almost 4 stars
+course: info-capitalism # very solidly. Almost 4 stars
 tags:
   - mass-media
   - intellect

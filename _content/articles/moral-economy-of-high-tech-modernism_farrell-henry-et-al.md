@@ -9,7 +9,7 @@ drive_links:
 course: media
 tags:
   - state
-  - information-capitalism
+  - info-capitalism
   - ideology
 year: 2023
 month: jan

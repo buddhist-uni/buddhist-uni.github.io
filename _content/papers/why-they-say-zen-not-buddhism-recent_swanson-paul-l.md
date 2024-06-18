@@ -11,6 +11,7 @@ course: modern-japanese-philosophy
 tags:
   - east-asian
   - abhidharma
+  - tathagatagarbha
 year: 1997
 month: dec
 booktitle: "Pruning the Bodhi Tree: The Storm over Critical Buddhism"

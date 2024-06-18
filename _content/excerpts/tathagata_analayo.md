@@ -14,6 +14,8 @@ year: 2008
 drive_links:
  - "https://drive.google.com/file/d/1TesyxwmN5phkiZ3B7Fpc6QDCCRUtIMoQ/view?usp=drivesdk"
 course: buddha
+tags:
+  - tathagatagarbha
 ---
 
 A survey of what the Pali Canon says about Tathāgatas.
