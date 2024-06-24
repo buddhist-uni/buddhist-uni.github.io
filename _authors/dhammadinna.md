@@ -5,5 +5,5 @@ Bhikkhunī Dhammadinnā was born in Italy in 1980 and went forth in Sri Lanka in
 
 Her main research interests are early Buddhist discourse and Vinaya texts (with a focus on the Theravāda and Mūlasarvāstivāda traditions), the formative phases of Mahāyāna ideology in Khotan in the fifth and sixth centuries, and the development of the theories, practices and ideologies of Buddhist meditative traditions. She is currently a research associate professor in the Department of Buddhist Studies of the Dharma Drum Institute of Liberal Arts, mainly working on a study of the evolution of the notions of great compassion and omniscience in the history of Buddhist thought and on a collated digital edition, annotated translation and comparative study of the Mūlasarvāstivāda āgama quotations in Śamathadeva’s Abhidharmakośopāyikāṭīkā preserved in Tibetan translation. Dhammadinnā also serves as the series editor for the ARG publications with the Dharma Drum Publishing Corporation.
 
-_~ From [Vinaya Revival](https://vinayarevival.com/bhikkhuni-dhammadinna/)_
+_~ From [Vinaya Revival](https://web.archive.org/web/20200928215206/https://vinayarevival.com/bhikkhuni-dhammadinna/)_
 

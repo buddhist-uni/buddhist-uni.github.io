@@ -6,11 +6,9 @@ external_url: "https://www.are.na/block/12637399"
 drive_links:
   - "https://drive.google.com/file/d/11oEg9VaGK_wV2Ie0BHaB_RH5au2bO1O7/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1lvu89Cb0b7RdODIyu99c4yRDrJp1XM2s/view?usp=drivesdk"
-status: featured
 course: present
 tags:
   - media
-  - internet
   - art
 year: 2017
 olid: OL26945408M

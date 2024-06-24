@@ -187,6 +187,10 @@
   "private": "https://drive.google.com/drive/folders/1KjsRy4SxUYSwHRxiXWK2Cb5OziSpXIIM",
   "public": "https://drive.google.com/drive/folders/1-rjn46aW3B-kFJ-fHuJZy5a8Sn_Pmg0C"
  },
+ "brazil": {
+  "private": "https://drive.google.com/drive/folders/1vZjeDrQHPNsnv5DtyBOtepGycLvs__Oj",
+  "public": null
+ },
  "britain": {
   "private": "https://drive.google.com/drive/folders/1bFodzIumyKNY_ONYpuCMx_OqSzQFodJE",
   "public": ""
@@ -483,6 +487,10 @@
   "private": "https://drive.google.com/drive/folders/1IqcaId1_clOV3K-RUiJl_NciFPmsHD1H",
   "public": "https://drive.google.com/drive/folders/11wrQDtzMriRHax91j4HRmNGcCESZxNYC"
  },
+ "engineering": {
+  "private": "https://drive.google.com/drive/folders/1wAwy2MQhUlUGOjmKRbh0fG6XVcWXIS2y",
+  "public": null
+ },
  "english": {
   "private": "https://drive.google.com/drive/folders/1xVxDAWJ5kQdNRRPhJaTD5npSzDwXxW_Y",
   "public": null
@@ -514,6 +522,10 @@
  "farang": {
   "private": "https://drive.google.com/drive/folders/1-R2ckZ7Hcm0cNNc4L1MzQYnVIas7SsUy",
   "public": ""
+ },
+ "fascism": {
+  "private": "https://drive.google.com/drive/folders/1O1I-Xy99l2lvH3e5YCo5pt-oc9STra6d",
+  "public": null
  },
  "feeling": {
   "private": "https://drive.google.com/drive/folders/1J_su5UhzgQLO4cF-jWQDXRjBMdUxBUfG",
@@ -1158,6 +1170,10 @@
  "problems": {
   "private": "https://drive.google.com/drive/folders/1_q1-tCU0xlm77ihFDbeEoRA9UIr1Zoj0",
   "public": "https://drive.google.com/drive/folders/11dOhsC5wdbK_SZv8AEPPwi2sAC1jLS6u"
+ },
+ "project-managagement": {
+  "private": "https://drive.google.com/drive/folders/1uACLr1pdbBe4utQq1Y6C2Y_UrXg3Ws6Z",
+  "public": null
  },
  "psychology": {
   "private": "https://drive.google.com/drive/folders/1fumD38xSjmx4XtO2qVv3fGUkPLCmipBC",

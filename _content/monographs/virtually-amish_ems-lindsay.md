@@ -19,7 +19,7 @@ year: 2022
 olid: OL36394764M
 oclc: 1288010279
 publisher: mit
-pages: 
+pages: 180
 ---
 
 How fiercely independent Christian communities in America are slowly being forced to adopt modern technology and the strategies they are inventing to resist that technology's destabilizing effects.
