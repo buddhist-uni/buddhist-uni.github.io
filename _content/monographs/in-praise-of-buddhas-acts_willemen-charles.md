@@ -4,10 +4,9 @@ translator: "Charles Willemen"
 external_url: "https://bdkamerica.org/download/1896"
 drive_links:
   - "https://drive.google.com/file/d/1ogsp86UfZguXkm1Z_qVrd2fCggIxKfX0/view?usp=sharing"
-course: canonical-poetry
+course: indian
 tags:
   - buddha
-  - indian
   - classical-poetry
 year: 2009
 olid: OL28017907M
@@ -21,3 +20,5 @@ darkness. Celestial flowers fell down like rain from the sky to worship the Bodh
 
 A translation of the Chinese version of Aśvaghoṣa's famous epic composed in the second century of the common era.
 The classic Indian poem gives a tasteful biography of Śākyamuni Buddha's life which is still admired for its artistry today.
+
+For an older translation of the (reconstructed) Sanskrit, see [Cowell, 1894](/content/booklets/buddhacarita_asvaghosa-cowell).

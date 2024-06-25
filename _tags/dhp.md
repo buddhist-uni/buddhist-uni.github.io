@@ -1,5 +1,5 @@
 ---
-title: "The Dhammapada"
+title: "Dhammapada"
 status: unpublished
 hashtag: BuddhaQuotes
 parents: [canonical-poetry]
