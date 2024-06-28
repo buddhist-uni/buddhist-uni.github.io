@@ -183,6 +183,10 @@
   "private": "https://drive.google.com/drive/folders/1OqcQ5wipm6l2XREXT_7I8VxeIgpjy-Zg",
   "public": null
  },
+ "boom-bust": {
+  "private": "https://drive.google.com/drive/folders/1EpCJzpQWg10nqIoP_SG6BJmzKY1E6WzG",
+  "public": null
+ },
  "brahmavihara": {
   "private": "https://drive.google.com/drive/folders/1KjsRy4SxUYSwHRxiXWK2Cb5OziSpXIIM",
   "public": "https://drive.google.com/drive/folders/1-rjn46aW3B-kFJ-fHuJZy5a8Sn_Pmg0C"
@@ -279,6 +283,10 @@
   "private": "https://drive.google.com/drive/folders/1MWiiAHPQ6VeRHsGLdYmMsCNb0nviM2DE",
   "public": null
  },
+ "central-asian": {
+  "private": "https://drive.google.com/drive/folders/1Ynz4rQ3APMPVoP0KYqA05LucLvXmD5jx",
+  "public": null
+ },
  "chah": {
   "private": "https://drive.google.com/drive/folders/1GItn05-X6D1r8qrVGk7z66C2AkxwbdWq",
   "public": ""
@@ -339,9 +347,17 @@
   "private": "https://drive.google.com/drive/folders/1xiSsjPQ6RUwYL_T4PTa2tqMWBES2uoAC",
   "public": null
  },
+ "comics": {
+  "private": "https://drive.google.com/drive/folders/1rQYmF-wdhi7jY1AQN-RNCvMVDU1pAXJx",
+  "public": null
+ },
  "communication": {
   "private": "https://drive.google.com/drive/folders/1KvoZHNm3ogSjMPj8iaC9tNllOv0CB1t_",
   "public": "https://drive.google.com/drive/folders/1L1UPrE7KoHQbqsS2G-frUGm6ublwSQgV"
+ },
+ "communism": {
+  "private": "https://drive.google.com/drive/folders/1yt9-cDg-OyybHBU-z5lcIG74vRpM5t0W",
+  "public": null
  },
  "computational-linguistics": {
   "private": "https://drive.google.com/drive/folders/1ZVXfecxs5nTT-_HvD2GUyNZOxVQBSSwk",
@@ -974,6 +990,10 @@
  "mythology": {
   "private": "https://drive.google.com/drive/folders/1VuUAVdileMSFaoI05FYBHRLHM_iET_OM",
   "public": ""
+ },
+ "native-america": {
+  "private": "https://drive.google.com/drive/folders/178qfSY2W713JNdjR4zHCHXaCWk6Sy-OO",
+  "public": null
  },
  "natural": {
   "private": "https://drive.google.com/drive/folders/1KUO5h5qwGpFq9eT89hPsKry6FH2LWOw5",
