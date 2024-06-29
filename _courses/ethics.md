@@ -177,6 +177,9 @@ Accepting our faults is a critical starting point for ethical development, and a
 {% include content_blurb.html category="canon" slug="sn42.8" %}
 - The Buddha points out that even a killer only spends a small amount of their time actually killing, pointing out how hard it is to know ourselves—and how easy it is to delude ourselves!
 
+{% include content_blurb.html category="canon" slug="thag1.45" %}
+- But one who picks themselves back up after stumbling is a true disciple of the Buddha.
+
 ##### Chapter 3: Taking Hold of Bodhicitta
 
 {% include content_blurb.html category="canon" slug="ud5.1" %}

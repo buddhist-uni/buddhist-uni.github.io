@@ -6,10 +6,9 @@ source_url: "https://suttacentral.net/thag2.39/en/sujato"
 translator: sujato
 course: imagery
 tags:
-  - characters
   - thag
-  - canonical-poetry
   - nuns
+# canonical-poetry (characters, pali-canon) covered by wh135
 year: 2018
 pages: 1
 subcat: poetry

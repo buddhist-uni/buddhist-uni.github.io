@@ -5,12 +5,12 @@ slug: "thag.19.01"
 external_url: "https://suttacentral.net/thag19.1/en/sujato"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1qabqJmvBzgc6A94VOFfmpgHFFveJrXmE/view?usp=drivesdk"]
-course: canonical-poetry
+course: problems
 tags:
   - thag
   - intellect
-  - problems
   - monastic-advice
+# canonical-poetry (characters, pali-canon) covered by wh135
 year: 2014
 pages: 8
 parallels: []

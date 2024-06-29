@@ -8,7 +8,7 @@ status: featured # solidly
 course: california
 tags:
   - anthropology
-  - native-americans
+  - native-america
   - writing # with prejudice: history and example of
   - groups
   - time

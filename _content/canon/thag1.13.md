@@ -8,9 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1Az00Otxujq4_tsyly0l2iiBHwj4k5ia5/view?usp=drivesdk"
 course: nature
 tags:
-  - canonical-poetry
   - mountains
   - thag
+# canonical-poetry (characters, pali-canon) covered by wh135
 year: 2018
 pages: 1
 ---

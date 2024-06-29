@@ -371,6 +371,10 @@
   "private": "https://drive.google.com/drive/folders/16GayDn2MIODTcxzDEph_nRhxvkwj4dYO",
   "public": ""
  },
+ "contemporary-poetry": {
+  "private": "https://drive.google.com/drive/folders/10krwx4j7eet-4e2pc0R0mXSw63JDw_uf",
+  "public": null
+ },
  "continental": {
   "private": "https://drive.google.com/drive/folders/19o6zqZqsFQc6aNWk6MEj5kfekGhtzZoB",
   "public": ""
@@ -841,6 +845,10 @@
  },
  "leadership": {
   "private": "https://drive.google.com/drive/folders/1KRB922TA_d8J1ou757XKRhItYoxzYPqx",
+  "public": null
+ },
+ "libraries": {
+  "private": "https://drive.google.com/drive/folders/1NjKOLrtCBx8bwtU5MbhmqCirbW9yMByt",
   "public": null
  },
  "lit-crit": {
@@ -1487,6 +1495,10 @@
   "private": "https://drive.google.com/drive/folders/1FXkb4MdkM2E9CK1hvP7Fxm37f1MTUeWx",
   "public": "https://drive.google.com/drive/folders/1KWPlshYAzaItcKxvtUTeTbqfzIeH3s9Z"
  },
+ "to-split": {
+  "private": "https://drive.google.com/drive/folders/163ZHFKXKTCzOYOE2YtxkqTeHhMNTHYhM",
+  "public": null
+ },
  "translation": {
   "private": "https://drive.google.com/drive/folders/1BXEznrqwYHSpE3Bzmy8wl1wWBm5mjCFU",
   "public": ""
@@ -1530,6 +1542,10 @@
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1KO0ab5Y56Pcsql0yDuTSj4L_85PKb_pA",
   "public": "https://drive.google.com/drive/folders/102NYa-Ku2RGNLwU0DBT1tPlRAyZbRrq0"
+ },
+ "walking-meditation": {
+  "private": "https://drive.google.com/drive/folders/163peQIg5Zl9ufTJH1IZY9oxrgrX4-SBW",
+  "public": null
  },
  "war": {
   "private": "https://drive.google.com/drive/folders/1iIUJzJCoCWFZ5hRc67xbE94LaGGpQ2QX",

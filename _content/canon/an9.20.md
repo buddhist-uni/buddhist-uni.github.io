@@ -12,6 +12,7 @@ tags:
   - dana
   - rebirth-stories
 # buddha tag covered by Nyanamoli's *Life*
+# karma (meditation, brahma-vihāra) covered by wh372
 year: 2018
 pages: 3
 parallels:

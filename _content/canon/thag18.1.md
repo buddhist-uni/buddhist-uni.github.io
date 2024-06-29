@@ -10,6 +10,7 @@ tags:
   - monastic-advice
   - viveka
   - nature
+# canonical-poetry (characters, pali-canon) covered by wh135
 year: 2021
 pages: 4
 parallels: []

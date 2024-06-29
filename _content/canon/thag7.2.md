@@ -8,6 +8,7 @@ course: music
 tags:
   - thag
   - sati
+# canonical-poetry (characters, pali-canon) covered by wh135
 year: 2014
 subcat: poetry
 pages: 2
