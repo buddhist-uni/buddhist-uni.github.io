@@ -205,8 +205,7 @@ if __name__ == "__main__":
   )
   print("::group::Mastodon Response")
   print(json.dumps(masto_info, indent=2, default=str))
-  print("::endgroup::")
-  print("Posting to Twitter...", flush=True)
+  print("::endgroup::", flush=True)
   client = tweepy.Client(
     consumer_key=os.getenv("X_CONSUMER_KEY"),
     consumer_secret=os.getenv("X_CONSUMER_SECRET"),

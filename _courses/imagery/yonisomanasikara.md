@@ -13,6 +13,7 @@ description: "The world is full of distractions from the spiritual path."
 {% include content_blurb.html category="canon" slug="an3.130" %}
 {% include content_blurb.html category="canon" slug="an3.133" %}
 {% include content_blurb.html category="canon" slug="dhp25.365-369" %}
+{% include content_blurb.html category="canon" slug="thag1.77" %}
 </p>
 
 ### Similes

@@ -1,5 +1,5 @@
 ---
-title: "The Abhidhamma"
+title: "Abhidhamma"
 status: unpublished
 parents: [pali-canon, theravada]
 illustration: https://illeakyw.sirv.com/Images/tags/buddha_preaches_in_heaven.jpg
