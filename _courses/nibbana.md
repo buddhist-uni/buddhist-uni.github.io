@@ -293,6 +293,9 @@ The next two parts of the course shift from philosophical to more practical cons
 {% include content_blurb.html category="av" slug="arahat_bodhi" %}
   - An introduction to the final goal of Buddhist Practice.
 
+{% include content_blurb.html category="canon" slug="snp3.6" %}
+  - A wanderer asks the Buddha what it means to be truly “learned”
+
 ### Part 4: Fuition
 
 We finally come to the last, but perhaps most important, part of our course: the experience of enlightenment itself. We will break it down into two lessons: on the first breakthrough and the final release.
