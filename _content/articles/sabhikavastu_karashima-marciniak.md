@@ -18,4 +18,4 @@ volume: 22
 pages: "71--102"
 ---
 
-Three versions (Sanskrit, Pāḷi, and Chinese) of some verses from [Snp 3.6](/content/canon/snp3.6) translated and compared, showing how subtle shifts in meaning between the Pāḷi/Sanskrit and Chinese contributed to / reflected the growing "Mahayana" sentimentality in Central Asian Buddhism.
+Three versions (Sanskrit, Pāḷi, and Chinese) of some verses from [Snp 3.6](/content/canon/snp3.6) translated and compared, showing how subtle shifts in meaning between the Pāḷi/Sanskrit and Chinese contributed to / reflected the growing "Mahayana" sentimentality in early Central / East Asian Buddhism.

@@ -9,7 +9,7 @@ drive_links:
 course: rebirth-stories
 tags:
   - bodhisatta
-  - apadana
+  - avadana
   - buddha
 year: 2009
 publisher: "Buddhist Literature Society, Inc." 
