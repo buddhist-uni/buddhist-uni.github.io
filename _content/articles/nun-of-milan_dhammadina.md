@@ -2,13 +2,15 @@
 title: "The nun of Milan: A Gandharan bhikṣuṇī figurine in the Civico Museo Archeologico"
 authors:
   - dhammadina
-  - Giovanni Verardi
+  - "Giovanni Verardi"
+source_url: "https://www.academia.edu/114584851/
 external_url: "https://www.academia.edu/114584851/_with_Giovanni_Verardi_The_nun_of_Milan_a_Gandharan_bhik%E1%B9%A3u%E1%B9%87%C4%AB_figurine_in_the_Civico_Museo_Archeologico"
 drive_links:
   - "https://drive.google.com/file/d/1TwJSkmb7AXebht2XRm-l5ZWCER6vjEmn/view?usp=sharing"
 course: medieval
 tags:
   - bart
+  - central-asian
   - nuns
 year: 2024
 journal: aririab
