@@ -2,15 +2,18 @@
 title: "Amazing Transformations of Arahant Theri Uppalavanna"
 authors:
   - tathaloka
+source_url: "https://www.academia.edu/6046712/Amazing_Transformations_of_Arahant_Theri_Uppalavanna"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/08/Transformations-of-Arahant-Theri-Uppalavanna1.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1guoCP8kjUXw2iikDatB0_RAaiCI6N5N_/view?usp=sharing"
-course: medieval
+course: roots
 tags:
   - characters
-  - imagery
-year: 2013
-month: aug
+  - apadana
+  - thig
+  - nuns
+year: 2011
+month: sep
 pages: 37
 ---
 
