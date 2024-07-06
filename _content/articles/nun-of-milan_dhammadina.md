@@ -4,7 +4,7 @@ authors:
   - dhammadina
   - "Giovanni Verardi"
 source_url: "https://www.academia.edu/114584851/
-external_url: "https://www.academia.edu/114584851/_with_Giovanni_Verardi_The_nun_of_Milan_a_Gandharan_bhik%E1%B9%A3u%E1%B9%87%C4%AB_figurine_in_the_Civico_Museo_Archeologico"
+external_url: " https://archive.org/download/aririab-vol-xxvii/Gandharan%20bhik_u%E1%B9%87%C4%AB%20figurine%20in%20the%20Civico%20Museo%20Archeologico.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1TwJSkmb7AXebht2XRm-l5ZWCER6vjEmn/view?usp=sharing"
 course: medieval
