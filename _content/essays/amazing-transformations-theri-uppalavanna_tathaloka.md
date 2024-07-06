@@ -9,7 +9,7 @@ drive_links:
 course: roots
 tags:
   - characters
-  - apadana
+  - avadana
   - thig
   - nuns
 year: 2011
@@ -17,10 +17,7 @@ month: sep
 pages: 37
 ---
 
-> this is the unique and crowning aspect of Uppalavaṇṇā’s
-story in this image. For, having been the greatest (perhaps male) worldly ruler, her final and
-enlightened form is of a female ascetic by choice, illustrating not only a transcendence of the
-relative and going beyond, but a congruent – and perhaps thus far more radical – manifestation of
-the mundane and supermundane, the essential and conventional.
+> Having been the greatest worldly ruler, her final and
+enlightened form is of a female ascetic by choice
 
-This article delves into the story of Bhikkhuni Uppalavanna, a female disciple of the Buddha, and the growth and complexities her story took over the centuries in different Buddhist traditions and texts. Of particular note is the article's presentation of various artistic works focusing on Uppalavanna.
+This article delves into the story of Bhikkhunī Uppalavaṇṇā and the growth and complexities her story took over the centuries in different Buddhist traditions, texts, and artworks.
