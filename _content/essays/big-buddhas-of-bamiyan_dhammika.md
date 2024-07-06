@@ -2,13 +2,14 @@
 title: "The Big Buddhas Of Bamiyan"
 authors:
   - dhammika
-external_url: "https://budblooms.org/?s=bamiyan"
+external_url: "https://budblooms.org/2020/05/10/the-big-buddhas-of-bamiyan/"
 drive_links:
   - "https://drive.google.com/file/d/1H5LWALzpY6CU5mdVROoa86-qBBFJOFbz/view?usp=sharing"
 course: medieval
 tags:
   - bart
   - archeology
+  - central-asian
 year: 2016 
 month: apr
 pages: 2
