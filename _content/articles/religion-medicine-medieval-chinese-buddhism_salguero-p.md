@@ -1,5 +1,5 @@
 ---
-title: "“Healing and/or Salvation? The Relationship Between Religion and Medicine in Medieval Chinese Buddhism"
+title: "Healing and/or Salvation?: The Relationship Between Religion and Medicine in Medieval Chinese Buddhism"
 authors:
   - salguero-p
 external_url: "https://www.multiple-secularities.de/media/workingpaper_4_salguero_final.pdf"
@@ -12,11 +12,11 @@ tags:
   - east-asian
 year: 2018
 month: apr
-journal: "Working paper series of the HCAS 'Multiple Secularities - Beyond the West, Beyond Modernities"
-publisher: "Universität Leipzig"
+series: "Multiple Secularities Working Paper"
+publisher: "HCAS, Universität Leipzig"
 address: "Germany"
-volume: 4
-pages: "5--30"
+number: 4
+pages: 26
 ---
 
 > Most fundamentally, we have realized that there is no single unitary Bud-
