@@ -21,6 +21,6 @@ pages: "9--33"
 
 > The monk Soreyya replies that his attachment is stronger for the sons of which he is the mother.
 
-A (transgender?) parent and monk overcomes their attachments and gains enlightenment in a famous story that Dhammadinnā Bhikkhunī shows can either be read as devaluing "motherly love" or as "super-valuing" equanimity towards all.
+A (transgender?) parent and monk overcomes their attachments and gains enlightenment in a famous story that Dhammadinnā Bhikkhunī shows is not devaluing "motherly love" so much as "super-valuing" equanimity towards all.
 
 If you have any questions or thoughts on the article, feel free to reply to [its thread on SuttaCentral](https://discourse.suttacentral.net/t/soreyya-a-s-double-sex-change-on-gender-relevance-and-buddhist-values/12467?u=khemarato.bhikkhu).
