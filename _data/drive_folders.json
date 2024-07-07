@@ -623,6 +623,10 @@
   "private": "https://drive.google.com/drive/folders/1L-WOQ848IeAlz-xC4g30rDNOsmTnbN13",
   "public": "https://drive.google.com/drive/folders/1L68BOMYKNAudsvszjQqGiLsRoCtmMNpq"
  },
+ "haiti": {
+  "private": "https://drive.google.com/drive/folders/1IWXR13bUsFXoPz0Q6vLuNbeF-hApzwom",
+  "public": null
+ },
  "health": {
   "private": "https://drive.google.com/drive/folders/1-0TL_vDXckSXVkGBBVQ_dQswZ9ddJuAf",
   "public": null
@@ -834,6 +838,10 @@
  "language": {
   "private": "https://drive.google.com/drive/folders/1-LSJmc_WueR7KTveUA4er9R0ODZ00mTg",
   "public": "https://drive.google.com/drive/folders/1VxixU5FlIjk1WrMDM5rL2_PiDC7YqOet"
+ },
+ "language-poetry": {
+  "private": "https://drive.google.com/drive/folders/1ApA2dWKMq1oagvMnpCPUt42PziXguXk5",
+  "public": null
  },
  "laos": {
   "private": "https://drive.google.com/drive/folders/1PkSteV4jtN1__2slQ07G6ob8W-Cr0tr8",
@@ -1513,6 +1521,10 @@
  },
  "to-split": {
   "private": "https://drive.google.com/drive/folders/163ZHFKXKTCzOYOE2YtxkqTeHhMNTHYhM",
+  "public": null
+ },
+ "tocharian": {
+  "private": "https://drive.google.com/drive/folders/1ImLHTsgQxLnsaj9FLvhEFDZNbjeWUskW",
   "public": null
  },
  "translation": {
