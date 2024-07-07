@@ -8,15 +8,14 @@ drive_links:
 course: medieval
 tags:
   - bart
-  - archeology
   - central-asian
 year: 2016 
 month: apr
 pages: 2
 ---
 
-> The Taliban were by no means the first people to try to destroy the Buddhas, Islamic iconoclasts had
+> The Taliban were by no means the first people to try to destroy the Buddhas. Islamic iconoclasts had
 been hacking away at them for centuries. The Emperor Aurangzeb ordered cannons to blast the statues, as
 did a Persian king in the 18th century. Both attempts damaged but did not destroy the statues.
 
-This essay is a brief history of and reflection on the Buddhas of Bamiya.
+This essay is a brief history of and reflection on the giant Buddhas of Bamiyan.
