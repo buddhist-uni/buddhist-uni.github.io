@@ -16,3 +16,5 @@ pages: 1
 ---
 
 > These rocky crags delight me!
+
+Read together with [Thag 1.113](https://suttacentral.net/thag1.113/en/sujato).
