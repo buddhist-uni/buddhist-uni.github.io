@@ -18,5 +18,5 @@ address: "Munich, Germany"
 openalexid: W357758067
 ---
 
-> The following lines intend to sketch [the dog's] relation to humans and their fellow quadrupeds and birds from the ancient [Indian] sources, as was done exhaustively for Greek and Latin literature long ago.
+> The following lines intend to sketch [dogs'] relation to humans and their fellow quadrupeds and birds from the ancient [Indian] sources, as was done exhaustively for Greek and Latin literature long ago.
 

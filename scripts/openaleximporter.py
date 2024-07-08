@@ -112,7 +112,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
     fd.write(f"title: >-\n    {title}\n")
     fd.write("authors:\n")
     for i in range(min(4, len(work['authorships']))):
-        author = work['authorships'][i]['author']['display_name']
+        author = work['authorships'][i]['author']['display_name'].replace('‐', '-')
         aslug = get_author_slug(author)
         if aslug:
             author = aslug
@@ -123,7 +123,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
     if len(work['authorships']) == 5 and aslug:
         fd.write(f"  - {aslug}")
     elif len(work['authorships']) >= 5:
-        fd.write(f"  - \"{work['authorships'][4]['author']['display_name']}")
+        fd.write(f"  - \"{work['authorships'][4]['author']['display_name'].replace('‐', '-')}")
         if len(work['authorships']) > 5:
           fd.write(" and others")
         fd.write("\"\n")

@@ -2,7 +2,7 @@
 title: >-
     Shown by the Marron’s Claw: Ecological Receptivity as Mindful Praxis
 authors:
-  - "Saskia Abrahms‐Kavunenko"
+  - "Saskia Abrahms-Kavunenko"
 external_url: "https://www.globalbuddhism.org/article/download/3814/5136"
 source_url: "https://doi.org/10.26034/lu.jgb.2024.3814"
 drive_links:
