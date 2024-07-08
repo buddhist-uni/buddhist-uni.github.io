@@ -2,7 +2,7 @@
 title: >-
     The Impact of Virtual Reality Meditation on College Students’ Exam Performance
 authors:
-  - "Regina Kaplan‐Rakowski"
+  - "Regina Kaplan-Rakowski"
   - "Karen R. Johnson"
   - "Tomasz Wojdyński"
 external_url: "https://slejournal.springeropen.com/track/pdf/10.1186/s40561-021-00166-7"

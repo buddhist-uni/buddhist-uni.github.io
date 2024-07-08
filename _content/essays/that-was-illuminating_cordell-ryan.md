@@ -6,9 +6,11 @@ external_url: "https://s22bl.ryancordell.org/lab/2022/01/24/lab1-that-was-illumi
 drive_links:
   - "https://drive.google.com/file/d/1x3G0Azo2F45xRo0VmY2WYxmBHpWcI4Q6/view?usp=drivesdk"
 course: media
+status: featured
 tags:
   - writing
   - books
+  - past
 year: 2022
 month: jan
 address: "Champaign, Illinois"
