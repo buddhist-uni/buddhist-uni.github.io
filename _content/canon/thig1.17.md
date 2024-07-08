@@ -1,0 +1,18 @@
+---
+title: "Thig 1.17 Dhammā Therīgāthā: Dhammā's Verse"
+translator: sujato
+slug: "thig.01.17"
+subcat: poetry
+external_url: "https://suttacentral.net/thig1.17/en/sujato"
+hidden_links:
+  - "https://drive.google.com/file/d/17_GFkIjc97NkOkeCfEYHNv0fQrsfMo0-/view?usp=drivesdk"
+course: kayagatasati
+tags:
+  - death
+  - thig
+# canonical-poetry (characters, pali-canon) covered by wh135
+year: 2019
+pages: 1
+---
+
+> ... feeble, leaning on a staff.
