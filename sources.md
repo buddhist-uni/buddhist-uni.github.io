@@ -41,6 +41,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Bodhi Monastery](https://bodhimonastery.org/religion/audios)
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)
+* [The Jogye Order](http://mvseon.com/our-offerings/books-texts/)
 * [The Karma Kagyu](https://dharmaebooks.org/)
 </div>
 
@@ -56,6 +57,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Audio Dharma](https://www.audiodharma.org/)
 * [A Buddhist Library](https://www.abuddhistlibrary.com/Buddhism/J%20-%20Navigation%20Pages%20and%20A%20List%20of%20Books/Navigation%20Pages/Home%20page.htm)
 * [A Buddhist eLibrary](https://www.buddhistelibrary.org/en/index.php?lang=english)
+* [The National Taiwan University Digital Library of Buddhist Studies](http://buddhism.lib.ntu.edu.tw/en/fulltext/)
 * [The Buddhist Studies WWW Virtual Library](http://www.ciolek.com/WWWVL-Buddhism.html)
 * [The Pagoda Library](https://pagoda.or.th/ebook-english-books.html)
 * [The Zen Site](http://www.thezensite.com/index.html)
@@ -65,6 +67,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [TibetHouse.jp](https://www.tibethouse.jp/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e4%bb%8f%e6%95%99/%e5%90%84%e7%a8%ae%e7%b5%8c%e6%9c%acpdf%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89/)
 * [Abhidhamma.com](http://abhidhamma.com/)
 * [The Kabaaye Buddhist Research Library](http://www.kbrl.gov.mm/catalog/Index/58)
+* [HolyBooks.com](https://www.holybooks.com)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)
@@ -97,6 +100,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The New Books Network](https://newbooksnetwork.com/category/religion-faith/buddhist-studies/)
 * [The Corporate Body of the Buddha Educational Foundation](http://www-old.budaedu.org/ebooks/6-EN.php)
 * [The Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
+* [SuttaFriends](https://suttafriends.org/)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
 * [84000.co](https://84000.co/)
 * [Hong Kong University Theses](https://hub.hku.hk/handle/10722/50080)
@@ -110,4 +114,5 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Athabasca University Press](https://www.aupress.ca/books/)
 * [UCL](https://www.uclpress.co.uk/collections/open-access?page=1&sort_by=created-ascending)
 * [The University of Westminster](https://www.uwestminsterpress.co.uk/site/books/)
+* [Project Gutenberg](https://www.gutenberg.org/)
 </div>

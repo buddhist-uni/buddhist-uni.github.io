@@ -10,7 +10,6 @@ tags:
   - pedagogy
 ---
 
-An incomplete but extensive index of similes in the early Canon, it is useful for both exploring the suttas and finding that sutta you heard about [the turtle](https://suttacentral.net/sn56.48/en/bodhi){:target="_blank" ga-event-value="0.25"}.
+An incomplete but extensive index of similes in the early Canon, it is useful for both exploring the suttas and finding that sutta you once heard about [the turtle](https://suttacentral.net/sn56.48/en/bodhi){:target="_blank" ga-event-value="0.25"}.
 
-Find [the SuttaCentral fork here](https://suttacentral.net/similes){:target="_blank"}.
-
+For a more thorough index, see [The Comprehensive Index of Pali Suttas](/content/reference/cips).

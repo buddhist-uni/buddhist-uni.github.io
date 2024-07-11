@@ -1,18 +1,19 @@
 ---
-title: "Thig 5.10: Paṭācārā"
+title: "Thig 5.10 Paṭācārā Therīgāthā: Paṭācārā's Verses"
+translator: sujato
 slug: "thig.05.10"
-external_url: "https://suttacentral.net/thig5.10/en/soma"
-translator: "Ayya Soma"
-drive_links: ["https://drive.google.com/file/d/1ptZGC3ifqC5bOuhct1x7gep8puqHzETR/view?usp=drivesdk"]
-status: featured
-course: path
-tags:
-  - thig
-  - canonical-poetry
-  - imagery
-# nibbana tag covered by *The Island*
-year: 2021
 subcat: poetry
+external_url: "https://suttacentral.net/thig5.10/en/sujato"
+drive_links:
+  - "https://drive.google.com/file/d/1Y5So01TG5Kx2zsa8Ti34Pm58wIHRwZX4/view?usp=drivesdk"
+course: path
+status: featured
+tags:
+  - imagery
+  - thig
+# nibbana tag covered by *The Island*
+# canonical-poetry (characters, pali-canon) covered by wh135
+year: 2019
 pages: 1
 parallels:
   - thi-ap20
@@ -20,3 +21,5 @@ parallels:
 
 > I am not lazy nor conceited,  
 so why have I not attained Nirvana?
+
+This beautiful poem elegantly captures the stages of the path in subtle prose.

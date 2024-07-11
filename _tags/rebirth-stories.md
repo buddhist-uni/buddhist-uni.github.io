@@ -4,4 +4,4 @@ status: unpublished
 parents: [sutta, indian]
 ---
 
-Stories of past (and future) lives found in the Buddhist Canon, especially the Khuddakanikāya.
+Stories of past (and future) lives found in the Buddhist Canon, especially in the Khuddakanikāya.

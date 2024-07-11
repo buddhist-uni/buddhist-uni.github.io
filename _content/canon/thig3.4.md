@@ -1,24 +1,23 @@
 ---
-title: "Thig 3.4: Dantikā & the Elephant"
+title: "Thig 3.4 Dantikā Therīgāthā: Dantikā's Verses"
+translator: soma
 slug: "thig.03.04"
-external_url: "https://www.dhammatalks.org/suttas/KN/Thig/thig3_4.html"
-translator: geoff
-drive_links: ["https://drive.google.com/file/d/1oN_ArtR8OKBmWqs9fHxuRPm1bbI0eQ4V/view?usp=drivesdk"]
+subcat: poetry
+external_url: "https://suttacentral.net/thig3.4/en/soma"
+drive_links:
+  - "https://drive.google.com/file/d/1ti2PJJ_P1VZNkgSVt-b4FaRw31kipe8N/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:
-  - thig
   - problems
   - imagery
-  - canonical-poetry
-subcat: poetry
-year: 1995
+  - animals
+  - thig
+# canonical-poetry (characters) covered by wh135
+year: 2021
 pages: 1
 parallels:
   - thi-ap16
 ---
 
-> Coming out from my day’s abiding  
-on Vulture Peak Mountain...
-
-A beautiful poem on finding inspiration in your practice.
+A Bhikkhunī sees an inspiring elephant in the forest.

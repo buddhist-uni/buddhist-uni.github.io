@@ -13,4 +13,4 @@ tags:
 
 Sometimes people will reference suttas by their Pāli name. This handy index helps you to map that Pāli name (e.g. "Madhurā Sutta") to its Nikaya and number (e.g. "MN 84").
 
-Note the PDF linked above is half-sized to support printing it as a booklet.
+Note the PDF linked above is half-page sized to support printing as a booklet.
