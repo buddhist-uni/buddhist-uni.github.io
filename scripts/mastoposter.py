@@ -142,9 +142,7 @@ def write_tags_for_item(page: website.ContentFile) -> list[str]:
   if day_of_the_week == 4: # Friday
     if page.category in ['booklets', 'monographs']:
       ret.append("FridayReads")
-  if "translation" in ret and page.translator:
-    ret.remove("translation")
-  return [t.replace("Roots", "History") for t in ret]
+  return list({t.replace("Roots", "History") for t in ret})
 
 def write_post_for_item(page: website.ContentFile) -> str:
   title = write_post_title(page)
