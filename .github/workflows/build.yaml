@@ -80,7 +80,7 @@ jobs:
           mv covers/ "$GITHUB_WORKSPACE/assets/imgs/"
           cd $GITHUB_WORKSPACE
           rm -rf prod
-          if git show | grep -q "olid"; then
+          if git show | grep -q "olid: "; then
               cd scripts
               pip install titlecase pyyaml python-frontmatter
               python dl-book-covers.py
