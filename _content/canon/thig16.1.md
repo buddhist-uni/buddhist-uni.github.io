@@ -10,6 +10,7 @@ tags:
   - view
   - rebirth-stories
   - sutta
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2019
 subcat: poetry
 pages: 10

@@ -8,6 +8,7 @@ course: nibbana
 tags:
   - thig
   - philosophy
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2021
 subcat: poetry
 pages: 2

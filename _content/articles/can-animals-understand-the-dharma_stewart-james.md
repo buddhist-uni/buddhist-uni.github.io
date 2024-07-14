@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1608fOL5IseeO8y9X8blI-1hAj2IIM0vt/view?usp=sharing"
 course: animals
 tags:
-  - dhamma
+  - theravada-chanting
 year: 2017
 journal: jbe
 volume: 24
@@ -17,4 +17,5 @@ pages: "39--62"
 > Lacking understanding, merely hearing the Dhamma may only grant a better rebirth,
 but even a better rebirth provides the condition for future enlightenment.
 
-This article delves into the question of whether animals can benefit from hearing the Dharma, utilizing Pāli and Sinhalese texts, commentaries, and ethnographies. The author examines how animals might be influenced by the Dharma and explores broader questions related to the practice and impact of hearing the Dharma. Through this investigation, the reader is led to consider peripheral but significant aspects of hearing and practicing the Dharma.
+This article delves into the question of whether animals can benefit from hearing the Dharma.
+The author examines how animals might be influenced by the Dharma and explores broader questions related to the practice and impact of "hearing the Dharma."

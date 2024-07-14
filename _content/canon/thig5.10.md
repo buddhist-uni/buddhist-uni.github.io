@@ -9,10 +9,10 @@ drive_links:
 course: path
 status: featured
 tags:
-  - imagery
   - thig
 # nibbana tag covered by *The Island*
 # canonical-poetry (characters, pali-canon) covered by wh135
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2019
 pages: 1
 parallels:

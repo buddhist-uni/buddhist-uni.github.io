@@ -9,8 +9,8 @@ hidden_links:
 course: stages # the arahant stage in particular
 tags:
   - nibbana
-  - pali-canon
   - thig
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2021
 pages: 1
 parallels:

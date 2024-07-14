@@ -6,12 +6,12 @@ subcat: poetry
 external_url: "https://suttacentral.net/thig13.5/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1adWYGavJLq7r8qjO9lYvRhfUYK1UJMLb/view?usp=drivesdk"
-course: canonical-poetry
+course: vipassana
 tags:
   - renunciation
-  - vipassana
   - feeling
   - thig
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2018
 pages: 4
 ---

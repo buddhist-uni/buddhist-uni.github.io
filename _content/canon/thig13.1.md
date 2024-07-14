@@ -13,6 +13,7 @@ tags:
   - kayagatasati
   - thig
 # canonical-poetry (characters, pali-canon) covered by wh135
+# canonical-poetry (pali-canon, imagery, nuns) covered by wh349
 year: 2019
 pages: 3
 parallels:
