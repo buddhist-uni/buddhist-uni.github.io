@@ -20,7 +20,6 @@ image_center_x: 50%
 image_center_y: 35%
 ---
 
-Despite the tendency to study Buddhism regionally, there are many common themes which found expression across Asia as Buddhism spread both North and South out from India.
 This bibliography explores how Buddhism spread along the Silk Roads out of India and across Asia in particular asking what traders and local rulers got out of adopting Buddhism and how Buddhism changed as it made contact with other cultures.
-"Medieval" is used here very loosely to mean "pre-modern Buddhism outside India." This tag therefore starts with [the Ashokan missions](/tags/indian) and goes all the way to [Europe's contact with Asia](/tags/west) in the Modern Age.
+"Medieval" is used here very loosely to mean "pre-modern Buddhism outside India." This tag therefore starts with [the Ashokan missions](/tags/indian) and goes all the way to [Europe's contact with Asia](/tags/west) in the Modern period.
 

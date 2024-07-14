@@ -8,7 +8,7 @@ drive_links: ["https://drive.google.com/file/d/16EJRROCpnp5MkeJ5Rk32YqXOKdIX5e1_
 tags:
   - ethics
   - sex
-course: theravada-roots
+course: theravada
 year: 2007
 volume: 29
 journal: jpts

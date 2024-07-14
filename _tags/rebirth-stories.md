@@ -1,6 +1,6 @@
 ---
 title: "Canonical Rebirth Stories"
-status: unpublished
+status: published
 parents: [sutta, indian]
 ---
 

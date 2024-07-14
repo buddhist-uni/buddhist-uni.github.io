@@ -6,9 +6,9 @@ subcat: thesis
 external_url: "https://deepblue.lib.umich.edu/handle/2027.42/128920"
 drive_links:
   - "https://drive.google.com/file/d/16zOKTreDWyNRGcKqeAXFTDI-LxNwdtYy/view?usp=sharing"
-course: theravada-roots
+course: thai-roots
 tags:
-  - thai-roots
+  - theravada-roots
   - thai-ideology
   - myth
   - literature

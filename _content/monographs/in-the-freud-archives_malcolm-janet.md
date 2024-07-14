@@ -23,4 +23,4 @@ When Jung came along, he became that person again for Freud.
 Both Fliess and Jung were charlatans in some ways,but very bright, very beguiling ones.
 There must have been something of that sort going on between Eissler and Jeff.
 
-A "charming charlatan" weasels his way into the Freud Archives and discovers shocking letters the family had been hiding for decades.
+A "charming charlatan" weasels his way into the Sigmund Freud Archives and discovers shocking letters the family had been hiding for decades.

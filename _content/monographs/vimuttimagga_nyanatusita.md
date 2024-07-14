@@ -8,11 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1928Y0YQ-t0j6n4Dl1x6LKxCzRhAUiq4r/view?usp=drivesdk"
   - "https://drive.google.com/file/d/193xda2N9x8srsuZPBaFJY4Cc8rtlPizr/view?usp=drivesdk"
 formats: ["Vol 1 PDF", "Vol 2 PDF"]
-# extremely tentative placement
-course: theravada-roots
+course: indian
 tags:
   - path
-  - indian
 year: 2021
 olid: OL50983673M
 publisher: "The Centre of Buddhist Studies at the University of Hong Kong"

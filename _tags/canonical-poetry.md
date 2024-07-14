@@ -1,6 +1,6 @@
 ---
 title: "Poetry of the Pāḷi Canon"
-status: unpublished
+status: published
 parents: [sutta]
 is_canon: true # changes the layout slightly
 hashtag: buddhaQuotes

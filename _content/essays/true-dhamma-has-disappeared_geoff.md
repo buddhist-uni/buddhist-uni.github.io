@@ -7,7 +7,6 @@ year: 2014
 drive_links: ["https://drive.google.com/file/d/1x-XOj7wyQwj8EgiXcK-prFLn2279cGDU/view?usp=drivesdk"]
 course: form
 tags:
-  - medieval
   - philosophy
   - west
 pages: 5
