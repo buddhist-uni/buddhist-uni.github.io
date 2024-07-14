@@ -8,7 +8,7 @@ drive_links:
 course: animals
 tags:
   - ethics
-  - sutta
+  - dialogue
 year: 2008
 volume: 15
 journal: jbe 
