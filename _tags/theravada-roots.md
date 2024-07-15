@@ -1,6 +1,6 @@
 ---
 title: "History of the Theravāda"
-status: unpublished
+status: published
 parents: [theravada, roots]
 hashtag: theravada
 illustration: https://illeakyw.sirv.com/Images/tags/burmese_gouache.jpg

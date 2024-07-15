@@ -1,7 +1,7 @@
 ---
 title: "The Intellect"
 hashtag: mind
-status: unpublished
+status: published
 parents: [inner]
 illustration: https://illeakyw.sirv.com/Images/tags/Dorothy_gazed_thoughtfully_at_the_Scarecrow.jpg
 illustration_height: 1024

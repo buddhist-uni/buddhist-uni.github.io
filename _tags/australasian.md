@@ -2,7 +2,7 @@
 title: "Dhamma Down Unda"
 status: unpublished
 parents: [west]
-hastag: AussieBuddhism
+hashtag: AussieBuddhism
 ---
 
 Buddhism in Australia and New Zealand.

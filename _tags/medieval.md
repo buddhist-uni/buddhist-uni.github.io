@@ -1,6 +1,6 @@
 ---
 title: "Medieval Buddhism"
-status: unpublished
+status: published
 parents: [roots]
 illustration: https://illeakyw.sirv.com/Images/tags/medieval.jpg
 illustration_height: 2211
