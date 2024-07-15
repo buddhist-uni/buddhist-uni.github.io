@@ -2,7 +2,7 @@
 title: "Groups and Relationships"
 status: unpublished
 parents: [social]
-hashtag: relationship
+hashtag: relationships
 use_sirv: true
 image: https://illeakyw.sirv.com/Images/banners/Japanese_women.jpg
 image_width: 2560

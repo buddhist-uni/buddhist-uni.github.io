@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1uLxVxzBup_4CuCkL1AiSMqZ2Aaedsoxa/view?usp=sharing"
 course: animals
 tags:
-  - ethics
   - dialogue
 year: 2008
 volume: 15

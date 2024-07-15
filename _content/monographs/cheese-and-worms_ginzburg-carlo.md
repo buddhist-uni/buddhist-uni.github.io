@@ -9,8 +9,6 @@ course: religion
 tags:
   - communication
   - books
-  - intellect
-  - historiography
   - past
 year: 1980
 olid: OL4266213M

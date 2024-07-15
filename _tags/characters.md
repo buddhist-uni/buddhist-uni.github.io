@@ -1,6 +1,7 @@
 ---
 title: "Characters in the EBTs"
 status: published
+hashtag: storyTime
 parents:
   - ebts
 illustration: "https://illeakyw.sirv.com/Images/banners/elephant-taming-manuscript.jpg"

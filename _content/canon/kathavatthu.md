@@ -7,6 +7,7 @@ external_url: "https://archive.org/download/PointsOfControversyKathavatthu/Point
 course: sects
 tags:
   - abhidhamma
+  - theravada-roots
 year: 1915
 base_value: 4
 publisher: pts
