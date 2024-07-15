@@ -2,13 +2,12 @@
 title: "Food of Sinful Demons"
 authors:
   - "Geoff Barstow"
-external_url: "https://podcasts.apple.com/us/podcast/new-books-in-buddhist-studies/id458210899?i=1000451889741"
-source_url: "https://newbooksnetwork.com/geoffrey-barstow-food-of-sinful-demons-meat-vegetarianism-and-the-limits-of-buddhism-in-tibet-columbia-up-2018/"
-course: animals
+external_url: "https://newbooksnetwork.com/geoffrey-barstow-food-of-sinful-demons-meat-vegetarianism-and-the-limits-of-buddhism-in-tibet-columbia-up-2018/"
+course: tibetan
 subcat: podcast
 tags:
   - ethics
-  - tibetan
+  - animals
   - vegetarianism
 year: 2019
 month: oct
