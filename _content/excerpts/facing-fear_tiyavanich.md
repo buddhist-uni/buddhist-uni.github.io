@@ -1,5 +1,5 @@
 ---
-title: "Facing Fear"
+title: "Facing Fear [of Animals in the Thai Jungle]"
 authors:
   - tiyavanich
 source_url: "https://archive.org/details/ForestRecollectionsWandering"
@@ -14,6 +14,6 @@ booktitle: "Forest Recollections: Wandering Monks in Twentieth-Century Thailand"
 pages: "79--98"
 ---
 
-> Since fear discourages the aspirant and dissuades him from seeking seclusion, staying in the wild was a proven method for reducing and eventually eliminating this kilesa (defilement).
+> Since fear discourages the aspirant and dissuades him from seeking seclusion, staying in the wild was a proven method for reducing and eventually eliminating this *kilesa* (defilement).
 
-This is the third chapter of Tiyavanich's "Forest Recollections." Focusing on Thudong monks of the early 20th century, it discusses how living in the wilderness, with all of the varied animals and reptiles, was a valuable practice for training the mind by overcoming fear, which arises from a deep sense of self.
+This is the first part of chapter three from "Forest Recollections" focusing on Thudong monks of the early 20th century who used their fear of animals in the jungle to train their minds and overcome their attachments.
