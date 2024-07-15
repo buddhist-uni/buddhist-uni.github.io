@@ -5,11 +5,11 @@ authors:
 external_url: "https://www.youtube.com/watch?v=oyAiTfZg9vY"
 drive_links:
   - "https://drive.google.com/file/d/1mZfxiu6FhTyowe_T42RuP1W_VLe3UKYc/view?usp=sharing"
-course: animals
 tags:
   - ethics
   - vegetarianism
   - tibetan
+  - animals
 year: 2022 
 month: mar
 series: bsp
