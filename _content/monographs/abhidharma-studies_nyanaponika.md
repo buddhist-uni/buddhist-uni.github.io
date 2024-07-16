@@ -9,11 +9,8 @@ drive_links:
 formats: [pdf, epub]
 status: featured
 course: abhidhamma
-tags:
-  - pali-canon 
-  - consciousness
-  - philosophy
-  - psychology
+tags: 
+  - dialogue
 year: 1949 
 olid: OL691629M
 oclc: 37813497
