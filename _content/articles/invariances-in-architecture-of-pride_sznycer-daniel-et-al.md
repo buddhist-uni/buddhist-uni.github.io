@@ -14,6 +14,7 @@ course: social
 status: featured
 tags:
   - feeling
+  - social-intelligence
 year: 2018
 month: aug
 journal: pnas

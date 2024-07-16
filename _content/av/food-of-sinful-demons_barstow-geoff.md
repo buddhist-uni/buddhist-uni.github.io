@@ -15,4 +15,5 @@ publisher: nbn
 minutes: 64
 ---
 
-In this podcast interview, based on his book "Food of Sinful Demons," Geoffrey Barstow explains the tension between Buddhist ethics and Tibetan cultural practices, providing insights into the spiritual and social aspects of meat eating. Tibetan Buddhism emphasizes compassion for all beings, including animals, making meat consumption morally problematic. Despite this, meat has historically been a staple in Tibetan monastics' diets. 
+Tibetan Buddhism emphasizes compassion for all beings, including animals, making meat consumption morally problematic. Despite this, meat has historically been a staple in Tibetan monastics' diets.
+Geoff Barstow discusses how Tibetan Buddhists square this circle.

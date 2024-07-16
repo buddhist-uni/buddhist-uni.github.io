@@ -11,8 +11,7 @@ tags:
   - labor # maybe move here?
   - desire
   - marketing
-  - social
-  - economics
+  - society
 year: 2021
 month: jun
 publisher: nyt

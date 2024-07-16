@@ -5,10 +5,11 @@ authors:
 external_url: "https://thecjbs.org/archive-document-details/?id=232"
 drive_links:
   - "https://drive.google.com/file/d/1L9bUNnOhdddVZt4OTNolneIY3_g7uXv1/view?usp=drivesdk"
-course: social
+course: culture
 tags:
   - engaged
   - sangha
+  - social
 year: 2020
 journal: cjbs
 volume: 15

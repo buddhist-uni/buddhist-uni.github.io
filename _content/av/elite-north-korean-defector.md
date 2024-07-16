@@ -7,7 +7,7 @@ editor: "Stephen Park"
 external_url: "https://youtu.be/t9rLqYXTaFI"
 course: korea
 tags:
-  - social
+  - society
 year: 2021
 month: jun
 publisher: "Asian Boss"

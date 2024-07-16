@@ -7,7 +7,6 @@ external_url: "https://doi.org/10.17226/10287"
 tags:
   - ecology
   - natural-resources
-  - social
   - economics
 year: 2002
 olid: OL9338188M

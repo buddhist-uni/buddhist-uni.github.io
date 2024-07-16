@@ -13,11 +13,9 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1VeSYPATQTeJGyDHHHa6r43xPeUAZIAY7/view?usp=drivesdk"]
 course: becon
 tags:
-  - social
+  - society
   - dialogue
-  - time
   - power
-  - education
   - intellect
 pages: 37
 ---

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.vox.com/22992901/how-to-find-your-community-as-an-adult"
 drive_links:
   - "https://drive.google.com/file/d/130ny5uJUMB1oREZ2mIoWFLs-oMtYD2J6/view?usp=drivesdk"
-course: social
+course: groups
 tags:
   - community
 year: 2022

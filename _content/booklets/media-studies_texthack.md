@@ -6,9 +6,9 @@ external_url: "https://opentextbc.ca/mediastudies101/"
 drive_links:
   - "https://drive.google.com/file/d/1Y00bK7Pgo-T6tzyzi56n7Osd7ciF9bxA/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1JlSAsi7TDarVsjPHClO6j97SZqdmiQVz/view?usp=drivesdk"
-course: mass-media
+course: social
 tags:
-  - social
+  - culture
 year: 2018
 month: feb
 olid: OL52263462M

@@ -5,10 +5,9 @@ authors:
 external_url: "https://logicmag.io/failure/how-to-kill-your-tech-industry/"
 drive_links:
   - "https://drive.google.com/file/d/1Vv1894v0U-nBGs5MWWTnz3EHdWg3u21n/view?usp=drivesdk"
-course: social
+course: society
 tags:
   - britain
-  - economics
   - gender
   - ideology
   - tech-roots

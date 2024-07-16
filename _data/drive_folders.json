@@ -399,6 +399,10 @@
   "private": "https://drive.google.com/drive/folders/17giZBdGVbNEEv7HZxuG2wySVUJjSHZSY",
   "public": null
  },
+ "culture": {
+  "private": "https://drive.google.com/drive/folders/1S-ttv0u8EPLD0Wginz-Tjet6VQLzln6h",
+  "public": "https://drive.google.com/drive/folders/11r2YMCueWsVGxISQkSUd5hW7fZSYBz-m"
+ },
  "da": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1277VHi6irmGHt37nonFuulCdimdD3Mpl"
@@ -1390,6 +1394,10 @@
  "social-work": {
   "private": "https://drive.google.com/drive/folders/15hr_UhtxvRoawTY7q4cGlm66Wvlj5D08",
   "public": null
+ },
+ "society": {
+  "private": "https://drive.google.com/drive/folders/1RwOr60WNbRG55ASNZjUM2NcdpkqRghir",
+  "public": "https://drive.google.com/drive/folders/1RzLldhKiIlVbcPVe5xp4nrlWQ5YcuaAZ"
  },
  "south-asia": {
   "private": "https://drive.google.com/drive/folders/1Ezc_c64N-7AygzmxW7n0NeOkiWpxeILh",

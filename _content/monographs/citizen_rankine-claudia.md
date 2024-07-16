@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/details/citizenamericanl0000rank_m1h9/mode/1up"
 olid: OL25632207M
 subcat: poetry
-course: social
+course: society
 tags:
   - america
   - violence

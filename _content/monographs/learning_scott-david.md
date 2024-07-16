@@ -6,8 +6,7 @@ external_url: "https://discovery.ucl.ac.uk/id/eprint/10127557/1/On-Learning.pdf"
 source_url: "https://doi.org/10.14324/111.9781800080027"
 drive_links:
   - "https://drive.google.com/file/d/15VD0FNWmw2sILFE8kPvClYXP63FtwQov/view?usp=drivesdk"
-status: featured
-course: intellect
+course: intellect # solidly 3 stars. Almost 4
 tags:
   - epistemology
   - education
@@ -25,6 +24,4 @@ pages: 320 # it's a dense text that's earned every page!
 
 > Education of whatever type cannot be sustained without some notion of imparting a belief system.
 
-A rigorous philosophical analysis of how humans acquire mental categories which argues that human _values_ are always already present in any act of teaching or learning, thus solving some of Wittgenstein's problems and encouraging us to ask radical questions about what our education system currently values, and what it might be designed to value instead, because...
-
-> ... this valuing goes all the way down into our descriptions of the world, into those attempts we make at creating better futures, and into our relations with other people.
+A rigorous philosophical analysis of how humans acquire mental categories which argues that human _values_ are always already present in any act of teaching or learning, thus solving some of Wittgenstein's problems and encouraging us to ask radical questions about what our education system currently values, and what it might be designed to value instead.

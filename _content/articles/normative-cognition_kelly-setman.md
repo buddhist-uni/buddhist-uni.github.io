@@ -6,14 +6,14 @@ authors:
 source_url: "https://plato.stanford.edu/entries/psychology-normative-cognition/"
 external_url: "https://seop.illc.uva.nl/entries/psychology-normative-cognition/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1Co1A9aNGw4UecRLU8q5UPYIpNcTmSeli/view?usp=drivesdk"]
+drive_links:
+  - "https://drive.google.com/file/d/1Co1A9aNGw4UecRLU8q5UPYIpNcTmSeli/view?usp=drivesdk"
 month: aug
 year: 2020
-course: social
+course: culture
 journal: plato
 tags:
-  - ideology
-  - psychology
+  - social-intelligence
 pages: 20
 ---
 

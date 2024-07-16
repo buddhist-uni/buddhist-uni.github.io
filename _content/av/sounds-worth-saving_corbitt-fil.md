@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://www.20k.org/episodes/soundsworthsaving"
 status: featured
-course: social
+course: society
 tags:
   - historiography
   - sociology-roots

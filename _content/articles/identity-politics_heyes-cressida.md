@@ -12,6 +12,7 @@ journal: plato
 tags:
   - inner
   - activism
+  - culture
   - politics
 pages: 18
 ---

@@ -6,10 +6,8 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1JSJXTMMjD1YXutRLcs2cDrwbWKKbnEQM/view?usp=drivesdk"]
 course: activism
 tags:
-  - education
+  - society
   - future
-  - dialogue
-  - social
 year: 2019
 publisher: Perspectiva Press
 address: London

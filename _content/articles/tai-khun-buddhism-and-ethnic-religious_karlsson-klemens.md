@@ -1,5 +1,5 @@
 ---
-title: "Tai Khun Buddhism And Ethnic–Religious Identity"
+title: "Tai Khun Buddhism And Ethnic-Religious Identity"
 authors:
   - "Klemens Karlsson"
 external_url: "https://eprints.soas.ac.uk/5288/1/5KarlssonK-Tai_Khun_Buddhism.pdf"
@@ -14,6 +14,7 @@ tags:
   - architecture
   - roots
   - social
+  - culture
 year: 2009
 month: jun
 journal: jcb

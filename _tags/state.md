@@ -1,8 +1,8 @@
 ---
 title: "The State"
 status: unpublished
-parents: [social]
+parents: [society]
 hashtag: news
 ---
 
-Governments, public policy, etc 
+Governments, public policy, international relations, etc 

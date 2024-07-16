@@ -4,7 +4,7 @@ authors:
   - "Ursula Le Guin"
 secret_url: "https://web.archive.org/web/20220414002323if_/https://files.libcom.org/files/Le%20Guin%20-%20The%20Dispossessed.pdf"
 subcat: fiction
-course: social # solidly
+course: society # solidly
 tags:
   - political-ideology
   - time

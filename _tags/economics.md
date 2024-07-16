@@ -1,7 +1,7 @@
 ---
 title: "Economics (General)"
 status: unpublished
-parents: [state]
+parents: [society]
 image: https://illeakyw.sirv.com/Images/banners/silk_panels.jpg
 image_height: 1539
 image_width: 2560

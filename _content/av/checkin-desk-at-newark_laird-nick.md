@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/07/02/157-to-the-woman-at-the-united-airlines-checkin-desk-at-newark"
-course: social
+course: society
 tags:
   - writing
   - capitalism

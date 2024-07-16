@@ -14,6 +14,7 @@ course: groups
 tags:
   - feeling
   - perennial
+  - social-intelligence
 year: 2018
 month: sep
 journal: pnas

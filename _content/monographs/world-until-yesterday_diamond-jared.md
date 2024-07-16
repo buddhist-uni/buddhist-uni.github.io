@@ -3,7 +3,7 @@ title: "The World Until Yesterday: What Can We Learn from Traditional Societies?
 authors:
   - diamond-jared
 status: featured
-course: social
+course: society
 tags:
   - past
 year: 2012

@@ -6,10 +6,12 @@ journal: nyrb
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1vRUGptCeep6cVo5nOz_uydB2aDq_xmG9/view?usp=drivesdk"]
 external_url: "https://www.nybooks.com/articles/2020/11/19/the-son/"
-course: social
+course: culture
 tags:
   - cities
   - time
+  - music
+  - language
 subcat: poetry
 base_value: 0.2
 pages: 1

@@ -8,7 +8,7 @@ source_url: "https://nap.nationalacademies.org/read/10287/chapter/17"
 external_url: "https://nap.nationalacademies.org/cart/download.cgi?record_id=10287&file=403-442"
 drive_links:
   - "https://drive.google.com/file/d/1MUtK-o0M9hO6vgaps2q9jMkQPyMELJ6Q/view?usp=drivesdk"
-course: social
+course: society
 tags:
   - group-selection
   - time

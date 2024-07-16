@@ -8,6 +8,7 @@ drive_links:
 course: social
 tags:
   - japanese
+  - culture
 year: 2007
 month: jul
 publisher: "Hawaii Pacific Press"

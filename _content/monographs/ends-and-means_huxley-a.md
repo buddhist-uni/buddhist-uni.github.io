@@ -2,7 +2,7 @@
 title: "Ends and Means: An Enquiry Into the Nature of Ideals and Into the Methods Employed for Their Realization"
 authors:
   - huxley-a
-course: social
+course: society
 olid: OL20389837M
 external_url: "https://archive.org/download/endsandmeans035237mbp/endsandmeans035237mbp.pdf"
 tags:

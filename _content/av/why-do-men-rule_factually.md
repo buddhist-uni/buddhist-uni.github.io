@@ -9,11 +9,10 @@ alternate_url: "https://www.listennotes.com/podcasts/factually-with/why-do-men-r
 drive_links:
   - "https://drive.google.com/file/d/1vb_BzY5TqrlD4ZBN8sZXIWwLJNmFJSQR/view?usp=drivesdk"
 status: featured
-course: social
+course: society
 tags:
   - gender
   - patriarchy
-  - economics
   - past
   - ideology
 year: 2022
