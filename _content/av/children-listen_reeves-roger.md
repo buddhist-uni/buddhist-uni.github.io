@@ -10,6 +10,7 @@ status: featured
 tags:
   - war
   - world
+  - society
 year: 2022
 month: oct
 series: slowdown

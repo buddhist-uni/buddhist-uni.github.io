@@ -9,9 +9,9 @@ status: featured
 tags:
   - world
   - inner
-  - function
   - time
   - karma
+  - society
 base_value: 0.25
 pages: 2
 ---

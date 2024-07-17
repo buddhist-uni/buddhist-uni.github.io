@@ -9,6 +9,7 @@ tags:
   - history-of-medicine
   - present
   - things
+  - society
 year: 2024
 month: mar
 minutes: 50

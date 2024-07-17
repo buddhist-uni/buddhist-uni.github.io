@@ -12,7 +12,7 @@ tags:
   - time
   - philosophy
   - poetry
-  - state
+  - society
 year: 2019
 month: jun
 series: slowdown

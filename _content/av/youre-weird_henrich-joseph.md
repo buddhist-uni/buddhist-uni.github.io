@@ -5,14 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/05/26/opinion/ezra-klein-podcast-joseph-henrich.html"
-course: ideology # solidly
+course: culture # maybe ideology?
 tags:
   - world # with prejudice
-  - intercultural
-  - groups
   - present
-  - culture
-  - psychology
   - the-west
 year: 2023
 month: may

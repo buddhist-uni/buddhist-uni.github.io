@@ -13,7 +13,7 @@ tags:
   - nichiren
   - becon
   - modern
-  - state
+  - political-ideology
   - dialogue
 year: 1984
 month: feb

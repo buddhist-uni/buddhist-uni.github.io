@@ -10,7 +10,7 @@ year: 2014
 editor: "Tansen Sen"
 course: medieval
 tags:
-  - state
+  - society
   - power
   - sea
   - indian

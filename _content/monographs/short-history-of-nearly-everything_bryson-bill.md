@@ -6,7 +6,8 @@ course: science
 olid: OL7441792M
 status: featured
 tags:
-  - world
+  - wider
+  - history-of-science
 year: 2003
 month: may
 publisher: "Broadway Books"

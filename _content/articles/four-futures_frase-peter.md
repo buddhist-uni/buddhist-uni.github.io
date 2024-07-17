@@ -7,13 +7,11 @@ drive_links:
 journal: "Jacobin"
 year: 2011
 month: dec
-course: world
+course: society
 status: featured
 tags:
-  - economics
-  - becon
+  - world
   - future
-  - class
 pages: 14
 ---
 

@@ -6,7 +6,7 @@ course: present
 tags:
   - world
   - feeling
-  - state
+  - society
   - things
 year: 2023
 olid: OL46665652M

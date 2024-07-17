@@ -9,6 +9,7 @@ month: dec
 course: sutta
 tags:
   - pali-dictionaries
+pages: 41
 ---
 
 Sometimes people will reference suttas by their Pāli name. This handy index helps you to map that Pāli name (e.g. "Madhurā Sutta") to its Nikaya and number (e.g. "MN 84").

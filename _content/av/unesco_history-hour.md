@@ -8,7 +8,7 @@ external_url: "https://www.bbc.co.uk/programmes/w3cszkq1"
 course: race
 tags:
   - historiography
-  - state
+  - society
   - places
   - world
 year: 2021

@@ -4,15 +4,12 @@ subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2016
 external_url: "https://revisionisthistory.com/episodes/04-carlos-doesnt-remember"
-course: world
+course: society
 tags:
-  - inequality
-  - caste
   - education
   - becon
   - america
   - childhood
-  - problems
 series: revisionist-history
 status: featured
 number: 4

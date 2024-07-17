@@ -15,6 +15,7 @@ tags:
   - becon
   - time
   - world
+  - society
   - philosophy
 minutes: 4
 ---

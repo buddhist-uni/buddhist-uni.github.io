@@ -4,11 +4,9 @@ authors:
   - "Kim Stanley Robinson"
 subcat: fiction
 tags:
-  - world
   - future
   - climate-change
-  - economics
-  - natural
+  - society
 year: 2020
 month: oct
 olid: OL30620201M

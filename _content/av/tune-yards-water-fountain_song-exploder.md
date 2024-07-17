@@ -7,10 +7,9 @@ subcat: music
 year: 2015
 month: may
 external_url: "https://songexploder.net/tune-yards"
-course: economics
+course: society
 tags:
   - time
-  - state
 series: song-exploder
 number: 32
 minutes: 14

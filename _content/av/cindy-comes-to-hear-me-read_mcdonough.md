@@ -8,6 +8,7 @@ external_url: "https://www.slowdownshow.org/episode/2019/10/23/238-cindy-comes-t
 status: featured
 course: world
 tags:
+  - society
   - education
   - literature
 year: 2019

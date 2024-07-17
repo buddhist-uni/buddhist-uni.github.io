@@ -3,7 +3,7 @@ title: "Brand New Ancients"
 authors:
   - "Kate Tempest"
 tags:
-  - world
+  - society
   - time
   - pattaya
 subcat: fiction

@@ -10,6 +10,7 @@ tags:
   - future
   - feeling
   - ideology
+  - society
 year: 2024
 month: jan
 pages: 9

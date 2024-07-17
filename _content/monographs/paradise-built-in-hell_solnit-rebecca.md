@@ -7,7 +7,7 @@ status: featured
 tags:
   - cities
   - wider
-  - state
+  - society
   - power
   - disasters
   - anarchy

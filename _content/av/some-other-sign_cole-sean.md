@@ -13,7 +13,7 @@ tags:
   - cities
   - art
   - poetry
-  - inner
+  - society
   - speech
 status: featured
 minutes: 17

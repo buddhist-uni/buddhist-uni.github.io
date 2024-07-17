@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1neGshEldEB6lY9tSkmDvCqqPMGC-kZ6l/view?usp=drivesdk"
 course: media
 tags:
-  - state
+  - society
   - journalism
 year: 2018
 month: jan

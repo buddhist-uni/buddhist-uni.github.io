@@ -9,6 +9,7 @@ course: things
 tags:
   - world
   - inequality
+  - society
 minutes: 25
 ---
 

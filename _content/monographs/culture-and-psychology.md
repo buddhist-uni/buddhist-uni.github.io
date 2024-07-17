@@ -7,9 +7,9 @@ authors:
 external_url: "https://open.maricopa.edu/culturepsychology/"
 drive_links:
   - "https://drive.google.com/file/d/1ckIDBqiLvOOWkKWgNxAWhD3MgOL5oxTs/view?usp=drivesdk"
-course: world
+course: culture
 tags:
-  - culture
+  - world
   - perception
   - health
 year: 2020

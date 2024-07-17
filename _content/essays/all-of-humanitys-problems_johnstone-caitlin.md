@@ -5,6 +5,7 @@ authors:
 external_url: "https://caitlinjohnstone.com/2021/03/05/all-of-humanitys-problems-are-caused-by-a-lack-of-awareness/"
 drive_links:
   - "https://drive.google.com/file/d/1-eJg4qLBf3zGtDiomhSGDAeFvWhGRVdv/view?usp=drivesdk"
+course: culture
 tags:
   - power
   - world

@@ -1,7 +1,7 @@
 ---
 title: "Abhidhamma"
 status: unpublished
-parents: [pali-canon, theravada]
+parents: [theravada, pali-canon]
 illustration: https://illeakyw.sirv.com/Images/tags/buddha_preaches_in_heaven.jpg
 illustration_height: 1024
 illustration_width: 1024

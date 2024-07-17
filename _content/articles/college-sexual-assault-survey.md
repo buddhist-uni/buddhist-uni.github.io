@@ -7,7 +7,8 @@ tags:
   - gender
   - sex
   - consent
-slug: "twenty-three-percent"
+  - society
+  - academia
 year: 2015
 journal: "CNN"
 pages: 4

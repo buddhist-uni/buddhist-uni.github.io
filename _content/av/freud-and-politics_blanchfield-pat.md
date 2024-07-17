@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1jVkxaGPn28PyevlSuwiCCYKi8ehVPrkF/view?usp=drivesdk"
 course: intellect
 tags:
-  - political-ideologies
+  - political-ideology
   - rhetoric
   - freud
   - america

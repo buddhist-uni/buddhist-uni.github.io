@@ -8,9 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1_C3jGC4gZB-vCHMBiN6rvQ9jc_gQb33U/view?usp=drivesdk"
 course: media
 tags:
-  - state
+  - society
   - info-capitalism
-  - ideology
+  - present
 year: 2023
 month: jan
 journal: daedalus

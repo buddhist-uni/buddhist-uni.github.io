@@ -5,9 +5,9 @@ authors:
 subcat: film
 editor: "Stan Muller"
 external_url: "https://youtu.be/wyzi9GNZFMU"
-course: wider
+course: society
 tags:
-  - state
+  - wider
 year: 2014
 month: jul
 series: world-history_crash-course
