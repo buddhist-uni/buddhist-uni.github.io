@@ -8,7 +8,7 @@ reader: "Rob Miles"
 external_url: "https://youtu.be/NxqTOm3TzsY"
 course: ideology
 tags:
-  - communication
+  - social
 year: 2021
 month: jul
 minutes: 6

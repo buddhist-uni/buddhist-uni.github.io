@@ -3,7 +3,7 @@ title: "Abhidhammamātikā: The Matrix from the Abstract Teaching"
 translator: anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Abhidhammamatika/index.htm"
 drive_links:
-  - "https://drive.google.com/file/d/15EDk4uqJO8GWNKyJ7VhpwIcz-W97OAUA/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1gkszdLDEOKhYhHW3lmK5mG2JRdnDPJZz/view?usp=drivesdk"
 course: abhidhamma
 year: 2011
 olid: OL52477602M
