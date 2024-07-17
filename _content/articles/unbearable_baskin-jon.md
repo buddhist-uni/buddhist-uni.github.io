@@ -8,9 +8,8 @@ tags:
   - extremism
   - present
   - art
-  - emotions
   - aesthetics
-course: ideology
+course: culture
 year: 2020
 month: aug
 journal: nyrb

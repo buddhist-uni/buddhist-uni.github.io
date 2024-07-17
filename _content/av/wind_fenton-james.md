@@ -7,7 +7,7 @@ reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/02/19/63-wind"
 course: wider 
 tags:
-  - ideology
+  - culture
   - historiography
   - migration
 year: 2019

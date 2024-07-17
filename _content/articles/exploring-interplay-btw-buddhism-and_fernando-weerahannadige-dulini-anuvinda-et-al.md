@@ -11,7 +11,7 @@ course: sri-lankan
 status: featured
 tags:
   - sangha
-  - ideology
+  - culture
 year: 2013
 month: sep
 journal: "Work, Employment and Society"

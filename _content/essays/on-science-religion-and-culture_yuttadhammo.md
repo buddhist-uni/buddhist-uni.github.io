@@ -11,10 +11,10 @@ status: featured
 tags:
   - theravada
   - secular
-  - science
-  - philosophy-of-science
   - inner
-  - ideology
+  - science
+  - religion
+  - culture
 pages: 4
 ---
 

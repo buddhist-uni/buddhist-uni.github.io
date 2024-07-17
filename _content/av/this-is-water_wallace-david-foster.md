@@ -9,6 +9,7 @@ status: featured
 course: inner
 tags:
   - ideology
+  - culture
   - education
   - meditation
   - public-speaking

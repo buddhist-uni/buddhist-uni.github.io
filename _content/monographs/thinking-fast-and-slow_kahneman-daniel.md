@@ -10,8 +10,7 @@ olid: OL25416865M
 course: neuroscience
 tags:
   - psychology
-  - sankara
-  - ideology
+  - intellect
   - abhidhamma
   - marketing
 pages: 482

@@ -6,7 +6,6 @@ year: 2019
 publisher: Polity
 course: power
 tags:
-  - ideology
   - social
 oclc: 1114608461
 address: Cambridge

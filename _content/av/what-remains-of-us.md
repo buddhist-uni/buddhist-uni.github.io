@@ -9,7 +9,7 @@ editor: "Annie Jean"
 external_url: "https://youtu.be/322SFh6d3iA"
 formats: [mp4]
 base_value: 2
-course: ideology
+course: culture
 tags:
   - groups
   - tibet

@@ -10,7 +10,7 @@ course: japanese-roots
 tags:
   - dialogue
   - japanese-imperial
-  - ideology
+  - culture
   - roots
 year: 1999
 month: may

@@ -13,6 +13,7 @@ formats: [mp3, pdf]
 course: wider
 tags:
   - ideology
+  - society
   - economics
 year: 2022
 month: aug

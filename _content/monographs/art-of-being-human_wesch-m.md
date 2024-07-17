@@ -8,7 +8,7 @@ drive_links:
 course: world
 status: featured
 tags:
-  - ideology
+  - culture
   - places
   - anthropology
   - aging

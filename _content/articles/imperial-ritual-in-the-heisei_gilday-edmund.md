@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/17F09yKcl1a8KIqDiG3Hl5lDf9zcPWYZX/view?usp=drivesdk"
 course: japan # pretty solidly
 tags:
-  - ideology
+  - culture
   - ritual
 year: 1994
 journal: pw

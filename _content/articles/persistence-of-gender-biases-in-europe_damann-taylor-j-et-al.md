@@ -9,7 +9,6 @@ drive_links:
   - "https://drive.google.com/file/d/1bQz1-gqR84OXLcwitv7LzCuOgfKHLvhx/view?usp=drivesdk"
 course: time
 tags:
-  - ideology
   - culture
   - europe
   - gender

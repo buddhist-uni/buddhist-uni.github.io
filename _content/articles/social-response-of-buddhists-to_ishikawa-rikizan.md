@@ -11,7 +11,7 @@ status: featured
 tags:
   - japanese-imperial
   - japanese
-  - ideology
+  - culture
   - mahayana
   - engaged
 year: 1998
