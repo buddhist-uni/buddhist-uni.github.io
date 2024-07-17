@@ -1,19 +1,15 @@
 ---
 title: "Abhidhammattha-saṅgaha: A Comprehensive Manual of Abhidhamma"
-author: "Ācariya Anuruddha"
-editor: 
-- "bodhi"
-translator:
-- "narada"
+author: 
+- "Ācariya Anuruddha"
+editor: "bodhi"
+translator: "narada"
 external_url: "https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1ECzsN6iupxRPJBIXR20epwxT2dLMYG_m/view?usp=sharing"
 course: abhidhamma
 tags:
-  - ethics
-  - psychology
-  - phenomenology
-  - sri-lankan
+  - origination
 year: 1993 
 olid: OL8777919M
 publisher: bps
