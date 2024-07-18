@@ -1,5 +1,5 @@
 ---
-title: "Identity and continuity of 'personality' of selfless being : a study of the concept of bhavaṅga-citta in Theravāda Buddhism"
+title: "Identity and Continuity of 'personality' of Selfless Being: a Study of the Concept of Bhavaṅga-citta in Theravāda Buddhism"
 authors:
   - "Dipen Barua"
 external_url: "https://hub.hku.hk/handle/10722/298912"
@@ -7,8 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/10h972bbVGTlgAhcpjgw87gWGNHr5nKQe/view?usp=sharing"
 course: abhidhamma
 tags:
-  - theravada
-  - view
+  - rebirth
   - consciousness
 year: 2021
 publisher: "The University of Hong Kong"
