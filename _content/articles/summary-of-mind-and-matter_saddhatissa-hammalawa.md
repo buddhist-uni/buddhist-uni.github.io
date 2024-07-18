@@ -2,19 +2,22 @@
 title: "The Summary of Mind and Matter"
 authors:
   - "Hammalawa Saddhatisa"
-external_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1987_XI.pdf"
+external_url: "https://archive.org/download/jpts-xi-1987/Namarupasamaso_%20Summary%20of%20Mind%20and%20Matter%20-%20H%20Saddhatissa_text.pdf"
+source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1987_XI.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Q8ThAi8KBgCrPFJjgVi6CfU3zcYPLn47/view?usp=sharing"
 course: abhidhamma
 tags:
-  - inner
-  - sinhalese
-  - burmese
+  - consciousness
 year: 1987
 journal: jpts
 publisher: pts 
-volume: XI
+volume: 11
 pages: "5--31"
 ---
 
-This is a translation of the circa 10th century Ceylon text Nāmarūpasamāso, also known as Khemappakaraṇa in Burma, where the text gained popularity. The translation follows an original Sinhala manuscript and a later Burmese manuscript. Nāmarūpasamāso is a short treatise on the mind and mental processes (cetasikas) with a final section of 28 mnemonic verses.
+> There are, in short, 89 types of consciousness.
+They are fourfold. How? (i) Moral, (ii) Immoral, (iii)
+Resultant and (iv) Functional in classification.
+
+This is a translation of the circa 10th-century Ceylon Abhidhamma summary: the *Nāmarūpasamāso*, also known as the *Khemappakaraṇa* in Burma, where the text gained some popularity.

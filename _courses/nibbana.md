@@ -63,7 +63,6 @@ This free anthology will be our textbook for the class:
 This secondary monograph will be threaded through the course to help contextualize the historical developments:
 {% include content_box.html category="monographs" slug="metaphor-and-literalism_hwang-soonil" %}
 
-If you prefer audiobooks, you can find *The Island* read by one of its authors [online here](https://amaravati.org/series/the-island/){:target="_blank" ga-event-value="1"} (or at the "mp3s" link above).
 
 ## The Course
 
