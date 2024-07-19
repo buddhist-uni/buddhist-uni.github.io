@@ -7,10 +7,12 @@ source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXI%20(2018).pd
 drive_links:
   - "https://drive.google.com/file/d/1giOp-HGYbIzAPgL5zp7cN0Ce9Yt3GoXf/view?usp=drivesdk"
 course: east-asian-roots
+status: featured
 tags:
   - mahayana-canon
   - lotus-sutra
   - central-asian
+  - historiography
 month: mar
 year: 2018
 journal: aririab

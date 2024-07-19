@@ -21,4 +21,4 @@ pages: 26
 
 > Whereas the texts discussed in the first section generally argue for a stricter separation between these two domains, those in the second [Mahāyāna wave] strove to integrate medicine into the very heart of Buddhism.
 
-Rather than looking at Buddhist literature through the usual lenses of authorship and translation, Salguero focuses on the language, categories, and logics internal to the Buddhist texts themselves.
+On how the relief of _medical_ suffering became central to Mahāyāna Buddhism.

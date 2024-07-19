@@ -9,6 +9,7 @@ drive_links:
 course: animals
 tags:
   - vinaya-studies
+  - ethics
 year: 2019
 month: feb
 journal: "Religions"

@@ -13,4 +13,4 @@ year: 2013
 month: oct
 ---
 
-This work is a Pāli and English interlinear translation of the introduction to the Paṭṭhānapāḷi,  the last book of the Abhidhamma, which sets out the conditions of the mind.
+The introduction to the _Paṭṭhānapāḷi_,  the last book of the Abhidhamma, which sets out the conditions of the mind.

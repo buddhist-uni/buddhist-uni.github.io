@@ -15,4 +15,7 @@ pages: 318
 
 > The medium is the message.
 
-The foundational text of media studies, McLuhan explained how the affordances of technologies themselves reshape the humans around them.
+The foundational text of media studies.
+
+McLuhan explained how the affordances of technologies themselves reshape the humans around them.
+

@@ -8,6 +8,7 @@ source_url: "https://www.listennotes.com/podcasts/maintenance-phase/zombie-stati
 drive_links:
   - "https://drive.google.com/file/d/1Q127595R4CP1O5h5Tl7eu27iaOxeTr4w/view?usp=drivesdk"
 course: intellect
+status: featured
 tags:
   - science
   - medicine

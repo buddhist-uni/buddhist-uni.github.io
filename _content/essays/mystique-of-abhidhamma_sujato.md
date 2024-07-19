@@ -7,6 +7,7 @@ file_links:
   - "exclusive_01/The%20Mystique%20of%20the%20Abhidhamma%20-%20Sujato.pdf"
 source_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/2X/b/b9847215f412d975d3ba898392b67d249af1d3df.pdf"
 year: 2010
+status: featured
 month: may
 course: abhidhamma
 tags: 

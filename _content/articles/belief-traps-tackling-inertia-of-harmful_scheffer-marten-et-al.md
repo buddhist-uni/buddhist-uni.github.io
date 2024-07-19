@@ -25,6 +25,8 @@ pages: 10
 openalexid: W4285726648
 ---
 
+How to change your mind, according to science.
+
 > Beliefs can be highly resilient in the sense that they are not easily abandoned in the face of counterevidence.
 > This has the advantage of guiding consistent behavior and judgments but may also have destructive consequences for individuals, nature, and society.
 > For instance, pathological beliefs can sustain psychiatric disorders, the belief that rhinoceros horn is an aphrodisiac may drive a species extinct, beliefs about gender or race may fuel discrimination, and belief in conspiracy theories can undermine democracy.

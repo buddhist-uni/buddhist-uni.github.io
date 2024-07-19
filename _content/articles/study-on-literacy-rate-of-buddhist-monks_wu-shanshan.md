@@ -7,6 +7,7 @@ source_url: "https://doi.org/10.3390/rel13100992"
 drive_links:
   - "https://drive.google.com/file/d/1SJLE8-_zXBlUZ28Ey5GZRbJmrusDVJjT/view?usp=drivesdk"
 course: medieval
+status: featured
 tags:
   - historiography
   - writing
@@ -14,8 +15,8 @@ year: 2022
 month: oct
 journal: "Religions (Basel)"
 volume: 13
-number: 10
-pages: "992--992"
+number: 992
+pages: 25
 publisher: "Multidisciplinary Digital Publishing Institute"
 openalexid: W4306963966
 ---

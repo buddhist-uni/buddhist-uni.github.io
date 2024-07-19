@@ -13,7 +13,7 @@ number: 1
 pages: "35--38"
 course: epistemology
 tags:
-  - abhidhamma
+  - indian
 ---
 
 > … whatever (is) seen, heard, or thought, the good say 'putting down'

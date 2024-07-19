@@ -12,7 +12,6 @@ tags:
   - meditation
   - stages
   - thought
-  - abhidhamma
 year: 1963
 olid: OL13056097M
 series: wheel

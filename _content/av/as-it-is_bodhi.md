@@ -13,7 +13,6 @@ course: philosophy
 status: featured
 tags:
   - theravada
-  - abhidhamma
 base_value: 1.1
 year: 1981
 minutes: 797

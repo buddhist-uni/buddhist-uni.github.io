@@ -6,6 +6,7 @@ external_url: "https://www.redcross.ca/crc/documents/comprehensive_guide_for_fir
 drive_links:
   - "https://drive.google.com/file/d/1QILETNGFccWogAmewRAZ8LdvPxUDwR-_/view?usp=drivesdk"
 course: body
+status: featured
 tags:
   - medicine
   - world

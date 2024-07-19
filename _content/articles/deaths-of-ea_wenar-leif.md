@@ -7,9 +7,13 @@ source_url: "https://www.wired.com/story/deaths-of-effective-altruism/"
 drive_links:
   - "https://drive.google.com/file/d/1HgJ71h2C_06T1FcESn2tETO1ownlnfQF/view?usp=drivesdk"
 course: intellect
+status: featured
 tags:
-  - social
+  - society
   - dana
+  - charity
+  - silicon-valley
+  - neoliberalism
 year: 2024
 month: apr
 journal: "Wired"

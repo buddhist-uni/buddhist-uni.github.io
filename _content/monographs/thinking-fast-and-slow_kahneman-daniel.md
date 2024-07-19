@@ -11,8 +11,6 @@ course: neuroscience
 tags:
   - psychology
   - intellect
-  - abhidhamma
-  - marketing
 pages: 482
 ---
 

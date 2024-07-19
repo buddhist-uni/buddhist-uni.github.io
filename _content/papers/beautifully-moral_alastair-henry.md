@@ -9,13 +9,16 @@ drive_links:
 course: theravada-roots
 tags:
   - pali-literature
-  - sanskrit
-  - literature
-  - south-asia
+  - sri-lanka
 year: 2017
 from_book: sri-lanka-crossroads_ucl
 pages: "77--93"
 chapter: 4
 ---
 
-This book chapter explores ethics in Pāli literature, particularly during the medieval period in Sri Lanka. It delves into how moral values and cosmopolitan ideals were expressed and conveyed through literary works, shedding light on the intricate relationship between literature, morality, and societal values especially in medieval, Theravāda literature.
+> medieval Pāli literary culture can be
+viewed as a form of qualified cosmopolitanism: one that advanced many of the
+cosmopolitan literary ideals of its time but also staunchly protected its exclusively
+Buddhist identity.
+
+On how Pali literature in medieval Sri Lanka responded to Sanskrit's regional hegemony.

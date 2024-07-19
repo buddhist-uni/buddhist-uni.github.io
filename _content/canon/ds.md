@@ -12,6 +12,6 @@ address: "London"
 pages: 449
 ---
 
-This work is an early English translation of the Pali Dhammasangaṇi, the first book of the Abhidhammapiṭaka.
+The first book of the Abhidhammapiṭaka.
 
 The book itself starts with a "matika," a list of classifications of dhammas, which are ideas or phenomena. It includes 22 three-fold and 100 two-fold classifications by the Abhidhamma method and 42 by the Sutta method. The main content is divided into four parts: the first covers states of mind, the second covers material phenomena, the third explains the matika classifications using the first two parts, and the fourth further elaborates on these classifications, excluding the Sutta method's two-fold classifications.

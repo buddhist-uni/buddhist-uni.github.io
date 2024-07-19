@@ -9,8 +9,8 @@ course: animals
 tags:
   - imagery
   - hermeneutics
+  - lit-crit
   - pali-commentaries
-  - buddha
 year: 2013
 journal: jiabs
 volume: 35
@@ -24,4 +24,4 @@ the previous animal rebirth of an eventual human being. There is
 something powerful, I contend, about the mute presence of such an
 animal—its noble silence, its freedom from the glibness of human language
 
-Using the story of the Buddha's stay in the Pārileyyaka forest, this article highlights the use and importance of animals in Buddhist literature and Indian literature more generally. The author brings together much of past research on the use of anmials in Buddhist literature, adding her own insights.
+On how Pali and other Indian literature used animals as both stand-ins for and foils of its human characters.

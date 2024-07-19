@@ -6,6 +6,7 @@ external_url: "https://budblooms.org/2020/05/10/sanctuary-a-forgotten-buddhist-t
 drive_links:
   - "https://drive.google.com/file/d/1orJH7Rqp2RpdRDECiTFMCXBMJnXxgJ-P/view?usp=sharing"
 course: theravada-roots
+status: featured
 tags:
   - medieval
   - engaged

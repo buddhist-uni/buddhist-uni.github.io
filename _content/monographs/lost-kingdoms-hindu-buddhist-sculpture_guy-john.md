@@ -8,6 +8,7 @@ course: theravada-roots
 tags:
   - bart
   - sea
+  - historiography
 year: 2014
 olid: OL38368022M
 oclc: 871203082
@@ -18,4 +19,5 @@ pages: 305
 
 This exhibition catalog from The Met presents the religious sculptural arts of  Southeast Asia from the 5th through the 8th centuries CE.
 
-The work has many insightful essays from leading scholars in the fields of Hindu, Buddhist, and Southeast Asian studies. Besides looking at the artistic side of the sculptures, the included pieces and essays also tell the political and philosophical history of the region.
+Not just a catalogue of sculptures, the included essays by leading scholars explain much of what is known about the early history of Southeast Asian polities and their Indic religions.
+

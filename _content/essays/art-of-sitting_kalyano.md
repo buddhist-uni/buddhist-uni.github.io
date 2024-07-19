@@ -6,6 +6,7 @@ external_url: "https://media.amaravati.org/en/dhamma-books/the-art-of-sitting"
 drive_links:
   - "https://drive.google.com/file/d/1sDr06sZPY4xMP5xRdVyxE5vzq-i-6n5m/view?usp=drivesdk"
 course: meditation
+status: featured
 tags:
   - health
 year: 2018
