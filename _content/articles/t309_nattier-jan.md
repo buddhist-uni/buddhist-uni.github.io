@@ -21,4 +21,4 @@ pages: "231--258"
 
 > Zhu Fonian may have begun to produce new 'scriptures' without benefit of any Indian source-texts in an attempt to revive his own flagging fame.
 
-How one Chinese Agama translator came to write Chinese apocrypha.
+How one Chinese Āgama translator came to write Chinese apocrypha.
