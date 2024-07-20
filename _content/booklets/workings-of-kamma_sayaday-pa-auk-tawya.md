@@ -5,10 +5,10 @@ authors:
 external_url: "https://www.paauk.eu/images/meta/the-workings-of-kamma_thumb.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1WsE3yT_JIjWKEmKv1nvz21W_olj16DQK/view?usp=sharing"
-course: abhidhamma
+course: pa-auk
 tags:
+  - abhidhamma
   - karma
-  - pa-auk
 year: 2009
 pages: 375
 ---
