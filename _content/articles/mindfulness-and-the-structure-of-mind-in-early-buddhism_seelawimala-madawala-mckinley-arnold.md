@@ -11,17 +11,16 @@ tags:
   - sati
 year: 1987
 journal: pw
-publisher: "The Institute of Buddhist Studies"
+volume: 2
 number: 3
 pages: "3--14"
 ---
 
 > So if Americans are to understand Buddhist forms of meditation and if Buddhism is
 to be transferred successfully to America,
-Americans must understand sali development
+Americans must understand sati development
 correctly. Unfortunately, such understanding
 is difficult to attain because of the great differences in language, philosophy and
-"worldview" wIn this article, the authors aim to ground a universal understanding of mindfulness (sati) by exploring how the four founhich exist between the
-American and Asian cultures in which Buddhism developed.
+"worldview"
 
-dations of mindfulness are explained through an Abhidhammic view of the mind.
+An introduction to the Theravāda view of the mind.

@@ -8,10 +8,9 @@ drive_links:
 course: abhidhamma
 tags:
   - karma
+  - pa-auk
 year: 2009
-publisher: "Pa-Auk Meditation Centre"
-address: "Singapore"
 pages: 375
 ---
 
-Compiled in-depth dhamma talks on kamma give by Pa-Auk Tawya Sayadaw.
+Compiled in-depth dhamma talks on kamma from the Abhidhamma perspective given by Pa-Auk Tawya Sayadaw.
