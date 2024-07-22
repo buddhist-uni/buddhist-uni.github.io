@@ -13,7 +13,7 @@ year: 1971
 publisher: bps
 series: wheel
 number: 167
-pages: 119
+pages: 61
 ---
 
 > An understanding of rebirth will not only induce a refining
@@ -23,4 +23,4 @@ he will realize that all are his fellow-passengers in the great
 journey of life, subject to the same universal laws and
 fundamental principles to which he himself is subject.
 
-A rigorous study of rebirth from a purely Buddhist perspective, in which the author highlights how a firm understanding of rebirth is essential to practicing the Dhamma.
+A thorough explanation of the process of rebirth from the orthodox, Theravāda perspective.
