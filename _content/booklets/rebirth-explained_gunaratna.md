@@ -16,10 +16,7 @@ number: 167
 pages: 61
 ---
 
-> An understanding of rebirth will not only induce a refining
-influence on one’s own life, it will also refine his attitude
-towards all sentient beings without a single exception, since
-he will realize that all are his fellow-passengers in the great
+> ... all are his fellow-passengers in the great
 journey of life, subject to the same universal laws and
 fundamental principles to which he himself is subject.
 

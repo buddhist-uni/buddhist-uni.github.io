@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1mgYVP_FlI1BJzFLcscmIdlWAosEs3QVp/view?usp=sharing"
 course: abhidhamma
 tags:
-  - theravada-chanting
+  - thai-chanting
 year: 2016
 pages: 22
 ---
