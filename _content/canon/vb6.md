@@ -1,6 +1,6 @@
 ---
-title: "Vb 7 Paṭiccasamuppāda Vibhaṅga: The Analysis of Conditional Origination"
-slug: "vb07"
+title: "Vb 6 Paṭiccasamuppāda Vibhaṅga: The Analysis of Conditional Origination"
+slug: "vb06"
 translator: anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Paticcasamuppadavibhanga/index.htm"
 alternative_url: "https://suttacentral.net/vb6/en/anandajoti"
