@@ -5,7 +5,7 @@ authors: ["Emmett FitzGerald"]
 year: 2017
 month: aug
 external_url: "https://99percentinvisible.org/episode/the-stethoscope/"
-course: inner
+course: body
 tags:
   - medicine
 series: 99pi

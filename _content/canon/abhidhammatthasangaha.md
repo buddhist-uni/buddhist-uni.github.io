@@ -1,5 +1,5 @@
 ---
-title: "Abhidhammattha-saṅgaha: A Comprehensive Manual of Abhidhamma"
+title: "Abhidhammatthasaṅgaha: A Comprehensive Manual of Abhidhamma"
 authors: 
 - "Ācariya Anuruddha"
 editor: bodhi
