@@ -2,7 +2,7 @@
 title: "Cooking Living Beings: The Transformative Effects of Encounters with Bodhisattva Bodies"
 authors:
   - mrozik
-external_url: "https://enlight.lib.ntu.edu.tw/FULLTEXT/JR-MISC/misc120786.pdf"
+external_url: "https://web.archive.org/web/20200321072726/https://enlight.lib.ntu.edu.tw/FULLTEXT/JR-MISC/misc120786.pdf"
 source_url: "https://doi.org/10.1111/j.0384-9694.2004.00159.x"
 drive_links:
   - "https://drive.google.com/file/d/14imAZm3pNMaWyCA0LagfmFxMJgkLejgM/view?usp=drivesdk"

@@ -7,7 +7,7 @@ the significant expansion of our _free_ library further into the history of Budd
 
 # Medieval Buddhism
 
-**New Bibliography: [Medieval Buddhism](/tags/medieval)**
+**The Bibliography: [Medieval Buddhism](/tags/medieval)**
 
 We can roughly divide the history of Buddhism into three periods: its [early growth in India](/tags/indian), its spread across Asia, and finally [its global spread West](/tags/west) in the modern era.
 This new section of our library delves deeper into those middle ages where Buddhism spread across the Silk Roads and split into the many varieties we know today.
@@ -25,20 +25,20 @@ The works listed there cover many critical topics, such as the entanglements and
 
 # Theravāda's Roots
 
-**New Bibliography: [The History of the Theravāda](/tags/theravada-roots)**
+**The Bibliography: [The History of the Theravāda](/tags/theravada-roots)**
 
-For those uninterested in the Mahāyana developments, this bibliography covers many episodes in the medieval history of "Southern Buddhism."
+Many interesting episodes in the medieval history of "Southern Buddhism."
 
 **Where to start**
 
-The bibliography focuses largely on the Theravāda's Pāli texts and the sometimes surprising politics surrounding them.
+The bibliography focuses largely on the Pāli texts and the sometimes surprising politics surrounding them.
 
 - [Of Beggars and Buddhas: Politics and Humor in the Thai Jatakas](https://buddhistuniversity.net/content/av/beggars-and-buddhas-politics-humor-in-vessantara-jataka-in-thailand_bowie-katherine-a)
   - In this interview, Katherine Bowie explains how _funny_ the Vessantara Jataka was to traditional Thai villagers, giving us a peak into the lively culture surrounding Theravāda's seemingly-austere literature.
 
 # The Theravāda Canon
 
-**New Bibliographies: [Rebirth Stories](/tags/rebirth-stories) and [Canonical Poetry](/tags/canonical-poetry) and [Abhidhamma Studies](/tags/abhidhamma)**
+**The Bibliographies: [Rebirth Stories](/tags/rebirth-stories) and [Canonical Poetry](/tags/canonical-poetry) and [Abhidhamma Studies](/tags/abhidhamma)**
 
 For those interested in just diving right into the Pāli texts themselves, we're pleased to now provide two bibliographies on the Khuddakanikāya and one on the Abhidhamma Piṭaka.
 
@@ -55,15 +55,13 @@ Here I'd especially like to highlight a new project over at [ReadingFaithfully](
 
 # The Media and Your Mind
 
-**New Bibliographies: [Media Studies](/tags/media) and [The Intellect](/tags/intellect)**
+**The Bibliographies: [Media Studies](/tags/media) and [The Intellect](/tags/intellect)**
 
 In today's ever-connected world, media literacy is more important than ever.
 I'm happy to announce today the launch of two new sections of our library on the general (secular) philosophy of mind as well as on how different mediums affect us.
 
 **Where to start**
 
-- [Climate Denial](https://buddhistuniversity.net/content/av/climate-denial_hbomberguy)
-  - A hilarious video about misinformation online, why it's produced, and why we fall for it.
 - [Belief Traps](https://buddhistuniversity.net/content/articles/belief-traps-tackling-inertia-of-harmful_scheffer-marten-et-al)
   - In this paper, Scheffer et al explain the psychology of such "harmful beliefs" and what, according to science, actually works to get people out of them.
 - [Attention Fracking](https://buddhistuniversity.net/content/av/attention-fracking_burnett-d-g)

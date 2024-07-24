@@ -2,7 +2,7 @@
 title: "Mahayana Buddhist Attitudes Towards Animals"
 authors:
   - "Martin T. Adam"
-external_url: "https://journals.sfu.ca/cjbs/index.php/cjbs/article/view/69"
+external_url: "https://thecjbs.org/wp-content/uploads/2018/02/Mahayana-Buddhist-Attitudes-Towards-Animals_Adam.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1UUWAqdQamWF05sdVGKQG38u8m5HKZ0oH/view?usp=drivesdk"
 course: animals

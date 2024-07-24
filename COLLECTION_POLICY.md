@@ -23,7 +23,7 @@ Each file in the library is ideally hosted in multiple locations (e.g. at Archiv
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
 That would as undesirable as it is impossible.
-The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on [Early Buddhism](https://www.buddhistinquiry.org/wp-content/uploads/2023/11/Early-Buddhism.pdf) to the English-speaking world.**
+The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on [Early Buddhism](https://web.archive.org/web/20231130212016/https://www.buddhistinquiry.org/wp-content/uploads/2023/11/Early-Buddhism.pdf) to the English-speaking world.**
 
 To that end, works found on the internet are accepted into the library on a five-point scale and are sorted into subtopics (aka "folders" or "tags") for easy access. The rest of this document will outline how that is done.
 
