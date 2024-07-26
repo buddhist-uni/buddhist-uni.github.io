@@ -21,4 +21,4 @@ What scholars haven't pointed out yet is that this period also marked a high poi
 Indeed, the collapse of the classical tradition is what made space for new understandings of gender performance.
 Women experienced greater freedom of movement and choice with the entrance of Buddhism to the Yellow River Valley.
 
-How Central Asian Buddhism came to the Chinese court and brought with it new ideas of women's agency which culminated in the ascension of Empress Dowager Ling (靈皇后) in 515.
+How Central Asian Buddhism came to the Chinese court and brought with it new ideas of women's agency which culminated in the ascension of Empress Dowager Ling (靈皇後) in 515.
