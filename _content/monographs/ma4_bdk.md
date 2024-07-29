@@ -14,4 +14,4 @@ number: 4
 pages: 450
 ---
 
-A translation of MA Discourses 182–222.
+The final volume of BDK's translation of the MA, containing discourses 182–222.

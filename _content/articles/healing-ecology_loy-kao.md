@@ -17,10 +17,7 @@ pages: "253--278"
 openalexid: W258959463
 ---
 
-> Loy’s remarks do not neatly divide into two types: those directed primarily at Buddhists on account of their (presumably) shared 
-metaphysics and ontology, and those aimed at a general audience in 
-light of the universality of the prescriptions and effects of his plan to 
-heal the biosphere. Quite the contrary, Loy’s central thesis is that there 
+> Loy’s central thesis is that there 
 are common “spiritual roots” to our ecological crisis and that the Buddhist soteriological structure, when properly understood and applied
 from the individual to the collective case, holds the key to our way out.
 Loy’s wish is not simply that we all “stop befoul[ing] our own nest” in 

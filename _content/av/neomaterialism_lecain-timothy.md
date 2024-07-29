@@ -14,7 +14,7 @@ course: wider
 tags:
   - materialism
   - becon
-  - nature
+  - media
   - language
 minutes: 5
 ---

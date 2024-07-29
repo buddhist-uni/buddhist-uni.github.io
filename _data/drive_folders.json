@@ -159,6 +159,10 @@
   "private": "https://drive.google.com/drive/folders/1_-yABsToxO-XXrzJnZMAFwwXQ4I5p1qN",
   "public": "https://drive.google.com/drive/folders/14MZO_mAqFfWLCLufpYf3qy569SCwDUwI"
  },
+ "bhutan": {
+  "private": "https://drive.google.com/drive/folders/1Gqs9tBqgTtr4Gqqw-bfKjQrHe_pKmZiW",
+  "public": null
+ },
  "bhutanese": {
   "private": "https://drive.google.com/drive/folders/1BfJI4RIv8naNhQC-zfeSyNP4hJQZgknV",
   "public": null
@@ -571,6 +575,10 @@
   "private": "https://drive.google.com/drive/folders/11Y5-wllR51_7xI_9m54RFWjD37yLqwJo",
   "public": null
  },
+ "finland": {
+  "private": "https://drive.google.com/drive/folders/1-EnDfu_bKsbRHLDfeeBcN7JwBHu8lOsp",
+  "public": null
+ },
  "food": {
   "private": "https://drive.google.com/drive/folders/1-_WRVmoQvnBuTaIIwyhZtcAZ_HYfDbPq",
   "public": "https://drive.google.com/drive/folders/15-pCmfm7_2Y0LV4rDv8Nu1jx1uVhwZB3"
@@ -618,6 +626,10 @@
  "graphic-design": {
   "private": "https://drive.google.com/drive/folders/17zytyQgifBQBdS8VoWy-EbSZ1YHJRytT",
   "public": ""
+ },
+ "greece": {
+  "private": "https://drive.google.com/drive/folders/1-nzdQgh4DoI9IWjZspUXyy-P82rdbqgh",
+  "public": null
  },
  "grief": {
   "private": "https://drive.google.com/drive/folders/1CE8pQQFvZS8dbIa_0upA5WEN2UzOdV2c",
@@ -1067,8 +1079,16 @@
   "private": "https://drive.google.com/drive/folders/1ZUdUd948W5fQV00dN4j9ym0rqdhjy9Lg",
   "public": ""
  },
+ "nigeria": {
+  "private": "https://drive.google.com/drive/folders/1I4Rw6yN5tDzn9Fd-PraxWgbLsI_wCKZv",
+  "public": null
+ },
  "north-america": {
   "private": "https://drive.google.com/drive/folders/1rY8N5C73O8K9YcQ4Z-pUj-7S8b4geFYu",
+  "public": null
+ },
+ "northern-europe": {
+  "private": "https://drive.google.com/drive/folders/1UF6qfjiSGLFo7YbVmvTnHIjB_ryC8p1P",
   "public": null
  },
  "nuns": {
@@ -1339,6 +1359,10 @@
   "private": "https://drive.google.com/drive/folders/16vqXKdwzlQyhaYyxp6-dRU93799902L4",
   "public": null
  },
+ "science-communication": {
+  "private": "https://drive.google.com/drive/folders/1V1ehFCgqGVvZIY0xzNtsd6UFmtBtgdKe",
+  "public": null
+ },
  "science-roots": {
   "private": "https://drive.google.com/drive/folders/180AS5OiLQem-gXEdDypy_cSlEhHKEKMC",
   "public": null
@@ -1462,6 +1486,10 @@
  "tea": {
   "private": "https://drive.google.com/drive/folders/17RLYDWCkvnD3Gh5KCAHV9B--blM7LkBI",
   "public": null
+ },
+ "tg": {
+  "private": "https://drive.google.com/drive/folders/1TMHciQZbD8s6dX2WacYAaJ4a30Ak1mRB",
+  "public": "https://drive.google.com/drive/folders/11VoFvnT12mDDLWObSDjnLfo4LnysOL-t"
  },
  "thai": {
   "private": "https://drive.google.com/drive/folders/1FfAO6rL6LkcwRZ5HkTp7GcjccPbiBW6_",

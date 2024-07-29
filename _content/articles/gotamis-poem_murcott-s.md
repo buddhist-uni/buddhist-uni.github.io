@@ -10,7 +10,7 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1q3JFEaL46fT0w_StJXJ1yy4B8R0o5KMK/view?usp=drivesdk"]
 course: characters
 tags:
-  - thig
+  - tg
   - cosmology
 ---
 

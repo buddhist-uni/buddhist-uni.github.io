@@ -10,7 +10,7 @@ course: roots
 tags:
   - characters
   - avadana
-  - thig
+  - tg
   - nuns
 year: 2011
 month: sep

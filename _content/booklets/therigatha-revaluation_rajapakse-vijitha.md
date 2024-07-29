@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1OG__5Uo6bzcwcuY8sAnKMjFfVfzBUGz0/view?usp=drivesdk"
 tags:
   - canonical-poetry
-  - thig
+  - tg
   - nuns
 year: 2000
 olid: OL51494237M

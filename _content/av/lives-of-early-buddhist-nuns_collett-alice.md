@@ -10,7 +10,7 @@ external_url: "https://newbooksnetwork.com/dr-alice-collett-lives-of-early-buddh
 course: setting
 status: featured
 tags:
-  - thig
+  - tg
   - characters
   - nuns
   - bhikkhuni

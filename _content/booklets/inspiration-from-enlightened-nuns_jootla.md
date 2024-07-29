@@ -14,7 +14,7 @@ tags:
   - pali-canon
   - imagery
   - nuns
-  - thig
+  - tg
 year: 1984
 month: jan
 olid: OL9148953M

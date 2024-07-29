@@ -12,7 +12,7 @@ journal: jpts
 course: dn-pali
 tags:
   - imagery
-  - thag-pali
+  - tg-pali
 ---
 
 > … the tradition is utterly confused and at a loss what to read. The commentarial tradition of interpretation, however, is unequivocal: the word *ve(X)a-* means ‘strap, thong’ [...] and most modern scholars have joined them.

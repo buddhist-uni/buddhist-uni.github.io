@@ -13,7 +13,7 @@ pages: "167--173"
 journal: bsr
 course: buddha
 tags:
-  - thig
+  - tg
   - bhikkhuni
 status: featured
 ---
