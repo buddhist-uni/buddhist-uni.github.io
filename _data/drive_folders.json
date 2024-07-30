@@ -271,6 +271,10 @@
   "private": "https://drive.google.com/drive/folders/18KjogqVdxVGo2qBpiT2PMQBVaYoFiXUz",
   "public": ""
  },
+ "caribbean": {
+  "private": "https://drive.google.com/drive/folders/1kKU1QAJfBTDzETqu3_aC1R6tTxy9sTd7",
+  "public": null
+ },
  "cars": {
   "private": "https://drive.google.com/drive/folders/1pdH1Di3FIb0dfIOFl0240TvLh6ytS-kA",
   "public": null
@@ -1431,6 +1435,10 @@
   "private": "https://drive.google.com/drive/folders/1RwOr60WNbRG55ASNZjUM2NcdpkqRghir",
   "public": "https://drive.google.com/drive/folders/1RzLldhKiIlVbcPVe5xp4nrlWQ5YcuaAZ"
  },
+ "south-america": {
+  "private": "https://drive.google.com/drive/folders/1rY2-r2_nD6kjRV0ajJkMk8ppJ_MQcQHv",
+  "public": null
+ },
  "south-asia": {
   "private": "https://drive.google.com/drive/folders/1Ezc_c64N-7AygzmxW7n0NeOkiWpxeILh",
   "public": null
@@ -1470,6 +1478,10 @@
  "sutta": {
   "private": "https://drive.google.com/drive/folders/1JFyR5WuEeBdjb4kFWxzBpj3p9gIIeK9E",
   "public": "https://drive.google.com/drive/folders/1-UwTSJqPOQ2PIk3DKX5cw3m4I211m7Du"
+ },
+ "sweden": {
+  "private": "https://drive.google.com/drive/folders/10-MX_It2za2aw1GDNDBlH7K3M4LztmHw",
+  "public": null
  },
  "taiwan": {
   "private": "https://drive.google.com/drive/folders/1Npp8HyeuZOSblMYFiEIeKQ0SoR4ZC6sA",

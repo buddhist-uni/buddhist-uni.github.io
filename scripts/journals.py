@@ -3,6 +3,7 @@
 # Journals
 # See e.g. https://api.openalex.org/sources/S120086578 for more info
 ARIRIAB  = "S4306473384"
+ARIRIAB_JP = "S4306544351"
 BSR      = "S139284966"
 JIABS    = "S2764843907"
 JGB      = "S2739015590"
@@ -24,6 +25,7 @@ AO       = "S4210209688"
 # from OA to OBU IDs
 slugs = {
   ARIRIAB: "aririab",
+  ARIRIAB_JP: "aririab",
   BSR: "bsr",
   JIABS: "jiabs",
   JGB: "jgb",
