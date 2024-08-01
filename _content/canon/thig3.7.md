@@ -1,6 +1,6 @@
 ---
 title: "Thig 3.7 Selā Therīgāthā: The Elder Selā's Verses"
-translator: "Ayya Soma"
+translator: soma
 slug: "thig.03.07"
 subcat: poetry
 external_url: "https://suttacentral.net/thig3.7/en/soma"
