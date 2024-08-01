@@ -205,6 +205,8 @@ def get_possible_geoff_source_url(trans, book, nums):
       ret = f"kn/snp/snp.{nums[0]}.{nums[1]:02d}.than.html"
     case "thag":
       ret = f"kn/thag/thag.{nums[0]:02d}.{nums[1]:02d}.than.html"
+    case "thig":
+      ret = f"kn/thig/thig.{nums[0]:02d}.{nums[1]:02d}.than.html"
     case "iti":
       trans['publication_date'] = 2001
       num = int(nums[0])

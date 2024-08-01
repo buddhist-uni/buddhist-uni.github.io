@@ -3,10 +3,10 @@ title: "Buddhist Life, Buddhist Path"
 authors: [cintita]
 year: 2015
 external_url: "https://bhikkhucintita.wordpress.com/2017/05/02/new-textbook-buddhist-lifebuddhist-path/"
-formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/12gtQNOgocUXGDZ9zWdn_fIijlSR8Frq8/view?usp=drivesdk"]
+drive_links:
+  - "https://drive.google.com/file/d/12gtQNOgocUXGDZ9zWdn_fIijlSR8Frq8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11X6AXg4w4GTd8FJuJURYGo8gIpMvK8aC/view?usp=drivesdk"
 olid: OL32035808M
-base_value: 3
 course: function
 status: featured
 tags: 
