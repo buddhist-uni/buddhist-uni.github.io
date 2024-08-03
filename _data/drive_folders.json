@@ -535,6 +535,10 @@
   "private": "https://drive.google.com/drive/folders/1xVxDAWJ5kQdNRRPhJaTD5npSzDwXxW_Y",
   "public": null
  },
+ "epidemiology": {
+  "private": "https://drive.google.com/drive/folders/1896IggQ3MZcu2fbGFBsGNXp6jciIBbjU",
+  "public": null
+ },
  "epistemology": {
   "private": "https://drive.google.com/drive/folders/1GTs6GMS4jI_OTJ-Osho-DZ-r3ACNRxhQ",
   "public": "https://drive.google.com/drive/folders/1HQ31JiRVpz6ErB_3_7kFveHgxKc3f7jm"
@@ -927,6 +931,10 @@
   "private": "https://drive.google.com/drive/folders/1DPdvCRRpFUOmbIYU7eOPx3RvhqQcvsk5",
   "public": ""
  },
+ "management": {
+  "private": "https://drive.google.com/drive/folders/1hK6a1l7wAppztSaRzQDRBkzVk_JxVXqp",
+  "public": null
+ },
  "mandarin": {
   "private": "https://drive.google.com/drive/folders/1006UiP7prrsywNYqXert7VZRUhEYNRuJ",
   "public": ""
@@ -1313,6 +1321,10 @@
  },
  "rhetoric": {
   "private": "https://drive.google.com/drive/folders/1i83_IBn3K0LAhKaSHkpuAuioDjzbFU90",
+  "public": null
+ },
+ "romania": {
+  "private": "https://drive.google.com/drive/folders/1QdJb44Ys8T0uS_RS6pLi-DdN0QTY3YOt",
   "public": null
  },
  "romantic-relationships": {

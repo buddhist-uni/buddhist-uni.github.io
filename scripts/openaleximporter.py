@@ -108,9 +108,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str
   filename += '.md'
   file_path = os.path.join(file_path, filename)
   with open(file_path, 'w') as fd:
-    fd.write('---\n')
-    fd.write(f"title: >-\n    {title}\n")
-    fd.write("authors:\n")
+    fd.write(f"---\ntitle: \"{title.replace('"', '\\\"')}\"\nauthors:\n")
     for i in range(min(4, len(work['authorships']))):
         author = work['authorships'][i]['author']['display_name'].replace('‐', '-')
         aslug = get_author_slug(author)
