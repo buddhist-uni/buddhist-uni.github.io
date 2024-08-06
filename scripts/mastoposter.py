@@ -28,6 +28,8 @@ def length_of_item(page) -> str:
     else:
       pages = int(page.pages)
     length = f", {pages}-page "
+  else:
+    length = " "
   return length
 
 def get_category_for_item(page: website.ContentFile) -> tuple[str, str]:
