@@ -9,6 +9,7 @@ drive_links:
 course: jataka
 tags:
   - literature
+  - dialogue
 year: 2016
 month: mar
 booktitle: "Dialogue in Early South Asian Religions: Hindu, Buddhist and Jain Traditions"

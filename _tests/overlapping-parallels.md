@@ -77,6 +77,7 @@ So far, suttas have been added and deduped from:
   - Ajahn Geoff's *Recognizing the Dhamma*
   - Hecker's *Similes of the Buddha*
   - Nyanamoli's *Life of the Buddha*
+  - The many wheel publications containing whole sutta translations
 
 Anthologies yet to be processed:
   - Ajahn Geoff's *Noble Conversation*
@@ -84,4 +85,3 @@ Anthologies yet to be processed:
   - along with Jason Espada's anthology
   - Bhikkhu Bodhi's selections in the Sutta tag
   - *Common Buddhist Text*
-  - The many wheel publications containing whole sutta translations
