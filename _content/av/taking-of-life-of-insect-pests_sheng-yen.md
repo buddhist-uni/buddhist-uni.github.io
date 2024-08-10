@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1NIsndcTx1sLMWaZ9I7ilIS05hS1OgV1e/view?usp=sharing"
 course: animals
 tags:
-  - ahimsa
+  - ethics
 year: 2012
 series: gdd
 subcat: film
