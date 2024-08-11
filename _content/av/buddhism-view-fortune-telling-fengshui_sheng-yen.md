@@ -17,6 +17,7 @@ year: 1994
 publisher: "Dharma Drum Publishing"
 series: gdd
 number: 8
+subcat: film
 minutes: 9
 ---
 

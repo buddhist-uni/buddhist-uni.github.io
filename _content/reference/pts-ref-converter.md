@@ -1,7 +1,7 @@
 ---
 title: "PTS Reference Converter"
 source_url: "http://pts.ticao.de"
-external_url: "https://benmneb.github.io/pts-converter/"
+external_url: "https://v2-beta.pts.dhamma-dana.de/"
 tags:
   - pali-canon
 year: 2018

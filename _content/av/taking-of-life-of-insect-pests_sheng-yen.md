@@ -5,6 +5,7 @@ authors:
 external_url: "https://www.youtube.com/watch?v=3wuiQHOeq1k"
 drive_links:
   - "https://drive.google.com/file/d/1NIsndcTx1sLMWaZ9I7ilIS05hS1OgV1e/view?usp=sharing"
+formats: [mp4]
 course: animals
 tags:
   - ethics
