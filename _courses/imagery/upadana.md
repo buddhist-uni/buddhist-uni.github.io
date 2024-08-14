@@ -12,6 +12,7 @@ Having now finished _Excursions_ volume 1, we are halfway through our course and
 <p>
 {% include content_blurb.html category="canon" slug="ud8.8" %} 
 {% include content_blurb.html category="canon" slug="snp4.2" %}
+{% include content_blurb.html category="canon" slug="sn17.2" %}
 </p>
 
 ### Similes
