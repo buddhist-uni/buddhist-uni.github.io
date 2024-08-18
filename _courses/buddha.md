@@ -145,6 +145,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 
 1. [Life] Spreading the Dhamma
 1. [L] The Two Chief Disciples
+1. {% capture foo %}{% include content_blurb.html slug="sn4.18" category="canon" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [L] Anathapindika: Feeder of the Poor
 
 1. [Nidanakatha] The Last Epoch

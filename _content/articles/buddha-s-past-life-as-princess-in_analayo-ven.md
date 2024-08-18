@@ -1,7 +1,7 @@
 ---
 title: "The Buddha's Past Life as a Princess in the Ekottarika-Agama"
 authors:
-  - "Ven. Anālayo"
+  - analayo
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/03/Anaalayo-Buddha-Past-Life.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1_vmmMkzRDl8L7fYrcf87REB1eFJ-BX3t/view?usp=drivesdk"
