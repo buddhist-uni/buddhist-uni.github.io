@@ -14,4 +14,4 @@ year: 2014
 pages: 1
 ---
 
-> ... as a fragile bridge of reeds by a great flood.
+> ... as a fragile bridge of reeds...

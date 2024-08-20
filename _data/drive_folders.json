@@ -1111,6 +1111,10 @@
   "private": "https://drive.google.com/drive/folders/1140WYDzZcgOEItvJou6KZZqwUYXnZMLB",
   "public": "https://drive.google.com/drive/folders/11pfrxVB_0qpyEIj223_obpVS6opp3R6u"
  },
+ "nursing": {
+  "private": "https://drive.google.com/drive/folders/1s9R5iRnBaFj3J7QljdlMYM39U-KJIBOc",
+  "public": null
+ },
  "nyc": {
   "private": "https://drive.google.com/drive/folders/1Zd8T6gLsusT7md1gF_ysE7U9FPJf5OdZ",
   "public": null
@@ -1597,6 +1601,10 @@
  },
  "tibetan-art": {
   "private": "https://drive.google.com/drive/folders/13WKcKVBpBdXvka7H_htZlH44ADUZIumB",
+  "public": null
+ },
+ "tibetan-diaspora": {
+  "private": "https://drive.google.com/drive/folders/1XCO1aygCIdHaFgbmb8eevEe5ileS94zr",
   "public": null
  },
  "tibetan-language": {
