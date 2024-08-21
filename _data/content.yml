@@ -21,6 +21,7 @@ ttms: 1.1 # tag-tag match score
 tpms: 0.3 # tag-parent match score
 scms: 0.8 # subcat match score
 aams: 0.9 # author-author match score 
+btmm: 0.7 # book-tag match score multiplier
 ccmm: 1.12 # category match multiplier
 scmm: 1.08 # similar category multiplier
 fcmm: 1.2 # featured content multiplier

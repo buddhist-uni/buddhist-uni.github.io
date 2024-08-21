@@ -39,11 +39,14 @@ module Jekyll
           @@content_for_tag[tag] << c
         end
         @@content_for_tag[c['course']] << c if c['course']
+        for tag in getBookTags(v, c)
+            @@content_for_tag[tag] << c
+        end
       end
       puts "Done prefetching"
     end
 
-    def getCandidates(v, include_content)
+    def getCandidates(v, include_content, include_content_book_tags)
       candidates = Set[]
       course = include_content['course']
       tags = include_content['tags']
@@ -53,12 +56,26 @@ module Jekyll
       for tag in tags
         candidates.merge(@@content_for_tag[tag])
       end
+      for tag in include_content_book_tags
+        candidates.merge(@@content_for_tag[tag])
+      end
       if candidates.size <= @@config['candidate_min'] then
         puts "similar_content warning: only found %d likely candidates for %s" % [[candidates.size-1,0].max, include_content['url']]
         return @@content
       else
         return candidates
       end
+    end
+
+    def getBookTags(v, c)
+        if c['from_book']
+            b = v['site.content'].find { |x| x['slug'] == c['from_book'] && ['monographs', 'booklets'].include?(x['category']) }
+            raise "book %s not found" % c['from_book'] if b.nil?
+            b = b.to_liquid.to_h
+            return b['tags']
+        else
+            return []
+        end
     end
 
     def initialize(tag_name, text, tokens)
@@ -97,7 +114,8 @@ module Jekyll
             @similars.push({}, 0)
         end
         include_content = v["include_content"].to_liquid.to_h
-        for candidate in getCandidates(v, include_content)
+        include_content_book_tags = getBookTags(v, include_content)
+        for candidate in getCandidates(v, include_content, include_content_book_tags)
             if candidate['path'] == include_content['path'] then
                 next
             end
@@ -107,6 +125,7 @@ module Jekyll
             if candidate["subcat"] and include_content["subcat"] == candidate["subcat"] then
                 score += @@config["scms"]
             end
+            candidate_book_tags = getBookTags(v, candidate)
             if include_content["course"] then
                 if include_content["course"] == candidate["course"] then
                     score += @@config["ccms"]
@@ -114,15 +133,19 @@ module Jekyll
                     if candidate["tags"].include? include_content["course"] then
                         score += @@config["ctms"]
                     else
-                        ps = @@parents_for_tag[include_content["course"]]
-                        if ps then
-                            if ps.include? candidate["course"] then
-                                score += @@config["tpms"]
-                            else
-                                for p in ps
-                                    if candidate["tags"]&.include? p then
-                                        score += @@config["tpms"]
-                                        break
+                        if candidate_book_tags.include? include_content["course"] then
+                            score += @@config["ctms"] * @@config["btmm"]
+                        else
+                            ps = @@parents_for_tag[include_content["course"]]
+                            if ps then
+                                if ps.include? candidate["course"] then
+                                    score += @@config["tpms"]
+                                else
+                                    for p in ps
+                                        if candidate["tags"]&.include? p then
+                                            score += @@config["tpms"]
+                                            break
+                                        end
                                     end
                                 end
                             end
@@ -134,26 +157,37 @@ module Jekyll
                 denom += @@config["cdms"]
                 if include_content["tags"]&.include? candidate["course"] then
                     score += @@config["ctms"]
+                elsif include_content_book_tags.include? candidate["course"] then
+                    score += @@config["ctms"] * @@config["btmm"]
                 end
             end
             if candidate["tags"]&.size&.nonzero? then
                 denom += candidate["tags"].size * @@config["tdms"]
-                for t in candidate["tags"]
+                denom += candidate_book_tags.size * @@config["tdms"] * @@config["btmm"]
+                candidate_tags = candidate["tags"].map { |t| [t, false]} + candidate_book_tags.map { |t| [t, true] }
+                candidate_tags.each do |t, is_book_tag|
                     ttms = @@config["ttms"]
                     if @@canon_tags.include? t and candidate["category"] == "canon"
                         ttms *= @@config["ctmm"]
                         denom -= @@config["tdms"] * (1.0 - @@config["ctmm"])
+                    elsif is_book_tag
+                        ttms *= @@config["btmm"]
                     end
                     if include_content["tags"].include? t then
                         score += ttms
                     else
-                        if @@parents_for_tag[t] then
+                        if include_content_book_tags.include? t then
+                          score += ttms * @@config["btmm"]
+                        elsif @@parents_for_tag[t] then
                             for p in @@parents_for_tag[t]
                                 if include_content["tags"].include? p then
                                     score += @@config["tpms"]
                                     break
                                 elsif include_content["course"] == p then
                                     score += @@config["tpms"]
+                                    break
+                                elsif include_content_book_tags.include? p then
+                                    score += @@config["tpms"] * @@config["btmm"]
                                     break
                                 end
                             end
