@@ -139,6 +139,19 @@
 
   </div>
 
+{%- if site.goatcounter -%}
+  <script
+    data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+    data-goatcounter-settings='{"allow_frame": true, "title": "{{ page.title | replace: '"', '\\"' }}"}'
+    async src="//gc.zgo.at/count.js">
+  </script>
+  <noscript>
+    <img src="https://{{ site.goatcounter }}.goatcounter.com/count?p=/{{ page.url }}&t={{ page.title | url_encode }}">
+  </noscript>
+  <script async src="/assets/js/goatclicker.js">
+  </script>
+{%- endif -%}
+
 </footer>
 </body>
 </html>

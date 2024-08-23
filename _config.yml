@@ -22,10 +22,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buddhistuniversity.net" # the base hostname & protocol for your site, e.g. http://example.com
 GA4: G-B3PH0LF6QQ
+goatcounter: buddhistuni
 github_repo:  buddhist-uni/buddhist-uni.github.io
 github_branch: main
 substack_username: buddhistuniversity
-twitter_username_HIDDEN: buddhistuni
+twitter_username: buddhistuni
 mastodon_link: https://digipres.club/@obu
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]
 timezone: "Asia/Bangkok"
