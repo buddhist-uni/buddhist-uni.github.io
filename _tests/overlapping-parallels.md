@@ -80,7 +80,7 @@ So far, suttas have been added and deduped from:
   - The many wheel publications containing whole sutta translations
 
 Anthologies yet to be processed:
-  - Ajahn Geoff's *Noble Conversation*
+  - Ajahn Geoff's *Noble Conversation* and *Sublime Attitudes*
   - Sarah Shaw's *Buddhist Meditation* 
   - along with Jason Espada's anthology
   - Bhikkhu Bodhi's selections in the Sutta tag

@@ -291,6 +291,11 @@ While not representative of the diversity within each of the following "national
 {% include content_blurb.html category="av" slug="drums-and-bells_qing-de" %}
 - A monk at a lonely temple, deep in the mountains of Taiwan, says goodnight with drum and bell.
 
+{% include content_blurb.html category="articles" slug="faxians-worship-of-guanshiyin_hinuber-haiyan-hu-von" %}
+- Buddhism was brought to China by intrepid pilgrims like Fa-hsien, who faced many dangers in bringing back texts and images from India.
+- This small excerpt from his travel diary shows how he prayed to Kuan-yin Bodhisattva on two harrowing occasions at sea.
+- Guanyin would become especially popular as a protector deity in subsequent centuries.
+
 {% include content_blurb.html category="av" slug="buddhism-in-china" %}
 - A very brief overview of the history of Chinese Buddhism.
 

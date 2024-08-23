@@ -179,6 +179,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [E] The Buddha's Style of Teaching
 
 1. [R] Anuttaro purisa-damma-sārathi 
+1. {% capture foo %}{% include content_blurb.html category="canon" slug="sn22.58" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [L] The Person
 1. {% capture foo %}{% include inline_content.html category="canon" slug="mn91" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% include inline_content.html category="essays" slug="buddha-was-bald_mazard" %}

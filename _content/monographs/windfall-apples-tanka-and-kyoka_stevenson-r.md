@@ -2,6 +2,7 @@
 title: "Windfall Apples: Tanka and Kyoka"
 authors:
   - "Richard Stevenson"
+subcat: poetry
 external_url: "https://www.aupress.ca/app/uploads/120171_99Z_Stevenson_2010-Windfall_Apples.pdf"
 source_url: "https://doi.org/10.15215/aupress/9781897425886.01"
 drive_links:
