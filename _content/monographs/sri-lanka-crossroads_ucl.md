@@ -3,7 +3,7 @@ title: "Sri Lanka at the Crossroads of History"
 authors:
   - "Zoltán Biedermann"
   - "Alan Strathern"
-source_url: "https://www.uclpress.co.uk/collections/work-55193/products/86201"
+source_url: "https://doi.org/10.14324/111.9781911307822"
 external_url: "https://discovery.ucl.ac.uk/1557938/1/Sri-Lanka-at-the-Crossroads-of-History.pdf"
 tags:
   - sri-lanka

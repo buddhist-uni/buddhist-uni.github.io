@@ -2,9 +2,9 @@
 title: "On Translating from Pāli"
 authors:
   - norman
-source_url: "https://pdfslide.net/documents/k-r-norman-on-translating-from-pali-optimized-55c098ee46b5c.html"
+external_url: "https://archive.org/download/on-translating-from-pali-kr-norman/On%20Translating%20from%20Pali%20-%20KR%20Norman_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14ViUgdqQ3k6n-hbDxcb4WKuLQqn6GNWl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CfQadq_uL7p2AxDUKcCjvvdFzI3dWgZp/view?usp=drivesdk"
 course: pali-language
 tags:
   - translation

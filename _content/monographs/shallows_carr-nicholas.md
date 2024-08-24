@@ -10,6 +10,7 @@ tags:
 year: 2010
 olid: OL25098860M
 oclc: 449865498
+external_url: "https://archive.org/details/shallowshowinter0000nich/mode/1up"
 publisher: "W. W. Norton"
 address: "New York"
 pages: 229

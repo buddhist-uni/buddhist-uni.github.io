@@ -4,7 +4,6 @@ authors:
   - "John Lam"
 year: 2021
 month: jul
-source_url: "https://video.vice.com/en_nz/video/why-gay-monks-have-to-hide-their-sexual-orientation-in-thailand/60c8c09270122050f40798f1"
 external_url: "https://youtu.be/bcrFn3nDDKU"
 course: monastic-theravada
 tags:

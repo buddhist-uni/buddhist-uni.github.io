@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1uC65Hr0I9VhiqHK16goZL0O9HMA6GyMh/view?usp=drivesdk"
 course: jataka # solidly. Almost featured
 tags:
-  - sects
+  - indian
 year: 2012
 month: mar
 journal: aririab

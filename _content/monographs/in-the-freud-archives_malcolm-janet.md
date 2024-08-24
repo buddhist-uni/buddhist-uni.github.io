@@ -2,7 +2,7 @@
 title: "In the Freud Archives"
 authors:
   - "Janet Malcolm"
-external_url: "https://archive.org/details/infreudarchives00malc/page/n4/mode/1up"
+external_url: "https://archive.org/details/infreudarchives00malc/mode/1up"
 course: academia
 tags:
   - psychotherapy

@@ -2,7 +2,7 @@
 title: "Comprehensive Guide for First Aid and CPR"
 authors:
   - "The Canadian Red Cross"
-external_url: "https://www.redcross.ca/crc/documents/comprehensive_guide_for_firstaidcpr_en.pdf"
+external_url: "https://web.archive.org/web/20240514072844if_/https://www.redcross.ca/crc/documents/comprehensive_guide_for_firstaidcpr_en.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1QILETNGFccWogAmewRAZ8LdvPxUDwR-_/view?usp=drivesdk"
 course: body
