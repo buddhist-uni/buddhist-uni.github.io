@@ -40,7 +40,7 @@ def headerize(text, depth):
   if depth <= 4:
     return f"<h{depth}>{text}</h{depth}>"
   if depth <= 6:
-    return f'<h{depth} style="font-size=11pt;">{text}</h{depth}>'
+    return f'<h{depth}><span style="font-size=11pt;">{text}</span></h{depth}>'
   space = "&nbsp;&nbsp;"*(depth-1)
   return f"<p>{space}+ {text}</p>"
 
@@ -53,7 +53,7 @@ class DriveFolder:
     seen_folders.add(folderid)
     print(f"Loading folder \"{name}\"...")
     self.name = name
-    self.id = id
+    self.id = folderid
     self.createdTime = createdTime
     self.depth = depth
     self.files = []
