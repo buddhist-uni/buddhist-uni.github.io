@@ -3,7 +3,7 @@
 import os.path
 from pathlib import Path
 import requests
-import struct
+import socket
 from math import floor
 from io import BytesIO, BufferedIOBase
 from strutils import (
@@ -21,7 +21,6 @@ from strutils import (
 import pdfutils
 import json
 import re
-import shutil
 from functools import cache
 from archivedotorg import archive_urls
 try:
@@ -137,11 +136,16 @@ def google_credentials():
 
 @cache
 def session():
+    socket.setdefaulttimeout(300) # some of our uploads take a while...
     return build('drive', 'v3', credentials=google_credentials())
 
 @cache
 def youtube():
     return build('youtube', 'v3', credentials=google_credentials())
+
+@cache
+def docs():
+  return build('docs', 'v1', credentials=google_credentials()).documents()
 
 def get_ytvideo_snippets(ytids):
   snippets = []
@@ -204,7 +208,7 @@ def string_to_media(s, mimeType):
     resumable=True,
   )
 
-def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None):
+def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None, replace_doc=False):
   if bool(html) == bool(rtf):
     raise ValueError("Please specify either rtf OR html.")
   drive_service = session()
@@ -224,7 +228,7 @@ def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None,
     media = string_to_media(html, 'text/html')
   if rtf:
     media = string_to_media(rtf, 'application/rtf')
-  return _perform_upload(metadata, media, verbose=False)
+  return _perform_upload(metadata, media, verbose=False, update_file=replace_doc)
 
 def get_file_contents(fileid, verbose=True):
   """Downloads and returns the contents of fileid in a BytesIO buffer"""
@@ -266,11 +270,15 @@ def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=Non
     media = MediaFileUpload(file_path, resumable=True)
     return _perform_upload(file_metadata, media, verbose=verbose)
 
-def _perform_upload(file_metadata, media, verbose=True):
+def _perform_upload(file_metadata, media, verbose=True, update_file=False):
     drive_service = session()
     try:
         # Upload the file
-        request = drive_service.files().create(body=file_metadata, media_body=media)
+        request = None
+        if update_file:
+          request = drive_service.files().update(fileId=update_file, body=file_metadata, media_body=media)
+        else:
+          request = drive_service.files().create(body=file_metadata, media_body=media)
         response = None
         while response is None:
             status, response = request.next_chunk()

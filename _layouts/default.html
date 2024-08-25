@@ -84,6 +84,9 @@
 </head>
 <body>
 <a class="skip-to-main" href="#main">Skip to content</a>
+<noscript>
+  <img src="https://{{ site.goatcounter }}.goatcounter.com/count?p=/{{ page.url }}&t={{ page.title | url_encode }}">
+</noscript>
 
 <header class="site-header{% if page.banner_info %} banner-img{% if page.next_courses %} fullsize{% elsif site.header_pages contains page.path %} smallsize{% endif %}{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}" role="banner">
   <div class="wrapper"{% if page.banner_info %} style="backdrop-filter: blur(0.3px);"{% endif %}>
@@ -145,9 +148,6 @@
     data-goatcounter-settings='{"allow_frame": true, "title": "{{ page.title | replace: '"', '\\"' }}"}'
     async src="//gc.zgo.at/count.js">
   </script>
-  <noscript>
-    <img src="https://{{ site.goatcounter }}.goatcounter.com/count?p=/{{ page.url }}&t={{ page.title | url_encode }}">
-  </noscript>
   <script async src="/assets/js/goatclicker.js">
   </script>
 {%- endif -%}

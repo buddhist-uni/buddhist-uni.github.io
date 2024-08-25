@@ -1,0 +1,19 @@
+name: GDrive Cataloguer
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 0 24 * *"
+jobs:
+  gdrive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Code
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: |
+          pip install titlecase pyyaml pypdf tqdm yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api
+          printf '${{ secrets.GTOKEN }}' > ~/gtoken.json
+          printf '${{ secrets.LIBRARY_UTILS_CLIENT_SECRET }}' > ~/library-utils-client-secret.json
+          printf "${{ secrets.ARCHIVE_ORG_AUTH }}" > ~/archive.org.auth
+      - name: Run Cataloguer
+        run: python scripts/refresh_catalog_doc.py
