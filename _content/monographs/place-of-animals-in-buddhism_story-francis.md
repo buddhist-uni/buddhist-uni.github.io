@@ -7,10 +7,11 @@ drive_links:
 course: animals
 tags:
   - karma
-  - rebirth
 month: 1964
 publisher: bps
 address: "Kandy"
+series: "Bodhi Leaves"  
+number: 23
 pages: 18
 ---
 
