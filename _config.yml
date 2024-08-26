@@ -94,7 +94,7 @@ collections:
      output: true
      permalink: /:collection/:path
   content:
-     output: true
+     output: false
      permalink: /:collection/:path
   series:
      output: true
@@ -425,7 +425,7 @@ defaults:
         type: "content"
     values:
         formats: [pdf, epub]
-        layout: "content"
+        layout: "nil"
         base_value: 0.35
         course_time_multiplier: 1.0
         section: "library"

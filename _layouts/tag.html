@@ -68,52 +68,45 @@ Please be aware that this tag is still under construction and as such is missing
   <div class="post-content">
 {% capture content_list %}
 {% assign all_content = site.content | where_exp: "c", "c.status != 'rejected'" %}
-{% assign categories = site.data.content_categories %}
-{% if page.is_canon %}
-  {% assign categories = categories | where_exp: "c", "c != 'canon'" | push: "canon" %}
-{% endif %}
-{% if page.is_reference %}
-  {% assign categories = categories | where_exp: "c", "c != 'reference'" | unshift: "reference" %}
-{% endif %}
 {% capture filter_exp %}c.tags contains '{{ page.slug }}'{% endcapture %}
 {% assign all_series = site.series | where_exp: "c", filter_exp | sort: "title" %}
 {% assign all_course_content = all_content | where: "course", page.slug %}
 {% assign all_tag_content = all_content | where_exp: "c", filter_exp %}
-{% for catentry in categories %}
-  {% assign category = site.categories | where: "slug", catentry %}
-  {% if category.size == 1 %}
-    {% assign category = category | first %}
-    {% assign catslug = catentry %}
-    {% assign course_content = all_course_content | where: "category", catslug %}
-    {% assign tag_content = all_tag_content | where: "category", catslug %}
-    {% assign series_content = all_series | where: "category", catslug %}
-  {% else %}
-    {% assign catslug = catentry.title | slugify %}
-    {% assign category = catentry %}
-    {% assign course_content = '' | split: '' %}
-    {% assign tag_content = '' | split: '' %}
-    {% assign series_content = '' | split: '' %}
-    {% for catsub in category.subs %}
-      {% assign tag_content = all_tag_content | where: "category", catsub | concat: tag_content %}
-      {% assign course_content = all_course_content | where: "category", catsub | concat: course_content %}
-      {% assign series_content = all_series | where: "category", catsub | concat: series_content %}
-    {% endfor %}
+{% assign tag_content_by_course = all_tag_content | group_by: "course" %}
+{% assign all_course_content = all_course_content | group_by_first_tag: page.slug %}
+{% assign all_tag_content = '' | split: '' %}
+{% for course in tag_content_by_course %}
+  {% if course['name'] == page.slug %}
+    {% assign all_course_content = all_course_content | concat: course['items'] %}
+    {% continue %}
   {% endif %}
+  {% assign tag = site.tags | find: "slug", course['name'] %}
+  {% unless tag %}
+    {% assign all_tag_content = all_tag_content | concat: course['items'] %}
+  {% endunless %}
+{% endfor %}
+{% assign all_tag_content = all_tag_content | group_by_first_tag: page.slug %}
+{% assign all_series = all_series | group_by_first_tag: page.slug %}
+
+<h3 id="by_topic">{{ page.title }} ...</h3>
+{% for tag in site.tags %}
+  {% assign course_content = all_course_content | items_for_group: tag.slug %}
+  {% assign tag_content = all_tag_content | items_for_group: tag.slug %}
+  {% assign tag_content = tag_content_by_course | items_for_group: tag.slug | concat: tag_content %}
+  {% assign series_content = all_series | items_for_group: tag.slug %}
   {% assign tag_content = tag_content | sort: "slug" | reverse | sort: "expected_value" | reverse | concat: series_content %}
-  {% assign count = course_content.size | plus: tag_content.size %}
-  {% if count > 0 %}
-  <h3 id="{{ catslug }}">{% if page.is_canon and catslug == "canon" %}In the Library{% assign tag_content = tag_content | sort: "slug" %}{% else %}{{ category.title }}{% endif %} ({{ count }})</h3>
-  {% if course_content.size > 0 %}
-    {% if tag_content.size > 0 %}<p>Featured:</p>{% endif %}
-    {% include featured_content_list.html contents=course_content %}
-  {% endif %}{% if tag_content.size > 0 %}
-  {% if course_content.size > 0 %}<p>See also:</p>{% endif %}<div class="tagged_content">
+  {% if course_content.size > 0 or tag_content.size > 0 %}
+  <h4 id="{{ tag.slug }}">... and {{ tag.title }}</h4>
+  {% include featured_content_list.html contents=course_content %}
+  {% if tag_content.size > 0 %}
+  <div class="tagged_content">
   {% for c in tag_content %}
     <div class="mb-3 inline_content">{% case c.stars %}{% when 5 %}<i class="fas fa-medal"></i>{% when 4 %}<i class="fas fa-star"></i>{% endcase %}{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>
   {% endfor %}
   </div>
   {% endif %}<p class="back"><a href="#top"><em>Back to the top</em>&#x2934;</a></p>{% endif %}
 {% endfor %}
+
 
 <div class="subtopics"><h3 id="topics">Related Topics ({{ parents.size | plus: children.size }})</h3>
 {% if parents.size > 0 %}
@@ -136,7 +129,7 @@ Please be aware that this tag is still under construction and as such is missing
 </div>
 {% endcapture %}
    <h2 id="top" class="toc_header">Table of Contents</h2>
-    {% include toc.html html=content_list h_min=3 h_max=3 id="toc" class="tag_toc" %}
+    {% include toc.html html=content_list h_min=3 h_max=4 id="toc" class="tag_toc" %}
     {{ content_list }}
   </div>
 <em class="back">Back to <a href="/tags">the Topic Index</a></em>
