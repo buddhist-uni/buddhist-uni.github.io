@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1mTl4bPNEzjFNQwdWCQBOdHdwgfoFYByI/view?usp=drivesdk"
 course: theravada
 tags:
-  - chatacters
+  - characters
   - thag
 year: 2020
 pages: 1

@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "50 0 24 * *"
 jobs:
-  gdrive:
+  catalog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Code
