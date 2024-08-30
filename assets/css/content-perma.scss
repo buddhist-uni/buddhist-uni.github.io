@@ -37,9 +37,12 @@ article.content-perma .pub_desc {
     font-size: 105%;
 }
 
-article.content-perma table.metadata {
+#metadata {
     font-size: 89%;
     margin-top: 18px;
+    td:nth-child(2)>span {
+        font-family: system-ui, sans;
+    }
 }
 
 details.bibtex .highlight {

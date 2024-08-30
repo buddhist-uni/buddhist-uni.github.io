@@ -97,7 +97,7 @@ layout: default
     </i></p>
  
   {% if site.show_bibtex %}
-    <details class="details-reset bibtex" ontoggle="deetstoggler();">
+    <details class="details-reset bibtex">
       <summary class="btn">Bibtex Data <span class="dropdown-caret"></span></summary>
       <div>
 {% capture bibtex %}{% include content.bibtex.liquid content=page %}{% endcapture %}
@@ -113,11 +113,32 @@ cb.on('error', function(e){showTooltip(e.trigger,'Error');});
 function clearTooltip(){this.setAttribute('class','btn copybutton');this.removeAttribute('aria-label');}
 function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltipped tooltipped-n');elem.setAttribute('aria-label',msg); setTimeout(clearTooltip.bind(elem), 4000);}
       </script>
-      <table class="metadata"><tbody>{% if site.show_timestamps %}
-        <tr><td>Added</td><td><span style="font-family: system-ui, sans;">{{ page.date | date_to_rfc822 }}</span></td></tr>
-        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span style="font-family: system-ui, sans;">{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}{% endif %}
-        <tr><td>Sorting Value</td><td><span style="font-family: system-ui, sans;">{{ page.expected_value }}</span></td></tr>
+      <table id="metadata"><tbody>{% if site.show_timestamps %}
+        <tr><td>Added</td><td><span>{{ page.date | date_to_rfc822 }}</span></td></tr>
+        {% if page.last_modified_at > page.date %}<tr><td>Updated</td><td><span>{{ page.last_modified_at | date_to_rfc822 }}</span></td></tr>{% endif %}{% endif %}
+        <tr><td>Sorting Value</td><td><span>{{ page.expected_value }}</span></td></tr>
       </tbody></table>
+      <script type="module">
+        function addDownloadCountRow(download_count) {
+          const table = document.getElementById("metadata");
+          const dcRow = table.insertRow();
+          const labelCell = dcRow.insertCell(0);
+          labelCell.appendChild(document.createTextNode("Download Count"));
+          const valueCell = dcRow.insertCell(1);
+          const value = document.createTextNode(download_count.toString());
+          const valueSpan = document.createElement('span');
+          valueSpan.appendChild(value);
+          valueCell.appendChild(valueSpan);
+        }
+        const download_count_resp = await fetch("https://buddhistuniversity.net/analytics/content/{{ page.content_path }}.download_count");
+        var download_count = 0;
+        if (download_count_resp.ok) {
+          download_count = await download_count_resp.text();
+          download_count = Number.parseInt(download_count);
+        }
+        download_count++;
+        addDownloadCountRow(download_count);
+      </script>
       <span><a href="https://github.com/{{ site.github_repo }}/blob/{{ site.github_branch }}/{{ page.path }}">View this entry's source code on GitHub</a></span>
       </div>
     </details>{% endif %}
