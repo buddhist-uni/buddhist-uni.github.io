@@ -1,5 +1,5 @@
 ---
-title: "The Legal Consequences of *pārājika*"
+title: "The Legal Consequences of *Pārājika*"
 authors:
   - analayo
 editor: "Iromi Ariyaratne"
@@ -21,3 +21,5 @@ pages: "2--22"
 Instead, the latter only involves an institutionalization of an option already available earlier, namely to continue to live at a monastery in robes but without all the privileges that come with full ordination.
 
 A clarification of a misunderstanding in Shayne Clarke's earlier presentation of the *śikṣādattaka* "repentance."
+
+See also Bhante's follow up paper, [*Pārājika Does Not Necessarily Entail Expulsion*](https://archive.org/download/aririab-vol-xxii/P%C4%81r%C4%81jika%20Does%20Not%20Necessarily%20Entail%20Expulsion.pdf), where he clarifies his position and responds to some critiques of this paper.

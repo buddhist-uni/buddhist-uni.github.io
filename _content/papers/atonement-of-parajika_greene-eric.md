@@ -20,3 +20,5 @@ tags:
 ---
 
 How the *śikṣādattaka* observance gradually mixed with emerging Mahāyāna repentance ceremonies to produce a ritual for the atonement of Pārājika offenses in medieval China.
+
+For Venerable Analayo's thoughts on how the *śikṣādattaka* emerged from earlier Vinaya practices, see [*Pārājika Does Not Necessarily Entail Expulsion*](https://archive.org/download/aririab-vol-xxii/P%C4%81r%C4%81jika%20Does%20Not%20Necessarily%20Entail%20Expulsion.pdf).
