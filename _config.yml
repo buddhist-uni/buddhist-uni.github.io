@@ -33,6 +33,7 @@ timezone: "Asia/Bangkok"
 doi: "10.5281/zenodo.4448510"
 
 # Build settings
+font_service: "cloudflare" # or "google" (change here before changing on CF)
 markdown: kramdown
 sass:
   load_paths:

@@ -5,14 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <!-- The Google Font async wizardry below is courtesy of: https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  {%- assign gfont = "https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Noto+Serif+TC&family=Noto+Serif+JP&family=Noto+Color+Emoji&family=Noto+Serif+Thai&display=swap" -%}
-  <link rel="preload" as="style" href="{{ gfont }}" />
-  <link rel="stylesheet" href="{{ gfont }}" media="print" onload="this.media='all'" />
-  <noscript>
+  {%- assign gfont = "https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Noto+Serif+TC&family=Noto+Serif+JP&family=Noto+Color+Emoji&family=Noto+Serif+Thai" -%}
+  {%- if site.font_service == "cloudflare" and jekyll.environment == 'production' -%}
     <link rel="stylesheet" href="{{ gfont }}" />
-  </noscript>
+  {%- else -%}
+    <!-- The Google Font async wizardry below is courtesy of: https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="{{ gfont }}&display=swap" />
+    <link rel="stylesheet" href="{{ gfont }}&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="{{ gfont }}" />
+    </noscript>
+  {%- endif -%}
   <link rel="stylesheet" href="/assets/css/{%- if jekyll.environment == 'production' and site.usepurgedcss -%}purged-{%- endif -%}main.css?u={{ site.data.cssCacheToken }}">
   {% for cc in page.custom_css %}
   <link rel="stylesheet" href="/assets/css/{{cc}}.css?u={{ site.data.cssCacheToken }}">{% endfor %}
@@ -47,22 +51,34 @@
   {%- if jekyll.environment == 'production' -%}
     <script>
       window.WEBSITE_SECTION = '{{ page.section }}';
-      if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
       function mkscrpt(g,i,o,a,m,s){i=window;s=document;o='script';a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);}
-      mkscrpt('https://www.googletagmanager.com/gtag/js?id={{ site.GA4 }}');
-      mkscrpt('/assets/js/buggytrack.js');
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ site.GA4 }}', {
-        'pixel_ratio':Math.round(window.devicePixelRatio*10)/10,
-        'viewport_width':window.innerWidth,
-        'viewport_height':window.innerHeight,
-        'currency':'USD',
-        'content_group':'{{ page.section }}'
-      });
-    }
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);return a;}
+      {%- if site.goatcounter -%}
+        const goatcounterelem = mkscrpt("//gc.zgo.at/count.js");
+        goatcounterelem.setAttribute(
+          'data-goatcounter',
+          "https://{{ site.goatcounter }}.goatcounter.com/count"
+        );
+        goatcounterelem.setAttribute(
+          'data-goatcounter-settings',
+          '{"allow_frame": true, "title": "{{ page.title | escape }}"}',
+        );
+        mkscrpt('/assets/js/goatclicker.js');
+      {% endif %}
+      if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
+        mkscrpt('https://www.googletagmanager.com/gtag/js?id={{ site.GA4 }}');
+        mkscrpt('/assets/js/buggytrack.js');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.GA4 }}', {
+          'pixel_ratio':Math.round(window.devicePixelRatio*10)/10,
+          'viewport_width':window.innerWidth,
+          'viewport_height':window.innerHeight,
+          'currency':'USD',
+          'content_group':'{{ page.section }}'
+        });
+      }
     </script>
   {%- endif -%}{%- if page.banner_info or page.footer_info -%}
   {%- capture infobutton -%}<details class="banner-info details-reset"><summary><i class="fab fa-creative-commons" aria-hidden="true" title="Click me to see this picture's copyright information."></i></summary><div>Photo by {{ page.banner_info | default: page.footer_info }}</div></details>{%- endcapture -%}
@@ -108,12 +124,9 @@
 
 <footer class="site-footer h-card{% if page.footer_info %} footer-img{% if page.image_center_y %}" style="background-position-y: {{ page.image_center_y }};{% if page.image_center_x %} background-position-x: {{ page.image_center_x }};{% endif %}{% endif %}{% endif %}">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
   {%- if page.footer_info -%}{{ infobutton }}{%- endif -%}
   <div class="wrapper">
-
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">{% comment %}classname used by buggytrack.js{% endcomment %}
@@ -138,17 +151,7 @@
         <p>{{- site.description | escape -}}</p>
       </div>
     </div>
-
   </div>
 </footer>
-{%- if site.goatcounter -%}
-  <script
-    data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
-    data-goatcounter-settings='{"allow_frame": true, "title": "{{ page.title | escape }}"}'
-    async src="//gc.zgo.at/count.js">
-  </script>
-  <script async src="/assets/js/goatclicker.js">
-  </script>
-{%- endif -%}
 </body>
 </html>
