@@ -7,7 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1Ehm6EfL6hI_R2VsnkRM9zuFoa3Ce_IXL/view?usp=sharing"
 course: animals
 tags:
-  - ethics
+  - literature
+  - cosmology
   - tibetan
 year: 2022
 journal: jbe 
