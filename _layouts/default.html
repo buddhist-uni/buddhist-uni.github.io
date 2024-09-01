@@ -53,18 +53,6 @@
       window.WEBSITE_SECTION = '{{ page.section }}';
       function mkscrpt(g,i,o,a,m,s){i=window;s=document;o='script';a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);return a;}
-      {%- if site.goatcounter -%}
-        const goatcounterelem = mkscrpt("//gc.zgo.at/count.js");
-        goatcounterelem.setAttribute(
-          'data-goatcounter',
-          "https://{{ site.goatcounter }}.goatcounter.com/count"
-        );
-        goatcounterelem.setAttribute(
-          'data-goatcounter-settings',
-          '{"allow_frame": true, "title": "{{ page.title | escape }}"}',
-        );
-        mkscrpt('/assets/js/goatclicker.js');
-      {% endif %}
       if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1" || localStorage.getItem("doNotTrack") == "1") || localStorage.getItem('TRACK') == "1") {
         mkscrpt('https://www.googletagmanager.com/gtag/js?id={{ site.GA4 }}');
         mkscrpt('/assets/js/buggytrack.js');
