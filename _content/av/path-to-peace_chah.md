@@ -12,7 +12,7 @@ tags:
   - ethics
   - sati
 year: 2012
-minutes: 
+minutes: 52
 ---
 
 > However, if you simply practice with the mind, neglecting body and speech, that won't work either.

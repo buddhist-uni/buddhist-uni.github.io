@@ -15,6 +15,7 @@ tags:
   - pali-dictionaries
   - vinaya-studies
 base_value: 2
+pages: 250
 ---
 
 A dictionary of the Pāli vocabulary found in the *Vinaya Piṭaka*.

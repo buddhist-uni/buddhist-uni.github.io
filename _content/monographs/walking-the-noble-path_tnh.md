@@ -7,6 +7,7 @@ publisher: parallax
 tags:
   - ethics
   - vietnamese
+pages: 13
 ---
 
 A very short booklet on the five precepts.

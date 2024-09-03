@@ -5,6 +5,7 @@ year: 2023
 external_url: "https://labs.buddhistuniversity.net/jambudipa_map"
 source_url: "https://discourse.suttacentral.net/t/is-there-a-nice-literary-map-of-early-buddhism/27301/114?u=khemarato.bhikkhu"
 course: setting
+pages: 1
 tags:
   - ebts
   - pali-canon

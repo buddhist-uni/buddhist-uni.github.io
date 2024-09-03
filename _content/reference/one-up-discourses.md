@@ -1,6 +1,6 @@
 ---
 title: "The One-up Discourses of the Buddha"
-external_url: "https://sites.google.com/site/ekottara/home"
+external_url: "https://web.archive.org/web/20220528080252/https://sites.google.com/site/ekottara/home"
 tags:
   - ea
 authors: [sujato]

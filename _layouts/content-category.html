@@ -12,10 +12,114 @@ layout: default
 
   <div class="post-content">
     {{ content }}
-    {% assign category = site.content | where: "category", page.slug %}
-    {% include content_list.html contents=category keep_rejects="true" orderby="slug" %}
+    {% assign contents = site.content | where: "category", page.slug | sort: "slug" | reverse | sort: "expected_value", "first" | reverse %}
+    <table id="mainContentList">
+      <thead>
+        <th>Name</th>
+        <th>Formats</th>
+        <th>Year</th>
+        <th>Author(s)</th>
+        <th>Main Topic</th>
+        <th>Date Added</th>
+        <th>Size</th>
+        <th><i class="fas fa-cloud-arrow-down"></i><span style="display: none">Downloads</span></th>
+      </thead>
+      <tbody>
+        {% for p in contents %}
+          <tr id="{{ p.slug }}">
+            <td><a href="{{ p.url }}">{% include_cached content_icon.html category=page.slug subcat=p.subcat %} {{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></td>
+            <td>{% include content_filelinks.html content=p newtab=true %}</td>
+            <td>{{ p.year }}</td>
+            <td>{%- if p.authors.size > 0 -%}
+              {% include_cached content_authors_string.html content=p %}
+            {%- elsif p.editor -%}
+              {% assign editors = p.editor | split: " and " %}
+              {% include_cached content_authors_string.html authors=editors %}
+            {%- elsif p.reader -%}
+              {% assign readers = p.reader | split: " and " %}
+              {% include_cached content_authors_string.html authors=readers %}
+            {%- elsif p.translator -%}
+              {% assign translators = p.translator | split: " and " %}
+              {% include_cached content_authors_string.html authors=translators %}
+            {%- endif -%}
+            </td>
+            {%- assign primarytag = false -%}
+            {% assign ret = -1 %}
+            {% if p.course %}
+              {% assign primarytag = site.tags | find: "slug", p.course %}
+              {% if primarytag %}
+                {% include tag_ordinality.liquid tag=primarytag %}
+              {% endif %}
+            {% endif %}
+            {% unless primarytag %}
+              {% for candidatetag in site.tags %}
+                {% if p.tags contains candidatetag.slug %}
+                  {% assign ret = forloop.index %}
+                  {% assign primarytag = candidatetag %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {%- endunless -%}
+            {% if ret <= -1 %}
+              {% assign ret = 9999 %}
+            {% endif %}
+            <td data-order="{{ ret }}">
+              {% if primarytag %}
+                {{ primarytag.title }}
+              {% endif %}
+            </td>
+            <td>
+              {{ p.date | date: "%Y-%m-%d %H:%M" }}
+            </td>
+            <td data-order="{{ p.total_mins }}">
+              {% if p.page_count %}
+                {{ p.page_count }} Pages
+              {% elsif p.minutes %}
+                {{ p.minutes }} Mins
+              {% else %}
+                -
+              {% endif %}
+            </td>
+            <td>
+              {{ site.data.content_downloads[p.content_path] | default: 0 | plus: 1 }}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
 </article>
 
-
+<link rel="stylesheet" href="/assets/css/dataTables.dataTables.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" />
+<style>
+  #main {max-width: revert;}
+</style>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.colVis.min.js"></script>
+<script>
+  const initialwindowwidth = $(window).width();
+  const mainContentList = new DataTable("#mainContentList", {
+    "order": [], // Don't sort until asked to
+    "layout": {
+        "topStart": {
+            "buttons": ["colvis"]
+        }
+    },
+    "columnDefs": [
+      { "targets": [1], "visible": initialwindowwidth > 550},
+      { "targets": [2], "width": "70px", "visible": initialwindowwidth > 475}, 
+      { "targets": [4], "visible": initialwindowwidth > 700},
+      { "targets": [5], "visible": initialwindowwidth > 790},
+      { "targets": [6], "visible": initialwindowwidth > 850},
+      { "targets": [7], "visible": initialwindowwidth > 820}
+    ]
+  });
+</script>

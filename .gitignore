@@ -5,6 +5,9 @@ exports
 assets/webfonts
 assets/imgs/covers/
 assets/css/purged-main.css
+assets/css/dataTables*
+assets/js/dataTables*
+assets/js/jquery*
 _data/cssCacheToken.yml
 _data/content_downloads.json
 _drafts/_content

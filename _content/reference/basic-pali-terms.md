@@ -3,6 +3,7 @@ title: "Basic Pāli Terminology"
 external_url: "https://www.accesstoinsight.org/glossary.html"
 course: pali-canon
 year: 2000
+pages: 17
 tags:
   - pali-language
   - theravada
