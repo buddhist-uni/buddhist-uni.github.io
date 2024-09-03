@@ -1,14 +1,14 @@
 {
   "name": "buddhist-uni.github.io",
-  "version": "2.3",
+  "version": "2.8",
   "description": "A digital library for Buddhist scholars.",
   "repository": "buddhist-uni/buddhist-uni.github.io",
   "license": "MIT",
   "bugs": "https://github.com/buddhist-uni/buddhist-uni.github.io/issues",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.4",
-    "@primer/css": "^20.2",
-    "purgecss": "^5.0"
+    "@fortawesome/fontawesome-free": "^6.6",
+    "@primer/css": "^20.8",
+    "purgecss": "^6.0"
   },
   "scripts": {}
 }
