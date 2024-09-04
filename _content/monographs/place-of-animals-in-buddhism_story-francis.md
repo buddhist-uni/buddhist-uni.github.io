@@ -15,4 +15,4 @@ number: 23
 pages: 18
 ---
 
-This brief reflection by Francis Story (Anāgārika Sugatānanda) explores whether animals are capable of ethical behavior and, if they lack this ability, how they progress toward liberation. Drawing on the ideas of 19th-century naturalist John Arthur Thomson, Story suggests that animals primarily repay karmic debts by following their inherent nature. Additionally, through interactions with humans, they have opportunities to learn and be exposed to higher behaviors.
+This brief reflection by Francis Story (Anāgārika Sugatānanda) explores whether animals are capable of ethical behavior and, if they lack this ability, how they progress toward liberation. Drawing on the ideas of 19th-century naturalist John Arthur Thomson, Story suggests that animals primarily repay karmic debts by following their inherent nature. Additionally, through interactions with humans, they have opportunities to learn and be exposed to higher behaviors. 
