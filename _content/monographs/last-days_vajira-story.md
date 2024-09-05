@@ -2,7 +2,7 @@
 title: "Last Days of the Buddha: The Mahāparinibbāna Sutta"
 authors:
   - "Sister Vajirā"
-  - "Francis Story"
+  - story-francis
 year: 1964
 olid: OL2007042M
 external_url: "https://www.bps.lk/olib/bp/bp213s_Vajira_Story_Last-Days-Of-The-Buddha.pdf"

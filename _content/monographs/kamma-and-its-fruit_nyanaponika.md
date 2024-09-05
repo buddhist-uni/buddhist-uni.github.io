@@ -2,7 +2,7 @@
 title: "Kamma and Its Fruit"
 authors:
   - nyanaponika
-  - "Francis Story"
+  - story-francis
   - "Bhikkhu Ñāṇajīvako"
   - gorkom
   - "Leonard A. Bullen"
