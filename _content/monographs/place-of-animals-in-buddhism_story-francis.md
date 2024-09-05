@@ -8,7 +8,7 @@ drive_links:
 course: animals
 tags:
   - karma
-month: 1964
+year: 1964
 publisher: bps
 address: "Kandy"
 series: "Bodhi Leaves"  
