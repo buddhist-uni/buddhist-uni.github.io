@@ -5,6 +5,7 @@ authors:
 course: books
 tags:
   - historiography
+  - indexing
 year: 2022
 month: feb
 olid: OL33238160M

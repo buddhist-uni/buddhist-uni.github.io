@@ -1,3 +1,4 @@
+---
 title: "The Place of Animals in Buddhism"
 authors:
   - "Francis Story"

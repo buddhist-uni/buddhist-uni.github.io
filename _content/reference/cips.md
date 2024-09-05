@@ -8,7 +8,8 @@ course: sutta
 tags:
   - pali-dictionaries
   - hermeneutics
-  - philosophy
+  - indexing
+  - view
 year: 2024
 month: may
 ---

@@ -40,7 +40,7 @@ It's a good idea to first:
 
 They set up what we'll be looking at for the remainder of the class.
 
-{% include toast.html type="warning" content='
+{% include toast.html type="info" content='
 ### Keep your notes and your favorite *sutta*s separate.
 
 As you go through the course, I encourage you to both take notes and [to keep a notebook of which suttas are especially meaningful to you](https://www.readingfaithfully.org/personal-sutta-anthology/){:target="_blank" ga-event-value="0.4"}. This notebook can act later as a personal “medicine cabinet” of the Buddha\'s wisdom which you can return to for inspiration and guidance when you need it.

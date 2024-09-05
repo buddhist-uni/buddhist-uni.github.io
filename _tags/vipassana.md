@@ -7,7 +7,7 @@ illustration_width: 755
 illustration_height: 1023
 illustration_center_x: 65%
 illustration_center_y: 58%
-illustration_caption: '<a href="https://commons.wikimedia.org/wiki/File:Ecstasy_Buddha_Rajasekharan_2019.jpg">"Ecstasy Buddha" by Rajasekharan Parameswaran</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>) is an oil painting depicting a brass Buddha face, caught mid-disappearance. Insight meditation is the practice of seeing the impermanent and illusory nature of all forms: especially our own body.'
+illustration_caption: '<a href="https://commons.wikimedia.org/wiki/File:Ecstasy_Buddha_Rajasekharan_2019.jpg">"Ecstasy Buddha" by Rajasekharan Parameswaran</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>) is an oil painting depicting a brass Buddha face, caught mid-disappearance. Insight meditation is the practice of seeing the impermanent and illusory nature of all forms: especially our own body and mind.'
 image: https://illeakyw.sirv.com/Images/banners/Golden_Mount.jpg
 image_width: 1280
 image_height: 853
