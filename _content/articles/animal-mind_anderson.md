@@ -10,6 +10,7 @@ tags:
   - animals
   - jainism
   - feeling
+  - animalia
 year: 2019
 month: mar
 journal: "The Atlantic"
