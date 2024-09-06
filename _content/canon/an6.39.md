@@ -8,7 +8,7 @@ drive_links:
 course: karma
 status: featured
 tags:
-  - feelings
+  - feeling
   - an
 year: 2018
 pages: 1

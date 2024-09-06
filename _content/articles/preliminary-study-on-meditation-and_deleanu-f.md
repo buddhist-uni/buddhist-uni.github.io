@@ -17,5 +17,5 @@ openalexid: W632295063
 
 > The adept who mastered them could claim that he shared a spiritual experience similar to that of the Buddha and this entitled him to say that he was speaking by the Buddha’s might.
 
-The Mahāyana likely emerged as a monastic, meditation-oriented movement.
+The Mahāyāna likely emerged as a monastic, meditation-oriented movement.
 
