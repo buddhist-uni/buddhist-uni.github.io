@@ -28,7 +28,7 @@ for file in "${tracked_files[@]}"; do
       invalid_files+=("$file")
     fi
     if [[ "${file: -3}" == ".md" ]]; then
-      first_bytes=$(xxd -p -l 4 "$file")  # Read the first 4 bytes in hexadecimal format
+      first_bytes=$(head -c 4 "$file" | od -An -tx1 -v | tr -d ' \n')  # Read the first 4 bytes in hexadecimal format
 
       if [[ $first_bytes != "2d2d2d0a" ]]; then
           echo "Invalid header in file: $file"

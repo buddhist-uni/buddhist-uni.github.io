@@ -10,7 +10,6 @@ course: snp
 tags:
   - sutta
 year: 2018
-month: jan
 pages: 399
 ---
 
@@ -19,7 +18,6 @@ is a holdover of the mid-20th century enthusiasm for discovering
 a “Buddha before Buddhism”, seeking a “truly authentic” teaching
 before it was institutionalized as rigid doctrine. Somehow, this
 search always ends up conflated with the racially-charged effort to
-divest Buddhism of its “cultural” (read “Asian”) elements. The Suttanipāta does not need rescue, and a romanticizing and reductive
-lens adds nothing and distorts much.
+divest Buddhism of its “cultural” (read “Asian”) elements.
 
-This new translation of Suttanipāta contains 74 short texts in verse or mixed prose and verse, arranged in five chapters. It contains some of the most well-known texts in popular Buddhism, such as the Ratana, Maṅgala, and Mettā Suttas, and texts such as the “Rhinoceros Horn” and the “Way to the Beyond” are regarded as among the earliest of the Buddhist scriptures.
+A new translation of the Sutta Nipāta which doesn't shy away from its cultural context.
