@@ -24,7 +24,7 @@ for file in "${tracked_files[@]}"; do
       continue
     fi
     echo "Checking $file..."
-    if ! grep -qE '^[+0-9a-z_\.-]+\.(bash|bib|code-workspace|gitignore|html|ico|js|json|liquid|md|png|py|rb|scss|sh|svg|txt|webmanifest|xml|yaml|yml)$' <<< "$filename"; then
+    if ! grep -qE '^[+0-9a-z_\.-]+\.(bash|bib|code-workspace|gitignore|html|ico|js|json|liquid|md|png|py|rb|scss|sh|svg|txt|webmanifest|xml|toml|yaml|yml)$' <<< "$filename"; then
       invalid_files+=("$file")
     fi
     if [[ "${file: -3}" == ".md" ]]; then
