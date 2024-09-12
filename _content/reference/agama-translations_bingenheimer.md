@@ -9,6 +9,7 @@ tags:
   - mahayana-canon
   - chinese
 year: 2001
+pages: 163
 ---
 
 For an interactive version of the bibliography, see [this webapp](https://tripitaka.netlify.app/).

@@ -6,6 +6,7 @@ oclc: 137283538
 course: religion
 tags:
   - view
+minutes: 104
 ---
 
 >  In this world, you must be oh so smart, or oh so pleasant. Well, for years I was smart. I recommend pleasant.

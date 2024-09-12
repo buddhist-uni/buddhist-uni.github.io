@@ -13,6 +13,7 @@ olid: OL23998167M
 tags:
   - pali-canon
 base_value: 6
+pages: 4000
 ---
 
 A large, free collection of sutta translations in ebook format, suitable for offline study on an ereader of your choice.
