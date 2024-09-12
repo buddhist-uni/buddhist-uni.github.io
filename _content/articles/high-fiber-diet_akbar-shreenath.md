@@ -8,7 +8,8 @@ drive_links:
   - "https://drive.google.com/file/d/1FB5qz4JufbfD4n51OF_qutt-yZtcajnS/view?usp=drivesdk"
 course: body
 tags:
-  - diet
+  - food
+  - health # maybe move down?
 year: 2023
 month: may
 journal: "StatPearls"
