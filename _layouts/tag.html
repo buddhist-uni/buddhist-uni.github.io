@@ -23,9 +23,13 @@ layout: default
 <p>{% if course %}Also available: <a href="{{ course.url }}"><i class="{{ course.icon }}"></i> As a Syllabus</a><br>{% endif %}Subscribe to this topic via: <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS</a></p>
 
 <div class="{% if course or page.banner_info == nil %}tag_desc{% endif %}">{{ content }}</div>
-{% unless page.status == "published" %}{% include toast.html type="warning" content='## <i class="fas fa-person-digging"></i> Caution! Under Construction
+{% unless page.status == "published" %}{% capture warningtext %} 
+## <i class="fas fa-person-digging"></i> Caution! Under Construction
 
-Please be aware that this tag is still under construction and as such is missing information and may be changed or removed at any time. Please pardon our dust as you peruse this incomplete bibliography.' %}{% endunless %}
+Please be aware that this tag is still under construction and as such is missing information and may be changed or removed at any time.
+{% if site.data.drive_folders[page.slug]["public"] contains "http" %}For all the content under consideration for this tag, see [the "{{ page.title }}" folder on Google Drive]({{ site.data.drive_folders[page.slug]["public"] }}).{% else %}
+Please pardon our dust as you peruse this incomplete bibliography.{% endif %}
+{% endcapture %}{% include toast.html type="warning" content=warningtext %}{% endunless %}
 {% if page.illustration %}
 <figure>
     <img {% if page.use_sirv %}src="{{ page.illustration }}"{% else %}srcset="https://buddhistuniversity.net/big_imgs/tags/{% assign ill = page.illustration | split: "/" | last | split: "." | pop | join: "." %}{{ ill }}-1x.webp, https://buddhistuniversity.net/big_imgs/tags/{{ ill }}.webp 2x" src="{{ page.illustration | replace: "https://illeakyw.sirv.com/Images/", "https://buddhistuniversity.net/imgs/tags/" }}"{% endif %}{% if page.illustration_height %}{% assign h = page.illustration_height | divided_by: 2.0 %}{% if h > 550 %}{% assign h = 550 %}{% endif %} style="{% assign illustrationformat = page.illustration | split: "." | last %}{% unless illustrationformat == 'gif' or illustrationformat == 'GIF' %}height: {{ h }}px; {% endunless %}background-color: lightgrey; object-fit: cover; object-position: {{ page.illustration_center_x | default: "50%" }} {{ page.illustration_center_y | default: "50%"}};{% endif %}">

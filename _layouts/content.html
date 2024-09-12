@@ -136,7 +136,8 @@ function showTooltip(elem,msg){elem.setAttribute('class','btn copybutton tooltip
           download_count = await download_count_resp.text();
           download_count = Number.parseInt(download_count);
         }
-        download_count++;
+        {% if page.external_url or page.drive_links.size > 0 %}
+        download_count++;{% endif %}
         addDownloadCountRow(download_count);
       </script>
       <span><a href="https://github.com/{{ site.github_repo }}/blob/{{ site.github_branch }}/{{ page.path }}">View this entry's source code on GitHub</a></span>

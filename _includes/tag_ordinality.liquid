@@ -1,9 +1,0 @@
-{%- comment -%}Tages a tag=page and assigns ret = its ordinality{%- endcomment -%}
-{% assign ret = -1 %}
-{% for tagpage in site.tags %}
-  {% if tagpage.slug == include.tag or tagpage.slug == include.tag.slug %}
-    {% assign ret = forloop.index %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-{%- comment -%}ret should now equal its order{%- endcomment -%}

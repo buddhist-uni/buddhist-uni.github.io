@@ -6,8 +6,6 @@
   "license": "MIT",
   "bugs": "https://github.com/buddhist-uni/buddhist-uni.github.io/issues",
   "devDependencies": {
-    "jquery": "^3",
-    "datatables.net-dt": "^2.1",
     "@fortawesome/fontawesome-free": "^6.6",
     "@primer/css": "^20.8",
     "purgecss": "^6.0"

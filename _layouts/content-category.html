@@ -19,7 +19,7 @@ layout: default
         <th>Formats</th>
         <th>Year</th>
         <th>Author(s)</th>
-        <th>Main Topic</th>
+        <th>Featured In...</th>
         <th>Date Added</th>
         <th>Size</th>
         <th><i class="fas fa-cloud-arrow-down"></i><span style="display: none">Downloads</span></th>
@@ -27,7 +27,7 @@ layout: default
       <tbody>
         {% for p in contents %}
           <tr id="{{ p.slug }}">
-            <td><a href="{{ p.url }}">{% include_cached content_icon.html category=page.slug subcat=p.subcat %} {{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></td>
+            <td><a href="{{ p.url }}" target="_blank">{% include_cached content_icon.html category=page.slug subcat=p.subcat %} {{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></td>
             <td>{% include content_filelinks.html content=p newtab=true %}</td>
             <td>{{ p.year }}</td>
             <td>{%- if p.authors.size > 0 -%}
@@ -44,28 +44,46 @@ layout: default
             {%- endif -%}
             </td>
             {%- assign primarytag = false -%}
-            {% assign ret = -1 %}
+            {% assign ordinality = 9999 %}
             {% if p.course %}
-              {% assign primarytag = site.tags | find: "slug", p.course %}
-              {% if primarytag %}
-                {% include tag_ordinality.liquid tag=primarytag %}
-              {% endif %}
+              {% for candidatecourse in site.courses %}
+                {% if p.course == candidatecourse.slug %}
+                  {% capture primarytag %}<a href="{{ candidatecourse.url }}">
+                    <i class="{{ candidatecourse.icon }}"></i>
+                    {{ candidatecourse.title | escape }}
+                  </a>{% endcapture %}
+                  {% assign ordinality = forloop.index %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% unless primarytag %}
+                {% for candidatetag in site.tags %}
+                  {% if candidatetag.slug == p.course %}
+                    {% capture primarytag %}<a href="{{ candidatetag.url }}">
+                      <i class="fas fa-tag"></i>
+                      {{ candidatetag.title | escape }}
+                    </a>{% endcapture %}
+                    {% assign ordinality = forloop.index | plus: site.courses.size %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endunless %}
             {% endif %}
             {% unless primarytag %}
               {% for candidatetag in site.tags %}
                 {% if p.tags contains candidatetag.slug %}
-                  {% assign ret = forloop.index %}
-                  {% assign primarytag = candidatetag %}
+                  {% capture primarytag %}<a href="{{ candidatetag.url }}">
+                    <i class="fas fa-tag"></i>
+                    {{ candidatetag.title | escape }}
+                  </a>{% endcapture %}
+                  {% assign ordinality = forloop.index | plus: site.courses.size %}
                   {% break %}
                 {% endif %}
               {% endfor %}
             {%- endunless -%}
-            {% if ret <= -1 %}
-              {% assign ret = 9999 %}
-            {% endif %}
-            <td data-order="{{ ret }}">
+            <td data-order="{{ ordinality }}">
               {% if primarytag %}
-                {{ primarytag.title }}
+                {{ primarytag }}
               {% endif %}
             </td>
             <td>
@@ -81,7 +99,9 @@ layout: default
               {% endif %}
             </td>
             <td>
-              {{ site.data.content_downloads[p.content_path] | default: 0 | plus: 1 }}
+              {% assign plus = 1 %}
+              {% unless p.external_url or p.drive_links.size > 0 %}{% assign plus = 0 %}{% endunless %}
+              {{ site.data.content_downloads[p.content_path] | default: 0 | plus: plus }}
             </td>
           </tr>
         {% endfor %}
@@ -91,27 +111,24 @@ layout: default
 
 </article>
 
-<link rel="stylesheet" href="/assets/css/dataTables.dataTables.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" />
+<link rel="stylesheet" href="/assets/css/datatables{% if jekyll.environment == "production" %}.min{% endif %}.css" />
 <style>
   #main {max-width: revert;}
 </style>
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/dataTables.js"></script>
-<script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
-<script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.dataTables.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.dataTables.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.colVis.min.js"></script>
+<script src="/assets/js/datatables{% if jekyll.environment == "production" %}.min{% endif %}.js"></script>
 <script>
   const initialwindowwidth = $(window).width();
   const mainContentList = new DataTable("#mainContentList", {
     "order": [], // Don't sort until asked to
     "layout": {
-        "topStart": {
-            "buttons": ["colvis"]
+      "topStart": {
+          "buttons": ["colvis"]
+      },
+      "bottomStart": {
+        "pageLength": {
+          "menu": [10, 25, 50, 100, 250, 500]
         }
+      }
     },
     "columnDefs": [
       { "targets": [1], "visible": initialwindowwidth > 550},
