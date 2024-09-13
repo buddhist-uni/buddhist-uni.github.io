@@ -90,13 +90,7 @@ layout: default
               {{ p.date | date: "%Y-%m-%d %H:%M" }}
             </td>
             <td data-order="{{ p.total_mins }}">
-              {% if p.page_count %}
-                {{ p.page_count }} Pages
-              {% elsif p.minutes %}
-                {{ p.minutes }} Mins
-              {% else %}
-                -
-              {% endif %}
+              {% include content_size.html content=p %}
             </td>
             <td>
               {% assign plus = 1 %}
