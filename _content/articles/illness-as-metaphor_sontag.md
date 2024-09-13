@@ -25,3 +25,4 @@ A classic and much-cited essay on the (mis)use of metaphors to describe disease.
 
 Available online from the original publisher: [Part 1](https://www.nybooks.com/articles/1978/01/26/illness-as-metaphor/){:target="_blank"}, [Part 2](https://www.nybooks.com/articles/1978/02/09/images-of-illness/){:target="_blank"}, and [Part 3](https://www.nybooks.com/articles/1978/02/23/disease-as-political-metaphor/){:target="_blank"}. Years later, Sontag also wrote in the NYRB, [this time on the metaphors of AIDS](https://www.nybooks.com/articles/1988/10/27/aids-and-its-metaphors/){:target="_blank"} in a compelling post-script later published alongside the original essay.
 
+After reading, consider [these discussion questions about the essay](https://drive.google.com/file/d/1PzZBMMQvr1GFWljgcR-kp_MZZiyIkXJt/view?usp=drivesdk){:target="_blank"}.
