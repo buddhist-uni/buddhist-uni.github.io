@@ -5,7 +5,8 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxvi/Narrative%20and%20Non-Narrative%20Sources%20on%20the%20Salvation%20of%20the%20Patricidal%20King%20Aj%C4%81ta%C5%9Batru.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1nMjb-YB7PB7pTdAwVidLdLqA7ZKz69hR/view?usp=drivesdk"
-course: rebirth-stories # solidly, almost 4 stars
+course: rebirth-stories
+status: featured
 tags:
   - thought # because both dialogue and karma
   - characters

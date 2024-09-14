@@ -827,6 +827,10 @@
   "private": "https://drive.google.com/drive/folders/12sE2g8Dq8_2XLm9_lKEeFOrWNLlGyY5H",
   "public": ""
  },
+ "kagyu": {
+  "private": "https://drive.google.com/drive/folders/1XWjkilDN7dTF_AkxRBdc2sRsT5VENePc",
+  "public": null
+ },
  "karma": {
   "private": "https://drive.google.com/drive/folders/14kum_GdjuQnLRjygsSQRp8MKKwXDivwT",
   "public": "https://drive.google.com/drive/folders/10jSbt1BKlm-Guynn6OqkGJiPuO7otPnX"
@@ -1674,6 +1678,10 @@
  "view": {
   "private": "https://drive.google.com/drive/folders/1-7bf0OjhlyX7luG2xbu9e0pBQ5B-Ss95",
   "public": "https://drive.google.com/drive/folders/10eW0WUeTrF7_GLU_efLIQlrteSbxz474"
+ },
+ "vinaya-controversies": {
+  "private": "https://drive.google.com/drive/folders/12jWc7s-3C2Pk_8jqUX2O6d20_PdXoAGz",
+  "public": "https://drive.google.com/drive/folders/145Kbpb40DG4CUnUCHZArEbJ-HSmDnaJg"
  },
  "vinaya-pitaka": {
   "private": "https://drive.google.com/drive/folders/1JC0eka7oM3ufbd2M3XaPvCFFvU6_CSZf",
