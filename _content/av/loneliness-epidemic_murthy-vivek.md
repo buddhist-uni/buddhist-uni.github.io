@@ -4,7 +4,7 @@ subcat: podcast
 authors:
   - "Vivek Murthy"
   - "Ezra Klein"
-external_url: "https://www.stitcher.com/show/vox-conversations/episode/the-loneliness-epidemic-64496902"
+external_url: "https://open.spotify.com/episode/5IAowfyYcfIF1PfWNOyGML?si=hjFoPeuhTHiqIE8XNREt7A"
 year: 2019
 month: oct
 tags:

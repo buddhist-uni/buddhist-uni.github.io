@@ -9,6 +9,7 @@ status: featured
 course: body
 tags:
   - senses
+  - parenting
 year: 2023
 month: mar
 journal: vox
