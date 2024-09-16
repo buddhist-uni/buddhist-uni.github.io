@@ -2,11 +2,13 @@
 title: "The Way to the Beyond: A Study of the Pārāyanavagga"
 authors:
   - sujato
+subcat: course
 external_url: "https://www.audiodharma.org/series/16665"
 drive_links:
   - "https://drive.google.com/drive/folders/1QvBZpoW7iF7Xfs4ixmZzFiZTwt-q1KFz"
   - "https://drive.google.com/drive/folders/1QrDFLZCn3bnPTJk-_LHWwLC_WalcjSV9"
 course: snp 
+formats: [MP3s, PDFs]
 tags:
   - canon
 year: 2022
