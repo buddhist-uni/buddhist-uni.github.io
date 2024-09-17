@@ -21,7 +21,7 @@ APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type
 #APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
 #APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
 
-REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-A725F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"}
+REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"}
 
 FNAME_MAXLEN = 192 # 126 might be safer
 

@@ -72,24 +72,26 @@ var utils = {
     'ascii': /^[ -~]+$/
 };
 
-function Ranges() {
-    this.array = [];
+class Ranges {
+    constructor() {
+        this.array = [];
+    }
+    static compareStart(a, b) { return a[0] > b[0]; }
+    static compareEnd(a, b) { return a[1] > b[1]; }
+    dedupeAt(index) {
+        if (index + 1 < this.array.length && this.array[index][1] + 1 >= this.array[index + 1][0]) {
+            this.array.splice(index, 2, [this.array[index][0], this.array[index + 1][1]]);
+        }
+        if (index > 0 && this.array[index - 1][1] + 1 >= this.array[index][0]) {
+            this.array.splice(index - 1, 2, [this.array[index - 1][0], this.array[index][1]]);
+        }
+    }
+    add(range) {
+        var si = locationOf(this.array, range, Ranges.compareStart);
+        var ei = locationOf(this.array, range, Ranges.compareEnd);
+        if (si > ei) return;
+        this.array.splice(si, ei - si, range);
+        this.dedupeAt(si);
+    }
 }
-Ranges.compareStart = function (a, b) { return a[0] > b[0]; };
-Ranges.compareEnd = function (a, b) { return a[1] > b[1]; };
-Ranges.prototype.dedupeAt = function(index) {
-    if (index+1<this.array.length && this.array[index][1]+1>=this.array[index+1][0]) {
-        this.array.splice(index, 2, [this.array[index][0], this.array[index+1][1]]);
-    }
-    if (index>0 && this.array[index-1][1]+1>=this.array[index][0]) {
-        this.array.splice(index-1, 2, [this.array[index-1][0], this.array[index][1]]);
-    }
-};
-Ranges.prototype.add = function(range) {
-    var si = locationOf(this.array, range, Ranges.compareStart);
-    var ei = locationOf(this.array, range, Ranges.compareEnd);
-    if (si > ei) return;
-    this.array.splice(si, ei-si, range);
-    this.dedupeAt(si);
-};
 
