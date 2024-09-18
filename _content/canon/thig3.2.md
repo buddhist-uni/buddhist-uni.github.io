@@ -1,5 +1,5 @@
 ---
-title: "Thig 3.2: Uttamā"
+title: "Thig 3.2 Uttamā Therīgāthā: Uttamā"
 slug: "thig.03.02"
 external_url: "https://suttacentral.net/thig3.2/en/sujato"
 translator: sujato

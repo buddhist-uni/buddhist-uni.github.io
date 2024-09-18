@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.12: Brahmadatta"
+title: "Thag 6.12 Brahmadattat Theragāthā: Brahmadatta"
 slug: "thag.06.12"
 external_url: "https://daily.readingfaithfully.org/thag-6-12-brahmadattattheragatha-brahmadatta/"
 course: hindrances

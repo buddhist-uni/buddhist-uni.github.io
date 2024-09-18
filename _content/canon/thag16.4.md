@@ -1,5 +1,5 @@
 ---
-title: "Thag 16.4: Raṭṭhapāla"
+title: "Thag 16.4 Raṭṭhapāla Theragāthā: Raṭṭhapāla"
 subcat: poetry
 slug: "thag.16.04"
 external_url: "https://suttacentral.net/thag16.4/en/sujato"

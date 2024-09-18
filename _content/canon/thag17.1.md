@@ -1,5 +1,5 @@
 ---
-title: "Thag 17.1: Phussa"
+title: "Thag 17.1 Phussa Theragāthā: Phussa"
 subcat: poetry
 slug: "thag.17.01"
 external_url: "https://suttacentral.net/thag17.1/en/sujato"

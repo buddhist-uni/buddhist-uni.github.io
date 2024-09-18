@@ -1,5 +1,5 @@
 ---
-title: "Snp 5.4: The Questions of Mettagū"
+title: "Snp 5.4 Puṇṇakamāṇavapucchā: The Questions of Mettagū"
 slug: "snp.5.04"
 reader: sucitto
 external_url: "https://suttareadings.net/audio/snp.5.04.suci.mp3"

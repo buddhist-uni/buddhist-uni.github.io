@@ -1,5 +1,5 @@
 ---
-title: "Ud 8.8: Visāka"
+title: "Ud 8.8 Visākhā Sutta: The Discourse about Visākhā"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud8.8/en/anandajoti"
 formats: [pdf]

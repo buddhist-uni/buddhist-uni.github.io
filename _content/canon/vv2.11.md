@@ -1,5 +1,5 @@
 ---
-title: "Vv 2.11: Dutiya Bhikkhadāyikā Sutta"
+title: "Vv 2.11 Dutiya Bhikkhadāyikā Sutta: Second Alms Giver’s Mansion"
 slug: "vv.2.11"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-11/"

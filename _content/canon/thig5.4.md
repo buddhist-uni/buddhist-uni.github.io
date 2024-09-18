@@ -1,5 +1,5 @@
 ---
-title: "Thig 5.4 Sundarīnandā Therīgāthā"
+title: "Thig 5.4 Sundarīnandā Therīgāthā: Sundarīnandā"
 translator: sujato
 slug: "thig.05.04"
 subcat: poetry

@@ -1,5 +1,5 @@
 ---
-title: "Snp 4.6: On Decay"
+title: "Snp 4.6 Jara Sutta: On Decay"
 slug: "snp.4.06"
 external_url: "https://accesstoinsight.org/tipitaka/kn/snp/snp.4.06.irel.html"
 translator: ireland

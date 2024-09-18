@@ -1,5 +1,5 @@
 ---
-title: "Vv 2.8: Saddhā Sutta"
+title: "Vv 2.8 Saddhā Sutta: Saddha’s Mansion"
 slug: "vv.2.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-8/"

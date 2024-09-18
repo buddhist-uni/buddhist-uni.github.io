@@ -1,5 +1,5 @@
 ---
-title: "Thag 17.2 Sāriputta Theragāthā"
+title: "Thag 17.2 Sāriputta Theragāthā: Sāriputta"
 translator: sujato
 slug: "thag.17.02"
 subcat: poetry

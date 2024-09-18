@@ -1,5 +1,5 @@
 ---
-title: "Ud 5.7: Revata"
+title: "Ud 5.7 Kaṅkhārevata Sutta: Revata"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud5.7/en/anandajoti"
 course: imagery

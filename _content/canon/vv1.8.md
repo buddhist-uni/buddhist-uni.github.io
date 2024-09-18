@@ -1,5 +1,5 @@
 ---
-title: "Vv 1.8: Tatiya Nāvā Sutta"
+title: "Vv 1.8 Tatiya Nāvā Sutta: Third Ship Mansion"
 slug: "vv.1.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-8/"

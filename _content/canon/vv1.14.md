@@ -1,5 +1,5 @@
 ---
-title: "Vv 1.14: Dutiya Suṇisā Sutta"
+title: "Vv 1.14 Dutiya Suṇisā Sutta: Second Daughter-in-Law Mansion"
 slug: "vv.1.14"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-14/"

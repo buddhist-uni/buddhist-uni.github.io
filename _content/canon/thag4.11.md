@@ -1,5 +1,5 @@
 ---
-title: "Thag 4.11 Sappakattheragāthā: Sappaka Thera's Verses"
+title: "Thag 4.11 Sappaka Theragāthā: Sappaka Thera's Verses"
 translator: sujato
 slug: "thag.04.11"
 subcat: poetry

@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.8 Migajālattheragāthā: Migajāla's Verses"
+title: "Thag 6.8 Migajāla Theragāthā: Migajāla's Verses"
 translator: sujato
 slug: "thag.06.08"
 subcat: poetry

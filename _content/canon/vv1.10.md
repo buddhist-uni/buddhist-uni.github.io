@@ -1,5 +1,5 @@
 ---
-title: "Vv 1.10: Tiladakkhiṇā Sutta"
+title: "Vv 1.10 Tiladakkhiṇā Sutta: Sesame-Gift Mansion"
 slug: "vv.1.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-10/"

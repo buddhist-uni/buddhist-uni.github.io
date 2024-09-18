@@ -1,5 +1,5 @@
 ---
-title: "Thag 1.39 Tissattheragāthā: Tissa's (1st) Verse"
+title: "Thag 1.39 Tissa Theragāthā: Tissa's (1st) Verse"
 translator: sujato
 slug: "thag.01.39"
 subcat: poetry

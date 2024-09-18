@@ -1,5 +1,5 @@
 ---
-title: "Snp 3.11: Nālaka"
+title: "Snp 3.11 Nālaka Sutta: The Sages Asita and Nālaka and the Buddha’s advice"
 slug: "snp.3.11"
 external_url: "https://suttacentral.net/snp3.11/en/mills"
 translator: mills-laurence

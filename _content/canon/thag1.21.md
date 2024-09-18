@@ -1,5 +1,5 @@
 ---
-title: "Thag 1.21: Mātaṅgaputta"
+title: "Thag 1.21 Nigrodha Theragāthā: Nigrodha"
 slug: "thag.01.21"
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag1_21.html"
 translator: geoff

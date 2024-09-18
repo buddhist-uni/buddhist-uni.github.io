@@ -1,5 +1,5 @@
 ---
-title: "Thig 6.7: Verses of the Elder Guttā"
+title: "Thig 6.7 Guttā Therīgāthā: Verses of the Elder Guttā"
 slug: "thig.06.07"
 external_url: "https://suttacentral.net/thig6.7/en/soma"
 translator: soma

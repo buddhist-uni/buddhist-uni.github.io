@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.2: Tekicchakāri"
+title: "Thag 6.2 Tekicchakāri Theragāthā: Tekicchakāri"
 slug: "thag.06.02"
 external_url: "https://suttacentral.net/thag6.2/en/sujato"
 translator: sujato

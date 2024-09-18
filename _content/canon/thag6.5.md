@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.5: Māluṅkyaputta"
+title: "Thag 6.5 Mālukyaputta Theragāthā: Māluṅkyaputta"
 slug: "thag.06.05"
 external_url: "https://suttacentral.net/thag6.5/en/sujato"
 drive_links:

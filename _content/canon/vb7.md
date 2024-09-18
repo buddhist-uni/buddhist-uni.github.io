@@ -1,5 +1,5 @@
 ---
-title: "Vb 7 Satipaṭṭhānavibhaṅgo: Analysis of the Ways of Attending to Mindfulness"
+title: "Vb 7 Satipaṭṭhāna Vibhaṅga: Analysis of the Ways of Attending to Mindfulness"
 slug: "vb07"
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Satipatthanavibhanga/"

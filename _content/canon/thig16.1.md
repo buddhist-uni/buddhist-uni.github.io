@@ -1,5 +1,5 @@
 ---
-title: "Thig 16.1: Sumedhā"
+title: "Thig 16.1 Sumedhā Therīgāthā: Sumedhā"
 slug: "thig.16.01"
 external_url: "https://daily.readingfaithfully.org/thig-16-1-sumedhatherigatha-sumedha/"
 translator: sujato

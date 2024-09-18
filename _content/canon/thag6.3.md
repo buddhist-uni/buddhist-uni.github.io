@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.3: Mahānāga"
+title: "Thag 6.3 Mahānāga Theragāthā: Mahānāga"
 slug: "thag.06.03"
 external_url: "https://suttacentral.net/thag6.3/en/sujato"
 drive_links:

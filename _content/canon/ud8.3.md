@@ -1,5 +1,5 @@
 ---
-title: "Ud 8.3: Nibbāna (3)"
+title: "Ud 8.3 Tatiya Nibbāna Paṭisaṁyutta Sutta: The Third Discourse about Nibbāna"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud8.3/en/anandajoti"
 formats: [pdf]

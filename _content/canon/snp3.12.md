@@ -1,5 +1,5 @@
 ---
-title: "Snp 3.12: Contemplating Pairs"
+title: "Snp 3.12 Dvayatānupassanā Sutta: Contemplating Pairs"
 slug: "snp.3.12"
 external_url: "https://suttacentral.net/snp3.12/en/sujato"
 translator: sujato

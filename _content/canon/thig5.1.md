@@ -1,5 +1,5 @@
 ---
-title: "Thig 5.1: Aññatara"
+title: "Thig 5.1 Aññatara Therīgāthā: Verses of a Certain Unknown Elder"
 slug: "thig.05.01"
 external_url: "https://suttacentral.net/thig5.1/en/soma"
 translator: soma

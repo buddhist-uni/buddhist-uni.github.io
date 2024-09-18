@@ -1,5 +1,5 @@
 ---
-title: "Ud 4.8: Sundarī"
+title: "Ud 4.8 Sundarī Sutta: The Discourse about Sundarī"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud4.8/en/anandajoti"
 formats: [pdf]

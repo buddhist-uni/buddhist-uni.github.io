@@ -1,5 +1,5 @@
 ---
-title: "Thag 15.2 Udāyittheragāthā: Udāyī"
+title: "Thag 15.2 Udāyi Theragāthā: Udāyī"
 translator: sujato
 slug: "thag.15.02"
 subcat: poetry

@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.9 Purohitaputtajentattheragāthā: Jenta, the High Priest’s Son"
+title: "Thag 6.9 Purohitaputtajenta Theragāthā: Jenta, the High Priest’s Son"
 translator: sujato
 slug: "thag.06.09"
 subcat: poetry

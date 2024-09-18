@@ -1,5 +1,5 @@
 ---
-title: "Thag 3.5: Mātaṅgaputta"
+title: "Thag 3.5 Mātaṅgaputta Theragāthā: Mātaṅgaputta"
 slug: "thag.03.05"
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag3_5.html"
 translator: geoff

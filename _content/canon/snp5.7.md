@@ -1,5 +1,5 @@
 ---
-title: "Snp 5.7: The Questions of Upasīva"
+title: "Snp 5.7 Upasīvamāṇavapucchā: The Questions of Upasīva"
 slug: "snp.5.07"
 reader: sucitto
 external_url: "https://suttareadings.net/audio/snp.5.06.suci.mp3"

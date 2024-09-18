@@ -1,5 +1,5 @@
 ---
-title: "Thig 14.1: Subha and the Libertine"
+title: "Thig 14.1 Subhājīvakambavanikā Therīgāthā: Subhā of Jīvaka’s Mango Grove"
 slug: "thig.14.01"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/thig/thig.14.01.than.html"
 translator: geoff

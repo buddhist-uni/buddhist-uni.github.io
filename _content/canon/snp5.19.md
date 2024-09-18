@@ -1,5 +1,5 @@
 ---
-title: "Snp 5.19: Preserving the Way to the Beyond"
+title: "Snp 5.19 Pārāyanānugītigāthā: Preserving the Way to the Beyond"
 slug: "snp.5.19"
 subcat: poetry
 external_url: "https://suttacentral.net/snp5.19/en/sujato"

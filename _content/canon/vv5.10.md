@@ -1,5 +1,5 @@
 ---
-title: "Vv 5.10: Nāga Sutta"
+title: "Vv 5.10 Nāga Sutta: Elephant Mansion"
 slug: "vv.5.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv5-10/"
