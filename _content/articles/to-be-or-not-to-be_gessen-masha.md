@@ -9,7 +9,6 @@ year: 2018
 month: feb
 course: inner
 tags:
-  - thought
   - gender
   - karma
   - free-will

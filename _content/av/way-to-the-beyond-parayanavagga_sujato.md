@@ -9,8 +9,6 @@ drive_links:
   - "https://drive.google.com/drive/folders/1QrDFLZCn3bnPTJk-_LHWwLC_WalcjSV9"
 course: snp 
 formats: [MP3s, PDFs]
-tags:
-  - canon
 year: 2022
 month: jul
 minutes: 238

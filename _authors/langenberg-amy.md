@@ -1,3 +1,3 @@
 ---
-title: "Amy Langenberg"
+title: "Amy Paris Langenberg"
 ---
