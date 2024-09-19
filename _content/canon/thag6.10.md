@@ -1,5 +1,5 @@
 ---
-title: "Thag 6.10 Sumanat Theragāthā"
+title: "Thag 6.10 Sumanat Theragāthā: Sumana"
 translator: sujato
 slug: "thag.06.10"
 subcat: poetry

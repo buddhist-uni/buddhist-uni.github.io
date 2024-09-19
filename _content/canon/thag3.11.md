@@ -1,5 +1,5 @@
 ---
-title: "Thag 3.11 Upālittheragāthā: Upāli"
+title: "Thag 3.11 Upāli Theragāthā: Upāli"
 translator: "Ven. Kiribathgoda Gnanananda"
 slug: "thag.03.11"
 subcat: poetry

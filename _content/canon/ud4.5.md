@@ -1,5 +1,5 @@
 ---
-title: "Ud 4.5: The Nāga Elephant"
+title: "Ud 4.5 Nāga Sutta: The Discourse about the Nāga Elephant"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud4.5/en/anandajoti"
 drive_links: ["https://drive.google.com/file/d/1Uke5IpH89rIttkmwIOC2kggAGRPpy7wm"]

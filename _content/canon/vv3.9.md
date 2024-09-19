@@ -1,5 +1,5 @@
 ---
-title: "Vv 3.9: Visālakkhī Sutta"
+title: "Vv 3.9 Visālakkhī Sutta: Mansion of the Beautiful-Eyed Goddess"
 slug: "vv.3.09"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv3-9/"

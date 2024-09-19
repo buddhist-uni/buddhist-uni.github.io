@@ -1,5 +1,5 @@
 ---
-title: "Thig 12.1: Punnika and the Brahman"
+title: "Thig 12.1 Puṇṇā Therīgāthā: Puṇṇikā"
 slug: "thig.12.01"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/thig/thig.12.01.than.html"
 translator: geoff

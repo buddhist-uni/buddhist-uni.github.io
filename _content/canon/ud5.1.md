@@ -1,5 +1,5 @@
 ---
-title: "Ud 5.1: About the King"
+title: "Ud 5.1 Piyatara Sutta: The Discourse about the King"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud5.1/en/anandajoti"
 drive_links: ["https://drive.google.com/file/d/14loBfb9nCV5EKzH389mj9pDmIsZWVxAa/view?usp=drivesdk"]

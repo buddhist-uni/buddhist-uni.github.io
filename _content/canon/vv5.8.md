@@ -1,5 +1,5 @@
 ---
-title: "Vv 5.8: Sūcī Sutta"
+title: "Vv 5.8 Sūcī Sutta: Needle Mansion"
 slug: "vv.5.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv5-8/"

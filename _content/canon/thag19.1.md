@@ -1,5 +1,5 @@
 ---
-title: "Thag 19.1: Tālapuṭa"
+title: "Thag 19.1 Tālapuṭa Theragāthā: Tālapuṭa"
 subcat: poetry
 slug: "thag.19.01"
 external_url: "https://suttacentral.net/thag19.1/en/sujato"

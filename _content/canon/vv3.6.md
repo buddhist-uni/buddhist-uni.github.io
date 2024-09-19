@@ -1,5 +1,5 @@
 ---
-title: "Vv 3.6: Daddalla Sutta"
+title: "Vv 3.6 Daddalla Sutta: Dazzling Mansion"
 slug: "vv.3.6"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv3-6/"

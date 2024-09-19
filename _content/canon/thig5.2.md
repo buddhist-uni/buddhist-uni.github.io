@@ -1,5 +1,5 @@
 ---
-title: "Thig 5.2: Vimalā"
+title: "Thig 5.2 Vimalā Therīgāthā: Verses of the Elder Vimalā"
 slug: "thig.05.02"
 external_url: "https://suttacentral.net/thig5.2/en/soma"
 translator: soma

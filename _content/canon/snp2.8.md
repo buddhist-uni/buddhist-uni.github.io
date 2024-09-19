@@ -1,5 +1,5 @@
 ---
-title: "Snp 2.8: The Dhamma Nāvā Sutta"
+title: "Snp 2.8 The Dhamma Nāvā Sutta: The Boat"
 slug: "snp.2.08"
 external_url: "https://suttacentral.net/snp2.8/en/sujato"
 translator: sujato

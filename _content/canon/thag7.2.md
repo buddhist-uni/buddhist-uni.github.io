@@ -1,5 +1,5 @@
 ---
-title: "Thag 7.2: Lakuṇṭaka Bhaddiya"
+title: "Thag 7.2 Lakuṇḍakabhaddiya Theragāthā: Bhaddiya the Dwarf Bhaddiya"
 slug: "thag.07.02"
 external_url: "https://suttacentral.net/thag7.2/en/sujato"
 translator: sujato

@@ -1,5 +1,5 @@
 ---
-title: "Thag 1.35 Sāmaññakānittheragāthā: Sāmaññakāni"
+title: "Thag 1.35 Sāmaññakāni Theragāthā: Sāmaññakāni"
 translator: sujato
 slug: "thag.01.35"
 subcat: poetry

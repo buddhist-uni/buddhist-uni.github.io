@@ -1,5 +1,5 @@
 ---
-title: "Thig 6.6: Mahāpajāpati Gotamī"
+title: "Thig 6.6 Mahāpajāpatigotamī Therīgāthā: Verses of the Elder Mahāpajāpati Gotamī"
 slug: "thig.06.06"
 external_url: "https://suttacentral.net/thig6.6/en/soma"
 translator: soma

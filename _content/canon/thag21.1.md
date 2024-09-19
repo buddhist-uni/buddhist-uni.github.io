@@ -1,5 +1,5 @@
 ---
-title: "Thag 21.1: Vaṅgīsa"
+title: "Thag 21.1 Vaṅgīsa Theragāthā: Vaṅgīsa"
 subcat: poetry
 slug: "thag.21.01"
 external_url: "https://suttacentral.net/thag21.1/en/sujato"

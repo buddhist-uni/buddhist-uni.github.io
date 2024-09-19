@@ -1,5 +1,5 @@
 ---
-title: "Thag 5.8 Vakkalittheragāthā: Vakkali's Verses"
+title: "Thag 5.8 Vakkali Theragāthā: Vakkali's Verses"
 translator: geoff
 slug: "thag.05.08"
 subcat: poetry

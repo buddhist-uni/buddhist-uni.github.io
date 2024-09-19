@@ -1,5 +1,5 @@
 ---
-title: "Ud 1.10: Bāhiya"
+title: "Ud 1.10 Bāhiya Sutta: The Discourse about Bāhiya"
 reader: doering
 external_url: "https://www.suttareadings.net/audio/ud.1.10.sdoe.mp3"
 formats: [mp3]

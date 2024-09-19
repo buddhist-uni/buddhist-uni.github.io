@@ -1,5 +1,5 @@
 ---
-title: "Snp 4.2: The Eight on the Body as a Cave"
+title: "Snp 4.2 Guhaṭṭhaka Sutta: The Eight on the Body as a Cave"
 slug: "snp.4.02"
 external_url: "https://suttacentral.net/snp4.2/en/mills"
 translator: mills-laurence

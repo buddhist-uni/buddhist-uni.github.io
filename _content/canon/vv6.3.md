@@ -1,5 +1,5 @@
 ---
-title: "Vv 6.3: Phaladāyikā Sutta"
+title: "Vv 6.3 Phaladāyikā Sutta: Fruit Giver’s Mansion"
 slug: "vv.6.03"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv6-3/"

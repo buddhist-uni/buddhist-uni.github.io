@@ -1,5 +1,5 @@
 ---
-title: "Snp 5.15: Posāla's Question"
+title: "Snp 5.15 Posālamāṇavapucchā: Posāla's Question"
 slug: "snp.5.15"
 external_url: "https://suttacentral.net/snp5.15/en/sujato"
 translator: sujato

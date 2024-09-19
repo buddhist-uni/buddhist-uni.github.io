@@ -1,5 +1,5 @@
 ---
-title: "Snp 1.2: With the Cattle-owner Dhaniya"
+title: "Snp 1.2 Dhaniya Sutta: With the Cattle-owner Dhaniya"
 slug: "snp.1.02"
 external_url: "https://docs.google.com/document/d/1QTe_1lHTYP8K4nvwGVjjTAAwRw4qpW5O5LARdvlO4u0/edit"
 source_url: "https://suttacentral.net/snp1.2/en/silacara"

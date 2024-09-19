@@ -1,5 +1,5 @@
 ---
-title: "Vv 7.11: Sunikkhitta Sutta"
+title: "Vv 7.11 Sunikkhitta Sutta: Sunikkhitta’s Mansion"
 slug: "vv.7.11"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-11/"

@@ -1,5 +1,5 @@
 ---
-title: "Snp 3.10: Kokālika"
+title: "Snp 3.10 Kokālika Sutta: WIth Kokālika"
 slug: "snp.3.10"
 external_url: "https://suttacentral.net/snp3.10/en/sujato"
 translator: sujato

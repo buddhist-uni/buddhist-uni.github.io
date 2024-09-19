@@ -1,5 +1,5 @@
 ---
-title: "Thag 5.9: Vijitasena"
+title: "Thag 5.9 Vijitasena Theragāthā: Vijitasena"
 slug: "thag.05.09"
 external_url: "https://suttafriends.org/sutta/thag5-9/"
 drive_links:

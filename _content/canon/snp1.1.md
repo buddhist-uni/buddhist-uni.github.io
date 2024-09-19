@@ -1,5 +1,5 @@
 ---
-title: "Snp 1.1: The Serpent"
+title: "Snp 1.1 Uraga Sutta: The Serpent"
 slug: "snp.1.01"
 translator: nyanaponika
 external_url: "https://accesstoinsight.org/tipitaka/kn/snp/snp.1.01.nypo.html"

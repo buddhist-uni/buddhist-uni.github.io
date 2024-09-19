@@ -1,5 +1,5 @@
 ---
-title: "Thag 7.4: Sopāka (2nd)"
+title: "Thag 7.4 Sopāka Theragāthā: Sopāka (2nd)"
 subcat: poetry
 slug: "thag.07.04"
 external_url: "https://daily.readingfaithfully.org/thag-7-4-sopakattheragatha-sopaka-2nd/"

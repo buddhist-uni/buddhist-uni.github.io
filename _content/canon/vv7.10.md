@@ -1,5 +1,5 @@
 ---
-title: "Vv 7.10: Serissaka Sutta"
+title: "Vv 7.10 Serissaka Sutta: Serissaka’s Mansion"
 slug: "vv.7.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-10/"

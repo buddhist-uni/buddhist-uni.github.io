@@ -1,5 +1,5 @@
 ---
-title: "Thag 14.1: Khadiravaniyarevata"
+title: "Thag 14.1 Khadiravaniyarevata Theragāthā: Revata of the Acacia Wood"
 subcat: poetry
 slug: "thag.14.01"
 external_url: "https://suttacentral.net/thag14.1/en/sujato"

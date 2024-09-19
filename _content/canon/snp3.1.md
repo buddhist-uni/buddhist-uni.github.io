@@ -1,5 +1,5 @@
 ---
-title: "Snp 3.1: Going Forth"
+title: "Snp 3.1 Pabbajjā Sutta: Going Forth"
 slug: "snp.3.01"
 external_url: "https://suttacentral.net/snp3.1/en/sujato"
 translator: sujato

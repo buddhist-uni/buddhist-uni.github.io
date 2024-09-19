@@ -1,5 +1,5 @@
 ---
-title: "Vv 7.9: Maṭṭakuṇḍalī Sutta"
+title: "Vv 7.9 Maṭṭakuṇḍalī Sutta: Mattakundali’s Mansion"
 slug: "vv.7.09"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-9/"

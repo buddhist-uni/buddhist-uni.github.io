@@ -1,5 +1,5 @@
 ---
-title: "Vv 7.8: Anekavaṇṇa Sutta"
+title: "Vv 7.8 Anekavaṇṇa Sutta: Mansion of Many Colors"
 slug: "vv.7.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-8/"

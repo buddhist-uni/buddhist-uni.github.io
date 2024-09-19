@@ -1,5 +1,5 @@
 ---
-title: "Snp 5.10: The Questions of Kappa"
+title: "Snp 5.10 Todeyyamāṇavapucchā: The Questions of Kappa"
 slug: "snp.5.10"
 reader: sucitto
 external_url: "https://suttareadings.net/audio/snp.5.10.suci.mp3"

@@ -1,5 +1,5 @@
 ---
-title: "Thag 18.1: Mahā Kassapa"
+title: "Thag 18.1 Mahākassapa Theragāthā: Mahākassapa"
 slug: "thag.18.01"
 external_url: "https://suttafriends.org/sutta/thag18-1/"
 translator: "Ven. Kiribathgoda Gnanananda"

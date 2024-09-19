@@ -1,5 +1,5 @@
 ---
-title: "Vv 7.2: Nandana Sutta"
+title: "Vv 7.2 Nandana Sutta: Nandana Mansion"
 slug: "vv.7.02"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-2/"

@@ -1,5 +1,5 @@
 ---
-title: "Vv 2.1: Dāsī Sutta"
+title: "Vv 2.1 Dāsī Sutta: Servant Girl’s Mansion"
 slug: "vv.2.01"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-1/"

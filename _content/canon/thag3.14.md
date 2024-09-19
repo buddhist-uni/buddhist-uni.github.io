@@ -1,5 +1,5 @@
 ---
-title: "Thag 3.14: Gotama (2nd)"
+title: "Thag 3.14 Gotama Theragāthā: Gotama (2nd)"
 slug: "thag.03.14"
 external_url: "https://suttacentral.net/thag3.14/en/sujato"
 translator: sujato

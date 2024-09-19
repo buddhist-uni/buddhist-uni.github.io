@@ -1,5 +1,5 @@
 ---
-title: "Vv 1.12: Dutiya Patibbatā Sutta"
+title: "Vv 1.12 Dutiya Patibbatā Sutta: Second Honest Wife Mansion"
 slug: "vv.1.12"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-12/"

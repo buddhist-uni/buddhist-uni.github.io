@@ -1,5 +1,5 @@
 ---
-title: "Vv 1.1: Paṭhama Pīṭha Sutta"
+title: "Vv 1.1 Paṭhama Pīṭha Sutta: Throne Mansion"
 slug: "vv.1.01"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-1/"

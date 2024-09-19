@@ -1,5 +1,5 @@
 ---
-title: "Snp 3.9: The Discourse to Vāseṭṭha"
+title: "Snp 3.9 Vāseṭṭha Sutta: The Discourse to Vāseṭṭha"
 slug: "snp.3.09"
 external_url: "https://suttacentral.net/snp3.9/en/suddhaso"
 translator: suddhaso

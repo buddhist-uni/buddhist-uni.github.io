@@ -1,5 +1,5 @@
 ---
-title: "Thag 12.2: Sunīta"
+title: "Thag 12.2 Sunīta Theragāthā: Sunīta"
 slug: "thag.12.02"
 external_url: "https://suttacentral.net/thag12.2/en/sujato"
 translator: sujato
