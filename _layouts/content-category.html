@@ -117,15 +117,22 @@ layout: default
     "order": [], // Don't sort until asked to
     "layout": {
       "topStart": {
-          "buttons": ["colvis"]
+          "buttons": [
+            {
+              "extend": "colvis",
+              "columns": ":not(.unhideable)",
+              "popoverTitle": "<div style='color:gray;font-size:17px;display:flex;justify-content:space-between;width:100%'><span>Name</span><span>✓</span></div>"
+            },
+          ]
       },
       "bottomStart": {
         "pageLength": {
-          "menu": [10, 25, 50, 100, 250, 500]
+          "menu": [10, 25, 50, 100, 250, 500, 1000]
         }
       }
     },
     "columnDefs": [
+      { "targets": [0], "visible": true, "className": "unhideable"},
       { "targets": [1], "visible": initialwindowwidth > 550},
       { "targets": [2], "width": "70px", "visible": initialwindowwidth > 475}, 
       { "targets": [4], "visible": initialwindowwidth > 700},
@@ -134,43 +141,67 @@ layout: default
       { "targets": [7], "visible": initialwindowwidth > 820}
     ]
   });
-  const requestedOrder = getQueryVariable('order'); // e.g. ?order=1.asc
-  const requestedCols = getQueryVariable('cols'); // e.g. ?cols=0.1.10.11
-  const requestedPageSize = getQueryVariable('n'); // e.g. ?n=50
-  const requestedPage = getQueryVariable('p'); // e.g. ?n=50&p=2
-  if (requestedCols || requestedOrder || requestedPage || requestedPageSize) {
-    setTimeout(() => {
-      let needsDraw = false;
-      if (requestedOrder) {
-        const order = requestedOrder.split('.');
-        if (order.length == 2) {
-          order[0] = parseInt(order[0]);
-          mainContentList.order(order);
-          needsDraw = true;
-        }
+
+  function updateTableToReflectURLParams() {
+    window.tableDrawLock = true;
+    const requestedOrder = getQueryVariable('order'); // e.g. ?order=1.asc
+    const requestedCols = getQueryVariable('cols'); // e.g. ?cols=0.1.10.11
+    const requestedPageSize = getQueryVariable('n'); // e.g. ?n=50
+    const requestedPage = getQueryVariable('p'); // e.g. ?n=50&p=2
+    const requestedSearch = getQueryVariable('q'); // e.g. q=citta
+    
+    if (requestedOrder !== undefined) {
+      const order = requestedOrder.split('.');
+      if (order.length <= 2) {
+        order[0] = parseInt(order[0]);
+        mainContentList.order(order);
       }
-      if (requestedCols) {
-        const cols = requestedCols.split('.');
-        mainContentList.columns().every((i) => {
-          mainContentList.columns(i).visible(cols.includes(i.toString()));
-        });
+    }
+    if (requestedSearch !== undefined) {
+      document.getElementById('dt-search-0').value = requestedSearch;
+      mainContentList.search(requestedSearch);
+    }
+    if (requestedCols !== undefined) {
+      const cols = requestedCols.split('.');
+      mainContentList.columns().every((i) => {
+        mainContentList.columns(i).visible(cols.includes(i.toString()));
+      });
+    }
+    if (requestedPageSize !== undefined) {
+      const ps = parseInt(requestedPageSize);
+      if (ps > 0) {
+        mainContentList.page.len(ps);
       }
-      if (requestedPageSize) {
-        const ps = parseInt(requestedPageSize);
-        if (ps > 0) {
-          mainContentList.page.len(ps);
-          needsDraw = true;
-        }
+    }
+    mainContentList.draw();
+    if (requestedPage !== undefined) {
+      const p = parseInt(requestedPage);
+      if (p >= 0) {
+        mainContentList.page(p).draw(false);
       }
-      if (needsDraw) {
-        mainContentList.draw();
-      }
-      if (requestedPage) {
-        const p = parseInt(requestedPage);
-        if (p >= 0) {
-          mainContentList.page(p).draw(false);
-        }
-      }
-    }, 5);
+    }
+    setTimeout(() => window.tableDrawLock = undefined, 5);
   }
+  updateTableToReflectURLParams();
+  addEventListener('popstate', updateTableToReflectURLParams);
+
+  function getURLForCurrentTable() {
+    const url = new URL(location);
+    url.searchParams.set('n', mainContentList.page.len());
+    url.searchParams.set('p', mainContentList.page());
+    url.searchParams.set('order', mainContentList.order().flat().join('.'));
+    const vises = mainContentList.columns().visible();
+    url.searchParams.set('cols', vises.reduce((r,c,i)=>c?[...r,i]:r,[]).join('.'));
+    url.searchParams.set('q', mainContentList.search());
+    return url;
+  }
+  function pushNewTableState() {
+    if (window.tableDrawLock) return;
+    history.replaceState({},'',getURLForCurrentTable());
+  }
+  setTimeout(() => {
+    history.replaceState({},'',getURLForCurrentTable());
+    mainContentList.on('draw', pushNewTableState);
+    mainContentList.on('column-visibility.dt', pushNewTableState);
+  }, 200);
 </script>
