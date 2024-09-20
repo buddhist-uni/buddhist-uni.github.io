@@ -1,19 +1,20 @@
 ---
+title: All Content
+section: library
 layout: default
+permalink: /content/all/
 ---
 
-<article class="content-category">
+<article>
 
   <header class="post-header">
-    <a href="/content/"><i>Back to</i> all content types</a>
+    <a href="/library/"><i>Back to library</i></a>
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <a href="/feed/content/{{ page.slug }}.xml"><i class="fas fa-rss-square"></i> RSS Feed</a>
   </header>
 
   <div class="post-content">
-    {{ content }}
-    {%- assign contents = site.content | where: "category", page.slug -%}
-    {% include big_content_table.html contents=contents %}
+    {% include big_content_table.html contents=site.content %}
   </div>
 
 </article>

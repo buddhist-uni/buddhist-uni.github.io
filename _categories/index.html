@@ -1,0 +1,37 @@
+---
+title: "All Content"
+permalink: "/content/"
+layout: default
+---
+
+<article class="content-category"></article>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <a href="/feed/content.xml"><i class="fas fa-rss-square"></i> RSS Feed</a>
+  </header>
+
+  <div class="post-content">
+    <h2><a href="/content/all"><i class="fas fa-table"></i> The Big Table</a></h2>
+    <p>Click the link above to view all {{site.content.size}} pieces of content across the site in one big table.</p>
+    <h2><i class="fas fa-photo-video"></i> Tables by Type</h2>
+    <table>
+      <colgroup>
+        <col width="70%" />
+        <col width="30%" />
+      </colgroup>
+      <thead>
+        <tr class="header">
+        <th>Category</th>
+        <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for catentry in site.data.content_categories %}
+        {% assign cats = catentry | split: "dne,,,,,dne" %}{% assign cats = catentry.subs | default: cats %}
+        {% for catslug in cats %}
+        {% include content-category-row.html category=catslug %}
+        {% endfor %}{% endfor %}
+        <tr><td><a href="/content/all">TOTAL</a></td><td>{{ site.content.size }}</td></tr>
+      </tbody>
+    </table>
+</div></article>
