@@ -117,7 +117,13 @@ layout: default
     "order": [], // Don't sort until asked to
     "layout": {
       "topStart": {
-          "buttons": ["colvis"]
+          "buttons": [
+            {
+              "extend": "colvis",
+              "columns": ":not(.unhideable)",
+              "popoverTitle": "<div style='color:gray;font-size:17px;display:flex;justify-content:space-between;width:100%'><span>Name</span><span>✓</span></div>"
+            },
+          ]
       },
       "bottomStart": {
         "pageLength": {
@@ -126,6 +132,7 @@ layout: default
       }
     },
     "columnDefs": [
+      { "targets": [0], "visible": true, "className": "unhideable"},
       { "targets": [1], "visible": initialwindowwidth > 550},
       { "targets": [2], "width": "70px", "visible": initialwindowwidth > 475}, 
       { "targets": [4], "visible": initialwindowwidth > 700},
@@ -190,14 +197,11 @@ layout: default
   }
   function pushNewTableState() {
     if (window.tableDrawLock) return;
-    clearTimeout(window.stateTimeout);
-    window.stateTimeout = setTimeout(() => {
-      history.pushState({},'',getURLForCurrentTable())
-    }, 700);
+    history.replaceState({},'',getURLForCurrentTable());
   }
   setTimeout(() => {
-    window.stateTimeout = undefined;
     history.replaceState({},'',getURLForCurrentTable());
     mainContentList.on('draw', pushNewTableState);
-  }, 2000);
+    mainContentList.on('column-visibility.dt', pushNewTableState);
+  }, 200);
 </script>
