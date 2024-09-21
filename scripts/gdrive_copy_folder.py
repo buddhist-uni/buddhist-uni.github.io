@@ -124,9 +124,11 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
     if source_folder_id in COURSE_FOR_PUBLIC_FOLDER:
       GDRIVE_FOLDERS_DATA[COURSE_FOR_PUBLIC_FOLDER[source_folder_id]]['new_public'] = gdrive.FOLDER_LINK.format(dest_folder)
       json.dump(GDRIVE_FOLDERS_DATA, open(gdrive.FOLDERS_DATA_FILE, 'w'), indent=1, sort_keys=True)
-    if source_folder_id in COURSE_FOR_PRIVATE_FOLDER:
+    elif source_folder_id in COURSE_FOR_PRIVATE_FOLDER:
       GDRIVE_FOLDERS_DATA[COURSE_FOR_PRIVATE_FOLDER[source_folder_id]]['new_private'] = gdrive.FOLDER_LINK.format(dest_folder)
       json.dump(GDRIVE_FOLDERS_DATA, open(gdrive.FOLDERS_DATA_FILE, 'w'), indent=1, sort_keys=True)
+    else:
+      replace_text_across_repo(source_folder_id, dest_folder)
   children_query = f"'{source_folder_id}' in parents and trashed=false"
   for child in gdrive.all_files_matching(children_query, SOURCE_FILE_FIELDS):
     if child['mimeType'] == 'application/vnd.google-apps.folder':

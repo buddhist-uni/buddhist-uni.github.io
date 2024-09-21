@@ -87,5 +87,5 @@ title: "The Tag Ontology Viewer"
   ).sort(
     (a, b) => b.count - a.count || a.slug.localeCompare(b.slug)
   );
-  d3.select("#others").html(`<h2>Misc Tags</h2><p>Below is a list of all the "shadow" tags which have been used on library content but which haven't yet been added to the above ontology. Some of these are vaguely planned for addition in the far future, but some are just keywords.</p><table><tr><th>Tag</th><th>Content Count</th></tr>${ots.map((t)=>`<tr><td><a href="https://buddhistuniversity.net/search/?q=tag%3A${t.slug}">${t.slug}</a></td><td>${t.count}</td></tr>`).join('')}</table>`);
+  d3.select("#others").html(`<h2>Misc Tags</h2><p>Below is a list of all the "shadow" tags which have been used on library content but which haven't yet been added to the above ontology. Some of these are vaguely planned for addition in the far future, but some are just keywords.</p><table><tr><th>Tag</th><th>Content Count</th></tr>${ots.map((t)=>`<tr><td><a href="https://buddhistuniversity.net/search/?q=tag%3A${t.slug.replace("-","%20tag%3A")}">${t.slug}</a></td><td>${t.count}</td></tr>`).join('')}</table>`);
 </script>
