@@ -29,6 +29,7 @@ Here you'll find the latest and greatest publications in the library sorted by y
 
 ### [<i class="fas fa-table"></i> Table](/content/all/)
 Here you'll find every piece of content across the site in a giant, interactive table.
+See [<i class="fas fa-photo-video"></i> Tables by Type] for sub-tables organized by content categories.
 
 ### [<i class="fas fa-search"></i> Search](/search)
 Type in what you're looking for and see what comes up!
@@ -47,7 +48,7 @@ This website started off as a Google Drive folder, which still serves as this we
 {% if site.show_bibtex %}
 You can download [the entire library as a Bibtex Database (`.bib`) file here]({% link content.bib %}){:ga-event-value="1"}, suitable for importing into your favorite reference manager. You can find [an XML Feed of all items in the library here](/feed/content.xml).{% endif %}
 
-You can also find lists of our:
+And here are lists of our:
   - [<i class="far fa-building"></i> Publishers](/publishers)
   - [<i class="far fa-newspaper"></i> Journals](/journals)
   - [<i class="fas fa-swatchbook"></i> Series](/series)
