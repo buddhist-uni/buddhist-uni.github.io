@@ -1,0 +1,194 @@
+{%- assign contents = include.contents | sort: "slug" | reverse | sort: "expected_value", "first" | reverse -%}
+<div style="display: none;" id="table-loading"><h3><i class="fas fa-circle-notch fa-spin"></i> Table Loading...</h3></div>
+<script>
+  document.getElementById("table-loading").style = "";
+</script>
+<table id="mainContentList">
+  <thead>
+    <th>Name</th>
+    <th>Formats</th>
+    <th>Year</th>
+    <th>Author(s)</th>
+    <th>Featured In...</th>
+    <th>Date Added</th>
+    <th>Size</th>
+    <th><i class="fas fa-cloud-arrow-down"></i><span style="display: none">Downloads</span></th>
+  </thead>
+  <tbody>
+    {%- for p in contents -%}
+      <tr id="{{ p.slug }}">
+        <td><a href="{{ p.url }}" target="_blank">{%- include_cached content_icon.html category=p.category subcat=p.subcat -%} {{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></td>
+        <td>{%- include content_filelinks.html content=p newtab=true -%}</td>
+        <td>{{ p.year }}</td>
+        <td>{%- if p.authors.size > 0 -%}
+          {%- include_cached content_authors_string.html content=p -%}
+        {%- elsif p.editor -%}
+          {%- assign editors = p.editor | split: " and " -%}
+          {%- include_cached content_authors_string.html authors=editors -%}
+        {%- elsif p.reader -%}
+          {%- assign readers = p.reader | split: " and " -%}
+          {%- include_cached content_authors_string.html authors=readers -%}
+        {%- elsif p.translator -%}
+          {%- assign translators = p.translator | split: " and " -%}
+          {%- include_cached content_authors_string.html authors=translators -%}
+        {%- endif -%}
+        </td>
+        {%- assign primarytag = false -%}
+        {%- assign ordinality = 9999 -%}
+        {%- if p.course -%}
+          {%- for candidatecourse in site.courses -%}
+            {%- if p.course == candidatecourse.slug -%}
+              {%- capture primarytag -%}<a href="{{ candidatecourse.url }}">
+                <i class="{{ candidatecourse.icon }}"></i>
+                {{ candidatecourse.title | escape }}
+              </a>{%- endcapture -%}
+              {%- assign ordinality = forloop.index -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- unless primarytag -%}
+            {%- for candidatetag in site.tags -%}
+              {%- if candidatetag.slug == p.course -%}
+                {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
+                  <i class="fas fa-tag"></i>
+                  {{ candidatetag.title | escape }}
+                </a>{%- endcapture -%}
+                {%- assign ordinality = forloop.index | plus: site.courses.size -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endunless -%}
+        {%- endif -%}
+        {%- unless primarytag -%}
+          {%- for candidatetag in site.tags -%}
+            {%- if p.tags contains candidatetag.slug -%}
+              {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
+                <i class="fas fa-tag"></i>
+                {{ candidatetag.title | escape }}
+              </a>{%- endcapture -%}
+              {%- assign ordinality = forloop.index | plus: site.courses.size -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endunless -%}
+        <td data-order="{{ ordinality }}">
+          {%- if primarytag -%}
+            {{ primarytag }}
+          {%- endif -%}
+        </td>
+        <td>
+          {{ p.date | date: "%Y-%m-%d %H:%M" }}
+        </td>
+        <td data-order="{{ p.total_mins }}">
+          {%- include content_size.html content=p -%}
+        </td>
+        <td>
+          {%- assign plus = 1 -%}
+          {%- unless p.external_url or p.drive_links.size > 0 -%}{%- assign plus = 0 -%}{%- endunless -%}
+          {{ site.data.content_downloads[p.content_path] | default: 0 | plus: plus }}
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+<link rel="stylesheet" href="/assets/css/datatables{%- if jekyll.environment == "production" -%}.min{%- endif -%}.css" />
+<style>
+  #main {max-width: revert;}
+</style>
+<script src="/assets/js/datatables{%- if jekyll.environment == "production" -%}.min{%- endif -%}.js"></script>
+<script src="/assets/js/utils.js"></script>
+<script>
+  const initialwindowwidth = $(window).width();
+  const mainContentList = new DataTable("#mainContentList", {
+    "order": [], // Save the page order as the default sort
+    "layout": {
+      "topStart": {
+          "buttons": [
+            {
+              // "popoverTitle": "",
+              "extend": "colvis",
+              "columns": ":not(.unhideable)"
+            },
+          ]
+      },
+      "bottomStart": {
+        "pageLength": {
+          "menu": [10, 25, 50, 100, 250, 500, 1000]
+        }
+      }
+    },
+    "columnDefs": [
+      { "targets": [0], "visible": true, "className": "unhideable"},
+      { "targets": [1], "visible": initialwindowwidth > 550},
+      { "targets": [2], "width": "70px", "visible": initialwindowwidth > 475}, 
+      { "targets": [4], "visible": initialwindowwidth > 700},
+      { "targets": [5], "visible": initialwindowwidth > 790},
+      { "targets": [6], "visible": initialwindowwidth > 850},
+      { "targets": [7], "visible": initialwindowwidth > 820}
+    ]
+  });
+
+  function updateTableToReflectURLParams() {
+    window.tableDrawLock = true;
+    const requestedOrder = getQueryVariable('order'); // e.g. ?order=1.asc
+    const requestedCols = getQueryVariable('cols'); // e.g. ?cols=0.1.10.11
+    const requestedPageSize = getQueryVariable('n'); // e.g. ?n=50
+    const requestedPage = getQueryVariable('p'); // e.g. ?n=50&p=2
+    const requestedSearch = getQueryVariable('q'); // e.g. q=citta
+    
+    if (requestedOrder !== undefined) {
+      const order = requestedOrder.split('.');
+      if (order.length <= 2) {
+        order[0] = parseInt(order[0]);
+        mainContentList.order(order);
+      }
+    }
+    if (requestedSearch !== undefined) {
+      document.getElementById('dt-search-0').value = requestedSearch;
+      mainContentList.search(requestedSearch);
+    }
+    if (requestedCols !== undefined) {
+      const cols = requestedCols.split('.');
+      mainContentList.columns().every((i) => {
+        mainContentList.columns(i).visible(cols.includes(i.toString()));
+      });
+    }
+    if (requestedPageSize !== undefined) {
+      const ps = parseInt(requestedPageSize);
+      if (ps > 0) {
+        mainContentList.page.len(ps);
+      }
+    }
+    mainContentList.draw();
+    if (requestedPage !== undefined) {
+      const p = parseInt(requestedPage);
+      if (p >= 0) {
+        mainContentList.page(p).draw(false);
+      }
+    }
+    setTimeout(() => window.tableDrawLock = undefined, 5);
+  }
+  updateTableToReflectURLParams();
+  addEventListener('popstate', updateTableToReflectURLParams);
+
+  function getURLForCurrentTable() {
+    const url = new URL(location);
+    url.searchParams.set('n', mainContentList.page.len());
+    url.searchParams.set('p', mainContentList.page());
+    url.searchParams.set('order', mainContentList.order().flat().join('.'));
+    const vises = mainContentList.columns().visible();
+    url.searchParams.set('cols', vises.reduce((r,c,i)=>c?[...r,i]:r,[]).join('.'));
+    url.searchParams.set('q', mainContentList.search());
+    return url;
+  }
+  function pushNewTableState() {
+    if (window.tableDrawLock) return;
+    history.replaceState({},'',getURLForCurrentTable());
+  }
+  setTimeout(() => {
+    history.replaceState({},'',getURLForCurrentTable());
+    mainContentList.on('draw', pushNewTableState);
+    mainContentList.on('column-visibility.dt', pushNewTableState);
+  }, 200);
+  $("#table-loading").hide();
+</script>
