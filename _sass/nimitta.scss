@@ -165,6 +165,17 @@ a.btn:visited {
     color: initial;
 }
 
+a[target=_blank]:after {
+    font-family: 'font awesome 6 free';
+    font-weight: 900;
+    content: " \f08e";
+    vertical-align: super;
+    font-size: 60%;
+}
+a.btn:after {
+    content: "";
+}
+
 .Label strong {
     font-weight: bold;
 }

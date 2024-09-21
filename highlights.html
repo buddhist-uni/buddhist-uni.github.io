@@ -29,7 +29,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {% for c in newc %}
 <div class="mb-3">{% include simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
 {% endfor %}
-<p>...  To continue, see <a href="/content/all/?n=10&order=5.desc&p=1&cols=0.3.5&q=">the content table, sorted by date</a>.</p>
+<p>...  To continue, see <a href="/content/all/?n=10&order=5.desc&cols=0.3.5">the content table, sorted by date</a>.</p>
 {% endif %}
 
 {% assign allcontent = allcontent | where: "status", "featured" %}

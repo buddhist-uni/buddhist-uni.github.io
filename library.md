@@ -28,8 +28,8 @@ Find a topic that interests you in the topic index or simply start from the top 
 Here you'll find the latest and greatest publications in the library sorted by year.
 
 ### [<i class="fas fa-table"></i> Table](/content/all/)
-Here you'll find every piece of content across the site in a giant, interactive table.
-See [<i class="fas fa-photo-video"></i> Tables by Type] for sub-tables organized by content categories.
+Here you'll find every piece of content across the site in a giant, interactive table.  
+See [Tables by Type](/content/) for sub-tables organized by content category.
 
 ### [<i class="fas fa-search"></i> Search](/search)
 Type in what you're looking for and see what comes up!
