@@ -8,6 +8,7 @@ import tty
 import os
 import io
 import fcntl
+import subprocess
 import struct
 import re
 import string
@@ -56,6 +57,26 @@ HOSTNAME_BLACKLIST = {
 }
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
+
+def git_grep(pattern: str) -> list[Path]:
+  try:
+    result = subprocess.run(
+      ['git', 'grep', '-l', pattern],
+      cwd=git_root_folder,
+      capture_output=True,
+      text=True,
+      check=True
+    )
+    return [git_root_folder / file for file in result.stdout.splitlines()]
+  except subprocess.CalledProcessError:
+    return []
+
+def replace_text_across_repo(old_uuid: str, new_uuid: str):
+  for file_path in git_grep(old_uuid):
+    content = file_path.read_text()
+    new_content = content.replace(old_uuid, new_uuid)
+    file_path.write_text(new_content)
+    print(f"Updated {file_path.relative_to(git_root_folder)} ({old_uuid} -> {new_uuid})")
 
 def approx_eq(a, b, absdiff=1.0, percent=1.0):
   diff = a - b

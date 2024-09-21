@@ -4,7 +4,7 @@ authors:
   - "Seishi Karashima"
 external_url: "https://archive.org/download/aririab-vol-xix/Indian%20Folk%20Etymologies%20and%20their%20Reflections%20in%20Chinese%20Translations.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1lMcZTMEcobGdlyU4laMTy21yyYhcclq2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Yds-xD4dLBLG2yjXAXvA38WlPayGbmj2/view?usp=drivesdk"
 tags:
   - agama
   - east-asian-roots

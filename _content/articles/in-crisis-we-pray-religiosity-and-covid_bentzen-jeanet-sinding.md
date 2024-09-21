@@ -5,7 +5,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc8557987?pdf=render"
 source_url: "https://doi.org/10.1016/j.jebo.2021.10.014"
 drive_links:
-  - "https://drive.google.com/file/d/1VMVGqcNyl7UTibHXwqeqP7_8QndKonyl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zXrZqxpcP-zdzec8bVfy5cT2yq3Jeu3L/view?usp=drivesdk"
 tags:
   - religion
   - disaster

@@ -3,7 +3,7 @@ title: "Buddhadāsa Bhikkhu's Contribution to the World"
 authors:
   - "Santikaro Bhikkhu"
 drive_links:
-  - "https://drive.google.com/file/d/1j2Q-dv0ZhSvD9jRxDU6sSUN8mmvBnnkq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Je1QcbfN-eSB-hasJTd1gFoQiTegpgVh/view?usp=drivesdk"
 tags:
   - ethics
   - becon

@@ -7,7 +7,7 @@ authors:
 external_url: "https://docs.iza.org/dp9485.pdf"
 source_url: "https://doi.org/10.1016/j.worlddev.2017.07.012"
 drive_links:
-  - "https://drive.google.com/file/d/1kRFsptXw8XHxz3l1JzOjFq4cwOsDtijX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C1gfICBcJhjHyg1Uor2SAaH23Y072fI6/view?usp=drivesdk"
 tags:
   - gender
   - india

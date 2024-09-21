@@ -7,7 +7,7 @@ volume: 4
 pages: "88--104"
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/45/73"
 drive_links:
-  - "https://drive.google.com/file/d/1uSQGi6DhR6wGv6t8zV2TwzgD7pw7Kc12/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ssmnUySLY2k1gzMU7BSXLRdb4st61h9P/view?usp=drivesdk"
 year: 2013
 course: sri-lanka
 status: featured

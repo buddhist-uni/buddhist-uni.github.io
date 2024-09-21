@@ -5,7 +5,7 @@ authors:
   - "Terike Haapoja"
 external_url: "https://punctumbooks.com/titles/museum-of-nonhumanity/"
 drive_links:
-  - "https://drive.google.com/file/d/1ETWBr4Zy6Is2H_45IIHewOyk2sEIXzBE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XB-9UV0Q-AJCOJFGsCxBOMhKxG5mSbs6/view?usp=drivesdk"
 tags:
   - world
   - things

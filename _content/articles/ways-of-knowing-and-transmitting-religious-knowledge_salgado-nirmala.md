@@ -4,7 +4,7 @@ authors:
   - "Nirmala S. Salgado"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8842/2749"
 drive_links:
-  - "https://drive.google.com/file/d/1cG9r28OWNiQ4sSzG_CEymKzSUh6FgCR8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/155LwcmbS3T2XVc5zcJfVaAqoyJhDqzvj/view?usp=drivesdk"
 tags:
   - nuns
   - sri-lankan

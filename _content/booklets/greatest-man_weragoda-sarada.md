@@ -6,7 +6,7 @@ authors:
 editor: "Edwin Ariyadasa"
 external_url: "http://www.kbrl.gov.mm/book/details/003259"
 drive_links:
-  - "https://drive.google.com/file/d/192SMF6RHyefRnJOuwKs9Ur2nfeIXmlOZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sRivFit2j8GFOOso2KD7pmkOMorBH8Hy/view?usp=drivesdk"
 tags:
   - buddha
   - bart

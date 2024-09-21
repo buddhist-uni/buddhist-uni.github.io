@@ -4,7 +4,7 @@ authors:
   - hinuber-oskar-v
 external_url: "https://archive.org/download/aririab-vol-ix/Everyday%20Life%20in%20an%20Ancient%20Buddhist%20Monastery%20-%20von%20Hinuber.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1jYHOcgywDEEUvpHjSkWyGOLyEnWN29VB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1leQZzkfWjfvx1RUfHpnFuTp_684_siIz/view?usp=drivesdk"
 tags:
   - form
   - historiography

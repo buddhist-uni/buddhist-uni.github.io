@@ -7,7 +7,7 @@ volume: 28
 pages: "49--59"
 file_links:
   - "exclusive_01/Sāriputtas%20Three%20Works%20on%20the%20Samantapāsādikā%20-%20Kate%20Crosby.pdf"
-drive_links: ["https://drive.google.com/file/d/1sD2BlH7fVV8Q-FzCWNbNVsFsPu2jVLZV/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1upFCdSHWiAVsAapDj6FHq4Z6DeSRjPpH/view?usp=drivesdk"]
 tags:
   - theravada-roots
   - theravada-vinaya

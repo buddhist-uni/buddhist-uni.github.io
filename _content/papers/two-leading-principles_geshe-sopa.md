@@ -5,7 +5,7 @@ authors:
 editor: "Minoru Kiyota"
 source_url: "https://doi.org/10.1515/9780824885984-005"
 drive_links:
-  - "https://drive.google.com/file/d/1gwhxA4Ef_lURR3-qu-yQdPh51syEQktk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rjz-bNDkJ9yhofAgD4cJme3aZO_x-jHk/view?usp=drivesdk"
 tags:
   - path
   - bodhissattva

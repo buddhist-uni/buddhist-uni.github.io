@@ -9,7 +9,7 @@ authors:
 external_url: "https://pureportal.coventry.ac.uk/files/31931192/Binder1.pdf"
 source_url: "https://doi.org/10.1016/j.evolhumbehav.2020.07.001"
 drive_links:
-  - "https://drive.google.com/file/d/1qF8mi5UasETzMO1f_af-4h-c-_YnwTtr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10Hvwi16T5wIO6yePKg5lMpR892HaNQ5h/view?usp=drivesdk"
 tags:
   - religion # 2 ⭐ as it seems obvious?
   - karma

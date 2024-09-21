@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/28/jesus-and-the-buddha/"
 drive_links:
-  - "https://drive.google.com/file/d/1ieSs2-q-2OMflCdn-6FCcsqZtvIUFmMk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aNFjFaWf9AdFEjr6sc0qygnnu7ryIh9k/view?usp=drivesdk"
 course: interfaith
 tags:
   - christianity

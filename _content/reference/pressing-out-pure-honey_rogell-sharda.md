@@ -4,7 +4,7 @@ authors:
   - "Sharda Rogell"
 external_url: "https://shardarogell.com/book"
 drive_links:
-  - "https://drive.google.com/file/d/1tPNfOxq9huJ74abAEvAnFBQ9zXXRVsGQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19fGo7DkOuwzvQbZquJ_toW9onH0XJYHE/view?usp=drivesdk"
 tags:
   - mn
 year: 2003

@@ -6,7 +6,7 @@ authors:
   - "Cameron David Warner"
 external_url: "https://discovery.ucl.ac.uk/id/eprint/10144167/1/Impermanence.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/13UAGIbu5dA7o4x2WXMghTJ4gyxLwxcbg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Si8HBl5BhDG4g450lPd5-QDKmVWgeCUQ/view?usp=drivesdk"
 tags:
   - time
   - academic

@@ -3,7 +3,7 @@ title: "The Susīma Sutta and the Wisdom-Liberated Arahant"
 authors:
   - bodhi
 drive_links:
-  - "https://drive.google.com/file/d/17PQZq2kGG-y-abdCzOYyv9VIv18v3ESE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gNowAZ3mIoc1sGJP_A-O2qBO2nLrtGSH/view?usp=drivesdk"
 file_links:
   - "exclusive_01/The%20Susīma-sutta%20and%20the%20Wisdom-Liberated%20Arahant%20-%20Bhikkhu%20Bodhi.pdf"
 tags:

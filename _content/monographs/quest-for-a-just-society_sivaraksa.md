@@ -4,7 +4,7 @@ authors:
   - "Sulak Sivaraksa"
 external_url: "https://pagoda.or.th/ebook-english-books/download/11032/11015/52.html"
 drive_links:
-  - "https://drive.google.com/file/d/1FRHp-mqkoUJd_88zezpXGq0ilW7Yrw4-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13iPGF7D8mVcMJGX7WeDrag8tRrAXdwh2/view?usp=drivesdk"
 tags:
   - modern
   - thai

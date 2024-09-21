@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/Burmese%20Manuscripts%20in%20the%20Library%20of%20Congress%20-%20William%20Pruitt.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1svooKcBWhIaJKzVCDEPayQ8NtPg6p2GS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YKyz0avTv6a_QR5TOj5z9SZLvsaUJCvh/view?usp=drivesdk"
 tags:
   - american
   - burmese-history

@@ -4,7 +4,7 @@ authors:
   - "Suren Rāghavan"
 external_url: "http://jocbs.org/index.php/jocbs/article/view/7"
 drive_links:
-  - "https://drive.google.com/file/d/1rnBaQIvP7cY6xgfpWqFXqRVveGBLKvtq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WN9qwoRQ6grMwZP4D8EqwAZzLlS_zOdt/view?usp=drivesdk"
 course: sri-lanka
 tags:
   - sri-lankan

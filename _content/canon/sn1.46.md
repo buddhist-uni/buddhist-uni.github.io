@@ -5,7 +5,7 @@ slug: "sn.001.046"
 subcat: poetry
 external_url: "https://suttacentral.net/sn1.46/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1UlZtLx6zA8PyEFmnjMCkjXqbkkfDRPOJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cFmp-X_9edo9GzAlobkiePIEy_vSz9vr/view?usp=drivesdk"
 tags:
   - buddhism
   - canonical-poetry

@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Background%20to%20the%20origin%20of%20earliest%20Buddhism_text.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume15-16.asp"
 drive_links:
-  - "https://drive.google.com/file/d/1xQEex2s1kO3XjGOcljVhmrENW0tgV62P/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10tfYx1Nls6ZFFjV_R3Ley4xYgegc6By3/view?usp=drivesdk"
 tags:
   - setting
   - cities

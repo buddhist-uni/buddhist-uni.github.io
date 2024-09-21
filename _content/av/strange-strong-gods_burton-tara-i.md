@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Matthew Sitman and Sam Adler-Bell"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/strange-gods-and-strong-gods"
 drive_links:
-  - "https://drive.google.com/file/d/1xcT3tFIkZPwDFokxYi3IL505wkwbYp-9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BVhcMkPXUhdiS9674L-JCp2owSvsDa2i/view?usp=drivesdk"
 course: the-west
 tags:
   - new-age

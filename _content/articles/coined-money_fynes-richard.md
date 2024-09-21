@@ -3,7 +3,7 @@ title: "Coined Money and Early Buddhism"
 authors: ["Richard Fynes"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/109/126"
 drive_links:
-  - "https://drive.google.com/file/d/17UbbcVHBZt5yDHnbRzbnWpJV0Qnd-fbK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aBO0lDnPLgKd-9--vtTSNFOy8uSqo_E9/view?usp=drivesdk"
 tags:
   - setting
   - becon

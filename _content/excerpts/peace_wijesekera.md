@@ -4,7 +4,7 @@ authors:
   - wijesekera
 editor: "M. H. F. Jayasuriya"
 drive_links:
-  - "https://drive.google.com/file/d/1BIpnS1vHcoiclKLHS7Sf6iBV_U_GYM4N/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MkRDn8PY4i6fSUUWoq__31MYu5iNPvLQ/view?usp=drivesdk"
 # only including for its rarity
 tags:
   - sangha

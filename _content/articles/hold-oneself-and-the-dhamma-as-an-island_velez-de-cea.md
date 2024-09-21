@@ -3,7 +3,7 @@ title: "The Significance of the Injunction to Hold Oneself and the Dhamma as an 
 authors: ["Abraham Vélez de Cea"]
 file_links:
   - "exclusive_01/The%20Injunction%20to%20Hold%20Oneself%20-%20Vélez%20de%20Cea.pdf"
-drive_links: ["https://drive.google.com/file/d/1KtNBv4UyIrC0KmhrGvxD5xvxekiLtwJs/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1lencO8sg5T_g_WDOAb805-f4nl63Wqxk/view?usp=drivesdk"]
 journal: bsr
 year: 2000
 volume: 17

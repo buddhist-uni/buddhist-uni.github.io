@@ -4,8 +4,8 @@ authors:
   - geoff
 external_url: "https://www.dhammatalks.org/ebook_index.html#BuddhasTeachings"
 drive_links:
-  - "https://drive.google.com/file/d/1xfCrMhCrvVYKVVzwrDgPocwWae4J_lVP/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1xkEAUqAQxQ8YeAaMd2lZpS6_e_VbgrMy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MRBVWaaW8gnC4NHdZM0E4FJUnFQimJZF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I463FSR_Y1yxzyIaEeegztgohRLMqmDs/view?usp=drivesdk"
 tags:
   - buddhism
   - theravada

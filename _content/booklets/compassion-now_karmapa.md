@@ -6,7 +6,7 @@ translator: "Lama Yeshe Gyamtso"
 external_url: "https://dharmaebooks.org/compassion-now/"
 formats: [epub]
 drive_links:
-  - "https://drive.google.com/file/d/1J2nRL1ggysKjCCF-WP5Wy7LuwdcWRg3o/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SoQQKhNasd1_q3RTfpHTITs_J9MLN19W/view?usp=drivesdk"
 tags:
   - mahayana
   - karuna

@@ -292,7 +292,7 @@ def _perform_upload(file_metadata, media, verbose=True, update_file=False):
         print("An error occurred: ", str(e))
         return False
 
-def create_folder(name, parent_folder):
+def create_folder(name, parent_folder, custom_properties: dict[str, str] = None):
   # dance to invalidate the get_subfolders cache
   cachekey = get_subfolders._get_args_id(parent_folder)
   get_subfolders.store_backend.clear_item((get_subfolders.func_id, cachekey))
@@ -301,13 +301,15 @@ def create_folder(name, parent_folder):
     'mimeType': 'application/vnd.google-apps.folder',
     'parents': [parent_folder]
   }
+  if custom_properties:
+    metadata['properties'] = custom_properties
   ret = session().files().create(
     body=metadata,
     fields='id'
   ).execute()
   return ret.get('id')
 
-def create_drive_shortcut(gfid, filename, folder_id):
+def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] = None):
   drive_service = session()
   shortcut_metadata = {
        'name': filename,
@@ -317,6 +319,8 @@ def create_drive_shortcut(gfid, filename, folder_id):
        },
        'parents': [folder_id]
   }
+  if custom_properties:
+    shortcut_metadata['properties'] = custom_properties
   shortcut = drive_service.files().create(
     body=shortcut_metadata,
     fields='id,shortcutDetails'

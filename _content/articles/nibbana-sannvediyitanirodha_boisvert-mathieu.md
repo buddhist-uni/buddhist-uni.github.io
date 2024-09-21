@@ -2,7 +2,7 @@
 title: "Nibbāna and Saññvedayitanirodha: An Endless Controversy"
 authors: ["Mathieu Boisvert"]
 external_url: "https://www.shin-ibs.edu/documents/pwj-new/new9/07Boisvert.pdf"
-drive_links: ["https://drive.google.com/file/d/14pbR5FwG9jRURlelqqjAK9q-h8INUQa6/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1naJo-MvcWhAIew3ITusrGwFQg3UcZxz4/view?usp=drivesdk"]
 year: 1993
 journal: pw
 volume: 2

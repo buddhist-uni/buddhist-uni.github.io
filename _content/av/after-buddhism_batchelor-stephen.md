@@ -3,7 +3,7 @@ title: "After Buddhism"
 subcat: podcast
 authors: ["Stephen Batchelor"]
 external_url: "https://wisdomexperience.org/wisdom-podcast/stephen-batchelor/"
-drive_links: ["https://drive.google.com/file/d/1Odr0hmoDSVMN0zAosjkTDjzVQL14QvH-/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/17dQ4df5IA5wggp__XAdWZdgxh5YMc1LG/view?usp=drivesdk"]
 course: selling
 tags:
   - academic

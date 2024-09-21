@@ -4,7 +4,7 @@ authors:
   - "Sanghasen Singh"
 external_url: "https://doi.org/10.20769/jpbs.4.0_45"
 drive_links:
-  - "https://drive.google.com/file/d/1mf1BE013u0n8Jq_mGEhUfYkxRWD87WkQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jl8NkqnysgZNvbcA1pskZrQolWqtHgOc/view?usp=drivesdk"
 tags:
   - pali-language
   - sanskrit

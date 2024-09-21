@@ -9,7 +9,7 @@ authors:
 external_url: "https://boris.unibe.ch/154272/1/Vugt2020_Article_Inter-brainSynchronizationInTh__1_.pdf"
 source_url: "https://doi.org/10.31231/osf.io/f2ept"
 drive_links:
-  - "https://drive.google.com/file/d/1ONVAwccWegSJJui3DZi3DUv0KEuNoNbG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LVs7LzUYAl2W8xkS6vcxxjiqaNt0l1b_/view?usp=drivesdk"
 tags:
   - tibetan
   - neuroscience

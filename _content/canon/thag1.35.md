@@ -5,7 +5,7 @@ slug: "thag.01.35"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.35/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1NwTq9udaXmR1EcDN98NalI4ba7N-bp47/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r0Eq__SHKSDzWt7FcHFOBRt9-7vja_tg/view?usp=drivesdk"
 tags:
   - function
   - social

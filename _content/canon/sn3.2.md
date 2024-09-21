@@ -5,7 +5,7 @@ slug: "sn.003.002"
 subcat: poetry
 external_url: "https://suttacentral.net/sn3.2/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/19a8WrI_qTIXrkbNbF-NaqJUiRwClaTh5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dogYmM1az9NkAnEHYtZpKXPXk7SMoqf8/view?usp=drivesdk"
 tags:
   - defilements
   - inner

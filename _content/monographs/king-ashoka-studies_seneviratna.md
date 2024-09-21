@@ -4,7 +4,7 @@ authors:
   - "Anuradha Seneviratna"
 external_url: "https://www.bps.lk/olib/bp/bp410s_Seneviratna_Asoka-And-Buddhism.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1K7p4OWE668DaCnoxKEBZ9AxVfqrUhU3g/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19ciwZA9orwA2vuIIBmTEI7181kWSZYVe/view?usp=drivesdk"
 tags:
   - indian
 year: 1994

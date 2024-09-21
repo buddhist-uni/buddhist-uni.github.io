@@ -4,7 +4,7 @@ authors:
   - jayasaro
 external_url: "https://youtu.be/rDXsJF_rFG8"
 drive_links:
-  - "https://drive.google.com/file/d/10zZ7oSsJorYXfzGcubbP3QjWJWYSogo9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1N-KwkyJJkVl_ID9p8Dr_VtWWfWDxuFRf/view?usp=drivesdk"
 tags:
   - buddhism
   - philosophy

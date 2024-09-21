@@ -4,8 +4,8 @@ authors:
   - "Ashin Ottama"
 external_url: "https://www.bps.lk/olib/wh/wh425_Ottama_Message-in-Kamma-Rebirth-Samsara.html"
 drive_links:
-  - "https://drive.google.com/file/d/1mZG7NCUe7uvCa_yR0oFIWARqbQbgPKOj/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1ju2-bvdVA2UhvpkktkfBKwc2ahwv3xHs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KcnV51QI2lRnMxfMStHsPIfiY1Rjl0ml/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oZYUx0B0iGAv04kkaTqmFyjiZAK7gztQ/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-N9Zm9_L07yjKJdAHKtP2A9qIyWmXBvh/view?usp=drivesdk"
 formats: [pdf, epub, mp3]
 year: 1998

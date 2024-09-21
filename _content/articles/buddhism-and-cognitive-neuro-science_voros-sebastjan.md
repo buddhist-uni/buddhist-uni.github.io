@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/15075758/V%C3%B6r%C3%B6s_Sebastjan_2016_Buddhism_and_Cognitive_Neuro_Science_An_Uneasy_Liaison_Asian_Studies_4_1_61_80?source=swp_share"
 source_url: "https://doi.org/10.4312/as.2016.4.1.61-80"
 drive_links:
-  - "https://drive.google.com/file/d/1Jv2g-TC9zm66Qp0FxutkE0kI86cMgmdv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1da-_qRoMES2vFqvSypNXMY0P5oL3kSYO/view?usp=drivesdk"
 tags:
   - philosophy-of-science
   - psychology

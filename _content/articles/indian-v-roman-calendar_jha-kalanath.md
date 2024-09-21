@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Indian%20vis-a-vis%20Roman%20calendar_%20an%20appraisal%20in%20comparison_text.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume15-16.asp"
 drive_links:
-  - "https://drive.google.com/file/d/1yqQUbOJ1tyWnVRCkHyVbd-tZ7zyfj_ZV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1q80Q7SIAKV4HStqtxkBt_ZhsyOAhPmkG/view?usp=drivesdk"
 tags:
   - time
   - prehistory

@@ -10,7 +10,7 @@ address: "Kuala Lumpur"
 external_url: "https://archive.org/download/gems-of-buddhist-wisdom/Why%20Meditation%20-%20Piyananda_text.pdf"
 year: 1983
 drive_links:
- - "https://drive.google.com/file/d/1pPFG2-GXaXDPPRsoYLse5SUqTZxJ3aDW/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1BPAFJ7CTm5e5ah5YIsY3m-dSEhAlBLCU/view?usp=drivesdk"
 tags:
   - function
   - meditation

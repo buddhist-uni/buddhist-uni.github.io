@@ -8,7 +8,7 @@ authors:
 external_url: "https://academic.oup.com/psychsocgerontology/article-pdf/73/8/1439/25993534/gbw144.pdf"
 source_url: "https://doi.org/10.1093/geronb/gbw144"
 drive_links:
-  - "https://drive.google.com/file/d/1xXNxDS8QWK25hpGUt-8pRUTxFkYruT7w/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iy9OFFu4hjsdvVlZ5AuNsfh55WxPkAYT/view?usp=drivesdk"
 tags:
   - aging
   - religion

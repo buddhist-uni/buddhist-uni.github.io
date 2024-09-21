@@ -5,7 +5,7 @@ authors:
 editor: "M. H. F. Jayasuriya"
 external_url: "https://archive.org/details/in.ernet.dli.2015.463583/"
 drive_links:
-  - "https://drive.google.com/file/d/19q54jtZq6XkcPG537mc4sB91HXY-Kb2Q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w55daaasunDVMrXRgM7pE4WAVD0Ql8IK/view?usp=drivesdk"
 tags:
   - sutta
   - indic-religions

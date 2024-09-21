@@ -5,7 +5,7 @@ slug: "thag.06.09"
 subcat: poetry
 external_url: "https://suttacentral.net/thag6.9/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1o3vAY4KJncSFkO4RbvQCrt5hdah6lLiW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1H3CMC196_z7x0eS4mkgaqUxvDmmrVgqh/view?usp=drivesdk"
 tags:
   - buddha
   - conceit

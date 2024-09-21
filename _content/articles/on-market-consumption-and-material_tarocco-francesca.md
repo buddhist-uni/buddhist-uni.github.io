@@ -5,7 +5,7 @@ authors:
 external_url: "https://iris.unive.it/bitstream/10278/3684311/1/Tarocco%20religion.pdf"
 source_url: "https://doi.org/10.1080/0048721x.2011.624698"
 drive_links:
-  - "https://drive.google.com/file/d/19mLvwWBPrbJWnjzkLySvz53o0YIfeQQO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dUQ1-05htCqFXmU3lmMuuPnZmn_oyzc6/view?usp=drivesdk"
 tags:
   - media
   - modern

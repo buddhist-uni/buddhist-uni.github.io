@@ -4,7 +4,7 @@ authors: [hinuber-oskar-v]
 file_links:
   - "exclusive_01/The%20Oldest%20Dated%20Manuscript%20of%20the%20Milindapanha%20-%20Oskar%20Von%20Hinuber.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1_jUqxFSbVBEni07usdzbLesK4b7zNdev/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1iPh4KwbgeoUNDpLBi5fqDuwfJKlyo0wE/view?usp=drivesdk"]
 source_url: "https://archive.org/download/jpts-xi-1987/The%20Oldest%20Dated%20Manuscript%20of%20the%20Milindapanha%20-%20Oskar%20Von%20Hinuber_text.pdf"
 year: 1987
 volume: 11

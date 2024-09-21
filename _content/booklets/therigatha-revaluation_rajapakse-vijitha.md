@@ -4,8 +4,8 @@ authors:
   - "Vijitha Rajapakse"
 external_url: "https://www.bps.lk/olib/wh/wh436_RajaPakse_The-Therigatha--A-Revaluation.html"
 drive_links:
-  - "https://drive.google.com/file/d/15QY-7LUith9DgySsEtf6B3ONkppxlKXL/view?usp=sharing"
-  - "https://drive.google.com/file/d/1OG__5Uo6bzcwcuY8sAnKMjFfVfzBUGz0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tTSzVnNyYBzbZS_uvQuikK9n72uIkUrw/view?usp=sharing"
+  - "https://drive.google.com/file/d/1aaNe5MxHqPFTYv5QLP2dEjfD5r1eI5ek/view?usp=drivesdk"
 tags:
   - canonical-poetry
   - tg

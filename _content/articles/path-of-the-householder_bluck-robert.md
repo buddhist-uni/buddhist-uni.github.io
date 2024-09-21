@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/The%20Path%20of%20the%20Householder%20-%20Robert%20Bluck.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14r9ugOoGchgqj5_M_UiWPSYbD4FCQ4pv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1u6x59CTekmEmJg3uw8rn0zgftabBv7uC/view?usp=drivesdk"
 tags:
   - lay
 year: 2002

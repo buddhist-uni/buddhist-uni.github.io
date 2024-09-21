@@ -4,8 +4,8 @@ authors:
   - "John T. E. Richardson"
 external_url: "https://doi.org/10.1007/978-3-030-90984-0"
 drive_links:
-  - "https://drive.google.com/file/d/1umVu3NtZa-vwzVAqEfCA5ZN1yK184X4w/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/156j1jbfXh2XUL2CVzaeAe2pdFjXWW1qv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vTKXU0J-eZHKr4z12kN0DsIjmTnprRA7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nzpNHgrSayUlW0qzIDR5K_cAjcvKEGHI/view?usp=drivesdk"
 tags:
   - graphic-design
   - typography
