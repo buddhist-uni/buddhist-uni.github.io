@@ -4,7 +4,7 @@ authors:
   - "Karl Steel"
 editor: "Jeffrey Jerome Cohen"
 drive_links:
-  - "https://drive.google.com/file/d/1g6F5dLgsPubmkLg2t1ehwpOgoa9CNF_l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DdayAgq0DEBk9LdJDt8MlRKd3Q2ikpS6/view?usp=drivesdk"
 course: world
 tags:
   - the-west

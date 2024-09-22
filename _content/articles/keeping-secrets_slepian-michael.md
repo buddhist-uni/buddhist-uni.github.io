@@ -5,7 +5,7 @@ authors:
 editor: "Sean Illing"
 external_url: "https://www.vox.com/23272666/psychology-secrets-lying-privacy-michael-slepian"
 drive_links:
-  - "https://drive.google.com/file/d/1KzJ-F8pj0d_uyofOyD1G4xuEBNs8dAcG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1d6RsbSwJOKFPZPO6XnhQGkj8CkNKqPDv/view?usp=drivesdk"
 course: groups
 tags:
   - communication

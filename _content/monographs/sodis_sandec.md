@@ -5,7 +5,7 @@ authors:
   - "Martin Wegelin"
 external_url: "https://ec.europa.eu/echo/files/evaluation/watsan2005/annex_files/SKAT/SKAT1%20-Solar%20disinfection%20of%20water/Manual%20-%20solar%20disinfection%20of%20water%20-%20SODIS.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1sercbKWvblCT-k0sppEXscHA7I9FQ5xr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10tt_YYqowEASfBY5wiNokw_638vWMYlG/view?usp=drivesdk"
 course: world
 tags:
   - development

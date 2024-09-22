@@ -4,7 +4,7 @@ authors:
   - Maung Zarni
 year: 2020
 external_url: "https://www.aa.com.tr/en/europe/exclusive-rohingya-issue-not-muslims-v-s-buddhist-paradigm/1891919"
-drive_links: ["https://drive.google.com/file/d/1Nznu40Okdf4Nua3ZUcv4Gci1Y_dZpyV2/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1KDu-m5zfbQtREE6QEhDoYTgDOAsYUgs_/view?usp=drivesdk"]
 course: burma
 tags:
   - rohingya

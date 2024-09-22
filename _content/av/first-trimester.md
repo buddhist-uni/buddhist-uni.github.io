@@ -6,7 +6,7 @@ subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2020/07/29/438-first-trimester"
 hidden_links:
-  - "https://drive.google.com/file/d/1zZNtkaT8IzVsFrVHg2Hn10ZmnzwiKtcn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lF49LkzuWH9dEMRunlhTRlh6wU-wuiJU/view?usp=drivesdk"
 course: world
 tags:
   - pregnancy

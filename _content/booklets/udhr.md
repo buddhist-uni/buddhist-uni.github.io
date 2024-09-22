@@ -4,7 +4,7 @@ authors:
   - "The United Nations"
 external_url: "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
 drive_links:
-  - "https://drive.google.com/file/d/1Ho8rVgsDavDXLSGJOoiUb2OoBpgceAOp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FG0--4Hc9Hvm7ksHk0rMvNtb-FWPjmiX/view?usp=drivesdk"
 status: featured
 course: world
 tags:

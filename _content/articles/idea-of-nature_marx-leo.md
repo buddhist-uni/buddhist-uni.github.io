@@ -6,7 +6,7 @@ journal: daedalus
 year: 2008
 pages: "8--21"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1gdv7C3sLw0fYis5_2psCpc9p5nA2sI-y/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1VDOCPrDpKG7_H9EEEzl5WTzYY8a86G6T/view?usp=drivesdk"]
 course: world
 tags:
   - natural

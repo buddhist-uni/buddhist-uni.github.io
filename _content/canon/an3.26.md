@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.026"
 external_url: "https://suttacentral.net/an3.26/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1G8L01UT1KPyNvZuitrnIUyGke2y5PAs_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Fug242mN5LR_7UI1-lhopAsza5vrnje8/view?usp=drivesdk"
 course: groups
 tags:
   - sangha
