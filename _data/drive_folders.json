@@ -1,8 +1,7 @@
 {
  "": {
-  "new_public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
-  "private": null,
-  "public": "https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa"
+  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
+  "private": null
  },
  "abhidhamma": {
   "private": "https://drive.google.com/drive/folders/17CJqmQhkER76D0PzLfSqbjDuXmokgo_e",
@@ -113,9 +112,8 @@
   "public": null
  },
  "archive": {
-  "new_public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
-  "private": null,
-  "public": "https://drive.google.com/drive/folders/1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa"
+  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
+  "private": null
  },
  "arctic": {
   "private": "https://drive.google.com/drive/folders/1pmUmWVGUaMPzo2JMf7SnFSrzYYtepvAy",

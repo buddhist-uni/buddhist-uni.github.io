@@ -3,10 +3,12 @@
 import json
 import hashlib
 
-from strutils import replace_text_across_repo
+from strutils import FileSyncedMap, replace_text_across_repo
 import gdrive
 
 APP_NAME = "LibraryUtils.FolderCopier"
+NEW_FILE_IDS_FILE = gdrive.git_root_folder / "scripts/.gcache/new_file_ids.json"
+NEW_FILE_IDS = FileSyncedMap(NEW_FILE_IDS_FILE)
 MY_EMAILS = {
   'aee5188bd988b0ab263a6b3003831c6e',
   'e55371a7e1b97300ea623338dbcc0694',
@@ -18,15 +20,6 @@ MY_EMAILS = {
 }
 
 SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType"
-GDRIVE_FOLDERS_DATA = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
-COURSE_FOR_PUBLIC_FOLDER = {
-  gdrive.folderlink_to_id(v['public']): k
-  for k, v in GDRIVE_FOLDERS_DATA.items() if v['public']
-}
-COURSE_FOR_PRIVATE_FOLDER = {
-  gdrive.folderlink_to_id(v['private']): k
-  for k, v in GDRIVE_FOLDERS_DATA.items() if v['private']
-}
 
 def md5(text):
   return hashlib.md5(text.encode()).hexdigest()
@@ -38,6 +31,8 @@ def is_file_mine(file):
   return False
 
 def get_previously_copied_version(fileid: str, filefields="id,name"):
+  if fileid in NEW_FILE_IDS:
+    return NEW_FILE_IDS[fileid]
   ret = gdrive.session().files().list(
     q=' and '.join([
       f"properties has {{ key='copiedFrom' and value='{fileid}' }}",
@@ -102,6 +97,7 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
   ).execute()
   dest_file = dest_file['id']
   replace_text_across_repo(source_file['id'], dest_file)
+  NEW_FILE_IDS[source_file['id']] = dest_file
   return dest_file
 
 def copy_folder(source_folder_id: str, dest_parent_id: str = None):
@@ -121,18 +117,14 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
       dest_parent_id,
       custom_properties={"copiedFrom": source_folder_id, "createdBy": APP_NAME}
     )
-    if source_folder_id in COURSE_FOR_PUBLIC_FOLDER:
-      GDRIVE_FOLDERS_DATA[COURSE_FOR_PUBLIC_FOLDER[source_folder_id]]['new_public'] = gdrive.FOLDER_LINK.format(dest_folder)
-      json.dump(GDRIVE_FOLDERS_DATA, open(gdrive.FOLDERS_DATA_FILE, 'w'), indent=1, sort_keys=True)
-    elif source_folder_id in COURSE_FOR_PRIVATE_FOLDER:
-      GDRIVE_FOLDERS_DATA[COURSE_FOR_PRIVATE_FOLDER[source_folder_id]]['new_private'] = gdrive.FOLDER_LINK.format(dest_folder)
-      json.dump(GDRIVE_FOLDERS_DATA, open(gdrive.FOLDERS_DATA_FILE, 'w'), indent=1, sort_keys=True)
-    else:
-      replace_text_across_repo(source_folder_id, dest_folder)
+    replace_text_across_repo(source_folder_id, dest_folder)
+    NEW_FILE_IDS[source_folder_id] = dest_folder
   children_query = f"'{source_folder_id}' in parents and trashed=false"
   for child in gdrive.all_files_matching(children_query, SOURCE_FILE_FIELDS):
     if child['mimeType'] == 'application/vnd.google-apps.folder':
       copy_folder(child['id'], dest_folder)
+    elif child['id'] in NEW_FILE_IDS:
+      print(f"Skipping previously copied file \"{child['name']}\"...")
     else:
       copy_file(child, dest_folder)
 

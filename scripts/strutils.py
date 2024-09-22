@@ -6,6 +6,7 @@ import termios
 import hashlib
 import tty
 import os
+import json
 import io
 import fcntl
 import subprocess
@@ -427,6 +428,37 @@ class FileSyncedSet:
     return len(self.items)
   def __contains__(self, item):
     return self.norm(item) in self.items
+
+class FileSyncedMap:
+  def __init__(self, fname, keynormalizer=None):
+    self.fname = fname
+    self.items = dict()
+    self.norm = keynormalizer or (lambda a: str(a))
+    if os.path.exists(fname):
+      with open(fname) as fd:
+        self.items = json.load(fd)
+  def _rewrite_file(self):
+    with open(self.fname, "w") as fd:
+      json.dump(self.items, fd)
+  def delete_file(self):
+    os.remove(self.fname)
+    self.items = dict()
+  def __len__(self):
+    return len(self.items)
+  def __contains__(self, item):
+    return self.norm(item) in self.items
+  def get(self, item, default=None):
+    return self.items.get(self.norm(item), default)
+  def __getitem__(self, item):
+    return self.items[self.norm(item)]
+  def set(self, item, value):
+    self.items[self.norm(item)] = value
+    self._rewrite_file()
+  def __setitem__(self, item, value):
+    self.set(item, value)
+  def __delitem__(self, item):
+    del self.items[self.norm(item)]
+    self._rewrite_file()
 
 def file_info(file_name):
   md5 = hashlib.md5()
