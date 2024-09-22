@@ -6,7 +6,8 @@ import hashlib
 from strutils import FileSyncedMap, replace_text_across_repo
 import gdrive
 
-APP_NAME = "LibraryUtils.FolderCopier"
+DEFERRED_SHORTCUTS = []
+
 NEW_FILE_IDS_FILE = gdrive.git_root_folder / "scripts/.gcache/new_file_ids.json"
 NEW_FILE_IDS = FileSyncedMap(NEW_FILE_IDS_FILE)
 MY_EMAILS = {
@@ -18,8 +19,8 @@ MY_EMAILS = {
   '7f519cc091d7690b440aa4db74141a94',
   'd97d9501979b0a1442b0482418509a84',
 }
-
-SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType"
+APP_NAME = "LibraryUtils.FolderCopier"
+SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType,parents"
 
 def md5(text):
   return hashlib.md5(text.encode()).hexdigest()
@@ -46,9 +47,14 @@ def get_previously_copied_version(fileid: str, filefields="id,name"):
   ret = ret['files']
   if len(ret) == 0:
     return None
+  NEW_FILE_IDS[fileid] = ret[0]
   return ret[0]
 
-def copy_shortcut(source_shortcut: dict, dest_parent_id: str = None) -> str:
+def copy_shortcut(
+    source_shortcut: dict,
+    dest_parent_id: str = None,
+    defer_uncopied_targets: list[dict] = None,
+) -> str:
   target_id = source_shortcut['shortcutDetails']['targetId']
   target_copy = get_previously_copied_version(target_id)
   if target_copy:
@@ -63,7 +69,12 @@ def copy_shortcut(source_shortcut: dict, dest_parent_id: str = None) -> str:
     fields='name,owners'
   ).execute()
   if is_file_mine(target):
-    raise RuntimeError(f"Shortcut target is to an uncopied file of mine: {target_id}")
+    if defer_uncopied_targets is None:
+      print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
+      return None
+    defer_uncopied_targets.append(target)
+    assert NEW_FILE_IDS[source_shortcut['parents'][0]] == dest_parent_id
+    return None
   return gdrive.create_drive_shortcut(
     target_id,
     source_shortcut['name'],
@@ -77,8 +88,6 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
   if dest_file:
     print("  Already copied. Skipping...")
     return dest_file['id']
-  if source_file.get('shortcutDetails'):
-    return copy_shortcut(source_file, dest_parent_id)
   properties = {
     'copiedFrom': source_file['id'],
     'createdBy': APP_NAME
@@ -117,16 +126,18 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
       dest_parent_id,
       custom_properties={"copiedFrom": source_folder_id, "createdBy": APP_NAME}
     )
-    replace_text_across_repo(source_folder_id, dest_folder)
     NEW_FILE_IDS[source_folder_id] = dest_folder
   children_query = f"'{source_folder_id}' in parents and trashed=false"
   for child in gdrive.all_files_matching(children_query, SOURCE_FILE_FIELDS):
     if child['mimeType'] == 'application/vnd.google-apps.folder':
       copy_folder(child['id'], dest_folder)
     elif child['id'] in NEW_FILE_IDS:
-      print(f"Skipping previously copied file \"{child['name']}\"...")
+      print(f"Skipping already-copied file \"{child['name']}\"...")
+    elif child.get('shortcutDetails'):
+      copy_shortcut(child, dest_parent_id, DEFERRED_SHORTCUTS)
     else:
       copy_file(child, dest_folder)
+  replace_text_across_repo(source_folder_id, dest_folder)
 
 if __name__ == "__main__":
   current_user = gdrive.session().about().get(fields='user').execute()['user']
@@ -139,4 +150,8 @@ if __name__ == "__main__":
   if "http" in source_folder:
     source_folder = gdrive.folderlink_to_id(source_folder)
   copy_folder(source_folder)
+  if len(DEFERRED_SHORTCUTS) > 0:
+    print("\nRetrying deferred shortcut files...")
+    for shortcut in gdrive.tqdm(DEFERRED_SHORTCUTS):
+      copy_shortcut(shortcut, NEW_FILE_IDS[shortcut['parents'][0]])
   print("All done!")
