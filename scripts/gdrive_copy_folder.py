@@ -38,6 +38,20 @@ def is_file_mine(file):
       return True
   return False
 
+def trash_all_uncopied_files(root_folder: str):
+  if "http" in root_folder:
+    root_folder = gdrive.folderlink_to_id(root_folder)
+  for child in gdrive.all_files_matching(f"'{root_folder}' in parents and trashed=false", SOURCE_FILE_FIELDS):
+    if child['mimeType'] == 'application/vnd.google-apps.folder':
+      trash_all_uncopied_files(child['id'])
+      continue
+    if not child.get('properties') or not child['properties'].get('copiedFrom'):
+      source = NEW_FILE_IDS.keyfor(child['id'])
+      if source:
+        raise RuntimeError(f"\"{child['name']}\" is from {source} but doesn't know it!")
+      print(f"  Trashing uncopied \"{child['name']}\"...")
+      gdrive.trash_drive_file(child['id'])
+
 def get_previously_copied_version(fileid: str, filefields="id,name"):
   if fileid in NEW_FILE_IDS:
     return NEW_FILE_IDS[fileid]
@@ -69,7 +83,7 @@ def copy_shortcut(
   if target_copy:
     with DelayedKeyboardInterrupt():
       ret = gdrive.create_drive_shortcut(
-        target_copy['id'],
+        target_copy,
         source_shortcut['name'],
         dest_parent_id,
         custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
@@ -88,7 +102,7 @@ def copy_shortcut(
     if defer_uncopied_targets is None:
       print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
       return None
-    defer_uncopied_targets.append(target)
+    defer_uncopied_targets.append(source_shortcut)
     if NEW_FILE_IDS[source_shortcut['parents'][0]] != dest_parent_id:
       raise RuntimeError(f"Shortcut \"{source_shortcut['name']}\" in {source_shortcut['parents']} didn't match the expected destination {dest_parent_id}. Got {NEW_FILE_IDS[source_shortcut['parents'][0]]} instead.")
     return None
@@ -126,7 +140,8 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
     fields="id"
   )
   PENDING_FILE_COPY_OPS.append((source_file['id'], copy_request))
-  if len(PENDING_FILE_COPY_OPS) == 100:
+   # technically can do 100/batch but in practice >40 will timeout messily
+  if len(PENDING_FILE_COPY_OPS) == 40:
     perform_pending_file_copy_ops()
 
 def perform_pending_file_copy_ops():
@@ -175,7 +190,7 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
     elif child['id'] in NEW_FILE_IDS:
       pass # nothing to do here
     elif child.get('shortcutDetails'):
-      copy_shortcut(child, dest_parent_id, DEFERRED_SHORTCUTS)
+      copy_shortcut(child, dest_folder, DEFERRED_SHORTCUTS)
     else:
       copy_file(child, dest_folder)
   replace_text_across_repo(source_folder_id, dest_folder)
