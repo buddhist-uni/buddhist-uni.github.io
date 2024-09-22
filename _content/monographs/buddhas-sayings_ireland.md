@@ -1,6 +1,6 @@
 ---
 title: "The Itivuttaka: Buddha's Sayings"
-translator: ireland
+authors: ireland
 external_url: "https://readingfaithfully.org/itivuttaka-the-buddhas-sayings-translated-by-john-d-ireland-epub-kindle-pdf/"
 drive_links:
   - "https://drive.google.com/file/d/12Tjx_JKzmxdMChWMt0YM_L1vA1jSQtiN/view?usp=drive_link"
@@ -17,4 +17,4 @@ address: "Kandy"
 pages: 65
 ---
 
-This is John D. Ireland's 1991 translation of Itivuttaka. This collection of 112 suttas, attributed to Khujjuttara's (a female lay disciple of the Buddha) recollection of the Buddha's teaching, is located in the Khuddaka Nikāya, which itself is found in the larger Sutta Piṭaka of the Pāli Canon. 
+This is John D. Ireland's 1991 translation of the Itivuttaka, a collection of 112 suttas found in the Khuddaka Nikāya, part of the larger Sutta Piṭaka of the Pāli Canon. The text is attributed to Khujjuttara, a female lay disciple of the Buddha, and is presented as her recollection of the Buddha's teachings. Ireland’s translation skillfully captures both prose and verse, staying true to the original meaning while offering a poetic rendition of the text. 
