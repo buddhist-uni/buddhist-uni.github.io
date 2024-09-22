@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 
-import json
 import hashlib
 
-from strutils import FileSyncedMap, replace_text_across_repo
+from strutils import (
+  FileSyncedMap, 
+  replace_text_across_repo,
+  DelayedKeyboardInterrupt,
+)
 import gdrive
+from googleapiclient.errors import HttpError
 
+# This horrible, hacked together code uses global variables
+# deal with it B-)
 DEFERRED_SHORTCUTS = []
+PENDING_FILE_COPY_OPS = []
 
 NEW_FILE_IDS_FILE = gdrive.git_root_folder / "scripts/.gcache/new_file_ids.json"
 NEW_FILE_IDS = FileSyncedMap(NEW_FILE_IDS_FILE)
@@ -43,7 +50,9 @@ def get_previously_copied_version(fileid: str, filefields="id,name"):
     fields=f'files({filefields}),nextPageToken',
   ).execute()
   if 'nextPageToken' in ret:
-    raise RuntimeError(f"Multiple copies of {fileid} found!")
+    print(f"WARNING! Multiple copies of {fileid} found! Trashing the first copy...")
+    gdrive.trash_drive_file(ret['files'][0]['id'])
+    return get_previously_copied_version(fileid, filefields)
   ret = ret['files']
   if len(ret) == 0:
     return None
@@ -58,16 +67,23 @@ def copy_shortcut(
   target_id = source_shortcut['shortcutDetails']['targetId']
   target_copy = get_previously_copied_version(target_id)
   if target_copy:
-    return gdrive.create_drive_shortcut(
-      target_copy['id'],
-      source_shortcut['name'],
-      dest_parent_id,
-      custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
-    )
-  target = gdrive.session().files().get(
-    fileId=target_id,
-    fields='name,owners'
-  ).execute()
+    with DelayedKeyboardInterrupt():
+      ret = gdrive.create_drive_shortcut(
+        target_copy['id'],
+        source_shortcut['name'],
+        dest_parent_id,
+        custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
+      )
+      NEW_FILE_IDS[source_shortcut['id']] = ret
+    return ret
+  try:
+    target = gdrive.session().files().get(
+      fileId=target_id,
+      fields='name,owners'
+    ).execute()
+  except HttpError:
+    print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\"")
+    return None
   if is_file_mine(target):
     if defer_uncopied_targets is None:
       print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
@@ -75,19 +91,23 @@ def copy_shortcut(
     defer_uncopied_targets.append(target)
     assert NEW_FILE_IDS[source_shortcut['parents'][0]] == dest_parent_id
     return None
-  return gdrive.create_drive_shortcut(
-    target_id,
-    source_shortcut['name'],
-    dest_parent_id,
-    custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
-  )
+  with DelayedKeyboardInterrupt():
+    ret = gdrive.create_drive_shortcut(
+      target_id,
+      source_shortcut['name'],
+      dest_parent_id,
+      custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
+    )
+    NEW_FILE_IDS[source_shortcut['id']] = ret
+  return ret
 
 def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
-  print(f"Copying \"{source_file['name']}\"...")
-  dest_file = get_previously_copied_version(source_file['id'])
-  if dest_file:
-    print("  Already copied. Skipping...")
-    return dest_file['id']
+  # Uncomment the below check if you have to
+  # dest_id = get_previously_copied_version(source_file['id'])
+  # if dest_id:
+  #   print(f"Skipping already-copied file \"{source_file['name']}\"...")
+  #   NEW_FILE_IDS[source_file['id']] = dest_id
+  #   return dest_id
   properties = {
     'copiedFrom': source_file['id'],
     'createdBy': APP_NAME
@@ -95,7 +115,7 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
   # The LibraryUtils.LinkSaver creator is more important
   # so allow that value to override our APP_NAME
   properties.update(source_file.get('properties', {}))
-  dest_file = gdrive.session().files().copy(
+  copy_request = gdrive.session().files().copy(
     fileId=source_file['id'],
     body={
       'name': source_file['name'],
@@ -103,11 +123,31 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
       'properties': properties
     },
     fields="id"
-  ).execute()
-  dest_file = dest_file['id']
-  replace_text_across_repo(source_file['id'], dest_file)
-  NEW_FILE_IDS[source_file['id']] = dest_file
-  return dest_file
+  )
+  PENDING_FILE_COPY_OPS.append((source_file['id'], copy_request))
+  if len(PENDING_FILE_COPY_OPS) == 100:
+    perform_pending_file_copy_ops()
+
+def perform_pending_file_copy_ops():
+  print(f"Copying a batch of {len(PENDING_FILE_COPY_OPS)} files...")
+  new_ids = {}
+  def _copy_callback(rid, resp, error):
+    if error:
+      print(f"WARNING! Failed to `copy` fileId={rid}")
+      print(error)
+    else:
+      replace_text_across_repo(rid, resp['id'])
+      new_ids[rid] = resp['id']
+  batch_request = gdrive.BatchHttpRequest(
+    callback=_copy_callback,
+    batch_uri="https://www.googleapis.com/batch/drive/v3",
+  )
+  for rid, req in PENDING_FILE_COPY_OPS:
+    batch_request.add(request_id=rid, request=req)
+  with DelayedKeyboardInterrupt():
+    batch_request.execute()
+    PENDING_FILE_COPY_OPS.clear()
+    NEW_FILE_IDS.update(new_ids)
 
 def copy_folder(source_folder_id: str, dest_parent_id: str = None):
   source_folder = gdrive.session().files().get(
@@ -118,21 +158,21 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
   dest_folder = get_previously_copied_version(source_folder_id)
   if dest_folder:
     print("Resuming previous copy...")
-    dest_folder = dest_folder['id']
   else:
     print("Creating new folder...")
-    dest_folder = gdrive.create_folder(
-      source_folder['name'],
-      dest_parent_id,
-      custom_properties={"copiedFrom": source_folder_id, "createdBy": APP_NAME}
-    )
-    NEW_FILE_IDS[source_folder_id] = dest_folder
+    with DelayedKeyboardInterrupt():
+      dest_folder = gdrive.create_folder(
+        source_folder['name'],
+        dest_parent_id,
+        custom_properties={"copiedFrom": source_folder_id, "createdBy": APP_NAME}
+      )
+      NEW_FILE_IDS[source_folder_id] = dest_folder
   children_query = f"'{source_folder_id}' in parents and trashed=false"
   for child in gdrive.all_files_matching(children_query, SOURCE_FILE_FIELDS):
     if child['mimeType'] == 'application/vnd.google-apps.folder':
       copy_folder(child['id'], dest_folder)
     elif child['id'] in NEW_FILE_IDS:
-      print(f"Skipping already-copied file \"{child['name']}\"...")
+      pass # nothing to do here
     elif child.get('shortcutDetails'):
       copy_shortcut(child, dest_parent_id, DEFERRED_SHORTCUTS)
     else:
@@ -150,6 +190,8 @@ if __name__ == "__main__":
   if "http" in source_folder:
     source_folder = gdrive.folderlink_to_id(source_folder)
   copy_folder(source_folder)
+  if len(PENDING_FILE_COPY_OPS) > 0:
+    perform_pending_file_copy_ops()
   if len(DEFERRED_SHORTCUTS) > 0:
     print("\nRetrying deferred shortcut files...")
     for shortcut in gdrive.tqdm(DEFERRED_SHORTCUTS):

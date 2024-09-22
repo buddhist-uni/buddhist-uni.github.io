@@ -2,6 +2,7 @@
 
 import random
 import sys
+import signal
 import termios
 import hashlib
 import tty
@@ -331,6 +332,24 @@ def input_with_tab_complete(prompt, typeahead_suggestions, delims=None, prefill=
     readline.set_completer_delims(prev_delims)
     return ret
 
+class DelayedKeyboardInterrupt:
+    # https://stackoverflow.com/a/21919644
+    # Use as:
+    # with DelayedKeyboardInterrupt():
+    #   critical_uninterupted_code()
+    def __enter__(self):
+        self.signal_received = False
+        self.old_handler = signal.signal(signal.SIGINT, self.handler)
+                
+    def handler(self, sig, frame):
+        self.signal_received = (sig, frame)
+        print("SIGINT Received: Just gunna wrap something up first...")
+    
+    def __exit__(self, type, value, traceback):
+        signal.signal(signal.SIGINT, self.old_handler)
+        if self.signal_received:
+            self.old_handler(*self.signal_received)
+
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
 
@@ -458,6 +477,9 @@ class FileSyncedMap:
     self.set(item, value)
   def __delitem__(self, item):
     del self.items[self.norm(item)]
+    self._rewrite_file()
+  def update(self, values):
+    self.items.update(values)
     self._rewrite_file()
 
 def file_info(file_name):
