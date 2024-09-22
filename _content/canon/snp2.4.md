@@ -5,7 +5,7 @@ slug: "snp.2.04"
 subcat: poetry
 external_url: "https://suttacentral.net/snp2.4/en/narada"
 drive_links:
-  - "https://drive.google.com/file/d/1Fx_FahWWtTGDiAC2-xdM7nWGOjhyTKUL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1n5xiGUtnVSMyDYdvjtFrury1Usbo_GXo/view?usp=drivesdk"
 course: canonical-poetry
 status: featured
 tags:

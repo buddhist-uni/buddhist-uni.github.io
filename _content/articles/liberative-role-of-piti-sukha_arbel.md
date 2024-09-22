@@ -4,7 +4,7 @@ authors:
   - arbel
 external_url: "https://journal.equinoxpub.com/BSR/article/view/9015/10488"
 drive_links:
-  - "https://drive.google.com/file/d/1VsJ1GF2-GE8yn6Kj4DXd1DqR9kvlxK4m/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yjrnrCF5PpQ-lFvp0l8b6nH7MnUYNMcd/view?usp=drivesdk"
 course: meditation
 tags:
   - path

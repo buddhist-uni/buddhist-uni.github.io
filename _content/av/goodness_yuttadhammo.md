@@ -5,7 +5,7 @@ year: 2009
 month: apr
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/090404_Goodness.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1p_AA-Ie1fWjd13OFShfg3pYWTX7cCRzI/view?usp=share_link"
+  - "https://drive.google.com/file/d/1uK7CltiJJpnLpPs_HiNlw-Tazl5no2pL/view?usp=share_link"
 file_links: ["function-data/LA-Lectures_Yuttadhammo/02%20-%20Goodness%20(2009-04-04).mp3"]
 course: function
 tags:

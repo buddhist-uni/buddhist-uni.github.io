@@ -5,7 +5,7 @@ authors:
 external_url: "https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=1032&context=comparativephilosophy"
 source_url: "https://doi.org/10.31979/2151-6014(2010).010206"
 drive_links:
-  - "https://drive.google.com/file/d/1kJyanFObQZlAX0bDDtfKLL6C94G26H-c/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Rpn4t6FE9fnpOmMbz8PewkhXA532_BD8/view?usp=drivesdk"
 status: featured
 course: hermeneutics
 tags:

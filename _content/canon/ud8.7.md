@@ -5,7 +5,7 @@ slug: "ud8.7"
 subcat: poetry
 external_url: "https://suttacentral.net/ud8.7/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1P9H6PWq0hBCCR0quE8bwjdemTR_556MZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YfoPvsQO2-gg4jtY4PX0YuhkSVq3MslO/view?usp=drivesdk"
 course: sangha
 tags:
   - characters

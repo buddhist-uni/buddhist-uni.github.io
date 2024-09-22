@@ -6,7 +6,7 @@ editor: "Marilina Betrò and Michael Friedrich and Cécile Michel"
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783111360805-005/pdf"
 source_url: "https://doi.org/10.1515/9783111360805-005"
 drive_links:
-  - "https://drive.google.com/file/d/17RHUnAs18M66CHX3465wLZWT-nbMma1G/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oXmo8p8wd1d5G5yFJnmAkeBSgPmoqIeR/view?usp=drivesdk"
 course: setting
 tags:
   - asoka

@@ -5,7 +5,7 @@ external_url: "https://sc.readingfaithfully.org/?q=an8.53"
 source_url: "https://suttacentral.net/an8.53/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1PbvlA6nwLDVvqs-lV_2pxSN1TVVhRZM9/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Y3sWDU1qQCSAPHlppdIww97fDBs2oeW4/view?usp=drivesdk"]
 status: featured
 course: buddhism
 tags:

@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.bmj.com/content/bmj/384/bmj-2023-075847.full.pdf"
 source_url: "https://doi.org/10.1136/bmj-2023-075847"
 drive_links:
-  - "https://drive.google.com/file/d/1diexWduyrDS9CxJFmTdnO_NOBhla6TqA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ddLzxwPoOEIbFckkiXfbxNbVOHbCkvip/view?usp=drivesdk"
 course: body
 status: featured
 tags:

@@ -5,7 +5,7 @@ slug: "an.005.176"
 source_url: "https://accesstoinsight.org/tipitaka/an/an05/an05.176.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN5_176.html"
 drive_links:
-  - "https://drive.google.com/file/d/1-kyzmfPSybl3FHmQr5zjbxkroOOhbjrv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10XZn-UpyEIG3T-GupHL0lx7U7APx7Dgc/view?usp=drivesdk"
 course: samadhi
 tags:
   - lay

@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxi/A%20Gandh%C4%81ran%20st%C5%ABpa%20as%20depicted%20in%20the%20Lotus%20Sutra.pdf"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXI%20(2018).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1giOp-HGYbIzAPgL5zp7cN0Ce9Yt3GoXf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aN5-OS3lnlAy3LnCPjwi-BXhSQ45UqHN/view?usp=drivesdk"
 course: east-asian-roots
 status: featured
 tags:

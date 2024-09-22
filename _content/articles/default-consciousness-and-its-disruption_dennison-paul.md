@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.frontiersin.org/articles/10.3389/fnhum.2019.00178/pdf"
 source_url: "https://doi.org/10.3389/fnhum.2019.00178"
 drive_links:
-  - "https://drive.google.com/file/d/151MAxcpozeYkMZbmBRkS5gSg0H-9C-75/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LcyBR-LlSb9eM7cPpHlaR1OqnNbljETa/view?usp=drivesdk"
 course: samatha
 tags:
   - neuroscience

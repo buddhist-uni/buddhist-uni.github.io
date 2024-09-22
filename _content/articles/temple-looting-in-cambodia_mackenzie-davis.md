@@ -2,7 +2,7 @@
 title: "Temple Looting in Cambodia: Anatomy of a Statue Trafficking Network"
 authors: ["Simon Mackenzie", "Tess Davis"]
 external_url: "https://academic.oup.com/bjc/article/54/5/722/358985"
-drive_links: ["https://drive.google.com/file/d/1qMuE_VNbuneRz6n1m5l4SIjtb-h5ogYH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1emZlJYE5U9MKxIztMQTOLy2K8rzG5c82/view?usp=drivesdk"]
 tags: 
   - sea
   - cambodia

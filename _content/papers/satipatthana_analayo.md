@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/satipatthana.pdf"
 year: 2007
 drive_links:
- - "https://drive.google.com/file/d/18g2DXGrpSHlkWAG9tmHiKdE0GaSqkAWO/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1GXWOw4w1vX4AC85o8UE7EV51NHhQPkYG/view?usp=drivesdk"
 course: vipassana
 tags:
   - path

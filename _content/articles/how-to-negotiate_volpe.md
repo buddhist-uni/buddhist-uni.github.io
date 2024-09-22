@@ -4,7 +4,7 @@ authors:
   - "Allie Volpe"
 external_url: "https://www.vox.com/even-better/23562374/negotiate-anything-prepare-questions"
 drive_links:
-  - "https://drive.google.com/file/d/1xE3vnTaMk_j6_NQnCJSgQCPKCrAAWdq1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ncZkQXXGUl8OgkV428AFSQpmArzPasSD/view?usp=drivesdk"
 course: communication
 tags:
   - leadership

@@ -6,7 +6,7 @@ authors:
 external_url: "https://works.swarthmore.edu/cgi/viewcontent.cgi?article=1116&context=fac-religion"
 source_url: "https://doi.org/10.1086/463396"
 drive_links:
-  - "https://drive.google.com/file/d/1u2cuyVp7L_DyUxkiPVAAR9cUApXcQ6o_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13hSK7S3f8cDpUmBGdOp_3NhHH_-De69l/view?usp=drivesdk"
 course: theravada
 tags:
   - bart

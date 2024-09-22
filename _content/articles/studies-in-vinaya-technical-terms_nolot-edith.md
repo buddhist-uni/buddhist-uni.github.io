@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/Studies%20in%20Vinaya%20Technical%20Terms%20-%20Édith%20Nolot.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1bGTikLlYSzdQ_lR_qCyI9evuCyjvJloH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IZztjh1StCrncRC7d8UaFFpCS9sAQDR8/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - pali-dictionaries

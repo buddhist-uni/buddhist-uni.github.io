@@ -4,7 +4,7 @@ authors:
   - "Marek Sullivan"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/07/JBE-Sullivan.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Z6RScCQU0Dz-oBQqS7fdPcP6vWxQZxtI/view?usp=share_link"
+  - "https://drive.google.com/file/d/1Jyu2PzRylFTzgn2R29AuJBbWWo87SWRs/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:

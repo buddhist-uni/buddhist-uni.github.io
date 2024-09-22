@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vimuttimagga.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1i3DH8ElhScD-8hYzHY0HIASAFy-lSFYd/view?usp=sharing"
+ - "https://drive.google.com/file/d/1oruNhM9i1NancgDiHYF39nnl9lAUtcgV/view?usp=sharing"
 course: theravada-roots
 tags:
   - path

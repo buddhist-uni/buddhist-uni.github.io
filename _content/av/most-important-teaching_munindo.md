@@ -4,7 +4,7 @@ authors:
   - "Ajahn Munindo"
 external_url: "https://forestsangha.org/teachings/audio/the-buddha-s-most-important-teaching?language=English"
 drive_links:
-  - "https://drive.google.com/file/d/1xAf-2ymHqC78rJ3BMxal_-r-TdhrnFGE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-Z78OqSxpOuF1OpvbTlEPUWGx7DUZbqY/view?usp=drivesdk"
 course: function
 tags:
   - buddhism

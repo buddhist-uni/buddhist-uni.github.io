@@ -5,7 +5,7 @@ authors:
 external_url: "https://store.pariyatti.org/footprints-in-the-dust"
 source_url: "https://budblooms.org/2022/04/05/footprints-in-the-dust-the-life-of-the-buddha-from-the-most-ancient-sources/"
 drive_links:
-  - "https://drive.google.com/file/d/149scyH36UJeI6m3vN_nlQfD0hN_qqrU5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Fe3n6s3n4BN1GAJd8WUxeJahfh87dJ_3/view?usp=drivesdk"
 course: ebts
 status: featured
 tags:

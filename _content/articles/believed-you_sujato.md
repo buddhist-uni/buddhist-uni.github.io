@@ -2,7 +2,7 @@
 title: "The Buddha Would Have Believed You"
 authors: [sujato]
 external_url: "https://www.lionsroar.com/the-buddha-would-have-believed-you/"
-drive_links: ["https://drive.google.com/file/d/12fyEguuAvcviTl-loavS8fwkPk-iXdxl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1RZjmyvPebEUtQsiAbkVm3E9wOfFpXa71/view?usp=drivesdk"]
 tags:
   - gender
   - groups

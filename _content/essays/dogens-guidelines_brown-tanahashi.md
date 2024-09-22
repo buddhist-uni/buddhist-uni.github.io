@@ -5,7 +5,7 @@ authors:
   - "Kazuaki Tanahashi"
 external_url: "http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Guidelines_for_Studying.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1nbPrrXxRk0V1JaXTbUSD-3xx1PT0Up5z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rcWDGFoLFvcV8oFJ73VUesgzZ-vsetGT/view?usp=drivesdk"
 course: mahayana
 tags:
   - japanese

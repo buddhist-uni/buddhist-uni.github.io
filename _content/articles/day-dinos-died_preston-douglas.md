@@ -4,7 +4,7 @@ authors:
   - "Douglas Preston"
 external_url: "https://www.newyorker.com/magazine/2019/04/08/the-day-the-dinosaurs-died"
 drive_links:
-  - "https://drive.google.com/file/d/114eJ709HOkCgFp4d10BfdKTesbKpiAUd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-TkKOIVSwNXDiVUmGrQ58XP0bKYMBu29/view?usp=drivesdk"
 status: featured
 course: time
 tags:

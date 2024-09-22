@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/963/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.24.3-4.1997.347-374"
 drive_links:
-  - "https://drive.google.com/file/d/10Ga1svAXov-b_dQWMXKVx67vtGp8j20T/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14KaCyDfIif0cYWXtcbf8SYIaWzbT2ekb/view?usp=drivesdk"
 course: medieval
 tags:
   - japanese

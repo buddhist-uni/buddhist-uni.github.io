@@ -4,7 +4,7 @@ authors:
   - jayasaro
 external_url: "https://www.jayasaro.panyaprateep.org/files/audiovideo/2554/000065/2550.05.06%20Beyond%20Faith.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1LwAm0ToaCSN0KmyJvz1waJbYA0nx1rEX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QPnyDbVBTdO0DMd0-wnHu4nh8sUN1Hpc/view?usp=drivesdk"
 course: buddhism
 tags:
   - ethics

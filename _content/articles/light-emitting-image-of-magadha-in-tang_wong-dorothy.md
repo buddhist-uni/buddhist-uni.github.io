@@ -5,7 +5,7 @@ authors:
 external_url: "https://quod.lib.umich.edu/a/ars/13441566.0050.017/--light-emitting-image-of-magadha-in-tang-buddhist-art?rgn=main;view=fulltext"
 source_url: "https://doi.org/10.3998/ars.13441566.0050.017"
 drive_links:
-  - "https://drive.google.com/file/d/1PXi8iLFwgAmM9jFQgbe-VYziincxo0jf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r-vol2dwRRWT-pacyRZ-vh-BMdbgNMYv/view?usp=drivesdk"
 status: featured
 course: medieval
 tags:

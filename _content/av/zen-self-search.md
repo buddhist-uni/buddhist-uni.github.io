@@ -11,7 +11,7 @@ embedded_html: |
   <div id="rumble_vu5jmh" style="margin-bottom: 15px;"></div>
   <script>Rumble("play", {"video":"vu5jmh","div":"rumble_vu5jmh","rel":5});</script>
 drive_links:
-  - "https://drive.google.com/file/d/1GJYYKfdfqE6wixLPWW8bLXLpMRQQrhBD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IGGWGjg66nxuo1CFvERxkrt-16bEpKZy/view?usp=drivesdk"
 formats: [mp4]
 status: featured
 course: east-asian

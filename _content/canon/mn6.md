@@ -4,7 +4,7 @@ slug: "mn006"
 translator: sujato
 external_url: "https://suttacentral.net/mn6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1BnJOybXIoExm4OhHwne2qEvA4-3gS6Ru/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PJN5490KrcbCBi_-52X9sCJ0wrcbzPrl/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - mn

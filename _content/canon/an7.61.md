@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.007.061"
 external_url: "https://suttacentral.net/an7.61/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1M-N9A4Ir6TylXDEQcEy7TOse7FT-vvWE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1stbLeGzyHzNo0fe6krTx56QDhnxP3o6r/view?usp=drivesdk"
 course: hindrances
 status: featured
 tags:

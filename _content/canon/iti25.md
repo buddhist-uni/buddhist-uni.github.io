@@ -4,7 +4,7 @@ slug: "iti025"
 translator: sujato
 external_url: "https://suttacentral.net/iti25/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1bKWahZzsA3_IyCHOBj8IEnszUmnJzxca/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dOPPVsNbrMFQUiccCmKF0kBLkpV4r4RJ/view?usp=drivesdk"
 course: speech
 year: 2020
 pages: 1

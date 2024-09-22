@@ -7,7 +7,7 @@ source_url: "https://archive.org/details/arsorientalisart12000univ/page/33/mode/
 file_links:
   - "exclusive_01/The%20Dharmacakramudra%20Variant%20at%20Ajanta%20-%20John%20C%20Huntington%20with%20Chaya%20Chandrasekhar.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ODnq3P0IA5lFWF5-CLBHfCvzGmSzR6u6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1m5eq-C--sylEnLKLEhGRMQ0tN6qEKk3-/view?usp=drivesdk"
 course: mahayana-roots
 tags:
   - esoteric

@@ -6,8 +6,8 @@ translator: "James Legge"
 external_url: "https://www.gutenberg.org/ebooks/2124"
 source_url: "https://archive.org/details/recordofbuddhist00fahsuoft"
 drive_links:
-  - "https://drive.google.com/file/d/1wt9Dv4t5oSXN2T6xYZ8xVzdL_WORj588/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1pHN_Pbwi8jnv8I9BRcF2mzIRjCKf5Ydt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tL9ZnWj5Knbi8Vi50yw3bltA-ZnR9i8B/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1eEpWDKY0P2_0r2iLs1q2d2nB8zesLovQ/view?usp=drivesdk"
 tags:
   - medieval
   - east-asian-roots

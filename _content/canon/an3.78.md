@@ -2,7 +2,7 @@
 title: "AN 3.78: Precepts and Observances"
 slug: "an.003.078"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/17egta9JpPEEMchjWLNOf9h8Li9OUy0k8"]
+drive_links: ["https://drive.google.com/file/d/13Po8QVyihXQC3MpKjNZXbXPO61ybyuM_"]
 external_url: "https://suttacentral.net/an3.78/en/sujato"
 year: 2018
 course: function

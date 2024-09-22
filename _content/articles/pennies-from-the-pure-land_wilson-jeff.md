@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.globalbuddhism.org/article/view/2002"
 status: featured
 drive_links:
-  - "https://drive.google.com/file/d/1KlUgO1TKBAm21vj144T2yMevOd1hDtgG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P-MfkhSLwu4vmKToueAlDie99n5jotaU/view?usp=drivesdk"
 course: west
 tags:
   - jodo-shinshu

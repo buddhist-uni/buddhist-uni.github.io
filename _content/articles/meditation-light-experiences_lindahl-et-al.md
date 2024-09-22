@@ -8,7 +8,7 @@ authors:
 editor: "Zoran Josipovic"
 external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00973/full"
 drive_links:
-  - "https://drive.google.com/file/d/1jgyrqByW8WDDVkUZyyw_9G5V38SoOrDS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IgN9bdNO5T3657v5NOQAcya5jEzy_wli/view?usp=drivesdk"
 course: samatha
 tags:
   - samadhi

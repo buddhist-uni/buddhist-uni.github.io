@@ -8,8 +8,8 @@ olid: OL2007042M
 external_url: "https://www.bps.lk/olib/bp/bp213s_Vajira_Story_Last-Days-Of-The-Buddha.pdf"
 publisher: bps
 drive_links:
-  - "https://drive.google.com/file/d/1wgFCG3f39gSzwXNteHGWN72qhJu4ulCh/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1dpAOC8brX3Ddq0TUUCj8auHXAPyne_Pm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1eTcxiyyBFp7BLwxcvrMdznOg8EL0qEyE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CCiGZJ8X7gZGPQaaauE66nR1iGtDLZ0b/view?usp=drivesdk"
 course: pali-canon
 tags:
   - dn

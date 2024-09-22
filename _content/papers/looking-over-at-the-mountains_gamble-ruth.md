@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.fi/store/article/view/45370/11523"
 source_url: "https://journal.fi/store/article/view/45370"
 drive_links:
-  - "https://drive.google.com/file/d/1OsPo6Ahm4HK8X_315lu8QUm2J12RMsG-/view?usp=drive_link"
+  - "https://drive.google.com/file/d/18Ypfuk4sqE8Dg9ssGvUjeeRJ1Xv6hJEZ/view?usp=drive_link"
 formats: [pdf]
 course: nature
 tags:

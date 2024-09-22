@@ -4,7 +4,7 @@ slug: "an.006.042"
 external_url: "https://suttacentral.net/an6.42/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/16YehBakXo-FBdw03RhtU_KJrZ4UvBHpZ"]
+drive_links: ["https://drive.google.com/file/d/1XNkoP0mOWpC06RxVuAAYO4gs3dqwtKJ7"]
 course: monastic-advice
 status: featured
 tags:

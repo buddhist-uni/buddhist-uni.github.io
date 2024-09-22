@@ -4,7 +4,7 @@ subcat: poetry
 translator: "Norman Waddell"
 external_url: "http://www.thezensite.com/ZenTeachings/Translations/Song_of_Zazen.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1pGxFnSFcs64UFpNU8O3tIl4P7-3Azbm3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1el603JtNztetK07UvcN_Dex8yAfVI37_/view?usp=drivesdk"
 status: featured
 base_value: 0.3
 course: east-asian

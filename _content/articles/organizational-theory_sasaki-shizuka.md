@@ -3,7 +3,7 @@ title: "Organizational Theory in Buddhism"
 authors: ["Sasaki Shizuka"]
 external_url: "https://dx.doi.org/10.15239/hijbs.02.02.07"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1RsCnJcOvGvCv0mizywJZ3zQjlfS8xTcI/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1YKZN3dYJ0LLGKjGteoW7GMQxJVeLVd83/view?usp=drivesdk"]
 year: 2019
 volume: 2
 number: 2

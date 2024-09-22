@@ -1,7 +1,7 @@
 ---
 title: "Activism and Compassion"
 authors: [courtin]
-drive_links: ["https://drive.google.com/file/d/14j31IlHxDGT77PDu8p32TakaI3Holslu/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1FEy2SgP0Hykrc1YPEv4SwDaRWpMgO-xS/view?usp=drivesdk"]
 course: activism
 tags:
   - engaged

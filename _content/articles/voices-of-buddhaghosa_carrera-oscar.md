@@ -4,7 +4,7 @@ authors:
   - "Oscar Carrera"
 external_url: "http://jocbs.org/index.php/jocbs/article/view/201/274"
 drive_links:
-  - "https://drive.google.com/file/d/1hJgkU2KQXjeKZIQFh6TGnEhH_TOSYBZI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VPFji1bximtZDz7DhM2LWyCH8ZAchMuz/view?usp=drivesdk"
 status: featured
 course: theravada
 tags:

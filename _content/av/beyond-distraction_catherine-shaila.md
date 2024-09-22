@@ -5,7 +5,7 @@ authors:
   - "Shaila Catherine"
 external_url: "https://wisdomexperience.org/wisdom-podcast/138-shaila-catherine/"
 drive_links:
-  - "https://drive.google.com/file/d/17khalkFYPwS2vhV8FDNWBpyecD7fSLic/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1EPuLpp2lDKNDNoKEfcRLsjD2Hyz9kqW3/view?usp=drive_link"
 course: problems
 tags:
   - sati

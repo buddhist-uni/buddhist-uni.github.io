@@ -5,8 +5,8 @@ authors:
   - "R. Kelly Aune"
 external_url: "https://pressbooks.oer.hawaii.edu/messageprocessing/"
 drive_links:
-  - "https://drive.google.com/file/d/1Xq1iprt_aPCL8NW-jLyuLEK09YoLSsTH/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1a-BJLAune-GR8JLyFQyGe7IBBOyH-H8K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gJQBHrSjE2edgNlKolKSjPNr6e42xrZU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cKcb7STEeiRkNykTTTC88IE_dtkpvXV3/view?usp=drivesdk"
 course: communication
 tags:
   - intellect

@@ -6,7 +6,7 @@ authors:
 external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0226414&type=printable"
 source_url: "https://doi.org/10.1371/journal.pone.0226414"
 drive_links:
-  - "https://drive.google.com/file/d/1BxZSZ4AqzXLGlJRwg6Pb1c7NqlQGq5O2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1N_yTHmNiXmL99SpdmLT7k8fTEbHrx47y/view?usp=drivesdk"
 course: burmese
 tags:
   - form

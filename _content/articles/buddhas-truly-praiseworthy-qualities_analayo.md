@@ -2,7 +2,7 @@
 title: "The Buddha's Truly Praiseworthy Qualities: According to the *Mahāsakuludāyi-sutta* and Its Chinese Parallel"
 authors: [analayo]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1vcbGLPI7EqNW0xTQ1uE2mTvOuGDHUkJj/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Qt52C2daj6Gi_pVCT_lSLpmZA6n6tHbC/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/The%20Buddha’s%20Truly%20Praiseworthy%20Qualities%20-%20Bhikkhu%20Analayo.pdf"
 journal: jpts

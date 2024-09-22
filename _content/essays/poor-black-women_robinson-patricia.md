@@ -5,7 +5,7 @@ authors:
 external_url: "https://dukelibraries.contentdm.oclc.org/digital/api/collection/p15957coll6/id/768/page/0/inline/p15957coll6_768_0"
 source_url: "https://idn.duke.edu/ark:/87924/r3s39c"
 drive_links:
-  - "https://drive.google.com/file/d/18rHpuYKGlpdRLydAHiSJwPsZfZKanApF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17z4sKlgBVPnT7Gx9X4R7L01ShQmG6GpI/view?usp=drivesdk"
 course: body
 tags:
   - social

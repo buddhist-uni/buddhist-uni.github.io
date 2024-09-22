@@ -7,7 +7,7 @@ external_url: https://youtube.com/playlist?list=PLhbt7oEqL154vHxqk90PLBt67yLatcJ
 canary_url: "https://youtu.be/f-_HNVk15Eg"
 formats: [mp4s]
 drive_links:
-  - "https://drive.google.com/drive/folders/1NSf-SlWu46FQbYb1CvEu5ifJzkMbebe9"
+  - "https://drive.google.com/drive/folders/1vsEyTzEKZwuam9gl7JPaKVgKD6C-d0mx"
 status: featured
 course: tudong
 tags:

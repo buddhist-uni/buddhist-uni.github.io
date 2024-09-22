@@ -3,7 +3,7 @@ title: "*Nibbāna* and the Fire Simile"
 authors: [nyanananda]
 external_url: "https://seeingthroughthenet.net/wp-content/uploads/2016/04/nibbana_and_the_fire_simile.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1SsDfBfgN46tia7YPFBGLG1AJ5sou5sQt/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1057AyTLJBVurObsb2X7Pdj9VcQTtXXiT/view?usp=drivesdk"]
 year: 2010
 publisher: "Dharma Grantha Mudrana Bhāraya"
 address: "Sri Lanka"

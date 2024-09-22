@@ -3,7 +3,7 @@ title: "SN 2.22 Khema Sutta: With Khema"
 slug: "sn.002.022"
 external_url: "https://suttacentral.net/sn2.22/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1KJmsUPQeURkQbzMMKA9iUZpXe218--Ip/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/18OEa0XqTqsOY-nXYndShYWfQEyhwROM9/view?usp=drivesdk"]
 subcat: poetry
 course: karma
 tags:

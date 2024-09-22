@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/9124/15951/45666"
 source_url: "https://doi.org/10.1558/bsrv.36759"
 drive_links:
-  - "https://drive.google.com/file/d/1Za28hbQvI7ypWBqExMYpwa-2GLoR__Mh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dPFw44-92Lb4EJcBnDz_laPMqUjewyfG/view?usp=drivesdk"
 course: theravada-roots
 tags: # honestly could move up or down!
   - thai-roots

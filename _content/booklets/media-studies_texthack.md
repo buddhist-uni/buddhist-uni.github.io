@@ -4,8 +4,8 @@ authors:
   - "The Media Texthack Team"
 external_url: "https://opentextbc.ca/mediastudies101/"
 drive_links:
-  - "https://drive.google.com/file/d/1Y00bK7Pgo-T6tzyzi56n7Osd7ciF9bxA/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1JlSAsi7TDarVsjPHClO6j97SZqdmiQVz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AdP7QrX2ETowF9WK_S_d-Tf4mqBrrstX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ehe7PMfhoI_ndz6OZAg9uSYWYiSOt17g/view?usp=drivesdk"
 course: social
 tags:
   - culture

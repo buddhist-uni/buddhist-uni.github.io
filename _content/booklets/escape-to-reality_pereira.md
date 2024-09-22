@@ -6,8 +6,8 @@ file_links:
   - "exclusive_01/Escape-to-Reality--Buddhist-Essays_wh045_Pereira.pdf"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1WzYchXzoRpzMYZPaLL7cP-LSrbL_QIPS/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1An1tcAEXEtwp3r2WEJ1G2KfYeriZQ-y0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BrDDgajOIOLwWZO9qurX3zhhHvxUbSFT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1J8Nj2sPHU9JlKoilzYjq8jKM5xi_6ono/view?usp=drivesdk"
 course: function
 tags:
   - renunciation

@@ -5,7 +5,7 @@ slug: "sn.004.025"
 subcat: poetry
 external_url: "https://suttacentral.net/sn4.25/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1SceA3IWkVAvpInt6dfsRL-nJB6hL2uW6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GQx9eVtVEwG2aHEF8iILeR5BO7eX46Rs/view?usp=drivesdk"
 course: canonical-poetry
 status: featured
 tags:

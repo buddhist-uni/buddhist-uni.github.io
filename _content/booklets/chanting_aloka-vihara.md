@@ -3,7 +3,7 @@ title: "Chanting"
 authors: ["Āloka Vihāra"]
 external_url: "https://alokavihara.org/wp-content/uploads/2012/10/Chanting-Book.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1FqKemzJdneprcx3Vof79k5xHM7EBDWTJ/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Vy--TZhTAWXH_pzOBd3w0Qo4d1cmduio/view?usp=drivesdk"]
 year: 2012
 course: theravada
 tags:

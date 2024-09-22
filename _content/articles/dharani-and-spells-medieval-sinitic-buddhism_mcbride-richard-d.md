@@ -4,7 +4,7 @@ authors:
   - "Richard D. McBride"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8958/2851"
 drive_links:
-  - "https://drive.google.com/file/d/1mExpZ7Ro9fSZX4accy66vkDP78R73JqL/view?usp=sharing"
+  - "https://drive.google.com/file/d/1_xUfnuDnwpF6YHmN09hpovgcqq8I8SlV/view?usp=sharing"
 course: medieval
 status: featured
 tags:

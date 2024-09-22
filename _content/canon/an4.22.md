@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.022"
 external_url: "https://suttacentral.net/an4.22/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1ltYEfNvz6DCN48RjJEKbL1iSXEDJASQn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EgtNgqGYKfDEykO3GYocZG2Tefu2A6oN/view?usp=drivesdk"
 course: sangha
 tags:
   - aging

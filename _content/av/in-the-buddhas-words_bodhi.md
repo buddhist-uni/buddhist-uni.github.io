@@ -6,7 +6,7 @@ year: 2008
 source_url: "http://www.noblepath.org/audio.html"
 external_url: "https://archive.org/details/in-the-buddhas-words-course_bhikkhu-bodhi"
 formats: ["MP3s"]
-drive_links: ["https://drive.google.com/drive/folders/1J4UlgdfxmH2mFQkqYGO8OTTX33B5E_OM"]
+drive_links: ["https://drive.google.com/drive/folders/1Ppjk7_-PJ0RC3TdThhl6r2uKCTqYl8kJ"]
 course: ebts
 tags:
   - pali-canon

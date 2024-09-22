@@ -6,7 +6,7 @@ year: 2010
 month: feb
 source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/2010/100202_WhatIsMeditation.mp3"
 drive_links:
- - "https://drive.google.com/file/d/1Mh6FOLyh_AJmukIe2uoFatGXqIGVuGhF/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/13ZkTTJR2SLaRYAQnT_PFijF8s45YqWU8/view?usp=drivesdk"
 course: meditation
 tags:
   - function

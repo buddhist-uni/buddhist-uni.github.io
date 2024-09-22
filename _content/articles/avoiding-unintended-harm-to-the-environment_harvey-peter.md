@@ -5,7 +5,7 @@ authors:
   - harvey
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/harvey-article1.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1swrsVVdQxHGuGd_xUlznS7OfyIxCaMpm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_gq-3sy213QJW-NuxtbUV4QucUwUVgwf/view?usp=drivesdk"
 course: nature
 tags:
   - karma

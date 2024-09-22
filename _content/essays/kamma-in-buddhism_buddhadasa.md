@@ -5,7 +5,7 @@ authors:
 translator: "Santikaro Bhikkhu"
 external_url: "https://www.suanmokkh.org/system/books/files/000/000/089/original/Buddhadas-Kamma-in-buddhism.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1OdOqbmOuzO48q0a7tR508jvGMIgo2REX/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1Hs8jtKX4ppFii25bcTSfsFwtAcR9h1Gd/view?usp=drive_link"
 course: view
 tags:
   - karma

@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.bps.lk/library-search-select.php?id=wh397"
 formats: [pdf, epub, mp3]
 drive_links:
-  - "https://drive.google.com/file/d/1hBUKx9Oj6lPH559XUx09Y4r72JU-ExQM/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/17uFphvqpWrhbWgXT7Gy3tWTE0rArA2m3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1T0AlHk10mCEbn1ku2-adD-3ifGViNmfG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dQF7C71rbLjd9zE_drz_2UKuJrQc1pNB/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1zDW75fZlwhUnYMb09P2S3TfDnJ3r7rv4/view?usp=drivesdk"
 course: lay
 tags:

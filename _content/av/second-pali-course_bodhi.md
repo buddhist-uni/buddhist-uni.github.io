@@ -6,7 +6,7 @@ year: 2016 #TODO: Find the real year
 external_url: "https://archive.org/details/new-course-in-reading-pali_bhikkhu-bodhi"
 formats: [MP3s]
 drive_links:
- - "https://drive.google.com/drive/folders/16-QWt159cHmbtlTrZw4-pG7BRJITN8ab"
+ - "https://drive.google.com/drive/folders/19vrEDDYrsqmPnb8cp4eH4_m2xUHw-KXb"
 course: pali-new-course
 base_value: 1.6
 minutes: 5273

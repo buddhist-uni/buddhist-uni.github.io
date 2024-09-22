@@ -5,9 +5,9 @@ external_url: "https://www.abhayagiri.org/books/451-the-island"
 olid: OL31915058M
 formats: [pdf, epub, mp3s]
 drive_links:
-  - "https://drive.google.com/file/d/1u7zwgGR-1kltg9eVwBAEtFYrIdeGPKac/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1oRZ9Zb53nSeTr8jKigIm0-iQwtWgH0NG/view?usp=drivesdk"
-  - "https://drive.google.com/drive/folders/1S1LHlBgIyD6dg2B1zSRqr_-mJVKDXHF8"
+  - "https://drive.google.com/file/d/1UNqB7eMIgr7mPHzYuFuyJZKuAEGfPcIi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MUL3eTfof3h6k75QFo-QpsQfBzC5cT2w/view?usp=drivesdk"
+  - "https://drive.google.com/drive/folders/1soL78LzsAk3BstvRy5VTA6QlgpYa1zVq"
 year: 2009
 month: nov
 publisher: amaravati

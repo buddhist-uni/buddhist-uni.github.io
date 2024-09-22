@@ -5,7 +5,7 @@ year: 2017
 month: nov
 external_url: "https://youtu.be/cR6V9YDcngo"
 drive_links:
- - "https://drive.google.com/file/d/17P8HK7ASP5ZhBp76PscwbWOht_iAuaLR/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1I4RVdIuZjTNQ2nOMTj4eQ0fkfBGiGjcf/view?usp=drivesdk"
 course: philosophy
 tags:
   - vipassana

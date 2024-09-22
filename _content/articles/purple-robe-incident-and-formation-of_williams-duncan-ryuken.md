@@ -5,7 +5,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/0e9d/07b124de50a257a4950e34cdd7a16524fd59.pdf"
 source_url: "https://doi.org/10.18874/jjrs.36.1.2009.27-43"
 drive_links:
-  - "https://drive.google.com/file/d/1huK33j4tycp1e34FD7TmGrAKzjTjbW_8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LdZrJ39Re9z5GDeVsDOiSoaoN42XFd9d/view?usp=drivesdk"
 course: roots
 tags:
   - japanese-roots

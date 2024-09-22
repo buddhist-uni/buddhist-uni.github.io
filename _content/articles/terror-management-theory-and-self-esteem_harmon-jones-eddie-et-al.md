@@ -8,7 +8,7 @@ authors:
 source_url: "https://doi.org/10.1037/0022-3514.72.1.24"
 external_url: "https://www.researchgate.net/profile/Eddie-Harmon-Jones/publication/232484435_Terror_Management_Theory_and_Self-Esteem_Evidence_That_Increased_Self-Esteem_Reduces_Mortality_Salience_Effects/links/0fcfd51179ff793bd7000000/Terror-Management-Theory-and-Self-Esteem-Evidence-That-Increased-Self-Esteem-Reduces-Mortality-Salience-Effects.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14HvrIh9a059u-mElFttzzGw3j-xETVzz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1j3ACJLbyjHPHOYorky2edNQDWwAokrWS/view?usp=drivesdk"
 course: death
 tags:
   - tmt

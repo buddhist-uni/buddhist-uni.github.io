@@ -4,7 +4,7 @@ authors:
 - yuttadhammo
 source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Daily/130401_nature.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1cmOj8zVQPfMFeLqjq_ugnOf5-bhzoki4/view?usp=sharing"
+  - "https://drive.google.com/file/d/1J0jT0Lb8u14BovtnNrvMYxAL124AV4iL/view?usp=sharing"
 formats: [m4a]
 course: nature
 status: featured

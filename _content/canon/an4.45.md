@@ -3,7 +3,7 @@ title: "AN 4.45: The Rohitassa Sutta"
 slug: "an.004.045"
 translator: geoff
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/11WdRB1UMdk0-BLptELldq2b_UPnlmoKZ/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1rU6pE98Ag2_wfcQhSgPjxqwCZpxY_Jcp/view?usp=drivesdk"]
 external_url: "https://www.dhammatalks.org/suttas/AN/AN4_45.html"
 year: 1997
 course: cosmology

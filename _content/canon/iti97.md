@@ -4,7 +4,7 @@ translator: ireland
 slug: "iti097"
 external_url: "https://suttacentral.net/iti97/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1V6jBbUe3Kz-PhrbWGQJ6ru51px_tkAgE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11DVC2OszOM2juKgndRLJe6HhmHANQoNg/view?usp=drivesdk"
 course: function
 tags:
   - monastic-advice

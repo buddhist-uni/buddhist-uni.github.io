@@ -4,7 +4,7 @@ translator: ireland
 slug: "iti041"
 external_url: "https://suttacentral.net/iti41/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1GGvAtmuy4Jb6ISVf9auupXfVc6eqKolp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ah8nwz1FkPjQsf88YWS7PAF1SkTr8FT5/view?usp=drivesdk"
 course: nibbana
 tags:
   - becon

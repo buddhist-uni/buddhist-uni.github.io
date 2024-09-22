@@ -3,7 +3,7 @@ title: "Buddhacarita: In Praise of Buddha’s Acts"
 translator: "Charles Willemen"
 external_url: "https://bdkamerica.org/download/1896"
 drive_links:
-  - "https://drive.google.com/file/d/1ogsp86UfZguXkm1Z_qVrd2fCggIxKfX0/view?usp=sharing"
+  - "https://drive.google.com/file/d/16MXjstFIxIDIBlBf6d07WZtH_hodbH5b/view?usp=sharing"
 course: indian
 tags:
   - buddha

@@ -5,7 +5,7 @@ slug: "thig.05.06"
 subcat: poetry
 external_url: "https://suttacentral.net/thig5.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1K4tcVH4oSncal4Ey6A1USnXNUYzNTGmO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LMdQFQOXkbL_-UZngy9jZvW4CyNHfCzL/view?usp=drivesdk"
 course: sati
 tags:
   - thought

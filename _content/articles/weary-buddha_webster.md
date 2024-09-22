@@ -4,7 +4,7 @@ authors: ["David Webster"]
 source_url: "https://journal.equinoxpub.com/BSR/article/view/14057"
 file_links:
   - "exclusive_01/The%20Weary%20Buddha%20-%20David%20Webster.pdf"
-drive_links: ["https://drive.google.com/file/d/1n6QPPKVJVcvGRltvXPFGArfXTiEDdpbv/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1sULs6XCjMg2GelQzhHiDlYua0v6jQYC2/view?usp=drivesdk"]
 course: buddha
 year: 2005
 volume: 22

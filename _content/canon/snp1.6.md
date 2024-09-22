@@ -5,7 +5,7 @@ slug: "snp.1.06"
 subcat: poetry
 external_url: "https://suttacentral.net/snp1.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1QqRH2fuai3_u4SKN85bLp_HX3AB4SOKX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ih-uB_YIEogz-3SIcmkb7B4cbzVy-YL6/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - lay

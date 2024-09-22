@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.009.003"
 external_url: "https://suttacentral.net/an9.3/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/15344EfhNlTVQ6N9MHsjMGZqbh08vywWG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P9-9vED9HQRsGjrfvG54jwYej_U7QOAn/view?usp=drivesdk"
 course: problems
 tags:
   - monastic-advice

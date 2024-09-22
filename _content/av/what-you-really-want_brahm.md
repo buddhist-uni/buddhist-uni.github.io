@@ -8,7 +8,7 @@ external_url: "https://archive.org/details/how-to-discover-what-you-really-want-
 formats:
   - m4a
 drive_links:
- - "https://drive.google.com/file/d/1xou3XiHGMXLn59VN_nb1L7NPFzfTaowI/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1LtX_tQH9fuwBPgL05BGJ5zbaNE1kef5j/view?usp=drivesdk"
 course: philosophy
 status: featured
 tags:

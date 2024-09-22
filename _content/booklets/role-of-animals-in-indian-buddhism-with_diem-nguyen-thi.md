@@ -6,7 +6,7 @@ authors:
 subcat: thesis
 source_url: "http://hdl.handle.net/10603/6464"
 drive_links:
-  - "https://drive.google.com/file/d/10-Z9YLeT0Th1Rz---eAarW8lafW_qP9x/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dzanP0Z8YZXTtbmsxcQ58oFnsYPE0_Gb/view?usp=drivesdk"
 course: animals
 tags:
   - jataka

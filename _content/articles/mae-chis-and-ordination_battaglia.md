@@ -4,7 +4,7 @@ authors:
   - "Lisa J. Battaglia"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/02/JBE-Battaglia_final.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1GtAEzCDYk7_kHdF25o4pQ1xARhtZJyv5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ho2qwZZOXNmixCmUQzb5ymeBGTw8xrlN/view?usp=drivesdk"
 course: nuns
 status: featured
 tags:

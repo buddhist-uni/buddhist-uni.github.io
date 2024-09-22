@@ -4,7 +4,7 @@ authors:
   - "Tatsushi Tamai"
 external_url: "https://archive.org/download/aririab-vol-xv/Tocharian%20Punyavantajataka.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1uC65Hr0I9VhiqHK16goZL0O9HMA6GyMh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1G-sWeL1KiTqh3TuiWPg-kC5FnUHZgVk4/view?usp=drivesdk"
 course: jataka # solidly. Almost featured
 tags:
   - indian

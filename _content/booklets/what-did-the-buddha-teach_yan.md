@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.dhammathai.org/dhamma-eng/buddhateach01.php"
 source_url: "https://archive.org/details/what-did-the-buddha-teach-somdet-yan"
 drive_links:
-  - "https://drive.google.com/file/d/1IaMKrIj-sBxCBFGXzrnXGuwx-GWE_9tX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qkI1yqDeCLPt1eiLXuf4uvfR7DbKyh0n/view?usp=drivesdk"
 course: thai
 tags:
   - buddhism

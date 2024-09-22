@@ -6,7 +6,7 @@ translator: "Adam Pearcey"
 editor: "Phillippa Sison"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/gyalse-thogme-zangpo/how-transform-sickness"
 drive_links:
-  - "https://drive.google.com/file/d/1jJKBE2FyvaFtgi82Tj8dBmxtMpFxFdOG/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Ngf-vlPeelUA06em7mP6G_j-bGCNUqAQ/view?usp=sharing"
 formats: [pdf]
 course: thought
 tags:

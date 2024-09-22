@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/9005/10478"
 source_url: "https://doi.org/10.1558/bsrv.v32i1.25056"
 drive_links:
-  - "https://drive.google.com/file/d/1OqFLDeFWvaZL7XuWEWZ_XTHgLTkEtm3s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qlnecTQH07m9fCZept_ZbZPoMRZG9DmO/view?usp=drivesdk"
 course: jataka
 tags:
   - lit-crit

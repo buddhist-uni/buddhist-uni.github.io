@@ -4,7 +4,7 @@ authors:
   - "Steven Mintz"
 external_url: "https://www.insidehighered.com/views/2013/07/02/essay-role-history-supreme-court-decision-gay-marriage"
 drive_links:
-  - "https://drive.google.com/file/d/1FDSaJUIhj6kWgil1LkqcG-RfCz7qhv7I/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yeZu8NacMQdnga_6iGzDlikcJ7aRoKpt/view?usp=drivesdk"
 course: time # maybe down to past or maybe archive?
 tags:
   - lgbtq

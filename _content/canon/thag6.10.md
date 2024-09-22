@@ -5,7 +5,7 @@ slug: "thag.06.10"
 subcat: poetry
 external_url: "https://suttacentral.net/thag6.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/12WD3s_HS8EWs8V_q0mrrily4w4OmvPlB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Z6dL5H9pxJsFXAZoaswDyPkXSfaJuSsx/view?usp=drivesdk"
 course: nibbana
 tags:
   - underage

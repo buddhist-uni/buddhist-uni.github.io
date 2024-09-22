@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.009.030"
 external_url: "https://suttacentral.net/an9.30/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1tbyS0amjTuVvLfecszMmXB5EzCJfnU81/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oLnhckLDjZzbfmen8s9XvY1uOaoTUJri/view?usp=drivesdk"
 course: thought
 tags:
   - an

@@ -4,7 +4,7 @@ authors:
   - magee-rhonda
 external_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1508884"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1R-mO72C2KMtalSTlcOpBMm7mj5aXoGGK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1lnNL-vctEqIm6msq62XccoLYwjXGX6wM/view?usp=drivesdk"]
 journal: "University of San Francisco Law Review"
 volume: 43
 year: 2008

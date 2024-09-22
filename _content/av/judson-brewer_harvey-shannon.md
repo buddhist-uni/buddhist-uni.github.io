@@ -4,7 +4,7 @@ authors:
   - "Shannon Harvey"
 external_url: "https://www.shannonharvey.com/blogs/podcast/in-conversation-with-associate-professor-judson-brewer-episode-06"
 drive_links:
-  - "https://drive.google.com/file/d/1t6MPk5GZhKUt1295stRkCixXlY1svn6g/view?usp=drive_link"
+  - "https://drive.google.com/file/d/14kKbgLZF4KSJRurZX2mYa5veHgrgSLDT/view?usp=drive_link"
 course: sati
 tags:
   - neuroscience

@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxii/gender%20relevance%20and%20Buddhist%20values.pdf"
 source_url: "https://www.academia.edu/38659166/Soreyya_%C4%81_s_double_sex_change_on_gender_relevance_and_Buddhist_values"
 drive_links:
-  - "https://drive.google.com/file/d/1kLbpdyKKxDd4dpv_iN4uB9zB8w8Gg7kj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hXLdxfuthg3g-RMdP9GgKFIfXyFUqF5x/view?usp=drivesdk"
 course: hermeneutics
 tags:
   - parenting

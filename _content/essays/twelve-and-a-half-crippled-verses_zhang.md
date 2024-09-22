@@ -5,7 +5,7 @@ authors: ["Lama Zhang Tsöndrü Drakpa"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lama-zhang-tsondru-drakpa/twelve-half-crippled-verses"
 year: 2020
 translator: "Lowell Cook"
-drive_links: ["https://drive.google.com/file/d/1as4PX4EPXhtavVz7jI-bxI0e4jvZLHsU/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1LvictMg940gp-Ah41ygdVjqdX-uTvIh0/view?usp=drivesdk"]
 course: monastic
 status: featured
 tags:

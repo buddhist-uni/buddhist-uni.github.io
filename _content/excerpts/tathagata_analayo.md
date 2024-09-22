@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/tathagata.pdf"
 year: 2008
 drive_links:
- - "https://drive.google.com/file/d/1TesyxwmN5phkiZ3B7Fpc6QDCCRUtIMoQ/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1sRnpkrGK8B4RiU7v7SUPrVDLpkmpN2m_/view?usp=drivesdk"
 course: buddha
 tags:
   - tathagatagarbha

@@ -6,7 +6,7 @@ year: 2016
 month: nov
 course: buddhism
 drive_links:
-  - "https://drive.google.com/file/d/1512Dxam8MIvmObM9FbS6-zG3WbtpRniC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QTAwGZ0JJD4bkq2SeO15VtvFVlaT-n-g/view?usp=drivesdk"
 tags:
   - meditation
   - samatha

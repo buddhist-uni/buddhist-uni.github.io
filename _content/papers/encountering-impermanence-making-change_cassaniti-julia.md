@@ -4,7 +4,7 @@ authors:
   - "Julia Cassaniti"
 from_book: impermanence
 drive_links:
-  - "https://drive.google.com/file/d/1iW-8Kkok_BAe90uPcX0XZ-xL7lfPGsl9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a83joz6LF_dayqVICvhmO8CK1g5aP0v_/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Encountering%20impermanence%2C%20making%20change%20-%20Julia%20Cassaniti.pdf"
 course: thai

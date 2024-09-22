@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/openingdebate.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1q1u1XmUL7yaxFRSuKsk3jwc4eA5y-TPt/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ttshjvrWdjO6uGrvzkXrS9FIoPEfEv9N/view?usp=sharing"
 course: dialogue
 tags:
   - anatta

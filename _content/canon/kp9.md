@@ -5,7 +5,7 @@ subcat: poetry
 slug: "khp9"
 external_url: "https://suttacentral.net/kp9/en/nanamoli"
 drive_links:
-  - "https://drive.google.com/file/d/1ys5Ob4ozKs70Usxv6UJXqBzqQoLgVSdE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sdmnDUQqop7CSOQ-vvUd1QwMwii7o7Uj/view?usp=drivesdk"
 course: ethics
 status: featured
 tags:

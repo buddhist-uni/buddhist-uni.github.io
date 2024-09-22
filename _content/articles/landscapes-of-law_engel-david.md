@@ -4,7 +4,7 @@ authors:
   - "David M. Engel"
 external_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1428870"
 drive_links:
-  - "https://drive.google.com/file/d/1u0phpvb-wUAWj-H79Tc8nd-VkLkrs4-S/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OZTU18TqrhQl_cIJK_znizX8CJBh0lY6/view?usp=drivesdk"
 course: thailand
 status: featured
 tags:

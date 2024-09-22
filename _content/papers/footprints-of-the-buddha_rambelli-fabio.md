@@ -6,7 +6,7 @@ editor: "Birgit Kellner"
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-007/pdf#.pdf"
 source_url: "https://doi.org/10.1515/9783110413083-007"
 drive_links:
-  - "https://drive.google.com/file/d/1NjP7LPKwbMvPhp6gJZslHPIahtdew3WT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NnLVqjBVG47OPz3oW7uvHzG-iCF3OaXN/view?usp=drivesdk"
 course: maps
 tags:
   - early-modern

@@ -3,7 +3,7 @@ title: "Thag 6.5 Mālukyaputta Theragāthā: Māluṅkyaputta"
 slug: "thag.06.05"
 external_url: "https://suttacentral.net/thag6.5/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1oQDps081aa8hZAgDK2CKiXJJGf8lMMpM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VQsEQ-iqBgT61tSXXKq_LfgfbBmN_mIf/view?usp=drivesdk"
 translator: sujato
 course: thought
 tags:

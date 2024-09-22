@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/4147502/files/299-888-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1287/1124"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1-zBQaT9jqC03Q4MFT2jTt-VpZvbSWdby/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1u16dzTZXE1VBAl_8x96abTHdoP6Lcudd/view?usp=drivesdk"]
 year: 2020
 journal: jgb
 volume: 21

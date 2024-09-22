@@ -4,7 +4,7 @@ authors:
   - "Astra Taylor"
 external_url: "https://logicmag.io/failure/the-automation-charade/"
 drive_links:
-  - "https://drive.google.com/file/d/1VD-knicIAH0P4-Pe4bycWFkPsZi0HPqf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ivG4frstgXTTYoQqMBCIUkjDo8efVuFC/view?usp=drivesdk"
 status: featured
 course: future
 tags:

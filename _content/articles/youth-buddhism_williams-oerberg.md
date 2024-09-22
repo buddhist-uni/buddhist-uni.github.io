@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/5764619/files/322-1114-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1984/1723"
 drive_links:
-  - "https://drive.google.com/file/d/1Ujim-4_F3nOXC2e2-vpvwtfwp8I8DIIm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QXKFvFUoDZD_LjgCn6GIKVzfo8rYCF-t/view?usp=drivesdk"
 status: featured
 course: tibetan-diaspora
 tags:

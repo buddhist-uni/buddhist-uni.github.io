@@ -5,7 +5,7 @@ authors:
   - "A. D. P. Kalansuriya"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8463/2370"
 drive_links:
-  - "https://drive.google.com/file/d/1tXfe_PMa7eBPK9CwGp4p5fHqV9bH4pB3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JRiFzPyVfN-rCSLbSOaTiNvkQ1A4fFj3/view?usp=drivesdk"
 course: epistemology
 tags:
   - origination

@@ -4,7 +4,7 @@ authors:
   - "Brian Victoria"
 external_url: "http://jocbs.org/index.php/jocbs/article/view/166/203"
 drive_links:
-  - "https://drive.google.com/file/d/1LDZPEaqGydb67Lu8FqjVn3txoT7liHe0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X-E_6vZjjDI8MEp1nmoRL72-l3Rq-FVH/view?usp=drivesdk"
 course: samadhi
 tags:
   - roots

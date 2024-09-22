@@ -4,7 +4,7 @@ authors:
   - "Lama Yeshe Gyamtso"
 external_url: "https://dharmaebooks.org/four-noble-truths/"
 drive_links:
-  - "https://drive.google.com/file/d/1HfOeGQfqsR27jb2opDluzz6ZAf1HsOX9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FcudTx-K77lGK9fCsoMslxwKM4sbNTf4/view?usp=drivesdk"
 course: view
 year: 2013
 olid: OL49198454M

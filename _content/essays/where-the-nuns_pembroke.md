@@ -4,7 +4,7 @@ authors:
   - "Susan Pembroke"
 external_url: "https://www.bhikkhuni.net/where-are-the-women-monastics/"
 drive_links:
-  - "https://drive.google.com/file/d/1iHqjrVirnhvQe8dmeuQC-Ps1Oa8XAu-V/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/123PHmOPF3DBtcIRqRuAbvzJBAutdkWsO/view?usp=drivesdk"
 course: west
 tags:
   - theravada

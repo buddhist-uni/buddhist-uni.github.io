@@ -4,7 +4,7 @@ authors:
   - nissarano
 external_url: "https://bswa.org/teaching/mn148-chachakka-sutta-six-sextets/"
 drive_links:
-  - "https://drive.google.com/file/d/1B9A0_hMG1Ng8l0Mm_nNaF9JKzdXDzZBS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gb3GRNYejh8-HYCLS2V0wER_bnk6pGOU/view?usp=drivesdk"
 course: philosophy
 year: 2005
 month: jan

@@ -2,7 +2,7 @@
 title: "SN 1.12 Nandati Sutta: Delight"
 external_url: "https://suttacentral.net/sn1.12/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1K8OTioqoG4dDEgb4OUfU0wHdcV9m5jAb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1t5_jPOM4Ovb5egUsK0S1MS8mF07B7aox/view?usp=drivesdk"
 translator: sujato
 slug: "sn.001.012"
 course: pali-canon

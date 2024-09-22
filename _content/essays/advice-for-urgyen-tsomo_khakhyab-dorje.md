@@ -5,7 +5,7 @@ authors:
 translator: "Abraham Ta-Quan"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/fifteenth-karmapa/advice-for-urgyen-tsomo"
 drive_links:
-  - "https://drive.google.com/file/d/1K7nqAtjFMlgmUtCSuDYH722K203Z96Y2/view?usp=sharing"
+  - "https://drive.google.com/file/d/1fhFjaHpfPkYz3Py7MYX_DQRFlnY15DkY/view?usp=sharing"
 course: thought
 tags:
   - problems

@@ -5,7 +5,7 @@ year: 2010
 month: may
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Internet/100504_ForRightView5.mp3"
 drive_links:
- - "https://drive.google.com/file/d/1CpApoMgZxkUIVc4St_9SYCsVUvRkb8Y4/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1ffWvmptN88mRY1FT2Xb9Mitei6E4sjjF/view?usp=drivesdk"
 course: philosophy
 tags:
   - view

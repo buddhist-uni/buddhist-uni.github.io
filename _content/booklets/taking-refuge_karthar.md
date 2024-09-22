@@ -6,7 +6,7 @@ editor: "David McCarthy"
 external_url: "https://dharmaebooks.org/taking-refuge/"
 formats: [epub]
 drive_links:
-  - "https://drive.google.com/file/d/1HDEezGFh9gV-jab5oEAIiUCwJJPGVTXy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ultUikwfpcYol1Eue74TgkiNLisBvUjt/view?usp=drivesdk"
 course: mahayana
 tags:
   - philosophy

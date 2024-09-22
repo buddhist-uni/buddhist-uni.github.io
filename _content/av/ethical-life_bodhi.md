@@ -4,7 +4,7 @@ authors: [bodhi]
 subcat: course
 source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html"
 formats: [MP3s]
-drive_links: ["https://drive.google.com/drive/folders/1d6Oym0ZPy8nmZ5vdy8NckSNsURDxHYPp"]
+drive_links: ["https://drive.google.com/drive/folders/1o5TDFr-9EjCsbfMTlonalezlQbJVCmk5"]
 course: mn
 tags:
   - ethics

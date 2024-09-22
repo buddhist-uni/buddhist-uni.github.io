@@ -3,7 +3,7 @@ title: "DN 2 Sāmaññaphala Sutta: The Fruits of Recluseship"
 slug: "dn02"
 external_url: "https://suttacentral.net/dn2/en/bodhi"
 translator: bodhi
-drive_links: ["https://drive.google.com/file/d/1rBbDVLaJZpp2S6vV8CrT-3f2GrzowHfW"]
+drive_links: ["https://drive.google.com/file/d/1pyqx6FrBaRKoHN2BCfYQerRuLoSaGEwL"]
 status: featured
 course: monastic
 tags:

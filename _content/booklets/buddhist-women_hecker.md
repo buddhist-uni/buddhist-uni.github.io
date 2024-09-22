@@ -4,7 +4,7 @@ authors: [hecker]
 translator: "Sister Khemā"
 external_url: "https://www.bps.lk/olib/wh/wh292_Hecker_Buddhist-Women-at-the-Time-of-the-Buddha.html"
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1BWjMnS7LeWkHSiMBX8GeDHXXugUvtQw2/view?usp=drivesdk", "https://drive.google.com/file/d/1Q5zperozKKIRA5n2ncxmpBAAN-rT0MQ7/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1NpJcDQLSYGM9D_J8mMqU-GwQ47HYgQS9/view?usp=drivesdk", "https://drive.google.com/file/d/1g2u5S9gwkgBNu5Hs9NL_4qTiw9r7tQap/view?usp=drivesdk"]
 year: 1982
 month: jan
 publisher: bps

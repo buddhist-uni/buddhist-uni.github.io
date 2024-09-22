@@ -4,7 +4,7 @@ authors:
   - pigni-a
 external_url: "https://www.opendemocracy.net/en/transformation/practising-mindfulness-at-checkpoint/"
 drive_links:
-  - "https://drive.google.com/file/d/18vNDnT8Hzw5M843fE9mcVcwYRh3_Q8JR/view?usp=sharing"
+  - "https://drive.google.com/file/d/151c8Mw-kGbtypgA_xVut3Kwnlzr12UFH/view?usp=sharing"
 course: problems
 tags:
   - sati

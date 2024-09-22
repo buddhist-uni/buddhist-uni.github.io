@@ -4,7 +4,7 @@ authors:
   - "Miri Albahari"
 external_url: "http://hdl.handle.net/2027/spo.3521354.0014.021"
 drive_links:
-  - "https://drive.google.com/file/d/1yxdXelnGrfcpxjJNVJ74pJRLVYQnDy55/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jtPET1AGRSuGTacw5NxJlWtPEgt3PZdU/view?usp=drivesdk"
 course: emptiness # solidly three stars
 tags:
   - academic

@@ -4,7 +4,7 @@ authors:
   - "Pia Brancaccio"
 source_url: "https://archive.org/details/arsorientalisart12000univ/page/40/mode/2up"
 drive_links:
-  - "https://drive.google.com/file/d/1E06_lFubssk02k8QocP0QT3IeK8aBOb_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cKuDiVuDdiFLKV-y9VGCXtC2-xUrxEwF/view?usp=drivesdk"
 file_links:
   - "exclusive_01/The%20Buddhist%20Caves%20at%20Aurangabad_%20The%20Impact%20of%20the%20Laity%20-%20Brancaccio.pdf"
 course: pilgrimage

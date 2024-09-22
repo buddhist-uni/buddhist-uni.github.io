@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.jstage.jst.go.jp/article/ibk1952/49/1/49_1_506/_pdf"
 source_url: "https://doi.org/10.4259/ibk.49.506"
 drive_links:
-  - "https://drive.google.com/file/d/1LbVXi-SaCCXWcKZOaDV7_kr8MRja5eij/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rVfuThtkqc9y8ysFmyflp3CY3L5_onyN/view?usp=drivesdk"
 course: sa
 year: 2000
 month: dec

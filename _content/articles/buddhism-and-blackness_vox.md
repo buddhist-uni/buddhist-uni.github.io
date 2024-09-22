@@ -6,7 +6,7 @@ authors:
 journal: vox
 external_url: "https://www.vox.com/future-perfect/2020/7/2/21310378/buddhist-mindfulness-meditation-black-activism-future-perfect"
 drive_links:
-  - "https://drive.google.com/file/d/12JdmVcPzOqleU-LAxUCMR2mPgJ2RXWXI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_7dUvI5A1k_C5TqADperVLS92mTLXc97/view?usp=drivesdk"
 year: 2020
 month: jul
 course: activism

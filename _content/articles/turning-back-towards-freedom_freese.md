@@ -2,7 +2,7 @@
 title: "Turning Back Towards Freedom"
 authors: ["Roseanne Freese"]
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/07/turning-back-towards-freedom_winter2011.pdf"
-drive_links: ["https://drive.google.com/file/d/1XSOezs6KZDz8HcCumdxK5jNNkws-4v8G/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/11Es0j6U9rBy3OKqSogGvxqGvVvVbeIw6/view?usp=drivesdk"]
 tags:
   - american
   - vinaya-pitaka

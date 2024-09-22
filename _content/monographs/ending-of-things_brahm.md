@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://www.bps.lk/olib/bl/bl153_Brahmavamso_The-Ending-of-Things.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/13Jzo6atcf1pJLTDW_f1xZeqbavb3o1ze/view?usp=sharing"
+  - "https://drive.google.com/file/d/1T4tw7qor2k92tkX8MTtwW6cgawCB1-mb/view?usp=sharing"
   - "https://drive.google.com/file/d/1_UKXpe3IPQfpruQJ0eNXVUX3fWzdQTjv/view?usp=drivesdk"
 formats: [pdf, mp3]
 course: emptiness

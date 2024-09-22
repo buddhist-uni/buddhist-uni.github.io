@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.007.057"
 external_url: "https://suttacentral.net/an7.57/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1AR92b8suQU8U30NxUIBvBpoXF6jFIsEp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gMrGj3n8niHs5JeG5ZFwsHFaGXdngUc6/view?usp=drivesdk"
 course: karma
 tags:
   - dana

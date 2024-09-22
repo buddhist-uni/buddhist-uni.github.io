@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.086"
 external_url: "https://suttacentral.net/an3.86/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1kUrq34zguwwYtFL6BWr_pNj9FcN7HxzB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TzK3HExhHTy_KDyGiWGUPxwBa5I9qMAz/view?usp=drivesdk"
 course: vinaya-studies
 status: featured
 tags:

@@ -3,7 +3,7 @@ title: "Khp 6: Ratana Sutta"
 external_url: "https://suttafriends.org/sutta/khp6/"
 subcat: poetry
 drive_links:
-  - "https://drive.google.com/file/d/1uqtBhNJG3MVUrmrBh1jV7m0anDKNzmpT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1omPuhb2tdaEOfropmaVcsXxv3YrZVQEI/view?usp=drivesdk"
 course: buddha
 tags:
   - deva

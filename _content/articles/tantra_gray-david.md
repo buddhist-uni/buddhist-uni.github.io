@@ -4,7 +4,7 @@ authors:
   - "David B. Gray"
 external_url: "https://doi.org/10.1093/acrefore/9780199340378.013.59"
 drive_links:
-  - "https://drive.google.com/file/d/1mqQEI4gLDM6sDbFDsqjsj0X6BAg1WyqV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LNZTPbtAVSLaFM1bKsORhYac2QHgKseT/view?usp=drivesdk"
 course: tantric
 status: featured
 tags:

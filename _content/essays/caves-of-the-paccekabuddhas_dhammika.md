@@ -4,7 +4,7 @@ authors: [dhammika]
 external_url: "https://budblooms.org/2020/05/10/the-lost-caves-of-the-pacceka/"
 year: 2008
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1aFkupUVHzjk-jMcuQ4DF2YlrkUz5bjO6/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1rpFupLaoSLxzBmgz5ZCQXoyqIfJYF97E/view?usp=drivesdk"]
 course: pilgrimage
 tags:
   - wider

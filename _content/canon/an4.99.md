@@ -5,7 +5,7 @@ slug: "an.004.099"
 source_url: "https://accesstoinsight.org/tipitaka/an/an04/an04.099.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN4_99.html"
 drive_links:
-  - "https://drive.google.com/file/d/1y205mzeDJbiCXpPCsks61SYa_uVOBh6B/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19NRYEAxdWhUEuBkFS_JF4F7zmUw9vCSM/view?usp=drivesdk"
 course: thought
 tags:
   - an

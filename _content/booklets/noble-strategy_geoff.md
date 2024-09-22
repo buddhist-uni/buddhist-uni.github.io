@@ -4,8 +4,8 @@ authors:
   - geoff
 external_url: "https://www.dhammatalks.org/ebook_index.html#noblestrategy"
 drive_links:
-  - "https://drive.google.com/file/d/1Z5IfaIwojebZp5bkC3HAx_uUkTR5lTzF/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Kb3kB0qpU9_yye6UKdgFUkHr2c8t5A7p/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ROBaOFaVes2tKemz8fuU5hYbgojLkeeQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1khfx7BeTSE7snbhjS4x733LCZDFx7SbD/view?usp=drivesdk"
 course: buddhism
 tags:
   - path

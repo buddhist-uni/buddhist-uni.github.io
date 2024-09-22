@@ -1,7 +1,7 @@
 ---
 title: "Nibbāna: The Goal of Buddhist Practice"
 subtitle: "A Reading Guide"
-google_doc_id: 1SSR6mG2xN7wuIEj1Fqs1pJFSfJGWjixdM9u22RED5nM
+google_doc_id: 1n16ncQf6v-BGc9e-eBIfupjyK6gSOBmH9L5ze5fMO4Q
 feedback_id: "Nibb%C4%81na"
 icon: "far fa-heart"
 image: "https://illeakyw.sirv.com/Images/banners/buddha-statue-among-clouds.jpg"

@@ -5,7 +5,7 @@ slug: "sn.007.010"
 subcat: poetry
 external_url: "https://suttacentral.net/sn7.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/18qRS-CyW9yoSSnNHHNaOrCACvAM_xHJv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tEm9xGExYmuaGWM7409RGFiC54y_4ypG/view?usp=drivesdk"
 course: characters
 tags:
   - monastic

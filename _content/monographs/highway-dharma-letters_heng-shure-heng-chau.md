@@ -5,7 +5,7 @@ authors:
   - "Heng Chau"
 external_url: "https://www.dharmasite.net/HighwayDharmaLetters.pdf"
 drive_links: 
-  - "https://drive.google.com/file/d/1RCOI2uXeWOsrwHgtU-zEDRxQb7LvDhvE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NYoisbwkQ50c1U3bm3T2DU-s7iEWNnaE/view?usp=drivesdk"
 status: featured
 course: pilgrimage
 tags:

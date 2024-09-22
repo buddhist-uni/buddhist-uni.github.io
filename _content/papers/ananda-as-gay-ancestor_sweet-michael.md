@@ -9,7 +9,7 @@ year: 2000
 editor: "Winston Leyland"
 publisher: "Gay Sunshine Press"
 address: "San Francisco"
-drive_links: ["https://drive.google.com/file/d/1JyVwI4KmYJAU8FBJLVq88GBu-WNaMNd1/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1cxL6mStUHfG1yoeJZ3VYxidgeNoAt5Pm/view?usp=drivesdk"]
 course: characters
 tags:
   - lgbt

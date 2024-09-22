@@ -4,7 +4,7 @@ authors:
   - "Yukiyo Kasai"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3290301&journal_code=JIABS&download=yes"
 drive_links:
-  - "https://drive.google.com/file/d/16kkB4MWUtRGRB0J09EJbM1EqtgwOAn1j/view?usp=sharing"
+  - "https://drive.google.com/file/d/1YRBu4dHtCV9kgbgoDoExWgNKnAp28UqI/view?usp=sharing"
 course: medieval
 tags:
   - central-asian

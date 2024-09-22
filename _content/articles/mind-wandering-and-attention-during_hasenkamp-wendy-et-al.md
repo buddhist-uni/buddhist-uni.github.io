@@ -8,7 +8,7 @@ authors:
 external_url: "https://mindrxiv.org/4fnt6/download"
 source_url: "https://doi.org/10.1016/j.neuroimage.2011.07.008"
 drive_links:
-  - "https://drive.google.com/file/d/1bp5dQSmwEr8mUDIl4Nu6vSQ6vW_C8Xq8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1np3fpQ7RacPfi7wAUN_GMvPn9teFD6yj/view?usp=drivesdk"
 course: meditation
 tags:
   - anapanasati

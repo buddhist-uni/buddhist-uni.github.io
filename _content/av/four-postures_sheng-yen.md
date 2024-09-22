@@ -6,7 +6,7 @@ subcat: film
 external_url: "https://youtu.be/wAdWNdAsV_g"
 source_url: "https://youtu.be/qMnLlYge0VI"
 drive_links:
-  - "https://drive.google.com/file/d/12rvlKEER8x7mteH0q7P92QD7gpNZP0wR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1h8UlZnX3Nhv-IxwfF3ztzDDyu9_XKDX9/view?usp=drivesdk"
 formats: [mp4]
 course: meditation
 tags:

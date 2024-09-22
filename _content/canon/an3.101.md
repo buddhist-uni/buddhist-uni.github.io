@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.101"
 external_url: "https://suttacentral.net/an3.101/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/16ddm2HtsIfXtfY8HM7vR2mPae7zaXAyd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hXBGJFGsAPbVo0JlX33saZM2tLjLTD00/view?usp=drivesdk"
 course: path
 tags:
   - iddhi

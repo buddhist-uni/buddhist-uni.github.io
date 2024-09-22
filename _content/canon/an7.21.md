@@ -4,7 +4,7 @@ slug: "an.007.021"
 translator: sujato
 external_url: "https://suttacentral.net/an7.21/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1u22HlC0gWnFrXzoB-K2Z6SHVy2DH-SKY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AohZtyhayEhi7Gjy79vzc3kR3kDMGb4D/view?usp=drivesdk"
 course: society
 tags:
   - an

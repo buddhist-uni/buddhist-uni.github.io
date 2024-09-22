@@ -4,7 +4,7 @@ authors:
   - "Ken Knabb"
 external_url: "http://www.bopsecrets.org/recent/buddhists.htm"
 drive_links:
-  - "https://drive.google.com/file/d/16g79pRbqouZ9grO17PTB5V-jK33uCtWs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I31wvoBkEt66LfXKBm5N3JJCM3XFMRX4/view?usp=drivesdk"
 course: engaged
 tags:
   - dialogue

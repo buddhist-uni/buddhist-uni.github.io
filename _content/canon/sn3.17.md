@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.003.017"
 external_url: "https://suttacentral.net/sn3.17/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/19lA1zhX6AmYkItcT397HRC2QpOZYkkTa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/170rDo5uFXhMliOiaymgiF0_h9Kko3xCF/view?usp=drivesdk"
 course: karma
 tags:
   - sn

@@ -12,7 +12,7 @@ tags:
 year: 2019
 olid: OL27337332M
 source_url: "https://direct.mit.edu/books/book/4304/Sexual-Consent"
-drive_links: ["https://drive.google.com/file/d/1DeGJ8Gjn2xvtVUh0JTcxIEgatBTHu1SV/view?usp=drivesdk", "https://drive.google.com/file/d/1WJenwV6JoDLcZU0gY1ZBj2qW4H7bWXCH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1nVHOalZbF0dUaCXULY-OzkHtgPb7XQDK/view?usp=drivesdk", "https://drive.google.com/file/d/1Ody7kwNISRqe_gkt2MJBQEsrW3CyVIov/view?usp=drivesdk"]
 publisher: mit
 status: featured
 pages: 218

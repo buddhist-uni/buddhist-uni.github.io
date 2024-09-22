@@ -4,7 +4,7 @@ slug: "an.005.167"
 external_url: "https://bhantesuddhaso.com/teachings/sutta/an-5-167-codana-sutta/"
 alternate_url: "https://suttacentral.net/an5.167/en/suddhaso"
 translator: suddhaso
-hidden_links: ["https://drive.google.com/file/d/1ML55amZkG0DN-3ZV6z31Zkl14cQJFk4s/view?usp=drivesdk"]
+hidden_links: ["https://drive.google.com/file/d/1tShVl9sGJTuOsj8OG3aZJBtugBLLrbq3/view?usp=drivesdk"]
 course: speech
 tags:
   - an

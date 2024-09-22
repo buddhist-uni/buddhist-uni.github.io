@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/summaries.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1faTaaSYl4nZfzCjpUmp6Vo30h_PrqhwI/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1tUDx_RtI6sMzApmyG4YJv18i9t42z5mJ/view?usp=drive_link"
 status: featured
 course: karma
 tags:

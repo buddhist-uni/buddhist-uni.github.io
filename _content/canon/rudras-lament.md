@@ -4,7 +4,7 @@ translator: "Adam Pearcey"
 year: 2020
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/lament-of-rudra"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1wJT6ZA8fqn2RpxPc2rtJrF3F8u5Etc2o/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1GBRIq8PL7CLRrKIhSyFL5MQNRUUccsJm/view?usp=drivesdk"]
 course: mahayana
 tags:
   - tantra

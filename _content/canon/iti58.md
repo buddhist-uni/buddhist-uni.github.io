@@ -5,7 +5,7 @@ slug: "iti058"
 subcat: poetry
 external_url: "https://suttacentral.net/iti58/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1Y2smdS5Vcn5HTos_TsM-RfcWxZOxa4Vb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Uc4UdNcfbiNHpXdOUDMQqj5bR2i6ned5/view?usp=drivesdk"
 course: desire
 tags:
   - inner

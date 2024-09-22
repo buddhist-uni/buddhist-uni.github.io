@@ -5,7 +5,7 @@ authors:
   - "Tsultrim Gyamtso"
 external_url: "https://dharmaebooks.org/thirty-seven-practices-bodhisattva/"
 drive_links:
-  - "https://drive.google.com/file/d/1H7N04Dvb9Mj25tAA4utfq_qhew8Ns9K-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pmZ6FPvX6W9x3W4pYmmN0EF1tszvS0eR/view?usp=drivesdk"
 course: mahayana
 tags:
   - thought

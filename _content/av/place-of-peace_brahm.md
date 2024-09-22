@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://youtu.be/zmx9W0u-XHE"
 drive_links:
-  - "https://drive.google.com/file/d/151sSuswMOMgO5Cr2Ci31rIsKsBS2MaYy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FRd53e1-TEcurGHldmdBJT_rbPwhkAx5/view?usp=drivesdk"
 formats: [m4a]
 course: samatha
 tags:

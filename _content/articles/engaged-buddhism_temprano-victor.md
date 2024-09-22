@@ -3,7 +3,7 @@ title: "Defining Engaged Buddhism: Traditionists, Modernists, and Scholastic Pow
 authors:
   - "Victor Gerard Temprano"
 external_url: "https://api.equinoxpub.com/articles/fulltext/17677"
-drive_links: ["https://drive.google.com/file/d/1Vns3Kbu9SqCYmGdgo8AlynrBH5GQnY2U/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1piEMuMyn36yJ4jDGjyWJxi35ox0P912i/view?usp=drivesdk"]
 year: 2013
 volume: 30
 course: engaged

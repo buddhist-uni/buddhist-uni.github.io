@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://bswa.org/teaching/mn13-mahadukkhakkhanda-sutta-the-greater-discourse-on-the-mass-of-suffering-with-ajahn-brahm/"
 drive_links:
-  - "https://drive.google.com/file/d/1JWrBilzJap6VJcp3zqd7M8kKO_dXlk9K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dOrYtAzhtyY0QLehjOA3KJHqgFiiezLb/view?usp=drivesdk"
 course: philosophy
 tags:
   - becon

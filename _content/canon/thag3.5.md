@@ -4,7 +4,7 @@ slug: "thag.03.05"
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag3_5.html"
 translator: geoff
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1xKOrx3OKOmC_igKieFZZwyCTjaRh8xkn"]
+drive_links: ["https://drive.google.com/file/d/1HdayU0HnMQWap9-k6SOTGouwrHar8mq5"]
 course: imagery
 tags:
   - thag

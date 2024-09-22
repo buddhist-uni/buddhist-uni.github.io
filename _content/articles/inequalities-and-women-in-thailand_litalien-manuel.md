@@ -4,7 +4,7 @@ authors:
   - "Manuel Litalien"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2018/08/Litalien-Social-Inequality-Thailand-final.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1mlL3S2cNGQ7Sa8YAl2Jo1uiUvbC6oQHq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QgoMrRQbR4t9YT8OSaOBgH4xs5rVbba0/view?usp=drivesdk"
 status: featured
 course: nuns
 tags:

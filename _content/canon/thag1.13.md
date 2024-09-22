@@ -5,7 +5,7 @@ slug: "thag.01.13"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.13/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Az00Otxujq4_tsyly0l2iiBHwj4k5ia5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1UMKwaqluom8_SOoeZ5HxMv8KPsphui_a/view?usp=drivesdk"
 course: nature
 tags:
   - mountains

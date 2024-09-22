@@ -2,7 +2,7 @@
 title: "Pāli Sutta Names"
 formats: [pdf]
 external_url: "https://name.readingfaithfully.org/"
-drive_links: ["https://drive.google.com/file/d/1WUuqzmNoU-AN-_5v2FlhHkHL3BRGT7ZY/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ebLV9-rTovhcpgGOMVff0Oh9DA-lhAKX/view?usp=drivesdk"]
 source_url: https://readingfaithfully.org/pali-sutta-name-index/
 year: 2022
 month: dec

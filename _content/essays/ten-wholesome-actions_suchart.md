@@ -4,7 +4,7 @@ authors: [suchart]
 external_url: "http://www.kammatthana.com/dt_004.htm"
 month: sep
 year: 2000
-drive_links: ["https://drive.google.com/file/d/1NsUjB_cktPk5Ci35Daz-rPDqCqLQNfpQ/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1K11nU73ThNO3xWe17NE4TyOvgbIuEzPb/view?usp=drivesdk"]
 course: ethics
 tags:
   - philosophy

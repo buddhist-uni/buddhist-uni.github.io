@@ -5,8 +5,8 @@ external_url: "https://suttacentral.net/edition/dn/en/sujato"
 formats: [GBook, PDFs, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=peWWDwAAQBAJ"
-  - "https://drive.google.com/file/d/1zpRiMrCpkHvrkK8_3Vd8T6M4KioyS740/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1yM0lmf41jc9naX_2qbxpLiv25GZlJiV3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pD1RzcFEwP17VNI69zozRBbUzEMOOnMA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OIE7uZaX8Rm_9zx2XFb_qw5fQLGbhhh7/view?usp=drivesdk"
 year: 2019
 course: dn
 tags:

@@ -4,7 +4,7 @@ authors:
   - "Stefan Karpik"
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/191"
 drive_links:
-  - "https://drive.google.com/file/d/1fEW6FX-iL3DwpQvzQstPD8NVxhMKvkb-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZPiCDT-XUOyf3lp8RZ2FjX4oLdQDqIki/view?usp=drivesdk"
 course: pali-language
 tags:
   - setting

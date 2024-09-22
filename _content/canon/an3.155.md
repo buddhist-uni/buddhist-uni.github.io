@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.155"
 external_url: "https://suttacentral.net/an3.155/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/14ZOw3UdN3WL8JeLfQnkeqGUNVE5X32mH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WXy2KIeRA3NQMlqIwgK908WnDbv5PksC/view?usp=drivesdk"
 course: theravada-chanting
 tags:
   - time

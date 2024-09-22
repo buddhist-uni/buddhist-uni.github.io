@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/1321/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.38.1.2011.1-54"
 drive_links:
-  - "https://drive.google.com/file/d/1rnOJiy7y8aY9jVk1OfUwB_mQApRBo6Cc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1scu-PN_Msl38lyLB4qfIIrjWuRLNVtzq/view?usp=drivesdk"
 status: featured
 course: modern
 tags:

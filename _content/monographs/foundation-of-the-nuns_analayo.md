@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/foundation.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1cu5IGH2SvnUfmTqoZKdu3iMlliKYQPJs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1L0eHbzmCw64EAAGR6ogWjxSDjFxGFNat/view?usp=drivesdk"
 course: nuns
 tags:
   - agama

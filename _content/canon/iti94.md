@@ -4,7 +4,7 @@ translator: ireland
 slug: "iti094"
 external_url: "https://suttacentral.net/iti94/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1kF0Vum86VasfSFAyN5jO9qN4VSSR4ri_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OQvNmi6YI1f1ax6EHMYRI9VwTcncGDQy/view?usp=drivesdk"
 course: samadhi
 tags:
   - tranquility-and-insight

@@ -4,7 +4,7 @@ authors:
   - cousins
 external_url: "http://jocbs.org/index.php/jocbs/article/view/57/88"
 drive_links:
-  - "https://drive.google.com/file/d/1oRbbDgh6LNILeI-O2f2sz4CuBETq_gFK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ii0IToVbPaV7h2z7_9pRW02AXG3uivKE/view?usp=drivesdk"
 course: theravada-roots
 tags:
   - pali-language

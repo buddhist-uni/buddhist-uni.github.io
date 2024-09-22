@@ -4,7 +4,7 @@ authors:
   - mills-laurence
 external_url: "https://www.bps.lk/olib/bp/bp409s_Khantipalo_Buddha-My-Refuge.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/17YrGYC1m6ca8pmGtChyAjfJOR9ARS0FL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KbXfQERhE_aYqq_Zi5IcZRxEjhqM9dnk/view?usp=drivesdk"
 course: buddha
 tags:
   - theravada

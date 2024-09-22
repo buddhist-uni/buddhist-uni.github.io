@@ -6,7 +6,7 @@ editor: "Unimark International"
 external_url: "https://archive.org/download/nycta-gs-manual/NYCTA%20GS%20Manual_text.pdf"
 source_url: "https://daringfawnyball.files.wordpress.com/2013/02/nyctamanual.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hOfPTbVZgR2-twXpMqXmvaMWq1AKBguO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1O3DvM-HSjRuI8QjhLcnv5MvzU-wxyQ3D/view?usp=drivesdk"
 course: communication
 tags:
   - nyc

@@ -4,7 +4,7 @@ authors:
   - "Alissa Wilkinson"
 external_url: "https://www.vox.com/the-highlight/23191518/book-excerpt-salty-friendship-cooking-social-society"
 drive_links:
-  - "https://drive.google.com/file/d/1oR8EZcTkmxkKXHaXuHOC1GNo_HZMWrTw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vP1xhQNwD588QVGO265b49FQOQrq80TN/view?usp=drivesdk"
 course: social
 tags:
   - friendship

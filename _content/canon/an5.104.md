@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.104"
 external_url: "https://suttacentral.net/an5.104/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1pIPjsOJI0gef9KyPMiiNNFaP_kfGxbda/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cRzyTj33e9dqHdfl5fzr2oyNOdvYJB1F/view?usp=drivesdk"
 course: monastic # maybe down to -advice?
 tags:
   - buddha

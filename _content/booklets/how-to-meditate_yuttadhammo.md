@@ -5,8 +5,8 @@ olid: OL32035971M
 year: 2009
 external_url: "https://www.sirimangalo.org/text/how-to-meditate/"
 drive_links:
-  - "https://drive.google.com/file/d/11mN0CK2BHRnINBoKSGGZfPfV2CPgbVOA/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/17o_m0KpctsWn-sV_0NuX4_Sxy2Fuv7-x/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ODwRK8nT5zpCyQp7M4y7Vn77I0uHZFjC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1o6MwHin_DNeHIuIUCPol-unW1ucWH9xU/view?usp=drivesdk"
 tags:
   - buddhism
   - function

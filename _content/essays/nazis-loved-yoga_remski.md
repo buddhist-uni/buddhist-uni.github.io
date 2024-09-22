@@ -4,7 +4,7 @@ authors:
   - "Matthew Remski"
 external_url: "https://matthewremski.medium.com/hello-yoganon-nazis-loved-yoga-f8f4bc50147e"
 drive_links:
-  - "https://drive.google.com/file/d/1LVS3ryh7Mod3YCGPaD1gxB--g5e9dcrt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ceRhrbBSn-7q2gDfiePsq3HSzwW2itjC/view?usp=drivesdk"
 course: west
 tags:
   - new-age

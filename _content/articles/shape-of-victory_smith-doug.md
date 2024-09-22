@@ -5,7 +5,7 @@ authors:
 external_url: "https://digitalcommons.linfield.edu/iijbs/vol22/iss1/8/"
 alternate_url: "https://www.academia.edu/103669690/The_Shape_of_Victory_the_Earth_Touching_Gesture_in_Context"
 drive_links:
-  - "https://drive.google.com/file/d/1ILnJQJ1rMZXiw2ldUgsz6WTYqHckXbEq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CKM1-_gF7kwFE6sTAgILdtXuzcAjyQmA/view?usp=drivesdk"
 course: buddha
 tags:
   - bart

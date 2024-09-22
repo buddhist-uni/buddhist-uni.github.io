@@ -5,7 +5,7 @@ slug: "sn.009.001"
 external_url: "https://www.dhammatalks.org/suttas/SN/SN9_1.html"
 source_url: "https://accesstoinsight.org/tipitaka/sn/sn09/sn09.001.than.html"
 drive_links:
-  - "https://drive.google.com/file/d/1EE0MbVWlxTNOG6l42B2TfbAYhX76Pnoy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VxLWRdxfLPua406T9-c4rqth8sYMxj3g/view?usp=drivesdk"
 year: 1999
 course: imagery
 tags:

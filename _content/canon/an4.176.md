@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.176"
 external_url: "https://suttacentral.net/an4.176/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Wmdlkf2WAWIjAkNpVdvCVHA7d_biWCuN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oFowX6o7B5RtSG3qc5nTLpzaEEs-mAFF/view?usp=drivesdk"
 course: hermeneutics
 tags:
   - an

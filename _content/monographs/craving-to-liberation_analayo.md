@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/from-craving.pdf"
 olid: OL27267147M
 drive_links:
-  - "https://drive.google.com/file/d/1lFvRUFIXHXGg0o7WEGX5sxr9i6IVq6fv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13iHH4O82CTlfTpIe_Ixy6dVgZIyXtm0o/view?usp=drivesdk"
 course: imagery
 tags:
   - pali-language

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.200"
 external_url: "https://suttacentral.net/an5.200/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Oof-qicSXRUcAX4RsKDoDNpuwgzgRR0z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10DqANMjT9RMRw2a_cocxHEmkCAyrnjTW/view?usp=drivesdk"
 course: hindrances
 tags:
   - thought

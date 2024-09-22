@@ -4,7 +4,7 @@ authors:
   - "Allie Volpe"
 external_url: "https://www.vox.com/even-better/23670005/small-acts-kindness-matter-liking-gap"
 drive_links:
-  - "https://drive.google.com/file/d/1aGfHjpGmUIl5cBrbxFvzCYz2L5zS-5ST/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16lNucOWcI3nTEnRF_Qi_fa1u-GclsWhc/view?usp=drivesdk"
 course: social
 tags:
   - dana

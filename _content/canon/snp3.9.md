@@ -4,7 +4,7 @@ slug: "snp.3.09"
 external_url: "https://suttacentral.net/snp3.9/en/suddhaso"
 translator: suddhaso
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1jWbWkoZXPcHln4f2wTqE_VWyvRM91MpJ/view?usp=drivesdk"]
+hidden_links: ["https://drive.google.com/file/d/1GylqSq8ag-8jK5ddKqUa6_zAZn-2SGNt/view?usp=drivesdk"]
 course: body
 subcat: poetry
 status: featured

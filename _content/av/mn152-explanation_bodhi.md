@@ -4,7 +4,7 @@ authors:
   - bodhi
 external_url: "https://dharmaseed.org/teacher/33/talk/36312/"
 drive_links:
-  - "https://drive.google.com/file/d/1tkLKYFmHogM81ZtpYsedJ0sTbLV8O1Jw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1voa41zBDfLL2_CVnKbOCHtYxIq_9crpM/view?usp=drivesdk"
 course: vipassana
 tags:
   - stages

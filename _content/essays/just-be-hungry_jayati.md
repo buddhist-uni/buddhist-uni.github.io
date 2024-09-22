@@ -4,7 +4,7 @@ authors:
   - "Margo Mallar"
 external_url: "https://www.bhikkhuni.net/2014/12/31/ayya-jayati/"
 drive_links:
-  - "https://drive.google.com/file/d/1QMGgHGhW4u5wWVGBPOTOKg8Cpc0FZtVX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ti1ZZGo4TYi8nHYVtzR_93dsH9KFWlGw/view?usp=drivesdk"
 course: nuns
 tags:
   - west

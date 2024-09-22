@@ -3,7 +3,7 @@ title: "The Power of Interconnectivity: Tan Sitong's Invention of Historical Age
 authors:
   - "Hung-yok Ip"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1lqqYasAydRUwD-DaU_Mb87tHxMDA2xvi/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1JOARVdqsIgeuoxXEOBh4LgQN5jrY8hrd/view?usp=drivesdk"]
 external_url: "https://www.globalbuddhism.org/article/view/1157/992"
 source_url: "https://doi.org/10.5281/zenodo.1307108"
 year: 2009

@@ -5,7 +5,7 @@ slug: "thag.01.45"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.45/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/13Uvp3tsxIxDC4Wb98KjwTBGpG332bki4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ipGbCFojBv_SBWmBifhb0ih5eQx9_tas/view?usp=drivesdk"
 course: ethics
 tags:
   - problems

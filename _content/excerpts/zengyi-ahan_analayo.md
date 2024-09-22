@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/zengyi-ahan.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/11-lA4_cnH7c2hBWwJJ_dTVCxu0mUUC_B/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1rylapxuiEKqjKmCKpx4xYaKtTTinhEsf/view?usp=drivesdk"
 course: agama
 tags:
   - ea

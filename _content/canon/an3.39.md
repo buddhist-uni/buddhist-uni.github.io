@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.039"
 external_url: "https://suttacentral.net/an3.39/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1M7TNdh_YCMYsvO2HCt_DR19rbOe_3_Iz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dRZN-o2GANTEReXb2O6GTraNPYxyGP8n/view?usp=drivesdk"
 course: desire
 tags:
   - wise-attention

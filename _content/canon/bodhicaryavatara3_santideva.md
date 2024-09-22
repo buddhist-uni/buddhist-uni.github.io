@@ -3,7 +3,7 @@ title: "_Bodhicaryāvatāra_ Chapter 3: Fully Adopting Bodhicitta"
 subcat: poetry
 authors:
   - santideva
-drive_links: ["https://drive.google.com/file/d/1Fijo8lm5O6ou9su_lPVmsOMn5-beyPVz/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1GjP2gYQ0SvpedpJ7Uczy08zwKgTQzDIl/view?usp=drivesdk"]
 external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhicharyavatara-3"
 course: mahayana
 year: 2007

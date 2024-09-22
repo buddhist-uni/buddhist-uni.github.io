@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/library-search-select.php?id=bp427s"
 olid: OL25173869M
 drive_links:
-  - "https://drive.google.com/file/d/1Z_KdLS0Tm_AybamUYsIpvJql5IIORmh6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HiFbNgj9onxhCmqRa7_0lmxDrP4FWQww/view?usp=drivesdk"
 course: imagery
 tags:
   - philosophy

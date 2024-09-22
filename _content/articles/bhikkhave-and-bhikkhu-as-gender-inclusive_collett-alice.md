@@ -2,7 +2,7 @@
 title: "*Bhikkhave* and *Bhikkhu* as Gender-inclusive Terminology in Early Buddhist Texts"
 authors: [collett-alice, analayo]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2014/12/Anaalayo-Bhikkhave-final-5Dec14.pdf"
-drive_links: ["https://drive.google.com/file/d/1F-F5aMTwFWwpBam4VgHWTI6BybVakPSf/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1nWUykNKqlFOcLr8bqnMMnimpHsUor-fG/view?usp=drivesdk"]
 tags:
   - ebts
   - sutta

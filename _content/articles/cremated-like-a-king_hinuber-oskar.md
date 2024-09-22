@@ -3,7 +3,7 @@ title: "Cremated Like a King: The Funeral of the Buddha within the Ancient India
 authors: [hinuber-oskar-v]
 external_url: "https://icabs.repo.nii.ac.jp/?action=repository_uri&item_id=135&file_id=22&file_no=1"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1dm-j8_z0f_TywasRqt0URstx0JJE8FHA/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1nkffAGDR5DZxtquJqmtlFrqeb8FQkxX0/view?usp=drivesdk"]
 journal: jicpbs
 year: 2009
 volume: 13

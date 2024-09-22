@@ -4,7 +4,7 @@ translator: sujato
 slug: "dn08"
 external_url: "https://suttacentral.net/dn8/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1TygtUael51Xhm2alolTGjIvHqFxraJMX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1h5B5sgA6iFM3gYKYdVQxCBXINgG--WNl/view?usp=drivesdk"
 course: dialogue # maybe down to interfaith
 tags:
   - setting

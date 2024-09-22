@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.038"
 external_url: "https://suttacentral.net/an5.38/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1yX-3jVqsSbk31ek2DzP2eiDssyS3kXc9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1d8cxg4fHHZM_00M5PcRBbE46LpVJYAO0/view?usp=drivesdk"
 course: lay
 tags:
   - imagery

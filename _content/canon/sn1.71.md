@@ -4,7 +4,7 @@ slug: "sn.001.071"
 external_url: "https://suttacentral.net/sn1.71/en/bodhi"
 translator: bodhi
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1LTm9S1T8kaVN2VYZHEHq-XiNFa98_m7D"]
+drive_links: ["https://drive.google.com/file/d/1MEkOws7mITkNOMf59i0VridXIBIHej1E"]
 status: featured
 course: imagery
 tags:

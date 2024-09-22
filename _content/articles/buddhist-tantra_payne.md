@@ -4,7 +4,7 @@ authors:
   - payne
 external_url: "https://www.shin-ibs.edu/documents/pwj3-20/2.1_Payne.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Iap3D0TEU3GLPyxskJSNxlIAaJnLj3IQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1URnUXmmPe5Jqnm8QzWrcRNjy0hlH3CzY/view?usp=drivesdk"
 course: roots
 tags:
   - tantric

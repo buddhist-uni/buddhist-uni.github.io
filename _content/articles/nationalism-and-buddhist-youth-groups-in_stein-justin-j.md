@@ -6,7 +6,7 @@ external_url: "https://zenodo.org/record/5764621/files/324-1116-1-PB.pdf"
 source_url: "https://doi.org/10.5281/zenodo.5764621"
 actual_source: "https://www.globalbuddhism.org/article/view/1985"
 drive_links:
-  - "https://drive.google.com/file/d/1UT6VKzZoC8IRDitrJ457lhgUSdsZ46s8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gm1smUiViEUjrGdbcY_Jq6UqoJQSBafv/view?usp=drivesdk"
 course: engaged
 tags:
   - japanese-imperial

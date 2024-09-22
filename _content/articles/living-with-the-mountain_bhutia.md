@@ -5,7 +5,7 @@ authors:
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2021/11/Bhutia_21_FD2-1.pdf"
 source_url: "https://blogs.dickinson.edu/buddhistethics/2021/11/27/mountain-propitiation-rituals-in-human-environmental-ethics-in-sikkim/"
 drive_links:
-  - "https://drive.google.com/file/d/16kmDCmkEVBSo-yMk07BCJBET8S9jr2ub/view?usp=share_link"
+  - "https://drive.google.com/file/d/1HbPTycICGXxbBNmr3ROPuPJwwtJYgiGv/view?usp=share_link"
 formats: [pdf]
 course: nature 
 tags:

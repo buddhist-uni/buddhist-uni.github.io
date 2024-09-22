@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.055"
 external_url: "https://suttacentral.net/an3.55/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1hI-3SlUNzO1kB-Fw3QPPoIMJ6VPEpNRt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Z2QqJUc20JO8rWTM5Rzp4NO2rRy8gxou/view?usp=drivesdk"
 course: nibbana
 tags:
   - dhamma

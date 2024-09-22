@@ -4,8 +4,8 @@ authors:
   - gunaratna
 external_url: "https://www.bps.lk/olib/wh/wh167_Gunaratna_Rebirth-Explained.html"
 drive_links:
-  - "https://drive.google.com/file/d/1j5kiw2f5OHEQo1qhkdNv8mXq7IhM5vjf/view?usp=sharing"
-  - "https://drive.google.com/file/d/1nlyVqGTLnD8P3pzV9QW2eQL7O-to21FT/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1dV85oERNwcLpWKJi5ac0cXWCCXCv0Vee/view?usp=sharing"
+  - "https://drive.google.com/file/d/1dFiujPy2TzWR-rAcUz49VvS6Wc9J55Fo/view?usp=drive_link"
 course: abhidhamma
 tags:
   - rebirth

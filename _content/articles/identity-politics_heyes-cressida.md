@@ -4,7 +4,7 @@ authors: ["Cressida Heyes"]
 source_url: "https://plato.stanford.edu/entries/identity-politics/"
 external_url: "https://seop.illc.uva.nl/entries/identity-politics/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1c-lYtseV4ODN5dJLyKTsCyWHtNH9lqFq/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1PVA_eSaDXwdtyIiZt3zC53Ph6zEa_VNo/view?usp=drivesdk"]
 month: jul
 year: 2002
 course: social

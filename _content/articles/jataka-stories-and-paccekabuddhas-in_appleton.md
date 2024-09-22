@@ -7,7 +7,7 @@ alternative_url: "https://www.pure.ed.ac.uk/ws/portalfiles/portal/64651879/Apple
 source_url: "https://www.doi.10.1558/bsrv.36764"
 alternate_doi: "https://doi.org/10.1558/equinox.33398"
 drive_links:
-  - "https://drive.google.com/file/d/1Zo-xhGDLZ1bzDqHwXb5AMN-bqIMrED9K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IINTr1xwtT5bzLNNlrQx4oIr-YSnx241/view?usp=drivesdk"
 course: rebirth-stories
 tags:
   - cosmology

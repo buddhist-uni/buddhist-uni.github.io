@@ -3,7 +3,7 @@ title: "Selections from *Buddhist Thought*"
 authors: [williams-paul]
 slug: "buddhist-thought-excerpt"
 drive_links:
-  - "https://drive.google.com/file/d/1mlU34uT8YqFhkb7g5105-vptlzPHmS7s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17fxHCJoDfgGc7LTmmtO5Zo3llp-NpPCA/view?usp=drivesdk"
 course: sects
 year: 2000
 from_book: buddhist-thought_williams-paul

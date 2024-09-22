@@ -4,7 +4,7 @@ authors:
   - "Ronald M. Davidson"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-4/08DV4.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/17y1g4wA6OxBICg1fFX-jx7QF5iRG8o88/view?usp=sharing"
+  - "https://drive.google.com/file/d/1CYN9VLGOQfeu45Y62znMx9vGZcGhPuLX/view?usp=sharing"
 course: medieval
 tags:
   - ghandara

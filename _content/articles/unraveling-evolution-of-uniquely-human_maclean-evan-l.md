@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/113/23/6348.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1521270113"
 drive_links:
-  - "https://drive.google.com/file/d/1kD2n4Gb68SNonFwsH3MXvuQLiSNdiL7Y/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1avxYKb-WWmBngD1KPZbGTjFfeANqgNop/view?usp=drivesdk"
 course: intellect
 tags:
   - biology

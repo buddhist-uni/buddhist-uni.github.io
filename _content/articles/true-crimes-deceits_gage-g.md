@@ -4,7 +4,7 @@ authors:
   - "Gabriella Gage"
 external_url: "https://lareviewofbooks.org/article/true-crimes-deceits-the-genrefication-of-tragedy/"
 drive_links:
-  - "https://drive.google.com/file/d/1z19xbC7zSzeh12plnE_ewPPZCFCJjmVz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kOtOFWQO2dulgdct9Ovi-0ofSar8STHn/view?usp=drivesdk"
 status: featured
 course: literature
 tags:

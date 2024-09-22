@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.thezensite.com/ZenEssays/HistoricalZen/EarlyBuddhism.htm"
 source_url: "https://doi.org/10.2307/1399099"
 drive_links:
-  - "https://drive.google.com/file/d/1ES99d3qgAm_ZcDcWWfi7Xggp-kt2bq0e/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CEXOaCN9pPLc3b0cQuROLJF6DkooLVFI/view?usp=drivesdk"
 course: epistemology
 tags:
   - nibbana # with prejudice

@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/1308799/files/62-93-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1127"
 drive_links:
-  - "https://drive.google.com/file/d/1-tZmyLL1Dwn-rBn6d2p5uUGfFgCUg7_6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FVx1Mw8nGsegEdlJV2vkG8flxURRk-kn/view?usp=drivesdk"
 course: west
 tags:
   - early-modern

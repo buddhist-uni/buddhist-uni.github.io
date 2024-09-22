@@ -6,7 +6,7 @@ external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Pali
 alternate_source_url: "https://obo.genaud.net/resources/pdf/hinuber/vol10_art10_hinuber.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume10.asp"
 drive_links:
-  - "https://drive.google.com/file/d/11k08J_CTTAfg-NhgBbq1U1NfmlQZbN3v/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GhSkjSyPkFggbovWiuBQ2DdGp9i1TKFv/view?usp=drivesdk"
 course: pali-language
 tags:
   - theravada-roots

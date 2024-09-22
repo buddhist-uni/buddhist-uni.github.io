@@ -2,7 +2,7 @@
 title: "Towards a Better World: A Translation of the 'Lo-wáda Sangarāva'"
 authors: [nyanananda]
 external_url: "https://tipitaka.lk/library/65/download"
-drive_links: ["https://drive.google.com/file/d/1pgebSDoujZArcUIJ8KM2h8k4EiTcel9C/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1jsKTTz5NjO0OniVrsJK5tDwLH3v04s2S/view?usp=drivesdk"]
 year: 2000
 publisher: Dharma Grantha Mudrana Bhāraya
 address: Sri Lanka

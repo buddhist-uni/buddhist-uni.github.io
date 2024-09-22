@@ -4,7 +4,7 @@ authors:
   - kearney-patrick
 external_url: "https://dharmaseed.org/teacher/516/talk/32316/20150921-Patrick_Kearney-BMIMC-the_sweet_essence_part_1-32316.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/18SNo4mRskmjCALROgF_gSs9fxRpYma_P/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1UwTo7GgMuM7p6dBNeDFLKxYW4_aIdmis/view?usp=drivesdk"
 course: hermeneutics
 tags:
   - mn

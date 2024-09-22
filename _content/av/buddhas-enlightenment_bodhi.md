@@ -4,7 +4,7 @@ authors: [bodhi]
 subcat: course
 source_url: "https://bodhimonastery.org/a-systematic-study-of-the-majjhima-nikaya.html#_ftnref1"
 formats: [MP3s]
-drive_links: ["https://drive.google.com/drive/folders/1cuBO_gjZ_mrUBD0UWoUedT1a19XQzOCC"]
+drive_links: ["https://drive.google.com/drive/folders/10FwxxzbR6bqipJVGL0MjEUAAytMyTQ8g"]
 course: mn
 tags:
   - buddha

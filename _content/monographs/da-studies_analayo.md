@@ -7,7 +7,7 @@ publisher: dharmadrum
 course: da
 tags:
   - agama
-drive_links: ["https://drive.google.com/file/d/1Mvy8EqCRWN1Hjeb2AAcQ9vPcph16Ol5w/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1JCexWRqLjheejap_vf6jWpXzgh3J7R3C/view?usp=drivesdk"]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dastudies.pdf"
 pages: 672
 ---

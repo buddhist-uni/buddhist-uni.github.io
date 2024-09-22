@@ -4,7 +4,7 @@ authors:
   - sujato
 external_url: "https://youtu.be/m0jKKzzv0WU"
 drive_links:
-  - "https://drive.google.com/file/d/1aRbwZQdC06Fr2nKhx8ZSccJ9Id-gdSo2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1H_gqSjo1PBPEkoA5HLzemk7bDvihJYUU/view?usp=drivesdk"
 course: inner
 tags:
   - intellect

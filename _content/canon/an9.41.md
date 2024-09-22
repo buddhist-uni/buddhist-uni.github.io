@@ -5,7 +5,7 @@ slug: "an.009.041"
 source_url: "https://accesstoinsight.org/tipitaka/an/an09/an09.041.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN9_41.html"
 drive_links:
-  - "https://drive.google.com/file/d/1kwJW-tXt1AOF_CuCHnEe-AJ8uxoxchcD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dUo0Y57XRLgcti_q4u3C8H9Fg0Nx4TlK/view?usp=drivesdk"
 course: samadhi
 tags:
   - samatha

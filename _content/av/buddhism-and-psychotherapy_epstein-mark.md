@@ -4,7 +4,7 @@ subcat: podcast
 authors: ["Mark Epstein"]
 external_url: "https://tricycle.org/podcast/buddhism-and-psychotherapy/"
 drive_links:
-  - "https://drive.google.com/file/d/13OWj46Q-a2HyqRLhFPQZEtGQ02i0fXQH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vRr7pxHZDmPmATNZ2JJ1nfzPMDjdxsUR/view?usp=drivesdk"
 journal: tricycle
 course: sati
 tags:

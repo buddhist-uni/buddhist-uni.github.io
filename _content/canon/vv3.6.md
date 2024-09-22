@@ -4,7 +4,7 @@ slug: "vv.3.6"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv3-6/"
 drive_links:
-  - "https://drive.google.com/file/d/1h6SuGH6yz3N9emxDcFWT-islcRWxqQkq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CERclsCcmAwrn4ibVa7UnPSKmklZ7oD-/view?usp=drivesdk"
 course: karma
 tags:
   - vv

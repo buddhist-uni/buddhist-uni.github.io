@@ -5,7 +5,7 @@ slug: "sn.001.036"
 subcat: poetry
 external_url: "https://suttacentral.net/sn1.36/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1JNOvVFuqjoC0XIyhvNyT3LtkuqnsjrZe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I4e-YXyFg1K-QDklE_EXuYNFdg9GqIOw/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - problems

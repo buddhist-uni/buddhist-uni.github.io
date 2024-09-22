@@ -4,7 +4,7 @@ authors:
   - choong-mk
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/179/212"
 drive_links: 
-  - "https://drive.google.com/file/d/13z_dcuy9-3uwdZFrguQcfZotw-m-5BYN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NWuhrfYUOCDcW66eGAt7h8URd0_Jkoqz/view?usp=drivesdk"
 course: sa
 tags:
   - sn

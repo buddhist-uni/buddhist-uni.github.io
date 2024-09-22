@@ -5,7 +5,7 @@ authors:
   - "Supaphan na Bangchang"
 source_url: "https://archive.org/details/jpts-xii-1988"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/15NL4OGDiin9EWSp63jlW-ZBdkvaUM1Pr/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1UozHDBKvMxK4X_2e3yIY4rLPwGn9uiSa/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/A%20List%20of%20Books%20Sent%20to%20Ceylon%20from%20Siam%20in%20the%2018th%20Century%20-%20Oskar%20von%20Hinüber%20and%20Supaphan%20na%20Bangchang.pdf"
 year: 1988

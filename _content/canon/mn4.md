@@ -4,7 +4,7 @@ translator: bodhi
 slug: "mn004"
 external_url: "https://suttacentral.net/mn4/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1W02vZHUmEQAyHAxC9Q30dWgB2MnCVc0S/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1s6FthEvhYvXp2S4idtPwwkWoC4OHCafU/view?usp=drivesdk"
 course: samadhi
 status: featured
 tags:

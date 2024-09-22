@@ -4,7 +4,7 @@ authors:
   - "Bryan Walsh"
 external_url: "https://www.vox.com/the-highlight/23627382/progress-climate-change-poverty-global-health-doom-industrial-revolution-vaccines"
 drive_links:
-  - "https://drive.google.com/file/d/1HTdilvqre4WhCmwjCJiVP4lkXTSSS9be/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1krNx01NAk-P1SfUOdM4DSeyAIJL7Jamr/view?usp=drivesdk"
 image: https://cdn.vox-cdn.com/uploads/chorus_image/image/72068448/Vox_Doomerism_Progress_Final_2.0.jpg
 course: time
 tags:

@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Matthew Sitman and Sam Adler-Bell"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/unlocked-freud-and-politics-w-pat-blanchfield"
 drive_links:
-  - "https://drive.google.com/file/d/1jVkxaGPn28PyevlSuwiCCYKi8ehVPrkF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MLbtsHxiX2FADaN9MLHoocd9DF891R_r/view?usp=drivesdk"
 course: intellect
 tags:
   - political-ideology

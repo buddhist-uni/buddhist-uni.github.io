@@ -6,7 +6,7 @@ authors:
 external_url: "https://vimeo.com/401056695"
 formats: [mp4]
 drive_links:
-  - "https://drive.google.com/file/d/1RVlge1YtdiUwcpo2bhuOivbUfnpaRHgJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HT5LrDD-zKEFmagnw9XRaNIbUkSxm59g/view?usp=drivesdk"
 course: form
 tags:
   - tibetan

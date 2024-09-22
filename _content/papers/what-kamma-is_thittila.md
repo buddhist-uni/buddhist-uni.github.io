@@ -10,7 +10,7 @@ address: "Kuala Lumpur"
 external_url: "https://archive.org/download/gems-of-buddhist-wisdom/What%20Kamma%20Is%20-%20Thittila_text.pdf"
 year: 1983
 drive_links:
- - "https://drive.google.com/file/d/1VX1a9MKkT7bRanHRUGbciebo0dXM7yzn/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/18wujmk983qLOoxN7TfdzgbmUQYo-Y85H/view?usp=drivesdk"
 tags:
   - abhidhamma
 course: karma

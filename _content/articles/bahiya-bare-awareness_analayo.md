@@ -2,7 +2,7 @@
 title: "The Bāhiya Instruction and Bare Awareness"
 authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/bareawareness.pdf"
-drive_links: ["https://drive.google.com/file/d/1aBdraDrs2yOC9NYyeW_5rjfbgQcNAgYH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1pEKNUj06MtfNAn4wU1QFSif1GKoP5FYM/view?usp=drivesdk"]
 tags:
   - sati
   - shikantaza

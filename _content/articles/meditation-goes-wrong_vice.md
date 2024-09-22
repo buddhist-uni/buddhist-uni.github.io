@@ -5,7 +5,7 @@ authors:
   - "Shayla Love"
 external_url: "https://www.vice.com/en_us/article/vbaedd/meditation-is-a-powerful-mental-tool-and-for-some-it-goes-terribly-wrong"
 drive_links:
-  - "https://drive.google.com/file/d/1FIzHBzRzESj9SkEUHAfsa-6fz8iGGhnj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AjrdmtQEY9Htf8RXQF43ZSfTcymYCncr/view?usp=drivesdk"
 course: vipassana
 tags:
   - problems

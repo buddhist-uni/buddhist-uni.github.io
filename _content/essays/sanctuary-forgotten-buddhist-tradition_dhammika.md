@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/10/sanctuary-a-forgotten-buddhist-tradition/"
 drive_links:
-  - "https://drive.google.com/file/d/1orJH7Rqp2RpdRDECiTFMCXBMJnXxgJ-P/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ggpn7bCXDMl3sqbSHKoBPXgqbA4W4Cx4/view?usp=sharing"
 course: theravada-roots
 status: featured
 tags:

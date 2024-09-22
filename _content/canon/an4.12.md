@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.012"
 external_url: "https://suttacentral.net/an4.12/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1gVcQWfYyAwOyIQxXd82p2OJVQcN_lvCz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bf1p4m5E-tRVJoo_ZPNmX9GMfk5si2Io/view?usp=drivesdk"
 course: hindrances
 tags:
   - path

@@ -6,7 +6,7 @@ authors:
 external_url: "https://brill.com/downloadpdf/journals/asme/7/2/article-p461_10.pdf"
 source_url: "https://doi.org/10.1163/15734218-12341262"
 drive_links:
-  - "https://drive.google.com/file/d/1SqxWY4LQ1dBlevQEtpkBOF5_bIDk-lC_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DFXNbKKykzdCbJA72KfcONCXqaHG1ON2/view?usp=drivesdk"
 course: mahayana-roots
 tags:
   - iddhi

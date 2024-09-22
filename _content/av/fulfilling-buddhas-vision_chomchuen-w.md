@@ -7,7 +7,7 @@ month: oct
 formats:
   - mp4
 drive_links:
-  - "https://drive.google.com/file/d/11mZCrNZHA8WiOGB9v05sgxmy9CDBSCpJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1s91nqmQs3MTWWl0jhgROA6hsE1xI8__5/view?usp=drivesdk"
 external_url: "https://www.voathai.com/a/in-ordination-bhikkhunis-seek-equality-documentary/6288747.html"
 status: featured
 course: nuns

@@ -5,7 +5,7 @@ authors:
 external_url: "https://philpapers.org/archive/STOCIA-2.pdf"
 source_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8982"
 drive_links:
-  - "https://drive.google.com/file/d/1VhttQQV_CXUOOh44YjNGbI1EMf4Cf_Ws/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-cyjJsjSg5GvOCm07AJ9PtIKOV8ViHrl/view?usp=drivesdk"
 course: epistemology
 tags:
   - tibetan-roots

@@ -6,7 +6,7 @@ year: 2018
 month: aug
 external_url: "https://www.youtube.com/watch?v=OaIqpg8xW2s"
 drive_links:
-  - "https://drive.google.com/file/d/1-XlbHrRFbaoaa5erwHL5pkLkF-zuwrOS/view?usp=sharing"
+  - "https://drive.google.com/file/d/1IUuvBqpu6OrKlQBhv_xSJINqY1LvjOtf/view?usp=sharing"
 formats: [m4a]
 series: buddhism-intro_bodhi
 number: 4

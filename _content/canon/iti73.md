@@ -5,7 +5,7 @@ slug: "iti073"
 subcat: poetry
 external_url: "https://suttacentral.net/iti73/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/11eP8S64yVzuJ3S76176r0pZ3u92dME-Z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kYfLcIK_4mzTuzPtW4RCnx2Qp2QPnxvJ/view?usp=drivesdk"
 course: samadhi
 tags:
   - nibbana

@@ -4,7 +4,7 @@ authors:
   - stein-zak
 source_url: "http://www.zakstein.org/publications.html"
 drive_links:
-  - "https://drive.google.com/file/d/1tWKJEJWgoU0w_w4ceAiHeaZXiNc1szc3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MuDIxKRryQixObzg0auC18cn92jI0-wp/view?usp=drivesdk"
 course: meditation
 status: featured
 tags:

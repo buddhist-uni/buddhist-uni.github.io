@@ -5,8 +5,8 @@ authors:
 external_url: "https://santifm.org/santipada/wp-content/uploads/2012/08/Sects__Sectarianism_Bhikkhu_Sujato.pdf"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1CtinT2b0GeM3FUMUnhYNcf96vJnswQG1/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1wHom3uyT4t_j2WvtxzjBIJ7D4Z_ub6vt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZS-a7fqBN77oRszQrmaCgAZQqF4pk_OT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1z1rva-Q9g7hBadEB6gUhtq5rhurXdc72/view?usp=drivesdk"
 course: sects
 tags:
   - vinaya-controversies

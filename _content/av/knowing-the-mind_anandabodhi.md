@@ -4,7 +4,7 @@ authors:
   - anandabodhi
 external_url: "https://dharmaseed.org/talks/40609/"
 drive_links:
-  - "https://drive.google.com/file/d/1ykYxlM4nnA9smL1qRfeA8U4rmbmmfoQw/view?usp=sharing"
+  - "https://drive.google.com/file/d/1y05JgZx8p_muYEapmrtxo87FiIK4Wd6K/view?usp=sharing"
 course: problems
 tags:
   - sati

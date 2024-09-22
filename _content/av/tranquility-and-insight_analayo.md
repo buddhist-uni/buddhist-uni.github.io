@@ -5,8 +5,8 @@ external_url: "https://discourse.suttacentral.net/t/analayo-bhikkhu-readings-in-
 source_url: "https://lecture2go.uni-hamburg.de/l2go/-/get/v/15279"
 formats: [MP3s, PDFs]
 drive_links:
-  - "https://drive.google.com/drive/folders/1_uK1QqLZ-ed9gjIVsGHjJbPcfp3pD1xv"
-  - "https://drive.google.com/drive/folders/1bbUHYMk28SjVe95qrIEjfYgw3vqxUMyd"
+  - "https://drive.google.com/drive/folders/1xwVTn1A9uedv-aOtBk5O63KRDiLa2Fi-"
+  - "https://drive.google.com/drive/folders/1oxDHAftih3AQYVlzz4_Krhv5felierOM"
 year: 2013
 course: tranquility-and-insight
 tags:

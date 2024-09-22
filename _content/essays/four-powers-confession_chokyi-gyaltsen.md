@@ -6,7 +6,7 @@ subcat: poetry
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lobzang-chokyi-gyaltsen/four-powers-confession"
 drive_links:
-  - "https://drive.google.com/file/d/14xRv9dY_3wVx6yW3bFQ75oXk2mUXJ36T/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fpLxGblbrJ8dfsQwXMB1ORLDrOvfzoKG/view?usp=drivesdk"
 course: tantric
 tags:
   - confession

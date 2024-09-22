@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/key-points-of-trekcho"
 drive_links:
-  - "https://drive.google.com/file/d/1QjoCmsjTwNYhPQji1U6SqQc8wuEOR40l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hJ0EvoGf50kUfcuC9_zxQOTByG-1X8UQ/view?usp=drivesdk"
 course: samatha
 tags:
   - dzogchen

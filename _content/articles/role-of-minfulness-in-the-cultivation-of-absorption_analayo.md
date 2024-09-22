@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/rolemindfulnessabsorption.pdf"
 source_url: "https://link.springer.com/article/10.1007/s12671-019-01206-7"
 hidden_links:
-  - "https://drive.google.com/file/d/1UzficNAg0QMK5AN122utuBDb-D75UVu_/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Ry-yk6RWYkrI6qjHPey34ioAeShFtWrG/view?usp=sharing"
 course: sati
 tags:
   - samadhi

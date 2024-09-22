@@ -2,7 +2,7 @@
 title: "Disengaged Buddhism"
 authors: ["Amod Lele"]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2019/11/Lele_19_FD-1-1.pdf"
-drive_links: ["https://drive.google.com/file/d/1iR_B-U0uxrmYr34LNm7MKHjzYAHD0ia9/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1tvGy44ol_MD7TrJgqjc-rWrcrgUjTvGf/view?usp=drivesdk"]
 year: 2019
 journal: jbe
 volume: 26

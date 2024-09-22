@@ -9,7 +9,7 @@ base_value: 1
 publisher: "Mahāmakut Rajāvidyālaya Press"
 olid: OL32040804M
 drive_links:
-  - "https://drive.google.com/file/d/1dZMMPiR2_lv9rxMIjReMAz1oHct2vZJu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pZZrEMyv8GunJfUnT2nG4Mmt-vhMyMWi/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - vipassana

@@ -5,7 +5,7 @@ authors:
 subcat: course
 external_url: "https://youtube.com/playlist?list=PLKLA1tWul8wGopojxI0vigUp1coMoIJe-"
 drive_links:
-  - "https://drive.google.com/drive/folders/1IQmEOeL-y5ZN1OCHMnyF8b_76mBfiqLT"
+  - "https://drive.google.com/drive/folders/1s2e1ueCU1ZCH2N9daLMyKCeKceRxTiWJ"
 formats: ["M4As"]
 course: epistemology
 tags:

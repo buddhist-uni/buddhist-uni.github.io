@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.025"
 external_url: "https://suttacentral.net/an4.25/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1Inhy8cZe_hgwjgLg9vDGptV-P92o3ITK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/120hRoMf6x1Gk119YC7Vks_x43ou2ieBt/view?usp=drivesdk"
 course: thought
 tags:
   - function

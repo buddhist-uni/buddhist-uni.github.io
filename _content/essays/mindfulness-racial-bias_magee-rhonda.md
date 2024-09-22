@@ -4,7 +4,7 @@ authors:
   - magee-rhonda
 external_url: "https://greatergood.berkeley.edu/article/item/how_mindfulness_can_defeat_racial_bias"
 drive_links:
-  - "https://drive.google.com/file/d/1S-oWjkg-QLFi249iDQu91x_2EsxnZPSf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1l7i0tP26bLtnmwD5ECjFB6PwOC-ueGu2/view?usp=drivesdk"
 course: meditation
 tags:
   - californian

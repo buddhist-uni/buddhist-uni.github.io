@@ -3,7 +3,7 @@ title: "A Field Guide to Socially Engaged Buddhism"
 external_url: "https://northwestdharma.org/wp-content/uploads/2012/06/Field-Guide-to-Socially-Engaged-Buddhsim.pdf"
 editor: "Sharon Suh"
 drive_links:
-  - "https://drive.google.com/file/d/1D78VjivJo1Uj-zDygzIPOP_TUFUXPMiJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/137OWEW-soqYav5sdZ292pGSSelKPy-Mw/view?usp=drivesdk"
 year: 2012
 month: may
 course: engaged

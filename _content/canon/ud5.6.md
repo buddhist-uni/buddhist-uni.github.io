@@ -5,7 +5,7 @@ slug: "ud5.6"
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.5.06.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud5_6.html"
 drive_links:
-  - "https://drive.google.com/file/d/10_vS8r7R0QTitVnpe81GuMuiz-L2JWJ_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AiVrYze2xDsC086zszcEg3BSGLJhq1X4/view?usp=drivesdk"
 course: west
 tags:
   - characters

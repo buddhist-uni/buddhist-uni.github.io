@@ -5,7 +5,7 @@ external_url: "https://www.vox.com/2014/11/3/6078101/giving-money-away-makes-us-
 journal: vox
 year: 2014
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1i2OkZMK2M-jU9Y_PuFNZLPjQims_7LpM/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1EXB1LU7lj1NOli84lhqUCY5CfrFk0GFc/view?usp=drivesdk"]
 course: function
 status: featured
 tags:

@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/112/45/13805.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1509591112"
 drive_links:
-  - "https://drive.google.com/file/d/1fdcCSMmQT653017b0yGd0rMXMfaMDoXG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_24LdjX8-fD0lMNVkDU5rpNM3XGOtCnR/view?usp=drivesdk"
 course: gender
 tags:
   - medicine

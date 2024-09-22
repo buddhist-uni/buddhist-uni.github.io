@@ -4,7 +4,7 @@ authors:
   - "David Foster Wallace"
 external_url: "https://fs.blog/david-foster-wallace-this-is-water/"
 drive_links:
-  - "https://drive.google.com/file/d/1NE8pAYtsa3DrZpvwlvTaW2w3zHWTPbqo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1F92d7e0MVHWtPRXmqTjF89K1RdpWUqFd/view?usp=drivesdk"
 status: featured
 course: inner
 tags:

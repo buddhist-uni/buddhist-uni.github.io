@@ -5,7 +5,7 @@ authors:
 external_url: "https://direct.mit.edu/daed/article-pdf/147/1/141/1831063/daed_a_00480.pdf"
 source_url: "https://doi.org/10.1162/daed_a_00480"
 drive_links:
-  - "https://drive.google.com/file/d/1neGshEldEB6lY9tSkmDvCqqPMGC-kZ6l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sCinKBnDnq5DfODuFcVuacY19Bh-Sjpn/view?usp=drivesdk"
 course: media
 tags:
   - society

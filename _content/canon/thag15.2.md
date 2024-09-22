@@ -5,7 +5,7 @@ slug: "thag.15.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thag15.2/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1-pE1evd7apZHWYifH6bNr3cCmr90WowG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1D7fRBmf1K3K4PFJN7dIEOoj70VOu_t_Z/view?usp=drivesdk"
 course: nibbana
 tags:
   - thag

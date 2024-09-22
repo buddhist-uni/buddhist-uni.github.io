@@ -3,7 +3,7 @@ title: "Effects of mindful-attention and compassion meditation training on amygd
 authors: ["Gaëlle Desbordes and others"]
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485650/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1A0RQMfI9m8C8FlArzgpox-ViVMwn4vcv/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/11AfJrP6w-cZFaTpQIWyhma5uZlmWu6VG/view?usp=drivesdk"]
 year: 2012
 course: path
 journal: "Frontiers in Human Neuroscience"

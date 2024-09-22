@@ -5,7 +5,7 @@ authors:
 external_url: "https://digital.library.unt.edu/ark:/67531/metadc799340/m2/1/high_res_d/vol19-no3-161.pdf"
 source_url: "https://doi.org/10.17514/jnds-2001-19-3-p161-178."
 drive_links:
-  - "https://drive.google.com/file/d/1NiWpwDSMLbnF7s-FuXghKfTCoPFvHwTO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xiG9_d4aUPy10MkJ-gH3ifEkHL0JEkvE/view?usp=drivesdk"
 course: thai
 tags:
   - iddhi

@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dawn-abhidharma.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1NCQisWmjDPnA48QrIPCoWPAZXNKJBS5a/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BXcEMAHZVjb2DJCrPPgLRPJA8BDqg7KU/view?usp=drivesdk"
 course: indian
 status: featured
 olid: OL32230781M

@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/jhana-and-samadhi-ireland/Jhana%20and%20Sam%C4%81dhi%20-%20Ireland.pdf"
 source_url: "https://doi.org/10.1558/bsrv.v15i2.14700"
 drive_links:
-  - "https://drive.google.com/file/d/12Io4a9LKx25HacPtnQcU4sziW6rbhwkF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SYDTVgHhvKkZAf5FZt6jSKExWy8HGRur/view?usp=drivesdk"
 course: samadhi
 tags:
   - jhana-controversy

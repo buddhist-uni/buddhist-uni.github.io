@@ -4,7 +4,7 @@ authors:
   - "Christopher D. Ives"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/04_ZSE_Ives.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/13JYHm1o2dMyvkh6h8-hlHH-wEt7cdd3c/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Z6Xc5NsjLALES7aTvwXtu7L7P9sP-DT8/view?usp=drivesdk"
 course: ideology
 tags:
   - engaged

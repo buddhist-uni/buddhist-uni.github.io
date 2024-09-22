@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vijjacarana.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1Jy-EmdvXiT-tDjna5OISYS2ynkZ3P_il/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1TYRVL3pFcqNb7eIvpEstzya47f97ohJ7/view?usp=drivesdk"
 course: buddha
 ---
 

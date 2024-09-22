@@ -5,7 +5,7 @@ slug: "sn.004.013"
 subcat: poetry
 external_url: "https://suttacentral.net/sn4.13/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1xthmtPbHSTle8b9kEsR0mwwh0foPofD8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19TqFH2-8c5KteWpskTg4vpjBufKFzhhS/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - mara

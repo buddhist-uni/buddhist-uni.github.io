@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/jpts-xi-1987/Namarupasamaso_%20Summary%20of%20Mind%20and%20Matter%20-%20H%20Saddhatissa_text.pdf"
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1987_XI.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Q8ThAi8KBgCrPFJjgVi6CfU3zcYPLn47/view?usp=sharing"
+  - "https://drive.google.com/file/d/1cg6TpRzctb4N-F2RkGrrLbs_gchXyHeJ/view?usp=sharing"
 course: abhidhamma
 tags:
   - consciousness

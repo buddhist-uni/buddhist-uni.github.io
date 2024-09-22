@@ -18,7 +18,7 @@ This document is primarily for onboarding new contributors, but it may also be o
 The OBU Library serves **English speakers** with at least a **basic education** and an **interest in Buddhism**.
 It takes, to the extent possible, **the pan-sectarian, historical perspective** championed by such contemporary practitioner/scholars as [Bhante Analayo](https://buddhistuniversity.net/authors/analayo).
 
-The Open Buddhist University collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
+The Open Buddhist University collections are **entirely digital** and are a combination of self-hosted files (on [GitHub](https://github.com/buddhist-uni?tab=repositories&q=&type=source&language=html) and [Google Drive](https://drive.google.com/open?id=1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv)) and links to [resources accessible on the broader internet](https://buddhistuniversity.net/sources/).
 Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
@@ -34,7 +34,7 @@ The usual procedure for ingesting new content is as follows:
 1. Free content is found online and added to [the ingestion queue on Google Drive](https://drive.google.com/drive/folders/16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_).
 2. That content is then sorted by subject area.
 3. A reviewer then evaluates the pieces in their subject area.
-4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r) based on what subject they teach and rejected items are archived.
+4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv) based on what subject they teach and rejected items are archived.
 5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_content) and the (Drive) folder is added as a new "[tag](https://buddhistuniversity.net/tags/)" on the website.
 6. When a tag has a diverse set of works, its contents are reviewed again and organized into a course syllabus. (See [the open issues on GitHub](https://github.com/buddhist-uni/buddhist-uni.github.io/labels/writing) for courses currently awaiting a volunteer if you're interested in writing one!)
 

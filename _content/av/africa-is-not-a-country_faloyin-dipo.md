@@ -7,7 +7,7 @@ editor: "Adam Conover"
 external_url: "https://podscripts.co/podcasts/factually-with-adam-conover/africa-is-not-a-country-with-dipo-faloyin"
 source_url: "https://open.spotify.com/episode/0O9s1a1OhLkwfYIzIcWTy5"
 drive_links:
-  - "https://drive.google.com/file/d/1WF-aWidogPN5kaOc4K7WBqPhOEk-5JZ_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X9UMImO5wZNemAz7tgApRdLlF3Kg7qMR/view?usp=drivesdk"
 course: places
 year: 2022
 month: nov

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/pwj3-14/06Lindahl.pdf"
 source_url: "https://pwj.shin-ibs.edu/pacific-world-third-series-number-14-fall-2012"
 drive_links:
-  - "https://drive.google.com/file/d/1F9zbSDjJRvX0pxFIQaISUavyp-IKCFro/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1eqEYi9G23v7eCeDmu1g6_rCn1T9zEmR1/view?usp=drivesdk"
 course: samadhi
 tags:
   - path

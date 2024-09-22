@@ -4,7 +4,7 @@ authors:
   - gethin
 external_url: "https://www.academia.edu/11728537/Cosmology_and_Meditation_From_the_Aggañña-Sutta_to_the_Mahāyāna"
 drive_links:
-  - "https://drive.google.com/file/d/1-NJ-KApIj7cs3oaDOFzhALrKN6a3wYwO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IUVSdh8rUpCm_R-0nFShcABn8Yp4L8lM/view?usp=drivesdk"
 course: philosophy
 status: featured
 tags:

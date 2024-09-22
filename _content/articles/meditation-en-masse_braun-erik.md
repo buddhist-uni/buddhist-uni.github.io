@@ -4,7 +4,7 @@ authors:
   - "Erik Braun"
 external_url: "https://tricycle.org/magazine/meditation-en-masse/"
 drive_links:
-  - "https://drive.google.com/file/d/1BEfOoc5zfuBhvQ66VEin6YFC7U_WJv0q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nX0p_dff992-ux6x7I2vrpPcM_cJ1ikk/view?usp=drivesdk"
 course: roots
 tags:
   - theravada

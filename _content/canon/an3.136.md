@@ -4,7 +4,7 @@ translator: suddhaso
 slug: "an.003.136"
 external_url: "https://suttacentral.net/an3.136/en/suddhaso"
 drive_links:
-  - "https://drive.google.com/file/d/1DzQl0lddd1Si9sgZILYwTpHvLg5bNJ8J/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WuDP60cFOedCz8ahmo7HnZBeqV-oYtWv/view?usp=drivesdk"
 course: view
 status: featured
 tags:

@@ -5,8 +5,8 @@ authors:
 source_url: "https://dharmaseed.org/teacher/439/talk/14214/"
 formats: [m4a, ppt]
 drive_links:
-  - "https://drive.google.com/file/d/1wuULu82r7W5ivwuFXhsCO2hM-ijqr9Vj/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1MkI6mKXCVu1t4i13odRbW4fQ0A9bdt-k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1N1uNZAq5JSMolFTJ59pf6DHr3ZQLyY98/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kJil2Wdn1r3-Rt3mxvt2ffYsWPkcVgtw/view?usp=drivesdk"
 course: meditation
 tags:
   - satipatthana

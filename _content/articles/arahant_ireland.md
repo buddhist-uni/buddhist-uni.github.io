@@ -9,7 +9,7 @@ number: 2
 source_url: "https://journal.equinoxpub.com/BSR/article/view/14625"
 file_links:
   - "exclusive_01/Arahant%20-%20Ireland.pdf"
-drive_links: ["https://drive.google.com/file/d/1xJNCV4cOYXfnaag4nZB1fOpMsfxP547o/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1yUPm782usR0IhjVvU9IpJ2qFcLKE5P7v/view?usp=drivesdk"]
 base_value: 0.1
 course: nibbana
 tags:

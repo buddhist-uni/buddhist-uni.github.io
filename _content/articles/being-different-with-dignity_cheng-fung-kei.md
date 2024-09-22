@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.mdpi.com/2076-0760/7/4/51/pdf"
 source_url: "https://doi.org/10.3390/socsci7040051"
 drive_links:
-  - "https://drive.google.com/file/d/1wNlJmxnP2_ZEelP3Zi3tQC4bcRLTAxm7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18ZyIsVX5CwJe1teygsDmnhWYmfJUuPM-/view?usp=drivesdk"
 course: ethics # 2.5? A bit borderline
 tags:
   - gender

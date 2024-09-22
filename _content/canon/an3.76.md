@@ -2,7 +2,7 @@
 title: "AN 3.76: Continued Existence (1)"
 slug: "an.003.076"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1voy8zghb3CY3I0cCnogx2KD0HDywpmGk/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1GJNfehO78ZR11jqKQG_HoSLRtRp_0JvX/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an3.76/en/sujato"
 year: 2018
 course: view

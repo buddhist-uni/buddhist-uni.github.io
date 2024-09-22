@@ -2,7 +2,7 @@
 title: "How to Make and Spend Money: Some Stories from the Indian Classical Literature"
 authors: ["Phyllis Granoff"]
 external_url: "https://dx.doi.org/10.15239/hijbs.02.02.03"
-drive_links: ["https://drive.google.com/file/d/1qjLKJ0cAuH8YBtR3Ft8cKgqU_wCt65qu/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/163LlwAFSpMSErXtcDKuAeW6uzuWIr3VG/view?usp=drivesdk"]
 journal: hijbs
 year: 2019
 volume: 2

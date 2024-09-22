@@ -6,7 +6,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/6e44/5f0d693e6f98d9e2f2e9c439bc4af57e3dc6.pdf"
 source_url: "https://doi.org/10.18874/jjrs.32.2.2005.283-304"
 drive_links:
-  - "https://drive.google.com/file/d/1fvuKE63PZZ_QrLdfJA0gOL5QhR3fUxce/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19agpoO13bC6e7u4jnwN_G607rQQ8cQIP/view?usp=drivesdk"
 course: modern
 tags:
   - japanese-imperial

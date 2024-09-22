@@ -4,7 +4,7 @@ slug: "an.003.100"
 translator: sujato
 external_url: "https://suttacentral.net/an3.100/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1D2R16MPmuOSIWGuXRbmJfOSSvIAKhG6w/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mkzekc2t-Fj9uf9jD_PVfMwbqmJwe4kI/view?usp=drivesdk"
 year: 2018
 course: karma
 tags:

@@ -3,7 +3,7 @@ title: "Intertextuality, Contradiction, and Confusion in the Prasādanīya-sūtr
 authors: ["Charles DiSimone"]
 source_url: "https://journal.equinoxpub.com/BSR/article/view/13727"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1ckbm6ZV4PCbISuV8Pjc66cC5kIJzlZhI/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1sVKsmxHGve__LxUDAFzxq5z3nddc8NIw/view?usp=drivesdk"]
 journal: bsr
 year: 2016
 volume: 33

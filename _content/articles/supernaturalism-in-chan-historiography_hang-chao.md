@@ -4,7 +4,7 @@ authors:
   - "Chao Zhang"
 external_url: "https://icabs.repo.nii.ac.jp/record/497/files/%E7%A0%94%E7%A9%B6%E7%B4%80%E8%A6%81%20%E7%AC%AC%EF%BC%92%EF%BC%93%E5%8F%B7%EF%BC%88%E6%A8%AA%E7%B5%84%EF%BC%9AChao%20Zhang%EF%BC%89.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1qyS6Hops_sxYi5FFzk2nuUT3tj9HeWEg/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Jbe2lDioL9EAo1VpUy7thdbQixi6qsCj/view?usp=sharing"
 course: medieval
 tags:
   - east-asian

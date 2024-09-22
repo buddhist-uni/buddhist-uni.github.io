@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamgon-kongtrul/mahamudra-preliminaries-main-part-conclusion"
 translator: "Adam Pearcey"
 drive_links:
-  - "https://drive.google.com/file/d/1Pgs_fx3aofMJm28AuZLW08JLZHcbDant/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yJleYn2gKS3tQcp9p7ZIKAeTJHekAy1u/view?usp=drivesdk"
 base_value: 0.25
 course: tantric
 tags:

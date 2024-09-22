@@ -6,7 +6,7 @@ external_url: "https://web.archive.org/web/20240106125218if_/https://www.tathaga
 file_links:
   - "exclusive_01/Instructions%20to%20Insight%20meditation%20-%20Mahasi%20Sayadaw.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1mbopM-l37IcGF_u3l3J5LKhIiZWicgM8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Qpe377851xKGVBlmO51PitoQP0mgzmna/view?usp=drivesdk"]
 course: function
 tags:
   - vipassana

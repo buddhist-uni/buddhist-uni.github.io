@@ -7,7 +7,7 @@ volume: 20
 number: 20
 pages: "1--33"
 external_url: "https://www.academia.edu/44659945/On_Reading_Buddhist_Vinaya_Feminist_History_Hermeneutics_and_Translating_Womens_Bodies"
-drive_links: ["https://drive.google.com/file/d/1ENLKFgEpe-lG764zFmUBRjXQTTq0FBC3/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1JDNolpLxa2wKJuQts1yvgtBMOTxlvJ_2/view?usp=drivesdk"]
 course: vinaya-pitaka
 tags:
   - indian

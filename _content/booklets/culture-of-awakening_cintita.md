@@ -4,7 +4,7 @@ authors: [cintita]
 course: form
 external_url: "https://bhikkhucintita.files.wordpress.com/2014/04/sasana6x9withcover.pdf"
 year: 2014
-drive_links: ["https://drive.google.com/file/d/1zur07giMlXjhQhvc5ZLcE737t5IEpqxb/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ILP1dpc4zhCLcnlhB18NcDFY9aElRj9Q/view?usp=drivesdk"]
 olid: OL32035810M
 base_value: 2.4
 tags:

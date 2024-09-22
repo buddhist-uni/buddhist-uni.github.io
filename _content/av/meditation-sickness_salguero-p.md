@@ -4,8 +4,8 @@ authors:
   - salguero-p
 external_url: "https://youtu.be/N3EtVoFooYI"
 drive_links:
-  - "https://drive.google.com/file/d/1LVGu8_6xtJHtjdA3V82L9A-OyoMXpaQm/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1O8EkZ5Qfp8jSuQEY6tv6LcF1RzOn3Vfo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MskEwkZTLErt08gxMxedN0fC_tWHAulB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1S921ZIq8gBsZuH1z2ig91oZEKUrrKihG/view?usp=drivesdk"
 formats: [mp3, pdf]
 course: roots
 tags:

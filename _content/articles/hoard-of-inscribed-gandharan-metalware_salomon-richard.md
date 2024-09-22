@@ -4,7 +4,7 @@ authors:
   - "Richard Salomon"
 external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article&download=yes"
 drive_links:
-  - "https://drive.google.com/file/d/15iT7pBJA3fO7dGUrfuC7Ve3MPa_yGagk/view?usp=sharing"
+  - "https://drive.google.com/file/d/1NMn7fkv4h7ziQrX60LN_JdrzSvJKYl-R/view?usp=sharing"
 course: sects
 tags:
   - central-asian

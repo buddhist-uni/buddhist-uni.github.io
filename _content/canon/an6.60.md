@@ -4,7 +4,7 @@ slug: "an.006.060"
 translator: sujato
 external_url: "https://suttacentral.net/an6.60/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1P3kikaX6X_gfNMwHE_vM6A6CK1sVVmCZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12szO3yuSLgM-KRVMoYXqTD5hQuV8JvZP/view?usp=drivesdk"
 course: tranquility-and-insight
 tags:
   - an

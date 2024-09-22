@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/buddhafiremiracle.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1F-Ft5Qit0YvmR2y-yhlqUpWpTbL0gsWv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yjRQgFyIQSRTUpp6tWmSofoSx1lh-0uA/view?usp=drivesdk"
 course: imagery
 tags:
   - dn

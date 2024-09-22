@@ -4,8 +4,8 @@ external_url: "https://www.bps.lk/library-search-select.php?id=wh414"
 authors:
   - jootla
 drive_links:
-  - "https://drive.google.com/file/d/1sHSkGlmLLdSX3B9kp9vtPEk1X4aJgnKa/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/12eEH7oLGf79Dw1nFBQdLWnQgt4cFFps9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KDA0fN0P2-3dQpQkKM6yZmhiQvBhINKa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1U86fZqdlF15Mzfsv5UdMrArwW7t79yWy/view?usp=drivesdk"
 year: 1997
 series: wheel
 publisher: bps

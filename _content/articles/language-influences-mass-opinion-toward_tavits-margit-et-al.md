@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/116/34/16781.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1908156116"
 drive_links:
-  - "https://drive.google.com/file/d/1aV5EZytLhh2Nrj-jHSyKwzMMRayhp48B/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fLGqDXLLKfHw3qp9P24AHqeikjS1b2uc/view?usp=drivesdk"
 course: communication
 tags:
   - gender

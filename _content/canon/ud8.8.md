@@ -3,7 +3,7 @@ title: "Ud 8.8 Visākhā Sutta: The Discourse about Visākhā"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud8.8/en/anandajoti"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1UukZ4WMukfIvRtIPXeQWQf3mKOr97mD-/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1w49OrQtmEZQKewGki8_iS_uhHm7Osh3h/view?usp=drivesdk"]
 course: imagery
 tags:
   - ud

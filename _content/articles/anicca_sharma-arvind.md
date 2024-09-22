@@ -7,7 +7,7 @@ external_url: "https://archive.org/download/anicca-arvind-sharma/Anicca%20%28197
 file_links:
   - "exclusive_01/Anicca%20(1979)%20-%20Arvind%20Sharma.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1X8i-LMEaC0_zlskV-MM8SYHNHaUDdWz7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VFy6i0UUnMmJGdWxmELs2iyMfsu2s93u/view?usp=drivesdk"
 course: philosophy
 year: 1979
 journal: pbr

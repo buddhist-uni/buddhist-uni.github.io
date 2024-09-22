@@ -4,8 +4,8 @@ authors:
   - "Hito Steyerl"
 external_url: "https://www.are.na/block/12637399"
 drive_links:
-  - "https://drive.google.com/file/d/11oEg9VaGK_wV2Ie0BHaB_RH5au2bO1O7/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1lvu89Cb0b7RdODIyu99c4yRDrJp1XM2s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gqpTsCuzj9wCIyuKAmDAdtvLQKWJhx9i/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rt2GuYhGM7AXOjj44LvsQze6K9Xadj5R/view?usp=drivesdk"
 course: present
 tags:
   - media

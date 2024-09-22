@@ -6,7 +6,7 @@ editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/11Norman.pdf"
 source_url: "https://www.academia.edu/15728091/The_Buddhist_Forum_II"
 drive_links:
-  - "https://drive.google.com/file/d/11aWngyzdfoTRz4v_B_xmS3A3vzoaU7ia/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1c4hrFDJW34QQ4sF43w_Bm3gnLMBdjpwc/view?usp=drivesdk"
 course: pali-language
 status: featured
 tags:

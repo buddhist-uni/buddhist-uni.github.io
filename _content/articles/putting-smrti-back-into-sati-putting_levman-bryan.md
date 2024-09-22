@@ -4,7 +4,7 @@ authors:
   - levman
 external_url: "http://jocbs.org/index.php/jocbs/article/view/167"
 drive_links:
-  - "https://drive.google.com/file/d/1e2579fYULkcnJwUYSYOX8H7QtkaXqjgx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZWZFgB4apSAsUVqiorHejir_i7DgYI8O/view?usp=drivesdk"
 course: sati
 tags:
   - perception

@@ -7,7 +7,7 @@ year: 1974
 address: Bangkok
 publisher: "Mahāmakut Rajāvidyālaya Press"
 drive_links:
-  - "https://drive.google.com/file/d/1dNik-Gpe5Qn4CRwvbRsH2vXYqjyuM34Q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FUDP82Q8VoygklgtyPj9EOMettwF-moB/view?usp=drivesdk"
 course: navakovada
 tags:
   - sati

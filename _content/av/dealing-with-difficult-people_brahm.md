@@ -3,7 +3,7 @@ title: "Dealing with Difficult People"
 authors: [brahm]
 external_url: "https://www.youtube.com/watch?v=jniaUr_7438"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1vRSlCvZxKpea1T2gvccISZGaPj8k2Zau/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Qh4mm7L_eKo4YCkZwxrlv2oKDZg8AWGk/view?usp=drivesdk"]
 month: nov
 year: 2008
 status: featured

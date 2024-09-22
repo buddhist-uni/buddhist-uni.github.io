@@ -3,7 +3,7 @@ title: "What is the Eye?"
 authors: [cintita]
 external_url: "https://bhikkhucintita.files.wordpress.com/2018/04/sixspheres.pdf"
 year: 2018
-drive_links: ["https://drive.google.com/file/d/1H9lVmSRQDYtAYiHBGqJKOTu3zEREeGLg/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Cgg2Oq2hpyIoSdCN6E1I5h78bOml2U5L/view?usp=drivesdk"]
 course: philosophy
 tags:
   - origination

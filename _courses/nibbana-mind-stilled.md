@@ -1,7 +1,7 @@
 ---
 title: "Nibbāna: The Mind Stilled"
 subtitle: "An Online Course on Buddhist Psychology"
-google_doc_id: 1-iknxgZN1v5DFiFxWdcI8XtcgS-EY_QH
+google_doc_id: 1gio8_zc5ZYDd9LG6KHHp_tvvxL6mJeD_
 icon: "fas fa-cloud-sun"
 image: "https://illeakyw.sirv.com/Images/banners/metalfish.jpeg"
 image_width: 1830
@@ -53,7 +53,7 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 
 ## Course Instructions
 
-[The course](https://drive.google.com/file/d/1-qnX1F6M3gxKQ2hCBeNhY15U6yHv1vdL/view?usp=sharing) proceeds linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1ajvK7hq5sN-xiquU5WO0fV79C2GF87Mz){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
+[The course](https://drive.google.com/file/d/1Rv4uxnZX4Hnhjpm_2AP3CEVKWRaV51iR/view?usp=sharing) proceeds linearly through the lectures (no surprise). You can read along with Bhante's lectures either in the original book, or in [his lecture notes](https://drive.google.com/drive/u/0/folders/1qxaEtE7G6ZQ85W7Ghfy54oEueR3CnIMN){:target="_blank" ga-event-value="2"} which contain the alternative translations mentioned.
 
 Of course, meditation and reflection "outside of class" is encouraged. As ever, if you have any questions, feel free to post on [DhammaWheel](https://www.dhammawheel.com/viewforum.php?f=13&sid=f7aa6f1d326313d8ef96bc802fb6ae02){:target="_blank"} or [SuttaCentral](https://discourse.suttacentral.net/t/bhikkhu-analayos-e-learning-course-on-the-nibbana-sermons-by-bhikkhu-katukurunde-na-ananda/3321/){:target="_blank" ga-event-value="0.6"}.
 

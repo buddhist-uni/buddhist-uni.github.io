@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.journals.vu.lt/acta-orientalia-vilnensia/article/download/3748/5210"
 source_url: "https://doi.org/10.15388/aov.2007.1.3748"
 drive_links:
-  - "https://drive.google.com/file/d/1MlJnOvgcCgpbFyx-RHfUU8W65JCF-fBL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZuMjBFLRNQS0tG6GU5wWguXyPAJKz6wv/view?usp=drivesdk"
 course: jataka
 tags:
   - roots

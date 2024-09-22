@@ -6,7 +6,7 @@ translator: "David Choephel"
 subcat: poetry
 external_url: "https://dharmaebooks.org/the-seventy-two-exhortations/"
 drive_links:
-  - "https://drive.google.com/file/d/1HsUxLeGYmVofYQ5e_hZy4YL2CFJ-eFT1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1k0NEV2k3U98MrcYXkmDt0l5W5azdAmsr/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - bodhisattva

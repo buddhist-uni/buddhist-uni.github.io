@@ -5,7 +5,7 @@ authors:
 external_url: "https://discourse.suttacentral.net/uploads/short-url/12wJA0C0HoMnmQkXgzycgyqZkKd.mp3"
 source_url: "https://www.audiodharma.org/series/2749"
 drive_links:
-  - "https://drive.google.com/file/d/1bUGu-v7le8EuBv7HnzLx3S6ck9j2nize/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lP-mJiZDd-u9ZJ6b3e5Ymd4a6cuSxMod/view?usp=drivesdk"
 course: vipassana
 tags:
   - theravada

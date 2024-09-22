@@ -1,7 +1,7 @@
 ---
 title: "The Beauty of Sila"
 authors: [jayasaro]
-drive_links: ["https://drive.google.com/file/d/1ezwuOY-cO1WyafM52bZhFoP2RUkqF0I8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1YUZseyaP0TrSTc78adF7HfW_nadRzS7I/view?usp=drivesdk"]
 external_url: "https://www.watpahnanachat.org/beauty-of-sila"
 year: 2008 # Best guess
 course: monastic

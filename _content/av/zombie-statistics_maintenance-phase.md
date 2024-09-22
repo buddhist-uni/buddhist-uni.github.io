@@ -6,7 +6,7 @@ subcat: podcast
 external_url: "https://youtu.be/fsm-bnngpto"
 source_url: "https://www.listennotes.com/podcasts/maintenance-phase/zombie-statistics-spectacular-z6ywujYFNIQ/"
 drive_links:
-  - "https://drive.google.com/file/d/1Q127595R4CP1O5h5Tl7eu27iaOxeTr4w/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rYRdnzym6EvYQIceYrf2g2yC3FOaeDdG/view?usp=drivesdk"
 course: intellect
 status: featured
 tags:

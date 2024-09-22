@@ -4,7 +4,7 @@ authors:
   - khandro
 external_url: "https://www.lionsroar.com/compassion-and-wisdom/"
 drive_links:
-  - "https://drive.google.com/file/d/1MACoJ4XKUSZQRj3j4GCRlOCSm1XyFd9q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1unQql0aDnRjIyf1A6_V9oHxgy8evph0T/view?usp=drivesdk"
 course: mahayana
 tags:
   - function

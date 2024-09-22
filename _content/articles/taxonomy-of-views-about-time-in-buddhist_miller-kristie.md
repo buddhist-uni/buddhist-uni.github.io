@@ -5,7 +5,7 @@ authors:
 external_url: "https://philpapers.org/archive/MILATO-11.pdf"
 source_url: "https://doi.org/10.1353/pew.2017.0062"
 drive_links:
-  - "https://drive.google.com/file/d/1XeMvKsthJlUzx6b7QSaP69i7c4cZ9x49/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kAWpIbkKhZdwMbFa-zPgKKW2SUi6S1cz/view?usp=drivesdk"
 course: time
 tags:
   - dialogue

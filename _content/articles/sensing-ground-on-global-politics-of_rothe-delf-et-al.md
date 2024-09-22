@@ -6,7 +6,7 @@ authors:
 external_url: "https://research.rug.nl/files/63437041/sensing_the_ground_on_the_global_politics_of_satellitebased_activism.pdf"
 source_url: "https://doi.org/10.1017/s0260210517000602"
 drive_links:
-  - "https://drive.google.com/file/d/1a2uDtma5sqUYsVhk1UGKasd8UYouEbZt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XK-5ucIIKalSmSwdAvPxWc1ARZV32idg/view?usp=drivesdk"
 course: media
 tags:
   - maps

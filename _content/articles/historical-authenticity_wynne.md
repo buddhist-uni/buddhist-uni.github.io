@@ -6,7 +6,7 @@ journal: "The Vienna Journal of South Asian Studies"
 year: 2006
 pages: "35--70"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1Xfdbn_AGkLAzd_Y0fpr3mJ5liLTnNXRu/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/12pZsMHf-81VM7iCAjwc42y4ZvOT7ehCS/view?usp=drivesdk"]
 course: indian
 tags:
   - pali-canon

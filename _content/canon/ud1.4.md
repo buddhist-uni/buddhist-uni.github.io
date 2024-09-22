@@ -5,7 +5,7 @@ slug: "ud1.4"
 subcat: poetry
 external_url: "https://suttacentral.net/ud1.4/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1WNojkoTMN_Tz6aGIBPPSGfiwaiOTfns2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sGw0VZXgQy1KYzvcGqAqTopnWQSTS7qC/view?usp=drivesdk"
 course: setting
 tags:
   - canonical-poetry

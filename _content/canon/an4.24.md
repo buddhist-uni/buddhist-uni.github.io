@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.024"
 external_url: "https://suttacentral.net/an4.24/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1_qER_84CL_wK_DYZLMNlzqQkto1bMd7V/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15xR_s1fa_95KtSEcbp4_Dq71HV-61BTk/view?usp=drivesdk"
 course: epistemology
 tags:
   - iddhi

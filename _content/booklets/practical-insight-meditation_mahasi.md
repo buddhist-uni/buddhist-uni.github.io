@@ -6,7 +6,7 @@ translator: "U Pe Thin and Myanaung U Tin"
 external_url: "https://www.bps.lk/olib/bp/bp503s_Mahasi_Practical-Insight-Meditation.pdf"
 source_url: "https://archive.org/details/bub_gb_M2S-7-lWzHIC"
 drive_links:
-  - "https://drive.google.com/file/d/1cTZ8tOiaIKXGgDaVHRP6LqOMDpN4Wji5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11NjfSbPTtGsj4HTr-AqCn2jYyDUcr5c5/view?usp=drivesdk"
 course: vipassana
 status: featured
 tags:

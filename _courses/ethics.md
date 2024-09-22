@@ -1,7 +1,7 @@
 ---
 title: "Buddhist Ethics"
 subtitle: "An Outline"
-google_doc_id: 1MWVlLI5DN8CBFfXfAU3Hx_d4z0ndStFmfJ9N4IJewDo
+google_doc_id: 1N3P8ydBccrpqaktsJpUfFZsyLlCPyZF_1KzYEaePvxw
 feedback_id: "Buddhist+Ethics"
 icon: "fab fa-pagelines"
 image: "https://illeakyw.sirv.com/Images/banners/themessenger.jpg"

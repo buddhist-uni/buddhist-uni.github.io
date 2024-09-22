@@ -27,7 +27,7 @@ body:
     attributes:
       label: Drive Folder
       description: A link to the folder on Google Drive.
-      placeholder: https://drive.google.com/drive/folders/1RJi6bEXa25zizGdsm5evCycYuY6a2D8r
+      placeholder: https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv
     validations:
       required: true
 ---

@@ -21,4 +21,4 @@ pages: 380
 
 A collection of Than Ajahn Suchart's early Dhamma talks in English.
 
-Volume 2 can be found [on Google Drive here](https://drive.google.com/file/d/15unjS1jQggi3mPLoXlmCv1b5IbyJYabI/view?usp=drivesdk).
+Volume 2 can be found [on Google Drive here](https://drive.google.com/file/d/14KzIzY-fRkqtruKzwNtaXfkfsTZGAt7w/view?usp=drivesdk).

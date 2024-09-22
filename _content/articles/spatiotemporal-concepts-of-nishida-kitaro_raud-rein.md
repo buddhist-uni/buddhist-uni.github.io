@@ -4,7 +4,7 @@ authors:
   - "Rein Raud" 
 external_url: "https://www.thezensite.com/ZenEssays/Philosophical/Place_and_BeingTime.html"
 drive_links:
-  - "https://drive.google.com/file/d/1FLRv2M_dSgTSE5BvvQCcOVYx_aEv08WH/view?usp=sharing"
+  - "https://drive.google.com/file/d/1fW1gn1q2uKl6c5KjyyuW87owyIGpI4pb/view?usp=sharing"
 course: dialogue
 tags:
   - philosophy-of-science

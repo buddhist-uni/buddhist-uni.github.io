@@ -4,7 +4,7 @@ authors:
   - jayasaro
 external_url: "https://www.abhayagiri.org/talks/4988-taking-responsibility-for-your-mind"
 drive_links:
-  - "https://drive.google.com/file/d/1krDSZIeOAJUtsMHm8O_gfnzUSveTAuz5/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1p_pi15iDiA5JDQsUYidRYgctqCXMyxkZ/view?usp=drive_link"
 formats: [mp3]
 course: problems
 tags:

@@ -4,7 +4,7 @@ authors:
   - "Luang Por Munindo"
 external_url: "https://ratanagiri.org.uk/teachings/talks/developing-agility-of-attention"
 drive_links:
-  - "https://drive.google.com/file/d/1KbmgjxK2N3RCLr137kLhSfuz9MoA6cox/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Fv7jR6z51P7dgCoFMZcf51My4MIhl1N2/view?usp=drivesdk"
 course: vipassana
 tags:
   - problems

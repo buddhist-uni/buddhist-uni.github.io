@@ -6,7 +6,7 @@ year: 2016
 publisher: bdk
 number: 2
 series: da_bdk
-drive_links: ["https://drive.google.com/file/d/1aqKJHISJTOEjxe5fy_MRUFzsH309vq9A/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/19GjVPtwuEJrWQkFVzIJUf7YCSKuKtGZo/view?usp=drivesdk"]
 external_url: "https://bdkamerica.org/product/the-canonical-book-of-the-buddhas-lengthy-discourses-vol-ii/"
 base_value: 1
 pages: 182

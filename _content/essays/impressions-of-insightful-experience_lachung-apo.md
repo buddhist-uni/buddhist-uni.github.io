@@ -6,7 +6,7 @@ translator: "Adam Pearcey"
 subcat: poetry
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lachung-apo/aho-ye"
 drive_links:
-  - "https://drive.google.com/file/d/11c_NzgNEg-_7naIlaKpFa6QYVpyvqS1q/view?usp=sharing"
+  - "https://drive.google.com/file/d/1JQZXgUUVLERoz1AADw7MDnKeICHYEP4G/view?usp=sharing"
 course: emptiness
 tags:
   - perception

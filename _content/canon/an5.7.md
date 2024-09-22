@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.007"
 external_url: "https://suttacentral.net/an5.7/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1g89Sp0J-PvwPSw-oun9QjKxm34sJqRrv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1scxizjTQyNt6nNv3gCBOmtOQl4GVbs8T/view?usp=drivesdk"
 course: speech # to pedagogy
 tags:
   - stages

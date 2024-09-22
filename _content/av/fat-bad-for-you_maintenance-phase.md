@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://maintenancephase.buzzsprout.com/1411126/9551555"
 drive_links:
-  - "https://drive.google.com/file/d/11k8o5BcYQYYphRjbEF22MI8Vd0FUUk-n/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1E-jDGWWzcgkb0QLDX0KuNFsxts4QD9O7/view?usp=drivesdk"
 course: body
 tags:
   - medicine

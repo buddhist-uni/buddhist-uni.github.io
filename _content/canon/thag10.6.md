@@ -5,7 +5,7 @@ slug: "thag.10.06"
 subcat: poetry
 external_url: "https://suttacentral.net/thag10.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/18lMmMAea0nhaBlgXVe6gPmfQMZ6wzeB0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FtPWa4bOJdNnFu_IwDJcKdXq9Sd4h82K/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

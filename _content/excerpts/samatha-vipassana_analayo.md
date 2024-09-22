@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/samatha-vipassana.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/1nQpSYXn6MpysVV7eLH0opubRwKZpFwkf/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/16fZGozRgsT6bZmZCwgbFP_wfMD87YXhs/view?usp=drivesdk"
 course: meditation
 tags:
   - tranquility-and-insight

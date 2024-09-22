@@ -4,7 +4,7 @@ authors:
   - "Kiyoyuki Koike"
 external_url: "http://ci.nii.ac.jp/naid/110002912920"
 drive_links:
-  - "https://drive.google.com/file/d/1mGBZ1AU7PV339YoBKgNC3Qf-YdipInE9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1diE6e3zhAc5krUuoh3YQjlGOOixJxlz3/view?usp=drivesdk"
 course: form
 tags:
   - cambodian

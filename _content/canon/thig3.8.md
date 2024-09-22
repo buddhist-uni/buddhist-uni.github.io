@@ -5,7 +5,7 @@ slug: "thig.03.08"
 subcat: poetry
 external_url: "https://suttacentral.net/thig3.8/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1u3ORZ0pOQaHmT5srO6ZhifBguaRyp77P/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sa2mMaeEb6RbuThyFX8XNZW-LntqXgYe/view?usp=drivesdk"
 course: emptiness
 tags:
   - thig

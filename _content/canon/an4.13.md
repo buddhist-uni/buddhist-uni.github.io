@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.013"
 external_url: "https://suttacentral.net/an4.13/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1NKLP1MJHkKCwM93yhyVjLRGlbtgsmqRg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1H8IjL4XagxA0GQQjqQvO4nvinLXotfrh/view?usp=drivesdk"
 course: thought
 tags:
   - meditation

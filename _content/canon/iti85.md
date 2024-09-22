@@ -4,7 +4,7 @@ translator: sujato
 slug: "iti085"
 external_url: "https://suttacentral.net/iti85/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1DIZYVtyMDIJQxw1jS2k-VsQMABC-9W4I/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1x3qu7dT2nXnNnHQmHb7S_uj6F64pCK_r/view?usp=drivesdk"
 course: path
 tags:
   - death

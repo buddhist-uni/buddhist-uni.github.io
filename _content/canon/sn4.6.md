@@ -5,7 +5,7 @@ slug: "sn.004.006"
 subcat: poetry
 external_url: "https://suttacentral.net/sn4.6/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1nOMk17FAxFRB8LTpHdhTC7Ou9sA6Dzzh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1d9S_5VBV57z5H2lntSjVpZqh2hyDS66F/view?usp=drivesdk"
 course: problems
 tags:
   - monastic-advice

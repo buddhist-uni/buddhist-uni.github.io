@@ -4,7 +4,7 @@ authors:
   - suchart
 source_url: "http://www.kammatthana.com/dt_011.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1JaQyzXVPUYLWO6WTcJdGCxyydenAzbET/view?usp=sharing"
+  - "https://drive.google.com/file/d/1cJAcCKhekLrfdhAFom1yFrjxiHPhfvH9/view?usp=sharing"
 course: cosmology
 tags:
   - thai-forest

@@ -6,7 +6,7 @@ authors:
 external_url: "https://ajph.aphapublications.org/doi/pdf/10.2105/AJPH.88.9.1396"
 source_url: "https://doi.org/10.2105/ajph.88.9.1396"
 drive_links:
-  - "https://drive.google.com/file/d/19aXKdgHjaBQkQZ9cidO8TP95AAobLx4A/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dfuHt38C54NkcD39JWAO2Ob1z3sf_Asc/view?usp=drivesdk"
 course: intellect
 tags:
   - public-health

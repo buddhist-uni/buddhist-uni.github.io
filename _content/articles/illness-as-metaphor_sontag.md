@@ -3,7 +3,7 @@ title: "Illness as Metaphor"
 authors: [sontag]
 formats: [pdf]
 file_links: ["exclusive_01/Illness%20As%20Metaphor%20-%20Susan%20Sontag.pdf"]
-drive_links: ["https://drive.google.com/file/d/1MphpNMGWJ0SnUnoPmM8CpNmB1YYnE6VV/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Xb2q54OGRKS0SKkuGwtE5RYtyH58IbGt/view?usp=drivesdk"]
 journal: nyrb
 year: 1978
 course: inner
@@ -25,4 +25,4 @@ A classic and much-cited essay on the (mis)use of metaphors to describe disease.
 
 Available online from the original publisher: [Part 1](https://www.nybooks.com/articles/1978/01/26/illness-as-metaphor/){:target="_blank"}, [Part 2](https://www.nybooks.com/articles/1978/02/09/images-of-illness/){:target="_blank"}, and [Part 3](https://www.nybooks.com/articles/1978/02/23/disease-as-political-metaphor/){:target="_blank"}. Years later, Sontag also wrote in the NYRB, [this time on the metaphors of AIDS](https://www.nybooks.com/articles/1988/10/27/aids-and-its-metaphors/){:target="_blank"} in a compelling post-script later published alongside the original essay.
 
-After reading, consider [these discussion questions about the essay](https://drive.google.com/file/d/1PzZBMMQvr1GFWljgcR-kp_MZZiyIkXJt/view?usp=drivesdk){:target="_blank"}.
+After reading, consider [these discussion questions about the essay](https://drive.google.com/file/d/1-DX-Y8PdQksPWjN5MiNNQ_-9w1SWO-pE/view?usp=drivesdk){:target="_blank"}.

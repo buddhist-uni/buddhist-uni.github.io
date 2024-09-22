@@ -5,7 +5,7 @@ authors:
 editor: "Iromi Ariyaratne"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/inspiredutterance.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-jXKK2Pu0kYORqjECuJf15VjVQj6Xt9n/view?usp=sharing"
+  - "https://drive.google.com/file/d/1BpKAfwZ3PsysLNZtcDfdtKcg50gOWgAn/view?usp=sharing"
 course: thought
 tags:
   - anatta

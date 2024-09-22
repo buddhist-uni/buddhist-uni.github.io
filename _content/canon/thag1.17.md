@@ -5,7 +5,7 @@ slug: "thag.01.17"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.17/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1UhG2VevohkNMlrBr6h0LH3X4hIo6CtqF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WfCzobQRyKbrLLroAKJmaRTB-uiHeXvm/view?usp=drivesdk"
 course: imagery
 tags:
   - problems

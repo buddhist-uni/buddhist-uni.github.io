@@ -4,7 +4,7 @@ authors:
   - "Minoru Kiyota"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8617/2524"
 drive_links:
-  - "https://drive.google.com/file/d/16VamB9kCXkYIWUV9zrwKE-xuup2pbGhl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TsbtvuKbfgZuijPWJZaqjIQ2EhP-8-zh/view?usp=drivesdk"
 course: academic
 tags:
   - japanese

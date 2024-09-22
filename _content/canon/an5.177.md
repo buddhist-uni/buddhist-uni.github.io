@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.177"
 external_url: "https://suttacentral.net/an5.177/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1sX2OYWZt7RnLU1MTuw3pwvUViqvOAl6J/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1b2n6MYYkEkVDl4TjSROr9qwfueMO30Ji/view?usp=drivesdk"
 course: lay
 tags:
   - buddhism

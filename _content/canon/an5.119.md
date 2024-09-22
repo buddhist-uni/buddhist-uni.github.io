@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.119"
 external_url: "https://suttacentral.net/an5.119/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1kS7De7zgtghO4wQJd4EGMoTb68HZC4Rs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1k4EphZfBedtqfmELEeSI52aXjHI3WgvA/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - speech

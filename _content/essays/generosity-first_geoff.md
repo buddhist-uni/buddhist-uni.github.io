@@ -13,7 +13,7 @@ tags:
   - sangha
   - west
 status: featured
-drive_links: ["https://drive.google.com/file/d/1i_DMfGrTbgWp6vSVgj-4Kf06zeguevVl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1c9x1rJmTcffNf2ZXls7G43QTdhY5sMU6/view?usp=drivesdk"]
 pages: 6
 ---
 

@@ -10,7 +10,7 @@ tags:
 base_value: 4
 status: featured
 formats: [PDFs]
-drive_links: ["https://drive.google.com/drive/folders/10onZWu01RgUkBHOLmulH32Y7I9JIyiAl"]
+drive_links: ["https://drive.google.com/drive/folders/1_i_9FWK31EDTSd8ALbGs3lT25lu1LHsd"]
 pages: 1055
 course_time_multiplier: 2 # it's often not an easy read
 ---

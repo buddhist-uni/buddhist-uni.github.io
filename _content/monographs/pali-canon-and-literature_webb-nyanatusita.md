@@ -5,7 +5,7 @@ authors:
   - "Bhikkhu Nyanatusita"
 external_url: "https://www.bps.lk/olib/bp/bp607s_Webb_Analysis-Of-The-Pali-Canon.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1aFiKyFxuz5wFy57ZypVxNtn56MJZyF_D/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11o_3IsbbbH-bP6HLeZmaAdUcAOyRR6CB/view?usp=drivesdk"
 tags:
   - pali-canon
   - theravada-roots

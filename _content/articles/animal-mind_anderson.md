@@ -4,7 +4,7 @@ authors:
   - "Ross Anderson"
 external_url: "https://www.theatlantic.com/magazine/archive/2019/03/what-the-crow-knows/580726/"
 drive_links:
-  - "https://drive.google.com/file/d/1I12E2rviZtSCLoX54isKsjJVaaMFHAVx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ij3uTs3dZbH8D8ykMn7duBZxyR2aQoGY/view?usp=drivesdk"
 course: ideology
 tags:
   - animals

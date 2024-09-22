@@ -3,7 +3,7 @@ title: "SN 2.6 Kāmada Sutta: With Kāmada"
 slug: "sn.002.006"
 external_url: "https://suttacentral.net/sn2.6/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1KKGbJ9PCp3Sw2klLU-Mgo_9ypK8wQD6P/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/13Tm_5BoRrk9a7nAHzK83At9f9DUaaSiC/view?usp=drivesdk"]
 course: meditation
 tags:
   - sn

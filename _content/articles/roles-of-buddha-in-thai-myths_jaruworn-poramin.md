@@ -5,7 +5,7 @@ authors:
 external_url: "https://brill.com/downloadpdf/journals/mnya/8/3/article-p15_2.pdf"
 source_url: "https://doi.org/10.1163/26659077-00803002"
 drive_links:
-  - "https://drive.google.com/file/d/1_v7lQHDrgN5zhko3GoQXKHI3DInp9ad4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OZdILBfyktpuXKg-5ptE-Rb1QlSYWy55/view?usp=drivesdk"
 course: theravada-roots
 tags:
   - thai

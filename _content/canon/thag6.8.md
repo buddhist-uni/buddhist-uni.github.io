@@ -5,7 +5,7 @@ slug: "thag.06.08"
 subcat: poetry
 external_url: "https://suttacentral.net/thag6.8/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1fxrrMN2NHPoz7jBlQe05AQjjl-y8c-zy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1D9VSSAIUe9WPhNJJAmRKl49XRZHSv4KT/view?usp=drivesdk"
 course: path
 tags:
   - imagery

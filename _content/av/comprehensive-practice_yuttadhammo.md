@@ -3,7 +3,7 @@ title: "Comprehensive Practice"
 authors: [yuttadhammo]
 external_url: "https://youtu.be/yuIsoom3IGc"
 drive_links:
-  - "https://drive.google.com/file/d/1vC6zIJpFNfKm4LFPddgFZY3xkK6-U3Bi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1W3HeitYweFILvFJv-VBQ9FzRlAIEy5cJ/view?usp=drivesdk"
 course: path
 status: featured
 tags:

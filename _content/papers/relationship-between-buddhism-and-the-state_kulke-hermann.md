@@ -1,7 +1,7 @@
 ---
 title: "From Aśoka to Jayavarman VII: Some Reflections on the Relationship between Buddhism and the State in India and Southeast Asia"
 authors: ["Hermann Kulke"]
-drive_links: ["https://drive.google.com/file/d/1E7H1adyTiHflH2oTxFiCI3RUiW08fPge/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1UmzszdADZy2Sh09gnNz3TFWc2uCsrDNm/view?usp=drivesdk"]
 booktitle: "Buddhism Across Asia: Volume 2"
 chapter: 15
 pages: "327--345"

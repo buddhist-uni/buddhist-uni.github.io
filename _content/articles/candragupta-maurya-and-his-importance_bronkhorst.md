@@ -5,7 +5,7 @@ authors:
 source_url: "https://web.archive.org/web/20230807134049if_/http://www.asiainstitutetorino.it/indologica/volumes/vol37/vol37-art04-johannes-bronkhorst.pdf"
 external_url: "https://serval.unil.ch/resource/serval:BIB_44D06EED60FB.P001/REF.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1oSlKZyBXIIT94MEhUe7I86-vIGJp7mQn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Vdldc56flKMjNR7jQt4E507TfO9EkmSY/view?usp=drivesdk"
 course: indian
 tags:
   - indic-religions

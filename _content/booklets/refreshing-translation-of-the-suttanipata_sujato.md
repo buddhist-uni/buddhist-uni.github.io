@@ -4,8 +4,8 @@ authors:
   - sujato
 external_url: "https://suttacentral.net/edition/snp/en/sujato?lang=en"
 drive_links:
-  - "https://drive.google.com/file/d/1-HBJF5CAUcgr1bDCT0wOLT6dbaZ6Cjdp/view?usp=sharing"
-  - " https://drive.google.com/file/d/1yh9p0p12BRsvyjtEluPX1nw82udW2gAD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LuhQATRWA-2vSMNGss9hwz_s0QJ_buTg/view?usp=sharing"
+  - " https://drive.google.com/file/d/1g70vmHqs8TrT97OmJH0ch3OpsKNIhT_n/view?usp=drivesdk"
 course: snp
 tags:
   - sutta

@@ -4,7 +4,7 @@ authors:
   - suchart
 external_url: "https://www.mediafire.com/file/by2zn5n34c48nmw/DHAMMA_IN_ENGLISH_2014%262015.pdf/file"
 drive_links:
-  - "https://drive.google.com/file/d/1PUhh3lOsW-7OPR5ReZYQJU6Ck_QCzN6k/view?usp=sharing"
+  - "https://drive.google.com/file/d/1gH0__SJFlNwL89FgjdNtfEwOWUeQS0NK/view?usp=sharing"
 course: problems
 tags:
   - thai-forest

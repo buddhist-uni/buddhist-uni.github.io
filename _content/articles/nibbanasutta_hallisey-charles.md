@@ -2,7 +2,7 @@
 title: "*Nibbānasutta*: An Allegedly Non-Canonical Sutta on *Nibbāna* as a Great City"
 authors: [hallisey-charles]
 external_url: "https://archive.org/download/jpts-xviii-1993/Nibbanasutta%20-%20Charles%20Hallisey_text.pdf"
-drive_links: ["https://drive.google.com/file/d/1ZjYtNegZdeQvgx1zLjx65sYuoqAOx8Ig/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1tCxAW6yawuN4Qlb7MhlM56b9YV_JXnKZ/view?usp=drivesdk"]
 year: 1993
 volume: 18
 pages: "97--130"

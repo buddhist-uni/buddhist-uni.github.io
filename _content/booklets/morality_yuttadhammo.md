@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://static.sirimangalo.org/public/Morality.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/11FP8QmF7R5PyWBT_fV-qocTNR8aQeuGb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Etk6OKfJSokr0dK0Qrft1tKtfCKYd7u7/view?usp=drivesdk"
 course: path
 tags:
   - function

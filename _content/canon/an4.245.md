@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.245"
 external_url: "https://suttacentral.net/an4.245/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1I3lLQyuXH-La7PASHIW3IOH3-a2zMtQD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DupO02Vt8JevHMLlyF8CVNwTJFDV_GUX/view?usp=drivesdk"
 course: sati
 tags:
   - path

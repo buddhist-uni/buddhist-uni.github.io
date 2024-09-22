@@ -5,7 +5,7 @@ slug: "thag.01.07"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.7/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1AICUVcFlmZU3RKnrI54XVUiuzFfe-Nvr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14yYJgPlLpxCmpsmojWFTxXVxtCWF_wH2/view?usp=drivesdk"
 course: imagery
 tags:
   - nibbana

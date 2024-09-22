@@ -3,7 +3,7 @@ title: "Towards a Dialogue Between Buddhist Social Theory and Affect Studies on 
 authors: ["Edwin Ng"]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2014/01/Ng-BuddhistSocialTheory-final.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/19hqtifLO07qSoqzPUX-4YmYdM81Zq6-K/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1iw8qKe_qRtsw1AOk9IL80ATVbNGHLGs0/view?usp=drivesdk"]
 year: 2014
 volume: 21
 course: dialogue

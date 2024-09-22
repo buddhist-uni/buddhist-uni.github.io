@@ -5,7 +5,7 @@ slug: "thig.05.04"
 subcat: poetry
 external_url: "https://suttacentral.net/thig5.4/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/11Fxmw8REjmnqJnrWaO12BjNWD9aYpJxH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uOg3KF-jQOCO8M2YJkvTXaqipBZYxqjK/view?usp=drivesdk"
 course: sati
 tags:
   - kayagatasati

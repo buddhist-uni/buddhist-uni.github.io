@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xvii/Buddhist%20Sanskrit%20from%20Central%20Asia.pdf"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XVII%20(2014).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hozxpBYntjx5kZ7Z28eKcOtkP2OIvSM2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/111ZRT9h_68xiNAX0mcjrtNGAImypF9Ya/view?usp=drivesdk"
 course: roots
 tags:
   - historiography

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.030"
 external_url: "https://suttacentral.net/an6.30/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1twoip82pxslGQebCQaB_LU7o7xdn6KJ3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MwTKUrklnm7WO1WbU4-OFOkLKV7xpEAH/view?usp=drivesdk"
 course: path
 tags:
   - saddha

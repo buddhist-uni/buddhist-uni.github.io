@@ -5,7 +5,7 @@ slug: "thig.13.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thig13.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1fyAVhMd7OWNMrQpU0v6kGF2g9gjadE-0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZToDyBZn_ym2S9oXDi06sts0YX0mGn-z/view?usp=drivesdk"
 course: aging
 status: featured
 tags:

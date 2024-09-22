@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.globalbuddhism.org/article/download/3813/5138"
 source_url: "https://doi.org/10.26034/lu.jgb.2024.3813"
 drive_links:
-  - "https://drive.google.com/file/d/1_GNrX7szIt9eLfRnRe4mhAFH8BUqCL4K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gaq13DYlFtnZeOPNbKyEkviykRNMZ8Bd/view?usp=drivesdk"
 course: sri-lankan
 tags:
   - nature

@@ -1,7 +1,7 @@
 ---
 title: "The Affect of Textuality"
 authors: ["Daniel Veidlinger"]
-drive_links: ["https://drive.google.com/file/d/1VFahOZFsFW3UH8MSnsWIyGHGqCIDrEDv/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zg7xb8eaw3FRoYb_VDIHokwqMuIAsGz7/view?usp=drivesdk"]
 formats: [m4a]
 file_links:
   - "exclusive_01/The%20Affect%20of%20Textuality%20-%20Daniel%20Veidlinger.m4a"

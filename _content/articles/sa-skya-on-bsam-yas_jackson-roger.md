@@ -7,7 +7,7 @@ volume: 5
 number: 1
 pages: "89--99"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8564/2471/0"
-drive_links: ["https://drive.google.com/file/d/1easB3vyCa1GId-eY7Clmvz-h6WFGRqZe/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1FO3mYUe79-Sxjfpny4zLX63DHhIbPvv2/view?usp=drivesdk"]
 course: historiography
 tags:
   - tibetan-roots

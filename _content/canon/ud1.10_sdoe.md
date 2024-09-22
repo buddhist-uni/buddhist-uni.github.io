@@ -4,7 +4,7 @@ reader: doering
 external_url: "https://www.suttareadings.net/audio/ud.1.10.sdoe.mp3"
 formats: [mp3]
 drive_links:
-  - "https://drive.google.com/file/d/1jgiwO0jZHfiI8K8NEN4k8LNrAeWXhMaW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1E1oMp7K9bcJ2VOwS8o7TVs-70MMW0xSh/view?usp=drivesdk"
 course: emptiness
 status: featured
 tags:

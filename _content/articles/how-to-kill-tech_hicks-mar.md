@@ -4,7 +4,7 @@ authors:
   - "Mar Hicks"
 external_url: "https://logicmag.io/failure/how-to-kill-your-tech-industry/"
 drive_links:
-  - "https://drive.google.com/file/d/1Vv1894v0U-nBGs5MWWTnz3EHdWg3u21n/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17o7rNA0eE-KjB_HoL5-HVF9cjBq3Zj8B/view?usp=drivesdk"
 course: society
 tags:
   - britain

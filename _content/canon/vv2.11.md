@@ -4,7 +4,7 @@ slug: "vv.2.11"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-11/"
 drive_links:
-  - "https://drive.google.com/file/d/1hE18W8vaP_xLD5G49CLw9OtBPU_c6z-U/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WOi-2M4ed_40XXfkYHyMQl8cMhkIPN53/view?usp=drivesdk"
 course: cosmology
 tags:
   - vv

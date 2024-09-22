@@ -5,7 +5,7 @@ authors:
 external_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3A3447561/view"
 source_url: "https://doi.org/10.1093/jaarel/lfg102"
 drive_links:
-  - "https://drive.google.com/file/d/1066SmuXfgf8DagbJ4IGbrWLb14NdyC4P/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15TVmZ9PsmN4wrVzmkLpriailSD_rUFMt/view?usp=drivesdk"
 course: rebirth-stories
 tags:
   - buddha

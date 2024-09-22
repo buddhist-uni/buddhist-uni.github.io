@@ -6,7 +6,7 @@ subcat: poetry
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-gangshar/song-of-advice-for-gok-zangden"
 drive_links:
-  - "https://drive.google.com/file/d/1W0nIRGt0etbfplY1I95dB_Q7ew60yYko/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pg1yphhBpnneWkUJCm-l3p_7Fqnu9E97/view?usp=drivesdk"
 course: sati
 tags:
   - samatha

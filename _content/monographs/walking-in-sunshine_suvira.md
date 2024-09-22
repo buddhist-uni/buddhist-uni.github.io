@@ -4,7 +4,7 @@ authors:
   - "Suvira Bhikkhuni"
 external_url: "https://discourse.suttacentral.net/uploads/short-url/hiRkRwNqbZuJ71qRdLFmeUOBhmN.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/114TZW0Ahn6PSay9vJ4HDshVIzNYuV9N0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NNoGAzduhrMcNxj-HdmiubfBM3K0FCiD/view?usp=drivesdk"
 course: nuns
 tags:
   - sri-lankan

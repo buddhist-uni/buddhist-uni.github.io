@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.055"
 external_url: "https://suttacentral.net/an8.55/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1NGM8cgVCg6_qwEFiADJOxNcM2-vStQHW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nAx3rfP2djIRdGAZkvRsAM5vW1eRl93f/view?usp=drivesdk"
 course: lay
 tags:
   - an

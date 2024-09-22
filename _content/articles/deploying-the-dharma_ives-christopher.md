@@ -6,7 +6,7 @@ year: 2008
 volume: 15
 pages: "23--44"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/ives-article.pdf"
-drive_links: ["https://drive.google.com/file/d/1gtN9XDvey1QFafRbmi7EL6j-cQz-fx05/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1urUD7E58ftwlAXHSEtHbdx84O1wg1lP4/view?usp=drivesdk"]
 course: engaged
 tags:
   - nature

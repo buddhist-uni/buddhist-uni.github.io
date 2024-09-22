@@ -3,7 +3,7 @@ title: "Three Turnings of the Wheel of Doctrine (Dharma-Cakra)"
 authors:
   - "John Powers"
 external_url: "https://doi.org/10.1093/acrefore/9780199340378.013.768"
-drive_links: ["https://drive.google.com/file/d/1i-O1Ezkh3mUeae058EujEjrVcuzgURAK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/16k2lxk-UQ0ctJyuKePdPHVx03ngFqPta/view?usp=drivesdk"]
 month: may
 year: 2021
 course: mahayana

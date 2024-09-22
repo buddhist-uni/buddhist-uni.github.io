@@ -4,7 +4,7 @@ authors:
   - "Haiyan Hu-Von Hinüber"
 external_url: "https://archive.org/download/aririab-vol-xviii/Faxian%E2%80%99s%20%28%E6%B3%95%E9%A1%AF%29%20Worship%20of%20Guanshiyin%20%28%E8%A7%80%E4%B8%96%E9%9F%B3%29%20and%20the%20Lotus%20S%C5%ABtra.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1jfKxQJa_38PFjdgPA0BJ2posxFCd_zDu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1F-yZ7UYzU4G8psJL-bRyzA3ht1nfq-JJ/view?usp=drivesdk"
 course: form
 status: featured
 tags:

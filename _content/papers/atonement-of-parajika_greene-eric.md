@@ -12,7 +12,7 @@ year: 2017
 file_links:
   - "exclusive_01/Atonement%20of%20P%C4%81r%C4%81jika%20Transgressions%20in%20Fifth-Century%20Chinese%20Buddhism.pdf"
 drive_links:
- - "https://drive.google.com/file/d/1FPIybKf-GdNFf7ECuRVomPNtXnhKH2R2/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1du-Kj3GC924XDxMwwpAFApnlr38zLZWW/view?usp=drivesdk"
 course: mahayana-roots
 tags:
   - parajika

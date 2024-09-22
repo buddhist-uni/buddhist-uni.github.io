@@ -4,7 +4,7 @@ authors: [cintita]
 year: 2013
 month: dec
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1GBK3vQf9W6Kry3QGD9y_E2TtNrGtHFP_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1OwCUFTyiL9rJ-ETjHHQm7TRdf9KYdulX/view?usp=drivesdk"]
 external_url: "https://bhikkhucintita.wordpress.com/2013/12/19/the-cushion-or-the-world/"
 course: west
 tags:

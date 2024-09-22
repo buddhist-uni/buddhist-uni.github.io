@@ -3,7 +3,7 @@ title: "Red Rust, Robbers and Rice Fields: Women's Part in the Precipitation of 
 authors: [williams-liz]
 source_url: "https://journal.equinoxpub.com/BSR/article/view/14407"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1yMjSFJGqJPibzYRlyR-JG6Uf8b5YCe7h/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/16FEJGlJ2a0W1aigsMEr5pPIBWfxAELDB/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/Red%20Rust%2C%20Robbers%20and%20Rice%20Fields%20-%20Liz%20Williams.pdf"
 year: 2002

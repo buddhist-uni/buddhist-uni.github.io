@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.093"
 external_url: "https://suttacentral.net/an4.93/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1O7R9p1vySqf1Z1iK8OhJdrKxlCGCkv_t/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SZINZdCeuRHJBrPUxZa_HWYdM6-qhRej/view?usp=drivesdk"
 course: samadhi
 tags:
   - tranquility-and-insight

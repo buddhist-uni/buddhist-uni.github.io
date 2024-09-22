@@ -2,7 +2,7 @@
 title: "Bojjhanga Suttas"
 authors: [dhammaruwan]
 external_url: "https://www.pirith.org/download/Bhojjhanga.mp3"
-drive_links: ["https://drive.google.com/file/d/1Gw4OUKWS_uIXLuMp04-3_EPm_uS2wl0V/view?usp=drivesdk", "https://drive.google.com/file/d/1oQz56yQGVWF23Zd76n6Ayhm-d4rL0MCG/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1uzpGb7b66ZDBTSWNuZoSsrMdUW42rCFt/view?usp=drivesdk", "https://drive.google.com/file/d/1-h_YlDFfcBOKA2ist6qnvCyaRb4HY0jp/view?usp=drivesdk"]
 formats: [mp3, pdf]
 year: 1971
 course: form

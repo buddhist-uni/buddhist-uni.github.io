@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/teaching-abhidharma.pdf"
 source_url: "http://jocbs.org/index.php/jocbs/article/view/13/14"
 drive_links:
-  - "https://drive.google.com/file/d/1zQc-tKzlTiN5UH03hNtZbj3JbkMWuVby/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QvpncUdZOL5kM0TUnJEg6sP_YtPcGm34/view?usp=drivesdk"
 course: rebirth-stories
 tags:
   - abhidharma

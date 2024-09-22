@@ -4,7 +4,7 @@ authors:
   - "Matthew J Walton"
 external_url: "https://podcasts.ox.ac.uk/anti-muslim-movements-sri-lanka-and-myanmar-connections-and-commonalities"
 drive_links:
-  - "https://drive.google.com/file/d/1mnB1oeCyByAHzjMsZeBssj4L8hwqwReu/view?usp=sharing"
+  - "https://drive.google.com/file/d/1bZi9miUWYVL8Zfboil5Bwq7Pop1jE8Ci/view?usp=sharing"
 course: theravada-roots
 tags:
   - sri-lanka

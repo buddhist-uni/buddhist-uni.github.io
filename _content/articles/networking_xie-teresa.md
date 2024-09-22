@@ -4,7 +4,7 @@ authors:
   - "Teresa Xie"
 external_url: "https://www.vox.com/even-better/23416328/networking-tips-job-professional-email-example-scary"
 drive_links:
-  - "https://drive.google.com/file/d/1C7pHOX1Jaj7F1UUnmbGstctdnRUu2czf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1T-J1FadySd5y389N2yt5cpQkK5wnT0SD/view?usp=drivesdk"
 course: social
 tags:
   - careers

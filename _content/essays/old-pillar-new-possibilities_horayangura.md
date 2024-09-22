@@ -2,7 +2,7 @@
 title: "Old Pillar, New Possibilites: What the Revival of the Bhikkhuni Sangha Contributes to Thai Women and Society"
 authors: ["Nissara Horayangura"]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1qQn4fW2LwBOBH8qXa5lNMcyd1Li1EWAz/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Ww2s5XBcUGWOhs9FY-btMRK3Wjqg0p0y/view?usp=drivesdk"]
 external_url: "https://www.bhikkhuni.net/old-pillar-new-possibilities/"
 year: 2009
 course: sangha

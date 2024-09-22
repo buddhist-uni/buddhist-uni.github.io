@@ -5,7 +5,7 @@ slug: "an.006.063"
 source_url: "https://accesstoinsight.org/tipitaka/an/an06/an06.063.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN6_63.html"
 drive_links:
-  - "https://drive.google.com/file/d/1Hk_01C0OVj8PYOcyJWrxryO9BhIUWD0P/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FPDKwXTR5lNTy5G_WngZLrUfNWBNG0Lj/view?usp=drivesdk"
 course: vipassana
 tags:
   - nibbana

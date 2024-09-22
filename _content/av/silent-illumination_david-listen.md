@@ -3,7 +3,7 @@ title: "Silent Illumination"
 authors:
   - "David Listen"
 drive_links:
-  - "https://drive.google.com/file/d/17YkFu2aSk-nqtpCWT3HIO6Yi0bAWAK6A/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1dmGDKDrAeM3eng6IsvtFSWqr6-DZQP1f/view?usp=drive_link"
 course: sati
 year: 2018
 tags:

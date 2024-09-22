@@ -2,8 +2,8 @@
 title: "Nibbāna"
 authors: [bodhi]
 formats: [pdf]
-source_url: "https://drive.google.com/file/d/1XXNh11FJSZcPVBSX-H9eP586u86E3EoD/view?usp=drivesdk"
-drive_links: ["https://drive.google.com/file/d/1-RiEQMpqM3cGULi8kJEgmsU87PTfpqXv/view?usp=drivesdk"]
+source_url: "https://drive.google.com/file/d/1rDWIo2RnaQwOHaLSp5-jiAlc3r-dTvHF/view?usp=drivesdk"
+drive_links: ["https://drive.google.com/file/d/1zbmCHu3EdblIcTf8mV5NosC-fM5pJ0o7/view?usp=drivesdk"]
 external_url: "https://www.dhammatalks.net/Books16/Bhikkhu_Bodhi-Nibbana.pdf"
 year: 1981
 course: nibbana

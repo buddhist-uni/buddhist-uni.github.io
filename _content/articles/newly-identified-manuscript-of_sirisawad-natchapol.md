@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxiv/Mah%C4%81pr%C4%81tih%C4%81ryas%C5%ABtra%20in%20the%20Gilgit%20Buddhist%20Manuscript.pdf"
 source_url: "https://iriab.soka.ac.jp/en/publication/aririab.html"
 drive_links:
-  - "https://drive.google.com/file/d/1mHqGWzXBd9hOEk-d5nYuXIIUFnzSmJbQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1v3D7lmjMMk-e8njODhZqeb-VtkgM73MP/view?usp=drivesdk"
 course: indian
 tags:
   - manuscripts

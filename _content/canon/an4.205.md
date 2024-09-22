@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.205"
 external_url: "https://suttacentral.net/an4.205/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/17LY03dKSkHiqWbVi26XV1AxENA3ywXnK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sC2lNMu-qq462ksO0OaW-CnHHxihQJBk/view?usp=drivesdk"
 course: speech
 tags:
   - social

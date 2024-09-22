@@ -1,7 +1,7 @@
 ---
 title: "The Pāli Language: Level 1"
 subtitle: "A Self-Paced, Online Class"
-google_doc_id: 104dpGWsV0Ubu8BU7WvWxhpIIe9Vz7Dev
+google_doc_id: 1zyIXaQDs9uF6eHpnVPZcSYxAO6ezS8SE
 description: "A gentle introduction to the Pāli Language suitable for everyone, based on Lily DeSilva's excellent Primer and taught by the Most Venerable scholar, Bhikkhu Bodhi."
 lecturers:
   - bodhi
@@ -41,7 +41,7 @@ This course doesn't assume any prior knowledge of linguistics or classical langu
 
 Bhikkhu Bodhi will guide us through _DeSilva_ in 26, 2-hour lectures.
 
-In addition to the textbook, there are [a number of handouts](https://drive.google.com/drive/folders/1wiMJygvSGTaivFqmKSihI__IGrzGwCJy){:target="_blank" ga-event-value="1"} that Bhikkhu Bodhi provided and will reference in his lectures, so be sure to download those too.
+In addition to the textbook, there are [a number of handouts](https://drive.google.com/drive/folders/1lXqLt7QTMVq6iYuMEIVhOFcz6hezk7Hu){:target="_blank" ga-event-value="1"} that Bhikkhu Bodhi provided and will reference in his lectures, so be sure to download those too.
 
 Note that significant homework will assigned between each lecture. As these assignments are the bulk of the learning for the course, please be sure to do them.
 

@@ -4,7 +4,7 @@ translator: bodhi
 slug: "sn.004.018"
 external_url: "https://suttacentral.net/sn4.18/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1YeZo58F-0uEKChaWIFrtn8wdhAaex24O/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zLbTI4sq-ScsDyGm0XCVf1lJjkDyq52T/view?usp=drivesdk"
 course: buddha
 status: featured
 tags:

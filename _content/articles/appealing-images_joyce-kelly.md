@@ -5,7 +5,7 @@ authors:
 external_url: "https://drexel.edu/~/media/Files/histpol/Publications/JoyceSSS.ashx?la=en"
 source_url: "https://doi.org/10.1177/0306312705050180"
 drive_links:
-  - "https://drive.google.com/file/d/1n4zugz3BPM74jQk0Y_AdDPgAXqlSFfV2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w1_tk1L9dqxLjQKf2M6TWScQ_IzKtSCZ/view?usp=drivesdk"
 course: body
 status: featured
 tags:

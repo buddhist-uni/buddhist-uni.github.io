@@ -4,7 +4,7 @@ authors: [anandabodhi]
 year: 2019
 month: apr
 external_url: "https://dharmaseed.org/teacher/379/talk/55668/"
-drive_links: ["https://drive.google.com/file/d/1GEUVYAb7YPKSQYMg1N2PEnaWsnWsvdEh/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1xJibFyxOkDBqt6V_lOgFCl8pr-2Ud5JU/view?usp=drivesdk"]
 formats: [mp3]
 course: nibbana
 tags:

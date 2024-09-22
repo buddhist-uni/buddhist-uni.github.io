@@ -3,7 +3,7 @@ title: "AN 5.75: Warriors (1)"
 slug: "an.005.075"
 external_url: "https://suttacentral.net/an5.75/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1XVXMJ0S4wU-VU-cihgxNZhPOoPQTKHCs"]
+drive_links: ["https://drive.google.com/file/d/1uFJNNUFOn7w1yq92c2b7crHtAnAQGfA5"]
 course: monastic-advice
 tags:
   - an

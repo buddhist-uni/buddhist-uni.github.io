@@ -4,7 +4,7 @@ slug: "an.004.110"
 translator: sujato
 external_url: "https://suttacentral.net/an4.110/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1eyehF8OJVaj9lR3QfZgHq5cjhe6nWYlM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P2V26VQ2iD51GzbozMbJpxvEb2_SJAI7/view?usp=drivesdk"
 course: imagery
 tags:
   - an

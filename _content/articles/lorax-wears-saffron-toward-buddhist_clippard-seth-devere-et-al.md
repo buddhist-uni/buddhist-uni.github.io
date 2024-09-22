@@ -5,7 +5,7 @@ authors:
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2011/06/Clippard1.pdf"
 editor: "Jordan Johnson"
 drive_links:
-  - "https://drive.google.com/file/d/1Y3IZj45vk4oK1U7kYHtb1XrWLslzABJI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1slrHsRwvaAjO-jAi9H7bYv9AVxUsHm_6/view?usp=drivesdk"
 course: climate-change
 tags:
   - nature

@@ -2,7 +2,7 @@
 title: "After Nibbana"
 authors: [yuttadhammo]
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/ask-a-monk/110510_AfterNibbana.mp3"
-drive_links: ["https://drive.google.com/file/d/1FNeIlKIGKbhph1gLCyVar4dEH35cOAe8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1UOOBu3d2QbUjehAEDRgJe8ujGhimIQdW/view?usp=drivesdk"]
 course: nibbana
 tags:
   - arahant

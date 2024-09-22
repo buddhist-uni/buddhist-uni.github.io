@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.070"
 external_url: "https://suttacentral.net/an8.70/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Y-K6et8-npS6GvnSuA7hv_8ZzWWBzUmx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13jFEWkKCTJSx7c8ByHNEWurHw2unvnFR/view?usp=drivesdk"
 course: cosmology
 tags:
   - geology # might move here, idk

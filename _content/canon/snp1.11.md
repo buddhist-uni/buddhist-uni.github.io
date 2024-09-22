@@ -5,7 +5,7 @@ slug: "snp.1.11"
 subcat: poetry
 external_url: "https://suttacentral.net/snp1.11/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1p8ePnSCVHkAtxGNRLpXkfRHgt8uQ4Kxi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16QyCl33URyzAgVttAWaG1eytG6i6ouLm/view?usp=drivesdk"
 course: body
 status: featured
 tags:

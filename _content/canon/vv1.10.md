@@ -4,7 +4,7 @@ slug: "vv.1.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-10/"
 drive_links:
-  - "https://drive.google.com/file/d/1h_GN0gYXCNymWTJv_qFnl7txnSez3M75/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1F6vZzvoJMmABrkcJ7My03Y07PFBNg98F/view?usp=drivesdk"
 course: pali-canon
 tags:
   - vv

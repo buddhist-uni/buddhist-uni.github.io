@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://youtu.be/ej-zcC-qEuw"
 drive_links: 
-  - "https://drive.google.com/file/d/1aAZ1tkeo6kJm-f46779PR0WqCzCmoiua/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1483AbMlu6Bao8_SyEKxpZTrLVjmj-Peb/view?usp=drivesdk"
 formats: [ogg]
 course: feeling
 tags:

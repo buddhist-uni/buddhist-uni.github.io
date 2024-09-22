@@ -1,7 +1,7 @@
 ---
 title: "Management of Sangha Property"
 authors: ["Bhante Varado"]
-drive_links: ["https://drive.google.com/file/d/12jWcykiHL7jGyxLbo_fAXsiGrgse0EBT/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1XEk01fyCNe2kX3OorDzbiLhRw6qNEGL2/view?usp=drivesdk"]
 external_url: "https://www.suttas.net/english/vinaya/patimokkha-analysis-and-explanation/appendix-15-management-of-sangha-property.php"
 year: 2008
 course: vinaya-studies

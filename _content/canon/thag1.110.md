@@ -5,7 +5,7 @@ slug: "thag.01.110"
 subcat: poetry
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag1_110.html"
 drive_links:
-  - "https://drive.google.com/file/d/1pbbbKH8vIuWKH-s1NkbZ6q4U7A_IfoPU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nP5WCrxXFToB_hiXM0xhNUALRkMFJLhI/view?usp=drivesdk"
 course: nature
 tags:
   - seclusion

@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/bForum/v4/01Barrett.pdf"
 source_url: "https://doi.org/10.4324/9780203985403-7"
 drive_links:
-  - "https://drive.google.com/file/d/1yB0mQ5DqnwYU6J9Yyoz5hienUPb4JZZg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hFyflK7rYnuBP-6aIqmweGWGQfndIDDf/view?usp=drivesdk"
 course: medieval
 tags:
   - chinese-roots

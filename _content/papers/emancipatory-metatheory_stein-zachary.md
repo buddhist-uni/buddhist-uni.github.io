@@ -10,7 +10,7 @@ address: "New York"
 publisher: "Routledge"
 editor: "Roy Bhaskar"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1VeSYPATQTeJGyDHHHa6r43xPeUAZIAY7/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ZCyDsMfsLTQpIlLgxiIp4UgTuqkGPvmX/view?usp=drivesdk"]
 course: becon
 tags:
   - society

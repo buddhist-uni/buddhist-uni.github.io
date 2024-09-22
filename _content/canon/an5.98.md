@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.098"
 external_url: "https://suttacentral.net/an5.98/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1DShGubRLItYmCYlCiSyUzGm-SzZzCSaD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wK8PkI-Ov9RRAhMKUGkoV9Ev6JTBndHJ/view?usp=drivesdk"
 course: samadhi
 tags:
   - anapanasati

@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://youtu.be/puytcR2XRag"
 drive_links:
-  - "https://drive.google.com/file/d/1xByaTXFcNif5VyzMNUITZYaggfiYzCZK/view?usp=sharing"
+  - "https://drive.google.com/file/d/1I3_z8ujRsXnoF3gea8KvDt7tOOaLTlyN/view?usp=sharing"
 course: problems
 tags:
   - path

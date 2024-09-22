@@ -6,7 +6,7 @@ reader: masters-kamala
 external_url: "https://www.suttareadings.net/audio/dhp.01.kmas.mp3"
 formats: [mp3]
 drive_links:
-  - "https://drive.google.com/file/d/1B03L7fl_dSQqnycknhx2yTxyxdmLCrM_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1so7vhXa2JTLsLjvyl3mCfs5bD8w82g8U/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

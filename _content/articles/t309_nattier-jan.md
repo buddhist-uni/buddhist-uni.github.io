@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xiii/On%20T309%20-%20Nattier.pdf"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XIII%20(2010).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1oCYxO0iczPO5TwZcrNwKxV3q9obeTUFl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hREvCE6FDYY6m99VmtvT7PgiCOMGQGDI/view?usp=drivesdk"
 course: east-asian-roots
 status: featured
 tags:

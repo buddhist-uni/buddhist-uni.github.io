@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh107_Ireland_Samyutta-Nikaya-Anthology-I.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1-WCYxdLN0LGLX2oLw617wRFSn15ydt8A/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1l3sqMbnzSHlWJUTMZUMnx8dRsO5Ig2b-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Axm4SM4T4cR9UEIfzAYDOTjBjUWlbwww/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aB46jh6INd0NHWe0NqkcYzKewn545LNT/view?usp=drivesdk"
 course: sutta
 status: featured
 tags:

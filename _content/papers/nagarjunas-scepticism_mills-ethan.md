@@ -4,7 +4,7 @@ authors:
   - "Ethan Mills"
 editor: "Oren Hanner"
 drive_links:
-  - "https://drive.google.com/file/d/1GmDlCuOAVeiHef9jm8aF9QWbxnmfzogk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vyNfVOga2Qtzdv89ddWGWryUjU8LSYlT/view?usp=drivesdk"
 file_links:
   - "exclusive_01/N%C4%81g%C4%81rjuna%E2%80%99s%20Scepticism%20about%20Philosophy.pdf"
 course: view

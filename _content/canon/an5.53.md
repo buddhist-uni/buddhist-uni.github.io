@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.053"
 external_url: "https://suttacentral.net/an5.53/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1_-TJzrvhz--G45IQNuXsIRFeEKiMVesC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JIqyU8LQ6xsy924hxhBA1q2pJ4LgCrOv/view?usp=drivesdk"
 course: sati
 tags:
   - problems

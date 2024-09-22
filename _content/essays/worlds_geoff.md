@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.dhammatalks.org/books/uncollected/Worlds.html"
 alternate_url: "https://www.dhammatalks.org/Archive/Writings/CrossIndexed/Uncollected/MiscEssays/Worlds.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1KNL7kl4KTFkx57bOQ9ulLJ7YFyjvSzN7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1d8lirgGQfq5sii6ngqPJ380mbHzkI3YX/view?usp=drivesdk"
 course: view
 tags:
   - materialism

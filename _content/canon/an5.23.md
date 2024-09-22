@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.023"
 external_url: "https://suttacentral.net/an5.23/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1D_yFzYvcNqmK4HtLs71qqxIwYQe5kYCj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15khs-9fDat1FoqZwSzHEJO5DzBILH9tn/view?usp=drivesdk"
 course: samadhi
 status: featured
 tags:

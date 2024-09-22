@@ -4,7 +4,7 @@ authors:
   - chokyi-lodro
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/instruction-on-great-perfection"
 drive_links:
-  - "https://drive.google.com/file/d/1zRyGyAJIvmomir57yLr8dZnCxAOcss--/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jIDmwGVCpv087HVmcuX_djsYdvSeqRHm/view?usp=drivesdk"
 course: time
 tags:
   - tantric

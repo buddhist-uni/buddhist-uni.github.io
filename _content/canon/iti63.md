@@ -3,7 +3,7 @@ title: "Iti 63 Addhā Sutta: Times"
 subcat: poetry
 slug: "iti063"
 drive_links:
-  - "https://drive.google.com/file/d/1fH36BdjiGNFiYdddD2ekIPSlSpVbBxte/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IWo8coqqReUfad6KUwY8yaYFcNH2xOh3/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - iti

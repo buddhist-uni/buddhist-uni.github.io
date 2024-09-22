@@ -9,7 +9,7 @@ authors:
 external_url: "https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=2791&context=psych_facpub"
 source_url: "https://doi.org/10.1007/s12671-019-01165-z"
 drive_links:
-  - "https://drive.google.com/file/d/1PO0I6B88q_GnNMcCxZvLB0yR3V2tom3k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1m_LgdBRMLqrEXefEsbKKIS5Fylp0IEyd/view?usp=drivesdk"
 course: sangha
 tags:
   - meditation

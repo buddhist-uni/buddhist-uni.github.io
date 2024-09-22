@@ -9,4 +9,4 @@ A series of three short anthologies from the Saṃyutta Nikāya by different tra
 
 Taken as a whole, these three booklets form a substantial (about 150 page) anthology of the SN, but when compared, the three anthologies also make for an interesting contrast in translation styles.
 
-The sutta index for the three volumes can also be found [as a PDF on Google Drive](https://drive.google.com/file/d/1E0-9cTAeDZ5ZjEUzQW1uAMkRanwz_0Im/view?usp=drivesdk).
+The sutta index for the three volumes can also be found [as a PDF on Google Drive](https://drive.google.com/file/d/1DeATeCIMuHbR9zSfjb2_RE0tmIffscjn/view?usp=drivesdk).

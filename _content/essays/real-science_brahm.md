@@ -3,7 +3,7 @@ title: "Buddhism: The Only Real Science"
 authors: [brahm]
 external_url: "https://web.archive.org/web/20210426025932/https://www.budsas.org/ebud/ebdha264.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1JkIZWAjFZs3SA3T13UasDSPuDh_WR9lQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xnEIePzFzh_TT3v6jqdhMUu6z1GYExu6/view?usp=drivesdk"
 year: 2004
 month: feb
 course: function

@@ -6,7 +6,7 @@ editor: "J. Mark G. Williams and Jon Kabat-Zinn"
 external_url: "https://ibc-elibrary.thanhsiang.org/files/public/01_mindfulness_canonical_bhikku_bodhi.pdf"
 source_url: "https://doi.org/10.1080/14639947.2011.564813"
 drive_links:
-  - "https://drive.google.com/file/d/1P1afgaBfX6ZN20ehaG8ej1UKRag5BzkM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PEqkbWCr9zomvY8tcaPhsFQWLngp42HT/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1v8J_7dJGp8nO4LuWk7bW1_-lPR-jFQOf/view?usp=drivesdk"
 formats: [pdf, mp3]
 course: sati

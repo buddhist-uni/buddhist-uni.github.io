@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vitakka.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1OoNIitHbYUGuN20HB_FDFj--etlvo4xR/view?usp=sharing"
+ - "https://drive.google.com/file/d/1rl2ahikbVKWSz9FCPVCC0xEFEnwyUFqD/view?usp=sharing"
 course: thought
 tags:
   - jhana

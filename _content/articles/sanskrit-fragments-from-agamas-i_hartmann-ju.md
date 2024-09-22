@@ -6,7 +6,7 @@ source_url: "https://doi.org/10.5282/ubm/epub.21371"
 actual_source: "http://www.asiainstitutetorino.it/Indologica/index-volume23-24.asp"
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Sanskrit%20Fragments%20from%20the%20Agamas%20%28I%29_%20the%20Angulimalasutra_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-TbojjxWPxhnq7gGj4-x95hm-4BS32Hm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_GT7snCyRKqXMlUQZ_BJXxhhv8KoQfNr/view?usp=drivesdk"
 course: agama
 tags:
   - characters

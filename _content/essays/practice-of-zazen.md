@@ -2,7 +2,7 @@
 title: "The Practice of Zazen"
 external_url: "https://www.sotozen.com/eng/library/leaflet/practice/index.html"
 drive_links:
-  - "https://drive.google.com/file/d/1eDl3hZq3eXNvnmG3-HL-Urmj-PSZbiEy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1c1ICTDXjVklOtSsDdrg6BFOOwzWVTEAV/view?usp=drivesdk"
 course: east-asian
 tags:
   - meditation

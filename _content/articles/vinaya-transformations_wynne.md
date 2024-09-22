@@ -4,7 +4,7 @@ authors:
   - wynne
 external_url: "http://jocbs.org/index.php/jocbs/article/view/218"
 drive_links:
-  - "https://drive.google.com/file/d/15Qs2NSKLbdRSB8uLTk8gBB9x8xm2dwpS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hm1iCw_luStPtxItsTlkkI51xJhgB-cn/view?usp=drivesdk"
 course: sects
 tags:
   - vinaya-pitaka

@@ -5,7 +5,7 @@ authors:
 source_url: "https://journals.equinoxpub.com/BSR/issue/view/903"
 file_links: ["exclusive_01/Synonyms%20for%20Nibbāna%20in%20Tibetan%20-%20Peter%20Skilling.pdf"]
 drive_links:
-  - "https://drive.google.com/file/d/1K_V_GCkX7VDDmsgJtrGez6op5nCa7_pp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NAahDy73SuMCN39MMIpb4Y7c9VzJg-G2/view?usp=drivesdk"
 course: nibbana
 tags:
   - mahayana-roots

@@ -8,8 +8,8 @@ address: "Pakchong, Thailand"
 external_url: "https://www.abhayagiri.org/books/617-stillness-flowing"
 formats: [pdf, epub, mp3s]
 drive_links:
-  - "https://drive.google.com/file/d/18Dq1HcpRzwsOoqUAarOix4Z6KOi9e6fg/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1pXE5KYu_Xw1Cy3gx5p0FBRP2i0Rg8mcv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1581qqLqmVvDAAJRk0_oicy7taAu1Zmr9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bKJASz33mRqXMyfPqO0Urwxrth2J6vx9/view?usp=drivesdk"
   - "https://www.jayasaro.panyaprateep.org/en/audio-album/9"
 status: featured
 olid: OL32034206M

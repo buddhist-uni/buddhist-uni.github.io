@@ -5,7 +5,7 @@ slug: "sn.007.012"
 subcat: poetry
 external_url: "https://www.dhammatalks.org/suttas/SN/SN7_12.html"
 drive_links:
-  - "https://drive.google.com/file/d/1tDIws1oWv24qYz1UjxryRI-1RP-z-9qz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-kj6Z5mvx_DYoqzlUBifIaigX6eFtsVO/view?usp=drivesdk"
 course: cosmology
 tags:
   - canonical-poetry

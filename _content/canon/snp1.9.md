@@ -5,7 +5,7 @@ slug: "snp.1.09"
 subcat: poetry
 external_url: "https://www.dhammatalks.org/suttas/KN/StNp/StNp1_9.html"
 drive_links:
-  - "https://drive.google.com/file/d/1_eJzOBzg2f5du12WGPoE5l7giCczQ2T1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mtFmqDrUMammprlawf8zBSR5ZMxdEwKk/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - imagery

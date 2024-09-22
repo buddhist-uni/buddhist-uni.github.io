@@ -8,7 +8,7 @@ pages: "247--266"
 publisher: "Anchor Books"
 year: 1983
 drive_links:
- - "https://drive.google.com/file/d/1ROJszDDsnMqW9VVOg92Pz6H9l1FXXjZR/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1gPQXb_2e0EN9HlJ56Furuq8cmNBSddCT/view?usp=drivesdk"
 course: sangha
 tags:
   - academic

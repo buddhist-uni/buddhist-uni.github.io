@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/9088/10561/11820"
 source_url: "https://doi.org/10.1558/bsrv.33573"
 drive_links:
-  - "https://drive.google.com/file/d/1ZWmmlqLLI4YOAMU0Hrg6SUkYhosIIsl4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1317O-gwHw2YRQYtdPigV2bdT8CA2jg4v/view?usp=drivesdk"
 course: hermeneutics # 2.5 ⭐: annoyingly written
 tags:
   - pali-commentaries # maybe move here?

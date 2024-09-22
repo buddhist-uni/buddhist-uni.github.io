@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.168"
 external_url: "https://suttacentral.net/an5.168/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1GHFtj7LecNejRlhy3rE7jLS-X0Yq7fNT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gh-PcEscfE2USBFz5c6qssYv0fYnBysh/view?usp=drivesdk"
 course: samadhi
 tags:
   - path

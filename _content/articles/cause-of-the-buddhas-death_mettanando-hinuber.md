@@ -5,7 +5,7 @@ authors:
   - hinuber-oskar-v
 external_url: "https://archive.org/download/jpts-xxvi-2000/The%20Cause%20of%20the%20Buddha_s%20Death%20-%20Mettanando%20and%20Hinu%CC%88ber_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1uA2Tk5XFdhLoIglskfezLdA1OUlbEpE7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1asJCNjsxSAD7DbsSTqQtVRO4fNT4t8YD/view?usp=drivesdk"
 source_url: "https://archive.org/details/jpts-xxvi-2000/The%20Cause%20of%20the%20Buddha_s%20Death%20-%20Mettanando%20and%20Hinu%CC%88ber"
 course: buddha
 tags:

@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/patrul-rinpoche/advice-alak-dongak"
 drive_links:
-  - "https://drive.google.com/file/d/18SOadBdfDPnmOzLfUzEYPsFY9ojll2GD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NjQDqD-LoyEewlZ5a4xz-D1FgoU8o3Sf/view?usp=drivesdk"
 course: monastic
 tags:
   - seclusion

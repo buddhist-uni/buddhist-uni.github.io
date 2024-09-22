@@ -4,7 +4,7 @@ authors:
   - hinuber-oskar-v
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/23450/17206/"
 drive_links:
-  - "https://drive.google.com/file/d/1TQ4C9KoPez1BS5rOb93xU8fPB0JYLvR6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1V3NHrSfVMWx7k6_nJpcg9f60wooJ5_iU/view?usp=drivesdk"
 course: theravada
 tags:
   - pali-commentaries

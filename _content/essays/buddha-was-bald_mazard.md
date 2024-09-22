@@ -1,7 +1,7 @@
 ---
 title: "The Buddha Was Bald"
 authors: ["Eisel Mazard"]
-drive_links: ["https://drive.google.com/file/d/1cNrMXAURfF1f3eGfQclakifC0za6bXzy/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1DqSLmZLcfyAj31RXKdwVQ65PE-3NcByJ/view?usp=drivesdk"]
 external_url: "https://medium.com/@eiselmazard/the-buddha-was-bald-a25589c26ebe"
 year: 2010
 address: "Phnom Penh, Cambodia"

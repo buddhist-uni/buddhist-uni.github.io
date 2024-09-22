@@ -7,7 +7,7 @@ external_url: "https://www.stirringandstilling.org/home.html"
 source_url: "https://soundcloud.com/dharmasongs/sets/stirring-and-stilling"
 drive_links:
   - "https://drive.google.com/file/d/1et_9xLkDHeOKRXUcKT5K6OsLTnVQL8Eq/view"
-  - "https://drive.google.com/drive/folders/1XHX1_Ld927gJaF-NgO27y7CXzt8ePohG"
+  - "https://drive.google.com/drive/folders/1K28cz-J4SaO-4WrklGf25ro7df75h2hP"
 formats: [pdf, MP3s]
 status: featured
 course: cambodian

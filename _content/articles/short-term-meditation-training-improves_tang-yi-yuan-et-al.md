@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/104/43/17152.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.0707678104"
 drive_links:
-  - "https://drive.google.com/file/d/1d-x-yqsRXu0-YMP31pJH3MAYRiikbijb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12_Xle2jFTg4_hGmoC13App_kY1CAVVCj/view?usp=drivesdk"
 course: meditation
 tags:
   - academic

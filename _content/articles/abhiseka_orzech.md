@@ -4,7 +4,7 @@ authors:
   - "Charles D. Orzech"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-13/07Orzech.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1FyyYPChIPWQS1cz0l7AUfFncOfOlStyD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/135pw_WpSfk7Fki2XxJZ_WGgg4rFzw6LH/view?usp=drivesdk"
 course: tantric
 tags:
   - chinese-roots

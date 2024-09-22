@@ -6,7 +6,7 @@ editor: "Dave James"
 translator: "Tone Jinavamso"
 external_url: "https://web.archive.org/web/20220714000708if_/https://www.ahandfulofleaves.org/documents/Normality_LPTeean_2009.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ksqGKZHMRZn2OjtLSbzFVo-l5Qa6QnJe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SWmHVnLWpdtBffU1WvcYaVvAPM4MCaXM/view?usp=drivesdk"
 course: thai
 tags:
   - sati

@@ -3,7 +3,7 @@ title: "AN 3.63: Venāga"
 slug: "an.003.063"
 translator: bodhi
 external_url: "https://suttacentral.net/an3.63/en/bodhi"
-drive_links: ["https://drive.google.com/file/d/1jnPBXjNIR_Y9bPoLyWtBuTRwvj5yR3nH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1AIV9GCKx49WT-O5slF3apBJR1r7-MK_b/view?usp=drivesdk"]
 course: samatha
 tags:
   - an

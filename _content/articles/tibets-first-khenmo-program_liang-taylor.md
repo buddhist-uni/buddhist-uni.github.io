@@ -3,7 +3,7 @@ title: "Tilling the Fields of Merit: The Institutionalization of Feminine Enligh
 authors:
   - "Jue Liang"
   - "Andrew S. Taylor"
-drive_links: ["https://drive.google.com/file/d/1FKepkVOwWFvKEey1iC5hxLJfjHqv7dMl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1v1ixOIW0DpFcQFgjnu3gEK4HyXb684Ll/view?usp=drivesdk"]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2020/08/Liang-and-Taylor__20_F-1.pdf"
 status: featured
 journal: jbe

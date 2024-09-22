@@ -6,7 +6,7 @@ authors:
 subcat: podcast
 external_url: "https://onbeing.org/programs/margaret-noodin-gimaazinibiiamoon-a-message-to-you/"
 drive_links:
-  - "https://drive.google.com/file/d/1beFLcPbu3hrik0IDDjvjw5HsSp7Nu6V_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QDssGERNUxculoInmNnP8xudIt97lVbl/view?usp=drivesdk"
 course: communication
 tags:
   - music

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.mdpi.com/2077-1444/11/8/381/pdf"
 source_url: "https://doi.org/10.3390/rel11080381"
 drive_links:
-  - "https://drive.google.com/file/d/1KVe8sQLgn4cCUxwDqhqBV0nsYtwrEyQZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1n_Em32XVt4V-6ZVVpVgUcmMFFmhs1RQ0/view?usp=drivesdk"
 course: nature
 tags:
   - emptiness

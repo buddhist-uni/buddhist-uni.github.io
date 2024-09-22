@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/10/the-big-buddhas-of-bamiyan/"
 drive_links:
-  - "https://drive.google.com/file/d/1H5LWALzpY6CU5mdVROoa86-qBBFJOFbz/view?usp=sharing"
+  - "https://drive.google.com/file/d/1KRrlqdA0G1QlopAzuIiFpLyWNYEnlWiZ/view?usp=sharing"
 course: medieval
 tags:
   - bart

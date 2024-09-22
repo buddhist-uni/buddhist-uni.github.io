@@ -7,7 +7,7 @@ authors:
   - "Tanya Henderson"
 external_url: "https://buddhistsolutions.transistor.fm/3"
 drive_links:
-  - "https://drive.google.com/file/d/1SCacC67BUZpPgtWaKTVHP5sqNQGgrish/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17QoiMOOxb8JjE1P2IjcCpmDeazEnN8Ou/view?usp=drivesdk"
 course: american
 tags:
   - problems

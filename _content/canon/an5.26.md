@@ -2,7 +2,7 @@
 title: "AN 5.26: Opportunities for Freedom"
 translator: sujato
 slug: "an.005.026"
-drive_links: ["https://drive.google.com/file/d/19DuRGpqGRiQyJqIoRdhJ0JUTdOpV0Rf8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1WAhX_rHkru3-eDt_UVlU7tBMX575RSdl/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an5.26/en/sujato"
 year: 2018
 course: sutta

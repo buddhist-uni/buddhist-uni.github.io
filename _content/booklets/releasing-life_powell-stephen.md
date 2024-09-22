@@ -6,7 +6,7 @@ source_url: "http://ftp.budaedu.org/ebooks/pdf/EN175.pdf"
 external_url: "https://archive.org/download/releasing-life-stephen-powell/Releasing%20LIfe%20-%20Stephen%20Powell_text.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1f3WEMphJLrLIVnasjzMSNrnX-SJc2j_2/view?usp=sharing"
+  - "https://drive.google.com/file/d/1gIEzlYOdGLjWo_VTHGVzFpHziyGUs0hH/view?usp=sharing"
 course: animals
 tags:
   - form

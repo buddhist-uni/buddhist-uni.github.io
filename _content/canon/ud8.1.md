@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud8.1"
 external_url: "https://suttacentral.net/ud8.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1CXBBQcBp7zNjpnZLkm9_o9CdK6a4B3Lc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vWxQ5SqScI5xyUEM1nWwzGGThK-ow4L2/view?usp=drivesdk"
 course: emptiness
 tags:
   - samadhi

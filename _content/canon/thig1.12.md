@@ -5,7 +5,7 @@ slug: "thig.01.12"
 subcat: poetry
 external_url: "https://suttacentral.net/thig1.12/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/115sQ_el1XLOckCrpnxNaq1TCuJ8eAHZX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YwJQowJvht3zBhhAWAJqvMrK6XQ_Bn4G/view?usp=drivesdk"
 course: meditation
 tags:
   - desire

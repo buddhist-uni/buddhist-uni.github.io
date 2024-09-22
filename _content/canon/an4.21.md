@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.021"
 external_url: "https://suttacentral.net/an4.21/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1CVv1v88PiUUEJOPeb4XoXhLfAtaf9lKx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HLnnUdnAygSGWJGiC6FZZmQZ2N8JtCI3/view?usp=drivesdk"
 course: sangha
 status: featured
 tags:

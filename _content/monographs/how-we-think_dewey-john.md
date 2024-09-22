@@ -6,7 +6,7 @@ external_url: "https://www.gutenberg.org/ebooks/37423"
 source_url: "https://archive.org/details/howwethink00deweiala/page/v/mode/1up"
 drive_links:
   - "https://play.google.com/store/books/details?id=FmhIrCNdttsC"
-  - "https://drive.google.com/file/d/1t3f2dSTwYQMFhq8HZEwpNOSImqWh5Odc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NW6w78d3QxKxHJC5eqlWGreMnvgMIK0V/view?usp=drivesdk"
 formats: [GBook, epub]
 tags:
   - intellect

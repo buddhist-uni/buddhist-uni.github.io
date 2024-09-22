@@ -4,7 +4,7 @@ authors:
   - "Elizabeth Weissberg"
 external_url: "https://www.theguardian.com/us-news/2023/may/17/buddhism-arkansas-retreat-meditation-mindfulness"
 drive_links:
-  - "https://drive.google.com/file/d/1tBbdLotTN7bjAx7LAn9ioatJEIORSugV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1O1cvtQFMmRIBcAXx3ASm_XY7fIdNwGpA/view?usp=drivesdk"
 course: west
 tags:
   - western-tibetan

@@ -3,7 +3,7 @@ title: "A First-Person Account of Using Mindfulness as a Therapeutic Tool in the
 authors: [pigni-a]
 external_url: "https://static1.squarespace.com/static/5a09fb531f318de485b9921e/5a0a02aa02d7bc23190b0726/5a0a028002d7bc23190b00b9/1510605440679/Mindfulness-in-Palestine.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1iX9ALdu6jtiRZSrV4gGDrSpDg9ACcQvl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1E_377KpKV6EiMbCoxA3GJNis2kip8f6l/view?usp=drivesdk"]
 year: 2010
 journal: "the Journal of Child and Family Study"
 volume: 19

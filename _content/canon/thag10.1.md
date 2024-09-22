@@ -5,7 +5,7 @@ slug: "thag.10.01"
 subcat: poetry
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag10_1.html"
 drive_links:
-  - "https://drive.google.com/file/d/1wBSvnl3MjnFHZKcXLNv5IAn7JmCDMA5z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1T9jbGjBQUCzt3uqE8omXbKQdxPuICF7U/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - characters

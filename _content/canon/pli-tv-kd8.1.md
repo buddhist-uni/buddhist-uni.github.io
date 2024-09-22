@@ -4,7 +4,7 @@ slug: "pli-tv-kd08.01"
 translator: brahmali
 external_url: "https://suttacentral.net/pli-tv-kd8/en/brahmali"
 drive_links:
-  - "https://drive.google.com/file/d/1IJl4a9wBvsulWJjL3asjrVMsKxCil8vr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y43X6SqoM9B9YL4SqNkKwtYZ8uEDzET2/view?usp=drivesdk"
 year: 2021
 status: featured
 course: characters

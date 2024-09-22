@@ -4,7 +4,7 @@ authors:
   - "Ashley Thompson"
 external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/54477/9781351026666_10.4324_9781351026666-25.pdf?sequence=1&isAllowed=y"
 drive_links:
-  - "https://drive.google.com/file/d/1FEx9RJjqYK8knvhtKRj_dvL0oTHhI2Zn/view?usp=sharing"
+  - "https://drive.google.com/file/d/1JQjJfPoIuTnzf32bjscChaLdVwtmLTIb/view?usp=sharing"
 status: featured
 course: medieval
 tags:

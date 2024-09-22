@@ -6,7 +6,7 @@ journal: bsr
 year: 2005
 volume: 22
 pages: "1--14"
-drive_links: ["https://drive.google.com/file/d/1h6ePgDhE5RVEf5iL9aprJdcCPVq25heN/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1YN8gUz2zHCQS1W4wRDWb7RvebtrQOfyt/view?usp=drivesdk"]
 course: agama
 tags:
   - sutta

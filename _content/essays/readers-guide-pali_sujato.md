@@ -1,7 +1,7 @@
 ---
 title: "A Reader's Guide to the Pāli Suttas"
 authors: [sujato]
-drive_links: ["https://drive.google.com/file/d/1bR-HqLM28jBrVD2TMc4th5ZwDae-AJk4/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1P8n05X5NTdT4vXcdvA-eyFh0V87YTRap/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/general-guide-sujato"
 year: 2019
 course: pali-canon

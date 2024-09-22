@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud4.1"
 external_url: "https://suttacentral.net/ud4.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1boQoNe88ViQv0Z7ewhWNLgDdkFqAMWJM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1eLhzcOA8pltTuyjR-0enrd225YMh4LXt/view?usp=drivesdk"
 course: path
 status: featured
 tags:

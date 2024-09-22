@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/1306702/files/112-144-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1173"
 drive_links:
-  - "https://drive.google.com/file/d/1wAFPsIZEqiupXURHUKpDAqk6WB0gD3ym/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XUgYK8ukIjcOg42ds1Gos-Kziqcy2Knj/view?usp=drivesdk"
 course: west
 tags:
   - academia

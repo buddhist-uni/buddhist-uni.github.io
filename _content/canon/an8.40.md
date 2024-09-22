@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.040"
 external_url: "https://suttacentral.net/an8.40/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1vq70QTiYeIJcjkpmDq3DC_LJBpRNMvMy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1O0kAJwJUBlX7e6O5BDzmY_ZBbBML3Iqu/view?usp=drivesdk"
 course: ethics
 status: featured
 tags:

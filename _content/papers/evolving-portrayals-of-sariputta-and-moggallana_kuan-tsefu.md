@@ -1,7 +1,7 @@
 ---
 title: "Evolving Portrayals of Sāriputta and Moggallāna: Psychic Potency vis-à-vis Wisdom and Concentration"
 authors: [kuan-tsefu]
-drive_links: ["https://drive.google.com/file/d/1y17dJew4nuTrQMiDATVNNobzgKuFKVTu/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1P9LXBJhTpgAi9EY-UwprzJKVoRC5VupV/view?usp=drivesdk"]
 external_url: "https://www.academia.edu/45182093/Evolving_Portrayals_of_Sāriputta_and_Moggallāna_Psychic_Potency_vis_à_vis_Wisdom_and_Concentration"
 booktitle: "Illuminating the Dharma: Buddhist Studies in Honour of Venerable Professor KL Dhammajoti"
 pages: "268--293"

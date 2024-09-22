@@ -3,7 +3,7 @@ title: "The Kāṇva Brāhmanas and Buddhists in Kosala"
 authors:
   - "Lauren M. Bausch"
 drive_links:
-  - "https://drive.google.com/file/d/1yACfw4CxS0bAyfF01aGSTpoEpHl_70yi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Lc0LanhmPyf9-F9BYoK54KT9lUd267gk/view?usp=drivesdk"
 external_url: "https://dx.doi.org/10.2143/JIABS.41.0.3285738"
 course: setting
 year: 2018

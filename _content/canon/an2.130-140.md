@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.002.130-140"
 external_url: "https://suttacentral.net/an2.130-140/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1P_mCRGJGExyUN0mLX2kGhJmOoex4S-JM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hyZRnSznxzi2lNN1fQ8jJi05y8-D32Sh/view?usp=drivesdk"
 course: thought
 tags:
   - an

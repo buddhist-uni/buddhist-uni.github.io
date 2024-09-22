@@ -5,7 +5,7 @@ authors:
 editor: "Gelong Thubten Gyatso and Ven. Constance Miller and Ven. Tenzin Tsomo"
 source_url: "https://www.scribd.com/document/405982931/Bodhisattva-Vows"
 drive_links:
-  - "https://drive.google.com/file/d/1qw_MwCZWb-fXSLDV6zyZ6gksr6FhqEYp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zMAUDBP3uFlCyFCPOrxxZkpHXolgB1Xf/view?usp=drivesdk"
 course: tantric
 tags:
   - bodhisattva

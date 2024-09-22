@@ -4,7 +4,7 @@ authors:
   - geoff
 external_url: "https://www.dhammatalks.org/Archive/Writings/CrossIndexed/Uncollected/MiscEssays/UnderYourSkin.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1KN9cM9gXOcTGYdRi4E6jksj8HsBSQ5z-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1J4ayzj9gSoE6r8G8VFfRay396GulwDRh/view?usp=drivesdk"
 course: body
 tags:
   - meditation

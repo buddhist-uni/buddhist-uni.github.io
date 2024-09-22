@@ -8,7 +8,7 @@ authors:
 external_url: "https://dspace.mit.edu/bitstream/handle/1721.1/124529/8c26ac9ce622bd3328a30d2ae636b05284c0.pdf"
 source_url: "https://doi.org/10.1177/0730888418759774"
 drive_links:
-  - "https://drive.google.com/file/d/1n4kIVC8OEOk2bMOhufPuTiv1aXnGuWn0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17x-aXhZ9JiJqhLbenlLEPoR8N74ghJ5K/view?usp=drivesdk"
 course: social
 tags:
   - gender

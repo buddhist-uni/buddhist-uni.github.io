@@ -4,7 +4,7 @@ slug: "iti027"
 translator: sujato
 external_url: "https://suttacentral.net/iti27/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1M_EsTiMGNlaFMLt3aCEKNB0dmh7nBIFE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GAMG22G-fdDAJmqloul2_A0x6ElpcmSP/view?usp=drivesdk"
 course: imagery
 tags:
   - social

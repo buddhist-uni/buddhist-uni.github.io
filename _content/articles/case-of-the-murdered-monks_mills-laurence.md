@@ -5,7 +5,7 @@ authors:
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1992_XVI.pdf"
 external_url: "https://archive.org/download/jpts-xvi-1992/The%20Case%20of%20the%20Murdered%20Monks%20-%20Laurence%20Mills_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1EzZ_lUnSk5yfcVvx0LzLgkCrUn5jiVDG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Uk7QUVBA3-qmlUFByAfVnyEgar_cegef/view?usp=drivesdk"
 course: vinaya-pitaka
 year: 1992
 tags:

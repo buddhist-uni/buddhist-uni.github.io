@@ -12,7 +12,7 @@ year: 2017
 file_links:
   - "exclusive_01/P%C4%81%E1%B9%83%C5%9Buk%C5%ABlika%20as%20a%20Standard%20Practice%20in%20the%20Vinaya.pdf"
 drive_links:
- - "https://drive.google.com/file/d/1FeplgUDbiBzGyizob1nIcV7CrY6-suLn/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/182KplxaqZBPGyQAEx2tm7SMFR-lfyydK/view?usp=drivesdk"
 course: sects
 tags:
   - historiography

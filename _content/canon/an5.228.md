@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.228"
 external_url: "https://suttacentral.net/an5.228/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1pKMjYqxBDMaVLODGGZXtHw_-2-Jcsexw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1INrOBITfgK7Wm7biNxDJc5TD-nBbDsRZ/view?usp=drivesdk"
 course: lay
 tags:
   - food

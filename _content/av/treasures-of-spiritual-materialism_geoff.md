@@ -4,7 +4,7 @@ authors:
   - geoff
 external_url: "https://www.audiodharma.org/talks/7074"
 drive_links:
-  - "https://drive.google.com/file/d/1MrhwBry-poiGHlx4UfxF-8nVOtuflsS9/view?usp=sharing"
+  - "https://drive.google.com/file/d/1WfLhSGKBUva18z1DR41a5P_MdrXo72Qx/view?usp=sharing"
 course: thought
 tags:
   - problems

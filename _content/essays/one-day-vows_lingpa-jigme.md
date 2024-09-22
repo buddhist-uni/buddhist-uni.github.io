@@ -6,7 +6,7 @@ translator: "Han Kop"
 editor: "Stefan Mang"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jigme-lingpa/one-day-vows"
 drive_links:
-  - "https://drive.google.com/file/d/1l8Q_jiM2k3vQz9nhPXKMYMZ7qoMTIcPV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Nn5T0NekYFFfYebOTnNWAoS_0YO5wfMJ/view?usp=drivesdk"
 course: tantric
 tags:
   - lay

@@ -4,7 +4,7 @@ authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammatthavinicchaya/index.htm"
 drive_links: 
-  - "https://drive.google.com/file/d/1fyw2SYIS6LpX2SRPuzslq-mw_hoG8jaz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/102m99wgy1L-gJy2XdKwgnvh67EwZnHSd/view?usp=drivesdk"
 course: theravada
 tags:
   - pali-language

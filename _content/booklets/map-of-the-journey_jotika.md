@@ -6,8 +6,8 @@ external_url: "https://www.buddhanet.net/pdf_file/mapjourney6.pdf"
 alternate_url: "https://archive.org/details/AMapOfTheJourney"
 source_url: "https://youtube.com/playlist?list=PLh6KRWf6dTsMg0csrvIyRdgayE3u7SVTU"
 drive_links:
-  - "https://drive.google.com/file/d/1n-orQOHaf__JrcJ9yzPnYEpT0u7oYX3M/view?usp=drivesdk"
-  - "https://drive.google.com/drive/folders/1rj9goAmtgr8rPduketx5pZlAIxK9GWaV"
+  - "https://drive.google.com/file/d/1TL_JAGgOZJNwbrnqj1A_d0Azqpm-czKm/view?usp=drivesdk"
+  - "https://drive.google.com/drive/folders/1eyKme3725YYis2Ml1v_TVYgDUiOFaVZk"
 formats: [pdf, mp3s]
 course: vipassana
 tags:

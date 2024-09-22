@@ -3,7 +3,7 @@ title: "Fragments of Reality"
 authors:
   - yuttadhammo
 drive_links:
-  - "https://drive.google.com/file/d/19877YnFpdTObm28iwUalZ7SrLcJtVtld/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MkbWaYvgjJYpSs3LGGqhugzwcIZ1_lge/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Fragments%20of%20Reality%20-%20Yuttadhammo.PDF"
 status: featured

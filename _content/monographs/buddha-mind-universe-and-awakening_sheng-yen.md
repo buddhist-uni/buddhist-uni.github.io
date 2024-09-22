@@ -5,8 +5,8 @@ authors:
   - "Edgar D. Mitchell"
 external_url: "https://www.shengyen.org/freebook/pdf/The_Buddha_Mind,_Universe,_and_Awakening.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/13vvsUb3Lwy-9dscRJ3GXLnsJlirIIBzb/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1iGVeo31NGVlyyE6vISL_hB3NE6HGTLWO/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1d6pzZgJARWFLRZ8rNOiekZgxN77pXpYW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JSKWjFoOqCTjOxyDdktW12cvpWVlVew7/view?usp=drive_link"
 course: dialogue
 tags:
   - origination

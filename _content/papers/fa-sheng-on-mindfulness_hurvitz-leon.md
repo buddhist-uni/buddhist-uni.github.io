@@ -5,7 +5,7 @@ authors:
 editor: "Minoru Kiyota"
 source_url: "https://doi.org/10.1515/9780824885984-011"
 drive_links:
-  - "https://drive.google.com/file/d/1gDFChm0mbXkWN7AP2UoBTuPNvxaY7TY-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MTyJRhZSwISGho9fSquF1FeQtGJFFb4i/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Fa-sheng%20Mindfulness%20-%20Leon%20Hurvitz.pdf"
 course: vipassana

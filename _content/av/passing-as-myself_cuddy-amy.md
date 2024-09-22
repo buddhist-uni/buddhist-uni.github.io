@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://www.storycollider.org/stories/2016/1/4/amy-cuddy-passing-as-myself"
 drive_links:
-  - "https://drive.google.com/file/d/1SrciLJKu-OueVTuJpCDNLLI-yE_a4CA3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JPPc3GivHQdUWfk17QC2vJveoDTZlT8O/view?usp=drivesdk"
 course: intellect
 status: featured
 tags:

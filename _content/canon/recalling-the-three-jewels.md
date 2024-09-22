@@ -3,7 +3,7 @@ title: "Noble Sūtra of Recalling the Three Jewels"
 translator: "Rigpa Translations"
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/sutra-recalling-three-jewels"
 drive_links:
-  - "https://drive.google.com/file/d/1mz4aI7H-omYjaOV7EmBnXAprnHwlrDnY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16MqJ0CWtZtqa2HKrGcQgTyD2rEygjgLL/view?usp=drivesdk"
 course: mahayana
 tags:
   - buddhism

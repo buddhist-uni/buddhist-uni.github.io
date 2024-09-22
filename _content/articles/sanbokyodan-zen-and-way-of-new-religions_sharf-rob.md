@@ -5,7 +5,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/03f1/3647a1ea10db5d2912b91fcff01bf0a29582.pdf"
 source_url: "https://doi.org/10.18874/jjrs.22.3-4.1995.417-458"
 drive_links:
-  - "https://drive.google.com/file/d/1pBKnUy0LWe8uhtxkMISvvyWwey9hL0HX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13fpHhPlY66s4eSib8TN5DqkA2DEzqRBa/view?usp=drivesdk"
 status: featured
 course: japanese
 tags:

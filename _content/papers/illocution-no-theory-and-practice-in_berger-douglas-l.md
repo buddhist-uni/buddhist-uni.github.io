@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.bu.edu/wcp/Papers/Asia/AsiaBerg.htm"
 source_url: "https://doi.org/10.5840/wcp20-paideia199824411"
 drive_links:
-  - "https://drive.google.com/file/d/1DBI4A5e2GHgCpLDj_8Y_tIlmKHEqRB3r/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WwVQI6hAAT7IPcCUv4VARR4Njsiwc7KP/view?usp=drivesdk"
 course: mahayana-roots # maybe down to madhyamaka
 tags:
   - nagarjuna

@@ -4,7 +4,7 @@ authors:
   - "Judy Roitman"
 external_url: "https://www.lionsroar.com/all-beings-liberating-together-at-once/"
 drive_links:
-  - "https://drive.google.com/file/d/1Ulk3j5OTGdQq-l9hhG-9AqN2WiYlnFnq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/119Yh_3VdOV7T19PnGqfd6v37YMMipmE6/view?usp=drivesdk"
 course: mahayana
 tags:
   - cosmology

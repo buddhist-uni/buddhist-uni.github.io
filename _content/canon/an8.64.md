@@ -4,7 +4,7 @@ slug: "an.008.064"
 translator: sujato
 external_url: "https://suttacentral.net/an8.64/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1EEbZmYTF30s8r6CXHSQXAFp9Ys1G0OZQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13rPvObIYf3KaKBPaG1H0IeodCmgiRcLJ/view?usp=drivesdk"
 course: tranquility-and-insight
 tags:
   - iddhi

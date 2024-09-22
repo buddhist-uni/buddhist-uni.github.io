@@ -5,7 +5,7 @@ slug: "sn.009.006"
 subcat: poetry
 external_url: "https://suttacentral.net/sn9.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1uBakq5lva43OQSnLH7EzcgiggJMGjP3F/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17883HIQiBp-qGo9h5zYKc63DbpY0fsX3/view?usp=drivesdk"
 course: nibbana
 tags:
   - deva

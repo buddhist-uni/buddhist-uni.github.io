@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vimuttayatana.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1foJ10YJ8C0-kwAbKxYxF5apzMr9zu787/view?usp=sharing"
+ - "https://drive.google.com/file/d/1hsDEGg7pXKisrtmwvmdZ7ee9SV4DXtCK/view?usp=sharing"
 course: sati
 tags:
   - samadhi

@@ -3,7 +3,7 @@ title: "Broken Buddha: Critical Reflections on Theravada and a Plea for a New Bu
 authors: [dhammika]
 source_url: "http://www.buddhistische-gesellschaft-berlin.de/downloads/brokenbuddhanew.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1p9ag8X185EOUazI87pmSSy_td6Izr-3r/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Uj8R82gLpuAz97h99vJ-ynf4LkFyKLEf/view?usp=drivesdk"]
 year: 2006
 course: monastic-theravada
 olid: OL32035595M

@@ -5,7 +5,7 @@ slug: "iti049"
 subcat: poetry
 external_url: "https://suttacentral.net/iti49/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1LsISuXSLyUKjCsbHcylMXMyqgqVmF8xL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TEyJUik2PgH85nkr_WfKFHUJHMORi5Kh/view?usp=drivesdk"
 course: view
 tags:
   - hindrances

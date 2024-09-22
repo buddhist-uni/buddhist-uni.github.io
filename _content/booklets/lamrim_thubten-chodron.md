@@ -6,7 +6,7 @@ editor: "Lai Wee Chiang"
 external_url: "https://thubtenchodron.org/genre/lamrim-ebooks/"
 source_url: "https://thubtenchodron.org/1991/01/index-lamrim-teachings/"
 drive_links:
-  - "https://drive.google.com/drive/folders/1HPPjqjcTGEaFunE6p66687en9W211YK3"
+  - "https://drive.google.com/drive/folders/1sEYRmAPYx85q2WVEnCHhkdM29mAvw8UU"
 formats: [eBooks]
 course: tantric
 tags:

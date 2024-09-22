@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6309930/"
 source_url: "https://journals.lww.com/academicmedicine/Fulltext/2019/01000/Promises_and_Pitfalls_of_Diversity_Statements_.13.aspx"
 drive_links:
-  - "https://drive.google.com/file/d/1LeHV4He15xg520H0UX0zfFjGHmVMsuG6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1daNVmePy1PrvgBMtoicBlNwhmngJriKb/view?usp=drivesdk"
 course: social
 status: featured
 tags:

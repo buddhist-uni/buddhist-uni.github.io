@@ -3,7 +3,7 @@ title: "Dhp 25: The Monk"
 external_url: "https://suttacentral.net/dhp360-382/en/buddharakkhita"
 translator: buddharakkhita
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/14GSF4ZIb_7tLN-he-bVJXDPUlRrOlHhp/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zwUQcQ6cZIfLRKnfeBSZVkhFl_-qF3E-/view?usp=drivesdk"]
 course: function
 tags:
   - monastic

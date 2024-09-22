@@ -4,7 +4,7 @@ authors:
   - bodhi
 external_url: "https://www.academia.edu/41475839/Does_Rebirth_Make_Sense"
 drive_links:
-  - "https://drive.google.com/file/d/1canT7fPPSyPy5nOp_ehbWBFGNb2EGztB/view?usp=sharing"
+  - "https://drive.google.com/file/d/1U6-izKkgALIm8YeJYl5HjJmvxkb5ro6U/view?usp=sharing"
 course: cosmology
 tags:
   - rebirth

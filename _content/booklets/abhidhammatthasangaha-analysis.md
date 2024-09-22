@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.holybooks.com/wp-content/uploads/An-Analysis-of-the-Abhidhammatthasaogaha.pdf"
 source_url: "https://www.bps.lk/olib/mi/mi001_U_Thitila_Analysis_of_Abhidhammatthasangaha.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1f9Tb3Xfgt6C0AWM7NpJ4UwuCw6zUhNeJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_Aqc3nHCnOFsNsWshdYVPkBV_lDcJCGs/view?usp=drivesdk"
 course: abhidhamma
 year: 1967 # wild guess. I actually have no idea
 pages: 177

@@ -5,7 +5,7 @@ authors:
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 status: featured
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1gVXq3AoX2tZSrscHoylX9lkUAWK_hJar/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1kXP5epewRFFTrF3FyEvZaCVUmW9V1ctq/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/A%20Note%20on%20micchādiṭṭhi%20-%20P%20S%20Jaini.pdf"
 year: 2007

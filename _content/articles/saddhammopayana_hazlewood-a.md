@@ -6,7 +6,7 @@ year: 1988
 volume: 12
 pages: "133--159"
 external_url: "https://archive.org/download/jpts-xii-1988/Saddhammopayana_%20Gift-Offering%20of%20the%20True%20Dhamma%20-%20Ann%20Appleby%20Hazlewood_text.pdf"
-drive_links: ["https://drive.google.com/file/d/1bdY1YrP8PAMBOnfW4Ppn3C_tXlhwwsry/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1hPLhUvm9Ndi2nI9ruYl9ohuOAylpm_Ep/view?usp=drivesdk"]
 course: theravada-roots
 tags:
   - cosmology

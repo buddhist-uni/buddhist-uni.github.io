@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/9130/15954"
 source_url: "https://doi.org/10.1558/bsrv.36762"
 drive_links:
-  - "https://drive.google.com/file/d/1_N11R8AeJK9IS9NSow3yGx8gz0nj36vg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sZ2MHGUGvXvKDxkNN4TPAXhdUVqAe1sf/view?usp=drivesdk"
 course: theravada-roots
 tags:
   - pali-canon

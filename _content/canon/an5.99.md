@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.099"
 external_url: "https://suttacentral.net/an5.99/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/17Rx8TaE4qFWnZ47SJF0Q9W1sx3v3EBNl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1v6_enLBcOzwsd8dB7MgRdu2LBR0QMEtT/view?usp=drivesdk"
 course: speech
 tags:
   - pedagogy

@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vimamsa.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1tAocR6HJqtMp5nPcFyYRgdXPDenth-k9/view?usp=sharing"
+ - "https://drive.google.com/file/d/1XhUsJNzDxRjoGQEM4Nz5H39CkyagcRrX/view?usp=sharing"
 course: thought
 tags:
   - vipassana

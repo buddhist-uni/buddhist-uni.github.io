@@ -4,7 +4,7 @@ slug: "an.004.122"
 translator: sujato
 external_url: "https://suttacentral.net/an4.122/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/18QvS8-fTt5cayb9TTbpQDogzaJGO-gh4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fUvdkN2v2Il8078a9qJr1_RfJLT8WRrR/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - an

@@ -2,7 +2,7 @@
 title: "Chos sbyin gyi mdo: Bhikkhunī Dhammadinnā Proves Her Wisdom"
 authors: [analayo]
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/06/bhikkhuni-dhammadinna-proves-her-wisdom.pdf"
-drive_links: ["https://drive.google.com/file/d/1YL4arjLF_0WFmwn3NOlE1L_8skIl8FyA/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1THd0DjeD4t_ImWJ6fPJLAxQByeBlVzii/view?usp=drivesdk"]
 tags:
   - philosophy
   - path

@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.061"
 external_url: "https://suttacentral.net/an3.61/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/186eb-9ZGStEwAPEcms1kdyEDlJUjhHfz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RUGUza8l4f-ubrjeFkQmuznGMyGlJzDu/view?usp=drivesdk"
 course: thought # with prejudice
 tags:
   - religion

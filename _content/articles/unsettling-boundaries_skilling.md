@@ -4,7 +4,7 @@ authors:
   - skilling
 external_url: "https://icabs.repo.nii.ac.jp/?action=repository_action_common_download&item_id=88&item_no=1&attribute_id=22&file_no=1"
 drive_links:
-  - "https://drive.google.com/file/d/1WoohYR1y4xDMHD2GSaha_AofQKoFavcb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XmkCEVfpMufv930505Je2ykNA2lMeZEO/view?usp=drivesdk"
 course: sects
 tags:
   - form

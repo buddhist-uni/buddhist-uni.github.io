@@ -5,7 +5,7 @@ authors:
 external_url: "https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1010&context=amst_fsp"
 source_url: "https://doi.org/10.1086/494364"
 drive_links:
-  - "https://drive.google.com/file/d/1-2CRALfaI5c2eRPmcYLHEXIYQk2FSPfi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r3wR4oL4bMOSKMYj0GNFUdkE_-FCXJEH/view?usp=drivesdk"
 course: wider
 tags:
   - natural

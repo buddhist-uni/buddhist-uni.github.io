@@ -6,7 +6,7 @@ authors:
   - "Hammalawa Saddhātissa"
 external_url: "https://www.bps.lk/olib/bp/bp628h_Pali-Literature-of-Asia.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Z33p4BU6jaFA0x1CJKV-RyTeIMS75qy8/view?usp=sharing"
+  - "https://drive.google.com/file/d/1cs8deICT7sVeyLT86MRzBwNilE-oGRv5/view?usp=sharing"
 course: theravada-roots # maybe split into three entries in the future?
 tags:
   - pali-literature

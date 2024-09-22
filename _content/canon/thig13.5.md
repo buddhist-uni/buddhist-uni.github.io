@@ -5,7 +5,7 @@ slug: "thig.13.05"
 subcat: poetry
 external_url: "https://suttacentral.net/thig13.5/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1adWYGavJLq7r8qjO9lYvRhfUYK1UJMLb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Bk_kCQNM-AzQTCgv1qgr1__q4hGNCsk_/view?usp=drivesdk"
 course: vipassana
 tags:
   - renunciation

@@ -4,7 +4,7 @@ slug: "an.008.005"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.5/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1fRM9xjR53zeNic0oA6XJYiZtdwzngKDa/view?usp=sharing"
+  - "https://drive.google.com/file/d/1cVstkplmC9SekWPZtiP-kbcsQ95hsj_5/view?usp=sharing"
 course: nibbana
 tags:
   - an

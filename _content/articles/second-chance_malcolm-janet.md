@@ -4,7 +4,7 @@ authors:
   - "Janet Malcolm"
 external_url: "https://www.nybooks.com/articles/2020/09/24/jeffrey-masson-trial-second-chance/"
 drive_links:
-  - "https://drive.google.com/file/d/1hcj8V-nCIQyVTKhOid3fENHbdmLtQjwF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1T2rvPzNEqHQ5plX8yVlygllKZNIzYbC_/view?usp=drivesdk"
 course: social
 tags:
   - courts

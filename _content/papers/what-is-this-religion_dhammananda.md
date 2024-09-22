@@ -10,7 +10,7 @@ address: "Kuala Lumpur"
 external_url: "https://archive.org/download/gems-of-buddhist-wisdom/What%20is%20this%20Religion%20-%20Dhammananda_text.pdf"
 year: 1983
 drive_links:
- - "https://drive.google.com/file/d/1Uosv0ar7IaRfuea2aT4qZL1KdTr5_ZOw/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1OFiN1o2Vzv79ymalFC-cMV3AJfdGCe98/view?usp=drivesdk"
 tags:
   - interfaith
 course: modern

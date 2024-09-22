@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/118/29/e2020104118.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.2020104118"
 drive_links:
-  - "https://drive.google.com/file/d/1nC27Demap9BEsXm_1uTWUBOWDikbd-JG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vqyhGl2dYD0Ae_V8z5mvvE182tEkCpG4/view?usp=drivesdk"
 course: intellect
 tags:
   - wider

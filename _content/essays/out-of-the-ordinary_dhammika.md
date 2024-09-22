@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2021/02/17/out-of-the-ordinary/"
 drive_links:
-  - "https://drive.google.com/file/d/1fIZkvrRtdbJWxNOyQzn_D6m4x7MIhD-U/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YU1GItLpqPKo3FFJzHOMNn4W05oxU5kx/view?usp=drivesdk"
 course: ethics
 tags:
   - vinaya-controversies

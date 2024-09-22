@@ -5,7 +5,7 @@ external_url: "https://suttacentral.net/snp2.8/en/sujato"
 translator: sujato
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/19Gq7eFPfK5qzaQ_0Y_CvY56s7KaBEzk9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rupoDocWJdhke6mm0JQWd15qzBOzNShN/view?usp=drivesdk"
 course: sangha
 tags:
   - snp

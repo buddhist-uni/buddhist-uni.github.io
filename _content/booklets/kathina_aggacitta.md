@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhanet.net/pdf_file/kathina.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1hFcEuZfaWrfAGgqnnlgoW9msWwz9AoKu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XsDgYe0b_gbaDiOUGE3kT_rlYxT5OV6j/view?usp=drivesdk"
 course: theravada
 tags:
   - vinaya-studies

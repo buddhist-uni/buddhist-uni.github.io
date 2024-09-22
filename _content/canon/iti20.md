@@ -5,7 +5,7 @@ slug: "iti020"
 subcat: poetry
 external_url: "https://suttacentral.net/iti20/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1ixG3cUbRuw1U5KP_IqzhsMpcCeDt81xs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PqCrj7XhzZwX7iYZ-LkNPTggN3OOuJaq/view?usp=drivesdk"
 course: rebirth
 tags:
   - iti

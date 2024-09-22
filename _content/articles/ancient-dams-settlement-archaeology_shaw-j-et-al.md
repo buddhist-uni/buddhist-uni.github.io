@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.tandfonline.com/doi/pdf/10.1623/hysj.48.2.277.44695?needAccess=true"
 source_url: "https://doi.org/10.1623/hysj.48.2.277.44695"
 drive_links:
-  - "https://drive.google.com/file/d/1tCalezwi657SNQhyGjm1X9bzRJVHMVwf/view?usp=share_link"
+  - "https://drive.google.com/file/d/1_5wBtG5-_LscNdGMGzfNVW9dQPtsyGLD/view?usp=share_link"
 course: roots
 tags:
   - hydrology

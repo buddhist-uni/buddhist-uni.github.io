@@ -1,7 +1,7 @@
 ---
 title: "Can the Theravada Bhikkhuni Order be Re-established? It Already Has"
 authors: [bodhi]
-drive_links: ["https://drive.google.com/file/d/1Fv6tyUTHJAucrkxtOozUyaCxxfdHBEBK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1E8bPQumwyHVoi9vr4ptAUIRdaQVuENuP/view?usp=drivesdk"]
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2014/05/Reestablished.pdf"
 year: 2012
 month: aug

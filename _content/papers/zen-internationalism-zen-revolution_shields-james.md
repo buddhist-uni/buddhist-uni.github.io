@@ -5,7 +5,7 @@ authors:
 editor: "Albert Welter and Steven Heine and Jin Y. Park"
 external_url: "https://digitalcommons.bucknell.edu/cgi/viewcontent.cgi?article=1276&context=fac_books"
 drive_links:
-  - "https://drive.google.com/file/d/1rqZUwTG3KC2q79Qj_GQSWPz2XErBgKuI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C-NuPzWaCv3WPFB-0sALHy3O5MiKq2mJ/view?usp=drivesdk"
 course: becon
 tags:
   - japanese-imperial

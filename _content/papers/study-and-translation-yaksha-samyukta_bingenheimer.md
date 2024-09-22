@@ -5,7 +5,7 @@ authors:
 editor: dhammadinna
 external_url: "https://mbingenheimer.net/publications/bingenheimer.2020.yakshaSamyukta.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1RL5fEb4smQfNYkTh24RDn3ddpmrYGjxa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mtkwjBg1wphbr-57QjqqGtLAkw_L4feE/view?usp=drivesdk"
 course: cosmology
 tags:
   - manuscripts

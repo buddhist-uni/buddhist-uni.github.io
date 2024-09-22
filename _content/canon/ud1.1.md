@@ -4,7 +4,7 @@ translator: ireland
 slug: "ud1.1"
 external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.1.01.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/1-8pcBXNEzXjLgp9PsVybJYHWC-8hByWx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GDbvcbJ54XuXpULdTA6IgXuuC9ep9U-6/view?usp=drivesdk"
 course: nibbana
 status: featured
 tags:

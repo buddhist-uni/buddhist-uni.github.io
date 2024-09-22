@@ -4,7 +4,7 @@ slug: "vv.6.03"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv6-3/"
 drive_links:
-  - "https://drive.google.com/file/d/1iFoJV-CeLJiwiVNm4eNYBpNwscPyCzhN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZLAjnpxjx4QSKdKoKz-pXJSoKWgW38vC/view?usp=drivesdk"
 course: theravada
 tags:
   - vv

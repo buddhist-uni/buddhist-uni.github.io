@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/1039/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.27.3-4.2000.297-178"
 drive_links:
-  - "https://drive.google.com/file/d/1gPAA4EWxKHuM6QYUIrslyCDDX5zWfs2E/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Mf7Bq2PXAjuOrRBisJpfJV_JhywjmUvB/view?usp=drivesdk"
 status: featured
 course: japanese
 tags:

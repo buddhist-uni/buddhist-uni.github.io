@@ -7,8 +7,8 @@ editor: "M. R. Sermsri Kasemsri and Michael Shameklis and suchart"
 external_url: "https://forestdhamma.org/ebooks/english/pdf/Acariya_Maha_Boowa_in_London.pdf"
 source_url: "http://luangta.eu/site/books/book01_london.php"
 drive_links:
-  - "https://drive.google.com/file/d/1kXAhhaoGSeUwMgsgy5fwB1ovqSpjhbPH/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1LB53EpvpPwSC3TD7o_3ci3igvtNpj-Nb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hk2djcmhpVlkHrMqelTKbg-vqbhhrr6M/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1du6szNfF0xTJb_y1A6xJqKNs7ICbb4E4/view?usp=drivesdk"
 course: west
 tags:
   - british

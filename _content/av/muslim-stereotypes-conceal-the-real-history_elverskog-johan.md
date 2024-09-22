@@ -9,7 +9,7 @@ journal: tricycle
 external_url: "https://tricycle.org/podcast/buddhism-muslim-stereotypes/"
 formats: [mp3]
 drive_links:
-  - "https://drive.google.com/file/d/1rZfn6nqLUkJZbYyRo5UyeaW63rYVSXtd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XY_LnhIxVaURrvjbeK9Cq8t6jcJI15Om/view?usp=drivesdk"
 course: roots
 tags:
   - islam

@@ -1,7 +1,7 @@
 ---
 title: The Buddha's Words
 subtitle: An Online Course on the Early Buddhist Texts
-google_doc_id: 1JU0k437c4r-5Ug_n4N7iDZ6_9Tr2SvH78ftW2b6B00I
+google_doc_id: 1qXmJi6fqcQ4VMMEwP2OvVX-riqRG6nC5UM2SypQmJ8I
 feedback_id: "The+Early+Buddhist+Texts"
 description: "An introduction to the Buddha's teachings suitable for everyone based on Bhikkhu Bodhi’s popular anthology, *In The Buddha’s Words*."
 lecturers:
@@ -113,7 +113,7 @@ Starting with chapter six, however, the content starts to get a bit more challen
 and Bhikkhu Bodhi's lectures start to slow down. You may want to adjust your reading
 pace accordingly at that point.
 
-Some of Bhikkhu Bodhi's handouts for the course can be found [here](https://drive.google.com/drive/folders/1EbTdp2jf0ED2oIShXSaREEQwEGyBa8gW).
+Some of Bhikkhu Bodhi's handouts for the course can be found [here](https://drive.google.com/drive/folders/1gzcv--ssI1eu53T5dTxKtL1y-BQlGTgT).
 
 ### Office Hours
 

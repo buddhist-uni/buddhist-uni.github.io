@@ -4,7 +4,7 @@ authors:
   - "Paul K. Nietupski"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3078165&journal_code=JIABS"
 drive_links:
-  - "https://drive.google.com/file/d/1t-dZq9PQTlJRXc6kOCNe_OGHvghOPbVK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pkkxCz2ogCDKHFfclWBGSaD7j1OFrzfy/view?usp=drivesdk"
 course: tantric
 tags:
   - mahayana-vinaya

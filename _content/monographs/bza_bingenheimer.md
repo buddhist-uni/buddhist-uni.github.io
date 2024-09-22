@@ -5,7 +5,7 @@ authors:
 course: sa
 year: 2011
 publisher: dharmadrum
-drive_links: ["https://drive.google.com/file/d/1-qyS0AOWn15iV65dE0fZzBZMn6XI6g1m/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1bli9NbNmlWpfmFt5A2sg0aAS8yxnaPyE/view?usp=drivesdk"]
 external_url: "https://mbingenheimer.net/publications/bingenheimer_StudiesInAgamaLit_2011.pdf"
 pages: 332
 ---

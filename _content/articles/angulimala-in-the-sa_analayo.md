@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8880/10334"
 drive_links:
-  - "https://drive.google.com/file/d/1ksElxc1YFbyBt-Gl5d0ErWFVYt1wICuT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pG75bO1cNvVMUqPFJR3PWkYLhkRdQ3Dg/view?usp=drivesdk"
 course: characters
 year: 2008
 pages: "135--148"

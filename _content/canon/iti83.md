@@ -3,7 +3,7 @@ title: "Iti 83: The Five Prognostic Signs"
 slug: "iti083"
 translator: ireland
 external_url: "https://suttacentral.net/iti83/en/ireland"
-drive_links: ["https://drive.google.com/file/d/1HGevEwdDMDBWMLD6bnM4V12JGdw7qYPA/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Ck6zBj_SzN6tquUnaLosrws7mkU2Ht82/view?usp=drivesdk"]
 course: cosmology
 tags:
   - iti

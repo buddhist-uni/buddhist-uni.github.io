@@ -3,7 +3,7 @@ title: "The History of Buddhist Monasticism and Its Western Adaptation"
 authors: ["Bhikshuni Karma Lekshe Tsomo"]
 external_url: "https://www.bhikkhuni.net/the-history-of-buddhist-monasticism-and-its-western-adaptation/"
 drive_links:
-  - "https://drive.google.com/file/d/1787r1e1rsUcdPRkkuTmYJEQe9n3Gn0oB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DO_M3vdUwVjzWPMyUKzvfvMcNLo_UzLb/view?usp=drivesdk"
 year: 1999
 course: form
 tags:

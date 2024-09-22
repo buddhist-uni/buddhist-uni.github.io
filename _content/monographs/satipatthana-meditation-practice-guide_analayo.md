@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/satipatthanapracticeguide.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1pBhjHfVWRqLxMsneSjSt2FLFNU_SdLkk/view?usp=sharing"
+  - "https://drive.google.com/file/d/1i5kEqIfCBsp51oYCPVzafvK14jz656R3/view?usp=sharing"
 course: sati
 status: featured
 tags:

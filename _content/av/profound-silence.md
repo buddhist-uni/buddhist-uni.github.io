@@ -5,7 +5,7 @@ authors:
   - "Amy Umezu"
 external_url: "https://vimeo.com/814468816"
 drive_links:
-  - "https://drive.google.com/file/d/1C6pZmi3LxlBCi-0RhDZYR1e1t8WNm1VM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cEdwZtSFV_r3OZRL6ihX1BF0HWK0htz8/view?usp=drivesdk"
 formats: [mp4]
 course: sangha
 tags:

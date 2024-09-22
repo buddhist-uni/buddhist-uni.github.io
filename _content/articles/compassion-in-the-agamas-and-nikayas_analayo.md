@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/compassion.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ikpfF1Q7H3m21vTreUlMzZyz4wuibFfr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xC3SiLjJRRPoG1DAekp5i3v2zD0jcbtS/view?usp=drivesdk"
 course: brahmavihara
 tags:
   - compassion

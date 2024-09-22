@@ -5,7 +5,7 @@ external_url: "https://dhammatalks.net/Articles/Karen_Andrews_Forty_Meditations_
 year: 1992
 month: apr
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1hHiCTuhmjOhtdccVrO5ZelA9avms3C3H/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/11_iJyM3cDPnpRNuNYqGPAQ4yvruSFd3h/view?usp=drivesdk"]
 course: meditation
 tags:
   - vsm

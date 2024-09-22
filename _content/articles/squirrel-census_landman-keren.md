@@ -4,7 +4,7 @@ authors:
   - "Keren Landman"
 external_url: "https://www.vox.com/climate/24131917/squirrel-census-count-central-inman-park-atlanta-nyc"
 drive_links:
-  - "https://drive.google.com/file/d/1BtSM8a_gbFVrXceMP9ENwnVTxlWnBC4h/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yQ9yW7vAzROSBRzIJ-RTHzkswKckBLc1/view?usp=drivesdk"
 course: wider
 tags:
   - cities

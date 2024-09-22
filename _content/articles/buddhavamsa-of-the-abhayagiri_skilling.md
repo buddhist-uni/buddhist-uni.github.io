@@ -6,7 +6,7 @@ journal: jpts
 volume: 18
 external_url: "https://archive.org/download/jpts-xviii-1993/A%20Citation%20from%20the%20Buddhavamsa%20of%20the%20Abhayagiri%20School%20-%20Peter%20Skilling_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hTDQe3Zvm6mntswxDclScLijsRNT713G/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/110Asso2H1eEs95rtcZN21O_PfgZFn3B4/view?usp=drivesdk"
 year: 1993
 course: theravada-roots
 tags:

@@ -4,7 +4,7 @@ authors:
   - choong-mk
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8992/10465/11724"
 drive_links:
-  - "https://drive.google.com/file/d/1b8GMkBdS87Q9HmttbIqSfumpiRqLk_3i/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KdX-8w3Q2i1POTssmM-ToCZ4zNMI01VU/view?usp=drivesdk"
 course: characters
 tags:
   - sn

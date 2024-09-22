@@ -6,7 +6,7 @@ year: 2016
 month: jul
 external_url: "https://historyofindiapodcast.libsyn.com/2-d-stupas-and-stupefaction"
 drive_links:
-  - "https://drive.google.com/file/d/1xw58cAxXZJ3vWJneUo5tjdLYe8HG1yiv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12dsuFMqWf87MiVqvekHifu7q4skeizw2/view?usp=drivesdk"
 course: indian
 tags:
   - jataka

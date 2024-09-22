@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8937/10406"
 source_url: "https://doi.org/10.1558/bsrv.v28i2.203"
 drive_links:
-  - "https://drive.google.com/file/d/1cRQqim0UvUtO1pnTEA9pcglpdg_etjsK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1E1qMjsKxN_BdQfrn3pUC0GBRXNW9iYhZ/view?usp=drivesdk"
 status: featured
 course: west
 tags:

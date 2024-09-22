@@ -5,7 +5,7 @@ slug: "an.004.068"
 subcat: poetry
 external_url: "https://suttacentral.net/an4.68/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1-MAejCL8dcX53i0mX35g1twggu7DLHBg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1q7rGKTF_Vqz6bug9wSV-m4XEQhzS-TU0/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - imagery

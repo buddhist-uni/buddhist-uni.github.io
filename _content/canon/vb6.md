@@ -5,7 +5,7 @@ translator: anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Paticcasamuppadavibhanga/index.htm"
 alternative_url: "https://suttacentral.net/vb6/en/anandajoti"
 drive_links:
-  - "https://drive.google.com/file/d/1gjkhvTIG1euDvDZqusfGisiWEZV8qy0U/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pixX6kpZaCd8lE8fQTyk-6fyAsuPRftq/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - origination

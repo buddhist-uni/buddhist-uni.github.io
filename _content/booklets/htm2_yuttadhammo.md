@@ -4,8 +4,8 @@ authors:
   - yuttadhammo
 external_url: "https://www.sirimangalo.org/text/how-to-meditate-ii/"
 drive_links:
-  - "https://drive.google.com/file/d/1eBDQrlUvZkYJIOI_dNgXhN_wu-XZVoR4/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/16pkNNALJPnzJAJ2cdxv9GutflJi7h4-m/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MxSLkThWflFgDjlDA09fzzumzmlAy7GC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1v2NTPNhjcw9oN1Fh1du5t7jZLgLNVgYS/view?usp=drivesdk"
 course: vipassana
 tags:
   - problems

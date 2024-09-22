@@ -5,7 +5,7 @@ year: 2009
 month: mar
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/090328_WrongView.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1wWnL668_czXEY5tbugEqGgMfhkrtX_L_/view?usp=share_link"
+  - "https://drive.google.com/file/d/1ICC0P311CEi7Trr4gVQFfKzDCtUwmZp6/view?usp=share_link"
 file_links: ["function-data/LA-Lectures_Yuttadhammo/11%20-%20Wrong%20View%20(2009-03-28).mp3"]
 course: function
 tags:

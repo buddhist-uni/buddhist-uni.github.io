@@ -5,7 +5,7 @@ authors:
   - bodhi
 external_url: "https://insightmyanmar.org/complete-shows/2021/7/4/episode-61-bhikkhu-bodhi-on-the-crisis-in-myanmar"
 drive_links: 
-  - "https://drive.google.com/file/d/1o01ZNIsepSWtN_2CV_tvxKinkV1CaRcc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gjAHrCs9JkXx_iIc0BKDNBVR0WTcIMMK/view?usp=drivesdk"
 status: featured
 course: karma
 tags:

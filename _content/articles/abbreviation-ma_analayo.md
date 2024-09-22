@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/abbreviationma.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1T8yL7F7Xp6EXXektwI7a7XvADxviuqMa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FJid0tczSHHa8I2j7OONcx4HVVxnlNb7/view?usp=drivesdk"
 course: ma
 year: 2021
 journal: aririab

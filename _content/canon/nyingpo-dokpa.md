@@ -3,7 +3,7 @@ title: "The Sūtra of the Heart of Transcendent Wisdom: A Tibetan Heart Sūtra L
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/heart-sutra-with-extras"
 year: 2019
 translator: "Adam Pearcey"
-drive_links: ["https://drive.google.com/file/d/1tY1x-PuIV7lFFwVLO11sM0FIa6iOBKvp/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1cQaR7g8MyXj7bFz94Acyb-9iIsMG-a6h/view?usp=drivesdk"]
 course: mahayana
 pages: 11
 ---

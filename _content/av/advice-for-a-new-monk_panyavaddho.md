@@ -1,7 +1,7 @@
 ---
 title: "Advice for New Monks"
 authors: [panyavaddho]
-drive_links: ["https://drive.google.com/file/d/1IFmTvh72yl83rWsUH4Vcjk9LL4JsW5p_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ceyfezhLCNYC08bg1aCc0D-wnzBL8pSe/view?usp=drivesdk"]
 file_links: ["exclusive_01/Interview_%20Advice%20For%20a%20New%20Monk%20-%20Ajahn%20Panyavaddho.mp3"]
 course: monastic-advice
 tags:

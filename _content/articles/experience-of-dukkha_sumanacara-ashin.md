@@ -3,7 +3,7 @@ title: "The Experience of *Dukkha* and *Domanassa* among *Puthujjanas*"
 authors:
   - "Ashin Sumanacara"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2019/07/Sumanacara_19_FD-1.pdf"
-drive_links: ["https://drive.google.com/file/d/1lsJt87Bk4f9IenYpAjAepyBvpFmTGNCp/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1dF6JYXkzvDA4vTRG4yfZxq3ZQO3DDABD/view?usp=drivesdk"]
 tags: 
   - philosophy
   - nibbana

@@ -5,7 +5,7 @@ source_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajah
 month: jun
 year: 2013
 formats: [zip]
-drive_links: ["https://drive.google.com/file/d/10__oU84x5jyxNoC_qv6V-8sBGFWxVc_c/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1BQtwIlZ9FU1WsvMK6EvWFe4yUgqoLqd9/view?usp=drivesdk"]
 course: philosophy
 tags:
   - ebts

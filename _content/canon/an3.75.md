@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.075"
 external_url: "https://suttacentral.net/an3.75/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1IGZT7f8ABgU8dEhxRPgOQ5uvZ3TvWgqo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vgsSqS5nTAgXbjm6mmdp8WEGMPW7QfJ4/view?usp=drivesdk"
 course: sangha
 tags:
   - stream-entry

@@ -7,7 +7,7 @@ external_url: "https://archive.org/download/the-lotus-as-a-symbol-carl-olson/The
 file_links:
   - "exclusive_01/The%20Lotus%20as%20a%20Symbol%20-%20Carl%20Olson.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14-JT9HotO_JgYx4Ofsxuy86-6ooMQ841/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zEPmyxAfHuXyqajojIA53zhl__lvmWOI/view?usp=drivesdk"
 course: form
 base_value: 0.2
 tags:

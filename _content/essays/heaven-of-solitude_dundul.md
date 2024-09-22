@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/heaven-of-solitude"
 drive_links:
-  - "https://drive.google.com/file/d/1JNdXTziueZ-tjrj4PT8qs-oy5xkrpW0L/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gt48wD2SXGq1qXEjx1iKuRo1wthWXad8/view?usp=drivesdk"
 course: cities
 subcat: poetry
 tags:

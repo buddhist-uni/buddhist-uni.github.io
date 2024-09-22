@@ -5,7 +5,7 @@ slug: "iti054"
 subcat: poetry
 external_url: "https://suttacentral.net/iti54/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1l69rEfxzvaAJPzCZDyV7aCGEclQtZBEk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WuiiRBSCdwF1kuTzPQvJYLzZMlmkDpRm/view?usp=drivesdk"
 course: origination
 tags:
   - samadhi

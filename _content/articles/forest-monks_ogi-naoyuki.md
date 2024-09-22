@@ -4,7 +4,7 @@ authors:
   - "Naoyuki Ogi"
 external_url: "https://bschawaii.org/shindharmanet/wp-content/uploads/sites/3/2015/03/Ogi-ReVisioning.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1PQGT2U_-a-FHU_NT_7x08FcRP49xc2-x/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w8RMplj3dT15_DtT50DvbAA7JpGOHNcM/view?usp=drivesdk"
 course: engaged
 tags:
   - thai

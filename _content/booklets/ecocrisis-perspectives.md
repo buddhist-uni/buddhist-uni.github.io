@@ -8,8 +8,8 @@ editor: "Klas Sandell"
 external_url: "https://www.bps.lk/olib/wh/wh346_Sandell-etal_Buddhist-Perspectives-on-the-Ecocrisis.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/15dfSEujsKUm7_D7f2GaBUSqDpipz6K5S/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/12n0M2W3uzUCsRwb3rt6fVHoZdIbivKii/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CsxD040D1w_SxyrhWLkSyByTNASQ9Fqa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15c0OLBYYlscNT_tl1O0Excv4WZozuywh/view?usp=drivesdk"
 course: nature
 year: 1987
 olid: OL51670502M

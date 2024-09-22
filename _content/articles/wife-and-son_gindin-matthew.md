@@ -6,7 +6,7 @@ year: 2018
 month: jan
 external_url: "https://tricycle.org/trikedaily/buddhas-family/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/133ajEzy4NPSPWApjNtsO82YU6fWxgSNt/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ndb0iyLTXHTlKXKU299Tp0mkDJc3aKRv/view?usp=drivesdk"]
 course: buddha
 tags:
   - characters

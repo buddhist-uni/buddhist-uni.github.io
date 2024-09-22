@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.133"
 external_url: "https://suttacentral.net/an5.133/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1tXmCtM-m2cVQzPOE-CZrLepvBzjiZDj8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17sspkEGp18frqqjpNK8hdViQqvbalqGm/view?usp=drivesdk"
 course: state
 tags:
   - leadership

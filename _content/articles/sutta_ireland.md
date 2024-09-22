@@ -4,7 +4,7 @@ authors:
   - ireland
 external_url: "https://journal.equinoxpub.com/BSR/article/view/13751"
 drive_links:
-  - "https://drive.google.com/file/d/14XRVLjmKfnHkEz9fVmy2sbiN8i78gVtp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C0z29_24w4jNGey9oGgYwqmOEBwCyHVk/view?usp=drivesdk"
 course: sutta
 tags:
   - ebts

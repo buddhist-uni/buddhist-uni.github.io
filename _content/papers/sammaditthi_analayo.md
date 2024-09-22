@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/samma-ditthi.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/15UmSqLc5L4Ubqw_JwXyV3KlrZCGwG-JH/view?usp=drive_link"
+ - "https://drive.google.com/file/d/1jhewYcO2FdWRGULtI5mXFEmO4d4txZ9I/view?usp=drive_link"
 course: view
 tags:
   - path

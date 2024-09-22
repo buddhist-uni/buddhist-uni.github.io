@@ -4,7 +4,7 @@ authors: ["Bhadantācariya Buddhaghosa"]
 translator: nyanamoli
 year: 1956
 address: Colombo
-drive_links: ["https://drive.google.com/file/d/1gx7ytOh7SVUe9geJd80Bw0zkSYdQCzf-/view?usp=drivesdk", "https://drive.google.com/file/d/14YouLLMR99BWVZk1df711TdyIFChS_9V/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1aAkm-OWjBaitFi4j7D0xwzeLtARxziBA/view?usp=drivesdk", "https://drive.google.com/file/d/1mIxWGvgzbW-tU2caGGG8NTkoeBphaAyo/view?usp=drivesdk"]
 external_url: "https://static.sirimangalo.org/vism/"
 course: theravada-roots
 base_value: 4.5

@@ -4,7 +4,7 @@ authors:
   - vayama
 external_url: "https://bswa.org/teaching/mn137-salayatana-vibhanga-sutta-exposition-on-the-sixfold-sense-base-by-ayye-vayama/"
 drive_links:
-  - "https://drive.google.com/file/d/1lOm4iM0cevNOHiizsXbhtXfzYQVm9_Hc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xluJfrQG59ESV81NLPGlUKIVrFFHeNWZ/view?usp=drivesdk"
 course: philosophy
 tags:
   - mn

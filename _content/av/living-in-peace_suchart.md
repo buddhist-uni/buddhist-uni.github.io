@@ -5,7 +5,7 @@ authors:
 year: 2017
 month: jan
 external_url: "https://youtu.be/5Kka-UlL0rY"
-drive_links: ["https://drive.google.com/file/d/18GDLtpzr9lD2WDvZTXb-Z6uEi424-z5v/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1D0WwVFVWNdyaLw52fuJeGof_6nkCC76o/view?usp=drivesdk"]
 course: path
 status: featured
 tags:

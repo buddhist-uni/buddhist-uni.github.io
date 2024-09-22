@@ -4,7 +4,7 @@ slug: "vv.7.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-10/"
 drive_links:
-  - "https://drive.google.com/file/d/1hgihVmcG3mLzBSWT6deY4PbV26Kkrhcv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1acfUMkr-d59q1aZaY_6voQP2hmTyD5eC/view?usp=drivesdk"
 course: medieval
 status: featured
 tags:

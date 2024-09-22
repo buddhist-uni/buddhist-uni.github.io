@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.7.07.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud7_7.html"
 drive_links:
-  - "https://drive.google.com/file/d/1cmN0dj3GJTpmNyMVBgePuNYYET7jb8ef/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19Jp_nQyhXjbdZQgWNm4mq1REv_X0cEXV/view?usp=drivesdk"
 course: nibbana
 tags:
   - emptiness

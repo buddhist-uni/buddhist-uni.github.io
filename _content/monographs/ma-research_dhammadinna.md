@@ -4,7 +4,7 @@ editor: dhammadinna
 year: 2017
 publisher: dharmadrum
 course: ma
-drive_links: ["https://drive.google.com/file/d/16P1jXpuwurJs41bQGN2gN5So7-xeEiTm/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1jIS1lIM9D3ohFAwgJamvunTFePXRszD5/view?usp=drivesdk"]
 external_url: "https://www.dropbox.com/s/s74ur44hi4h255m/ResearchMadhyama.pdf"
 pages: 373
 ---

@@ -4,7 +4,7 @@ authors:
   - "Pannavati Bhikkhuni"
 external_url: "https://dharmaseed.org/talks/52603/"
 drive_links:
-  - "https://drive.google.com/file/d/1AjuBi0PNamlkkpa_9_OsEoEMesiKW4ir/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1kWVB8y60G_wEHte4pHlXqkNkphLfDAPh/view?usp=drive_link"
 course: karma
 tags:
   - problems

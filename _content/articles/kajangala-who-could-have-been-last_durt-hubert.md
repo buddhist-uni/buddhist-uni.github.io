@@ -5,7 +5,7 @@ authors:
 external_url: "https://icabs.repo.nii.ac.jp/record/86/files/%E7%A0%94%E7%A9%B6%E7%B4%80%E8%A6%81%E3%80%80%E7%AC%AC9%E5%8F%B7%EF%BC%88%E6%A8%AA%E7%B5%84%EF%BC%9AHubert%20Durt%EF%BC%89.pdf"
 source_url: "https://doi.org/10.15056/00000077"
 drive_links:
-  - "https://drive.google.com/file/d/1gakhUoHWwWXXNszbWUtZPeppQNo8M7L_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HtWXrvNMtxGSfE1dHSJlS8oSnx_dzsCI/view?usp=drivesdk"
 course: rebirth-stories
 tags:
   - vinaya-studies

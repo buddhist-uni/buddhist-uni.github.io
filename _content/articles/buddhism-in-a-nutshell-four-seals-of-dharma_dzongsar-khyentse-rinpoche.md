@@ -4,7 +4,7 @@ authors:
   - "Dzongsar Khyentse Rinpoche"
 external_url: "https://www.lionsroar.com/buddhism-nutshell-four-seals-dharma/"
 drive_links:
-  - "https://drive.google.com/file/d/12WiIwAxYAMmD2yS2Osvsp7UHPZO7p2yX/view?usp=sharing"
+  - "https://drive.google.com/file/d/1J2aIM3jZ0yn2e31XjNch0m12yeYSlOgF/view?usp=sharing"
 formats: [pdf]
 course: view
 tags:

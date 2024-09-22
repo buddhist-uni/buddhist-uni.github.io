@@ -7,7 +7,7 @@ year: 2020
 month: jun
 external_url: "https://timetoeatthedogs.com/2020/06/01/a-history-of-modern-tourism/"
 drive_links:
-  - "https://drive.google.com/file/d/1C-gia3gY_ej-u_0TZ4C0ZTnr7E-_ARW9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ryjwjf4dnVBIFS1riHyJOwNkAgwlhPly/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - present

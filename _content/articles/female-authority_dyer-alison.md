@@ -4,7 +4,7 @@ authors:
   - "Alison Melnick Dyer"
 external_url: "https://poj.peeters-leuven.be/content.php?id=3285743&url=article&download=no"
 drive_links:
-  - "https://drive.google.com/file/d/1NP5wMBJyUJMzR_vKjTrGsQqMtquliRGR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hEjdes9bxF7odi2nHT77lePXXH9l_kjE/view?usp=drivesdk"
 course: writing
 tags:
   - nyingma

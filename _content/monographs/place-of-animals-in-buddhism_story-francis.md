@@ -4,7 +4,7 @@ authors:
   - story-francis
 external_url: "https://www.bps.lk/olib/bl/bl023_Story_The-Place-of-Animals-in-Buddhism.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/11hFKwwisU4i7FMdSITab_trwgfr2dYZK/view?usp=sharing"
+  - "https://drive.google.com/file/d/1gi9LYoz6lqu2rOkaxdPbeVpixKepqDBv/view?usp=sharing"
 course: animals
 tags:
   - karma

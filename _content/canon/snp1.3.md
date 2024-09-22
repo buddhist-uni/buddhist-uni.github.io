@@ -5,7 +5,7 @@ slug: "snp.1.03"
 subcat: poetry
 external_url: "https://suttacentral.net/snp1.3/en/mills"
 drive_links:
-  - "https://drive.google.com/file/d/1vur5aQtiBVdGQliIjgDpV-tSEnizDzxi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Qj_VcdNMagdFpmazgjBeY-fCbU6dDPhw/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

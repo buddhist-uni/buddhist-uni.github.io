@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/pwj4/1/4-2-Oneill.pdf"
 source_url: "https://pwj.shin-ibs.edu/2020/6897"
 drive_links:
-  - "https://drive.google.com/file/d/1JL2lUVov2EwAJT5KNiose0z7re1BAUvV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WkbLIoIqPLo7FPjuu2ixwj494OjNBDn2/view?usp=drivesdk"
 course: mahayana
 tags:
   - mahayana-canon

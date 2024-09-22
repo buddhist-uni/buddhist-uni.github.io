@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/1230/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.34.2.2007.351-392"
 drive_links:
-  - "https://drive.google.com/file/d/1gEBpaVhrKQ72q25Mjt2M8n-jJXJf6HX3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OR23MJoJ-6iNOL6ZH8PWW4p4v41qLnhd/view?usp=drivesdk"
 course: east-asian-roots
 tags:
   - japanese-roots

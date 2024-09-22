@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.128"
 external_url: "https://suttacentral.net/an3.128/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1rvI6i05w3X8-PtN2XoqSKJ3dfXoies5C/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CSihFFI6rmQ4K-WF3oL-Pke6ywkHcFkL/view?usp=drivesdk"
 course: thought
 tags:
   - canonical-poetry

@@ -4,7 +4,7 @@ slug: "an.001.011-020"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/an1-11/"
 drive_links:
-  - "https://drive.google.com/file/d/1k8FUhNa7b1ak_1CQ9BBJtgxMmfKH6KO9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I_yWdT4htvVUAcaiODoe1jJ4wU2qaeg8/view?usp=drivesdk"
 course: hindrances
 tags:
   - an

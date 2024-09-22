@@ -4,7 +4,7 @@ authors:
   - "Colette Sciberras"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/sciberras-article.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1uLxVxzBup_4CuCkL1AiSMqZ2Aaedsoxa/view?usp=sharing"
+  - "https://drive.google.com/file/d/1WknsO25uiZ-sk2TdZAvt-4SrYmjG65hJ/view?usp=sharing"
 course: animals
 tags:
   - dialogue

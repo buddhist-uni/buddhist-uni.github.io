@@ -5,7 +5,7 @@ authors:
 file_links:
 - "exclusive_01/The%20Buddhist%20Attitude%20to%20Revelation%20-%20Jayatilleke.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ZWlDyvpqTlhgjFcDS8s5a3pNcxFlufvu/view?usp=sharing"
+  - "https://drive.google.com/file/d/1I8sipC2yMm3lTnbxp1EiH86fLr7YmedW/view?usp=sharing"
 course: dialogue
 tags:
   - epistemology

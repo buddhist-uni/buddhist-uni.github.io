@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/patrul-rinpoche/general-confession-outline"
 drive_links:
-  - "https://drive.google.com/file/d/1VWsu-c7kalvyjnIiqw5QStnZ0YEIpMIE/view?usp=sharing"
+  - "https://drive.google.com/file/d/1cxD6nbmfT12hhCNxEJhoAK3N8zPl407m/view?usp=sharing"
 course: problems
 tags:
   - confession

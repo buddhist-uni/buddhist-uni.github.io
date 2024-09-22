@@ -9,7 +9,7 @@ file_links:
  - "exclusive_01/An%20Antinomian%20Allegory%20-%20Andrew%20Huxley.pdf"
 source_url: "https://journal.equinoxpub.com/BSR/article/view/14358"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/11Ya7AOSA6Fh6q_cAlKTdbDO-4SrF8GHH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1B8jmCPzLCHWF4c0DY5VG8gBOyuFJfcR5/view?usp=drivesdk"]
 course: vinaya-pitaka
 status: featured
 tags:

@@ -4,7 +4,7 @@ authors:
   - "Ajahn Sona"
 external_url: "https://youtu.be/nSkgk1nnjck"
 drive_links:
-  - "https://drive.google.com/file/d/1OY4aWh8rTSNt0hFpudBPDOV3VimncGDe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r2dnbVO_i1rmWiXWP1QyB-_EsCg12ujK/view?usp=drivesdk"
 course: function # solidly
 tags:
   - stages

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.245"
 external_url: "https://suttacentral.net/an5.245/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1stfE5itS8LXTohzkjDsteelXEsiV99_J/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12OgiWMXhD4ztDKAJzF8ObGkEfY2RSvd4/view?usp=drivesdk"
 course: problems
 tags:
   - ethics

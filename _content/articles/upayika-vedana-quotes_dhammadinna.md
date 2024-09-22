@@ -2,7 +2,7 @@
 title: "Discourses on Feeling Tones (*vedanā*) Quoted in Śamathadeva’s *Abhidharmakośopāyikā-ṭīkā*"
 authors: [dhammadinna]
 external_url: "https://www.academia.edu/38023661/Discourses_on_feeling_tones_vedanā_quoted_in_Śamathadeva_s_Abhidharmakośopāyikā_ṭīkā"
-drive_links: ["https://drive.google.com/file/d/1iIQ-4jHyERW19BkN9f_vL0rQu1_VTiYl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ELUOC17iuY3ZN_YhZdV5Yy_Xiyu5A9S8/view?usp=drivesdk"]
 course: sa
 year: 2019
 volume: 20

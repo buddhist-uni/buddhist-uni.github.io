@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.125"
 external_url: "https://suttacentral.net/an4.125/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1kfJaILJtITIAK__ZEn2-PSrfX3Vazi6v/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xpTtD-Crft1tjDIVaBjpYHG8h9RaJAij/view?usp=drivesdk"
 course: brahmavihara
 tags:
   - cosmology

@@ -5,7 +5,7 @@ slug: "an.004.118"
 external_url: "https://daily.readingfaithfully.org/an-4-118-samvejaniyasutta-inspiring/"
 source_url: "https://suttacentral.net/an4.118/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1iSb79fTe4DMQe9EioC7GcMc9ZH5yXFBA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xv5MZnE_DGPM-3YJ6AMyU9kwNQ8cztiT/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - saddha

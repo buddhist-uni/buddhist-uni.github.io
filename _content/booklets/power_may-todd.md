@@ -6,7 +6,7 @@ external_url: "https://theanarchistlibrary.org/library/todd-may-power"
 source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-power/"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/16VXJ8Z6P1sRsOc1_NMnbrmkEyj_vLCUQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P7GRTg6t_kxdP7spOh8q9P3mxdQBG0z2/view?usp=drivesdk"
 course: social
 tags:
   - monastic

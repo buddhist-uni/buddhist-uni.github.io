@@ -5,7 +5,7 @@ slug: "thag.01.22"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.22/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1QdA82I7d7mmCen01euPSiVEJb_sNLIWo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13nlks3ZNLjQnlWYjY4zJuLX7aFcQOGsI/view?usp=drivesdk"
 course: animals
 tags:
   - setting

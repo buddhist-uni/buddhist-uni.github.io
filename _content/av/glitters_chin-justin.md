@@ -6,7 +6,7 @@ subcat: poetry
 external_url: "https://youtu.be/XQc4TFdW8GM"
 source_url: "https://education.asianart.org/resources/justin-chin-the-glitters/"
 drive_links:
-  - "https://drive.google.com/file/d/1xLAX4l5NmNIB9UV4UBt0FkQkyZLGEKrv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mwa5tWN8PrMJ8EmYUwnVwI8ggrEcrdUs/view?usp=drivesdk"
 formats: [mp4]
 course: cosmology
 tags:

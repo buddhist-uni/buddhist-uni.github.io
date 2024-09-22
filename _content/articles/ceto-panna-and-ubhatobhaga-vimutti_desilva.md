@@ -3,7 +3,7 @@ title: "*Ceto*, *Paññā*, and *Ubhatobhāga* *Vimutti*"
 authors:
   - desilva
 drive_links:
-  - "https://drive.google.com/file/d/1oDnkThaDQuwiV8iN2wpDgdKX6K4ywxyP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QK1ImRD0CAT8l2zmCM-Hb8Y5LHQP4uhD/view?usp=drivesdk"
 source_url: "https://ukabs.org.uk/wp-content/uploads/2016/06/PBR-3.3-1978.pdf"
 file_links: ["exclusive_01/Types%20of%20Vimutti%20-%20Lily%20DeSilva.pdf"]
 course: path

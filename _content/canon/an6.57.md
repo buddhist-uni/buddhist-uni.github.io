@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.057"
 external_url: "https://suttacentral.net/an6.57/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1djMSaRTu2NpFysJygd-RZ7L8n78Ub-fJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Mi4TTvrrM7Njy-kyCc0ZZnLu020zrpzG/view?usp=drivesdk"
 course: rebirth
 tags:
   - interfaith

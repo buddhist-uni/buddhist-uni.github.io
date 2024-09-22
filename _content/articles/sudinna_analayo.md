@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/case-of-sudinna.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1zhvqgLQOZPrPy8LPzuY1Cix_Wd0L-FER/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16RVmvuo5DkDJ3_Kenv9qvwcR8QiqlG0q/view?usp=drivesdk"
 course: vinaya-studies
 status: featured
 tags:

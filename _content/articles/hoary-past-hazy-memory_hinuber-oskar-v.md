@@ -3,7 +3,7 @@ title: "Hoary Past and Hazy Memory: On the History of Early Buddhist Texts"
 authors: [hinuber-oskar-v]
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8977/2870/0"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/11tSeKTznVzFDnj73Q5Ad30nMC0UicGQk/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Vf6YA8AievlnnS3fAgqJUyPckEqj09Es/view?usp=drivesdk"]
 journal: jiabs
 year: 2006
 volume: 29

@@ -6,7 +6,7 @@ authors:
   - "Fernando Romero"
 external_url: "https://open.maricopa.edu/culturepsychology/"
 drive_links:
-  - "https://drive.google.com/file/d/1ckIDBqiLvOOWkKWgNxAWhD3MgOL5oxTs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19rxTepNwiKb1TRsXNzelbsRz7lznKAiO/view?usp=drivesdk"
 course: culture
 tags:
   - world

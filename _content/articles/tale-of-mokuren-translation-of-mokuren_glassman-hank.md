@@ -4,7 +4,7 @@ authors:
   - "Hank Glassman"
 external_url: "https://www.shin-ibs.edu/documents/BL1/02Glassman.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/10YujWZaKFPw4DK0-Yu4kCO7kr_-zVxNn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dBYK4obWBu0gSeX6lsEi4sD-1fAXL6ZV/view?usp=drivesdk"
 course: medieval
 tags:
   - east-asian-roots

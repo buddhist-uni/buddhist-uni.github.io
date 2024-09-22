@@ -2,7 +2,7 @@
 title: "Heirs to the Dhamma"
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Talks/120422_hierstodhamma.mp3"
 formats: [mp3]
-drive_links: ["https://drive.google.com/file/d/1J5d9V0ieHgRe9ZwVaGpZLk_xgTMVsh3O/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/111t6ITYAxI6qB4qzKUokuDbkHOEDaKB3/view?usp=drivesdk"]
 authors: [yuttadhammo]
 year: 2012
 month: apr

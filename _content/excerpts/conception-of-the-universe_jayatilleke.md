@@ -6,7 +6,7 @@ source_url: "https://www.bps.lk/olib/wh/wh162_Jayatilleke_Facets-of-Buddhist-Tho
 file_links:
   - "exclusive_01/The%20Buddhist%20Conception%20of%20the%20Universe%20-%20Jayatilleke.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ZCbOkBNQya5B_BGDi1qHMZP59LcFJdiw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NH0E-8cRukvTmUHwSiPT9mx2N-1dxuyK/view?usp=drivesdk"
 course: cosmology
 tags:
   - astronomy

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.099"
 external_url: "https://suttacentral.net/an3.99/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1-IPIRTj-7wMGkT7ieLLJJ_uqmPRyoUY_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11I5SjwJkY2g0msm2jt5MvpmvG5OgIVtA/view?usp=drivesdk"
 course: imagery
 tags:
   - sangha

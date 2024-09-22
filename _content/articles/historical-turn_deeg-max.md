@@ -5,7 +5,7 @@ authors:
 external_url: "https://glorisunglobalnetwork.org/wp-content/uploads/2019/06/hualin1.1_deeg_final.pdf"
 source_url: "https://dx.doi.org/10.15239/hijbs.01.01.02"
 drive_links:
-  - "https://drive.google.com/file/d/1ZdnrFcrXM8Pg4RgaF2b810PwLQ5r3Pyb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1l3V_deFM5ybAUOOaXgJdeRFwmDiwDp6H/view?usp=drivesdk"
 course: academic
 tags:
   - historiography

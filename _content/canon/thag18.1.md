@@ -3,7 +3,7 @@ title: "Thag 18.1 Mahākassapa Theragāthā: Mahākassapa"
 slug: "thag.18.01"
 external_url: "https://suttafriends.org/sutta/thag18-1/"
 translator: "Ven. Kiribathgoda Gnanananda"
-drive_links: ["https://drive.google.com/file/d/1a0Q0xZKTYqvGxP5nLE_iFBrD3QxjB4SY/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1HuJg61-St06etrMBHphU9flFI9yVNK1w/view?usp=drivesdk"]
 course: pilgrimage
 tags:
   - thag

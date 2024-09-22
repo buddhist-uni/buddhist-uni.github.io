@@ -4,7 +4,7 @@ translator: ireland
 slug: "ud2.10"
 external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.2.10.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/16Sp0T81iRKjMs8yMBykBwLLvzRoGG6yV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Flb7_whgE6GP_pzy6Y_qLOLYRPNkiWFi/view?usp=drivesdk"
 course: characters
 status: featured
 tags:

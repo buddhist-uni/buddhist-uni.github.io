@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.researchgate.net/profile/William-Edelglass/publication/354058724_Buddhism_and_the_Environment/links/6121c6f90c2bfa282a60482d/Buddhism-and-the-Environment.pdf"
 source_url: "https://doi.org/10.1093/acrefore/9780199340378.013.721"
 drive_links:
-  - "https://drive.google.com/file/d/17afaF0hfOtjnfNaphVt1dof-aooNBFyn/view?usp=share_link"
+  - "https://drive.google.com/file/d/1_AMMRMAiDCh7O_KXS5qx7NlKnrnIDL_W/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:

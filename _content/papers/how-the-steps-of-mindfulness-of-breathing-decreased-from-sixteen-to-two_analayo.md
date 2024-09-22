@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/howmindfulnessbreathing.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1d5w3Chqq2XnQ03NofFzcKAfTFSxrDaZb/view?usp=sharing"
+  - "https://drive.google.com/file/d/1o55V6cACssOgngUgyxT5hd8lPVUZdNGX/view?usp=sharing"
 course: sati
 tags:
   - anapanasati

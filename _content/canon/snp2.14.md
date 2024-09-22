@@ -5,7 +5,7 @@ slug: "snp.2.14"
 subcat: poetry
 external_url: "https://suttacentral.net/snp2.14/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1KvnCSEHOe8LzA3LtosAjWIsdqNHZwPDo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oZxi0di0k5vrgiil-aF2v5SZY3Xx_jAb/view?usp=drivesdk"
 course: pali-canon
 tags:
   - ethics

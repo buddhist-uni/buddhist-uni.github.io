@@ -3,7 +3,7 @@ title: "AN 4.94: Concentration (Tranquillity and Insight)"
 translator: geoff
 external_url: "https://www.accesstoinsight.org/tipitaka/an/an04/an04.094.than.html"
 drive_links:
-  - "https://drive.google.com/file/d/1RDVhPUeSH_TgBbVIMaKEUOrW9-6SLV8H/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QTnj-LQxRReM-c4QVYtmpmbiC6Gzidrj/view?usp=drivesdk"
 slug: "an.004.094"
 course: tranquility-and-insight
 tags:

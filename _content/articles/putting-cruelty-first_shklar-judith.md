@@ -3,7 +3,7 @@ title: "Putting Cruelty First"
 authors: [shklar-judith]
 external_url: "https://www.dissentmagazine.org/democratiya_article/putting-cruelty-first"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1DtyLTYd94iRZaqJeb5f21Lj7dv5YGIAY/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1U3UVdSx7RDiaNw1WyZxkDAI_2rhnrxC4/view?usp=drivesdk"]
 year: 1982
 journal: daedalus
 volume: 111

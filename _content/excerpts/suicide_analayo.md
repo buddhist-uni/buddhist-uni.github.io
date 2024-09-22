@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/suicide.pdf"
 year: 2007
 drive_links:
- - "https://drive.google.com/file/d/1acSZbufMikYSuO0oJvleJx-P1GMNLnNt/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1Cy7mxi80LORZk-l-TO9SYwPmQC1xU4yC/view?usp=drivesdk"
 course: ethics
 tags:
   - death

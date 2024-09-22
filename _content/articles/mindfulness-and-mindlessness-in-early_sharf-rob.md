@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.thezensite.com/ZenEssays/HistoricalZen/Mind_and_Mindlessness.pdf"
 source_url: "https://doi.org/10.1353/pew.2014.0074"
 drive_links:
-  - "https://drive.google.com/file/d/1Onw13usSEBEBPJd60d1SPMrPTQ0U56pp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QJvLWyaEpwETBrMDIxla6m16-IdgA5Dc/view?usp=drivesdk"
 course: sati
 status: featured
 tags:

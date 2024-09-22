@@ -4,7 +4,7 @@ slug: "an.007.074"
 translator: sujato
 external_url: "https://suttacentral.net/an7.74/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1MwKy6QObADwTqgCs6o4xgPWWGu21ixtw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kVvxl5tATMoyrTELUk8TOG4Sf6_MztpN/view?usp=drivesdk"
 course: imagery
 status: featured
 tags:

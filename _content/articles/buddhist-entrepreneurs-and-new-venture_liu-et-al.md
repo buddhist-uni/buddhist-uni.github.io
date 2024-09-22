@@ -7,7 +7,7 @@ authors:
   - "Yong Li"
 external_url: "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3044525_code651404.pdf?abstractid=3044525&mirid=1"
 drive_links:
-  - "https://drive.google.com/file/d/1Ghsme80TosXsfQZM703US0BcI0g3x1rf/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1DnYU5U6S38b23Uf6QsFszlAyL7HXq6bB/view?usp=drive_link"
 course: medieval
 tags:
   - business

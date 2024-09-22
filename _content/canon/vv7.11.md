@@ -4,7 +4,7 @@ slug: "vv.7.11"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-11/"
 drive_links:
-  - "https://drive.google.com/file/d/1gkCndtlryxjNAMgPJ4NL2B6fKovXOFJr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12RCEvZg6abpj6pFU-oxBeKpX5lqiZL9n/view?usp=drivesdk"
 course: form
 tags:
   - vv

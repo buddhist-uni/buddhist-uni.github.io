@@ -5,7 +5,7 @@ authors:
   - "Robert L. Brown"
 external_url: "https://archive.org/details/early-arts-of-southeast-asia-2005-01-28-robert-brown"
 drive_links:
-  - "https://drive.google.com/file/d/18NTiVT334UoeGA2W0H-94fgk5aR9vHNE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jjT3VESkgjrVSBRX9jDUdCsnbaT8Wsaw/view?usp=drivesdk"
 formats: [mp4]
 course: theravada-roots
 tags:

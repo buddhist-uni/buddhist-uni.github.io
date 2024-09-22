@@ -8,7 +8,7 @@ authors:
 external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0246038&type=printable"
 source_url: "https://doi.org/10.1371/journal.pone.0246038"
 drive_links:
-  - "https://drive.google.com/file/d/1-pkrSJ0IBYrtm-mAlig1VqR6cWZ_JfDC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jEcHUfs6n0CUOF062tM9IK4aXy0i0lqa/view?usp=drivesdk"
 course: function
 tags:
   - meditation

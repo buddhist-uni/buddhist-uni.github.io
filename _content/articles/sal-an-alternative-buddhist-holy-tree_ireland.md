@@ -4,7 +4,7 @@ authors:
   - ireland
 source_url: "https://doi.org/10.1558/bsrv.v17i1.14508"
 drive_links:
-  - "https://drive.google.com/file/d/1hKyu-d2oamzQmbSTUbp6fC2dZDWByypF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XoD3V9AuVhWOziYUlUwIKMLlxWzVp_Ln/view?usp=drivesdk"
 course: nature
 tags:
   - plants

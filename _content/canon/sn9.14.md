@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.009.014"
 external_url: "https://suttacentral.net/sn9.14/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1CqMDZdDxg3kKZsLUcb1PS9EKG_MbhICm"
+  - "https://drive.google.com/file/d/1Ab6g9JtDAepXuecLqH6IiOlGmBhguyN4"
 year: 2018
 course: ethics
 tags:

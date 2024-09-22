@@ -2,7 +2,7 @@
 title: "Pāli Sutta Names in the Majjhima Nikāya"
 formats: [pdf]
 external_url: "https://readingfaithfully.org/wp-content/uploads/2010/12/pali-mn-index.pdf"
-drive_links: ["https://drive.google.com/file/d/1yjExLmziaZrOWtS4qx2Y1mdO4FeI05Ks/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/10LgBnCjl-APCN5xvREwlRJgHUfTR06fr/view?usp=drivesdk"]
 year: 2010
 pages: 1
 month: dec

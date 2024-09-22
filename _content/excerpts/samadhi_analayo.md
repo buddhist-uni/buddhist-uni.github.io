@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/samadhi.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/1Lx2vuZ0snfJxPuGpaSUFwqtN_NojVC0M/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1v9xadM-n-OM-kv9DLonfBo_0wYd3mOoT/view?usp=drivesdk"
 course: samadhi
 status: featured
 tags:

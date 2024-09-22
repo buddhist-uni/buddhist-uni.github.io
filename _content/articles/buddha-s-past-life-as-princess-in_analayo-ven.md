@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2015/03/Anaalayo-Buddha-Past-Life.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1_vmmMkzRDl8L7fYrcf87REB1eFJ-BX3t/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qgJGBpQfhF3JhzP-hhENy1G_xWbVeGnr/view?usp=drivesdk"
 course: jataka
 tags:
   - ea

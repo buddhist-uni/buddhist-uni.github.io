@@ -3,7 +3,7 @@ title: "Realization"
 authors: [fuang]
 external_url: "https://dhammatalks.net/Books/Ajahn_Fuang_Realisation.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1NxnDUvJcIxU6CwmuF5g9pJYhX8Plfoth/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I_JHAsqkILAhssWAko9pDqGcPWOPFcE6/view?usp=drivesdk"
 year: 1993
 translator: geoff
 course: path

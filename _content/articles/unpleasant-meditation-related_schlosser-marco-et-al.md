@@ -10,7 +10,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc6508707?pdf=render"
 source_url: "https://doi.org/10.1371/journal.pone.0216643"
 drive_links:
-  - "https://drive.google.com/file/d/13IRJBoooTrVtw3cMpcGNhjSBeSXBb4hk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nTn3kgem0V45GxeelmqKf7Jj0RPL5QKU/view?usp=drivesdk"
 course: meditation
 tags:
   - academic

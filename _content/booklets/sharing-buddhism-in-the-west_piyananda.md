@@ -4,7 +4,7 @@ authors:
   - piyananda
 source_url: "http://ftp.budaedu.org/ebooks/pdf/EN450.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1FGny-4Iw6T6dVuTW80mpRlmq5RCpi7Jv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gchedyfF3IMZ6oV5BuZ7N9egj5mwwMLO/view?usp=drivesdk"
 course: west
 tags:
   - monastic-advice

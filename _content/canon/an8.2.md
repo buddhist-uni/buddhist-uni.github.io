@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.002"
 external_url: "https://suttacentral.net/an8.2/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/14rS7vbzSyMotuzAwUxOqLFaFHGLhsYyR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zCro1iIGqRvCVEIs27-nXNdD9Qu4_CHe/view?usp=drivesdk"
 course: monastic
 tags:
   - an

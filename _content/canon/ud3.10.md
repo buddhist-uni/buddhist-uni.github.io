@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud3.10"
 external_url: "https://suttacentral.net/ud3.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1l9yrvtXb5RyqJAkMa-sINWCWIPOMxtTc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gb_Lhkv3njpgEBoIH5UcAQ-C3FrvrBPT/view?usp=drivesdk"
 course: view
 tags:
   - rebirth

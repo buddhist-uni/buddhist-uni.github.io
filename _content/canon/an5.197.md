@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.197"
 external_url: "https://suttacentral.net/an5.197/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1bo9uK6l0SndUnP5K9xU0yMn1QeHwUzOR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PKjLk86guFA4DGntSNXdxfHuyToLzQFJ/view?usp=drivesdk"
 course: karma
 tags:
   - weather

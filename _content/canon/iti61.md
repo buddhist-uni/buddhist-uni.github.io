@@ -5,7 +5,7 @@ slug: "iti061"
 subcat: poetry
 external_url: "https://suttacentral.net/iti61/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/18ldVGnUYKhrB0_BsPAauxUwxoUJMyhdW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16aq5RIfsniKeBh_OUysif9cscZ4iHvjO/view?usp=drivesdk"
 course: epistemology
 tags:
   - senses

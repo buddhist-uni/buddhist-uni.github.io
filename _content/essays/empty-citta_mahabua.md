@@ -8,7 +8,7 @@ source_url: "https://youtu.be/knHhIogr7q0"
 year: 2010
 month: jul
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1PZODfEE8rF_bzq4adOHAx4dWxDVbfVGn/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zDETLmzkZoanJjx0YjH_oDfOEuMYWoyY/view?usp=drivesdk"]
 course: nibbana
 tags:
   - arahant

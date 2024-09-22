@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.036"
 external_url: "https://suttacentral.net/an8.36/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1UDahS_j3NNCNHlXpCxbsoY0NL9OGRLuy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HdPiBdZgpGisx3-w4A1cjP8WYXf8KYZJ/view?usp=drivesdk"
 course: rebirth
 tags:
   - dana

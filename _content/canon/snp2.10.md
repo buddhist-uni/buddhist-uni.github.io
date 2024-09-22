@@ -5,7 +5,7 @@ slug: "snp.2.10"
 subcat: poetry
 external_url: "https://suttacentral.net/snp2.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1gsrGRi3qhMLI-UF1NlYbcVRFBAwH0xA8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hT6cOL_aCOeWahL6AVMbmUaceNeRuLyr/view?usp=drivesdk"
 course: hindrances
 tags:
   - canonical-poetry # really could move here

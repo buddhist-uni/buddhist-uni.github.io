@@ -6,7 +6,7 @@ subcat: film
 external_url: "https://youtu.be/M_IDNMD39JA?t=9m40s"
 formats: [mp4]
 drive_links:
-  - "https://drive.google.com/file/d/11mVyN4mTupzk_pXEpV_qFCGwUK0QSfNR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XZ88oDBiTUlVEKCM4FHAUFJsOrcnHr5Y/view?usp=drivesdk"
 course: tantric
 tags:
   - bart

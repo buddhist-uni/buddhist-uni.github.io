@@ -4,7 +4,7 @@ authors:
   - cone-margaret
 external_url: "https://archive.org/download/jpts-xxii-1996/Pali%20Lexicography%20-%20Margaret%20Cone_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1JdN07QbBNh00las84LtwY8QRz47RhNy7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yP5eTuSyn_8LJ6HT1Dq2uvJdFFgMCnj2/view?usp=drivesdk"
 course: pali-dictionaries
 year: 1996
 journal: jpts

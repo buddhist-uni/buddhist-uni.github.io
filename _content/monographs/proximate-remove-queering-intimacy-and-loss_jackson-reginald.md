@@ -5,7 +5,7 @@ authors:
 external_url: "https://library.oapen.org/bitstream/20.500.12657/50162/1/9780520382558.pdf"
 source_url: "https://doi.org/10.1525/luminos.106"
 drive_links:
-  - "https://drive.google.com/file/d/1jrohpJ19EKUaJU6MAFJzEAvOJCc23NOP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fPXnjsf7fTerIp7EKBalkjdi3gpfpeHX/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1SeSPhN13Ox-mnCvVwTbsjoPUFXa16Rvn/view?usp=drivesdk"
 tags:
   - queer-history

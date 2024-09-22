@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/sakkayaditthi.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/1CEpJAWaw7TX8YkdljyRjfFgRGCCtmQQY/view?usp=drive_link"
+ - "https://drive.google.com/file/d/1EOOVEcpBdg_T12Y2su9aM66z4HOioQ7p/view?usp=drive_link"
 course: view
 tags:
   - phenomenology

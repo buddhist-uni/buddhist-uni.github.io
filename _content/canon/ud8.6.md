@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud8.6"
 external_url: "https://suttacentral.net/ud8.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/16T_FlGBnXiO299e5l64XXM06zYR9Xzv8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pD9J6-hLsvwOLiXXIjPFrc8plwLhwv5M/view?usp=drivesdk"
 course: roots
 tags:
   - ashoka

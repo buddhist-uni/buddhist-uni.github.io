@@ -6,7 +6,7 @@ journal: bsr
 year: 2005
 volume: 22
 pages: "93--105"
-drive_links: ["https://drive.google.com/file/d/1Q6CnYJaYGBnCtPwbIL7_5PaUCa85fH2k/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1VhwUmmNH0os2JrQFdJVqjS9OUu8PnyL4/view?usp=drivesdk"]
 course: agama
 status: featured
 tags:

@@ -6,7 +6,7 @@ year: 2018
 month: mar
 external_url: "https://www.abhayagiri.org/talks/6887-what-makes-a-life-truly-worthwhile"
 drive_links:
- - "https://drive.google.com/file/d/1vPkxyZtaSThN3pAesuzPCKIElRMAsXDe/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1lSLxHWJtR7P8p8-m8Yl2FafF791chVgs/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

@@ -5,7 +5,7 @@ slug: "thig.15.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thig15.1/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1lVo1zu06LhVnh2ehvir_b3T80QtS6zN7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZVtloJrxMbEQX305B60l6y-ptPSCZdGE/view?usp=drivesdk"
 course: characters
 tags:
   - rebirth-stories

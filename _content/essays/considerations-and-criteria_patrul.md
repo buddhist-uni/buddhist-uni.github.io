@@ -5,7 +5,7 @@ year: 2009
 translator: "Karen Liljenberg"
 editor: "Adam Pearcey"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1Mbioj2WlTAQCTl7MRenYauoad0TQDvXf/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1_oTZkIz69fLlewm3MhalFwVWE1I5SX9g/view?usp=drivesdk"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/patrul-rinpoche/nine-considerations"
 course: ethics
 tags:

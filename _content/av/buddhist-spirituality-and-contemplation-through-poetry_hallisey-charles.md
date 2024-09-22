@@ -4,7 +4,7 @@ authors:
   - hallisey-charles
 external_url: "https://www.youtube.com/watch?v=Shwt5kEc7ww"
 drive_links:
-  - "https://drive.google.com/file/d/1gTxUCv3VpxponxLrc_C2Pom3Mgxwqasu/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1suQxHWooT1RZuyHASWwzOs4SKXGgo8J_/view?usp=drive_link"
 course: theravada-roots
 tags:
   - dialogue

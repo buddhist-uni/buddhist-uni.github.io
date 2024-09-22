@@ -7,7 +7,7 @@ publisher: dharmadrum
 course: ma
 tags:
   - agama
-drive_links: ["https://drive.google.com/file/d/1-G0sujV1cACwW85c-s2RPelC2uiorqNo/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1y0ls1RZJrekDHw7HyQIa1RI0t_n90W6O/view?usp=drivesdk"]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/mastudies.pdf"
 pages: 600
 ---

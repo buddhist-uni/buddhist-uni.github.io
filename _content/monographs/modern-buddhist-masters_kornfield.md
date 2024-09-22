@@ -6,7 +6,7 @@ publisher: Unity Press
 olid: OL9148954M
 external_url: "https://www.bps.lk/library-search-select.php?id=bp507s"
 drive_links:
-  - "https://drive.google.com/file/d/1Xo3E0ewgayWfgFg2IDk0QplFMGehmygp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sWv3n0r4mPQj-yoqGoR3U2LHUwpqBNcw/view?usp=drivesdk"
 year: 1977
 course: theravada
 tags:

@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud8.4"
 external_url: "https://suttacentral.net/ud8.4/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1O8iuBrqEESmdCQoEbhFS12wzDtR5HNLS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1N4-9NyrPkSZ1ErYTXDMcBcwVd9lhN9d7/view?usp=drivesdk"
 course: origination
 tags:
   - samadhi

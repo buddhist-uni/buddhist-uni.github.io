@@ -3,7 +3,7 @@ title: "Kṣatra-Dharma and Rāja-Dharma"
 authors:
   - wijesekera
 drive_links:
-  - "https://drive.google.com/file/d/19tGUVcxndWiKR5rGsDfnbFJMEjWEPQg7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EHZDeoKyjIB0vhHnMy-E3VxMpc6v9zoh/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Ksatra-dharma%20and%20Raja-dharma%20-%20Wijesekera.pdf"
 course: setting

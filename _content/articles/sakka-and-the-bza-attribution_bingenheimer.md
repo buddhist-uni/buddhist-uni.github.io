@@ -8,7 +8,7 @@ volume: 25
 number: 2
 pages: "149--173"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/22717/24844"
-drive_links: ["https://drive.google.com/file/d/1ni0VLzBvP3OEXtBlthJdHBpJ1-Hilcch/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1MnUGN2cF5xi4s-wMN-wYWYNrgEqV1M-l/view?usp=drivesdk"]
 course: sa
 tags:
   - deva

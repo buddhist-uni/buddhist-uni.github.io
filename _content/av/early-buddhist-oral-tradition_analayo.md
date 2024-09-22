@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Daniel Aitken"
 external_url: "https://wisdomexperience.org/wisdom-podcast/143-ven-analayo/"
 drive_links:
-  - "https://drive.google.com/file/d/1pByQeFvbcmzt6wKb0bnnKkHyNuvAmSwT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GVeQ2tUrzEuBnsE3pMZ8DbhFv2cHQ6dk/view?usp=drivesdk"
 course: roots
 tags:
   - pali-canon

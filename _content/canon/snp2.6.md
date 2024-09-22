@@ -5,7 +5,7 @@ slug: "snp.2.06"
 subcat: poetry
 external_url: "https://suttacentral.net/snp2.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1GaQ0bLODUTNqy5CcRYVW86zhJgZUoxjY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P4Rdk3jkNfAkFQEY3-_53Pd11OOigvpb/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - sangha

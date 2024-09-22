@@ -3,7 +3,7 @@ title: "DN 5 Kūṭadanta Sutta: With Kūṭadanta"
 slug: "dn05"
 external_url: "https://suttacentral.net/dn5/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1M43VcyyF4JojMADYNI33XDRjnShBNz9C/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ViFdMYSRDsIM-Gxd_e5edBw9ZHEth_kY/view?usp=drivesdk"]
 status: featured
 course: becon
 tags:

@@ -6,7 +6,7 @@ editor: "Kazuaki Tanahashi"
 translator: "Dan Welch"
 external_url: "http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Uji_Welch.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1nbVs8vNa9LT4A_GJN2cHtrLIAek0sUwF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cq8ZGbee5ULIO0HzaALsXp_9DR7BQ_oQ/view?usp=drivesdk"
 status: featured
 course: time
 tags:

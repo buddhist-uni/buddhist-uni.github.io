@@ -4,7 +4,7 @@ authors:
   - brahmali
 external_url: "https://bswa.org/teaching/mn117-the-great-forty-with-ajahn-brahmali/"
 drive_links:
-  - "https://drive.google.com/file/d/1E0DM96oe_m3IY3mVEwFud1dRE-d56aXR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ktez3-pg2XfcNllHK4DHhvgonLTVR9hb/view?usp=drivesdk"
 course: philosophy
 tags:
   - mn

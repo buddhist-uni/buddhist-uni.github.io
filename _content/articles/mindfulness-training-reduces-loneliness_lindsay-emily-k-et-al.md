@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/116/9/3488.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1813588116"
 drive_links:
-  - "https://drive.google.com/file/d/1avT7Uu5lAXRRPVLCmdZMzjvprdxNnLIt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Vghskk5-CG6ua8VFAdO5dDw4mRJMQmS3/view?usp=drivesdk"
 course: meditation
 tags:
   - groups

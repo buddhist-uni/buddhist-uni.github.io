@@ -4,7 +4,7 @@ authors:
   - "Brooke Jarvis"
 external_url: "https://www.newyorker.com/magazine/2019/08/05/how-mosquitoes-changed-everything"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1Bob7LBb4CSnQ0CW2Art_-rvKrcRjZXR_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1JQucdq0a4I-hEh6wNzngi675ENkMGoeO/view?usp=drivesdk"]
 year: 2019
 month: jul
 journal: "The New Yorker"

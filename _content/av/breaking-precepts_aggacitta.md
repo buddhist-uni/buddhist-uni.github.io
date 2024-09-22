@@ -5,7 +5,7 @@ authors:
 external_url: "https://youtu.be/TdAwD43lOOo"
 source_url: "https://web.archive.org/web/20120525062447/http://www.justbegood.net/Downloads/Other%20talks/Occasions%20for%20Breaking%20Precepts.MP3"
 drive_links:
-  - "https://drive.google.com/file/d/1dl1NGTt11WeX0lhiyAo9lVm89Az4tU-a/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1f1D4smmJyaf3MZbhbxrw7w0SSxdg8b1R/view?usp=drivesdk"
 course: thought # solidly
 tags:
   - ethics

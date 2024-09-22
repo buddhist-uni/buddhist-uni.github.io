@@ -5,7 +5,7 @@ authors:
 status: featured
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Talks/140622_types_of_meditation_atlanta.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1enZ1hImv0ZuWVg8KFTlMBgFzo5h1TzVO/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1SzGFg9Q2K5elLdHspOlmgF1M_xHpVZgc/view?usp=drive_link"
 course: emptiness
 tags:
   - meditation

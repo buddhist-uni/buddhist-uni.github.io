@@ -7,7 +7,7 @@ file_links:
   - "exclusive_01/The%20Solitary%2C%20Itinerant%20Renouncer%20in%20Ancient%20Indian%20G%C4%81th%C4%81-Poetry%20-%20Kristoffer%20af%20Edholm.pdf"
 source_url: "https://www.stockholmuniversitypress.se/site/books/e/10.16993/bbi/"
 drive_links:
-  - "https://drive.google.com/file/d/15Zj2w9GuJZcRxSwY2dmiXzv83b4V_dk4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dxxeHxq7vPrVk24ctgzmSIlp1SSQOuaL/view?usp=drivesdk"
 course: setting
 tags:
   - buddhist-poetry

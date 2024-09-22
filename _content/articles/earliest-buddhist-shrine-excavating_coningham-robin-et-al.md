@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/90338647E132E7B20420CCC9C847E237/S0003598X00049899a.pdf"
 source_url: "https://doi.org/10.1017/s0003598x00049899"
 drive_links:
-  - "https://drive.google.com/file/d/1pWAzgqFELuB84gYjXA5WOcMcv0VTXx7N/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14NY_ebATFX9JSXUzqLda2sFnooKbsSPP/view?usp=drivesdk"
 course: setting
 tags:
   - historiography

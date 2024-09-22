@@ -11,7 +11,7 @@ course: ma
 tags:
   - view
 status: featured
-drive_links: ["https://drive.google.com/file/d/1FZcYR-2ZXWhAeqtDuE-ZPvK1lc2YZURV/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1tlJjNuQxJ4hl7jFXt8_Uabniil7cg4zl/view?usp=drivesdk"]
 external_url: "https://bdkamerica.org/product/the-madhyama-agama-middle-length-discourses-volume-i/"
 series: ma_bdk
 number: 1

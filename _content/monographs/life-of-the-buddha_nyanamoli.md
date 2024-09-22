@@ -7,7 +7,7 @@ external_url: "https://store.pariyatti.org/life-of-the-buddha"
 course: buddha
 status: featured
 drive_links:
-  - "https://drive.google.com/file/d/1pbuLWiE1hVw7pgtPdypXdhdv1axcazkR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ucXqB1qXXEzhBbCeSlGNz27X8xDzjW2L/view?usp=drivesdk"
 tags:
   - pali-canon
   - ebts

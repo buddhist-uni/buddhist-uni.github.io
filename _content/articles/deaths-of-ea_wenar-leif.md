@@ -5,7 +5,7 @@ authors:
 external_url: "https://web.archive.org/web/20240417155142/https://www.wired.com/story/deaths-of-effective-altruism/"
 source_url: "https://www.wired.com/story/deaths-of-effective-altruism/"
 drive_links:
-  - "https://drive.google.com/file/d/1HgJ71h2C_06T1FcESn2tETO1ownlnfQF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EShacKWwv3ONaLM9vLT2qORBVV9P1Up_/view?usp=drivesdk"
 course: intellect
 status: featured
 tags:

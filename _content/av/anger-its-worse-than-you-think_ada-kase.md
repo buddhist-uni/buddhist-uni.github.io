@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/Anger_-_It's_Worse_Than_You_Think_and_How_to_Manage_It%20(2019-01-24)%20-%20Buddhist%20Auntie.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1xTYGdCYpuLi8l5bZZ-Wx0pVU203PYBjz/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ODTxS6pU4I6y2ncxxfQJfXOsU2Tir2yj/view?usp=sharing"
 format: [mp3]
 course: problems
 tags:

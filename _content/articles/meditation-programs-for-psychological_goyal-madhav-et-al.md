@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc4142584?pdf=render"
 source_url: "https://doi.org/10.1001/jamainternmed.2013.13018"
 drive_links:
-  - "https://drive.google.com/file/d/1dJNbLINHVRuOwe9jjpXqqT79vxYTkAxC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19Wq21oQ3nmDifWV67Qx4mPdRWZH4VUnV/view?usp=drivesdk"
 course: academic
 tags:
   - meditation

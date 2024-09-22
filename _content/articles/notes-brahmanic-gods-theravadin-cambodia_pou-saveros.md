@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Notes%20on%20Brahmanic%20Gods%20in%20Theravadin%20Cambodia_text.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/volumes/vol14/vol14_art23_POU.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1zVR_86BJ2qojHQHUBExA-Rc6iPkf27Wc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1We5e87X842katl9bG0ail0mfY008h56T/view?usp=sharing"
 course: theravada-roots
 tags:
   - brahminic

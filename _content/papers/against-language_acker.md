@@ -7,7 +7,7 @@ translator:
 external_url: "https://ubu.com/papers/Acker-Kathy_The_Language_of_the_Body.pdf"
 alternate_url: "https://www.yvonnebuchheim.com/uploads/1/7/0/8/17088324/acker-kathy_the_language_of_the_body.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/15qYP1KWdm6_C9TWvIjMIXuX6oGVhTC0F/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pD-KCM2Xxwk4jnSuWGby2cQeE3XjNBHY/view?usp=drivesdk"
 status: featured
 course: body
 tags:

@@ -4,7 +4,7 @@ authors: [gombrich]
 external_url: "https://archive.org/download/jpts-xi-1987/Old%20Bodies%20Like%20Carts%20-%20Richard%20Gombrich_text.pdf"
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1987_XI.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1JeqSRCa8RyvxwLChZNw5HmCo3NySrWaw/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/11qQjyQgH8DvVtwLD5OHvE6PDNgb0Z5Sl/view?usp=drivesdk"]
 year: 1987
 volume: 11
 pages: "1--3"

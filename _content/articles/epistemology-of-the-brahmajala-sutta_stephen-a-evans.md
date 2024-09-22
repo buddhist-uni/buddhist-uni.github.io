@@ -4,7 +4,7 @@ authors:
   - "Stephen A. Evans"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8892"
 drive_links:
-  - "https://drive.google.com/file/d/12IPXQcjqip1auvfJnqiHC6qCvBf2jdzb/view?usp=drive_link"
+  - "https://drive.google.com/file/d/135c1u_bJGU453uYcyYv_jW8m3WiY7sRc/view?usp=drive_link"
 course: epistemology
 tags:
   - sati

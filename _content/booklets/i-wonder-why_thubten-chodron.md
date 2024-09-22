@@ -5,7 +5,7 @@ external_url: "https://thubtenchodron.org/books/i-wonder-why-2/"
 source_url: "https://archive.org/download/i-wonder-why-thubten-chodron/I%20Wonder%20Why%20-%20Thubten%20Chodron_text.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1N1498Px9MjU5FiSMABT-Byz83hZuE6qs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vTuVqjN07kgD_Fa11GB7hmQXQbzt9xNj/view?usp=drivesdk"
 year: 1988
 olid: OL32580792M
 course: form

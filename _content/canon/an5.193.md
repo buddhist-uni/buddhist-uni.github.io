@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.193"
 external_url: "https://suttacentral.net/an5.193/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1jVf34BKWGPFWFlSABBNZYd8Hde5UncoF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Cmeszg5X-iUF1Mem1TEymotCQGVOu8LS/view?usp=drivesdk"
 course: perception
 tags:
   - intellect

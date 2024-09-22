@@ -5,7 +5,7 @@ authors:
 editor: mills-laurence
 external_url: "https://www.bps.lk/olib/bp/bp432s_Soni_Lives-Highest-Blessings.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1rK8nsGN693ap0gg5ysi2V1hKqUBiOB6n/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19LaCzdStL6NDLWJIBWpMSgNsFUPLD9LD/view?usp=drivesdk"
 course: pali-language
 tags:
   - path

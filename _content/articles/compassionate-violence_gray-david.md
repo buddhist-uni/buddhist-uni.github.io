@@ -4,7 +4,7 @@ authors:
   - "David B. Gray"
 source_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/gray-article.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/17NyzeJ75Ytyy-6oXcfXGp-aq02vX4si4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C-y7aSsH8Uy10oQmzmU42FpKvdiXHyeR/view?usp=drivesdk"
 course: tantric
 tags:
   - power

@@ -4,7 +4,7 @@ authors:
   - levman
 external_url: "https://www.academia.edu/61873724/Lexical_Ambiguities_in_the_Buddhist_Teachings"
 drive_links:
-  - "https://drive.google.com/file/d/1gl2a7dzmZP-Q5TH-2vqLDHQKzGHzkTU8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yL7Acb-2ksj-Bmxim2nqoZf1OVQlTFWR/view?usp=drivesdk"
 status: featured
 course: canonical-poetry
 tags:

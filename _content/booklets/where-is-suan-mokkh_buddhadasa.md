@@ -6,7 +6,7 @@ translator: "Tanya Brockelman"
 olid: OL32040806M
 external_url: "https://www.suanmokkh.org/books/21"
 drive_links:
-  - "https://drive.google.com/file/d/111zLEVmdgEKUdtj5jYCx2W5RUbRa4196/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13KpQ2iQlGkEAh1cAW6xq3SzpLhbeuDvZ/view?usp=drivesdk"
 course: sangha
 tags:
   - nibbana

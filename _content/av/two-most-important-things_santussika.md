@@ -3,7 +3,7 @@ title: "The Two Most Important Things"
 authors: [santussika]
 external_url: "https://www.karunabv.org/uploads/1/2/6/3/12630738/20131018-ayya_santussika-av-the_two_most_important_things.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1rEVKyWy6jfB4foS3qSIaXjyQgJzq9pQC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FNKY6O1sVNCw7pBtWABnokLFBelkwxa-/view?usp=drivesdk"
 month: oct
 year: 2013
 course: sangha

@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vipaka.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1v7lMJsD2JQDrXJQH_UZTEeIwkr5d-AC5/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1pnqJmFcLxhTa_gMhshp3oh7UTrYI5hVw/view?usp=drivesdk"
 course: philosophy
 tags:
   - karma

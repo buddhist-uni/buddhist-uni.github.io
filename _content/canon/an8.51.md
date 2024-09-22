@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.051"
 external_url: "https://suttacentral.net/an8.51/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1FjVn0W0qdIMyATW1j-l0_v_5eH094S9u/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HnMWhZszLIfBwIDYU5n_YsrJOW1dY8U_/view?usp=drivesdk"
 course: pali-canon
 tags:
   - bhikkhuni

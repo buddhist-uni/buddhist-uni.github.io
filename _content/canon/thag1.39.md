@@ -5,7 +5,7 @@ slug: "thag.01.39"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.39/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1R1x_KjMWKEwKKhvVwVcOpmFZf_uKZ-jS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pU4uWaZtCZVJrUwTOVzHOq1NgC52Jya0/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - imagery

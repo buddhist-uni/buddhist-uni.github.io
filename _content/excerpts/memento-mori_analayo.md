@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/memento.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1qSL9gP1zHLPomgBqHo2mkTG6psSG7BlI/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ubGdGHciwdyrDGEWnAFZrz7aMZuP7UFH/view?usp=sharing"
 course: problems
 tags:
   - death

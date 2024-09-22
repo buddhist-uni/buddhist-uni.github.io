@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/download/good-kamma-bad-kamma-what-exactly-is-kamma/"
 drive_links:
-  - "https://drive.google.com/file/d/1D0wv6VDmKYi4BXXf4eURLf4S4gvW4S41/view?usp=sharing"
+  - "https://drive.google.com/file/d/1bAAtA9GjUNEw2YRDwvxAP0Uf7HZpX2QG/view?usp=sharing"
 course: karma
 tags:
   - rebirth

@@ -2,7 +2,7 @@
 title: "How the Sangha Works"
 external_url: "https://www.youtube.com/watch?v=omzglzirai4"
 formats: [mp3]
-drive_links: ["https://drive.google.com/file/d/1Za_TzEqVjWkq70SMeuoFhYpuhmouFu9M/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1a9Yvs0qZt-kSPhc0Oq1-UWnrzWpdPYX7/view?usp=drivesdk"]
 authors: [sujato]
 year: 2014
 month: oct

@@ -4,7 +4,7 @@ slug: "an.008.025"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.25/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1fjbkhbGywS-BC70jWr5rwaSm9vQP2aOx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1J3xJlu1DNnOBg4hIlUL-QiP_R365SGgr/view?usp=drivesdk"
 course: lay
 tags:
   - an

@@ -5,7 +5,7 @@ authors:
 translator: "Gyurme Avertin and Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/advice-on-abandoning-the-eight-worldly-concerns"
 drive_links:
-  - "https://drive.google.com/file/d/102swYyrqeJIy2NfaZlw5x3rZ6q55C1w1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uHGdZG5pAnEV5XUpbzLCfPZ3PuZnYwRA/view?usp=drivesdk"
 course: nibbana
 tags:
   - emptiness

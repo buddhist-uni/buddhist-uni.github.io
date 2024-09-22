@@ -5,7 +5,7 @@ slug: "ud1.3"
 subcat: poetry
 external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.1.03.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/1cPmgT9PzTw2-6-bNhru-TZKYzDvH7B64/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16Up9rXp-3coX_sNjBjfCUJNpx9-T3fNV/view?usp=drivesdk"
 course: origination
 tags:
   - nibbana

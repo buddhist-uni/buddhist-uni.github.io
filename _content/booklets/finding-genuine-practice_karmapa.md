@@ -5,8 +5,8 @@ authors:
 translator: "Khenpo David Karma Choephel"
 external_url: "https://dharmaebooks.org/finding-genuine-practice/"
 drive_links:
-  - "https://drive.google.com/file/d/1IpHcx2msZHhUSBYWkD2tjgj3I96AlSm8/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1InF4vjrQqR4n3cWnQTRCEboDQCxAsnfQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16gsP4pVobzB5lOOkFvzCcFr-W8cp_bQ7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19q5Cj6_RebhyhyILE-V_Lx3vkbzeJc_2/view?usp=drivesdk"
 tags:
   - mahayana
   - tibetan

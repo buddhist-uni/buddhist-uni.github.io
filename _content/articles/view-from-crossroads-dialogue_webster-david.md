@@ -6,7 +6,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8874/10328/11587"
 source_url: "https://doi.org/10.1558/bsrv.v25i1.106"
 drive_links:
-  - "https://drive.google.com/file/d/1dx8KzZ8XoYqEcD40yJS4C27SpNlY1Tvb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_UfJMWS6UfPn7QqjuvB8xAwUqBtAEvBE/view?usp=drivesdk"
 course: dialogue
 tags:
   - academic

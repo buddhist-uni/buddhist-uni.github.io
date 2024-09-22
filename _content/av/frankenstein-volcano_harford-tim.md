@@ -7,7 +7,7 @@ editor: "Julia Barton"
 external_url: "https://timharford.com/2022/06/cautionary-tales-frankenstein-versus-the-volcano/"
 source_url: "https://www.pushkin.fm/podcasts/cautionary-tales/frankenstein-versus-the-volcano"
 drive_links:
-  - "https://drive.google.com/file/d/1JJZq-rAiHh3w2XcvBqpH-Yz6WjUeO9Aj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vDcOPQ8JGkAhdeoifVGvyRI_W1LES06D/view?usp=drivesdk"
 course: literature
 tags:
   - wider

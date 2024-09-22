@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.002.026"
 external_url: "https://suttacentral.net/sn2.26/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1R-5Lhe-mRtXa489TIAPqxNDviPNnqm10/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Hd16SCgp9ZPhrL0iKj_H7vYd5s_E1qIW/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

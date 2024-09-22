@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vihesa.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/12-C78BT5Zxasa_3xmp1D57Sk9d_2YFxC/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1ktY9ueO8Fi8F0ggzxcHFKs_H7cwOBe_7/view?usp=drivesdk"
 course: nibbana
 tags:
   - feeling

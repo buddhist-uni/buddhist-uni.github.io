@@ -4,7 +4,7 @@ authors:
   - "David L. Gardiner"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-12/05Gardiner.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1GoeGvDvQBamiYKf7iKKXD3j9j90MmR-s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NC2VZEqKnk2Gqc2glKh1_Ev1FtJxnI1k/view?usp=drivesdk"
 course: tantric
 tags:
   - dialogue

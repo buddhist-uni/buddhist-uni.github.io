@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.052"
 external_url: "https://suttacentral.net/an8.52/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1UNToMVduRb8I73maq2-892z45Wb6Ib0h/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IQEqQsQE0osb_yrngdMlnPLRBDzmf8kD/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - pedagogy

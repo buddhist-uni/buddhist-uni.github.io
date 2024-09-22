@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/4727549/files/354-989-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1300"
 drive_links:
-  - "https://drive.google.com/file/d/1WKmCAE5WO6WIGYUarrBuydTcmKhwAPi8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YyxSDZJGWdJWJUnyUAm08nrzJJKxe-Wc/view?usp=drivesdk"
 course: west
 tags:
   - psychology

@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/details/PaliMonasticTerms"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1BlE8tS_xs7uIcYH7mJv3DfHtbvUhVyxZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Vp5ZRkBz1lt_bb9OarTzxC3ofi9qFA9X/view?usp=drivesdk"
 month: nov
 year: 1974
 publisher: "Bharati Prakashan"

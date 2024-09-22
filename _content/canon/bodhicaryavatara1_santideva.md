@@ -3,7 +3,7 @@ title: "_Bodhicaryāvatāra_ Chapter 1: The Benefits of Bodhicitta"
 subcat: poetry
 authors:
   - santideva
-drive_links: ["https://drive.google.com/file/d/1o1pHL63hIJsiHrS_L5C4afdinOtnWZkw/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1m2P5y444ijUoRqBUENc1IVo7ZZcGUHbF/view?usp=drivesdk"]
 external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhicharyavatara-1"
 status: featured
 course: tantric

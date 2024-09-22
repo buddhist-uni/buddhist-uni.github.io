@@ -4,7 +4,7 @@ authors:
   - garfield-jay
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/9285"
 drive_links:
-  - "https://drive.google.com/file/d/1GM1j_sDke7c1WOqXtgdWsxuk4PUVAUWZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wZfDDuCynJEY9frIM8NGzoMvCE8dvTbx/view?usp=drivesdk"
 course: ethics
 tags:
   - mahayana

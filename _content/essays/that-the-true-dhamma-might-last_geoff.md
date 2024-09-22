@@ -3,7 +3,7 @@ title: "That the True Dhamma Might Last a Long Time: Readings Selected by King A
 authors: [geoff]
 external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/asoka.html"
 year: 1993
-drive_links: ["https://drive.google.com/file/d/1tj1RHe_LIaTt9wBvQ9v5d-RRWK3Q_Op-/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1IJF0dw8fEYxwF1h-jAXWYOsV7prbo_t9/view?usp=drivesdk"]
 course: roots
 tags:
   - pali-canon

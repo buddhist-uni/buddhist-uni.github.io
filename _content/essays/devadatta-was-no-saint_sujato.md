@@ -4,7 +4,7 @@ authors: [sujato]
 year: 2020
 month: apr
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1GDt4rHBKc7v8YyUQ8-_dZ4uI3WDe5Rwz/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1_dAxOawuOjDganTDfHYVby67M6QHp_Hc/view?usp=drivesdk"]
 external_url: "https://discourse.suttacentral.net/t/why-devadatta-was-no-saint/15769?u=khemarato.bhikkhu"
 course: characters
 pages: 13

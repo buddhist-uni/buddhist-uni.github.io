@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://dharmatalks.jodoshinshu.faith/doubt-as-karmic-currency-by-rev-dr-takashi-miyaji/"
 drive_links:
-  - "https://drive.google.com/file/d/1M7vduLrCasAbjaon3mngQ9cmlCHEDsBP/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1L7nd25qHBaLAZsQMVJwVSPp9r_qYY4oS/view?usp=drive_link"
 course: karma
 tags:
   - pureland

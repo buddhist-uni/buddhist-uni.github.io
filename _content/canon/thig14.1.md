@@ -3,7 +3,7 @@ title: "Thig 14.1 Subhājīvakambavanikā Therīgāthā: Subhā of Jīvaka’s M
 slug: "thig.14.01"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/thig/thig.14.01.than.html"
 translator: geoff
-drive_links: ["https://drive.google.com/file/d/1M8n-ZYjGS8Dxec5-hXEUnoeXmsdjEGWm"]
+drive_links: ["https://drive.google.com/file/d/1gZWCkWA_XmJwfxFtzaEzQqq6gZwEGXhR"]
 course: ethics
 status: featured
 tags:

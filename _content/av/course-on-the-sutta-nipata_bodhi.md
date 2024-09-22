@@ -5,7 +5,7 @@ authors:
 subcat: course
 external_url: "https://bodhimonastery.org/sutta-nipata.html"
 drive_links:
-  - "https://drive.google.com/drive/folders/1Rlf75Sod8qOLVb4LTZh9_KijSncaKRH8"
+  - "https://drive.google.com/drive/folders/1AMrtfCK3Gq3axrALS83iQhZbhdBsFV04"
 course: snp
 formats: [MP3s]
 tags:

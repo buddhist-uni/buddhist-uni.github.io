@@ -3,7 +3,7 @@ title: "Susīma's Conversation with the Buddha"
 authors:
   - bodhi
 drive_links:
-  - "https://drive.google.com/file/d/1MPlL0yhWyvTEoMB8iEtiI1y4VeQbXVxp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1W76vUZWzfoGn_id2th4GqS_lqxS3SAQz/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Susīma’s%20Conversation%20with%20the%20Buddha%20-%20Bhikkhu%20Bodhi.pdf"
 course: agama

@@ -12,7 +12,7 @@ year: 2017
 file_links:
   - "exclusive_01/Analytical%20Study%20of%20the%20Monks%E2%80%99%20p%C4%81cittiya%20%E6%B3%A2%E9%80%B8%E6%8F%90%20Rules.pdf"
 drive_links:
- - "https://drive.google.com/file/d/1FXM6WWi6mNRjrffYhSt55a_4_2vO3-h8/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1K7IA5oYWvv7AiG_AUxWavBH9xqLpxqz-/view?usp=drivesdk"
 course: vinaya-studies
 ---
 

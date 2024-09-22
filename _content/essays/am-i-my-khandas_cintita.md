@@ -4,7 +4,7 @@ authors:
   - cintita
 external_url: "https://bhikkhucintita.wordpress.com/2018/02/21/am-i-my-five-khaṅdhas/"
 drive_links:
-  - "https://drive.google.com/file/d/1pDpheYlI2almx-_cs-a4aTA5U_M52Ll3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kOvO9Y7tDteRuCgvic3pO-kHFTNILtQJ/view?usp=drivesdk"
 course: philosophy
 tags:
   - vipassana

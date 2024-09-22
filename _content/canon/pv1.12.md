@@ -3,7 +3,7 @@ title: "Pv 1.12 Uraga Sutta: The Snake"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/pv1-12/"
 drive_links:
-  - "https://drive.google.com/file/d/1lRfLKQ9SJeKNzWstXwgjY1U6MMfPnf2g/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yVzmIMri259dEFPlxJzCHfGvRU-QbDYn/view?usp=drivesdk"
 course: function
 tags:
   - pv

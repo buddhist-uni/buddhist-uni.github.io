@@ -6,7 +6,7 @@ source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_28_2006
 file_links:
   - "exclusive_01/Ja%CC%84taka%20and%20Pan%CC%83n%CC%83a%CC%84sa-ja%CC%84taka%20in%20South-East%20Asia%20-%20Peter%20Skilling.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1WKQoX6xQ6QyTy947JVzLzwhRyr53umvi/view?usp=sharing"
+  - "https://drive.google.com/file/d/10KrXlg6eyKdL8iXVAFoL3-nqwK6nfa_o/view?usp=sharing"
 course: rebirth-stories
 tags:
   - theravada-roots

@@ -2,7 +2,7 @@
 title: "What the Buddha Would Not Do: According to the _Bāhitika-sutta_ and its _Madhyama-āgama_ Parallel"
 authors: [analayo]
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/anaalayo-article.pdf"
-drive_links: ["https://drive.google.com/file/d/1vyixxELKsQ0T9unitakpmdTe6vcAUWDM/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1uZjSGBhmlWrGbNiTcyfoMcK-6_1Vp4Jo/view?usp=drivesdk"]
 tags:
   - ma
   - function

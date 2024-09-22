@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.087"
 external_url: "https://suttacentral.net/an8.87/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1YYAM5BmUDgb_NIBg4rFweotUknuQyvtf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hXC-yoolAbDPy8syMtfchY5lLIM4Se4V/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - dana

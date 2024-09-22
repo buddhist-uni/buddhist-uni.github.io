@@ -4,7 +4,7 @@ authors:
   - "Jonah Lehrer"
 external_url: "https://archive.boston.com/bostonglobe/ideas/articles/2008/08/17/picturing_our_thoughts/"
 drive_links:
-  - "https://drive.google.com/file/d/1Z4aXDSsbX_5M-LivDjBi-sf-AXBR4tCI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13ku2DgQF39UqWghnlZVBtk0WQ5D_cpX_/view?usp=drivesdk"
 course: inner
 tags:
   - neuroscience

@@ -6,7 +6,7 @@ source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_28_2006
 file_links:
   - "exclusive_01/Mythology%20as%20Meditation%20-%20Rupert%20Gethin.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hkMSzN4_Qbsa4oy7sGnvNobfeaPcXLYb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aBG7ijN7SJwa-l4vsg0L6437YpyPY091/view?usp=drivesdk"
 course: imagery
 tags:
   - rebirth-stories

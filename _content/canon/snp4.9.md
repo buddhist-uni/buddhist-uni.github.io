@@ -5,7 +5,7 @@ slug: "snp.4.09"
 subcat: poetry
 external_url: "https://suttacentral.net/snp4.9/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1USInFcOO6qVLAgFjbRO9n25HssVilV3r/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EaLVfWLYtVVm1zWD6rj31yOB1Rg-EId3/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - dialogue

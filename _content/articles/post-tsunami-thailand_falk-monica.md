@@ -6,7 +6,7 @@ external_url: "https://zenodo.org/record/4727600/files/311-1023-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1305/1142"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1XVvrvCuLW9v7dasCpAPz-togZxspE8a-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Rl1fjUUpz3PnpvgwKW4B2BQswc_P5FRn/view?usp=drivesdk"
 year: 2021
 journal: jgb
 volume: 22

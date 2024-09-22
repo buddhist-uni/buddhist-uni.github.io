@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Shannon Harvey"
 external_url: "https://www.shannonharvey.com/blogs/podcast/in-conversation-with-associate-professor-kristin-neff-episode-07"
 drive_links:
-  - "https://drive.google.com/file/d/1Z8iQUktWWg156jsje1GS1hCvmfKOU4dM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oqGF5UPZFFjossMC16SmQDYXaVSzUcnm/view?usp=drivesdk"
 course: meditation
 tags:
   - compassion

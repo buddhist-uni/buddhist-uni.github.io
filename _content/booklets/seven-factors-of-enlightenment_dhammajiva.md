@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.holybooks.com/wp-content/uploads/the-Seven-Factors-of-Awakening.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1sTBIgNB38yDR-zrmUqlI-500nbVweAar/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sXwCuohuC23juwnNzyDFfR-lTn-Gf_mD/view?usp=drivesdk"
 course: meditation
 tags:
   - path

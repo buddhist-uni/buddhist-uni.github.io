@@ -6,7 +6,7 @@ booktitle: "Altruism in World Religions"
 pages: "88--113"
 year: 2005
 editor: "Jacob Neusner and Bruce D. Chilton"
-drive_links: ["https://drive.google.com/file/d/19kpB0yd1VqalIEsrZMTMzew2TwxqIuFK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1oZWMRrLIQg91-JqVNRS3FJd4zK945zTW/view?usp=drivesdk"]
 course: form
 tags:
   - ethics

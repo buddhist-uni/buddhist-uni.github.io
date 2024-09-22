@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.dhammatalks.org/books/PurityOfHeart/Section0005.html"
 source_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/faithinawakening.html"
 drive_links:
-  - "https://drive.google.com/file/d/1BjYTgn4vfN20U5TZ49-Gf02-P-rnmJdq/view?usp=sharing"
+  - "https://drive.google.com/file/d/16vffR8m9K1jPJ2Fahn85vePARfVNITHy/view?usp=sharing"
 course: epistemology
 tags:
   - faith

@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01003/pdf"
 source_url: "https://doi.org/10.3389/fpsyg.2017.01003"
 drive_links:
-  - "https://drive.google.com/file/d/1X_0aOvl6plc2ieO7Ppq4Hmhi9yi9f1xu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19tl8SXkRcJ4TMn3iqfs48q6WkQEsr4Ro/view?usp=drivesdk"
 course: philosophy
 tags:
   - karma

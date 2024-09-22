@@ -4,7 +4,7 @@ translator: geoff
 slug: "an.007.052"
 external_url: "https://suttacentral.net/an7.52/en/thanissaro"
 drive_links:
-  - "https://drive.google.com/file/d/1jQ_6iecD6RwlW5YuIqQ1ld7GOtKby4mn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1q1ZMfYCAnu-CFlQXVLYrBFjbDDz17ROf/view?usp=drivesdk"
 course: karma
 tags:
   - an

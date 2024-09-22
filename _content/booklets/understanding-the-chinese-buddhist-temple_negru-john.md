@@ -6,7 +6,7 @@ external_url: "https://www.buddhistelibrary.org/en/albums/central/Dhamma_books/U
 publisher: "Sumeru Press"
 olid: OL32040798M
 drive_links:
-  - "https://drive.google.com/file/d/1gXp-_xq9JbI_z_kCc-aQ8QbZ0Tim5YYW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iwPUuM9ZHxdeyw1FTFsshMKfjxCesqd2/view?usp=drivesdk"
 course: mahayana
 tags:
   - chinese

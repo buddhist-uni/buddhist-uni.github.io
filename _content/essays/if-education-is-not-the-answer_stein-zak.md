@@ -3,7 +3,7 @@ title: "If education is not the answer you are asking the wrong question"
 authors: [stein-zak]
 source_url: "http://www.zakstein.org/publications.html"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1JSJXTMMjD1YXutRLcs2cDrwbWKKbnEQM/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1z8GJmn3FWRhg2oYuHosqznKt2_uBZnC4/view?usp=drivesdk"]
 course: activism
 tags:
   - society

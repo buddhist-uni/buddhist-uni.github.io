@@ -4,7 +4,7 @@ authors:
   - "Kogi Kudara"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-4/06KD4.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/18B-DVr32gEBH5LiWQA0NapRHgtI-0aGb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X-qs8ayx1S_xOM4PB8sagB0mEiNWbJ8I/view?usp=drivesdk"
 course: form
 tags:
   - medieval

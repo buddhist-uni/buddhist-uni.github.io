@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.cogitatiopress.com/mediaandcommunication/article/download/70/60"
 source_url: "https://doi.org/10.17645/mac.v1i1.70"
 drive_links:
-  - "https://drive.google.com/file/d/1pIOmLwcS3mTY_CSwdH7H6DuerLjoi0r6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KpVSRxasIxFXoWkJbf7GnPSXAexNQl6V/view?usp=drivesdk"
 course: media
 tags:
   - social-media

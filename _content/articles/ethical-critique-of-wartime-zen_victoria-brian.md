@@ -3,7 +3,7 @@ title: "An Ethical Critique of Wartime Zen"
 authors: ["Brian Daizen Victoria"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/123/140"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1Wg2PU48iq9RqFFqHZ4ZQiIfEaCOAIyUE/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1x7JhEGBdOd7VmRvXIhif5xdnsNBYIL96/view?usp=drivesdk"]
 year: 2015
 volume: 9
 course: japanese

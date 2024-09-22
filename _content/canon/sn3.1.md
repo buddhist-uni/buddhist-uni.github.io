@@ -4,7 +4,7 @@ translator: "Ven. Kiribathgoda Gnanananda"
 slug: "sn.003.001"
 external_url: "https://suttafriends.org/sutta/sn3-1"
 drive_links:
-  - "https://drive.google.com/file/d/19Xy3x-TNa1Yo6T27h2o9DXKmQpefQeor/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HUh_RHtGB6gKwJ__52qd5UKVmoGbfDei/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

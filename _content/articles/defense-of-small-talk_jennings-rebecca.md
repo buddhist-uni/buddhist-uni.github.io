@@ -4,7 +4,7 @@ authors:
   - "Rebecca Jennings"
 external_url: "https://www.vox.com/the-highlight/23191522/small-talk-friendship-how-to"
 drive_links:
-  - "https://drive.google.com/file/d/1oS5ariBEfSAX0pZJiTkEb1uiSVexeOwT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BZMkYz48IWc90ddVrDtB7FLfj0lHf31q/view?usp=drivesdk"
 course: communication
 tags:
   - groups

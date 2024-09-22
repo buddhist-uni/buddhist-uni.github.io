@@ -6,7 +6,7 @@ olid: OL35605236M
 file_links:
   - "exclusive_01/Common%20Buddhist%20Text%20(2015-12-29).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Lsvleiouh2Vx_IZFyCedzy8EHHUHokHt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-ZEBzIjtpSbRM_S2_IR5bj02IRPjUu4u/view?usp=drivesdk"
 source_url: "https://www.watprayoon.com/files/book/2560-05-06-PBD3LATripidok.pdf"
 course: form
 tags:

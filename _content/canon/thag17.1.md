@@ -4,7 +4,7 @@ subcat: poetry
 slug: "thag.17.01"
 external_url: "https://suttacentral.net/thag17.1/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1pbVdrVz5fHXKUop-KSRLOZnGgAhou8vP/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Os4_z2WvnEMKAjPxFo_iERYOWTYk8ItL/view?usp=drivesdk"]
 course: future
 tags:
   - thag

@@ -4,7 +4,7 @@ translator: sujato
 slug: "mn003"
 external_url: "https://suttacentral.net/mn3/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/19oImo_N4bZmULLnOFfMe7-EspjFqxjcD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XPHYHeScqJt2b10tfTYKIrNSNzZyM2Y1/view?usp=drivesdk"
 course: ethics
 tags:
   - mn

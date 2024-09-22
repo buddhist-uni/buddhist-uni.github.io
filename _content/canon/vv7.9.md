@@ -4,7 +4,7 @@ slug: "vv.7.09"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-9/"
 drive_links:
-  - "https://drive.google.com/file/d/1hhMXLzUU9eRudiktU7enW7Udk7Ea9Tmv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Cww6ZPGBoBgujVmwNe8BNScXFBtMLc38/view?usp=drivesdk"
 course: rebirth
 status: featured
 tags:

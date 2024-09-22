@@ -12,7 +12,7 @@ tags:
 year: 2008
 external_url: "https://www.lotsawahouse.org/indian-masters/atisha/jewel-rosary-bodhisattvas"
 drive_links:
-  - "https://drive.google.com/file/d/1chOChhBWqNmm6Bi4LadYjwWigUp22de7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Qkt6NCaFET2hXQbRGWUUQmlo5EVN4jQC/view?usp=drivesdk"
 base_value: 1
 pages: 4
 ---

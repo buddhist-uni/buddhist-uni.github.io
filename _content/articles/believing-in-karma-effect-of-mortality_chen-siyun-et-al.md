@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01519/pdf"
 source_url: "https://doi.org/10.3389/fpsyg.2019.01519"
 drive_links:
-  - "https://drive.google.com/file/d/1rIZ7ihPwQvvrFHnSNqfZDY-VLkb3l-cC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YuZ1_p2VqDHoWaZtkFu2r8_8A2z8LDHs/view?usp=drivesdk"
 course: death # 2.5 stars?
 tags:
   - cosmology
