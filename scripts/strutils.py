@@ -481,6 +481,11 @@ class FileSyncedMap:
   def update(self, values):
     self.items.update(values)
     self._rewrite_file()
+  def keyfor(self, value):
+    try:
+      return list(self.items.keys())[list(self.items.values()).index(value)]
+    except ValueError:
+      return None
 
 def file_info(file_name):
   md5 = hashlib.md5()
