@@ -5,7 +5,8 @@ external_url: "https://readingfaithfully.org/itivuttaka-the-buddhas-sayings-tran
 drive_links:
   - "https://drive.google.com/file/d/12Tjx_JKzmxdMChWMt0YM_L1vA1jSQtiN/view?usp=drive_link"
   - "https://drive.google.com/file/d/1Lh56kURtwqss5NDOwd08S4q03GVaszif/view?usp=drive_link"
-formats: [pdf, epub]
+  - "https://drive.google.com/drive/folders/1C3T-Xh7fk0ynlQvuMmw3O68j7RPGs-eT?usp=drive_link"
+formats: [pdf, epub, mp3]
 course: iti
 tags:
   - sutta
