@@ -4,7 +4,7 @@ authors:
   - "Stuart Lachs"
 external_url: "https://www.thezensite.com/ZenTeachings/HuaTou_Lachs.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/11dAv1N9PxZqm9mVmjxuW_cykOiDd-aQl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19J12lz6s_H6uU8E4G5W7uEe90YhngbE9/view?usp=drivesdk"
 course: east-asian
 tags:
   - meditation

@@ -6,7 +6,7 @@ alternate_url: "https://archive.org/details/0090dbfb-bc8f-44aa-9803-08b277861b14
 another_url: "https://muse.jhu.edu/book/76424"
 source_url: "https://punctumbooks.com/titles/animal-vegetable-mineral-ethics-and-objects/"
 drive_links:
-  - "https://drive.google.com/file/d/16aMFH1qkKuWhXeHyeZG38o2rs9ajsEy0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y8gWB6Q04bLpYTixSWmgRwmRr4trshLf/view?usp=drivesdk"
 tags:
   - wider
   - things

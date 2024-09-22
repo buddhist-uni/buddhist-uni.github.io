@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8929/10397"
 month: jul
 drive_links:
-  - "https://drive.google.com/file/d/1JzZc_ltbd--nyWmlidgoy-3Z8CAeF9_J/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13cGEVFNIu_rRaJLn04h0z9SunLfhl69y/view?usp=drivesdk"
 course: characters
 tags:
   - lay

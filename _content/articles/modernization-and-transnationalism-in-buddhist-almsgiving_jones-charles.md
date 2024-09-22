@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.globalbuddhism.org/article/view/1151/986"
 source_url: "https://doi.org/10.5281/zenodo.1307104"
 drive_links:
-  - "https://drive.google.com/file/d/1kSf0rQfGRmjUY1M_9v28rmiMNOHQBi3o/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-HYaveeW-OmKg7GdAs6eBu9R05PNN4gs/view?usp=drivesdk"
 course: modern
 tags:
   - taiwanese

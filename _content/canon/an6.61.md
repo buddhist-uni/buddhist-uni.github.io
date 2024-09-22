@@ -4,7 +4,7 @@ slug: "an.006.061"
 external_url: "https://suttacentral.net/an6.61/en/sujato"
 translator: sujato
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1mt534UgSlpYjR5CCMvDhfPZNqOuTpFD_/view?usp=drivesdk"]
+hidden_links: ["https://drive.google.com/file/d/1RFCoiHGNOwvzuNkDaDGBihWXbXeJ2uzw/view?usp=drivesdk"]
 status: featured
 course: imagery
 tags:

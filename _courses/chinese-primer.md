@@ -1,7 +1,7 @@
 ---
 title: "Chinese Buddhist Writing"
 subtitle: "A Primer"
-google_doc_id: 1egG2hjOBIy0qVkvcw5lmlLooIRo8TnYC
+google_doc_id: 1xiBCDWGdLdxOGZ0ISS7z2Rm6fjUT8S4i
 description: "A line-by-line, character-by-character introduction to the art of reading ancient, Buddhist Chinese, this expansive course covers everything from the fundamentals to epigraphy and the esoteric texts."
 icon: "fac-fojing"
 image: https://illeakyw.sirv.com/Images/banners/baisigou_sutra.jpg

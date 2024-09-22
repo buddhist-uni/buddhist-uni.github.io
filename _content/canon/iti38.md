@@ -5,7 +5,7 @@ slug: "iti038"
 subcat: poetry
 external_url: "https://suttacentral.net/iti38/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1Gs4Tls63ONGf6XCIh5TZele4wXCLpq3F/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hzkYPrNIf9JzzOpbg3BCvvRJwR_EoUkY/view?usp=drivesdk"
 course: thought
 tags:
   - monastic-advice

@@ -8,7 +8,7 @@ year: 1981
 volume: 9
 pages: "127--144"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1aEiA-0Z4I2F-EKxNSxw-o-_nuE_oo9Nc/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1BPEJO614qIwy5qx-IDToqpkoBxU8z4IR/view?usp=drivesdk"]
 course: mahayana-roots
 tags:
   - nibbana

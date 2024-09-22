@@ -4,8 +4,8 @@ authors:
   - nyanaponika
 external_url: "https://www.bps.lk/olib/bp/bp303s_Nyanaponika_Abhidhamma-Studies.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/15EDk4uqJO8GWNKyJ7VhpwIcz-W97OAUA/view?usp=drive_link"
-  - "https://drive.google.com/file/d/1HLTkuOAO9SCn4StCFgzCxIQ1Lla69VFn/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1PwqpEVmpk8qXB6kPquVYs2fgksAq-hWp/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1Fic8Okn-t9oQ7qsvX44-8KgblFXFdzf_/view?usp=drive_link"
 formats: [pdf, epub]
 status: featured
 course: abhidhamma

@@ -3,7 +3,7 @@ title: "AN 4.184: Fearless"
 slug: "an.004.184"
 external_url: "https://suttacentral.net/an4.184/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1BaVo-7bgYa0-ITbHzlwcFwTl7WRPailZ/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1C2w2obAhXtSjESSnoHLtfrY0hpY6ZqCa/view?usp=drivesdk"]
 course: death
 tags:
   - an

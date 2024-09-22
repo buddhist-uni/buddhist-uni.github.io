@@ -6,7 +6,7 @@ journal: bsr
 year: 2007
 month: feb
 drive_links:
-  - "https://drive.google.com/file/d/1EMyzy472xx8nv1g4Bhfc_kHGmoH-IVM1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1orB3hKmFvEZ7ZgamPKL34kCYshpIzVjw/view?usp=drivesdk"
 course: roots
 tags:
   - rebirth-stories

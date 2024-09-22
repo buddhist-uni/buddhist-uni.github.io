@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.030"
 external_url: "https://suttacentral.net/an5.30/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1cd-Jd9TUIj54_jrON44Wr_KuFG4I14L9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1G2KnSSdKiaw3p8SnTpvfb5JQcy7tCcu-/view?usp=drivesdk"
 course: vipassana
 tags:
   - greed

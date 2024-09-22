@@ -4,7 +4,7 @@ editor: tathaloka
 translator: "Hermann Oldenberg"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/08/Diipavamsa_BhikkhuniHighlights.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1GxAUJZlWDOIZO18eHrSTRqYuyaCmgoGy/view?usp=sharing"
+  - "https://drive.google.com/file/d/1s4A9be-Ie6lkLeoHxGj4ttb_rLiUs5Wi/view?usp=sharing"
 course: theravada-roots
 tags:
   - sri-lankan-roots

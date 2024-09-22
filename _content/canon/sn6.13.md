@@ -3,7 +3,7 @@ title: "SN 6.13 Andhakavinda Sutta: At Andhakavinda"
 translator: sujato
 slug: "sn.006.013"
 drive_links:
-  - "https://drive.google.com/file/d/1KUGUJAGZ-32dnFFcOlhlg-9O1Y5HpeW0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iTrNLqjHrfHkp2M8aKtphMNgSs27XBx_/view?usp=drivesdk"
 external_url: "https://suttacentral.net/sn6.13/en/sujato"
 year: 2018
 course: sangha

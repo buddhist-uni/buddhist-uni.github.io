@@ -4,7 +4,7 @@ translator: geoff
 slug: "an.003.087"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN3_87.html"
 drive_links:
-  - "https://drive.google.com/file/d/1gBXKBnCNhkVRhyOk9ceVD3_H0knHYNlz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DPXxv2IUOU5b69pEW7ILE_vosqjhd8tx/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - stages

@@ -4,7 +4,7 @@ authors:
   - "Jack W. Brink"
 external_url: "https://www.aupress.ca/books/120137-imagining-head-smashed-in/"
 drive_links:
-  - "https://drive.google.com/file/d/1zeYH2TBWp1jepJVmuSdtllPMsLsjwYtv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nFeDIzZeJ-DJ5riWnA33R1dcBA8PUQDx/view?usp=drivesdk"
 course: past
 tags:
   - native-america

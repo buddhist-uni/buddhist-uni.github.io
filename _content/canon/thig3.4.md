@@ -5,7 +5,7 @@ slug: "thig.03.04"
 subcat: poetry
 external_url: "https://suttacentral.net/thig3.4/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1ti2PJJ_P1VZNkgSVt-b4FaRw31kipe8N/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RdzaE85T-YwYIDCtO-tgkENkWNM-9E6L/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

@@ -5,7 +5,7 @@ month: may
 year: 2020
 external_url: "https://www.abhayagiri.org/talks/7394-how-to-live-without-fear-and-worry"
 drive_links:
-  - "https://drive.google.com/file/d/1CedDOgRm1hhD12rBBRNvjInE2Kf-gaZY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10W-Db6EV8CpSzCHKjm3Iu1k5ICSU3qgd/view?usp=drivesdk"
 course: problems
 tags:
   - brahmavihara

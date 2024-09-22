@@ -4,7 +4,7 @@ authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Textual-Studies/Grammar/Pali-Numbers.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1J6v6XCjVEvBq-FuJLjHS-Nnf5Tn8hXBo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tpayxV8gyjCDEsc7czCTeMMUvH8edJGR/view?usp=drivesdk"
 course: pali-dictionaries
 tags:
   - pali-language

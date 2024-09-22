@@ -4,8 +4,8 @@ authors:
   - "Ria Kloppenborg"
 external_url: "https://www.bps.lk/olib/wh/wh305_Kloppenborg_Paccekabuddha-Concept-In-Pali-Canon-Commentary.html"
 drive_links:
-  - "https://drive.google.com/file/d/1UjtEVCir4HE8CdOx3Zrv1HvVinVuIQZa/view?usp=drive_link"
-  - "https://drive.google.com/file/d/1orAgVjHpl64YY0z7WPaIrNY1Wsnrcc2g/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1TbJlTweArco_juAatQ9HTPRuTPObjLPH/view?usp=drive_link"
+  - "https://drive.google.com/file/d/11dRjuzuyGSdUWz1X70Rk-QpePBYKSUF7/view?usp=drive_link"
 course: cosmology
 tags:
   - path

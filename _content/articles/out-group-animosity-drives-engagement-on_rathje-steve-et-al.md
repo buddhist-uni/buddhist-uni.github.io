@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/118/26/e2024292118.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.2024292118"
 drive_links:
-  - "https://drive.google.com/file/d/1hQh99XbumH1tFR-Oqa9IDtPVjsZP8KgZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FvZkU97FRVYFjk7a7iDdOTjX_iHdU8_9/view?usp=drivesdk"
 course: media
 status: featured
 tags:

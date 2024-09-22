@@ -5,7 +5,7 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8711/2618"
 status: featured
 drive_links:
-  - "https://drive.google.com/file/d/1flK1RkujBjhQrPfecmvlptwON2fdk2VI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a36j_a-3U9z1Kypo6ItTfglJQB9FeD6t/view?usp=drivesdk"
 course: east-asian
 tags:
   - pureland

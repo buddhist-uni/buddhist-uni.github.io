@@ -1,6 +1,6 @@
 ---
 title: "Befriending the Suttas: Tips on Reading the Pali Discourses"
-drive_links: ["https://drive.google.com/file/d/1Oqz0Hhp8oM19V7YoCer_N4LFMNJUeKkG/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1c4zcnMBjAW3ZHCkkwgIEh28wA_XL5ls6/view?usp=drivesdk"]
 external_url: "https://www.accesstoinsight.org/befriending.html"
 year: 2001
 status: featured

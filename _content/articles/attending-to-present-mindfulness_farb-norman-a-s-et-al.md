@@ -9,7 +9,7 @@ authors:
 external_url: "https://academic.oup.com/scan/article-pdf/2/4/313/8560783/nsm030.pdf"
 source_url: "https://doi.org/10.1093/scan/nsm030"
 drive_links:
-  - "https://drive.google.com/file/d/1cseRQSEt8v12WujO72rg4p-KmIoVSiFu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YuXf9T-u42EWal0sqosTyfPf2nnqA_oH/view?usp=drivesdk"
 course: sati
 tags:
   - neuroscience

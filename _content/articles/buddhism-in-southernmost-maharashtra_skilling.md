@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxiii/Buddhism%20in%20Southernmost%20Maharashtra.pdf"
 source_url: "https://doi.org/10.5281/zenodo.3925429"
 drive_links:
-  - "https://drive.google.com/file/d/1hhRe-OxveM0L7kQ4AmcVnUb-x-MKDcjE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JsisTXhPtK9h2twXjtMd24gAOymAdT75/view?usp=drivesdk"
 course: indian
 year: 2020
 month: mar

@@ -4,7 +4,7 @@ authors:
   - santussika
 external_url: "https://dharmaseed.org/talks/28855/"
 drive_links:
-  - "https://drive.google.com/file/d/1KJkcn4dUYWKrQkjgYB1AuEsFLEH8ul1Z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14NYPrMUPzmzVARbE6crEsLhhpBZistP4/view?usp=drivesdk"
 course: thought
 tags:
   - problems

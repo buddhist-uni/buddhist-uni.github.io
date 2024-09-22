@@ -4,9 +4,9 @@ authors: [bodhi]
 external_url: "https://www.accesstoinsight.org/lib/authors/bodhi/waytoend.html"
 formats: [pdf, epub, mp3]
 drive_links:
-  - "https://drive.google.com/file/d/1wDAnqsfri8nN-MIbVRhcAnve6JgecHFa/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1FoJwZf7dnSRg07BUuEZQDcH6rNw2zdtO/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1dfg-bx4xDrP3jmLVU92qdlbel40r48X8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OMm1pK6jK7a93R5J5ifRF7H3cPSH6jjb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Qn3N2tp90Id5Ty893uQTQDh4cBkScxpI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rcMFRmfSNMAiSwffZwqhNl_bcWksHGIG/view?usp=drivesdk"
 year: 1984
 publisher: bps
 series: wheel

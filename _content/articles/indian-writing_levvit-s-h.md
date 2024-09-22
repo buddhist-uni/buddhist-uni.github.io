@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/The%20Indian%20Attitude%20Toward%20Writing_text.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume13.asp"
 drive_links:
-  - "https://drive.google.com/file/d/1uqSyAf5U55zRBIIrxMcj6VZg_-RlP3lk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12BawuNefrbqZymDWwECte4lvsS8QMAcp/view?usp=drivesdk"
 course: writing
 tags:
   - books

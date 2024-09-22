@@ -4,7 +4,7 @@ authors:
   - "Mikael Gravers"
 external_url: "https://doi.org/10.4000/moussons.3181"
 drive_links:
-  - "https://drive.google.com/file/d/1VvOwaIRojgTxAyOJ_H2l4vztPW2VCofB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15LUH_JYo_a8RffxGm946bfUCG_UVd1mI/view?usp=drivesdk"
 course: theravada-roots
 status: featured # hard to place. tags tentative
 tags:

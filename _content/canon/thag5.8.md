@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/thag/thag.05.08.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Thag/thag5_8.html"
 drive_links:
-  - "https://drive.google.com/file/d/1xs2l3jIPV8zxJy0Q3mfO8uQYhianybRA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yqhzvqjcrVDellCrfWhqzTJ1U7vClzm6/view?usp=drivesdk"
 course: problems
 tags:
   - renunciation

@@ -5,7 +5,7 @@ authors:
   - "Elisabeth Steinbrückner"
 external_url: "https://archive.org/download/aririab-vol-xxv/Avad%C4%81na%20Episodes.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hWyGi_Me_OrOSoIo_0u_5RR-HWzVn4hV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AdgQjh75UGjq2CP2DVA-ToagkZP_IHTT/view?usp=drivesdk"
 course: avadana
 year: 2022
 month: mar

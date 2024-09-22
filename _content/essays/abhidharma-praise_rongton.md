@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/rongton/abhidharma-lineage-praise"
 drive_links:
-  - "https://drive.google.com/file/d/1Od9WKHahcSeur7qzQ3GcRPmA4qU22Q1_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-O-bfRw8oQnzTJeQAsQ3-X7PohMpt7gT/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - tibetan-roots

@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 external_url: "https://suttafriends.org/dhammapada/"
 drive_links:
-  - "https://drive.google.com/file/d/1JuKQUuyaH1NE9BoxpAj3q9097_g1Z-so/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15ZYnvB-2UUYcX4ElDuaOgQDF89ZEopl_/view?usp=drivesdk"
 base_value: 1
 course: dhp-translation
 tags:

@@ -5,7 +5,7 @@ authors:
   - "Eugénie Baccot"
 external_url: "https://www.theguardian.com/global-development/2020/dec/07/ugandan-monk-bhante-buddharakkhita-buddism-buddhist-uganda-africa-mindfulness-meditation"
 drive_links:
-  - "https://drive.google.com/file/d/1kX_0ldrg4IIORHBeBR5matQetD-s7rTn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MYm1aKn8vdl0dTm6H3Aem_D1BgNT_moi/view?usp=drivesdk"
 course: west
 status: featured
 tags:

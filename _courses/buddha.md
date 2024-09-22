@@ -8,7 +8,7 @@ big_width: 2415
 big_height: 1274
 image_width: 2415
 banner_info: Hintha, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
-google_doc_id: 1VJkvNR6SsJJsCAwDYCoGNw9nCKodASGqN4Js5rYB-NE
+google_doc_id: 1trmMSBncTXvYJOYMjveLTqbFgu8U0zrmYInlZ7Jd3-o
 description: "A thorough tour of the Pāli texts which report the Buddha's character, accomplishments, life, and history."
 epigraph: |
   > ༈ ཐབས་མཁས་ཐུགས་རྗེས་ཤཱཀྱའི་རིགས་སུ་འཁྲུངས། །  

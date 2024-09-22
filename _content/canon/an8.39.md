@@ -5,7 +5,7 @@ slug: "an.008.039"
 source_url: "https://accesstoinsight.org/tipitaka/an/an08/an08.039.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN8_39.html"
 drive_links:
-  - "https://drive.google.com/file/d/1UM7LnuCKQRxwc_-t9t3cNiyJQnhBSfKD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FGuGp8H5S9FBCq424Vgr4kNJJziL1bTR/view?usp=drivesdk"
 course: karma
 tags:
   - ethics

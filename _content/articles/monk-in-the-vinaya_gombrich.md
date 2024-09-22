@@ -4,7 +4,7 @@ authors:
   - gombrich
 external_url: "https://archive.org/download/jpts-xxi-1995/The%20Monk%20in%20the%20Pa%CC%84li%20Vinaya%20-%20Richard%20Gombrich_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1QUXHr236rKVWJOlss_fv69rLcWe4XbMd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IL9aoTvzWB1vrvJiJnk54Mzens0Nn9Vz/view?usp=drivesdk"
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1995_XXI.pdf"
 course: monastic
 tags:

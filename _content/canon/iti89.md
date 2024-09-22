@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/iti/iti.3.050-099.than.html#iti-089"
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti89.html"
 drive_links:
-  - "https://drive.google.com/file/d/1OEF4AlI3iR4Fo2cjpnXKJKKte8XLz2or/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mwjXbDswZ925WpNYaZDKYnXf7lqL7EBj/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - canonical-poetry

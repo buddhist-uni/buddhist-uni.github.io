@@ -1,7 +1,7 @@
 ---
 title: "The Nature of the Eight-factored *Ariya*, *Lokuttara Magga* in the *Suttas*"
 authors: [harvey]
-drive_links: ["https://drive.google.com/file/d/1gj-MvZx-IzObclaxRbiB7Dq0BIefzsw5/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1rOX3gesRQOtDgb9cSxFwFNRK4WVHZsPK/view?usp=drivesdk"]
 external_url: "https://doi.org/10.1558/rosa.v8i1.31"
 year: 2014
 volume: 8

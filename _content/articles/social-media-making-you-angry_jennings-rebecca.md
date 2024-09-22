@@ -4,7 +4,7 @@ authors:
   - "Rebecca Jennings"
 external_url: "https://www.vox.com/culture/23899842/annoying-tweets-ignore-discourse-bait-social-media-anger"
 drive_links:
-  - "https://drive.google.com/file/d/1MaNRaD6bMdChODN_n1tueyHVhAjudJ2-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oMHQdnPTri4K8YU3fvkJXCi9BUK3ReYJ/view?usp=drivesdk"
 status: featured
 course: communication
 tags:

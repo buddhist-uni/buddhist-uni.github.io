@@ -9,7 +9,7 @@ tags:
   - gender
   - bhikkhuni
   - hermeneutics
-drive_links: ["https://drive.google.com/file/d/1BTNK1cJIKHKtAo2kn5POU0QzLZpmv0LG/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1QrG7RMX89VtPcSvs7N8Xs_TX8XthwtVX/view?usp=drivesdk"]
 pages: 3
 ---
 

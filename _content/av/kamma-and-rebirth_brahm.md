@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://discourse.suttacentral.net/uploads/short-url/3BrI7qdC3K9StEE5llolfB84Mx0.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/13e_Q8gfAIXdNrcyPyAimTzKBztbhves4/view?usp=sharing"
+  - "https://drive.google.com/file/d/12wOhU-I27w8o9JF3JV-PZhdI92yAPQrG/view?usp=sharing"
 course: cosmology
 tags:
   - philosophy

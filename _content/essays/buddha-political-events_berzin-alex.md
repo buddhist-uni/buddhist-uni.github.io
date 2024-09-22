@@ -1,7 +1,7 @@
 ---
 title: "Buddha and the Political Events of His Times"
 authors: ["Alexander Berzin"]
-drive_links: ["https://drive.google.com/file/d/1cDIYiCB531FZPP4VO5QBlPZSkr_PpdAw/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/16zo95gMn8warWesEUIx5cRcKVNXQkhf0/view?usp=drivesdk"]
 external_url: "https://studybuddhism.com/en/advanced-studies/history-culture/buddhism-in-india/buddha-and-the-political-events-of-his-times"
 year: 2016
 course: setting

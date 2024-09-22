@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Robert Wiblin and Keiran Harris"
 external_url: "https://80000hours.org/podcast/episodes/robin-hanson-on-lying-to-ourselves/"
 drive_links:
-  - "https://drive.google.com/file/d/1xFNesFcLlrcDPvPv5UM_EkT12MZw9WOe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X7MlBkEdxh3v_y9NF1g5ZFuhlCoyHSdL/view?usp=drivesdk"
 course: intellect
 tags:
   - ethics

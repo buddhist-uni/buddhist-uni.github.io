@@ -4,7 +4,7 @@ authors:
   - "Haewon Kim"
 external_url: "https://dx.doi.org/10.15239/hijbs.02.01.05"
 drive_links:
-  - "https://drive.google.com/file/d/1bdmf67hX-Zukg3Wc4zaRriSuiANXqUS0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qcyDmtvO_TSmib_mxJTxIW0rheY5jtq-/view?usp=drivesdk"
 course: form
 tags:
   - medieval

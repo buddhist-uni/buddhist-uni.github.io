@@ -4,7 +4,7 @@ authors:
   - dhammadinna
 external_url: "https://www.academia.edu/37864714/Discourses_on_the_establishments_of_mindfulness_sm%E1%B9%9Btyupasth%C4%81nas_quoted_in_%C5%9Aamathadeva_s_Abhidharmako%C5%9Bop%C4%81yik%C4%81_%E1%B9%AD%C4%ABk%C4%81"
 drive_links:
-  - "https://drive.google.com/file/d/1y528FIdqbrPhmleu6B2XVTtt0rsTi9XC/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ZN44xrCUpTm-y79W8TsBB9SlU9gNOWgM/view?usp=sharing"
 course: sati
 tags:
   - sa

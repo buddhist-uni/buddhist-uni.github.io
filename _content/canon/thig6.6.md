@@ -3,7 +3,7 @@ title: "Thig 6.6 Mahāpajāpatigotamī Therīgāthā: Verses of the Elder Mahāp
 slug: "thig.06.06"
 external_url: "https://suttacentral.net/thig6.6/en/soma"
 translator: soma
-drive_links: ["https://drive.google.com/file/d/1JIIgXL2IxnEDzPy8cxOkHhXZP482vVCs/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1brExn0VjQ41lWJGNTlvDFAUiSDFoNYfG/view?usp=drivesdk"]
 course: nibbana
 tags:
   - thig

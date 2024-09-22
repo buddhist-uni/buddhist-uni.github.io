@@ -5,7 +5,7 @@ authors:
 external_url: "https://deepblue.lib.umich.edu/bitstream/2027.42/163632/1/aman13464_am.pdf"
 source_url: "https://doi.org/10.1111/aman.13464"
 drive_links:
-  - "https://drive.google.com/file/d/1-nr3RsH8c9YIwFZ3x4DGO2JXEbD-zmSm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XYru48dn4AiOxuPsJoOtZ3YYYaGXcQYr/view?usp=drivesdk"
 course: karma
 status: featured
 tags:

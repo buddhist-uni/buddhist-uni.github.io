@@ -5,7 +5,7 @@ slug: "an.005.140"
 source_url: "https://accesstoinsight.org/tipitaka/an/an05/an05.140.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN5_140.html"
 drive_links:
-  - "https://drive.google.com/file/d/1IQ52IuBT9dVjGPzooheCEj5XH6StYARN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15xAFUPQwz6U7AWUYw9VJg9KDMmL3HQnn/view?usp=drivesdk"
 course: pali-canon
 tags:
   - sangha

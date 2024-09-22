@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.008.005"
 external_url: "https://suttacentral.net/sn8.5/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ZtuILx0VI1cGgjXj0-fMQqSmP0GhRox4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jKov9eRKXFcdUu4OdTNnb1jj-Ar2FKtl/view?usp=drivesdk"
 year: 2018
 course: speech
 tags:

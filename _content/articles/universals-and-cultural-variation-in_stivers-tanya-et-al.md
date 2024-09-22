@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc2705608?pdf=render"
 source_url: "https://doi.org/10.1073/pnas.0903616106"
 drive_links:
-  - "https://drive.google.com/file/d/1k6Ths4oXaQKInuklKx8UwHWdxM-8PVRN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qKrCMy8rgy91C8JK5nzh7LjhtADwQvrv/view?usp=drivesdk"
 course: communication
 tags:
   - conversion

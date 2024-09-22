@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://wiswo.org/books/outk/"
 drive_links:
-  - "https://drive.google.com/file/d/1xiSUQ2i3InzLpSne604ZMT9qna-Ngyw9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14nHdjHxiioTkaJX3LgdnpNAOFll2UnIV/view?usp=drivesdk"
 course: buddhism
 tags:
   - karma

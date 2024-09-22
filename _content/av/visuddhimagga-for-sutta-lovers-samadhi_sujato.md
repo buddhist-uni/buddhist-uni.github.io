@@ -5,7 +5,7 @@ authors:
   - sujato
 external_url: "https://www.youtube.com/watch?v=cGpcNC9rlnc"
 drive_links:
-  - "https://drive.google.com/file/d/1yqMPhduo3hVAYps0xJBZv-iTn9rwwBAk/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1A5bnjYyvQdzoMpewD9RuDewoVhDqaW5r/view?usp=drive_link"
 formats: 
   - "mp4"
 course: theravada-roots

@@ -4,7 +4,7 @@ authors:
   - "Ernst Waldschmidt"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8453/2360"
 drive_links:
-  - "https://drive.google.com/file/d/1sVIf327n20H0n_asX3wD4jPPYhJisvXS/view?usp=sharing"
+  - "https://drive.google.com/file/d/1CuUeHsXu_ZlVmpXaIrPHTBAGkFsBmUSz/view?usp=sharing"
 course: problems
 tags:
   - sense-restraint

@@ -7,7 +7,7 @@ source_url: "https://bodhimonastery.org/the-buddhas-teaching-as-it-is.html"
 external_url: "https://www.buddhanet.net/audio-lectures.htm"
 canary_url: "https://www.buddhanet.net/mp3/bkikkhu-bodhi/BT02B.MP3"
 drive_links:
-  - "https://drive.google.com/drive/folders/1IIe2zd8XXE3ru3raBvEkTnppMoWJ2bgC"
+  - "https://drive.google.com/drive/folders/1BxgsVUvgtWyklFTpavFrnQ135brCTnXO"
 formats: ["mp3s"]
 course: philosophy
 status: featured

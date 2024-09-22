@@ -2,7 +2,7 @@
 title: "The Footprint of the Buddha"
 authors: ["Patricia Welch"]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1NObvlEOIQTM8I5W_fqeS2O_oCapt5BEX/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1yUYHpvv_7uHTyAGJsKW9v1y7gbpLvhUT/view?usp=drivesdk"]
 external_url: "https://www.academia.edu/9947835/Buddhapada_The_Footprint_of_the_Buddha"
 journal: Passage
 year: 2009

@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vohara.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1-xeGhE4FET8Nk2pZn5btCp05NpCD_il0/view?usp=sharing"
+ - "https://drive.google.com/file/d/1yCEgnQ7JsHQ6sp7Qho5fhrNT9QDMoDyA/view?usp=sharing"
 course: epistemology
 tags:
   - speech

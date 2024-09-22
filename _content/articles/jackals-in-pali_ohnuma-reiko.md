@@ -4,7 +4,7 @@ authors:
   - "Ohnuma Reiko"
 external_url: "https://www.academia.edu/38605819/The_Heretical_Heterodox_Howl_Jackals_in_P%C4%81li_Buddhist_Literature"
 drive_links:
-  - "https://drive.google.com/file/d/1yMmh8KNu4Ub4KsMX3nmtz1X5-AHgiij1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CHZhp2LPKOIKXfVtH_x0IDvRJR8Y9zbP/view?usp=drivesdk"
 course: animals
 tags:
   - imagery

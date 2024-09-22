@@ -7,7 +7,7 @@ authors:
   - "Gaurav Kataria"
 external_url: "https://onlinelibrary.wiley.com/doi/10.1002/aqc.2997"
 drive_links:
-  - "https://drive.google.com/file/d/1uVM12-3kPxhJOXhL3FpAbYX5ipA4QTir/view?usp=share_link"
+  - "https://drive.google.com/file/d/1U77GGYkQ5fpBgxpntHCFmid1RVXiveDt/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:

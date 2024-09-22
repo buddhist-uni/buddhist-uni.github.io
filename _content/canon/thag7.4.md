@@ -4,7 +4,7 @@ subcat: poetry
 slug: "thag.07.04"
 external_url: "https://daily.readingfaithfully.org/thag-7-4-sopakattheragatha-sopaka-2nd/"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1pq_oai4qUFzhVa6N1vNB6hmZsnY0BcWO/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1lbyMzjzgVFc0i0s_5JSFdtRfOvGJ_j9P/view?usp=drivesdk"]
 course: underage
 tags:
   - thag

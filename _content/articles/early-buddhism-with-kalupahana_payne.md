@@ -4,7 +4,7 @@ authors: [payne, kalupahana]
 formats: [pdf]
 external_url: "https://www.shin-ibs.edu/documents/pwj-new/new7/09Payne.pdf"
 file_links: ["exclusive_01/Early%20Buddhism%20-%20Kalupahana%20and%20Payne.pdf"]
-drive_links: ["https://drive.google.com/file/d/1btmWtNnj5roGdwQX46G0N2QQkWt2fnUt/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1W4tgVKpLZUdrqgNmw-nNos_q439k0U6s/view?usp=drivesdk"]
 year: 1991
 journal: pw
 volume: 2

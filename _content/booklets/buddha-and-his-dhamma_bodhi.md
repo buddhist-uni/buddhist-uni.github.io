@@ -4,8 +4,8 @@ authors: [bodhi]
 external_url: "https://www.bps.lk/olib/wh/wh433_Bodhi_Buddha-and-His-Dhamma--Two-Lectures.html"
 formats: [pdf, epub, mp3]
 drive_links:
-  - "https://drive.google.com/file/d/12sAeNsaZSnoFrizqbrtnbtf8P4iHIpiE/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1gq7WTu674hTTOIekhg3s5nC9Qigb5NYu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/102SA3QPr5bdVRuYIcz2ZOvUmZ3XLzqPg/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1K1yZEvrTXdyW8_FyPapcWVQS7fClPPJ3/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-gg0OXcAK-e86Gu9cOZxmTy7ju7lDSYr/view?usp=drivesdk"
 year: 1999
 publisher: bps

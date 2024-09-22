@@ -4,7 +4,7 @@ translator: bodhi
 slug: "sn.004.022"
 external_url: "https://suttacentral.net/sn4.22/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1ihbAXiZWcNu_Bw51gUHoq3yM_9w0QLb6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uaFXVpmjvblGn8SXOPmITIuNtOyTA69G/view?usp=drivesdk"
 course: problems
 tags:
   - mara

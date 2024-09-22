@@ -6,7 +6,7 @@ source_url: "https://sdhammika.blogspot.com/2008/05/food-of-enlightenment.html"
 year: 2008
 month: may
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1o2wjaIdiLfoZhJTkBQSseY7bIDL8aK77/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1R50ba7NPG58ECFzf01IwX1T94yfJZVoz/view?usp=drivesdk"]
 course: buddha
 tags:
   - food

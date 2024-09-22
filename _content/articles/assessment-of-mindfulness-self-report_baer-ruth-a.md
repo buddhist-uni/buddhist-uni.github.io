@@ -5,7 +5,7 @@ authors:
 external_url: "https://mindrxiv.org/cfxjz/download"
 source_url: "https://doi.org/10.1016/j.copsyc.2018.10.015"
 drive_links:
-  - "https://drive.google.com/file/d/1iDzIUk6ICd0E2U463zbhGsV-23FGKFt2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IhsiR5_nV5YLh-cEq2Lx8eqpaEy3Pui4/view?usp=drivesdk"
 course: academic
 tags:
   - psychology

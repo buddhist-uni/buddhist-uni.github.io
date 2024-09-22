@@ -5,7 +5,7 @@ slug: "thag.17.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thag17.2/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/13n9CxOqqhcmFAorv_oyQPuhZkJ7edJJ6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/170S0uAtxMMY6jfPRKvyEgJuIay6bOAqr/view?usp=drivesdk"
 course: characters
 tags:
   - thag

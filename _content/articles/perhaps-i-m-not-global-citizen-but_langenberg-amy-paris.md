@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.globalbuddhism.org/article/download/4228/5128"
 source_url: "https://doi.org/10.26034/lu.jgb.2024.4228"
 drive_links:
-  - "https://drive.google.com/file/d/1_9NOF9MAYgAOnhYfhXoDUJSH5q32P7LE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WfKebYiOYxItNhZcTaJ6EEh0-5l6A-VV/view?usp=drivesdk"
 course: academic
 tags:
   - places

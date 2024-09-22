@@ -4,7 +4,7 @@ authors:
   - santussika
 external_url: "https://dharmaseed.org/talks/player/54758.html"
 drive_links:
-  - "https://drive.google.com/file/d/116LUdxRWezNTxNH0GSGkSi4D0sTvGGsn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Bqp6GlgbRK3er_lKgSnHV5AM35OTuurp/view?usp=drivesdk"
 course: samatha
 tags:
   - brahmavihara

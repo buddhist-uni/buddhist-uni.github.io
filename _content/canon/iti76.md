@@ -6,7 +6,7 @@ translator: geoff # the translation prefered here
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti76.html"
 source_url: "https://accesstoinsight.org/tipitaka/kn/iti/iti.3.050-099.than.html#iti-076"
 drive_links:
-  - "https://drive.google.com/file/d/1yH7vB-FpwXDbKaNEDNOWcPgcjmjbFL6v/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WuUk_OuNJyJoQUTJ_5tMBBRzFl2lTPQY/view?usp=drivesdk"
 course: ethics
 tags:
   - sangha

@@ -9,7 +9,7 @@ tags:
 olid: OL6859744M
 external_url: "https://archive.org/details/EarlyBuddhistTheoryOfKnowledge"
 drive_links:
-  - "https://drive.google.com/file/d/1h86ckmJRXx6HW4n9pcAXJiuzSr1es5K8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19IdvgJfOwpXB35LbAFHw-7apLQXBBctq/view?usp=drivesdk"
 year: 1963
 month: may
 publisher: "George Allen & Unwin"

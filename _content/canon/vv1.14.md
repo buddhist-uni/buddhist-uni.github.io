@@ -4,7 +4,7 @@ slug: "vv.1.14"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-14/"
 drive_links:
-  - "https://drive.google.com/file/d/1hOJXXvJyCmsbiTO3yhC2r_uV9D_H3wsz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jPr1MyPyGYf3srNPeXliX9Oh06_Q5_I8/view?usp=drivesdk"
 course: sutta
 tags:
   - vv

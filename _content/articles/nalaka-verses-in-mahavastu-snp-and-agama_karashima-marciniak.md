@@ -6,7 +6,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxi/N%C4%81lada%20in%20the%20Mah%C4%81vastu%2C%20Suttanip%C4%81ta%20and%20the%20Fobenxingji%20jing.pdf"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXI%20(2018).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1nH1mcu4bSEZEGT5jIsejUFuCfO3k1nNq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vJ0R0lCYPa545Tz7MGGhIDYnNW-9Tync/view?usp=drivesdk"
 course: agama
 tags:
   - canonical-poetry

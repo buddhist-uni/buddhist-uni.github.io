@@ -4,7 +4,7 @@ authors:
   - kuan-tsefu
 external_url: "https://digitalcommons.linfield.edu/cgi/viewcontent.cgi?article=1009&context=iijbs"
 drive_links:
-  - "https://drive.google.com/file/d/1JLQIhfmrKyn2CFnqeAOEY5OkC0FSpJon/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1M_fs5o_gX1_rgBOBhFPiQJnEkQVCimrF/view?usp=drivesdk"
 course: ea
 tags:
   - compassion

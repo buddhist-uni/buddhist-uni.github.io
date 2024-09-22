@@ -6,8 +6,8 @@ external_url: "https://ped.readingfaithfully.org/"
 source_url: "https://dsal.uchicago.edu/dictionaries/pali/"
 alternative_url: "https://gandhari.org/dictionary?section=ptsd"
 drive_links:
-  - "https://drive.google.com/file/d/1myPcLRNjZ5dB2JhqHOOzCZh2cZE1mEef/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1g03tizZMKcUnGh1x2x3mF2YnXJX1L2q5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uGDSgO2LHQ0j2gj9oDWcuEgCO7GpghJZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1UGgBe8uTNFCWcvJ_TOI_PdDzCM56SvZX/view?usp=drivesdk"
 formats: [pdf, mobi]
 course: pali-dictionaries
 tags:

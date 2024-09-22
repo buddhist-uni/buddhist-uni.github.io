@@ -4,7 +4,7 @@ authors:
   - deleanu-f
 external_url: "http://id.nii.ac.jp/1153/00000475/"
 drive_links:
-  - "https://drive.google.com/file/d/1XaoWK6tkH_Xl8x96h_0x4-uBKc-TXsYc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HNUR2pnUXv5XYsvl2Qw8RjrxsjmA7FG8/view?usp=drivesdk"
 course: epistemology
 status: featured
 tags:

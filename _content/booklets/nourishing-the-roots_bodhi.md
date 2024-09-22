@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.bps.lk/library-search-select.php?id=wh259"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1SC-5xYB0ZeqW1e1XnwiQVA7kAib68ws8/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1vJRbSW7cTSkQ9Ic_-MVipCQSmiRxvPWU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vR8CfGTTbkUqo1HIidP9_gW7MKKFhbzA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nf53GbZRpfUqNsoIznPUkJqWA9noBi6C/view?usp=drivesdk"
 course: ethics
 tags:
   - path

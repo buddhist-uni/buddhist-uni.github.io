@@ -7,8 +7,8 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh294_Bogoda-etal_The-Buddhst-Layman--Four-Essays.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1Hp5uWsGfstqZVrp9QYE0xZbTn1ov4Fdz/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1zpEh88r4JOLFVOOngktW8MYoDOn7XNGE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JPtnzc6Za2J9Yyx_lihmXJi2J1_IUgDw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1G-h3XMHC3u7bK4Fc_GQ1MyZe5kU5E75T/view?usp=drivesdk"
 course: lay
 tags:
   - west

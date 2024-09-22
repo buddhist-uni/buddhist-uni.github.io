@@ -1,7 +1,7 @@
 ---
 title: "Tranquility and Insight"
 subtitle: "An Online Course on Madhyama Āgama Division 7"
-google_doc_id: 10EHXFzAMcmtedj6SgolIHBN1t0s-wzK1
+google_doc_id: 1pQVGDCvHSygh9kGgIgrwVC8zl9pcj_gh
 lecturers:
   - analayo
 icon: "fas fa-spinner"

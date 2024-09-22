@@ -3,7 +3,7 @@ title: "Buddhism Beyond Modernity"
 subcat: podcast
 authors: [gleig-a]
 external_url: "https://classicalideaspodcast.libsyn.com/ep-109-dr-ann-gleig-and-buddhism-beyond-modernity"
-drive_links: ["https://drive.google.com/file/d/1afPe_uYjf6Bpn53HENeeELte0KPFLv9O/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1j23BZvf7Lj1rz02rQOIPOud-sSIaVOhW/view?usp=drivesdk"]
 course: american
 tags:
   - academic

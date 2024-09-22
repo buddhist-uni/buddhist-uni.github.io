@@ -6,7 +6,7 @@ translator: "Yasuda Joshu and Anzan Hoshin"
 external_url: "https://wwzc.org/dharma-text/gabyo-painted-rice-cakes"
 source_url: "http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Gabyo_JoshuJoshin.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1oT_lzhfvhhHUbNXJQ-T-QELPFzYxFavs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Kg9AmwQZG-MgEvVR-o2nzsMu_7oAdhRX/view?usp=drivesdk"
 status: featured
 course: east-asian
 tags:

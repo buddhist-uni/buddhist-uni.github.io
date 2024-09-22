@@ -5,7 +5,7 @@ slug: "thig.09.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thig9.1/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1ZKeegJHnF8A1XApUtgGx7X9IcLxJHoyN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uuTkZeQpX7maXHWr_bDH213_KAY3P6d-/view?usp=drivesdk"
 course: sangha
 tags:
   - parenting

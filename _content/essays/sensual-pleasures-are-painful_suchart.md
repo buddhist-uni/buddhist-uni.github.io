@@ -1,7 +1,7 @@
 ---
 title: "Sensual Pleasures are Painful"
 authors: [suchart]
-drive_links: ["https://drive.google.com/file/d/1ptEOf79c5MpuvCTWW0DzZKZTkWTZO2W3/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/15NOz0feO8-98IyyKRbK-5aLzxYmeSDoA/view?usp=drivesdk"]
 external_url: "http://www.kammatthana.com/dt_001.htm"
 year: 1997
 month: jul

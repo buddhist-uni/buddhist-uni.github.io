@@ -2,7 +2,7 @@
 title: "On Buddhist Education"
 authors: [jayasaro]
 drive_links:
-  - "https://drive.google.com/file/d/14H-z0b83ZGSR7M_X9jfYdvZoZza41VbR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C9tmk8ooxW0c5JvlvEFH8ASVFyTtBkxM/view?usp=drivesdk"
 file_links:
   - "exclusive_01/On%20Buddhist%20Education%20(2007.04.08)%20-%20Ajahn%20Jayasaro.mp3"
 course: education

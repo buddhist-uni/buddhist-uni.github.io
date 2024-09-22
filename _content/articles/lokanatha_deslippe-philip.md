@@ -4,7 +4,7 @@ authors:
   - "Philip Deslippe"
 external_url: "https://tricycle.org/magazine/catholic-chemist-buddhist-missionary/"
 drive_links:
-  - "https://drive.google.com/file/d/1H_EWCpf8U9w9Z6VBalXamy0pdIp3nSRU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vuoNgblu8X_w-u7QQn4YrgU0I8CDJ1hx/view?usp=drivesdk"
 course: west
 tags:
   - italian

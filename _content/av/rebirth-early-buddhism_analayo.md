@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://wisdomexperience.org/wisdom-podcast/bhikkhu-analayo-hallisey/"
 drive_links:
-  - "https://drive.google.com/file/d/1-rOWvGTzS7ls8DN01uEADkjhKevTP-r8/view?usp=sharing"
+  - "https://drive.google.com/file/d/1uVYdxqnhM9r-IroGSwdFeONlRz3rlGiJ/view?usp=sharing"
 course: epistemology
 tags:
   - rebirth

@@ -3,7 +3,7 @@ title: "Middle Land, Middle Way: A Pilgrim’s Guide to the Buddha's India"
 authors: [dhammika]
 external_url: "https://www.bps.lk/olib/bp/bp609s_Dhammika_Middle-Land-Middle-Way.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/148rwPrhvt6OdhHdqu0L8mINLai0ojhdf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fgtDYNDh_WSY23W7szItk9zshxN74Hsc/view?usp=drivesdk"
 year: 1992
 olid: OL1059405M
 publisher: bps

@@ -3,7 +3,7 @@ title: "Women in Early Buddhist Literature"
 authors:
   - horner
 external_url: "https://www.accesstoinsight.org/lib/authors/horner/wheel030.html"
-drive_links: ["https://drive.google.com/file/d/14EUaLMtKX6Japv3WEqcEf0spFsPsk3di/view?usp=drivesdk", "https://drive.google.com/file/d/1veXjhdzHeH5TD_psv5kv1YKDG3M7Qn0q/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1oC5HW1xma-y9BhWef4IIB5NOnk8R7Gzc/view?usp=drivesdk", "https://drive.google.com/file/d/1QOtsdMQ5SVNdXuHJ0JhYIfg4TRfw-xxT/view?usp=drivesdk"]
 year: 1961
 month: jan
 publisher: bps

@@ -3,7 +3,7 @@ title: "AN 3.47: Characteristics of the (Un) Conditioned"
 translator: sujato
 slug: "an.003.047"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1LBxG-z7_dfg_MKLDTsMTs2uP2-gc6I1a/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1YaaJkbY3hNTBdO76x7SUt4rKv1jzZk9b/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an3.47/en/sujato"
 year: 2018
 course: nibbana

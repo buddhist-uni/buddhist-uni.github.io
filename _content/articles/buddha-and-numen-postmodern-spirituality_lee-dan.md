@@ -5,7 +5,7 @@ authors:
 external_url: "https://internationaljournaldharmastudies.springeropen.com/track/pdf/10.1186/s40613-016-0040-x"
 source_url: "https://doi.org/10.1186/s40613-016-0040-x"
 drive_links:
-  - "https://drive.google.com/file/d/103Z4g3CB_X1mmedz94e1zefOCgzNdUAb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IsdahSc8TcxB6w8tgacW3sidNQi6P6aV/view?usp=drivesdk"
 course: dialogue
 tags:
   - religion

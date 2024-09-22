@@ -6,7 +6,7 @@ authors:
 external_url: "https://zenodo.org/record/1307116/files/88-119-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1148"
 drive_links:
- - "https://drive.google.com/file/d/1CvGsePpIJf85qE5IFGZxQU4DTP0WUhhC/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1oPiQUCna7nO20dUGtZJO4czk3mjwiSFN/view?usp=drivesdk"
 course: nuns
 tags:
  - modern

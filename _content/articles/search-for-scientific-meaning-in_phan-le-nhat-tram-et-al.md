@@ -7,7 +7,7 @@ authors:
 external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0264924&type=printable"
 source_url: "https://doi.org/10.1371/journal.pone.0264924"
 drive_links:
-  - "https://drive.google.com/file/d/13JlYwdV7U2lR-1_KpTVd6vhj9idZoxcT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ocrut65jVeki5AUqGuYUcYOcqNDwLU95/view?usp=drivesdk"
 course: academic
 tags:
   - sati

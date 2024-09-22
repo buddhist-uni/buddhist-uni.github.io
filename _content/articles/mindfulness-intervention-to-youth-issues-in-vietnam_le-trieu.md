@@ -3,7 +3,7 @@ title: "Feasibility of a mindfulness-based intervention to address youth issues 
 authors: ["Thao N. Le", "Don T. Trieu"]
 external_url: "https://academic.oup.com/heapro/article/31/2/470/1749541"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1ILmI0klv6ZTl2rbIuAXOYwwcSZ83j6LE/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1a0MeJHA-b6c_1lFjFbpuQBxcs9IVjc26/view?usp=drivesdk"]
 year: 2016
 month: jun
 journal: "Health Promotion International"

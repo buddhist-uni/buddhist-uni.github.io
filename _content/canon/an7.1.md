@@ -4,7 +4,7 @@ slug: "an.007.001"
 translator: sujato
 external_url: "https://sc.readingfaithfully.org/?q=an7.1"
 source_url: "https://suttacentral.net/an7.1/en/sujato"
-drive_links: ["https://drive.google.com/file/d/1txnCgc6eSOqTdX35LLkdLhEuZzaZA8I8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1FD0dgjtyswaPiiZK-kxZ3I9re4oqG7EP/view?usp=drivesdk"]
 course: monastic-advice
 tags:
   - an

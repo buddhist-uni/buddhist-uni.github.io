@@ -5,7 +5,7 @@ authors:
 translator: "Anzan Hoshin and Yasuda Joshu Dainen"
 external_url: "https://wwzc.org/dharma-text/tenzo-kyokun-instructions-tenzo"
 drive_links:
-  - "https://drive.google.com/file/d/1nnkPsrRHQzHNDE3G_csQTYSvgOwp1q6b/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tkjnZuTfFW1pBbPmReSPIJw8jqWfBEAh/view?usp=drivesdk"
 status: featured
 course: east-asian
 tags:

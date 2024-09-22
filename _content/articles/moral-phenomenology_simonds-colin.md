@@ -4,7 +4,7 @@ authors:
   - "Colin Simonds"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2021/12/Simonds_21_FD.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1SHXvB3aLMsz5hL8VNM6YRws9m5KSLflA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/122GvJWpgZzN-q_noJxQBy81oK40Zzy_l/view?usp=drivesdk"
 course: tantric
 tags:
   - ethics

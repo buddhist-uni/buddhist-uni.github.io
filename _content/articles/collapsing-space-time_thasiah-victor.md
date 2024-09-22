@@ -4,7 +4,7 @@ authors:
   - "Victor Thasiah"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2022/03/Thasiah_22_FD.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1VKGEHvJLwnOm1fh6CpWgIKrWBQ56wDpr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YafQjdg2Icfv6tA3aWVb00C6ySsQJsVx/view?usp=drivesdk"
 course: nature
 tags:
   - cosmology

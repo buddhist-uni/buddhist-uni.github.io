@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.174"
 external_url: "https://suttacentral.net/an4.174/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ZRhpTbt2sLJE91_QbFurLNBcqWCV7qfb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-9CisLR8WvZ0DYNnRQCNp7FD3mmLcI01/view?usp=drivesdk"
 course: emptiness
 tags:
   - intellect

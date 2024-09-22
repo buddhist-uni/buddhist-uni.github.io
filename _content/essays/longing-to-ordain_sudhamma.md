@@ -4,7 +4,7 @@ authors:
   - sudhamma
 external_url: "https://www.bhikkhuni.net/longing-to-ordain/"
 drive_links:
-  - "https://drive.google.com/file/d/1kJjuwdl2X3fhTlZBeGZHDJuHiPb6y_zd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YNkfA5hlaT8qIWSe75-bEQbQePcxVe_f/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - nuns

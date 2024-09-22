@@ -4,7 +4,7 @@ slug: "an.003.066"
 translator: nyanamoli
 external_url: "https://suttacentral.net/an3.66/en/nyanamoli"
 drive_links:
-  - "https://drive.google.com/file/d/1liJNZgFm-coNv4p-81lZKpmN5W4QRLIz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dF15GSkU27er2-CwW9Fmjdl7Wtcnbaf4/view?usp=drivesdk"
 course: function
 tags:
   - an

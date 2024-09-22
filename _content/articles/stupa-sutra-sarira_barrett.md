@@ -6,7 +6,7 @@ source_url: "https://journal.equinoxpub.com/BSR/article/view/14467"
 file_links:
   - "exclusive_01/Stupa%2C%20Sutra%2C%20and%20Sharira%20in%20China%20656-706%20-%20Barrett.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1CfUZfkveoKB32dLHcVJBIB4c9fTkx0F_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tNNHB5h7Aj08MG1WnUsh6UldxNoU89Ny/view?usp=drivesdk"
 course: roots
 base_value: 0.9
 status: featured

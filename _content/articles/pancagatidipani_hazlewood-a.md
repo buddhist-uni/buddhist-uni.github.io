@@ -4,7 +4,7 @@ authors:
   - Ann Appleby Hazlewood
 external_url: "https://archive.org/download/jpts-xi-1987/Pancagatidipani_%20Illumination%20of%20the%20Five%20Realms%20of%20Existence%20-%20Ann%20Appleby%20Hazlewood_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/10jzF4gZhLTwEwvbB2MHWyI1FHe-9DXDl/view?usp=sharing"
+  - "https://drive.google.com/file/d/1mF8IZocyqDt1oy91qP14sDHZ5Zc0y5L_/view?usp=sharing"
 course: cosmology
 tags:
   - karma

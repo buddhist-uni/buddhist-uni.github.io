@@ -4,7 +4,7 @@ authors:
   - levman
 external_url: "https://thecjbs.org/wp-content/uploads/2018/02/Vedhamissakena_Perils-of-the-Transmission-of-the-Buddhadhamma_Levman.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/19MgZfRhJYKL0GN93Lue-UBdj7Xdhs8BT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JVEzhs-66wVSPi-0XkXfiQlTgz5BW_bD/view?usp=drivesdk"
 course: agama
 tags:
   - pali-language

@@ -4,7 +4,7 @@ authors: ["N. K. G. Mendis"]
 year: 1993
 external_url: "https://www.bps.lk/olib/bp/bp217s_Mendis_Questions-of-King-Melinda.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1E7eUflZq8arQZ1K1TwDxnYs77w4usvNm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XJ9cOLzmNqCa0IbpRqqdgddqSQ0bJH2o/view?usp=drivesdk"
 publisher: bps
 course: theravada
 tags: 

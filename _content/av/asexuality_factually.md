@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Adam Conover"
 external_url: "https://www.earwolf.com/episode/understanding-asexuality-with-angela-chen/"
 drive_links:
-  - "https://drive.google.com/file/d/1H6GsM24WM1U2ZRfRf7puGfQ-wCxjovJK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vj80RdDrfJJFIwY6L4sOpauph43t8y_D/view?usp=drivesdk"
 course: inner
 tags:
   - sexuality

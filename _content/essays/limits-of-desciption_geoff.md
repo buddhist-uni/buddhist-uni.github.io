@@ -4,7 +4,7 @@ authors:
   - geoff
 external_url: "https://www.dhammatalks.org/books/uncollected/NotSelfRevisited.html"
 drive_links:
-  - "https://drive.google.com/file/d/1JyxdPd6OK9NuetaBr4HKf9lVpnuEK9cc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1-Wp8aSI267nzsWIpAa1YlAjMdr-tVesn/view?usp=sharing"
 course: emptiness
 tags:
   - philosophy

@@ -4,8 +4,8 @@ translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Jatakagathavannana/index.htm"
 source_url: "https://archive.org/details/in.ernet.dli.2015.280389"
 drive_links:
-  - "https://drive.google.com/file/d/17u-Is_4aUreevlGBlqx0fcWzhyFqbNqM/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/17rJH3ygtX6Mr8v2xYAYUyK48AlDYojGK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dq-QYvLM9JWG82j9UWD97f-KULvLFMUR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a5_7FMhlYe39hVENCYKX3sYN-uBDIlTx/view?usp=drivesdk"
 course: pali-dictionaries
 tags:
   - canonical-poetry

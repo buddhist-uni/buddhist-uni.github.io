@@ -4,7 +4,7 @@ authors: [buddhadasa]
 external_url: "https://www.suanmokkh.org/system/books/files/000/000/096/original/Buddhadasa-Single-bowl-of-sauce.pdf"
 alternate_url: "https://pagoda.or.th/search.html?q=sauce&p=all&areas[]=flexicontent&cc=p"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/12HDYGpwTwHhGAidrrtISYilRvBcv1DEb/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1V-9f2U_iDPC2YWfP8KhwnCFD0vsmpXD0/view?usp=drivesdk"]
 year: 2017
 month: may
 olid: OL32410963M

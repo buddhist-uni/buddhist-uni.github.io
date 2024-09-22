@@ -7,8 +7,8 @@ olid: OL27293086M
 external_url: "https://www.abhayagiri.org/books/485-arahattamagga-arahattaphala"
 source_url: "https://forestdhamma.org/2018/02/09/arahattamagga-arahattaphala-5/"
 drive_links:
-  - "https://drive.google.com/file/d/1PPl_i5WZwc-NNqLV6QnREKYDJuiIF-qi/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1iV__MxECyy9XmDKqmUZ2YhGo01lV1Sr1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lUSTo0lq2bNLvc35xU5W4vXEio5NiMBq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SnYBwp6dIiU2uRXIyL6qELvgTCj6ZA8C/view?usp=drivesdk"
 course: path
 status: featured
 tags:

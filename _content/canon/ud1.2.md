@@ -4,7 +4,7 @@ translator: ireland
 slug: "ud1.2"
 external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.1.02.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/1P0c44LSbslKD1Tupd30tsURoolp9Dsgc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1n_BkLASozfZaGKPYgDg5N9cdEG4KinSB/view?usp=drivesdk"
 course: philosophy
 status: featured
 tags:

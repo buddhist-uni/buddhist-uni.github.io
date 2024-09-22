@@ -5,7 +5,7 @@ authors:
 source_url: "https://plato.stanford.edu/entries/kyoto-school/"
 external_url: "https://seop.illc.uva.nl/entries/kyoto-school/"
 drive_links:
-  - "https://drive.google.com/file/d/1heuxBfqM4sHr3NKJ3j6E42oqYyO6sh5l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I8J-VsJVPZ_bhxcrlvuCV_C4ar-4wtt4/view?usp=drivesdk"
 course: dialogue # maybe down to modern-japanese-philosophy?
 tags:
   - kyoto-school

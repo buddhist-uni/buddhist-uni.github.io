@@ -4,7 +4,7 @@ slug: "an.008.030"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.30/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1cd5jY1-VZ6Vsv0-y-mPFGyfWuWa8U9xS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CrSH1H5OfKYU5wr6vuQJ4UMWHxzTFerg/view?usp=drivesdk"
 course: tranquility-and-insight
 tags:
   - an

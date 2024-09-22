@@ -5,7 +5,7 @@ authors:
 external_url: "https://web.archive.org/web/20220803223336/https://www.medanthrotheory.org/article/download/3965/5639"
 source_url: "https://doi.org/10.17157/mat.4.4.454"
 drive_links:
-  - "https://drive.google.com/file/d/1kjjZFR4t41bphQNMRf275pnzkzzk5xbM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yA6TILvWMc76kfF1hSs-JWmzUV7-vH-P/view?usp=drivesdk"
 status: featured
 course: dialogue
 tags:

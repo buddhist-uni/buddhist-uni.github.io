@@ -2,7 +2,7 @@
 title: "Understanding the Mind"
 authors: [jayasaro]
 formats: [mp3]
-drive_links: ["https://drive.google.com/file/d/1AHVAE2r-lxWnCUz9SpInXGf_5P6RXbIR/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1yGQaeIolgu_t2jyLdjvARUN15TrNZPsA/view?usp=drivesdk"]
 year: 2017
 month: nov
 external_url: "https://www.jayasaro.panyaprateep.org/uploads/media/1/dhamma_talks/files/2560/2560.11.09%20Dhamma%20Talk%20at%20Cittarama%20Malaysia.mp3"

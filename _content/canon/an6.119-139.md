@@ -5,7 +5,7 @@ translator: sujato
 external_url: "https://daily.readingfaithfully.org/an-6-119-139-tapussasutta-about-tapussa-etc/"
 source_url: "https://suttacentral.net/an6.119/en/sujato"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1QCdhKmYOZRAiIEjVWHtUPNYfKq9rnFLJ/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1NFOvcPjF41a4A9_HPmQvnz8QvFWa6n8P/view?usp=drivesdk"]
 course: characters
 tags:
   - an

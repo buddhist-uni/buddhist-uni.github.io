@@ -4,7 +4,7 @@ slug: "vv.2.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-8/"
 drive_links:
-  - "https://drive.google.com/file/d/1hLS4eXYv-PXP3wNx1pwcXA-CJYCFfime/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14mj97Yxx1E50af_ogyvGU0QsBbkWS98Z/view?usp=drivesdk"
 course: lay
 tags:
   - vv

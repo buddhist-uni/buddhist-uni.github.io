@@ -5,7 +5,7 @@ slug: "iti024"
 source_url: "https://accesstoinsight.org/tipitaka/kn/iti/iti.1.001-027.than.html#iti-024"
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti24.html"
 drive_links:
-  - "https://drive.google.com/file/d/1aHE9tiSqEB0POxyUL2l7rAVVlL0ze_Ln/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1t3dD3QId9BTYCRmtdKkM3wNVvo5YMk_N/view?usp=drivesdk"
 course: cosmology
 tags:
   - imagery

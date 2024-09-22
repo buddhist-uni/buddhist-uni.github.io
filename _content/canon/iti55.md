@@ -5,7 +5,7 @@ slug: "iti055"
 subcat: poetry
 external_url: "https://suttacentral.net/iti55/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/16-rvXLBu81ZN2hpVTbiYluOPrmAtWK6-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iPnd1EpM4Hyd-hjsJA-pm_3veHNxWoYM/view?usp=drivesdk"
 course: epistemology
 tags:
   - arahant

@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.mitpressjournals.org/doi/pdf/10.1162/daed_a_01753"
 source_url: "https://doi.org/10.1162/daed_a_01753"
 drive_links:
-  - "https://drive.google.com/file/d/1K1KbvBrhDC-SbRkLw6gAnzPib4QExwjO/view?usp=share_link"
+  - "https://drive.google.com/file/d/1irr19NZTmx5tK_nvvHrHR7ZTd9RI3P5f/view?usp=share_link"
 status: featured
 course: wider
 tags:

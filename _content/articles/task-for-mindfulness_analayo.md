@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/taskmindfulclimate.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Hm-BVrjhijtW1FrEp78Obmi1gLA-D5Qu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FhU2k77k119SSdTvgnGE0hMY7BEEA6mS/view?usp=drivesdk"
 course: ethics
 tags:
   - nature

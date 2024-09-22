@@ -6,7 +6,7 @@ authors:
 olid: OL3409208M
 external_url: "https://www.amaravati.org/book-authors/nick-scott/"
 drive_links:
-  - "https://drive.google.com/drive/folders/1g49T1WPeG1aYd2wNDJ3a6Z_HC8YlJxlK"
+  - "https://drive.google.com/drive/folders/1GPDoA7_mJvEF93lMpy7DqXryyP0Jb8CQ"
 formats: ["PDF and Audiobook"]
 course: pilgrimage
 year: 2005

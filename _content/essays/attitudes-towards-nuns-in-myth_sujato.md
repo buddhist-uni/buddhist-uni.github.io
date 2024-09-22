@@ -1,7 +1,7 @@
 ---
 title: "Attitudes Towards Nuns in Buddhist Myth"
 authors: [sujato]
-drive_links: ["https://drive.google.com/file/d/15LKsPKe_TKWl7y60FijCVyTvZDRFbhqB/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/14Hsxbwajxmg_BoHNPPSctxrKUcfMR5bM/view?usp=drivesdk"]
 external_url: "https://www.bhikkhuni.net/attitudes-towards-nuns-in-buddhist-myth/"
 year: 2007
 month: sep

@@ -5,7 +5,7 @@ slug: "sn.006.002"
 source_url: "https://accesstoinsight.org/tipitaka/sn/sn06/sn06.002.than.html"
 external_url: "https://www.dhammatalks.org/suttas/SN/SN6_2.html"
 drive_links:
-  - "https://drive.google.com/file/d/1Zpt8pQFonl1TOXcJtVcSDiUVQZCkXHh6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EjkDvN5NMPxNlntjAjdwli21mkZYyhru/view?usp=drivesdk"
 course: epistemology
 status: featured
 tags:

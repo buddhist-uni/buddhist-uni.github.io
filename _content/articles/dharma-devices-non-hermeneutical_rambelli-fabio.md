@@ -5,7 +5,7 @@ authors:
 external_url: "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1917884/p057.pdf"
 source_url: "https://doi.org/10.5109/1917884"
 drive_links:
-  - "https://drive.google.com/file/d/17W-ZvH4Tqd-n5fyBhpKTdGc-xigwTiBV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1n3b3LCwcLp4eoMbwirn6wlH9xOGiYRgK/view?usp=drivesdk"
 course: mahayana
 tags:
   - things # strongly

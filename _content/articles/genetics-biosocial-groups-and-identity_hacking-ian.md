@@ -7,7 +7,7 @@ year: 2006
 month: oct
 pages: "81--95"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1FI52NQ6ULDkgVJZiLJTzUSLA4E_GoOzI/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1eHvTS3nubpABBGf2Z80qVT86xg6NKh6m/view?usp=drivesdk"]
 course: inner
 tags:
   - biology

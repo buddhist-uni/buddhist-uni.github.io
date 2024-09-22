@@ -5,7 +5,7 @@ authors:
 editor: nyanaponika
 external_url: "https://www.bps.lk/olib/bp/bp601s_Nyanatiloka_Buddhist-Dictonary.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1eiTzhRu6MJxrsWI6BiUCbP5X8POT3Rz2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kWBA0T7oncojEWYlZD3nEwisb_LBu6qN/view?usp=drivesdk"
 course: pali-dictionaries
 tags:
   - theravada

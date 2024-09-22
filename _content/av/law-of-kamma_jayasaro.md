@@ -5,7 +5,7 @@ authors:
 file_links:
   - exclusive_01/Law%20of%20Kamma%20(2008.04.20)%20-%20Ajahn%20Jayasaro.mp3
 drive_links: 
-  - https://drive.google.com/file/d/1GOo1GHlJAfOzU5wad_AYi2dFx0m9oZJn/view?usp=drivesdk
+  - https://drive.google.com/file/d/1Sh9D9bQXpGTVO5IUJbtN7bMJ5FPsbpFe/view?usp=drivesdk
 course: daily-life
 tags:
   - karma

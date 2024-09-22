@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.073"
 external_url: "https://suttacentral.net/an8.73/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1r6FFk_2NqiUAZkYcqiDwHptf7yu-raT1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zDitJd3ouj0cj5t8PXX5ZPJ4Yx55CWYb/view?usp=drivesdk"
 course: death
 status: featured
 tags:

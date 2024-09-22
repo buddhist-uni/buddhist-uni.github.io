@@ -16,7 +16,7 @@ The Open Buddhist University is an unaccredited, digital resource run by Khemara
 Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of Early Buddhism.[^ebts]
 
 The website is based on
-[Khemarato Bhikkhu's personal library on Google Drive](https://drive.google.com/open?id=1RJi6bEXa25zizGdsm5evCycYuY6a2D8r){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
+[Khemarato Bhikkhu's personal library on Google Drive](https://drive.google.com/open?id=1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 which he [shared publicly](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._} after his ordination in Thailand in 2019.
 He hopes that you'll find these resources helpful and welcomes any feedback or questions at the email at the bottom of the page.
 

@@ -6,7 +6,7 @@ source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_1990_XV
 file_links:
   - "exclusive_01/Categories%20of%20Sutta%20-%20Joy%20Manné.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1KEVEW4_BpWIsPgVmyXQB_JYnBFQw0FBQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13cVveToO8J_VDJG8dWzBl_yHW1PLyo73/view?usp=drivesdk"
 course: sutta
 year: 1990
 journal: jpts

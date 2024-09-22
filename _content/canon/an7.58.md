@@ -4,7 +4,7 @@ slug: "an.007.058"
 translator: sujato
 external_url: "https://suttacentral.net/an7.58/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1hFNNWxOkUPbMn2yQlrMR0dL8uJhn9zec/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gmbuAkm0emmq0JQ9lI2Q724iclFHxbKn/view?usp=drivesdk"
 course: tranquility-and-insight
 tags:
   - an

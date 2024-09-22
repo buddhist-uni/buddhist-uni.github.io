@@ -3,7 +3,7 @@ title: "Inspiring Dhamma"
 authors: [suchart]
 external_url: "https://www.mediafire.com/file/nl2jb08nrya3mel/Inspiring%20Dhamma.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1f3UISPff0XR6oqn14PEpNCsJmZAUS0yr/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1f7bXLllejsVUEqupQc9CAqXok6pmm9MB/view?usp=drivesdk"]
 year: 2017
 address: Bangkok
 base_value: 2.9

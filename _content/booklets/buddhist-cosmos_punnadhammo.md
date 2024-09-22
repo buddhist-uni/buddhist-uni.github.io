@@ -4,7 +4,7 @@ authors:
   - "Punnadhammo Mahāthero"
 external_url: "https://arrowriver.ca/book/cosmoBook.php"
 drive_links:
-  - "https://drive.google.com/file/d/1RdJt6dEzcKKHNRZrwuPMYYJg0JKOvx1Y/view?usp=sharing"
+  - "https://drive.google.com/file/d/1QIsNY0l3-f1EqjoQxeQ5GrWRjsGRrnnZ/view?usp=sharing"
 course: cosmology
 tags:
   - karma

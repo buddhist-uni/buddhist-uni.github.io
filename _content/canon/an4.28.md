@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.004.028"
 external_url: "https://suttacentral.net/an4.28/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1FsXq2N8IwbMz3SP09zkf1PC9Abliwhj9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KZ65jCmgcdqBpWN7Vdp239P9SmnFGHxc/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - ethics

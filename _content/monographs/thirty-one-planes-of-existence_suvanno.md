@@ -5,7 +5,7 @@ authors:
 editor: "Jinavaṁsa"
 external_url: "https://www.buddhanet.net/pdf_file/allexistence.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1vplj6tiVvf_hqtxhUxuJCGIwTbiLHAgZ/view?usp=sharing"
+  - "https://drive.google.com/file/d/18LFQ27XVUTQc2ea-EIB5WDb2UrrDmV24/view?usp=sharing"
 course: cosmology
 tags:
   - karma

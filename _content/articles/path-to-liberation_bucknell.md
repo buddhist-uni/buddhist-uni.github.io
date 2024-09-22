@@ -4,7 +4,7 @@ authors:
   - bucknell
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8631/2538/8439"
 drive_links:
-  - "https://drive.google.com/file/d/14nwXs8TvxHNJqOjC03bnWN2t-judVNek/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bUcwij5NEGOJnXH99FKFx6fqTkqz--O-/view?usp=drivesdk"
 course: path
 status: featured
 tags:

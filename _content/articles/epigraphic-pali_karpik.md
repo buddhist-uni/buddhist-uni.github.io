@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/110698478/Light_on_Epigraphic_Pali_More_on_the_Buddha_Teaching_in_Pali"
 source_url: "http://www.jocbs.org/index.php/jocbs/article/view/264"
 drive_links:
-  - "https://drive.google.com/file/d/1Qty9CL6imgmqOVVH9weA8jJkYVyCBNwO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13lle2eLi7h7XGXX1sWg9fNbDQIDJygze/view?usp=drivesdk"
 course: pali-language
 tags:
   - indian

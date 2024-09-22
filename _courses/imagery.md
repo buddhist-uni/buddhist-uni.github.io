@@ -20,7 +20,7 @@ toc:
   - ['we-will', 'In this course, we will...']
   - ['prerequisites', 'Prerequisites']
   - ['outline', 'Course Outline']
-google_docs_id: 1-GzjFrF71p0QDUIXp1tX0wnad26XEepgRCmQYb0CW0s
+google_docs_id: 1Y7j4m6FNw_j5FbCkNEVF84sDkSxAGlyItuVYcEuVs7w
 feedback_id: Imagery+in+the+EBTs
 layout: multipartcourse
 next_courses:

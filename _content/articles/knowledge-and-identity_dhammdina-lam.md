@@ -5,7 +5,7 @@ authors:
   - "Raymond Lam"
 external_url: "https://teahouse.buddhistdoor.net/the-tlky-international-conference-2021-interview-series-ven-bhikkhuni-dhammadinna/"
 drive_links:
-  - "https://drive.google.com/file/d/19I-xjtDOvpO2DkBCcGC8DObyBDvECs8b/view?usp=sharing"
+  - "https://drive.google.com/file/d/1oZsHDzhKJVeepSvTLUjCuFYTRcF1oiCZ/view?usp=sharing"
 course: epistemology
 tags:
   - modern

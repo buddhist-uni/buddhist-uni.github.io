@@ -4,7 +4,7 @@ authors: [cintita]
 external_url: "https://bhikkhucintita.wordpress.com/home/topics-in-the-dharma/uposatha-1272012/"
 year: 2012
 drive_links:
-  - "https://drive.google.com/file/d/15YfOBpNiG3Vvuy6udp7mpHcc2AVl_jc7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tqzviw7huXFgkru1goji0a6BP9h5Wlph/view?usp=drivesdk"
 course: sangha
 tags:
   - buddha

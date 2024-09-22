@@ -9,7 +9,7 @@ source_url: "https://journal.equinoxpub.com/BSR/article/view/14026"
 pages: "131--139"
 file_links:
   - "exclusive_01/The%20Buddhist%20Conversion%20of%20the%20Nymphs%20of%20Heaven%20-%20Linda%20Covill.pdf"
-drive_links: ["https://drive.google.com/file/d/1Rk5X2UnMtEmTTc648pvbL0GVeV4_P9Wy/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1EfNiiHtLO0Q-Vg0odlJS5Jx0om_Pe3eP/view?usp=drivesdk"]
 status: featured
 course: roots
 tags:

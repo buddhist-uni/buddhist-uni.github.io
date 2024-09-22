@@ -6,7 +6,7 @@ subcat: course
 image: "https://wiswo.org/wp-content/uploads/2015/06/Early-Buddhism-2015x.jpg"
 external_url: "https://wiswo.org/early-buddhism-2015/"
 drive_links:
-  - "https://drive.google.com/drive/folders/1K_wpGNVd0OdywEwr-bg2-viQPQnl6XOf"
+  - "https://drive.google.com/drive/folders/1GskZqltoffD2AhySrWKcDQX4zVNbRlPC"
 formats: [MP3s]
 course: rebirth
 tags:

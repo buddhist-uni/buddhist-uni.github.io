@@ -6,7 +6,7 @@ source_url: "https://doi.org/10.2307/2934848"
 file_links:
   - "exclusive_01/The%20Camera%20People%20-%20Eliot%20Weinberger.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1q3mZ9-KHjvhlbzwRnmhKUItA7LYkW6rY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mvDTXYlbvNHPynBuKB2EOZ_Iuy07If0L/view?usp=drivesdk"
 status: featured
 course: communication
 tags:

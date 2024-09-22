@@ -3,7 +3,7 @@ title: "Syncretism reconsidered: The Four Eminent Monks and their syncretistic s
 authors: ["William Chu"]
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8973/2866"
 drive_links:
-  - "https://drive.google.com/file/d/1Xiqc8BNRZxInW20XoUyfGyC5dsHCIbix/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ADqszqLTLrCYkCQ6a-ilefZ1i5BxEca0/view?usp=drivesdk"
 journal: jiabs
 year: 2006
 volume: 29

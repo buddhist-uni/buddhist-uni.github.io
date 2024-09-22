@@ -4,7 +4,7 @@ authors:
   - "Richard Taruskin"
 external_url: "https://archive.org/download/the-pastness-of-the-present-and-the-presence-of-the-past-taruskin/The%20Pastness%20of%20the%20Present%20and%20the%20Presence%20of%20the%20Past%20-%20Taruskin_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1l47zcslYzr2CBPyMQcvAA8auiNkwCsIF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dDmjgpco0VJeS-_z4sGlHKnOHvFxE0J1/view?usp=drivesdk"
 course: time
 tags:
   - huayan

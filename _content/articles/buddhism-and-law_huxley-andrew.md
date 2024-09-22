@@ -2,7 +2,7 @@
 title: "Buddhism and Law: The View From Mandalay"
 authors: [huxley-andrew]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1kN4894Eeisr5ebZxj1U8Gel6lDTtdcKA/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Xt1E1hDY74tQhKFyPVBcVDK57nmPVjbQ/view?usp=drivesdk"]
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8831/2738"
 journal: jiabs
 year: 1995

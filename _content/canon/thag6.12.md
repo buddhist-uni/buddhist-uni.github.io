@@ -11,7 +11,7 @@ year: 2018
 subcat: poetry
 translator: sujato
 drive_links:
-  - "https://drive.google.com/file/d/1_-BaDjl3fDDAAouMEhwiVqdvzk7bGYW6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iL8CNIWJ9mi5gCF4Pd6nit4blC90ZirJ/view?usp=drivesdk"
 pages: 2
 parallels: []
 # Partial parallels from SC

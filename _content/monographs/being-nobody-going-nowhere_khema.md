@@ -4,7 +4,7 @@ authors:
   - khema
 external_url: "https://www.bps.lk/olib/bp/bp511s_Khema_Being-Nobody-Going-Nowhere.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1sGFlvi4-ar2MSTSZAG6SVxWRvjaYjwgu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1n_H_pzURWFRskNOxbU1p2Q6qHGFuB2FH/view?usp=drivesdk"
 status: featured
 course: buddhism
 tags:

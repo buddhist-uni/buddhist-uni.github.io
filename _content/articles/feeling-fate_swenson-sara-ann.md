@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/4030985/files/318-866-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1279"
 drive_links:
-  - "https://drive.google.com/file/d/196ib4c-zOiKKaD8EeyxrFYYuM9JTVoq8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OPrX7FxxutU7ssikqwjP0EBw8EzI1vDj/view?usp=drivesdk"
 course: nuns
 tags:
   - vietnamese

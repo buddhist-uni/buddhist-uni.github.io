@@ -6,7 +6,7 @@ subcat: poetry
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/wish-granting-king-of-jewels"
 drive_links:
-  - "https://drive.google.com/file/d/1zVPIWzmpI1aF0u7rcwdHKFQI5L2-AR2Z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10TmB67_kDCoe6LkpBHgwTm2HNeWxqzPt/view?usp=drivesdk"
 base_value: 0.2
 course: tantric
 tags:

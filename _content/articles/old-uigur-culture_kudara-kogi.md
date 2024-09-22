@@ -4,7 +4,7 @@ authors:
   - "Kogi Kudara"
 external_url: "https://www.shin-ibs.edu/documents/pwj3-4/09KD4.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/17uip7rFlbGXve3gnLIQH6Nt3ZB6Fkv-D/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zwrP4Q3_DtoFI4iVLfJpBGD3tz8jPAe5/view?usp=drivesdk"
 course: roots
 status: featured
 tags:

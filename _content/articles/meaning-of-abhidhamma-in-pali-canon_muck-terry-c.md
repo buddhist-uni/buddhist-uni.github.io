@@ -6,7 +6,7 @@ authors:
 external_url: "https://archive.org/download/the-meaning-of-abhidhamma-terry-c-muck/The%20Meaning%20of%20Abhidhamma%20-%20Terry%20C%20Muck_text.pdf"
 source_url: "https://doi.org/10.1558/bsrv.v5i1-2.13942"
 drive_links:
-  - "https://drive.google.com/file/d/1oY1PTeUDz6Hr24j2oShGRQjPH9uj3ZRN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Y-mYg8gSf8_YAFT2CAOT_vBc-EEyYoTJ/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - abhidharma

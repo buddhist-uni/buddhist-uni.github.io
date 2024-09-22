@@ -4,7 +4,7 @@ authors:
   - "Lu Kuan Yu"
 external_url: "https://www.thezensite.com/ZenTeachings/Master_Hsu-Yun_Discourses_and_Dharma_Words.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ovZvqzEmMz8KMWMqT0OJVh2OKcvBppWW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MhSo3F-Mq9DvqNoqy4ugfYAuDb4Lu81S/view?usp=drivesdk"
 status: featured
 course: east-asian
 tags:

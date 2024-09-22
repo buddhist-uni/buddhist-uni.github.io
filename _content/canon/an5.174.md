@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.174"
 external_url: "https://suttacentral.net/an5.174/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1E70QEc9IIYhmW8VriADxOEm20UzvsG8o/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/198k54Oi6G8GMHRca8cNyuQ2j-4fFnbRO/view?usp=drivesdk"
 course: view
 tags:
   - karma

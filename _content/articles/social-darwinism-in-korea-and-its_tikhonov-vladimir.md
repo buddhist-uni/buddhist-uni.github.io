@@ -4,7 +4,7 @@ authors:
   - "Владимир Тихонов (Vladimir Tikhonov)"
 external_url: "https://ijkh.khistory.org/journal/view.php?number=300"
 drive_links:
-  - "https://drive.google.com/file/d/1HegDgRR0wHYC7_nLKI3B0WdPw73GJhCS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1eztGL1dd7yyp2nCc7OqzHEh4hQFPEn_D/view?usp=drivesdk"
 course: modern
 tags:
   - korean

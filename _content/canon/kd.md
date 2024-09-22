@@ -3,7 +3,7 @@ title: "The Khuddakapāṭha"
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Khuddakapatha/Khuddakapatha.htm"
 drive_links: 
-  - "https://drive.google.com/file/d/1g3UeEwAhcNThp-HJDvunRLFmQ55dGpfS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18sVsnR-dPzD18Ht8zWGX__Bq_iz3SqRl/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - kn

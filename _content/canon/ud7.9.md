@@ -6,7 +6,7 @@ subcat: poetry
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud7_9.html"
 source_url: "https://www.accesstoinsight.org/tipitaka/kn/ud/ud.7.09.than.html"
 drive_links:
-  - "https://drive.google.com/file/d/1TNp7fPjzrwWfTSDQmWyXAm5R0iGS80fc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WekFlP8Tikt7V74LIQtHux_cSH5Gm6B0/view?usp=drivesdk"
 course: pali-canon
 tags:
   - iddhi

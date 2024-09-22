@@ -5,7 +5,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/233d/e537966a2a080136c6a5a2915b431c257672.pdf"
 source_url: "https://doi.org/10.18874/jjrs.36.2.2009.351-380"
 drive_links:
-  - "https://drive.google.com/file/d/1gt7J7eKxonXHJHqin8NDlgNhmF76_Us9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1C1svzDtscFH_956U5G9yMiO3R14hjq_I/view?usp=drivesdk"
 course: literature # TODO: move somewhere better
 tags:
   - east-asian-lit # maybe move here once it exists

@@ -5,7 +5,7 @@ slug: "an.004.096"
 source_url: "https://accesstoinsight.org/tipitaka/an/an04/an04.096.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN4_96.html"
 drive_links:
-  - "https://drive.google.com/file/d/1dOVAMJJqaHs8T9I6FhS8IZ1MnHt6KWVM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11zd_ts4nGxrM5pLxYvvT2LT2MNaLAseL/view?usp=drivesdk"
 course: speech # keep together with an4.95
 tags:
   - sangha

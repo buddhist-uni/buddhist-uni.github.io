@@ -4,7 +4,7 @@ authors:
   - "Ajahn Punnadhammo"
 external_url: "https://youtu.be/5HN2mSlYwr4"
 drive_links:
-  - "https://drive.google.com/file/d/11rxQzK_f9Sf9bcy2dOyh81I-FROw9IS4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14qLOH7oE0NyqFeYyR3w-7vLrrtj48tBi/view?usp=drivesdk"
 formats: [mp4]
 course: theravada
 tags:

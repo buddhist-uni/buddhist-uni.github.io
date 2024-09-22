@@ -4,7 +4,7 @@ authors:
   - "Jason Espada"
 external_url: "https://jasonespada.com/wp-content/uploads/2017/11/A-Resource-for-the-Practice-of-Meditation_Third-Edition.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-akuW4fcqTFcQ8xfq3d6BU5IK_HdnaVi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1516FD5djkAZVMdTYUXJ1IerhOsJxW6wP/view?usp=drivesdk"
 course: samatha
 year: 2017
 month: nov

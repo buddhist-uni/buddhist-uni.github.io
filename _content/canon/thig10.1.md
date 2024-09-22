@@ -5,7 +5,7 @@ slug: "thig.10.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thig10.1/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1ppD4FCmHb0zi9yQi7jgqD6d_7Ng_AV7k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CwtBNIVvnRGfxNLi9nJi9wBco9g7ynpu/view?usp=drivesdk"
 course: characters
 tags:
   - philosophy

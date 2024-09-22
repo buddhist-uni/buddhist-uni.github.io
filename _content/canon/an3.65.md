@@ -4,7 +4,7 @@ slug: "an.003.065"
 translator: bodhi
 external_url: "https://suttacentral.net/an3.65/en/bodhi"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1mXWXdEU4R5M83EnBdrdRSug5_IUHNFZ9/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1UeORmAnBQm2vbp2KHqYamy2rAzNP0wfQ/view?usp=drivesdk"]
 course: thought
 status: featured
 tags:

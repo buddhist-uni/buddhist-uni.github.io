@@ -3,7 +3,7 @@ title: "Oral Dimensions of Pāli Discourses: Pericopes, Other Mnemonic Technique
 authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/oral-dimensions.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1uA9xBARROZZ3arwLs-I9hK9ruryfyX0_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/15Ly63KvtSCoS3EOXettu1e5p0SKN0cdU/view?usp=drivesdk"]
 year: 2007
 number: 3
 pages: "5--33"

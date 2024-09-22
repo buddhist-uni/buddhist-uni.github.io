@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/sampajanna.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/1MDFN5DeDwpf6pE8Mg96usIcQGTdb4USj/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1esWRxG7SZDSGRXbuxzDVlOs6CvJUnyUQ/view?usp=drivesdk"
 course: daily-life
 tags:
   - meditation

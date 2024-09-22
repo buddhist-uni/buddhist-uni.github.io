@@ -5,7 +5,7 @@ slug: "ud6.3"
 subcat: poetry
 external_url: "https://suttacentral.net/ud6.3/en/anandajoti"
 drive_links:
-  - "https://drive.google.com/file/d/1sqtVrubnR-KEQ6qZJ5AEmIp2SSewvBbE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qyDChtWN_TlotEZf5BLIFFyHy7OovVLL/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - function

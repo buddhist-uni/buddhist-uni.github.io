@@ -5,7 +5,7 @@ reader: sucitto
 external_url: "https://suttareadings.net/audio/snp.5.06.suci.mp3"
 formats: [mp3]
 drive_links:
- - "https://drive.google.com/file/d/1JoVhBanj0t8Yr2DZdoAgxPhKP2Kjm6TD/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1lDEvFAnqY1a5FVFcuBRRfO_Zy8PNg4Jr/view?usp=drivesdk"
 source_url: "https://suttacentral.net/snp5.7/en/mills?lang=en&reference=none&highlight=false"
 year: 2006
 course: nibbana # duplicate with *The Island* but that's okay...

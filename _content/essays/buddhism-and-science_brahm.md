@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://dhammatalks.net/Books3/Ajahn_Brahm_Buddhism_and_Science.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1z2uxETtz9tWNlwbzoev1FJ6HhkFDWMdV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dR5bm_6khmaRIK001Dt94wj38DzmPPeW/view?usp=drivesdk"
 course: modern
 tags:
   - dialogue

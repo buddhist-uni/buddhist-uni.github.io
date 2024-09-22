@@ -6,7 +6,7 @@ subcat: poetry
 translator: "W. S. Yokoyama and Yukie Dan"
 external_url: "https://bschawaii.org/shindharmanet/wp-content/uploads/sites/3/2015/03/Yokoyama-Waka.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1P9Aq96InQNoJt2oh1yEPU5nChu88BP3j/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ANbge0RkS2n0nAyMa5oswVen2BTD7ZhH/view?usp=drivesdk"
 status: featured
 course: form
 tags:

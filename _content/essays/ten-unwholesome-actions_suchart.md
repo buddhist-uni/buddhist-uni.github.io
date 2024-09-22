@@ -4,7 +4,7 @@ authors: [suchart]
 external_url: "http://www.kammatthana.com/dt_006.htm"
 month: sep
 year: 2000
-drive_links: ["https://drive.google.com/file/d/1HmfkVQS3V0ma0u05xP5EsVMcElbzluEz/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/14uop9pz1Cs2IozVaJW7Uf7hQDUdBNL1O/view?usp=drivesdk"]
 course: ethics
 tags:
   - karma

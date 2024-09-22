@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxi/The%20relationship%20between%20Mah%C4%81s%C4%81%E1%B9%83ghikas%20and%20Mah%C4%81y%C4%81na%20Buddhism%20indicated%20in%20the%20colophon%20of%20the%20Chinese%20translation%20of%20the%20Vinaya%20of%20the%20Mah%C4%81s%C4%81%E1%B9%83ghikas.pdf"
 source_url: "https://www.academia.edu/36301347/The_relationship_between_Mah%C4%81s%C4%81%E1%B9%83ghikas_and_Mah%C4%81y%C4%81na_Buddhism_indicated_in_the_colophon_of_the_Chinese_translation_of_the_Vinaya_of_the_Mah%C4%81s%C4%81%E1%B9%83ghikas"
 drive_links:
-  - "https://drive.google.com/file/d/1sT6fMV6DwH5oW5OnHs0-Drb8C71NOZ0l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MaxSmErksDgP6vH-vOGWnO1iMV0WOuUH/view?usp=drivesdk"
 course: sects
 tags:
   - mahayana-roots

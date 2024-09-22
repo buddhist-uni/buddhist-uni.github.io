@@ -5,7 +5,7 @@ slug: "snp.1.10"
 subcat: poetry
 external_url: "https://suttafriends.org/sutta/snp1-10"
 drive_links:
-  - "https://drive.google.com/file/d/1KgSj00iX1F_lxeAGtH0ufXDteoeVu82G/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15fQytE5gUtQw_kQWaWK3HidfGh5wvjAD/view?usp=drivesdk"
 course: pali-canon
 tags:
   - yakkha

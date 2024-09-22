@@ -6,7 +6,7 @@ external_url: "https://www.suttareadings.net/audio/mn.143.sdoe.mp3"
 formats:
   - mp3
 drive_links:
-  - "https://drive.google.com/file/d/1zGz8W12ZREdrSHHgyYpuFHsDHbyFb9IY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12hFPZzdUqQbbaRJJ0RSeh-pbA17XO70R/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

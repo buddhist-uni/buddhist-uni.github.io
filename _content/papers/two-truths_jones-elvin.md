@@ -5,7 +5,7 @@ authors:
 editor: "Minoru Kiyota"
 source_url: "https://doi.org/10.1515/9780824885984-004"
 drive_links:
-  - "https://drive.google.com/file/d/1gwsIWT_XHiIwocKSPIIQZV57HN-il7dM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15xuh-r7f0guqB0nVADJBriRK9r71Q8VY/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Systems%20of%20Two%20Truths%20-%20Jones.pdf"
 course: dialogue

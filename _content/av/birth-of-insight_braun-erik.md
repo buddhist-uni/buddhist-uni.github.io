@@ -4,7 +4,7 @@ authors:
   - "Erik Braun"
 external_url: "https://youtu.be/G1PB7fq63oY?t=8m00s"
 drive_links:
-  - "https://drive.google.com/file/d/1YMbJqhuzLKBVPBwSKypd2B6wMAUcmVaA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PnwZgsf5KZZciOb8VXQ7gEprxkWrOgS7/view?usp=drivesdk"
 formats: [m4a]
 # sound quality is pretty bad
 # might want to archive

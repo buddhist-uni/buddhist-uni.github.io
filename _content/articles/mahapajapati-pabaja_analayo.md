@@ -3,7 +3,7 @@ title: "Mahāpajāpatī’s Going Forth in the *Madhyama-āgama*"
 authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/mahapajapati.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1iPYktGjQ18Xy73iMNrTSwruS2xpm7q3R/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1_2_F-sDMOMOeQqhxtYVx5M4jG5gMqITB/view?usp=drivesdk"]
 year: 2011
 pages: "268--317"
 journal: jbe

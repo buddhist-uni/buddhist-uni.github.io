@@ -3,7 +3,7 @@ title: "Thag 7.2 Lakuṇḍakabhaddiya Theragāthā: Bhaddiya the Dwarf Bhaddiya
 slug: "thag.07.02"
 external_url: "https://suttacentral.net/thag7.2/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1Cr-XVuusYaLdmIYSdMC2C1mRhV6LgGDh/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1-iS5qeDOojhxxtEZRnviVsqW-IifyjMU/view?usp=drivesdk"]
 course: music
 tags:
   - thag

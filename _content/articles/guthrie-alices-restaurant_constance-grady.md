@@ -4,7 +4,7 @@ authors:
   - "Constance Grady"
 external_url: "https://www.vox.com/culture/2018/11/21/18104601/alices-restaurant-arlo-guthrie-thanksgiving"
 drive_links:
-  - "https://drive.google.com/file/d/1dQs07xxoUL1FLz4-C4dr2dtkiT6Kuoj_/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Nsq5JoN_7W4Xx0AFHjLtY2hTmnA1zst2/view?usp=sharing"
 course: karma
 tags:
   - ahimsa

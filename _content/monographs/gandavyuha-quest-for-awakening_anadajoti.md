@@ -6,7 +6,7 @@ editor: "Handaka Vijjānanda"
 translator: "Yin Naṭadhītā"
 external_url: "https://photodharma.net/Books/Gandavyuha.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1UKxLZWVPXogycYPRrc35h7wSx70JjmYx/view?usp=sharing"
+  - "https://drive.google.com/file/d/1qC9A3oFDWahRTxw-BqG_8nRZwn6eVuLF/view?usp=sharing"
 course: rebirth-stories
 tags:
   - borobudur

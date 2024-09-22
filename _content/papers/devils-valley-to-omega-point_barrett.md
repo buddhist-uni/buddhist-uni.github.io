@@ -6,7 +6,7 @@ editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/01Barrett.pdf"
 source: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-ii/"
 drive_links:
-  - "https://drive.google.com/file/d/1wy-Q1ZEUY3h7_4FVxnETBfzlArM3P_Da/view?usp=share_link"
+  - "https://drive.google.com/file/d/1tr93FK3GsHb7CBy-R43BHiWrLH9jbS60/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:

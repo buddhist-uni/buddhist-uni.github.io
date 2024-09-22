@@ -6,7 +6,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyoshul-khenpo-jamyang-dorje/advice-in-a-single-statement"
 drive_links:
-  - "https://drive.google.com/file/d/1QWD3HHNnQjqh14mU0X0DWKLjJLrqoOoM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GrlqABJGMqHBNBnb7tMRey-_4WKdBqQS/view?usp=drivesdk"
 course: meditation
 tags:
   - tantric

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.dhammatalks.org/books/NobleStrategy/Section0005.html"
 source_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/karma.html"
 drive_links:
-  - "https://drive.google.com/file/d/1KNwJ3NH-8HoP0huE7aO0UQHVCNBLdXR5/view?usp=sharing"
+  - "https://drive.google.com/file/d/1I4DYdC2_nkG0i7S0XyPSzfFkdN7BfQdZ/view?usp=sharing"
 formats: [pdf]
 course: view 
 tags:

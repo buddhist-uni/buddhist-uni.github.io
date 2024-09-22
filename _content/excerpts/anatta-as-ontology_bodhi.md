@@ -3,7 +3,7 @@ title: "*Anattā* as Strategy and Ontology"
 authors:
   - bodhi
 drive_links:
-  - "https://drive.google.com/file/d/1sxIJGwvQ7jJIwOEUQcehg9wBKiFCH7Sh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/183C1T9RfPFd3V61sG6y6kZAYAJOfbo3Q/view?usp=drivesdk"
 course: emptiness
 tags:
   - hermeneutics

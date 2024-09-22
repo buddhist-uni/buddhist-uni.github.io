@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.034"
 external_url: "https://suttacentral.net/an3.34/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1SHksDhnm8VXpoMZS6Spi6npX0WXN_e02/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bD99QPKg1UKZq127DdLG97I1z6pkPE-i/view?usp=drivesdk"
 course: nibbana
 tags:
   - imagery

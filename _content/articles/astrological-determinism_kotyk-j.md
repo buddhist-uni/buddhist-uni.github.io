@@ -2,7 +2,7 @@
 title: "Astrological Determinism in Indian Buddhism"
 authors: ["Jeffrey Kotyk"]
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3285741&journal_code=JIABS"
-drive_links: ["https://drive.google.com/file/d/1IQOjdI3UBmLaiabBa1o3rnIPMFKA_Xpe/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1HuQDWGqod9CRwVGEj0ZLrdYl4s-tR1T5/view?usp=drivesdk"]
 tags:
   - karma
   - premodern

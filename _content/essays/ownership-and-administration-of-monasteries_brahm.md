@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://vbgnet.org/Articles/Vinaya-Monastery-Ownership-Administration.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Y9RuQy4CV1uvc_mq4FLxjUR4iF_IH1lY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IODRhwFbzvyvSHvunX_aNUQR_-5QNb6w/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - sangha

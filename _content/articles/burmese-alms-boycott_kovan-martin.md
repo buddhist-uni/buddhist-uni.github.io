@@ -4,7 +4,7 @@ authors:
   - "Martin Kovan"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2012/04/Kovan-Burmese-Alms-Boycott.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1hUyohRV2VmyCYjE0I0b3GnqMS6T5_0MS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11uwSRYyDU6qQu3xspu2tBMASbGy-q4yB/view?usp=drivesdk"
 course: sangha
 tags:
   - burmese

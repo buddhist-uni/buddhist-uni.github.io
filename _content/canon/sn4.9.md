@@ -5,7 +5,7 @@ slug: "sn.004.009"
 subcat: poetry
 external_url: "https://suttacentral.net/sn4.9/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1p721UhBHX4L_1S4_hYXq_0Hc0SgFh0Tx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1V00HR5zkJG-xTJtYTJExaEmNSxwXf_hs/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - aging

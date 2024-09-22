@@ -5,7 +5,7 @@ slug: "ud2.5"
 subcat: poetry
 external_url: "https://suttacentral.net/ud2.5/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1IXq51tbehVWEfeoWhbW7OlllUMnJ-zjP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10G7ZSDO3525zANRnS3uQi-XsVV9oysDM/view?usp=drivesdk"
 course: sangha
 tags:
   - wider

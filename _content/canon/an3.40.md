@@ -3,7 +3,7 @@ title: "AN 3.40: Authorities"
 translator: bodhi
 slug: "an.003.040"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1bpFN9TaxmGbB3bVcuNheuviOXBqW8IJe/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1qHFbFawtl3Txn-5-MaeNbXfBOM6msVHc/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an3.40/en/bodhi"
 year: 2012
 course: vinaya-studies

@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659471/"
 source_url: "https://doi.org/10.1155/2013/653572"
 drive_links:
-  - "https://drive.google.com/file/d/1Or8s3JFHeYmg2r1PW0B0aY6iMqJikUoh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nuAG_zqf3GdKEIpFxxEfrYj_-YNZS1Un/view?usp=drivesdk"
 status: featured
 course: samatha
 tags:

@@ -4,7 +4,7 @@ translator: sujato
 slug: "ud3.1"
 external_url: "https://suttacentral.net/ud3.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1iG4mkF8VGwz_qSg0RG81dHh4W7mE8XrN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uEbBDdBzZ0vxR5WWwatadoA6NQCS4zYY/view?usp=drivesdk"
 course: hindrances
 tags:
   - karma

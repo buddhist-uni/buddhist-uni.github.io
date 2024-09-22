@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.5.09.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud5_9.html"
 drive_links:
-  - "https://drive.google.com/file/d/1uObcLSH0vtYOR_tmobIMm2Jf9lX_zfTI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RPiKgsEYCN3NvYRmPXTteVKhb8aBhicy/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - ideology

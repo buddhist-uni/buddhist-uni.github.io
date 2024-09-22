@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.071"
 external_url: "https://suttacentral.net/an5.71/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1PhVPjqzLckY8S-OPlqandGfg-qNmEgSl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/199t_tCt-7MvEQXYU0nqTSzeHdcETK16J/view?usp=drivesdk"
 course: meditation
 status: featured
 tags:

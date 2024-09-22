@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "http://budblooms.org/2020/05/10/buddhism-and-the-incorruptible-body/"
 drive_links:
-  - "https://drive.google.com/file/d/1-8g43L5YUH_GUsFrJ-CTX-GcR6T6u9Vp/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1w7zPq1NdzO7ZaXFOOEmxBXg9sbiF-5rB/view?usp=drive_link"
 formats: [pdf]
 course: view
 tags:

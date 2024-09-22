@@ -5,7 +5,7 @@ authors:
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Buddhist-Wisdom-Verses/index.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1g6dgGv0uOAZU_DOdpzksj86Lu_INw65i/view?usp=sharing"
+  - "https://drive.google.com/file/d/1fVa5TZH663KxOlPRFdEyE7MSQigWo9yZ/view?usp=sharing"
 course: canonical-poetry
 tags:
   - lay

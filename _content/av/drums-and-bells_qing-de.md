@@ -2,7 +2,7 @@
 title: "Drums and Bells"
 authors:
   - "Qing De Monastery"
-drive_links: ["https://drive.google.com/file/d/1nKelIAHnESuzswf3WTt_1mRt51jtN8Uh/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1HxhOMg2G1QGFWQPVnpi88QulVPkH2AFH/view?usp=drivesdk"]
 external_url: "https://archive.org/details/drums-and-bells-evening-chanting-qing-de-monastery"
 status: featured
 course: form

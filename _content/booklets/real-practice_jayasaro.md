@@ -5,7 +5,7 @@ authors:
 external_url: "https://cdn.amaravati.org/wp-content/uploads/2014/09/The-Real-Practice-Ajahn-Jayasaro.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1QpO5FJrXS4kcQIpQPqqaRTtnNZWoq6Uc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1R9ah6ArtlYG427GFKjA4kzeGpeHyNwZa/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - navakovada

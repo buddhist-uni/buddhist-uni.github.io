@@ -6,7 +6,7 @@ external_url: "https://dharmaseed.org/talks/player/66748.html"
 formats: [mp3]
 year: 2013
 month: sep
-drive_links: ["https://drive.google.com/file/d/1HL6xMd3WMm3xEZEVtUJEnoeIA0WuZV6Z/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1TLcF1bWONmo8YeN8AfzgY_qL-4EVEMqe/view?usp=drivesdk"]
 course: path
 tags:
   - meditation

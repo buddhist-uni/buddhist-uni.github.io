@@ -2,7 +2,7 @@
 title: "Attitudes Towards Nuns: A Case Study of the _Nandakovāda_ in the Light of its Parallels"
 authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/attitudes-towards-nuns.pdf"
-drive_links: ["https://drive.google.com/file/d/1nLSlICDnTSfvg4234HVMdf7XUe7OZ1rd/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1MmlpwkL6n2SJZGoZKdPgR1gSp90a-LAB/view?usp=drivesdk"]
 tags:
   - nuns
   - indian

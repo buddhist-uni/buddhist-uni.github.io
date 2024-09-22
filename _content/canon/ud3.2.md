@@ -2,7 +2,7 @@
 title: "Ud 3.2 Nanda Sutta: The Discourse about Nanda"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud3.2/en/anandajoti"
-drive_links: ["https://drive.google.com/file/d/1LZO6kPdJqjfqqmA0zCtAcC-wbFEtyxnq"]
+drive_links: ["https://drive.google.com/file/d/1jFEi7Y8zJx7XvWw7vU9SOiqkQgnQd6ET"]
 course: monastic-advice
 tags:
   - ud

@@ -5,7 +5,7 @@ authors:
 editor: "Steffen Döll and Michael Zimmermann"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/17-allon.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1xDjzAOmC4s40OLbVNcTAnLSSPBMbHKol/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fkDy70a51t3WvEz_-Tad230QFkPlyB4s/view?usp=drivesdk"
 course: agama
 tags:
   - sutta

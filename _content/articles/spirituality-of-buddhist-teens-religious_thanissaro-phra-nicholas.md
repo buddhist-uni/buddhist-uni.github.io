@@ -6,7 +6,7 @@ authors:
 external_url: "https://wrap.warwick.ac.uk/75389/7/WRAP_Thanissaro%20_2015_%20Buddhist%20RSE%20preprint.pdf"
 source_url: "https://doi.org/10.1080/1364436x.2015.1118680"
 drive_links:
-  - "https://drive.google.com/file/d/15yZlsLdpmP2FUtZp3fqGalBFHh9c-Ii4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yyCbBobKmAWyzpl1n5fYeH5xMW0vyadJ/view?usp=drivesdk"
 status: featured
 course: west
 tags:

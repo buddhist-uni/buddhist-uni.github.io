@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/tevijjavacchagottasutta.pdf"
 year: 2008
 drive_links:
- - "https://drive.google.com/file/d/1dxNcq-Uu-7LD13Ft6mx0uGRmULSOkJDs/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1CeXDmdiYEN8npe3B1epRsHnuXcdMI0PC/view?usp=drivesdk"
 course: buddha
 tags:
   - iddhi

@@ -5,7 +5,7 @@ slug: "an.009.037"
 source_url: "https://accesstoinsight.org/tipitaka/an/an09/an09.037.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN9_37.html"
 drive_links:
-  - "https://drive.google.com/file/d/1cuZKEZtFHLXJVC5luI4RCZ80suhhekjs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YjkZGzl7dkQDqdsO9xqBpw5ChJAinV2d/view?usp=drivesdk"
 course: samadhi
 tags:
   - stages

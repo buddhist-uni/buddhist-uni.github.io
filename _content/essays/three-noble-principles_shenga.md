@@ -4,7 +4,7 @@ authors:
   - "Khenpo Shenpen Nangwa"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/three-noble-principles"
 drive_links:
-  - "https://drive.google.com/file/d/18SjWG0llVrU4mgvuMJFDyuEHIiRNGIan/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19PVsNsNUgSuFJbiPB-17DiDoI6MtugxX/view?usp=drivesdk"
 course: tantric
 tags: [mahayana]
 year: 2007

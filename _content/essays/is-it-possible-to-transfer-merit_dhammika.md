@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/download/is-it-really-possible-to-transfer-of-merit/"
 drive_links:
-  - "https://drive.google.com/file/d/1zQC7axta2F0gZG2SUZqb8Aq6RCKt8niK/view?usp=drive_link"
+  - "https://drive.google.com/file/d/13xrSuQgiHM_zIZfgdY7YzBk62D117O7C/view?usp=drive_link"
 course: karma
 tags:
   - form

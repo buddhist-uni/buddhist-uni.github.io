@@ -3,7 +3,7 @@ title: "Thig 6.7 Guttā Therīgāthā: Verses of the Elder Guttā"
 slug: "thig.06.07"
 external_url: "https://suttacentral.net/thig6.7/en/soma"
 translator: soma
-drive_links: ["https://drive.google.com/file/d/1_BLB_ieIsjwVF8tLmdLAIwg9AW2fvio-/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1wsGEYC7YTDvugF-avD9TJEkI34_hAwKO/view?usp=drivesdk"]
 course: thought
 tags:
   - thig

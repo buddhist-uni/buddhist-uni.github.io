@@ -4,7 +4,7 @@ authors: [vayama]
 year: 2007
 month: apr
 formats: [mp3]
-drive_links: ["https://drive.google.com/file/d/1CPdsOPJ-LI57H-7VMwnMZeZqW-etQydd/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1kZ4oUK_t11SPI_XshQlIRvvly5ozQdJj/view?usp=drivesdk"]
 external_url: "https://bswa.org/teaching/recollections-of-the-buddha-by-ayye-vayama/"
 course: path
 tags:

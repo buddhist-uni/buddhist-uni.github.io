@@ -4,7 +4,7 @@ authors:
   - "Chula Weerakoon Watugala"
 external_url: "https://dhammavinaya.com/wp-content/uploads/2020/01/Path-of-Practice.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1vaMQZcdhOx9PGZ87YjMSTVbEOsEHyI4S/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I-qWOX-xBwCEigBNTkwN3UGdqRYYouMI/view?usp=drivesdk"
 tags:
   - pali-canon
   - monastic-theravada

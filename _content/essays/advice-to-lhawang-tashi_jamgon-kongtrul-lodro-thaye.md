@@ -5,7 +5,7 @@ authors:
 translator: "Joseph Faria"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamgon-kongtrul/advice-to-lhawang-tashi"
 drive_links:
-  - "https://drive.google.com/file/d/1JpWp9eZdA1NZ3OuRpd-YMwVfrtczf5In/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17mZXx-SLOIxhUFXrOdEJ69sOHtFWziLE/view?usp=drivesdk"
 course: meditation
 tags:
   - kagyu

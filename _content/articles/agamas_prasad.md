@@ -5,7 +5,7 @@ authors:
 source_url: "https://journals.equinoxpub.com/BSR/issue/view/901"
 file_links: ["exclusive_01/The%20Chinese%20Agamas%20vis-a-vis%20the%20Sarvastavada.pdf"]
 drive_links:
-  - "https://drive.google.com/file/d/1LxhuVGcZLsA1ABf6O9zVwGsjRg7Lm4eu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dOCaunuqTwTzs1rSHRr0S6K-u8z3llly/view?usp=drivesdk"
 course: agama
 tags:
   - ebts

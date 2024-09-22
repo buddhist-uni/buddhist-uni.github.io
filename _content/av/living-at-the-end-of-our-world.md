@@ -8,7 +8,7 @@ authors:
   - "Matthew Sitman"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/warmth-w-dan-sherrell-dorothy-fortenberry"
 drive_links:
-  - "https://drive.google.com/file/d/1SnrlOfptc6tHRXiQZlNt8Cn_2oEokVJs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1v86qWZR1DxjUQEuBFLOT7RaNOhJoTUta/view?usp=drivesdk"
 status: featured
 course: wider
 tags:

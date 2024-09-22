@@ -5,7 +5,7 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286392&journal_code=JIABS&download=yes&f=.pdf"
 source_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286392&journal_code=JIABS"
 drive_links:
-  - "https://drive.google.com/file/d/1QOMQNUyI4CXZuAFHcrn5xJI4xP3Hl4LN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vZG0LhKsM_GAKc2espnDG0UlW6KmBsR9/view?usp=drivesdk"
 course: social
 tags:
   - tantric-roots

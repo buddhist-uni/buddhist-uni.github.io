@@ -5,7 +5,7 @@ slug: "thig.01.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thig1.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1k5tmtyhZL1meAQWQ9Kq3iIFVLoR6Vb2A/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15zwTlRNN--Q7A83QjIOuQGaifCN1lCCp/view?usp=drivesdk"
 course: imagery
 tags:
   - thig

@@ -5,7 +5,7 @@ authors:
 external_url: "https://discovery.ucl.ac.uk/id/eprint/10092984/1/Rewriting-Buddhism.pdf"
 source_url: "https://www.uclpress.co.uk/products/123312"
 drive_links:
-  - "https://drive.google.com/file/d/1A3-7J86MAtlq3lJeNSA8oS9Xbd17YzfL/view?usp=sharing"
+  - "https://drive.google.com/file/d/1_VCYbtPE99-ZgcsdPK08zDQV-4aLIhOe/view?usp=sharing"
 course: theravada-roots
 tags:
   - pali-literature

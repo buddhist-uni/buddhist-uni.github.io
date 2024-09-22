@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/ancientindianeducation.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/0B-8ynJs05uuIcXFHWEs2d0ptSkl6d2JvM2ZETHhCUEJybDRZ/view?usp=drivesdk&resourcekey=0-SnqvYEXc0h-Lcio8sydSUQ"
+  - "https://drive.google.com/file/d/18zixFxD6RSt-qWNcPdcPdxsgHQmbL1zA/view?usp=drivesdk&resourcekey=0-SnqvYEXc0h-Lcio8sydSUQ"
 course: setting
 year: 2019
 pages: "964--969"

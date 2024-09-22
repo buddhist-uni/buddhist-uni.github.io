@@ -4,7 +4,7 @@ subcat: poetry
 slug: "thag.14.01"
 external_url: "https://suttacentral.net/thag14.1/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1KRXsBVnFFKpBE7WLybvnJs6O1Cb6caGm/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1JsaLoj5gv8KBajX1vH7OXZ0c7ah2Cz_n/view?usp=drivesdk"]
 course: brahmavihara
 tags:
   - thag

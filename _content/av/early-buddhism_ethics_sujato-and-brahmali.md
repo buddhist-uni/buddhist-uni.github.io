@@ -5,7 +5,7 @@ source_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajah
 month: apr
 year: 2013
 formats: [zip]
-drive_links: ["https://drive.google.com/file/d/1G_n7rNi2pTuPg69GLulc0DC-oYutc52h/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/15Yb8KxoevgdsmM0dBtaZmQW1mwCF8oI6/view?usp=drivesdk"]
 course: ethics
 series: early-buddhism_sujato-brahmali
 number: 3

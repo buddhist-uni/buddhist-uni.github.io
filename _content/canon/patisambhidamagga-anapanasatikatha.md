@@ -4,7 +4,7 @@ external_url: "https://centrebouddhistetheravada.files.wordpress.com/2013/10/pat
 translator: nyanamoli
 editor: warder
 year: 1982
-drive_links: ["https://drive.google.com/file/d/1OiuEeZtO1iftm9tklIz0jZ32UJDJj5WD/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1mnTBZl_vP89h2II-2KEHX2dj83R5n2Zl/view?usp=drivesdk"]
 course: indian
 tags:
   - kd

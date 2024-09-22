@@ -4,7 +4,7 @@ authors:
   - "Trent Walker"
 external_url: "https://lecture2go.uni-hamburg.de/l2go/-/get/v/66544"
 drive_links:
-  - "https://drive.google.com/file/d/1xXv8KXB81fjstkzVc3m8HxKdvHHlbLXU/view?usp=sharing"
+  - "https://drive.google.com/file/d/1T-TcH8NtqoQKxz9pBmHTG3dgUx7vn4bH/view?usp=sharing"
 formats: [mp4]
 course: theravada-roots
 tags:

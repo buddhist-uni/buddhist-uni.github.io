@@ -3,7 +3,7 @@ title: "SN 1.41 Āditta Sutta: Ablaze"
 slug: "sn.001.041"
 external_url: "https://suttacentral.net/sn1.41/en/bodhi"
 translator: bodhi
-drive_links: ["https://drive.google.com/file/d/1ktjaGsTzFeT6f_OCV56CKTp1DC3_v1ur/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1VEDgZtUp1v6RAB13nC6P3yE0ZZj9Nzu9/view?usp=drivesdk"]
 course: things
 tags:
   - sn

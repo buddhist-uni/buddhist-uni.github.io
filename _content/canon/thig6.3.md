@@ -5,7 +5,7 @@ slug: "thig.06.03"
 subcat: poetry
 external_url: "https://suttacentral.net/thig6.3/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1HSiVL_t2A2oN5h-mqHUzxqZSwp4eWJQp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uY0yFZCDJoqy7pVsMf7v0LGvB46vAeLa/view?usp=drivesdk"
 course: characters
 tags:
   - view

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.tandfonline.com/doi/pdf/10.1080/01436597.2019.1660631?needAccess=true"
 source_url: "https://doi.org/10.1080/01436597.2019.1660631"
 drive_links:
-  - "https://drive.google.com/file/d/1BOzPrvqQw2AAaeRce8bevuHjFM6rhEuj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RTto-YG4cF_TD1sy1apZ7akgMegSpaB1/view?usp=drivesdk"
 course: activism
 tags:
   - theravada

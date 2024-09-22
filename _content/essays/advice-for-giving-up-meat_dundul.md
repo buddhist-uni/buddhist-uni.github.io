@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/nyala-pema-dundul/song-advice-giving-up-meat"
 drive_links:
-  - "https://drive.google.com/file/d/1CI8f1ZsV1JDdybKXrtxxjUkkZYHbySsl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ztTI1ntHQJ8caa4Z_emVIizD2XAPzNuI/view?usp=drivesdk"
 subcat: poetry
 course: mahayana
 tags:

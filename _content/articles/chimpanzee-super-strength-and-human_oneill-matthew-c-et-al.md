@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/114/28/7343.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1619071114"
 drive_links:
-  - "https://drive.google.com/file/d/1fAHGBPBJulcVUH6CNwFx1U5tfptvtJ6b/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1D5LaaFHXFGJpN-2VZiaKtojmcSUL60qm/view?usp=drivesdk"
 course: body
 tags:
   - muscle

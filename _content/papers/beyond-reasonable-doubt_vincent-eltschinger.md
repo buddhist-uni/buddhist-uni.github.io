@@ -4,7 +4,7 @@ authors:
   - "Vincent Eltschinger"
 external_url: "https://philpapers.org/archive/ELTBRD.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1GrO0-Iiz75FIchradGLURiEpuCr7Ze2I/view?usp=sharing"
+  - "https://drive.google.com/file/d/1aJdwZ-zpyqU4WlCeKvWWrYSv25xxQHID/view?usp=sharing"
 course: epistemology
 tags:
   - stoicism

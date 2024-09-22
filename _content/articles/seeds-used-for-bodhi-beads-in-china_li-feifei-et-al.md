@@ -9,7 +9,7 @@ authors:
 external_url: "https://ethnobiomed.biomedcentral.com/counter/pdf/10.1186/1746-4269-10-15"
 source_url: "https://doi.org/10.1186/1746-4269-10-15"
 drive_links:
-  - "https://drive.google.com/file/d/11mjItJ4yn8XQi4mgGAHGeqoJSJYgPFyC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14_mO2EjN0JoMPgiTc82cSv5UuX2sUk_u/view?usp=drivesdk"
 course: chinese
 tags:
   - mahayana

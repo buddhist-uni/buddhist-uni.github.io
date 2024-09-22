@@ -5,7 +5,7 @@ slug: "iti060"
 subcat: poetry
 external_url: "https://suttacentral.net/iti60/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1SX8tLhSY0IIzrEJrC4pMyRxyMktep3Ba/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12DFUKxYOqA6_zHg2EdgFRLxAjNzcrfyN/view?usp=drivesdk"
 course: karma
 tags:
   - function

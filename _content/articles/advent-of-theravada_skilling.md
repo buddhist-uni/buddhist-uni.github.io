@@ -4,7 +4,7 @@ authors:
   - skilling
 source_url: "https://doi.org/10.2143/JIABS.20.1.3285933"
 drive_links:
-  - "https://drive.google.com/file/d/1Evmr0NH1ZODkV91KFz8m26_xKR4GmC0X/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gj3hyLpyMxBn7m93aQshIw9QVUcpk0vr/view?usp=drivesdk"
 file_links:
   - "exclusive_01/The%20advent%20of%20Therav%C4%81da%20Buddhism%20to%20mainland%20south-east%20asia%20-%20Skilling.pdf"
 course: theravada-roots

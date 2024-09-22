@@ -4,7 +4,7 @@ authors:
   - suddhaso
 external_url: "https://archive.org/download/PaliDeclensionChartV2/declension%20chart%20v2.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1kndQNK_6sFNMt3kTZTgfsgGEvMK3txgn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19GkNM-8hswF_3NUqqsRboJ0FZJx_M_wu/view?usp=drivesdk"
 course: pali-language
 year: 2012
 pages: 1

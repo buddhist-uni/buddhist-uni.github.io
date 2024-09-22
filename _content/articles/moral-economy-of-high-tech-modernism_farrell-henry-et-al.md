@@ -5,7 +5,7 @@ authors:
   - "Marion Fourcade"
 external_url: "https://doi.org/10.1162/daed_a_01982"
 drive_links:
-  - "https://drive.google.com/file/d/1_C3jGC4gZB-vCHMBiN6rvQ9jc_gQb33U/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BgINn9ozTf7uYr6P33JrdX_ltfM8szDn/view?usp=drivesdk"
 course: media
 tags:
   - society

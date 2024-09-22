@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.104"
 external_url: "https://suttacentral.net/an3.104/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1-rrZ4DKhqFRShgbv4JPMpWmD6AHDVRb7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vLxKLp0jRNGIrYMuMOESeqORgr2O0VHs/view?usp=drivesdk"
 course: vipassana
 tags:
   - emptiness

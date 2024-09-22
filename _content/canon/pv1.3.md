@@ -4,7 +4,7 @@ slug: "pv1.03"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/pv1-3/"
 drive_links:
-  - "https://drive.google.com/file/d/1Xd-PBMkZJ8vrGjuOv7OXslm2Z9vA3OYa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jNmHebG7bzERGq2wdLz60D9DiFL5K7nM/view?usp=drivesdk"
 course: speech
 tags:
   - pv

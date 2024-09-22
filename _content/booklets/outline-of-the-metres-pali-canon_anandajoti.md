@@ -4,7 +4,7 @@ authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Textual-Studies/Outline/index.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1un8IYSH0TLLf5E4BQ6JcDr46I4piDHeA/view?usp=sharing"
+  - "https://drive.google.com/file/d/1D-2Vc2FKfxQn0ayDFRkXfA_RmYr_6GpF/view?usp=sharing"
 course: canonical-poetry
 tags:
   - pali-metre

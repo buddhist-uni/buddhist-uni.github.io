@@ -4,7 +4,7 @@ slug: "an.004.178"
 external_url: "https://suttacentral.net/an4.178/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1v_B_tSbFMamYro8Nvkg-5vnoWGEYzglZ"]
+drive_links: ["https://drive.google.com/file/d/1BToRBsEikqA1MF2ahPqwSIIOj70y2WQm"]
 course: path
 tags:
   - an

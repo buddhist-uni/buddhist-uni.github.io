@@ -5,7 +5,7 @@ authors:
   - "Arnold McKinley"
 external_url: "https://www.shin-ibs.edu/documents/pwj-new/new3/01Seelawimala.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/13X69vABRfywIGaznKKrW1UUGHtvrj84n/view?usp=drive_link"
+  - "https://drive.google.com/file/d/18RAjxeE63h7GQUyDWEgnbt_DyyhnHQuP/view?usp=drive_link"
 course: abhidhamma
 tags:
   - sati

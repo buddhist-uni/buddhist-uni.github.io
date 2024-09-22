@@ -7,7 +7,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc2278005?pdf=render"
 source_url: "https://doi.org/10.1016/j.jpain.2007.09.006"
 drive_links:
-  - "https://drive.google.com/file/d/1IA43G2WU4L3eDozquKJ4uEdMjyHJ6_rx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RHJs5mIGiX-TlbaLkyN2c0ZSnW4OJfZo/view?usp=drivesdk"
 course: feeling
 tags:
   - health

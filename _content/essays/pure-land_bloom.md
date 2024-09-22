@@ -4,7 +4,7 @@ authors:
   - bloom-a
 external_url: "https://bschawaii.org/shindharmanet/studies/fulfillment/"
 drive_links:
-  - "https://drive.google.com/file/d/1Nk-WFVl0mRdWJLIFtOK33pB6SXQjZG8b/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15GbjyS96qu0H05fja1PBeu8PJD-jZ_N2/view?usp=drivesdk"
 course: form
 tags:
   - east-asian

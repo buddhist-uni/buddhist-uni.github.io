@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.105"
 external_url: "https://suttacentral.net/an4.105/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1WaIou61xMG-kc1sEcsqBMZXid9E3SXKT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TwXKlkqKpbeQc0lHwuwUAEvUfrSbTVex/view?usp=drivesdk"
 course: monastic
 tags:
   - imagery

@@ -3,7 +3,7 @@ title: "The Verses on an Auspicious Night Explained by Mahākaccāna: A Study an
 authors: [analayo]
 external_url: "https://thecjbs.org/wp-content/uploads/2018/02/The-Verses-on-an-Auspicious-Night-Explained-by-Mahakaccana-A-Study-and-Translation-of-the-Chinese-Version_Analayo.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1R_q_2d5nET28faIsECJ2Pd68NpxnTtLK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zdLGiTUzjcWLGKA4JXjAE0EzDMAxAiLL/view?usp=drivesdk"]
 year: 2008
 pages: "5--28"
 journal: cjbs

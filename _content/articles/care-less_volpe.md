@@ -4,7 +4,7 @@ authors:
   - "Allie Volpe"
 external_url: "https://www.vox.com/even-better/23216083/caring-less-perfectionism-small-stuff"
 drive_links:
-  - "https://drive.google.com/file/d/1DT_4kpBBo2CpaJSP_au6pe6XEjWSb4cB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nhRXXY3AqcSUvCXWR-wjrkx0OdXHoqK0/view?usp=drivesdk"
 course: time
 tags:
   - intellect

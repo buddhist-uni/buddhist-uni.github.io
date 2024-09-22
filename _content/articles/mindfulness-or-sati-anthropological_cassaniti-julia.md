@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/4727577/files/306-1011-1-PB.pdf"
 source_url: "https://doi.org/10.5281/zenodo.4727577"
 drive_links:
-  - "https://drive.google.com/file/d/1Ae_DhQJMhRH4H7z_gZl9IuXZ8Kt6suFK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1su3INmz7mP2ScNazXNteaUSYXyATFykI/view?usp=drivesdk"
 course: sati
 tags:
   - west

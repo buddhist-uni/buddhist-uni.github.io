@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc3191261?pdf=render"
 source_url: "https://doi.org/10.1016/j.drugalcdep.2011.05.027"
 drive_links:
-  - "https://drive.google.com/file/d/1Gl_LWx9lAbkXmSV0qgs3fCp0SbXraUtQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OCf7a2efkVgssZe9rerZDs1JOADpIH6i/view?usp=drivesdk"
 course: meditation
 tags:
   - addiction

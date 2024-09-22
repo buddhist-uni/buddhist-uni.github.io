@@ -2,7 +2,7 @@
 title: "On Translating 'Buddha'"
 authors: [bodhi]
 external_url: "https://www.academia.edu/44864912/On_Translating_Buddha_"
-drive_links: ["https://drive.google.com/file/d/1rJea45JnTnWry_GKVDv5OmF58p_5nYi_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1e1ppMbnqygmKw5IHYSxtRGTXIWb7Kedd/view?usp=drivesdk"]
 tags:
   - buddha
   - imagery

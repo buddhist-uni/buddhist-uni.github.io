@@ -4,8 +4,8 @@ authors:
   - "U Chan Htoon"
 external_url: "https://www.bps.lk/olib/wh/wh036_U_Chan_Htoon_Buddhism-and-the-Age-of-Science.html"
 drive_links:
-  - "https://drive.google.com/file/d/11DamMO5czVCfulV4gnNxNLSJWuCHy6Wb/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1TvRv1TBxnMDRzFjumTAA7hsXhOgot5LM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BTTnxsqlFxMfvY0y2iriFP7s4X2fUCYT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jYErsVODliIZNXj8D9jzakJOLAnYOkgW/view?usp=drivesdk"
 base_value: 0.4
 course_time_multiplier: 0
 course: buddhism

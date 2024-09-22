@@ -4,7 +4,7 @@ authors:
   - "Tomoko Makidono"
 external_url: "https://digitalcommons.linfield.edu/cgi/viewcontent.cgi?article=1006&context=iijbs"
 drive_links:
-  - "https://drive.google.com/file/d/1JHSoJ0F-3tHql802y-bjiZDuuT8HY7_S/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wBxltGfFoSAlf25JgeHPbZB2tEtztv8S/view?usp=drivesdk"
 course: jataka
 tags:
   - mahayana-roots

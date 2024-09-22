@@ -5,7 +5,7 @@ year: 2019
 month: oct
 external_url: "https://dharmaseed.org/talks/58982/"
 drive_links:
-  - "https://drive.google.com/file/d/1B9YnYFvUiCsvs3uqknObkgYjGCDRUrI9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1UWOudq5ph1grmLBXD2VT7y-W-mkX9rJr/view?usp=drivesdk"
 course: view
 tags:
   - west

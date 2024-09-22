@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.095"
 external_url: "https://suttacentral.net/an4.95/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1bXCd9THZ_plrGy-23ZBUG7Sq8m3C5YFI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Qkd_Hv733Ocpj5-1O_XpBFsEeExwQTpJ/view?usp=drivesdk"
 course: speech
 tags:
   - sangha

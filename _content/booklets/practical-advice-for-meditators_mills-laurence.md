@@ -4,8 +4,8 @@ authors:
   - mills-laurence
 external_url: "https://www.bps.lk/olib/wh/wh116_Khantipalo_Practical-Advice-For-Meditators.html"
 drive_links:
-  - "https://drive.google.com/file/d/1kEPSwBL8zktT1XkqHqQ9DJBE35UsQJU7/view?usp=sharing"
-  - "https://drive.google.com/file/d/1kurZQ5objbsMFl2auhKSlXZN2X0FY59I/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1_M6MmbnmqSl8IKrIQ4tdKQxucJ4Xpdnh/view?usp=sharing"
+  - "https://drive.google.com/file/d/1qCeu2Jt1mdSBtv-li4v3sL-E65FZlNX-/view?usp=drive_link"
 formats: [pdf, epub]
 course: problems
 tags:

@@ -6,7 +6,7 @@ editor: "Birgit Kellner"
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-004/pdf#.pdf"
 source_url: "https://doi.org/10.1515/9783110413083-004"
 drive_links:
-  - "https://drive.google.com/file/d/1O58llgr01TSZH-2KUAGC2MwMHFG-FJ4D/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ow4YBt_0E402LRyx4j4Buy1ACrP3nfOI/view?usp=drivesdk"
 course: chinese-primer
 status: featured
 tags:

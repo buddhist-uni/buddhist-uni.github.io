@@ -5,7 +5,7 @@ slug: "thag.07.05"
 subcat: poetry
 external_url: "https://suttafriends.org/sutta/thag7-5/"
 drive_links:
-  - "https://drive.google.com/file/d/1mTl4bPNEzjFNQwdWCQBOdHdwgfoFYByI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SfbcuHrsD4XK7rTDpOxW5rO6yNu8QnA3/view?usp=drivesdk"
 course: theravada
 tags:
   - characters

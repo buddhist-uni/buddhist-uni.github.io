@@ -4,7 +4,7 @@ authors:
   - "Matthew Yglesias"
 external_url: "https://www.vox.com/2019/10/7/20902700/daryl-morey-tweet-china-nba-hong-kong"
 drive_links:
-  - "https://drive.google.com/file/d/19q_d6sHyxZRwaECJTgi5U-8McMVuPPBM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vrjWXhlX128jygbWW1H18PrbdlpsS5tn/view?usp=drivesdk"
 course: communication
 tags:
   - globalization

@@ -5,7 +5,7 @@ authors:
 editor: "Jason Espada"
 external_url: "https://jasonespada.com/wp-content/uploads/2017/11/Teachings-on-Meditation-by-Thich-Nhat-Hanh.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-Hi2FXlzdi41GfBrkFg-VYZCW6znlD1O/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_MfH6Cjk7w0G20XT4Ms8PbbhCyD70Xd7/view?usp=drivesdk"
 course: meditation
 status: featured
 year: 2017

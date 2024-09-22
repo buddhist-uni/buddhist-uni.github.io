@@ -4,7 +4,7 @@ authors:
   - bodhi
 external_url: "https://www.budsas.org/ebud/ebdha057.htm"
 drive_links:
-  - "https://drive.google.com/file/d/11RDBLtdBIaTgPU7DxDoPBveQ_HGeijpc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1wbcM5n_j1N0hdXLW7H8ZjZF4Q1aXIS82/view?usp=sharing"
 course: cosmology
 tags:
   - karma

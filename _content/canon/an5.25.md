@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.025"
 external_url: "https://suttacentral.net/an5.25/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1CGYMmmlk0loDjgMm2wb7yK_gOhRvLePG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1moWqsr23aD69Z4uzSHXGfziEb0xN9F9J/view?usp=drivesdk"
 course: view
 tags:
   - dialogue

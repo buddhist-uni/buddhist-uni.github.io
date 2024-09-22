@@ -5,7 +5,7 @@ slug: "thag.03.10"
 subcat: poetry
 external_url: "https://suttacentral.net/thag3.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1QMPKwflgG2OX6TL4stWqzmTSM5I694E4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mKX6yZoBBOxm3EU8zURkw-FK32-jlHWb/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - canonical-poetry

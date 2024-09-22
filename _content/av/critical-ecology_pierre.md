@@ -7,8 +7,8 @@ subcat: podcast
 editor: "Jarrett Sleeper"
 external_url: "https://www.alieward.com/ologies/criticalecology"
 hidden_links:
-  - "https://drive.google.com/file/d/1evAvA7zqoi0I9iMWaRhCHiOexCeDmCDI/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1exakuMZ3WzKYbJ4cq7Wx-aaE4vKj-HQr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1T-MMT6Ab3iBZVPtzDaFRORLW8J3bn40T/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vBI4oKNAUn_DfgwbNUDV-wg8e2klCtbp/view?usp=drivesdk"
 formats: [mp3, pdf]
 course: wider
 tags:

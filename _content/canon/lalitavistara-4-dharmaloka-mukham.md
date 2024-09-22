@@ -4,7 +4,7 @@ translator: anandajoti
 editor: "S. Lefman"
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces-in-Sanskrit/Dharmaloka-Mukham.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1hEHLFF_Kk0C4_ENc5kS5FaqIc-LlQvH5/view?usp=drive_link"
+  - "https://drive.google.com/file/d/14LbZbIrD4WnuTQe0BF0KEiO9wagN_-0Z/view?usp=drive_link"
 course: rebirth-stories
 tags:
   - bodhisatta

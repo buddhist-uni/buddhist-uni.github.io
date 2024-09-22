@@ -3,7 +3,7 @@ title: "SN 2.20 Anāthapiṇḍika SUtta: With Anāthapiṇḍika"
 slug: "sn.002.020"
 external_url: "https://suttacentral.net/sn2.20/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1KH1eMS9daDqr-MKvIrNzBNMDQxDPZP0T/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/15VWSi9QqCkG1xGY53x2cocTMXgZSImu-/view?usp=drivesdk"]
 course: characters
 tags:
   - sn

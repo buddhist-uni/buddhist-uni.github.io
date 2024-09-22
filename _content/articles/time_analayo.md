@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/time.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1wx424dTey0s1fphZ4cPhLxcr6WZ8KSFm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i6-URHQjyQWg9cqRW4ByNN4e_-y190Ml/view?usp=drivesdk"
 course: time
 tags:
   - origination

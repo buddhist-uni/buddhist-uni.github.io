@@ -3,7 +3,7 @@ title: "Thig 5.1 Aññatara Therīgāthā: Verses of a Certain Unknown Elder"
 slug: "thig.05.01"
 external_url: "https://suttacentral.net/thig5.1/en/soma"
 translator: soma
-drive_links: ["https://drive.google.com/file/d/1_Izb5T3CO1_RX2UcKsYhPtVBAQyTQ6xN/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1UHLvAH9Its72fFbQRo0TyeGvsAY9CAVT/view?usp=drivesdk"]
 course: hindrances
 tags:
   - thig

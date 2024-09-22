@@ -5,7 +5,7 @@ slug: "sn.001.023"
 subcat: poetry
 external_url: "https://suttacentral.net/sn1.23/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1ejNrmPZ9-dN5S3DwvG3dxYjVhJlrKTK2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1J1_ChMenfHzqBM3hVpfuen-EGE9ZZZKu/view?usp=drivesdk"
 course: nibbana
 status: featured
 tags:

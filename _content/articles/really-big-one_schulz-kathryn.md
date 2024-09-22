@@ -4,7 +4,7 @@ authors:
   - "Kathryn Schulz"
 external_url: "https://www.newyorker.com/magazine/2015/07/20/the-really-big-one"
 drive_links:
-  - "https://drive.google.com/file/d/1cR1OHxy16LCWOIgUXZv7Pg_P71GP7ML7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_Z7OhcEDGiLU1gDtefDUJ2B-on-Kj6Xf/view?usp=drivesdk"
 status: featured
 course: wider
 tags:

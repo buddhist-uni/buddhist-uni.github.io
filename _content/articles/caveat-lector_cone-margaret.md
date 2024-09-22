@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/caveat%20lector%20-%20Margaret%20Cone.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/19rnpiheNnDC5gfIDwFX5124lESziu9ph/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZlC9vsTLyz9-r9FOPDj82U8X90RqkuPB/view?usp=drivesdk"
 course: pali-language
 tags:
   - philology

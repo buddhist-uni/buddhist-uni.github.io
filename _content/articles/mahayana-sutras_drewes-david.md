@@ -4,7 +4,7 @@ authors:
   - "David Drewes"
 external_url: "https://thecjbs.org/wp-content/uploads/2021/07/36-74_Drewes_Mahayana-Sutras.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Kv4V2WjciYVlTEb-9Kq_h1CEumi_kt9K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HTO7pKM57_XYjZGzQ9tTDph39KCYrUbo/view?usp=drivesdk"
 course: roots
 tags:
   - mahayana

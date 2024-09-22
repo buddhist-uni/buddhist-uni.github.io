@@ -1,7 +1,7 @@
 ---
 title: "The Renouncing Royals of Videha"
 authors: [appleton]
-drive_links: ["https://drive.google.com/file/d/1NkNuyAIbOt7Qkp-aQQVXNvsQydA5Woya/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Nstlievd-Jj7ssy4-t71k7vLRFQU4OFt/view?usp=drivesdk"]
 external_url: "https://www.research.ed.ac.uk/files/29615129/6_Janaka.pdf"
 booktitle: "Shared Characters in Jain, Buddhist, and Hindu Narrative: Gods, Kings and Other Heroes"
 chapter: 6

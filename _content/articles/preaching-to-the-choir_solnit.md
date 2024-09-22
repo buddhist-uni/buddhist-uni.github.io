@@ -4,7 +4,7 @@ authors:
   - solnit
 external_url: "https://harpers.org/archive/2017/11/preaching-to-the-choir/"
 drive_links:
-  - "https://drive.google.com/file/d/158LSBspEXXEWLWb6Ta1evRYUxhKfYe9g/view?usp=sharing"
+  - "https://drive.google.com/file/d/1m_TKm0sR07MXsvESLO4eUJ29egAHlDLl/view?usp=sharing"
 course: dialogue
 tags:
   - rhetoric

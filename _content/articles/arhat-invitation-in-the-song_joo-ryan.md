@@ -10,7 +10,7 @@ external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/vie
 status: featured
 base_value: 0.6
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/16N2yLAZ8g5BVjqo82zmUNfz4lSMjTFi2/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1WZ-HSbf-urORVvGm23_eTAyOLwcXBhPN/view?usp=drivesdk"]
 course: east-asian-roots
 tags:
   - song

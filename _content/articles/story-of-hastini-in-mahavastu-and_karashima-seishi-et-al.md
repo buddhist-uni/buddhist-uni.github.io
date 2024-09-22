@@ -6,7 +6,7 @@ authors:
   - "Katarzyna Marciniak"
 external_url: "https://archive.org/download/aririab-vol-xxii/The%20story%20of%20Hastin%C4%AB%20in%20the%20Mah%C4%81vastu%20and%20Fobenxingji%20jing.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1sjtTmidtDHe7GHzy6Yk4ntOOMjK5AJBK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BLfY7Y6JFX-0uMft3cDH6GrFGd6NLIRs/view?usp=drivesdk"
 course: jataka
 tags:
   - agama

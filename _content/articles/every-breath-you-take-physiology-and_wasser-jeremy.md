@@ -5,7 +5,7 @@ authors:
 external_url: "https://internationaljournaldharmastudies.springeropen.com/track/pdf/10.1186/s40613-016-0042-8"
 source_url: "https://doi.org/10.1186/s40613-016-0042-8"
 drive_links:
-  - "https://drive.google.com/file/d/1pb3ep-xLT5pteiyC8xKlJ6iCag1enxU9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ENuRV7K0XAfEqokZBiriIu0Dzdsr-ZdL/view?usp=drivesdk"
 course: body
 status: featured
 tags:

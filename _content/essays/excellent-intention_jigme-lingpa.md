@@ -5,7 +5,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/jigme-lingpa/simple-
 year: 2019
 translator: "Adam Pearcey"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1JWy7WSs_neMZ9_e2M1ObpWDz8lmUi1LT/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1tB3IatpZu2lZX81cY2WZtBDu1gvY2VFp/view?usp=drivesdk"]
 course: sangha
 tags:
   - tibetan

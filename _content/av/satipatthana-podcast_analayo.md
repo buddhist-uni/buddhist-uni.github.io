@@ -4,7 +4,7 @@ subcat: podcast
 authors: [analayo]
 external_url: "https://wisdomexperience.org/wisdom-podcast/bhikkhu-analayo-2/"
 drive_links:
-  - "https://drive.google.com/file/d/1CDAN2pusoe4RJ-0L0nxa2y6ZyPdJSYlB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_ahRyI-UrYIzFKBbL2U2poUXUbKtNtUG/view?usp=drivesdk"
 publisher: wisdom
 year: 2016
 month: sep

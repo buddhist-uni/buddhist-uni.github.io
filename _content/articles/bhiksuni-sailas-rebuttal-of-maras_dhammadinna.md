@@ -4,7 +4,7 @@ authors:
   - dhammadinna
 external_url: "https://digitalcommons.linfield.edu/iijbs/vol21/iss1/2/"
 drive_links:
-  - "https://drive.google.com/file/d/1JL6OHzRCVsr1I-Q254y9hP1D8muKMkdS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tZcHRDa27UtG-oTV7nt-QjHUdg4KGc8w/view?usp=drivesdk"
 course: dialogue
 tags:
   - setting

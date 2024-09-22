@@ -5,7 +5,7 @@ authors:
 source_url: "https://plato.stanford.edu/entries/buddhism-chan/"
 external_url: "https://seop.illc.uva.nl/entries/buddhism-chan/"
 drive_links:
-  - "https://drive.google.com/file/d/1uR8f0f-vqIxaqCPtmsIJmdlzdfYJwxnj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/171OpyZhKVUf-KJEGe-jrlBQFsjW3VyIf/view?usp=drivesdk"
 course: east-asian
 tags:
   - mahayana

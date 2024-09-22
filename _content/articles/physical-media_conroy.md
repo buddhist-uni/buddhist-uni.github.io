@@ -5,7 +5,7 @@ authors:
   - "J. Oliver Conroy"
 external_url: "https://www.theguardian.com/film/2024/mar/27/the-film-fans-who-refuse-to-surrender-to-streaming-one-day-youll-barter-bread-for-our-dvds"
 drive_links:
-  - "https://drive.google.com/file/d/1Q1NkwiS-QdBZljF0HJ9VKzC-oLnkU89d/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QlsFJYXua5nVvTg6dzGsWcK7plOqtB-U/view?usp=drivesdk"
 course: media
 tags:
   - film

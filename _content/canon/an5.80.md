@@ -5,7 +5,7 @@ slug: "an.005.080"
 source_url: "https://accesstoinsight.org/tipitaka/an/an05/an05.080.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN5_80.html"
 drive_links:
-  - "https://drive.google.com/file/d/14BMdXMNY7mdlPh_6LSNLez20n5tzIDcc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17YVZr2yLB3gGu9wrW7LS3YVu202yMDcH/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - form

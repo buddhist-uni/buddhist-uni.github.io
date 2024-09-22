@@ -7,7 +7,7 @@ authors:
 external_url: "https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1090&context=jti"
 source_url: "https://doi.org/10.9707/2328-0824.1090"
 drive_links:
-  - "https://drive.google.com/file/d/1NCfuCHZD61ia6DOn2Xv0DoFdvAaufwIU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZeKpaAtYFcs2tNpZ8ZoHcbuc1jTtlGuo/view?usp=drivesdk"
 course: form
 tags:
   - korean

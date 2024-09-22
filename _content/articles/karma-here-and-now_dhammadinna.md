@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/35505306/Karma_here_and_now_in_a_M%C5%ABlasarv%C4%81stiv%C4%81da_avad%C4%81na_How_the_Bodhisattva_changed_sex_and_was_born_as_a_female_500_times"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXI%20(2018).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Qq-g_MFMA4eBMaYi1amlZK3Pdhrrx1iG/view?usp=sharing"
+  - "https://drive.google.com/file/d/1deHKqsz0cTLV6MypDkCB3pxanz6KnXFW/view?usp=sharing"
 course: rebirth-stories
 tags:
   - avadana

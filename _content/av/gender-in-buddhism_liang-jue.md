@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 external_url: "https://youtu.be/Til0-TVir3c"
 drive_links:
-  - "https://drive.google.com/file/d/1ZSN6y6LYTIownxa332xW2vIDOnT2QKZs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a2Vi5drX9aesDkRVzKbCab9SKt1fl5ws/view?usp=drivesdk"
 course: form
 tags:
   - tibetan-roots

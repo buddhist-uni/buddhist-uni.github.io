@@ -11,7 +11,7 @@ embedded_html: |
   <div id="rumble_v22mjys" style="margin-bottom: 15px;"></div>
   <script>Rumble("play", {"video":"v22mjys","div":"rumble_v22mjys","rel":5});</script>
 hidden_links:
-  - "https://drive.google.com/file/d/1IKQqaVbExQ-nZi_tSbu2fSw5Zrc_sesk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1P6kzGgPVfnSvBVbUpCsR8vRgAaPDWr0p/view?usp=drivesdk"
 formats: [mp4]
 status: featured
 course: thai

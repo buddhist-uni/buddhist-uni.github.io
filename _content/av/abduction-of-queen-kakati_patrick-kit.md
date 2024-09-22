@@ -6,7 +6,7 @@ year: 2017
 month: jan
 external_url: "https://historyofindiapodcast.libsyn.com/2i-the-abduction-of-queen-kakati"
 drive_links:
-  - "https://drive.google.com/file/d/1YjnosSLAhMARRY2tN9uBXwEKQE9yMUHX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17qj_MJJX8H6gcOmLo-5FVNgI-AXLBIxG/view?usp=drivesdk"
 course: form
 tags:
   - jataka

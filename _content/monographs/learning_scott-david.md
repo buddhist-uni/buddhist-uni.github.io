@@ -5,7 +5,7 @@ authors:
 external_url: "https://discovery.ucl.ac.uk/id/eprint/10127557/1/On-Learning.pdf"
 source_url: "https://doi.org/10.14324/111.9781800080027"
 drive_links:
-  - "https://drive.google.com/file/d/15VD0FNWmw2sILFE8kPvClYXP63FtwQov/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TjVUTFPm2TPYXqjapPRJozpuJQdjG1hg/view?usp=drivesdk"
 course: intellect # solidly 3 stars. Almost 4
 tags:
   - epistemology

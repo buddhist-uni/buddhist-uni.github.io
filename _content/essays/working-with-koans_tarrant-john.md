@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.thezensite.com/ZenTeachings/Teishos/Working_With_Koans_Tarrant.htm"
 source_url: "https://web.archive.org/web/20101224132231/http://www.dharmaweb.org/index.php/Working_with_Koans_John_Tarrant%2C_Roshi"
 drive_links:
-  - "https://drive.google.com/file/d/10gPGGcXD8r4kjF6PPzfPKOnawpwbr3fj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XIYx63pje2WivEU7jpjSIXXHt2ddrRTt/view?usp=drivesdk"
 course: east-asian
 tags:
   - rinzai

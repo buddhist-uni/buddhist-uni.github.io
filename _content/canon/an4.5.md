@@ -4,7 +4,7 @@ slug: "an.004.005"
 translator: bodhi
 external_url: "https://suttacentral.net/an4.5/en/bodhi"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1jlU6FdJQ7kkHEpTuHCb_9WCs32urKz1B/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1FEqdgNsLujSml2b-LGYtP91kcLZtZMqW/view?usp=drivesdk"]
 course: path
 tags:
   - an

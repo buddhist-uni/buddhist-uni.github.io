@@ -5,7 +5,7 @@ authors:
 external_url: "https://works.swarthmore.edu/cgi/viewcontent.cgi?article=1119&context=fac-religion"
 source_url: "https://doi.org/10.2307/1397879"
 drive_links:
-  - "https://drive.google.com/file/d/1PX0w9yOxLgdS4esx-08SN-UeuXFM9Cr5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1I_J7RrDZ4c4ZA3e9U_HOXYb1yOqLdyJc/view?usp=drivesdk"
 course: epistemology # very solidly
 tags:
   - vipassana

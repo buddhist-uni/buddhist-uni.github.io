@@ -5,7 +5,7 @@ authors:
   - "Sigal Samuel"
 external_url: "https://www.vox.com/21363483/mindfulness-of-death-mortality-meditation-nikki-mirghafori"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1smiEJ3gDMRx_VQbeSlms-_elocliggcS"]
+drive_links: ["https://drive.google.com/file/d/1aSWUZpo2Y4L3dCkIolSXIlz4Qhm3-pVp"]
 year: 2020
 month: aug
 journal: vox

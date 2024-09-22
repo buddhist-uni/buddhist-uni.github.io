@@ -7,7 +7,7 @@ editor: "Adam Conover"
 external_url: "https://www.earwolf.com/episode/why-do-men-rule-the-world-with-dr-alice-evans/"
 alternate_url: "https://www.listennotes.com/podcasts/factually-with/why-do-men-rule-the-world-MCnZHrTUNep/"
 drive_links:
-  - "https://drive.google.com/file/d/1vb_BzY5TqrlD4ZBN8sZXIWwLJNmFJSQR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14p0aFqVTIrOWMFI_a_D2NM1w0lifIvCE/view?usp=drivesdk"
 status: featured
 course: society
 tags:

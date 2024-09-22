@@ -4,7 +4,7 @@ authors:
   - fronsdal
 external_url: "https://www.youtube.com/watch?v=kjnTsW7yne4"
 drive_links:
-  - "https://drive.google.com/file/d/1NOUwENU7TvElU6Ts-ScgLxIrPIn5hiWU/view?usp=drive_link"
+  - "https://drive.google.com/file/d/116Fpkld1D3mI6nxnDSNcZJGI-Fxn4kAp/view?usp=drive_link"
 formats: [m4a]
 course: canonical-poetry # solidly
 tags:

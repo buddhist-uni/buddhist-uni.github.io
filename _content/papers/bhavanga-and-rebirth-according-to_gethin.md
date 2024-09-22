@@ -6,7 +6,7 @@ external_url: "https://www.shin-ibs.edu/documents/bForum/v3/02Gethin.pdf"
 source_url: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-iii/"
 alternative_url: "https://www.academia.edu/24142507/Bhava%E1%B9%85ga_and_Rebirth_According_to_the_Abhidhamma"
 drive_links:
-  - "https://drive.google.com/file/d/1vwatZUG053O_htM80R1YSlJu0O-YvQto/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yGrg_fCLlOmgTrSCnFk0tJysdP6NE5po/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - rebirth

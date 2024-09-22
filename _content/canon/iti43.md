@@ -5,7 +5,7 @@ slug: "iti043"
 subcat: poetry
 external_url: "https://suttacentral.net/iti43/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/10fTcEMnXDarBqIG-rnubymJSZj88yAGm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GTg3gijUV0JZX7o4QhIYdI-TZfH_4CV9/view?usp=drivesdk"
 course: view
 tags:
   - inner

@@ -3,7 +3,7 @@ title: "The Oldest Known Pali Texts, 5–6th century: Results of the Cambridge S
 authors: [stargardt]
 external_url: "https://archive.org/download/jpts-xxi-1995/The%20Oldest%20Known%20Pa%CC%84li%20Texts%20-%20Janice%20Stargardt_text.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1O3GVZ3s3sXwnzeRQpVxixDPOnxdXZ7NM/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1--yAV1wIRopCCZfQ08d6me7OFdF6hwAJ/view?usp=drivesdk"]
 year: 1995
 volume: 21
 pages: "199--213"

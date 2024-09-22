@@ -5,7 +5,7 @@ slug: "an.005.114"
 source_url: "https://accesstoinsight.org/tipitaka/an/an05/an05.114.than.html"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN5_114.html"
 drive_links:
-  - "https://drive.google.com/file/d/1_CDZG4A80W-B7EfVBo_-WbRLwkQERitR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19EV7tFRWZMlr0l3U7_LQ_7CzuVQJIVPx/view?usp=drivesdk"
 course: speech
 tags:
   - monastic-advice

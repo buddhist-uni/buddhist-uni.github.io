@@ -5,7 +5,7 @@ authors:
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/geth0401.pdf"
 alternate_url: "https://www.urbandharma.org/pdf/geth0401.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1RVMxtZpJ676_wE182Rq1q1pdqtfqIZgb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1smVQpkujcrZSdzYazU54Qrs2KTDykSWj/view?usp=drivesdk"
 course: ethics
 status: featured
 tags:

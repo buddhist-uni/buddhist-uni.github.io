@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/sunnata.pdf"
 year: 2007
 drive_links:
- - "https://drive.google.com/file/d/1aBVK5zLr5YDtOUJyuHONLmnzcGp34QWN/view?usp=sharing"
+ - "https://drive.google.com/file/d/1ptP-5Q6TGROfcRIvemCI8qz53P4hxS16/view?usp=sharing"
 course: emptiness
 tags:
   - meditation

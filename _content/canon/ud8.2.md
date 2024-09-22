@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.8.02.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud8_2.html"
 drive_links:
-  - "https://drive.google.com/file/d/1993ml0UgnntnwoaGELGq5OQSmtx1kqEu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Knl-7sQvkjdFBIqmxUWlvZNV_KzGylHj/view?usp=drivesdk"
 course: nibbana
 tags:
   - canonical-poetry

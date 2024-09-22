@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.nobelprize.org/uploads/2020/12/gluck-lecture-english.pdf"
 source_url: "https://www.nobelprize.org/prizes/literature/2020/gluck/lecture/"
 drive_links:
-  - "https://drive.google.com/file/d/1RwXPPherBcYzm4gawpC1E_Jzz-onwi2c/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OIZ8K0KoUjo-QuTPPlv8L_cSobf8b4qX/view?usp=drivesdk"
 status: featured
 course: communication
 tags:

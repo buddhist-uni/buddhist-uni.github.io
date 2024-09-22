@@ -4,7 +4,7 @@ authors:
   - "Stuart Lachs"
 external_url: "http://www.thezensite.com/ZenEssays/CriticalZen/Richard_Baker_and_the_Myth.htm"
 drive_links:
-  - "https://drive.google.com/file/d/19A5ljsfJQpexLBxOMDUEvgd6_D9tIjDA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zADElsaFc-Fn2jWRJQQ3s9r2IuuVv4JU/view?usp=drivesdk"
 course: mahayana
 tags:
   - west

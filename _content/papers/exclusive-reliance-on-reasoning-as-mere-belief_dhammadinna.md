@@ -4,7 +4,7 @@ authors:
   - dhammadinna
 external_url: "https://www.academia.edu/51688564/Exclusive_reliance_on_reasoning_as_mere_belief_the_Buddha_s_epistemic_approach_in_the_Sa%E1%B9%85g%C4%81rava_sutta_and_its_Sanskrit_parallel"
 drive_links:
-  - "https://drive.google.com/file/d/19GzqSUdSpjhV1JkWEpPiQJy98yNnMSiY/view?usp=sharing"
+  - "https://drive.google.com/file/d/1v4vyQ-nAoQ4vYKodOHcpc9ajnmi5fVjV/view?usp=sharing"
 course: epistemology
 tags:
   - path

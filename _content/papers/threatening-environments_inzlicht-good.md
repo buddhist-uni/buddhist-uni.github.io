@@ -7,7 +7,7 @@ editor: "Shana Levin and Colette Van Laar"
 external_url: "https://users.nber.org/~sewp/events/2005.01.14/Bios+Links/Good-rec3-Inzlicht_&_Good_Sept_8.pdf"
 source_url: "https://www.taylorfrancis.com/chapters/edit/10.4324/9781410617057-13/environments-threaten-academic-performance-self-knowledge-sense-belonging-michael-inzlicht-catherine-good"
 drive_links:
-  - "https://drive.google.com/file/d/1E4Vp6e9Fn449HcaKKHtYijetpnucYFyF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Ttpw2eV0APbu1QY6kzmCEH56c1FA03Dm/view?usp=drivesdk"
 alternate_url: "https://static1.squarespace.com/static/550b09eae4b0147d03eda40d/t/5525f9e7e4b0f76cd2c72c10/1428552167588/how-environments-threaten-academic-performance-self-knowledge-and-sense-of-belonging.pdf"
 course: social
 tags:

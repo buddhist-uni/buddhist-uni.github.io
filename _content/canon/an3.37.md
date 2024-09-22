@@ -2,7 +2,7 @@
 title: "AN 3.37: The Four Great Kings (1)"
 translator: sujato
 slug: "an.003.037"
-drive_links: ["https://drive.google.com/file/d/1N8dBVb33ra-dnKkFAlJHnEgxkVDSw-o_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ItnghnNn52u8jJefw0IUfEwfF_tUA_CB/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an3.37/en/sujato"
 year: 2018
 course: cosmology

@@ -4,7 +4,7 @@ authors:
   - deleanu-f
 external_url: "https://archive.org/download/aririab-vol-iii/Meditation%20and%20Mahayana.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1g55uLbNdKXDspOqN0G8HkaBVBeQXHh-U/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-JnwBtLtlQC29qh_SLarsooqRv6anXed/view?usp=drivesdk"
 tags:
   - mahayana-roots
 year: 2000

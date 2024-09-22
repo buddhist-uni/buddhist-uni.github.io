@@ -6,7 +6,7 @@ external_url: "https://archive.org/download/en-156-an-inguiring-minds-journey-in
 source_url: "http://ftp.budaedu.org/ebooks/pdf/EN156.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1hMDegWR1-M_pZUBrebuJd5S5Gia-EnG3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i0uGLWa5YCtAa6-P73XgeKtUZ145EGOo/view?usp=drivesdk"
 course: canadian
 tags:
   - buddhism

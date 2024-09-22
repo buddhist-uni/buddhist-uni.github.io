@@ -4,7 +4,7 @@ authors:
   - suchart
 external_url: "https://www.youtube.com/watch?v=ePgNsnqWUo4"
 drive_links:
-  - "https://drive.google.com/file/d/1Mo9L8cnhY7PbFrDhoCO7LeRAc1Xu-4W1/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1VDKHcryIxPTc7KK0bPhwAMBcvmHTgCpi/view?usp=drive_link"
 course: emptiness
 status: featured
 tags:

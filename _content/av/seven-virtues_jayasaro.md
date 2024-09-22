@@ -4,7 +4,7 @@ authors: [jayasaro]
 year: 2010
 month: sep
 drive_links:
-  - "https://drive.google.com/file/d/1WiYhbxVsSHdLs202N2wI1pC-u6CaZbTY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QkEnFr3qrjq6InZo8CkvbPw9KNLBUSu2/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Seven%20Virtues%20(2010-09-05)%20-%20Ajahn%20Jayasaro.mp3"
 course: engaged

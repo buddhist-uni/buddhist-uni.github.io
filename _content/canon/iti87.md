@@ -4,7 +4,7 @@ slug: "iti087"
 translator: ireland
 external_url: "https://suttacentral.net/iti87/en/ireland"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1ZT7Rpoj3uespd42hM5X5g_8UKTZO_L75/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/19PZiMCdeURx1maI32zRbUAgbNkXDm3jL/view?usp=drivesdk"]
 course: meditation
 tags:
   - iti

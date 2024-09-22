@@ -7,7 +7,7 @@ authors:
 editor: "Piya Tan"
 external_url: "https://www.themindingcentre.org/dharmafarer/wp-content/uploads/2010/12/Sigalovada-Tr-Gram-Analysis-2012.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1UynveyUQkdJoKnR_cetMyf9FS6YRrvHV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-cuqiJ-99HVWvr33g8E4dQsAmYm1CNm5/view?usp=drivesdk"
 course: pali-language
 tags:
   - readers

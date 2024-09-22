@@ -5,7 +5,7 @@ authors:
 translator: "Yasuda Joshu and Anzan Hoshin"
 external_url: "http://www.thezensite.com/ZenTeachings/Dogen_Teachings/Kuge_Flowers.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1nonQWIBixYjdh455faxUwY6yoOL2GXDO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tbR1uoSPur-oYAmtLIczMmdauYkC52zt/view?usp=drivesdk"
 course: samatha
 tags:
   - soto

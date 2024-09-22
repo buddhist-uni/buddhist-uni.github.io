@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/samannaphala-sutta1.pdf"
 year: 2006
 drive_links:
- - "https://drive.google.com/file/d/1onaQjiCBS-qAE70eCfxjJ3uPfkLyOZCP/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/17svJepogtVKGCpEWb9BFhQFMriCKWzXW/view?usp=drivesdk"
 course: setting
 tags:
   - karma

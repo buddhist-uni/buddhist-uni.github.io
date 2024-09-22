@@ -4,7 +4,7 @@ slug: "snp.3.10"
 external_url: "https://suttacentral.net/snp3.10/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1tyV8d6xMhIHlt5_J4grVW1ZDEnJ5-Wb2/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1d91bxKHA8I7gAjP9QFh1GzR4mWw9Y_5H/view?usp=drivesdk"]
 course: karma
 tags:
   - snp

@@ -6,7 +6,7 @@ external_url: "https://archive.org/details/right-view-daylong-retreat-2017-09-09
 source_url: "https://www.dharmaseed.org/teacher/553/?search=Eastbay+right+view+part"
 formats: [m4a]
 drive_links:
-  - "https://drive.google.com/file/d/1GVkOqOx6tr9r__Kq39jc44gGmzhd2QiA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i9GG7tw_CLljkd_VrspLBPeEEEL9V_MO/view?usp=drivesdk"
 course: buddhism
 tags:
   - view

@@ -6,7 +6,7 @@ external_url: "https://scholarworks.smith.edu/cgi/viewcontent.cgi?article=1023&c
 source_url: "https://doi.org/10.2307/1399593"
 later_url: "https://doi.org/10.1093/oso/9780195145519.003.0002"
 drive_links:
-  - "https://drive.google.com/file/d/1SfcVKby0cMIf5K_AqTxn-CK2TDiB35kn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lI9NthCvXiU8gSLZ2IKkLy5NHFx2aaSn/view?usp=drivesdk"
 course: origination
 tags:
   - mahayana-roots

@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.005.012"
 external_url: "https://suttacentral.net/an5.12/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1Eu7SCMjwtKSsa9SnLICVXfBaSjaRXAy1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1A96K_0GqYGyN9qQrC6R0dFODHNU-tdA-/view?usp=drivesdk"
 course: imagery
 tags:
   - thought

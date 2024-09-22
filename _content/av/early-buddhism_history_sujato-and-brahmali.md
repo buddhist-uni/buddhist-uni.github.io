@@ -5,7 +5,7 @@ source_url: "https://bswa.org/teaching/early-buddhism-class-workshop-6-with-ajah
 month: feb
 year: 2013
 formats: [zip]
-drive_links: ["https://drive.google.com/file/d/1ijhtCUQK5H0VMVpit92aElJNzRkxZKFl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/196ymtLZx2xHlmkYzfnHUHwQEspO2Arpl/view?usp=drivesdk"]
 course: roots
 tags:
   - setting

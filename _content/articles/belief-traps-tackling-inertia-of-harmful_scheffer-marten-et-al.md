@@ -8,7 +8,7 @@ authors:
 external_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3A3513564/view"
 source_url: "https://doi.org/10.1073/pnas.2203149119"
 drive_links:
-  - "https://drive.google.com/file/d/1j7D3Ullt51tNU8-_5PSQXN838sUaxcMZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZEokzFJgzQ3cY9o6eZKCCAgWixvxGqW0/view?usp=drivesdk"
 course: intellect
 status: featured
 tags:

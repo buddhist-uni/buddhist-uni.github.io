@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/9069/10542/45617"
 source_url: "https://doi.org/10.1558/bsrv.31031"
 drive_links:
-  - "https://drive.google.com/file/d/1_-ajJgkyDbGWvJx9yPelk4eE5FMZtKuJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nG5TgljRhEDdRxgbQW5qn-aZDbyp9CpL/view?usp=drivesdk"
 course: theravada-roots
 status: featured
 tags:

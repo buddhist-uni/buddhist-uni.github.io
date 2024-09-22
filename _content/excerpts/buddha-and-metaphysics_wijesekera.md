@@ -4,7 +4,7 @@ authors:
   - wijesekera
 editor: "M. H. F. Jayasuriya"
 drive_links:
-  - "https://drive.google.com/file/d/19rYXVNrPkyrvmdrSTovUrXR6-17Sbdp4/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1mKhuwEwZd1DwPeZeBatBaXRU3p1x1tJ0/view?usp=drive_link"
 file_links:
   - "exclusive_01/The%20Buddha%20and%20Metaphysics%20-%20Wijesekera.pdf"
 course: cosmology

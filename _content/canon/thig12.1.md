@@ -3,7 +3,7 @@ title: "Thig 12.1 Puṇṇā Therīgāthā: Puṇṇikā"
 slug: "thig.12.01"
 external_url: "https://www.accesstoinsight.org/tipitaka/kn/thig/thig.12.01.than.html"
 translator: geoff
-drive_links: ["https://drive.google.com/file/d/1FYojQz5j_WQeR9OXtsmJ6y6GZmNVkWRw/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1v1ZzEkr8U07eL8-fSp7UDvI5ivk5acb7/view?usp=drivesdk"]
 course: setting
 tags:
   - thig

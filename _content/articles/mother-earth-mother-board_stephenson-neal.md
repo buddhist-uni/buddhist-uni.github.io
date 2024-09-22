@@ -4,7 +4,7 @@ authors:
   - "Neal Stephenson"
 external_url: "https://www.wired.com/1996/12/ffglass"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1_usF12_I7tcgVr2Wq-VXhszNIWCYDahG/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1qiSXJt5kWDJvj3nTTfWzVxkCu67gIRkj/view?usp=drivesdk"]
 year: 1996
 month: jan
 journal: "Wired"

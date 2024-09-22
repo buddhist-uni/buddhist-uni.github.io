@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783110674088-012/pdf"
 source_url: "https://doi.org/10.1515/9783110674088-012"
 drive_links:
-  - "https://drive.google.com/file/d/1vh9BaxP8ORYmgD1FBIRTvjvWAJe2IQJe/view?usp=share_link"
+  - "https://drive.google.com/file/d/1rgA1TQTvO03JRGbScu5d-bT5CjIIE76u/view?usp=share_link"
 formats: [pdf]
 status: featured
 course: nature

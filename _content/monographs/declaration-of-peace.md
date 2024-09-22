@@ -3,7 +3,7 @@ title: "The Declaration Of Peace And Cessation Of War Handbook and Commentary"
 authors:
   - "Ciarán Burke and others"
 drive_links:
-  - "https://drive.google.com/file/d/1F9l0CvXqOCLLzg9cO5K8x_AQwXdh9LeP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bh0aB-v9tuvxgfRbQk--tlJoLBVFgB4p/view?usp=drivesdk"
 course: state
 tags:
   - peace

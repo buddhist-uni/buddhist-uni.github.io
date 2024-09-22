@@ -5,7 +5,7 @@ authors:
 external_url: "https://biblio.ugent.be/publication/1975746/file/6763845.pdf"
 source_url: "https://doi.org/10.1556/aorient.65.2012.4.3"
 drive_links:
-  - "https://drive.google.com/file/d/1S_893zaYqRIMlKCSLn5CGWwN-e1l8KjA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XP3Gj-hGLwgzIMNPgJCO_IgiGzNBNRx3/view?usp=drivesdk"
 course: vinaya-studies
 status: featured
 tags:

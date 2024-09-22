@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/sn/sn06/sn06.001.than.html"
 external_url: "https://www.dhammatalks.org/suttas/SN/SN6_1.html"
 drive_links:
-  - "https://drive.google.com/file/d/1HHarwqTeCgC5dRFedJZJx4mu8zzO0l1E/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-skdoD3VrvdfVpKR9UaATv9M5Nq_QWZH/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

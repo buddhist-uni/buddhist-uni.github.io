@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://sirimangalo.org/frequently-asked-meditation-questions/"
 drive_links:
-  - "https://drive.google.com/file/d/12164Ulh55IwZ1lIPZoQ4uValhaI4M4Pm/view?usp=sharing"
+  - "https://drive.google.com/file/d/11VoOpR7DkPc5z8OH15zlv0heBcYRSp_Z/view?usp=sharing"
 course: problems
 tags:
   - sati

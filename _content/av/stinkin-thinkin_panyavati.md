@@ -4,7 +4,7 @@ authors:
   - "Pannavati Bhikkhuni"
 external_url: "https://dharmaseed.org/talks/53529/"
 drive_links:
-  - "https://drive.google.com/file/d/1Ap94ol4UPx9iGzXvLPVh0LyrOBtr8p2_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ey9VCnpV6xXP1ElzrRtDCZAZGf6e-iau/view?usp=drivesdk"
 course: thought # with prejudice
 status: featured
 tags:

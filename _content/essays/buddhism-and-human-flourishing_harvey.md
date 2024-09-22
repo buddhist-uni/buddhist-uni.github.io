@@ -1,7 +1,7 @@
 ---
 title: "Buddhism and Human Flourishing"
 authors: [harvey]
-drive_links: ["https://drive.google.com/file/d/1wGGlSkodHyt73Nf5qR3Xg8siOru_61a9/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1WiwjcJVBKYJ9xD8jebcXVyp6CLQVANbq/view?usp=drivesdk"]
 external_url: "https://philosophyreligion.wordpress.com/2013/07/13/peter-harvey-buddhism-and-human-flourishing-key-ideas/"
 year: 2013
 course: buddhism

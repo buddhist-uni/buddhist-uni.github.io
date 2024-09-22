@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.thezensite.com/ZenEssays/Nagarjuna/SecondBuddha_Nagarjuna_Loy.html"
 source_url: "https://tricycle.org/magazine/second-buddha/"
 drive_links:
-  - "https://drive.google.com/file/d/1CbsBnY12TMSG7mNZzPkaUd8hPfy79t_a/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1V0HMs--CxwtgdRI0z4_SQj_MrdWxNv2v/view?usp=drivesdk"
 course: form
 tags:
   - mahayana-roots

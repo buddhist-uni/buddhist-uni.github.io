@@ -6,7 +6,7 @@ subcat: poetry
 external_url: "https://www.poetryfoundation.org/poetrymagazine/poems/56764/there-are-birds-here"
 alternate_url: "https://www.poetryoutloud.org/poem/there-are-birds-here/"
 drive_links:
-  - "https://drive.google.com/file/d/1Dsw_6u7uBGbIrxhXEGwfoND32RDrPGrc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jzdgid1Y-6NKJDhGNOOLr3KkmTG8UDyp/view?usp=drivesdk"
 booktitle: "The Big Book of Exit Strategies"
 course: wider
 tags:

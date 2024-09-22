@@ -5,7 +5,7 @@ authors:
   - "Justin Henry"
 external_url: "https://www.jstor.org/stable/j.ctt1qnw8bs.9"
 drive_links:
-  - "https://drive.google.com/file/d/1HT8fwID1Px42U3UKxsp0WF5ZRQnMK74D/view?usp=sharing"
+  - "https://drive.google.com/file/d/1VVFhxL6rJrjOeEEG4IDavAuA2Cq72AwC/view?usp=sharing"
 course: theravada-roots
 tags:
   - pali-literature

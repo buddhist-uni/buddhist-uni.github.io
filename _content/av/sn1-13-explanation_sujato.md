@@ -3,7 +3,7 @@ title: "SN 1.13 in Historical Context"
 authors:
   - sujato
 drive_links:
-  - "https://drive.google.com/file/d/1-LBBIDYUo48HLEjjyA5JuVeZOOysw64g/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XTJatmANMHl2kBOzTlMexqzcBDEAlYgu/view?usp=drivesdk"
 external_url: "https://discourse.suttacentral.net/uploads/short-url/iEvUf6vnj2FKCzFwtlzAu6wIdo9"
 course: setting
 year: 2013

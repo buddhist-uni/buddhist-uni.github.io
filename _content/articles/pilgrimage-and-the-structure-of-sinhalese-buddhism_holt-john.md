@@ -4,7 +4,7 @@ authors:
   - "John C. Holt"
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3286306&sid="
 drive_links:
-  - "https://drive.google.com/file/d/1pPariT_j2rHTQtktaW4nOmAPZP1hXEFx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/143M8wF3GMrO0iohOmgh11BXxqfMNvtsL/view?usp=drivesdk"
 course: sangha
 tags:
   - pilgrimage

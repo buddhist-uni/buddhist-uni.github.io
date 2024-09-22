@@ -4,7 +4,7 @@ authors:
   - "George Wrisley"
 external_url: "https://www.georgewrisley.com/Philosophy%20as%20Good%20for%20Nothing-%20Wittgenstein,%20Socrates,%20and%20the%20Ends%20and%20End%20of%20Philosophy.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1TPjS3R0IcgX1jY4woOXOQl04dqHW9n4j/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17EfYTDvtDJjgnyfNUTrcRPCQkAvUPfrY/view?usp=drivesdk"
 course: intellect
 tags:
   - dialogue

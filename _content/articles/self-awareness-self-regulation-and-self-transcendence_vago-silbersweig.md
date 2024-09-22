@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.frontiersin.org/articles/10.3389/fnhum.2012.00296/pdf"
 source_url: "https://doi.org/10.3389/fnhum.2012.00296"
 drive_links:
-  - "https://drive.google.com/file/d/1cgcArSeSiVDsbydiAHeBD8aAIvh6-fIQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZLL7E7FRe8mfnbg_WOMz96rETFHLzC_J/view?usp=drivesdk"
 course: sati
 tags:
   - neuroscience

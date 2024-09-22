@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/sati.pdf"
 year: 2007
 drive_links:
- - "https://drive.google.com/file/d/13xO-kudH0eJ_Apaz8TWYnr7fLC7cO9gH/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1zkCToZNbpx30UNlSQ0czPaqM_8NHCUbM/view?usp=drivesdk"
 course: sati
 tags:
   - meditation

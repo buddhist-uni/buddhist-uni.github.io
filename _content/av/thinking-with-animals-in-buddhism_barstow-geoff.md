@@ -4,7 +4,7 @@ authors:
   - "Geoff Barstow"
 external_url: "https://www.youtube.com/watch?v=oyAiTfZg9vY"
 drive_links:
-  - "https://drive.google.com/file/d/1mZfxiu6FhTyowe_T42RuP1W_VLe3UKYc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1QJEU5hHTahOKiIxKvbuAavcfNiQlUIVi/view?usp=sharing"
 tags:
   - ethics
   - vegetarianism

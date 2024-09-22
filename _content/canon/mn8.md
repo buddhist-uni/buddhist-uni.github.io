@@ -4,7 +4,7 @@ slug: "mn008"
 translator: bodhi
 external_url: "https://suttacentral.net/mn8/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1KcJbljFfvjng9zvyqykjdsE3gvKpzoqZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cUl9cONSXynQqHyzKYyykUMZCd5iPzBQ/view?usp=drivesdk"
 course: path
 status: featured
 tags:

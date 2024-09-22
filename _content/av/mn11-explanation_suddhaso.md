@@ -4,7 +4,7 @@ authors:
   - suddhaso
 external_url: "https://fb.com/1698215973551436"
 drive_links:
-  - "https://drive.google.com/file/d/1haeGMV1la5Orkqhm__pBS14Flg4kzEA5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kPkYmyFauwBZyn9OsRgCHFexOIZ7cPzE/view?usp=drivesdk"
 course: philosophy
 tags:
   - indian

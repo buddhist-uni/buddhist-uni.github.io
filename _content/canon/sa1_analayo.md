@@ -9,7 +9,7 @@ number: 11
 pages: "1--61"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/translations/sa01.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1pQ6FmG_-c9yl11rE4ZOW84DEDpyTWF-N/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1BlrObPcxizqo5bPQn958Uxi5ZJN4e1ho/view?usp=drivesdk"]
 course: sa
 tags:
   - khandha

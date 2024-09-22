@@ -5,7 +5,7 @@ authors:
   - "Mindy Zlotnick"
 external_url: "https://www.bhikkhuni.net/2014/07/16/portrait-volunteer/"
 drive_links:
-  - "https://drive.google.com/file/d/12aV2cp1RVGD1QDlDWifgeihXNuvrtqlZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zDCHbluSlQ_KPvys2F14ElfZRd0Pen4n/view?usp=drivesdk"
 course: nuns
 tags:
   - sangha

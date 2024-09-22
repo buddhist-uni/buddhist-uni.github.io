@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.mdpi.com/2077-1444/8/10/206/pdf"
 source_url: "https://doi.org/10.3390/rel8100206"
 drive_links:
-  - "https://drive.google.com/file/d/1XJyYDM0zNorOuzZ5xtW2sqzOUkITE8Pa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13rMzDZ2YaldKH2FQfjUAoHSE3juKQFy3/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - chinese-roots

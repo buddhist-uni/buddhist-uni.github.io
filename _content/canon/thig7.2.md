@@ -5,7 +5,7 @@ slug: "thig.07.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thig7.2/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1kkxMrNTzk052Apock9-Z0JgSula7avcS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1M7GyQFgOoIBgfzz0pBsAGwFCV4d0EGuk/view?usp=drivesdk"
 course: monastic
 tags:
   - view

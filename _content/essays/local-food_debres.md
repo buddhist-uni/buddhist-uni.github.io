@@ -2,7 +2,7 @@
 title: "Local Food: The Moral Case"
 authors: ["Helena de Bres"]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1seaOXswcayJ7ly9D5hOp3k9aG_LIzKIy/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/12plPGfjxdFlQ4OkJdIHww8T3T2ZNrFot/view?usp=drivesdk"]
 external_url: "https://www.academia.edu/19610551/Local_Food_The_Moral_Case"
 year: 2020
 status: featured

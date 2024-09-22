@@ -3,7 +3,7 @@ title: "AN 7.62: Don’t Fear Good Deeds"
 slug: "an.007.062"
 translator: sujato
 external_url: "https://suttacentral.net/an7.62/en/sujato"
-drive_links: ["https://drive.google.com/file/d/1tirm33G1D18vzulMOEnuWaNMDYclX185/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1G0G-mwQisfoETHzJcBHanU9ERIVei-g8/view?usp=drivesdk"]
 course: pali-canon
 tags:
   - an

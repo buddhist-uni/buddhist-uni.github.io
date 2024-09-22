@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.132"
 external_url: "https://suttacentral.net/an5.132/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1MMljgAvQGgZM7mbSokDhyoxrbvdQgjT9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gxyMkbFEJv5NBcEcOcPJ1-SsivrC_nqV/view?usp=drivesdk"
 course: speech
 tags:
   - state

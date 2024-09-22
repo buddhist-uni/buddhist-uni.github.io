@@ -6,7 +6,7 @@ external_url: "https://theanarchistlibrary.org/library/jamie-heckert-gender"
 source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-gender/"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/16_F5Q6QqaX8vlIeIbduzIvYyvisRWZ6t/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-EFFNurjT9s9aOloXKbZf_c7NoltEb8c/view?usp=drivesdk"
 course: inner
 tags:
   - gender

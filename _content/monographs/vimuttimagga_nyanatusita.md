@@ -5,8 +5,8 @@ authors:
 translator: "Bhikkhu Nyanatusita"
 external_url: "https://www.buddhism.hku.hk/publication-post/the-path-to-freedom-vimuttimagga/"
 drive_links:
-  - "https://drive.google.com/file/d/1928Y0YQ-t0j6n4Dl1x6LKxCzRhAUiq4r/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/193xda2N9x8srsuZPBaFJY4Cc8rtlPizr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CvKZBLORXciv9QmcdYHOTv4kHICNnE-C/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1khlZDXgc1RvF0st39vQYP_X9lXkAPhgT/view?usp=drivesdk"
 formats: ["Vol 1 PDF", "Vol 2 PDF"]
 course: indian
 tags:

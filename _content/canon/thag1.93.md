@@ -5,7 +5,7 @@ slug: "thag.01.93"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.93/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ESvPwKwsA_4vO8K3d4itX4NYi-MNQq71/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Pr8lwy9eaAZR3bOfHRYLhtjquQ3vsO2y/view?usp=drivesdk"
 course: problems
 tags:
   - addiction

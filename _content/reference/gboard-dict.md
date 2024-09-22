@@ -3,7 +3,7 @@ title: "GBoard Pāli Dictionary"
 formats: [zip]
 authors: ["Sidharta Suryametta"]
 file_links: ["exclusive_01/ATIPaliDictionaryForAndroidGBoard.zip"]
-drive_links: ["https://drive.google.com/file/d/1ACS8-LVMd2DEFEQp1wpQlqQoFpq7VIH-/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1PJlCTgLSEOkgc-MpVR7EuxRdy5RCKExP/view?usp=drivesdk"]
 course: pali-language
 year: 2020
 base_value: 0.5

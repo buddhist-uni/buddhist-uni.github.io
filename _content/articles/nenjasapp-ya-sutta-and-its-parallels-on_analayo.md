@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/13690/15914"
 source_url: "https://doi.org/10.1558/bsrv.v26i2.177"
 drive_links:
-  - "https://drive.google.com/file/d/1APi_N9QzxOwUCJhHfQeALXxqtuE0ZsUA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nJz7RBRWR8gQkWlrZnQbxDIaWTZCzr4c/view?usp=drivesdk"
 course: samadhi
 tags:
   - mn

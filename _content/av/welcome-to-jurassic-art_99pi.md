@@ -18,4 +18,4 @@ minutes: 42
 
 How illustrations affect science.
 
-After you listen, be sure to check out the book they discuss at the end, [All Yesterdays](https://drive.google.com/file/d/1QfOykbZflJ9Yc3oZnekh9rMBuzamFd79/view?usp=drivesdk){:ga-event-value="1" target="_blank"} and its sequel, [All Your Yesterdays](/content/monographs/all-yesterdays).
+After you listen, be sure to check out the book they discuss at the end, [All Yesterdays](https://drive.google.com/file/d/1kgnBPzeiHM1mPLUuYp331ozQmX1DTfIO/view?usp=drivesdk){:ga-event-value="1" target="_blank"} and its sequel, [All Your Yesterdays](/content/monographs/all-yesterdays).

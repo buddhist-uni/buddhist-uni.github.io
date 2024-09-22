@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.192"
 external_url: "https://suttacentral.net/an4.192/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1OKVCBXsTwa8X36_xqzqMdZKhKI_rybBd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iSBAbLQihLh6PL3ixoMr2umfV2YmNDD6/view?usp=drivesdk"
 course: sangha
 status: featured
 tags:

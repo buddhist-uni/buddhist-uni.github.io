@@ -4,7 +4,7 @@ authors:
   - bloom-a
 external_url: "https://bschawaii.org/shindharmanet/studies/kannon/"
 drive_links:
-  - "https://drive.google.com/file/d/1NhtUOTrftLQdCYdV0uQw_oyfhtx34Qac/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rx4C2YO_n5OmxMXtP4RW2leSgux5YUmd/view?usp=drivesdk"
 course: mahayana
 tags:
   - bodhisattva

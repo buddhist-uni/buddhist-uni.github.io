@@ -4,7 +4,7 @@ authors:
   - dhammadinna
 external_url: "https://agamaresearch.dila.edu.tw/wp-content/uploads/2021/01/Dhammadinn%c4%81-2021-Reflections-on-Truth-and-Experience-in-Early-Buddhist-Epistemology.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1E3TvkaHLEWR3se9xu90dX6zHi7L2UQQQ/view?usp=sharing"
+  - "https://drive.google.com/file/d/1KH0ndN0vj0poPrLZruIZO1IXZrPmZ8Rd/view?usp=sharing"
 course: epistemology
 tags:
   - nibbana

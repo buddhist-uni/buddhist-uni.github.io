@@ -5,7 +5,7 @@ authors: [sheng-yen]
 year: 1994
 external_url: "https://youtu.be/k0bGu_hTEpQ"
 drive_links:
-  - "https://drive.google.com/file/d/1oSO5-U4It4TX6lfDYSh22ibX36YsLkE3/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PoEB2E89JIDxrAIvXchj-DrdcGzlwSGe/view?usp=drivesdk"
 formats: [mp4]
 course: meditation
 base_value: 0.25

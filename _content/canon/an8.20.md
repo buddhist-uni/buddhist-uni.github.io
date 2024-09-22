@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.020"
 external_url: "https://suttacentral.net/an8.20/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/17sLYyL0sbtBpVmQX_6K8tkSuHeJPl5Ss/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YA_NrTuIyw-0URjEWJs1oNkYeKeNb9kR/view?usp=drivesdk"
 course: sangha
 tags:
   - pali-canon

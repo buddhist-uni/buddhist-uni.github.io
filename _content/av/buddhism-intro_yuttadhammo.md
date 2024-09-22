@@ -4,7 +4,7 @@ authors: [yuttadhammo]
 source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/2010/100204_IntroBuddhism.mp3"
 file_links:
   - "exclusive_01/Introduction%20to%20Buddhism%20(2010-02-04)%20-%20Yuttadhammo.mp3"
-drive_links: ["https://drive.google.com/file/d/1ZDQyJfUBEmu-jCbGzXsFhcPFv87LrQ_O/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ieuh25C69xNlIwu72iH51sVqbOPfszDW/view?usp=drivesdk"]
 course: buddhism
 tags:
   - function

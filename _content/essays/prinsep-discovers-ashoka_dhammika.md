@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/10/james-prinsep-and-the-discovery-of-king-asoka/"
 drive_links:
-  - "https://drive.google.com/file/d/1yeeEkjbSHV2oHZduuSYmjD8nfzqX74Z0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16VubNHEireiIJgDRLIE9l92oOT_Cdtfv/view?usp=drivesdk"
 course: west
 year: 2012 # wild guess, def ≤2020
 pages: 2

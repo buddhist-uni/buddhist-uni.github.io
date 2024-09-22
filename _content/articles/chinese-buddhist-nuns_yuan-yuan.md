@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/1307110/files/94-125-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1156"
 drive_links:
-  - "https://drive.google.com/file/d/1ON1NZib2vd_8IBROwdbNqXiJnAYCwXP4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ixh51jGB26EF49ItlNTcD81tlAcHtqk1/view?usp=drivesdk"
 course: nuns
 tags:
   - chinese

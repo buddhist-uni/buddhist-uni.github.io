@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc3004979?pdf=render"
 source_url: "https://doi.org/10.1016/j.pscychresns.2010.08.006"
 drive_links:
-  - "https://drive.google.com/file/d/1d2galqil2Cyhzf1EcG0E9WBcy83PqvLs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dapsuFGS6mztcnE7Q0a-jrwijyfmaX7V/view?usp=drivesdk"
 course: meditation
 tags:
   - neuroscience

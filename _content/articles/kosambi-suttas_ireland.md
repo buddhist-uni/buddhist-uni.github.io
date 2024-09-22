@@ -5,7 +5,7 @@ authors:
 file_links:
   - "exclusive_01/Kosambi%20-%20John%20Ireland.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1J7XIt6v1UbvP4Sl63ihqsDRJC8-iW3W0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y7XZGb5_4UWrA8G1DIWZN56m1mghsWhx/view?usp=drivesdk"
 source_url: "https://journal.equinoxpub.com/BSR/issue/view/745"
 course: setting
 tags:

@@ -5,7 +5,7 @@ file_links:
   - "exclusive_01/Buddhist%20Pilgrimage%20(2009)%20-%20Chan%20Khoon%20San.pdf"
 source_url: "https://www.urbandharma.org/udharma14/pilgrim.html"
 drive_links:
-  - "https://drive.google.com/file/d/1keteQpHpcW9epkNAXeQIbkqEr3ZFhhNm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Err0QphX-HBieg_9sW1wrvpS5y_yH7BQ/view?usp=drivesdk"
 edition: Third
 year: 2002
 olid: OL32197249M

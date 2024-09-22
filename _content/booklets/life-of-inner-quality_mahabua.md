@@ -6,8 +6,8 @@ translator: geoff
 external_url: "https://forestdhamma.org/2018/02/09/a-life-of-inner-quality/"
 formats: [epub, pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1c1Vhx09U56cxTGwhZw2dXJ9awTDA9l86/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1kGLYa2TOcM9yKq-2DvVacoV2pR7ufh_H/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1db0rK0X22HwwpneGt9NwgtzhHng0Hzuz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1E7OodXHZgBn5u1NkNnQvUbiSVkkkOpkw/view?usp=drivesdk"
 course: lay
 tags:
   - thai-forest

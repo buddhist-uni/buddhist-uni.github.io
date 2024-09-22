@@ -5,7 +5,7 @@ authors:
 translator: "Sean Price"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/profound-shamatha-instruction"
 drive_links:
-  - "https://drive.google.com/file/d/10h6YFSh6eOEobvLrPqEs296TtWghET7a/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xYPtwQ8a--3PWOezPEPfvX-rRFfuYOGv/view?usp=drivesdk"
 course: samatha
 tags:
   - hindrances

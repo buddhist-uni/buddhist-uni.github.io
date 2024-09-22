@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/13730/15974/45009"
 source_url: "https://doi.org/10.1558/bsrv.31647"
 drive_links:
-  - "https://drive.google.com/file/d/1MAW71wY2aJHz1Z8IiAUC57K6K3LQUlZh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1opVEOa903LFRHRo0AW3z-AidY-32aRuO/view?usp=drivesdk"
 course: dialogue
 tags:
   - tibetan-roots

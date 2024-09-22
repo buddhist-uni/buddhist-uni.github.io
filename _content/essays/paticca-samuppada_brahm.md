@@ -4,7 +4,7 @@ authors:
   - brahm
 external_url: "https://dhammatalks.net/Books3/Ajahn_Brahm_Paticca_Samuppada_Dependent_Origination.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1s5PFFlzPUgrVHz8BCepwzE7eJcXHrmfQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Db_H_QcAW2JRpGSg5E18x7qYnnuhwr9u/view?usp=drivesdk"
 course: philosophy
 tags:
   - rebirth

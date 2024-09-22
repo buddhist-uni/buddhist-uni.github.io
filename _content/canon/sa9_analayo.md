@@ -9,7 +9,7 @@ pages: "75--131"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/sa09.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/0B-8ynJs05uuIVjlBUG5DNE1NajVoQVExWXVfQWpBazNYeDhJ/view?usp=drivesdk&resourcekey=0-_9niGsEqVf2ryfp3j4TIjg"
+  - "https://drive.google.com/file/d/1GhHkjm6T_9psfayw5jfWitH8uXNZg13u/view?usp=drivesdk&resourcekey=0-_9niGsEqVf2ryfp3j4TIjg"
 course: sa
 tags:
   - senses

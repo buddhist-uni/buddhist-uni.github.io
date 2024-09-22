@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/970/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.25.1-2.1998.87-115"
 drive_links:
-  - "https://drive.google.com/file/d/1jIL12r7MS-UgpCTBqdUwR4MthW8E7YjN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1V3VFS5wJSTqBbr9Pq6ncZMWNtPTJm4Nl/view?usp=drivesdk"
 course: roots
 status: featured
 tags:

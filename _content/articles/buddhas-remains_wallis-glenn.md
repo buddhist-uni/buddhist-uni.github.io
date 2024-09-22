@@ -4,7 +4,7 @@ authors:
   - "Glenn Wallis"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8915/2808"
 drive_links:
-  - "https://drive.google.com/file/d/1Di_miPrUlWcTkMeAmxgz1g_BVBAFhdmL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qlVFapiKxfGUZaX6rx6_xis_Q-1eCv46/view?usp=drivesdk"
 course: tantric
 tags:
   - mahayana-roots

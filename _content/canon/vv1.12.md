@@ -4,7 +4,7 @@ slug: "vv.1.12"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv1-12/"
 drive_links:
-  - "https://drive.google.com/file/d/1hZlhX1L710A5bf457RaAbEPKXNv_uu7_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GnJIV_ddlhurGUU1V80xQocZrUMvZ2mY/view?usp=drivesdk"
 course: ethics
 tags:
   - vv

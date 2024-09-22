@@ -3,7 +3,7 @@ title: "An Introduction to the Abhidhamma: Two Essays"
 authors:
   - "Dhamma Study Group, Bangkok"
 drive_links:
-  - "https://drive.google.com/file/d/1-tQk4Lts86i7WlhC3xqxAmoBnDll5_KD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OuBYV38pBH5k-JjqnWVsZAqG-6iIIPdt/view?usp=drivesdk"
 course: abhidhamma
 year: 1980
 month: jan

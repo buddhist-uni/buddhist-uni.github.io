@@ -8,7 +8,7 @@ authors:
 source_url: "https://doi.org/10.1007/s10745-015-9742-4"
 external_url: "https://link.springer.com/article/10.1007/s10745-015-9742-4"
 drive_links:
-  - "https://drive.google.com/file/d/1oIm2MTWlh9LWixXFUdS_l3pQZstIPT-r/view?usp=share_link"
+  - "https://drive.google.com/file/d/11UrbAK9ivjOfizrwgGMW5kh_qKBKu3g_/view?usp=share_link"
 formats: [pdf]
 course: nature
 tags:

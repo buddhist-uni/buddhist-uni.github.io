@@ -3,7 +3,7 @@ title: "Two Small Remnants of 'Pre-Hīnayānist' Buddhism in the Pāli Nikāyas"
 authors:
   - "Eric Fallick"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/14weBn3sgZFeUQ7q7Z8SkUr40NmVg7fwi/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1pT-k_knXh9xq9VqVyZbmVEg4k6rnkxfh/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/Pre-Hinayanist%20Buddhism%20in%20the%20Pali%20-%20Fallick.pdf"
 year: 2000

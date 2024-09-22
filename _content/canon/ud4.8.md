@@ -3,7 +3,7 @@ title: "Ud 4.8 Sundarī Sutta: The Discourse about Sundarī"
 translator: anandajoti
 external_url: "https://suttacentral.net/ud4.8/en/anandajoti"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1fhudSc3OUhpyjo9sExojOH0r1g2T52_d/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1r9LxgHWpmHreGpxtfNtUokaij1vH23lK/view?usp=drivesdk"]
 source_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Udana/4-Meghiyavaggo-08.htm"
 course: speech
 tags:

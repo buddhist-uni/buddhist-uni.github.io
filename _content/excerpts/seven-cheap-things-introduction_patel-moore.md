@@ -5,7 +5,7 @@ authors:
   - "Jason W. Moore"
 source_url: "https://www.ucpress.edu/book/9780520299931/a-history-of-the-world-in-seven-cheap-things"
 drive_links:
-  - "https://drive.google.com/file/d/124pK0hotK-8-XuYgzWqY6eLoaycuKgLv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wrfgJiWKC08dMF4dJ4oE-R4UJvsYx5P9/view?usp=drivesdk"
 course: wider
 tags:
   - capitalism

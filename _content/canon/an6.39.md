@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.039"
 external_url: "https://suttacentral.net/an6.39/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1_6yz9KkpN9FYGmksxklCoKsQ2XlMfA6l/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AU0MaUpuhzQYTKWZmp4W377V8W_dNE08/view?usp=drivesdk"
 course: karma
 status: featured
 tags:

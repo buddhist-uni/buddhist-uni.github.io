@@ -4,7 +4,7 @@ authors:
   - "Martin T. Adam"
 external_url: "https://thecjbs.org/wp-content/uploads/2018/02/Mahayana-Buddhist-Attitudes-Towards-Animals_Adam.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1UUWAqdQamWF05sdVGKQG38u8m5HKZ0oH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bVRCYpYm1qrqOARgBA51DXyAyK9a5Vy9/view?usp=drivesdk"
 course: animals
 tags:
   - mahayana

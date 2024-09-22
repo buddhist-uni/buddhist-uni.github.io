@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/ask-a-monk/110626_ExperiencingReality.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1u-JihXD9IcYQp_LU4immPmFE2ibH2KH5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Yb_MJQCtNPKxSvQjfxiE3AShcKjUZNgx/view?usp=drivesdk"
 course: problems
 tags:
   - vipassana

@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/4031009/files/317-876-1-PB.pdf"
 source_url: "https://doi.org/10.5281/zenodo.4031009"
 drive_links:
-  - "https://drive.google.com/file/d/12XQkj5TrTNRrC5zKRW_mvjcMzKlbDI1Q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12269DgBs3wkJGALGK4zJcIHywFoxlmhh/view?usp=drivesdk"
 course: speech
 tags:
   - epistemology

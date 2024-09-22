@@ -5,7 +5,7 @@ authors:
 external_url: "https://journals.equinoxpub.com/OLDBSR/article/view/739/329"
 source_url: "https://dx.doi.org/10.1558/bsrv.2006.23.2.241"
 drive_links:
-  - "https://drive.google.com/file/d/1DdggNLwlU5cQ-cgXJEpJGkGdVd5EHpGv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1irs7EdYX2i1P3QjwSZEzuBY26OPwxGB0/view?usp=drivesdk"
 course: west
 year: 2006
 journal: bsr

@@ -4,7 +4,7 @@ editor: dhammadinna
 year: 2014
 publisher: dharmadrum
 course: da
-drive_links: ["https://drive.google.com/file/d/1IjAs-IkYGuxOLMuGnSzgHY--xftLdFA2/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ueZALKWplkxrazPaahy-tmXJsV2Yjwcr/view?usp=drivesdk"]
 external_url: "https://www.dropbox.com/s/rk0mtc0a3g2guxn/ResearchDirgha.pdf"
 pages: 236
 ---

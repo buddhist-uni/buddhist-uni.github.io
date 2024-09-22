@@ -5,7 +5,7 @@ slug: "snp.3.02"
 subcat: poetry
 external_url: "https://suttacentral.net/snp3.2/en/nyanamoli"
 drive_links:
-  - "https://drive.google.com/file/d/1Vv9WuMxa7F96C9StK6hvjxPmbk9WQIMZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TvxdYbowVy-QLvnf_Kxv5m0cmw_uV-KZ/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - snp

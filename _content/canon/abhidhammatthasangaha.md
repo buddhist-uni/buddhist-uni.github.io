@@ -6,7 +6,7 @@ editor: bodhi
 translator: narada
 external_url: "https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ECzsN6iupxRPJBIXR20epwxT2dLMYG_m/view?usp=sharing"
+  - "https://drive.google.com/file/d/1_WAHd3QNjVO9opZS7k-3wXEWDFBC8TIj/view?usp=sharing"
 course: abhidhamma
 tags:
   - origination

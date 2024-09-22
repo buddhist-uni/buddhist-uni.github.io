@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vibhava.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1YMbKba66zd18Q7r66C6kTpI1CZyPAVQw/view?usp=drive_link"
+ - "https://drive.google.com/file/d/1Rhao4qZqO_Ywg8-ydR8A3-Wmpps6kbTB/view?usp=drive_link"
 course: view
 tags:
   - vibhava

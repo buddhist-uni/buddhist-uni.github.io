@@ -4,7 +4,7 @@ slug: "an.005.157"
 external_url: "https://suttacentral.net/an5.157/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/12biaz1FM4u2rLoXeCxbZKhQPgfhLkHfl/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Jlc4I6j-qd1iBszQxGRJspyPj7RVYSvF/view?usp=drivesdk"]
 course: speech
 tags:
   - an

@@ -6,7 +6,7 @@ subcat: podcast
 editor: "James Shaheen"
 external_url: "https://tricycle.org/podcast/mindfulness-and-racial-justice/"
 drive_links:
-  - "https://drive.google.com/file/d/1OpzveAShCTltzg5CqmDB-stc8RCbrQJB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HiIqNYylNMPSnVAxUZKL13QT3OrrNCe0/view?usp=drivesdk"
 course: social
 tags:
   - race

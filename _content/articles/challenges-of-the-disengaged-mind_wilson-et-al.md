@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/"
 source_url: "https://www.science.org/doi/10.1126/science.1250830"
 drive_links:
-  - "https://drive.google.com/file/d/1L0wRAPy8Locfe79c0CKjLUbT1H2iUrJn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jlwt-f8LLxwkeCVKnVfMRJM5OwlonUf5/view?usp=drivesdk"
 course: function
 base_value: 0.2
 status: featured

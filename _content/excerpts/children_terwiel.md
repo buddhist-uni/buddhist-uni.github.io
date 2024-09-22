@@ -4,7 +4,7 @@ authors:
   - "B. J. Terwiel"
 external_url: "https://www.academia.edu/16426083/Monks_and_Magic_Chapter_3_PDF"
 drive_links:
-  - "https://drive.google.com/file/d/1F1hlq7ybTZsrP6FqZEmUuFC34w0-wvA0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1R5qz_PBKUrXT8uXF_BICE2Is7gi5BbB_/view?usp=drivesdk"
 course: thai
 status: featured
 tags:

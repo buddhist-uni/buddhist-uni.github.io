@@ -4,7 +4,7 @@ authors:
   - "Bhikkhunī Dhammananda"
 source_url: "https://dharmaseed.org/talks/6485/"
 drive_links:
-  - "https://drive.google.com/file/d/1qC4tS7Beqi0o1ebD90IeVs5ylCn9Ti0j/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13OPWV8qh9Q5ggMtS4EmHpglZLYjcwhU9/view?usp=drivesdk"
 course: nuns
 tags:
   - characters

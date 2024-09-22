@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.jstage.jst.go.jp/article/jpbs/15/0/15_KJ00001994551/_pdf/-char/en"
 source_url: "https://doi.org/10.20769/jpbs.15.0_1"
 drive_links:
-  - "https://drive.google.com/file/d/1lYJyQ2uOy61i2U-xdmyL7VTAFRCn-9C0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PVF5S0u36Av2iHZmJh07u4GpimR6tJN5/view?usp=drivesdk"
 course: pali-dictionaries
 tags:
   - pali-commentaries

@@ -8,7 +8,7 @@ external_url: "https://www.abhayagiri.org/books/592-gifts-he-left-behind-the-dha
 source_url: "https://www.dhammatalks.org/books/GiftsHeLeftBehind/Contents.html"
 alternate_source: "https://www.accesstoinsight.org/lib/thai/dune/giftsheleft.html"
 drive_links:
-  - "https://drive.google.com/file/d/1gvQWm9N48FBHgzYeoQ01s4vVjnZtWTVh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TtN1AE8xlY8PKLPY0ktvGfHRm-ESIquI/view?usp=drivesdk"
 status: featured
 course: emptiness
 tags:

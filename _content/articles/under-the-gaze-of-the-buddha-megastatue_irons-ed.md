@@ -2,7 +2,7 @@
 title: "Under the Gaze of the Buddha Mega-Statue: Commodification and Humanistic Buddhism at Fo Guang Shan"
 authors: ["Edward Irons"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/214/278"
-drive_links: ["https://drive.google.com/file/d/1rqjq-SWjAK0e9JsEaZ1ajhSnEHThWm8n/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ObnsKQbYZSpEYnfo13srNhkzLTCCseVC/view?usp=drivesdk"]
 course: modern
 year: 2020
 volume: 18

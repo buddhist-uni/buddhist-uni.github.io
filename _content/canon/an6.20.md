@@ -4,7 +4,7 @@ slug: "an.006.020"
 translator: geoff
 external_url: "https://www.dhammatalks.org/suttas/AN/AN6_20.html"
 source_url: "https://accesstoinsight.org/ati/tipitaka/an/an06/an06.020.than.html"
-drive_links: ["https://drive.google.com/file/d/1MNUlKlKitIC_hW_rOsku1p2p2sVdd35c/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1qTKrYre1gNNMKknF1LIWeVYp7vdLLjDl/view?usp=drivesdk"]
 course: meditation
 status: featured
 tags:

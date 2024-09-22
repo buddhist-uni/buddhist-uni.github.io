@@ -5,7 +5,7 @@ authors:
 editor: "Adam Long"
 external_url: "https://cdn.amaravati.org/wp-content/uploads/2020/01/10/The-Chithurst-Story.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1d70tOKeg3sVAAmJ6tAWOWUUSl9o7h057/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uRcIaBtbaMXVMvm2usrbsKKUXqWSyRsX/view?usp=drivesdk"
 status: featured
 course: west
 tags:

@@ -4,7 +4,7 @@ authors:
   - "Daniel Z. Korman"
 external_url: "https://plato.stanford.edu/entries/ordinary-objects/"
 drive_links:
-  - "https://drive.google.com/file/d/1i0hRUA5F9mybZbTWPBbx1d0SFmQMTe-i/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1NgogXO5Ns9JZXRqEkPVkC7cF3jQ-3OAa/view?usp=drive_link"
 course: emptiness
 tags:
   - perception

@@ -15,7 +15,7 @@ external_url: "https://blogs.dickinson.edu/buddhistethics/files/2012/04/Goodwin-
 year: 2012
 month: apr
 drive_links:
-  - "https://drive.google.com/file/d/16nxR6R5xp-27-8SPL-rHFGeTDqXHzgHC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1x-aEVdkdpAxa2BqUl-7Vv9I2Q4B09faU/view?usp=drivesdk"
 journal: jbe
 pages: "198--343"
 ---

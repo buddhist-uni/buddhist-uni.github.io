@@ -5,7 +5,7 @@ translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces-in-Sanskrit/Dharmacakrapravartanasutram.htm"
 source_url: "https://suttacentral.net/lal26/san/vaidya"
 drive_links: 
-  - "https://drive.google.com/file/d/1i40d9X1LgoeOCVPXy72f3Rr6DVGg2CZA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZcM-BQHxU5ULkDo1yrrCq8CnXLVIC-ip/view?usp=drivesdk"
 course: buddha
 tags:
   - agama-misc

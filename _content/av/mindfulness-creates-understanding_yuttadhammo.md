@@ -5,7 +5,7 @@ authors:
 external_url: "https://youtu.be/QFqdlfeq7wE"
 source_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Television/101217_Understanding.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1RwFKTDmpIeceLr4439WBFQAgRyZxisXL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Q8KfbKgxJJESLJd-oehw8S4quhqzV2tw/view?usp=drivesdk"
 course: sati
 tags:
   - vipassana

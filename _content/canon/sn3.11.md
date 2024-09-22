@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.003.011"
 external_url: "https://suttacentral.net/sn3.11/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1O5yRYiy_FpyXfz0UYPeIBYOmq0-YjXzH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1COfJG33hryVZS6Qnd9W1hETlXF_nAIl1/view?usp=drivesdk"
 course: social
 tags:
   - monastic

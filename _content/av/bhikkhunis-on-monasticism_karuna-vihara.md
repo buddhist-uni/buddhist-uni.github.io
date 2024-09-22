@@ -5,7 +5,7 @@ authors:
   - jayati
   - "Ayya Cittananda"
 external_url: "https://youtu.be/_AeXTSy19nY"
-drive_links: ["https://drive.google.com/file/d/1-1s7kk7ozgQTSUVXVzaAuHmmSbuagUUp/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1SAhwFtUC3wKb_K0MATj-mnqbUvVjrynX/view?usp=drivesdk"]
 year: 2016
 course: monastic
 tags:

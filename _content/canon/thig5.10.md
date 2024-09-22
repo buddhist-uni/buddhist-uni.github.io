@@ -5,7 +5,7 @@ slug: "thig.05.10"
 subcat: poetry
 external_url: "https://suttacentral.net/thig5.10/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Y5So01TG5Kx2zsa8Ti34Pm58wIHRwZX4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VsJCRq62T-GQAnJv_3IiXXeIbV_G6d0T/view?usp=drivesdk"
 course: path
 status: featured
 tags:

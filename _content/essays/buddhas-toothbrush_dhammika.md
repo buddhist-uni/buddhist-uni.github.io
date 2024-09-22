@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/10/the-search-for-the-buddhas-toothbrush/"
 drive_links:
-  - "https://drive.google.com/file/d/1qS1jEFiOtwOC70iH_B5Tm1rPuaRibXdn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WGmijRvsOsw6zdWYUNuvTSHaeFAvEcb2/view?usp=drivesdk"
 tags:
   - setting
   - medicine

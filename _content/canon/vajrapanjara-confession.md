@@ -3,7 +3,7 @@ title: "Daily Confession (from the Vajrapañjara Tantra)"
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/daily-confession-from-vajrapanjara"
 drive_links:
-  - "https://drive.google.com/file/d/1jd5z8InrhbWSlqfk8lFl-35BAzz_mOr2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qd-dKFCFmE5HOXEQGF3qXjbjQpYnVn0_/view?usp=drivesdk"
 base_value: 0.2
 course: tantric
 tags:

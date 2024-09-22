@@ -5,7 +5,7 @@ slug: "sn.008.006"
 subcat: poetry
 external_url: "https://suttacentral.net/sn8.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/16CA4Yjio85RYWyoKqVJoA6A7shZA0zON/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xFWCJ2IpOBcC-Sed0u7YrrTIifoH_i5L/view?usp=drivesdk"
 course: characters
 tags:
   - speech

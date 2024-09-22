@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.035"
 external_url: "https://suttacentral.net/an3.35/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1sGSaw6zYWF7eZrDWSP--pHgtZJiP3rdL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DRN1dE7D_HTBCb7fgDWz5kvO6lVXsmoX/view?usp=drivesdk"
 course: karma # uncertain...
 tags:
   - meditation

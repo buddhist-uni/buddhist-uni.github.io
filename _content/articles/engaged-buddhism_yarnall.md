@@ -4,7 +4,7 @@ authors:
   - "Thomas Freeman Yarnall"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/Yarnall-Engaged.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1wnrHQ_PmZlG78MIF11LepInOFCnnd2U-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1scB13Z6CR3RxgL3i_9JL1u36Ruokfq2l/view?usp=drivesdk"
 status: featured
 base_value: 0.85
 course: academic

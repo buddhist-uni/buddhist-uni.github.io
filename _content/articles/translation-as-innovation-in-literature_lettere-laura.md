@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.degruyter.com/document/doi/10.1515/opli-2015-0008/pdf"
 source_url: "https://doi.org/10.1515/opli-2015-0008"
 drive_links:
-  - "https://drive.google.com/file/d/1eQYjFOBaUmRMdXV8dV7r4mCpDLos2D9Y/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qIzZXoBek0Bb5sOuZ5kE42oF3EXpCIjg/view?usp=drivesdk"
 course: medieval
 tags:
   - translation

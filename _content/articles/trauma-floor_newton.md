@@ -4,7 +4,7 @@ authors:
   - "Casey Newton"
 external_url: "https://www.theverge.com/2019/2/25/18229714/"
 drive_links:
-  - "https://drive.google.com/file/d/1InNlOXfivYBcRbZKFfUDRYv_7bn2oVRx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15iPie7nTs9vfoZ6NUoGIwz8xFlNcoOJ7/view?usp=drivesdk"
 status: featured
 course: social
 tags:

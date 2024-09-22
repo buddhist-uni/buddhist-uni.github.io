@@ -4,7 +4,7 @@ translator: bodhi
 slug: "sn.004.019"
 external_url: "https://suttacentral.net/sn4.19/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1i_HyTNsvt78nwNAQzN6zJ0-3qg4rTf5I/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/163IeMOTdRKnvWYariLtLjwJyT0MpUZsa/view?usp=drivesdk"
 course: hindrances
 status: featured
 tags:

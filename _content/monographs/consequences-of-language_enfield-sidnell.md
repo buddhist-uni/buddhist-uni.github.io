@@ -6,7 +6,7 @@ authors:
 external_url: "https://direct.mit.edu/books/book-pdf/2231213/book_9780262372749.pdf"
 source_url: "https://doi.org/10.7551/mitpress/14795.001.0001"
 drive_links:
-  - "https://drive.google.com/file/d/10hcYd_Qxtjt1ZXxJNbt4SXqgRG-iwApM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18xeED_ubDbKmj87absnIuiUOpoJ51Ejs/view?usp=drivesdk"
 course: language
 tags:
   - social

@@ -4,7 +4,7 @@ authors:
   - santussika
 external_url: "https://youtu.be/VXYLW-s4-Kc"
 drive_links:
-  - "https://drive.google.com/file/d/12Nv9nslkQZl1RtaXxWSSw4DzCIIuWuu0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dItOIn_yKOeUqTmC-FgtotMsBNNyD0iX/view?usp=drivesdk"
 course: philosophy # might move down to epistemology
 tags:
   - speech

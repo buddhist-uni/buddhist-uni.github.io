@@ -10,7 +10,7 @@ external_url: "https://www.academia.edu/14932300/The_Evolution_of_the_Bodhisattv
 source_url: "https://www.bps.lk/olib/bp/bp625s_The-Bodhisatva-Ideal.pdf"
 year: 2013
 drive_links:
- - "https://drive.google.com/file/d/1QWPK_2hUu-pnatADk-CfaLfWmRUg9Bmv/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1shLSWTVWGAn0nts_PXCeBDli2RbjU3_t/view?usp=drivesdk"
 course: indian
 tags:
   - bodhisatta

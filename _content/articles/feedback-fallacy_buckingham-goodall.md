@@ -5,7 +5,7 @@ authors:
   - "Ashley Goodall"
 external_url: "https://hbr.org/2019/03/the-feedback-fallacy"
 drive_links:
-  - "https://drive.google.com/file/d/15xcIqOwkloI5qkq6d9AnqhslEbt5U2G8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1RJfoi6IWB1dreVIL-AGWItOb41GjrZ_G/view?usp=drivesdk"
 course: communication
 tags:
   - leadership

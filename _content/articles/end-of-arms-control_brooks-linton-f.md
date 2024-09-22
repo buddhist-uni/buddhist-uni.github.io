@@ -5,7 +5,7 @@ authors:
 external_url: "https://direct.mit.edu/daed/article-pdf/149/2/84/1832651/daed_a_01791.pdf"
 source_url: "https://doi.org/10.1162/daed_a_01791"
 drive_links:
-  - "https://drive.google.com/file/d/16g-PRPBCUc1ThXQyrjpQanU3tWRIXOe6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i_Jay5R7av6GLLR3XEgIUB6EqM2fAFbM/view?usp=drivesdk"
 course: wider
 tags:
   - international-relations

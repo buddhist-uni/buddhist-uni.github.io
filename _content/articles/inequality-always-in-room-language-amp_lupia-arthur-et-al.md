@@ -6,7 +6,7 @@ authors:
 external_url: "https://direct.mit.edu/daed/article-pdf/146/3/64/1830977/daed_a_00447.pdf"
 source_url: "https://doi.org/10.1162/daed_a_00447"
 drive_links:
-  - "https://drive.google.com/file/d/1CtKaZBnQPfXSHTaH2aE5HUEIqoqpDzaF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12BGJ51d-r_r4hfAQXYCD3_cE2A0ytTWc/view?usp=drivesdk"
 course: communication
 status: featured
 tags:

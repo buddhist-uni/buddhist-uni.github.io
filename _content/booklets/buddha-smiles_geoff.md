@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.dhammatalks.org/books/BuddhaSmiles/Section0014.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1ec-UhmhvEtGTOQdgMtC1uQKhkAULdNFh/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1iDHpTWFs29zDr43mNCMUsr2YtRr87vx5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-cLeKGKDgf2v2SGNbw16ZT9nwnJr7A_1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-gEH7xar8dAkitSi1FIMoR6QqerNiqn2/view?usp=drivesdk"
 olid: OL32035596M
 course: pali-canon
 status: featured

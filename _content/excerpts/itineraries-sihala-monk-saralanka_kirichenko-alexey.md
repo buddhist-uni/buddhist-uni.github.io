@@ -5,7 +5,7 @@ authors:
 external_url: "https://muse.jhu.edu/pub/5/oa_edited_volume/chapter/2379328/pdf"
 source_url: "https://manifold.uhpress.hawaii.edu/read/buddhist-and-islamic-orders-in-southern-asia-comparative-perspectives/section/d58efeec-6889-4098-a9a4-92c14e44c46d"
 drive_links:
-  - "https://drive.google.com/file/d/1D3v6tfZAdCfYWN6QhqOo4ZSWtX4UbGBk/view?usp=sharing"
+  - "https://drive.google.com/file/d/1AmTo8pgYGkKRDPSV6kWEdpsyEuTtV9uA/view?usp=sharing"
 course: theravada-roots
 tags:
   - monastic

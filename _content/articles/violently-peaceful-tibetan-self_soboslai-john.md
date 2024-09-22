@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.degruyter.com/document/doi/10.1515/opth-2015-0004/pdf"
 source_url: "https://doi.org/10.1515/opth-2015-0004"
 drive_links:
-  - "https://drive.google.com/file/d/1J9v_J-yxbeVXZdOmN-RkSl7JGCm4QbRk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11FLSyYyWqvnWeEdrjd8Q957lU2wTVADz/view?usp=drivesdk"
 course: mahayana
 tags:
   - tibetan

@@ -6,7 +6,7 @@ year: 2004
 external_url: "https://archive.org/details/NewPaliCourse"
 formats: [MP3s]
 drive_links:
- - "https://drive.google.com/drive/folders/1ZrIEwW0ZuUH5i0EvPJioDQUpq7hF2ZYE"
+ - "https://drive.google.com/drive/folders/1gCwgjhWME81XqsGNp_F_q4D6TnPNfqlt"
 course: pali-new-course
 base_value: 0.8
 minutes: 2831

@@ -8,7 +8,7 @@ course: ethics
 tags: 
   - lgbt
   - speech
-drive_links: ["https://drive.google.com/file/d/1jAoJNLuE24pvRo6bWINHZPb8aHR_7P1F/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1L8HTS5mQlB_THfr2Usqw5hbnHeLIfwAp/view?usp=drivesdk"]
 pages: 3
 ---
 

@@ -4,7 +4,7 @@ authors:
   - dhammadinna
 external_url: "https://www.academia.edu/44794503/The_Celestial_Coral_Tree_and_the_Noble_Disciple_Ekottarika_%C4%81gama_Discourse_39_2"
 drive_links:
-  - "https://drive.google.com/file/d/1WDPH3ZBL2i7712DYQb1FSJtR_WfeMphO/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Ay0pxymOsvTtjGzydOQkDVpe1noaDa-X/view?usp=sharing"
 course: samadhi
 tags:
   - ea

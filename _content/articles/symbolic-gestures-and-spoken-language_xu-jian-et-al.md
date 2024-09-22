@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc2779203?pdf=render"
 source_url: "https://doi.org/10.1073/pnas.0909197106"
 drive_links:
-  - "https://drive.google.com/file/d/1dd7xsz2o7uaLU4JIVcXjk7YxocwPs5Ck/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CkbexUiuBkIcqfZ24jHKyYOV6M_4qLk_/view?usp=drivesdk"
 course: communication
 tags:
   - neuroscience

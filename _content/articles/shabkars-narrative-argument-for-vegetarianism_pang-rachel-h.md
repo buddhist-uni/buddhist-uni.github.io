@@ -4,7 +4,7 @@ authors:
   - "Rachel H. Pang"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2022/04/Pang_FD_2_22-formatted.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Ehm6EfL6hI_R2VsnkRM9zuFoa3Ce_IXL/view?usp=sharing"
+  - "https://drive.google.com/file/d/19WJtnRiCZh1iyLF7Rd1itSV97zz7zSIY/view?usp=sharing"
 course: animals
 tags:
   - literature

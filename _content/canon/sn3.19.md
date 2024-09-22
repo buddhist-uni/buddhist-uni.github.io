@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.003.019"
 external_url: "https://suttacentral.net/sn3.19/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1BHMiPdhxCoaydh8_iPHLw3hbr5FFMLDC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w3HUdyhWcLDLmnIeW8FHpDiq_kSy8ucC/view?usp=drivesdk"
 course: nature
 tags:
   - becon

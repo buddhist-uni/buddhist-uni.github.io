@@ -3,7 +3,7 @@ title: "Vinaya Notes"
 authors: [brahm]
 external_url: "https://bswa.org/bswp/wp-content/uploads/2019/01/Ajahn_Brahmavamso_Vinaya_Notes.pdf"
 year: 1982
-drive_links: ["https://drive.google.com/file/d/1CcpUeNGF7LHYEe0eJBZJLG5M34y65KGW/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1EW6lWbH5pZy-kcD94a4cG5qqWVTvGKz6/view?usp=drivesdk"]
 course: vinaya-studies
 tags:
   - vinaya-pitaka

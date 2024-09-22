@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/26441111/The_Idolization_of_Enlightenment_On_the_Mummification_of_Chan_Masters_in_Medieval_China"
 source_url: "https://doi.org/10.1086/463304"
 drive_links:
-  - "https://drive.google.com/file/d/1OqMYAO03ZoB2GLJTkdYKuSH-yRH8ZvIa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wjU4g3vFjQz_TELbi314tX6bxCcN33mM/view?usp=drivesdk"
 course: body
 tags:
   - form

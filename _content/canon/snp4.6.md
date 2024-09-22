@@ -4,7 +4,7 @@ slug: "snp.4.06"
 external_url: "https://accesstoinsight.org/tipitaka/kn/snp/snp.4.06.irel.html"
 translator: ireland
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1PkzUGkqHkDJMUAJAkaLoEufYJGkxh1qE/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1_FMUgIaAAb05tB8tB4DNHsfc8tqvDhjF/view?usp=drivesdk"]
 course: death
 tags:
   - snp

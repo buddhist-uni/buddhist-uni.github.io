@@ -5,7 +5,7 @@ authors:
 external_url: "https://pdfs.semanticscholar.org/5ca3/6237c90dfbafea24454a519d2b0bc9e4c099.pdf"
 source_url: "https://doi.org/10.18874/jjrs.11.1.1984.7-42"
 drive_links:
-  - "https://drive.google.com/file/d/1oGeV_y0HeyoLTeeC9sOAR_kNm3lOrg4h/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15h9HF1ENgfJlxUDd-XNch4CYoc_qSTpf/view?usp=drivesdk"
 course: east-asian
 tags:
   - japanese-imperial

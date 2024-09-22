@@ -3,7 +3,7 @@ title: "The Tornado of Self"
 authors: [panyavaddho]
 external_url: "https://archive.org/download/TalksByAjaanPanyavaddho/AjahnPanyavaddhoPart3/04TheTornadoOfSelf.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1Xax4q1r4TAX7Qp30JRYfvVA-RzecXjQC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IYZgsg7PWkKIltg1ow2yO479WhRCNMvh/view?usp=drivesdk"
 course: emptiness
 year: 2003
 tags:

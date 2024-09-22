@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/viriya.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1Wj37zSxUiK1yRvP9GqOZzBNC44McGaEy/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1NR1t1XwvplSBCvNbHMRzqDp30lg13XrA/view?usp=drivesdk"
 course: path
 tags:
   - problems

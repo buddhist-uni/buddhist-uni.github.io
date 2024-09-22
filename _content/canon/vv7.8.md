@@ -4,7 +4,7 @@ slug: "vv.7.08"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-8/"
 drive_links:
-  - "https://drive.google.com/file/d/1hkVv1p3CKCA0Bv0EncTZNQIWd9UzS9cU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_yVpaYAbtLoHkuHLQHQ2pyCmkGWFfIWC/view?usp=drivesdk"
 course: speech
 tags:
   - vv

@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.7.04.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud7_4.html"
 drive_links:
-  - "https://drive.google.com/file/d/1LWXISKCfcPSt5zLi2xAaxnF5QmQJwL4k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pUVi-SuNcO35phwd-2EtfKqjuHoSUhjO/view?usp=drivesdk"
 course: imagery
 tags:
   - canonical-poetry

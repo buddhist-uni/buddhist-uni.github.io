@@ -13,7 +13,7 @@ tags:
   - sanskrit
   - philology
   - hermeneutics
-drive_links: ["https://drive.google.com/file/d/1yBz-EEUwE9EkZHbgvoinc1n9xi6UzrZE/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1kQvxmSH-NDrTXhHgHjYjt1UmdsAix46Q/view?usp=drivesdk"]
 external_url: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-v/"
 series: "Buddhist Forum"
 number: 5

@@ -4,7 +4,7 @@ authors:
   - "Ryohji Kishino"
 external_url: "https://otani.repo.nii.ac.jp/records/11445"
 drive_links:
-  - "https://drive.google.com/file/d/1tGj_FKRpkupqip2_mP_hybg2Eyq49LgW/view?usp=sharing"
+  - "https://drive.google.com/file/d/1e1byIC9XeVUnrrGHAYqSBJHCoTiOeUAA/view?usp=sharing"
 course: avadana
 year: 2022
 journal: "Buddhist Seminar"

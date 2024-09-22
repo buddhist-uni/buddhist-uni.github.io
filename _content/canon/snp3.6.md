@@ -5,7 +5,7 @@ slug: "snp.3.06"
 subcat: poetry
 external_url: "https://suttacentral.net/snp3.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1LsQMgv3GnRpouGLsXnLnycG3VAizNsB8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GC95G6NlV8igDPituPG8eLfOGWQWrCYS/view?usp=drivesdk"
 course: nibbana
 tags:
   - philosophy

@@ -5,7 +5,7 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3293163&sid="
 source_url: "https://doi.org/10.2143/JIABS.46.0.3293163"
 drive_links:
-  - "https://drive.google.com/file/d/1TfyzzBqhFJ8DPQOpxx5ssbiY5CcT-ubR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PIdP_mLwGAFEyOObr2Yrlu5ZdQWrQjss/view?usp=drivesdk"
 course: characters
 tags:
   - vinaya-pitaka

@@ -7,7 +7,7 @@ source_url: "https://doi.org/10.1558/bsrv.39045"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/17527/19950"
 alternate_url: "https://www.academia.edu/42283726/The_Structure_and_Formation_of_the_Aṅguttara_Nikāya_and_the_Ekottarika_Āgama"
 drive_links:
-  - "https://drive.google.com/file/d/1Q5fiRbXB_c7eGNBLX4IGmFxRMX5AMUcO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DQuqQ1I1YPtVlW_6yj9hR3dj01SMYSqF/view?usp=drivesdk"
 course: ea
 tags:
   - an

@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8017692"
 source_url: "https://doi.org/10.1073/pnas.2008389118"
 drive_links:
-  - "https://drive.google.com/file/d/1mEPBnghS0JTgPWUGfdOsU_jzU8FJ5KoB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vQlskmDrrJvYHiWTro-m1HaSj7RYTOVi/view?usp=drivesdk"
 status: featured
 course: communication
 tags:

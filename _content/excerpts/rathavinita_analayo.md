@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/rathavinita.pdf"
 year: 2005
 drive_links:
- - "https://drive.google.com/file/d/1Q4KvoHCW_z34s8KA5NBv16QbMCoiUhU9/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/17l5WEnvEkK_PBvcFPRx71WBndiIgEcio/view?usp=drivesdk"
 course: function
 tags:
   - path

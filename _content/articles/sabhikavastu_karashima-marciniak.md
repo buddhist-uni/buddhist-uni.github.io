@@ -6,7 +6,7 @@ authors:
 external_url: "https://archive.org/download/aririab-vol-xxii/Sabhika-vastu.pdf"
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXII%20(2019).pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1pdtgnec80YPXbEKUoqRWkcvFl3I1hcgR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QXGYg3QcYMK_Zcb_Fpka-jn0SAdUmCBD/view?usp=drivesdk"
 course: mahayana-roots
 tags:
   - canonical-poetry

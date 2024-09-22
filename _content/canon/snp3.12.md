@@ -4,7 +4,7 @@ slug: "snp.3.12"
 external_url: "https://suttacentral.net/snp3.12/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1KiWRojvxjVm5fhN15SHccQ7HslSxHm0U/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1OHjQw2_urnbzQ7hmDD43VxJfYR7xdcD8/view?usp=drivesdk"]
 course: pali-canon
 tags:
   - snp

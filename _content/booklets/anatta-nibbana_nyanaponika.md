@@ -6,8 +6,8 @@ external_url: "https://bps.lk/olib/wh/wh011_Nyanaponika_Anatta-and-nibbana--Egol
 alternate_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X/9/f/9fe69ccb810ba8abd9cd9e0df0c28bde1d5af015.pdf"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1ciTM45arFN2cq9AFAHlM1yymS5Zf8hDi/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1XljEDLUxRmX31d6fD1fSVjrAJ8Yo-y6O/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/173TzCeaj1HJ0R-b4p1dncNoUBJcbPpBF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DhJ_cFao8gcf2-t89KIjxIZSeSaV3UV8/view?usp=drivesdk"
 course: nibbana
 tags:
   - vsm

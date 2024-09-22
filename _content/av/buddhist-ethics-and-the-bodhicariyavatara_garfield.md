@@ -5,7 +5,7 @@ authors:
   - garfield-jay
 external_url: https://youtu.be/mWvt3C8lFIQ
 drive_links:
-  - "https://drive.google.com/file/d/16QuG8bccd4bFY7Ia-AcTj-C7ClqDAozu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14VQXPiIBE1chdWRlA-CTbMfu6ZeDRPb5/view?usp=drivesdk"
 course: ethics
 tags:
   - academic

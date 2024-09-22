@@ -6,7 +6,7 @@ file_links:
   - "exclusive_01/The%20Lion's%20Roar%20-%20Joy%20Manne%CC%81.pdf"
 source_url: "https://doi.org/10.1558/bsrv.v13i1.14944"
 drive_links:
-  - "https://drive.google.com/file/d/1kCq0DcOYzJ4Qu3Hu2uMlMIbIXIMA2fBO/view?usp=sharing"
+  - "https://drive.google.com/file/d/1iyATGtg8UwSNFYww1iE94zZpjEG51cM2/view?usp=sharing"
 course: dialogue 
 tags:
   - imagery

@@ -5,7 +5,7 @@ authors:
 external_url: "https://dash.harvard.edu/bitstream/1/11315419/3/RobsonSignsofPowerTaslimanicWriting1.pdf"
 source_url: "https://doi.org/10.1086/596569"
 drive_links:
-  - "https://drive.google.com/file/d/1tJZKX8i_TmkdCzS6rT4O-etyw9JLh_fL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1neG-qFm0ciKWPm2xxwKrkqoS3Lx6sQUS/view?usp=drivesdk"
 course: medieval
 tags:
   - mahayana-roots

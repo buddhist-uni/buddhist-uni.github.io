@@ -4,7 +4,7 @@ slug: "an.004.073"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN4_73.html"
 source_url: "https://www.accesstoinsight.org/tipitaka/an/an04/an04.073.than.html"
 translator: geoff
-drive_links: ["https://drive.google.com/file/d/18Rcw7sz9lMgIYVIdsrzOeJhtDGnBXBzk/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1pHnoPBTkgAGLLEWXyy0waCV_Zw4xIOXI/view?usp=drivesdk"]
 course: speech
 tags:
   - an

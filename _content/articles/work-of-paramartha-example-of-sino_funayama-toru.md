@@ -4,7 +4,7 @@ authors:
   - "Toru Funayama"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/9001/2894"
 drive_links:
-  - "https://drive.google.com/file/d/1-pM812RmoF277IFW9DTnM5bq6uoTZ9P0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aUC8o94FfrQOKiBk8bDjahX11egJF8AD/view?usp=drivesdk"
 course: medieval
 tags:
   - east-asian-roots

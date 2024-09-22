@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.009.036"
 external_url: "https://suttacentral.net/an9.36/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ViEOcsbP6IkNjuIuam5D144x-Hwxat5i/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1npHwcxrGSjjrTQx-V6fTENZ4tWbGPIdz/view?usp=drivesdk"
 course: vipassana
 status: featured
 tags:

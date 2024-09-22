@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/1308847/files/59-90-1-PB.pdf"
 source_url: "https://doi.org/10.5281/zenodo.1308847"
 drive_links:
-  - "https://drive.google.com/file/d/1vya_O_9UX13jKRuv_diY8c58X5Hi0HJu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1k13OgSpSl_KZTmsfcsbNppDy220pUi9j/view?usp=drivesdk"
 course: japanese
 tags:
   - japanese-imperial

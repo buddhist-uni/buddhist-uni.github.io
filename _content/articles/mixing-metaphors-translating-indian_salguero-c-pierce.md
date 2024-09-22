@@ -5,7 +5,7 @@ authors:
 external_url: "https://brill.com/downloadpdf/journals/asme/6/1/article-p55_4.pdf"
 source_url: "https://doi.org/10.1163/157342110x606860"
 drive_links:
-  - "https://drive.google.com/file/d/13TkHt8ok8_B9NpkUhE88521MdigucI8W/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y2i8R65TwpCg52qvI5cr0fIehhw8GPuD/view?usp=drivesdk"
 course: medieval
 tags:
   - tcm

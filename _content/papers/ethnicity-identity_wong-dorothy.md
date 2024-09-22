@@ -7,7 +7,7 @@ external_url: "https://archive.org/download/ethnicity-and-identity_dorothy-wong/
 source_url: "https://www.academia.edu/40060890/Ethnicity_and_Identity_Northern_Nomads_as_Buddhist_Art_Patrons"
 real_source_url: "https://www.taylorfrancis.com/chapters/edit/10.4324/9780203987957-11/ethnicity-identity-northern-nomads-buddhist-art-patrons-period-northern-southern-dynasties-dorothy-wong?context=ubx&refId=aa6260e3-2588-46a0-b233-c2457cae238c"
 drive_links:
-  - "https://drive.google.com/file/d/1oAf71CWttB7tAQDSdwD4vVpJyHEg9qIQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OscW9HYtpajOiZyyEJ9U6JHvZkbyCBdF/view?usp=drivesdk"
 course: roots
 status: featured
 tags:

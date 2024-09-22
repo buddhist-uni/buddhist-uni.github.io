@@ -5,7 +5,7 @@ authors:
   - harvey
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8674/2581"
 drive_links:
-  - "https://drive.google.com/file/d/1UC32WJ2wd7neTIq2sxG5gkDtnLML9QYC/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WH0O8KJRqHgD-dKo2LMjJ5BYlk98bLKB/view?usp=drivesdk"
 course: samadhi
 tags:
   - animitta

@@ -4,7 +4,7 @@ authors:
   - "Pa Auk Sayadaw"
 external_url: "https://www.dhammatalks.net/Books7/Pa_Auk_Anapanasati.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1bpX7V_ajkVW86olRZd1USlj6oMd5yBYo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16SpptPfSkoaF2L-ckGnlu03G2NlJWIWO/view?usp=drivesdk"
 course: samatha
 tags:
   - anapanasati

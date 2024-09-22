@@ -4,7 +4,7 @@ authors:
   - "William  L.  Ames"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8738/2645"
 drive_links:
-  - "https://drive.google.com/file/d/10wTSD8BvGCZxubU7CNghpencgWjJfkNa/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Fd0FHjeOag9utK63BX1Bxd2LPFtajax8/view?usp=sharing"
 course: epistemology
 tags:
   - emptiness

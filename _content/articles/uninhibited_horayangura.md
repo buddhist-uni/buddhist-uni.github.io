@@ -4,7 +4,7 @@ authors:
   - "Nissara Horayangura"
 external_url: "https://www.bhikkhuni.net/uninhibited-monastic-life-for-nuns/"
 drive_links:
-  - "https://drive.google.com/file/d/1geKxM6-0Z2OPMAKBQz5kSrITjM2WZ1Y1/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dfyGOgPVY_xBT9r83vLVY1mIhvGj-gss/view?usp=drivesdk"
 course: nuns
 tags:
   - australasian

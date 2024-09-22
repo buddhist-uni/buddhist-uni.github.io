@@ -4,7 +4,7 @@ translator: ireland
 slug: "ud5.5"
 external_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.5.05.irel.html"
 drive_links:
-  - "https://drive.google.com/file/d/14ovghdM7BG_o2lkL1oRZazzpUMwYl3Cu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i5fz3EUCAUqV5nmyaCJjOtwdK7VH2OiH/view?usp=drivesdk"
 course: vinaya-studies
 status: featured
 tags:

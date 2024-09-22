@@ -4,7 +4,7 @@ authors:
   - bingenheimer
 external_url: "https://journal.equinoxpub.com/BSR/article/view/13705/15929"
 drive_links:
-  - "https://drive.google.com/file/d/1QXRmLwhix7j8VMgQ8fzAC8M6WSNj8cFe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1id09DB2OJRvm5DwtvNCrdgFcTgM9AEGv/view?usp=drivesdk"
 course: agama
 tags:
   - sa

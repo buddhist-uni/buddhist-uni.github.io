@@ -3,7 +3,7 @@ title: "The Philosophical Import of Vedic Yakṣa and Pāli Yakkha"
 authors:
   - wijesekera
 drive_links:
-  - "https://drive.google.com/file/d/1B0jt5ac9EOlN2CsMSNCxqddEBFgzkhm8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xGxk-BzifaFecjXX4TnzZG2qyAwo_IyW/view?usp=drivesdk"
 tags:
   - yakkha
   - pali-dictionaries

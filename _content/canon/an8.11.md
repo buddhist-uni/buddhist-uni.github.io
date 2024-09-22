@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.011"
 external_url: "https://suttacentral.net/an8.11/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ZfBtkNg6lWtUqtAJNb7HKIRL_VvF8B3G/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PFZbERQKRkQ9JRU3Y6VUIQGucrG73OjM/view?usp=drivesdk"
 course: dialogue
 tags:
   - an

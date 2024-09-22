@@ -4,7 +4,7 @@ authors:
   - "J. S. Attwood"
 external_url: "http://jocbs.org/index.php/jocbs/article/view/164"
 drive_links:
-  - "https://drive.google.com/file/d/1Zn11FkVSFN9QGpz11EXJcdCt1QZm7jvh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jHC1t0HHEnhtPvQ-z42gpAMiN9XcQZWf/view?usp=drivesdk"
 course: emptiness
 status: featured
 tags:

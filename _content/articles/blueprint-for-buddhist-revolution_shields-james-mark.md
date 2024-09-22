@@ -6,7 +6,7 @@ authors:
 external_url: "https://digitalcommons.bucknell.edu/cgi/viewcontent.cgi?article=1650&context=fac_journ"
 source_url: "https://doi.org/10.18874/jjrs.39.2.2012.333-351"
 drive_links:
-  - "https://drive.google.com/file/d/1hc2EN5F94mcp2E_qzHfiToX6mBIzqjtX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/180XoYodWF9HbrzQzBwgfTQKS08eIWaxY/view?usp=drivesdk"
 status: featured
 course: roots
 tags:

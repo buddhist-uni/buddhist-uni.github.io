@@ -4,7 +4,7 @@ translator: ireland
 slug: "iti017"
 external_url: "https://suttacentral.net/iti17/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1iF-WmaMYt3LF8reFd7_mh_XrfbHqZmGQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cl_dK2KsJiMANrY4SKvbsux0vn5QiAKs/view?usp=drivesdk"
 course: sangha
 tags:
   - buddhism

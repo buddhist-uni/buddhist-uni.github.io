@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.096"
 external_url: "https://suttacentral.net/an6.96/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1K1vIkkINBBYPgcQBVWrkh7G22AW8mnYH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vYQdOwrFFUU_Ob1WXkDHywZfr5CaoeR9/view?usp=drivesdk"
 course: cosmology
 tags:
   - an

@@ -4,7 +4,7 @@ slug: "pli-tv-kd01"
 translator: brahmali
 external_url: "https://suttacentral.net/pli-tv-kd1/en/brahmali"
 drive_links:
-  - "https://drive.google.com/file/d/1WPi8PACstMa7nnegR57FStMc9ECkgznv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y0JS6t7Y3zv5FkQnRsGFExGC0Nxy5-7H/view?usp=drivesdk"
 year: 2021
 base_value: 1.8
 course: pali-canon

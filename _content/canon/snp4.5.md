@@ -5,7 +5,7 @@ slug: "snp.4.05"
 subcat: poetry
 external_url: "https://suttacentral.net/snp4.5/en/mills"
 drive_links:
-  - "https://drive.google.com/file/d/1eHRTaz8XyDXpVrnmEktj4I0gM2wANowd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YcUUpMsilhXTCdwsrjHmIkeCRMSPDTH8/view?usp=drivesdk"
 course: emptiness
 tags:
   - dialogue

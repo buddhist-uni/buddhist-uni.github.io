@@ -5,7 +5,7 @@ slug: "ud6.9"
 subcat: poetry
 external_url: "https://suttacentral.net/ud6.9/en/anandajoti"
 drive_links:
-  - "https://drive.google.com/file/d/1Na4hHBTtaBjnUs-YZn7XIpF56c-25iOV/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19tFQt3YqKrfOCkrtoPBpmRImbmPinBBu/view?usp=drivesdk"
 course: feeling
 tags:
   - canonical-poetry

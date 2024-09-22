@@ -8,7 +8,7 @@ alternate_url: "https://www.academia.edu/3642668/Vipassana_meditation_handbook"
 another_url: "https://s7ea006fc0c281d47.jimcontent.com/download/version/1504544421/module/8827076286/name/Handbook%20of%20Vipassana%20Meditation.pdf"
 source_url: "https://www.watbhaddanta.com/app/download/8827076286/Handbook+of+Vipassana+Meditation.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1dWqVTHZ2E4pSj6WVK5E030-mCal1BFPG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EbE5ZDioRLNrnajIhv6ai9HM8oXGvOIy/view?usp=drivesdk"
 course: theravada
 tags:
   - vipassana

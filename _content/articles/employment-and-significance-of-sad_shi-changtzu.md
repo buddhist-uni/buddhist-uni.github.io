@@ -6,7 +6,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8946/10418"
 source_url: "https://doi.org/10.1558/bsrv.v29i1.85"
 drive_links:
-  - "https://drive.google.com/file/d/1a4b8bfr-MtOt0JDSXg0gXIMN9enCqEEG/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rzdWI4-uwjU5ewm3fyIDtWixE0-NLwgP/view?usp=drivesdk"
 course: rebirth-stories
 tags:
   - mahayana-roots

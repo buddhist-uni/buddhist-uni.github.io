@@ -2,7 +2,7 @@
 title: "The Numbered Discourses: Things that are Useful Every Day"
 authors: [sujato]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1bLgmg06Ms7xFu2FjluU-JSiR5ceNK4JO/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1LGvrwninWNuIFPL-Sw2W8oBe817pR96C/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an-guide-sujato"
 year: 2019
 course: sutta

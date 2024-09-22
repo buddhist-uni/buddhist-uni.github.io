@@ -4,7 +4,7 @@ authors:
   - "Pema Düddul"
 external_url: "https://web.archive.org/web/20220102122825/https://tricycle.org/trikedaily/awakening-joy-meditation-practice/"
 drive_links:
-  - "https://drive.google.com/file/d/1eWN--yNGgarw4yOjSNB6QcU_4rxJxGHe/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1y8VcKS0jvN7RMDr73uwiOYVRLfLUS8rD/view?usp=drivesdk"
 course: samatha
 tags:
   - problems

@@ -10,7 +10,7 @@ pages: "43--100"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/sa07.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/1mjx7uampESwRR-YxkK91SPNfHowzKF3W/view?usp=sharing"
+  - "https://drive.google.com/file/d/1CANN7dekhOUrUcokVoOP9XgiV9QQmzxO/view?usp=sharing"
 course: sa
 tags:
   - emptiness

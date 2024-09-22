@@ -6,7 +6,7 @@ translator: "Erik Pema Kunsang"
 editor: "Ward Brisick"
 source_url: "https://www.scribd.com/document/136905132/Khenpo-Gangshar-Naturally-Liberating-Whatever-You-Meet"
 drive_links:
-  - "https://drive.google.com/file/d/18HeSQb8AtJzE6KPpEVvxtG7zLt7Gnbdp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LVuCmr8tX8vyPWobItWOT6bkCLtYTfJV/view?usp=drivesdk"
 course: tantric
 tags:
   - meditation

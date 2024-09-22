@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.is/O8knj"
 source_url: "https://www.wired.com/story/i-saw-the-face-of-god-in-a-tsmc-factory/"
 drive_links:
-  - "https://drive.google.com/file/d/1bmKOUCVPyZdm50hqpB3M5U43rbNQ0N8m/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SHxFLFKLHcCk0c--k_PlgWRdJS68NkZ_/view?usp=drivesdk"
 status: featured
 course: present # strongly here
 tags:

@@ -4,7 +4,7 @@ authors:
   - geoff
 external_url: "https://dharmaseed.org/talks/49790/"
 drive_links:
-  - "https://drive.google.com/file/d/1e9WknWWSk8vLxk6R4cAuv7IZyDfOG-UK/view?usp=sharing"
+  - "https://drive.google.com/file/d/1xkGTp_TU3KpjCnl5AnAgF2h2xdgSk93w/view?usp=sharing"
 formats: [mp3]
 course: view
 tags:

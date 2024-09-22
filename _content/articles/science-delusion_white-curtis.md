@@ -7,7 +7,7 @@ file_links:
   - "exclusive_01/The%20Science%20Delusion%20(article)%20-%20Curtis%20White.pdf"
 source_url: "https://tricycle.org/magazine/science-delusion/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1SXVENICQX42VWItyUaT8pHKhq5N27uD5/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1l5thkKKUfYXXj9950gSCRucgvT3ZKKSV/view?usp=drivesdk"]
 course: buddhism
 tags:
   - west

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.113"
 external_url: "https://suttacentral.net/an3.113/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1i_qZqCgjL1OPKRDOMnsSFhqM8_vY5cIy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wtSjClXduPHxFnBi2Q7k5E_IBY26JmAJ/view?usp=drivesdk"
 course: rebirth
 tags:
   - karma

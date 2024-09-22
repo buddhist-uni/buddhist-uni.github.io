@@ -6,7 +6,7 @@ subcat: poetry
 reader: "Ada Limón"
 external_url: "https://www.slowdownshow.org/episode/2021/09/29/512-to-offer-sweet-fruit-to-the-ghost"
 hidden_links:
-  - "https://drive.google.com/file/d/1raK3_a1qF1dghS4C-lDgH97M85OupHJt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qGVq2-lLF49PMJ_Gdy4OQBkTGkagRAOD/view?usp=drivesdk"
 status: featured
 course: social
 tags:

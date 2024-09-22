@@ -4,7 +4,7 @@ slug: "snp.4.02"
 external_url: "https://suttacentral.net/snp4.2/en/mills"
 translator: mills-laurence
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1YGRH1Gn8mCL9W-wPOVHJrTOlkU-QMxYL/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1ak-siPx6sm214r17I45XTpQM2yZv-YRy/view?usp=drivesdk"]
 course: imagery
 status: featured
 tags:

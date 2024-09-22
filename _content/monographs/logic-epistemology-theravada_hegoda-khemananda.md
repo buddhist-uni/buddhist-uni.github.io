@@ -4,7 +4,7 @@ authors:
   - "Hegoda Khemananda"
 external_url: "https://archive.org/download/logic-and-epistemology-in-theravada/Logic%20and%20Epistemology%20in%20Theravada_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-7xj6Sl-G3Gw1OaQupet_yAaeX1_K1SI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZBfzFT0icaga1EVciH7RKX8xf_QP3B6b/view?usp=drivesdk"
 source_url: "http://www.kbrl.gov.mm/book/details/002683"
 translator: "Asangha Tilakaratne"
 course: abhidhamma

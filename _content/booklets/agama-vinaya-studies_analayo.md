@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/savl.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1xMzdy8k3aTlNPsUP2eHV-8D4Ipi4og-W/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1s3jt9czNNPwWbAfeLsBbbPI2Jy4UOsxE/view?usp=drivesdk"
 course: agama
 year: 2023
 olid: OL51200096M

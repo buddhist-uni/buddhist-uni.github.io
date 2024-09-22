@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.009.044"
 external_url: "https://suttacentral.net/an9.44/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1pMatGlux4hBFavA47c_nnWpyl5i3Qbjj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17iGx7EZXOhCXJrQ2H0bC02tF40CX82w6/view?usp=drivesdk"
 course: samadhi
 tags:
   - an

@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Sol Hanna"
 external_url: "https://youtu.be/DMleA9ntzEA"
 drive_links:
-  - "https://drive.google.com/file/d/1T7U29hnjhbhtAwvzoVv8GOVdJbL3Iw0b/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bxmcrZ03NftlH0Nl4VNmFtdJETkwjqqv/view?usp=drivesdk"
 course: social
 tags:
   - media

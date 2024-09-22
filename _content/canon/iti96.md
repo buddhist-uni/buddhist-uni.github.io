@@ -6,7 +6,7 @@ subcat: poetry
 source_url: "https://accesstoinsight.org/tipitaka/kn/iti/iti.3.050-099.than.html#iti-096"
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti96.html"
 drive_links:
-  - "https://drive.google.com/file/d/1zJ3TJ-VgUXuoa_fZzTvRzCU_P0V09uM4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OYCbvb_vSI24BEEPEdRJpCenN4zasjeY/view?usp=drivesdk"
 course: function
 tags:
   - stages

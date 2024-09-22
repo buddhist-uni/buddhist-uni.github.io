@@ -4,7 +4,7 @@ authors:
   - norman
 external_url: "https://doi.org/10.20769/jpbs.1.0_1"
 drive_links:
-  - "https://drive.google.com/file/d/1wKTaS2ITBMdZ-27DjxYTiYrgEFwtNghc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nfJb6nq7aomRUYx87FV49f8UecMYNr_A/view?usp=drivesdk"
 course: pali-language
 tags:
   - pie

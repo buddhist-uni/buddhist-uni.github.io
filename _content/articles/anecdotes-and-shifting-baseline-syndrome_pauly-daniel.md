@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.waterbucket.ca/rm/files/2014/08/AnecdotesShiftingBaselineSyndromeFisheries-_1995.pdf"
 source_url: "https://doi.org/10.1016/s0169-5347(00)89171-5"
 drive_links:
-  - "https://drive.google.com/file/d/1VD95dCEuHEP4MI8l8A3_1oYZ8WR-LVdK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kN17DIrsu1ufd_jjwVwP_fV8ybTYJq9K/view?usp=drivesdk"
 course: time # classic with >1800 citations
 tags:
   - natural

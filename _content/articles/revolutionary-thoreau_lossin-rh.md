@@ -5,7 +5,7 @@ journal: nyrb
 year: 2020
 month: sep
 external_url: "https://www.nybooks.com/daily/2020/09/04/the-revolutionary-thoreau/"
-drive_links: ["https://drive.google.com/file/d/1A0SogtDD1PhitFSIDw2fibl4N2EWjlVA"]
+drive_links: ["https://drive.google.com/file/d/1qPHNcL9NvLuGplAeZmuJUPqFvUQwdSlv"]
 course: activism
 tags:
   - ideology

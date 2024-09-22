@@ -4,7 +4,7 @@ authors:
   - crosby-kate
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1L8bjVq0xRFPFOpCnvLsS_frh_rI0TGND/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1iJ0IpbdmZ8d-Dc1h09OTd-muwW4nFgxu/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/Abbreviation%20in%20Pāli%20-%20Kate%20Crosby.pdf"
 year: 2007

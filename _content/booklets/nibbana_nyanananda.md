@@ -5,7 +5,7 @@ authors:
 address: "Karandana, Sri Lanka"
 external_url: "https://seeingthroughthenet.net/books/"
 drive_links:
-  - "https://drive.google.com/file/d/13g2shl7nkV2DtXYucgaFZhFI0LhUidoT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mMG34f5DoxPdVt85qnf1DoEf20qvctwL/view?usp=drivesdk"
 year: 2012
 base_value: 4.8
 course: nibbana-mind-stilled

@@ -2,7 +2,7 @@
 title: "AN 4.36: Doṇa Sutta"
 slug: "an.004.036"
 translator: bodhi
-drive_links: ["https://drive.google.com/file/d/1inbz7quO2Y_HpyQqIPelGFD3zcfF5iRi/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/196MRcGg1Of7ODSzSeFO4POGEe1i7D9qR/view?usp=drivesdk"]
 external_url: "https://suttacentral.net/an4.36/en/bodhi"
 year: 2012
 course: pali-canon

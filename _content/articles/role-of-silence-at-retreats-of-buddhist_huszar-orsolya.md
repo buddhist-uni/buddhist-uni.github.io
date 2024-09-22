@@ -5,7 +5,7 @@ authors:
 external_url: "https://web.archive.org/web/20180722182037if_/http://real.mtak.hu/43529/1/KOME_HO20The20Role20of20Silence_u.pdf"
 source_url: "https://doi.org/10.17646/kome.2016.25"
 drive_links:
-  - "https://drive.google.com/file/d/1Xs8XrF7tN8ULvZXWathAKTEIdVThbI0K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lb5EciaEo7KHRRvzMaDgTR0SSHMhgd3R/view?usp=drivesdk"
 course: communication
 status: featured
 tags:

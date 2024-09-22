@@ -7,7 +7,7 @@ alternate_source: https://poj.peeters-leuven.be/content.php?id=3286322&url=artic
 file_links:
   - "exclusive_01/Bodhi%20and%20Arahattaphala_%20From%20Early%20Buddhism%20to%20Early%20Mah%C4%81y%C4%81na%20-%20Karel%20Werner.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Q_kyHpcgWKfd8J4nZgrEl5B5NWOpFrij/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HSLeVoR_lSWFrSiCeMLx9rSQL5sqnDLK/view?usp=drivesdk"
 status: featured
 course: mahayana-roots
 # Uncertain what tags...

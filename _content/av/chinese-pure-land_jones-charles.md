@@ -5,7 +5,7 @@ source_url: "https://newbooksnetwork.com/charles-b-jones-chinese-pure-land-buddh
 file_links:
   - "exclusive_01/Chinese%20Pure%20Land%20Buddhism%20-%20Charles%20Jones.m4a"
 drive_links:
-  - "https://drive.google.com/file/d/180MfHKDs17-n30JwUToWzTYfzdLfyp1K/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vAGtrzEl4rBG-Xuyb3PwWOpaT4VSuxBb/view?usp=drivesdk"
 formats: [m4a]
 course: mahayana
 status: featured

@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/lobzang-chokyi-gyaltsen/rays-of-moonlight-confession"
 drive_links:
-  - "https://drive.google.com/file/d/1mLSEbJvtKC8NgauvyUnLLntNk-zjL67v/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1BhTtQz3mA6WUVInLg_LiU50ByQRGN39T/view?usp=drive_link"
 course: thought
 tags:
   - confession

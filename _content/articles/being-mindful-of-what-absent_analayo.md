@@ -6,7 +6,7 @@ external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo
 alternate_url: "https://link.springer.com/content/pdf/10.1007/s12671-021-01679-5.pdf"
 source_url: "https://doi.org/10.1007/s12671-021-01679-5"
 drive_links:
-  - "https://drive.google.com/file/d/1VlEMcqDj20cavrSxADZdZlz5EMRFTUhT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IEDX8NAK4Zww4pD53whm--CsM2s9X5Az/view?usp=drivesdk"
 course: emptiness
 tags:
   - sati

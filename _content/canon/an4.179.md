@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.004.179"
 external_url: "https://suttacentral.net/an4.179/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1ZybC-HdBbGlL0PAOU8P7osl_cqmc6shc/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JwjT16HoJgpN8sf6RnK2WzKm-a3hat_w/view?usp=drivesdk"
 course: sati
 tags:
   - problems

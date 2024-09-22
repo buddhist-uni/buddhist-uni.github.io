@@ -8,7 +8,7 @@ authors:
 external_url: "https://slejournal.springeropen.com/track/pdf/10.1186/s40561-021-00166-7"
 source_url: "https://doi.org/10.1186/s40561-021-00166-7"
 drive_links:
-  - "https://drive.google.com/file/d/1Ob6WpYP9l7LxcGFgsyu4Ev2PdkFWRfRT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1LEVmP8XrwMCMQk_ZxOtfQBi9WO6_P73M/view?usp=drivesdk"
 course: media
 tags:
   - meditation

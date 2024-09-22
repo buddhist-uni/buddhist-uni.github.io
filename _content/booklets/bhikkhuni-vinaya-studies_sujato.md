@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/bhikkhuni-vinaya-studies-bhikkhu-sujato/Bhikkhuni_Vinaya_Studies_Bhikkhu_Sujato.pdf"
 source_url: "https://archive.org/details/BhikkhuniVinayaStudies"
 drive_links:
-  - "https://drive.google.com/file/d/1-8Bzct7ySIb9vTHhm0KjT0LZloGEIvLx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VGdWe0FlUIHap88E9azN9SjPfo7YPj6t/view?usp=drivesdk"
 course: bhikkhuni
 tags:
   - epistemology

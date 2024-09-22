@@ -4,7 +4,7 @@ authors:
   - "Paisarn Likhitpreechakul"
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/20/20"
 drive_links:
-  - "https://drive.google.com/file/d/1_ukdVnEtDqDEOpZ-C9BxJRZtMbFJdeph/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17qGuTvwXtlQD97WURlPLSpnuqpQI5lC0/view?usp=drivesdk"
 course: thought
 status: featured
 tags:

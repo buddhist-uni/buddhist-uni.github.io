@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhanet.net/pdf_file/ancientsgrfx.pdf"
 formats: [pdf]
 drive_links:
-  - "https://drive.google.com/file/d/13VOk2vlIMlKSStYagO9CRLbyTZotM4Jm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1oxSBG84STnD5ynuNMXd_zwsNERNGeNcF/view?usp=drivesdk"
 course: mahayana
 tags:
   - chinese

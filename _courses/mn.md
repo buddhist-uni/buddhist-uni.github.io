@@ -5,7 +5,7 @@ description: "A rigorous tour of the Majjhima Nikāya led by Bhikkhu Bodhi and s
 lecturers:
   - bodhi
 course_time_multiplier: 1
-google_doc_id: 1LO0wOVoc17KNUtOfbYo6Gg7wD1ycw9TLndi095Ii02I
+google_doc_id: 1D3yL_MtDP3BSQ_YJ5wp_AHKtsbUGLACEAcOansLig34
 feedback_id: "The+Majjhima+Nikaya"
 icon: "fas fa-crow"
 image: "https://illeakyw.sirv.com/Images/banners/buddha_teaching_watercolor.jpg"
@@ -53,7 +53,7 @@ Take your time. Meditate on it. Let this weekly ritual become part of your life.
 
 In this course, we study the Early Buddhist Texts by reading the Majjhima Nikaya.
 
-I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1qjrsRECWOw1_mPBAZAUz5PjnDtL5sftC/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} and [this introductory analysis by Bhante Analayo](/content/articles/centrality-of-mindfulness-related_analayo) to get a sense of what to expect from this course.
+I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1s_b8w0nfkbLVMDsBvalMSlHIz_2MjBws/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} and [this introductory analysis by Bhante Analayo](/content/articles/centrality-of-mindfulness-related_analayo) to get a sense of what to expect from this course.
 
 ### Textbook
 
@@ -78,11 +78,11 @@ If you're anything like me, you'll be amazed at how little the recensions differ
 
 ### Lectures
 
-Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into nine parts](https://drive.google.com/drive/folders/1JlG4P34WCAIMugD3WFcOrndq2pc1P7zO){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection— until [parts 10](https://drive.google.com/folderview?id=1dK_tE9gHPRxP-rgkEbnlWG0NKd-3_1D8){: target="_blank"} and ["11" (on YouTube)](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"}, which do go back and cover all the skipped suttas. 
+Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into nine parts](https://drive.google.com/drive/folders/1f_mw-qMqYrfAOJlceGY7BXGYiwb7jPqT){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection— until [parts 10](https://drive.google.com/folderview?id=1FOIHmJ6mo3sk3Dm01QavL7p6ptEP_NFU){: target="_blank"} and ["11" (on YouTube)](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"}, which do go back and cover all the skipped suttas. 
 
 #### Instructions
 
-Look ahead to the next lecture to see which sutta comes next (the first lecture, for example, is called “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1bwnTOwD5jqtZUW9k1r8MdiNY9ndoDTLE/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"}” so you know to read [the 26th discourse](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
+Look ahead to the next lecture to see which sutta comes next (the first lecture, for example, is called “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1mXgBsUoWK0UTNogviMOrJ7YkCB4yx1Rr/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"}” so you know to read [the 26th discourse](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
 
 1. Read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.3"}!) the sutta before class. 
 1. Listen to the lecture(s) associated with that sutta.

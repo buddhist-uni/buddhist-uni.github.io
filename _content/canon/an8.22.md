@@ -4,7 +4,7 @@ slug: "an.008.022"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.22/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1I4JSJTm6qmF4e5RxYN6JzXzw874et8Xy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tTi_ZFVWBi8twNWEHtqd4wltARYkQyom/view?usp=drivesdk"
 course: karma
 tags:
   - an

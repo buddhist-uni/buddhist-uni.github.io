@@ -4,7 +4,7 @@ authors:
   - "Ryan Cordell"
 external_url: "https://s22bl.ryancordell.org/lab/2022/01/24/lab1-that-was-illuminating.html"
 drive_links:
-  - "https://drive.google.com/file/d/1x3G0Azo2F45xRo0VmY2WYxmBHpWcI4Q6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vU_-KDxakhFlj4ZdMdZpTi83WNFfyPr7/view?usp=drivesdk"
 course: media
 status: featured
 tags:

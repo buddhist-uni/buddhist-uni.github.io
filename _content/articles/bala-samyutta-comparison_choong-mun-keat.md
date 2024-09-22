@@ -8,7 +8,7 @@ year: 2012
 volume: 2
 pages: "84--103"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1hYwJA8jFxsWNq2JWkP2p6ElvSVUFnFhp/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1pUoGUVRdxwwFDbgB9J6Uoyq96-1akC1F/view?usp=drivesdk"]
 course: sa
 tags:
   - power

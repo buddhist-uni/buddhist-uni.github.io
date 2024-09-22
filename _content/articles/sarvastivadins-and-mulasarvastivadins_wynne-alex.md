@@ -5,7 +5,7 @@ journal: iijbs
 year: 2008
 volume: 9
 external_url: "https://www.academia.edu/9209372/On_the_Sarv%C4%81stiv%C4%81dins_and_M%C5%ABlasarv%C4%81stiv%C4%81dins"
-drive_links: ["https://drive.google.com/file/d/1f-V5Ws6j1DI0dcXD9exGq90ITrnUtQA2/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1OpfFHTlr4BF5NBPh9SKZegqx1VoFQrm3/view?usp=drivesdk"]
 course: sects
 pages: "247--269"
 ---

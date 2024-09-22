@@ -5,7 +5,7 @@ slug: "mn009"
 external_url: "https://bhantesuddhaso.com/teachings/sutta/mn9-sammaditthi-sutta/"
 alternative_url: "https://suttacentral.net/mn9/en/suddhaso"
 drive_links:
-  - "https://drive.google.com/file/d/10_TcXdr_hUcUgxJPl2in9ooN6-h-AJ30/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qPMAvDf1lzglP0k43k2G3_flMZmNjhia/view?usp=drivesdk"
 course: view
 tags:
   - path

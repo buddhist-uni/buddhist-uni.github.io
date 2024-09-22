@@ -4,7 +4,7 @@ authors:
   - sujato
 source_url: "https://suttacentral.net/an-guide-sujato?lang=en#item1"
 drive_links:
-  - "https://drive.google.com/file/d/1pU-6b--1p11FIlBR5nBqEIiaa8dqpUkD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jVMWMAXxH7eehI56_71azV7zbYjLTbqR/view?usp=drivesdk"
 tags:
   - imagery
 base_value: 0.15

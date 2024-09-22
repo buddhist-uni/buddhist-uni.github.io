@@ -5,7 +5,7 @@ slug: "thag.03.11"
 subcat: poetry
 external_url: "https://suttafriends.org/sutta/thag3-11"
 drive_links:
-  - "https://drive.google.com/file/d/167kQRxSRFXVpFOpFhhVUk9fN5NOWfsF0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cEDk08qk1yyJcI_-MOM-R-t8AFqcbSz5/view?usp=drivesdk"
 course: monastic-advice
 tags:
   - thag

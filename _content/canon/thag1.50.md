@@ -5,7 +5,7 @@ slug: "thag.01.50"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.50/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1HOWxi3mU2MCcwspiSnB4bFQE8ZsN0Fnn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EawmgPhcLp-XRQ9tdu9yM9bVhOYAxbfl/view?usp=drivesdk"
 course: imagery
 tags:
   - nature

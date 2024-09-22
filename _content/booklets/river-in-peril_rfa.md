@@ -6,7 +6,7 @@ editor: "Dan Southerland"
 external_url: "https://www.rfa.org/english/bookshelf/Mekong.pdf"
 source_url: "https://www.rfa.org/english/news/special/riverinperil/"
 drive_links:
-  - "https://drive.google.com/file/d/1TYK2SuweJ3cXOv2N_c8guxNLJIKCyizD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QJ7ejTwTpo8g5ZjUSCLhJCbyJek3_yEf/view?usp=drivesdk"
 course: wider
 tags:
   - asia

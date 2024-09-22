@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh282_Bodhi_Going-For-Refuge--Taking-The-Precepts.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/1Kqh8G1v3wNnxIKr0xEA3F4g6fNhnqsN7/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1rBPchiImVXAe_5qM9PkLQXdNNWK7vo_7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15oxS2YQmuV4sgvSqYDFP9QI5SfSRHseb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a0sUWg0i1BZ58617t7_NTliqarfGYKUj/view?usp=drivesdk"
 course: sangha
 tags:
   - vinaya-studies

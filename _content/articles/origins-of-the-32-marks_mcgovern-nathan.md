@@ -4,7 +4,7 @@ authors:
   - "Nathan McGovern"
 external_url: "https://doi.org/10.2143/JIABS.39.0.3200526"
 drive_links:
-  - "https://drive.google.com/file/d/1xoe-w7nBgjhHkDywID9m3QP7DweQY-1z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KmbZCItA1i98fxWL-sgySXz-AGKBgRPf/view?usp=drivesdk"
 course: buddha
 tags:
   - setting

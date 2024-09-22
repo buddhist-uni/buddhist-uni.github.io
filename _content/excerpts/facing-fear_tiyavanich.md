@@ -4,7 +4,7 @@ authors:
   - tiyavanich
 source_url: "https://archive.org/details/ForestRecollectionsWandering"
 drive_links:
-  - "https://drive.google.com/file/d/1beLH_yB1L6siY0Ss8qCEILUPb3cwzhF4/view?usp=sharing"
+  - "https://drive.google.com/file/d/17m3gcg2VuPHOv5TgJl_zfCyFxAtAj107/view?usp=sharing"
 course: animals
 status: featured
 tags:

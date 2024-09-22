@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.007.071"
 external_url: "https://suttacentral.net/an7.71/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1iDiVM2tb0Xs0kvPPskt0ozgSLI21esWs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_FCz65OaQME6_j-_-85Q-bfyKqNaTfXA/view?usp=drivesdk"
 course: thought
 status: featured
 tags:

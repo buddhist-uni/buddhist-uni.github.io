@@ -4,7 +4,7 @@ authors:
   - skilling
 external_url: "https://archive.org/download/aririab-vol-xviii/Circulation%20of%20Artefacts%20Engraved%20with%20%E2%80%98Apram%C4%81da%E2%80%99%20and%20Other%20Mottos%20in%20Southeast%20Asia%20and%20India.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1iPHxU3hMaBHngDmlQ50DkJEp2LXT-2XS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ERmSYvziU0t-RsnS55IVAV7ekT6b-LJG/view?usp=drivesdk"
 course: medieval
 tags:
   - theravada-roots

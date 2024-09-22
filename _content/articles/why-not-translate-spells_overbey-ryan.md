@@ -4,7 +4,7 @@ authors:
   - "Ryan Richard Overbey"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287486&journal_code=JIABS&download=yes"
 drive_links:
-  - "https://drive.google.com/file/d/1a-UzmoLaQoNVezos1Uzp3mAJWtwi3-OR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uAN4K0JzLMVJArlMcsF7H4sFCMGgutWM/view?usp=drivesdk"
 status: featured
 course: mahayana
 tags:

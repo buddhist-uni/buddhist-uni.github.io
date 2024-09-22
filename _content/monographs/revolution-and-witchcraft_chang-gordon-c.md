@@ -4,7 +4,7 @@ authors:
   - "Gordon C. Chang"
 external_url: "https://doi.org/10.1007/978-3-031-17682-1"
 drive_links:
-  - "https://drive.google.com/file/d/1gtNLUeu1nqmzjtIDQuMxOh5PCOLPUr82/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Yov4F3LiAVXeAlPtQTit3DdRig8p5BpE/view?usp=drivesdk"
 course: ideology
 tags:
   - mass-media

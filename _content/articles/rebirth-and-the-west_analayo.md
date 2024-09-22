@@ -4,7 +4,7 @@ authors: [analayo]
 journal: insight
 year: 2019
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/rebirthwest.pdf"
-drive_links: ["https://drive.google.com/file/d/1kB_j4BTqxeQMTE1LNkQeR0b7S-PeiFdk/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/10jW3txK7FPhUxR2c8AHShkYx9eYm6mgv/view?usp=drivesdk"]
 course: philosophy
 tags:
   - rebirth

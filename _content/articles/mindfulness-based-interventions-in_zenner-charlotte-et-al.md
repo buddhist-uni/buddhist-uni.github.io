@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2014.00603/pdf"
 source_url: "https://doi.org/10.3389/fpsyg.2014.00603"
 drive_links:
-  - "https://drive.google.com/file/d/1Jy0fw9UEzbGR64wVvZVeO7NFe826x627/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1J7FzKc8CNiT4oS20z5K0py8tB4TyDo2f/view?usp=drivesdk"
 course: education
 tags:
   - meditation

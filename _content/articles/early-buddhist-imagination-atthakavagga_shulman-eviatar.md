@@ -4,7 +4,7 @@ authors:
   - "Eviatar Shulman"
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078169&act=&sid=&newlayout=1"
 drive_links:
-  - "https://drive.google.com/file/d/1FQqxAMwW7qZXZAg_ZMplrrwuo7bTA_P-/view?usp=sharing"
+  - "https://drive.google.com/file/d/1F-MVBLQO66bNdLO4x6Z4KAZcTsH4CxSs/view?usp=sharing"
 course: canonical-poetry # with prejudice
 status: featured
 tags:

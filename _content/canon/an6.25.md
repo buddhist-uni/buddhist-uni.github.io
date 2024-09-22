@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.025"
 external_url: "https://suttacentral.net/an6.25/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1fxAN68ierCUiqCIF7kUjGjLWcgn5aRWZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VjrCCq6fyMU8YVUIqBAZBGR7MYGBvLuM/view?usp=drivesdk"
 course: meditation
 tags:
   - an

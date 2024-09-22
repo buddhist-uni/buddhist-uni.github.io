@@ -4,7 +4,7 @@ authors:
   - "Richard Madsen"
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/192"
 drive_links:
-  - "https://drive.google.com/file/d/1Trd1MVuPwlrEPe8kytPlgd2QgUJ9QIS2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DpHYll2FHM5TmL8pT8Q8N-R_naAwIz72/view?usp=drivesdk"
 course: engaged
 tags:
   - modern

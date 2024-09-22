@@ -5,7 +5,7 @@ slug: "sn.007.011"
 subcat: poetry
 external_url: "https://suttacentral.net/sn7.11/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1GYqCzw8GnC0nYBKgksD6fLT7fw8qnRBw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1sSDR58s1d3mqjElo6PGEDnjh-lBNnf89/view?usp=drivesdk"
 course: canonical-poetry
 tags:
   - thought

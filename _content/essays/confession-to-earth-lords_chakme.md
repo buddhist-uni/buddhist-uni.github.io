@@ -5,7 +5,7 @@ authors:
 translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/karma-chakme/brief-confession-to-earth-lords#"
 drive_links:
-  - "https://drive.google.com/file/d/1bctLWXV02GpdijjbZpBH4l0uuR4EBs8s/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1hGqm0W7aCMwnykCh9AQHi2zAmzFeQzos/view?usp=drive_link"
 formats: [pdf]
 course: nature
 tags:

@@ -4,7 +4,7 @@ authors:
   - "Chang Chung-Yuan"
 external_url: "http://www.thezensite.com/ZenTeachings/Miscellaneous/TheWorldofShihandLi.htm"
 drive_links:
-  - "https://drive.google.com/file/d/12_NCQ9_x4sPJrJ3Sj0pfG2BqGFuF0zig/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gxQZSQfPy4NA4alvBLm8HyHPRuKxD8tz/view?usp=drivesdk"
 base_value: 0.25
 course: mahayana
 tags:

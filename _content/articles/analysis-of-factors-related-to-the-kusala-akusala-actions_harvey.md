@@ -4,7 +4,7 @@ authors:
   - harvey
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/9281/3142"
 drive_links:
-  - "https://drive.google.com/file/d/122Ge1WGIs6xMhwFEDH-s80TC-otcHcsf/view?usp=sharing"
+  - "https://drive.google.com/file/d/1YKeRPNEherC3VjEHytr86ED1kyfpAWlP/view?usp=sharing"
 course: karma
 tags:
   - ethics

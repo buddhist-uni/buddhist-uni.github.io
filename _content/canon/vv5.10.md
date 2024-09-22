@@ -4,7 +4,7 @@ slug: "vv.5.10"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv5-10/"
 drive_links:
-  - "https://drive.google.com/file/d/1iCulKFr1ntjpKNE6ZC5UDwUoVXBe-hwO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1YoMXM0Tv340B495-UgRVefx7UUpDQ4M2/view?usp=drivesdk"
 course: roots
 tags:
   - vv

@@ -4,7 +4,7 @@ translator: bodhi
 slug: "sn.004.016"
 external_url: "https://suttacentral.net/sn4.16/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1_X-uAbQ8XXVBYgkchkAsJmZSkBnmcIWr/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1itgS-DkPbQj-yqLRfCtOR9He3COLNU3n/view?usp=drivesdk"
 course: pali-canon
 status: featured
 tags:

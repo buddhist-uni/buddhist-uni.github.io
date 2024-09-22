@@ -4,7 +4,7 @@ authors: [bodhi]
 year: 2006
 month: jul
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/18Zsy1XZCPyMtyDTd0jTBnFqy8mdlXxZH/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/12Ap6XKCqq2Q7Wv3B3L_tAPpXAkUZhzVa/view?usp=drivesdk"]
 external_url: "https://web.archive.org/web/20151015063214if_/http://bodhimonastery.org/docs/julyaug06bb.pdf"
 course: monastic-advice
 tags:

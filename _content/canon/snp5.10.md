@@ -5,7 +5,7 @@ reader: sucitto
 external_url: "https://suttareadings.net/audio/snp.5.10.suci.mp3"
 formats: [mp3]
 drive_links:
- - "https://drive.google.com/file/d/1Kf0z8wXg8vIUIE9Y2oYrtyWwbwyuzRBS/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1V9H_d1uqQktdRGTMn1qHkr8ezFkYCAL6/view?usp=drivesdk"
 source_url: "https://suttacentral.net/snp5.10/en/mills"
 year: 2006
 course: nibbana

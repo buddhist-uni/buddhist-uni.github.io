@@ -2,7 +2,7 @@
 title: "Men Explain Things to Me"
 authors: [solnit]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1P0XdNPUOZk7pV5hS-FmRjI-agvGFkkUK/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/13OgCRUlYvY8lEMc-rPb-ZqWGLDf1tJet/view?usp=drivesdk"]
 external_url: "https://www.guernicamag.com/rebecca-solnit-men-explain-things-to-me/"
 year: 2008
 course: ethics

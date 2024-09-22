@@ -6,7 +6,7 @@ subcat: poetry
 translator: "Christina Monson"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/sera-khandro/concise-spiritual-advice"
 drive_links:
-  - "https://drive.google.com/file/d/1k6B2oOGA2ywnj8PoE6ja073woYCXh6Kv/view?usp=sharing"
+  - "https://drive.google.com/file/d/1OQadokzV_bTbgWNxdZLFWx2DV1AtXiMD/view?usp=sharing"
 course: cosmology
 tags:
   - anicca

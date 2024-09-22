@@ -5,7 +5,7 @@ authors:
 external_url: "https://quod.lib.umich.edu/cgi/p/pod/dod-idx/performing-mind-writing-meditation-dogens-fukanzazengi-as.pdf?c=ars;idno=13441566.0046.007;format=pdf"
 source_url: "https://doi.org/10.3998/ars.13441566.0046.007"
 drive_links:
-  - "https://drive.google.com/file/d/1QbCJktG9mcCZKkGW2eJ2caWjxupnQVot/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yRwmscmCK9Y3pe62NpaV80Yon1rgUpt9/view?usp=drivesdk"
 course: east-asian
 status: featured
 tags:

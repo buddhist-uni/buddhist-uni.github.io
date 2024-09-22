@@ -19,7 +19,7 @@ This textbook, [following up](/content/booklets/foundations_kieschnick) on the [
 
 Note that the answer key for the book can be found [on Google Drive, here](https://drive.google.com/file/d/1VK-4QzMhJjcTRWnrqc97_fednoHAC1U5/view?usp=drivesdk){:target="_blank"ga-event-value="2"} and that there are a few supplemental volumes to this one, covering special topics:
 
-- [The Mahayana and Esoteric Texts](https://drive.google.com/drive/folders/1eikJ8065YqEpgda-d9h6_tHqkatWnjBb){:target="_blank" ga-event-value="4"}
-- [Chinese Epigraphy](https://drive.google.com/drive/folders/1eisxzhUiVuYY_1NoFkUIiUMFlpWQ0Eyw){:target="_blank" ga-event-value="4"} 
+- [The Mahayana and Esoteric Texts](https://drive.google.com/drive/folders/1bqsrVsDAQRkQQAwhTqAOxrEK9xKfGbOm){:target="_blank" ga-event-value="4"}
+- [Chinese Epigraphy](https://drive.google.com/drive/folders/1kiOO0zyiOyfMF0LypJ-tsaxGTbZPh6cT){:target="_blank" ga-event-value="4"} 
 
 All of the above can be found on [the author's website](https://religiousstudies.stanford.edu/primer-chinese-buddhist-writings){:target="_blank" ga-event-value="0.5"}.

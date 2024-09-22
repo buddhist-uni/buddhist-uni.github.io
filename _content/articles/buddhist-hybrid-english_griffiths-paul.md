@@ -2,7 +2,7 @@
 title: "Buddhist Hybrid English: Some Notes on Philology and Hermeneutics for Buddhologists"
 authors: ["Paul J. Griffiths"]
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1FLRuargpFar8g0RnNuDA1vcX8aHJ72wW/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1sgrT3dmMIgc8nG7YKoxqHorG65EpbzGS/view?usp=drivesdk"]
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8546/2453"
 journal: jiabs
 year: 1981

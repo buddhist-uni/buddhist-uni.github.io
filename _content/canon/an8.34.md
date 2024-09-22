@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.034"
 external_url: "https://suttacentral.net/an8.34/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1KlmhFzxjqI-B6aMMniJAhLFDKkiM9ONM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1g_KUefZKbXrFENd9iT5RldSUnMrH9mP_/view?usp=drivesdk"
 course: path
 tags:
   - dana

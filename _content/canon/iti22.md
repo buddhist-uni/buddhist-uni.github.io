@@ -4,7 +4,7 @@ translator: sujato
 slug: "iti022"
 external_url: "https://suttacentral.net/iti22/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1YFJWlPeAFrPOFI1XopeOrSFUx_zWRmyR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dxruebtl2_h7--FiX6l9_VrIZo_yxxN0/view?usp=drivesdk"
 course: karma
 status: featured
 tags:

@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.036"
 external_url: "https://suttacentral.net/an3.36/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1Ie0HCpawn9XYVPR45pnHZxztuCR1EGbo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-v1RgxM7fJ9eUXPQkaarzqVOSIASRIc_/view?usp=drivesdk"
 course: cosmology
 status: featured
 tags:

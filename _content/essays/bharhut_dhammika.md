@@ -1,7 +1,7 @@
 ---
 title: "The Majesty and Mystery of Bharhut"
 authors: [dhammika]
-drive_links: ["https://drive.google.com/file/d/1AmUu8wh9FNlXIQoy_hRI6wBTEy3tXJgh/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1-cK44rDkuYFzCHQbfuOkSnlZKm1bpdSd/view?usp=drivesdk"]
 external_url: "https://budblooms.org/2020/05/11/the-majesty-and-mystery-of-bharhut-2/"
 year: 2012
 tags:

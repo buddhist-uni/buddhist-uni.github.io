@@ -4,7 +4,7 @@ authors:
   - "Carl Hooper"
 external_url: "https://www.thezensite.com/ZenEssays/Philosophical/Koan_Zen_and_Wittgenstein.html"
 drive_links:
-  - "https://drive.google.com/file/d/12PwjdzveKzQyUbY0zJVoSjTgSSG_dOyw/view?usp=sharing"
+  - "https://drive.google.com/file/d/13gZyb6B6Qx5gTdOXSjD6nH-WOu6RHrjP/view?usp=sharing"
 course: dialogue
 tags:
   - koan

@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.069"
 external_url: "https://suttacentral.net/an8.69/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1cWqZWgxmwuDRcJVuwy3mdZSYsFlUsmcW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hF4907lz6WGroyLIzFAhCHH9iTK4dmQ4/view?usp=drivesdk"
 course: buddha
 tags:
   - speech

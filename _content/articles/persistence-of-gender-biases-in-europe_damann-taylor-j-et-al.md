@@ -6,7 +6,7 @@ authors:
   - "Margit Tavits"
 external_url: "https://doi.org/10.1073/pnas.2213266120"
 drive_links:
-  - "https://drive.google.com/file/d/1bQz1-gqR84OXLcwitv7LzCuOgfKHLvhx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X-ozxiS40o2ymdSLzh5xHcw3nmaOk4vE/view?usp=drivesdk"
 course: time
 tags:
   - culture

@@ -4,7 +4,7 @@ year: 2019
 month: jan
 external_url: "https://readingfaithfully.org/the-king-in-the-forest-an-anthology-of-discourses-given-to-king-pasenadi/"
 formats: [epub]
-drive_links: ["https://drive.google.com/file/d/1NFxuDsrOwTEoAlPHyKDlTPF30Lm6Z6iY/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1FbbqQ8mfs0xvn1JavgckDEpU6KSZDrJ8/view?usp=drivesdk"]
 tags:
   - characters
   - lay

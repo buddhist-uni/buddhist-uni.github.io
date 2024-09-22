@@ -4,7 +4,7 @@ translator: geoff
 slug: "an.003.084"
 external_url: "https://suttacentral.net/an3.84/en/thanissaro"
 drive_links:
-  - "https://drive.google.com/file/d/1jo4ThXCW0L6yaXVjXSzAmxpe9bnNigqm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16_K52BedfWdsHL380P0YwfOxzvO7wV6b/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - an

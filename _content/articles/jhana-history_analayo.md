@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/briefhistoryjhana.pdf"
 source_url: "https://doi.org/10.1007/s12671-019-01268-7"
 drive_links:
-  - "https://drive.google.com/file/d/1sYiHruMCJJPlXLqg_8uhjGYCzzeX2AF4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14Cfs64dW64tFc4ix6r25cBEHWQYzAb-z/view?usp=drivesdk"
 course: samadhi
 tags:
   - roots

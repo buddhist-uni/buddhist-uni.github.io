@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.009.025"
 external_url: "https://suttacentral.net/an9.25/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1gYlBSZn9EqENgBFpnd1h4MmFDmcVVnCE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JpZZn9wnS7k3-5YAo6xbzYXcxdadF1TD/view?usp=drivesdk"
 course: nibbana
 tags:
   - view

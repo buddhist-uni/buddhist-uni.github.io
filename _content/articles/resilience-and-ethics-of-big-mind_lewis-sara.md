@@ -7,7 +7,7 @@ external_url: "https://zenodo.org/record/4727585/files/309-1013-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1307"
 doi: "https://doi.org/10.5281/zenodo.4727585"
 drive_links:
-  - "https://drive.google.com/file/d/17XzcKwS5LabAH0jM5H5Baz8cjtDkQbbL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19W4ZcnB7yDVzFQ7Lssy0okKEXlbGWOlk/view?usp=drivesdk"
 course: problems
 tags:
   - cosmology

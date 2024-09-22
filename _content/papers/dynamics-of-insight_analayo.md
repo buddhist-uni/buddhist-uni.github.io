@@ -6,7 +6,7 @@ editor: "Zhuang Guobin 莊國彬"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/dynamicsinsight.pdf"
 alternate_url: "https://discourse.suttacentral.net/uploads/short-url/6X9pSzJdY0a1j938CR7niIu4AlW.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ujH8Rh5BKhy25nWkqUREFbNR7gt7Tp1a/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/108tgdr0mjiiAcgSDqh0uuLxaLGQXrb3-/view?usp=drivesdk"
 course: vipassana
 tags:
   - theravada

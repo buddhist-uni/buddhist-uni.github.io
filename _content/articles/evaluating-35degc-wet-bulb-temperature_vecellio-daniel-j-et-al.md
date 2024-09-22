@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8799385"
 source_url: "https://doi.org/10.1152/japplphysiol.00738.2021"
 drive_links:
-  - "https://drive.google.com/file/d/1bd6llo8qJ83CgOqn0aHkh9m2ZzVKTUcJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qaHIt5kaRurClXPrR0hqSodGAxDtlSP8/view?usp=drivesdk"
 course: body
 tags:
   - climate-change

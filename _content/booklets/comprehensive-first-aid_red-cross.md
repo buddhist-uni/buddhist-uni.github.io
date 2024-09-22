@@ -4,7 +4,7 @@ authors:
   - "The Canadian Red Cross"
 external_url: "https://web.archive.org/web/20240514072844if_/https://www.redcross.ca/crc/documents/comprehensive_guide_for_firstaidcpr_en.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1QILETNGFccWogAmewRAZ8LdvPxUDwR-_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DOmtu0QCp3BcuJ72nMYTqU42yvH7hgv2/view?usp=drivesdk"
 course: body
 status: featured
 tags:

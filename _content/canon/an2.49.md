@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.002.049"
 external_url: "https://suttacentral.net/an2.49/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1PoECzbT9ml8Po4xUj9DwwUaPnuTie1AU/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JKkAOlhRaa-rDnIu2NDJx99fOaAcPk4n/view?usp=drivesdk"
 course: time
 tags:
   - social

@@ -5,7 +5,7 @@ authors:
 external_url: "https://eprints.soas.ac.uk/34343/1/AP52-2%20MURPHY.pdf"
 source_url: "https://doi.org/10.1353/asi.2013.0017"
 drive_links:
-  - "https://drive.google.com/file/d/1IwcO15_gZfa7cVuWfVKrceDNCag-WCi9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iFGVOuceIDgvCdbKqEdDrr-E7k2KFOVs/view?usp=drivesdk"
 course: theravada-roots
 tags:
   - medieval

@@ -5,7 +5,7 @@ authors:
   - "Donna McCarthy"
 external_url: "https://present.bhikkhuni.net/2600-year-journey/"
 drive_links:
-  - "https://drive.google.com/file/d/1vHTGwtd4Z0-sGM7jMVk8kPkzDdps6kYj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1aWVU_6P8VuOn-1pcP-XUmfhENnq4cs9Q/view?usp=drivesdk"
 course: nuns
 status: featured
 tags:

@@ -5,7 +5,7 @@ authors:
 editor: "Sean Illing"
 external_url: "https://www.vox.com/world/2019/10/24/20908223/trump-russia-fake-news-propaganda-peter-pomerantsev"
 drive_links:
-  - "https://drive.google.com/file/d/1K7slIWxoe6CFCz6C2I-t5rx0QueQyMWp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SEBOAhnjxReOHT9NjES-lyCIfOfQqaXN/view?usp=drivesdk"
 course: communication
 tags:
   - russia

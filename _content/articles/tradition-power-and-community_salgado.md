@@ -5,7 +5,7 @@ journal: jbe
 year: 2017
 volume: 24
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2017/09/Salgado-Tradition-final.pdf"
-drive_links: ["https://drive.google.com/file/d/1aRR_TE1jUZcoX1lPaJGPKv-Vd7svu8z0/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Acv8tI_tdMIVww2nka4xsNxnIpqrrOY1/view?usp=drivesdk"]
 course: monastic
 tags:
   - sri-lankan

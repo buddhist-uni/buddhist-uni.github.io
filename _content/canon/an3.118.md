@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.118"
 external_url: "https://suttacentral.net/an3.118/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1AMFIZqM3tGkPH6mDzlQGUXopsRHahW5s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gRlOSujtOH0nH-UDCjfKdCevKqcJXY1m/view?usp=drivesdk"
 course: rebirth
 tags:
   - imagery

@@ -4,8 +4,8 @@ authors:
   - "Chris Allen"
 external_url: "https://pdx.pressbooks.pub/thebalanceofpersonality/"
 drive_links:
-  - "https://drive.google.com/file/d/10bh4_Pk005LMx727GB4mL_m34B-vwz72/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Pk5hHGH7HXTew_RDRfDLzuY1pyGfXVb9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1SHhj8AgtCiq_SSsb1Mi8AXHd4BXsHf2Y/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_N4ow7HgSuk49YdfdDdkRiOSYBq6ycz3/view?usp=drivesdk"
 course: intellect
 tags:
   - psychology

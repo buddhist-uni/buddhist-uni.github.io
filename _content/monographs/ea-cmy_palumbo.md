@@ -9,7 +9,7 @@ publisher: dharmadrum
 course: ea
 tags:
   - east-asian-roots
-drive_links: ["https://drive.google.com/file/d/1OsGaev0q9S-JhJkOvS1ItCHdP5kIQqF9/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1gmlCWvSSeiuO2f8Jsa_H7HplAhrcUafp/view?usp=drivesdk"]
 external_url: "https://agamaresearch.dila.edu.tw/wp-content/uploads/2013/10/Palumbo-2013.pdf"
 pages: 364
 ---

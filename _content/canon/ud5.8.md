@@ -5,7 +5,7 @@ slug: "ud5.8"
 source_url: "https://accesstoinsight.org/tipitaka/kn/ud/ud.5.08.than.html"
 external_url: "https://www.dhammatalks.org/suttas/KN/Ud/ud5_8.html"
 drive_links:
-  - "https://drive.google.com/file/d/1kdSpEDoD-b3Y4trL-B6ijaj2GAUaFA8Q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/12kLs0e4T1L9V3iuNchoylmBqLe-ZhGdl/view?usp=drivesdk"
 course: pali-canon
 tags:
   - characters

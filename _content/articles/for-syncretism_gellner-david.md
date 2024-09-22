@@ -5,7 +5,7 @@ authors:
 external_url: "https://ora.ox.ac.uk/objects/uuid:41b83d35-b0f1-468b-8923-ec863129ce35/download_file?safe_filename=For%2Bsyncretism.%2BThe%2Bposition%2Bof%2BBudhism%2Bin%2BNepal%2Band%2BJapan%2Bcompared&file_format=application%2Fpdf&type_of_work=Journal+article"
 source_url: "https://doi.org/10.1111/j.1469-8676.1997.tb00375.x"
 drive_links:
-  - "https://drive.google.com/file/d/1kIJcMBU9gBXAm0DqelvJem8UzWfn86tZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yevCwShxJpY5znSlpE1DAZAOUUnJ5rri/view?usp=drivesdk"
 course: roots
 tags:
   - mahayana

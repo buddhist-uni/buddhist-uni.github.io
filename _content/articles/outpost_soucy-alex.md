@@ -4,7 +4,7 @@ authors:
   - "Alexander Soucy"
 external_url: "https://thecjbs.org/wp-content/uploads/2018/02/Outpost-Buddhism-Vietnamese-Buddhists-in-Halifax_Soucy.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14U171Won5--9ysiysc_ml5fhgMX_m_Iv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14Mkxr4BIyMtxzzc8xj9y14h7ioAg7TzE/view?usp=drivesdk"
 course: west
 tags:
   - canadian

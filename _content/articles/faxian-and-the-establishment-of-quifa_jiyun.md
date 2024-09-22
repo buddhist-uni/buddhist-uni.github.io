@@ -4,7 +4,7 @@ authors:
   - "Ji Yun 紀贇"
 external_url: "https://dx.doi.org/10.15239/hijbs.02.01.03"
 drive_links:
-  - "https://drive.google.com/file/d/1VLs4KeM__AN9L_x-sBsj1t49pax7eV8e/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1stcZTu1C-O8f7MoBbBb8MZIuiw3ZMuao/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - faxian

@@ -4,7 +4,7 @@ translator: ireland
 slug: "iti001"
 external_url: "https://suttacentral.net/iti1/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1POJruVZpBf4lzaUY6io3gNCXRsx07ygY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1M1yuhUh80E0Hx8fHg12d9Q5xJ-tc-CNT/view?usp=drivesdk"
 course: hindrances
 tags:
   - stages

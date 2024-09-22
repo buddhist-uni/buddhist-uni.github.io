@@ -5,7 +5,7 @@ authors:
   - "Jaime Kucinskas"
 external_url: "https://www.mindfulcranks.com/podcast-episodes/2019/2/12/episode-14-jaime-kucinskas-the-mindful-elite"
 drive_links:
-  - "https://drive.google.com/file/d/1xeg3OidK_26hEH0y0EYBG1fRAok8oPfD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1u_4nktiESIFxmbSvJ5Vqb3fDKMNlqDOn/view?usp=drivesdk"
 course: engaged
 tags:
   - selling

@@ -4,7 +4,7 @@ authors:
   - "Haidy Geismar"
 from_book: impermanence
 drive_links:
-  - "https://drive.google.com/file/d/1ijQ8ZPr0c5dS_l6aYIDg6nchNJrQznfl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gnCtZyGs65OiY8H3UCytnEYWbNa4wQjZ/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Caring%20for%20the%20social%20(in%20museums)%20-%20Haidy%20Geismar.pdf"
 status: featured

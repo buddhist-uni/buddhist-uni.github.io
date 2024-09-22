@@ -4,7 +4,7 @@ authors:
   - "Ajahn Tong Sirimangalo"
 external_url: "https://www.sirimangalo.org/text/vipassana-meditation/"
 drive_links:
-  - "https://drive.google.com/file/d/1Y7JJMc7ObFrHM-hZQkGKhDciIK7XBpnJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-YwltbDFGUNHZGHxIxPBzYnaA6vlgzpu/view?usp=drivesdk"
 course: vipassana
 year: 2010 # possibly earlier
 pages: 5

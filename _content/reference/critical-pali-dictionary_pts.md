@@ -5,7 +5,7 @@ authors:
 external_url: "https://cpd.uni-koeln.de/search"
 source_url: "https://archive.org/details/trenckner_v_andersen_d_smith_h_ovhinuber_a_critical_pali_dic"
 hidden_links:
-  - "https://drive.google.com/file/d/1qaPM3tolP5ZUl5K4VKDrmNc2L4jvq-IA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JGY7E1WCMv_MAByZb-ew9zfJ6BVwSjUI/view?usp=drivesdk"
 course: pali-dictionaries
 year: 1925
 publisher: pts

@@ -4,7 +4,7 @@ authors:
   - norman
 external_url: "https://archive.org/compress/norman-lakkhana-dn30-1-4/formats=ADDITIONAL%20TEXT%20PDF&file=/norman-lakkhana-dn30-1-4.zip"
 drive_links:
-  - "https://drive.google.com/file/d/1wKSlTPNxx8SbVSX6wKigh4tsx_sDluGx/view?usp=drive_link"
+  - "https://drive.google.com/file/d/18ntfBml7QWoz-5F6E63X9P3lTo2QIaUG/view?usp=drive_link"
 course: canonical-poetry
 tags:
   - pali-language-research

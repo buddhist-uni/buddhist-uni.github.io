@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2020/04/04/erotica-in-the-pali-tipitaka/"
 drive_links:
-  - "https://drive.google.com/file/d/1a7m_UW8XiaCIxYoJXr3eQSrLSzupICbV/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1G_PZuD46Dl8KlMakAP6Smz_mgOMCBzSL/view?usp=drive_link"
 course: canonical-poetry
 tags:
   - pali-literature

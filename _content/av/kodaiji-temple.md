@@ -6,7 +6,7 @@ subcat: film
 editor: "Tetsujiro Suita"
 external_url: "https://youtu.be/rLjolJ4mTk0"
 drive_links:
-  - "https://drive.google.com/file/d/1xI5XakkhCeBYOektmUmrELljCi--Vtqw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1K9fgq9lFLfkc7IqaELl74Kvxua_gY8T5/view?usp=drivesdk"
 formats: [mp4]
 course: east-asian
 tags:

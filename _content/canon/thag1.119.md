@@ -5,7 +5,7 @@ slug: "thag.01.119"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.119/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1cNOrqdMpUpESDjUS3WKaMPf9r4JzcWCp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1geDZnsZFdlhihOKqSyU_rT0J2QCap4CN/view?usp=drivesdk"
 course: pali-language
 status: featured
 tags: # when a poetry in pali class move there?

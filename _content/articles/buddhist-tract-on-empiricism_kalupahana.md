@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.andrew.cmu.edu/user/kk3n/80-300/kalupahana1969.pdf"
 source_url: "https://doi.org/10.2307/1398098"
 drive_links:
-  - "https://drive.google.com/file/d/1_aAs9S9NbgQmgPq8hm5OOi86onJA6zJz/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VUFeM9Txxv5BjEAK1o21Bjh-Sv32BuBI/view?usp=drivesdk"
 course: epistemology
 tags:
   - agama

@@ -5,7 +5,7 @@ slug: "snp.5.06"
 subcat: poetry
 external_url: "https://suttacentral.net/snp5.6/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1-GG6eHz65Mhmst09iS7hQzWXBiZCa7R5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PzRISEAZfuB-LLhYtej5QFQF8dM_0qlS/view?usp=drivesdk"
 course: vipassana
 tags:
   - stages

@@ -6,8 +6,8 @@ editor: bodhi
 external_url: "https://www.accesstoinsight.org/lib/authors/nanamoli/wheel390.html"
 source_url: "https://www.bps.lk/library-search-select.php?id=wh390"
 drive_links:
-  - "https://drive.google.com/file/d/1quWzdfoqsj95p8TcJ0yDVnEuXhZOklOy/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1eho3UP1Q8rlC_7_7HtnDBucjwefpfh2i/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TqorZ6HPZEGXgjE5IqY47D_vAj1dWW0v/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hRb3OklE9Eif1Y4ng0LlwNFmPLEObnMl/view?usp=drivesdk"
 course: philosophy
 tags:
   - function

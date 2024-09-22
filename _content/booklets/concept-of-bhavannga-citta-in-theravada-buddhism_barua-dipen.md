@@ -5,7 +5,7 @@ authors:
   - "Dipen Barua"
 external_url: "https://hub.hku.hk/handle/10722/298912"
 drive_links:
-  - "https://drive.google.com/file/d/10h972bbVGTlgAhcpjgw87gWGNHr5nKQe/view?usp=sharing"
+  - "https://drive.google.com/file/d/1NPR4gG64YBzWxyxMBYTGRRW0MvDQWX8Z/view?usp=sharing"
 course: abhidhamma
 tags:
   - rebirth

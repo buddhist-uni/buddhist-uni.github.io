@@ -3,7 +3,7 @@ title: "The Sixth Patriarch’s Dharma Jewel Platform Sutra: A New Translation w
 translator: "the Buddhist Text Translation Society"
 external_url: "https://www.thezensite.com/ZenTeachings/Translations/PlatformSutra_DharmaJewel.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1p-G8haEV-LEw6kFXkAca6mWgCQC9eIah/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1mV4T41ZTv77m6Ly80SSjI8jzrGpdSCTw/view?usp=drivesdk"
 course: east-asian
 tags:
   - mahayana-canon

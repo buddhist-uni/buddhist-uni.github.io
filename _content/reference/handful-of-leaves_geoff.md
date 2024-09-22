@@ -6,8 +6,8 @@ year: 2003
 month: mar
 formats: [epub, mobi]
 drive_links:
-  - "https://drive.google.com/file/d/1n5tmHhJgAqXTIBRS5ivV8ww6uYkpro-j/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Srh0y6X_kTGqhnAhhLCHA7lpM1rulb_Q/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qSjfQr-2JinBw2TS5-wjjKtXsL476bo4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1pwDb1C0lPHsID5fziZQguQwig3An1rXd/view?usp=drivesdk"
 course: sutta
 olid: OL23998167M
 tags:

@@ -6,7 +6,7 @@ translator: "Chung Tai Translation Committee"
 external_url: "https://www.thezensite.com/ZenTeachings/Translations/Essence-of-Mahayana-Practice.pdf"
 source_url: "https://buddhagate.org/the-essence-of-mahayana-practice/"
 drive_links:
-  - "https://drive.google.com/file/d/1oqhf31ieLBPtNeGMPBm5AriUFlOEFnRP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13SPiUuVMwLMuU47fOtW-Y44M7xK_bXF0/view?usp=drivesdk"
 course: east-asian
 tags:
   - roots

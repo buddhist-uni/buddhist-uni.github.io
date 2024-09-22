@@ -4,8 +4,8 @@ authors:
   - "Mikael Hård"
 external_url: "https://doi.org/10.1007/978-3-031-22813-1"
 drive_links:
-  - "https://drive.google.com/file/d/1YoEecmT09K-CmyAa33szKRBkVtRc8MPU/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1-NeajJWrqSI0gcoYMcByriI7q0E_gJxA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16ZmoQ1dqjopwHscOwEOukM2zyJSGZIgp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WAdPr8K4bn6zXSCFtWnUVfMyxZSdSDsX/view?usp=drivesdk"
 course: wider # maybe down to things?
 tags:
   - present

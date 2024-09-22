@@ -4,7 +4,7 @@ translator: "Ven. Kiribathgoda Gnanananda"
 slug: "iti044"
 external_url: "https://suttafriends.org/sutta/itv44"
 drive_links:
-  - "https://drive.google.com/file/d/1oyr9Sh5TtkruZKhHejffT3vytmUb37fX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1nxUvppwcLJCMQUSavUCKnMC_BeF8UP5d/view?usp=drivesdk"
 course: nibbana
 status: featured
 tags:

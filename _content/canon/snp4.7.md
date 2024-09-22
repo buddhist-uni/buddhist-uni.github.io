@@ -5,7 +5,7 @@ slug: "snp.4.07"
 subcat: poetry
 external_url: "https://suttacentral.net/snp4.7/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/17s-1_-PsbVQpbpkA_EJo4C-JTNRq_tr9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uGyPuTI_yEnyUyz6lTarrNsLOIWeoP3m/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - monastic

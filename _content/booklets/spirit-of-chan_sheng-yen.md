@@ -6,7 +6,7 @@ editor: "Guo Gu"
 external_url: "https://chancenter.org/download/free-books/In-the-Spirit-of-Chan.pdf"
 drive_links:
   - "https://play.google.com/store/books/details?id=0JdABAAAQBAJ"
-  - "https://drive.google.com/file/d/1g2iRgRTqI37Hni7ZsFGmrx4xa9F25S2x/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xWS5CxjmK2cZ5R16UOGbbvh_hr2avaGo/view?usp=drivesdk"
 formats: [GBook, pdf]
 course: east-asian
 tags:

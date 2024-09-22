@@ -4,7 +4,7 @@ authors: [jayasaro]
 year: 2017
 month: mar
 drive_links:
-  - "https://drive.google.com/file/d/1otYi3Tx5xE8W6ZmCJmgEm7697dqewDop/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vIdGHO6PRXEK_UqtDAkSkXeA5rkuJ_ul/view?usp=drivesdk"
 external_url: "https://www.jayasaro.panyaprateep.org/uploads/media/1/dhamma_talks/files/2560/2560.03.05%20Wise%20shame,%20Wise%20fear.mp3"
 course: path
 tags:

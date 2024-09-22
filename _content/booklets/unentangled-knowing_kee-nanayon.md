@@ -6,7 +6,7 @@ translator: geoff
 external_url: "https://www.bps.lk/olib/bp/bp515s_Kee-Nanayon_An-Unentangled-Knowing.pdf"
 source_url: "https://www.dhammatalks.org/books/UnentangledKnowing/Section0004.html"
 drive_links:
-  - "https://drive.google.com/file/d/1AheW9ANyFbmeWdbmUQKk9im32h9uACMD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NQweVAk1mL0qGwZuGAYjFxqtE-vHa78-/view?usp=drivesdk"
 course: thai-forest
 tags:
   - monastic-advice

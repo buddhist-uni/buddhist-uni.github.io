@@ -4,7 +4,7 @@ authors:
   - "Gary Gach"
 external_url: "https://tricycle.org/trikedaily/walk-thich-nhat-hanh/"
 drive_links: 
-  - "https://drive.google.com/file/d/1ohEci1fwu4DKrwCE9f64EmBw95mxmhZ9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1A9Y2haiW9g_WrfthGp4w1ikgOFmin9BH/view?usp=drivesdk"
 course: meditation
 tags:
   - walking

@@ -5,7 +5,7 @@ slug: "thag.05.05"
 subcat: poetry
 external_url: "https://suttacentral.net/thag5.5/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1U5ssNhvekNbvFUF5Njjc2tH2pHoUiyz4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hSclTUAEvWZa0nYB7SlzuvXsXgOvidQP/view?usp=drivesdk"
 course: nuns
 tags:
   - thag

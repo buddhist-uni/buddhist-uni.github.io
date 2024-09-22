@@ -4,7 +4,7 @@ authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/English-Texts/Foremost-Elder-Nuns/"
 drive_links:
-  - "https://drive.google.com/file/d/1fR0IQ9VELj33hYhDXALfEeMg0g-C6bPN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1a9X3h6psFPwZlID4R44_jKFA13WKIQ28/view?usp=drivesdk"
 course: nuns
 tags:
   - characters

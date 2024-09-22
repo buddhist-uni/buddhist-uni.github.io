@@ -4,7 +4,7 @@ authors:
   - "Rupali Mokashi"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/06/unveiling-bhikkhunis.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/14oOod50C2jvAI1oTDHNHF-DqN3MvzpOP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jCwVwVRitit129a1d8JoZem_2Cz1RGMc/view?usp=drivesdk"
 course: nuns
 tags:
   - indian

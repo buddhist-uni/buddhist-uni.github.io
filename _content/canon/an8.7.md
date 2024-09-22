@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.007"
 external_url: "https://suttacentral.net/an8.7/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/1DdvvC3HKHez_jz1FyTDOKXzFN5kOtZhp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18cn0zTTnc5zgiaOyC3gHAcj8OooE2qIZ/view?usp=drivesdk"
 course: thought
 status: featured
 tags:

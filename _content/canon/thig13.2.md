@@ -5,7 +5,7 @@ slug: "thig.13.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thig13.2/en/soma"
 drive_links:
-  - "https://drive.google.com/file/d/1lfyXv51O-Xoil_AKFTEguLypFB9wn8d_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CuNj6krCazw4ZDTWM0mTsOgIFNUCTSBe/view?usp=drivesdk"
 course: sangha
 status: featured
 tags:

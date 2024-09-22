@@ -4,7 +4,7 @@ authors:
   - "James Rowe"
 external_url: "https://www.opendemocracy.net/en/transformation/zen-and-art-of-social-movement-maintenance/"
 drive_links:
-  - "https://drive.google.com/file/d/1cNVsha9RIzkLEiR0jevhDcjge-THFkFm/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yXY_FI47eWoYh0ta_p4Q_UUBBHAulGGS/view?usp=drivesdk"
 course: engaged
 tags:
   - activism

@@ -3,7 +3,7 @@ title: "Realms of Rebirth Taught by the Buddha"
 authors: ["Reading Faithfully"]
 external_url: "https://readingfaithfully.org/realms-of-rebirth-taught-by-the-buddha/"
 drive_links:
-  - "https://drive.google.com/file/d/1DEStkYJjfCqkYcC4yrVvjKkIKWKEcihK/view?usp=sharing"
+  - "https://drive.google.com/file/d/166C0siT7fQWZyJgNCMmO-XTrhnIQw6Tc/view?usp=sharing"
 course: cosmology
 tags:
   - philosophy

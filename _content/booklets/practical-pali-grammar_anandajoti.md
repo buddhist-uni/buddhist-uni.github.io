@@ -4,7 +4,7 @@ authors:
   - anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Textual-Studies/Grammar/Guide-to-Pali-Grammar.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1vSf9Yig8hoq5k5BALNFRBJkVWoTtRZaE/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gjNiU-fCBY4Nk-BkaGjUwZOO-nKIEKhc/view?usp=drivesdk"
 course: pali-language
 tags:
   - pali-grammar

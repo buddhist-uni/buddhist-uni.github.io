@@ -4,7 +4,7 @@ authors:
   - "Jeffrey C. Levy"
 external_url: "https://pressbooks.bccampus.ca/thescienceofhumanpotential/"
 drive_links:
-  - "https://drive.google.com/file/d/1d40_qq1DxwqqnKZh220WtmYiyGrU8wrA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VCZp6nkjtUzmOjvyAcHcGyF89gCb2Jlc/view?usp=drivesdk"
 course: inner
 tags:
   - psychology

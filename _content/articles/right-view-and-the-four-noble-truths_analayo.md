@@ -5,7 +5,7 @@ journal: cjbs
 year: 2011
 month: nov
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/right-view.pdf"
-drive_links: ["https://drive.google.com/file/d/1YIwAxrsnn8tyxQ0sHbiIRj92pVIixq7P/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1Vhpgi84QTTW-vGGs464asNF6giv2LZ2f/view?usp=drivesdk"]
 course: philosophy
 tags:
   - function

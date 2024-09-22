@@ -6,7 +6,7 @@ source_url: "https://www.bps.lk/olib/wh/wh162_Jayatilleke_Facets-of-Buddhist-Tho
 file_links:
   - "exclusive_01/The%20Buddhist%20Conception%20of%20Truth%20-%20Jayatilleke.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Z8203KUy39yW0bbHRexsP3416ntS4AI2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TvCqV-GJ7DWXVdvQa48hQ_oSWBOimqED/view?usp=drivesdk"
 course: philosophy
 tags:
   - epistemology

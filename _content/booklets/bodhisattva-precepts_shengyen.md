@@ -5,8 +5,8 @@ external_url: "https://www.shengyen.org/freebook/pdf/The_Bodhisattva_Precepts_Di
 formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=iZhABAAAQBAJ"
-  - "https://drive.google.com/file/d/1niEjJ0Nsj38l5DCyG_YKJZqzcNiSxDOD/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/13JWAy3S25B5Qh-5c0DtWKJzTCZtnUCzv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fKsgBJ3uJnDLtwe0V6dqv_7YnVT5c02B/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1butT-MgVl6Hk78_gXFie2AhOadsJhxze/view?usp=drivesdk"
 olid: OL32173773M
 month: jul
 year: 2005

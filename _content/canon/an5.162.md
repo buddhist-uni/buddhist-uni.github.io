@@ -4,7 +4,7 @@ slug: "an.005.162"
 external_url: "https://suttacentral.net/an5.162/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1UeWS6HOjO45kZZZCG3yMMLYoR3XmxRjr/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1WXk9uOlPKANlMqxuflGHI2R97Zzw7QI6/view?usp=drivesdk"]
 course: problems
 tags:
   - an

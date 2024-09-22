@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.133"
 external_url: "https://suttacentral.net/an3.133/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1QVzQhB3DyhUtOhvV3faG6yO3N1w81VgP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/16-Sbd0lRrF3gCr5-XS5a1fZjLukomQgo/view?usp=drivesdk"
 course: imagery
 status: featured
 tags:

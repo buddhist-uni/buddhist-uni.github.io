@@ -4,7 +4,7 @@ authors: [sujato]
 file_links:
   - "exclusive_01/Let%20There%20be%20Conflicts%20(2008-06-27)%20-%20Bhante%20Sujato.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1BHjDjKbunDFU_RYSSNhyu-Q0rjJRAcXp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Sxh8CKlV5bbxo04Z5dEGdFP5_9t8zMHE/view?usp=drivesdk"
 course: problems
 tags:
   - ideology

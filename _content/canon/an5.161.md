@@ -4,7 +4,7 @@ slug: "an.005.161"
 external_url: "https://suttacentral.net/an5.161/en/sujato"
 translator: sujato
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1mFTPdj_GrN63avW7mmHeOZBnJ3atH7YV"]
+drive_links: ["https://drive.google.com/file/d/1WBw9YXTqntcl5wGWg14TNXvS80E5u6mN"]
 course: imagery
 tags:
   - an

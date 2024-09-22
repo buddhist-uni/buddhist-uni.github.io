@@ -1,7 +1,7 @@
 ---
 title: "Rebirth and the In-between State in Early Buddhism"
 authors: [sujato]
-drive_links: ["https://drive.google.com/file/d/1XaDGMXhuESV6gVNSHz9cQO9QxT69eNou/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1l2UyA8UhhysS2QguIyES6oO-h3_qWJzR/view?usp=drivesdk"]
 external_url: "https://santifm.org/santipada/wp-content/uploads/2010/05/RebirthandInbetweenState.pdf"
 year: 2008
 course: rebirth

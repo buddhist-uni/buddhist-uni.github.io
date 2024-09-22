@@ -4,7 +4,7 @@ slug: "mn007"
 translator: sujato
 external_url: "https://suttacentral.net/mn7/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1tPIdGR5EkOhmt5YsC1I_7zUP1LonQRTH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XS2OI5fKZJ6YLV-xLqUi7J7hBMp7po5s/view?usp=drivesdk"
 course: path
 tags:
   - mn

@@ -5,8 +5,8 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh269_Nyanamoli_Exposition-of-Non-Conflict--Aranavibhanga-Sutta.html"
 formats: [pdf, epub]
 drive_links:
-  - "https://drive.google.com/file/d/149oxcYBrqNf1JBBUpoa1wcAYQGk-D1xr/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Hr0j3hGkWcTlE56ukifyH77ysF3PtCzP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EuwnrT_pP9Y8D5_G0Z7OxaaepzdVPjhu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1brQhpIjn0A7bFwbc6JhrEIjQcBdQn8bk/view?usp=drivesdk"
 course: ethics
 status: featured
 tags:

@@ -7,8 +7,8 @@ year: 2014
 external_url: "https://archive.org/details/ven-hsing-bao-addresses-fgbmr-2014_202103"
 formats: [pdf, wma]
 drive_links:
-  - "https://drive.google.com/file/d/1nW8kXSDRTLSiqyq-Z0OuInHOIrobaOme/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1uwXsLMnesdQqUEDWv-KEjvqURmaDqICH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ufAKMHZaF478DO8DXpi1JnmjZny_Xve8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uk6H5NyFsMbJrhVgbjf6mW5xb2qsuS2b/view?usp=drivesdk"
 course: philosophy
 tags:
   - mahayana

@@ -4,7 +4,7 @@ authors:
   - "Sungtaek Cho"
 source_url: "https://doi.org/10.1353/pew.2002.0033"
 drive_links:
-  - "https://drive.google.com/file/d/1EW0zxCH3IzMtNqV3mMJ5Ei2EYqZgsaDS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/127CbyV3gXhSgmYNeqPpM2be6PJohc6ql/view?usp=drivesdk"
 file_links:
   - "exclusive_01/rationalist%20tendencies%20in%20modern%20scholarship.pdf"
 course: hermeneutics

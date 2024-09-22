@@ -4,7 +4,7 @@ translator: anandajoti
 slug: "ud5.3"
 external_url: "https://suttacentral.net/ud5.3/en/anandajoti"
 drive_links:
-  - "https://drive.google.com/file/d/1aBxyFOYg4BzSxNpFN6UsfmF-COZe_sZQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1DlSQzUjbZzlSVrLxcnoUVfL5ASZlI4nb/view?usp=drivesdk"
 course: karma # with prejudice (see questions below)
 tags:
   - rebirth-stories

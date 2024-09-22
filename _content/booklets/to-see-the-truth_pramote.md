@@ -6,7 +6,7 @@ editor: "Bhikkhu Korakot Kittisobhano"
 translator: "Jess Peter Koffman"
 external_url: "https://www.dhamma.com/download/luangpor-dhamma-books/?ind=1580172042753&wpdmdl=10496&filename=ToSeetheTruth.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ONDTVtMoqpX7E6Hsi5u10I3Dowpcz_o6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1c-1mecCkrzg_55JeWwVlzMpNzetE0tA4/view?usp=drivesdk"
 course: meditation
 tags:
   - thai-forest

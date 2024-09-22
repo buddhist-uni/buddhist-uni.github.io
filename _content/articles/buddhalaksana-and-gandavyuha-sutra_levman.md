@@ -5,7 +5,7 @@ authors:
   - levman
 external_url: "https://thecjbs.org/wp-content/uploads/2018/02/The-Buddhalaksana-and-the-Gandavyuha-Sutra_Levman.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1gvlsLR_T0BoGUOidzoUD7Cz3ocPJGBP_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1B10sYn8rX6WXikL_JKs73FeXKIRRKzYI/view?usp=drivesdk"
 course: mahayana-roots
 tags:
   - buddha

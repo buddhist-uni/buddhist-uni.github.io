@@ -6,7 +6,7 @@ editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/08Hallisey.pdf"
 source_url: "https://www.academia.edu/15728091/The_Buddhist_Forum_II"
 drive_links:
-  - "https://drive.google.com/file/d/1wJ4pyazwh0-bLJslwwdL0pVAuH3fviZ-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13-WfnTHTv8ua3SQ4pR5zDDAZVBOwBpBJ/view?usp=drivesdk"
 course: theravada-roots # solid 3
 tags:
   - historiography

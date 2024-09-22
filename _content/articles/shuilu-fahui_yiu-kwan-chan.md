@@ -4,7 +4,7 @@ authors:
   - "Yiu Kwan Chan"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8873/10327"
 drive_links:
-  - "https://drive.google.com/file/d/1WfDFEZW_aGspyRpRvsk-0MnotZtpI9zY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18RYVnKT8hmPD60nlYFkiKIRdsdK3v_Yi/view?usp=drivesdk"
 course: east-asian
 tags:
   - cantonese

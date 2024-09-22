@@ -5,7 +5,7 @@ authors:
 editor: "Iromi Ariyaratne"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/legal.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1aqlliX6j-1JBnjD9C_kyeU-7LDI-zwuR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1efLw-sQkWSZCmYMlwTOBiPHsJJjmLDEy/view?usp=drivesdk"
 course: vinaya-studies
 tags:
   - parajika

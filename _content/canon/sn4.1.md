@@ -5,7 +5,7 @@ slug: "sn.004.001"
 subcat: poetry
 external_url: "https://suttacentral.net/sn4.1/en/bodhi"
 drive_links:
-  - "https://drive.google.com/file/d/15QG7WjQ5CGT1M8tSGOc-DGWHtjfkNJ1D/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1NyXc49Jpg-K5IPHT7gOG4JExCAdSqbWz/view?usp=drivesdk"
 course: characters
 tags:
   - mara

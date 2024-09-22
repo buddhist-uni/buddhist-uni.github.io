@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2014/01/Anaalayo-KarmaFemale-final.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1LlRVCgmQNUGVOxhiFqOcSmGAJz1JoDDy/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EOFoAP_jtIofRTiN-2efLmX1VOibsj7A/view?usp=drivesdk"
 course: cosmology
 tags:
   - gender

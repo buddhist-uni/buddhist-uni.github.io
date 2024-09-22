@@ -4,7 +4,7 @@ authors:
   - "Michelle Nijhuis"
 external_url: "https://www.nybooks.com/articles/2020/08/20/buzz-buzz-interspecies-communication/"
 drive_links:
-  - "https://drive.google.com/file/d/1icJ_xam49fvxVAMWc6BVhb3RPTR7ccdY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/10BYuLdOpS65Cd7OPCYByFURA1PJpY_cF/view?usp=drivesdk"
 course: animals
 tags:
   - power

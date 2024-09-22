@@ -3,7 +3,7 @@ title: "SN 1.20 Samiddhi Sutta: Samiddhi"
 external_url: "https://suttacentral.net/sn1.20/en/bodhi"
 translator: bodhi
 slug: "sn.001.020"
-drive_links: ["https://drive.google.com/file/d/1YFjfCu_0M4NJfgGdH4LQnUOMTSblKeof"]
+drive_links: ["https://drive.google.com/file/d/1tUDeJKYuf2VNkHe-E-_6DMelNDidegfH"]
 course: characters
 tags:
   - deva

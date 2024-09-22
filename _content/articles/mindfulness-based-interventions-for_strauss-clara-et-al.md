@@ -8,7 +8,7 @@ authors:
 external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0096110&type=printable"
 source_url: "https://doi.org/10.1371/journal.pone.0096110"
 drive_links:
-  - "https://drive.google.com/file/d/1Hfx8PQP9oiMEg0dRwHLvYj5bOI99thwa/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rMfK6hr0ePE7XvJMN5OhmLDq-wC3L9SH/view?usp=drivesdk"
 course: grief
 tags:
   - meditation

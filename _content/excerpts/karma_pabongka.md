@@ -4,7 +4,7 @@ authors:
   - "Pabongka Rinpoche"
 external_url: "https://www.abuddhistlibrary.com/Buddhism/A%20-%20Tibetan%20Buddhism/Authors/Pabonkha%20Rinpoche/From%20Liberation%20in%20the%20Palm%20of%20Your%20Hand%20Karma/Karma.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1y60HfjLGrzdvXEdcbAA-DHdMThJcgVwp/view?usp=sharing"
+  - "https://drive.google.com/file/d/1YjCJwUCkXhkjl4Ik2ZHg0EGuJA7wHhoX/view?usp=sharing"
 course: karma
 tags:
   - path

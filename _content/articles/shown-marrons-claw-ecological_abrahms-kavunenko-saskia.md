@@ -6,7 +6,7 @@ authors:
 external_url: "https://www.globalbuddhism.org/article/download/3814/5136"
 source_url: "https://doi.org/10.26034/lu.jgb.2024.3814"
 drive_links:
-  - "https://drive.google.com/file/d/1_7PDlciEG4bL_9W7MoGQo9BkdYAvsYKw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BHX5-zJfzHza22mYKqGn_sz-q9COWFR7/view?usp=drivesdk"
 course: animals
 tags:
   - australasian

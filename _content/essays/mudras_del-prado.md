@@ -4,7 +4,7 @@ authors:
   - "Villa Del Prado"
 external_url: "http://www.buddhas-online.com/mudras.html"
 drive_links:
-  - "https://drive.google.com/file/d/1R9CSkrP0NSZNArfwY8xZ5r_id2T9r-lP/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Xwcg8f02cGQBaG0YCKkNO86ZB_mwSPyr/view?usp=drivesdk"
 course: tantric
 tags:
   - bart

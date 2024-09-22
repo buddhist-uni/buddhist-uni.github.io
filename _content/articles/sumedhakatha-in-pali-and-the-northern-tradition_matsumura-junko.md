@@ -4,7 +4,7 @@ authors:
   - "Junko Matsumura"
 external_url: "https://core.ac.uk/download/pdf/290124321.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1b2MaqCOS7C5LaWQfRun1SQb4sTmDBR7E/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wlajSSbBDkBPbIxJYlwGWzgE8wHlf_4T/view?usp=drivesdk"
 course: buddha
 tags:
   - rebirth-stories

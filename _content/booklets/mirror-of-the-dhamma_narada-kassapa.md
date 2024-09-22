@@ -4,7 +4,7 @@ authors: [narada, "Bhikkhu Kassapa"]
 editor: mills-laurence
 external_url: "https://www.bps.lk/library-search-select.php?id=wh054"
 drive_links:
-  - "https://drive.google.com/file/d/1IEhng7TzXoHS--oVWalN7cFFCFT0MdFI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gathddwVUSoH7HxF8OncjR2SGc4XfIAe/view?usp=drivesdk"
 year: 1963
 publisher: bps
 series: wheel

@@ -3,7 +3,7 @@ title: "Purity of Heart"
 authors: [geoff]
 external_url: "https://www.accesstoinsight.org/lib/authors/thanissaro/purityofheart.html"
 drive_links:
-  - "https://drive.google.com/file/d/1OeX4-KEQMHXR0-xkL4f6Nfy9dsbbs6c_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xBsR23DlvLa50yNV0zyyN0viWqU1FmyQ/view?usp=drivesdk"
 year: 2006
 course: philosophy
 status: featured

@@ -7,7 +7,7 @@ year: 1976
 volume: 1
 number: 2
 pages: "103--104"
-drive_links: ["https://drive.google.com/file/d/11XGrPY1eiRv5-iM_7ifGFHHefsX6c8mk/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1V1PxZA-Ans8Avs7ALgqBZycHcrk99Bu2/view?usp=drivesdk"]
 file_links:
   - "exclusive_01/Note%20on%20Solitude%20-%20Malcolm%20Hudson.pdf"
 base_value: 0.2

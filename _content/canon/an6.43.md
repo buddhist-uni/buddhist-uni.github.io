@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.043"
 external_url: "https://suttacentral.net/an6.43/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1k74BdQk9tdctgKyFGpmAapvj-OaaNWVn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_cA0y5ocMcoc46b3Fr6_RDVEYMMiqmvA/view?usp=drivesdk"
 subcat: poetry
 course: buddha
 tags:

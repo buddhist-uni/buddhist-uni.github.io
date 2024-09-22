@@ -6,7 +6,7 @@ external_url: "https://www.dhammatalks.org/suttas/AN/AN9_42.html"
 source_url: "https://www.accesstoinsight.org/tipitaka/an/an09/an09.042.than.html"
 status: featured
 hidden_links:
-  - "https://drive.google.com/file/d/1jsJfa-KXHRbztWpuOkHCK3ufsw7k4pom"
+  - "https://drive.google.com/file/d/1QIkD8W7DLPJDEUMgdJwKkT77lRX7qS4H"
 course: imagery
 tags:
   - an

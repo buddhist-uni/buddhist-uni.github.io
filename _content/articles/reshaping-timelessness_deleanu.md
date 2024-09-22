@@ -5,7 +5,7 @@ journal: jicpbs
 year: 2017
 volume: 21
 external_url: "https://www.researchgate.net/profile/Florin-Deleanu/publication/318493988_Reshaping_Timelessness_Paradigm_Shifts_in_the_Interpretation_of_Buddhist_Meditation/links/596dd04d458515d926656cd3/Reshaping-Timelessness-Paradigm-Shifts-in-the-Interpretation-of-Buddhist-Meditation.pdf"
-drive_links: ["https://drive.google.com/file/d/184Xd2L4z2d6ezJnH6yZrsQUTWMAUNGSf/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1CF9mHDw1TcbOrb0By3_-C1j7-0VU7P-g/view?usp=drivesdk"]
 course: mahayana-roots
 tags:
   - samadhi

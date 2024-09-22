@@ -4,7 +4,7 @@ authors:
   - "Reiko Ohnuma"
 external_url: " https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078166&sid="
 drive_links:
-  - "https://drive.google.com/file/d/19uGBmWI7h-6hbJFca0rA3pbvgUYydKLc/view?usp=sharing"
+  - "https://drive.google.com/file/d/1Iul471rmFmqXKk3HyKb0BFvztAzDfg-x/view?usp=sharing"
 course: animals
 tags:
   - imagery

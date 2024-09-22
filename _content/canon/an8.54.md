@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.054"
 external_url: "https://suttacentral.net/an8.54/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1vxvfSiXxchHFPRBhiV_OsGyHsATrlvDv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jJiW7mhWaJPFE-eJks7jLbDnpjplLWQH/view?usp=drivesdk"
 course: becon
 status: featured
 tags:

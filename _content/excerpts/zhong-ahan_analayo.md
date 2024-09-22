@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/zhong-ahan.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1cXD5h6hL7QThl0nIalM1NzmMUQmDwv0x/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1UxT4giJfO8QoQ8XG66NX9GE8rJsv_Ws9/view?usp=drivesdk"
 course: agama
 tags:
   - ma

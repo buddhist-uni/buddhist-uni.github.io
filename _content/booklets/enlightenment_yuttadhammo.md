@@ -4,7 +4,7 @@ authors:
   - yuttadhammo
 external_url: "https://www.sirimangalo.org/wp-content/uploads/2020/10/Ask-a-Monk_-Enlightenment.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/18x0gdiXfKtdgDbShsyXn0yVa8xaykZnL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1kdiYvxvqoePxkJSJA0qvCbYMDz5N1Opy/view?usp=drivesdk"
 course: nibbana
 tags:
   - path

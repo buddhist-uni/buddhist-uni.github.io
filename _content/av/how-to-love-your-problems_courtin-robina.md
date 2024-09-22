@@ -5,7 +5,7 @@ authors:
 external_url: "https://youtube.com/watch?v=yRuKropEPLE"
 formats: [ogg]
 drive_links:
-  - "https://drive.google.com/file/d/12ZN99Jkwrd5sOz4kxiGqTJKnhfCcFU8k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ywqkFawE3daCYf57bHmUVeiynqPuxqo7/view?usp=drivesdk"
 status: featured
 course: buddhism
 tags:

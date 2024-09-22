@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/pwj3-10/02Bays.pdf"
 source_url: "https://pwj.shin-ibs.edu/pacific-world-third-series-number-10-fall-2008"
 drive_links:
-  - "https://drive.google.com/file/d/1Da40Ot92Uv05LqDWKHieONqhqtkXwjlj/view?usp=sharing"
+  - "https://drive.google.com/file/d/1ij0vc_hwPsqcWFE_78Y-jBQ1rmPA6200/view?usp=sharing"
 course: sati
 tags:
   - problems

@@ -4,7 +4,7 @@ authors: [collins-steven]
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 file_links:
   - "exclusive_01/Remarks%20on%20the%20Third%20Precept%01_%20Adultery%20and%20Prostitution%20-%20Steven%20Collins.pdf"
-drive_links: ["https://drive.google.com/file/d/16EJRROCpnp5MkeJ5Rk32YqXOKdIX5e1_/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zzS2c62TB8bjxkdTn4PhVCkdLUjhIT8y/view?usp=drivesdk"]
 tags:
   - ethics
   - sex

@@ -5,7 +5,7 @@ authors:
   - "Kevin McNulty"
 external_url: "https://www.maxwell.syr.edu/docs/default-source/ektron-files/reflective-listening-neil-katz-and-kevin-mcnulty.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1FG4iuaHW8K7qR8KM2Wbm92G_tHgf7CJZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1XdJRS1i7krlJm3ptROITo_-v-4eqCknK/view?usp=drivesdk"
 course: communication
 year: 1994
 pages: 14

@@ -4,7 +4,7 @@ authors:
   - santussika
 external_url: "https://dharmaseed.org/talks/player/41530.html"
 drive_links:
-  - "https://drive.google.com/file/d/1JhfVB-kF4moqRWyUWPtWeVvpmFvUersA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1UzJaWpos0c3ly5dxPx-iwKsuiFCYoz7_/view?usp=drivesdk"
 course: meditation
 tags:
   - inner

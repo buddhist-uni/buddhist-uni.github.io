@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/gradual-emptiness.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/12bhfpHGO0_Ai-vUCwpz4_oK89GvODFLO/view?usp=sharing"
+  - "https://drive.google.com/file/d/1gcVPyAVdhVr3POTYWiosTX2UoXxMigmf/view?usp=sharing"
 course: samadhi
 tags:
   - agama

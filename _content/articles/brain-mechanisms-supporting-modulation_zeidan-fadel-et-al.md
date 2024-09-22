@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.jneurosci.org/content/31/14/5540.full.pdf"
 source_url: "https://doi.org/10.1523/jneurosci.5791-10.2011"
 drive_links:
-  - "https://drive.google.com/file/d/1bvizc2tXgmfccuOUxKaQ_4UJxwIwS3dT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-Gtgk1FC2J9NWaG5EInfoj7fHoJkWvcg/view?usp=drivesdk"
 course: problems
 tags:
   - sati

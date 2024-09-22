@@ -5,7 +5,7 @@ year: 2009
 month: mar
 external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Los%20Angeles%20Course/090321_Tiratana.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1nFCcrtkvc6777Q4v-hO8YseFYfBNlMEc/view?usp=share_link"
+  - "https://drive.google.com/file/d/13dmD3QSfO85leiWYfMG7sTWh_XCPl8hD/view?usp=share_link"
 file_links: ["function-data/LA-Lectures_Yuttadhammo/06%20-%20Tiratana%20(2009-03-21).mp3"]
 course: function
 tags:

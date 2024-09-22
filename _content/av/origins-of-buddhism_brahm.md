@@ -6,7 +6,7 @@ year: 2003
 month: may
 external_url: "https://bswa.org/teaching/origins-of-buddhism-by-ajahn-brahm/"
 drive_links:
- - "https://drive.google.com/file/d/14TxlMyVScCWofH0QXmQxbBn-DQL6_kfy/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1deYTlkswSeVfswVvjuj-bXwUBSDHAksr/view?usp=drivesdk"
 course: ethics
 tags:
   - roots

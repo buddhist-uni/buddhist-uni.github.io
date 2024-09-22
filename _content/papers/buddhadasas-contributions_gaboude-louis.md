@@ -4,7 +4,7 @@ authors:
   - "Louis Gaboude"
 external_url: "https://www.suanmokkh.org/articles/14"
 drive_links:
-  - "https://drive.google.com/file/d/1jA4Ai_fE54B48ayGBxj8JQSNPM4NoxwM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1m6dZkuwAYPYTDqVM4MoV2dqHmXm9LPz9/view?usp=drivesdk"
 course: modern
 tags:
   - thai

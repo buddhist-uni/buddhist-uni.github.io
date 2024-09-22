@@ -5,7 +5,7 @@ authors:
   - thubten-chodron
 external_url: "https://wisdomexperience.org/wisdom-podcast/thubten-chodron/"
 drive_links:
-  - "https://drive.google.com/file/d/1vhOBhzb0PeeptJ3QJedXaE-bWB3uNjYF/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Us4atZpPKXeAqn8ZJatc-TQnp7FNduRF/view?usp=drivesdk"
 publisher: wisdom
 course: monastic
 tags:

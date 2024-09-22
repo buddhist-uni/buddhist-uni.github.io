@@ -5,7 +5,7 @@ translator: geoff
 external_url: "https://suttacentral.net/an3.132/en/thanissaro"
 source_url: "https://accesstoinsight.org/tipitaka/an/an03/an03.130.than.html"
 drive_links:
-  - "https://drive.google.com/file/d/1cKBqnssZINHRAMUZqAmD1AyAcivwmNuo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iimjTj1a8-YFHLIqZubsGsm_KYr9Izqo/view?usp=drivesdk"
 year: 1998
 course: speech
 tags:

@@ -5,7 +5,7 @@ slug: "iti092"
 subcat: poetry
 external_url: "https://suttacentral.net/iti92/en/ireland"
 drive_links:
-  - "https://drive.google.com/file/d/1UI_8_mTTG_XGYf4PR0JO7TJHRTyuNyVN/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/18lzmaWwNRgSq2mLay0WN4auuAlN_i4yS/view?usp=drivesdk"
 course: pali-canon
 tags:
   - imagery

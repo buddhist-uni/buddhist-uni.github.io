@@ -4,7 +4,7 @@ authors:
   - "James Stewart"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2017/02/JBE-Stewart5-2.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1608fOL5IseeO8y9X8blI-1hAj2IIM0vt/view?usp=sharing"
+  - "https://drive.google.com/file/d/1C2XmZ2Ksaf6scung8bZUuEVz6-g5stgS/view?usp=sharing"
 course: animals
 tags:
   - theravada-chanting

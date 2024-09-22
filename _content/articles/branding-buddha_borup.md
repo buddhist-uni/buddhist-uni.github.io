@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/1305859/files/178-334-1-PB.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1227"
 drive_links:
-  - "https://drive.google.com/file/d/1xjv6-HrZ9G9-2PiyaNg2yYt7j38tHww5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OLs4LwwGWs2Nt9xmW3lulkAHYqWaK-FL/view?usp=drivesdk"
 course: west
 tags:
   - continental

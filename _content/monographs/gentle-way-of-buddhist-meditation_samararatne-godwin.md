@@ -5,7 +5,7 @@ authors:
 editor: "Jeanne Mynett"
 external_url: "https://www.godwin-home-page.net/Gentle-Way-HK-97/The-Gentle-Way.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1cvKEzzim9bN_oEZXRNtopgUHoEr-mhBQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1QetydOyiODCKEyDysP_zPiQm5-mjCsKf/view?usp=drivesdk"
 course: problems # probably move down to daily-life some day...
 tags:
   - metta

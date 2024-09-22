@@ -3,7 +3,7 @@ title: "The Mass Suicide of Monks in Discourse and Vinaya Literature"
 authors: [analayo]
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/mass-suicide.pdf"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1G_LkgeyAnESpum95mQvWvzLTitFe4Wsf/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1zcvs_cdBheQHphHZ7BQgODZYWRRRMegl/view?usp=drivesdk"]
 year: 2014
 pages: "11--55"
 journal: jocbs

@@ -4,7 +4,7 @@ authors: ["Noa Ronkin"]
 source_url: "https://plato.stanford.edu/entries/abhidharma/"
 external_url: "https://seop.illc.uva.nl/entries/abhidharma/"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/14dhKrbNIJeXeapteqQbK0NBG8OoLqAv1/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1_wujEPon324r_gEk4jVMqtlAuBeNm6os/view?usp=drivesdk"]
 month: aug
 year: 2010
 course: indian

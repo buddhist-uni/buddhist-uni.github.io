@@ -4,7 +4,7 @@ slug: "an.006.013"
 translator: sujato
 external_url: "https://suttacentral.net/an6.13/en/sujato"
 formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1hKz9KB7bFeY9R0LXgdVuHEiOPn85OzPW"]
+drive_links: ["https://drive.google.com/file/d/1QkC7-CpwnvIdJ9gj0XDDMkZEPl8JVTkA"]
 status: featured
 course: meditation
 tags:

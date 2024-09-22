@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.005.235"
 external_url: "https://suttacentral.net/an5.235/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1Urt204F1G7GQHDxPQGg7cyOE69SVqC8H/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_3WCRsNhbN73obADWDAdwfagGbboZ3EY/view?usp=drivesdk"
 course: sangha
 tags:
   - monastic-advice

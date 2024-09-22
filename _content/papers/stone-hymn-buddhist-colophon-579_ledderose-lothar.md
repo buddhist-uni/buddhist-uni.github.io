@@ -4,7 +4,7 @@ authors:
   - "Lothar Ledderose"
 external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-005/pdf?licenseType=open-access"
 drive_links:
-  - "https://drive.google.com/file/d/1O58wOyj_ugJSLxN4XdDifXyEEt4ssgka/view?usp=sharing"
+  - "https://drive.google.com/file/d/1oAz5htnmCQbeu8YS8cGt_6yl9gUVxmFY/view?usp=sharing"
 course: medieval
 tags:
   - historiography

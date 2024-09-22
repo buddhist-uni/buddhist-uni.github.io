@@ -4,7 +4,7 @@ authors:
   - "Jinadasa Liyanaratne"
 external_url: "https://archive.org/download/jpts-xx-1994/South%20Asian%20Flora%20as%20Reflected%20in%20the%20Abhidha%CC%84nappadi%CC%84pika%CC%84%20-%20Jinadasa%20Liyanaratne_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1dJRkdxRdbwN2zPxZsJ_IuPsyxtMvAg1A/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14jVBP-VZGjd5HT8CxvXx6akPZ2H51Tl4/view?usp=drivesdk"
 course: pali-dictionaries
 tags:
   - setting

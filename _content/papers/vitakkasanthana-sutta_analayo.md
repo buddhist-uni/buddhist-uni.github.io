@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/vitakkasanthana.pdf"
 year: 2009
 drive_links:
- - "https://drive.google.com/file/d/1SkEgJk4GUzQyCiYzWzqzYORO3g1odc0U/view?usp=sharing"
+ - "https://drive.google.com/file/d/1yuJOYUnMA_biXNA9kNPNQ7rgtidLAcYr/view?usp=sharing"
 course: thought
 tags:
   - problems 

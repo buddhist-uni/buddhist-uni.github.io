@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8942/10412"
 source_url: "https://doi.org/10.1558/bsrv.v29i1.5"
 drive_links:
-  - "https://drive.google.com/file/d/1rDZsCzs3B_lVutqLXzN3t__pskT-Z4cs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r2e9SxySxfUoMGBv3NUyImnbwL1R-VUg/view?usp=drivesdk"
 course: jataka
 tags:
   - jainism

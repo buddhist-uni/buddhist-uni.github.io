@@ -3,7 +3,7 @@ title: "The *Pārājika* Precepts for Nuns"
 authors: ["Ann Heirman"]
 file_links:
   - "exclusive_01/Parajika%20Precepts%20for%20Nuns%20-%20Ann%20Heirman.pdf"
-drive_links: ["https://drive.google.com/file/d/19V3APAepfFSZ9Dmx-JC_hLYStxSB-Y5j/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/14dclsgvjyp8wHuxL8QHboMP5YhjYT7cF/view?usp=drivesdk"]
 year: 2003
 volume: 20
 number: 2

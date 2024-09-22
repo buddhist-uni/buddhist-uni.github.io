@@ -7,7 +7,7 @@ external_url: "https://archive.org/download/podcast_sutta-readings_sn-411-kalaha
 source_url: "https://www.suttareadings.net/audio/index.html#snp.4.11"
 formats: [mp3]
 drive_links:
- - "https://drive.google.com/file/d/1JQ0mnU5oN93Npk5W0EHzqng4e9LLyvwf/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1kcbnKQlZAuVetKWigRx_QQJ7SeKTq5Es/view?usp=drivesdk"
 year: 2006
 month: may
 course: origination

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.mdpi.com/2077-1444/10/2/113/pdf?version=1551259054"
 source_url: "https://doi.org/10.3390/rel10020113"
 drive_links:
-  - "https://drive.google.com/file/d/1TYbtldBT6efxc9aDMA7weD66Re8R0imw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dIaYbHUwOzTrEGHqdC4fgLxnVCPnTjjk/view?usp=drivesdk"
 course: animals
 tags:
   - vinaya-studies

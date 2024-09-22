@@ -5,7 +5,7 @@ year: 1984
 external_url: "https://www.amaravati.org/dhamma-books/tudong-the-long-road-north/"
 olid: OL32214608M
 drive_links:
-  - "https://drive.google.com/file/d/1366QFbwp6PK2cGWK1RAigslYCJIOXygA/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AsxeFaIpE2aFI8PwDrjm0UfEbFSNryHM/view?usp=drivesdk"
 course: pilgrimage
 tags:
   - british

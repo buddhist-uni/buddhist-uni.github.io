@@ -4,8 +4,8 @@ authors:
   - geoff
 external_url: "https://www.dhammatalks.org/ebook_index.html#RecognizingTheDhamma"
 drive_links:
-  - "https://drive.google.com/file/d/1TCvWjpFNN4fKfne6Ja-S0taRGpRNPTCu/view?usp=drive_link"
-  - "https://drive.google.com/file/d/15S-Oj6mPsSRw004kfbeISUPm3sov4bMn/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1LY1YNO0tIQBaGQyj-TGl6B7X4VgEm47N/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1_qq9Xjb0GIyWcJWzw4TmKAQHNJkiPks5/view?usp=drive_link"
 course: thought
 tags:
   - pali-canon

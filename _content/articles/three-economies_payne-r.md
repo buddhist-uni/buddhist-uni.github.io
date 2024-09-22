@@ -5,7 +5,7 @@ authors:
 external_url: "https://zenodo.org/record/3238211/files/Payne_GALLEY3_ARCHIVE.pdf"
 source_url: "https://www.globalbuddhism.org/article/view/1271"
 drive_links:
-  - "https://drive.google.com/file/d/1ZO2od881Th4bLOJOIrD1U3kGS45di0kv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1u1zZ3-qcJEyqGSQViQNF09dcXOr-a3G4/view?usp=drivesdk"
 course: west # solidly
 tags:
   - ideology

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/1417367/On_the_Vibhajjav%C4%81dins_The_Mahi%E1%B9%83s%C4%81saka_Dhammaguttaka_Kassapiya_and_Tambapa%E1%B9%87%E1%B9%87iya_branches_of_the_ancient_Theriyas"
 source_url: "https://doi.org/10.1558/bsrv.v18i2.14449"
 drive_links:
-  - "https://drive.google.com/file/d/1stmCtq8AIGUxQMQOKaAoV7isHAaiOBX6/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP/view?usp=drivesdk"
 course: sects
 tags:
   - theravada-roots

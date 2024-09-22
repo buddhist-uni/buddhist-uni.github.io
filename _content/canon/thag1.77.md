@@ -5,7 +5,7 @@ slug: "thag.01.77"
 subcat: poetry
 external_url: "https://suttacentral.net/thag1.77/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1hpm0lWxQRHQJ8tP5cNR-H4yOZKZeEB1T/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1B4O6oNmeaksDKZtWXBDYQ3Cw_mKMC9eC/view?usp=drivesdk"
 course: imagery
 tags:
   - sati

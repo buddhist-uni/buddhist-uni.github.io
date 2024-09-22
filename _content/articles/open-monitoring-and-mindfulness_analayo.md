@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/openmonitoring.pdf"
 source_url: "https://doi.org/10.1007/s12671-019-01181-z"
 drive_links:
-  - "https://drive.google.com/file/d/1D2tdanCnsaDS-tqB-GKG1YsdeNvkdaUD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1McRZPP_SE916ZFAeaUluHATmogKylsXN/view?usp=drivesdk"
 course: sati
 tags:
   - daily-life

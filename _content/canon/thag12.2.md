@@ -3,7 +3,7 @@ title: "Thag 12.2 Sunīta Theragāthā: Sunīta"
 slug: "thag.12.02"
 external_url: "https://suttacentral.net/thag12.2/en/sujato"
 translator: sujato
-drive_links: ["https://drive.google.com/file/d/1hJAlKZ8ScFt6WUGoi9AXjFeP04CZH7Q8"]
+drive_links: ["https://drive.google.com/file/d/1bLAAV_yA3KroMeXtKJb1CfDIqxABlrhh"]
 course: karma
 tags:
   - thag

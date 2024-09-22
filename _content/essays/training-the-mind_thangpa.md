@@ -3,7 +3,7 @@ title: "Eight Verses of Training the Mind"
 authors: ["Geshe Langri Thangpa"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/geshe-langri-thangpa/eight-verses-training-mind"
 year: 2012
-drive_links: ["https://drive.google.com/file/d/1lkTC_O7gzjnCey8BTtZi77nXvAZWyggq/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/16UNSCrQy6iK4W1gT438ey-y37W1mci8W/view?usp=drivesdk"]
 course: thought
 base_value: 0.25
 subcat: poetry
