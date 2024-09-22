@@ -4,7 +4,7 @@ authors:
   - "Noah Smith"
 external_url: "https://www.noahpinion.blog/p/toward-a-shallower-future"
 drive_links:
-  - "https://drive.google.com/file/d/14GXybkZ16sdgd2xPsNtvJc5M1eW0EI4Z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1tgQ2hWak9DuhWAnhpzTw07sl_zvEzOU_/view?usp=drivesdk"
 course: world
 tags:
   - future

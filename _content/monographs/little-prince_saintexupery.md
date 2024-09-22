@@ -3,7 +3,7 @@ title: "The Little Prince"
 authors: ["Antoine de Saint-Exupéry"]
 external_url: "https://punctumbooks.com/titles/the-anguished-and-the-enchanted-the-little-prince-revisited/"
 drive_links:
-  - "https://drive.google.com/file/d/1NNcg7gsvTzteu0eC6I5OZPc6yQ5nqc7y/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wj-KTib20nSxx535JcOdJW8bkztrfMu9/view?usp=drivesdk"
 olid: OL48619M
 year: 1943
 month: apr

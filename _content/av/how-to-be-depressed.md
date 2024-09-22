@@ -4,7 +4,7 @@ subcat: podcast
 authors:
   - "Matthew Sitman"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/depression"
-drive_links: ["https://drive.google.com/file/d/1Lfs4Krhq7arA0KKPAU6RFQjAZFOvY0gg/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1-6jPeVYjQXtbkoAadZ4nk3rbrEkUNSAE/view?usp=drivesdk"]
 status: featured
 course: world # maybe down to social some day
 tags:

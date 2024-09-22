@@ -159,6 +159,6 @@ if __name__ == "__main__":
   docid = gdrive.create_doc(
     html=html,
     creator="CatalogBuilder",
-    replace_doc="1rGLm9Xh5de0e3hsMY2yyt97MWBuZJ1V1_q0jhGe7vpw",
+    replace_doc="1IYrQyVyr8FfbHwRLH5OzwSQG9mhgl0av73klfi-t0DQ",
   )
   print(f"Done! See https://docs.google.com/document/d/{docid}/edit")

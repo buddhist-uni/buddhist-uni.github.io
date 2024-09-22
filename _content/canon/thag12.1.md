@@ -5,7 +5,7 @@ slug: "thag.12.01"
 subcat: poetry
 external_url: "https://suttacentral.net/thag12.1/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1_8I6h-kyzB69IZq9u9G_uCPF6TdqFw_s/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1A9EZEHdTQa0NRG1r00-Ha6-T8gPxDTja/view?usp=drivesdk"
 course: groups
 tags:
   - ethics

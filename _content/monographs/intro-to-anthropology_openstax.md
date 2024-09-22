@@ -6,7 +6,7 @@ authors:
   - "Marjorie M. Snipes"
 external_url: "https://openstax.org/details/books/introduction-anthropology"
 drive_links:
-  - "https://drive.google.com/file/d/1fbN4nuZYA7ThjgW8l2lwbMkabMUP2-0j/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1qkzFRBD9mBq7GT9EdjZaLZMadqFd2uUg/view?usp=drivesdk"
 status: featured
 course: world
 tags:

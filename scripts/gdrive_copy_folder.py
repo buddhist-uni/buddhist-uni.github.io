@@ -89,7 +89,8 @@ def copy_shortcut(
       print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
       return None
     defer_uncopied_targets.append(target)
-    assert NEW_FILE_IDS[source_shortcut['parents'][0]] == dest_parent_id
+    if NEW_FILE_IDS[source_shortcut['parents'][0]] != dest_parent_id:
+      raise RuntimeError(f"Shortcut \"{source_shortcut['name']}\" in {source_shortcut['parents']} didn't match the expected destination {dest_parent_id}. Got {NEW_FILE_IDS[source_shortcut['parents'][0]]} instead.")
     return None
   with DelayedKeyboardInterrupt():
     ret = gdrive.create_drive_shortcut(

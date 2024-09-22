@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.114"
 external_url: "https://suttacentral.net/an3.114/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1jYUbMnp-nQOt5X6p04w1rimJ9CRUCmx0/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1_breO9RXh6l0TUgxmcRn9-xhokiXX7qh/view?usp=drivesdk"
 course: groups
 status: featured
 tags:
