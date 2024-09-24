@@ -98,8 +98,8 @@ class DriveFolder:
         child['createdTime'],
         self.depth + 1,
       ))
-    self.files = sorted(self.files, key=lambda f: f['createdTime'])
-    self.subfolders = sorted(self.subfolders, key=lambda f: f.createdTime)
+    self.files = sorted(self.files, key=lambda f: f['name'])
+    self.subfolders = sorted(self.subfolders, key=lambda f: f.name)
   
   @cache
   def total_size(self):

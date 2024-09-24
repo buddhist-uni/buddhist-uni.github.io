@@ -137,11 +137,11 @@ def google_credentials():
 @cache
 def session():
     socket.setdefaulttimeout(300) # some of our uploads take a while...
-    return build('drive', 'v3', credentials=google_credentials())
+    return build('drive', 'v3', credentials=google_credentials(), num_retries=5)
 
 @cache
 def youtube():
-    return build('youtube', 'v3', credentials=google_credentials())
+    return build('youtube', 'v3', credentials=google_credentials(), num_retries=3)
 
 @cache
 def docs():
@@ -372,6 +372,7 @@ def all_files_matching(query: str, fields: str):
     'q': query,
     'fields': fields,
     'pageSize': 100,
+    'orderBy': "createdTime", # go in chronological order by default
   }
   results = files.list(**params).execute()
   for item in results.get('files', []):

@@ -52,7 +52,7 @@ stemmer = SnowballStemmer('english')
 STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
 
 NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
-NORMALIZED_DRIVE_FOLDER = '18DYRQaVER_kP_CebfgAJuy3Tdhf5249r'
+NORMALIZED_DRIVE_FOLDER = '1b1dOGh-fmbOhmwoPEnUgDehpqnQhOJ8Z'
 
 def save_normalized_text(drive_file_id, normalized_text):
     name = f"{drive_file_id}.pkl"
