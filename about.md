@@ -13,16 +13,14 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:SrA_Jette_Carr,_US
 ---
 
 The Open Buddhist University is an unaccredited, digital resource run by Khemarato Bhikkhu since 2020.
-Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of Early Buddhism.[^ebts]
+Its mission is to provide a free, English-language curriculum in Buddhist Studies from the perspective of Early Buddhism[^ebts] to everyone.
+We hope that you'll find these resources helpful and we welcome your feedback and questions at the email below (at the bottom of every page).
 
-The website is based on
-[Khemarato Bhikkhu's personal library on Google Drive](https://drive.google.com/open?id=1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
-which he [shared publicly](https://discourse.suttacentral.net/t/bgl-a-buddhist-g-library/13095?u=khemarato.bhikkhu){:target="_blank" ._} after his ordination in Thailand in 2019.
-He hopes that you'll find these resources helpful and welcomes any feedback or questions at the email at the bottom of the page.
+See [our sources page](/sources/) for a list of the sources we used to put together the collections.
 
-You can find [a video introduction to this website on YouTube](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
+You can find [a video introduction to the website on YouTube here](https://youtu.be/TPmTxHuQ9AI?t=22s), and can connect with other students of Early Buddhism over at the [SuttaCentral: Discuss and Discover](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.2"} forum.
 
-Thanks to [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/graphs/contributors) for your help building the site.
+Thanks to [our contributors](https://github.com/buddhist-uni/buddhist-uni.github.io/graphs/contributors) for their help building the site.
  
 ![yaktocat]({% link assets/imgs/yaktocat.png %}){:style="max-height: 448px;"}
 50% feline 🐱, 50% cephalopod 🐙, and 100% Fierce Dharma Protector 👹, our university mascot is the **Yaktocat**.

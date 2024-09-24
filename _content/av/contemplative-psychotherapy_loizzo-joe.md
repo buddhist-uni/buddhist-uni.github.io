@@ -5,7 +5,6 @@ authors:
 subcat: podcast
 editor: "Jonathan Kay and Stephen Julich"
 external_url: "https://newbooksnetwork.com/advances-in-contemplative-psychotherapy"
-source_url: "https://east-westpsychologypodcast.com/ep-36-contemplative-psychotherapy-intersections-of-science-spirituality-and-buddhism-with-joe-loizzo/"
 course: new-age
 tags:
   - philosophy-of-science

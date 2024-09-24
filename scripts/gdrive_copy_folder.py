@@ -45,8 +45,15 @@ def is_file_mine(file):
 def link_folder_to_new_version(root_folder: str, folder_name: str):
   if "http" in root_folder:
     root_folder = gdrive.folderlink_to_id(root_folder)
-  gdrive.create_drive_shortcut(NEW_FILE_IDS[root_folder], "[~NEW VERSION~] "+folder_name, root_folder)
-  print(folder_name)
+  needs = True
+  for child in gdrive.all_files_matching(f"'{root_folder}' in parents and trashed=false and mimeType='application/vnd.google-apps.shortcut'", "name"):
+      if "[~NEW VERSION~] " in child['name']:
+          needs = False
+  if needs:
+    gdrive.create_drive_shortcut(get_previously_copied_version(root_folder), "[~NEW VERSION~] "+folder_name, root_folder)
+    print(f"{folder_name} written!")
+  else:
+    print(f"Skipping {folder_name}")
   for child in gdrive.all_files_matching(f"'{root_folder}' in parents and trashed=false and mimeType='application/vnd.google-apps.folder'", "id,name"):
     link_folder_to_new_version(child['id'], child['name'])
 
