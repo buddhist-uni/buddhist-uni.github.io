@@ -5,7 +5,7 @@ slug: "thig.01.17"
 subcat: poetry
 external_url: "https://suttacentral.net/thig1.17/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/17_GFkIjc97NkOkeCfEYHNv0fQrsfMo0-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Hk1Och-B21VDpqAS7FjHolA7FipJq5kY/view?usp=drivesdk"
 course: kayagatasati
 tags:
   - death

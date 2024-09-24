@@ -5,7 +5,7 @@ slug: "thag.04.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thag4.2/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1OPgefPq6PwRRxsjLxL-He4gkkB9qHxvS/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1d1qtKoRvjbSNCto09mRfaJ7kdmyRSFOY/view?usp=drivesdk"
 course: walking-meditation
 tags:
   - problems

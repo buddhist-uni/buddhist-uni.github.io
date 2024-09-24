@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.008.016"
 external_url: "https://suttacentral.net/an8.16/en/bodhi"
 hidden_links:
-  - "https://drive.google.com/file/d/103co119odTBHEobgYVXqosmwe89A4Fv2/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/112mttJLADDRrjveEoH_ZWj5bAzyO-lPE/view?usp=drivesdk"
 course: interfaith
 tags:
   - form

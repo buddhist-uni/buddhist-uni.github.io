@@ -5,7 +5,7 @@ slug: "ud6.2"
 subcat: poetry
 external_url: "https://suttacentral.net/ud6.2/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1BSLqrYnjeEBathu5Ijn_THkln8EBCNKO/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1yr4p1nmPdgUEAGTn0BI2ufQMBqy9amhg/view?usp=drivesdk"
 course: selling
 tags:
   - form

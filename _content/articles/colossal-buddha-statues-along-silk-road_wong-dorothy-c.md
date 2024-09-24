@@ -5,7 +5,7 @@ authors:
 external_url: "https://koreascience.or.kr/article/JAKO201911464522127.pdf"
 source_url: "https://doi.org/10.22679/avs.2019.4.2.001"
 drive_links:
-  - "https://drive.google.com/file/d/1nsiG5gDelmHog2C7L2HaO5Bi9vKEz0tt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1gW7ywe5Fm0UZnitF6hh-0vvZhPuSIgdn/view?usp=drivesdk"
 course: bart # solid three stars
 tags:
   - mahayana-roots

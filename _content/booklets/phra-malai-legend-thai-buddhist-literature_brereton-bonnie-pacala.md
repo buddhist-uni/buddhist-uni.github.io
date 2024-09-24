@@ -5,7 +5,7 @@ authors:
 subcat: thesis
 external_url: "https://deepblue.lib.umich.edu/handle/2027.42/128920"
 drive_links:
-  - "https://drive.google.com/file/d/16zOKTreDWyNRGcKqeAXFTDI-LxNwdtYy/view?usp=sharing"
+  - "https://drive.google.com/file/d/1TAZiogCXp5X0oNxiRzcv_YmNM-X21vmM/view?usp=sharing"
 course: thai-roots
 tags:
   - theravada-roots

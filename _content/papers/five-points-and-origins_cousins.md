@@ -6,7 +6,7 @@ editor: "Tadeusz Skorupski"
 external_url: "https://www.shin-ibs.edu/documents/bForum/v2/03Cousins.pdf"
 source_url: "https://www.academia.edu/15728091/The_Buddhist_Forum_II"
 drive_links:
-  - "https://drive.google.com/file/d/1wu_j6NsFich8GkffinxDElwxSKVslt57/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1w2sdAiFb5NXVBrezqqfNgZTuuL4TAqIy/view?usp=drivesdk"
 course: pali-histories
 tags:
   - sects

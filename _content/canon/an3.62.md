@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.062"
 external_url: "https://suttacentral.net/an3.62/en/bodhi"
 hidden_links:
-  - "https://drive.google.com/file/d/1yGWxIvJGwhadA5a8E6nIo4k2ilZm60Am/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1PeBuP29udrrn8nDQkv8yldiw96bBXDgk/view?usp=drivesdk"
 course: families
 tags:
   - cosmology

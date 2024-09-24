@@ -4,7 +4,7 @@ slug: "an.004.079"
 translator: sujato
 external_url: "https://suttacentral.net/an4.79/en/sujato"
 drive_links:
-  - "https://drive.google.com/file/d/1S_pj8eiekYSOhaoL9HZcPPi0xTIwa1WY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OpPCDZ26qxegNfPEyMjce5_lpu7rOmDg/view?usp=drivesdk"
 course: business
 tags:
   - an

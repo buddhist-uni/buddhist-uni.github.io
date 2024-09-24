@@ -5,7 +5,7 @@ authors:
 external_url: "https://discovery.ucl.ac.uk/1393381/1/Jazeel_61.full.pdf"
 source_url: "https://doi.org/10.1068/d7411"
 drive_links:
-  - "https://drive.google.com/file/d/1w4r9CvZ2mIowRcuDzx9n--Hoq0zxU8XZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wyWoyjSCQMWRw-IZk_enRgT1E26OLivl/view?usp=drivesdk"
 course: sri-lanka
 tags:
   - nature

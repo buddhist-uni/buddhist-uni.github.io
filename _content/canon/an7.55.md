@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.007.055"
 external_url: "https://suttacentral.net/an7.55/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/11FtEr4B-0KvS5nOiFDnf0Sx_tk2wGS-H/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1fWWrt7Wvq4cm1GPyiHexAyHf9kfFzrXy/view?usp=drivesdk"
 course: stages
 tags:
   - anagami

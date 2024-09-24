@@ -5,7 +5,7 @@ authors:
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume23-24.asp"
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/The%20Unsolved%20Aryan%20Problem_text.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/10tfBg1fe4TUdzfJFNykk8-EQt08DuJaI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1MMz8iSNg_a6HvJKWgFQ8BJx_Rios1YvN/view?usp=drivesdk"
 course: south-asia
 status: featured
 tags:

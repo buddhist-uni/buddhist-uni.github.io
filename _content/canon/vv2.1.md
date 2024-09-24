@@ -4,7 +4,7 @@ slug: "vv.2.01"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv2-1/"
 drive_links:
-  - "https://drive.google.com/file/d/1hN_33WXwd22d1Jq5hR1sjolFrocaSD79/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Gv9OVRvG_kPPisf0jcoy-JoKlOOdmrEF/view?usp=drivesdk"
 course: deva
 tags:
   - vv

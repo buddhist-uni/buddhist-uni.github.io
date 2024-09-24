@@ -5,7 +5,7 @@ slug: "ud5.2"
 subcat: poetry
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Udana/5-Sonavaggo-02.htm"
 hidden_links:
-  - "https://drive.google.com/file/d/1eiCepmvr1q52_Qlnj-L3m7Fo0tVBJhDv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FVPm5HDD5NGv_QoPyUXNwnY1u8wvKG7n/view?usp=drivesdk"
 course: bodhisatta
 tags:
   - buddha

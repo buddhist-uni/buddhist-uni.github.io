@@ -4,7 +4,7 @@ authors:
   - "M. H. Bowker"
 external_url: "https://punctumbooks.com/titles/the-angels-wont-help-you/"
 drive_links:
-  - "https://drive.google.com/file/d/1Ak3MPLWS8_KHdpn9yrs6PiPFPdPDfrms/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1jclQowtyAZ_TL2wSz1gR4_jAzdCs5GsI/view?usp=drivesdk"
 course: psychology # solidly
 tags:
   - dana

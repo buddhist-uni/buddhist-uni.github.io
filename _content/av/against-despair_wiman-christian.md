@@ -6,7 +6,7 @@ subcat: podcast
 editor: "Matthew Sitman and Sam Adler-Bell"
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/tk-w-christian-wiman"
 drive_links:
-  - "https://drive.google.com/file/d/1X5UE_ft_nYCxEYGxTK_cnqHKCZyBvJbv/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1JtyEoqTzWMpr2LiNqT7YPP0nymi6DncQ/view?usp=drivesdk"
 course: religion
 tags:
   - christianity

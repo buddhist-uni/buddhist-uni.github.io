@@ -4,7 +4,7 @@ slug: "vv.7.02"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/vv7-2/"
 drive_links:
-  - "https://drive.google.com/file/d/1hmbZ70-vKcglUxxWDp46xkC4W4Vx6mAk/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rGzSaBHOYGergz7UKVa3s9wggmcqalJW/view?usp=drivesdk"
 course: religion
 tags:
   - vv

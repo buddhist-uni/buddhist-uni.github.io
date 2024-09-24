@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.028"
 external_url: "https://suttacentral.net/an8.28/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1Riy3aHteZti9efm_AdBKPBmMFNaSP5E_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1bvxOsdQtkyZMWDjw5mHSFpC1rZmvK5Li/view?usp=drivesdk"
 course: stages
 tags:
   - nibbana

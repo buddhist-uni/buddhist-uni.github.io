@@ -4,7 +4,7 @@ translator: sujato
 slug: "sn.007.019"
 external_url: "https://suttacentral.net/sn7.19/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1fjpNriGtfN3CmSrQexXWV9_kx2TP95c4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1X_l7GxA8Y-c59_KFE4Kfx9WVQUt9N_Lw/view?usp=drivesdk"
 course: families
 tags:
   - setting

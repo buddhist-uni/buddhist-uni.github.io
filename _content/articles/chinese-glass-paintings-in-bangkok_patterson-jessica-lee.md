@@ -5,7 +5,7 @@ authors:
 external_url: "https://digital.sandiego.edu/cgi/viewcontent.cgi?article=1000&context=aaah-faculty"
 source_url: "https://doi.org/10.1353/aaa.2016.0015"
 drive_links:
-  - "https://drive.google.com/file/d/1Y-h8fCRhPN5orFmWoYs6T4uidANLWHOo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1-D2OWaRv-snk9clNTkVPOGtnqKL7qsyU/view?usp=drivesdk"
 course: thai-art # Maybe archive
 tags:
   - sea

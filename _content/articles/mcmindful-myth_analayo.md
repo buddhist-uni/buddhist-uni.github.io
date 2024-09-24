@@ -5,7 +5,7 @@ authors:
 external_url: "https://link.springer.com/content/pdf/10.1007/s12671-019-01264-x.pdf"
 source_url: "https://dx.doi.org/10.1007/s12671-019-01264-x"
 hidden_links:
-  - "https://drive.google.com/file/d/17csSqY9bgTmummvBVElGKhdHdp2jxLZj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uzswmRJzMr98DPbpZ_98CFV0MTK9c3yS/view?usp=drivesdk"
 course: selling
 tags:
   - modern

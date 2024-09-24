@@ -4,7 +4,7 @@ translator: bodhi
 slug: "an.003.032"
 external_url: "https://suttacentral.net/an3.32/en/bodhi"
 hidden_links:
-  - "https://drive.google.com/file/d/1TLfbTqN4HdjzdOi8HpIBK-O1gWyJNDLu/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1psPLSMwenamfBbWzz-BjkRnAo4NCfLWK/view?usp=drivesdk"
 course: stages
 tags:
   - samadhi

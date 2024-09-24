@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.006.010"
 external_url: "https://suttacentral.net/an6.10/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1ZWiLLhwowhdl697Gixv6a734LbUMK26f/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EJkUuWtb9HoWsebSw81cAlERb80Yeiu1/view?usp=drivesdk"
 course: stages
 tags:
   - samatha

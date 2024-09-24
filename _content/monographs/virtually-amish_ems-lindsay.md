@@ -5,7 +5,7 @@ authors:
 external_url: "https://direct.mit.edu/books/book-pdf/2254739/book_9780262369381.pdf"
 source_url: "https://doi.org/10.7551/mitpress/11792.001.0001"
 drive_links:
-  - "https://drive.google.com/file/d/15DIMalhTle3EH2NLoi7Htw3ebA_6FS7E/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FAsZfGrCimX4PD581e2rMOBekvLH-Syu/view?usp=drivesdk"
 status: featured
 course: info-capitalism
 tags:
