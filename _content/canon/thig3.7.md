@@ -5,7 +5,7 @@ slug: "thig.03.07"
 subcat: poetry
 external_url: "https://suttacentral.net/thig3.7/en/soma"
 hidden_links:
-  - "https://drive.google.com/file/d/1t-5r5daDjDB1yWIrvAaCY2ETJ9pZfCoT/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ovlv-Yih_S9Tsfmp2Cko3v7F4iNwA5Oo/view?usp=drivesdk"
 course: stages # the arahant stage in particular
 tags:
   - nibbana

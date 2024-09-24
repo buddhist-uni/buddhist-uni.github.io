@@ -8,7 +8,7 @@ authors:
 external_url: "https://irep.ntu.ac.uk/id/eprint/15494/1/PubSub3165_Griffiths.pdf"
 source_url: "https://doi.org/10.1016/j.avb.2013.01.002"
 drive_links:
-  - "https://drive.google.com/file/d/1g_68fQ3hl6WFWZinfEEAdnHCgLDbIFll/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lyHImRJ2X_aQgyo5JbXFThU5WXxzqTWx/view?usp=drivesdk"
 course: prisons
 tags:
   - selling

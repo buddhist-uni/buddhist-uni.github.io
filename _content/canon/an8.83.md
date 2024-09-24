@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.008.083"
 external_url: "https://suttacentral.net/an8.83/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1VfbOdxZxeI_UgK14fWe7hrN8S3XbJ8hD/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WnYSJXYhHGTNEpICJiNutQbc2GjoWD5p/view?usp=drivesdk"
 course: interfaith
 tags:
   - origination

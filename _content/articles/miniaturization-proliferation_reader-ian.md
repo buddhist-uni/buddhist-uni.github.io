@@ -5,7 +5,7 @@ authors:
 source_url: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/scear/v1/"
 external_url: "https://www.shin-ibs.edu/documents/SCEAR%201/SCEAR1eReader.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-uAgLtHhYnRLzjGCWQwrT-wQmV6rBH4N/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17FWe3gpRvmmKfws6tZBQP2Q95Qg1Oqwr/view?usp=drivesdk"
 course: religion
 status: featured # 3.5 stars, but willing to feature as it's in "religion"
 tags:

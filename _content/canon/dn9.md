@@ -4,7 +4,7 @@ translator: geoff
 slug: "dn09"
 external_url: "https://suttacentral.net/dn9/en/thanissaro"
 hidden_links:
-  - "https://drive.google.com/file/d/1-rzo-vG3PdPHnNaLFRbSbwqhCXM-R9nI/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/122pXn0fUbRtWNy27o42hVWCXbVogVn7e/view?usp=drivesdk"
 course: interfaith
 tags:
   - epistemology

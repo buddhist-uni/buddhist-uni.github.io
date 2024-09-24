@@ -5,7 +5,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/992/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.26.1-2.1999.83-106"
 drive_links:
-  - "https://drive.google.com/file/d/1jR5L3-nPf1gKARV52ZnU2874xqPhtayx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cs3jIfcv2O9OhwyKTwc2qMk7QfV-k9l8/view?usp=drivesdk"
 course: japanese-roots
 tags:
   - dialogue

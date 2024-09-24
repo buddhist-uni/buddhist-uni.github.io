@@ -6,7 +6,7 @@ authors:
 external_url: "https://eurjanat.com/v1/data/pdf/eja.170069sm.pdf"
 alternative_url: "https://dr.ntu.edu.sg/bitstream/10356/107004/1/Human%20Anatomy%20in%20ancient%20Indian.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1T4zWB7TgWtPZLdpxapD43pkj8ua5Aogi/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1K1zrKS0fug7VhwV_mD7KrS4yOqCOOz8d/view?usp=drivesdk"
 course: bart
 tags:
   - history-of-medicine

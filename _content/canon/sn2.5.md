@@ -5,7 +5,7 @@ subcat: poetry
 slug: "sn.002.005"
 external_url: "https://suttacentral.net/sn2.5/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/19XOjkE53L7Ic00dWQSSSbcN6UxKNnvcd/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1cDxCv9EiXzIqO3MWgLJZ9NNYyjYTm0qj/view?usp=drivesdk"
 course: stages
 tags:
   - arahant

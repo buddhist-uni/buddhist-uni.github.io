@@ -4,7 +4,7 @@ authors:
   - williams-paul
 external_url: "https://www.shin-ibs.edu/documents/pwj3-9/07Williams39.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1CV3CEDd8kH2vCL4HZQ96fs1RVfJ4I6uR/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KJPsT_qhuwbXlSyxE-IYYlkpYD7r1m4J/view?usp=drivesdk"
 status: featured # not very important but well written
 course: religion
 tags:

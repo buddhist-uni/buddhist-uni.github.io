@@ -5,7 +5,7 @@ authors:
 external_url: "https://eprints.soas.ac.uk/5288/1/5KarlssonK-Tai_Khun_Buddhism.pdf"
 source_url: "https://doi.org/10.1080/14639940902968939"
 drive_links:
-  - "https://drive.google.com/file/d/1ude0U6WeybXysV62m5WmAOPLSz3uZXBQ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1idMfm4nNuDtkHTE2NnVjeRbdKBUWPJO1/view?usp=drivesdk"
 status: featured
 course: bart
 tags:

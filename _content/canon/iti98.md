@@ -4,7 +4,7 @@ slug: "iti098"
 translator: geoff
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti98.html"
 drive_links:
-  - "https://drive.google.com/file/d/1PJElo6WdEmiPQdqUPUeZjqnlXCDPHUbj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FXB2KL-6PF5fgK7nE9OhtbPOPHPHODgM/view?usp=drivesdk"
 course: dana
 tags:
   - monastic

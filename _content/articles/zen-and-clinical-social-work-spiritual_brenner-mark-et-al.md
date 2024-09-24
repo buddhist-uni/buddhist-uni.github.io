@@ -6,7 +6,7 @@ authors:
 external_url: "https://vc.bridgew.edu/cgi/viewcontent.cgi?article=1002&context=socialwork_fac"
 source_url: "https://doi.org/10.1606/1044-3894.315"
 drive_links:
-  - "https://drive.google.com/file/d/1jSLVaQozHgHczK1P3yjqc9YBJjggpJvs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11159PinUIyz3wkxBmlupu7t8ceZ47yS6/view?usp=drivesdk"
 course: social-work
 tags:
   - meditation

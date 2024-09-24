@@ -5,7 +5,7 @@ authors:
   - "Jacqueline Kramer"
 external_url: "https://www.bhikkhuni.net/bhikkhuni-community-building-an-interview-with-ajahn-chandako/"
 drive_links:
-  - "https://drive.google.com/file/d/1_3bKfRJKwSE8_e22BXis3LX9ZeDCT8lx/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1zGJpDAloN-zSZ08UyWDi7We1m_XgEiFT/view?usp=drivesdk"
 course: farang
 tags:
   - form

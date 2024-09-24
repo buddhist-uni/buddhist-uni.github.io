@@ -6,7 +6,7 @@ authors:
 external_url: "https://terebess.hu/english/TheAitken-ShimanoLetters.pdf"
 source_url: "http://www.thezensite.com/ZenEssays/CriticalZen/Aitken_Shimano_Letters.html"
 drive_links:
-  - "https://drive.google.com/file/d/1Zmzn1NO2zbOJ6oKOSF9NOc-yAgp1VhYq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1rgZRxfAjpt7tYjsWXtX3QLNjOII9KXU3/view?usp=drivesdk"
 status: featured
 course: mahayana-vinaya
 tags:

@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.cell.com/article/S0960982214013724/pdf"
 source_url: "https://doi.org/10.1016/j.cub.2014.10.063"
 drive_links:
-  - "https://drive.google.com/file/d/1gfJcaf7y1dlve6sfTENPS4oRo-gjhpdq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/11K8OBmjnk1Tf98APOcYxOWWRTkWg4Rqb/view?usp=drivesdk"
 course: religion
 # maybe archive? The data is a bit sus, even if the conclusion is reasonable
 tags:

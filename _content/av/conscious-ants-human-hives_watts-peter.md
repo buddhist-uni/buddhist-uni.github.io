@@ -4,7 +4,7 @@ authors:
   - "Peter Watts"
 external_url: "https://youtu.be/v4uwaw_5Q3I"
 hidden_links:
-  - "https://drive.google.com/file/d/1uHmB8wlhCCKYvoNc9y3g9aAOtDLI0fs4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CWdN0nroUqcCbsPDoCCgexV-acnykMqQ/view?usp=drivesdk"
 formats: [ogg]
 status: featured
 course: power

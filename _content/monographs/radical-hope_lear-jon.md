@@ -3,7 +3,7 @@ title: "Radical Hope: Ethics in the Face of Cultural Devastation"
 authors:
   - "Jonathan Lear"
 hidden_links:
-  - "https://drive.google.com/file/d/1hPvewFDEvva5tsIlJ3Dk4GKx6dpVFYkj/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ZyRTvSCECB4Bj3OHzYbMH93tFj-8m6kH/view?usp=drivesdk"
 course: culture
 tags:
   - time

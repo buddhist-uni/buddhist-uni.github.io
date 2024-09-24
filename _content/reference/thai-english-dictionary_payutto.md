@@ -5,7 +5,7 @@ authors:
 external_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X/2/7/2721e0e882ab75b98ecdf96768b89ba1ef1738bd.pdf"
 source_url: "https://tipitaka.org/thai/Dhamma2.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1-_Rx7jTuFHKU_Y9c66-ES2huKcQwhiqY/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CMT-EvFXHUxweTqDqswhn-pUm0MxS56e/view?usp=drivesdk"
 course: buddhist-thai
 tags:
   - pali-dictionaries

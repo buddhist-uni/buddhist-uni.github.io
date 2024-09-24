@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.mdpi.com/2077-1444/10/4/229/pdf?version=1553676079"
 source_url: "https://doi.org/10.3390/rel10040229"
 drive_links:
-  - "https://drive.google.com/file/d/1PESwcynjJRqeRcTisF5792K6ZGaNBtr_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1KhmI-GdoaNtCFaxEwwDUw0CSYeVKicav/view?usp=drivesdk"
 course: history-of-medicine # nearly 4 stars
 tags:
   - mongolia

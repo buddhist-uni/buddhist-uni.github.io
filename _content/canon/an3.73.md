@@ -4,7 +4,7 @@ translator: sujato
 slug: "an.003.073"
 external_url: "https://suttacentral.net/an3.73/en/sujato"
 hidden_links:
-  - "https://drive.google.com/file/d/1kgj0M3VIiAiRxmafOrLED-xxa0YtsZv9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1H5dUTItfB65FlnlzxUhFDsEF50nHHdxy/view?usp=drivesdk"
 course: stages
 tags:
   - tranquility-and-insight

@@ -6,7 +6,7 @@ editor: "Jamie Hubbard"
 external_url: "https://web.archive.org/web/20240203135823if_/http://www.thezensite.com/ZenEssays/CriticalZen/What_and_why_of_Critical_Buddhism_1.pdf"
 source_url: "https://doi.org/10.1515/9780824842697-004"
 drive_links:
-  - "https://drive.google.com/file/d/17NXbpnE-Qki5IJf_5nJYp9Y8TofVGpT8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1GEwA25b4g6MzPcWPQx2VdNgNfRnFkTWh/view?usp=drivesdk"
 course: modern-japanese-philosophy
 tags:
   - east-asian

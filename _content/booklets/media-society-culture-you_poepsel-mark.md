@@ -5,8 +5,8 @@ authors:
 external_url: "https://press.rebus.community/mscy/"
 source_url: "https://collection.bccampus.ca/textbooks/media-society-culture-and-you-an-introductory-mass-communication-text-rebus-community-243/"
 drive_links:
-  - "https://drive.google.com/file/d/1XrSexffl_8LzHiBnYZcaRxHfV3W5rPgR/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1JlzMtQIwfwo8Mv0HwN4mRdfnpfbSkwJH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AQoTczqLduqzbCyt6PBnlGxUw3VWv1Ws/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EGQ5PtsATZOWxQF_Gwu5vJfL5Vna9h69/view?usp=drivesdk"
 course: mass-media
 tags:
   - present

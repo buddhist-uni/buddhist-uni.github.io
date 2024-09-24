@@ -5,7 +5,7 @@ authors:
 external_url: "https://scholarworks.iupui.edu/bitstream/1805/21288/1/Tsultem_Cartographic.pdf"
 source_url: "https://doi.org/10.1353/ach.2017.0003"
 drive_links:
-  - "https://drive.google.com/file/d/1XbhiEQUGIl5SE5U736_YvDUiaQjJBPxo/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1em9Q2KXsbWo9jB-kbSutcO0dpkBsT-DG/view?usp=drivesdk"
 course: mongolia
 tags:
   - maps

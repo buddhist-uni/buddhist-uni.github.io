@@ -7,7 +7,7 @@ pages: "1--347"
 year: 2000
 month: may
 drive_links:
- - "https://drive.google.com/file/d/1KByJXeYXTaKxRot6AMAYu5lYCSAWYZWo/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1zLIJJ_EaXlI-BNbioxcvZQ27I9gTQHqH/view?usp=drivesdk"
 course: philosophy-of-science
 tags:
   - science

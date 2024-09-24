@@ -5,7 +5,7 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/download/13718/15964/20783"
 source_url: "https://doi.org/10.1558/bsrv.31640"
 drive_links:
-  - "https://drive.google.com/file/d/1XJgwbSJhD2v_ehW6B1-Bn56A0vAHkNov/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15D3xCp7Y7jPBPyGRVb8FB2E4Rz-b22ee/view?usp=drivesdk"
 course: pali-commentaries
 tags:
   - ip-law

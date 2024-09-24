@@ -5,7 +5,7 @@ authors:
 external_url: "https://direct.mit.edu/books/book-pdf/2254885/book_9780262366243.pdf"
 source_url: "https://doi.org/10.7551/mitpress/11765.001.0001"
 drive_links:
-  - "https://drive.google.com/file/d/13BPhePo89NFiSdEfXfa72ha_gm58_S7Z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14hcNVMcZFlo16L1-whFwPJ8XzLP3vkzw/view?usp=drivesdk"
 status: featured
 course: philosophy-of-science
 tags:

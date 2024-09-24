@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.shin-ibs.edu/documents/pwj-new/new10/08Gilday.pdf"
 source_url: "https://pwj.shin-ibs.edu/new-series-number-10-fall-1994"
 drive_links:
-  - "https://drive.google.com/file/d/17F09yKcl1a8KIqDiG3Hl5lDf9zcPWYZX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1AmT0g-bYR8aouI4VFDuLB_sZnA4MkwHv/view?usp=drivesdk"
 course: japan # pretty solidly
 tags:
   - culture
