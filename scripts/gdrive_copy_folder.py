@@ -53,8 +53,30 @@ def trash_all_uncopied_files(root_folder: str):
       source = NEW_FILE_IDS.keyfor(child['id'])
       if source:
         raise RuntimeError(f"\"{child['name']}\" is from {source} but doesn't know it!")
-      print(f"  Trashing uncopied \"{child['name']}\"...")
-      gdrive.trash_drive_file(child['id'])
+      if gdrive.prompt(f"Tash uncopied \"{child['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{root_folder} ?"):
+        gdrive.trash_drive_file(child['id'])
+        print("  Trashed")
+    else:
+      knownfrom = child['properties']['copiedFrom']
+      if knownfrom not in NEW_FILE_IDS:
+        NEW_FILE_IDS[knownfrom] = child['id']
+      if NEW_FILE_IDS[knownfrom] != child['id']:
+        cacheknowncopy = gdrive.session().files().get(
+          fileId=NEW_FILE_IDS[knownfrom],
+          fields="id,name,properties,shortcutDetails,mimeType,parents,owners,trashed,size,createdTime",
+        ).execute()
+        print("Found this file the cache didn't know\n=============")
+        print(json.dumps(child, indent=2, sort_keys=True))
+        print("\nThe file known to the cache is\n===============")
+        print(json.dumps(cacheknowncopy, indent=2, sort_keys=True))
+        print("\nWill trash one of them!")
+        if gdrive.prompt("Shall it be the first one?"):
+          gdrive.trash_drive_file(child['id'])
+          print("  Trashed")
+        else:
+          gdrive.trash_drive_file(cacheknowncopy['id'])
+          NEW_FILE_IDS[knownfrom] = child['id']
+          print("  Trashed")
 
 def get_previously_copied_version(fileid: str):
   if fileid in NEW_FILE_IDS:
@@ -105,11 +127,15 @@ def copy_shortcut(
       fields='name,owners'
     ).execute()
   except HttpError:
-    print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\"")
+    print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{source_shortcut['parents'][0]}")
+    print(f"  Failed to get nominal target of https://drive.google.com/open?id={target_id}")
+    print(f"  Destination folder is {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id}")
+    input( "  Please handle manually, then press enter to continue...")
     return False
   if is_file_mine(target):
     if defer_uncopied_targets is None:
-      print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
+      print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" into {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id} because \"{target['name']}\" ( https://drive.google.com/open?id={target_id} ) is mine and unmigrated!")
+      input("  Please handle manually, then press enter to continue...")
       return False
     defer_uncopied_targets.append(source_shortcut)
     if NEW_FILE_IDS[source_shortcut['parents'][0]] != dest_parent_id:
@@ -151,12 +177,8 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
         ret = copy_request.execute()
       except HttpError as e:
         print(e)
-        ERRORS = []
-        if WRITELOCKFILE.exists():
-          ERRORS = json.load(WRITELOCKFILE.open('r'))
-        ERRORS.append(source_file['id'])
-        json.dump(ERRORS, WRITELOCKFILE.open('w'))
-        return
+        if gdrive.prompt("Retry?", default="y"):
+          return copy_file(source_file, dest_parent_id)
       NEW_FILE_IDS[source_file['id']] = ret['id']
   else:
     register_file_copy_op(source_file['id'], copy_request)
@@ -201,11 +223,7 @@ def perform_pending_file_copy_ops():
   these_ids = [p[0] for p in PENDING_FILE_COPY_OPS]
   with DelayedKeyboardInterrupt():
     json.dump(these_ids, WRITELOCKFILE.open("w"))
-    try:
-      batch_request.execute()
-    except Exception as e:
-      print(e)
-      return
+    batch_request.execute()
     PENDING_FILE_COPY_OPS.clear()
     NEW_FILE_IDS.update(new_ids)
     if len(ERRORS) == 0:
@@ -283,6 +301,27 @@ def replace_links_across_all_docs():
     except:
       print(f"WARNING! Failed to replace links in {document['name']}")
 
+def find_unmigrated_folders():
+  known_folders = json.load(gdrive.FOLDERS_DATA_FILE.open("r"))
+  folderids = set()
+  for tag, folders in known_folders.items():
+    if folders["public"]:
+      folderids.add(gdrive.folderlink_to_id(folders['public']))
+    if folders['private']:
+      folderids.add(gdrive.folderlink_to_id(folders['private']))
+  for folder in gdrive.batch_get_files_by_id(list(folderids), "id,ownedByMe,name,properties,trashed,mimeType"):
+    if folder['mimeType'] != 'application/vnd.google-apps.folder':
+      print(f"ERROR! {folder['id']} is not a folder!!")
+      continue
+    if not folder['ownedByMe']:
+      print(f"ERROR! {gdrive.FOLDER_LINK_PREFIX}{folder['id']} is not owned by me!!")
+      continue
+    if not folder.get('properties', {}).get('copiedFrom'):
+      print(f"ERROR! Folder {folder['id']} owned by me doesn't know where it came from!")
+      continue
+    if folder['trashed']:
+      print(f"ERROR! Folder {folder['id']} is trashed!")
+
 if __name__ == "__main__":
   current_user = gdrive.session().about().get(fields='user').execute()['user']
   print(f"Currently logged in as \"{current_user['displayName']}\"")
@@ -293,7 +332,8 @@ if __name__ == "__main__":
   source_folder = input("Source Folder: ")
   if "http" in source_folder:
     source_folder = gdrive.folderlink_to_id(source_folder)
-  print("Getting children to copy...")
+  print("Verifying copy...")
+  trash_all_uncopied_files(source_folder)
   copy_folder(source_folder)
   if len(PENDING_FILE_COPY_OPS) > 0:
     perform_pending_file_copy_ops()
