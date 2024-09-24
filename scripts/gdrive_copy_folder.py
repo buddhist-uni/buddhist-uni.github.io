@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import json
 import hashlib
 
 from strutils import (
@@ -13,7 +14,10 @@ from googleapiclient.errors import HttpError
 # This horrible, hacked together code uses global variables
 # deal with it B-)
 DEFERRED_SHORTCUTS = []
+# technically can do 100/batch but in practice it will timeout messily sometimes
 PENDING_FILE_COPY_OPS = []
+BATCH_SIZE = 30
+WRITELOCKFILE = gdrive.git_root_folder / "scripts/.gcache/pending_copies.json"
 
 NEW_FILE_IDS_FILE = gdrive.git_root_folder / "scripts/.gcache/new_file_ids.json"
 NEW_FILE_IDS = FileSyncedMap(NEW_FILE_IDS_FILE)
@@ -52,7 +56,7 @@ def trash_all_uncopied_files(root_folder: str):
       print(f"  Trashing uncopied \"{child['name']}\"...")
       gdrive.trash_drive_file(child['id'])
 
-def get_previously_copied_version(fileid: str, filefields="id,name"):
+def get_previously_copied_version(fileid: str):
   if fileid in NEW_FILE_IDS:
     return NEW_FILE_IDS[fileid]
   ret = gdrive.session().files().list(
@@ -61,35 +65,40 @@ def get_previously_copied_version(fileid: str, filefields="id,name"):
       "trashed=false",
     ]),
     pageSize=1,
-    fields=f'files({filefields}),nextPageToken',
+    fields='files(id),nextPageToken',
   ).execute()
   if 'nextPageToken' in ret:
     print(f"WARNING! Multiple copies of {fileid} found! Trashing the first copy...")
     gdrive.trash_drive_file(ret['files'][0]['id'])
-    return get_previously_copied_version(fileid, filefields)
+    return get_previously_copied_version(fileid)
   ret = ret['files']
   if len(ret) == 0:
     return None
-  NEW_FILE_IDS[fileid] = ret[0]
-  return ret[0]
+  NEW_FILE_IDS[fileid] = ret[0]['id']
+  return ret[0]['id']
 
 def copy_shortcut(
     source_shortcut: dict,
     dest_parent_id: str = None,
     defer_uncopied_targets: list[dict] = None,
 ) -> str:
+  shortcut_metadata = {
+    'name': source_shortcut['name'],
+    'mimeType': 'application/vnd.google-apps.shortcut',
+    'properties': {"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME},
+    'parents': [dest_parent_id]
+  }
   target_id = source_shortcut['shortcutDetails']['targetId']
   target_copy = get_previously_copied_version(target_id)
   if target_copy:
-    with DelayedKeyboardInterrupt():
-      ret = gdrive.create_drive_shortcut(
-        target_copy,
-        source_shortcut['name'],
-        dest_parent_id,
-        custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
-      )
-      NEW_FILE_IDS[source_shortcut['id']] = ret
-    return ret
+    shortcut_metadata['shortcutDetails'] = {
+      'targetId': target_copy
+    }
+    register_file_copy_op(
+      source_shortcut['id'],
+      gdrive.session().files().create(body=shortcut_metadata, fields="id"),
+    )
+    return True
   try:
     target = gdrive.session().files().get(
       fileId=target_id,
@@ -97,32 +106,25 @@ def copy_shortcut(
     ).execute()
   except HttpError:
     print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\"")
-    return None
+    return False
   if is_file_mine(target):
     if defer_uncopied_targets is None:
       print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" in {dest_parent_id} because {target['name']} is mine and unmigrated!")
-      return None
+      return False
     defer_uncopied_targets.append(source_shortcut)
     if NEW_FILE_IDS[source_shortcut['parents'][0]] != dest_parent_id:
       raise RuntimeError(f"Shortcut \"{source_shortcut['name']}\" in {source_shortcut['parents']} didn't match the expected destination {dest_parent_id}. Got {NEW_FILE_IDS[source_shortcut['parents'][0]]} instead.")
-    return None
-  with DelayedKeyboardInterrupt():
-    ret = gdrive.create_drive_shortcut(
-      target_id,
-      source_shortcut['name'],
-      dest_parent_id,
-      custom_properties={"copiedFrom": source_shortcut['id'], "createdBy": APP_NAME}
-    )
-    NEW_FILE_IDS[source_shortcut['id']] = ret
-  return ret
+    return False
+  shortcut_metadata['shortcutDetails'] = {
+    'targetId': target_id
+  }
+  register_file_copy_op(
+    source_shortcut['id'],
+    gdrive.session().files().create(body=shortcut_metadata, fields="id")
+  )
+  return True
 
 def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
-  # Uncomment the below check if you have to
-  # dest_id = get_previously_copied_version(source_file['id'])
-  # if dest_id:
-  #   print(f"Skipping already-copied file \"{source_file['name']}\"...")
-  #   NEW_FILE_IDS[source_file['id']] = dest_id
-  #   return dest_id
   properties = {
     'copiedFrom': source_file['id'],
     'createdBy': APP_NAME
@@ -139,18 +141,54 @@ def copy_file(source_file: dict, dest_parent_id: str = None) -> str:
     },
     fields="id"
   )
-  PENDING_FILE_COPY_OPS.append((source_file['id'], copy_request))
-   # technically can do 100/batch but in practice >40 will timeout messily
-  if len(PENDING_FILE_COPY_OPS) == 40:
+  link = source_file.get('properties', {}).get('url')
+  # Google Docs (especially the link files) have to be done individually
+  # For some reason they 500 Error in Batches
+  if link or source_file['mimeType'] == 'application/vnd.google-apps.document':
+    print(f"Copying Google Doc \"{source_file['name']}\"...")
+    with DelayedKeyboardInterrupt():
+      try:
+        ret = copy_request.execute()
+      except HttpError as e:
+        print(e)
+        ERRORS = []
+        if WRITELOCKFILE.exists():
+          ERRORS = json.load(WRITELOCKFILE.open('r'))
+        ERRORS.append(source_file['id'])
+        json.dump(ERRORS, WRITELOCKFILE.open('w'))
+        return
+      NEW_FILE_IDS[source_file['id']] = ret['id']
+  else:
+    register_file_copy_op(source_file['id'], copy_request)
+
+def register_file_copy_op(source_id, copy_request):
+  PENDING_FILE_COPY_OPS.append((source_id, copy_request))
+  if len(PENDING_FILE_COPY_OPS) >= BATCH_SIZE:
     perform_pending_file_copy_ops()
 
+def handle_write_errors(source_file_ids):
+  for source_id in source_file_ids:
+    new_id = get_previously_copied_version(source_id)
+    if new_id:
+      print(f"  Found id for {source_id}")
+      NEW_FILE_IDS[source_id] = new_id
+    else:
+      print(f"  Failed to find id for {source_id}. Run `trash_all_uncopied_files` later.")
+
 def perform_pending_file_copy_ops():
+  if WRITELOCKFILE.exists():
+    print("Writes from last batch didn't finish cleanly. Investigating...")
+    with DelayedKeyboardInterrupt():
+      handle_write_errors(json.load(WRITELOCKFILE.open()))
+      WRITELOCKFILE.unlink()
+  ERRORS = []
   print(f"Copying a batch of {len(PENDING_FILE_COPY_OPS)} files...")
   new_ids = {}
   def _copy_callback(rid, resp, error):
     if error:
       print(f"WARNING! Failed to `copy` fileId={rid}")
       print(error)
+      ERRORS.append(rid)
     else:
       replace_text_across_repo(rid, resp['id'])
       new_ids[rid] = resp['id']
@@ -160,22 +198,29 @@ def perform_pending_file_copy_ops():
   )
   for rid, req in PENDING_FILE_COPY_OPS:
     batch_request.add(request_id=rid, request=req)
+  these_ids = [p[0] for p in PENDING_FILE_COPY_OPS]
   with DelayedKeyboardInterrupt():
-    batch_request.execute()
+    json.dump(these_ids, WRITELOCKFILE.open("w"))
+    try:
+      batch_request.execute()
+    except Exception as e:
+      print(e)
+      return
     PENDING_FILE_COPY_OPS.clear()
     NEW_FILE_IDS.update(new_ids)
+    if len(ERRORS) == 0:
+      WRITELOCKFILE.unlink()
+    else:
+      json.dump(ERRORS, WRITELOCKFILE.open("w"))
 
 def copy_folder(source_folder_id: str, dest_parent_id: str = None):
-  source_folder = gdrive.session().files().get(
-    fileId=source_folder_id,
-    fields="id,name,parents,ownedByMe"
-  ).execute()
-  print(f"Copying \"{source_folder['name']}\"...")
   dest_folder = get_previously_copied_version(source_folder_id)
-  if dest_folder:
-    print("Resuming previous copy...")
-  else:
-    print("Creating new folder...")
+  if not dest_folder:
+    source_folder = gdrive.session().files().get(
+      fileId=source_folder_id,
+      fields="id,name,parents,ownedByMe"
+    ).execute()
+    print(f"Creating new folder \"{source_folder['name']}\"...")
     with DelayedKeyboardInterrupt():
       dest_folder = gdrive.create_folder(
         source_folder['name'],
@@ -195,6 +240,49 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
       copy_file(child, dest_folder)
   replace_text_across_repo(source_folder_id, dest_folder)
 
+def replace_links_in_doc(docid: str):
+  doc = gdrive.docs().get(documentId=docid).execute()
+  print(f"Replacing links in {doc['title']}...")
+  content = doc['body']['content']
+  requests = []
+  for block in content:
+    for element in block.get('paragraph', {}).get('elements', []):
+      linkurl = element.get('textRun', {
+        }).get('textStyle',{
+        }).get('link',{
+        }).get('url')
+      if linkurl:
+        for oldid, newid in NEW_FILE_IDS.items.items():
+          if oldid in linkurl:
+            print(f"  Found old link \"{element['textRun']['content']}\"...")
+            requests.append({
+              'updateTextStyle': {
+                'fields': 'link',
+                'textStyle': {
+                  'link': {
+                    'url': linkurl.replace(oldid, newid)
+                  }
+                },
+                'range': {
+                  'startIndex': element['startIndex'],
+                  'endIndex': element['endIndex']
+                }
+              }
+            })
+            break
+  if len(requests) == 0:
+    print("  Nothing to do")
+    return
+  print("  Making changes...")
+  gdrive.docs().batchUpdate(documentId=docid, body={'requests':requests}).execute()
+  
+def replace_links_across_all_docs():
+  for document in gdrive.all_files_matching("mimeType='application/vnd.google-apps.document' and 'me' in owners", "id,name"):
+    try:
+      replace_links_in_doc(document['id'])
+    except:
+      print(f"WARNING! Failed to replace links in {document['name']}")
+
 if __name__ == "__main__":
   current_user = gdrive.session().about().get(fields='user').execute()['user']
   print(f"Currently logged in as \"{current_user['displayName']}\"")
@@ -205,6 +293,7 @@ if __name__ == "__main__":
   source_folder = input("Source Folder: ")
   if "http" in source_folder:
     source_folder = gdrive.folderlink_to_id(source_folder)
+  print("Getting children to copy...")
   copy_folder(source_folder)
   if len(PENDING_FILE_COPY_OPS) > 0:
     perform_pending_file_copy_ops()
