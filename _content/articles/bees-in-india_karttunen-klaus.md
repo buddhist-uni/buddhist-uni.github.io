@@ -2,7 +2,7 @@
 title: "Bhramarotpītādharaḥ: Bees in Classical India"
 authors: ["Klaus Karttunen"]
 drive_links:
-  - "https://drive.google.com/file/d/1WB6DskKHRgBHSb0KkoOKqF7YDFuxIyR5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ke9_sZlUa_r6BFLQFeAMTyJK7-Gs2QGT/view?usp=drivesdk"
 external_url: "https://journal.fi/store/article/view/52400/16250"
 tags:
   - animalia

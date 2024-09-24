@@ -10,7 +10,7 @@ with yaspin(text="Initializing..."):
   course_list = None
   predictor= None
   LOCAL_FOLDER = git_root_folder.joinpath("../To Go Through")
-  REMOTE_FOLDER = "16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_"
+  REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = sorted([f for f in LOCAL_FOLDER.iterdir() if f.is_file()], key=lambda f: -f.stat().st_size)
 
 for fp in local_files:

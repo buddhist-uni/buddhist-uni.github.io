@@ -5,7 +5,7 @@ authors:
   - "Hannah Gould"
 external_url: "https://doi.org/10.3390/rel12080667"
 drive_links:
-  - "https://drive.google.com/file/d/1owUFC0hH6_FfVVvMEOHbpx6M-2uxCV1z/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1lJAPw4YGtKv52tn9RIApg3CD__kvdB6O/view?usp=drivesdk"
 tags:
   - death
   - nature

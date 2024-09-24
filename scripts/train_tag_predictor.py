@@ -284,7 +284,7 @@ def get_trainable_gfiles_from_site():
         if f['mimeType'] not in TRAINABLE_MIMETYPES:
             continue
         f['size'] = int(f['size'])
-        f['parent'] = '1Ih3PRUKLHaWzVvoVVkCRuaCzbsjreQXa'
+        f['parent'] = '1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi'
         ret.append(f)
     return ret
 

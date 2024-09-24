@@ -8,7 +8,7 @@ authors:
 external_url: "https://www.zakstein.org/uploads/1/4/2/4/142408092/stagescenterpub.pdf"
 source_url: "https://doi.org/10.1016/j.newideapsych.2004.11.004"
 drive_links:
-  - "https://drive.google.com/file/d/1Cn3PML5YLJp16AVvofRDIyTDoUisGPv4/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Wyo9REOya1GlXiipbr5qBQ2WP8HR5-uw/view?usp=drivesdk"
 tags:
   - intelligence
   - childhood

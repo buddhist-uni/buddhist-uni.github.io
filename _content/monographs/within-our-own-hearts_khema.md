@@ -4,7 +4,7 @@ authors:
   - khema
 external_url: "https://www.bps.lk/olib/bp/bp518s_Khema_Within-Our-Own-Hearts.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1pOFiGiXYuwyHx-pKLFw01aoq_HqAXlDs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TIl-utsdDn0DpKPzCwy_VSMy6L5pK552/view?usp=drivesdk"
 tags:
   - function
 year: 1988

@@ -31,7 +31,7 @@ MY_EMAILS = {
   'd97d9501979b0a1442b0482418509a84',
 }
 APP_NAME = "LibraryUtils.FolderCopier"
-SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType,parents"
+SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType,parents,size,createdTime"
 
 def md5(text):
   return hashlib.md5(text.encode()).hexdigest()
@@ -41,6 +41,14 @@ def is_file_mine(file):
     if md5(owner['emailAddress']) in MY_EMAILS:
       return True
   return False
+
+def link_folder_to_new_version(root_folder: str, folder_name: str):
+  if "http" in root_folder:
+    root_folder = gdrive.folderlink_to_id(root_folder)
+  gdrive.create_drive_shortcut(NEW_FILE_IDS[root_folder], "[~NEW VERSION~] "+folder_name, root_folder)
+  print(folder_name)
+  for child in gdrive.all_files_matching(f"'{root_folder}' in parents and trashed=false and mimeType='application/vnd.google-apps.folder'", "id,name"):
+    link_folder_to_new_version(child['id'], child['name'])
 
 def trash_all_uncopied_files(root_folder: str):
   if "http" in root_folder:
@@ -63,20 +71,17 @@ def trash_all_uncopied_files(root_folder: str):
       if NEW_FILE_IDS[knownfrom] != child['id']:
         cacheknowncopy = gdrive.session().files().get(
           fileId=NEW_FILE_IDS[knownfrom],
-          fields="id,name,properties,shortcutDetails,mimeType,parents,owners,trashed,size,createdTime",
+          fields="id,trashed,size",
         ).execute()
-        print("Found this file the cache didn't know\n=============")
-        print(json.dumps(child, indent=2, sort_keys=True))
-        print("\nThe file known to the cache is\n===============")
-        print(json.dumps(cacheknowncopy, indent=2, sort_keys=True))
-        print("\nWill trash one of them!")
-        if gdrive.prompt("Shall it be the first one?"):
+        print(f"Found duplicate copy of \"{child['name']}\"")
+        if int(child['size']) <= int(cacheknowncopy['size']) and not cacheknowncopy['trashed']:
           gdrive.trash_drive_file(child['id'])
-          print("  Trashed")
+          replace_text_across_repo(child['id'], cacheknowncopy['id'])
         else:
           gdrive.trash_drive_file(cacheknowncopy['id'])
           NEW_FILE_IDS[knownfrom] = child['id']
-          print("  Trashed")
+          replace_text_across_repo(cacheknowncopy['id'], child['id'])
+        print("  It has been trashed")
 
 def get_previously_copied_version(fileid: str):
   if fileid in NEW_FILE_IDS:
@@ -131,6 +136,7 @@ def copy_shortcut(
     print(f"  Failed to get nominal target of https://drive.google.com/open?id={target_id}")
     print(f"  Destination folder is {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id}")
     input( "  Please handle manually, then press enter to continue...")
+    print("\n")
     return False
   if is_file_mine(target):
     if defer_uncopied_targets is None:
@@ -333,8 +339,8 @@ if __name__ == "__main__":
   if "http" in source_folder:
     source_folder = gdrive.folderlink_to_id(source_folder)
   print("Verifying copy...")
-  trash_all_uncopied_files(source_folder)
   copy_folder(source_folder)
+  trash_all_uncopied_files(NEW_FILE_IDS[source_folder])
   if len(PENDING_FILE_COPY_OPS) > 0:
     perform_pending_file_copy_ops()
   if len(DEFERRED_SHORTCUTS) > 0:

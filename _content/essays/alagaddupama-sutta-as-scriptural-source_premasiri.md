@@ -7,7 +7,7 @@ journal: bsr
 volume: 35
 pages: "111--123"
 drive_links: 
-  - "https://drive.google.com/file/d/1DF288lQamGvFuk92iagQW92FiuJ23unp/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ln_d2IXPr9LlEUYhauuVwUJhsYKa7SPE/view?usp=drivesdk"
 tags:
   - philosophy
   - dialogue

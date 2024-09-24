@@ -12,7 +12,7 @@ address: "Sri Lanka"
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/encyclopedia-entries/raga.pdf"
 year: 2005
 drive_links:
- - "https://drive.google.com/file/d/1m-VvCGT4StpZBleIEd_3XtwpXJ4ZZlig/view?usp=drivesdk"
+ - "https://drive.google.com/file/d/1Die9tgJNG_urUkxbut9y2JHO-LXPH0rX/view?usp=drivesdk"
 tags:
   - philosophy
   - psychology

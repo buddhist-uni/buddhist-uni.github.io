@@ -4,7 +4,7 @@ authors:
   - "Fung Kei Cheng"
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/88"
 drive_links: 
-  - "https://drive.google.com/file/d/1qmaloVOoo8zif50GWuU3CyDp4vu4vAuK/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1dEPi1-b0HK1P8nOYiyFMjp6A6HzjyfZt/view?usp=drivesdk"
 tags:
   - activism
   - medicine

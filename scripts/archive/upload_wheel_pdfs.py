@@ -17,7 +17,7 @@ for fd in root.iterdir():
   epubs = gdrive.files_exactly_named(fd.stem + ".epub")
   if len(epubs) == 0:
     print("  Didn't find it\n  Uploading to Go Through...")
-    gdrive.upload_to_google_drive(fd, folder_id="16-z8CRbEfo3L8DTUpR76Sq1uCs4Am5b_")
+    gdrive.upload_to_google_drive(fd, folder_id="1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2")
     continue
   folder = epubs[0]['parents'][0]
   pfolder = private_folders.get(folder)
