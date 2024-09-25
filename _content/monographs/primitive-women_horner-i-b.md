@@ -5,7 +5,7 @@ authors:
 external_url: "http://www.kbrl.gov.mm/book/details/001812"
 source_url: "https://archive.org/details/dli.csl.3764/3764.repaired.cairo"
 drive_links:
-  - "https://drive.google.com/file/d/1i-Osd67JGoAby0Z3UiP9_XbPqPJAUIms/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1hoNCAYdnnN5kGeujcF-9gJIQP0Q0UcKo/view?usp=drivesdk"
 tags:
   - setting
   - form

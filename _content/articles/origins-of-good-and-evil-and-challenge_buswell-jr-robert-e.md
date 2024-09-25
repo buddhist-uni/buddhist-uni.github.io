@@ -5,7 +5,7 @@ authors:
 source_url: "https://doi.org/10.18399/acta.2019.22.2.001"
 external_url: "https://muse.jhu.edu/article/756403/pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1N37KSEukBE3SRSm2KLMT88M6kh463ykW/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1L9i1z5Plvxjzneg_h98QZ0_QUzcnZRT7/view?usp=drivesdk"
 tags:
   - korean
   - interfaith

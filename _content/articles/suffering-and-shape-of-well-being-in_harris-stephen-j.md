@@ -5,7 +5,7 @@ authors:
 external_url: "https://philpapers.org/archive/HARSAT-21.pdf"
 source_url: "https://doi.org/10.1080/09552367.2014.952931"
 drive_links:
-  - "https://drive.google.com/file/d/14nsaiyOUzGjMtF83u4MT4W6ydp5gI_c-/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/13TKxzaM2a-pNd8CFyRoJqAF7wFMpNlm6/view?usp=drivesdk"
 tags:
   - dialogue
   - monastic

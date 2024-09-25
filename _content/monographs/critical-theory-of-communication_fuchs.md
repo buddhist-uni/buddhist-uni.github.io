@@ -4,7 +4,7 @@ authors:
   - "Christian Fuchs"
 external_url: "https://doi.org/10.16997/book1"
 drive_links:
-  - "https://drive.google.com/file/d/1-EkBjWL3S0IOxcxcHpx0WX1Cw7Z9gzOL/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19TDX3tMwE3qJ9xqUqafdsUUfLq1_336J/view?usp=drivesdk"
 tags:
   - marxism
   - communication

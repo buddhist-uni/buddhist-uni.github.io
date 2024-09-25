@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc2695992?pdf=render"
 source_url: "https://doi.org/10.1016/j.psyneuen.2008.08.011"
 drive_links:
-  - "https://drive.google.com/file/d/1wt6WwG1OGD1bn4h_ZNFHEyY0ijvW-Mxf/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1WX3SQUJ-QUAVIoz3Exv6pIBJvhTj0Xk2/view?usp=drivesdk"
 tags:
   - brahmavihara
   - health

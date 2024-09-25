@@ -9,7 +9,7 @@ authors:
 external_url: "https://downloads.hindawi.com/journals/crips/2012/232740.pdf"
 source_url: "https://doi.org/10.1155/2012/232740"
 drive_links:
-  - "https://drive.google.com/file/d/1RCd5cPu7P1iqOMQ-PVXvCjNAL81pqms5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1IhExtESIyveVdSb-bE0aZ63pwbradm2c/view?usp=drivesdk"
 tags:
   - sri-lanka
   - perception

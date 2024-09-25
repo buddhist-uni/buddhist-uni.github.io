@@ -4,7 +4,7 @@ authors:
   - jayasaro
 external_url: "https://www.jayasaro.panyaprateep.org/files/audiovideo/2554/000065/2551.02.03%20Time.mp3"
 drive_links:
-  - "https://drive.google.com/file/d/1_LJRt3yFUbgX2L_3F-C_t28k3EiEHfjH/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1G1aMpjOn_ZZnUnbGUyB0ecJP1RCK90Lz/view?usp=drivesdk"
 tags:
   - time
   - inner

@@ -3,7 +3,7 @@ title: "Discoid Weapons in Ancient India"
 authors:
   - wijesekera
 drive_links:
-  - "https://drive.google.com/file/d/1GjFBfz6z24QuMKjWuX0uSCrIwzNh4WFM/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/15S7ADYTz_nNtJfM3DSNp7B9Ev6Js2okt/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Discoid%20Weapons%20in%20Ancient%20India%20-%20Wijesekera.pdf"
 tags:

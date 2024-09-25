@@ -6,7 +6,7 @@ translator: "Somseen Chanawangsa"
 external_url: "https://www.watnyanaves.net/uploads/File/books/pdf/the_pali_canon_what_a_buddhist_must_know.pdf"
 alternate_url: "https://pagoda.or.th/ebook-english-books/the-pali-canon-what-a-buddhist-must-know-2.html"
 drive_links:
-  - "https://drive.google.com/file/d/1S44M_JD8iSRaFNrVumvgCvc5NhFg2YtB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CXzMQo4h4TvqddhOLakTpOWh06eBygny/view?usp=drivesdk"
 tags:
   - pali-canon
   - theravada

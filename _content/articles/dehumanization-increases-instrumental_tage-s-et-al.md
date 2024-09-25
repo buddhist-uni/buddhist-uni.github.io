@@ -7,7 +7,7 @@ authors:
 external_url: "https://www.pnas.org/content/pnas/114/32/8511.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1705238114"
 drive_links:
-  - "https://drive.google.com/file/d/17llxr9ugzg_6Fds0PY3atbhtxJ8_OXYB/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1uYHA3erNPlQ11FPyJCVaBM-HxvlaTLuz/view?usp=drivesdk"
 tags: # 2 stars as the conclusion is so obvious
   - perception
   - groups

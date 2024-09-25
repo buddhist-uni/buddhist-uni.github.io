@@ -20,6 +20,7 @@ MY_EMAILS = {
 
 TD = 'td style="padding:5pt;"'
 
+# Dupe from strutils to avoid all those imports
 def md5(text):
   return hashlib.md5(text.encode()).hexdigest()
 

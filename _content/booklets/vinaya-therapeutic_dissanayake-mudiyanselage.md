@@ -5,7 +5,7 @@ authors:
 subcat: thesis
 external_url: "https://hub.hku.hk/handle/10722/328215"
 drive_links:
-  - "https://drive.google.com/file/d/1hVOU2guPe_NmBlRU1VGm115I4hnFHe8d/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1t-JTEUvilquEkHxGBJgzpqsf7hFQ9Yct/view?usp=drivesdk"
 tags:
   - vinaya-studies
   - psychotherapy

@@ -4,7 +4,7 @@ authors:
   - dhammika
 external_url: "https://budblooms.org/2021/01/25/like-milk-and-water-mixed/"
 drive_links:
-  - "https://drive.google.com/file/d/120JoXJTBddY2YDGxaUSZ3PHn_W3jX6ww/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iYZREEIq8vEMrLWiQZwK8bbb-1yVWycL/view?usp=drivesdk"
 course: groups
 tags:
   - brahmavihara

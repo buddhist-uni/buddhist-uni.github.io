@@ -4,7 +4,7 @@ authors:
   - skilling
 external_url: "https://www.shin-ibs.edu/documents/pwj3-11/03Skilling.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1QEPW0Cp-h_IZjHNCfOmnUIJ1bw7TmmjX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1r3HXu3iWdJN6OGogBRSGnSQurPjYXyGQ/view?usp=drivesdk"
 tags:
   - theravada-roots
 year: 2009

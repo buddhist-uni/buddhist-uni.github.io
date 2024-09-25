@@ -6,7 +6,7 @@ authors:
 external_url: "https://nirc.nanzan-u.ac.jp/nfile/2854/"
 source_url: "https://doi.org/10.18874/jjrs.31.2.2004.417-428"
 drive_links:
-  - "https://drive.google.com/file/d/1YXesihgMnIq9wFf3oAaEN4m1sW64UQTs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1iK9uPH1iagguM6Ej6BRNDVkiFHxsPMqr/view?usp=drivesdk"
 tags:
   - japanese
   - engaged

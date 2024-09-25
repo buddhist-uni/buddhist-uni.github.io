@@ -5,7 +5,7 @@ authors:
 external_url: "https://archive.org/download/indologica-turinensia-buddhismo/Araghatta_text.pdf"
 source_url: "http://www.asiainstitutetorino.it/Indologica/index-volume08-09.asp"
 drive_links:
-  - "https://drive.google.com/file/d/1ad3wrMaA6mh8NlO34EmpP3qV_LVKXi79/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Wlsd7w_qgVeUSfOlPPhb1rWSXXUYR3Wt/view?usp=drivesdk"
 tags:
   - setting
   - pali-dictionaries

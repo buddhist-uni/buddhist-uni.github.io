@@ -6,7 +6,7 @@ authors:
   - "Wu Shu"
 external_url: "https://www.bps.lk/olib/wh/wh003_Jayatilleke_et_al_Buddhism-and-Science.html"
 drive_links:
-  - "https://drive.google.com/file/d/1V3bPC8ILiC0u03VTmcVDfTG6QYQWjfNJ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1L7tsRmqpnJSjlS4vWFCD09qxf44WJ9qG/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Ch_etgh-XLfZQD7VvI3Z-7Iof3dLeMm8/view?usp=drivesdk"
 base_value: 1
 tags:

@@ -3,7 +3,7 @@ title: "A Pāli Reference to Brāhmaṇa-Caraṇas"
 authors:
   - wijesekera
 drive_links:
-  - "https://drive.google.com/file/d/1L34rZUsEM1_P-sbaUUhh_0E0DrfEue4k/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1HMQ43qo7dm0F8b-LZLgrVp8--N6186ZL/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Brahmana-caranas%20-%20Wijesekera.pdf"
 tags:

@@ -4,7 +4,7 @@ translator: anandajoti
 slug: "an.006.037+cy"
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Chalangadana.htm"
 drive_links:
-  - "https://drive.google.com/file/d/1eVL-wsI0q1miy1Z-j4A4dZh0WMzabcn9/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/19XOB_Yt3Q0_0lPsLE9BYfSdOhJ1XK4zK/view?usp=drivesdk"
 course: theravada-roots
 status: featured
 tags:

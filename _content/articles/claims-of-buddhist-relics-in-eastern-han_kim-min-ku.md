@@ -4,7 +4,7 @@ authors:
   - "Min-Ku Kim"
 external_url: "https://doi.org/10.3998/ars.13441566.0044.008"
 drive_links:
-  - "https://drive.google.com/file/d/1FMPnwIWN6remdWYFne7F-6Z-x6DiDiF5/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1Cbnv6bSNkqSMcRZVggeIdA3p7cxsVWUJ/view?usp=drivesdk"
 tags:
   - east-asian-roots
   - historiography

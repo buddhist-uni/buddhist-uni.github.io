@@ -4,7 +4,7 @@ authors:
   - "Peter Hershock"
 external_url: "http://www.thezensite.com/ZenEssays/Philosophical/Person_as_Narration_Hershock.html"
 drive_links:
-  - "https://drive.google.com/file/d/1JwKLTkQPAfxqx5Jczv5ShDXM274cYoL8/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1W9pz7CdxBz-YT4A3X9utbwrvZ_nMUQqp/view?usp=drivesdk"
 tags:
   - inner
   - karma

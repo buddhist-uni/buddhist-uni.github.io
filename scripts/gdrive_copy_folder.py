@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 import json
-import hashlib
 
 from strutils import (
+  FileSyncedSet,
   FileSyncedMap, 
   replace_text_across_repo,
   DelayedKeyboardInterrupt,
+  md5,
 )
 import gdrive
 from googleapiclient.errors import HttpError
@@ -18,6 +19,8 @@ DEFERRED_SHORTCUTS = []
 PENDING_FILE_COPY_OPS = []
 BATCH_SIZE = 30
 WRITELOCKFILE = gdrive.git_root_folder / "scripts/.gcache/pending_copies.json"
+ASKED_ABOUT_FILE = gdrive.git_root_folder / "scripts/.gcache/asked_about.txt"
+ASKED_ABOUT = FileSyncedSet(ASKED_ABOUT_FILE)
 
 NEW_FILE_IDS_FILE = gdrive.git_root_folder / "scripts/.gcache/new_file_ids.json"
 NEW_FILE_IDS = FileSyncedMap(NEW_FILE_IDS_FILE)
@@ -33,8 +36,6 @@ MY_EMAILS = {
 APP_NAME = "LibraryUtils.FolderCopier"
 SOURCE_FILE_FIELDS = "id,name,properties,shortcutDetails,mimeType,parents,size,createdTime"
 
-def md5(text):
-  return hashlib.md5(text.encode()).hexdigest()
 
 def is_file_mine(file):
   for owner in file['owners']:
@@ -68,9 +69,13 @@ def trash_all_uncopied_files(root_folder: str):
       source = NEW_FILE_IDS.keyfor(child['id'])
       if source:
         raise RuntimeError(f"\"{child['name']}\" is from {source} but doesn't know it!")
+      if child['id'] in ASKED_ABOUT:
+        continue
       if gdrive.prompt(f"Tash uncopied \"{child['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{root_folder} ?"):
         gdrive.trash_drive_file(child['id'])
         print("  Trashed")
+      else:
+        ASKED_ABOUT.add(child['id'])
     else:
       knownfrom = child['properties']['copiedFrom']
       if knownfrom not in NEW_FILE_IDS:
@@ -139,16 +144,20 @@ def copy_shortcut(
       fields='name,owners'
     ).execute()
   except HttpError:
-    print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{source_shortcut['parents'][0]}")
-    print(f"  Failed to get nominal target of https://drive.google.com/open?id={target_id}")
-    print(f"  Destination folder is {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id}")
-    input( "  Please handle manually, then press enter to continue...")
-    print("\n")
+    if source_shortcut['id'] not in ASKED_ABOUT:
+      print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{source_shortcut['parents'][0]}")
+      print(f"  Failed to get nominal target of https://drive.google.com/open?id={target_id}")
+      print(f"  Destination folder is {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id}")
+      input( "  Please handle manually, then press enter to continue...")
+      print("\n")
+      ASKED_ABOUT.add(source_shortcut['id'])
     return False
   if is_file_mine(target):
     if defer_uncopied_targets is None:
-      print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" into {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id} because \"{target['name']}\" ( https://drive.google.com/open?id={target_id} ) is mine and unmigrated!")
-      input("  Please handle manually, then press enter to continue...")
+      if not source_shortcut['id'] in ASKED_ABOUT:
+        print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" into {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id} because \"{target['name']}\" ( https://drive.google.com/open?id={target_id} ) is mine and unmigrated!")
+        input("  Please handle manually, then press enter to continue...")
+        ASKED_ABOUT.add(source_shortcut['id'])
       return False
     defer_uncopied_targets.append(source_shortcut)
     if NEW_FILE_IDS[source_shortcut['parents'][0]] != dest_parent_id:

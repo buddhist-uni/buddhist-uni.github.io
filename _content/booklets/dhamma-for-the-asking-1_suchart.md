@@ -6,7 +6,7 @@ source_url: "http://www.kammatthana.com/dhamma%20for%20the%20asking.pdf"
 file_links:
   - "exclusive_01/Dhamma%20for%20the%20Asking%20-%20Ajahn%20Suchart%20Abhijato.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1KXKBll-Ztom3_3a_PN0HrGIeI68TJr_x/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1CfgxcRHB4MvWillYSBFAxEQob_jNL_gG/view?usp=drivesdk"
 tags:
   - buddhism
   - view

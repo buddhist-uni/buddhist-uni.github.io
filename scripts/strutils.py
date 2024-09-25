@@ -100,6 +100,9 @@ def sanitize_string(text):
 def atoi(text):
     return int(text) if text.isdigit() else text
 
+def md5(text):
+  return hashlib.md5(text.encode()).hexdigest()
+
 def cumsum(vec):
     return reduce(lambda a,x: a+[a[-1]+x] if a else [x], vec, [])
 

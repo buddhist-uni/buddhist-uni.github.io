@@ -59,11 +59,23 @@ DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
 
 def link_to_id(link):
-  ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link)?$', link)
-  return ret.groups()[0] if ret else None
+  ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?$', link)
+  if ret:
+    return ret.groups()[0]
+  ret = folderlink_to_id(link)
+  if ret:
+    return ret
+  if link.startswith("https://drive.google.com/open?id="):
+    return link[len("https://drive.google.com/open?id="):].split('&')[0]
+  return None
 
 def folderlink_to_id(link):
-  return link if not link else link.replace(FOLDER_LINK_PREFIX, "")
+  if link.startswith(FOLDER_LINK_PREFIX):
+    ret = link[len(FOLDER_LINK_PREFIX):]
+    return ret.split('?')[0].split('/')[0]
+  if link.startswith("https://drive.google.com/folderview?id="):
+    return link[len("https://drive.google.com/folderview?id="):].split('&')[0]
+  return None
 
 def get_known_courses():
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
@@ -374,12 +386,36 @@ def all_files_matching(query: str, fields: str):
     'pageSize': 100,
     'orderBy': "createdTime", # go in chronological order by default
   }
-  results = files.list(**params).execute()
+  retries = 0
+  results = None
+  while not results:
+    try:
+      results = files.list(**params).execute()
+    except Exception as e:
+      print(f"Error fetching all_files_matching: {e}")
+      if retries < 5:
+        retries += 1
+        print(f"Retrying ({retries})...")
+        continue
+      else:
+        raise
   for item in results.get('files', []):
     yield item
   while 'nextPageToken' in results:
     params['pageToken'] = results['nextPageToken']
-    results = files.list(**params).execute()
+    try:
+      results = files.list(**params).execute()
+    except Exception as e:
+      print(f"Error fetching all_files_matching: {e}")
+      if retries < 5:
+        retries += 1
+        print(f"Retrying ({retries})...")
+        continue
+      else:
+        raise
+    if retries > 0:
+      retries = 0
+      print("Success!")
     for item in results.get('files', []):
       yield item
 

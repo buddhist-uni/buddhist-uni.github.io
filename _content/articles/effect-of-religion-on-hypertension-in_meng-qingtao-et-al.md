@@ -9,7 +9,7 @@ authors:
 external_url: "https://europepmc.org/articles/pmc5974409?pdf=render"
 source_url: "https://doi.org/10.1038/s41598-018-26638-4"
 drive_links:
-  - "https://drive.google.com/file/d/1IBVg_uwh8pw0PYdyMz4hDZ4R66qPrrBn/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1xxuQZHqC9UcD46TlkR6ShsosZ991zsae/view?usp=drivesdk"
 tags:
   - health
   - mahayana
