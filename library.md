@@ -52,7 +52,7 @@ And here are lists of our:
   - [<i class="far fa-building"></i> Publishers](/publishers)
   - [<i class="far fa-newspaper"></i> Journals](/journals)
   - [<i class="fas fa-swatchbook"></i> Series](/series)
-  - [<i class="fas fa-link"></i> Online Sources](/sources)
+  - [<i class="fas fa-link"></i> Sources](/sources)
   - [<i class="fas fa-gem"></i> Exclusive Content you won't find anywhere else!]({% link exclusive.md %})
 {:.pl-4}
 

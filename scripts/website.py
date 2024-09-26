@@ -151,6 +151,7 @@ def load():
       if contentfile.is_dir() or contentfile.name.startswith('.'):
         continue
       content.append(ContentFile.load(contentfile))
+  content sort(key=lambda c: c.url)
   content.sort(key=lambda c: c.created_at)
   for tagfile in root_folder.joinpath('_tags').iterdir():
     if (not tagfile.is_file()) or tagfile.name.startswith('.'):

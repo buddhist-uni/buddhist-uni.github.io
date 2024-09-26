@@ -1,7 +1,7 @@
 {
  "": {
-  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
-  "private": null
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi"
  },
  "abhidhamma": {
   "private": "https://drive.google.com/drive/folders/1eArF4ncDeV0oBRns3C-rR6QL89jstUkc",
@@ -112,8 +112,8 @@
   "public": null
  },
  "archive": {
-  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi",
-  "private": null
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi"
  },
  "arctic": {
   "private": "https://drive.google.com/drive/folders/1PYRz30c6vLMOhtllHqr099CH78DwkiSw",
@@ -1213,6 +1213,10 @@
  },
  "perf-stud": {
   "private": "https://drive.google.com/drive/folders/1m3ZwnrmG_biVNrvbZIFKfM-gL4GbObk7",
+  "public": null
+ },
+ "pets": {
+  "private": "https://drive.google.com/drive/folders/1E5DgBxrAOhlKww77XCDUs3hXUNxSkD7c",
   "public": null
  },
  "philippines": {
