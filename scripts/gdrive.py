@@ -59,6 +59,8 @@ DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
 
 def link_to_id(link):
+  if not link:
+    return None
   ret = re.search(r'/d/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?$', link)
   if ret:
     return ret.groups()[0]
@@ -70,6 +72,8 @@ def link_to_id(link):
   return None
 
 def folderlink_to_id(link):
+  if not link:
+    return None
   if link.startswith(FOLDER_LINK_PREFIX):
     ret = link[len(FOLDER_LINK_PREFIX):]
     return ret.split('?')[0].split('/')[0]

@@ -3,6 +3,8 @@ filehost: "https://buddhistuniversity.net/"
 noreferrerhosts:
   - "https://www.shin-ibs.edu"
 
+mins_per_page: 2.0 # assume each page takes this long to read
+
 ### Content Similarity Algorithm Parameters
 ## Number of similar works to recommend
 similar_count: 10

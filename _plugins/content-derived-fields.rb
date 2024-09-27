@@ -16,8 +16,7 @@ module Jekyll
         max_expected_mins: 60.0,
         max_expected_mins_featured: 90.0,
         x_inter: -0.2,
-        y_asymt: -165.0,
-        mins_per_page: 2.0
+        y_asymt: -165.0
     }
     @@etm[:offset] = @@etm[:x_inter] / @@etm[:y_asymt]
     def self.expected_mins(item)
@@ -92,7 +91,7 @@ module Jekyll
         end
         item.data['total_mins'] = item.data['minutes'].to_f
         if item.data['page_count'] and !(item.data['minutes'])
-            item.data['total_mins'] = item.data['page_count'].to_f * @@etm[:mins_per_page]
+            item.data['total_mins'] = item.data['page_count'].to_f * item.site.data['content']['mins_per_page']
             if item.data['category'] == 'canon'
                 item.data['total_mins'] *= 2.5 # Assume canonical works require deeper reading
             elsif item.data['category'] == 'reference'
