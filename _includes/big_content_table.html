@@ -100,6 +100,14 @@
 <script>
   const initialwindowwidth = $(window).width();
   const mainContentList = new DataTable("#mainContentList", {
+    // Attempt to fix a scroll jumping bug on mobile
+    // https://stackoverflow.com/a/38276508
+    "preDrawCallback": function (settings) {
+        pageScrollPos = $('div.dataTables_scrollBody').scrollTop();
+    },
+    "drawCallback": function (settings) {
+        $('div.dataTables_scrollBody').scrollTop(pageScrollPos);
+    },
     "order": [], // Save the page order as the default sort
     "layout": {
       "topStart": {

@@ -283,10 +283,17 @@ def copy_folder(source_folder_id: str, dest_parent_id: str = None):
 def replace_links_in_doc(docid: str):
   doc = gdrive.docs().get(documentId=docid).execute()
   print(f"Replacing links in {doc['title']}...")
-  content = doc['body']['content']
+  elements = []
   requests = []
-  for block in content:
+  for block in doc['body']['content']:
+    for row in block.get('table', {}).get('tableRows', []):
+      for cell in row.get('tableCells', []):
+        for cellcontent in cell.get('content', []):
+          for element in cellcontent.get('paragraph', {}).get('elements', []):
+            elements.append(element)
     for element in block.get('paragraph', {}).get('elements', []):
+      elements.append(element)
+  for element in elements:
       linkurl = element.get('textRun', {
         }).get('textStyle',{
         }).get('link',{
@@ -316,8 +323,13 @@ def replace_links_in_doc(docid: str):
   print("  Making changes...")
   gdrive.docs().batchUpdate(documentId=docid, body={'requests':requests}).execute()
   
-def replace_links_across_all_docs():
-  for document in gdrive.all_files_matching("mimeType='application/vnd.google-apps.document' and 'me' in owners", "id,name"):
+def replace_links_across_all_docs(partialname: str = None):
+  query = "mimeType='application/vnd.google-apps.document' and 'me' in owners"
+  if partialname:
+    query += f" and name contains '{partialname}'"
+  for document in gdrive.all_files_matching(query, "id,name"):
+    if partialname not in document['name']:
+      continue
     try:
       replace_links_in_doc(document['id'])
     except:
@@ -343,6 +355,34 @@ def find_unmigrated_folders():
       continue
     if folder['trashed']:
       print(f"ERROR! Folder {folder['id']} is trashed!")
+
+def update_pkl_filenames():
+  def new_batch():
+    return gdrive.BatchHttpRequest(
+      callback=lambda gid, ret, errror: print(f"Renamed {gid}"),
+      batch_uri="https://www.googleapis.com/batch/drive/v3"
+    )
+  batch = new_batch()
+  for doc in gdrive.all_files_matching("'1b1dOGh-fmbOhmwoPEnUgDehpqnQhOJ8Z' in parents and trashed=false", "id,name"):
+    nid = doc['name'][0:-4]
+    new_id = get_previously_copied_version(nid)
+    if not new_id:
+      print(f"...no new name for {doc['name']} (migrated already?)")
+    else:
+      batch.add(
+        request=gdrive.session().files().update(
+          fileId=doc['id'],
+          body={
+            'name': f"{new_id}.{doc['name'].split('.')[-1]}"
+          }
+        ),
+        request_id=doc['id']
+      )
+      if len(batch._requests) > 49:
+        batch.execute()
+        batch = new_batch()
+  if len(batch._requests) > 0:
+    batch.execute()
 
 if __name__ == "__main__":
   current_user = gdrive.session().about().get(fields='user').execute()['user']
