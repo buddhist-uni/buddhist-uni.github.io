@@ -1,11 +1,11 @@
 ---
 title: "The Itivuttaka: Buddha's Sayings"
-authors: ireland
+authors: [ireland]
 external_url: "https://readingfaithfully.org/itivuttaka-the-buddhas-sayings-translated-by-john-d-ireland-epub-kindle-pdf/"
 drive_links:
-  - "https://drive.google.com/file/d/12Tjx_JKzmxdMChWMt0YM_L1vA1jSQtiN/view?usp=drive_link"
-  - "https://drive.google.com/file/d/1Lh56kURtwqss5NDOwd08S4q03GVaszif/view?usp=drive_link"
-  - "https://drive.google.com/drive/folders/1C3T-Xh7fk0ynlQvuMmw3O68j7RPGs-eT?usp=drive_link"
+  - "https://drive.google.com/file/d/1FTB4QFBGNxVGoVAcQs-j9BdY-piZuMBw/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1VNxFhCTPv5RNL9UG7Wbx9PYJlrEtQI5Z/view?usp=drivesdk"
+  - "https://drive.google.com/drive/folders/1C3T-Xh7fk0ynlQvuMmw3O68j7RPGs-eT"
 formats: [pdf, epub, mp3]
 course: iti
 tags:
