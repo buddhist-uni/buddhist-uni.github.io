@@ -5,8 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2022/02/25/opinion/ezra-klein-podcast-c-thi-nguyen.html"
-course: intellect
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - intellect
   - games
 year: 2022
 month: feb

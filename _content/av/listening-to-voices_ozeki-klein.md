@@ -6,9 +6,10 @@ authors:
   - "Ezra Klein"
 external_url: "https://player.fm/series/the-ezra-klein-show/learning-to-listen-to-the-voices-only-you-hear"
 source_url: "https://www.nytimes.com/2022/01/25/podcasts/transcript-ezra-klein-interviews-ruth-ozeki.html"
-status: featured
-course: things # with prejudice
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - things
   - ambulit
   - intellect
   - japanese

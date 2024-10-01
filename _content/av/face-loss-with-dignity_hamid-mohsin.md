@@ -5,9 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2022/08/12/opinion/ezra-klein-podcast-mohsin-hamid.html"
-course: inner
-# almost featured
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - inner
   - literature
   - race
   - ideology

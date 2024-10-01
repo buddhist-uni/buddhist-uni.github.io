@@ -5,10 +5,11 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2021/06/29/podcasts/transcript-ezra-klein-interviews-james-suzman.html"
-status: featured
-course: time
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
-  - labor # maybe move here?
+  - time
+  - labor
   - desire
   - marketing
   - society

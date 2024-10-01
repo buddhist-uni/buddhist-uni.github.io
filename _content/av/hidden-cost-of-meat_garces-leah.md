@@ -5,9 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2022/11/29/opinion/ezra-klein-podcast-leah-garces.html"
-status: featured
-course: food
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - food
   - economics
   - animalia
   - wider

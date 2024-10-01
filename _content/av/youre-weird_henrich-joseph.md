@@ -5,9 +5,11 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/05/26/opinion/ezra-klein-podcast-joseph-henrich.html"
-course: culture # maybe ideology?
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
-  - world # with prejudice
+  - culture
+  - culture
   - present
   - the-west
 year: 2023

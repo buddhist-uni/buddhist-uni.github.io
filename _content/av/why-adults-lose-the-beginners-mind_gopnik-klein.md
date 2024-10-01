@@ -6,9 +6,10 @@ authors:
 subcat: podcast
 external_url: "https://player.fm/series/the-ezra-klein-show/a-conversation-about-human-minds-for-human-minds"
 source_url: "https://www.nytimes.com/2021/04/16/opinion/ezra-klein-podcast-alison-gopnik.html"
-status: featured
-course: aging
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - aging
   - intellect
   - neuroscience
   - time

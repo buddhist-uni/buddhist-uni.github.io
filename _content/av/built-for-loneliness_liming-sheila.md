@@ -5,8 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2023/04/18/opinion/ezra-klein-podcast-sheila-liming.html"
-course: america # strong
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - america
   - social
   - media
   - places

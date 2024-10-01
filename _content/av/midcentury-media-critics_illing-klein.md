@@ -5,8 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2022/07/26/opinion/ezra-klein-podcast-sean-illing.html"
-course: communication
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - communication
   - media
   - democracy
   - present

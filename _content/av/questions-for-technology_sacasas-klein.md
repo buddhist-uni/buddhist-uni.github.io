@@ -6,9 +6,10 @@ authors:
 subcat: podcast
 editor: "Jeff Geld"
 external_url: "https://www.nytimes.com/2021/08/03/opinion/ezra-klein-podcast-lm-sacasas.html"
-course: media # very solidly
-status: featured
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - media
   - things
   - ideology
 year: 2021

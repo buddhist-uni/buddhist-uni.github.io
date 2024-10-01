@@ -5,8 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2021/10/05/podcasts/transcript-ezra-klein-interviews-holden-karnofsky.html"
-course: intellect
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - intellect
   - activism
   - present
 year: 2021

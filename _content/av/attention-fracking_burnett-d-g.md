@@ -6,9 +6,10 @@ authors:
 subcat: podcast
 external_url: "https://nyt.simplecastaudio.com/3026b665-46df-4d18-98e9-d1ce16bbb1df/episodes/9b165a51-7275-4529-be04-d70d3b72fbf6/audio/128/default.mp3"
 source_url: "https://www.nytimes.com/2024/05/31/opinion/ezra-klein-podcast-d-graham-burnett.html"
-status: featured
-course: becon
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - becon
   - sati
   - feeling
   - present

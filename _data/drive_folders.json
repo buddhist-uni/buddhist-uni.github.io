@@ -335,6 +335,10 @@
   "private": "https://drive.google.com/drive/folders/1IgFtdCtPz4KdyYUMZLoxwpZxwy9acUZN",
   "public": ""
  },
+ "chinese-theravada": {
+  "private": "https://drive.google.com/drive/folders/10rCN8CfAg_rJ6J7AtGnJlIFzoe6DbbZB",
+  "public": null
+ },
  "christian": {
   "private": "https://drive.google.com/drive/folders/1r2DelC_qZy26DujPAbTcantxjxU4za2g",
   "public": null
@@ -827,6 +831,10 @@
   "private": "https://drive.google.com/drive/folders/1M3ls8ucJzzsfkfZ57t7awYCvg-8WfKjz",
   "public": ""
  },
+ "justice": {
+  "private": "https://drive.google.com/drive/folders/1pUagmKrIJ1ciZz3peY3B-YjlzlQKhkFn",
+  "public": null
+ },
  "kagyu": {
   "private": "https://drive.google.com/drive/folders/1_AAwdCHbf8xc3UUpcsDhG7BItJFUGDUk",
   "public": null
@@ -1006,6 +1014,10 @@
  "migration": {
   "private": "https://drive.google.com/drive/folders/1mzpeWEzPGicZiEfl7IpfAiUIyR8raqCm",
   "public": "https://drive.google.com/drive/folders/1GVAFymHGkrcNG0t78yRjVGkAgCYJK2ZP"
+ },
+ "migration-literature": {
+  "private": "https://drive.google.com/drive/folders/1Z_VUoGr-qWtySzt8sgb361-LiNo4Gy4M",
+  "public": null
  },
  "mn": {
   "private": "https://drive.google.com/drive/folders/17qbLmQbJFP9cTwZEk7bQa8dVCnRJHynz",
@@ -1188,6 +1200,10 @@
   "public": "https://drive.google.com/drive/folders/1ZcgZ096WtuKoQ-ICC8n1gqH2lvjwhnwN"
  },
  "pali-meter": {
+  "private": "https://drive.google.com/drive/folders/1z61EmP2kP8RUXkzTP10kqiVXHUBcpl9b",
+  "public": "https://drive.google.com/drive/folders/1hwk9mT2OvPVrcF46uLv_y0dN5iEkgQNh"
+ },
+ "pali-metre": {
   "private": "https://drive.google.com/drive/folders/1z61EmP2kP8RUXkzTP10kqiVXHUBcpl9b",
   "public": "https://drive.google.com/drive/folders/1hwk9mT2OvPVrcF46uLv_y0dN5iEkgQNh"
  },
@@ -1543,6 +1559,10 @@
   "private": "https://drive.google.com/drive/folders/1gWl_W5k6bH5Z6oUVoVchvyIvS5luXVEV",
   "public": null
  },
+ "switzerland": {
+  "private": "https://drive.google.com/drive/folders/1a-kfxG7TWtxQP-mNDWAQQGsHljzvlK0J",
+  "public": null
+ },
  "taiwan": {
   "private": "https://drive.google.com/drive/folders/121r9H-R0m5AJYjca8C0OR8eIugXfjHwy",
   "public": ""
@@ -1657,6 +1677,10 @@
  },
  "tocharian": {
   "private": "https://drive.google.com/drive/folders/1FGWjGYKHMGkYhqoSRxbSdYI0Jwp-w3yR",
+  "public": null
+ },
+ "tokyo": {
+  "private": "https://drive.google.com/drive/folders/1ji0uQFMBtblC5G1_EVS84xmbLKSxJybO",
   "public": null
  },
  "translation": {

@@ -5,8 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2024/04/30/opinion/ezra-klein-podcast-hannah-ritchie.html?showTranscript=1"
-course: wider
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - wider
   - food
   - future
   - climate-change

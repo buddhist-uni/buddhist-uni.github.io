@@ -5,9 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/03/03/opinion/ezra-klein-podcast-jane-hirshfield.html"
-status: featured # solidly. Almost 5 stars
-course: poetry
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - poetry
   - inner
   - daily-life
   - ambulit

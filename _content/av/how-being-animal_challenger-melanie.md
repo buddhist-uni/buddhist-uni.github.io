@@ -5,9 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2023/06/27/opinion/ezra-klein-podcast-melanie-challenger.html"
-status: featured
-course: world
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - world
   - intellect
   - the-west
   - time

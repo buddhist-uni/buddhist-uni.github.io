@@ -5,9 +5,11 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2022/12/13/opinion/ezra-klein-podcast-dean-buonomano.html"
-course: time
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
-  - perception # perhaps move here
+  - perception
+  - time
   - neuroscience
   - physics
 year: 2022

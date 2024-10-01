@@ -5,9 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2021/09/28/podcasts/transcript-ezra-klein-interviews-richard-powers.html"
-status: featured
-course: natural
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - natural
   - intellect
   - materialism
   - wider

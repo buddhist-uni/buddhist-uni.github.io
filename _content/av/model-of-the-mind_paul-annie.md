@@ -5,9 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2021/07/20/opinion/ezra-klein-podcast-annie-murphy-paul.html"
-status: featured
-course: intelligence
+status: rejected # previously featured
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - intelligence
   - labor
   - info-capitalism
   - inner

@@ -5,8 +5,10 @@ authors:
 subcat: podcast
 editor: "Ezra Klein"
 external_url: "https://www.nytimes.com/2021/07/09/opinion/ezra-klein-podcast-eve-ewing.html"
-course: social
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - social
   - education
   - writing
   - class

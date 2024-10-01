@@ -5,8 +5,10 @@ authors:
   - "Ezra Klein"
 subcat: podcast
 external_url: "https://www.nytimes.com/2022/10/04/opinion/ezra-klein-podcast-rachel-aviv.html"
-course: ideology # maybe archive
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - ideology
   - psychology
   - inner
 year: 2022
