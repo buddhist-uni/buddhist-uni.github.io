@@ -5,15 +5,12 @@ year: 1997
 month: may
 olid: OL24732786M
 publisher: Norton
-status: featured
 course: places
 tags:
-  - wider
   - power
   - present
   - europe
   - americas
-  - america
   - africa
   - race
 pages: 480
