@@ -7,7 +7,7 @@ tags:
 year: 2008
 month: jan
 olid: OL24263776M
-oclc: 419330997
+oclc: 164803474
 publisher: "Twelve Books"
 address: "New York"
 pages: 350

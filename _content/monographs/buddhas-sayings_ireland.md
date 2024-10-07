@@ -9,6 +9,8 @@ drive_links:
   - "https://drive.google.com/drive/folders/1C3T-Xh7fk0ynlQvuMmw3O68j7RPGs-eT"
 formats: [pdf, epub, MP3s]
 course: iti
+tags:
+  - sutta
 year: 1991
 olid: OL13056106M
 oclc: 35595327
