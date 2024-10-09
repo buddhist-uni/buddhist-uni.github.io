@@ -8,7 +8,6 @@ drive_links:
   - "https://drive.google.com/file/d/1vgPPJ5vvFqe3iu92x4PMXkUQythoAjCf/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1yPNdewk0YkmJN9wJOMD33kH5JvhsbHaj/view?usp=drivesdk"
 tags:
-  - sutta
   - sn
 year: 1983
 publisher: bps
