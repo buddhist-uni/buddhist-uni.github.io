@@ -29,10 +29,10 @@ Thanks to [our contributors](https://github.com/buddhist-uni/buddhist-uni.github
 You can cite the website as:  
 Khemarato, {{ site.time | date: "%Y" }}. "{{ site.title }}". {{ site.time | date: "%B %-d" }}. *{{ site.url }}* [doi:{{ site.doi }}](https://doi.org/{{ site.doi }})
 
-Our tests are [✅ mostly passing](/tests)
+Our tests are [✅ mostly passing](/tests/)
 and our website [🟢 is up right now!](https://stats.uptimerobot.com/4q0qQUzqKk)
 
-Like most services, we use cookies to improve your experience. To opt-out, [click here](/settings)
+Like most services, we use cookies to improve your experience. To opt-out, [click here](/settings/)
 
 Footnotes:
 

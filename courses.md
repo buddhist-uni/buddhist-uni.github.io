@@ -18,7 +18,7 @@ big_height: 1896
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Zhaya_Theingyi-Sagaing-Myanmar-02-gje.jpg">Gerd Eichmann</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">BY-SA 3.0</a>
 ---
 
-The Open Buddhist University organizes [content from across the Web](/library) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
+The Open Buddhist University organizes [content from across the Web](/library/) into free, self-directed syllabi on a variety of topics in Buddhist Studies.
 
 ## About Our Courses
 
@@ -38,7 +38,7 @@ Just click a card below to begin!
 
 If you'd like to discuss what you're learning, feel free to post your questions or thoughts on [the SuttaCentral Discourse Forum](https://discourse.suttacentral.net/?u=khemarato.bhikkhu){:target="_blank"} or [email us](mailto:theopenbuddhistuniversity@gmail.com).
 Some courses contain links to (optional) Google Forms which serve for homework assignments and to collect course feedback.
-This site may use cookies to enhance your experience, but you can turn this off at any time in [settings](/settings).
+This site may use cookies to enhance your experience, but you can turn this off at any time in [settings](/settings/).
 
 ## Our Courses
 

@@ -6,6 +6,6 @@ similars:
   - essays
 ---
 
-Extracted portions of [a book](/content/monographs), excerpts are typically a chapter.
+Extracted portions of [a book](/content/monographs/), excerpts are typically a chapter.
 
-For chapters extracted from a multi-author collection, see [papers](/content/papers).
+For chapters extracted from a multi-author collection, see [papers](/content/papers/).
