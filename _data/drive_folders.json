@@ -127,6 +127,10 @@
   "private": "https://drive.google.com/drive/folders/1YdLk7zb_jHepPpMgnKKbyz7QbKlyrefu",
   "public": "https://drive.google.com/drive/folders/14Ujzt90QwDM4Y0a1icJ2Wh2uP5nbHPJ4"
  },
+ "australasia": {
+  "private": "https://drive.google.com/drive/folders/1j3ebXdLnsVIpyB6Q5RtPuh-wqYOPJvs9",
+  "public": null
+ },
  "australia": {
   "private": "https://drive.google.com/drive/folders/1NQ5BMvbsispbKp18bx7Hcz01t8RdOfD2",
   "public": null
@@ -711,6 +715,10 @@
   "private": "https://drive.google.com/drive/folders/1ommnp45TuRWg2ouO0GUUJ_oUS7DC-zch",
   "public": null
  },
+ "iberia": {
+  "private": "https://drive.google.com/drive/folders/1S0EofwKOELxNOPc4hlwAJx1FJY0eiqyI",
+  "public": null
+ },
  "iddhi": {
   "private": "https://drive.google.com/drive/folders/1MGHIkxFtS-tN1jmV4W-o_TqO8ku5Z9AV",
   "public": null
@@ -730,6 +738,10 @@
  "indian": {
   "private": "https://drive.google.com/drive/folders/18_C9Yws6UbCa6twMu2ItIdlAiiYhg8Bj",
   "public": "https://drive.google.com/drive/folders/1QIb5hfJ-qHk-k6qmEG8Ei4Yolb2M441-"
+ },
+ "indian-ocean": {
+  "private": "https://drive.google.com/drive/folders/1j4CAJoqnjSRcM2V6K59XpQzzCdXXXMTx",
+  "public": null
  },
  "indic-religions": {
   "private": "https://drive.google.com/drive/folders/1w5r19SLA1Gdwehs6IjNTm95c6Eu6F_Lw",
@@ -783,6 +795,10 @@
   "private": "https://drive.google.com/drive/folders/1mFv5Wb0eKAx2ET9uLYydYJWm0Yt3iuiX",
   "public": null
  },
+ "iran": {
+  "private": "https://drive.google.com/drive/folders/1j4rp4mo1aHU7bMRAavjn_B0dTh6Rblwb",
+  "public": null
+ },
  "ireland": {
   "private": "https://drive.google.com/drive/folders/1YaW_t40_oQ-TKRFpp6DJzLYAsFHVb0r3",
   "public": ""
@@ -790,6 +806,14 @@
  "islam": {
   "private": "https://drive.google.com/drive/folders/1evst4qF-f3neCbaVDR2flnMP7s-VXE5R",
   "public": ""
+ },
+ "israel": {
+  "private": "https://drive.google.com/drive/folders/1cFWd79GABWqKdvom184oXUy1lB5_BjzI",
+  "public": null
+ },
+ "italy": {
+  "private": "https://drive.google.com/drive/folders/1pNOZfH3DheSombqwyZ9lZQwVoxYaccU7",
+  "public": null
  },
  "iti": {
   "private": "https://drive.google.com/drive/folders/1emmeE0V7T8n2JeDnEIAyNM1XdWaK6lcG",
@@ -1003,6 +1027,10 @@
   "private": "https://drive.google.com/drive/folders/183emkjsBw56OLi12nHZW7fX0Etxp_oWN",
   "public": ""
  },
+ "mexico": {
+  "private": "https://drive.google.com/drive/folders/1PemvqJBdMZcHf6lXoQNr_DF6Do7GHHtC",
+  "public": null
+ },
  "middle-east": {
   "private": "https://drive.google.com/drive/folders/12kAXESczB8lwfpDQUY6goIQn0PuWWJu8",
   "public": null
@@ -1065,6 +1093,10 @@
  },
  "montreal": {
   "private": "https://drive.google.com/drive/folders/1TEnscC3rUwoewqDUxOuSPyFExvy2NYHL",
+  "public": null
+ },
+ "museums": {
+  "private": "https://drive.google.com/drive/folders/1C0lf5m6mke7iELHLxOwFoKEkAORKFTYP",
   "public": null
  },
  "music": {
@@ -1277,6 +1309,10 @@
  },
  "poetry": {
   "private": "https://drive.google.com/drive/folders/1-UqHT9_aRnn2XCjDYJ-MU0WjrqhbKFv0",
+  "public": null
+ },
+ "poland": {
+  "private": "https://drive.google.com/drive/folders/1jN_2jJdQhc1MVldYdKJaLcUAnob3piBW",
   "public": null
  },
  "political-ideology": {
@@ -1503,6 +1539,10 @@
   "private": "https://drive.google.com/drive/folders/1VI3c4xY7MeP5FUd1_gK6pubsDxOlNhqO",
   "public": "https://drive.google.com/drive/folders/1OjkukQV58Kr-N_4t9pLGGKOk619-4N0E"
  },
+ "sociology": {
+  "private": "https://drive.google.com/drive/folders/1G6Abosp36pDR07mP20ghv5gjgSS07J5n",
+  "public": null
+ },
  "south-africa": {
   "private": "https://drive.google.com/drive/folders/1rs_sAiBvrwjT1YA3ftc286wCxT-VVH9M",
   "public": null
@@ -1699,6 +1739,10 @@
   "private": "https://drive.google.com/drive/folders/1sOUf38hsBOpRUEauRhXouOWMGyRAir-n",
   "public": "https://drive.google.com/drive/folders/1MABTglSV7SDXx1vVFN-f6ny-WO8g-VRP"
  },
+ "ukraine": {
+  "private": "https://drive.google.com/drive/folders/1jPq7m6Leqtrz39d-q2CxxOjgfzPKHstp",
+  "public": null
+ },
  "underage": {
   "private": "https://drive.google.com/drive/folders/1Wk4crLpxiS73inookmFME6r3YuqJgDdq",
   "public": "https://drive.google.com/drive/folders/1y39-bp_x4Qehp3yqKlymaCKNQTAJz5El"
@@ -1754,6 +1798,10 @@
  "west": {
   "private": "https://drive.google.com/drive/folders/1IQjMWbroTw5ysqC745Y9Elgzc6zIFMPO",
   "public": "https://drive.google.com/drive/folders/1u1JjoyrO_bTatbrgKAXstarvqdaPgX7Y"
+ },
+ "western-europe": {
+  "private": "https://drive.google.com/drive/folders/1jQ-XgTALV7wnQ7HVIzwt4yDgwIRYfwZ0",
+  "public": null
  },
  "western-mahayana": {
   "private": "https://drive.google.com/drive/folders/1HRLehmlK71JAWF60qnVC0aZ7hEPYZN83",
