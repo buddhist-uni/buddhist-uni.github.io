@@ -17,3 +17,5 @@ pages: 8
 ---
 
 > All human beings are born free and equal in dignity and rights.
+
+For a short discussion on The Declaration's history and significance, see [the Writ Large interview with Mathias Risse](/content/av/un-human-rights_writ-large).
