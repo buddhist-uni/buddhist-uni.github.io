@@ -45,11 +45,11 @@ def ANSI_MOVE_UP(n):
   return f"\033[{n}A"
 # For more, see https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 
-whitespace = re.compile('\s+')
-digits = re.compile('(\d+)')
-italics = re.compile('</?(([iI])|(em))[^<>nm]*>')
+whitespace = re.compile(r'\s+')
+digits = re.compile(r'(\d+)')
+italics = re.compile(r'</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-abnormalchars = re.compile('[^\w\s]')
+abnormalchars = re.compile(r'[^\w\s]')
 sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
 yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
 yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
@@ -401,6 +401,7 @@ def system_open(filepath):
   filepath = str(filepath)\
     .replace(" ", "\\ ")\
     .replace("$", "\\$")\
+    .replace("&", "\\&")\
     .replace('"', "\\\"")\
     .replace("`", "\\`")\
     .replace("(", "\\(")\
