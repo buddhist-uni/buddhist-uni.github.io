@@ -44,7 +44,10 @@ except:
   exit(1)
 
 # If modifying these scopes, have to login again.
-SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/youtube.readonly']
+SCOPES = [
+  'https://www.googleapis.com/auth/drive',
+  'https://www.googleapis.com/auth/youtube.readonly',
+]
 # The client secrets file can be made and downloaded from your developer console:
 # https://console.developers.google.com/apis/credentials
 CLIENTSECRETS = os.path.expanduser("~/library-utils-client-secret.json")

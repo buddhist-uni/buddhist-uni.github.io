@@ -61,6 +61,13 @@ class TagFile(JekyllFile):
     super().__init__(fd, content, handler, **kwargs)
     self.url = "/tags/" + fd.stem
 
+class DataCollection():
+  def load(self):
+    content_config = root_folder.joinpath('_data/content.yml').read_text()
+    self.content = yaml.load(content_config, Loader=yaml.Loader)
+
+data = DataCollection()
+
 class TagCollection():
   def __init__(self):
     self.tags = dict()
@@ -99,7 +106,8 @@ class ContentFile(JekyllFile):
     fd = Path(fd)
     super().__init__(fd, content, handler, **kwargs)
     self.category = self.relative_path.parts[1]
-    self.url = f"/content/{self.category}/{fd.stem}"
+    self.content_path = f"{self.category}/{fd.stem}"
+    self.url = f"/content/{self.content_path}"
     if not self.get('tags'):
         self.tags = []
     if not self.get('formats'):
@@ -162,3 +170,4 @@ def load():
     if (not authorfile.is_file()) or authorfile.name.startswith('.'):
       continue
     authors.add(AuthorFile.load(authorfile))
+  data.load()
