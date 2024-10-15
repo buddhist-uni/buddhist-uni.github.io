@@ -13,7 +13,7 @@ tags:
   - thought
   - crime
   - prison
-  - asian-american
+  - asian-america
 year: 2020
 month: oct
 publisher: "Wondery"
