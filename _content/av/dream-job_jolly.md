@@ -8,8 +8,8 @@ authors:
 external_url: "https://buddhistsolutions.transistor.fm/3"
 drive_links:
   - "https://drive.google.com/file/d/17QoiMOOxb8JjE1P2IjcCpmDeazEnN8Ou/view?usp=drivesdk"
-course: american
 tags:
+  - american
   - problems
   - business
   - lay

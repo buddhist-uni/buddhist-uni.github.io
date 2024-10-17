@@ -122,9 +122,9 @@ def get_possible_trans(book, nums):
   return list(filter(lambda t: is_in_website(t['website_data'], book, nums), NONSC_TRANSLATORS))
 
 def year_from_ati_data(text):
-    m = re.search("\[SOURCE_COPYRIGHT_YEAR\]=\{([12][90][0-9][0-9])\}", text)
+    m = re.search(r"\[SOURCE_COPYRIGHT_YEAR\]=\{([12][90][0-9][0-9])\}", text)
     if not m:
-      m = re.search("\[ATI_YEAR\]=\{([12][90][0-9][0-9])\}", text)
+      m = re.search(r"\[ATI_YEAR\]=\{([12][90][0-9][0-9])\}", text)
     if not m:
       print(f"ERROR: Couldn't find YEAR metadata")
       quit(1)
@@ -135,7 +135,7 @@ def fill_in_trans_data(trans, url):
   # geoff year will be filled in later by source url (below)
   if not trans['author_short']=='ATI':
     return trans
-  m = re.search("\.([a-z]+)\.html$", url)
+  m = re.search(r"\.([a-z]+)\.html$", url)
   if not m:
     print(f"ERROR: Badly formatted ATI link {url}")
     quit(1)
@@ -174,7 +174,7 @@ def get_geoff_source_url(trans, dturl, book, nums):
       print("Trying the Wayback Machine...")
       resp = requests.head("http://web.archive.org/web/1970/"+dturl)
       if resp.ok:
-        m = re.search(" at ([12][90][0-9][0-9])", resp.headers['x-archive-redirect-reason'])
+        m = re.search(r" at ([12][90][0-9][0-9])", resp.headers['x-archive-redirect-reason'])
         if not m:
           print("Got unexpected Archive.org response:\n\t"+resp.headers['x-archive-redirect-reason'])
           quit(1)
