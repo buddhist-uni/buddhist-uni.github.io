@@ -13,6 +13,7 @@ import fcntl
 import subprocess
 import struct
 import re
+import urllib.parse
 import string
 import readline
 from pathlib import Path
@@ -499,6 +500,27 @@ def file_info(file_name):
         md5.update(chunk)
         size += len(chunk)
   return (md5.hexdigest(), size)
+
+# Takes a partially encoded URL (such as /Nibbāna%20and%20Abhidhamma)
+# and returns the fully encoded URL (i.e. with /Nibb%C4%81na%20and%20Abhidhamma)
+def fully_encode_url(url):
+    # Split the URL into components
+    scheme, netloc, path, params, query, fragment = urllib.parse.urlparse(url)
+    
+    # Encode the path
+    path = urllib.parse.quote(urllib.parse.unquote(path), safe='/')
+    
+    # Manually reconstruct the URL to avoid urllib.parse.urlunparse undoing the encoding
+    result = scheme + '://' + netloc
+    if path:
+        result += path
+    if params:
+        result += ';' + params
+    if query:
+        result += '?' + query
+    if fragment:
+        result += '#' + fragment
+    return result
 
 # Reconstructs a text from an inverted index:
 # https://docs.openalex.org/api-entities/works/work-object#abstract_inverted_index
