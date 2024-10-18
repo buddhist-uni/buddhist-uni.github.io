@@ -10,7 +10,7 @@ tags:
 year: 1975
 olid: OL26023621M
 oclc: 795707307
-publisher: "Curzon Press"
+publisher: curzon
 external_url: "https://archive.org/details/monksmagicrevisi0000terw/mode/1up"
 pages: 312
 ---

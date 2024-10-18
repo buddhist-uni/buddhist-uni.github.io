@@ -1,6 +1,6 @@
 ---
 title: "The Journal of Chinese Buddhist Studies"
-publisher: chibs
+publisher: dharmadrum
 external_url: "https://www.chibs.edu.tw/eng_html/index_eng00_04.html"
 ---
 

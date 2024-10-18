@@ -31,7 +31,7 @@ layout: default
 {% assign filtered = '' | split: '' %}
 {% for c in allworks %}{% unless seriesslugs contains c.series or journalslugs contains c.journal %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
 {% if filtered.size > 0 %}<h4>Featured Publications:</h4>
-{% include content_list.html contents=filtered keep_rejects="true" %}
+{% include content_list.html contents=filtered %}
 {% endif %}
   </div>
 

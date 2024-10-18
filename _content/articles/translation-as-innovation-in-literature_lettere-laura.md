@@ -15,7 +15,7 @@ month: jun
 journal: "Open Linguistics"
 volume: 1
 pages: "376--385"
-publisher: "De Gruyter Open"
+publisher: degruyter
 openalexid: W2270447737
 ---
 

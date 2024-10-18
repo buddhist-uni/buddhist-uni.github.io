@@ -10,6 +10,7 @@ course: rebirth-stories
 tags:
   - bodhisatta
   - problems
+  - mahayana-roots
 year: 2023
 journal: jiabs
 volume: 46

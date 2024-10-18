@@ -18,7 +18,7 @@ journal: "Open Theology"
 volume: 1
 number: 1
 pages: "146--159"
-publisher: "De Gruyter"
+publisher: degruyter
 openalexid: W2257522466
 ---
 

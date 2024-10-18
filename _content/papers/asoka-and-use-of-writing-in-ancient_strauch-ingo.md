@@ -14,7 +14,7 @@ year: 2024
 month: feb
 booktitle: "The Ancient World Revisited: Material Dimensions of Written Artefacts"
 pages: "129--162"
-publisher: "De Gruyter"
+publisher: degruyter
 openalexid: W4391949171
 ---
 

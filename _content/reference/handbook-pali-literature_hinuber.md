@@ -10,7 +10,7 @@ tags:
   - indian
 year: 1996
 olid: OL9459781M
-publisher: "De Gruyter"
+publisher: degruyter
 address: "Berlin"
 pages: 249
 ---
