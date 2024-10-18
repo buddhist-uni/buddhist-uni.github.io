@@ -624,7 +624,9 @@ def htmlify_ytdesc(description):
 def _yt_thumbnail(snippet):
   if 'high' in snippet['thumbnails']:
     return snippet['thumbnails']['high']['url']
-  return snippet['thumbnails']['default']['url']
+  if 'default' in snippet['thumbnails']:
+    return snippet['thumbnails']['default']['url']
+  return ''
 
 def make_ytvideo_summary_html(vid):
   from tag_predictor import YOUTUBE_DATA_FOLDER
@@ -667,14 +669,15 @@ def make_ytplaylist_summary_html(ytplid):
   ret = ""
   plsnip = get_ytplaylist_snippet(ytplid)
   desc = htmlify_ytdesc(plsnip.get('description', ''))
+  defaultimg = _yt_thumbnail(plsnip)
   if desc:
     ret += f"""<h2>Description (from YouTube)</h2><p>{desc}</p>"""
-  videos = get_ytvideo_snippets_for_playlist(ytplid, maxResults=50)
+  videos = get_ytvideo_snippets_for_playlist(ytplid, maxResults=500)
   if len(videos) > 0:
     ret += "<h2>Videos</h2>"
     for video in videos:
       ret += f"""<h3>{int(video['position'])+1}. <a href="https://youtu.be/{video['resourceId']['videoId']}">{video['title']}</a></h3>"""
-      ret += f"""<p><img src="{_yt_thumbnail(video)}" /></p>"""
+      ret += f"""<p><img src="{_yt_thumbnail(video) or defaultimg}" /></p>"""
   return ret
 
 if __name__ == "__main__":

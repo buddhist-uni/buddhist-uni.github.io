@@ -4,11 +4,12 @@ authors:
   - "Kim Stanley Robinson"
   - "Ezra Klein"
 subcat: podcast
-external_url: "https://www.nytimes.com/2022/07/15/opinion/ezra-klein-podcast-kim-stanley-robinson.html"
-status: rejected # previously featured
-reason: "The NYT put this episode behind a paywall"
+external_url: "https://youtu.be/GlawgaCBbG8"
+source_url: "https://www.nytimes.com/2022/07/15/opinion/ezra-klein-podcast-kim-stanley-robinson.html"
+status: featured # maybe rejected soon
+future_reason: "The NYT put this episode behind a paywall"
+course: ambulit
 tags:
-  - ambulit
   - wider
   - nature
   - natural

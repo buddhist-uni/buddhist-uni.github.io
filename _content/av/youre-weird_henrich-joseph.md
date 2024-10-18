@@ -4,12 +4,10 @@ authors:
   - "Joseph Henrich"
 subcat: podcast
 editor: "Ezra Klein"
-external_url: "https://www.nytimes.com/2023/05/26/opinion/ezra-klein-podcast-joseph-henrich.html"
-status: rejected
-reason: "The NYT put this episode behind a paywall"
+external_url: "https://youtu.be/G5sji_kJJ5A"
+source_url: "https://www.nytimes.com/2023/05/26/opinion/ezra-klein-podcast-joseph-henrich.html"
+course: culture
 tags:
-  - culture
-  - culture
   - present
   - the-west
 year: 2023

@@ -6,8 +6,10 @@ subcat: podcast
 editor: "Tressie McMillan Cottom"
 external_url: "https://www.nytimes.com/2022/09/06/podcasts/transcript-ezra-klein-show-chloe-cooper-jones.html"
 source_url: "https://www.nytimes.com/2022/09/06/opinion/ezra-klein-podcast-chloe-cooper-jones.html"
-course: feeling # solidly
+status: rejected
+reason: "The NYT put this episode behind a paywall"
 tags:
+  - feeling
   - disability
   - sati
   - inner

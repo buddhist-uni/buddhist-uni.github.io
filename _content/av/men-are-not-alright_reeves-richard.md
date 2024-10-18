@@ -4,11 +4,12 @@ authors:
   - "Richard Reeves"
 subcat: podcast
 editor: "Ezra Klein"
-external_url: "https://www.nytimes.com/2023/03/10/opinion/ezra-klein-podcast-richard-reeves.html"
-status: rejected # previously featured
-reason: "The NYT put this episode behind a paywall"
+external_url: "https://youtu.be/ZzoFRKnbwIU"
+source_url: "https://www.nytimes.com/2023/03/10/opinion/ezra-klein-podcast-richard-reeves.html"
+status: featured # maybe rejected soon
+future_reason: "The NYT put this episode behind a paywall"
+course: gender
 tags:
-  - gender
   - aging
   - education
   - the-west

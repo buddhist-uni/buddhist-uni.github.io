@@ -4,12 +4,12 @@ authors:
   - Alison Gopnik
   - Ezra Klein
 subcat: podcast
-external_url: "https://player.fm/series/the-ezra-klein-show/a-conversation-about-human-minds-for-human-minds"
+external_url: "https://youtu.be/k-53O38848U"
 source_url: "https://www.nytimes.com/2021/04/16/opinion/ezra-klein-podcast-alison-gopnik.html"
-status: rejected # previously featured
-reason: "The NYT put this episode behind a paywall"
+status: featured # maybe rejected soon
+future_reason: "The NYT put this episode behind a paywall"
+course: aging
 tags:
-  - aging
   - intellect
   - neuroscience
   - time

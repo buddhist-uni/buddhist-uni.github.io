@@ -4,11 +4,12 @@ authors:
   - "Melanie Challenger"
 subcat: podcast
 editor: "Ezra Klein"
-external_url: "https://www.nytimes.com/2023/06/27/opinion/ezra-klein-podcast-melanie-challenger.html"
-status: rejected # previously featured
-reason: "The NYT put this episode behind a paywall"
+external_url: "https://youtu.be/M3Wxyec3FjY"
+source_url: "https://www.nytimes.com/2023/06/27/opinion/ezra-klein-podcast-melanie-challenger.html"
+status: featured # maybe rejected soon
+future_reason: "The NYT put this episode behind a paywall"
+course: world
 tags:
-  - world
   - intellect
   - the-west
   - time

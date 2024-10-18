@@ -4,11 +4,10 @@ authors:
   - "Rachel Zoffness"
 subcat: podcast
 editor: "Ezra Klein"
-external_url: "https://www.nytimes.com/2023/02/21/opinion/17eks-ezra-klein-podcast-rachel-zoffness.html"
-status: rejected
-reason: "The NYT put this episode behind a paywall"
+external_url: "https://youtu.be/gZdtrY8NuUc"
+source_url: "https://www.nytimes.com/2023/02/21/opinion/17eks-ezra-klein-podcast-rachel-zoffness.html"
+course: inner
 tags:
-  - inner
   - pain
   - feeling
   - medicine
