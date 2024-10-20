@@ -10,7 +10,7 @@ course: vinaya-studies
 status: featured
 tags:
   - sleep
-  - monastic-chan
+  - monastic-east-asian
 year: 2012
 month: dec
 journal: "Acta Orientalia Academiæ Scientiarum Hungaricæ"

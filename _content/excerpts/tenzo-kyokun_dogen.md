@@ -12,7 +12,7 @@ tags:
   - zen
   - daily
   - food
-  - monastic-chan
+  - monastic-east-asian
   - monastic-advice
 year: 1996
 booktitle: "Cooking Zen"
