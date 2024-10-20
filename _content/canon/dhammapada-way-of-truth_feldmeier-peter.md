@@ -1,18 +1,18 @@
 ---
 title: "Dhammapada: The Way of Truth"
-translator: feldmeier-peter
+author:
+  - feldmeier-peter
 external_url: "https://www.bps.lk/olib/bp/bp433s_Feldmeyer_Dhammapada.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1uEpZIwwdToet3arA4bIXQgOKKV-K4lfA/view?usp=sharing"
 formats: [pdf]
 course: dhp 
 tags:
-  - canon
+  - pali-canon
   - theravada
 year: 2013
 oclc: 884762966
 publisher: bps
-subcat: poetry
 pages: 165
 ---
 
