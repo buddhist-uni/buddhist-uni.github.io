@@ -8,6 +8,7 @@ external_url: "https://onbeing.org/programs/lorna-goodison-reporting-back-to-que
 course: wider
 tags:
   - colonization
+  - jamaica
 year: 2021
 month: apr
 publisher: "On Being"
