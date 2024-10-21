@@ -1,6 +1,6 @@
 ---
 title: "Dhammapada: The Way of Truth"
-author:
+authors:
   - feldmeier-peter
 external_url: "https://www.bps.lk/olib/bp/bp433s_Feldmeyer_Dhammapada.pdf"
 drive_links:
