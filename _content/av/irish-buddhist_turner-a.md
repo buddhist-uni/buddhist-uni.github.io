@@ -7,7 +7,7 @@ year: 2020
 publisher: nbn
 course: west
 tags:
-  - colonialism
+  - colonization
   - burmese
   - class
   - sea

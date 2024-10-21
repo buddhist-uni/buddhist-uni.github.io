@@ -1,5 +1,5 @@
 ---
-title: "Dhammapada Verses"
+title: "Dhammapada Verse Lectures"
 authors:
   - yuttadhammo
 subcat: course
@@ -8,7 +8,8 @@ course: dhp
 tags:
   - pali-canon
 year: 2011
-minutes: 6000
+minutes: 6000 # very appropriate
 ---
 
-This series features nearly 200 videos on the Dhammapada, the Buddha's verse teachings, presented by Bhante Yuttadhammo over a span of 12 years. Each video is approximately 30 minutes long and includes an explanation of the Pāli verse, a summary of the background story, and insights on applying the teachings to daily practice.
+This ongoing series features hundreds of videos on the Dhammapada, going verse-by-verse through the poetry and its traditional commentarial background stories.
+Each half-hour talk then connects the verse to how it can inform our practice.

@@ -7,7 +7,7 @@ reader: "Major Jackson"
 external_url: "https://www.slowdownshow.org/episode/2023/03/29/844-a-ruin"
 course: time
 tags:
-  - place
+  - places
 year: 2023
 month: mar
 series: slowdown

@@ -8,7 +8,7 @@ month: sep
 year: 2011
 tags:
   - ghosts
-  - petavatthu
+  - pv
   - cosmology
   - death
   - hell

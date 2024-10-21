@@ -5,7 +5,7 @@ authors:
 external_url: "https://bloodknife.com/apples-strange-days/"
 course: media # solidly
 tags:
-  - information-capitalism
+  - info-capitalism
   - sci-fi
   - silicon-valley
   - time

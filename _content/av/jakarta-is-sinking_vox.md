@@ -9,7 +9,7 @@ course: sea
 tags:
   - indonesia
   - climate-change
-  - colonialism
+  - colonization
   - geology
 base_value: 0.2
 status: featured

@@ -12,6 +12,7 @@ course: places
 tags:
   - capitalism
   - colonialism
+  - colonization
 year: 1899
 olid: OL37044657M
 publisher: "Blackwood's"

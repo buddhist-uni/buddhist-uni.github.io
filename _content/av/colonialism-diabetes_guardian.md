@@ -12,7 +12,7 @@ course: wider
 tags:
   - south-asia
   - health
-  - colonialism
+  - colonization
 year: 2023
 month: oct
 journal: "The Guardian"
