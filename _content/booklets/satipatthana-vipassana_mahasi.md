@@ -6,7 +6,7 @@ translator: "U Pe Thin"
 external_url: "https://www.bps.lk/olib/wh/wh370_Mahasi_Satipatthana-Vipassana--Insight-Thru-Mindfulness.html"
 drive_links:
   - "https://drive.google.com/file/d/1e_BUWyw72ncg-3YtrqQDHP7uLjqkBq-M/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1DJfigbZwP245FnNjkM12Z7Ry0wyuWrto/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1DJfigbZwP245FnNjkM12Z7Ry0wyuWrto.epub"
 course: vipassana
 tags:
   - path

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.sirimangalo.org/text/how-to-meditate-ii/"
 drive_links:
   - "https://drive.google.com/file/d/1MxSLkThWflFgDjlDA09fzzumzmlAy7GC/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1v2NTPNhjcw9oN1Fh1du5t7jZLgLNVgYS/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1v2NTPNhjcw9oN1Fh1du5t7jZLgLNVgYS.epub"
 course: vipassana
 tags:
   - problems

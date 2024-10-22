@@ -9,7 +9,7 @@ authors:
 external_url: "https://www.bps.lk/olib/bp/bp413s_Nyanaponika_Kamma-And-Its-Fruit-Essays.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1cVCxwWd2G-wURJ4wlo0tJ703t8bMqeSn/view?usp=drive_link"
-  - "https://drive.google.com/file/d/134QeVBKLoB9k0bjv4WapFF2LOVrAEWj1/view?usp=drive_link"
+  - "https://obu.pages.dev/assets/epubs/134QeVBKLoB9k0bjv4WapFF2LOVrAEWj1.epub"
 course: karma
 tags:
   - ethics

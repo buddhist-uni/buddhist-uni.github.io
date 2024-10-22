@@ -6,7 +6,7 @@ formats: [GBook, PDFs, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=pemWDwAAQBAJ"
   - "https://drive.google.com/file/d/1u6yoCjFxJFYGz51kmtxnVcFP4geVvhjy/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1zSo9bea0X3_aiZ_I67Y62lf5OhZgCZwd/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1zSo9bea0X3_aiZ_I67Y62lf5OhZgCZwd.epub"
 year: 2019
 tags:
   - sutta

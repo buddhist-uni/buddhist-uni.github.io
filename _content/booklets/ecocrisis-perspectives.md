@@ -9,7 +9,7 @@ external_url: "https://www.bps.lk/olib/wh/wh346_Sandell-etal_Buddhist-Perspectiv
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1CsxD040D1w_SxyrhWLkSyByTNASQ9Fqa/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/15c0OLBYYlscNT_tl1O0Excv4WZozuywh/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/15c0OLBYYlscNT_tl1O0Excv4WZozuywh.epub"
 course: nature
 year: 1987
 olid: OL51670502M

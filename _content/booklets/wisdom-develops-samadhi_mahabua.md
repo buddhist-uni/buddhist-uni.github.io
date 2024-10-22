@@ -7,7 +7,7 @@ external_url: "https://www.abhayagiri.org/books/440-wisdom-develops-samadhi"
 olid: OL32040956M
 drive_links:
   - "https://drive.google.com/file/d/1bWcJNnUssYudhvSLt6UwUs4Urn9RRuNo/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/18SVygzHbTMHt_VcZh2g0VegeYAt2rLKv/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/18SVygzHbTMHt_VcZh2g0VegeYAt2rLKv.epub"
 course: sati
 status: featured
 tags:

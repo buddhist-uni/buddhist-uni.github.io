@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh349_Jootla_Inspiration-From-Enlighte
 alternate_url: "https://www.buddhanet.net/pdf_file/inspire-nuns6.pdf"
 drive_links:
   - "https://drive.google.com/file/d/114KA1K88CXESVGpL56O-YAfTkklHJ-An/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1iBFmPeLG8tGsIL8sOOK4JTQmV1mlE4Xu/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1iBFmPeLG8tGsIL8sOOK4JTQmV1mlE4Xu.epub"
   - "https://drive.google.com/file/d/1e5SOczZ-vybSKa_4A4-jzExcOewYWNP8/view?usp=drive_link"
 formats: [pdf, epub, mp3]
 course: canonical-poetry # solid

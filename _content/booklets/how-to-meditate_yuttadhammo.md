@@ -6,7 +6,7 @@ year: 2009
 external_url: "https://www.sirimangalo.org/text/how-to-meditate/"
 drive_links:
   - "https://drive.google.com/file/d/1ODwRK8nT5zpCyQp7M4y7Vn77I0uHZFjC/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1o6MwHin_DNeHIuIUCPol-unW1ucWH9xU/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1o6MwHin_DNeHIuIUCPol-unW1ucWH9xU.epub"
 tags:
   - buddhism
   - function

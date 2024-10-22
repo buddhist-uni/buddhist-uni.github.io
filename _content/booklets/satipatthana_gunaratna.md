@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh060_Gunaratna_Satipatthana-Sutta-Its
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1YQrYrCts08KXTJ0-M_zmAEet8gWzxgE4/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1PVFTunt8sJ_mS29nk6YSdN8b94qicqBg/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1PVFTunt8sJ_mS29nk6YSdN8b94qicqBg.epub"
 course: meditation
 base_value: 1
 tags:

@@ -6,7 +6,7 @@ formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=iZhABAAAQBAJ"
   - "https://drive.google.com/file/d/1fKsgBJ3uJnDLtwe0V6dqv_7YnVT5c02B/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1butT-MgVl6Hk78_gXFie2AhOadsJhxze/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1butT-MgVl6Hk78_gXFie2AhOadsJhxze.epub"
 olid: OL32173773M
 month: jul
 year: 2005

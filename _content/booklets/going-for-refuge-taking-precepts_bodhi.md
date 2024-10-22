@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh282_Bodhi_Going-For-Refuge--Taking-T
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/15oxS2YQmuV4sgvSqYDFP9QI5SfSRHseb/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1a0sUWg0i1BZ58617t7_NTliqarfGYKUj/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1a0sUWg0i1BZ58617t7_NTliqarfGYKUj.epub"
 course: sangha
 tags:
   - vinaya-studies

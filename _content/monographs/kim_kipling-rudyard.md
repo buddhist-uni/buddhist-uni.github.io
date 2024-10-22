@@ -7,7 +7,7 @@ external_url: "https://standardebooks.org/ebooks/rudyard-kipling/kim"
 source_url: "https://archive.org/search.php?query=title:kim%20creator:kipling%20-contributor:gutenberg%20AND%20mediatype:texts"
 formats: [epub]
 drive_links: 
-  - "https://drive.google.com/file/d/1aIBygJ-GqyhQyBkUVFKeDEOKpiToknbb/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1aIBygJ-GqyhQyBkUVFKeDEOKpiToknbb.epub"
 tags:
   - british
   - orientalism

@@ -11,7 +11,7 @@ publisher: pts
 source_url: "https://web.archive.org/web/20170702035121/https://suttacentral.net/downloads"
 drive_links:
   - "https://drive.google.com/file/d/1Ce5CZXsEStm6tZR1IUMAMifhfK0qazCO/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1awqBvuTnk2YLdNR9RtsTlp_7XGgS9j7e/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1awqBvuTnk2YLdNR9RtsTlp_7XGgS9j7e.epub"
 base_value: 5
 pages: 2992
 ---

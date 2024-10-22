@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Gotamisuttani/index.htm"
 drive_links:
   - "https://drive.google.com/file/d/1V4gBxnvAGpVUBsDAxC_3pTCXjR0bLEvQ/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1pnNBaag625rbBTrK-Kv80XriRb95zke6/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1pnNBaag625rbBTrK-Kv80XriRb95zke6.epub"
 course: nuns
 tags:
   - characters

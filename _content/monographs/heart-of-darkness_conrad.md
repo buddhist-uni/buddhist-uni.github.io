@@ -6,7 +6,7 @@ subcat: fiction
 external_url: "https://standardebooks.org/ebooks/joseph-conrad/heart-of-darkness/text"
 source_url: "https://www.gutenberg.org/ebooks/219"
 drive_links:
-  - "https://drive.google.com/file/d/1ZVc9DEvZhs-IOxqWmv3oLOdC6OwsfRMF/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1ZVc9DEvZhs-IOxqWmv3oLOdC6OwsfRMF.epub"
 formats: [epub]
 course: places
 tags:

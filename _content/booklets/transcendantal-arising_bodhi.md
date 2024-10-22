@@ -2,7 +2,7 @@
 title: "Transcendental Dependent Arising"
 authors: [bodhi]
 external_url: "https://www.accesstoinsight.org/lib/authors/bodhi/wheel277.html"
-drive_links: ["https://drive.google.com/file/d/1O0S6x1T5j5uiC9ilulB5x0PPQXFERXia/view?usp=drivesdk", "https://drive.google.com/file/d/1zt-zk_NS00RY2qA9JhETdwybVeEjIHfE/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1O0S6x1T5j5uiC9ilulB5x0PPQXFERXia/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1zt-zk_NS00RY2qA9JhETdwybVeEjIHfE.epub"]
 year: 1980
 publisher: bps
 series: wheel

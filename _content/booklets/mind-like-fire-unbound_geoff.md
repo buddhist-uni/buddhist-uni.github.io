@@ -6,7 +6,7 @@ external_url: "https://www.dhammatalks.org/books/MindLikeFire/Section0001.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Xp7KnefxqnkhG4uj2ul62l7BG4fe99V3/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1hAUwyus6wcKZKDFiUY6yxtkOgSkb9Cm0/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1hAUwyus6wcKZKDFiUY6yxtkOgSkb9Cm0.epub"
 course: nibbana
 tags:
   - imagery

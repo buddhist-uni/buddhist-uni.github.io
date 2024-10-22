@@ -7,7 +7,7 @@ formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=SJtABAAAQBAJ"
   - "https://drive.google.com/file/d/19CDpMc_nGwsWSld1YwL8JbJWV-M_Hm5C/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1OCZG79MMl0QYbHpYB9D8NsomOPfSq65_/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1OCZG79MMl0QYbHpYB9D8NsomOPfSq65_.epub"
 course: view
 status: featured
 year: 2005

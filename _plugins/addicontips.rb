@@ -20,6 +20,7 @@ module Jekyll
         {c: 'far fa-map fa-rotate-90', n: 'folded scroll', t: 'course', d: 'will cover old, Buddhist texts'},
         {c: 'fas fa-chalkboard-teacher', n: 'lecturer', t: 'course', d: 'is a structured series of classes'},
         {c: 'far fa-file-audio', n: 'white audio file icon', t: 'link', d: 'takes you directly to the file on our domain'},
+        {c: 'fas fa-cloud-arrow-down', n: 'cloud downarrow icon', t: 'link', d: 'will download this file from the cloud'},
         {c: 'fab fa-google-drive', n: 'triangular logo', t: 'link', d: 'will open in Google Drive'},
         {c: 'fas fa-tablet-alt', n: 'tablet', t: 'link', d: 'will download an eBook file suitable for tablets and ereaders'},
         {c: 'far fa-file-pdf', n: 'white PDF file icon', t: 'link', d: 'takes you directly to PDF File on our domain'},

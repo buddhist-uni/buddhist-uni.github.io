@@ -9,7 +9,7 @@ external_url: "https://www.bps.lk/olib/bp/bp213s_Vajira_Story_Last-Days-Of-The-B
 publisher: bps
 drive_links:
   - "https://drive.google.com/file/d/1eTcxiyyBFp7BLwxcvrMdznOg8EL0qEyE/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1CCiGZJ8X7gZGPQaaauE66nR1iGtDLZ0b/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1CCiGZJ8X7gZGPQaaauE66nR1iGtDLZ0b.epub"
 course: pali-canon
 tags:
   - dn

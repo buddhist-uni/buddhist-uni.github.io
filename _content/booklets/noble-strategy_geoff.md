@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.dhammatalks.org/ebook_index.html#noblestrategy"
 drive_links:
   - "https://drive.google.com/file/d/1ROBaOFaVes2tKemz8fuU5hYbgojLkeeQ/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1khfx7BeTSE7snbhjS4x733LCZDFx7SbD/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1khfx7BeTSE7snbhjS4x733LCZDFx7SbD.epub"
 course: buddhism
 tags:
   - path

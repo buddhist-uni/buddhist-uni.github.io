@@ -9,7 +9,7 @@ formats: [docx, pdf, epub]
 drive_links:
   - "https://docs.google.com/document/d/1-_LNzoCgbB4N0RnIh7zIEmNowP7xBdlu/edit?usp=drivesdk&ouid=100121264257053757190&rtpof=true&sd=true"
   - "https://drive.google.com/file/d/1acOgFrj4oUYvcGv2u7HrifPfHoJcFHg-/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1HTNvcEgiIA9EqDQlqeFCLixsQBctWEA8/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1HTNvcEgiIA9EqDQlqeFCLixsQBctWEA8.epub"
 course: pali-dictionaries
 year: 2018
 month: apr

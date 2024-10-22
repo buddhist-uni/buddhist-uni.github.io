@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh372_Jootla_Message-of-the-Velama-Sutta.html"
 drive_links:
   - "https://drive.google.com/file/d/1dbYmH66JMjpGYxARd9XQ82LWDEER5247/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1zgtki49qBiU9Jmgn0pq6Y91IR0JuA5Zv/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1zgtki49qBiU9Jmgn0pq6Y91IR0JuA5Zv.epub"
 course: karma
 tags:
   - meditation

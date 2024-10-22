@@ -7,7 +7,7 @@ file_links:
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1BrDDgajOIOLwWZO9qurX3zhhHvxUbSFT/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1J8Nj2sPHU9JlKoilzYjq8jKM5xi_6ono/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1J8Nj2sPHU9JlKoilzYjq8jKM5xi_6ono.epub"
 course: function
 tags:
   - renunciation

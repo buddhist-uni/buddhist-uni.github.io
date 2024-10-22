@@ -5,7 +5,7 @@ authors:
   - jootla
 drive_links:
   - "https://drive.google.com/file/d/1KDA0fN0P2-3dQpQkKM6yZmhiQvBhINKa/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1U86fZqdlF15Mzfsv5UdMrArwW7t79yWy/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1U86fZqdlF15Mzfsv5UdMrArwW7t79yWy.epub"
 year: 1997
 series: wheel
 publisher: bps

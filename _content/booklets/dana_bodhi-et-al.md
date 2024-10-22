@@ -11,7 +11,7 @@ external_url: "https://www.bps.lk/olib/wh/wh367_Bodhi_Dana--The-Practice-of-Givi
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/1QfTXcgS-0L9In_hEyxphaPo4GjzYzlEg/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Sy27CFcrIcvQ7W3PR_H6kz-F-0d99Av4/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1Sy27CFcrIcvQ7W3PR_H6kz-F-0d99Av4.epub"
   - "https://drive.google.com/file/d/1r5xhNoAuUloAWXjYGoj3NAH8f1bulLa1/view?usp=drivesdk"
 course: ethics
 tags:

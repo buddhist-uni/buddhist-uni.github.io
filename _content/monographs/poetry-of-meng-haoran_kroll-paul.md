@@ -9,7 +9,7 @@ formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=PV48EAAAQBAJ"
   - "https://drive.google.com/file/d/1238c214V3t8Wad7SXBk_EWB4dLYYjIRe/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1YJdZDIObLmLJZRknXkuhWoE39uWRkAPJ/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1YJdZDIObLmLJZRknXkuhWoE39uWRkAPJ.epub"
 status: featured
 course: chan-lit
 tags:

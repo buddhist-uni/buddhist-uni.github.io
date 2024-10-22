@@ -9,7 +9,7 @@ external_url: "https://www.abhayagiri.org/books/617-stillness-flowing"
 formats: [pdf, epub, mp3s]
 drive_links:
   - "https://drive.google.com/file/d/1581qqLqmVvDAAJRk0_oicy7taAu1Zmr9/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1bKJASz33mRqXMyfPqO0Urwxrth2J6vx9/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1bKJASz33mRqXMyfPqO0Urwxrth2J6vx9.epub"
   - "https://www.jayasaro.panyaprateep.org/en/audio-album/9"
 status: featured
 olid: OL32034206M

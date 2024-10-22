@@ -8,7 +8,7 @@ external_url: "https://www.abhayagiri.org/books/485-arahattamagga-arahattaphala"
 source_url: "https://forestdhamma.org/2018/02/09/arahattamagga-arahattaphala-5/"
 drive_links:
   - "https://drive.google.com/file/d/1lUSTo0lq2bNLvc35xU5W4vXEio5NiMBq/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1SnYBwp6dIiU2uRXIyL6qELvgTCj6ZA8C/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1SnYBwp6dIiU2uRXIyL6qELvgTCj6ZA8C.epub"
 course: path
 status: featured
 tags:

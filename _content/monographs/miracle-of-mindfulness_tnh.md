@@ -8,7 +8,7 @@ series: wheel
 number: 234
 year: 1975
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1dCvTd5JXdTZPLz2y4VUc4hPXE0xFJsE1/view?usp=drivesdk", "https://drive.google.com/file/d/1Jzjhw4Wki61D00PO8gg5w25Re-fBbW6v/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1dCvTd5JXdTZPLz2y4VUc4hPXE0xFJsE1/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1Jzjhw4Wki61D00PO8gg5w25Re-fBbW6v.epub"]
 status: featured
 course: buddhism
 tags:

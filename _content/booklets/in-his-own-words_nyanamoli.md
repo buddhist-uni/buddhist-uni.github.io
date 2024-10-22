@@ -3,7 +3,7 @@ title: "The Buddha's Teachings in His Own Words"
 authors: [nyanamoli]
 external_url: "https://www.bps.lk/olib/wh/wh428_Nyanamoli_Buddhas-Teaching-In-His-Own-Words.html"
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1-M3M8z3tlm3IbkTK_-ZWct1Cm4yed9mi/view?usp=drivesdk", "https://drive.google.com/file/d/1BYkmOKiIOIo6lG7x_EQpvmokrmY5zQBP/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1-M3M8z3tlm3IbkTK_-ZWct1Cm4yed9mi/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1BYkmOKiIOIo6lG7x_EQpvmokrmY5zQBP.epub"]
 year: 1999
 publisher: bps
 series: wheel

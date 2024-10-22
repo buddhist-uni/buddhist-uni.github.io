@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh285_Jones_Buddhism-and-Social-Action
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1PrtQEGMbYjpVhKkc-hRmAhhPPX99zw_F/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/16kp-Q6EVsAAlMUJdO3ftuxq5TViEoifN/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/16kp-Q6EVsAAlMUJdO3ftuxq5TViEoifN.epub"
 publisher: bps
 series: wheel
 number: 285

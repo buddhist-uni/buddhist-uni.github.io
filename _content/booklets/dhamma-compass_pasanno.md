@@ -6,7 +6,7 @@ editor: "Ronna Kabatznick"
 external_url: "https://www.abhayagiri.org/books/452-a-dhamma-compass"
 drive_links:
   - "https://drive.google.com/file/d/1_gb_y6LXkU7nnQLxjN5ci34A4rdt3Dzo/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1kFM9D1YrtLjvqOIH8_m8DiVBVOBazvI7/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1kFM9D1YrtLjvqOIH8_m8DiVBVOBazvI7.epub"
 course: thought
 tags:
   - problems

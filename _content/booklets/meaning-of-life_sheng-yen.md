@@ -9,7 +9,7 @@ formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=-JhABAAAQBAJ"
   - "https://drive.google.com/file/d/1OGSDdXUDwiseQ0A8RTnTJ70ITbLWC8hy/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1zzNVlqAkht8hWce6SlnaYITT-CbUhluA/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1zzNVlqAkht8hWce6SlnaYITT-CbUhluA.epub"
 course: east-asian
 tags:
   - chinese

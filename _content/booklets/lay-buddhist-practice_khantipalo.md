@@ -8,7 +8,7 @@ series: wheel
 number: 206
 olid: OL3083347M
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/12gATp60nYysDp8kThRt_hUOYvsjGnd63/view?usp=drivesdk", "https://drive.google.com/file/d/1PeOyzYhEKX3UDsZZ6__p7kwT1DbezRtV/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/12gATp60nYysDp8kThRt_hUOYvsjGnd63/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1PeOyzYhEKX3UDsZZ6__p7kwT1DbezRtV.epub"]
 course: form
 tags:
   - lay

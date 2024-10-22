@@ -9,7 +9,7 @@ formats: [GBook, pdf, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=sZlABAAAQBAJ"
   - "https://drive.google.com/file/d/11GMsrV91y9qABxzzqsm2ah4Z1A75XMZ5/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1_VJdtLi42S6XDpUbRcmQYmnEIkGKR7qJ/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1_VJdtLi42S6XDpUbRcmQYmnEIkGKR7qJ.epub"
 course: mahayana
 year: 2007
 olid: OL36138298M

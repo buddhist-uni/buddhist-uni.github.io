@@ -5,7 +5,7 @@ external_url: "https://www.accesstoinsight.org/lib/authors/bodhi/waytoend.html"
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/1OMm1pK6jK7a93R5J5ifRF7H3cPSH6jjb/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1Qn3N2tp90Id5Ty893uQTQDh4cBkScxpI/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1Qn3N2tp90Id5Ty893uQTQDh4cBkScxpI.epub"
   - "https://drive.google.com/file/d/1rcMFRmfSNMAiSwffZwqhNl_bcWksHGIG/view?usp=drivesdk"
 year: 1984
 publisher: bps

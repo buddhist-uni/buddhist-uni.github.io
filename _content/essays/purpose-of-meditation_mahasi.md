@@ -4,7 +4,7 @@ authors: [mahasi]
 external_url: "https://static.sirimangalo.org/mahasi/Purpose%20of%20Practicing%20Meditation.htm"
 formats: [epub]
 drive_links:
-  - "https://drive.google.com/file/d/1koRgi6a6MUzGpwR_IKLJktblNUCNyNtU/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1koRgi6a6MUzGpwR_IKLJktblNUCNyNtU.epub"
 year: 1980
 course: path
 status: featured

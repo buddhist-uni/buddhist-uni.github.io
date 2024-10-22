@@ -14,7 +14,7 @@ external_url: "https://darrennaish.files.wordpress.com/2019/01/kosemen-2017-upda
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ONeh0NYMbCzvzWMrlG9DYk2scqx5lmgK/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1kgnBPzeiHM1mPLUuYp331ozQmX1DTfIO/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1kgnBPzeiHM1mPLUuYp331ozQmX1DTfIO.epub"
 pages: 187
 ---
 

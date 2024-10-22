@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh438_Bodhi_Facing-the-Future--Four-Essays.html"
 drive_links:
   - "https://drive.google.com/file/d/1ezkZUOJPw00y6yDIx83hZSuBRKxOT5ey/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/10M9RPdgmZcBtZaT1co5ZBs6HitbPNJE9/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/10M9RPdgmZcBtZaT1co5ZBs6HitbPNJE9.epub"
 base_value: 1.2
 status: featured
 course: modern

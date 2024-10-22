@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/library-search-select.php?id=wh061"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1kQE57tTYEDJopGVPWs4cY3wNR6MoPVMP/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1BOW8n1brOi_Nqvc83dgvpMlV6AO2-MDt/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1BOW8n1brOi_Nqvc83dgvpMlV6AO2-MDt.epub"
 course: ethics
 tags:
   - meditation

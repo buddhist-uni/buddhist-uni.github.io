@@ -6,7 +6,7 @@ external_url: "https://www.amaravati.org/dhamma-books/without-and-within/"
 drive_links:
   - "https://play.google.com/store/books/details?id=kxFdDwAAQBAJ"
   - "https://drive.google.com/file/d/1pKYqXBo-S9nK3jKaYsyjm9rnMDqwI63l/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1sIVdD8PTd4CNkllVQCVA9SgYOQY5S6XR/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1sIVdD8PTd4CNkllVQCVA9SgYOQY5S6XR.epub"
 formats: [GBook, pdf, epub]
 course: theravada
 olid: OL32040958M

@@ -7,7 +7,7 @@ external_url: "https://www.buddhanet.net/pdf_file/taste-freedom.pdf"
 alternate_url: "https://www.bps.lk/olib/bp/bp525s_Chah_A-Taste-Of-Freedom.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Jfr4CZfikonNlXouqIIbp-_909Exmq7o/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1GSxHld86DUQYZPRHJRocAiU_ocIeE99c/view?usp=sharing"
+  - "https://obu.pages.dev/assets/epubs/1GSxHld86DUQYZPRHJRocAiU_ocIeE99c.epub"
 course: emptiness
 tags:
   - meditation

@@ -7,7 +7,7 @@ file_links:
   - "exclusive_01/The%20Biography%20of%20Sakyamuni%20Buddha%20-%20Master%20Hsing%20Yun.epub"
 drive_links:
   - "https://drive.google.com/file/d/1TXaAC9QB13-xCGjft2fdQgGE0OwzLE6x/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1oYt-IDQ9ucU-Um4ZmztHwWhg4_NT_Nf5/view?usp=drivesdk"
+  - "https://obu.pages.dev/assets/epubs/1oYt-IDQ9ucU-Um4ZmztHwWhg4_NT_Nf5.epub"
 formats: [pdf, epub]
 olid: OL31153405M
 year: 2013
