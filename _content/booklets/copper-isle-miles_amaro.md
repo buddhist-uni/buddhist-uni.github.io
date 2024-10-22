@@ -2,7 +2,7 @@
 title: "Copper Isle Miles"
 authors:
   - amaro
-external_url: "https://amaravati.org/dhamma-books/copper-isle-miles/"
+external_url: "https://media.amaravati.org/en/dhamma-books/copper-isle-miles"
 drive_links:
   - "https://drive.google.com/file/d/1Dylp6MpqRBgcrEF6iXUnnHpGrF07aBVF/view?usp=drivesdk"
 tags:

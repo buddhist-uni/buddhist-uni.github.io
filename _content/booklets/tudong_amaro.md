@@ -2,7 +2,7 @@
 title: "Tudong: The Long Road North"
 authors: [amaro]
 year: 1984
-external_url: "https://www.amaravati.org/dhamma-books/tudong-the-long-road-north/"
+external_url: "https://media.amaravati.org/en/dhamma-books/tudong-the-long-road-north"
 olid: OL32214608M
 drive_links:
   - "https://drive.google.com/file/d/1AsxeFaIpE2aFI8PwDrjm0UfEbFSNryHM/view?usp=drivesdk"

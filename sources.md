@@ -37,7 +37,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
 * [The Ajahn Chah Tradition](https://forestsangha.org/teachings/books?language=English)
   * [Abhayagiri Monastery](https://www.abhayagiri.org/books/)
-  * [Amaravati Monastery](https://www.amaravati.org/dhamma-books/)
+  * [Amaravati Monastery](https://media.amaravati.org/en/dhamma-books)
 * [Bodhi Monastery](https://bodhimonastery.org/religion/audios)
 * [The Chan Center](https://chancenter.org/en/publication/free-books)
 * [The Buddhist Society of Western Australia](https://bswa.org/teachings)

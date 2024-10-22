@@ -3,7 +3,7 @@ title: "An Introduction to Insight Meditation"
 authors:
   - sucitto
 external_url: "https://www.abhayagiri.org/books/478-introduction-to-insight-meditation"
-source_url: "https://amaravati.org/dhamma-books/introduction-to-insight-meditation/"
+source_url: "https://media.amaravati.org/en/dhamma-books/introduction-to-insight-meditation"
 drive_links:
   - "https://drive.google.com/file/d/1fYLfljsAYmnncAerZj0oU3LiKogw1Zsq/view?usp=drivesdk"
 course: meditation # perhaps should archive?

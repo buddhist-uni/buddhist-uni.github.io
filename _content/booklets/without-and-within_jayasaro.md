@@ -2,7 +2,7 @@
 title: "Without and Within: Questions and Answers on the Teachings of Theravāda Buddhism"
 authors:
   - jayasaro
-external_url: "https://www.amaravati.org/dhamma-books/without-and-within/"
+external_url: "https://media.amaravati.org/en/dhamma-books/without-and-within"
 drive_links:
   - "https://play.google.com/store/books/details?id=kxFdDwAAQBAJ"
   - "https://drive.google.com/file/d/1pKYqXBo-S9nK3jKaYsyjm9rnMDqwI63l/view?usp=drivesdk"

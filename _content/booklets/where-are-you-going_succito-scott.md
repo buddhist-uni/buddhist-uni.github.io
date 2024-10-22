@@ -4,7 +4,7 @@ authors:
   - sucitto
   - "Nick Scott"
 olid: OL3409208M
-external_url: "https://www.amaravati.org/book-authors/nick-scott/"
+external_url: "https://media.amaravati.org/en/dhamma-books?teachers%5B0%5D=151"
 drive_links:
   - "https://drive.google.com/drive/folders/1GPDoA7_mJvEF93lMpy7DqXryyP0Jb8CQ"
 formats: ["PDF and Audiobook"]

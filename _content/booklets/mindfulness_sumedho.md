@@ -2,7 +2,7 @@
 title: "Mindfulness: The Path to the Deathless"
 authors:
   - sumedho
-external_url: "https://www.amaravati.org/dhamma-books/mindfulness-the-path-to-the-deathless/"
+external_url: "https://media.amaravati.org/en/dhamma-books/mindfulness-the-path-to-the-deathless"
 drive_links:
   - "https://drive.google.com/file/d/1C6paTD_eqUkBiMNjp9iDxNekG1G5Ol0T/view?usp=drivesdk"
 course: meditation
