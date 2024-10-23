@@ -7,9 +7,9 @@ status: featured
 external_url: "https://archive.org/details/cheesewormscosmo00ginz/mode/1up"
 course: religion
 tags:
-  - communication
   - books
   - past
+  - society
 year: 1980
 olid: OL4266213M
 oclc: 6040989

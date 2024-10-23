@@ -1,5 +1,5 @@
 ---
-title: "Identity and Continuity of 'Personality' of Selfless Being: A Study of the Concept of *Bhavaṅga-citta* in Theravāda Buddhism"
+title: "Identity and Continuity of 'Personality' of Selfless Being: A Study of the Concept of *Bhavaṅga-citta* in Theravāda Buddhism"
 subcat: thesis
 authors:
   - "Dipen Barua"
