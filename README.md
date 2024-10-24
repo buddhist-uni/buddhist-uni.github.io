@@ -3,8 +3,6 @@ The Open Buddhist University
 
 [https://buddhistuniversity.net](https://buddhistuniversity.net)
 
-[![Build status](https://github.com/buddhist-uni/buddhist-uni.github.io/actions/workflows/build.yaml/badge.svg)](https://github.com/buddhist-uni/buddhist-uni.github.io/actions/workflows/build.yaml)  [![External Links](https://github.com/buddhist-uni/buddhist-uni.github.io/actions/workflows/links.yml/badge.svg)](https://github.com/buddhist-uni/buddhist-uni.github.io/actions/workflows/links.yml)
-
 > A place to chill and learn
 
 The Open Buddhist University is a [large](https://buddhistuniversity.net/content/) library of free digital resources for those interested in Buddhism.

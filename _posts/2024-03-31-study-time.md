@@ -18,7 +18,7 @@ And the Buddha also encourages us to "frequently recollect" our intimate relatio
 
 > Kammassakomhi, [I own my actions]  
 Kamma-dāyādo [I am the heir to my actions]
-~ [AN 10.48](https://www.buddha-vacana.org/formulae/kamma.html)
+~ [AN 10.48](https://suttacentral.net/an10.48/en/sujato?lang=en&layout=sidebyside&reference=none&notes=none&highlight=false&script=latin)
 
 But working out precisely how karma works is "unthinkably" complex, as
 
