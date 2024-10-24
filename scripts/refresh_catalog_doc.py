@@ -9,12 +9,6 @@ import hashlib
 ROOT_FOLDER = "1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv"
 FIELDS = "id,name,mimeType,size,shortcutDetails,createdTime,webViewLink"
 MY_EMAILS = {
-  'aee5188bd988b0ab263a6b3003831c6e',
-  'e55371a7e1b97300ea623338dbcc0694',
-  '3945098d73ac3a594febd2c87d357971',
-  '3b654b6ccfb53f233fbd798415b62624',
-  'b9083baac482b28ac374ebe1856bfefc',
-  '7f519cc091d7690b440aa4db74141a94',
   'd97d9501979b0a1442b0482418509a84',
 }
 
