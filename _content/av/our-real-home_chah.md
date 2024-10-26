@@ -6,7 +6,8 @@ reader: amaro
 external_url: "https://amaravati.org/audio/part-1-ch13-our-real-home/"
 drive_links:
   - "https://drive.google.com/file/d/1CPoGAZVOYQjCbvsPjUiCn17X3a70emxa/view?usp=sharing"
-formats: [mp3]
+  - "https://drive.google.com/file/d/111HGsw3SSTbzLLCNYkJNyd5-Ij-ujpU1/view?usp=drivesdk"
+formats: [mp3, pdf]
 course: problems
 status: featured
 tags:
