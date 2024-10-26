@@ -10,7 +10,7 @@
       <div class="content_title">{% capture foo %}{% include simple_content_title.html content=c %}{% endcapture %}{{ foo | strip_newlines }}</div>{% endif %}
       <div class="star_label">{% unless c.stars == 3 %}<span class="RatingLabel-{{ c.stars }}">{% include starlabel.html stars=c.stars %}</span>{% endunless %}</div>
       {% unless c.olid %}{% assign supex = false %}{% if c.external_url contains 'youtu' %}{% unless c.external_url contains "list" %}
-        <a href="{{ c.url }}"><img src="https://img.youtube.com/vi/{{ c.external_url | ytid }}/0.jpg" alt="{{ c.title }} Video Thumbnail"></a>{% assign supex = true %}{% endunless %}{% endif %}
+        <a href="{{ c.url }}"><img src="https://img.youtube.com/vi/{{ c.external_url | ytid }}/0.jpg" alt="{{ c.title | smartify }} Video Thumbnail"></a>{% assign supex = true %}{% endunless %}{% endif %}
         {% unless supex %}<div class="content_desc">{{ c.excerpt }}</div>{% endunless %}
       {% endunless %}
       <div class="data-row"><div class="size-info">{% include content_size.html content=c %}</div>{% include content_filelinks.html content=c newtab=true %}</div>

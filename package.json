@@ -8,7 +8,9 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.6",
     "@primer/css": "^20.8",
-    "purgecss": "^6.0"
+    "clean-css-cli": "^5.6",
+    "purgecss": "^6.0",
+    "uglify-js": "^3.19.3"
   },
   "scripts": {}
 }

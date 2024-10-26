@@ -58,10 +58,8 @@ jobs:
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
-      - name: Purge CSS
-        run: |
-          npx purgecss -v --content "$BUILD_DIR/**/*.html" "$BUILD_DIR/assets/js/*.js" --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
-          test -s $BUILD_DIR/assets/css/purged-main.css
+      - name: Minify CSS, HTML, and JSs
+        run: bash scripts/minify.bash
       - name: Upload Build as Artifact
         uses: actions/upload-pages-artifact@v3
         with:

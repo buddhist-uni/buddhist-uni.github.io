@@ -23,7 +23,7 @@ image_center_y: 20%
 big_image: https://github.com/buddhist-uni/big_imgs/raw/main/banners/footers/thai-manuscript.jpg
 big_width: 5134
 big_height: 2134
-footer_info: <a href=""https://wellcomecollection.org/works/ruaq3gnw>Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+footer_info: <a href="https://wellcomecollection.org/works/ruaq3gnw">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 
 The liturgical language of Theravada Buddhism and the only Indic language to preserve a complete Tipiṭaka.
