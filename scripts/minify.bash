@@ -23,15 +23,16 @@ npx cleancss --batch --batch-suffix '' -O2 \
     $BUILD_DIR/assets/css/search.css \
     $BUILD_DIR/assets/css/tagindex.css
 
-if [ ! -f "$HOME/minhtml" ]; then
-    echo "Installing HTML Minifier..."
-    wget --no-verbose https://github.com/wilsonzlin/minify-html/releases/download/v0.15.0/minhtml-0.15.0-x86_64-unknown-linux-gnu --output-document="$HOME/minhtml"
-    chmod a+x $HOME/minhtml
-fi
+# Don't minify HTML for now because minhtml is too buggy and html-minifier is too slow
+# if [ ! -f "$HOME/minhtml" ]; then
+#     echo "Installing HTML Minifier..."
+#     wget --no-verbose https://github.com/wilsonzlin/minify-html/releases/download/v0.15.0/minhtml-0.15.0-x86_64-unknown-linux-gnu --output-document="$HOME/minhtml"
+#     chmod a+x $HOME/minhtml
+# fi
 
-echo "Minifying HTML..."
-HTML_COUNT=$($HOME/minhtml --minify-js --minify-css $BUILD_DIR/**/*.html | wc -l)
-echo "  minified $HTML_COUNT html files"
+# echo "Minifying HTML..."
+# HTML_COUNT=$($HOME/minhtml --minify-js --minify-css $BUILD_DIR/**/*.html | wc -l)
+# echo "  minified $HTML_COUNT html files"
 
 echo "Minifying Search JS..."
 npx uglify-js $BUILD_DIR/assets/js/search_index.js -o $BUILD_DIR/assets/js/search_index.min.js -c -m

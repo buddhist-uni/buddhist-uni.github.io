@@ -23,4 +23,4 @@ minutes: 5
 > around my bed America  
 was falling: invisible house by invisible house...
 
-For more about this famous poem, you can also hear [Pádraig Ó Tuama's take on it in *Poetry Unbound*](https://onbeing.org/programs/ilya-kaminsky-we-lived-happily-during-the-war/){:target="_blank" ga-event-value="0.5"}. (I particular appreciate the way he reads the final lines of the poem).
+For more about this famous poem, you can also hear [Pádraig Ó Tuama's take on it in *Poetry Unbound*](https://onbeing.org/programs/ilya-kaminsky-we-lived-happily-during-the-war/){:target="_blank" ga-event-value="0.5"}. (I particularly appreciate the way he reads the final lines of the poem).
