@@ -12,7 +12,7 @@ tags:
   - laos
   - sea
   - vietnam-war
-  - violence-since-wwii
+  - violence-since-ww2
 year: 2021
 month: nov
 series: slowdown
