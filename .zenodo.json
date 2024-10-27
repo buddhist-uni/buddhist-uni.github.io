@@ -2,7 +2,7 @@
   "title": "The Open Buddhist University",
   "keywords": ["buddhism", "mooc", "courseware", "course", "curriculum", "bibliography"],
   "upload_type": "lesson",
-  "description": "<p>A library of free courses and other materials for studying the fundamentals of Buddhism, it also includes dozens of topical bibliographies atop a database of over a thousand free articles, books, and recordings across the breadth of Buddhist Studies.</p><p>This archive contains the source code for building <a href=\"https://buddhistuniversity.net\">the website</a> with <a href=\"http://jekyllrb.com/\">Jekyll</a>. For full instructions, see CONTRIBUTING.md. Additional assets for serving the site can found <a href=\"https://doi.org/10.5281/zenodo.4450047\">here</a></p>",
+  "description": "<p>A library of free courses and other materials for studying the fundamentals of Buddhism and our shared human world including dozens of topical bibliographies atop a database of thousands of free articles, books, and recordings.</p><p>This archive contains the source code for building <a href=\"https://buddhistuniversity.net\">the website</a> with <a href=\"http://jekyllrb.com/\">Jekyll</a>. For full instructions, see CONTRIBUTING.md.</p>",
   "creators": [{
     "name": "Khemarato Bhikkhu",
     "orcid": "0000-0003-4738-7882"

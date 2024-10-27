@@ -58,7 +58,7 @@ jobs:
           export RUBYOPT="--enable=yjit"
           ruby --version
           JEKYLL_ENV=production bundle exec jekyll build -d $BUILD_DIR --trace
-      - name: Minify CSS, HTML, and JSs
+      - name: Minify CSS, HTML, and JS
         run: bash scripts/minify.bash
       - name: Upload Build as Artifact
         uses: actions/upload-pages-artifact@v3

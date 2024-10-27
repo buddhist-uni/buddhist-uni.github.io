@@ -2,6 +2,11 @@
 
 [[ -z "$BUILD_DIR" ]] && { echo "\$BUILD_DIR is unassigned" ; exit 1; }
 
+if [[ "$BUILD_DIR" =~ [[:space:]] ]]; then
+    echo "\$BUILD_DIR cannot contain whitespace."
+    exit 1
+fi
+
 shopt -s globstar
 
 echo "Removing unused CSS Rules..."
@@ -20,15 +25,18 @@ time npx cleancss --batch --batch-suffix '' -O2 \
 
 if [ ! -f "$HOME/minhtml" ]; then
     echo "Installing HTML Minifier..."
-    wget https://github.com/wilsonzlin/minify-html/releases/download/v0.15.0/minhtml-0.15.0-x86_64-unknown-linux-gnu --output-document="$HOME/minhtml"
+    time wget --no-verbose https://github.com/wilsonzlin/minify-html/releases/download/v0.15.0/minhtml-0.15.0-x86_64-unknown-linux-gnu --output-document="$HOME/minhtml"
     chmod a+x $HOME/minhtml
 fi
 
 echo "Minifying HTML..."
-time $HOME/minhtml --minify-js --minify-css $BUILD_DIR/**/*.html
+HTML_COUNT=$(time $HOME/minhtml --minify-js --minify-css $BUILD_DIR/**/*.html | wc -l)
+echo "Minified $HTML_COUNT html files"
 
+echo ""
 echo "Minifying Search JS..."
-npx uglify-js $BUILD_DIR/assets/js/search_index.js -o $BUILD_DIR/assets/js/search_index.min.js -c -m
+time npx uglify-js $BUILD_DIR/assets/js/search_index.js -o $BUILD_DIR/assets/js/search_index.min.js -c -m
 mv $BUILD_DIR/assets/js/search_index.min.js $BUILD_DIR/assets/js/search_index.js
+# The other js files are too small to need minification
 
 echo "Done!"
