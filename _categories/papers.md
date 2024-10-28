@@ -4,6 +4,7 @@ permalink: "/content/papers/"
 similars:
   - essays
   - articles
+should_have_publisher: true
 ---
 
 Papers are short-to-medium length pieces of writing that were published in an edited volume collecting works by many authors. For self-published papers, see [essays](/content/essays/). For papers published in academic journals, see [articles](/content/articles/). For papers published in a collection by a single author, see [excerpts](/content/excerpts/).

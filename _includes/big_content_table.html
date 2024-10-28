@@ -12,7 +12,9 @@
     <th>Featured In...</th>
     <th>Date Added</th>
     <th>Size</th>
-    <th><i class="fas fa-cloud-arrow-down"></i><span style="display: none">Downloads</span></th>
+    <th><i class="fas fa-cloud-arrow-down"></i><span style="display: none">Downloads</span></th>{% if include.publishercol %}
+    <th>Publisher</th>{% elsif include.journalcol %}
+    <th>Journal</th>{% endif %}
   </thead>
   <tbody>
     {%- for p in contents -%}
@@ -86,7 +88,23 @@
           {%- assign plus = 1 -%}
           {%- unless p.external_url or p.drive_links.size > 0 -%}{%- assign plus = 0 -%}{%- endunless -%}
           {{ site.data.content_downloads[p.content_path] | default: 0 | plus: plus }}
-        </td>
+        </td>{% if include.publishercol %}
+        <td>
+          {%- assign pub = site.publishers | find: "slug", p.publisher -%}
+          {%- if pub -%}
+            <a href="{{ pub.url }}">{{ pub.title }}</a>
+          {%- else -%}
+            {{ p.publisher }}
+          {%- endif -%}
+        </td>{% elsif include.journalcol %}
+        <td>
+          {%- assign pub = site.journals | find: "slug", p.journal -%}
+          {%- if pub -%}
+            <a href="{{ pub.url }}">{{ pub.title }}</a>
+          {%- else -%}
+            {{ p.journal }}
+          {%- endif -%}
+        </td>{% endif %}
       </tr>
     {%- endfor -%}
   </tbody>
@@ -124,7 +142,8 @@
       { "targets": [4], "visible": initialwindowwidth > 700},
       { "targets": [5], "visible": initialwindowwidth > 790},
       { "targets": [6], "visible": initialwindowwidth > 850},
-      { "targets": [7], "visible": initialwindowwidth > 820}
+      { "targets": [7], "visible": initialwindowwidth > 820}{% if include.publishercol or include.journalcol %},
+      { "targets": [8], "visible": initialwindowwidth > 990}{% endif %}
     ]
   });
 

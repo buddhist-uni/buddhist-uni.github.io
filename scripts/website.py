@@ -1,6 +1,7 @@
 
 from typing import Any
 import subprocess
+import json
 from datetime import datetime
 from strutils import (
   Path,
@@ -65,6 +66,8 @@ class DataCollection():
   def load(self):
     content_config = root_folder.joinpath('_data/content.yml').read_text()
     self.content = yaml.load(content_config, Loader=yaml.Loader)
+    downloads_json = root_folder.joinpath("_data/content_downloads.json").read_text()
+    self.content_downloads = json.loads(downloads_json)
 
 data = DataCollection()
 
@@ -171,3 +174,7 @@ def load():
       continue
     authors.add(AuthorFile.load(authorfile))
   data.load()
+  for c in content:
+    c.download_count = data.content_downloads.get(c.content_path, 0)
+    if c.external_url or c.drive_links:
+      c.download_count += 1

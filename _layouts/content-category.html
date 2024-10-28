@@ -13,7 +13,8 @@ layout: default
   <div class="post-content">
     {{ content }}
     {%- assign contents = site.content | where: "category", page.slug -%}
-    {% include big_content_table.html contents=contents %}
+    {%- assign isarts = false -%}{%- if page.slug == "articles" -%}{%- assign isarts = true -%}{%- endif -%}
+    {% include big_content_table.html contents=contents publishercol=page.should_have_publisher journalcol=isarts %}
   </div>
 
 </article>

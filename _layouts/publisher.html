@@ -28,8 +28,9 @@ layout: default
 {% include content_list.html contents=series keep_rejects="true" %}
 {% endif %}
 {% assign allworks = site.content | where: "publisher", page.slug %}
+{% assign workslugs = allworks | map: "slug" %}
 {% assign filtered = '' | split: '' %}
-{% for c in allworks %}{% unless seriesslugs contains c.series or journalslugs contains c.journal %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
+{% for c in allworks %}{% unless seriesslugs contains c.series or journalslugs contains c.journal or workslugs contains c.from_book %}{% assign filtered = filtered | push: c %}{% endunless %}{% endfor %}
 {% if filtered.size > 0 %}<h4>Featured Publications:</h4>
 {% include content_list.html contents=filtered %}
 {% endif %}
