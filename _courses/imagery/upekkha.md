@@ -11,6 +11,7 @@ description: "The culmination of meditation, <i>upekkhā</i> allows us to be pea
 <p>
 {% include content_blurb.html category="canon" slug="an8.6" %} 
 {% include content_blurb.html category="canon" slug="an4.196" %}
+{% include content_blurb.html category="canon" slug="an8.44" %} 
 {% include content_blurb.html category="canon" slug="thag6.2" %}
 </p>
 
@@ -21,4 +22,5 @@ description: "The culmination of meditation, <i>upekkhā</i> allows us to be pea
 ### Reflections
 
 How do the similes make clear the distinction between <i>upekkhā</i> and indifference?
+How do they make upekkhā seem noble?
 

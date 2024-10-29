@@ -2,7 +2,6 @@
 filehost: "https://buddhistuniversity.net/"
 valid_buckets:
   - "exclusive_01"
-  - "patanjali-yoga-sutra"
   - "function-data"
 noreferrerhosts:
   - "https://www.shin-ibs.edu"
