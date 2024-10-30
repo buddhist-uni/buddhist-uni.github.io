@@ -6,6 +6,7 @@ external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Sat
 alternative_url: "https://suttacentral.net/vb7/en/anandajoti"
 drive_links:
   - "https://drive.google.com/file/d/1Ot-DbouPRfA355peMEHG4mMcDNWs5vTT/view?usp=sharing"
+  - "https://drive.google.com/file/d/12q0SqkBiKRJXwoh8MM4wvnstVkOKkzYT/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - satipatthana
