@@ -3,7 +3,7 @@ title: "SN 7.19 Mātuposaka Sutta: Supporting One's Mother"
 translator: sujato
 slug: "sn.007.019"
 external_url: "https://suttacentral.net/sn7.19/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1X_l7GxA8Y-c59_KFE4Kfx9WVQUt9N_Lw/view?usp=drivesdk"
 course: families
 tags:

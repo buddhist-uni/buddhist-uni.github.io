@@ -3,7 +3,7 @@ title: "AN 7.47 Dutiya Aggi Sutta: The Second Discourse on Fires"
 translator: sujato
 slug: "an.007.047"
 external_url: "https://suttacentral.net/an7.47/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/138TJw9tfoxpOLURxa3Vbav0HXN822_tS/view?usp=drivesdk"
 course: with-brahmins
 tags:

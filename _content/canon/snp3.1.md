@@ -4,7 +4,7 @@ slug: "snp.3.01"
 external_url: "https://suttacentral.net/snp3.1/en/sujato"
 translator: sujato
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1dCDoChpdeYZ0l3K8xu-lQaHhau8LmHX6/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1dCDoChpdeYZ0l3K8xu-lQaHhau8LmHX6/view?usp=drivesdk"]
 course: buddha # intentionally duplicated over Nyanamoli's *Life*
 tags:
   - snp

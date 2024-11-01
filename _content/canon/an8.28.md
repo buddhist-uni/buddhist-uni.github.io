@@ -3,7 +3,7 @@ title: "AN 8.28 Dutiya Bala Sutta: The Second Discourse on the Powers"
 translator: sujato
 slug: "an.008.028"
 external_url: "https://suttacentral.net/an8.28/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1bvxOsdQtkyZMWDjw5mHSFpC1rZmvK5Li/view?usp=drivesdk"
 course: stages
 tags:

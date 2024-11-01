@@ -275,7 +275,7 @@ def process_pdf(pdf_file):
   if shortcut_folder and not folder_id:
     folder_id = shortcut_folder
     shortcut_folder = None
-    drive_links = "hidden_links"
+    # drive_links = "hidden_links"
   slugfield = slug
   extra_fields = ""
   if trans['author_uid'] == 'geoff':

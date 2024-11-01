@@ -3,7 +3,7 @@ title: "DN 9 Poṭṭhapāda Sutta: With Poṭṭhapāda"
 translator: geoff
 slug: "dn09"
 external_url: "https://suttacentral.net/dn9/en/thanissaro"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/122pXn0fUbRtWNy27o42hVWCXbVogVn7e/view?usp=drivesdk"
 course: interfaith
 tags:

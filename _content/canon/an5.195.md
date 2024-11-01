@@ -3,7 +3,7 @@ title: "AN 5.195 Piṅgiyānī Sutta: Piṅgiyānī"
 translator: sujato
 slug: "an.005.195"
 external_url: "https://suttacentral.net/an5.195/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1DsCExZuPEDgomRtYhdWOHZWOV_anFb60/view?usp=drivesdk"
 course: clothes
 tags:

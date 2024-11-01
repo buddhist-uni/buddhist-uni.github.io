@@ -3,7 +3,7 @@ title: "AN 4.87 Putta Sutta: The Son"
 translator: sujato
 slug: "an.004.087"
 external_url: "https://suttacentral.net/an4.87/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1ImJ452hdcyOpPdTwemqsn56Sh_Ncfu64/view?usp=drivesdk"
 course: formless
 tags:

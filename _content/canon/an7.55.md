@@ -3,7 +3,7 @@ title: "AN 7.55 Purisagati Sutta: Places People Are Reborn"
 translator: sujato
 slug: "an.007.055"
 external_url: "https://suttacentral.net/an7.55/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1fWWrt7Wvq4cm1GPyiHexAyHf9kfFzrXy/view?usp=drivesdk"
 course: stages
 tags:

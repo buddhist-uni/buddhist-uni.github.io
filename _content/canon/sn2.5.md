@@ -4,7 +4,7 @@ translator: sujato
 subcat: poetry
 slug: "sn.002.005"
 external_url: "https://suttacentral.net/sn2.5/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1cDxCv9EiXzIqO3MWgLJZ9NNYyjYTm0qj/view?usp=drivesdk"
 course: stages
 tags:

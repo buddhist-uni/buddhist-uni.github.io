@@ -4,7 +4,7 @@ translator: sujato
 slug: "thag.04.02"
 subcat: poetry
 external_url: "https://suttacentral.net/thag4.2/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1d1qtKoRvjbSNCto09mRfaJ7kdmyRSFOY/view?usp=drivesdk"
 course: walking-meditation
 tags:

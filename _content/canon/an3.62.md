@@ -3,7 +3,7 @@ title: "AN 3.62 Bhaya Sutta: Perils"
 translator: bodhi
 slug: "an.003.062"
 external_url: "https://suttacentral.net/an3.62/en/bodhi"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1PeBuP29udrrn8nDQkv8yldiw96bBXDgk/view?usp=drivesdk"
 course: families
 tags:

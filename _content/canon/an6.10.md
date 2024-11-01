@@ -3,7 +3,7 @@ title: "AN 6.10 Mahānāma Sutta: With Mahānāma"
 translator: sujato
 slug: "an.006.010"
 external_url: "https://suttacentral.net/an6.10/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1EJkUuWtb9HoWsebSw81cAlERb80Yeiu1/view?usp=drivesdk"
 course: stages
 tags:

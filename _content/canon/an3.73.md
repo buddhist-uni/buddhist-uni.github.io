@@ -3,7 +3,7 @@ title: "AN 3.73 Mahānāmasakka Sutta: With Mahānāma the Sakyan"
 translator: sujato
 slug: "an.003.073"
 external_url: "https://suttacentral.net/an3.73/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1H5dUTItfB65FlnlzxUhFDsEF50nHHdxy/view?usp=drivesdk"
 course: stages
 tags:

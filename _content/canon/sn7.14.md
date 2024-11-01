@@ -4,7 +4,7 @@ translator: "Ven. Kiribathgoda Gnanananda"
 slug: "sn.007.014"
 subcat: poetry
 external_url: "https://suttafriends.org/sutta/sn7-14"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/13pcLQWRaj5_BXsE_hz-pxjxetgDRVM74/view?usp=drivesdk"
 course: families
 tags:

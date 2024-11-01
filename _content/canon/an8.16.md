@@ -3,7 +3,7 @@ title: "AN 8.16 Dūteyya Sutta: Going on a Mission"
 translator: bodhi
 slug: "an.008.016"
 external_url: "https://suttacentral.net/an8.16/en/bodhi"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/112mttJLADDRrjveEoH_ZWj5bAzyO-lPE/view?usp=drivesdk"
 course: interfaith
 tags:

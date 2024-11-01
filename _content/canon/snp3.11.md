@@ -4,7 +4,7 @@ slug: "snp.3.11"
 external_url: "https://suttacentral.net/snp3.11/en/mills"
 translator: mills-laurence
 formats: [pdf]
-hidden_links: ["https://drive.google.com/file/d/1o_lPpKjCJWpB7LmFk2dLn56Cpn7--Myt/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1o_lPpKjCJWpB7LmFk2dLn56Cpn7--Myt/view?usp=drivesdk"]
 course: monastic-advice
 subcat: poetry
 tags:

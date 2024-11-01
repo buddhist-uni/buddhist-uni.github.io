@@ -3,7 +3,7 @@ title: "AN 8.83 Mūlaka Sutta: Rooted"
 translator: sujato
 slug: "an.008.083"
 external_url: "https://suttacentral.net/an8.83/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1WnYSJXYhHGTNEpICJiNutQbc2GjoWD5p/view?usp=drivesdk"
 course: interfaith
 tags:

@@ -3,7 +3,7 @@ title: "Dhammasangiṇi: A Buddhist Manual of Psychological Ethics"
 translator: "C. A. F. Rhys Davids"
 external_url: "https://suttacentral.net/ds?lang=en"
 source_url: "https://archive.org/details/Dhammasangani/page/n1/mode/2up"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1gHhyvLuGCtqJsa9CW2tAMeYxSYYhRiKD/view?usp=sharing"
 course: abhidhamma
 year: 1900

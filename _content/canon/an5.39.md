@@ -3,7 +3,7 @@ title: "AN 5.39 Putta Sutta: A Child"
 translator: sujato
 slug: "an.005.039"
 external_url: "https://suttacentral.net/an5.39/en/sujato"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/1EtRrL5AGMFgFIaCnEdaJAc0isAqOrAgt/view?usp=drivesdk"
 course: families
 tags:

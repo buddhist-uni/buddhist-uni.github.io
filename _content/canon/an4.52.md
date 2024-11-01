@@ -3,7 +3,7 @@ title: "AN 4.52 Dutiya Puññābhisanda Sutta: The Second Discourse on Overflowi
 translator: bodhi
 slug: "an.004.052"
 external_url: "https://suttacentral.net/an4.52/en/bodhi"
-hidden_links:
+drive_links:
   - "https://drive.google.com/file/d/129HzQA9VEQyB39ROsxUEyPr0oFjU7Yp4/view?usp=drivesdk"
 course: stages
 tags:
