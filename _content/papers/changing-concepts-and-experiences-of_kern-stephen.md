@@ -19,8 +19,5 @@ chapter: 5
 openalexid: W4293091867
 ---
 
-
-> ... Nietzsche's announcement of the death of god; Einstein's relativity theory; Mendelian genetics; Freudian psychoanalysis; atonal music; cubism, abstraction, and collage; and formal innovations in the novel such as seemingly trivial subject matter, weak plots, stream of consciousness, unreliable narrators, and unresolved endings.
-> A further challenge is to relate these high cultural developments with mass culture and material aspects of everyday life such as urbanism, imperialism, and World War I as well as developments in technology.
 > I interpret the fin de Siècle through concepts and experiences of time and space that were reinterpreted in high culture, reworked by new communication and transportation technologies, and palpably manifest in everyday life.
 
