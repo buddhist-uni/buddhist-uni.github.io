@@ -7,7 +7,7 @@ publisher: pariyatti
 year: 2013
 course: pilgrimage
 olid: OL32196363M
-external_url: "https://store.pariyatti.org/Along-the-Path--Second-EditionbrspanVipassanaspan_p_2548.html#freeDownloads"
+external_url: "https://store.pariyatti.org/along-the-path-3"
 pages: 453
 ---
 

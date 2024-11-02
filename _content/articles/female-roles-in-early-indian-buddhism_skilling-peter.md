@@ -2,7 +2,7 @@
 title: "Nuns, Laywomen, Donors, Goddesses: Female Roles in Early Indian Buddhism"
 authors:
   - skilling
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8921/2814"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8921/2814"
 drive_links:
   - "https://drive.google.com/file/d/1CXwXRHvqtHoTlig9RmqA53L15z8xtOU6/view?usp=drivesdk"
 course: indian

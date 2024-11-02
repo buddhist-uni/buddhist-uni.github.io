@@ -2,7 +2,7 @@
 title: "Channa’s Suicide in the *Saṃyukta-āgama*"
 authors:
   - analayo
-external_url: "https://journal.equinoxpub.com/BSR/article/view/8919/10377"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/8919/10377"
 drive_links:
   - "https://drive.google.com/file/d/1jLZYpM9NiLXWg4zUR21z9BJanXOlqKGF/view?usp=drivesdk"
 course: nibbana

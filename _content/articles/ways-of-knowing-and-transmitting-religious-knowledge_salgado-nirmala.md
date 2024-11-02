@@ -2,7 +2,7 @@
 title: "Ways of Knowing and Transmitting Religious Knowledge: Case Studies of Theravāda Buddhist Nuns"
 authors:
   - "Nirmala S. Salgado"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8842/2749"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8842/2749"
 drive_links:
   - "https://drive.google.com/file/d/1fSBegEjoF9y2RO2j3s_DCFzToLh5UABq/view?usp=drivesdk"
 tags:

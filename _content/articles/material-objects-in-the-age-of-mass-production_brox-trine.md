@@ -3,7 +3,7 @@ title: "The Aura of Buddhist Material Objects in the Age of Mass-Production"
 authors:
   - "Trine Brox"
 external_url: "https://zenodo.org/record/3238213/files/Brox_GALLEY_ARCHIVE.pdf"
-source_url: "https://www.globalbuddhism.org/article/view/1267/1104"
+source_url: "https://www.globalbuddhism.org/article/download/1267/1104"
 drive_links:
   - "https://drive.google.com/file/d/1Aq6ZK14NOB5uVOEs9J8G3JKISu6e-BQA/view?usp=drivesdk"
 status: featured

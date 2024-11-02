@@ -3,7 +3,7 @@ title: >-
     ‘I’m Not Getting Anywhere with my Meditation …’: Effort, Contentment and Goal-directedness in the Process of Mind-training
 authors:
   - amaro
-external_url: "https://journal.equinoxpub.com/BSR/article/view/9107/15942"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/9107/15942"
 source_url: "https://doi.org/10.1558/bsrv.36752"
 drive_links:
   - "https://drive.google.com/file/d/1lKJKAOH7ZsfAxiVwoZgNMp0kBtedZOhe/view?usp=drivesdk"

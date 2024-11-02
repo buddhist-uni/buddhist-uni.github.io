@@ -3,7 +3,7 @@ title: >-
     "Signless" Meditations in Pāli Buddhism
 authors:
   - harvey
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8674/2581"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8674/2581"
 drive_links:
   - "https://drive.google.com/file/d/1WH0O8KJRqHgD-dKo2LMjJ5BYlk98bLKB/view?usp=drivesdk"
 course: samadhi

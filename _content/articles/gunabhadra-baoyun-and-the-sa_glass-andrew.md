@@ -1,7 +1,7 @@
 ---
 title: "Guṇabhadra, Bǎoyún, and the Saṃyuktāgama"
 authors: ["Andrew Glass"]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/9002/2895"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/9002/2895"
 journal: jiabs
 year: 2008
 pages: "185--203"

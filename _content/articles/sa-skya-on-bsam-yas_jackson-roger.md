@@ -6,7 +6,7 @@ year: 1982
 volume: 5
 number: 1
 pages: "89--99"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8564/2471/0"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8564/2471/0"
 drive_links: ["https://drive.google.com/file/d/1FO3mYUe79-Sxjfpny4zLX63DHhIbPvv2/view?usp=drivesdk"]
 course: historiography
 tags:

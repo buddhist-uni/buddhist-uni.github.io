@@ -2,8 +2,7 @@
 title: "The Story of Vyāsa and Kāśīsundarī"
 authors:
   - "L. Zwilling"
-external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286392&journal_code=JIABS&download=yes&f=.pdf"
-source_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286392&journal_code=JIABS"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286392&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1vZG0LhKsM_GAKc2espnDG0UlW6KmBsR9/view?usp=drivesdk"
 course: social

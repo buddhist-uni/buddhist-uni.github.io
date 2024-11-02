@@ -1,7 +1,7 @@
 ---
 title: "The Concepts of Truth and Meaning in Buddhist Scriptures"
 authors: ["José Ignacio Cabezón"]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8532/2439/8340"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8532/2439/8340"
 drive_links: ["https://drive.google.com/file/d/1C06zdWrEIXM3u1xLGV_zefaGpsNhchak/view?usp=drivesdk"]
 journal: jiabs
 volume: 4

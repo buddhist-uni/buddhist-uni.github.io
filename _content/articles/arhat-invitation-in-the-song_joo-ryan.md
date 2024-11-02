@@ -6,7 +6,7 @@ journal: jiabs
 volume: 30
 number: 1
 pages: "81--116"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8987/2880/8781"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8987/2880/8781"
 status: featured
 base_value: 0.6
 formats: [pdf]

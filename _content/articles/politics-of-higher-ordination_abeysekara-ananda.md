@@ -2,7 +2,7 @@
 title: "Politics of Higher Ordination, Buddhist Monastic Identity, and Leadership in Sri Lanka"
 authors:
   - "Ananda Abeysekara"
-external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3275081&journal_code=JIABS&download=no"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3275081&journal_code=JIABS"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15pQay-R4VvtBPJcdnfxbog9eQNvDoNKS/view?usp=drivesdk"]
 year: 1999

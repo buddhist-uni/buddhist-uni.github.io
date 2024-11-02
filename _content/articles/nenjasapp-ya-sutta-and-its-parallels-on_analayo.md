@@ -2,7 +2,7 @@
 title: "The Aneñjasappaya-sutta and its Parallels on Imperturbability and on the Contribution of Insight to the Development of Tranquility"
 authors:
   - analayo
-external_url: "https://journal.equinoxpub.com/BSR/article/view/13690/15914"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/13690/15914"
 source_url: "https://doi.org/10.1558/bsrv.v26i2.177"
 drive_links:
   - "https://drive.google.com/file/d/1nJz7RBRWR8gQkWlrZnQbxDIaWTZCzr4c/view?usp=drivesdk"

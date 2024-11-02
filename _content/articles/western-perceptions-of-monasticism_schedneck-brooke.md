@@ -2,7 +2,7 @@
 title: "Western Buddhist Perceptions of Monasticism"
 authors:
   - "Brooke Schedneck"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/13694/15917"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/13694/15917"
 source_url: "https://dx.doi.org/10.1558/bsrv.v26i2.229"
 drive_links:
   - "https://drive.google.com/file/d/1OUHvMW2Xv4JqQCd2YLcy1tMxeks2nl8v/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "An analysis of factors related to the kusala/akusala quality of actions in the Pāli tradition"
 authors:
   - harvey
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/9281/3142"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/9281/3142"
 drive_links:
   - "https://drive.google.com/file/d/1YKeRPNEherC3VjEHytr86ED1kyfpAWlP/view?usp=sharing"
 course: karma

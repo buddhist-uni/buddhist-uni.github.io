@@ -1,6 +1,6 @@
 ---
 title: "The Journal of the Pali Text Society"
-external_url: "https://palitextsociety.org/journals-of-the-pali-text-society-free-downloads/"
+external_url: "http://bit.ly/3NOkWIC"
 publisher: pts
 ---
 

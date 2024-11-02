@@ -2,7 +2,7 @@
 title: "Anti-Catholicism and Protestant Reformism in the History of Western Imagery of the Buddhist Monk: Some Roots of the Modernist Monk"
 authors:
   - "Laura Harrington"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/8937/10406"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/8937/10406"
 source_url: "https://doi.org/10.1558/bsrv.v28i2.203"
 drive_links:
   - "https://drive.google.com/file/d/1E1qMjsKxN_BdQfrn3pUC0GBRXNW9iYhZ/view?usp=drivesdk"

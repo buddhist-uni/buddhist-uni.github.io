@@ -2,7 +2,7 @@
 title: "Alagaddūpama Sutta as a Scriptural Source for Understanding the Distinctive Philosophical Standpoint of Early Buddhism"
 authors:
   - "P. D. Premasiri"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/9116/15948"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/9116/15948"
 journal: bsr
 volume: 35
 pages: "111--123"

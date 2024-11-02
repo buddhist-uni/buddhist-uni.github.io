@@ -2,7 +2,7 @@
 title: "Why don't We Translate Spells in the Scriptures?: Medieval Chinese Exegesis on the Meaning and Function of *Dhāraṇī* Language"
 authors:
   - "Ryan Richard Overbey"
-external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287486&journal_code=JIABS&download=yes"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287486&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1uAN4K0JzLMVJArlMcsF7H4sFCMGgutWM/view?usp=drivesdk"
 status: featured

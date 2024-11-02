@@ -1,7 +1,7 @@
 ---
 title: "Immortal Buddhas and their indestructible embodiments: The advent of the concept of *vajrakāya*"
 authors: ["Michael Radich"]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/10603/4455"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/10603/4455"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/19-qKV3J6k15VzAuzrIZD1BIykOg5D51D/view?usp=drivesdk"]
 journal: jiabs

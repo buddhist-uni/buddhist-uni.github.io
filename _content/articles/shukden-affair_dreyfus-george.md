@@ -2,7 +2,7 @@
 title: "The Shuk-den Affair: History and Nature of a Quarrel"
 authors:
   - "George Dreyfus"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8876/2783/8684"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8876/2783/8684"
 drive_links:
   - "https://drive.google.com/file/d/1o_FLSzbQosQMcJcNvq2ZfDwmPHvD3F4u/view?usp=drivesdk"
 course: tibetan-roots

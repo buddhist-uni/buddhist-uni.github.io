@@ -2,7 +2,7 @@
 title: "Is it Really Possible to Transfer Merit?"
 authors:
   - dhammika
-external_url: "https://budblooms.org/download/is-it-really-possible-to-transfer-of-merit/"
+external_url: "https://bit.ly/merit-transfer"
 drive_links:
   - "https://drive.google.com/file/d/13xrSuQgiHM_zIZfgdY7YzBk62D117O7C/view?usp=drive_link"
 course: karma

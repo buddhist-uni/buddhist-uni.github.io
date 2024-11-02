@@ -1,7 +1,7 @@
 ---
 title: "Temporary Ordination in Sri Lanka"
 authors: [gombrich]
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8632/2539"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8632/2539"
 drive_links: ["https://drive.google.com/file/d/1cUPCGBteOcNHr1FghgbQVIVuAxPnc5DF/view?usp=drivesdk"]
 tags: 
   - modern

@@ -2,7 +2,7 @@
 title: "Female Authority and Privileged *Lives*: The Hagiography of Mingyur Peldrön"
 authors:
   - "Alison Melnick Dyer"
-external_url: "https://poj.peeters-leuven.be/content.php?id=3285743&url=article&download=no"
+external_url: "https://poj.peeters-leuven.be/content.php?id=3285743&url=article"
 drive_links:
   - "https://drive.google.com/file/d/1hEjdes9bxF7odi2nHT77lePXXH9l_kjE/view?usp=drivesdk"
 course: writing

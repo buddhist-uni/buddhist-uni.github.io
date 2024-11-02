@@ -5,7 +5,7 @@ authors:
   - "Robert Boyd"
   - "Brian Paciotti"
 source_url: "https://nap.nationalacademies.org/read/10287/chapter/17"
-external_url: "https://nap.nationalacademies.org/cart/download.cgi?record_id=10287&file=403-442"
+external_url: "https://nap.nationalacademies.org/read/10287/chapter/17"
 drive_links:
   - "https://drive.google.com/file/d/1yTI3pj-Cp04ForW0liRV6fZbDhw0vZlp/view?usp=drivesdk"
 course: society

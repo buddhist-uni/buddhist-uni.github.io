@@ -3,7 +3,7 @@ title: "Yasodharā in *Jātakas*"
 authors:
   - shaw-s
 source_url: "https://doi.org/10.1558/bsrv.36763"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/9132/15955"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/9132/15955"
 drive_links:
   - "https://drive.google.com/file/d/1AvM_NeCaAerCvFoS1CyLEATiO9fDHoIk/view?usp=drivesdk"
 course: characters

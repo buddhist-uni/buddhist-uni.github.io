@@ -2,7 +2,7 @@
 title: "A Hoard of Inscribed Gandharan Metalware"
 authors:
   - "Richard Salomon"
-external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article&download=yes"
+external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article"
 drive_links:
   - "https://drive.google.com/file/d/1NMn7fkv4h7ziQrX60LN_JdrzSvJKYl-R/view?usp=sharing"
 course: sects

@@ -3,7 +3,7 @@ title: "'Stop! A Buddhist is here!': Bodhisattva Masculinity on Death Row"
 authors: ["H. Cunnell"]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/177IEGg3O0A5MOdWr7TMe-ZlLNM1mPrI3/view?usp=drivesdk"]
-external_url: "https://www.globalbuddhism.org/article/view/1126/961"
+external_url: "https://www.globalbuddhism.org/article/download/1126/961"
 source_url: "https://zenodo.org/record/1308803"
 journal: jgb
 year: 2005

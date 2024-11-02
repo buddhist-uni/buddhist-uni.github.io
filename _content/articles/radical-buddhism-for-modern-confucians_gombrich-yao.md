@@ -3,7 +3,7 @@ title: "A Radical Buddhism for Modern Confucians: Tzu Chi in Socio-Historical Pe
 authors:
   - gombrich
   - "Yu-Shuang Yao"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/13708/15931"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/13708/15931"
 source_url: "https://www.academia.edu/9676842/A_Radical_Buddhism_for_Modern_Confucians_Tzu_Chi_in_Socio-Historical_Perspective"
 drive_links:
   - "https://drive.google.com/file/d/1xon3RUe-K1H0Tj5FJuFrOYQXzdYslbqY/view?usp=drivesdk"

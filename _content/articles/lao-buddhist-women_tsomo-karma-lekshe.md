@@ -2,7 +2,7 @@
 title: "Lao Buddhist Women: Quietly Negotiating Religious Authority"
 authors:
   - "Karma Lekshe Tsomo"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/8914/10372"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/8914/10372"
 drive_links:
   - "https://drive.google.com/file/d/1sdZemXOn82DJ90QoVMdS6kq9wHLdWAnD/view?usp=drivesdk"
 status: featured

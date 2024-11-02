@@ -2,7 +2,7 @@
 title: "What the *Nikāyas* Say and Do not Say about *Nibbāna*"
 authors: [brahmali]
 external_url: "https://wiswo.org/books/niknib/"
-source_url: "https://journal.equinoxpub.com/BSR/article/view/8891/10347"
+source_url: "https://journal.equinoxpub.com/BSR/article/download/8891/10347"
 drive_links: ["https://drive.google.com/file/d/1UvgxgTY3FnxbU8gi0xUWNX2mN4XR_X6T/view?usp=drivesdk"]
 tags:
   - khandha

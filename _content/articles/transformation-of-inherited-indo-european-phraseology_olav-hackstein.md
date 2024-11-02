@@ -2,7 +2,7 @@
 title: "Skt. *dāyāda-* 'Eating Away at the Inherited/Entrusted': The Transformation of Inherited Indo-European Phraseology in the Buddhist Legend of Ajātaśatru"
 authors:
   - "Olav Hackstein"
-external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134549&journal_code=JIABS&download=yes"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134549&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1VLTNjaJQjbqeGOOd3z0Y5zCe1zaAj6XL/view?usp=sharing"
 course: karma

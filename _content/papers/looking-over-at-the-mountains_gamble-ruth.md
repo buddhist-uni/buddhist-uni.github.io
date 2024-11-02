@@ -2,7 +2,7 @@
 title: "“Looking Over at the Mountains”: Sense of Place in the Third Karmapa’s “Songs of Experience”"
 authors:
   - "Ruth Gamble"
-external_url: "https://journal.fi/store/article/view/45370/11523"
+external_url: "https://journal.fi/store/article/download/45370/11523"
 source_url: "https://journal.fi/store/article/view/45370"
 drive_links:
   - "https://drive.google.com/file/d/18Ypfuk4sqE8Dg9ssGvUjeeRJ1Xv6hJEZ/view?usp=drive_link"

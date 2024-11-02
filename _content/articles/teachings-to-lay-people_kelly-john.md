@@ -2,7 +2,7 @@
 title: "The Buddha's Teachings to Lay People"
 authors:
   - "John Kelly"
-external_url: "https://journal.equinoxpub.com/BSR/article/view/8929/10397"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/8929/10397"
 month: jul
 drive_links:
   - "https://drive.google.com/file/d/13cGEVFNIu_rRaJLn04h0z9SunLfhl69y/view?usp=drivesdk"

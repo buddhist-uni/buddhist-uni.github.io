@@ -2,7 +2,7 @@
 title: "The Soteriological Purpose of Nagarjuna's Philosophy: A Study of Chapter Twenty-three of the Mūla-madhyamaka-kārikās"
 authors:
   - "William  L.  Ames"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8738/2645"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8738/2645"
 drive_links:
   - "https://drive.google.com/file/d/1Fd0FHjeOag9utK63BX1Bxd2LPFtajax8/view?usp=sharing"
 course: epistemology

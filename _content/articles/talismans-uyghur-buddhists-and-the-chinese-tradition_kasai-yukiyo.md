@@ -2,7 +2,7 @@
 title: "Talismans Used by the Uyghur Buddhists and their Relationship with the Chinese Tradition"
 authors:
   - "Yukiyo Kasai"
-external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3290301&journal_code=JIABS&download=yes"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3290301&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1YRBu4dHtCV9kgbgoDoExWgNKnAp28UqI/view?usp=sharing"
 course: medieval

@@ -6,7 +6,7 @@ output_file = "filteredurls.txt"
 # Regular expression patterns
 archive_org = r"https?://(web\.)?archive\.org"
 dropbox = r"https?://(www\.)?dropbox\.com"
-include_pattern = r"(https?://(?!.*archive\.org)\S*?(\.html?|\.mp3|pdf)|https?://\S*?/download\S*|https?://(www\.)?accesstoinsight\.org|https?://(www\.)?dhammatalks\.org|https?://(www\.)?thezensite\.com|https?://(www\.)?bhantesuddhaso\.com)"
+include_pattern = r"(https?://(?!.*archive\.org)\S*?(\.html?|\.mp3|pdf)|https?://\S*?/(download|viewcontent.cgi)\S*|https?://(www\.)?accesstoinsight\.org|https?://(www\.)?dhammatalks\.org|https?://(www\.)?thezensite\.com|https?://(www\.)?bhantesuddhaso\.com)"
 
 # Set to store unique URLs
 unique_urls = set()

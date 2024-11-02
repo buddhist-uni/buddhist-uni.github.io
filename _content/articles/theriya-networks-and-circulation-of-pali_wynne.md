@@ -2,7 +2,7 @@
 title: "Theriya Networks and the Circulation of the Pali Canon in South Asia"
 authors:
   - wynne
-external_url: "https://journal.equinoxpub.com/BSR/article/view/9130/15954"
+external_url: "https://journal.equinoxpub.com/BSR/article/download/9130/15954"
 source_url: "https://doi.org/10.1558/bsrv.36762"
 drive_links:
   - "https://drive.google.com/file/d/1sZ2MHGUGvXvKDxkNN4TPAXhdUVqAe1sf/view?usp=drivesdk"

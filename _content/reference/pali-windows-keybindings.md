@@ -1,7 +1,7 @@
 ---
 title: "Pāli Keybindings for Windows"
 authors: [anandajoti]
-external_url: "https://www.ancient-buddhist-texts.net/download/index.htm"
+external_url: "http://bit.ly/ABT-Downloads"
 course: pali-language
 year: 2022
 month: jan

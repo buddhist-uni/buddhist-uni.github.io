@@ -2,7 +2,7 @@
 title: "Yung-Ming's Syncretism of Pure Land and Ch'an"
 authors:
   - "Heng-ching Shih"
-external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8711/2618"
+external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/download/8711/2618"
 status: featured
 drive_links:
   - "https://drive.google.com/file/d/1a36j_a-3U9z1Kypo6ItTfglJQB9FeD6t/view?usp=drivesdk"

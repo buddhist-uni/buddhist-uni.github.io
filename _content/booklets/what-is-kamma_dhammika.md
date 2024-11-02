@@ -2,7 +2,7 @@
 title: "Good Kamma! Bad Kamma! What Exactly is Kamma?"
 authors:
   - dhammika
-external_url: "https://budblooms.org/download/good-kamma-bad-kamma-what-exactly-is-kamma/"
+external_url: "https://bit.ly/what-is-kamma"
 drive_links:
   - "https://drive.google.com/file/d/1bAAtA9GjUNEw2YRDwvxAP0Uf7HZpX2QG/view?usp=sharing"
 course: karma
