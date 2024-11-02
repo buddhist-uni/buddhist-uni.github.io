@@ -1,6 +1,6 @@
 ---
 title: "Stories of Ghosts: Peta Vatthu"
-translator: ""Mahamevnawa Monastery""
+translator: "Mahamevnawa Monastery"
 external_url: "https://suttafriends.org/peta-vatthu/"
 course: pv
 tags:
