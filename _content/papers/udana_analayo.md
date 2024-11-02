@@ -15,7 +15,7 @@ drive_links:
  - "https://drive.google.com/file/d/19USkKOliNmyaeQLrR7e_u6l3IPJevDHp/view?usp=drive_link"
 course: ud
 tags:
-  - canon
+  - pali-canon
 ---
 
 A brief summary of the Udāna sutta with a focus on the verses and then prose of the collection.
