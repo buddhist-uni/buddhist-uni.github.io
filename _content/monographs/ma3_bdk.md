@@ -8,7 +8,8 @@ publisher: bdk
 course: ma
 status: featured
 drive_links: ["https://drive.google.com/file/d/1TJE68SsqJg-KdyNfRp65R8-zxypTmGCn/view?usp=drivesdk"]
-external_url: "https://www.bdkamerica.org/product/the-madhyama-agama-middle-length-discourses-volume-iii/"
+external_url: "https://www.bdkamerica.org/wp-content/uploads/2023/02/dBET_T0026_MadhyamaAgama3_2022.pdf"
+source_url: "https://www.bdkamerica.org/product/the-madhyama-agama-middle-length-discourses-volume-iii/"
 series: ma_bdk
 number: 3
 pages: 500

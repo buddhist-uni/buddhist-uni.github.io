@@ -4,7 +4,7 @@ authors:
   - kornfield
 publisher: Unity Press
 olid: OL9148954M
-external_url: "https://www.bps.lk/library-search-select.php?id=bp507s"
+external_url: "https://www.bps.lk/olib/bp/bp507s_Kornfield_Modern-Buddhist-Masters.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1sWv3n0r4mPQj-yoqGoR3U2LHUwpqBNcw/view?usp=drivesdk"
 year: 1977
