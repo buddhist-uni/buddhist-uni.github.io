@@ -4,7 +4,8 @@ translator: "Mahamevnawa Monastery"
 external_url: "https://suttafriends.org/peta-vatthu/"
 course: pv
 tags:
-  - pali-canon
+  - sutta
+year: 2020
 ---
 
 An online edition of Mahamevnawa Monastery's translation of the Petavatthu. The monastery has also produced a delightful audiobook of the Petavatthu in English, which you can listen to for free on their [website](https://mahamevnawa.org/stories-of-ghosts-audio/) (courtesy of [SoundCloud](https://soundcloud.com/mahamevnawalk/sets/stories-of-ghosts-from-the-petavatthu)).
