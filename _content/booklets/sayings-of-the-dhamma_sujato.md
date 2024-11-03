@@ -9,9 +9,9 @@ drive_links:
 formats: [pdf, epub]
 course: dhp
 tags:
-  - pali-canon
+  - sutta
 year: 2021 
 pages: 103
 ---
 
-This is a translation of the Dhammapada by Bhikkhu Sujato between 2016–2018, while Bhikkhu Sujato was staying in Taiwan. It contains a concise introduction and a crisp modern English translation of the Pāli classic. 
+A crisp translation of the Pāḷi Classic along with a thoughtful introduction.
