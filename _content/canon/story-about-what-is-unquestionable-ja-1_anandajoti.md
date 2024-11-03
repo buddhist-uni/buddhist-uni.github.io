@@ -7,9 +7,8 @@ drive_links:
 course: jataka
 tags:
   - sutta
-year: 
-month: 2021
-pages: 29
+year: 2021
+pages: 25
 ---
 
 An English translation by Bhikkhu Anandajoti of the first Jātaka story, along with a commentary on the text, which has not been translated until now. This Jataka is of the Buddha as a wise caravan merchant who avoided evil yakkhas and returned home safely with all of his retinue.
