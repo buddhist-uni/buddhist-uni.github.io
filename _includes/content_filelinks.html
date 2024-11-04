@@ -3,16 +3,16 @@
         {%- capture linkbody -%}<i class="fa{% if include.content.external_url contains "youtu" %}{% assign linkfmt = "YouTube (link)" %}b fa-youtube"></i> YouTube{% elsif include.content.external_url contains "//www.academia.edu/" %}c-academia"></i>cademia.edu{% assign linkfmt = "Academia.edu" %}{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}{% assign linkfmt = "mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}{% assign linkfmt = "zip" %}file-archive"></i> zip{% elsif ext == ".htm" or ext == "html" %}{% assign linkfmt = "html" %}globe"></i> Online{% elsif include.content.external_url contains "download" or include.content.external_url contains "viewcontent.cgi" or include.content.external_url contains "pdf" %}{% assign linkfmt = "pdf" %}file-pdf"></i> pdf{% else %}{% case include.content.category %}{% when "av" %}volume-up{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}{%- endcapture -%}
         <a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a>
     {% endif %}
-    {% if include.content.file_links.size > 0 %}
-        {%- for link in include.content.file_links -%}
-            {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{{ site.data.content.filehost | append: link }}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
-        {%- endfor -%}
-    {%- endif -%}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
             <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% elsif link contains "obu.pages.dev" %}s fa-cloud-arrow-down{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
+        {%- endfor -%}
+    {%- endif -%}
+    {% if include.content.file_links.size > 0 %}
+        {%- for link in include.content.file_links -%}
+            {% assign linkfmt = include.content.formats[forloop.index0] %}
+            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{{ site.data.content.filehost | append: link }}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}
@@ -41,4 +41,3 @@
         </div></details>
     {%- endif -%}
 </div>
-

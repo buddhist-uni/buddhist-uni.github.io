@@ -14,4 +14,4 @@ year: 2021
 pages: 103
 ---
 
-A crisp translation of the Pāḷi Classic along with a thoughtful introduction.
+A crisp translation of the Pāḷi classic along with a thoughtful introduction.

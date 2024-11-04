@@ -2,7 +2,6 @@
 title: "On Hannah Arendt's “Origins of Totalitarianism”"
 authors:
   - "Amir Eshel"
-subcat: podcast
 editor: "Zachary Davis"
 file_links:
   - "exclusive_01/Writ%20Large%20ep52%20CUT_On_Hannah_Arendt's__Origins_of_Totalitarianism.mp3"
@@ -10,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1arfUM54_RSVy8qjbhEbNjxfpHII_6KVR/view?usp=drive_link"
 source_url: "https://open.spotify.com/episode/7vmAupOKBEztHVD5KLnd5Q?si=Q5c6eoeESje-TYYsx4J21Q"
 status: featured
-course: society
+course: society # maybe up to social?
 tags:
   - present
   - politics
