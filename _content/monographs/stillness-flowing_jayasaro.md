@@ -6,11 +6,12 @@ year: 2017
 publisher: "Panyaprateep"
 address: "Pakchong, Thailand"
 external_url: "https://www.abhayagiri.org/books/617-stillness-flowing"
+source_url: "https://media.amaravati.org/en/dhamma-books/stillness-flowing"
 formats: [pdf, epub, mp3s]
 drive_links:
   - "https://drive.google.com/file/d/1581qqLqmVvDAAJRk0_oicy7taAu1Zmr9/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1bKJASz33mRqXMyfPqO0Urwxrth2J6vx9.epub"
-  - "https://www.jayasaro.panyaprateep.org/en/audio-album/9"
+  - "https://drive.google.com/drive/folders/18XrqJqvQUlDlWwinGFIVJwtuKrLVhiCu"
 status: featured
 olid: OL32034206M
 course: thai-forest
@@ -26,3 +27,5 @@ pages: 802
 > It is as if an arrow has been pulled out of your heart.
 
 The comprehensive biography of one of the most revered of the modern Thai masters.
+
+You can find [the official audiobook here](https://www.jayasaro.panyaprateep.org/en/audio-album/9).

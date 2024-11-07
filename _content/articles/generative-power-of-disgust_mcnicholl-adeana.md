@@ -5,12 +5,11 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3289054&act=&sid=&newlayout=1"
 drive_links:
   - "https://drive.google.com/file/d/1-ApSAjGKYiR1Nn_3JUHEfi3-dZFMFKcg/view?usp=sharing"
-course: rebirth-stories
+course: pv
 tags:
   - aesthetics
   - body
   - cosmology
-  - pv # maybe move down here eventually?
 year: 2020
 journal: jiabs
 volume: 43

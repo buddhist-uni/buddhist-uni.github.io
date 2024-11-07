@@ -527,6 +527,10 @@
   "private": "https://drive.google.com/drive/folders/1jLtX5o9aDv2OwYTKhRUxLUmpRdpXNPEX",
   "public": "https://drive.google.com/drive/folders/1Muuvoq_jv_b5guQuwDJMrQzIb_7KIsr8"
  },
+ "electricity": {
+  "private": "https://drive.google.com/drive/folders/1SJMFlrs5Nxp-C4rsyVUsaskjRGP8lSBq",
+  "public": null
+ },
  "emptiness": {
   "private": "https://drive.google.com/drive/folders/12HZ0mbMimcxEhIowzGOFtZ274N3cYLPW",
   "public": "https://drive.google.com/drive/folders/1RVyfW-CcF-VS_K6A-Iw6L1QFB943j1Xw"
@@ -789,6 +793,10 @@
  },
  "interfaith": {
   "private": "https://drive.google.com/drive/folders/1T0zsNMgpcZ10FOrwxdgXacW_ryhCRvgZ",
+  "public": null
+ },
+ "interior-decorating": {
+  "private": "https://drive.google.com/drive/folders/1uzfJofGpv5zNEX9i8jabjZv6p_tbnDck",
   "public": null
  },
  "international-relations": {
