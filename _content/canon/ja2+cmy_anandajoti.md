@@ -1,5 +1,5 @@
 ---
-title: "Ja 2 Vaṇṇupathajātaka: The Story about a Sandy Place"
+title: "Ja 2 Vaṇṇupatha Jātaka: The Story about a Sandy Place"
 translator: anandajoti
 external_url: "https://ancient-buddhist-texts.net/English-Texts/Jatakas/002-A-Sandy-Place.htm"
 drive_links:
@@ -7,7 +7,7 @@ drive_links:
 course: jataka
 tags:
   - pali-commentaries
-  - myth
+  - problems
 year: 2022
 pages: 12
 ---
