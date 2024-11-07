@@ -1,5 +1,5 @@
 ---
-title: "Ja 3 Serivavāṇijajātaka: The Story about the Tradesman from Serivā"
+title: "Ja 3 Seriva Vāṇija Jātaka: The Story about the Tradesman from Seriva"
 translator: anandajoti
 external_url: "https://ancient-buddhist-texts.net/English-Texts/Jatakas/003-The-Tradesman-from-Seriva.htm"
 drive_links:
@@ -7,7 +7,7 @@ drive_links:
 course: jataka
 tags:
   - pali-commentaries
-  - myth
+  - thought
 year: 2022
 pages: 7
 ---
