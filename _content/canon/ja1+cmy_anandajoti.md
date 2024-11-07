@@ -6,7 +6,6 @@ drive_links:
   - "https://drive.google.com/file/d/1cSvreQk1zICaCYGRO45-KKYOTtfOGq1v/view?usp=drive_link"
 course: jataka
 tags:
-  - sutta
   - pali-commentaries
   - myth
 year: 2021
