@@ -7,6 +7,7 @@ olid: OL32040806M
 external_url: "https://www.suanmokkh.org/books/21"
 drive_links:
   - "https://drive.google.com/file/d/13KpQ2iQlGkEAh1cAW6xq3SzpLhbeuDvZ/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1EuqjQPicPfQFIPWcBisGJkuf1BMAU1Ya/view?usp=drivesdk"
 course: sangha
 tags:
   - nibbana
@@ -15,7 +16,6 @@ tags:
   - view
 year: 1983
 month: oct
-base_value: 1
 pages: 16
 ---
 
