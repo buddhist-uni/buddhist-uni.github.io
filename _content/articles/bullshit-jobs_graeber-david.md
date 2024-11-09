@@ -2,8 +2,7 @@
 title: "On the Phenomenon of Bullshit Jobs: A Work Rant"
 authors:
   - graeber-david
-external_url: "https://www.atlasofplaces.com/essays/on-the-phenomenon-of-bullshit-jobs/"
-source_url: "https://strikemag.org/bullshit-jobs/"
+external_url: "https://strikemag.org/bullshit-jobs/"
 drive_links: 
   - "https://drive.google.com/file/d/1W7PuSfdAP6LaeKVEs4swUXIaFrLjeSJ7/view?usp=drivesdk"
 status: featured

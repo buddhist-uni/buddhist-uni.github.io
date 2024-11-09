@@ -4,6 +4,7 @@ authors:
   - pereira
 file_links:
   - "exclusive_01/Escape-to-Reality--Buddhist-Essays_wh045_Pereira.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh045_Pereira_Escape-to-Reality--Buddhist-Essays.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1BrDDgajOIOLwWZO9qurX3zhhHvxUbSFT/view?usp=drivesdk"
