@@ -13,7 +13,6 @@ tags:
   - poetry
 year: 2014 
 pages: 295
-olid: OL56961446M
 ---
 
 The Verses of the Senior Monks, found in the Sutta Pitaka of the Pāli Canon, is a collection of approximately 1288 verses attributed to 264 senior monks who lived during the Buddha’s time, with a few from slightly later periods. These verses express the joy of spiritual attainments and the life of meditation in the forest. This fresh translation by Bhikku Sujato also offers an informative introduction to the text.
