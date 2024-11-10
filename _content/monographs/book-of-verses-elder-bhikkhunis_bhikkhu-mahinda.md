@@ -8,7 +8,7 @@ tags:
   - pali-canon
   - poetry
 year: 2017
-publisher:pariyatti 
+publisher: pariyatti 
 pages: 286
 ---
 
