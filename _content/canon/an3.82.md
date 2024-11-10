@@ -1,5 +1,5 @@
 ---
-title: "AN 3.82: The Donkey"
+title: "AN 3.82 Gadrabha Sutta: The Donkey"
 slug: "an.003.082"
 translator: sujato
 hidden_links: ["https://drive.google.com/file/d/1oRkY8H87I82t7g0M9wHgsPbKz2qjqIUE"]

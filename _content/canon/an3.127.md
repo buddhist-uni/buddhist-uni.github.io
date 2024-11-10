@@ -1,5 +1,5 @@
 ---
-title: "AN 3.127: Hatthaka"
+title: "AN 3.127 Hatthaka Sutta: With Hatthaka"
 translator: sujato
 slug: "an.003.127"
 drive_links: ["https://drive.google.com/file/d/1NAFlG_6woocEtka_c1e8EIPoM4iIfAZN/view?usp=drivesdk"]

@@ -1,5 +1,5 @@
 ---
-title: "AN 8.5: World (1)"
+title: "AN 8.5 Paṭhama Loka Dhamma Sutta: World (1)"
 slug: "an.008.005"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.5/en/bodhi"

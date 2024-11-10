@@ -1,5 +1,5 @@
 ---
-title: "AN 5.214: Someone Who Talks a Lot"
+title: "AN 5.214 Bahubhāṇi Sutta: Someone Who Talks a Lot"
 slug: "an.005.214"
 external_url: "https://suttacentral.net/an5.214/en/sujato"
 translator: sujato

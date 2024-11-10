@@ -1,5 +1,5 @@
 ---
-title: "AN 6.119–139: About Tapussa, Etc."
+title: "AN 6.119–139 Tapussa Sutta: About Tapussa, Etc."
 slug: "an.006.139"
 translator: sujato
 external_url: "https://daily.readingfaithfully.org/an-6-119-139-tapussasutta-about-tapussa-etc/"

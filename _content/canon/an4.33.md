@@ -1,5 +1,5 @@
 ---
-title: "AN 4.33: The Lion"
+title: "AN 4.33 Sīha Sutta: The Lion"
 slug: "an.004.033"
 translator: bodhi
 drive_links: ["https://drive.google.com/file/d/1HstAWuNcqiSdJS2EE-kxIkbnGV6hVhe_/view?usp=drivesdk"]

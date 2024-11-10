@@ -1,5 +1,5 @@
 ---
-title: "AN 4.77: Inconceivable"
+title: "AN 4.77 Acinteyya Sutta: Inconceivable"
 slug: "an.004.077"
 translator: sujato
 external_url: "https://suttacentral.net/an4.77/en/sujato"

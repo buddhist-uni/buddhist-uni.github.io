@@ -1,5 +1,5 @@
 ---
-title: "AN 4.184: Fearless"
+title: "AN 4.184 Abhaya Sutta: Fearless"
 slug: "an.004.184"
 external_url: "https://suttacentral.net/an4.184/en/sujato"
 translator: sujato

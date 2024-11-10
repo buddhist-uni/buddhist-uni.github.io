@@ -1,5 +1,5 @@
 ---
-title: "AN 4.107: Mice"
+title: "AN 4.107 Mūsika Sutta: Mice"
 slug: "an.004.107"
 translator: sujato
 external_url: "https://suttacentral.net/an4.107/en/sujato"

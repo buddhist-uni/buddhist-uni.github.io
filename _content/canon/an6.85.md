@@ -1,5 +1,5 @@
 ---
-title: "AN 6.85: Cooled"
+title: "AN 6.85 Sītibhāva Sutta: Cooled"
 slug: "an.006.085"
 translator: geoff
 external_url: "https://suttacentral.net/an6.85/en/thanissaro"

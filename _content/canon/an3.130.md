@@ -1,5 +1,5 @@
 ---
-title: "AN 3.130: With Anuruddha (2)"
+title: "AN 3.130 Dutiyaanuruddha Sutta: With Anuruddha (2)"
 slug: "an.003.130"
 translator: sujato
 external_url: "https://suttacentral.net/an3.130/en/sujato"

@@ -1,5 +1,5 @@
 ---
-title: "AN 3.28: Speech Like Dung"
+title: "AN 3.28 Gūthabhāṇī Sutta: Speech Like Dung"
 translator: bodhi
 slug: "an.003.028"
 drive_links: ["https://drive.google.com/file/d/1oDL8RZUosO3dLKyxn-f2ywHz23BYTIsk/view?usp=drivesdk"]

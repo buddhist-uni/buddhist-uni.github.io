@@ -1,5 +1,5 @@
 ---
-title: "AN 8.22: The Second Ugga Sutta"
+title: "AN 8.22 Dutiyaugga Sutta: The Second Ugga Sutta"
 slug: "an.008.022"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.22/en/bodhi"

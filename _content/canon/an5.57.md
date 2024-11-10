@@ -1,5 +1,5 @@
 ---
-title: "AN 5.57: Themes for Frequent Recollection"
+title: "AN 5.57 Abhiṇha Paccavekkhitabba Thāna Sutta: Themes for Frequent Recollection"
 reader: "Kamala Masters"
 translator: bodhi
 slug: "an.005.057"

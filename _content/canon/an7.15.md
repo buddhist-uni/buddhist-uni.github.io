@@ -1,5 +1,5 @@
 ---
-title: "AN 7.15: A Simile With Water"
+title: "AN 7.15 Udakūpamā Sutta: A Simile With Water"
 slug: "an.007.015"
 translator: sujato
 source_url: "https://suttacentral.net/an7.15/en/sujato"

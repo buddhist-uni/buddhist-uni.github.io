@@ -1,5 +1,5 @@
 ---
-title: "AN 7.52: Giving"
+title: "AN 7.52 Dāna Mahapphala Sutta: Giving"
 translator: geoff
 slug: "an.007.052"
 external_url: "https://suttacentral.net/an7.52/en/thanissaro"

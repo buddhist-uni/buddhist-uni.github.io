@@ -1,5 +1,5 @@
 ---
-title: "AN 6.45: Debt"
+title: "AN 6.45 Iṇa Sutta: Debt"
 slug: "an.006.045"
 translator: sujato
 external_url: "https://suttacentral.net/an6.45/en/sujato"

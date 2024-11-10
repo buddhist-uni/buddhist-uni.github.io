@@ -1,5 +1,5 @@
 ---
-title: "AN 3.63: Venāga"
+title: "AN 3.63 Venāgapura Sutta: Venāga"
 slug: "an.003.063"
 translator: bodhi
 external_url: "https://suttacentral.net/an3.63/en/bodhi"

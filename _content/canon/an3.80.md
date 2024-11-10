@@ -1,5 +1,5 @@
 ---
-title: "AN 3.80: Lesser"
+title: "AN 3.80 Cūḷanikā Sutta: Lesser"
 slug: "an.003.080"
 translator: sujato
 external_url: "https://suttacentral.net/an3.80/en/sujato"

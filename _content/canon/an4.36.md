@@ -1,5 +1,5 @@
 ---
-title: "AN 4.36: Doṇa Sutta"
+title: "AN 4.36:+ Doṇa Sutta: Doṇa"
 slug: "an.004.036"
 translator: bodhi
 drive_links: ["https://drive.google.com/file/d/1inbz7quO2Y_HpyQqIPelGFD3zcfF5iRi/view?usp=drivesdk"]

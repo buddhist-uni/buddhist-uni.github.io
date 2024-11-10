@@ -1,5 +1,5 @@
 ---
-title: "AN 4.62: Freedom from Debt"
+title: "AN 4.62 Ānaṇya Sutta: Freedom from Debt"
 reader: "Kamala Masters"
 slug: "an.004.062"
 translator: bodhi

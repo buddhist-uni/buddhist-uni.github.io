@@ -1,5 +1,5 @@
 ---
-title: "AN 3.109: Unprotected"
+title: "AN 3.109 Arakkhita Sutta: Unprotected"
 slug: "an.003.109"
 translator: sujato
 external_url: "https://suttacentral.net/an3.109/en/sujato"

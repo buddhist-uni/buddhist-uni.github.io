@@ -1,5 +1,5 @@
 ---
-title: "AN 7.62: Don’t Fear Good Deeds"
+title: "AN 7.62 Metta Sutta: Don’t Fear Good Deeds"
 slug: "an.007.062"
 translator: sujato
 external_url: "https://suttacentral.net/an7.62/en/sujato"

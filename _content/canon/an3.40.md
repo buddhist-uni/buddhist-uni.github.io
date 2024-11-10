@@ -1,5 +1,5 @@
 ---
-title: "AN 3.40: Authorities"
+title: "AN 3.40 Ādhipateyya Sutta: Authorities"
 translator: bodhi
 slug: "an.003.040"
 formats: [pdf]

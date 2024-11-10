@@ -1,5 +1,5 @@
 ---
-title: "AN 1.11–20: The Hindrances"
+title: "AN 1.11–20 Nīvaraṇappahāna Vagga: The Chapter on Giving Up the Hindrances"
 slug: "an.001.011-020"
 translator: "Ven. Kiribathgoda Gnanananda"
 external_url: "https://suttafriends.org/sutta/an1-11/"

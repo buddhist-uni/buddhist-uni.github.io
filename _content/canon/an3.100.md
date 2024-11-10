@@ -1,5 +1,5 @@
 ---
-title: "AN 3.100: A Lump of Salt"
+title: "AN 3.100 Loṇakapalla Sutta: A Lump of Salt"
 slug: "an.003.100"
 translator: sujato
 external_url: "https://suttacentral.net/an3.100/en/sujato"

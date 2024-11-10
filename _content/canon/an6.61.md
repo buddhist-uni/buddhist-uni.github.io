@@ -1,5 +1,5 @@
 ---
-title: "AN 6.61: In the Middle"
+title: "AN 6.61 Majjhe Sutta: In the Middle"
 slug: "an.006.061"
 external_url: "https://suttacentral.net/an6.61/en/sujato"
 translator: sujato

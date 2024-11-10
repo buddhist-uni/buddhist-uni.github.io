@@ -1,5 +1,5 @@
 ---
-title: "AN 3.29: Blind"
+title: "AN 3.29 Andha Sutta: Blind"
 translator: bodhi
 slug: "an.003.029"
 formats: [pdf]

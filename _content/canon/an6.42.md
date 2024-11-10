@@ -1,5 +1,5 @@
 ---
-title: "AN 6.42: With Nāgit"
+title: "AN 6.42 Nāgita Sutta: With Nāgit"
 slug: "an.006.042"
 external_url: "https://suttacentral.net/an6.42/en/sujato"
 translator: sujato
