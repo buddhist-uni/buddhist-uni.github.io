@@ -116,6 +116,27 @@ class ContentFile(JekyllFile):
         self.formats = ['mp3']
       else:
         self.formats = ['pdf', 'epub']
+  
+  def external_url_linkfmt(self):
+    """Keep up to date with logic in _includes/content_filelinks.html:3"""
+    url = self.external_url
+    if not url:
+      return None
+    if "//www.academia.edu/" in url:
+      return "Academia.edu"
+    if "pdf" in url or \
+       "viewcontent.cgi" in url or \
+       "download" in url:
+      return "pdf"
+    if url.endswith(".mp3"):
+      return "mp3"
+    if url.endswith(".zip"):
+      return "zip"
+    if url.endswith("html") or url.endswith(".htm"):
+      return "html"
+    if "youtu" in url:
+      return "YouTube (link)"
+    return ""
 
 content = []
 tags = TagCollection()
