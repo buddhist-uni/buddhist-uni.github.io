@@ -1,0 +1,17 @@
+---
+title: "Songs Of The Elder Sisters"
+authors:
+  - "Francis Booth"
+external_url: "https://stonerecords.co.uk/album/ronald-corp-songs-of-the-elder-sisters/"
+drive_links:
+  - "https://drive.google.com/file/d/1wqARjh1bZG0zZjdve4428ezWqkIlkNQE/view?usp=sharing"
+course: tg
+tags:
+  - poetry
+  - pali-canon
+year: 2013
+publisher: "Stone Records"
+pages: 12 
+---
+
+A selection of verses from the Therīgāthā, translated by Francis Booth, for Ronald Corp's [Songs of the Dhammapada and Elder Sisters](https://buddhistuniversity.net/content/av/dhp-thig-songs_corp-ronald).
