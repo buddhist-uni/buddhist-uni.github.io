@@ -1,5 +1,5 @@
 ---
-title: "Iti 98: Giving"
+title: "Iti 98 Dāna Sutta: Giving"
 slug: "iti098"
 translator: geoff
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/iti98.html"

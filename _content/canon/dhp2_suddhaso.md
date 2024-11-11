@@ -1,5 +1,5 @@
 ---
-title: "Dhp 21–32: Vigilance Chapter"
+title: "Dhp 21–32 Appamāda Vagga: Vigilance Chapter"
 slug: "dhp02_suddhaso"
 translator: suddhaso
 external_url: "https://bhantesuddhaso.com/teachings/sutta/dhammapada-ch2-appamada-vagga-annotated/"

@@ -1,5 +1,5 @@
 ---
-title: "Dhp 1–20: Dichotomies"
+title: "Dhp 1–20 Yamaka Vagga: Dichotomies"
 slug: "dhp01_kmas"
 translator: fronsdal
 reader: masters-kamala

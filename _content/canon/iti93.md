@@ -1,5 +1,5 @@
 ---
-title: "Iti 93: Fires"
+title: "Iti 93 Aggi Sutta: Fires"
 slug: "iti093"
 translator: ireland
 external_url: "https://suttacentral.net/iti93/en/ireland"

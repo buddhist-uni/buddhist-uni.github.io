@@ -1,5 +1,5 @@
 ---
-title: "Iti 87: Blindness"
+title: "Iti 87 Andhakaraṇa Sutta: Blindness"
 slug: "iti087"
 translator: ireland
 external_url: "https://suttacentral.net/iti87/en/ireland"

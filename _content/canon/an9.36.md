@@ -1,5 +1,5 @@
 ---
-title: "AN 9.36 Jhāna Sutta"
+title: "AN 9.36 Jhāna Sutta: Depending on Absorption"
 translator: sujato
 slug: "an.009.036"
 external_url: "https://suttacentral.net/an9.36/en/sujato"

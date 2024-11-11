@@ -1,5 +1,5 @@
 ---
-title: "Dhp 33–43: Mind Chapter"
+title: "Dhp 33–43 Citta Vagga: Mind Chapter"
 slug: "dhp03_suddhaso"
 translator: suddhaso
 external_url: "https://bhantesuddhaso.com/teachings/sutta/dhammapada-33-43-citta-vagga/"

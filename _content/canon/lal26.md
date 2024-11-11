@@ -1,5 +1,5 @@
 ---
-title: "Lal 26 Dharmacakrapravartana Sūtra"
+title: "Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling"
 slug: "lal.26"
 translator: anandajoti
 external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces-in-Sanskrit/Dharmacakrapravartanasutram.htm"

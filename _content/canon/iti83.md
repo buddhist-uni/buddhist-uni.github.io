@@ -1,5 +1,5 @@
 ---
-title: "Iti 83: The Five Prognostic Signs"
+title: "Iti 83 Pañca Pubba Nimitta Sutta: The Five Prognostic Signs"
 slug: "iti083"
 translator: ireland
 external_url: "https://suttacentral.net/iti83/en/ireland"

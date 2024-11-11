@@ -1,5 +1,5 @@
 ---
-title: "AN 9.17: Families"
+title: "AN 9.17 Kula Sutta: Families"
 translator: sujato
 slug: "an.009.017"
 external_url: "https://suttacentral.net/an9.17/en/sujato"

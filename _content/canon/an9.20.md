@@ -1,5 +1,5 @@
 ---
-title: "AN 9.20: Velāma Sutta"
+title: "AN 9.20 Velāma Sutta: About Velāma"
 translator: sujato
 slug: "an.009.020"
 external_url: "https://suttacentral.net/an9.20/en/sujato"

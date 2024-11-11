@@ -1,5 +1,5 @@
 ---
-title: "AN 9.19: Devatā Sutta"
+title: "AN 9.19 Devatā Sutta: A Deity"
 translator: sujato
 slug: "an.009.019"
 external_url: "https://suttacentral.net/an9.19/en/sujato"

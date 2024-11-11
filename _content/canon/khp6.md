@@ -1,5 +1,5 @@
 ---
-title: "Khp 6: Ratana Sutta"
+title: "Khp 6 Ratana Sutta: Jewels Discourse"
 external_url: "https://suttafriends.org/sutta/khp6/"
 subcat: poetry
 drive_links:

@@ -1,5 +1,5 @@
 ---
-title: "Iti 53: Feelings"
+title: "Iti 53 Dutiyavedanā Sutta: Feelings"
 slug: "iti053"
 translator: ireland
 external_url: "https://suttacentral.net/iti53/en/ireland"

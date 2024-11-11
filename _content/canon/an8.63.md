@@ -1,5 +1,5 @@
 ---
-title: "AN 8.63: A Teaching in Brief"
+title: "AN 8.63 Saṁkhitta Sutta: A Teaching in Brief"
 slug: "an.008.063"
 external_url: "https://suttacentral.net/an8.63/en/sujato"
 translator: sujato
