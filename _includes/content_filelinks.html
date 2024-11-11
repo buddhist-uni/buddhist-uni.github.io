@@ -5,14 +5,15 @@
     {% endif %}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
-            {% assign linkfmt = include.content.formats[forloop.index0] %}
+            {% assign linkfmt = include.content.formats[forloop.index0] %}{% unless linkfmt == "epub" and include.content.file_links[forloop.index0] %}
             <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% elsif link contains "obu.pages.dev" %}s fa-cloud-arrow-down{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
-        {%- endfor -%}
+        {% endunless %}{%- endfor -%}
     {%- endif -%}
     {% if include.content.file_links.size > 0 %}
         {%- for link in include.content.file_links -%}
+            {%- assign bucket = link | split: "/" | first -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{{ site.data.content.filehost | append: link }}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
+            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{% if bucket == "largefiles" %}https://cfr-cdn.buddhistuniversity.net/{{ link | remove_first: "largefiles/" }}{% else %}{{ site.data.content.filehost | append: link }}{% endif %}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}

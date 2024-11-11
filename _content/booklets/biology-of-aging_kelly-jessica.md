@@ -6,6 +6,9 @@ external_url: "https://library.achievingthedream.org/herkimerbiologyofaging/"
 drive_links:
   - "https://drive.google.com/file/d/1pnJNtI62iQPIyiyKVmnpj2rKGLe-rA0e/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rCKJxC2xWe6xA9mszgtjVzI_-X6_AEAR/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/kelly-jessica_2017_biology-of-aging.pdf"
+  - "mediumfiles/kelly-jessica_2017_biology-of-aging.epub"
 course: body # strongly. Almost featured
 tags:
   - geriatrics
