@@ -5,6 +5,8 @@ authors:
 external_url: "https://media.amaravati.org/en/dhamma-books/the-art-of-sitting"
 drive_links:
   - "https://drive.google.com/file/d/1BgwSdORInIcCoa_cEkp9mI8U9oV6K08_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kalyano_2018_art-of-sitting.pdf"
 course: meditation
 status: featured
 tags:

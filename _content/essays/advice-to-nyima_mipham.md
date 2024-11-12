@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/advice-to-jigme-tenpe-nyima"
 drive_links:
   - "https://drive.google.com/file/d/15r5SBAClH6x6iAnrLZQdRcsgC6M-MdJO/view?usp=drive_link"
+file_links:
+  - "smallpdfs/mipham_2016_advice-to-nyima.pdf"
 course: epistemology
 tags:
   - monastic-advice

@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1-cLeKGKDgf2v2SGNbw16ZT9nwnJr7A_1/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1-gEH7xar8dAkitSi1FIMoR6QqerNiqn2.epub"
+file_links:
+  - "smallpdfs/geoff_2015_buddha-smiles.pdf"
+  - "smallepubs/geoff_2015_buddha-smiles.epub"
 olid: OL32035596M
 course: pali-canon
 status: featured

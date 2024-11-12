@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3078165&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1pkkxCz2ogCDKHFfclWBGSaD7j1OFrzfy/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nietupski-paul_2012_atha-niryanavrttam.pdf"
 course: tantric
 tags:
   - mahayana-vinaya

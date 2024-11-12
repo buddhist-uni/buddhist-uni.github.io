@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/kshitigarbha-praise"
 drive_links:
   - "https://drive.google.com/file/d/1M8MO4BpsqVeQLK5sr-If-52taLPJoJJV/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mipham_1906_adornment-of-the-earth.pdf"
 course: world
 tags:
   - nature

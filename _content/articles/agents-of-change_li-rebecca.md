@@ -5,6 +5,8 @@ authors:
 external_url: "https://thecjbs.org/archive-document-details/?id=232"
 drive_links:
   - "https://drive.google.com/file/d/15QemyR3FZOylACkK1W7bKBQ2c6TVLTZW/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/li-rebecca_2020_agents-of-change.pdf"
 course: culture
 tags:
   - engaged

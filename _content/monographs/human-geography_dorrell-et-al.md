@@ -8,6 +8,8 @@ authors:
 external_url: "https://oer.galileo.usg.edu/geo-textbooks/2/"
 drive_links:
   - "https://drive.google.com/file/d/1IA2ZrcNttgZJxyT8STkJt2tQWyvXn9OD/view?usp=drivesdk"
+file_links:
+  - "largefiles/dorrell-et-al_2018_human-geography.pdf"
 course: wider # solidly three stars
 tags:
   - places # should probably move here once wider is fuller though

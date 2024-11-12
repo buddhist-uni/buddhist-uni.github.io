@@ -4,6 +4,8 @@ authors: [blackburn-anne]
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3275082&sid="
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1pPHLXhjCwSQjkzavLwsXxDC4I1S6FP-m/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/blackburn-anne_1999_looking-for-vinaya.pdf"
 year: 1999
 pages: "281--309"
 journal: jiabs

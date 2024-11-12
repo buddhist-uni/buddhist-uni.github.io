@@ -4,6 +4,8 @@ authors: [stein-zak]
 source_url: "http://www.zakstein.org/publications.html"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1z8GJmn3FWRhg2oYuHosqznKt2_uBZnC4/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/stein-zak_2019_if-education-is-not-the-answer.pdf"
 course: activism
 tags:
   - society

@@ -6,6 +6,8 @@ editor: "Michael Saler"
 external_url: "https://doi.org/10.4324/9781315748115-46"
 drive_links:
   - "https://drive.google.com/file/d/1GH8WxUOgEB9igmQqQUzIH7B4SdHVHUWF/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lopez-donald-s_2014_2444.pdf"
 course: roots
 status: featured
 tags:

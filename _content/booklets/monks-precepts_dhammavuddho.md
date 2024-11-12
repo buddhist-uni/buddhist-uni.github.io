@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.kbrl.gov.mm/book/details/002487"
 drive_links:
   - "https://drive.google.com/file/d/1_LtgS0VWk0gk2DecNqbaJBvMUES_T4g3/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/dhammavuddho_1988_monks-precepts.pdf"
 course: vinaya-studies
 tags:
   - vinaya-pitaka

@@ -6,6 +6,8 @@ external_url: "https://media.amaravati.org/en/dhamma-books/tudong-the-long-road-
 olid: OL32214608M
 drive_links:
   - "https://drive.google.com/file/d/1AsxeFaIpE2aFI8PwDrjm0UfEbFSNryHM/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/amaro_1984_tudong.pdf"
 course: pilgrimage
 tags:
   - british

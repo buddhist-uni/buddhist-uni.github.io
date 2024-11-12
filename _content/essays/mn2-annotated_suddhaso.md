@@ -3,6 +3,8 @@ title: "MN 2 Annotated"
 authors: [suddhaso]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1exi_hzlCry3TGl7lk66YtWsjz1rTAXGi/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/suddhaso_2016_mn2-annotated.pdf"
 external_url: "https://bhantesuddhaso.com/teachings/sutta/all-the-defilements-mn2-sabbasava-sutta/"
 year: 2016
 month: jan

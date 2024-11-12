@@ -6,6 +6,8 @@ external_url: "https://amaravati.org/skilful-desires/"
 source_url: "https://web.archive.org/web/20220628200633if_/https://www.fsnewsletter.org/pdf/FSN_93_2014.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1vgLHt8NdW0J36Xpa0V-uS1EqfUMJJzx3/view?usp=sharing"
+file_links:
+  - "smallpdfs/jayasaro_2014_skilful-desires.pdf"
 formats: [pdf]
 course: thought
 status: featured

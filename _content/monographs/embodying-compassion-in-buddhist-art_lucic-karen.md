@@ -6,6 +6,9 @@ external_url: "https://dharmaebooks.org/embodying-compassion-buddhist-art/"
 drive_links:
   - "https://drive.google.com/file/d/1l8AVNTaRfU0F70dl0Xz3bIwtY65Dhf62/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1qNT7-OkabWJ18rsn6NyCjXsUqLpLsTU7/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/lucic-karen_2015_embodying-compassion-in-buddhist-art.pdf"
+  - "mediumfiles/lucic-karen_2015_embodying-compassion-in-buddhist-art.epub"
 status: featured
 course: mahayana
 tags:

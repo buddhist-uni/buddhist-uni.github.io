@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/7"
 drive_links:
   - "https://drive.google.com/file/d/1WN9qwoRQ6grMwZP4D8EqwAZzLlS_zOdt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/raghavan-suren_2011_walpola-rahula-and-politicization.pdf"
 course: sri-lanka
 tags:
   - sri-lankan

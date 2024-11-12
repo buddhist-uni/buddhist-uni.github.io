@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/218"
 drive_links:
   - "https://drive.google.com/file/d/1hm1iCw_luStPtxItsTlkkI51xJhgB-cn/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wynne_2020_vinaya-transformations.pdf"
 course: sects
 tags:
   - vinaya-pitaka

@@ -5,6 +5,8 @@ authors:
 external_url: "https://bschawaii.org/shindharmanet/studies/fulfillment/"
 drive_links:
   - "https://drive.google.com/file/d/15GbjyS96qu0H05fja1PBeu8PJD-jZ_N2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bloom_1984_pure-land.pdf"
 course: form
 tags:
   - east-asian

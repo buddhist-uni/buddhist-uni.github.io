@@ -9,7 +9,7 @@ series: chinese-humanities
 number: 2
 olid: OL28356223M
 address: Berlin
-formats: [GBook, pdf]
+formats: [pdf, GBook]
 drive_links:
   - "https://play.google.com/store/books/details?id=EvpDDQAAQBAJ"
   - "https://drive.google.com/file/d/1cVpEnsUUH3E6alHCrJEhe9Noj-k_ec-U/view?usp=drivesdk"

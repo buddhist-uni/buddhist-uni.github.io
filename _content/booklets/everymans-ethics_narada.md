@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1lhnBSYqxzo1brwF6op56Q5mkcT4c4QGC/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1CeQEu85i7vbtqMSRsVXtLoH3MQZvevZP.epub"
+file_links:
+  - "smallpdfs/narada_1959_everymans-ethics.pdf"
+  - "smallepubs/narada_1959_everymans-ethics.epub"
 course: lay
 tags:
   - ethics

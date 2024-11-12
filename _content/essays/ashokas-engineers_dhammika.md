@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/2020/05/11/king-asokas-amazing-engineers/"
 drive_links:
   - "https://drive.google.com/file/d/1jP58Jd_py4BLsez2TWMGHftfu9nVdc8i/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2010_ashokas-engineers.pdf"
 course: ashoka
 tags:
   - engineering

@@ -6,6 +6,8 @@ external_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3
 source_url: "https://doi.org/10.1093/jaarel/lfg102"
 drive_links:
   - "https://drive.google.com/file/d/15TVmZ9PsmN4wrVzmkLpriailSD_rUFMt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/silk-jonathan-a_2003_fruits-of-paradox-on-religious.pdf"
 course: rebirth-stories
 tags:
   - buddha

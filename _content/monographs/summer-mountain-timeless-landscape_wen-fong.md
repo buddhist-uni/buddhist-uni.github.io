@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.metmuseum.org/art/metpublications/Summer_Mountains_The_Timeless_Landscape"
 drive_links: 
   - "https://drive.google.com/file/d/1d9Oeue49_g-qgm-WWRE5LETlY8oXA5Xp/view?usp=share_link"
+file_links:
+  - "mediumfiles/wen-fong_1975_summer-mountain-timeless-landscape.pdf"
 course: nature
 tags:
   - landscape

@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/57/88"
 drive_links:
   - "https://drive.google.com/file/d/1Ii0IToVbPaV7h2z7_9pRW02AXG3uivKE/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cousins_2013_early-development-of-buddhist-literature.pdf"
 course: theravada-roots
 tags:
   - pali-language

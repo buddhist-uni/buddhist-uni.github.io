@@ -7,6 +7,9 @@ external_url: "https://pressbooks.oer.hawaii.edu/messageprocessing/"
 drive_links:
   - "https://drive.google.com/file/d/1gJQBHrSjE2edgNlKolKSjPNr6e42xrZU/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1cKcb7STEeiRkNykTTTC88IE_dtkpvXV3.epub"
+file_links:
+  - "smallpdfs/gasiorek-aune_2018_message-processing.pdf"
+  - "smallepubs/gasiorek-aune_2018_message-processing.epub"
 course: communication
 tags:
   - intellect

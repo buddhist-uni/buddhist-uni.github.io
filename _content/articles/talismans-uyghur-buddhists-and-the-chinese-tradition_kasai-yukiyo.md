@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3290301&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1YRBu4dHtCV9kgbgoDoExWgNKnAp28UqI/view?usp=sharing"
+file_links:
+  - "smallpdfs/kasai-yukiyo_2021_talismans-uyghur-buddhists-and-the-chinese-tradition.pdf"
 course: medieval
 tags:
   - central-asian

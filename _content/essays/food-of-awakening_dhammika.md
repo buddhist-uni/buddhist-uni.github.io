@@ -7,6 +7,8 @@ year: 2008
 month: may
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1R50ba7NPG58ECFzf01IwX1T94yfJZVoz/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/dhammika_2008_food-of-awakening.pdf"
 course: buddha
 tags:
   - food

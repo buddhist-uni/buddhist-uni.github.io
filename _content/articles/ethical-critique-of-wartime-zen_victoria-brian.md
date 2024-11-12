@@ -4,6 +4,8 @@ authors: ["Brian Daizen Victoria"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/123/140"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1x7JhEGBdOd7VmRvXIhif5xdnsNBYIL96/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/victoria-brian_2015_ethical-critique-of-wartime-zen.pdf"
 year: 2015
 volume: 9
 course: japanese

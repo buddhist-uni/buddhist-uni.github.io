@@ -4,6 +4,8 @@ external_url: "https://www.lotsawahouse.org/words-of-the-buddha/heart-sutra-with
 year: 2019
 translator: "Adam Pearcey"
 drive_links: ["https://drive.google.com/file/d/1cQaR7g8MyXj7bFz94Acyb-9iIsMG-a6h/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/nyingpo-dokpa.pdf"
 course: mahayana
 pages: 11
 ---

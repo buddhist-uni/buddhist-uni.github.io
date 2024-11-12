@@ -5,6 +5,8 @@ authors:
 external_url: "https://otani.repo.nii.ac.jp/records/11445"
 drive_links:
   - "https://drive.google.com/file/d/1e1byIC9XeVUnrrGHAYqSBJHCoTiOeUAA/view?usp=sharing"
+file_links:
+  - "smallpdfs/kishino-ryohji_2022_angry-monk-who-became-a-poisonous-snake.pdf"
 course: avadana
 year: 2022
 journal: "Buddhist Seminar"

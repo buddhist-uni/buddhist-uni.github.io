@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1PrtQEGMbYjpVhKkc-hRmAhhPPX99zw_F/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/16kp-Q6EVsAAlMUJdO3ftuxq5TViEoifN.epub"
+file_links:
+  - "smallpdfs/jones-ken_1981_buddhism-and-social-action.pdf"
+  - "smallepubs/jones-ken_1981_buddhism-and-social-action.epub"
 publisher: bps
 series: wheel
 number: 285

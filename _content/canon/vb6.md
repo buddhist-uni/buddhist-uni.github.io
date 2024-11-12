@@ -7,6 +7,9 @@ alternative_url: "https://suttacentral.net/vb6/en/anandajoti"
 drive_links:
   - "https://drive.google.com/file/d/1pixX6kpZaCd8lE8fQTyk-6fyAsuPRftq/view?usp=drivesdk"
   - "https://drive.google.com/file/d/12mSSCvHddQr_1AwSOTA9_tGvTNYULYc1/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/vb06.pdf"
+  - "smallepubs/vb06.epub"
 course: abhidhamma
 tags:
   - origination

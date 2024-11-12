@@ -5,6 +5,8 @@ authors:
 external_url: "https://media.amaravati.org/en/dhamma-books/mindfulness-the-path-to-the-deathless"
 drive_links:
   - "https://drive.google.com/file/d/1C6paTD_eqUkBiMNjp9iDxNekG1G5Ol0T/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sumedho_2012_mindfulness.pdf"
 course: meditation
 tags:
   - retreats

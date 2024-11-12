@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/great-stake-to-heart-song"
 drive_links:
   - "https://drive.google.com/file/d/1bP3e_kgbQHdzNEve-c6WpSVJFFRkMiuG/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2021_great-stake-to-the-heart.pdf"
 course: problems
 tags:
   - refuge

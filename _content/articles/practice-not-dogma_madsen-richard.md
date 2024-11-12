@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/192"
 drive_links:
   - "https://drive.google.com/file/d/1DpHYll2FHM5TmL8pT8Q8N-R_naAwIz72/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/madsen-richard_2019_practice-not-dogma.pdf"
 course: engaged
 tags:
   - modern

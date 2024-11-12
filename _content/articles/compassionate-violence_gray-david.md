@@ -5,6 +5,8 @@ authors:
 source_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/05/gray-article.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1C-y7aSsH8Uy10oQmzmU42FpKvdiXHyeR/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gray-david_2007_compassionate-violence.pdf"
 course: tantric
 tags:
   - power

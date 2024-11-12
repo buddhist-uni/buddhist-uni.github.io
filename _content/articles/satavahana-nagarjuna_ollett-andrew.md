@@ -7,6 +7,8 @@ volume: 41
 pages: "421--472"
 external_url: "https://doi.org/10.2143/JIABS.41.0.3285748"
 drive_links: ["https://drive.google.com/file/d/1uqPWhbnnSnsj2pyRZ1lhFKJHbngoT_74/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/ollett-andrew_2018_satavahana-nagarjuna.pdf"
 course: roots
 tags:
   - law

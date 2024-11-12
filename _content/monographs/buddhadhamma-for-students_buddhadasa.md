@@ -6,6 +6,8 @@ external_url: "https://www.buddhistelibrary.org/library/view.php?adpath=31"
 olid: OL19670086M
 drive_links:
   - "https://drive.google.com/file/d/1yPEGoj3eI1mxQ3LY16rj3RU3IN8rDQg5/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/buddhadasa_1968_buddhadhamma-for-students.pdf"
 course: philosophy
 tags:
   - buddhism

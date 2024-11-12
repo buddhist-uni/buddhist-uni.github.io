@@ -6,6 +6,8 @@ authors:
 external_url: "https://hub.hku.hk/handle/10722/298912"
 drive_links:
   - "https://drive.google.com/file/d/1NPR4gG64YBzWxyxMBYTGRRW0MvDQWX8Z/view?usp=sharing"
+file_links:
+  - "smallpdfs/barua-dipen_2021_concept-of-bhavannga-citta-in-theravada-buddhism.pdf"
 course: abhidhamma
 tags:
   - rebirth

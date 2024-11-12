@@ -7,6 +7,8 @@ year: 2012
 pages: "179--208"
 drive_links:
   - "https://drive.google.com/file/d/1cgfD5Oxc6bA4J-Va5sMiBDo17m9REG1K/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kuan-tsefu_2012_sectarian-affiliations-of-the-ea.pdf"
 journal: jocbs
 ---
 

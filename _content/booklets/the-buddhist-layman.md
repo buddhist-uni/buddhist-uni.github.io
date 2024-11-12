@@ -9,6 +9,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1JPtnzc6Za2J9Yyx_lihmXJi2J1_IUgDw/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1G-h3XMHC3u7bK4Fc_GQ1MyZe5kU5E75T.epub"
+file_links:
+  - "smallpdfs/the-buddhist-layman.pdf"
+  - "smallepubs/the-buddhist-layman.epub"
 course: lay
 tags:
   - west

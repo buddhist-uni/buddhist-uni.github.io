@@ -2,6 +2,8 @@
 title: "Bodhicaryāvatāra: Teaching Methods & Overview"
 authors: ["Alak Zenkar Rinpoche"]
 drive_links: ["https://drive.google.com/file/d/113holETRGWmPwpZC-Ou87Sm5Pf5C6vQ0/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/zenkar_2008_bodhicaryavatara-overview.pdf"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/alak-zenkar/bodhicharyavatara-teaching-methods-overview"
 year: 2008
 course: mahayana

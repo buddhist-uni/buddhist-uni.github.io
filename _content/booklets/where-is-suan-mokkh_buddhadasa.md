@@ -8,6 +8,9 @@ external_url: "https://www.suanmokkh.org/books/21"
 drive_links:
   - "https://drive.google.com/file/d/13KpQ2iQlGkEAh1cAW6xq3SzpLhbeuDvZ/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1EuqjQPicPfQFIPWcBisGJkuf1BMAU1Ya/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/buddhadasa_1983_where-is-suan-mokkh.pdf"
+  - "smallepubs/buddhadasa_1983_where-is-suan-mokkh.epub"
 course: sangha
 tags:
   - nibbana

@@ -6,6 +6,8 @@ authors:
 external_url: "https://doi.org/10.1162/daed_a_01982"
 drive_links:
   - "https://drive.google.com/file/d/1BgINn9ozTf7uYr6P33JrdX_ltfM8szDn/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/farrell-henry-et-al_2023_moral-economy-of-high-tech-modernism.pdf"
 course: media
 tags:
   - society

@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.2143/JIABS.39.0.3200526"
 drive_links:
   - "https://drive.google.com/file/d/1KmbZCItA1i98fxWL-sgySXz-AGKBgRPf/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mcgovern-nathan_2016_origins-of-the-32-marks.pdf"
 course: buddha
 tags:
   - setting

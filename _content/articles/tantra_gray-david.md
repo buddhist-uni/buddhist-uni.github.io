@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.1093/acrefore/9780199340378.013.59"
 drive_links:
   - "https://drive.google.com/file/d/1LNZTPbtAVSLaFM1bKsORhYac2QHgKseT/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gray-david_2016_tantra.pdf"
 course: tantric
 status: featured
 tags:

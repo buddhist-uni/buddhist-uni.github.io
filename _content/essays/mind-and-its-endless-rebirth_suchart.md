@@ -5,6 +5,8 @@ authors:
 source_url: "http://www.kammatthana.com/dt_011.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1cJAcCKhekLrfdhAFom1yFrjxiHPhfvH9/view?usp=sharing"
+file_links:
+  - "smallpdfs/suchart_2014_mind-and-its-endless-rebirth.pdf"
 course: cosmology
 tags:
   - thai-forest

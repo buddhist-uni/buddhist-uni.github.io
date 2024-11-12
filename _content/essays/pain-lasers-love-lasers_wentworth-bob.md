@@ -6,6 +6,8 @@ alternate_url: "https://web.archive.org/web/20210225171631/https://nwcompass.org
 source_url: "https://web.archive.org/web/20190102201935/https://www.cnvc.org/pain-lasers-and-love-lasers"
 drive_links:
   - "https://drive.google.com/file/d/1mCY1a0SBgkaS8aphdVXGxwNwPpVkLAz7/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wentworth-bob_2019_pain-lasers-love-lasers.pdf"
 course: meditation
 tags:
   - speech

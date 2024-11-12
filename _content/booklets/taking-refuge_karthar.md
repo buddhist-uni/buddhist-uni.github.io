@@ -7,6 +7,8 @@ external_url: "https://dharmaebooks.org/taking-refuge/"
 formats: [epub]
 drive_links:
   - "https://obu.pages.dev/assets/epubs/1ultUikwfpcYol1Eue74TgkiNLisBvUjt.epub"
+file_links:
+  - "smallepubs/karthar_2002_taking-refuge.epub"
 course: mahayana
 tags:
   - philosophy

@@ -38,7 +38,7 @@ for file in "${tracked_files[@]}"; do
   fi
 done
 if [[ ${#invalid_files[@]} -gt 0 ]]; then
-  echo "Invalid characters found in the following files:"
+  echo "Invalid characters found in the following file names:"
   for file in "${invalid_files[@]}"; do
     echo "$file"
   done

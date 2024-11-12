@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3289054&act=&sid=&newlayout=1"
 drive_links:
   - "https://drive.google.com/file/d/1-ApSAjGKYiR1Nn_3JUHEfi3-dZFMFKcg/view?usp=sharing"
+file_links:
+  - "smallpdfs/mcnicholl-adeana_2020_generative-power-of-disgust.pdf"
 course: pv
 tags:
   - aesthetics

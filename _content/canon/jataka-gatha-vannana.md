@@ -6,6 +6,9 @@ source_url: "https://archive.org/details/in.ernet.dli.2015.280389"
 drive_links:
   - "https://drive.google.com/file/d/1dq-QYvLM9JWG82j9UWD97f-KULvLFMUR/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1a5_7FMhlYe39hVENCYKX3sYN-uBDIlTx.epub"
+file_links:
+  - "smallpdfs/jataka-gatha-vannana.pdf"
+  - "smallepubs/jataka-gatha-vannana.epub"
 course: pali-dictionaries
 tags:
   - canonical-poetry

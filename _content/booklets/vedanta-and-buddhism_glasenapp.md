@@ -3,6 +3,9 @@ title: "Vedānta and Buddhism"
 authors: ["Helmuth von Glasenapp"]
 external_url: "https://www.bps.lk/olib/wh/wh002_Glasenapp_Vedanta-and-Buddhism.html"
 drive_links: ["https://drive.google.com/file/d/1HrD5ea2M6M3FVOkmttyDoudxGOA4Ykuq/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/14E5_aFgcUNOom5G-eUwpHphb0F8zYzV9.epub"]
+file_links:
+  - "smallpdfs/glasenapp_1950_vedanta-and-buddhism.pdf"
+  - "smallepubs/glasenapp_1950_vedanta-and-buddhism.epub"
 year: 1950
 publisher: bps
 series: wheel

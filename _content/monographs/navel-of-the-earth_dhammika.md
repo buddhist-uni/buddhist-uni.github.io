@@ -5,6 +5,8 @@ external_url: "https://budblooms.org/2020/06/03/the-navel-of-the-earth/"
 source_url: "https://www.bps.lk/olib/bp/bp630s_Dhammika_Navel-of-the-Earth.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1-SiSSTSR8ZUXCjAX7BiUhrRjVsbxDDj9/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_1996_navel-of-the-earth.pdf"
 olid: OL32214436M
 year: 1996
 publisher: bps

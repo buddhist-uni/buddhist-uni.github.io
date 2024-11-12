@@ -7,6 +7,8 @@ source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-gender
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1-EFFNurjT9s9aOloXKbZf_c7NoltEb8c/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/heckert-jamie_2012_gender.pdf"
 course: inner
 tags:
   - gender

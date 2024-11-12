@@ -5,6 +5,8 @@ authors:
 external_url: "https://pressbooks.bccampus.ca/thescienceofhumanpotential/"
 drive_links:
   - "https://drive.google.com/file/d/1VCZp6nkjtUzmOjvyAcHcGyF89gCb2Jlc/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/levy_2014_psychology.pdf"
 course: inner
 tags:
   - psychology

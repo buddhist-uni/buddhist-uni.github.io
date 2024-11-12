@@ -6,6 +6,9 @@ external_url: "https://doi.org/10.1525/luminos.54"
 drive_links:
   - "https://drive.google.com/file/d/13XINYUHSVaDde7a2MCU9lEi6t-pKgITv/view?usp=drivesdk"
   - "https://drive.google.com/file/d/13M13hdp07YjuUxj3xD4M7YWr_UZt7IjV/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/key-alexander_2018_language-between-gods-and-poets.pdf"
+  - "smallepubs/key-alexander_2018_language-between-gods-and-poets.epub"
 course: islamic-poetry
 tags:
   - language

@@ -9,6 +9,9 @@ source_url: "https://forestdhamma.org/2018/02/09/arahattamagga-arahattaphala-5/"
 drive_links:
   - "https://drive.google.com/file/d/1lUSTo0lq2bNLvc35xU5W4vXEio5NiMBq/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1SnYBwp6dIiU2uRXIyL6qELvgTCj6ZA8C.epub"
+file_links:
+  - "smallpdfs/mahabua_2005_arahattamagga-arahattaphala.pdf"
+  - "smallepubs/mahabua_2005_arahattamagga-arahattaphala.epub"
 course: path
 status: featured
 tags:

@@ -4,6 +4,8 @@ authors: ["Jigme Tenpe Nyima"]
 translator: "Tulku Thondup and Philip Richman"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1Hb0gANJGKZvQzfEFsLsal2CG23wjR8aL/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/dodrupchen_2004_offering-flowers.pdf"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/dodrupchen-III/offering-flowers"
 # The year below is a wild guess.
 # The translation was archived by 2012

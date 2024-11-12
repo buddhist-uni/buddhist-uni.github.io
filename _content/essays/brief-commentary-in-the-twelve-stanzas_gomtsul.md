@@ -2,6 +2,8 @@
 title: "A Brief Commentary on the Twelve Stanzas"
 authors: [gomtsul]
 drive_links: ["https://drive.google.com/file/d/1uC1fq7QFTvWfOH38zyPRsSJ4-WMcleBc/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/gomtsul_2018_brief-commentary-in-the-twelve-stanzas.pdf"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/gompa-tsultrim-nyingpo/brief-commentary-on-twelve-stanzas"
 year: 2018
 translator: "Adam Pearcey"

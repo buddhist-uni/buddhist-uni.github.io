@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.17226/25121"
 drive_links:
   - "https://drive.google.com/file/d/1zQNQHC9hI9ZbjpXGJjbdVX5ciAh171C_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nas_2019_environmental-engineering-for-the-21st-c.pdf"
 course: wider # solid 3⭐s, almost 4
 tags:
   - infrastructure

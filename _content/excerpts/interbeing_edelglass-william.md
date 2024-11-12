@@ -12,6 +12,8 @@ year: 2009
 month: apr
 drive_links:
  - "https://drive.google.com/file/d/1k0qCAmM-v8OUWy7AtUGZHmWkjkhQxwGz/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/edelglass-william_2009_interbeing.pdf"
 course: engaged
 status: featured
 tags:

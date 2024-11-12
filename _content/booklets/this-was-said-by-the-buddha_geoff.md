@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.dhammatalks.org/suttas/KN/Iti/"
 drive_links:
   - "https://drive.google.com/file/d/1P9jGFOM5AxLQuK2w76XvmzrCtNdk_7NH/view?usp=sharing"
+file_links:
+  - "smallpdfs/geoff_2001_this-was-said-by-the-buddha.pdf"
 course: iti
 year: 2001
 oclc: 47883671

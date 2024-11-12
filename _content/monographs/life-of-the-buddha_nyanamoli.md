@@ -8,6 +8,8 @@ course: buddha
 status: featured
 drive_links:
   - "https://drive.google.com/file/d/1ucXqB1qXXEzhBbCeSlGNz27X8xDzjW2L/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nyanamoli_1972_life-of-the-buddha.pdf"
 tags:
   - pali-canon
   - ebts

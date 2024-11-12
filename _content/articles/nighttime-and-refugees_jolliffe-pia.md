@@ -3,6 +3,8 @@ title: "Night-Time and Refugees: Evidence from the Thai-Myanmar Border"
 authors: ["Pia Jolliffe"]
 external_url: "https://academic.oup.com/jrs/article/29/1/1/2362831"
 drive_links: ["https://drive.google.com/file/d/1eTCUgg2fjJLr19HTIVo-zvR6J4c8ESUt/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/jolliffe-pia_2015_nighttime-and-refugees.pdf"
 year: 2015
 volume: 29
 number: 1

@@ -6,6 +6,8 @@ external_url: "https://hal.science/hal-02528052/document"
 source_url: "https://doi.org/10.1080/14442213.2017.1375553"
 drive_links:
   - "https://drive.google.com/file/d/1OGoK6vOA1Km1wrXG2ZAfUhhedoVvGlT8/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/guillou-anne-yvonne_2017_khmer-potent-places-parami-and.pdf"
 course: cambodian
 tags:
   - theravada-roots

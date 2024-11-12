@@ -12,6 +12,9 @@ drive_links:
   - "https://drive.google.com/file/d/1581qqLqmVvDAAJRk0_oicy7taAu1Zmr9/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1bKJASz33mRqXMyfPqO0Urwxrth2J6vx9.epub"
   - "https://drive.google.com/drive/folders/18XrqJqvQUlDlWwinGFIVJwtuKrLVhiCu"
+file_links:
+  - "smallpdfs/jayasaro_2017_stillness-flowing.pdf"
+  - "smallepubs/jayasaro_2017_stillness-flowing.epub"
 status: featured
 olid: OL32034206M
 course: thai-forest

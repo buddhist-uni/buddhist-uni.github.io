@@ -265,6 +265,14 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
   if isinstance(destination, BufferedIOBase):
     buffer = destination
   else:
+    if os.path.exists(str(destination)):
+      if verbose is True:
+        if prompt(f"File {destination} already exists. Overwrite?"):
+          os.remove(str(destination))
+        else:
+          return
+      else:
+        raise FileExistsError(f"Attempting to download {destination} which already exists")
     buffer = open(str(destination)+'.part', 'wb')
   request = session().files().get_media(fileId=fileid)
   downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)

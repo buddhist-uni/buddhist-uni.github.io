@@ -5,6 +5,8 @@ authors:
 external_url: "https://journal.equinoxpub.com/BSR/article/view/13751"
 drive_links:
   - "https://drive.google.com/file/d/1C0z29_24w4jNGey9oGgYwqmOEBwCyHVk/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ireland_1964_sutta.pdf"
 course: sutta
 tags:
   - ebts

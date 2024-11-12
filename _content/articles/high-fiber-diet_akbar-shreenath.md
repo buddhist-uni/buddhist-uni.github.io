@@ -6,6 +6,8 @@ authors:
 external_url: "https://www.ncbi.nlm.nih.gov/books/NBK559033/"
 drive_links:
   - "https://drive.google.com/file/d/1YrZI8eV7rozwm6defQGhLdEv00bAptOd/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/akbar-shreenath_2023_high-fiber-diet.pdf"
 course: body
 tags:
   - food

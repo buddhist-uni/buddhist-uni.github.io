@@ -7,6 +7,9 @@ source_url: "https://collection.bccampus.ca/textbooks/media-society-culture-and-
 drive_links:
   - "https://drive.google.com/file/d/1AQoTczqLduqzbCyt6PBnlGxUw3VWv1Ws/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1EGQ5PtsATZOWxQF_Gwu5vJfL5Vna9h69/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/poepsel-mark_2017_media-society-culture-you.pdf"
+  - "smallepubs/poepsel-mark_2017_media-society-culture-you.epub"
 course: mass-media
 tags:
   - present

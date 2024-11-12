@@ -9,6 +9,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0096110"
 drive_links:
   - "https://drive.google.com/file/d/1rMfK6hr0ePE7XvJMN5OhmLDq-wC3L9SH/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/strauss-clara-et-al_2014_mindfulness-based-interventions-for.pdf"
 course: grief
 tags:
   - meditation

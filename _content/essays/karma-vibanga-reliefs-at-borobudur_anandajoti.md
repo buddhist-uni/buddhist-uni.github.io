@@ -5,6 +5,8 @@ authors:
 external_url: "https://bit.ly/2wXCGIO"
 drive_links:
   - "https://drive.google.com/file/d/1m9AkQzSuHAjLtsIa7DG7Psauy8D0YnOc/view"
+file_links:
+  - "smallpdfs/anandajoti_2020_karma-vibanga-reliefs-at-borobudur.pdf"
 course: form
 tags:
   - bart

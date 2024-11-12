@@ -9,6 +9,8 @@ source_url: "https://www.dhammatalks.org/books/GiftsHeLeftBehind/Contents.html"
 alternate_source: "https://www.accesstoinsight.org/lib/thai/dune/giftsheleft.html"
 drive_links:
   - "https://drive.google.com/file/d/1TtN1AE8xlY8PKLPY0ktvGfHRm-ESIquI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dun_2005_gifts-he-left-behind.pdf"
 status: featured
 course: emptiness
 tags:

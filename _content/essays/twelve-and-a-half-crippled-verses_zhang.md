@@ -6,6 +6,8 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/lama-zhang-tsondru-d
 year: 2020
 translator: "Lowell Cook"
 drive_links: ["https://drive.google.com/file/d/1LvictMg940gp-Ah41ygdVjqdX-uTvIh0/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/zhang_2020_twelve-and-a-half-crippled-verses.pdf"
 course: monastic
 status: featured
 tags:

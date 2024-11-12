@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287486&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1uAN4K0JzLMVJArlMcsF7H4sFCMGgutWM/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/overbey-ryan_2019_why-not-translate-spells.pdf"
 status: featured
 course: mahayana
 tags:

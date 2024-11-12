@@ -4,6 +4,8 @@ editor: "John Guy"
 external_url: "https://www.metmuseum.org/art/metpublications/Lost_Kingdoms_Hindu_Buddhist_Sculpture_of_Early_Southeast_Asia"
 drive_links:
   - "https://drive.google.com/file/d/1JyrpajpJTHZueqBmulw--Agz7vByMij4/view?usp=sharing"
+file_links:
+  - "smallpdfs/guy-john_2014_lost-kingdoms-hindu-buddhist-sculpture.pdf"
 course: theravada-roots
 tags:
   - bart

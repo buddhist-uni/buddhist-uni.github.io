@@ -7,6 +7,8 @@ subcat: poetry
 external_url: "https://dharmaebooks.org/the-seventy-two-exhortations/"
 drive_links:
   - "https://drive.google.com/file/d/1k0NEV2k3U98MrcYXkmDt0l5W5azdAmsr/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gomchung-kharak_2020_mind-training.pdf"
 course: monastic-advice
 tags:
   - bodhisattva

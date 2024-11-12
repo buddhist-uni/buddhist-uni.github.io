@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/2020/04/03/smoking-the-fifth-precept/"
 drive_links:
   - "https://drive.google.com/file/d/1NYhM2Rueqzmg7Qw3tAfCrrJCurZ0AM4C/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2008_smoking.pdf"
 course: ethics
 tags:
   - medicine

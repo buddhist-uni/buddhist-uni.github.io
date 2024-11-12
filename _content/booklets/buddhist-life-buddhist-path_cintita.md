@@ -6,6 +6,9 @@ external_url: "https://bhikkhucintita.wordpress.com/2017/05/02/new-textbook-budd
 drive_links:
   - "https://drive.google.com/file/d/1YRFRqpfEZFUNWeIKmQ2ixbeybotiwWE8/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1x-saFBW2zVmLQfk9QW0_rNNgWVmaNTGR/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cintita_2015_buddhist-life-buddhist-path.pdf"
+  - "smallepubs/cintita_2015_buddhist-life-buddhist-path.epub"
 olid: OL32035808M
 course: function
 status: featured

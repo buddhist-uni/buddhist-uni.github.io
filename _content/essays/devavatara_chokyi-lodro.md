@@ -5,6 +5,8 @@ translator: "Adam Pearcey"
 year: 1956
 drive_links:
   - "https://drive.google.com/file/d/1Bd6gKmKl3JP6VpHuBGhrvMsV35Qrac5t/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chokyi-lodro_1956_devavatara.pdf"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/descent-from-heaven-praise"
 course: indian
 tags:

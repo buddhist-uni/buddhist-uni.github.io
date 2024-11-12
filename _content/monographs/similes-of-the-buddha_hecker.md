@@ -6,6 +6,8 @@ external_url: "https://www.bps.lk/library-search-select.php?id=bp427s"
 olid: OL25173869M
 drive_links:
   - "https://drive.google.com/file/d/1HiFbNgj9onxhCmqRa7_0lmxDrP4FWQww/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/hecker_2009_similes-of-the-buddha.pdf"
 course: imagery
 tags:
   - philosophy

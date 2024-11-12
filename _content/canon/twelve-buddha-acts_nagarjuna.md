@@ -4,6 +4,8 @@ authors:
   - nagarjuna
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1WDY06wrzxXdM5zBaZ9NoCu8uKarb9mtz/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/nagarjuna_2008_twelve-buddha-acts.pdf"
 external_url: "https://www.lotsawahouse.org/indian-masters/nagarjuna/great-praise-twelve-acts-buddha"
 year: 2008
 translator: "Rigpa Translations"

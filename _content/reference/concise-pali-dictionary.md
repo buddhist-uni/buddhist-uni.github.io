@@ -7,6 +7,8 @@ source_url: "https://www.budsas.org/ebud/dict-pe/index.htm"
 pdf_source: "https://web.archive.org/web/20210715174320if_/https://www.ahandfulofleaves.org/documents/Concise%20Pali%20English%20Dictionary_Buddhadatta.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1l5b2j2Ed2i7uTmuLj3uYPFLNtuehe0gN/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/concise-pali-dictionary.pdf"
 course: pali-dictionaries
 olid: OL32982157M
 pages: 315

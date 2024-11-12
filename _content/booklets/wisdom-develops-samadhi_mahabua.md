@@ -8,6 +8,9 @@ olid: OL32040956M
 drive_links:
   - "https://drive.google.com/file/d/1bWcJNnUssYudhvSLt6UwUs4Urn9RRuNo/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/18SVygzHbTMHt_VcZh2g0VegeYAt2rLKv.epub"
+file_links:
+  - "smallpdfs/mahabua_2003_wisdom-develops-samadhi.pdf"
+  - "smallepubs/mahabua_2003_wisdom-develops-samadhi.epub"
 course: sati
 status: featured
 tags:

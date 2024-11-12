@@ -7,6 +7,9 @@ external_url: "https://www.bps.lk/olib/wh/wh370_Mahasi_Satipatthana-Vipassana--I
 drive_links:
   - "https://drive.google.com/file/d/1e_BUWyw72ncg-3YtrqQDHP7uLjqkBq-M/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1DJfigbZwP245FnNjkM12Z7Ry0wyuWrto.epub"
+file_links:
+  - "smallpdfs/mahasi_1957_satipatthana-vipassana.pdf"
+  - "smallepubs/mahasi_1957_satipatthana-vipassana.epub"
 course: vipassana
 tags:
   - path

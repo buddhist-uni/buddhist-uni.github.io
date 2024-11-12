@@ -6,6 +6,8 @@ authors:
 source_url: "https://blogs.dickinson.edu/buddhistethics/category/volume-17-2010/"
 drive_links:
   - "https://drive.google.com/file/d/1_QfI9aoaXYZxLp5pJvuib5zrBuozJ9TM/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/loy-kao_2010_healing-ecology.pdf"
 course: climate-change
 tags:
   - interfaith

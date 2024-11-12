@@ -6,6 +6,8 @@ authors:
 external_url: "https://ssrn.com/abstract=2140478"
 drive_links:
   - "https://drive.google.com/file/d/1Iv-fcBzr3bjlDon6fuyNN09I5LNhZxOl/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/liong-cheng_2012_laughing-buddha-doing-business.pdf"
 tags:
   - chinese
   - becon

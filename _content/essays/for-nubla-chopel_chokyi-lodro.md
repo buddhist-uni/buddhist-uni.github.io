@@ -7,6 +7,8 @@ subcat: poetry
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/advice-for-nubla-kunzang-chopel"
 drive_links:
   - "https://drive.google.com/file/d/1P0fWbEuV8UlBI6iLHAa7ebNeIzsoaD-i/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chokyi-lodro_2022_for-nubla-chopel.pdf"
 course: tantric
 tags:
   - nyingma

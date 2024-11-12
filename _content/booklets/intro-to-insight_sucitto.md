@@ -6,6 +6,8 @@ external_url: "https://www.abhayagiri.org/books/478-introduction-to-insight-medi
 source_url: "https://media.amaravati.org/en/dhamma-books/introduction-to-insight-meditation"
 drive_links:
   - "https://drive.google.com/file/d/1fYLfljsAYmnncAerZj0oU3LiKogw1Zsq/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sucitto_1987_intro-to-insight.pdf"
 course: meditation # perhaps should archive?
 year: 1987
 month: nov

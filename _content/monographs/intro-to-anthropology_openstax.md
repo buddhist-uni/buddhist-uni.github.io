@@ -7,6 +7,8 @@ authors:
 external_url: "https://openstax.org/details/books/introduction-anthropology"
 drive_links:
   - "https://drive.google.com/file/d/1qkzFRBD9mBq7GT9EdjZaLZMadqFd2uUg/view?usp=drivesdk"
+file_links:
+  - "largefiles/openstax_2022_intro-to-anthropology.pdf"
 status: featured
 course: world
 tags:

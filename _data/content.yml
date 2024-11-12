@@ -3,6 +3,10 @@ filehost: "https://buddhistuniversity.net/"
 valid_buckets:
   - "exclusive_01"
   - "function-data"
+  - "smallepubs"
+  - "smallpdfs"
+  - "mediumfiles"
+  - "largefiles"
 noreferrerhosts:
   - "https://www.shin-ibs.edu"
 

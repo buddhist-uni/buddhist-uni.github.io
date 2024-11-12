@@ -6,6 +6,8 @@ external_url: "https://www.sheldrake.org/research/sense-of-being-stared-at/exper
 source_url: "https://www.researchgate.net/profile/Rupert-Sheldrake/publication/239616053_Experiments_on_the_Sense_of_Being_Stared_At_The_Elimination_of_Possible_Artefacts/links/5bf3360e4585150b2bc284da/Experiments-on-the-Sense-of-Being-Stared-At-The-Elimination-of-Possible-Artefacts.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1CZR2Dp3ZE1MHWu4wo0wqm3u9VtT_66pr/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sheldrake-rupert_2001_being-stared-at.pdf"
 status: featured
 course: social
 tags:

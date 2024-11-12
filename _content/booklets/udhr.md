@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
 drive_links:
   - "https://drive.google.com/file/d/1FG0--4Hc9Hvm7ksHk0rMvNtb-FWPjmiX/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/udhr.pdf"
 status: featured
 course: world
 tags:

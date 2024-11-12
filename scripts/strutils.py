@@ -54,6 +54,7 @@ abnormalchars = re.compile(r'[^\w\s]')
 sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
 yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
 yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
+yaml_key = re.compile(r"^[a-z_]+:.*")
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
@@ -500,6 +501,106 @@ def file_info(file_name):
         md5.update(chunk)
         size += len(chunk)
   return (md5.hexdigest(), size)
+
+def get_untracked_files(git_root: Path | str = "."):
+    """Get list of untracked files from git status"""
+    try:
+        # Run git status to get untracked files
+        result = subprocess.run(
+            ['git', '-C', str(git_root), 'ls-files', '--others', '--exclude-standard'],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        files = result.stdout.splitlines()
+        if isinstance(git_root, Path):
+          return [git_root / file for file in files]
+        return [os.path.join(git_root, file) for file in files]
+    except subprocess.CalledProcessError:
+        print("Error: Not a git repository or git command failed")
+        return []
+    except FileNotFoundError:
+        print("Error: Git is not installed or not in PATH")
+        return []
+
+def get_file_sizes(files):
+    """Calculate sizes of given files"""
+    total_size = 0
+    file_sizes = {}
+    
+    for file in files:
+        try:
+            size = os.path.getsize(file)
+            file_sizes[file] = size
+            total_size += size
+        except (FileNotFoundError, OSError) as e:
+            print(f"Error getting size of {file}: {e}")
+    return file_sizes, total_size
+
+def format_size(size_in_bytes):
+    """Convert size in bytes to human readable format"""
+    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+        if size_in_bytes < 1024:
+            return f"{size_in_bytes:.2f} {unit}"
+        size_in_bytes /= 1024
+    return f"{size_in_bytes:.2f} PB"
+
+def write_frontmatter_key(path: Path, key: str, value, insert_after_key=None):
+  """Takes a markdown file and top-level frontmatter key and sets it to value
+  
+  insert_after_key will add the new key after that key if it doesn't exist
+  """
+  lines = path.read_text().split("\n")
+  key = f"{key}:"
+  if not yaml_key.match(key):
+    raise ValueError("Key isn't a valid yaml key")
+  if insert_after_key:
+    insert_after_key = f"{insert_after_key}:"
+    if not yaml_key.match(insert_after_key):
+      raise ValueError("Insert after key isn't a valid yaml key")
+  else:
+    insert_after_key = "---"
+  assert lines[0] == "---"
+  ourkeystartsline = None
+  nextkeystartsline = None
+  insertafterkeystartsline = None
+  insertafterkeyendsline = None
+  for i in range(1, len(lines)):
+    if yaml_key.match(lines[i]) or lines[i] == "---":
+      if nextkeystartsline is None and ourkeystartsline is not None:
+        nextkeystartsline = i
+      if (insertafterkeystartsline is not None or lines[i] == "---") and insertafterkeyendsline is None:
+        insertafterkeyendsline = i
+    if lines[i] == "---":
+      break
+    if lines[i].startswith(insert_after_key):
+      insertafterkeystartsline = i
+    if lines[i].startswith(key):
+      ourkeystartsline = i
+  if isinstance(value, list):
+    if not isinstance(value[0], str):
+      raise ValueError("Teach me how to handle lists of non-strings")
+    new_lines = []
+    for c in value:
+      v = c.replace("\"", "\\\"")
+      if "\n" in v:
+        raise ValueError("Teach me how to handle lists with newline strings")
+      new_lines.append(f"  - \"{v}\"")
+    if ourkeystartsline is None:
+      path.write_text("\n".join(
+        lines[:insertafterkeyendsline] + [key] + new_lines + lines[insertafterkeyendsline:]
+      ))
+    else:
+      path.write_text("\n".join(
+        lines[:ourkeystartsline+1] + new_lines + lines[nextkeystartsline:]
+      ))
+  elif not value:
+    if not ourkeystartsline:
+      return
+    path.write_text("\n".join(lines[:ourkeystartsline] + lines[nextkeystartsline:]))
+    return
+  else:
+    raise ValueError(f"Unknown value type {type(value)}")
 
 # Takes a partially encoded URL (such as /Nibbāna%20and%20Abhidhamma)
 # and returns the fully encoded URL (i.e. with /Nibb%C4%81na%20and%20Abhidhamma)

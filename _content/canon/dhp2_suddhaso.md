@@ -5,6 +5,8 @@ translator: suddhaso
 external_url: "https://bhantesuddhaso.com/teachings/sutta/dhammapada-ch2-appamada-vagga-annotated/"
 drive_links:
   - "https://drive.google.com/file/d/1DiDYlRYVaoVlSicfhtLNa3iigXDVON_I/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/suddhaso_2016_dhp02.pdf"
 course: pali-canon
 subcat: poetry
 tags:

@@ -6,6 +6,8 @@ external_url: "https://drexel.edu/~/media/Files/histpol/Publications/JoyceSSS.as
 source_url: "https://doi.org/10.1177/0306312705050180"
 drive_links:
   - "https://drive.google.com/file/d/1w1_tk1L9dqxLjQKf2M6TWScQ_IzKtSCZ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/joyce-kelly_2005_appealing-images.pdf"
 course: body
 status: featured
 tags:

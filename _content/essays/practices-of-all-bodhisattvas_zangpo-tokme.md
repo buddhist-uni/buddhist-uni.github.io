@@ -5,6 +5,8 @@ translator: "Adam Pearcy"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/gyalse-thogme-zangpo/37-practices-all-bodhisattvas"
 drive_links:
   - "https://drive.google.com/file/d/1SOrxVsv2282evfEIFbopSGxorZUEU6lk/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/zangpo-tokme_2006_practices-of-all-bodhisattvas.pdf"
 year: 2006
 course: monastic-advice
 tags:

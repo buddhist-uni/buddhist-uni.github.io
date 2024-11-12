@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Xp7KnefxqnkhG4uj2ul62l7BG4fe99V3/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1hAUwyus6wcKZKDFiUY6yxtkOgSkb9Cm0.epub"
+file_links:
+  - "smallpdfs/geoff_1993_mind-like-fire-unbound.pdf"
+  - "smallepubs/geoff_1993_mind-like-fire-unbound.epub"
 course: nibbana
 tags:
   - imagery

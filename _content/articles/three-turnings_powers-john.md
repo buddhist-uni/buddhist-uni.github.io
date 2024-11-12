@@ -4,6 +4,8 @@ authors:
   - "John Powers"
 external_url: "https://doi.org/10.1093/acrefore/9780199340378.013.768"
 drive_links: ["https://drive.google.com/file/d/16k2lxk-UQ0ctJyuKePdPHVx03ngFqPta/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/powers-john_2021_three-turnings.pdf"
 month: may
 year: 2021
 course: mahayana

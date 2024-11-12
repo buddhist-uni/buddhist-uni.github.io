@@ -8,6 +8,9 @@ formats: [epub, pdf]
 drive_links:
   - "https://obu.pages.dev/assets/epubs/1db0rK0X22HwwpneGt9NwgtzhHng0Hzuz.epub"
   - "https://drive.google.com/file/d/1E7OodXHZgBn5u1NkNnQvUbiSVkkkOpkw/view?usp=drivesdk"
+file_links:
+  - "smallepubs/mahabua_1989_life-of-inner-quality.epub"
+  - "smallpdfs/mahabua_1989_life-of-inner-quality.pdf"
 course: lay
 tags:
   - thai-forest

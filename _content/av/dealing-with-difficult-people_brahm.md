@@ -4,6 +4,8 @@ authors: [brahm]
 external_url: "https://www.youtube.com/watch?v=jniaUr_7438"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1Qh4mm7L_eKo4YCkZwxrlv2oKDZg8AWGk/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/brahm_2008_dealing-with-difficult-people.pdf"
 month: nov
 year: 2008
 status: featured

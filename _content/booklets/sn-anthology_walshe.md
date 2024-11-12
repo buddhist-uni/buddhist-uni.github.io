@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1i_5lm08WLk-CTVjOSrtZpWPH8ei1kHll/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1V9TL-4IP6Td02Hx9kZkDg0OPWMEkFpke.epub"
+file_links:
+  - "smallpdfs/walshe_1984_sn-anthology.pdf"
+  - "smallepubs/walshe_1984_sn-anthology.epub"
 course: sutta
 tags:
   - sn

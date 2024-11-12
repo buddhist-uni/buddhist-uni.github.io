@@ -3,6 +3,8 @@ title: "The Buddhist Monastic Code"
 authors: [geoff]
 external_url: "https://www.dhammatalks.org/ebook_index.html#bmc"
 drive_links: ["https://obu.pages.dev/assets/epubs/1wkkB3Mk3idhSOyzd8M64mwICYGa8OsOb.epub"]
+file_links:
+  - "smallepubs/geoff_2001_bmc.epub"
 formats: [epub]
 year: 2001
 olid: OL23822296M

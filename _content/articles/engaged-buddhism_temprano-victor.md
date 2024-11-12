@@ -4,6 +4,8 @@ authors:
   - "Victor Gerard Temprano"
 external_url: "https://api.equinoxpub.com/articles/fulltext/17677"
 drive_links: ["https://drive.google.com/file/d/1piEMuMyn36yJ4jDGjyWJxi35ox0P912i/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/temprano-victor_2013_engaged-buddhism.pdf"
 year: 2013
 volume: 30
 course: engaged

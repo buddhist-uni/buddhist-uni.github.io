@@ -6,6 +6,8 @@ subcat: thesis
 external_url: "https://deepblue.lib.umich.edu/handle/2027.42/128920"
 drive_links:
   - "https://drive.google.com/file/d/1TAZiogCXp5X0oNxiRzcv_YmNM-X21vmM/view?usp=sharing"
+file_links:
+  - "smallpdfs/brereton-bonnie-pacala_1992_phra-malai-legend-thai-buddhist-literature.pdf"
 course: thai-roots
 tags:
   - theravada-roots

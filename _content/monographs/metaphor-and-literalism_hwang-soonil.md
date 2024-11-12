@@ -3,9 +3,11 @@ title: "Metaphor and Literalism in Buddhism: The Doctrinal History of Nirvana"
 authors: ["Soonil Hwang"]
 external_url: "https://www.taylorfrancis.com/books/9781134254354"
 drive_links:
-  - "https://play.google.com/store/books/details?id=kzN-AgAAQBAJ" # https://play.google.com/store/books/details?id=ow2AAgAAQBAJ also
   - "https://drive.google.com/file/d/1IIL3-xnsSVKFTtKBHFV_GkSJE-WVhlz1/view?usp=drivesdk"
-formats: [GBook, pdf]
+  - "https://play.google.com/store/books/details?id=kzN-AgAAQBAJ" # https://play.google.com/store/books/details?id=ow2AAgAAQBAJ also
+file_links:
+  - "smallpdfs/hwang-soonil_2006_metaphor-and-literalism.pdf"
+formats: [pdf, GBook]
 year: 2006
 publisher: Routledge
 olid: OL3420009M

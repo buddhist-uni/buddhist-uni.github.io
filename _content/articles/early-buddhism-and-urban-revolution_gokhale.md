@@ -3,6 +3,8 @@ title: "Early Buddhism and the Urban Revolution"
 authors: ["Balkrishna Govind Gokhale"]
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1mFB81_Vi7WvR9s2ZmuKxBq3-JwoAfqQ2/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/gokhale_1982_early-buddhism-and-urban-revolution.pdf"
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3286305&sid="
 year: 1982
 journal: jiabs

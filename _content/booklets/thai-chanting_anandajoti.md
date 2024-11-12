@@ -5,6 +5,9 @@ external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Thai-Ch
 drive_links:
   - "https://drive.google.com/file/d/1FT0rE_5l6yUvX7z3q7gBhlCzDD4mUoTw/view?usp=sharing"
   - "https://drive.google.com/file/d/12jKBWnjx7tqK1Jgk_RI9F2ZG67iqdQs2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/anandajoti_2016_thai-chanting.pdf"
+  - "smallepubs/anandajoti_2016_thai-chanting.epub"
 course: abhidhamma
 tags:
   - thai-chanting

@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.suanmokkh.org/articles/14"
 drive_links:
   - "https://drive.google.com/file/d/1m6dZkuwAYPYTDqVM4MoV2dqHmXm9LPz9/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gaboude-louis_1994_buddhadasas-contributions.pdf"
 course: modern
 tags:
   - thai

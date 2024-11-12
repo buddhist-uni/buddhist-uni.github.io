@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/120GH9fvajOZGIN6OnZbYQqaMC4WbDbok/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1Hxryj2M8OI3opgvPOeCs-QkrEs99sZA3.epub"
+file_links:
+  - "smallpdfs/walshe_1975_buddhism-and-sex.pdf"
+  - "smallepubs/walshe_1975_buddhism-and-sex.epub"
 publisher: bps
 series: wheel
 number: 225

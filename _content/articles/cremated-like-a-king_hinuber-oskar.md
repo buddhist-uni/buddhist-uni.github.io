@@ -4,6 +4,8 @@ authors: [hinuber-oskar-v]
 external_url: "https://icabs.repo.nii.ac.jp/?action=repository_uri&item_id=135&file_id=22&file_no=1"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1nkffAGDR5DZxtquJqmtlFrqeb8FQkxX0/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/hinuber-oskar_2009_cremated-like-a-king.pdf"
 journal: jicpbs
 year: 2009
 volume: 13

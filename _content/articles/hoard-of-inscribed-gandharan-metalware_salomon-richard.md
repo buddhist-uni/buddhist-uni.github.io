@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?id=3291581&url=article"
 drive_links:
   - "https://drive.google.com/file/d/1NMn7fkv4h7ziQrX60LN_JdrzSvJKYl-R/view?usp=sharing"
+file_links:
+  - "smallpdfs/salomon-richard_2022_hoard-of-inscribed-gandharan-metalware.pdf"
 course: sects
 tags:
   - central-asian

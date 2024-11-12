@@ -6,6 +6,9 @@ external_url: "https://www.bps.lk/olib/wh/wh008_Soma_Buddhas-Charter-of-Free-Inq
 drive_links:
   - "https://drive.google.com/file/d/1D-ksVSVXJ4NuFpY9wDNQ8gESVhvnhJzp/view?usp=sharing"
   - "https://obu.pages.dev/assets/epubs/11YcJ8r3uMYK8B5LWAE8cM8V5CnwMjPIx.epub"
+file_links:
+  - "smallpdfs/soma-thera_1959_kalama-sutta-free-inquiry.pdf"
+  - "smallepubs/soma-thera_1959_kalama-sutta-free-inquiry.epub"
 source_url: "https://archive.org/details/kalamasutta0000soma/mode/1up"
 course: epistemology
 tags:
