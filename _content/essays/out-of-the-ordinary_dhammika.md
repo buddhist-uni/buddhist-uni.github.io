@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/2021/02/17/out-of-the-ordinary/"
 drive_links:
   - "https://drive.google.com/file/d/1YU1GItLpqPKo3FFJzHOMNn4W05oxU5kx/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2021_out-of-the-ordinary.pdf"
 course: ethics
 tags:
   - vinaya-controversies

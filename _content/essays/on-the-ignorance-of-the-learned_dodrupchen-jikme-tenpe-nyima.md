@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/dodrupchen-III/ignorance-of-the-learned"
 drive_links:
   - "https://drive.google.com/file/d/1zFlwoOt7X7qNyDJLAphigsRXJqRWZupS/view?usp=sharing"
+file_links:
+  - "smallpdfs/dodrupchen-jikme-tenpe-nyima_2014_on-the-ignorance-of-the-learned.pdf"
 course: thought
 tags:
   - pariyatti

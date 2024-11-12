@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article.php&id=3275081&journal_code=JIABS"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15pQay-R4VvtBPJcdnfxbog9eQNvDoNKS/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/abeysekara-ananda_1999_politics-of-higher-ordination.pdf"
 year: 1999
 journal: jiabs
 volume: 22

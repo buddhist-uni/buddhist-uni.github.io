@@ -4,6 +4,8 @@ authors: [shenga-khenpo]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/in-this-pure-awareness"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1SReJnyys4iN48m33kiizMKsr-40ys8ZR/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/shenga-khenpo_2019_in-this-pure-awareness.pdf"
 year: 2019
 course: nibbana
 base_value: 0.2

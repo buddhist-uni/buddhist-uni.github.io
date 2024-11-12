@@ -6,6 +6,8 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/jamgon-kongtrul/maha
 translator: "Adam Pearcey"
 drive_links:
   - "https://drive.google.com/file/d/1yJleYn2gKS3tQcp9p7ZIKAeTJHekAy1u/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/jamgon-kongtrul_2015_mahamudra.pdf"
 base_value: 0.25
 course: tantric
 tags:

@@ -5,6 +5,8 @@ authors:
 external_url: " https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078166&sid="
 drive_links:
   - "https://drive.google.com/file/d/1Iul471rmFmqXKk3HyKb0BFvztAzDfg-x/view?usp=sharing"
+file_links:
+  - "smallpdfs/ohnuma-reiko_2013_elephant-good-to-think.pdf"
 course: animals
 tags:
   - imagery

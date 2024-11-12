@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.4000/moussons.3181"
 drive_links:
   - "https://drive.google.com/file/d/15LUH_JYo_a8RffxGm946bfUCG_UVd1mI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gravers-mikael_2001_cosmology-prophets-and-rebellion-among.pdf"
 course: theravada-roots
 status: featured # hard to place. tags tentative
 tags:

@@ -5,6 +5,8 @@ translator: suddhaso
 external_url: "https://bhantesuddhaso.com/teachings/sutta/dhammapada-33-43-citta-vagga/"
 drive_links:
   - "https://drive.google.com/file/d/1p6uRFg87koPpAaRxpBXzltlEJNTvKivv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/suddhaso_2016_dhp03.pdf"
 course: pali-canon
 subcat: poetry
 tags:

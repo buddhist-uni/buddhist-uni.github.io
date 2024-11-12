@@ -4,6 +4,8 @@ authors: [rahula-w]
 external_url: "https://web.archive.org/web/20210411140724/https://sites.google.com/site/rahulawhatthebuddha/home"
 drive_links:
   - "https://drive.google.com/file/d/1XWWFkpSix-nFaOv5qSnXjxkkDFZmGnUP/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/rahula-w_1959_what-the-buddha-taught.pdf"
 source_url: "http://ftp.budaedu.org/ebooks/pdf/EN132.pdf"
 year: 1959
 olid: OL7874505M

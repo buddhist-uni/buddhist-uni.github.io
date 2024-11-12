@@ -3,6 +3,8 @@ title: "Crossing to the Farthest Shore: How Pāli Jātakas Launch the Buddhist I
 authors: [shaw-s]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/29/31"
 drive_links: ["https://drive.google.com/file/d/1HynCCyLnjYweAGHsCcOOyuk7iRjH81lZ/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/shaw-s_2012_crossing-to-the-farthest-shore.pdf"
 journal: jocbs
 year: 2012
 volume: 3

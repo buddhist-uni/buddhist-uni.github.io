@@ -6,6 +6,8 @@ source_url: "https://philpapers.org/go.pl?aid=NGUVCH"
 external_url: "https://doi.org/10.26556/jesp.v27i3.3048"
 drive_links:
   - "https://drive.google.com/file/d/1x28a66-y5LJJ89EKivhDB6yVRas-o31i/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nguyen-c-thi_2024_value-capture.pdf"
 status: featured
 course: intellect
 tags:

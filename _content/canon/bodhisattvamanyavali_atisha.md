@@ -13,6 +13,8 @@ year: 2008
 external_url: "https://www.lotsawahouse.org/indian-masters/atisha/jewel-rosary-bodhisattvas"
 drive_links:
   - "https://drive.google.com/file/d/1Qkt6NCaFET2hXQbRGWUUQmlo5EVN4jQC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/atisha_2008_bodhisattvamanyavali.pdf"
 base_value: 1
 pages: 4
 ---

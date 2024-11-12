@@ -9,6 +9,8 @@ external_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3
 source_url: "https://doi.org/10.1073/pnas.2203149119"
 drive_links:
   - "https://drive.google.com/file/d/1ZEokzFJgzQ3cY9o6eZKCCAgWixvxGqW0/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/scheffer-marten-et-al_2022_belief-traps-tackling-inertia-of-harmful.pdf"
 course: intellect
 status: featured
 tags:

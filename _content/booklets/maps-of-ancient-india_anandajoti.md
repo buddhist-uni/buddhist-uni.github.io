@@ -6,6 +6,8 @@ authors:
 external_url: "https://bit.ly/ABT-MP"
 drive_links:
   - "https://drive.google.com/file/d/1lPzOCrofkrDfA5qsGnZiPZvU5ru3enfd/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/anandajoti_2012_maps-of-ancient-india.pdf"
 source_url: "https://drive.google.com/file/d/1R5MQrJAgM3VXi3Ohebquy3wyZZ0dWR9Y/view?usp=drivesdk"
 course: roots
 tags:

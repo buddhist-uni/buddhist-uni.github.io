@@ -7,6 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/102SA3QPr5bdVRuYIcz2ZOvUmZ3XLzqPg/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1K1yZEvrTXdyW8_FyPapcWVQS7fClPPJ3.epub"
   - "https://drive.google.com/file/d/1-gg0OXcAK-e86Gu9cOZxmTy7ju7lDSYr/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bodhi_1999_buddha-and-his-dhamma.pdf"
+  - "smallepubs/bodhi_1999_buddha-and-his-dhamma.epub"
 year: 1999
 publisher: bps
 olid: OL13056123M

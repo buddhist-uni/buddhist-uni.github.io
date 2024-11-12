@@ -11,6 +11,8 @@ publisher: "Routledge"
 editor: "Roy Bhaskar"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1ZCyDsMfsLTQpIlLgxiIp4UgTuqkGPvmX/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/stein-zachary_2015_emancipatory-metatheory.pdf"
 course: becon
 tags:
   - society

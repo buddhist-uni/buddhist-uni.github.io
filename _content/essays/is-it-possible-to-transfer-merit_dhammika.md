@@ -5,6 +5,8 @@ authors:
 external_url: "https://bit.ly/merit-transfer"
 drive_links:
   - "https://drive.google.com/file/d/13xrSuQgiHM_zIZfgdY7YzBk62D117O7C/view?usp=drive_link"
+file_links:
+  - "smallpdfs/dhammika_2020_is-it-possible-to-transfer-merit.pdf"
 course: karma
 tags:
   - form

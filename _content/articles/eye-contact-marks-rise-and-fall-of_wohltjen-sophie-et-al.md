@@ -8,6 +8,8 @@ source_url: "https://doi.org/10.1073/pnas.2106645118"
 preprint_url: "https://doi.org/10.31234/osf.io/npk75"
 drive_links:
   - "https://drive.google.com/file/d/1AWvSdx6aXZc2M8S9CfwoEZgGWxAk7bt2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wohltjen-sophie-et-al_2021_eye-contact-marks-rise-and-fall-of.pdf"
 course: communication
 tags:
   - body-language

@@ -7,6 +7,8 @@ translator: "Adam Percey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/profound-instruction-view-middle-way"
 drive_links:
   - "https://drive.google.com/file/d/181ZTWcOzgYi9eVhiPCoY_DY3WQpsyG9h/view?usp=sharing"
+file_links:
+  - "smallpdfs/mipham_2006_profound-instruction.pdf"
 course: emptiness
 tags:
   - vipassana

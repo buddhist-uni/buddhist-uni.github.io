@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.ajahnchah.org/book/Unshakeable_Peace1_2.php"
 drive_links:
   - "https://drive.google.com/file/d/1YfxIc33s69Sqv-oX08GF24xvzYSlmNQH/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chah_2007_unshakable-peace.pdf"
 course: vipassana
 tags:
   - problems

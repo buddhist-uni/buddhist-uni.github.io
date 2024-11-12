@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078169&act=&sid=&newlayout=1"
 drive_links:
   - "https://drive.google.com/file/d/1F-MVBLQO66bNdLO4x6Z4KAZcTsH4CxSs/view?usp=sharing"
+file_links:
+  - "smallpdfs/shulman-eviatar_2012_early-buddhist-imagination-atthakavagga.pdf"
 course: canonical-poetry # with prejudice
 status: featured
 tags:

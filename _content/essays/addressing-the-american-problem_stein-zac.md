@@ -5,6 +5,8 @@ authors:
 source_url: "http://www.zakstein.org/publications.html"
 drive_links:
   - "https://drive.google.com/file/d/1MuDIxKRryQixObzg0auC18cn92jI0-wp/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/stein-zac_2007_addressing-the-american-problem.pdf"
 course: meditation
 status: featured
 tags:

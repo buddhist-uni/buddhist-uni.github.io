@@ -6,6 +6,8 @@ translator: "Sean Price"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/adzom-gyalse-gyurme-dorje/advice-beginners-overcoming-obstacles-in-meditation"
 drive_links:
   - "https://drive.google.com/file/d/1zL-oXCwrY84CtL1PlxA-QMpQobAGijeM/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gyalse_2019_advice-for-beginners.pdf"
 course: problems
 tags:
   - tantric

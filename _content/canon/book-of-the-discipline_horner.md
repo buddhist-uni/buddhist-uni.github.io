@@ -12,6 +12,9 @@ source_url: "https://web.archive.org/web/20170702035121/https://suttacentral.net
 drive_links:
   - "https://drive.google.com/file/d/1Ce5CZXsEStm6tZR1IUMAMifhfK0qazCO/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1awqBvuTnk2YLdNR9RtsTlp_7XGgS9j7e.epub"
+file_links:
+  - "smallpdfs/pli-tv.pdf"
+  - "smallepubs/pli-tv.epub"
 base_value: 5
 pages: 2992
 ---

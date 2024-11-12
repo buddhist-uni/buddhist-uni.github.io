@@ -7,6 +7,8 @@ editor: "Phillippa Sison"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/gyalse-thogme-zangpo/how-transform-sickness"
 drive_links:
   - "https://drive.google.com/file/d/1Ngf-vlPeelUA06em7mP6G_j-bGCNUqAQ/view?usp=sharing"
+file_links:
+  - "smallpdfs/gyalse-tokme-zangpo_2007_how-to-transform-sickness-and-other-circumstances.pdf"
 formats: [pdf]
 course: thought
 tags:

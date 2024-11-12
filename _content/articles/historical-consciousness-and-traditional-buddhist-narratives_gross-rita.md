@@ -8,6 +8,8 @@ volume: 1
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/16esjvXhSGAhJpXbd3zOkk0VtJKIfPUTH/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gross-rita_2014_historical-consciousness-and-traditional-buddhist-narratives.pdf"
 course: roots
 status: featured
 tags:

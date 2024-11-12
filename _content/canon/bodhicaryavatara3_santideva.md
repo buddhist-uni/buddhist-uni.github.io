@@ -4,6 +4,8 @@ subcat: poetry
 authors:
   - santideva
 drive_links: ["https://drive.google.com/file/d/1GjP2gYQ0SvpedpJ7Uczy08zwKgTQzDIl/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/santideva_2007_bodhicaryavatara3.pdf"
 external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhicharyavatara-3"
 course: mahayana
 year: 2007

@@ -5,6 +5,8 @@ authors:
 external_url: "https://ijkh.khistory.org/journal/view.php?number=300"
 drive_links:
   - "https://drive.google.com/file/d/1eztGL1dd7yyp2nCc7OqzHEh4hQFPEn_D/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/tikhonov-vladimir_2001_social-darwinism-in-korea-and-its.pdf"
 course: modern
 tags:
   - korean

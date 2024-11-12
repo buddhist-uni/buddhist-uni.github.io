@@ -6,6 +6,9 @@ external_url: "https://hdl.handle.net/10125/63553"
 drive_links:
   - "https://drive.google.com/file/d/1sT6Qoslj4wS93kLwxhm0tdxh2Y3dF25U/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1wpE9F12kywd7uuZKZAlbi1eBl0VxbOcL/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/totman-conrad_1985_japans-modern-forests.pdf"
+  - "smallepubs/totman-conrad_1985_japans-modern-forests.epub"
 course: natural # solidly. Almost featured
 tags:
   - japan

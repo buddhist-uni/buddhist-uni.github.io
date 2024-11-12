@@ -6,6 +6,8 @@ translator: "Abraham Ta-Quan"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/fifteenth-karmapa/advice-for-urgyen-tsomo"
 drive_links:
   - "https://drive.google.com/file/d/1fhFjaHpfPkYz3Py7MYX_DQRFlnY15DkY/view?usp=sharing"
+file_links:
+  - "smallpdfs/khakhyab-dorje_2020_advice-for-urgyen-tsomo.pdf"
 course: thought
 tags:
   - problems

@@ -7,6 +7,8 @@ subcat: thesis
 source_url: "http://hdl.handle.net/10603/6464"
 drive_links:
   - "https://drive.google.com/file/d/1dzanP0Z8YZXTtbmsxcQ58oFnsYPE0_Gb/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/diem-nguyen-thi_2012_role-of-animals-in-indian-buddhism-with.pdf"
 course: animals
 tags:
   - jataka

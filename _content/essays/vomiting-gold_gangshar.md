@@ -5,6 +5,8 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-gangshar/vomi
 year: 2015
 translator: "Sean Price"
 drive_links: ["https://drive.google.com/file/d/1DThCa5je1xBuD33CT34FT4b1K4NfR4Jf/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/gangshar_2015_vomiting-gold.pdf"
 course: sati
 base_value: 0.3
 tags:

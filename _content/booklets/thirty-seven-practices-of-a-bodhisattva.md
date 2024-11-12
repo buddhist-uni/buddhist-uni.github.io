@@ -6,6 +6,8 @@ authors:
 external_url: "https://dharmaebooks.org/thirty-seven-practices-bodhisattva/"
 drive_links:
   - "https://drive.google.com/file/d/1pmZ6FPvX6W9x3W4pYmmN0EF1tszvS0eR/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/thirty-seven-practices-of-a-bodhisattva.pdf"
 course: mahayana
 tags:
   - thought

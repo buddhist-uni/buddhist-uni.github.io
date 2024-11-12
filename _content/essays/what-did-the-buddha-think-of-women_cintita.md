@@ -5,6 +5,8 @@ external_url: "https://bhikkhucintita.wordpress.com/home/topics-in-the-dharma/up
 year: 2012
 drive_links:
   - "https://drive.google.com/file/d/1tqzviw7huXFgkru1goji0a6BP9h5Wlph/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cintita_2012_what-did-the-buddha-think-of-women.pdf"
 course: sangha
 tags:
   - buddha

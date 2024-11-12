@@ -6,6 +6,8 @@ editor: "Marcie M. Muscat"
 external_url: "https://www.metmuseum.org/art/metpublications/The_Poetry_of_Nature_Edo_Paintings_from_the_Fishbein_Bender_Collection"
 drive_links:
   - "https://drive.google.com/file/d/1rn5wL2GofuZKKVgttOLKWJDuya8Mjlz3/view?usp=drivesdk"
+file_links:
+  - "largefiles/carpenter-john_2018_poetry-of-nature.pdf"
 course: nature
 tags:
   - edo

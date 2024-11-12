@@ -7,6 +7,8 @@ authors:
 external_url: "https://doi.org/10.1073/pnas.2213266120"
 drive_links:
   - "https://drive.google.com/file/d/1X-ozxiS40o2ymdSLzh5xHcw3nmaOk4vE/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/damann-taylor-j-et-al_2023_persistence-of-gender-biases-in-europe.pdf"
 course: time
 tags:
   - culture

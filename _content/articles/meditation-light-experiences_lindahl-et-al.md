@@ -9,6 +9,8 @@ editor: "Zoran Josipovic"
 external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00973/full"
 drive_links:
   - "https://drive.google.com/file/d/1IgN9bdNO5T3657v5NOQAcya5jEzy_wli/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lindahl-et-al_2014_meditation-light-experiences.pdf"
 course: samatha
 tags:
   - samadhi

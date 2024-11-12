@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134549&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1VLTNjaJQjbqeGOOd3z0Y5zCe1zaAj6XL/view?usp=sharing"
+file_links:
+  - "smallpdfs/olav-hackstein_2015_transformation-of-inherited-indo-european-phraseology.pdf"
 course: karma
 status: featured
 tags:

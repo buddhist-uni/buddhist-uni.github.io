@@ -8,6 +8,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0264924"
 drive_links:
   - "https://drive.google.com/file/d/1Ocrut65jVeki5AUqGuYUcYOcqNDwLU95/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/phan-le-nhat-tram-et-al_2022_search-for-scientific-meaning-in.pdf"
 course: academic
 tags:
   - sati

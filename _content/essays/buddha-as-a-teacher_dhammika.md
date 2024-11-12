@@ -2,6 +2,8 @@
 title: "The Buddha as a Teacher"
 authors: [dhammika]
 drive_links: ["https://drive.google.com/file/d/1nFTWulAFve1ZJVyyrOBHhLMYy6R9-wSu/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/dhammika_2020_buddha-as-a-teacher.pdf"
 external_url: "https://budblooms.org/2020/04/03/the-buddha-as-a-teacher/"
 year: 2020
 month: apr

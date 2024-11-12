@@ -5,6 +5,8 @@ authors:
 external_url: "https://web.archive.org/web/20220102122825/https://tricycle.org/trikedaily/awakening-joy-meditation-practice/"
 drive_links:
   - "https://drive.google.com/file/d/1y8VcKS0jvN7RMDr73uwiOYVRLfLUS8rD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/duddul-pema_2022_awakening-to-joy.pdf"
 course: samatha
 tags:
   - problems

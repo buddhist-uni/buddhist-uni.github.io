@@ -5,6 +5,8 @@ editor: mills-laurence
 external_url: "https://www.bps.lk/library-search-select.php?id=wh054"
 drive_links:
   - "https://drive.google.com/file/d/1gathddwVUSoH7HxF8OncjR2SGc4XfIAe/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/narada-kassapa_1963_mirror-of-the-dhamma.pdf"
 year: 1963
 publisher: bps
 series: wheel

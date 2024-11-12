@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/179/212"
 drive_links: 
   - "https://drive.google.com/file/d/1NWuhrfYUOCDcW66eGAt7h8URd0_Jkoqz/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/choong-mk_2018_entering-arising-affliction-rahula.pdf"
 course: sa
 tags:
   - sn

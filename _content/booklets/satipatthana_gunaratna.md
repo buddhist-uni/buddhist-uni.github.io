@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1YQrYrCts08KXTJ0-M_zmAEet8gWzxgE4/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1PVFTunt8sJ_mS29nk6YSdN8b94qicqBg.epub"
+file_links:
+  - "smallpdfs/gunaratna_1963_satipatthana.pdf"
+  - "smallepubs/gunaratna_1963_satipatthana.epub"
 course: meditation
 base_value: 1
 tags:

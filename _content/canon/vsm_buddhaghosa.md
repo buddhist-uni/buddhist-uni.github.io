@@ -5,6 +5,9 @@ translator: nyanamoli
 year: 1956
 address: Colombo
 drive_links: ["https://drive.google.com/file/d/1aAkm-OWjBaitFi4j7D0xwzeLtARxziBA/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1mIxWGvgzbW-tU2caGGG8NTkoeBphaAyo.epub"]
+file_links:
+  - "smallpdfs/buddhaghosa_1956_vsm.pdf"
+  - "smallepubs/buddhaghosa_1956_vsm.epub"
 external_url: "https://static.sirimangalo.org/vism/"
 course: theravada-roots
 base_value: 4.5

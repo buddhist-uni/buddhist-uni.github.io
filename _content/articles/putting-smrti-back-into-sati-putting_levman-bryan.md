@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/167"
 drive_links:
   - "https://drive.google.com/file/d/1ZWZFgB4apSAsUVqiorHejir_i7DgYI8O/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/levman-bryan_2017_putting-smrti-back-into-sati-putting.pdf"
 course: sati
 tags:
   - perception

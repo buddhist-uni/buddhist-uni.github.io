@@ -7,6 +7,9 @@ source_url: "https://budblooms.org/2022/04/05/footprints-in-the-dust-the-life-of
 drive_links:
   - "https://drive.google.com/file/d/1Fe3n6s3n4BN1GAJd8WUxeJahfh87dJ_3/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1VZzvccnqxnjUGunqgDs2aGb-FHiAdpOI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2022_footprints-in-the-dust.pdf"
+  - "smallepubs/dhammika_2022_footprints-in-the-dust.epub"
 course: ebts
 status: featured
 tags:

@@ -10,6 +10,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1CsxD040D1w_SxyrhWLkSyByTNASQ9Fqa/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/15c0OLBYYlscNT_tl1O0Excv4WZozuywh.epub"
+file_links:
+  - "smallpdfs/ecocrisis-perspectives.pdf"
+  - "smallepubs/ecocrisis-perspectives.epub"
 course: nature
 year: 1987
 olid: OL51670502M

@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/2002"
 status: featured
 drive_links:
   - "https://drive.google.com/file/d/1P-MfkhSLwu4vmKToueAlDie99n5jotaU/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wilson-jeff_2022_pennies-from-the-pure-land.pdf"
 course: west
 tags:
   - jodo-shinshu

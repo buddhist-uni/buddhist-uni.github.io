@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/advice-for-beginners"
 drive_links:
   - "https://drive.google.com/file/d/1muH0WfcDfNNvBO7QMaJ6py7juURxHRyU/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mipham_2012_for-beginners.pdf"
 course: tantric
 tags:
   - meditation

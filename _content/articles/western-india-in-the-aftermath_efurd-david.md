@@ -3,6 +3,8 @@ title: "Buddhist Sites of Western India in the Aftermath of the Sātavāhana-Kś
 authors: ["David Efurd"]
 external_url: "https://doi.org/10.2143/JIABS.41.0.3285747"
 drive_links: ["https://drive.google.com/file/d/1nEOwcdm6Ai-J9wleih3vZ0xYN6TrS4rz/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/efurd-david_2018_western-india-in-the-aftermath.pdf"
 course: roots
 year: 2018
 volume: 41

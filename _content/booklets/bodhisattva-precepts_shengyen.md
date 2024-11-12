@@ -2,11 +2,11 @@
 title: "The Bodhisattva Precepts"
 authors: [sheng-yen]
 external_url: "https://www.shengyen.org/freebook/pdf/The_Bodhisattva_Precepts_Directions_to_Buddhahood.pdf"
-formats: [GBook, pdf, epub]
+formats: [pdf, epub, GBook]
 drive_links:
-  - "https://play.google.com/store/books/details?id=iZhABAAAQBAJ"
   - "https://drive.google.com/file/d/1fKsgBJ3uJnDLtwe0V6dqv_7YnVT5c02B/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1butT-MgVl6Hk78_gXFie2AhOadsJhxze.epub"
+  - "https://play.google.com/store/books/details?id=iZhABAAAQBAJ"
 olid: OL32173773M
 month: jul
 year: 2005

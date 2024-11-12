@@ -6,6 +6,8 @@ external_url: "https://quod.lib.umich.edu/a/ars/13441566.0050.017/--light-emitti
 source_url: "https://doi.org/10.3998/ars.13441566.0050.017"
 drive_links:
   - "https://drive.google.com/file/d/1r-vol2dwRRWT-pacyRZ-vh-BMdbgNMYv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wong-dorothy_2020_light-emitting-image-of-magadha-in-tang.pdf"
 status: featured
 course: medieval
 tags:

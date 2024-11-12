@@ -3,6 +3,8 @@ title: "Shedding Skins"
 authors: ["Scott Tussa"]
 year: 2019
 drive_links: ["https://drive.google.com/file/d/1kM6XhIujcWdm6IlS5tnldoTq3isb9j9J/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/tussa-scott_2019_shedding-skins.pdf"
 external_url: "https://web.archive.org/web/20201108014714/https://nalandainstitute.org/2019/01/10/shedding-skins-reflections-on-monastic-life-and-beyond/"
 tags:
   - disrobed

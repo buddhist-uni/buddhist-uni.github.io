@@ -5,6 +5,8 @@ authors:
 external_url: "https://wiswo.org/books/outk/"
 drive_links:
   - "https://drive.google.com/file/d/14nHdjHxiioTkaJX3LgdnpNAOFll2UnIV/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/brahm_2021_opening-up-to-kindfulness.pdf"
 course: buddhism
 tags:
   - karma

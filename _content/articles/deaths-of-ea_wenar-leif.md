@@ -6,6 +6,8 @@ external_url: "https://web.archive.org/web/20240417155142/https://www.wired.com/
 source_url: "https://www.wired.com/story/deaths-of-effective-altruism/"
 drive_links:
   - "https://drive.google.com/file/d/1EShacKWwv3ONaLM9vLT2qORBVV9P1Up_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wenar-leif_2024_deaths-of-ea.pdf"
 course: intellect
 status: featured
 tags:

@@ -4,10 +4,13 @@ authors:
   - jayasaro
 external_url: "https://media.amaravati.org/en/dhamma-books/without-and-within"
 drive_links:
-  - "https://play.google.com/store/books/details?id=kxFdDwAAQBAJ"
   - "https://drive.google.com/file/d/1pKYqXBo-S9nK3jKaYsyjm9rnMDqwI63l/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1sIVdD8PTd4CNkllVQCVA9SgYOQY5S6XR.epub"
-formats: [GBook, pdf, epub]
+  - "https://play.google.com/store/books/details?id=kxFdDwAAQBAJ"
+file_links:
+  - "smallpdfs/jayasaro_2013_without-and-within.pdf"
+  - "smallepubs/jayasaro_2013_without-and-within.epub"
+formats: [pdf, epub, GBook]
 course: theravada
 olid: OL32040958M
 status: featured

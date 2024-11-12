@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/wish-granting-king-of-jewels"
 drive_links:
   - "https://drive.google.com/file/d/10TmB67_kDCoe6LkpBHgwTm2HNeWxqzPt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mipham_2020_king-of-jewels.pdf"
 base_value: 0.2
 course: tantric
 tags:

@@ -2,6 +2,8 @@
 title: "The Bodhisattva's Confession of Downfalls"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/15NHI2Dra7V7WeoBQLEQ0mq8Zu7aV3CQm/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/lotsawa_2020_confession-of-downfalls.pdf"
 external_url: "https://www.lotsawahouse.org/words-of-the-buddha/confession-of-downfalls-nyingma"
 year: 2020
 translator: "Stefan Mang and Peter Woods"

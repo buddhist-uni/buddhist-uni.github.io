@@ -10,6 +10,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0110192"
 drive_links:
   - "https://drive.google.com/file/d/1MyzvCJ0yfE_Kf6WSfxl5kKFMmswCOIrB/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/tran-ulrich-s-et-al_2014_serenity-of-meditating-mind-cross.pdf"
 course: sati
 tags:
   - academic

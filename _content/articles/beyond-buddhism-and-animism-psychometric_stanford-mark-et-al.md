@@ -7,6 +7,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0226414"
 drive_links:
   - "https://drive.google.com/file/d/1N_yTHmNiXmL99SpdmLT7k8fTEbHrx47y/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/stanford-mark-et-al_2019_beyond-buddhism-and-animism-psychometric.pdf"
 course: burmese
 tags:
   - form

@@ -7,6 +7,8 @@ year: 2007
 month: feb
 drive_links:
   - "https://drive.google.com/file/d/1orB3hKmFvEZ7ZgamPKL34kCYshpIzVjw/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/appleton_2007_story-of-the-horse-king.pdf"
 course: roots
 tags:
   - rebirth-stories

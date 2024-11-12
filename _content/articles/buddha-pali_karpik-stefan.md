@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/191"
 drive_links:
   - "https://drive.google.com/file/d/1ZPiCDT-XUOyf3lp8RZ2FjX4oLdQDqIki/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/karpik-stefan_2019_buddha-pali.pdf"
 course: pali-language
 tags:
   - setting

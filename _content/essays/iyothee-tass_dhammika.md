@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/2020/05/10/iyothee-tass-hero-of-tamil-buddhism/"
 drive_links:
   - "https://drive.google.com/file/d/1owgWTuxOOV2GV55HNdz1rjl__QSSb7x6/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2020_iyothee-tass.pdf"
 status: featured
 course: ethics
 tags:

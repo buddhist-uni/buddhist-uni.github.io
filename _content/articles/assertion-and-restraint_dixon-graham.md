@@ -8,6 +8,8 @@ number: 1
 external_url: "https://doi.org/10.1558/bsrv.v32i1.28960"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1MVkuEENWxRRG8WTjZCtbp9MB1lsQlSSA/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/dixon-graham_2015_assertion-and-restraint.pdf"
 course: form
 tags:
   - medieval

@@ -5,6 +5,8 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/9285"
 drive_links:
   - "https://drive.google.com/file/d/1wZfDDuCynJEY9frIM8NGzoMvCE8dvTbx/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/garfield-jay_2010_to-be-a-bodhisattva.pdf"
 course: ethics
 tags:
   - mahayana

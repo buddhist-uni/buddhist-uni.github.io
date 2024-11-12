@@ -5,6 +5,8 @@ authors:
 external_url: "http://budblooms.org/2020/05/10/an-eye-transplant-and-a-pound-of-flesh/"
 drive_links:
   - "https://drive.google.com/file/d/11wZSTZPZFDBNU3hZ8C3HDyPk6XKTy22k/view?usp=sharing"
+file_links:
+  - "smallpdfs/dhammika_2020_eye-transplant-and-pound-of-flesh.pdf"
 course: rebirth-stories
 tags:
   - jataka

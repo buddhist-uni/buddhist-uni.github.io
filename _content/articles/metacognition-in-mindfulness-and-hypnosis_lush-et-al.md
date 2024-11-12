@@ -4,6 +4,8 @@ authors: ["Peter Lush", "Peter Naish", "Zoltan Dienes"]
 external_url: "https://academic.oup.com/nc/article-abstract/2016/1/niw007/2757127"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1lSjOGLi2nWMMk8AXYhiBt6CLFX87Igca/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/lush-et-al_2016_metacognition-in-mindfulness-and-hypnosis.pdf"
 year: 2016
 month: jun
 journal: "Neuroscience of Consciousness"

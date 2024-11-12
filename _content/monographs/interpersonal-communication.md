@@ -9,6 +9,8 @@ external_url: "https://socialsci.libretexts.org/Bookshelves/Communication/Interp
 source_url: "https://milnepublishing.geneseo.edu/interpersonalcommunication/front-matter/preface/"
 drive_links:
   - "https://drive.google.com/file/d/1Zfq5RHTjQjWxBWhEWKAtdrNn_Al25hUa/view?usp=drivesdk"
+file_links:
+  - "largefiles/interpersonal-communication.pdf"
 course: social
 year: 2020
 month: dec

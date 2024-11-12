@@ -6,6 +6,9 @@ external_url: "https://www.dhammatalks.org/ebook_index.html#RecognizingTheDhamma
 drive_links:
   - "https://drive.google.com/file/d/1LY1YNO0tIQBaGQyj-TGl6B7X4VgEm47N/view?usp=drive_link"
   - "https://obu.pages.dev/assets/epubs/1_qq9Xjb0GIyWcJWzw4TmKAQHNJkiPks5.epub"
+file_links:
+  - "smallpdfs/geoff_2013_recognizing-the-dhamma.pdf"
+  - "smallepubs/geoff_2013_recognizing-the-dhamma.epub"
 course: thought
 tags:
   - pali-canon

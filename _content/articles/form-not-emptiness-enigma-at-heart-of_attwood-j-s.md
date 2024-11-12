@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/164"
 drive_links:
   - "https://drive.google.com/file/d/1jHC1t0HHEnhtPvQ-z42gpAMiN9XcQZWf/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/attwood-j-s_2017_form-not-emptiness-enigma-at-heart-of.pdf"
 course: emptiness
 status: featured
 tags:

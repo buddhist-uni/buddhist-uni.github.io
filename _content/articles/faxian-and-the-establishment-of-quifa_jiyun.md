@@ -5,6 +5,8 @@ authors:
 external_url: "https://dx.doi.org/10.15239/hijbs.02.01.03"
 drive_links:
   - "https://drive.google.com/file/d/1stcZTu1C-O8f7MoBbBb8MZIuiw3ZMuao/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/jiyun_2019_faxian-and-the-establishment-of-quifa.pdf"
 course: pilgrimage
 tags:
   - faxian

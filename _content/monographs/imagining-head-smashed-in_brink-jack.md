@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.aupress.ca/books/120137-imagining-head-smashed-in/"
 drive_links:
   - "https://drive.google.com/file/d/1nFeDIzZeJ-DJ5riWnA33R1dcBA8PUQDx/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/brink-jack_2008_imagining-head-smashed-in.pdf"
 course: past
 tags:
   - native-america

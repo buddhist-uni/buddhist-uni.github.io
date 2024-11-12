@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/patrul-rinpoche/general-confession-outline"
 drive_links:
   - "https://drive.google.com/file/d/1cxD6nbmfT12hhCNxEJhoAK3N8zPl407m/view?usp=sharing"
+file_links:
+  - "smallpdfs/patrul_2007_outline-of-five-great-sages-confession.pdf"
 course: problems
 tags:
   - confession

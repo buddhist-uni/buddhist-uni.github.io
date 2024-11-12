@@ -6,6 +6,9 @@ external_url: "https://doi.org/10.1007/978-3-031-22813-1"
 drive_links:
   - "https://drive.google.com/file/d/16ZmoQ1dqjopwHscOwEOukM2zyJSGZIgp/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1WAdPr8K4bn6zXSCFtWnUVfMyxZSdSDsX/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/hard-mikael_2023_microhistories-of-technology.pdf"
+  - "smallepubs/hard-mikael_2023_microhistories-of-technology.epub"
 course: wider # maybe down to things?
 tags:
   - present

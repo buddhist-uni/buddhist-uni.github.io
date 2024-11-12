@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/indian-masters/shantideva/bodhicharyavatara-2"
 drive_links:
   - "https://drive.google.com/file/d/1rxMAEObvj5IxudmMgwCOTaHrVGuRtr49/view?usp=sharing"
+file_links:
+  - "smallpdfs/santideva_2007_bodhicaryavatara2.pdf"
 course: cosmology
 tags:
   - thought

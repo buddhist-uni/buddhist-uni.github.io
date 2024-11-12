@@ -7,6 +7,9 @@ external_url: "https://www.ancient-buddhist-texts.net/English-Texts/Jataka/000a.
 drive_links:
   - "https://drive.google.com/file/d/1jCMSHWaztJu8NEiL_XGdC1KXdGPnc0Ys/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1dl60oUmn0bw287Z2KANMMPBCD2hxZ2ky.epub"
+file_links:
+  - "smallpdfs/nidanakatha.pdf"
+  - "smallepubs/nidanakatha.epub"
 source_url: "https://archive.org/details/buddhistbirthsto01daviuoft/page/n3/mode/2up"
 publisher: "Trübner"
 address: "London"

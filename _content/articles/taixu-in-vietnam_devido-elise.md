@@ -6,6 +6,8 @@ external_url: "https://doi.org/10.5281/zenodo.1307112"
 source_url: "https://www.globalbuddhism.org/article/download/1155/990"
 drive_links:
   - "https://drive.google.com/file/d/1-6gPizbatlb1wPJzW93f1cfxTEFeesgr/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/devido-elise_2009_taixu-in-vietnam.pdf"
 journal: jgb
 year: 2009
 volume: 10

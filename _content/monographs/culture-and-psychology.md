@@ -7,6 +7,8 @@ authors:
 external_url: "https://open.maricopa.edu/culturepsychology/"
 drive_links:
   - "https://drive.google.com/file/d/19rxTepNwiKb1TRsXNzelbsRz7lznKAiO/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/culture-and-psychology.pdf"
 course: culture
 tags:
   - world

@@ -5,6 +5,8 @@ authors:
 external_url: "https://bswa.org/teaching/basic-method-meditation-ajahn-brahm/"
 drive_links:
   - "https://drive.google.com/file/d/1dc6DvlwtlSYgcOgg5tUGvJX8XHcTu1ZK/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/brahm_2017_basic-meditation-method.pdf"
 course: samatha
 tags:
   - sati

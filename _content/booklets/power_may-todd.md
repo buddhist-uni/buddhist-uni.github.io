@@ -7,6 +7,8 @@ source_url: "https://anarchiststudies.org/lexicon-pamphlet-series/lexicon-power/
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1P7GRTg6t_kxdP7spOh8q9P3mxdQBG0z2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/may-todd_2012_power.pdf"
 course: social
 tags:
   - monastic

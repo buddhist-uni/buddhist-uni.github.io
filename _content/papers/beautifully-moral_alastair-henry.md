@@ -6,6 +6,8 @@ authors:
 external_url: "https://www.jstor.org/stable/j.ctt1qnw8bs.9"
 drive_links:
   - "https://drive.google.com/file/d/1VVFhxL6rJrjOeEEG4IDavAuA2Cq72AwC/view?usp=sharing"
+file_links:
+  - "smallpdfs/alastair-henry_2017_beautifully-moral.pdf"
 course: theravada-roots
 tags:
   - pali-literature

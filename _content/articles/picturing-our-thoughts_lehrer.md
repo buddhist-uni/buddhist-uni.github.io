@@ -5,6 +5,8 @@ authors:
 external_url: "https://archive.boston.com/bostonglobe/ideas/articles/2008/08/17/picturing_our_thoughts/"
 drive_links:
   - "https://drive.google.com/file/d/13ku2DgQF39UqWghnlZVBtk0WQ5D_cpX_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lehrer_2008_picturing-our-thoughts.pdf"
 course: inner
 tags:
   - neuroscience

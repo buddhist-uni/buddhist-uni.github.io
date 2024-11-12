@@ -6,6 +6,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/"
 source_url: "https://www.science.org/doi/10.1126/science.1250830"
 drive_links:
   - "https://drive.google.com/file/d/1jlwt-f8LLxwkeCVKnVfMRJM5OwlonUf5/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wilson-et-al_2014_challenges-of-the-disengaged-mind.pdf"
 course: function
 base_value: 0.2
 status: featured

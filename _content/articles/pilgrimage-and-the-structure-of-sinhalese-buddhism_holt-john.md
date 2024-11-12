@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3286306&sid="
 drive_links:
   - "https://drive.google.com/file/d/143M8wF3GMrO0iohOmgh11BXxqfMNvtsL/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/holt-john_1982_pilgrimage-and-the-structure-of-sinhalese-buddhism.pdf"
 course: sangha
 tags:
   - pilgrimage

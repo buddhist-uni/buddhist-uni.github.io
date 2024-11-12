@@ -5,6 +5,8 @@ authors:
 external_url: "https://dx.doi.org/10.15239/hijbs.02.02.05"
 drive_links:
   - "https://drive.google.com/file/d/1YrdfJBgQnciL4ydvUQfK2rFVP_KN1RgM/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/penwell-cameron_2019_watanabe-kaigyoku.pdf"
 course: modern
 tags:
   - engaged

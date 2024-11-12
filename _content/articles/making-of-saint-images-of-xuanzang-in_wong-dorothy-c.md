@@ -6,6 +6,8 @@ external_url: "https://uva.theopenscholar.com/dorothy-wong/publications/making-s
 source_url: "https://doi.org/10.1179/152991002788193906"
 drive_links:
   - "https://drive.google.com/file/d/16Mu6FbJdGF126gYS1YZdQ88yDspsNlnO/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wong-dorothy-c_2002_making-of-saint-images-of-xuanzang-in.pdf"
 course: medieval
 tags:
   - bart

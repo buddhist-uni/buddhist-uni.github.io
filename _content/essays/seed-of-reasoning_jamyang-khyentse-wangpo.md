@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-wangpo/five-great-logical-arguments"
 drive_links:
   - "https://drive.google.com/file/d/1HkZDUaOTMvvu1SQEbBmsJmPDf_v46CxR/view?usp=sharing"
+file_links:
+  - "smallpdfs/jamyang-khyentse-wangpo_2018_seed-of-reasoning.pdf"
 course: emptiness
 tags:
   - philosophy

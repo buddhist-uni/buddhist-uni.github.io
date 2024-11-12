@@ -5,6 +5,9 @@ external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Abhidha
 drive_links:
   - "https://drive.google.com/file/d/1AYfwaQ69NwoRLSsHG_BOu2jfuU8bxqzf/view?usp=drivesdk"
   - "https://drive.google.com/file/d/12qd4vhrqcLDb77iQz6StK3fxiV7Wt19T/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/anandajoti_2011_abhidhammamatika.pdf"
+  - "smallepubs/anandajoti_2011_abhidhammamatika.epub"
 course: abhidhamma
 year: 2011
 olid: OL52477602M

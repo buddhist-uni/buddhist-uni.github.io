@@ -8,6 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/114KA1K88CXESVGpL56O-YAfTkklHJ-An/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1iBFmPeLG8tGsIL8sOOK4JTQmV1mlE4Xu.epub"
   - "https://drive.google.com/file/d/1e5SOczZ-vybSKa_4A4-jzExcOewYWNP8/view?usp=drive_link"
+file_links:
+  - "smallpdfs/jootla_1984_inspiration-from-enlightened-nuns.pdf"
+  - "smallepubs/jootla_1984_inspiration-from-enlightened-nuns.epub"
 formats: [pdf, epub, mp3]
 course: canonical-poetry # solid
 tags:

@@ -6,6 +6,8 @@ external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3293
 source_url: "https://doi.org/10.2143/JIABS.46.0.3293163"
 drive_links:
   - "https://drive.google.com/file/d/1PIdP_mLwGAFEyOObr2Yrlu5ZdQWrQjss/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/li-channa_2023_paradigm-for-schism.pdf"
 course: characters
 tags:
   - vinaya-pitaka

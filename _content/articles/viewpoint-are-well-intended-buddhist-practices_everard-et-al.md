@@ -8,6 +8,8 @@ authors:
 external_url: "https://onlinelibrary.wiley.com/doi/10.1002/aqc.2997"
 drive_links:
   - "https://drive.google.com/file/d/1U77GGYkQ5fpBgxpntHCFmid1RVXiveDt/view?usp=share_link"
+file_links:
+  - "smallpdfs/everard-et-al_2019_viewpoint-are-well-intended-buddhist-practices.pdf"
 formats: [pdf]
 course: nature
 tags:

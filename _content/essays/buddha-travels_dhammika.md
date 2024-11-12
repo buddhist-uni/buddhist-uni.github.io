@@ -2,6 +2,8 @@
 title: "A Study of the Buddha's Travels"
 authors: [dhammika]
 drive_links: ["https://drive.google.com/file/d/1aJxXC-PCwEbZGK6iPayhsanaLDyhDYig/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/dhammika_2011_buddha-travels.pdf"
 external_url: "https://budblooms.org/2020/04/03/a-study-of-the-buddhas-travels/"
 year: 2011
 olid: OL32058149M

@@ -9,6 +9,8 @@ volume: 2
 pages: "84--103"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1pUoGUVRdxwwFDbgB9J6Uoyq96-1akC1F/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/choong-mun-keat_2012_bala-samyutta-comparison.pdf"
 course: sa
 tags:
   - power

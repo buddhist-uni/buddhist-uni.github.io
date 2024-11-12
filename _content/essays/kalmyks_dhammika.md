@@ -6,6 +6,8 @@ external_url: "https://budblooms.org/2020/05/10/the-kalmyks-europes-only-native-
 source_url: "https://sdhammika.blogspot.com/2009/05/europes-native-buddhists.html?m=1"
 drive_links:
   - "https://drive.google.com/file/d/1BR4tz14Z8KVoVP3BQ7sCGzaya21ohpL0/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2009_kalmyks.pdf"
 course: west
 tags:
   - early-modern

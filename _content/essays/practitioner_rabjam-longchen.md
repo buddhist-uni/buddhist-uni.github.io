@@ -4,6 +4,8 @@ authors: ["Longchen Rabjam"]
 external_url: "https://www.lotsawahouse.org/tibetan-masters/longchen-rabjam/practitioner-meditation"
 drive_links:
   - "https://drive.google.com/file/d/1AhI6M4P3nAk54_6srVmhqDp5ZnziSd1N/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/rabjam-longchen_2000_practitioner.pdf"
 year: 2000
 translator: "Adam Pearcey"
 course: path

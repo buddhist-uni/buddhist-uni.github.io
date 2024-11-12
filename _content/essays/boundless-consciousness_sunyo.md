@@ -6,6 +6,8 @@ external_url: "https://wiswo.org/books/vasy/"
 source_url: "https://discourse.suttacentral.net/t/vinna-a-anidassana-the-state-of-boundless-consciousness/22262?u=khemarato.bhikkhu"
 drive_links: 
   - "https://drive.google.com/file/d/1npiMgDHeWzmT0S0EN3wuK1Klq6LrMg68/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sunyo_2021_boundless-consciousness.pdf"
 status: featured
 course: nibbana
 tags:

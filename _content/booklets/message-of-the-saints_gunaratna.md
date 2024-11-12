@@ -6,6 +6,9 @@ external_url: "https://www.bps.lk/olib/wh/wh135_Gunaratna_Message-of-the-Saints-
 drive_links:
   - "https://drive.google.com/file/d/1aSS7gD9gkVLtxYhu7ouVMZDlE1Nlor8P/view?usp=sharing"
   - "https://obu.pages.dev/assets/epubs/1yuUdaBIKuw64D7wT0ZiV7qRw_EZnOvqx.epub"
+file_links:
+  - "smallpdfs/gunaratna_1969_message-of-the-saints.pdf"
+  - "smallepubs/gunaratna_1969_message-of-the-saints.epub"
 course: canonical-poetry
 tags:
   - characters

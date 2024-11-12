@@ -4,6 +4,8 @@ authors: ["Véronique A. Taylor and others"]
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3541485/"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1axKZmdECyzihp6jCfSu3Nvk2FlW6Qedt/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/taylor-et-al_2013_impact-of-meditation-on-the-default-mode-network.pdf"
 journal: "Soc Cogn Affect Neurosci"
 year: 2013
 month: jan

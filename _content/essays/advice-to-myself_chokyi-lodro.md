@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/advice-to-self-song"
 drive_links:
   - "https://drive.google.com/file/d/1Gxihz5lTNNQcPAroAsysVCQfiCPFlsRC/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2021_advice-to-myself.pdf"
 course: problems
 tags:
   - refuge

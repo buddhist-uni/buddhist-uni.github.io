@@ -6,6 +6,8 @@ external_url: "https://budblooms.org/2020/05/11/the-first-yellow-robes-in-the-we
 source_url: "https://thinkworth.wordpress.com/2019/03/06/the-first-yellow-robes-in-the-west/"
 drive_links:
   - "https://drive.google.com/file/d/1B74kJSDJ63gXeO-eXO4r4oiLs_Ow8kk5/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2019_first-yellow-robes.pdf"
 course: west
 year: 2019 # unusually high confidence
 pages: 2

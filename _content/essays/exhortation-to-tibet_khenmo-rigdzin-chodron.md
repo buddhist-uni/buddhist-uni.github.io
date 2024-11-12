@@ -6,6 +6,8 @@ year: 2017
 translator: "Adam Pearcey"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1Z1srmvjZljAMjQYmRw5oyXPEpqxmfVTu/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/khenmo-rigdzin-chodron_2017_exhortation-to-tibet.pdf"
 course: lay
 tags:
   - tibetan

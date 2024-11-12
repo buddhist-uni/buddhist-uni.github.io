@@ -9,6 +9,8 @@ source_url: "https://doi.org/10.1007/s10745-015-9742-4"
 external_url: "https://link.springer.com/article/10.1007/s10745-015-9742-4"
 drive_links:
   - "https://drive.google.com/file/d/11UrbAK9ivjOfizrwgGMW5kh_qKBKu3g_/view?usp=share_link"
+file_links:
+  - "smallpdfs/woodhouse-et-al_2015_religious-relationships-with-the-environment.pdf"
 formats: [pdf]
 course: nature
 tags:

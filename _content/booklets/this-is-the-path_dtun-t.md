@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.abhayagiri.org/books/484-this-is-the-path"
 drive_links:
   - "https://drive.google.com/file/d/1CvH1BJg8at6GW7Ayo4RNhrm2aFflYZ_i/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dtun-t_2009_this-is-the-path.pdf"
 course: path
 tags:
   - thai-forest

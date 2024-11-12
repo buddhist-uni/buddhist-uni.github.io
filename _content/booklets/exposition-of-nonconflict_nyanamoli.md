@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1EuwnrT_pP9Y8D5_G0Z7OxaaepzdVPjhu/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1brQhpIjn0A7bFwbc6JhrEIjQcBdQn8bk.epub"
+file_links:
+  - "smallpdfs/nyanamoli_1979_exposition-of-nonconflict.pdf"
+  - "smallepubs/nyanamoli_1979_exposition-of-nonconflict.epub"
 course: ethics
 status: featured
 tags:

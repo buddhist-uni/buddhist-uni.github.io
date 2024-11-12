@@ -6,6 +6,9 @@ external_url: "https://www.are.na/block/12637399"
 drive_links:
   - "https://drive.google.com/file/d/1gqpTsCuzj9wCIyuKAmDAdtvLQKWJhx9i/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1rt2GuYhGM7AXOjj44LvsQze6K9Xadj5R.epub"
+file_links:
+  - "smallpdfs/steyerl-hito_2017_duty-free-art.pdf"
+  - "smallepubs/steyerl-hito_2017_duty-free-art.epub"
 course: present
 tags:
   - media

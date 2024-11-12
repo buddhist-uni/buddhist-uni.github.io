@@ -9,6 +9,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0246038"
 drive_links:
   - "https://drive.google.com/file/d/1jEcHUfs6n0CUOF062tM9IK4aXy0i0lqa/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/blasche-gerhard-et-al_2021_meditation-retreat-better-vacation.pdf"
 course: function
 tags:
   - meditation

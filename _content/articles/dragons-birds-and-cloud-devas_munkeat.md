@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/212/276"
 drive_links: 
   - "https://drive.google.com/file/d/1q5F4E_vPdHwFZQF0ECB-TyYN_Nsd3ljY/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/munkeat_2020_dragons-birds-and-cloud-devas.pdf"
 course: sa
 tags:
   - deva

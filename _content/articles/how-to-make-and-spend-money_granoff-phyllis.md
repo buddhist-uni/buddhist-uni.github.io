@@ -3,6 +3,8 @@ title: "How to Make and Spend Money: Some Stories from the Indian Classical Lite
 authors: ["Phyllis Granoff"]
 external_url: "https://dx.doi.org/10.15239/hijbs.02.02.03"
 drive_links: ["https://drive.google.com/file/d/163LlwAFSpMSErXtcDKuAeW6uzuWIr3VG/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/granoff-phyllis_2019_how-to-make-and-spend-money.pdf"
 journal: hijbs
 year: 2019
 volume: 2

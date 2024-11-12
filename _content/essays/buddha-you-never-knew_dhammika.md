@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/2020/04/03/the-buddha-you-never-knew/"
 drive_links:
   - "https://drive.google.com/file/d/1E_BywdigzEzLYVN2YJADdEtvrtxEpGyg/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2015_buddha-you-never-knew.pdf"
 course: form
 tags:
   - ebts

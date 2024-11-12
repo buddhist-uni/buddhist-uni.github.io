@@ -4,6 +4,9 @@ authors: [geoff]
 external_url: "https://www.dhammatalks.org/ebook_index.html#BuddhistRomanticism"
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1EYKZaLc3Lrhja1oN3MhZV0s-9YUacx_S/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1febgfEnuKg7XJeG2wFWjFcJ2KQV582lQ.epub"]
+file_links:
+  - "smallpdfs/geoff_2015_buddhist-romanticism.pdf"
+  - "smallepubs/geoff_2015_buddhist-romanticism.epub"
 olid: OL32035940M
 base_value: 2.8
 year: 2015

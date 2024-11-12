@@ -7,6 +7,8 @@ external_url: "https://standardebooks.org/ebooks/joseph-conrad/heart-of-darkness
 source_url: "https://www.gutenberg.org/ebooks/219"
 drive_links:
   - "https://obu.pages.dev/assets/epubs/1ZVc9DEvZhs-IOxqWmv3oLOdC6OwsfRMF.epub"
+file_links:
+  - "smallepubs/conrad_1899_heart-of-darkness.epub"
 formats: [epub]
 course: places
 tags:

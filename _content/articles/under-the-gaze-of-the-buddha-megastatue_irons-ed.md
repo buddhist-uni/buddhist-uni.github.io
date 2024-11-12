@@ -3,6 +3,8 @@ title: "Under the Gaze of the Buddha Mega-Statue: Commodification and Humanistic
 authors: ["Edward Irons"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/214/278"
 drive_links: ["https://drive.google.com/file/d/1ObnsKQbYZSpEYnfo13srNhkzLTCCseVC/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/irons-ed_2020_under-the-gaze-of-the-buddha-megastatue.pdf"
 course: modern
 year: 2020
 volume: 18

@@ -8,6 +8,8 @@ external_url: "https://doi.org/10.1073/pnas.2206992119"
 source_url: "https://doi.org/10.31234/osf.io/8uw7r"
 drive_links:
   - "https://drive.google.com/file/d/1b0jB6PqN0JuYIAfpN5Tdn0PYtotjQpTc/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/atir-stav-et-al_2022_talking-with-strangers-surprisingly.pdf"
 course: social
 tags:
   - learning

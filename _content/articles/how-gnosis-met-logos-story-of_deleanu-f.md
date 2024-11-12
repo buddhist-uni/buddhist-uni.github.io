@@ -5,6 +5,8 @@ authors:
 external_url: "http://id.nii.ac.jp/1153/00000475/"
 drive_links:
   - "https://drive.google.com/file/d/1HNUR2pnUXv5XYsvl2Qw8RjrxsjmA7FG8/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/deleanu-f_2019_how-gnosis-met-logos-story-of.pdf"
 course: epistemology
 status: featured
 tags:

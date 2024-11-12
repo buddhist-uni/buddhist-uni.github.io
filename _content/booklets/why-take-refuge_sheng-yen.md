@@ -5,11 +5,11 @@ authors:
 editor: "Harry Miller"
 translator: "Larry Liang and Guogu"
 external_url: "https://www.shengyen.org/freebook/pdf/Why_Take_Refuge_in_the_Three_Jewels.pdf"
-formats: [GBook, pdf, epub]
+formats: [pdf, epub, GBook]
 drive_links:
-  - "https://play.google.com/store/books/details?id=sZlABAAAQBAJ"
   - "https://drive.google.com/file/d/11GMsrV91y9qABxzzqsm2ah4Z1A75XMZ5/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1_VJdtLi42S6XDpUbRcmQYmnEIkGKR7qJ.epub"
+  - "https://play.google.com/store/books/details?id=sZlABAAAQBAJ"
 course: mahayana
 year: 2007
 olid: OL36138298M

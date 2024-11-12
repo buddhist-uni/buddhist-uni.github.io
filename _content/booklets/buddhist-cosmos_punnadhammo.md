@@ -5,6 +5,8 @@ authors:
 external_url: "https://arrowriver.ca/book/cosmoBook.php"
 drive_links:
   - "https://drive.google.com/file/d/1QIsNY0l3-f1EqjoQxeQ5GrWRjsGRrnnZ/view?usp=sharing"
+file_links:
+  - "smallpdfs/punnadhammo_2018_buddhist-cosmos.pdf"
 course: cosmology
 tags:
   - karma

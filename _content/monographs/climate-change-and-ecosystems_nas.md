@@ -6,6 +6,8 @@ authors:
 external_url: "https://nap.nationalacademies.org/25504"
 drive_links:
   - "https://drive.google.com/file/d/1RswcgeIEEbwPhpq5XmFeWRttV8WEkNP7/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nas_2019_climate-change-and-ecosystems.pdf"
 course: wider
 tags:
   - natural

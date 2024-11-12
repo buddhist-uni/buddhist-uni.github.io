@@ -5,6 +5,8 @@ authors:
 external_url: "http://ci.nii.ac.jp/naid/110002912920"
 drive_links:
   - "https://drive.google.com/file/d/1diE6e3zhAc5krUuoh3YQjlGOOixJxlz3/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kiyoyuki-koike_2003_relationship-btw-buddhist-monks-and-lay-in-cambodia.pdf"
 course: form
 tags:
   - cambodian

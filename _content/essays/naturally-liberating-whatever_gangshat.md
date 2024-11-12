@@ -7,6 +7,8 @@ editor: "Ward Brisick"
 source_url: "https://www.scribd.com/document/136905132/Khenpo-Gangshar-Naturally-Liberating-Whatever-You-Meet"
 drive_links:
   - "https://drive.google.com/file/d/1LVuCmr8tX8vyPWobItWOT6bkCLtYTfJV/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gangshat_2005_naturally-liberating-whatever.pdf"
 course: tantric
 tags:
   - meditation

@@ -5,6 +5,8 @@ authors:
 external_url: "https://journals.lww.com/invn/abstract/2014/12020/building_resilience_and_preventing_burnout_among.6.aspx"
 drive_links:
   - "https://drive.google.com/file/d/1MZbwFREKFCyVMhywN6nEC7ckU1TyohVu/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/pigni-alessandra_2014_building-resilience-preventing-burnout.pdf"
 course: engaged
 tags:
   - activism

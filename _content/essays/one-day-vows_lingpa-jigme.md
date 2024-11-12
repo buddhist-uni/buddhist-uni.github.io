@@ -7,6 +7,8 @@ editor: "Stefan Mang"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jigme-lingpa/one-day-vows"
 drive_links:
   - "https://drive.google.com/file/d/1Nn5T0NekYFFfYebOTnNWAoS_0YO5wfMJ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lingpa-jigme_2021_one-day-vows.pdf"
 course: tantric
 tags:
   - lay

@@ -9,6 +9,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8017692"
 source_url: "https://doi.org/10.1073/pnas.2008389118"
 drive_links:
   - "https://drive.google.com/file/d/1vQlskmDrrJvYHiWTro-m1HaSj7RYTOVi/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kubin-emily-et-al_2021_personal-experiences-bridge-moral-and.pdf"
 status: featured
 course: communication
 tags:

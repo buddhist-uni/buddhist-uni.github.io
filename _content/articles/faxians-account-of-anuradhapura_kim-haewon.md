@@ -5,6 +5,8 @@ authors:
 external_url: "https://dx.doi.org/10.15239/hijbs.02.01.05"
 drive_links:
   - "https://drive.google.com/file/d/1qcyDmtvO_TSmib_mxJTxIW0rheY5jtq-/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kim-haewon_2019_faxians-account-of-anuradhapura.pdf"
 course: form
 tags:
   - medieval

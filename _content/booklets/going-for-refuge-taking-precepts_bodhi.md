@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/15oxS2YQmuV4sgvSqYDFP9QI5SfSRHseb/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1a0sUWg0i1BZ58617t7_NTliqarfGYKUj.epub"
+file_links:
+  - "smallpdfs/bodhi_1981_going-for-refuge-taking-precepts.pdf"
+  - "smallepubs/bodhi_1981_going-for-refuge-taking-precepts.epub"
 course: sangha
 tags:
   - vinaya-studies

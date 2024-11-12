@@ -6,6 +6,8 @@ authors:
 external_url: "https://doi.org/10.26034/lu.jgb.2022.1992"
 drive_links:
   - "https://drive.google.com/file/d/1b-mACCdwpemyEXW52TNYT0YMrFlViVeP/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bao-willis_2022_appropriation-of-buddha.pdf"
 course: west
 tags:
   - intercultural

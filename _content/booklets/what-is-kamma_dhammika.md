@@ -5,6 +5,8 @@ authors:
 external_url: "https://bit.ly/what-is-kamma"
 drive_links:
   - "https://drive.google.com/file/d/1bAAtA9GjUNEw2YRDwvxAP0Uf7HZpX2QG/view?usp=sharing"
+file_links:
+  - "smallpdfs/dhammika_2015_what-is-kamma.pdf"
 course: karma
 tags:
   - rebirth

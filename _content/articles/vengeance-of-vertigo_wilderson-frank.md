@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.yorku.ca/intent/issue5/articles/frankbwildersoniii.php"
 drive_links: 
   - "https://drive.google.com/file/d/1Il_wotXj9xGBNoUSnVpzHMN5tvjBXPUh/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wilderson-frank_2011_vengeance-of-vertigo.pdf"
 course: violence-since-ww2
 tags:
   - activism

@@ -6,6 +6,8 @@ authors:
 external_url: "https://doi.org/10.1073/pnas.2107260119"
 drive_links:
   - "https://drive.google.com/file/d/1dhd89QBCqsMDCkpi1gqvCaVh6llI1eXi/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mastroianni-adam-et-al_2022_widespread-misperceptions-of-long-term.pdf"
 course: time
 tags:
   - mass-media # maybe move here?

@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?id=3285743&url=article"
 drive_links:
   - "https://drive.google.com/file/d/1hEjdes9bxF7odi2nHT77lePXXH9l_kjE/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dyer-alison_2018_female-authority.pdf"
 course: writing
 tags:
   - nyingma

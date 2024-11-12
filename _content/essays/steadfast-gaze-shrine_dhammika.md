@@ -6,6 +6,8 @@ external_url: "https://budblooms.org/2022/11/15/the-shrine-of-steadfast-gaze-whe
 source_url: "https://island.lk/where-is-animisa-cetiya/"
 drive_links:
   - "https://drive.google.com/file/d/1As5fP4Elih8uRF1FZnLPaceqxzCnGKE4/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_1991_steadfast-gaze-shrine.pdf"
 course: pilgrimage
 tags:
   - historiography

@@ -6,6 +6,9 @@ external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Got
 drive_links:
   - "https://drive.google.com/file/d/1V4gBxnvAGpVUBsDAxC_3pTCXjR0bLEvQ/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1pnNBaag625rbBTrK-Kv80XriRb95zke6.epub"
+file_links:
+  - "smallpdfs/anandajoti_2014_gotamisuttani.pdf"
+  - "smallepubs/anandajoti_2014_gotamisuttani.epub"
 course: nuns
 tags:
   - characters

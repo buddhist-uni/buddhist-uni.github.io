@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/166/203"
 drive_links:
   - "https://drive.google.com/file/d/1X-E_6vZjjDI8MEp1nmoRL72-l3Rq-FVH/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/victoria-brian_2017_samadhi-power-in-imperial-japan.pdf"
 course: samadhi
 tags:
   - roots

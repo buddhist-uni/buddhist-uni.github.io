@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/201/274"
 drive_links:
   - "https://drive.google.com/file/d/1VPFji1bximtZDz7DhM2LWyCH8ZAchMuz/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/carrera-oscar_2019_voices-of-buddhaghosa.pdf"
 status: featured
 course: theravada
 tags:

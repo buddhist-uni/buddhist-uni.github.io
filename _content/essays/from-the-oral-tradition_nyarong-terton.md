@@ -5,6 +5,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/yukhok-chatralwa/oral-tradition-of-the-nyarong-lama"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1BD49rhfsVr6Exk3oUXDa9S8eW2H3vHb-/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/nyarong-terton_2013_from-the-oral-tradition.pdf"
 course: daily-life
 status: featured
 subcat: poetry

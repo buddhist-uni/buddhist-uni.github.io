@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.14318/hau4.3.010"
 drive_links:
   - "https://drive.google.com/file/d/1CfqmjtAecDJiQ_0vDnQwmCDBXP8682Or/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/carrithers-michael_2014_anthropology-as-irony.pdf"
 status: featured
 course: intercultural
 tags:

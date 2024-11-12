@@ -5,6 +5,8 @@ authors:
 source_url: "https://dx.doi.org/10.2471/BLT.08.010108"
 drive_links:
   - "https://drive.google.com/file/d/1EoE0d8qYoM4Xf4I4B4ZLpjH-L4qBUvO1/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/treerutkuarkul_2008_thai-unsung-heroes.pdf"
 course: engaged
 tags:
   - thailand

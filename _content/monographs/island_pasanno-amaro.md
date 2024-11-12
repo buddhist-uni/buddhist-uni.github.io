@@ -8,6 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1UNqB7eMIgr7mPHzYuFuyJZKuAEGfPcIi/view?usp=drivesdk"
   - "https://obu.pages.dev/assets/epubs/1MUL3eTfof3h6k75QFo-QpsQfBzC5cT2w.epub"
   - "https://drive.google.com/drive/folders/1soL78LzsAk3BstvRy5VTA6QlgpYa1zVq"
+file_links:
+  - "smallpdfs/pasanno-amaro_2009_island.pdf"
+  - "smallepubs/pasanno-amaro_2009_island.epub"
 year: 2009
 month: nov
 publisher: amaravati
