@@ -1,5 +1,5 @@
 ---
-title: "AN 9.30: Getting Rid of Resentment"
+title: "AN 9.30 Āghāta Paṭivinaya Sutta: Getting Rid of Resentment"
 translator: sujato
 slug: "an.009.030"
 external_url: "https://suttacentral.net/an9.30/en/sujato"

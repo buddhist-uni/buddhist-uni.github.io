@@ -1,5 +1,5 @@
 ---
-title: "Iti 75: A Rainless Cloud"
+title: "Iti 75 Avuṭṭhika Sutta: A Rainless Cloud"
 slug: "iti075"
 translator: ireland
 external_url: "https://suttacentral.net/iti75/en/ireland"

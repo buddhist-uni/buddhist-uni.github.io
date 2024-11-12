@@ -1,5 +1,5 @@
 ---
-title: "Dhp 1–20: The Chapter of Pairs"
+title: "Dhp 1–20 Yamaka Vagga: The Chapter of Pairs"
 slug: "dhp01_suddhaso"
 translator: suddhaso
 external_url: "https://bhantesuddhaso.com/teachings/sutta/dhammapada-ch1-yamaka-vagga-annotated/"

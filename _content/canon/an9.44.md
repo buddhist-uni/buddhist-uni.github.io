@@ -1,5 +1,5 @@
 ---
-title: "AN 9.44: Freed by Wisdom"
+title: "AN 9.44 Paññā Vimutta Sutta: Freed by Wisdom"
 translator: sujato
 slug: "an.009.044"
 external_url: "https://suttacentral.net/an9.44/en/sujato"

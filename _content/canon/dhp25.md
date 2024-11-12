@@ -1,5 +1,5 @@
 ---
-title: "Dhp 25: The Monk"
+title: "Dhp 25 Bhikkhu Vagga: The Monk"
 external_url: "https://suttacentral.net/dhp360-382/en/buddharakkhita"
 translator: buddharakkhita
 formats: [pdf]

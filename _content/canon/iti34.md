@@ -1,5 +1,5 @@
 ---
-title: "Iti 34: Ardour"
+title: "Iti 34 Ātāpī Sutta: Ardour"
 slug: "iti034"
 translator: ireland
 external_url: "https://suttacentral.net/iti34/en/ireland"

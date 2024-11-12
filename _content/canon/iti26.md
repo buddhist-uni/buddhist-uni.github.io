@@ -1,5 +1,5 @@
 ---
-title: "Iti 26: Generosity"
+title: "Iti 26 Dāna Sutta: Generosity"
 slug: "iti026"
 translator: sujato
 external_url: "https://suttacentral.net/iti26/en/sujato"

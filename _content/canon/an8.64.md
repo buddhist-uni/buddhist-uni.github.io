@@ -1,5 +1,5 @@
 ---
-title: "AN 8.64: At Gāyā Head"
+title: "AN 8.64 Gayāsīsa Sutta: At Gāyā Head"
 slug: "an.008.064"
 translator: sujato
 external_url: "https://suttacentral.net/an8.64/en/sujato"
