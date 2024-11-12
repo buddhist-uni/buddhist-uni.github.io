@@ -1,0 +1,38 @@
+{%- assign primarytag = false -%}
+{%- assign ordinality = 9999 -%}
+{%- if include.item.course -%}
+  {%- for candidatecourse in site.courses -%}
+    {%- if include.item.course == candidatecourse.slug -%}
+      {%- capture primarytag -%}<a href="{{ candidatecourse.url }}">
+        <i class="{{ candidatecourse.icon }}"></i>
+        {{ candidatecourse.title | escape }}
+      </a>{%- endcapture -%}
+      {%- assign ordinality = forloop.index -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- unless primarytag -%}
+    {%- for candidatetag in site.tags -%}
+      {%- if candidatetag.slug == include.item.course -%}
+        {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
+          <i class="fas fa-tag"></i>
+          {{ candidatetag.title | escape }}
+        </a>{%- endcapture -%}
+        {%- assign ordinality = forloop.index | plus: site.courses.size -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+{%- endif -%}
+{%- unless primarytag -%}
+  {%- for candidatetag in site.tags -%}
+    {%- if include.item.tags contains candidatetag.slug -%}
+      {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
+        <i class="fas fa-tag"></i>
+        {{ candidatetag.title | escape }}
+      </a>{%- endcapture -%}
+      {%- assign ordinality = forloop.index | plus: site.courses.size -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}

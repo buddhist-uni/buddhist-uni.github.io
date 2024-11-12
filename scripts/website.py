@@ -94,13 +94,19 @@ class TagCollection():
   def get(self, tag: str):
     return self.tags.get(tag)
   def __iter__(self):
-    return iter(self.tags.values())
+    for filename in config['collections']['tags']['order']:
+      yield self.tags[filename[:-3]]
   def __len__(self):
     return len(self.tags)
   def __contains__(self, item):
     if isinstance(item, TagFile):
       return item.slug in self.tags
     return bool(self.get(item))
+
+content = []
+tags = TagCollection()
+authors = AuthorCollection()
+courses = []
 
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -138,9 +144,19 @@ class ContentFile(JekyllFile):
       return "YouTube (link)"
     return ""
 
-content = []
-tags = TagCollection()
-authors = AuthorCollection()
+  def primarytag_ordinality(self) -> tuple[str, int]:
+    """Mirrors the logic of _include/content_primarytag_ordinality.liquid"""
+    if self.course:
+      for idx, candidatecourse in enumerate(courses):
+        if self.course == candidatecourse.slug:
+          return (self.course, idx)
+    for idx, candidatetag in enumerate(tags):
+      if candidatetag.slug == self.course:
+        return (self.course, idx+len(courses))
+    for idx, candidatetag in enumerate(tags):
+      if candidatetag.slug in self.tags:
+        return (candidatetag.slug, idx+len(courses))
+    return (False, 9999)
 
 def entry_with_drive_id(gid):
   for entry in content:
@@ -174,6 +190,9 @@ def load():
   if content:
     return
   filecreationtimes.update(get_file_creation_times())
+  for filepath in root_folder.joinpath("_courses").rglob("*.md"):
+    courses.append(JekyllFile.load(filepath))
+  courses.sort(key=lambda c: c.created_at)
   for contentfolder in root_folder.joinpath('_content').iterdir():
     if (not contentfolder.is_dir()) or contentfolder.name.startswith('.'):
       continue

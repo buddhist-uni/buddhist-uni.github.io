@@ -35,44 +35,7 @@
           {%- include_cached content_authors_string.html authors=translators -%}
         {%- endif -%}
         </td>
-        {%- assign primarytag = false -%}
-        {%- assign ordinality = 9999 -%}
-        {%- if p.course -%}
-          {%- for candidatecourse in site.courses -%}
-            {%- if p.course == candidatecourse.slug -%}
-              {%- capture primarytag -%}<a href="{{ candidatecourse.url }}">
-                <i class="{{ candidatecourse.icon }}"></i>
-                {{ candidatecourse.title | escape }}
-              </a>{%- endcapture -%}
-              {%- assign ordinality = forloop.index -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {%- unless primarytag -%}
-            {%- for candidatetag in site.tags -%}
-              {%- if candidatetag.slug == p.course -%}
-                {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
-                  <i class="fas fa-tag"></i>
-                  {{ candidatetag.title | escape }}
-                </a>{%- endcapture -%}
-                {%- assign ordinality = forloop.index | plus: site.courses.size -%}
-                {%- break -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endunless -%}
-        {%- endif -%}
-        {%- unless primarytag -%}
-          {%- for candidatetag in site.tags -%}
-            {%- if p.tags contains candidatetag.slug -%}
-              {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
-                <i class="fas fa-tag"></i>
-                {{ candidatetag.title | escape }}
-              </a>{%- endcapture -%}
-              {%- assign ordinality = forloop.index | plus: site.courses.size -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endunless -%}
+        {%- include content_primarytag_ordinality.liquid item=p -%}
         <td data-order="{{ ordinality }}">
           {%- if primarytag -%}
             {{ primarytag }}

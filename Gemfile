@@ -20,7 +20,7 @@ gem "jekyll-sass-converter", ">= 3.0", "< 4.0"
 group :jekyll_plugins do
   gem "jekyll-feed", github: 'buddhist-uni/jekyll-feed', branch: 'collection-tags'
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", ref: '9d3cf62'
+  gem "jekyll-seo-tag", github: "buddhist-uni/jekyll-seo-tag", ref: '5a9a962'
   gem "jekyll-last-modified-at", github: "buddhist-uni/jekyll-last-modified-at", branch: 'post-date'
   gem 'jekyll-include-cache'
 end
