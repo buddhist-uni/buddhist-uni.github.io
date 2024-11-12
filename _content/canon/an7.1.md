@@ -1,5 +1,5 @@
 ---
-title: "AN 7.1: Pleasing"
+title: "AN 7.1 Paṭhamapiya Sutta: Pleasing"
 slug: "an.007.001"
 translator: sujato
 external_url: "https://sc.readingfaithfully.org/?q=an7.1"

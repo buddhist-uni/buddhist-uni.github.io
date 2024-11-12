@@ -1,5 +1,5 @@
 ---
-title: "AN 8.53: In Brief"
+title: "AN 8.53 Saṁkhitta Sutta: In Brief"
 slug: "an.008.053"
 external_url: "https://sc.readingfaithfully.org/?q=an8.53"
 source_url: "https://suttacentral.net/an8.53/en/sujato"

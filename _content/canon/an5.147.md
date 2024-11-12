@@ -1,5 +1,5 @@
 ---
-title: "AN 5.147: Gifts of a Bad Person"
+title: "AN 5.147 Asappurisa Dāna Sutta: Gifts of a Bad Person"
 slug: "an.005.147"
 external_url: "https://suttacentral.net/an5.147/en/sujato"
 translator: sujato

@@ -1,5 +1,5 @@
 ---
-title: "AN 5.162: Getting Rid of Resentment (2)"
+title: "AN 5.162 Dutiyaāghātapaṭivinaya Sutta: Getting Rid of Resentment (2)"
 slug: "an.005.162"
 external_url: "https://suttacentral.net/an5.162/en/sujato"
 translator: sujato

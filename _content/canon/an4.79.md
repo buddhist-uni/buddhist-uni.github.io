@@ -1,5 +1,5 @@
 ---
-title: "AN 4.79: Business"
+title: "AN 4.79 Vaṇijja Sutta: Business"
 slug: "an.004.079"
 translator: sujato
 external_url: "https://suttacentral.net/an4.79/en/sujato"

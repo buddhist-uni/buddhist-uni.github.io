@@ -1,5 +1,5 @@
 ---
-title: "AN 7.74: The Araka Sutta"
+title: "AN 7.74 Araka Sutta: About Araka"
 slug: "an.007.074"
 translator: sujato
 external_url: "https://suttacentral.net/an7.74/en/sujato"

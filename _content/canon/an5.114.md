@@ -1,5 +1,5 @@
 ---
-title: "AN 5.114 Andhakavinda Sutta"
+title: "AN 5.114 Andhakavinda Sutta: At Andhakavinda"
 translator: geoff
 slug: "an.005.114"
 source_url: "https://accesstoinsight.org/tipitaka/an/an05/an05.114.than.html"

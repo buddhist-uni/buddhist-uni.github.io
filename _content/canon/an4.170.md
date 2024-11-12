@@ -1,5 +1,5 @@
 ---
-title: "AN 4.170: In Conjunction"
+title: "AN 4.170 Yuganaddha Sutta: In Conjunction"
 slug: "an.004.170"
 external_url: "https://suttacentral.net/an4.170/en/sujato"
 translator: sujato

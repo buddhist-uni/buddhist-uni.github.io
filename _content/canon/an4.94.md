@@ -1,5 +1,5 @@
 ---
-title: "AN 4.94: Concentration (Tranquillity and Insight)"
+title: "AN 4.94 Samadhi Sutta: Concentration (Tranquillity and Insight)"
 translator: geoff
 external_url: "https://www.accesstoinsight.org/tipitaka/an/an04/an04.094.than.html"
 drive_links:

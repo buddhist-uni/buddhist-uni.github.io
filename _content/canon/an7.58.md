@@ -1,5 +1,5 @@
 ---
-title: "AN 7.58: Nothing to Hide"
+title: "AN 7.58 Arakkheyya Sutta: Nothing to Hide"
 slug: "an.007.058"
 translator: sujato
 external_url: "https://suttacentral.net/an7.58/en/sujato"

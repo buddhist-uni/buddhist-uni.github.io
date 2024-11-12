@@ -1,5 +1,5 @@
 ---
-title: "AN 5.34: With General Sīha"
+title: "AN 5.34 Sīhasenāpati Sutta: With General Sīha"
 translator: sujato
 slug: "an.005.034"
 drive_links: ["https://drive.google.com/file/d/1YGR99W65JvNYjaNwAOH7bveA7Ii4L8Q-/view?usp=drivesdk"]

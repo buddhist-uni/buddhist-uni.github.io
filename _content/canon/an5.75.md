@@ -1,5 +1,5 @@
 ---
-title: "AN 5.75: Warriors (1)"
+title: "AN 5.75 Paṭhamayodhājīva Sutta: Warriors (1)"
 slug: "an.005.075"
 external_url: "https://suttacentral.net/an5.75/en/sujato"
 translator: sujato

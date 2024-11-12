@@ -1,5 +1,5 @@
 ---
-title: "AN 3.68: Followers of Other Paths"
+title: "AN 3.68 Aññatitthiya Sutta: Followers of Other Religions"
 slug: "an.003.068"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1HT-s4MdPyu6IAtfLWe6Fq3UaFnqcZJXd"]

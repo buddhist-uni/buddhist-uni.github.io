@@ -1,5 +1,5 @@
 ---
-title: "AN 4.196: With Sāḷha"
+title: "AN 4.196 Sāḷha Sutta: With Sāḷha"
 translator: sujato
 slug: "an.004.196"
 source_url: "https://suttacentral.net/an4.196/en/sujato"

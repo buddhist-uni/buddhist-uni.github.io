@@ -1,5 +1,5 @@
 ---
-title: "AN 4.83: Where Criticism Takes You"
+title: "AN 4.83 Avaṇṇāraha Sutta: Where Criticism Takes You"
 slug: "an.004.083"
 translator: sujato
 external_url: "https://suttacentral.net/an4.83/en/sujato"

@@ -1,5 +1,5 @@
 ---
-title: "AN 3.42: Cases"
+title: "AN 3.42 Tiṭhāna Sutta: Cases"
 translator: bodhi
 slug: "an.003.042"
 formats: [pdf]

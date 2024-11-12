@@ -1,5 +1,5 @@
 ---
-title: "AN 3.70: Sabbath"
+title: "AN 3.70 Uposatha Sutta: Sabbath"
 slug: "an.003.070"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1SuJN2l8nIXxCOu91x_UUoEdW1Wzfq2TD/view?usp=drivesdk"]

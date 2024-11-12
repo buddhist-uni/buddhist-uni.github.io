@@ -1,5 +1,5 @@
 ---
-title: "AN 7.6: Wealth"
+title: "AN 7.6 Vitthatadhana Sutta: Wealth"
 slug: "an.007.006"
 translator: sujato
 external_url: "https://sc.readingfaithfully.org/?q=an7.6"

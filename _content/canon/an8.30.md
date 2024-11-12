@@ -1,5 +1,5 @@
 ---
-title: "AN 8.30: Anuruddha"
+title: "AN 8.30 Anuruddha Mahā Vitakka Sutta: Anuruddha"
 slug: "an.008.030"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.30/en/bodhi"

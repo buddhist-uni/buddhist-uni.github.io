@@ -1,5 +1,5 @@
 ---
-title: "AN 4.147: Times (2)"
+title: "AN 4.147 Dutiyakāla Sutta: Times (2)"
 slug: "an.004.147"
 translator: sujato
 source_url: "https://suttacentral.net/an4.147/en/sujato"

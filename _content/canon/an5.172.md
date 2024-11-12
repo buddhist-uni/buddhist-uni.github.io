@@ -1,5 +1,5 @@
 ---
-title: "AN 5.172: Assured"
+title: "AN 5.172 Visārada Sutta: Assured"
 slug: "an.005.172"
 external_url: "https://suttacentral.net/an5.172/en/sujato"
 translator: sujato

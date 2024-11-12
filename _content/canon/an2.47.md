@@ -1,5 +1,5 @@
 ---
-title: "AN 2.47: Two Assemblies (6)"
+title: "AN 2.47 Parisa Vagga (6): Two Assemblies"
 translator: sujato
 slug: "an.002.047"
 external_url: "https://suttacentral.net/an2.42-51/en/sujato?layout=plain&reference=none&notes=asterisk&highlight=false&script=latin#an2.47:1.0"

@@ -1,5 +1,5 @@
 ---
-title: "AN 3.66: The Sāḷha Sutta"
+title: "AN 3.66 Sāḷha Sutta: To Salha"
 slug: "an.003.066"
 translator: nyanamoli
 external_url: "https://suttacentral.net/an3.66/en/nyanamoli"

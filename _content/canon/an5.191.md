@@ -1,5 +1,5 @@
 ---
-title: "AN 5.191: Dogs"
+title: "AN 5.191 Soṇa Sutta: Dogs"
 slug: "an.005.191"
 external_url: "https://suttacentral.net/an5.191/en/sujato"
 translator: sujato

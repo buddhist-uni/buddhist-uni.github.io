@@ -1,5 +1,5 @@
 ---
-title: "AN 8.14: Wild Colts"
+title: "AN 8.14 Assakhaḷuṅka Sutta: Wild Colts"
 slug: "an.008.014"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.14/en/bodhi"

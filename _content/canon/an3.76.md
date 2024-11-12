@@ -1,5 +1,5 @@
 ---
-title: "AN 3.76: Continued Existence (1)"
+title: "AN 3.76 Paṭhamabhava Sutta: Continued Existence (1)"
 slug: "an.003.076"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/1GJNfehO78ZR11jqKQG_HoSLRtRp_0JvX/view?usp=drivesdk"]

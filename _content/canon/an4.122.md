@@ -1,5 +1,5 @@
 ---
-title: "AN 4.122: The Danger of Waves"
+title: "AN 4.122 Ūmibhaya Sutta: The Danger of Waves"
 slug: "an.004.122"
 translator: sujato
 external_url: "https://suttacentral.net/an4.122/en/sujato"

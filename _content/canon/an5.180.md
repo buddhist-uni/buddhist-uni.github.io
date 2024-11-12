@@ -1,5 +1,5 @@
 ---
-title: "AN 5.180: Gavesī"
+title: "AN 5.180 Gavesī Sutta: Gavesī"
 slug: "an.005.180"
 external_url: "https://suttacentral.net/an5.180/en/sujato"
 translator: sujato

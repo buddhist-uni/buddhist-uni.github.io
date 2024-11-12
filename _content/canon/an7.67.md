@@ -1,5 +1,5 @@
 ---
-title: "AN 7.67: The Simile of the Citadel"
+title: "AN 7.67 Nagaropama Sutta: The Simile of the Citadel"
 slug: "an.007.067"
 translator: sujato
 source_url: "https://suttacentral.net/an7.67/en/sujato"

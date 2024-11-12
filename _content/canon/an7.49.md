@@ -1,5 +1,5 @@
 ---
-title: "AN 7.49: Perceptions in Detail"
+title: "AN 7.49 Dutiyasaññā Sutta: Perceptions in Detail"
 translator: sujato
 slug: "an.007.049"
 external_url: "https://suttacentral.net/an7.49/en/sujato"

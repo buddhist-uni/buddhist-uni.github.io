@@ -1,5 +1,5 @@
 ---
-title: "AN 4.200: Love and Hate"
+title: "AN 4.200 Pema Sutta: Love and Hate"
 translator: sujato
 slug: "an.004.200"
 external_url: "https://suttacentral.net/an4.200/en/sujato"

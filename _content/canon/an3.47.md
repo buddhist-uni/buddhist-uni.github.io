@@ -1,5 +1,5 @@
 ---
-title: "AN 3.47: Characteristics of the (Un) Conditioned"
+title: "AN 3.47 Saṅkhatalakkhaṇa Sutta: Characteristics of the (Un) Conditioned"
 translator: sujato
 slug: "an.003.047"
 formats: [pdf]

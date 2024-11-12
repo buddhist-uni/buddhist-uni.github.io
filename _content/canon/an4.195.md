@@ -1,5 +1,5 @@
 ---
-title: "AN 4.195: Vappa"
+title: "AN 4.195 Vappa Sutta: With Vappa"
 slug: "an.004.195"
 external_url: "https://suttacentral.net/an4.195/en/sujato"
 translator: sujato

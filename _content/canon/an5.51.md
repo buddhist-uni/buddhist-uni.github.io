@@ -1,5 +1,5 @@
 ---
-title: "AN 5.51: Obstacles"
+title: "AN 5.51 Āvaraṇa Sutta: Obstructions"
 translator: sujato
 slug: "an.005.051"
 drive_links: ["https://drive.google.com/file/d/1RrMjXEDjVhJdzhipZU87-NblJPPoPdaG/view?usp=drivesdk"]

@@ -1,5 +1,5 @@
 ---
-title: "AN 3.72: A Disciple of the Ājīvakas"
+title: "AN 3.72 Ājīvaka Sutta: A Disciple of the Ājīvakas"
 slug: "an.003.072"
 translator: sujato
 drive_links: ["https://drive.google.com/file/d/14CR3xHUQ8F9BIVT8WyX14-tfjhuRWwVC"]

@@ -1,5 +1,5 @@
 ---
-title: "AN 4.45: The Rohitassa Sutta"
+title: "AN 4.45 The Rohitassa Sutta: To Rohatissa"
 slug: "an.004.045"
 translator: geoff
 formats: [pdf]

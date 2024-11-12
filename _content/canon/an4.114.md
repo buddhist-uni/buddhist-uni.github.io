@@ -1,5 +1,5 @@
 ---
-title: "AN 4.114: A Royal Elephant"
+title: "AN 4.114 Nāga Sutta: A Royal Elephant"
 slug: "an.004.114"
 translator: sujato
 external_url: "https://suttacentral.net/an4.114/en/sujato"

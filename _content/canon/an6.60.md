@@ -1,5 +1,5 @@
 ---
-title: "AN 6.60: Hatthisāriputta"
+title: "AN 6.60 Hatthisāriputta Sutta: With Hatthisāriputta"
 slug: "an.006.060"
 translator: sujato
 external_url: "https://suttacentral.net/an6.60/en/sujato"

@@ -1,5 +1,5 @@
 ---
-title: "AN 4.191: Followed by Ear"
+title: "AN 4.191 Sotānugata Sutta: Followed by Ear"
 slug: "an.004.191"
 external_url: "https://www.dhammatalks.org/suttas/AN/AN4_191.html"
 translator: geoff

@@ -1,5 +1,5 @@
 ---
-title: "AN 6.87: A Murderer"
+title: "AN 6.87 Voropita Sutta: A Murderer"
 slug: "an.006.087"
 translator: sujato
 external_url: "https://suttacentral.net/an6.87/en/sujato"

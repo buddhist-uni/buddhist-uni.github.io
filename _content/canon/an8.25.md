@@ -1,5 +1,5 @@
 ---
-title: "AN 8.25: Mahānāma"
+title: "AN 8.25 Mahānāma Sutta: Mahānāma"
 slug: "an.008.025"
 translator: bodhi
 external_url: "https://suttacentral.net/an8.25/en/bodhi"

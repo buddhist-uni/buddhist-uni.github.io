@@ -1,5 +1,5 @@
 ---
-title: "AN 5.26: Opportunities for Freedom"
+title: "AN 5.26 Vimuttāyatana Sutta: Opportunities for Freedom"
 translator: sujato
 slug: "an.005.026"
 drive_links: ["https://drive.google.com/file/d/1WAhX_rHkru3-eDt_UVlU7tBMX575RSdl/view?usp=drivesdk"]

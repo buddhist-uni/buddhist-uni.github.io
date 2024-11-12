@@ -1,5 +1,5 @@
 ---
-title: "AN 3.37: The Four Great Kings (1)"
+title: "AN 3.37 Catumahārāja Sutta: The Four Great Kings (1)"
 translator: sujato
 slug: "an.003.037"
 drive_links: ["https://drive.google.com/file/d/1ItnghnNn52u8jJefw0IUfEwfF_tUA_CB/view?usp=drivesdk"]

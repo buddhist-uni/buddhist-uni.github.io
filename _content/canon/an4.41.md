@@ -1,5 +1,5 @@
 ---
-title: "AN 4.41: Ways of Developing Immersion Further"
+title: "AN 4.41 Samādhibhāvanā Sutta: Ways of Developing Immersion Further"
 slug: "an.004.041"
 translator: sujato
 formats: [pdf]

@@ -1,5 +1,5 @@
 ---
-title: "AN 5.58: The Licchavi Youths"
+title: "AN 5.58 Licchavi Kumāraka Sutta: The Licchavi Youths"
 slug: "an.005.058"
 external_url: "https://suttacentral.net/an5.58/en/bodhi"
 translator: bodhi

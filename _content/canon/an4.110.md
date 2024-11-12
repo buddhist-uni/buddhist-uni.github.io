@@ -1,5 +1,5 @@
 ---
-title: "AN 4.110: Vipers"
+title: "AN 4.110 Āsīvisa Sutta: Vipers"
 slug: "an.004.110"
 translator: sujato
 external_url: "https://suttacentral.net/an4.110/en/sujato"
