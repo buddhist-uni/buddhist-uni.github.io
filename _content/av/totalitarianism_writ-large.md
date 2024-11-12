@@ -13,6 +13,7 @@ course: society # maybe up to social?
 tags:
   - present
   - politics
+  - totalitarianism
 year: 2022
 month: oct
 series: writ-large
