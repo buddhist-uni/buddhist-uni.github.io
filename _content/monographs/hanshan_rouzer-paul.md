@@ -11,8 +11,8 @@ olid: OL28356223M
 address: Berlin
 formats: [pdf, GBook]
 drive_links:
-  - "https://play.google.com/store/books/details?id=EvpDDQAAQBAJ"
   - "https://drive.google.com/file/d/1cVpEnsUUH3E6alHCrJEhe9Noj-k_ec-U/view?usp=drivesdk"
+  - "https://play.google.com/store/books/details?id=EvpDDQAAQBAJ"
 external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/27418/9781501501913.pdf"
 course: chan-lit
 status: featured
