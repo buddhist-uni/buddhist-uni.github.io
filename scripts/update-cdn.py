@@ -112,7 +112,11 @@ for item in website.content:
   upto_drive_link = 0
   drive_ids = dict()
   for i in range(len(item.drive_links)):
-    fmt = item.formats[i]
+    try:
+      fmt = item.formats[i]
+    except IndexError:
+      print(f"Not enough formats in {item.url}")
+      raise
     if fmt not in ARCHIVABLE_FORMATS:
       break
     if item.file_links and len(item.file_links) > i and "s/" not in item.file_links[i]:
@@ -211,7 +215,6 @@ for item, upto in candidates:
       new_name = f"small{fmt}s/{new_name}.{fmt}"
     destpath = args.dest / new_name
     if not destpath.exists():
-      print(f" Copying {new_name}")
       shutil.copy(fpath, destpath)
     new_file_links.append(new_name)
   item.file_links = new_file_links
@@ -232,7 +235,7 @@ for lf in folders:
   if totalsize == 0:
     print(f"No new files found in {lf}")
     continue
-  print("Will commit the following files:")
+  print(f"Will commit the following files to {lf}:")
   for f, s in files.items():
     print(f"  {os.path.basename(f)} ({format_size(s)})")
   print(f"Total size: {format_size(totalsize)}")
@@ -245,9 +248,25 @@ if prompt("Run rclone config?"):
 print("Alrighty then! Please provide:")
 configname = input_with_prefill("rclone config name: ", "r2")
 bucketname = input_with_prefill("bucket name: ", "large-public-downloadables")
-subprocess.run(["rclone", "copy", "--update", "--progress", str(args.dest / "largefiles"), f"{configname}:{bucketname}"])
+dryrunoutput = subprocess.run(
+  ["rclone", "copy", "--update", "--dry-run", str(args.dest / "largefiles"), f"{configname}:{bucketname}"],
+  capture_output=True,
+  text=True
+)
+if dryrunoutput.returncode:
+  print("There was an error running rclone")
+  print(dryrunoutput.stderr)
+  quit(dryrunoutput.returncode)
+if "0 B / 0 B" in dryrunoutput.stderr:
+  print("No files to copy!")
+else:
+  print("\n===DRY RUN===")
+  print(dryrunoutput.stderr)
+  input("\nPress enter to execute the above...")
+  subprocess.run(["rclone", "copy", "--update", "--progress", str(args.dest / "largefiles"), f"{configname}:{bucketname}"])
+  print("\n===Done uploading!===\n")
 
-print("\nDone copying!")
+# Find if there are any r2 files we can delete
 locals = subprocess.Popen(["ls", str(args.dest / "largefiles")], stdout=subprocess.PIPE)
 remotes = subprocess.Popen(
   ["rclone", "ls", "--exclude-from", "-", f"{configname}:{bucketname}"],

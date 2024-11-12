@@ -148,6 +148,7 @@ WHITELISTED_DOMAINS: !!set
   www.buddhanet.net: null
   www.buddhistelibrary.org: null
   www.buddhistische-gesellschaft-berlin.de: null
+  www.degruyter.com: null
   www.dhammatalks.org: null
   www.dhammathai.org: null
   www.dharmasite.net: null
@@ -170,6 +171,7 @@ WHITELISTED_DOMAINS: !!set
   www.shin-ibs.edu: null
   www.sirimangalo.org: null
   www.suanmokkh.org: null
+  www.taylorfrancis.com: null
   www.ucpress.edu: null
   www.un.org: null
   www.watpahnanachat.org: null
