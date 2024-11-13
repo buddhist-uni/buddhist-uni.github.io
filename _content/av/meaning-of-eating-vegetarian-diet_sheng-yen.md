@@ -5,6 +5,7 @@ authors:
 external_url: "https://www.youtube.com/watch?v=0mzZ6xAtarU"
 drive_links:
   - "https://drive.google.com/file/d/1GxvWWsDNReBPq1zAKwzcsc0h2KkESRmj/view?usp=drive_link"
+formats: [mp4]
 course: animals
 tags:
   - vegetarianism
