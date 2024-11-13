@@ -13,7 +13,7 @@ year: 2019
 olid: OL27337332M
 external_url: "https://direct.mit.edu/books/book-pdf/2418791/book_9780262353595.pdf"
 source_url: "https://doi.org/10.7551/mitpress/12108.001.0001"
-drive_links: ["https://drive.google.com/file/d/1nVHOalZbF0dUaCXULY-OzkHtgPb7XQDK/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1Ody7kwNISRqe_gkt2MJBQEsrW3CyVIov.epub"]
+drive_links: ["https://drive.google.com/file/d/1nVHOalZbF0dUaCXULY-OzkHtgPb7XQDK/view?usp=drivesdk", "https://drive.google.com/file/d/1Ody7kwNISRqe_gkt2MJBQEsrW3CyVIov/view?usp=drivesdk"]
 publisher: mit
 status: featured
 pages: 218

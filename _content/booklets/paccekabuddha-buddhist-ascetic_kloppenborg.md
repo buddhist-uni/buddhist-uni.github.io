@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh305_Kloppenborg_Paccekabuddha-Concept-In-Pali-Canon-Commentary.html"
 drive_links:
   - "https://drive.google.com/file/d/1TbJlTweArco_juAatQ9HTPRuTPObjLPH/view?usp=drive_link"
-  - "https://obu.pages.dev/assets/epubs/11dRjuzuyGSdUWz1X70Rk-QpePBYKSUF7.epub"
+  - "https://drive.google.com/file/d/11dRjuzuyGSdUWz1X70Rk-QpePBYKSUF7/view?usp=drivesdk"
 file_links:
   - "smallpdfs/kloppenborg_1983_paccekabuddha-buddhist-ascetic.pdf"
   - "smallepubs/kloppenborg_1983_paccekabuddha-buddhist-ascetic.epub"

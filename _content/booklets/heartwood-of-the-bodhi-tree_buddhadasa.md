@@ -4,7 +4,7 @@ authors: [buddhadasa]
 year: 1985
 formats: [epub]
 file_links: ["exclusive_01/Heartwood%20of%20the%20Bodhi%20Tree%20-%20Bhikkhu%20Buddhadasa.epub"]
-drive_links: ["https://obu.pages.dev/assets/epubs/1D62xMBpv35Eb7hG5b7xGDfSor6033oml.epub"]
+drive_links: ["https://drive.google.com/file/d/1D62xMBpv35Eb7hG5b7xGDfSor6033oml/view?usp=drivesdk"]
 publisher: "The Suan Usom Foundation"
 status: featured
 olid: OL8308477M

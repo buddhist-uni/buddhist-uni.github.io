@@ -3,7 +3,7 @@ title: "Selections from the Majjhima Nikāya"
 authors: [nyanamoli, bodhi]
 external_url: "https://readingfaithfully.org/selections-from-the-middle-length-discourses-free-kindle-epub-mobi/"
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1OEsr5Pp72PPQLQUYh0nuY4PooVqyyGUH/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1mHxKi-oeXFKOis2m-TwMP6VDFC_K7aRu.epub"]
+drive_links: ["https://drive.google.com/file/d/1OEsr5Pp72PPQLQUYh0nuY4PooVqyyGUH/view?usp=drivesdk", "https://drive.google.com/file/d/1mHxKi-oeXFKOis2m-TwMP6VDFC_K7aRu/view?usp=drivesdk"]
 file_links:
   - "smallpdfs/nyanamoli-bodhi_2018_mn-selections.pdf"
   - "smallepubs/nyanamoli-bodhi_2018_mn-selections.epub"

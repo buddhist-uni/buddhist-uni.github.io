@@ -6,7 +6,7 @@ formats: [GBook, PDFs, epub]
 drive_links:
   - "https://play.google.com/store/books/details?id=n-mWDwAAQBAJ"
   - "https://drive.google.com/file/d/1s3yzwEjcHxnozeo7JSi1PNdNxIyWjrJI/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1ApFIi6A_Zph1QhsnbYhZWFglT31wV_s9.epub"
+  - "https://drive.google.com/file/d/1ApFIi6A_Zph1QhsnbYhZWFglT31wV_s9/view?usp=drivesdk"
 year: 2019
 course: sn
 tags:

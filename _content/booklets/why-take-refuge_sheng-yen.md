@@ -8,7 +8,7 @@ external_url: "https://www.shengyen.org/freebook/pdf/Why_Take_Refuge_in_the_Thre
 formats: [pdf, epub, GBook]
 drive_links:
   - "https://drive.google.com/file/d/11GMsrV91y9qABxzzqsm2ah4Z1A75XMZ5/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1_VJdtLi42S6XDpUbRcmQYmnEIkGKR7qJ.epub"
+  - "https://drive.google.com/file/d/1_VJdtLi42S6XDpUbRcmQYmnEIkGKR7qJ/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=sZlABAAAQBAJ"
 course: mahayana
 year: 2007

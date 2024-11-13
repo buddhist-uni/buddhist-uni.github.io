@@ -6,7 +6,7 @@ year: 1880
 external_url: "https://www.ancient-buddhist-texts.net/English-Texts/Jataka/000a.htm"
 drive_links:
   - "https://drive.google.com/file/d/1jCMSHWaztJu8NEiL_XGdC1KXdGPnc0Ys/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1dl60oUmn0bw287Z2KANMMPBCD2hxZ2ky.epub"
+  - "https://drive.google.com/file/d/1dl60oUmn0bw287Z2KANMMPBCD2hxZ2ky/view?usp=drivesdk"
 file_links:
   - "smallpdfs/nidanakatha.pdf"
   - "smallepubs/nidanakatha.epub"

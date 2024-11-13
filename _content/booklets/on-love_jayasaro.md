@@ -3,7 +3,7 @@ title: "On Love"
 authors: [jayasaro]
 external_url: "https://media.amaravati.org/en/dhamma-books/on-love"
 formats: [epub, pdf]
-drive_links: ["https://obu.pages.dev/assets/epubs/1E6hazt7LfFGJXQ7270F2-_AX6n8_Pf-w.epub", "https://drive.google.com/file/d/1XaBJQoYPiHERWquTQupt70sABBIV91s8/view?usp=drivesdk"]
+drive_links: ["https://drive.google.com/file/d/1E6hazt7LfFGJXQ7270F2-_AX6n8_Pf-w/view?usp=drivesdk", "https://drive.google.com/file/d/1XaBJQoYPiHERWquTQupt70sABBIV91s8/view?usp=drivesdk"]
 file_links:
   - "smallepubs/jayasaro_2010_on-love.epub"
   - "smallpdfs/jayasaro_2010_on-love.pdf"

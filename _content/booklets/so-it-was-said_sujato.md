@@ -5,7 +5,7 @@ authors:
 external_url: "https://suttacentral.net/edition/iti/en/sujato?lang=en/"
 drive_links:
   - "https://drive.google.com/file/d/1j3cbmmDMQCVXLmnEhWwjFPxXSP_3DaLV/view?usp=drive_link"
-  - "https://obu.pages.dev/assets/epubs/1nI0nZaYl_qrZ84Z5CQUNLQY-7CH_0Z_A.epub"
+  - "https://drive.google.com/file/d/1nI0nZaYl_qrZ84Z5CQUNLQY-7CH_0Z_A/view?usp=drivesdk"
 course: iti
 year: 2020
 pages: 140

@@ -6,7 +6,7 @@ olid: OL31915058M
 formats: [pdf, epub, mp3s]
 drive_links:
   - "https://drive.google.com/file/d/1UNqB7eMIgr7mPHzYuFuyJZKuAEGfPcIi/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1MUL3eTfof3h6k75QFo-QpsQfBzC5cT2w.epub"
+  - "https://drive.google.com/file/d/1MUL3eTfof3h6k75QFo-QpsQfBzC5cT2w/view?usp=drivesdk"
   - "https://drive.google.com/drive/folders/1soL78LzsAk3BstvRy5VTA6QlgpYa1zVq"
 file_links:
   - "smallpdfs/pasanno-amaro_2009_island.pdf"

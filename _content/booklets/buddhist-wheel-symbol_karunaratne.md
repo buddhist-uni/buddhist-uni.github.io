@@ -3,7 +3,7 @@ title: "The Buddhist Wheel Symbol"
 authors: [karunaratne]
 external_url: "https://www.bps.lk/olib/wh/wh137_Karunaratne_The-Buddhist-Wheel-Symbol.html"
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1-d34015odzkyQH9yU8P0bjN5bD9NpRY2/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1DTuxnMTBuEuPL922f-NuCtjwYt9d6WPq.epub"]
+drive_links: ["https://drive.google.com/file/d/1-d34015odzkyQH9yU8P0bjN5bD9NpRY2/view?usp=drivesdk", "https://drive.google.com/file/d/1DTuxnMTBuEuPL922f-NuCtjwYt9d6WPq/view?usp=drivesdk"]
 file_links:
   - "smallpdfs/karunaratne_1969_buddhist-wheel-symbol.pdf"
   - "smallepubs/karunaratne_1969_buddhist-wheel-symbol.epub"

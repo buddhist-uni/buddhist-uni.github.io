@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh107_Ireland_Samyutta-Nikaya-Antholog
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Axm4SM4T4cR9UEIfzAYDOTjBjUWlbwww/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1aB46jh6INd0NHWe0NqkcYzKewn545LNT.epub"
+  - "https://drive.google.com/file/d/1aB46jh6INd0NHWe0NqkcYzKewn545LNT/view?usp=drivesdk"
 file_links:
   - "smallpdfs/ireland_1981_sn-anthology.pdf"
   - "smallepubs/ireland_1981_sn-anthology.epub"

@@ -7,7 +7,7 @@ alternate_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/173TzCeaj1HJ0R-b4p1dncNoUBJcbPpBF/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1DhJ_cFao8gcf2-t89KIjxIZSeSaV3UV8.epub"
+  - "https://drive.google.com/file/d/1DhJ_cFao8gcf2-t89KIjxIZSeSaV3UV8/view?usp=drivesdk"
 file_links:
   - "smallpdfs/nyanaponika_1959_anatta-nibbana.pdf"
   - "smallepubs/nyanaponika_1959_anatta-nibbana.epub"

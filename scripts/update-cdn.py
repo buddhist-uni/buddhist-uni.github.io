@@ -13,6 +13,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
+from filecmp import cmp as files_are_same
 
 import website
 import gdrive
@@ -241,8 +242,8 @@ for item, upto in candidates:
       if fmt == "pdf":
         small_pdf_canonical_urls.append((new_name.replace("smallpdfs", ""), item))
     destpath = args.dest / new_name
-    if not destpath.exists():
-      shutil.copy(fpath, destpath)
+    if not (destpath.exists() and files_are_same(fpath, destpath)):
+      shutil.copy2(fpath, destpath)
     new_file_links.append(new_name)
   item.file_links = new_file_links
   write_frontmatter_key(

@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh167_Gunaratna_Rebirth-Explained.html"
 drive_links:
   - "https://drive.google.com/file/d/1dV85oERNwcLpWKJi5ac0cXWCCXCv0Vee/view?usp=sharing"
-  - "https://obu.pages.dev/assets/epubs/1dFiujPy2TzWR-rAcUz49VvS6Wc9J55Fo.epub"
+  - "https://drive.google.com/file/d/1dFiujPy2TzWR-rAcUz49VvS6Wc9J55Fo/view?usp=drivesdk"
 file_links:
   - "smallpdfs/gunaratna_1971_rebirth-explained.pdf"
   - "smallepubs/gunaratna_1971_rebirth-explained.epub"

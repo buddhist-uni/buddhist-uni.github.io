@@ -8,7 +8,7 @@ source_url: "https://www.chancenter.org/chanctr/ddp/talks/meaningoflife.html"
 formats: [pdf, epub, GBook]
 drive_links:
   - "https://drive.google.com/file/d/1OGSDdXUDwiseQ0A8RTnTJ70ITbLWC8hy/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1zzNVlqAkht8hWce6SlnaYITT-CbUhluA.epub"
+  - "https://drive.google.com/file/d/1zzNVlqAkht8hWce6SlnaYITT-CbUhluA/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=-JhABAAAQBAJ"
 course: east-asian
 tags:

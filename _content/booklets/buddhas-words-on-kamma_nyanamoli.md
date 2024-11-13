@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh248_Nyanamoli_Buddhas-Words-On-Kamma.html"
 drive_links:
   - "https://drive.google.com/file/d/1fMhJb1rPPZoqRNojDwRKHsmt6cp89isU/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1Ny2GFbXmtaO180g1qVmwBlGCPnpK4P9f.epub"
+  - "https://drive.google.com/file/d/1Ny2GFbXmtaO180g1qVmwBlGCPnpK4P9f/view?usp=drivesdk"
 file_links:
   - "smallpdfs/nyanamoli_1977_buddhas-words-on-kamma.pdf"
   - "smallepubs/nyanamoli_1977_buddhas-words-on-kamma.epub"

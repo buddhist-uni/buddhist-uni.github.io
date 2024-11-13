@@ -6,7 +6,7 @@ year: 2020
 month: apr
 drive_links:
   - "https://drive.google.com/file/d/12cE6iZ-aQLclSjbt5ynaQSgETUqakpWT/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1OV0P3V-R4-ZOdgtJtCTZST1GLFWhfjs2.epub"
+  - "https://drive.google.com/file/d/1OV0P3V-R4-ZOdgtJtCTZST1GLFWhfjs2/view?usp=drivesdk"
 file_links:
   - "smallpdfs/karma-vibhanga.pdf"
   - "smallepubs/karma-vibhanga.epub"

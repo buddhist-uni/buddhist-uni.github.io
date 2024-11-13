@@ -5,7 +5,7 @@ external_url: "https://www.bps.lk/olib/wh/wh433_Bodhi_Buddha-and-His-Dhamma--Two
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/102SA3QPr5bdVRuYIcz2ZOvUmZ3XLzqPg/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1K1yZEvrTXdyW8_FyPapcWVQS7fClPPJ3.epub"
+  - "https://drive.google.com/file/d/1K1yZEvrTXdyW8_FyPapcWVQS7fClPPJ3/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-gg0OXcAK-e86Gu9cOZxmTy7ju7lDSYr/view?usp=drivesdk"
 file_links:
   - "smallpdfs/bodhi_1999_buddha-and-his-dhamma.pdf"

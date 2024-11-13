@@ -6,7 +6,7 @@ external_url: "https://media.amaravati.org/en/dhamma-books/the-four-noble-truths
 source_url: "https://www.abhayagiri.org/books/464-the-four-noble-truths"
 drive_links:
   - "https://drive.google.com/file/d/1_1UQ7aEF-a2VeJ-IUSUgcEGWwRZQE4tD/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1FpqFF2MAmpz55I2avOUtAKSJVbrV_jdt.epub"
+  - "https://drive.google.com/file/d/1FpqFF2MAmpz55I2avOUtAKSJVbrV_jdt/view?usp=drivesdk"
 file_links:
   - "smallpdfs/sumedho_1994_the-four-noble-truths.pdf"
   - "smallepubs/sumedho_1994_the-four-noble-truths.epub"

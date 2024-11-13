@@ -6,7 +6,7 @@ editor: "David McCarthy"
 external_url: "https://dharmaebooks.org/taking-refuge/"
 formats: [epub]
 drive_links:
-  - "https://obu.pages.dev/assets/epubs/1ultUikwfpcYol1Eue74TgkiNLisBvUjt.epub"
+  - "https://drive.google.com/file/d/1ultUikwfpcYol1Eue74TgkiNLisBvUjt/view?usp=drivesdk"
 file_links:
   - "smallepubs/karthar_2002_taking-refuge.epub"
 course: mahayana

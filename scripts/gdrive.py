@@ -73,10 +73,6 @@ def link_to_id(link):
     return ret
   if link.startswith("https://drive.google.com/open?id="):
     return link[len("https://drive.google.com/open?id="):].split('&')[0]
-  if link.startswith("https://obu.pages.dev/"):
-    ret = re.search(r'/([a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})\.', link)
-    if ret:
-      return ret.groups()[0]
   return None
 
 def folderlink_to_id(link):

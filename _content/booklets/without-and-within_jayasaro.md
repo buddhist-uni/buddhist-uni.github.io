@@ -5,7 +5,7 @@ authors:
 external_url: "https://media.amaravati.org/en/dhamma-books/without-and-within"
 drive_links:
   - "https://drive.google.com/file/d/1pKYqXBo-S9nK3jKaYsyjm9rnMDqwI63l/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1sIVdD8PTd4CNkllVQCVA9SgYOQY5S6XR.epub"
+  - "https://drive.google.com/file/d/1sIVdD8PTd4CNkllVQCVA9SgYOQY5S6XR/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=kxFdDwAAQBAJ"
 file_links:
   - "smallpdfs/jayasaro_2013_without-and-within.pdf"

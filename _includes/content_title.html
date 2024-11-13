@@ -17,5 +17,6 @@
 {%- endfor -%}
 {%- for link in c.drive_links -%}
   {%- assign linkfmt = c.formats[forloop.index0] -%}
+  {%- if linkfmt == 'epub' and c.file_links[forloop.index0] -%}{% continue %}{%- endif -%}
   <span class="inline_drive_link"> (<a target="_blank" {% include content_link_data_attributes.html content=c linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i>.{{ linkfmt }}</a>)</span>
 {%- endfor -%}</span>{%- endif -%}

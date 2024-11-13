@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/library-search-select.php?id=wh183"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1vgPPJ5vvFqe3iu92x4PMXkUQythoAjCf/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1yPNdewk0YkmJN9wJOMD33kH5JvhsbHaj.epub"
+  - "https://drive.google.com/file/d/1yPNdewk0YkmJN9wJOMD33kH5JvhsbHaj/view?usp=drivesdk"
 tags:
   - sn
 year: 1983

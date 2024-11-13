@@ -5,7 +5,7 @@ authors:
 external_url: "https://suttacentral.net/edition/snp/en/sujato?lang=en"
 drive_links:
   - "https://drive.google.com/file/d/1LuhQATRWA-2vSMNGss9hwz_s0QJ_buTg/view?usp=sharing"
-  - "https://obu.pages.dev/assets/epubs/1g70vmHqs8TrT97OmJH0ch3OpsKNIhT_n.epub"
+  - "https://drive.google.com/file/d/1g70vmHqs8TrT97OmJH0ch3OpsKNIhT_n/view?usp=drivesdk"
 course: snp
 tags:
   - sutta

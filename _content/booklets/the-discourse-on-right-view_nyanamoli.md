@@ -6,7 +6,7 @@ editor: bodhi
 external_url: "https://www.bps.lk/olib/wh/wh377_Nyanamoli_Discourse-on-Right-View--Sammaditthi-Sutta.html"
 drive_links:
   - "https://drive.google.com/file/d/1vNaEO6D35up3803sO9eqg8HSmJ1SdbVG/view?usp=drive_link"
-  - "https://obu.pages.dev/assets/epubs/1jRVsMvho4NHyuU57S6S_EUpkQ1SjY631.epub"
+  - "https://drive.google.com/file/d/1jRVsMvho4NHyuU57S6S_EUpkQ1SjY631/view?usp=drivesdk"
 file_links:
   - "smallpdfs/nyanamoli_1986_the-discourse-on-right-view.pdf"
   - "smallepubs/nyanamoli_1986_the-discourse-on-right-view.epub"

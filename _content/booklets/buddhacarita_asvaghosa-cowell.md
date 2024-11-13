@@ -8,7 +8,7 @@ external_url: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Bud
 source_url: "https://archive.org/details/buddhistmahynate0049unse/page/n9/mode/2up"
 drive_links: 
   - "https://drive.google.com/file/d/1Pji7Cox-eLA-CrHVr7Sr1q-Wvo1Q-xm3/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1pmTj4yCZMAPdcRMJggd1YFGcswKvVf-t.epub"
+  - "https://drive.google.com/file/d/1pmTj4yCZMAPdcRMJggd1YFGcswKvVf-t/view?usp=drivesdk"
 status: rejected
 reason: "BDK has a newer translation"
 tags:

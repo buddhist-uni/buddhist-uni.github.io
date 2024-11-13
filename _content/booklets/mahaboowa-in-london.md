@@ -8,7 +8,7 @@ external_url: "https://forestdhamma.org/ebooks/english/pdf/Acariya_Maha_Boowa_in
 source_url: "http://luangta.eu/site/books/book01_london.php"
 drive_links:
   - "https://drive.google.com/file/d/1hk2djcmhpVlkHrMqelTKbg-vqbhhrr6M/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1du6szNfF0xTJb_y1A6xJqKNs7ICbb4E4.epub"
+  - "https://drive.google.com/file/d/1du6szNfF0xTJb_y1A6xJqKNs7ICbb4E4/view?usp=drivesdk"
 course: west
 tags:
   - british

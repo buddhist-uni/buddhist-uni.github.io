@@ -6,7 +6,7 @@ external_url: "https://santifm.org/santipada/wp-content/uploads/2012/08/Sects__S
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ZS-a7fqBN77oRszQrmaCgAZQqF4pk_OT/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1z1rva-Q9g7hBadEB6gUhtq5rhurXdc72.epub"
+  - "https://drive.google.com/file/d/1z1rva-Q9g7hBadEB6gUhtq5rhurXdc72/view?usp=drivesdk"
 course: sects
 tags:
   - vinaya-controversies

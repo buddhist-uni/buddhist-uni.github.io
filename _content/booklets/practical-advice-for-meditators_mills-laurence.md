@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh116_Khantipalo_Practical-Advice-For-Meditators.html"
 drive_links:
   - "https://drive.google.com/file/d/1_M6MmbnmqSl8IKrIQ4tdKQxucJ4Xpdnh/view?usp=sharing"
-  - "https://obu.pages.dev/assets/epubs/1qCeu2Jt1mdSBtv-li4v3sL-E65FZlNX-.epub"
+  - "https://drive.google.com/file/d/1qCeu2Jt1mdSBtv-li4v3sL-E65FZlNX-/view?usp=drivesdk"
 file_links:
   - "smallpdfs/mills-laurence_1968_practical-advice-for-meditators.pdf"
   - "smallepubs/mills-laurence_1968_practical-advice-for-meditators.epub"

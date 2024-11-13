@@ -8,7 +8,7 @@ external_url: "https://www.degruyter.com/document/doi/10.1515/9783110734690/html
 formats: [pdf, epub, GBook]
 drive_links:
   - "https://drive.google.com/file/d/1238c214V3t8Wad7SXBk_EWB4dLYYjIRe/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1YJdZDIObLmLJZRknXkuhWoE39uWRkAPJ.epub"
+  - "https://drive.google.com/file/d/1YJdZDIObLmLJZRknXkuhWoE39uWRkAPJ/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=PV48EAAAQBAJ"
 file_links:
   - "smallpdfs/kroll-paul_2021_poetry-of-meng-haoran.pdf"

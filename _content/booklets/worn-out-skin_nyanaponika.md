@@ -5,7 +5,7 @@ authors:
 external_url: "https://accesstoinsight.org/lib/authors/nyanaponika/wheel241.html"
 drive_links:
   - "https://drive.google.com/file/d/1-PWuHR3LtFx32vXZxpdfsJQuwraNAQlA/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1RdPfXXfknTZNo_8h1SjWsjWZ0Lban4_4.epub"
+  - "https://drive.google.com/file/d/1RdPfXXfknTZNo_8h1SjWsjWZ0Lban4_4/view?usp=drivesdk"
 olid: OL4284371M
 year: 1977
 publisher: bps

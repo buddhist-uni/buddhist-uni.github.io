@@ -7,7 +7,7 @@ series: wheel
 number: 198
 external_url: "https://www.bps.lk/olib/wh/wh198_Horner_The-Noble-Quest--Ariyapariyesana-Sutta.html"
 formats: [pdf, epub]
-drive_links: ["https://drive.google.com/file/d/1v_Xun3tL1UwqqOra15g9afZRVhpr34_1/view?usp=drivesdk", "https://obu.pages.dev/assets/epubs/1zqsPGxvg9DIutuvGwhj2NJMNfUrqpPxB.epub"]
+drive_links: ["https://drive.google.com/file/d/1v_Xun3tL1UwqqOra15g9afZRVhpr34_1/view?usp=drivesdk", "https://drive.google.com/file/d/1zqsPGxvg9DIutuvGwhj2NJMNfUrqpPxB/view?usp=drivesdk"]
 tags:
   - form
   - pali-canon

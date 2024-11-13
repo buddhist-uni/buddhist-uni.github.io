@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.bps.lk/olib/wh/wh036_U_Chan_Htoon_Buddhism-and-the-Age-of-Science.html"
 drive_links:
   - "https://drive.google.com/file/d/1BTTnxsqlFxMfvY0y2iriFP7s4X2fUCYT/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/1jYErsVODliIZNXj8D9jzakJOLAnYOkgW.epub"
+  - "https://drive.google.com/file/d/1jYErsVODliIZNXj8D9jzakJOLAnYOkgW/view?usp=drivesdk"
 file_links:
   - "smallpdfs/u-chan-htoon_1962_buddhism-and-the-age-of-science.pdf"
   - "smallepubs/u-chan-htoon_1962_buddhism-and-the-age-of-science.epub"

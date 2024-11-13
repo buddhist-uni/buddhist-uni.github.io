@@ -6,7 +6,7 @@ external_url: "https://www.bps.lk/olib/wh/wh285_Jones_Buddhism-and-Social-Action
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1PrtQEGMbYjpVhKkc-hRmAhhPPX99zw_F/view?usp=drivesdk"
-  - "https://obu.pages.dev/assets/epubs/16kp-Q6EVsAAlMUJdO3ftuxq5TViEoifN.epub"
+  - "https://drive.google.com/file/d/16kp-Q6EVsAAlMUJdO3ftuxq5TViEoifN/view?usp=drivesdk"
 file_links:
   - "smallpdfs/jones-ken_1981_buddhism-and-social-action.pdf"
   - "smallepubs/jones-ken_1981_buddhism-and-social-action.epub"
