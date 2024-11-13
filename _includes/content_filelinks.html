@@ -13,7 +13,7 @@
         {%- for link in include.content.file_links -%}
             {%- assign bucket = link | split: "/" | first -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{% if bucket == "largefiles" %}https://cfr-cdn.buddhistuniversity.net/{{ link | remove_first: "largefiles/" }}{% else %}{{ site.data.content.filehost | append: link }}{% endif %}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
+            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{% if bucket == "smallpdfs" %}https://smallpdfs.buddhistuniversity.net/{{ link | remove_first: "smallpdfs/" }}{% elsif bucket == "largefiles" %}https://cfr-cdn.buddhistuniversity.net/{{ link | remove_first: "largefiles/" }}{% else %}{{ site.data.content.filehost | append: link }}{% endif %}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}

@@ -6,6 +6,7 @@
 {% endif %}
 {%- assign title = record.title | smartify | markdownify | strip_html | strip -%}
 {% if record.file_links[0] and record.file_links[0] != "" %}
+    {% comment %}No need to worry about CloudFlare hosted files here yet. Update if we ever host media files on R2{% endcomment %}
     {% assign rawfile = site.data.content.filehost | append: record.file_links[0] %}
     {% assign ext = rawfile | slice: -4,4 %}
 {% elsif record.external_url and external_url_supports_xorigin_embeds %}
