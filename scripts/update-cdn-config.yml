@@ -51,6 +51,75 @@ BLACKLISTED_DOMAINS: !!set
   www.vox.com: null
   www.wired.com: null
   wwzc.org: null
+REDIRECT_PDFS: !!set
+  /content/articles/early-development-of-buddhist-literature_cousins: null
+  /content/articles/engaged-buddhism_gleig-ann: null
+  /content/articles/engaged-buddhism_temprano-victor: null
+  /content/articles/epistemology-of-the-brahmajala-sutta_stephen-a-evans: null
+  /content/articles/how-gnosis-met-logos-story-of_deleanu-f: null
+  /content/articles/sal-an-alternative-buddhist-holy-tree_ireland: null
+  /content/articles/three-turnings_powers-john: null
+  /content/articles/to-be-or-not-to-be_gessen-masha: null
+  /content/booklets/buddhist-cosmos_punnadhammo: null
+  /content/booklets/ecocrisis-perspectives: null
+  /content/booklets/facing-the-future_bodhi: null
+  /content/booklets/footprints-in-the-dust_dhammika: null
+  /content/booklets/in-his-own-words_nyanamoli: null
+  /content/booklets/kalama-sutta-free-inquiry_soma-thera: null
+  /content/booklets/mindfulness_sumedho: null
+  /content/booklets/noble-strategy_geoff: null
+  /content/booklets/rebirth-explained_gunaratna: null
+  /content/booklets/refuge_geoff: null
+  /content/booklets/role-of-animals-in-indian-buddhism-with_diem-nguyen-thi: null
+  /content/booklets/sn-anthology_ireland: null
+  /content/booklets/sn-anthology_walshe: null
+  /content/booklets/the-discourse-on-right-view_nyanamoli: null
+  /content/booklets/thirty-seven-practices-of-a-bodhisattva: null
+  /content/booklets/this-is-the-path_dtun-t: null
+  /content/canon/bodhisattvamanyavali_atisha: null
+  /content/canon/book-of-the-discipline_horner: null
+  /content/canon/dn22: null
+  /content/canon/jataka-gatha-vannana: null
+  /content/canon/nidanakatha: null
+  /content/canon/patthana.paccayuddesaniddesa: null
+  /content/canon/t1586: null
+  /content/essays/abhidharma-praise_rongton: null
+  /content/essays/advice-to-gok-zangden_gangshar: null
+  /content/essays/beauty-of-sila_jayasaro: null
+  /content/essays/bodhicaryavatara-overview_zenkar: null
+  /content/essays/bringing-sickness-onto-the-path_changchup: null
+  /content/essays/buddha-you-never-knew_dhammika: null
+  /content/essays/karma-vibanga-reliefs-at-borobudur_anandajoti: null
+  /content/essays/naturally-liberating-whatever_gangshat: null
+  /content/essays/sankassa_dhammika: null
+  /content/essays/trekcho_mipham: null
+  /content/monographs/life-of-the-buddha_nyanamoli: null
+  /content/monographs/lost-kingdoms-hindu-buddhist-sculpture_guy-john: null
+  /content/monographs/metaphor-and-literalism_hwang-soonil: null
+  /content/monographs/miracle-of-mindfulness_tnh: null
+  /content/monographs/poetry-of-meng-haoran_kroll-paul: null
+  /content/monographs/similes-of-the-buddha_hecker: null
+  /content/monographs/what-the-buddha-taught_rahula-w: null
+  /content/reference/concise-pali-dictionary: null
+  /content/reference/pali-name-index: null
+SEARCHABLE_PDFS: !!set
+  /content/articles/early-buddhism-and-urban-revolution_gokhale: null
+  /content/articles/light-emitting-image-of-magadha-in-tang_wong-dorothy: null
+  /content/articles/origin-of-pali_norman: null
+  /content/articles/putting-smrti-back-into-sati-putting_levman-bryan: null
+  /content/articles/tantra_gray-david: null
+  /content/booklets/against-the-defilements_suchart: null
+  /content/booklets/arahattamagga-arahattaphala_mahabua: null
+  /content/booklets/buddha-and-his-dhamma_bodhi: null
+  /content/booklets/chinese-liturgy_stc: null
+  /content/booklets/gifts-he-left-behind_dun: null
+  /content/booklets/how-to-meditate_yuttadhammo: null
+  /content/booklets/htm2_yuttadhammo: null
+  /content/booklets/mn-selections_nyanamoli-bodhi: null
+  /content/booklets/satipatthana-vipassana_mahasi: null
+  /content/booklets/thai-chanting_anandajoti: null
+  /content/essays/mind-and-its-endless-rebirth_suchart: null
+  /content/monographs/nature-in-ebts_dhammika: null
 WHITELISTED_DOMAINS: !!set
   2012books.lardbucket.org: null
   academic.oup.com: null

@@ -16,8 +16,15 @@ selfhosted = [c for c in website.content if c.file_links]
 newlinks_to_content_paths = dict()
 for c in selfhosted:
   for l in c.file_links:
+    url = website.data.content['filehost']+l
+    bucket = l.split("/")[0]
+    match bucket:
+      case "smallpdfs":
+        url = "https://smallpdfs.buddhistuniversity.net/"+'/'.join(l.split("/")[1:])
+      case "largefiles":
+        url = "https://cfr-cdn.buddhistuniversity.net/"+'/'.join(l.split("/")[1:])
     newlinks_to_content_paths[
-      fully_encode_url(website.data.content['filehost']+l)
+      fully_encode_url(url)
     ] = c.content_path
 links_to_paths = json.loads(
   git_root_folder.joinpath('../analytics/data/content_paths.json').read_text()
@@ -34,7 +41,7 @@ json.dump(
 metadata = yaml.safe_load(
   git_root_folder.joinpath('../analytics/data/metadata.yaml').read_text()
 )
-metadata['content_buckets'] = website.data.content['valid_buckets']
+metadata['content_buckets'] = website.data.content['valid_buckets'] + ["cfr-cdn"]
 yaml.dump(
   metadata,
   open(str(git_root_folder.joinpath('../analytics/data/metadata.yaml')), 'w'),

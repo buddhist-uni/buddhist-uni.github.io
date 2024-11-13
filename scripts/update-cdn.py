@@ -3,11 +3,13 @@
 print("Initializing...")
 
 import argparse
+import csv
 import os.path
 import shutil
 import subprocess
 import yaml
 
+from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -34,9 +36,20 @@ from train_tag_predictor import (
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dest", type=Path, default=git_root_folder.joinpath("..").resolve())
+parser.add_argument("--reportcsv", type=Path)
 args = parser.parse_args()
 
+if not args.reportcsv:
+  print("Please download a copy of the related content report as a CSV from GA4, fix the header so it's a real CSV and then pass it in as --reportcsv")
+  exit(1)
+
 print("Loading the website data...")
+reportreader = csv.DictReader(args.reportcsv.open('r'))
+revenue_per_url = defaultdict(float)
+for row in reportreader:
+  path = urlparse(row['Page referrer']).path
+  revenue_per_url[path] += float(row['Item revenue'])
+
 website.load()
 
 CFP_SIZE_LIMIT = 26214400 # 25MiB
@@ -89,6 +102,16 @@ class CFPCDNBuilderConfig:
     return domain in self._data["BLACKLISTED_DOMAINS"]
   def is_domain_whitelisted(self, domain: str) -> bool:
     return domain in self._data["WHITELISTED_DOMAINS"]
+  def is_searchable_pdf(self, slug: str) -> bool:
+    return slug in self._data["SEARCHABLE_PDFS"]
+  def is_redirect_pdf(self, slug: str) -> bool:
+    return slug in self._data["REDIRECT_PDFS"]
+  def mark_pdf_good(self, slug: str) -> None:
+    self._data["SEARCHABLE_PDFS"].add(slug)
+    self.save()
+  def mark_pdf_for_redirect(self, slug: str) -> None:
+    self._data["REDIRECT_PDFS"].add(slug)
+    self.save()
 
 APP_CONFIG = CFPCDNBuilderConfig(CONFIG_PATH)
 
@@ -175,6 +198,8 @@ print("Copying files and setting file_links...")
 #      copy to args.dest with the flipped name
 #      and set the file_link appropriately
 
+small_pdf_canonical_urls = list() # of (filename, canonurl)
+
 for item, upto in candidates:
   domain = urlparse(item.external_url or item.source_url).netloc
   if APP_CONFIG.is_domain_blacklisted(domain):
@@ -213,6 +238,8 @@ for item, upto in candidates:
       new_name = f"mediumfiles/{new_name}.{fmt}"
     else:
       new_name = f"small{fmt}s/{new_name}.{fmt}"
+      if fmt == "pdf":
+        small_pdf_canonical_urls.append((new_name.replace("smallpdfs", ""), item))
     destpath = args.dest / new_name
     if not destpath.exists():
       shutil.copy(fpath, destpath)
@@ -227,6 +254,31 @@ for item, upto in candidates:
 print("Done!")
 
 # Commit the changes to the git repos
+
+# First we add the canonical rel link headers to as many of the smallpdfs as we can
+small_pdf_canonical_urls.sort(key=lambda t: revenue_per_url[t[1].url] + (t[1].download_count * 0.01), reverse=True)
+headerrules = []
+for filename, item in small_pdf_canonical_urls:
+  url = item.url
+  if APP_CONFIG.is_searchable_pdf(url):
+    continue
+  if len(headerrules) >= 100: # CFPages has a 100 rule limit for _headers
+    break
+  if not APP_CONFIG.is_redirect_pdf(url):
+    if revenue_per_url[url] > 1.0:
+      if prompt(f"Is the PDF for {website.baseurl}{url} good enough to feature on Google?", default='n'):
+        APP_CONFIG.mark_pdf_good(url)
+        continue
+      else:
+        APP_CONFIG.mark_pdf_for_redirect(url)
+    else: # if not much revenue anyway, just use the "featured" value as a proxy and don't waste my time asking
+      if item.status == "featured":
+        continue
+  headerrules.append(f"""{filename}
+  Link: <{website.baseurl}{url}>; rel="canonical"
+""")
+(args.dest / "smallpdfs" / "_headers").write_text("\n".join(headerrules))
+
 folders = [f"small{fmt}s" for fmt in ARCHIVABLE_FORMATS.keys()] + ["mediumfiles"]
 for lf in folders:
   folder = (args.dest / lf)
