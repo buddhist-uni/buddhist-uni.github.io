@@ -6,11 +6,7 @@ external_url: "https://stonerecords.co.uk/album/ronald-corp-songs-of-the-elder-s
 drive_links:
   - "https://drive.google.com/file/d/1wqARjh1bZG0zZjdve4428ezWqkIlkNQE/view?usp=sharing"
 course: tg
-tags:
-  - poetry
-  - pali-canon
 year: 2013
-publisher: "Stone Records"
 pages: 12 
 ---
 
