@@ -13,6 +13,7 @@ tags:
 year: 2022
 month: aug
 pages: 163
+source_url: "https://suttacentral.net/thig"
 ---
 
 This translation of the Therīgāthā, by Ayya Soma, was deliberately undertaken without consulting any of the traditional commentaries. Instead, it relies solely on the original Pāli text of the poems to determine context and select terminology. Each verse is present in the original Pāli and English translation.Description
