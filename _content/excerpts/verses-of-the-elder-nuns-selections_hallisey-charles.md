@@ -12,7 +12,10 @@ tags:
 year: 2018
 month: jun
 pages: 24
+booktitle: "Therigatha: Poems of the First Buddhist Women"
+publisher: "Harvard university press"
+address: "Cambridge, MA"
 ---
 
-A selection of poems from the Therīgāthā, translated by Charles Hallisey. These selcetions were part of a  2018 retreat given at Spirit Rock by Jetsunma Tenzin Palmo,
+A selection of poems from the Therīgāthā, translated by Charles Hallisey. These selections were part of a 2018 retreat given at Spirit Rock by Jetsunma Tenzin Palmo,
 Ayya Anandabodhi, and Ayya Sanyacitta.
