@@ -26,18 +26,40 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <h2 id="latest"><i class="fas fa-clock"></i> Latest Arrivals</h2>
 <p>Just added to the library:</p>
 {% assign newc = allcontent | sort: "date" | reverse | slice: 0, 10 %}
+{%- assign copycontent = allcontent -%}
+{%- assign allcontent = '' | split: '' -%}
+{%- for c in copycontent -%}
+  {%- unless newc contains c -%}
+    {%- assign allcontent = allcontent | push: c -%}
+  {%- endunless -%}
+{%- endfor -%}
 {% for c in newc %}
 <div class="mb-3">{% include simple_content_title.html content=c %}<ul><li>Added {{ c.date | date_to_long_string: "ordinal" }}</li></ul></div>
 {% endfor %}
-<p>...  To continue, see <a href="/content/all/?n=10&order=5.desc&cols=0.3.5">the content table, sorted by date</a>.</p>
+<p>...  To continue, see <a href="/content/all/?n=10&order=5.desc&cols=0.3.5">the content table, sorted by date</a> or consider subscribing to <a href="/feed/content.xml">the RSS feed</a>.</p>
 {% endif %}
 
-{% assign allcontent = allcontent | where: "status", "featured" %}
-{% assign courses = site.courses | map: "slug" %}
-{% assign tags = site.tags | where: "status", "published" | map: "slug" | concat: courses %}
-{% assign thisyears = allcontent | where: "year", thisyear | where_exp: "c", "tags contains c.course" %}
-{% assign lastyears = allcontent | where: "year", lastyear | where_exp: "c", "tags contains c.course" %}
-{% assign featurecontent = lastyears  | concat: thisyears %}
+{%- assign worldcanary = site.content | find: "slug", "art-of-being-human_wesch-m" -%}
+{%- include content_primarytag_ordinality.liquid item=worldcanary -%}
+{%- assign secularordinality = ordinality -%}
+{%- comment -%}Note that `thisyear` is a string and so cannot be compared to c.year{%- endcomment -%}
+{%- assign recentcontent = allcontent | where_exp: "c", "c.year >= lastyear" -%}
+{%- assign tags = site.tags | where: "status", "published" | map: "slug" -%}
+{%- assign courses = site.courses | map: "slug" | concat: tags -%}
+{%- comment -%}For the last 2 years we want to show content that is either:
+    - Featured AND in a published tag
+    - or is about Buddhism AND was published this year
+{%- endcomment -%}
+{%- assign featurecontent = recentcontent | where: "status", "featured" | where_exp: "c", "courses contains c.course" -%}
+{%- for c in recentcontent -%}
+  {%- if c.status == "featured" -%}{%- continue -%}{%- endif -%}
+  {%- unless c.course -%}{% continue %}{%- endunless -%}
+  {%- unless c.year > lastyear -%}{% continue %}{%- endunless -%}
+  {%- include content_primarytag_ordinality.liquid item=c -%}
+  {%- if ordinality >= secularordinality -%}{% continue %}{%- endif -%}
+  {%- assign featurecontent = featurecontent | push: c -%}
+{%- endfor -%}
+{%- assign featurecontent = featurecontent | sort: "date" | reverse -%}
 <h2 id="recent"><i class="fas fa-calendar-week"></i> Recently Published</h2>
 <p>Within the last couple years.</p>
 {% for c in featurecontent %}
