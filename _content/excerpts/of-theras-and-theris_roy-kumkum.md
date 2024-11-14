@@ -2,6 +2,7 @@
 title: "Of Theras and Therīs: Visions of liberation in the Early Buddhist Tradition"
 authors:
   - "KumKum Roy"
+external url: "http://14.139.58.200/ojs/index.php/shss/article/view/591/560"
 drive_links:
   - "https://drive.google.com/file/d/1k79UxZwl7sqXs94iAWzfrJ_1xdRW80OG/view?usp=sharing"
 status: featured
@@ -17,4 +18,4 @@ booktitle: "The Power of Gender and the Gender of Power: Explorations in Early I
 pages: "17--37" 
 ---
 
-In this chapter, KumKum Roy examines both scholastic and gender-related themes in the Theragāthā and Therīgāthā of the Khuddaka Nikāya, exploring concepts such as gender, renunciation, and transcendence.
+In this chapter, KumKum Roy examines both scholastic and gender-related themes in the Theragāthā and Therīgāthā of the Khuddaka Nikāya. Other themes that are explored include renunciation and transcendence.
