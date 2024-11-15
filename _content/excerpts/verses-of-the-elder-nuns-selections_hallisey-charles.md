@@ -1,5 +1,5 @@
 ---
-title: "Therigatha Verses of the Elder Nuns Selections"
+title: "Selected Verses of the Elder Nuns"
 authors:
   - hallisey-charles
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2018/07/therigatha.pdf"
@@ -13,9 +13,9 @@ year: 2018
 month: jun
 pages: 24
 booktitle: "Therigatha: Poems of the First Buddhist Women"
-publisher: "Harvard university press"
+publisher: "Harvard UP"
 address: "Cambridge, MA"
 ---
 
-A selection of poems from the Therīgāthā, translated by Charles Hallisey. These selections were part of a 2018 retreat given at Spirit Rock by Jetsunma Tenzin Palmo,
+A selection of poems from the Therīgāthā, translated by Charles Hallisey. These selections were part of a 2018 retreat given at Spirit Rock led by Jetsunma Tenzin Palmo,
 Ayya Anandabodhi, and Ayya Sanyacitta.
