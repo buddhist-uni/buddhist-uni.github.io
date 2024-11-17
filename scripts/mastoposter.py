@@ -9,7 +9,37 @@ import re
 import os
 from urllib.parse import urlparse
 
+from atproto_client import Client as BskyClient
+from atproto import models as BskyModels
+BskyLinkCard = BskyModels.AppBskyEmbedExternal.Main
+BskyLinkDetails = BskyModels.AppBskyEmbedExternal.External
+BskyTextFacet = BskyModels.AppBskyRichtextFacet.Main
+BskyHashtag = BskyModels.AppBskyRichtextFacet.Tag
+BskyByteRange = BskyModels.AppBskyRichtextFacet.ByteSlice
+
 import website
+
+def create_bsky_embed(page: website.ContentFile) -> BskyLinkCard:
+  return BskyLinkCard(
+    external=BskyLinkDetails(
+      title=page.title.replace('*', ''),
+      description=page.content.lstrip().split("\n\n")[0].rstrip(),
+      uri=website.baseurl+page.url,
+    )
+  )
+
+def hashtag_facets_for_text(text: str) -> list[BskyTextFacet]:
+  ret = []
+  tbytes = text.encode()
+  # The `index` takes byte ranges
+  # so we have to handle the string as bytes
+  # rather than as a unicode string
+  for t in re.finditer(rb"#(\w+)", tbytes):
+    ret.append(BskyTextFacet(
+      features=[BskyHashtag(tag=t.group(1).decode())],
+      index=BskyByteRange(byteStart=t.start(), byteEnd=t.end())
+    ))
+  return ret
 
 def write_post_title(page: website.ContentFile) -> str:
   title = page.title
@@ -146,7 +176,7 @@ def write_tags_for_item(page: website.ContentFile) -> list[str]:
       ret.append("FridayReads")
   return [t.replace("Roots", "History") for t in ret]
 
-def write_post_for_item(page: website.ContentFile) -> str:
+def write_post_for_item(page: website.ContentFile, include_link=True) -> str:
   title = write_post_title(page)
   length = length_of_item(page)
   emoji, category = get_category_for_item(page)
@@ -158,10 +188,12 @@ def write_post_for_item(page: website.ContentFile) -> str:
   else:
     year = f" from {page.year}"
     adjectives = "free"
-  return f"""{emoji} {title} (A {adjectives}{length}{category}{year})
+  ret = f"""{emoji} {title} (A {adjectives}{length}{category}{year})
+  if include_link:
+    return ret + f"\n{website.baseurl}{page.url}"
+  return ret
 
-Tags: {tags}
-{website.baseurl}{page.url}"""
+Tags: {tags}"""
 
 if __name__ == "__main__":
   print("Loading site data...", flush=True)
@@ -216,6 +248,16 @@ if __name__ == "__main__":
   print("::group::Twitter Response")
   print(json.dumps(x_resp, indent=2, default=str))
   print("::endgroup::", flush=True)
+
+  client = BskyClient()
+  print("Posting to BlueSky...")
+  client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
+  text = write_post_for_item(filtered_content[idx_to_post], include_link=False)
+  embed = create_bsky_embed(filtered_content[idx_to_post])
+  hashtags = hashtag_facets_for_text(text)
+  client.send_post(text=text, facets=hashtags, embed=embed)
+  print("  done")
+
   print("::group::Future Posts")
   while idx_to_post < len(filtered_content) - 1:
     print("")

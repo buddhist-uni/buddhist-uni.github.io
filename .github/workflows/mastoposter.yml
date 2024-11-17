@@ -12,9 +12,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install Dependencies
-        run: pip install Mastodon.py titlecase pyyaml python-frontmatter tweepy
+        run: pip install Mastodon.py titlecase pyyaml python-frontmatter tweepy atproto
       - name: Run Mastoposter
         shell: bash
         run: |
           cd scripts
-          MASTODON_TOKEN="${{ secrets.MASTODON_TOKEN }}" X_CONSUMER_KEY="${{ secrets.X_CONSUMER_KEY }}" X_CONSUMER_SECRET="${{ secrets.X_CONSUMER_SECRET }}" X_ACCESS_TOKEN="${{ secrets.X_ACCESS_TOKEN }}" X_ACCESS_TOKEN_SECRET="${{ secrets.X_ACCESS_TOKEN_SECRET }}" python mastoposter.py
+          BLUESKY_PASSWORD="${{ secrets.BLUESKY_PASSWORD }}" MASTODON_TOKEN="${{ secrets.MASTODON_TOKEN }}" X_CONSUMER_KEY="${{ secrets.X_CONSUMER_KEY }}" X_CONSUMER_SECRET="${{ secrets.X_CONSUMER_SECRET }}" X_ACCESS_TOKEN="${{ secrets.X_ACCESS_TOKEN }}" X_ACCESS_TOKEN_SECRET="${{ secrets.X_ACCESS_TOKEN_SECRET }}" python mastoposter.py
