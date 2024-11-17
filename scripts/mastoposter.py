@@ -189,11 +189,11 @@ def write_post_for_item(page: website.ContentFile, include_link=True) -> str:
     year = f" from {page.year}"
     adjectives = "free"
   ret = f"""{emoji} {title} (A {adjectives}{length}{category}{year})
+
+Tags: {tags}"""
   if include_link:
     return ret + f"\n{website.baseurl}{page.url}"
   return ret
-
-Tags: {tags}"""
 
 if __name__ == "__main__":
   print("Loading site data...", flush=True)
