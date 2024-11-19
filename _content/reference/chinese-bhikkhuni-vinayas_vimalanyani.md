@@ -8,6 +8,7 @@ course: vinaya-studies
 tags:
   - bhikkhuni
   - vinaya-pitaka
+  - agama
 year: 2024
 base_value: 3
 ---
