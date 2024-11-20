@@ -15,6 +15,7 @@ BLACKLISTED_DOMAINS: !!set
   matthewremski.medium.com: null
   plato.stanford.edu: null
   plumvillage.org: null
+  pluralism.org: null
   present.bhikkhuni.net: null
   punctumbooks.com: null
   sc.readingfaithfully.org: null
@@ -27,6 +28,7 @@ BLACKLISTED_DOMAINS: !!set
   teahouse.buddhistdoor.net: null
   thefearlessheart.org: null
   tricycle.org: null
+  web.archive.org: null
   www.aa.com.tr: null
   www.accesstoinsight.org: null
   www.bhikkhuni.net: null
@@ -205,7 +207,6 @@ WHITELISTED_DOMAINS: !!set
   thecjbs.org: null
   thubtenchodron.org: null
   uva.theopenscholar.com: null
-  web.archive.org: null
   wiswo.org: null
   www.108wisdom.org: null
   www.abhayagiri.org: null

@@ -340,6 +340,9 @@ While not representative of the diversity within each of the following "national
 {% include content_blurb.html category="articles" slug="faxians-account-of-anuradhapura_kim-haewon" %}
 - What does a Chinese monk's pilgrimage to Sri Lanka have to do with Korea?
 
+{% include content_blurb.html category="essays" slug="one-hand-clapping_pluralism" %}
+- A brief description of koan practice.
+
 [CBT] M.18, M.26, M.78, M.108, M.118, M.149
 {:.mb-0}
 - The Vietnamese and Korean traditions have taken on a more "engaged" attitude towards Awakening and the Bodhisattva path.

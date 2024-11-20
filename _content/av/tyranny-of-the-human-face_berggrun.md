@@ -7,7 +7,7 @@ reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2020/08/26/458-tyranny-of-the-human-face"
 course: desire
 tags:
-  - poetry
+  - contemporary-poetry
   - inner
 year: 2020
 month: aug

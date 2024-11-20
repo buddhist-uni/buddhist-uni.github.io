@@ -8,7 +8,6 @@ drive_links:
 course: tg
 tags:
   - pali-canon
-  - poetry
 year: 2019
 pages: 130
 ---

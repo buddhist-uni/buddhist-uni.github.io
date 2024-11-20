@@ -10,7 +10,6 @@ formats: [pdf, epub]
 course: tg
 tags:
   - pali-canon
-  - poetry
 year: 2014 
 pages: 295
 ---
