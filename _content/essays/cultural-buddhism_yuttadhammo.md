@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1OPcKSVbgQlV-wbyxFl7ztWTWGi2KhwvP/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Cultural%20Buddhism%20-%20Yuttadhammo.pdf"
-course: sangha
+course: form
 status: featured
 tags:
   - west

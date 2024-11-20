@@ -456,54 +456,98 @@ And with that, we're now finished with Part 1 of our course! **History is now yo
 
 Zooming in slightly from the historical perspective, we next turn our attention to the dynamics of individual Buddhist communities.
 
-#### Introduction
-
-{% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
-- Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
-
-{% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
-- A beautiful sermon on the value of monasticism.
-
-{% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
-- Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
-
-{% include content_blurb.html category="av" slug="buddhist-hells_breakfast-religion" %}
-- A taste of how rich Buddhist practices and beliefs can be in—and beyond—the human world.
-
-{% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
-- Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
-
-[CBT] Th.54, Th.85–88, Th.105
-{:.mb-0}
-- Good friendship is vital on the path to Awakening.
-
-[CBT] Th.79
-{:.mb-0}
-- The Sangha are not priests. Buddhist monks cannot purify you, only you can purify you.
-
-[CBT] M.89, Th.95
-{:.mb-0}
-- Still, you should receive the precepts from someone keeping them, and monks and nuns across the Buddhist world chant protective blessings for their lay supporters.
-
-[CBT] Th.190
-{:.mb-0}
-- The lay and monastic communities are vital to the support of each other.
-
 #### Main Text
 
 {% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
 
-[CBT] Th.191, Th.204
-{:.mb-0}
-- The core of the Sangha is the Ariya Sangha: those disciples who have attained awakening themselves. As long as they are present, and the community meets in harmony, the Dharma will thrive.
+Just as in Part 1 of the course, in part 2, we will read some additional essays and snippets from the canonical texts to round out each chapter of our main textbook.
 
-#### Coda
+#### Cintita Chapter 1: Preliminaries
+
+[CBT] Th.85–86
+{:.mb-0}
+- Good friendship is essential to our life and practice.
+
+#### Cintita Chapter 2: The Physiology of the Sāsana
+
+[CBT] Th.87
+{:.mb-0}
+- This chapter compared the Sāsana to a flower, and a similar analogy was used by the Buddha himself.
+
+[CBT] Th.204
+{:.mb-0}
+- The Buddha often stressed the importance of the four-fold Saṅgha and said that the Sāsana is incomplete without worthy leaders in each.
+
+{% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
+- A beautiful sermon on the value of monasticism.
+
+#### Cintita Chapter 3: Refuge
+
+[CBT] Th.88
+{:.mb-0}
+- The importance of having a teacher. 
+
+[CBT] M.89
+{:.mb-0}
+- And on the importance of taking the precepts from a teacher.
+
+#### Cintita Chapter 4: The Buddhist Community
+
+{% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
+- Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
+
+[CBT] Th.105
+{:.mb-0}
+- Generosity is karmically fruitful
+
+[CBT] Th.190
+{:.mb-0}
+- Monastics and laity support each other
+
+{% include content_blurb.html category="essays" slug="sesshin_pluralism" %}
+- In a meditation retreat, it becomes obvious how intensive practice relies on the generosity of others.
+
+#### Cintita Chapter 5: The History of the Sāsana
+
+{% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
+- Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
+
+[CBT] Th.191
+{:.mb-0}
+- The Buddha gives his answer to what will cause the sāsana to survive or not.
 
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
-- Buddhist monasticism faces many challenges as it comes West, especially for nuns.
+- Buddhist monasticism faces many challenges as it comes West, especially for nuns, but looking to history and our principles can help us navigate the future.
+
+#### Cintita Chapter 6: Folk Buddhism
+
+{% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
+- Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
+
+[CBT] Th.95 - Ratana Sutta
+{:.mb-0}
+- This sutta in praise of faith in the triple gem is often chanted in Theravāda countries as a magical blessing.
+
+#### Cintita Chapter 7: Negotiating the Dharma
+
+{% include content_blurb.html category="av" slug="buddhist-hells_breakfast-religion" %}
+- A taste of how rich Buddhist practices and beliefs can be in—and beyond—the human world.
+
+[CBT] Th.54
+{:.mb-0}
+- On how to handle friendships, good and bad.
+
+#### Cintita Chapter 8: Navigating the Sāsana
+
+{% include content_blurb.html category="essays" slug="cultural-buddhism_yuttadhammo" %}
+- Is there such a thing as Buddhist Culture? And is it a good thing?
 
 {% include content_blurb.html category="canon" slug="an3.124" %}
 - What to look out for when choosing a Saṅgha.
+
+[CBT] Th.79
+{:.mb-0}
+- But, ultimately, the Buddhist community cannot purify you: only you can do that.
 
 ### Part 3: Personal Practice
 
