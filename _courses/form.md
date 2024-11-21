@@ -394,6 +394,8 @@ While not representative of the diversity within each of the following "national
 
 {% include content_blurb.html category="av" slug="tibetan-buddhism_breakfast-religion" blurb="A short introduction to Tibetan Buddhism" %}
 
+{% include content_blurb.html category="essays" slug="mandala_pluralism" blurb="You may have seen or heard about the sand mandalas before as they are a famous Tibetan Buddhist practice." %}
+
 {% include content_blurb.html category="av" slug="drepung-loseling-buddha" blurb="A Tibetan monk shows us his temple's primary Buddha image, explaining the symbolism behind its gestures." %}
 
 {% include content_blurb.html category="articles" slug="reexamination-of-female-inferiority_goodwin-allison" blurb="
@@ -510,11 +512,11 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 #### Cintita Chapter 5: The History of the Sāsana
 
 {% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
-- Bhante Sujato starts by asking why Buddhism died out in India, and what factors will lead to the end of our own (present day) "Buddhist Utopia"
+- Bhante Sujato asks why Buddhism died out in India, and what factors might lead to the end of our own (present day) "Buddhist Utopia"
 
 [CBT] Th.191
 {:.mb-0}
-- The Buddha gives his answer to what will cause the sāsana to survive or not.
+- The Buddha gives his answer to what will cause the sāsana to thrive or not.
 
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
 - Buddhist monasticism faces many challenges as it comes West, especially for nuns, but looking to history and our principles can help us navigate the future.
@@ -526,7 +528,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 
 [CBT] Th.95 - Ratana Sutta
 {:.mb-0}
-- This sutta in praise of faith in the triple gem is often chanted in Theravāda countries as a magical blessing.
+- This sutta in praise of faith in the Triple Gem is often chanted in Theravāda countries as a (somewhat magical) blessing.
 
 #### Cintita Chapter 7: Negotiating the Dharma
 
@@ -591,6 +593,9 @@ A few more words are also due on the subject of restraint, beyond the five prece
 [CBT] M.109, M.124
 {:.mb-0}
 - On how to use meditation as an antidote to greed, hatred, and restlessness.
+
+{% include content_blurb.html category="essays" slug="chanting_pluralism" %}
+- Chanting is a particularly common form of meditation for many (most?) Buddhists.
 
 [CBT] V.55–56
 {:.mb-0}

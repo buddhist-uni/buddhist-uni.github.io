@@ -8,7 +8,7 @@ file_links:
 year: 2011
 course: tibetan
 tags:
-  - buddhism
+  - form
 base_value: 0.2
 pages: 3
 ---
