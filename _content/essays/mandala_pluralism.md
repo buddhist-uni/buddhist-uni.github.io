@@ -14,4 +14,4 @@ address: "Boston"
 pages: 2
 ---
 
-> The Tibetan term for mandala, kyinkor, means “center and surrounding environment.” The center with its surrounding geometric designs, its doors, its guardians, and its gods—all become charged with the order and the energy of the whole cosmos.
+> The Tibetan term for mandala, kyinkor, means ‘center and surrounding environment.’ The center with its surrounding geometric designs, its doors, its guardians, and its gods—all become charged with the order and the energy of the whole cosmos.

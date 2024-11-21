@@ -493,6 +493,9 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - And on the importance of taking the precepts from a teacher.
 
+{% include content_blurb.html category="essays" slug="street-gangs-to-temple_pluralism" blurb="It's important to give young men a place to turn to.
+" %}
+
 #### Cintita Chapter 4: The Buddhist Community
 
 {% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}

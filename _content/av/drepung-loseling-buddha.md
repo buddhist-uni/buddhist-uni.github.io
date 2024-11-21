@@ -1,6 +1,7 @@
 ---
 title: "The Buddha on the Alter of Drepung Loseling Monastery"
 publisher: "The Michael C. Carlos Museum"
+subcat: film
 authors:
   - "Dadul Namgyal"
 external_url: "https://vimeo.com/401056695"
