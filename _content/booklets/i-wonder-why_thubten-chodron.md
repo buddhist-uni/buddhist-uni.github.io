@@ -10,8 +10,8 @@ file_links:
   - "smallpdfs/thubten-chodron_1988_i-wonder-why.pdf"
 year: 1988
 olid: OL32580792M
-course: form
 tags:
+  - form
   - tantric
 pages: 105
 course_time_multiplier: 0.3

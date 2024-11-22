@@ -46,8 +46,8 @@ In searching for such a middle way, I take on Bhante Yuttadhammo’s definition 
 The religious forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
 ## Prerequisites
-This course assumes familiarity with [the fundamentals of Buddhism](/courses/buddhism), but no worries if you're rusty: you'll get a refresher [below](#i-wonder-why_thubten-chodron).
 
+This course assumes familiarity with [the fundamentals of Buddhism](/courses/buddhism).
 
 ## The Course
 This course proceeds in three parts: history, community, and practice. 
@@ -80,18 +80,13 @@ Selections will be referenced like this:
 This passage, for example, is on page 84 of the above pdf (note: page numbers differ in the printed editions).
 
 
-### Part 1: The Sociology and History of Buddhism
-#### Textbooks
+### Part 1: The History of Buddhism
+#### Textbook
 
-There are two textbooks for this first part of the course:
+The main textbook for this first third of the course will be:
 
 {% include content_blurb.html category="monographs" slug="buddhist-religion_robinson-et-al" %}
-- The main textbook for this part, *Robinson* will give us an accessible and enjoyable survey of Buddhism’s long history across Asia and beyond.
-
-#### Refresher
-
-{% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" %}
-- For a refresher on the basics of Buddhism, you can skim the questions in this Q&A with Tibetan Nun Thubten Chodron before we dive into the more detailed history below.
+- *Robinson* gives an accessible and enjoyable survey of Buddhism’s long history across Asia and beyond.
 
 #### Supplementary Material to *Robinson*
 
@@ -461,19 +456,19 @@ And with that, we're now finished with Part 1 of our course! **History is now yo
 
 Zooming in slightly from the historical perspective, we next turn our attention to the dynamics of individual Buddhist communities.
 
-#### Main Text
+#### A Culture of Awakening
 
 {% include content_box.html category="booklets" slug="culture-of-awakening_cintita" %}
 
 Just as in Part 1 of the course, in part 2, we will read some additional essays and snippets from the canonical texts to round out each chapter of our main textbook.
 
-#### Cintita Chapter 1: Preliminaries
+##### Cintita Chapter 1: Preliminaries
 
 [CBT] Th.85–86
 {:.mb-0}
 - Good friendship is essential to our life and practice.
 
-#### Cintita Chapter 2: The Physiology of the Sāsana
+##### Cintita Chapter 2: The Physiology of the Sāsana
 
 [CBT] Th.87
 {:.mb-0}
@@ -486,7 +481,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {% include content_blurb.html category="essays" slug="going-forth_viradhammo" %}
 - A beautiful sermon on the value of monasticism.
 
-#### Cintita Chapter 3: Refuge
+##### Cintita Chapter 3: Refuge
 
 [CBT] Th.88
 {:.mb-0}
@@ -499,7 +494,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {% include content_blurb.html category="essays" slug="street-gangs-to-temple_pluralism" blurb="It's important to give young men a place to turn to.
 " %}
 
-#### Cintita Chapter 4: The Buddhist Community
+##### Cintita Chapter 4: The Buddhist Community
 
 {% include content_blurb.html category="essays" slug="economy-of-gifts_geoff" %}
 - Thanissaro Bhikkhu explains the relationship between the monastic sangha and the laity in brief.
@@ -515,7 +510,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {% include content_blurb.html category="essays" slug="sesshin_pluralism" %}
 - In a meditation retreat, it becomes obvious how intensive practice relies on the generosity of others.
 
-#### Cintita Chapter 5: The History of the Sāsana
+##### Cintita Chapter 5: The History of the Sāsana
 
 {% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
 - Bhante Sujato asks why Buddhism died out in India, and what factors might lead to the end of our own (present day) "Buddhist Utopia"
@@ -527,7 +522,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
 - Buddhist monasticism faces many challenges as it comes West, especially for nuns, but looking to history and our principles can help us navigate the future.
 
-#### Cintita Chapter 6: Folk Buddhism
+##### Cintita Chapter 6: Folk Buddhism
 
 {% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
 - Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
@@ -538,7 +533,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - This sutta in praise of faith in the Triple Gem is often chanted in Theravāda countries as a (somewhat magical) blessing.
 
-#### Cintita Chapter 7: Negotiating the Dharma
+##### Cintita Chapter 7: Negotiating the Dharma
 
 {% include content_blurb.html category="av" slug="buddhist-hells_breakfast-religion" %}
 - A taste of how rich Buddhist practices and beliefs can be in—and beyond—the human world.
@@ -547,7 +542,7 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - On how to handle friendships, good and bad.
 
-#### Cintita Chapter 8: Navigating the Sāsana
+##### Cintita Chapter 8: Navigating the Sāsana
 
 {% include content_blurb.html category="essays" slug="cultural-buddhism_yuttadhammo" %}
 - Is there such a thing as Buddhist Culture? And is it a good thing?
