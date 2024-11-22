@@ -347,6 +347,9 @@ While not representative of the diversity within each of the following "national
 {:.mb-0}
 - The Vietnamese and Korean traditions have taken on a more "engaged" attitude towards Awakening and the Bodhisattva path.
 
+{% include content_blurb.html category="essays" slug="pure-land_pluralism" %}
+- Modern Mahayana Buddhists such as the Chinese Master Hsing Yun and Vietnamese Thích Nhất Hạnh refocused Pure Land’s “next-life-oriented” practices in a more “humanistic” (this-world-oriented) direction.
+
 {% include content_blurb.html category="av" slug="korean-buddhist-art_aam" %}
 - A Korean nun demonstrates the Buddhist spirit of generosity.
 
@@ -528,6 +531,8 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 
 {% include content_blurb.html category="av" slug="buddhist-medicine_salguero-pierce" %}
 - Buddhism describes itself as a cure for suffering, and its medical benefits have always been a part of its appeal and spread.
+
+{% include content_blurb.html category="essays" slug="remembering-ancestors_pluralism" blurb="The Buddhist traditions have incorporated a variety of ancestor veneration ceremonies." %}
 
 [CBT] Th.95 - Ratana Sutta
 {:.mb-0}
