@@ -2,7 +2,7 @@
 title: "Insight Knowledge of No Self in Buddhism: An Epistemic Analysis"
 authors:
   - "Miri Albahari"
-external_url: "http://hdl.handle.net/2027/spo.3521354.0014.021"
+external_url: "https://quod.lib.umich.edu/cgi/p/pod/dod-idx/insight-knowledge-of-no-self-in-buddhism-an-epistemic.pdf?c=phimp;idno=3521354.0014.021;format=pdf"
 drive_links:
   - "https://drive.google.com/file/d/1jtPET1AGRSuGTacw5NxJlWtPEgt3PZdU/view?usp=drivesdk"
 file_links:

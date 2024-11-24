@@ -4,7 +4,7 @@ title: >-
 authors:
   - "Nguyen Thi Diem"
 subcat: thesis
-source_url: "http://hdl.handle.net/10603/6464"
+source_url: "https://shodhganga.inflibnet.ac.in/handle/10603/6464"
 drive_links:
   - "https://drive.google.com/file/d/1dzanP0Z8YZXTtbmsxcQ58oFnsYPE0_Gb/view?usp=drivesdk"
 file_links:

@@ -41,7 +41,7 @@ In defining the bounds of “who is Buddhist”, some “middle way” may be de
 1. The conservative, “prescriptive” definition (The Buddha [once said](https://www.dhammatalks.org/suttas/SN/SN55_40.html) that only beings on their way to enlightenment count as his followers!)
 2. And the completely liberal, “historical” definition (The Buddha's life has materially impacted everything from ancient trade routes, to Islamic art, Christian conflicts, IKEA designs, software engineering practices… nearly every human life today.)
 
-In searching for such a middle way, I take on Bhante Yuttadhammo’s definition of Religion here, and say that “Religion is whatever you take seriously.” 
+In searching for such a middle way, I take on Bhante Yuttadhammo’s definition of 'religion' here, and say that “Religion is whatever you take seriously.” 
 
 The religious forms of Buddhism, then, are the various ways that people have looked back to the Buddha for guidance and inspiration, and the many ways they have found to reshape their lives in response to what they've seen.
 
@@ -75,9 +75,8 @@ Selections will be referenced like this:
 
 - [CBT] L.59
   - For example, this refers to the passage in *Common Buddhist Text* about Ven Vaṅgīsa which contains a poem in praise of the Buddha. 
-  - To look up the passage, search the PDF or skim the Table of Contents for the reference number ("L.59").
-
-This passage, for example, is on page 84 of the above pdf (note: page numbers differ in the printed editions).
+  - Go ahead and look up that passage now. Search the PDF or skim the Table of Contents for the given reference number ("L.59", in this case).
+  - This passage is on page 84 of the above-linked pdf, for example, but the pages differ in different editions, so I'll stick to the reference numbers for the rest of this course.
 
 
 ### Part 1: The History of Buddhism
@@ -92,27 +91,28 @@ The main textbook for this first third of the course will be:
 
 As you read through Robinson et al's _Historical Introduction_ one chapter at a time, please also consider:
 
-##### Parallel to Robinson Ch 1: Awakening
+##### Parallel to Robinson Ch 1: The Buddha's Awakening
 
 {% include content_blurb.html category="essays" slug="buddha-you-never-knew_dhammika" %}
 - The Buddha was a real, historical figure, but many of the stories about his life are myths still expanding today.
 
-[CBT] L.7–17
+[CBT] L.7–17 (L.7 through L.17)
 {:.mb-0}
 - Here we get the Buddha's spiritual journey in his own words.
 - Notice the repetitive nature of the early, oral texts.
 
-##### Parallel to Robinson Ch 2: Teacher
+##### Parallel to Robinson Ch 2: The Buddha as Teacher
 
 [CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
 {:.mb-0}
 - Here we get a few stories about the Buddha's life as a teacher from the early texts.
+- The Buddha's life and teachings are, of course, the cornerstone of the Buddhist religion, and set its tenor.
 
 {% include content_blurb.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
 - “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
 {% include content_blurb.html category="articles" slug="symbolism-of-the-early-stupa_harvey" %}
-- They're beautiful, aren't they? But what do they mean?
+- They're beautiful, aren't they? This article talks about some of the symbology the form came to represent.
 
 {% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
@@ -239,10 +239,6 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 [CBT] M.11, M.17, V.3, M.22, M.42, V.23, V.30, V.38, V.43, M.106, M.114, M.147–149
 {:.mb-0}
 - A few selections from the Vajrayana Canon showing its last developments in India.
-
-##### Parallel to Robinson's Regional Chapters 
-
-While not representative of the diversity within each of the following "national" forms, I hope that the texts and clips below capture something of their beauty.
 
 ##### Robinson Chapter 7: Sri Lanka
 

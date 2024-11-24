@@ -2,7 +2,6 @@
 title: "MN 11: The Cūḷasīhanāda Sutta"
 authors:
   - suddhaso
-external_url: "https://fb.com/1698215973551436"
 drive_links:
   - "https://drive.google.com/file/d/1kPkYmyFauwBZyn9OsRgCHFexOIZ7cPzE/view?usp=drivesdk"
 course: philosophy
