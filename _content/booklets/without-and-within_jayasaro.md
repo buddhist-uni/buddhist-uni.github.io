@@ -15,8 +15,6 @@ course: theravada
 olid: OL32040958M
 status: featured
 tags:
-  - thai
-  - form
   - ethics
   - buddhism
 year: 2013
