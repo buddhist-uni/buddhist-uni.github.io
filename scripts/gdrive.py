@@ -725,7 +725,12 @@ if __name__ == "__main__":
   if course == "trash":
     print("Trashing...")
     for glink_gen in glink_gens:
-      trash_drive_file(link_to_id(glink_gen()))
+      fid = link_to_id(glink_gen())
+      shorts = get_shortcuts_to_gfile(fid)
+      for short in shorts:
+        print("  trashing shortcut first...")
+        trash_drive_file(short['id'])
+      trash_drive_file(fid)
     print("Done!")
   else:
     folders = get_gfolders_for_course(course)

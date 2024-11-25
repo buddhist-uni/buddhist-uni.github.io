@@ -1,5 +1,5 @@
 ---
-title: "The Sāl — An Alternative Buddhist Holy Tree?"
+title: "The Sāl: An Alternative Buddhist Holy Tree?"
 authors:
   - ireland
 source_url: "https://doi.org/10.1558/bsrv.v17i1.14508"
