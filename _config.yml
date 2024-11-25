@@ -28,7 +28,7 @@ github_branch: main
 substack_username: buddhistuniversity
 twitter_username: buddhistuni
 mastodon_link: https://digipres.club/@obu
-bluesky_account: buddhist-uni.bsky.social
+bluesky_account: buddhistuniversity.net
 header_pages: [about.md, courses.md, library.md, blog.md, search.html]
 timezone: "Asia/Bangkok"
 doi: "10.5281/zenodo.4448510"

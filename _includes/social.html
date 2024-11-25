@@ -3,7 +3,7 @@
   {%- if site.substack_username -%}<li><a href="https://{{ site.substack_username }}.substack.com"><i class="fas fa-bookmark"></i> <span class="username">Substack</span></a></li>{%- endif -%}
   {%- if site.github_repo -%}<li><a href="https://github.com/{{ site.github_repo }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/imgs/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">GitHub</span></a></li>{%- endif -%}
   {%- if site.mastodon_link -%}<li><a rel="me" href="{{ site.mastodon_link }}"><i class="fab fa-mastodon"></i> <span class="username">Mastodon</span></a>
-    {% if site.twitter_username %}(<a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><i class="fab fa-x-twitter" style="font-size: 14px; margin-right: 1px;"></i></a>){% endif %}
+    {% if site.bluesky_account %}/ <a href="https://bsky.app/profile/{{ site.bluesky_account }}"><i class="fab fa-bluesky"></i> <span class="username">Bluesky</span></a>{% endif %}
   </li>{%- endif -%}
   {%- if site.rss -%}<li><a href="{{ 'feed' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/imgs/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span class="username">{{ site.rss | escape }}</span></a></li>{%- endif -%}
 </ul>
