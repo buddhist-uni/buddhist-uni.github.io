@@ -722,10 +722,16 @@ if __name__ == "__main__":
     else:
       glink_gens.append(lambda r=link: r)
   course = input_with_tab_complete("course: ", get_known_courses())
-  folders = get_gfolders_for_course(course)
-  for glink_gen in glink_gens:
-    move_gfile(glink_gen(), folders)
-  print("Files moved!")
-  if len(urls_to_save) > 0:
-    print("Ensuring URLs are saved to Archive.org...")
-    archive_urls(urls_to_save)
+  if course == "trash":
+    print("Trashing...")
+    for glink_gen in glink_gens:
+      trash_drive_file(link_to_id(glink_gen()))
+    print("Done!")
+  else:
+    folders = get_gfolders_for_course(course)
+    for glink_gen in glink_gens:
+      move_gfile(glink_gen(), folders)
+    print("Files moved!")
+    if len(urls_to_save) > 0:
+      print("Ensuring URLs are saved to Archive.org...")
+      archive_urls(urls_to_save)

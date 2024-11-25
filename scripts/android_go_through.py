@@ -56,23 +56,27 @@ for fp in local_files:
     glink = gdrive.DRIVE_LINK.format(gf['id'])
     course = predictor.predict([text], normalized=True)[0] + "/unread"
   course = input_with_tab_complete("course: ", course_list, prefill=course)
-  gfolder = gdrive.get_gfolders_for_course(course)
-  if gfolder[0]:
-    from openaleximporter import (
-      prompt_for_work,
-      make_library_entry_for_work,
-    )
-    query = fp.stem.replace("_text", "").split(" -")[0]
-    work, _ = prompt_for_work(query.replace("_", " "))
-    if work:
+  if course == "trash":
+      print("Trashing...")
+      gdrive.trash_drive_file(gf['id'])
+  else:
+      gfolder = gdrive.get_gfolders_for_course(course)
+      if gfolder[0]:
+        from openaleximporter import (
+          prompt_for_work,
+          make_library_entry_for_work,
+        )
+        query = fp.stem.replace("_text", "").split(" -")[0]
+        work, _ = prompt_for_work(query.replace("_", " "))
+        if work:
+          gdrive.move_gfile(glink, gfolder)
+          filepath = make_library_entry_for_work(work, course=course, glink=glink)
+          print(f"\nOpening {filepath}\n")
+          system_open(filepath)
+          fp.unlink()
+          exit(0)
+        else:
+          input("Press enter to move the file and continue with the next one...")
       gdrive.move_gfile(glink, gfolder)
-      filepath = make_library_entry_for_work(work, course=course, glink=glink)
-      print(f"\nOpening {filepath}\n")
-      system_open(filepath)
-      fp.unlink()
-      exit(0)
-    else:
-      input("Press enter to move the file and continue with the next one...")
-  gdrive.move_gfile(glink, gfolder)
   print("")
   fp.unlink()
