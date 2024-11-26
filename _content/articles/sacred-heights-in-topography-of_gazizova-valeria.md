@@ -1,5 +1,5 @@
 ---
-title: "Sacred Heights in the Topography of Flatlands. Ovaa Kurgans in the Kalmyk Buddhist Landscape"
+title: "Sacred Heights in the Topography of Flatlands: Ovaa Kurgans in the Kalmyk Buddhist Landscape"
 authors:
   - "Valeria Gazizova"
 external_url: "https://journals.openedition.org/emscat/pdf/4960"
