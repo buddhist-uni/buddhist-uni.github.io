@@ -15,6 +15,7 @@ jobs:
         with:
           ref: main
       - name: Install Dependencies
+        shell: bash
         run: |
           cd scripts/archivable_urls
           RUNID=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "/repos/buddhist-uni/buddhist-uni.github.io/actions/workflows/9334935/runs" -q '.workflow_runs[0].id')
@@ -23,9 +24,27 @@ jobs:
           unzip logs.zip "$LOGFILE"
           mv "$LOGFILE" "lycheeout.txt"
           python extracturls.py
+          if [[ -s urls.txt ]]; then
+            echo "  urls.txt created"
+          else
+            echo "::error file=extracturls.py,line=8,title=No URLs Found::Failed to extract URLs from Lychee logs (lychee output changed format?)"
+            exit 1
+          fi
           python filterurls.py # creates scripts/archivable_urls/filteredurls.txt
+          if [[ -s filteredurls.txt ]]; then
+            echo "  filteredurls.txt created"
+          else
+            echo "::error file=filterurls.py,title=No URLs Found::Failed to find any URLs worth saving in urls.txt"
+            exit 1
+          fi
           cd ~
           printf "${{ secrets.ARCHIVE_ORG_AUTH }}" > archive.org.auth
+          if [[ -s archive.org.auth ]]; then
+            echo "archive.org.auth created"
+          else
+            echo "::error title=No ARCHIVE_ORG_AUTH Secret::Failed to find ARCHIVE_ORG_AUTH secret"
+            exit 1
+          fi
           pip install tqdm titlecase pyyaml
       - name: Archive Archivable External Links
         shell: bash

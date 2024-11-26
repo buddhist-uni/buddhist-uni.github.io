@@ -5,7 +5,7 @@ input_file = "lycheeout.txt"
 output_file = "urls.txt"
 
 # Regular expression pattern to match the desired URLs
-pattern = r"✔ \[200\] (https?://\S+)"
+pattern = r"Z \[(200|403)\] (https?://\S+)"
 
 # Open the input and output files
 with open(input_file, "r") as f_in, open(output_file, "w") as f_out:
@@ -14,7 +14,7 @@ with open(input_file, "r") as f_in, open(output_file, "w") as f_out:
         # Find the URLs matching the pattern
         match = re.search(pattern, line)
         if match:
-            url = match.group(1)
+            url = match.group(2)
             # Write the URL to the output file
             f_out.write(url + "\n")
 
