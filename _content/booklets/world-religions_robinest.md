@@ -1,5 +1,5 @@
 ---
-title: "World Religion Quick Facts"
+title: "Understanding Our Religious World: Quick Facts"
 authors:
   - "Thomas Robinson"
   - "Hillary Rodrigues"
@@ -11,6 +11,7 @@ tags:
   - ideology
 year: 2020
 pages: 10
+olid: OL56973441M
 ---
 
 One page summaries of the cultures of each of the major "world religions."
