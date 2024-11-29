@@ -1,5 +1,5 @@
 ---
-title: "Jesus and the Buddha Compared"
+title: "Jesus and the Buddha: A Study of Their Commonalities and Contrasts"
 authors:
   - dhammika
 external_url: "https://budblooms.org/2020/05/28/jesus-and-the-buddha/"
