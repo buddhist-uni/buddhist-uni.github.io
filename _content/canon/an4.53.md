@@ -12,6 +12,7 @@ tags:
   - ethics
   - an
 year: 2024
+month: nov
 pages: 3
 ---
 
