@@ -3,12 +3,13 @@ title: "Cetasikas"
 authors:
   - gorkom
 external_url: "https://archive.org/details/Cetasikas"
+source_url: "http://www.vipassana.info/cetasikas.html"
 drive_links:
   - "https://drive.google.com/file/d/1eVUGNrG4GgNd_zlx5OL8IxAAL40HROca/view?usp=drivesdk"
 course: abhidhamma
 tags:
   - feeling
-year: 2010
+year: 1999
 publisher: Zolag
 address: "London"
 pages: 296

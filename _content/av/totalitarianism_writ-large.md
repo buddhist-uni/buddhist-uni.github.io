@@ -1,5 +1,6 @@
 ---
 title: "On Hannah Arendt's “Origins of Totalitarianism”"
+# intentionally not podcast because trimmed
 authors:
   - "Amir Eshel"
 editor: "Zachary Davis"
