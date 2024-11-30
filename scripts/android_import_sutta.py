@@ -173,7 +173,7 @@ def get_geoff_source_url(trans, dturl, book, nums):
       print("ATI doesn't seem to have this sutta. Oh well.")
       print("Trying the Wayback Machine...")
       resp = requests.head("http://web.archive.org/web/1970/"+dturl)
-      if resp.ok:
+      if resp.ok and '/save/' not in resp.headers.get('location'):
         m = re.search(r" at ([12][90][0-9][0-9])", resp.headers['x-archive-redirect-reason'])
         if not m:
           print("Got unexpected Archive.org response:\n\t"+resp.headers['x-archive-redirect-reason'])
