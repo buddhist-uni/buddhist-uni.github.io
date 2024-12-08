@@ -2,7 +2,7 @@
 title: "The Fourth Decade of the Avadānaśataka"
 authors:
   - appleton
-external_url: "http://alt.cardiffuniversitypress.org/articles/10.18573/j.2014.10210/galley/12/download/"
+external_url: "https://alt.cardiffuniversitypress.org/articles/12/files/submission/proof/12-1-12-1-10-20170908.pdf"
 source_url: "https://doi.org/10.18573/j.2014.10210"
 drive_links:
   - "https://drive.google.com/file/d/1hcaq4J0MTqgxJm9ybIgc5gV9CC-Xgyr4/view?usp=drivesdk"

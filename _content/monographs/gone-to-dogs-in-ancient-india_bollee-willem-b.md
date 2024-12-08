@@ -6,8 +6,8 @@ editor:
 external_url: "https://www.zobodat.at/pdf/Sitz-Ber-Akad-Muenchen-phil-hist-Kl_2006_0001-0135.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1H8M9AtIBe5XATc0rvKy7SbBSe-B3XiZL/view?usp=drivesdk"
-course: animals # probably should archive
 tags:
+  - animals
   - dogs
   - setting
 year: 2006
