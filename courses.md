@@ -58,6 +58,8 @@ This site may use cookies to enhance your experience, but you can turn this off 
 ## External Courses
 
 Courses hosted on other websites.
+
+
 {% assign authors = "analayo" | split: "," %}
 {% include course-card.html
   url="https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm"
@@ -68,6 +70,19 @@ Courses hosted on other websites.
   time="20"
   lecturers=authors
 %}
+
+
+{% assign authors = "sujato" | split: "," %}
+{% include course-card.html
+  url="https://santifm.org/santi/downloads/?dir=library%2FClasses%2FSutta%2FDigha%2FSamannaphalaSeries"
+  value="0.8"
+  title="The Samaññaphala Sutta (DN 2)"
+  icon="fas fa-apple-whole"
+  description="An extensive course on the second discourse of the Dīgha Nikāya, covering its historical roots all the way through to what the sutta says about liberating insight."
+  time="30"
+  lecturers=authors
+%}
+
 
 {% assign authors = "Frances Garret" | split: "," %}
 {% include course-card.html

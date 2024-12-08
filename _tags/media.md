@@ -12,8 +12,8 @@ illustration_caption: >-
   <a href="https://en.wikipedia.org/wiki/Nam_June_Paik">Nam June Paik</a>,
   the "father of video art," poses for a self-portrait inside a TV:
   in his right hand, he holds a telephone receiver and his left hand reaches around the screen to turn the television's dial.
-  Nine years before the invention of the internet, he coined the term "electronic superhighway"
-  to describe the frenetic future he foresaw.
+  In 1974, nine years before the invention of the internet, he coined the term "electronic superhighway"
+  to describe the frenetic media future he foresaw.
 image: https://illeakyw.sirv.com/Images/banners/TV_Buddha.jpg
 image_width: 1280
 image_height: 960

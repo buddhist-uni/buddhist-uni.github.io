@@ -22,4 +22,4 @@ parallels:
 
 > Wherever the mind feels confidence, great king.
 
-“Where should I give” and “Where is a gift is very fruitful” are two different questions.
+“Where should I give” and “Where is a gift very fruitful” are two different questions.
