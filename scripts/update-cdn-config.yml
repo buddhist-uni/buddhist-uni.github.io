@@ -21,6 +21,7 @@ BLACKLISTED_DOMAINS: !!set
   sc.readingfaithfully.org: null
   seop.illc.uva.nl: null
   sinoindian.wordpress.com: null
+  stonerecords.co.uk: null
   strikemag.org: null
   studybuddhism.com: null
   suttacentral.net: null
@@ -197,6 +198,7 @@ WHITELISTED_DOMAINS: !!set
   scholarlypublications.universiteitleiden.nl: null
   seeingthroughthenet.net: null
   shardarogell.com: null
+  shodhganga.inflibnet.ac.in: null
   sirimangalo.org: null
   socialsci.libretexts.org: null
   ssrn.com: null
