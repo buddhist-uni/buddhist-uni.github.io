@@ -16,7 +16,7 @@ year: 2012
 pages: 64
 ---
 
-This is a Pāli-English translation of ten selected stories from the Apadāna text. It includes commentary that examines unwholesome actions undertaken by the Bodhisatta in past lives and their karmic repercussions when he attained Buddhahood. The edition also features extensive footnotes for a broader understanding of the text and Buddhist literature.
+This is a Pāli-English translation of ten selected stories from the Apadāna text (Apadāna 39.10). It includes commentary that examines unwholesome actions undertaken by the Bodhisatta in past lives and their karmic repercussions when he attained Buddhahood. The edition also features extensive footnotes for a broader understanding of the text and Buddhist literature.
 
 
 
