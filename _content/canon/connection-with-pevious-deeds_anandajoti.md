@@ -5,7 +5,7 @@ authors:
   - anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connection-with-Previous-Deeds/Connection-with-Previous-Deeds.pdf"
 drive_links:
-  - "https://drive.google.com/open?id=1fnNgvFNVcB8J9v5rKmR9Ek8O_Zs3kELm&usp=drive_copy"
+  - "https://drive.google.com/file/d/1fnNgvFNVcB8J9v5rKmR9Ek8O_Zs3kELm/view?usp=drive_link"
   - "https://drive.google.com/file/d/1S3ANq9XRwC0FItfJG-FbRCAh4Xlypq0O/view?usp=drive_link"
 course: avadana
 tags:
