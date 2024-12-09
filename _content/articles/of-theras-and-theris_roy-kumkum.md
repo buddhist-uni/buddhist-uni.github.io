@@ -7,9 +7,7 @@ drive_links:
 external_url: "http://14.139.58.200/ojs/index.php/shss/article/view/591/560"
 course: tg
 tags:
-  - poetry
-  - feminism
-  - pali-canon
+  - characters
 year: 1998
 journal: "Studies in Humanities and Social Sciences"
 volume: 5
@@ -17,4 +15,4 @@ number: 2
 pages: "5--23" 
 ---
 
-In this chapter, KumKum Roy examines both scholastic and gender-related themes in the Theragāthā and Therīgāthā of the Khuddaka Nikāya, exploring concepts such as gender, renunciation, and transcendence.
+A comparison of the biographical elements in the Thera and Therī Gāthās revealing some of the Early Buddhist attitudes towards gender.

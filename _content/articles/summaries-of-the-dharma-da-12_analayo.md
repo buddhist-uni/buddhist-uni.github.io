@@ -11,8 +11,7 @@ tags:
   - da
   - view
 year: 2013
-journal: "Asian Literature and Translation"
-publisher: "Cardiff University Press"
+journal: alt
 volume: 1
 number: 6
 pages: "1--14"

@@ -12,7 +12,7 @@ tags:
   - sarvastivada
 year: 2013
 month: jul
-journal: "Asian Literature and Translation"
+journal: alt
 volume: 1
 number: 7
 pages: "1--36"
