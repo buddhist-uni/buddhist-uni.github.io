@@ -10,7 +10,7 @@ external_url: "https://europepmc.org/articles/pmc1876524?pdf=render"
 source_url: "https://doi.org/10.1073/pnas.0701644104"
 drive_links:
   - "https://drive.google.com/file/d/1fVQ1NJf1vcCON-ERkrDTERtGQVJGDADT/view?usp=drivesdk"
-course: perception
+course: feeling
 tags:
   - language
 year: 2007

@@ -6,7 +6,7 @@ external_url: "https://wrap.warwick.ac.uk/91991/9/WRAP-experience-knowledge-disa
 source_url: "https://doi.org/10.1016/j.socscimed.2017.09.013"
 drive_links:
   - "https://drive.google.com/file/d/1bB5MiHAh1mz6Ibvm58NALxjdo91s9AUd/view?usp=drivesdk"
-course: perception
+course: intellect
 tags:
   - medical-communication
 year: 2017

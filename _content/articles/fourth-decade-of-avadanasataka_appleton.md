@@ -1,5 +1,5 @@
 ---
-title: "The Fourth Decade of the Avadānaśataka"
+title: "The Fourth Decade of the *Avadānaśataka*"
 authors:
   - appleton
 external_url: "https://alt.cardiffuniversitypress.org/articles/12/files/submission/proof/12-1-12-1-10-20170908.pdf"

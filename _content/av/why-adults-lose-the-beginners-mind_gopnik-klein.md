@@ -12,7 +12,6 @@ course: aging
 tags:
   - intellect
   - neuroscience
-  - time
   - underage
 year: 2021
 month: apr

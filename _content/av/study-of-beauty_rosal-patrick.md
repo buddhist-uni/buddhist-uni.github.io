@@ -6,10 +6,9 @@ subcat: poetry
 reader: "Shira Erlichman"
 external_url: "https://www.slowdownshow.org/episode/2022/08/23/746-a-study-of-beauty"
 status: featured
-course: perception
+course: art
 tags:
   - cities
-  - art
   - poetry
   - beauty
 year: 2022
