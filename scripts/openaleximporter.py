@@ -139,7 +139,17 @@ authors:
       oa_url = None
     doi = work["doi"]
     alternate_url = alt_url_for_work(work, oa_url)
-    if doi == oa_url:
+    if oa_url and oa_url.startswith("http:"):
+          if "download" in oa_url or "pdf" in oa_url or "viewcontent.cgi" in oa_url:
+            oa_url = "https:" + oa_url[5:]
+    try:
+      test = requests.head(oa_url)
+    except requests.exceptions.SSLError:
+      if "/download/" in oa_url:
+          oa_url = oa_url.replace("/download/", "/view/")
+      else:
+          oa_url = oa_url.replace("https:", "http:")
+    if doi == oa_url or test.status_code in [404]:
       if alternate_url:
         oa_url = alternate_url
         alternate_url = None

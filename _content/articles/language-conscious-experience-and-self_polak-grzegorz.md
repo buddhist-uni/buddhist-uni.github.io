@@ -2,7 +2,7 @@
 title: "Language, Conscious Experience and the Self in Early Buddhism A Cross-cultural Interdisciplinary Study"
 authors:
   - "Grzegorz Polak"
-external_url: "http://jocbs.org/index.php/jocbs/article/download/181/216"
+external_url: "http://jocbs.org/index.php/jocbs/article/view/181/216"
 drive_links:
   - "https://drive.google.com/file/d/1OV3JDI6S6V5OrcD4fjfN4k0__ZGGLnee/view?usp=drivesdk"
 course: intellect
