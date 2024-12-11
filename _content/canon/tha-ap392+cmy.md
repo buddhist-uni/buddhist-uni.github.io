@@ -3,7 +3,7 @@ title: "Pubbakammapilotika-Buddhāpadānaṁ: The Traditions about the Buddha (k
 The Connection with Previous Deeds, or Why the Buddha Suffered"
 authors:
   - anandajoti
-external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connection-with-Previous-Deeds/Connection-with-Previous-Deeds.pdf"
+external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connection-with-Previous-Deeds/"
 drive_links:
   - "https://drive.google.com/file/d/1fnNgvFNVcB8J9v5rKmR9Ek8O_Zs3kELm/view?usp=drive_link"
   - "https://drive.google.com/file/d/1S3ANq9XRwC0FItfJG-FbRCAh4Xlypq0O/view?usp=drive_link"
