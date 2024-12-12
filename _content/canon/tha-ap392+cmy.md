@@ -1,6 +1,5 @@
 ---
-title: "Pubbakammapilotika-Buddhāpadānaṁ: The Traditions about the Buddha (known as)
-The Connection with Previous Deeds, or Why the Buddha Suffered"
+title: "ThaAp 392 Pubbakammapilotika Buddhāpadāna: The Traditions about the Buddha (known as) The Connection with Previous Deeds, or Why the Buddha Suffered"
 authors:
   - anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connection-with-Previous-Deeds/"
@@ -10,17 +9,10 @@ drive_links:
 course: avadana
 tags:
   - karma
-  - rebirth-stories
+  - buddha
 olid: OL57103155M
 year: 2012
 pages: 64
 ---
 
-This is a Pāli-English translation of ten selected stories from the Apadāna text (Apadāna 39.10). It includes commentary that examines unwholesome actions undertaken by the Bodhisatta in past lives and their karmic repercussions when he attained Buddhahood. The edition also features extensive footnotes for a broader understanding of the text and Buddhist literature.
-
-
-
-
-
-
-
+This is a Pāli-English translation of ten stories from the commentary to Apadāna 39.10 on the unwholesome actions undertaken by the Bodhisatta in past lives and their karmic repercussions in his final life.
