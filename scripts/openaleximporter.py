@@ -139,6 +139,9 @@ authors:
       oa_url = None
     doi = work["doi"]
     alternate_url = alt_url_for_work(work, oa_url)
+    if alternate_url and not oa_url:
+        oa_url = alternate_url
+        alternate_url = None
     if oa_url and oa_url.startswith("http:"):
           if "download" in oa_url or "pdf" in oa_url or "viewcontent.cgi" in oa_url:
             oa_url = "https:" + oa_url[5:]
