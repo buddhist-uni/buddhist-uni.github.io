@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1PhwcQTYb6yezrGakveBjSWcCWN0JAcVl/view?usp=sharing"
 course: avadana
 tags:
-  - karma
   - thought
+  - characters
 year: 2012
 month: dec
 journal: present
