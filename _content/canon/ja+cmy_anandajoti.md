@@ -1,5 +1,5 @@
 ---
-title: "Ja Jātaka Aṭṭhakatā: The Birth Stories"
+title: "Jātaka Aṭṭhakatā: The Birth Stories"
 editor: anandajoti
 translator: "E. B. Cowell"
 external_url: "https://ancient-buddhist-texts.net/English-Texts/Jataka/index.htm"
