@@ -5,9 +5,9 @@ authors:
 external_url: "https://www.ancient-buddhist-texts.net/Textual-Studies/Outline/index.htm"
 drive_links:
   - "https://drive.google.com/file/d/1D-2Vc2FKfxQn0ayDFRkXfA_RmYr_6GpF/view?usp=sharing"
-course: canonical-poetry
+course: pali-metre
 tags:
-  - pali-metre
+  - canonical-poetry # TODO rm once metre tag exists
 olid: OL51484147M
 year: 2000
 pages: 66

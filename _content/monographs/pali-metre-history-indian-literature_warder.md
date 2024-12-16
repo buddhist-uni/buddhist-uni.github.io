@@ -5,9 +5,9 @@ authors:
 external_url: "https://palitextsociety.org/wp-content/uploads/pdfs/PaliMetre.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Ga2MoBzLCdI8-V4g0nRNEZLGt9pUBJ5a/view?usp=sharing"
-course: canonical-poetry
+course: pali-metre
 tags:
-  - pali-metre # TODO move here eventually
+  - canonical-poetry # TODO rm once pali-metre exists
 year: 1967
 oclc: 957316
 olid: OL5581029M
