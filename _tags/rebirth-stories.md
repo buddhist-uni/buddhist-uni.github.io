@@ -23,4 +23,4 @@ image_center_x: 90%
 image_center_y: 70%
 ---
 
-Stories of past (and future) lives found in the Buddhist Canons, especially those in the Pāli Khuddakanikāya.
+Stories of past (and future) lives found in the Buddhist Canons, especially those in the Pāli Khuddakanikāya and its commentaries.
