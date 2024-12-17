@@ -17,4 +17,4 @@ number: 2
 pages: "34--44"
 ---
 
-In this article, Professor Roy uses textual evidence from the Jātaka portion of the Pāli Canon to present possibilities of familial relationships and successorship in early North India. The flexibility of heredity and the domestic functions of the king are the two main themes that are highlighted.
+An overview of Kings and their families in the Jātaka Tales and what their stories say about the ideology of Kingship in ancient India.
