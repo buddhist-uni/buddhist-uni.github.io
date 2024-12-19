@@ -2,12 +2,13 @@
 title: "Gleanings from the Mahāvastu"
 authors:
   - "Katarzyna Marciniak"
-external_url: "https://www.academia.edu/59240112/Gleanings_from_the_Mah%C4%81vastu"
+external_url: "https://archive.org/download/gleanings-from-the-mahavastu-marciniak/Gleanings%20from%20the%20Mahavastu%20-%20Marciniak.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/16H6Bd-7FZi5h-aVJv2Ac1ofUwg28-w7S/view?usp=sharing"
+  - "https://drive.google.com/file/d/12YajvJfi3ZyK17g5aJArEQD_7Fk7vu65/view?usp=drivesdk"
 course: jataka
 tags:
   - philology
+  - agama-misc
 year: 2018
 journal: aririab
 volume: 21
