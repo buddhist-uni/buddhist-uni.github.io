@@ -5,8 +5,8 @@ authors:
 external_url: "https://archive.org/download/gleanings-from-the-mahavastu-marciniak/Gleanings%20from%20the%20Mahavastu%20-%20Marciniak.pdf"
 drive_links:
   - "https://drive.google.com/file/d/12YajvJfi3ZyK17g5aJArEQD_7Fk7vu65/view?usp=drivesdk"
-course: jataka
 tags:
+  - jataka
   - philology
   - agama-misc
 year: 2018
