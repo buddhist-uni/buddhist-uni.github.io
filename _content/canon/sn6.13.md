@@ -1,5 +1,6 @@
 ---
 title: "SN 6.13 Andhakavinda Sutta: At Andhakavinda"
+subcat: poetry
 translator: sujato
 slug: "sn.006.013"
 drive_links:

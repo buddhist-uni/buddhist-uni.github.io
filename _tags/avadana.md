@@ -1,6 +1,6 @@
 ---
 title: "Avadānas"
-status: unpublished
+status: published
 parents: [rebirth-stories]
 is_canon: true # changes the layout slightly
 ---

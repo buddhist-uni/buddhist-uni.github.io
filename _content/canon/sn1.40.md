@@ -1,6 +1,7 @@
 ---
 title: "SN 1.40 Dutiya Pajjunna Dhītu Sutta: Pajjunna’s Daughter (2)"
 external_url: "https://suttacentral.net/sn1.40/en/bodhi"
+subcat: poetry
 drive_links:
   - "https://drive.google.com/file/d/11_GGfwmj69h5H3vo7YIHzorolPZ7WoTv/view?usp=drivesdk"
 translator: bodhi

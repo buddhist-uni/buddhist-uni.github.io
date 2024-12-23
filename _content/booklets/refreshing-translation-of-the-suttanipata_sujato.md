@@ -10,6 +10,7 @@ course: snp
 tags:
   - sutta
 year: 2018
+olid: OL57352170M
 pages: 399
 ---
 

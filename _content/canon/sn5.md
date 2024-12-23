@@ -1,5 +1,6 @@
 ---
 title: "SN 5 Bhikkhuni-samyutta: Discourses (to Māra) of the Ancient Nuns"
+subcat: poetry
 slug: "sn.005"
 translator: bodhi
 formats: [pdf]

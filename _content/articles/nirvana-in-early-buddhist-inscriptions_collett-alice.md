@@ -18,7 +18,8 @@ pages: "221--247"
 openalexid: W3010941937
 ---
 
-> Surveying pre-Gupta inscriptions, it becomes clear that the aspiration for nirvana has one recurring feature attached to it; the aspiration of the donor for the attainment of nirvana — whether for themselves or others — occurs when the donation is connected in some way or another to the relics or figural or non-figural representations of the historical Buddha.
-> This suggests that the idea of being in the Buddha’s presence grew in importance in relation to the efficacy of religious practice in this period.
+> Surveying pre-Gupta inscriptions, it becomes clear that the aspiration for nirvana has one recurring feature attached to it; the aspiration of the donor for the attainment of nirvana occurs when the donation is connected in some way or another to the relics or figural or non-figural representations of the historical Buddha.
+
+
 > The same ideas can be seen emerging in the later canonical Pali Apadana, and connect to developments in the emergence of Mahayana.
 

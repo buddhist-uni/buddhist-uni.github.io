@@ -1,6 +1,6 @@
 ---
 title: "The Human Body"
-status: unpublished
+status: published
 parents: [inner]
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Human_Body_Model.jpg
@@ -15,9 +15,9 @@ illustration_caption: >-
 image: https://illeakyw.sirv.com/Images/banners/Thai_massage.jpg
 image_width: 2304
 image_height: 1728
-# big_image: https://upload.wikimedia.org/wikipedia/commons/b/b4/Thai_massage.jpg
-# big_height: 1728
-# big_width: 2304
+big_image: https://upload.wikimedia.org/wikipedia/commons/b/b4/Thai_massage.jpg
+big_height: 1728
+big_width: 2304
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Thai_massage.jpg">Ryan Harvey</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>
 image_center_x: 90%
 image_center_y: 35%

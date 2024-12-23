@@ -1,6 +1,6 @@
 ---
 title: "Thera/Therīgāthā"
-status: unpublished
+status: published
 hashtag: poetry
 parents: [canonical-poetry]
 ---

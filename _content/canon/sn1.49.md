@@ -1,5 +1,6 @@
 ---
 title: "SN 1.49 Macchari Sutta: Samiddhi"
+subcat: poetry
 external_url: "https://suttacentral.net/sn1.49/en/bodhi"
 translator: bodhi
 slug: "sn.001.049"

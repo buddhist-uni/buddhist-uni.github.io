@@ -1,6 +1,6 @@
 ---
 title: "Sutta Nipāta"
-status: unpublished
+status: published
 hashtag: BuddhaQuotes
 parents: [canonical-poetry]
 is_canon: true # changes the layout slightly
