@@ -21,7 +21,7 @@ minutes: 31
 > Staying in your comfort zone isn’t always the best option.
 
 The incredible stories of Brian Eno's [Oblique Strategies](https://www.oblique-strategies.com/)
-and Keith Jarrett’s [Koln Concert](https://youtu.be/l_IEjONNRSw)
+and Keith Jarrett’s [Koln Concert](https://youtu.be/skkiVoI7sBk)
 and why diversity is better than it feels.
 
 For the exciting part two, see [Frankenstein versus the Volcano](/content/av/frankenstein-volcano_harford-tim).
