@@ -1,5 +1,5 @@
 ---
-title: "Jātakas and Paññsa-jātakas in South-East Asia"
+title: "Jātakas and Paññāsa-jātakas in South-East Asia"
 authors:
   - skilling
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_28_2006.pdf"

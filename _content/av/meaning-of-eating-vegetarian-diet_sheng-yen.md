@@ -17,4 +17,4 @@ subcat: film
 minutes: 9 
 ---
 
-In this video, Master Sheng Yen tells us that vegetarianism arises out of compassion, seeing, as the Buddha did, that all sentient beings yearn for life and fear death. Master SHeng Yen also responds to a few common ideas against vegetarianism.
+In this video, Master Sheng Yen tells us that vegetarianism arises out of compassion, seeing, as the Buddha did, that all sentient beings yearn for life and fear death. Master Sheng Yen also responds to a few common arguments against vegetarianism.

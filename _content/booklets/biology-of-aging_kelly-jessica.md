@@ -9,7 +9,8 @@ drive_links:
 file_links:
   - "mediumfiles/kelly-jessica_2017_biology-of-aging.pdf"
   - "mediumfiles/kelly-jessica_2017_biology-of-aging.epub"
-course: body # strongly. Almost featured
+course: body
+status: featured
 tags:
   - geriatrics
 year: 2017 # ± 1

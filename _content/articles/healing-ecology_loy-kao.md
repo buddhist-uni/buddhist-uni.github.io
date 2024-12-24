@@ -20,9 +20,10 @@ openalexid: W258959463
 ---
 
 > Loy’s central thesis is that there 
-are common “spiritual roots” to our ecological crisis and that the Buddhist soteriological structure, when properly understood and applied
+are common “spiritual roots” to our ecological crisis and the Buddhist soteriological structure, when properly understood and applied
 from the individual to the collective case, holds the key to our way out.
-Loy’s wish is not simply that we all “stop befoul[ing] our own nest” in 
+
+> Loy’s wish is not simply that we all “stop befoul[ing] our own nest” in 
 the ways already mentioned, but that we all “awaken” to the true causes 
 of environmental spoilage—our false belief in an ultimate “separation 
 from other people and from the natural world” and our dysfunctional 

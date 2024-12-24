@@ -8,6 +8,7 @@ drive_links:
 file_links:
   - "smallpdfs/mcnicholl-adeana_2020_generative-power-of-disgust.pdf"
 course: pv
+status: featured
 tags:
   - aesthetics
   - body
