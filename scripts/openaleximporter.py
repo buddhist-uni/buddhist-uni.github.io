@@ -312,7 +312,7 @@ def _main():
     quit(0)
   with yaspin(text="Searching Drive for file..."):
     title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
-    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf'").execute()
+    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf' AND 'me' in owners").execute()
   if "files" not in gfiles:
     raise RuntimeError("Unexpected GDrive API response: "+gfiles)
   gfiles = gfiles["files"]
