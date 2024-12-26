@@ -145,8 +145,10 @@ authors:
     if oa_url and oa_url.startswith("http:"):
           if "download" in oa_url or "pdf" in oa_url or "viewcontent.cgi" in oa_url:
             oa_url = "https:" + oa_url[5:]
+    if not oa_url:
+      oa_url = doi
     try:
-      test = requests.head(oa_url)
+      test = requests.head(oa_url or "https://www.google.com/404")
     except requests.exceptions.SSLError:
       if "/download/" in oa_url:
           oa_url = oa_url.replace("/download/", "/view/")
