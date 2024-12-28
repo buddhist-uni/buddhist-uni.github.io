@@ -1,5 +1,6 @@
 ---
 title: "New Books in Geography"
+editor: "Marshall Poe"
 subcat: podcast
 external_url: "https://newbooksnetwork.com/category/politics-society/geography"
 tags:
