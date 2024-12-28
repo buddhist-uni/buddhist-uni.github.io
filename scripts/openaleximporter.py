@@ -147,14 +147,16 @@ authors:
             oa_url = "https:" + oa_url[5:]
     if not oa_url:
       oa_url = doi
+    status = 404
     try:
       test = requests.head(oa_url or "https://www.google.com/404")
+      status = test.status_code
     except requests.exceptions.SSLError:
       if "/download/" in oa_url:
           oa_url = oa_url.replace("/download/", "/view/")
       else:
           oa_url = oa_url.replace("https:", "http:")
-    if doi == oa_url or test.status_code in [404]:
+    if doi == oa_url or status in [404]:
       if alternate_url:
         oa_url = alternate_url
         alternate_url = None

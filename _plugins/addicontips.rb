@@ -15,6 +15,7 @@ module Jekyll
         {c: 'fas fa-film', n: 'film strip', t: 'piece', d: 'is meant to be watched'},
         {c: 'fas fa-podcast', n: 'radio antenna', t: 'piece', d: 'can be found on any podcast app'},
         {c: 'fas fa-graduation-cap', n: 'graduation cap', t: 'piece', d: 'is an unedited, academic thesis'},
+        {c: 'far fa-pen-to-square', n: 'pencil in a square', t: 'piece', d: 'is a comic'},
         {c: 'fas fa-feather', n: 'rounded feather', t: 'piece', d: 'is a work of fiction'},
         {c: 'fas fa-vihara', n: 'pagoda', t: 'course', d: 'is about Buddhism as a cultural institution'},
         {c: 'far fa-map fa-rotate-90', n: 'folded scroll', t: 'course', d: 'will cover old, Buddhist texts'},

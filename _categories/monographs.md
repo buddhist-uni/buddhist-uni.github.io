@@ -5,6 +5,7 @@ similars:
   - booklets
 subcats:
   - fiction
+  - comic
 should_have_publisher: true
 ---
 

@@ -3,6 +3,7 @@ title: "Ducks: Two Years in the Oil Sands"
 authors:
   - "Kate Beaton"
 status: featured
+subcat: comic
 course: labor
 tags:
   - canada
