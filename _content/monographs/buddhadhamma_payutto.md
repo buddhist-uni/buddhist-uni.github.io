@@ -1,5 +1,5 @@
 ---
-title: "Buddhadhamma: The Laws of Nature and the Benefits to Life"
+title: "Buddhadhamma: The Laws of Nature and their Benefits to Life"
 authors:
   - payutto
 translator: "Robin Philip Moore"
@@ -18,4 +18,4 @@ pages: 2000
 
 > It is a difficult task to compile the Buddha’s teachings, especially on the premise that one is presenting the true or genuine teachings, even if one cites passages from the Pali Canon which are considered the words of the Buddha.
 
-The authoratative book on orthodox Thai Buddhist doctrine.
+The authoratative book of Thai Buddhist doctrine.

@@ -6,6 +6,7 @@ BLACKLISTED_DOMAINS: !!set
   daily.readingfaithfully.org: null
   darrennaish.files.wordpress.com: null
   discourse.suttacentral.net: null
+  doi.org: null
   greatergood.berkeley.edu: null
   harpers.org: null
   hbr.org: null
@@ -146,7 +147,6 @@ WHITELISTED_DOMAINS: !!set
   dictionary.sutta.org: null
   digitalcommons.linfield.edu: null
   direct.mit.edu: null
-  doi.org: null
   drexel.edu: null
   dukelibraries.contentdm.oclc.org: null
   dx.doi.org: null
