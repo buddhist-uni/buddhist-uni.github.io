@@ -1,7 +1,7 @@
 ---
 title: "What a true Buddhist should know about the Pali Canon"
 authors:
-  - "P. A. Payutto"
+  - payutto
 translator: "Somseen Chanawangsa"
 external_url: "https://www.watnyanaves.net/uploads/File/books/pdf/the_pali_canon_what_a_buddhist_must_know.pdf"
 alternate_url: "https://pagoda.or.th/ebook-english-books/the-pali-canon-what-a-buddhist-must-know-2.html"
