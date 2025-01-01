@@ -8,11 +8,11 @@ drive_links:
   - "https://drive.google.com/file/d/1VTNhR87LI30Z79TT1tMFCoGA0hiprfLD/view?usp=sharing"
 course: thai
 tags:
-  - view
+  - path
 year: 2011
 publisher: "Wat Nyanavesakavan"
 address: "Thailand"
-pages: 31
+pages: 4
 ---
 
 > What is the meaning of practising Dhamma? To practise
