@@ -20,6 +20,6 @@ minutes: 36
 
 > Man is born free but everywhere he is in chains.
 
-How an 18th century philosopher's ideas came to dominate modern political thought.
-
 Rousseau thought that it was polite society that made people evil and that a sufficiently enlightened social order could bring out people's inherent virtues.
+
+How this 18th century philosopher's ideas came to dominate modern political thought.
