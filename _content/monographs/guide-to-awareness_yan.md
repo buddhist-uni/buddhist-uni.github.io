@@ -5,7 +5,7 @@ authors:
 translator: "Bhikkhu Ariyesako and Bhikkhu Kantasãlo"
 external_url: "https://www.buddhanet.net/pdf_file/gawarens.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1pRCgNErCvtwpDFsM-8qm-Tppb4EOv1QL/view?usp=sharing"
+  - "https://drive.google.com/file/d/1pRCgNErCvtwpDFsM-8qm-Tppb4EOv1QL/view?usp=drive_link"
 course: thai
 tags:
   - sati
