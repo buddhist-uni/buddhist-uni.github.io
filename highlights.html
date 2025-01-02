@@ -13,7 +13,7 @@ image_height: 853
 banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_Buddhist_temple,_and_its_surroundings,_Kyoto;_November_2016_(01).jpg">雷太</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 ---
 
-{% assign allcontent = site.content | where_exp: "c", "c.external_url or c.drive_links or c.file_links" %}
+{% assign allcontent = site.content | where_exp: "c", "c.external_url or c.drive_links or c.file_links" | where_exp: "c", "c.status != 'rejected'" %}
 {% capture thisyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
 {% assign lastyear = thisyear | minus: 1 %}
 <h2>Table of Contents</h2><ul id="toc">

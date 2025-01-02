@@ -215,7 +215,7 @@ if __name__ == "__main__":
   print("Selecting the next post...", flush=True)
   last_few_urls = [p['card']['url'][len(website.baseurl):] for p in last_few_posts if p['card']]
   idx_to_post = None
-  filtered_content = [c for c in website.content if c.external_url or c.drive_links]
+  filtered_content = [c for c in website.content if (c.external_url or c.drive_links) and c.status != 'rejected']
   for ridx, c in enumerate(reversed(filtered_content)):
     if c.url in last_few_urls:
       break

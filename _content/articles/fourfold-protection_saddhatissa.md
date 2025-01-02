@@ -21,4 +21,4 @@ pages: "40--46"
 
 The Pāli text with an English translation.
 
-A better translation can be [found here](/canon/caturarakkha).
+A better translation can be [found here](/content/canon/caturarakkha).
