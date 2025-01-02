@@ -11,12 +11,12 @@ tags:
   - path
 year: 2011
 publisher: "Wat Nyanavesakavan"
-address: "Thailand"
-pages: 4
+address: "Nakhon Pathom, Thailand"
+pages: 8
 ---
 
-> What is the meaning of practising Dhamma? To practise
+> To practise
 Dhamma means to apply the Dhamma, to use the Dhamma
 in conducting your life and work.
 
-This work is a translation of Venerable Payutto's original Thai text, “Thamma chabap rian lat”, designed to help newcomers to Buddhism understand key principles and their practical applications. It is also valuable for those already practicing the Dharma, furthering their understanding. The book is divided into four sections, each with a focus on practice.
+This work is a translation of “Thamma chabap rian lat”, designed to help newcomers to Buddhism understand key principles and their practical applications. It is also valuable for those already practicing the Dharma, furthering their understanding. The book is divided into four sections, each with a focus on different aspects of practice.
