@@ -321,6 +321,7 @@ def _main():
   gfile = None
   if len(gfiles) == 0:
     gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners").execute()
+    gfiles = gfiles["files"]
     if len(gfiles) == 0:
       print("No suitable files found.")
   if len(gfiles) == 1:

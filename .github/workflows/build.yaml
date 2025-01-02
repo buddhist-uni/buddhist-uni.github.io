@@ -23,7 +23,7 @@ jobs:
           branch: main
           name: github-pages
           path: prod
-      - name: Prepare olid cover images
+      - name: Prepare olid covers
         run: |
           cd $GITHUB_WORKSPACE/prod
           tar -xf artifact.tar
