@@ -320,11 +320,13 @@ def _main():
   gfiles = gfiles["files"]
   gfile = None
   if len(gfiles) == 0:
-    print("No suitable files found.")
-  elif len(gfiles) == 1:
+    gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners").execute()
+    if len(gfiles) == 0:
+      print("No suitable files found.")
+  if len(gfiles) == 1:
     gfile = gfiles[0]
     print(f"Got \"{gfile['name']}\"")
-  else:
+  if len(gfiles) > 1:
     print(f"Got {len(gfiles)} candidates.\nPlease select one:")
     i = radio_dial([f['name'] for f in gfiles]+["Other (I'll supply a URL manually)"])
     if i < len(gfiles):
