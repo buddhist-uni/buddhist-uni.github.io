@@ -11,7 +11,8 @@ tags:
   - vipassana
 publisher: "Mahamakut Rajavidyalaya Press"
 address: "Bangkok"
-pages: 55 
+pages: 55
+year: 1970
 ---
 
 > Our cultivation of the mind is aimed both at firmly establishing
