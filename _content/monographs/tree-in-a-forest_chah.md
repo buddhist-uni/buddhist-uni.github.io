@@ -10,6 +10,7 @@ course: thai
 tags:
   - thought
 year: 1994
+olid: OL57407246M
 publisher: "Yuan Kuang"
 address: "Taiwan"
 pages: 58
