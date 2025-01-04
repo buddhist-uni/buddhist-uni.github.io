@@ -8,11 +8,11 @@ drive_links:
   - "https://drive.google.com/file/d/1hBIvCOorpHc63PNLnl2JxBCbfKnB5M6r/view?usp=sharing"
 course: thai
 tags:
-  - path
+  - thought
 year: 1994
-publisher: "Dhamma Garden"
+publisher: "Yuan Kuang"
 address: "Taiwan"
-pages: 100
+pages: 58
 ---
 
 > I am like a tree in a forest, full of leaves, blossoms and fruit. Birds come
