@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1oMOqxK6zrvjkanSX4mFgd5sgvmAm97Nh/view?usp=drive_link"
   - "https://drive.google.com/file/d/1XtBPgVPx2BEWuz2_iGC6J1ahXFjzyy48/view?usp=drive_link"
 formats: [mp3s]
-course: thaiArts of Thailland
+course: thai
 tags:
   - bart
 year: 2005
