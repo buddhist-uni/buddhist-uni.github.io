@@ -73,4 +73,5 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <h3>{{ y.name }}</h3>
 {% for c in y.items %}
 <div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
-{% endfor %}
+{% if y.name == "2023" %}<div class="mb-3">{% assign c = site.series | find: "slug", "ma_bdk" %}{% include simple_content_title.html content=c %}</div>
+{% endif %}{% endfor %}
