@@ -23,7 +23,9 @@ layout: default
   <header class="post-header">
     <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
-    {% if page.olid %}
+    {%- if page.category == "av" and page.external_url contains "youtu" -%}
+      {%- comment -%}Don't add an img on top if there will be a YouTube player below{%- endcomment -%}
+    {%- elsif page.olid -%}
     <img src="https://buddhistuniversity.net/assets/imgs/covers/{{ page.olid }}.jpg" alt="the book cover">
     {% elsif page.image %}
     <img src="{{page.image}}">

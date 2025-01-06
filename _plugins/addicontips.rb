@@ -13,6 +13,7 @@ module Jekyll
         {c: 'fas fa-book-open', n: 'open book', t: 'piece', d: 'is a self-published, open-access book(let)'},
         {c: 'fas fa-music', n: 'pair of eighth-notes', t: 'piece', d: 'is musical'},
         {c: 'fas fa-film', n: 'film strip', t: 'piece', d: 'is meant to be watched'},
+        {c: 'fas fa-video', n: 'projector', t: 'link', d: 'takes you to a video'},
         {c: 'fas fa-podcast', n: 'radio antenna', t: 'piece', d: 'can be found on any podcast app'},
         {c: 'fas fa-graduation-cap', n: 'graduation cap', t: 'piece', d: 'is an unedited, academic thesis'},
         {c: 'far fa-pen-to-square', n: 'pencil in a square', t: 'piece', d: 'is a comic'},
