@@ -4,7 +4,7 @@ authors:
   - "Stephen A. Evans"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/8892"
 drive_links:
-  - "https://drive.google.com/file/d/135c1u_bJGU453uYcyYv_jW8m3WiY7sRc/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1IL2PUov4g1CKN5XPy4-HuvK8ootRnYYL/view?usp=sharing"
 file_links:
   - "smallpdfs/stephen-a-evans_2009_epistemology-of-the-brahmajala-sutta.pdf"
 course: epistemology

@@ -27,7 +27,12 @@ layout: default
     <img src="https://buddhistuniversity.net/assets/imgs/covers/{{ page.olid }}.jpg" alt="the book cover">
     {% elsif page.image %}
     <img src="{{page.image}}">
-    {% endif %}
+    {%- elsif page.drive_links[0] -%}{%- if 'pdf,mp4' contains page.formats[0] -%}
+    {%- assign dlink = page.drive_links[0] | split: "/" -%}
+    {%- assign dlink = dlink[5] -%}
+    {%- if dlink.size == 28 or dlink.size == 33 or dlink.size == 44 -%}
+    <img src="https://drive.google.com/thumbnail?authuser=0&sz=h500&id={{ dlink }}">
+    {%- endif -%}{%- endif -%}{%- endif -%}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% if page.subcat %}{% include content_icon.html category=page.category subcat=page.subcat %} {% endif %}{{ title | first }}
     {%- if title.size > 1 -%}<span style="color:transparent">: </span><div class="post-subtitle">{{ title | shift | join: ": " }}</div>{%- endif -%}</h1>

@@ -490,6 +490,12 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
       follow_links=follow_links,
     )
 
+def share_drive_file_with_everyone(file_id: str):
+  return session().permissions().create(
+    fileId=file_id,
+    body={"role": "reader", "type": "anyone"},
+  ).execute()
+
 def batch_get_files_by_id(IDs: list, fields: str):
   ret = []
   if len(IDs) > 100:
