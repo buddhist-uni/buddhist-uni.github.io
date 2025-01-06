@@ -1,13 +1,13 @@
 ---
 title: "He Handles Gold and Silver"
-external_url: "https://web.archive.org/web/20230622085512/https://buddhadust.net/dhammatalk/bd_dhammatalk/ethical_culture/he_handles_gold.htm"
+external_url: "https://buddhadust.net/dhammatalk/bd_dhammatalk/ethical_culture/he_handles_gold.htm"
 drive_links:
   - "https://drive.google.com/file/d/1gt74QNUNHHFlqaqp_omczdx4R9CeQb75/view?usp=drivesdk"
 course: vinaya-studies
+status: featured
 tags:
   - sangha
-  - economics
-  - neuroscience
+  - psychotherapy
   - selling
   - pedagogy
 year: 2016

@@ -6,6 +6,7 @@ authors:
 external_url: "https://archive.org/details/early-arts-of-southeast-asia-2005-01-28-robert-brown"
 drive_links:
   - "https://drive.google.com/file/d/1jjT3VESkgjrVSBRX9jDUdCsnbaT8Wsaw/view?usp=drivesdk"
+image: "https://archive.org/download/early-arts-of-southeast-asia-2005-01-28-robert-brown/early-arts-of-southeast-asia-2005-01-28-robert-brown.thumbs/Early%20Arts%20of%20Southeast%20Asia%20%282005-01-28%20at%20the%20Asian%20Art%20Museum%29%20-%20Robert%20Brown_001256.jpg"
 formats: [mp4]
 course: theravada-roots
 tags:
