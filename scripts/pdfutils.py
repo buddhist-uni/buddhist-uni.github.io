@@ -4,6 +4,7 @@ from strutils import (
 )
 import subprocess
 from pathlib import Path
+import os.path
 
 try:
   import pypdf
@@ -32,12 +33,16 @@ def readpdf(pdf_file: str | Path, max_len=None, normalize=1) -> str:
     stops extracting text after max_len is reached
     Note: returned text may be larger than max_len
   """
-  reader = pypdf.PdfReader(pdf_file)
+  reader = pypdf.PdfReader(pdf_file, strict=False)
   ret = ''
-  for page in reader.pages:
+  for i, page in enumerate(reader.pages):
       # insert a page break (\f) between pages when normalize==0
-      text = page.extract_text() + '\f'
-      if normalize > 0:
+      text = ""
+      try:
+        text = page.extract_text() + '\f'
+      except UnboundLocalError:
+        print(f"WARNING: Unable to extract text from page {i} of \"{os.path.basename(pdf_file)}\" due to a bug in pypdf.")
+      if normalize > 0 and text:
         text = whitespace.split(text)
         if normalize > 2:
           text = [word for word in text if word.isalpha()]
