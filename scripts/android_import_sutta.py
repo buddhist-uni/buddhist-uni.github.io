@@ -10,7 +10,7 @@ from strutils import (
 )
 from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
-from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK
+from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK, share_drive_file_with_everyone
 from archivedotorg import save_url_to_archiveorg
 from pdfutils import readpdf, get_page_count
 from tag_predictor import TagPredictor
@@ -271,11 +271,11 @@ def process_pdf(pdf_file):
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
   course = input_with_tab_complete("course: ", get_known_courses(), prefill=course)
   folder_id, shortcut_folder = get_gfolders_for_course(course)
-  drive_links = "drive_links"
+  needs_sharing = False
   if shortcut_folder and not folder_id:
     folder_id = shortcut_folder
     shortcut_folder = None
-    # drive_links = "hidden_links"
+    needs_sharing = True
   slugfield = slug
   extra_fields = ""
   if trans['author_uid'] == 'geoff':
@@ -344,6 +344,9 @@ subcat: poetry{extra_fields}"""
   if not filegid:
     print("Failed to upload!")
     quit(1)
+  if needs_sharing:
+    print("Sharing the file publicly...")
+    share_drive_file_with_everyone(filegid)
   drive_link = DRIVE_LINK.format(filegid)
   if shortcut_folder:
     print("Creating the private shortcut...")
@@ -362,7 +365,7 @@ title: "{title}"
 translator: {author}
 slug: "{slugfield}"{extra_fields}
 external_url: "{external_url}"
-{drive_links}:
+drive_links:
   - "{drive_link}"
 {coursefields}tags:
   - 
