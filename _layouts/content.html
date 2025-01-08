@@ -23,12 +23,12 @@ layout: default
   <header class="post-header">
     <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
     <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
-    {%- if page.category == "av" and page.external_url contains "youtu" -%}
-      {%- comment -%}Don't add an img on top if there will be a YouTube player below{%- endcomment -%}
-    {%- elsif page.olid -%}
+    {%- if page.olid -%}
     <img src="https://buddhistuniversity.net/assets/imgs/covers/{{ page.olid }}.jpg" alt="the book cover">
-    {% elsif page.image %}
+    {%- elsif page.image -%}
     <img src="{{page.image}}">
+    {%- elsif page.category == "av" and page.external_url contains "youtu" -%}
+      {%- comment -%}Don't add an img on top if there will be a YouTube player below{%- endcomment -%}
     {%- elsif page.drive_links[0] -%}{%- if 'pdf,mp4' contains page.formats[0] -%}
     {%- assign dlink = page.drive_links[0] | split: "/" -%}
     {%- assign dlink = dlink[5] -%}
