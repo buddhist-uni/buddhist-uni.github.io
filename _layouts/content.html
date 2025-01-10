@@ -33,7 +33,7 @@ layout: default
     {%- assign dlink = page.drive_links[0] | split: "/" -%}
     {%- assign dlink = dlink[5] -%}
     {%- if dlink.size == 28 or dlink.size == 33 or dlink.size == 44 -%}
-    <img src="https://drive.google.com/thumbnail?authuser=0&sz=h500&id={{ dlink }}">
+    <img src="https://drive.google.com/thumbnail?authuser=0&sz=h500&id={{ dlink }}" onerror="this.remove()">
     {%- endif -%}{%- endif -%}{%- endif -%}
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% if page.subcat %}{% include content_icon.html category=page.category subcat=page.subcat %} {% endif %}{{ title | first }}
