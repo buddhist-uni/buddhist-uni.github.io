@@ -18,4 +18,4 @@ number: 85
 pages: 20
 ---
 
-This work explores the history of Buddhism in Thailand, beginning with an overview of four major traditions: Theravāda, Mahāyāna, Burmese, and Sri Lankan. It then examines the state of Buddhism in Thailand as of the mid-20th century, with a particular focus on the Sangha, as well as the roles of involvement in its organization and functions.
+The history of Buddhism in Thailand, beginning with an overview of the four major influences—Theravāda, Mahāyāna, Burmese, and Sri Lankan Buddhism—and ending with the state of the Thai Saṅgha in the mid-20th century.
