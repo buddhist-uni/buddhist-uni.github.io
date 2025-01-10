@@ -2,7 +2,7 @@
 title: "Buddhism in Thailand: Its Past and Its Present"
 authors:
   - " Karuna Kusalasaya"
-external_url: "https://www.buddhanet.net/pdf_file/bud-thailand.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh085_Kusalasaya_Buddhistm-In-Thailand-Past-and-Present.html"
 drive_links:
   - "https://drive.google.com/file/d/1kEUKR_4HvpVCKS7-gOwdzuJ6AKQYRTkW/view?usp=sharing"
   - "https://drive.google.com/file/d/1KroWriHcBsrP1XvFuTKDlitGbt4lJtaE/view?usp=drive_link"
