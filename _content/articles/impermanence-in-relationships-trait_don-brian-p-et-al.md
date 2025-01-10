@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1zP3vCstH_VsxgZtDfHzETdIoMKnbkfeL/view?usp=drivesdk"
 course: groups
 tags:
-  - sati
+  - meditation
   - function
 year: 2020
 month: may
