@@ -7,10 +7,11 @@ drive_links:
   - "https://drive.google.com/file/d/1uY3c4CarmSTsxGKDYQMP9gSGxjqOb2cI/view?usp=sharing"
 course: thai
 tags:
-  - violence
+  - monastic-theravada
+  - sangha
 year: 2022
 month: mar
-journal: "vice"
+journal: "Vice"
 pages: 9
 ---
 
