@@ -13,8 +13,8 @@ year: 2022
 month: nov
 journal: "Religions"
 volume: 13
-number: 11
-pages: "1042--1042"
+number: 1042
+pages: 31
 publisher: "Multidisciplinary Digital Publishing Institute"
 openalexid: W4307869210
 ---
