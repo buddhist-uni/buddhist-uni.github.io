@@ -1,5 +1,5 @@
 ---
-title: "An Iridescence on the Water : The Teachings of Chao Khun Nararatana Rajamanit"
+title: "An Iridescence on the Water: The Teachings of Chao Khun Nararatana Rajamanit"
 authors:
   - geoff
 external_url: "https://www.dhammatalks.org/Archive/Writings/ThaiAjaans/ChaoKhunNararatana.pdf"
@@ -8,6 +8,7 @@ drive_links:
 course: thai
 tags:
   - path
+  - lay
 year: 1997
 pages: 6
 ---
@@ -16,4 +17,4 @@ pages: 6
 while we’re doing it, and after it’s done, we have to practice keeping the mind
 cheerful and bright, with a constant sense of well-being.
 
-A concise overview of the teachings of Chao Khun Nararatana Rajamanit, a respected yet lesser-known teacher of the Thai Forest tradition.
+A concise overview of the teachings of Chao Khun Nararatana Rajamanit, a respected yet lesser-known teacher of the Thai tradition.
