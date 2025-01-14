@@ -15,4 +15,4 @@ journal: "Vice"
 pages: 9
 ---
 
-The Vice article discusses a series of scandals involving Buddhist monks in Thailand, who have been arrested for serious offenses such as corruption, murder, and drug trafficking. These incidents have tarnished the reputation of Thailand's monastic community, raising concerns about the integrity of religious institutions in the country. The Thai government has initiated measures to address these issues, aiming to restore public trust in the Buddhist clergy.
+These incidents have tarnished the reputation of Thailand's monastic community, raising concerns about the integrity of the religious institutions in the country and raised questions about what reforms may be needed.
