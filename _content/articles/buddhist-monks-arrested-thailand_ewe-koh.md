@@ -15,4 +15,4 @@ journal: "Vice"
 pages: 9
 ---
 
-These incidents have tarnished the reputation of Thailand's monastic community, raising concerns about the integrity of the religious institutions in the country and raised questions about what reforms may be needed.
+These incidents have tarnished the reputation of Thailand's monastic community, raising concerns about the integrity of the religious institutions in the country and questions about what reforms may be needed.

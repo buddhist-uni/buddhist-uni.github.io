@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1ITgASboDbSRVk-zvuxzAJ3pFu1AMntBZ/view?usp=sharing"
 course: thai
 tags:
-  - path
   - lay
 year: 1997
 pages: 6
@@ -17,4 +16,4 @@ pages: 6
 while we’re doing it, and after it’s done, we have to practice keeping the mind
 cheerful and bright, with a constant sense of well-being.
 
-A concise overview of the teachings of Chao Khun Nararatana Rajamanit, a respected yet lesser-known teacher of the Thai tradition.
+A concise overview of the teachings of Chao Khun Nararatana Rajamanit, a respected yet lesser-known teacher of the Thai City tradition.
