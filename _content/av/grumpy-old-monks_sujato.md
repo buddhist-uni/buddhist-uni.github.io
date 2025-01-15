@@ -8,10 +8,11 @@ drive_links:
 formats: [mp3]
 course: thai
 tags:
-  - wider
+  - form
+  - modern
 year: 2009
 month: may
 minutes: 64
 ---
 
-A brief talk on the history of the Thai Forest Tradition, it's origins and monks.
+A brief talk on the history of the Thai Forest Tradition, its origins and monks.
