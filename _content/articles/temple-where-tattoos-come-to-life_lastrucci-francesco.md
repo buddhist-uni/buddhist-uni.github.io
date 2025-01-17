@@ -2,13 +2,12 @@
 title: "Inside the Thai Temple Where Tattoos Come to Life"
 authors:
   - "Francesco Lastrucci"
-external_url: ""https://www.nytimes.com/2021/10/25/travel/sak-yant-tattoo-thailand.html
+external_url: "https://www.nytimes.com/2021/10/25/travel/sak-yant-tattoo-thailand.html"
 drive_links:
   - "https://drive.google.com/file/d/1bmMEN9bdURZF1MRDDJQf8PPn2bZ2iE_i/view?usp=sharing"
 course: thai
 tags:
-  - mantra
-  - tantric
+  - tantric-theravada
 year: 2021
 month: oct
 journal: "The New York Times"
