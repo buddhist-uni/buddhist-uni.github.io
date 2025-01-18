@@ -16,3 +16,4 @@ titlecase
 pypdf
 Mastodon.py
 atproto
+ebooklib
