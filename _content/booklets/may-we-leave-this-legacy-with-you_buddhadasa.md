@@ -7,12 +7,10 @@ external_url: "https://suanmokkh.org/system/books/files/000/000/097/original/Bud
 drive_links:
   - "https://drive.google.com/file/d/1lL8BmGt2EcbHHdo71YSGNDxFhX_oakOl/view?usp=sharing"
 course: thai
-tags:
-  - path
-year: 2017
+year: 2015
 publisher: "The Buddhadāsa Indapañño Archives"
 address: "Bangkok"
-pages: 80
+pages: 7
 ---
 
 > Creating mutual understanding
