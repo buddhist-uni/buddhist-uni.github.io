@@ -971,6 +971,10 @@
   "private": null,
   "public": "https://drive.google.com/drive/folders/1v5OmozON-u2nVX90liNgyGydtKzH2xjV"
  },
+ "madagascar": {
+  "private": "https://drive.google.com/drive/folders/1J2gvsgmfNjdW0aOZ1yUFdVFFlKZ_miWR",
+  "public": null
+ },
  "madhyamaka": {
   "private": "https://drive.google.com/drive/folders/168sej_1YFh-4XxERUiRw6REwAbbVfYtS",
   "public": null
@@ -1217,6 +1221,10 @@
  },
  "ocean": {
   "private": "https://drive.google.com/drive/folders/1C1zR6sXGrmEOwjs5VdWNh_rJOpOaT7os",
+  "public": null
+ },
+ "ohio": {
+  "private": "https://drive.google.com/drive/folders/1ItBwxiOtQEpNa3SDHJBIISYXNdGLDAfo",
   "public": null
  },
  "old-versions": {
