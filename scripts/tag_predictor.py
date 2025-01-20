@@ -224,7 +224,7 @@ class TagPredictor:
 
     Usage
     -------
-    big_classifier = OBUTopicClassifier.load(DATA_DIRECTORY.joinpath('models/default.pkl'))
+    big_classifier = TagPredictor.load(DATA_DIRECTORY.joinpath('models/default.pkl'))
     tags = big_classifier.predict(['Introduction to Buddhism', 'How to Meditate: A Guide to Peace'])
     # tags should now ~= ['buddhism', 'meditation']
     """
@@ -259,7 +259,7 @@ class TagPredictor:
 
     @classmethod
     def load(cls, filepath: Path | str=None):
-        """Loads a new instance of OBUTopicClassifier from the given save_as'ed .pkl file"""
+        """Loads a new instance of TagPredictor from the given save_as'ed .pkl file"""
         if not filepath:
             filepath = MODELS_DIRECTORY.joinpath('default.pkl')
         from sklearn.exceptions import InconsistentVersionWarning

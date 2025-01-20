@@ -688,8 +688,8 @@ class OBUTopicClassifier:
     classifier.save_as(model_fp)
     predictor = TagPredictor.load(model_fp)
     # Or can pass the data directly via:
-    # predictor = TagPredictor(classifier.vectorizer_.vocabulary_, classifier.classifiers_)
-    predictor.predict(['Introduction to Buddhism', 'How to Meditate: A Guide to Peace'])
+    predictor = TagPredictor(classifier.vectorizer_.vocabulary_, classifier.classifiers_)
+    predictions = predictor.predict(['Introduction to Buddhism', 'How to Meditate: A Guide to Peace'])
     # should return ^ ['buddhism', 'meditation']
     """
     def __init__(

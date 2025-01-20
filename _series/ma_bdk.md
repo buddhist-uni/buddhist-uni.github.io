@@ -1,5 +1,5 @@
 ---
-title: "BDK English Tripiṭaka Series Middle-Length Discourses"
+title: "BDK English Tripiṭaka Middle-Length Discourses"
 external_url: "https://bdkamerica.org/?post_types=&s=madhyama+discourses"
 authors:
   - analayo
