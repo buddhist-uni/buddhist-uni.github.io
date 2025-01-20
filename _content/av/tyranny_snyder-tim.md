@@ -5,6 +5,7 @@ authors:
 subcat: course
 external_url: "https://youtube.com/playlist?list=PLhZxrogyToZsllfRqQllyuFNbT-ER7TAu"
 status: featured
+image: https://beaversdigest.orangemedianetwork.com/wp-content/uploads/2024/08/ontyranny-1130x1200.png
 course: society
 tags:
   - power

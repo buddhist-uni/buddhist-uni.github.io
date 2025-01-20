@@ -7,11 +7,12 @@ external_url: "https://www.suanmokkh.org/books/127"
 drive_links:
   - "https://drive.google.com/file/d/1NBUk6gprmIIjhFhXPyG11V6I-ndBAG7D/view?usp=sharing"
   - "https://drive.google.com/file/d/1JSgzV1C3rueKFWINlw-mFhuU_R34TM9X/view?usp=drivesdk"
-course: interfaith
+course: interfaith # maybe archive
 tags:
   - modern
 year: 1969
 address: "Bangkok"
+olid: OL13159610M
 pages: 29
 ---
 
