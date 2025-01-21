@@ -9,7 +9,7 @@ drive_links:
 course: art
 status: featured
 tags:
-  - modern-art
+  - modern-art # probably move here eventually
   - beauty
 year: 2005
 month: sep
