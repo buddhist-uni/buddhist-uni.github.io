@@ -12,6 +12,7 @@ tags:
   - dhamma
 year: 1976
 pages: 11
+---
 
 > The heart is what is aware. When the current of sound dealing with
 the Dhamma comes in and makes continual contact with the heart, the
