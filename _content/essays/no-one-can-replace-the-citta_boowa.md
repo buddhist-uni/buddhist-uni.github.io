@@ -8,13 +8,17 @@ drive_links:
   - "https://drive.google.com/file/d/1vc-3bID3rcdQj8DmYyuPw-KQAPw7ngCe/view?usp=drive_link"
 course: thai
 tags:
-  - path
+  - samadhi
+  - nibbana
+  - sangha
 year: 2012
 publisher: "Upekka Pty Ltd"
 pages: 13
 ---
 
-> This is the practice. I ask that all of you practise. Don’t ignore your heart, alright. Don’t let
-the Kilesa walk all over it.
+> Samādhi, in all its glory is Samudaya.
 
-In this discourse, Luang Ta Maha Boowa emphasizes the unique and irreplaceable nature of the mind (citta) in Buddhist practice. He stresses the importance of personal responsibility for cultivating and purifying the mind.
+Luang Dta Maha Boowa talks at the funeral for Ajahn Paññā about the importance of good teachers to keep us straight on the path.
+
+> This is the practice. I ask that all of you practise. Don’t ignore your heart, alright? Don’t let
+the Kilesa walk all over it.
