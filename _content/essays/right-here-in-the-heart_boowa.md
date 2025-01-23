@@ -9,7 +9,6 @@ drive_links:
 course: thai
 tags:
   - path
-  - dhamma
 year: 1976
 pages: 11
 ---
