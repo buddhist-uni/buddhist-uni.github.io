@@ -8,9 +8,10 @@ drive_links:
 course: monastic
 status: featured
 tags:
-  - dhamma
+  - faith
   - buddhism
   - oceans
+  - view
   - an
 # imagery tag covered by Hecker's Similes
 year: 2012

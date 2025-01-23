@@ -7,7 +7,6 @@ source_url: "https://doi.org/10.1162/001152605774431491"
 drive_links:
   - "https://drive.google.com/file/d/19mtagACtLhrr592rDgOKUSEFsKWRtANv/view?usp=drivesdk"
 course: art
-status: featured
 tags:
   - modern-art # probably move here eventually
   - beauty

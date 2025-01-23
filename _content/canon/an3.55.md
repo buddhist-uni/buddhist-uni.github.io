@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Z2QqJUc20JO8rWTM5Rzp4NO2rRy8gxou/view?usp=drivesdk"
 course: nibbana
 tags:
-  - dhamma
+  - faith
   - an
 # buddha tag covered by Nyanamoli's *Life*
 year: 2018

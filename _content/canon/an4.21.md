@@ -9,7 +9,7 @@ course: sangha
 status: featured
 tags:
   - an
-  - dhamma
+  - faith
 # buddha tag covered by Nyanamoli's *Life*
 year: 2012
 pages: 3
