@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1C6paTD_eqUkBiMNjp9iDxNekG1G5Ol0T/view?usp=drivesdk"
 file_links:
   - "smallpdfs/sumedho_2012_mindfulness.pdf"
-course: meditation
 tags:
+  - meditation
   - retreats
   - chah
 year: 2012

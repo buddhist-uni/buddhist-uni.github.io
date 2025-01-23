@@ -136,6 +136,16 @@ def get_gfolders_for_course(course):
     return (None, subfolder)
   return (public_folder, private_folder)
 
+def get_course_for_folder(folderid):
+  gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
+  courselist = {v['public']: k for k, v in gfolders.items()}
+  if not folderid.startswith("http"):
+    folderid = FOLDER_LINK.format(folderid)
+  if folderid in courselist:
+    return courselist[folderid]
+  courselist = {v['private']: k for k, v in gfolders.items()}
+  return courselist.get(folderid, None)
+
 @cache
 def google_credentials():
     creds = None

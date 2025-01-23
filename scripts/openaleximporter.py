@@ -324,19 +324,22 @@ def _main():
     gfiles = gfiles["files"]
     if len(gfiles) == 0:
       print("No suitable files found.")
+  for gfile in gfiles:
+    parentid = gfile['parents'][0]
+    gfile['course'] = get_course_for_folder(parentid)
   if len(gfiles) == 1:
     gfile = gfiles[0]
     print(f"Got \"{gfile['name']}\"")
   if len(gfiles) > 1:
     print(f"Got {len(gfiles)} candidates.\nPlease select one:")
-    i = radio_dial([f['name'] for f in gfiles]+["Other (I'll supply a URL manually)"])
+    i = radio_dial([f"{f['name']} in {f['course']}" for f in gfiles]+["Other (I'll supply a URL manually)"])
     if i < len(gfiles):
       gfile = gfiles[i]
   if gfile:
     glink = gdrive.DRIVE_LINK.format(gfile['id'])
   else:
     glink = input("Google Drive Link: ")
-  course = input_with_tab_complete("course: ", gdrive.get_known_courses())
+  course = input_with_tab_complete("course: ", gdrive.get_known_courses(), prefill=gfile['course'])
   folders = gdrive.get_gfolders_for_course(course)
   gdrive.move_gfile(glink, folders)
   filepath = make_library_entry_for_work(work, course=course, glink=glink)
