@@ -4,7 +4,7 @@ authors:
   - bodhi
 subcat: course
 source_url: "https://bodhimonastery.org/the-buddhas-teaching-as-it-is.html"
-external_url: "https://www.buddhanet.net/audio-lectures.htm"
+external_url: "https://www.buddhanet.net/audio-lectures"
 canary_url: "https://www.buddhanet.net/mp3/bkikkhu-bodhi/BT02B.MP3"
 drive_links:
   - "https://drive.google.com/drive/folders/1BxgsVUvgtWyklFTpavFrnQ135brCTnXO"

@@ -11,4 +11,4 @@ year: 2020
 pages: 200
 ---
 
-Short, easy-to-read summaries of all [the traditional Jātaka tales](/content/canon/ja+cmy_anandajoti).
+Short, easy-to-read summaries of all [the traditional Jātaka tales](/content/booklets/ja+cmy_anandajoti).
