@@ -24,7 +24,7 @@ The Buddha explains that he doesn't talk in such terms, as he has overcome all s
 
 (**Optional Readings**)
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
-*Fundamentals* chapters [eight](https://www.buddhanet.net/fundbud9.htm) and [nine](https://www.buddhanet.net/funbud10.htm) are also on Karma and Rebirth.
+*Fundamentals* chapters [eight](https://www.buddhanet.net/fundbud9) and [nine](https://www.buddhanet.net/funbud10) are also on Karma and Rebirth.
 " %}
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
 [The *Samudaya* chapter of WTBT](https://web.archive.org/web/20120226193918/http://sites.google.com/site/rahulawhatthebuddha/the-second-noble-truth) analyzes the arising of suffering in particular as a function of our karma.

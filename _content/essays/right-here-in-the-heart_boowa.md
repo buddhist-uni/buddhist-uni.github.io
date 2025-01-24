@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1B-Xjz1qEis03V1QksHD3lyJuZV6q4fhe/view?usp=sharing"
 course: thai
 tags:
-  - path
+  - meditation
 year: 1976
 pages: 11
 ---

@@ -12,7 +12,7 @@ order: 5
 We'll start with Rahula's description of the First Noble Truth by reading [the *Dukkha* chapter](https://web.archive.org/web/20120226193917/http://sites.google.com/site/rahulawhatthebuddha/the-first-noble-truth) of WTBT.
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
-Then continue with chapters [three](https://www.buddhanet.net/fundbud4.htm) and [four](https://www.buddhanet.net/fundbud5.htm) of *Fundamentals*: two lectures covering all four Truths.
+Then continue with chapters [three](https://www.buddhanet.net/fundbud4) and [four](https://www.buddhanet.net/fundbud5) of *Fundamentals*: two lectures covering all four Truths.
 " %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
 And, if you've been reading the Buddha's story, continue with Chapters 10–13 on the Buddha's Renunciation.

@@ -18,7 +18,7 @@ The result of mindfulness is increased mental clarity.
 Chapter 7 ("Concentration") discusses these heightened states of consciousness.
 ' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-[Chapter 7](https://www.buddhanet.net/fundbud8.htm) of *Fundamentals* discusses how Concentration leads to "Wisdom"
+[Chapter 7](https://www.buddhanet.net/fundbud8/) of *Fundamentals* discusses how Concentration leads to "Wisdom"
 ' %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 9 ("Four Kinds of Happiness") outlines the happiness beyond sensual indulgence which is accessible through meditation.' %}
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="

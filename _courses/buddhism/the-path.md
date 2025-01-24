@@ -24,7 +24,7 @@ In this story from the Buddhist canon, the Buddha teaches a nun which character 
 Read it carefully. Do any of the "bad" qualities surprise you?
 ' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
-And [Chapter 5](https://www.buddhanet.net/fundbud6.htm) of *Fundamentals* covers Buddhist morality: the cornerstone of the path.
+And [Chapter 5](https://www.buddhanet.net/fundbud6) of *Fundamentals* covers Buddhist morality: the cornerstone of the path.
 " %}
 
 ## Lecture
