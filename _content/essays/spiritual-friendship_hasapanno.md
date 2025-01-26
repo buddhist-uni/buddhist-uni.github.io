@@ -12,8 +12,9 @@ tags:
   - friendship
   - bodhisatta
   - iddhi
+  - form
 year: 2013
 pages: 8
 ---
 
-A four-part blog series that looks at the relationship of Kruba SiVichai and Luang Pu Mun, in particular Kruba SiVichai's involvement in temple restoration across Northern Thailand.
+A retelling of the wholesome, spiritual friendship between Kruba SiVichai and Luang Pu Mun: the Bodhisattva and the Arahant.
