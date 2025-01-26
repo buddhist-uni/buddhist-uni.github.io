@@ -1,6 +1,7 @@
 ---
 title: "Spiritual Friendship"
-authors: "Hāsapañño Bhikkhu
+authors: 
+- "Hāsapañño Bhikkhu"
 source_url: "https://web.archive.org/web/20201108104832/https://sites.google.com/site/wideanglewilderness/quotestories/spiritualfriendship"
 drive_links:
   - "https://drive.google.com/file/d/1rvXIqx1H_C-gxb9QVh3gszBK5DgvsH3E/view?usp=sharing"
