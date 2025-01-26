@@ -18,7 +18,7 @@ for fp in local_files:
   system_open(fp)
   with yaspin(text="Processing..."):
     import gdrive
-    from pdfutils import readpdf
+    from pdfutils import readpdf, get_page_count
     from epubutils import read_epub
     from tag_predictor import (
       TagPredictor,
@@ -70,7 +70,7 @@ for fp in local_files:
         work, _ = prompt_for_work(query.replace("_", " "))
         if work:
           gdrive.move_gfile(glink, gfolder)
-          filepath = make_library_entry_for_work(work, course=course, glink=glink)
+          filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=get_page_count(fp))
           print(f"\nOpening {filepath}\n")
           system_open(filepath)
           fp.unlink()

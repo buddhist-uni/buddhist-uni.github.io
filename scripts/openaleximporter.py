@@ -45,7 +45,7 @@ def alt_url_for_work(work, oa_url):
       pass
   return ret
 
-def make_library_entry_for_work(work, draft=False, course=None, glink='') -> str:
+def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None) -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
@@ -210,6 +210,9 @@ authors:
     try:
         fd.write(f"pages: \"{int(work['biblio']['first_page'])}--{int(work['biblio']['last_page'])}\"\n")
     except (TypeError, KeyError, ValueError):
+      if pagecount:
+        fd.write(f"pages: {pagecount}\n")
+      else:
         if category in ('monographs', 'booklets', 'essays', 'reference'):
             fd.write("pages: \n")
         if category in ('articles', 'papers', 'excerpts'):
