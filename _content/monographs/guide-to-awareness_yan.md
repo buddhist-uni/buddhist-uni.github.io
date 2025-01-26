@@ -1,5 +1,5 @@
 ---
-title: "A Guide to Awareness: Dhamma Talks on the Foundations of Mindfulness  (Satipaññhàna Sutta)"
+title: "A Guide to Awareness: Dhamma Talks on the Foundations of Mindfulness  (Satipaṭṭhāna Sutta)"
 authors:
   - yan
 translator: "Bhikkhu Ariyesako and Bhikkhu Kantasãlo"
@@ -20,4 +20,4 @@ calm and at developing the arising of true wisdom and insight. We
 depend on the practice as laid down by the Lord Buddha which I have
 been explaining in stages.
 
-In this brief work, Somdet Phra Nyanasamvara illuminates the principles of mindfulness within the larger framework of mental cultivation. Each section is taken from twenty-two talks given between August and October 1961 to both monastics and laypeople, in which the venerable offers practical instruction for cultivating clarity, calm, and insight.
+In this brief work, Somdet Phra Nyanasaṁvara illuminates the principles of mindfulness within the larger framework of mental cultivation. Each section is taken from twenty-two talks given between August and October 1961 to both monastics and laypeople, in which the venerable offers practical instruction for cultivating clarity, calm, and insight.

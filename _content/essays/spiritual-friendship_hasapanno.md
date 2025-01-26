@@ -17,4 +17,4 @@ year: 2013
 pages: 8
 ---
 
-A retelling of the wholesome, spiritual friendship between Kruba SiVichai and Luang Pu Mun: the Bodhisattva and the Arahant.
+A retelling of the wholesome, spiritual friendship between Kruba Srivichai and Luang Pu Mun: the Bodhisattva and the Arahant.

@@ -44,10 +44,13 @@ for fp in local_files:
       continue
     if not gfs:
       raise NotImplementedError("File not found on Drive at all.")
+    pagecount = None
     if fp.suffix.lower() == '.pdf':
       text = readpdf(fp)
+      pagecount = get_page_count(fp)
     elif fp.suffix.lower() == '.epub':
       text = read_epub(fp)
+      pagecount = -(len(text)//-2200)
     else:
       print(f"Warning! Dunno how to read a {fp.suffix} file!")
       text = fp.stem
@@ -70,7 +73,7 @@ for fp in local_files:
         work, _ = prompt_for_work(query.replace("_", " "))
         if work:
           gdrive.move_gfile(glink, gfolder)
-          filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=get_page_count(fp))
+          filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount)
           print(f"\nOpening {filepath}\n")
           system_open(filepath)
           fp.unlink()
