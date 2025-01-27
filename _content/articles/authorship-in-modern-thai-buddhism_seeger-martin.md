@@ -1,5 +1,5 @@
 ---
-title: "The (Dis)appearance of an Author’: Some Observations and Reflections on Authorship in Modern Thai Buddhism"
+title: "The (Dis)appearance of an Author: Some Observations and Reflections on Authorship in Modern Thai Buddhism"
 authors:
   - "Martin Seeger"
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/23454/17211"
@@ -8,6 +8,7 @@ drive_links:
 course: thai
 tags:
   - communication
+  - intellectual-property
 year: 2015
 journal: jiabs
 volume: 37
