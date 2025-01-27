@@ -9,6 +9,7 @@ course: thai
 tags:
   - intellectual-property
   - books
+  - vinaya-controversies
 year: 2015
 journal: jiabs
 volume: 37
