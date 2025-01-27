@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1ljapwzBqWklaKm-QifZIZanRWbswJgYC/view?usp=sharing"
 course: thai
 tags:
-  - communication
   - intellectual-property
+  - books
 year: 2015
 journal: jiabs
 volume: 37
@@ -19,5 +19,3 @@ pages: "499--536"
 concepts on authorship in Thai Buddhism and strongly invite an
 analysis and deconstruction of ideas of ‘authorship’ as a clear-cut
 category.
-
-In this article, Seeger explores authorship in modern Thai Buddhism, emphasizing its complexities. He examines three significant Buddhist texts to reveal their attributed, contested, or genuine authorship, illustrating tensions between tradition, intellectual property, and individuality.
