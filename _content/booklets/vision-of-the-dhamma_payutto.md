@@ -6,11 +6,9 @@ external_url: "https://archive.org/details/vision_of_the_dhamma_a_collection_of_
 drive_links:
   - "https://drive.google.com/file/d/1Gidy_sGWmX2KbYvQLkEaYyXLo2uUcgfP/view?usp=drive_link"
 course: thai
-tags:
-  - path
 year: 2007
-month: Oct
-publisher: Wat Nyanavesakavan
+month: oct
+publisher: "Wat Nyanavesakavan"
 address: "Bang Krathuek"
 pages: 138
 ---
