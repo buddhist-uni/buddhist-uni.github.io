@@ -16,4 +16,4 @@ publisher: "Southeast Asia Crossroads"
 minutes: 55
 ---
 
-Katherine Bowie is interviewed with Eric Jones, Kanjana Thepboriruk, and Matthew Trew about the famous, Northern Thai monk Kruba Srivichai and his role in modern Thai history.
+Katherine Bowie is interviewed by Eric Jones, Kanjana Thepboriruk, and Matthew Trew about the famous, Northern Thai monk Kruba Srivichai and his role in modern Thai history.
