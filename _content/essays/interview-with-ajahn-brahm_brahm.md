@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1hA4uuiuaNcnIiGDhmYpheTmrzDNL9iQK/view?usp=sharing"
 course: thai
 tags:
-  - nuns
+  - monastic
 year: 2008
 month: feb
 pages: 32
