@@ -8,11 +8,12 @@ drive_links:
   - "https://drive.google.com/file/d/1NtdVqt8w-E1RfAfao_qFPjECQvaeh7dO/view?usp=drive_link"
 course: thai
 tags:
-  - sangha
+  - monastic
+  - lanna
 year: 2019
 month: oct
 publisher: "Southeast Asia Crossroads"
 minutes: 55
 ---
 
-In this episode, Katherine Bowie is joined by Eric Jones, Kanjana Thepboriruk, and Matthew Trew to explore her new research on the influential monk Kruba Srivichai and his role in shaping modern Thailand.
+Katherine Bowie is interviewed with Eric Jones, Kanjana Thepboriruk, and Matthew Trew about the famous, Northern Thai monk Kruba Srivichai and his role in modern Thai history.
