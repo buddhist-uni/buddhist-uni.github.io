@@ -4,7 +4,6 @@ authors:
   - graeber-david
 course: social
 external_url: "https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fulllist/special/statesofdamage/syllabus201516/graeber-debt_the_first_5000_years.pdf"
-status: featured
 olid: OL27883779M
 tags:
   - debt

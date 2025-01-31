@@ -317,19 +317,19 @@ def _main():
     quit(0)
   with yaspin(text="Searching Drive for file..."):
     title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
-    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf' AND 'me' in owners").execute()
+    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
   if "files" not in gfiles:
     raise RuntimeError("Unexpected GDrive API response: "+gfiles)
   gfiles = gfiles["files"]
   gfile = None
   if len(gfiles) == 0:
-    gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners").execute()
+    gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
     gfiles = gfiles["files"]
     if len(gfiles) == 0:
       print("No suitable files found.")
   for gfile in gfiles:
     parentid = gfile['parents'][0]
-    gfile['course'] = get_course_for_folder(parentid)
+    gfile['course'] = gdrive.get_course_for_folder(parentid)
   if len(gfiles) == 1:
     gfile = gfiles[0]
     print(f"Got \"{gfile['name']}\"")

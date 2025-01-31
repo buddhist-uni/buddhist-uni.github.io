@@ -7,6 +7,7 @@ external_url: "https://www.buddhanet.net/pdf_file/tree-forest.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1hBIvCOorpHc63PNLnl2JxBCbfKnB5M6r/view?usp=sharing"
 course: thai
+status: featured
 tags:
   - thought
 year: 1994
