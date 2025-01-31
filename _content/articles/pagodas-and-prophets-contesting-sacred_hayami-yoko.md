@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1-CFekuNg59HO1OIY7GPSj7eh42fsXM1m/view?usp=drivesdk"
 course: burmese
 tags:
-  - karen
+  - hill-tribe # maybe move here?
   - roots
 year: 2011
 month: nov

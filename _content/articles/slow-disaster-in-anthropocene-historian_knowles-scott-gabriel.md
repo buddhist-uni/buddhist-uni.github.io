@@ -8,6 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Z5vR3dHGF1Nm5TbM2sDft4vlwjIckqtJ/view?usp=drivesdk"
 tags:
   - historiography
+  - korea
 year: 2020
 month: sep
 journal: daedalus
