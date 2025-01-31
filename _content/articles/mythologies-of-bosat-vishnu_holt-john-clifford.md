@@ -2,12 +2,12 @@
 title: "Mythologies of Bosat Viṣṇu"
 authors:
   - "John Clifford Holt"
-external_url: "http://www.shin-ibs.edu/documents/pwj3-9/10Holt39.pdf"
+external_url: "https://www.shin-ibs.edu/documents/pwj3-9/10Holt39.pdf"
 drive_links:
   - "https://drive.google.com/file/d/13iKRmdBZeIwwsqg_mwOZjpBlAhjjslkT/view?usp=sharing"
 course: sri-lankan
 tags:
-  - mythology
+  - indic-religions
   - literature
 year: 2007
 journal: pw
