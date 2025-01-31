@@ -131,6 +131,10 @@
   "private": "https://drive.google.com/drive/folders/1YdLk7zb_jHepPpMgnKKbyz7QbKlyrefu",
   "public": "https://drive.google.com/drive/folders/14Ujzt90QwDM4Y0a1icJ2Wh2uP5nbHPJ4"
  },
+ "astronomy": {
+  "private": "https://drive.google.com/drive/folders/1It1omML6Qc1P1Vpn6g4D0qPO1Vex1zbd",
+  "public": null
+ },
  "australasia": {
   "private": "https://drive.google.com/drive/folders/1j3ebXdLnsVIpyB6Q5RtPuh-wqYOPJvs9",
   "public": null
@@ -638,6 +642,10 @@
  "future": {
   "private": "https://drive.google.com/drive/folders/1uTs0yXJUuhdt5BAeucrQCdP6T-wvvU4O",
   "public": "https://drive.google.com/drive/folders/1GaoxxhPOYpmIS3YIpkqAMdnwOSqr8T1c"
+ },
+ "game-theory": {
+  "private": "https://drive.google.com/drive/folders/1zzxYU_7wRhg1kI6Lw-Qlvsr0gGiDUE4_",
+  "public": null
  },
  "games": {
   "private": "https://drive.google.com/drive/folders/1xPQD2WIbCR9YowwWG56Nuq69_5HGd5Gw",
