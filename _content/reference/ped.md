@@ -8,7 +8,7 @@ alternative_url: "https://gandhari.org/dictionary?section=ptsd"
 drive_links:
   - "https://drive.google.com/file/d/1uGDSgO2LHQ0j2gj9oDWcuEgCO7GpghJZ/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1UGgBe8uTNFCWcvJ_TOI_PdDzCM56SvZX/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1GZV5k7M4jCDFIDkoNqyQmxlTOirB5dVh/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/103N5Q5G-s20vD30p3_R64RusPiffk1Vp/view?usp=drivesdk"
 file_links:
   - "largefiles/ped.pdf"
 formats: [pdf, mobi, html]
