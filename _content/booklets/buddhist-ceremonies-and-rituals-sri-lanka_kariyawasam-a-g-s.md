@@ -22,7 +22,6 @@ olid: OL13056113M
 > While the specific forms of ritual and ceremony in Sri Lankan
 popular Buddhism doubtlessly evolved over the centuries, it seems
 likely that this devotional approach to the Dhamma has its roots
-in lay Buddhist practice even during the time of the Buddha him-
-self.
+in lay Buddhist practice even during the time of the Buddha
 
-This booklet outlines the practices and observances that rightfully hold an essential place in the ongoing tradition of living Buddhism, as practiced by its followers. Since these practices are deeply woven into the religious life of the vast majority of devoted Buddhists, they cannot be casually dismissed as mere secondary additions to a so-called “pure” canonical Buddhism.
+An outline—and defense—of Sri Lankan ritual practices.
