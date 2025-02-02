@@ -11,8 +11,10 @@ source_url: "https://doi.org/10.1073/pnas.2313123121"
 drive_links:
   - "https://drive.google.com/file/d/1W8QyqpM8Bt3q4zG9PD6CG5H_CrQOpJgt/view?usp=drivesdk"
 course: asia
-tags:
+tags: # probably clean these up later
   - pleistocene
+  - prehistory
+  - archeology
 year: 2024
 month: mar
 journal: pnas

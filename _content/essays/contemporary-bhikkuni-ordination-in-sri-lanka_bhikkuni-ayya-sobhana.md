@@ -6,9 +6,11 @@ external_url: "https://bhikkhuni.net/contemporary-bhikkuni-ordination-in-sri-lan
 drive_links:
   - "https://drive.google.com/file/d/1oBgLUh0tJVeadyVNZ3oIwUct3_ucDBZM/view?usp=drive_link"
 course: nuns
+status: "rejected"
+reason: "probably out of date"
 tags:
   - sri-lankan
-year: 2005
+year: 2008
 pages: 5
 ---
 
