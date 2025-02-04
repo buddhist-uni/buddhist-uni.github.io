@@ -20,4 +20,7 @@ This being the last section of our course, we will read the three remaining simi
 
 ### Reflection
 
-It’s interesting to me that Bhikkhu Anālayo placed “emptiness” last. It seems to borrow from later Mahayana thoughts on the “two truths” and “perfection of wisdom,” since emptiness in the EBTs seems more closely related to _vipassana_ than _vimutti_. What do you think? Is emptiness the end of the path, or merely instrumental? How does understanding the EBTs as rhetoric help you to answer this question?
+It’s interesting to me that Bhikkhu Anālayo placed “emptiness” last. It seems to borrow from later Mahayana thoughts on the “two truths” and “perfection of wisdom,” since emptiness in the EBTs seems more closely related to _vipassana_ than _vimutti_. What do you think? Is emptiness the end of the path, or merely instrumental?
+
+During this course, we've been looking closely at the rhetoric of the EBTs.
+Does understanding the "skillful means" in the Suttas help you to answer questions like the above?

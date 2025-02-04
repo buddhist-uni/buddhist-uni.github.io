@@ -22,5 +22,5 @@ description: "Enlightenment is not another item on our todo list. It is the erra
 
 ### Reflection
 
-I could offer you enlightenment today, but it would cost you your life. Would you take it?
+If I could offer you enlightenment today, but it would cost you your life: Would you take it?
 

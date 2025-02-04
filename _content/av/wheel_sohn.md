@@ -9,9 +9,8 @@ course: cosmology
 status: featured
 tags:
   - samvega
-  - imagery
   - ambulit
-  - nekkhamma
+  - renunciation
   - becon
   - time
   - world

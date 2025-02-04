@@ -435,6 +435,10 @@
   "private": "https://drive.google.com/drive/folders/1ely3LR5T-1hS3JrRwVlIZM4EOjtz4Xhu",
   "public": "https://drive.google.com/drive/folders/1-ph1EaFvbcFk-AiCjeL28cbQmda4dy5Q"
  },
+ "cyprus": {
+  "private": "https://drive.google.com/drive/folders/10pD1bLCrTjAYGkK_PD6-G2ycbs42utLO",
+  "public": null
+ },
  "da": {
   "private": null,
   "public": "https://drive.google.com/drive/folders/1tWcdAteDS0VYVf9qn2uqNPG6bdZFI9AD"
@@ -1458,6 +1462,10 @@
  "regulation": {
   "private": "https://drive.google.com/drive/folders/1jdrYwgZsDDFqKRFG9ezK1CiWmCcD8Jux",
   "public": ""
+ },
+ "rejects": {
+  "private": "https://drive.google.com/drive/folders/11QbqLv2OT_ipe6cUJBoS6CPCrm7NfFTD",
+  "public": null
  },
  "religion": {
   "private": "https://drive.google.com/drive/folders/14MptEhQV_pgZTL528SrXtTPG42OdaWXR",

@@ -24,7 +24,7 @@ pages: 8
 openalexid: W4400909279
 ---
 
-> Preregistered analyses reveal a notable increase in biological stress levels among both LGBTIQ+ as well as those close to them during the campaign.
+> Preregistered analyses reveal a notable increase in biological stress levels among both LGBTIQ+ individuals as well as those close to them during the campaign.
 
 
 > These effects were, however, moderated by exposure to the campaign for marriage equality (i.e., yes-campaign), indicating the powerful buffering effects of the yes-campaign on the impact of discrimination on individuals’ health.
