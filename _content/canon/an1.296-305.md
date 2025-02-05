@@ -15,4 +15,4 @@ pages: 2
 
 > This one thing, when developed and cultivated, leads solely to disillusionment, dispassion, cessation, peace...
 
-Nine themes the Buddha recommends for meditation.
+Ten themes the Buddha recommends for meditation.
