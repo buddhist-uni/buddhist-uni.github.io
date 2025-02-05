@@ -26,7 +26,7 @@ openalexid: W4380630405
 ---
 
 > Neither behavioral nor imaging analyses supported the hypothesis that altruists’ reduced social discounting reflects effortfully overcoming selfishness.
-> Instead, group differences emerged in social value encoding regions [corresponding] to the subjective valuation of others’ welfare predicted by the social discounting model.
+> Instead, group differences emerged in [brain regions corresponding to] the subjective valuation of others’ welfare
 
 > Loving Kindness Meditation training did not result in more generous behavioral or neural patterns, but only greater perceived difficulty during social discounting.
 > Our results indicate extraordinary altruists’ generosity results from the way regions involved in social decision-making encode the subjective value of others’ welfare.
