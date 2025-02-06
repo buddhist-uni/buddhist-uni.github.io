@@ -1,13 +1,14 @@
 ---
-title: "Mettabhāvanā (Universal version) Friendliness Meditation"
+title: "Mettabhāvanā (Śri Laṅka version)
+Friendliness Meditation"
 authors:
   - anandajoti
-external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettabhavana-2.htm"
+external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettabhavana-1.htm"
 drive_links:
   - "https://drive.google.com/file/d/1knSztT3Wx2BO9feh5IFBOUypoRgO8wiX/view?usp=drive_link"
 course: sri-lankan
 tags:
-  - pali-canon
+  - brahmavihara
 year: 2008
 month: aug
 pages: 2
