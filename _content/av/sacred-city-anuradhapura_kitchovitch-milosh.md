@@ -9,4 +9,4 @@ month: may
 minutes: 6
 ---
 
-This short film showcases significant Buddhist sites in Anuradhapura, Sri Lanka, a city that served as the country's capital from the 4th century BCE to the 10th century CE. As a UNESCO World Heritage site, Anuradhapura is renowned for its ancient ruins and pivotal role in the early development of Buddhism in Sri Lanka.
+Some B-roll of the Buddhist sites at Anuradhapura, which served as Sri Lanka's capital from the 4th century BCE to the 10th century CE and is today a pilgrimage and UNESCO World Heritage site.
