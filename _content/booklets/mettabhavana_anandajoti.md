@@ -1,6 +1,5 @@
 ---
-title: "Mettabhāvanā (Śri Laṅka version)
-Friendliness Meditation"
+title: "Mettabhāvanā: Friendliness Meditation (A Sri Lankan Chant)"
 authors:
   - anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettabhavana-1.htm"
@@ -9,9 +8,10 @@ drive_links:
 course: sri-lankan
 tags:
   - brahmavihara
+  - theravada-chanting
 year: 2008
 month: aug
 pages: 2
 ---
 
-A Pāli and English line by line (interlinear) version of a short chanting text wishing well to all beings.
+A Pāli and English line by line (interlinear) version of a short chant wishing well to all beings based on the Visuddhimagga: starting close and working out.
