@@ -1,5 +1,6 @@
 ---
 title: "Sacred City of Anuradhapura, Sri Lanka"
+subcat: film
 authors:
   -  "Milosh Kitchovitch"
 external_url: "https://youtu.be/CAeVXUihzMw"
