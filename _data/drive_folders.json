@@ -1359,6 +1359,10 @@
   "private": "https://drive.google.com/drive/folders/161HCv4v0SJz4Ez6kVGOnguh7TsMYt5Fg",
   "public": "https://drive.google.com/drive/folders/121UG4I7zUucPcoWiYjgshHN8V0wCEFbf"
  },
+ "plants": {
+  "private": "https://drive.google.com/drive/folders/15gtYrjjd6bSYkbqGBfj2UULpj5xs3QiL",
+  "public": null
+ },
  "poetry": {
   "private": "https://drive.google.com/drive/folders/1-UqHT9_aRnn2XCjDYJ-MU0WjrqhbKFv0",
   "public": null
@@ -1490,6 +1494,10 @@
  "roots": {
   "private": "https://drive.google.com/drive/folders/1HIStQiNt4fj_uRD3DIBWiTD0n_fGUhfL",
   "public": "https://drive.google.com/drive/folders/1JNR4T7DrZUyFsE49PUgiw945ryXM1EYs"
+ },
+ "rural": {
+  "private": "https://drive.google.com/drive/folders/1vt8zjJpqenYYEIPmZF49c1zUmwcjvJTZ",
+  "public": null
  },
  "russia": {
   "private": "https://drive.google.com/drive/folders/1CzBNJsz5QmTQ0Q6TFEgifMo8KfQ9Jx9S",

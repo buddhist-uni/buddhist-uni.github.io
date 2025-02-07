@@ -1,5 +1,5 @@
 ---
-title: "Buddhist Forest Monasteries and Meditation Centres in Sri Lanka: Guide for Foreign Buddhist Practitioners"
+title: "Buddhist Forest Monasteries and Meditation Centres in Sri Lanka: A Guide for Foreign Buddhist Practitioners"
 authors:
   - "Bhikkhu Nyanatusita"
 external_url: "https://placestomeditate.wordpress.com/2018/08/11/overview-of-sri-lanka-monasteries/"
@@ -11,4 +11,4 @@ year: 2010
 pages: 38
 ---
 
-This comprehensive guide to Buddhist Forest Monasteries and Meditation Centres in Sri Lanka is specifically designed for Western bhikkhus and seasoned lay practitioners.
+A comprehensive guide to Buddhist Forest Monasteries and Meditation Centres in Sri Lanka specifically designed for Western Bhikkhus and seasoned lay practitioners.
