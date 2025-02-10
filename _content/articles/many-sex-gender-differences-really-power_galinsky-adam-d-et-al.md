@@ -10,8 +10,7 @@ external_url: "https://academic.oup.com/pnasnexus/article-pdf/3/2/pgae025/567723
 source_url: "https://doi.org/10.1093/pnasnexus/pgae025"
 drive_links:
   - "https://drive.google.com/file/d/1Q95sUppUYcsnTRt_XxdcrP1hJip52gu3/view?usp=drivesdk"
-course: gender
-status: featured
+course: gender # solidly
 tags:
   - power
 year: 2024

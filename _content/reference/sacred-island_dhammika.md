@@ -15,11 +15,7 @@ address: "Kandy"
 pages: 204 
 ---
 
-> The Saddhammopáyana puts it like this: “This Buddha land is illuminated by the luster of the sun of supreme wisdom and
-cooled by the moon of compassion. It is everywhere enclosed by
-the lofty peaks of the Buddha’s Dhamma and with hills of the gold
-and jewels of true understanding. The lions of self-confidence
-living comfortably and fearlessly in the forest of the Sangha
-decorate it.
+> It is everywhere enclosed by
+the lofty peaks of the Buddha’s Dhamma
 
 This travel guide is designed for Buddhists or anyone interested in Buddhism visiting Sri Lanka. It offers insights into archaeological facts, art history, and legends, while also providing practical advice, maps, and illustrations.
