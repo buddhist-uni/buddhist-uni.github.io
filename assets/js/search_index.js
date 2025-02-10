@@ -20,7 +20,7 @@ var RMAX = 100;
 var store = { {% assign all = site.documents | concat: site.pages %}
   {% for p in all %}
     {% unless p.title %}{% continue %}{% endunless %}
-    {% if p.url contains "/tests/" or pagesWithoutContent contains p.title or p.status == "unpublished" %}{% continue %}{% endif %}
+    {% if p.url contains "/tests/" or pagesWithoutContent contains p.title %}{% continue %}{% endif %}
     "{{ p.url | slugify }}": {
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
@@ -29,7 +29,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "formats": {% assign formats = '' | split: '' %}{% for f in p.drive_links %}{% assign formats = formats | push: p.formats[forloop.index0] %}{% endfor %}{{ formats | jsonify}},
-        "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.layout == 'imagerycoursepart' %}1.5{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
+        "boost": {% if p.status == 'featured' %}1.6{% elsif p.status == 'rejected' %}0.3{% elsif p.status == "unpublished" %}1.45{% elsif p.layout == 'imagerycoursepart' %}1.3{% elsif p.course %}1.2{% elsif p.collection == 'courses' %}2{% elsif p.collection == 'tags' %}2{% else %}1{% endif %},
         "authors": {% capture a %}{% case p.collection %}{% when "courses" %}{% include_cached content_authors_string.html authors=p.lecturers %}{% when "content" %}{% if p.authors %}{% include_cached content_authors_string.html authors=p.authors %}{% else %}{% assign conts = p.reader | default: p.editor | split: ' and ' %}{% include_cached content_authors_string.html authors=conts %}{% endif %}{% else %}{{ p.author }}{% endcase %}{% endcapture %}{% assign a = a | strip | strip_html | normalize_whitespace | split: " and " %}{% assign authors = a | last | split: "unfindabletoken" %}{% if a.size > 1 %}{% assign authors = a | first | split: ", " %}{% assign sla = authors | last | replace: ",", "" %}{% assign authors = authors | pop | push: sla | push: a[1] %}{% endif %}{{ authors | jsonify }},
         "translator": {% assign conts = p.translator | split: ' and ' %}{% capture s %}{% include_cached content_authors_string.html authors=conts %}{% endcapture %}{{ s | strip_newlines | jsonify }},
         "content": {% assign cpieces = p.content | strip | replace: doubleo, ocurly | replace: doublec, ccurly | replace: backtoback, "" | split: ocurly %}{% assign content = "" %}{% for p in cpieces %}{% assign s = p | split: ccurly | last %}{% assign content = content | append: s %}{% endfor %}{{ content | markdownify | normalize_whitespace | replace: "</p", ' </p' | replace: "</div", " </div" | replace: "</li", " </li" | strip_html | normalize_whitespace | jsonify }},
@@ -175,7 +175,7 @@ function displaySearchResult(result, item) {
         case 'journals': type = '<i class="fas fa-newspaper"></i> Journal'; break;
         case 'authors': type = '<i class="far fa-address-book"></i> Author'; break; 
         case 'publishers': type = '<i class="far fa-building"></i> Publisher'; break;
-        case 'tags': type = '<i class="fas fa-box-open"></i> Bibliography'; break;
+        case 'tags': type = '<i class="fas fa-tag"></i> Bibliography'; break;
         case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
     }
     var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
