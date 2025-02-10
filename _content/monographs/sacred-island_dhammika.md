@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1KOxzN8tkBkNPjbFxCo09lA0dNIM2r9RP/view?usp=sharing"
 course: sri-lankan
 tags:
-  - form
+  - pilgrimage
 year: 2008
 olid: OL57692034M 
 publisher: bps
