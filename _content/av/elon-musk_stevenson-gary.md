@@ -20,4 +20,4 @@ is the main thing
 standing between them and high levels of
 taxation. And they don't want to pay taxes
 
-Inequality hurts you.
+For a longer discussion of Elon Musk's specific flavor of psychopathy, listen to [this discussion with Kara Swisher](https://youtu.be/2xXLycFv5Gc).

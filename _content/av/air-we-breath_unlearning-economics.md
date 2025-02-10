@@ -3,9 +3,11 @@ title: "The Air We Breath"
 authors:
   - "Unlearning Economics"
 external_url: "https://youtu.be/efM2VlCueZc"
+subcat: film
+status: featured
 course: society
 tags:
-  - things
+  - things # solidly
   - pollution
   - political-ideologies
 year: 2024

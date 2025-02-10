@@ -15,4 +15,6 @@ year: 2018
 pages: 1
 ---
 
-> Then the River Ajakaraṇī delights me
+> the lazy frogs croak:  
+> “Today isn’t the time to stray from mountain streams”
+> ...the River Ajakaraṇī delights me

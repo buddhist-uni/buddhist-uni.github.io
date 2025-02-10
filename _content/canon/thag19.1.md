@@ -10,6 +10,7 @@ tags:
   - thag
   - intellect
   - monastic-advice
+  - nature
 # canonical-poetry (characters, pali-canon) covered by wh135
 year: 2014
 pages: 8
@@ -28,3 +29,7 @@ parallels: []
 > Oh, when will I stay in a mountain cave,  
 alone, with no companion,  
 discerning all states of existence as impermanent?
+
+> Oh, when will I rise up,  
+intent on attaining freedom from death,  
+hearing, in the mountain cave, the cry of the crested peacock in the forest?
