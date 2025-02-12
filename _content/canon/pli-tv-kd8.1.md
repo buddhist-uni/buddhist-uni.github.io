@@ -22,3 +22,4 @@ The first few sections of the Robe Chapter tells of the origins and exploits of 
 
 Note that, while the treatments described in this tale remain undeniably dramatic, they nevertheless present [an accurate account](/content/articles/jivaka-and-ayurveda_zysk-kenneth) of ancient Indian medicine.
 
+See also: [the version of this story preserved in T553](/content/articles/chinese-biography-jivaka_giddings-salguero).

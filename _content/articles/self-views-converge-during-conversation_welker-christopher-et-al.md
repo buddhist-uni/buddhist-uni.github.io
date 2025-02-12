@@ -24,4 +24,4 @@ openalexid: W4403382682
 
 > We found that participants tended to have more similar self-views post-conversation than pre-conversation, an effect we term "inter-self alignment." Further, the more two partners' self-views aligned, the more they enjoyed their conversation and were inclined to interact again.
 > This effect depended on both conversation partners becoming aligned.
-> These findings suggest that the way we see ourselves is coauthored in the act of dialogue and that as shared self-views develop, the desire to continue the conversation increases.
+> These findings suggest that the way we see ourselves is coauthored in the act of dialogue
