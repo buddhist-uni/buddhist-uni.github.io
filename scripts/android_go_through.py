@@ -10,6 +10,7 @@ with yaspin(text="Initializing..."):
   course_list = None
   predictor= None
   LOCAL_FOLDER = git_root_folder.joinpath("../To Go Through")
+  LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = sorted([f for f in LOCAL_FOLDER.iterdir() if f.is_file()], key=lambda f: -f.stat().st_size)
 
@@ -62,6 +63,12 @@ for fp in local_files:
   if course == "trash":
       print("Trashing...")
       gdrive.trash_drive_file(gf['id'])
+      fp.unlink()
+  elif course == "to-merge":
+      import shutil
+      gfolder = gdrive.get_gfolders_for_course(course)
+      gdrive.move_gfile(glink, gfolder)
+      shutil.move(fp, LOCAL_MERGE_FOLDER)
   else:
       gfolder = gdrive.get_gfolders_for_course(course)
       if gfolder[0]:
@@ -81,5 +88,6 @@ for fp in local_files:
         else:
           input("Press enter to move the file and continue with the next one...")
       gdrive.move_gfile(glink, gfolder)
+      fp.unlink()
   print("")
-  fp.unlink()
+

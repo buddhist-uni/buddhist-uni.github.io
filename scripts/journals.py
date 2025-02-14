@@ -22,6 +22,8 @@ JPBS     = "S4306547155"
 JOCBS    = "S2764611450"
 PNAS     = "S125754415"
 AO       = "S4210209688"
+EB       = "S118212324"
+EB_NS    = "S2764994964"
 
 # from OA to OBU IDs
 slugs = {
@@ -45,4 +47,6 @@ slugs = {
   PLATO: "plato",
   PNAS: "pnas",
   AO: "ao",
+  EB: "eb",
+  EB_NS: "eb",
 }

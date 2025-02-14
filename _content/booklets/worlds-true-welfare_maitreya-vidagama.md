@@ -1,5 +1,5 @@
 ---
-title: "The World's True Welfare: The Lõväḍa Saṅgarāva"
+title: "The World's True Welfare: The Lōvæḍa Saṅgarāva"
 authors:
   - "Vīdāgama Maitreya"
 subcat: poetry
@@ -11,6 +11,8 @@ drive_links:
 course: sri-lankan
 tags:
   - medieval
+  - ethics
+  - cosmology
 year: 1982
 olid: OL57704369M
 publisher: bps
@@ -20,4 +22,12 @@ number: 296
 pages: 34
 ---
 
-A didactic poem of the 15th century Sri Lanka by the Venerable Vīdāgama Maitreya.
+> Learn well yourself this Law  
+That the Blessed One has taught;  
+Teach it to others in compassionate love  
+By the results of skillful acts performed.  
+Bar forever the roads to realms of woe
+
+A 15th century, Sri Lankan poem beautifully exhorting the listener to the ethical life and to right view.
+
+Listen to the poem [sung in the original Sinhala on Archive.org](https://archive.org/details/Lo-Weda-Sangarawa){:target="_blank" ga-event-value="0.5"}.

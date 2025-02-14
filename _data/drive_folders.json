@@ -887,6 +887,10 @@
   "private": "https://drive.google.com/drive/folders/1JVIHu8QHwqi_oczGQ2gpAHNw2IMBzOMc",
   "public": "https://drive.google.com/drive/folders/1xffU21h2DK8OpAPjpgpbrXd6_MpsIdfG"
  },
+ "jodo": {
+  "private": "https://drive.google.com/drive/folders/1YtRHE5iKUmdFOqUUntAmhu6neR5KsPHV",
+  "public": null
+ },
  "journalism": {
   "private": "https://drive.google.com/drive/folders/1glKKM-yF7i4AL21Mu77H07ketZEhuGDW",
   "public": null
@@ -1801,6 +1805,10 @@
  },
  "to-go-through": {
   "private": "https://drive.google.com/drive/folders/1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2",
+  "public": null
+ },
+ "to-merge": {
+  "private": "https://drive.google.com/drive/folders/1NtEZk5BfGjTLPRH6W09cy56Lonak7oEY",
   "public": null
  },
  "to-split": {

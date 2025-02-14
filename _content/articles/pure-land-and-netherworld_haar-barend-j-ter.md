@@ -8,6 +8,7 @@ drive_links:
 course: east-asian-roots
 tags:
   - pureland # maybe down to pureland-roots some day?
+  - chinese-religions
 year: 2021
 month: may
 journal: hijbs
