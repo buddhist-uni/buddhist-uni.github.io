@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1aPi3iM_RK9FF8V8B_6yfsr5ytAxb521w/view?usp=drivesdk"
 course: rebirth-stories
 year: 1991
-journal: "Bodhi Leaves"
+journal: bodhileaves
 publisher: bps
 number: 88
 pages: 19

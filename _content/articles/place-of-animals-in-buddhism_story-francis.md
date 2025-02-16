@@ -11,7 +11,7 @@ tags:
 year: 1964
 publisher: bps
 address: "Kandy"
-series: "Bodhi Leaves"  
+journal: bodhileaves 
 number: 23
 pages: 18
 ---
