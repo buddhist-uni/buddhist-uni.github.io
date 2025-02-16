@@ -11,6 +11,8 @@ tags:
   - meditation
 year: 1988
 publisher: bps
+journal: bodhileaves
+number: 113
 address: "Kandy"
 pages: 8
 ---

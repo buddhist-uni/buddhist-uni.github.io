@@ -11,7 +11,7 @@ tags:
   - engaged
   - philosophy
 year: 1961
-journal: "Bodhi Leaves"
+journal: bodhileaves
 publisher: bps
 number: 7
 pages: 13

@@ -16,7 +16,7 @@ tags:
 year: 2001
 publisher: bps
 address: "Sri Lanka"
-series: "Bodhi Leaves"
+journal: bodhileaves
 number: 153
 pages: 26
 ---
