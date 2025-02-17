@@ -61,7 +61,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 {%- endfor -%}
 {%- assign featurecontent = featurecontent | sort: "date" | reverse -%}
 <h2 id="recent"><i class="fas fa-calendar-week"></i> Recently Published</h2>
-<p>Within the last couple years.</p>
+<p>Items published this year or last year.</p>
 {% for c in featurecontent %}
 <div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
 
