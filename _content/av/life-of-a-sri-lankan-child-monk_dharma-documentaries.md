@@ -1,5 +1,9 @@
 ---
 title: "A Day in the Life of a Sri Lankan Child Monk"
+subcat: film
+youtube_urls:
+  - "https://youtu.be/cnMr04ZIKho"
+  - "https://youtu.be/kJUXVdvikKc"
 authors:
   - "Dharma Documentaries"
 external_url: "https://dharma-documentaries.net/a-day-in-the-life-of-a-child-monk"

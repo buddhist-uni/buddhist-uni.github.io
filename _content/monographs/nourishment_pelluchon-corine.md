@@ -5,7 +5,6 @@ authors:
 translator: "Justin E. H. Smith"
 tags:
   - society
-  - dialogue
   - politics
 year: 2019
 month: feb
