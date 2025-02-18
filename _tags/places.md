@@ -9,8 +9,8 @@ illustration_width: 1280
 illustration_center_x: 75%
 illustration_center_y: 95%
 illustration_caption: >-
-  A yurt camp with horses and yaks pitched in the scenic Song-Köl Valley in 2017.
-  The scrubby hills of Kyrgyzstan gave rise to a unique, nomadic culture.
+  A yurt camp pitched in the scenic Song-Köl Valley in 2017.
+  Unsuitable for farming, the scrubby hills of Kyrgyzstan gave rise to a unique, nomadic culture.
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Yurt_Camp_in_Song_kol_region.jpg">Kondephy on WikiMedia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/1_aerial_yangshuo_panorama_2017.jpg
 image_width: 2560

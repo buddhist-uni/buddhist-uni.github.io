@@ -9,7 +9,6 @@ tags:
   - memory
   - religion
   - mythology
-  - migration
   - labor
 oclc: 1250435935
 publisher: "Bloomsbury"
