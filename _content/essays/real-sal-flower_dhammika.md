@@ -6,7 +6,7 @@ external_url: "https://budblooms.org/2020/05/10/what-is-the-real-sal-flower/"
 drive_links:
   - "https://drive.google.com/file/d/1a-xyaWhQRm8KEEPD79xNBnLLDsJVSiQ6/view?usp=sharing"
 course: sri-lankan
-tag:
+tags:
   - material-culture
 year: 2020 
 olid: OL57711183M
