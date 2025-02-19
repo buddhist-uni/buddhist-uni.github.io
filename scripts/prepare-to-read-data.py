@@ -6,6 +6,7 @@ from hashlib import md5
 import json
 import time
 import csv
+import sys
 import requests
 from urllib.parse import quote as urlquote
 
@@ -55,12 +56,12 @@ def get_opensyllabus_score(title: str, author: str, year):
 
 parser = ArgumentParser()
 parser.add_argument('folder', type=Path)
-parser.add_argument('output', type=Path, default=Path('~/to-read.csv'), nargs='?')
+parser.add_argument('output', type=Path, default=None, nargs='?')
 parser.add_argument("--free", action="store_true", default=False)
 args = parser.parse_args()
 
 outrows = []
-if args.output.exists():
+if args.output and args.output.exists():
   with args.output.open('r') as infp:
     reader = csv.reader(infp)
     for row in reader:
@@ -135,6 +136,9 @@ for filep in args.folder.iterdir():
     academic_score,
     filep.name,
   ])
-  with args.output.open('w') as outfp:
-    csv.writer(outfp).writerows(outrows)
+  if args.output:
+    with args.output.open('w') as outfp:
+      csv.excel_tab.writer(outfp).writerows(outrows)
+  else:
+    print('\t'.join([str(v) for v in outrows[-1]]), file=sys.stderr)
 

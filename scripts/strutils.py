@@ -409,7 +409,7 @@ def system_open(filepath):
     .replace("(", "\\(")\
     .replace(")", "\\)")\
     .replace("'", "\\\'")
-  os.system(f"open {filepath} || termux-open {filepath} || vim {filepath}")
+  os.system(f"xdg-open {filepath}")
 
 class FileSyncedSet:
   def __init__(self, fname, normalizer=None):

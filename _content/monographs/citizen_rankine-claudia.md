@@ -5,12 +5,11 @@ authors:
 external_url: "https://archive.org/details/citizenamericanl0000rank_m1h9/mode/1up"
 olid: OL25632207M
 subcat: poetry
-course: society
+course: caste
 tags:
   - america
   - violence
   - race
-  - caste
 year: 2014
 oclc: 1101773886
 publisher: "Graywolf"

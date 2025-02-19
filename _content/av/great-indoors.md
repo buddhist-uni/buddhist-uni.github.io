@@ -9,6 +9,7 @@ course: science
 tags:
   - places
   - medicine
+  - architecture
 base_value: 0.2
 number: 424
 series: 99pi

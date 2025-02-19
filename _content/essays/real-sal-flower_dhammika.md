@@ -8,9 +8,12 @@ drive_links:
 course: sri-lankan
 tags:
   - material-culture
-year: 2020 
+  - plants
+year: 2020
 olid: OL57711183M
 pages: 5
 ---
 
-This brief essay explores the devotional practice of flower offerings, particularly those using Sal tree flowers. Bhikkhu Dhammika notes that the primary flower used in traditional offerings in modern Sri Lanka is not actually the Sal flower but rather the flower of the Cannonball Tree.
+This brief essay explores the devotional practice of flower offerings, particularly those using Sal tree flowers.
+
+The primary flower used in traditional offerings in modern Sri Lanka is not actually the Sal flower but rather the flower of the Cannonball Tree.

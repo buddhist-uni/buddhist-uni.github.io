@@ -11,9 +11,8 @@ illustration_center_y: 10%
 illustration_caption: >-
   A 16th century illustration of 
   <a href="https://commons.wikimedia.org/wiki/File:Nobleman_picnic.jpg">a French nobleman</a>
-  and his entourage enjoying a picnic.
-  Having a small number of "bosses" in control is one way societies simplify
-  <a href="https://en.wikipedia.org/wiki/Collective_action_problem">the collective action problem</a>.
+  and his retainers enjoying a picnic.
+  Having a strict, social hierarchy is one way society can be organized.
 image: https://illeakyw.sirv.com/Images/banners/tiplada.jpg
 image_width: 1920
 image_height: 1280
