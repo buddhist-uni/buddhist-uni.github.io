@@ -9,11 +9,10 @@ drive_links:
 course: sa
 year: 2000
 month: dec
-journal: "The Journal of Indian and Buddhist Studies"
+journal: ibk
 volume: 49
 number: 1
 pages: "500--506"
-publisher: "The Japanese Association of Indian and Buddhist Studies"
 openalexid: W2317642480
 ---
 
