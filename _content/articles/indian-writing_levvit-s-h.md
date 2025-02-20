@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/12BawuNefrbqZymDWwECte4lvsS8QMAcp/view?usp=drivesdk"
 course: writing
 tags:
-  - books
+  - paper
   - india # perhaps move here?
   - indic-languages
   - manuscripts

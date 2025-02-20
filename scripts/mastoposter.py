@@ -201,6 +201,7 @@ def ensure_drive_links_are_shared(page: website.ContentFile) -> None:
   gids = [gdrive.link_to_id(glink) for glink in page.drive_links if '.google.com' in glink]
   gids = [gid for gid in gids if gid]
   if len(gids) > 0:
+    print(f"Ensuring {' and '.join(gids)} ha{'s' if len(gids) == 1 else 've'} been shared...")
     gdrive.ensure_these_are_shared_with_everyone(gids)
 
 if __name__ == "__main__":

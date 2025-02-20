@@ -9,7 +9,7 @@ course: media
 status: featured
 tags:
   - writing
-  - books
+  - paper
   - past
 year: 2022
 month: jan

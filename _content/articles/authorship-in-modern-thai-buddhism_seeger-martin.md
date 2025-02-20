@@ -8,7 +8,7 @@ drive_links:
 course: thai
 tags:
   - intellectual-property
-  - books
+  - paper
   - vinaya-controversies
 year: 2015
 journal: jiabs

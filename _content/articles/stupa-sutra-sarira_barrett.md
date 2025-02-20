@@ -14,7 +14,7 @@ tags:
   - east-asian-roots
   - empress-wu
   - tang
-  - books
+  - paper
   - china
   - historiography
 year: 2001

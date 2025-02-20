@@ -16,7 +16,7 @@ course: theravada
 status: featured
 pages: "175--212"
 tags:
-  - books
+  - paper
   - sea
 ---
 

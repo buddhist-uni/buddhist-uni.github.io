@@ -13,7 +13,7 @@ tags:
   - sri-lankan
   - theravada-chanting
   - form
-  - books
+  - paper
   - communication
 status: featured
 ---

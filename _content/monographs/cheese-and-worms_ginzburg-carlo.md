@@ -7,7 +7,7 @@ status: featured
 external_url: "https://archive.org/details/cheesewormscosmo00ginz/mode/1up"
 course: religion
 tags:
-  - books
+  - paper
   - past
   - society
 year: 1980

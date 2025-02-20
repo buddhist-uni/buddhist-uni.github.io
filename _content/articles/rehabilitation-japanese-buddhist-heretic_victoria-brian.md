@@ -8,7 +8,7 @@ drive_links:
 tags:
   - japanese-roots
   - engaged
-  - books
+  - paper
   - ww2
 year: 2022
 journal: jocbs

@@ -5,7 +5,7 @@ authors:
 course: media
 tags:
   - writing
-  - books
+  - paper
 year: 2001
 olid: OL3947422M
 oclc: 47690785

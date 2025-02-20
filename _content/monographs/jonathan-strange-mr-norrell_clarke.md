@@ -6,7 +6,7 @@ subcat: fiction
 course: literature
 tags:
   - england
-  - books
+  - paper
   - mythology
 year: 2004
 olid: OL3289251M
