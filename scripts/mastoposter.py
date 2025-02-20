@@ -213,7 +213,9 @@ if __name__ == "__main__":
     limit=5,
   )
   print("Selecting the next post...", flush=True)
-  last_few_urls = [p['card']['url'][len(website.baseurl):] for p in last_few_posts if p['card']]
+  LINK_FMT = '<a href="' + website.baseurl
+  last_few_urls = [c.content.split(LINK_FMT)[1].split('"')[0] for c in last_few_posts if LINK_FMT in c.content]
+  assert len(last_few_urls) > 1, "Last few posts didn't have any links. Is the link format correct?"
   idx_to_post = None
   filtered_content = [c for c in website.content if (c.external_url or c.drive_links) and c.status != 'rejected']
   for ridx, c in enumerate(reversed(filtered_content)):
