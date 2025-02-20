@@ -1,8 +1,8 @@
 ---
-title: "AN 2.49 Samacitta Vagga (8): The 8th Discourse on a Peaceful Mind"
+title: "AN 2.39 Balavanta Cora Sutta: The discourse on weak kings"
 translator: sujato
-slug: "an.002.049"
-external_url: "https://suttacentral.net/an2.49/en/sujato"
+slug: "an.002.039"
+external_url: "https://suttacentral.net/an2.39/en/sujato"
 drive_links:
   - "https://drive.google.com/file/d/1JKkAOlhRaa-rDnIu2NDJx99fOaAcPk4n/view?usp=drivesdk"
 course: time

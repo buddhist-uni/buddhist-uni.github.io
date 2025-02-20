@@ -13,7 +13,10 @@ course: capitalism
 tags:
   - time
   - world
+  - feeling
   - media
+  - free-will
+  - sati
 year: 2025
 month: feb
 series: know-your-enemy
@@ -22,4 +25,4 @@ minutes: 61
 ---
 
 Information technology is ushing in a new industrial revolution.
-Where the previous commoditized labor, this revolution is alienating us from our own attention—with implications for our politics and souls 
+Where the previous revolution commoditized labor, this one is alienating us from our own attention—with implications for our politics and souls.
