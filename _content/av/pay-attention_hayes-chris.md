@@ -8,8 +8,7 @@ authors:
 external_url: "https://know-your-enemy-1682b684.simplecast.com/episodes/pay-attention-w-chris-hayes"
 drive_links:
   - "https://drive.google.com/file/d/1yVvZXQxkmoTGyi66HRIx7PZQfPWXUMfC/view?usp=drivesdk"
-status: featured
-course: capitalism
+course: capitalism # solidly three stars. Almost 4
 tags:
   - time
   - world
