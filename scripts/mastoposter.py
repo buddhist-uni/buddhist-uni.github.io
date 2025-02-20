@@ -9,6 +9,8 @@ import re
 import os
 from urllib.parse import urlparse
 
+import gdrive
+
 from atproto_client import Client as BskyClient
 from atproto import models as BskyModels
 BskyLinkCard = BskyModels.AppBskyEmbedExternal.Main
@@ -195,6 +197,12 @@ Tags: {tags}"""
     return ret + f"\n{website.baseurl}{page.url}"
   return ret
 
+def ensure_drive_links_are_shared(page: website.ContentFile) -> None:
+  gids = [gdrive.link_to_id(glink) for glink in page.drive_links if '.google.com' in glink]
+  gids = [gid for gid in gids if gid]
+  if len(gids) > 0:
+    gdrive.ensure_these_are_shared_with_everyone(gids)
+
 if __name__ == "__main__":
   print("Loading site data...", flush=True)
   website.load()
@@ -235,6 +243,7 @@ if __name__ == "__main__":
   matching_posts = [c for c in last_few_posts if c.content.startswith('<p>'+status.split('\n')[0]+'</p>')]
   if matching_posts:
     raise RuntimeError(f"Already posted as {matching_posts[0]['url']}?")
+  ensure_drive_links_are_shared(filtered_content[idx_to_post])
   masto_info = mastodon.status_post(
     status=status,
     language="en",
