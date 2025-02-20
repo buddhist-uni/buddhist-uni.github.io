@@ -24,6 +24,7 @@ PNAS     = "S125754415"
 AO       = "S4210209688"
 EB       = "S118212324"
 EB_NS    = "S2764994964"
+IBK      = "S2764402342"
 
 # from OA to OBU IDs
 slugs = {
@@ -49,4 +50,5 @@ slugs = {
   AO: "ao",
   EB: "eb",
   EB_NS: "eb",
+  IBK: "ibk",
 }

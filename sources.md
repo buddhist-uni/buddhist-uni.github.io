@@ -78,7 +78,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The SocArXiv](https://osf.io/preprints/socarxiv/discover?q=Buddhist)
 * [The MindRxiv](https://mindrxiv.org/discover?subject=MindRxiv%7CArts%20and%20Humanities%7CReligion%7CBuddhist%20Studies)
 * [SSRN](https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm)
-* [OpenAlex.org](https://docs.openalex.org/)
+* [OpenAlex.org](https://openalex.org/works?page=1&filter=primary_topic.id%3At11563,open_access.is_oa%3Atrue)
 </div>
 
 <div markdown="1" data-link-type="journals">
