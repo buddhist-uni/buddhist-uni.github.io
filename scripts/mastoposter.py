@@ -232,6 +232,9 @@ if __name__ == "__main__":
     mtype = "warning"
   print(f"::{mtype} title=Post Selection::Posted item {idx_to_post+1} of {len(filtered_content)} free items ({remaining} remaining after this)", flush=True)
   status = write_post_for_item(filtered_content[idx_to_post])
+  matching_posts = [c for c in last_few_posts if c.content.startswith('<p>'+status.split('\n')[0]+'</p>')]
+  if matching_posts:
+    raise RuntimeError(f"Already posted as {matching_posts[0]['url']}?")
   masto_info = mastodon.status_post(
     status=status,
     language="en",
