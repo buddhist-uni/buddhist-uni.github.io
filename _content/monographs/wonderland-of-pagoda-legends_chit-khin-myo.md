@@ -1,12 +1,14 @@
 ---
-title: "A wonderland of pagoda legends"
+title: "A Wonderland of Pagoda Legends"
 authors:
   - "Khin Myo Chit"
+external_url: "http://www.kbrl.gov.mm/book/details/002227"
 drive_links:
   - "https://drive.google.com/file/d/15mmU42xLF-0RM_iFvVHFoQn_dXXUcKZ5/view?usp=drive_link"
 course: burmese
 tags:
   - pilgrimage
+  - bart
 year: 1996
 publisher: "Hla Htay Sarpay"
 pages: 205
