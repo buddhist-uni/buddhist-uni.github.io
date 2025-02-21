@@ -2,7 +2,7 @@
 title: "Index, A History of the"
 authors:
   - "Dennis Duncan"
-course: books
+course: paper
 tags:
   - historiography
   - indexing

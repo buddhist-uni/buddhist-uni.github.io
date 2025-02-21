@@ -7,7 +7,7 @@ authors:
 year: 2021
 month: apr
 external_url: "https://99percentinvisible.org/episode/the-real-book/"
-course: books
+course: paper
 tags:
   - jazz
   - musicology

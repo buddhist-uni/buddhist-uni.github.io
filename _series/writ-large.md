@@ -8,7 +8,7 @@ years: 2022
 category: av
 subcat: podcast
 tags:
-  - books
+  - paper
   - ideology
 ---
 
