@@ -9,6 +9,7 @@ drive_links:
 course: burmese
 tags:
   - path
+  - abhidhamma
 year: 1960
 olid: OL3777848M
 publisher: "Buddha Sasana Council"
