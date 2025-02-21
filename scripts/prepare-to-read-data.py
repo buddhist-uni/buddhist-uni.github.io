@@ -138,7 +138,7 @@ for filep in args.folder.iterdir():
   ])
   if args.output:
     with args.output.open('w') as outfp:
-      csv.excel_tab.writer(outfp).writerows(outrows)
+      csv.writer(outfp, delimiter="\t").writerows(outrows)
   else:
     print('\t'.join([str(v) for v in outrows[-1]]), file=sys.stderr)
 

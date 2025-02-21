@@ -8,7 +8,6 @@ drive_links:
 file_links:
   - "exclusive_01/Sangha%20Groupings%20in%20Cambodia%20-%20Ian%20Harris.pdf"
 course: cambodian
-status: featured
 year: 2001
 journal: bsr
 volume: 18
