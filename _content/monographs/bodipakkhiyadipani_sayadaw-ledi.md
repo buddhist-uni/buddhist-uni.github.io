@@ -17,4 +17,4 @@ address: "Rangoon"
 pages: 53
 ---
 
-This comprehensive guide, written by the venerable Ledi Sayadaw, explores the key factors leading to enlightenment, offering practical insights on how these qualities can be cultivated through practice to achieve liberation.
+A detailed, Abhidhamma/Pāli-inflected map of the Buddhist path in a style that became surprisingly popular in modern Burma.
