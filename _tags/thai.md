@@ -1,7 +1,7 @@
 ---
 title: "Thai Buddhism"
 hashtag: ThaiBuddhism
-status: published
+status: unpublished
 parents: [theravada, thailand]
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/003_Relaxing_inside_the_Temple_(34443968623).jpg
