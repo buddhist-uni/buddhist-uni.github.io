@@ -4,10 +4,10 @@ authors:
   - "Saccavadi Bricker"
 external_url: "https://www.bhikkhuni.net/wp-content/uploads/2013/07/present-burmadiscrimination-spring2010.pdf"
 drive_links:
-  - https://drive.google.com/file/d/1DEqLXLotH09D8DrSKoXkr2ZXMrPz5zD9/view?usp=sharing""
+  - "https://drive.google.com/file/d/1DEqLXLotH09D8DrSKoXkr2ZXMrPz5zD9/view?usp=sharing"
 course: burmese
 tags:
-  - monastic
+  - nuns
 year: 2010
 journal: present
 publisher: "The Alliance for Bhikkhunis"
