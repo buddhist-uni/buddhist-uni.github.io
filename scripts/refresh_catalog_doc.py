@@ -5,6 +5,7 @@ import datetime
 from collections import defaultdict
 from functools import cache
 import hashlib
+from strutils import git_root_folder, md5
 
 ROOT_FOLDER = "1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv"
 FIELDS = "id,name,mimeType,size,shortcutDetails,createdTime,webViewLink"
@@ -13,10 +14,6 @@ MY_EMAILS = {
 }
 
 TD = 'td style="padding:5pt;"'
-
-# Dupe from strutils to avoid all those imports
-def md5(text):
-  return hashlib.md5(text.encode()).hexdigest()
 
 def human_readable_size(bytes_size):
     units = ["B", "KB", "MB", "GB", "TB", "PB"]
@@ -149,6 +146,8 @@ if __name__ == "__main__":
     </body>
   </html>
   """
+  htmlfile = git_root_folder.joinpath("catalog.html")
+  htmlfile.write_text(html)
 
   print("Replacing public doc with new version...")
   docid = gdrive.create_doc(
@@ -156,4 +155,8 @@ if __name__ == "__main__":
     creator="CatalogBuilder",
     replace_doc="1IYrQyVyr8FfbHwRLH5OzwSQG9mhgl0av73klfi-t0DQ",
   )
+  if not docid:
+    raise RuntimeError("Failed to upload catalog.html")
+  else:
+    htmlfile.unlink()
   print(f"Done! See https://docs.google.com/document/d/{docid}/edit")
