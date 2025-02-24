@@ -3,8 +3,7 @@ title: "A River in Peril: The Mekong Under China"
 authors:
   - "Radio Free Asia"
 editor: "Dan Southerland"
-external_url: "https://www.rfa.org/english/bookshelf/Mekong.pdf"
-source_url: "https://www.rfa.org/english/news/special/riverinperil/"
+external_url: "https://web.archive.org/web/20230622065406if_/https://www.rfa.org/english/bookshelf/Mekong.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1QJ7ejTwTpo8g5ZjUSCLhJCbyJek3_yEf/view?usp=drivesdk"
 course: wider
@@ -14,8 +13,8 @@ tags:
 year: 2016
 month: dec
 olid: OL46532919M
-publisher: RFA
-address: Washington DC
+publisher: "Radio Free Asia"
+address: "Washington DC"
 pages: 40
 ---
 

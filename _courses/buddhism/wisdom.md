@@ -28,7 +28,7 @@ I would like to offer you this blessing:
 May your life be thus blessed! 😊
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-We’ll conclude with the short "[Conclusion](https://www.buddhanet.net/funbud15.htm)" at the end of *Fundamentals*
+We’ll conclude with the short "[Conclusion](https://www.buddhanet.net/funbud15/)" at the end of *Fundamentals*
 ' %}
 
 ## Lecture

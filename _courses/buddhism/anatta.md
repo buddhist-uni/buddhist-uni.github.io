@@ -13,7 +13,7 @@ order: 9
 Skip ahead to [the *anatta* or "No Soul" chapter](https://web.archive.org/web/20120226210641/https://sites.google.com/site/rahulawhatthebuddha/the-doctrine-of-no-soul)
 ' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-[Chapter 11](https://www.buddhanet.net/funbud13.htm) explains the "Three Characterists" (of which *anatta* is the third)
+[Chapter 11](https://www.buddhanet.net/funbud13/) explains the "Three Characterists" (of which *anatta* is the third)
 ' %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
 Chapter 10 covers "The Five Aggregates" which are, in brief, the body and mind which we cling to as if they were "us"' %}
