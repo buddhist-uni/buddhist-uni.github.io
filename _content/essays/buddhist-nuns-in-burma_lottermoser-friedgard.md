@@ -9,7 +9,7 @@ course: burmese
 tags:
   - nuns
 year: 2010
-publisher: "alliance for bhikkuni"
+publisher: "Alliance for Bhikkunis"
 pages: 8
 ---
 
