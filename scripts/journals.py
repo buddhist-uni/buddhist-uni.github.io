@@ -18,6 +18,7 @@ NYRB_ALT = "S4306476742"
 PLATO    = "S2737990715"
 JJRS     = "S120086578"
 JCB      = "S107624032"
+JCBS     = "S4306542695"
 JPBS     = "S4306547155"
 JOCBS    = "S2764611450"
 PNAS     = "S125754415"
@@ -37,6 +38,7 @@ slugs = {
   JJRS: "jjrs",
   JPBS: "jpbs",
   JCB: "jcb",
+  JCBS: "jcbs",
   JOCBS: "jocbs",
   IJDS: "ijds",
   HIJBS: "hijbs",

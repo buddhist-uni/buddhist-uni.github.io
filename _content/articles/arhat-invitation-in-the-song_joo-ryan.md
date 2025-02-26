@@ -13,8 +13,8 @@ formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1WZ-HSbf-urORVvGm23_eTAyOLwcXBhPN/view?usp=drivesdk"]
 course: east-asian-roots
 tags:
-  - song
-  - chinese
+  - song-dynasty
+  - mahayana
 ---
 
 > … it appears contradictory that Chinese who follow the teachings of Mahāyāna Buddhism have worshipped arhats. [...] who was the arhat for Chinese Buddhists?
