@@ -1,5 +1,5 @@
 ---
-title: "Literati Chan at the Song Dynasty Court: The Role of Yang Yi in the Creation Chan Identity"
+title: "Literati Chan at the Song Dynasty Court: The Role of Yang Yi in the Creation of Chan Identity"
 authors:
   - "Albert Welter"
 external_url: "https://chinesebuddhiststudies.org/wp-content/uploads/jcbs3405_Welter91-159.pdf"

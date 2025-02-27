@@ -21,4 +21,5 @@ illustration_caption: >-
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda,_Young_Buddhist_monks,_Yangon,_Myanmar.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)
 ---
 
-Buddhism in Myanmar historically and today.
+Burmese Buddhists are devoted to preserving the "highest" teachings of the Theravāda as they see it: the Abhidhamma, the Pāli commentaries, and formal meditation.
+Myanmar's modern meditation movements in particular have had a profound effect on Buddhist—and non-Buddhist—contemplative practices all over the world.

@@ -24,4 +24,4 @@ openalexid: W4404349611
 
 > Women overestimated the facial femininity that men prefer in a partner and men overestimated the facial masculinity that women prefer in a partner.
 
-> These results indicate misperception of opposite-sex facial preferences and that mistaken perceptions may contribute to dissatisfaction with own appearance.
+> These results indicate misperception of opposite-sex facial preferences and that mistaken perceptions may contribute to dissatisfaction with [one's] own appearance.

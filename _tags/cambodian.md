@@ -26,3 +26,7 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_monks_in_
 image_center_x: 55%
 image_center_y: 96%
 ---
+
+During the Middle Ages, the Angkorian Empire was a center of Mahayana Buddhism in Southeast Asia, but during the late medieval and early modern period, Kambuja largely came under Siamese influence causing modern Cambodian Buddhism to bear a strong resemblance to [Thai Buddhism](/tags/thai).
+
+It doesn't help that during the Khmer Rouge period (1975–1979), Buddhism in Cambodia was violently suppressed, leading to a significant loss of Cambodian culture.  But thanks to many brave Cambodians in the country and across the diaspora who kept the old traditions alive, Cambodian Buddhism today is slowly starting to grow back.

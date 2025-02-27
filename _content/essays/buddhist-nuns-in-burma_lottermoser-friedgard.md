@@ -9,10 +9,10 @@ course: burmese
 tags:
   - nuns
 year: 2010
-publisher: "Alliance for Bhikkunis"
+publisher: "The Alliance for Bhikkunis"
 pages: 8
 ---
 
-> When discussing the status of Buddhist nuns at an international level, we find ourselves confronted with a profusion of terms in many languages, a veritable “Babylonian tower of confusion.” 
+> The present nuns in Burma had a great period of revival and prosperity during the sasana reforms sponsored by King Mindon, who built the royal city of Mandalay and held the Fifth Buddhist Council...
 
-This article discusses the historical and social context of Theravada Buddhist nuns in Burma. While nuns are respected for their moral conduct, they are not considered full counterparts to monks (bhikkhus) and have historically faced challenges in attaining equal status and recognition in the religious hierarchy.
+The historical and social context for the Theravada nuns of Burma.
