@@ -23,5 +23,6 @@ image_center_x: 45%
 image_center_y: 20%
 ---
 
-Having a longer history than any other Theravāda country, Buddhism in Sri Lanka has undergone several periods of decline and revival since its introduction in the 3rd century BCE.
-From the Indian kingdoms in the middle ages to British colonial rule in the 19th century, Sri Lankan Buddhism today is a heady mix of exuberant, South Asian devotionalism and rational, European modernism.
+Buddhism in Sri Lanka has undergone several periods of decline and revival since its introduction in the 3rd century BCE.
+From the Southern Indian conquests of the middle ages and the British colonial rule of the 19th century,
+Sri Lankan Buddhism today is a heady mix of exuberant, South Asian devotionalism and rational, European modernism.

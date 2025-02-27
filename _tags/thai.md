@@ -7,12 +7,12 @@ use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/003_Relaxing_inside_the_Temple_(34443968623).jpg
 illustration_height: 853
 illustration_width: 1280
-illustration_center_x: 38%
-illustration_center_y: 60%
+illustration_center_x: 51%
+illustration_center_y: 24%
 illustration_caption: >-
   Lay people relax in front of the Phra Phuttha Sihing at the "Front Palace" of what is now the Bangkok National Museum.
   The Buddha image is considered second in importance only to the Emerald Buddha housed at the Grand Palace.
-  Buddhism in modern Thailand is strongly supported—and regulated—by the Thai government: the last of the "independent Buddhist Kingdoms" of Asia.
+  Buddhism in modern Thailand is strongly supported—and regulated—by the Thai government.
   (Photo by <a href="https://photodharma.net/Thailand/Buddhaisawan-Temple/index.htm">Anandajoti Bhikkhu</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Temple_of_the_Emerald_Buddha.jpg
 image_width: 2560
@@ -25,4 +25,8 @@ image_center_x: 51%
 image_center_y: 35%
 ---
 
-The vast majority (93%) of Thai people follow Theravāda Buddhism, however Buddhism in Thailand shows a variety of influences, including those from Thailand's indigenous Shamanism, the Chinese and Indic gods brought in by traders, and the effects of modernist reforms which have combined to give Thai Buddhism its distinct flavor.
+Buddhism in Thailand is predominantly Theravādan, but shows a variety of influences,
+including from Thailand's indigenous Shamanism,
+the Chinese and Indic gods brought in by traders, and
+the effects of modernist reforms which have combined
+to give Thai Buddhism its distinct flavor.

@@ -13,7 +13,7 @@ use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Shwedagon_Pagoda%2C_Young_Buddhist_monks%2C_Yangon%2C_Myanmar.jpg
 illustration_height: 853
 illustration_width: 1280
-illustration_center_x: 10%
+illustration_center_x: 13%
 illustration_center_y: 10%
 illustration_caption: >-
   Two novices pause to investigate a broken tile in the courtyard of the golden Shwedagon Pagoda in 2008.
@@ -21,5 +21,7 @@ illustration_caption: >-
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda,_Young_Buddhist_monks,_Yangon,_Myanmar.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)
 ---
 
-Burmese Buddhists are devoted to preserving the "highest" teachings of the Theravāda as they see it: the Abhidhamma, the Pāli commentaries, and formal meditation.
-Myanmar's modern meditation movements in particular have had a profound effect on Buddhist—and non-Buddhist—contemplative practices all over the world.
+Burmese Buddhists are strongly devoted to preserving the "highest" teachings
+of the Theravāda Tradition: the Abhidhamma, Pāli commentaries, and meditation.
+Myanmar's modern meditation movements in particular have been hugely influential
+within the country and, indeed, around the world.
