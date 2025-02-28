@@ -10,8 +10,12 @@ course: burmese
 tags:
   - buddha
   - pali-readers
+  - theravada-chanting
 year: 2013
 pages: 29
+olid: OL57936987M
 ---
 
-This is a translation by Bhikkhu Anandajoti of The Namakkārapāli, a revered Buddhist text from Myanmar that consists of 28 verses, each written in different meters, and praises the Buddha. The translation includes a commentary that elaborates on the meanings of the verses, making it a valuable resource for practitioners and students of the Pāli language.
+This is a translation by Bhikkhu Anandajoti of The Namakkārapāli, a revered Buddhist text from Myanmar that consists of 28 verses, each written in different meters, praising the Buddha.
+
+The translation includes the Pāli word commentary.
