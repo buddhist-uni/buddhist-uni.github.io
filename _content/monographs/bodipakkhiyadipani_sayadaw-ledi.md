@@ -1,11 +1,14 @@
 ---
-title: "Bodipakkhiyadipani: The Manual of the Factors Leading to Enlightenment"
+title: "Bodipakkhiya-dipani: The Manual of the Factors Leading to Enlightenment"
 authors:
   - "Ledi Sayadaw"
-translator: :"U Sein Nyo Tun"
-external_url: "https://dhamma-library.cdn.winmetta.org/14.%20Rear-Buddhist-Books-2/Bodhipakhiyadipani.pdf"
+translator: "U Sein Nyo Tun"
+external_url: "https://store.pariyatti.org/requisites-of-enlightenment-vipassana"
+source_url: "https://dhamma-library.cdn.winmetta.org/14.%20Rear-Buddhist-Books-2/Bodhipakhiyadipani.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1MxjQl5_btTYcFG8Qc5JPJmJtKCX7wRYi/view?usp=drive_link"
+  - "https://drive.google.com/file/d/1Y95zlpO0GwutfBVDKG6JvliBIu49srSZ/view?usp=drive_link"
+  - "https://drive.google.com/file/d/125lDZF4RVp5UV9d6dT-VOSLuRmQtTGoh/view?usp=drive_link"
+formats: [pdf, mp3]
 course: burmese
 tags:
   - path
@@ -18,3 +21,5 @@ pages: 53
 ---
 
 A detailed, Abhidhamma/Pāli-inflected map of the Buddhist path in a style that became surprisingly popular in modern Burma.
+
+Later published by the Buddhist Publication Society as *The Requisites of Enlightenment*.
