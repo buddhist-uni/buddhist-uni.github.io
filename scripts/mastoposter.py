@@ -198,6 +198,8 @@ Tags: {tags}"""
   return ret
 
 def ensure_drive_links_are_shared(page: website.ContentFile) -> None:
+  if not page.drive_links:
+    return
   gids = [gdrive.link_to_id(glink) for glink in page.drive_links if '.google.com' in glink]
   gids = [gid for gid in gids if gid]
   if len(gids) > 0:
