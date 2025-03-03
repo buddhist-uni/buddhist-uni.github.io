@@ -12,7 +12,7 @@ illustration_caption: >-
   A 16th century illustration of 
   <a href="https://commons.wikimedia.org/wiki/File:Nobleman_picnic.jpg">a French nobleman</a>
   and his retainers enjoying a picnic.
-  Having a strict, social hierarchy is one way society can be organized.
+  A strict hierarchy is one of many ways a society can be organized.
 image: https://illeakyw.sirv.com/Images/banners/tiplada.jpg
 image_width: 1920
 image_height: 1280

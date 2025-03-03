@@ -4,7 +4,7 @@ authors:
   - "Nadra Nittle"
 tags:
   - christian
-  - african-american
+  - african-america
   - feminism
   - american
 year: 2023

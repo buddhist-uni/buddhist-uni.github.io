@@ -7,7 +7,7 @@ reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/11/12/252-frequently-asked-questions-7"
 course: time
 tags:
-  - african-american
+  - african-america
   - migration
 year: 2019
 month: nov
