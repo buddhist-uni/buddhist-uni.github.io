@@ -199,10 +199,6 @@
   "private": "https://drive.google.com/drive/folders/1xZ8vbi1TCtzM-Fr6qTxinU-6Ji7QdHba",
   "public": "https://drive.google.com/drive/folders/19ld7EM14o-2tEqOl06LKjX-oDiy0Cvcj"
  },
- "paper": {
-  "private": "https://drive.google.com/drive/folders/1I__vOKd6wRHXC-0pzWxnk_p7iSg6v2LB",
-  "public": null
- },
  "boom-bust": {
   "private": "https://drive.google.com/drive/folders/1ZJH-hixhbNrn6Ow7aBoW-9Mkya292xJ8",
   "public": null
@@ -1315,6 +1311,10 @@
   "private": "https://drive.google.com/drive/folders/1z5PRucle6BVjokB3vWUPw8aP8-LKFcxJ",
   "public": "https://drive.google.com/drive/folders/1sKv6M86sDlftEUydgaJ6LQhJTW60-p27"
  },
+ "paper": {
+  "private": "https://drive.google.com/drive/folders/1I__vOKd6wRHXC-0pzWxnk_p7iSg6v2LB",
+  "public": null
+ },
  "parenting": {
   "private": "https://drive.google.com/drive/folders/1xT3VjGlOxm3nVv_QQfa_AR9-ZfL8iafa",
   "public": null
@@ -1637,6 +1637,10 @@
  },
  "south-asia": {
   "private": "https://drive.google.com/drive/folders/1x8jVEgfK8WVeg9WjUnP9L4bf_9b4ul1L",
+  "public": null
+ },
+ "southern-china": {
+  "private": "https://drive.google.com/drive/folders/1QjsaymNZLbTeEcAXmhNCqBETf9vTrLwb",
   "public": null
  },
  "space": {
