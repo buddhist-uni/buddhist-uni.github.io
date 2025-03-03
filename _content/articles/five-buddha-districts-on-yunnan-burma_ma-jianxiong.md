@@ -12,6 +12,7 @@ tags:
   - sea
   - medieval
   - early-modern
+  - yunnan
 year: 2013
 month: sep
 journal: "Cross-Currents: East Asian History and Culture Review"
