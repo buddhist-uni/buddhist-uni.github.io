@@ -9,7 +9,7 @@ course: burmese
 tags:
   - state
   - qing
-  - yunnan
+  - southern-china
   - sea
   - medieval
 year: 2011

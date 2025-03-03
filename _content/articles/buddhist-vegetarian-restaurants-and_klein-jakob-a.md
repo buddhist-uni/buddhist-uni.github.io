@@ -10,7 +10,7 @@ course: becon
 tags:
   - vegetarianism
   - chinese
-  - yunnan
+  - southern-china
 year: 2016
 journal: "Ethnos"
 volume: 82
