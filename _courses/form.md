@@ -573,11 +573,11 @@ with a reading or two from the *Common Buddhist Text*.
 
 [CBT] M.54
 {:.mb-0}
-- The point of worshipping relics (and statues and so on) is to worship the wisdom that gives rise to the Buddhas.
+- The point of worshipping relics (and statues and so on) is to point the mind towards the wisdom that gives rise to Buddhas.
 
 [CBT] V.26
 {:.mb-0}
-- Even a dog tooth will suffice to worship if it gives rise to faith.
+- Even a dog tooth is worth worshipping if it gives rise to faith.
 
 ##### Offerings
 
@@ -670,12 +670,12 @@ with a reading or two from the *Common Buddhist Text*.
 
 {% include content_blurb.html category="articles" slug="what-do-meditators-do-when-they-meditate_matko-karin-et-al" blurb="
 - A Western researcher groups all meditation practices (Buddhist and not) into 52 types.
-- Especially interesting are the clusters: there are some more Hindu/Vajrayana techniques, some more Theravada/Zen techniques, and some practices which are common to both groups of meditators.
+- Especially interesting are the clusters: there are Hindu/Vajrayana techniques, Theravada/Zen techniques, and some practices which are common to both.
 " %}
 
 [CBT] M.109
 {:.mb-0}
-- Different techniques may be suitable for different people.
+- Diversity is great, as different techniques may be suitable for different people.
 
 ##### Anumodanā
 
@@ -686,7 +686,7 @@ with a reading or two from the *Common Buddhist Text*.
 ##### Chanting
 
 {% include content_blurb.html category="essays" slug="chanting_pluralism" %}
-- Chanting is a particularly common form of meditation for many (most?) Buddhists.
+- Chanting is a particularly common form of meditation for most Buddhists.
 
 ##### Lay Practice
 
@@ -734,7 +734,7 @@ with a reading or two from the *Common Buddhist Text*.
 
 [CBT] V.65--68
 {:.mb-0}
-- A lengthy description of how to the Brahmaviharas into practice to develop character.
+- A lengthy description of how to put the Brahmaviharas into practice in order to develop true character.
 
 ##### Uposatha
 
