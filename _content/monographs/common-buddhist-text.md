@@ -17,7 +17,7 @@ month: dec
 publisher: "Mahachulalongkorn"
 base_value: 5
 pages: 397
-course_time_multiplier: 0.7
+course_time_multiplier: 0.75
 ---
 
 An anthology of passages from the canonical and quasi-canonical texts of the three vehicles.

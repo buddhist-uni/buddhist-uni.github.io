@@ -103,7 +103,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 ##### Parallel to Robinson Ch 2: The Buddha as Teacher
 
-[CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.116, Th.171
+[CBT] Th.13, L.25, Th.205, L.23, L.30, L.34, L.39, L.42, L.53, L.57, Th.28, Th.59, Th.73–75, Th.98, Th.171
 {:.mb-0}
 - Here we get a few stories about the Buddha's life as a teacher from the early texts.
 - The Buddha's life and teachings are, of course, the cornerstone of the Buddhist religion, and set its tenor.
@@ -194,7 +194,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {% include content_blurb.html category="essays" slug="pure-land_bloom" %}
 - All these factors—increased deification, a concern over death and the decline of the sasana, etc—fueled the movement towards what we now call "Pure Land" Buddhism: a next-life focused practice still very popular in East Asia today.
 
-[CBT] M.73, V.33, M.56–57, M.49, M.91, M.67, M.99
+[CBT] V.33, M.56–57, M.49, M.91, M.67, M.99
 {:.mb-0}
 - Practitioners came to be encouraged to aspire to Buddhahood themselves and to take the Bodhisattva Path rather than to take the "lesser" path of the disciple so as to maximize the benefit that their enlightenment can have for others.
 
@@ -429,7 +429,7 @@ Allison Goodwin gives a brief outline of the discrimination faced by women in Bu
 
 ##### Robinson Chapter 12: “Buddhism Comes West”
 
-[CBT] Th.23, Th.25, Th.26, Th.47, Th.104, Th.118, Th.129, Th.155, Th.203, Th.207
+[CBT] Th.23, Th.25, Th.26, Th.47, Th.104, Th.118, Th.129, Th.155, Th.203, Th.207, Th.228
 {:.mb-0}
 - Western, "Protestant" Buddhists have selected certain strands from the early Canon to emphasize. Here, we read some of their favorite passages.
 
@@ -506,6 +506,10 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {% include content_blurb.html category="essays" slug="sesshin_pluralism" %}
 - In a meditation retreat, it becomes obvious how intensive practice relies on the generosity of others.
 
+[CBT] Th.49
+{:.mb-0}
+- And outside of the zendo, generosity and respect leads to a safe and nurturing community.
+
 ##### Cintita Chapter 5: The History of the Sāsana
 
 {% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
@@ -558,54 +562,222 @@ The last third of our class tackles the more prescriptive, “micro” question 
 
 {% include content_box.html category="booklets" slug="lay-buddhist-practice_khantipalo" %}
 
-[CBT] Th.39–40, Th.49, Th.96, Th.112, Th.114
-{:.mb-0}
-- The Buddha’s description of (/prescription for) "the good life" for a householder.
-
-[CBT] Th.228, M.162
-{:.mb-0}
-- Citta the Householder shows what is possible for laypeople to achieve.
+- Go ahead and read the Preface and the Introduction to *Khantipalo* now.
 
 #### Supplements
 
-We have two supplements for *Khantipalo*:
+As we continue to read *Khantipalo*, we'll supplement each section of the book
+with a reading or two from the *Common Buddhist Text*.
 
-##### Taking Refuge
+##### The Shrine Room
 
-Listen to this alongside the section of Khantipalo about refuge and the triple gem:
-
-[CBT] Th.89, Th.93, M.82
+[CBT] M.54
 {:.mb-0}
-- The path starts with faith.
+- The point of worshipping relics (and statues and so on) is to worship the wisdom that gives rise to the Buddhas.
+
+[CBT] V.26
+{:.mb-0}
+- Even a dog tooth will suffice to worship if it gives rise to faith.
+
+##### Offerings
 
 {% include content_blurb.html category="canon" slug="vv7.11" %}
+- Making offerings to the Triple Gem is an ancient tradition and excellent karma.
 
+##### Gestures of Respect
 
-##### Practicing Restraint
-
-A few more words are also due on the subject of restraint, beyond the five precepts. Please consider this alongside the section on “practice”
-
-[CBT] Th.21, Th.102, Th.122
+[CBT] V.46
 {:.mb-0}
-- On wholesome and unwholesome actions of body, speech, and mind.
+- While gestures may seem trivial, don’t underestimate the power of even a small good deed.
 
-[CBT] M.109, M.124
+##### The Preliminary Formula
+
+[CBT] Th.89
 {:.mb-0}
-- On how to use meditation as an antidote to greed, hatred, and restlessness.
+- Faith is the first of the spiritual faculties.
+
+##### The Three Refuges
+
+[CBT] Th.93
+
+##### The Five Precepts
+
+[CBT] M.82, M.83
+{:.mb-0}
+- The five precepts are grounded in the Triple Gem and give fearlessness to beings.
+
+##### Recollection of the Three Treasures
+
+[CBT] Th.134
+{:.mb-0}
+- The benefits you can expect from meditating on the Triple Gem.
+
+##### Affirmation of Refuge
+
+[CBT] Th.90
+{:.mb-0}
+- Faith and aspiration are fundamental to growing in the practice.
+
+##### Daily Recollection
+
+[CBT] V.22
+{:.mb-0}
+- We all want good things to last, but they cannot.
+
+[CBT] Th.75, Th.77
+{:.mb-0}
+- A couple poems from the Pāli Canon on impermanence.
+
+[CBT] Th.135
+{:.mb-0}
+- The recollection of death.
+
+[CBT] M.17
+{:.mb-0}
+- This Mahayana prayer asks the Triple Gem to help one face the perils of Saṃsāra.
+
+##### Loving Kindness
+
+[CBT] M.73
+{:.mb-0}
+- Seeing the perils of Saṃsāra, we should not despise others, but have compassion for them.
+
+[CBT] Th.114
+{:.mb-0}
+- How and why to cultivate Loving Kindness
+
+[CBT] Th.136, Th.137
+{:.mb-0}
+- ... as well as the other three Divine Abidings.
+
+##### Meditation
+
+[CBT] Th.122
+{:.mb-0}
+- The need to train the mind.
+
+[CBT] M.124--126
+{:.mb-0}
+- The Sixth Patriarch of the Chan School, Huineng, gives a detailed description of how to practice meditation.
+
+[CBT] Th.124
+{:.mb-0}
+- The mind is inherently bright. We just need to clear away…
+
+[CBT] Th.125
+{:.mb-0}
+- ... the Five Hindrances to mental clarity.
+
+{% include content_blurb.html category="articles" slug="what-do-meditators-do-when-they-meditate_matko-karin-et-al" blurb="
+- A Western researcher groups all meditation practices (Buddhist and not) into 52 types.
+- Especially interesting are the clusters: there are some more Hindu/Vajrayana techniques, some more Theravada/Zen techniques, and some practices which are common to both groups of meditators.
+" %}
+
+[CBT] M.109
+{:.mb-0}
+- Different techniques may be suitable for different people.
+
+##### Anumodanā
+
+[CBT] Th.109
+{:.mb-0}
+- Rejoicing in and encouraging others’ generosity is another form of merit.
+
+##### Chanting
 
 {% include content_blurb.html category="essays" slug="chanting_pluralism" %}
 - Chanting is a particularly common form of meditation for many (most?) Buddhists.
 
-[CBT] V.55–56
+##### Lay Practice
+
+[CBT] Th.39
 {:.mb-0}
-- Does this admonishment to practice solitude contrast with the emphasis on the spiritual community we read earlier? How do you explain this tension?
+- A long description of "the good life" for a lay Buddhist.
+
+##### Dāna
+
+[CBT] Th.40
+{:.mb-0}
+- The first step to being generous is to not waste your wealth.
+
+[CBT] M.30
+{:.mb-0}
+- Indulging is a bit of a waste compared to generosity.
+
+[CBT] Th.106, Th.107
+{:.mb-0}
+- A generous person is one who gives to all: especially the virtuous.
+
+[CBT] M.139
+{:.mb-0}
+- The highest giving is imbued with an understanding of emptiness.
+
+##### Sīla
+
+[CBT] Th.102
+{:.mb-0}
+- What makes an action good or bad?
+
+[CBT] Th.112
+{:.mb-0}
+- Wrong and right livelihood.
+
+[CBT] Th.103
+{:.mb-0}
+- How to reflect on your actions.
+
+##### Bhāvanā
+
+[CBT] Th.116
+{:.mb-0}
+- Patience in life and meditation support each other.
+
+[CBT] V.65--68
+{:.mb-0}
+- A lengthy description of how to the Brahmaviharas into practice to develop character.
+
+##### Uposatha
+
+[CBT] V.55
+{:.mb-0}
+- The benefits of solitude.
+
+##### The Eight Precepts
+
+[CBT] Th.113
+{:.mb-0}
+- The canonical description of an eight-precept uposatha observance.
+
+##### The Rains
+
+[CBT] M.160, M.162
+{:.mb-0}
+- Whether a monk or a lay, you can use the "Buddhist Lent" as an opportunity to deepen your practice.
+
+##### The Purpose
+
+[CBT] Th.21
+{:.mb-0}
+- The Buddha taught what is spiritually useful.
+
+##### The Uposatha Sutta
+
+[CBT] V.56
+{:.mb-0}
+- Seclusion is necessary for developing absorption.
+
+##### The Precepts
+
+[CBT] V.54
+{:.mb-0}
+- Don't delay using the Dhamma for its intended purpose.
 
 #### Praxis Conclusion 
 
 {% include content_blurb.html category="av" slug="dhammavinaya_yuttadhammo" %}
 - Bhante Yuttadhammo revisits [the Gotami Sutta](https://www.accesstoinsight.org/tipitaka/an/an08/an08.053.than.html){:target="_blank" ga-event-value="0.3"} (which you may remember from the [Intro to Buddhism Course](/courses/buddhism)) and tells us how we can recognize when our own practice of Buddhism goes off track.
 
-[CBT] V.52, V.54
+[CBT] V.52
 {:.mb-0}
 - No matter what happens: never give up.
 
