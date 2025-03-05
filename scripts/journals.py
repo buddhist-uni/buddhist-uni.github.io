@@ -1,7 +1,7 @@
 #!/bin/python
 
 # Journals
-# See e.g. https://api.openalex.org/sources/S120086578 for more info
+# See e.g. https://openalex.org/sources/s4210198890 for more info
 ALT      = "S4210189124"
 ARIRIAB  = "S4306473384"
 ARIRIAB_JP = "S4306544351"
@@ -26,6 +26,7 @@ AO       = "S4210209688"
 EB       = "S118212324"
 EB_NS    = "S2764994964"
 IBK      = "S2764402342"
+EMSCAT   = "S4210198890"
 
 # from OA to OBU IDs
 slugs = {
@@ -51,6 +52,7 @@ slugs = {
   PNAS: "pnas",
   AO: "ao",
   EB: "eb",
-  EB_NS: "eb",
+  EB_NS: "eb", # Just map the old and new series together
   IBK: "ibk",
+  EMSCAT: "emscat",
 }

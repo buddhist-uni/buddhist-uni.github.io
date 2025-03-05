@@ -12,7 +12,7 @@ tags:
   - iddhi
   - southern-china
 year: 2022
-journal: "Études Mongoles Sibériennes Centrasiatiques Et Tibétaines"
+journal: emscat
 volume: 53
 pages: 30
 openalexid: W4312130865

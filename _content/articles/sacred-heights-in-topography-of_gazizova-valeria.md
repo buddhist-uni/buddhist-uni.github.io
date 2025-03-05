@@ -13,8 +13,7 @@ tags:
   - kalmykia
   - past
 year: 2021
-month: jan
-journal: "Études Mongoles Sibériennes Centrasiatiques Et Tibétaines"
+journal: emscat
 volume: 52
 pages: 39
 openalexid: W4200165305
