@@ -5,7 +5,7 @@ drive_links:
   - "https://drive.google.com/file/d/1xlDJ_i9_GO9k_xHOdhYUv41rlB2lOnFV/view?usp=sharing"
 course: burmese
 tags:
-  - ethics
+  - animals
 year: 2008
 journal: "SOAS Bulletin of Burma Research"
 publisher: "School of Oriental and African Studies"
