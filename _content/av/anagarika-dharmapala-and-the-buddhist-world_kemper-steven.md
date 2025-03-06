@@ -18,3 +18,4 @@ minutes: 69
 > He is usually understood through the process by which Sri Lanka became independent, by which Sri Lankans who had become Christians returned to their Buddhist origins: an entirely Sri Lankan context.
 But reading the diaries, I realized he spent 80–90% of his adult life living outside of Sri Lanka.
 
+A brief look at the life of a famous Buddhist advocate as he understood it.
