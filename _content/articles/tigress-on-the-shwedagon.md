@@ -9,7 +9,8 @@ tags:
 year: 2008
 journal: "SOAS Bulletin of Burma Research"
 publisher: "School of Oriental and African Studies"
-pages: 1 
+pages: 1
+volume: 6
 ---
 
 This short article recounts an incident in 1903 when a tigress sought refuge at the Shwedagon Pagoda in Rangoon, and soldiers were called to kill it after monks feared for their safety. The monks later condemned the killing and they hung the tiger's skin and placed a plaster image of it on the pagoda as a form of reverence.
