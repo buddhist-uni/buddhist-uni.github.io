@@ -1,7 +1,7 @@
 ---
 title: "Psychology"
 status: unpublished
-parents: [perception]
+parents: [feeling]
 ---
 
 The Scientific study of the mind.

@@ -7,7 +7,7 @@ subcat: podcast
 external_url: "https://timharford.com/2021/05/cautionary-tales-the-fan-who-infected-a-movie-star/"
 source_url: "https://www.pushkin.fm/podcasts/cautionary-tales/the-fan-who-infected-a-movie-star"
 alternate_url: "https://omny.fm/shows/cautionary-tales-with-tim-harford/the-fan-who-infected-a-movie-star"
-course: social
+course: society
 tags:
   - epidemiology
   - design

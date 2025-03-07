@@ -503,6 +503,9 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - Monastics and laity support each other
 
+{% include content_blurb.html category="canon" slug="an4.40" %}
+- It is offerings to worthy mendicants which constitute the basic “religious sacrifice” in the Buddhist religion: even for the ancestors.
+
 {% include content_blurb.html category="essays" slug="sesshin_pluralism" %}
 - In a meditation retreat, it becomes obvious how intensive practice relies on the generosity of others.
 
