@@ -5,13 +5,10 @@ authors: ["Daniel Deudney", "Michael Robinson"]
 external_url: "https://timetoeatthedogs.com/2020/08/16/the-argument-against-human-colonies-in-space/"
 drive_links:
   - "https://drive.google.com/file/d/12Fbk4sSEchmCHH5S9vGUd5tsSaZifRVG/view?usp=drivesdk"
-course: places
+course: wider
 tags:
-  - time
   - space
   - colonialism
-  - science
-  - world
 status: featured
 year: 2020
 month: aug

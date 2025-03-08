@@ -7,7 +7,7 @@ external_url: "https://youtu.be/e3jGWXeBtPo"
 course: places
 tags:
   - past
-  - astronomy
+  - space
 year: 2022
 month: may
 publisher: "PBS"

@@ -10,6 +10,7 @@ tags:
   - future
   - silicon-valley
   - transhumanism
+  - ai
 year: 2025
 month: mar
 minutes: 101

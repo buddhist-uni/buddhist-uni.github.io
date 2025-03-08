@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1NH0E-8cRukvTmUHwSiPT9mx2N-1dxuyK/view?usp=drivesdk"
 course: cosmology
 tags:
-  - astronomy
+  - space
 year: 1971
 publisher: bps
 chapter: 7

@@ -17,4 +17,4 @@ pages: 1
 volume: 6
 ---
 
-This short article shows a glasswork depiction of an incident in 1903 when a tigress sought refuge 9n the Shwedagon Pagoda in Rangoon, and soldiers were called in to kill it.
+A short article on a glasswork depiction of an incident in 1903 in which a tigress sought refuge on the Shwedagon Pagoda in Rangoon.
