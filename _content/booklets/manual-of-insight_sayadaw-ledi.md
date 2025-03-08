@@ -1,5 +1,5 @@
 ---
-title: "Manual of Insight: Vipassanā Dīpanī"
+title: "Vipassanā Dīpanī: Manual of Insight"
 authors:
   - "Ledi Sayadaw"
 translator: "U Ñāṇa Mahāthera"
@@ -14,9 +14,9 @@ tags:
 year: 1961
 olid: OL58059859M
 publisher: bps
-volume: 31
+number: 31
 series: wheel 
-pages: 98
+pages: 49
 ---
 
 > The insight exercises can be practised not only in solitude,
