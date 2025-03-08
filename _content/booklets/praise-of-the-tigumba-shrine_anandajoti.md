@@ -7,10 +7,11 @@ drive_links:
   - "https://drive.google.com/file/d/1X5dNEifsuuoTaqHZQBvzCsSkJzZNMC0s/view?usp=sharing"
 course: burmese
 tags:
-  - chanting
+  - theravada-chanting
+  - pali-metre
 year: 2013
 pages: 5
 olid: OL58059748M
 ---
 
-A line-by-line Pāli and English version of a chanting text from Myanmar praises the Shwedagon Pagoda, showcasing the variations in the Siloka metre. The text demonstrates how the metre's structure shifts while honoring the pagoda.
+A line-by-line Pāli and English version of a chanting text from Myanmar praises the Shwedagon Pagoda, showcasing the variations in the Siloka metre.
