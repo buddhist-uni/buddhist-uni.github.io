@@ -1,5 +1,8 @@
 ---
 title: "A Tigress on the Shwedagon: A Research Note"
+# assumed author (he was the journal editor)
+authors:
+  - "Michael W. Charney"
 external_url: "https://www.burmalibrary.org/docs11/SBBR6-Tigress.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1xlDJ_i9_GO9k_xHOdhYUv41rlB2lOnFV/view?usp=sharing"
