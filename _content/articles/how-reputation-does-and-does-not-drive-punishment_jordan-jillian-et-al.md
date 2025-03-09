@@ -8,9 +8,9 @@ source_url: "https://doi.org/10.1073/pnas.2302475120"
 drive_links:
   - "https://drive.google.com/file/d/1T8uT4yZrGAlatmLUkhYJ8NjmEsp4l9NG/view?usp=drivesdk"
 tags:
-  - social
+  - ideology
   - social-media
-  - justice
+  - groups
 year: 2023
 month: jul
 journal: pnas

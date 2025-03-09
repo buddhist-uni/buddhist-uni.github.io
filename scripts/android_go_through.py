@@ -5,6 +5,7 @@ with yaspin(text="Initializing..."):
     git_root_folder,
     system_open,
     input_with_tab_complete,
+    DelayedKeyboardInterrupt,
   )
   
   course_list = None
@@ -46,17 +47,19 @@ for fp in local_files:
     if not gfs:
       raise NotImplementedError("File not found on Drive at all.")
     pagecount = None
-    if fp.suffix.lower() == '.pdf':
-      text = readpdf(fp)
-      pagecount = get_page_count(fp)
-    elif fp.suffix.lower() == '.epub':
-      text = read_epub(fp)
-      pagecount = -(len(text)//-2200)
-    else:
-      print(f"Warning! Dunno how to read a {fp.suffix} file!")
-      text = fp.stem
-    text = normalize_text(text)
-    save_normalized_text(gf['id'], text)
+    text = ''
+    with DelayedKeyboardInterrupt():
+      if fp.suffix.lower() == '.pdf':
+        text = readpdf(fp)
+        pagecount = get_page_count(fp)
+      elif fp.suffix.lower() == '.epub':
+        text = read_epub(fp)
+        pagecount = -(len(text)//-2200)
+      else:
+        print(f"Warning! Dunno how to read a {fp.suffix} file!")
+        text = fp.stem
+      text = normalize_text(text)
+      save_normalized_text(gf['id'], text)
     glink = gdrive.DRIVE_LINK.format(gf['id'])
     course = predictor.predict([text], normalized=True)[0] + "/unread"
   course = input_with_tab_complete("course: ", course_list, prefill=course)
