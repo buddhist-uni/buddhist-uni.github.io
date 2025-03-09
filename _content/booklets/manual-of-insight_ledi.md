@@ -15,7 +15,7 @@ year: 1961
 olid: OL58059859M
 publisher: bps
 number: 31
-series: wheel 
+series: wheel
 pages: 49
 ---
 

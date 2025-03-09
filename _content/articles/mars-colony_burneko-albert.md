@@ -14,7 +14,7 @@ tags:
   - space
 year: 2024
 month: sep
-journal: "The Defector"
+journal: "Defector"
 pages: 9
 ---
 
