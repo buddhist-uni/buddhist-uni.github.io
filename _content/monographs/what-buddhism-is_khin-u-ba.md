@@ -2,7 +2,7 @@
 title: "What Buddhism Is"
 authors:
   - "U Ba Khin"
-external_url: "https://store.pariyatti.org/what-buddhism-is-ebook-vipassana"
+external_url: "https://ia803205.us.archive.org/13/items/what-buddhism-is_202008/What-Buddhism-Is.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1AwLPU_ojw3q7LZsqY2sQfnU10VQn-xGO/view?usp=drive_link"
 formats: [epub]
@@ -11,7 +11,6 @@ tags:
   - theravada
 olid: OL57370651M
 year: 1977
-month: OL57370651M
 publisher: "Vipassana Research Association"
 pages: 36
 ---
