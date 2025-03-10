@@ -264,12 +264,12 @@ if __name__ == "__main__":
         access_token_secret=os.getenv("X_ACCESS_TOKEN_SECRET"),
       )
       x_resp = client.create_tweet(text=status)
+      print("::group::Twitter Response")
+      print(json.dumps(x_resp, indent=2, default=str))
+      print("::endgroup::", flush=True)
   except Exception as e:
       twitterror = e
-  print("::group::Twitter Response")
-  print(json.dumps(x_resp, indent=2, default=str))
-  print("::endgroup::", flush=True)
-
+  
   client = BskyClient()
   print("Posting to BlueSky...")
   client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
