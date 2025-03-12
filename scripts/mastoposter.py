@@ -237,6 +237,7 @@ if __name__ == "__main__":
     print("::error title=Nothing to do::No new items left to post to Mastodon")
     import sys
     sys.exit(1)
+  assert idx_to_post > 3700, f"Script thinks we're on post number {idx_to_post}"
   mtype = "notice"
   remaining = len(filtered_content) - idx_to_post-1
   if remaining <= 2:

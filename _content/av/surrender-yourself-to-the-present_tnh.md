@@ -5,10 +5,9 @@ year: 2004
 month: jan
 course: meditation
 tags:
-  - samatha
+  - samatha # maybe move here?
   - buddhism
   - function
-status: featured
 external_url: "https://youtu.be/N93IvR45D80"
 drive_links:
   - "https://drive.google.com/file/d/166_hTnOD05h_tiHDdHuen1_VCQrvxu07/view?usp=drivesdk"
