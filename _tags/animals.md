@@ -8,8 +8,8 @@ illustration_width: 1280
 illustration_center_x: 61%
 illustration_center_y: 9%
 illustration_caption: >-
-  A mural on the wall of Thiksey Monastery, Thikse Gompa, Ladakh depicts a nobleman extending a hand to an approaching deer.
-  In the background, a peacock takes some rice from a bowl he's presumably set up as an offering.
+  A close-up of a mural on the wall of Thiksey Monastery, Thikse Gompa, Ladakh depicts a nobleman extending a hand to an approaching deer.
+  In the background, a peacock takes some rice from a bowl presumably set out as an offering.
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Thiksey_Monastery,_Buddhist_murals_2,_Ladakh,_North_India.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Monk_feeding_pigeons%2C_Rumtek.jpg
 image_width: 2560

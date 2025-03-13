@@ -2,6 +2,7 @@
 title: "Anger: It's Worse Than You Think and How to Manage It"
 authors:
   - "Ada Kase"
+source_url: "https://www.listennotes.com/podcasts/the-buddhist/anger-its-worse-than-you-_MscPkqXSBi/"
 file_links:
   - "exclusive_01/Anger_-_It's_Worse_Than_You_Think_and_How_to_Manage_It%20(2019-01-24)%20-%20Buddhist%20Auntie.mp3"
 drive_links:

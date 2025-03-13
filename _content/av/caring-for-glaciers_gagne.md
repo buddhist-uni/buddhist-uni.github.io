@@ -4,7 +4,7 @@ authors:
   - "Karine Gagné"
 drive_links:
   - "https://drive.google.com/file/d/1fkHrusekp-8ryTs6l3Lz39enYsTrWeQi/view?usp=drive_link"
-source url_: "https://newbooksnetwork.com/karine-gagne-caring-for-glaciers-land-animals-and-humanity-in-the-himalayas-u-washington-press-2019"
+source_url: "https://newbooksnetwork.com/karine-gagne-caring-for-glaciers-land-animals-and-humanity-in-the-himalayas-u-washington-press-2019"
 file_links:
   - "exclusive_01/Caring%20For%20Glaciers%20-%20Karine%20Gagné.m4a"
 formats: [m4a]
