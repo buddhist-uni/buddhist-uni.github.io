@@ -101,7 +101,7 @@ def add_tracked_folder(slug, public, private, gfolders=None):
   return gfolders
 
 def get_gfolders_for_course(course):
-  """Returns a (public, private) tuple of GIDs"""
+  """Returns a (public, private) tuple of GIDs given a human course string"""
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
   parts = course.split('/')
   course = parts[0]
@@ -113,32 +113,44 @@ def get_gfolders_for_course(course):
   
   private_folder = folderlink_to_id(gfolders[course]['private'])
   public_folder = folderlink_to_id(gfolders[course]['public'])
-  if len(parts) > 1:
-    if not parts[1]: # use "course/" syntax to move to the private version of the course
+  del parts[0]
+  while len(parts) > 0:
+    if not parts[0]: # use "course/" syntax to move to the private version of the course
       return (None, private_folder)
     with yaspin(text="Loading subfolders..."):
       subfolders = get_subfolders(private_folder)
     print(f"Got subfolders: {[f.get('name') for f in subfolders]}")
-    q = parts[1].lower()
+    q = parts[0].lower()
+    found = False
     for subfolder in subfolders:
       if subfolder['name'].lower().startswith(q):
         print(f"Going with \"{subfolder['name']}\"")
-        return (None, subfolder['id'])
-    for subfolder in subfolders:
-      if q in subfolder['name'].lower():
-        print(f"Going with \"{subfolder['name']}\"")
-        return (None, subfolder['id'])
+        private_folder = subfolder['id']
+        public_folder = None
+        found = True
+        break
+    if not found:
+      for subfolder in subfolders:
+        if q in subfolder['name'].lower():
+          print(f"Going with \"{subfolder['name']}\"")
+          private_folder = subfolder['id']
+          public_folder = None
+          found = True
+          break
+    if found:
+      del parts[0]
+      continue
     print(f"No subfolder found matching \"{q}\"")
-    q = input_with_prefill("Create new subfolder: ", titlecase(parts[1]))
+    q = input_with_prefill("Create new subfolder: ", titlecase(parts[0]))
     if not q:
       print("Okay, will just put in the private folder then.")
       return (None, private_folder)
     subfolder = create_folder(q, private_folder)
     if not subfolder:
       raise RuntimeError("Error creating subfolder. Got null API response.")
-    # system_open(FOLDER_LINK.format(private_folder))
-    # input("Press enter to continue...")
-    return (None, subfolder)
+    private_folder = subfolder
+    public_folder = None
+    del parts[0]
   return (public_folder, private_folder)
 
 def get_course_for_folder(folderid):
