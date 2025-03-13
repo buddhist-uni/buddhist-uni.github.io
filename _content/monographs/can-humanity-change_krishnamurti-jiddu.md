@@ -11,7 +11,6 @@ year: 2003
 month: nov
 olid: OL8845858M
 oclc: 51804656
-external_url: "https://archive.org/details/canhumanitychang0000unse/mode/1up"
 publisher: shambhala
 pages: 140
 ---

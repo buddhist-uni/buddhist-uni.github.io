@@ -1,7 +1,6 @@
 #!/bin/python3
 
 from pathlib import Path
-import os
 import re
 
 from strutils import FileSyncedSet, git_root_folder

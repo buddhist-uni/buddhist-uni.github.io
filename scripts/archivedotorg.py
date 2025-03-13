@@ -159,17 +159,39 @@ def find_lendable_archiveorg_url_for_metadata(workinfo):
 def is_archiveorg_item_lendable(itemid):
   if itemid in ARCHIVEID_BLACKLIST:
     return False
-  resp = archive_org_session.get("https://archive.org/services/availability", params={"identifier": itemid})
+  # Old API.  Seems deprecated?  Keeping the code around just in case:
+  # resp = archive_org_session.get("https://archive.org/services/availability", params={"identifier": itemid})
+  # data = resp.json()
+  # if not resp.ok or not data["success"]:
+  #   raise RuntimeError("Failed to connect to the Archive.org availability API")
+  # try:
+  #   return data['responses'][itemid]['is_lendable'] or data['responses'][itemid]['status'] == 'open'
+  # except KeyError:
+  #   message = data['responses'][itemid]['error_message']
+  #   if message == 'not found':
+  #     return False
+  #   raise KeyError(f"Archive.org Availability API returned: \"{message}\"")
+
+  # New metadata API
+  resp = archive_org_session.get(f"https://archive.org/metadata/{itemid}")
+  if not resp.ok:
+    raise RuntimeError("Failed to connect to the Archive.org metadata API")
   data = resp.json()
-  if not resp.ok or not data["success"]:
-    raise RuntimeError("Failed to connect to the Archive.org availability API")
-  try:
-    return data['responses'][itemid]['is_lendable'] or data['responses'][itemid]['status'] == 'open'
-  except KeyError:
-    message = data['responses'][itemid]['error_message']
-    if message == 'not found':
-      return False
-    raise KeyError(f"Archive.org Availability API returned: \"{message}\"")
+  # No data is returned for bad IDs
+  if not data:
+    return False
+  metadata = data['metadata']
+  assert metadata['identifier'] == itemid, f"Got {metadata['identifier']} for {itemid} ?"
+  assert metadata['mediatype'] == 'texts', f"Why are you searching for non-text {itemid} ?"
+  # Without access restriction this is a completely free / open access work
+  if 'access-restricted-item' not in metadata or not metadata['access-restricted-item'] or metadata['access-restricted-item'] == 'false':
+    return True
+  assert metadata['access-restricted-item'] in ['true', True], f"Access restriction is {metadata['access-restricted-item']} for {itemid}"
+  # If it's in the borrowable collection, it's available for lending
+  if 'inlibrary' in metadata['collection']:
+    return True
+  return False
+
 
 def openlibrary_edition_to_work_id(editionid):
   try:

@@ -4,7 +4,7 @@ authors:
   - "Scott McCloud"
 status: featured
 subcat: comic
-external_url: "https://archive.org/details/understandingcom00mccl/mode/1up"
+external_url: "https://archive.org/details/understandingcom0000mccl/mode/1up"
 course: media
 tags:
   - art

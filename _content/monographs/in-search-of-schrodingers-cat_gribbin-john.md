@@ -2,7 +2,6 @@
 title: "In Search of Schrödinger's Cat: Quantum Physics and Reality"
 authors: ["John Gribbin"]
 year: 1984
-external_url: "https://archive.org/details/insearchofschrod0000grib_g0k9/mode/1up"
 olid: OL7825715M
 publisher: "Bantam"
 course: physics
