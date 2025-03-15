@@ -6,7 +6,7 @@ external_url: "https://static.sirimangalo.org/diraudio/Yuttadhammo/Daily/130325_
 drive_links:
   - "https://drive.google.com/file/d/1NSbENZFL--Mzno6bFwZ5lZZD0S0A6GVL/view?usp=drive_link"
 course: burmese
-formats: mp3
+formats: [mp3]
 month: mar
 year: 2013
 tags:
