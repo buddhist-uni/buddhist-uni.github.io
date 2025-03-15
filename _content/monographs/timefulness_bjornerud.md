@@ -8,7 +8,7 @@ publisher: princeton
 status: featured
 course: wider
 tags:
-  - geology
+  - earth
 olid: OL27816874M
 pages: 224
 ---

@@ -11,7 +11,7 @@ drive_links:
 course: roots
 tags:
   - hydrology
-  - geology
+  - earth
 year: 2003
 month: apr
 journal: "Hydrological Sciences Journal-journal Des Sciences Hydrologiques"

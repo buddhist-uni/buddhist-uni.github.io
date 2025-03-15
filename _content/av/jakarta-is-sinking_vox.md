@@ -8,9 +8,8 @@ authors:
 course: sea
 tags:
   - indonesia
-  - climate-change
   - colonization
-  - geology
+  - earth
 base_value: 0.2
 status: featured
 minutes: 11

@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/13jFEWkKCTJSx7c8ByHNEWurHw2unvnFR/view?usp=drivesdk"
 course: cosmology
 tags:
-  - geology # might move here, idk
+  - earth # might move here, idk
   - an
 # buddha tag covered by Nyanamoli's *Life*
 year: 2018

@@ -8,7 +8,7 @@ drive_links:
 status: featured
 course: wider
 tags:
-  - geology
+  - earth
   - seismology
   - pacific-northwest
 year: 2015
