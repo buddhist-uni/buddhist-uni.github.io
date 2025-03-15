@@ -16,4 +16,5 @@ tags:
 minutes: 42
 ---
 
-In this dhamma talk, Bhikkhu Yuttadhammo discusses how to live harmoniously within a community, focusing on the six conditions outlined in the [Sārāṇīya Sutta](https://buddhistuniversity.net//content/canon/an6.12). While emphasizing these key factors, he also touches on other Buddhist teachings that support cultivating mutual respect and amicability.
+How to live harmoniously within a community, focusing on the six conditions outlined in the [Sārāṇīya Sutta](/content/canon/an6.12).
+
