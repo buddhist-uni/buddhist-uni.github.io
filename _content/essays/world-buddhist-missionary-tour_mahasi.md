@@ -9,11 +9,13 @@ formats: [epub]
 course: burmese
 tags:
   - view
+  - nibbana
 year: 1995
 month: jun
 pages: 12
 ---
 
-> I urge you to meditate beforehand, i.e., before you come across old age, sickness and death, as it is the very time you should make effort to practise Vipassanā insight meditation. I mean you should make full use of time so that you can get one of the said five advantages delivered by Buddha for your own sake.
+> I urge you to meditate beforehand, i.e., before you come across old age, sickness and death
 
-The brief talk given by Venerable Mahasi Sayadaw discusses the teachings of Vipassana meditation and the importance of Dhamma Thiti Ñāṇa and Nibbāna Ñāna. It emphasizes the precepts and practicing meditation to eliminate mental defilements (kilesās), attain wisdom, and ultimately reach nibbāna, which is liberation from the cycle of suffering.These talks were given on the [World Buddhist Missionary Tour](http://www.myanmarnet.net/nibbana/mahatour.htm).
+Six brief talks given by Venerable Mahasi Sayadaw in 1952 around Asia on the path to Nibbana while on a tour sponsored by the newly-independent
+Burmese government to drum up support for its then-upcoming [Sixth Council](https://en.wikipedia.org/wiki/Sixth_Buddhist_council).
