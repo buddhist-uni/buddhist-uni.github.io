@@ -10,8 +10,8 @@ drive_links:
 course: theravada-roots # maybe split into three entries in the future?
 tags:
   - pali-literature
-  - burmese-roots
-  - sri-lankan-roots
+  - burmese
+  - sri-lankan
 year: 2004
 olid: OL44571386M
 oclc: 929597307

@@ -13,6 +13,7 @@ tags:
   - activism
   - feeling
   - groups
+  - new-mexico
 year: 2021
 month: sep
 series: tal
@@ -22,5 +23,4 @@ minutes: 65
 
 > He'd accidentally gone into climate-rant mode instead of speaking as a dad.
 
-The apocalyptic stakes of climate change cause one Seattle father to go over the edge along with the story of an annual ritual in Santa Fe for putting your glooms to rest 
-
+The apocalyptic stakes of climate change cause one Seattle father to go over the edge along with the story of a technique Santa Fe uses to put its glooms to rest.
