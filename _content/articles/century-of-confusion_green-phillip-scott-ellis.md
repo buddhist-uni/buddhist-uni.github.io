@@ -1,14 +1,14 @@
 ---
 title: "A Century of Confusion: The Brick Reliefs of Cambodia's Phnom Trap Towers"
 authors:
-  - "Green, Phillip Scott Ellis"
-external_url: "https://buddhism.lib.ntu.edu.tw/en/search/search_detail.jsp?seq=607765&comefrom=authorinfo"
+  - "Phillip Scott Ellis Green"
+external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3269004&journal_code=JIABS&download=yes"
 drive_links:
   - "https://drive.google.com/file/d/1sA_-0d0MZRSDewN1h81AanSi8kV3-61o/view?usp=sharing"
 course: cambodian
 tags:
-  - bart
-  - architecture
+  - medieval
+  - buddhist-architecture
 year: 2017
 journal: jiabs
 volume: 40
