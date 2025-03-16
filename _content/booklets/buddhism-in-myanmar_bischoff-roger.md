@@ -9,12 +9,13 @@ drive_links:
 formats: [pdf, epub]
 course: burmese
 tags:
-  - society
+  - roots
+olid: OL13056114M
 year: 1995
 publisher: bps
 series: wheel
 number: 399
-pages: 88
+pages: 49
 ---
 
 This booklet provides a brief history of Buddhism in Myanmar, tracing its development from its origins to the country's loss of independence to Great Britain in the late nineteenth century.
