@@ -1,7 +1,7 @@
 ---
 title: "Vipassanā Dīpanī: Manual of Insight"
 authors:
-  - "Ledi Sayadaw"
+  - ledi
 translator: "U Ñāṇa Mahāthera"
 external_url: "https://www.bps.lk/library-search-select.php?id=wh031"
 drive_links:

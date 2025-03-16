@@ -1,7 +1,7 @@
 ---
 title: "Bodipakkhiya-dipani: The Manual of the Factors Leading to Enlightenment"
 authors:
-  - "Ledi Sayadaw"
+  - ledi
 translator: "U Sein Nyo Tun"
 external_url: "https://store.pariyatti.org/requisites-of-enlightenment-vipassana"
 source_url: "https://dhamma-library.cdn.winmetta.org/14.%20Rear-Buddhist-Books-2/Bodhipakhiyadipani.pdf"
