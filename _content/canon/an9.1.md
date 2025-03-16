@@ -8,6 +8,7 @@ drive_links:
 course: path
 tags:
   - sangha
+  - sati
   - an
 year: 2018
 pages: 2
@@ -18,3 +19,5 @@ parallels:
 > Reverends, what is the vital condition for the development of the awakening factors?
 
 > A mendicant grounded on these five things should develop four further things.
+
+How spiritual friendship forms the foundation of the holy life.
