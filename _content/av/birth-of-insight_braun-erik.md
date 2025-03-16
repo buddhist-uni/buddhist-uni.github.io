@@ -7,11 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1PnwZgsf5KZZciOb8VXQ7gEprxkWrOgS7/view?usp=drivesdk"
 formats: [m4a]
 # sound quality is pretty bad
-# might want to archive
-course: west
+course: modern
 tags:
   - theravada
-  - modern
 year: 2014
 month: oct
 publisher: "Smith College"
