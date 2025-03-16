@@ -2,7 +2,8 @@
 title: "What Buddhism Is"
 authors:
   - "U Ba Khin"
-external_url: "https://ia803205.us.archive.org/13/items/what-buddhism-is_202008/What-Buddhism-Is.pdf"
+source_url: "https://store.pariyatti.org/what-buddhism-is-ebook-vipassana" # zip archive is broken as of March 2025
+external_url: "https://archive.org/download/what-buddhism-is_202008/What-Buddhism-Is.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1AwLPU_ojw3q7LZsqY2sQfnU10VQn-xGO/view?usp=drive_link"
 formats: [epub]
