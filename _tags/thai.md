@@ -29,6 +29,6 @@ The forms of Buddhism practiced in Thailand.
 
 Thai Buddhism is predominantly Theravādan, but shows a variety of influences,
 including indigenous Shamanism,
-many Chinese and Indic gods brought in by traders, and
+Chinese and Indic gods brought in by traders, and
 modernist reforms, which have combined
 to give Thai Buddhism its distinct flavor.

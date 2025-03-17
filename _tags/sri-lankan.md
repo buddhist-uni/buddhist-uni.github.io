@@ -25,6 +25,6 @@ image_center_y: 20%
 
 Buddhism in Sri Lanka.
 
-Sinhalese Buddhism has undergone several periods of decline and revival since it came to the island in the 3rd century BCE.
+Sinhalese Buddhism has undergone several periods of decline and revival since it first came to the island in the 3rd century BCE.
 From the Southern Indian conquests of the middle ages and the British colonial rule of the 19th century,
 Sri Lankan Buddhism today is a heady mix of exuberant, South Asian devotionalism and rational, European modernism.

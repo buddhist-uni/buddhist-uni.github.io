@@ -33,6 +33,5 @@ The Angkorian Empire was a center of Hindu/Mahayana Buddhism in the Middle Ages,
 but during the early modern period, it largely came under Siamese influence,
 shifting Cambodian Buddhism towards Thai-style Theravāda, which it still resembles today.
 
-During the Khmer Rouge (1975–1979), Buddhism in Cambodia was largely destroyed,
-but thanks to the efforts of many Cambodians, both within the country and across the
-diaspora, Cambodian Buddhism today is slowly starting to grow back from its deep roots.
+During the Khmer Rouge (1975–1979), Buddhism in Cambodia was almost entirely destroyed,
+but today it is slowly growing back thanks to its international seeds and deep roots.
