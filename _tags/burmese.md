@@ -21,7 +21,7 @@ illustration_caption: >-
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Shwedagon_Pagoda,_Young_Buddhist_monks,_Yangon,_Myanmar.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>)
 ---
 
-Burmese Buddhists are strongly devoted to preserving the "highest" teachings
-of the Theravāda Tradition: the Abhidhamma, Pāli commentaries, and meditation.
-Myanmar's modern meditation movements in particular have been hugely influential
-within the country and, indeed, around the world.
+The forms of Buddhism practiced in Myanmar.
+
+Burmese Buddhists are noted for their devotion to Theravāda's "higher" teachings, namely:
+the Abhidhamma, Pāli commentaries, and Vipassanā meditation.
