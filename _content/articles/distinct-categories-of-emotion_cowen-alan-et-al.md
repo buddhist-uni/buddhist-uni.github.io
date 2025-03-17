@@ -7,7 +7,7 @@ external_url: "https://europepmc.org/articles/pmc5617253?pdf=render"
 source_url: "https://doi.org/10.1073/pnas.1702247114"
 drive_links:
   - "https://drive.google.com/file/d/1RjJ6VLnqMwMxyTSPxx1A8qeEjzXtJFwt/view?usp=drivesdk"
-course: feeling
+course: feeling # compromise. Maybe up to inner?
 tags:
   - emotion
   - film
