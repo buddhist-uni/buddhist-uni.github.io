@@ -2,7 +2,7 @@
 title: "Cambodia’s Wat Phum Thmei Palm Leaf Library and the Resilience of Buddhist Texts"
 authors:
   - "Philip Menchaca"
-source_url: "https://tricycle.org/article/wat-phum-thmei-texts/Importantly%2C%20the%20Wat%20Phum%20Thmei,complex%20cultural%20and%20spiritual%20landscape."
+external_url: "https://tricycle.org/article/wat-phum-thmei-texts/"
 hidden_links:
   - "https://drive.google.com/file/d/1kw9y48feUw3otYBvD7fq4k1Q8yURyYUQ/view?usp=sharing"
 course: cambodian
