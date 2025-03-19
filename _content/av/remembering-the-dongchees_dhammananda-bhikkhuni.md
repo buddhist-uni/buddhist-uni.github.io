@@ -10,7 +10,7 @@ tags:
   - nuns
 year: 2023
 month: jan
-minutes: 
+minutes: 15
 ---
 
 In this brief talk given at Songdhammakalyani Monastery, Bhikkhuni Dhammananda discusses the devout renunciate laywomen  (dongchees) who reside in Buddhist hermitages near pagodas. These women are unrecognized bhikkhunis who play a crucial role in Cambodian religious community.
