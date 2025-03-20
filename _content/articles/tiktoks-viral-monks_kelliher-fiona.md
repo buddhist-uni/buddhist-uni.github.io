@@ -7,7 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/16ptBHE5bWAUTAnpXurIYPyJLubCUJSvf/view?usp=sharing"
 course: cambodian
 tags:
-  - 
+  - monastic
+  - engaged
 year: 2023
 month: mar
 journal: "Rest of World"
