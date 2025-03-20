@@ -15,6 +15,6 @@ journal: "Rest of World"
 pages: 6
 ---
 
-> “We’re on the way” to enlightenment, he said. “And on this way, what should we do?”
+> “We’re on the way to enlightenment", he said. “And on this way, what should we do?”
 
 This article presents the phenomenon of TikTok monks in Cambodia and presents the pros and cons of using social media to preach the dharma.
