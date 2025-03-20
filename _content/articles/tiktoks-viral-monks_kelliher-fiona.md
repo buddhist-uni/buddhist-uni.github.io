@@ -1,7 +1,7 @@
 ---
 title: "TikTok’s Viral Monks Are Clashing With Buddhist Authorities"
 author: 
-- "Fiona Kelliher"
+  - "Fiona Kelliher"
 external_url: "https://restofworld.org/2023/buddhist-monk-tiktok-monastic-code/"
 drive_links:
   - "https://drive.google.com/file/d/16ptBHE5bWAUTAnpXurIYPyJLubCUJSvf/view?usp=sharing"
