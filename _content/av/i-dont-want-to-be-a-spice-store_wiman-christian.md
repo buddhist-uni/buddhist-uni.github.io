@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 external_url: "https://poetryforallpod.com/podcast/episode-21-christian-wiman-i-dont-want-to-be-a-spice-store/"
 drive_links:
-  - "https://drive.google.com/file/d/1bxfPOd9qG0L51IajH7hibfzuJGOqkzEs/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1c4TQJ1pazJ13m8lKwdhax1ncuPwnrC7i/view?usp=drivesdk"
 course: groups
 tags:
   - craft # maybe even move here
