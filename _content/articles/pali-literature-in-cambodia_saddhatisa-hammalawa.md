@@ -11,7 +11,7 @@ tags:
 year: 1981
 journal: jpts
 volume: 9
-pages: 10
+pages: "178--197"
 ---
 
-This overview of Pāli literature in Cambodia is based on Saddhatissa's Pāli Literature of Southeast Asia. It covers vinaya, jātaka stories, devotional texts, and other biographical and doctrinal works.
+An overview of the Pāḷi texts composed in medieval to early modern Cambodia: biographies, Dhamma/Vinaya treatises, Jātakas, and devotional texts.
