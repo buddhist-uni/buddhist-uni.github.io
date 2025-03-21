@@ -9,7 +9,7 @@ course: cambodian
 tags:
   - pali-literature
 year: 1981
-journal: JPTS
+journal: jpts
 volume: 9
 pages: 10
 ---
