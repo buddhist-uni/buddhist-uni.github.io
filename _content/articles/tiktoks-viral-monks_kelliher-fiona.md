@@ -1,6 +1,6 @@
 ---
 title: "TikTok’s Viral Monks Are Clashing With Buddhist Authorities"
-author: 
+authors: 
   - "Fiona Kelliher"
 external_url: "https://restofworld.org/2023/buddhist-monk-tiktok-monastic-code/"
 drive_links:
@@ -9,6 +9,7 @@ course: cambodian
 tags:
   - monastic
   - engaged
+  - media
 year: 2023
 month: mar
 journal: "Rest of World"
