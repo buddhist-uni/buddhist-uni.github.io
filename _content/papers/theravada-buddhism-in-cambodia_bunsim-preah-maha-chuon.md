@@ -10,9 +10,9 @@ tags:
   - sangha
   - engaged
 year: 2009
-month: march
-journal: "The 2nd Bi-Annual International Conference of the Association of Theravâda Buddhist Universities"
-publisher: "Association of Theravada Buddhist Universities"
+month: mar
+booktitle: "The 2nd Bi-Annual International Conference of the Association of Theravâda Buddhist Universities"
+publisher: "Association of Theravāda Buddhist Universities"
 pages: "99--104"
 ---
 
