@@ -547,16 +547,16 @@ def batch_get_files_by_id(IDs: list, fields: str):
 def ensure_these_are_shared_with_everyone(file_ids: list[str]):
   all_files = batch_get_files_by_id(file_ids, "id,name,permissions,ownedByMe")
   for file in all_files:
+    if not file['ownedByMe']:
+      print(f"  Skipping {file['id']} ({file['name']}) because I don't own it...")
+      continue
     is_publicly_shared = False
     for permission in file['permissions']:
       if permission['type'] == 'anyone':
         is_publicly_shared = True
         break
     if not is_publicly_shared:
-      if not file['ownedByMe']:
-        print(f"WARNING: Attempting to share {file['id']} which isn't owned by the viewer!")
-      else:
-        print(f"Sharing \"{file['name']}\" with everyone...")
+      print(f"Sharing \"{file['name']}\" with everyone...")
       share_drive_file_with_everyone(file['id'])
 
 EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
