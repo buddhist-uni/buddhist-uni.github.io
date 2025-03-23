@@ -1,17 +1,18 @@
 ---
-title: "Transnationalizing Buddhism with Dr. John Marston"
+title: "Transnationalizing Cambodian Buddhism with Dr. John Marston"
 authors:
-  - "Eric Jones"
+  - "John Marston"
+editor: "Eric Jones"
 subcat: podcast
 external_url: "https://soundcloud.com/seacrossroads/transnationalizing-cambodian-buddhism-with-john-marston"
 drive_links:
   - "https://drive.google.com/file/d/1aygIZzNvzaX2FzWiQdHaAdPP9k6_u6Y9/view?usp=drive_link"
 course: cambodian
 tags:
-  - pilgrimage
+  - monastic-theravada
 year: 2017
 month: nov
-series: Southeast Asia Crossroads 
+publisher: "Southeast Asia Crossroads"
 minutes: 47
 ---
 
