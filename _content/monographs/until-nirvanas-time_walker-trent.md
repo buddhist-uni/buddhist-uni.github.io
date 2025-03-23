@@ -1,7 +1,7 @@
 ---
 title: "Until Nirvana's Time: Buddhist Songs from Cambodia"
 authors:
-  - "Trent Walker"
+  - walker-trent
 course: theravada # move to roots?
 status: featured # 3.5... rounding up for rarity.
 tags:

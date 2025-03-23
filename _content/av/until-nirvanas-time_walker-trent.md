@@ -1,7 +1,7 @@
 ---
 title: "Until Nirvana's Time: Buddhist Songs from Cambodia"
 authors:
-  - "Trent Walker"
+  - walker-trent
 subcat: podcast
 editor: "Jessica Zu"
 external_url: "https://newbooksnetwork.com/until-nirvanas-time"

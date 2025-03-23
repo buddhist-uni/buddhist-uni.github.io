@@ -1,7 +1,7 @@
 ---
 title: "Stirring and Stilling: A Liturgy of Cambodian Dharma Songs"
 authors:
-  - "Trent Walker"
+  - walker-trent
 subcat: music
 external_url: "https://www.stirringandstilling.org/home.html"
 source_url: "https://soundcloud.com/dharmasongs/sets/stirring-and-stilling"
