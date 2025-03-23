@@ -14,7 +14,7 @@ tags:
   - social
 year: 2020
 month: nov
-series: "Poetry for All"
+series: poetry-for-all
 number: 11
 minutes: 16
 ---
