@@ -545,10 +545,10 @@ def batch_get_files_by_id(IDs: list, fields: str):
   return ret
 
 def ensure_these_are_shared_with_everyone(file_ids: list[str]):
-  all_files = batch_get_files_by_id(file_ids, "id,name,permissions,ownedByMe")
+  all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
   for file in all_files:
-    if not file['ownedByMe']:
-      print(f"  Skipping {file['id']} ({file['name']}) because I don't own it...")
+    if 'permissions' not in file:
+      print(f"  Skipping {file['id']} ({file['name']}) because I can't change its permissions...")
       continue
     is_publicly_shared = False
     for permission in file['permissions']:
