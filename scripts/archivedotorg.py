@@ -239,7 +239,7 @@ def archive_urls(urls, skip_urls_archived_in_last_days=365):
       return True
   consecutive_failures = 0
   for url in tqdm(urls):
-    if "archive org/" in url or not should_arch(url):
+    if "archive.org/" in url or not should_arch(url):
       print(f"Skipping {url}...")
       continue
     if not save_url_to_archiveorg(url):
