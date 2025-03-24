@@ -1,5 +1,5 @@
 ---
-title: "Gratitude"
+title: "Gratitude: An Antidote to Dissatisfaction"
 authors:
   - "Kurzgesagt (In a Nutshell)"
 external_url: "https://youtu.be/WPPPFqsECz0"

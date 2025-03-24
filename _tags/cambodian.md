@@ -34,4 +34,4 @@ but during the early modern period, it largely came under Siamese influence,
 shifting Cambodian Buddhism towards Thai-style Theravāda, which it still resembles today.
 
 During the Khmer Rouge (1975–1979), Buddhism in Cambodia was almost entirely destroyed,
-but today it is slowly growing back thanks to its international seeds and deep roots.
+but today it is slowly growing back thanks to its deep roots and distant seeds.
