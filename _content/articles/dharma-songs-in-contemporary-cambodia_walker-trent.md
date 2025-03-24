@@ -1,7 +1,7 @@
 ---
 title: "Saṃvega and Pasāda: Dharma Songs in Contemporary Cambodia"
 authors:
-  - "walker"
+  - walker-trent
 external_url: "https://doi.org/10.2143/JIABS.41.0.3285745"
 drive_links:
   - "https://drive.google.com/file/d/1OjKQZ3i9r38MdEQM-cttpFf2CADnzf3Z/view?usp=sharing"
