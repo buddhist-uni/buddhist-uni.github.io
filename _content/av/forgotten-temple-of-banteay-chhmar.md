@@ -1,6 +1,6 @@
 ---
 title: "The Forgotten Temple of Banteay Chhmar"
-authros:
+authors:
   - "Wolfgang Luck"
 editor: "Karl-Heinz Satzger"
 publisher: "Deutsche Welle"
