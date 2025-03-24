@@ -1,13 +1,16 @@
 ---
 title: "The Forgotten Temple of Banteay Chhmar"
+authros:
+  - "Wolfgang Luck"
+editor: "Karl-Heinz Satzger"
 publisher: "Deutsche Welle"
 external_url: "https://youtu.be/mkeCUFpIDFc"
 course: cambodian
 tags:
-  - architecture
+  - buddhist-architecture
+  - sea
   - culture
-year: 2021
-month: aug
+year: 2020
 minutes: 42
 ---
 
