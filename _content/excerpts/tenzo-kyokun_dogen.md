@@ -10,7 +10,7 @@ status: featured
 course: east-asian
 tags:
   - zen
-  - daily
+  - daily-life
   - food
   - monastic-east-asian
   - monastic-advice

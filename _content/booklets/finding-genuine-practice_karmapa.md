@@ -11,7 +11,7 @@ tags:
   - mahayana
   - tibetan
   - kagyu
-  - daily
+  - daily-life
 year: 2020
 month: jun
 olid: OL35169273M
