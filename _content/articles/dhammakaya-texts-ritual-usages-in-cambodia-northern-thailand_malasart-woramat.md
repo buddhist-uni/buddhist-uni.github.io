@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1wL1DxxO2NZhDdtZGhqyrVr_kOxXsgSid/view?usp=drive_link"
 course: cambodian
 tags:
-  - ritual
+  - theravada-chanting
 year: 2021
 month: jun
 journal: "Academia Letters"
@@ -15,4 +15,5 @@ number: 1393
 pages: 6
 ---
 
-This paper explores how the Dhammakāya text has been utilized in consecration ceremonies in Cambodia and northern Thailand. Despite geographical differences, the author claims that the text has played a significant role in the Buddhist practices of both countries, with some notable similarities in its use.
+Dhammakāya texts in Cambodia and northern Thailand are a genre of Pāli text that list and explain the physical and metaphysical characteristics of the Buddha.
+These texts are frequently chanted to consecrate Buddha images.
