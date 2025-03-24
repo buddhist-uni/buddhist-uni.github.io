@@ -1,5 +1,5 @@
 ---
-title: "Transnationalizing Cambodian Buddhism with Dr. John Marston"
+title: "Transnationalizing Cambodian Buddhism"
 authors:
   - "John Marston"
 editor: "Eric Jones"
@@ -16,4 +16,4 @@ publisher: "Southeast Asia Crossroads"
 minutes: 47
 ---
 
-This podcast discusses how Cambodian monks began studying in Sri Lanka and India with support from the Cambodian diaspora. It also covers how Cambodian pilgrims helped fund temples in these countries, shaping religious and national identities.
+This podcast discusses how Sri Lanka and India have been helping restart the Cambodian monastic education system and the challenges that have arisen in setting up these "study abroad" programs.
