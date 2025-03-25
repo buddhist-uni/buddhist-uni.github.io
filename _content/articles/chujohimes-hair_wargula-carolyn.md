@@ -9,7 +9,7 @@ drive_links:
 course: japanese-roots
 tags:
   - body
-  - material-culture
+  - bart # maybe move here?
 year: 2021
 month: sep
 journal: "Religions"
