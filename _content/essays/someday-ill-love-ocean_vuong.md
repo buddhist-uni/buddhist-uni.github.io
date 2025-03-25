@@ -3,16 +3,13 @@ title: "Someday I’ll Love Ocean Vuong"
 authors:
   - "Ocean Vuong"
 external_url: "https://www.newyorker.com/magazine/2015/05/04/someday-ill-love-ocean-vuong"
-status: featured
 drive_links:
   - "https://drive.google.com/file/d/1eoUDf6sTeNIUosXHDG_gvF8qIhbdPveC/view?usp=drivesdk"
-course: death
+course: ambulit
 tags:
   - lgbt
-  - sex
   - rebirth
-  - origination
-  - ambulit
+  - contemporary-poetry
   - world
 subcat: poetry
 year: 2015
