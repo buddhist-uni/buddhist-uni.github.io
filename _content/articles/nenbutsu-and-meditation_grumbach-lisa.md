@@ -2,7 +2,7 @@
 title: "Nenbutsu and Meditation: Problems With the Categories of Contemplation, Devotion, Meditation, and Faith"
 authors:
   - "Lisa Grumbach"
-external_url: "http://www.shin-ibs.edu/documents/pwj3-7/05Grumbach37.pdf"
+external_url: "https://www.shin-ibs.edu/documents/pwj3-7/05Grumbach37.pdf"
 source_url: "https://doi.org/10.1163/9789004401525_045"
 drive_links:
   - "https://drive.google.com/file/d/1rWjGjyt7IWUe3S1bL9pYzFIDwkLZicAA/view?usp=drivesdk"
