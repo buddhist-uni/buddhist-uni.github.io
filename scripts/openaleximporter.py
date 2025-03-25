@@ -342,6 +342,9 @@ def _main():
     glink = gdrive.DRIVE_LINK.format(gfile['id'])
   else:
     glink = input("Google Drive Link: ")
+    gfile = gdrive.session().files().get(fileId=gdrive.link_to_id(glink),fields='name,parents,id').execute()
+    parentid = gfile['parents'][0]
+    gfile['course'] = gdrive.get_course_for_folder(parentid)
   course = input_with_tab_complete("course: ", gdrive.get_known_courses(), prefill=gfile['course'])
   folders = gdrive.get_gfolders_for_course(course)
   gdrive.move_gfile(glink, folders)
