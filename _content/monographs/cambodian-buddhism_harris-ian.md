@@ -1,7 +1,7 @@
 ---
 title: "Cambodian Buddhism: History and Practice"
 authors:
-  - "Ian Harris"
+  - harris-ian
 external_url: "https://archive.org/details/cambodianbuddhismhistoryandpracticeianharris_202003_346_b/mode/1up"
 course: cambodian
 tags:

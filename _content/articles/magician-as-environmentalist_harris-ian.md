@@ -1,7 +1,7 @@
 ---
 title: "Magician as Environmentalist: Fertility Elements in South and Southeast Asian Buddhism"
 authors:
-  - "Ian Harris"
+  - harris-ian
 external_url: "https://otani.repo.nii.ac.jp/record/8452/files/EB32-2-06.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1koSoIO5mSCyn7OSfBMjx4thMQNO8SDkH/view?usp=drivesdk"
