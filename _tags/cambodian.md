@@ -1,6 +1,6 @@
 ---
 title: "Cambodian Buddhism"
-status: unpublished
+status: published
 hashtag: Cambodia
 parents: [theravada, cambodia]
 use_sirv: true

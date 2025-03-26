@@ -1,6 +1,6 @@
 ---
 title: "Society"
-status: unpublished
+status: published
 parents: [social]
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Nobleman_picnic.jpg
@@ -24,4 +24,4 @@ image_center_x: 30%
 image_center_y: 65%
 ---
 
-Macro-sociology is the study of how populations organize themselves into governed, social systems.
+Macro-sociology is the study of how populations organize themselves into systems.

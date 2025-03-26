@@ -1,6 +1,6 @@
 ---
 title: "Sri Lankan Buddhism"
-status: unpublished
+status: published
 parents: [theravada, sri-lanka]
 hashtag: SriLanka
 use_sirv: true

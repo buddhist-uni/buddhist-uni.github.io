@@ -1,6 +1,6 @@
 ---
 title: "Burmese Buddhism"
-status: unpublished
+status: published
 parents: [theravada, burma]
 hashtag: BurmeseBuddhism
 image: https://illeakyw.sirv.com/Images/banners/The_450_pagodas.jpg

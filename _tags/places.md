@@ -1,6 +1,6 @@
 ---
 title: "Places"
-status: unpublished
+status: published
 parents: [wider]
 use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Yurt_Camp_in_Song_kol_region.jpg
