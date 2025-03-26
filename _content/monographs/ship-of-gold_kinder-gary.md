@@ -8,8 +8,7 @@ course: california
 tags:
   - oceans
   - wider
-  - places
-  - progress
+  - history-of-science
   - greed
 year: 1998
 publisher: Grove

@@ -12,7 +12,6 @@ course: sri-lankan
 tags:
   - medieval
   - ethics
-  - cosmology
 year: 1982
 olid: OL57704369M
 publisher: bps
@@ -31,3 +30,5 @@ Bar forever the roads to realms of woe
 A 15th century, Sri Lankan poem beautifully exhorting the listener to the ethical life and to right view.
 
 Listen to the poem [sung in the original Sinhala on Archive.org](https://archive.org/details/Lo-Weda-Sangarawa){:target="_blank" ga-event-value="0.5"}.
+
+And if this poetic translation is a bit hard to follow, see the more prosaic translation, [*Towards a Better World*](/content/booklets/towards-a-better-world_nyanananda).

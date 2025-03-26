@@ -18,7 +18,7 @@ tags:
   - pottery
   - yakimono
   - laywomen
-  - places
+  - migration
 status: featured
 pages: 307
 ---

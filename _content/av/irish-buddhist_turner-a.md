@@ -14,8 +14,6 @@ tags:
   - irish
   - theravada-roots
   - farang
-  - places
-  - engaged
 minutes: 48
 ---
 

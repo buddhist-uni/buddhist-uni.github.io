@@ -11,9 +11,8 @@ file_links:
   - "smallpdfs/ollett-andrew_2018_satavahana-nagarjuna.pdf"
 course: roots
 tags:
-  - law
-  - politics
-  - places
+  - state
+  - asia
 ---
 
 > … there was nothing "private" about either the king’s support of Buddhist communities, or the claims and requests that Buddhist intellectuals made of the king.
