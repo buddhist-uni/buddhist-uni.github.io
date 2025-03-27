@@ -10,7 +10,7 @@ course: thai
 tags:
   - modern
 year: 2021
-journal: "The Journal of the Siam Society"
+journal: jss
 volume: 109
 number: 2
 pages: "79--94"
