@@ -12,7 +12,7 @@ illustration_center_y: 24%
 illustration_caption: >-
   Lay people relax in front of the Phra Phuttha Sihing at the "Front Palace" of what is now the Bangkok National Museum.
   The Buddha image is considered second in importance only to the Emerald Buddha housed at the Grand Palace.
-  Buddhism in modern Thailand is strongly supported—and regulated—by the Thai government.
+  Buddhism in modern Thailand is strongly entangled with the Thai state.
   (Photo by <a href="https://photodharma.net/Thailand/Buddhaisawan-Temple/index.htm">Anandajoti Bhikkhu</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Temple_of_the_Emerald_Buddha.jpg
 image_width: 2560
