@@ -6,6 +6,7 @@ external_url: "https://archive.org/details/forestmonksnatio0000tayl/mode/1up"
 course: thai # maybe switch with Stillness Flowing in thai-forest?
 tags:
   - sangha
+  - modern
 year: 1993
 olid: OL1070387M
 oclc: 30048535
