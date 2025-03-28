@@ -3,7 +3,6 @@ title: "Sri Lankan Buddhism"
 status: published
 parents: [theravada, sri-lanka]
 hashtag: SriLanka
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Perahara2.jpg
 illustration_height: 1024
 illustration_width: 1024
@@ -15,9 +14,9 @@ illustration_caption: >-
 image: https://illeakyw.sirv.com/Images/banners/SL_Kandy_asv2020-01_img34_Sacred_Tooth_Temple.jpg
 image_width: 2560
 image_height: 1440
-# big_image: https://upload.wikimedia.org/wikipedia/commons/f/f3/SL_Kandy_asv2020-01_img34_Sacred_Tooth_Temple.jpg
-# big_height: 4125
-# big_width: 7333
+big_image: https://upload.wikimedia.org/wikipedia/commons/f/f3/SL_Kandy_asv2020-01_img34_Sacred_Tooth_Temple.jpg
+big_height: 4125
+big_width: 7333
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:SL_Kandy_asv2020-01_img34_Sacred_Tooth_Temple.jpg#mw-jump-to-license">A. Savin</a>
 image_center_x: 45%
 image_center_y: 20%

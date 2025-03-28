@@ -4,12 +4,14 @@ status: published
 parents: [theravada, burma]
 hashtag: BurmeseBuddhism
 image: https://illeakyw.sirv.com/Images/banners/The_450_pagodas.jpg
+big_image: https://upload.wikimedia.org/wikipedia/commons/7/77/The_450_pagodas%2C_containing_the_tables_of_the_law%2C_Mandalay%2C_Burmah_%28NBY_438734%29.jpg
+big_height: 2343
+big_width: 3600
 image_width: 1280
 image_height: 833
 image_center_x: 36%
 image_center_y: 48%
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:The_450_pagodas,_containing_the_tables_of_the_law,_Mandalay,_Burmah_(NBY_438734).jpg">Raphael Tuck & Sons via the Leonard A Lauder collection at the Curt Teich Postcard Archives of the Newberry Library</a>
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Shwedagon_Pagoda%2C_Young_Buddhist_monks%2C_Yangon%2C_Myanmar.jpg
 illustration_height: 853
 illustration_width: 1280
