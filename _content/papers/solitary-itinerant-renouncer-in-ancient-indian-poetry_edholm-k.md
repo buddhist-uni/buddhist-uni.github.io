@@ -16,7 +16,7 @@ tags:
 year: 2021
 month: jun
 publisher: "Stockholm UP"
-booktitle: "Songs on the Road"
+from_book: songs-on-the-road_larson-af-edholm
 address: "Stockholm"
 chapter: 3
 pages: "35--66"

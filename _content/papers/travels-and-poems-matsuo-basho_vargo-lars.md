@@ -2,18 +2,19 @@
 title: "The Travels and Poems of Matsuo Bashô"
 authors:
   - "Lars Vargo"
-external_url: "https://uplopen.com/chapters/e/10.16993/bbi.g"
+external_url: "https://doi.org/10.16993/bbi.g"
 drive_links:
   - "https://drive.google.com/file/d/1xkyZeQKR-oluecEmr23q5SDeb5S8eWrO/view?usp=sharing"
 course: japanese
 tags:
   - pilgrimage
-  - matsuo-basho
+  - basho
+  - poetry
 year: 2021
 month: jun
 publisher: "Stockholm University Press"
 address: "Stockholm"
-booktitle: "Songs on the Road"
+from_book: songs-on-the-road_larson-af-edholm
 pages: "127--140"
 chapter: 7
 ---
