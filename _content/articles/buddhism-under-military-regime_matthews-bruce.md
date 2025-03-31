@@ -25,4 +25,3 @@ openalexid: W1981880607
 involved in a continuing and intense struggle against a repressive military regime.
 
 While much continues to unfold, the struggle between the Burmese military and its Buddhist subjects has, regrettably, only deepened in the decades since this article was first published.
-The only major change in the interim has been that the xenophobic aspect—whose absence Matthews here commended—[did indeed, unfortunately, arise](https://en.wikipedia.org/wiki/Rohingya_genocide){:target="_blank"}.

@@ -12,6 +12,8 @@ tags:
   - vinaya-studies
   - monastic-theravada
   - theravada-chanting
+  - extremism
+  - war
 year: 2017
 journal: "The Journal of Religion and Violence"
 volume: 5

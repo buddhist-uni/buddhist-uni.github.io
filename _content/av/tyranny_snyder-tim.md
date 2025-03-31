@@ -16,3 +16,5 @@ minutes: 157
 ---
 
 Twenty short lessons on how to act under tyranny in a way that sows the seeds for something better.
+
+An abridged, ten-minute version read by John Lithgow can be [watched here](https://snyder.substack.com/p/twenty-lessons-read-by-john-lithgow){:ga-event-value="1"}.
