@@ -27,4 +27,4 @@ openalexid: W4389989041
 
 Justin Ritzinger shares what he learned about the nature of karma after attending the "Lived Karma" conference at Dartmouth in 2022.
 To read more papers from the conference, see the
-[Journal of Global Buddhist vol 24 no 2](https://www.globalbuddhism.org/issue/view/428){:target="_blank" ga-event-value="0.9"}.
+[Journal of Global Buddhism Vol. 24 No. 2](https://www.globalbuddhism.org/issue/view/428){:target="_blank" ga-event-value="0.9"}.
