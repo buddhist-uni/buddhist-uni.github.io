@@ -8,6 +8,7 @@ source_url: "https://doi.org/10.1073/pnas.2422543121"
 drive_links:
   - "https://drive.google.com/file/d/1MJgbO6d5vYuwAZ6XnVpdn8O4762_DXno/view?usp=drivesdk"
 course: society
+status: featured
 tags:
   - inequality
   - democracy

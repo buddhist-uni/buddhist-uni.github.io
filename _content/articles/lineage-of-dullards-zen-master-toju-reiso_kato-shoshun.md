@@ -6,7 +6,7 @@ external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/972/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.25.1-2.1998.151-165"
 drive_links:
   - "https://drive.google.com/file/d/1g1hvBK250U8g1oExPjpPkR_jFEZ2f4Tv/view?usp=drivesdk"
-course: japanese
+course: japanese # almost four stars
 tags:
   - rinzai
   - meiji

@@ -6,6 +6,7 @@ external_url: "https://doi.org/10.15239/hijbs.04.02.03"
 drive_links:
   - "https://drive.google.com/file/d/1nFqp9rglYFOnilATMTAXXaNzJrq1AoGR/view?usp=drivesdk"
 course: east-asian-roots
+status: featured
 tags:
   - medieval
   - sarvastivada

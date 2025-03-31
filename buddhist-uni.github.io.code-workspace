@@ -11,6 +11,16 @@
 		"[liquid]": {
 			"editor.defaultFormatter": "sissel.shopify-liquid",
 			"editor.formatOnSave": false
-		}
+		},
+		"cSpell.words": [
+			"Ajahn",
+			"Bhikkhu",
+			"Bodhisattvas",
+			"Dhamma",
+			"Dhammas",
+			"Pāli",
+			"Śrāvakas",
+			"Theravāda"
+		]
 	}
 }

@@ -6,6 +6,7 @@ external_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1108333/p
 source_url: "https://doi.org/10.3389/fpsyg.2023.1108333"
 drive_links:
   - "https://drive.google.com/file/d/17skx8vMkDyPO_b6CM9eGa-BQaJvO01XV/view?usp=drivesdk"
+status: featured
 course: speech
 tags:
   - consent

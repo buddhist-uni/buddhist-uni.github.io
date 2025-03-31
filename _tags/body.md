@@ -2,7 +2,6 @@
 title: "The Human Body"
 status: published
 parents: [inner]
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Human_Body_Model.jpg
 illustration_height: 683
 illustration_width: 1024
