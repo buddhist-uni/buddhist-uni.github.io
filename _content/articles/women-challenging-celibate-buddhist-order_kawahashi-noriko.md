@@ -18,4 +18,6 @@ number: 1
 pages: "55--74"
 ---
 
-This article examines the "temple wife problem," focusing on public hearings advocating for gender equality movements in Buddhist orders to promote inclusive dialogue. It also addresses the ongoing tension between celibacy and the practice of marriage by male priests in the Sōtō School of Buddhism.
+This article examines the "temple wife problem:" that the wives of Sōtō Zen Priests are expected to manage their husband's temples but receive no official status or support for their labor.
+
+Focusing on public hearings held in 2006 in which temple wives (*jizoku*) aired their grievances, the article examines the unique challenges that Japanese Zen must confront since the Meiji Reforms eliminated celibacy from the priesthood.

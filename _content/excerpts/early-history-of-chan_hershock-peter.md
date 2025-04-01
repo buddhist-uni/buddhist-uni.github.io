@@ -1,7 +1,7 @@
 ---
 title: "The Early History of the Chan Tradition"
 authors:
-  - "Peter Hershock"
+  - hershock
 external_url: "https://archive.org/download/chan-buddhism-ch-3-early-chan-peter-hershock/Chan%20Buddhism_%20Ch%203%20Early%20Chan%20-%20Peter%20Hershock_text.pdf"
 drive_links:
   - "https://drive.google.com/file/d/19dOQqz9uRfAKWYn0YCZjBHJXqw_b70zr/view?usp=drivesdk"
