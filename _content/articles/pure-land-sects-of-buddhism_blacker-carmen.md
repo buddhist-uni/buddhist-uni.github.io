@@ -7,11 +7,10 @@ drive_links:
   - "https://drive.google.com/file/d/1ZLtPaqeLwJ0e5L1WqU-J-vv-ELI1SaaG/view?usp=sharing"
 course: japanese
 tags:
-  - pureland
-  - buddha
-journal: "MURYOKO 'Infinite Light': Journal of Shin Buddhism"
-publisher: 
+  - mahayana
+publisher: Journal of Shin Buddhism"
 address: "A.C.T., Australia"
+year: 2004
 pages: 6
 ---
 
