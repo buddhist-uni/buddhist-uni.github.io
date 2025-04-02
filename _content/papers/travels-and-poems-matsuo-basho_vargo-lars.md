@@ -1,5 +1,5 @@
 ---
-title: "The Travels and Poems of Matsuo Bashô"
+title: "The Travels and Poems of Matsuo Bashō"
 authors:
   - "Lars Vargo"
 external_url: "https://doi.org/10.16993/bbi.g"
@@ -9,7 +9,8 @@ course: japanese
 tags:
   - pilgrimage
   - basho
-  - poetry
+  - classical-poetry
+  - chan-lit
 year: 2021
 month: jun
 publisher: "Stockholm University Press"
@@ -19,8 +20,10 @@ pages: "127--140"
 chapter: 7
 ---
 
-> Bashô was a sensitive poet whose values were firmly founded in
-Buddhist, Confucian, and Daoist thought. Bashô, although having seriously studied Zen, was never a monk belonging to a monastery, but he often dressed as priest and often stayed at temples and
+> Bashō was a sensitive poet whose values were firmly founded in
+Buddhist, Confucian, and Daoist thought. Bashō, although having seriously studied Zen, was never a monk belonging to a monastery, but he often dressed as a priest and often stayed at temples and
 shrines.
 
-This chapter, from [Songs on the Road](https://uplopen.com/books/e/10.16993/bbi), explores Matsuo Bashô, the 17th-century poet and haiku originator, focusing on his travel-account Oku no hosomichi. The journey aimed to connect with nature, write poetry, and visit Buddhist temples and legends. Bashô's poems are interspersed throughout.
+Matsuo Bashō was a 17th-century, Edo poet and a true master of the Haiku form.
+His [*Oku no Hosomichi*](https://en.m.wikipedia.org/wiki/Oku_no_Hosomichi) (*The Narrow Road to the Interior*):
+is one of the most celebrated, religious travelogues ever written.
