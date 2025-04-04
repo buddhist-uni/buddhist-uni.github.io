@@ -2,13 +2,13 @@
 title: "The Death and Rebirth of Buddhism in Contemporary Japan"
 authors:
   - "George Tanabe, Jr."
-external_url: "https://10.1558/bsrv.2006.23.2.249"
+external_url: "https://doi.org/10.1558/bsrv.2006.23.2.249.doi.org"
 drive_links:
   - "https://drive.google.com/file/d/10V9taV1vLm46iIT0xGwQPE3mGuJ2Zsld/view?usp=drive_link"
-status: featured
 course: japanese
 tags:
-  - modernism
+  - modern
+  - dialogue 
 year: 2006
 journal: bsr
 volume: 23 
