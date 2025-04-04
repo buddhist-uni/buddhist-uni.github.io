@@ -89,7 +89,7 @@ for fp in local_files:
           fp.unlink()
           exit(0)
         else:
-          print(f"/n/t{glink}/n")
+          print(f"\n\t{glink}\n")
           input("Press enter to move the file and continue with the next one...")
       gdrive.move_gfile(glink, gfolder)
       fp.unlink()
