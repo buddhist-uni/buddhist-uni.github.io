@@ -1,11 +1,14 @@
 ---
 title: "The Buddhist Guardian Deity: Fudo Myoo"
 authors:
-  - "Asian Art Museum"
+  - "Caren Gutierrez"
+editor: "Michael Rohde"
 external_url: "https://youtu.be/PjLQrZRg-WI"
 course: japanese
 tags:
   - protective-deities
+  - mahayana
+  - medieval
 year: 2014
 month: jun
 minutes: 4
