@@ -24,6 +24,6 @@ openalexid: W2239231710
 > There is little in Kapleau’s book to suggest that his teachers were anything but respected members of orthodox Zen monastic orders. 
 Yet such was not the case, for in 1954 Yasutani Hakuun 安谷白雲 (1885-1973), the Zen priest whose teachings are featured in *The Three Pillars of Zen*, severed his formal ties to the Soto school in order to establish an independent Zen organization called the Sanbokyodan 三宝教団, or “Three Treasures Association.”
 
-> The influence exerted by this contemporary lay reform movement on American Zen is out of proportion to its relatively marginal status in Japan: modern Rinzai and Soto monks are generally unaware of, or indifferent to, the polemical attacks that Yasutani and his followers direct aeainst the Zen priesthood.
+> The influence exerted by this contemporary lay reform movement on American Zen is out of proportion to its relatively marginal status in Japan: modern Rinzai and Soto monks are generally unaware of, or indifferent to, the polemical attacks that Yasutani and his followers direct against the Zen priesthood.
 
 An excellent overview of the modern Zen sect and how its influential Koan practices contrast with more traditional Rinzai and Soto practice and training.
