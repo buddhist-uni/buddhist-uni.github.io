@@ -5,6 +5,8 @@ authors:
   - "Caren Gutierrez"
 editor: "Michael Rohde"
 external_url: "https://youtu.be/PjLQrZRg-WI"
+drive: "https://drive.google.com/file/d/13i8YdkXkztXNCxx0gv7axxmnskDwXKwS/view?usp=drive_link"
+formats: [mp4]
 course: japanese
 tags:
   - protective-deities
