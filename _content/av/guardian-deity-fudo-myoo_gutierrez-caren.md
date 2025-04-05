@@ -1,5 +1,6 @@
 ---
 title: "The Buddhist Guardian Deity: Fudo Myoo"
+subcat: film
 authors:
   - "Caren Gutierrez"
 editor: "Michael Rohde"
