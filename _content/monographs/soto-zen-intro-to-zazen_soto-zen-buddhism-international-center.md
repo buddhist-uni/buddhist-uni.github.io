@@ -18,4 +18,4 @@ pages: 91
 > I am just “who am.” This “who am” is never grasped as an object. To see this “who am” without grasping or without using concepts is manifesting prajna (wisdom), just
 being present with “who am.”  
 
-This introduction to zazen includes instructions, a brief history of the Sōtō school, and translations of short foundational texts on the practice.
+This introduction to zazen is a collection of writings that includes reflections, instructions, a brief history of the Sōtō school, and translations of short foundational texts on the practice.
