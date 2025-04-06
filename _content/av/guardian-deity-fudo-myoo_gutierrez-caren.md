@@ -1,11 +1,12 @@
 ---
-title: "The Buddhist Guardian Deity: Fudo Myoo"
+title: "The Buddhist Guardian Deity Fudo Myoo"
 subcat: film
 authors:
   - "Caren Gutierrez"
 editor: "Michael Rohde"
 external_url: "https://youtu.be/PjLQrZRg-WI"
-drive: "https://drive.google.com/file/d/13i8YdkXkztXNCxx0gv7axxmnskDwXKwS/view?usp=drive_link"
+drive_links:
+  - "https://drive.google.com/file/d/13i8YdkXkztXNCxx0gv7axxmnskDwXKwS/view?usp=drivesdk"
 formats: [mp4]
 course: japanese
 tags:

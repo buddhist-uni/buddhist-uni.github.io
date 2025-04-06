@@ -23,4 +23,4 @@ did not truly understand that Buddhism is about the practice of
 love, compassion, and wisdom, even though they all said that
 they understood.
 
-In this article, the author describes her experiences as a mendicant nun (both as thilashin and bhikkhuni), facing discrimination against women in thr Burmese Buddhist community. While giving an insight into the everyday life of a monastic, she highlights the deeply entrenched gender biases and the struggle for equal rights within the monastic system.
+In this article, the author describes her experiences as a mendicant nun (both as thilashin and bhikkhuni), facing discrimination against women in the Burmese Buddhist community. While giving an insight into the everyday life of a monastic, she highlights the deeply entrenched gender biases and the struggle for equal rights within the monastic system.
