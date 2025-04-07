@@ -73,6 +73,8 @@ This [Chinese-Sanskrit Dictionary](https://web.archive.org/web/20220301024224if_
 
 {% include content_box.html category="articles" slug="buddhist-chinese_zhu-qingzhi" %}
 
+When you've completed volume 1, you should be able to get a good score on the [Chengshilun Hanzi quiz](https://pj-oliveira.github.io/Chengshilun/){:target="_blank" ga-event-value="0.4"} showing that you're ready to tackle the later Indian texts.
+
 ### Volume 2: The Indian Tradition
 
 Once you've successfully completed the sutra in Volume 1, Volume 2 will introduce the three main EBT genres.

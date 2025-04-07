@@ -9,7 +9,7 @@ course: continental
 tags: 
   - europe
   - inner-asia
-  - west
+  - russian
   - kalmykia
 publisher: "DW Euromaxx"
 base_value: 0.2
