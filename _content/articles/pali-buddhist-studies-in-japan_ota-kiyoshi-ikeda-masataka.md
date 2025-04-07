@@ -1,8 +1,10 @@
 ---
 title: "Pali Buddhist Studies in Japan"
 authors:
-  - "Kiyoshi Ota and Masataka Ikeda"
-external_url: "https://doi.org/10.1558/bsrv.v6i1.13965"
+  - "Kiyoshi Ota"
+  - "Masataka Ikeda"
+external_url: "https://archive.org/download/pali-buddhist-studies-in-japan-1981/Pali%20Buddhist%20Studies%20in%20Japan%20%281981%29_text.pdf"
+source_url: "https://doi.org/10.1558/bsrv.v6i1.13965"
 drive_links:
   - "https://drive.google.com/file/d/1i6AJMjmZ4FbJzJ1aB21W43_-45ExTPQK/view?usp=sharing"
 course: japanese
