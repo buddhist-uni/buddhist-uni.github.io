@@ -5,9 +5,8 @@ authors:
 external_url: "https://www.buddhanet.net/pdf_file/manual_zen.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Mhi89IqkWBfRSHAQAD647FQ4UCjgJf9o/view?usp=sharing"
-course: japanese
 tags:
-  - zen
+  - japanese
 olid: OL58362240M
 year: 1935 
 publisher: "The Eastern Buddhist Society"
