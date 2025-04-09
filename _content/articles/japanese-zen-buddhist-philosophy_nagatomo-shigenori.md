@@ -10,7 +10,7 @@ tags:
   - zen
 year: 2006
 month: jun
-journal: Stanford Encyclopedia of Philosophy
+journal: plato
 pages: 26
 ---
 
