@@ -8,6 +8,7 @@ drive_links:
 course: japanese
 tags:
   - zen
+  - emptiness
 year: 2006
 month: jun
 journal: plato

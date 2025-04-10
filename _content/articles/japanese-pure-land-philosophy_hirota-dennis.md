@@ -8,10 +8,11 @@ drive_links:
 course: japanese
 tags:
   - pureland
+  - dialogue
 year: 2012
 month: nov
 journal: plato
 pages: 28
 ---
 
-This encyclopedia entry explains how Japanese Pure Land Buddhism blends Mahayana concepts like nonduality with a focus on human limitations, offering a path to enlightenment rooted in faith and devotion. It highlights the work of key figures like Hōnen and Shinran, who made spiritual liberation more accessible to everyday people.
+This encyclopedia entry explains the history of Japanese Pure Land Buddhist thought, from its origins in the Buddha Fields of the Mahāyāna, to Hōnen's Nembutsu teachings, to Shin's modern philosophical engagements.
