@@ -4,4 +4,4 @@ status: unpublished
 parents: [cosmology]
 ---
 
-The process of coming back into saṃsāra after death.
+The process of "faring on" in saṃsāra after death.

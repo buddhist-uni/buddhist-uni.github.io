@@ -15,9 +15,8 @@ address: "New York"
 pages: 270
 ---
 
-> Dying was beautiful, peaceful, and graceful. I have been dead. I know the truth. And I am not scared.
+> 'Dying was beautiful, peaceful, and graceful. I have been dead. I know the truth. And I am not scared.'
 
----
 
 > Although this book is based on my forty-five years of scientific research into NDEs, it was not written specifically for other scientists. And although I hope people who have had NDEs will feel that I have done justice to their experiences, I have not written this book for them. Rather, I’ve written this book for the rest of us, for those who are curious about the incredible scope of the human mind and about the deeper questions about life and death.
 
