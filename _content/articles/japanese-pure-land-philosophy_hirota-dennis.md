@@ -15,4 +15,8 @@ journal: plato
 pages: 28
 ---
 
-This encyclopedia entry explains the history of Japanese Pure Land Buddhist thought, from its origins in the Buddha Fields of the Mahāyāna, to Hōnen's Nembutsu teachings, to Shin's modern philosophical engagements.
+> On the one hand, it stands squarely upon a Mahayana Buddhist conception of enlightened wisdom as radically nondichotomous and nondual with reality.
+On the other hand, it directly confronts the nature of human existence in its ineluctable finitude: karmically conditioned, discriminative and reifying in awareness, and given to the afflicting passions...
+
+From its origins in the Buddha Fields of the early Mahāyāna, to Hōnen's twelfth century Nembutsu teachings, to Shin's twentieth century engagements with Christian philosophy,
+this encyclopedia entry gives an overview of the history of Pure Land thought in Japan.

@@ -10,7 +10,6 @@ status: featured
 tags:
   - ambulit
   - view
-  - rebirth
 year: 2019
 month: jul
 series: slowdown

@@ -15,4 +15,6 @@ journal: plato
 pages: 26
 ---
 
-This encyclopedia entry explains the development of Zen Buddhism in Japan, focusing on its philosophical foundations and practices, particularly the role of meditation (zazen) in achieving enlightenment. It also explores the influence of Zen on Japanese culture, art, and thought, highlighting key figures and historical developments.
+> The free, bilateral movement between “not one” and “not two” characterizes Zen’s achievement of a personhood with a third perspective that cannot be confined to either dualism or non-dualism
+
+A lengthy introduction to Zen Buddhist practice and thought in Japan with a particular focus on their view of enlightenment.
