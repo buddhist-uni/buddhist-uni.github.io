@@ -10,8 +10,8 @@ tags:
   - sangha
   - ritual
 year: 2012
-journal: Shin Dharma Net
-publisher: Buddhist Study Center 
+journal: "Shin Dharma Net"
+publisher: "Buddhist Study Center" 
 address: "Hawaii"
 pages: 2
 ---
@@ -21,4 +21,4 @@ the opportunities for listening to the Buddha Dharma, there is no reason to do s
 special for it. In traditions other than Shin Buddhism, however, Obon is a special, fancier
 and more serious event for people to welcome their ancestors back home.
 
-A short and humorous explanation of the Japanese tradition Obon.
+A short and humorous explanation of the Japanese tradition of Obon.
