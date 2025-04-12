@@ -4,6 +4,7 @@ import os.path
 from pathlib import Path
 import requests
 import socket
+from datetime import datetime
 from math import floor
 from io import BytesIO, BufferedIOBase
 from strutils import (
@@ -710,6 +711,9 @@ def _make_ytvideo_summary_html(vid, snippet, transcript):
       duration = duration[2:]
     duration = re.sub(r'([HM])([0-9])', r'\1 \2', duration)
     ret += f"<h2>Duration</h2><p>{duration}</p>"
+  if snippet.get('publishedAt'):
+    uploaded_on = datetime.fromisoformat(snippet['publishedAt'])
+    ret += f"""<h2>Uploaded</h2><p>{uploaded_on.strftime('%a %d %b %Y, %I:%M%p')}</p>"""
   if snippet.get('description'):
     desc = htmlify_ytdesc(snippet['description'])
     ret += f"""<h2>Video Description (from YouTube)</h2><p>{desc}</p>"""
