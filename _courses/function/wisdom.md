@@ -10,6 +10,10 @@ image_info: <a href="https://www.flickr.com/photos/joi/49201972493">Joi Ito</a>,
 
 **Chapter 8** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
+{% include content_blurb.html category="canon" slug="an5.16" %}
+- Of all the spiritual powers, wisdom is chief in that it guides the others.
+- For the four other spiritual powers listed here, what does it look like if someone puts that one as chief?
+
 {% include content_blurb.html category="essays" slug="real-science_brahm" %}
 - Ajahn Brahm reassures us that Buddhism is scientific and rational, containing things that we can discover and prove in ourselves.
 
