@@ -7,8 +7,8 @@ drive_links:
   - "https://drive.google.com/file/d/1UPxUMDWvBYRWw24cRpy9XVhKgakZ5rst/view?usp=sharing"
 course: japanese
 tags:
-  - art
   - bart
+  - japan
 year: 2005
 journal: plato
 pages: 20
