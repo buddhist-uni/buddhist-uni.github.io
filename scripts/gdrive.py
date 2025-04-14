@@ -203,7 +203,7 @@ def get_ytvideo_snippets(ytids):
     return snippets
   data = youtube().videos().list(id=','.join(ytids),part="snippet,contentDetails").execute().get("items", [])
   for vid in data:
-    ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails'] if k in vid['snippet']}
+    ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails', 'publishedAt'] if k in vid['snippet']}
     ret['contentDetails'] = vid.get('contentDetails', {})
     if not ret.get('tags'):
       ret['tags'] = []
@@ -714,6 +714,8 @@ def _make_ytvideo_summary_html(vid, snippet, transcript):
   if snippet.get('publishedAt'):
     uploaded_on = datetime.fromisoformat(snippet['publishedAt'])
     ret += f"""<h2>Uploaded</h2><p>{uploaded_on.strftime('%a %d %b %Y, %I:%M%p')}</p>"""
+  else:
+    print(f"  No upload date found. Snippet keys are: {list(snippet.keys())}")
   if snippet.get('description'):
     desc = htmlify_ytdesc(snippet['description'])
     ret += f"""<h2>Video Description (from YouTube)</h2><p>{desc}</p>"""
