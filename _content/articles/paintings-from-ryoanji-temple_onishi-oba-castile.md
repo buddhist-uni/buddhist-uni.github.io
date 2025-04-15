@@ -1,5 +1,5 @@
 ---
-title: "The Metropolitan Museum of Art Bulletin: Immortals and Sages — Paintings from Ryoanji Temple"
+title: "Immortals and Sages: Paintings from Ryoanji Temple"
 authors:
   - "Hiroshi Onishi"
   - "Takemitsu Oba"
@@ -11,10 +11,10 @@ course: japanese
 tags:
   - bart
 year: 1993
+journal: "The Metropolitan Museum of Art Bulletin"
 publisher: "The Metropolitan Museum of Art"
 address: "New York"
 volume: 51
-number: 1
 pages: 53
 ---
 
