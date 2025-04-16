@@ -7,7 +7,7 @@ authors:
   - "Jim Salzman"
 editor: "Chris Berube"
 external_url: "https://99percentinvisible.org/episode/mine"
-course: social
+course: society
 tags:
   - perception
   - economics

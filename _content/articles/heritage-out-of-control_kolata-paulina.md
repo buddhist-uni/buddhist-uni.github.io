@@ -5,9 +5,9 @@ authors:
 external_url: "https://allegralaboratory.net/heritage-out-of-control-buddhist-material-excess-in-depopulating-japan/"
 drive_links:
   - "https://drive.google.com/file/d/1iH4iGmMWF1vxElTekfvpFEWEpb0ZXeab/view?usp=sharing"
-course: japanese
 tags:
-  - society
+  - japanese # too poorly written for more than 2 stars unfortunately
+  - future
   - things
 year: 2022
 month: jan
