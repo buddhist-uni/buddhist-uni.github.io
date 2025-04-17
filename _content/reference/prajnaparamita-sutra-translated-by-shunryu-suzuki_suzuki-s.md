@@ -8,6 +8,8 @@ course: japanese
 tags:
   - mahayana-canon
 pages: 2
+year: 1962
+month: may
 ---
 
 A translation of the Prajñāpāramitā Sutra by Shunryu Suzuki Roshi, with the transliterated Japanese, that was mainly used for services at the San Francisco Zen Center. Learn more [here](https://www.cuke.com/Cucumber-Project/other/heart-sutra/heart-sutra-card-4.htm). Also, click [here](https://allenginsberg.org/2011/10/perfect-wisdom-sutra-asv19/) for more on poet Allen Ginsberg's chanting of this translation.
