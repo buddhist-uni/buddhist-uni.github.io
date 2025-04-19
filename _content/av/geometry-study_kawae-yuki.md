@@ -1,5 +1,5 @@
 ---
-title: "Geometry Study: Pattern explorations"
+title: "Geometry Study: Pattern Explorations"
 authors:
   - "Yuki Kawae"
 sexternal_url: "https://www.youtube.com/watch?v=yj2L07KwL-c"
