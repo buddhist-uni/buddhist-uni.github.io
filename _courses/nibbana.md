@@ -242,6 +242,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="iti44" %}
 - The two Nibbāna elements.
 
+{% include content_blurb.html category="canon" slug="sn35.21" %}
+- The relationship between the senses and suffering.
+
 {% include content_blurb.html category="essays" slug="in-this-pure-awareness_shenga-khenpo" %}
 - On what it feels like to transcend the categories
 
