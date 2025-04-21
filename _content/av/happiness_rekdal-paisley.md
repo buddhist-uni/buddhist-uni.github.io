@@ -7,7 +7,7 @@ reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2020/07/27/436-happiness"
 course: feeling
 tags:
-  - nature
+  - natural
   - craft
 year: 2020
 month: jul
