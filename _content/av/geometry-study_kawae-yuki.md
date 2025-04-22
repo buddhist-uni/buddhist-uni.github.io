@@ -14,4 +14,4 @@ minutes: 7
 
 In this video, artist and designer Yuki Kawae showcases a handful of Zen garden patterns in sand.
 
-To learn more about Yuki Kawae and his approach to Zen gardens see (here)[https://whitewall.art/art/yuki-kawae-eases-the-mind-with-simple-tools-materials-and-patterns/].
+To learn more about Yuki Kawae and his approach to Zen gardens and art see [his 2021 interview with Whitewall](https://whitewall.art/art/yuki-kawae-eases-the-mind-with-simple-tools-materials-and-patterns/).
