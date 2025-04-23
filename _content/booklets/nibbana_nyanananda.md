@@ -3,11 +3,10 @@ title: "Nibbāna: The Mind Stilled"
 authors:
   - nyanananda
 address: "Karandana, Sri Lanka"
-external_url: "https://seeingthroughthenet.net/books/"
+external_url: "https://seeingthroughthenet.github.io/nibbana-the-mind-stilled/"
 drive_links:
-  - "https://drive.google.com/file/d/1mMG34f5DoxPdVt85qnf1DoEf20qvctwL/view?usp=drivesdk"
-file_links:
-  - "smallpdfs/nyanananda_2012_nibbana.pdf"
+  - "https://drive.google.com/file/d/1elVWySHTXkEfAD6Fk1egkYLPBnGzdn-W/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1ejzRrsTRS9dn0ohSqlswrFiYtU-froxL/view?usp=drivesdk"
 year: 2012
 base_value: 4.8
 course: nibbana-mind-stilled

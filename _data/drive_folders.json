@@ -1103,6 +1103,10 @@
   "private": "https://drive.google.com/drive/folders/1PemvqJBdMZcHf6lXoQNr_DF6Do7GHHtC",
   "public": null
  },
+ "microeconomics": {
+  "private": "https://drive.google.com/drive/folders/1r4IUfkNpuI0G1sFjYuIU654Ov-RrJWNy",
+  "public": null
+ },
  "middle-east": {
   "private": "https://drive.google.com/drive/folders/12kAXESczB8lwfpDQUY6goIQn0PuWWJu8",
   "public": null
@@ -1234,6 +1238,10 @@
  "nibbana": {
   "private": "https://drive.google.com/drive/folders/18tY2Ine1OmEK66Y8EFgbGKRA5Rs3S1cK",
   "public": "https://drive.google.com/drive/folders/1BfWBdbUDalilT1RnFFr-rXu71ismg5j5"
+ },
+ "nibbana-mind-stilled": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1gio8_zc5ZYDd9LG6KHHp_tvvxL6mJeD_"
  },
  "nichiren": {
   "private": "https://drive.google.com/drive/folders/1GelOs1MhofXpvMiV8dKEP314sfXV2QBJ",
