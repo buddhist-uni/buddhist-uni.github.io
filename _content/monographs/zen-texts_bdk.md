@@ -1,6 +1,6 @@
 ---
 title: "Zen Texts"
-translator: "	John R. McRae and Gishin Tokiwa and Osamu Yoshida and Steven Heine"
+authors: "	John R. McRae and Gishin Tokiwa and Osamu Yoshida and Steven Heine"
 external_url: "https://bdkamerica.org/download/1889"
 drive_links:
   - "https://drive.google.com/file/d/1BSk5i4ePzVqHLfeyUYZRW5WFyQQKyruq/view?usp=sharing"
@@ -11,7 +11,6 @@ tags:
   - soto
 year: 2005
 olid: OL8706165M
-journal: 
 publisher: bdk
 pages: 270
 ---
