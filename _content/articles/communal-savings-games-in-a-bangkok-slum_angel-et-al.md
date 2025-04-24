@@ -20,6 +20,6 @@ pages: "123--145"
 
 How rotating savings and credit associations (ROSCAs) work in Bangkok slums.
 
-Called เล่นแชร์ ("Sharing Games") in Thai, a group of neighbors or family members take turns bidding on a communal pot.
+Called *เล่นแชร์* ("Sharing Games") in Thai, a group of neighbors or family members take turns bidding on a communal pot.
 The resulting game facilitates efficient peer-to-peer loans without bookkeeping or needing to predict when money will be needed,
-allowing those living on the margins of society to pool their risks and navigate precarity together.
+allowing those living on the margins of society to easily pool their risks and navigate precarity together.
