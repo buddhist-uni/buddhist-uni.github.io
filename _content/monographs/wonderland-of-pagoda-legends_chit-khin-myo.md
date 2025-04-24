@@ -2,7 +2,8 @@
 title: "A Wonderland of Pagoda Legends"
 authors:
   - "Khin Myo Chit"
-external_url: "http://www.kbrl.gov.mm/book/details/002227"
+external_url: "https://web.archive.org/web/20250220052139if_/http://www.kbrl.gov.mm/book/download/002227"
+source_url: "http://www.kbrl.gov.mm/book/details/002227"
 drive_links:
   - "https://drive.google.com/file/d/15mmU42xLF-0RM_iFvVHFoQn_dXXUcKZ5/view?usp=drive_link"
 course: burmese

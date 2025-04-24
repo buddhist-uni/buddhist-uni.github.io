@@ -4,8 +4,7 @@ authors:
   - "Bessel van der Kolk"
   - "Ezra Klein"
 subcat: podcast
-external_url: "https://player.fm/series/the-ezra-klein-show/this-conversation-will-change-how-you-think-about-trauma"
-source_url: "https://www.nytimes.com/2021/08/24/opinion/ezra-klein-podcast-van-der-kolk.html"
+external_url: "https://www.nytimes.com/2021/08/24/opinion/ezra-klein-podcast-van-der-kolk.html"
 status: rejected # previously featured
 reason: "The NYT put this episode behind a paywall"
 tags:

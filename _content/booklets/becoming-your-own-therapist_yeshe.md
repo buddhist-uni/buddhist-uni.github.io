@@ -1,7 +1,7 @@
 ---
 title: "Becoming Your Own Therapist"
 authors: [yeshe]
-external_url: "https://www.lamayeshe.com/sites/default/files/pdf/115_pdf.pdf"
+external_url: "https://www.lamayeshe.com/sites/default/files/becoming-your-own-therapist.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1iZmzqZaBH9MCkkb0JOUSXWmWqc6N0wZL/view?usp=drivesdk"]
 olid: OL24961989M
