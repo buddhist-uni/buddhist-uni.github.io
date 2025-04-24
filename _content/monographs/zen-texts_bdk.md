@@ -1,6 +1,10 @@
 ---
 title: "Zen Texts"
-authors: "	John R. McRae and Gishin Tokiwa and Osamu Yoshida and Steven Heine"
+authors: 
+- John R. McRae 
+- Gishin Tokiwa 
+- Osamu Yoshida 
+- Steven Heine
 external_url: "https://bdkamerica.org/download/1889"
 drive_links:
   - "https://drive.google.com/file/d/1BSk5i4ePzVqHLfeyUYZRW5WFyQQKyruq/view?usp=sharing"
