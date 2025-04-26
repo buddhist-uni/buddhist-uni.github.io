@@ -9,6 +9,7 @@ course: thai
 tags:
   - thai-language
   - sea
+  - ritual
 year: 1962
 journal: jss
 volume: 50
