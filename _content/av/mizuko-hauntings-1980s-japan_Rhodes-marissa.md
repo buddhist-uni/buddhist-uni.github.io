@@ -8,8 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/12nB9sNFKQT7OsvNK4cLMeyyj4xEwIeAK/view?usp=drive_link"
 course: japanese
 tags:
-  - society
-  - body
+  - culture
+  - gender
+  - ghost
 year: 2021
 month: oct
 publisher: "Dig: A history podcast"
