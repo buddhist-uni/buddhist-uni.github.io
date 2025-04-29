@@ -1,5 +1,5 @@
 ---
-title: "Buddhism and Shintōism in Japan: A-to-z Photo Dictionary of Japanese Religious Sculpture and Art"
+title: "Buddhism and Shintōism in Japan: A-to-Z Photo Dictionary of Japanese Religious Sculpture and Art"
 authors:
   - "Mark Schumacher"
 external_url: "https://www.onmarkproductions.com/html/buddhism.shtml"
