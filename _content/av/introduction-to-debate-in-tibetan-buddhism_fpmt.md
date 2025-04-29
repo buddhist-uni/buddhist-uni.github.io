@@ -1,9 +1,5 @@
 ---
 title: "A Brief Introduction to Debate in Tibetan Buddhism"
-authors:
-  - "gache"
-  - "legtsok"
-  - "lekden"
 external_url: "https://www.youtube.com/watch?v=wkRkF_9zcgs"
 course: tibetan
 tags:
