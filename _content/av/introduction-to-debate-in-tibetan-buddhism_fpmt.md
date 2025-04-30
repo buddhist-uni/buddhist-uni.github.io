@@ -1,5 +1,8 @@
 ---
 title: "A Brief Introduction to Debate in Tibetan Buddhism"
+authors:
+  - "Claudio Curciotti"
+subcat: film
 external_url: "https://www.youtube.com/watch?v=wkRkF_9zcgs"
 course: tibetan
 tags:
