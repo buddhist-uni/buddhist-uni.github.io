@@ -8,15 +8,17 @@ authors:
 external_url: "https://bdkamerica.org/download/1889"
 drive_links:
   - "https://drive.google.com/file/d/1BSk5i4ePzVqHLfeyUYZRW5WFyQQKyruq/view?usp=sharing"
-course: japanese
-tags:
-  - zen
-  - rinzai
-  - soto
+course: zen
 year: 2005
 olid: OL8706165M
 publisher: bdk
 pages: 270
 ---
 
-This single volume compiles four foundational Zen texts: Huangbo Xiyun’s Essentials of the Transmission of Mind, Myōan Eisai’s A Treatise on Letting Zen Flourish to Protect the State, Eihei Dōgen’s Universal Recommendation for True Zazen, and Keizan Jōkin’s Advice on the Practice of Zazen. Together, they offer a rich and cohesive introduction to the heart of Zen practice and philosophy.
+This single volume compiles four foundational Zen texts:
+  1. Huangbo Xiyun’s *Essentials of the Transmission of Mind*
+  2. Myōan Eisai’s *A Treatise on Letting Zen Flourish to Protect the State*
+  3. Eihei Dōgen’s *Universal Recommendation for True Zazen*
+  4. Keizan Jōkin’s *Advice on the Practice of Zazen*
+
+Together, they offer a rich introduction to the texts of Zen practice and philosophy.
