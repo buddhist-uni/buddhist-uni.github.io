@@ -19,3 +19,4 @@ minutes: 6
 
 > *Look at you two*, he said. And we did.
 
+A poem about finding dignity and connection in illness and dying.
