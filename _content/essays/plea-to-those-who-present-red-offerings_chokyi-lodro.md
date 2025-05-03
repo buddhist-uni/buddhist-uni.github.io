@@ -18,4 +18,4 @@ pages: 3
 pure gods who are kind and caring, it is only right and proper that you renounce
 such practices and worship these deities with abundant clean offerings instead.
 
-In addressing Hindu worshippers who engage in animal sacrifice, Jamyang Khyentse highlights the karmic repercussions of taking life and challenges the notion that compassionate deities would ever endorse such a practice.
+In addressing worshippers who engage in animal sacrifice, Jamyang Khyentse highlights the karmic repercussions of taking life and challenges the notion that compassionate deities would ever endorse such a practice.
