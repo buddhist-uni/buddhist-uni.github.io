@@ -14,7 +14,7 @@ tags:
 year: 2014
 olid: OL38368022M
 oclc: 871203082
-publisher: "The Metropolitan Museum of Art"
+publisher: met
 address: "New York"
 pages: 305
 ---

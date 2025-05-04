@@ -19,7 +19,7 @@ tags:
 year: 1975
 olid: OL5199713M
 oclc: 1531910
-publisher: "The Metropolitan Museum of Art" 
+publisher: met 
 address: "New York"
 pages: 71
 ---

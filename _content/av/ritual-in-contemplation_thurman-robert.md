@@ -13,7 +13,7 @@ tags:
   - tibetan
 year: 2011
 month: mar
-publisher: "The Met"
+publisher: met
 address: New York
 minutes: 54
 ---
