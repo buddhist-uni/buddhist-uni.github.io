@@ -9,12 +9,14 @@ status: featured
 course: tibetan
 tags:
   - sati
+  - daily-life
+  - path
 year: 2022
 journal: jbe
 pages: "177--204"
 ---
 
-In Buddhist traditions, mindfulness is not limited to meditation; it applies to the
+> In Buddhist traditions, mindfulness is not limited to meditation; it applies to the
 entire path. Moreover, mindfulness cannot be regarded as something
 purely instrumental because it is part of a fundamentally reverential attitude. Thus, the various uses and misuses of the term “mindfulness” should
 not lead us to dismiss the importance of its ethical and soteriological role
