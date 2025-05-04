@@ -6,9 +6,12 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/against-red-offerings"
 drive_links:
   - "https://drive.google.com/file/d/1tkRccWwQQW4q5E9izqwuJHxIcjNsEySF/view?usp=sharing"
-course: tibetan
+course: interfaith
 tags:
+  - tibetan
   - animals
+  - dana
+  - deva
 year: 2019
 publisher: "Lotsawa House" 
 pages: 3
@@ -18,4 +21,4 @@ pages: 3
 pure gods who are kind and caring, it is only right and proper that you renounce
 such practices and worship these deities with abundant clean offerings instead.
 
-In addressing worshippers who engage in animal sacrifice, Jamyang Khyentse highlights the karmic repercussions of taking life and challenges the notion that compassionate deities would ever endorse such a practice.
+In addressing Hindu worshippers who engage in animal sacrifice, Jamyang Khyentse highlights the karmic repercussions of taking life and challenges the notion that compassionate deities would ever endorse such a practice.
