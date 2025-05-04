@@ -1,5 +1,6 @@
 ---
 title: "Advice in Four Lines"
+subcat: poetry
 authors:
   - "Kyabje Trulshik Rinpoche"
 translator: "Adam Pearcey"
@@ -9,13 +10,12 @@ drive_links:
 course: tibetan
 tags:
   - problems
-  - compassion
 year: 2018
 publisher: "Lotsawa House"
 pages: 1
 ---
 
-> the abbot Shadeu Trulshik wrote down whatever  
+> the abbot Shadeu Trulshik wrote down whatever
 came to mind and offered it from Māratika cave.  
 
 Four simple, but direct, instructions on cultivating the Dharma.
