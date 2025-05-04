@@ -12,7 +12,7 @@ tags:
   - bart
 year: 1991
 olid: OL1536954M
-publisher: "The Metropolitan Museum of Art"
+publisher: met
 address: "New York"
 pages: 234
 ---

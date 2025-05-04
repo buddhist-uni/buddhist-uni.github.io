@@ -14,7 +14,7 @@ tags:
 year: 2018
 olid: OL26954282M
 oclc: 1013507293
-publisher: "The Metropolitan Museum of Art"
+publisher: met
 address: "New York"
 pages: 201
 ---

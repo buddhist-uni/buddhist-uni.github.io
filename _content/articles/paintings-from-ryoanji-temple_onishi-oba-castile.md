@@ -14,7 +14,7 @@ tags:
   - monastic
 year: 1993
 journal: "The Metropolitan Museum of Art Bulletin"
-publisher: "The Metropolitan Museum of Art"
+publisher: met
 address: "New York"
 volume: 51
 pages: 53
