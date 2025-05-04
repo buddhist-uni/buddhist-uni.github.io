@@ -182,6 +182,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="canon" slug="sn22.48" %}
 - Nibbāna can be seen as the purification of the aggregates: washing them of clinging.
 
+{% include content_blurb.html category="canon" slug="sn35.17" %}
+- Nibbāna is something other than the six senses. It is the escape from them.
+
 {% include content_blurb.html category="canon" slug="ud8.2" %}
 - Letting go is hard to see for those with craving.
 
