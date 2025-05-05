@@ -103,7 +103,15 @@ def atoi(text):
     return int(text) if text.isdigit() else text
 
 def md5(text):
-  return hashlib.md5(text.encode()).hexdigest()
+  """Note: assumes text is the thing to hash. Pass a Path object for files."""
+  bts = None
+  if isinstance(text, bytes):
+    bts = text
+  if isinstance(text, str):
+    bts = text.encode()
+  if isinstance(text, Path):
+    bts = text.read_bytes()
+  return hashlib.md5(bts).hexdigest()
 
 def cumsum(vec):
     return reduce(lambda a,x: a+[a[-1]+x] if a else [x], vec, [])
