@@ -33,19 +33,39 @@ for fp in local_files:
       predictor = TagPredictor.load()
     gfs = gdrive.files_exactly_named(fp.name)
     gf = None
-    for f in gfs:
-      if REMOTE_FOLDER in f['parents']:
-        if gf is not None:
-            print(gf['id'])
-            print(f['id'])
-            raise RuntimeError("WARNING! Found multiple files with that same name in the Go Through Folder on Drive!")
-        gf = f
-    if gfs and not gf:
-      print("File moved already! Moving on...")
-      fp.unlink()
-      continue
     if not gfs:
       raise NotImplementedError("File not found on Drive at all.")
+    if len(gfs) == 1:
+      gf = gfs[0]
+      if REMOTE_FOLDER not in f['parents']:
+        print("File moved already! Moving on...")
+        fp.unlink()
+        continue
+    else: # len(gfs) > 1
+      for f in gfs:
+        if REMOTE_FOLDER in f['parents']:
+          gf = f
+          break
+      if gf is None:
+        print("File moved already! Moving on...")
+        fp.unlink()
+        continue
+      tgt_md5 = gf['md5Checksum']
+      trash_it = False
+      for f in gfs:
+        if f['id'] == gf['id']:
+          continue
+        if f['md5Checksum'] == tgt_md5:
+          if REMOTE_FOLDER in f['parents']:
+            print("Found duplicate file in remote TGT folder. Deleting it...")
+            gdrive.trash_drive_file(f['id'])
+          else:
+            trash_it = True
+      if trash_it:
+        print("File moved already! Moving on...")
+        gdrive.trash_drive_file(gf['id'])
+        fp.unlink()
+        continue
     pagecount = None
     text = ''
     with DelayedKeyboardInterrupt():
