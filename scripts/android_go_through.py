@@ -6,6 +6,7 @@ with yaspin(text="Initializing..."):
     system_open,
     input_with_tab_complete,
     DelayedKeyboardInterrupt,
+    md5,
   )
   
   course_list = None
@@ -42,15 +43,13 @@ for fp in local_files:
         fp.unlink()
         continue
     else: # len(gfs) > 1
+      tgt_md5 = md5(fp)
       for f in gfs:
-        if REMOTE_FOLDER in f['parents']:
+        if REMOTE_FOLDER in f['parents'] and f['md5Checksum'] == tgt_md5:
           gf = f
           break
       if gf is None:
-        print("File moved already! Moving on...")
-        fp.unlink()
-        continue
-      tgt_md5 = gf['md5Checksum']
+        raise NotImplementedError("No md5 match found in the TGT folder.")
       trash_it = False
       for f in gfs:
         if f['id'] == gf['id']:
