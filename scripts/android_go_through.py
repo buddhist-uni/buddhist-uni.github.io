@@ -39,7 +39,7 @@ for fp in local_files:
     if len(gfs) == 1:
       gf = gfs[0]
       if REMOTE_FOLDER not in f['parents']:
-        print("File moved already! Moving on...")
+        print("\nFile moved already! Moving on...")
         fp.unlink()
         continue
     else: # len(gfs) > 1
@@ -56,12 +56,12 @@ for fp in local_files:
           continue
         if f['md5Checksum'] == tgt_md5:
           if REMOTE_FOLDER in f['parents']:
-            print("Found duplicate file in remote TGT folder. Deleting it...")
+            print("\nFound duplicate file in remote TGT folder. Deleting it...")
             gdrive.trash_drive_file(f['id'])
           else:
             trash_it = True
       if trash_it:
-        print("File moved already! Moving on...")
+        print("\nFile moved already! Moving on...")
         gdrive.trash_drive_file(gf['id'])
         fp.unlink()
         continue

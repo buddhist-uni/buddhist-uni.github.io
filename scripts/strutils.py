@@ -111,6 +111,8 @@ def md5(text):
     bts = text.encode()
   if isinstance(text, Path):
     bts = text.read_bytes()
+  if bts is None:
+    raise ValueError(f"Expected bytes or str or Path, got {type(text)}")
   return hashlib.md5(bts).hexdigest()
 
 def cumsum(vec):
