@@ -1,7 +1,7 @@
 ---
 title: "The Met"
 address: "New York"
-external_url: "https://www.metmuseum.org/met-publications/all?waysToRead=downloadPdf"
+external_url: "https://www.metmuseum.org/met-publications/all?waysToRead=readOnline%2CdownloadPdf"
 ---
 
 The Metropolitan Museum of Art is an encyclopedic art museum in New York City. It is the fourth-largest and fifth-most-visited museum in the world.

@@ -8,14 +8,14 @@ drive_links:
   - "https://drive.google.com/file/d/1knhW4I4nLr2PlEQ5YZmZkit7TInIi6Ph/view?usp=sharing"
 course: tibetan
 tags:
-  - path
-  - problems
+  - monastic-advice
 year: 2021
 publisher: "Lotsawa House"
 pages: 1
 ---
 
-> In short, protect your very own mind
-With stable mindfulness, vigilance and caution.
+> the vows of a bhikṣu,  
+The root of the teachings,  
+guard them as you would your very own eyes.
 
-Pith instructions of Jamyang Khyentse Chökyi Lodrö to unnamed Tulku.
+Some life advice to an unnamed Tulku.
