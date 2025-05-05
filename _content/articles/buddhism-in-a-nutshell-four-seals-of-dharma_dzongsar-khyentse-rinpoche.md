@@ -4,7 +4,7 @@ authors:
   - "Dzongsar Khyentse Rinpoche"
 external_url: "https://www.lionsroar.com/buddhism-nutshell-four-seals-dharma/"
 status: "rejected"
-reason: "the author is a rabid misogynist, vocal supporter of rape culture, and allegedly a groomer"
+reason: "the author is a rabid misogynist"
 formats: [pdf]
 course: view
 tags:
