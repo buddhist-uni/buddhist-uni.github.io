@@ -12,7 +12,7 @@ tags:
   - mahamudra
   - view
 year: 2021
-publisher: "Lion's Roar"
+publisher: lions-roar
 pages: 9
 ---
 
