@@ -1,0 +1,22 @@
+---
+title: "The Four Dharma Traditions of the Land of Tibet"
+authors:
+  - mipham
+translator: "Adam Pearcey"
+external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/four-dharma-traditions-of-tibet"
+drive_links:
+  - "https://drive.google.com/file/d/1o0n3RCVuO4v3GttguakIh7NkM_knrl4k/view?usp=sharing"
+course: tibetan
+tags:
+  - view
+  - form
+year: 2016
+publisher: "Lotsawa House"
+pages: 1
+---
+
+> So, like children of the same father and same mother,
+Cultivate mutual accord, devotion, and pure perception,
+And, while focusing on your own tradition, avoid belittling others.
+
+A brief overview of the four schools of Tibetan Buddhism, each of which, through sincere practice, leads to what Mipham calls 'accomplishment.'
