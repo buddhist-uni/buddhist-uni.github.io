@@ -8,6 +8,7 @@ drive_links:
 course: thai
 tags:
   - form
+  - buddhist-architecture
 year: 1952
 month: jun
 journal: jss
