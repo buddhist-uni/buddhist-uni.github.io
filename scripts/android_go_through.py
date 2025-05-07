@@ -38,7 +38,7 @@ for fp in local_files:
       raise NotImplementedError("File not found on Drive at all.")
     if len(gfs) == 1:
       gf = gfs[0]
-      if REMOTE_FOLDER not in f['parents']:
+      if REMOTE_FOLDER not in gf['parents']:
         print("\nFile moved already! Moving on...")
         fp.unlink()
         continue
