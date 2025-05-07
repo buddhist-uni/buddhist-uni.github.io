@@ -14,7 +14,7 @@ tags:
   - groups
   - politics
   - activism
-  - queer
+  - queer-history
 year: 2024
 month: jul
 journal: pnas
