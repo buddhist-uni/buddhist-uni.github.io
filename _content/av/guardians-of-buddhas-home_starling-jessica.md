@@ -1,5 +1,6 @@
 ---
 title: "Guardians of the Buddha’s Home"
+subcat: podcast
 authors:
   - "Jessica Starling"
 editor: "Alex Carroll"

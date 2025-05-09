@@ -20,5 +20,4 @@ pages: "9--31"
 
 > A ruler had no power to enact law. He was born to maintain order and peace and to protect his subjects from dangers...
 
-The fascinating history of the law: first as it was understood in ancient India, then in medieval Burma, and finally in modern Thailand.
-
+The fascinating history of the law: first as it was understood in ancient India, then as it was practiced in medieval Burma, and finally how it was enacted in modern Thailand.
