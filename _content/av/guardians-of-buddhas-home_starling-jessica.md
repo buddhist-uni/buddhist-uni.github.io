@@ -15,4 +15,4 @@ publisher: nbn
 minutes: 59
 ---
 
-In this podcast, Dr. Jessica Starling discusses her research on Jōdo Shinshū temple wives (bōmori), emphasizing how their domestic roles are central to sustaining religious life beyond formal rituals. She also explores how their experiences shed light on broader questions of gender roles and equality within Japanese Buddhism.
+Jōdo Shinshū temple wives (bōmori) are central to sustaining religious life in Japanese communities beyond formal rituals. Their experiences raise broader questions about gender roles and equality within Japanese Buddhism and society.
