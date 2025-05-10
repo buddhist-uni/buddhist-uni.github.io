@@ -1,8 +1,7 @@
 ---
 title: "A Guide to Japanese Buddhism"
 authors:
-  - "Japan Buddhist Federation"
-editor: "Kōdō Matsunami"
+  - "Kōdō Matsunami"
 external_url: "https://library.sakyauniversity.com/themes/default/resources/js/pdfjs/web/viewer.html?file=/eBooks/2023/June/64896eefafa11/guidejapanbuddhismbm6.pdf"
 drive_links:
   - "https://drive.google.com/file/d/13KKhdZYiJVw5xOzEA8fr2p-jcBinDPKn/view?usp=sharing"
