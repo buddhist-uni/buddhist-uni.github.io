@@ -5,7 +5,6 @@ authors:
 external_url: "https://plato.stanford.edu/entries/gelukpa/"
 drive_links:
   - "https://drive.google.com/file/d/1cSzP3dddC7YxtR6suwZc3N_WuZ6_D6uY/view?usp=sharing"
-course: featured
 tags:
   - philosophy
 year: 2014
