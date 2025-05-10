@@ -19,5 +19,5 @@ pages: 30
 A Sinhalese poem on the dangers of Saṃsāra and the benefits of the practice, showing that the southern lineage of Buddhism also had a thriving literary tradition.
 
 For a more poetic translation, see [*The World's True Welfare*](/content/booklets/worlds-true-welfare_maitreya-vidagama)
-and to hear the poem [sung in the original Sinhala, see Archive.org](https://archive.org/details/Lo-Weda-Sangarawa){:target="_blank" ga-event-value="0.5"}.
+and to hear the poem [in the original Sinhala, see Archive.org](https://archive.org/details/Lo-Weda-Sangarawa){:target="_blank" ga-event-value="0.5"}.
 

@@ -17,5 +17,5 @@ publisher: nbn
 minutes: 60
 ---
 
-When we go on a pilgrimage, we take guides or books with us which tell us how to see the ordinary objects around us as sacred.
-Except for the first masters, whose experience "opens" a site, the rest of us are engaged in an act of "co-seeing:" learning to see the e.g. mountain as they did.
+When we go on pilgrimage, we take guides or books with us to tell us how to see the ordinary objects around us as sacred.
+Except for the first masters, whose experience "opened" the site, the rest of us are engaged in "co-seeing:" learning to see mountain as mandala.
