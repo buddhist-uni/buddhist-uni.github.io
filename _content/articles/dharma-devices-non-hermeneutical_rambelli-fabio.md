@@ -1,5 +1,5 @@
 ---
-title: "Dharma Devices, Non-Hermeneutical Libraries, and Robot-Monks : Prayer Machines in Japanese Buddhism"
+title: "Dharma Devices, Non-Hermeneutical Libraries, and Robot-Monks: Prayer Machines in Japanese Buddhism"
 authors:
   - "Fabio Rambelli"
 external_url: "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1917884/p057.pdf"
@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1n3b3LCwcLp4eoMbwirn6wlH9xOGiYRgK/view?usp=drivesdk"
 course: mahayana
 tags:
-  - things # strongly
+  - history-of-science
   - material-culture
   - media
 year: 2018

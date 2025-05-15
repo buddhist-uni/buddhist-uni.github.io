@@ -7,7 +7,7 @@ subcat: film
 status: featured
 course: society
 tags:
-  - things # solidly
+  - things
   - pollution
   - political-ideologies
 year: 2024

@@ -415,6 +415,10 @@
   "private": "https://drive.google.com/drive/folders/1YG-RfmRewjIwSLTTfgUlH2NjiEWOXgcj",
   "public": ""
  },
+ "cooking": {
+  "private": "https://drive.google.com/drive/folders/15Mq5BCE-KiB7X0lEQ3VuMyW7AOtcb4eH",
+  "public": null
+ },
  "cosmology": {
   "private": "https://drive.google.com/drive/folders/18x3-YTl9HwpXOsvchp7_ArTo-W7OdbeO",
   "public": "https://drive.google.com/drive/folders/1o8c2IVzKT-Z2Lo9oIBjCmjruOdJAp5XZ"
@@ -501,6 +505,10 @@
  },
  "documentaries": {
   "private": "https://drive.google.com/drive/folders/1fe3b1fZuWI98N-AOriXft6XKcvrr90-t",
+  "public": null
+ },
+ "domestic": {
+  "private": "https://drive.google.com/drive/folders/13hP6iWUE-AF_J6XZ8Cla-K_ILEmAo6UV",
   "public": null
  },
  "drama": {
@@ -790,6 +798,10 @@
  "indonesia": {
   "private": "https://drive.google.com/drive/folders/1LO_4qB4_nQ5cjiMrFb2QfxkOzyzaS5pZ",
   "public": null
+ },
+ "industry": {
+  "private": "https://drive.google.com/drive/folders/13Yk0HjnT22zHnf_UT49aBJLCVsZCn_Lr",
+  "public": "https://drive.google.com/drive/folders/16Wto5ukohvYyIqliW4jbs2-fXac_wPJ7"
  },
  "inequality": {
   "private": "https://drive.google.com/drive/folders/1plgL44krFtC-hmR6rzrP3NtOqBTuEqRb",
@@ -1173,10 +1185,6 @@
  },
  "montreal": {
   "private": "https://drive.google.com/drive/folders/1TEnscC3rUwoewqDUxOuSPyFExvy2NYHL",
-  "public": null
- },
- "museums": {
-  "private": "https://drive.google.com/drive/folders/1C0lf5m6mke7iELHLxOwFoKEkAORKFTYP",
   "public": null
  },
  "music": {

@@ -11,7 +11,7 @@ file_links:
   - "smallpdfs/dhammika_2008_food-of-awakening.pdf"
 course: buddha
 tags:
-  - food
+  - cooking
 pages: 2
 ---
 

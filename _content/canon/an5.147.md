@@ -9,7 +9,7 @@ course: engaged
 tags:
   - an
   - dana
-  - things
+  - domestic-arts
 year: 2018
 pages: 1
 ---

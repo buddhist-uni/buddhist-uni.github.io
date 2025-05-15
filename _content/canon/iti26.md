@@ -9,7 +9,7 @@ course: karma
 status: featured
 tags:
   - dana
-  - food
+  - nutrition
   - ethics
 year: 2020
 pages: 2

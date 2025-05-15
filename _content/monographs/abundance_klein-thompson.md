@@ -9,7 +9,7 @@ tags:
   - state
   - liberalism
   - history-of-science
-  - things
+  - industry
 year: 2025
 olid: OL57760575M
 oclc: 1504483512

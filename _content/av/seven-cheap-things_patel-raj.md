@@ -9,8 +9,7 @@ course: wider
 status: featured
 tags:
   - capitalism
-  - natural
-  - things
+  - industry
 publisher: nbn
 minutes: 47
 ---

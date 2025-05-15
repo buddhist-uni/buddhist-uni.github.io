@@ -7,7 +7,7 @@ reader: "Ada Limón"
 external_url: "https://www.slowdownshow.org/episode/2022/08/15/740-shucking-oysters"
 course: feeling
 tags:
-  - food
+  - cooking
   - sex
   - poetry
 year: 2022

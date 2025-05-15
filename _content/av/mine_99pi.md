@@ -13,7 +13,6 @@ tags:
   - economics
   - power
   - law
-  - things
 year: 2021
 month: jun
 series: 99pi

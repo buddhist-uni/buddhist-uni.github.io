@@ -6,10 +6,10 @@ translator: "Thomas J. Harper"
 external_url: "https://neeta.works/on-graphic-design/readings/Tanizaki-In_Praise_of_Shadows.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1BfZFCR_AOfwH5OXIAlsOmOq5lleRRk6M/view?usp=drivesdk"
-course: japan
+course: japan # solidly. Almost featured
 tags:
   - present
-  - things
+  - material-culture
   - design
   - architecture
   - literature

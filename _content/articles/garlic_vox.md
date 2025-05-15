@@ -6,7 +6,7 @@ external_url: "https://www.vox.com/23022900/garlic-one-good-thing-elizabeth-davi
 base_value: 0.1
 course: world
 tags:
-  - food
+  - cooking
   - feeling
 year: 2022
 month: apr

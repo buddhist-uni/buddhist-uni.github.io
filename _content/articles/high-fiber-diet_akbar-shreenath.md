@@ -10,8 +10,8 @@ file_links:
   - "smallpdfs/akbar-shreenath_2023_high-fiber-diet.pdf"
 course: body
 tags:
-  - food
-  - health # maybe move down?
+  - cooking
+  - nutrition
 year: 2023
 month: may
 journal: "StatPearls"

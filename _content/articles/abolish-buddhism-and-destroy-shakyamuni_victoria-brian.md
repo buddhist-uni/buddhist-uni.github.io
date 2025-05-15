@@ -24,6 +24,6 @@ repressive measures. In short, Buddhism was attacked as a superstitious, foreign
 religion that had no place in a Japan modernizing at breakneck speed.
 
 > This is the second part of an article concerning the ethical and doctrinal changes to Japanese Buddhism that occurred as a result of its centuries long, syncretistic connection to the indigenous religion of Shintō.
-> The first part of this article, entitled “Counting the Cost of Buddhist Syncretism”, may be read here: http://www.jocbs.org/index.php/jocbs/article/view/186.
+> The first part of this article, entitled “Counting the Cost of Buddhist Syncretism”, may be [read here](http://www.jocbs.org/index.php/jocbs/article/view/186).
 > While reading the first article is not required, its contents will nevertheless provide a helpful context for the events described in this article.
 

@@ -15,8 +15,7 @@ drive_links:
  - "https://drive.google.com/file/d/1Fsx_u9udtlgUN5IUiPiphxUYSf45P7H2/view?usp=sharing"
 course: thought
 tags:
-  - contentment
-  - things
+  - becon
   - feeling
 ---
 

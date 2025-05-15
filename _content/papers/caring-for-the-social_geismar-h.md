@@ -10,7 +10,7 @@ file_links:
 status: featured
 course: culture
 tags:
-  - things
+  - domestic-arts
   - preservation
 year: 2022
 month: mar

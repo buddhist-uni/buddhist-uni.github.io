@@ -1,7 +1,7 @@
 ---
 title: "Maps"
 status: unpublished
-parents: [things, places]
+parents: [places, science]
 ---
 
 Cartography.

@@ -11,7 +11,6 @@ drive_links:
   - "https://drive.google.com/file/d/1NVnbUiuFRn2DAfkbNgT2geGeqfzsKaaE/view?usp=drivesdk"
 course: problems
 tags:
-  - food
   - health
 year: 2014
 month: mar

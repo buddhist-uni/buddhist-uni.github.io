@@ -11,7 +11,7 @@ course: east-asian
 tags:
   - zen
   - daily-life
-  - food
+  - cooking
   - monastic-east-asian
   - monastic-advice
 year: 1996

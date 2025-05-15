@@ -6,14 +6,12 @@ month: jul
 external_url: "https://youtu.be/n0yKxj3KS3E"
 course: tibetan
 tags:
-  - things
+  - culture
   - capitalism
   - bart
-  - west
-  - asia
+  - selling
+  - orientalism
   - nepal
-  - nepalese
-  - tibetan-art
 publisher: "Al Jazeera"
 subcat: film
 minutes: 26

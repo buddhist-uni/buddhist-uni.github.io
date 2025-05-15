@@ -11,7 +11,7 @@ file_links:
 tags:
   - chinese
   - becon
-  - things
+  - material-culture
 course: ideology
 month: aug
 year: 2012

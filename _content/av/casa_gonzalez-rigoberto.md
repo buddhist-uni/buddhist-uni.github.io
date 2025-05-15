@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/07/25/174-casa"
-course: things
+course: domestic
 tags:
   - places
   - mythology

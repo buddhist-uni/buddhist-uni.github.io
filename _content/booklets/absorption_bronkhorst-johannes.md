@@ -10,10 +10,7 @@ course: samadhi
 status: featured
 tags:
   - dialogue
-  - intellect
-  - desire
-  - psychology
-  - nibbana
+  - feeling
   - emptiness
 year: 2009 # manuscript date; published again 3 years later
 olid: OL26189929M

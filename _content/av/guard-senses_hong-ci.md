@@ -9,11 +9,9 @@ year: 2016
 status: featured
 course: function 
 tags:
-  - thought
   - meditation
   - canadian
   - east-asian
-  - things
   - power
 minutes: 26
 ---

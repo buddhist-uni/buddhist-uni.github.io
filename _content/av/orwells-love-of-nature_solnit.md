@@ -10,8 +10,7 @@ tags:
   - present
   - writing
   - natural
-  - things
-  - plants
+  - gardening
 year: 2021
 month: dec
 series: factually

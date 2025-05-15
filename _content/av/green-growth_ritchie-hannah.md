@@ -8,7 +8,7 @@ external_url: "https://youtu.be/Em98EioWeT4"
 source_url: "https://www.nytimes.com/2024/04/30/opinion/ezra-klein-podcast-hannah-ritchie.html"
 course: wider
 tags:
-  - food
+  - industry
   - future
   - climate-change
 year: 2024

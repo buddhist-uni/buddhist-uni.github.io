@@ -9,7 +9,8 @@ drive_links:
   - "https://drive.google.com/file/d/1HfL9tYH8vEfsLJgt04XbYTgIhlO7Nb_z/view?usp=drivesdk"
 course: present
 tags:
-  - things
+  - material-culture
+  - mass-media
 year: 2014
 month: nov
 from_book: fin-de-siecle-world_saler-michael

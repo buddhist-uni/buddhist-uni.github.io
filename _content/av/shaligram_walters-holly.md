@@ -8,7 +8,7 @@ external_url: "https://newbooksnetwork.com/shaligram-pilgrimage-in-the-nepal-him
 course: nepalese
 tags:
   - sociology
-  - things
+  - material-culture
   - himalayas
 year: 2022
 month: dec

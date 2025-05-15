@@ -9,7 +9,7 @@ source_url: "https://www.nytimes.com/2023/04/18/opinion/ezra-klein-podcast-sheil
 course: america
 tags:
   - social
-  - things
+  - infrastructure
   - loneliness
 year: 2023
 month: apr

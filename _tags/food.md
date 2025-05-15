@@ -1,7 +1,7 @@
 ---
 title: "Food"
 status: unpublished
-parents: [things]
+parents: [industry]
 ---
 
-Agriculture. Cooking. Cuisine.
+The agricultural and nutritional industries.

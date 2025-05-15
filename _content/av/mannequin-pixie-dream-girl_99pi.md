@@ -8,10 +8,9 @@ external_url: "https://99percentinvisible.org/episode/mannequin-pixie-dream-girl
 course: inner
 tags:
   - desire
-  - things
+  - material-culture
   - capitalism
   - marketing
-  - art
 year: 2019
 month: nov
 series: 99pi

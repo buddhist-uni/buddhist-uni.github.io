@@ -9,11 +9,12 @@ drive_links:
 status: featured
 course: tantric
 tags:
-  - things
   - material-culture
   - form
   - modern
   - religion
+  - industry
+  - capitalism
 year: 2019
 journal: jgb
 volume: 20
