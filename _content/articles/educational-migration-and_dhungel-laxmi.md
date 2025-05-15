@@ -5,7 +5,7 @@ authors:
 external_url: "https://vc.bridgew.edu/cgi/viewcontent.cgi?article=2177&context=jiws"
 drive_links:
   - "https://drive.google.com/file/d/1DGXSbBvjHJAjg2W0H21iF-HrbOgIjTXF/view?usp=drivesdk"
-course: education
+course: enculturation
 tags:
   - migration
   - nepal

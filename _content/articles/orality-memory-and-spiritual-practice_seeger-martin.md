@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1hkWpN6ExEhojpWqOwcpEIQr3ojoecLEg/view?usp=drivesdk"
 course: thai
 tags:
-  - education
+  - enculturation
 year: 2014
 month: nov
 journal: jocbs

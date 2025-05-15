@@ -649,13 +649,9 @@ def move_gfile(glink, folders):
       print(f"Moving existing shortcut from  {FOLDER_LINK.format(s['parents'][0])}  to  {FOLDER_LINK.format(private_fid)}  ...")
       move_drive_file(s['id'], private_fid, previous_parents=s['parents'])
   else:
-    if len(shortcuts) == 1:
-      s=shortcuts[0]
+    for s in shortcuts:
       print(f"Trashing the existing shortcut in {FOLDER_LINK.format(s['parents'][0])} ...")
       trash_drive_file(s['id'])
-  if len(shortcuts)>1:
-    urls = "     ".join(map(lambda f: FOLDER_LINK.format(f['parents'][0]), shortcuts))
-    raise NotImplementedError(f"Please decide what to do with the multiple old shortcuts in:    {urls}")
   print("Done!")
 
 def guess_link_title(url):

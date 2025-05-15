@@ -9,7 +9,7 @@ status: rejected
 reason: "The NYT put this episode behind a paywall"
 tags:
   - social
-  - education
+  - enculturation
   - writing
   - class
 year: 2021

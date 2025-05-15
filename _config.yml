@@ -270,6 +270,7 @@ collections:
        - present.md
        - things.md
        - science.md
+       - industry.md
        - future.md
        - aging.md
        - health.md
@@ -291,12 +292,12 @@ collections:
        - economics.md
        - capitalism.md
        - media.md
+       - art.md
        - philosophy-of-science.md
        - materialism.md
        - internet.md
        - language.md
        - literature.md
-       - art.md
        - poetry.md
        - craft.md
        - music.md

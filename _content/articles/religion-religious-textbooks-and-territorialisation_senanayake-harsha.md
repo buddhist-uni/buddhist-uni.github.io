@@ -10,7 +10,7 @@ course: places
 tags:
   - sri-lankan
   - religion
-  - education
+  - enculturation
 year: 2021
 month: jan
 journal: "Open Political Science"

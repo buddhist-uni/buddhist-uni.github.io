@@ -8,9 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1dhd89QBCqsMDCkpi1gqvCaVh6llI1eXi/view?usp=drivesdk"
 file_links:
   - "smallpdfs/mastroianni-adam-et-al_2022_widespread-misperceptions-of-long-term.pdf"
-course: time
+course: enculturation
 tags:
-  - mass-media # maybe move here?
+  - time
   - america
   - politics
 year: 2022 # probably need to archive in ~10-20 years when this is outdated

@@ -11,7 +11,7 @@ tags:
   - language
   - natural
   - migration
-  - education
+  - enculturation
   - intellect
   - origination
 year: 2020

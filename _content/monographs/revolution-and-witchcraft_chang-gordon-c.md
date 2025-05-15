@@ -9,7 +9,7 @@ file_links:
   - "smallpdfs/chang-gordon-c_2023_revolution-and-witchcraft.pdf"
 course: ideology
 tags:
-  - mass-media
+  - enculturation
   - extremism
 year: 2023
 olid: OL39552767M

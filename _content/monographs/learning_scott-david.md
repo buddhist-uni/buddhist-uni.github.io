@@ -9,7 +9,7 @@ drive_links:
 course: intellect # solidly 3 stars. Almost 4
 tags:
   - epistemology
-  - education
+  - enculturation # maybe move here and feature it some day?
   - communication
   - philosophy-of-science
   - postmodernism

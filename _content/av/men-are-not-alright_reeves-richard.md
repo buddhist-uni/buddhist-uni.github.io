@@ -11,7 +11,7 @@ future_reason: "The NYT put this episode behind a paywall"
 course: gender
 tags:
   - aging
-  - education
+  - enculturation
   - the-west
 year: 2023
 month: mar
