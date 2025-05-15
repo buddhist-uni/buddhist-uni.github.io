@@ -644,13 +644,13 @@ def move_gfile(glink, folders):
     if len(shortcuts) != 1:
       print("Creating a (new, private) shortcut...")
       create_drive_shortcut(gfid, file.get('name'), private_fid)
-    else:
+    elif len(shortcuts) == 1:
       s=shortcuts[0]
       print(f"Moving existing shortcut from  {FOLDER_LINK.format(s['parents'][0])}  to  {FOLDER_LINK.format(private_fid)}  ...")
       move_drive_file(s['id'], private_fid, previous_parents=s['parents'])
-  else:
+  if not public_fid or not private_fid or len(shortcuts) > 1:
     for s in shortcuts:
-      print(f"Trashing the existing shortcut in {FOLDER_LINK.format(s['parents'][0])} ...")
+      print(f"Trashing the old shortcut in {FOLDER_LINK.format(s['parents'][0])} ...")
       trash_drive_file(s['id'])
   print("Done!")
 
