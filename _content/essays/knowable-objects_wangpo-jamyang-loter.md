@@ -2,13 +2,14 @@
 title: "Knowable Objects"
 authors:
   - "Jamyang Loter Wangpo"
-translator: " Roger Espel Llima"
+translator: "Roger Espel Llima"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-loter-wangpo/knowable-objects-commentary"
 drive_links:
   - "https://drive.google.com/file/d/1mHQgNau1vzSibFhBLL_bqBbOgtL0B5A5/view?usp=drive_link"
 course: tibetan
 tags:
   - epistemology 
+  - emptiness
 year: 2022 
 publisher: "Lotsawa House"
 pages: 14
