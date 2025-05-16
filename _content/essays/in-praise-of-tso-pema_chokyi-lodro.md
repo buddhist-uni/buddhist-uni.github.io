@@ -1,5 +1,6 @@
 ---
 title: "In Praise of Tso Pema"
+subcat: poetry
 authors:
   - chokyi-lodro
 translator: "Adam Pearcey"
@@ -8,9 +9,10 @@ drive_links:
   - "https://drive.google.com/file/d/1GLkm_m4m2F-X0qpugWgj05P4LJIWqNoN/view?usp=sharing"
 course: tibetan
 tags:
-  - mythology
+  - classical-poetry
+  - pilgrimage
 year: 2018
-publisher: "lotsawa house"
+publisher: "Lotsawa House"
 pages: 2 
 ---
 
