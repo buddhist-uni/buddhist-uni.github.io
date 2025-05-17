@@ -12,6 +12,7 @@ tags:
   - music
   - poetry
   - native-america
+  - caste
 year: 2021
 month: jun
 minutes: 16
@@ -21,4 +22,4 @@ minutes: 16
 
 An analysis of this airy, Anishinaabemowin song about the space between us.
 
-For an interview with this poet, see [the bonus episode](https://onbeing.org/programs/bonus-a-conversation-with-margaret-noodin/).
+For an interview with this poet, listen to [the bonus episode](https://onbeing.org/programs/bonus-a-conversation-with-margaret-noodin/).
