@@ -1079,6 +1079,10 @@
   "private": "https://drive.google.com/drive/folders/1qxbb1VSwF-lA4AfyBr3GSHHnzDSUDPlN",
   "public": null
  },
+ "material-science": {
+  "private": "https://drive.google.com/drive/folders/1K1s4iXT96-7Vww3z3jdlYEprwQhY07Er",
+  "public": null
+ },
  "materialism": {
   "private": "https://drive.google.com/drive/folders/1yvgkSs_iY86deis2HYSooOxhLhdoyfCQ",
   "public": ""
@@ -1189,6 +1193,10 @@
  },
  "montreal": {
   "private": "https://drive.google.com/drive/folders/1TEnscC3rUwoewqDUxOuSPyFExvy2NYHL",
+  "public": null
+ },
+ "museums": {
+  "private": "https://drive.google.com/drive/folders/17mCup9cpefubRcxfk6Ch01ROJBB8Xzy6",
   "public": null
  },
  "music": {

@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/13KKhdZYiJVw5xOzEA8fr2p-jcBinDPKn/view?usp=sharing"
 course: japanese
 tags:
-  - form
+  - mahayana
 year: 2004
 publisher: "Japan Buddhist Federation"
 pages: 40

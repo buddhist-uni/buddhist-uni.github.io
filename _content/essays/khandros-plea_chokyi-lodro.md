@@ -9,7 +9,6 @@ drive_links:
   - "https://drive.google.com/file/d/14q_KPMx52XqwEQoOvf42ZdGaNXcs9FNo/view?usp=sharing"
 course: tibetan
 tags:
-  - path
   - lay
 year: 2021
 publisher: "Lotsawa House"

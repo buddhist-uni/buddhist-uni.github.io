@@ -15,8 +15,9 @@ month: aug
 publisher: "Cornell University"
 address: "Ithaca, NY"
 pages: 197
+openalexid: W1776818427
 ---
 
-> These narratives are carefully constructed literary productions that offer a window into both the world of the Indic society in which they were initially composed and the Chinese society which translated them.
+> a study of avadāna narratives found in two related anthologies, the *Za piyu jing* 雜譬喻經 (T207) and the *Zhong jing xuan za piyu* 眾經撰雜譬喻 (T208). [...] These narratives are carefully constructed literary productions that offer a window into both the world of the Indic society in which they were initially composed and the Chinese society which translated them.
 
 
