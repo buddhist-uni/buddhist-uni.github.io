@@ -1,6 +1,6 @@
 ---
 title: "Lotsawa House"
-address: "East Sussexm England"
+address: "East Sussex, England"
 external_url: "https://www.lotsawahouse.org/"
 ---
 
