@@ -11,7 +11,7 @@ course: tibetan
 tags:
   - nature
 year: 2018
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 

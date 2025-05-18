@@ -15,6 +15,7 @@ tags:
   - view
 year: 2012
 pages: 1
+publisher: lotsawa-house
 ---
 
 > Kyeho! All activities within saṃsāra are pointless

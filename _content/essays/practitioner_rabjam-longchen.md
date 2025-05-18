@@ -13,6 +13,7 @@ tags:
   - meditation
   - thought
 pages: 3
+publisher: lotsawa-house
 ---
 
 > With your own mind under control, help others in any way you can,  

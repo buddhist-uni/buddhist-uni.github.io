@@ -11,7 +11,7 @@ course: tibetan
 tags:
   - lay
 year: 2021
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 

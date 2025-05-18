@@ -16,8 +16,8 @@ tags:
   - nyingma
   - daily-life
 year: 2015
-base_value: 0.15
 pages: 1
+publisher: lotsawa-house
 ---
 
 > Here in Dzogpachenpo, we settle, without contriving, in what we call the essence of mind

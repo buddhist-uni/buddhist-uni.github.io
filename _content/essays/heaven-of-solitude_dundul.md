@@ -17,6 +17,7 @@ tags:
   - nature
 year: 2013
 pages: 2
+publisher: lotsawa-house
 ---
 
 > All-knowing lords, buddhas of past, present and future  

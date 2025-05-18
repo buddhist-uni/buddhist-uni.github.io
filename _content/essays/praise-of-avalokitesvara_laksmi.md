@@ -14,6 +14,7 @@ tags:
   - tantric-roots
 year: 2019
 pages: 4
+publisher: lotsawa-house
 ---
 
 A famous poem about Avalokiteśvara known in Tibet as "The Po Praise"

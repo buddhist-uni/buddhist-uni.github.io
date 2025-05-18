@@ -8,6 +8,7 @@ file_links:
   - "smallpdfs/nyingpo-dokpa.pdf"
 course: mahayana
 pages: 11
+publisher: lotsawa-house
 ---
 
 > zuk tongpa o | tongpanyi kyang zuk so  

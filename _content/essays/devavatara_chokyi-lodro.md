@@ -11,7 +11,7 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-cho
 course: indian
 tags:
   - pilgrimage
-base_value: 0.2
+publisher: lotsawa-house
 subcat: poetry
 pages: 2
 ---

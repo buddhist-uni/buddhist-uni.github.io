@@ -17,6 +17,7 @@ tags:
   - nature
   - tantric
 pages: 5
+publisher: lotsawa-house
 ---
 
 > Even if a house is of inferior quality, if decorated with flowers, it will appear to be a bower. It will become the source of a 'clear mind'

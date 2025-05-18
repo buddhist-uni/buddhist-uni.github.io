@@ -16,7 +16,7 @@ tags:
   - guru-worship
   - thought
 year: 2021
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 2
 ---
 

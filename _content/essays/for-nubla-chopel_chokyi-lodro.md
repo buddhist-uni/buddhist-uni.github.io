@@ -14,6 +14,7 @@ tags:
   - nyingma
 year: 2022
 pages: 2
+publisher: lotsawa-house
 ---
 
 > reflect on the trials of saṃsāra  

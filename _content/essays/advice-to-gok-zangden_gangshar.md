@@ -16,6 +16,7 @@ tags:
   - thought
 year: 2018
 pages: 1
+publisher: lotsawa-house
 ---
 
 > Allowing inner awareness to be unrestricted...

@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/10TmB67_kDCoe6LkpBHgwTm2HNeWxqzPt/view?usp=drivesdk"
 file_links:
   - "smallpdfs/mipham_2020_king-of-jewels.pdf"
-base_value: 0.2
+publisher: lotsawa-house
 course: tantric
 tags:
   - nyingma

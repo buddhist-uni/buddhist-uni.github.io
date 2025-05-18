@@ -14,7 +14,7 @@ tags:
   - vipassana
   - nibbana
 year: 2006
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

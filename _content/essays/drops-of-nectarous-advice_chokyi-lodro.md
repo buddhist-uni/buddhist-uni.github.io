@@ -10,7 +10,7 @@ course: tibetan
 tags:
   - monastic-advice
 year: 2021
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 

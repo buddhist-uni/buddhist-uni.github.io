@@ -13,7 +13,7 @@ tags:
   - confession
   - tibetan 
 year: 2007
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

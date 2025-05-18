@@ -15,6 +15,7 @@ tags:
   - dzogchen
 year: 2018
 pages: 1
+publisher: lotsawa-house
 ---
 
 > Aho ye! When looking at these outer appearances...

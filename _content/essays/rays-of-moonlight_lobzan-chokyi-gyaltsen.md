@@ -13,8 +13,7 @@ tags:
   - confession
 status: featured
 year: 2019
-publisher: "Lotsawa House"
-address: "East Sussex, UK"
+publisher: lotsawa-house
 pages: 5 
 ---
 

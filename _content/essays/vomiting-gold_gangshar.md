@@ -8,7 +8,7 @@ drive_links: ["https://drive.google.com/file/d/1DThCa5je1xBuD33CT34FT4b1K4NfR4Jf
 file_links:
   - "smallpdfs/gangshar_2015_vomiting-gold.pdf"
 course: sati
-base_value: 0.3
+publisher: lotsawa-house
 tags:
   - problems
   - cittanusati

@@ -12,6 +12,7 @@ course: lay
 tags:
   - tibetan
 pages: 1
+publisher: lotsawa-house
 ---
 
 A short list of moral qualities that every Buddhist should strive to uphold.

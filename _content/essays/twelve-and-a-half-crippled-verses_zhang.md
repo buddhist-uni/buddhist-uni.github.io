@@ -13,7 +13,7 @@ status: featured
 tags:
   - mahayana
   - monastic-advice
-base_value: 0.25
+publisher: lotsawa-house
 pages: 2
 ---
 

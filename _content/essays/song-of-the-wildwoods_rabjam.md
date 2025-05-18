@@ -14,6 +14,7 @@ tags:
   - literature
 subcat: poetry
 pages: 11
+publisher: lotsawa-house
 ---
 
 > People are so difficult to be with —  

@@ -11,7 +11,7 @@ course: tibetan
 tags:
   - form
 year: 2016
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 

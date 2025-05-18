@@ -14,7 +14,7 @@ tags:
   - confession
   - tibet
 year: 2017
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 2
 ---
 

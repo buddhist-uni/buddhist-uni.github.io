@@ -15,7 +15,7 @@ tags:
   - discrimination
 subcat: poetry
 year: 2020
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 address: "East Sussex, UK"
 pages: 1
 ---

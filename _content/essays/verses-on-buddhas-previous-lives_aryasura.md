@@ -11,7 +11,7 @@ course: jataka
 tags:
   - mahayana-roots
 year: 2008
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

@@ -10,8 +10,8 @@ course: tibetan
 tags:
   - epistemology 
   - emptiness
-year: 2022 
-publisher: "Lotsawa House"
+year: 2022
+publisher: lotsawa-house
 pages: 14
 ---
 

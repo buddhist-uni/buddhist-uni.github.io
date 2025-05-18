@@ -16,6 +16,7 @@ tags:
 subcat: poetry
 year: 2015
 pages: 5
+publisher: lotsawa-house
 ---
 
 > The root of all of these  

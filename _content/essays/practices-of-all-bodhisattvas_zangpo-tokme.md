@@ -16,6 +16,7 @@ tags:
   - renunciation
   - tibetan
 pages: 6
+publisher: lotsawa-house
 ---
 
 > Here I have set down for those who wish to follow the bodhisattva path,  

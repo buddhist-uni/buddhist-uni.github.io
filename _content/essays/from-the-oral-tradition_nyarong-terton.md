@@ -17,7 +17,7 @@ tags:
   - monastic-advice
   - meditation
 year: 2013
-base_value: 0.15
+publisher: lotsawa-house
 pages: 1
 ---
 

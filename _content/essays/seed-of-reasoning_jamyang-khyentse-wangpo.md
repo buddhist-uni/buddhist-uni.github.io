@@ -15,7 +15,7 @@ tags:
   - dialogue
   - origination
 year: 2018
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

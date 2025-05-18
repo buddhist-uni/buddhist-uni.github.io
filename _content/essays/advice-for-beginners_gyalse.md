@@ -12,7 +12,7 @@ course: problems
 tags:
   - tantric
 year: 2019
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 

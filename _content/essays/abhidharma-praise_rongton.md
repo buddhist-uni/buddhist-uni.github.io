@@ -14,6 +14,7 @@ tags:
 subcat: poetry
 year: 2020
 pages: 3
+publisher: lotsawa-house
 ---
 
 > Although you do not move...

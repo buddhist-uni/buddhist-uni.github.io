@@ -14,7 +14,7 @@ tags:
   - tibetan
   - path
 subcat: poetry
-base_value: 0.2
+publisher: lotsawa-house
 pages: 1
 ---
 

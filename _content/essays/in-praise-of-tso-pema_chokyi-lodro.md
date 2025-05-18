@@ -12,7 +12,7 @@ tags:
   - classical-poetry
   - pilgrimage
 year: 2018
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 2 
 ---
 

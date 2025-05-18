@@ -16,8 +16,8 @@ tags:
   - tibetan
 subcat: poetry
 year: 2014
-base_value: 0.25
 pages: 5
+publisher: lotsawa-house
 ---
 
 > … these delightful mountain solitudes,  

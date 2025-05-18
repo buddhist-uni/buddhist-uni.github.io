@@ -13,7 +13,7 @@ tags:
   - dzogchen
   - stages
 year: 2017
-base_value: 0.2
+publisher: lotsawa-house
 translator: "Adam Pearcey"
 pages: 1
 ---

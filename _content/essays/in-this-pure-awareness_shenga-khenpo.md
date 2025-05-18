@@ -8,7 +8,7 @@ file_links:
   - "smallpdfs/shenga-khenpo_2019_in-this-pure-awareness.pdf"
 year: 2019
 course: nibbana
-base_value: 0.2
+publisher: lotsawa-house
 subcat: poetry
 pages: 1
 ---

@@ -12,6 +12,7 @@ tags:
   - tibetan
   - repentance
 pages: 10
+publisher: lotsawa-house
 ---
 
 > I confess each and every misdeed.  

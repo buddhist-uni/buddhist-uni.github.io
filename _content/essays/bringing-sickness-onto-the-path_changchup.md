@@ -13,7 +13,7 @@ tags:
   - problems
   - view
 year: 2018
-base_value: 0.2
+publisher: lotsawa-house
 pages: 1
 ---
 

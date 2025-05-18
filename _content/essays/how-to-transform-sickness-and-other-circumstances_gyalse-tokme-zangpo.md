@@ -14,7 +14,7 @@ course: thought
 tags:
   - problems
 year: 2007
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 1
 ---
 
