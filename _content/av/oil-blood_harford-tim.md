@@ -5,10 +5,11 @@ authors:
 subcat: podcast
 external_url: "https://timharford.com/2023/10/cautionary-tales-oil-and-blood-the-osage-murders/"
 source_url: "https://www.pushkin.fm/podcasts/cautionary-tales/oil-and-blood-the-osage-murders"
-course: america-roots
+course: america-roots # strongly
 tags:
   - industry
   - race
+  - power
 year: 2023
 month: oct
 publisher: "Pushkin"
