@@ -7,7 +7,7 @@ drive_links: ["https://drive.google.com/file/d/16UNSCrQy6iK4W1gT438ey-y37W1mci8W
 file_links:
   - "smallpdfs/thangpa_2012_training-the-mind.pdf"
 course: thought
-base_value: 0.25
+publisher: lotsawa-house
 subcat: poetry
 tags:
   - ethics

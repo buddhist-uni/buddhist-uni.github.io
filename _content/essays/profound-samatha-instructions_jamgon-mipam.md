@@ -13,6 +13,7 @@ tags:
   - hindrances
 year: 2019
 pages: 4
+publisher: lotsawa-house
 ---
 
 > … allow the mind, which is the source, to settle

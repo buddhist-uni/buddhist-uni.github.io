@@ -17,7 +17,7 @@ tags:
   - thought
   - bodhisattva
 year: 2020
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 2
 ---
 

@@ -13,6 +13,7 @@ tags:
   - dzogchen
 year: 2018
 pages: 2
+publisher: lotsawa-house
 ---
 
 > simply abide by that natural state,  

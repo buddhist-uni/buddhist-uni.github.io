@@ -14,7 +14,7 @@ tags:
   - lamentation
   - guru-worship
 year: 2021
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 subcat: poetry
 pages: 3
 ---

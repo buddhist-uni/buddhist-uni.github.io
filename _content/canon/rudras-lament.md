@@ -13,6 +13,7 @@ tags:
   - cosmology
   - karma
 pages: 11
+publisher: lotsawa-house
 ---
 
 > Kind protector, compassionate deity, heed me now, I pray

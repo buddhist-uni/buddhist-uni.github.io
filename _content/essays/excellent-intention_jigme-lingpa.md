@@ -11,7 +11,7 @@ file_links:
 course: sangha
 tags:
   - tibetan
-base_value: 0.25
+publisher: lotsawa-house
 pages: 5
 ---
 

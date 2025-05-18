@@ -17,6 +17,7 @@ file_links:
   - "smallpdfs/atisha_2008_bodhisattvamanyavali.pdf"
 base_value: 1
 pages: 4
+publisher: lotsawa-house
 ---
 
 > Should you find a way to peace and happiness,  

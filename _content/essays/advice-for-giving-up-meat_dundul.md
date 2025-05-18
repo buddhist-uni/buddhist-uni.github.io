@@ -14,8 +14,8 @@ tags:
   - vegetarianism
   - cosmology
 year: 2004
-base_value: 0.25
 pages: 5
+publisher: lotsawa-house
 ---
 
 > For my part, I have no instruction more profound  

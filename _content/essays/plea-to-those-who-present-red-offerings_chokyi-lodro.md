@@ -13,7 +13,7 @@ tags:
   - dana
   - deva
 year: 2019
-publisher: "Lotsawa House" 
+publisher: lotsawa-house
 pages: 3
 ---
 

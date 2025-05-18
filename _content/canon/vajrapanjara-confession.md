@@ -13,6 +13,7 @@ tags:
   - thought
 year: 2020
 pages: 2
+publisher: lotsawa-house
 ---
 
 > In the Three Jewels, I take refuge...

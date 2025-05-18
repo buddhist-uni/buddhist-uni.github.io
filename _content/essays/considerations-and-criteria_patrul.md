@@ -17,6 +17,7 @@ tags:
   - bodhisattva
 status: featured
 pages: 12
+publisher: lotsawa-house
 ---
 
 > Bodhisattvas who genuinely take the bodhisattva vow of ethical discipline do nothing but act for the benefit of beings, either directly or indirectly, but unless one is skilful in benefiting these beings, no matter how much one does, it might not benefit beings, but could actually be a direct or indirect cause of harm.

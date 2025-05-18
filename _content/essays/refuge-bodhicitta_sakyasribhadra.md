@@ -14,7 +14,7 @@ tags:
   - refuge
   - problems
 year: 2012
-base_value: 0.2
+publisher: lotsawa-house
 pages: 1
 ---
 

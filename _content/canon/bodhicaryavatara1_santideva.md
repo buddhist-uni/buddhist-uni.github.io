@@ -13,6 +13,7 @@ tags:
   - thought
 year: 2007
 translator: "Adam Pearcey"
+publisher: lotsawa-house
 pages: 5
 ---
 

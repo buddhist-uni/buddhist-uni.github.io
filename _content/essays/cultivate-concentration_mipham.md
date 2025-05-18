@@ -14,7 +14,7 @@ tags:
   - daily-life
 status: featured
 subcat: poetry
-base_value: 0.25
+publisher: lotsawa-house
 pages: 2
 ---
 

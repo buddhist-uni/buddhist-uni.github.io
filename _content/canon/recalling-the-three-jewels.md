@@ -11,6 +11,7 @@ tags:
   - buddhism
 year: 2001
 pages: 8
+publisher: lotsawa-house
 ---
 
 A simple, daily recitation of the qualities of the triple gem from the Tibetan Tradition.

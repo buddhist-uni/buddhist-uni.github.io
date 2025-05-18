@@ -15,7 +15,7 @@ tags:
   - anicca
   - time
 year: 2015
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 4
 ---
 

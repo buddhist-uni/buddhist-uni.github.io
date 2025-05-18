@@ -10,7 +10,7 @@ course: tibetan
 tags:
   - meditation
 year: 2014
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

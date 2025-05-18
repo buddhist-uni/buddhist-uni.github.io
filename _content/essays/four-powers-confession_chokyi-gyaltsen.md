@@ -15,6 +15,7 @@ tags:
   - thought
 year: 2019
 pages: 5
+publisher: lotsawa-house
 ---
 
 > Overpowered by the three poisons, I have committed the five boundless crimes...

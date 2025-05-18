@@ -14,6 +14,7 @@ tags:
   - ethics
   - tranquility-and-insight
 pages: 10
+publisher: lotsawa-house
 ---
 
 > … whenever we practise the bodhisattva’s actions--the trainings in generosity, discipline, patience, diligence, meditation and wisdom--it will cause this bodhicitta that is the union of emptiness and compassion to increase further and further.

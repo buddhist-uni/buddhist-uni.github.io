@@ -14,7 +14,7 @@ tags:
   - monastic-advice
   - problems
 year: 2016
-publisher: "Lotsawa House"
+publisher: lotsawa-house
 pages: 3
 ---
 

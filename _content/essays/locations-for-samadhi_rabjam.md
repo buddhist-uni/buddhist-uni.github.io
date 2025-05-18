@@ -14,6 +14,7 @@ tags:
   - world
   - nature
 pages: 3
+publisher: lotsawa-house
 ---
 
 > On mountaintops, in secluded forests and on islands and the like,  

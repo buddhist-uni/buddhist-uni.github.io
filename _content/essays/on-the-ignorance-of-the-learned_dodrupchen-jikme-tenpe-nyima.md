@@ -15,6 +15,7 @@ year: 2014
 publisher: "Lotsawa House"
 address: "East Sussex, UK"
 pages: 2
+publisher: lotsawa-house
 ---
 
 In this short work, Jikme Tenpe Nyima explains the proper meaning and use of learning on the Buddhist path
