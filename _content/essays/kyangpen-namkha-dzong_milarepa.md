@@ -15,13 +15,8 @@ publisher: "Lotsawa House"
 pages: 1
 ---
 
-> The inconceivable qualities of this sacred place
-
-
-I have sung in the form of a joyful song.
-
-
-I have spoken of them as an oral instruction.
-
+> The inconceivable qualities of this sacred place  
+I have sung in the form of a joyful song.  
+I have spoken of them as an oral instruction.  
 
 A song by Milarepa, praising the sacred place Kyangpen Namkha Dzong.
