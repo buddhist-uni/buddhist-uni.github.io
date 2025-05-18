@@ -8,8 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1ugGC23r_LcmDPV6sp1Q0rj9FhNbiL-1J/view?usp=sharing"
 course: dialogue
 tags:
-  - philosophy
-  - mahayana
+  - mahayana-roots
 year: 2020
 publisher: "Lotsawa House"
 pages: 2
