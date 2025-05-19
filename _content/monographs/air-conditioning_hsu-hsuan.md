@@ -1,5 +1,5 @@
 ---
-title: "Air Conditioning (Object Lessons)"
+title: "Air Conditioning"
 authors:
   - "Hsuan L. Hsu"
 editor: "Ian Bogost and Christopher Schaberg"
@@ -12,9 +12,11 @@ year: 2024
 month: feb
 olid: OL39406651M
 oclc: 1337403697
+series: object-lessons
+number: 62 # selon https://www.goodreads.com/list/show/132096.Object_Lessons_series_Bloomsbury_Books
 publisher: "Bloomsbury Academic"
 address: "New York"
-pages: 150
+pages: 40
 ---
 
 > Air conditioning relieves us of having to think about the air, so that we can think about other things.

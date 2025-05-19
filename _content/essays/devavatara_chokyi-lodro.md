@@ -2,7 +2,7 @@
 title: "In Praise of Devāvatāra, Site of Buddha's Descent from Heaven"
 authors: [chokyi-lodro]
 translator: "Adam Pearcey"
-year: 1956
+year: 2018
 drive_links:
   - "https://drive.google.com/file/d/1Bd6gKmKl3JP6VpHuBGhrvMsV35Qrac5t/view?usp=drivesdk"
 file_links:

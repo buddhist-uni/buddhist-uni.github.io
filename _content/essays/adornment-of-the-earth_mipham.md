@@ -12,7 +12,7 @@ course: world
 tags:
   - nature
   - mahayana
-year: 1906
+year: 2019
 subcat: poetry
 base_value: 0.2
 pages: 4

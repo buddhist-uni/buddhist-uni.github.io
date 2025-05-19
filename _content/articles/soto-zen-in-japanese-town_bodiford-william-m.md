@@ -22,7 +22,7 @@ openalexid: W2336021643
 ---
 
 > Someone who experiences a kaicho as
-a child will have attained full status as an adultby the time of the next kaicho, and will have become
+a child will have attained full status as an adult by the time of the next kaicho, and will have become
 an elder member of the community by
 the time of the one after that.
 [...] The emotional significance of this time frame is not immediately obvious, but becomes clear through conversations with residents

@@ -31,14 +31,14 @@ Here you'll find the latest and greatest publications in the library sorted by y
 Here you'll find every piece of content across the site in a giant, interactive table.  
 See [Tables by Type](/content/) for sub-tables organized by content category.
 
-### [<i class="fas fa-search"></i> Search](/search/)
-Type in what you're looking for and see what comes up!
-
 ### [<i class="fas fa-dice"></i> Random]({% link random.html %})
 Or explore the breadth of our recommendations in a more serendipitous way.
 
 ### [<i class="fas fa-user-edit"></i> Author](/authors/)
 If there's a particular author you want to hear more from or you just want to get a sense of who is represented here, you can find a partial list of our authors here.
+
+### [<i class="fas fa-search"></i> Search](/search/)
+Type in what you're looking for and see what comes up!
 
 ### [<i class="fab fa-google-drive"></i> Google Drive&#8482;](https://drive.google.com/open?id=1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}
 This website started off as a Google Drive folder, which still serves as this website's primary file server. The Google Drive folder contains roughly the same content as this site, arranged similarly, just missing a few links here and there and containing a few extra goodies that haven't yet found their way over here. If you're an avid user of Google Drive, this link is for you.
