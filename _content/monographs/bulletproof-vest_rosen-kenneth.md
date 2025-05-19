@@ -1,5 +1,5 @@
 ---
-title: "Bulletproof Vest (Object Lessons)"
+title: "Bulletproof Vest"
 authors:
   - "Kenneth R. Rosen"
 editor: "Ian Bogost and Christopher Schaberg"
@@ -11,7 +11,7 @@ year: 2020
 olid: OL30157936M
 oclc: 1140790981
 series: object-lessons
-number: 114 # selon https://www.goodreads.com/list/show/132096.Object_Lessons_series_Bloomsbury_Books
+number: 50
 publisher: "Bloomsbury Academic"
 address: "New York"
 pages: 38

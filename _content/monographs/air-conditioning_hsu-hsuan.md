@@ -13,7 +13,7 @@ month: feb
 olid: OL39406651M
 oclc: 1337403697
 series: object-lessons
-number: 62 # selon https://www.goodreads.com/list/show/132096.Object_Lessons_series_Bloomsbury_Books
+number: 87
 publisher: "Bloomsbury Academic"
 address: "New York"
 pages: 40

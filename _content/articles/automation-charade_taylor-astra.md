@@ -19,4 +19,4 @@ pages: 11
 
 > The joint creation of social life is the very basis of all economic activity.
 
-A compelling argument that "fauxtomation" is more about convincing people they economically expendable than it ever was about actually removing  people from the equation.
+A compelling argument that "fauxtomation" is more about convincing people that they are economically superfluous than it ever was about actually removing people from the equation.
