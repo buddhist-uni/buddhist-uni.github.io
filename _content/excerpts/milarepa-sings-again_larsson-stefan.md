@@ -6,7 +6,6 @@ drive_links:
   - "https://drive.google.com/file/d/15bx2xgmDEK7datEJM79Q7aA6LIy1cp8g/view?usp=drive_link"
 course: tibetan
 tags:
-  - pilgrimage
   - milarepa
   - classical-poetry
 year: 2021
