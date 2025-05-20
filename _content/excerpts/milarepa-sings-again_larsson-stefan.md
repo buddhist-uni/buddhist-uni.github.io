@@ -12,7 +12,7 @@ year: 2021
 month: jun
 publisher: "Stockholm University Press"
 address: "Stockholm"
-from_book: songs-on-the-road_larson-af-edholm
+from_book: songs-on-the-road_larson-af-edholm.md
 pages: "67--92"
 chapter: 4
 ---
