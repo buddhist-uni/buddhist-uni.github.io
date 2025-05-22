@@ -19,4 +19,4 @@ meditation in seclusion and teaching groups of disciples
 mainly through spontaneous songs of realization
 (mgur).
 
-This biography by Andrew Quintman explores the life of the great Tibetan yogi Milarepa. It begins with the story of his parents and birth, then traces his journey from sorcery to spiritual awakening, highlighting his devotion to Marpa, solitary meditation, and visionary songs. 
+The life of the great Tibetan yogi Milarepa, beginning with the story of his parents and birth, then tracing his journey from sorcery to spiritual awakening, highlighting his devotion to Marpa, solitary meditation, and legendary songs.

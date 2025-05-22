@@ -7,7 +7,6 @@ tags:
   - world
   - feeling
   - society
-  - things
 year: 2023
 olid: OL46665652M
 oclc: 1367232172

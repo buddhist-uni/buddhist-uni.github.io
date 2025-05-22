@@ -4,8 +4,6 @@ authors:
   - "Marshall McLuhan"
 external_url: "https://designopendata.files.wordpress.com/2014/05/understanding-media-mcluhan.pdf"
 course: media
-tags:
-  - things
 year: 1964
 olid: OL1102761M
 publisher: "McGraw-Hill"

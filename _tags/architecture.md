@@ -1,5 +1,5 @@
 ---
 title: "Architecture"
 status: unpublished
-parents: [cities, things]
+parents: [cities, industry]
 ---

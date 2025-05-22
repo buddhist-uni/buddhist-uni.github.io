@@ -2,13 +2,15 @@
 title: "Milarepa Sings Again: Tsangnyön Heruka’s ‘Songs with Parting Instructions’"
 authors:
   - "Stefan Larsson"
-external_url: "https://doi.org/10.16993/bbi.d"
+external_url: "https://www.stockholmuniversitypress.se/chapters/e/10.16993/bbi.d"
+source_url: "https://www.academia.edu/49409534/Milarepa_Sings_Again_Tsangny%C3%B6n_Herukas_Songs_with_Parting_Instructions"
 drive_links:
   - "https://drive.google.com/file/d/15bx2xgmDEK7datEJM79Q7aA6LIy1cp8g/view?usp=drive_link"
 course: tibetan
 tags:
   - milarepa
   - classical-poetry
+  - bart
 year: 2021
 month: jun
 publisher: "Stockholm University Press"
