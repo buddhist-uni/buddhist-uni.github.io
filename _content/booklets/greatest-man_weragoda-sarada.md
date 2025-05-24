@@ -5,7 +5,7 @@ authors:
   - "P. Wickramanayake"
 editor: "Edwin Ariyadasa"
 external_url: "https://web.archive.org/web/20210418044953if_/http://www.kbrl.gov.mm/book/download/003259"
-source_url: "http://www.kbrl.gov.mm/book/details/003259"
+source_url: "https://web.archive.org/web/20240304091358/http://www.kbrl.gov.mm/book/details/003259"
 drive_links:
   - "https://drive.google.com/file/d/1CA5wfVVn_bBnbrmqyulyVCksqdQlGyot/view?usp=drivesdk"
 tags:

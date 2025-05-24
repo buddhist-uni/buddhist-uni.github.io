@@ -3,7 +3,7 @@ title: "The Buddhist Perspective on Time and Space"
 authors:
   - hsingyun
 translator: "Amy Lam and Jeanne Tsai"
-external_url: "https://www.fgsitc.org/wp-content/uploads/2023/04/A17-The-Buddhist-Perspective-on-Time-and-Space-2019.pdf"
+external_url: "https://www.fgsitc.org/the-buddhist-perspective-on-time-and-space/"
 drive_links:
   - "https://drive.google.com/file/d/1gxuN0ux6PQxvK1hINtuPwr0zoJawNO-D/view?usp=drivesdk"
 course: cosmology

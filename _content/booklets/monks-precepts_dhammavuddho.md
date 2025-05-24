@@ -2,7 +2,7 @@
 title: "The Buddhist Monks' Precepts"
 authors:
   - "Bhante Hye Dhammavuddho"
-source_url: "http://www.kbrl.gov.mm/book/details/002487"
+source_url: "https://web.archive.org/web/20230610071442/http://www.kbrl.gov.mm/book/details/002487"
 drive_links:
   - "https://drive.google.com/file/d/1_LtgS0VWk0gk2DecNqbaJBvMUES_T4g3/view?usp=drivesdk"
 file_links:

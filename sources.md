@@ -66,7 +66,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Study Buddhism](https://studybuddhism.com/)
 * [TibetHouse.jp](https://www.tibethouse.jp/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e4%bb%8f%e6%95%99/%e5%90%84%e7%a8%ae%e7%b5%8c%e6%9c%acpdf%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89/)
 * [Abhidhamma.com](http://abhidhamma.com/)
-* [The Kabaaye Buddhist Research Library](http://www.kbrl.gov.mm/catalog/Index/58)
 * [HolyBooks.com](https://www.holybooks.com)
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
