@@ -15,9 +15,7 @@ publisher: lotsawa-house
 pages: 1
 ---
 
-> May he free the kind ones immersed in misery’s ocean
-
-So that all may come to resemble Mañjughoṣa himself.
-
+> May he free the kind ones immersed in misery’s ocean  
+So that all may come to resemble Mañjughoṣa himself.  
 
 A hymn of praise to the great Bodhisattva Mañjuśrī, written by the 12th century Tibetan monk, philosopher, and yogi Je Tsongkhapa.
