@@ -3,7 +3,7 @@ title: "Translation, Transcription, and What Else?: Some Basic Characteristics o
 authors:
   - "Toru Funayama"
 editor: "Birgit Kellner"
-external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-004/pdf#.pdf"
+external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-004/pdf"
 source_url: "https://doi.org/10.1515/9783110413083-004"
 drive_links:
   - "https://drive.google.com/file/d/1ow4YBt_0E402LRyx4j4Buy1ACrP3nfOI/view?usp=drivesdk"

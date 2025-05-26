@@ -22,9 +22,7 @@ with open(input_file, "r") as f_in:
         # Find the URLs matching the include pattern
         match = re.search(include_pattern, line)
         if match:
-            url = match.group(0)
-            # Add the URL to the set
-            unique_urls.add(url)
+            unique_urls.add(line.strip())
 
 # Open the output file
 with open(output_file, "w") as f_out:

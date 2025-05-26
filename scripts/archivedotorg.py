@@ -214,10 +214,28 @@ def save_url_to_archiveorg(url):
     print("WARNING: A connection error occurred")
     return False
   if resp.ok and json.loads(resp.text):
-    print("Saved!")
-    return True
+    print("Save job submitted!")
+    return json.loads(resp.text).get("job_id")
   else:
     print(f"WARNING: Save failed\n\t{resp.headers}\n\tCONTENT:\n\t{resp.text}")
+    return False
+
+def archivejob_status(job_id):
+  """
+  Returns the status of a Wayback Machine save job. (False on error)
+  """
+  try:
+    resp = archive_org_session.get(f"https://web.archive.org/save/status/{job_id}")
+  except:
+    print("WARNING: A connection error occurred")
+    return False
+  if resp.ok:
+    # ['status'] == 'success' -> ['original_url'] will have the resolved url
+    # This url may be different than the url that was submitted even if
+    # ['http_status'] == 200
+    return json.loads(resp.text)
+  else:
+    print(f"WARNING: Check failed\n\t{resp.headers}\n\tCONTENT:\n\t{resp.text}")
     return False
 
 def archive_urls(urls, skip_urls_archived_in_last_days=365):

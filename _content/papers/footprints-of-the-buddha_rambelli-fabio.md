@@ -3,7 +3,7 @@ title: "In the Footprints of the Buddha: Ceylon and the Japanese Quest for the O
 authors:
   - "Fabio Rambelli"
 editor: "Birgit Kellner"
-external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-007/pdf#.pdf"
+external_url: "https://www.degruyter.com/document/doi/10.1515/9783110413083-007/pdf"
 source_url: "https://doi.org/10.1515/9783110413083-007"
 drive_links:
   - "https://drive.google.com/file/d/1NnLVqjBVG47OPz3oW7uvHzG-iCF3OaXN/view?usp=drivesdk"

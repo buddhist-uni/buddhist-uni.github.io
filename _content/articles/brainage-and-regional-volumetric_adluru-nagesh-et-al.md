@@ -6,7 +6,7 @@ authors:
   - "Derek Norton"
   - "Robin I. Goldman"
   - "Richard J. Davidson"
-external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7150651/pdf/nihms-1564925.pdf"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7150651/pdf/nihms-1564925.pdf"
 source_url: "https://doi.org/10.1080/13554794.2020.1731553"
 drive_links:
   - "https://drive.google.com/file/d/1RI6HhDTnEwanSM-Y13fkMuG6bwFKN_qr/view?usp=drivesdk"

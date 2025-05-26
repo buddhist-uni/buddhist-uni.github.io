@@ -5,6 +5,7 @@ exports
 assets/webfonts
 assets/imgs/covers/
 assets/css/purged-main.css
+scripts/archivable_urls/*.txt
 _data/cssCacheToken.yml
 _data/content_downloads.json
 _drafts/_content

@@ -6,7 +6,7 @@ on:
 jobs:
   Archive:
     env:
-      LOGFILE: "Links/7_lychee main_content prod(^content).txt"
+      LOGFILE: "0_Links.txt"
       GH_TOKEN: ${{ secrets.BUILD_ACTION_TOKEN }}
     runs-on: ubuntu-latest
     steps:
