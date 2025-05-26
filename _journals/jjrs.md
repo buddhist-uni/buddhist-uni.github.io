@@ -1,6 +1,6 @@
 ---
 title: "The Japanese Journal of Religious Studies"
-external_url: "https://nirc.nanzan-u.ac.jp/journals"
+external_url: "https://nirc.nanzan-u.ac.jp/journal/6"
 address: "Nagoya, Japan"
 publisher: "Nanzan Institute for Religion and Culture"
 ---

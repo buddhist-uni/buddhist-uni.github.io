@@ -13,8 +13,7 @@ year: 2010
 pages: 15
 ---
 
-> body
-unfolds a set of correspondences between his/her 32 bodily formations, the 32
+> a set of correspondences between his/her 32 bodily formations, the 32
 consonants of the Pāli syllabary giving origin to those bodily formations, the 32
 contemplative mūlakammaṭṭhāna  and the 32 marks of a Buddha’s body.
 The key factor linking those correspondences is mūla-kammaṭṭhāna
