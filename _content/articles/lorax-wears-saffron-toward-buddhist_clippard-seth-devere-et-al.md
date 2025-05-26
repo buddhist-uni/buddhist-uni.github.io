@@ -10,7 +10,7 @@ course: climate-change
 tags:
   - nature
   - thai
-  - thai-ideology
+  - thai-culture
 year: 2011
 month: jan
 journal: jbe

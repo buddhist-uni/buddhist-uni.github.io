@@ -48,6 +48,11 @@ archive_org_session.timeout = 5
 archive_org_session.headers['Authorization'] = ARCHIVE_ORG_AUTH
 archive_org_session.headers['Accept'] = 'application/json'
 
+def wait_secs(n):
+    print(f"Waiting {n} seconds...")
+    for i in trange(n):
+      time.sleep(1)
+
 def last_archived_datetime(url):
   resp = archive_org_session.head("https://web.archive.org/web/"+str(url))
   if not resp.ok:
@@ -193,12 +198,15 @@ def is_archiveorg_item_lendable(itemid):
   return False
 
 
-def openlibrary_edition_to_work_id(editionid):
+def openlibrary_edition_to_work_id(editionid, retrycount=3):
   try:
     resp = requests.get(f"https://openlibrary.org/books/{editionid}.json")
     data = resp.json()
   except json.decoder.JSONDecodeError:
     print(f"!! WARNING: Failed to get Work ID for {editionid} with message: \"{resp.text}\"!!!")
+    if "Service Unavailable" in resp.text and retrycount > 0:
+      wait_secs(60)
+      return openlibrary_edition_to_work_id(editionid, retrycount-1)
     return None
   try:
     return data['works'][0]['key'].replace("/works/", "")
@@ -240,10 +248,6 @@ def archivejob_status(job_id):
 
 def archive_urls(urls, skip_urls_archived_in_last_days=365):
   successes = []
-  def wait_secs(n):
-    print(f"Waiting {n} seconds...")
-    for i in trange(n):
-      time.sleep(1)
   if skip_urls_archived_in_last_days:
     now = datetime.now()
     skipinterval = timedelta(days=skip_urls_archived_in_last_days)

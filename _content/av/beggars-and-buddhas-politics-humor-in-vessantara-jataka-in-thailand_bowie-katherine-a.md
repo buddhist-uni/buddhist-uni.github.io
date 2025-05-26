@@ -10,7 +10,7 @@ tags:
   - thai
   - literature
   - humor
-  - thai-ideology
+  - thai-culture
 year: 2018
 month: jul
 publisher: nbn

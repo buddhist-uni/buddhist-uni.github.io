@@ -10,7 +10,7 @@ drive_links:
 course: isan
 tags:
   - thai
-  - thai-ideology
+  - thai-culture
   - religion
 year: 2012
 month: sep

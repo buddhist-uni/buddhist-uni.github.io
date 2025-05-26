@@ -7,7 +7,7 @@ year: 2021
 month: apr
 course: thailand
 tags:
-  - thai-ideology
+  - thai-culture
   - modern-poetry
   - poetic-criticism
   - time

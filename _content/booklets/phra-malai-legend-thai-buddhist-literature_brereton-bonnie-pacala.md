@@ -11,7 +11,7 @@ file_links:
 course: thai-roots
 tags:
   - theravada-roots
-  - thai-ideology
+  - thai-culture
   - myth
   - literature
 year: 1992

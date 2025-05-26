@@ -23,4 +23,6 @@ pages: "19--33"
 'pi' which exist on their own account, and do not originate from human beings;
 and thirdly 'pi' belonging to other worlds...
 
-Some field notes on Thai ghost beliefs in the early twentieth century.
+Some field notes on Thai ghost beliefs and related rituals at the turn of the twentieth century.
+
+For ผี beliefs in Thailand half a century later, see [Rajathon, 1954](/content/articles/phi_rajathon-phya).
