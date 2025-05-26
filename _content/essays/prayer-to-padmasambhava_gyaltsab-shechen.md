@@ -8,8 +8,6 @@ external_url: "https://www.lotsawahouse.org/tibetan-masters/shechen-gyaltsab/fou
 drive_links:
   - "https://drive.google.com/file/d/15gwrBw5ixYmryJImNs06Dtoi_a6tEAS8/view?usp=sharing"
 course: tibetan
-tags:
-  - tantric
 year: 2021
 publisher: lotsawa-house 
 pages: 1 
