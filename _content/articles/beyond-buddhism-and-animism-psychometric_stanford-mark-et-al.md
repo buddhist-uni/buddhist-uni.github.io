@@ -13,6 +13,7 @@ course: burmese
 tags:
   - form
   - iddhi
+  - animism
 year: 2019
 month: dec
 journal: "PloS ONE"
