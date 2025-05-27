@@ -2,7 +2,7 @@
 title: "Just Think: The challenges of the disengaged mind"
 authors:
   - "Timothy D. Wilson and others"
-external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/"
+external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4330241/pdf/nihms659489.pdf"
 source_url: "https://www.science.org/doi/10.1126/science.1250830"
 drive_links:
   - "https://drive.google.com/file/d/1jlwt-f8LLxwkeCVKnVfMRJM5OwlonUf5/view?usp=drivesdk"

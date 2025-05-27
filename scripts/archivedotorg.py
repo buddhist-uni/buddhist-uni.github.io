@@ -9,13 +9,16 @@ import re
 import time
 from datetime import datetime, timedelta
 import os
-from strutils import sanitize_string
+from typing import TypedDict
+from strutils import sanitize_string, git_root_folder
 try:
   from tqdm import tqdm, trange
 except:
   print("  pip install tqdm")
   exit(1)
 ARCHIVE_ORG_AUTH_FILE = '~/archive.org.auth'
+
+CANONICAL_URLS_PATH = git_root_folder.joinpath("_data", "canonical_urls.json")
 
 ARCHIVE_ORG_AUTH_PATH = Path(os.path.expanduser(ARCHIVE_ORG_AUTH_FILE))
 if ARCHIVE_ORG_AUTH_PATH.exists():
@@ -246,12 +249,25 @@ def archivejob_status(job_id):
     print(f"WARNING: Check failed\n\t{resp.headers}\n\tCONTENT:\n\t{resp.text}")
     return False
 
-def archive_urls(urls, skip_urls_archived_in_last_days=365):
-  successes = []
+class ArchivedURL(TypedDict):
+  original_url: str
+  archival_url: str
+  job_id: str
+  status: int
+
+def archive_urls(urls, skip_urls_archived_in_last_days=365) -> list[ArchivedURL]:
+  canonical_urls = json.loads(CANONICAL_URLS_PATH.read_text())
+  pending_jobs = []
+  def wait_secs(n):
+    print(f"Waiting {n} seconds...")
+    for i in trange(n):
+      time.sleep(1)
   if skip_urls_archived_in_last_days:
     now = datetime.now()
     skipinterval = timedelta(days=skip_urls_archived_in_last_days)
     def should_arch(url):
+      if url in canonical_urls:
+        url = canonical_urls[url]
       archtime = last_archived_datetime(url)
       if not archtime:
         return True
@@ -264,22 +280,50 @@ def archive_urls(urls, skip_urls_archived_in_last_days=365):
     if "archive.org/" in url or not should_arch(url):
       print(f"Skipping {url}...")
       continue
-    if not save_url_to_archiveorg(url):
-      consecutive_failures += 1
-      wait_secs(60)
-      if save_url_to_archiveorg(url):
-        successes.append(url)
-        consecutive_failures = 0
-      else:
-        consecutive_failures += 1
-    else:
-      successes.append(url)
-      consecutive_failures = 0
-    if consecutive_failures > 5:
-      print("ERROR: This doesn't seem to be working...")
-      quit(1)
+    job_id = None
+    retries = 3
+    while not job_id and retries > 0:
+      job_id = save_url_to_archiveorg(url)
+      if not job_id:
+        wait_secs(60)
+        retries -= 1
+    if not job_id:
+      print("ERROR: Too many consecutive failures. Skipping the rest...")
+      break
+    pending_jobs.append({
+      "original_url": url,
+      "job_id": job_id,
+    })
     wait_secs(5)
-  print(f"Saved {len(successes)} URLs:")
-  for url in successes:
-    print(f"  {url}")
+  print(f"Submitted {len(pending_jobs)} URLs!")
+  print("Confirming their status...")
+  successes = []
+  loopcount = 0
+  while len(pending_jobs) > 0 and loopcount < 60:
+    time.sleep(5)
+    next_pending = []
+    for job in pending_jobs:
+      status = archivejob_status(job["job_id"])
+      if status and status["status"] == "success":
+        job["status"] = int(status["http_status"])
+        job["archival_url"] = status["original_url"]
+        if job['status'] == 200 and job['original_url'] != job['archival_url']:
+          canonical_urls[job["original_url"]] = status["original_url"]
+          print(f"  OK: {job['original_url']} -> {job['archival_url']}")
+        elif job['status'] == 200:
+          print(f"  OK: {job['original_url']}")
+        else:
+          print(f"  WARNING: Got a {job['status']} for {job['original_url']}")
+        successes.append(job)
+      elif (not status) or status["status"] == "pending":
+        next_pending.append(job)
+      else:
+        print(f"\n  ERROR: {job['original_url']}")
+        print(f"    {status}\n")
+    pending_jobs = next_pending
+    loopcount += 1
+  if loopcount >= 60:
+    print(f"WARNING: Never got back info about {len(pending_jobs)} submitted jobs:")
+    print(pending_jobs)
+  CANONICAL_URLS_PATH.write_text(json.dumps(canonical_urls, sort_keys=True, indent=1))
   return successes
