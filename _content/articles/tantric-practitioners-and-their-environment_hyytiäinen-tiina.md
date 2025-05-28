@@ -8,7 +8,7 @@ drive_links:
 course: tibetan
 tags:
   - problems
-  - cultural
+  - culture
 year: 2011
 journal: store
 volume: 109
