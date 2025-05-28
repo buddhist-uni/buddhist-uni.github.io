@@ -24,12 +24,12 @@ next_courses:
 next_course_descs:
   - "Beyond merely using them as a check on the Pāli, we can study the Chinese Middle Length Discourses on their own merits."
   - "Get to know the extraordinary characters we meet in the MN: learn their backgrounds and what happened to them after they met the Buddha."
-  - "Continue to study the MN with Bhikkhu Bodhi in this course focused on the Theravada interpretation of the Early Buddhist Texts."
+  - "Continue to study the MN with Bhikkhu Bodhi in this course focused on the Theravāda interpretation of the Early Buddhist Texts."
 ---
 
 ## What is the Majjhima Nikāya?
 
-The Majjhima Nikāya (or Middle Length Discourses) are a canonical collection of stories about early Buddhism preserved in the Pāli Canon of the Theravada tradition. These stories are neither as condensed as the poetry collections or Connected Discourses (which were stripped of much of their narrative context by the redactors) nor are they as elaborate as the (more mythological) Lengthy Discourses.
+The Majjhima Nikāya (or Middle Length Discourses) are a canonical collection of stories about early Buddhism preserved in the Pāli Canon of the Theravāda tradition. These stories are neither as condensed as the poetry collections or Connected Discourses (which were stripped of much of their narrative context by the redactors) nor are they as elaborate as the (more mythological) Lengthy Discourses.
 
 Traditionally, the Majjhima Nikāya (or MN for short) would have been a primary subject of study for new monks. The first ten discourses in particular would have been memorized (!) and analyzed in depth to form the foundation for the novice’s continued study and practice. As such, the MN strikes a nice balance between assuming intelligence and spiritual earnestness on the part of the reader (unlike, for example, the more family-friendly Jataka tales) without assuming too much in the way of prior doctrinal knowledge (unlike, for example, the more pithy Connected Discourses).
 

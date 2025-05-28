@@ -16,4 +16,4 @@ month: jun
 minutes: 103
 ---
 
-Ajahn Brahmali walks us through this sutta on Right Concentration and explains how it changed slightly in the Theravada recension.
+Ajahn Brahmali walks us through this sutta on Right Concentration and explains how it changed slightly in the Theravāda recension.

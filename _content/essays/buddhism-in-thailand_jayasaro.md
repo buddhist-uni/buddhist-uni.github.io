@@ -15,4 +15,4 @@ pages: 12
 
 > in a living tradition of Buddhism such as in Thailand, the members of that tradition themselves are often not quite aware of how the whole system is meant to work.
 
-In this short talk, Ajahn Jayasaro discusses the history of Theravada Buddhism especially in Thailand, giving a brief overview of Thai Buddhism's own understanding of Buddhist history and its place within it.
+In this short talk, Ajahn Jayasaro discusses the history of Theravāda Buddhism especially in Thailand, giving a brief overview of Thai Buddhism's own understanding of Buddhist history and its place within it.

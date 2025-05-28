@@ -14,7 +14,7 @@ This lesson, let's read Chapters 4–9 on the Buddha's family." %}
 A philosophical essay by a popular "foreign" monk in Thailand analyzing love from the Buddhist perspective.
 ' %}
 {% include content_blurb.html category="canon" slug="snp1.8" blurb='
-This lesson, we introduce our first "sutta" (or, "Discourse") from the Pāḷi Canon — the "Bible" for Theravada Buddhists. There are thousands of such "Discourses" in the Canon, and each represents one occasion in the Buddhaʼs long, teaching career. 
+This lesson, we introduce our first "sutta" (or, "Discourse") from the Pāḷi Canon — the "Bible" for Theravāda Buddhists. There are thousands of such "Discourses" in the Canon, and each represents one occasion in the Buddhaʼs long, teaching career. 
 
 This particularly poetic discourse is roughly the Buddhist equivalent of the passage on love in the Christian Bible: [1 Corinthians 13](https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=NIV){:target="_blank"}. 
 

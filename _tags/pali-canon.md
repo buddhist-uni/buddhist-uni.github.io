@@ -3,7 +3,7 @@ title: "The Pāli Canon"
 parents: [ebts]
 status: published
 level: 3
-description: A bibliography of free works about the canon of the Theravada School of Buddhism.
+description: A bibliography of free works about the canon of the Theravāda School of Buddhism.
 illustration: https://illeakyw.sirv.com/Images/tags/sea-manuscript-closeup.jpg
 illustration_width: 1280
 illustration_height: 1008
@@ -24,4 +24,4 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:(Left)_The_predict
 hashtag: BuddhaQuotes
 ---
 
-The Tipiṭaka is the canon of the Theravada School and is the only complete collection of texts from an early sect of Buddhism to survive to the present day.
+The Tipiṭaka is the canon of the Theravāda School and is the only complete collection of texts from an early sect of Buddhism to survive to the present day.

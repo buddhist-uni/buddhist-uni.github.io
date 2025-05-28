@@ -20,7 +20,7 @@ pages: 221
 
 > The number of works preserved from this era attests not only
 to the relative magnitude of literary production but also to the fact that these
-works have long been preserved as key authorities for the Theravada Buddhist
+works have long been preserved as key authorities for the Theravāda Buddhist
 tradition throughout Southern Asia.
 
 The productivity and orthodoxy of pre-modern Sri Lanka was not due to political stability but rather to the political chaos brought about by invasions and civil wars. Gornall shows that monastic reforms led to new forms of Pali literature, which, in turn, preserved the Buddhist tradition and expanded it.

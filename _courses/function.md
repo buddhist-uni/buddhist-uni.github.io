@@ -34,7 +34,7 @@ next_course_descs:
   - "Read more about the gradual path in the Buddha's own words in this course taught by the one and only Bhikkhu Bodhi."
   - "A closer look at the practicalities of living as a Buddhist householder."
   - "In this course, we explore the many kinds and facets of meditation and learn what makes mindfulness \"right.\""
-  - "This course continues our study of the fundamentals of Buddhist thought with an overview of \"Right View\" from the Theravada perspective."
+  - "This course continues our study of the fundamentals of Buddhist thought with an overview of \"Right View\" from the Theravāda perspective."
   - "A thorough and inspiring introduction to Buddhist morality: both practical and idealistic."
   - "Notoriously difficult to explain, *nibbāna* is still a critical concept for directing our practice.  In this class, we explore what _can_ be said about the unconditioned element."
 toc:

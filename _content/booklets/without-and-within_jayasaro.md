@@ -24,4 +24,4 @@ pages: 100
 
 > This book is intended to provide an introduction to the teachings of the Buddha which will shed some light on a subject that, to non-Buddhists, can appear both unexpectedly rational and exotically strange.
 
-A consise and admirable introduction to Theravada Buddhism by one of Thailand's most charismatic converts.
+A consise and admirable introduction to Theravāda Buddhism by one of Thailand's most charismatic converts.

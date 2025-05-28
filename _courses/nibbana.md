@@ -222,9 +222,9 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="articles" slug="nibbana-abhidhamma_cousins" %}
   - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _nibbāna_ develop into the “unconditioned element”?
 
-<i class="fas fa-book"></i> _Metaphor and Literalism:_ Chapter 4 - _Nibbāna_ in the Theravada Buddhist Tradition
+<i class="fas fa-book"></i> _Metaphor and Literalism:_ Chapter 4 - _Nibbāna_ in the Theravāda Buddhist Tradition
 {: .mb-0}
-  - We return to ML and the analogy of fire in order to better understand the Theravada developments to the doctrines of _nibbāna_ and _anatta_.
+  - We return to ML and the analogy of fire in order to better understand the Theravāda developments to the doctrines of _nibbāna_ and _anatta_.
 
 #### The Unapprehendability of the Enlightened
 

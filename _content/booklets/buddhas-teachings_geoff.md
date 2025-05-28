@@ -15,4 +15,4 @@ olid: OL37768874M
 pages: 28
 ---
 
-An excellent booklet for quickly introducing Theravada Buddhist philosophy.
+An excellent booklet for quickly introducing Theravāda Buddhist philosophy.

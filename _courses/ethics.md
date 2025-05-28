@@ -32,7 +32,7 @@ next_course_descs:
   - "A modern activist movement tries to bring Buddhist Ethics to the people with mixed results. We take a sympathetic and critical look at what we can learn from their successes and failures."
   - "This course focused primarily on social ethics, but there is growing recognition of the importance of environmental ethics. In this course we explore what Buddhism might contribute to our understanding of the natural world."
   - "What might it mean to organize society and economics according to Buddhist Principles? What economic order is most compatible with Buddhist Ethics?"
-  - "An overview of Theravada Philosophy structured around the three jewels and four noble truths."
+  - "An overview of Theravāda Philosophy structured around the three jewels and four noble truths."
   - "The cosmology implied by *The Way of the Bodhisattva* is meant to underwrite our ethical practice, but comes with many of its own complications."
   - "The philosophical cornerstone of Buddhist Ethics."
   - "Are we even free to make choices in the first place? In this course we tackle the philosophical tensions between kamma and anatta."
@@ -205,10 +205,10 @@ Accepting our faults is a critical starting point for ethical development, and a
 - From the perspective of the Buddhist path, what is so blameworthy about "stopping to smell the roses?"
 
 {% include content_blurb.html category="canon" slug="mn41" %}
-- People often acuse Theravada Buddhism of focusing only on strict, negative ethics, but I find it helpful to know what not to do.
+- People often acuse Theravāda Buddhism of focusing only on strict, negative ethics, but I find it helpful to know what not to do.
 
 {% include content_blurb.html category="essays" slug="ten-wholesome-actions_suchart" %}
-- But this reputation isn't wholely deserved, as Ajahn Suchart points out here that there are a number of good things Theravada Buddhism encourages.
+- But this reputation isn't wholely deserved, as Ajahn Suchart points out here that there are a number of good things Theravāda Buddhism encourages.
 {% include content_blurb.html category="canon" slug="an10.69" %}
 - While these guidelines were delivered to the monastic community, they serve even laypeople with a high bar to strive for in terms of "right speech."
 - **Homework** How might you turn a "low" conversation into a "high" conversation?
@@ -286,10 +286,10 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 - An introduction to Mahayana Ethics from within the tradition, and an excellent set of caveats to keep in mind as we ethically navigate our own lives.
 
 {% include content_blurb.html category="articles" slug="compassionate-killing_gethin" %}
-- A Theravada response to the Mahayana assertion of the existence of compassionate killing.
+- A Theravāda response to the Mahayana assertion of the existence of compassionate killing.
 
 {% include content_blurb.html category="articles" slug="trolly-car-dilemma_pandita" %}
-- Ven Pandita tackles the famous “Trolly Problem” from the perspective of Theravada Ethics, and illuminates a way in which Theravada and Mahayana ethics might agree more than you think.
+- Ven Pandita tackles the famous “Trolly Problem” from the perspective of Theravāda Ethics, and illuminates a way in which Theravāda and Mahayana ethics might agree more than you think.
 
 #### Chapter 4: Natural World
 
@@ -322,7 +322,7 @@ In Part 3 we return to Peter Harvey's *Introduction* and, chapter by chapter, en
 #### Chapter 6: War and Peace
 
 {% include content_blurb.html category="essays" slug="war-and-peace_bodhi-geoff" %}
-- An argument between two highly respected Theravada monks on the subject of whether war can ever be justified, Bhikkhu Bodhi wonders out loud, “War: what _is_ it good for?” and Thanissaro Bhikkhu responds with, “Absolutely nothing!”
+- An argument between two highly respected Theravāda monks on the subject of whether war can ever be justified, Bhikkhu Bodhi wonders out loud, “War: what _is_ it good for?” and Thanissaro Bhikkhu responds with, “Absolutely nothing!”
 
 {% include content_blurb.html category="canon" slug="an10.30" %}
 - What do you make of the King's behavior here? Is he a sincere Buddhist? And what do you think of the Buddha's reaction?
@@ -341,7 +341,7 @@ Note: Sadly, Harvey's *Introduction* doesn't include a chapter explicitly on rac
 - An early Buddhist perspective on suicide.
 
 {% include content_blurb.html category="av" slug="euthanasia_yuttadhammo" %}
-- A Theravada answer to the question of euthanasia.
+- A Theravāda answer to the question of euthanasia.
 
 Do you agree with their answers?  What do you think makes the subject so uncomfortable?
 
@@ -350,7 +350,7 @@ Do you agree with their answers?  What do you think makes the subject so uncomfo
 Speaking of uncomfortable!
 
 {% include content_blurb.html category="essays" slug="when-does-human-life-begin_brahm" %}
-- A Theravada monk gives an important clarification on the early Buddhist perspective on abortion and IVF, which later (conservative) texts have muddled in their quest for clear, crisp lines.
+- A Theravāda monk gives an important clarification on the early Buddhist perspective on abortion and IVF, which later (conservative) texts have muddled in their quest for clear, crisp lines.
 
 #### Chapter 9: Sexual Equality
 

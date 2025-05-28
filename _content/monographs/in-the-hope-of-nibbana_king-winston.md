@@ -1,5 +1,5 @@
 ---
-title: "In the Hope of Nibbana: The Ethics of Theravada Buddhism"
+title: "In the Hope of Nibbana: The Ethics of Theravāda Buddhism"
 authors: [king-winston]
 year: 1964
 publisher: pariyatti

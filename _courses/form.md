@@ -158,7 +158,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - Nagarjuna criticized the excessive developments of Buddhism in the centuries after the Buddha and reestablished emptiness as the central tenant of Buddhism, laying the philosophical groundwork for the Mahayana.
 
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
-- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
+- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravāda and Mahayana.
 
 [CBT] Th.210
 {:.mb-0}
@@ -244,15 +244,15 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 
 {% include content_blurb.html category="articles" slug="relationship-btw-buddhist-monks-and-lay-in-cambodia_kiyoyuki-koike" %}
-- A brief overview of the Theravada "Wat" (monastery) and its relationship with the lay community.
+- A brief overview of the Theravāda "Wat" (monastery) and its relationship with the lay community.
 
 [CBT] Th.31
 {:.mb-0}
-- The ideal of the "Righteous Monarch" was hugely influential in the Theravada world and continues to justify monarchy in Thailand today.
+- The ideal of the "Righteous Monarch" was hugely influential in the Theravāda world and continues to justify monarchy in Thailand today.
 
 [CBT] Th.215
 {:.mb-0}
-- The Theravada monks hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
+- The Theravāda monks hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
 
 [CBT] Th.90–91, Th.146, Th.159
 {:.mb-0}
@@ -260,19 +260,19 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 [CBT] Th.135, Th.152, Th.145
 {:.mb-0}
-- The Theravada is also famous for its "morbid" meditations on pain and death.
+- The Theravāda is also famous for its "morbid" meditations on pain and death.
 
 [CBT] Th.52, Th.108
 {:.mb-0}
-- But Theravada isn't all bleak, as they also celebrate the beauty of the Dhamma and of good companionship.
+- But Theravāda isn't all bleak, as they also celebrate the beauty of the Dhamma and of good companionship.
 
 [CBT] Th.194
 {:.mb-0}
-- Very conservative in their practice of the monastic rules, Theravada monks still go on alms round and abstain from eating dinner to this day.
+- Very conservative in their practice of the monastic rules, Theravāda monks still go on alms round and abstain from eating dinner to this day.
 
 [CBT] Th.117, Th.172, Th.181, Th.196, Th.226
 {:.mb-0}
-- Lastly, we read some Theravada responses to a few Mahayana ideas.
+- Lastly, we read some Theravāda responses to a few Mahayana ideas.
 
 {% include content_blurb.html category="av" slug="bojjhanga-suttas_dhammaruwan" %}
 - An extraordinary recording of a boy in Sri Lanka spontaneously remembering how he chanted Pāli in a past life.
@@ -296,7 +296,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 [CBT] Th.50, M.34
 {:.mb-0}
-- Here, for example, we compare the earlier (Theravada) perspective on honoring one's parents with the Chinese perspective.
+- Here, for example, we compare the earlier (Theravāda) perspective on honoring one's parents with the Chinese perspective.
 
 [CBT] M85–86
 {:.mb-0}
@@ -673,7 +673,7 @@ with a reading or two from the *Common Buddhist Text*.
 
 {% include content_blurb.html category="articles" slug="what-do-meditators-do-when-they-meditate_matko-karin-et-al" blurb="
 - A Western researcher groups all meditation practices (Buddhist and not) into 52 types.
-- Especially interesting are the clusters: there are Hindu/Vajrayana techniques, Theravada/Zen techniques, and some practices which are common to both.
+- Especially interesting are the clusters: there are Hindu/Vajrayana techniques, Theravāda/Zen techniques, and some practices which are common to both.
 " %}
 
 [CBT] M.109

@@ -9,7 +9,7 @@ illustration_center_x: 55%
 illustration_center_y: 50%
 illustration_caption: >-
   In this Thai mural, the Buddha is depicted as preaching the Abhidhamma to his mother in heaven.
-  This fanciful origin story is used by the Theravada tradition to authorize the Abhidhamma as Buddhavacana despite its late provenance.
+  This fanciful origin story is used by the Theravāda tradition to authorize the Abhidhamma as Buddhavacana despite its late provenance.
   (©️ <a href="https://commons.wikimedia.org/wiki/File:052_The_Buddha_preaches_Abhidhamma_to_his_Mother_in_Heaven_(9270716605).jpg">Photo Dharma Thailand</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Mandalay_kuthodaw.jpg
 image_width: 1280

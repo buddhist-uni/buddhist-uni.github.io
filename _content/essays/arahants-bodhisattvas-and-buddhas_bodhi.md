@@ -20,4 +20,4 @@ pages: 20
 
 > I would say that the Nikāyas and Āgamas give us a "historical-realistic perspective" on the Buddha, while the Mahāyāna sūtras give us a "cosmic-metaphysical perspective."
 
-Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the both the Theravada and Mahayana, with a brief summary of its history. An excellent introduction to this vital topic.
+Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the both the Theravāda and Mahayana, with a brief summary of its history. An excellent introduction to this vital topic.

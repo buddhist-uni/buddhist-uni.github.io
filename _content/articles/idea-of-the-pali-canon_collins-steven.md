@@ -18,6 +18,6 @@ tags:
   - historiography
 ---
 
-We must reject the facile equation `Pali Canon = Theravada = Early Buddhism`
+We must reject the facile equation `Pali Canon = Theravāda = Early Buddhism`
 
 For a critical response to some of Collins' assertions, see [this essay by Bhante Sujato](https://discourse.suttacentral.net/t/on-the-very-idea-of-an-article-about-the-pali-canon/26578?u=khemarato.bhikkhu){:target="_blank" ga-event-value="0.6"}.

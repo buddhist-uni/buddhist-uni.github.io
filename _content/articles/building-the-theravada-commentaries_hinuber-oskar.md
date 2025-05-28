@@ -14,5 +14,5 @@ volume: 36
 pages: "353--388"
 ---
 
-The traditional, Pāli commentaries on the Canon composed in Sri Lanka have had an enormous impact on Theravada doctrine and practice. This article introduces the history of their authorship.
+The traditional, Pāli commentaries on the Canon composed in Sri Lanka have had an enormous impact on Theravāda doctrine and practice. This article introduces the history of their authorship.
 

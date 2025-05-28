@@ -9,4 +9,4 @@ tags:
 year: 1995
 ---
 
-An important online source for free sutta translations and vetted content on Theravada (mostly Thai) Buddhism in English.
+An important online source for free sutta translations and vetted content on Theravāda (mostly Thai) Buddhism in English.

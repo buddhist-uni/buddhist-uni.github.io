@@ -26,5 +26,5 @@ big_height: 2134
 footer_info: <a href="https://wellcomecollection.org/works/ruaq3gnw">Wellcome</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 
-The liturgical language of Theravada Buddhism and the only Indic language to preserve a complete Tipiṭaka.
+The liturgical language of Theravāda Buddhism and the only Indic language to preserve a complete Tipiṭaka.
 

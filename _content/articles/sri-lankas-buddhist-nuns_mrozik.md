@@ -19,7 +19,7 @@ pages: 8
 bhikkhuni controversy in
 Sri Lanka is that both sides
 seem to believe that the
-very integrity of Theravada
+very integrity of Theravāda
 Buddhism is at stake in the
 bhikkhuni revival.
 

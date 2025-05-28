@@ -24,4 +24,4 @@ tags:
 
 > … so many warriors perished on the battlefield. The response of the arahants is truly astounding.
 
-How "motivated reasoning" led ancient Sri Lankan monks to create a problematic theology to justify murder which is still haunting the Theravada today.
+How "motivated reasoning" led ancient Sri Lankan monks to create a problematic theology to justify murder which is still haunting the Theravāda today.

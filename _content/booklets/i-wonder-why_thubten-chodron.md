@@ -19,4 +19,4 @@ course_time_multiplier: 0.3
 
 A straightforward, Q&A-style introduction to Buddhism.
 
-The Q&A format of this booklet is quite easy to skim, making it an excellent primer for those who have a bit of background knowledge already. Written from the Western, Tibetan perspective, it also has an admirably wide scope, covering questions about Tibetan and Mahayana Buddhism without disparaging the Theravada perspective.
+The Q&A format of this booklet is quite easy to skim, making it an excellent primer for those who have a bit of background knowledge already. Written from the Western, Tibetan perspective, it also has an admirably wide scope, covering questions about Tibetan and Mahayana Buddhism without disparaging the Theravāda perspective.

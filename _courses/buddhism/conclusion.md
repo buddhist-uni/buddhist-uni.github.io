@@ -22,7 +22,7 @@ This excellent article confronts directly the dogmatic belief in materialism tha
 And in this essay, Peter Harvey responds to a few, common misgivings from Westerners new to Buddhism.
 ' %}
 {% include content_blurb.html category="canon" slug="bodhisattvamanyavali_atisha" blurb="
-While this course has been almost-entirely from the Theravada perspective,
+While this course has been almost-entirely from the Theravāda perspective,
 I would like to give the final word to Atiśa Dīpaṃkara.
 " %}
 

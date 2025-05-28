@@ -15,4 +15,4 @@ pages: 8
 
 > The present nuns in Burma had a great period of revival and prosperity during the sasana reforms sponsored by King Mindon, who built the royal city of Mandalay and held the Fifth Buddhist Council...
 
-The historical and social context for the Theravada nuns of Burma.
+The historical and social context for the Theravāda nuns of Burma.

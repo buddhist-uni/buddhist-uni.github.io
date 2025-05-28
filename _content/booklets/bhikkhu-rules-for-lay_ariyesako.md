@@ -13,4 +13,4 @@ pages: 123
 olid: OL50211745M
 ---
 
-A clear and thorough introduction to the monastic rules, especially as practiced in the contemporary Theravada Tradition.
+A clear and thorough introduction to the monastic rules, especially as practiced in the contemporary Theravāda Tradition.

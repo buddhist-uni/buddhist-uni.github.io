@@ -14,4 +14,4 @@ tags:
 pages: 20
 ---
 
-> One of the most obvious fallacies of modern Theravada Buddhism is the depiction of the Buddha with a full head of hair.
+> One of the most obvious fallacies of modern Theravāda Buddhism is the depiction of the Buddha with a full head of hair.

@@ -15,4 +15,4 @@ course: form
 pages: 19
 ---
 
-A brief, visual history of the Theravada stupa.
+A brief, visual history of the Theravāda stupa.

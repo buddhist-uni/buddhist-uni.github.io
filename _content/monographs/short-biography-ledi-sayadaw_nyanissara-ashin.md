@@ -18,4 +18,4 @@ pages: 12
 
 > Ledi Sayadaw was simultaneously a great teacher to his monks and lay disciples, a great Dhamma preacher to large segments of the Burmese population, a founder and organizer of many Buddhist lay organizations, a famous teacher and popularizer of meditation practice, especially Ānāpāna and Vipassanā, and a classical scholar-monk and author of classical work.
 
-Born in 1846, known for his deep meditation practice and devotion to the Abhidhamma, Ledi Sayadaw played a pivotal role in the revival of Theravada Buddhism in Burma and beyond.
+Born in 1846, known for his deep meditation practice and devotion to the Abhidhamma, Ledi Sayadaw played a pivotal role in the revival of Theravāda Buddhism in Burma and beyond.
