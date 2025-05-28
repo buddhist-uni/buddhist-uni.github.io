@@ -6,7 +6,7 @@ authors:
 drive_links:
   - "https://drive.google.com/file/d/1fwslgnkBgJVJS6dh6ZWMhV5NaNSaWOTP/view?usp=drivesdk"
 file_links:
-  - "exclusive_01/Sri%20Lanka%20and%20the%20Theravada%20Buddhist%20ecumene%20c.%20500%E2%80%931500.pdf"
+  - "exclusive_01/Sri%20Lanka%20and%20the%20Theravāda%20Buddhist%20ecumene%20c.%20500%E2%80%931500.pdf"
 course: roots
 tags:
   - theravada

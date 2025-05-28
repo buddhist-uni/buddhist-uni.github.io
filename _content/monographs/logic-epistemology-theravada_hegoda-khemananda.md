@@ -1,8 +1,8 @@
 ---
-title: "Logic and Epistemology in Theravada"
+title: "Logic and Epistemology in Theravāda"
 authors:
   - "Hegoda Khemananda"
-external_url: "https://archive.org/download/logic-and-epistemology-in-theravada/Logic%20and%20Epistemology%20in%20Theravada_text.pdf"
+external_url: "https://archive.org/download/logic-and-epistemology-in-theravada/Logic%20and%20Epistemology%20in%20Theravāda_text.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1ZBfzFT0icaga1EVciH7RKX8xf_QP3B6b/view?usp=drivesdk"
 source_url: "https://web.archive.org/web/20210212184056/http://www.kbrl.gov.mm/book/details/002683?categoryId=58"

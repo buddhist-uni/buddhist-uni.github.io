@@ -13,4 +13,4 @@ pages: 3
 year: 2020 # possibly earlier
 ---
 
-Reference charts that map out the realms of rebirth as understood by the Theravada Tradition.
+Reference charts that map out the realms of rebirth as understood by the Theravāda Tradition.

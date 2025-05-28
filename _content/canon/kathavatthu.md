@@ -14,4 +14,4 @@ publisher: pts
 pages: 468
 ---
 
-A book in the Abhidhamma Canon  explicitly dealing with the doctrinal controversies that arose between the Indian schools of Buddhism and the   Theravada.
+A book in the Abhidhamma Canon  explicitly dealing with the doctrinal controversies that arose between the Indian schools of Buddhism and the   Theravāda.

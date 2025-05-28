@@ -1,5 +1,5 @@
 ---
-title: "The Legend of the Establishment of the Buddhist Order of Nuns in the Theravada Vinaya-Pitaka"
+title: "The Legend of the Establishment of the Buddhist Order of Nuns in the Theravāda Vinaya-Pitaka"
 authors: ["Ute Hüsken"]
 external_url: "https://archive.org/download/jpts-xxvi-2000/The%20Legend%20of%20the%20Establishment%20of%20the%20Buddhist%20Order%20of%20Nuns%20-%20Ute%20Hu%CC%88skin_text.pdf"
 formats: [pdf]

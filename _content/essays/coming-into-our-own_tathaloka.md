@@ -1,5 +1,5 @@
 ---
-title: "Coming Into Our Own: Discipline, Agency and Inquiry Amidst the Renascent Theravada Bhikkhuni Sangha/s"
+title: "Coming Into Our Own: Discipline, Agency and Inquiry Amidst the Renascent Theravāda Bhikkhuni Sangha/s"
 authors:
   - tathaloka
 editor: "Sāmaṇerī Niyyānikā and Patricia M. Buske Zainal"

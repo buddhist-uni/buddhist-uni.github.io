@@ -17,5 +17,5 @@ openalexid: W1196284285
 ---
 
 > This article will use the case study of  nuns' training programs to examine the revival of the  sangha in Sri Lanka and the role of  exchange among devotees of different  traditions in Asia.
-> By cross-tradition I am referring to different  traditions such as, in this case, the Theravada tradition in Sri Lanka and the Mahayana Chinese tradition in Taiwan.
+> By cross-tradition I am referring to different  traditions such as, in this case, the Theravāda tradition in Sri Lanka and the Mahayana Chinese tradition in Taiwan.
 

@@ -14,5 +14,5 @@ tags:
 pages: 1
 ---
 
-> Since the footprints of the Buddha are understood to represent the physical presence of the historical Buddha, they are especially venerated in such Theravada Buddhist countries as Sri Lanka and Thailand, although they also exist in other Buddhist countries. 
+> Since the footprints of the Buddha are understood to represent the physical presence of the historical Buddha, they are especially venerated in such Theravāda Buddhist countries as Sri Lanka and Thailand, although they also exist in other Buddhist countries. 
 

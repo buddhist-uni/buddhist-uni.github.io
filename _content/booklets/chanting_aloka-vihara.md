@@ -14,5 +14,5 @@ pages: 85
 
 The devotional used for daily chanting at Āloka and Karuṇā Vihāras in California, derived from the Thai style and adapted for use by the American Bhikkhunis.
 
-With the exception of the Heart Sutra (and certain Pāli phrases in their feminine variants) this book represents a fairly typical Theravada chanting manual.
+With the exception of the Heart Sutra (and certain Pāli phrases in their feminine variants) this book represents a fairly typical Theravāda chanting manual.
 

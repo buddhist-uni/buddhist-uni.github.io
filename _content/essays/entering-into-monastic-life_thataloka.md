@@ -16,4 +16,4 @@ status: featured
 pages: 4
 ---
 
-A short essay on what the path is to become a Theravada Monastic.
+A short essay on what the path is to become a Theravāda Monastic.

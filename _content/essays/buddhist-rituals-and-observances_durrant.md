@@ -12,6 +12,6 @@ tags:
 pages: 25
 ---
 
-A brief overview of the rituals and holidays observed by modern (especially Thai) Theravada Buddhists.
+A brief overview of the rituals and holidays observed by modern (especially Thai) Theravāda Buddhists.
 
 

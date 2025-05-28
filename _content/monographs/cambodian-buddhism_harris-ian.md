@@ -13,6 +13,6 @@ publisher: hawaii
 pages: 300
 ---
 
-> Theravada Buddhism, once it had anchored itself in Cambodian soil, possessed a remarkable facility for assimilation and accretion.
+> Theravāda Buddhism, once it had anchored itself in Cambodian soil, possessed a remarkable facility for assimilation and accretion.
 
 An introductory overview of the history of Buddhism in Cambodia, from the earliest archeological evidence in 5th c. Funan to its tentative reemergence in the 1980s and '90s.

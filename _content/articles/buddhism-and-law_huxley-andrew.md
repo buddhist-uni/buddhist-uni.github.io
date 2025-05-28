@@ -21,6 +21,6 @@ tags:
 pages: "47--95"
 ---
 
-> … the vinaya is nearly as central to the Buddhist religion as the shari'a is to Islam. If we were to rank religions in order of legalism, Theravada would come at the legalistic end of the scale, near to Islam and far from, for example, Taoism.
+> … the vinaya is nearly as central to the Buddhist religion as the shari'a is to Islam. If we were to rank religions in order of legalism, Theravāda would come at the legalistic end of the scale, near to Islam and far from, for example, Taoism.
 
-The fascinating history of Burmese law demonstrates and explains the relationship between textual conservativism and legal sovereignty in the Theravada world and the profound effect this had on Buddhist discourse in the region.
+The fascinating history of Burmese law demonstrates and explains the relationship between textual conservativism and legal sovereignty in the Theravāda world and the profound effect this had on Buddhist discourse in the region.

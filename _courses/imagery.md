@@ -31,11 +31,11 @@ next_courses:
   - indian
   - chan-lit
 next_course_descs:
-  - "An overview of Theravada Buddhist philosophy which provides a systematic frame for the themes we've covered in this course"
+  - "An overview of Theravāda Buddhist philosophy which provides a systematic frame for the themes we've covered in this course"
   - "In this course, we do a deep dive into the imagery surrounding and the meaning of just a single, crucially important term in the Early Buddhist Texts: <i>nibbāna</i>."
   - "A course on the Majjhima Nikāya taught by the one and only Bhikkhu Bodhi."
   - "We continue to explore the \"thought world\" of the EBTs, this time by exploring the _world_ of the EBTs: ancient India and its place in the cosmos."
-  - "Buddhist philosophy developed rapidly after the Buddha's passing. This course covers those developments common to both the (later) Theravada and Mahayana schools."
+  - "Buddhist philosophy developed rapidly after the Buddha's passing. This course covers those developments common to both the (later) Theravāda and Mahayana schools."
   - "Chan literature has its own distinct, and striking, imagery and rhetorical style."
 ---
 

@@ -16,7 +16,7 @@ volume: 23
 pages: "41--89"
 ---
 
-> If attention is given instead to Salomon’s ‘central-western epigraphic Prakrit’, it can be seen as a later reflex of Pali by a method of presentation unique to this paper. Accordingly, it should be merged with the existing category of 'Epigraphic Pali' and serious attention given to the Theravada tradition that the Buddha spoke Pali.
+> If attention is given instead to Salomon’s ‘central-western epigraphic Prakrit’, it can be seen as a later reflex of Pali by a method of presentation unique to this paper. Accordingly, it should be merged with the existing category of 'Epigraphic Pali' and serious attention given to the Theravāda tradition that the Buddha spoke Pali.
 
 A compelling argument that the post-Ashokan "Prakrit" inscriptions found across South Asia from the 2nd century BCE to the 3rd century CE were, in fact, composed in a later version of the same language that we see in the Pāli Canon (just a later form of it).
 This theory gives credence to the idea that the Pāli Canon is a trustworthy witness to the "common tongue" of ancient North India, perhaps even more reliable than the [idiosyncratic "Māghadī"](https://en.wikipedia.org/wiki/Ashokan_Prakrit?wprov=sfla1) of Ashoka himself (despite his edicts having been committed to writing at the earlier date).

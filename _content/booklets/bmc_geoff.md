@@ -16,6 +16,6 @@ base_value: 3.5
 pages: 990
 ---
 
-Unfortunately idiosyncratic and giving undue weight to certain Thai subcommentaries, this vinaya textbook remains the gold standard for Western, Theravada monks or anyone looking to seriously study the monastic rules.
+Unfortunately idiosyncratic and giving undue weight to certain Thai subcommentaries, this vinaya textbook remains the gold standard for Western, Theravāda monks or anyone looking to seriously study the monastic rules.
 
 An extremely long "booklet," the printed edition was split into a "[Volume 1](https://drive.google.com/file/d/168P4x_K8Jt0w9CsbbcCqmH7ivRnVmthY/view?usp=drivesdk){:ga-event-value="1" target="_blank"}" containing the Pātimokkha rules and a "[Volume 2](https://drive.google.com/file/d/14vKt6eRwWJO0-F1OPfZRwZMTAQf27QEa/view?usp=drivesdk){:ga-event-value="1" target="_blank"}" which contains rules and procedures from the Khandhakas.

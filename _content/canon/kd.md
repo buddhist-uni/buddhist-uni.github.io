@@ -18,5 +18,5 @@ pages: 20
 
 The first book of the Khuddaka Nikāya, the Khuddakapāṭha was, in ancient times, a daily liturgy for novice monks.
 
-Its selection of chants is still influential in Theravada liturgies today.
+Its selection of chants is still influential in Theravāda liturgies today.
 

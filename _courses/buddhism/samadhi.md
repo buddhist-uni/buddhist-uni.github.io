@@ -27,7 +27,7 @@ And [the *Nirodha* Chapter](https://web.archive.org/web/20120226205218/http://si
 
 ## Lecture
 
-This module, I'm excited to introduce you to Ayya Santussika Bhikkhuni: a Theravada nun living in California.
+This module, I'm excited to introduce you to Ayya Santussika Bhikkhuni: a Theravāda nun living in California.
 
 {% include content_blurb.html category="av" slug="right-view_santussika" blurb='
 In this talk, Ayya revisits the teachings on karma and explains how to hold them wisely.

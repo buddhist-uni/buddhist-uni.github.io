@@ -23,4 +23,4 @@ base_value: 2
 pages: 154
 ---
 
-The monastic rules for Theravada Bhikkhunis, prepared in a bilingual English-Pali edition for study and recitation.
+The monastic rules for Theravāda Bhikkhunis, prepared in a bilingual English-Pali edition for study and recitation.

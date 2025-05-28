@@ -10,6 +10,6 @@ tags:
 pages: 18
 ---
 
-An overview of some of the Vinaya rules regarding communally owned property according to the Theravada Tradition.
+An overview of some of the Vinaya rules regarding communally owned property according to the Theravāda Tradition.
 
 Including a number of ridiculous restrictions on the Bhikkhuni Sangha, such as their inability to own toilets!

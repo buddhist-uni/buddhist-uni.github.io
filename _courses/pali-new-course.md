@@ -26,7 +26,7 @@ next_course_descs:
 
 ## What is the Pāli Language?
 
-Pāli is the liturgical language of Theravada Buddhism. An ancient, colloquial relative of Sanskrit, Pāli benefits from a number of ambiguities and variations. A testament to Pāli's long history, such irregularities can make Pāli tricky to decipher, but (thankfully) did little to corrupt the Pali Canon as a record of the Buddha's teachings.  While the Pāli Canon is unlikely to be the verbatim words of the Buddha, studying the Pāli Language is still as close as we can get to hearing his original voice.
+Pāli is the liturgical language of Theravāda Buddhism. An ancient, colloquial relative of Sanskrit, Pāli benefits from a number of ambiguities and variations. A testament to Pāli's long history, such irregularities can make Pāli tricky to decipher, but (thankfully) did little to corrupt the Pali Canon as a record of the Buddha's teachings.  While the Pāli Canon is unlikely to be the verbatim words of the Buddha, studying the Pāli Language is still as close as we can get to hearing his original voice.
 
 ## Course Information
 

@@ -1,5 +1,5 @@
 ---
-title: "Looking for the *Vinaya*: Monastic Discipline in the Practical Canons of the Theravada"
+title: "Looking for the *Vinaya*: Monastic Discipline in the Practical Canons of the Theravāda"
 authors: [blackburn-anne]
 external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3275082&sid="
 formats: [pdf]

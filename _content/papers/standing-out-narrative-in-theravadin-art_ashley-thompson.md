@@ -18,4 +18,4 @@ pages: "305--326"
 
 > To see the image strictly as something to be seen is, in Skilling’s Buddhologist eyes, nothing less than to manifest ignorance...
 
-This book chapter examines the concept of "icons" within Theravada Buddhism, drawing on narrative depictions. It argues that debates in art history regarding insider (emic) and outsider (etic) interpretations are crucial for understanding Southeast Asian perspectives on the Buddha. These perspectives grapple with the Buddha as both a historical figure and a representation of transcendent ideals.
+This book chapter examines the concept of "icons" within Theravāda Buddhism, drawing on narrative depictions. It argues that debates in art history regarding insider (emic) and outsider (etic) interpretations are crucial for understanding Southeast Asian perspectives on the Buddha. These perspectives grapple with the Buddha as both a historical figure and a representation of transcendent ideals.

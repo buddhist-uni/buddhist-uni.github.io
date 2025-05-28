@@ -17,5 +17,5 @@ pages: 2
 
 A short paper listing the forty meditation objects of the _Vissuddhimagga_ along with the kinds of people for whom it is said to be suitable.
 
-If you've ever heard a Theravada monk talk about the "forty *[kammaṭṭhāna](https://en.wikipedia.org/wiki/Kamma%E1%B9%AD%E1%B9%ADh%C4%81na)*s" this is the list they are referring to.
+If you've ever heard a Theravāda monk talk about the "forty *[kammaṭṭhāna](https://en.wikipedia.org/wiki/Kamma%E1%B9%AD%E1%B9%ADh%C4%81na)*s" this is the list they are referring to.
 

@@ -120,7 +120,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. [Nidanakatha] The Middle Epoch
    - <p>Note especially any contrasts to the earlier texts.</p>
 
-1. [E] The Bodhisattva Career in the Theravada
+1. [E] The Bodhisattva Career in the Theravāda
 1. [Bodhisattva] Chapter 2: Meeting the Previous Buddha
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="sumedhakatha-in-pali-and-the-northern-tradition_matsumura-junko" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [Nidanakatha] The Distant Epoch

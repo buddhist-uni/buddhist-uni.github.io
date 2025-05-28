@@ -23,7 +23,7 @@ next_course_descs:
 
 ## What is the Pāli Language?
 
-The Pāli Language is the simplified form of Sanskrit that Theravada Buddhism uses as its liturgical language. It is the only Indic language to preserve a large corpus of Early Buddhist Texts, so studying Pāli (and the Suttas preserved in it) brings us as close as possible to how the historic Buddha taught.
+The Pāli Language is the simplified form of Sanskrit that Theravāda Buddhism uses as its liturgical language. It is the only Indic language to preserve a large corpus of Early Buddhist Texts, so studying Pāli (and the Suttas preserved in it) brings us as close as possible to how the historic Buddha taught.
 
 Pāli is not a tonal language and (like Sanskrit) is inflected, meaning that the nouns change suffixes depending on their role in the sentence. This course will introduce those various roles (called "cases") and give a lot of practice deciphering them.
 

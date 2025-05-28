@@ -15,4 +15,4 @@ address: "Boston"
 pages: 3
 ---
 
-> In Southern California, some Theravada temples have taken up the practice of granting temporary novice ordinations to Cambodian American gang members, with the hope of reorienting the youth toward their families’ religion and culture.
+> In Southern California, some Theravāda temples have taken up the practice of granting temporary novice ordinations to Cambodian American gang members, with the hope of reorienting the youth toward their families’ religion and culture.

@@ -2,7 +2,7 @@
 title: "An Introduction to Buddhist Philosophy"
 google_doc_id: 1dG5KTu-AOd-Cu7IUXF90fPpoo0PbBlIs9rPpRRoEUnU
 feedback_id: "Intro+to+Buddhist+Philosophy"
-description: "An introduction to Buddhist Philosophy for students starting to feel comfortable reading the suttas. Primarily based on the Theravada school, the class will include some additional material to round out its presentation."
+description: "An introduction to Buddhist Philosophy for students starting to feel comfortable reading the suttas. Primarily based on the Theravāda school, the class will include some additional material to round out its presentation."
 icon: "fas fa-chess-queen"
 image: "https://illeakyw.sirv.com/Images/banners/Odilon_Redon.jpeg"
 sirv_options: "saturation=1"
@@ -71,7 +71,7 @@ This course rests on Bhikkhu Bodhi's classic cassette tapes from 1981:
 
 <p> {% include content_blurb.html category="av" slug="as-it-is_bodhi" %} </p>
 
-These lectures are a walkthrough of the orthodox Theravada doctrine. I recommend *not* listening to the lectures while doing something else, but instead giving them your full attention, pausing the recording as needed to digest and reflect. It may be helpful to set aside a 1.5–2 hour time slot for the lectures once per week, to give yourself a deadline to complete your "homework" and to ensure that you can listen to the lectures undistracted. But this is just a suggestion. You're of course welcome to make your way through the material however you like.
+These lectures are a walkthrough of the orthodox Theravāda doctrine. I recommend *not* listening to the lectures while doing something else, but instead giving them your full attention, pausing the recording as needed to digest and reflect. It may be helpful to set aside a 1.5–2 hour time slot for the lectures once per week, to give yourself a deadline to complete your "homework" and to ensure that you can listen to the lectures undistracted. But this is just a suggestion. You're of course welcome to make your way through the material however you like.
 
 In addition to Bhikkhu Bodhi’s formal lectures, each week contains some additional, more casual, talks by other monks and nuns.
 
@@ -89,9 +89,9 @@ In addition to the suttas, this course assigns four short books in weeks 4 and 9
 
 ## The Course
 
-This course gives a traditional, 10-week introduction to Theravada Buddhist Philosophy.
+This course gives a traditional, 10-week introduction to Theravāda Buddhist Philosophy.
 
-It does not cover comparative philosophy or the history of philosophy and it does not attempt to present the theory from a Western frame, nor even from a practical angle. Instead, this course opts for an approach modeled on the traditional Theravada commentaries.
+It does not cover comparative philosophy or the history of philosophy and it does not attempt to present the theory from a Western frame, nor even from a practical angle. Instead, this course opts for an approach modeled on the traditional Theravāda commentaries.
 
 My own bias, however, is towards early Buddhism. So, while the Abhidhamma Tradition (at least as presented here) doesn't stray _too_ far from the Pāli Canon, there are a couple points throughout the course where differences will be noted.
 
@@ -282,7 +282,7 @@ With that as an introduction, we're perhaps ready to read this week's homework a
 
 {% include content_blurb.html category="monographs" slug="heart-of-understanding_tnh" %}
 - An incredibly popular and influential, modern (commercial) commentary on the (Mahayana) Heart Sutra presents a much beloved take on Huayan philosophy.
-- Note especially the similarities or differences to the Theravada. How might these two perspectives on dependent origination illuminate each other?
+- Note especially the similarities or differences to the Theravāda. How might these two perspectives on dependent origination illuminate each other?
 
 
 {% include content_blurb.html category="essays" slug="purity-of-heart_geoff" %}
@@ -311,7 +311,7 @@ for a EBT rebuttal of the influential Abhidhammic doctrine that life begins exac
 
 #### Pop Quiz!
 
-How does the Theravada concept of dependent arising differ from the concept of interdependence in Thich Nhat Hanh's writing? What function does each idea serve?
+How does the Theravāda concept of dependent arising differ from the concept of interdependence in Thich Nhat Hanh's writing? What function does each idea serve?
 
 ### Week 5: Rebirth and Kamma (The Second Noble Truth Continued...)
 
@@ -348,7 +348,7 @@ Central to this wheel of origination which causes our suffering is our stubborn 
 
 <i class="fas fa-volume-up"></i> [BB-005_Rebirth_and_Karma.mp3](https://drive.google.com/file/d/1CVZCx_eZpDJQ43jrMd0oQi87K0XmbBeJ/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"}
 {: .mb-0}
-- Bhikkhu Bodhi gives a detailed explanation of rebirth and kamma according to the Theravada Abhidhamma.
+- Bhikkhu Bodhi gives a detailed explanation of rebirth and kamma according to the Theravāda Abhidhamma.
 
 {% include content_blurb.html category="canon" slug="sn44.9" %}
 - The Buddha himself explains how the interval between death and rebirth is possible and not in contradiction to Dependent Origination, *contra* the Theravāda orthodoxy.
@@ -397,7 +397,7 @@ We open with some suttas from other collections than the MN, which Bhikkhu Bodhi
 
 <i class="fas fa-volume-up"></i> [BB-006_Nibbana.mp3](https://drive.google.com/file/d/1rDWIo2RnaQwOHaLSp5-jiAlc3r-dTvHF/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"}
 {: .mb-0}
-- Bhikkhu Bodhi discusses the philosophical implications of the doctrine of Nibbāna drawn out in the Theravada Abhidhamma
+- Bhikkhu Bodhi discusses the philosophical implications of the doctrine of Nibbāna drawn out in the Theravāda Abhidhamma
 
 #### Sutta Spotlight
 
@@ -470,7 +470,7 @@ Formal mind training is of course the hallmark of Buddhism. This course though i
 - The Buddha defines the factors of the Noble Eightfold Path and explains that meditative absorption is the culmination of all the previous factors of the path.
 
 {% include content_blurb.html category="av" slug="mn117-explanation_brahmali" %}
-- Ajahn Brahmali talks us through this Sutta, explaining in particular how mental purification follows on from ethical purification along with some thoughts on how this Sutta was influenced by the Theravada Abhidhamma, further highlighting the difference between “Early” and “Theravada” Buddhist Philosophy
+- Ajahn Brahmali talks us through this Sutta, explaining in particular how mental purification follows on from ethical purification along with some thoughts on how this Sutta was influenced by the Theravāda Abhidhamma, further highlighting the difference between “Early” and “Theravāda” Buddhist Philosophy
 
 
 #### Pop Quiz!
@@ -530,7 +530,7 @@ The course began with the first refuge (the Buddha) and now, after explaining th
 - The Bhikkhu versus the Ariya Sangha and why it matters.
 
 {% include content_blurb.html category="essays" slug="bhikkhuni-order-reestablished_bodhi" %}
-- Since this talk was recorded, a method for reestablishing the Theravada Bhikkhuni order was successfully executed. These women's ordinations have yet to be fully recognized by the governments of Sri Lanka, Burma or Thailand but Bhikkhu Bodhi himself has changed his mind on the issue, as he discusses in this short letter.
+- Since this talk was recorded, a method for reestablishing the Theravāda Bhikkhuni order was successfully executed. These women's ordinations have yet to be fully recognized by the governments of Sri Lanka, Burma or Thailand but Bhikkhu Bodhi himself has changed his mind on the issue, as he discusses in this short letter.
 
 
 #### Sutta Spotlight

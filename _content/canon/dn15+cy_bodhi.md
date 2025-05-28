@@ -17,4 +17,4 @@ base_value: 1.2
 pages: 169
 ---
 
-A translation of [DN 15](https://suttacentral.net/dn15/en/bodhi){:target="_blank" ga-event-value="{{ page.base_value }}"} together with its traditional (Theravada) commentary and subcommentary, featuring an introduction and appendix by the translator introducing the Abhidhamma system by which the commentaries analyzed this sutta.
+A translation of [DN 15](https://suttacentral.net/dn15/en/bodhi){:target="_blank" ga-event-value="{{ page.base_value }}"} together with its traditional (Theravāda) commentary and subcommentary, featuring an introduction and appendix by the translator introducing the Abhidhamma system by which the commentaries analyzed this sutta.

@@ -23,5 +23,5 @@ big_height: 4000
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_Buddhist_temple,_and_its_surroundings,_Kyoto;_November_2016_(05).jpg">雷太</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>
 ---
 
-The *Vinaya Piṭaka* is the first section of the *Pāli Canon*. It contains the code of conduct for the [monks and nuns](/tags/monastic) of the [Theravada tradition](/tags/theravada) along with many entertaining stories from the early saṅgha.
+The *Vinaya Piṭaka* is the first section of the *Pāli Canon*. It contains the code of conduct for the [monks and nuns](/tags/monastic) of the [Theravāda tradition](/tags/theravada) along with many entertaining stories from the early saṅgha.
 

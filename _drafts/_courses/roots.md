@@ -181,7 +181,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - Nagarjuna criticized the excessive developments of Buddhism in the centuries after the Buddha and reestablished emptiness as the central tenant of Buddhism, laying the philosophical groundwork for the Mahayana.
 
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
-- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravada and Mahayana.
+- In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravāda and Mahayana.
 
 [CBT] Th.210
 {:.mb-0}
@@ -291,11 +291,11 @@ While not representative of the diversity within each of the following "national
 
 [CBT] Th.31
 {:.mb-0}
-- The ideal of the "Righteous Monarch" was hugely influential in the Theravada world and continues to justify monarchy in Thailand today.
+- The ideal of the "Righteous Monarch" was hugely influential in the Theravāda world and continues to justify monarchy in Thailand today.
 
 [CBT] Th.215
 {:.mb-0}
-- The Theravada monks, meanwhile, hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
+- The Theravāda monks, meanwhile, hold up Sariputta as their ideal: the wise, analytical follower of the Buddha.
 
 [CBT] Th.90–91, Th.146, Th.159
 {:.mb-0}
@@ -303,19 +303,19 @@ While not representative of the diversity within each of the following "national
 
 [CBT] Th.135, Th.152, Th.145
 {:.mb-0}
-- The Theravada is also famous for its "morbid" meditations on pain and death.
+- The Theravāda is also famous for its "morbid" meditations on pain and death.
 
 [CBT] Th.52, Th.108
 {:.mb-0}
-- But Theravada isn't all bleak, as they also celebrate the beauty of the Dhamma and of good companionship.
+- But Theravāda isn't all bleak, as they also celebrate the beauty of the Dhamma and of good companionship.
 
 [CBT] Th.194
 {:.mb-0}
-- Very conservative in their practice of the monastic rules, Theravada monks still go on alms round and abstain from eating dinner to this day.
+- Very conservative in their practice of the monastic rules, Theravāda monks still go on alms round and abstain from eating dinner to this day.
 
 [CBT] Th.117, Th.172, Th.181, Th.196, Th.226
 {:.mb-0}
-- Lastly, we read Theravada responses to some Mahayana ideas.
+- Lastly, we read Theravāda responses to some Mahayana ideas.
 
 
 ##### Robinson Chapter 8: China
@@ -329,7 +329,7 @@ While not representative of the diversity within each of the following "national
 
 [CBT] Th.50, M.34
 {:.mb-0}
-- Here, for example, we compare the earlier (Theravada) perspective on honoring one's parents with the Chinese perspective.
+- Here, for example, we compare the earlier (Theravāda) perspective on honoring one's parents with the Chinese perspective.
 
 [CBT] M85–86
 {:.mb-0}

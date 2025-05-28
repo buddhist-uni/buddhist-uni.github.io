@@ -20,4 +20,4 @@ pages: "137--146"
 
 > Ananda, Upali and Devadatta act out a theoretical quarrel about Buddhist attitudes to law
 
-An interesting allegorical reading of three prominent characters in the Theravada Vinaya.
+An interesting allegorical reading of three prominent characters in the Theravāda Vinaya.
