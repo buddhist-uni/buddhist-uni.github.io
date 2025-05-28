@@ -1,5 +1,5 @@
 ---
-title: "Re-examining conventional wisdom on the issue of Bhikkhunis in the Theravāda tradition"
+title: "Re-examining conventional wisdom on the issue of Bhikkhunis in the Theravada tradition"
 authors:
   - brahm
 external_url: "https://bhikkhuni.net/an-interview-with-ajahn-brahm/"

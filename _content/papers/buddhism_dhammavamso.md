@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/15P7_d3kQ6Cq2xrTQ_FuTVbrMFkNVAYDi/view?usp=drivesdk"
 booktitle: "Engaged Buddhism"
 pages: "2--7"
-publisher: "The Association of Theravāda Buddhist Universities"
+publisher: "The Association of Theravada Buddhist Universities"
 course: philosophy
 tags:
   - buddhism

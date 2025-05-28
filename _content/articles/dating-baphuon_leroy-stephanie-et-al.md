@@ -23,5 +23,5 @@ publisher: "Public Library of Science"
 openalexid: W2169271073
 ---
 
-> The Theravāda modification is a hundred years prior to the conventional 16th century estimation and is not associated with renewed use of Angkor.
+> The Theravada modification is a hundred years prior to the conventional 16th century estimation and is not associated with renewed use of Angkor.
 > Instead it relates to the Ayutthayan occupation of Angkor in the 1430s and 40s during a major period of climatic instability.

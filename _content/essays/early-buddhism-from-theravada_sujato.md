@@ -1,5 +1,5 @@
 ---
-title: "How Early Buddhism differs from Theravāda: A Checklist"
+title: "How Early Buddhism differs from Theravada: A Checklist"
 authors:
   - sujato
 external_url: "https://discourse.suttacentral.net/t/how-early-buddhism-differs-from-theravada-a-checklist/23019?u=khemarato.bhikkhu"
@@ -16,6 +16,6 @@ base_value: 0.8
 pages: 30
 ---
 
-> Theravāda, like any religious tradition, has evolved and changed over the years.
+> Theravada, like any religious tradition, has evolved and changed over the years.
 
-> … some major points of distinction between Early Buddhism and Theravāda
+> … some major points of distinction between Early Buddhism and Theravada

@@ -1,5 +1,5 @@
 ---
-title: "Beyond Buddhism and Animism: A Psychometric Test of the Structure of Burmese Theravāda Buddhism"
+title: "Beyond Buddhism and Animism: A Psychometric Test of the Structure of Burmese Theravada Buddhism"
 authors:
   - "Mark Stanford"
   - "Jonathan Jong"
@@ -24,7 +24,7 @@ publisher: "Public Library of Science"
 openalexid: W2995527708
 ---
 
-> Anthropologists and religious scholars have long debated the relationship between doctrinal Theravāda Buddhism, so-called 'animism', and other folk practices in southeast Asian societies.
+> Anthropologists and religious scholars have long debated the relationship between doctrinal Theravada Buddhism, so-called 'animism', and other folk practices in southeast Asian societies.
 > A variety of models of this relationship have been proposed on the basis of ethnographic evidence.
 > We provide the first psychometric and quantitative evaluation of these competing models, using a new scale developed for this purpose, the Burmese Buddhist Religiosity Scale.
 

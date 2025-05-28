@@ -1,5 +1,5 @@
 ---
-title: "Theravāda Buddhism and Political Engagement among the Thai-Lao of North East Thailand: The Bun Phra Wet Ceremony"
+title: "Theravada Buddhism and Political Engagement among the Thai-Lao of North East Thailand: The Bun Phra Wet Ceremony"
 authors:
   - "Leedom Lefferts"
   - "Sandra Cate"
