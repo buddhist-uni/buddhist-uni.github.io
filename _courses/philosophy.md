@@ -271,7 +271,7 @@ Dependent Origination is a notoriously difficult concept in Buddhism, so before 
 With that as an introduction, we're perhaps ready to read this week's homework and see how it fits together.
 
 {% include content_blurb.html category="excerpts" slug="vipaka_analayo" %}
-- A short article on *karma* in the the Pāli Canon.
+- A short article on *karma* in the Pāli Canon.
 
 {% include content_blurb.html category="essays" slug="practical-origination_yuttadhammo" %}
 - Bhante Yuttadhammo introduces Dependent Origination in his own way, trying to point towards its utility in practice.

@@ -20,4 +20,4 @@ tags:
   - wise-attention
 ---
 
-A brief summary of the the first factor, right view (sammaditthi), in the eightfold noble path. The paper delinieates both right and wrong views based on the suttas and commentarial tradition.
+A brief summary of the first factor, right view (sammaditthi), in the eightfold noble path. The paper delinieates both right and wrong views based on the suttas and commentarial tradition.

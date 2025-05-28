@@ -22,5 +22,5 @@ big_height: 3034
 big_width: 3792
 ---
 
-*Sammā Sati* (Right Mindfulness) is the the keen, dispassionate observation of the body, feelings, and mind as they actually are.
+*Sammā Sati* (Right Mindfulness) is the keen, dispassionate observation of the body, feelings, and mind as they actually are.
 
