@@ -10,7 +10,7 @@ course: japanese
 tags:
   - culture
   - gender
-  - ghost
+  - ghosts
 year: 2021
 month: oct
 publisher: "Dig: A history podcast"

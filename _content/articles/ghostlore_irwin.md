@@ -9,7 +9,7 @@ file_links:
   - "exclusive_01/Some%20Siamese%20Ghost-lore%20and%20Demonology%20-%20Irwin.pdf"
 course: thai
 tags:
-  - preta
+  - ghosts
 year: 1907
 month: oct
 journal: jss

@@ -9,7 +9,7 @@ drive_links:
 status: featured
 course: thai-culture
 tags:
-  - preta
+  - ghosts
 year: 1954
 journal: jss
 volume: 41

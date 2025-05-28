@@ -51,13 +51,13 @@ jobs:
         run: |
             cd scripts
             python -c "from archivedotorg import *; urls = Path('archivable_urls/filteredurls.txt').read_text().split(); archive_urls(urls)"
-      - name: Archive Internal Pages
-        run: |
-          cd scripts
-          python archive_site.py
+# Common Crawl seems to be doing a good enough job
+#      - name: Archive Internal Pages
+#        run: |
+#          cd scripts
+#          python archive_site.py
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update Archive.org Canonical URLs"
-          file_pattern: '*.json'
 
