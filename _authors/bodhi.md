@@ -8,7 +8,7 @@ After completing his university studies, he immediately came to Sri Lanka where 
 
 He was appointed editor of the [Buddhist Publication Society](/publishers/bps) (in Sri Lanka) in 1984 and its president in 1988.
 
-Ven. Bodhi has many important publications to his credit, either as author, translator, or editor, including  *the Majjhima Nikaya*  (co-translated with Ven. Bhikkhu Nanamoli) (1995), *The Connected Discourses of the Buddha* (2000), and [*In the Buddha’s Words*](/content/monographs/in-the-buddhas-words_bodhi) (2005).
+Ven. Bodhi has many important publications to his credit, either as author, translator, or editor, including  *the Majjhima Nikāya*  (co-translated with Ven. Bhikkhu Nanamoli) (1995), *The Connected Discourses of the Buddha* (2000), and [*In the Buddha’s Words*](/content/monographs/in-the-buddhas-words_bodhi) (2005).
 
 In May 2000 he gave [the keynote address](/content/booklets/buddha-and-his-dhamma_bodhi) at the United Nations at its first official celebration of Vesak. He returned to the U.S. in 2002 and currently resides at [Chuang Yen Monastery](https://www.baus.org/){:target="_blank"} and teaches there and at [Bodhi Monastery](https://bodhimonastery.org/){:target="_blank"}.
 

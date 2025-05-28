@@ -31,7 +31,7 @@ next_courses:
   - mahayana
   - lay
 next_course_descs:
-  - "If you're enjoying studying the suttas with Bhikkhu Bodhi, this course continues his lectures and our reading of the Majjhima Nikaya, going thematically through half the Middle Length Discourses — a long course, by the end of which you'll have an excellent foundation in early Buddhism. And don't worry, these lectures were recorded on modern equipment and are much easier to listen to!"
+  - "If you're enjoying studying the suttas with Bhikkhu Bodhi, this course continues his lectures and our reading of the Majjhima Nikāya, going thematically through half the Middle Length Discourses — a long course, by the end of which you'll have an excellent foundation in early Buddhism. And don't worry, these lectures were recorded on modern equipment and are much easier to listen to!"
   - "Dig deeper into the path of mental cultivation by which right view is realized."
   - "An important branch in any philosophy, but especially in Buddhism, this course asks how we might explain ethics especially in light of Western philosophy."
   - "Notoriously difficult to explain, and even harder to understand, and yet tremendously important, in this class we explore what can be said about the unconditioned."
@@ -78,7 +78,7 @@ In addition to Bhikkhu Bodhi’s formal lectures, each week contains some additi
 
 ## Textbook
 
-In lieu of a textbook, this course will weave in the [*Selections from the Majjhima Nikaya on the Doctrine*](https://docs.google.com/document/d/1vFOPqindN_8siED_ihfwybVAjo_Aj-cWDj2M-753-jM/edit?usp=drivesdk){:target="_blank"} which Bhikkhu Bodhi recommended be required reading for studying Buddhist Philosophy. These suttas are linked to web translations, but feel free to read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.4"}) the suttas in whichever translation (and medium) you prefer.
+In lieu of a textbook, this course will weave in the [*Selections from the Majjhima Nikāya on the Doctrine*](https://docs.google.com/document/d/1vFOPqindN_8siED_ihfwybVAjo_Aj-cWDj2M-753-jM/edit?usp=drivesdk){:target="_blank"} which Bhikkhu Bodhi recommended be required reading for studying Buddhist Philosophy. These suttas are linked to web translations, but feel free to read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.4"}) the suttas in whichever translation (and medium) you prefer.
 
 Please read the suttas and other readings on your own “before class” and spend some time reflecting on them, preferably for a day or two, before listening to the lecture. Don't feel discouraged if you find the suttas difficult at first. I'm sure you'll be a pro sutta-reader by the end of the class!
 
@@ -95,7 +95,7 @@ It does not cover comparative philosophy or the history of philosophy and it doe
 
 My own bias, however, is towards early Buddhism. So, while the Abhidhamma Tradition (at least as presented here) doesn't stray _too_ far from the Pāli Canon, there are a couple points throughout the course where differences will be noted.
 
-The class is structured into 10 "weeks." Each week assigns some suttas and other readings for “homework” before the main lecture for that week. Each week ends with a breakout session I call the “sutta spotlight” in which we do a closer reading of a related sutta from the _Majjhima Nikaya_ with a guest monastic, before advancing on to the homework for the following "week."
+The class is structured into 10 "weeks." Each week assigns some suttas and other readings for “homework” before the main lecture for that week. Each week ends with a breakout session I call the “sutta spotlight” in which we do a closer reading of a related sutta from the _Majjhima Nikāya_ with a guest monastic, before advancing on to the homework for the following "week."
 
 ### Introduction
 

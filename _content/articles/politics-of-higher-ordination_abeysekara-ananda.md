@@ -26,5 +26,5 @@ tags:
 > Since July 20, 1985, a new higher ordination (upasampadā) movement
 has emerged at the Dambulla Buddhist temple in Sri Lanka. The architect of this movement, a Sinhala Buddhist monk named Inamaluwe Sumangala, challenges the contemporary Buddhist monastic practice of ordaining monks on the basis of their castes
 
-> On the face of it, the movement seems to involve a debate about the irrelevance of caste to higher ordination between Sumangala and the monks of the Asgiriya temple, one of several chapters of the Siyam Nikaya that ordains only high-caste Buddhist males. However, the challenge constituted by the new ordination can be seen as part of a broader attempt on Sumangala's part to redefine monastic identity
+> On the face of it, the movement seems to involve a debate about the irrelevance of caste to higher ordination between Sumangala and the monks of the Asgiriya temple, one of several chapters of the Siyam Nikāya that ordains only high-caste Buddhist males. However, the challenge constituted by the new ordination can be seen as part of a broader attempt on Sumangala's part to redefine monastic identity
 

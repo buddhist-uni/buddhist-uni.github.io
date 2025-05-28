@@ -16,7 +16,7 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Kodo_Sawaki_Zazen.j
 - A small chart summarizing the four stages of enlightenment mentioned in this chapter.
 - These stages will come up again in more detail later. 
 
-<i class="fas fa-dharmachakra"></i> Suttas from the Anguttara Nikaya on Spiritual Companionship
+<i class="fas fa-dharmachakra"></i> Suttas from the Anguttara Nikāya on Spiritual Companionship
 
 - As we covered previously, spiritual friendship is the most important external path-factor.
 - In these *suttas* selected by Bhikkhu Bodhi, the Buddha gives us advice on how to find and cultivate spiritual friendship: 

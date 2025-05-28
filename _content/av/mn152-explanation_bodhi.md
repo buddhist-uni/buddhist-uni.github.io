@@ -13,4 +13,4 @@ month: jul
 minutes: 60
 ---
 
-The last sutta in the Majjhima Nikaya stumps Bhikkhu Bodhi.
+The last sutta in the Majjhima Nikāya stumps Bhikkhu Bodhi.

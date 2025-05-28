@@ -16,4 +16,4 @@ pages: "73--78"
 
 > ‘they master one self, tame one self, bring one self to nibbana.’ That sounds as if people who are supposed to realize their lack of self are being credited with three.
 
-On what an odd expression in the Digha Nikaya can tell us about the construction of the Pāli Suttas.
+On what an odd expression in the Digha Nikāya can tell us about the construction of the Pāli Suttas.

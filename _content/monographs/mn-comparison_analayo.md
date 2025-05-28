@@ -19,7 +19,7 @@ A thorough examination of each discourse in the *Majjhima-nikāya* in the light 
 
 In this thousand-page tome, Bhikkhu Analayo goes systematically through the MN, one sutta at a time, and explains how the Pāli text differs (or not) from its  parallels preserved in Sanskrit, Chinese and Tibetan. Perhaps surprisingly, they don't differ all that much, though in some places the differences do shed light on the original teaching and shows what kinds of changes occurred to the texts during the process of transmission.
 
-The book begins and ends with Bhikkhu Analayo's reflections on the EBTs and the process of oral transmission, and while the book could certainly be read cover-to-cover, the primary way to use this book is as a reference work alongside the Majjhima Nikaya.
+The book begins and ends with Bhikkhu Analayo's reflections on the EBTs and the process of oral transmission, and while the book could certainly be read cover-to-cover, the primary way to use this book is as a reference work alongside the Majjhima Nikāya.
 
 You can also download the book for free at the University of Hamburg website:
 

@@ -18,4 +18,4 @@ tags:
 pages: 35
 ---
 
-> Tucked away in the Samyutta Nikaya among the "connected sayings on causality" is a short formalized text entitled [the Upanisa Sutta](/content/canon/sn12.23), the "Discourse on Supporting Conditions." Though at first glance hardly conspicuous among the many interesting suttas in this collection, this little discourse turns out upon repeated examination to be of tremendous doctrinal importance. 
+> Tucked away in the Samyutta Nikāya among the "connected sayings on causality" is a short formalized text entitled [the Upanisa Sutta](/content/canon/sn12.23), the "Discourse on Supporting Conditions." Though at first glance hardly conspicuous among the many interesting suttas in this collection, this little discourse turns out upon repeated examination to be of tremendous doctrinal importance. 

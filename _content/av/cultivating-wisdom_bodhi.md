@@ -15,4 +15,4 @@ base_value: 0.6
 minutes: 2903
 ---
 
-A series of 43 lectures on the stages of liberation and the gradual dawning of insight as presented in the Majjhima Nikaya.
+A series of 43 lectures on the stages of liberation and the gradual dawning of insight as presented in the Majjhima Nikāya.

@@ -1,5 +1,5 @@
 ---
-title: "The Long Discourses of the Buddha: A Translation of the Digha Nikaya"
+title: "The Long Discourses of the Buddha: A Translation of the Digha Nikāya"
 authors:
   - walshe
 olid: OL8308507M
@@ -16,4 +16,4 @@ publisher: wisdom
 pages: 656
 ---
 
-Originally published as _Thus Have I Heard_, this modern translation of the Digha Nikaya is striking for its rare combination of accessible erudition and respectful skepticism.
+Originally published as _Thus Have I Heard_, this modern translation of the Digha Nikāya is striking for its rare combination of accessible erudition and respectful skepticism.

@@ -16,5 +16,5 @@ base_value: 0.6
 minutes: 487
 ---
 
-A series of six lectures on the faults of *saṃsāra* as presented in Majjhima Nikaya suttas 13, 54, 75, and 82 and in [the fifteenth saṃyutta of the SN](https://bodhimonastery.org/sn-15-anamataggasa%E1%B9%83yutta.html){:target="_blank" ga-event-value="0.3"}.
+A series of six lectures on the faults of *saṃsāra* as presented in Majjhima Nikāya suttas 13, 54, 75, and 82 and in [the fifteenth saṃyutta of the SN](https://bodhimonastery.org/sn-15-anamataggasa%E1%B9%83yutta.html){:target="_blank" ga-event-value="0.3"}.
 

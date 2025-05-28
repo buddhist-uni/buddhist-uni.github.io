@@ -45,15 +45,15 @@ This course requires prior familiarity with [Buddhism](/courses/buddhism) and [i
 
 This course is quite long if you hope to complete it. But don't worry: each of [the modules](/series/mn-study_bodhi) (not to mention each sutta) is a fairly self-contained unit and can be studied independently based on your interests.  Feel free to pick and choose as you like!
 
-For those looking to take the _entire_ course, I recommend setting aside **a few hours per week** to study the Majjhima Nikaya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"} — whatever works for you.
+For those looking to take the _entire_ course, I recommend setting aside **a few hours per week** to study the Majjhima Nikāya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"} — whatever works for you.
 Make these days a special “holy” day, dedicated to your practice and study. Read one sutta, listen to the lecture(s) on it and reflect.
 Take your time. Meditate on it. Let this weekly ritual become part of your life. If you keep it up, in a few years you may even be sad to know that you've finished the course!
 
 ## Course Content
 
-In this course, we study the Early Buddhist Texts by reading the Majjhima Nikaya.
+In this course, we study the Early Buddhist Texts by reading the Majjhima Nikāya.
 
-I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikaya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1s_b8w0nfkbLVMDsBvalMSlHIz_2MjBws/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} and [this introductory analysis by Bhante Analayo](/content/articles/centrality-of-mindfulness-related_analayo) to get a sense of what to expect from this course.
+I recommend first reading [Ajahn Sujato’s Guide to the Majjhima Nikāya](https://suttacentral.net/mn-guide-sujato){:target="_blank" ga-event-value="0.2"} if you haven't already, to orient yourself, and listen to [the introductory lecture by Bhikkhu Bodhi](https://drive.google.com/file/d/1s_b8w0nfkbLVMDsBvalMSlHIz_2MjBws/view?usp=drivesdk){:target="_blank" ga-event-value="0.3"} and [this introductory analysis by Bhante Analayo](/content/articles/centrality-of-mindfulness-related_analayo) to get a sense of what to expect from this course.
 
 ### Textbook
 
@@ -74,7 +74,7 @@ Advanced students, interested in engaging with the history and Northern versions
 
 {% include content_box.html category="monographs" slug="mn-comparison_analayo" %}
 
-If you're anything like me, you'll be amazed at how little the recensions differ, despite the thousands of miles and many hundreds of years between them. This striking congruence gives us solid confidence that the Majjhima Nikaya was well preserved.
+If you're anything like me, you'll be amazed at how little the recensions differ, despite the thousands of miles and many hundreds of years between them. This striking congruence gives us solid confidence that the Majjhima Nikāya was well preserved.
 
 ### Lectures
 
@@ -96,14 +96,14 @@ You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’
 
 ## Referring Back
 
-As you deepen your study of Buddhism, you may (nay, should!) find yourself referring back to the Majjhima Nikaya often. This “course” can also be used in that way: as a reference to be touched as needed. The lecture series (and Bhante Analayo's comparative study) contains every sutta, so whichever you're interested in learning more about, you'll find above.
+As you deepen your study of Buddhism, you may (nay, should!) find yourself referring back to the Majjhima Nikāya often. This “course” can also be used in that way: as a reference to be touched as needed. The lecture series (and Bhante Analayo's comparative study) contains every sutta, so whichever you're interested in learning more about, you'll find above.
 
 Either (as a course or as a reference) is an appropriate use of this material. Feel free to jump in directly to the section of Bhikkhu Bodhi’s lectures relevant to your current interests, or refer to Bhante Analayo’s notes to see how a curious Pāli passage compares to its parallels. There are many uses for this material and I encourage you to make it your own!
 
 In case it's useful for such referencing, here's an index of the suttas by their Pāli name:
 
 {% include content_blurb.html category="reference" slug="mn-pali-name-index" %}
-- Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikaya (usually noted as “MN #”, e.g. “MN 3” for the third sutta)
+- Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikāya (usually noted as “MN #”, e.g. “MN 3” for the third sutta)
 
 And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of which suttas you've read, so you know where to come back to later.
 

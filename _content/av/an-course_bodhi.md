@@ -1,5 +1,5 @@
 ---
-title: "Anguttara Nikaya Course"
+title: "Anguttara Nikāya Course"
 authors:
   - bodhi
 subcat: course

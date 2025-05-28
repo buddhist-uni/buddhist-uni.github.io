@@ -15,6 +15,6 @@ base_value: 0.6
 minutes: 1667
 ---
 
-A series of 24 lectures on the Buddhist path based on detailed study of a number of Majjhima Nikaya discourses.
+A series of 24 lectures on the Buddhist path based on detailed study of a number of Majjhima Nikāya discourses.
 
 

@@ -21,24 +21,24 @@ next_courses:
   - philosophy
   - pali-primer
 next_course_descs:
-  - "Go back and study the Majjhima Nikaya with Bhikkhu Bodhi in this prequel to the present course."
+  - "Go back and study the Majjhima Nikāya with Bhikkhu Bodhi in this prequel to the present course."
   - "A more systematic introduction to Buddhist Philosophy with Bhikkhu Bodhi and several other guest lecturers."
   - "Learn the Pali language itself with Bhikkhu Bodhi."
 ---
 
 
 ## What are the Numerical Discourses?
-The Aṅguttara Nikaya (AN) is the last of the four main books (*nikāya*) of the Buddha's discourses (also known as the *Sutta Piṭaka*) in the Pāḷi Canon.
+The Aṅguttara Nikāya (AN) is the last of the four main books (*nikāya*) of the Buddha's discourses (also known as the *Sutta Piṭaka*) in the Pāḷi Canon.
 
 The Buddha often taught according to numbered lists throughout his career as a teacher, as anyone familiar with Buddhist doctrine will know. In fact, this memorable quality of a list is one of its great advantages as a format and the AN takes full advantage of this technique and hence its name.
 
-From [DN 33](/content/canon/dn33), we know that the Saṅgha would often recite the Buddha's teachings in numerical order even during the Buddha's own lifetime, so it isn't hard to imagine how the tradition came to form the Aṅguttara Nikaya as we have it today. The first book (AN 1) contains a multitude of teachings on "one thing", the second book (AN 2) contains teachings on "two things", etc.
+From [DN 33](/content/canon/dn33), we know that the Saṅgha would often recite the Buddha's teachings in numerical order even during the Buddha's own lifetime, so it isn't hard to imagine how the tradition came to form the Aṅguttara Nikāya as we have it today. The first book (AN 1) contains a multitude of teachings on "one thing", the second book (AN 2) contains teachings on "two things", etc.
 
-The Aṅguttara Nikaya contains some of the most practical suttas in the entire canon: for monastics and the laity. Being organized around a theme as abstract as numbers (starting with the number one!), the AN contains a rich variety of subjects sure to appeal to readers of any level or interest.
+The Aṅguttara Nikāya contains some of the most practical suttas in the entire canon: for monastics and the laity. Being organized around a theme as abstract as numbers (starting with the number one!), the AN contains a rich variety of subjects sure to appeal to readers of any level or interest.
 
 ## Prerequisites
 
-This course is technically a continuation of Bhikkhu Bodhi's epic, multi-year [course on the Majjhimā Nikaya](/courses/mn), but don't let that scare you off! This course is designed to be approachable by anyone with a basic understanding of [Buddhism](/courses/buddhism) and of [the Early Buddhist Texts](/courses/ebts).
+This course is technically a continuation of Bhikkhu Bodhi's epic, multi-year [course on the Majjhimā Nikāya](/courses/mn), but don't let that scare you off! This course is designed to be approachable by anyone with a basic understanding of [Buddhism](/courses/buddhism) and of [the Early Buddhist Texts](/courses/ebts).
 
 ## Time Requirement
 
@@ -46,11 +46,11 @@ As of 2021, the course is still ongoing, with new lectures appearing every coupl
 
 ## Course Contents
 
-This course goes sequentially through the Aṅguttara Nikaya, explaining each sutta or sutta cluster one at a time.
+This course goes sequentially through the Aṅguttara Nikāya, explaining each sutta or sutta cluster one at a time.
 
 ### Textbook
 
-A copy of the Aṅguttara Nikaya is required for this class.  Bhikkhu Bodhi's own translation is, of course, preferred:
+A copy of the Aṅguttara Nikāya is required for this class.  Bhikkhu Bodhi's own translation is, of course, preferred:
 
 {% include content_blurb.html category="monographs" slug="an_bodhi" %}
 - The lecturer's own translation of the text.

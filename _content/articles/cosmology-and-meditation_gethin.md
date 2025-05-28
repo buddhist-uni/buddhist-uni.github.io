@@ -25,4 +25,4 @@ number: 3
 pages: "183--217"
 ---
 
-> To approach what, for the want of a better term, we call the mythic portions of the Nikayas with the attitude that such categories as "mythic symbol" and "literally true" are absolutely opposed is to adopt an attitude that is out of time and place. It seems to me that in some measure we must allow **both** a literal **and** a psychological interpretation. Both are there in the texts.
+> To approach what, for the want of a better term, we call the mythic portions of the Nikāyas with the attitude that such categories as "mythic symbol" and "literally true" are absolutely opposed is to adopt an attitude that is out of time and place. It seems to me that in some measure we must allow **both** a literal **and** a psychological interpretation. Both are there in the texts.
