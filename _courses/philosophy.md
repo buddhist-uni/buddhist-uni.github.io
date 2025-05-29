@@ -508,7 +508,7 @@ Zooming out from the individual training, Buddhist philosophy (contrary to popul
 - The Buddha explains the full understanding of dukkha — sensual pleasures, material form, and feelings — including a long section on the dangers in sensual pleasures.
 
 {% include content_blurb.html category="av" slug="mn13-explanation_brahm" %}
-- A sick Ajahn Brahm teaches us the meaning of suffering in this unstable, uncomfortable and out of control talk on the “Great Aggregates of Suffering” and their Three Characteristics.
+- A sick Ajahn Brahm teaches us the meaning of suffering in this unstable, uncomfortable and out-of-control talk on the “Great Aggregates of Suffering” and their Three Characteristics.
 
 #### Essay Time
 

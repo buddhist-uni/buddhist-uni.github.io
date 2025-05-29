@@ -11,6 +11,7 @@ course: feeling
 tags:
   - daily-life # maybe even move here
   - religion
+  - ritual
 year: 2022
 month: jun
 image: https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23619309/rituals.jpeg

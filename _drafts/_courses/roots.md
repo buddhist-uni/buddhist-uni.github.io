@@ -299,7 +299,7 @@ While not representative of the diversity within each of the following "national
 
 [CBT] Th.90–91, Th.146, Th.159
 {:.mb-0}
-- The Theravadin philosophical tradition loves to break Dharmas into exact parts and definitions.
+- The Theravāda philosophical tradition loves to break Dharmas into exact parts and definitions.
 
 [CBT] Th.135, Th.152, Th.145
 {:.mb-0}

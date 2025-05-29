@@ -10,6 +10,8 @@ status: featured
 course: tantric
 tags:
   - religion
+  - ritual
+  - culture
   - japanese
   - shingon
 year: 2003

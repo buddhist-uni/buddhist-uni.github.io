@@ -52,7 +52,7 @@ This course assumes familiarity with [the fundamentals of Buddhism](/courses/bud
 ## The Course
 This course proceeds in three parts: history, community, and practice. 
 
-The history portion of the course is the longest and describes the entire history of Buddhism. The second section analyzes this history to highlight the role of the monastic community, and the third section zooms all the way in to the individual practices.
+The history portion of the course is the longest and describes the entire history of Buddhism; the second section analyzes this history to highlight the role of the monastic community; and the third section zooms all the way in to the individual practices.
 
 ### Introduction
 On forms and the formless.
@@ -155,7 +155,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 ##### Chapter 4: “The Rise of Mahayana”
 
 {% include content_blurb.html category="articles" slug="second-buddha_loy" %}
-- Nagarjuna criticized the excessive developments of Buddhism in the centuries after the Buddha and reestablished emptiness as the central tenant of Buddhism, laying the philosophical groundwork for the Mahayana.
+- Nagarjuna criticized the excessive developments of Buddhism in the centuries after the Buddha and reestablished emptiness as the central tenet of Buddhism, laying the philosophical groundwork for the Mahayana.
 
 {% include content_blurb.html category="essays" slug="arahants-bodhisattvas-and-buddhas_bodhi" %}
 - In this essay, Bhikkhu Bodhi explores the Bodhisattva ideal from the perspective of the Theravāda and Mahayana.
@@ -179,7 +179,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 ##### Chapter 5: “The Pantheon”
 
 {% include content_blurb.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
-- In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expedience. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated ad-infinitum in texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which has persisted to today.
+- In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expedience. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated in later texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which persists today.
 
 {% include content_blurb.html category="av" slug="abduction-of-queen-kakati_patrick-kit" %}
 - But, as Buddhism became more popular and spread around and out of India, it also picked up an artistic and mythological richness that textured and enlivened the tradition. Indeed, Buddhism’s ability to embrace and contextualize local mythology has long been a key to its ability to spread peacefully.
@@ -256,7 +256,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 [CBT] Th.90–91, Th.146, Th.159
 {:.mb-0}
-- The Theravadin philosophical tradition loves to break Dharmas into exact parts and definitions.
+- The Theravāda philosophical tradition loves to break Dharmas into exact parts and definitions.
 
 [CBT] Th.135, Th.152, Th.145
 {:.mb-0}
@@ -316,7 +316,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 
 [CBT] M.127
 {:.mb-0}
-- And a "direct, non-conceptual" experience of the truth,opposed to the mere "verbal" Dharma of the sutras.
+- And a "direct, non-conceptual" experience of the truth, opposed to the mere "verbal" Dharma of the sutras.
 
 [CBT] M.31
 {:.mb-0}
