@@ -9,7 +9,7 @@ drive_links:
 course: tibetan
 tags:
   - sangha
-  - problems
+  - dialogue
 year: 2005
 publisher: lotsawa-house
 pages: 3
