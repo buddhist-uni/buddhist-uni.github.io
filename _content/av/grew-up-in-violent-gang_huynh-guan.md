@@ -11,7 +11,7 @@ course: inner # maybe down to perception or psychology some day
 tags:
   - thought
   - crime
-  - prison
+  - prisons
   - asian-america
 year: 2020
 month: oct

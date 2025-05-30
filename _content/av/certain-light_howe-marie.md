@@ -7,7 +7,7 @@ reader: "Victoria Chang"
 external_url: "https://www.slowdownshow.org/episode/2024/03/26/1082-a-certain-light-by-marie-howe"
 course: communication
 tags:
-  - family
+  - families
   - illness
   - aging
 year: 2024

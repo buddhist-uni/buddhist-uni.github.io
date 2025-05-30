@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1zXrZqxpcP-zdzec8bVfy5cT2yq3Jeu3L/view?usp=drivesdk"
 tags:
   - religion
-  - disaster
+  - disasters
   - form
 year: 2021
 month: dec

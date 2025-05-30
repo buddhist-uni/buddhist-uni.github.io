@@ -1,3 +1,17 @@
+const UNSTEMMED_WORDS = new Set([
+  "animism",
+  "americas",
+  "industrialization",
+  // Don't confuse these with "modern" Buddhism
+  //    ... Though maybe I should rename these tags?
+  "modernism",
+  "modernity",
+  // the following collided with "community"
+  "communication",
+  "communism",
+  "communist",
+]);
+
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');

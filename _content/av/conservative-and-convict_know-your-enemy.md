@@ -13,7 +13,7 @@ drive_links:
 course: communication
 tags:
   - persuasion
-  - prison
+  - prisons
 year: 2022
 month: may
 series: know-your-enemy

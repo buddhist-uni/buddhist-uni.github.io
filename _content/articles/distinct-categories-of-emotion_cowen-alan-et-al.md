@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1RjJ6VLnqMwMxyTSPxx1A8qeEjzXtJFwt/view?usp=drivesdk"
 course: feeling # compromise. Maybe up to inner?
 tags:
-  - emotion
+  - emotions
   - film
 year: 2017
 month: sep

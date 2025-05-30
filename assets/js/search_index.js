@@ -6,6 +6,15 @@ importScripts("/assets/js/utils.js");
 function unaccent(e) { return e.update(utils.unaccented); }
 lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
+// IMPORTANT! Keep this up-to-date with the version in /_tests/tags.md
+const OBU_STEMMER = function (token, i, tokens) {
+  // Don't stem tags
+  if (UNSTEMMED_WORDS.has(token.toString().toLowerCase())) {
+    return token;
+  }
+  return lunr.stemmer(token, i, tokens);
+}
+
 // Parameters
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100;
@@ -47,6 +56,10 @@ var idx = lunr(function () {
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
     // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
+    this.pipeline.remove(lunr.stemmer);
+    this.searchPipeline.remove(lunr.stemmer);
+    this.pipeline.add(OBU_STEMMER);
+    this.searchPipeline.add(OBU_STEMMER);
     for (var key in store) {
         var v = store[key];
         this.add({

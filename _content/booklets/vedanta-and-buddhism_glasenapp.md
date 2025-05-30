@@ -18,7 +18,7 @@ tags:
   - hinduism
   - anatta
   - west
-  - brahman
+  - brahmanism
   - god
   - buddhism
 pages: 8

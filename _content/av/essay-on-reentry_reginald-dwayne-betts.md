@@ -9,7 +9,7 @@ course: communication
 status: featured
 tags:
   - parenting
-  - prison
+  - prisons
 year: 2020
 month: jan
 series: slowdown

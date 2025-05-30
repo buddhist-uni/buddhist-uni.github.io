@@ -1,6 +1,14 @@
 {
     "files.associations": {
-        "*.html": "liquid"
+        "*.html": "liquid",
+        "*.liquid": "liquid",
+        "*.md": "liquid",
+        "*.js": "liquid-javascript",
+        "*.scss": "liquid-scss"
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "cSpell.enabledFileTypes": {
+        "javascript": false
+    },
+    "javascript.validate.enable": false
 }
