@@ -4,7 +4,7 @@ authors:
   - milarepa
 editor: "Bhikkhu Khantipālo"
 translator: "Garma C.C. Chang"
-external_url: "https://www.bps.lk/olib/wh/wh095_Chang_Sixty-Songs-of-Milarepa.pdf"
+external_url: "https://www.bps.lk/olib/wh/wh095_Chang_Sixty-Songs-of-Milarepa.html"
 drive_links:
   - "https://drive.google.com/file/d/18GKdHx22zXi0dpPHLUDqedP5Rr_B2b58/view?usp=sharing"
 course: tibetan
@@ -16,7 +16,7 @@ publisher: bps
 address: "Kandy"
 series: wheel
 number: 95
-pages: 125 
+pages: 70 
 ---
 
 > In the teaching of my Guru, my mind is always happy.  
