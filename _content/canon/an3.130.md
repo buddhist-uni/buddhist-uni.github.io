@@ -10,6 +10,7 @@ tags:
   - stages
   - anagami
   - iddhi
+  - divination
 pages: 1
 ---
 
