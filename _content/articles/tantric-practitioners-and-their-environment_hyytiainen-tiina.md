@@ -1,5 +1,5 @@
 ---
-title: "Repkong tantric practitioners and their environment: Observing the vow of not taking life"
+title: "Repkong Tantric Practitioners and their Environment: Observing the Vow of Not Taking Life"
 authors:
   - "Tiina Hyytiäinen"
 external_url: "https://scispace.com/pdf/repkong-tantric-practitioners-and-their-environment-10iryq1vtd.pdf"
@@ -8,7 +8,6 @@ drive_links:
 course: tibetan
 tags:
   - problems
-  - culture
   - nature
 year: 2011
 journal: store

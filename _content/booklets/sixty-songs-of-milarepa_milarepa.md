@@ -3,7 +3,7 @@ title: "Sixty Songs of Milarepa"
 subcat: poetry
 authors:
   - milarepa
-editor: "Bhikkhu Khantipālo"
+editor: mills-laurence
 translator: "Garma C. C. Chang"
 external_url: "https://www.bps.lk/olib/wh/wh095_Chang_Sixty-Songs-of-Milarepa.html"
 drive_links:
@@ -12,7 +12,7 @@ drive_links:
 course: tibetan
 tags:
   - mahayana
-  - meditation
+  - renunciation
 year: 1980
 publisher: bps
 address: "Kandy"
