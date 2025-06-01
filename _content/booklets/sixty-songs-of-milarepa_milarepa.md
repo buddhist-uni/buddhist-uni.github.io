@@ -1,5 +1,6 @@
 ---
-title: "Sixty Songs of Milarepa" 
+title: "Sixty Songs of Milarepa"
+subcat: poetry
 authors:
   - milarepa
 editor: "Bhikkhu Khantipālo"
