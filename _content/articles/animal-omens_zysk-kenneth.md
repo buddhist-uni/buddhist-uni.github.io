@@ -8,7 +8,6 @@ drive_links:
 course: animals
 tags:
   - avadana
-  - iddhi
   - medieval
   - divination
 year: 2023

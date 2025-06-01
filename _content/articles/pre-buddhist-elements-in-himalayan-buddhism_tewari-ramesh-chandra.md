@@ -8,7 +8,6 @@ drive_links:
 course: tibetan
 tags:
   - form
-  - iddhi
   - animism
   - divination
 year: 1987
