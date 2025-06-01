@@ -8,6 +8,7 @@ translator: "Garma C.C. Chang"
 external_url: "https://www.bps.lk/olib/wh/wh095_Chang_Sixty-Songs-of-Milarepa.html"
 drive_links:
   - "https://drive.google.com/file/d/18GKdHx22zXi0dpPHLUDqedP5Rr_B2b58/view?usp=sharing"
+  - "https://drive.google.com/file/d/1VkS2P_FJ1Q0FU5Bt1dNTGDgXqs16-r7q/view?usp=drive_link"
 course: tibetan
 tags:
   - mahayana
