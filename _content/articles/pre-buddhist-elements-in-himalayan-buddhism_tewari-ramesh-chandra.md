@@ -10,6 +10,7 @@ tags:
   - form
   - iddhi
   - animism
+  - divination
 year: 1987
 month: jun 
 journal: jiabs

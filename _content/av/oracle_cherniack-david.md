@@ -9,6 +9,7 @@ tags:
   - deva
   - iddhi
   - spirit-mediums
+  - divination
 year: 2006
 oclc: 694526022
 publisher: "UFO TV"

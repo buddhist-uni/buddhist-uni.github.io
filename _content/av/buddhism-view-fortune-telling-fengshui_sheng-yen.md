@@ -12,6 +12,7 @@ tags:
   - east-asian
   - problems
   - iddhi
+  - divination
 address: "Taipei"
 year: 1994
 publisher: "Dharma Drum Publishing"

@@ -10,6 +10,7 @@ tags:
   - avadana
   - iddhi
   - medieval
+  - divination
 year: 2023
 month: mar
 journal: aririab
