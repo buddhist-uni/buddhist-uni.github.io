@@ -4,7 +4,7 @@ subcat: poetry
 authors:
   - milarepa
 editor: "Bhikkhu Khantipālo"
-translator: "Garma C.C. Chang"
+translator: "Garma C. C. Chang"
 external_url: "https://www.bps.lk/olib/wh/wh095_Chang_Sixty-Songs-of-Milarepa.html"
 drive_links:
   - "https://drive.google.com/file/d/18GKdHx22zXi0dpPHLUDqedP5Rr_B2b58/view?usp=sharing"
