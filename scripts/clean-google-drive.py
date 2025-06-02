@@ -27,6 +27,14 @@ argument_parser.add_argument(
   '--no-shortcuts', action='store_false', dest='shortcuts',
   help="Turn off creating shortcuts in private folders for public files"
 )
+argument_parser.add_argument(
+  '--no-ensure-shared', action='store_false', dest='ensure_shared',
+  help="Turn off ensuring all Google Drive links in website content are publicly shared."
+)
+argument_parser.add_argument(
+  '--no-check-links', action='store_false', dest='check_links',
+  help="Turn off checking the status of Google Drive links in website content."
+)
 
 website.load()
 
@@ -176,13 +184,66 @@ def create_missing_shortcuts(pair, verbose=True):
       raise RuntimeError("I really don't know what to do here!  The Website, private drive and public drive all disagree!!")
     create_drive_shortcut(public_file['id'], f"[should live in {canon_ref}] {public_file['name']}", private_fid)
 
+
+def ensure_all_drive_links_are_shared():
+  """
+  Ensures all Google Drive links found in the website content are shared with everyone.
+  """
+  all_public_gids = []
+  for page in website.content:
+    if page.drive_links:
+      for glink in page.drive_links:
+        gid = gdrive.link_to_id(glink)
+        if gid:
+          all_public_gids.append(gid)
+
+  print(f"Fetching permissions info about {len(all_public_gids)} Google Drive files...")
+  gdrive.ensure_these_are_shared_with_everyone(all_public_gids)
+  print("Done! (ensuring all drive links are shared)")
+
+
+def check_all_drive_links_status():
+  """
+  Checks the status of all Google Drive links found in the website content.
+  Verifies that the files are not trashed and warns about any missing or problematic links.
+  """
+  def _fetch_all_content_drive_ids():
+    for content_page in website.content:
+      for link in content_page.get('drive_links', []):
+        gid = gdrive.link_to_id(link)
+        if not gid:
+          print(f"Warning: Unable to extract id from \"{link}\"")
+        else:
+          yield gid
+
+  drive_ids = set(_fetch_all_content_drive_ids())
+  seen_ids = set()
+
+  print("\nChecking drive links status:")
+  for gfile in gdrive.batch_get_files_by_id(list(drive_ids), "id,name,trashed"):
+    seen_ids.add(gfile['id'])
+    if gfile['trashed']:
+      print(f"ERROR! {gdrive.DRIVE_LINK.format(gfile['id'])} ('{gfile.get('name', 'N/A')}') is trashed!")
+
+  unseen_ids = drive_ids - seen_ids
+  if unseen_ids:
+    print(f"Warning: The following Drive IDs were found in content but not retrieved from Drive (may be invalid or no longer exist): {unseen_ids}")
+  print("Done! (checking all drive links status)")
+
+
 if __name__ == "__main__":
   arguments = argument_parser.parse_args()
   print("Will perform the following tasks:")
   print(f"  Shortcuts: {arguments.shortcuts}")
+  print(f"  Ensure Shared: {arguments.ensure_shared}")
+  print(f"  Check Links: {arguments.check_links}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
   if arguments.shortcuts:
     create_all_missing_shortcuts(verbose=arguments.verbose)
+  if arguments.ensure_shared:
+    ensure_all_drive_links_are_shared()
+  if arguments.check_links:
+    check_all_drive_links_status()
   print("All tasks complete")
