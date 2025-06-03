@@ -14,5 +14,5 @@ publisher: "The Discovery Channel"
 minutes: 5
 ---
 
-> These dull edged blades to be are called 'blanks.'
+> These dull-edged blades-to-be are called 'blanks.'
 
