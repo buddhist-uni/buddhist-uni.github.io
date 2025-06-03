@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/18y73ZmOke294KdIaBtFbCeV2vFE5irnu/view?usp=sharing"
 course: tibetan
 tags:
-  - problems
   - nature
 year: 2011
 journal: store
