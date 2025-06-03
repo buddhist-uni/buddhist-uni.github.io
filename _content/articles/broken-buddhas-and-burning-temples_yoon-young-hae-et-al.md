@@ -11,6 +11,8 @@ course: korean
 tags:
   - christianity
   - modern
+  - interfaith
+  - extremism
 year: 2018
 journal: bsr
 volume: 34

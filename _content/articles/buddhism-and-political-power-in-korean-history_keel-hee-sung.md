@@ -8,6 +8,7 @@ drive_links:
 course: korean
 tags:
  - form
+ - society
 year: 1978
 month: jun
 journal: jiabs
