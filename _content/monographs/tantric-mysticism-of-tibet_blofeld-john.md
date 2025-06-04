@@ -1,5 +1,5 @@
 ---
-title: "The Tantric Mysticism of Tibet "
+title: "The Tantric Mysticism of Tibet"
 authors:
   - "John Blofeld"
 editor: "Allan R. Bomhard"
