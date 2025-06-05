@@ -3,6 +3,7 @@ title: "The Tantric Mysticism of Tibet"
 authors:
   - "John Blofeld"
 editor: "Allan R. Bomhard"
+source_url: "https://www.tsemrinpoche.com/download/Tantra/en/John%20Blofeld%20-%20The%20Tantric%20Mysticism%20of%20Tibet.pdf"
 external_url: "https://archive.org/details/TantricMysticismOfTibet?"
 drive_links:
   - "https://drive.google.com/file/d/1Z5wiuO87Ch2_Z4Fg99bdY99bbxHCIIuu/view?usp=drive_link"
@@ -10,6 +11,7 @@ course: tibetan
 tags:
   - meditation
 year: 2002
+olid: OL59257190M
 publisher: "Charleston Buddhist Fellowship"
 pages: 177
 ---
