@@ -7,9 +7,10 @@ drive_links:
   - "https://drive.google.com/file/d/1WyGtXnCQxKNCLnP2M29SHQ0W8NhWkGbI/view?usp=sharing"
 course: tibetan 
 tags:
-  - state
+  - asia
 year: 2023
 month: mar
+journal: "BBC News Online"
 publisher: "British Broadcasting Corporation"
 address: "UK"
 pages: 7 
