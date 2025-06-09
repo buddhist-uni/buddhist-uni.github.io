@@ -1,6 +1,7 @@
 ---
 title: "The Standford Encyclopedia of Philosophy"
 external_url: "https://plato.stanford.edu"
+year: 1995
 ---
 
 An online encyclopedia of topics in philosophy.

@@ -13,7 +13,7 @@ illustration_caption: >-
   <a href="https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_Edoziman_Oeshiki.jpg#mw-jump-to-license">This 19th century postcard</a>
   depicts pilgrims approaching Ikegami Honmon-ji temple for its annual festival
   commemorating the passing of Nichiren.
-  Great, spiritual beings in Japan are said to concentrate their power at specific, meaningful locations
+  Great, spiritual beings in Japan are thought to concentrate their power at specific, meaningful locations
   which people can tap into if they draw near.
 image: https://illeakyw.sirv.com/Images/banners/Sunlight_through_clouds_and_view_of_Ginkaku-ji_Temple_from_above%2C_Kyoto%2C_Japan.jpg
 image_width: 2560

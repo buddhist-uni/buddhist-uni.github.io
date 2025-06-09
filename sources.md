@@ -83,7 +83,8 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 <div markdown="1" data-link-type="journals">
 ## Periodicals
 
-{% for j in site.journals %}
+{% assign journals = site.journals | sort: "year" %}
+{% for j in journals %}
 * [{{ j.title }}]({{ j.external_url }}){:data-slug="{{ j.slug }}"}{% endfor %}
 </div>
 

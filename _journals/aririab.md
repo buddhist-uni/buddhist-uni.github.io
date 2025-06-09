@@ -2,6 +2,7 @@
 title: "The Annual Report of the International Research Institute for Advanced Buddhology"
 publisher: sgi
 external_url: "https://iriab.soka.ac.jp/en/publication/aririab.html"
+year: 1998
 ---
 
 An annual journal of research articles on a variety of topics in Buddhist studies.
