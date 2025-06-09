@@ -11,9 +11,9 @@ tags:
 year: 2023
 month: mar
 journal: "BBC News Online"
-publisher: "British Broadcasting Corporation"
-address: "UK"
-pages: 7 
+publisher: "the British Broadcasting Corporation"
+address: "London"
+pages: 7
 ---
 
 > Some experts think Beijing wants to bring Buddhist holy sites, like Tawang, under its control to cement its authority over Tibet. When the current Dalai Lama fled to India in 1959, he reached Tawang first after crossing mountains by foot.
