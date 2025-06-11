@@ -19,3 +19,5 @@ pages: "205--251"
 to define divinity and mortality in terms that are direct inversions of one another.
 
 In this final part of a two-part study the 5th Dalai Lama's divine kingship, the author explores how the concept of residual karma explains the Dalai Lama’s mortality despite his spiritual perfection. Drawing on scriptural sources and the writings of the Desi—a secular regent in Tibetan governance—the essay shows how this concept helped reconcile divine kingship with the human realities of suffering and death.
+
+Part one of this study can be found [here](/content/articles/divinity-of the-dalai-lama-scriptural-sources_maccormack-ian.md)
