@@ -1,5 +1,5 @@
 ---
-title: "The Mortality of the Dalai Lama and its Scriptural Sources"
+title: "The Mortality of the Dalai Lama and its Scriptural Sources: More on Tibetan Political Theology"
 authors:
   - "Ian MacCormack"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3291580&journal_code=JIABS"
@@ -7,8 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1x0mAq8NUVrF28cRu6Bmqrl2K0TtXJaQq/view?usp=drive_link"
 course: tibetan
 tags:
-  - power
-  - politics
+  - tibet
+  - political-ideology
+  - society
 year: 2022
 journal: jiabs
 volume: 45

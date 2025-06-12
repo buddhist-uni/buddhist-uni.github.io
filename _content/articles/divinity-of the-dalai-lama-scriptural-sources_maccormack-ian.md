@@ -7,8 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1r7ztbuS61ZrLhWBw966VSEVB7dSo8c0q/view?usp=drivesdk"
 course: tibetan-roots
 tags:
-  - power
-  - politics
+  - tibet
+  - political-ideology
+  - society
 year: 2020
 journal: jiabs
 volume: 43
