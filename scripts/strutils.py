@@ -52,7 +52,7 @@ italics = re.compile(r'</?(([iI])|(em))[^<>nm]*>')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 abnormalchars = re.compile(r'[^\w\s]')
 sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
-yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/|youtube\.com\/live\/)([a-zA-Z0-9_-]{11})')
+yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|live)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
 yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
 yaml_key = re.compile(r"^[a-z_]+:.*")
 
