@@ -9,7 +9,7 @@ course: society
 tags:
   - things
   - pollution
-  - political-ideologies
+  - political-ideology
 year: 2024
 month: aug
 minutes: 78

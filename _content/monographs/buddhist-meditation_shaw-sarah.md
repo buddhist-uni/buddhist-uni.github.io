@@ -2,10 +2,8 @@
 title: "Buddhist Meditation: An Anthology of Texts from the Pāli Canon"
 authors:
   - shaw-s
-course: samatha
 tags:
-  - sati
-  - meditation # maybe should move here?
+  - meditation
   - theravada
 year: 2006
 olid: OL3403394M

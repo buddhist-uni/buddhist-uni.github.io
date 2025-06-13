@@ -8,8 +8,10 @@ external_url: "https://dharmaebooks.org/the-lamp-for-the-path-to-enlightenment/"
 drive_links:
   - "https://drive.google.com/file/d/1gIOnGs_LTTSmwwUtKVfblJrq5mFdZm7g/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-SpKvPvTigYQwROakv4mzLd92ubS1NuA/view?usp=drivesdk"
+course: tibetan
 tags:
-  - path
+  - mahayana
+olid: OL59287142M
 year: 2017
 month: nov
 pages: 40

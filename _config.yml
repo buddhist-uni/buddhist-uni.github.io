@@ -50,7 +50,7 @@ last-modified-at:
     set-page-date: true
 rss: RSS Feeds
 feed:
-  posts_limit: 10000
+  posts_limit: 5000
   disable_in_development: true
   collections:
     content:
