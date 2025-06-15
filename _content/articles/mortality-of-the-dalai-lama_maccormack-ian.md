@@ -7,9 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1x0mAq8NUVrF28cRu6Bmqrl2K0TtXJaQq/view?usp=drive_link"
 course: tibetan
 tags:
-  - tibet
-  - political-ideology
-  - society
+  - nonmaterial-culture
 year: 2022
 journal: jiabs
 volume: 45

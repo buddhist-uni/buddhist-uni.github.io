@@ -57,7 +57,7 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='', pageco
         category = 'papers'
     case 'reference-entry' | 'database' | 'dataset' | 'reference-book' | 'standard':
         category = 'reference'
-    case 'proceedings-article' | 'journal-article' | 'article' | 'review' | 'preprint':
+    case 'proceedings-article' | 'journal-article' | 'article' | 'review' | 'preprint' | 'editorial':
         category = 'articles'
     case 'posted-content' | 'other':
         category = 'essays'

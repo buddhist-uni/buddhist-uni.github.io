@@ -17,11 +17,12 @@ import openalextopics as topics
 import journals
 
 # https://docs.openalex.org/
-APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:!{journals.BSR},locations.source.id:!{journals.JIABS},locations.source.id:!{journals.JGB},locations.source.id:!{journals.JJRS},locations.source.id:!{journals.IJDS},locations.source.id:!{journals.JBE},locations.source.id:!{journals.HIJBS},locations.source.id:!{journals.JCB},topics.id:{topics.INDONESIAN_CULTURE},cited_by_count:%3E2,publication_year:%3E1970,publication_year:%3C2022&per_page=100&page=1&sort=cited_by_count:desc"
+APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=100&page=2&sort=cited_by_count:desc"
+#APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:!{journals.BSR},locations.source.id:!{journals.JIABS},locations.source.id:!{journals.JGB},locations.source.id:!{journals.JJRS},locations.source.id:!{journals.IJDS},locations.source.id:!{journals.JBE},locations.source.id:!{journals.HIJBS},locations.source.id:!{journals.JCB},topics.id:{topics.INDONESIAN_CULTURE},cited_by_count:%3E2,publication_year:%3E1970,publication_year:%3C2022&per_page=100&page=1&sort=cited_by_count:desc"
 #APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
 #APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
 
-REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}
+REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"}
 
 FNAME_MAXLEN = 192 # 126 might be safer
 
@@ -51,9 +52,9 @@ SEEN_FILE = os.path.join(METADATA_DIR, "works_seen.txt")
 titlefilter = re.compile('(<[^<]+?>)|(\[[^\[]+?\])|["”“„«»›‹‘’]')
 
 PDF_LINKS = {
-  "https://doi.org/10.18874/jjrs.": ("/pdf/download", lambda s: s),
-  "https://doi.org/10.1080/14639947.": ("/doi/epdf/", lambda i: "https://www.tandfonline.com"+i.replace("epdf","pdf").replace('needAccess=true&role=button','download=true')),  
-
+  "https://doi.org/10.18874/jjrs.": ("/pdf/download", lambda s, o: s),
+  "https://doi.org/10.1080/14639947.": ("/doi/epdf/", lambda i, o: "https://www.tandfonline.com"+i.replace("epdf","pdf").replace('needAccess=true&role=button','download=true')),  
+  "https://www.ncbi.nlm.nih.gov/pmc/articles": ("pdf/nih", lambda s, o: f"{o}/{s}"),
 }
 
 def assert_cd_is_writable():
@@ -76,7 +77,7 @@ def download(url: str, filename: str, expected_type=None) -> bool:
   
   link_pattern = None
   for k, v in PDF_LINKS.items():
-    if url.startswith(k):
+    if url.startswith(k) and not url.endswith(".pdf"):
       link_pattern = v
       break
   if link_pattern:
@@ -89,13 +90,15 @@ def download(url: str, filename: str, expected_type=None) -> bool:
             if not l:
               continue
             if link_pattern[0] in l:
-                nurl = link_pattern[1](l)
+                nurl = link_pattern[1](l, url)
                 break
       if nurl:
         print(f"  Trying again with custom redirect \"{nurl}\"...")
         return download(nurl, filename, expected_type)
       else:
-        print(f"  Failed to parse DOI!")
+        print(f"  Failed to parse webpage!")
+        Path("page.html").write_text(r.text)
+        print("  Look in page.html to debug")
   
   is_doi = url.split("/")[2] == "doi.org"
   try:
@@ -252,7 +255,7 @@ if __name__ == "__main__":
         entrypath = make_library_entry_for_work(work, "_drafts/_content")
       else:
         print("Download failed.")
-        if prompt("Would you like to make an entry for it anyway?"):
+        if prompt("Would you like to make an entry for it anyway?", 'n'):
           url = input("Use a different url (leave blank for no)?")
           if url:
             work['open_access']['oa_url'] = url
