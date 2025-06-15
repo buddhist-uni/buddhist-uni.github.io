@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1J2nnSRHFwN3TiV_4MMFPbPvGKGuVwm6Q/view?usp=sharing"
 course: tibetan
 tags:
-  - philosophy
+  - view
 year: 2022
 journal: plato
 pages: 20

@@ -1,5 +1,5 @@
 ---
-title: "The Nature-Deities of Tibet: A discussion on the tale “The Subduing and Putting under Oath of Tibet’s Malignant lha 'dre” in *Padma bka' thang*"
+title: "The Nature-Deities of Tibet: A discussion on the tale “The Subduing and Putting under Oath of Tibet’s Malignant *lha 'dre*” in *Padma bka' thang*"
 authors:
   - "Thupten K. Rikey"
 external_url: "https://journal.fi/store/article/view/51549"

@@ -24,7 +24,7 @@ But imagine that for, say, an Amazonian tribesperson.
 If they were to say that the forest they live in is 'just illusion,' they'd be dead within a day, right?
 Ecology requires us to have a deep attentiveness to the [relational] way reality manifests
 
-> Nature is full of intermediary beings.
+> Nature is full of intermediary forces.
 Traditions will always find their way back to intermediary beings because I think we need them.
 
 > 'Animism' is just a Western term to describe the way everybody sees the world.
