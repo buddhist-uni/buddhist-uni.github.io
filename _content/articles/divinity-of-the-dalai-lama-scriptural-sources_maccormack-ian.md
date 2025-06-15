@@ -20,4 +20,4 @@ pages: "81--127"
 
 In the first part of his two-part study, Ian MacCormack examines the theological foundations of the Dalai Lama's divine kingship as articulated by the Desi Sangyé Gyatso (1653–1705), the 5th Dalai Lama's regent. This nuanced depiction underscores the complex interplay between ultimate truth and conventional reality in Tibetan political theology.
 
-Part two of this study can be found [here](/content/articles/mortality-of-the-dalai-lama_maccormack-ian.md)
+Part two of this study can be found [here](/content/articles/mortality-of-the-dalai-lama_maccormack-ian)
