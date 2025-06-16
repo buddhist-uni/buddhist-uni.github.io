@@ -7,11 +7,11 @@ editor: salguero-p
 external_url: "https://blueberyl.buzzsprout.com/2044347/episodes/17280879-the-mandala-of-animist-forces-with-josh-schrei"
 drive_links:
   - "https://drive.google.com/file/d/1kBJ1-vsd7F8MrPbt5nVRYyGG0Kqcjagc/view?usp=drivesdk"
-course: cosmology
-tags:
-  - animism # maybe here?
+course: mythology
+tags: # could move to any of these tbh
+  - animism
   - iddhi
-  - mythology
+  - cosmology
 year: 2025
 month: jun
 series: blue-beryl

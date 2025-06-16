@@ -17,7 +17,7 @@ import openalextopics as topics
 import journals
 
 # https://docs.openalex.org/
-APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=100&page=2&sort=cited_by_count:desc"
+APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=50&page=7&sort=cited_by_count:desc"
 #APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:!{journals.BSR},locations.source.id:!{journals.JIABS},locations.source.id:!{journals.JGB},locations.source.id:!{journals.JJRS},locations.source.id:!{journals.IJDS},locations.source.id:!{journals.JBE},locations.source.id:!{journals.HIJBS},locations.source.id:!{journals.JCB},topics.id:{topics.INDONESIAN_CULTURE},cited_by_count:%3E2,publication_year:%3E1970,publication_year:%3C2022&per_page=100&page=1&sort=cited_by_count:desc"
 #APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
 #APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
