@@ -2,14 +2,14 @@
 title: "Negotiating Order in the Land of the Dragon and the Hidden Valley of Rice: Local Motives and Regional Networks in the Transmission of New “Tibetan” Buddhist Lineages in Bhutan and Sikkim"
 authors:
   - "Amy Holmes-Tagchungdarpa"
-external_url: "https://www.degruyterbrill.com/document/doi/10.1515/9780824877200-009/html?srsltid=AfmBOoolVCIm_8YDaeDAY-e3pYvbLJWou_kGn4v5RTniyknCYxlUOlTN"
+external_url: " https://www.degruyterbrill.com/document/doi/10.1515/9780824877200-009/pdf?licenseType=open-access"
 drive_links:
   - "https://drive.google.com/file/d/19j469kMh6NgL9EXxt2pbrWEqCGak91Wn/view?usp=sharing"
 course: tibetan
 tags:
-  - sangha
+  - form
 year: 2019
-publisher: aup
+publisher: hawaii
 booktitle: "Buddhist and Islamic Orders in Southern Asia"
 pages: "185--207"
 chapter: 8
