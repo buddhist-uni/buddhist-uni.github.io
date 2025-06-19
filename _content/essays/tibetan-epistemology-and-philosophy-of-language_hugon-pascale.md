@@ -7,8 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/13Lk-x_vJ_9Tw_w3zMoclNoq9V8ALP2LJ/view?usp=sharing"
 course: tibetan
 tags:
-  - thought
-  - tiebtan-roots
+  - epistemology
 year: 2011
 month: feb
 publisher: plato
