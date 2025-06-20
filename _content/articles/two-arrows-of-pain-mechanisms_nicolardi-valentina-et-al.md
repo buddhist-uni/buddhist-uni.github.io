@@ -27,4 +27,4 @@ openalexid: W4210492330
 
 A scientific attempt at investigating the Buddhist theory of pain which unfortunately suffers from several methodological flaws: foremost among them that the participants likely understood the point of the study and thus had an incentive to produce self-reports showing the desired correlations.
 
-And, the paper used [violin plots](https://youtu.be/_0QMKFzW9fw){:target="_blank"}.
+And, even worse, the paper used [violin plots](https://youtu.be/_0QMKFzW9fw){:target="_blank"}.

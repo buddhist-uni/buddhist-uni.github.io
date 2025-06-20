@@ -5,9 +5,7 @@ authors:
 source_url: "https://web.archive.org/web/20051224163937/http://manjushri.acumaestro.com/TEACH/t-Gelug.htm"
 drive_links:
   - "https://drive.google.com/file/d/1-UPrb2wZ9Y8Mv5g2uCAxrn9Yz70sQS5i/view?usp=sharing"
-course: tibetan
-tags:
-  - mahayana
+course: tibetan # maybe archive
 year: 2001
 pages: 2
 ---
