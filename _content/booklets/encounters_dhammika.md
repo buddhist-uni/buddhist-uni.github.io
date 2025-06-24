@@ -2,7 +2,7 @@
 title: "Encounters with Buddhism"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2022/03/03/encounters-with-buddhism/"
+external_url: "https://budblooms.org/encounters-with-buddhism/"
 drive_links:
   - "https://drive.google.com/file/d/1IPb_Gl4ucjbV1FBXETI4w7s5o_VMF-Tb/view?usp=drivesdk"
 file_links:

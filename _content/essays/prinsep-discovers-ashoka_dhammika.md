@@ -2,7 +2,7 @@
 title: "James Prinsep and the Discovery of King Asoka"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/05/10/james-prinsep-and-the-discovery-of-king-asoka/"
+external_url: "https://budblooms.org/james-prinsep-and-the-discovery-of-king-asoka/"
 drive_links:
   - "https://drive.google.com/file/d/16VubNHEireiIJgDRLIE9l92oOT_Cdtfv/view?usp=drivesdk"
 file_links:

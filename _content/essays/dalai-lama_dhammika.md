@@ -1,7 +1,7 @@
 ---
 title: "Explaining the Dalai Lama"
 authors: [dhammika]
-external_url: "https://budblooms.org/2020/05/11/explaining-the-dalai-lama/"
+external_url: "https://budblooms.org/explaining-the-dalai-lama/"
 drive_links: ["https://drive.google.com/file/d/1hizpC7bX2k_jLfYWu6bHi8xoCbGn4De2/view?usp=drivesdk"]
 file_links:
   - "smallpdfs/dhammika_2011_dalai-lama.pdf"

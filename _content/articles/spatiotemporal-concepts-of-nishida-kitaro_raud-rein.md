@@ -2,7 +2,7 @@
 title: "‘Place’ And ‘Being-Time’: Spatiotemporal Concepts In The Thought Of Nishida Kitaro And Dogen Kigen"
 authors:
   - "Rein Raud" 
-external_url: "https://www.thezensite.com/ZenEssays/Philosophical/Place_and_BeingTime.html"
+external_url: "http://www.thezensite.com/ZenEssays/Philosophical/Place_and_BeingTime.html"
 drive_links:
   - "https://drive.google.com/file/d/1fW1gn1q2uKl6c5KjyyuW87owyIGpI4pb/view?usp=sharing"
 course: dialogue

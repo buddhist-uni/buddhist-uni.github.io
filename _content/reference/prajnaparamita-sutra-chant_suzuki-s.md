@@ -1,7 +1,7 @@
 ---
 title: "The Prajna Paramita Sutra"
 translator: suzuki-s
-external_url: "https://www.thezensite.com/ZenTeachings/Translations/Ginsburg_Heart_Sutra.html"
+external_url: "http://www.thezensite.com/ZenTeachings/Translations/Ginsburg_Heart_Sutra.html"
 drive_links:
   - "https://drive.google.com/file/d/18OXADM8N28P8vi_s9svI_Jz79yG8uONK/view?usp=sharing"
 course: japanese

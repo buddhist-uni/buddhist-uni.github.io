@@ -2,7 +2,7 @@
 title: "An Eye Transplant and a Pound of Flesh"
 authors:
   - dhammika
-external_url: "http://budblooms.org/2020/05/10/an-eye-transplant-and-a-pound-of-flesh/"
+external_url: "http://budblooms.org/an-eye-transplant-and-a-pound-of-flesh/"
 drive_links:
   - "https://drive.google.com/file/d/11wZSTZPZFDBNU3hZ8C3HDyPk6XKTy22k/view?usp=sharing"
 file_links:

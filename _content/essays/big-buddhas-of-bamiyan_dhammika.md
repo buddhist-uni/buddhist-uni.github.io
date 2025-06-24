@@ -2,7 +2,7 @@
 title: "The Big Buddhas Of Bamiyan"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/05/10/the-big-buddhas-of-bamiyan/"
+external_url: "https://budblooms.org/the-big-buddhas-of-bamiyan/"
 drive_links:
   - "https://drive.google.com/file/d/1KRrlqdA0G1QlopAzuIiFpLyWNYEnlWiZ/view?usp=sharing"
 file_links:

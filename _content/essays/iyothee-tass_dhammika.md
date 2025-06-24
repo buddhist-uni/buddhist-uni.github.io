@@ -2,7 +2,7 @@
 title: "Iyothee Tass: Hero of Tamil Buddhism"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/05/10/iyothee-tass-hero-of-tamil-buddhism/"
+external_url: "https://budblooms.org/iyothee-tass-hero-of-tamil-buddhism/"
 drive_links:
   - "https://drive.google.com/file/d/1owgWTuxOOV2GV55HNdz1rjl__QSSb7x6/view?usp=drivesdk"
 file_links:

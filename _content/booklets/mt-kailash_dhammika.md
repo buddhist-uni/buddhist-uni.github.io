@@ -2,7 +2,7 @@
 title: "Mt Kailash: A Pilgrim's Companion"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/07/19/mt-kailash-a-pilgrims-companion/"
+external_url: "https://budblooms.org/mt-kailash-a-pilgrims-companion/"
 drive_links:
   - "https://drive.google.com/file/d/1o9sDVgZPxuKx9vgFxZmka4H-FfNOUYdq/view?usp=drivesdk"
 file_links:

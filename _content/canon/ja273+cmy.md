@@ -2,7 +2,7 @@
 title: "Ja 273 Kacchapa Jātaka: The Tortoise (A Naughty Jātaka)"
 translator: dhammika
 editor: anandajoti
-external_url: "https://budblooms.org/2020/04/03/a-naughty-jataka/"
+external_url: "https://budblooms.org/a-naughty-jataka/"
 drive_links:
   - "https://drive.google.com/file/d/1MLeYy-wHNWAwWBDFnJUjk67rOyFiObw0/view?usp=sharing"
 course: jataka

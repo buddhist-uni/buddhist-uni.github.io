@@ -4,7 +4,7 @@ title: >-
 authors:
   - "Stephen Jenkins"
 editor: "Michael K. Jerryson and Mark Juergensmeyer"
-external_url: "https://www.thezensite.com/ZenEssays/CriticalZen/Making_Merit_Through_Warfare_and_Torture.pdf"
+external_url: "https://web.archive.org/web/20120120180728if_/http://www.thezensite.com/ZenEssays/CriticalZen/Making_Merit_Through_Warfare_and_Torture.pdf"
 source_url: "https://doi.org/10.1093/acprof:oso/9780195394832.003.0003"
 drive_links:
   - "https://drive.google.com/file/d/1afXp1JqYGwiwn9dcAWIQw5RvQ1EYZQ9F/view?usp=drivesdk"

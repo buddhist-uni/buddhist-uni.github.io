@@ -1,7 +1,7 @@
 ---
 title: "The Food of Awakening"
 authors: [dhammika]
-external_url: "https://budblooms.org/2020/04/03/the-food-of-awakening/"
+external_url: "https://budblooms.org/the-food-of-awakening/"
 source_url: "https://sdhammika.blogspot.com/2008/05/food-of-enlightenment.html"
 year: 2008
 month: may

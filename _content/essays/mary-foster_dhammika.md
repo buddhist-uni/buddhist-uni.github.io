@@ -2,7 +2,7 @@
 title: "Mary Foster: Patron of Buddhism"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/05/10/mary-foster-patron-of-buddhism/"
+external_url: "https://budblooms.org/mary-foster-patron-of-buddhism/"
 source_url: "https://web.archive.org/web/20191211062947/https://www.dailynews.lk/2019/12/11/features/205333/mary-foster-patron-buddhism"
 drive_links:
   - "https://drive.google.com/file/d/1SHKyq6oLC5YosYCYHVLYhUvLWynX3dM1/view?usp=drivesdk"

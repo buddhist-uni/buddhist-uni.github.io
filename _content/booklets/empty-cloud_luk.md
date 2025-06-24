@@ -2,7 +2,7 @@
 title: "Master Hsu Yun's Discourses and Dharma Words"
 authors:
   - "Lu Kuan Yu"
-external_url: "https://www.thezensite.com/ZenTeachings/Master_Hsu-Yun_Discourses_and_Dharma_Words.pdf"
+external_url: "https://web.archive.org/web/20120822120929if_/http://www.thezensite.com/ZenTeachings/Master_Hsu-Yun_Discourses_and_Dharma_Words.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1MhSo3F-Mq9DvqNoqy4ugfYAuDb4Lu81S/view?usp=drivesdk"
 status: featured

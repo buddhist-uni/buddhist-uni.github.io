@@ -2,7 +2,7 @@
 title: "*Hua-t’ou*: A Method of Zen Meditation"
 authors:
   - "Stuart Lachs"
-external_url: "https://www.thezensite.com/ZenTeachings/HuaTou_Lachs.pdf"
+external_url: "https://web.archive.org/web/20120821205856if_/http://www.thezensite.com/ZenTeachings/HuaTou_Lachs.pdf"
 drive_links:
   - "https://drive.google.com/file/d/19J12lz6s_H6uU8E4G5W7uEe90YhngbE9/view?usp=drivesdk"
 course: east-asian

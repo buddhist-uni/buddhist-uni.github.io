@@ -1,7 +1,7 @@
 ---
 title: "Sri Lanka and Tibet"
 authors: [dhammika]
-external_url: "https://budblooms.org/2020/05/10/sri-lanka-and-tibet/"
+external_url: "https://budblooms.org/sri-lanka-and-tibet/"
 drive_links: ["https://drive.google.com/file/d/1XbPzySqkFvxeAVVPcStUJ-vI2W-uzNSP/view?usp=drivesdk"]
 year: 2020
 month: may

@@ -2,7 +2,7 @@
 title: "The Search for the Buddha's Toothbrush"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2020/05/10/the-search-for-the-buddhas-toothbrush/"
+external_url: "https://budblooms.org/the-search-for-the-buddhas-toothbrush/"
 drive_links:
   - "https://drive.google.com/file/d/1WGmijRvsOsw6zdWYUNuvTSHaeFAvEcb2/view?usp=drivesdk"
 tags:

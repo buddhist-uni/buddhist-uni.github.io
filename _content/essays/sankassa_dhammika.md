@@ -4,7 +4,7 @@ authors: [dhammika]
 drive_links: ["https://drive.google.com/file/d/1NnzMmwJ9vHKexmXA2O9bdM30mzpVBiho/view?usp=drivesdk"]
 file_links:
   - "smallpdfs/dhammika_2008_sankassa.pdf"
-external_url: "https://budblooms.org/2020/05/10/the-miracle-of-sankassa-fact-or-fiction/"
+external_url: "https://budblooms.org/the-miracle-of-sankassa-fact-or-fiction/"
 year: 2008
 course: theravada
 tags:

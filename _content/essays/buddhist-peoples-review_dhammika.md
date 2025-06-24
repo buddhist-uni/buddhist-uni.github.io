@@ -2,7 +2,7 @@
 title: "Review of *Peoples of the Buddhist World*"
 authors:
   - dhammika
-external_url: "https://budblooms.org/2021/02/17/peoples-of-the-buddhist-world-a-review/"
+external_url: "https://budblooms.org/peoples-of-the-buddhist-world-a-review/"
 drive_links:
   - "https://drive.google.com/file/d/1F1gTxv5IfiF42EO4gVQ3H3-Q6ANFZq6L/view?usp=drivesdk"
 file_links:
