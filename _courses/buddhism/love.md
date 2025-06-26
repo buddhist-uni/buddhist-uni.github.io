@@ -42,6 +42,12 @@ Here, he talks about kindling and keeping alive our spark of positivity:
 " %}
 {% include inline-av-player.html content="how-to-be-positive_brahm" %}
 
+## Guided Meditation
+
+{% include content_blurb.html category="av" slug="guided-body-meditation_brahm" blurb="
+In this gentle, guided meditation, Ajahn Brahm shows us how to apply kindness to our meditation practice.
+" %}
+
 ## Further Reading
 
 If you enjoyed Ajahn Brahm's teaching style, you may want to check out [_**Opening Up to Kindfulness**_](/content/booklets/opening-up-to-kindfulness_brahm) — a recent collection of his talks transcribed and distributed in honor of his 70th birthday. You can also listen to his large archive of talks over [at the BSWA website](https://bswa.org/teachings/?teacher=564){:target="_blank"}.
