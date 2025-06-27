@@ -5,8 +5,7 @@ authors:
 external_url: "https://youtu.be/GiYO1TObNz8"
 course: state
 tags:
-  - technology
-  - engineering
+  - things
   - time
   - communication
 year: 2018
