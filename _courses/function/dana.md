@@ -1,7 +1,7 @@
 ---
 title: Generosity
 order: 3
-description: To accumulate what is good, we must practicing giving away.
+description: To accumulate what is good, we must practice giving away.
 image: https://buddhistuniversity.net/imgs/function/Bhamo.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Bhamo-novicias-d02.jpg">Colegota</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/es/deed.en">CC BY-SA 2.5 ES</a>
 ---

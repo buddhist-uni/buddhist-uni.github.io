@@ -1,7 +1,7 @@
 ---
 title: Harmony
 order: 6
-description: Humans are social animals and despite its challenges our practice must engage the wider world.
+description: Humans are social animals and, despite its challenges, our practice must engage the wider world.
 image: https://buddhistuniversity.net/imgs/function/tibetan_novices_relaxing.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:Buddhist_monks_(Bhikkhu)-IMG_9186.jpg">Bijay Chaurasia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 ---

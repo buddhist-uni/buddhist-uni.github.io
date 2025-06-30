@@ -44,9 +44,9 @@ Buddhism is the religion founded by the Buddha in approximately the 5th century 
 
 The Buddha taught that everything has a cause. He then used this idea to tackle the problems at the heart of the human condition: death, anxiety, suffering and evil.
 
-He discovered that the cause of our spiritual disease is our erroneous perception that we are at the center of things. The Buddha called this self-centered perspective “ignorance,” and he taught that it is what causes us to suffer when the things which we think of as "me" (my body, my career, my relationships, etc) change in ways which we don't like or fail to change in the ways we would.
+He discovered that the cause of our spiritual disease is our erroneous perception that we are at the center of things. The Buddha called this self-centered perspective “ignorance,” and he taught that it is what causes us to suffer when the things that we think of as "me" (my body, my career, my relationships, etc) change in ways we don't like or fail to change in the ways we would.
 
-The religion the Buddha founded is the set of contemplations, practices and beliefs which he and his disciples discovered help us to overcome our “selfish” tendencies and to attain liberation from the tyranny of “me.”
+The religion the Buddha founded is the set of contemplations, practices and beliefs that he and his disciples discovered help us to overcome our “selfish” tendencies and to attain liberation from the tyranny of “me.”
 
 
 <h2 id="we-will">Course Results</h2>
