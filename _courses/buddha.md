@@ -43,7 +43,7 @@ next_course_descs:
 
 But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first rediscovered _nibbāna_ and taught the way for attaining it.
 
-Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (*deva*)— because only the human realm balances the misfortunes and mistakes of life which are necessary to motivate the practice, with the ease and discernment which allow it to ripen.
+Over 500 million people now worship the Buddha as their teacher, but the Buddha was no god. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (*deva*)—because only the human realm balances the misfortunes and mistakes of life that are necessary to motivate the practice, with the ease and discernment that allow it to ripen.
 
 But while the Buddha was born a man, a man he did not remain. Through his superior striving and wisdom (over countless eons) he was able to transcend gender, caste, creed, identities, views, suffering and even death itself and to teach others how to transcend themselves too. We call such a teacher, “Buddha.”
 

@@ -18,7 +18,7 @@ next_courses:
   - nibbana-mind-stilled
 next_course_descs:
   - "In this course, we illuminate and inhabit the thought world of the Buddha by continuing our close examination of the language, images, and metaphors of 24 other key doctrinal terms from the Early Buddhist Texts."
-  - "Bhikkhu Analayo walks us through a chapter of the Madhyama Āgama on the subject of how tranquility and insight work together to lead the mind to maturity."
+  - "Bhikkhu Analayo walks us through a chapter of the Madhyama Āgama on how tranquility and insight work together to lead the mind to maturity."
   - "A course by Bhikkhu Ñāṇananda on Dependent Origination and the unraveling of Saṃsāra."
 epigraph: |
   > "This song is for the soil  
@@ -146,7 +146,7 @@ I personally find that The Island occasionally leans on the side of eternalism (
 
 #### All That is Conditioned
 
-We will return to Metaphor and Literalism in a few chapters, but first let us talk for a while about nibbāna’s opposites: conditioned reality and suffering (dukkha).
+We will return to Metaphor and Literalism in a few chapters, but first let us talk for a while about Nibbāna’s opposites: conditioned reality and suffering (dukkha).
 
 {% include content_blurb.html category="canon" slug="an8.5" %}
   - How does an arahant relate to the world?
@@ -209,7 +209,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
   - Ajahn Brahmali here argues the other side of the “debate” from _The Island_, explaining how “_anidassana viññāṇa_” should be understood, not as a hidden, pure, or non-dual consciousness, but as something else entirely...
   
 {% include content_blurb.html category="essays" slug="boundless-consciousness_sunyo" %}
-- In this brilliant essay, Bhante Sunyo proposes a elegant solution to the problem in this verse.
+  - In this brilliant essay, Bhante Sunyo proposes an elegant solution to the problem in this verse.
 
 {% include content_blurb.html category="essays" slug="consciousness-where-nothing_sujato" %}
 - And Ven. Sujato puts the final nail in the coffin by putting this sutta back into its historical context.
@@ -220,11 +220,11 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 - A short, enigmatic description of conditioned phenomena (saṃsāra) and unconditioned phenomena (nibbāna).
 
 {% include content_blurb.html category="articles" slug="nibbana-abhidhamma_cousins" %}
-  - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _nibbāna_ develop into the “unconditioned element”?
+  - If experiences, not metaphysical "elements," were the point of Early Buddhism, how did _Nibbāna_ develop into the “unconditioned element”?
 
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Chapter 4 - _Nibbāna_ in the Theravāda Buddhist Tradition
 {: .mb-0}
-  - We return to ML and the analogy of fire in order to better understand the Theravāda developments to the doctrines of _nibbāna_ and _anatta_.
+  - We return to ML and the analogy of fire in order to better understand the Theravāda developments to the doctrines of _Nibbāna_ and _anatta_.
 
 #### The Unapprehendability of the Enlightened
 
@@ -232,7 +232,7 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 {% include content_blurb.html category="canon" slug="mn71" %}
 - Even in the Buddha's day (all the more so later) people tried to attribute omniscience to the Buddha: a claim he rejected.
-- In this sutta, the Buddha explains that, rather than omniscience, it's right view and renunciation that make *nibbāna* "unapprehendable" by ordinary people.
+- In this sutta, the Buddha explains that, rather than omniscience, it's right view and renunciation that make *Nibbāna* "unapprehendable" by ordinary people.
 
 <i class="fas fa-book"></i> ML Chapter 5 - The Northern Schools
 {: .mb-0}
@@ -258,12 +258,12 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 
 <i class="fas fa-book"></i> _Metaphor and Literalism:_ Conclusion and Translations
 {: .mb-0}
-  - The Conclusion is worth a read to tie together our study of Nirvana's history.
+  - The Conclusion is worth a read to tie together our study of Nibbāna's history.
   - Those interested in the primary sources may also wish to read the translations in Part Two. Even a quick skim may be helpful to get a general impression of the genre, but don't worry: this part won't be on the final exam!
 
 #### Knowing, Emptiness and the Radiant Mind
 
-We wrap up this, the main, section of our course, with a brief word on the "Radiant Mind" and related perennial topics:
+We wrap up this, the main section of our course, with a brief word on the "Radiant Mind" and related perennial topics:
 
 {% include content_blurb.html category="canon" slug="sn1.23" %}
 - A short poem (which inspired the Visuddhimagga) on how the path creates “unentangled” knowledge.
@@ -272,7 +272,7 @@ We wrap up this, the main, section of our course, with a brief word on the "Radi
   - Bhikkhu Analayo gives a careful, textual study of the supposedly “luminous” nature of the mind in early Buddhism.  Is such a view supported by the early texts or is this a later development?
 
 {% include content_blurb.html category="excerpts" slug="vihesa_analayo" %}
-  - If the Arahants are beyond "suffering" can they still experience pain? What is the difference between the two? What about painful thoughts?
+  - If the Arahants are beyond "suffering," can they still experience pain? What is the difference between the two? What about painful thoughts?
 
 {% include content_blurb.html category="articles" slug="channa-suicide_analayo" %}
   - The curious case of an arahant committing suicide.  Can someone who has attained the goal decide to kill themselves?

@@ -48,7 +48,7 @@ next_course_descs:
 
 Buddhist Ethics is the training in virtuous conduct beloved by the Noble Ones. Its core principle is non-cruelty: the abstaining from all intentional harm.
 
-The most gross forms of cruelty are the ethical precepts common to all Buddhists and to most other religions besides: the renunciation of killing, stealing, sexual misconduct, false speech, and intoxication. The Buddha's instructions, however, continue far beyond such perennial philosophy: to guarding the senses, the development of positive moral character, and (eventually) to the complete eradication of the underlying tendencies towards greed, hatred and delusion which cause cruelty in the first place. 
+The grossest forms of cruelty are the ethical precepts common to all Buddhists and to most other religions besides: the renunciation of killing, stealing, sexual misconduct, false speech, and intoxication. The Buddha's instructions, however, continue far beyond such perennial philosophy: to guarding the senses, the development of positive moral character, and (eventually) to the complete eradication of the underlying tendencies towards greed, hatred and delusion which cause cruelty in the first place. 
 
 The Buddha's teachings on how to live thus outline a system of transformation which is aimed at awakening — powerful tools for us to use to transform our habits of body, speech, and mind so that they might both afford and accord with liberating insight.
 
@@ -67,7 +67,7 @@ There are two textbooks for this class: one dry and one wet.
 Our "wet" textbook is the Sanskrit classic:
 {% include content_blurb.html category="canon" slug="bodhisattvacaryavatara_santideva" %}
 - This epic poem on grasping firmly the intention to awaken has inspired many generations of Buddhists (myself included) to live a more ethical and spiritual life and it captures beautifully the aesthetic of Buddhist ethics. Well worth reading again and again and again.
-- There are a few English translations of this classic of world literature. Steven Bachelor has a translation available [online here](https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
+- There are a few English translations of this classic of world literature. Stephen Batchelor has a translation available [online here](https://www.tibethouse.jp/wp-content/uploads/2021/08/Bodhisattvas_way_English.pdf){:target="_blank" ga-event-value="1"} for free, but I strongly recommend the Padmakara translation published by Shambhala in 2011 for its unparalleled accuracy and force. 
 
 ## The Course
 
@@ -166,7 +166,7 @@ In Buddhism, the highest good is awakening, and in this chapter Śāntideva expr
 Accepting our faults is a critical starting point for ethical development, and a practice that the Buddha talked much about:
 
 {% include content_blurb.html category="canon" slug="an5.249" %}
-- The Buddha compares an unethical person to a charnal pit to point out the downsides of unethical conduct.
+- The Buddha compares an unethical person to a charnel pit to point out the downsides of unethical conduct.
 
 {% include content_blurb.html category="canon" slug="an8.14" %}
 - How do you react when someone criticizes you? Can you recognize yourself or someone you know in each of these eight ways?
@@ -193,7 +193,7 @@ Accepting our faults is a critical starting point for ethical development, and a
 - Shantideva wishes in this chapter to become "the very medicine itself" for sentient beings, but here the Buddha tells us *not* to "give away" ourselves. How do you understand this contradiction?
 
 {% include content_blurb.html category="booklets" slug="dana_bodhi-et-al" %}
-- The corner stone of Buddhist morality is generosity, for all other virtues start in its renunciation and care for others. But clearly there are better and worse ways to give, as rich people often demonstrate. What factors make giving better or worse?
+- The cornerstone of Buddhist morality is generosity, for all other virtues start in its renunciation and care for others. But clearly there are better and worse ways to give, as rich people often demonstrate. What factors make giving better or worse?
 
 ##### Chapter 4: Carefulness
 
@@ -205,10 +205,10 @@ Accepting our faults is a critical starting point for ethical development, and a
 - From the perspective of the Buddhist path, what is so blameworthy about "stopping to smell the roses?"
 
 {% include content_blurb.html category="canon" slug="mn41" %}
-- People often acuse Theravāda Buddhism of focusing only on strict, negative ethics, but I find it helpful to know what not to do.
+- People often accuse Theravāda Buddhism of focusing only on strict, negative ethics, but I find it helpful to know what not to do.
 
 {% include content_blurb.html category="essays" slug="ten-wholesome-actions_suchart" %}
-- But this reputation isn't wholely deserved, as Ajahn Suchart points out here that there are a number of good things Theravāda Buddhism encourages.
+- But this reputation isn't wholly deserved, as Ajahn Suchart points out here that there are a number of good things Theravāda Buddhism encourages.
 {% include content_blurb.html category="canon" slug="an10.69" %}
 - While these guidelines were delivered to the monastic community, they serve even laypeople with a high bar to strive for in terms of "right speech."
 - **Homework** How might you turn a "low" conversation into a "high" conversation?
@@ -238,7 +238,7 @@ Accepting our faults is a critical starting point for ethical development, and a
 - Two of the most important suttas on Buddhist Ethics in the whole canon, translated with helpful notes.
 
 {% include content_blurb.html category="essays" slug="ten-unwholesome-actions_suchart" %}
-- Whenever we lose our diligence, it show us where we lack wisdom. Where we have wisdom, we will have ease and prosperity.
+- Whenever we lose our diligence, it shows us where we lack wisdom. Where we have wisdom, we will have ease and prosperity.
 
 ##### Chapter 8: Meditative Concentration
 

@@ -13,7 +13,7 @@ banner_info: <a href="https://www.metmuseum.org/art/collection/search/38118">The
 epigraph: |
   > "As to that, Sandaka, I shall give you a simile..."  
   ~ [MN 76](/content/canon/mn76)
-description: "A rigorous tour of key words and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhetoric it deployed. This course also serves as an introduction to Pāli technical terms for nonspecialists."
+description: "A rigorous tour of keywords and images used in the Early Buddhist Texts, this course unpacks early Buddhist philosophy from the unique perspective of the rhetoric it deployed. This course also serves as an introduction to Pāli technical terms for nonspecialists."
 part_header: "This is part # of a course going through the similes and metaphors of the Buddha."
 toc:
   - ['what-is', 'What is Imagery in the Early Buddhist Texts?']
@@ -43,7 +43,7 @@ next_course_descs:
 
 The Imagery in the Early Buddhist Texts is the way that the Buddha used suggestive language to convey his teachings. 
 
-All language is (of course) in some way referential: words are merely pointers. But more so than many works of literature, the Early Buddhist Texts are so tightly interwoven that it's almost cliche to call the dhamma “a net.” As we pick up any of the words, images, or strands of the teachings, its associations, connections and references seem inevitably to take the whole of the Canon with it!
+All language is (of course) in some way referential: words are merely pointers. But more so than many works of literature, the Early Buddhist Texts are so tightly interwoven that it's almost a cliché to call the dhamma “a net.” As we pick up any of the words, images, or strands of the teachings, its associations, connections and references seem inevitably to take the whole of the Canon with it!
 
 Because of this, coming to understand the words and images of the Canon can be both incredibly challenging and rewarding: a powerful “Dharma Gate” that has inspired (and awakened!) a hundred generations of Buddhists — from the first “turning of the wheel” up to the present day.
 
@@ -63,7 +63,7 @@ Because of this, coming to understand the words and images of the Canon can be b
 
 ### Master
 
-- One of the Buddha's main rhethorical tools
+- One of the Buddha's main rhetorical tools
 - A broad range of dhamma topics
 - An authentic, close reading of the Pali Canon
 

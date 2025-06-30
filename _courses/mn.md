@@ -29,11 +29,11 @@ next_course_descs:
 
 ## What is the Majjhima Nikāya?
 
-The Majjhima Nikāya (or Middle Length Discourses) are a canonical collection of stories about early Buddhism preserved in the Pāli Canon of the Theravāda tradition. These stories are neither as condensed as the poetry collections or Connected Discourses (which were stripped of much of their narrative context by the redactors) nor are they as elaborate as the (more mythological) Lengthy Discourses.
+The Majjhima Nikāya (or Middle Length Discourses) is a canonical collection of stories about early Buddhism preserved in the Pāli Canon of the Theravāda tradition. These stories are neither as condensed as the poetry collections or Connected Discourses (which were stripped of much of their narrative context by the redactors), nor are they as elaborate as the (more mythological) Lengthy Discourses.
 
 Traditionally, the Majjhima Nikāya (or MN for short) would have been a primary subject of study for new monks. The first ten discourses in particular would have been memorized (!) and analyzed in depth to form the foundation for the novice’s continued study and practice. As such, the MN strikes a nice balance between assuming intelligence and spiritual earnestness on the part of the reader (unlike, for example, the more family-friendly Jataka tales) without assuming too much in the way of prior doctrinal knowledge (unlike, for example, the more pithy Connected Discourses).
 
-As Western-educated rationalists, The Middle Length Discourses are also an excellent place for us to lay our foundation, as their “middle length” provides us with enough narrative framing to imagine the Buddha in his cultural and historical context, without being so mythologically grandiose as to be unpalatable to modern ears.
+As Western-educated rationalists, the Middle Length Discourses are also an excellent place for us to lay our foundation, as their “middle length” provides us with enough narrative framing to imagine the Buddha in his cultural and historical context, without being so mythologically grandiose as to be unpalatable to modern ears.
 
 Finally, in addition to striking such delicate balances, the Majjhima Nikāya also contains many individual suttas of such extraordinary depth and profound beauty as to be worth reading and rereading, pondering and savoring again and again, strictly on their own literary merits, let alone for the critical part they serve on the path to Awakening.
 
@@ -70,7 +70,7 @@ All of which can be accessed online at [SuttaCentral.net](https://suttacentral.n
 
 #### Optional: About the Texts
 
-Advanced students, interested in engaging with the history and Northern versions of the texts, may want to read Bhante Analayo's comparitive studies after each sutta:
+Advanced students interested in engaging with the history and Northern versions of the texts, may want to read Bhante Analayo's comparative studies after each sutta:
 
 {% include content_box.html category="monographs" slug="mn-comparison_analayo" %}
 
@@ -78,11 +78,11 @@ If you're anything like me, you'll be amazed at how little the recensions differ
 
 ### Lectures
 
-Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into nine parts](https://drive.google.com/drive/folders/1f_mw-qMqYrfAOJlceGY7BXGYiwb7jPqT){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection— until [parts 10](https://drive.google.com/folderview?id=1FOIHmJ6mo3sk3Dm01QavL7p6ptEP_NFU){: target="_blank"} and ["11" (on YouTube)](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"}, which do go back and cover all the skipped suttas. 
+Bhikkhu Bodhi will be your lecturer for this course. [His lectures have been arranged thematically into nine parts](https://drive.google.com/drive/folders/1f_mw-qMqYrfAOJlceGY7BXGYiwb7jPqT){:target="_blank" ga-event-value="0.2"} and do **not** go sequentially through the collection—until [parts 10](https://drive.google.com/folderview?id=1FOIHmJ6mo3sk3Dm01QavL7p6ptEP_NFU){: target="_blank"} and ["11" (on YouTube)](https://youtube.com/playlist?list=PL23DE0292227250FA){:target="_blank"}, which do go back and cover all the skipped suttas. 
 
 #### Instructions
 
-Look ahead to the next lecture to see which sutta comes next (the first lecture, for example, is called “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1mXgBsUoWK0UTNogviMOrJ7YkCB4yx1Rr/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"}” so you know to read [the 26th discourse](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
+Look ahead to the next lecture to see which sutta comes next (the first lecture, for example, is called “[M0001 MN-026 - Ariyapariyesana Sutta - The noble search.mp3](https://drive.google.com/file/d/1mXgBsUoWK0UTNogviMOrJ7YkCB4yx1Rr/view?usp=drivesdk){:target="_blank" ga-event-value="0.2"},” so you know to read [the 26th discourse](https://suttacentral.net/mn26/en/bodhi){:target="_blank" ga-event-value="0.3"} first). Then follow these steps:
 
 1. Read (or [listen to](https://www.paliaudio.com/majjhima-nikaya){:target="_blank" ga-event-value="0.3"}!) the sutta before class. 
 1. Listen to the lecture(s) associated with that sutta.
@@ -92,7 +92,7 @@ Look ahead to the next lecture to see which sutta comes next (the first lecture,
 
 In this way, you'll start to develop the ability to read and understand the suttas independently.
 
-You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary, and understanding the suttas on your own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
+You may eventually find yourself not needing to rely so much on Bhikkhu Bodhi’s commentary and understanding the suttas on your own. If so, congratulations! You're reading the suttas! Feel free to drop the lectures if they cease being useful.  That means you've "graduated" <i class="far fa-laugh-beam"></i>
 
 ## Referring Back
 
@@ -103,10 +103,8 @@ Either (as a course or as a reference) is an appropriate use of this material. F
 In case it's useful for such referencing, here's an index of the suttas by their Pāli name:
 
 {% include content_blurb.html category="reference" slug="mn-pali-name-index" %}
-- Many suttas in the MN are often referred to by their Pali name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikāya (usually noted as “MN #”, e.g. “MN 3” for the third sutta)
+- Many suttas in the MN are often referred to by their Pāli name. If you have trouble finding them, here is an index from Pāli names to their traditional placement within the Majjhima Nikāya (usually noted as “MN #,” e.g., “MN 3” for the third sutta)
 
 And, again, I recommend keeping a [checklist](https://www.readingfaithfully.org/sutta-checklists-for-tracking-reading-suttas/){:target="_blank"} (or [diary](https://readingfaithfully.org/personal-sutta-anthology/){:target="_blank"}) of which suttas you've read, so you know where to come back to later.
 
 Happy Reading!
-
-

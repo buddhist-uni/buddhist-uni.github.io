@@ -23,7 +23,7 @@ next_courses:
   - pilgramage
   - west
 next_course_descs:
-  - "Dive further into lay Buddhist practice. Find helpful advice, the \"Vinaya\" for laity, and grapply with many thorny issues that may arise for the Buddhist householder."
+  - "Dive further into lay Buddhist practice. Find helpful advice, the \"Vinaya\" for laity, and grapple with many thorny issues that may arise for the Buddhist householder."
   - "An introduction to monasticism for everyone--lay and monastic alike." 
   - "What does the Buddhist life have to do with the path, anyway? How does the form support its function? Bhikkhus Cintita and Yuttadhammo guide us through these questions and more in this course introducing the heart of the Buddha-Dharma."
   - "Learn more about what ancient India was like at the time of the Buddha and how Buddhism took shape around those conditions."
@@ -109,10 +109,10 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - The Buddha's life and teachings are, of course, the cornerstone of the Buddhist religion, and set its tenor.
 
 {% include content_blurb.html category="essays" slug="stupas-of-shwedagon_u-win-maung" %}
-- “Stupas” are mentioned as sites of worship even in the earliest texts and archeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
+- “Stupas” are mentioned as sites of worship even in the earliest texts and archaeology as the burial sites of great leaders. This paper shows what those looked like, from ancient India to modern Burma.
 
 {% include content_blurb.html category="articles" slug="symbolism-of-the-early-stupa_harvey" %}
-- They're beautiful, aren't they? This article talks about some of the symbology the form came to represent.
+- They're beautiful, aren't they? This article talks about some of the symbolism the form came to represent.
 
 {% include content_blurb.html category="booklets" slug="buddhist-wheel-symbol_karunaratne" %}
 - While the Christians have the <i class="fas fa-cross"></i> cross and the Jews the <i class="fas fa-star-of-david"></i> star, the Buddhists have the <i class="fas fa-dharmachakra"></i> wheel as the symbol of their religion. But where did this wheel come from and what does it mean?
@@ -179,7 +179,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 ##### Chapter 5: “The Pantheon”
 
 {% include content_blurb.html category="essays" slug="karma-vibanga-reliefs-at-borobudur_anandajoti" %}
-- In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expedience. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated in later texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which persists today.
+- In the centuries after the Buddha, many of the subtleties of karma were simplified for didactic expediency. This led to a formulaic, "if you do this, this will happen to you" understanding of karma (which the Buddha himself rejected as fatalistic) that came to be repeated in later texts (such as the Karma-Vibanga) and in Buddhist art (such as, here, at Borobudur) for millennia, perpetuating a (mis)understanding of Karma which persists today.
 
 {% include content_blurb.html category="av" slug="abduction-of-queen-kakati_patrick-kit" %}
 - But, as Buddhism became more popular and spread around and out of India, it also picked up an artistic and mythological richness that textured and enlivened the tradition. Indeed, Buddhism’s ability to embrace and contextualize local mythology has long been a key to its ability to spread peacefully.
@@ -356,7 +356,7 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 - A short introduction to the history of Shinto and Buddhism in Japan.
 
 {% include content_blurb.html category="essays" slug="honen-waka-verse" %}
-- Many Pureland Buddhists have as their primary practice chanting the "nembutsu" of "Namu Amida Butsu" ("homage to Amitabha Buddha") in the hopes of being reborn in his Pure Land. 
+- Many Pure Land Buddhists have as their primary practice chanting the "nembutsu" of "Namu Amida Butsu" ("homage to Amitabha Buddha") in the hopes of being reborn in his Pure Land. 
 - Here we read twenty famous verses by Hōnen that reflect the depths of this practice.
 
 [CBT] M.27, M.102

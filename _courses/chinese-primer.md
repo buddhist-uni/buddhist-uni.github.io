@@ -27,7 +27,7 @@ next_course_descs:
 
 Starting with haphazard translations of Indian Sutras and culminating in majestic works of literature and philosophy, texts written in Chinese characters have long been crucial to the development of Buddhism in China---and by extension all of East Asia.
 
-But Sanskrit and Pali are very different languages from Chinese. Chinese is not inflected, largely monosyllabic and has a vastly different phonology and cosmology.  This made the job of translating Indian Sutras into Chinese writing very difficult, and thus makes our job deciphering their work just as tricky.
+But Sanskrit and Pali are very different languages from Chinese. Chinese is not inflected, largely monosyllabic and has a vastly different phonology and cosmology.  This made the job of translating Indian Sūtras into Chinese writing very difficult, and thus makes our job deciphering their work just as tricky.
 
 But, just as translating the Buddha's words into Chinese enriched Chinese society, so too do the Chinese Buddhist Texts enrich ours when translated into English. 
 
@@ -66,7 +66,7 @@ This is an extremely challenging but doable goal for someone new to Chinese. If 
 And even for the bilingual English-Chinese speakers, I recommend everyone get:
 {% include content_blurb.html category="reference" slug="pleco" %}
 - The world's best Chinese dictionaries.
-- Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank" ga-event-value="0.4"} containing the vocab for the class and review said vocabulary in a flashcard-like interface.
+- Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank" ga-event-value="0.4"} containing the vocabulary for the class and review said vocabulary in a flashcard-like interface.
 - Make sure to also download the (free) "Buddhist" Dictionary Add-on after you install the app, as it has many Buddhist terms the standard dictionary does not, based on [The Digital Dictionary of Buddhism](http://www.buddhism-dict.net/ddb/){:target="_blank" ga-event-value="0.8"}.
 
 This [Chinese-Sanskrit Dictionary](https://web.archive.org/web/20220301024224if_/https://ahandfulofleaves.org/documents/A%20Buddhist%20Chinese_Sanskrit%20Dict_Hirakawa.pdf){:target="_blank" ga-event-value="0.8"} may also be helpful for translating Chinese Buddhist texts, keeping in mind that native Chinese and Buddhist Chinese aren't quite the same language:
@@ -93,6 +93,6 @@ Volume 3 (whose structure should, by now, be very familiar!) should be completed
 
 ## Continuing Study
 
-As we wrap up, I'd like to give a brief shout-out here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank" ga-event-value="1"} which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
+As we wrap up, I'd like to give a brief shout-out here to [SuttaCentral](https://suttacentral.net/){:target="_blank"} and the [Taishō Shinshū Daizōkyō Text Database (SAT 2015)](https://21dzk.l.u-tokyo.ac.jp/SAT/satdb2015.php?lang=en){:target="_blank" ga-event-value="1"}, which host a _very_ large number of canonical Buddhist texts in Chinese---most of which have yet to be translated into English.
 
 祝你一路順利! 
