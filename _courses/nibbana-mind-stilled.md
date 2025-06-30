@@ -13,7 +13,7 @@ epigraph: |
   > "For the stilling of all formations, for the relinquishing of all attachments, for the destruction of craving, for dispassion, for cessation, for Nibbāna, he thinks thus..."  
   ~ MN 22
 course_time_multiplier: 1.2
-description: "An advanced course on the subtle components of the mind and how to understand their inner workings in order to put an end to the turbulent currents of self-centered thought."
+description: "An advanced course on the subtle components of the mind and how to understand their inner workings in order to put an end to our raging whirlpool of selfish thinking."
 tags:
   - nibbana
   - origination
