@@ -21,7 +21,7 @@ next_courses:
   - philosophy
   - pali-primer
 next_course_descs:
-  - "Go back and study the Majjhima Nikāya with Bhikkhu Bodhi in this prequel to the present course."
+  - "Go back and study the Majjhimā Nikāya with Bhikkhu Bodhi in this prequel to the present course."
   - "A more systematic introduction to Buddhist Philosophy with Bhikkhu Bodhi and several other guest lecturers."
   - "Learn the Pali language itself with Bhikkhu Bodhi."
 ---
@@ -34,7 +34,7 @@ The Buddha often taught according to numbered lists throughout his career as a t
 
 From [DN 33](/content/canon/dn33), we know that the Saṅgha would often recite the Buddha's teachings in numerical order even during the Buddha's own lifetime, so it isn't hard to imagine how the tradition came to form the Aṅguttara Nikāya as we have it today. The first book (AN 1) contains a multitude of teachings on "one thing", the second book (AN 2) contains teachings on "two things", etc.
 
-The Aṅguttara Nikāya contains some of the most practical suttas in the entire canon: for monastics and the laity. Being organized around a theme as abstract as numbers (starting with the number one!), the AN contains a rich variety of subjects sure to appeal to readers of any level or interest.
+The Aṅguttara Nikāya contains some of the most practical suttas in the entire canon, for both monastics and the laity. Being organized around a theme as abstract as numbers, the AN contains a rich variety of subjects sure to appeal to readers of any level or interest.
 
 ## Prerequisites
 
@@ -72,6 +72,6 @@ You can also find Bhikkhu Sujato's translation free online:
 ### Looking Forward, Back, or Up
 
 {% include content_blurb.html category="articles" slug="wheres-that-sutta_mills-laurence" %}
-- If, either remembering a sutta you read or looking for a new one, this index of subjects, places, etc has probably got you!
+- If you are looking for a sutta you've read or a new one, this index of subjects, places, etc., is likely to have it!
 - Or you can try [searching on SuttaCentral](https://suttacentral.net/search?query=in:an%20cowherd)!
 

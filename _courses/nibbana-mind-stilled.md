@@ -31,7 +31,7 @@ next_course_descs:
 
 ## What is the Stilling of the Mind?
 
-The core of dependent origination is the reciprocal relationship between consciousness and name-and-form. We think that we exist because we feel like we exist and we feel like we exist because we think we do.
+The core of dependent origination is the reciprocal relationship between consciousness and name-and-form. We believe we exist because we feel we exist, and we feel we exist because we believe we do.
 
 Unraveling this self-perpetuating feedback loop requires significant effort to cut through our conceptual layers to see the reality of our experience unfiltered by ignorance. When ignorance is broken through, the activity of name-and-form completely stops and consciousness is unconditioned. This, just this, is the cessation of suffering.
 
@@ -48,7 +48,7 @@ This course is based on Bhikkhu Ñāṇananda's sermons:
 ## Lectures
 
 {% include content_blurb.html category="av" slug="nibbana-lectures_analayo" %}
-- Bhikkhu Anālayo reads the above lectures, adding his own insightful reflections as well as giving us alternative translations for some of the suttas quoted.
+- Bhikkhu Anālayo reads the above lectures, adding his own insightful reflections and providing alternative translations for some of the suttas quoted.
 - If you prefer to watch the lectures on YouTube, they can be found [in this playlist](https://youtube.com/playlist?list=PLYtsCwnwtnPR4pzo5lGzsaftlhqpc7C4T){:target="_blank" ga-event-value="2"}
 
 ## Course Instructions

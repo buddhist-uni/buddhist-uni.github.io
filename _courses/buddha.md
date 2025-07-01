@@ -43,7 +43,7 @@ next_course_descs:
 
 But, more typically, “_the_ Buddha” refers to the Sakyan prince who, in the 5th century BCE Gangetic Plain, first rediscovered _nibbāna_ and taught the way for attaining it.
 
-Over 500 million people now worship the Buddha as their teacher, but the Buddha was no God. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (*deva*)— because only the human realm balances the misfortunes and mistakes of life which are necessary to motivate the practice, with the ease and discernment which allow it to ripen.
+Over 500 million people now worship the Buddha as their teacher, but the Buddha was no god. Indeed, it's even said that a Buddha can only arise as a human—never as a deity (*deva*)—because only the human realm balances the misfortunes and mistakes of life that are necessary to motivate the practice, with the ease and discernment that allow it to ripen.
 
 But while the Buddha was born a man, a man he did not remain. Through his superior striving and wisdom (over countless eons) he was able to transcend gender, caste, creed, identities, views, suffering and even death itself and to teach others how to transcend themselves too. We call such a teacher, “Buddha.”
 
@@ -81,7 +81,7 @@ There's one significant primary text in this course, but it isn't an early text.
 
 #### Academic Works
 
-A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
+A number of articles and essays will be woven in throughout the course.  We’ll also be reading these two, free books:
 
 {% include content_blurb.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" blurb="A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions." %}
 
@@ -105,7 +105,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 ### Part 1: Becoming the Buddha
 
 1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
-1. {% capture foo %}{% include content_blurb.html slug="dn30" category="canon" blurb="This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html slug="dn30" category="canon" blurb="This mythic text gives the 32 characteristics of Gotama’s body, which, legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] The Buddha's Family

@@ -84,7 +84,7 @@ Please read the suttas and other readings on your own “before class” and spe
 
 You may want to keep a copy of the assigned suttas in front of you while listening to the lectures, so that you can refer back to them and take notes as inspiration strikes, keeping in mind that the recordings (unlike live lectures!) can easily be paused.
 
-In addition to the suttas, this course assigns four short books in weeks 4 and 9: [The Heart of Understanding](/content/monographs/heart-of-understanding_tnh) and [BuddhaDhamma for University Students](/content/monographs/buddhadhamma-for-students_buddhadasa) respectively, so be advised to budget a little extra time for the homework two weeks.
+In addition to the suttas, this course assigns four short books in weeks 4 and 9: [The Heart of Understanding](/content/monographs/heart-of-understanding_tnh) and [BuddhaDhamma for University Students](/content/monographs/buddhadhamma-for-students_buddhadasa) respectively, so be advised to budget a little extra time for homework these two weeks.
 
 
 ## The Course
@@ -182,14 +182,14 @@ This "Sutta Spotlight" shows how that "hanging together" works with a vivid exam
 But before reading this sutta, please take a moment to consider how _you_ would explain the relationship between the Four Noble Truths, the Four Material Elements, the Five Aggregates and the Twelve Links of Dependent Origination. How would you "fit" these teachings together?
 
 {% include content_blurb.html category="canon" slug="mn28" %}
-- The venerable Sāriputta begins with a statement of the Four Noble Truths, which he then expounds by way of the four elements and the dependent origination of the five aggregates, showing how he fits all of the Buddha's Teachings inside the framework of the Four Noble Truths.
+- The venerable Sāriputta begins with a statement of the Four Noble Truths, which he then expounds by way of the four elements and the dependent origination of the five aggregates, showing how he fits all of the Buddha’s Teachings inside the framework of the Four Noble Truths.
 
 {% include content_blurb.html category="av" slug="greater-discourse-on-the-simile-of-the-elephants-footprint_yuttadhammo" %}
 - Bhante Yuttadhammo gives a brief talk on this profound sutta, revealing yet another (!) layer of its profundity.
 
 ### Week 3: The Nature of Reality (The First Noble Truth)
 
-The five aggregates of body and mind that we cling to as constituting a “self” and their nature to be impermanent, dissatisfying and uncontrollable, this week covers what the Buddha meant by “suffering.”
+The five aggregates of body and mind that we cling to as constituting a “self” and their nature to be impermanent, dissatisfying, and uncontrollable, this week covers what the Buddha meant by “suffering.”
 
 #### Homework
 
@@ -256,7 +256,7 @@ The series of causes which lead to us constitute the disease for which our suffe
 
 #### (Special Bonus!) Sutta Spotlight
 
-Dependent Origination is a notoriously difficult concept in Buddhism, so before this week gets started in earnest, I wanted to invite Bhikkhu Brahmali here to help us understand one discourse which explains the second noble truth in this, a very special, bonus edition of “sutta spotlight”
+Dependent Origination is a notoriously difficult concept in Buddhism, so before this week gets started in earnest, I wanted to invite Bhikkhu Brahmali here to help us understand one discourse which explains the second noble truth in this, a very special, bonus edition of “Sutta Spotlight.”
 
 {% include content_blurb.html category="canon" slug="toh211" %}
 - We begin with the Buddha's own, pithy explanation of Dependent Arising in this Sutra preserved by the Tibetan Tradition.
@@ -452,7 +452,7 @@ Formal mind training is of course the hallmark of Buddhism. This course though i
 #### Homework
 
 {% include content_blurb.html category="canon" slug="mn43" %}
-- The two suttas in this week take the form of discussions on various subtle points of Dhamma. This first sutta takes place between the venerable Mahā Koññhita and the venerable Sāriputta
+- The two suttas in this week take the form of discussions on various subtle points of Dhamma. This first sutta takes place between the venerable Mahā Koṭṭhita and the venerable Sāriputta
 
 {% include content_blurb.html category="av" slug="fgbmr-address-2014_hsin-bao" %}
 - The Venerable Hsing Bao discusses the difficulties of practice, and how we slowly become more Buddha-like by seeing the world through the eyes of a Buddha.

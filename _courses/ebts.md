@@ -47,7 +47,7 @@ next_course_descs:
 
 ## What are the Early Buddhist Texts?
 
-The Early Buddhist Texts are the subset of the canonical literature of the different Buddhist schools which accurately report the teachings of the historical Buddha. These texts have undergone (indeed, continue to undergo) some revision and contemporary scholarship continues to debate subtle points, but most scholars agree that the Pali Suttas and Chinese Āgamas are historically reliable witnesses to the Buddha's life and direct teachings. Whether they are spiritually reliable, however, is a matter for us to investigate.
+The Early Buddhist Texts are the subset of the canonical literature of the different Buddhist schools which accurately report the teachings of the historical Buddha. These texts have undergone (indeed, continue to undergo) some revision, and contemporary scholarship continues to debate subtle points, but most scholars agree that the Pali Suttas and Chinese Āgamas are historically reliable witnesses to the Buddha's life and direct teachings. Whether they are spiritually reliable, however, is a matter for us to investigate.
 
 ## Prerequisites
 The [Intro to Buddhism course](/courses/buddhism) is not a prerequisite for this course. Though some familiarity with Buddhism will be helpful, this course is suitable for serious beginners.
@@ -129,7 +129,7 @@ In addition to the Pāli texts highlighted in ItBW, I recommend the following ad
 
 {% include content_blurb.html category="canon" slug="ma220" %}
 - This discourse from the Chinese Canon is included to demonstrate how extraordinarily similar the language of the northern Agamas are compared to the language of the Pāli Canon (preserved in Sri Lanka)
-This sutra is most directly parallel to the Pāli texts presented in ItBW chapter nine on the Five Aggregates and it could be read when you get to that part of the book, or after you've finished.
+This sutra is most directly parallel to the Pāli texts presented in ItBW chapter nine on the Five Aggregates, and it could be read when you get to that part of the book, or after you've finished.
 
 ## Conclusion
 

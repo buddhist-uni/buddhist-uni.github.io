@@ -11,7 +11,7 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:A_Creative_Snap_at_
 **Chapter 10** from {% include inline_content.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
 {% include content_blurb.html category="articles" slug="meditation-in-buddhism_dwivedi-kedar" %}
-- A short brief in a psychiatric journal summarizing the psychotherapeutic potential of Buddhist meditation.
+- A short article in a psychiatric journal summarizing the psychotherapeutic potential of Buddhist meditation.
 
 {% include content_blurb.html category="essays" slug="instructions-to-insight-meditation_mahasi" %}
 - A general introduction to meditation, these instructions are applicable to whatever meditation technique you do.

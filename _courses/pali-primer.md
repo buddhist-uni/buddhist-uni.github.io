@@ -2,7 +2,7 @@
 title: "The Pāli Language: Level 1"
 subtitle: "A Self-Paced, Online Class"
 google_doc_id: 1zyIXaQDs9uF6eHpnVPZcSYxAO6ezS8SE
-description: "A gentle introduction to the Pāli Language suitable for everyone, based on Lily DeSilva's excellent Primer and taught by the Most Venerable scholar, Bhikkhu Bodhi."
+description: "A gentle introduction to the Pāli Language suitable for everyone, based on Lily de Silva's excellent Primer and taught by the Most Venerable scholar, Bhikkhu Bodhi."
 lecturers:
   - bodhi
 tags:
@@ -17,13 +17,13 @@ next_courses:
   - pali-new-course
   - imagery
 next_course_descs:
-  - "Continue learning the Pāli Language with Bhikkhu Bodhi, in this follow up course."
-  - "After studying the grammar of Pāli, learn the vocab in this course exploring two dozen important Pāli terms."
+  - "Continue learning the Pāli Language with Bhikkhu Bodhi, in this follow-up course."
+  - "After studying the grammar of Pāli, learn the vocabulary in this course exploring two dozen important Pāli terms."
 ---
 
 ## What is the Pāli Language?
 
-The Pāli Language is the simplified form of Sanskrit that Theravāda Buddhism uses as its liturgical language. It is the only Indic language to preserve a large corpus of Early Buddhist Texts, so studying Pāli (and the Suttas preserved in it) brings us as close as possible to how the historic Buddha taught.
+The Pāli Language is the simplified form of Sanskrit that Theravāda Buddhism uses as its liturgical language. It is the only Indic language to preserve a large corpus of Early Buddhist Texts, so studying Pāli (and the Suttas preserved in it) brings us as close as possible to how the historical Buddha taught.
 
 Pāli is not a tonal language and (like Sanskrit) is inflected, meaning that the nouns change suffixes depending on their role in the sentence. This course will introduce those various roles (called "cases") and give a lot of practice deciphering them.
 
@@ -39,11 +39,11 @@ This course doesn't assume any prior knowledge of linguistics or classical langu
 
 {% include content_blurb.html category="av" slug="pali-primer_bodhi" %}
 
-Bhikkhu Bodhi will guide us through _DeSilva_ in 26, 2-hour lectures.
+Bhikkhu Bodhi will guide us through _de Silva_ in 26, 2-hour lectures.
 
 In addition to the textbook, there are [a number of handouts](https://drive.google.com/drive/folders/1lXqLt7QTMVq6iYuMEIVhOFcz6hezk7Hu){:target="_blank" ga-event-value="1"} that Bhikkhu Bodhi provided and will reference in his lectures, so be sure to download those too.
 
-Note that significant homework will assigned between each lecture. As these assignments are the bulk of the learning for the course, please be sure to do them.
+Note that significant homework will be assigned between each lecture. As these assignments are the bulk of the learning for the course, please be sure to do them.
 
 ### Office Hours
 
