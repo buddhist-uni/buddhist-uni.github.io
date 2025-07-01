@@ -1,6 +1,6 @@
 ---
 title: "Facing our Problems"
-description: "Right Effort is when we stop turning away from complexity."
+description: "Right Effort means we stop turning away from complexity."
 image: https://buddhistuniversity.net/imgs/buddhism/fancy_buddha_back.jpg
 image_info: <a href="https://commons.wikimedia.org/wiki/File:The_story_of_enlightenment.jpg">Sumantha Photography</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 order: 10
@@ -9,14 +9,13 @@ order: 10
 ## Assigned Readings
 
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-We continue with Chapters 32–36 on how the Buddha's community grew under his leadership.
+We continue with Chapters 32–36, on how the Buddha's community grew under his leadership.
 " %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
-Chapter 6: "The Five Hindrances" introduces us to the primary obstacles to mental clarity in our meditation (and life).
+Chapter 6: "The Five Hindrances" introduces us to the primary obstacles to mental clarity in our meditation (and in life).
 ' %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
-Feel free to skip Chapter 4 on Buddhist Ethics (which we discussed already in [lesson 7](/courses/buddhism/the-path))
-but Chapter 5 is our main reading for this module, introducing "Right Effort"
+Feel free to skip Chapter 4 on Buddhist Ethics, which we discussed already in [lesson 7](/courses/buddhism/the-path). Chapter 5 is our main reading for this module, introducing "Right Effort."
 ' %}
 
 ## Lecture
@@ -30,8 +29,7 @@ In this talk aimed at a mixed audience, he encourages us to think more deeply ab
 {% include inline-av-player.html content="beyond-faith_jayasaro" %}
 
 {% include content_blurb.html category="av" slug="dhamma-advice_suchart" blurb="
-And Ajahn Suchart is a Thai monk who originally studied Engineering in California,
-but eventually realized the true road to happiness:
+And Ajahn Suchart is a Thai monk who originally studied Engineering in California, but eventually realized the true road to happiness.
 "%}
 {% include inline-av-player.html content="dhamma-advice_suchart" %}
 

@@ -13,15 +13,16 @@ order: 9
 Skip ahead to [the *anatta* or "No Soul" chapter](https://web.archive.org/web/20120226210641/https://sites.google.com/site/rahulawhatthebuddha/the-doctrine-of-no-soul)
 ' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
-[Chapter 11](https://www.buddhanet.net/funbud13/) explains the "Three Characterists" (of which *anatta* is the third)
+[Chapter 11](https://www.buddhanet.net/funbud13/) explains the "Three Characteristics," of which *anatta* is the third.
 ' %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
-Chapter 10 covers "The Five Aggregates" which are, in brief, the body and mind which we cling to as if they were "us"' %}
+Chapter 10 covers "The Five Aggregates," which are, in brief, the body and mind we cling to as if they were "us."
+' %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb='
-Chapters 27–31 cover the Buddha winning over several wealthy and powerful patrons, despite his "world-renouncing" teachings
+Chapters 27–31 cover the Buddha winning over several wealthy and powerful patrons despite his "world-renouncing" teachings.
 ' %}
 {% include content_blurb.html category="canon" slug="sn35.238" blurb="
-The Buddha gives a vivid simile which illustrates the Buddhist outlook on life in this memorable sutta.
+In this memorable sutta, the Buddha gives a vivid simile illustrating the Buddhist outlook on life.
 " %}
 
 {% include toast.html type="question" content='

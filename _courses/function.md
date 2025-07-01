@@ -68,7 +68,7 @@ This book forms the backbone of the course and is highly recommended.
 
 The book is divided into two, unsurprising halves: *Buddhist Life* and *Buddhist Path*: the exterior and interior transformation of the practitioner which follows the gradual path of Buddhism---from the mundane to the transcendent---often taught by the Buddha himself.
 
-{% include multipartcourse_outline.html course="function" introtext="This course will procede in 15 modules following the chapters in Buddhist Life, Buddhist Path:" %}
+{% include multipartcourse_outline.html course="function" introtext="This course will proceed in 15 modules following the chapters in Buddhist Life, Buddhist Path:" %}
 
 👆 jump to the module you're currently on or 👇
 

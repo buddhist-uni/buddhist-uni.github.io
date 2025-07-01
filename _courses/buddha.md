@@ -81,7 +81,7 @@ There's one significant primary text in this course, but it isn't an early text.
 
 #### Academic Works
 
-A number of articles and essays will be weaved in throughout the course.  We’ll also be reading these two, free books:
+A number of articles and essays will be woven in throughout the course.  We’ll also be reading these two, free books:
 
 {% include content_blurb.html category="booklets" slug="draft-entries-for-encyclopedia-of-buddhism_harvey" blurb="A collection of Encyclopedia articles introducing the Buddha from one of the English language’s best authors of rigorous introductions." %}
 
@@ -105,7 +105,7 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 ### Part 1: Becoming the Buddha
 
 1. [[Life of the Buddha](#life-of-the-buddha_nyanamoli)] Birth and Childhood
-1. {% capture foo %}{% include content_blurb.html slug="dn30" category="canon" blurb="This mythic text gives the 32 characteristics of Gotama’s body, which,legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!" %}{% endcapture %}{{ foo | strip_newlines }}
+1. {% capture foo %}{% include content_blurb.html slug="dn30" category="canon" blurb="This mythic text gives the 32 characteristics of Gotama’s body, which, legend has it, marked him for greatness at an early age. Note that some of the Suttas are not as early as others!" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="articles" slug="origins-of-the-32-marks_mcgovern-nathan" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] The Buddha's Family

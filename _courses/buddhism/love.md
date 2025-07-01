@@ -54,6 +54,6 @@ If you enjoyed Ajahn Brahm's teaching style, you may want to check out [_**Openi
 
 ## Homework
 
-[**Here** are some reflection questions on today's lesson](https://docs.google.com/forms/d/e/1FAIpQLSdXUkRRplYneBQYm9Y37DLYHVKgogrRMig08pYgjndCwCe-qQ/viewform){:target="_blank"}. Please do do them, as the learning only sinks in when it's examined and applied.
+[**Here** are some reflection questions on today's lesson](https://docs.google.com/forms/d/e/1FAIpQLSdXUkRRplYneBQYm9Y37DLYHVKgogrRMig08pYgjndCwCe-qQ/viewform){:target="_blank"}. Please do them, as the learning only sinks in when it's examined and applied.
 And, as always, click below for next lesson's homework whenever you're ready 👇
 

@@ -11,18 +11,18 @@ order: 14
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
 We finish the Buddha's Biography with Chapters 47–48: his final teachings.
 " %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 13 sees this final chapter, not as an "end" but as "A New Beginning"' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 13 sees this final chapter not as an "end," but as "a new beginning."' %}
 {% include content_blurb.html category="articles" slug="buddhism-and-modernity_powers-doug" blurb='
-Individualism, science, freedom and morality are four big, contemporary conversations which Buddhism has much to contribute to.
+Individualism, science, freedom, and morality are four big, contemporary conversations to which Buddhism has much to contribute.
 ' %}
 {% include content_blurb.html category="articles" slug="science-delusion_white-curtis" blurb='
-This excellent article confronts directly the dogmatic belief in materialism that modern science has fallen into.
+This excellent article directly confronts the dogmatic belief in materialism that modern science has fallen into.
 ' %}
 {% include content_blurb.html category="essays" slug="buddhism-and-human-flourishing_harvey" blurb='
-And in this essay, Peter Harvey responds to a few, common misgivings from Westerners new to Buddhism.
+In this essay, Peter Harvey responds to a few common misgivings from Westerners new to Buddhism.
 ' %}
 {% include content_blurb.html category="canon" slug="bodhisattvamanyavali_atisha" blurb="
-While this course has been almost-entirely from the Theravāda perspective,
+While this course has been almost entirely from the Theravāda perspective,
 I would like to give the final word to Atiśa Dīpaṃkara.
 " %}
 
