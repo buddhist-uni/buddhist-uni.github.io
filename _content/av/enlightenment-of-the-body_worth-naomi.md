@@ -11,10 +11,12 @@ course: tibetan
 tags:
   - yoga
   - problems
+  - underage 
+  - kayagatasati
 year: 2024
 month: jun
 series: blue-beryl
-number: 20
+number: 22
 minutes: 50
 ---
 
