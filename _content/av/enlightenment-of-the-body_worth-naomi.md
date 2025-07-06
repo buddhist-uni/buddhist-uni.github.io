@@ -10,9 +10,9 @@ drive_links:
 course: tibetan
 tags:
   - yoga
-  - problems
-  - underage 
+  - underage
   - kayagatasati
+  - new-age
 year: 2024
 month: jun
 series: blue-beryl

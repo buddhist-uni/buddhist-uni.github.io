@@ -11,7 +11,7 @@ tags:
 year: 2025
 month: apr
 address: "Czech Republic"
-pages: 62
+pages: 127
 ---
 
 > These states cannot compare to anything experienceable in everyday life. Calling them the utmost meditative bliss, peace, and release is not an exaggeration.

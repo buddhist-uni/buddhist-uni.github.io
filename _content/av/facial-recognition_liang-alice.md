@@ -9,7 +9,8 @@ course: state
 tags:
   - photography
   - time
-  - ai
+  - surveillance 
+  - asian-america
 year: 2020
 month: oct
 series: slowdown

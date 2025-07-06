@@ -5,9 +5,8 @@ authors:
 external_url: "https://www.palikanon.com/english/pali_names/dic_idx.html"
 source_url: "https://archive.org/details/in.ernet.dli.2015.281359"
 drive_links:
-  - "https://drive.google.com/file/d/1rboZzaaR_zzEyh0OHW8VKQvHgTO2aW7D/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1OdhgkK4LwWp6ONCSsiUbOcGzKbO_KXcR/view?usp=drivesdk"
-formats: ["Vol 1", "Vol 2"]
+  - "https://drive.google.com/file/d/1FljIJTNr9rF_DBWfKYSZPzIhm_3B5fYb/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1FkABJij1B3zFjWV8pvrFlIRgHnUSEjau/view?usp=drivesdk"
 status: featured
 course: pali-dictionaries
 tags:
