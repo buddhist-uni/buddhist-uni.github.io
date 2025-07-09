@@ -1,17 +1,19 @@
 ---
 title: "Ritual Object of Tibetan Buddhism"
+subcat: film
 authors:
   - "Robert Warren Clark"
 external_url: "https://archive.org/details/ritual-objects-of-tibetan-buddhism-2005-robert-warren-clark"
 drive_links:
   - "https://drive.google.com/file/d/1K3HVlynP-Yyo6JEDwoQ7sd9lq0XOdqI8/view?usp=drivesdk"
+formats: [mp4]
 course: tibetan
 tags:
   - bart
   - ritual
 year: 2005
 month: apr
-publisher: aam 
+publisher: aam
 minutes: 100
 ---
 
