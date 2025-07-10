@@ -1,5 +1,5 @@
 ---
-title: "Erasure_ The Near Transitive Properties of the Political and Poetical"
+title: "Erasure: The Near Transitive Properties of the Political and Poetical"
 authors:
   - "Solmaz Sharif"
 external_url: "https://www.thevolta-org.zulaufdesign.com/ewc28-ssharif-p1.html"

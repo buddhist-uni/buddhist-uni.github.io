@@ -1,7 +1,7 @@
 ---
 title: "Why Mindfulness isn't Enough"
 authors:
-  - "Joshua Schrei"
+  - "Joshua Michael Schrei"
 subcat: podcast
 external_url: "https://www.themythicbody.com/podcast/why-mindfulness-isnt-enough/"
 another_url: "https://www.listennotes.com/podcasts/the-emerald/why-mindfulness-isnt-enough-opljJbK5zmr/"
@@ -12,7 +12,7 @@ tags:
   - west
 year: 2024
 month: sep
-series: "The Emerald (Podcast)"
+series: emerald
 number: 88
 minutes: 96
 ---

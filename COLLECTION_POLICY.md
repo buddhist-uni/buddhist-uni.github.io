@@ -22,8 +22,8 @@ The Open Buddhist University collections are **entirely digital** and are a comb
 Each file in the library is ideally hosted in multiple locations (e.g. at Archive.org and on Google Drive) for redundancy and accessibility.
 
 The collection does not strive to host a copy or link to every work ever published about Buddhism.
-That would as undesirable as it is impossible.
-The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on [Early Buddhism](https://web.archive.org/web/20231130212016/https://www.buddhistinquiry.org/wp-content/uploads/2023/11/Early-Buddhism.pdf) to the English-speaking world.**
+That would undesirable even if it were possible.
+The collection instead strives to offer a high-quality, representative selection in keeping with the University's mission **to provide a free, undergraduate-style curriculum in Buddhist Studies with a focus on [Early Buddhism](https://web.archive.org/web/20231130212016if_/https://www.buddhistinquiry.org/wp-content/uploads/2023/11/Early-Buddhism.pdf) to the English-speaking world.**
 
 To that end, works found on the internet are accepted into the library on a five-point scale and are sorted into subtopics (aka "folders" or "tags") for easy access. The rest of this document will outline how that is done.
 
@@ -31,7 +31,7 @@ To that end, works found on the internet are accepted into the library on a five
 
 The usual procedure for ingesting new content is as follows:
 
-1. Free content is found online and added to [the ingestion queue on Google Drive](https://drive.google.com/drive/folders/1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2).
+1. Free content is [found online](https://buddhistuniversity.net/sources/) and added to [the ingestion queue on Google Drive](https://drive.google.com/drive/folders/1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2).
 2. That content is then sorted by subject area.
 3. A reviewer then evaluates the pieces in their subject area.
 4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv) based on what subject they teach and rejected items are archived.
@@ -76,7 +76,7 @@ The following table summarizes the five levels and how they work on the website:
 | Ranking | Label | Code | Effect | Example |
 |---|---|---|---|---|
 | rank1 | 📦 Deprecated | `status: rejected` and `reason: [explanation]` | The work will be delisted everywhere on the website except for search, where it will be downranked. | [The "Tipitaka" website](https://buddhistuniversity.net/content/reference/tipitaka) ([code](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/_content/reference/tipitaka.md)) was delisted after [the new DPR website](https://buddhistuniversity.net/content/reference/dpr) was launched. |
-| rank2 | 📦 Archived | `course: nil` | Archived works are downranked in search and content recommendations. | [One Teacher, Many Traditions](https://buddhistuniversity.net/content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md)) Failed IC6 and IC4, but scored highly enough on the rest to deserve an "honorable mention" as a rank2 piece |
+| rank2 | 📦 Archived | `course: nil` | Archived works are downranked in search and content recommendations. | [One Teacher, Many Traditions](https://buddhistuniversity.net/content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/monographs/buddhism-one-teacher-many-traditions_dalai-lama-thunten-chodron.md)) Failed IC6, but scored well enough on the rest to deserve an "honorable mention" as a rank2 piece |
 | rank3 | [none] | `course: [value]` | An accepted work will be featured on the `/tags/[value]` page. | [The Buddha's Remains](https://buddhistuniversity.net/content/articles/buddhas-remains_wallis-glenn) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/articles/buddhas-remains_wallis-glenn.md)) Somewhat dry (IC2), niche (IC5) and Googlable (IC8), this otherwise-solid piece was accepted as a standard entry |
 | rank4 | ⭐ Recommended | `status: featured` | These works are upranked in search and content recommendations and they get highlighted in content lists. | [The Buddha's Genitals](https://buddhistuniversity.net/content/essays/politics-of-the-buddhas-genitals_sujato) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/essays/politics-of-the-buddhas-genitals_sujato.md)) This piece, in contrast, hits solid marks across the board, being a unique and interesting take buried in an online forum. |
 | rank5 | 🏅 Best of | both of the above and a link to the work in a blog post | Same as `rank4` but are also highlighted in the newsletter. | [Arhat Invitation during the Song](https://buddhistuniversity.net/content/articles/arhat-invitation-in-the-song_joo-ryan) ([code](https://raw.githubusercontent.com/buddhist-uni/buddhist-uni.github.io/main/_content/articles/arhat-invitation-in-the-song_joo-ryan.md)) ([blog post](https://buddhistuniversity.net/blog/2021/11/19/wandering)) This piece was very interesting and more important than its unassuming title might suggest. It was therefore deemed worthy of featuring in the newsletter. |
@@ -108,7 +108,7 @@ This selection is more art than science, but a few questions are helpful to ask 
 - Could I imagine this being assigned reading in an undergrad course about ______?
 
 The collection is already quite large, so it's best to be conservative and place works in the smallest conceivable category.
-For example, a work about Buddhist Cosmology should be placed in "Cosmology" not in "Philosophy".
+For example, a work about heaven and hell realms should be placed in "Cosmology" rather than (the more general) "Philosophy" folder.
 
 ### Adding to the site
 
