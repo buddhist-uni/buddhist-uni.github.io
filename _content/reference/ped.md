@@ -3,15 +3,16 @@ title: "The PTS Pali-English Dictionary"
 authors: [rhys-davids]
 editor: "William Stede"
 external_url: "https://ped.readingfaithfully.org/"
-source_url: "https://dsal.uchicago.edu/dictionaries/pali/"
+source_url: "https://archive.org/details/palitextsocietys00pali/page/n10/mode/1up"
+original_url: "https://dsal.uchicago.edu/dictionaries/pali/"
+another_url: "https://ancient-buddhist-texts.net/Textual-Studies/PTSPED/"
 alternative_url: "https://gandhari.org/dictionary?section=ptsd"
 drive_links:
-  - "https://drive.google.com/file/d/1uGDSgO2LHQ0j2gj9oDWcuEgCO7GpghJZ/view?usp=drivesdk"
-  - "https://drive.google.com/file/d/1UGgBe8uTNFCWcvJ_TOI_PdDzCM56SvZX/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TWswi_RDfEYYN0uQ9nHhdhHEPokO_I1A/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TmwLX-W8d9UOoompi79F-5VposNqtNCt/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TSD6LWkUVb72xO_EQoRrAx3NrjjeprJe/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1sgHw9vTqK1kgZG5KcLxfUfr6q2jf3gvP/view?usp=drivesdk"
-file_links:
-  - "largefiles/ped.pdf"
-formats: [pdf, mobi, html]
+formats: [pdf, epub, mobi, html]
 course: pali-dictionaries
 tags:
   - pali-language
