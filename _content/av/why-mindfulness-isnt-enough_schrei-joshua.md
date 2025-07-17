@@ -10,6 +10,7 @@ tags:
   - daily-life
   - ritual
   - west
+  - form
 year: 2024
 month: sep
 series: emerald

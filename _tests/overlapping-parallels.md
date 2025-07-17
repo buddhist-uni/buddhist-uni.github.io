@@ -71,17 +71,17 @@ Pass ✅ - No parallels have overlapping tags
 ## Anthologies
 
 In addition to the sutta parallels above, suttas should be deduped against the anthologies that contain them (e.g. if a sutta is in an assigned anthology, it shouldn't also be assigned to that course separately as well).
-So far, suttas have been added and deduped from:
+
+Anthologies yet to be processed:
+  - Bhikkhu Bodhi's [selections in the Sutta tag](/search/?q=author%3ABodhi%20tag%3Asutta%20selection%20)
+  - [*Common Buddhist Text*](/content/monographs/common-buddhist-text)
+  - Ajahn Geoff's *Noble Conversation* and *Sublime Attitudes*
+  - and [Jason Espada's anthologies](/search/?q=jason%20espada)
+
+Suttas have been added and deduped from:
   - *The Island*
   - Ajahn Geoff's *The Buddha Smiles*
   - Ajahn Geoff's *Recognizing the Dhamma*
   - Hecker's *Similes of the Buddha*
   - Nyanamoli's *Life of the Buddha*
   - The many wheel publications containing whole sutta translations
-
-Anthologies yet to be processed:
-  - Ajahn Geoff's *Noble Conversation* and *Sublime Attitudes*
-  - Sarah Shaw's *Buddhist Meditation* 
-  - along with Jason Espada's anthology
-  - Bhikkhu Bodhi's selections in the Sutta tag
-  - *Common Buddhist Text*

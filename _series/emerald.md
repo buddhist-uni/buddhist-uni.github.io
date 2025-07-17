@@ -2,6 +2,7 @@
 title: "The Emerald"
 authors:
   - "Joshua Michael Schrei"
+external_url: "https://www.themythicbody.com/podcast"
 subcat: podcast
 category: av
 tags:
