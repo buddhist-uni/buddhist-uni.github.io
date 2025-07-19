@@ -1,7 +1,7 @@
 ---
 title: "Buddhist Monasteries and (Their) Oxen: Daoxuan’s Vinaya Commentaries"
 authors:
-  - "Ann Heirman"
+  - heirman-ann
 external_url: "https://chinesebuddhiststudies.org/wp-content/uploads/01_Ann-Heirman.pdf"
 drive_links:
   - "https://drive.google.com/file/d/15UR3ZZ55pQeC08Lse0rOYwik3PTT1sKw/view?usp=drivesdk"

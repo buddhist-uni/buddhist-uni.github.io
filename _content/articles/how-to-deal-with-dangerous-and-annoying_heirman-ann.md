@@ -1,7 +1,7 @@
 ---
 title: "How to Deal with Dangerous and Annoying Animals: A Vinaya Perspective"
 authors:
-  - "Ann Heirman"
+  - heirman-ann
 external_url: "https://www.mdpi.com/2077-1444/10/2/113/pdf?version=1551259054"
 source_url: "https://doi.org/10.3390/rel10020113"
 drive_links:
