@@ -5,6 +5,7 @@ from pathlib import Path
 import requests
 import socket
 from datetime import datetime
+from time import sleep
 from math import floor
 from io import BytesIO, BufferedIOBase
 from strutils import (
@@ -38,6 +39,7 @@ try:
     MediaIoBaseDownload,
     MediaFileUpload,
     BatchHttpRequest,
+    HttpError,
   )
   from youtube_transcript_api import YouTubeTranscriptApi
 except:
@@ -64,6 +66,17 @@ LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drives
 GFIDREGEX = re.compile(GFIDREGEX)
 
 disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
+
+def execute(gapicall, retries=4, backoff=1):
+  try:
+    return gapicall.execute()
+  except (HttpError, socket.error, socket.timeout, ConnectionError) as e:
+    if retries <= 0:
+      raise e
+    print(e)
+    print(f"Retrying in {backoff}s...")
+    sleep(backoff)
+    return execute(gapicall, retries=retries-1, backoff=backoff*2)
 
 def link_to_id(link):
   if not link:
@@ -185,7 +198,7 @@ def google_credentials():
 @cache
 def session():
     socket.setdefaulttimeout(300) # some of our uploads take a while...
-    return build('drive', 'v3', credentials=google_credentials(), num_retries=5)
+    return build('drive', 'v3', credentials=google_credentials(), num_retries=4) # only retries 429s natively. See execute() for retrying other errors
 
 @cache
 def youtube():
@@ -201,7 +214,7 @@ def get_ytvideo_snippets(ytids):
     for i in range(0, len(ytids), 50): # YTAPI has a 50 id limit
       snippets.extend(get_ytvideo_snippets(ytids[i:i+50]))
     return snippets
-  data = youtube().videos().list(id=','.join(ytids),part="snippet,contentDetails").execute().get("items", [])
+  data = execute(youtube().videos().list(id=','.join(ytids),part="snippet,contentDetails")).get("items", [])
   for vid in data:
     ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails', 'publishedAt'] if k in vid['snippet']}
     ret['contentDetails'] = vid.get('contentDetails', {})
@@ -217,12 +230,12 @@ def get_ytvideo_snippets_for_playlist(plid, maxResults=None, pageToken=None):
     page_size = 50 # YouTube API has a max page size of 50
   else:
     page_size = min(50, maxResults)
-  deets = youtube().playlistItems().list(
+  deets = execute(youtube().playlistItems().list(
     playlistId=plid,
     part='snippet',
     maxResults=page_size,
     pageToken=pageToken,
-  ).execute()
+  ))
   ret = [e['snippet'] for e in deets.get("items",[])]
   if (maxResults == 0 or maxResults > 50) and deets.get("nextPageToken"):
     ret.extend(get_ytvideo_snippets_for_playlist(
@@ -233,20 +246,20 @@ def get_ytvideo_snippets_for_playlist(plid, maxResults=None, pageToken=None):
   return ret
 
 def get_ytplaylist_snippet(plid):
-  deets = youtube().playlists().list(
+  deets = execute(youtube().playlists().list(
     id=plid,
     part='snippet',
-  ).execute()
+  ))
   return deets['items'][0]['snippet']
 
 @disk_memorizor.cache(cache_validation_callback=joblib.expires_after(days=28))
 def get_subfolders(folderid):
   folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
-  childrenFoldersDict = session().files().list(
+  childrenFoldersDict = execute(session().files().list(
     q=folderquery,
     spaces='drive',
     fields='files(id, name)'
-  ).execute()
+  ))
   return childrenFoldersDict['files']
 
 def string_to_media(s, mimeType):
@@ -359,10 +372,10 @@ def create_folder(name, parent_folder, custom_properties: dict[str, str] = None)
   }
   if custom_properties:
     metadata['properties'] = custom_properties
-  ret = session().files().create(
+  ret = execute(session().files().create(
     body=metadata,
     fields='id'
-  ).execute()
+  ))
   return ret.get('id')
 
 def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] = None):
@@ -377,16 +390,16 @@ def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str
   }
   if custom_properties:
     shortcut_metadata['properties'] = custom_properties
-  shortcut = drive_service.files().create(
+  shortcut = execute(drive_service.files().create(
     body=shortcut_metadata,
     fields='id,shortcutDetails'
-  ).execute()
+  ))
   return shortcut.get('id')
 
 def deref_possible_shortcut(gfid):
   """Returns the id of what gfid is pointing to OR gfid"""
   service = session()
-  res = service.files().get(fileId=gfid, fields="shortcutDetails").execute()
+  res = execute(service.files().get(fileId=gfid, fields="shortcutDetails"))
   if "shortcutDetails" in res:
     return res["shortcutDetails"]["targetId"]
   return gfid
@@ -395,27 +408,27 @@ def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
   service = session()
   if previous_parents is None:
     # pylint: disable=maybe-no-member
-    file = service.files().get(fileId=file_id, fields='parents').execute()
+    file = execute(service.files().get(fileId=file_id, fields='parents'))
     previous_parents = file.get('parents')
   if type(previous_parents) is list:
     previous_parents = ",".join(previous_parents)
   if verbose:
     print(f"Moving {file_id} from [{previous_parents}] to [{folder_id}]...")
-  file = service.files().update(
+  file = execute(service.files().update(
     fileId=file_id,
     addParents=folder_id,
     removeParents=previous_parents,
-    fields='id, parents, name').execute()
+    fields='id, parents, name'))
   if verbose:
     print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
   return file
 
 def has_file_matching(query: str):
-  resp = session().files().list(
+  resp = execute(session().files().list(
     q=query,
     pageSize=1,
     fields='files(id)',
-  ).execute()
+  ))
   resp = resp.get('files')
   if not resp:
     return None
@@ -434,7 +447,7 @@ def all_files_matching(query: str, fields: str):
   results = None
   while not results:
     try:
-      results = files.list(**params).execute()
+      results = execute(files.list(**params))
     except Exception as e:
       print(f"Error fetching all_files_matching: {e}")
       if retries < 5:
@@ -448,7 +461,7 @@ def all_files_matching(query: str, fields: str):
   while 'nextPageToken' in results:
     params['pageToken'] = results['nextPageToken']
     try:
-      results = files.list(**params).execute()
+      results = execute(files.list(**params))
     except Exception as e:
       print(f"Error fetching all_files_matching: {e}")
       if retries < 5:
@@ -519,10 +532,10 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
     )
 
 def share_drive_file_with_everyone(file_id: str):
-  return session().permissions().create(
+  return execute(session().permissions().create(
     fileId=file_id,
     body={"role": "reader", "type": "anyone"},
-  ).execute()
+  ))
 
 def batch_get_files_by_id(IDs: list, fields: str):
   ret = []
@@ -564,17 +577,17 @@ EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,p
 
 def files_exactly_named(file_name):
   f = file_name.replace("'", "\\'")
-  return session().files().list(
+  return execute(session().files().list(
     q=f"name='{f}' AND 'me' in owners AND mimeType!='application/vnd.google-apps.shortcut' AND trashed=false",
     fields=EXACT_MATCH_FIELDS,
-  ).execute()['files']
+  ))['files']
 
 def my_pdfs_containing(text):
   text = text.replace("'", "\\'")
-  return session().files().list(
+  return execute(session().files().list(
     q=f"fullText contains '{text}' AND 'me' in owners AND mimeType='application/pdf'",
     fields=EXACT_MATCH_FIELDS,
-  ).execute()['files']
+  ))['files']
 
 def has_file_already(file_in_question, default="prompt") -> bool:
   hash, size = file_info(file_in_question)
@@ -630,10 +643,10 @@ def get_shortcuts_to_gfile(target_id):
   # note the following assumes only one page of results
   # if you are expecting >100 results
   # please implement paging when calling files.list
-  return session().files().list(q=f"shortcutDetails.targetId='{target_id}' and trashed=false", spaces='drive', fields='files(id,name,parents)').execute()['files']
+  return execute(session().files().list(q=f"shortcutDetails.targetId='{target_id}' and trashed=false", spaces='drive', fields='files(id,name,parents)'))['files']
 
 def trash_drive_file(target_id):
-  return session().files().update(fileId=target_id, body={"trashed": True}).execute()
+  return execute(session().files().update(fileId=target_id, body={"trashed": True}))
 
 def move_gfile(glink, folders):
   gfid = link_to_id(glink)
