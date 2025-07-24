@@ -26,7 +26,10 @@ jobs:
             ref: main
             path: main
         - name: install rename
-          run: sudo apt-get install -y rename
+          run: |
+            curl -sLo rename https://raw.githubusercontent.com/ap/rename/master/rename
+            chmod +x rename
+            sudo mv rename /usr/local/bin/
         - name: rename *.md *.txt
           run: |
             cd $GITHUB_WORKSPACE/main

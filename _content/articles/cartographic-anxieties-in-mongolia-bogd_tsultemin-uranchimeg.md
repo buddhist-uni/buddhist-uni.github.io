@@ -2,7 +2,7 @@
 title: "Cartographic Anxieties in Mongolia: The Bogd Khan's Picture-Map"
 authors:
   - "Uranchimeg Tsultemin"
-external_url: "https://scholarworks.iupui.edu/bitstream/1805/21288/1/Tsultem_Cartographic.pdf"
+external_url: "https://scholarworks.indianapolis.iu.edu/bitstreams/4bc75ef9-ff6a-4816-8ac7-7e571a3512b0/download"
 source_url: "https://doi.org/10.1353/ach.2017.0003"
 drive_links:
   - "https://drive.google.com/file/d/1em9Q2KXsbWo9jB-kbSutcO0dpkBsT-DG/view?usp=drivesdk"

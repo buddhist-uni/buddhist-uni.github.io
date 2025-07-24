@@ -2,7 +2,7 @@
 title: "The Buddha's Most Important Teachings"
 authors:
   - "Ajahn Munindo"
-external_url: "https://forestsangha.org/teachings/audio/the-buddha-s-most-important-teaching?language=English"
+external_url: "https://www.ratanagiri.org.uk/teachings-luang-por-munindo-audio/the-buddhas-most-important-teaching"
 drive_links:
   - "https://drive.google.com/file/d/1-Z78OqSxpOuF1OpvbTlEPUWGx7DUZbqY/view?usp=drivesdk"
 course: function

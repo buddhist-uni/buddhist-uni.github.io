@@ -35,7 +35,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 ## Monasteries and Traditions
 
 * [The Dhammayut Forest Tradition](http://www.forestdhamma.org/books/english/)
-* [The Ajahn Chah Tradition](https://forestsangha.org/teachings/books?language=English)
+* [The Ajahn Chah Tradition](https://www.forestsangha.org/teachings-authors)
   * [Abhayagiri Monastery](https://www.abhayagiri.org/books/)
   * [Amaravati Monastery](https://media.amaravati.org/en/dhamma-books)
 * [Bodhi Monastery](https://bodhimonastery.org/religion/audios)
