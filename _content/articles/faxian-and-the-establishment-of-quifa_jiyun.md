@@ -19,5 +19,5 @@ number: 1
 pages: "45--94"
 ---
 
-> Regardless of the historical reality, we could at least observe, on the textual level, that *qiufa* (the search of Dharma) represents the main objective for [these early] Chinese pilgrims. 
+> Regardless of the historical reality, we could at least observe, on the textual level, that *qíufǎ* (求法 = the search of Dharma) represents the main objective for [these early] Chinese pilgrims. 
 
