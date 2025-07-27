@@ -22,7 +22,7 @@ openalexid: W2910853571
 ---
 
 > Two of these carry extracts from the Abhidhamma; the third gives a syllabary followed by the recollection formulas of the Three Gems.
-> The other two epigraphs are written not on stone slabs but are inscribed on small gold leaves; they contain the heart formulas of the books of the Tipi?aka and the qualities of the Buddha, Dhamma, and Sangha.
+> The other two epigraphs are written not on stone slabs but are inscribed on small gold leaves; they contain the heart formulas of the books of the Tipiṭaka and the qualities of the Buddha, Dhamma, and Sangha.
 
 > I suggest that they are the products of widespread and enduring Buddhist cultures of inscription, installation, and consecration, as well as of customs of condensation and abbreviation that have have been intrinsic to Thai liturgical and manuscript practices up to the present.
 

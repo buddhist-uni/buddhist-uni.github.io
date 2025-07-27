@@ -418,7 +418,8 @@ def system_open(filepath):
     .replace("`", "\\`")\
     .replace("(", "\\(")\
     .replace(")", "\\)")\
-    .replace("'", "\\\'")
+    .replace("'", "\\\'")\
+    .replace(";", "\\;")
   os.system(f"xdg-open {filepath}")
 
 class FileSyncedSet:
