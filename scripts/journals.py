@@ -27,6 +27,7 @@ EB       = "S118212324"
 EB_NS    = "S2764994964"
 IBK      = "S2764402342"
 EMSCAT   = "S4210198890"
+IJBTC    = "S4210226626"
 
 # from OA to OBU IDs
 slugs = {
@@ -55,4 +56,5 @@ slugs = {
   EB_NS: "eb", # Just map the old and new series together
   IBK: "ibk",
   EMSCAT: "emscat",
+  IJBTC: "ijbtc",
 }

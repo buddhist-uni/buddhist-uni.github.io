@@ -167,6 +167,10 @@
   "private": "https://drive.google.com/drive/folders/1T0uYefRnytAyDgiY4w6OwzTACoqVNNzy",
   "public": null
  },
+ "bangkok": {
+  "private": "https://drive.google.com/drive/folders/1JhDNWVs27o3YNdFvIbit_jlg-QzpvEjg",
+  "public": null
+ },
  "bangladesh": {
   "private": "https://drive.google.com/drive/folders/1twmhQCtOn0Mcg6i4lsGw_gunL4l3ccjD",
   "public": null
@@ -1994,6 +1998,10 @@
  "vipassana": {
   "private": "https://drive.google.com/drive/folders/1aZKDMzvWlaDDMNPcyKZXih7rGB7DDy-q",
   "public": "https://drive.google.com/drive/folders/1Z7YC_0GHjV7eqYQ-JXQIBzNA8_ZLqePy"
+ },
+ "vr": {
+  "private": "https://drive.google.com/drive/folders/1Ik1YibHygdmZgEcQ5BFi8u383QdwRAXM",
+  "public": null
  },
  "walking": {
   "private": "https://drive.google.com/drive/folders/11ip2cz9OcUhdC5RPIrb_aZh1sHpWiEy7",
