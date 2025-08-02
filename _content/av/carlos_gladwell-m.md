@@ -17,3 +17,5 @@ minutes: 37
 ---
 
 > A cautionary tale about how hard it is to rise from the bottom to the top--and why the American school system, despite its best efforts, continues to leave an extraordinary amount of talent on the table.
+
+For part two of this miniseries, see [Food Fight](/content/av/food-fight_gladwell-m).
