@@ -3,7 +3,7 @@ title: "Carlos Doesn't Remember"
 subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2016
-external_url: "https://revisionisthistory.com/episodes/04-carlos-doesnt-remember"
+external_url: "https://www.pushkin.fm/podcasts/revisionist-history/carlos-doesnt-remember"
 course: society
 tags:
   - education

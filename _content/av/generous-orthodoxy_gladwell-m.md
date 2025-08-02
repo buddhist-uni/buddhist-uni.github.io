@@ -3,7 +3,7 @@ title: "Generous Orthodoxy"
 subcat: podcast
 authors: ["Malcolm Gladwell"]
 year: 2016
-external_url: "https://revisionisthistory.com/episodes/09-generous-orthodoxy"
+external_url: "https://www.pushkin.fm/podcasts/revisionist-history/generous-orthodoxy"
 course: activism
 tags:
   - vinaya-studies
