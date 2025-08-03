@@ -2,6 +2,7 @@
 title: "Nāmadhātusūcī: An Annotated Index of Denominative Verbs in Pāli"
 authors:
   - "Timothy P. Lighthiser"
+external_url: "https://web.archive.org/web/20250117210905if_/https://palitextsociety.org/wp-content/uploads/2024/12/09-Lighthiser-JPTS-34-2021.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1lrmXRzrW9ObdsVmo6Jy-0_8ktwZ0pMcb/view?usp=drivesdk"
 course: pali-dictionaries
