@@ -66,7 +66,7 @@ banner_info: <a href="https://commons.wikimedia.org/wiki/File:Nanzen-ji,_a_Zen_B
 <div class="mb-3">{% include simple_content_title.html content=c %}</div>{% endfor %}
 
 <h2 id="bestof"><i class="fas fa-medal"></i> Featured Selections</h2>
-<p>A couple works are selected as the cream of the crop each year.</p>
+<p>A few works are selected as the cream of the crop each year.</p>
 {% capture fe %}c.year < {{ lastyear }}{% endcapture %}
 {% assign featurecontent = allcontent | where_exp: "c", fe | where: "stars", 5 | group_by: "year" | sort: "name" | reverse %}
 {% for y in featurecontent %}
