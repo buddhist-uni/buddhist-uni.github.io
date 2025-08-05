@@ -6,9 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/1omPuhb2tdaEOfropmaVcsXxv3YrZVQEI/view?usp=drivesdk"
 course: buddha
 tags:
-  - deva
   - khp
-  - canonical-poetry
   - sangha
 # theravada (+chanting) covered by wh054
 year: 2020
