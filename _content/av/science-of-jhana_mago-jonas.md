@@ -16,7 +16,4 @@ month: jan
 minutes: 64
 ---
 
-> Can that exist in the psychedelic space? I think it can.
-Does it always? I don't think so.
-That is where these Buddhist practices are unique.
-Jhāna practice is deeply embedded within other practices that help with the reemergence—The Noble Eightfold Path, the Saṅgha—so that once you come to these moments of malleability, the momentum of living a certain way will carry you through and allow you to come out of these sates more beautifully.
+> Jhāna practice is deeply embedded within other practices that help with the reemergence—The Noble Eightfold Path, the Saṅgha—so that once you come to these moments of malleability, the momentum of living a certain way will carry you through and allow you to come out of these states more beautifully.

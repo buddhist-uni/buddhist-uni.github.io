@@ -594,7 +594,7 @@ def has_file_already(file_in_question, default="prompt") -> bool:
   file_in_question = Path(file_in_question)
   cfs = files_exactly_named(file_in_question.name)
   for gf in cfs:
-    if hash == gf['md5Checksum'] or (approx_eq(size, int(gf['size']), absdiff=1024, percent=2.0) or len(gf['name']) > 11):
+    if hash == gf['md5Checksum'] or (approx_eq(size, int(gf['size']), absdiff=1024, percent=2.0) and len(gf['name']) > 11):
       return True
     else:
       if default=="prompt":
