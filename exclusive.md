@@ -5,7 +5,7 @@ permalink: "/exclusive/"
 layout: page
 ---
 
-Here you will find links to the content on the site which is difficult to find elsewhere: either because it went offline, it was edited, or because it's a file that was previously circulating offline. They are collected here in the hope that it will be useful to other digital archivists. You can download many of the files below as [a single, big zip archive](https://github.com/buddhist-uni/exclusive_01/archive/main.zip).
+Here you will find links to the content on the site that is difficult to find elsewhere: either because it went offline, it was edited, or because it's a file that was previously circulating offline. They are collected here in the hope that it will be useful to other digital archivists. You can download many of the files below as [a single, big zip archive](https://github.com/buddhist-uni/exclusive_01/archive/main.zip).
 
 ## Works by Type
 - [Articles](#articles)
