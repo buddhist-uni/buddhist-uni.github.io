@@ -1,5 +1,5 @@
 ---
-title: "Two Series of Kāḷudāyī’s Verses in the Pāli Commentaries"
+title: "Two Series of Kāḷudāyī’s Verses in the Pāli Commentaries: A Literal Translation"
 authors:
   - "Aruna Gamage"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/18497/20852"
