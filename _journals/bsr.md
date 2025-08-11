@@ -1,6 +1,6 @@
 ---
 title: "Buddhist Studies Review"
-external_url: "https://journals.equinoxpub.com/BSR/issue/archive"
+external_url: "https://journal.equinoxpub.com/BSR/issue/archive"
 year: 1983
 ---
 

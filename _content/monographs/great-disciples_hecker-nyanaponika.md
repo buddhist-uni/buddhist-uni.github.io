@@ -11,11 +11,8 @@ external_url: "https://www.bps.lk/olib/bp/bp417s_Nyanaponika-Hecker_Great-Discip
 course: characters
 tags:
   - setting
-  - ebts
-  - theravada
   - pali-commentaries
   - sangha
-  - monastic
   - problems
   - cosmology
 pages: 382

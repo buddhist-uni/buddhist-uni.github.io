@@ -110,7 +110,8 @@ If I were to actually teach this course, I'd perhaps meet twice per week for 13 
 1. {% capture foo %}{% include content_blurb.html slug="politics-of-the-buddhas-genitals_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
 1. [E] The Buddha's Family
 1. {% capture foo %}{% include content_blurb.html slug="gotama-family_sujato" category="essays" %}{% endcapture %}{{ foo | strip_newlines }}
-1. {% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}
+1. {% capture foo %}{% include inline_content.html category="articles" slug="wife-and-son_gindin-matthew" %}{{ foo | strip_newlines }}
+1. {% include inline_content.html category="articles" slug="buddhist-love-story_sasson-vanessa" %}
 
 1. {% capture foo %}{% include content_blurb.html slug="dn14" blurb="This mythic sutta gives the story of the Buddha we may be familiar with… but attributes it to the Buddha Vipassī! It wasn't until later that this story came to be normalized as true of all Buddhas: our own included." category="canon" %}{% endcapture %}{{ foo | strip_newlines }}
 1. {% capture foo %}{% include content_blurb.html category="canon" slug="snp3.1" %}{% endcapture %}{{ foo | strip_newlines }} (Bhante Sujato's translation here is <a href="https://discourse.suttacentral.net/t/snp-3-1-pabbajjasutta-the-going-forth/26844?u=khemarato.bhikkhu" target="_blank">preferred</a> to Ñanamoli's below)

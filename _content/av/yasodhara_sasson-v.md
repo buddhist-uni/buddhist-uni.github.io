@@ -1,7 +1,8 @@
 ---
 title: Writing Yasodhara and the Buddha
 subcat: podcast
-authors: ["Vanessa Sasson"]
+authors:
+  - sasson-vanessa
 year: 2021
 month: mar
 external_url: "https://newbooksnetwork.com/yasodhara-and-the-buddha"

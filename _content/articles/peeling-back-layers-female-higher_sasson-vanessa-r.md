@@ -1,7 +1,7 @@
 ---
 title: "Peeling Back the Layers: Female Higher Ordination in Sri Lanka"
 authors:
-  - "Vanessa R. Sasson"
+  - sasson-vanessa
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8913/10371"
 drive_links:
   - "https://drive.google.com/file/d/1r4UPjcpvJIKaLxmSTZPR0DNk5qo2ZO8D/view?usp=drivesdk"
