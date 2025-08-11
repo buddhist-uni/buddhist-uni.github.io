@@ -19,4 +19,6 @@ number: 43
 minutes: 49
 ---
 
-> Where our individual perception meets the external world: that point of focus is the juncture between inner and outer space, it's where we and nature find union, it's the home of the muse, of inspiration, even of what have been called 'angels' which the visionaries saw shining in that meeting place between the eye of the observer and the light of the observed.
+> Where our individual perception meets the external world: that point of focus is the juncture between inner and outer space.
+It's where we and nature find union.
+It's the home of the muse, of inspiration, even of what have been called 'angels' which the visionaries saw shining in that meeting place between the eye of the observer and the light of the observed.
