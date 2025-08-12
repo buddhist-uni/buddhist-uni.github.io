@@ -13,5 +13,5 @@ tags:
   - tagalog
 ---
 
-Five minutes a day of fun, free, and effective vocabulary acquisition in a large number of Eastern (and Western) languages---Chinese, Thai, Japanese, Korean, Vietnamese, Indonesian, Tagalog and many many more.
+Five minutes a day of fun, free, and effective vocabulary acquisition in a large number of Eastern (and Western) languages---Chinese, Thai, Japanese, Korean, Vietnamese, Indonesian, Tagalog, and many others.
 

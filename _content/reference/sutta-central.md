@@ -11,4 +11,4 @@ tags:
   - pali-dictionaries
 ---
 
-SuttaCentral hosts sources and free translations of Early Buddhist Texts, meticulously organized by parallels, books,  languages and searchable with several large indexes and built-in dictionary tools.
+SuttaCentral hosts sources and free translations of Early Buddhist Texts, meticulously organized by parallels, books, and languages and searchable with several large indexes and built-in dictionary tools.

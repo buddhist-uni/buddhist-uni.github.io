@@ -19,5 +19,5 @@ pages: 177
 ---
 
 > It is vital that all signs be read easily and understood quickly.
-This demands the consistent use of a distinctive type face throughout the entire system.
+This demands the consistent use of a distinctive typeface throughout the entire system.
 

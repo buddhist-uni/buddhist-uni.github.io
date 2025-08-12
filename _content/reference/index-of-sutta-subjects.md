@@ -10,4 +10,4 @@ pages: 49
 
 A large but still highly incomplete index of the suttas, this list is still helpful as a starting point for researching what the suttas have to say about a given topic.
 
-A similar subject can be found over [at SuttaFriends.org](https://suttafriends.org/sutta-topics-index/){:target="_blank"} and for an exhaustive index of terms, subjects, proper names, and similes, see [The Comprehensive Index](https://index.readingfaithfully.org/).
+A similar index can be found over [at SuttaFriends.org](https://suttafriends.org/sutta-topics-index/){:target="_blank"} and for an exhaustive index of terms, subjects, proper names, and similes, see [The Comprehensive Index](https://index.readingfaithfully.org/).

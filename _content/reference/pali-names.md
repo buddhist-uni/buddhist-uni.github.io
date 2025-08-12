@@ -18,6 +18,6 @@ pages: 5000
 olid: OL6365787M
 ---
 
-Thousands of entries covering the people, places, animals, books, etc of the Pāli Canon.
+This dictionary contains thousands of entries covering the people, places, animals, books, etc. of the Pāli Canon.
 
 You can hear the pronunciation of some of these names [over at ReadingFaithfully.org](https://readingfaithfully.org/pali-word-pronunciation-recordings/){:target="_blank"}.

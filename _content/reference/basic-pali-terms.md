@@ -10,4 +10,4 @@ tags:
 base_value: 0.3
 ---
 
-A list of important terms for Teravadan Buddhists and scholars of the early canon.
+A list of important terms for Theravadan Buddhists and scholars of the early canon.

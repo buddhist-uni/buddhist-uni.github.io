@@ -7,6 +7,6 @@ authors: [sujato]
 year: 2011
 ---
 
-A few translations from the Ekottara Agama by Bhikkhu Pasadika, Thich Huyen-Vi, and Sara Boin-Webb made for the Buddhist Studies Review, available on the web by kind permission of the translators.
+A few translations from the Ekottara Āgama by Bhikkhu Pāsādika, Thich Huyen-Vi, and Sara Boin-Webb, made for the *Buddhist Studies Review* and available on the web by kind permission of the translators.
 
-This site is deprecated, presumably superceded by [SuttaCentral](/content/reference/sutta-central).
+This site is deprecated, presumably superseded by [SuttaCentral](/content/reference/sutta-central).
