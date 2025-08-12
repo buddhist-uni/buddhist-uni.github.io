@@ -12,6 +12,7 @@ drive_links:
 course: west
 tags:
   - problems
+  - path
   - view
 year: 2022
 month: dec
