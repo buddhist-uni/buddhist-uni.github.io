@@ -23,4 +23,4 @@ viewed as a form of qualified cosmopolitanism: one that advanced many of the
 cosmopolitan literary ideals of its time but also staunchly protected its exclusively
 Buddhist identity.
 
-On how Pali literature in medieval Sri Lanka responded to Sanskrit's regional hegemony.
+On how Pāli literature in medieval Sri Lanka responded to Sanskrit's regional hegemony.

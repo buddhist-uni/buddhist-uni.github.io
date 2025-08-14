@@ -19,4 +19,4 @@ pages: "57--68"
 
 > True confidence only comes about once the teachings have led the disciple to personal verification of their efficacy.
 
-Faith as a starting point for the realization of truth.
+Faith is a starting point for the realization of truth.

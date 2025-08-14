@@ -16,6 +16,6 @@ booktitle: "Engaged Buddhism: The 2nd Bi-Annual International Conference of the 
 pages: "99--104"
 ---
 
-A brief overview of the history and present of Buddhism in Cambodia along with a few thoughts on where monasticism in the country is headed.
+This paper gives a brief overview of the history and present of Buddhism in Cambodia, along with a few thoughts on where monasticism in the country is headed.
 
 Notice, in particular, the formal and ideological similarities to Thai Buddhism on display here.

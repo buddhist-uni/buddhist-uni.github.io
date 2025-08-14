@@ -16,4 +16,4 @@ publisher: "Waxmann Verlag"
 pages: "101--133"
 ---
 
-In this paper, Bhikkhu Dhammadinā thoroghly explores an early Buddhist view of epistemology, one based on the four noble truths yet grounded in personal liberative experience, exploring contact (*phassa/sparśa*), the experiential domain (*āyatana*), and the validity of first-person experience.
+In this paper, Bhikkhu Dhammadinā thoroughly explores an early Buddhist view of epistemology, one based on the four noble truths yet grounded in personal liberative experience, exploring contact (*phassa/sparśa*), the experiential domain (*āyatana*), and the validity of first-person experience.

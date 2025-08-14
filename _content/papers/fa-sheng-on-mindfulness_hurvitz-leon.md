@@ -20,4 +20,4 @@ pages: "207--248"
 chapter: 8
 ---
 
-A translation of several sections of the *Treatise on the Heart of the Abhidharma* (阿毘曇心論 / *Abhidharmahṛdayaśāstra*) (T1550) by Zunzhe Fa-sheng (尊者法勝 / Ārya Dharmajina?) examining how the four *satipaṭṭhāna* are to be practiced sequentially to lead to insight.
+A translation of several sections of the *Treatise on the Heart of the Abhidharma* (阿毘曇心論 / *Abhidharmahṛdayaśāstra*) (T1550) by Zunzhe Fa-sheng (尊者法勝 / Ārya Dharmajina?), examining how the four *satipaṭṭhāna* are to be practiced sequentially to lead to insight.

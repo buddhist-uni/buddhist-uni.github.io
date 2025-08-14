@@ -20,4 +20,4 @@ tags:
   - death
   - theravada
 ---
-An importnat summary of non-exsitence and annihilation as taught in the Pali suttas.
+An important summary of non-existence and annihilation as taught in the Pali suttas.

@@ -25,5 +25,4 @@ Buddhist, Confucian, and Daoist thought. Bashō, although having seriously studi
 shrines.
 
 Matsuo Bashō was a 17th-century, Edo poet and a true master of the Haiku form.
-His [*Oku no Hosomichi*](https://en.m.wikipedia.org/wiki/Oku_no_Hosomichi) (*The Narrow Road to the Interior*):
-is one of the most celebrated, religious travelogues ever written.
+His [*Oku no Hosomichi*](https://en.wikipedia.org/wiki/Oku_no_Hosomichi) (*The Narrow Road to the Interior*) is one of the most celebrated, religious travelogues ever written.

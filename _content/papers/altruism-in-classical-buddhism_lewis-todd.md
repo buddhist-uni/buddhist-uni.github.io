@@ -14,4 +14,4 @@ tags:
   - karma
 ---
 
-On trying to place Buddhist altruism in conversation with Altruism as understood by the Western philosophical tradition.
+On trying to place Buddhist altruism in conversation with altruism as understood by the Western philosophical tradition.

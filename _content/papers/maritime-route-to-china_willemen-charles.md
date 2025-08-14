@@ -17,5 +17,5 @@ tags:
 address: "Taipei"
 ---
 
-> The historical period of this area was the third century till 627-649, when Zhenla took over.  Buddhism on this route was mahāsāmghika. Important was Avalokiteśvara, Nanhai Guanyin, who may have merged with Mazu along the southern Chinese coast. 
+> The historical period of this area was the third century until 627–649, when Zhenla took over. Buddhism on this route was mahāsāmghika. Important was Avalokiteśvara, Nanhai Guanyin, who may have merged with Mazu along the southern Chinese coast. 
 

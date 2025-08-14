@@ -20,6 +20,6 @@ publisher: "Informa"
 openalexid: W4293091902
 ---
 
-> This essay examines consumption patterns in various regions in the world during the Fin De Siècle, with an organization by region.
+> This essay examines consumption patterns in various regions in [sic] the world during the Fin De Siècle, with an organization by region.
 
-> national identity was frequently an important context of consumer culture in the 1870–1914 period.
+> National identity was frequently an important context of consumer culture in the 1870–1914 period.

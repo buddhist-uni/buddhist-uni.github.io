@@ -19,7 +19,7 @@ address: "London"
 openalexid: W1484180769
 ---
 
-> in Buddhist materials translated into Chinese,
+> In Buddhist materials translated into Chinese,
 from the earliest times onwards, local magistrates are viewed in an extremely negative
 light. They are indeed most frequently grouped with bandits as a potential threat to
 property or worse...

@@ -18,4 +18,4 @@ pages: "37--53"
 
 The 6th-century Buddhist philosopher Dharmakīrti differs from Mādhyamika philosophers but shares some interesting aspects with the Stoics.
 
-The paper also covers Dharmakīrti's views on perception, inference, and scriptual authority as means of valid knowledge.
+The paper also covers Dharmakīrti's views on perception, inference, and scriptural authority as means of valid knowledge.

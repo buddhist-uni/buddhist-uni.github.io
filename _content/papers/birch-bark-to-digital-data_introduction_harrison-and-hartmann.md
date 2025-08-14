@@ -14,4 +14,4 @@ tags:
 pages: 16
 ---
 
-Gives an overview of the archeology and methodology employed by modern scholars of early Buddhist texts.
+Gives an overview of the archaeology and methodology employed by modern scholars of early Buddhist texts.

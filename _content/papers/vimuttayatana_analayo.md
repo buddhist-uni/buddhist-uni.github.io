@@ -21,4 +21,4 @@ tags:
   - vipassana
 ---
 
-A summary of the five ocassions of liberation and how they arise through morality, concentration, and wisdom.
+A summary of the five occasions of liberation and how they arise through morality, concentration, and wisdom.
