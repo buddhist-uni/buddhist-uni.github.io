@@ -6,7 +6,7 @@ illustration: https://illeakyw.sirv.com/Images/tags/Yurt_Camp_in_Song_kol_region
 illustration_height: 853
 illustration_width: 1280
 illustration_center_x: 75%
-illustration_center_y: 95%
+illustration_center_y: 90%
 illustration_caption: >-
   A yurt camp pitched in the scenic Song-Köl Valley in 2017.
   Unsuitable for farming, the scrubby hills of Kyrgyzstan gave rise to a unique, nomadic culture.
