@@ -1,13 +1,12 @@
 ---
 title: "Mindfulness in Plain English"
 authors: [gunaratana]
-external_url: "https://archive.org/download/mindfulness-in-plain-english-bhante-gunaratana/Mindfulness%20in%20Plain%20English%20-%20Bhante%20Gunaratana_text.pdf"
+external_url: "https://ftp.budaedu.org/ebooks/pdf/EN036.pdf"
 drive_links:
   - "https://drive.google.com/file/d/12dStAKIylkRgbJuFK8B8_2PvQbKkiRAv/view?usp=sharing"
 source_url: "https://www.vipassana.com/meditation/mindfulness_in_plain_english.html"
 year: 1991
 olid: OL25156616M
-publisher: wisdom
 status: featured
 course: meditation
 tags:
