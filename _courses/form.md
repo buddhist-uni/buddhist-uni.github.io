@@ -338,6 +338,9 @@ As you read through Robinson et al's _Historical Introduction_ one chapter at a 
 {:.mb-0}
 - The Vietnamese and Korean traditions have taken on a more "engaged" attitude towards Awakening and the Bodhisattva path.
 
+{% include content_blurb.html category="av" slug="vietnamese-shrines_hal-on-earth" %}
+- A short documentary on what Vietnamese shrines are like, what they mean, and how to visit them respectfully.
+
 {% include content_blurb.html category="essays" slug="pure-land_pluralism" %}
 - Modern Mahayana Buddhists such as the Chinese Master Hsing Yun and Vietnamese Thích Nhất Hạnh refocused Pure Land’s “next-life-oriented” practices in a more “humanistic” (this-world-oriented) direction.
 
