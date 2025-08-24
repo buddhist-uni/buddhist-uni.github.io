@@ -3,6 +3,23 @@
 
 @import "support";
 
+article.content-perma {
+    @media (min-width: 475px) {
+        header:has(img) {
+            display: flex;
+        }
+    }
+    .content-information {
+        margin: auto;
+        padding-left: 1rem;
+        padding-top: 0.1lh;
+    }
+}
+
+article.content-perma .post-content {
+    display: block;
+}
+
 article.content-perma h1.post-title {
     font-size: 39px;
     margin-bottom: 4px;
@@ -85,13 +102,24 @@ article.content-perma iframe {
 }
 
 article.content-perma header img {
-    margin-bottom: 20px;
-    margin-left: 0px;
+    border: 1px solid $grey-color-light;
     @extend %olcoverimg;
 }
 
+div.download-info {
+    display: flex;
+    align-items: center;
+}
+
 div.content_links {
-  display: inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: $banner-color;
+    color: white;
+
+    div.the-links {
+        place-content: space-evenly;
+    }
 }
 
 .content_size {
@@ -112,9 +140,7 @@ div.content_links {
         padding-left: 13px;
     }
     div {
-        border: 1px solid gray;
         padding: 5px;
-        background-color: #EEF0FC;
         border-radius: 3px;
         font-size: 96%;
     }

@@ -20,7 +20,7 @@ pages: 256
 
 > … a book about people trying to solve problems created by people trying to solve problems
 
-A few case studies of man setting out to fix his environment. 
+A few case studies of humanity setting out to fix the environment. 
 
 By zooming in on tiny fish and out to the entire stratosphere, it beautifully captures the staggering scope of climate change and its challenges.
 In highlighting the scientists and engineers working on it, the book offers a somewhat more hopeful picture of our possible future: less apocalyptic but still incredibly strange.

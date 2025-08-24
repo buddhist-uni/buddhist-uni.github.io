@@ -1,23 +1,24 @@
-<div class="content_links">{% if page.collection == "content" and page.external_url %}{% if page.external_url contains "archive.org" and page.category == "monographs" and page.external_url contains "/mode/" %}Read it:{% elsif page.subcat == "podcast" %}Listen:{% elsif page.subcat == "film" or page.subcat == "course" and page.external_url contains "youtu" %}Watch:{% else %}Get it:{% endif %}{% elsif page.collection == "content" and page.drive_links.size > 0 %}Available as:{% endif %}
+<div class="content_links"><div class="intro-text">{% if page.collection == "content" and page.external_url %}{% if page.external_url contains "archive.org" and page.category == "monographs" and page.external_url contains "/mode/" %}Read it:{% elsif page.subcat == "podcast" %}Listen:{% elsif page.subcat == "film" or page.subcat == "course" and page.external_url contains "youtu" %}Watch:{% else %}Get it:{% endif %}{% elsif page.collection == "content" and page.drive_links.size > 0 %}Available as:{% endif %}</div>
+  <div class="the-links">
      {% if include.content.external_url %}{% assign linkfmt = "" %}
         {%- capture linkbody -%}<i class="fa{% if include.content.external_url contains "youtu" %}{% assign linkfmt = "YouTube (link)" %}b fa-youtube"></i> YouTube{% elsif include.content.external_url contains "//www.academia.edu/" %}c-academia"></i>cademia.edu{% assign linkfmt = "Academia.edu" %}{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}{% assign linkfmt = "mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}{% assign linkfmt = "zip" %}file-archive"></i> zip{% elsif ext == ".htm" or ext == "html" %}{% assign linkfmt = "html" %}globe"></i> Online{% elsif include.content.external_url contains "download" or include.content.external_url contains "viewcontent.cgi" or include.content.external_url contains "pdf" %}{% assign linkfmt = "pdf" %}file-pdf"></i> pdf{% else %}{% case include.content.category %}{% when "av" %}{% if page.subcat == "film" %}video{% else %}volume-up{% endif %}{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}{%- endcapture -%}
-        <a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a>
+        <div class="a-link"><a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a></div>
     {% endif %}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}{% unless linkfmt == "epub" and include.content.file_links[forloop.index0] %}
-            <a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a>
+            <div class="a-link"><a class="btn" {% if include.newtab %}target="_blank" {% endif %}{% include content_link_data_attributes.html content=include.content linktype="Google Drive" linkfmt=linkfmt %} href="{{ link }}"><i class="fa{% if link contains "drive.google.com" %}b fa-google-drive{% elsif link contains "play.google.com" %}b fa-google-play{% else %}s fa-globe{% endif %}"></i> {{ linkfmt }}</a></div>
         {% endunless %}{%- endfor -%}
     {%- endif -%}
     {% if include.content.file_links.size > 0 %}
         {%- for link in include.content.file_links -%}
             {%- assign bucket = link | split: "/" | first -%}
             {% assign linkfmt = include.content.formats[forloop.index0] %}
-            <a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{% if bucket == "smallpdfs" %}https://smallpdfs.buddhistuniversity.net/{{ link | remove_first: "smallpdfs/" }}{% elsif bucket == "largefiles" %}https://cfr-cdn.buddhistuniversity.net/{{ link | remove_first: "largefiles/" }}{% else %}{{ site.data.content.filehost | append: link }}{% endif %}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a>
+            <div class="a-link"><a download class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Self-Hosted" linkfmt=linkfmt %} href="{% if bucket == "smallpdfs" %}https://smallpdfs.buddhistuniversity.net/{{ link | remove_first: "smallpdfs/" }}{% elsif bucket == "largefiles" %}https://cfr-cdn.buddhistuniversity.net/{{ link | remove_first: "largefiles/" }}{% else %}{{ site.data.content.filehost | append: link }}{% endif %}"><i class="fas fa-cloud-arrow-down"></i> {{ linkfmt }}</a></div>
         {%- endfor -%}
     {%- endif -%}
     {% if page.source_url %}
-        <a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Source" linkfmt="" %}><i class="fas fa-route"></i> Origin</a>
+        <div class="a-link"><a class="btn" href="{{ include.content.source_url }}" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Source" linkfmt="" %}><i class="fas fa-route"></i> Origin</a></div>
     {% endif %}
     {%- assign showworldcat = false -%}
     {%- unless include.content.source_url or include.content.external_url or include.content.file_links or include.content.drive_links.size > 0 -%}
@@ -28,17 +29,19 @@
         {%- endif -%}
     {%- endunless -%}
     {%- if include.content.excerpt_url -%}
-        {%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}
+        <div class="a-link">{%- if showworldcat -%}<details class="copyright details-reset"><summary>{%- endif -%}
         <a class="btn" {% if include.newtab %}target="_blank" {% endif %}href="{{ include.content.excerpt_url }}" {% include content_link_data_attributes.html content=include.content linktype="Preview" linkfmt="html" %}><i class="fas fa-book-reader"></i> Preview</a>
+        {%- unless showworldcat -%}</div>{%- endunless -%}
     {%- endif -%}
     {%- if showworldcat -%}
-        {%- unless include.content.excerpt_url -%}<details class="copyright details-reset"><summary>{%- endunless -%}
+        {%- unless include.content.excerpt_url -%}<div class="a-link"><details class="copyright details-reset"><summary>{%- endunless -%}
         {%- capture authors -%}{% include content_authors_string.html content=include.content %}{%- endcapture -%}
         {% assign authors = authors | strip_html | strip | cgi_escape %}
             <a class="btn" {% include content_link_data_attributes.html content=include.content linktype="WorldCat" linkfmt="WorldCat" %} href="https://www.worldcat.org/{% if include.content.oclc %}oclc/{{ include.content.oclc }}{% else %}search?q=ti%3A{{ include.content.title | markdownify | strip_html | strip | cgi_escape }}{% if authors %}+au%3A{{ authors }}{% endif %}{% if include.content.category == 'monographs' %}&fq=x0%3Abook+%3E+ln%3Aeng{% endif %}&qt=advanced{% endif %}"><i class="fas fa-binoculars"></i> WorldCat&trade;</a>
             <i class="far fa-question-circle"></i>
         </summary><div>
             <i class="far fa-copyright"></i> This fine, Copyrighted work cannot be shared {% if include.content.excerpt_url %}in its entirety{% else %}directly{% endif %}, however WorldCat&trade; can help you find a copy at a nearby library{% if include.content.category == 'monographs' %} or wherever you get books{% endif %}.
-        </div></details>
+        </div></details></div>
     {%- endif -%}
+  </div>
 </div>

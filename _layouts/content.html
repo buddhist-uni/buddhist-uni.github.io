@@ -20,9 +20,9 @@ layout: default
 
 <article class="content-perma">
 
-  <header class="post-header">
+  <header class="post-header" style="margin-bottom: 12px;"><div>
     <script>window.topic_category="{{ page.course | default: 'archive' }}";</script>
-    <div class="back"><a href="/content/">Content</a> / <a href="/content/{{ page.category }}/">{{ category.title }}</a> /</div>
+    <div class="back"><a href="/content/">Content</a>&nbsp;/ <a href="/content/{{ page.category }}/">{{ category.title }}</a>&nbsp;/</div>
     {%- if page.olid -%}
     <img src="https://buddhistuniversity.net/assets/imgs/covers/{{ page.olid }}.jpg" alt="the book cover">
     {%- elsif page.image -%}
@@ -35,6 +35,7 @@ layout: default
     {%- if dlink.size == 28 or dlink.size == 33 or dlink.size == 44 -%}
     <img src="https://drive.google.com/thumbnail?authuser=0&sz=h500&id={{ dlink }}" onerror="this.remove()">
     {%- endif -%}{%- endif -%}{%- endif -%}
+    </div><div class="content-information">
     {% assign title = page.title | markdownify | remove: '<p>' | remove: '</p>' | split: ": " %}
     <h1 class="post-title">{% if page.subcat %}{% include content_icon.html category=page.category subcat=page.subcat %} {% endif %}{{ title | first }}
     {%- if title.size > 1 -%}<span style="color:transparent">: </span><div class="post-subtitle">{{ title | shift | join: ": " }}</div>{%- endif -%}</h1>
@@ -58,8 +59,11 @@ layout: default
             {% endif %}</div>
         </details>
     </div>{% endunless %}
+    <div class="download-info">
     {% include content_filelinks.html content=page %}
-    {% include content_size.html content=page %}
+    <div>{% include content_size.html content=page %}</div>
+    </div>
+  </div>
  </header>
   <div class="post-content">
         {% if page.category == "av" and page.external_url contains "youtu" or page.file_links[0] or page.embedded_html %}{% unless page.external_url contains "list" %}

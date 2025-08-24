@@ -12,11 +12,11 @@ layout: default
 {% for pslug in page.parents %}
     {% assign parent = alltags | find: "slug", pslug %}
     {% unless parent %}{% continue %}{% endunless %}
-    {% capture plink %}<a href="{{ parent.url }}">{{ parent.title }}</a>{% endcapture %}
+    {% capture plink %}<a href="{{ parent.url }}">{{ parent.title | replace: " ", "&nbsp;" }}</a>{% endcapture %}
     {% assign parents = parents | push: plink %}
 {% endfor %}
 {% unless page.banner_info %}
-<div class="back"><a href="/tags" style="font-size: 130%;">Topical Bibliographies</a> / {% if parents.size > 0 %}{{ parents | join: ", " }} / {% endif %}</div>
+<div class="back"><a href="/tags" style="font-size: 130%;">Topical Bibliographies</a>&nbsp;/ {% if parents.size > 0 %}{{ parents | join: ", " }}&nbsp;/ {% endif %}</div>
 {% endunless %}
 <h1 class="post-title{% if page.banner_info %} overlay-into-banner{% endif %}">{{ page.title | escape }}</h1>
 {% assign course = site.courses | find: "slug", page.slug %}
