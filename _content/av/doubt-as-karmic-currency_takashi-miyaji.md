@@ -3,7 +3,8 @@ title: "Doubt as Karmic Currency"
 authors:
   - "Takashi Miyaji"
 subcat: podcast
-external_url: "https://dharmatalks.jodoshinshu.faith/doubt-as-karmic-currency-by-rev-dr-takashi-miyaji/"
+external_url: "https://rdtakam.podbean.com/e/doubt-as-karmic-currency/"
+source_url: "https://dharmatalks.jodoshinshu.faith/doubt-as-karmic-currency-by-rev-dr-takashi-miyaji/"
 drive_links:
   - "https://drive.google.com/file/d/1L7nd25qHBaLAZsQMVJwVSPp9r_qYY4oS/view?usp=drive_link"
 course: karma

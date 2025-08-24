@@ -3,7 +3,6 @@ title: "*Satori* and the Moral Dimension of Enlightenment"
 authors:
   - "Dale S. Wright"
 external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/02_ZSE_Wright.pdf"
-alternative_url: "https://www.thezensite.com/ZenEssays/Philosophical/Satori_and_Moral_Dimension.pdf"
 drive_links:
   - "https://drive.google.com/file/d/19r0l2kwIxFD96K2lbP3vA0jLojwADy7z/view?usp=drivesdk"
 course: japanese

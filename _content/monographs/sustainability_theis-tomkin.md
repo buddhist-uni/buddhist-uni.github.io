@@ -1,6 +1,7 @@
 ---
 title: "Sustainability: A Comprehensive Foundation"
 editor: "Tom Theis and Jonathan Tomkin"
+external_url: "https://archive.org/details/sustainability-a-comprehensive-foundation/mode/1up"
 source_url: "https://archive.org/details/cnx-org-col11325/mode/1up"
 drive_links:
   - "https://drive.google.com/file/d/1Io00Y3Hlg2cl56bYmketgMtB942AuxG4/view?usp=drivesdk"

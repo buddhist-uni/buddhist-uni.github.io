@@ -17,4 +17,4 @@ pages: 368
 
 Two English Buddhists retell the story of their trek around the Holy Sites of India™️ in this entertaining and thoughtful travel log.
 
-[Part 1: Rude Awakenings](https://forestsangha.org/teachings/books/rude-awakenings?language=English) and [Part 2: Great Patient One](https://forestsangha.org/teachings/books/great-patient-one?language=English) are alao available on the Forest Sangha website and [the AudioBook](https://whereareyougoing.podbean.com/) is available courtesy of PodBean.
+[Part 1: Rude Awakenings](https://www.forestsangha.org/publications-all-publications/ajahn-sucitto-rude-awakenings) and [Part 2: Great Patient One](https://www.forestsangha.org/publications-all-publications/ajahn-sucitto-great-patient-one) are alao available on the Forest Sangha website and [the AudioBook](https://whereareyougoing.podbean.com/) is available courtesy of PodBean.
