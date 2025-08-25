@@ -7,11 +7,11 @@ article.content-perma {
     @media (min-width: 475px) {
         header:has(img) {
             display: flex;
+            column-gap: 1rem;
         }
     }
     .content-information {
         margin: auto;
-        padding-left: 1rem;
         padding-top: 0.1lh;
     }
 }
@@ -102,6 +102,10 @@ article.content-perma iframe {
 }
 
 article.content-perma header img {
+    @media (max-width: 474.9px) {
+        margin-bottom: 7px;
+        margin-left: 0;
+    }
     border: 1px solid $grey-color-light;
     @extend %olcoverimg;
 }
