@@ -11,7 +11,7 @@ tags:
   - north-korea
 year: 2013
 month: oct
-journal: "Journal of Korean Religions"
+journal: jkr
 volume: 4
 number: 2
 pages: "9--50"

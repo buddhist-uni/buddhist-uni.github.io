@@ -28,6 +28,7 @@ EB_NS    = "S2764994964"
 IBK      = "S2764402342"
 EMSCAT   = "S4210198890"
 IJBTC    = "S4210226626"
+JKR      = "S2764709287"
 
 # from OA to OBU IDs
 slugs = {
@@ -57,4 +58,5 @@ slugs = {
   IBK: "ibk",
   EMSCAT: "emscat",
   IJBTC: "ijbtc",
+  JKR: "jkr",
 }
