@@ -24,5 +24,5 @@ A collection of short teachings to "seekers who would desire to go in the same w
 The translation here was published by The Eastern Buddhist in three installments in 1970 and 1971:
   1. New Series vol 3 n 2, pp. 89–118
   2. New Series vol 4 n 1, pp. 116–123
-  3. New Series vol 4 n 2, pp. 119–127
+  3. New Series vol 4 n 2, pp. 119–127  
 They are gathered here into a single PDF for your convenience.
