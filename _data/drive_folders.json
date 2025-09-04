@@ -159,6 +159,10 @@
   "private": "https://drive.google.com/drive/folders/1BhOe0_t7vacLQ_CBDbAIZdqrzUpvBhaG",
   "public": ""
  },
+ "austria": {
+  "private": "https://drive.google.com/drive/folders/1n9EiwiggBFqjpqYlXjE0AWYstrvkwCxK",
+  "public": null
+ },
  "avadana": {
   "private": "https://drive.google.com/drive/folders/1aN6WV1jFBPCXq9IIH1jCurv7q9KG2WcK",
   "public": "https://drive.google.com/drive/folders/1_t64cWMnRLnjxKtZONwPUowZNiNOgY6a"
@@ -1970,6 +1974,10 @@
  "udana": {
   "private": "https://drive.google.com/drive/folders/1sOUf38hsBOpRUEauRhXouOWMGyRAir-n",
   "public": "https://drive.google.com/drive/folders/1MABTglSV7SDXx1vVFN-f6ny-WO8g-VRP"
+ },
+ "uk": {
+  "private": "https://drive.google.com/drive/folders/1C1ciryAbILOcfRDGbwc9_TLykzGKZVr3",
+  "public": null
  },
  "ukraine": {
   "private": "https://drive.google.com/drive/folders/1jPq7m6Leqtrz39d-q2CxxOjgfzPKHstp",
