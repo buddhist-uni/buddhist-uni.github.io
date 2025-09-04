@@ -1,14 +1,14 @@
 ---
 title: "即心記 Sokushin-ki (On the mind)"
 authors:
-  - "Shidō Munan Zenji"
+  - "至道無難 Shidō Bunan Zenji"
 translator: "小堀宗柏 Kobori Sōhaku and Norman A. Waddell"
 source_url: "https://terebess.hu/zen/mesterek/bunan.html"
 drive_links:
   - "https://drive.google.com/file/d/1vHN13MdRVQAYqaWZ-lNa73NLALmh-Fvp/view?usp=drivesdk"
 file_links:
   - "exclusive_01/Sokushin-ki%20-%20Shid%C5%8D%20Munan%20Zenji.pdf"
-course: monastic-advise
+course: monastic-advice
 tags:
   - japanese
   - mahayana
