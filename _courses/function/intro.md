@@ -8,12 +8,16 @@ image_info: <a href="https://commons.wikimedia.org/wiki/File:Tsongmo_Lake_Sikkim
 
 ## Lectures
 
-The lecture series we'll be listening to over this course was originally delivered to meditation students at a temple in Los Angeles,
-so I encourage you to do a brief meditation before each talk to "get into the mood."
-And if the talks (or any of the readings) aren't useful for you, please feel free to skip them.
+Bhante Yuttadhammo will be our lecturer for this course.
 
-For most of us, the question isn't _how_ to practice meditation: it's _why_.
-In this talk, Bhante sets up this central question which will drive the rest of our course:
+His talks were largely delivered to yogis (some in-person and some online) who were doing an intensive meditation retreat. 
+His talks are, therefore, more geared towards advanced practitioners despite covering the same, basic topics as our textbook.
+
+If you haven’t tried [Bhante Yuttadhammo’s meditation style](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank"} before, you may want to give it a try now, as his talks will make more sense to those who, like his original audience, are familiar with his technique.
+
+But, our main question here isn't just _how_ to practice meditation: it's _why_.
+
+In this first talk, Bhante sets up this central question which will drive the rest of our course:
 
 {% include content_blurb.html category="av" slug="why-meditate_yuttadhammo" %}
 {% include inline-av-player.html content="why-meditate_yuttadhammo" %}

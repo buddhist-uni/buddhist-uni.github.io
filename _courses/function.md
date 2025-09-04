@@ -46,17 +46,19 @@ toc:
 
 <h2 id="what-is">What is the Practice of Buddhism?</h2>
 
-Buddhism is a practice meant to increase our happiness by encouraging our cultivation of moral virtues, mental clarity, and compassionate wisdom.
+Buddhist practice is to overcome delusion through the cultivation of virtue, mental clarity, and wisdom.
 
-Buddhism supports this “threefold training” by providing both essential, explanatory frameworks and practical guidance. The Buddha himself called this a “Dhamma-Vinaya,” or “Philosophy-Discipline,” but we might simply call it “a way of life” because Buddhism is meant to transform our entire lives from our selfish, restless, addicted, never-satisfied “[default mode](https://en.wikipedia.org/wiki/Default_mode_network){:target="_blank" ga-event-value="0.15"},” to the pinnacle of human potential—the total eradication of suffering. 
+Buddhism supports this “threefold training” by providing both essential, explanatory frameworks and practical guidance. The Buddha himself called this a “Dhamma-Vinaya,” or “Philosophy-Discipline,” but we might simply call it “a way of life” because Buddhism is meant to transform our entire lives from our selfish, restless, unsatisfied “[default mode](https://en.wikipedia.org/wiki/Default_mode_network){:target="_blank" ga-event-value="0.15"},” to the pinnacle of human potential: the total eradication of suffering. 
 
 
 <h2 id="prereqs">Prerequisites</h2>
 
-This course is primarily aimed at giving those with prior meditation experience an overview of the ethical / philosophical frame around Buddhist meditation practices.
+This course is aimed at giving those with some prior meditation experience a more thorough grounding in the ethical and philosophical frame around Buddhist practice.
+Our goal for this class is to understand the personal transformation that Buddhist practices aim to produce.
 
-Bhante Yuttadhammo will be our lecturer for this course.
-If you haven’t tried [his meditation technique](https://www.sirimangalo.org/text/how-to-meditate/){:target="_blank" ga-event-value="1.5"} before, you may want to give it a try now and/or throughout the course, as his talks will make more sense to those familiar with his technique.
+The course should be suitable for both advanced practitioners who are striving for Nibbāna and for those who are just starting out on the path.  This is done by blending together more beginner-friendly readings with more uncompromising lectures.
+If either the readings or the lectures aren't very helpful for where you're at, feel free to skip what isn't helpful for you and to just take what is.
+
 
 <h2 id="text">Textbook</h2>
 
@@ -64,9 +66,11 @@ This course follows the excellent textbook by Bhikkhu Cintita:
 
 {% include content_blurb.html category="booklets" slug="buddhist-life-buddhist-path_cintita" %}
 
-This book forms the backbone of the course and is highly recommended.
+This lovely book forms the backbone of the course and is highly recommended.
 
 The book is divided into two, unsurprising halves: *Buddhist Life* and *Buddhist Path*: the exterior and interior transformation of the practitioner which follows the gradual path of Buddhism---from the mundane to the transcendent---often taught by the Buddha himself.
+
+The textbook is designed to be a gentle introduction for absolute beginners.
 
 {% include multipartcourse_outline.html course="function" introtext="This course will proceed in 15 modules following the chapters in Buddhist Life, Buddhist Path:" %}
 
