@@ -1,5 +1,5 @@
 ---
-title: "Buddha Under Naga: Animism, Hinduism and Buddhism in Siamese Religion—A Senseless Pastiche or a Living Organism?"
+title: "The Buddha Under Naga: Animism, Hinduism and Buddhism in Siamese Religion—A Senseless Pastiche or a Living Organism?"
 authors:
   - "Michael Wright"
 external_url: "https://thesiamsociety.org/wp-content/uploads/1992/03/JSS_080_2h_Wright_BuddhaUnderNaga.pdf"

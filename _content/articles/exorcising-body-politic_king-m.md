@@ -1,5 +1,5 @@
 ---
-title: "Exorcising the Body Politic"
+title: "Exorcising the Body Politic: The Lion’s Roar, Köten Ejen’s Two Bodies and the Question of Conversion at the Tibet-Mongol Interface"
 authors:
   - "Matthew King"
 external_url: "https://journal.equinoxpub.com/BSR/article/view/20665/21743"
