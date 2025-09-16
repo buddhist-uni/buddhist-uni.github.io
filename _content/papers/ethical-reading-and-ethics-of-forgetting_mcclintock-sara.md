@@ -10,7 +10,6 @@ drive_links:
 course: rebirth-stories
 tags:
   - hermeneutics
-  - sati
 year: 2017
 month: jun
 pages: "185--202"
