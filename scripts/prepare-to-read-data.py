@@ -90,6 +90,8 @@ for filep in args.folder.iterdir():
   elif "(oa)" in filep.name:
     free = "1"
   title = input_with_prefill("title: ", title)
+  if not title:
+    break
   author = input_with_prefill("author: ", author)
   if len(gfiles) != 1 or gfiles[0]['md5Checksum'] != md5(filep.read_bytes()).hexdigest():
     glink = input("Google File URL: ")

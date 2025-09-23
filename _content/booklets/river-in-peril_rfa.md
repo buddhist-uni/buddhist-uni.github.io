@@ -4,8 +4,10 @@ authors:
   - "Radio Free Asia"
 editor: "Dan Southerland"
 external_url: "https://web.archive.org/web/20230622065406if_/https://www.rfa.org/english/bookshelf/Mekong.pdf"
+formats: [pdf, GBook]
 drive_links:
   - "https://drive.google.com/file/d/1QJ7ejTwTpo8g5ZjUSCLhJCbyJek3_yEf/view?usp=drivesdk"
+  - "https://play.google.com/store/books/details/Radio_Free_Asia_A_River_In_Peril?id=sTW1DQAAQBAJ"
 course: wider
 tags:
   - asia
