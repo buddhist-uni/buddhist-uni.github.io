@@ -50,7 +50,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 
 * [Access to Insight](https://www.accesstoinsight.org/)
 * [BuddhaNet](https://www.buddhanet.net/ebooks)
-* [DhammaTalks.net](https://dhammatalks.net/)
+* [DhammaTalks.net](http://dhammatalks.net/)
 * The [Handful of Leaves Library](https://web.archive.org/web/20211205015005/http://ahandfulofleaves.org/Library.html)
 * [SuttaReadings.net](https://www.suttareadings.net/audio/index-readers.html)
 * [Dharma Seed](https://dharmaseed.org/talks)

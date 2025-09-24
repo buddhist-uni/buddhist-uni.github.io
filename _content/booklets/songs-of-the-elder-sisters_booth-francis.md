@@ -2,7 +2,6 @@
 title: "Songs Of The Elder Sisters"
 authors:
   - "Francis Booth"
-external_url: "https://stonerecords.co.uk/album/ronald-corp-songs-of-the-elder-sisters/"
 drive_links:
   - "https://drive.google.com/file/d/1wqARjh1bZG0zZjdve4428ezWqkIlkNQE/view?usp=sharing"
 course: tg

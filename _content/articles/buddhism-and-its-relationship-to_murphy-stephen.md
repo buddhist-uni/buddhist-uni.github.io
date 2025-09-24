@@ -2,7 +2,7 @@
 title: "Buddhism and its Relationship to Dvaravati Period Settlement Patterns and Material Culture in Northeast Thailand and Central Laos c. the Sixth to Eleventh Centuries: A Historical Ecology Approach to the Landscape of the Khorat Plateau"
 authors:
   - "Stephen Murphy"
-external_url: "https://eprints.soas.ac.uk/34343/1/AP52-2%20MURPHY.pdf"
+external_url: "https://soas-repository.worktribe.com/OutputFile/413262"
 source_url: "https://doi.org/10.1353/asi.2013.0017"
 drive_links:
   - "https://drive.google.com/file/d/1iFGVOuceIDgvCdbKqEdDrr-E7k2KFOVs/view?usp=drivesdk"

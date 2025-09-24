@@ -2,7 +2,7 @@
 title: "The Heretical, Heterodox Howl: Jackals in Pāli Buddhist Literature"
 authors:
   - "Ohnuma Reiko"
-external_url: "https://www.academia.edu/38605819/The_Heretical_Heterodox_Howl_Jackals_in_P%C4%81li_Buddhist_Literature"
+external_url: "https://doi.org/10.3390/rel10030221"
 drive_links:
   - "https://drive.google.com/file/d/1CHZhp2LPKOIKXfVtH_x0IDvRJR8Y9zbP/view?usp=drivesdk"
 course: animals

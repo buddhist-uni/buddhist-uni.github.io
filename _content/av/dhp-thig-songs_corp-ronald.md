@@ -17,6 +17,6 @@ minutes: 24
 
 A few songs from two albums setting some verses from the Pāḷi Canon to music in the Western style.
 
-You can get the booklets for both albums off the publisher's website:
-  - [Dhammapada](https://stonerecords.co.uk/album/ronald-corp-dhammapada/)
-  - [Therigatha](https://stonerecords.co.uk/album/ronald-corp-songs-of-the-elder-sisters/)
+You can get the booklets for both albums here:
+  - [Dhammapada](https://web.archive.org/web/20240226081248if_/https://stonerecords.co.uk/wp-content/uploads/2013/03/5060192780055-Booklet.pdf)
+  - [Therigatha](https://web.archive.org/web/20210625064436if_/https://stonerecords.co.uk/wp-content/uploads/2013/11/5060192780369-Booklet.pdf)

@@ -2,7 +2,7 @@
 title: "Is There a Traditionalist Buddhist Social Engagement?: FPMT and the Study of Engaged Buddhism"
 authors:
   - "Donna Lynn Brown"
-external_url: "https://blogs.dickinson.edu/buddhistethics/files/2025/09/Brown-Traditionalist-social-engagement.pdf"
+external_url: "https://blogs.dickinson.edu/buddhistethics/files/2025/09/Brown-Traditionalist-social-engagement-final.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1_euBFBS1ap3TJVGGooOM9sKfxdbdrDdg/view?usp=drivesdk"
 course: engaged
