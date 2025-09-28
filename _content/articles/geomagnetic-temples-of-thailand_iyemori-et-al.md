@@ -13,6 +13,7 @@ course: theravada-roots
 tags:
   - thai-art
   - buddhist-architecture
+  - thailand-roots
   - geology
   - historiography
 year: 2011
