@@ -14,7 +14,7 @@ volume: 30
 pages: "89--124"
 ---
 
-> because I have discerned the teachings by perceiving my own mind, I feel
+> ... because I have discerned the teachings by perceiving my own mind, I feel
 respect for the tradition that bases itself on mind [i.e., Chan]. 
 Moreover, because I have understood the cultivation of mind by discerning the teachings, I have reverent regard for the meaning of the teachings.
 
