@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1EeMxFHcLJt86tQ6WI2L3VtMLrpLqT0ns/view?usp=sharing"
 course: cambodian # maybe archive...
 tags:
-  - theravada-monastic
+  - monastic-theravada
 year: 2009
 month: mar
 booktitle: "Engaged Buddhism: The 2nd Bi-Annual International Conference of the Association of Theravāda Buddhist Universities"
