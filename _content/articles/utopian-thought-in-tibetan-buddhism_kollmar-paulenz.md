@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1Lum1F8clFY_OAP3TE6_NzG9WesAlI7DQ/view?usp=sharing"
 course: tibetan
 tags:
-  - mythology
+  - ideology
 year: 1992
 journal: "Studies in Central and East Asian Religions"
 publisher: "Brill"
@@ -22,4 +22,4 @@ and its inhabitants. Later works, especially the smon lam, the most popular text
 Śambhala among the Tibetan and Mongolian Buddhist lay people, concentrate on the 
 paradisiac nature of the hidden kingdom.
 
-DescripThe paper explores how the Tibetan Buddhist vision of Śambhala functions as both a utopian ideal and political symbolism. It traces the myth’s evolution from spiritual paradise to political metaphor, compares it with European utopian traditions, and cites key Tibetan and Mongolian sources.tion
+The paper explores how the Tibetan Buddhist vision of Śambhala functions as both a utopian ideal and political symbolism. It traces the myth’s evolution from spiritual paradise to political metaphor, compares it with European utopian traditions, and cites key Tibetan and Mongolian sources.
