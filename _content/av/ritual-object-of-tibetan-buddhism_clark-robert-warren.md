@@ -1,5 +1,5 @@
 ---
-title: "Ritual Object of Tibetan Buddhism"
+title: "Ritual Objects of Tibetan Buddhism"
 subcat: film
 authors:
   - "Robert Warren Clark"

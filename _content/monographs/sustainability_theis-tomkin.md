@@ -14,6 +14,7 @@ year: 2018
 month: dec
 publisher: "The University of Illinois Open Source Textbook Initiative"
 pages: 642
+olid: OL39803398M
 ---
 
 > Because sustainability is a cross-disciplinary field of study, producing this text has required bringing together over twenty experts from a variety of fields....

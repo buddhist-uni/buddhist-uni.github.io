@@ -155,13 +155,13 @@
   "private": "https://drive.google.com/drive/folders/1j3ebXdLnsVIpyB6Q5RtPuh-wqYOPJvs9",
   "public": null
  },
+ "australasian": {
+  "private": "https://drive.google.com/drive/folders/1BhOe0_t7vacLQ_CBDbAIZdqrzUpvBhaG",
+  "public": "https://drive.google.com/drive/folders/1NZxfyo2hwRlKwHVrsR7a8E-WGYIJ5yjy"
+ },
  "australia": {
   "private": "https://drive.google.com/drive/folders/1NQ5BMvbsispbKp18bx7Hcz01t8RdOfD2",
   "public": null
- },
- "australian": {
-  "private": "https://drive.google.com/drive/folders/1BhOe0_t7vacLQ_CBDbAIZdqrzUpvBhaG",
-  "public": ""
  },
  "austria": {
   "private": "https://drive.google.com/drive/folders/1n9EiwiggBFqjpqYlXjE0AWYstrvkwCxK",
@@ -322,6 +322,10 @@
  "caves": {
   "private": "https://drive.google.com/drive/folders/1J7QctyJ1ly7ICvJbEmxjGqKDTTw_YrQV",
   "public": ""
+ },
+ "central-america": {
+  "private": "https://drive.google.com/drive/folders/1708IXgdMz75HbwJ4qf1OjBI1sZSj0KCF",
+  "public": null
  },
  "central-asia": {
   "private": "https://drive.google.com/drive/folders/1QCjo2soadr9KDAW_wk3enyJOsUBmoUOT",

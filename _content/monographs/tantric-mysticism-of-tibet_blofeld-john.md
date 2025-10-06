@@ -14,8 +14,7 @@ publisher: "Charleston Buddhist Fellowship"
 pages: 177
 ---
 
-> The way of the Vajrayāna is the Way of Power that leads to the mastery of good 
-and evil. It is also the Way of Transformation, whereby inward and outward circum-
-stances are transmuted into weapons by the power of mind.
+> The way of the Vajrayāna is the Way of Power that leads to the mastery of good and evil.
+> It is also the Way of Transformation, whereby inward and outward circumstances are transmuted into weapons by the power of mind.
 
 Originally published in 1970, John Blofeld's work explains the techniques, purpose, and underlying theory of Tantric forms of meditation commonly practiced in Vajrayana Buddhism. In this revised edition, Sanskrit terms have been added, and new material has been incorporated from various sources, along with explanatory footnotes and editorial comments.
