@@ -2,7 +2,7 @@
 title: "Our Reaction to Dukkha"
 authors:
   - "Elizabeth Ashby"
-external_url: "https://www.bps.lk/olib/bl/bl026_Ashby_Our-Reactions-to-Dukkha.pdf"
+external_url: "https://www.bps.lk/olib/bl/bl026_Ashby_Our-Reactions-to-Dukkha.html"
 drive_links:
   - "https://drive.google.com/file/d/1eFIm-GPNZ-EZhVf0zco-qCPKLxNLD01P/view?usp=sharing"
   - "https://drive.google.com/file/d/1v9O1Ywjjak5qtF-O9r8Iv9CBdAdcPkW6/view?usp=drive_link"
@@ -18,7 +18,7 @@ publisher: bps
 address: "Sri Lanka"
 journal: bodhileaves
 number: 26
-pages: 20
+pages: 11
 ---
 
 > Students who are well-trained in Mindfulness cope
