@@ -178,8 +178,10 @@ def write_tags_for_item(page: website.ContentFile) -> list[str]:
       ret.append("FridayReads")
   return [t.replace("Roots", "History") for t in ret]
 
-def write_post_for_item(page: website.ContentFile, include_link=True) -> str:
+def write_post_for_item(page: website.ContentFile, include_link=True, charlimit=500, titlelimit=500) -> str:
   title = write_post_title(page)
+  if len(title) > titlelimit:
+    title = title[:titlelimit-1] + '…'
   length = length_of_item(page)
   emoji, category = get_category_for_item(page)
   tags = write_tags_for_item(page)
@@ -193,9 +195,14 @@ def write_post_for_item(page: website.ContentFile, include_link=True) -> str:
   ret = f"""{emoji} {title} (A {adjectives}{length}{category}{year})
 
 Tags: {tags}"""
+  to_trim = len(ret) - charlimit
   if include_link:
-    return ret + f"\n{website.baseurl}{page.url}"
-  return ret
+    ret += f"\n{website.baseurl}{page.url}"
+    to_trim += 23 # shortened length
+  if to_trim <= 0:
+    return ret
+  assert to_trim + 7 <= len(title), "Why is the character limit so small?"
+  return write_post_for_item(page, include_link=include_link, charlimit=charlimit, titlelimit=len(title)-to_trim)
 
 def ensure_drive_links_are_shared(page: website.ContentFile) -> None:
   if not page.drive_links:
@@ -264,7 +271,7 @@ if __name__ == "__main__":
         access_token=os.getenv("X_ACCESS_TOKEN"),
         access_token_secret=os.getenv("X_ACCESS_TOKEN_SECRET"),
       )
-      x_resp = client.create_tweet(text=status)
+      x_resp = client.create_tweet(text=write_post_for_item(filtered_content[idx_to_post], charlimit=280))
       print("::group::Twitter Response")
       print(json.dumps(x_resp, indent=2, default=str))
       print("::endgroup::", flush=True)
@@ -274,7 +281,7 @@ if __name__ == "__main__":
   client = BskyClient()
   print("Posting to BlueSky...")
   client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
-  text = write_post_for_item(filtered_content[idx_to_post], include_link=False)
+  text = write_post_for_item(filtered_content[idx_to_post], include_link=False, charlimit=300)
   embed = create_bsky_embed(filtered_content[idx_to_post])
   hashtags = hashtag_facets_for_text(text)
   client.send_post(text=text, facets=hashtags, embed=embed)
