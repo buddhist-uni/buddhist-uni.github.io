@@ -9,9 +9,7 @@ drive_links:
 formats: [pdf, epub]
 course: feelings
 tags:
-  - dukkha
   - problems
-  - sati
 olid: OL58382790M
 year: 1965
 publisher: bps
@@ -26,4 +24,4 @@ with dukkha in a very different fashion from the rest
 of us whose minds are still at the “drunken monkey”
 stage.
 
-Dr. Ashby explores how human suffering (dukkha) is not merely an external condition but is compounded by our internal responses, such as clinging, aversion, and self‑identification. She argues that by understanding and transforming these reactions, one can see suffering clearly and move toward its cessation.
+Dr. Ashby explores how human suffering (*dukkha*) is not merely an external condition but is compounded by our internal responses, such as clinging, aversion, and self‑identification. She argues that by understanding and transforming these reactions, one can see suffering clearly and move toward its cessation.
