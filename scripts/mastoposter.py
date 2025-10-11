@@ -198,7 +198,7 @@ Tags: {tags}"""
   to_trim = len(ret) - charlimit
   if include_link:
     ret += f"\n{website.baseurl}{page.url}"
-    to_trim += 23 # shortened length
+    to_trim += 25 # shortened length + whitespace
   if to_trim <= 0:
     return ret
   assert to_trim + 7 <= len(title), "Why is the character limit so small?"

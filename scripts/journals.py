@@ -30,6 +30,7 @@ EMSCAT   = "S4210198890"
 IJBTC    = "S4210226626"
 JKR      = "S2764709287"
 JSS      = "S8401816"
+SLJH     = "S4210213701"
 
 # from OA to OBU IDs
 slugs = {
@@ -61,4 +62,5 @@ slugs = {
   IJBTC: "ijbtc",
   JKR: "jkr",
   JSS: "jss",
+  SLJH: "sljh",
 }
