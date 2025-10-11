@@ -16,7 +16,7 @@ pages: "76--99"
 ---
 
 > These commentaries, known as *sūtra sannayas*, and/or as *sūtra vistara sannayas*, were composed in large numbers beginning in the middle of the eighteenth century.
-In what follows,I present the historical context for this change in Buddhist textual practices...
+In what follows, I present the historical context for this change in Buddhist textual practices...
 
 The revival of the Bhikkhu Saṅgha in eighteenth century Sri Lanka was accompanied by a renewed focus on study of the Pāli Suttas and Vinaya.
 This necessitated (and, eventually, facilitated) the creation of a large corpus of vernacular commentaries aimed at educating novice monks.
