@@ -7,7 +7,6 @@ drive_links:
   - "https://drive.google.com/file/d/1wJrtXRkJLmcN4WvanVM2Iv0YfwtRIG46/view?usp=drivesdk"
 source_url: "https://www.academia.edu/3279162/Absorption_Human_Nature_and_Buddhist_Liberation"
 course: samadhi
-status: featured
 tags:
   - dialogue
   - feeling
