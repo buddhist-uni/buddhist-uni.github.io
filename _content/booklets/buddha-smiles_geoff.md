@@ -2,7 +2,7 @@
 title: "The Buddha Smiles: Humor in the Pali Canon"
 authors:
   - geoff
-external_url: "https://www.dhammatalks.org/books/BuddhaSmiles/Section0014.html"
+external_url: "https://www.dhammatalks.org/books/BuddhaSmiles/"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1-cLeKGKDgf2v2SGNbw16ZT9nwnJr7A_1/view?usp=drivesdk"

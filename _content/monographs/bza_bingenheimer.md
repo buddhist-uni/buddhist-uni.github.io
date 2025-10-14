@@ -10,4 +10,4 @@ external_url: "https://mbingenheimer.net/publications/bingenheimer_StudiesInAgam
 pages: 332
 ---
 
-This book is a collection of studies on and translations from the *Saṃgīta-varga* of the *Bieyi za ahanjing* (BZA) (別譯雜阿含經 T.100) in 16 fascicles, a smaller, independent Chinese translation of the *Saṃyukta Āgama* (T.99).
+This book is a collection of studies on and translations from the *Saṃgīta-varga* of the *Bieyi za ahanjing* (BZA) (別譯雜阿含經 T.100) in 16 fascicles, a shorter, independent Chinese translation of the *Saṃyukta Āgama* (T.99).

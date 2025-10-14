@@ -1,0 +1,4 @@
+User-agent: Amazonbot
+Disallow: /
+
+Sitemap: https://buddhistuniversity.net/sitemap.xml

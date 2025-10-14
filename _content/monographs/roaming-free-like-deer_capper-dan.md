@@ -16,6 +16,6 @@ pages: 224
 
 > Three touchpoints for ecological comparison emerge: Buddhist vegetarianism, the alleged practice of religion by animals and other natural beings, and nature mysticism.
 
-A tour of different forms of Buddhism and how they relate to the environment through the lens of three common, Buddhist tropes,
+A tour of different forms of Buddhism and how they relate to the environment through the lens of three common, Buddhist tropes.
 
-> a synthetic analysis of how Buddhism may help us move forward appropriately in the climate change age as well as a clear-sighted understanding of the limits of Buddhist environmental ethics.
+A synthetic analysis of how Buddhism may help us move forward appropriately in the climate change age as well as a clear-sighted understanding of the limits of Buddhist environmental ethics.

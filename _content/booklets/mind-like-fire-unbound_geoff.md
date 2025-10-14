@@ -2,7 +2,7 @@
 title: "The Mind Like Fire Unbound"
 authors:
   - geoff
-external_url: "https://www.dhammatalks.org/books/MindLikeFire/Section0001.html"
+external_url: "https://www.dhammatalks.org/books/MindLikeFire/"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Xp7KnefxqnkhG4uj2ul62l7BG4fe99V3/view?usp=drivesdk"

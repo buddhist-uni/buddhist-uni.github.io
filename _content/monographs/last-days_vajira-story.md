@@ -20,4 +20,4 @@ base_value: 1
 pages: 46
 ---
 
-A classic translation of [this (DN 16)](/content/canon/dn16) important and immersive tale from the Pāli Canon. 
+A classic translation of [this important and immersive tale (DN 16)](/content/canon/dn16) from the Pāli Canon. 

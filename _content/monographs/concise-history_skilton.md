@@ -14,6 +14,6 @@ address: "Cambridge, England"
 pages: 260
 ---
 
-A brief overview of Buddhist history and schools listing the key players and developments in India and abroad.
+A brief overview of Buddhist history and schools, listing the key players and developments in India and abroad.
 
 Being nearly 25% bibliography, the book is more of a springboard for further study than [a comprehensive introduction](/content/monographs/buddhist-religion_robinson-et-al).

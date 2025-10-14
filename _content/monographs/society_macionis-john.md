@@ -13,4 +13,4 @@ address: "Hoboken, NJ"
 pages: 500
 ---
 
-The standard textbook for introducing macro-sociology for over twenty years and sixteen editions.
+For over twenty years and sixteen editions, this has been the standard textbook for introducing macro-sociology.

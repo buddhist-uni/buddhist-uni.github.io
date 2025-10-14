@@ -16,6 +16,6 @@ publisher: "Ehipassiko Foundation"
 pages: 288
 ---
 
-This work presents the poplar Buddhist story of Sudhana and Manoharā, found in the Avadāna, through photographs from Borobudur in Java.
+This work presents the popular Buddhist story of Sudhana and Manoharā, found in the Avadāna, through photographs from Borobudur in Java.
 
 This text is bilingual, being in both English and Indonesian.

@@ -12,4 +12,4 @@ publisher: wisdom
 pages: 1600
 ---
 
-A complete and beautiful translation of the Suttanipāta and its traditional, Pāḷi commentaries which add interesting context to the poems and explain their sometimes opaque metaphors.
+A complete and beautiful translation of the Suttanipāta and its traditional Pāḷi commentaries, which add interesting context to the poems and explain their sometimes opaque metaphors.

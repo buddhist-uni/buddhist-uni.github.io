@@ -19,5 +19,5 @@ olid: OL17931914M
 openalexid: W357758067
 ---
 
-> The following lines intend to sketch [dogs'] relation to humans and their fellow quadrupeds and birds from the ancient [Indian] sources, as was done exhaustively for Greek and Latin literature long ago.
+> The following lines intend to sketch dogs' relation to humans and their fellow quadrupeds and birds from the ancient Indian sources, as was done exhaustively for Greek and Latin literature long ago.
 

@@ -3,7 +3,7 @@ title: "Awareness Itself: The Teachings of Ajaan Fuang Jotiko"
 authors:
   - fuang
 translator: geoff
-external_url: "https://www.dhammatalks.org/books/#awarenessitself"
+external_url: "https://www.dhammatalks.org/books/AwarenessItself/"
 drive_links:
   - "https://drive.google.com/file/d/1SPeJsd86iGZeruJeNRV7kx5tEaz0wAWI/view?usp=sharing"
   - "https://drive.google.com/file/d/14NssgN2r4iGvJjuLOgZTtz1qNUVY582h/view?usp=drivesdk"
