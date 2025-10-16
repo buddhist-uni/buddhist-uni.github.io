@@ -9,6 +9,8 @@ drive_links:
 course: pali-canon
 tags:
   - philosophy
+  - deva
+  - interfaith
 year: 2003
 journal: sljh
 volume: 29

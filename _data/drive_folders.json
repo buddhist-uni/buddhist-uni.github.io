@@ -241,7 +241,7 @@
  },
  "british": {
   "private": "https://drive.google.com/drive/folders/12Qo5Lhj0_DB0-bhVx__X8vqjo-MunW8U",
-  "public": ""
+  "public": "https://drive.google.com/drive/folders/17I0Neofyydgs2L1mG9rYIuxIXHVmUaHD"
  },
  "buddha": {
   "private": "https://drive.google.com/drive/folders/1jzolrPDcXTFA9LzznmEe-SxAXjR6iUWB",
@@ -1878,6 +1878,10 @@
  "tg": {
   "private": "https://drive.google.com/drive/folders/1WDrnd8-yQjCiyhgubZ_EbDk_hvkrzRR8",
   "public": "https://drive.google.com/drive/folders/1rcRtnIZbD9WCOma2O0JZP7ZFALUBzjn3"
+ },
+ "tg-translation": {
+  "private": null,
+  "public": "https://drive.google.com/drive/folders/1Qv0cdP8EKLoPgj3K1CnigZg6KzCT7jPD"
  },
  "thai": {
   "private": "https://drive.google.com/drive/folders/1pm3QkAto6H-8HeIZPSe6Ie6p_BS7ILv0",

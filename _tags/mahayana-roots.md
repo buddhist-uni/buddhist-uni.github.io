@@ -1,5 +1,5 @@
 ---
-title: "History of the Mahāyāna"
+title: "Emergence of the Mahāyāna"
 status: unpublished
 parents: [mahayana, roots]
 hashtag: mahayana
