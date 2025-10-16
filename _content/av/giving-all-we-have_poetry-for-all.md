@@ -5,7 +5,8 @@ authors:
   - "Joanne Diaz"
   - "Abram Van Engen"
 subcat: podcast
-external_url: "https://poetryforallpod.com/podcast/episode-11-alberto-rios-when-giving-is-all-we-have/"
+external_url: "https://youtu.be/NWLTMoJZGWM"
+source_url: "https://poetryforallpod.com/podcast/episode-11-alberto-rios-when-giving-is-all-we-have/"
 drive_links:
   - "https://drive.google.com/file/d/1bxfPOd9qG0L51IajH7hibfzuJGOqkzEs/view?usp=drivesdk"
 course: art

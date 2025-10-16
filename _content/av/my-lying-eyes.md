@@ -2,8 +2,11 @@
 title: "My Lying Eyes"
 authors:
   - "Ira Glass"
+  - "Chana Joffe-Walt"
+  - "James Spring"
+  - "Katie Worth"
 subcat: podcast
-editor: "Sarah Abdurrahman and David Kestenbaum and Emanuele Berry"
+editor: "Sarah Abdurrahman and David Kestenbaum and Emanuele Berry and Sean Cole and Chris Benderev"
 external_url: "https://www.thisamericanlife.org/770/my-lying-eyes"
 status: featured
 course: inner

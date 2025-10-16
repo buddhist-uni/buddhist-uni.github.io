@@ -2,7 +2,7 @@
 title: "Utopian Thought in Tibetan Buddhism: A Survey of the Śambhala Concept and its Sources"
 authors:
   - "Karénina Kollmar-Paulenz"
-external_url: "http://www.shin-ibs.edu/documents/SCEAR%205%e2%80%936%20PDFs/SCEAR5-6eKollmar-Paulenz.pdf"
+external_url: "https://www.shin-ibs.edu/documents/SCEAR%205%e2%80%936%20PDFs/SCEAR5-6eKollmar-Paulenz.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Lum1F8clFY_OAP3TE6_NzG9WesAlI7DQ/view?usp=sharing"
 course: tibetan

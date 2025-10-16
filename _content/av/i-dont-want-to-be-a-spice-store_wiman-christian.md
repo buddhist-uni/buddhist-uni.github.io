@@ -3,7 +3,8 @@ title: "I Don't Want to Be a Spice Store"
 authors:
   - "Christian Wiman"
 subcat: poetry
-external_url: "https://poetryforallpod.com/podcast/episode-21-christian-wiman-i-dont-want-to-be-a-spice-store/"
+external_url: "https://youtu.be/Sfc0Srz1Up0"
+source_url: "https://poetryforallpod.com/podcast/episode-21-christian-wiman-i-dont-want-to-be-a-spice-store/"
 drive_links:
   - "https://drive.google.com/file/d/1c4TQJ1pazJ13m8lKwdhax1ncuPwnrC7i/view?usp=drivesdk"
 course: groups
