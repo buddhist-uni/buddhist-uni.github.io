@@ -1,16 +1,16 @@
 ---
 title: "Biographies of Eminent Monks of Korea"
 authors:
-  - "Gakhun"
+  - "Gakhun (각훈, 覺訓)"
   - "Beomhae Gagan"
   - "Geummyeong Bojeong"
 translator: "Marek Zemanek" 
-external_url: "https://jokb.org/bbs/board.php?bo_table=7010&wr_id=73#:~:text=Attachment,%2D14%2017:23:46"
+external_url: "https://jokb.org/bbs/board.php?bo_table=7010&wr_id=73"
 drive_links:
   - "https://drive.google.com/file/d/1ZHmXWxPZaKgtjJ2Ibma8gLWkGTyfNsm1/view?usp=sharing"
 course: korean
 tags:
-  - monastic
+  - east-asian-roots
 year: 2020
 olid: OL58661353M
 oclc: 1423297030
