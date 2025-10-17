@@ -18,4 +18,4 @@ their exclusive fidelity to orthodox Confucian values, even as they worked to
 assure that the Buddhist institution was aligned with the practical needs of the
 kingdom.
 
-In this book chapter, Evons explores the enduring interplay between Buddhism and statecraft in Korea, tracing how Buddhist institutions and ideologies have been leveraged by rulers from ancient times through the modern era, emphasizing the adaptive nature of Korean Buddhism in legitimizing political authority.
+In this book chapter, Evon explores the enduring interplay between Buddhism and statecraft in Korea, tracing how Buddhist institutions and ideologies have been leveraged by rulers from ancient times through the modern era, emphasizing the adaptive nature of Korean Buddhism in legitimizing political authority.
