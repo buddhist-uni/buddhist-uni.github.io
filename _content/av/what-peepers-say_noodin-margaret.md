@@ -3,7 +3,7 @@ title: "What the Peepers Say"
 authors:
   - "Margaret Noodin"
 subcat: poetry
-external_url: "https://youtu.be/QLPaOVbvHZo"
+external_url: "https://poetryforallpod.com/podcast/episode-43-margaret-noodin-what-the-peepers-say/"
 source_url: "https://poetryforall.fireside.fm/43"
 drive_links:
   - "https://drive.google.com/file/d/18LgzMsMKCF1tsUPMCHd1QDSsZbQWO9af/view?usp=drivesdk"
