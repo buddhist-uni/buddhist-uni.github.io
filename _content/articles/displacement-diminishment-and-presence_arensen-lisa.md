@@ -11,7 +11,7 @@ tags:
   - animism
   - sea
 year: 2012
-journal: "Asian Ethnology"
+journal: ae
 volume: 71
 number: 2
 pages: "159--178"

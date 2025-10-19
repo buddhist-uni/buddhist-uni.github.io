@@ -11,7 +11,6 @@ drive_links:
   - "https://drive.google.com/file/d/1EFnKAgv5ZHx-iNLOT623L_0DWIaU_C45/view?usp=drivesdk"
 tags:
   - meditation
-  - function
   - underage
 year: 2023
 month: apr

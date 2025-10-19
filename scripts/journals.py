@@ -31,6 +31,7 @@ IJBTC    = "S4210226626"
 JKR      = "S2764709287"
 JSS      = "S8401816"
 SLJH     = "S4210213701"
+AE       = "S144820813"
 
 # from OA to OBU IDs
 slugs = {
@@ -54,6 +55,7 @@ slugs = {
   NYRB_ALT: "nyrb",
   PLATO: "plato",
   PNAS: "pnas",
+  AE: "ae",
   AO: "ao",
   EB: "eb",
   EB_NS: "eb", # Just map the old and new series together
