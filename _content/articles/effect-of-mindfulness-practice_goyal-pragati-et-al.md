@@ -3,7 +3,7 @@ title: "The Effect of Mindfulness Practice on Adolescents: A Pilot Study"
 authors:
   - "Pragati Goyal"
   - "Mina Chandra"
-  - "Rushi"
+  - "Rushi Choudhary"
   - "Mona Choudhary"
 external_url: "https://journals.sagepub.com/doi/pdf/10.1177/09731342231184628"
 source_url: "https://doi.org/10.1177/09731342231184628"
