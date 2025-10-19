@@ -17,4 +17,11 @@ olid: OL57642355M
 pages: 138
 ---
 
-A collection of essays giving the orthodox, Thai position on a number of modern Dhamma questions.
+A collection of essays giving the orthodox, Thai position on a number of modern Dhamma questions, including:
+  - What is the relationship between peace and happiness?
+  - What are our responsibilities to each other?
+  - What is new about "modern" Buddhism?
+  - Why worship stupas?
+  - What's the purpose of the monastic rules and ceremonies?
+  - What's the difference between Samatha and Vipassanā?
+  - What about Thai Buddhism is essential and what is cultural?

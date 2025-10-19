@@ -10,6 +10,7 @@ tags:
   - intellectual-property
   - paper
   - vinaya-controversies
+  - writing
 year: 2015
 journal: jiabs
 volume: 37
