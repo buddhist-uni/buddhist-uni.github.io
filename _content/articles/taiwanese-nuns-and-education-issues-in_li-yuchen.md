@@ -15,8 +15,8 @@ year: 2022
 month: sep
 journal: "Religions"
 volume: 13
-number: 9
-pages: "847--847"
+number: 847
+pages: 10
 publisher: "Multidisciplinary Digital Publishing Institute"
 openalexid: W4295533114
 ---
