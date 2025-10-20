@@ -2,14 +2,16 @@
 title: "Buddhism and Statecraft in Korea: The Long View"
 authors:
   - "Gregory Evon"
-external_url: "https://brill.com/downloadpdf/book/edcoll/9789004510227/BP000006.pdf?srsltid=AfmBOorkjF_yAc7xeKjIwr2tmRoPE54O3w26gu6yK4izdpXG4hIsfnjA"
+external_url: "https://brill.com/downloadpdf/book/edcoll/9789004510227/BP000006.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1soZCM-NdmTTnBXlhNurXHUxaLXkH34se/view?usp=sharing"
 course: korean
 tags:
   - state
 year: 2022 
+chapter: 5
 booktitle: "Buddhist Statecraft in East Asia"
+editor: "Stephanie Balkwill and James A. Benn"
 pages: "115--139" 
 ---
 
