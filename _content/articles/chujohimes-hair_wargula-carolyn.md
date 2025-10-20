@@ -16,7 +16,7 @@ journal: "Religions"
 volume: 12
 number: 773
 pages: 21
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W3199720080
 ---
 

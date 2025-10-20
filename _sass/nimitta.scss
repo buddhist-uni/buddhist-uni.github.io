@@ -120,6 +120,7 @@ main {
         letter-spacing: 0px;
         padding: 6px 20px 6px 16px;
         width: fit-content;
+        font-style: normal;
     }
     pre, code {
         background-color: #EEF0FC;
@@ -167,7 +168,7 @@ a.btn:visited {
 }
 
 a[target=_blank]:after {
-    font-family: 'font awesome 6 free';
+    font-family: 'font awesome 7 free';
     font-weight: 900;
     content: "\00a0\f08e";
     vertical-align: super;

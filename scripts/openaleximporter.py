@@ -203,20 +203,7 @@ authors:
         fd.write(f"journal: {journal}\n")
         if not work['biblio']['volume'] and not work['biblio']['issue']:
             fd.write("volume: \nnumber: \n")
-    if work['biblio']['volume']:
-        fd.write(f"volume: {work['biblio']['volume']}\n")
-    if work['biblio']['issue']:
-        fd.write(f"number: {work['biblio']['issue']}\n")
-    try:
-        fd.write(f"pages: \"{int(work['biblio']['first_page'])}--{int(work['biblio']['last_page'])}\"\n")
-    except (TypeError, KeyError, ValueError):
-      if pagecount:
-        fd.write(f"pages: {pagecount}\n")
-      else:
-        if category in ('monographs', 'booklets', 'essays', 'reference'):
-            fd.write("pages: \n")
-        if category in ('articles', 'papers', 'excerpts'):
-            fd.write("pages: \"--\"\n")
+    publisherid = None
     if work['primary_location']['source'] and work['primary_location']['source']['host_organization_name'] and (journal == '' or '"' in journal):
       publisherid = work['primary_location']['source']['host_organization'].split("openalex.org/")[1]
       if publisherid in publishers.slugs:
@@ -227,6 +214,26 @@ authors:
         fd.write("publisher: \"\"\n")
     if category in ('monographs', 'excerpts'):
         fd.write("address: \"\"\n")
+    if work['biblio']['volume']:
+        fd.write(f"volume: {work['biblio']['volume']}\n")
+    if work['biblio']['issue']:
+        if publisherid == publishers.MDPI:
+          assert int(work['biblio']['first_page']) == int(work['biblio']['last_page']), f"I expected MDPI article {work['id']} to have first and last page == article number"
+          fd.write(f"number: {int(work['biblio']['first_page'])}")
+        else:
+          fd.write(f"number: {work['biblio']['issue']}\n")
+    try:
+        if publisherid == publishers.MDPI:
+           raise ValueError("MDPI publishes each article individually")
+        fd.write(f"pages: \"{int(work['biblio']['first_page'])}--{int(work['biblio']['last_page'])}\"\n")
+    except (TypeError, KeyError, ValueError):
+      if pagecount:
+        fd.write(f"pages: {pagecount}\n")
+      else:
+        if category in ('monographs', 'booklets', 'essays', 'reference') or publisherid == publishers.MDPI:
+            fd.write("pages: \n")
+        if category in ('articles', 'papers', 'excerpts'):
+            fd.write("pages: \"--\"\n")
     fd.write(f"openalexid: {work['id'].split('/')[-1]}\n---\n\n>")
     abstract = deque(invert_inverted_index(work['abstract_inverted_index']))
     line_len = 1

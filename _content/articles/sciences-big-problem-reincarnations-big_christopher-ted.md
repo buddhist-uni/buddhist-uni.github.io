@@ -17,7 +17,7 @@ journal: "Religions"
 volume: 8
 number: 155
 pages: "154--174"
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W2736462965
 ---
 

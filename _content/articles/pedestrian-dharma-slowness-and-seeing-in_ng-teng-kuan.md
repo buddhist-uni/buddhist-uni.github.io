@@ -16,9 +16,9 @@ year: 2018
 month: jun
 journal: "Religions"
 volume: 9
-number: 7
-pages: "200--200"
-publisher: "Multidisciplinary Digital Publishing Institute"
+number: 200
+pages: 19
+publisher: mdpi
 openalexid: W2811153129
 ---
 

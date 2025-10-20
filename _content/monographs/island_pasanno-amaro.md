@@ -20,6 +20,6 @@ tags:
 pages: 355
 ---
 
-A compendium of 'essence' teachings on _nibbāna_, as they appear in the Pāli Canon and in contemporary traditions.
+A compendium of 'essence' teachings on _nibbāna_ as they appear in the Pāli Canon and in contemporary traditions.
 
 Listen to the book read by Ajahn Amaro [here](https://amaravati.org/series/the-island/){:ga-event-value="1"}

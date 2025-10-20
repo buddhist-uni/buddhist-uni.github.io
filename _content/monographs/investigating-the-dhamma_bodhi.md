@@ -13,4 +13,4 @@ publisher: bps
 pages: 169
 ---
 
-Miscellaneous papers by Bhikkhu Bodhi, especially in conversation with other, Western Buddhist scholars.
+Miscellaneous papers by Bhikkhu Bodhi, especially in conversation with other Western Buddhist scholars.

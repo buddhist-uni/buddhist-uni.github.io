@@ -18,10 +18,10 @@ number: 2
 pages: "19--33"
 ---
 
-> Spirits, ghosts, fairies, demons, or speaking collectively, 'pi' (ผี) may be divided into three classes:
-'Pi' which are the ghosts of the dead or living;
-'pi' which exist on their own account, and do not originate from human beings;
-and thirdly 'pi' belonging to other worlds...
+> Spirits, ghosts, fairies, demons, or speaking collectively, '*pi*' (ผี) may be divided into three classes:
+'*Pi*' which are the ghosts of the dead or living;
+'*pi*' which exist on their own account, and do not originate from human beings;
+and thirdly '*pi*' belonging to other worlds...
 
 Some field notes on Thai ghost beliefs and related rituals at the turn of the twentieth century.
 

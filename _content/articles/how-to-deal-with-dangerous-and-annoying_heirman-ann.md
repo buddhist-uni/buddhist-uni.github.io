@@ -16,7 +16,7 @@ journal: "Religions"
 volume: 10
 number: 113
 pages: 18
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W2912776568
 ---
 

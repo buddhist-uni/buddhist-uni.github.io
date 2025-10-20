@@ -17,7 +17,7 @@ journal: "Religions (Basel)"
 volume: 13
 number: 992
 pages: 25
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W4306963966
 ---
 

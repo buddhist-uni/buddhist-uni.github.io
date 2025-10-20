@@ -10,7 +10,7 @@ external_url: "https://archive.org/details/earlyidentityexperiencecontitutionofb
 year: 1996
 olid: OL8729114M
 oclc: 36177327
-publisher: "Luzan Oriental"
+publisher: "Luzac Oriental"
 address: "London"
 pages: 218
 ---

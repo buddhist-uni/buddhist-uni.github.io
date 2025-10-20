@@ -17,7 +17,7 @@ journal: "Social Sciences"
 volume: 7
 number: 51
 pages: 15
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W2793182933
 ---
 

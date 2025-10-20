@@ -15,7 +15,7 @@ journal: "Religions"
 volume: 13
 number: 1042
 pages: 31
-publisher: "Multidisciplinary Digital Publishing Institute"
+publisher: mdpi
 openalexid: W4307869210
 ---
 

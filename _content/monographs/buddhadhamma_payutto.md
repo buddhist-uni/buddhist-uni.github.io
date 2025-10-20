@@ -18,4 +18,4 @@ pages: 2000
 
 > It is a difficult task to compile the Buddha’s teachings, especially on the premise that one is presenting the true or genuine teachings, even if one cites passages from the Pali Canon which are considered the words of the Buddha.
 
-The authoratative book of Thai Buddhist doctrine.
+The authoritative book of Thai Buddhist doctrine.

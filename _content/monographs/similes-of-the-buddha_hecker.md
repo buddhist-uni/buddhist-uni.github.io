@@ -19,4 +19,4 @@ publisher: bps
 pages: 110
 ---
 
-A thorough introduction to the similes of the early Canon, Hecker retells 85 similes and then gives a commentary on each.
+In this thorough introduction to the similes of the early Canon, Hecker retells 85 similes and then gives a commentary on each.

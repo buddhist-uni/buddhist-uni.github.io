@@ -18,4 +18,4 @@ pages: 204
 
 > We have become a civilization based on work—not even “productive work” but work as an end and meaning in itself.
 
-An expansion of [Graeber's 2013 essay](/content/articles/bullshit-jobs_graeber-david) on the same subject, expanding on the "Spiritual violence" of modern employment.
+An expansion of [Graeber's 2013 essay](/content/articles/bullshit-jobs_graeber-david) on the same subject, exploring the "spiritual violence" of modern employment.

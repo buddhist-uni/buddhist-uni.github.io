@@ -14,9 +14,9 @@ year: 2019
 month: mar
 journal: "Religions"
 volume: 10
-number: 4
-pages: "229--229"
-publisher: "Multidisciplinary Digital Publishing Institute"
+number: 229
+pages: 13
+publisher: mdpi
 openalexid: W2924750216
 ---
 

@@ -17,4 +17,4 @@ publisher: bps
 pages: 362
 ---
 
-This pioneering draft translation of the important meditation manual preserved in Chinese translation has since been superceded by [Nyanatusita's translation](/content/monographs/vimuttimagga_nyanatusita).
+This pioneering draft translation of the important meditation manual preserved in Chinese translation has since been superseded by [Nyanatusita's translation](/content/monographs/vimuttimagga_nyanatusita).
