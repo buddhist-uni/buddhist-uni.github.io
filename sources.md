@@ -112,6 +112,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [OpenStax](https://openstax.org/subjects)
 * [punctum books](https://punctumbooks.com/)
 * [The National Academies](https://www.nationalacademies.org/publications)
+* [SpringerOpen](https://www.springeropen.com/)
 * [MIT Press](https://direct.mit.edu/books/search-results?sort=Date+-+Newest+First&f_ContentType=Book&fl_SiteID=5&access_openaccess=true&page=1)
 * [Athabasca University Press](https://www.aupress.ca/books/)
 * [UCL Press](https://www.uclpress.co.uk/collections/open-access?page=1&sort_by=created-ascending)
