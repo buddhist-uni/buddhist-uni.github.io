@@ -11,11 +11,11 @@ tags:
   - dialogue
 year: 2020
 month: nov
-journal: "Mindfulness"
+journal: mindfulness
 volume: 12
 number: 5
 pages: "1094--1102"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3107369622
 ---
 

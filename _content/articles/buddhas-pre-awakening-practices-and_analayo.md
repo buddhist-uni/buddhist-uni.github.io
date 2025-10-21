@@ -11,11 +11,11 @@ tags:
   - ebts
 year: 2021
 month: jul
-journal: "Mindfulness"
+journal: mindfulness
 volume: 12
 number: 8
 pages: "1892--1898"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3179937221
 ---
 

@@ -16,11 +16,11 @@ tags:
   - phones
 year: 2024
 month: may
-journal: "Mindfulness"
+journal: mindfulness
 volume: 15
 number: 5
 pages: "1119--1135"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2767624045
 ---
 

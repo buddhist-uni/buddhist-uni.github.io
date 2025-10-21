@@ -17,11 +17,11 @@ tags:
   - samadhi
 year: 2018
 month: mar
-journal: "Mindfulness"
+journal: mindfulness
 volume: 9
 number: 6
 pages: "1794--1806"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2790261613
 ---
 

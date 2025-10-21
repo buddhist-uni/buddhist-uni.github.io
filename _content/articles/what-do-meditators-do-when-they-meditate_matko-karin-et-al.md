@@ -14,11 +14,11 @@ tags:
   - indic-religions
 year: 2021
 month: may
-journal: "Mindfulness"
+journal: mindfulness
 volume: 12
 number: 7
 pages: "1791--1811"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3162323833
 ---
 

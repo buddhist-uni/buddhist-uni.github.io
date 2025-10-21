@@ -18,7 +18,7 @@ tags:
   - communication
 year: 2018
 month: jul
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 pages: "1105--1119"
 openalexid: W4238534586

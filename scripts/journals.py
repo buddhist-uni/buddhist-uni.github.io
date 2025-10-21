@@ -32,6 +32,7 @@ JKR      = "S2764709287"
 JSS      = "S8401816"
 SLJH     = "S4210213701"
 AE       = "S144820813"
+MINDFULNESS = "S47477353"
 
 # from OA to OBU IDs
 slugs = {
@@ -65,4 +66,5 @@ slugs = {
   JKR: "jkr",
   JSS: "jss",
   SLJH: "sljh",
+  MINDFULNESS: "mindfulness",
 }

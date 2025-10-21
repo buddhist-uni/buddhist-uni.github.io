@@ -18,7 +18,7 @@ journal: "Smart Learning Environments"
 volume: 8
 number: 21
 pages: 15
-publisher: "Springer Nature"
+publisher: springer
 openalexid: W3205171936
 ---
 

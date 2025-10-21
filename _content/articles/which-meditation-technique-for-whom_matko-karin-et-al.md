@@ -10,11 +10,11 @@ drive_links:
 course: meditation
 year: 2023
 month: nov
-journal: "Mindfulness"
+journal: mindfulness
 volume: 14
 number: 12
 pages: "2848--2867"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W4388832092
 ---
 

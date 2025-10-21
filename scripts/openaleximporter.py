@@ -212,7 +212,9 @@ authors:
         fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
     elif category in ('monographs', 'excerpts', 'papers'):
         fd.write("publisher: \"\"\n")
-    if category in ('monographs', 'excerpts'):
+    if publisherid == publishers.SPRINGER_NATURE: # Nature and SBM have different addresses, but for simplicity we combine both imprints into a single publisher
+       fd.write("address: \"Netherlands\"\n")
+    elif category in ('monographs', 'excerpts'):
         fd.write("address: \"\"\n")
     if work['biblio']['volume']:
         fd.write(f"volume: {work['biblio']['volume']}\n")

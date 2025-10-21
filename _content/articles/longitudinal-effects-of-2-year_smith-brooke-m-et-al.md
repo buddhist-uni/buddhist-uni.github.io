@@ -18,11 +18,11 @@ tags:
   - function
 year: 2019
 month: oct
-journal: "Mindfulness"
+journal: mindfulness
 volume: 10
 number: 10
 pages: "2095--2109"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2900687086
 ---
 

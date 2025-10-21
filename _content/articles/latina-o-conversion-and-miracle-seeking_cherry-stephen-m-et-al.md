@@ -19,7 +19,7 @@ journal: "International Journal of Latin American Religions"
 volume: 2
 number: 1
 pages: "50--71"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2802987018
 ---
 

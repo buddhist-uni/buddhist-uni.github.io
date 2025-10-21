@@ -11,11 +11,11 @@ tags:
   - meditation
 year: 2016
 month: aug
-journal: "Mindfulness"
+journal: mindfulness
 volume: 8
 number: 1
 pages: "218--231"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2518497773
 ---
 

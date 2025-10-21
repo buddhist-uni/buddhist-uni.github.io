@@ -10,11 +10,11 @@ drive_links:
 course: academic
 year: 2021
 month: jul
-journal: "Mindfulness"
+journal: mindfulness
 volume: 12
 number: 9
 pages: "2099--2116"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3185236960
 ---
 

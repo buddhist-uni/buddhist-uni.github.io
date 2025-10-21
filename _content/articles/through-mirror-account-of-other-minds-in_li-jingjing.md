@@ -19,7 +19,7 @@ journal: "Dao Journal of Comparative Philosophy"
 volume: 18
 number: 3
 pages: "435--451"
-publisher: "Springer"
+publisher: springer
 openalexid: W2956487102
 ---
 

@@ -13,11 +13,11 @@ tags:
   - function
 year: 2022
 month: sep
-journal: "Mindfulness"
+journal: mindfulness
 volume: 13
 number: 10
 pages: "2529--2546"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W4297495206
 ---
 

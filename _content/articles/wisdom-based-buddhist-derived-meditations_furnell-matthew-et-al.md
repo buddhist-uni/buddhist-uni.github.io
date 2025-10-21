@@ -14,11 +14,11 @@ tags:
   - philosophy
 year: 2024
 month: mar
-journal: "Mindfulness"
+journal: mindfulness
 volume: 15
 number: 3
 pages: "539--558"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W4392512023
 ---
 

@@ -10,7 +10,7 @@ course: selling
 tags:
   - modern
 year: 2020
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 pages: "472--479"
 ---

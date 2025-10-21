@@ -12,11 +12,11 @@ tags:
   - problems
 year: 2020
 month: may
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 number: 6
 pages: "1520--1526"
-publisher: "Springer"
+publisher: springer
 openalexid: W3021248157
 ---
 

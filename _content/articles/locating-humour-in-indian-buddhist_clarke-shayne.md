@@ -16,7 +16,7 @@ journal: "Journal of Indian Philosophy"
 volume: 37
 number: 4
 pages: "311--330"
-publisher: "Springer Nature"
+publisher: springer
 openalexid: W2090395205
 ---
 

@@ -13,10 +13,10 @@ tags:
   - pali-canon
 year: 2020
 month: aug
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 pages: "1935--1942"
-publisher: "Springer"
+publisher: springer
 openalexid: W3025127825
 ---
 

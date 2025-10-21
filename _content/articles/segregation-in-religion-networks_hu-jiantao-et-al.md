@@ -19,7 +19,8 @@ journal: "EPJ Data Science"
 volume: 8
 number: 6
 pages: 11
-publisher: "Springer Nature"
+publisher: springer
+address: "Netherlands"
 openalexid: W2963377937
 ---
 

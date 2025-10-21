@@ -11,7 +11,7 @@ tags:
 year: 2019
 month: jan
 olid: OL28215686M
-publisher: "Springer Open"
+publisher: springer
 address: Singapore
 pages: 320
 ---

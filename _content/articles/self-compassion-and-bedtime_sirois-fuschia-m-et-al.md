@@ -15,8 +15,8 @@ tags:
   - sleep
 year: 2018
 month: jun
-journal: "Mindfulness"
-publisher: "Springer Science+Business Media"
+journal: mindfulness
+publisher: springer
 volume: 10
 number: 3
 pages: "434--445"

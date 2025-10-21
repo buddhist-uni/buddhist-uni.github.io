@@ -11,11 +11,11 @@ tags:
   - roots
 year: 2019
 month: dec
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 number: 3
 pages: "571--586"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2994116183
 ---
 

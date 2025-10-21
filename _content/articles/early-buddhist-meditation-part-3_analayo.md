@@ -12,11 +12,11 @@ tags:
   - sati
 year: 2023
 month: nov
-journal: "Mindfulness"
+journal: mindfulness
 volume: 15
 number: 3
 pages: "733--736"
-publisher: "Springer Science"
+publisher: springer
 openalexid: W4388812838
 ---
 

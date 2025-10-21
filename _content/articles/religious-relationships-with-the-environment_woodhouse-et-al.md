@@ -20,6 +20,7 @@ tags:
 year: 2015
 journal: "Human Ecology"
 volume: 43
+publisher: springer
 pages: "295--307"
 ---
 > This research highlights the contrast between religiously oriented understandings of the environment and Green Buddhist representations in their various guises, where they intersect, and

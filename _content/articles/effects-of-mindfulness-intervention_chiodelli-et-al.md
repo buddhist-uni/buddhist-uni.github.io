@@ -17,7 +17,7 @@ tags:
 year: 2018
 month: aug
 journal: "Psicologia: Reflexão e Crítica"
-publisher: Springer
+publisher: springer
 volume: 31
 number: 21
 pages: 10

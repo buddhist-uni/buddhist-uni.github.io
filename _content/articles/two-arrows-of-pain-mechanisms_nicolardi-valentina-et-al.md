@@ -15,11 +15,11 @@ reason: "methodological problems"
 tags:
   - feeling
 year: 2022
-journal: "Mindfulness"
+journal: mindfulness
 volume: 15
 number: 4
 pages: "753--774"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W4210492330
 ---
 

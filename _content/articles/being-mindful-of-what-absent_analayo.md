@@ -12,11 +12,11 @@ tags:
   - sati
 year: 2021
 month: oct
-journal: "Mindfulness"
+journal: mindfulness
 volume: 13
 number: 7
 pages: "1671--1678"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3202574951
 ---
 

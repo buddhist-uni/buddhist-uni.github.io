@@ -5,6 +5,8 @@ AUP = "P4310312978"
 OXFORD = "P4310311648"
 CAMBRIDGE = "P4310311721"
 MDPI = "P4310310987"
+SPRINGER_SBM = "P4310319900"
+SPRINGER_NATURE = "P4310320108"
 
 slugs = {
   HAWAII: "hawaii",
@@ -12,4 +14,6 @@ slugs = {
   OXFORD: "oxford",
   CAMBRIDGE: "cambridge",
   MDPI: "mdpi",
+  SPRINGER_SBM: "springer",
+  SPRINGER_NATURE: "springer",
 }

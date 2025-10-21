@@ -17,11 +17,11 @@ tags:
   - world
 year: 2022
 month: apr
-journal: "Mindfulness"
+journal: mindfulness
 volume: 13
 number: 6
 pages: "1490--1498"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W4229050745
 ---
 

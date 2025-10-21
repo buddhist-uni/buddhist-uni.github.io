@@ -12,7 +12,7 @@ tags:
   - jhana
 year: 2019
 month: aug
-journal: "Mindfulness"
+journal: mindfulness
 volume: 10
 pages: "2341--2351" 
 ---

@@ -12,11 +12,11 @@ tags:
   - west
 year: 2020
 month: apr
-journal: "Mindfulness"
+journal: mindfulness
 volume: 11
 number: 6
 pages: "1527--1545"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W3015524897
 ---
 

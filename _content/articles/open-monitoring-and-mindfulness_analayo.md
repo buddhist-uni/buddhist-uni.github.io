@@ -11,11 +11,11 @@ tags:
   - daily-life
 year: 2019
 month: may
-journal: "Mindfulness"
+journal: mindfulness
 volume: 10
 number: 7
 pages: "1437--1442"
-publisher: "Springer"
+publisher: springer
 openalexid: W2947070672
 ---
 

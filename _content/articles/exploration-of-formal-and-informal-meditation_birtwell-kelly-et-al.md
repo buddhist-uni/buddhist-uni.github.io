@@ -14,11 +14,11 @@ tags:
   - meditation # close to 3⭐ but methods lacking a bit
 year: 2018
 month: may
-journal: "Mindfulness"
+journal: mindfulness
 volume: 10
 number: 1
 pages: "89--99"
-publisher: "Springer Science + Business Media"
+publisher: springer
 openalexid: W2804657016
 ---
 

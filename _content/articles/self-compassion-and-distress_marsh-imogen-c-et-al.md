@@ -13,11 +13,11 @@ tags:
   - adolescence
 year: 2017
 month: nov
-journal: "Mindfulness"
+journal: mindfulness
 volume: 9
 number: 4
 pages: "1011--1027"
-publisher: "Springer Science+Business Media"
+publisher: springer
 openalexid: W2769880865
 ---
 
