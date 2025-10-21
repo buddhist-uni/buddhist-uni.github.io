@@ -14,7 +14,7 @@ tags:
 year: 2021
 month: aug
 journal: Religions
-publisher: MDPI
+publisher: mdpi
 volume: 12
 number: 667
 pages: 16

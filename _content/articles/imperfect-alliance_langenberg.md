@@ -13,7 +13,7 @@ year: 2018
 month: jun
 status: featured
 journal: Religions
-publisher: MDPI
+publisher: mdpi
 volume: 9
 number: 6
 pages: "190--213"

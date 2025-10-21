@@ -17,7 +17,7 @@ journal: "Religions"
 volume: 8
 number: 206
 pages: 29
-publisher: "MDPI"
+publisher: mdpi
 openalexid: W2759215172
 ---
 

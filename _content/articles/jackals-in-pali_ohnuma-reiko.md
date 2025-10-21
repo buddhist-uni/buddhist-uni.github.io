@@ -12,7 +12,7 @@ tags:
 year: 2019
 month: mar
 journal: Religions
-publisher: MDPI
+publisher: mdpi
 volume: 10
 number: 221
 pages: 14
