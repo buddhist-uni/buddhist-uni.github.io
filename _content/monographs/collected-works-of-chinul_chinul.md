@@ -1,7 +1,7 @@
 ---
-title: "Korean Approach To Zen: Collected Works Of Chinul"
+title: "TKorean Approach To Zen: The Collected Works Of Chinul"
 authors:
-  - "Chinul 지눌"
+  - "Jinul (지눌)"
 translator: "Robert E. Buswell Jr."
 external_url: "https://archive.org/details/koreanapproachtozencollectedworksofchinulroberte.buswelljr._570_h/page/n6/mode/1up"
 course: korean
