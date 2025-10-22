@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1vj80RdDrfJJFIwY6L4sOpauph43t8y_D/view?usp=drivesdk"
 course: inner
 tags:
-  - sexuality
+  - gender
   - psychology
   - postmodernism
 year: 2020

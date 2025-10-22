@@ -9,7 +9,7 @@ course: feeling
 status: featured
 tags:
   - gender
-  - post-humanism
+  - posthumanism
   - abnormal-psychology
   - craft
 year: 2019

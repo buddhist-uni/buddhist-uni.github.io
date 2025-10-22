@@ -8,7 +8,6 @@ course: monastic-advice
 tags:
   - an
   - hindrances
-  - sexuality
   - imagery
   - effort
 year: 2018

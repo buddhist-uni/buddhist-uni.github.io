@@ -8,6 +8,7 @@ hidden_links:
 course: clothes
 tags:
   - body
+  - sex
 year: 2025
 month: oct
 pages: 4

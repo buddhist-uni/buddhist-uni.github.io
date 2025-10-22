@@ -9,7 +9,7 @@ formats: [ogg]
 status: featured
 course: power
 tags:
-  - post-humanism
+  - posthumanism
   - intelligence
   - inner
   - neuroscience
