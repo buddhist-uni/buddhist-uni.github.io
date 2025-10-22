@@ -1,5 +1,5 @@
 ---
-title: "Dhāraṇī and Mantra in Contemporary Korean Buddhism: A Textual Ethnography of Spell Materials for Popular Consumption"
+title: "*Dhāraṇī* and Mantra in Contemporary Korean Buddhism: A Textual Ethnography of Spell Materials for Popular Consumption"
 authors:
   - "McBride, Richard D."
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287483&journal_code=JIABS"
@@ -8,6 +8,7 @@ drive_links:
 course: korean 
 tags:
   - dharani
+  - modern
 year: 2019 
 journal: jiabs
 volume: 42
