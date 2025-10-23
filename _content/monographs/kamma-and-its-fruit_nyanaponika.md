@@ -30,4 +30,4 @@ A collection of essays by five different authors that explain actions and result
 5. Kamma and Freedom — Francis Story
 6. Collective Karma — Francis Story
 7. Reflection on Kamma and its Fruit — Nyanaponika Thera
-8. Karma: The Ripening Fruit — Bhikkhu Ñāṇajīvako.
+8. Karma: The Ripening Fruit — Bhikkhu Ñāṇajīvako

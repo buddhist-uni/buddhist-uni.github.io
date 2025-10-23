@@ -22,5 +22,5 @@ pages: 220
 > Hermits were simply there: beyond city walls, in the mountains, lone columns of smoke after a snowfall.
 > As far back as records go, there were always hermits in China.
 
-A beautifully written introduction to the (living!) tradition of Chinese hermitism: from its pre-Daoist roots to [contemporary Chungnan Shan](/content/av/hermits).
+A beautifully written introduction to the (living!) tradition of Chinese eremitism: from its pre-Daoist roots to [contemporary Chungnan Shan](/content/av/hermits).
 

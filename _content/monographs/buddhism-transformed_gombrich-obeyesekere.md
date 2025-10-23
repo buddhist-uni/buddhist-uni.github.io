@@ -13,7 +13,7 @@ publisher: princeton
 pages: 464
 ---
 
-> our times are characterized by the sheer intensity and spread of *bhakti* religion; and while it starts among the urban poor, it gets accepted by others as a reaction to the fundamentalism and the puritan ethics of Protestant Buddhism.
+> Our times are characterized by the sheer intensity and spread of *bhakti* religion; and while it starts among the urban poor, it gets accepted by others as a reaction to the fundamentalism and the puritan ethics of Protestant Buddhism.
 
 An analysis of the parallel threads of modern Sri Lankan Buddhism: the "rational," European-inflected forms of the educated, upper classes and the Hindu-inflected "devotional" forms of the masses.
 

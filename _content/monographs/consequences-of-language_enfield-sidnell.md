@@ -17,5 +17,5 @@ pages: 188
 ---
 
 > First, a primary form of intersubjectivity was necessary for language to have begun evolving in our species in the first place.
-Second, language then transformed the nature of our intersubjectivity, through its defining properties of inferentially articulated description, self- reflexivity, and productive grammatical flexibility.
+Second, language then transformed the nature of our intersubjectivity, through its defining properties of inferentially articulated description, self-reflexivity, and productive grammatical flexibility.
 Social accountability—the bedrock of society—is grounded in this linguistically transformed and enhanced kind of intersubjectivity.
