@@ -9,7 +9,7 @@ tags:
   - japanese-roots
   - engaged
   - paper
-  - ww2
+  - wwii
 year: 2022
 journal: jocbs
 volume: 22

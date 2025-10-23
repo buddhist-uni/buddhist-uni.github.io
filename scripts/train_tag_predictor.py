@@ -4,7 +4,6 @@ import argparse
 import math
 from pathlib import Path
 import json
-import regex
 import random
 import hashlib
 from functools import cache
@@ -192,6 +191,7 @@ def get_all_trainable_files_in_folders(verbose=False) -> list[dict]:
     verbose=0,
 )
 def _get_trainable_files_in_folder(folderid, verbose):
+    global RUN_RECENTLY
     RUN_RECENTLY = False # invalidate some other caches too while we're at it
     ret = []
     if verbose:

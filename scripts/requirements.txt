@@ -17,3 +17,4 @@ pypdf
 Mastodon.py
 atproto
 ebooklib
+unidecode
