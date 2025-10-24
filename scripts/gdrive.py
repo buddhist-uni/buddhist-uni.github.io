@@ -42,6 +42,7 @@ try:
     HttpError,
   )
   from youtube_transcript_api import YouTubeTranscriptApi
+  from youtube_transcript_api import _errors as YouTubeTranscriptErrors
 except:
   print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api")
   exit(1)
@@ -66,6 +67,8 @@ LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drives
 GFIDREGEX = re.compile(GFIDREGEX)
 
 disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
+
+YTTranscriptAPI = None
 
 def execute(gapicall, retries=4, backoff=1):
   try:
@@ -483,7 +486,7 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
   subfolders = []
   linked_files = []
   downloads = []
-  with yaspin(text="Loading file list..."):
+  with yaspin(text="Loading file list...") as ys:
     for child in all_files_matching(
       f"'{gdfid}' in parents and trashed=false",
       "size,name,id,mimeType,shortcutDetails"
@@ -508,14 +511,21 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
       size = int(child.get('size',0))
       if not size:
         continue
+      if any(d[1] == childpath for d in downloads):
+        ys.write(f"WARNING: Skipping duplicate file \"{childpath}\"")
+        continue
       total_size += size
       downloads.append((child['id'], childpath))
     if linked_files:
       for child in batch_get_files_by_id(linked_files, "size,id,name"):
         size = int(child.get('size',0))
-        if size:
-          total_size += size
-          downloads.append((child['id'], target_directory.joinpath(child['name'])))
+        if not size:
+          continue
+        childpath = target_directory.joinpath(child['name'])
+        if childpath.exists():
+          continue
+        total_size += size
+        downloads.append((child['id'], childpath))
   if not downloads:
     print(f"Nothing to download in '{target_directory.name}'")
   else:
@@ -695,6 +705,47 @@ def _yt_thumbnail(snippet):
     return snippet['thumbnails']['default']['url']
   return ''
 
+def fetch_youtube_transcript(vid, retries=3):
+  """Returns a list of {"text": "", "start": 0, "duration": 0}s OR "disabled" if subtitles are turned off for that video"""
+  global YTTranscriptAPI
+  if not YTTranscriptAPI:
+    YTTranscriptAPI = YouTubeTranscriptApi()
+  try:
+    transcripts_available = YTTranscriptAPI.list(vid)
+    transcript = transcripts_available.find_transcript(('en',))
+    ret = transcript.fetch()
+  except (YouTubeTranscriptErrors.IpBlocked, YouTubeTranscriptErrors.RequestBlocked):
+    if retries == 0:
+      print(f"Error: YouTube blocked our transcript request!")
+      return []
+    pause = 12 / retries
+    print(f"Warning: YouTube blocked the transcript request. Retrying in {pause} sec...")
+    sleep(pause)
+    return fetch_youtube_transcript(vid, retries=retries-1)
+  except YouTubeTranscriptErrors.TranscriptsDisabled:
+    return "disabled"
+  except YouTubeTranscriptErrors.NoTranscriptFound:
+    if transcripts_available:
+      for transcript in transcripts_available:
+        if transcript.is_translatable: # The API doesn't pull translations automatically
+          if any(tlang.language_code == 'en' for tlang in transcript.translation_languages):
+            return transcript.translate('en').fetch().to_raw_data()
+    return "disabled"
+  except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
+    print(f"Warning ({vid}): {e.cause}")
+    return []
+  return ret.to_raw_data()
+
+def fetch_youtube_transcripts(vids):
+  """Returns a dict mapping vid to the transcript list (see above)"""
+  ret = dict()
+  # Just a simple loop for now
+  # Might get fancy with threading later...
+  for vid in vids:
+    t = fetch_youtube_transcript(vid)
+    ret[vid] = t
+  return ret
+
 def make_ytvideo_summary_html(vid):
   from tag_predictor import YOUTUBE_DATA_FOLDER
   cachef = YOUTUBE_DATA_FOLDER.joinpath(f"{vid}.json")
@@ -703,12 +754,8 @@ def make_ytvideo_summary_html(vid):
     transcript = snippet.get('transcript',[])
   else:
     snippet = get_ytvideo_snippets([vid])[0]
-    transcript = None
-    try:
-      transcript = YouTubeTranscriptApi.get_transcript(vid)
-      snippet['transcript'] = transcript
-    except:
-      pass
+    transcript = fetch_youtube_transcript(vid)
+    snippet['transcript'] = transcript
     cachef.write_text(json.dumps(snippet))
   return _make_ytvideo_summary_html(vid, snippet, transcript)
 
@@ -731,7 +778,7 @@ def _make_ytvideo_summary_html(vid, snippet, transcript):
   ret += f"""<h2>Thumbnail</h2><p><img src="{_yt_thumbnail(snippet)}" /></p>"""
   if len(snippet.get('tags',[])) > 0:
     ret += f"""<h2>Video Tags</h2><p>{snippet['tags']}</p>"""
-  if transcript:
+  if transcript and transcript != 'disabled':
     ret += "<h2>Video Subtitles</h2>"
     for line in transcript:
       ret += f"""<p><a href="https://youtu.be/{vid}?t={floor(line['start'])}">{floor(line['start']/60)}:{round(line['start']%60):02d}</a> {whitespace.sub(' ', line['text'])}</p>"""

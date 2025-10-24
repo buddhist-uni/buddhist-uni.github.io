@@ -105,15 +105,14 @@ def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
         print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
         import gdrive
         snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
-        transcripts, _ = gdrive.YouTubeTranscriptApi.get_transcripts(
-            ids_to_fetch, continue_after_error=True)
+        transcripts = gdrive.fetch_youtube_transcripts(ids_to_fetch)
         if len(snippets) != len(ids_to_fetch):
             raise ValueError("Didn't get all the snippets?")
         for vid in snippets:
             if transcripts.get(vid['id']):
                 vid['transcript'] = transcripts[vid['id']]
             else:
-                vid['transcript'] = {}
+                vid['transcript'] = []
             cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{vid['id']}.json")
             cachefile.write_text(json.dumps(vid))
             ret.append(vid)
@@ -127,6 +126,8 @@ YT_STOP_LINES = set([
 ])
 def flatten_youtube_transcript(transcript:list[dict]):
     """Note: does not normalize!"""
+    if transcript == 'disabled':
+        return ''
     ret = ' '.join([line['text'] for line in transcript if line['text'] not in YT_STOP_LINES])
     return regex.sub(r'\[.{0,35}\]', '', ret)
 
@@ -146,7 +147,7 @@ def flatten_youtube_metadata(video_data: dict) -> str:
 
 def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
     ret = flatten_youtube_metadata(video_data)
-    if video_data.get('transcript'):
+    if video_data.get('transcript') and video_data['transcript'] != 'disabled':
         ret += flatten_youtube_transcript(video_data['transcript'])
     return normalize_text(ret)
 
