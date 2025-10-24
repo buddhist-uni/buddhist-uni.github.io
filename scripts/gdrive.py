@@ -705,7 +705,7 @@ def _yt_thumbnail(snippet):
     return snippet['thumbnails']['default']['url']
   return ''
 
-def fetch_youtube_transcript(vid, retries=3):
+def fetch_youtube_transcript(vid):
   """Returns a list of {"text": "", "start": 0, "duration": 0}s OR "disabled" if subtitles are turned off for that video"""
   global YTTranscriptAPI
   if not YTTranscriptAPI:
@@ -714,22 +714,18 @@ def fetch_youtube_transcript(vid, retries=3):
     transcripts_available = YTTranscriptAPI.list(vid)
     transcript = transcripts_available.find_transcript(('en',))
     ret = transcript.fetch()
-  except (YouTubeTranscriptErrors.IpBlocked, YouTubeTranscriptErrors.RequestBlocked):
-    if retries == 0:
-      print(f"Error: YouTube blocked our transcript request!")
-      return []
-    pause = 12 / retries
-    print(f"Warning: YouTube blocked the transcript request. Retrying in {pause} sec...")
-    sleep(pause)
-    return fetch_youtube_transcript(vid, retries=retries-1)
-  except YouTubeTranscriptErrors.TranscriptsDisabled:
+  except (YouTubeTranscriptErrors.TranscriptsDisabled, YouTubeTranscriptErrors.VideoUnplayable, YouTubeTranscriptErrors.VideoUnavailable):
     return "disabled"
   except YouTubeTranscriptErrors.NoTranscriptFound:
     if transcripts_available:
       for transcript in transcripts_available:
         if transcript.is_translatable: # The API doesn't pull translations automatically
           if any(tlang.language_code == 'en' for tlang in transcript.translation_languages):
-            return transcript.translate('en').fetch().to_raw_data()
+            try:
+              return transcript.translate('en').fetch().to_raw_data()
+            except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
+              print(f"Warning ({vid}): {e.cause}")
+              return []
     return "disabled"
   except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
     print(f"Warning ({vid}): {e.cause}")
