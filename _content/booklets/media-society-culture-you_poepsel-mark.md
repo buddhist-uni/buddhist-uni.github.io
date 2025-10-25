@@ -3,6 +3,7 @@ title: "Media, Society, Culture and You: An Introductory Mass Communication Text
 authors:
   - "Mark Poepsel"
 external_url: "https://press.rebus.community/mscy/"
+direct_pdf_url: "https://press.rebus.community/mscy/open/download?type=pdf"
 source_url: "https://collection.bccampus.ca/textbooks/media-society-culture-and-you-an-introductory-mass-communication-text-rebus-community-243/"
 drive_links:
   - "https://drive.google.com/file/d/1AQoTczqLduqzbCyt6PBnlGxUw3VWv1Ws/view?usp=drivesdk"

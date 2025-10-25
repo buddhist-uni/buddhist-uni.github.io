@@ -72,7 +72,6 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)
 * [The Directory of Open Access Books](https://www.doabooks.org/)
 * [The Directory of Open Access Journals](https://doaj.org/)
-* [The "Achieving the Dream" Library](https://library.achievingthedream.org/)
 * [Archive.org](https://archive.org/search.php?query=dhamma%20OR%20buddhism%20OR%20buddhist)
 * [The SocArXiv](https://osf.io/preprints/socarxiv/discover?q=Buddhist)
 * [The MindRxiv](https://mindrxiv.org/discover?subject=MindRxiv%7CArts%20and%20Humanities%7CReligion%7CBuddhist%20Studies)

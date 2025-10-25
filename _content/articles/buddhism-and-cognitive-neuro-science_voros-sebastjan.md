@@ -2,7 +2,7 @@
 title: "Buddhism and Cognitive (Neuro)Science: An Uneasy Liaison?"
 authors:
   - "Sebastjan Vörös"
-external_url: "https://www.academia.edu/15075758/V%C3%B6r%C3%B6s_Sebastjan_2016_Buddhism_and_Cognitive_Neuro_Science_An_Uneasy_Liaison_Asian_Studies_4_1_61_80?source=swp_share"
+external_url: "https://journals.uni-lj.si/as/article/download/3750/5952/"
 source_url: "https://doi.org/10.4312/as.2016.4.1.61-80"
 drive_links:
   - "https://drive.google.com/file/d/17hUtutbF6KpHfEcljF76YgxacfEfJCWq/view?usp=drivesdk"

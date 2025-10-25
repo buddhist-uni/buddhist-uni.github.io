@@ -2,7 +2,6 @@
 title: "The Biology of Aging"
 authors:
   - "Jessica Kelly"
-external_url: "https://library.achievingthedream.org/herkimerbiologyofaging/"
 drive_links:
   - "https://drive.google.com/file/d/1pnJNtI62iQPIyiyKVmnpj2rKGLe-rA0e/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rCKJxC2xWe6xA9mszgtjVzI_-X6_AEAR/view?usp=drivesdk"
