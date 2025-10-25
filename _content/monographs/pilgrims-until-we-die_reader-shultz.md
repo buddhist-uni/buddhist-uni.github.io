@@ -2,7 +2,7 @@
 title: "Pilgrims Until We Die: Unending Pilgrimage in Shikoku"
 authors:
   - "Ian Reader"
-  - "John Shulz"
+  - "John Shultz"
 doi: "https://doi.org/10.1093/oso/9780197573587.001.0001"
 course: japanese
 tags:

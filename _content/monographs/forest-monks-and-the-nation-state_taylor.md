@@ -17,4 +17,4 @@ pages: 316
 
 > The charismatic and idiosyncratic Ajaan Man and his widely revered forest-dwelling disciples remained on the rim of the establishment for much of their lives — yet constituted the mystical core of orthodoxy
 
-An analysis of the political and historical context in which the modern Thai Forest Tradition arose.
+This book provides an analysis of the political and historical context in which the modern Thai Forest Tradition arose.

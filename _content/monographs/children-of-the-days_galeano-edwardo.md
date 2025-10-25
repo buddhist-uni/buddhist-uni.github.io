@@ -15,4 +15,4 @@ pages: 365
 > ... the days began to walk.  
 And they, the days, made us.
 
-Three hundred and sixty five short vignettes of life across the ages.
+Three hundred and sixty-five short vignettes of life across the ages.

@@ -21,4 +21,4 @@ pages: 112
 
 > Ideas are not then genuine ideas unless they are tools in a reflective examination which tends to solve a problem.
 
-The renowned theoretician of childhood education defines the thinking process as he understands it and enjoins teachers to deploy more "experimental" (hands-on) learning in the classroom: a message which is sadly still needed, over a hundred years later.
+The renowned theorist of childhood education defines the thinking process as he understands it and enjoins teachers to deploy more "experimental" (hands-on) learning in the classroom: a message which is sadly still needed, over a hundred years later.

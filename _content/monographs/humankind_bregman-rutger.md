@@ -17,4 +17,4 @@ address: London
 pages: 461
 ---
 
-> In truth, it’s the cynic who’s out of touch. In truth, we’re living on Planet A, where people are deeply inclined to be good to one another. So be realistic. Be courageous. Be true to your nature
+> In truth, it’s the cynic who’s out of touch. In truth, we’re living on Planet A, where people are deeply inclined to be good to one another. So be realistic. Be courageous. Be true to your nature.

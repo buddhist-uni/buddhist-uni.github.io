@@ -18,4 +18,4 @@ pages: 170
 
 > The only time we can live is now
 
-The fundamentals of meditation practice and the Buddhist outlook explained in accessible and winning prose, _Being Nobody, Going Nowhere_ is a much-beloved, classic introduction.
+Explaining the fundamentals of meditation practice and the Buddhist outlook in accessible and winning prose, _Being Nobody, Going Nowhere_ is a much-beloved, classic introduction.

@@ -19,4 +19,4 @@ pages: 39
 
 > In their ignorance and delusion, the Buddha said, human beings are unable to realise and remember any single vestige of the sufferings they had experienced in their previous existences, and in their deluded cravings for and clingings to sensuous pleasures they are inevitably reborn to a world where their cravings, clingings and kamma take them.
 
-A thorough explanation of the thirty-one realms of existence that a human may be reborn into, depending on their kamma. Suvanno Mahathera warns readers about the horror which unskillful action leads and how to gain better rebirths through wholesome actions.
+A thorough explanation of the thirty-one realms of existence that a human may be reborn into, depending on their kamma. Suvanno Mahathera warns readers about the horror to which unskillful action leads and how to gain better rebirths through wholesome actions.

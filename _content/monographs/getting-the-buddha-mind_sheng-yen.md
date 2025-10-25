@@ -17,6 +17,6 @@ pages: 145
 ---
 
 > Chan transcends knowledge, symbols, and all the apparatus of language.
-You may call Chan 'emptiness' but it is not emptiness in the nihilistic sense
+> You may call Chan 'emptiness' but it is not emptiness in the nihilistic sense.
 
 An introduction to the practice of meditation retreat in the Chan tradition and a selection of Sheng Yen's retreat talks.

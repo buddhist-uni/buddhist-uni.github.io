@@ -15,4 +15,4 @@ publisher: bps
 pages: 231
 ---
 
-A handy reference guide to the Pāḷi Canon and the important, later works of Pāḷi literature, including an extensive bibliography, this book is useful for identifying Pāḷi texts by name.
+This handy reference guide to the Pāḷi Canon and important later works of Pāḷi literature includes an extensive bibliography and is useful for identifying Pāḷi texts by name.

@@ -19,4 +19,4 @@ pages: 10
 
 > But gaining mystical experience is not the purpose of our spiritual practice. The purpose of spiritual practice is to empty ourselves of self-identity.
 
-A fascinating conversation between Master Shng-Yen and former astronaut Dr. Edgar Mitchell, narrated by Professor Raymond Yeh. The discussion began with Mitchell recounting his mystical experience upon returning to Earth after a lunar mission.
+A fascinating conversation between Master Sheng-Yen and former astronaut Dr. Edgar Mitchell, narrated by Professor Raymond Yeh. The discussion began with Mitchell recounting his mystical experience upon returning to Earth after a lunar mission.

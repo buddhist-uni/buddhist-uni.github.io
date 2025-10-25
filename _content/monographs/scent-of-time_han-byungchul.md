@@ -19,4 +19,4 @@ pages: 68
 > The age of haste, its cinematographic succession of point-like presences, has no access to beauty or to truth.
 Only in lingering contemplation, even ascetic restraint, do things unveil their beauty, their fragrant essence.
 
-A spirited defense of slowing down in a world obsessed by acceleration.
+A spirited defense of slowing down in a world obsessed with acceleration.

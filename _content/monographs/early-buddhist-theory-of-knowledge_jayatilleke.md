@@ -17,7 +17,8 @@ address: "London"
 pages: 519
 ---
 
-> In this work the questions pertaining to the means of knowledge known to, criticized in and accepted by the Buddhism of the Pali Canon are fully discussed.
-A comprehensive survey of the historical background was indispensable for this purpose
+> In this work, the questions pertaining to the means of knowledge known to, criticized in, and accepted by the Buddhism of the Pali Canon are fully discussed. A comprehensive survey of the historical background was indispensable for this purpose.
+
+
 
 For Bhante Sujato's lectures on this book, see [Sujato, 2021](/content/av/early-buddhist-tok-course_sujato).
