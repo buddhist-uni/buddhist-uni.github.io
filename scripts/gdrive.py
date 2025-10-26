@@ -134,7 +134,11 @@ def get_gfolders_for_course(course):
   while len(parts) > 0:
     if not parts[0]: # use "course/" syntax to move to the private version of the course
       return (None, private_folder)
-    with yaspin(text="Loading subfolders..."):
+    subdirs_cached = get_subfolders.check_call_in_cache(private_folder)
+    if not subdirs_cached:
+      with yaspin(text="Loading subfolders..."):
+        subfolders = get_subfolders(private_folder)
+    else:
       subfolders = get_subfolders(private_folder)
     print(f"Got subfolders: {[f.get('name') for f in subfolders]}")
     q = parts[0].lower()
@@ -156,6 +160,11 @@ def get_gfolders_for_course(course):
           break
     if found:
       del parts[0]
+      continue
+    if subdirs_cached:
+      print("Clearing the cache and retrying...")
+      cachekey = get_subfolders._get_args_id(private_folder)
+      get_subfolders.store_backend.clear_item((get_subfolders.func_id, cachekey))
       continue
     print(f"No subfolder found matching \"{q}\"")
     q = input_with_prefill("Create new subfolder: ", titlecase(parts[0]))
