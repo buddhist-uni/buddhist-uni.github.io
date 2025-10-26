@@ -8,7 +8,7 @@ drive_links:
 course: korean
 tags:
   - mahayana
-  - korean-roots
+  - east-asian-roots
 year: 2024
 month: sep
 journal: plato
