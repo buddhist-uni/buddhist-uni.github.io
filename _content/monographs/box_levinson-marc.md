@@ -21,6 +21,6 @@ publisher: princeton
 pages: 390
 ---
 
-> Sprawling industrial complexes where armies of thousands [of workers] manufactured products from start to finish gave way to smaller, more specialized plants that shipped components and half-finished goods to one another in ever lengthening supply chains. [...] Once the world began to change, it changed very rapidly.
+> Sprawling industrial complexes where armies of thousands [of workers] manufactured products from start to finish gave way to smaller, more specialized plants that shipped components and half-finished goods to one another in ever-lengthening supply chains. [...] Once the world began to change, it changed very rapidly.
 
 The remarkable story of how a metal box changed the world.

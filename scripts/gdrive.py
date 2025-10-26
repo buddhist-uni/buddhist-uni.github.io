@@ -706,7 +706,7 @@ def _yt_thumbnail(snippet):
   return ''
 
 def fetch_youtube_transcript(vid):
-  """Returns a list of {"text": "", "start": 0, "duration": 0}s OR "disabled" if subtitles are turned off for that video"""
+  """Returns a list of {"text": "", "start": 0, "duration": 0}s OR a string if subtitles are unavailable for that video"""
   global YTTranscriptAPI
   if not YTTranscriptAPI:
     YTTranscriptAPI = YouTubeTranscriptApi()
@@ -716,13 +716,17 @@ def fetch_youtube_transcript(vid):
     ret = transcript.fetch()
   except (YouTubeTranscriptErrors.TranscriptsDisabled, YouTubeTranscriptErrors.VideoUnplayable, YouTubeTranscriptErrors.VideoUnavailable):
     return "disabled"
+  except (YouTubeTranscriptErrors.AgeRestricted, YouTubeTranscriptErrors.PoTokenRequired):
+    return "restricted"
   except YouTubeTranscriptErrors.NoTranscriptFound:
     if transcripts_available:
       for transcript in transcripts_available:
         if transcript.is_translatable: # The API doesn't pull translations automatically
           if any(tlang.language_code == 'en' for tlang in transcript.translation_languages):
             try:
-              return transcript.translate('en').fetch().to_raw_data()
+              # Currently the translate API is broken
+              # return transcript.translate('en').fetch().to_raw_data()
+              return "foreign"
             except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
               print(f"Warning ({vid}): {e.cause}")
               return []
@@ -774,7 +778,7 @@ def _make_ytvideo_summary_html(vid, snippet, transcript):
   ret += f"""<h2>Thumbnail</h2><p><img src="{_yt_thumbnail(snippet)}" /></p>"""
   if len(snippet.get('tags',[])) > 0:
     ret += f"""<h2>Video Tags</h2><p>{snippet['tags']}</p>"""
-  if transcript and transcript != 'disabled':
+  if transcript and not isinstance(transcript, str): # string values are failure modes (disabled, restricted, etc)
     ret += "<h2>Video Subtitles</h2>"
     for line in transcript:
       ret += f"""<p><a href="https://youtu.be/{vid}?t={floor(line['start'])}">{floor(line['start']/60)}:{round(line['start']%60):02d}</a> {whitespace.sub(' ', line['text'])}</p>"""

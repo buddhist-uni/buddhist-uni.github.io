@@ -17,6 +17,6 @@ pages: 104
 
 The classic introduction to Buddhist meditation.
 
-Written in 1990, Wisdom published an expanded version in 1991 that became a huge success. That version has itself now undergone several revisions and reprints, the latest being the "20th Anniversary Edition" from 2011.
+The book was written in 1990, and Wisdom published an expanded version in 1991 that became a huge success. That version has since undergone several revisions and reprints, the latest being the "20th Anniversary Edition" from 2011.
 
 [A shorter version of this book from the 1970s (called *Come and See*)](https://drive.google.com/file/d/1vrycSEC2G0g755ApbtnpaPGw3tyIauVA/view?usp=drivesdk) can be ordered in physical form **for free** by contacting [the Corporate Body of the Buddha Educational Foundation](https://www-old.budaedu.org/en/book/).

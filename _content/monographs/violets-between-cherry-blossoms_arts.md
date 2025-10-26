@@ -18,4 +18,4 @@ pages: 560
 
 > The need of the Romans for Chinese silk urged the extension of trade through Central Asia, while at the same time Buddhism spread, first from India northwards, picking up classical elements, and then gradually via Central Asia and China to Japan.
 
-How artistic patterns from ancient Greece found their way into Japanese designs.
+This book explains how artistic patterns from ancient Greece found their way into Japanese designs.

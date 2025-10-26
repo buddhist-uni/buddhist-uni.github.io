@@ -1,7 +1,7 @@
 ---
 title: "The Drama of the Commons"
 authors:
-  - "National Research Counsel"
+  - "National Research Council"
 editor: "Thomas Dietz and Nives Dolšak and Elinor Ostrom and others"
 external_url: "https://doi.org/10.17226/10287"
 tags:

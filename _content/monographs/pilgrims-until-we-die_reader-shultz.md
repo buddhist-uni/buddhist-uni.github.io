@@ -16,7 +16,7 @@ publisher: oxford
 pages: 236
 ---
 
-> Nakatsukasa did not do the pilgrimage just once but kept going around the island on a journey lasting some fifty-six years until his death in 1922. In this time he completed 280 pilgrimage circuits of Shikoku and left the island just twice
+> Nakatsukasa did not do the pilgrimage just once but kept going around the island on a journey lasting some fifty-six years until his death in 1922. In this time he completed 280 pilgrimage circuits of Shikoku and left the island just twice.
 
 Many Japanese Buddhists become "addicted" to the beautiful life of the pilgrimage circuit.
 

@@ -15,5 +15,5 @@ address: "Montclair, NJ"
 pages: 40 # 360 ÷ 9
 ---
 
-A young Korean-American and her family find themselves on unexpected journeys.
+A young Korean American and her family find themselves on unexpected journeys.
 

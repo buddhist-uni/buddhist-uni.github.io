@@ -21,4 +21,4 @@ pages: 218
 
 > If we have learned one thing from the #MeToo campaign, apart from just how pervasive sexual violence is, it is that we as a society do not have a clear, uncontested idea of what sexual consent looks like, and that we do not all universally and equally value it.
 
-A clear read on its important and difficult subject, this book should be considered required reading for anyone who wishes to navigate their sexual relations more skillfully or who wishes to understand the contemporary  discourse about sex.
+A lucid treatment of an important and difficult subject, this book should be considered required reading for anyone who wishes to navigate their sexual relations more skillfully or who wishes to understand the contemporary discourse about sex.

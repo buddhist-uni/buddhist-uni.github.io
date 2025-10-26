@@ -17,4 +17,4 @@ pages: 359
 olid: OL15542005M
 ---
 
-A classic biography of the Buddha collecting details scattered around the Pāli Canon to form a compelling narrative, _The Life of the Buddha_ presents the historical record in quirky translation, relatively undiluted by the later hagiographies. 
+A classic biography of the Buddha collecting details scattered from around the Pāli Canon to form a compelling narrative, _The Life of the Buddha_ presents the historical record in a quirky translation, relatively undiluted by the later hagiographies. 

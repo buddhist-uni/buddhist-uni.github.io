@@ -27,6 +27,6 @@ pages: 66
 
 > The mind of man is capable of anything.
 
-A British novel about the "horrors" of colonialism: and what Europeans thought about them.
+A British novel about the "horrors" of colonialism and what Europeans thought about them.
 
 For more about this classic novel, see (for example) [the Writ Large Episode on the book and its history](https://newbooksnetwork.com/on-joseph-conrads-heart-of-darkness).

@@ -147,7 +147,7 @@ def flatten_youtube_metadata(video_data: dict) -> str:
 
 def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
     ret = flatten_youtube_metadata(video_data)
-    if video_data.get('transcript') and video_data['transcript'] != 'disabled':
+    if video_data.get('transcript') and not isinstance(video_data['transcript'], str):
         ret += flatten_youtube_transcript(video_data['transcript'])
     return normalize_text(ret)
 
