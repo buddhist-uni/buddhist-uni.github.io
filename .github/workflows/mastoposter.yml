@@ -21,6 +21,7 @@ jobs:
       - name: Run Mastoposter
         shell: bash
         run: |
+          pip install google-api-core==2.27.0 # https://github.com/googleapis/python-api-core/issues/848
           printf '${{ secrets.GTOKEN }}' > ~/gtoken.json
           printf '${{ secrets.LIBRARY_UTILS_CLIENT_SECRET }}' > ~/library-utils-client-secret.json
           printf "${{ secrets.ARCHIVE_ORG_AUTH }}" > ~/archive.org.auth
