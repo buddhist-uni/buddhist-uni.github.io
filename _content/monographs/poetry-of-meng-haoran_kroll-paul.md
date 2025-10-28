@@ -29,4 +29,4 @@ pages: 468
 > Although Ru and Dao are disparate gateways,  
 Clouds and grove are rather a shared mode.
 
-The preeminent example of classical, Chinese, Buddhist poets, Meng Haoran shows how deeply Buddhist and Chinese culture mixed during the Tang Dynasty to produce the quintessentially East Asian Buddhism we now call "Chan."
+The preeminent example of Classical Chinese Buddhist poets, Meng Haoran shows how deeply Buddhist and Chinese culture mixed during the Tang Dynasty to produce the quintessentially East Asian Buddhism we now call "Chan."

@@ -17,6 +17,6 @@ number: 28
 pages: 194
 ---
 
-> … although they were wedded to scientific world views, science was not seen as offering meaning to them. Buddhism gave them what they needed, offering a scientifically-compatible ethical framework which they could draw upon in their day-to-day decision making. 
+> … although they were wedded to scientific worldviews, science was not seen as offering meaning to them. Buddhism gave them what they needed, offering a scientifically-compatible ethical framework which they could draw upon in their day-to-day decision-making. 
 
 A deep, ethnographic study of young adult Buddhists in Britain.

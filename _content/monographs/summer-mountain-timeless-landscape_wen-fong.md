@@ -24,4 +24,4 @@ address: "New York"
 pages: 71
 ---
 
-A visual excursion into Chinese landscape artwork of the Northern Sung period (960–1127).
+A visual excursion into Chinese landscape artwork of the Northern Song period (960–1127).

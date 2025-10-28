@@ -27,7 +27,7 @@ for metafile in tqdm(cached_files):
     with metafile.open('w') as fp:
       json.dump(data, fp)
     if isinstance(transcript, str):
-      print(f"{data['id']} marked as disabled")
+      print(f"{data['id']} marked as \"{transcript}\"")
     else:
       print(f"{data['id']} has a transcript now!")
       doc = None
