@@ -6,7 +6,7 @@ drive_links:
   - "https://drive.google.com/file/d/18a4lSNo_hIAabaqZDS65qkZa1jGiLwW3/view?usp=sharing"
 course: korean
 tags:
-  - 
+  - chan-lit
 year: 2012
 month: jun
 olid: OL60557309M
