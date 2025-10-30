@@ -2,6 +2,7 @@
 title: "Seon Dialogues 禪語錄"
 translator: "John Jorgensen"
 alternate_url: "http://mvseon.com/wp-content/uploads/2020/04/08_Seon-Dialogues_web.pdf"
+external_url: "https://siteofenlightenment.org/Tripitaka/Books/More/Collected%20Works%20of%20Korean%20Buddhism/08_Seon%20Dialogues_web.pdf"
 drive_links:
   - "https://drive.google.com/file/d/18a4lSNo_hIAabaqZDS65qkZa1jGiLwW3/view?usp=sharing"
 course: korean
@@ -10,7 +11,7 @@ tags:
 year: 2012
 month: jun
 olid: OL60557309M
-publisher: "Jogye Order of Korean Buddhism"
+publisher: "Jogye Order"
 series: "Collected Works of Korean Buddhism"
 number: 8
 ---
