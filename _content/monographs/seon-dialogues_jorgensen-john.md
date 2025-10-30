@@ -1,7 +1,7 @@
 ---
 title: "Seon Dialogues 禪語錄"
 translator: "John Jorgensen"
-external_url: "https://siteofenlightenment.org/Tripitaka/Books/More/Collected%20Works%20of%20Korean%20Buddhism/08_Seon%20Dialogues_web.pdf"
+alternate_url: "http://mvseon.com/wp-content/uploads/2020/04/08_Seon-Dialogues_web.pdf"
 drive_links:
   - "https://drive.google.com/file/d/18a4lSNo_hIAabaqZDS65qkZa1jGiLwW3/view?usp=sharing"
 course: korean
@@ -10,7 +10,9 @@ tags:
 year: 2012
 month: jun
 olid: OL60557309M
-publisher: "Jogye Order of Korean Buddism" 
+publisher: "Jogye Order of Korean Buddhism"
+series: "Collected Works of Korean Buddhism"
+number: 8
 ---
 
 > Rest the mind (of discrimination) and walk the path, so that
