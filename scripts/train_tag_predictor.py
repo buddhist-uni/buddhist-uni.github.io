@@ -559,7 +559,7 @@ class YouTubeDataSource(DataSource):
         for vid in tqdm(ytvideos):
             self.add_datapoints(
                 title=flatten_youtube_metadata(vid),
-                content=flatten_youtube_transcript(vid['transcript']),
+                content=flatten_youtube_transcript(vid['transcript']) if isinstance(vid['transcript'], list) else '',
                 tags=ytids[vid['id']],
                 title_weight=1,
             )
@@ -909,6 +909,16 @@ def report_model_score_against_youtube_data(model:TagPredictor, gdrive_also=True
 # C Tier (any tag ancestor):13.2%
 # D Tier (direct relative): 15.0%
 # E Tier (no relation):     19.8%
+#
+# As of Oct 30, 2025, the performance is now:
+# ----------
+# Of the 255 videos, their predicted tags break down as follows:
+# S Tier (first tag match): 30.6%
+# A Tier (tag match):       21.6%
+# B Tier (ancestor match):  3.1%
+# C Tier (any tag ancestor):14.1%
+# D Tier (direct relative): 11.4%
+# E Tier (no relation):     19.2%
 
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(

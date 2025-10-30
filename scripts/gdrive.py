@@ -4,7 +4,7 @@ import os.path
 from pathlib import Path
 import requests
 import socket
-from datetime import datetime
+from datetime import datetime, timezone
 from time import sleep
 from math import floor
 from io import BytesIO, BufferedIOBase
@@ -29,6 +29,7 @@ try:
   import joblib
   from yaspin import yaspin
   from tqdm import tqdm
+  from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from bs4 import BeautifulSoup
   from google.auth.transport.requests import Request
   from google.oauth2.credentials import Credentials
@@ -487,6 +488,83 @@ def all_files_matching(query: str, fields: str):
       print("Success!")
     for item in results.get('files', []):
       yield item
+
+def upload_folder_contents_to(local_directory: Path | str, gdfid: str, recursive=False, replace_all=False, parallelism=8):
+  if recursive:
+    raise NotImplementedError("Teach gdrive.upload_folder_contents_to to handle recursion")
+  local_directory = Path(local_directory)
+  if not local_directory.is_dir():
+    raise ValueError(f"{local_directory} is not a directory")
+  local_files = dict()
+  upload_jobs = [] # a tuple of (local_filepath, existing_id, size)
+  total_size = 0
+  with yaspin(text="Loading local file list...") as ys:
+    for child in local_directory.iterdir():
+      if child.is_dir():
+        continue # TODO: Handle recursion
+      s_obj = child.stat()
+      info = {k: getattr(s_obj, k) for k in dir(s_obj) if k.startswith('st_')}
+      info['md5'] = file_info(child)[0]
+      local_files[child] = info
+  with yaspin(text="Loading remote file list...") as ys:
+    for child in all_files_matching(
+      f"'{gdfid}' in parents and trashed=false",
+      "size,name,id,mimeType,md5Checksum,modifiedTime"
+    ):
+      local_filepath = local_directory.joinpath(child['name'])
+      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
+        continue # This uploader (for now) ignores existing links
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        continue # TODO: Handle recursion
+      if local_filepath not in local_files:
+        continue # Just ignore files that we don't have
+      if local_files[local_filepath]['md5'] == child['md5Checksum']:
+        del local_files[local_filepath] # no need to upload this one
+        continue
+      if not replace_all:
+        local_mtime = datetime.fromtimestamp(local_files[local_filepath]['st_mtime'], timezone.utc)
+        remote_mtime = datetime.fromisoformat(child['modifiedTime'].replace('Z', "+00:00"))
+        if local_mtime < remote_mtime:
+          ys.write(f"Warning: not uploading {local_filepath.relative_to(local_directory)} as the remote version seems newer? Pass `replace_all=True` to override.")
+          del local_files[local_filepath]
+          continue
+      size = local_files[local_filepath]['st_size']
+      upload_jobs.append(
+        (local_filepath, child['id'], size)
+      )
+      total_size += size
+      del local_files[local_filepath]
+  with yaspin(text="Loading upload file list..."):
+    for local_filepath, stats in local_files.items():
+      upload_jobs.append(
+        (local_filepath, None, stats['st_size'])
+      )
+      total_size += stats['st_size']
+  print(f"Uploading {len(upload_jobs)} files to Google Drive:")
+  def _upload_job(args: tuple):
+    local_filepath, existing_id, size = args
+    # Can't use session() as that isn't threadsafe. Make a new one for each request.
+    sess = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
+    if existing_id:
+      execute(sess.files().update(
+        fileId=existing_id,
+        body={}, # We're keeping the file name, etc the same
+        media_body=MediaFileUpload(local_filepath, resumable=True),
+      ))
+    else:
+      execute(sess.files().create(
+        body={
+          'name': local_filepath.name,
+          'parents': [gdfid], # TODO: Handle recursion,
+          'properties': {'createdBy': 'LibraryUtils'},
+        },
+        media_body=MediaFileUpload(local_filepath, resumable=True),
+      ))
+  tqdm_thread_map(
+    _upload_job,
+    upload_jobs,
+    max_workers=parallelism,
+  )
 
 def download_folder_contents_to(gdfid: str, target_directory: Path | str, recursive=False, follow_links=False):
   target_directory = Path(target_directory)
