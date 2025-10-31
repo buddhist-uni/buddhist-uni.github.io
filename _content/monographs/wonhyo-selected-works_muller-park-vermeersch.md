@@ -12,6 +12,7 @@ tags:
   - medieval
 year: 2012
 month: jun
+olid: OL60565256M
 publisher: Jogye Order of Korean Buddhism
 address: "Republic of Korea"
 volume: 1
