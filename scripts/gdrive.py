@@ -170,6 +170,9 @@ def get_gfolders_for_course(course):
     print(f"No subfolder found matching \"{q}\"")
     q = input_with_prefill("Create new subfolder: ", titlecase(parts[0]))
     if not q:
+      if public_folder:
+        if prompt("Okay, won't make a new subfolder, but should I put this in the public folder?"):
+          return (public_folder, private_folder)
       print("Okay, will just put in the private folder then.")
       return (None, private_folder)
     subfolder = create_folder(q, private_folder)
