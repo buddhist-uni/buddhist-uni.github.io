@@ -25,6 +25,9 @@ with yaspin(text="Loading..."):
   )
   from pdfutils import readpdf
 
+  LINK_SAVER = "LibraryUtils.LinkSaver"
+  PDF_SAVER = "LibraryUtils.BulkPDFImporter"
+
 course_predictor = None
 
 class ItemListParser:
@@ -158,7 +161,7 @@ class BulkPDFImporter(BulkItemImporter):
         fp,
         folder_id=folder,
         filename=fp.name,
-        creator="LibraryUtils.BulkPDFImporter",
+        creator=PDF_SAVER,
         verbose=False,
       )
       if uploaded:
@@ -195,7 +198,7 @@ def create_gdoc(url: str, title: str, html: str, folder_id: str):
     filename=title,
     html=f"<h1>{title}</h1><h2><a href=\"{url}\">{url}</a></h2>{html}",
     custom_properties={
-      "createdBy": "LibraryUtils.LinkSaver",
+      "createdBy": LINK_SAVER,
       "url": url,
     },
     folder_id=folder_id,
@@ -475,6 +478,102 @@ def import_items(items: list[str], pdf_type=None):
         print(f"Batch {j+1}->{j+50} of {len(items)} {k}...")
         IMPORTERS[k].import_items(items[j:j+50])
 
+def resort_existing_link_docs(course_predictor: TagPredictor):
+  IMPORTERS_BY_FOLDER_NAME = {v.get_unread_subfolder_name(): v for v in IMPORTERS.values()}
+  # Get all folders with one of those names and their grandparents
+  # Get all LINK_SAVER-saved files, filter by the above folders
+  # Use the associated Importer to resort and, if needed, move the doc
+  raise NotImplementedError("TODO: Implement resort_existing_link_docs")
+
+def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
+  # get all folders of pdf_type
+  importer = BulkPDFImporter(pdf_type)
+  folder_name = importer.get_unread_subfolder_name()
+  unread_id_to_course_name_map = dict()
+  course_name_to_unread_id_map = dict()
+  with yaspin(text="Loading all unread folders..."):
+    for course_name in course_predictor.classes:
+      _, private_id = gdrive.get_gfolders_for_course(course_name)
+      assert bool(private_id), f"Why does {course_name} not have a private folder?"
+      subfolders = gdrive.get_subfolders(private_id)
+      for subfolder in subfolders:
+        if str(subfolder['name']).lower().startswith('unread'):
+          unread_id_to_course_name_map[subfolder['id']] = course_name
+          course_name_to_unread_id_map[course_name] = subfolder['id']
+          break
+  print(f"Got {len(unread_id_to_course_name_map)} unread folders")
+  all_folders = gdrive.all_files_matching(
+    f"name='{folder_name}' and trashed=false",
+    "id,parents"
+  )
+  course_to_autopdf_folder = dict()
+  autopdf_folder_to_course = dict()
+  with yaspin(text=f"Loading all {pdf_type} folders..."):
+    for folder in all_folders:
+      parent = folder['parents'][0]
+      assert parent in unread_id_to_course_name_map, f"{gdrive.FOLDER_LINK_PREFIX}{parent} wasn't found in the predictable unread folders list"
+      course_to_autopdf_folder[unread_id_to_course_name_map[parent]] = folder['id']
+      autopdf_folder_to_course[folder['id']] = unread_id_to_course_name_map[parent]
+  print(f"Got {len(course_to_autopdf_folder)} {pdf_type} folders")
+  
+  # get all PDFs with one of those parents
+  with yaspin(text="Enumerating all such PDFs..."):
+    parent_list = ' or '.join(
+      f"'{fid}' in parents" for fid in course_to_autopdf_folder.values()
+    )
+    drive_files_to_reconsider = list(
+      gdrive.all_files_matching(
+        f"mimeType='application/pdf' and trashed=false and ({parent_list})",
+        "id,parents,size,name"
+      )
+    )
+  print(f"Got {len(drive_files_to_reconsider)} PDF files to resort")
+
+  # Ensure we have their pickles
+  print("Fetching their texts...")
+  import joblib
+  from train_tag_predictor import save_pdf_text_for_drive_file, NORMALIZED_TEXT_FOLDER
+  tqdm_thread_map(
+    save_pdf_text_for_drive_file,
+    drive_files_to_reconsider,
+    max_workers=4,
+  )
+  
+  # Sort them into courses
+  # and move the ones that need to be moved
+  print("Resorting...")
+  pbar = tqdm(drive_files_to_reconsider)
+  for drive_file in pbar:
+    normalized_text_file = NORMALIZED_TEXT_FOLDER.joinpath(f"{drive_file['id']}.pkl")
+    assert normalized_text_file.exists(), f"Couldn't find the normalized text for {gdrive.DRIVE_LINK.format(drive_file['id'])}"
+    normalized_text = joblib.load(normalized_text_file)
+    new_course = course_predictor.predict([normalized_text], normalized=True)[0]
+    if new_course not in course_to_autopdf_folder:
+      if new_course not in course_name_to_unread_id_map:
+        course_name_to_unread_id_map[new_course] = gdrive.create_folder(
+          "Unread",
+          gdrive.get_gfolders_for_course(new_course)[1],
+        )
+        unread_id_to_course_name_map[course_name_to_unread_id_map[new_course]] = new_course
+      new_folder = gdrive.create_folder(
+        folder_name,
+        course_name_to_unread_id_map[new_course],
+      )
+      course_to_autopdf_folder[new_course] = new_folder
+      autopdf_folder_to_course[new_folder] = new_course
+    else:
+      new_folder = course_to_autopdf_folder[new_course]
+    old_folder = drive_file['parents'][0]
+    old_course = autopdf_folder_to_course[old_folder]
+    pbar.write(f"\"{drive_file['name']}\"")
+    pbar.write(f"  {old_course}  \t->  {new_course}")
+    if old_folder != new_folder:
+      gdrive.move_drive_file(
+        drive_file['id'],
+        new_folder,
+        drive_file['parents'],
+        verbose=False,
+      )
 
 if __name__ == "__main__":
   argparser = argparse.ArgumentParser(
@@ -484,7 +583,7 @@ if __name__ == "__main__":
   )
   argparser.add_argument(
     "items",
-    nargs="+",
+    nargs="*",
     help="""The items (or source of the items) to upload.
 These items can be:
   - A PDF of type --pdf-type
@@ -499,21 +598,36 @@ These items can be:
     choices=['academia.edu'],
     help="Which subfolder to sort PDFs into (required if importing PDFs)",
   )
+  argparser.add_argument(
+    '--resort',
+    default=False,
+    action='store_true',
+    help="""Goes through all previously uploaded items and moves them
+    if the new TagPredictor has changed its mind.
+    If --pdf-type is specified, it'll do those PDFs.
+    If no pdf-type is, then it'll resort the link docs.""",
+  )
   args = argparser.parse_args()
   with yaspin(text="Loading tag predictor..."):
     course_predictor = TagPredictor.load()
+  if args.resort:
+    if args.pdf_type:
+      resort_existing_pdfs_of_type(course_predictor, args.pdf_type)
+    else:
+      resort_existing_link_docs(course_predictor)
   raw_items = []
-  with yaspin(text="Parsing items..."):
-    for item in args.items:
-      sublist = []
-      for parser in LIST_PARSERS:
-        if parser.can_read_item(item):
-          sublist = parser.read_item(item)
-          break
-      if sublist:
-        raw_items.extend(sublist)
-      else:
-        raw_items.append(item)
-  print(f"Got {len(raw_items)} items to import.")
-  import_items(raw_items, pdf_type=args.pdf_type)
+  if len(args.items):
+    with yaspin(text="Parsing items..."):
+      for item in args.items:
+        sublist = []
+        for parser in LIST_PARSERS:
+          if parser.can_read_item(item):
+            sublist = parser.read_item(item)
+            break
+        if sublist:
+          raw_items.extend(sublist)
+        else:
+          raw_items.append(item)
+    print(f"Got {len(raw_items)} items to import.")
+    import_items(raw_items, pdf_type=args.pdf_type)
   

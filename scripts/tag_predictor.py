@@ -234,6 +234,8 @@ class TagPredictor:
         vocabulary,
         classifiers: dict[str, BaseEstimator],
     ) -> None:
+        self.classes = list(classifiers.keys())
+        self.classes.remove('root')
         self.classifiers_ = classifiers
         self.vectorizer_ = CountVectorizer(lowercase=False, vocabulary=vocabulary)
     
