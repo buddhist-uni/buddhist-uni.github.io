@@ -6,15 +6,12 @@ publisher: hawaii
 status: featured
 course: sea
 tags:
-  - burma
   - burmese
   - thailand
   - theravada
-  - monastic-theravada
   - gender
   - hierarchy
   - patronage
-  - patriarchy
 olid: OL32034210M
 pages: 353
 ---

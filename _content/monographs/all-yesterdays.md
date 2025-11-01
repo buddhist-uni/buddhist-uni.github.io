@@ -18,6 +18,6 @@ pages: 187
 olid: OL32277821M
 ---
 
-There is still so much we don't know about dinosaurs. Why not let our imaginations run a bit wild?
+There is still so much we do not know about dinosaurs. Why not let our imaginations run a bit wild?
 
 

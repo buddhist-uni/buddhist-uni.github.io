@@ -21,4 +21,4 @@ everything becomes clear and undisguised.
 Make the smallest distinction, however,  
 and heaven and earth are set infinitely apart.
 
-An approachable and clear commentary on this famous, Chinese poem explaining how Chan can be understood as a merging of Taoism with Buddhism.
+An approachable and clear commentary on this famous Chinese poem explaining how Chan can be understood as a merging of Taoism with Buddhism.

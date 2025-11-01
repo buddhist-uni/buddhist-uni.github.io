@@ -17,6 +17,6 @@ address: "Netherlands"
 openalexid: W4293192437
 ---
 
-> There is no difference in the legibility of serif and sans serif typefaces either when reading from paper or when reading from screens.
+> There is no difference in the legibility of serif and sans-serif typefaces either when reading from paper or when reading from screens.
 
-Designers should feel free to use either a serif or a sans serif font, "even if legibility is a key criterion in their choice."
+Designers should feel free to use either a serif or a sans-serif font, "even if legibility is a key criterion in their choice."

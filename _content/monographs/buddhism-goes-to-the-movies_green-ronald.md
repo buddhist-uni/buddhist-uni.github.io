@@ -15,4 +15,4 @@ address: "New York"
 pages: 158
 ---
 
-> This book describes the basics of Buddhist philosophy and practice within the contexts of a number of dramatic, not documentary, films. It introduces some of the main traditions of Buddhism. Little or no knowledge of Buddhism is assumed of the reader. Instead, Buddhist con-cepts, practices, and histories are presented in progression so that this might serve as an introduction to Buddhism particularly accessible to those interested in film
+> This book describes the basics of Buddhist philosophy and practice within the contexts of a number of dramatic, not documentary, films. It introduces some of the main traditions of Buddhism. Little or no knowledge of Buddhism is assumed of the reader. Instead, Buddhist concepts, practices, and histories are presented in progression so that this might serve as an introduction to Buddhism particularly accessible to those interested in film.
