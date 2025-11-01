@@ -547,7 +547,9 @@ def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
     normalized_text_file = NORMALIZED_TEXT_FOLDER.joinpath(f"{drive_file['id']}.pkl")
     assert normalized_text_file.exists(), f"Couldn't find the normalized text for {gdrive.DRIVE_LINK.format(drive_file['id'])}"
     normalized_text = joblib.load(normalized_text_file)
-    new_course = course_predictor.predict([normalized_text], normalized=True)[0]
+    new_course = course_predictor.predict([
+      normalized_text + normalize_text((' '+drive_file['name'][:-4]) * 3)
+    ], normalized=True)[0]
     if new_course not in course_to_autopdf_folder:
       if new_course not in course_name_to_unread_id_map:
         course_name_to_unread_id_map[new_course] = gdrive.create_folder(
@@ -565,9 +567,9 @@ def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
       new_folder = course_to_autopdf_folder[new_course]
     old_folder = drive_file['parents'][0]
     old_course = autopdf_folder_to_course[old_folder]
-    pbar.write(f"\"{drive_file['name']}\"")
-    pbar.write(f"  {old_course}  \t->  {new_course}")
     if old_folder != new_folder:
+      pbar.write(f"\"{drive_file['name']}\"")
+      pbar.write(f"  {old_course}  \t->  {new_course}")
       gdrive.move_drive_file(
         drive_file['id'],
         new_folder,
