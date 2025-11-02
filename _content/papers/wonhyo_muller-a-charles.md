@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1e0-bR5Ge-oanOn9_Wm0vx1mpgfMz4Qyt/view?usp=sharing"
 course: korean
 tags:
-  - medieval
+  - east-asian-roots
 year: 2015
 month: jun
 booktitle: "The Buddhist World"
