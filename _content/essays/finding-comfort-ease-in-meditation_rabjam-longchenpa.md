@@ -12,7 +12,8 @@ tags:
 year: 2000
 publisher: lotsawa-house
 pages: 3
-
+---
+  
 > Therefore, inspect your mind, make it ready now,
 And consider this: Were you to die now, what would become of you?
 
