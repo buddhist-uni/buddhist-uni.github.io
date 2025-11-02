@@ -5,4 +5,4 @@ parents: [west, americas]
 hashtag: USA
 ---
 
-Buddhism in the United States, including both "convert" and "heritage" forms.
+Buddhism in the United States, beyond "convert" and "heritage" forms.
