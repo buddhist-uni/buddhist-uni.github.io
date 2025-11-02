@@ -1,7 +1,7 @@
 ---
 title: "Meditation Sickness and the (Dys)regulation of Qi"
 authors:
-  - "Leo Lol"
+  - "Leo Lok"
 subcat: podcast
 editor: salguero-p
 external_url: "https://blackberyl.buzzsprout.com/2044347/episodes/18100769-meditation-sickness-and-the-dys-regulation-of-qi"
@@ -22,5 +22,5 @@ minutes: 65
 When they get activated and the Qi is flowing in deep meditation, the Qi is going to want to jump that gap, pass through that gate into the brain.
 And what's going to happen there?
 
-A scholar and practitioner of Chinese medicine talks about how the psychological problems that can arise in meditation often have their start, or at least early warning signs, in the body, and how a more careful attention to our bones and muscles—as well as our physical and social environments—can prevent "meditation sickness."
+A scholar and practitioner of Chinese medicine talks about how the psychological problems that can arise in meditation often have their start, or at least early warning signs, in the body, and how a more careful attention to our bones and muscles—as well as our physical and social environments—can prevent many cases of "meditation sickness."
 
