@@ -15,4 +15,4 @@ pages: 250
 
 > … the modern pilgrim needs to have some idea about the religious, historical and archaeological background of each of the sacred places
 
-A thorough account of the history behind the sacred sites of Buddhist India, from ancient to modern times.
+This book provides a thorough account of the history behind the sacred sites of Buddhist India, from ancient to modern times.

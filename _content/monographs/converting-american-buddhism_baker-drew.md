@@ -26,7 +26,7 @@ openalexid: W3038914612
 Convert (typically White) American Buddhists largely hold to (racialized) narratives that denigrate "heritage" Buddhists-by-birth.
 But where does this leave *their* children?
 
-In this highly theoretical book of post-colonial critique, Drew Baker (himself a second-generation Buddhist American) analyses how scholars have missed this group of American Buddhists and then tells us about their experience of growing up Buddhish in America.
+In this highly theoretical book of post-colonial critique, Drew Baker (himself a second-generation Buddhist American) analyzes how scholars have missed this group of American Buddhists and then tells us about their experience of growing up Buddhish in America.
 
 This book is recommended for parents in the West who are comfortable with jargon and are into Buddhism, but who aren't sold on "labels."
 

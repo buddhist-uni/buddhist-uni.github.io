@@ -19,4 +19,4 @@ address: "Duebendorf, Switzerland"
 pages: 55
 ---
 
-Putting untreated water out in the sun can be an effective means for destroying the pathogenic micro-organisms that cause water-borne diseases.
+Putting untreated water out in the sun can be an effective means for destroying the pathogenic microorganisms that cause waterborne diseases.

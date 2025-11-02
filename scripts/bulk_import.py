@@ -444,11 +444,11 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
     for snippet in tqdm(snippets):
       create_gdoc_for_yt_snippet(snippet)
 
-ITEM_IMPORTERS = [
+ITEM_IMPORTERS: list[tuple[str, GDocURLImporter]] = [
   ('YouTube Videos', BulkYouTubeVideoImporter()),
   ('DharmaSeed Talks', DharmaSeedURLImporter()),
 ]
-IMPORTERS = {k: v for k, v in ITEM_IMPORTERS}
+IMPORTERS: dict[str, GDocURLImporter] = {k: v for k, v in ITEM_IMPORTERS}
 
 def import_items(items: list[str], pdf_type=None):
   if pdf_type:
@@ -478,17 +478,7 @@ def import_items(items: list[str], pdf_type=None):
         print(f"Batch {j+1}->{j+50} of {len(items)} {k}...")
         IMPORTERS[k].import_items(items[j:j+50])
 
-def resort_existing_link_docs(course_predictor: TagPredictor):
-  IMPORTERS_BY_FOLDER_NAME = {v.get_unread_subfolder_name(): v for v in IMPORTERS.values()}
-  # Get all folders with one of those names and their grandparents
-  # Get all LINK_SAVER-saved files, filter by the above folders
-  # Use the associated Importer to resort and, if needed, move the doc
-  raise NotImplementedError("TODO: Implement resort_existing_link_docs")
-
-def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
-  # get all folders of pdf_type
-  importer = BulkPDFImporter(pdf_type)
-  folder_name = importer.get_unread_subfolder_name()
+def get_all_predictable_unread_folders(course_predictor: TagPredictor) -> tuple[dict[str, str], dict[str, str]]:
   unread_id_to_course_name_map = dict()
   course_name_to_unread_id_map = dict()
   with yaspin(text="Loading all unread folders..."):
@@ -502,20 +492,75 @@ def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
           course_name_to_unread_id_map[course_name] = subfolder['id']
           break
   print(f"Got {len(unread_id_to_course_name_map)} unread folders")
+  return (unread_id_to_course_name_map, course_name_to_unread_id_map)
+
+def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread_id_to_course_name_map: dict[str, str]) -> tuple[dict, dict]:
   all_folders = gdrive.all_files_matching(
-    f"name='{folder_name}' and trashed=false",
+    f"name='{folder_name}' and trashed=false and mimeType='application/vnd.google-apps.folder'",
     "id,parents"
   )
-  course_to_autopdf_folder = dict()
-  autopdf_folder_to_course = dict()
-  with yaspin(text=f"Loading all {pdf_type} folders..."):
+  course_to_auto_folder = dict()
+  auto_folder_to_course = dict()
+  with yaspin(text=f"Loading all {importer_type} folders..."):
     for folder in all_folders:
       parent = folder['parents'][0]
       assert parent in unread_id_to_course_name_map, f"{gdrive.FOLDER_LINK_PREFIX}{parent} wasn't found in the predictable unread folders list"
-      course_to_autopdf_folder[unread_id_to_course_name_map[parent]] = folder['id']
-      autopdf_folder_to_course[folder['id']] = unread_id_to_course_name_map[parent]
-  print(f"Got {len(course_to_autopdf_folder)} {pdf_type} folders")
-  
+      course_to_auto_folder[unread_id_to_course_name_map[parent]] = folder['id']
+      auto_folder_to_course[folder['id']] = unread_id_to_course_name_map[parent]
+  print(f"Got {len(course_to_auto_folder)} {importer_type} folders")
+  return (course_to_auto_folder, auto_folder_to_course)
+
+def resort_existing_link_docs(course_predictor: TagPredictor):
+  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor)
+  for import_name, importer in ITEM_IMPORTERS:
+    print(f"Resorting {import_name}...")
+    _resort_link_docs_of_type(
+      course_predictor,
+      unread_id_to_course_name_map,
+      course_name_to_unread_id_map,
+      import_name,
+      importer,
+    )
+
+def _resort_link_docs_of_type(
+  course_predictor: TagPredictor,
+  unread_id_to_course_name_map: dict[str, str],
+  course_name_to_unread_id_map: dict[str, str],
+  import_name: str,
+  importer: GDocURLImporter,
+):
+  folder_name = importer.get_unread_subfolder_name()
+  course_to_auto_folder, auto_folder_to_course = all_folders_with_name_by_course(
+    folder_name,
+    import_name,
+    unread_id_to_course_name_map,
+  )
+  with yaspin(text="Enumerating all {import_name}..."):
+    parent_list = ' or '.join(
+      f"'{fid}' in parents" for fid in course_to_auto_folder.values()
+    )
+    drive_files_to_reconsider = list(
+      gdrive.all_files_matching(
+        f"properties has {{ key='createdBy' and value='LibraryUtils.LinkSaver' }} and trashed=false and ({parent_list})",
+        "id,parents,name,properties",
+      )
+    )
+  print(f"Got {len(drive_files_to_reconsider)} {import_name} to resort")
+
+  raise NotImplementedError("Hand off the docs to the importer to resort...")
+
+def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
+  # get all folders of pdf_type
+  importer = BulkPDFImporter(pdf_type)
+  folder_name = importer.get_unread_subfolder_name()
+  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(
+    course_predictor,
+  )
+  course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
+    folder_name,
+    pdf_type,
+    unread_id_to_course_name_map,
+  )
   # get all PDFs with one of those parents
   with yaspin(text="Enumerating all such PDFs..."):
     parent_list = ' or '.join(

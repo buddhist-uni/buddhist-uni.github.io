@@ -17,6 +17,6 @@ publisher: "Vipassana Research Association"
 pages: 36
 ---
 
-> Purity of mind is the greatest common denomiator of all religions. Love, which alone is the means for the unity of mankind, must be supreme, and it cannot be so unless the mind is transcendentally pure.
+> Purity of mind is the greatest common denominator of all religions. Love, which alone is the means for the unity of mankind, must be supreme, and it cannot be so unless the mind is transcendentally pure.
 
 This book contains the transcripts of three lectures given in 1951 to a class of Westerners in Burma who were looking to better understand the local religion.

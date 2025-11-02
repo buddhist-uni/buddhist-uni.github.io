@@ -19,7 +19,7 @@ olid: OL39803398M
 
 > Because sustainability is a cross-disciplinary field of study, producing this text has required bringing together over twenty experts from a variety of fields....
 
-> By covering a wide range of topics with a uniformity of style, and by including glossaries, review questions, case studies, and links to further resources, the text has suficient range to perform as the core resource for a semester course.
+> By covering a wide range of topics with a uniformity of style, and by including glossaries, review questions, case studies, and links to further resources, the text has sufficient range to perform as the core resource for a semester course.
 Students who cover the material in the book will be conversant in the language and concepts of sustainability, and will be equipped for further study in sustainable planning, policy, economics, climate, ecology, infrastructure, and more.
 
 

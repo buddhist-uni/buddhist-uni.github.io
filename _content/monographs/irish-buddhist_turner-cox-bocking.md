@@ -25,6 +25,6 @@ pages: 288
 > It is a way of thinking about the meaning of “Buddhism” at the start of its modern globalization.
 > It is also, of course, a remarkable tale
 
-The biography of a turn-of-the-century, plebian agitator against the British colonial establishment and one of the first, Western monks.
+The biography of a turn-of-the-century, plebeian agitator against the British colonial establishment and one of the first, Western monks.
 
 You can hear [an interview with Alicia Turner talking about the book](/content/av/irish-buddhist_turner-a) on the New Books Network.
