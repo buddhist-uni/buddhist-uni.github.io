@@ -2,12 +2,13 @@
 title: "The Significance of the Four-part Vinaya for Contemporary Korean Buddhism with Reference to the Chogye Order"
 authors:
   - "Ja-rang Lee"
-external_url: "https://www.jstor.org/stable/26261416"
+external_url: "https://otani.repo.nii.ac.jp/record/7996/files/EB45_OCR_MASK_10.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1gwgpCwzS4zHSrnGPH58e_rZVJ27rgSkD/view?usp=sharing"
 course: korean
 tags:
   - monastic-mahayana
+  - modern
 year: 2014
 journal: eb
 volume: 45
