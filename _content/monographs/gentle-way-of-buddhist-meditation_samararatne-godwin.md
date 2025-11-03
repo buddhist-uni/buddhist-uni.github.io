@@ -22,6 +22,7 @@ pages: 120
 achieve a mind that is free. So the importance of meditation is learning to achieve a mind
 that is free, a mind that is happy, a mind that is peaceful, a mind that has loving-kindness.
 
-A representation of Goodwin Samararatne's talks given in Hong Kong in 1997.
+This is a representation of Goodwin Samararatne's talks given in Hong Kong in 1997.
 
-In these talks, Samararatne explains a variety of topics related to meditation on loving-kindness and mindfulness, especially in daily life. 
+In these talks, Samararatne explains a variety of topics related to meditation on loving-kindness and mindfulness, especially in daily life.
+ 

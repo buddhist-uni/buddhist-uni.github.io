@@ -6,6 +6,7 @@ with yaspin(text="Loading..."):
   from collections import defaultdict
   import argparse
   import re
+  import threading
   import requests
   from tqdm import tqdm
   from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
@@ -82,6 +83,7 @@ PRIVATE_FOLDERID_FOR_COURSE = {
 class BulkItemImporter:
   def __init__(self) -> None:
     self.unread_folderid_for_course = dict()
+    self.folder_getter_lock = threading.Lock()
   
   def get_unread_subfolder_name(self) -> str:
     return "⚡ Bulk Importer"
@@ -95,28 +97,29 @@ class BulkItemImporter:
     return False
 
   def get_folder_id_for_course(self, course:str) -> str:
-    if course in self.unread_folderid_for_course:
-      return self.unread_folderid_for_course[course]
-    private_folder = PRIVATE_FOLDERID_FOR_COURSE[course]
-    subfolders = gdrive.get_subfolders(private_folder)
-    unread_folder = None
-    for subfolder in subfolders:
-      if 'unread' in subfolder['name'].lower():
-        unread_folder = subfolder['id']
-        break
-    if not unread_folder:
-      unread_folder = gdrive.create_folder(f"Unread ({course})", parent_folder=private_folder)
-    subfolders = gdrive.get_subfolders(unread_folder)
-    for subfolder in subfolders:
-      if subfolder['name'] == self.get_unread_subfolder_name():
-        self.unread_folderid_for_course[course] = subfolder['id']
-        return subfolder['id']
-    subfolder = gdrive.create_folder(
-      self.get_unread_subfolder_name(),
-      parent_folder=unread_folder,
-    )
-    self.unread_folderid_for_course[course] = subfolder
-    return subfolder
+    with self.folder_getter_lock:
+      if course in self.unread_folderid_for_course:
+        return self.unread_folderid_for_course[course]
+      private_folder = PRIVATE_FOLDERID_FOR_COURSE[course]
+      subfolders = gdrive.get_subfolders(private_folder)
+      unread_folder = None
+      for subfolder in subfolders:
+        if 'unread' in subfolder['name'].lower():
+          unread_folder = subfolder['id']
+          break
+      if not unread_folder:
+        unread_folder = gdrive.create_folder(f"Unread ({course})", parent_folder=private_folder)
+      subfolders = gdrive.get_subfolders(unread_folder)
+      for subfolder in subfolders:
+        if subfolder['name'] == self.get_unread_subfolder_name():
+          self.unread_folderid_for_course[course] = subfolder['id']
+          return subfolder['id']
+      subfolder = gdrive.create_folder(
+        self.get_unread_subfolder_name(),
+        parent_folder=unread_folder,
+      )
+      self.unread_folderid_for_course[course] = subfolder
+      return subfolder
 
 class BulkPDFImporter(BulkItemImporter):
   def __init__(self, pdf_type) -> None:
@@ -171,6 +174,10 @@ class BulkPDFImporter(BulkItemImporter):
         tqdm.write(f"Failed to upload {fp}!")
 
 class GDocURLImporter(BulkItemImporter):
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
+    """Takes a list of Google Doc File objects and moves them to the predicted folder"""
+    raise NotImplementedError("GDocURLImporter doesn't know how to sort things itself")
+
   def filter_already_imported_items(self, items:list[str]) -> list[str]:
     already = self.already_imported_items(items)
     return [item for item in items if item not in already]
@@ -204,9 +211,15 @@ def create_gdoc(url: str, title: str, html: str, folder_id: str):
     folder_id=folder_id,
   )
 
+@gdrive.disk_memorizor.cache()
+def _get_html(url):
+  req = requests.get(url)
+  assert req.ok
+  return req.text
+  
 def get_html(url):
   try:
-    return requests.get(url).text
+    return _get_html(url)
   except:
     tqdm.write(f"WARNING: There was an error fetching {url}! Skipping...")
     return ''
@@ -236,6 +249,51 @@ class DharmaSeedURLImporter(GDocURLImporter):
   def can_import_item(self, item: str) -> bool:
     # for now we only support importing teacher pages
     return item.startswith(self.DOMAIN + "/teacher/")
+
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
+    """Takes a list of Google Doc File objects and moves them to the predicted folder"""
+    from bs4 import BeautifulSoup
+    urls = [doc['properties']['url'] for doc in items]
+    print("Fetching webpages...")
+    htmls = tqdm_thread_map(
+      get_html,
+      urls,
+      max_workers=8,
+    )
+    print("Parsing webpages...")
+    pbar = tqdm(list(zip(items, htmls)))
+    for doc, html in pbar:
+      if not html:
+        # fallback to using the Doc title. Better than nothing.
+        doc['text'] = doc['name']
+        continue
+      soup = BeautifulSoup(html, features='lxml')
+      try:
+        title = soup.select_one('div.bodyhead').getText(strip=True)
+        table = soup.select_one('div.talklist table table')
+        rows = table.find_all('tr')
+      except AttributeError as e:
+        e.add_note(f"While trying to parse {doc['properties']['url']}")
+        raise e
+      assert title in rows[0].get_text(), f"The first table row should have the title"
+      assert 'Listen' in rows[1].get_text(), f"The second row should have a Listen button"
+      description = rows[2].get_text(strip=True)
+      doc['text'] = title + ' ' + description
+    print("Predicting courses...")
+    for doc in tqdm(items):
+      doc['course'] = str(course_predictor.predict([doc['text']])[0])
+    print("Moving any, if needed...")
+    def maybe_move_doc(doc):
+      old_course = auto_folder_to_course[doc['parents'][0]]
+      if old_course != doc['course']:
+        tqdm.write(f"Moving \"{doc['name']}\"\n  {old_course}  ->  {doc['course']}")
+        gdrive.move_drive_file(
+          doc['id'],
+          self.get_folder_id_for_course(doc['course']),
+          doc['parents'],
+          verbose=False,
+        )
+    tqdm_thread_map(maybe_move_doc, items, max_workers=8)
 
   def import_items(self, items: list[str]):
     from bs4 import BeautifulSoup
@@ -345,7 +403,7 @@ class DharmaSeedURLImporter(GDocURLImporter):
     if len(tracks) == 0:
       return
     for track in tqdm(tracks, desc="Predicting courses"):
-      text = [track['title']] * 3
+      text = [track['title']]
       text.append(track['desc'])
       text = ' '.join(text)
       track['course'] = course_predictor.predict([text])[0]
@@ -386,13 +444,16 @@ Then clear the playlist via:
 setInterval(() => {
     document.querySelector('#contents > ytd-playlist-video-renderer:nth-child(1) #button').click();
 }, 2000)
-// A second later, pasting in:
-setInterval(() => {
+setTimeout(() => {setInterval(() => {
     document.querySelector('#items > ytd-menu-service-item-renderer:nth-child(3)').click();
-}, 2000)
+}, 2000);}, 1000)
 ```
 
 Note: the above may need to be updated slightly based on the latest YT HTML
+
+Also, after importing the new documents, you'll probably have to
+run fix_yttranscript_cache.py for a few days to get all the data,
+then run "--resort" here to sort those docs again with the transcript data.
 """
 
 def create_gdoc_for_yt_snippet(snippet: dict):
@@ -414,35 +475,54 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
 
   def can_import_item(self, item: str) -> bool:
     return (bool)(gdrive.yt_url_to_id_re.search(item))
+  
+  def extract_ids_from_urls(self, urls: list[str]) -> list[str]:
+    return [
+      gdrive.yt_url_to_id_re.search(url).groups()[0]
+      for url in urls
+    ]
 
-  def import_items(self, items: list[str]):
-    vid_ids = [
-      gdrive.yt_url_to_id_re.search(item).groups()[0]
-      for item in items
-    ]
-    # dedupe based on normalized video id
-    items = self.filter_already_imported_items([
-      f"https://youtu.be/{vid}" for vid in vid_ids
-    ])
-    if len(items) == 0:
-      return
-    vid_ids = [
-      gdrive.yt_url_to_id_re.search(item).groups()[0]
-      for item in items
-    ]
-    print("Getting all video data...")
-    snippets = get_ytdata_for_ids(vid_ids)
+  def _add_folder_to_snippets(self, snippets: list[dict]):
     print("Predicting courses for videos...")
     for snippet in tqdm(snippets):
       course = course_predictor.predict(
         [get_normalized_text_for_youtube_vid(snippet)],
         normalized=True,
       )[0]
+      snippet['course'] = course
       snippet['folder'] = self.get_folder_id_for_course(course)
+  
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
+    """Takes a list of Google Doc File objects and moves them to the predicted folder"""
+    vid_urls = [doc['properties']['url'] for doc in items]
+    vid_ids = self.extract_ids_from_urls(vid_urls)
+    snippets = get_ytdata_for_ids(vid_ids)
+    self._add_folder_to_snippets(snippets)
+    print("Moving docs as needed:")
+    def maybe_move_doc(doc, snippet):
+      if snippet['folder'] != doc['parents'][0]:
+        tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[doc['parents'][0]]}  ->  {snippet['course']}")
+        gdrive.move_drive_file(
+          doc['id'],
+          snippet['folder'],
+          previous_parents=doc['parents'],
+          verbose=False,
+        )
+    tqdm_thread_map(maybe_move_doc, items, snippets, max_workers=8)
+
+  def import_items(self, items: list[str]):
+    vid_ids = self.extract_ids_from_urls(items)
+    # dedupe based on normalized video id
+    items = self.filter_already_imported_items([
+      f"https://youtu.be/{vid}" for vid in vid_ids
+    ])
+    if len(items) == 0:
+      return
+    print("Getting all video data...")
+    snippets = get_ytdata_for_ids(vid_ids)
+    self._add_folder_to_snippets(snippets)
     print("Creating GDocs for Videos...")
-    # TODO Figure out how to parallelize this
-    for snippet in tqdm(snippets):
-      create_gdoc_for_yt_snippet(snippet)
+    tqdm_thread_map(create_gdoc_for_yt_snippet, snippets, max_workers=8)
 
 ITEM_IMPORTERS: list[tuple[str, GDocURLImporter]] = [
   ('YouTube Videos', BulkYouTubeVideoImporter()),
@@ -478,7 +558,7 @@ def import_items(items: list[str], pdf_type=None):
         print(f"Batch {j+1}->{j+50} of {len(items)} {k}...")
         IMPORTERS[k].import_items(items[j:j+50])
 
-def get_all_predictable_unread_folders(course_predictor: TagPredictor) -> tuple[dict[str, str], dict[str, str]]:
+def get_all_predictable_unread_folders() -> tuple[dict[str, str], dict[str, str]]:
   unread_id_to_course_name_map = dict()
   course_name_to_unread_id_map = dict()
   with yaspin(text="Loading all unread folders..."):
@@ -510,22 +590,20 @@ def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread
   print(f"Got {len(course_to_auto_folder)} {importer_type} folders")
   return (course_to_auto_folder, auto_folder_to_course)
 
-def resort_existing_link_docs(course_predictor: TagPredictor):
-  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor)
+def resort_existing_link_docs():
+  # We don't use the unread id map here as the importers will call
+  # gdrive.get_subfolders themselves. But no worries as that call is cached.
+  unread_id_to_course_name_map, _ = get_all_predictable_unread_folders()
   for import_name, importer in ITEM_IMPORTERS:
     print(f"Resorting {import_name}...")
     _resort_link_docs_of_type(
-      course_predictor,
       unread_id_to_course_name_map,
-      course_name_to_unread_id_map,
       import_name,
       importer,
     )
 
 def _resort_link_docs_of_type(
-  course_predictor: TagPredictor,
   unread_id_to_course_name_map: dict[str, str],
-  course_name_to_unread_id_map: dict[str, str],
   import_name: str,
   importer: GDocURLImporter,
 ):
@@ -535,7 +613,7 @@ def _resort_link_docs_of_type(
     import_name,
     unread_id_to_course_name_map,
   )
-  with yaspin(text="Enumerating all {import_name}..."):
+  with yaspin(text=f"Enumerating all {import_name}..."):
     parent_list = ' or '.join(
       f"'{fid}' in parents" for fid in course_to_auto_folder.values()
     )
@@ -546,16 +624,16 @@ def _resort_link_docs_of_type(
       )
     )
   print(f"Got {len(drive_files_to_reconsider)} {import_name} to resort")
+  # Prime the importer's cache of auto_folder ids
+  importer.unread_folderid_for_course.update(course_to_auto_folder)
+  # Do the resorting
+  importer.resort_docs(drive_files_to_reconsider, auto_folder_to_course)
 
-  raise NotImplementedError("Hand off the docs to the importer to resort...")
-
-def resort_existing_pdfs_of_type(course_predictor: TagPredictor, pdf_type: str):
+def resort_existing_pdfs_of_type(pdf_type: str):
   # get all folders of pdf_type
   importer = BulkPDFImporter(pdf_type)
   folder_name = importer.get_unread_subfolder_name()
-  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(
-    course_predictor,
-  )
+  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders()
   course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
     folder_name,
     pdf_type,
@@ -659,9 +737,9 @@ These items can be:
     course_predictor = TagPredictor.load()
   if args.resort:
     if args.pdf_type:
-      resort_existing_pdfs_of_type(course_predictor, args.pdf_type)
+      resort_existing_pdfs_of_type(args.pdf_type)
     else:
-      resort_existing_link_docs(course_predictor)
+      resort_existing_link_docs()
   raw_items = []
   if len(args.items):
     with yaspin(text="Parsing items..."):

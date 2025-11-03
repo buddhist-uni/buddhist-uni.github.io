@@ -19,4 +19,4 @@ address: "New York"
 pages: 201
 ---
 
-Based on [the 2018 exhibition at The Met of the same name](https://www.metmuseum.org/exhibitions/listings/2018/poetry-of-nature), this beautiful volume explains how different strands of Japanese culture, from literature to Buddhism to theater, came together in the calligraphy-laden nature paintings of 17th, 18th and early 19th century Japan.
+Based on [the 2018 exhibition at The Met of the same name](https://www.metmuseum.org/exhibitions/listings/2018/poetry-of-nature), this beautiful volume explains how different strands of Japanese culture, from literature to Buddhism to theater, came together in the calligraphy-laden nature paintings of 17th, 18th, and early 19th-century Japan.

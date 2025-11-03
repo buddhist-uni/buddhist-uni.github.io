@@ -13,6 +13,6 @@ publisher: wisdom
 pages: 432
 ---
 
-> In tantra, the ultimate result is the union of the illusory body and clear light manifesting on the path of no-more learning, while in sūtra the ultimate result is the form body and dharma body of a buddha.
+> In tantra, the ultimate result is the union of the illusory body and clear light manifesting on the path of no-more-learning, while in sūtra the ultimate result is the form body and dharma body of a buddha.
 
 A systematic outline of the tantric vehicle.

@@ -94,12 +94,9 @@ if not YOUTUBE_DATA_FOLDER.exists():
 
 def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
     ids_to_fetch = []
-    ret = []
     for ytid in youtube_ids:
         cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{ytid}.json")
-        if cachefile.exists():
-            ret.append(json.loads(cachefile.read_text()))
-        else:
+        if not cachefile.exists():
             ids_to_fetch.append(ytid)
     if ids_to_fetch:
         print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
@@ -115,8 +112,12 @@ def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
                 vid['transcript'] = []
             cachefile = YOUTUBE_DATA_FOLDER.joinpath(f"{vid['id']}.json")
             cachefile.write_text(json.dumps(vid))
-            ret.append(vid)
-    return ret
+    # Yes, a little less efficient to dumps then immediate loads but
+    # this is the easiest way to make sure the returned list is in the
+    # same order as the argument list while batching the needed fetches
+    return [json.loads(
+        YOUTUBE_DATA_FOLDER.joinpath(f"{ytid}.json").read_text()
+    ) for ytid in youtube_ids]
 
 YT_STOP_LINES = set([
     '',

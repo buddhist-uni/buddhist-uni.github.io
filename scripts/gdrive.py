@@ -288,7 +288,6 @@ def string_to_media(s, mimeType):
 def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None, replace_doc=False):
   if bool(html) == bool(rtf):
     raise ValueError("Please specify either rtf OR html.")
-  drive_service = session()
   metadata = {'mimeType': 'application/vnd.google-apps.document'}
   media = None
   if filename:
@@ -356,7 +355,9 @@ def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=Non
     return _perform_upload(file_metadata, media, verbose=verbose)
 
 def _perform_upload(file_metadata, media, verbose=True, update_file=False):
-    drive_service = session()
+    # Don't use the shared session() so that uploads can be parallelized
+    # (the drive service object is not thread-safe):
+    drive_service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
     try:
         # Upload the file
         request = None
@@ -421,7 +422,8 @@ def deref_possible_shortcut(gfid):
   return gfid
 
 def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
-  service = session()
+  # new service every time for multithreading
+  service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
   if previous_parents is None:
     # pylint: disable=maybe-no-member
     file = execute(service.files().get(fileId=file_id, fields='parents'))

@@ -16,4 +16,4 @@ address: "Delhi"
 pages: 361
 ---
 
-A collection of dozens of previously-published articles, essays, and papers by the renowned, Sri Lankan scholar.
+A collection of dozens of previously-published articles, essays, and papers by the renowned Sri Lankan scholar.
