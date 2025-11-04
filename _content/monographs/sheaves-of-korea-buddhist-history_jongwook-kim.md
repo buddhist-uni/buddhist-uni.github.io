@@ -1,5 +1,5 @@
 ---
-title: "Sheaves of Korean Buddhist History Joseon Bulgyosa-go"
+title: "Sheaves of Korean Buddhist History: *Joseon Bulgyosa-go*"
 editor: "Kim JongWook"
 authors:
   - "Gim Yeongsu"
