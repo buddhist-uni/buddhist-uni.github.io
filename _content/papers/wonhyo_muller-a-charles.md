@@ -12,7 +12,7 @@ year: 2015
 month: jun
 booktitle: "The Buddhist World"
 publisher: "Routledge"
-pages: 10
+pages: "538--549"
 chapter: 33
 ---
 

@@ -22,3 +22,5 @@ minutes: 105
 > Didn't you know beforehand how the world of men is? Sometimes we have to let go of the things we like.
 
 An orphaned boy is raised by an old hermit on a small barge in the middle of a scenic, mountain lake where he learns about the cycle of life and death.
+
+For an overview of critical interpretations of the film's symbolism, see [Green and Mun's 2019 article, "Representing Buddhism through Mise-en-scène, Diegesis, and Mimesis" (IJBTC 29.1)](https://drive.google.com/file/d/10tJdaWzVyPklGHr6mpJxqoivF9bimfj-/view?usp=drivesdk){:target="_blank" ga-event-value="0.5"}.
