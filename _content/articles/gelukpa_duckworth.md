@@ -17,3 +17,5 @@ pages: 8
 > Tantra is an important part of the path to liberation in the Geluk tradition. It is a path to liberation that is held to involve distinct, esoteric methods, but without diverging from the philosophical view of emptiness, which is indispensable. 
 
 Known for its rigorous academic approach, the Gelukpa school integrates philosophy, ethics, meditation, and tantric practices according to the 14th century principles outlined by Je Tsongkhapa.
+
+This encyclopedia entry gives a brief overview of the school with a special focus on putting its philosophical stances into context.
