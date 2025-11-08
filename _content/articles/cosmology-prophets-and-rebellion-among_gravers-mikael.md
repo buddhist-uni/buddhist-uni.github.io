@@ -15,10 +15,9 @@ tags:
   - religion
 year: 2001
 month: dec
-journal: "Moussons"
+journal: moussons
 number: 4
 pages: "3--31"
-publisher: "University of Provence-Aix-Marseille"
 openalexid: W2769077013
 ---
 
