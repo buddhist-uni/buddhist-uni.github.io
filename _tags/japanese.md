@@ -25,3 +25,10 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:Sunlight_through_c
 image_center_x: 0%
 image_center_y: 74%
 ---
+
+From the austere "Zen" meditation traditions to the devotional "Pure Land" sects,
+Japanese Mahāyāna gained its distinctive forms during the tumultuous Kamakura period (1185-1333)
+when new religious movements emerged as alternatives to the esoteric Tendai Buddhist institutions.
+During the Meiji Revolution (1868–1912), celibacy was abolished for clergymen:
+a devastating blow to the various Buddhist schools softened somewhat by their doctrinal emphasis on everyone's
+equal access to "original enlightenment" (本覺 *hongaku*).

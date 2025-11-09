@@ -22,4 +22,4 @@ publisher: mit
 pages: 180
 ---
 
-How fiercely independent Christian communities in America are slowly being forced to adopt modern technology and the strategies they are inventing to resist that technology's destabilizing effects.
+How fiercely independent Christian communities in America are slowly being forced to adopt modern technology and the strategies they are inventing to resist its destabilizing effects.

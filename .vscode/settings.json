@@ -10,5 +10,8 @@
     "cSpell.enabledFileTypes": {
         "javascript": false
     },
-    "javascript.validate.enable": false
+    "javascript.validate.enable": false,
+    "cSpell.words": [
+        "Vajrayāna"
+    ]
 }

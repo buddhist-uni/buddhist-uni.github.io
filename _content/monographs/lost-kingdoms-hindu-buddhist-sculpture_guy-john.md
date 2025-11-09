@@ -19,7 +19,7 @@ address: "New York"
 pages: 305
 ---
 
-This exhibition catalog from The Met presents the religious sculptural arts of  Southeast Asia from the 5th through the 8th centuries CE.
+This exhibition catalog from The Met presents the religious sculptural arts of Southeast Asia from the 5th through the 8th centuries CE.
 
-Not just a catalogue of sculptures, the included essays by leading scholars explain much of what is known about the early history of Southeast Asian polities and their Indic religions.
+Not just a catalog of sculptures, the included essays by leading scholars explain much of what is known about the early history of Southeast Asian polities and their Indic religions.
 

@@ -17,7 +17,7 @@ pages: 1424
 course_time_multiplier: 0
 ---
 
-The best translation in English of the most important collection of the Buddha's discourses, with a lengthy introduction, sutta summaries, and helpful endnotes summarizing important commentarial points, this book is a must have for any student of Buddhism.
+The best translation in English of the most important collection of the Buddha's discourses, with a lengthy introduction, sutta summaries, and helpful endnotes summarizing important commentarial points, this book is a must-have for any student of Buddhism.
 
 About a third of the suttas have been made available for free by the publisher under a Creative Commons License and have been collected into [this open source booklet](/content/booklets/mn-selections_nyanamoli-bodhi) for your consideration.
 Furthermore, the rest of the book can be read [on their website](https://wisdomexperience.org/ebook/the-middle-length-discourses-of-the-buddha/cover-page/) for free if you sign up for a (free) account.

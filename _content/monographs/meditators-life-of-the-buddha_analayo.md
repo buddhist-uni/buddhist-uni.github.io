@@ -11,4 +11,4 @@ tags:
 pages: 258
 ---
 
-An guided anthology of the Buddha's career as a meditator, with reflections from the author's own research and practice.
+A guided anthology of the Buddha's career as a meditator, with reflections from the author's own research and practice.

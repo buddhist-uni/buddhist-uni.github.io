@@ -283,6 +283,8 @@ class DharmaSeedURLImporter(GDocURLImporter):
     for doc in tqdm(items):
       doc['course'] = str(course_predictor.predict([doc['text']])[0])
     print("Moving any, if needed...")
+    moves = 0
+    moves_lock = threading.Lock()
     def maybe_move_doc(doc):
       old_course = auto_folder_to_course[doc['parents'][0]]
       if old_course != doc['course']:
@@ -293,7 +295,11 @@ class DharmaSeedURLImporter(GDocURLImporter):
           doc['parents'],
           verbose=False,
         )
+        nonlocal moves
+        with moves_lock:
+          moves += 1
     tqdm_thread_map(maybe_move_doc, items, max_workers=8)
+    print(f"  Moved {moves}/{len(items)} docs to new folders")
 
   def import_items(self, items: list[str]):
     from bs4 import BeautifulSoup
@@ -499,6 +505,8 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
     snippets = get_ytdata_for_ids(vid_ids)
     self._add_folder_to_snippets(snippets)
     print("Moving docs as needed:")
+    moves = 0
+    moves_lock = threading.Lock()
     def maybe_move_doc(doc, snippet):
       if snippet['folder'] != doc['parents'][0]:
         tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[doc['parents'][0]]}  ->  {snippet['course']}")
@@ -508,7 +516,11 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
           previous_parents=doc['parents'],
           verbose=False,
         )
+        nonlocal moves
+        with moves_lock:
+          moves += 1
     tqdm_thread_map(maybe_move_doc, items, snippets, max_workers=8)
+    print(f"  Moved {moves}/{len(snippets)} docs to new folders")
 
   def import_items(self, items: list[str]):
     vid_ids = self.extract_ids_from_urls(items)
