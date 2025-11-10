@@ -29,10 +29,11 @@ image_center_y: 84%
 ---
 
 Inner Asia inherited Vajrayāna Buddhism from medieval India,
-incorporating elements of its indigenous religions as Buddhism spread
+incorporating elements of indigenous religions as Buddhism spread
 across the Tibetan Plateau to Mongolia and Bhutan.
+
 Characterized by strong institutions and elaborate rituals,
-Tibetan Buddhism preserved much of the scholastic culture of late-Indian Buddhism
+Tibetan Buddhism preserved much of the scholastic culture of late Indian Buddhism
 along with its esoteric and devotional practices which often center the figure of the guru, or *lama*.
 While Tibetan Buddhists recognize the validity of other forms of Buddhist practice,
-they usually feel that the Tantric practices are especially powerful and efficacious if practiced correctly.
+they usually feel that the Tantric practices are especially powerful and efficacious.

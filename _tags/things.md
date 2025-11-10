@@ -18,7 +18,7 @@ illustration_width: 2560
 illustration_center_x: 55%
 illustration_center_y: 100%
 illustration_caption: >-
-  A set of clay figurines at <a href="https://en.wikipedia.org/wiki/Field_Museum_of_Natural_History">The Field Museum of Chicago</a> depicts the bustling market square of pre-Columbian Tlatelolco.
+  A set of clay figurines at The Field Museum of Chicago depicts the bustling market square of pre-Columbian Tlatelolco.
   (Photo by <a href="https://commons.wikimedia.org/wiki/File:Tlatelolco_Marketplace.JPG">Joe Ravi</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>)
 image: https://illeakyw.sirv.com/Images/banners/Seattle_-_Viet_Nam_Buddhist_Temple_offerings_01.jpg
 image_width: 2592

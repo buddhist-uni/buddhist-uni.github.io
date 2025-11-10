@@ -20,5 +20,5 @@ openalexid: W3094549070
 > old altars are increasingly encountered as surplus goods by those who lack the
 space, ritual expertise, or inclination to care for them. Like other forms of sacred
 waste (like human corpses), disposal is complicated for practical and moral reasons,
-and often requires the performance of special rites (供養 kuyō).
+and often requires the performance of special rites (供養 *kuyō*).
 
