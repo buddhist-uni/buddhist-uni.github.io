@@ -1,7 +1,8 @@
 ---
 title: "Putting Cruelty First"
-authors: [shklar-judith]
-external_url: "https://www.dissentmagazine.org/wp-content/files_mf/1389811110d4Shklar.pdf"
+authors:
+  - shklar-judith
+external_url: "https://dissentmagazine.org/wp-content/files_mf/1389811110d4Shklar.pdf"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1U3UVdSx7RDiaNw1WyZxkDAI_2rhnrxC4/view?usp=drivesdk"]
 year: 1982

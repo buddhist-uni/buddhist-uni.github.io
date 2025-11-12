@@ -12,7 +12,7 @@ illustration_center_y: 8%
 illustration_caption: >-
   <a href="https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_Edoziman_Oeshiki.jpg#mw-jump-to-license">This 19th century postcard</a>
   depicts pilgrims approaching Ikegami Honmon-ji temple for its annual festival
-  commemorating the life and passing of Nichiren.
+  commemorating the life and passing of Kamakura-era reformer Nichiren Daishōnin (日蓮大聖人).
 image: https://illeakyw.sirv.com/Images/banners/Sunlight_through_clouds_and_view_of_Ginkaku-ji_Temple_from_above%2C_Kyoto%2C_Japan.jpg
 image_width: 2560
 image_height: 1707
@@ -25,6 +25,7 @@ image_center_y: 74%
 ---
 
 From the austere "Zen" meditation traditions to the devotional "Pure Land" sects,
-Japanese Mahāyāna gained its distinctive forms during the tumultuous Kamakura period (1185-1333).
-During the Meiji Revolution (1868–1912), celibacy was abolished for the clergymen:
-a devastating blow to the various Buddhist schools softened somewhat by their belief that "original enlightenment" (本覺 *hongaku*) is available to all.
+Japanese Mahāyāna's distinctive forms emerged in the tumultuous Kamakura period (1185-1333)
+and were consolidated and formalized during the feudal Edo (1603–1868).
+During the Meiji Revolution (1868–1912), Buddhism was persecuted and celibacy abolished:
+a devastating blow to the various Buddhist schools softened somewhat by their conviction that "original enlightenment" (本覺 *hongaku*) is available to all.

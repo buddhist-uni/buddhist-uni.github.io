@@ -12,7 +12,7 @@ course: korean
 tags:
   - east-asian-roots
 year: 2020
-# olid: OL58661353M for some reason, giving a 404
+olid: OL58661353M
 image: https://ia600106.us.archive.org/BookReader/BookReaderPreview.php?id=bwb_P9-AOT-967&itemPath=%2F4%2Fitems%2Fbwb_P9-AOT-967&server=ia600106.us.archive.org&page=cover_w500_h500.jpg
 oclc: 1423297030
 publisher: "Publication Committee of the Selected Works of Korean"
