@@ -28,4 +28,4 @@ From the austere "Zen" meditation traditions to the devotional "Pure Land" sects
 Japanese Mahāyāna's distinctive forms emerged in the tumultuous Kamakura period (1185-1333)
 and were consolidated and formalized during the feudal Edo (1603–1868).
 During the Meiji Revolution (1868–1912), Buddhism was persecuted and celibacy abolished:
-a devastating blow to the various Buddhist schools softened somewhat by their conviction that "original enlightenment" (本覺 *hongaku*) is available to all.
+a devastating blow to the various Buddhist schools softened somewhat by their conviction that "original enlightenment" (本覺 *hongaku*) remains available to all, even in this "degenerate age" (末法 *mappō*).
