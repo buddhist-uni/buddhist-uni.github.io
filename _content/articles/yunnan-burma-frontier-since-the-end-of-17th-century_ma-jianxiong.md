@@ -13,7 +13,7 @@ tags:
   - sea
   - medieval
 year: 2011
-journal: "Moussons"
+journal: moussons
 volume: 48
 pages: "65--84" 
 ---
