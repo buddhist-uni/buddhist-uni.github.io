@@ -3,10 +3,11 @@ title: "What Facebook Has Done To Us"
 authors:
   - "Martin Keary"
 external_url: "https://youtu.be/MPyJBJTHyO0"
-course: social
+course: social-media
 tags:
-  - internet
+  - social
   - media
+  - internet
 year: 2024
 month: oct
 minutes: 190
