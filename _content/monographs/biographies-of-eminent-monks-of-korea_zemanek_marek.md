@@ -1,7 +1,7 @@
 ---
 title: "Biographies of Eminent Monks of Korea"
 authors:
-  - "Gakhun (각훈, 覺訓)"
+  - "Gakhun (각훈/ 覺訓)"
   - "Beomhae Gagan"
   - "Geummyeong Bojeong"
 translator: "Marek Zemanek" 

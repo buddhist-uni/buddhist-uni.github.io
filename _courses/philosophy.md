@@ -118,6 +118,7 @@ We start the course proper by talking about the founder and central figure of Bu
 
 {% include content_blurb.html category="articles" slug="cosmology-and-meditation_gethin" %}
 - Rupert Gethin gives us a way of reading Buddhist mythology as a guide to the terrain of meditation.
+- Note that I've removed pages 206–210 from the above PDF as they contain a lengthy digression into Mahāyāna theory irrelevant to our (Theravāda-focused) purposes here. If you're really interested, however, the full article can be found [here](https://www.jstor.org/stable/3176457){:target="_blank"}.
 
 {% include content_blurb.html category="articles" slug="normative-function-of-metatheory_stein-zak" %}
 - Zachary Stein gives us an impassioned defense of asking big questions, and refers obliquely to our own postmodern “noble search” for philosophical grounding.
