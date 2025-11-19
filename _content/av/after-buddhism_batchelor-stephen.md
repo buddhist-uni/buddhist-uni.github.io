@@ -7,7 +7,6 @@ drive_links: ["https://drive.google.com/file/d/17dQ4df5IA5wggp__XAdWZdgxh5YMc1LG
 course: selling
 tags:
   - academic
-  - west
 year: 2016
 month: jan
 publisher: wisdom

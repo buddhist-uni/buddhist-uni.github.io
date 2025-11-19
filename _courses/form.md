@@ -467,6 +467,9 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - Good friendship is essential to our life and practice.
 
+{% include content_blurb.html category="av" slug="zen-forms_burk-domyo" %}
+- The rituals, altars, clothing, etc (the “forms”) of Buddhist practice are an essential container for the community and help point us to our own mind.
+
 ##### Cintita Chapter 2: The Physiology of the Sāsana
 
 [CBT] Th.87
