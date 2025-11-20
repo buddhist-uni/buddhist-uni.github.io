@@ -1,5 +1,5 @@
 ---
-title: "Zen Forms"
+title: "Zen Forms: Customs and Rituals and Why They Matter"
 authors:
   - "Domyo Burk"
 subcat: podcast

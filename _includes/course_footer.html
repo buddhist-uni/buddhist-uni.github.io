@@ -41,6 +41,7 @@
 {%- assign all_content = all_content | where_exp: "c", filter_exp -%}
 {%- if all_content.size > 0 -%}
 <h2 id="further-reading">Further Reading</h2>
+<p>To dive deeper into some of the aspects we've only touched on briefly in this course, here are some recommended...</p>
 {% for catentry in categories %}
   {% assign category = site.categories | where: "slug", catentry %}
   {% if category.size == 1 %}
