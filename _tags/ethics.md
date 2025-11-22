@@ -7,7 +7,7 @@ illustration: https://illeakyw.sirv.com/Images/banners/guanyin-taming.jpeg
 illustration_height: 1023
 illustration_width: 736
 illustration_caption: >-
-  A statue of the Bodhisattva Avalokitesvara fearlessly taming a dragon in the Buddha Tooth Relic Temple, Singapore representing our ability to control ourselves with mindfulness.
+  A statue of the Bodhisattva Avalokitesvara fearlessly taming a dragon in the Buddha Tooth Relic Temple, Singapore represents our own ability to tame our demons with mindfulness.
   Photo by <a href="https://commons.wikimedia.org/wiki/File:050_Lin_Wei_Long,_Fearless_Avalokitesvara_(35187992905).jpg">Anandajoti Bhikkhu</a> (<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>)
 illustration_center_x: 25%
 illustration_center_y: 25%

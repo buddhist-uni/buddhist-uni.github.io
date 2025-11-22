@@ -2,7 +2,7 @@
 title: "An Elephant Good To Think: The Buddha in Pārileyyaka Forest"
 authors:
   - "Reiko Ohnuma"
-external_url: " https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078166&sid="
+external_url: "https://poj.peeters-leuven.be/secure/POJ/purchaseform.php?id=3078166&sid="
 drive_links:
   - "https://drive.google.com/file/d/1Iul471rmFmqXKk3HyKb0BFvztAzDfg-x/view?usp=sharing"
 file_links:
