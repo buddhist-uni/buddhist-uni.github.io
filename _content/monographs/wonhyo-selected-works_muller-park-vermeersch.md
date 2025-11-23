@@ -16,7 +16,7 @@ olid: OL60565256M
 publisher: "Jogye Order of Korean Buddhism"
 address: "Republic of Korea"
 number: 1
-series: "Collected Works of Korean Buddhism"
+series: cwkb_jogye
 ---
 
 > Wonhyo examined the broad range of Mahāyāna doctrines in a systematic,
