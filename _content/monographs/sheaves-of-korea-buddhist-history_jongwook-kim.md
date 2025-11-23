@@ -12,6 +12,7 @@ tags:
   - east-asian-roots
 year: 2016
 series: "Collected Works of Modern Korean Buddhism"
+number: 3
 publisher: "Jogye Order of Korean Buddhism"
 address: "Seoul"
 pages: 222
