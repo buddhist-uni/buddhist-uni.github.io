@@ -12,7 +12,7 @@ year: 2012
 month: jun
 olid: OL60557309M
 publisher: "Jogye Order"
-series: "Collected Works of Korean Buddhism"
+series: cwkb_jogye
 number: 8
 ---
 
