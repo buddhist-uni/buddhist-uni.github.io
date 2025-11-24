@@ -15,6 +15,7 @@ series: "Collected Works of Modern Korean Buddhism"
 number: 3
 publisher: "Jogye Order of Korean Buddhism"
 address: "Seoul"
+olid: OL60687093M
 pages: 222
 ---
 

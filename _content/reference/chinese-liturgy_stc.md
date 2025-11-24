@@ -2,7 +2,6 @@
 title: "The (Chinese) Buddhist Liturgy"
 editor: "Lok To"
 publisher: "The Sutra Translation Committee of the United States and Canada"
-source_url: "http://ftp.budaedu.org/ebooks/pdf/CE002.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1zgVScduiFbmHVwfhPt6AkB9M-bkrHQEd/view?usp=drivesdk"
 file_links:

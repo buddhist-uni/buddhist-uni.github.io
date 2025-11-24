@@ -2,7 +2,7 @@
 title: "Precepts and the Calculation of Time: The Case of the Buddhist Monk Yixing"
 authors:
   - "Ru Zhan 湛如"
-external_url: "https://glorisunglobalnetwork.org/wp-content/uploads/2023/06/hualin5.2_zhan.pdf"
+external_url: "https://glorisunglobalnetwork.org/wp-content/uploads/2023/08/hualin5.2_zhan.pdf"
 source_url: "https://dx.doi.org/10.15239/hijbs.05.02.07"
 drive_links:
   - "https://drive.google.com/file/d/1p-6ojEC1hBBZw17fzr10NXictYcpGJ-e/view?usp=drivesdk"

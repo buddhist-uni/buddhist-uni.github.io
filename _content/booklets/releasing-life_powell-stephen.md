@@ -2,7 +2,6 @@
 title: "Releasing Life: An Ancient Buddhist Practice in the Modern World"
 authors:
   - "Stephen Powell"
-source_url: "http://ftp.budaedu.org/ebooks/pdf/EN175.pdf"
 external_url: "https://archive.org/download/releasing-life-stephen-powell/Releasing%20LIfe%20-%20Stephen%20Powell_text.pdf"
 formats: [pdf]
 drive_links:

@@ -1,7 +1,7 @@
 ---
 title: "Merit-Making or Financial Fraud: Litigating Buddhist Nuns in Early 10th-Century Dunhuang"
 authors: ["Chuilan Liu"]
-external_url: "https://scholar.harvard.edu/files/cuilanliu/files/jiabs41006.pdf"
+external_url: "https://poj.peeters-leuven.be/content.php?id=3285742&url=article"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1bb9ZOvLpm27_FgBi1qXj0Kli4UkSaMdB/view?usp=drivesdk"]
 year: 2018

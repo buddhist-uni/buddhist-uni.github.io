@@ -4,7 +4,6 @@ authors:
   - buddharakkhita
 external_url: "https://www.bps.lk/olib/bp/bp203s_Buddharakkhita_Dhammapada.pdf"
 olid: OL27279597M
-source_url: "http://ftp.budaedu.org/ebooks/pdf/EN182.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1ut8kfwjoWTp3pQsRyAlIQy6gfFrGkdIV/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rTGTjO0VnCZDFeyPgBvd_kCvRAJOgmRb/view?usp=drivesdk"

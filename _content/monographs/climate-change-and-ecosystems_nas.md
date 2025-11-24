@@ -3,7 +3,7 @@ title: "Climate Change and Ecosystems"
 authors:
   - "The National Academy of Sciences"
   - "The Royal Society"
-external_url: "https://nap.nationalacademies.org/25504"
+source_url: "https://nap.nationalacademies.org/25504"
 drive_links:
   - "https://drive.google.com/file/d/1RswcgeIEEbwPhpq5XmFeWRttV8WEkNP7/view?usp=drivesdk"
 file_links:

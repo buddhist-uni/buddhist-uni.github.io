@@ -2,7 +2,6 @@
 title: "Explorations of Misfortune in the Buddha's Life: the Buddha's Misdeeds in His Former Lives and Their Remnants"
 authors:
   - "Stephan Hillyer Levitt"
-source_url: "https://ftp.budaedu.org/ebooks/pdf/EN310.pdf"
 external_url: "https://scdd.sfo2.digitaloceanspaces.com/uploads/original/3X/e/3/e35b29e95ae2280a37a9770e9be070a64dff8369.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1JqIHCTPVsOjgFttP2zUZICD_iMEhtQbu/view?usp=drivesdk"

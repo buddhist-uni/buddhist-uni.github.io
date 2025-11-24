@@ -5,7 +5,6 @@ authors:
   - "Bhikshuni Heng Tao"
 editor: "Bhikshuni Heng Ming and Upasika Susan Kuo-Tsai Rounds"
 external_url: "https://archive.org/download/en-317_cherishing-life/EN317_text.pdf"
-source_url: "https://ftp.budaedu.org/ebooks/pdf/EN317.pdf"
 tags:
   - animals
   - vegetarianism

@@ -26,4 +26,4 @@ parallels: []
 
 > May the Buddha not be hot or cold, nor be bothered by flies ...
 
-Shortly after the Buddha’s awakening, [Nāga Mucalinda](https://en.wikipedia.org/wiki/Mucalinda) protects him from a storm—a striking image that would [inspire artists](https://www.metmuseum.org/art/collection/search/77730) for thousands of years.
+Shortly after the Buddha’s awakening, [Nāga Mucalinda](https://en.wikipedia.org/wiki/Mucalinda) protects him from a storm—a striking image that would [inspire artists](https://www.metmuseum.org/art/collection/search/39100) for thousands of years.

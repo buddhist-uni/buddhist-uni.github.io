@@ -2,7 +2,6 @@
 title: "Sharing Buddhism in the Western World"
 authors:
   - piyananda
-source_url: "http://ftp.budaedu.org/ebooks/pdf/EN450.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1gchedyfF3IMZ6oV5BuZ7N9egj5mwwMLO/view?usp=drivesdk"
 file_links:
