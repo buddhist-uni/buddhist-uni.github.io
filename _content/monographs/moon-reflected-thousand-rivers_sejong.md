@@ -14,7 +14,7 @@ tags:
   - paper
 year: 2023
 month: oct
-# olid: OL58661342M buggy
+olid: OL58661342M
 publisher: "Jogye Order of Korean Buddhism"
 address: "Korea"
 series: "The Selected Works of Korean Buddhism"
@@ -29,4 +29,4 @@ The brahmin said:
 “I come from Dunnivittha,  
 And I am begging for two children.”  
 
-A translation of Worin cheongang jigok by Sejon the Great, the fourth monarch of the Koreanic state Joseon. The work celebrates the life of Shakyamuni Buddha and his merits, and noted for being written in vernacular Korean.
+A translation of Worin cheongang jigok by Sejon the Great, the fourth monarch of the Koreanic state Joseon. The work celebrates the life of Shakyamuni Buddha and is noted for being one of the first works printed in vernacular Korean.
