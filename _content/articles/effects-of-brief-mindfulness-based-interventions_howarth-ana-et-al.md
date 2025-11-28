@@ -23,4 +23,4 @@ openalexid: W2946943964
 
 > Despite heterogeneity of outcomes across studies, there is evidence that brief MBIs can impact numerous health-related outcomes after only one session and with interventions as brief as 5 min.
 
-This meta-analysis of 85 meditation interventions shows that even a small amount of meditation in beneficial.
+This meta-analysis of 85 meditation interventions shows that even a small amount of meditation is beneficial.
