@@ -19,5 +19,5 @@ openalexid: W3159443544
 ---
 
 > Scholars of Chinese Buddhism have given much attention to vilified foodstuffs such as meat and pungent vegetables and less attention to celebrated foods.
-> While proscriptions are important for their role in constructing boundaries used in group identification, we should not overlook the celebration of particular foods such as congee (zhōu 粥).
+> While proscriptions are important for their role in constructing boundaries used in group identification, we should not overlook the celebration of particular foods such as congee (*zhōu* 粥).
 
