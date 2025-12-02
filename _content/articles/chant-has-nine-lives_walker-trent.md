@@ -25,4 +25,5 @@ openalexid: W3083316567
 >  1. the translation may be longer than its source, but rarely vice versa
 >  2. even when translated into the vernacular, the Pali source ought to be retained, and
 >  3. the resulting bilingual Pali-vernacular chant should bring its performance practices—gestures, melodies, and rhythms—into harmony.  
+> 
 > These principles are crucial for understanding the historical processes that made the transmission of Theravada Buddhism across Southeast Asia possible.
