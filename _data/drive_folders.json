@@ -931,12 +931,12 @@
   "private": "https://drive.google.com/drive/folders/1ejvV9iShy4jo1A0VRf2J_nnsTny8-QFQ",
   "public": ""
  },
- "electrical-engineering": {
-  "private": "https://drive.google.com/drive/folders/11berNTkkyCRhKup_8fYdjmc-qphldUb7",
-  "public": ""
- },
  "elections": {
   "private": "https://drive.google.com/drive/folders/1RSpvAugrhOdzOFEpETzcY6-rFbFzq8u-",
+  "public": ""
+ },
+ "electrical-engineering": {
+  "private": "https://drive.google.com/drive/folders/11berNTkkyCRhKup_8fYdjmc-qphldUb7",
   "public": ""
  },
  "electricity": {
@@ -1143,6 +1143,10 @@
   "private": "https://drive.google.com/drive/folders/1nsEhy4xstpVkycs5XkEnY4nFZ7YuqkPg",
   "public": ""
  },
+ "gilded-age": {
+  "private": "https://drive.google.com/drive/folders/1tioK39_md5eXfhFmxdWiYPEbrzKVrrn7",
+  "public": null
+ },
  "globalization": {
   "private": "https://drive.google.com/drive/folders/1alayj8MBYPEsh1dUwr3giryT_QdGi1mQ",
   "public": ""
@@ -1213,6 +1217,10 @@
  },
  "hearing": {
   "private": "https://drive.google.com/drive/folders/1FRlmhLRjttbpby6v29dhJ2US-ncu7oX6",
+  "public": null
+ },
+ "heian": {
+  "private": "https://drive.google.com/drive/folders/1D5Z-5Zf9ySj8XtkFhGK3alrXpreGHfIg",
   "public": null
  },
  "heian-japan": {
@@ -1306,6 +1314,10 @@
  "imperial-showa": {
   "private": "https://drive.google.com/drive/folders/1delBD2JjIcUjgv98XGyc_uZ-p-Ue4kgV",
   "public": ""
+ },
+ "inca": {
+  "private": "https://drive.google.com/drive/folders/1JDgV5OQW-bsxRiURNF_MJF8ZUJFvaaLL",
+  "public": null
  },
  "indexing": {
   "private": "https://drive.google.com/drive/folders/1qSCKJiU9A5RJC_FF6UeAAV7tZrjvAMlq",
@@ -1611,6 +1623,10 @@
   "private": "https://drive.google.com/drive/folders/1gXR6veLZTCLG-sRypUeq310JfoLJ62_Q",
   "public": null
  },
+ "lakota": {
+  "private": "https://drive.google.com/drive/folders/1GBFwNsHWLZzALngALTRpfe4GPdWXE7Hz",
+  "public": null
+ },
  "language": {
   "private": "https://drive.google.com/drive/folders/1JjDnpzSyNxxW4r3eZHX7F-uMPb0MAir6",
   "public": "https://drive.google.com/drive/folders/1SeGibDk-ei96V1sXvJdCvUQrQC7TC7n2"
@@ -1823,6 +1839,10 @@
   "private": "https://drive.google.com/drive/folders/1c1OkgkgJUA8hqlP8pq3QkuqjCUvS6uuI",
   "public": "https://drive.google.com/drive/folders/1YdWpHmkfslryB8oDbMMMrj2as4ox0Qp5"
  },
+ "meiji": {
+  "private": "https://drive.google.com/drive/folders/13HrRP9DrT98RXgnnYAeWnAs9QUeuVlbj",
+  "public": null
+ },
  "meiji-japan": {
   "private": "https://drive.google.com/drive/folders/13HrRP9DrT98RXgnnYAeWnAs9QUeuVlbj",
   "public": ""
@@ -1845,6 +1865,10 @@
  },
  "mexico": {
   "private": "https://drive.google.com/drive/folders/1PemvqJBdMZcHf6lXoQNr_DF6Do7GHHtC",
+  "public": null
+ },
+ "michigan": {
+  "private": "https://drive.google.com/drive/folders/1gxeUBPPy3UP-96FEYe6xqKqhKgi-sYdq",
   "public": null
  },
  "microbiology": {
@@ -3334,6 +3358,10 @@
  "wider": {
   "private": "https://drive.google.com/drive/folders/166UtsWE6TP8oNW9A4jhTMWrnVLZYRsbn",
   "public": "https://drive.google.com/drive/folders/1LNeb7DWI0Ov89DTHqtq_bY3Ma3gaf2uX"
+ },
+ "wisconsin": {
+  "private": "https://drive.google.com/drive/folders/1LxYKM2dq892gmA0PuAxuPAMlpOFU9Y3_",
+  "public": null
  },
  "with-brahmins": {
   "private": "https://drive.google.com/drive/folders/1oFfutf3mAjPappM2yxGNyZM-XEd93DIi",
