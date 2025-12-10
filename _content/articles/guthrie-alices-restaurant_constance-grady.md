@@ -2,7 +2,7 @@
 title: "The true story behind Arlo Guthrie’s Thanksgiving staple, “Alice’s Restaurant”"
 authors:
   - "Constance Grady"
-external_url: "https://www.vox.com/culture/2018/11/21/18104601/alices-restaurant-arlo-guthrie-thanksgiving"
+external_url: "https://web.archive.org/web/2020/https://www.vox.com/culture/2018/11/21/18104601/alices-restaurant-arlo-guthrie-thanksgiving"
 drive_links:
   - "https://drive.google.com/file/d/1Nsq5JoN_7W4Xx0AFHjLtY2hTmnA1zst2/view?usp=sharing"
 course: karma

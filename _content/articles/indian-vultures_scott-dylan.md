@@ -2,7 +2,7 @@
 title: "When vultures died off in India, people died too"
 authors:
   - "Dylan Scott"
-external_url: "https://www.vox.com/future-perfect/364277/india-vultures-human-health-deaths-study"
+external_url: "https://web.archive.org/web/2024/https://www.vox.com/future-perfect/364277/india-vultures-human-health-deaths-study"
 course: wider
 tags:
   - ecosystems

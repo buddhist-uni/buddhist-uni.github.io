@@ -2,7 +2,7 @@
 title: "Trans people deserve better journalism"
 authors:
   - "Aja Romano"
-external_url: "https://www.vox.com/culture/23652475/trans-issues-in-the-media-healthcare-disinformation"
+external_url: "https://web.archive.org/web/2023/https://www.vox.com/culture/23652475/trans-issues-in-the-media-healthcare-disinformation"
 drive_links:
   - "https://drive.google.com/file/d/1PTYnpNowPjBSEjq-pXmmwRBa2THr3HVx/view?usp=drivesdk"
 course: journalism

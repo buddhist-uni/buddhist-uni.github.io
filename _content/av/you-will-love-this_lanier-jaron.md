@@ -4,7 +4,8 @@ authors:
   - "Jaron Lanier"
   - "Ezra Klein"
 subcat: podcast
-external_url: "https://www.vox.com/2018/1/16/16897738/jaron-lanier-interview"
+external_url: "https://podcasts.apple.com/us/podcast/you-will-love-this-conversation-with-jaron-lanier-but/id1081584611?i=1000399882792"
+source_url: "https://www.vox.com/2018/1/16/16897738/jaron-lanier-interview"
 status: featured
 course: future
 tags:

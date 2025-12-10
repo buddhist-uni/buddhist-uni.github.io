@@ -2,7 +2,7 @@
 title: "The NBA, China, and the Hong Kong protests"
 authors:
   - "Matthew Yglesias"
-external_url: "https://www.vox.com/2019/10/7/20902700/daryl-morey-tweet-china-nba-hong-kong"
+external_url: "https://web.archive.org/web/2020/https://www.vox.com/2019/10/7/20902700/daryl-morey-tweet-china-nba-hong-kong"
 drive_links:
   - "https://drive.google.com/file/d/1vrjWXhlX128jygbWW1H18PrbdlpsS5tn/view?usp=drivesdk"
 course: communication

@@ -2,7 +2,7 @@
 title: "It's okay to suck when you try something new"
 authors:
   - "Allie Volpe"
-external_url: "https://www.vox.com/even-better/23979535/permission-to-suck-terrible-hobbies"
+external_url: "https://web.archive.org/web/2023/https://www.vox.com/even-better/23979535/permission-to-suck-terrible-hobbies"
 drive_links:
   - "https://drive.google.com/file/d/17TcJ7kr1f1uD-b2NgT8lNAwNMSu2fybv/view?usp=drivesdk"
 course: world

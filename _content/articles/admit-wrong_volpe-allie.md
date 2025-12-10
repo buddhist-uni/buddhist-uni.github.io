@@ -2,7 +2,7 @@
 title: "How to admit you’re wrong"
 authors:
   - "Allie Volpe"
-external_url: "https://www.vox.com/even-better/23198698/how-to-admit-youre-wrong"
+external_url: "https://web.archive.org/web/20230921202422/https://www.vox.com/even-better/23198698/how-to-admit-youre-wrong"
 drive_links:
   - "https://drive.google.com/file/d/1b_gT5so0Zktzj-_IKhbuDZ5vVTDuS7Xi/view?usp=drivesdk"
 course: communication

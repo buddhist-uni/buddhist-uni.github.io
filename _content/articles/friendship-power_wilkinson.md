@@ -2,7 +2,7 @@
 title: "The radical political power of friendship"
 authors:
   - "Alissa Wilkinson"
-external_url: "https://www.vox.com/the-highlight/23191518/book-excerpt-salty-friendship-cooking-social-society"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/the-highlight/23191518/book-excerpt-salty-friendship-cooking-social-society"
 drive_links:
   - "https://drive.google.com/file/d/1vP1xhQNwD588QVGO265b49FQOQrq80TN/view?usp=drivesdk"
 course: social

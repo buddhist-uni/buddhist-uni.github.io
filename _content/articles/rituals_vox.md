@@ -2,7 +2,7 @@
 title: "How rituals can help you approach basic tasks more mindfully"
 authors:
   - "Terry Nguyen"
-external_url: "https://www.vox.com/even-better/23144784/why-rituals-not-routine"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/even-better/23144784/why-rituals-not-routine"
 drive_links:
   - "https://drive.google.com/file/d/1V4hQQvTFeni15g7sxO4EfiDbTEvVlaEe/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1N7b6OEzUibWnAIhqa6nuqupLN2Mp8NGX/view?usp=drivesdk"

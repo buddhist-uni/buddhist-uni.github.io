@@ -2,7 +2,7 @@
 title: "It’s hard to be a moral person. Technology is making it harder."
 authors:
   - "Sigal Samuel"
-external_url: "https://www.vox.com/the-highlight/22585287/technology-smartphones-gmail-attention-morality"
+external_url: "https://web.archive.org/web/2021/https://www.vox.com/the-highlight/22585287/technology-smartphones-gmail-attention-morality"
 course: inner
 tags:
   - communication

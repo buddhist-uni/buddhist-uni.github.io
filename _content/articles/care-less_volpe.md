@@ -2,7 +2,7 @@
 title: "The Case for Caring Less"
 authors:
   - "Allie Volpe"
-external_url: "https://www.vox.com/even-better/23216083/caring-less-perfectionism-small-stuff"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/even-better/23216083/caring-less-perfectionism-small-stuff"
 drive_links:
   - "https://drive.google.com/file/d/1nhRXXY3AqcSUvCXWR-wjrkx0OdXHoqK0/view?usp=drivesdk"
 course: time

@@ -3,7 +3,7 @@ title: "What keeping secrets does to you"
 authors:
   - "Michael Slepian"
 editor: "Sean Illing"
-external_url: "https://www.vox.com/23272666/psychology-secrets-lying-privacy-michael-slepian"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/23272666/psychology-secrets-lying-privacy-michael-slepian"
 drive_links:
   - "https://drive.google.com/file/d/1d6RsbSwJOKFPZPO6XnhQGkj8CkNKqPDv/view?usp=drivesdk"
 course: groups
