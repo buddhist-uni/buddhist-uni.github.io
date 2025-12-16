@@ -1,9 +1,8 @@
 ---
 title: "Tibetan Buddhism"
-status: unpublished
+status: published
 hashtag: tibet
 parents: [tantric, tibet]
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/Buddhist_monks_of_Tibet2.jpg
 illustration_height: 857
 illustration_width: 1280
@@ -20,9 +19,9 @@ illustration_caption: >-
 image: https://illeakyw.sirv.com/Images/banners/raimond-klavins-98qNWrq9wFE-unsplash.jpg
 image_width: 2400
 image_height: 1600
-# big_image: https://unsplash.com/photos/98qNWrq9wFE/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQ5MzY0NjQyfA&force=true
-# big_height: 3456
-# big_width: 5184
+big_image: https://unsplash.com/photos/98qNWrq9wFE/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQ5MzY0NjQyfA&force=true
+big_height: 3456
+big_width: 5184
 footer_info: <a href="https://unsplash.com/photos/yellow-blue-and-red-concrete-building-under-blue-sky-during-daytime-98qNWrq9wFE">Raimond Klavins</a>, <a href="https://unsplash.com/license">Unsplash</a>
 image_center_x: 55%
 image_center_y: 84%

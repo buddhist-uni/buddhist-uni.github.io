@@ -1,9 +1,8 @@
 ---
 title: "Korean Buddhism"
-status: unpublished
+status: published
 parents: [east-asian]
 hashtag: korea
-use_sirv: true
 illustration: https://illeakyw.sirv.com/Images/tags/2008-Buddha's_Birthday-Seoul-01.jpg
 illustration_height: 851
 illustration_width: 1280
@@ -18,9 +17,9 @@ illustration_caption: >-
 image: https://illeakyw.sirv.com/Images/banners/fili-santillan-nMj1eO1hnlw-unsplash.jpg
 image_width: 2400
 image_height: 1600
-# big_image: https://unsplash.com/photos/nMj1eO1hnlw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQ5MzY0MzIwfA&force=true
-# big_height: 3902
-# big_width: 5855
+big_image: https://unsplash.com/photos/nMj1eO1hnlw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQ5MzY0MzIwfA&force=true
+big_height: 3902
+big_width: 5855
 footer_info: <a href="https://unsplash.com/photos/a-view-of-a-city-from-a-park-nMj1eO1hnlw">Fili Santillán</a>, <a href="https://unsplash.com/license">Unsplash</a>
 image_center_x: 27%
 image_center_y: 69%
