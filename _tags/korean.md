@@ -11,7 +11,7 @@ illustration_center_x: 10%
 illustration_center_y: 38%
 illustration_caption: >-
   A procession of Buddhist monks carry lanterns decorated with lotuses and Buddhist scenes
-  walk from their mountain temples to the streets of Seoul for the annual
+  from their mountain temples to the streets of Seoul for the annual
   <a href="https://en.wikipedia.org/wiki/Yeondeunghoe"><i>Yeondeunghoe</i> (연등회)  lantern festival</a>
   in celebration of the Buddha's Birthday (석가탄신일).
   Photo by <a href="https://commons.wikimedia.org/wiki/File:2008-Buddha%27s_Birthday-Seoul-01.jpg">Daniel Love</a>, 2008.
@@ -28,6 +28,6 @@ image_center_y: 69%
 
 Receiving the full range of the Chinese schools since the fourth century,
 Korean Buddhists created their own synthesis particularly integrating
-Chan practice ("Seon 선") with doctrinal study.
+Chan ("Seon 선") practice with doctrinal study.
 After suffering centuries of persecution under the Confucian Joseon Dynasty (1392--1910),
 Buddhism today is a weakened but enduring force in Korean culture and thought.
