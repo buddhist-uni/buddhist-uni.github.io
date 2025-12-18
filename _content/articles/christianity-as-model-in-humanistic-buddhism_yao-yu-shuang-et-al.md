@@ -11,6 +11,7 @@ course: modern
 tags:
   - chinese
   - responding-to-christians
+  - foguangshan
 year: 2018
 journal: bsr
 volume: 34
