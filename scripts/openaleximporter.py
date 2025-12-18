@@ -221,7 +221,7 @@ authors:
     if work['biblio']['issue']:
         if publisherid == publishers.MDPI:
           assert int(work['biblio']['first_page']) == int(work['biblio']['last_page']), f"I expected MDPI article {work['id']} to have first and last page == article number"
-          fd.write(f"number: {int(work['biblio']['first_page'])}")
+          fd.write(f"number: {int(work['biblio']['first_page'])}\n")
         else:
           fd.write(f"number: {work['biblio']['issue']}\n")
     try:
@@ -234,7 +234,7 @@ authors:
       else:
         if category in ('monographs', 'booklets', 'essays', 'reference') or publisherid == publishers.MDPI:
             fd.write("pages: \n")
-        if category in ('articles', 'papers', 'excerpts'):
+        elif category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
     fd.write(f"openalexid: {work['id'].split('/')[-1]}\n---\n\n>")
     abstract = deque(invert_inverted_index(work['abstract_inverted_index']))
