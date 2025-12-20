@@ -8,6 +8,7 @@ source_url: "https://doi.org/10.1558/bsrv.35393"
 drive_links:
   - "https://drive.google.com/file/d/1H8SitR_r_8NN-VdsB0HlYLGyWwg2OkK-/view?usp=drivesdk"
 course: korean
+status: featured
 tags:
   - christianity
   - modern

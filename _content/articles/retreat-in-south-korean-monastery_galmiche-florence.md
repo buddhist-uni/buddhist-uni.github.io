@@ -7,9 +7,11 @@ source_url: "https://doi.org/10.1163/156805810x517661"
 drive_links:
   - "https://drive.google.com/file/d/1_P5pw0FVsJFEapU6RAyIodvs4dUP2yho/view?usp=drivesdk"
 course: modern
+status: featured
 tags:
   - korean
   - sangha
+  - pilgrimage
 year: 2010
 journal: "European Journal of East Asian Studies"
 publisher: "Brill"
