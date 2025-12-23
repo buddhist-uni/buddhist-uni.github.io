@@ -1,9 +1,10 @@
 ---
-title: "Learning more about the Mahāyāna"
+title: "Learning from the Mahāyāna"
 ---
 
-Today, we at OBU are proud to announce four new bibliographies for you on
-Mahāyāna and the human world.
+Happy holidays from the Open Buddhist University!
+As the year comes to an end, we're happy to offer you **four** new sections of [our free library](/library/) on
+the Mahāyāna and the human world.
 
 ## Mahāyāna Buddhism's National Forms
 
@@ -28,15 +29,16 @@ demonstrates for us all how even modern, "secular" forms of Buddhism depend upon
 
 ## The Material World
 
-In addition to our bibliographies on Buddhist topics,
-OBU is also striving to advance understanding of our shared, secular world.
+In addition to our sections on Buddhist topics,
+OBU is also striving to advance understanding of our shared world
+by sharing links to free, secular material as well.
 To that end, this month I am also proud to announce a new section of our library on the history of
 
 - [**Things**](/tags/things)
 
 Yes. Just "things":
 how humans use the material of the environment for
-our own ends and about the impacts that has and how to think about material sustainability.
+our own ends and about the impacts that has and how to think about sustainability.
 
 To highlight just one striking example I learned while putting together this bibliography:
 
@@ -45,7 +47,7 @@ Did you know that burning fossil fuels creates
 from its greenhouse gas effects than it does from the immediate fire?
 I can never burn a paraffin wax candle again without imagining its heat multiplied a hundred-thousand times!
 
-To learn lots more about the stuff of our world, check out the whole bibliography!
+To learn lots more about the stuff of our world, check out the whole bibliography at the link above!
 
 ## Chinese Buddhism
 
