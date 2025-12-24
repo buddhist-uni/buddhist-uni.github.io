@@ -2,12 +2,13 @@
 title: "Why we need rituals, not routines"
 authors:
   - "Terry Nguyen"
-external_url: "https://www.vox.com/even-better/23144784/why-rituals-not-routine"
+external_url: "https://web.archive.org/web/20221224145400/https://www.vox.com/even-better/23144784/why-rituals-not-routine"
 drive_links:
   - "https://drive.google.com/file/d/1V4hQQvTFeni15g7sxO4EfiDbTEvVlaEe/view?usp=sharing"
-course: feelings 
+course: feelings
 tags:
-  - society
+  - nonmaterial-culture
+  - daily-life
 year: 2022
 month: jun
 journal: vox
