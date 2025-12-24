@@ -24,5 +24,5 @@ pages: "153--162"
 
 > To the villager, a person is shaped—he does not shape himself—and, therefore, relating properly to one's environment is of the first importance. You cannot think or will yourself into being a particular kind of person; you can only select and relate wisely to the influences impinging upon you. This implies a sort of limited free will; one can choose among available alternatives, but cannot create new alternatives.
 
-¹ = "*sing waetlom*" = "the environment"  This first sense of "environment" is as the resources that one has around.  
-² = The second sense of "environment" analyzed here is as our context: that which holds and shapes us.
+¹: This first sense of *sing waetlom* ("environment") is as the resources that one has around.  
+²: This second sense of "environment" is as our context—that which holds and shapes us.

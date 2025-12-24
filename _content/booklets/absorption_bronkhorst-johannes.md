@@ -22,4 +22,4 @@ pages: 141
 Objects and activities come to play a role [only] because the mind has the tendency of keeping a record of objects and activities rather than of the states which are the real causes of satisfaction.
 
 An admirable attempt to square Western psychological theories (especially those of Freud) with the Buddha's experience of *jhāna*.
-The two essays in this volume provide novel psychological models which neuroscientists and meditators alike will find provocative and even revelatory as they grapple, each from different angles, with the implications of this incredible state of consciousness.
+The two essays in this volume provide novel psychological models which neuroscientists and meditators alike will find provocative as they grapple with the implications of this incredible state of consciousness.

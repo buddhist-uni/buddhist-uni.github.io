@@ -19,4 +19,4 @@ big_height: 1068
 footer_info: <a href="https://wellcomecollection.org/works/sc4w8ctj/images?id=yq9fnjat">Wellcome Library</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
 ---
 
-Tantric Buddhism, especially the forms native to the Himalayas and to the Tibetan Plateau.
+Esoteric, tantric Buddhism.
