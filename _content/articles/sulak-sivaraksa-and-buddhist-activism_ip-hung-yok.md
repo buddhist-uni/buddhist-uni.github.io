@@ -11,7 +11,6 @@ tags:
   - activism
   - thai
   - becon
-  - intercultural
   - globalization
 year: 2007
 journal: jgb
