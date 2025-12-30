@@ -1,14 +1,16 @@
 ---
 title: "Buddhism and Science"
 authors:
-  - "Ajahn Brahmavamso"
+  - brahm
 external_url: "https://budsas.net/ebud/ebdha340.htm"
+drive_links:
+  - "https://drive.google.com/file/d/1dR5bm_6khmaRIK001Dt94wj38DzmPPeW/view?usp=drivesdk"
 course: modern
 tags:
   - view
 year: 2001
 month: oct
-pages: 23
+pages: 12
 ---
 
 > Part of the problem with science is that it is all 'out there'. It's always a person looking through the telescope, looking at the apparatus, but never reflecting back to see who is actually looking at all this. Who is doing this?
