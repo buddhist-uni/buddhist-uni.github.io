@@ -17,7 +17,7 @@ pages: "32--34"
 > Ultimately, then, religions derive their power
 from the depth of their spirituality. The power
 of Zen, for example, flows out of Tokusan's
-"Thirty Blows" or Rinzai's "Katsu!" or Joshtu's
+"Thirty Blows" or Rinzai's "Katsu!!!" or Joshtu's
 "Mu" ("Emptiness"). The power of Shodo Shinshu also originates from one single point of
 absolute depth: from the nembutsu.
 
