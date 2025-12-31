@@ -9,7 +9,8 @@ course: modern
 tags:
   - east-asian
 year: 1985
-journal: 
+journal: pw
+volume: 2
 series: 1
 pages: "32--34"
 ---
@@ -17,8 +18,8 @@ pages: "32--34"
 > Ultimately, then, religions derive their power
 from the depth of their spirituality. The power
 of Zen, for example, flows out of Tokusan's
-"Thirty Blows" or Rinzai's "Katsu!! '"' or Josltu's
+"Thirty Blows" or Rinzai's "Katsu!! or Joshtu's
 "Mu" ("Emptiness"). The power of Shodo Shinshu also originates from one single point of
-absolute depth: from the nembutsu
+absolute depth: from the nembutsu.
 
 Unno examines how religious power and influence emerge from deep inner spirituality rather than external institutions, illustrated through historical figures in Zen and Jōdo Shinshū Buddhism.
