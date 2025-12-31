@@ -28,7 +28,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
   * and [his old blog](https://sdhammika.blogspot.com/) (now discontinued)
 * [Reading Faithfully](https://readingfaithfully.org/sutta-pitaka-e-books-epub-mobi-kindle/){:data-slug="rf"}
 * [BuddhaDust](https://buddhadust.net){:data-slug="Mike Olds"}
-  - [Bhikkhu Subhuti's PTS EBooks](https://github.com/bksubhuti/buddhadust/tree/master/pts-ebooks){:data-slug="subhuti"}
+  - [Bhikkhu Subhuti's PTS EBooks](https://americanmonk.org/free-pts-sutta-ebooks/){:data-slug="subhuti"}
 </div>
 
 <div markdown="1" data-link-type="schools">
