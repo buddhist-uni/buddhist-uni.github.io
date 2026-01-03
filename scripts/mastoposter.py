@@ -4,7 +4,6 @@
 from datetime import datetime
 import json
 from mastodon import Mastodon
-import tweepy
 import re
 import os
 from urllib.parse import urlparse
@@ -263,20 +262,6 @@ if __name__ == "__main__":
   print("::group::Mastodon Response")
   print(json.dumps(masto_info, indent=2, default=str))
   print("::endgroup::", flush=True)
-  twitterror = None
-  try:
-      client = tweepy.Client(
-        consumer_key=os.getenv("X_CONSUMER_KEY"),
-        consumer_secret=os.getenv("X_CONSUMER_SECRET"),
-        access_token=os.getenv("X_ACCESS_TOKEN"),
-        access_token_secret=os.getenv("X_ACCESS_TOKEN_SECRET"),
-      )
-      x_resp = client.create_tweet(text=write_post_for_item(filtered_content[idx_to_post], charlimit=280))
-      print("::group::Twitter Response")
-      print(json.dumps(x_resp, indent=2, default=str))
-      print("::endgroup::", flush=True)
-  except Exception as e:
-      twitterror = e
   
   client = BskyClient()
   print("Posting to BlueSky...")
@@ -286,8 +271,6 @@ if __name__ == "__main__":
   hashtags = hashtag_facets_for_text(text)
   client.send_post(text=text, facets=hashtags, embed=embed)
   print("  done")
-  if twitterror:
-      raise twitterror
 
   print("::group::Future Posts")
   while idx_to_post < len(filtered_content) - 1:
