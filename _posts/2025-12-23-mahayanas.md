@@ -66,7 +66,7 @@ But, to hold over all you Sinophiles until then,
 [here is a beautiful documentary about the hermits of the Zhongnan Mountains](/content/av/amongst-white-clouds_burger-edward)
 which is well worth a (re)watch this holiday season!
 
-Wishing you [a new year filled with 🪶 hope 🪶.](/content/av/to-the-new-year_poetry-for-all).
+Wishing you [a new year filled with 🪶 hope 🪶](/content/av/to-the-new-year_poetry-for-all).
 
 Your librarian,  
 Khemarato Bhikkhu  

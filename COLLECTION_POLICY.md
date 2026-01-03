@@ -8,7 +8,7 @@ This document is primarily for onboarding new contributors, but it may also be o
 
 ## Table of Contents
 - [Overview](#overview)
-- [Inclusion Criteria](#inclusion-criteria)
+- [Inclusion Criteria](#inclusion-criteria-ics)
 - [Acceptance Levels](#acceptance-levels)
 - [The Structure of the Collection](#ontology)
 - [Conclusion](#conclusion)
