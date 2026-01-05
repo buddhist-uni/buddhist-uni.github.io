@@ -99,8 +99,7 @@ class DriveCache:
                 break
         if len(file_ids_removed):
             for fileId in tqdm(file_ids_removed, desc="Trashing gone files"):
-                self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (fileId,))
-                self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (fileId,))
+                self._move_to_trash(fileId)
         file_ids_to_fetch = file_ids_to_fetch - file_ids_removed
         if len(file_ids_to_fetch):
             all_items = gdrive.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
@@ -301,6 +300,45 @@ class DriveCache:
         self.cursor.execute(sql, params)
         rows = self.cursor.fetchall()
         return [dict(row) for row in rows]
+
+
+    def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:
+        """
+        Retrieves all files and folders with the exact name.
+        
+        Args:
+            name: The exact name of the file/folder.
+            
+        Returns:
+            A list of dictionaries, where each is a file/folder item.
+        """
+        sql = "SELECT * FROM drive_items WHERE name = ?"
+        params = (name,)
+        self.cursor.execute(sql, params)
+        rows = self.cursor.fetchall()
+        return [dict(row) for row in rows]
+
+
+    def trash_file(self, file_id: str):
+        """Actually performs the tashing and updates the cache"""
+        gdrive.trash_drive_file(file_id)
+        self._move_to_trash(file_id)
+        self.conn.commit()
+
+    def _move_to_trash(self, file_id: str):
+        self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
+        self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
+    
+
+    def move_file(self, file_id: str, folder: str):
+        folder = gdrive.folderlink_to_id(folder) if folder.startswith("http") else folder
+        self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
+        folder_data = self.cursor.fetchone()
+        if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
+            raise ValueError(f"Folder {folder} not found in cache.")
+        gdrive.move_gfile(file_id, folder)
+        self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
+        self.conn.commit()
 
     def close(self):
         """Commits changes and closes the database connection."""

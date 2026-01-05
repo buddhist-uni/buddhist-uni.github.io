@@ -67,7 +67,8 @@ GFIDREGEX = '([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})'
 LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
 GFIDREGEX = re.compile(GFIDREGEX)
 
-disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
+gcache_folder = git_root_folder.joinpath("scripts/.gcache")
+disk_memorizor = joblib.Memory(gcache_folder, verbose=0)
 
 YTTranscriptAPI = None
 
