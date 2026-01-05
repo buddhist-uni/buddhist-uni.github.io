@@ -58,7 +58,15 @@ class DriveCache:
 
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
-        
+
+        create_users_table_sql = """
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            display_name TEXT NOT NULL,
+            email TEXT NOT NULL UNIQUE
+        );
+        """
+
         create_table_sql = """
         CREATE TABLE IF NOT EXISTS drive_items (
             id TEXT PRIMARY KEY NOT NULL,  -- Google Drive's file/folder ID
@@ -70,7 +78,7 @@ class DriveCache:
             modified_time TEXT NOT NULL,   -- ISO 8601 string
             size INTEGER,                  -- bytes on disk (if any)
             url_property TEXT,             -- The 'url' property if any
-            owner TEXT,                    -- email address
+            owner INTEGER REFERENCES users(id),
             md5_checksum TEXT,
             shortcut_target TEXT           -- id of another drive_item if this item is a shortcut
         );
@@ -88,6 +96,8 @@ class DriveCache:
         ON drive_items (url_property);
         CREATE INDEX IF NOT EXISTS idx_shortcuts
         ON drive_items (shortcut_target);
+        CREATE INDEX IF NOT EXISTS idx_users
+        ON users (email);
         """
 
         # Create the trash table as a copy of the items table's structure
@@ -96,6 +106,7 @@ class DriveCache:
         SELECT * FROM drive_items WHERE 0;
         """
         
+        self.cursor.execute(create_users_table_sql)
         self.cursor.execute(create_table_sql)
         self.cursor.executescript(create_index_sql)
         self.cursor.execute(create_trash_sql)
@@ -114,13 +125,29 @@ class DriveCache:
             self.conn.commit()
         except sqlite3.Error as e:
             print(f"SQLite error upserting item {item_data.get('id')}: {e}")
+    
+
+    def _upsert_user(self, user: Dict[str, str]) -> Optional[int]:
+        if not user or 'emailAddress' not in user:
+            return None
+
+        email = user['emailAddress']
+        self.cursor.execute("SELECT id FROM users WHERE email = ?", (email,))
+        row = self.cursor.fetchone()
+        if row:
+            return row['id']
+
+        self.cursor.execute("INSERT INTO users (display_name, email) VALUES (?, ?)", 
+                          (user.get('displayName', ''), email))
+        return self.cursor.lastrowid
 
     def _upsert_item(self, item_data: Dict[str, Any]):
         try:
             # 'parents' is a list, often just one item. 
             # Root folder might not have a 'parents' key.
             parent_id = item_data.get('parents', [None])[0]
-            owner = item_data.get('owners', [{}])[0]['emailAddress']
+            owner = item_data.get('owners', [{}])[0]
+            owner_id = self._upsert_user(owner)
             size = item_data.get('size', 0)
             url_property = item_data.get('properties', {}).get('url', None)
             mime_type = item_data['mimeType']
@@ -150,7 +177,7 @@ class DriveCache:
                 shortcut_target = excluded.shortcut_target
                 WHERE excluded.version > {table}.version;
             """
-            self.cursor.execute(sql, (item_data['id'], item_data['version'], item_data['name'], item_data.get('originalFilename', None), mime_type, parent_id, item_data['modifiedTime'], size, url_property, owner, item_data.get('md5Checksum', None), shortcut))
+            self.cursor.execute(sql, (item_data['id'], item_data['version'], item_data['name'], item_data.get('originalFilename', None), mime_type, parent_id, item_data['modifiedTime'], size, url_property, owner_id, item_data.get('md5Checksum', None), shortcut))
         except KeyError as e:
             print(f"Missing expected key {e} in item data: {item_data}")
 
