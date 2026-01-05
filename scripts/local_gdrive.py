@@ -129,8 +129,8 @@ class DriveCache:
         );
         """
 
-        create_table_sql = """
-        CREATE TABLE IF NOT EXISTS drive_items (
+        # Schema suitable for both active and trashed items
+        items_schema = """
             id TEXT PRIMARY KEY NOT NULL,  -- Google Drive's file/folder ID
             version INTEGER NOT NULL,
             name TEXT NOT NULL,
@@ -143,8 +143,10 @@ class DriveCache:
             owner INTEGER REFERENCES users(id),
             md5_checksum TEXT,
             shortcut_target TEXT           -- id of another drive_item if this item is a shortcut
-        );
         """
+
+        create_drive_items_sql = f"CREATE TABLE IF NOT EXISTS drive_items ({items_schema});"
+        create_trashed_items_sql = f"CREATE TABLE IF NOT EXISTS trashed_drive_items ({items_schema});"
         
         # Index all the cols we like to select by
         create_index_sql = """
@@ -160,19 +162,17 @@ class DriveCache:
         ON drive_items (shortcut_target);
         CREATE INDEX IF NOT EXISTS idx_users
         ON users (email);
-        """
 
-        # Create the trash table as a copy of the items table's structure
-        create_trash_sql = """
-        CREATE TABLE IF NOT EXISTS trashed_drive_items AS
-        SELECT * FROM drive_items WHERE 0;
+        -- Special index to fix missing PK on existing trashed_drive_items tables
+        -- that were created with 'CREATE TABLE AS SELECT' (which drops constraints)
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_trashed_id ON trashed_drive_items (id);
         """
         
         self.cursor.execute(create_metadata_table_sql)
         self.cursor.execute(create_users_table_sql)
-        self.cursor.execute(create_table_sql)
+        self.cursor.execute(create_drive_items_sql)
+        self.cursor.execute(create_trashed_items_sql)
         self.cursor.executescript(create_index_sql)
-        self.cursor.execute(create_trash_sql)
         self.conn.commit()
 
     def upsert_item(self, item_data: Dict[str, Any]):
