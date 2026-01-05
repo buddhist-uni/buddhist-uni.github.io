@@ -1,0 +1,228 @@
+#!/bin/python3
+
+import sqlite3
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+import gdrive
+
+# Fields as named in the API that we fetch
+FILE_FIELDS_ARRAY = [
+    'id',
+    'version',
+    'name',
+    'originalFilename',
+    'parents',
+    'mimeType',
+    'owners',
+    'properties',
+    'trashed',
+    'modifiedTime',
+    'md5Checksum',
+    'size',
+    'shortcutDetails',
+]
+FILE_FIELDS = ','.join(FILE_FIELDS_ARRAY)
+
+class DriveCache:
+    """
+    Manages a local SQLite cache for Google Drive file/folder metadata.
+
+    This class is designed to be used as a context manager:
+    items = gdrive.all_files_matching(query, FILE_FIELDS)
+    with DriveCache("my_cache.db") as cache:
+        cache.upsert_batch(items)
+    but it can also be used manually:
+    cache = DriveCache("my_cache.db")
+    cache.upsert_item(data)
+    cache.close() # Don't forget to close when you're done!
+
+    Note that this is not thread-safe for writes.
+    Use a unique context for each individual write from within a thread.
+    SQLite itself should ensure the file is locked for each write.
+    """
+
+    def __init__(self, db_path: str | Path):
+        """
+        Connects to the SQLite database.
+        
+        Args:
+            db_path: The file path for the SQLite database.
+        """
+        self.db_path = db_path
+        self.conn = sqlite3.connect(db_path)
+        # Return rows as dictionary-like objects
+        self.conn.row_factory = sqlite3.Row
+        self.cursor = self.conn.cursor()
+        self._create_table()
+
+    def _create_table(self):
+        """Creates the 'drive_items' table if it doesn't exist."""
+        
+        create_table_sql = """
+        CREATE TABLE IF NOT EXISTS drive_items (
+            id TEXT PRIMARY KEY NOT NULL,  -- Google Drive's file/folder ID
+            version INTEGER NOT NULL,
+            name TEXT NOT NULL,
+            original_name TEXT,
+            mime_type TEXT NOT NULL,       -- For shortcuts, the target's mime_type (use shortcutTarget IS NOT NULL to identify shortcuts)
+            parent_id TEXT,                -- The ID of the parent folder
+            modified_time TEXT NOT NULL,   -- ISO 8601 string
+            size INTEGER,                  -- bytes on disk (if any)
+            url_property TEXT,             -- The 'url' property if any
+            owner TEXT,                    -- email address
+            md5_checksum TEXT,
+            shortcut_target TEXT           -- id of another drive_item if this item is a shortcut
+        );
+        """
+        
+        # Index all the cols we like to select by
+        create_index_sql = """
+        CREATE INDEX IF NOT EXISTS idx_mime_type
+        ON drive_items (mime_type);
+        CREATE INDEX IF NOT EXISTS idx_parent_id 
+        ON drive_items (parent_id);
+        CREATE INDEX IF NOT EXISTS idx_md5
+        ON drive_items (md5_checksum);
+        CREATE INDEX IF NOT EXISTS idx_url_prop
+        ON drive_items (url_property);
+        CREATE INDEX IF NOT EXISTS idx_shortcuts
+        ON drive_items (shortcut_target);
+        """
+
+        # Create the trash table as a copy of the items table's structure
+        create_trash_sql = """
+        CREATE TABLE IF NOT EXISTS trashed_drive_items AS
+        SELECT * FROM drive_items WHERE 0;
+        """
+        
+        self.cursor.execute(create_table_sql)
+        self.cursor.executescript(create_index_sql)
+        self.cursor.execute(create_trash_sql)
+        self.conn.commit()
+
+    def upsert_item(self, item_data: Dict[str, Any]):
+        """
+        Inserts or updates a single file/folder item in the cache.
+        Expects 'item_data' to be a dictionary similar to the
+        
+        Args:
+            item_data: A dictionary containing item metadata.
+        """
+        try:
+            self._upsert_item(item_data)
+            self.conn.commit()
+        except sqlite3.Error as e:
+            print(f"SQLite error upserting item {item_data.get('id')}: {e}")
+
+    def _upsert_item(self, item_data: Dict[str, Any]):
+        try:
+            # 'parents' is a list, often just one item. 
+            # Root folder might not have a 'parents' key.
+            parent_id = item_data.get('parents', [None])[0]
+            owner = item_data.get('owners', [{}])[0]['emailAddress']
+            size = item_data.get('size', 0)
+            url_property = item_data.get('properties', {}).get('url', None)
+            mime_type = item_data['mimeType']
+            shortcut = item_data.get('shortcutDetails')
+            if shortcut:
+                mime_type = shortcut['targetMimeType']
+                shortcut = shortcut['targetId']
+            
+            table = 'drive_items'
+            if item_data['trashed']:
+                table = 'trashed_drive_items'
+                self.cursor.execute("DELETE FROM drive_items WHERE id = ? ;", (item_data['id'],))
+
+            sql = f"""
+            INSERT INTO {table} (id, version, name, original_name, mime_type, parent_id, modified_time, size, url_property, owner, md5_checksum, shortcut_target)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id) DO UPDATE SET
+                version = excluded.version,
+                name = excluded.name,
+                mime_type = excluded.mime_type,
+                parent_id = excluded.parent_id,
+                modified_time = excluded.modified_time,
+                size = excluded.size,
+                url_property = excluded.url_property,
+                owner = excluded.owner,
+                md5_checksum = excluded.md5_checksum,
+                shortcut_target = excluded.shortcut_target
+                WHERE excluded.version > {table}.version;
+            """
+            self.cursor.execute(sql, (item_data['id'], item_data['version'], item_data['name'], item_data.get('originalFilename', None), mime_type, parent_id, item_data['modifiedTime'], size, url_property, owner, item_data.get('md5Checksum', None), shortcut))
+        except KeyError as e:
+            print(f"Missing expected key {e} in item data: {item_data}")
+
+    def upsert_batch(self, items_data: List[Dict[str, Any]]):
+        """
+        Efficiently inserts or updates a list of items in a single transaction.
+        
+        Args:
+            items_data: A list of item metadata dictionaries.
+        """
+        try:
+            for item_data in items_data:
+                self._upsert_item(item_data)
+            self.conn.commit()
+        except sqlite3.Error as e:
+            print(f"SQLite error upserting item {item_data.get('id')}: {e}")
+
+    def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Retrieves a single item by its Google Drive ID.
+        
+        Args:
+            file_id: The ID of the file/folder.
+            
+        Returns:
+            A dictionary of the item's data or None if not found.
+        """
+        self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (file_id,))
+        row = self.cursor.fetchone()
+        return dict(row) if row else None
+
+    def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
+        """
+        Retrieves all direct children (files and folders) of a given parent ID.
+        
+        Args:
+            parent_id: The ID of the parent folder.
+            
+        Returns:
+            A list of dictionaries, where each is a child item.
+        """
+        self.cursor.execute("SELECT * FROM drive_items WHERE parent_id = ?", (parent_id,))
+        rows = self.cursor.fetchall()
+        return [dict(row) for row in rows]
+
+    def search_by_name_containing(self, query: str) -> List[Dict[str, Any]]:
+        """
+        Searches for items by name (case-insensitive).
+        
+        Args:
+            query: The search string (e.g., "report").
+            
+        Returns:
+            A list of matching items.
+        """
+        sql = "SELECT * FROM drive_items WHERE name LIKE ?"
+        params = (f"%{query}%",)
+        self.cursor.execute(sql, params)
+        rows = self.cursor.fetchall()
+        return [dict(row) for row in rows]
+
+    def close(self):
+        """Commits changes and closes the database connection."""
+        if self.conn:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
+
+    def __enter__(self):
+        """Context manager entry."""
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        """Context manager exit. Ensures connection is closed."""
+        self.close()
