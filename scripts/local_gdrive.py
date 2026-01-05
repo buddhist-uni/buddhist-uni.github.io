@@ -6,6 +6,9 @@ from typing import List, Dict, Any, Optional
 
 import gdrive
 
+from yaspin import yaspin
+from tqdm import tqdm
+
 # Fields as named in the API that we fetch
 FILE_FIELDS_ARRAY = [
     'id',
@@ -55,9 +58,68 @@ class DriveCache:
         self.conn.row_factory = sqlite3.Row
         self.cursor = self.conn.cursor()
         self._create_table()
+    
+    def refill_all_data(self):
+        """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive."""
+        print("Dropping all data and reloading the GDrive Cache from scratch...")
+        self.cursor.execute("DELETE FROM drive_items")
+        self.cursor.execute("DELETE FROM trashed_drive_items")
+        self.cursor.execute("DELETE FROM metadata")
+        all_files = gdrive.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
+        for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
+            self._upsert_item(file)
+        all_files = gdrive.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
+        for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
+            self._upsert_item(file)
+        changes_page = gdrive.session().changes().getStartPageToken().execute()
+        self.cursor.execute("INSERT INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page['startPageToken'],))
+        self.conn.commit()
+        print("Done filling the GDrive cache!")
+    
+    def update(self):
+        """Performs a full update of the data in the cache."""
+        changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
+        if not changes_page:
+            return self.refill_all_data()
+        with yaspin(text="Pulling latest data from GDrive...") as ys:
+            changes_page = changes_page['value']
+            file_ids_to_fetch = set()
+            file_ids_removed = set()
+            while True:
+                changelist = gdrive.session().changes().list(includeRemoved=True, pageToken=changes_page, pageSize=1000).execute()
+                for change in changelist['changes']:
+                    if change['removed']:
+                        file_ids_removed.add(change['fileId'])
+                    else:
+                        file_ids_to_fetch.add(change['fileId'])
+                if 'nextPageToken' in changelist: # nextPageToken signals there is more to fetch
+                    changes_page = changelist['nextPageToken']
+                    continue
+                changes_page = changelist['newStartPageToken'] # newStartPageToken says come back later for more
+                break
+        if len(file_ids_removed):
+            for fileId in tqdm(file_ids_removed, desc="Trashing gone files"):
+                self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (fileId,))
+                self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (fileId,))
+        file_ids_to_fetch = file_ids_to_fetch - file_ids_removed
+        if len(file_ids_to_fetch):
+            all_items = gdrive.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
+            for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
+                self._upsert_item(item)
+        with yaspin(text="Saving GDrive Cache..."):
+            self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
+            self.conn.commit()
+        print("Done updating GDrive cache!")
 
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
+
+        create_metadata_table_sql = """
+        CREATE TABLE IF NOT EXISTS metadata (
+            key TEXT PRIMARY KEY NOT NULL,
+            value TEXT
+        );
+        """
 
         create_users_table_sql = """
         CREATE TABLE IF NOT EXISTS users (
@@ -106,6 +168,7 @@ class DriveCache:
         SELECT * FROM drive_items WHERE 0;
         """
         
+        self.cursor.execute(create_metadata_table_sql)
         self.cursor.execute(create_users_table_sql)
         self.cursor.execute(create_table_sql)
         self.cursor.executescript(create_index_sql)
