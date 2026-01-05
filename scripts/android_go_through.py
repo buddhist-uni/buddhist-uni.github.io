@@ -95,7 +95,7 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
     elif course == "to-merge":
         import shutil
         gfolder = gdrive.get_gfolders_for_course(course)
-        gcache.move_file(gf['id'], gfolder)
+        gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_MERGE_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
@@ -107,7 +107,7 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
           query = fp.stem.replace("_text", "").split(" -")[0]
           work, _ = prompt_for_work(query.replace("_", " "))
           if work:
-            gcache.move_file(gf['id'], gfolder)
+            gdrive.move_gfile(glink, gfolder)
             filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount)
             print(f"\nOpening {filepath}\n")
             system_open(filepath)
@@ -116,7 +116,7 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
           else:
             print(f"\n\t{glink}\n")
             input("Press enter to move the file and continue with the next one...")
-        gcache.move_file(gf['id'], gfolder)
+        gdrive.move_gfile(glink, gfolder)
         fp.unlink()
     print("")
 
