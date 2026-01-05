@@ -86,7 +86,7 @@ class DriveCache:
             file_ids_to_fetch = set()
             file_ids_removed = set()
             while True:
-                changelist = gdrive.session().changes().list(includeRemoved=True, pageToken=changes_page, pageSize=1000).execute()
+                changelist = gdrive.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
                 for change in changelist['changes']:
                     if change['removed']:
                         file_ids_removed.add(change['fileId'])
