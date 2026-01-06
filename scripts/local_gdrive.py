@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 def UTC_NOW():
     now_utc = datetime.now(timezone.utc)
-    return now_utc.isoformat()
+    return now_utc.isoformat(timespec='milliseconds').replace('+00:00', 'Z')
 
 # Fields as named in the API that we fetch
 FILE_FIELDS_ARRAY = [
@@ -244,6 +244,7 @@ class DriveCache:
         changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
         if not changes_page:
             return self.refill_all_data()
+        original_changes_page = changes_page['value']
         with yaspin(text="Pulling latest data from GDrive...") as ys:
             changes_page = changes_page['value']
             file_ids_to_fetch = set()
@@ -268,10 +269,11 @@ class DriveCache:
             all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
             for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
                 self._upsert_item(item)
-        with yaspin(text="Saving GDrive Cache..."):
-            self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
-            self.conn.commit()
-        print("Done updating GDrive cache!")
+        if original_changes_page != changes_page:
+            with yaspin(text="Saving GDrive Cache..."):
+                self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
+                self.conn.commit()
+            print("Done updating GDrive cache!")
 
     ######
     # Cache read functions
@@ -347,13 +349,22 @@ class DriveCache:
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
 
-    def get_subfolders(self, parent_id: str) -> List[Dict[str, Any]]:
+    def get_subfolders(self, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
+        query = "SELECT * FROM drive_items WHERE parent_id = ? AND mime_type = ?"
+        if not include_shortcuts:
+            query += " AND shortcut_target IS NULL"
         self.cursor.execute(
-            "SELECT * FROM drive_items WHERE parent_id = ? AND mime_type = ?",
+            query,
             (parent_id,'application/vnd.google-apps.folder',)
         )
         rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+        rows = [dict(row) for row in rows]
+        if include_shortcuts:
+            for row in rows:
+                if row['shortcut_target']:
+                    row['id'] = row['shortcut_target']
+                    row['shortcut_target'] = None
+        return [self.row_dict_to_api_dict(row) for row in rows]
 
 
     def search_by_name_containing(self, query: str) -> List[Dict[str, Any]]:

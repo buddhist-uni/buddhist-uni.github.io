@@ -4,9 +4,24 @@ from urllib import parse as url
 from collections import deque
 import os
 import json
-import re
 import shutil
-from strutils import *
+from strutils import (
+   whitespace,
+   trunc,
+   floor,
+   ceil,
+   prompt,
+   title_case,
+   input_with_prefill,
+   get_author_slug,
+   HOSTNAME_BLACKLIST,
+   italics,
+   MONTHS,
+   radio_dial,
+   invert_inverted_index,
+   system_open,
+   print_work,
+)
 import gdrive
 from itertools import chain
 import journals
@@ -316,7 +331,6 @@ def prompt_for_work(query) -> str:
     print_work(work)
     if prompt("Is this the correct work?"):
       return (work, query)
-  return (None, query)
 
 def _main():
   query = ""
@@ -354,7 +368,7 @@ def _main():
     gfile = gdrive.session().files().get(fileId=gdrive.link_to_id(glink),fields='name,parents,id').execute()
     parentid = gfile['parents'][0]
     gfile['course'] = gdrive.get_course_for_folder(parentid)
-  course = input_with_tab_complete("course: ", gdrive.get_known_courses(), prefill=gfile['course'])
+  course = gdrive.input_course_string_with_tab_complete(prefill=gfile['course'])
   folders = gdrive.get_gfolders_for_course(course)
   gdrive.move_gfile(glink, folders)
   filepath = make_library_entry_for_work(work, course=course, glink=glink)

@@ -5,12 +5,20 @@ from strutils import (
   input_with_prefill,
   prompt,
   system_open,
-  input_with_tab_complete,
   sutta_id_re
 )
 from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
-from gdrive import upload_to_google_drive, get_gfolders_for_course, get_known_courses, create_drive_shortcut, DRIVE_LINK, share_drive_file_with_everyone
+from gdrive_base import (
+  upload_to_google_drive,
+  DRIVE_LINK,
+  share_drive_file_with_everyone,
+  create_drive_shortcut,
+)
+from gdrive import (
+  get_gfolders_for_course,
+  input_course_string_with_tab_complete,
+)
 from archivedotorg import save_url_to_archiveorg
 from pdfutils import readpdf, get_page_count
 from tag_predictor import TagPredictor
@@ -269,7 +277,7 @@ def process_pdf(pdf_file):
   eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
   title = f"{sutta} {pali_name}{': '+eng_name if eng_name else ''}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
-  course = input_with_tab_complete("course: ", get_known_courses(), prefill=course)
+  course = input_course_string_with_tab_complete(prefill=course)
   folder_id, shortcut_folder = get_gfolders_for_course(course)
   needs_sharing = False
   if shortcut_folder and not folder_id:

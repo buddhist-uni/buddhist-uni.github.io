@@ -11,11 +11,9 @@ with yaspin(text="Initializing..."):
   from strutils import (
     radio_dial,
     system_open,
-    input_with_tab_complete,
   )
   
   DB_PATH = Path("~/.local/share/go_through_yt.json").expanduser()
-  COURSE_LIST = gdrive.get_known_courses()
   BULK_YT_FOLDERS_NAME = "📼 YouTube Videos"
 
 class YTVideo():
@@ -126,7 +124,7 @@ if __name__ == "__main__":
       continue
     if choice == 0:
       system_open(vid.url)
-    course = input_with_tab_complete("course: ", COURSE_LIST)
+    course = gdrive.input_course_string_with_tab_complete()
     gfolder = gdrive.get_gfolders_for_course(course)
     gdrive.move_gfile(vid.glink(), gfolder)
     queue.mark_previous_completed()

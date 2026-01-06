@@ -2,13 +2,14 @@
 
 import requests
 from datetime import datetime
+import readline
+from typing import Callable
 from math import floor
 import atexit
 from strutils import (
   titlecase,
   git_root_folder,
   input_with_prefill,
-  input_with_tab_complete,
   prompt,
   whitespace,
   yt_url_to_plid_re,
@@ -50,9 +51,60 @@ gcache = local_gdrive.DriveCache(gcache_folder.joinpath("drive.sqlite"))
 gcache.update()
 atexit.register(gcache.close)
 
-def get_known_courses():
+def course_input_completer_factory() -> Callable[[str, int], str]:
+  gfolders: dict[str, dict[str, str]]
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
-  return list(filter(None, gfolders.keys()))
+  suggestions_cache: dict[str, list[str]]
+  suggestions_cache = dict()
+  subfolders_cache = dict()
+  def _ret(so_far: str, suggestion_idx: int) -> str:
+    if so_far not in suggestions_cache:
+      if '/' not in so_far:
+        suggestions_cache[so_far] = [
+          course_name for course_name in gfolders.keys()
+          if course_name and course_name.startswith(so_far)
+        ]
+      else:
+        parts = so_far.split('/')
+        course = parts[0]
+        if course not in gfolders:
+          suggestions_cache[so_far] = []
+        else:
+          links = gfolders[course]
+          flink = links['private'] or links['public']
+          fid = folderlink_to_id(flink)
+          pidx = 1
+          prefix = course
+          while True:
+            subfolders = gcache.get_subfolders(fid)
+            matches = [f for f in subfolders if parts[pidx].lower() in f['name'].lower()]
+            if len(parts) <= pidx + 1:
+              suggestions_cache[so_far] = [f"{prefix}/{f['name']}/" for f in matches]
+              break
+            if len(matches) != 1: # Don't know which, so we better run
+              suggestions_cache[so_far] = []
+              break
+            fid = matches[0]['id']
+            prefix = f"{prefix}/{matches[0]['name']}"
+            pidx += 1
+    return suggestions_cache[so_far][suggestion_idx]
+
+  return _ret
+
+def input_course_string_with_tab_complete(prompt='course: ', prefill=None):
+    prev_complr = readline.get_completer()
+    prev_delims = readline.get_completer_delims()
+    readline.set_completer(course_input_completer_factory())
+    readline.set_completer_delims('')
+    readline.parse_and_bind('tab: complete')
+    if prefill:
+      ret = input_with_prefill(prompt, prefill)
+    else:
+      ret = input(prompt)
+    readline.set_completer(prev_complr)
+    readline.set_completer_delims(prev_delims)
+    return ret
+
 
 def add_tracked_folder(slug, public, private, gfolders=None):
   gfolders = gfolders or json.loads(FOLDERS_DATA_FILE.read_text())
@@ -247,7 +299,7 @@ if __name__ == "__main__":
       )
     else:
       glink_gens.append(lambda r=link: r)
-  course = input_with_tab_complete("course: ", get_known_courses())
+  course = input_course_string_with_tab_complete()
   if course == "trash":
     print("Trashing...")
     for glink_gen in glink_gens:
