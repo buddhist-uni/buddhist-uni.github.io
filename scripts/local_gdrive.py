@@ -185,6 +185,8 @@ class DriveCache:
             if item_data['trashed']:
                 table = 'trashed_drive_items'
                 self.cursor.execute("DELETE FROM drive_items WHERE id = ? ;", (item_data['id'],))
+            else:
+                self.cursor.execute("DELETE FROM trashed_drive_items WHERE id = ? ;", (item_data['id'],))
 
             sql = f"""
             INSERT INTO {table} (id, version, name, original_name, mime_type, parent_id, modified_time, size, url_property, owner, md5_checksum, shortcut_target)
@@ -333,6 +335,20 @@ class DriveCache:
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (file_id,))
         row = self.cursor.fetchone()
         return self.row_dict_to_api_dict(dict(row)) if row else None
+    
+    def get_items_with_md5(self, md5: str) -> List[Dict[str, Any]]:
+        """
+        Retrieves all items with a specific MD5 checksum.
+        
+        Args:
+            md5: The MD5 checksum to search for.
+            
+        Returns:
+            A list of dictionaries, where each is an item with the specified MD5 checksum.
+        """
+        self.cursor.execute("SELECT * FROM drive_items WHERE md5_checksum = ?", (md5,))
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
     def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
         """

@@ -318,3 +318,53 @@ if __name__ == "__main__":
     if len(urls_to_save) > 0:
       print("Ensuring URLs are saved to Archive.org...")
       archive_urls(urls_to_save)
+
+def has_file_already(file_in_question, default="prompt") -> bool:
+  hash, size = file_info(file_in_question)
+  file_in_question = Path(file_in_question)
+  cfs = gcache.get_items_with_md5(hash)
+  if len(cfs) > 0:
+    return True
+  cfs = gcache.files_exactly_named(file_in_question.name)
+  for gf in cfs:
+    if hash == gf['md5Checksum'] or len(gf['name']) > 11:
+      return True
+    else:
+      if default=="prompt":
+        print(f"  Found file with that name sized {gf['size']} instead of {size}.")
+        if prompt("Consider that a match?"):
+          return True
+  if file_in_question.suffix == ".pdf":
+    try:
+      text = pdfutils.readpdf(file_in_question, max_len=1500, normalize=3)
+    except:
+      text = ""
+    if len(text) < 16:
+      # failed to extract text from the PDF
+      return False
+    cfs = my_pdfs_containing(text)
+    for gf in cfs:
+        if hash == gf['md5Checksum'] or approx_eq(size, int(gf['size']), absdiff=512):
+            return True
+        if gf['originalFilename'] == file_in_question.name:
+          if len(gf['originalFilename']) > 9:
+            return True
+          if default=="prompt":
+            print(f"  Found a file now named {gf['name']} sized {gf['size']} instead of {size}.")
+            if prompt("Consider that a match?"):
+              return True
+          else:
+            if default:
+              return True
+    if len(cfs) == 1 and default == "prompt":
+      gf = cfs[0]
+      print(f"  Found file \"{gf['name']}\" with that text sized {gf['size']} instead of {size}.")
+      if prompt("Consider that a match?"):
+        return True
+    if len(cfs) > 1 and default=="prompt":
+      print(f"  Found {len(cfs)} fuzzy matches:")
+      for gf in cfs:
+        print(f"    {gf['name']}")
+      if prompt("Are any of those a match?"):
+          return True
+  return False
