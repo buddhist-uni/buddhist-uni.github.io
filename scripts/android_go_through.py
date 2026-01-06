@@ -4,12 +4,10 @@ with yaspin(text="Initializing..."):
   from strutils import (
     git_root_folder,
     system_open,
-    input_with_tab_complete,
     DelayedKeyboardInterrupt,
     md5,
   )
   
-  course_list = None
   predictor= None
   LOCAL_FOLDER = git_root_folder.joinpath("../To Go Through")
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
@@ -31,7 +29,6 @@ for fp in local_files:
       )
       
       if predictor is None:
-        course_list = gdrive.get_known_courses()
         predictor = TagPredictor.load()
       gfs = gdrive.gcache.files_exactly_named(fp.name)
       gf = None
@@ -82,7 +79,7 @@ for fp in local_files:
         save_normalized_text(gf['id'], text)
       glink = DRIVE_LINK.format(gf['id'])
       course = predictor.predict([text], normalized=True)[0] + "/unread"
-    course = input_with_tab_complete("course: ", course_list, prefill=course)
+    course = gdrive.input_course_string_with_tab_complete(prefill=course)
     if course == "trash":
         print("Trashing...")
         gdrive.gcache.trash_file(gf['id'])
