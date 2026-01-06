@@ -15,6 +15,7 @@ with yaspin(text="Initializing..."):
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = sorted([f for f in LOCAL_FOLDER.iterdir() if f.is_file()], key=lambda f: -f.stat().st_size)
+  import gdrive_base
   import gdrive
   import local_gdrive
   has_updated = False
@@ -85,7 +86,7 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
           text = fp.stem
         text = normalize_text(text)
         save_normalized_text(gf['id'], text)
-      glink = gdrive.DRIVE_LINK.format(gf['id'])
+      glink = gdrive_base.DRIVE_LINK.format(gf['id'])
       course = predictor.predict([text], normalized=True)[0] + "/unread"
     course = input_with_tab_complete("course: ", course_list, prefill=course)
     if course == "trash":

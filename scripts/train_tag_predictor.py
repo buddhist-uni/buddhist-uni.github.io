@@ -28,6 +28,7 @@ from strutils import (
 )
 import website
 from website import ContentFile
+import gdrive_base
 import gdrive
 from pdfutils import readpdf
 from epubutils import read_epub
@@ -102,7 +103,7 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
             new_slug = input("Add it as slug (blank for no): ")
             if new_slug:
                 public_folder = input("Public folder link: ").split('?')[0]
-                gdrive.add_tracked_folder(new_slug, public_folder, gdrive.FOLDER_LINK_PREFIX+subfolder['id'])
+                gdrive.add_tracked_folder(new_slug, public_folder, gdrive_base.FOLDER_LINK_PREFIX+subfolder['id'])
                 SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']] = new_slug
             else:
                 if prompt(f"Consider this folder a part of {slug}? (y=merge, n=ignore) "):

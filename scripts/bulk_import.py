@@ -16,6 +16,7 @@ with yaspin(text="Loading..."):
   import json
   from yaml import load as read_yaml
 
+  import gdrive_base
   import gdrive
   from tag_predictor import (
     TagPredictor,
@@ -596,7 +597,7 @@ def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread
   with yaspin(text=f"Loading all {importer_type} folders..."):
     for folder in all_folders:
       parent = folder['parents'][0]
-      assert parent in unread_id_to_course_name_map, f"{gdrive.FOLDER_LINK_PREFIX}{parent} wasn't found in the predictable unread folders list"
+      assert parent in unread_id_to_course_name_map, f"{gdrive_base.FOLDER_LINK_PREFIX}{parent} wasn't found in the predictable unread folders list"
       course_to_auto_folder[unread_id_to_course_name_map[parent]] = folder['id']
       auto_folder_to_course[folder['id']] = unread_id_to_course_name_map[parent]
   print(f"Got {len(course_to_auto_folder)} {importer_type} folders")

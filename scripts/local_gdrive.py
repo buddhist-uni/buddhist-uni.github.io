@@ -4,7 +4,7 @@ import sqlite3
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
-import gdrive
+import gdrive_base
 
 from yaspin import yaspin
 from tqdm import tqdm
@@ -32,7 +32,7 @@ class DriveCache:
     Manages a local SQLite cache for Google Drive file/folder metadata.
 
     This class is designed to be used as a context manager:
-    items = gdrive.all_files_matching(query, FILE_FIELDS)
+    items = gdrive_base.all_files_matching(query, FILE_FIELDS)
     with DriveCache("my_cache.db") as cache:
         cache.upsert_batch(items)
     but it can also be used manually:
@@ -65,13 +65,13 @@ class DriveCache:
         self.cursor.execute("DELETE FROM drive_items")
         self.cursor.execute("DELETE FROM trashed_drive_items")
         self.cursor.execute("DELETE FROM metadata")
-        all_files = gdrive.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
+        all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
         for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
             self._upsert_item(file)
-        all_files = gdrive.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
+        all_files = gdrive_base.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
         for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
             self._upsert_item(file)
-        changes_page = gdrive.session().changes().getStartPageToken().execute()
+        changes_page = gdrive_base.session().changes().getStartPageToken().execute()
         self.cursor.execute("INSERT INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page['startPageToken'],))
         self.conn.commit()
         print("Done filling the GDrive cache!")
@@ -86,7 +86,7 @@ class DriveCache:
             file_ids_to_fetch = set()
             file_ids_removed = set()
             while True:
-                changelist = gdrive.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
+                changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
                 for change in changelist['changes']:
                     if change['removed']:
                         file_ids_removed.add(change['fileId'])
@@ -102,7 +102,7 @@ class DriveCache:
                 self._move_to_trash(fileId)
         file_ids_to_fetch = file_ids_to_fetch - file_ids_removed
         if len(file_ids_to_fetch):
-            all_items = gdrive.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
+            all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
             for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
                 self._upsert_item(item)
         with yaspin(text="Saving GDrive Cache..."):
@@ -321,7 +321,7 @@ class DriveCache:
 
     def trash_file(self, file_id: str):
         """Actually performs the tashing and updates the cache"""
-        gdrive.trash_drive_file(file_id)
+        gdrive_base.trash_drive_file(file_id)
         self._move_to_trash(file_id)
         self.conn.commit()
 
@@ -331,12 +331,12 @@ class DriveCache:
     
 
     def move_file(self, file_id: str, folder: str):
-        folder = gdrive.folderlink_to_id(folder) if folder.startswith("http") else folder
+        folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
         folder_data = self.cursor.fetchone()
         if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
             raise ValueError(f"Folder {folder} not found in cache.")
-        gdrive.move_gfile(file_id, folder)
+        gdrive_base.move_drive_file(file_id, folder)
         self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
         self.conn.commit()
 

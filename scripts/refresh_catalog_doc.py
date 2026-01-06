@@ -1,10 +1,10 @@
 #!/bin/python
 
 import gdrive
+import gdrive_base
 import datetime
 from collections import defaultdict
 from functools import cache
-import hashlib
 from strutils import git_root_folder, md5
 
 ROOT_FOLDER = "1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv"
@@ -116,7 +116,7 @@ class DriveFolder:
   def list_files(self):
     space = '&nbsp;&nbsp;'*self.depth
     ret = [headerize(
-      f'<a href="{gdrive.FOLDER_LINK_PREFIX}{self.id}">{self.name}</a> <span style="color:#666666;">({human_readable_size(self.total_size())})</span>',
+      f'<a href="{gdrive_base.FOLDER_LINK_PREFIX}{self.id}">{self.name}</a> <span style="color:#666666;">({human_readable_size(self.total_size())})</span>',
       self.depth,
     )]
     for child in self.files:
