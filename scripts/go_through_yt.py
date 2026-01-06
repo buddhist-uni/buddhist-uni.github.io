@@ -6,6 +6,7 @@ with yaspin(text="Initializing..."):
   import random
   import json
   from datetime import datetime, timedelta
+  import gdrive_base
   import gdrive
   from strutils import (
     radio_dial,
@@ -25,7 +26,7 @@ class YTVideo():
   def to_json(self) -> str:
     return json.dumps(self.to_data())
   def glink(self) -> str:
-    return gdrive.DRIVE_LINK.format(self.gid)
+    return gdrive_base.DRIVE_LINK.format(self.gid)
   def to_data(self) -> dict:
     return {
       'title': self.title,
@@ -40,7 +41,7 @@ class YTVideo():
 def get_bulk_yt_folder_ids():
   return {
     folder['id']: folder['parents'][0] for folder in
-    gdrive.all_files_matching(
+    gdrive_base.all_files_matching(
       f"name='{BULK_YT_FOLDERS_NAME}' and trashed=false",
       "id,parents"
     )
@@ -86,7 +87,7 @@ class YTQueueDB():
   def refresh(self) -> None:
     self.bulk_yt_folders = get_bulk_yt_folder_ids()
     self.videos = list()
-    for gdoc in gdrive.all_files_matching(DOCS_QUERY, GDOC_PROPS):
+    for gdoc in gdrive_base.all_files_matching(DOCS_QUERY, GDOC_PROPS):
       if gdoc['parents'][0] not in self.bulk_yt_folders:
         continue
       self.videos.append(YTVideo({
