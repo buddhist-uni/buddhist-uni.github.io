@@ -9,6 +9,12 @@ import gdrive_base
 from yaspin import yaspin
 from tqdm import tqdm
 
+from datetime import datetime, timezone
+
+def UTC_NOW():
+    now_utc = datetime.now(timezone.utc)
+    return now_utc.isoformat()
+
 # Fields as named in the API that we fetch
 FILE_FIELDS_ARRAY = [
     'id',
@@ -59,57 +65,6 @@ class DriveCache:
         self.cursor = self.conn.cursor()
         self._create_table()
     
-    def refill_all_data(self):
-        """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive."""
-        print("Dropping all data and reloading the GDrive Cache from scratch...")
-        self.cursor.execute("DELETE FROM drive_items")
-        self.cursor.execute("DELETE FROM trashed_drive_items")
-        self.cursor.execute("DELETE FROM metadata")
-        all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
-        for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
-            self._upsert_item(file)
-        all_files = gdrive_base.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
-        for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
-            self._upsert_item(file)
-        changes_page = gdrive_base.session().changes().getStartPageToken().execute()
-        self.cursor.execute("INSERT INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page['startPageToken'],))
-        self.conn.commit()
-        print("Done filling the GDrive cache!")
-    
-    def update(self):
-        """Performs a full update of the data in the cache."""
-        changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
-        if not changes_page:
-            return self.refill_all_data()
-        with yaspin(text="Pulling latest data from GDrive...") as ys:
-            changes_page = changes_page['value']
-            file_ids_to_fetch = set()
-            file_ids_removed = set()
-            while True:
-                changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
-                for change in changelist['changes']:
-                    if change['removed']:
-                        file_ids_removed.add(change['fileId'])
-                    else:
-                        file_ids_to_fetch.add(change['fileId'])
-                if 'nextPageToken' in changelist: # nextPageToken signals there is more to fetch
-                    changes_page = changelist['nextPageToken']
-                    continue
-                changes_page = changelist['newStartPageToken'] # newStartPageToken says come back later for more
-                break
-        if len(file_ids_removed):
-            for fileId in tqdm(file_ids_removed, desc="Trashing gone files"):
-                self._move_to_trash(fileId)
-        file_ids_to_fetch = file_ids_to_fetch - file_ids_removed
-        if len(file_ids_to_fetch):
-            all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
-            for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
-                self._upsert_item(item)
-        with yaspin(text="Saving GDrive Cache..."):
-            self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
-            self.conn.commit()
-        print("Done updating GDrive cache!")
-
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
 
@@ -131,7 +86,7 @@ class DriveCache:
         # Schema suitable for both active and trashed items
         items_schema = """
             id TEXT PRIMARY KEY NOT NULL,  -- Google Drive's file/folder ID
-            version INTEGER NOT NULL,
+            version INTEGER NOT NULL,      -- Trust this for data freshness
             name TEXT NOT NULL,
             original_name TEXT,
             mime_type TEXT NOT NULL,       -- For shortcuts, the target's mime_type (use shortcutTarget IS NOT NULL to identify shortcuts)
@@ -202,14 +157,22 @@ class DriveCache:
         self.cursor.execute("INSERT INTO users (display_name, email) VALUES (?, ?)", 
                           (user.get('displayName', ''), email))
         return self.cursor.lastrowid
+    
+    def get_user(self, user_id: int):
+        self.cursor.execute("SELECT * FROM users WHERE id = ?", (user_id,))
+        row = self.cursor.fetchone()
+        return row
 
     def _upsert_item(self, item_data: Dict[str, Any]):
         try:
             # 'parents' is a list, often just one item. 
             # Root folder might not have a 'parents' key.
             parent_id = item_data.get('parents', [None])[0]
-            owner = item_data.get('owners', [{}])[0]
-            owner_id = self._upsert_user(owner)
+            if isinstance(item_data.get('owner'), int):
+                owner_id = item_data['owner'] # trust own of our own
+            else:
+                owner = item_data.get('owners', [{}])[0]
+                owner_id = self._upsert_user(owner)
             size = item_data.get('size', 0)
             url_property = item_data.get('properties', {}).get('url', None)
             mime_type = item_data['mimeType']
@@ -257,6 +220,104 @@ class DriveCache:
         except sqlite3.Error as e:
             print(f"SQLite error upserting item {item_data.get('id')}: {e}")
 
+
+    def refill_all_data(self):
+        """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive."""
+        print("Dropping all data and reloading the GDrive Cache from scratch...")
+        self.cursor.execute("DELETE FROM drive_items")
+        self.cursor.execute("DELETE FROM trashed_drive_items")
+        self.cursor.execute("DELETE FROM metadata")
+        all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
+        for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
+            self._upsert_item(file)
+        all_files = gdrive_base.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
+        for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
+            self._upsert_item(file)
+        changes_page = gdrive_base.session().changes().getStartPageToken().execute()
+        self.cursor.execute("INSERT INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page['startPageToken'],))
+        self.conn.commit()
+        print("Done filling the GDrive cache!")
+    
+
+    def update(self):
+        """Performs a full update of the data in the cache."""
+        changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
+        if not changes_page:
+            return self.refill_all_data()
+        with yaspin(text="Pulling latest data from GDrive...") as ys:
+            changes_page = changes_page['value']
+            file_ids_to_fetch = set()
+            file_ids_removed = set()
+            while True:
+                changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
+                for change in changelist['changes']:
+                    if change['removed']:
+                        file_ids_removed.add(change['fileId'])
+                    else:
+                        file_ids_to_fetch.add(change['fileId'])
+                if 'nextPageToken' in changelist: # nextPageToken signals there is more to fetch
+                    changes_page = changelist['nextPageToken']
+                    continue
+                changes_page = changelist['newStartPageToken'] # newStartPageToken says come back later for more
+                break
+        if len(file_ids_removed):
+            for fileId in tqdm(file_ids_removed, desc="Trashing gone files"):
+                self._move_to_trash(fileId)
+        file_ids_to_fetch = list(file_ids_to_fetch - file_ids_removed)
+        if len(file_ids_to_fetch):
+            all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
+            for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
+                self._upsert_item(item)
+        with yaspin(text="Saving GDrive Cache..."):
+            self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
+            self.conn.commit()
+        print("Done updating GDrive cache!")
+
+    ######
+    # Cache read functions
+    ######
+    
+    def row_dict_to_api_dict(self, table_row: Dict[str, Any]) -> Dict[str, Any]:
+        """Takes a 'SELECT * FROM drive_items' row as a dict and converts it
+        back to the Google Drive API structure"""
+        ret = table_row.copy()
+        if ret.get('md5_checksum'):
+            ret['md5Checksum'] = ret['md5_checksum']
+        del ret['md5_checksum']
+        if ret.get('original_name'):
+            ret['originalFilename'] = ret['original_name']
+        del ret['original_name']
+        ret['mimeType'] = ret['mime_type']
+        del ret['mime_type']
+        ret['modifiedTime'] = ret['modified_time']
+        del ret['modified_time']
+        ret['parents'] = [ret['parent_id']]
+        # del table_row['parent_id'] # keep this one for convenience
+        if ret.get('url_property'):
+            ret['properties'] = {
+                'url': ret['url_property']
+            }
+        del ret['url_property']
+        if ret.get('shortcut_target'):
+            ret['shortcutDetails'] = {
+                'targetId': ret['shortcut_target'],
+                'targetMimeType': ret['mimeType'],
+            }
+            ret['mimeType'] = 'application/vnd.google-apps.shortcut'
+        del ret['shortcut_target']
+        if ret.get('owner'):
+            owner = self.get_user(ret['owner'])
+            if owner:
+                ret['owners'] = [{
+                    'displayName': owner['display_name'],
+                    'email': owner['email'],
+                    'kind': 'drive#user',
+                    'me': True if owner['id'] == 1 else False,
+                }]
+        del ret['owner']
+        return ret
+    
+
     def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
         """
         Retrieves a single item by its Google Drive ID.
@@ -269,7 +330,7 @@ class DriveCache:
         """
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (file_id,))
         row = self.cursor.fetchone()
-        return dict(row) if row else None
+        return self.row_dict_to_api_dict(dict(row)) if row else None
 
     def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
         """
@@ -283,7 +344,17 @@ class DriveCache:
         """
         self.cursor.execute("SELECT * FROM drive_items WHERE parent_id = ?", (parent_id,))
         rows = self.cursor.fetchall()
-        return [dict(row) for row in rows]
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+
+
+    def get_subfolders(self, parent_id: str) -> List[Dict[str, Any]]:
+        self.cursor.execute(
+            "SELECT * FROM drive_items WHERE parent_id = ? AND mime_type = ?",
+            (parent_id,'application/vnd.google-apps.folder',)
+        )
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+
 
     def search_by_name_containing(self, query: str) -> List[Dict[str, Any]]:
         """
@@ -299,7 +370,7 @@ class DriveCache:
         params = (f"%{query}%",)
         self.cursor.execute(sql, params)
         rows = self.cursor.fetchall()
-        return [dict(row) for row in rows]
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
 
     def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:
@@ -316,8 +387,11 @@ class DriveCache:
         params = (name,)
         self.cursor.execute(sql, params)
         rows = self.cursor.fetchall()
-        return [dict(row) for row in rows]
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
+    ########
+    # Write-through Functions
+    ########
 
     def trash_file(self, file_id: str):
         """Actually performs the tashing and updates the cache"""
@@ -328,7 +402,6 @@ class DriveCache:
     def _move_to_trash(self, file_id: str):
         self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
-    
 
     def move_file(self, file_id: str, folder: str):
         folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
@@ -339,6 +412,28 @@ class DriveCache:
         gdrive_base.move_drive_file(file_id, folder)
         self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
         self.conn.commit()
+    
+    def create_folder(self, folder_name: str, parent_id: str) -> str:
+        """Creates a new folder with the name and parent and rets the new id"""
+        if parent_id.startswith('http'):
+            parent_id = gdrive_base.folderlink_to_id(parent_id)
+        now = UTC_NOW()
+        new_folder_id = gdrive_base.create_folder(folder_name, parent_id)
+        self.upsert_item({
+            'id': new_folder_id,
+            'name': folder_name,
+            'parents': [parent_id],
+            'size': 0,
+            'mimeType': 'application/vnd.google-apps.folder',
+            'version': 0,
+            'modifiedTime': now,
+            'owner': 1,
+        })
+        return new_folder_id
+
+    ######
+    # Connection management
+    ######
 
     def close(self):
         """Commits changes and closes the database connection."""

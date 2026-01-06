@@ -3,6 +3,7 @@
 import requests
 from datetime import datetime
 from math import floor
+import atexit
 from strutils import (
   titlecase,
   git_root_folder,
@@ -24,9 +25,7 @@ except:
   exit(1)
 
 from gdrive_base import (
-  get_subfolders,
   folderlink_to_id,
-  create_folder,
   FOLDER_LINK,
   link_to_id,
   move_drive_file,
@@ -42,10 +41,14 @@ from gdrive_base import (
   DOC_LINK,
   create_doc,
 )
+import local_gdrive
 
 FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
 
 gcache_folder = git_root_folder.joinpath("scripts/.gcache")
+gcache = local_gdrive.DriveCache(gcache_folder.joinpath("drive.sqlite"))
+gcache.update()
+atexit.register(gcache.close)
 
 def get_known_courses():
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
@@ -74,8 +77,7 @@ def get_gfolders_for_course(course):
   while len(parts) > 0:
     if not parts[0]: # use "course/" syntax to move to the private version of the course
       return (None, private_folder)
-    with yaspin(text="Loading subfolders..."):
-      subfolders = get_subfolders(private_folder)
+    subfolders = gcache.get_subfolders(private_folder)
     print(f"Got subfolders: {[f.get('name') for f in subfolders]}")
     q = parts[0].lower()
     found = False
@@ -105,7 +107,7 @@ def get_gfolders_for_course(course):
           return (public_folder, private_folder)
       print("Okay, will just put in the private folder then.")
       return (None, private_folder)
-    subfolder = create_folder(q, private_folder)
+    subfolder = gcache.create_folder(q, private_folder)
     if not subfolder:
       raise RuntimeError("Error creating subfolder. Got null API response.")
     private_folder = subfolder

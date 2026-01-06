@@ -280,7 +280,7 @@ def _perform_upload(file_metadata, media, verbose=True, update_file=False):
         print("An error occurred: ", str(e))
         return False
 
-def create_folder(name, parent_folder, custom_properties: dict[str, str] = None):
+def create_folder(name, parent_folder, custom_properties: dict[str, str] = None) -> str:
   metadata = {
     'name': name,
     'mimeType': 'application/vnd.google-apps.folder',

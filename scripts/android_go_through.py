@@ -15,18 +15,12 @@ with yaspin(text="Initializing..."):
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = sorted([f for f in LOCAL_FOLDER.iterdir() if f.is_file()], key=lambda f: -f.stat().st_size)
-  import gdrive_base
+  from gdrive_base import DRIVE_LINK
   import gdrive
-  import local_gdrive
-  has_updated = False
 
-with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as gcache:
-  for fp in local_files:
+for fp in local_files:
     print(f"Opening {fp.name}...")
     system_open(fp)
-    if not has_updated:
-      gcache.update()
-      has_updated = True
     with yaspin(text="Processing..."):
       from pdfutils import readpdf, get_page_count
       from epubutils import read_epub
@@ -39,7 +33,7 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
       if predictor is None:
         course_list = gdrive.get_known_courses()
         predictor = TagPredictor.load()
-      gfs = gcache.files_exactly_named(fp.name)
+      gfs = gdrive.gcache.files_exactly_named(fp.name)
       gf = None
       if not gfs:
         raise NotImplementedError("File not found on Drive at all.")
@@ -64,12 +58,12 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
           if f['md5_checksum'] == tgt_md5:
             if REMOTE_FOLDER == f['parent_id']:
               print("\nFound duplicate file in remote TGT folder. Deleting it...")
-              gcache.trash_file(f['id'])
+              gdrive.gcache.trash_file(f['id'])
             else:
               trash_it = True
         if trash_it:
           print("\nFile moved already! Moving on...")
-          gcache.trash_file(gf['id'])
+          gdrive.gcache.trash_file(gf['id'])
           fp.unlink()
           continue
       pagecount = None
@@ -86,12 +80,12 @@ with local_gdrive.DriveCache(gdrive.gcache_folder.joinpath("drive.sqlite")) as g
           text = fp.stem
         text = normalize_text(text)
         save_normalized_text(gf['id'], text)
-      glink = gdrive_base.DRIVE_LINK.format(gf['id'])
+      glink = DRIVE_LINK.format(gf['id'])
       course = predictor.predict([text], normalized=True)[0] + "/unread"
     course = input_with_tab_complete("course: ", course_list, prefill=course)
     if course == "trash":
         print("Trashing...")
-        gcache.trash_file(gf['id'])
+        gdrive.gcache.trash_file(gf['id'])
         fp.unlink()
     elif course == "to-merge":
         import shutil
