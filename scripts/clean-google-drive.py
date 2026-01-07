@@ -10,6 +10,8 @@ from strutils import (
 )
 from gdrive_base import (
   folderlink_to_id,
+  ensure_these_are_shared_with_everyone,
+  link_to_id,
 )
 from gdrive import (
   FOLDERS_DATA_FILE,
@@ -36,6 +38,10 @@ argument_parser.add_argument(
 argument_parser.add_argument(
   '--no-shortcuts', action='store_false', dest='shortcuts',
   help="Turn off creating shortcuts in private folders for public files"
+)
+argument_parser.add_argument(
+  "--no-sharing", action='store_false', dest='sharing',
+  help="Turn off sharing public files with the public"
 )
 
 website.load()
@@ -199,13 +205,28 @@ def create_missing_shortcuts(pair, verbose=True) -> dict[str,int]:
     counts['created'] += 1
   return counts
 
+def ensure_all_public_files_are_shared(verbose=True):
+  all_public_gids = []
+  for page in website.content:
+    if page.drive_links:
+      for glink in page.drive_links:
+        gid = link_to_id(glink)
+        if gid:
+          all_public_gids.append(gid)
+  print(f"Fetching permissions info about {len(all_public_gids)} Google Drive files...")
+  count = ensure_these_are_shared_with_everyone(all_public_gids, verbose=verbose)
+  print(f"Done! {count} files have been shared.")
+
 if __name__ == "__main__":
   arguments = argument_parser.parse_args()
   print("Will perform the following tasks:")
   print(f"  Shortcuts: {arguments.shortcuts}")
+  print(f"  Sharing: {arguments.sharing}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
   if arguments.shortcuts:
     create_all_missing_shortcuts(verbose=arguments.verbose)
+  if arguments.sharing:
+    ensure_all_public_files_are_shared(verbose=arguments.verbose)
   print("All tasks complete")

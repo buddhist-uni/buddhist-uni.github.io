@@ -558,11 +558,15 @@ def batch_get_files_by_id(IDs: list, fields: str):
   batcher.execute()
   return ret
 
-def ensure_these_are_shared_with_everyone(file_ids: list[str]):
+def ensure_these_are_shared_with_everyone(file_ids: list[str], verbose=True):
   all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
+  count = 0
+  if not verbose:
+    all_files = tqdm(all_files, unit='files', total=len(file_ids))
   for file in all_files:
     if 'permissions' not in file:
-      print(f"  Skipping {file['id']} ({file['name']}) because I can't change its permissions...")
+      if verbose:
+        print(f"  Skipping {file['id']} ({file['name']}) because I can't change its permissions...")
       continue
     is_publicly_shared = False
     for permission in file['permissions']:
@@ -570,8 +574,11 @@ def ensure_these_are_shared_with_everyone(file_ids: list[str]):
         is_publicly_shared = True
         break
     if not is_publicly_shared:
-      print(f"Sharing \"{file['name']}\" with everyone...")
+      if verbose:
+        print(f"Sharing \"{file['name']}\" with everyone...")
       share_drive_file_with_everyone(file['id'])
+      count += 1
+  return count
 
 EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
 
