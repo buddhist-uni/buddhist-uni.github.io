@@ -1,6 +1,5 @@
 #!/bin/python
 
-import gdrive
 import gdrive_base
 import datetime
 from collections import defaultdict
@@ -52,7 +51,7 @@ class DriveFolder:
     subfolders = []
     shortcuts = []
     query = f"trashed=false AND '{folderid}' in parents"
-    for child in gdrive.all_files_matching(query, FIELDS):
+    for child in gdrive_base.all_files_matching(query, FIELDS):
       if child['mimeType'] == 'application/vnd.google-apps.folder':
         subfolders.append(child)
         continue
@@ -63,7 +62,7 @@ class DriveFolder:
       self.files.append(child)
     if len(shortcuts) > 0:
       print(f"  Resolving {len(shortcuts)} shortcut(s)...")
-      for child in gdrive.batch_get_files_by_id(
+      for child in gdrive_base.batch_get_files_by_id(
         [c['shortcutDetails']['targetId'] for c in shortcuts],
         FIELDS+',owners'
       ):
@@ -150,7 +149,7 @@ if __name__ == "__main__":
   htmlfile.write_text(html)
 
   print("Replacing public doc with new version...")
-  docid = gdrive.create_doc(
+  docid = gdrive_base.create_doc(
     html=html,
     creator="CatalogBuilder",
     replace_doc="1IYrQyVyr8FfbHwRLH5OzwSQG9mhgl0av73klfi-t0DQ",
