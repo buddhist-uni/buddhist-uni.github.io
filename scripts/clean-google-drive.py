@@ -3,8 +3,20 @@
 import argparse
 import textwrap
 from tqdm import tqdm
+import json
 
-from gdrive import * # this is a rough and tumble script!
+from strutils import (
+  prompt,
+)
+from gdrive_base import (
+  folderlink_to_id,
+  all_files_matching,
+  session,
+)
+from gdrive import (
+  FOLDERS_DATA_FILE,
+  gcache,
+)
 import website
 
 argument_parser = argparse.ArgumentParser(
@@ -55,33 +67,27 @@ def create_all_missing_shortcuts(verbose=False):
     create_missing_shortcuts(pair, verbose=verbose)
 
 def create_missing_shortcuts(pair, verbose=True):
-  """Takes a {'public': gid, 'private': gid} and ensures 'public' files are in 'private'"""
+  """Takes a {'public': folderlink, 'private': folderlink} pair and ensures 'public' files have shortcuts in 'private'"""
   if not (pair['public'] and pair['private']):
     raise ValueError("I need a genuine pair of folders")
   private_fid = folderlink_to_id(pair['private'])
   public_fid = folderlink_to_id(pair['public'])
   files_with_shortcuts_here = set()
-  query = " and ".join([
-    "trashed=false",
-    f"'{private_fid}' in parents",
-    "mimeType='application/vnd.google-apps.shortcut'"
-  ])
-  for shortcut in all_files_matching(query, "shortcutDetails"):
-    files_with_shortcuts_here.add(shortcut.get('shortcutDetails',{}).get('targetId'))
-  query = " and ".join([
-    "trashed=false",
-    f"'{public_fid}' in parents",
-    "mimeType!='application/vnd.google-apps.shortcut'",
-    "mimeType!='application/vnd.google-apps.folder'"
-  ])
-  for public_file in all_files_matching(query, 'id,name,parents'):
+  # query = " and ".join([
+  #   "trashed=false",
+  #   f"'{private_fid}' in parents",
+  #   "mimeType='application/vnd.google-apps.shortcut'"
+  # ])
+  for shortcut in gcache.get_shortcuts_in_folder(private_fid):
+    files_with_shortcuts_here.add(shortcut['shortcutDetails']['targetId'])
+  for public_file in gcache.get_regular_children(public_fid):
     if public_file['id'] in files_with_shortcuts_here:
       continue
-    existing_shortcuts = get_shortcuts_to_gfile(public_file['id'])
+    existing_shortcuts = gcache.get_shortcuts_to_file(public_file['id'])
     if len(existing_shortcuts) == 0:
       if verbose:
         print(f"  Creating a new shortcut to {public_file['name']}...")
-      create_drive_shortcut(public_file['id'], public_file['name'], private_fid)
+      gcache.create_shortcut(public_file['id'], public_file['name'], private_fid, target_mime_type=public_file.get('mimeType'))
       continue
     match = website.entry_with_drive_id(public_file['id'])
     if len(existing_shortcuts) > 1:
@@ -93,7 +99,7 @@ def create_missing_shortcuts(pair, verbose=True):
         if correct_public_folder and public_file['parents'][0] != correct_public_folder:
           if verbose:
             print(f"  Moving public file {public_file['name']} to {match.course} where it belongs...")
-          move_drive_file(public_file['id'], correct_public_folder, public_file['parents'])
+          gcache.move_file(public_file['id'], correct_public_folder)
         make_short = True
         for shortcut in existing_shortcuts:
           if shortcut['parents'][0] == correct_private_folder:
@@ -101,17 +107,17 @@ def create_missing_shortcuts(pair, verbose=True):
           else:
             if verbose:
               print(f"  Trashing superfluous shortcut to {public_file['name']} in {shortcut['parents'][0]}...")
-            trash_drive_file(shortcut['id'])
+            gcache.trash_file(shortcut['id'])
         if make_short:
           if verbose:
             print(f"  Creating a new shortcut to {public_file['name']}...")
-          create_drive_shortcut(public_file['id'], public_file['name'], correct_private_folder)
+          gcache.create_shortcut(public_file['id'], public_file['name'], correct_private_folder, target_mime_type=public_file.get('mimeType'))
         continue
       if len(existing_shortcuts) == 2:
         if existing_shortcuts[0]['parents'][0] == existing_shortcuts[1]['parents'][0]:
           if verbose:
             print(f"  Removing duplicate shortcut to {public_file['name']}...")
-          trash_drive_file(existing_shortcuts[0]['id'])
+          gcache.trash_file(existing_shortcuts[0]['id'])
           continue
         slug = folder_slugs.get(existing_shortcuts[0]['parents'][0])
         if slug and folder_slugs.get(existing_shortcuts[1]['parents'][0]) == slug:
@@ -145,7 +151,7 @@ def create_missing_shortcuts(pair, verbose=True):
         # this is, after all, mostly a function for fixing _shortcuts_
         if verbose:
           print(f"  Moving the existing shortcut to {public_file['name']}...")
-        move_drive_file(
+        gcache.move_file(
           existing_shortcuts[0]['id'],
           private_fid,
           existing_shortcuts[0]['parents'],
@@ -155,7 +161,7 @@ def create_missing_shortcuts(pair, verbose=True):
       if match.course == private_slug:
         if verbose:
           print("  The public file was in the wrong folder. Moving it...")
-        move_drive_file(
+        gcache.move_file(
           public_file['id'],
           folderlink_to_id(drive_folders[private_slug]['public']),
           public_file['parents'],
@@ -165,7 +171,7 @@ def create_missing_shortcuts(pair, verbose=True):
       if match.course == public_slug:
         if verbose:
           print("  The public file was correct. Moving the shortcut....")
-        move_drive_file(
+        gcache.move_file(
           existing_shortcuts[0]['id'],
           folderlink_to_id(drive_folders[public_slug]['private']),
           existing_shortcuts[0]['parents'],
@@ -174,7 +180,7 @@ def create_missing_shortcuts(pair, verbose=True):
         continue
       print(conflict_expl)
       raise RuntimeError("I really don't know what to do here!  The Website, private drive and public drive all disagree!!")
-    create_drive_shortcut(public_file['id'], f"[should live in {canon_ref}] {public_file['name']}", private_fid)
+    gcache.create_shortcut(public_file['id'], f"[should live in {canon_ref}] {public_file['name']}", private_fid, target_mime_type=public_file.get('mimeType'))
 
 if __name__ == "__main__":
   arguments = argument_parser.parse_args()

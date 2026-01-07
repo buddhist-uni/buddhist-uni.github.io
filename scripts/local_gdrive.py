@@ -321,6 +321,20 @@ class DriveCache:
         del ret['owner']
         return ret
     
+    def sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+        """
+        Directly run a query and return the matching rows.
+        
+        Args:
+           query: The raw SQL Filter to run (using our column names!)
+           data: Data to populate the query with (replaces '?'s in the query)
+        
+        Returns:
+            A list of rows as Google API Style dicts
+        """
+        self.cursor.execute("SELECT * FROM drive_items WHERE "+query, data)
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
     def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
         """
@@ -336,6 +350,9 @@ class DriveCache:
         row = self.cursor.fetchone()
         return self.row_dict_to_api_dict(dict(row)) if row else None
     
+    def get_shortcuts_to_file(self, target_id: str):
+        return self.sql_query("shortcut_target = ?", (target_id,))
+
     def get_items_with_md5(self, md5: str) -> List[Dict[str, Any]]:
         """
         Retrieves all items with a specific MD5 checksum.
@@ -346,10 +363,8 @@ class DriveCache:
         Returns:
             A list of dictionaries, where each is an item with the specified MD5 checksum.
         """
-        self.cursor.execute("SELECT * FROM drive_items WHERE md5_checksum = ?", (md5,))
-        rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
-
+        return self.sql_query("md5_checksum = ?", (md5,))
+        
     def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
         """
         Retrieves all direct children (files and folders) of a given parent ID.
@@ -360,10 +375,13 @@ class DriveCache:
         Returns:
             A list of dictionaries, where each is a child item.
         """
-        self.cursor.execute("SELECT * FROM drive_items WHERE parent_id = ?", (parent_id,))
-        rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+        return self.sql_query("parent_id = ?", (parent_id,))
 
+    def get_shortcuts_in_folder(self, parent_id: str) -> List[Dict[str, Any]]:
+        return self.sql_query(
+            "parent_id = ? AND shortcut_target IS NOT NULL",
+            (parent_id,)
+        )
 
     def get_subfolders(self, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
         query = "SELECT * FROM drive_items WHERE parent_id = ? AND mime_type = ?"
@@ -382,6 +400,19 @@ class DriveCache:
                     row['shortcut_target'] = None
         return [self.row_dict_to_api_dict(row) for row in rows]
 
+    def get_regular_children(self, parent_id: str) -> List[Dict[str, Any]]:
+        """
+        Returns direct children of `parent_id` that aren't folders or shortcuts
+        
+        :param parent_id: id of the folder to query
+        :type parent_id: str
+        :return: A list of Google-API-like dicts
+        :rtype: List[Dict[str, Any]]
+        """
+        return self.sql_query(
+            "parent_id = ? AND shortcut_target IS NULL AND mime_type != ?",
+            (parent_id, 'application/vnd.google-apps.folder',)
+        )
 
     def search_by_name_containing(self, query: str) -> List[Dict[str, Any]]:
         """
@@ -393,12 +424,9 @@ class DriveCache:
         Returns:
             A list of matching items.
         """
-        sql = "SELECT * FROM drive_items WHERE name LIKE ?"
+        sql = "name LIKE ?"
         params = (f"%{query}%",)
-        self.cursor.execute(sql, params)
-        rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
-
+        return self.sql_query(sql, params)
 
     def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:
         """
@@ -410,12 +438,8 @@ class DriveCache:
         Returns:
             A list of dictionaries, where each is a file/folder item.
         """
-        sql = "SELECT * FROM drive_items WHERE name = ?"
-        params = (name,)
-        self.cursor.execute(sql, params)
-        rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
-    
+        return self.sql_query("name = ?", (name,))
+        
     def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
         """
         Retrieves all files and folders with the exact name.
@@ -426,12 +450,8 @@ class DriveCache:
         Returns:
             A list of dictionaries, where each is a file/folder item.
         """
-        sql = "SELECT * FROM drive_items WHERE original_name = ?"
-        params = (name,)
-        self.cursor.execute(sql, params)
-        rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
-
+        return self.sql_query("original_name = ?", (name,))
+   
     ########
     # Write-through Functions
     ########
@@ -446,13 +466,13 @@ class DriveCache:
         self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
 
-    def move_file(self, file_id: str, folder: str):
+    def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
         folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
         folder_data = self.cursor.fetchone()
         if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
             raise ValueError(f"Folder {folder} not found in cache.")
-        gdrive_base.move_drive_file(file_id, folder)
+        gdrive_base.move_drive_file(file_id, folder, previous_parents=previous_parents, verbose=verbose)
         self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
         self.conn.commit()
     
@@ -473,6 +493,32 @@ class DriveCache:
             'owner': 1,
         })
         return new_folder_id
+
+    def create_shortcut(self, target_id: str, shortcut_name: str, folder_id: str, target_mime_type: str = None):
+        """
+        Writes a new shortcut to Drive in folder_id with name shortcut_name pointing to target_id
+        """
+        now = UTC_NOW()
+        new_id = gdrive_base.create_drive_shortcut(
+            target_id,
+            shortcut_name,
+            folder_id,
+        )
+        self.upsert_item({
+            'id': new_id,
+            'name': shortcut_name,
+            'parents': [folder_id],
+            'size': 0,
+            'mimeType': 'application/vnd.google-apps.shortcut',
+            'version': 0,
+            'modifiedTime': now,
+            'owner': 1,
+            'shortcutDetails': {
+                'targetId': target_id,
+                'targetMimeType': target_mime_type,
+            }
+        })
+        return new_id
 
     ######
     # Connection management
