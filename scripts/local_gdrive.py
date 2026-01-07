@@ -344,7 +344,7 @@ class DriveCache:
             file_id: The ID of the file/folder.
             
         Returns:
-            A dictionary of the item's data or None if not found.
+            A dictionary of the item's data in API format or None if not found.
         """
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (file_id,))
         row = self.cursor.fetchone()
@@ -354,27 +354,9 @@ class DriveCache:
         return self.sql_query("shortcut_target = ?", (target_id,))
 
     def get_items_with_md5(self, md5: str) -> List[Dict[str, Any]]:
-        """
-        Retrieves all items with a specific MD5 checksum.
-        
-        Args:
-            md5: The MD5 checksum to search for.
-            
-        Returns:
-            A list of dictionaries, where each is an item with the specified MD5 checksum.
-        """
         return self.sql_query("md5_checksum = ?", (md5,))
         
     def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
-        """
-        Retrieves all direct children (files and folders) of a given parent ID.
-        
-        Args:
-            parent_id: The ID of the parent folder.
-            
-        Returns:
-            A list of dictionaries, where each is a child item.
-        """
         return self.sql_query("parent_id = ?", (parent_id,))
 
     def get_shortcuts_in_folder(self, parent_id: str) -> List[Dict[str, Any]]:
@@ -384,6 +366,12 @@ class DriveCache:
         )
 
     def get_subfolders(self, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
+        """
+        Returns immediate subfolders under parent_id
+        
+        If include_shortcuts, shortcuts to folders are returned
+        AS IF THEY WERE REGULAR FOLDERS (not as shortcut files)
+        """
         query = "SELECT * FROM drive_items WHERE parent_id = ? AND mime_type = ?"
         if not include_shortcuts:
             query += " AND shortcut_target IS NULL"
@@ -429,27 +417,9 @@ class DriveCache:
         return self.sql_query(sql, params)
 
     def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:
-        """
-        Retrieves all files and folders with the exact name.
-        
-        Args:
-            name: The exact name of the file/folder.
-            
-        Returns:
-            A list of dictionaries, where each is a file/folder item.
-        """
         return self.sql_query("name = ?", (name,))
         
     def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
-        """
-        Retrieves all files and folders with the exact name.
-        
-        Args:
-            name: The exact name of the file/folder.
-            
-        Returns:
-            A list of dictionaries, where each is a file/folder item.
-        """
         return self.sql_query("original_name = ?", (name,))
    
     ########
