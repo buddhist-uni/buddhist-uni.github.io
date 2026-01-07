@@ -10,8 +10,6 @@ from strutils import (
 )
 from gdrive_base import (
   folderlink_to_id,
-  all_files_matching,
-  session,
 )
 from gdrive import (
   FOLDERS_DATA_FILE,
@@ -148,7 +146,7 @@ def create_missing_shortcuts(pair, verbose=True) -> dict[str,int]:
     private_slug = private_folder_slugs.get(existing_shortcut_parent)
     canon_ref = private_slug
     if not private_slug:
-      folder = session().files().get(fileId=existing_shortcut_parent,fields='name').execute()
+      folder = gcache.get_item(existing_shortcut_parent)
       canon_ref = f"\"{folder['name']}\""
     elif drive_folders[private_slug]['public']:
       public_slug = public_folder_slugs.get(public_file['parents'][0])
