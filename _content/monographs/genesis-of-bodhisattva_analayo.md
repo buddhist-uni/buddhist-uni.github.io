@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/genesis-bodhisattva.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1ptYj3Qj4ncYqvzTK1uhtFirlLcZESRe_/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1OAO3GyL5xVctcTW7kJzptffmU1ap4VVy/view?usp=drive_link"
 course: buddha
 tags:
   - bodhisatta

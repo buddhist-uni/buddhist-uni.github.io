@@ -4,7 +4,7 @@ translator: dhammika
 editor: anandajoti
 external_url: "https://budblooms.org/a-naughty-jataka/"
 drive_links:
-  - "https://drive.google.com/file/d/1MLeYy-wHNWAwWBDFnJUjk67rOyFiObw0/view?usp=sharing"
+  - "https://drive.google.com/file/d/182bgiG2NgvGvqr-D0Zu2om05qpHn_Mxj/view?usp=sharing"
 course: jataka
 tags:
   - humor
