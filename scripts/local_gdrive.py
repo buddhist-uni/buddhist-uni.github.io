@@ -415,6 +415,22 @@ class DriveCache:
         self.cursor.execute(sql, params)
         rows = self.cursor.fetchall()
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+    
+    def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
+        """
+        Retrieves all files and folders with the exact name.
+        
+        Args:
+            name: The exact name of the file/folder.
+            
+        Returns:
+            A list of dictionaries, where each is a file/folder item.
+        """
+        sql = "SELECT * FROM drive_items WHERE original_name = ?"
+        params = (name,)
+        self.cursor.execute(sql, params)
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
     ########
     # Write-through Functions

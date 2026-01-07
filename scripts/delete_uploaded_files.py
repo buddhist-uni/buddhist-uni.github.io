@@ -5,19 +5,19 @@ from pathlib import Path
 
 from gdrive import has_file_already
 
-def test_and_maybe_delete(file: Path, doit=True, recurse=True, default_answer="prompt"):
+def test_and_maybe_delete(file: Path, doit=True, recurse=True):
   if file.is_dir():
     if not recurse:
       raise RuntimeError(f"{str(file)} is a directory and recusion not set.")
     for child in file.iterdir():
-      test_and_maybe_delete(child, doit=doit, default_answer=default_answer)
+      test_and_maybe_delete(child, doit=doit)
     return
   if not file.is_file():
     print(f"Bad file {str(file)}!")
     print("  Skipping...")
     return
   print(f"\nExamining {str(file)}...")
-  has = has_file_already(file, default=default_answer)
+  has = has_file_already(file)
   if has:
     print("  Found it!")
     if doit:
@@ -33,8 +33,6 @@ if __name__ == "__main__":
   parser.add_argument('-r', '--recursive', dest='recurse', action='store_true',
     help='All files in directory and subdirectories')
   parser.add_argument('--dry-run', dest='doit', action="store_false", default=True, help="Don't actually delete anything")
-  parser.add_argument('-y', '--yes', dest='default_answer', action='store_true', default="prompt")
-  parser.add_argument('-n', '--no', dest='default_answer', action='store_false')
   args = parser.parse_args()
   for file in args.files:
-    test_and_maybe_delete(file, doit=args.doit, recurse=args.recurse, default_answer=args.default_answer)
+    test_and_maybe_delete(file, doit=args.doit, recurse=args.recurse)
