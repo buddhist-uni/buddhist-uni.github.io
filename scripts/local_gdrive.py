@@ -424,6 +424,9 @@ class DriveCache:
    
     ########
     # Write-through Functions
+    #
+    #  These functions perform mutations on Drive and immediately write the
+    #  consequence to the cache without having to perform a full .update()
     ########
 
     def trash_file(self, file_id: str):
@@ -460,6 +463,7 @@ class DriveCache:
             'mimeType': 'application/vnd.google-apps.folder',
             'version': 0,
             'modifiedTime': now,
+            'trashed': False,
             'owner': 1,
         })
         return new_folder_id
@@ -483,6 +487,7 @@ class DriveCache:
             'version': 0,
             'modifiedTime': now,
             'owner': 1,
+            'trashed': False,
             'shortcutDetails': {
                 'targetId': target_id,
                 'targetMimeType': target_mime_type,

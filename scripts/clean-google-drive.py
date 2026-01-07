@@ -58,26 +58,35 @@ def create_all_missing_shortcuts(verbose=False):
   if not verbose:
     wrapper = lambda a: tqdm(list(a.values()))
   print("Creating missing shortcuts...")
+  counts = {
+    'created': 0,
+    'moved': 0,
+    'trashed': 0,
+  }
   for pair in wrapper(drive_folders):
     if verbose:
       print(f"[shortcuts] Now analyzing the \"{pair}\" folders...")
       pair = drive_folders[pair]
     if not (pair['public'] and pair['private']):
       continue
-    create_missing_shortcuts(pair, verbose=verbose)
+    this_count = create_missing_shortcuts(pair, verbose=verbose)
+    counts['created'] += this_count['created']
+    counts['moved'] += this_count['moved']
+    counts['trashed'] += this_count['trashed']
+  print(f"Summary:\n  {counts}")
 
-def create_missing_shortcuts(pair, verbose=True):
+def create_missing_shortcuts(pair, verbose=True) -> dict[str,int]:
   """Takes a {'public': folderlink, 'private': folderlink} pair and ensures 'public' files have shortcuts in 'private'"""
   if not (pair['public'] and pair['private']):
     raise ValueError("I need a genuine pair of folders")
+  counts = {
+    'created': 0,
+    'moved': 0,
+    'trashed': 0,
+  }
   private_fid = folderlink_to_id(pair['private'])
   public_fid = folderlink_to_id(pair['public'])
   files_with_shortcuts_here = set()
-  # query = " and ".join([
-  #   "trashed=false",
-  #   f"'{private_fid}' in parents",
-  #   "mimeType='application/vnd.google-apps.shortcut'"
-  # ])
   for shortcut in gcache.get_shortcuts_in_folder(private_fid):
     files_with_shortcuts_here.add(shortcut['shortcutDetails']['targetId'])
   for public_file in gcache.get_regular_children(public_fid):
@@ -88,6 +97,7 @@ def create_missing_shortcuts(pair, verbose=True):
       if verbose:
         print(f"  Creating a new shortcut to {public_file['name']}...")
       gcache.create_shortcut(public_file['id'], public_file['name'], private_fid, target_mime_type=public_file.get('mimeType'))
+      counts['created'] += 1
       continue
     match = website.entry_with_drive_id(public_file['id'])
     if len(existing_shortcuts) > 1:
@@ -100,6 +110,7 @@ def create_missing_shortcuts(pair, verbose=True):
           if verbose:
             print(f"  Moving public file {public_file['name']} to {match.course} where it belongs...")
           gcache.move_file(public_file['id'], correct_public_folder)
+          counts['moved'] += 1
         make_short = True
         for shortcut in existing_shortcuts:
           if shortcut['parents'][0] == correct_private_folder:
@@ -108,16 +119,19 @@ def create_missing_shortcuts(pair, verbose=True):
             if verbose:
               print(f"  Trashing superfluous shortcut to {public_file['name']} in {shortcut['parents'][0]}...")
             gcache.trash_file(shortcut['id'])
+            counts['trashed'] += 1
         if make_short:
           if verbose:
             print(f"  Creating a new shortcut to {public_file['name']}...")
           gcache.create_shortcut(public_file['id'], public_file['name'], correct_private_folder, target_mime_type=public_file.get('mimeType'))
+          counts['created'] += 1
         continue
       if len(existing_shortcuts) == 2:
         if existing_shortcuts[0]['parents'][0] == existing_shortcuts[1]['parents'][0]:
           if verbose:
             print(f"  Removing duplicate shortcut to {public_file['name']}...")
           gcache.trash_file(existing_shortcuts[0]['id'])
+          counts['trashed'] += 1
           continue
         slug = folder_slugs.get(existing_shortcuts[0]['parents'][0])
         if slug and folder_slugs.get(existing_shortcuts[1]['parents'][0]) == slug:
@@ -157,6 +171,7 @@ def create_missing_shortcuts(pair, verbose=True):
           existing_shortcuts[0]['parents'],
           verbose=False,
         )
+        counts['moved'] += 1
         continue
       if match.course == private_slug:
         if verbose:
@@ -167,6 +182,7 @@ def create_missing_shortcuts(pair, verbose=True):
           public_file['parents'],
           verbose=False,
         )
+        counts['moved'] += 1
         continue
       if match.course == public_slug:
         if verbose:
@@ -177,10 +193,13 @@ def create_missing_shortcuts(pair, verbose=True):
           existing_shortcuts[0]['parents'],
           verbose=False
         )
+        counts['moved'] += 1
         continue
       print(conflict_expl)
       raise RuntimeError("I really don't know what to do here!  The Website, private drive and public drive all disagree!!")
     gcache.create_shortcut(public_file['id'], f"[should live in {canon_ref}] {public_file['name']}", private_fid, target_mime_type=public_file.get('mimeType'))
+    counts['created'] += 1
+  return counts
 
 if __name__ == "__main__":
   arguments = argument_parser.parse_args()
