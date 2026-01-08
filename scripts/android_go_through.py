@@ -14,11 +14,11 @@ with yaspin(text="Initializing..."):
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = sorted([f for f in LOCAL_FOLDER.iterdir() if f.is_file()], key=lambda f: -f.stat().st_size)
   from gdrive_base import DRIVE_LINK
-  import gdrive
 
 for fp in local_files:
     print(f"Opening {fp.name}...")
     system_open(fp)
+    import gdrive
     with yaspin(text="Processing..."):
       from pdfutils import readpdf, get_page_count
       from epubutils import read_epub

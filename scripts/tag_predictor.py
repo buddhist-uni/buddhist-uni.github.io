@@ -60,7 +60,7 @@ def save_normalized_text(drive_file_id, normalized_text):
     normalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
     if normalizedtextfile.exists():
         return
-    import gdrive
+    import gdrive_base as gdrive
     mimeType = "application/octet-stream"
     metadata = {
       "mimeType": mimeType,
