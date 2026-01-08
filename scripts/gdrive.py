@@ -53,6 +53,8 @@ gcache = local_gdrive.DriveCache(gcache_folder.joinpath("drive.sqlite"))
 gcache.update()
 atexit.register(gcache.close)
 
+OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
+
 def course_input_completer_factory() -> Callable[[str, int], str]:
   gfolders: dict[str, dict[str, str]]
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())

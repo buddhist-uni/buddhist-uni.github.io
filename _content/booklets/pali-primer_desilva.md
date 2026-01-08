@@ -4,8 +4,9 @@ authors:
   - desilva
 external_url: "https://archive.org/download/DeSilvaPaliPrimer2008/DeSilvaPaliPrimer2008.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1DUcAjuwV0BQg9KYZS3L0OgtdluDVz3PJ/view?usp=sharing"
+  - "https://drive.google.com/drive/folders/1wx24Z71Zt4KsxmthJJQK7owWg5Xawriq?usp=drive_link"
 course: pali-primer
+formats: [PDFs]
 tags:
   - pali-language
 year: 2008

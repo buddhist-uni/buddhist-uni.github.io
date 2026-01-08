@@ -421,6 +421,21 @@ class DriveCache:
         
     def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
         return self.sql_query("original_name = ?", (name,))
+    
+    def find_duplicate_md5s(self) -> List[str]:
+        """
+        Finds all MD5 checksums that appear more than once in the user's files.
+        """
+        sql = """
+            SELECT md5_checksum
+            FROM drive_items
+            WHERE md5_checksum IS NOT NULL AND owner = 1
+            GROUP BY md5_checksum
+            HAVING COUNT(*) > 1
+            ORDER BY md5_checksum
+        """
+        self.cursor.execute(sql)
+        return [row['md5_checksum'] for row in self.cursor.fetchall()]
    
     ########
     # Write-through Functions

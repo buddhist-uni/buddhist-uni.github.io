@@ -9,7 +9,6 @@ from io import BytesIO, BufferedIOBase
 from strutils import (
   file_info,
   prompt,
-  approx_eq,
 )
 import re
 from functools import cache
