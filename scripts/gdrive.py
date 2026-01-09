@@ -80,10 +80,17 @@ def course_input_completer_factory() -> Callable[[str, int], str]:
           pidx = 1
           prefix = course
           while True:
-            subfolders = gcache.get_subfolders(fid)
+            if fid in subfolders_cache:
+              subfolders = subfolders_cache[fid]
+            else:
+              subfolders = gcache.get_subfolders(fid)
+              subfolders_cache[fid] = subfolders
             matches = [f for f in subfolders if parts[pidx].lower() in f['name'].lower()]
+            for f in matches:
+              if f['id'] not in subfolders_cache:
+                subfolders_cache[f['id']] = gcache.get_subfolders(f['id'])
             if len(parts) <= pidx + 1:
-              suggestions_cache[so_far] = [f"{prefix}/{f['name']}/" for f in matches]
+              suggestions_cache[so_far] = [f"{prefix}/{f['name']}{'/' if subfolders_cache[f['id']] else ''}" for f in matches]
               break
             if len(matches) != 1: # Don't know which, so we better run
               suggestions_cache[so_far] = []

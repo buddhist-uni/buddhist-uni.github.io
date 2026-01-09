@@ -350,6 +350,17 @@ class DriveCache:
         row = self.cursor.fetchone()
         return self.row_dict_to_api_dict(dict(row)) if row else None
     
+    def get_url_doc(self, url: str) -> Optional[Dict[str, Any]]:
+        """
+        If we already have a Google Doc pointing to url, return it, else None
+        """
+        self.cursor.execute(
+            "SELECT * FROM drive_items WHERE url_property = ? AND mime_type = ? LIMIT 1",
+            (url, 'application/vnd.google-apps.document'),
+        )
+        row = self.cursor.fetchone()
+        return self.row_dict_to_api_dict(dict(row)) if row else None
+    
     def get_shortcuts_to_file(self, target_id: str):
         return self.sql_query("shortcut_target = ?", (target_id,))
 
@@ -436,6 +447,21 @@ class DriveCache:
         """
         self.cursor.execute(sql)
         return [row['md5_checksum'] for row in self.cursor.fetchall()]
+    
+    def find_duplicate_urls(self) -> List[str]:
+        """
+        Finds all urls that have more than one pointing doc in the user's files
+        """
+        sql = """
+            SELECT url_property
+            FROM drive_items
+            WHERE url_property IS NOT NULL AND owner = 1
+            GROUP BY url_property
+            HAVING COUNT(*) > 1
+            ORDER BY url_property
+        """
+        self.cursor.execute(sql)
+        return [row['url_property'] for row in self.cursor.fetchall()]
    
     ########
     # Write-through Functions

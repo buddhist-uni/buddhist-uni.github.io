@@ -1,4 +1,4 @@
-import requests, os, re, argparse, time, subprocess, json
+import requests, os, re, argparse, time, json
 from pathlib import Path
 from strutils import (
   git_root_folder,

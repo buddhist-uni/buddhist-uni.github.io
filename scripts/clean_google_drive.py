@@ -240,11 +240,18 @@ def ensure_all_public_files_are_shared(verbose=True):
 
 def remove_duplicate_files(verbose=True):
   duplicate_md5s = gcache.find_duplicate_md5s()
-  print(f"[duplicates] Found {len(duplicate_md5s)} duplicated files.")
+  print(f"[duplicates] Found {len(duplicate_md5s)} duplicated files by hash.")
   if not verbose:
     duplicate_md5s = tqdm(duplicate_md5s, unit='file', desc='Handling duplicates')
   for md5 in duplicate_md5s:
     remove_duplicate_file(md5, verbose=verbose, dry_run=False)
+  duplicate_urls = gcache.find_duplicate_urls()
+  print(f"[duplicates] Found {len(duplicate_urls)} duplicated urls.")
+  if not verbose:
+    duplicate_urls = tqdm(duplicate_urls, unit='url', desc='Handling duplicates')
+  for url in duplicate_urls:
+    remove_duplicate_url_docs(url, verbose=verbose, dry_run=False)
+    
 
 SAFE_EXTENSIONS = set([
   'mp3',
@@ -308,6 +315,36 @@ def remove_duplicate_file(md5, verbose=True, dry_run=True):
     if not dry_run:
       gcache.trash_file(f['id'])
 
+def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
+  files = gcache.sql_query("url_property = ? AND owner = 1", (url,))
+  assert len(files) > 1, f"multiple files expected with url={url}"
+  # Immediately ignore Old Versions slated for deleting anyway
+  files = [f for f in files if OLD_VERSIONS_FOLDER_ID not in f['parents']]
+  if len(files) <= 1:
+    return
+  if any(f['mimeType'] != 'application/vnd.google-apps.document' for f in files):
+    raise ValueError(f"Non-doc found pointing to url={url}")
+  for file in files:
+    file['parent'] = gcache.get_item(file['parents'][0])
+  ids_to_keep = _select_ids_to_keep(files)
+  files_to_keep = [f for f in files if f['id'] in ids_to_keep]
+  files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
+  if verbose or len(files_to_keep) > 1:
+    if len(files_to_keep) > 1:
+      print("!!vvPLEASE Review the below duplicates manually vv!!")
+    for file in files_to_keep:
+      print(f"  Keeping \"{file['name']}\" in \"{file['parent']['name']}\"")
+      if len(files_to_keep) > 1:
+        print(f"    {DRIVE_LINK.format(file['id'])}")
+        print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
+    if len(files_to_keep) > 1:
+      print("!!^^PLEASE Review the above duplicates manually^^!!")
+  for f in files_to_trash:
+    if verbose:
+      print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
+    if not dry_run:
+      gcache.trash_file(f['id'])
+
 UNIMPORTANT_SLUGS = [
   'to-go-through',
   'to-split',
@@ -315,6 +352,8 @@ UNIMPORTANT_SLUGS = [
 ]
 UNIMPORTANT_PREFIXES = [
   "🏛️ academia.edu",
+  "🌱 dharma seed",
+  "📼 youtube videos",
   "DhammaTalks",
   "unread",
   'archive', # normally we wouldn't delete these losing data,

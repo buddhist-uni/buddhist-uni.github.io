@@ -8,6 +8,7 @@ with yaspin(text="Loading..."):
   import re
   import threading
   import requests
+  import joblib
   from tqdm import tqdm
   from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from pathlib import Path
@@ -31,6 +32,7 @@ with yaspin(text="Loading..."):
   PDF_SAVER = "LibraryUtils.BulkPDFImporter"
 
 course_predictor = None
+disk_memorizor = joblib.Memory(gdrive.gcache_folder, verbose=0)
 
 class ItemListParser:
   def __init__(self) -> None:
@@ -76,7 +78,7 @@ LIST_PARSERS = [
 ]
 
 PRIVATE_FOLDERID_FOR_COURSE = {
-  key: gdrive.folderlink_to_id(value['private'])
+  key: gdrive_base.folderlink_to_id(value['private'])
   for key, value in json.loads(gdrive.FOLDERS_DATA_FILE.read_text()).items()
   if value.get('private')
 }
@@ -102,22 +104,22 @@ class BulkItemImporter:
       if course in self.unread_folderid_for_course:
         return self.unread_folderid_for_course[course]
       private_folder = PRIVATE_FOLDERID_FOR_COURSE[course]
-      subfolders = gdrive.get_subfolders(private_folder)
+      subfolders = gdrive.gcache.get_subfolders(private_folder, include_shortcuts=False)
       unread_folder = None
       for subfolder in subfolders:
         if 'unread' in subfolder['name'].lower():
           unread_folder = subfolder['id']
           break
       if not unread_folder:
-        unread_folder = gdrive.create_folder(f"Unread ({course})", parent_folder=private_folder)
-      subfolders = gdrive.get_subfolders(unread_folder)
+        unread_folder = gdrive.gcache.create_folder(f"Unread ({course})", private_folder)
+      subfolders = gdrive.gcache.get_subfolders(unread_folder, include_shortcuts=False)
       for subfolder in subfolders:
         if subfolder['name'] == self.get_unread_subfolder_name():
           self.unread_folderid_for_course[course] = subfolder['id']
           return subfolder['id']
-      subfolder = gdrive.create_folder(
+      subfolder = gdrive.gcache.create_folder(
         self.get_unread_subfolder_name(),
-        parent_folder=unread_folder,
+        unread_folder,
       )
       self.unread_folderid_for_course[course] = subfolder
       return subfolder
@@ -153,7 +155,7 @@ class BulkPDFImporter(BulkItemImporter):
           files.remove(fp)
           files.append(new_name)
     for fp in tqdm(files):
-      if gdrive.has_file_already(fp, default=False):
+      if gdrive.has_file_already(fp):
         tqdm.write(f"Skipping {fp} as that file is already on Drive!")
         fp.unlink()
         continue
@@ -161,7 +163,7 @@ class BulkPDFImporter(BulkItemImporter):
       name = normalize_text((' '+fp.stem) * 3)
       course = course_predictor.predict([text+name], normalized=True)[0]
       folder = self.get_folder_id_for_course(course)
-      uploaded = gdrive.upload_to_google_drive(
+      uploaded = gdrive_base.upload_to_google_drive(
         fp,
         folder_id=folder,
         filename=fp.name,
@@ -185,19 +187,10 @@ class GDocURLImporter(BulkItemImporter):
   
   def already_imported_items(self, items:list[str]) -> set[str]:
     print(f"Seeing if we've imported any of these already...")
-    files = gdrive.session().files()
     already = set()
-    for i in range(0, len(items), 50):
-      resp = files.list(
-        q=' or '.join([
-          f"properties has {{ key='url' and value='{url}' }}"
-          for url in items[i:i+50]
-        ]),
-        pageSize=50,
-        fields='files(properties)',
-      ).execute()['files']
-      for file in resp:
-        already.add(file['properties']['url'])
+    for url in items:
+      if gdrive.gcache.get_url_doc(url):
+        already.add(url)
     print(f"Found {len(already)} URLs already added")
     return already
 
@@ -212,7 +205,7 @@ def create_gdoc(url: str, title: str, html: str, folder_id: str):
     folder_id=folder_id,
   )
 
-@gdrive.disk_memorizor.cache()
+@disk_memorizor.cache()
 def _get_html(url):
   req = requests.get(url)
   assert req.ok
@@ -290,7 +283,7 @@ class DharmaSeedURLImporter(GDocURLImporter):
       old_course = auto_folder_to_course[doc['parents'][0]]
       if old_course != doc['course']:
         tqdm.write(f"Moving \"{doc['name']}\"\n  {old_course}  ->  {doc['course']}")
-        gdrive.move_drive_file(
+        gdrive.gcache.move_file(
           doc['id'],
           self.get_folder_id_for_course(doc['course']),
           doc['parents'],
@@ -511,7 +504,7 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
     def maybe_move_doc(doc, snippet):
       if snippet['folder'] != doc['parents'][0]:
         tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[doc['parents'][0]]}  ->  {snippet['course']}")
-        gdrive.move_drive_file(
+        gdrive.gcache.move_file(
           doc['id'],
           snippet['folder'],
           previous_parents=doc['parents'],
@@ -578,7 +571,7 @@ def get_all_predictable_unread_folders() -> tuple[dict[str, str], dict[str, str]
     for course_name in course_predictor.classes:
       _, private_id = gdrive.get_gfolders_for_course(course_name)
       assert bool(private_id), f"Why does {course_name} not have a private folder?"
-      subfolders = gdrive.get_subfolders(private_id)
+      subfolders = gdrive.gcache.get_subfolders(private_id)
       for subfolder in subfolders:
         if str(subfolder['name']).lower().startswith('unread'):
           unread_id_to_course_name_map[subfolder['id']] = course_name
@@ -588,9 +581,9 @@ def get_all_predictable_unread_folders() -> tuple[dict[str, str], dict[str, str]
   return (unread_id_to_course_name_map, course_name_to_unread_id_map)
 
 def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread_id_to_course_name_map: dict[str, str]) -> tuple[dict, dict]:
-  all_folders = gdrive.all_files_matching(
-    f"name='{folder_name}' and trashed=false and mimeType='application/vnd.google-apps.folder'",
-    "id,parents"
+  all_folders = gdrive.gcache.sql_query(
+    "name = ? AND mime_type = ?",
+    (folder_name, 'application/vnd.google-apps.folder', )
   )
   course_to_auto_folder = dict()
   auto_folder_to_course = dict()
@@ -605,7 +598,7 @@ def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread
 
 def resort_existing_link_docs():
   # We don't use the unread id map here as the importers will call
-  # gdrive.get_subfolders themselves. But no worries as that call is cached.
+  # gdrive.gcache.get_subfolders themselves.
   unread_id_to_course_name_map, _ = get_all_predictable_unread_folders()
   for import_name, importer in ITEM_IMPORTERS:
     print(f"Resorting {import_name}...")
@@ -626,16 +619,10 @@ def _resort_link_docs_of_type(
     import_name,
     unread_id_to_course_name_map,
   )
-  with yaspin(text=f"Enumerating all {import_name}..."):
-    parent_list = ' or '.join(
-      f"'{fid}' in parents" for fid in course_to_auto_folder.values()
-    )
-    drive_files_to_reconsider = list(
-      gdrive.all_files_matching(
-        f"properties has {{ key='createdBy' and value='LibraryUtils.LinkSaver' }} and trashed=false and ({parent_list})",
-        "id,parents,name,properties",
-      )
-    )
+  drive_files_to_reconsider = gdrive.gcache.sql_query(
+    f"url_property IS NOT NULL AND parent_id IN ({','.join('?' * len(course_to_auto_folder))})",
+    tuple(course_to_auto_folder.values()),
+  )
   print(f"Got {len(drive_files_to_reconsider)} {import_name} to resort")
   # Prime the importer's cache of auto_folder ids
   importer.unread_folderid_for_course.update(course_to_auto_folder)
@@ -653,16 +640,10 @@ def resort_existing_pdfs_of_type(pdf_type: str):
     unread_id_to_course_name_map,
   )
   # get all PDFs with one of those parents
-  with yaspin(text="Enumerating all such PDFs..."):
-    parent_list = ' or '.join(
-      f"'{fid}' in parents" for fid in course_to_autopdf_folder.values()
-    )
-    drive_files_to_reconsider = list(
-      gdrive.all_files_matching(
-        f"mimeType='application/pdf' and trashed=false and ({parent_list})",
-        "id,parents,size,name"
-      )
-    )
+  drive_files_to_reconsider = gdrive.gcache.sql_query(
+    f"mime_type='application/pdf' AND parent_id IN ({','.join('?' * len(course_to_autopdf_folder))})",
+    tuple(course_to_autopdf_folder.values()),
+  )
   print(f"Got {len(drive_files_to_reconsider)} PDF files to resort")
 
   # Ensure we have their pickles
@@ -688,12 +669,12 @@ def resort_existing_pdfs_of_type(pdf_type: str):
     ], normalized=True)[0]
     if new_course not in course_to_autopdf_folder:
       if new_course not in course_name_to_unread_id_map:
-        course_name_to_unread_id_map[new_course] = gdrive.create_folder(
+        course_name_to_unread_id_map[new_course] = gdrive.gcache.create_folder(
           "Unread",
           gdrive.get_gfolders_for_course(new_course)[1],
         )
         unread_id_to_course_name_map[course_name_to_unread_id_map[new_course]] = new_course
-      new_folder = gdrive.create_folder(
+      new_folder = gdrive.gcache.create_folder(
         folder_name,
         course_name_to_unread_id_map[new_course],
       )
@@ -706,7 +687,7 @@ def resort_existing_pdfs_of_type(pdf_type: str):
     if old_folder != new_folder:
       pbar.write(f"\"{drive_file['name']}\"")
       pbar.write(f"  {old_course}  \t->  {new_course}")
-      gdrive.move_drive_file(
+      gdrive.gcache.move_file(
         drive_file['id'],
         new_folder,
         drive_file['parents'],
