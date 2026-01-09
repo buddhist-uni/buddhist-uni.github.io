@@ -16,6 +16,7 @@ from urllib.parse import urlparse
 from filecmp import cmp as files_are_same
 
 import website
+import gdrive_base
 import gdrive
 
 from strutils import (
@@ -168,7 +169,7 @@ for item in website.content:
 
 # Download all drive_ids_to_fetchinto their respective folders
 print(f"Fetching Google Drive metadata...")
-filedata = gdrive.batch_get_files_by_id([gid for gid in drive_ids_to_fetch.keys()], "id,size,owners")
+filedata = gdrive.gcache.get_items(list(drive_ids_to_fetch.keys()))
 drive_files_to_download = []
 drive_file_locations = []
 bytestodownload = 0
@@ -184,7 +185,7 @@ for gfile in tqdm(filedata, total=len(drive_ids_to_fetch)):
 
 print(f"Downloading {len(drive_files_to_download)} files ({bytestodownload/1024/1024/1024:.2f} GB)...")
 tqdm_process_map(
-  gdrive.download_file,
+  gdrive_base.download_file,
   drive_files_to_download,
   drive_file_locations,
   [False]*len(drive_files_to_download),
@@ -219,7 +220,7 @@ for item, upto in candidates:
   for i in range(upto):
     fmt = item.formats[i]
     LOCAL_FOLDER = ARCHIVABLE_FORMATS[fmt]
-    gid = gdrive.link_to_id(item.drive_links[i])
+    gid = gdrive_base.link_to_id(item.drive_links[i])
     fpath = LOCAL_FOLDER.joinpath(f"{gid}.{fmt}")
     if not fpath.exists():
       print(f" Skipping undownloaded {gid}.{fmt}")

@@ -350,6 +350,28 @@ class DriveCache:
         row = self.cursor.fetchone()
         return self.row_dict_to_api_dict(dict(row)) if row else None
     
+    def get_items(self, file_ids: list[str]) -> list[Dict[str, Any]]:
+        """
+        Returns a list of Google API object dicts for every found id.
+        
+        If any "file_id" is not an appropriate id string, this will error.
+        If any "file_id" is valid, but not found, it won't error.
+
+        The return list is NOT guarenteed to be in the same order as the query.
+        If you need the list to be in the same order, please just do:
+        
+        my_files = [gcache.get_item(fid) for fid in file_ids]
+
+        This function is slightly faster as it makes just one trip to the DB.
+        """
+        # We raw insert the ids into the sql_query to overcome the query param
+        # limits. To do that safely, we first make sure that we've been passed
+        # actual google drive file ids.
+        assert all(gdrive_base.GFIDREGEX.fullmatch(fid) for fid in file_ids)
+        return self.sql_query(
+            "id IN (" + ','.join(f"'{fid}'" for fid in file_ids) + ")",
+        tuple())
+    
     def get_url_doc(self, url: str) -> Optional[Dict[str, Any]]:
         """
         If we already have a Google Doc pointing to url, return it, else None

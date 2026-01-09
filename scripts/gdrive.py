@@ -23,8 +23,9 @@ from archivedotorg import archive_urls
 try:
   from yaspin import yaspin
   from bs4 import BeautifulSoup
+  from tqdm import tqdm
 except:
-  print("pip install yaspin bs4")
+  print("pip install yaspin bs4 tqdm")
   exit(1)
 
 from gdrive_base import (
@@ -43,6 +44,7 @@ from gdrive_base import (
   get_ytvideo_snippets_for_playlist,
   DOC_LINK,
   create_doc,
+  download_file,
 )
 import local_gdrive
 
@@ -344,3 +346,68 @@ def has_file_already(file_in_question) -> bool:
     if len(cfs) > 0:
       return True
   return False
+
+def download_folder_contents_to(folder_id: str, target_directory: Path | str, recursive = False, follow_links = False):
+  """
+  Downloads all files from folder_id to target_directory
+
+  This is mostly a copypasta from gdrive_base but using the local gcache
+  """
+  target_directory = Path(target_directory)
+  target_directory.mkdir(exist_ok=True)
+  total_size = 0
+  subfolders = []
+  linked_files = []
+  downloads = []
+  with yaspin(text="Loading file list...") as ys:
+    for child in gcache.get_children(folder_id):
+      childpath = target_directory.joinpath(child['name'])
+      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
+        if not follow_links:
+          continue
+        if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+          if recursive:
+            subfolders.append((child['shortcutDetails']['targetId'], childpath))
+        else:
+          linked_files.append(gcache.get_item(child['shortcutDetails']['targetId']))
+        continue
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        if not recursive:
+          continue
+        subfolders.append((child['id'], childpath))
+        continue
+      if childpath.exists():
+        continue
+      size = int(child.get('size',0))
+      if not size:
+        continue
+      if any(d[1] == childpath for d in downloads):
+        ys.write(f"WARNING: Skipping duplicate file \"{childpath}\"")
+        continue
+      total_size += size
+      downloads.append((child['id'], childpath))
+    if linked_files:
+      for child in linked_files:
+        size = int(child.get('size',0))
+        if not size:
+          continue
+        childpath = target_directory.joinpath(child['name'])
+        if childpath.exists():
+          continue
+        total_size += size
+        downloads.append((child['id'], childpath))
+  if not downloads:
+    print(f"Nothing to download in '{target_directory.name}'")
+  else:
+    print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
+    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
+      for f in downloads:
+        download_file(f[0], f[1], pbar)
+  for cfid, child_path in subfolders:
+    download_folder_contents_to(
+      cfid,
+      child_path,
+      recursive=recursive,
+      follow_links=follow_links,
+    )
+

@@ -53,11 +53,11 @@ disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
 
 DRIVE_FOLDERS = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
 PUBLIC_FOLDER_FOR_PRIVATE = {
-    gdrive.folderlink_to_id(pair['private']): gdrive.folderlink_to_id(pair['public'])
+    gdrive_base.folderlink_to_id(pair['private']): gdrive_base.folderlink_to_id(pair['public'])
     for pair in DRIVE_FOLDERS.values() if pair['private'] and pair['public']
 }
 SLUG_FOR_PRIVATE_FOLDERID = {
-    gdrive.folderlink_to_id(DRIVE_FOLDERS[slug]['private']): slug
+    gdrive_base.folderlink_to_id(DRIVE_FOLDERS[slug]['private']): slug
     for slug in DRIVE_FOLDERS if DRIVE_FOLDERS[slug]['private']
 }
 CANON_TAGS = set(['an', 'sn', 'mn', 'dn', 'dhp', 'snp', 'khp', 'ea', 'da', 'ma', 'sa', 'ud', 'iti', 'snp', 'thag', 'thig'])
@@ -72,8 +72,8 @@ def get_all_trainable_drive_folders() -> dict[str,list[str]]:
         "buddha" => [<Buddha>, <Unread (Buddha)>, <Archive (Buddha)>]
     There will be ambiguous cases.
     These will be prompted for and the answers cached."""
-    buddhism_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['buddhism']['private'])
-    world_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['world']['private'])
+    buddhism_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['buddhism']['private'])
+    world_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['world']['private'])
     ret = _get_trainable_drive_folders(buddhism_folder, {})
     return _get_trainable_drive_folders(world_folder, ret)
 
@@ -90,7 +90,7 @@ RUN_RECENTLY = True
 def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> dict[str,list[str]]:
     slug = SLUG_FOR_PRIVATE_FOLDERID[this_folder]
     ret[slug] = [this_folder]
-    subfolders = gdrive.get_subfolders(this_folder)
+    subfolders = gdrive.gcache.get_subfolders(this_folder, include_shortcuts=False)
     for subfolder in subfolders:
         if subfolder['id'] in IGNORE_SUBFOLDERS:
             continue
@@ -121,7 +121,7 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
 @cache
 def get_drive_folder_heirarchy() -> dict[str, dict[str, list[str]]]:
     """returns a mapping from slug to {'ancestors': [], 'children': [], 'descendants': []}"""
-    root_folder = gdrive.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
+    root_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
     
     drive_map = dict()
     return _get_drive_folder_heirarchy(root_folder, [], drive_map)
@@ -134,7 +134,7 @@ def _get_drive_folder_heirarchy(this_folder_id:str, ancestors: list[str], drive_
     }
     drive_map[SLUG_FOR_PRIVATE_FOLDERID[this_folder_id]] = this_folder
     this_folder_slug = SLUG_FOR_PRIVATE_FOLDERID[this_folder_id]
-    all_children = gdrive.get_subfolders(this_folder_id)
+    all_children = gdrive.gcache.get_subfolders(this_folder_id, include_shortcuts=False)
     for child_folder in all_children:
         child_id = child_folder['id']
         child_slug = SLUG_FOR_PRIVATE_FOLDERID.get(child_id)
@@ -192,22 +192,19 @@ def get_all_trainable_files_in_folders(verbose=False) -> list[dict]:
     verbose=0,
 )
 def _get_trainable_files_in_folder(folderid, verbose):
-    global RUN_RECENTLY
-    RUN_RECENTLY = False # invalidate some other caches too while we're at it
     ret = []
     if verbose:
         print(f"Finding trainable files in {folderid}...")
         f_t = 0
-    query = " and ".join([
-        f"'{folderid}' in parents",
-        "("+" or ".join([
-            f"mimeType='{t}'" for t in
-            TRAINABLE_MIMETYPES | set(['application/vnd.google-apps.shortcut'])
+    query = " AND ".join([
+        f"parent_id='{folderid}'",
+        "("+" OR ".join([
+            f"mime_type='{t}'" for t in
+            TRAINABLE_MIMETYPES
         ])+")",
-        "trashed=false",
     ])
     shortcutIds = set()
-    for file in gdrive.all_files_matching(query, FILE_FIELDS):
+    for file in gdrive.gcache.sql_query(query, tuple()):
         if file['mimeType'] in TRAINABLE_MIMETYPES:
             ret.append(file)
             if verbose:
@@ -227,14 +224,16 @@ def _get_trainable_files_in_folder(folderid, verbose):
     if publicfolder:
         if verbose:
             print("  Looking for the shortcut targets in the public folder...")
-        query = " and ".join([
-            f"'{publicfolder}' in parents",
-            "("+" or ".join([
-                f"mimeType='{t}'"
+        query = " AND ".join([
+            f"parent_id='{publicfolder}'",
+            "("+" OR ".join([
+                f"mime_type='{t}'"
                 for t in TRAINABLE_MIMETYPES
             ])+")",
         ])
-        for file in gdrive.all_files_matching(query, FILE_FIELDS):
+        for file in gdrive.gcache.sql_query(query, tuple()):
+            if file['mimeType'] == 'application/vnd.google-apps.shortcut':
+                shortcutIds.add(file['shortcutDetails']['targetId'])
             if file['id'] in shortcutIds:
                 shortcutIds.remove(file['id'])
                 ret.append(file)
@@ -246,7 +245,7 @@ def _get_trainable_files_in_folder(folderid, verbose):
         print("  no public folder known to check for the shortcuts")
     if verbose:
         print(f"  Had to load {len(shortcutIds)} targets individually")
-    return ret + gdrive.batch_get_files_by_id(list(shortcutIds), FILE_FIELDS)
+    return ret + gdrive.gcache.get_items(list(shortcutIds))
 
 def get_folder_to_tag_mapping():
     """Given a parent id, what tag does this file belong to?"""
@@ -275,11 +274,11 @@ def get_trainable_gfiles_from_site():
             format = content.formats[i]
             if format not in ['epub', 'pdf']:
                 continue
-            gid = gdrive.link_to_id(dlink)
+            gid = gdrive_base.link_to_id(dlink)
             if gid and gid not in exclude:
                 additionals.append(gid)
     print(f"Fetching {len(additionals)} addition Google Files from the webiste...")
-    additionals = gdrive.batch_get_files_by_id(additionals, FILE_FIELDS)
+    additionals = gdrive.gcache.get_items(additionals)
     ret = []
     for f in additionals:
         if f['mimeType'] not in TRAINABLE_MIMETYPES:
@@ -377,9 +376,9 @@ def _save_text_for_drive_file(
             pdffile = None
             if not orig_file.exists():
                 if int(drivefile['size']) < in_memory_filesize_limit:
-                    pdffile = gdrive.get_file_contents(drivefile['id'], verbose=False)
+                    pdffile = gdrive_base.get_file_contents(drivefile['id'], verbose=False)
                 else:
-                    gdrive.download_file(drivefile['id'], orig_file, verbose=False)
+                    gdrive_base.download_file(drivefile['id'], orig_file, verbose=False)
             if not pdffile:
                 pdffile = orig_file
             incompleterawtextfile.write_text(reader_func(pdffile))
@@ -395,14 +394,13 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
     """If sample_size is None, goes from smaller to larger files,
     otherwise a random sample is chosen
     
-    If this task is interupted, simply `rm *.incomplete`
+    If this task is interupted, please `rm *.incomplete`
     """
     if not all_files:
         all_files = get_all_trainable_files_in_folders()
         all_files += get_trainable_gfiles_from_site()
     # restore the cache from Google Drive first
-    if not RUN_RECENTLY:
-        gdrive.download_folder_contents_to(NORMALIZED_DRIVE_FOLDER, NORMALIZED_TEXT_FOLDER)
+    gdrive.download_folder_contents_to(NORMALIZED_DRIVE_FOLDER, NORMALIZED_TEXT_FOLDER)
     all_files = [
         file for file in all_files if
         file['mimeType'] in ['application/pdf', 'application/epub+zip'] and
@@ -587,7 +585,7 @@ class GoogleDriveFilesDataSource(DataSource):
         if self.use_site_tags:
             all_files += get_trainable_gfiles_from_site()
             content_for_gdid = {
-                gdrive.link_to_id(link): content
+                gdrive_base.link_to_id(link): content
                 for content in website.content
                 for link in content.get('drive_links',[])
             }
