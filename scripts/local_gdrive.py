@@ -413,18 +413,24 @@ class DriveCache:
             (parent_id, 'application/vnd.google-apps.folder',)
         )
 
-    def search_by_name_containing(self, query: str) -> List[Dict[str, Any]]:
+    def search_by_name_containing(self, partial_name: str, additional_filters: str = None, additional_params: tuple = None) -> List[Dict[str, Any]]:
         """
         Searches for items by name (case-insensitive).
         
         Args:
             query: The search string (e.g., "report").
+            additional_filters: SQL (e.g. "mime_type = ?")
+            additional_params: tuple of data to fill your SQL, if any needed (e.g. "text/plain")
             
         Returns:
             A list of matching items.
         """
         sql = "name LIKE ?"
-        params = (f"%{query}%",)
+        params = (f"%{partial_name}%",)
+        if additional_filters:
+            sql += " AND " + additional_filters
+            if additional_params:
+                params += additional_params
         return self.sql_query(sql, params)
 
     def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:

@@ -17,6 +17,7 @@ from strutils import (
   radio_dial,
 )
 from pdfutils import get_page_count
+import gdrive_base
 import gdrive
 
 def parse_filename(name) -> tuple[str, str]:
@@ -67,7 +68,7 @@ if args.output and args.output.exists():
     for row in reader:
       outrows.append(row)
 gfolders = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
-tags = {gdrive.folderlink_to_id(folder): tag for tag, folders in gfolders.items() for folder in folders.values()}
+tags = {gdrive_base.folderlink_to_id(folder): tag for tag, folders in gfolders.items() for folder in folders.values()}
 
 for filep in args.folder.iterdir():
   if not filep.is_file():
@@ -83,7 +84,7 @@ for filep in args.folder.iterdir():
     continue
   title, author = parse_filename(filep.name)
   system_open(filep)
-  gfiles = gdrive.files_exactly_named(filep.name)
+  gfiles = gdrive.gcache.files_exactly_named(filep.name)
   free = ""
   if args.free:
     free = "1"
@@ -95,7 +96,7 @@ for filep in args.folder.iterdir():
   author = input_with_prefill("author: ", author)
   if len(gfiles) != 1 or gfiles[0]['md5Checksum'] != md5(filep.read_bytes()).hexdigest():
     glink = input("Google File URL: ")
-    gfile = gdrive.session().files().get(fileId=gdrive.link_to_id(glink), fields='id,parents').execute()
+    gfile = gdrive.gcache.get_item(gdrive_base.link_to_id(glink))
   else:
     gfile = gfiles[0]
   pages = ''
@@ -115,18 +116,13 @@ for filep in args.folder.iterdir():
   recs = input("recs: ")
   folderid = gfile['parents'][0]
   while folderid not in tags:
-    folderid = gdrive.session(
-    ).files(
-    ).get(
-      fileId=folderid,
-      fields='parents',
-    ).execute()['parents'][0]
+    folderid = gdrive.gcache.get_item(folderid)['parents'][0]
   tag = tags[folderid]
   print(f"tag: {tag}")
   outrows.append([
     title,
     author,
-    gdrive.DRIVE_LINK.format(gfile['id']),
+    gdrive_base.DRIVE_LINK.format(gfile['id']),
     year,
     pages,
     recs,

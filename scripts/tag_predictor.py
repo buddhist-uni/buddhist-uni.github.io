@@ -100,9 +100,9 @@ def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
             ids_to_fetch.append(ytid)
     if ids_to_fetch:
         print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
-        import gdrive
-        snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
-        transcripts = gdrive.fetch_youtube_transcripts(ids_to_fetch)
+        import gdrive_base
+        snippets = gdrive_base.get_ytvideo_snippets(ids_to_fetch)
+        transcripts = gdrive_base.fetch_youtube_transcripts(ids_to_fetch)
         if len(snippets) != len(ids_to_fetch):
             raise ValueError("Didn't get all the snippets?")
         for vid in snippets:

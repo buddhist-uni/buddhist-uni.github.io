@@ -294,26 +294,7 @@ def remove_duplicate_file(md5, verbose=True, dry_run=True):
   if any(f['name'].split('.')[-1].lower() not in SAFE_EXTENSIONS for f in files):
     raise ValueError(f"Unknown extension found for md5 = {md5}")
   assert len(files) < 5, f"Found many ({len(files)}) duplicates of {md5}"
-  for file in files:
-    file['parent'] = gcache.get_item(file['parents'][0])
-  ids_to_keep = _select_ids_to_keep(files)
-  files_to_keep = [f for f in files if f['id'] in ids_to_keep]
-  files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
-  if verbose or len(files_to_keep) > 1:
-    if len(files_to_keep) > 1:
-      print("!!vvPLEASE Review the below duplicates manually vv!!")
-    for file in files_to_keep:
-      print(f"  Keeping \"{file['name']}\" in \"{file['parent']['name']}\"")
-      if len(files_to_keep) > 1:
-        print(f"    {DRIVE_LINK.format(file['id'])}")
-        print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
-    if len(files_to_keep) > 1:
-      print("!!^^PLEASE Review the above duplicates manually^^!!")
-  for f in files_to_trash:
-    if verbose:
-      print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
-    if not dry_run:
-      gcache.trash_file(f['id'])
+  _process_duplicate_files(files, verbose, dry_run)
 
 def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
   files = gcache.sql_query("url_property = ? AND owner = 1", (url,))
@@ -324,6 +305,9 @@ def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
     return
   if any(f['mimeType'] != 'application/vnd.google-apps.document' for f in files):
     raise ValueError(f"Non-doc found pointing to url={url}")
+  _process_duplicate_files(files, verbose, dry_run)
+
+def _process_duplicate_files(files: list[dict[str, any]], verbose: bool, dry_run: bool):
   for file in files:
     file['parent'] = gcache.get_item(file['parents'][0])
   ids_to_keep = _select_ids_to_keep(files)
@@ -369,7 +353,7 @@ TAG_ORDER = {
 }
 LO_PRI = len(TAG_ORDER)+1000
 
-def _select_ids_to_keep(files) -> list[str]:
+def _select_ids_to_keep(files: list[dict[str, any]]) -> list[str]:
   """Maticulously applies hand-crafted heuristics to select the keepers"""
   #####
   # If only one is in a slugged folder, keep that one

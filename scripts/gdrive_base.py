@@ -393,7 +393,7 @@ def all_files_matching(query: str, fields: str):
 
 def upload_folder_contents_to(local_directory: Path | str, gdfid: str, recursive=False, replace_all=False, parallelism=8):
   if recursive:
-    raise NotImplementedError("Teach gdrive.upload_folder_contents_to to handle recursion")
+    raise NotImplementedError("Teach gdrive_base.upload_folder_contents_to to handle recursion")
   local_directory = Path(local_directory)
   if not local_directory.is_dir():
     raise ValueError(f"{local_directory} is not a directory")

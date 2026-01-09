@@ -39,19 +39,8 @@ class YTVideo():
 def get_bulk_yt_folder_ids():
   return {
     folder['id']: folder['parents'][0] for folder in
-    gdrive_base.all_files_matching(
-      f"name='{BULK_YT_FOLDERS_NAME}' and trashed=false",
-      "id,parents"
-    )
+    gdrive.gcache.files_exactly_named(BULK_YT_FOLDERS_NAME)
   }
-
-GDOC_PROPS = "id,properties,name,parents"
-DOCS_QUERY = " and ".join([
-  "mimeType='application/vnd.google-apps.document'",
-  "trashed=false",
-  "'me' in writers",
-  "properties has { key='createdBy' and value='LibraryUtils.LinkSaver' }",
-])
 
 class YTQueueDB():
   def __init__(self) -> None:
@@ -85,7 +74,7 @@ class YTQueueDB():
   def refresh(self) -> None:
     self.bulk_yt_folders = get_bulk_yt_folder_ids()
     self.videos = list()
-    for gdoc in gdrive_base.all_files_matching(DOCS_QUERY, GDOC_PROPS):
+    for gdoc in gdrive.gcache.sql_query("url_property IS NOT NULL AND owner_id = 1 AND mime_type='application/vnd.google-apps.document'"):
       if gdoc['parents'][0] not in self.bulk_yt_folders:
         continue
       self.videos.append(YTVideo({

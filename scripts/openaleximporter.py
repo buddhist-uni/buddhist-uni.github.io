@@ -22,6 +22,7 @@ from strutils import (
    system_open,
    print_work,
 )
+import gdrive_base
 import gdrive
 from itertools import chain
 import journals
@@ -338,16 +339,19 @@ def _main():
   work, query = prompt_for_work(query)
   if not work:
     quit(0)
-  with yaspin(text="Searching Drive for file..."):
-    title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
-    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
-  if "files" not in gfiles:
-    raise RuntimeError("Unexpected GDrive API response: "+gfiles)
-  gfiles = gfiles["files"]
+  title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
+  gfiles = gdrive.gcache.search_by_name_containing(
+      title,
+      additional_filters="mime_type = ? AND owner_id = 1",
+      additional_params=('application/pdf',)
+  )
   gfile = None
   if len(gfiles) == 0:
-    gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
-    gfiles = gfiles["files"]
+    gfiles = gdrive.gcache.search_by_name_containing(
+       query,
+       additional_filters="mime_type = ? AND owner_id = 1",
+       additional_params=('application/pdf',)
+    )
     if len(gfiles) == 0:
       print("No suitable files found.")
   for gfile in gfiles:
@@ -362,10 +366,10 @@ def _main():
     if i < len(gfiles):
       gfile = gfiles[i]
   if gfile:
-    glink = gdrive.DRIVE_LINK.format(gfile['id'])
+    glink = gdrive_base.DRIVE_LINK.format(gfile['id'])
   else:
     glink = input("Google Drive Link: ")
-    gfile = gdrive.session().files().get(fileId=gdrive.link_to_id(glink),fields='name,parents,id').execute()
+    gfile = gdrive.gcache.get_item(gdrive_base.link_to_id(glink))
     parentid = gfile['parents'][0]
     gfile['course'] = gdrive.get_course_for_folder(parentid)
   course = gdrive.input_course_string_with_tab_complete(prefill=gfile['course'])
