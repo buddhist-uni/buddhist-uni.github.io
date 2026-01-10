@@ -335,6 +335,31 @@ class DriveCache:
         self.cursor.execute("SELECT * FROM drive_items WHERE "+query, data)
         rows = self.cursor.fetchall()
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+    
+    def parent_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+        """
+        Directly run a query on a inner self join:
+          - `file.` expose's the file's cols
+          - `parent.` expose's the file's containing folder's properties
+        Items without a valid parent (shared files, root folders, etc)
+        will not be exposed here.
+
+        e.g. `.parent_sql_query("parent.name = 'Unread'")` returns all files
+        in a folder named "Unread"
+
+        Returns the matching files without any data about the parents.
+        To get the matching parent folders, do a subsequent `.get_items` query
+        """
+        self.cursor.execute(
+            """SELECT file.*
+            FROM drive_items file
+            JOIN drive_items parent
+            ON file.parent_id = parent.id
+            WHERE """+query,
+            data
+        )
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
     def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
         """
