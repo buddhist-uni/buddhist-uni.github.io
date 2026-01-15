@@ -33,20 +33,22 @@ argument_parser = argparse.ArgumentParser(
     It performs several automatable, routine cleanup tasks, to
     enforce the invariants I've tried (all-too-humanly) to keep.
     
-    By default, the script performs all actions. Use a flag to
-    turn _off_ a particular check.
+    By default, the script performs shortcuts and duplicates checks.
+    Use --sharing to turn on the sharing check as well.
   '''),
 )
 argument_parser.add_argument(
   '-v', '--verbose', action='store_true',
 )
 argument_parser.add_argument(
-  '--no-shortcuts', action='store_false', dest='shortcuts',
-  help="Turn off creating shortcuts in private folders for public files"
+  '--shortcuts', action=argparse.BooleanOptionalAction,
+  help="Whether to create shortcuts in private folders for public files",
+  default=True,
 )
 argument_parser.add_argument(
-  "--no-sharing", action='store_false', dest='sharing',
-  help="Turn off sharing public files with the public"
+  "--sharing", action=argparse.BooleanOptionalAction,
+  help="Whether to share public files with the public",
+  default=False,
 )
 # TODO: Add a step for cleaning up old "Old Versions" files
 # Note that this will require expanding the app scope to
@@ -55,12 +57,14 @@ argument_parser.add_argument(
 # as that's the only way to know when a file was moved in.
 # The Trello card has more details: https://trello.com/c/Avwkm76n
 # argument_parser.add_argument(
-#   "--no-old-cleanup", action="store_false", dest="oldies",
-#   help="Turns off the deleting of outdated 'Old Version' files"
+#   "--old-cleanup", action=argparse.BooleanOptionalAction, dest="oldies",
+#   help="Whether to delete outdated 'Old Version' files",
+#   default=False,
 # )
 argument_parser.add_argument(
-  "--no-duplicates", action='store_false', dest='duplicates',
-  help="Turn off removing duplicate files"
+  "--duplicates", action=argparse.BooleanOptionalAction,
+  help="Whether to remove duplicate files",
+  default=True,
 )
 # TODO: Add a step for removing dangling .pkl files
 
@@ -457,6 +461,7 @@ if __name__ == "__main__":
   print(f"  Shortcuts: {arguments.shortcuts}")
   print(f"  Sharing: {arguments.sharing}")
   print(f"  Duplicates: {arguments.duplicates}")
+  # print(f"  Old Cleanup: {arguments.oldies}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
