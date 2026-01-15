@@ -34,6 +34,7 @@ SLJH     = "S4210213701"
 AE       = "S144820813"
 MINDFULNESS = "S47477353"
 MOUSSONS = "S2736722918"
+ASIAN_STUDIES = "S114691300"
 
 # from OA to OBU IDs
 slugs = {
@@ -69,4 +70,5 @@ slugs = {
   SLJH: "sljh",
   MINDFULNESS: "mindfulness",
   MOUSSONS: "moussons",
+  ASIAN_STUDIES: '"The Journal of Asian Studies"',
 }

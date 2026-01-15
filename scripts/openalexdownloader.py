@@ -16,22 +16,23 @@
 import openalextopics as topics
 import journals
 
+NOT_IN_TRACKING_JOURNALS = ",".join(f"locations.source.id:!{loc}" for loc in journals.slugs.keys())
+
 # https://docs.openalex.org/
-APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=50&page=7&sort=cited_by_count:desc"
-#APIURL=f"https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:!{journals.BSR},locations.source.id:!{journals.JIABS},locations.source.id:!{journals.JGB},locations.source.id:!{journals.JJRS},locations.source.id:!{journals.IJDS},locations.source.id:!{journals.JBE},locations.source.id:!{journals.HIJBS},locations.source.id:!{journals.JCB},topics.id:{topics.INDONESIAN_CULTURE},cited_by_count:%3E2,publication_year:%3E1970,publication_year:%3C2022&per_page=100&page=1&sort=cited_by_count:desc"
+#APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=50&page=7&sort=cited_by_count:desc"
+APIURL=f"https://api.openalex.org/works?filter=is_oa:true,language:en,is_paratext:false,type:!book,type:!review,type:!dataset,"+NOT_IN_TRACKING_JOURNALS+f",keywords.id:buddhism,cited_by_count:%3E10&per_page=100&page=8&sort=cited_by_count:desc"
 #APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
 #APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
 
-REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"}
+REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
 
 FNAME_MAXLEN = 192 # 126 might be safer
 
 import requests
-import random
 import os
 import json
+from urllib.parse import urljoin
 import re
-import string
 from time import sleep
 from strutils import *
 from openaleximporter import make_library_entry_for_work, alt_url_for_work
@@ -45,16 +46,28 @@ except:
   print("  pip install pathvalidate yaspin tqdm beautifulsoup4")
   exit(1)
 
+import gdrive
+
 METADATA_DIR = os.path.expanduser(os.path.normpath("~/.local/share/openalexdownloader"))
 PLACE_FILE = os.path.join(METADATA_DIR, "place.json")
 SEEN_FILE = os.path.join(METADATA_DIR, "works_seen.txt")
 
-titlefilter = re.compile('(<[^<]+?>)|(\[[^\[]+?\])|["”“„«»›‹‘’]')
+titlefilter = re.compile(r'(<[^<]+?>)|(\[[^\[]+?\])|["""„«»›‹'']')
 
 PDF_LINKS = {
   "https://doi.org/10.18874/jjrs.": ("/pdf/download", lambda s, o: s),
   "https://doi.org/10.1080/14639947.": ("/doi/epdf/", lambda i, o: "https://www.tandfonline.com"+i.replace("epdf","pdf").replace('needAccess=true&role=button','download=true')),  
   "https://www.ncbi.nlm.nih.gov/pmc/articles": ("pdf/nih", lambda s, o: f"{o}/{s}"),
+  "https://www.zygonjournal.org/": ("/download/", lambda s, o: s),
+  "https://heiup.uni-heidelberg.de/journals": ("/article/view/", lambda s, o: s.replace('view', 'download')),
+  "https://doi.org/10.11195/": ("/_pdf", lambda s, o: s),
+  "http://www.dspace.cam.ac.uk/handle/": ("/download", lambda s, o: f"https://www.repository.cam.ac.uk{s}"),
+  "https://journals.openedition.org/": ("/pdf/", lambda s, o: urljoin(o, s)),
+  "https://shs.hal.science/": ("/document", lambda s, o: s),
+  "https://doi.org/10.5281/zenodo.": (".pdf?download", lambda s, o: f"https://zenodo.org{s}"),
+  "https://zenodo.org/record": (".pdf?download", lambda s, o: urljoin(o, s)),
+  "https://doi.org/10.14288/": ("download/pdf", lambda s, o: urljoin(o, s)),
+  "https://doaj.org/article/": ("pdf", lambda s, o: s),
 }
 
 def assert_cd_is_writable():
@@ -132,7 +145,10 @@ def download(url: str, filename: str, expected_type=None) -> bool:
     disposition = r.headers['Content-Disposition']
   except:
     pass
-  firstchunk = next(r.iter_content(chunk_size=128))
+  try:
+    firstchunk = next(r.iter_content(chunk_size=128))
+  except StopIteration:
+    firstchunk = b""
   bad_pdf = (expected_type == "pdf" and not firstchunk.startswith(b"%PDF-"))
   if bad_pdf or (expected_type != "pdf" and expected_type not in (type+disposition)):
     print(f"  ERROR: expected {expected_type} but got {type}")
@@ -219,7 +235,8 @@ if __name__ == "__main__":
       json.dump(metadata, fd)
     work = data["results"][index]
     suffix = f" - {authorstr(work, 2)}.pdf"
-    filename = sanitize_filename(whitespace.sub(' ', titlefilter.sub('', f"{trunc(title_case(work['title']), FNAME_MAXLEN - len(suffix))}{suffix}")), replacement_text="_")
+    title = trunc(title_case(work['title']), FNAME_MAXLEN - len(suffix))
+    filename = sanitize_filename(whitespace.sub(' ', titlefilter.sub('', f"{title}{suffix}")), replacement_text="_")
     url = work['open_access']['oa_url']
     alturl = alt_url_for_work(work, url)
     if (not url) or (url.split("/")[2] in HOSTNAME_BLACKLIST):
@@ -233,8 +250,10 @@ if __name__ == "__main__":
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} cannot be downloaded...")
       works_seen.add(work)
       continue
-    if work in works_seen:
+    if work in works_seen or len(gdrive.gcache.search_by_name_containing(title[0:-2])) > 0:
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} already seen before...")
+      if work not in works_seen:
+        works_seen.add(work)
       continue
     if os.path.exists(filename):
       print(f"\n{index+1}/{total} - {trunc(filename, 20)} already downloaded...")
@@ -252,7 +271,7 @@ if __name__ == "__main__":
         succ = download(alturl, filename)
       if succ:
         print("Downloaded successfully!")
-        entrypath = make_library_entry_for_work(work, "_drafts/_content")
+        entrypath = make_library_entry_for_work(work, draft=True)
       else:
         print("Download failed.")
         if prompt("Would you like to make an entry for it anyway?", 'n'):
@@ -262,7 +281,7 @@ if __name__ == "__main__":
           entrypath = make_library_entry_for_work(work, draft=True)
         else:
           entrypath = None
-          if work['primary_location']['source']['id']:
+          if ((work.get('primary_location') or {}).get('source') or {}).get('id'):
             print(f"In case you want to blacklist it, the source.id was: {work['primary_location']['source']['id'].split('/')[-1]}")
       if entrypath:
         print(f"Wrote a draft entry to {entrypath}")

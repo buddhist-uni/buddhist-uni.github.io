@@ -104,7 +104,8 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='', pageco
     stopwords=('a', 'an', 'the', 'is', 'are', 'by'),
     replacements=[('between','btw')],
   )
-  filename = input_with_prefill("Filename: ", filename)
+  if not draft:
+    filename = input_with_prefill("Filename: ", filename)
   try:
     author = work['authorships'][0]['author']['display_name']
     assert(work['authorships'][0]['author_position'] == 'first')

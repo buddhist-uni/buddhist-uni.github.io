@@ -58,6 +58,7 @@ yaml_key = re.compile(r"^[a-z_]+:.*")
 
 HOSTNAME_BLACKLIST = {
   "www.questia.com",
+  "scholarbank.nus.edu.sg",
 }
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
