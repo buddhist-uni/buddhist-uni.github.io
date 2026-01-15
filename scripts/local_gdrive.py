@@ -475,7 +475,7 @@ class DriveCache:
         sql = "name LIKE ?"
         params = (f"%{partial_name}%",)
         if additional_filters:
-            sql += " AND " + additional_filters
+            sql += " AND (" + additional_filters + ")"
             if additional_params:
                 params += additional_params
         return self.sql_query(sql, params)
