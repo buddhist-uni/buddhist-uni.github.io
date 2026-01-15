@@ -2,6 +2,7 @@
 
 from urllib import parse as url
 from collections import deque
+from pathlib import Path
 import os
 import json
 import shutil
@@ -35,6 +36,11 @@ except:
   print("pip install requests yaspin python-slugify")
   quit(1)
 
+OPENALEX_CREDS_FILE = Path('~/.openalex.key').expanduser()
+OPENALEX_CREDS = ''
+if OPENALEX_CREDS_FILE.exists():
+   OPENALEX_CREDS = "api_key="+OPENALEX_CREDS_FILE.read_text().strip()+"&"
+
 def serp_result(work: dict, margin=10) -> str:
   width = os.get_terminal_size().columns
   space = width - margin - 4
@@ -42,11 +48,11 @@ def serp_result(work: dict, margin=10) -> str:
 
 OPENALEX_SEARCH_RESULT_COUNT = 10
 def search_openalex_for_works(query):
-  r = requests.get(f"https://api.openalex.org/autocomplete/works?q={url.quote(query, safe='')}")
+  r = requests.get(f"https://api.openalex.org/autocomplete/works?{OPENALEX_CREDS}q={url.quote(query, safe='')}")
   return json.loads(r.text)
 
 def fetch_work_data(workid):
-  r = requests.get(f"https://api.openalex.org/works/{workid}")
+  r = requests.get(f"https://api.openalex.org/works/{workid}?{OPENALEX_CREDS}")
   return json.loads(r.text)
 
 def alt_url_for_work(work, oa_url):

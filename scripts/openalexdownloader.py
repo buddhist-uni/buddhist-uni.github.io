@@ -13,6 +13,7 @@
 # To use, update APIURL below
 # Update User-Agent for fewer 403s
 
+from openaleximporter import make_library_entry_for_work, alt_url_for_work, OPENALEX_CREDS
 import openalextopics as topics
 import journals
 
@@ -20,7 +21,7 @@ NOT_IN_TRACKING_JOURNALS = ",".join(f"locations.source.id:!{loc}" for loc in jou
 
 # https://docs.openalex.org/
 #APIURL = "https://api.openalex.org/works?filter=is_oa:true,is_paratext:false,type:!book,type:!monograph,locations.source.id:S47477353,cited_by_count:%3E2&per_page=50&page=7&sort=cited_by_count:desc"
-APIURL=f"https://api.openalex.org/works?filter=is_oa:true,language:en,is_paratext:false,type:!book,type:!review,type:!dataset,"+NOT_IN_TRACKING_JOURNALS+f",keywords.id:buddhism,cited_by_count:%3E10&per_page=100&page=8&sort=cited_by_count:desc"
+APIURL=f"https://api.openalex.org/works?{OPENALEX_CREDS}filter=is_oa:true,language:en,is_paratext:false,type:!book,type:!review,type:!dataset,"+NOT_IN_TRACKING_JOURNALS+f",keywords.id:buddhism,cited_by_count:%3E10&per_page=100&page=8&sort=cited_by_count:desc"
 #APIURL="https://api.openalex.org/works?filter=title.search:Gatsby,is_oa:true,is_paratext:false&sort=cited_by_count:desc"
 #APIURL = "https://api.openalex.org/works?filter=cites:W1599632106,is_oa:true"
 
@@ -35,7 +36,6 @@ from urllib.parse import urljoin
 import re
 from time import sleep
 from strutils import *
-from openaleximporter import make_library_entry_for_work, alt_url_for_work
 try:
   from yaspin import yaspin
   from tqdm import tqdm
