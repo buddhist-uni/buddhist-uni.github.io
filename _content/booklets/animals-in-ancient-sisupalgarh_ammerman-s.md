@@ -12,9 +12,9 @@ tags:
   - setting
   - archeology
 year: 2022
-publisher: "University of California"
+publisher: "the University of California"
 address: "Los Angeles"
 pages: 339
 ---
 
-Examination of animal remains at a site in Eastern India shows a sharp decline in the number of animals killed after the introduction of Buddhism and Jainism.
+Examination of animal remains at a site in Eastern India shows a sharp decline in the number of animals killed there after the introduction of Buddhism and Jainism.
