@@ -45,6 +45,9 @@ from gdrive_base import (
   DOC_LINK,
   create_doc,
   download_file,
+  DRIVE_LINK,
+  FOLDER_LINK_PREFIX,
+  batch_get_files_by_id,
 )
 import local_gdrive
 
@@ -56,6 +59,8 @@ gcache.update()
 atexit.register(gcache.close)
 
 OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
+
+
 
 def course_input_completer_factory() -> Callable[[str, int], str]:
   gfolders: dict[str, dict[str, str]]
@@ -332,20 +337,20 @@ if __name__ == "__main__":
       print("Ensuring URLs are saved to Archive.org...")
       archive_urls(urls_to_save)
 
-def has_file_already(file_in_question) -> bool:
+def has_file_already(file_in_question) -> list:
   hash, _ = file_info(file_in_question)
   file_in_question = Path(file_in_question)
   cfs = gcache.get_items_with_md5(hash)
   if len(cfs) > 0:
-    return True
+    return cfs
   if len(file_in_question.name) > 16:
     cfs = gcache.files_exactly_named(file_in_question.name)
     if len(cfs) > 0:
-      return True
+      return cfs
     cfs = gcache.files_originally_named_exactly(file_in_question.name)
     if len(cfs) > 0:
-      return True
-  return False
+      return cfs
+  return []
 
 def download_folder_contents_to(folder_id: str, target_directory: Path | str, recursive = False, follow_links = False):
   """
@@ -411,3 +416,182 @@ def download_folder_contents_to(folder_id: str, target_directory: Path | str, re
       follow_links=follow_links,
     )
 
+def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
+  """Takes a list of duplicate Google Drive Files and removes the extra versions intelligently.
+  
+  Args:
+    files: the list of duplicates as API Dicts
+    folder_slugs: a mapping from Drive folder IDs to their slug names
+  
+  Returns: the files selected for keeping (usually just one)
+  """
+  for file in files:
+    file['parent'] = gcache.get_item(file['parents'][0])
+  ids_to_keep = select_ids_to_keep(files, folder_slugs)
+  files_to_keep = [f for f in files if f['id'] in ids_to_keep]
+  files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
+  if verbose or len(files_to_keep) > 1:
+    if len(files_to_keep) > 1:
+      print("!!vvPLEASE Review the below duplicates manually vv!!")
+    for file in files_to_keep:
+      print(f"  Keeping \"{file['name']}\" in \"{file['parent']['name']}\"")
+      if len(files_to_keep) > 1:
+        print(f"    {DRIVE_LINK.format(file['id'])}")
+        print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
+    if len(files_to_keep) > 1:
+      print("!!^^PLEASE Review the above duplicates manually^^!!")
+  for f in files_to_trash:
+    if verbose:
+      print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
+    if not dry_run:
+      gcache.trash_file(f['id'])
+  return files_to_keep
+
+def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[str]:
+  """Maticulously applies hand-crafted heuristics to select the keepers"""
+
+  import website
+  if not website.content:
+    with yaspin(text="Loading website..."):
+      website.load()
+  UNIMPORTANT_SLUGS = [
+    'to-go-through',
+    'to-split',
+    None,
+  ]
+  UNIMPORTANT_PREFIXES = [
+    # Keep up-to-date with bulk_import.py
+    "🏛️ academia.edu",
+    "🌱 dharma seed",
+    "📼 youtube videos",
+    "DhammaTalks",
+    "unread",
+    'archive', # normally we wouldn't delete these losing data,
+              # however, by this point in the code,
+              # we have already eliminated unreads
+              # so this leaves items that are archived in one place
+              # and accepted somewhere deeper. In those cases we
+              # should give such files a second chance at life.
+  ]
+  TAG_ORDER = {
+    str(tf).removesuffix('.md'): idx+1
+    for idx, tf in enumerate(website.config['collections']['tags']['order'])
+  }
+  LO_PRI = len(TAG_ORDER)+1000
+
+  #####
+  # If only one is in a slugged folder, keep that one
+  ####
+  slugs = [folder_slugs.get(f['parents'][0]) for f in files]
+  filter_list = []
+  for unimportant in UNIMPORTANT_SLUGS:
+    filter_list.append(unimportant)
+    important_slugs = [slug for slug in slugs if slug not in filter_list]
+    num_slugs = len(important_slugs)
+    if num_slugs == 1:
+      # if there's only one file in a slugged folder, keep that one
+      # no need to even check for permissions
+      return [files[slugs.index(important_slugs[0])]['id']]
+
+  #####
+  # Don't trash any publicly-launched files
+  #####
+  file_permissions = batch_get_files_by_id([f['id'] for f in files], "id,name,permissions")
+  are_publics = [any(p['type'] == 'anyone' for p in f['permissions']) for f in file_permissions]
+  num_public = sum(are_publics)
+  if num_public > 0:
+    # Never suggest a public-facing file for deletion
+    return [files[i]['id'] for i in range(len(files)) if are_publics[i]]
+  
+  #####
+  # Discard files in "unimportant" subfolders first
+  #####
+  for prefix in UNIMPORTANT_PREFIXES:
+    if prefix == "DhammaTalks":
+      unreads = ['1NTIsr31uhBXymkFUu2coGU72vdCjwfNp' in [f['parent']['parents'][0], f['parents'][0]] for f in files]
+    else:
+      unreads = [f['parent']['name'].lower().startswith(prefix) for f in files]
+    unread_count = sum(unreads)
+    if unread_count > 0 and unread_count < len(files):
+      files = [file for i, file in enumerate(files) if not unreads[i]]
+      if len(files) == 1:
+        return [files[0]['id']]
+      slugs = [slug for i, slug in enumerate(slugs) if not unreads[i]]
+  
+  #####
+  # Next, try to use the site's TAG_ORDER to prioritize placement
+  #   Keep files placed in more important subfolders and trash those deeper
+  #####
+  if not any(slugs):
+    slugs = [folder_slugs.get(f['parent']['parents'][0]) for f in files]
+  if any(slug in TAG_ORDER for slug in slugs):
+    priorities = [TAG_ORDER.get(slug, LO_PRI) for slug in slugs]
+    highest = min(priorities)
+    assert len(files) == len(priorities)
+    files = [files[i] for i in range(len(files)) if priorities[i] == highest]
+    if len(files) == 1:
+      return [files[0]['id']]
+    
+  #####
+  # If some couldn't be disambiguated by folder because they are in
+  #   the same subfolder, then just pick one
+  #####
+  if len(set(file['parent_id'] for file in files)) == 1:
+    # All files are in the same folder and have the same md5
+    # first try to pick the longest name
+    name_lens = [len(file['name']) for file in files]
+    longest = max(name_lens)
+    files = [file for file in files if len(file['name'])==longest]
+    if len(files) == 1:
+      return [file['id'] for file in files]
+    # That failing, pick the eldest
+    modifies = [file['modifiedTime'] for file in files]
+    eldest = min(modifies)
+    idx = modifies.index(eldest)
+    return [files[idx]['id']]
+  
+  #####
+  # Disambiguate remaining folders by depth
+  #  This time we prefer deeper folders as likely more accurate placement
+  ####
+  max_depth = 0
+  deepest = None
+  for file in files:
+    depth = 0
+    parent = file['parent']
+    while parent and parent['parent_id']:
+      depth += 1
+      new_parent = gcache.get_item(parent['parent_id'])
+      if new_parent:
+        parent = new_parent
+      else:
+        break
+    file['depth'] = depth
+    if depth > max_depth:
+      max_depth = depth
+      deepest = file
+    file['root'] = parent
+  roots = set(file['root']['id'] for file in files)
+  assert len(roots) == 1, f"Multiple roots found for {files}"
+  return [deepest['id']]
+
+def remote_file_for_local_file(fp: Path, folder_slugs: dict[str, str], default_folder_id=None) -> dict | None:
+  """Ensures that there is exactly one copy of `fp` on Drive and returns it.
+  
+  Args:
+    fp: the Path to the local file we're looking for on the server
+    folder_slugs: a mapping of folder ids to slugs (used by the deduper)
+    default_folder_id: where to upload the file if it isn't found
+  
+  Returns: the Google API dict for the file {'id': ..."""
+  remotes = has_file_already(fp)
+  if not remotes:
+    new_id = gcache.upload_file(fp, folder_id=default_folder_id)
+    return gcache.get_item(new_id)
+  if len(remotes) > 1:
+    print(f"Found multiple matching uploads for {fp.name}...")
+    kept = process_duplicate_files(remotes, folder_slugs, verbose=True, dry_run=False)
+    if len(kept) != 1:
+      raise ValueError("Unable to select which to keep. Please clean this up manually.")
+    remotes = kept
+  return remotes[0]

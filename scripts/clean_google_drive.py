@@ -2,7 +2,6 @@
 
 import argparse
 import textwrap
-from itertools import permutations
 from tqdm import tqdm
 import json
 
@@ -16,11 +15,13 @@ from gdrive_base import (
   batch_get_files_by_id,
   FOLDER_LINK_PREFIX,
   DRIVE_LINK,
+  yaspin,
 )
 from gdrive import (
   FOLDERS_DATA_FILE,
   gcache,
   OLD_VERSIONS_FOLDER_ID,
+  process_duplicate_files,
 )
 import website
 
@@ -39,6 +40,11 @@ argument_parser = argparse.ArgumentParser(
 )
 argument_parser.add_argument(
   '-v', '--verbose', action='store_true',
+)
+argument_parser.add_argument(
+  '--extensions', action=argparse.BooleanOptionalAction,
+  help="Whether to fix files whose mimetype != their extension",
+  default=True,
 )
 argument_parser.add_argument(
   '--shortcuts', action=argparse.BooleanOptionalAction,
@@ -66,9 +72,14 @@ argument_parser.add_argument(
   help="Whether to remove duplicate files",
   default=True,
 )
-# TODO: Add a step for removing dangling .pkl files
+argument_parser.add_argument(
+  "--pickles", action=argparse.BooleanOptionalAction,
+  help="Whether to clean up dangling pickle files",
+  default=True,
+)
 
-website.load()
+with yaspin(text="Loading website data..."):
+  website.load()
 
 drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
 private_folder_slugs = {
@@ -298,7 +309,7 @@ def remove_duplicate_file(md5, verbose=True, dry_run=True):
   if any(f['name'].split('.')[-1].lower() not in SAFE_EXTENSIONS for f in files):
     raise ValueError(f"Unknown extension found for md5 = {md5}")
   assert len(files) < 5, f"Found many ({len(files)}) duplicates of {md5}"
-  _process_duplicate_files(files, verbose, dry_run)
+  process_duplicate_files(files, folder_slugs, verbose, dry_run)
 
 def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
   files = gcache.sql_query("url_property = ? AND owner = 1", (url,))
@@ -309,166 +320,101 @@ def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
     return
   if any(f['mimeType'] != 'application/vnd.google-apps.document' for f in files):
     raise ValueError(f"Non-doc found pointing to url={url}")
-  _process_duplicate_files(files, verbose, dry_run)
+  process_duplicate_files(files, folder_slugs, verbose, dry_run)
 
-def _process_duplicate_files(files: list[dict[str, any]], verbose: bool, dry_run: bool):
-  for file in files:
-    file['parent'] = gcache.get_item(file['parents'][0])
-  ids_to_keep = _select_ids_to_keep(files)
-  files_to_keep = [f for f in files if f['id'] in ids_to_keep]
-  files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
-  if verbose or len(files_to_keep) > 1:
-    if len(files_to_keep) > 1:
-      print("!!vvPLEASE Review the below duplicates manually vv!!")
-    for file in files_to_keep:
-      print(f"  Keeping \"{file['name']}\" in \"{file['parent']['name']}\"")
-      if len(files_to_keep) > 1:
-        print(f"    {DRIVE_LINK.format(file['id'])}")
-        print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
-    if len(files_to_keep) > 1:
-      print("!!^^PLEASE Review the above duplicates manually^^!!")
-  for f in files_to_trash:
+def fix_file_extensions(verbose=True, dry_run=True):
+  # Maps to the canonical extension
+  # If maps to tuple of two values, the 1st is canonical and the 2nd acceptable
+  MIME_TYPE_EXTENSIONS = {
+    'application/pdf': 'pdf',
+    'application/epub+zip': 'epub',
+    'video/mp4': 'mp4',
+    'application/zip': 'zip',
+    'audio/x-m4a': 'm4a',
+    'audio/mp4': 'm4a',
+    'application/x-mobipocket-ebook': 'mobi',
+    'application/vnd.amazon.mobi8-ebook': 'azw3',
+    'image/png': 'png',
+    'audio/mpeg': ('mp3', 'm4a'),
+    'audio/mp3': 'mp3',
+    'text/html': ('html', 'htm'),
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'docx',
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': 'xlsx',
+    'application/msword': ('doc', 'dot'),
+    'image/jpeg': ('jpg', 'jpeg'),
+  }
+  print("Fixing file extensions...")
+  renames = 0
+  for mime_type, ext in tqdm(MIME_TYPE_EXTENSIONS.items(), total=len(MIME_TYPE_EXTENSIONS), unit="type", disable=verbose):
     if verbose:
-      print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
-    if not dry_run:
-      gcache.trash_file(f['id'])
-
-UNIMPORTANT_SLUGS = [
-  'to-go-through',
-  'to-split',
-  None,
-]
-UNIMPORTANT_PREFIXES = [
-  "🏛️ academia.edu",
-  "🌱 dharma seed",
-  "📼 youtube videos",
-  "DhammaTalks",
-  "unread",
-  'archive', # normally we wouldn't delete these losing data,
-             # however, by this point in the code,
-             # we have already eliminated unreads
-             # so this leaves items that are archived in one place
-             # and accepted somewhere deeper. In those cases we
-             # should give such files a second chance at life.
-]
-TAG_ORDER = {
-  str(tf).removesuffix('.md'): idx+1
-  for idx, tf in enumerate(website.config['collections']['tags']['order'])
-}
-LO_PRI = len(TAG_ORDER)+1000
-
-def _select_ids_to_keep(files: list[dict[str, any]]) -> list[str]:
-  """Maticulously applies hand-crafted heuristics to select the keepers"""
-  #####
-  # If only one is in a slugged folder, keep that one
-  ####
-  slugs = [folder_slugs.get(f['parents'][0]) for f in files]
-  filter_list = []
-  for unimportant in UNIMPORTANT_SLUGS:
-    filter_list.append(unimportant)
-    important_slugs = [slug for slug in slugs if slug not in filter_list]
-    num_slugs = len(important_slugs)
-    if num_slugs == 1:
-      # if there's only one file in a slugged folder, keep that one
-      # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']]
-
-  #####
-  # Don't trash any publicly-launched files
-  #####
-  file_permissions = batch_get_files_by_id([f['id'] for f in files], "id,name,permissions")
-  are_publics = [any(p['type'] == 'anyone' for p in f['permissions']) for f in file_permissions]
-  num_public = sum(are_publics)
-  if num_public > 0:
-    # Never suggest a public-facing file for deletion
-    return [files[i]['id'] for i in range(len(files)) if are_publics[i]]
-  
-  #####
-  # Discard files in "unimportant" subfolders first
-  #####
-  for prefix in UNIMPORTANT_PREFIXES:
-    if prefix == "DhammaTalks":
-      unreads = ['1NTIsr31uhBXymkFUu2coGU72vdCjwfNp' in [f['parent']['parents'][0], f['parents'][0]] for f in files]
-    else:
-      unreads = [f['parent']['name'].lower().startswith(prefix) for f in files]
-    unread_count = sum(unreads)
-    if unread_count > 0 and unread_count < len(files):
-      files = [file for i, file in enumerate(files) if not unreads[i]]
-      if len(files) == 1:
-        return [files[0]['id']]
-      slugs = [slug for i, slug in enumerate(slugs) if not unreads[i]]
-  
-  #####
-  # Next, try to use the site's TAG_ORDER to prioritize placement
-  #   Keep files placed in more important subfolders and trash those deeper
-  #####
-  if not any(slugs):
-    slugs = [folder_slugs.get(f['parent']['parents'][0]) for f in files]
-  if any(slug in TAG_ORDER for slug in slugs):
-    priorities = [TAG_ORDER.get(slug, LO_PRI) for slug in slugs]
-    highest = min(priorities)
-    assert len(files) == len(priorities)
-    files = [files[i] for i in range(len(files)) if priorities[i] == highest]
-    if len(files) == 1:
-      return [files[0]['id']]
+      print(f"  {ext}...")
+    okay_ext = None
+    if isinstance(ext, tuple):
+      okay_ext = ext[1]
+      ext = ext[0]
+    badboys = gcache.sql_query(
+      "mime_type = ? AND owner = 1 AND name NOT LIKE ?",
+      (mime_type, f"%.{ext}"),
+    )
+    for bb in badboys:
+      if okay_ext:
+        if str(bb['name']).lower().endswith(f'.{okay_ext}'):
+          continue
+      if verbose:
+        print(f"    {bb['name']}")
+      renames += 1
+      if not dry_run:
+        gcache.rename_file(bb['id'], bb['name']+'.'+ext)
+  print(f"  Found {renames} files that needed an extension")
     
-  #####
-  # If some couldn't be disambiguated by folder because they are in
-  #   the same subfolder, then just pick one
-  #####
-  if len(set(file['parent_id'] for file in files)) == 1:
-    # All files are in the same folder and have the same md5
-    # first try to pick the longest name
-    name_lens = [len(file['name']) for file in files]
-    longest = max(name_lens)
-    files = [file for file in files if len(file['name'])==longest]
-    if len(files) == 1:
-      return [file['id'] for file in files]
-    # That failing, pick the eldest
-    modifies = [file['modifiedTime'] for file in files]
-    eldest = min(modifies)
-    idx = modifies.index(eldest)
-    return [files[idx]['id']]
-  
-  #####
-  # Disambiguate remaining folders by depth
-  #  This time we prefer deeper folders as likely more accurate placement
-  ####
-  max_depth = 0
-  deepest = None
-  for file in files:
-    depth = 0
-    parent = file['parent']
-    while parent and parent['parent_id']:
-      depth += 1
-      new_parent = gcache.get_item(parent['parent_id'])
-      if new_parent:
-        parent = new_parent
-      else:
-        break
-    file['depth'] = depth
-    if depth > max_depth:
-      max_depth = depth
-      deepest = file
-    file['root'] = parent
-  roots = set(file['root']['id'] for file in files)
-  assert len(roots) == 1, f"Multiple roots found for {files}"
-  return [deepest['id']]
+
+def remove_dangling_pickles(verbose=True, dry_run=False):
+  from tag_predictor import NORMALIZED_DRIVE_FOLDER
+  with yaspin(text="Loading all pickles..."):
+    all_pickles = gcache.get_children(NORMALIZED_DRIVE_FOLDER)
+  def _get_target(pickle_file):
+    return gcache.get_item(pickle_file['name'][0:-4])
+  print("Checking pickle files...")
+  deletes = 0
+  pbar = tqdm(range(len(all_pickles)), unit="file")
+  for idx in pbar:
+    pickle = all_pickles[idx]
+    target = _get_target(pickle)
+    if not target:
+      deletes += 1
+      if verbose:
+        pbar.write(f"  Deleting dangling {pickle['name']}")
+      if not dry_run:
+        gcache.trash_file(pickle['id'])
+    elif target['name'][-4:].lower() not in ['.pdf', 'epub']:
+      deletes += 1
+      if verbose:
+        pbar.write(f"  Deleting pickle for unreadable {target['name']}")
+      if not dry_run:
+        gcache.trash_file(pickle['id'])
+  pbar.close()
+  print(f"Deleted {deletes} of {len(all_pickles)} pickle files!")
 
 if __name__ == "__main__":
   arguments = argument_parser.parse_args()
   print("Will perform the following tasks:")
+  print(f"  Extensions: {arguments.extensions}")
   print(f"  Shortcuts: {arguments.shortcuts}")
   print(f"  Sharing: {arguments.sharing}")
   print(f"  Duplicates: {arguments.duplicates}")
   # print(f"  Old Cleanup: {arguments.oldies}")
+  print(f"  Pickles: {arguments.pickles}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
+  if arguments.extensions:
+    fix_file_extensions(verbose=arguments.verbose, dry_run=False)
   if arguments.shortcuts:
     create_all_missing_shortcuts(verbose=arguments.verbose)
   if arguments.sharing:
     ensure_all_public_files_are_shared(verbose=arguments.verbose)
   if arguments.duplicates:
     remove_duplicate_files(verbose=arguments.verbose)
+  if arguments.pickles:
+    remove_dangling_pickles(verbose=arguments.verbose)
   print("All tasks complete")

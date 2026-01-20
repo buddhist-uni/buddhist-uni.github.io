@@ -3,6 +3,7 @@
 import sqlite3
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+from time import sleep
 
 import gdrive_base
 
@@ -543,6 +544,11 @@ class DriveCache:
         self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
         self.conn.commit()
     
+    def rename_file(self, file_id: str, new_name: str):
+        gdrive_base.rename_file(file_id, new_name)
+        self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
+        self.conn.commit()
+    
     def create_folder(self, folder_name: str, parent_id: str) -> str:
         """Creates a new folder with the name and parent and rets the new id"""
         if parent_id.startswith('http'):
@@ -588,6 +594,17 @@ class DriveCache:
             }
         })
         return new_id
+
+    def upload_file(self, fp: Path, filename=None, folder_id=None) -> str | None:
+        """Returns the id of the uploaded file if successful"""
+        ret = gdrive_base.upload_to_google_drive(fp, filename=filename, folder_id=folder_id)
+        if not ret:
+            return None
+        # A bit to complicated to guess what the values will be,
+        # so just do a full update
+        sleep(3)
+        self.update()
+        return ret
 
     ######
     # Connection management

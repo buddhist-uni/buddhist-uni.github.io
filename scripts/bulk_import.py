@@ -129,6 +129,7 @@ class BulkPDFImporter(BulkItemImporter):
     super().__init__()
     self.pdf_type = pdf_type
     match pdf_type:
+      # Make sure to update gdrive.select_ids_to_keep as well
       case 'academia.edu':
         self.folder_name = "🏛️ Academia.edu"
       case _:

@@ -245,6 +245,8 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
     Path(str(destination)+'.part').rename(destination)
 
 def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None, verbose=True):
+    if verbose:
+      print(f"Uploading {file_path.name}...")
     file_metadata = {'name': (filename or os.path.basename(file_path))}
     if folder_id:
         file_metadata['parents'] = [folder_id]
@@ -253,6 +255,12 @@ def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=Non
         file_metadata['properties']['createdBy'] = creator
     media = MediaFileUpload(file_path, resumable=True)
     return _perform_upload(file_metadata, media, verbose=verbose)
+
+def rename_file(file_id: str, new_name: str):
+  execute(session().files().update(
+    fileId=file_id,
+    body={'name': new_name},
+  ))
 
 def _perform_upload(file_metadata, media, verbose=True, update_file=False):
     # Don't use the shared session() so that uploads can be parallelized

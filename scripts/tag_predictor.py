@@ -54,17 +54,20 @@ STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
 NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
 NORMALIZED_DRIVE_FOLDER = '1b1dOGh-fmbOhmwoPEnUgDehpqnQhOJ8Z'
 
-def save_normalized_text(drive_file_id, normalized_text):
+def local_normalized_text_file(drive_file_id):
     name = f"{drive_file_id}.pkl"
     NORMALIZED_TEXT_FOLDER.mkdir(exist_ok=True)
-    normalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
+    return NORMALIZED_TEXT_FOLDER.joinpath(name)
+
+def save_normalized_text(drive_file_id, normalized_text):
+    normalizedtextfile = local_normalized_text_file(drive_file_id)
     if normalizedtextfile.exists():
         return
     import gdrive_base as gdrive
     mimeType = "application/octet-stream"
     metadata = {
       "mimeType": mimeType,
-      "name": name,
+      "name": normalizedtextfile.name,
       "parents": [NORMALIZED_DRIVE_FOLDER],
     }
     buffer = gdrive.BytesIO()
