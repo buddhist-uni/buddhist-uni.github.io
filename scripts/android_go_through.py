@@ -91,7 +91,7 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
       print(f"Warning! Dunno how to read a {fp.suffix} file!")
       return normalize_text(fp.stem)
     text = normalize_text(text)
-    save_normalized_text(gf['id'], text)
+    save_normalized_text(google_id, text)
   return text
 
 if cli_args.init:
@@ -148,6 +148,23 @@ if cli_args.init:
       destination=LOCAL_FOLDER.joinpath(name),
       verbose=False,
     )
+    id_for_path[name] = child['id']
+  import random
+  # refetch files to get downloads
+  # and randomize for more accurate tqdm est
+  local_files = sorted(
+    [f for f in LOCAL_FOLDER.iterdir() if f.is_file()],
+    key=lambda f: random.random(),
+  )
+  print("  Extracting text from files...")
+  pbar = tqdm(local_files, unit="file")
+  for fp in pbar:
+    load_normalized_text_for_file(fp, id_for_path[fp.name])
+  # and resort for the actual review
+  local_files = sorted(
+    [f for f in local_files],
+    key=lambda f: -f.stat().st_size, # Largest first
+  )
 
 for fp in local_files:
     print(f"Opening {fp.name}...")

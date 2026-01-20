@@ -223,7 +223,7 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
         else:
           return
       else:
-        raise FileExistsError(f"Attempting  to download {fileid} to \"{destination}\" which already exists")
+        raise FileExistsError(f"Attempting to download {fileid} to \"{destination}\" which already exists")
     buffer = open(str(destination)+'.part', 'wb')
   request = session().files().get_media(fileId=fileid)
   downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
