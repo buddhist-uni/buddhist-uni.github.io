@@ -1207,6 +1207,10 @@
   "private": "https://drive.google.com/drive/folders/1QeRUxesBjgcaFWoqNhPShI0su4_XEUDi",
   "public": ""
  },
+ "hci": {
+  "private": "https://drive.google.com/drive/folders/1RqvXCG11GbqFkd0jGfUrDmmIP1vNtw0c",
+  "public": null
+ },
  "health": {
   "private": "https://drive.google.com/drive/folders/1TqZD4YHcP6yCvyhkPKmkXtcsb8sZcbnO",
   "public": null
@@ -2998,6 +3002,10 @@
  "syntax": {
   "private": "https://drive.google.com/drive/folders/1Hih055XySoLGYtqgcsl5ygX0X1t9nuVC",
   "public": ""
+ },
+ "syria": {
+  "private": "https://drive.google.com/drive/folders/11b3y3g-R0DVnN4ktKGI1CrU-s74F5dh5",
+  "public": null
  },
  "tai-languages": {
   "private": "https://drive.google.com/drive/folders/1dG7oqOxmn46ggtE6CiqJYl9jmu1zRan4",

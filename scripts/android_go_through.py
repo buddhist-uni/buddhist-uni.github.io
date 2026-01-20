@@ -8,6 +8,7 @@ with yaspin(text="Initializing..."):
     DelayedKeyboardInterrupt,
     md5,
     file_info,
+    input_with_prefill,
   )
   from argparse import (
     ArgumentParser,
@@ -20,8 +21,7 @@ with yaspin(text="Initializing..."):
   )
   parser.add_argument(
     "local_folder",
-    nargs=1,
-    required=False,
+    nargs='?',
     default=git_root_folder.joinpath("../To Go Through").resolve(),
     type=Path,
     help="Directory storing the inbox files",
@@ -95,7 +95,7 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
   return text
 
 if cli_args.init:
-  print(f"Setting up {LOCAL_FOLDER} as inbox folder...")
+  print(f"Setting up '{LOCAL_FOLDER}' as inbox folder...")
   import json
   import gdrive
   drive_folders = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
@@ -112,10 +112,14 @@ if cli_args.init:
   print(f"  Ensuring all local files are already on Drive and are unsorted...")
   pbar = tqdm(local_files, unit="file", desc="  ")
   remote_files_seen = set()
+  id_for_path = dict()
   for fp in pbar:
     remote_file = gdrive.remote_file_for_local_file(fp, folder_slugs, default_folder_id=REMOTE_FOLDER)
+    if not remote_file:
+      raise ValueError(f"Failed to find / upload {fp.name} ?")
     if remote_file['parent_id'] == REMOTE_FOLDER:
       remote_files_seen.add(remote_file['id'])
+      id_for_path[fp.name] = remote_file['id']
     else:
       pbar.write(f"    Deleting already sorted {fp.name}")
       # fp.unlink()
@@ -123,15 +127,25 @@ if cli_args.init:
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
   print(f"  Ensuring all remote files are downloaded locally...")
   children = tqdm(gdrive.gcache.sql_query(
-    "parent_id = ? AND mime_type != ? AND shortcut_target IS NULL",
-    (REMOTE_FOLDER, 'application/vnd.google-apps.folder', )
+    "parent_id = ? AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
+    (REMOTE_FOLDER, 'application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
   ), unit="file", desc="Downloading")
   for child in children:
     if child['id'] in remote_files_seen:
       continue
+    name = child['name'] 
+    if name in id_for_path:
+      print(f"We already downloaded {gdrive.DRIVE_LINK.format(id_for_path[name])} to '{name}'.\nPlease decide on a new, unique name for {gdrive.DRIVE_LINK.format(child['id'])}")
+      name = input_with_prefill('name (or trash): ', name)
+      if not name or name == 'trash':
+        print("Trashing...")
+        gdrive.gcache.trash_file(child['id'])
+        continue
+      gdrive.gcache.rename_file(child['id'], name)
+    children.write(f"Downloading '{name}' ({round(child['size']/1000000, 2)} MB)...")
     gdrive.download_file(
       child['id'],
-      destination=LOCAL_FOLDER.joinpath(child['name']),
+      destination=LOCAL_FOLDER.joinpath(name),
       verbose=False,
     )
 

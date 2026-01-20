@@ -600,10 +600,17 @@ class DriveCache:
         ret = gdrive_base.upload_to_google_drive(fp, filename=filename, folder_id=folder_id)
         if not ret:
             return None
-        # A bit to complicated to guess what the values will be,
-        # so just do a full update
-        sleep(3)
-        self.update()
+        # A bit too complicated to guess what the values will be,
+        # so just fetch it. Give Google 2 sec to propagate first
+        sleep(2)
+        self.upsert_item(
+          gdrive_base.execute(
+            gdrive_base.session().files().get(
+              fileId=ret,
+              fields=FILE_FIELDS,
+            )
+          )
+        )
         return ret
 
     ######

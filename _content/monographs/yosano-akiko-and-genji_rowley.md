@@ -19,11 +19,11 @@ address: "Ann Arbor"
 pages: 193
 ---
 
-> The characterization of Akiko as a totem figure of modernity, whether as “poetess of passion” or trailblazer of the New, distorts our view of her life and work in two major ways. In the first place, it fosters the misreading of that portion of her oeuvre for which she is best known, her poetry. 
-And second, it diverts attention from an equally important part of her career, that part devoted not to poetry but to the Japanese classics, in particular *The Tale of Genji*.
+> Texts are more amenable to alteration than people.
+
 
 > [Sassa Seisetsu was] keen to counter the image—perhaps the result of victory in the Russo-Japanese War of 1904—of the Japanese as a race of battle-hungry samurai. The true Japanese is a lover of beauty, a person of gentility and feeling—in other words, a Heian courtier. *The Tale of Genji*, as the “epitome of this culture,” thus had important tasks to perform: to make “every citizen” aware of his or her “true national character” and to provide proof of a certain cultural superiority. *The Tale of Genji*, in short, ought to be one of the prime movers in the Meiji project of forging a new national identity:
 
-> [But] the *Shinshaku* project was never completed; nor would it have been a readable, modern *Genji* even if it had been. [...] In the end, it was Yosano Akiko—self–taught, a disciple of no one, and with no ideological axe to grind—who actually achieved what the scholars of 'National Literature' had been aiming to do...
+> [But] the *Shinshaku* project was never completed; nor would it have been a readable, modern *Genji* even if it had been. [...] In the end, it was Yosano Akiko—self–taught, a disciple of no one, and with no ideological axe to grind—who actually achieved what the scholars of 'National Literature' had been aiming to do.
 
-> Texts are more amenable to alteration than people.
+

@@ -340,14 +340,15 @@ if __name__ == "__main__":
 def has_file_already(file_in_question) -> list:
   hash, _ = file_info(file_in_question)
   file_in_question = Path(file_in_question)
-  cfs = gcache.get_items_with_md5(hash)
+  mine = lambda l: [f for f in l if f['owners'][0]['me']]
+  cfs = mine(gcache.get_items_with_md5(hash))
   if len(cfs) > 0:
     return cfs
   if len(file_in_question.name) > 16:
-    cfs = gcache.files_exactly_named(file_in_question.name)
+    cfs = mine(gcache.files_exactly_named(file_in_question.name))
     if len(cfs) > 0:
       return cfs
-    cfs = gcache.files_originally_named_exactly(file_in_question.name)
+    cfs = mine(gcache.files_originally_named_exactly(file_in_question.name))
     if len(cfs) > 0:
       return cfs
   return []
@@ -434,7 +435,7 @@ def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str,
     if len(files_to_keep) > 1:
       print("!!vvPLEASE Review the below duplicates manually vv!!")
     for file in files_to_keep:
-      print(f"  Keeping \"{file['name']}\" in \"{file['parent']['name']}\"")
+      print(f"  Keeping \"{file['name']}\" in \"{(file['parent'] or {}).get('name')}\"")
       if len(files_to_keep) > 1:
         print(f"    {DRIVE_LINK.format(file['id'])}")
         print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
