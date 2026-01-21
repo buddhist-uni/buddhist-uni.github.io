@@ -5,7 +5,6 @@ with yaspin(text="Initializing..."):
     Path,
     git_root_folder,
     system_open,
-    DelayedKeyboardInterrupt,
     md5,
     file_info,
     input_with_prefill,
@@ -81,17 +80,16 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
       local_file.unlink()
       print(f"WARNING: Found bad remote pickle {local_file.name} at {remote_file['id']}")
   text = ""
-  with DelayedKeyboardInterrupt():
-    if fp.suffix.lower() == '.pdf':
-      text = readpdf(fp)
-    elif fp.suffix.lower() == '.epub':
-      text = read_epub(fp)
-    # If you ever teach me how to read another file type,
-    # please tell clean_google_drive's pickle filter about the new extension
-    else:
-      raise Exception("Should have been handled above.")
-    text = normalize_text(text)
-    save_normalized_text(google_id, text)
+  if fp.suffix.lower() == '.pdf':
+    text = readpdf(fp)
+  elif fp.suffix.lower() == '.epub':
+    text = read_epub(fp)
+  # If you ever teach me how to read another file type,
+  # please tell clean_google_drive's pickle filter about the new extension
+  else:
+    raise Exception("Should have been handled above.")
+  text = normalize_text(text)
+  save_normalized_text(google_id, text)
   return text
 
 if cli_args.init:
@@ -193,7 +191,7 @@ if cli_args.init:
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
   tqdm_thread_map(process_local_file, local_files, max_workers=8, unit="file")
   print(f"# Ensuring all remote files are downloaded locally...")
-  children = tqdm(remote_children, unit="file", desc="Downloading")
+  children = tqdm(remote_children, unit="file")
   for child in children:
     if child['id'] in remote_ids_seen:
       continue
@@ -220,18 +218,16 @@ if cli_args.init:
   # randomize for more accurate tqdm est
   local_files.sort(key=lambda f: random.random())
   print("# Extracting text from files...")
-  pbar = tqdm(local_files, unit="file")
   from tag_predictor import NORMALIZED_TEXT_FOLDER, normalize_text
-  for fp in pbar:
+  def extract_text_from(fp):
     if fp.suffix.lower() not in ['.pdf', '.epub']:
       continue # Don't even bother trying
     gid = remote_files_by_name[fp.name]['id']
-    if remote_files_by_name[fp.name]['mimeType'] == 'application/pdf' and remote_files_by_name[fp.name]['parent_id'] == REMOTE_FOLDER:
-      continue # We will get this one below in the PDF sort subroutine
     # Short circuit actually reading the file as existance is good enough here
     if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
       continue
     load_normalized_text_for_file(fp, gid)
+  tqdm_thread_map(extract_text_from, local_files, max_workers=4, unit="file")
   del remote_files_by_name
   print("# Sorting PDFs into bulk import folders...")
   children = gdrive.gcache.sql_query(
