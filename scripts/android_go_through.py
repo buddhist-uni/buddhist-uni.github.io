@@ -135,21 +135,29 @@ if cli_args.init:
   print(f"# Removing local duplicates...")
   from collections import defaultdict
   pbar = tqdm(local_files, unit="file")
-  md5_local_names = defaultdict(set)
+  size_to_local_names = defaultdict(set)
   for fp in pbar:
-    md5_local_names[md5(fp)].add(fp.name)
-  for hash, name_list in md5_local_names.items():
+    size_to_local_names[fp.stat().st_size].add(fp.name)
+  for size, name_list in size_to_local_names.items():
     if len(name_list) <= 1:
       continue
-    name_to_keep = max(name_list, key=lambda n: len(n))
-    print(f"Keeping: {name_to_keep}")
-    for name in name_list:
-      if name == name_to_keep:
+    md5s = [md5(LOCAL_FOLDER.joinpath(name)) for name in name_list]
+    md5s_to_name = defaultdict(set)
+    for name, md5 in zip(name_list, md5s):
+      md5s_to_name[md5].add(name)
+    for md5, actually_same_name_list in md5s_to_name.items():
+      if len(actually_same_name_list) <= 1:
         continue
-      fp = LOCAL_FOLDER.joinpath(name)
-      print(f"  Deleting: {name}")
-      fp.unlink()
-  del md5_local_names
+      name_to_keep = max(actually_same_name_list, key=lambda n: len(n))
+      print(f"Keeping: {name_to_keep}")
+      for name in actually_same_name_list:
+        if name == name_to_keep:
+          continue
+        fp = LOCAL_FOLDER.joinpath(name)
+        print(f"  Deleting: {name}")
+        local_files.remove(fp)
+        fp.unlink()
+  del size_to_local_names
   print(f"# Ensuring all local files are already on Drive and are unsorted...")
   pbar = tqdm(local_files, unit="file")
   remote_ids_seen = set()
