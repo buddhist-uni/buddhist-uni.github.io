@@ -103,7 +103,7 @@ def sanitize_string(text):
 def atoi(text):
     return int(text) if text.isdigit() else text
 
-def md5(text):
+def md5(text: bytes | str | Path):
   """Note: assumes text is the thing to hash. Pass a Path object for files."""
   bts = None
   if isinstance(text, bytes):

@@ -465,6 +465,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
     "🏛️ academia.edu",
     "🌱 dharma seed",
     "📼 youtube videos",
+    "📥 to go through",
     "DhammaTalks",
     "unread",
     'archive', # normally we wouldn't delete these losing data,

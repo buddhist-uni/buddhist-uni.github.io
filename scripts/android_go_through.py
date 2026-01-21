@@ -9,6 +9,7 @@ with yaspin(text="Initializing..."):
     md5,
     file_info,
     input_with_prefill,
+    prompt,
   )
   from argparse import (
     ArgumentParser,
@@ -40,8 +41,8 @@ with yaspin(text="Initializing..."):
   if not LOCAL_FOLDER.is_dir() and not cli_args.init:
     raise ValueError(f"{str(LOCAL_FOLDER)} is not a valid directory.")
   # TODO: parameterize these as well?
-  # TODO: add link to split folder as well?
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
+  LOCAL_SPLIT_FOLDER = git_root_folder.joinpath("../To Split/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
 
@@ -126,16 +127,27 @@ if cli_args.init:
         folder_slugs,
         default_folder_id=REMOTE_FOLDER,
       )
-      remote_files_by_name[fp.name] = remote_file
     if not remote_file:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] == REMOTE_FOLDER:
+      if fp.name != remote_file['name']:
+        print(f"Found \"{fp.name}\" in the remote folder, but there it's called \"{remote_file['name']}\"")
+        if prompt("Rename remote file to local name?"):
+          gdrive.gcache.rename_file(remote_file['id'], fp.name)
+          remote_file['name'] = fp.name
+        else:
+          assert not LOCAL_FOLDER.joinpath(remote_file['name']).exists(), f"Cannot rename local file to remote name as another file already exists with that name"
+          assert prompt("Rename local file to remote name?"), "Then, what do you want me to do?"
+          new_fp = fp.parent.joinpath(remote_file['name'])
+          fp.rename(new_fp)
+          fp = new_fp
+      remote_files_by_name[fp.name] = remote_file
       remote_ids_seen.add(remote_file['id'])
       local_filenames_seen.add(fp.name)
     else:
       pbar.write(f"    Deleting already sorted {fp.name}")
       # fp.unlink()
-      # For now just move to be on the safe side...
+      # For now just move it out to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
   print(f"  Ensuring all remote files are downloaded locally...")
   children = tqdm(remote_children, unit="file", desc="Downloading")
@@ -172,6 +184,8 @@ if cli_args.init:
     if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
       continue
     load_normalized_text_for_file(fp, gid)
+  print("Done setting up local folder! Run again without init to review files")
+  exit()
 
 local_files.sort(
   key=lambda f: -f.stat().st_size, # Largest first
@@ -198,7 +212,8 @@ for fp in local_files:
       gfs = gdrive.gcache.files_exactly_named(fp.name)
       gf = None
       if not gfs:
-        raise NotImplementedError("File not found on Drive at all.")
+        print("File not found on drive with that name. Please rerun this script with --init")
+        exit(1)
       if len(gfs) == 1:
         gf = gfs[0]
         if REMOTE_FOLDER != gf['parent_id']:
@@ -213,7 +228,7 @@ for fp in local_files:
             break
         if gf is None:
           raise NotImplementedError("No md5 match found in the TGT folder.")
-        trash_it = False
+        moved_already = False
         for f in gfs:
           if f['id'] == gf['id']:
             continue
@@ -222,8 +237,8 @@ for fp in local_files:
               print("\nFound duplicate file in remote TGT folder. Deleting it...")
               gdrive.gcache.trash_file(f['id'])
             else:
-              trash_it = True
-        if trash_it:
+              moved_already = True
+        if moved_already:
           print("\nFile moved already! Moving on...")
           gdrive.gcache.trash_file(gf['id'])
           fp.unlink()
@@ -246,6 +261,11 @@ for fp in local_files:
         gfolder = gdrive.get_gfolders_for_course(course)
         gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_MERGE_FOLDER)
+    elif course == "to-split":
+        import shutil
+        gfolder = gdrive.get_gfolders_for_course(course)
+        gdrive.move_gfile(glink, gfolder)
+        shutil.move(fp, LOCAL_SPLIT_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
         if gfolder[0]:

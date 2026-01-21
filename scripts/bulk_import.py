@@ -132,6 +132,8 @@ class BulkPDFImporter(BulkItemImporter):
       # Make sure to update gdrive.select_ids_to_keep as well
       case 'academia.edu':
         self.folder_name = "🏛️ Academia.edu"
+      case 'togothrough':
+        self.folder_name = "📥 To Go Through"
       case _:
         raise ValueError("Invalid PDF type: "+pdf_type)
 
@@ -715,7 +717,7 @@ These items can be:
     '--pdf-type',
     dest="pdf_type",
     nargs="?",
-    choices=['academia.edu'],
+    choices=['academia.edu', 'togothrough'],
     help="Which subfolder to sort PDFs into (required if importing PDFs)",
   )
   argparser.add_argument(
