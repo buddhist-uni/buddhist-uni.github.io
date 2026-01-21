@@ -114,7 +114,19 @@ if cli_args.init:
   remote_files_seen = set()
   id_for_path = dict()
   for fp in pbar:
-    remote_file = gdrive.remote_file_for_local_file(fp, folder_slugs, default_folder_id=REMOTE_FOLDER)
+    remote_file = gdrive.gcache.sql_query(
+      "name = ? AND parent_id = ?",
+      (fp.name, REMOTE_FOLDER, )
+    )
+    if remote_file:
+      assert len(remote_file) == 1, f"Found multiple files named \"{fp.name}\""
+      remote_file = remote_file[0]
+    else:
+      remote_file = gdrive.remote_file_for_local_file(
+        fp,
+        folder_slugs,
+        default_folder_id=REMOTE_FOLDER,
+      )
     if not remote_file:
       raise ValueError(f"Failed to find / upload {fp.name} ?")
     if remote_file['parent_id'] == REMOTE_FOLDER:
