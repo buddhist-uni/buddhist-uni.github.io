@@ -599,6 +599,31 @@ def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread
   print(f"Got {len(course_to_auto_folder)} {importer_type} folders")
   return (course_to_auto_folder, auto_folder_to_course)
 
+def get_or_create_autopdf_folder_for_course(
+    new_course: str,
+    folder_name: str,
+    course_to_autopdf_folder: dict,
+    course_name_to_unread_id_map: dict,
+    unread_id_to_course_name_map: dict,
+    autopdf_folder_to_course: dict,
+) -> str:
+  if new_course not in course_to_autopdf_folder:
+    if new_course not in course_name_to_unread_id_map:
+      course_name_to_unread_id_map[new_course] = gdrive.gcache.create_folder(
+        "Unread",
+        gdrive.get_gfolders_for_course(new_course)[1],
+      )
+      unread_id_to_course_name_map[course_name_to_unread_id_map[new_course]] = new_course
+    new_folder = gdrive.gcache.create_folder(
+      folder_name,
+      course_name_to_unread_id_map[new_course],
+    )
+    course_to_autopdf_folder[new_course] = new_folder
+    autopdf_folder_to_course[new_folder] = new_course
+  else:
+    new_folder = course_to_autopdf_folder[new_course]
+  return new_folder
+
 def resort_existing_link_docs():
   # We don't use the unread id map here as the importers will call
   # gdrive.gcache.get_subfolders themselves.
@@ -670,21 +695,14 @@ def resort_existing_pdfs_of_type(pdf_type: str):
     new_course = course_predictor.predict([
       normalized_text + normalize_text((' '+drive_file['name'][:-4]) * 3)
     ], normalized=True)[0]
-    if new_course not in course_to_autopdf_folder:
-      if new_course not in course_name_to_unread_id_map:
-        course_name_to_unread_id_map[new_course] = gdrive.gcache.create_folder(
-          "Unread",
-          gdrive.get_gfolders_for_course(new_course)[1],
-        )
-        unread_id_to_course_name_map[course_name_to_unread_id_map[new_course]] = new_course
-      new_folder = gdrive.gcache.create_folder(
-        folder_name,
-        course_name_to_unread_id_map[new_course],
-      )
-      course_to_autopdf_folder[new_course] = new_folder
-      autopdf_folder_to_course[new_folder] = new_course
-    else:
-      new_folder = course_to_autopdf_folder[new_course]
+    new_folder = get_or_create_autopdf_folder_for_course(
+      new_course,
+      folder_name,
+      course_to_autopdf_folder,
+      course_name_to_unread_id_map,
+      unread_id_to_course_name_map,
+      autopdf_folder_to_course,
+    )
     old_folder = drive_file['parents'][0]
     old_course = autopdf_folder_to_course[old_folder]
     if old_folder != new_folder:

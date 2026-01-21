@@ -9,7 +9,6 @@ with yaspin(text="Initializing..."):
     md5,
     file_info,
     input_with_prefill,
-    prompt,
   )
   from argparse import (
     ArgumentParser,
@@ -44,6 +43,7 @@ with yaspin(text="Initializing..."):
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
   LOCAL_SPLIT_FOLDER = git_root_folder.joinpath("../To Split/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
+  REMOTE_FOLDER_NAME = "📥 To Go Through"
   local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
 
 def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
@@ -55,7 +55,11 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
     local_normalized_text_file,
     joblib,
     NORMALIZED_DRIVE_FOLDER,
+    TagPredictor,
   )
+  # Short out early if we can't read the file type
+  if fp.suffix.lower() not in ['.pdf', '.epub']:
+    return ''
   import gdrive
   from pickle import UnpicklingError
   local_file = local_normalized_text_file(google_id)
@@ -86,8 +90,7 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
     # If you ever teach me how to read another file type,
     # please tell clean_google_drive's pickle filter about the new extension
     else:
-      print(f"Warning! Dunno how to read a {fp.suffix} file!")
-      return normalize_text(fp.stem)
+      raise Exception("Should have been handled above.")
     text = normalize_text(text)
     save_normalized_text(google_id, text)
   return text
@@ -106,16 +109,32 @@ if cli_args.init:
     for k in drive_folders
   }
   folder_slugs = {**private_folder_slugs, **public_folder_slugs}
+  from bulk_import import (
+    BulkPDFImporter,
+    get_all_predictable_unread_folders,
+    all_folders_with_name_by_course,
+    get_or_create_autopdf_folder_for_course,
+  )
+  bulk_importer = BulkPDFImporter("togothrough")
+  folder_name = bulk_importer.get_unread_subfolder_name()
+  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders()
+  course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
+    folder_name,
+    "To Go Through",
+    unread_id_to_course_name_map,
+  )
+  remote_folder_ids = set(autopdf_folder_to_course.keys())
+  remote_folder_ids.add(REMOTE_FOLDER)
   remote_children = gdrive.gcache.sql_query(
-    "parent_id = ? AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
-    (REMOTE_FOLDER, 'application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
+    "parent_id IN ({','.join('?' * (1+len(course_to_autopdf_folder)))}) AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
+    tuple(remote_folder_ids) + ('application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
   )
   remote_files_by_name = dict()
   for gfile in remote_children:
     assert gfile['name'] not in remote_files_by_name, f"Found duplicate file name \"{gfile['name']}\""
     remote_files_by_name[gfile['name']] = gfile
   from tqdm import tqdm
-  print(f"  Ensuring all local files are already on Drive and are unsorted...")
+  print(f"# Ensuring all local files are already on Drive and are unsorted...")
   pbar = tqdm(local_files, unit="file", desc="  ")
   remote_ids_seen = set()
   local_filenames_seen = set()
@@ -129,7 +148,7 @@ if cli_args.init:
       )
     if not remote_file:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
-    if remote_file['parent_id'] == REMOTE_FOLDER:
+    if remote_file['parent_id'] in remote_folder_ids:
       if fp.name != remote_file['name']:
         print(f"Found\n  \"{fp.name}\"")
         print("in the remote folder, but there it's called")
@@ -145,7 +164,7 @@ if cli_args.init:
       # fp.unlink()
       # For now just move it out to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
-  print(f"  Ensuring all remote files are downloaded locally...")
+  print(f"# Ensuring all remote files are downloaded locally...")
   children = tqdm(remote_children, unit="file", desc="Downloading")
   for child in children:
     if child['id'] in remote_ids_seen:
@@ -168,19 +187,53 @@ if cli_args.init:
     )
     local_files.append(dest_file)
     local_filenames_seen.add(name)
+  del remote_children
   import random
   # randomize for more accurate tqdm est
   local_files.sort(key=lambda f: random.random())
-  print("  Extracting text from files...")
+  print("# Extracting text from files...")
   pbar = tqdm(local_files, unit="file")
   from tag_predictor import NORMALIZED_TEXT_FOLDER
   for fp in pbar:
+    if fp.suffix.lower() not in ['.pdf', '.epub']:
+      continue # Don't even bother trying
     gid = remote_files_by_name[fp.name]['id']
+    if remote_files_by_name[fp.name]['mimeType'] == 'application/pdf' and remote_files_by_name[fp.name]['parent_id'] == REMOTE_FOLDER:
+      continue # We will get this one below in the PDF sort subroutine
     # Short circuit actually reading the file as existance is good enough here
     if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
       continue
     load_normalized_text_for_file(fp, gid)
-  print("Done setting up local folder! Run again without init to review files")
+  del remote_files_by_name
+  print("# Sorting PDFs into bulk import folders...")
+  course_predictor = TagPredictor.load()
+  children = tqdm(gdrive.gcache.sql_query(
+    "parent_id = ? AND mime_type = 'application/pdf' AND shortcut_target IS NULL",
+    (REMOTE_FOLDER,),
+  ), unit="file")
+  for child in children:
+    fp = LOCAL_FOLDER.joinpath(child['name'])
+    normalized_text = load_normalized_text_for_file(fp, child['id'])
+    course = course_predictor.predict([
+      normalized_text + ' ' + normalize_text((' '+fp.stem) * 3)
+    ], normalized=True)[0]
+    new_folder = get_or_create_autopdf_folder_for_course(
+      course,
+      REMOTE_FOLDER_NAME,
+      course_to_autopdf_folder,
+      course_name_to_unread_id_map,
+      unread_id_to_course_name_map,
+      autopdf_folder_to_course,
+    )
+    gdrive.gcache.move_file(
+      child['id'],
+      new_folder,
+      [REMOTE_FOLDER],
+      verbose=False,
+    )
+    children.write(f"Moved '{child['name']}' to {course}/Unread/{REMOTE_FOLDER_NAME}")
+
+  print("Done setting up local folder! Run again without --init to review files")
   exit()
 
 local_files.sort(
@@ -212,28 +265,39 @@ for fp in local_files:
         exit(1)
       if len(gfs) == 1:
         gf = gfs[0]
-        if REMOTE_FOLDER != gf['parent_id']:
+        parent = gdrive.gcache.get_item(gf['parent_id'])
+        if REMOTE_FOLDER != gf['parent_id'] and parent['name'] != REMOTE_FOLDER_NAME:
           print("\nFile moved already! Moving on...")
           fp.unlink()
           continue
       else: # len(gfs) > 1
         tgt_md5 = md5(fp)
         for f in gfs:
-          if REMOTE_FOLDER == f['parent_id'] and f['md5_checksum'] == tgt_md5:
-            gf = f
-            break
-        if gf is None:
-          raise NotImplementedError("No md5 match found in the TGT folder.")
-        moved_already = False
-        for f in gfs:
-          if f['id'] == gf['id']:
-            continue
           if f['md5_checksum'] == tgt_md5:
             if REMOTE_FOLDER == f['parent_id']:
-              print("\nFound duplicate file in remote TGT folder. Deleting it...")
-              gdrive.gcache.trash_file(f['id'])
-            else:
-              moved_already = True
+              gf = f
+              break
+            parent = gdrive.gcache.get_item(f['parent_id'])
+            if parent['name'] == REMOTE_FOLDER_NAME:
+              gf = f
+              break
+        moved_already = False
+        if gf is None:
+          if any(f['md5_checksum'] == tgt_md5 for f in gfs):
+            moved_already = True
+          else:
+            raise NotImplementedError(f"Unable to find \"{fp.name}\" remotely by MD5, only by name.")
+        else:
+          for f in gfs:
+            if f['id'] == gf['id']:
+              continue
+            if f['md5_checksum'] == tgt_md5:
+              parent = gdrive.gcache.get_item(f['parent_id'])
+              if REMOTE_FOLDER == f['parent_id'] or parent['name'] == REMOTE_FOLDER_NAME:
+                print("\nFound duplicate file in remote TGT folder. Deleting it...")
+                gdrive.gcache.trash_file(f['id'])
+              else:
+                moved_already = True
         if moved_already:
           print("\nFile moved already! Moving on...")
           gdrive.gcache.trash_file(gf['id'])
@@ -244,9 +308,13 @@ for fp in local_files:
       if fp.suffix.lower() == '.pdf':
         pagecount = get_page_count(fp)
       else:
-        pagecount = -(len(text)//-1800)
+        pagecount = -(len(text)//-1700)
       glink = DRIVE_LINK.format(gf['id'])
-      course = predictor.predict([text], normalized=True)[0] + "/unread"
+      from tag_predictor import normalize_text
+      course = predictor.predict(
+        [text + ''.join([' ', normalize_text(gf['name'][:-4])]*3)],
+        normalized=True,
+      )[0] + "/unread"
     course = gdrive.input_course_string_with_tab_complete(prefill=course)
     if course == "trash":
         print("Trashing...")
