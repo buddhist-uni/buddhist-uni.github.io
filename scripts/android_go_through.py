@@ -43,10 +43,7 @@ with yaspin(text="Initializing..."):
   # TODO: add link to split folder as well?
   LOCAL_MERGE_FOLDER = git_root_folder.joinpath("../To Merge/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
-  local_files = sorted(
-    [f for f in LOCAL_FOLDER.iterdir() if f.is_file()],
-    key=lambda f: -f.stat().st_size, # Largest first
-  )
+  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
 
 def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
   from pdfutils import readpdf
@@ -108,46 +105,46 @@ if cli_args.init:
     for k in drive_folders
   }
   folder_slugs = {**private_folder_slugs, **public_folder_slugs}
+  remote_children = gdrive.gcache.sql_query(
+    "parent_id = ? AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
+    (REMOTE_FOLDER, 'application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
+  )
+  remote_files_by_name = dict()
+  for gfile in remote_children:
+    assert gfile['name'] not in remote_files_by_name, f"Found duplicate file name \"{gfile['name']}\""
+    remote_files_by_name[gfile['name']] = gfile
   from tqdm import tqdm
   print(f"  Ensuring all local files are already on Drive and are unsorted...")
   pbar = tqdm(local_files, unit="file", desc="  ")
-  remote_files_seen = set()
-  id_for_path = dict()
+  remote_ids_seen = set()
+  local_filenames_seen = set()
   for fp in pbar:
-    remote_file = gdrive.gcache.sql_query(
-      "name = ? AND parent_id = ?",
-      (fp.name, REMOTE_FOLDER, )
-    )
-    if remote_file:
-      assert len(remote_file) == 1, f"Found multiple files named \"{fp.name}\""
-      remote_file = remote_file[0]
-    else:
+    remote_file = remote_files_by_name.get(fp.name)
+    if not remote_file:
       remote_file = gdrive.remote_file_for_local_file(
         fp,
         folder_slugs,
         default_folder_id=REMOTE_FOLDER,
       )
+      remote_files_by_name[fp.name] = remote_file
     if not remote_file:
-      raise ValueError(f"Failed to find / upload {fp.name} ?")
+      raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] == REMOTE_FOLDER:
-      remote_files_seen.add(remote_file['id'])
-      id_for_path[fp.name] = remote_file['id']
+      remote_ids_seen.add(remote_file['id'])
+      local_filenames_seen.add(fp.name)
     else:
       pbar.write(f"    Deleting already sorted {fp.name}")
       # fp.unlink()
       # For now just move to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
   print(f"  Ensuring all remote files are downloaded locally...")
-  children = tqdm(gdrive.gcache.sql_query(
-    "parent_id = ? AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
-    (REMOTE_FOLDER, 'application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
-  ), unit="file", desc="Downloading")
+  children = tqdm(remote_children, unit="file", desc="Downloading")
   for child in children:
-    if child['id'] in remote_files_seen:
+    if child['id'] in remote_ids_seen:
       continue
     name = child['name'] 
-    if name in id_for_path:
-      print(f"We already downloaded {gdrive.DRIVE_LINK.format(id_for_path[name])} to '{name}'.\nPlease decide on a new, unique name for {gdrive.DRIVE_LINK.format(child['id'])}")
+    if name in local_filenames_seen:
+      print(f"We already have a file named '{name}' ( {gdrive.DRIVE_LINK.format(remote_files_by_name[name]['id'])} ).\nPlease decide on a new, unique name for {gdrive.DRIVE_LINK.format(child['id'])}")
       name = input_with_prefill('name (or trash): ', name)
       if not name or name == 'trash':
         print("Trashing...")
@@ -155,29 +152,30 @@ if cli_args.init:
         continue
       gdrive.gcache.rename_file(child['id'], name)
     children.write(f"Downloading '{name}' ({round(child['size']/1000000, 2)} MB)...")
+    dest_file = LOCAL_FOLDER.joinpath(name)
     gdrive.download_file(
       child['id'],
-      destination=LOCAL_FOLDER.joinpath(name),
+      destination=dest_file,
       verbose=False,
     )
-    id_for_path[name] = child['id']
+    local_files.append(dest_file)
+    local_filenames_seen.add(name)
   import random
-  # refetch files to get downloads
-  # and randomize for more accurate tqdm est
-  local_files = sorted(
-    [f for f in LOCAL_FOLDER.iterdir() if f.is_file()],
-    key=lambda f: random.random(),
-  )
+  # randomize for more accurate tqdm est
+  local_files.sort(key=lambda f: random.random())
   print("  Extracting text from files...")
   pbar = tqdm(local_files, unit="file")
+  from tag_predictor import NORMALIZED_TEXT_FOLDER
   for fp in pbar:
-    load_normalized_text_for_file(fp, id_for_path[fp.name])
-  # and resort for the actual review
-  local_files = sorted(
-    [f for f in local_files],
-    key=lambda f: -f.stat().st_size, # Largest first
-  )
+    gid = remote_files_by_name[fp.name]['id']
+    # Short circuit actually reading the file as existance is good enough here
+    if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
+      continue
+    load_normalized_text_for_file(fp, gid)
 
+local_files.sort(
+  key=lambda f: -f.stat().st_size, # Largest first
+)
 for fp in local_files:
     print(f"Opening {fp.name}...")
     system_open(fp)
