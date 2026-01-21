@@ -55,7 +55,6 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
     local_normalized_text_file,
     joblib,
     NORMALIZED_DRIVE_FOLDER,
-    TagPredictor,
   )
   # Short out early if we can't read the file type
   if fp.suffix.lower() not in ['.pdf', '.epub']:
@@ -110,16 +109,15 @@ if cli_args.init:
   }
   folder_slugs = {**private_folder_slugs, **public_folder_slugs}
   from bulk_import import (
-    BulkPDFImporter,
     get_all_predictable_unread_folders,
     all_folders_with_name_by_course,
     get_or_create_autopdf_folder_for_course,
+    TagPredictor,
   )
-  bulk_importer = BulkPDFImporter("togothrough")
-  folder_name = bulk_importer.get_unread_subfolder_name()
-  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders()
+  course_predictor = TagPredictor.load()
+  unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor.classes)
   course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
-    folder_name,
+    REMOTE_FOLDER_NAME,
     "To Go Through",
     unread_id_to_course_name_map,
   )
@@ -206,7 +204,6 @@ if cli_args.init:
     load_normalized_text_for_file(fp, gid)
   del remote_files_by_name
   print("# Sorting PDFs into bulk import folders...")
-  course_predictor = TagPredictor.load()
   children = tqdm(gdrive.gcache.sql_query(
     "parent_id = ? AND mime_type = 'application/pdf' AND shortcut_target IS NULL",
     (REMOTE_FOLDER,),

@@ -567,11 +567,13 @@ def import_items(items: list[str], pdf_type=None):
         print(f"Batch {j+1}->{j+50} of {len(items)} {k}...")
         IMPORTERS[k].import_items(items[j:j+50])
 
-def get_all_predictable_unread_folders() -> tuple[dict[str, str], dict[str, str]]:
+def get_all_predictable_unread_folders(predictable_classes: list[str]) -> tuple[dict[str, str], dict[str, str]]:
   unread_id_to_course_name_map = dict()
   course_name_to_unread_id_map = dict()
+  if not predictable_classes:
+    predictable_classes = course_predictor.classes
   with yaspin(text="Loading all unread folders..."):
-    for course_name in course_predictor.classes:
+    for course_name in predictable_classes:
       _, private_id = gdrive.get_gfolders_for_course(course_name)
       assert bool(private_id), f"Why does {course_name} not have a private folder?"
       subfolders = gdrive.gcache.get_subfolders(private_id)
