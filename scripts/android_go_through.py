@@ -131,16 +131,12 @@ if cli_args.init:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] == REMOTE_FOLDER:
       if fp.name != remote_file['name']:
-        print(f"Found \"{fp.name}\" in the remote folder, but there it's called \"{remote_file['name']}\"")
-        if prompt("Rename remote file to local name?"):
-          gdrive.gcache.rename_file(remote_file['id'], fp.name)
-          remote_file['name'] = fp.name
-        else:
-          assert not LOCAL_FOLDER.joinpath(remote_file['name']).exists(), f"Cannot rename local file to remote name as another file already exists with that name"
-          assert prompt("Rename local file to remote name?"), "Then, what do you want me to do?"
-          new_fp = fp.parent.joinpath(remote_file['name'])
-          fp.rename(new_fp)
-          fp = new_fp
+        print(f"Found\n  \"{fp.name}\"")
+        print("in the remote folder, but there it's called")
+        print(f"  \"{remote_file['name']}\"")
+        print("Renaming the remote to the local name...")
+        gdrive.gcache.rename_file(remote_file['id'], fp.name)
+        remote_file['name'] = fp.name
       remote_files_by_name[fp.name] = remote_file
       remote_ids_seen.add(remote_file['id'])
       local_filenames_seen.add(fp.name)
