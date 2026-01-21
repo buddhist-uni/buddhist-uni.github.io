@@ -11,6 +11,8 @@ from yaspin import yaspin
 from tqdm import tqdm
 
 from datetime import datetime, timezone
+import threading
+from functools import wraps
 
 def UTC_NOW():
     now_utc = datetime.now(timezone.utc)
@@ -34,6 +36,15 @@ FILE_FIELDS_ARRAY = [
 ]
 FILE_FIELDS = ','.join(FILE_FIELDS_ARRAY)
 
+def locked(func):
+    """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
+    @wraps(func)
+    def wrapper(self, *args, **kwargs):
+        # pylint: disable=protected-access
+        with self._lock:
+            return func(self, *args, **kwargs)
+    return wrapper
+
 class DriveCache:
     """
     Manages a local SQLite cache for Google Drive file/folder metadata.
@@ -47,9 +58,8 @@ class DriveCache:
     cache.upsert_item(data)
     cache.close() # Don't forget to close when you're done!
 
-    Note that this is not thread-safe for writes.
-    Use a unique context for each individual write from within a thread.
-    SQLite itself should ensure the file is locked for each write.
+    Note that this is thread-safe for both reads and writes.
+    It uses an internal RLock to serialize access to the SQLite connection.
     """
 
     def __init__(self, db_path: str | Path):
@@ -60,7 +70,8 @@ class DriveCache:
             db_path: The file path for the SQLite database.
         """
         self.db_path = db_path
-        self.conn = sqlite3.connect(db_path)
+        self.conn = sqlite3.connect(db_path, check_same_thread=False)
+        self._lock = threading.RLock()
         # Return rows as dictionary-like objects
         self.conn.row_factory = sqlite3.Row
         self.cursor = self.conn.cursor()
@@ -130,6 +141,7 @@ class DriveCache:
         self.cursor.executescript(create_index_sql)
         self.conn.commit()
 
+    @locked
     def upsert_item(self, item_data: Dict[str, Any]):
         """
         Inserts or updates a single file/folder item in the cache.
@@ -145,6 +157,7 @@ class DriveCache:
             print(f"SQLite error upserting item {item_data.get('id')}: {e}")
     
 
+    @locked
     def _upsert_user(self, user: Dict[str, str]) -> Optional[int]:
         if not user or 'emailAddress' not in user:
             return None
@@ -159,11 +172,13 @@ class DriveCache:
                           (user.get('displayName', ''), email))
         return self.cursor.lastrowid
     
+    @locked
     def get_user(self, user_id: int):
         self.cursor.execute("SELECT * FROM users WHERE id = ?", (user_id,))
         row = self.cursor.fetchone()
         return row
 
+    @locked
     def _upsert_item(self, item_data: Dict[str, Any]):
         try:
             # 'parents' is a list, often just one item. 
@@ -209,6 +224,7 @@ class DriveCache:
         except KeyError as e:
             print(f"Missing expected key {e} in item data: {item_data}")
 
+    @locked
     def upsert_batch(self, items_data: List[Dict[str, Any]]):
         """
         Efficiently inserts or updates a list of items in a single transaction.
@@ -224,27 +240,33 @@ class DriveCache:
             print(f"SQLite error upserting item {item_data.get('id')}: {e}")
 
 
+    @locked
     def refill_all_data(self):
         """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive."""
         print("Dropping all data and reloading the GDrive Cache from scratch...")
         self.cursor.execute("DELETE FROM drive_items")
         self.cursor.execute("DELETE FROM trashed_drive_items")
         self.cursor.execute("DELETE FROM metadata")
+        
         all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
         for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
             self._upsert_item(file)
+        
         all_files = gdrive_base.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
         for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
             self._upsert_item(file)
+        
         changes_page = gdrive_base.session().changes().getStartPageToken().execute()
         self.cursor.execute("INSERT INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page['startPageToken'],))
         self.conn.commit()
         print("Done filling the GDrive cache!")
     
 
+    @locked
     def update(self):
         """Performs a full update of the data in the cache."""
         changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
+        
         if not changes_page:
             return self.refill_all_data()
         original_changes_page = changes_page['value']
@@ -322,6 +344,7 @@ class DriveCache:
         del ret['owner']
         return ret
     
+    @locked
     def sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
         """
         Directly run a query and return the matching rows.
@@ -337,6 +360,7 @@ class DriveCache:
         rows = self.cursor.fetchall()
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
     
+    @locked
     def parent_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
         """
         Directly run a query on a inner self join:
@@ -362,6 +386,7 @@ class DriveCache:
         rows = self.cursor.fetchall()
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
+    @locked
     def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
         """
         Retrieves a single item by its Google Drive ID.
@@ -398,6 +423,7 @@ class DriveCache:
             "id IN (" + ','.join(f"'{fid}'" for fid in file_ids) + ")",
         tuple())
     
+    @locked
     def get_url_doc(self, url: str) -> Optional[Dict[str, Any]]:
         """
         If we already have a Google Doc pointing to url, return it, else None
@@ -424,6 +450,7 @@ class DriveCache:
             (parent_id,)
         )
 
+    @locked
     def get_subfolders(self, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
         """
         Returns immediate subfolders under parent_id
@@ -487,6 +514,7 @@ class DriveCache:
     def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
         return self.sql_query("original_name = ?", (name,))
     
+    @locked
     def find_duplicate_md5s(self) -> List[str]:
         """
         Finds all MD5 checksums that appear more than once in the user's files.
@@ -502,6 +530,7 @@ class DriveCache:
         self.cursor.execute(sql)
         return [row['md5_checksum'] for row in self.cursor.fetchall()]
     
+    @locked
     def find_duplicate_urls(self) -> List[str]:
         """
         Finds all urls that have more than one pointing doc in the user's files
@@ -527,27 +556,35 @@ class DriveCache:
     def trash_file(self, file_id: str):
         """Actually performs the tashing and updates the cache"""
         gdrive_base.trash_drive_file(file_id)
-        self._move_to_trash(file_id)
-        self.conn.commit()
+        with self._lock:
+            self._move_to_trash(file_id)
+            self.conn.commit()
 
+    @locked
     def _move_to_trash(self, file_id: str):
         self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
 
     def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
         folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
-        self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
-        folder_data = self.cursor.fetchone()
+        with self._lock:
+            self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
+            folder_data = self.cursor.fetchone()
+        
         if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
             raise ValueError(f"Folder {folder} not found in cache.")
+        
         gdrive_base.move_drive_file(file_id, folder, previous_parents=previous_parents, verbose=verbose)
-        self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
-        self.conn.commit()
+        
+        with self._lock:
+            self.cursor.execute("UPDATE drive_items SET parent_id = ? WHERE id = ?", (folder, file_id))
+            self.conn.commit()
     
     def rename_file(self, file_id: str, new_name: str):
         gdrive_base.rename_file(file_id, new_name)
-        self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
-        self.conn.commit()
+        with self._lock:
+            self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
+            self.conn.commit()
     
     def create_folder(self, folder_name: str, parent_id: str) -> str:
         """Creates a new folder with the name and parent and rets the new id"""
@@ -603,9 +640,11 @@ class DriveCache:
         # A bit too complicated to guess what the values will be,
         # so just fetch it. Give Google 2 sec to propagate first
         sleep(2)
+        # Use a fresh service to ensure thread-safety during parallel uploads
+        service = gdrive_base.build('drive', 'v3', credentials=gdrive_base.google_credentials(), num_retries=4)
         self.upsert_item(
           gdrive_base.execute(
-            gdrive_base.session().files().get(
+            service.files().get(
               fileId=ret,
               fields=FILE_FIELDS,
             )
@@ -617,6 +656,7 @@ class DriveCache:
     # Connection management
     ######
 
+    @locked
     def close(self):
         """Commits changes and closes the database connection."""
         if self.conn:

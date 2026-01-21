@@ -113,6 +113,7 @@ if cli_args.init:
     all_folders_with_name_by_course,
     get_or_create_autopdf_folder_for_course,
     TagPredictor,
+    tqdm_thread_map,
   )
   course_predictor = TagPredictor.load()
   unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor.classes)
@@ -143,12 +144,12 @@ if cli_args.init:
       continue
     md5s = [md5(LOCAL_FOLDER.joinpath(name)) for name in name_list]
     md5s_to_name = defaultdict(set)
-    for name, md5 in zip(name_list, md5s):
-      md5s_to_name[md5].add(name)
-    for md5, actually_same_name_list in md5s_to_name.items():
+    for name, hash in zip(name_list, md5s):
+      md5s_to_name[hash].add(name)
+    for actually_same_name_list in md5s_to_name.values():
       if len(actually_same_name_list) <= 1:
         continue
-      name_to_keep = max(actually_same_name_list, key=lambda n: len(n))
+      name_to_keep = min(actually_same_name_list, key=lambda n: LOCAL_FOLDER.joinpath(n).stat().st_mtime)
       print(f"Keeping: {name_to_keep}")
       for name in actually_same_name_list:
         if name == name_to_keep:
@@ -159,10 +160,9 @@ if cli_args.init:
         fp.unlink()
   del size_to_local_names
   print(f"# Ensuring all local files are already on Drive and are unsorted...")
-  pbar = tqdm(local_files, unit="file")
   remote_ids_seen = set()
   local_filenames_seen = set()
-  for fp in pbar:
+  def process_local_file(fp: Path):
     remote_file = remote_files_by_name.get(fp.name)
     if not remote_file:
       remote_file = gdrive.remote_file_for_local_file(
@@ -174,20 +174,24 @@ if cli_args.init:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] in remote_folder_ids:
       if fp.name != remote_file['name']:
-        print(f"Found\n  \"{fp.name}\"")
-        print("in the remote folder, but there it's called")
-        print(f"  \"{remote_file['name']}\"")
-        print("Renaming the remote to the local name...")
+        msg = (
+          f"Found\n  \"{fp.name}\"\n"
+          "in the remote folder, but there it's called\n"
+          f"  \"{remote_file['name']}\"\n"
+          "Renaming the remote to the local name..."
+        )
+        tqdm.write(msg)
         gdrive.gcache.rename_file(remote_file['id'], fp.name)
         remote_file['name'] = fp.name
       remote_files_by_name[fp.name] = remote_file
       remote_ids_seen.add(remote_file['id'])
       local_filenames_seen.add(fp.name)
     else:
-      pbar.write(f"    Deleting already sorted {fp.name}")
+      tqdm.write(f"    Deleting already sorted {fp.name}")
       # fp.unlink()
       # For now just move it out to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
+  tqdm_thread_map(process_local_file, local_files, max_workers=8, unit="file")
   print(f"# Ensuring all remote files are downloaded locally...")
   children = tqdm(remote_children, unit="file", desc="Downloading")
   for child in children:
@@ -195,14 +199,14 @@ if cli_args.init:
       continue
     name = child['name'] 
     if name in local_filenames_seen:
-      print(f"We already have a file named '{name}' ( {gdrive.DRIVE_LINK.format(remote_files_by_name[name]['id'])} ).\nPlease decide on a new, unique name for {gdrive.DRIVE_LINK.format(child['id'])}")
+      tqdm.write(f"We already have a file named '{name}' ( {gdrive.DRIVE_LINK.format(remote_files_by_name[name]['id'])} ).\nPlease decide on a new, unique name for {gdrive.DRIVE_LINK.format(child['id'])}")
       name = input_with_prefill('name (or trash): ', name)
       if not name or name == 'trash':
-        print("Trashing...")
+        tqdm.write("Trashing...")
         gdrive.gcache.trash_file(child['id'])
         continue
       gdrive.gcache.rename_file(child['id'], name)
-    children.write(f"Downloading '{name}' ({round(child['size']/1000000, 2)} MB)...")
+    tqdm.write(f"Downloading '{name}' ({round(child['size']/1000000, 2)} MB)...")
     dest_file = LOCAL_FOLDER.joinpath(name)
     gdrive.download_file(
       child['id'],
@@ -230,11 +234,11 @@ if cli_args.init:
     load_normalized_text_for_file(fp, gid)
   del remote_files_by_name
   print("# Sorting PDFs into bulk import folders...")
-  children = tqdm(gdrive.gcache.sql_query(
+  children = gdrive.gcache.sql_query(
     "parent_id = ? AND mime_type = 'application/pdf' AND shortcut_target IS NULL",
     (REMOTE_FOLDER,),
-  ), unit="file")
-  for child in children:
+  )
+  def sort_pdf_file(child):
     fp = LOCAL_FOLDER.joinpath(child['name'])
     normalized_text = load_normalized_text_for_file(fp, child['id'])
     course = course_predictor.predict([
@@ -254,7 +258,7 @@ if cli_args.init:
       [REMOTE_FOLDER],
       verbose=False,
     )
-
+  tqdm_thread_map(sort_pdf_file, children, max_workers=8, unit="file")
   print("Done setting up local folder! Run again without --init to review files")
   exit()
 

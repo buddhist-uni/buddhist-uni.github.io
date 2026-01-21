@@ -34,6 +34,15 @@ with yaspin(text="Loading..."):
 course_predictor = None
 disk_memorizor = joblib.Memory(gdrive.gcache_folder, verbose=0)
 
+def synchronized(func):
+  func.__lock__ = threading.Lock()
+  from functools import wraps
+  @wraps(func)
+  def wrapper(*args, **kwargs):
+    with func.__lock__:
+      return func(*args, **kwargs)
+  return wrapper
+
 class ItemListParser:
   def __init__(self) -> None:
     pass
@@ -601,6 +610,7 @@ def all_folders_with_name_by_course(folder_name: str, importer_type: str, unread
   print(f"Got {len(course_to_auto_folder)} {importer_type} folders")
   return (course_to_auto_folder, auto_folder_to_course)
 
+@synchronized
 def get_or_create_autopdf_folder_for_course(
     new_course: str,
     folder_name: str,
