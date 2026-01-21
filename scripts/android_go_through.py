@@ -124,7 +124,7 @@ if cli_args.init:
   remote_folder_ids = set(autopdf_folder_to_course.keys())
   remote_folder_ids.add(REMOTE_FOLDER)
   remote_children = gdrive.gcache.sql_query(
-    "parent_id IN ({','.join('?' * (1+len(course_to_autopdf_folder)))}) AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
+    f"parent_id IN ({','.join('?' * (1+len(course_to_autopdf_folder)))}) AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
     tuple(remote_folder_ids) + ('application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
   )
   remote_files_by_name = dict()
@@ -132,8 +132,26 @@ if cli_args.init:
     assert gfile['name'] not in remote_files_by_name, f"Found duplicate file name \"{gfile['name']}\""
     remote_files_by_name[gfile['name']] = gfile
   from tqdm import tqdm
+  print(f"# Removing local duplicates...")
+  from collections import defaultdict
+  pbar = tqdm(local_files, unit="file")
+  md5_local_names = defaultdict(set)
+  for fp in pbar:
+    md5_local_names[md5(fp)].add(fp.name)
+  for hash, name_list in md5_local_names.items():
+    if len(name_list) <= 1:
+      continue
+    name_to_keep = max(name_list, key=lambda n: len(n))
+    print(f"Keeping: {name_to_keep}")
+    for name in name_list:
+      if name == name_to_keep:
+        continue
+      fp = LOCAL_FOLDER.joinpath(name)
+      print(f"  Deleting: {name}")
+      fp.unlink()
+  del md5_local_names
   print(f"# Ensuring all local files are already on Drive and are unsorted...")
-  pbar = tqdm(local_files, unit="file", desc="  ")
+  pbar = tqdm(local_files, unit="file")
   remote_ids_seen = set()
   local_filenames_seen = set()
   for fp in pbar:
@@ -191,7 +209,7 @@ if cli_args.init:
   local_files.sort(key=lambda f: random.random())
   print("# Extracting text from files...")
   pbar = tqdm(local_files, unit="file")
-  from tag_predictor import NORMALIZED_TEXT_FOLDER
+  from tag_predictor import NORMALIZED_TEXT_FOLDER, normalize_text
   for fp in pbar:
     if fp.suffix.lower() not in ['.pdf', '.epub']:
       continue # Don't even bother trying
@@ -228,7 +246,6 @@ if cli_args.init:
       [REMOTE_FOLDER],
       verbose=False,
     )
-    children.write(f"Moved '{child['name']}' to {course}/Unread/{REMOTE_FOLDER_NAME}")
 
   print("Done setting up local folder! Run again without --init to review files")
   exit()
