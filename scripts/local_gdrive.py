@@ -40,9 +40,15 @@ def locked(func):
     """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
     @wraps(func)
     def wrapper(self, *args, **kwargs):
-        # pylint: disable=protected-access
-        with self._lock:
+        # diagnostic to help find deadlocks
+        acquired = self._lock.acquire(timeout=5)
+        if not acquired:
+            print(f"WARNING: Thread {threading.current_thread().name} waiting >5s for lock in {func.__name__}...")
+            self._lock.acquire() # block indefinitely once we've warned
+        try:
             return func(self, *args, **kwargs)
+        finally:
+            self._lock.release()
     return wrapper
 
 class DriveCache:
@@ -640,11 +646,9 @@ class DriveCache:
         # A bit too complicated to guess what the values will be,
         # so just fetch it. Give Google 2 sec to propagate first
         sleep(2)
-        # Use a fresh service to ensure thread-safety during parallel uploads
-        service = gdrive_base.build('drive', 'v3', credentials=gdrive_base.google_credentials(), num_retries=4)
         self.upsert_item(
           gdrive_base.execute(
-            service.files().get(
+            gdrive_base.session().files().get(
               fileId=ret,
               fields=FILE_FIELDS,
             )

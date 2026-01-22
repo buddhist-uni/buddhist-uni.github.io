@@ -111,11 +111,12 @@ def google_credentials():
             token.write(creds.to_json())
     return creds
 
-@cache
+# Don't cache the session service as this object is not thread-safe
 def session():
     socket.setdefaulttimeout(300) # some of our uploads take a while...
     return build('drive', 'v3', credentials=google_credentials(), num_retries=4) # only retries 429s natively. See execute() for retrying other errors
 
+# If you ever want to use the docs or youtube services in a multithreaded context, go ahead and uncache this
 @cache
 def youtube():
     return build('youtube', 'v3', credentials=google_credentials(), num_retries=3)
@@ -263,16 +264,13 @@ def rename_file(file_id: str, new_name: str):
   ))
 
 def _perform_upload(file_metadata, media, verbose=True, update_file=False):
-    # Don't use the shared session() so that uploads can be parallelized
-    # (the drive service object is not thread-safe):
-    drive_service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
     try:
         # Upload the file
         request = None
         if update_file:
-          request = drive_service.files().update(fileId=update_file, body=file_metadata, media_body=media)
+          request = session().files().update(fileId=update_file, body=file_metadata, media_body=media)
         else:
-          request = drive_service.files().create(body=file_metadata, media_body=media)
+          request = session().files().create(body=file_metadata, media_body=media)
         response = None
         while response is None:
             status, response = request.next_chunk()
@@ -301,7 +299,6 @@ def create_folder(name, parent_folder, custom_properties: dict[str, str] = None)
   return ret.get('id')
 
 def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] = None):
-  drive_service = session()
   shortcut_metadata = {
        'name': filename,
        'mimeType': 'application/vnd.google-apps.shortcut',
@@ -312,7 +309,8 @@ def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str
   }
   if custom_properties:
     shortcut_metadata['properties'] = custom_properties
-  shortcut = execute(drive_service.files().create(
+    
+  shortcut = execute(session().files().create(
     body=shortcut_metadata,
     fields='id,shortcutDetails'
   ))
@@ -327,8 +325,7 @@ def deref_possible_shortcut(gfid):
   return gfid
 
 def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
-  # new service every time for multithreading
-  service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
+  service = session()
   if previous_parents is None:
     # pylint: disable=maybe-no-member
     file = execute(service.files().get(fileId=file_id, fields='parents'))
@@ -453,16 +450,14 @@ def upload_folder_contents_to(local_directory: Path | str, gdfid: str, recursive
   print(f"Uploading {len(upload_jobs)} files to Google Drive:")
   def _upload_job(args: tuple):
     local_filepath, existing_id, size = args
-    # Can't use session() as that isn't threadsafe. Make a new one for each request.
-    sess = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
     if existing_id:
-      execute(sess.files().update(
+      execute(session().files().update(
         fileId=existing_id,
         body={}, # We're keeping the file name, etc the same
         media_body=MediaFileUpload(local_filepath, resumable=True),
       ))
     else:
-      execute(sess.files().create(
+      execute(session().files().create(
         body={
           'name': local_filepath.name,
           'parents': [gdfid], # TODO: Handle recursion,
