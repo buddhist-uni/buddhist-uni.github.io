@@ -40,9 +40,10 @@ def locked(func):
     """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
     @wraps(func)
     def wrapper(self, *args, **kwargs):
-        # diagnostic to help find deadlocks
         acquired = self._lock.acquire(timeout=5)
         if not acquired:
+            # SQLite is usually quite fast. This should only happen if you've
+            # accidentally called `.update()` from inside a thread
             print(f"WARNING: Thread {threading.current_thread().name} waiting >5s for lock in {func.__name__}...")
             self._lock.acquire() # block indefinitely once we've warned
         try:
@@ -248,18 +249,22 @@ class DriveCache:
 
     @locked
     def refill_all_data(self):
-        """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive."""
+        """Drops all tables, and populates the DB with a completely fresh copy of data from GDrive.
+        
+        Locks the DB during this entire, long operation, so don't call this from a thread.
+        Actually, you should never really need to call this at all.
+        """
         print("Dropping all data and reloading the GDrive Cache from scratch...")
         self.cursor.execute("DELETE FROM drive_items")
         self.cursor.execute("DELETE FROM trashed_drive_items")
         self.cursor.execute("DELETE FROM metadata")
         
         all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
-        for file in tqdm(all_files, desc="Fetching all my files", unit=" files"):
+        for file in tqdm(all_files, desc="Fetching all my files", unit=""):
             self._upsert_item(file)
         
         all_files = gdrive_base.all_files_matching("not 'me' in owners and trashed=false", FILE_FIELDS)
-        for file in tqdm(all_files, desc="Fetching all shared files", unit=" files"):
+        for file in tqdm(all_files, desc="Fetching all shared files", unit=""):
             self._upsert_item(file)
         
         changes_page = gdrive_base.session().changes().getStartPageToken().execute()
@@ -268,9 +273,13 @@ class DriveCache:
         print("Done filling the GDrive cache!")
     
 
-    @locked
     def update(self):
-        """Performs a full update of the data in the cache."""
+        """Pulls updates from the Google Drive "changes" API.
+        
+        The write functions below (`move_file`, etc) update the cache
+        themselves, so you shouldn't have to call this unless you suspect that
+        another device somewhere has modified the tracked Drive, for example
+        at the top of your code."""
         changes_page = self.cursor.execute("SELECT * FROM metadata WHERE key = 'changes.pageToken'").fetchone()
         
         if not changes_page:
@@ -302,8 +311,12 @@ class DriveCache:
                 self._upsert_item(item)
         if original_changes_page != changes_page:
             with yaspin(text="Saving GDrive Cache..."):
-                self.cursor.execute("INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)", (changes_page,))
-                self.conn.commit()
+                with self._lock:
+                    self.cursor.execute(
+                        "INSERT OR REPLACE INTO metadata (key, value) VALUES ('changes.pageToken', ?)",
+                        (changes_page,),
+                    )
+                    self.conn.commit()
             print("Done updating GDrive cache!")
 
     ######

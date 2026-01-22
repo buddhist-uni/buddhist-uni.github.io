@@ -13,11 +13,18 @@ The compassionate wisdom and peerless example of the Buddha show us the way out 
 I'd like to introduce you now to the other four texts (in addition to [_Being Nobody, Going Nowhere_](/content/monographs/being-nobody-going-nowhere_khema)) that we'll be reading through the remainder of this course:
 
 {% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, accessible to modern readers even today, more than fifty years later. 
+This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, more than fifty years later.
+
+If, however, the language is too old-fashioned for you, please feel free to skip these readings as they will have a lot of overlap with Ven. Santita’s and Bhikkhu Bodhi’s books below.
 " %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
-To understand Buddhism, we need to understand something of how Buddhists think about the Buddha.
-This book is my recommended telling of the Buddha's life because it presents some of the mythology traditionally surrounding the Buddha but in a more novelistic sketch that doesn't stray too far from the historical record, thus creating an eminently balanced *Biography*.  
+To understand Buddhism, we need to understand something of the life of the Buddha.
+
+Unfortunately, the earliest texts historians have don’t say much about the life of the historical Buddha.
+(For what we can say from the Pāli texts, see [*Footprints in the Dust*](/content/booklets/footprints-in-the-dust_dhammika).)
+Most of the stories about the early Sangha that shape Buddhism today are medieval legends which arose centuries after the Buddha.
+
+This *Biography of Shakyamuni Buddha* here further took those myths and embellished them with the kinds of psychological details and drama which characterize a good novel, making a highly readable and influential retelling of the Buddha’s life suitable to the modern, casual reader and capturing how many Buddhists today grew up hearing about the Buddha and his first followers.
 " %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
 A precise yet readable overview of the Buddhist Path by one of the greatest scholars of Pāḷi Buddhism alive today.

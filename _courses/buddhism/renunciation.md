@@ -11,6 +11,22 @@ order: 10
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
 We continue with Chapters 32–36, on how the Buddha's community grew under his leadership.
 " %}
+
+{% include toast.html content="
+<details><summary>A note on the myth of the first nuns</summary>
+While all the Buddhist traditions have a similar myth to chapter 32 about the first nuns,
+the earliest Buddhist texts actually report that the Buddha was eager to establish a nun’s community
+<a target='_blank' href='https://suttacentral.net/dn16/en/sujato?lang=en&layout=linebyline&reference=main&notes=sidenotes&highlight=false&script=latin#3.8.3'>from the very beginning</a>.
+<br />
+This and the numerous inconsistencies in the story
+(such as that the Buddha nowhere else refuses someone three times and then later changes his mind)
+has led many modern scholars to suggest that this myth arose in the centuries
+after the Buddha before Buddhism split into different schools.
+This was a period of rapid political consolidation in ancient India which coincided with
+a marked rise in misogyny.
+</details>
+" %}
+
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
 Chapter 6: "The Five Hindrances" introduces us to the primary obstacles to mental clarity in our meditation (and in life).
 ' %}
