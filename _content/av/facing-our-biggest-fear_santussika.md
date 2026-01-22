@@ -4,7 +4,7 @@ authors:
   - santussika
 external_url: "https://dharmaseed.org/talks/22645/"
 drive_links:
-  - "https://drive.google.com/file/d/1Yb_MJQCtNPKxSvQjfxiE3AShcKjUZNgx/view?usp=share_link"
+  - "https://drive.google.com/file/d/1J0y8bO4H3TkZxK2u8QSQCVXvroonmtc5/view?usp=drivesdk"
 course: problems
 tags:
   - chod

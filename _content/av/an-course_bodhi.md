@@ -6,7 +6,7 @@ subcat: course
 external_url: "https://youtube.com/playlist?list=PLgu0hJSLkqCWjjvc-lIKVn6CAUK95TbV4"
 canary_url: "https://youtu.be/NTabU4Zbtfs"
 drive_links: 
-  - "https://drive.google.com/folderview?id=1cponCBJe4cWxjc5z1mcnF6JqqjTSs_DB"
+  - "https://drive.google.com/drive/folders/1cponCBJe4cWxjc5z1mcnF6JqqjTSs_DB"
 formats: [MP4s]
 course: an
 year: 2016

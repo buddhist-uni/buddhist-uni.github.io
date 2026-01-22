@@ -221,11 +221,11 @@ if cli_args.init:
   from tag_predictor import NORMALIZED_TEXT_FOLDER, normalize_text
   def extract_text_from(fp):
     if fp.suffix.lower() not in ['.pdf', '.epub']:
-      continue # Don't even bother trying
+      return # Don't even bother trying
     gid = remote_files_by_name[fp.name]['id']
     # Short circuit actually reading the file as existance is good enough here
     if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
-      continue
+      return
     load_normalized_text_for_file(fp, gid)
   tqdm_thread_map(extract_text_from, local_files, max_workers=4, unit="file")
   del remote_files_by_name

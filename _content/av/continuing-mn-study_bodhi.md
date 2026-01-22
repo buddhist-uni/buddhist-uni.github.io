@@ -3,7 +3,7 @@ title: "Continuing Study of the *Majjhima Nikāya*"
 authors: [bodhi]
 subcat: course
 drive_links:
-  - "https://drive.google.com/folderview?id=1g2Z6IgjxKw2ff2zFh3UhI4_VH03lzYxw"
+  - "https://drive.google.com/drive/folders/1g2Z6IgjxKw2ff2zFh3UhI4_VH03lzYxw"
 formats: [MP3s]
 external_url: "http://www.noblepath.org/audio.html"
 canary_url: "http://www.noblepath.org/BB/20121117MN087.mp3"
