@@ -25,4 +25,4 @@ minutes: 72
 Nevertheless, no matter how good your radar is, if the person looking at the radar screen isn't paying attention you're totally screwed.
 So an intense set of classified experiments took place to assess this new problem: how long could people pay attention to screens and what could you do to optimize their ability to keep paying attention to screens for long periods of time. [...] We see the legacy of that work to this day in the way we think about attention.
 
-> From [The Twelve Theses on Attention](https://friendsofattention.net/sites/default/files/2020-05/TWELVE-THESES-ON-ATTENTION-2019.pdf): 'Sanctuaries for true attention already exist. They are among us now but they are endangered and many are in hiding: operating in self-sustaining, inclusive, generous, and fugitive forms.'
+> From [The Twelve Theses on Attention](https://friendsofattention.org/wp-content/uploads/2025/11/TWELVE-THESES-ON-ATTENTION-2019.pdf): 'Sanctuaries for true attention already exist. They are among us now but they are endangered and many are in hiding: operating in self-sustaining, inclusive, generous, and fugitive forms.'

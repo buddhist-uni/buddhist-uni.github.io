@@ -2,7 +2,7 @@
 title: "Human Life"
 authors:
   - dhammananda
-external_url: "https://www.dhammatalks.net/Books2/Bhante_Dhammananda_Human_Life.htm"
+external_url: "http://www.dhammatalks.net/Books2/Bhante_Dhammananda_Human_Life.htm"
 drive_links:
   - "https://drive.google.com/file/d/1iqDybsKyhlE8zzTlHcGA3cDgbTXmcvke/view?usp=drivesdk"
 course: sangha

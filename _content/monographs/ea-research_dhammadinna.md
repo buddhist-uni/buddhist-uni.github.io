@@ -5,7 +5,7 @@ year: 2013
 publisher: dharmadrum
 course: ea
 drive_links: ["https://drive.google.com/file/d/17jN7woe8hnLVlOK277Fn-HAEpJO_F4A1/view?usp=drivesdk"]
-external_url: "https://agamaresearch.dila.edu.tw/wp-content/uploads/2013/10/ResearchEkottarika.pdf"
+external_url: "https://agamaresearch.dila.edu.tw/wp-content/uploads/2025/12/ResearchEkottarika.pdf"
 pages: 234
 ---
 

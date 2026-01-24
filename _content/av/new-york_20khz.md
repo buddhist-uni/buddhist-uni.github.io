@@ -4,7 +4,7 @@ authors:
   - "Marissa Flaxbart"
 subcat: podcast
 external_url: "https://www.20k.org/episodes/citythatneversleeps"
-source_url: "https://www.marissaflaxbart.com/2020/08/my-latest-twenty-thousand-hertz-episode-the-city-that-never-sleeps.html"
+source_url: "https://www.marissaflaxbart.com/2020/08/my-latest-twenty-thousand-hertz-episode-the-city-that-never-sleeps.html" # Down Jan 2026
 course: feeling
 tags:
   - cities

@@ -98,7 +98,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [SuttaCentral](https://suttacentral.net/)
   * Its ["Discourse" Forum](https://discourse.suttacentral.net/search?q=pdf)
 * [The New Books Network](https://newbooksnetwork.com/category/religion-faith/buddhist-studies/)
-* [The Corporate Body of the Buddha Educational Foundation](http://www-old.budaedu.org/ebooks/6-EN.php)
+* [The Corporate Body of the Buddha Educational Foundation](https://www.budaedu.org/dharmas/downloadable/book?language=english)
 * [The Buddhist Text Translation Society](https://www.buddhisttexts.org/collections/free-english-ebooks)
 * [SuttaFriends](https://suttafriends.org/)
 * [Lotsawa House](https://www.lotsawahouse.org/topics/)
