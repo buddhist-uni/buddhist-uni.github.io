@@ -295,7 +295,7 @@ for fp in local_files:
       else: # len(gfs) > 1
         tgt_md5 = md5(fp)
         for f in gfs:
-          if f['md5_checksum'] == tgt_md5:
+          if f['md5Checksum'] == tgt_md5:
             if REMOTE_FOLDER == f['parent_id']:
               gf = f
               break
@@ -305,7 +305,7 @@ for fp in local_files:
               break
         moved_already = False
         if gf is None:
-          if any(f['md5_checksum'] == tgt_md5 for f in gfs):
+          if any(f['md5Checksum'] == tgt_md5 for f in gfs):
             moved_already = True
           else:
             raise NotImplementedError(f"Unable to find \"{fp.name}\" remotely by MD5, only by name.")
@@ -313,7 +313,7 @@ for fp in local_files:
           for f in gfs:
             if f['id'] == gf['id']:
               continue
-            if f['md5_checksum'] == tgt_md5:
+            if f['md5Checksum'] == tgt_md5:
               parent = gdrive.gcache.get_item(f['parent_id'])
               if REMOTE_FOLDER == f['parent_id'] or parent['name'] == REMOTE_FOLDER_NAME:
                 print("\nFound duplicate file in remote TGT folder. Deleting it...")

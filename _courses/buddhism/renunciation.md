@@ -21,9 +21,7 @@ the earliest Buddhist texts actually report that the Buddha was eager to establi
 This and the numerous inconsistencies in the story
 (such as that the Buddha nowhere else refuses someone three times and then later changes his mind)
 has led many modern scholars to suggest that this myth arose in the centuries
-after the Buddha before Buddhism split into different schools.
-This was a period of rapid political consolidation in ancient India which coincided with
-a marked rise in misogyny.
+after the Buddha but before Buddhism split into different schools.
 </details>
 " %}
 

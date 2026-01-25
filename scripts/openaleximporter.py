@@ -349,14 +349,14 @@ def _main():
   title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
   gfiles = gdrive.gcache.search_by_name_containing(
       title,
-      additional_filters="mime_type = ? AND owner_id = 1",
+      additional_filters="mime_type = ? AND owner = 1",
       additional_params=('application/pdf',)
   )
   gfile = None
   if len(gfiles) == 0:
     gfiles = gdrive.gcache.search_by_name_containing(
        query,
-       additional_filters="mime_type = ? AND owner_id = 1",
+       additional_filters="mime_type = ? AND owner = 1",
        additional_params=('application/pdf',)
     )
     if len(gfiles) == 0:
@@ -372,6 +372,8 @@ def _main():
     i = radio_dial([f"{f['name']} in {f['course']}" for f in gfiles]+["Other (I'll supply a URL manually)"])
     if i < len(gfiles):
       gfile = gfiles[i]
+    else:
+      gfile = None
   if gfile:
     glink = gdrive_base.DRIVE_LINK.format(gfile['id'])
   else:
