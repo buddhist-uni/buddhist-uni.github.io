@@ -16,6 +16,10 @@ address: "Ann Arbor"
 pages: 141
 ---
 
-> The production of cheap talk relies everywhere on the depoliticisation of communication. Cheap talk displaces a shared traversal of difference with a technocratic exchange of messages. [...] This is a thoroughly sterile ecology of communication: minds making speech to transfer information to other minds. [...] It is not dysfluency but fluency that ensnares life with a type of deathly repetition.
+> The production of cheap talk relies everywhere on the depoliticisation of communication. Cheap talk displaces a shared traversal of difference with a technocratic exchange of messages. [...] This is a thoroughly sterile ecology of communication: minds making speech to transfer information to other minds. [...] It is not [stuttering] but fluency that ensnares life with a type of deathly repetition.
 
-> There are political and existential questions at stake that are difficult even to articulate within a surge of cheap talk: What might a dysfluent event become if not immediately managed? How might we relate differently? What might we become?
+This book explains how information capitalism commodifies and dehumanizes speech through the contrasting examples of speech pathology and television punditry.
+Written before the explosion in generative AI, the book has become essential reading for seeing the market logics underlying LLMs and for understanding what such "cheap talk" will do to people and society.
+By attending closely to the humanity of disfluent speakers, the book suggests that we open up other ways of communicating, relating, and being with each other.
+
+> These are political and existential questions at stake that are difficult even to articulate within a surge of cheap talk: What might a dysfluent event become if not immediately managed? How might we relate differently? What might we become?

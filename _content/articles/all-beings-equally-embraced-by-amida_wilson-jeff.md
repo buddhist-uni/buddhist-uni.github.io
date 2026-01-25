@@ -10,6 +10,7 @@ course: american
 tags:
   - pureland
   - queer-history
+  - ethics
   - religion
 year: 2012
 journal: jgb
