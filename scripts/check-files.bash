@@ -12,6 +12,7 @@ whitelist=(
   "Gemfile.lock"
   "cssCacheToken.yml"
   ".gitignore"
+  "titlematch.classifier"
 )
 invalid_files=()
 exit_code=0
