@@ -103,10 +103,14 @@ class TagCollection():
       return item.slug in self.tags
     return bool(self.get(item))
 
-content = []
 tags = TagCollection()
 authors = AuthorCollection()
 courses = []
+
+def normalized_author_name(author: str) -> str:
+  if ' ' in author:
+    return author
+  return authors.get(author).title
 
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -157,6 +161,9 @@ class ContentFile(JekyllFile):
       if candidatetag.slug in self.tags:
         return (candidatetag.slug, idx+len(courses))
     return (False, 9999)
+
+content: list[ContentFile]
+content = []
 
 def entry_with_drive_id(gid):
   for entry in content:

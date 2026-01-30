@@ -18,3 +18,4 @@ Mastodon.py
 atproto
 ebooklib
 unidecode
+rapidfuzz
