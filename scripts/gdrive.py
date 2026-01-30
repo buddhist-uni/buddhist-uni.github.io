@@ -50,12 +50,17 @@ from gdrive_base import (
   batch_get_files_by_id,
 )
 import local_gdrive
+from google.auth.exceptions import TransportError
+from httplib2 import ServerNotFoundError
 
 FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
 
 gcache_folder = git_root_folder.joinpath("scripts/.gcache")
 gcache = local_gdrive.DriveCache(gcache_folder.joinpath("drive.sqlite"))
-gcache.update()
+try:
+  gcache.update()
+except (ServerNotFoundError, TransportError):
+  pass # We're offline. No big deal. That's why it's a local cache :)
 atexit.register(gcache.close)
 
 OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
