@@ -2,6 +2,7 @@
 
 import sqlite3
 from pathlib import Path
+import re
 from typing import List, Dict, Any, Optional
 from time import sleep
 
@@ -13,6 +14,8 @@ from tqdm import tqdm
 from datetime import datetime, timezone
 import threading
 from functools import wraps
+
+from rapidfuzz import fuzz, process
 
 def UTC_NOW():
     now_utc = datetime.now(timezone.utc)
@@ -76,6 +79,9 @@ class DriveCache:
         Args:
             db_path: The file path for the SQLite database.
         """
+        self.MIN_TITLE_LEN = 20 # do ratio matches on strings this long
+        self.MIN_PARTIAL_LEN = 35 # do partial matches when really long
+        self._clear_title_cache()
         self.db_path = db_path
         self.conn = sqlite3.connect(db_path, check_same_thread=False)
         self._lock = threading.RLock()
@@ -533,6 +539,115 @@ class DriveCache:
     def files_originally_named_exactly(self, name: str) -> List[Dict[str, Any]]:
         return self.sql_query("original_name = ?", (name,))
     
+    def _clear_title_cache(self):
+        self.title_cache = []
+        self.title_cache_ids = []
+        self.partial_title_cache = []
+        self.partial_title_cache_ids = []
+    
+    def _add_string_to_title_cache(self, gid: str, needle: str):
+        if len(needle) < self.MIN_TITLE_LEN:
+            return
+        self.title_cache.append(needle)
+        self.title_cache_ids.append(gid)
+        if len(needle) >= self.MIN_PARTIAL_LEN:
+            self.partial_title_cache.append(needle)
+            self.partial_title_cache_ids.append(gid)
+    
+    def _add_name_to_title_cache(self, gid: str, name: str):
+        if name[-4:].lower() != '.pdf':
+            return # for now we're only interested in pdfs
+        name = name[:-4]
+        self._add_string_to_title_cache(gid, name)
+        if ' - ' in name:
+            # In our naming convention, " - " comes before the authors
+            name = name.split(' - ')[0]
+            self._add_string_to_title_cache(gid, name)
+        if '(' in name or ']' in name:
+            # parens hold non-title metadata
+            name = re.sub(r'\s*[\(\[][^)]*[\)\]]', '', name)
+            self._add_string_to_title_cache(gid, name)
+        parts = name.split('_ ')
+        if len(parts) == 2:
+            self._add_string_to_title_cache(gid, parts[0])
+            self._add_string_to_title_cache(gid, parts[1])
+    
+    def rebuild_title_cache(self):
+        self._clear_title_cache()
+        with self._lock:
+            self.cursor.execute(
+                "SELECT id, name FROM drive_items WHERE owner = 1 AND mime_type = ? AND shortcut_target IS NULL",
+                ('application/pdf',),
+            )
+            pdf_files = self.cursor.fetchall()
+        for file in pdf_files:
+            self._add_name_to_title_cache(file['id'], file['name'])
+    
+    def _title_match(self, needle: str) -> str | None:
+        """Returns the Google ID of the match or None"""
+        if not self.title_cache:
+            self.rebuild_title_cache()
+        match = process.extractOne(
+            needle,
+            self.partial_title_cache if len(needle) >= self.MIN_PARTIAL_LEN else self.title_cache,
+            score_cutoff=81, # see: calculate_ideal_title_match_threshhold()
+            scorer=fuzz.partial_ratio if len(needle) >= self.MIN_PARTIAL_LEN else fuzz.ratio,
+        )
+        if not match:
+            return None
+        if len(needle) >= self.MIN_PARTIAL_LEN:
+            return self.partial_title_cache_ids[match[2]]
+        return self.title_cache_ids[match[2]]
+
+    def max_score_for_title(self, needle: str, gid: str = None) -> float:
+        # Has to match the logic of probable_pdf_id_for_title
+        scores = []
+        scores.append(self._max_score_for_title(needle, gid=gid))
+        if ': ' in needle:
+            for part in needle.split(': '):
+                scores.append(self._max_score_for_title(needle, gid=gid))
+        return max(scores, default=0)
+
+    def _max_score_for_title(self, needle: str, gid: str = None) -> float:
+        """If gid is provided, only consider the strings for that id"""
+        if len(needle) < self.MIN_TITLE_LEN:
+            return 0
+        comparitor = fuzz.partial_ratio
+        id_list = self.partial_title_cache_ids
+        haystack = self.partial_title_cache
+        if len(needle) < self.MIN_PARTIAL_LEN:
+            comparitor = fuzz.ratio
+            haystack = self.title_cache
+            id_list = self.title_cache_ids
+        return max(
+            [comparitor(
+                needle,
+                haystack[idx],
+            )
+            for idx, iid in enumerate(id_list)
+            if iid == gid or gid is None],
+            default=0,
+        )
+
+    def probable_pdf_id_for_title(self, title: str) -> str | None:
+        """Does a fuzzy check for PDF files matching the title
+        If it found a match, returns the Drive ID of the file
+        
+        Note: this is about 85% accurate.
+        About 15% of the time it retrieves a different PDF with a similar title
+        """
+        match = self._title_match(title.replace(':', '_'))
+        if match:
+            return match
+        if ': ' in title:
+            for part in title.split(': '):
+                if len(part) < self.MIN_TITLE_LEN:
+                    continue
+                match = self._title_match(part)
+                if match:
+                    return match
+        return None
+
     @locked
     def find_duplicate_md5s(self) -> List[str]:
         """
@@ -604,6 +719,7 @@ class DriveCache:
         with self._lock:
             self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
             self.conn.commit()
+        self._clear_title_cache() # maybe be more intelligent if needed
     
     def create_folder(self, folder_name: str, parent_id: str) -> str:
         """Creates a new folder with the name and parent and rets the new id"""
@@ -667,6 +783,7 @@ class DriveCache:
             )
           )
         )
+        self._add_name_to_title_cache(ret, filename or fp.name)
         return ret
 
     ######
@@ -688,3 +805,66 @@ class DriveCache:
     def __exit__(self, exc_type, exc_value, traceback):
         """Context manager exit. Ensures connection is closed."""
         self.close()
+
+
+def calculate_ideal_title_match_threshhold(minc: int):
+    import website
+    from yaspin import yaspin
+    with yaspin(text="Loading website..."):
+        website.load()
+    import gdrive
+    articles = [c for c in website.content
+      if c.category == 'articles' and
+      c.drive_links and
+      c.formats[0] == 'pdf'
+    ]
+    avs = [c for c in website.content
+      if c.category == "av" and 'pdf' not in c.get("formats", [])
+    ]
+    gdrive.gcache.MIN_TITLE_LEN = minc
+    print(f"Set MINC={minc}")
+    with yaspin(text="Building title cache..."):
+        gdrive.gcache.rebuild_title_cache()
+    with yaspin(text="Calculating article scores..."):
+        article_scores = [
+          gdrive.gcache.max_score_for_title(
+            c.title,
+            gdrive.link_to_id(c.drive_links[0]),
+          )
+          for c in articles
+        ]
+    print(f"Found {sum(s > 0.5 for s in article_scores)}/{len(articles)} articles")
+    with yaspin(text=f"Scoring {len(avs)} AV items..."):
+      av_scores = [
+        gdrive.gcache.max_score_for_title(
+          c.title
+        )
+        for c in avs
+      ]
+    print(f"Found {sum(s > 0.5 for s in av_scores)}/{len(avs)} AVs")
+    import numpy as np
+    y_scores = np.concatenate([article_scores, av_scores])
+    y_true = np.concatenate([
+        np.ones(len(articles)), # we should ideally find all these
+        np.zeros(len(avs)), # we should ideally not find any of these
+    ])
+    from sklearn.metrics import roc_curve
+    fpr, tpr, roc_thresholds = roc_curve(y_true, y_scores)
+    from sklearn.metrics import precision_recall_curve, average_precision_score
+    precision, recall, pr_thresholds = precision_recall_curve(y_true, y_scores)
+    ap = average_precision_score(y_true, y_scores)
+    f1 = 2 * precision * recall / (precision + recall + 1e-12)
+    best_idx = np.argmax(f1)
+    best_threshold_pr = pr_thresholds[best_idx]
+    print(f"Best threshhold value to balance precision and recall is {best_threshold_pr} (F1={f1[best_idx]})")
+    j_scores = tpr - fpr
+    best_idx = np.argmax(j_scores)
+    best_threshold_roc = roc_thresholds[best_idx]
+    print(f"Best threshold for J score is {best_threshold_roc} (J={j_scores[best_idx]})")
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--minc", type=int, default=20)
+    args = parser.parse_args()
+    calculate_ideal_title_match_threshhold(args.minc)
