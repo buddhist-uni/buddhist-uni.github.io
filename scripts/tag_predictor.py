@@ -243,11 +243,21 @@ class TagPredictor:
         self.classifiers_ = classifiers
         self.vectorizer_ = CountVectorizer(lowercase=False, vocabulary=vocabulary)
     
-    def predict(self, X, normalized=False) -> list[str]:
-        """Given an array of (normalized?) strings, predict the topics"""
+    def count_vectorize_texts(self, X, normalized=False):
         if not normalized:
             X = list(map(normalize_text, X))
-        X = self.vectorizer_.transform(X)
+        return self.vectorizer_.transform(X)
+    
+    def tfidf_vectorize_texts(self, X, normalized=False):
+        """Use the root classifier's TFIDF to semantically vectorize an array of texts"""
+        X = self.count_vectorize_texts(X, normalized)
+        pipeline = self.classifiers_['root'].pipeline_
+        X = pipeline.named_steps['filter_rare_words'].transform(X)
+        return pipeline.named_steps['tfidf'].transform(X)
+    
+    def predict(self, X, normalized=False) -> list[str]:
+        """Given an array of (normalized?) strings, predict the topics"""
+        X = self.count_vectorize_texts(X, normalized)
         prev_prediction = ['']*X.shape[0]
         curr_prediction = ['root']*X.shape[0]
         predicting = True
