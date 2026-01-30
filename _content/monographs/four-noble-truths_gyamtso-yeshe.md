@@ -6,8 +6,6 @@ external_url: "https://dharmaebooks.org/four-noble-truths/"
 drive_links:
   - "https://drive.google.com/file/d/1FcudTx-K77lGK9fCsoMslxwKM4sbNTf4/view?usp=drivesdk"
 formats: [epub]
-file_links:
-  - "smallpdfs/gyamtso-yeshe_2013_four-noble-truths.pdf"
 course: view
 year: 2013
 olid: OL49198454M
