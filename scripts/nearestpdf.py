@@ -3,6 +3,7 @@
 from tag_predictor import TagPredictor, normalize_text, DATA_DIRECTORY
 from yaspin import yaspin
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 from os import cpu_count
 import io
 from pathlib import Path
@@ -12,9 +13,11 @@ from scipy.sparse import vstack
 
 corpus_embeddings = None
 picklefiles = None
+filesizes = None
 
 MIN_PICKLE_SIZE_TO_COMPARE = 400 # bytes. ~1 page of compressed, normalized text
 MIN_VOCAB_SIZE_TO_COMPARE = 120 # words. ~1 short page of stemmed text
+MAX_FILE_TO_TEXT_RATIO = 3000 # 1 char extracted per this many PDF bytes. Worse than that implies a mostly image PDF
 
 def file_closest_to_string(needle: str) -> tuple[str, float]:
   """Returns the google file id closest to the given string, and its similarity score.
@@ -24,7 +27,7 @@ def file_closest_to_string(needle: str) -> tuple[str, float]:
 
   The similarity score is cosine similarity [0, 1] in our TFIDF vector space.
     Theoretical modeling shows that a good threshold balancing TPR and TNR for considering
-    a document to be the same as another is somewhere between 0.935 and 0.965.
+    a document to be the same as another is somewhere between 0.945 and 0.965.
     In practice, anything higher than 0.90 is suspect and some duplicates will be as low as 0.85.
     But many duplicates have similarity >0.99, so feel free to set the threshold
     according to your tolerance for false positives vs false negatives.
@@ -97,9 +100,32 @@ def _load_embeddings_for_pickles(pickles: list[Path]):
   joblib.dump(cache_key, CACHE_KEY_FILE)
   return ret
 
+def _load_filesizes():
+  DIR = DATA_DIRECTORY.joinpath('.cache/load_filesizes')
+  cache_key = picklefiles
+  CACHE_KEY_FILE = DIR.joinpath('key.pkl')
+  CACHE_FILE = DIR.joinpath('value.pkl')
+  if DIR.is_dir():
+    if CACHE_KEY_FILE.is_file():
+      old_key = joblib.load(CACHE_KEY_FILE)
+      if list(old_key) == list(cache_key) and CACHE_FILE.is_file():
+        return joblib.load(CACHE_FILE)
+  else:
+    DIR.mkdir(parents=True)
+  # vstack() ensures this list of arrays becomes a proper matrix
+  # Note this takes a couple minutes to load even with 6 workers
+  # Therefor the caching logic
+  ret = [
+     len(joblib.load(fp)) for fp in picklefiles
+  ]
+  # Make sure we commit the value to file before the key
+  joblib.dump(ret, CACHE_FILE)
+  joblib.dump(cache_key, CACHE_KEY_FILE)
+  return ret
+
 
 def load(create_new_pickles=False):
-  global corpus_embeddings, picklefiles
+  global corpus_embeddings, picklefiles, filesizes
   from train_tag_predictor import (
     get_trainable_gfiles_from_site,
     save_all_drive_texts,
@@ -119,17 +145,46 @@ def load(create_new_pickles=False):
 
   print("Loading embeddings...")
   corpus_embeddings = _load_embeddings_for_pickles(picklefiles)
+  print(f"Loaded {np.shape(corpus_embeddings)[0]} embeddings")
+  print("Checking file sizes...")
   row_nnzs = np.diff(corpus_embeddings.indptr)
+  # toss out PDF files that have too little text
   large_enough_idxs = np.where(row_nnzs >= MIN_VOCAB_SIZE_TO_COMPARE)[0]
   corpus_embeddings = corpus_embeddings[large_enough_idxs]
   picklefiles = np.array(picklefiles)[large_enough_idxs]
-  print(f"Loaded {np.shape(corpus_embeddings)[0]} embeddings")
+  filesizes = _load_filesizes()
+  # toss out PDF files that are mostly un-OCRed images
+  size_ratios = np.array([
+     gdrive.gcache.get_item(fp.stem)['size'] / filesizes[idx]
+     for idx, fp in enumerate(picklefiles)
+  ])
+  good_ratios = np.where(size_ratios <= MAX_FILE_TO_TEXT_RATIO)[0]
+  filesizes = np.array(filesizes)[good_ratios]
+  corpus_embeddings = corpus_embeddings[good_ratios]
+  picklefiles = picklefiles[good_ratios]
+  print(f"Trimmed down to {np.shape(corpus_embeddings)[0]} checkable embeddings")
 
-import numpy as np
-from scipy.sparse import csr_matrix
-from sklearn.metrics.pairwise import cosine_similarity
 
-def find_nearest_neighbors():
+def _find_nearest_neighbors_batch(indices):
+  start_idx, end_idx = indices
+  batch = corpus_embeddings[start_idx:end_idx]
+  # Compute cosine similarity
+  similarities = cosine_similarity(batch, corpus_embeddings)
+  
+  # Mask self-similarity
+  # For the k-th document in the batch (index k), its global index is start_idx + k
+  # We want to set similarities[k, start_idx + k] = -1
+  rows = np.arange(similarities.shape[0])
+  cols = np.arange(start_idx, end_idx)
+  similarities[rows, cols] = -1
+  
+  # Find nearest neighbors
+  nearest_indices = np.argmax(similarities, axis=1)
+  nearest_similarities = similarities[rows, nearest_indices]
+  
+  return nearest_indices, nearest_similarities
+
+def find_nearest_neighbors() -> tuple[np.ndarray, np.ndarray]:
   """
   Finds the nearest neighbor for each document in the corpus sparse matrix.
   
@@ -140,43 +195,124 @@ def find_nearest_neighbors():
   nearest_similarities : np.ndarray
     Array of shape (n_documents,) with the cosine similarity to the nearest neighbor
   """
+  DIR = DATA_DIRECTORY.joinpath('.cache/nearest_neighbors')
+  CACHE_KEY_FILE = DIR.joinpath('key.pkl')
+  CACHE_FILE = DIR.joinpath('value.pkl')
+  if DIR.is_dir():
+    if CACHE_KEY_FILE.is_file():
+      old_key = joblib.load(CACHE_KEY_FILE)
+      if list(old_key) == list(picklefiles) and CACHE_FILE.is_file():
+        return joblib.load(CACHE_FILE)
+  else:
+    DIR.mkdir(parents=True)
+  
   n_docs = corpus_embeddings.shape[0]
+  num_workers = min(cpu_count() or 1, 5) # 5 is as many workers as I have RAM for...
+  N_BATCHES = min(int(n_docs / 20), 500)
   
-  # Initialize arrays to store results
-  nearest_indices = np.zeros(n_docs, dtype=np.int32)
-  nearest_similarities = np.zeros(n_docs, dtype=np.float64)
+  # Split into batches
+  split_indices = np.linspace(0, n_docs, N_BATCHES + 1, dtype=int)
+  batches = []
+  for i in range(len(split_indices) - 1):
+      s, e = split_indices[i], split_indices[i+1]
+      if s < e:
+          batches.append((s, e))
   
-  # Process in batches to manage memory
-  batch_size = 1000  # Adjust based on available memory
+  # Note: this takes >20 mins to load
+  results = tqdm_process_map(
+      _find_nearest_neighbors_batch,
+      batches,
+      max_workers=num_workers,
+      chunksize=1
+  )
   
-  for i in range(0, n_docs, batch_size):
-    end_idx = min(i + batch_size, n_docs)
-    batch = corpus_embeddings[i:end_idx]
-    
-    # Compute cosine similarity between batch and all documents
-    similarities = cosine_similarity(batch, corpus_embeddings)
-    
-    # For each document in the batch
-    for j in range(similarities.shape[0]):
-      doc_idx = i + j
+  # Aggregate results
+  all_indices = []
+  all_sims = []
+  for indices, sims in results:
+      all_indices.append(indices)
+      all_sims.append(sims)
       
-      # Set diagonal to -1 to exclude self-similarity
-      similarities[j, doc_idx] = -1
-      
-      # Find the maximum similarity (nearest neighbor)
-      nearest_idx = np.argmax(similarities[j])
-      nearest_sim = similarities[j, nearest_idx]
-      
-      nearest_indices[doc_idx] = nearest_idx
-      nearest_similarities[doc_idx] = nearest_sim
-    
-    print(f"Processed {end_idx}/{n_docs} documents")
-  
-  return nearest_indices, nearest_similarities
+  ret = (np.concatenate(all_indices), np.concatenate(all_sims), )
+  joblib.dump(ret, CACHE_FILE)
+  joblib.dump(picklefiles, CACHE_KEY_FILE)
+  return ret
+
+def is_duplicate_prompt(idx):
+  import gdrive
+  from strutils import system_open, radio_dial
+  gfa = picklefiles[idx].stem
+  jdx = nearest_indices[idx]
+  gfb = picklefiles[jdx].stem
+  fa = gdrive.gcache.get_item(gfa)
+  fb = gdrive.gcache.get_item(gfb)
+  if fa['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
+      return 'old a'
+  if fb['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
+      return 'old b'
+  pa = gdrive.gcache.get_item(fa['parent_id'])
+  pb = gdrive.gcache.get_item(fb['parent_id'])
+  def _print_file(gfile, gparent):
+    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {gdrive.DRIVE_LINK.format(gparent['id'])}")
+  _print_file(fa, pa)
+  print(f"  was found to be {nearest_similarities[idx]} similar to")
+  _print_file(fb, pb)
+  while True:
+    options = ["Open both", "A is old version", "B is old version", "Exact dupe", "Different files"]
+    match radio_dial(options):
+      case 0:
+          system_open(gdrive.DRIVE_LINK.format(gfa))
+          system_open(gdrive.DRIVE_LINK.format(gfb))
+      case 1:
+          return 'old a'
+      case 2:
+          return 'old b'
+      case 3:
+          return 'either'
+      case 4:
+          return False
 
 if __name__ == "__main__":
   load(False)
-  print("Finding nearest neighbors...")
+  import gdrive
+  print("Loading nearest neighbors...")
   nearest_indices, nearest_similarities = find_nearest_neighbors()
-  import ipdb; ipdb.set_trace()
+  gid_to_idx = {
+     fp.stem: idx for idx, fp in enumerate(picklefiles)
+  }
+  size_similarities = [
+     abs(filesizes[idx] - filesizes[jdx])/max(filesizes[idx], filesizes[jdx])
+     for idx, jdx in enumerate(nearest_indices)
+  ]
+  import matplotlib.pyplot as plt
+  DECISIONS_FILE = DATA_DIRECTORY.joinpath('decisions.pkl')
+  if DECISIONS_FILE.is_file():
+     decisions = joblib.load(DECISIONS_FILE)
+  else:
+     decisions = dict()
+  for idx in range(len(nearest_indices)):
+       if nearest_similarities[idx] < 0.96:
+           continue
+       if nearest_similarities[idx] > 1:
+           continue
+       jdx = nearest_indices[idx]
+       key = (picklefiles[idx].stem, picklefiles[jdx].stem, )
+       if jdx < idx or key in decisions:
+           continue
+       decisions[key] = is_duplicate_prompt(idx)
+       joblib.dump(decisions, DECISIONS_FILE)
+       print(f"So far made {len(decisions)} decisions")
+       if len(decisions) % 10 == 0:
+           stacked = [
+             [nearest_similarities[gid_to_idx[gf[0]]] for (gf, dec) in decisions.items() if
+              (str(dec) == 'either') == target[0] and
+              # make sure that the pair we decided on is still considered a nearest pair
+              gf[0] in gid_to_idx and gf[1] in gid_to_idx and nearest_indices[gid_to_idx[gf[0]]] == gid_to_idx[gf[1]]
+              # also split by how close they are in size
+              and target[1] == (size_similarities[gid_to_idx[gf[0]]] < 0.1)
+             ]
+             for target in [(False,True), (False,False), (True,True), (True,False)] # the stacked choices
+           ]
+           plt.hist(stacked, stacked=True, bins=int(len(decisions)/10), color=['red','orange','blue','purple'])
+           plt.show()
 
