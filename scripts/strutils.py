@@ -268,8 +268,7 @@ def radio_dial(options):
   stdin = sys.stdin.fileno()
   old_settings = termios.tcgetattr(stdin)
   tty.setraw(stdin)
-  try:
-    while True:
+  def _redisplay():
       cout(f"{ANSI_RESTORE_POSITION}{ANSI_ERASE_HERE_TO_END}{ANSI_RESTORE_POSITION}")
       if i > 0:
         cout(f"{ANSI_COLOR_DIM}   {i}/{length}: {options[i-1]}{ANSI_COLOR_RESET}")
@@ -278,10 +277,17 @@ def radio_dial(options):
       if length > i + 1:
         cout(ANSI_RETURN_N_DOWN(1))
         cout(f"{ANSI_COLOR_DIM}   {i+2}/{length}: {options[i+1]}{ANSI_COLOR_RESET}")
+  try:
+    while True:
+      _redisplay()
       ch = sys.stdin.read(1)
       if ch == '\x03':
         raise KeyboardInterrupt()
       elif ch in ['\r', '\x04', '\n']:
+        break
+      elif ch >= '1' and ch <= '9' and length < 9 and ord(ch) - ord('1') < length:
+        i = ord(ch) - ord('1')
+        _redisplay()
         break
       elif ch == '\x1b': # ESC
         ch = sys.stdin.read(1)
@@ -467,12 +473,12 @@ class FileSyncedSet:
     return self.norm(item) in self.items
 
 class FileSyncedMap:
-  def __init__(self, fname, keynormalizer=None):
-    self.fname = fname
+  def __init__(self, file_path, keynormalizer=None):
+    self.fname = file_path
     self.items = dict()
     self.norm = keynormalizer or (lambda a: str(a))
-    if os.path.exists(fname):
-      with open(fname) as fd:
+    if os.path.exists(file_path):
+      with open(file_path) as fd:
         self.items = json.load(fd)
   def _rewrite_file(self):
     with open(self.fname, "w") as fd:

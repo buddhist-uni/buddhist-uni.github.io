@@ -572,7 +572,7 @@ def ensure_these_are_shared_with_everyone(file_ids: list[str], verbose=True):
   all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
   count = 0
   if not verbose:
-    all_files = tqdm(all_files, unit='files', total=len(file_ids))
+    all_files = tqdm(all_files, unit='f', total=len(file_ids))
   for file in all_files:
     if 'permissions' not in file:
       if verbose:
