@@ -257,7 +257,7 @@ def remove_duplicate_files(verbose=True):
   duplicate_md5s = gcache.find_duplicate_md5s()
   print(f"[duplicates] Found {len(duplicate_md5s)} duplicated files by hash.")
   if not verbose:
-    duplicate_md5s = tqdm(duplicate_md5s, unit='file', desc='Handling duplicates')
+    duplicate_md5s = tqdm(duplicate_md5s, unit='f', desc='Handling duplicates')
   for md5 in duplicate_md5s:
     remove_duplicate_file(md5, verbose=verbose, dry_run=False)
   duplicate_urls = gcache.find_duplicate_urls()
@@ -376,7 +376,7 @@ def remove_dangling_pickles(verbose=True, dry_run=False):
     return gcache.get_item(pickle_file['name'][0:-4])
   print("Checking pickle files...")
   deletes = 0
-  pbar = tqdm(range(len(all_pickles)), unit="file")
+  pbar = tqdm(range(len(all_pickles)), unit="f")
   for idx in pbar:
     pickle = all_pickles[idx]
     target = _get_target(pickle)
