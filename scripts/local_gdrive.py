@@ -40,6 +40,8 @@ def locked(func):
     """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
     @wraps(func)
     def wrapper(self, *args, **kwargs):
+        if not self.conn:
+            raise ValueError("Attempting to connect to a closed connection")
         acquired = self._lock.acquire(timeout=5)
         if not acquired:
             # SQLite is usually quite fast. This should only happen if you've
@@ -187,6 +189,7 @@ class DriveCache:
 
     @locked
     def _upsert_item(self, item_data: Dict[str, Any]):
+        """upserts a Google Drive API style dict"""
         try:
             # 'parents' is a list, often just one item. 
             # Root folder might not have a 'parents' key.
