@@ -5,9 +5,13 @@ import sqlite3
 import json
 from pathlib import Path
 import threading
+from time import sleep
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
+
+TOKEN_PATH = Path('~/core-api.key').expanduser()
+TOKEN = 'Bearer ' + TOKEN_PATH.read_text().strip()
 
 IDENTIFIERS_FIELD_TYPES = [
   "CORE_ID",
@@ -15,6 +19,35 @@ IDENTIFIERS_FIELD_TYPES = [
   "DOI",
   "ARXIV_ID",
 ]
+
+def call_api(subpath: str, params: dict, retries=3):
+  url = "https://api.core.ac.uk/v3/" + subpath
+  response = requests.get(
+    url,
+    headers={
+      'Authorization': TOKEN,
+    },
+    params=params,
+  )
+  match response.status_code:
+    case 200:
+      return response.json()
+    case 429:
+      raise NotImplementedError(f"Teach me how to handle rate limits. Got back HEADERS={response.headers}")
+    case 500:
+      resp = response.json()
+      if 'capacity' in resp.get('message', ''):
+        if retries > 0:
+          print("CORE API overloaded at the moment...waiting 5 secs and trying again...")
+          sleep(5)
+          return call_api(subpath, params, retries=retries-1)
+        else:
+          raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
+      raise NotImplementedError(f"Unknown 500 response: {resp.get('message', '')}")
+    case 504:
+      raise ValueError(f"Malformed request {params} to {subpath}")
+    case _:
+      raise NotImplementedError(f"Unknown status code {response.status_code}:\n\n{response.text}")
 
 class CoreAPIWorksCache:
   """
@@ -64,7 +97,7 @@ class CoreAPIWorksCache:
         authors TEXT,                     -- json, as from API
         citation_count INTEGER,
         contributors TEXT,                -- json, as from API
-        document_type TEXT,      -- from API, almost useless
+        document_type TEXT,               -- from API, almost useless
         download_url TEXT,
         full_text TEXT,
         published_date TEXT,              -- might not have the exact date
