@@ -293,6 +293,7 @@ class DriveCache:
                 changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
                 for change in changelist['changes']:
                     if change['removed']:
+                        print(f"Marked for removal: {(self.get_item(change['fileId']) or {'name':'Not Found'})['name']}")
                         file_ids_removed.add(change['fileId'])
                     else:
                         file_ids_to_fetch.add(change['fileId'])

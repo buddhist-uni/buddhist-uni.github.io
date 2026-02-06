@@ -349,7 +349,7 @@ def _main():
   title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
   gfiles = gdrive.gcache.search_by_name_containing(
       title,
-      additional_filters="mime_type = ? AND owner = 1",
+      additional_filters="mime_type = ? AND owner = 1 AND shortcut_target IS NULL",
       additional_params=('application/pdf',)
   )
   gfile = None
