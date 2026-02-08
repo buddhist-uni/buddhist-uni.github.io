@@ -3,9 +3,12 @@
 import requests
 import sqlite3
 import json
+import re
+from datetime import datetime, timezone
 from pathlib import Path
 import threading
 from time import sleep
+from enum import IntEnum
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -20,15 +23,30 @@ IDENTIFIERS_FIELD_TYPES = [
   "ARXIV_ID",
 ]
 
+class TrackingQueryStatus(IntEnum):
+  UNTESTED = 0
+  INVALID = 1
+  PAUSED = 2
+  TRACKING = 3
+
+
 def call_api(subpath: str, params: dict, retries=3):
   url = "https://api.core.ac.uk/v3/" + subpath
-  response = requests.get(
-    url,
-    headers={
-      'Authorization': TOKEN,
-    },
-    params=params,
-  )
+  try:
+    response = requests.get(
+      url,
+      headers={
+        'Authorization': TOKEN,
+      },
+      params=params,
+    )
+  except requests.exceptions.ChunkedEncodingError as err:
+    if retries > 0:
+      print("CORE API response got cut off. Retrying in 4 seconds...")
+      sleep(4)
+      return call_api(subpath, params, retries=retries-1)
+    else:
+      raise err
   match response.status_code:
     case 200:
       return response.json()
@@ -38,8 +56,8 @@ def call_api(subpath: str, params: dict, retries=3):
       resp = response.json()
       if 'capacity' in resp.get('message', ''):
         if retries > 0:
-          print("CORE API overloaded at the moment...waiting 5 secs and trying again...")
-          sleep(5)
+          print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
+          sleep(6)
           return call_api(subpath, params, retries=retries-1)
         else:
           raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
@@ -48,6 +66,14 @@ def call_api(subpath: str, params: dict, retries=3):
       raise ValueError(f"Malformed request {params} to {subpath}")
     case _:
       raise NotImplementedError(f"Unknown status code {response.status_code}:\n\n{response.text}")
+
+def api_timestring_to_timestamp(ts: str | None) -> int | None:
+  """The API returns timestamps as ISO-ish strings but requests them as ms timestamps"""
+  if not ts:
+    return None
+  dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S")
+  dt = dt.replace(tzinfo=timezone.utc)
+  return int(dt.timestamp() * 1000)
 
 class CoreAPIWorksCache:
   """
@@ -65,10 +91,13 @@ class CoreAPIWorksCache:
   a multithreaded downloader.
   """
 
-  def __init__(self, db_path: str | Path):
+  def __init__(self, db_path: str | Path, page_size=100):
     """
     Connects to the SQLite DB at `db_path`
     """
+    assert page_size == int(page_size), "Page size must be an int"
+    assert page_size > 0, "Page size must be positive"
+    self.page_size = page_size
     self.db_path = Path(db_path)
     self.conn = sqlite3.connect(db_path, check_same_thread=False)
     self._lock = threading.RLock()
@@ -81,7 +110,8 @@ class CoreAPIWorksCache:
       CREATE TABLE IF NOT EXISTS tracking_queries (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         query TEXT NOT NULL UNIQUE,
-        last_updated TEXT
+        up_to INTEGER, -- updated date of the latest work in epochal ms
+        status INTEGER NOT NULL
       );
     """
 
@@ -89,8 +119,8 @@ class CoreAPIWorksCache:
       CREATE TABLE IF NOT EXISTS works (
         id TEXT PRIMARY KEY NOT NULL,     -- CORE's own ID
         title TEXT NOT NULL,
-        created_date TEXT NOT NULL,       -- CORE added Date
-        updated_date TEXT NOT NULL,       -- CORE updated Date
+        created_date INTEGER NOT NULL,    -- CORE added Date
+        updated_date INTEGER NOT NULL,    -- CORE updated Date
         data_provider INTEGER NOT NULL,   -- First provider id
         additional_data_providers TEXT,   -- json if more than one
         abstract TEXT,
@@ -100,10 +130,10 @@ class CoreAPIWorksCache:
         document_type TEXT,               -- from API, almost useless
         download_url TEXT,
         full_text TEXT,
-        published_date TEXT,              -- might not have the exact date
+        published_date INTEGER,           -- in ms lol
         publisher TEXT,
         -- End CORE fields, below are my fields
-        downloaded_timestamp INTEGER      -- negative means failed
+        downloaded_date INTEGER           -- negative means failed
       );
     """
 
@@ -125,12 +155,23 @@ class CoreAPIWorksCache:
       CREATE TABLE IF NOT EXISTS journals_works (
         work_id TEXT NOT NULL,
         journal_id TEXT NOT NULL,  -- ISSN
-        FOREIGN KEY(work_id) REFERENCES works(id)
+        FOREIGN KEY(work_id) REFERENCES works(id),
+        PRIMARY KEY (work_id, journal_id)
       );
     """
     create_journal_works_indexes_sql = """
       CREATE INDEX IF NOT EXISTS idx_work_journal ON journals_works(work_id);
       CREATE INDEX IF NOT EXISTS idx_journal_work ON journals_works(journal_id);
+    """
+
+    create_query_works_join_table_sql = """
+      CREATE TABLE IF NOT EXISTS query_works (
+        query_id INTEGER NOT NULL,
+        work_id TEXT NOT NULL,
+        FOREIGN KEY(work_id) REFERENCES works(id),
+        FOREIGN KEY(query_id) REFERENCES tracking_queries(id),
+        PRIMARY KEY (query_id, work_id) ON CONFLICT IGNORE
+      );
     """
 
     self.cursor.execute(create_tracking_table_sql)
@@ -139,6 +180,7 @@ class CoreAPIWorksCache:
     self.cursor.execute(create_id_table_index_sql)
     self.cursor.execute(create_journals_join_table_sql)
     self.cursor.executescript(create_journal_works_indexes_sql)
+    self.cursor.execute(create_query_works_join_table_sql)
     self.conn.commit()
 
   @locked
@@ -148,13 +190,14 @@ class CoreAPIWorksCache:
     return [row['id'] for row in rows]
 
   @locked
-  def upsert_work_from_api(self, api_obj: dict):
+  def upsert_work_from_api(self, api_obj: dict, tracking_query_id: int | None=None):
     data_provider = api_obj['dataProviders'][0]['id']
     additional_data_providers = None
     if len(api_obj['dataProviders']) > 1:
       additional_data_providers = json.dumps([
         p['id'] for p in api_obj['dataProviders'][1:]
       ])
+    updated_time = api_timestring_to_timestamp(api_obj['updatedDate'])
     sql = f"""
       INSERT INTO works (id, title, created_date, updated_date, data_provider, additional_data_providers, abstract, authors, citation_count, contributors, document_type, download_url, full_text, published_date, publisher)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -174,13 +217,35 @@ class CoreAPIWorksCache:
         publisher = excluded.publisher
       WHERE excluded.updated_date > works.updated_date;
     """
-    self.cursor.execute(sql, (api_obj['id'], api_obj['title'], api_obj['createdDate'], api_obj['updatedDate'], data_provider, additional_data_providers, api_obj['abstract'], json.dumps(api_obj['authors']), api_obj['citationCount'], json.dumps(api_obj['contributors']), api_obj.get('documentType'), api_obj['downloadUrl'], api_obj['fullText'], api_obj['publishedDate'], api_obj['publisher']))
+    self.cursor.execute(sql, (
+      api_obj['id'],
+      api_obj['title'],
+      api_timestring_to_timestamp(api_obj['createdDate']),
+      updated_time,
+      data_provider,
+      additional_data_providers,
+      api_obj['abstract'],
+      json.dumps(api_obj['authors']),
+      api_obj['citationCount'],
+      json.dumps(api_obj['contributors']),
+      api_obj.get('documentType'),
+      api_obj['downloadUrl'],
+      api_obj['fullText'],
+      api_timestring_to_timestamp(api_obj.get('publishedDate')),
+      api_obj['publisher'],
+    ))
 
     for ID_TYPE in IDENTIFIERS_FIELD_TYPES:
       ids_of_type = [identif['identifier'] for identif in api_obj['identifiers'] if identif['type'] == ID_TYPE]
       self.cursor.execute("DELETE FROM identifiers WHERE work_id = ? AND id_type = ?;", (api_obj['id'], ID_TYPE))
       for ident in ids_of_type:
-        self.cursor.execute("INSERT INTO identifiers (id, work_id, id_type) VALUES (?, ?, ?)", (ident, api_obj['id'], ID_TYPE))
+        try:
+          self.cursor.execute("INSERT INTO identifiers (id, work_id, id_type) VALUES (?, ?, ?)", (ident, api_obj['id'], ID_TYPE))
+        except sqlite3.IntegrityError:
+          self.cursor.execute("SELECT work_id FROM identifiers WHERE id = ?", (ident, ))
+          other_work_id = self.cursor.fetchone()['work_id']
+          self.conn.rollback()
+          raise ValueError(f"Can't insert work {api_obj['id']} because {ID_TYPE} \"{ident}\" already exists associated with work {other_work_id}")
     
     existing_source_urls = self.get_source_urls_for_work_id(api_obj['id'])
     missing_source_urls = set(api_obj['sourceFulltextUrls']) - set(existing_source_urls)
@@ -190,10 +255,50 @@ class CoreAPIWorksCache:
     self.cursor.execute("DELETE FROM journals_works WHERE work_id = ?", (api_obj['id'],))
     for journal in api_obj['journals']:
       for issn in journal['identifiers']:
+        assert re.match(r'^[0-9]{4}-[0-9]{3}[0-9X]$', issn), f"Invalid ISSN: {issn}"
         self.cursor.execute("INSERT INTO journals_works (work_id, journal_id) VALUES (?, ?)", (api_obj['id'], issn, ))
 
+    if tracking_query_id:
+      # Associate this work with this query and bump the query's up_to date
+      self.cursor.execute("INSERT INTO query_works (query_id, work_id) VALUES (?, ?)", (tracking_query_id, api_obj['id'], ))
+      self.cursor.execute("UPDATE tracking_queries SET up_to = ? WHERE id = ? AND (up_to IS NULL OR up_to < ?)", (updated_time, tracking_query_id, updated_time, ))
+    
     self.conn.commit()
   
+  @locked
+  def register_query(self, query: str):
+    assert "updatedDate" not in query, "Leave the updatedDate to me"
+    self.cursor.execute("INSERT INTO tracking_queries (query, status) VALUES (?, ?)", (query, TrackingQueryStatus.UNTESTED, ))
+    ret = self.cursor.lastrowid
+    self.conn.commit()
+    return ret
+  
+  @locked
+  def get_query(self, query_id: int) -> dict:
+    self.cursor.execute("SELECT * FROM tracking_queries WHERE id = ?", (query_id, ))
+    return dict(self.cursor.fetchone())
+  
+  def load_one_page_from_query(self, query_id: int) -> int:
+    """Returns the number added"""
+    query_obj = self.get_query(query_id)
+    query_str = query_obj['query']
+    if query_obj['up_to']:
+      query_str = f"({query_str}) AND updatedDate>{query_obj['up_to']}"
+    one_page = call_api(
+      'search/works',
+      {
+        'q': query_str,
+        'limit': self.page_size,
+        'sort': 'updatedDate:asc',
+      },
+    )
+    print(f"Got {len(one_page['results'])} / {one_page['totalHits']} for \"{query_str}\"")
+    ret = 0
+    for result in one_page['results']:
+      self.upsert_work_from_api(result, tracking_query_id=query_id)
+      ret += 1
+    return ret
+
   @locked
   def close(self):
     if self.conn:
