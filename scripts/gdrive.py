@@ -5,6 +5,7 @@ from datetime import datetime
 from pathlib import Path
 import readline
 from typing import Callable
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from math import floor
 import atexit
 from strutils import (
@@ -358,7 +359,7 @@ def has_file_already(file_in_question) -> list:
       return cfs
   return []
 
-def download_folder_contents_to(folder_id: str, target_directory: Path | str, recursive = False, follow_links = False):
+def download_folder_contents_to(folder_id: str, target_directory: Path | str, recursive = False, follow_links = False, parallelism=6):
   """
   Downloads all files from folder_id to target_directory
 
@@ -411,15 +412,22 @@ def download_folder_contents_to(folder_id: str, target_directory: Path | str, re
     print(f"Nothing to download in '{target_directory.name}'")
   else:
     print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
-    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
-      for f in downloads:
-        download_file(f[0], f[1], pbar)
+    if parallelism <= 1:
+      with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
+        for f in downloads:
+          download_file(f[0], f[1], pbar)
+    else:
+      with ThreadPoolExecutor(max_workers=parallelism) as executor:
+        futures = [executor.submit(download_file, f[0], f[1], False) for f in downloads]
+        for future in tqdm(as_completed(futures), total=len(downloads), unit='f'):
+          pass
   for cfid, child_path in subfolders:
     download_folder_contents_to(
       cfid,
       child_path,
       recursive=recursive,
       follow_links=follow_links,
+      parallelism=parallelism,
     )
 
 def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
