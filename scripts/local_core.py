@@ -9,11 +9,7 @@ from pathlib import Path
 import threading
 from time import sleep
 from enum import IntEnum
-try:
-  from lingua import LanguageDetectorBuilder
-except:
-  print("pip install lingua-language-detector")
-  exit(1)
+from language_detection import LANGUAGE_DETECTOR, Language
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -146,7 +142,8 @@ class CoreAPIWorksCache:
         published_date INTEGER,           -- in ms lol
         publisher TEXT,
         -- End CORE fields, below are my fields
-        downloaded_date INTEGER           -- negative means failed
+        downloaded_date INTEGER,          -- negative means failed
+        en_confidence REAL                -- 0 to 1 that the work is in English
       );
     """
 
@@ -213,9 +210,13 @@ class CoreAPIWorksCache:
         p['id'] for p in api_obj['dataProviders'][1:]
       ])
     updated_time = api_timestring_to_timestamp(api_obj['updatedDate'])
+    en_conf = LANGUAGE_DETECTOR.compute_language_confidence(
+      f"{api_obj['fullText'] or ''} {api_obj['title'] or ''} {api_obj['abstract'] or ''}",
+      Language.ENGLISH,
+    )
     sql = f"""
-      INSERT INTO works (id, title, created_date, updated_date, data_provider, additional_data_providers, abstract, authors, citation_count, contributors, document_type, download_url, full_text, published_date, publisher)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO works (id, title, created_date, updated_date, data_provider, additional_data_providers, abstract, authors, citation_count, contributors, document_type, download_url, full_text, published_date, publisher, en_confidence)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       ON CONFLICT(id) DO UPDATE SET
         title = excluded.title,
         updated_date = excluded.updated_date,
@@ -229,7 +230,8 @@ class CoreAPIWorksCache:
         download_url = excluded.download_url,
         full_text = excluded.full_text,
         published_date = excluded.published_date,
-        publisher = excluded.publisher
+        publisher = excluded.publisher,
+        en_confidence = excluded.en_confidence
       WHERE excluded.updated_date > works.updated_date;
     """
     self.cursor.execute(sql, (
@@ -248,6 +250,7 @@ class CoreAPIWorksCache:
       api_obj['fullText'],
       api_timestring_to_timestamp(api_obj.get('publishedDate')),
       api_obj['publisher'],
+      en_conf,
     ))
 
     for ID_TYPE in IDENTIFIERS_FIELD_TYPES:
@@ -358,22 +361,22 @@ class CoreAPIWorksCache:
       retries=15, # be really persistent about this one
     )
     seen = set()
-    additional = 0
+    additional = set()
     assert boundary_page['totalHits'] <= self.page_size, f"Got a page boundary with {boundary_page['totalHits']} hits but out page size is only {self.page_size}"
     for result in boundary_page['results']:
       if result['id'] in seen_works:
         seen.add(result['id'])
         continue
       self.upsert_work_from_api(result, tracking_query_id=query_id)
-      additional += 1
+      additional.add(result['id'])
     expected_to_see = set(
       result['id'] for result in one_page['results']
       if api_timestring_to_timestamp(result['updatedDate']) == new_up_to
     )
     assert expected_to_see == seen, f"Boundary query saw {seen} repeats while {expected_to_see} were expected"
-    if additional > 0:
-      print(f"  got {additional} additional hits with the exact boundary updatedDate")
-      return ret + additional
+    if len(additional) > 0:
+      print(f"  got {len(additional)} additional hits with the exact boundary updatedDate")
+      return ret + len(additional)
     print("  got no additional works at the boundary updatedDate")
     return ret
 
