@@ -9,6 +9,11 @@ from pathlib import Path
 import threading
 from time import sleep
 from enum import IntEnum
+try:
+  from lingua import LanguageDetectorBuilder
+except:
+  print("pip install lingua-language-detector")
+  exit(1)
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -40,7 +45,7 @@ def call_api(subpath: str, params: dict, retries=3):
       },
       params=params,
     )
-  except requests.exceptions.ChunkedEncodingError as err:
+  except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError) as err:
     if retries > 0:
       print("CORE API response got cut off. Retrying in 4 seconds...")
       sleep(4)
@@ -51,7 +56,15 @@ def call_api(subpath: str, params: dict, retries=3):
     case 200:
       return response.json()
     case 429:
-      raise NotImplementedError(f"Teach me how to handle rate limits. Got back HEADERS={response.headers}")
+      wait_until_stamp = response.headers['x-ratelimit-retry-after']
+      wait_until = datetime.strptime(wait_until_stamp, '%Y-%m-%dT%H:%M:%S%z')
+      now = datetime.now(wait_until.tzinfo)
+      seconds_until = (wait_until - now).total_seconds()
+      wait_interval = seconds_until + 2 # Add 2 seconds to be polite
+      print(f"CORE API Rate limit hit. Waiting for {wait_interval:.1f} seconds...")
+      sleep(wait_interval)
+      # Don't count this as a retry as the API has asked us to wait
+      return call_api(subpath, params, retries=retries)
     case 500:
       resp = response.json()
       if 'capacity' in resp.get('message', ''):
@@ -91,7 +104,7 @@ class CoreAPIWorksCache:
   a multithreaded downloader.
   """
 
-  def __init__(self, db_path: str | Path, page_size=100):
+  def __init__(self, db_path: str | Path, page_size=20):
     """
     Connects to the SQLite DB at `db_path`
     """
@@ -141,14 +154,16 @@ class CoreAPIWorksCache:
     # but also throw in the sourceFulltextUrls as type `SOURCE_URL`
     create_identifiers_table_sql = """
       CREATE TABLE IF NOT EXISTS identifiers (
-        id TEXT PRIMARY KEY NOT NULL,     -- could two types overlap?
+        id TEXT NOT NULL, -- sadly not unique. Sometimes different "works" have the same OAI_ID
         work_id TEXT NOT NULL,
         id_type TEXT NOT NULL,
-        FOREIGN KEY(work_id) REFERENCES works(id)
+        FOREIGN KEY(work_id) REFERENCES works(id),
+        PRIMARY KEY (work_id, id)
       );
     """
-    create_id_table_index_sql = """
+    create_id_table_indexes_sql = """
       CREATE INDEX IF NOT EXISTS idx_work_id ON identifiers(work_id);
+      CREATE INDEX IF NOT EXISTS idx_id_id ON identifiers(id);
     """
 
     create_journals_join_table_sql = """
@@ -177,7 +192,7 @@ class CoreAPIWorksCache:
     self.cursor.execute(create_tracking_table_sql)
     self.cursor.execute(create_works_table_sql)
     self.cursor.execute(create_identifiers_table_sql)
-    self.cursor.execute(create_id_table_index_sql)
+    self.cursor.executescript(create_id_table_indexes_sql)
     self.cursor.execute(create_journals_join_table_sql)
     self.cursor.executescript(create_journal_works_indexes_sql)
     self.cursor.execute(create_query_works_join_table_sql)
@@ -239,13 +254,7 @@ class CoreAPIWorksCache:
       ids_of_type = [identif['identifier'] for identif in api_obj['identifiers'] if identif['type'] == ID_TYPE]
       self.cursor.execute("DELETE FROM identifiers WHERE work_id = ? AND id_type = ?;", (api_obj['id'], ID_TYPE))
       for ident in ids_of_type:
-        try:
-          self.cursor.execute("INSERT INTO identifiers (id, work_id, id_type) VALUES (?, ?, ?)", (ident, api_obj['id'], ID_TYPE))
-        except sqlite3.IntegrityError:
-          self.cursor.execute("SELECT work_id FROM identifiers WHERE id = ?", (ident, ))
-          other_work_id = self.cursor.fetchone()['work_id']
-          self.conn.rollback()
-          raise ValueError(f"Can't insert work {api_obj['id']} because {ID_TYPE} \"{ident}\" already exists associated with work {other_work_id}")
+        self.cursor.execute("INSERT INTO identifiers (id, work_id, id_type) VALUES (?, ?, ?)", (ident, api_obj['id'], ID_TYPE))
     
     existing_source_urls = self.get_source_urls_for_work_id(api_obj['id'])
     missing_source_urls = set(api_obj['sourceFulltextUrls']) - set(existing_source_urls)
@@ -254,9 +263,13 @@ class CoreAPIWorksCache:
 
     self.cursor.execute("DELETE FROM journals_works WHERE work_id = ?", (api_obj['id'],))
     for journal in api_obj['journals']:
-      for issn in journal['identifiers']:
-        assert re.match(r'^[0-9]{4}-[0-9]{3}[0-9X]$', issn), f"Invalid ISSN: {issn}"
-        self.cursor.execute("INSERT INTO journals_works (work_id, journal_id) VALUES (?, ?)", (api_obj['id'], issn, ))
+      for raw_id in journal['identifiers']:
+        issn = raw_id.replace('issn:', '')
+        assert re.match(r'^[0-9]{4}-[0-9]{3}[0-9Xx]$', issn), f"Invalid ISSN: {issn}"
+        self.cursor.execute(
+          "INSERT OR IGNORE INTO journals_works (work_id, journal_id) VALUES (?, ?)",
+          (api_obj['id'], issn, ),
+        )
 
     if tracking_query_id:
       # Associate this work with this query and bump the query's up_to date
@@ -267,8 +280,15 @@ class CoreAPIWorksCache:
   
   @locked
   def register_query(self, query: str):
+    """returns the id of the query, adding it to the DB if necessary"""
     assert "updatedDate" not in query, "Leave the updatedDate to me"
-    self.cursor.execute("INSERT INTO tracking_queries (query, status) VALUES (?, ?)", (query, TrackingQueryStatus.UNTESTED, ))
+    try:
+      self.cursor.execute("INSERT INTO tracking_queries (query, status) VALUES (?, ?)", (query, TrackingQueryStatus.UNTESTED, ))
+    except sqlite3.IntegrityError:
+      self.conn.rollback()
+      self.cursor.execute("SELECT id FROM tracking_queries WHERE query = ?", (query,))
+      row = self.cursor.fetchone()
+      return row['id']
     ret = self.cursor.lastrowid
     self.conn.commit()
     return ret
@@ -277,26 +297,84 @@ class CoreAPIWorksCache:
   def get_query(self, query_id: int) -> dict:
     self.cursor.execute("SELECT * FROM tracking_queries WHERE id = ?", (query_id, ))
     return dict(self.cursor.fetchone())
+
+  @locked
+  def set_query_status(self, query_id: int, query_status: int):
+    self.cursor.execute(
+      "UPDATE tracking_queries SET status = ? WHERE id = ?",
+      (query_status, query_id, )
+    )
+    self.conn.commit()
   
-  def load_one_page_from_query(self, query_id: int) -> int:
-    """Returns the number added"""
+  def load_another_page_from_query(self, query_id: int) -> int:
+    """Calls the API with the registered work search query.
+
+    Returns the number of works added"""
     query_obj = self.get_query(query_id)
     query_str = query_obj['query']
+    if query_obj['status'] == TrackingQueryStatus.INVALID:
+      raise ValueError(f"Cannot fetch invalid query: {query_str}")
     if query_obj['up_to']:
       query_str = f"({query_str}) AND updatedDate>{query_obj['up_to']}"
-    one_page = call_api(
-      'search/works',
-      {
-        'q': query_str,
-        'limit': self.page_size,
-        'sort': 'updatedDate:asc',
-      },
-    )
-    print(f"Got {len(one_page['results'])} / {one_page['totalHits']} for \"{query_str}\"")
+    print(f"Pulling works matching: {query_str}")
+    try:
+      one_page = call_api(
+        'search/works',
+        {
+          'q': query_str,
+          'limit': self.page_size,
+          'sort': 'updatedDate:asc',
+        },
+      )
+    except ValueError as err:
+      self.set_query_status(query_id, TrackingQueryStatus.INVALID)
+      raise err
+    print(f"  got {len(one_page['results'])} / {one_page['totalHits']} for \"{query_str}\"")
+    if query_obj['status'] == TrackingQueryStatus.UNTESTED:
+      self.set_query_status(query_id, TrackingQueryStatus.PAUSED)
     ret = 0
     for result in one_page['results']:
       self.upsert_work_from_api(result, tracking_query_id=query_id)
       ret += 1
+    # After inserting that page, we have to double check that we got all
+    # of the works with updatedDate exactly = to the new "up_to"
+    # otherwise, when we go to get the next page, we'll drop some works
+    new_up_to = max(
+      api_timestring_to_timestamp(
+        result['updatedDate']
+      ) for result in one_page['results']
+    )
+    seen_works = set(
+      result['id'] for result in one_page['results']
+    )
+    query_str = f"({query_obj['query']}) AND updatedDate:{new_up_to}"
+    print(f"Pulling works matching: {query_str}")
+    boundary_page = call_api(
+      'search/works',
+      {
+        'q': query_str,
+        'limit': self.page_size,
+      },
+      retries=15, # be really persistent about this one
+    )
+    seen = set()
+    additional = 0
+    assert boundary_page['totalHits'] <= self.page_size, f"Got a page boundary with {boundary_page['totalHits']} hits but out page size is only {self.page_size}"
+    for result in boundary_page['results']:
+      if result['id'] in seen_works:
+        seen.add(result['id'])
+        continue
+      self.upsert_work_from_api(result, tracking_query_id=query_id)
+      additional += 1
+    expected_to_see = set(
+      result['id'] for result in one_page['results']
+      if api_timestring_to_timestamp(result['updatedDate']) == new_up_to
+    )
+    assert expected_to_see == seen, f"Boundary query saw {seen} repeats while {expected_to_see} were expected"
+    if additional > 0:
+      print(f"  got {additional} additional hits with the exact boundary updatedDate")
+      return ret + additional
+    print("  got no additional works at the boundary updatedDate")
     return ret
 
   @locked
