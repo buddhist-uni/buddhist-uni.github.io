@@ -1,9 +1,7 @@
 ---
 title: "ChineseSkill"
 external_url: "https://chineseskill.com/"
-course: chinese-primer
-tags:
-  - mandarin
+course: mandarin
 year: 2015
 ---
 
