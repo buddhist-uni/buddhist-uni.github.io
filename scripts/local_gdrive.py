@@ -293,7 +293,13 @@ class DriveCache:
                 changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
                 for change in changelist['changes']:
                     if change['removed']:
-                        print(f"Marked for removal: {(self.get_item(change['fileId']) or {'name':'Not Found'})['name']}")
+                        file = self.get_item(change['fileId'])
+                        if file:
+                          print(f"Marked for removal: \"{file['name']}\" (Owned by {'you' if file['owners'][0]['me'] else file['owners'][0]['email']})")
+                        else:
+                          file = self.get_trashed_item(change['fileId'])
+                          if file:
+                            print(f"Trashed item was permanently deleted: \"{file['name']}\"")
                         file_ids_removed.add(change['fileId'])
                     else:
                         file_ids_to_fetch.add(change['fileId'])
@@ -303,7 +309,7 @@ class DriveCache:
                 changes_page = changelist['newStartPageToken'] # newStartPageToken says come back later for more
                 break
         if len(file_ids_removed):
-            for fileId in tqdm(file_ids_removed, desc="Trashing gone files"):
+            for fileId in file_ids_removed:
                 self._move_to_trash(fileId)
         file_ids_to_fetch = list(file_ids_to_fetch - file_ids_removed)
         if len(file_ids_to_fetch):
@@ -420,6 +426,23 @@ class DriveCache:
         self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (file_id,))
         row = self.cursor.fetchone()
         return self.row_dict_to_api_dict(dict(row)) if row else None
+    
+    
+    @locked
+    def get_trashed_item(self, file_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Retrieves a single item from the trash by its Google Drive ID.
+        
+        Args:
+            file_id: The ID of the file/folder.
+            
+        Returns:
+            A dictionary of the item's data in API format or None if not found.
+        """
+        self.cursor.execute("SELECT * FROM trashed_drive_items WHERE id = ?", (file_id,))
+        row = self.cursor.fetchone()
+        return self.row_dict_to_api_dict(dict(row)) if row else None
+    
     
     def get_items(self, file_ids: list[str]) -> list[Dict[str, Any]]:
         """

@@ -115,9 +115,13 @@ for filep in args.folder.iterdir():
   fun = input("fun: ")
   recs = input("recs: ")
   folderid = gfile['parents'][0]
-  while folderid not in tags:
-    folderid = gdrive.gcache.get_item(folderid)['parents'][0]
-  tag = tags[folderid]
+  tag = 'unknown'
+  try:
+    while folderid not in tags:
+      folderid = gdrive.gcache.get_item(folderid)['parents'][0]
+    tag = tags[folderid]
+  except:
+    pass
   print(f"tag: {tag}")
   outrows.append([
     title,

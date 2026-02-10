@@ -7,6 +7,7 @@ CAMBRIDGE = "P4310311721"
 MDPI = "P4310310987"
 SPRINGER_SBM = "P4310319900"
 SPRINGER_NATURE = "P4310320108"
+SPRINGER_INT   = "P4310319972"
 
 slugs = {
   HAWAII: "hawaii",
@@ -16,4 +17,5 @@ slugs = {
   MDPI: "mdpi",
   SPRINGER_SBM: "springer",
   SPRINGER_NATURE: "springer",
+  SPRINGER_INT: "springer",
 }
