@@ -1,17 +1,30 @@
 #!/bin/python3
 
-from journals import issns
+import journals
 from local_core import (
   CoreAPIWorksCache,
 )
 
-TRACKING_ISSNS = [issn for val in issns.values() for issn in val] # 268
+TRACKING_ISSNS = [issn for val in journals.issns.values() for issn in val] # 268
 # but there's a lot of mess here: other languages, review articles... how to filter?
 
 import website
 website.load()
-DOIS = [c.get('source_url', c.get('external_url', '')) for c in website.content]
-DOIS = [doi.split('doi.org/')[1] for doi in DOIS if 'doi.org/' in doi]
+
+DOIS = [(
+  c.get('source_url', ''),
+  c.get('external_url', ''),
+  c.get('doi',''),
+  c.get('alternate_doi', ''),
+) for c in website.content]
+DOIS = [
+  doi.split('doi.org/')[1]
+  for doilist in DOIS
+  for doi in doilist
+  if 'doi.org/' in doi
+]
+
+
 # ~113 from these, but they're at least guarenteed
 
 # "Buddhist" articles that aren't for download

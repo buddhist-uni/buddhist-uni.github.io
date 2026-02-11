@@ -3,6 +3,7 @@
 from tag_predictor import TagPredictor, normalize_text, DATA_DIRECTORY
 from yaspin import yaspin
 import numpy as np
+import numpy.typing as npt
 from sklearn.metrics.pairwise import cosine_similarity
 from os import cpu_count
 import io
@@ -19,20 +20,14 @@ MIN_PICKLE_SIZE_TO_COMPARE = 400 # bytes. ~1 page of compressed, normalized text
 MIN_VOCAB_SIZE_TO_COMPARE = 120 # words. ~1 short page of stemmed text
 MAX_FILE_TO_TEXT_RATIO = 3000 # 1 char extracted per this many PDF bytes. Worse than that implies a mostly image PDF
 
-def file_closest_to_string(needle: str) -> tuple[str, float]:
-  """Returns the google file id closest to the given string, and its similarity score.
+def calculate_all_similarities_to_string(needle: str) -> npt.NDArray[np.float64] | None:
+  """
+  Returns the cosine similarities of the given string to all documents in the corpus.
   
   Returns:
-    tuple[str, float]: (google file id, similarity score)
-
-  The similarity score is cosine similarity [0, 1] in our TFIDF vector space.
-    Theoretical modeling shows that a good threshold balancing TPR and TNR for considering
-    a document to be the same as another is somewhere between 0.945 and 0.965.
-    In practice, anything higher than 0.90 is suspect and some duplicates will be as low as 0.85.
-    But many duplicates have similarity >0.99, so feel free to set the threshold
-    according to your tolerance for false positives vs false negatives.
-  NOTE: due to floating point errors, similarity scores are sometimes >= 1.0, so
-    if you're transforming to log p space, you must add an epsilon.
+    npt.NDArray[np.float64] | None: The similarities or None if the string is too short
+       This array is parallel to `picklefiles`.
+       Use `picklefiles[i].stem` to get the associated Google file id.
   """
   if corpus_embeddings is None:
     raise Exception("Call load() first")
@@ -43,7 +38,7 @@ def file_closest_to_string(needle: str) -> tuple[str, float]:
   # Some PDFs that parse wrong repeat the same few words over and over.
   joblib.dump(stemmed_needle, temp_buffer, compress=6)
   if temp_buffer.tell() < MIN_PICKLE_SIZE_TO_COMPARE:
-    return (None, 0) # We don't look for similarities to tiny files
+    return None # We don't look for similarities to tiny files
 
   needle_embedding = tag_predictor.tfidf_vectorize_texts(
     [stemmed_needle],
@@ -52,12 +47,84 @@ def file_closest_to_string(needle: str) -> tuple[str, float]:
   # If this document doesn't have enough words in our vocabularly
   # don't bother trying to compare it.
   if needle_embedding.nnz < MIN_VOCAB_SIZE_TO_COMPARE:
-    return (None, 0)
+    return None
   # @ is matrix multiplication, .T is transpose, .toarray() is dense
   # .ravel() ensures 1d the right way
-  similarities = (corpus_embeddings @ needle_embedding.T).toarray().ravel()
+  return (corpus_embeddings @ needle_embedding.T).toarray().ravel()
+
+def file_closest_to_string(needle: str) -> tuple[str, float]:
+  """Returns the google file id closest to the given string, and its similarity score.
+  
+  Returns:
+    tuple[str, float]: (google file id, similarity score) or ('', 0) if none
+
+  The similarity score is cosine similarity [0, 1] in our TFIDF vector space.
+    Theoretical modeling shows that a good threshold balancing TPR and TNR for considering
+    a document to be the same as another is somewhere between 0.945 and 0.965.
+    In practice, anything higher than 0.90 is suspect and some duplicates will be as low as 0.85.
+    But many duplicates have similarity >0.99, so feel free to set the threshold
+    according to your tolerance for false positives vs false negatives.
+  NOTE: due to floating point errors, similarity scores are sometimes >= 1.0, so
+    if you're transforming to log p space, you must add an epsilon.
+  """
+  similarities = calculate_all_similarities_to_string(needle)
+  if not similarities:
+     return ('', 0)
   best_idx = np.argmax(similarities)
   return picklefiles[best_idx].stem, float(similarities[best_idx])
+
+def n_closest_files_to_string(needle: str, n_ret: int) -> list[tuple[str, float]]:
+  """Returns the `n_ret` top files closest to the given string, and their similarity scores.
+  
+  Returns:
+    list[tuple[str, float]]: list of (google file id, similarity score) pairs
+    sorted by similarity score in descending order
+  """
+  similarities = calculate_all_similarities_to_string(needle)
+  if similarities is None or len(similarities) == 0:
+    return []
+  
+  n = min(n_ret, len(similarities))
+  if n <= 0:
+    return []
+
+  # np.argpartition is O(N) and moves the largest n elements to the end.
+  # We use -n to get the n largest elements.
+  top_idxs = np.argpartition(similarities, -n)[-n:]
+  
+  # Then we sort only those n elements in descending order.
+  sorted_top_idxs = top_idxs[np.argsort(similarities[top_idxs])[::-1]]
+  
+  return [
+    (picklefiles[i].stem, float(similarities[i]))
+    for i in sorted_top_idxs
+  ]
+
+def all_files_within(needle: str, min_similarity: float) -> list[tuple[str, float]]:
+  """returns a list of all files with a similarity score above the given threshold
+  
+  Returns:
+    list[tuple[str, float]]: list of (google file id, similarity score) pairs
+    sorted by similarity score in descending order
+  """
+  assert min_similarity >= 0 and min_similarity <= 1, f"min_similarity must be between 0 and 1, got {min_similarity}"
+  similarities = calculate_all_similarities_to_string(needle)
+  if similarities is None or len(similarities) == 0:
+    return []
+  
+  # Efficiently find indices where similarity >= threshold
+  matching_idxs = np.where(similarities >= min_similarity)[0]
+  
+  if len(matching_idxs) == 0:
+    return []
+    
+  # Sort only those matches
+  sorted_matching_idxs = matching_idxs[np.argsort(similarities[matching_idxs])[::-1]]
+  
+  return [
+    (picklefiles[i].stem, float(similarities[i]))
+    for i in sorted_matching_idxs
+  ]
 
 # We have to load the tag_predictor outside of `load` so that
 # tqdm_process_map can use it in _load_pickle. New processes load this module from "scratch"

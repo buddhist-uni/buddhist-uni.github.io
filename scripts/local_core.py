@@ -17,6 +17,11 @@ from local_gdrive import locked
 TOKEN_PATH = Path('~/core-api.key').expanduser()
 TOKEN = 'Bearer ' + TOKEN_PATH.read_text().strip()
 
+# Recheck every half year at most
+# absurdly, CORE API uses milliseconds for all its timestamps
+# so in this file we just go with that
+DOI_RECHECK_INTERVAL = 183 * 24 * 60 * 60 * 1000
+
 IDENTIFIERS_FIELD_TYPES = [
   "CORE_ID",
   "OAI_ID",
@@ -82,6 +87,10 @@ def api_timestring_to_timestamp(ts: str | None) -> int | None:
     return None
   dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S")
   dt = dt.replace(tzinfo=timezone.utc)
+  return int(dt.timestamp() * 1000)
+
+def current_timestamp() -> int:
+  dt = datetime.now(timezone.utc)
   return int(dt.timestamp() * 1000)
 
 class CoreAPIWorksCache:
@@ -163,6 +172,13 @@ class CoreAPIWorksCache:
       CREATE INDEX IF NOT EXISTS idx_id_id ON identifiers(id);
     """
 
+    create_unfound_dois_table_sql = """
+      CREATE TABLE IF NOT EXISTS unfound_dois (
+        doi TEXT PRIMARY KEY NOT NULL,
+        checked_date INTEGER
+      );
+    """
+
     create_journals_join_table_sql = """
       CREATE TABLE IF NOT EXISTS journals_works (
         work_id TEXT NOT NULL,
@@ -193,6 +209,7 @@ class CoreAPIWorksCache:
     self.cursor.execute(create_journals_join_table_sql)
     self.cursor.executescript(create_journal_works_indexes_sql)
     self.cursor.execute(create_query_works_join_table_sql)
+    self.cursor.execute(create_unfound_dois_table_sql)
     self.conn.commit()
 
   @locked
@@ -258,6 +275,8 @@ class CoreAPIWorksCache:
       self.cursor.execute("DELETE FROM identifiers WHERE work_id = ? AND id_type = ?;", (api_obj['id'], ID_TYPE))
       for ident in ids_of_type:
         self.cursor.execute("INSERT INTO identifiers (id, work_id, id_type) VALUES (?, ?, ?)", (ident, api_obj['id'], ID_TYPE))
+        if ID_TYPE == "DOI":
+          self.cursor.execute("DELETE FROM unfound_dois WHERE doi = ?", (ident, ))
     
     existing_source_urls = self.get_source_urls_for_work_id(api_obj['id'])
     missing_source_urls = set(api_obj['sourceFulltextUrls']) - set(existing_source_urls)
@@ -380,6 +399,74 @@ class CoreAPIWorksCache:
     print("  got no additional works at the boundary updatedDate")
     return ret
 
+  def get_by_doi(self, doi: str) -> dict | None:
+    """Attempts to find the work with the given DOI, calling the API if necessary"""
+    with self._lock:
+      self.cursor.execute(
+        "SELECT works.* FROM works JOIN identifiers ON works.id = identifiers.work_id WHERE identifiers.id = ? AND identifiers.id_type = 'DOI'",
+        (doi, )
+      )
+      ret = [dict(row) for row in self.cursor.fetchall()]
+    if len(ret) == 1:
+      return ret[0]
+    # First dedupe by finding the one(s) with full_text
+    if len(ret) > 1:
+      filtered = [row for row in ret if row['full_text']]
+      if len(filtered) == 1:
+        return filtered[0]
+      if len(filtered) > 0:
+        ret = filtered
+    # If we still have multiple works,
+    # use a combination of citations and english score to pick one
+    # Using lower ids as the tie breaker
+    if len(ret) > 1:
+      print(f"WARNING: Found {len(ret)} works for DOI:{doi}")
+      ret.sort(lambda r: r['id'])
+      ret.sort(
+        lambda r: 2*r['en_confidence']+r['citation_count'],
+        reverse=True,
+      )
+      return ret[0]
+    with self._lock:
+      self.cursor.execute(
+        "SELECT * FROM unfound_dois WHERE doi = ?",
+        (doi, )
+      )
+      last_looked = self.cursor.fetchone()
+    now = current_timestamp()
+    if last_looked:
+      last_looked = last_looked['checked_date']
+      if last_looked + DOI_RECHECK_INTERVAL > now:
+        return None
+    resp = call_api(
+      'search/works',
+      {
+        'q': f'doi:"{doi}"',
+        'limit': self.page_size,
+      },
+    )
+    if len(resp['results']) == 0:
+      with self._lock:
+        self.cursor.execute(
+          """INSERT INTO unfound_dois (doi, checked_date)
+          VALUES (?, ?)
+          ON CONFLICT(doi) DO UPDATE SET
+          checked_date = excluded.checked_date;""",
+          (doi, now, )
+        )
+        self.conn.commit()
+      return None
+    with self._lock:
+      self.cursor.execute("DELETE FROM unfound_dois WHERE doi = ?", (doi, ))
+      self.conn.commit()
+    for result in resp['results']:
+      self.upsert_work_from_api(result)
+    # This recursive call assumes that self.upsert_work_from_api succesfully
+    # added the DOI to the identifiers table...
+    # Should be assert that somehow?
+    return self.get_by_doi(doi)
+
+  
   @locked
   def close(self):
     if self.conn:
