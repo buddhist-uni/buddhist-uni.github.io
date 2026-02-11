@@ -286,7 +286,7 @@ class CoreAPIWorksCache:
     self.cursor.execute("DELETE FROM journals_works WHERE work_id = ?", (api_obj['id'],))
     for journal in api_obj['journals']:
       for raw_id in journal['identifiers']:
-        issn = raw_id.replace('issn:', '')
+        issn = str(raw_id).replace('issn:', '').strip()
         assert re.match(r'^[0-9]{4}-[0-9]{3}[0-9Xx]$', issn), f"Invalid ISSN: {issn}"
         self.cursor.execute(
           "INSERT OR IGNORE INTO journals_works (work_id, journal_id) VALUES (?, ?)",
@@ -399,14 +399,14 @@ class CoreAPIWorksCache:
     print("  got no additional works at the boundary updatedDate")
     return ret
 
-  def get_by_doi(self, doi: str) -> dict | None:
-    """Attempts to find the work with the given DOI, calling the API if necessary"""
-    with self._lock:
-      self.cursor.execute(
-        "SELECT works.* FROM works JOIN identifiers ON works.id = identifiers.work_id WHERE identifiers.id = ? AND identifiers.id_type = 'DOI'",
-        (doi, )
-      )
-      ret = [dict(row) for row in self.cursor.fetchall()]
+  @locked
+  def _get_local_by_doi(self, doi: str) -> dict | None:
+    """Helper to find the work with the given DOI in the local database"""
+    self.cursor.execute(
+      "SELECT works.* FROM works JOIN identifiers ON works.id = identifiers.work_id WHERE identifiers.id = ? AND identifiers.id_type = 'DOI'",
+      (doi, )
+    )
+    ret = [dict(row) for row in self.cursor.fetchall()]
     if len(ret) == 1:
       return ret[0]
     # First dedupe by finding the one(s) with full_text
@@ -416,56 +416,113 @@ class CoreAPIWorksCache:
         return filtered[0]
       if len(filtered) > 0:
         ret = filtered
+    # Then by download_url
+    if len(ret) > 1:
+      filtered = [row for row in ret if row['download_url']]
+      if len(filtered) == 1:
+        return filtered[0]
+      if len(filtered) > 0:
+        ret = filtered
     # If we still have multiple works,
     # use a combination of citations and english score to pick one
     # Using lower ids as the tie breaker
     if len(ret) > 1:
       print(f"WARNING: Found {len(ret)} works for DOI:{doi}")
-      ret.sort(lambda r: r['id'])
+      ret.sort(key=lambda r: r['id'])
       ret.sort(
-        lambda r: 2*r['en_confidence']+r['citation_count'],
+        key=lambda r: 2*(r['en_confidence'] or 0)+(r['citation_count'] or 0),
         reverse=True,
       )
       return ret[0]
-    with self._lock:
-      self.cursor.execute(
-        "SELECT * FROM unfound_dois WHERE doi = ?",
-        (doi, )
-      )
-      last_looked = self.cursor.fetchone()
-    now = current_timestamp()
-    if last_looked:
-      last_looked = last_looked['checked_date']
-      if last_looked + DOI_RECHECK_INTERVAL > now:
-        return None
-    resp = call_api(
-      'search/works',
-      {
-        'q': f'doi:"{doi}"',
-        'limit': self.page_size,
-      },
-    )
-    if len(resp['results']) == 0:
-      with self._lock:
-        self.cursor.execute(
-          """INSERT INTO unfound_dois (doi, checked_date)
-          VALUES (?, ?)
-          ON CONFLICT(doi) DO UPDATE SET
-          checked_date = excluded.checked_date;""",
-          (doi, now, )
-        )
-        self.conn.commit()
-      return None
-    with self._lock:
-      self.cursor.execute("DELETE FROM unfound_dois WHERE doi = ?", (doi, ))
-      self.conn.commit()
-    for result in resp['results']:
-      self.upsert_work_from_api(result)
-    # This recursive call assumes that self.upsert_work_from_api succesfully
-    # added the DOI to the identifiers table...
-    # Should be assert that somehow?
-    return self.get_by_doi(doi)
+    return None
 
+  def bulk_get_by_doi(self, dois: list[str], max_per_batch: int = 0, verbose: bool = False) -> list[dict | None]:
+    """Attempts to find the works with the given DOIs, calling the API in batches if necessary
+    
+    Args:
+      dois: list of DOIs to look up
+      max_per_batch: maximum number of DOIs to look up per batch, defaults to self.page_size
+      verbose: whether to print verbose output
+    
+    Returns:
+      list of works corresponding to the input DOIs (in the same order)
+    """
+    if max_per_batch == 0:
+      max_per_batch = self.page_size
+    results: list[dict | None] = [None] * len(dois)
+    # doi -> list of indices in the input list that need this DOI
+    #  a list because the doi could appear in the input multiple times
+    to_fetch: dict[str, list[int]] = {}
+    
+    now = current_timestamp()
+    
+    for i, doi in enumerate(dois):
+      work = self._get_local_by_doi(doi)
+      if work:
+        results[i] = work
+        if verbose:
+          print(f"  Found DOI:{doi} locally")
+        continue
+      
+      # Check if we recently tried and failed to find this DOI
+      with self._lock:
+        self.cursor.execute("SELECT checked_date FROM unfound_dois WHERE doi = ?", (doi,))
+        row = self.cursor.fetchone()
+      
+      if row:
+        if row['checked_date'] + DOI_RECHECK_INTERVAL > now:
+          if verbose:
+            print(f"  Skipping DOI:{doi} (checked recently)")
+          continue # leave results[i] as None
+      
+      if doi not in to_fetch:
+        to_fetch[doi] = []
+      to_fetch[doi].append(i)
+    
+    if not to_fetch:
+      return results
+
+    unique_dois_to_fetch = list(to_fetch.keys())
+    for i in range(0, len(unique_dois_to_fetch), max_per_batch):
+      batch = unique_dois_to_fetch[i : i + max_per_batch]
+      # Construct OR query to consolidate calls and respect rate limits
+      query = " OR ".join(f'doi:"{doi}"' for doi in batch)
+      if verbose:
+        print(f"  Querying API for {len(batch)} DOIs")
+      resp = call_api(
+        'search/works',
+        {
+          'q': query,
+          'limit': 2*max_per_batch, # Just in case there are duplicates
+        },
+      )
+      
+      for result in resp['results']:
+        self.upsert_work_from_api(result)
+        if verbose:
+          print(f"  Found DOI:{result['doi']} on the server")
+      
+      # For each DOI in our batch, check if we found it (via the DB lookup)
+      for doi in batch:
+        work = self._get_local_by_doi(doi)
+        if work:
+          for idx in to_fetch[doi]:
+            results[idx] = work
+        else:
+          # Still not found after API call, mark as unfound to avoid re-checking too soon
+          with self._lock:
+            self.cursor.execute(
+              """INSERT INTO unfound_dois (doi, checked_date)
+              VALUES (?, ?)
+              ON CONFLICT(doi) DO UPDATE SET
+              checked_date = excluded.checked_date;""",
+              (doi, now, )
+            )
+            self.conn.commit()
+          if verbose:
+            print(f"  Didn't find DOI:{doi}")
+            
+    return results
   
   @locked
   def close(self):

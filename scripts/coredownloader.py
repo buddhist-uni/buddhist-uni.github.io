@@ -23,9 +23,7 @@ DOIS = [
   for doi in doilist
   if 'doi.org/' in doi
 ]
-
-
-# ~113 from these, but they're at least guarenteed
+# 95 of the above have fullText
 
 # "Buddhist" articles that aren't for download
 MDPI_PROVIDER_ID = 22080 # 351
