@@ -381,6 +381,6 @@ if __name__ == "__main__":
   best_threshold_roc = roc_thresholds[best_idx]
   print(f"Optimal threshhold = {best_threshold_roc:.4f} (with a Balanced Accuracy of {(j_scores[best_idx]+1)*50:.2f}%)")
 
-else:
+else: # if this was imported from elsewhere, load the classifier
   with yaspin(text="Loading titlematch classifier..."):
     classifier = pickle.load(open(CLASSIFIER_FILE, 'rb'))

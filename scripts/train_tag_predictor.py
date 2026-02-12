@@ -400,7 +400,7 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
         all_files = get_all_trainable_files_in_folders()
         all_files += get_trainable_gfiles_from_site()
     # restore the cache from Google Drive first
-    gdrive.download_folder_contents_to(NORMALIZED_DRIVE_FOLDER, NORMALIZED_TEXT_FOLDER)
+    gdrive.download_folder_contents_to(NORMALIZED_DRIVE_FOLDER, NORMALIZED_TEXT_FOLDER, parallelism=parallelism)
     all_files = [
         file for file in all_files if
         file['mimeType'] in ['application/pdf', 'application/epub+zip'] and
@@ -423,6 +423,7 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
             save_pdf_text_for_drive_file,
             pdf_files,
             max_workers=parallelism,
+            chunksize=4,
         )
     if len(epub_files) > 0:
         print(f"Downloading {len(epub_files)} epubs and extracting their text...")
@@ -430,6 +431,7 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
             save_epub_text_for_drive_file,
             epub_files,
             max_workers=parallelism,
+            chunksize=4,
         )
 
 

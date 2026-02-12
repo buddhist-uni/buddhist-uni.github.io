@@ -133,7 +133,7 @@ if cli_args.init:
   from tqdm import tqdm
   print(f"# Removing local duplicates...")
   from collections import defaultdict
-  pbar = tqdm(local_files, unit="file")
+  pbar = tqdm(local_files, unit="f")
   size_to_local_names = defaultdict(set)
   for fp in pbar:
     size_to_local_names[fp.stat().st_size].add(fp.name)
@@ -189,9 +189,9 @@ if cli_args.init:
       # fp.unlink()
       # For now just move it out to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
-  tqdm_thread_map(process_local_file, local_files, max_workers=8, unit="file")
+  tqdm_thread_map(process_local_file, local_files, max_workers=8, unit="f")
   print(f"# Ensuring all remote files are downloaded locally...")
-  children = tqdm(remote_children, unit="file")
+  children = tqdm(remote_children, unit="f")
   for child in children:
     if child['id'] in remote_ids_seen:
       continue
@@ -227,7 +227,7 @@ if cli_args.init:
     if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
       return
     load_normalized_text_for_file(fp, gid)
-  tqdm_thread_map(extract_text_from, local_files, max_workers=4, unit="file")
+  tqdm_thread_map(extract_text_from, local_files, max_workers=4, unit="f")
   del remote_files_by_name
   print("# Sorting PDFs into bulk import folders...")
   children = gdrive.gcache.sql_query(
@@ -254,7 +254,7 @@ if cli_args.init:
       [REMOTE_FOLDER],
       verbose=False,
     )
-  tqdm_thread_map(sort_pdf_file, children, max_workers=8, unit="file")
+  tqdm_thread_map(sort_pdf_file, children, max_workers=8, unit="f")
   print("Done setting up local folder! Run again without --init to review files")
   exit()
 

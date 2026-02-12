@@ -6,6 +6,7 @@ import socket
 from datetime import datetime, timezone
 from time import sleep
 from io import BytesIO, BufferedIOBase
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from strutils import (
   file_info,
   prompt,
@@ -234,7 +235,7 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
   prev = 0
   while not yet:
     status, yet = downloader.next_chunk(3)
-    if verbose is not False:
+    if verbose:
       if isinstance(verbose, tqdm):
         cur = status.resumable_progress
         verbose.update(cur - prev)
@@ -471,7 +472,7 @@ def upload_folder_contents_to(local_directory: Path | str, gdfid: str, recursive
     max_workers=parallelism,
   )
 
-def download_folder_contents_to(gdfid: str, target_directory: Path | str, recursive=False, follow_links=False):
+def download_folder_contents_to(gdfid: str, target_directory: Path | str, recursive=False, follow_links=False, parallelism=6):
   target_directory = Path(target_directory)
   target_directory.mkdir(exist_ok=True)
   total_size = 0
@@ -522,15 +523,22 @@ def download_folder_contents_to(gdfid: str, target_directory: Path | str, recurs
     print(f"Nothing to download in '{target_directory.name}'")
   else:
     print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
-    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
-      for f in downloads:
-        download_file(f[0], f[1], pbar)
+    if parallelism <= 1:
+      with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
+        for f in downloads:
+          download_file(f[0], f[1], pbar)
+    else:
+      with ThreadPoolExecutor(max_workers=parallelism) as executor:
+        futures = [executor.submit(download_file, f[0], f[1], False) for f in downloads]
+        for future in tqdm(as_completed(futures), total=len(downloads), unit='f'):
+          pass
   for cfid, child_path in subfolders:
     download_folder_contents_to(
       cfid,
       child_path,
       recursive=recursive,
       follow_links=follow_links,
+      parallelism=parallelism,
     )
 
 def share_drive_file_with_everyone(file_id: str):
@@ -564,7 +572,7 @@ def ensure_these_are_shared_with_everyone(file_ids: list[str], verbose=True):
   all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
   count = 0
   if not verbose:
-    all_files = tqdm(all_files, unit='files', total=len(file_ids))
+    all_files = tqdm(all_files, unit='f', total=len(file_ids))
   for file in all_files:
     if 'permissions' not in file:
       if verbose:
