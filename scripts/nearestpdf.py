@@ -10,28 +10,115 @@ import io
 from pathlib import Path
 import joblib
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
+
 from scipy.sparse import vstack
 
-corpus_embeddings = None
-picklefiles = None
-filesizes = None
+# These parallel arrays contain the global database we match against
+# Call `load()` to populate these
+corpus_embeddings = None # A numpy matrix
+picklefiles = None # an np.array of Path objects
+gid_to_idx: dict[str, int]
+gid_to_idx = None
+google_files: list[dict]
+google_files = None
+filesizes: list[int]
+filesizes = None # The size of the picklefiles
 
 MIN_PICKLE_SIZE_TO_COMPARE = 400 # bytes. ~1 page of compressed, normalized text
 MIN_VOCAB_SIZE_TO_COMPARE = 120 # words. ~1 short page of stemmed text
 MAX_FILE_TO_TEXT_RATIO = 3000 # 1 char extracted per this many PDF bytes. Worse than that implies a mostly image PDF
 
-def calculate_all_similarities_to_string(needle: str) -> npt.NDArray[np.float64] | None:
+# find_matching_files constants, see below for discussion and use
+CONTENT_SIM_WEIGHT = 18
+TITLE_SIM_WEIGHT = 10
+BASELINE_OFFSET = 19
+NORMALIZATION_DIVISOR = -3
+MIN_TITLE_SIM = 0.1
+MIN_CONTENT_SIM = 0.5
+
+def find_matching_files(work_title: str, authors: str | list[str], file_contents: str) -> list[tuple[dict, float]]:
   """
-  Returns the cosine similarities of the given string to all documents in the corpus.
-  
-  Returns:
-    npt.NDArray[np.float64] | None: The similarities or None if the string is too short
-       This array is parallel to `picklefiles`.
-       Use `picklefiles[i].stem` to get the associated Google file id.
+  Finds Google Drive Files probably matching the described work.
+
+  Uses a small Neural Net to match title and author to possible filenames,
+  then uses a vector embedding space to compare file_contents and lastly
+  uses a Logistic Classifier to combine those scores into a probability
+  estimating the chances that a given PDF on Drive matches the provided info.
+
+  Returns a sorted list of tuples (gfile, p_val)
+    p_vals are in the range [0.5, 0.953) This is because
+    even exact filename and content matches aren't 100% sure.
+    About 1/20 near-exact matches are actually e.g. Volume 1 and 2 or
+    a different translation of the same work--and thus not a duplicate!
+    That and partial OCR errors, etc mean that, even given the "full text,"
+    matching documents is an inexact science!
+    While the Logistic curve used in this function is hand-coded, the values
+    below were chosen with the benefit of data (and a dash of intuition).
+    See https://tinyurl.com/3nex62jv for the scatter plot.
+
+  :param work_title: The Title(: And Subtitle) of the work to search for 
+  :type work_title: str
+  :param first_author: The name of the work's first author or a `list` of the authors or the authors separated by " and "
+  :type first_author: str | list[str]
+  :param file_contents: The full text of the work to search for
+  :type file_contents: str
+  :return: A sorted list of Google File Objects probably matching and their normalized p scores
+  :rtype: list[tuple[dict, float]]
   """
-  if corpus_embeddings is None:
-    raise Exception("Call load() first")
-  
+  needle_embedding = embed_needle(file_contents)
+  if needle_embedding is None:
+    return []
+  import titlematch
+  if picklefiles is None:
+    load(False)
+  if isinstance(authors, str) and ' and ' in authors:
+     authors = authors.split(' and ')
+  if authors is None or len(authors) == 0:
+     authors = ''
+  filenames = [gf['name'] for gf in google_files]
+  # the titlematch probability prediction is already parallelized
+  # so we can just pass it our filenames array and let it do its thing
+  if isinstance(authors, str):
+    all_title_sims = np.array(titlematch.probability_filename_matches(
+       filenames,
+       work_title,
+       authors,
+    ))
+  elif isinstance(authors, list):
+    exploded_title_sims = []
+    for author in authors:
+      exploded_title_sims.append(
+        titlematch.probability_filename_matches(
+          filenames,
+          work_title,
+          author,
+        )
+      )
+    exploded_title_sims = np.array(exploded_title_sims)
+    all_title_sims = np.max(exploded_title_sims, axis=0) 
+  else:
+     raise ValueError(f"`author` must be a string or a list of strings")
+
+  # always take the first arg when using `where` to get indexes
+  reasonable_indexes = np.where(all_title_sims > MIN_TITLE_SIM)[0]
+  if len(reasonable_indexes) == 0:
+     return []
+  filtered_embeddings = corpus_embeddings[reasonable_indexes]
+  title_sims = all_title_sims[reasonable_indexes]
+  content_sims = fast_cosine_similarity(filtered_embeddings, needle_embedding)
+  z_scores = (CONTENT_SIM_WEIGHT * content_sims) + (TITLE_SIM_WEIGHT * title_sims) - BASELINE_OFFSET
+  ret_indexes = np.where(z_scores > 0)[0]
+  if len(ret_indexes) == 0:
+     return []
+  ret_indexes = ret_indexes[np.argsort(z_scores[ret_indexes])[::-1]]
+  p_values = 1 / (1 + np.exp(z_scores[ret_indexes] / NORMALIZATION_DIVISOR))
+  true_indexes = reasonable_indexes[ret_indexes]
+  return [
+     (google_files[tidx], p_val)
+     for tidx, p_val in zip(true_indexes, p_values)
+  ]
+
+def embed_needle(needle: str):
   stemmed_needle = normalize_text(needle)
   temp_buffer = io.BytesIO()
   # Use compression as a measure of entropy.
@@ -48,9 +135,31 @@ def calculate_all_similarities_to_string(needle: str) -> npt.NDArray[np.float64]
   # don't bother trying to compare it.
   if needle_embedding.nnz < MIN_VOCAB_SIZE_TO_COMPARE:
     return None
+  return needle_embedding
+
+def fast_cosine_similarity(matrix, needle_embedding) -> npt.NDArray[np.float64]:
+  """Like sklearn's cosine_similarity function but without safety checks
+  
+  Assumes that matrix and needle are both already normalized, etc"""
   # @ is matrix multiplication, .T is transpose, .toarray() is dense
-  # .ravel() ensures 1d the right way
-  return (corpus_embeddings @ needle_embedding.T).toarray().ravel()
+  # .ravel() ensures 1d the right way round
+  return (matrix @ needle_embedding.T).toarray().ravel()
+
+def calculate_all_similarities_to_string(needle: str) -> npt.NDArray[np.float64] | None:
+  """
+  Returns the cosine similarities of the given string to all documents in the corpus.
+  
+  Returns:
+    npt.NDArray[np.float64] | None: The similarities or None if the string is too short
+       This array is parallel to `picklefiles`.
+       Use `picklefiles[i].stem` to get the associated Google file id.
+  """
+  if corpus_embeddings is None:
+    load(False)
+  needle_embedding = embed_needle(needle)
+  if not needle_embedding:
+    return None
+  return fast_cosine_similarity(corpus_embeddings, needle_embedding)
 
 def file_closest_to_string(needle: str) -> tuple[str, float]:
   """Returns the google file id closest to the given string, and its similarity score.
@@ -68,7 +177,7 @@ def file_closest_to_string(needle: str) -> tuple[str, float]:
     if you're transforming to log p space, you must add an epsilon.
   """
   similarities = calculate_all_similarities_to_string(needle)
-  if not similarities:
+  if similarities is None or len(similarities) == 0:
      return ('', 0)
   best_idx = np.argmax(similarities)
   return picklefiles[best_idx].stem, float(similarities[best_idx])
@@ -129,6 +238,7 @@ def all_files_within(needle: str, min_similarity: float) -> list[tuple[str, floa
 # We have to load the tag_predictor outside of `load` so that
 # tqdm_process_map can use it in _load_pickle. New processes load this module from "scratch"
 # and don't have access to the "local" tag_predictor variable in the parent's `load`.
+tag_predictor: TagPredictor
 tag_predictor = None
 with yaspin(text="Loading tag predictor..."):
   tag_predictor = TagPredictor.load()
@@ -167,7 +277,7 @@ def _load_embeddings_for_pickles(pickles: list[Path]):
   joblib.dump(cache_key, CACHE_KEY_FILE)
   return ret
 
-def _load_filesizes():
+def _load_filesizes() -> list[int]:
   DIR = DATA_DIRECTORY.joinpath('.cache/load_filesizes')
   cache_key = picklefiles
   CACHE_KEY_FILE = DIR.joinpath('key.pkl')
@@ -192,9 +302,8 @@ def _load_filesizes():
 
 
 def load(create_new_pickles=False):
-  global corpus_embeddings, picklefiles, filesizes
+  global corpus_embeddings, picklefiles, filesizes, gid_to_idx, google_files
   from train_tag_predictor import (
-    get_trainable_gfiles_from_site,
     save_all_drive_texts,
     NORMALIZED_TEXT_FOLDER,
   )
@@ -220,15 +329,22 @@ def load(create_new_pickles=False):
   corpus_embeddings = corpus_embeddings[large_enough_idxs]
   picklefiles = np.array(picklefiles)[large_enough_idxs]
   filesizes = _load_filesizes()
+  google_files = [
+     gdrive.gcache.get_item(fp.stem) for fp in picklefiles
+  ]
   # toss out PDF files that are mostly un-OCRed images
   size_ratios = np.array([
-     gdrive.gcache.get_item(fp.stem)['size'] / filesizes[idx]
+     google_files[idx]['size'] / filesizes[idx]
      for idx, fp in enumerate(picklefiles)
   ])
   good_ratios = np.where(size_ratios <= MAX_FILE_TO_TEXT_RATIO)[0]
   filesizes = np.array(filesizes)[good_ratios]
   corpus_embeddings = corpus_embeddings[good_ratios]
   picklefiles = picklefiles[good_ratios]
+  google_files = np.array(google_files)[good_ratios]
+  gid_to_idx = {
+     fp.stem: idx for idx, fp in enumerate(picklefiles)
+  }
   print(f"Trimmed down to {np.shape(corpus_embeddings)[0]} checkable embeddings")
 
 
@@ -311,8 +427,8 @@ def is_duplicate_prompt(idx):
   gfa = picklefiles[idx].stem
   jdx = nearest_indices[idx]
   gfb = picklefiles[jdx].stem
-  fa = gdrive.gcache.get_item(gfa)
-  fb = gdrive.gcache.get_item(gfb)
+  fa = google_files[idx]
+  fb = google_files[jdx]
   if fa['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
       return 'old a'
   if fb['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
@@ -344,9 +460,6 @@ if __name__ == "__main__":
   import gdrive
   print("Loading nearest neighbors...")
   nearest_indices, nearest_similarities = find_nearest_neighbors()
-  gid_to_idx = {
-     fp.stem: idx for idx, fp in enumerate(picklefiles)
-  }
   size_similarities = [
      abs(filesizes[idx] - filesizes[jdx])/max(filesizes[idx], filesizes[jdx])
      for idx, jdx in enumerate(nearest_indices)

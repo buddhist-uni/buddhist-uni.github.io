@@ -400,8 +400,8 @@ class CoreAPIWorksCache:
     return ret
 
   @locked
-  def _get_local_by_doi(self, doi: str) -> dict | None:
-    """Helper to find the work with the given DOI in the local database"""
+  def get_locally_from_doi(self, doi: str) -> dict | None:
+    """If we have the work for this doi locally already, returns it, else None"""
     self.cursor.execute(
       "SELECT works.* FROM works JOIN identifiers ON works.id = identifiers.work_id WHERE identifiers.id = ? AND identifiers.id_type = 'DOI'",
       (doi, )
@@ -427,7 +427,6 @@ class CoreAPIWorksCache:
     # use a combination of citations and english score to pick one
     # Using lower ids as the tie breaker
     if len(ret) > 1:
-      print(f"WARNING: Found {len(ret)} works for DOI:{doi}")
       ret.sort(key=lambda r: r['id'])
       ret.sort(
         key=lambda r: 2*(r['en_confidence'] or 0)+(r['citation_count'] or 0),
@@ -457,7 +456,7 @@ class CoreAPIWorksCache:
     now = current_timestamp()
     
     for i, doi in enumerate(dois):
-      work = self._get_local_by_doi(doi)
+      work = self.get_locally_from_doi(doi)
       if work:
         results[i] = work
         if verbose:
@@ -504,7 +503,7 @@ class CoreAPIWorksCache:
       
       # For each DOI in our batch, check if we found it (via the DB lookup)
       for doi in batch:
-        work = self._get_local_by_doi(doi)
+        work = self.get_locally_from_doi(doi)
         if work:
           for idx in to_fetch[doi]:
             results[idx] = work
@@ -523,6 +522,14 @@ class CoreAPIWorksCache:
             print(f"  Didn't find DOI:{doi}")
             
     return results
+  
+  @locked
+  def get_local_works_for_query(self, query_id: int) -> list[dict]:
+    self.cursor.execute(
+      "SELECT works.* FROM works JOIN query_works ON query_works.work_id = works.id WHERE query_works.query_id = ?",
+      (query_id, )
+    )
+    return [dict(row) for row in self.cursor.fetchall()]
   
   @locked
   def close(self):
