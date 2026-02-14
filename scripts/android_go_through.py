@@ -1,4 +1,7 @@
 #!/bin/python3
+
+# This file is only a script and is not importable
+
 from yaspin import yaspin
 with yaspin(text="Initializing..."):
   from strutils import (
@@ -211,10 +214,11 @@ if cli_args.init:
       destination=dest_file,
       verbose=False,
     )
-    local_files.append(dest_file)
     local_filenames_seen.add(name)
   del remote_children
   import random
+  # refetch because some files were added or removed above
+  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
   # randomize for more accurate tqdm est
   local_files.sort(key=lambda f: random.random())
   print("# Extracting text from files...")
