@@ -114,7 +114,6 @@ class DriveCache:
             parent_id TEXT,                -- The ID of the parent folder
             modified_time TEXT NOT NULL,   -- ISO 8601 string
             size INTEGER,                  -- bytes on disk (if any)
-            url_property TEXT,             -- The 'url' property if any
             owner INTEGER REFERENCES users(id),
             md5_checksum TEXT,
             shortcut_target TEXT           -- id of another drive_item if this item is a shortcut
@@ -123,6 +122,15 @@ class DriveCache:
         create_drive_items_sql = f"CREATE TABLE IF NOT EXISTS drive_items ({items_schema});"
         create_trashed_items_sql = f"CREATE TABLE IF NOT EXISTS trashed_drive_items ({items_schema});"
         
+        create_properties_table_sql = """
+        CREATE TABLE IF NOT EXISTS item_properties (
+            file_id TEXT NOT NULL,
+            key TEXT NOT NULL,
+            value TEXT,
+            PRIMARY KEY (file_id, key)
+        );
+        """
+
         # Index all the cols we like to select by
         create_index_sql = """
         CREATE INDEX IF NOT EXISTS idx_mime_type
@@ -131,12 +139,12 @@ class DriveCache:
         ON drive_items (parent_id);
         CREATE INDEX IF NOT EXISTS idx_md5
         ON drive_items (md5_checksum);
-        CREATE INDEX IF NOT EXISTS idx_url_prop
-        ON drive_items (url_property);
         CREATE INDEX IF NOT EXISTS idx_shortcuts
         ON drive_items (shortcut_target);
         CREATE INDEX IF NOT EXISTS idx_users
         ON users (email);
+        CREATE INDEX IF NOT EXISTS idx_props_key_val 
+        ON item_properties (key, value);
 
         -- Special index to fix missing PK on existing trashed_drive_items tables
         -- that were created with 'CREATE TABLE AS SELECT' (which drops constraints)
@@ -147,6 +155,7 @@ class DriveCache:
         self.cursor.execute(create_users_table_sql)
         self.cursor.execute(create_drive_items_sql)
         self.cursor.execute(create_trashed_items_sql)
+        self.cursor.execute(create_properties_table_sql)
         self.cursor.executescript(create_index_sql)
         self.conn.commit()
 
@@ -200,7 +209,6 @@ class DriveCache:
                 owner = item_data.get('owners', [{}])[0]
                 owner_id = self._upsert_user(owner)
             size = item_data.get('size', 0)
-            url_property = item_data.get('properties', {}).get('url', None)
             mime_type = item_data['mimeType']
             shortcut = item_data.get('shortcutDetails')
             if shortcut:
@@ -215,8 +223,8 @@ class DriveCache:
                 self.cursor.execute("DELETE FROM trashed_drive_items WHERE id = ? ;", (item_data['id'],))
 
             sql = f"""
-            INSERT INTO {table} (id, version, name, original_name, mime_type, parent_id, modified_time, size, url_property, owner, md5_checksum, shortcut_target)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO {table} (id, version, name, original_name, mime_type, parent_id, modified_time, size, owner, md5_checksum, shortcut_target)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(id) DO UPDATE SET
                 version = excluded.version,
                 name = excluded.name,
@@ -224,13 +232,20 @@ class DriveCache:
                 parent_id = excluded.parent_id,
                 modified_time = excluded.modified_time,
                 size = excluded.size,
-                url_property = excluded.url_property,
                 owner = excluded.owner,
                 md5_checksum = excluded.md5_checksum,
                 shortcut_target = excluded.shortcut_target
                 WHERE excluded.version > {table}.version;
             """
-            self.cursor.execute(sql, (item_data['id'], item_data['version'], item_data['name'], item_data.get('originalFilename', None), mime_type, parent_id, item_data['modifiedTime'], size, url_property, owner_id, item_data.get('md5Checksum', None), shortcut))
+            self.cursor.execute(sql, (item_data['id'], item_data['version'], item_data['name'], item_data.get('originalFilename', None), mime_type, parent_id, item_data['modifiedTime'], size, owner_id, item_data.get('md5Checksum', None), shortcut))
+
+            if 'properties' in item_data and item_data['properties']:
+                # Can a property ever be deleted from a file on Drive?
+                for key, value in item_data['properties'].items():
+                    self.cursor.execute(
+                        "INSERT OR REPLACE INTO item_properties (file_id, key, value) VALUES (?, ?, ?)",
+                        (item_data['id'], key, value)
+                    )
         except KeyError as e:
             print(f"Missing expected key {e} in item data: {item_data}")
 
@@ -260,6 +275,7 @@ class DriveCache:
         print("Dropping all data and reloading the GDrive Cache from scratch...")
         self.cursor.execute("DELETE FROM drive_items")
         self.cursor.execute("DELETE FROM trashed_drive_items")
+        self.cursor.execute("DELETE FROM item_properties")
         self.cursor.execute("DELETE FROM metadata")
         
         all_files = gdrive_base.all_files_matching("'me' in owners and trashed=false", FILE_FIELDS)
@@ -349,11 +365,13 @@ class DriveCache:
         del ret['modified_time']
         ret['parents'] = [ret['parent_id']]
         # del table_row['parent_id'] # keep this one for convenience
-        if ret.get('url_property'):
-            ret['properties'] = {
-                'url': ret['url_property']
-            }
-        del ret['url_property']
+        
+        # Fetch the properties from the item_properties table
+        # Note this is a bit ineffiecient for large lists of files
+        # but it keeps the code simple and is probably acceptible for now
+        props = self.cursor.execute("SELECT key, value FROM item_properties WHERE file_id = ?", (ret['id'],)).fetchall()
+        ret['properties'] = {row['key']: row['value'] for row in props}
+
         if ret.get('shortcut_target'):
             ret['shortcutDetails'] = {
                 'targetId': ret['shortcut_target'],
@@ -416,6 +434,26 @@ class DriveCache:
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
 
     @locked
+    def properties_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+        """
+        Directly run a query on a inner self join:
+          - `file.` expose's the file's cols
+          - `prop.` expose's the property's cols (key, value)
+        
+        e.g. `properties_sql_query("prop.key = 'url' AND prop.value = ?", (url,))`
+        """
+        self.cursor.execute(
+            """SELECT file.*
+            FROM drive_items file
+            JOIN item_properties prop
+            ON file.id = prop.file_id
+            WHERE """+query,
+            data
+        )
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+
+    @locked
     def get_item(self, file_id: str) -> Optional[Dict[str, Any]]:
         """
         Retrieves a single item by its Google Drive ID.
@@ -468,18 +506,6 @@ class DriveCache:
         return self.sql_query(
             "id IN (" + ','.join(f"'{fid}'" for fid in file_ids) + ")",
         tuple())
-    
-    @locked
-    def get_url_doc(self, url: str) -> Optional[Dict[str, Any]]:
-        """
-        If we already have a Google Doc pointing to url, return it, else None
-        """
-        self.cursor.execute(
-            "SELECT * FROM drive_items WHERE url_property = ? AND mime_type = ? LIMIT 1",
-            (url, 'application/vnd.google-apps.document'),
-        )
-        row = self.cursor.fetchone()
-        return self.row_dict_to_api_dict(dict(row)) if row else None
     
     def get_shortcuts_to_file(self, target_id: str):
         return self.sql_query("shortcut_target = ?", (target_id,))
@@ -575,23 +601,7 @@ class DriveCache:
         """
         self.cursor.execute(sql)
         return [row['md5_checksum'] for row in self.cursor.fetchall()]
-    
-    @locked
-    def find_duplicate_urls(self) -> List[str]:
-        """
-        Finds all urls that have more than one pointing doc in the user's files
-        """
-        sql = """
-            SELECT url_property
-            FROM drive_items
-            WHERE url_property IS NOT NULL AND owner = 1
-            GROUP BY url_property
-            HAVING COUNT(*) > 1
-            ORDER BY url_property
-        """
-        self.cursor.execute(sql)
-        return [row['url_property'] for row in self.cursor.fetchall()]
-   
+
     ########
     # Write-through Functions
     #

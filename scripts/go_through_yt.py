@@ -74,12 +74,15 @@ class YTQueueDB():
 
   def pull_from_db(self) -> None:
     with yaspin(text="Loading videos..."):
-      gdocs = gdrive.gcache.parent_sql_query(
-        """file.url_property LIKE '%youtu%' AND
+      valid_parent_ids = [f['id'] for f in BULK_YT_FOLDERS]
+      placeholders = ','.join('?' * len(valid_parent_ids))
+      gdocs = gdrive.gcache.properties_sql_query(
+        f"""prop.key = 'url' AND
+        prop.value LIKE '%youtu%' AND
         file.owner = 1 AND
         file.mime_type='application/vnd.google-apps.document' AND
-        parent.name = ?""",
-        (BULK_YT_FOLDERS_NAME,)
+        file.parent_id IN ({placeholders})""",
+        tuple(valid_parent_ids)
       )
       self.videos = [YTVideo(gdoc) for gdoc in gdocs]
 

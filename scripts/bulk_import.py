@@ -201,7 +201,7 @@ class GDocURLImporter(BulkItemImporter):
     print(f"Seeing if we've imported any of these already...")
     already = set()
     for url in items:
-      if gdrive.gcache.get_url_doc(url):
+      if gdrive.get_url_doc(url):
         already.add(url)
     print(f"Found {len(already)} URLs already added")
     return already
@@ -659,8 +659,8 @@ def _resort_link_docs_of_type(
     import_name,
     unread_id_to_course_name_map,
   )
-  drive_files_to_reconsider = gdrive.gcache.sql_query(
-    f"url_property IS NOT NULL AND parent_id IN ({','.join('?' * len(course_to_auto_folder))})",
+  drive_files_to_reconsider = gdrive.gcache.properties_sql_query(
+    f"prop.key = 'url' AND file.parent_id IN ({','.join('?' * len(course_to_auto_folder))})",
     tuple(course_to_auto_folder.values()),
   )
   print(f"Got {len(drive_files_to_reconsider)} {import_name} to resort")

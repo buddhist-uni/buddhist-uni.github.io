@@ -32,7 +32,7 @@ for metafile in tqdm(cached_files):
     else:
       print(f"{data['id']} has a transcript now!")
       link = f'https://youtu.be/{data["id"]}'
-      doc = gdrive.gcache.get_url_doc(link)
+      doc = gdrive.get_url_doc(link)
       if doc:
         new_html = f"""<h1>{doc['name']}</h1><h2><a href="{link}">{link}</a></h2>"""
         new_html += gdrive._make_ytvideo_summary_html(data['id'], data, transcript)

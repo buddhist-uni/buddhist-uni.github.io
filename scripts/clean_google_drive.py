@@ -12,9 +12,6 @@ from gdrive_base import (
   folderlink_to_id,
   ensure_these_are_shared_with_everyone,
   link_to_id,
-  batch_get_files_by_id,
-  FOLDER_LINK_PREFIX,
-  DRIVE_LINK,
   yaspin,
 )
 from gdrive import (
@@ -22,6 +19,7 @@ from gdrive import (
   gcache,
   OLD_VERSIONS_FOLDER_ID,
   process_duplicate_files,
+  find_duplicate_urls,
 )
 import website
 
@@ -260,7 +258,7 @@ def remove_duplicate_files(verbose=True):
     duplicate_md5s = tqdm(duplicate_md5s, unit='f', desc='Handling duplicates')
   for md5 in duplicate_md5s:
     remove_duplicate_file(md5, verbose=verbose, dry_run=False)
-  duplicate_urls = gcache.find_duplicate_urls()
+  duplicate_urls = find_duplicate_urls()
   print(f"[duplicates] Found {len(duplicate_urls)} duplicated urls.")
   if not verbose:
     duplicate_urls = tqdm(duplicate_urls, unit='url', desc='Handling duplicates')
@@ -312,7 +310,7 @@ def remove_duplicate_file(md5, verbose=True, dry_run=True):
   process_duplicate_files(files, folder_slugs, verbose, dry_run)
 
 def remove_duplicate_url_docs(url: str, verbose=True, dry_run=True):
-  files = gcache.sql_query("url_property = ? AND owner = 1", (url,))
+  files = gcache.properties_sql_query("prop.key = 'url' AND prop.value = ? AND file.owner = 1", (url,))
   assert len(files) > 1, f"multiple files expected with url={url}"
   # Immediately ignore Old Versions slated for deleting anyway
   files = [f for f in files if OLD_VERSIONS_FOLDER_ID not in f['parents']]

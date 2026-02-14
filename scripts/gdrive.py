@@ -610,3 +610,41 @@ def remote_file_for_local_file(fp: Path, folder_slugs: dict[str, str], default_f
       raise ValueError("Unable to select which to keep. Please clean this up manually.")
     remotes = kept
   return remotes[0]
+
+
+def get_url_doc(url: str) -> dict | None:
+    """
+    If we already have a Google Doc pointing to url, return it, else None
+    """
+    # Join with drive_items to check mime_type
+    with gcache._lock:
+        gcache.cursor.execute(
+            """
+            SELECT di.* 
+            FROM drive_items di
+            JOIN item_properties ip ON di.id = ip.file_id
+            WHERE ip.key = 'url' AND ip.value = ? AND di.mime_type = ?
+            LIMIT 1
+            """,
+            (url, 'application/vnd.google-apps.document'),
+        )
+        row = gcache.cursor.fetchone()
+        return gcache.row_dict_to_api_dict(dict(row)) if row else None
+
+
+def find_duplicate_urls() -> list[str]:
+    """
+    Finds all urls that have more than one pointing doc in the user's files
+    """
+    with gcache._lock:
+        sql = """
+            SELECT ip.value
+            FROM item_properties ip
+            JOIN drive_items di ON ip.file_id = di.id
+            WHERE ip.key = 'url' AND di.owner = 1
+            GROUP BY ip.value
+            HAVING COUNT(*) > 1
+            ORDER BY ip.value
+        """
+        gcache.cursor.execute(sql)
+        return [row['value'] for row in gcache.cursor.fetchall()]
