@@ -60,6 +60,9 @@ def migrate_db(db_path):
         print(f"Migrated {count} properties from trashed_drive_items.")
     except sqlite3.OperationalError as e:
         print(f"Skipping migration from trashed_drive_items (column likely missing): {e}")
+    
+    print("Dropping old index idx_url_prop...")
+    cursor.execute("DROP INDEX IF EXISTS idx_url_prop")
 
     # 4. Drop url_property column
     # SQLite doesn't support DROP COLUMN in older versions, but 3.35+ does.
@@ -75,10 +78,6 @@ def migrate_db(db_path):
         cursor.execute("ALTER TABLE trashed_drive_items DROP COLUMN url_property")
     except sqlite3.OperationalError as e:
         print(f"Error dropping column from trashed_drive_items (might already be gone): {e}")
-
-    # 5. Drop the old index if it exists
-    print("Dropping old index idx_url_prop...")
-    cursor.execute("DROP INDEX IF EXISTS idx_url_prop")
 
     conn.commit()
     
