@@ -1,10 +1,22 @@
 #!/bin/python3
 
+########
+# Personal Google Drive Utilities
+#
+# This file contains a number of utility functions for interacting with my
+# Google Drive Library which are specifically tailored to my Drive's structure.
+#
+# This file can be run as a script, in which case it takes links and moves them
+# to a Drive folder according to the slugs in _data/drive_folders.json
+#   (see get_gfolders_for_course for how those slugs are parsed)
+########
+
 import requests
+import enum
 from datetime import datetime
 from pathlib import Path
 import readline
-from typing import Callable
+from typing import Callable, Iterable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from math import floor
 import atexit
@@ -17,6 +29,8 @@ from strutils import (
   yt_url_to_plid_re,
   yt_url_to_id_re,
   file_info,
+  radio_dial,
+  system_open,
 )
 import json
 import re
@@ -49,6 +63,7 @@ from gdrive_base import (
   DRIVE_LINK,
   FOLDER_LINK_PREFIX,
   batch_get_files_by_id,
+  GFIDREGEX,
 )
 import local_gdrive
 from google.auth.exceptions import TransportError
@@ -291,58 +306,6 @@ def make_ytplaylist_summary_html(ytplid):
       ret += f"""<p><img src="{_yt_thumbnail(video) or defaultimg}" /></p>"""
   return ret
 
-if __name__ == "__main__":
-  glink_gens = []
-  urls_to_save = []
-  # a list of generator lambdas not direct links
-  # so that we can defer doc creation to the end
-  while True:
-    link = input("Link (None to continue): ")
-    if not link:
-      break
-    if not link_to_id(link):
-      if "youtu" in link:
-        link = link.split("?si=")[0]
-      else:
-        urls_to_save.append(link)
-      title = input_with_prefill("title: ", guess_link_title(link))
-      if len(link) > 121:
-        with yaspin(text="Shortening long URL..."):
-          link = requests.get('http://tinyurl.com/api-create.php?url='+link).text
-      glink_gens.append(
-        lambda title=title, link=link: DOC_LINK.format(
-            create_doc(
-              filename=title,
-              html=make_link_doc_html(title, link),
-              custom_properties={
-                "createdBy": "LibraryUtils.LinkSaver",
-                "url": link,
-              },
-            )
-        )
-      )
-    else:
-      glink_gens.append(lambda r=link: r)
-  course = input_course_string_with_tab_complete()
-  if course == "trash":
-    print("Trashing...")
-    for glink_gen in glink_gens:
-      fid = link_to_id(glink_gen())
-      shorts = get_shortcuts_to_gfile(fid)
-      for short in shorts:
-        print("  trashing shortcut first...")
-        trash_drive_file(short['id'])
-      trash_drive_file(fid)
-    print("Done!")
-  else:
-    folders = get_gfolders_for_course(course)
-    for glink_gen in glink_gens:
-      move_gfile(glink_gen(), folders)
-    print("Files moved!")
-    if len(urls_to_save) > 0:
-      print("Ensuring URLs are saved to Archive.org...")
-      archive_urls(urls_to_save)
-
 def has_file_already(file_in_question) -> list:
   hash, _ = file_info(file_in_question)
   file_in_question = Path(file_in_question)
@@ -430,6 +393,19 @@ def download_folder_contents_to(folder_id: str, target_directory: Path | str, re
       parallelism=parallelism,
     )
 
+def load_folder_slugs() -> dict[str, str]:
+  "A mapping from GFolder IDs to slug names (inverse of FOLDERS_DATA_FILE)"
+  drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
+  private_folder_slugs = {
+    folderlink_to_id(drive_folders[k]['private']): k
+    for k in drive_folders
+  }
+  public_folder_slugs = {
+    folderlink_to_id(drive_folders[k]['public']): k
+    for k in drive_folders
+  }
+  return {**private_folder_slugs, **public_folder_slugs}
+
 def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
   """Takes a list of duplicate Google Drive Files and removes the extra versions intelligently.
   
@@ -441,7 +417,7 @@ def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str,
   """
   for file in files:
     file['parent'] = gcache.get_item(file['parents'][0])
-  ids_to_keep = select_ids_to_keep(files, folder_slugs)
+  ids_to_keep, reason = select_ids_to_keep(files, folder_slugs)
   files_to_keep = [f for f in files if f['id'] in ids_to_keep]
   files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
   if verbose or len(files_to_keep) > 1:
@@ -461,8 +437,13 @@ def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str,
       gcache.trash_file(f['id'])
   return files_to_keep
 
-def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[str]:
-  """Maticulously applies hand-crafted heuristics to select the keepers"""
+def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]) -> tuple[list[str], str]:
+  """Maticulously applies hand-crafted heuristics to select the keepers
+  
+  folder_slugs is a map from gid to tag slug, passed in to avoid recompute
+
+  Returns: a list of ids to keep AND a string enum giving the reason for the choice
+  """
 
   import website
   if not website.content:
@@ -516,7 +497,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
   num_public = sum(are_publics)
   if num_public > 0:
     # Never suggest a public-facing file for deletion
-    return [files[i]['id'] for i in range(len(files)) if are_publics[i]]
+    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], 'is public'
   
   #####
   # Discard files in "unimportant" subfolders first
@@ -530,7 +511,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
     if unread_count > 0 and unread_count < len(files):
       files = [file for i, file in enumerate(files) if not unreads[i]]
       if len(files) == 1:
-        return [files[0]['id']]
+        return [files[0]['id']], 'generic subfolder'
       slugs = [slug for i, slug in enumerate(slugs) if not unreads[i]]
   
   #####
@@ -545,7 +526,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
     assert len(files) == len(priorities)
     files = [files[i] for i in range(len(files)) if priorities[i] == highest]
     if len(files) == 1:
-      return [files[0]['id']]
+      return [files[0]['id']], 'tag priority'
     
   #####
   # If some couldn't be disambiguated by folder because they are in
@@ -558,12 +539,12 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
     longest = max(name_lens)
     files = [file for file in files if len(file['name'])==longest]
     if len(files) == 1:
-      return [file['id'] for file in files]
+      return [file['id'] for file in files], 'name length'
     # That failing, pick the eldest
     modifies = [file['modifiedTime'] for file in files]
     eldest = min(modifies)
     idx = modifies.index(eldest)
-    return [files[idx]['id']]
+    return [files[idx]['id']], 'eldest file'
   
   #####
   # Disambiguate remaining folders by depth
@@ -588,7 +569,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict) -> list[
     file['root'] = parent
   roots = set(file['root']['id'] for file in files)
   assert len(roots) == 1, f"Multiple roots found for {files}"
-  return [deepest['id']]
+  return [deepest['id']], 'folder depth'
 
 def remote_file_for_local_file(fp: Path, folder_slugs: dict[str, str], default_folder_id=None) -> dict | None:
   """Ensures that there is exactly one copy of `fp` on Drive and returns it.
@@ -648,3 +629,232 @@ def find_duplicate_urls() -> list[str]:
         """
         gcache.cursor.execute(sql)
         return [row['value'] for row in gcache.cursor.fetchall()]
+
+
+class ClosePairDecision(enum.StrEnum):
+  FIRST_IS_OLD_VERSION = 'old a'
+  SECOND_IS_OLD_VERSION = 'old b'
+  THEY_ARE_THE_SAME = 'either'
+  THEY_ARE_DISTINCT = 'different'
+
+def is_duplicate_prompt(fa: dict, fb: dict, similariy: float=None) -> ClosePairDecision:
+  pa = gcache.get_item(fa['parent_id'])
+  pb = gcache.get_item(fb['parent_id'])
+  def _print_file(gfile, gparent):
+    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {DRIVE_LINK.format(gparent['id'])}")
+  if not similariy:
+    print("Are these two files the same?")
+  _print_file(fa, pa)
+  if similariy:
+    print(f"  was found to be {similariy:.3f} similar to")
+  _print_file(fb, pb)
+  while True:
+    options = ["Open both", "A is old version", "B is old version", "Exact dupe", "Different files"]
+    match radio_dial(options):
+      case 0:
+          system_open(DRIVE_LINK.format(fa['id']))
+          system_open(DRIVE_LINK.format(fb['id']))
+      case 1:
+          return ClosePairDecision.FIRST_IS_OLD_VERSION
+      case 2:
+          return ClosePairDecision.SECOND_IS_OLD_VERSION
+      case 3:
+          return ClosePairDecision.THEY_ARE_THE_SAME
+      case 4:
+          return ClosePairDecision.THEY_ARE_DISTINCT
+
+class FileDistinctionManager:
+  """
+  Stores the file pairs that have been manually marked as being distinct.
+
+  Uses a custom Google Drive file property "distinctFrom" set to another fileid
+  to create rings of known-distinct files.
+  """
+  def __init__(self, gc: local_gdrive.DriveCache):
+    self.gcache = gc
+    self.fileid_to_distinct_neighbors: dict[str, set[str]]
+    self.fileid_to_distinct_neighbors = dict()
+    with gc._lock:
+      pointers = [
+        dict(row) for row in
+        gc.cursor.execute(
+          """SELECT prop.file_id, prop.value
+          FROM item_properties prop
+          JOIN drive_items item
+          ON prop.file_id = item.id
+          WHERE key = ?""",
+          ('distinctFrom',)
+        )
+      ]
+    pointers = {p['file_id']: p['value'] for p in pointers}
+    pointers = self.fix_pointers(pointers)
+    for k in pointers.keys():
+      self.fileid_to_distinct_neighbors[k] = set()
+      node = pointers[k]
+      # Because we've fixed the pointers above, we're guarenteed cycles here
+      while node != k:
+        self.fileid_to_distinct_neighbors[k].add(node)
+        node = pointers[node]
+  
+  def are_distinct(self, file_a: str, file_b: str) -> bool:
+    """Returns True iff file_a and file_b are marked distinct already"""
+    return file_a in self.fileid_to_distinct_neighbors and file_b in self.fileid_to_distinct_neighbors[file_a]
+  
+  def mark_distinct(self, file_a: str, file_b: str):
+    """Writes to the DB the fact that file_a and file_b are distinctFrom eachother"""
+    assert re.fullmatch(GFIDREGEX, file_a)
+    assert re.fullmatch(GFIDREGEX, file_b)
+    if self.are_distinct(file_a, file_b):
+      return
+    if file_a not in self.fileid_to_distinct_neighbors and file_b not in self.fileid_to_distinct_neighbors:
+      self._write_pointer(file_a, file_b)
+      self._write_pointer(file_b, file_a)
+      self.fileid_to_distinct_neighbors[file_a] = set([file_b])
+      self.fileid_to_distinct_neighbors[file_b] = set([file_a])
+      return
+    if file_b not in self.fileid_to_distinct_neighbors:
+      file_a, file_b = file_b, file_a
+    if file_a not in self.fileid_to_distinct_neighbors:
+      # file_a is new, but file_b is part of a group already
+      decisions = dict()
+      for other_file in self.fileid_to_distinct_neighbors[file_b]:
+        decisions[other_file] = is_duplicate_prompt(other_file, file_a)
+      if any(decision in [ClosePairDecision.FIRST_IS_OLD_VERSION, ClosePairDecision.SECOND_IS_OLD_VERSION] for decision in decisions):
+        raise NotImplementedError("Teach me how to handle old versions")
+      raise NotImplementedError("Teach me how to merge subgraphs")
+        
+    raise NotImplementedError("Teach FileDistinctionManager how to handle merging two cycles")
+    
+  
+  def _write_pointer(self, from_id: str, to_id: str):
+    """Commits this new pointer to the DB"""
+    assert re.fullmatch(GFIDREGEX, to_id), f"_write_pointer got a non-ID: {to_id}"
+    self.gcache.write_property(from_id, 'distinctFrom', to_id)
+  
+  def _make_new_cycle(self, nodes: Iterable[str]) -> dict[str, str]:
+    """Takes a collection of nodes and writes them as a cycle to the DB.
+    
+    Returns: the pointers map of which were made to point to which."""
+    node_iter = iter(nodes)
+    first_node = next(node_iter)
+    last_node = first_node
+    ret = dict()
+    while next_node := next(node_iter, None):
+      ret[last_node] = next_node
+      self._write_pointer(last_node, next_node)
+      last_node = next_node
+    assert len(ret) >= 1, "Need to supply multiple nodes to make a cycle"
+    ret[last_node] = first_node
+    self._write_pointer(last_node, first_node)
+    return ret
+
+
+  def fix_pointers(self, pointers: dict[str, str]) -> dict[str, str]:
+    """Takes a dictionary of file ids to the file ids they point to
+    It ensures that there are no dangling nodes, writing corrections to the DB
+    as necessary and it returns the cleaned graph.
+    """
+    parents = {v: set() for v in pointers.values()}
+    for k, v in pointers.items():
+      parents[v].add(k)
+    
+    for k, v in parents.items():
+      if len(v) > 1:
+        print(f"INFO: {k} marked distinctFrom {v}: remaking the complete subgraph")
+        to_add_up = v.copy()
+        added_up = set()
+        to_add_down = set([k])
+        added_down = set()
+        while len(to_add_up) > 0:
+          n = to_add_up.pop()
+          for p in parents.get(n, []):
+            if p not in added_up:
+              to_add_up.add(p)
+          added_up.add(n)
+        while len(to_add_down) > 0:
+          n = to_add_down.pop()
+          for c in pointers[n]:
+            if c not in added_down:
+              to_add_down.add(c)
+          added_down.add(n)
+        new_pointers = self._make_new_cycle(added_up | added_down)
+        pointers.update(new_pointers)
+        return self.fix_pointers(pointers)
+    for k in pointers.keys():
+      if k not in parents:
+        leaf = k
+        # because k has no parents, leaf can never
+        # come back around to k, guarenteeing that
+        # this isn't an infinite loop
+        while leaf in pointers:
+          leaf = pointers[leaf]
+        living_leaf = self.gcache.get_item(leaf)
+        if not living_leaf:
+          leaf = parents[leaf]
+          assert len(leaf) == 1, "Multiple parents should be handled alread"
+          leaf = list(leaf)[0]
+        print(f"INFO: Fixing broken distinctFrom chain from {k} to {leaf}")
+        if leaf == k:
+          self._write_pointer(leaf, None)
+          del pointers[k]
+          return self.fix_pointers(pointers)
+        else:
+          self._write_pointer(leaf, k)
+          pointers[leaf] = k
+          return self.fix_pointers(pointers)
+    return pointers
+
+
+
+
+if __name__ == "__main__":
+  glink_gens = []
+  urls_to_save = []
+  # a list of generator lambdas not direct links
+  # so that we can defer doc creation to the end
+  while True:
+    link = input("Link (None to continue): ")
+    if not link:
+      break
+    if not link_to_id(link):
+      if "youtu" in link:
+        link = link.split("?si=")[0]
+      else:
+        urls_to_save.append(link)
+      title = input_with_prefill("title: ", guess_link_title(link))
+      if len(link) > 121:
+        with yaspin(text="Shortening long URL..."):
+          link = requests.get('http://tinyurl.com/api-create.php?url='+link).text
+      glink_gens.append(
+        lambda title=title, link=link: DOC_LINK.format(
+            create_doc(
+              filename=title,
+              html=make_link_doc_html(title, link),
+              custom_properties={
+                "createdBy": "LibraryUtils.LinkSaver",
+                "url": link,
+              },
+            )
+        )
+      )
+    else:
+      glink_gens.append(lambda r=link: r)
+  course = input_course_string_with_tab_complete()
+  if course == "trash":
+    print("Trashing...")
+    for glink_gen in glink_gens:
+      fid = link_to_id(glink_gen())
+      shorts = get_shortcuts_to_gfile(fid)
+      for short in shorts:
+        print("  trashing shortcut first...")
+        trash_drive_file(short['id'])
+      trash_drive_file(fid)
+    print("Done!")
+  else:
+    folders = get_gfolders_for_course(course)
+    for glink_gen in glink_gens:
+      move_gfile(glink_gen(), folders)
+    print("Files moved!")
+    if len(urls_to_save) > 0:
+      print("Ensuring URLs are saved to Archive.org...")
+      archive_urls(urls_to_save)

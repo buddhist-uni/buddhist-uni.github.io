@@ -642,6 +642,21 @@ class DriveCache:
             self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
             self.conn.commit()
     
+    def write_property(self, file_id: str, prop_name: str, prop_val: str | None):
+        """Write None to a property to delete it"""
+        gdrive_base.write_property(file_id, prop_name, prop_val)
+        with self._lock:
+            if prop_val is None:
+                self.cursor.execute("DELETE FROM item_properties WHERE file_id = ? AND key = ?", (file_id, prop_name, ))
+            else:
+                self.cursor.execute("""
+                    INSERT INTO item_properties (file_id, key, value)
+                    VALUES (?, ?, ?)
+                    ON CONFLICT(file_id, key) DO UPDATE SET
+                    value = excluded.value
+                """, (file_id, prop_name, prop_val, ))
+            self.conn.commit()
+    
     def create_folder(self, folder_name: str, parent_id: str) -> str:
         """Creates a new folder with the name and parent and rets the new id"""
         if parent_id.startswith('http'):

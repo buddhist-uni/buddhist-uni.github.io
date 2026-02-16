@@ -264,6 +264,13 @@ def rename_file(file_id: str, new_name: str):
     body={'name': new_name},
   ))
 
+def write_property(file_id: str, prop_name: str, prop_value: str | None):
+  # Writing None to the property deletes it
+  execute(session().files().update(
+    fileId=file_id,
+    body={'properties': {prop_name: prop_value}},
+  ))
+
 def _perform_upload(file_metadata, media, verbose=True, update_file=False):
     try:
         # Upload the file

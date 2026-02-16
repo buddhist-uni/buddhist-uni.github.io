@@ -97,18 +97,8 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
 
 if cli_args.init:
   print(f"Setting up '{LOCAL_FOLDER}' as inbox folder...")
-  import json
   import gdrive
-  drive_folders = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
-  private_folder_slugs = {
-    gdrive.folderlink_to_id(drive_folders[k]['private']): k
-    for k in drive_folders
-  }
-  public_folder_slugs = {
-    gdrive.folderlink_to_id(drive_folders[k]['public']): k
-    for k in drive_folders
-  }
-  folder_slugs = {**private_folder_slugs, **public_folder_slugs}
+  folder_slugs = gdrive.load_folder_slugs()
   from bulk_import import (
     get_all_predictable_unread_folders,
     all_folders_with_name_by_course,
