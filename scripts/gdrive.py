@@ -487,7 +487,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     if num_slugs == 1:
       # if there's only one file in a slugged folder, keep that one
       # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']]
+      return [files[slugs.index(important_slugs[0])]['id']], 'is public'
 
   #####
   # Don't trash any publicly-launched files
@@ -502,6 +502,9 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   #####
   # Discard files in "unimportant" subfolders first
   #####
+  if 'parent' not in files[0]:
+    for f in files:
+      f['parent'] = gcache.get_item(f['parent_id'])
   for prefix in UNIMPORTANT_PREFIXES:
     if prefix == "DhammaTalks":
       unreads = ['1NTIsr31uhBXymkFUu2coGU72vdCjwfNp' in [f['parent']['parents'][0], f['parents'][0]] for f in files]
@@ -670,7 +673,9 @@ class FileDistinctionManager:
   Uses a custom Google Drive file property "distinctFrom" set to another fileid
   to create rings of known-distinct files.
   """
-  def __init__(self, gc: local_gdrive.DriveCache):
+  def __init__(self, gc: local_gdrive.DriveCache=None):
+    if gc is None:
+      gc = gcache
     self.gcache = gc
     self.fileid_to_distinct_neighbors: dict[str, set[str]]
     self.fileid_to_distinct_neighbors = dict()
@@ -716,14 +721,35 @@ class FileDistinctionManager:
       file_a, file_b = file_b, file_a
     if file_a not in self.fileid_to_distinct_neighbors:
       # file_a is new, but file_b is part of a group already
+      print(f"Adding {file_a} to the {file_b} cluster:")
+      actual_file_a = self.gcache.get_item(file_a)
       decisions = dict()
+      file_pointing_to_b = None
       for other_file in self.fileid_to_distinct_neighbors[file_b]:
-        decisions[other_file] = is_duplicate_prompt(other_file, file_a)
-      if any(decision in [ClosePairDecision.FIRST_IS_OLD_VERSION, ClosePairDecision.SECOND_IS_OLD_VERSION] for decision in decisions):
-        raise NotImplementedError("Teach me how to handle old versions")
-      raise NotImplementedError("Teach me how to merge subgraphs")
-        
-    raise NotImplementedError("Teach FileDistinctionManager how to handle merging two cycles")
+        actual_other_file = self.gcache.get_item(other_file)
+        if actual_other_file['properties']['distinctFrom'] == file_b:
+          file_pointing_to_b = actual_other_file
+        decisions[other_file] = is_duplicate_prompt(
+          actual_other_file,
+          actual_file_a,
+        )
+      if all(decision == ClosePairDecision.THEY_ARE_DISTINCT for decision in decisions.values()):
+        # Easy case. Just add it to the group
+        self._write_pointer(file_pointing_to_b['id'], file_a)
+        self._write_pointer(file_a, file_b)
+        self.fileid_to_distinct_neighbors[file_a] = self.fileid_to_distinct_neighbors[file_b].copy()
+        self.fileid_to_distinct_neighbors[file_a].add(file_b)
+        for other_fid in self.fileid_to_distinct_neighbors[file_a]:
+          self.fileid_to_distinct_neighbors[other_fid].add(file_a)
+        return
+      import ipdb
+      print("Teach me how to do a complex insertion")  
+      ipdb.set_trace()
+    
+    import ipdb
+    print("Teach FileDistinctionManager how to handle merging two cycles")  
+    ipdb.set_trace()
+    
     
   
   def _write_pointer(self, from_id: str, to_id: str):

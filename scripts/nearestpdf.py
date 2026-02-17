@@ -10,7 +10,7 @@ import joblib
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
 import functools
 from scipy.sparse import vstack
-from strutils import prompt
+from strutils import prompt, input_with_prefill
 
 # These parallel arrays contain the global database we match against
 # Call `load()` to populate these
@@ -365,7 +365,7 @@ def calculate_similarity_matrix() -> npt.NDArray[np.float64]:
     print("Then do it!")
   print("Calculating similarity matrix...")
   n_docs = corpus_embeddings.shape[0]
-  chunk_size = 1000
+  chunk_size = 400
   
   chunks = [
       (i, min(i + chunk_size, n_docs))
@@ -375,7 +375,7 @@ def calculate_similarity_matrix() -> npt.NDArray[np.float64]:
   sim_chunks = tqdm_process_map(
       _calc_sim_chunk,
       chunks,
-      max_workers=cpu_count() - 1,
+      max_workers=cpu_count(),
       chunksize=1,
   )
   
@@ -402,24 +402,94 @@ def find_close_pairs(similarity_matrix, min_similarity=0.9):
   matching_idxs = np.where(similarity_matrix >= min_similarity)
   return list(zip(matching_idxs[0], matching_idxs[1], similarity_matrix[matching_idxs]))
 
+def handle_nearness_decision(decision, gfa: dict, gfb: dict, sim: float, all_decisions: list, folder_slugs):
+  def _print_shortcuts(shortcuts):
+    for shortcut in shortcuts:
+      print(f"  \"{shortcut['name']}\"")
+      print(f"     in {gdrive.FOLDER_LINK.format(shortcut['parent_id'])}")
+  
+  all_decisions.append((decision, gfa, gfb, sim))
+  joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
+  if decision == gdrive.ClosePairDecision.THEY_ARE_DISTINCT:
+    distinctions.mark_distinct(gfa['id'], gfb['id'])
+    return
+  would_have_chosen, reason = gdrive.select_ids_to_keep(
+    [gfa, gfb],
+    folder_slugs,
+  )
+  if len(would_have_chosen) == 2:
+    print("ERROR: Cannot automatically handle these files as both are public!")
+    input("Please handle these files manually and then press enter to continue...")
+    return
+  would_have_chosen = would_have_chosen[0]
+  if gfa['parent_id'] != gfb['parent_id']:
+    def _move_keeper(keepfile: dict, betterlocfile: dict) -> bool:
+      if reason == 'is public':
+        print("ERROR: The file you've chosen as older is publicly launched!")
+        input("Please resolve this manually and then press enter to continue with the next pair...")
+        return True
+      shortcuts = gdrive.gcache.get_shortcuts_to_file(keepfile['id'])
+      if shortcuts:
+        print("The file you've chosen to keep has shortcuts:")
+        _print_shortcuts(shortcuts)
+        input("Please handle and then press enter to continue...")
+      print(f"[Action] Moving your chosen keeper to {gdrive.FOLDER_LINK.format(betterlocfile['parent_id'])}")
+      gdrive.gcache.move_file(keepfile['id'], betterlocfile['parent_id'], keepfile['parents'])
+      return False
+
+    if decision == gdrive.ClosePairDecision.FIRST_IS_OLD_VERSION and would_have_chosen == gfa['id']:
+      if _move_keeper(gfb, gfa):
+        return
+    if decision == gdrive.ClosePairDecision.SECOND_IS_OLD_VERSION and would_have_chosen == gfb['id']:
+      if _move_keeper(gfa, gfb):
+        return
+  
+  old_version = None
+  if decision == gdrive.ClosePairDecision.FIRST_IS_OLD_VERSION:
+    old_version = gfa
+  if decision == gdrive.ClosePairDecision.SECOND_IS_OLD_VERSION:
+    old_version = gfb
+  if old_version:
+    print(f"[Action] Moving the old version to Old Versions...")
+    gdrive.gcache.move_file(old_version['id'], gdrive.OLD_VERSIONS_FOLDER_ID, old_version['parents'])
+    shortcuts = gdrive.gcache.get_shortcuts_to_file(old_version['id'])
+    if shortcuts:
+      print("The file you've chosen as old had the following shortcuts:")
+      _print_shortcuts(shortcuts)
+      input("Please handle them manually and press enter to continue...")
+    return
+  assert decision == gdrive.ClosePairDecision.THEY_ARE_THE_SAME
+  print(f"[Action] Trashing {gdrive.DRIVE_LINK.format(would_have_chosen)}")
+  gdrive.gcache.trash_file(would_have_chosen)
+
+
 if __name__ == "__main__":
-  import gdrive_base
+  import random
   import gdrive
   load(True)
   print("Successfully loaded the latest PDF embeddings!")
-  if not prompt("Would you like to review the embeddings for any unweeded duplicates?"):
+  if not prompt("Would you like to review the embeddings for any duplicates?"):
     print("Okay then :)")
     exit(0)
+  min_similarity = -1
+  while min_similarity < 0 or min_similarity > 1:
+    min_similarity = float(input_with_prefill("Min similarity: ", "0.95", float))
   print("Loading the similarity matrix...")
   similarity_matrix = calculate_similarity_matrix()
   print("Selecting close neighboring pairs...")
-  close_pairs = find_close_pairs(similarity_matrix, min_similarity=0.85)
+  close_pairs = find_close_pairs(similarity_matrix, min_similarity=min_similarity)
   del similarity_matrix
+  MAX_TO_CONSIDER = 1000
+  if len(close_pairs) > MAX_TO_CONSIDER:
+    print(f"INFO: Restricting to {MAX_TO_CONSIDER} pairs of the {len(close_pairs)} found")
+    close_pairs = random.sample(close_pairs, MAX_TO_CONSIDER)
+  else:
+    random.shuffle(close_pairs)
   all_decisions = []
   if DECISION_HISTORY_FILE.exists():
     all_decisions = joblib.load(DECISION_HISTORY_FILE)
     assert isinstance(all_decisions, list), "Expected DECISION_HISTORY to be a list"
-  distinctions = gdrive.FileDistinctionManager(gdrive.gcache)
+  distinctions = gdrive.FileDistinctionManager()
   close_pairs = [
     (
       google_files[idx],
@@ -427,40 +497,17 @@ if __name__ == "__main__":
       sim,
     )
     for idx, jdx, sim in close_pairs
-    if google_files[idx]['parent_id '] != gdrive.OLD_VERSIONS_FOLDER_ID and 
+    if google_files[idx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and 
     google_files[jdx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and
     not distinctions.are_distinct(google_files[idx]['id'], google_files[jdx]['id'])
   ]
-  folder_slugs = gdrive.load_folder_slugs()
   print(f"Found {len(close_pairs)} close pairs that need review...")
+  folder_slugs = gdrive.load_folder_slugs()
+  done = 0
   for gfa, gfb, sim in close_pairs:
+      done += 1
+      print(f"\n---{done}/{len(close_pairs)}\n")
       decision = gdrive.is_duplicate_prompt(gfa, gfb, similariy=sim)
-      all_decisions.append((decision, gfa, gfb, sim))
-      joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
-      if decision == gdrive.ClosePairDecision.THEY_ARE_DISTINCT:
-        distinctions.mark_distinct(gfa['id'], gfb['id'])
-        continue
-      would_have_chosen, reason = gdrive.select_ids_to_keep(
-        [gfa, gfb],
-        folder_slugs,
-      )
-      if len(would_have_chosen) == 2:
-        print("ERROR: Cannot automatically handle these files as both are public!")
-        input("Please handle these files manually and then press enter to continue...")
-        continue
-      would_have_chosen = would_have_chosen[0]
-      if gfa['parent_id'] != gfb['parent_id']:
-        if decision == gdrive.ClosePairDecision.FIRST_IS_OLD_VERSION and would_have_chosen == gfa['id']:
-          if reason == 'is public':
-            print("ERROR: The file you have decided is older is publicly launched! Please handle manually!")
-            input("And press enter to continue...")
-            continue
-          gdrive.gcache.move_file(gfb['id'], gfa['parent_id'], gfb['parents'])
-        if decision == gdrive.ClosePairDecision.SECOND_IS_OLD_VERSION and would_have_chosen == gfb['id']:
-          if reason == 'is public':
-            print("ERROR: The file you've chosen as older is publicly launched!")
-            input("Please resolve this manually and then press enter to continue...")
-            continue
-          gdrive.gcache.move_file(gfa['id'], gfb['parent_id'], gfa['parents'])
-      
+      handle_nearness_decision(decision, gfa, gfb, sim, all_decisions, folder_slugs)
+
 
