@@ -644,7 +644,9 @@ def is_duplicate_prompt(fa: dict, fb: dict, similariy: float=None) -> ClosePairD
   pa = gcache.get_item(fa['parent_id'])
   pb = gcache.get_item(fb['parent_id'])
   def _print_file(gfile, gparent):
-    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {DRIVE_LINK.format(gparent['id'])}")
+    if not gparent:
+      gparent = {'name': 'Root Folder', 'id': '../my-drive'}
+    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {FOLDER_LINK.format(gparent['id'])}")
   if not similariy:
     print("Are these two files the same?")
   _print_file(fa, pa)
@@ -752,9 +754,10 @@ class FileDistinctionManager:
     
     
   
-  def _write_pointer(self, from_id: str, to_id: str):
+  def _write_pointer(self, from_id: str, to_id: str | None):
     """Commits this new pointer to the DB"""
-    assert re.fullmatch(GFIDREGEX, to_id), f"_write_pointer got a non-ID: {to_id}"
+    if to_id is not None:
+      assert re.fullmatch(GFIDREGEX, to_id), f"_write_pointer got a non-ID: {to_id}"
     self.gcache.write_property(from_id, 'distinctFrom', to_id)
   
   def _make_new_cycle(self, nodes: Iterable[str]) -> dict[str, str]:
@@ -829,8 +832,45 @@ class FileDistinctionManager:
           pointers[leaf] = k
           return self.fix_pointers(pointers)
     return pointers
+  
+  def clear_distinctions_from(self, file_id: str, pointing_to: str = None):
+    if file_id not in self.fileid_to_distinct_neighbors:
+      return
+    neighbors = self.fileid_to_distinct_neighbors[file_id]
+    assert len(neighbors) > 0, f"Why is there an empty neighbors list?"
+    if len(neighbors) == 1:
+      neighbor = list(neighbors)[0]
+      self._write_pointer(neighbor, None)
+      self._write_pointer(file_id, None)
+      del self.fileid_to_distinct_neighbors[file_id]
+      del self.fileid_to_distinct_neighbors[neighbor]
+      return
+    with self.gcache._lock:
+      self.gcache.cursor.execute("SELECT file_id FROM item_properties WHERE key = 'distinctFrom' AND value = ?", (file_id,))
+      pointing_neighbor = self.gcache.cursor.fetchone()['file_id']
+    assert pointing_neighbor in neighbors
+    if not pointing_to:
+      with self.gcache._lock:
+        self.gcache.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
+        pointing_to = self.gcache.cursor.fetchone()['value']
+    assert pointing_to in neighbors
+    assert pointing_to != pointing_neighbor
+    self._write_pointer(pointing_neighbor, pointing_to)
+    self._write_pointer(file_id, None)
+    for neighbor in neighbors:
+      self.fileid_to_distinct_neighbors[neighbor].remove(file_id)
+    del self.fileid_to_distinct_neighbors[file_id]
 
+def move_distinctions_off_file(gc: local_gdrive.DriveCache, file_id: str) -> None:
+  with gc._lock:
+    gc.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
+    pointing_to = gc.cursor.fetchone()
+  if not pointing_to:
+    return
+  distinctions = FileDistinctionManager(gc)
+  distinctions.clear_distinctions_from(file_id, pointing_to['value'])
 
+gcache.register_trash_callback(move_distinctions_off_file)
 
 
 if __name__ == "__main__":

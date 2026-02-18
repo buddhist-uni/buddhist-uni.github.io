@@ -1,8 +1,9 @@
 #!/bin/python3
+from __future__ import annotations
 
 import sqlite3
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Callable, TypedDict
 from time import sleep
 
 import gdrive_base
@@ -54,6 +55,9 @@ def locked(func):
             self._lock.release()
     return wrapper
 
+class DriveCacheCallbackMap(TypedDict):
+    trash: list[Callable[[DriveCache, str], None]]
+
 class DriveCache:
     """
     Manages a local SQLite cache for Google Drive file/folder metadata.
@@ -85,6 +89,7 @@ class DriveCache:
         self.conn.row_factory = sqlite3.Row
         self.cursor = self.conn.cursor()
         self._create_table()
+        self.callbacks: DriveCacheCallbackMap = {"trash": []}
     
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
@@ -609,8 +614,15 @@ class DriveCache:
     #  consequence to the cache without having to perform a full .update()
     ########
 
+    def register_trash_callback(self, callback_func: Callable[[DriveCache, str]]):
+        """Will call your `callback_func` with the `file_id` before trashing it."""
+        self.callbacks['trash'].append(callback_func)
+
     def trash_file(self, file_id: str):
         """Actually performs the tashing and updates the cache"""
+        for callback_func in self.callbacks['trash']:
+            callback_func(self, file_id)
+
         gdrive_base.trash_drive_file(file_id)
         with self._lock:
             self._move_to_trash(file_id)

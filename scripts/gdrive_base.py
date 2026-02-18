@@ -82,6 +82,9 @@ def link_to_id(link):
     return ret
   if link.startswith("https://drive.google.com/open?id="):
     return link[len("https://drive.google.com/open?id="):].split('&')[0]
+  ret = GFIDREGEX.search(link)
+  if ret:
+    return ret.groups()[0]
   return None
 
 def folderlink_to_id(link):
@@ -246,17 +249,42 @@ def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True
     buffer.close()
     Path(str(destination)+'.part').rename(destination)
 
-def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None, verbose=True):
+def upload_to_google_drive(
+    file_path: str | Path,
+    creator=None, filename: str | None=None,
+    folder_id: str | None=None,
+    custom_properties: dict[str,str] = None,
+    verbose=True,
+    update_file: str | None=None,
+  ):
+    """Uploads the given file_path to Google Drive.
+    
+    Args:
+      file_path: the file to upload
+      creator: Sets the "createdBy" property. "owner" will always be the logged-in user
+      filename: if not specified will keep the existing name (if `update_file`) or use the `file_path` name (if uploading a new file)
+      folder_id: where to place the file (default is the user's root directory)
+      update_file: pass an ID here and this will replace its contents with `file_path`'s contents
+    
+    Returns: The ID of the file if successful, otherwise False
+    """
     if verbose:
-      print(f"Uploading {file_path.name}...")
-    file_metadata = {'name': (filename or os.path.basename(file_path))}
+      print(f"Uploading {Path(file_path).name}...")
+    file_metadata = dict()
+    if filename:
+      file_metadata['name'] = filename
+    elif not update_file:
+      file_metadata['name'] = os.path.basename(file_path)
     if folder_id:
         file_metadata['parents'] = [folder_id]
-    file_metadata['properties'] = custom_properties or dict()
-    if creator:
-        file_metadata['properties']['createdBy'] = creator
+    if custom_properties or creator:
+      file_metadata['properties'] = dict()
+      if custom_properties:
+        file_metadata['properties'].update(custom_properties)
+      if creator:
+          file_metadata['properties']['createdBy'] = creator
     media = MediaFileUpload(file_path, resumable=True)
-    return _perform_upload(file_metadata, media, verbose=verbose)
+    return _perform_upload(file_metadata, media, verbose=verbose, update_file=update_file)
 
 def rename_file(file_id: str, new_name: str):
   execute(session().files().update(
