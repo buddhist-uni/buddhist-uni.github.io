@@ -437,7 +437,16 @@ def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str,
       gcache.trash_file(f['id'])
   return files_to_keep
 
-def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]) -> tuple[list[str], str]:
+class IDSelectionReason(enum.StrEnum):
+  IS_PUBLIC = 'is public'
+  GENERIC_SUBFOLDER = 'generic subfolder'
+  TAG_PRIORITY = 'tag priority'
+  NAME_LENGTH = 'name length'
+  ELDEST_FILE = 'eldest file'
+  FOLDER_DEPTH = 'folder depth'
+  
+
+def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]) -> tuple[list[str], IDSelectionReason]:
   """Maticulously applies hand-crafted heuristics to select the keepers
   
   folder_slugs is a map from gid to tag slug, passed in to avoid recompute
@@ -487,7 +496,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     if num_slugs == 1:
       # if there's only one file in a slugged folder, keep that one
       # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']], 'is public'
+      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.IS_PUBLIC
 
   #####
   # Don't trash any publicly-launched files
@@ -497,7 +506,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   num_public = sum(are_publics)
   if num_public > 0:
     # Never suggest a public-facing file for deletion
-    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], 'is public'
+    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], IDSelectionReason.IS_PUBLIC
   
   #####
   # Discard files in "unimportant" subfolders first
@@ -514,7 +523,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     if unread_count > 0 and unread_count < len(files):
       files = [file for i, file in enumerate(files) if not unreads[i]]
       if len(files) == 1:
-        return [files[0]['id']], 'generic subfolder'
+        return [files[0]['id']], IDSelectionReason.GENERIC_SUBFOLDER
       slugs = [slug for i, slug in enumerate(slugs) if not unreads[i]]
   
   #####
@@ -529,7 +538,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     assert len(files) == len(priorities)
     files = [files[i] for i in range(len(files)) if priorities[i] == highest]
     if len(files) == 1:
-      return [files[0]['id']], 'tag priority'
+      return [files[0]['id']], IDSelectionReason.TAG_PRIORITY
     
   #####
   # If some couldn't be disambiguated by folder because they are in
@@ -542,12 +551,12 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     longest = max(name_lens)
     files = [file for file in files if len(file['name'])==longest]
     if len(files) == 1:
-      return [file['id'] for file in files], 'name length'
+      return [file['id'] for file in files], IDSelectionReason.NAME_LENGTH
     # That failing, pick the eldest
     modifies = [file['modifiedTime'] for file in files]
     eldest = min(modifies)
     idx = modifies.index(eldest)
-    return [files[idx]['id']], 'eldest file'
+    return [files[idx]['id']], IDSelectionReason.ELDEST_FILE
   
   #####
   # Disambiguate remaining folders by depth
@@ -572,7 +581,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     file['root'] = parent
   roots = set(file['root']['id'] for file in files)
   assert len(roots) == 1, f"Multiple roots found for {files}"
-  return [deepest['id']], 'folder depth'
+  return [deepest['id']], IDSelectionReason.FOLDER_DEPTH
 
 def remote_file_for_local_file(fp: Path, folder_slugs: dict[str, str], default_folder_id=None) -> dict | None:
   """Ensures that there is exactly one copy of `fp` on Drive and returns it.
@@ -633,6 +642,21 @@ def find_duplicate_urls() -> list[str]:
         gcache.cursor.execute(sql)
         return [row['value'] for row in gcache.cursor.fetchall()]
 
+def fetch_files_distinction_pointer(gc: local_gdrive.DriveCache, file_id: str) -> str | None:
+  with gc._lock:
+    gc.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
+    pointing_to = gc.cursor.fetchone()
+  if not pointing_to:
+    return None
+  return pointing_to['value']
+
+def fetch_distinct_file_pointing_to(gc: local_gdrive, target_file_id: str) -> str | None:
+  with gc._lock:
+      gc.cursor.execute("SELECT file_id FROM item_properties WHERE key = 'distinctFrom' AND value = ?", (target_file_id,))
+      pointing_neighbor = gc.cursor.fetchone()
+  if pointing_neighbor:
+    return pointing_neighbor['file_id']
+  return None
 
 class ClosePairDecision(enum.StrEnum):
   FIRST_IS_OLD_VERSION = 'old a'
@@ -678,6 +702,7 @@ class FileDistinctionManager:
   def __init__(self, gc: local_gdrive.DriveCache=None):
     if gc is None:
       gc = gcache
+    self._folder_slugs = None
     self.gcache = gc
     self.fileid_to_distinct_neighbors: dict[str, set[str]]
     self.fileid_to_distinct_neighbors = dict()
@@ -694,7 +719,7 @@ class FileDistinctionManager:
         )
       ]
     pointers = {p['file_id']: p['value'] for p in pointers}
-    pointers = self.fix_pointers(pointers)
+    pointers = self._fix_pointers(pointers)
     for k in pointers.keys():
       self.fileid_to_distinct_neighbors[k] = set()
       node = pointers[k]
@@ -706,6 +731,104 @@ class FileDistinctionManager:
   def are_distinct(self, file_a: str, file_b: str) -> bool:
     """Returns True iff file_a and file_b are marked distinct already"""
     return file_a in self.fileid_to_distinct_neighbors and file_b in self.fileid_to_distinct_neighbors[file_a]
+
+  def folder_slugs(self):
+    if self._folder_slugs:
+      return self._folder_slugs
+    self._folder_slugs = load_folder_slugs()
+    return self._folder_slugs
+  
+  def handle_close_pair_decision(self, decision: ClosePairDecision, actual_file_a: dict, actual_other_file: dict):
+    """
+    Handles whatever file moving, trashing, and Distinction pointer swapping as needed to actualize `decision`
+
+    Args:
+      `decision` is relative to `is_duplicate_prompt(actual_file_a, actual_other_file)` in that order
+    """
+    if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+      return self.mark_distinct(actual_other_file['id'], actual_file_a['id'])
+    def _print_shortcuts(shortcuts: list[dict]):
+      for shortcut in shortcuts:
+        print(f"  \"{shortcut['name']}\"")
+        print(f"     in {FOLDER_LINK.format(shortcut['parent_id'])}")
+    would_keep, reason = select_ids_to_keep(
+      [actual_other_file, actual_file_a],
+      folder_slugs=self.folder_slugs(),
+    )
+    selected_to_keep = None
+    selected_to_not = None
+    if len(would_keep) > 1 and decision == ClosePairDecision.THEY_ARE_THE_SAME:
+      assert reason == IDSelectionReason.IS_PUBLIC
+      print("Both files are publicly launched!")
+      print("Please handle manually and select one of these to keep:")
+      choice = radio_dial([
+        DRIVE_LINK.format(actual_file_a['id']),
+        DRIVE_LINK.format(actual_other_file['id']),
+      ])
+      if choice == 0:
+        decision = ClosePairDecision.SECOND_IS_OLD_VERSION
+      elif choice == 1:
+        decision = ClosePairDecision.FIRST_IS_OLD_VERSION
+      else:
+        raise ValueError("radio_dial should output 0 or 1 for a binary choice, no?")
+    if decision == ClosePairDecision.FIRST_IS_OLD_VERSION:
+      selected_to_not, selected_to_keep = actual_file_a, actual_other_file
+    elif decision == ClosePairDecision.SECOND_IS_OLD_VERSION:
+      selected_to_not, selected_to_keep = actual_other_file, actual_file_a
+    else:
+      assert decision == ClosePairDecision.THEY_ARE_THE_SAME
+      assert len(would_keep) == 1
+      if would_keep[0] == actual_file_a['id']:
+        selected_to_keep = actual_file_a
+        selected_to_not = actual_other_file
+      else:
+        assert would_keep[0] == actual_other_file['id']
+        selected_to_keep = actual_other_file
+        selected_to_not = actual_file_a
+    if len(would_keep) == 1 and would_keep[0] != selected_to_keep['id']:
+      if reason == IDSelectionReason.IS_PUBLIC:
+        print("The file you've selected as the old version is public")
+        print("Please resolve this manually and then we'll move it to Old Versions.")
+        input("Press enter to continue...")
+      elif selected_to_not['parent_id'] != selected_to_keep['parent_id']:
+        shortcuts = self.gcache.get_shortcuts_to_file(selected_to_keep['id'])
+        if shortcuts:
+          print(f"The file you've chosen to keep and move to {FOLDER_LINK.format(selected_to_not['parent_id'])} has shortcuts:")
+          _print_shortcuts(shortcuts)
+          input("Please handle them and then press enter to continue...")
+        self.gcache.move_file(selected_to_keep['id'], selected_to_not['parent_id'], selected_to_keep['parents'])
+    if 'distinctFrom' in selected_to_not['properties']:
+      if 'distinctFrom' not in selected_to_keep['properties']:
+        # simply swap out keep for not
+        point_to_not_id = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
+        self._write_pointer(point_to_not_id, selected_to_keep['id'])
+        self._write_pointer(selected_to_keep['id'], selected_to_not['properties']['distinctFrom'])
+        self._write_pointer(selected_to_not['id'], None)
+        self.fileid_to_distinct_neighbors[selected_to_keep['id']] = self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        del self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        for n in self.fileid_to_distinct_neighbors[selected_to_keep['id']]:
+          self.fileid_to_distinct_neighbors[n].remove(selected_to_not['id'])
+          self.fileid_to_distinct_neighbors[n].add(selected_to_keep['id'])
+      else:
+        # We can assume they aren't in the same cluster as they were just
+        # marked as the same, ergo not distinct
+        assert selected_to_not['id'] not in self.fileid_to_distinct_neighbors[selected_to_keep['id']]
+        # since these two are marked the same, we should merge their clusters into a super-cluster
+        super_cluster = self.fileid_to_distinct_neighbors[select_ids_to_keep['id']] | \
+          self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        super_cluster.add(selected_to_keep['id'])
+        # TODO: There's a more efficient way to do this with snipping
+        self._make_new_cycle(super_cluster)
+        self._write_pointer(selected_to_not['id'], None)
+        for n in super_cluster:
+          nn = super_cluster.copy()
+          nn.remove(n)
+          self.fileid_to_distinct_neighbors[n] = nn
+    # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
+    # Now, all that's left is to handle the marking!
+    print(f"[Action] Moving old version to Old Versions...")
+    move_gfile(selected_to_not['id'], (OLD_VERSIONS_FOLDER_ID, None))  
+    return
   
   def mark_distinct(self, file_a: str, file_b: str):
     """Writes to the DB the fact that file_a and file_b are distinctFrom eachother"""
@@ -721,47 +844,70 @@ class FileDistinctionManager:
       return
     if file_b not in self.fileid_to_distinct_neighbors:
       file_a, file_b = file_b, file_a
+    actual_file_a = self.gcache.get_item(file_a)
+    actual_file_b = self.gcache.get_item(file_b)
+    file_b_points_to = actual_file_b['properties']['distinctFrom']
+    print(f"Adding {file_a} to the {file_b} cluster:")
+    for other_file in self.fileid_to_distinct_neighbors[file_b]:
+      actual_other_file = self.gcache.get_item(other_file)
+      decision = is_duplicate_prompt(
+        actual_file_a,
+        actual_other_file,
+      )
+      if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+        continue
+      return self.handle_close_pair_decision(
+        decision,
+        actual_file_a,
+        actual_other_file,
+      )
     if file_a not in self.fileid_to_distinct_neighbors:
-      # file_a is new, but file_b is part of a group already
-      print(f"Adding {file_a} to the {file_b} cluster:")
-      actual_file_a = self.gcache.get_item(file_a)
-      decisions = dict()
-      file_pointing_to_b = None
-      for other_file in self.fileid_to_distinct_neighbors[file_b]:
-        actual_other_file = self.gcache.get_item(other_file)
-        if actual_other_file['properties']['distinctFrom'] == file_b:
-          file_pointing_to_b = actual_other_file
-        decisions[other_file] = is_duplicate_prompt(
-          actual_other_file,
-          actual_file_a,
-        )
-      if all(decision == ClosePairDecision.THEY_ARE_DISTINCT for decision in decisions.values()):
-        # Easy case. Just add it to the group
-        self._write_pointer(file_pointing_to_b['id'], file_a)
-        self._write_pointer(file_a, file_b)
-        self.fileid_to_distinct_neighbors[file_a] = self.fileid_to_distinct_neighbors[file_b].copy()
-        self.fileid_to_distinct_neighbors[file_a].add(file_b)
-        for other_fid in self.fileid_to_distinct_neighbors[file_a]:
-          self.fileid_to_distinct_neighbors[other_fid].add(file_a)
-        return
-      import ipdb
-      print("Teach me how to do a complex insertion")  
-      ipdb.set_trace()
-    
-    import ipdb
-    print("Teach FileDistinctionManager how to handle merging two cycles")  
-    ipdb.set_trace()
-    
-    
+      # file_a is distinct from the entire file_b cluster
+      # and has no cluster of its own, so just add it to the group
+      self._write_pointer(file_a, file_b_points_to)
+      self._write_pointer(file_b, file_a)
+      self.fileid_to_distinct_neighbors[file_a] = self.fileid_to_distinct_neighbors[file_b].copy()
+      self.fileid_to_distinct_neighbors[file_a].add(file_b)
+      for other_fid in self.fileid_to_distinct_neighbors[file_a]:
+        self.fileid_to_distinct_neighbors[other_fid].add(file_a)
+      return
+    # else, file_a has its own cluster
+    print(f"Adding {file_b} to the {file_a} cluster:")
+    for other_file in self.fileid_to_distinct_neighbors[file_a]:
+      actual_other_file = self.gcache.get_item(other_file)
+      decision = is_duplicate_prompt(
+        actual_file_b,
+        actual_other_file,
+      )
+      if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+        continue
+      return self.handle_close_pair_decision(
+        decision,
+        actual_file_b,
+        actual_other_file,
+      )
+    # At this point we have two clusters and all are distinct, so merge them
+    self._write_pointer(file_b, actual_file_a['properties']['distinctFrom'])
+    self._write_pointer(file_a, file_b_points_to)
+    super_cluster = self.fileid_to_distinct_neighbors[file_a] | \
+      self.fileid_to_distinct_neighbors[file_b] | set([file_a, file_b])
+    for n in super_cluster:
+      nn = super_cluster.copy()
+      nn.remove(n)
+      self.fileid_to_distinct_neighbors[n] = nn
+    return
   
   def _write_pointer(self, from_id: str, to_id: str | None):
     """Commits this new pointer to the DB"""
     if to_id is not None:
       assert re.fullmatch(GFIDREGEX, to_id), f"_write_pointer got a non-ID: {to_id}"
+    print(f"[Info] Marking {from_id} distinctFrom {to_id}")
     self.gcache.write_property(from_id, 'distinctFrom', to_id)
   
   def _make_new_cycle(self, nodes: Iterable[str]) -> dict[str, str]:
     """Takes a collection of nodes and writes them as a cycle to the DB.
+
+    NOTE: Does not update self.fileid_to_distinct_neighbors (hence an _method)
     
     Returns: the pointers map of which were made to point to which."""
     node_iter = iter(nodes)
@@ -778,7 +924,7 @@ class FileDistinctionManager:
     return ret
 
 
-  def fix_pointers(self, pointers: dict[str, str]) -> dict[str, str]:
+  def _fix_pointers(self, pointers: dict[str, str]) -> dict[str, str]:
     """Takes a dictionary of file ids to the file ids they point to
     It ensures that there are no dangling nodes, writing corrections to the DB
     as necessary and it returns the cleaned graph.
@@ -808,7 +954,7 @@ class FileDistinctionManager:
           added_down.add(n)
         new_pointers = self._make_new_cycle(added_up | added_down)
         pointers.update(new_pointers)
-        return self.fix_pointers(pointers)
+        return self._fix_pointers(pointers)
     for k in pointers.keys():
       if k not in parents:
         leaf = k
@@ -826,11 +972,11 @@ class FileDistinctionManager:
         if leaf == k:
           self._write_pointer(leaf, None)
           del pointers[k]
-          return self.fix_pointers(pointers)
+          return self._fix_pointers(pointers)
         else:
           self._write_pointer(leaf, k)
           pointers[leaf] = k
-          return self.fix_pointers(pointers)
+          return self._fix_pointers(pointers)
     return pointers
   
   def clear_distinctions_from(self, file_id: str, pointing_to: str = None):
@@ -845,14 +991,10 @@ class FileDistinctionManager:
       del self.fileid_to_distinct_neighbors[file_id]
       del self.fileid_to_distinct_neighbors[neighbor]
       return
-    with self.gcache._lock:
-      self.gcache.cursor.execute("SELECT file_id FROM item_properties WHERE key = 'distinctFrom' AND value = ?", (file_id,))
-      pointing_neighbor = self.gcache.cursor.fetchone()['file_id']
+    pointing_neighbor = fetch_distinct_file_pointing_to(self.gcache, file_id)
     assert pointing_neighbor in neighbors
     if not pointing_to:
-      with self.gcache._lock:
-        self.gcache.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
-        pointing_to = self.gcache.cursor.fetchone()['value']
+      pointing_to = fetch_files_distinction_pointer(self.gcache, file_id)
     assert pointing_to in neighbors
     assert pointing_to != pointing_neighbor
     self._write_pointer(pointing_neighbor, pointing_to)
@@ -862,13 +1004,11 @@ class FileDistinctionManager:
     del self.fileid_to_distinct_neighbors[file_id]
 
 def move_distinctions_off_file(gc: local_gdrive.DriveCache, file_id: str) -> None:
-  with gc._lock:
-    gc.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
-    pointing_to = gc.cursor.fetchone()
+  pointing_to = fetch_files_distinction_pointer(gc, file_id)
   if not pointing_to:
     return
   distinctions = FileDistinctionManager(gc)
-  distinctions.clear_distinctions_from(file_id, pointing_to['value'])
+  distinctions.clear_distinctions_from(file_id, pointing_to)
 
 gcache.register_trash_callback(move_distinctions_off_file)
 

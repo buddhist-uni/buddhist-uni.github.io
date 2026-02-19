@@ -423,7 +423,7 @@ def save_all_drive_texts(parallelism=16, sample_size=None, min_size=0, max_size=
             save_pdf_text_for_drive_file,
             pdf_files,
             max_workers=parallelism,
-            chunksize=min(4, max(1, int(len(pdf_files)/parallelism/2))),
+            chunksize=1,
         )
     if len(epub_files) > 0:
         print(f"Downloading {len(epub_files)} epubs and extracting their text...")
@@ -431,7 +431,7 @@ def save_all_drive_texts(parallelism=16, sample_size=None, min_size=0, max_size=
             save_epub_text_for_drive_file,
             epub_files,
             max_workers=parallelism,
-            chunksize=min(4, max(1, int(len(epub_files)/parallelism/2))),
+            chunksize=1,
         )
 
 
