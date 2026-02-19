@@ -10,11 +10,9 @@ if __name__ == '__main__':
   )
   parser.add_argument(
     'gfile',
-    nargs=1,
   )
   parser.add_argument(
     'lfile',
-    nargs=1,
     type=Path,
   )
   args = parser.parse_args()

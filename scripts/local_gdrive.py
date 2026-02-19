@@ -411,6 +411,18 @@ class DriveCache:
         self.cursor.execute("SELECT * FROM drive_items WHERE "+query, data)
         rows = self.cursor.fetchall()
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+
+    @locked
+    def trash_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+        """
+        Run a query on the trash bin and return the matching rows.
+        
+        Returns:
+            A list of rows as Google API Style dicts
+        """
+        self.cursor.execute("SELECT * FROM trashed_drive_items WHERE "+query, data)
+        rows = self.cursor.fetchall()
+        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
     
     @locked
     def parent_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
@@ -517,6 +529,9 @@ class DriveCache:
 
     def get_items_with_md5(self, md5: str) -> List[Dict[str, Any]]:
         return self.sql_query("md5_checksum = ?", (md5,))
+
+    def get_trashed_items_with_md5(self, md5: str) -> List[Dict[str, Any]]:
+        return self.trash_sql_query("md5_checksum = ?", (md5,))
         
     def get_children(self, parent_id: str) -> List[Dict[str, Any]]:
         return self.sql_query("parent_id = ?", (parent_id,))

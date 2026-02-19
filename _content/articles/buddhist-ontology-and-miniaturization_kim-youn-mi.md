@@ -8,7 +8,7 @@ drive_links:
 course: bart
 tags:
   - medieval
-  - devas
+  - deva
 year: 2017
 month: dec
 journal: ijbtc

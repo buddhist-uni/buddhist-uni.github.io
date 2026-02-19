@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/1eFIm-GPNZ-EZhVf0zco-qCPKLxNLD01P/view?usp=sharing"
   - "https://drive.google.com/file/d/1v9O1Ywjjak5qtF-O9r8Iv9CBdAdcPkW6/view?usp=drive_link"
 formats: [pdf, epub]
-course: feelings
+course: feeling
 tags:
   - problems
 olid: OL58382790M

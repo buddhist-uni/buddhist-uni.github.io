@@ -156,6 +156,14 @@ if cli_args.init:
   def process_local_file(fp: Path):
     remote_file = remote_files_by_name.get(fp.name)
     if not remote_file:
+      remote_file = gdrive.gcache.get_trashed_items_with_md5(md5(fp))
+      if remote_file:
+        print(f"    Deleting already deleted {fp.name}")
+        # fp.unlink()
+        # For now just move it out to be on the safe side...
+        fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
+        return
+    if not remote_file:
       remote_file = gdrive.remote_file_for_local_file(
         fp,
         folder_slugs,
