@@ -390,7 +390,7 @@ def _save_text_for_drive_file(
         print(e)
         normalizedtextfile.write_bytes(b'\x80\x04N.') # mark as no data
 
-def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=150000000, all_files=None):
+def save_all_drive_texts(parallelism=16, sample_size=None, min_size=0, max_size=150000000, all_files=None):
     """If sample_size is None, goes from smaller to larger files,
     otherwise a random sample is chosen
     
@@ -423,7 +423,7 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
             save_pdf_text_for_drive_file,
             pdf_files,
             max_workers=parallelism,
-            chunksize=4,
+            chunksize=1,
         )
     if len(epub_files) > 0:
         print(f"Downloading {len(epub_files)} epubs and extracting their text...")
@@ -431,7 +431,7 @@ def save_all_drive_texts(parallelism=6, sample_size=None, min_size=0, max_size=1
             save_epub_text_for_drive_file,
             epub_files,
             max_workers=parallelism,
-            chunksize=4,
+            chunksize=1,
         )
 
 

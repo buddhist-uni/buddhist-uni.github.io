@@ -4,14 +4,13 @@ from tag_predictor import TagPredictor, normalize_text, DATA_DIRECTORY
 from yaspin import yaspin
 import numpy as np
 import numpy.typing as npt
-from sklearn.metrics.pairwise import cosine_similarity
 from os import cpu_count
 import io
-from pathlib import Path
 import joblib
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
-
+import functools
 from scipy.sparse import vstack
+from strutils import prompt, input_with_prefill
 
 # These parallel arrays contain the global database we match against
 # Call `load()` to populate these
@@ -24,6 +23,8 @@ google_files = None
 filesizes: list[int]
 filesizes = None # The size of the picklefiles
 
+DECISION_HISTORY_FILE = DATA_DIRECTORY.joinpath('similar_file_decisions.pkl')
+
 MIN_PICKLE_SIZE_TO_COMPARE = 400 # bytes. ~1 page of compressed, normalized text
 MIN_VOCAB_SIZE_TO_COMPARE = 120 # words. ~1 short page of stemmed text
 MAX_FILE_TO_TEXT_RATIO = 3000 # 1 char extracted per this many PDF bytes. Worse than that implies a mostly image PDF
@@ -35,6 +36,33 @@ BASELINE_OFFSET = 19
 NORMALIZATION_DIVISOR = -3
 MIN_TITLE_SIM = 0.1
 MIN_CONTENT_SIM = 0.5
+
+def cache_locally(subdir_name: str):
+  def decorator(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+      DIR = DATA_DIRECTORY.joinpath(f'.cache/{subdir_name}')
+      CACHE_KEY_FILE = DIR.joinpath('key.pkl')
+      CACHE_FILE = DIR.joinpath('value.pkl')
+
+      if DIR.is_dir():
+        if CACHE_KEY_FILE.is_file():
+          try:
+            old_key = joblib.load(CACHE_KEY_FILE)
+            if list(old_key) == list(picklefiles) and CACHE_FILE.is_file():
+              return joblib.load(CACHE_FILE)
+          except Exception:
+            pass
+      else:
+        DIR.mkdir(parents=True)
+
+      ret = func(*args, **kwargs)
+
+      joblib.dump(ret, CACHE_FILE)
+      joblib.dump(picklefiles, CACHE_KEY_FILE)
+      return ret
+    return wrapper
+  return decorator
 
 def find_matching_files(work_title: str, authors: str | list[str], file_contents: str) -> list[tuple[dict, float]]:
   """
@@ -235,9 +263,6 @@ def all_files_within(needle: str, min_similarity: float) -> list[tuple[str, floa
     for i in sorted_matching_idxs
   ]
 
-# We have to load the tag_predictor outside of `load` so that
-# tqdm_process_map can use it in _load_pickle. New processes load this module from "scratch"
-# and don't have access to the "local" tag_predictor variable in the parent's `load`.
 tag_predictor: TagPredictor
 tag_predictor = None
 with yaspin(text="Loading tag predictor..."):
@@ -249,56 +274,26 @@ def _load_pickle(f):
       normalized_text = ''
     return tag_predictor.tfidf_vectorize_texts([normalized_text], normalized=True)[0]
 
-def _load_embeddings_for_pickles(pickles: list[Path]):
-  # TODO support partial caching?
-  DIR = DATA_DIRECTORY.joinpath('.cache/load_embeddings')
-  cache_key = pickles
-  CACHE_KEY_FILE = DIR.joinpath('key.pkl')
-  CACHE_FILE = DIR.joinpath('value.pkl')
-  if DIR.is_dir():
-    if CACHE_KEY_FILE.is_file():
-      old_key = joblib.load(CACHE_KEY_FILE)
-      if old_key == cache_key and CACHE_FILE.is_file():
-        return joblib.load(CACHE_FILE)
-  else:
-    DIR.mkdir(parents=True)
+@cache_locally('load_embeddings')
+def _load_embeddings_for_pickles():
   # vstack() ensures this list of arrays becomes a proper matrix
   # Note this takes a couple minutes to load even with 6 workers
   # Therefor the caching logic
-  ret = vstack(list(tqdm_process_map(
+  return vstack(list(tqdm_process_map(
     _load_pickle,
-    pickles,
+    picklefiles,
     max_workers=cpu_count() or 6,
     unit='f',
     chunksize=100,
   )))
-  # Make sure we commit the value to file before the key
-  joblib.dump(ret, CACHE_FILE)
-  joblib.dump(cache_key, CACHE_KEY_FILE)
-  return ret
 
+@cache_locally('load_filesizes')
 def _load_filesizes() -> list[int]:
-  DIR = DATA_DIRECTORY.joinpath('.cache/load_filesizes')
-  cache_key = picklefiles
-  CACHE_KEY_FILE = DIR.joinpath('key.pkl')
-  CACHE_FILE = DIR.joinpath('value.pkl')
-  if DIR.is_dir():
-    if CACHE_KEY_FILE.is_file():
-      old_key = joblib.load(CACHE_KEY_FILE)
-      if list(old_key) == list(cache_key) and CACHE_FILE.is_file():
-        return joblib.load(CACHE_FILE)
-  else:
-    DIR.mkdir(parents=True)
-  # vstack() ensures this list of arrays becomes a proper matrix
   # Note this takes a couple minutes to load even with 6 workers
   # Therefor the caching logic
-  ret = [
+  return [
      len(joblib.load(fp)) for fp in picklefiles
   ]
-  # Make sure we commit the value to file before the key
-  joblib.dump(ret, CACHE_FILE)
-  joblib.dump(cache_key, CACHE_KEY_FILE)
-  return ret
 
 
 def load(create_new_pickles=False):
@@ -320,7 +315,7 @@ def load(create_new_pickles=False):
   print(f"Pickles grabbed for {len(picklefiles)} pdf files")
 
   print("Loading embeddings...")
-  corpus_embeddings = _load_embeddings_for_pickles(picklefiles)
+  corpus_embeddings = _load_embeddings_for_pickles()
   print(f"Loaded {np.shape(corpus_embeddings)[0]} embeddings")
   print("Checking file sizes...")
   row_nnzs = np.diff(corpus_embeddings.indptr)
@@ -347,152 +342,112 @@ def load(create_new_pickles=False):
   }
   print(f"Trimmed down to {np.shape(corpus_embeddings)[0]} checkable embeddings")
 
+def _calc_sim_chunk(indices):
+  start, end = indices
+  # Efficiently compute a chunk of the self-similarity matrix
+  # Uses global corpus_embeddings via Copy-On-Write (COW) in forked processes
+  # Returns a dense chunk (start-end, N)
+  return (corpus_embeddings[start:end] @ corpus_embeddings.T).toarray()
 
-def _find_nearest_neighbors_batch(indices):
-  start_idx, end_idx = indices
-  batch = corpus_embeddings[start_idx:end_idx]
-  # Compute cosine similarity
-  similarities = cosine_similarity(batch, corpus_embeddings)
-  
-  # Mask self-similarity
-  # For the k-th document in the batch (index k), its global index is start_idx + k
-  # We want to set similarities[k, start_idx + k] = -1
-  rows = np.arange(similarities.shape[0])
-  cols = np.arange(start_idx, end_idx)
-  similarities[rows, cols] = -1
-  
-  # Find nearest neighbors
-  nearest_indices = np.argmax(similarities, axis=1)
-  nearest_similarities = similarities[rows, nearest_indices]
-  
-  return nearest_indices, nearest_similarities
-
-def find_nearest_neighbors() -> tuple[np.ndarray, np.ndarray]:
+@cache_locally('similarity_matrix')
+def calculate_similarity_matrix() -> npt.NDArray[np.float64]:
   """
-  Finds the nearest neighbor for each document in the corpus sparse matrix.
+  Calculates the similarity matrix for the corpus.
+
+  Assumes that `corpus_embeddings` is already loaded and normalized.
   
   Returns:
   --------
-  nearest_indices : np.ndarray
-    Array of shape (n_documents,) with the index of the nearest neighbor for each document
-  nearest_similarities : np.ndarray
-    Array of shape (n_documents,) with the cosine similarity to the nearest neighbor
+  An upper-triangular similarity matrix, with the self-similarity (diagonal) scores set to 0.
   """
-  DIR = DATA_DIRECTORY.joinpath('.cache/nearest_neighbors')
-  CACHE_KEY_FILE = DIR.joinpath('key.pkl')
-  CACHE_FILE = DIR.joinpath('value.pkl')
-  if DIR.is_dir():
-    if CACHE_KEY_FILE.is_file():
-      old_key = joblib.load(CACHE_KEY_FILE)
-      if list(old_key) == list(picklefiles) and CACHE_FILE.is_file():
-        return joblib.load(CACHE_FILE)
-  else:
-    DIR.mkdir(parents=True)
-  
+  print("WARNING: This next step takes several minutes and all your RAM.")
+  while not prompt("Have you closed your IDE and Chrome?"):
+    print("Then do it!")
+  print("Calculating similarity matrix...")
   n_docs = corpus_embeddings.shape[0]
-  num_workers = min(cpu_count() or 1, 5) # 5 is as many workers as I have RAM for...
-  N_BATCHES = min(int(n_docs / 20), 500)
+  chunk_size = 400
   
-  # Split into batches
-  split_indices = np.linspace(0, n_docs, N_BATCHES + 1, dtype=int)
-  batches = []
-  for i in range(len(split_indices) - 1):
-      s, e = split_indices[i], split_indices[i+1]
-      if s < e:
-          batches.append((s, e))
+  chunks = [
+      (i, min(i + chunk_size, n_docs))
+      for i in range(0, n_docs, chunk_size)
+  ]
   
-  # Note: this takes >20 mins to load
-  results = tqdm_process_map(
-      _find_nearest_neighbors_batch,
-      batches,
-      max_workers=num_workers,
-      chunksize=1
+  sim_chunks = tqdm_process_map(
+      _calc_sim_chunk,
+      chunks,
+      max_workers=cpu_count(),
+      chunksize=1,
   )
   
-  # Aggregate results
-  all_indices = []
-  all_sims = []
-  for indices, sims in results:
-      all_indices.append(indices)
-      all_sims.append(sims)
-      
-  ret = (np.concatenate(all_indices), np.concatenate(all_sims), )
-  joblib.dump(ret, CACHE_FILE)
-  joblib.dump(picklefiles, CACHE_KEY_FILE)
-  return ret
+  print("Constructing full similarity matrix...")
+  # Stack dense chunks into the full (N, N) matrix (~3.7GB)
+  full_sim = np.vstack(sim_chunks)
+  del sim_chunks
+  
+  # Keep only upper triangle and zero out diagonal
+  full_sim = np.triu(full_sim)
+  np.fill_diagonal(full_sim, 0)
+  
+  return full_sim
 
-def is_duplicate_prompt(idx):
-  import gdrive
-  from strutils import system_open, radio_dial
-  gfa = picklefiles[idx].stem
-  jdx = nearest_indices[idx]
-  gfb = picklefiles[jdx].stem
-  fa = google_files[idx]
-  fb = google_files[jdx]
-  if fa['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
-      return 'old a'
-  if fb['parent_id'] == '1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga':
-      return 'old b'
-  pa = gdrive.gcache.get_item(fa['parent_id'])
-  pb = gdrive.gcache.get_item(fb['parent_id'])
-  def _print_file(gfile, gparent):
-    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {gdrive.DRIVE_LINK.format(gparent['id'])}")
-  _print_file(fa, pa)
-  print(f"  was found to be {nearest_similarities[idx]} similar to")
-  _print_file(fb, pb)
-  while True:
-    options = ["Open both", "A is old version", "B is old version", "Exact dupe", "Different files"]
-    match radio_dial(options):
-      case 0:
-          system_open(gdrive.DRIVE_LINK.format(gfa))
-          system_open(gdrive.DRIVE_LINK.format(gfb))
-      case 1:
-          return 'old a'
-      case 2:
-          return 'old b'
-      case 3:
-          return 'either'
-      case 4:
-          return False
+def find_close_pairs(similarity_matrix, min_similarity=0.9):
+  """
+  Finds the pairs of documents that are most similar to each other.
+  
+  Returns:
+  --------
+  list of tuples (idx1, idx2, similarity)
+  """
+  assert min_similarity > 0 and min_similarity <= 1, f"min_similarity must be between 0 and 1, got {min_similarity}"
+  matching_idxs = np.where(similarity_matrix >= min_similarity)
+  return list(zip(matching_idxs[0], matching_idxs[1], similarity_matrix[matching_idxs]))
 
 if __name__ == "__main__":
-  load(False)
+  import random
   import gdrive
-  print("Loading nearest neighbors...")
-  nearest_indices, nearest_similarities = find_nearest_neighbors()
-  size_similarities = [
-     abs(filesizes[idx] - filesizes[jdx])/max(filesizes[idx], filesizes[jdx])
-     for idx, jdx in enumerate(nearest_indices)
-  ]
-  import matplotlib.pyplot as plt
-  DECISIONS_FILE = DATA_DIRECTORY.joinpath('decisions.pkl')
-  if DECISIONS_FILE.is_file():
-     decisions = joblib.load(DECISIONS_FILE)
+  load(True)
+  print("Successfully loaded the latest PDF embeddings!")
+  if not prompt("Would you like to review the embeddings for any duplicates?"):
+    print("Okay then :)")
+    exit(0)
+  min_similarity = -1
+  while min_similarity < 0 or min_similarity > 1:
+    min_similarity = float(input_with_prefill("Min similarity: ", "0.95", float))
+  print("Loading the similarity matrix...")
+  similarity_matrix = calculate_similarity_matrix()
+  print("Selecting close neighboring pairs...")
+  close_pairs = find_close_pairs(similarity_matrix, min_similarity=min_similarity)
+  del similarity_matrix
+  MAX_TO_CONSIDER = 1000
+  if len(close_pairs) > MAX_TO_CONSIDER:
+    print(f"INFO: Restricting to {MAX_TO_CONSIDER} pairs of the {len(close_pairs)} found")
+    close_pairs = random.sample(close_pairs, MAX_TO_CONSIDER)
   else:
-     decisions = dict()
-  for idx in range(len(nearest_indices)):
-       if nearest_similarities[idx] < 0.96:
-           continue
-       if nearest_similarities[idx] > 1:
-           continue
-       jdx = nearest_indices[idx]
-       key = (picklefiles[idx].stem, picklefiles[jdx].stem, )
-       if jdx < idx or key in decisions:
-           continue
-       decisions[key] = is_duplicate_prompt(idx)
-       joblib.dump(decisions, DECISIONS_FILE)
-       print(f"So far made {len(decisions)} decisions")
-       if len(decisions) % 10 == 0:
-           stacked = [
-             [nearest_similarities[gid_to_idx[gf[0]]] for (gf, dec) in decisions.items() if
-              (str(dec) == 'either') == target[0] and
-              # make sure that the pair we decided on is still considered a nearest pair
-              gf[0] in gid_to_idx and gf[1] in gid_to_idx and nearest_indices[gid_to_idx[gf[0]]] == gid_to_idx[gf[1]]
-              # also split by how close they are in size
-              and target[1] == (size_similarities[gid_to_idx[gf[0]]] < 0.1)
-             ]
-             for target in [(False,True), (False,False), (True,True), (True,False)] # the stacked choices
-           ]
-           plt.hist(stacked, stacked=True, bins=int(len(decisions)/10), color=['red','orange','blue','purple'])
-           plt.show()
+    random.shuffle(close_pairs)
+  all_decisions = []
+  if DECISION_HISTORY_FILE.exists():
+    all_decisions = joblib.load(DECISION_HISTORY_FILE)
+    assert isinstance(all_decisions, list), "Expected DECISION_HISTORY to be a list"
+  distinctions = gdrive.FileDistinctionManager()
+  close_pairs = [
+    (
+      google_files[idx],
+      google_files[jdx],
+      sim,
+    )
+    for idx, jdx, sim in close_pairs
+    if google_files[idx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and 
+    google_files[jdx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and
+    not distinctions.are_distinct(google_files[idx]['id'], google_files[jdx]['id'])
+  ]
+  print(f"Found {len(close_pairs)} close pairs that need review...")
+  done = 0
+  for gfa, gfb, sim in close_pairs:
+      done += 1
+      print(f"\n---{done}/{len(close_pairs)}\n")
+      decision = gdrive.is_duplicate_prompt(gfa, gfb, similariy=sim)    
+      all_decisions.append((decision, gfa, gfb, sim))
+      joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
+      distinctions.handle_close_pair_decision(decision, gfa, gfb)
+
 

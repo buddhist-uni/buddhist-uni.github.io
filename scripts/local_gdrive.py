@@ -1,8 +1,9 @@
 #!/bin/python3
+from __future__ import annotations
 
 import sqlite3
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Callable, TypedDict
 from time import sleep
 
 import gdrive_base
@@ -54,6 +55,9 @@ def locked(func):
             self._lock.release()
     return wrapper
 
+class DriveCacheCallbackMap(TypedDict):
+    trash: list[Callable[[DriveCache, str], None]]
+
 class DriveCache:
     """
     Manages a local SQLite cache for Google Drive file/folder metadata.
@@ -85,6 +89,7 @@ class DriveCache:
         self.conn.row_factory = sqlite3.Row
         self.cursor = self.conn.cursor()
         self._create_table()
+        self.callbacks: DriveCacheCallbackMap = {"trash": []}
     
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
@@ -609,8 +614,15 @@ class DriveCache:
     #  consequence to the cache without having to perform a full .update()
     ########
 
+    def register_trash_callback(self, callback_func: Callable[[DriveCache, str]]):
+        """Will call your `callback_func` with the `file_id` before trashing it."""
+        self.callbacks['trash'].append(callback_func)
+
     def trash_file(self, file_id: str):
         """Actually performs the tashing and updates the cache"""
+        for callback_func in self.callbacks['trash']:
+            callback_func(self, file_id)
+
         gdrive_base.trash_drive_file(file_id)
         with self._lock:
             self._move_to_trash(file_id)
@@ -640,6 +652,21 @@ class DriveCache:
         gdrive_base.rename_file(file_id, new_name)
         with self._lock:
             self.cursor.execute("UPDATE drive_items SET name = ? WHERE id = ?", (new_name, file_id))
+            self.conn.commit()
+    
+    def write_property(self, file_id: str, prop_name: str, prop_val: str | None):
+        """Write None to a property to delete it"""
+        gdrive_base.write_property(file_id, prop_name, prop_val)
+        with self._lock:
+            if prop_val is None:
+                self.cursor.execute("DELETE FROM item_properties WHERE file_id = ? AND key = ?", (file_id, prop_name, ))
+            else:
+                self.cursor.execute("""
+                    INSERT INTO item_properties (file_id, key, value)
+                    VALUES (?, ?, ?)
+                    ON CONFLICT(file_id, key) DO UPDATE SET
+                    value = excluded.value
+                """, (file_id, prop_name, prop_val, ))
             self.conn.commit()
     
     def create_folder(self, folder_name: str, parent_id: str) -> str:
