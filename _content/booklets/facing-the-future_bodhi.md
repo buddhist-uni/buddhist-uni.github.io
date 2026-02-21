@@ -4,7 +4,7 @@ authors:
   - bodhi
 external_url: "https://www.bps.lk/olib/wh/wh438_Bodhi_Facing-the-Future--Four-Essays.html"
 drive_links:
-  - "https://drive.google.com/file/d/1ezkZUOJPw00y6yDIx83hZSuBRKxOT5ey/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1TTRFz3_S4QENsUCA_GfpHMe4vU0SNTV0/view?usp=drivesdk"
   - "https://drive.google.com/file/d/10M9RPdgmZcBtZaT1co5ZBs6HitbPNJE9/view?usp=drivesdk"
 file_links:
   - "smallpdfs/bodhi_2000_facing-the-future.pdf"

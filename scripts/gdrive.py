@@ -435,9 +435,17 @@ def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str,
       print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
     if not dry_run:
       gcache.trash_file(f['id'])
+  longest_name = max((f['name'] for f in files), key=lambda n: len(n))
+  if len(files_to_keep) == 1:
+    if len(files_to_keep[0]['name']) < len(longest_name):
+      if verbose:
+        print(f"    Renaming kept file to longer name")
+      if not dry_run:
+        gcache.rename_file(files_to_keep[0]['id'], longest_name)
   return files_to_keep
 
 class IDSelectionReason(enum.StrEnum):
+  TAG_FOLDER = 'tag folder'
   IS_PUBLIC = 'is public'
   GENERIC_SUBFOLDER = 'generic subfolder'
   TAG_PRIORITY = 'tag priority'
@@ -496,7 +504,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
     if num_slugs == 1:
       # if there's only one file in a slugged folder, keep that one
       # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.IS_PUBLIC
+      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.TAG_FOLDER
 
   #####
   # Don't trash any publicly-launched files
@@ -672,21 +680,21 @@ def is_duplicate_prompt(fa: dict, fb: dict, similariy: float=None) -> ClosePairD
       gparent = {'name': 'Root Folder', 'id': '../my-drive'}
     print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {FOLDER_LINK.format(gparent['id'])}")
   if not similariy:
-    print("Are these two files the same?")
+    print("Which of these two files is the better version?")
   _print_file(fa, pa)
   if similariy:
     print(f"  was found to be {similariy:.3f} similar to")
   _print_file(fb, pb)
   while True:
-    options = ["Open both", "A is old version", "B is old version", "Exact dupe", "Different files"]
+    options = ["Open both", "A is better (B is an older version)", "B is better (A is an older version)", "Exactly the same file", "Completely different files"]
     match radio_dial(options):
       case 0:
           system_open(DRIVE_LINK.format(fa['id']))
           system_open(DRIVE_LINK.format(fb['id']))
       case 1:
-          return ClosePairDecision.FIRST_IS_OLD_VERSION
-      case 2:
           return ClosePairDecision.SECOND_IS_OLD_VERSION
+      case 2:
+          return ClosePairDecision.FIRST_IS_OLD_VERSION
       case 3:
           return ClosePairDecision.THEY_ARE_THE_SAME
       case 4:
@@ -817,8 +825,10 @@ class FileDistinctionManager:
         super_cluster = self.fileid_to_distinct_neighbors[select_ids_to_keep['id']] | \
           self.fileid_to_distinct_neighbors[selected_to_not['id']]
         super_cluster.add(selected_to_keep['id'])
-        # TODO: There's a more efficient way to do this with snipping
-        self._make_new_cycle(super_cluster)
+        points_to_not = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
+        assert points_to_not in self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        self._write_pointer(points_to_not, selected_to_keep['properties']['distinctFrom'])
+        self._write_pointer(selected_to_keep['id'], selected_to_not['properties']['distinctFrom'])
         self._write_pointer(selected_to_not['id'], None)
         for n in super_cluster:
           nn = super_cluster.copy()
@@ -827,7 +837,12 @@ class FileDistinctionManager:
     # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
     # Now, all that's left is to handle the marking!
     print(f"[Action] Moving old version to Old Versions...")
-    move_gfile(selected_to_not['id'], (OLD_VERSIONS_FOLDER_ID, None))  
+    move_gfile(selected_to_not['id'], (OLD_VERSIONS_FOLDER_ID, None))
+    if len(selected_to_keep['name']) < len(selected_to_not['name']):
+      if prompt("Swap file names?", default='y'):
+        print("[Action] Swapping file names...")
+        self.gcache.rename_file(selected_to_keep['id'], selected_to_not['name'])
+        self.gcache.rename_file(selected_to_not['id'], selected_to_keep['name'])
     return
   
   def mark_distinct(self, file_a: str, file_b: str):

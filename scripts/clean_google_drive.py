@@ -23,59 +23,6 @@ from gdrive import (
 )
 import website
 
-argument_parser = argparse.ArgumentParser(
-  formatter_class=argparse.RawDescriptionHelpFormatter,
-  prog='python3 clean-google-drive.py',
-  description=textwrap.dedent('''\
-    A script to clean up the Google Drive Library.
-    
-    It performs several automatable, routine cleanup tasks, to
-    enforce the invariants I've tried (all-too-humanly) to keep.
-    
-    By default, the script performs shortcuts and duplicates checks.
-    Use --sharing to turn on the sharing check as well.
-  '''),
-)
-argument_parser.add_argument(
-  '-v', '--verbose', action='store_true',
-)
-argument_parser.add_argument(
-  '--extensions', action=argparse.BooleanOptionalAction,
-  help="Whether to fix files whose mimetype != their extension",
-  default=True,
-)
-argument_parser.add_argument(
-  '--shortcuts', action=argparse.BooleanOptionalAction,
-  help="Whether to create shortcuts in private folders for public files",
-  default=True,
-)
-argument_parser.add_argument(
-  "--sharing", action=argparse.BooleanOptionalAction,
-  help="Whether to share public files with the public",
-  default=False,
-)
-# TODO: Add a step for cleaning up old "Old Versions" files
-# Note that this will require expanding the app scope to
-# include the Google Drive Activity API:
-#   https://www.googleapis.com/auth/drive.activity.readonly
-# as that's the only way to know when a file was moved in.
-# The Trello card has more details: https://trello.com/c/Avwkm76n
-# argument_parser.add_argument(
-#   "--old-cleanup", action=argparse.BooleanOptionalAction, dest="oldies",
-#   help="Whether to delete outdated 'Old Version' files",
-#   default=False,
-# )
-argument_parser.add_argument(
-  "--duplicates", action=argparse.BooleanOptionalAction,
-  help="Whether to remove duplicate files",
-  default=True,
-)
-argument_parser.add_argument(
-  "--pickles", action=argparse.BooleanOptionalAction,
-  help="Whether to clean up dangling pickle files",
-  default=True,
-)
-
 with yaspin(text="Loading website data..."):
   website.load()
 
@@ -394,6 +341,58 @@ def remove_dangling_pickles(verbose=True, dry_run=False):
   print(f"Deleted {deletes} of {len(all_pickles)} pickle files!")
 
 if __name__ == "__main__":
+  argument_parser = argparse.ArgumentParser(
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+    prog='python3 clean-google-drive.py',
+    description=textwrap.dedent('''\
+      A script to clean up the Google Drive Library.
+      
+      It performs several automatable, routine cleanup tasks, to
+      enforce the invariants I've tried (all-too-humanly) to keep.
+      
+      By default, the script performs shortcuts and duplicates checks.
+      Use --sharing to turn on the sharing check as well.
+    '''),
+  )
+  argument_parser.add_argument(
+    '-v', '--verbose', action='store_true',
+  )
+  argument_parser.add_argument(
+    '--extensions', action=argparse.BooleanOptionalAction,
+    help="Whether to fix files whose mimetype != their extension",
+    default=True,
+  )
+  argument_parser.add_argument(
+    '--shortcuts', action=argparse.BooleanOptionalAction,
+    help="Whether to create shortcuts in private folders for public files",
+    default=True,
+  )
+  argument_parser.add_argument(
+    "--sharing", action=argparse.BooleanOptionalAction,
+    help="Whether to share public files with the public",
+    default=False,
+  )
+  # TODO: Add a step for cleaning up old "Old Versions" files
+  # Note that this will require expanding the app scope to
+  # include the Google Drive Activity API:
+  #   https://www.googleapis.com/auth/drive.activity.readonly
+  # as that's the only way to know when a file was moved in.
+  # The Trello card has more details: https://trello.com/c/Avwkm76n
+  # argument_parser.add_argument(
+  #   "--old-cleanup", action=argparse.BooleanOptionalAction, dest="oldies",
+  #   help="Whether to delete outdated 'Old Version' files",
+  #   default=False,
+  # )
+  argument_parser.add_argument(
+    "--duplicates", action=argparse.BooleanOptionalAction,
+    help="Whether to remove duplicate files",
+    default=True,
+  )
+  argument_parser.add_argument(
+    "--pickles", action=argparse.BooleanOptionalAction,
+    help="Whether to clean up dangling pickle files",
+    default=True,
+  )
   arguments = argument_parser.parse_args()
   print("Will perform the following tasks:")
   print(f"  Extensions: {arguments.extensions}")

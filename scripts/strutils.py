@@ -403,7 +403,7 @@ def title_case(s: str) -> str:
   # If the ratio looks good, trust
   return s
 
-def prompt(question: str, default = None) -> bool:
+def prompt(question: str, default:str = None) -> bool:
     reply = None
     hint = "(y/n)"
     if default == "y":

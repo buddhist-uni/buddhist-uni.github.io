@@ -405,6 +405,10 @@ def find_close_pairs(similarity_matrix, min_similarity=0.9):
 if __name__ == "__main__":
   import random
   import gdrive
+  from clean_google_drive import remove_duplicate_files
+  print("Cleaning up files that are MD5 identical first...")
+  remove_duplicate_files()
+  print("Loading the latest PDF embeddings...")
   load(True)
   print("Successfully loaded the latest PDF embeddings!")
   if not prompt("Would you like to review the embeddings for any duplicates?"):
@@ -441,10 +445,22 @@ if __name__ == "__main__":
     not distinctions.are_distinct(google_files[idx]['id'], google_files[jdx]['id'])
   ]
   print(f"Found {len(close_pairs)} close pairs that need review...")
+  if len(close_pairs) > 0:
+    print("Don't forget to open your browser!")
   done = 0
   for gfa, gfb, sim in close_pairs:
       done += 1
       print(f"\n---{done}/{len(close_pairs)}\n")
+      # handle_close_pair_decisions can sometimes mark other pairs distinct
+      # or even move other files to the graveyard, so have to recheck here
+      if distinctions.are_distinct(gfa['id'], gfb['id']):
+        print("Already merged as distinct :)")
+        continue
+      gfa = gdrive.gcache.get_item(gfa['id'])
+      gfb = gdrive.gcache.get_item(gfb['id'])
+      if gdrive.OLD_VERSIONS_FOLDER_ID in [gfa['parent_id'], gfb['parent_id']]:
+        print("Already moved to Old Versions :)")
+        continue
       decision = gdrive.is_duplicate_prompt(gfa, gfb, similariy=sim)    
       all_decisions.append((decision, gfa, gfb, sim))
       joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
