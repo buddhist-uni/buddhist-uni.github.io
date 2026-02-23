@@ -10,6 +10,8 @@ import threading
 from time import sleep
 from enum import IntEnum
 from language_detection import LANGUAGE_DETECTOR, Language
+from strutils import author_name_to_normal
+import nearestpdf
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -67,15 +69,12 @@ def call_api(subpath: str, params: dict, retries=3):
       # Don't count this as a retry as the API has asked us to wait
       return call_api(subpath, params, retries=retries)
     case 500:
-      resp = response.json()
-      if 'capacity' in resp.get('message', ''):
-        if retries > 0:
-          print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
-          sleep(6)
-          return call_api(subpath, params, retries=retries-1)
-        else:
-          raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
-      raise NotImplementedError(f"Unknown 500 response: {resp.get('message', '')}")
+      if retries > 0:
+        print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
+        sleep(6)
+        return call_api(subpath, params, retries=retries-1)
+      else:
+        raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
     case 504:
       raise ValueError(f"Malformed request {params} to {subpath}")
     case _:
@@ -93,6 +92,23 @@ def current_timestamp() -> int:
   dt = datetime.now(timezone.utc)
   return int(dt.timestamp() * 1000)
 
+def matching_text_for_work(core_work: dict) -> str:
+  return f"{core_work.get('full_text', core_work.get('fullText', ''))} {core_work['title'] or ''} {core_work['abstract'] or ''}"
+
+def matching_authors_for_work(core_work: dict) -> list[str]:
+  authors = core_work['authors']
+  if not authors:
+    authors = core_work['contributors']
+  if not authors:
+    authors = []
+  if isinstance(authors, str):
+    authors = json.loads(authors)
+  assert isinstance(authors, list), f"Authors is {type(authors)}"
+  return [
+    author_name_to_normal(auth if isinstance(auth, str) else auth['name'])
+    for auth in authors
+  ]
+
 class CoreAPIWorksCache:
   """
   Manages a SQLite DB for "works" fetched from the Cambridge CORE API
@@ -109,7 +125,7 @@ class CoreAPIWorksCache:
   a multithreaded downloader.
   """
 
-  def __init__(self, db_path: str | Path, page_size=20):
+  def __init__(self, db_path: str | Path, page_size=24):
     """
     Connects to the SQLite DB at `db_path`
     """
@@ -171,6 +187,15 @@ class CoreAPIWorksCache:
       CREATE INDEX IF NOT EXISTS idx_work_id ON identifiers(work_id);
       CREATE INDEX IF NOT EXISTS idx_id_id ON identifiers(id);
     """
+    create_gfiles_table_sql = """
+      CREATE TABLE IF NOT EXISTS work_gfiles (
+        work_id TEXT NOT NULL,
+        gdrive_id TEXT NOT NULL,
+        pval REAL,
+        FOREIGN KEY(work_id) REFERENCES works(id),
+        PRIMARY KEY (work_id, gdrive_id)
+      );
+    """
 
     create_unfound_dois_table_sql = """
       CREATE TABLE IF NOT EXISTS unfound_dois (
@@ -206,6 +231,7 @@ class CoreAPIWorksCache:
     self.cursor.execute(create_works_table_sql)
     self.cursor.execute(create_identifiers_table_sql)
     self.cursor.executescript(create_id_table_indexes_sql)
+    self.cursor.execute(create_gfiles_table_sql)
     self.cursor.execute(create_journals_join_table_sql)
     self.cursor.executescript(create_journal_works_indexes_sql)
     self.cursor.execute(create_query_works_join_table_sql)
@@ -292,6 +318,8 @@ class CoreAPIWorksCache:
           "INSERT OR IGNORE INTO journals_works (work_id, journal_id) VALUES (?, ?)",
           (api_obj['id'], issn, ),
         )
+    
+    self.match_gfiles_to_work(api_obj)
 
     if tracking_query_id:
       # Associate this work with this query and bump the query's up_to date
@@ -301,7 +329,7 @@ class CoreAPIWorksCache:
     self.conn.commit()
   
   @locked
-  def register_query(self, query: str):
+  def register_query(self, query: str) -> int:
     """returns the id of the query, adding it to the DB if necessary"""
     assert "updatedDate" not in query, "Leave the updatedDate to me"
     try:
@@ -314,6 +342,18 @@ class CoreAPIWorksCache:
     ret = self.cursor.lastrowid
     self.conn.commit()
     return ret
+  
+  @locked
+  def register_gfile_for_work(self, work_id: str, gid: str, similarity: float=None):
+    assert similarity is None or (similarity >= 0 and similarity <= 1)
+    self.cursor.execute("""
+        INSERT INTO work_gfiles (work_id, gdrive_id, pval) VALUES (?, ?, ?)
+        ON CONFLICT(work_id, gdrive_id) DO UPDATE SET
+        pval = excluded.pval
+      """,
+      (work_id, gid, similarity,)
+    )
+    self.conn.commit()
   
   @locked
   def get_query(self, query_id: int) -> dict:
@@ -530,6 +570,39 @@ class CoreAPIWorksCache:
       (query_id, )
     )
     return [dict(row) for row in self.cursor.fetchall()]
+  
+  def match_gfiles_to_work(self, work: dict) -> int:
+    nearestpdf.load() # noop if already loaded
+    matches = nearestpdf.find_matching_files(
+      work['title'],
+      matching_authors_for_work(work),
+      matching_text_for_work(work),
+    )
+    for match in matches:
+      self.register_gfile_for_work(
+        work['id'],
+        match[0]['id'],
+        similarity=match[1],
+      )
+    return len(matches)
+
+  def match_gfiles_to_local_works(self):
+    with self._lock:
+      self.cursor.execute("""
+          SELECT works.* FROM works
+          LEFT JOIN work_gfiles ON works.id = work_gfiles.work_id
+          WHERE work_gfiles.work_id IS NULL
+        """,
+      )
+      works_to_find = [dict(row) for row in self.cursor.fetchall()]
+    from tqdm import tqdm
+    pbar = tqdm(works_to_find, unit='w')
+    found = 0
+    for work in pbar:
+      matches = self.match_gfiles_to_work(work)
+      if matches:
+        found += 1
+    print(f"Found Google Drive files for {found} works and added them to the DB")
   
   @locked
   def close(self):

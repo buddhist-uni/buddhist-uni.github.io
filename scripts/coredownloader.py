@@ -3,6 +3,7 @@
 import json
 import journals
 from yaspin import yaspin
+from typing import Any
 from tqdm import tqdm
 from local_core import (
   CoreAPIWorksCache,
@@ -20,20 +21,21 @@ TRACKING_ISSNS = [issn for val in journals.issns.values() for issn in val] # 268
 # but there's a lot of mess here: other languages, review articles... how to filter?
 
 # "Buddhist" articles that aren't for download
-MDPI_PROVIDER_ID = 22080 # 351
 ANTI_TRACKING_KEYWORDS = [
-  "1556-5068", # SSRN ISSN. 2 # registered as query 3
+  "\"1556-5068\"", # SSRN ISSN. 2 # registered as query 3
   "NFTs", # 166
   "blockchain", # 869 # registered as 4
   "documentType:review", # 1040
+  "title:review",
 ]
+TRACKING_QUERY_STR = "(title:Buddhist OR abstract:Buddhist) AND fullText:Buddhist"
+TRACKING_QUERY_STR += "".join(f" AND -{anti}" for anti in ANTI_TRACKING_KEYWORDS)
 
 core = CoreAPIWorksCache('/home/khbh/Desktop/core_api.db')
+TRACKING_QUERY = core.register_query(TRACKING_QUERY_STR)
 
-self_similarities = []
-self_plus_similarities = []
-differences = []
-title_similarities = []
+LOCAL_DOIS: dict[str, str]
+LOCAL_DOIS = dict() # mapping doi to drive file id
 
 for website_item in website.content:
   if website_item.formats[0] != 'pdf':
@@ -56,31 +58,20 @@ for website_item in website.content:
   ]
   core_work = None
   for doi in dois:
-    core_work = core.get_locally_from_doi(doi)
-    if core_work:
-      break
+    LOCAL_DOIS[doi] = drive_id
+
+print(f"Attempting to fetch {len(LOCAL_DOIS)} works by DOI...")
+bulk_works = core.bulk_get_by_doi(list(LOCAL_DOIS.keys()), max_per_batch=100)
+
+print(f"Associating {len(bulk_works)} Drive files from the website with their CORE Works...")
+# This ensures that we won't try to download anything the website knows about
+del bulk_works
+for doi, drive_id in LOCAL_DOIS.items():
+  core_work = core.get_locally_from_doi(doi)
   if not core_work:
     continue
-  if not core_work['full_text']:
-    continue
-  text_plus = f"{core_work['full_text']} {core_work['title']} {core_work['abstract'] or ''}"
-  authors = ''
-  try:
-    authors = [auth['name'] for auth in json.loads(core_work['authors'])]
-  except:
-    pass
-  matches = nearestpdf.find_matching_files(
-    core_work['title'],
-    authors,
-    text_plus,
-  )
-  drive_file = nearestpdf.google_files[nearestpdf.gid_to_idx[drive_id]]
-  if len(matches) == 1 and matches[0][0]['id'] == drive_id:
-    print("Got it with confidence", matches[0][1])
-  else:
-    import ipdb; ipdb.set_trace()
+  core.register_gfile_for_work(core_work['id'], drive_id, similarity=0.99)
 
-
-
-
+while core.load_another_page_from_query(TRACKING_QUERY) > 0:
+  print("Loading another page...")
 

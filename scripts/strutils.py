@@ -56,11 +56,6 @@ yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+
 yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
 yaml_key = re.compile(r"^[a-z_]+:.*")
 
-HOSTNAME_BLACKLIST = {
-  "www.questia.com",
-  "scholarbank.nus.edu.sg",
-}
-
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
 
 def git_grep(pattern: str) -> list[Path]:
@@ -657,38 +652,34 @@ def invert_inverted_index(index: dict) -> list:
 def text_from_index(index: dict) -> str:
   return " ".join(invert_inverted_index(index))
 
-# Makes the authors string for the work
-# https://docs.openalex.org/api-entities/works/work-object#authorships
-def authorstr(work: dict, maxn: int) -> str:
-    authors = list(map(lambda a: a['author']['display_name'].replace(',', ''), work['authorships']))
+def author_name_to_normal(maybe_flipped: str) -> str:
+  if ', ' not in maybe_flipped:
+    return maybe_flipped
+  sp = maybe_flipped.split(', ')
+  # is len(sp) > 2, we want to throw out sp[2:] anyway
+  # e.g. Thimme, David Gerhardt, 1970-
+  #  or  Tsomo, Karma Lekshe, PhD
+  return f"{sp[1]} {sp[0]}"
+
+def authorstr(work: dict, maxn: int=2) -> str:
+    """Given a CORE or OpenAlex work, gives the authors string for the filename"""
+    if 'authorships' in work:
+      # https://docs.openalex.org/api-entities/works/work-object#authorships
+      authors = list(map(lambda a: a['author']['display_name'], work['authorships']))
+      with_commas = [author for author in authors if ',' in author]
+      assert len(with_commas) == 0, f"Found authors with commas: {with_commas} (in work {work.get('id')})"
+    elif 'authors' in work:
+      # https://api.core.ac.uk/docs/v3#tag/Works/operation/optionsCustomWorks:~:text=List%20of%20author%20names
+      if isinstance(work['authors'], str):
+        authors = json.loads(work['authors'])
+      else:
+        authors = work['authors']
+      assert isinstance(authors, list)
+      authors = [author_name_to_normal(author['name']) for author in authors]
     if len(authors) > maxn:
       authors = authors[:(maxn-1)]
       authors.append('et al')
     return ", ".join(authors)
-
-def print_work(work: dict, indent=0):
-    s = "".join([" "]*indent)
-    try:
-      print(f"{s}Source: {work['primary_location']['source']['display_name']}")
-    except (TypeError, KeyError, ValueError):
-      print(f"{s}Source: ?")
-    print(f"{s}Year: {work['publication_year']}")
-    try:
-      print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
-    except (TypeError, KeyError, ValueError):
-      print(f"{s}Pages: ?")
-    print(f"{s}Cited By: {work['cited_by_count']}")
-    if work['abstract_inverted_index']:
-      print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
-    print(f"{s}Title: {work['title']}")
-    print(f"{s}Author(s): {authorstr(work, 6)}")
-    try:
-      if work['doi'] != work['open_access']['oa_url']:
-        print(f"{s}DOI: {work['doi']}")
-    except KeyError:
-      pass
-    print(f"{s}URL: {work['open_access']['oa_url']}")
-
 
 @cache
 def get_author_slugs():

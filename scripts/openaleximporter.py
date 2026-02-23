@@ -15,13 +15,16 @@ from strutils import (
    title_case,
    input_with_prefill,
    get_author_slug,
-   HOSTNAME_BLACKLIST,
    italics,
    MONTHS,
    radio_dial,
    invert_inverted_index,
+   authorstr,
+   text_from_index,
    system_open,
-   print_work,
+)
+from downloadutils import (
+   HOSTNAME_BLACKLIST,
 )
 import gdrive_base
 import gdrive
@@ -66,6 +69,29 @@ def alt_url_for_work(work, oa_url):
     except StopIteration:
       pass
   return ret
+
+def print_openalex_work(work: dict, indent=0):
+    s = "".join([" "]*indent)
+    try:
+      print(f"{s}Source: {work['primary_location']['source']['display_name']}")
+    except (TypeError, KeyError, ValueError):
+      print(f"{s}Source: ?")
+    print(f"{s}Year: {work['publication_year']}")
+    try:
+      print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
+    except (TypeError, KeyError, ValueError):
+      print(f"{s}Pages: ?")
+    print(f"{s}Cited By: {work['cited_by_count']}")
+    if work['abstract_inverted_index']:
+      print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
+    print(f"{s}Title: {work['title']}")
+    print(f"{s}Author(s): {authorstr(work, 6)}")
+    try:
+      if work['doi'] != work['open_access']['oa_url']:
+        print(f"{s}DOI: {work['doi']}")
+    except KeyError:
+      pass
+    print(f"{s}URL: {work['open_access']['oa_url']}")
 
 def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None) -> str:
   category = 'articles'
@@ -336,7 +362,7 @@ def prompt_for_work(query) -> str:
     workid = r['results'][i]['id'].split("/")[-1]
     with yaspin(text="Fetching work info..."):
       work = fetch_work_data(workid)
-    print_work(work)
+    print_openalex_work(work)
     if prompt("Is this the correct work?"):
       return (work, query)
 

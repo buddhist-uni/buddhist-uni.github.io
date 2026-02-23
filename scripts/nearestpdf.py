@@ -76,8 +76,8 @@ def find_matching_files(work_title: str, authors: str | list[str], file_contents
   Returns a sorted list of tuples (gfile, p_val)
     p_vals are in the range [0.5, 0.953) This is because
     even exact filename and content matches aren't 100% sure.
-    About 1/20 near-exact matches are actually e.g. Volume 1 and 2 or
-    a different translation of the same work--and thus not a duplicate!
+    About 1/20 near-exact matches are actually e.g. Volume 1 and 2
+    of the same work and are thus not a duplicate at all!
     That and partial OCR errors, etc mean that, even given the "full text,"
     matching documents is an inexact science!
     While the Logistic curve used in this function is hand-coded, the values
@@ -168,7 +168,10 @@ def embed_needle(needle: str):
 def fast_cosine_similarity(matrix, needle_embedding) -> npt.NDArray[np.float64]:
   """Like sklearn's cosine_similarity function but without safety checks
   
-  Assumes that matrix and needle are both already normalized, etc"""
+  Assumes that matrix and needle are both already normalized, etc.
+  
+  Also, due to floating point errors, this raw matrix multiply can sometimes
+  return scores an epsilon larger than 1.0.  This is fine for our uses."""
   # @ is matrix multiplication, .T is transpose, .toarray() is dense
   # .ravel() ensures 1d the right way round
   return (matrix @ needle_embedding.T).toarray().ravel()
@@ -196,13 +199,11 @@ def file_closest_to_string(needle: str) -> tuple[str, float]:
     tuple[str, float]: (google file id, similarity score) or ('', 0) if none
 
   The similarity score is cosine similarity [0, 1] in our TFIDF vector space.
-    Theoretical modeling shows that a good threshold balancing TPR and TNR for considering
-    a document to be the same as another is somewhere between 0.945 and 0.965.
-    In practice, anything higher than 0.90 is suspect and some duplicates will be as low as 0.85.
-    But many duplicates have similarity >0.99, so feel free to set the threshold
-    according to your tolerance for false positives vs false negatives.
-  NOTE: due to floating point errors, similarity scores are sometimes >= 1.0, so
-    if you're transforming to log p space, you must add an epsilon.
+    Theoretical modeling as well as real world data shows that a good threshold
+    for considering a document to be the same as another is 0.96±0.02.
+    See https://tinyurl.com/yvh8mbvx for the histogram
+  NOTE: due to floating point errors, similarity scores are sometimes > 1.0, so
+    if you're transforming to log p space, you must subtract an epsilon or clamp.
   """
   similarities = calculate_all_similarities_to_string(needle)
   if similarities is None or len(similarities) == 0:
@@ -237,7 +238,7 @@ def n_closest_files_to_string(needle: str, n_ret: int) -> list[tuple[str, float]
     for i in sorted_top_idxs
   ]
 
-def all_files_within(needle: str, min_similarity: float) -> list[tuple[str, float]]:
+def all_files_within(needle: str, min_similarity: float=0.95) -> list[tuple[str, float]]:
   """returns a list of all files with a similarity score above the given threshold
   
   Returns:
@@ -298,6 +299,8 @@ def _load_filesizes() -> list[int]:
 
 def load(create_new_pickles=False):
   global corpus_embeddings, picklefiles, filesizes, gid_to_idx, google_files
+  if corpus_embeddings is not None:
+    return # already loaded
   from train_tag_predictor import (
     save_all_drive_texts,
     NORMALIZED_TEXT_FOLDER,
@@ -416,7 +419,7 @@ if __name__ == "__main__":
     exit(0)
   min_similarity = -1
   while min_similarity < 0 or min_similarity > 1:
-    min_similarity = float(input_with_prefill("Min similarity: ", "0.95", float))
+    min_similarity = float(input_with_prefill("Min similarity: ", "0.93", float))
   print("Loading the similarity matrix...")
   similarity_matrix = calculate_similarity_matrix()
   print("Selecting close neighboring pairs...")
