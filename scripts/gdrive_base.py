@@ -83,7 +83,7 @@ def link_to_id(link):
   if link.startswith("https://drive.google.com/open?id="):
     return link[len("https://drive.google.com/open?id="):].split('&')[0]
   ret = GFIDREGEX.search(link)
-  if ret:
+  if ret and link.startswith("https://drive.google.com/"):
     return ret.groups()[0]
   return None
 

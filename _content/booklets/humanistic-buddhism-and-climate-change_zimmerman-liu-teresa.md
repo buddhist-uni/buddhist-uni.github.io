@@ -11,8 +11,9 @@ tags:
   - modern
   - climate-change
   - sangha
+  - californian
 year: 2019
-publisher: "University of California"
+publisher: "the University of California San Diego"
 pages: 307
 openalexid: W3199106700
 ---
