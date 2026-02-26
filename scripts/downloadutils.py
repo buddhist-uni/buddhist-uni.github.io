@@ -14,6 +14,7 @@ from strutils import (
   trunc,
   title_case,
   whitespace,
+  DummyYaspin,
 )
 try:
   from yaspin import yaspin
@@ -74,13 +75,17 @@ def pdf_name_for_work(work: dict):
   )
 
 
-def download(url: str, filename: str, expected_type=None) -> bool:
+def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
   if not expected_type:
     expected_type = filename.split(".")[-1]
   if os.path.exists(filename):
+    if not verbose:
+      return True
     if not prompt(f"  \"{filename}\" exists! Overwrite?", "n"):
       return False
   
+  ys = yaspin if verbose else DummyYaspin
+
   link_pattern = None
   for k, v in PDF_LINKS.items():
     if url.startswith(k) and not url.endswith(".pdf"):
@@ -88,7 +93,7 @@ def download(url: str, filename: str, expected_type=None) -> bool:
       break
   if link_pattern:
       nurl = None
-      with yaspin(text="Parsing html..."):
+      with ys(text="Parsing html..."):
           r = requests.get(url, headers=REQUEST_HEADERS, timeout=20)
           parser = BeautifulSoup(r.text, "lxml")
           for a in parser.find_all('a'):
@@ -99,38 +104,34 @@ def download(url: str, filename: str, expected_type=None) -> bool:
                 nurl = link_pattern[1](l, url)
                 break
       if nurl:
-        print(f"  Trying again with custom redirect \"{nurl}\"...")
+        if verbose:
+          print(f"  Trying again with custom redirect \"{nurl}\"...")
         return download(nurl, filename, expected_type)
-      else:
+      elif verbose:
         print(f"  Failed to parse webpage!")
         Path("page.html").write_text(r.text)
         print("  Look in page.html to debug")
   
   is_doi = url.split("/")[2] == "doi.org"
   try:
-   with yaspin(text="Connecting...").dots2:
+   with ys(text="Connecting...").dots2:
     r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=(5 if is_doi else 15))
   except requests.exceptions.SSLError:
-    print("  ERROR: SSL Connection Failed!")
-    print(f"  URL: {url}")
-    print(f"  Filename: {filename}")
+    print(f"SSL Connection to {url} failed (trying to get {filename})")
     return False
   except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
     if is_doi:
-      print("  TIMED OUT. Not trying again.")
-      print(f"  URL: {url}")
-      print(f"  Filename: {filename}")
+      print(f"Timed out trying to connect to {url} (for {filename})")
       return False
-    print("  TIMEOUT ERROR! Trying again...")
-    with yaspin(text="Waiting 15 seconds first...", timer=True).clock:
+    if verbose:
+      print("  TIMEOUT! Trying again...")
+    with ys(text="Waiting 15 seconds first...", timer=True).clock:
       sleep(15)
     try:
-     with yaspin(text="Trying again...").dots9:
+     with ys(text="Trying again...").dots9:
       r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=20)
     except:
-      print("  ERROR: Couldn't connect :(")
-      print(f"  URL: {url}")
-      print(f"  Filename: {filename}")
+      print(f"Failed to connect to {url} (for {filename})")
       return False
   try:
     declared_type = r.headers['Content-Type']
@@ -147,21 +148,26 @@ def download(url: str, filename: str, expected_type=None) -> bool:
     firstchunk = b""
   bad_pdf = (expected_type == "pdf" and not firstchunk.startswith(b"%PDF-"))
   if bad_pdf or (expected_type != "pdf" and expected_type not in (declared_type+disposition)):
-    print(f"  ERROR: expected {expected_type} but got {declared_type}")
-    print(f"  Full header: {r.headers}")
-    try:
-      print(f"  UTF-8 Response: {''.join(firstchunk.decode('utf-8').splitlines())}…")
-    except UnicodeDecodeError:
-      print(f"  Binary Response: {firstchunk}…")
-    r.close()
-    print(f"  Filename: {filename}")
-    print(f"  URL: {url}")
+    if verbose:
+      print(f"  ERROR: expected {expected_type} but got {declared_type}")
+      print(f"  Full header: {r.headers}")
+      try:
+        print(f"  UTF-8 Response: {''.join(firstchunk.decode('utf-8').splitlines())}…")
+      except UnicodeDecodeError:
+        print(f"  Binary Response: {firstchunk}…")
+      r.close()
+      print(f"  Filename: {filename}")
+      print(f"  URL: {url}")
+    else:
+      print(f"Got the wrong type {declared_type} from {url} (was expecting {expected_type} for {filename})")
     return False
-  print(f"Downloading to {filename}...")
+  if verbose:
+    print(f"Downloading to {filename}...")
   try:
     size = int(r.headers['Content-Length'])
   except:
     size = 0
+  # TODO: should this also be gated on `verbose`?
   progress = tqdm(unit="B", unit_scale=True, unit_divisor=1024, total=size, miniters=1)
   try:
    with open(filename, 'wb') as fd:
@@ -181,9 +187,10 @@ def download(url: str, filename: str, expected_type=None) -> bool:
       pass # this is the normal way for a generator to stop looping
     if progress.n == len(firstchunk): # if streaming didn't work, try downloading in one go instead
       progress.close()
-      print("Got no new data, trying again...")
+      if verbose:
+        print("Got no new data, trying again...")
       fd.seek(0)
-      with yaspin(text=f"Downloading...").bouncingBall as spinner:
+      with ys(text=f"Downloading...").bouncingBall as spinner:
         r.close()
         # some servers dislike streaming/sniffing and prefer you dl in one go
         r = requests.get(url, headers=REQUEST_HEADERS, timeout=30)
@@ -196,12 +203,16 @@ def download(url: str, filename: str, expected_type=None) -> bool:
           if expected_type == 'pdf' and r.content.startswith(b"%PDF-"):
             spinner.text = "Got a different file, but it might still be ok..."
           else:
+            if not verbose:
+              print(f"Frustratingly, {url} gave us a different file the second time around! You'll have to download {filename} yourself.")
             return False
         fd.write(r.content)
-      print(f"{len(r.content)} bytes this time")
+      if verbose:
+        print(f"{len(r.content)} bytes this time")
       return True
   except Exception as e:
     os.remove(filename)
     raise e
+  # have to explicitly delete progress bar
   del progress
   return True

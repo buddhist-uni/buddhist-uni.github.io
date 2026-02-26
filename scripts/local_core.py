@@ -4,7 +4,9 @@ import requests
 import sqlite3
 import tempfile
 import json
+import random
 import re
+from functools import partial
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import threading
@@ -61,6 +63,9 @@ def call_api(subpath: str, params: dict, retries=3):
   match response.status_code:
     case 200:
       return response.json()
+    case 410:
+      # deleted content
+      raise FileNotFoundError(f"{subpath} returned a 410 Removed")
     case 429:
       wait_until_stamp = response.headers['x-ratelimit-retry-after']
       wait_until = datetime.strptime(wait_until_stamp, '%Y-%m-%dT%H:%M:%S%z')
@@ -598,7 +603,6 @@ class CoreAPIWorksCache:
         """,
       )
       works_to_find = [dict(row) for row in self.cursor.fetchall()]
-    from tqdm import tqdm
     pbar = tqdm(works_to_find, unit='w')
     found = 0
     for work in pbar:
@@ -624,6 +628,7 @@ class CoreAPIWorksCache:
     work = dict(work)
     filename = pdf_name_for_work(work)
     outpath = to_folder.joinpath(filename)
+    dl = partial(download, filename=outpath, expected_type='pdf', verbose=False)
     with self._lock:
       source = self.cursor.execute("""
           SELECT id FROM identifiers WHERE work_id = ? AND id_type = 'SOURCE_URL' LIMIT 1
@@ -631,7 +636,7 @@ class CoreAPIWorksCache:
         (work['id'], )
       ).fetchone()
     if source:
-      succ = download(source['id'], outpath, expected_type='pdf')
+      succ = dl(source['id'])
       if succ:
         return outpath
     if work.get('download_url'):
@@ -639,19 +644,25 @@ class CoreAPIWorksCache:
         r'https:\/\/core.ac.uk\/download\/(?:pdf\/)?([0-9]+).pdf',
         work['download_url'],
       ).group(1)
-      output = call_api(f"outputs/{output_id}", {})
+      try:
+        output = call_api(f"outputs/{output_id}", {})
+      except FileNotFoundError:
+        # If this output has been removed, then there's nothing to DL
+        return None
+      if output is None:
+        output = {}
       for url in output.get('urls', []):
-        if url == source['id']:
+        if source and url == source['id']:
           continue
-        succ = download(url, outpath, expected_type='pdf')
+        succ = dl(url)
         if succ:
           return outpath
       if output.get('downloadUrl'):
-        succ = download(output['downloadUrl'], outpath, expected_type='pdf')
+        succ = dl(output['downloadUrl'])
         if succ:
           return outpath
       if work['download_url'] != output.get('downloadUrl'):
-        succ = download(work['download_url'], outpath, expected_type='pdf')
+        succ = dl(work['download_url'])
         if succ:
           return outpath
     return None
@@ -679,8 +690,8 @@ class CoreAPIWorksCache:
           (work['id'], min_drive_conf, )
         ).fetchone() is None
       ]
+    random.shuffle(works)
     print(f"Attempting to download {len(works)} works from query {query_id}...")
-    pbar = tqdm(works)
     ret = 0
     import pypdf.errors
     from pdfutils import readpdf
@@ -692,51 +703,66 @@ class CoreAPIWorksCache:
     with tempfile.TemporaryDirectory() as temp_dir:
       if not to_folder:
         to_folder = Path(temp_dir)
-      for work in pbar:
-        succ = self._attempt_to_download(work, to_folder)
-        if succ:
-          self.mark_download(work['id'], True)
-          hash = md5(succ)
-          existing = gdrive.gcache.get_items_with_md5(hash)
-          if not existing:
-            existing = gdrive.gcache.get_trashed_items_with_md5(hash)
-          if not existing:
-            authors = work['authors']
-            if isinstance(authors, str):
-              authors = json.loads(authors)
-            assert isinstance(authors, list)
-            authors = [author_name_to_normal(author['name']) for author in authors]
-            try:
-              fuzzy_dupes = nearestpdf.find_matching_files(work['title'], authors, readpdf(succ))
-            except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError):
-              pbar.write("Didn't get a valid PDF :(")
-              self.mark_download(work['id'], False)
-              continue
-            if fuzzy_dupes:
-              pbar.write(f"Found a fuzzy duplicate for \"{succ}\" on GDrive: \"{fuzzy_dupes[0][0]['name']}\"")
-              skip_upload = False
-              for dupe in fuzzy_dupes:
-                self.register_gfile_for_work(work['id'], dupe[0]['id'], dupe[1])
-                if dupe[1] > min_drive_conf:
-                  skip_upload = True
-              if skip_upload:
-                pbar.write(f"  Uploading straight to old versions...")
-                file_id = gdrive.gcache.upload_file(
-                  succ,
-                  folder_id=gdrive.OLD_VERSIONS_FOLDER_ID,
-                )
-                if file_id:
-                  self.register_gfile_for_work(work['id'], file_id, 1)
-                continue
-          if existing:
-            file_id = existing[0]['id']
+      def process_work(work):
+        try:
+          succ = self._attempt_to_download(work, to_folder)
+          if succ:
+            self.mark_download(work['id'], True)
+            hash = md5(succ)
+            existing = gdrive.gcache.get_items_with_md5(hash)
+            if not existing:
+              existing = gdrive.gcache.get_trashed_items_with_md5(hash)
+            if not existing:
+              authors = work['authors']
+              if isinstance(authors, str):
+                authors = json.loads(authors)
+              assert isinstance(authors, list)
+              authors = [author_name_to_normal(author['name']) for author in authors]
+              try:
+                fuzzy_dupes = nearestpdf.find_matching_files(work['title'], authors, readpdf(succ))
+              except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError):
+                print(f"Didn't get a valid PDF for \"{work['title']}\"")
+                self.mark_download(work['id'], False)
+                return 0
+              if fuzzy_dupes:
+                print(f"Found a fuzzy duplicate for \"{succ}\" on GDrive: \"{fuzzy_dupes[0][0]['name']}\"")
+                skip_upload = False
+                for dupe in fuzzy_dupes:
+                  self.register_gfile_for_work(work['id'], dupe[0]['id'], dupe[1])
+                  if dupe[1] > min_drive_conf:
+                    skip_upload = True
+                if skip_upload:
+                  file_id = gdrive.gcache.upload_file(
+                    succ,
+                    folder_id=gdrive.OLD_VERSIONS_FOLDER_ID,
+                  )
+                  if file_id:
+                    self.register_gfile_for_work(work['id'], file_id, 1)
+                  return 0
+            if existing:
+              file_id = existing[0]['id']
+              ret_increment = 0
+            else:
+              ret_increment = 1
+              file_id = importer.import_item(succ, True)
+            assert file_id is not None, f"Failed to upload {succ}"
+            self.register_gfile_for_work(work['id'], file_id, 1)
+            succ.unlink()
+            return ret_increment
           else:
-            ret += 1
-            file_id = importer.import_item(succ, True)
-          assert file_id is not None, f"Failed to upload {succ}"
-          self.register_gfile_for_work(work['id'], file_id, 1)
-        else:
-          self.mark_download(work['id'], False)
+            self.mark_download(work['id'], False)
+            return 0
+        except Exception as e:
+          import traceback
+          print(f"Unhandled error processing work {work['id']}: {e}")
+          traceback.print_exc()
+          raise e
+      
+      from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
+      # If there are works to process, run them in a thread pool
+      if works:
+        results = tqdm_thread_map(process_work, works, max_workers=8)
+        ret = sum(results)
 
     return ret
   

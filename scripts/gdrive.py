@@ -473,6 +473,7 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   ]
   UNIMPORTANT_PREFIXES = [
     # Keep up-to-date with bulk_import.py
+    "🔓 core api",
     "🏛️ academia.edu",
     "🌱 dharma seed",
     "📼 youtube videos",

@@ -269,7 +269,7 @@ def upload_to_google_drive(
     Returns: The ID of the file if successful, otherwise False
     """
     if verbose:
-      print(f"Uploading {Path(file_path).name}...")
+      print(f"Uploading {Path(file_path).name} to {folder_id if folder_id else 'Google Drive'}...")
     file_metadata = dict()
     if filename:
       file_metadata['name'] = filename

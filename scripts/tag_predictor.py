@@ -1,6 +1,7 @@
 #!/bin/python3
 
 # import argparse
+from functools import cache
 from pathlib import Path
 import json
 import regex
@@ -275,6 +276,7 @@ class TagPredictor:
         return curr_prediction
 
     @classmethod
+    @cache
     def load(cls, filepath: Path | str=None):
         """Loads a new instance of TagPredictor from the given save_as'ed .pkl file"""
         if not filepath:

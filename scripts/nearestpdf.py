@@ -37,6 +37,8 @@ NORMALIZATION_DIVISOR = -3
 MIN_TITLE_SIM = 0.1
 MIN_CONTENT_SIM = 0.5
 
+disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'), verbose=0)
+
 def cache_locally(subdir_name: str):
   def decorator(func):
     @functools.wraps(func)
@@ -269,11 +271,16 @@ tag_predictor = None
 with yaspin(text="Loading tag predictor..."):
   tag_predictor = TagPredictor.load()
 print("Tag Predictor loaded")
-def _load_pickle(f):
+
+@disk_memorizor.cache()
+def _cached_load_pickle(f):
     normalized_text = joblib.load(f.open('rb'))
     if not normalized_text:
       normalized_text = ''
-    return tag_predictor.tfidf_vectorize_texts([normalized_text], normalized=True)[0]
+    return TagPredictor.load().tfidf_vectorize_texts([normalized_text], normalized=True)[0]
+
+def _load_pickle(f):
+    return _cached_load_pickle(f)
 
 @cache_locally('load_embeddings')
 def _load_embeddings_for_pickles():

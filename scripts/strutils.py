@@ -20,6 +20,23 @@ from pathlib import Path
 from functools import cache, reduce
 from collections import defaultdict
 from math import floor, ceil
+
+class DummyYaspin:
+    """A no-op version of yaspin for when verbosity is disabled."""
+    def __init__(self, *args, **kwargs):
+      self.text = kwargs.get("text", "")
+      self.spinner = kwargs.get("spinner", "dots")
+      self.timer = kwargs.get("timer", False)
+    def __enter__(self): return self
+    def __exit__(self, *args): pass
+    def __getattr__(self, name):
+        # Handle common yaspin methods by returning self (for chaining) 
+        # or a dummy function that returns self.
+        if name in ('ok', 'fail', 'write', 'hide', 'show', 'spinner', 'stop', 'start'):
+            return lambda *args, **kwargs: self
+        return self
+    def __call__(self, *args, **kwargs):
+        return self
 try:
   from titlecase import titlecase
 except:

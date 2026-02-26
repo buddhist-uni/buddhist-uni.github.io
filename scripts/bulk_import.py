@@ -166,6 +166,8 @@ class BulkPDFImporter(BulkItemImporter):
     text = normalize_text(readpdf(item, normalize=0))
     name = normalize_text((' '+item.stem) * 3)
     course = course_predictor.predict([text+name], normalized=True)[0]
+    if verbose:
+      print(f"Placing \"{item.name}\" in \033[1m{course}\033[0m/Unread/{self.folder_name}")
     folder = self.get_folder_id_for_course(course)
     ret = gdrive_base.upload_to_google_drive(
       item,
