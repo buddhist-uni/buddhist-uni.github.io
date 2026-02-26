@@ -12,6 +12,7 @@ from pathlib import Path
 import threading
 from time import sleep
 from enum import IntEnum
+import signal
 from language_detection import LANGUAGE_DETECTOR, Language
 from strutils import author_name_to_normal, md5
 import nearestpdf
@@ -643,7 +644,16 @@ class CoreAPIWorksCache:
       output_id = re.fullmatch(
         r'https:\/\/core.ac.uk\/download\/(?:pdf\/)?([0-9]+).pdf',
         work['download_url'],
-      ).group(1)
+      )
+      if not output_id:
+        if work['download_url'].startswith('http'):
+          succ = dl(work['download_url'])
+          if succ:
+            return outpath
+          else:
+            return None
+        raise ValueError(f"Strange download_url for {work['id']}: {work['download_url']}")
+      output_id = output_id.group(1)
       try:
         output = call_api(f"outputs/{output_id}", {})
       except FileNotFoundError:
@@ -700,12 +710,14 @@ class CoreAPIWorksCache:
     import nearestpdf
     nearestpdf.load()
     importer = BulkPDFImporter(BulkPDFType.CORE_API)
+    stop_event = threading.Event()
     with tempfile.TemporaryDirectory() as temp_dir:
-      if not to_folder:
-        to_folder = Path(temp_dir)
+      temp_path = Path(temp_dir)
       def process_work(work):
+        if stop_event.is_set():
+          return 0
         try:
-          succ = self._attempt_to_download(work, to_folder)
+          succ = self._attempt_to_download(work, to_folder or temp_path)
           if succ:
             self.mark_download(work['id'], True)
             hash = md5(succ)
@@ -747,7 +759,8 @@ class CoreAPIWorksCache:
               file_id = importer.import_item(succ, True)
             assert file_id is not None, f"Failed to upload {succ}"
             self.register_gfile_for_work(work['id'], file_id, 1)
-            succ.unlink()
+            if not to_folder:
+              succ.unlink()
             return ret_increment
           else:
             self.mark_download(work['id'], False)
@@ -759,10 +772,25 @@ class CoreAPIWorksCache:
           raise e
       
       from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
-      # If there are works to process, run them in a thread pool
-      if works:
-        results = tqdm_thread_map(process_work, works, max_workers=8)
-        ret = sum(results)
+      def handle_sigint(sig, frame):
+        stop_event.set()
+        print("\n\033[1mCtrl+C detected.\033[0m Finishing current tasks and exiting gracefully...")
+
+      try:
+        old_handler = signal.signal(signal.SIGINT, handle_sigint)
+      except ValueError:
+        old_handler = None
+
+      try:
+        # If there are works to process, run them in a thread pool
+        if works:
+          results = tqdm_thread_map(process_work, works, max_workers=8)
+          ret = sum(results)
+      finally:
+        if old_handler:
+          signal.signal(signal.SIGINT, old_handler)
+        if stop_event.is_set():
+          raise KeyboardInterrupt()
 
     return ret
   
