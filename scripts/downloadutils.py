@@ -187,9 +187,17 @@ def download(url: str, filename: str, expected_type=None) -> bool:
         r.close()
         # some servers dislike streaming/sniffing and prefer you dl in one go
         r = requests.get(url, headers=REQUEST_HEADERS, timeout=30)
+        if r.content.startswith(firstchunk):
+          spinner.text = "Got it!"
+          spinner.ok("( ^.^  )")
+        else:
+          spinner.text = "Got a different file the second time around"
+          spinner.fail("( T.T )")
+          if expected_type == 'pdf' and r.content.startswith(b"%PDF-"):
+            spinner.text = "Got a different file, but it might still be ok..."
+          else:
+            return False
         fd.write(r.content)
-        spinner.text = "Got it!"
-        spinner.ok("( ^.^  )")
       print(f"{len(r.content)} bytes this time")
       return True
   except Exception as e:

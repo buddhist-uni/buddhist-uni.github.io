@@ -6,6 +6,7 @@ with yaspin(text="Loading..."):
   from collections import defaultdict
   import argparse
   import re
+  import enum
   import threading
   import requests
   import joblib
@@ -31,7 +32,8 @@ with yaspin(text="Loading..."):
   LINK_SAVER = "LibraryUtils.LinkSaver"
   PDF_SAVER = "LibraryUtils.BulkPDFImporter"
 
-course_predictor = None
+with yaspin(text="Loading tag predictor..."):
+  course_predictor = TagPredictor.load()
 disk_memorizor = joblib.Memory(gdrive.gcache_folder, verbose=0)
 
 def synchronized(func):
@@ -133,16 +135,23 @@ class BulkItemImporter:
       self.unread_folderid_for_course[course] = subfolder
       return subfolder
 
+class BulkPDFType(enum.StrEnum):
+  ACADEMIA_EDU = 'academia.edu'
+  TO_GO_THROUGH = 'togothrough'
+  CORE_API = 'coreapi'
+
 class BulkPDFImporter(BulkItemImporter):
-  def __init__(self, pdf_type) -> None:
+  def __init__(self, pdf_type: BulkPDFType) -> None:
     super().__init__()
     self.pdf_type = pdf_type
     match pdf_type:
       # Make sure to update gdrive.select_ids_to_keep as well
-      case 'academia.edu':
+      case BulkPDFType.ACADEMIA_EDU:
         self.folder_name = "🏛️ Academia.edu"
-      case 'togothrough':
+      case BulkPDFType.TO_GO_THROUGH:
         self.folder_name = "📥 To Go Through"
+      case BulkPDFType.CORE_API:
+        self.folder_name = "🔓 CORE API"
       case _:
         raise ValueError("Invalid PDF type: "+pdf_type)
 
@@ -153,9 +162,25 @@ class BulkPDFImporter(BulkItemImporter):
     return item.lower().endswith('.pdf') \
       and Path(item).is_file() # so far, only support local files
   
-  def import_items(self, items: list[str]):
+  def import_item(self, item: Path, verbose: bool) -> str | None:
+    text = normalize_text(readpdf(item, normalize=0))
+    name = normalize_text((' '+item.stem) * 3)
+    course = course_predictor.predict([text+name], normalized=True)[0]
+    folder = self.get_folder_id_for_course(course)
+    ret = gdrive_base.upload_to_google_drive(
+      item,
+      folder_id=folder,
+      filename=item.name,
+      creator=PDF_SAVER,
+      verbose=verbose,
+    )
+    if ret:
+      save_normalized_text(ret, text)
+    return ret
+  
+  def import_items(self, items: list[str | Path]):
     files = [Path(item) for item in items]
-    if self.pdf_type == "academia.edu":
+    if self.pdf_type == BulkPDFType.ACADEMIA_EDU:
       """Academia.edu PDFs use _s instead of spaces
       Replace them with spaces for my sanity"""
       for fp in list(files):
@@ -171,20 +196,9 @@ class BulkPDFImporter(BulkItemImporter):
         tqdm.write(f"Skipping {fp} as that file is already on Drive!")
         fp.unlink()
         continue
-      text = normalize_text(readpdf(fp, normalize=0))
-      name = normalize_text((' '+fp.stem) * 3)
-      course = course_predictor.predict([text+name], normalized=True)[0]
-      folder = self.get_folder_id_for_course(course)
-      uploaded = gdrive_base.upload_to_google_drive(
-        fp,
-        folder_id=folder,
-        filename=fp.name,
-        creator=PDF_SAVER,
-        verbose=False,
-      )
+      uploaded = self.import_item(item, False)
       if uploaded:
         fp.unlink()
-        save_normalized_text(uploaded, text)
       else:
         tqdm.write(f"Failed to upload {fp}!")
 
@@ -747,7 +761,7 @@ These items can be:
     '--pdf-type',
     dest="pdf_type",
     nargs="?",
-    choices=['academia.edu', 'togothrough'],
+    choices=[str(v) for v in BulkPDFType],
     help="Which subfolder to sort PDFs into (required if importing PDFs)",
   )
   argparser.add_argument(
@@ -760,8 +774,6 @@ These items can be:
     If no pdf-type is, then it'll resort the link docs.""",
   )
   args = argparser.parse_args()
-  with yaspin(text="Loading tag predictor..."):
-    course_predictor = TagPredictor.load()
   if args.resort:
     if args.pdf_type:
       resort_existing_pdfs_of_type(args.pdf_type)

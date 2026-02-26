@@ -72,6 +72,8 @@ for doi, drive_id in LOCAL_DOIS.items():
     continue
   core.register_gfile_for_work(core_work['id'], drive_id, similarity=0.99)
 
-while core.load_another_page_from_query(TRACKING_QUERY) > 0:
-  print("Loading another page...")
+while True:
+  core.attempt_downloads_for_query(TRACKING_QUERY)
+  if core.load_another_page_from_query(TRACKING_QUERY) <= 0:
+    break
 

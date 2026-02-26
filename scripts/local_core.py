@@ -2,16 +2,19 @@
 
 import requests
 import sqlite3
+import tempfile
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import threading
 from time import sleep
 from enum import IntEnum
 from language_detection import LANGUAGE_DETECTOR, Language
-from strutils import author_name_to_normal
+from strutils import author_name_to_normal, md5
 import nearestpdf
+from tqdm import tqdm
+from downloadutils import download, pdf_name_for_work
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -603,6 +606,139 @@ class CoreAPIWorksCache:
       if matches:
         found += 1
     print(f"Found Google Drive files for {found} works and added them to the DB")
+  
+  @locked
+  def mark_download(self, work_id: str, success: bool, timestamp: int=None):
+    if not timestamp:
+      timestamp = current_timestamp()
+    if not success:
+      timestamp = -timestamp
+    self.cursor.execute("""
+      UPDATE works SET downloaded_date = ? WHERE id = ?
+      """,
+      (timestamp, work_id,)
+    )
+    self.conn.commit()
+  
+  def _attempt_to_download(self, work: dict | sqlite3.Row, to_folder: Path) -> Path | None:
+    work = dict(work)
+    filename = pdf_name_for_work(work)
+    outpath = to_folder.joinpath(filename)
+    with self._lock:
+      source = self.cursor.execute("""
+          SELECT id FROM identifiers WHERE work_id = ? AND id_type = 'SOURCE_URL' LIMIT 1
+        """,
+        (work['id'], )
+      ).fetchone()
+    if source:
+      succ = download(source['id'], outpath, expected_type='pdf')
+      if succ:
+        return outpath
+    if work.get('download_url'):
+      output_id = re.fullmatch(
+        r'https:\/\/core.ac.uk\/download\/(?:pdf\/)?([0-9]+).pdf',
+        work['download_url'],
+      ).group(1)
+      output = call_api(f"outputs/{output_id}", {})
+      for url in output.get('urls', []):
+        if url == source['id']:
+          continue
+        succ = download(url, outpath, expected_type='pdf')
+        if succ:
+          return outpath
+      if output.get('downloadUrl'):
+        succ = download(output['downloadUrl'], outpath, expected_type='pdf')
+        if succ:
+          return outpath
+      if work['download_url'] != output.get('downloadUrl'):
+        succ = download(work['download_url'], outpath, expected_type='pdf')
+        if succ:
+          return outpath
+    return None
+  
+  def attempt_downloads_for_query(self, query_id: int, to_folder: Path=None, min_en_conf: float=0.8, min_drive_conf: float=0.6, retry_timedelta: int | timedelta=15811200000) -> int:
+    """
+    Args:
+      to_folder: If you'd like to keep the downloaded files, supply a folder.
+      Otherwise won't it keep them
+    """
+    works = self.get_local_works_for_query(query_id)
+    # Filter out non-English works
+    works = [work for work in works if work['en_confidence'] >= min_en_conf]
+    # Filter out works that we downloaded successfully or tried recently
+    if isinstance(retry_timedelta, timedelta):
+      retry_timedelta = int(retry_timedelta.total_seconds() * 1000)
+    since = -(current_timestamp() - retry_timedelta)
+    works = [work for work in works if work.get('downloaded_date') is None or (work['downloaded_date'] <= 0 and work['downloaded_date'] > since)]
+    # Filter out works we already have on Drive
+    with self._lock:
+      works = [
+        work for work in works if
+        self.cursor.execute(
+          "SELECT * FROM work_gfiles WHERE work_id = ? AND pval > ? LIMIT 1",
+          (work['id'], min_drive_conf, )
+        ).fetchone() is None
+      ]
+    print(f"Attempting to download {len(works)} works from query {query_id}...")
+    pbar = tqdm(works)
+    ret = 0
+    import pypdf.errors
+    from pdfutils import readpdf
+    from bulk_import import BulkPDFImporter, BulkPDFType
+    import gdrive
+    import nearestpdf
+    nearestpdf.load()
+    importer = BulkPDFImporter(BulkPDFType.CORE_API)
+    with tempfile.TemporaryDirectory() as temp_dir:
+      if not to_folder:
+        to_folder = Path(temp_dir)
+      for work in pbar:
+        succ = self._attempt_to_download(work, to_folder)
+        if succ:
+          self.mark_download(work['id'], True)
+          hash = md5(succ)
+          existing = gdrive.gcache.get_items_with_md5(hash)
+          if not existing:
+            existing = gdrive.gcache.get_trashed_items_with_md5(hash)
+          if not existing:
+            authors = work['authors']
+            if isinstance(authors, str):
+              authors = json.loads(authors)
+            assert isinstance(authors, list)
+            authors = [author_name_to_normal(author['name']) for author in authors]
+            try:
+              fuzzy_dupes = nearestpdf.find_matching_files(work['title'], authors, readpdf(succ))
+            except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError):
+              pbar.write("Didn't get a valid PDF :(")
+              self.mark_download(work['id'], False)
+              continue
+            if fuzzy_dupes:
+              pbar.write(f"Found a fuzzy duplicate for \"{succ}\" on GDrive: \"{fuzzy_dupes[0][0]['name']}\"")
+              skip_upload = False
+              for dupe in fuzzy_dupes:
+                self.register_gfile_for_work(work['id'], dupe[0]['id'], dupe[1])
+                if dupe[1] > min_drive_conf:
+                  skip_upload = True
+              if skip_upload:
+                pbar.write(f"  Uploading straight to old versions...")
+                file_id = gdrive.gcache.upload_file(
+                  succ,
+                  folder_id=gdrive.OLD_VERSIONS_FOLDER_ID,
+                )
+                if file_id:
+                  self.register_gfile_for_work(work['id'], file_id, 1)
+                continue
+          if existing:
+            file_id = existing[0]['id']
+          else:
+            ret += 1
+            file_id = importer.import_item(succ, True)
+          assert file_id is not None, f"Failed to upload {succ}"
+          self.register_gfile_for_work(work['id'], file_id, 1)
+        else:
+          self.mark_download(work['id'], False)
+
+    return ret
   
   @locked
   def close(self):
