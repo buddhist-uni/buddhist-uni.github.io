@@ -682,9 +682,7 @@ def authorstr(work: dict, maxn: int=2) -> str:
     """Given a CORE or OpenAlex work, gives the authors string for the filename"""
     if 'authorships' in work:
       # https://docs.openalex.org/api-entities/works/work-object#authorships
-      authors = list(map(lambda a: a['author']['display_name'], work['authorships']))
-      with_commas = [author for author in authors if ',' in author]
-      assert len(with_commas) == 0, f"Found authors with commas: {with_commas} (in work {work.get('id')})"
+      authors = list(map(lambda a: author_name_to_normal(a['author']['display_name']), work['authorships']))
     elif 'authors' in work:
       # https://api.core.ac.uk/docs/v3#tag/Works/operation/optionsCustomWorks:~:text=List%20of%20author%20names
       if isinstance(work['authors'], str):

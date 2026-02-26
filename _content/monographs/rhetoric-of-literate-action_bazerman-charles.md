@@ -35,3 +35,4 @@ strategic terms about what they want their texts to accomplish, what form the
 texts might take, how to develop specific contents, and how to arrange the work 
 of writing. 
 
+For a deep exploration of the theoretical understanding of written language undergirding this book, see its companion volume, [*A Theory of Literate Action*](/content/monographs/theory-of-literate-action_bazerman-charles).
