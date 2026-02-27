@@ -8,6 +8,7 @@ with yaspin(text="Loading..."):
   import re
   import enum
   import threading
+  import concurrent.futures
   import requests
   import joblib
   from tqdm import tqdm
@@ -35,6 +36,19 @@ with yaspin(text="Loading..."):
 with yaspin(text="Loading tag predictor..."):
   course_predictor = TagPredictor.load()
 disk_memorizor = joblib.Memory(gdrive.gcache_folder, verbose=0)
+
+def _do_parse_and_predict(item: Path) -> tuple[str, str]:
+  text = normalize_text(readpdf(item, normalize=0))
+  name = normalize_text((' '+item.stem) * 3)
+  course = course_predictor.predict([text+name], normalized=True)[0]
+  return text, course
+
+_inference_pool = None
+def get_inference_pool():
+  global _inference_pool
+  if _inference_pool is None:
+    _inference_pool = concurrent.futures.ProcessPoolExecutor(max_workers=2)
+  return _inference_pool
 
 def synchronized(func):
   func.__lock__ = threading.Lock()
@@ -163,9 +177,7 @@ class BulkPDFImporter(BulkItemImporter):
       and Path(item).is_file() # so far, only support local files
   
   def import_item(self, item: Path, verbose: bool) -> str | None:
-    text = normalize_text(readpdf(item, normalize=0))
-    name = normalize_text((' '+item.stem) * 3)
-    course = course_predictor.predict([text+name], normalized=True)[0]
+    text, course = get_inference_pool().submit(_do_parse_and_predict, item).result()
     if verbose:
       print(f"Placing \"{item.name}\" in \033[1m{course}\033[0m/Unread/{self.folder_name}")
     folder = self.get_folder_id_for_course(course)
@@ -193,16 +205,18 @@ class BulkPDFImporter(BulkItemImporter):
           fp.rename(new_name)
           files.remove(fp)
           files.append(new_name)
-    for fp in tqdm(files):
+    def _upload_one_fp(fp):
       if gdrive.has_file_already(fp):
         tqdm.write(f"Skipping {fp} as that file is already on Drive!")
         fp.unlink()
-        continue
-      uploaded = self.import_item(item, False)
+        return
+      uploaded = self.import_item(fp, False)
       if uploaded:
         fp.unlink()
       else:
         tqdm.write(f"Failed to upload {fp}!")
+    
+    tqdm_thread_map(_upload_one_fp, files, max_workers=8)
 
 class GDocURLImporter(BulkItemImporter):
   def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):

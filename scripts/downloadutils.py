@@ -113,9 +113,10 @@ def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
         print("  Look in page.html to debug")
   
   is_doi = url.split("/")[2] == "doi.org"
+  stream = bool(verbose)
   try:
    with ys(text="Connecting...").dots2:
-    r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=(5 if is_doi else 15))
+    r = requests.get(url, stream=stream, headers=REQUEST_HEADERS, timeout=15)
   except requests.exceptions.SSLError:
     print(f"SSL Connection to {url} failed (trying to get {filename})")
     return False
@@ -129,7 +130,7 @@ def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
       sleep(15)
     try:
      with ys(text="Trying again...").dots9:
-      r = requests.get(url, stream=True, headers=REQUEST_HEADERS, timeout=20)
+      r = requests.get(url, stream=stream, headers=REQUEST_HEADERS, timeout=20)
     except:
       print(f"Failed to connect to {url} (for {filename})")
       return False
@@ -142,10 +143,13 @@ def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
     disposition = r.headers['Content-Disposition']
   except:
     pass
-  try:
-    firstchunk = next(r.iter_content(chunk_size=128))
-  except StopIteration:
-    firstchunk = b""
+  if stream:
+    try:
+      firstchunk = next(r.iter_content(chunk_size=128))
+    except StopIteration:
+      firstchunk = b""
+  else:
+    firstchunk = r.content[:128]
   bad_pdf = (expected_type == "pdf" and not firstchunk.startswith(b"%PDF-"))
   if bad_pdf or (expected_type != "pdf" and expected_type not in (declared_type+disposition)):
     if verbose:
@@ -163,11 +167,14 @@ def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
     return False
   if verbose:
     print(f"Downloading to {filename}...")
+  else:
+    with open(filename, 'wb') as fd:
+      fd.write(r.content)
+    return True
   try:
     size = int(r.headers['Content-Length'])
   except:
     size = 0
-  # TODO: should this also be gated on `verbose`?
   progress = tqdm(unit="B", unit_scale=True, unit_divisor=1024, total=size, miniters=1)
   try:
    with open(filename, 'wb') as fd:

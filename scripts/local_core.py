@@ -77,7 +77,7 @@ def call_api(subpath: str, params: dict, retries=3):
       sleep(wait_interval)
       # Don't count this as a retry as the API has asked us to wait
       return call_api(subpath, params, retries=retries)
-    case 500:
+    case 500 | 503:
       if retries > 0:
         print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
         sleep(6)
@@ -691,6 +691,8 @@ class CoreAPIWorksCache:
       retry_timedelta = int(retry_timedelta.total_seconds() * 1000)
     since = -(current_timestamp() - retry_timedelta)
     works = [work for work in works if work.get('downloaded_date') is None or (work['downloaded_date'] <= 0 and work['downloaded_date'] > since)]
+    # HACK filter out BOOK REVIEWS
+    works = [work for work in works if not work.get('title', '').startswith("BOOK REVIEWS")]
     # Filter out works we already have on Drive
     with self._lock:
       works = [
@@ -708,13 +710,14 @@ class CoreAPIWorksCache:
     from bulk_import import BulkPDFImporter, BulkPDFType
     import gdrive
     import nearestpdf
+    import queue
     nearestpdf.load()
     importer = BulkPDFImporter(BulkPDFType.CORE_API)
-    stop_event = threading.Event()
+    stop_exceptions = queue.Queue()
     with tempfile.TemporaryDirectory() as temp_dir:
       temp_path = Path(temp_dir)
       def process_work(work):
-        if stop_event.is_set():
+        if not stop_exceptions.empty():
           return 0
         try:
           succ = self._attempt_to_download(work, to_folder or temp_path)
@@ -769,11 +772,12 @@ class CoreAPIWorksCache:
           import traceback
           print(f"Unhandled error processing work {work['id']}: {e}")
           traceback.print_exc()
-          raise e
+          stop_exceptions.put(e)
+          return 0
       
       from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
       def handle_sigint(sig, frame):
-        stop_event.set()
+        stop_exceptions.put(KeyboardInterrupt())
         print("\n\033[1mCtrl+C detected.\033[0m Finishing current tasks and exiting gracefully...")
 
       try:
@@ -789,8 +793,8 @@ class CoreAPIWorksCache:
       finally:
         if old_handler:
           signal.signal(signal.SIGINT, old_handler)
-        if stop_event.is_set():
-          raise KeyboardInterrupt()
+        if not stop_exceptions.empty():
+          raise stop_exceptions.get()
 
     return ret
   
