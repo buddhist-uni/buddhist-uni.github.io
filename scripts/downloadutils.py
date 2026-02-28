@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 import os
 from time import sleep
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from strutils import (
   prompt,
@@ -30,7 +30,8 @@ HOSTNAME_BLACKLIST = {
   "www.questia.com",
   "scholarbank.nus.edu.sg",
 }
-REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+REQUEST_HEADERS = {"User-Agent": USER_AGENT}
 FNAME_MAXLEN = 192 # 126 might be safer
 titlefilter = re.compile(r'(<[^<]+?>)|(\[[^\[]+?\])|["""„«»›‹'']')
 
@@ -76,6 +77,13 @@ def pdf_name_for_work(work: dict):
 
 
 def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
+  if '://' not in url:
+    if '.' not in url or ' ' in url:
+      return False
+    url = f"http://{url}"
+  parsed = urlparse(url)
+  if parsed.scheme not in ("http", "https") or not parsed.netloc:
+    return False
   if not expected_type:
     expected_type = filename.split(".")[-1]
   if os.path.exists(filename):
@@ -120,7 +128,7 @@ def download(url: str, filename: str, expected_type=None, verbose=True) -> bool:
   except requests.exceptions.SSLError:
     print(f"SSL Connection to {url} failed (trying to get {filename})")
     return False
-  except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
+  except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout, requests.exceptions.ChunkedEncodingError):
     if is_doi:
       print(f"Timed out trying to connect to {url} (for {filename})")
       return False

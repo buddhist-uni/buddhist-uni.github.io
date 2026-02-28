@@ -47,6 +47,53 @@ NONSC_TRANSLATORS = [{
 }
 ]
 
+RANGE_SUTTAS = json.loads(git_root_folder.joinpath("_data", "range-suttas.json").read_text())
+
+def extract_range(sutta):
+    """returns (query_sutta, sutta_offset)"""
+    sutta = sutta.lower().replace(' ', '')
+    match = re.match(r"([a-z]+)(\d+)\.?(\d*)-?(\d*)", sutta)
+    if not match: return sutta, None
+    book = match.group(1)
+    num1 = match.group(2)
+    num2 = match.group(3)
+    num3 = match.group(4)
+
+    if book not in RANGE_SUTTAS:
+        return sutta, None
+    
+    book_ranges = RANGE_SUTTAS[book]
+
+    if num3: # User already passed a range! e.g. an1.1-10
+        # Check if it matches a known range
+        if isinstance(book_ranges, list):
+            for r in book_ranges:
+                if r[0] == int(num1) and r[1] == int(num3):
+                    return sutta, None # they specified the full range, no specific sutta
+        elif isinstance(book_ranges, dict):
+            if num1 in book_ranges:
+                for r in book_ranges[num1]:
+                    if r[0] == int(num2) and r[1] == int(num3):
+                        return sutta, None # they specified the full range, no specific sutta
+        return sutta, None # Either not a known range, or they specified it. But return as is
+
+    if isinstance(book_ranges, list):
+        if not num1: return sutta, None
+        sutta_num = int(num1)
+        for r in book_ranges:
+            if r[0] <= sutta_num <= r[1]:
+                return f"{book}{r[0]}-{r[1]}", (sutta_num - r[0] + 1)
+    
+    elif isinstance(book_ranges, dict):
+        if not num1 or not num2: return sutta, None
+        if num1 not in book_ranges: return sutta, None
+        sutta_num = int(num2)
+        for r in book_ranges[num1]:
+            if r[0] <= sutta_num <= r[1]:
+                return f"{book}{num1}.{r[0]}-{r[1]}", (sutta_num - r[0] + 1)
+
+    return sutta, None
+
 def make_nonsc_url(website, book, nums):
   url = ""
   if website['constants']['rootUrl'] == "https://accesstoinsight.org":
@@ -98,8 +145,9 @@ def get_new_pdfs(directory):
         files = new_files
 
 def get_suttacentral_metadata(sutta):
-  ret = requests.get(f"https://suttacentral.net/api/suttaplex/{sutta.lower().replace(' ','')}?language=en")
-  return json.loads(ret.text)[0]
+  query_sutta, sutta_offset = extract_range(sutta)
+  ret = requests.get(f"https://suttacentral.net/api/suttaplex/{query_sutta}?language=en")
+  return json.loads(ret.text)[0], query_sutta, sutta_offset
 
 def guess_id_from_filename(name):
   # Iti 8_ Foobar baz -> Iti 8
@@ -111,20 +159,35 @@ def guess_id_from_filename(name):
 def is_in_website(website, book, nums):
   if not book in website:
     return False
-  book = website[book]
-  if "complete" in book and book["complete"]:
+  book_data = website[book]
+  if "complete" in book_data and book_data["complete"]:
     return True
-  if not "available" in book:
+
+  # Check range_suttas first
+  if "range_suttas" in book_data and nums[1]:
+    rs = book_data["range_suttas"]
+    sutta_num = int(nums[1])
+    if isinstance(rs, list):
+      for r in rs:
+          if r[0] <= sutta_num <= r[1]:
+              return True
+    elif isinstance(rs, dict):
+      if str(nums[0]) in rs:
+        for r in rs[str(nums[0])]:
+            if r[0] <= sutta_num <= r[1]:
+                return True
+
+  if not "available" in book_data:
     return False
-  book = book["available"]
-  if not int(nums[0]) in book and not str(nums[0]) in book:
+  av = book_data["available"]
+  if not int(nums[0]) in av and not str(nums[0]) in av:
     return False
   if not nums[1]:
     return True
-  book = book[str(nums[0])]
-  if type(book) is dict or type(book[0]) is int:
-    return int(nums[1]) in book
-  return int(nums[1]) in list(map(lambda e: int(e[0]), book))
+  av = av[str(nums[0])]
+  if type(av) is dict or type(av[0]) is int:
+    return int(nums[1]) in av
+  return int(nums[1]) in list(map(lambda e: int(e[0]), av))
 
 def get_possible_trans(book, nums):
   return list(filter(lambda t: is_in_website(t['website_data'], book, nums), NONSC_TRANSLATORS))
@@ -242,19 +305,20 @@ def process_pdf(pdf_file):
   guess = guess_id_from_filename(pdf_file.stem)
   while True:
     sutta = input_with_prefill("Sutta ID? ", guess)
-    scdata = get_suttacentral_metadata(sutta)
-    if scdata and scdata['acronym'] and scdata['acronym'].replace('–','-') == sutta:
+    scdata, query_sutta, sutta_offset = get_suttacentral_metadata(sutta)
+    if scdata and scdata['acronym'] and (scdata['acronym'].replace('–','-').lower().replace(' ', '') == query_sutta or scdata['acronym'].replace('–','-') == sutta):
       break
     print(f"Got \"{scdata['acronym']}\" instead. Try again.")
   en_trans = [t for t in scdata['translations'] if t['lang']=='en']
   slug = scdata['uid']
-  mdfile = git_root_folder.joinpath("_content", "canon", f"{slug}.md")
+  mdfile_slug = slug.replace(query_sutta, sutta.lower().replace(' ', '')) if sutta_offset else slug
+  mdfile = git_root_folder.joinpath("_content", "canon", f"{mdfile_slug}.md")
   if mdfile.exists():
     if not prompt("File already exists! Continue anyway?"):
       return
   blurb = get_blurb_for_suttaid(slug) or ''
   course = TagPredictor.load().predict([blurb + ' ' + pdf_text])[0]
-  parsed = sutta_id_re.match(slug)
+  parsed = sutta_id_re.match(mdfile_slug)
   book = parsed.group(1)
   nums = [parsed.group(2), parsed.group(3)]
   try:
@@ -266,15 +330,24 @@ def process_pdf(pdf_file):
   transidx = int(input_with_prefill("Which one is this [index]? ", "0", validator=lambda x: int(x)<len(en_trans)+len(nonsc_trans)))
   if transidx < len(en_trans):
     trans = en_trans[transidx]
-    external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
+    if sutta_offset:
+        # e.g. AN 1.5, slug is an1.1-10, we want the external_url to point to an1.5
+        external_url = f"https://suttacentral.net/{slug.replace(query_sutta, sutta.lower().replace(' ', ''))}/en/{trans['author_uid']}"
+    else:
+        external_url = f"https://suttacentral.net/{slug}/en/{trans['author_uid']}"
   transidx -= len(en_trans)
   if transidx >= 0:
     trans = nonsc_trans[transidx]
     external_url = make_nonsc_url(trans['website_data'], book, nums)
     trans = fill_in_trans_data(trans, external_url)
   print(f"Going with {trans['author_short']}")
-  pali_name = input_with_prefill("Pāli name? ", scdata['original_title'].replace("sutta", " Sutta").replace("aa", "a A").strip())
-  eng_name = input_with_prefill("English title? ", scdata['translated_title'].strip())
+  default_pali = scdata['original_title'].replace("sutta", " Sutta").replace("aa", "a A").strip()
+  default_eng = scdata['translated_title'].strip() if scdata['translated_title'] else ""
+  if sutta_offset:
+    default_pali += f" ({sutta_offset})"
+    default_eng += f" ({sutta_offset})"
+  pali_name = input_with_prefill("Pāli name? ", default_pali)
+  eng_name = input_with_prefill("English title? ", default_eng)
   title = f"{sutta} {pali_name}{': '+eng_name if eng_name else ''}"
   filename = f"{title.replace(':','_')} - {trans['author']}.pdf"
   course = input_course_string_with_tab_complete(prefill=course)
@@ -284,7 +357,7 @@ def process_pdf(pdf_file):
     folder_id = shortcut_folder
     shortcut_folder = None
     needs_sharing = True
-  slugfield = slug
+  slugfield = slug.replace(query_sutta, sutta.lower().replace(' ', '')) if sutta_offset else slug
   extra_fields = ""
   if trans['author_uid'] == 'geoff':
     extra_fields = get_geoff_source_url(trans, external_url, book, nums)
@@ -311,7 +384,7 @@ subcat: poetry{extra_fields}"""
       except ValueError:
         slugfield = f"an.{int(nums[0]):03d}.{int(nums[1].split('-')[0]):03d}-{int(nums[1].split('-')[1]):03d}"
     case "ud":
-      slugfield = slug
+      slugfield = slug.replace(query_sutta, sutta.lower().replace(' ', '')) if sutta_offset else slug
     case "vv":
       slugfield = f"vv.{nums[0]}.{nums[1]:02d}"
     case "snp":
@@ -337,7 +410,7 @@ subcat: poetry{extra_fields}"""
       year = input_with_prefill("year: ", "2010 # a wild guess")
   if not pages:
     pages = input("pages: ")
-  parallels = get_parallels_yaml(scdata['uid'])
+  parallels = get_parallels_yaml(query_sutta)
   if parallels:
     parallels += "\n"
   print(f"Attempting to upload \"{filename}\" to Google Drive...")

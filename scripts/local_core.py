@@ -17,7 +17,7 @@ from language_detection import LANGUAGE_DETECTOR, Language
 from strutils import author_name_to_normal, md5
 import nearestpdf
 from tqdm import tqdm
-from downloadutils import download, pdf_name_for_work
+from downloadutils import download, pdf_name_for_work, USER_AGENT
 
 # Maybe a better place to put this mutual dependency?
 from local_gdrive import locked
@@ -51,6 +51,7 @@ def call_api(subpath: str, params: dict, retries=3):
       url,
       headers={
         'Authorization': TOKEN,
+        'User-Agent': USER_AGENT,
       },
       params=params,
     )
@@ -735,7 +736,7 @@ class CoreAPIWorksCache:
               authors = [author_name_to_normal(author['name']) for author in authors]
               try:
                 fuzzy_dupes = nearestpdf.find_matching_files(work['title'], authors, readpdf(succ))
-              except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError):
+              except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError, KeyError):
                 print(f"Didn't get a valid PDF for \"{work['title']}\"")
                 self.mark_download(work['id'], False)
                 return 0
