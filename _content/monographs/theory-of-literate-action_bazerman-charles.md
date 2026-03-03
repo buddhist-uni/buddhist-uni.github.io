@@ -8,7 +8,6 @@ source_url: "https://doi.org/10.37514/PER-B.2013.4791"
 drive_links:
   - "https://drive.google.com/file/d/1z6TcI6T_2znxLQoa5jiA1uidsJDpVfI2/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1G37FIhJHpfop0OLDbymWyYh0do9R9Y9u/view?usp=drivesdk"
-status: featured
 course: language
 tags:
   - rhetoric
