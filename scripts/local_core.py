@@ -25,6 +25,8 @@ from local_gdrive import locked
 TOKEN_PATH = Path('~/core-api.key').expanduser()
 TOKEN = 'Bearer ' + TOKEN_PATH.read_text().strip()
 
+API_LOCK = threading.RLock()
+
 # Recheck every half year at most
 # absurdly, CORE API uses milliseconds for all its timestamps
 # so in this file we just go with that
@@ -37,6 +39,9 @@ IDENTIFIERS_FIELD_TYPES = [
   "ARXIV_ID",
 ]
 
+DOWNLOAD_URL_TO_OUTPUT_RE = re.compile(r'https:\/\/core.ac.uk\/download\/(?:pdf\/)?([0-9]+).(pdf|docx)')
+OUTPUT_URL_TO_OUTPUT_RE = re.compile(r'https:\/\/(?:api\.)core.ac.uk\/v3\/outputs\/([0-9]+)')
+
 class TrackingQueryStatus(IntEnum):
   UNTESTED = 0
   INVALID = 1
@@ -45,50 +50,53 @@ class TrackingQueryStatus(IntEnum):
 
 
 def call_api(subpath: str, params: dict, retries=3):
-  url = "https://api.core.ac.uk/v3/" + subpath
-  try:
-    response = requests.get(
-      url,
-      headers={
-        'Authorization': TOKEN,
-        'User-Agent': USER_AGENT,
-      },
-      params=params,
-    )
-  except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError) as err:
-    if retries > 0:
-      print("CORE API response got cut off. Retrying in 4 seconds...")
-      sleep(4)
-      return call_api(subpath, params, retries=retries-1)
-    else:
-      raise err
-  match response.status_code:
-    case 200:
-      return response.json()
-    case 410:
-      # deleted content
-      raise FileNotFoundError(f"{subpath} returned a 410 Removed")
-    case 429:
-      wait_until_stamp = response.headers['x-ratelimit-retry-after']
-      wait_until = datetime.strptime(wait_until_stamp, '%Y-%m-%dT%H:%M:%S%z')
-      now = datetime.now(wait_until.tzinfo)
-      seconds_until = (wait_until - now).total_seconds()
-      wait_interval = seconds_until + 2 # Add 2 seconds to be polite
-      print(f"CORE API Rate limit hit. Waiting for {wait_interval:.1f} seconds...")
-      sleep(wait_interval)
-      # Don't count this as a retry as the API has asked us to wait
-      return call_api(subpath, params, retries=retries)
-    case 500 | 503:
+  with API_LOCK:
+    url = "https://api.core.ac.uk/v3/" + subpath
+    try:
+      response = requests.get(
+        url,
+        headers={
+          'Authorization': TOKEN,
+          'User-Agent': USER_AGENT,
+        },
+        params=params,
+      )
+    except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError) as err:
       if retries > 0:
-        print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
-        sleep(6)
+        print("CORE API response got cut off. Retrying in 4 seconds...")
+        sleep(4)
         return call_api(subpath, params, retries=retries-1)
       else:
-        raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
-    case 504:
-      raise ValueError(f"Malformed request {params} to {subpath}")
-    case _:
-      raise NotImplementedError(f"Unknown status code {response.status_code}:\n\n{response.text}")
+        raise err
+    match response.status_code:
+      case 200:
+        return response.json()
+      case 404 | 410:
+        # deleted content
+        raise FileNotFoundError(f"{subpath} returned a 410 Removed")
+      case 429:
+        wait_until_stamp = response.headers['x-ratelimit-retry-after']
+        wait_until = datetime.strptime(wait_until_stamp, '%Y-%m-%dT%H:%M:%S%z')
+        now = datetime.now(wait_until.tzinfo)
+        seconds_until = (wait_until - now).total_seconds()
+        wait_interval = seconds_until + 2 # Add 2 seconds to be polite
+        print(f"CORE API Rate limit hit. Waiting for {wait_interval:.1f} seconds...")
+        sleep(wait_interval)
+        # Don't count this as a retry as the API has asked us to wait
+        return call_api(subpath, params, retries=retries)
+      case 500 | 503:
+        if "Cannot assign null to property" in response.text:
+          raise FileNotFoundError(f"{subpath} ran into an unrecoverable internal error.")
+        if retries > 0:
+          print("CORE API overloaded at the moment...waiting 6 secs and trying again...")
+          sleep(6)
+          return call_api(subpath, params, retries=retries-1)
+        else:
+          raise ConnectionRefusedError("CORE API overloaded right now. Try again later")
+      case 504:
+        raise ValueError(f"Malformed request {params} to {subpath}")
+      case _:
+        raise NotImplementedError(f"Unknown status code {response.status_code}:\n\n{response.text}")
 
 def api_timestring_to_timestamp(ts: str | None) -> int | None:
   """The API returns timestamps as ISO-ish strings but requests them as ms timestamps"""
@@ -178,7 +186,8 @@ class CoreAPIWorksCache:
         publisher TEXT,
         -- End CORE fields, below are my fields
         downloaded_date INTEGER,          -- negative means failed
-        en_confidence REAL                -- 0 to 1 that the work is in English
+        en_confidence REAL,               -- 0 to 1 that the work is in English
+        additional_outputs TEXT           -- json array, if more than implied by download_url
       );
     """
 
@@ -267,9 +276,22 @@ class CoreAPIWorksCache:
       f"{api_obj['fullText'] or ''} {api_obj['title'] or ''} {api_obj['abstract'] or ''}",
       Language.ENGLISH,
     )
+    try:
+      outputs = [OUTPUT_URL_TO_OUTPUT_RE.fullmatch(ourl).group(1) for ourl in api_obj['outputs']]
+    except AttributeError:
+      raise ValueError(f"Unknown output url format in {api_obj['outputs']}")
+    dl_out = DOWNLOAD_URL_TO_OUTPUT_RE.fullmatch(api_obj['downloadUrl'])
+    if dl_out:
+      dl_out = dl_out.group(1)
+      if dl_out in outputs:
+        outputs.remove(dl_out)
+    if len(outputs) == 0:
+      outputs = None
+    else:
+      outputs = json.dumps(outputs)
     sql = f"""
-      INSERT INTO works (id, title, created_date, updated_date, data_provider, additional_data_providers, abstract, authors, citation_count, contributors, document_type, download_url, full_text, published_date, publisher, en_confidence)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO works (id, title, created_date, updated_date, data_provider, additional_data_providers, abstract, authors, citation_count, contributors, document_type, download_url, full_text, published_date, publisher, en_confidence, additional_outputs)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       ON CONFLICT(id) DO UPDATE SET
         title = excluded.title,
         updated_date = excluded.updated_date,
@@ -284,7 +306,8 @@ class CoreAPIWorksCache:
         full_text = excluded.full_text,
         published_date = excluded.published_date,
         publisher = excluded.publisher,
-        en_confidence = excluded.en_confidence
+        en_confidence = excluded.en_confidence,
+        additional_outputs = excluded.additional_outputs
       WHERE excluded.updated_date > works.updated_date;
     """
     self.cursor.execute(sql, (
@@ -304,6 +327,7 @@ class CoreAPIWorksCache:
       api_timestring_to_timestamp(api_obj.get('publishedDate')),
       api_obj['publisher'],
       en_conf,
+      outputs,
     ))
 
     for ID_TYPE in IDENTIFIERS_FIELD_TYPES:
@@ -408,6 +432,12 @@ class CoreAPIWorksCache:
     for result in one_page['results']:
       self.upsert_work_from_api(result, tracking_query_id=query_id)
       ret += 1
+    
+    if not one_page['results']:
+      if one_page['totalHits'] > 0:
+        raise NotImplementedError("Teach me how to use offset to fetch past a section with hidden works")
+      return 0
+
     # After inserting that page, we have to double check that we got all
     # of the works with updatedDate exactly = to the new "up_to"
     # otherwise, when we go to get the next page, we'll drop some works
@@ -421,28 +451,37 @@ class CoreAPIWorksCache:
     )
     query_str = f"({query_obj['query']}) AND updatedDate:{new_up_to}"
     print(f"Pulling works matching: {query_str}")
-    boundary_page = call_api(
-      'search/works',
-      {
-        'q': query_str,
-        'limit': self.page_size,
-      },
-      retries=15, # be really persistent about this one
-    )
     seen = set()
     additional = set()
-    assert boundary_page['totalHits'] <= self.page_size, f"Got a page boundary with {boundary_page['totalHits']} hits but out page size is only {self.page_size}"
-    for result in boundary_page['results']:
-      if result['id'] in seen_works:
-        seen.add(result['id'])
-        continue
-      self.upsert_work_from_api(result, tracking_query_id=query_id)
-      additional.add(result['id'])
+    offset = 0
+    total_hits = 1
+    while offset < total_hits:
+      boundary_page = call_api(
+        'search/works',
+        {
+          'q': query_str,
+          'limit': self.page_size,
+          'offset': offset,
+        },
+        retries=15, # be really persistent about this one
+      )
+      total_hits = boundary_page['totalHits']
+      for result in boundary_page['results']:
+        if result['id'] in seen_works:
+          seen.add(result['id'])
+          continue
+        if result['id'] in additional:
+          continue
+        self.upsert_work_from_api(result, tracking_query_id=query_id)
+        additional.add(result['id'])
+      
+      offset += self.page_size
+
     expected_to_see = set(
       result['id'] for result in one_page['results']
       if api_timestring_to_timestamp(result['updatedDate']) == new_up_to
     )
-    assert expected_to_see == seen, f"Boundary query saw {seen} repeats while {expected_to_see} were expected"
+    assert expected_to_see == seen, f"Boundary query saw {len(seen)} repeats while {len(expected_to_see)} were expected"
     if len(additional) > 0:
       print(f"  got {len(additional)} additional hits with the exact boundary updatedDate")
       return ret + len(additional)
@@ -631,6 +670,7 @@ class CoreAPIWorksCache:
     filename = pdf_name_for_work(work)
     outpath = to_folder.joinpath(filename)
     dl = partial(download, filename=outpath, expected_type='pdf', verbose=False)
+    tried_already = set()
     with self._lock:
       source = self.cursor.execute("""
           SELECT id FROM identifiers WHERE work_id = ? AND id_type = 'SOURCE_URL' LIMIT 1
@@ -641,20 +681,8 @@ class CoreAPIWorksCache:
       succ = dl(source['id'])
       if succ:
         return outpath
-    if work.get('download_url'):
-      output_id = re.fullmatch(
-        r'https:\/\/core.ac.uk\/download\/(?:pdf\/)?([0-9]+).pdf',
-        work['download_url'],
-      )
-      if not output_id:
-        if work['download_url'].startswith('http'):
-          succ = dl(work['download_url'])
-          if succ:
-            return outpath
-          else:
-            return None
-        raise ValueError(f"Strange download_url for {work['id']}: {work['download_url']}")
-      output_id = output_id.group(1)
+      tried_already.add(source['id'])
+    def _try_output(output_id) -> Path | None:
       try:
         output = call_api(f"outputs/{output_id}", {})
       except FileNotFoundError:
@@ -663,19 +691,51 @@ class CoreAPIWorksCache:
       if output is None:
         output = {}
       for url in output.get('urls', []):
-        if source and url == source['id']:
+        if url in tried_already:
           continue
         succ = dl(url)
         if succ:
           return outpath
+        else:
+          tried_already.add(url)
       if output.get('downloadUrl'):
+        if output['downloadUrl'] in tried_already:
+          return None
         succ = dl(output['downloadUrl'])
         if succ:
           return outpath
-      if work['download_url'] != output.get('downloadUrl'):
+        tried_already.add(output['downloadUrl'])
+      return None
+    if work.get('download_url'):
+      output_id = DOWNLOAD_URL_TO_OUTPUT_RE.fullmatch(
+        work['download_url'],
+      )
+      if not output_id:
+        if work['download_url'].startswith('http'):
+          succ = dl(work['download_url'])
+          if succ:
+            return outpath
+          else:
+            tried_already.add(work['download_url'])
+        else:
+          raise ValueError(f"Strange download_url for {work['id']}: {work['download_url']}")
+      else:
+        is_pdf = output_id.group(2) == 'pdf'
+        output_id = output_id.group(1)
+        out = _try_output(output_id)
+        if out:
+          return out
+      if work['download_url'] not in tried_already and is_pdf:
         succ = dl(work['download_url'])
         if succ:
           return outpath
+        tried_already.add(work['download_url'])
+    if work.get('additional_outputs'):
+      outputs = json.loads(work['additional_outputs'])
+      for output_id in outputs:
+        out = _try_output(output_id)
+        if out:
+          return out
     return None
   
   def attempt_downloads_for_query(self, query_id: int, to_folder: Path=None, min_en_conf: float=0.8, min_drive_conf: float=0.6, retry_timedelta: int | timedelta=15811200000) -> int:
@@ -721,7 +781,11 @@ class CoreAPIWorksCache:
         if not stop_exceptions.empty():
           return 0
         try:
-          succ = self._attempt_to_download(work, to_folder or temp_path)
+          work_folder = to_folder
+          if not work_folder:
+            work_folder = temp_path.joinpath(str(work['id']))
+            work_folder.mkdir(exist_ok=True)
+          succ = self._attempt_to_download(work, work_folder)
           if succ:
             self.mark_download(work['id'], True)
             hash = md5(succ)
@@ -736,7 +800,7 @@ class CoreAPIWorksCache:
               authors = [author_name_to_normal(author['name']) for author in authors]
               try:
                 fuzzy_dupes = nearestpdf.find_matching_files(work['title'], authors, readpdf(succ))
-              except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError, KeyError):
+              except (pypdf.errors.PdfReadError, pypdf.errors.PdfStreamError, KeyError, LookupError):
                 print(f"Didn't get a valid PDF for \"{work['title']}\"")
                 self.mark_download(work['id'], False)
                 return 0

@@ -33,7 +33,7 @@ HOSTNAME_BLACKLIST = {
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
 REQUEST_HEADERS = {"User-Agent": USER_AGENT}
 FNAME_MAXLEN = 192 # 126 might be safer
-titlefilter = re.compile(r'(<[^<]+?>)|(\[[^\[]+?\])|["""„«»›‹'']')
+titlefilter = re.compile(r'(<[^<]+?>)|(\[[^\[]+?\])|["\'‘’‚‛„«»›‹]')
 
 # When you get a page starting with `key`, look for a link containing `value[0]` and process it with `value[1]`
 PDF_LINKS = {

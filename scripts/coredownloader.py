@@ -1,17 +1,14 @@
 #!/bin/python3
 
-import json
 import journals
 from yaspin import yaspin
-from typing import Any
-from tqdm import tqdm
 from local_core import (
   CoreAPIWorksCache,
 )
 import gdrive
 import nearestpdf
-import titlematch
 import website
+from tag_predictor import DATA_DIRECTORY
 with yaspin(text="Loading website..."):
   website.load()
 
@@ -31,7 +28,7 @@ ANTI_TRACKING_KEYWORDS = [
 TRACKING_QUERY_STR = "(title:Buddhist OR abstract:Buddhist) AND fullText:Buddhist"
 TRACKING_QUERY_STR += "".join(f" AND -{anti}" for anti in ANTI_TRACKING_KEYWORDS)
 
-core = CoreAPIWorksCache('/home/khbh/Desktop/core_api.db')
+core = CoreAPIWorksCache(DATA_DIRECTORY.joinpath('core_api.db'))
 TRACKING_QUERY = core.register_query(TRACKING_QUERY_STR)
 
 LOCAL_DOIS: dict[str, str]
