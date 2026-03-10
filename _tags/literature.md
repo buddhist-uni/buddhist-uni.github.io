@@ -1,6 +1,6 @@
 ---
 title: "Literature (General)"
 status: unpublished
-parents: [art]
+parents: [intelligence, art]
 ---
 
