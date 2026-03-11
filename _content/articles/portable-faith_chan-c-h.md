@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/18xqzubwbVvMhHyKeV-YXy4fii7NQVYJZ/view?usp=drivesdk"
 course: bart
 tags:
-  - japanese
+  - japanese-roots
 year: 2023
 month: dec
 journal: ao
