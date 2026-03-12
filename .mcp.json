@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "buddhist-uni": {
+      "command": "/Users/lsh/projects/divers/buddhist-uni.github.io/search/.venv/bin/python",
+      "args": ["-m", "search.server.mcp_server"],
+      "env": {
+        "PYTHONPATH": "/Users/lsh/projects/divers/buddhist-uni.github.io"
+      }
+    }
+  }
+}

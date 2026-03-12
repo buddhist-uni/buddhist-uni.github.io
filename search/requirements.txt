@@ -1,0 +1,19 @@
+# Vector DB
+qdrant-client>=1.7.0
+
+# Embeddings
+sentence-transformers>=2.6.0
+
+# API
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
+
+# MCP Server
+mcp>=1.0.0
+
+# Already in project requirements.txt (re-listed for clarity)
+python-frontmatter>=1.0.0
+
+# Utils
+tqdm>=4.66.0
