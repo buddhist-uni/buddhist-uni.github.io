@@ -2,7 +2,15 @@
   <div class="the-links">
      {% if include.content.external_url %}{% assign linkfmt = "" %}
         {%- capture linkbody -%}<i class="fa{% if include.content.external_url contains "youtu" %}{% assign linkfmt = "YouTube (link)" %}b fa-youtube"></i> YouTube{% elsif include.content.external_url contains "//www.academia.edu/" %}c-academia"></i>cademia.edu{% assign linkfmt = "Academia.edu" %}{% else %}s fa-{% assign ext = include.content.external_url | slice: -4, 4 %}{% if ext == ".mp3" %}{% assign linkfmt = "mp3" %}file-audio"></i> mp3{% elsif ext == ".zip" %}{% assign linkfmt = "zip" %}file-archive"></i> zip{% elsif ext == "epub" %}{% assign linkfmt = "epub" %}tablet-screen-button"></i> epub{% elsif ext == ".htm" or ext == "html" %}{% assign linkfmt = "html" %}globe"></i> Online{% elsif include.content.external_url contains "download" or include.content.external_url contains "viewcontent.cgi" or include.content.external_url contains "pdf" %}{% assign linkfmt = "pdf" %}file-pdf"></i> pdf{% else %}{% case include.content.category %}{% when "av" %}{% if page.subcat == "film" %}video{% else %}volume-up{% endif %}{% when "booklets" %}book-open{% when "monographs" %}book-open{% else %}globe{% endcase %}"></i> Online{% endif %}{% endif %}{%- endcapture -%}
-        <div class="a-link"><a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a></div>
+        {%- assign is_archive_borrow = false -%}
+        {%- if include.content.external_url contains "archive.org" and include.content.external_url contains "/mode/" and include.content.category == "monographs" -%}
+            {%- assign is_archive_borrow = true -%}
+        {%- endif -%}
+        <div class="a-link">{% if is_archive_borrow %}<details class="copyright details-reset"><summary>{% endif %}<a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a>{% if is_archive_borrow %}
+            <i class="far fa-question-circle"></i>
+        </summary><div>
+            <i class="fas fa-book-reader"></i> This book is available to <strong>borrow for free</strong> on Archive.org with a free account. <a href="https://help.archive.org/help/borrowing-from-the-lending-library/" target="_blank">Learn how to borrow &rarr;</a>
+        </div></details>{% endif %}</div>
     {% endif %}
     {%- if include.content.drive_links.size > 0 -%}
         {%- for link in include.content.drive_links -%}
