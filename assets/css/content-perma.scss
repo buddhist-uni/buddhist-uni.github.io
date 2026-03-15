@@ -147,6 +147,10 @@ div.content_links {
         padding: 5px;
         border-radius: 3px;
         font-size: 96%;
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
     }
 }
 
@@ -163,5 +167,3 @@ div.similar_content_footer {
         }
     }
 }
-
-

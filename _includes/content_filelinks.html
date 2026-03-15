@@ -9,7 +9,7 @@
         <div class="a-link">{% if is_archive_borrow %}<details class="copyright details-reset"><summary>{% endif %}<a class="btn" {% if include.newtab %}target="_blank"{% endif %} {% include content_link_data_attributes.html content=include.content linktype="Main External URL" linkfmt=linkfmt %} href="{{ include.content.external_url }}"{% for nrh in site.data.content.noreferrerhosts %}{% if include.content.external_url contains nrh %} rel="noreferrer"{% break %}{% endif %}{% endfor %}>{{ linkbody }}</a>{% if is_archive_borrow %}
             <i class="far fa-question-circle"></i>
         </summary><div>
-            Reading this book on Archive.org may require a free account. <a href="https://help.archive.org/help/borrowing-from-the-lending-library/" style="text-decoration: underline">Learn more</a>
+            Reading this book on Archive.org may require a free account. <a href="https://help.archive.org/help/borrowing-from-the-lending-library/">Learn more</a>
         </div></details>{% endif %}</div>
     {% endif %}
     {%- if include.content.drive_links.size > 0 -%}
