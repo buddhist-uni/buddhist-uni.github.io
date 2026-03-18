@@ -12,5 +12,7 @@
     "purgecss": "^7.0",
     "uglify-js": "^3.19.3"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "node --test test/**/*.test.js"
+  }
 }
