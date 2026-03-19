@@ -4,6 +4,7 @@
 
 // Parameters
 var BMAX = 250; // Max blurb size in characters
+var RMAX = 100; // Max number of results to display
 
 function getPositions(result, field) {
     var positions = [];
@@ -157,4 +158,71 @@ function displaySearchResult(result, item) {
         }
     }
     return ret + '<p>' + blurb + '</p></li>';
+}
+
+function displaySearchResults(results) {
+    if (results.length) {
+      var ret = '';
+      for (var i in results) {
+        if (i >= RMAX) break;
+        ret += displaySearchResult(results[i], store[results[i].ref]);
+      }
+      return ret;
+    } else {
+      return '<li>No results found</li>';
+    }
+}
+
+self.onmessage = function(e) {
+  var results = [];
+  var warning = "";
+  var words = e.data.q.trim().split(" ");
+  for (var i = 0; i < words.length; i++) {
+    const s = words[i].trim();
+    if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
+      words[i] = "+" + s;
+    } else {
+      words[i] = s;
+    }
+  }
+  var query = words.join(' ').trim();
+  try {
+    results = idx.search(query);
+    if (!results.length){
+      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
+      results = idx.search(e.data.q.trim());
+    }
+  } catch (err) {
+    if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
+      results = idx.search(e.data.q.replaceAll(":"," "));
+    } else { throw err; }
+  }
+  if (!results.length){
+    words = e.data.q.trim().split(" ");
+    if (words.find(function(w){ return w.length <= 2; }) == undefined) {
+      results = idx.search(words.join("~1 ") + "~1");
+      if (results.length)
+        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
+      else
+        warning = "";
+    } else {
+      warning = "";
+    }
+  }
+  if (e.data.filterquery && e.data.filterquery !== "") {
+    var filteredResults = idx.search(e.data.filterquery);
+    results = results.filter(function(result) {
+      return filteredResults.some(function(filteredResult) {
+        return filteredResult.ref === result.ref;
+      });
+    });
+  }
+  self.postMessage({
+    "warninghtml": warning,
+    "html": displaySearchResults(results),
+    "count": results ? results.length : 0,
+    "q": e.data.q,
+    "filterquery": e.data.filterquery,
+    "qt": e.data.qt
+  });
 }
