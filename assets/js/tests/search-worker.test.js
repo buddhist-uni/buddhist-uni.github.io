@@ -7,41 +7,17 @@ const path = require('node:path');
 // Helper: bring vm-realm objects into the current realm for deepEqual
 function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
 
-// search_index.js is a Jekyll/Liquid template, so we cannot load it
-// directly. Instead we extract the pure JavaScript functions that do
-// not depend on Liquid-generated data and test them in isolation.
-
-// First, load utils.js (search_index.js depends on sortedInsert and Ranges)
+// Load utils.js (search_functions.js depends on sortedInsert and Ranges)
 const utilsSrc = fs.readFileSync(
   path.join(__dirname, '..', 'utils.js'),
   'utf-8'
 );
 
-// Extract pure JS functions from the Liquid template
-const searchSrc = fs.readFileSync(
-  path.join(__dirname, '..', 'search_index.js'),
+// Load search_functions.js directly (no more extractFunction parser needed)
+const searchFnSrc = fs.readFileSync(
+  path.join(__dirname, '..', 'search_functions.js'),
   'utf-8'
 );
-
-function extractFunction(src, funcName) {
-  const startRe = new RegExp(`^function ${funcName}\\b`, 'm');
-  const match = startRe.exec(src);
-  if (!match) throw new Error(`Could not find function ${funcName}`);
-  let depth = 0;
-  let started = false;
-  let end = match.index;
-  for (let i = match.index; i < src.length; i++) {
-    if (src[i] === '{') { depth++; started = true; }
-    if (src[i] === '}') { depth--; }
-    if (started && depth === 0) { end = i + 1; break; }
-  }
-  return src.substring(match.index, end);
-}
-
-const fnSrcs = [
-  'categoryName', 'getPositions', 'resultMatched',
-  'addMatchHighlights', 'getBlurbForResult'
-].map(name => extractFunction(searchSrc, name));
 
 // vm.createContext() creates a bare sandbox with no built-in globals.
 // Unlike the main Node.js runtime, Math, Array, etc. must be provided explicitly.
@@ -53,19 +29,35 @@ vm.runInContext(
   'this.locationOf = locationOf;\nthis.sortedInsert = sortedInsert;\n',
   sandbox
 );
-// Provide BMAX constant used by getBlurbForResult
-vm.runInContext('var BMAX = 250;\n', sandbox);
+
+// Provide a minimal lunr stub for handleSearchMessage
 vm.runInContext(
-  fnSrcs.join('\n') +
+  'var lunr = { stopWordFilter: function(s) { ' +
+  '  var stops = ["the","a","an","and","is","in","it","of","to"];' +
+  '  return stops.indexOf(s.toLowerCase()) < 0 ? s : undefined;' +
+  '} };\n',
+  sandbox
+);
+
+// Provide an empty store so displaySearchResults can run
+vm.runInContext('var store = {};\n', sandbox);
+
+vm.runInContext(
+  searchFnSrc +
   '\nthis.categoryName = categoryName;\n' +
   'this.getPositions = getPositions;\n' +
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
-  'this.getBlurbForResult = getBlurbForResult;\n',
+  'this.getBlurbForResult = getBlurbForResult;\n' +
+  'this.handleSearchMessage = handleSearchMessage;\n' +
+  'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
 
-const { categoryName, getPositions, resultMatched, addMatchHighlights, getBlurbForResult } = sandbox;
+const {
+  categoryName, getPositions, resultMatched,
+  addMatchHighlights, getBlurbForResult, handleSearchMessage
+} = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
 
@@ -244,5 +236,102 @@ describe('getBlurbForResult', () => {
     const item = { title: 'Test', description: null, content: content };
     const blurb = getBlurbForResult(result, item, [50]);
     assert.ok(blurb.includes('MATCH') || blurb.includes('<strong>'));
+  });
+});
+
+// ── handleSearchMessage ─────────────────────────────────────────────
+
+describe('handleSearchMessage', () => {
+  it('returns result object with expected keys', () => {
+    const mockSearch = () => [];
+    const data = { q: 'dharma', filterquery: '', qt: 'test' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    assert.ok('warninghtml' in result);
+    assert.ok('html' in result);
+    assert.ok('count' in result);
+    assert.ok('q' in result);
+    assert.equal(result.q, 'dharma');
+    assert.equal(result.qt, 'test');
+  });
+
+  it('returns no-results HTML when search yields nothing', () => {
+    const mockSearch = () => [];
+    const data = { q: 'xyz', filterquery: '', qt: '' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    assert.equal(result.count, 0);
+    assert.ok(result.html.includes('No results found'));
+  });
+
+  it('prefixes non-stop words with + for required matching', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return []; };
+    const data = { q: 'dharma practice', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    // First call should have +dharma +practice (both non-stop words)
+    assert.ok(queries[0].includes('+dharma'));
+    assert.ok(queries[0].includes('+practice'));
+  });
+
+  it('does not prefix stop words with +', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return []; };
+    const data = { q: 'the dharma', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    // "the" is a stop word, should not get +
+    assert.ok(!queries[0].includes('+the'));
+    assert.ok(queries[0].includes('+dharma'));
+  });
+
+  it('does not prefix words already starting with + or -', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return []; };
+    const data = { q: '+dharma -samsara', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    // Should preserve existing prefixes, not double them
+    assert.ok(queries[0].includes('+dharma'));
+    assert.ok(queries[0].includes('-samsara'));
+    assert.ok(!queries[0].includes('++'));
+  });
+
+  it('falls back to unprefixed query when required query returns nothing', () => {
+    let callCount = 0;
+    const mockSearch = () => { callCount++; return []; };
+    const data = { q: 'dharma nibbana', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    // Should call at least twice: once with +prefixed, once with original
+    assert.ok(callCount >= 2, `Expected at least 2 search calls, got ${callCount}`);
+  });
+
+  it('filters results by filterquery when provided', () => {
+    const mockResults = [
+      { ref: 'a', matchData: { metadata: {} } },
+      { ref: 'b', matchData: { metadata: {} } },
+    ];
+    const filterResults = [{ ref: 'b' }];
+    // Set up store entries so displaySearchResults can render
+    vm.runInContext(
+      'store["a"] = { type:"content", title:"A", description:"desc a", content:"", ' +
+      '  tags:[], authors:[], category:"articles", formats:[], url:"/a" };\n' +
+      'store["b"] = { type:"content", title:"B", description:"desc b", content:"", ' +
+      '  tags:[], authors:[], category:"articles", formats:[], url:"/b" };\n',
+      sandbox
+    );
+    const mockSearch = (q) => {
+      if (q.includes('filter')) return filterResults;
+      return mockResults;
+    };
+    const data = { q: 'test', filterquery: 'filter:tag', qt: '' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    assert.equal(result.count, 1);
+    // Clean up store
+    vm.runInContext('delete store["a"]; delete store["b"];', sandbox);
+  });
+
+  it('passes through q and filterquery in result', () => {
+    const mockSearch = () => [];
+    const data = { q: 'meditation', filterquery: 'tag:zen', qt: 'search' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    assert.equal(result.q, 'meditation');
+    assert.equal(result.filterquery, 'tag:zen');
   });
 });
