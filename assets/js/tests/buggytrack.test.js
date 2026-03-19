@@ -8,10 +8,12 @@ const path = require('node:path');
 // The file also creates a BuggyTracker that needs `document`, so we
 // provide minimal DOM stubs to let the file evaluate without errors.
 const src = fs.readFileSync(
-  path.join(__dirname, '..', 'assets', 'js', 'buggytrack.js'),
+  path.join(__dirname, '..', 'buggytrack.js'),
   'utf-8'
 );
 
+// vm.createContext() creates a bare sandbox with no built-in globals.
+// Unlike the main Node.js runtime, Math, Array, etc. must be provided explicitly.
 const sandbox = {
   Math,
   console,

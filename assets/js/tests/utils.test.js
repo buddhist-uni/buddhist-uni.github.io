@@ -9,9 +9,11 @@ function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
 
 // Load utils.js into a sandbox
 const utilsSrc = fs.readFileSync(
-  path.join(__dirname, '..', 'assets', 'js', 'utils.js'),
+  path.join(__dirname, '..', 'utils.js'),
   'utf-8'
 );
+// vm.createContext() creates a bare sandbox with no built-in globals.
+// Unlike the main Node.js runtime, Math, Array, etc. must be provided explicitly.
 const sandbox = { Set, Math, RegExp, Array, console };
 vm.createContext(sandbox);
 vm.runInContext(
