@@ -68,3 +68,7 @@ var idx = lunr(function () {
       }, {boost: v.boost});
     }
 });
+
+self.onmessage = function(e) {
+  self.postMessage(handleSearchMessage(e.data, idx.search.bind(idx)));
+}

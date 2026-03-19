@@ -1,7 +1,3 @@
-// Pure JavaScript functions for the search worker.
-// Split from search_index.js so they can be tested independently
-// without the Jekyll/Liquid build step.
-
 // Parameters
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
@@ -173,10 +169,10 @@ function displaySearchResults(results) {
     }
 }
 
-self.onmessage = function(e) {
+function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
-  var words = e.data.q.trim().split(" ");
+  var words = data.q.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
@@ -187,20 +183,20 @@ self.onmessage = function(e) {
   }
   var query = words.join(' ').trim();
   try {
-    results = idx.search(query);
+    results = searchFn(query);
     if (!results.length){
       warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-      results = idx.search(e.data.q.trim());
+      results = searchFn(data.q.trim());
     }
   } catch (err) {
     if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-      results = idx.search(e.data.q.replaceAll(":"," "));
+      results = searchFn(data.q.replaceAll(":"," "));
     } else { throw err; }
   }
   if (!results.length){
-    words = e.data.q.trim().split(" ");
+    words = data.q.trim().split(" ");
     if (words.find(function(w){ return w.length <= 2; }) == undefined) {
-      results = idx.search(words.join("~1 ") + "~1");
+      results = searchFn(words.join("~1 ") + "~1");
       if (results.length)
         warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
       else
@@ -209,20 +205,20 @@ self.onmessage = function(e) {
       warning = "";
     }
   }
-  if (e.data.filterquery && e.data.filterquery !== "") {
-    var filteredResults = idx.search(e.data.filterquery);
+  if (data.filterquery && data.filterquery !== "") {
+    var filteredResults = searchFn(data.filterquery);
     results = results.filter(function(result) {
       return filteredResults.some(function(filteredResult) {
         return filteredResult.ref === result.ref;
       });
     });
   }
-  self.postMessage({
+  return {
     "warninghtml": warning,
     "html": displaySearchResults(results),
     "count": results ? results.length : 0,
-    "q": e.data.q,
-    "filterquery": e.data.filterquery,
-    "qt": e.data.qt
-  });
+    "q": data.q,
+    "filterquery": data.filterquery,
+    "qt": data.qt
+  };
 }
