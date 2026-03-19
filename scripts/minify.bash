@@ -37,6 +37,8 @@ npx cleancss --batch --batch-suffix '' -O2 \
 echo "Minifying Search JS..."
 npx uglify-js $BUILD_DIR/assets/js/search_index.js -o $BUILD_DIR/assets/js/search_index.min.js -c -m
 mv $BUILD_DIR/assets/js/search_index.min.js $BUILD_DIR/assets/js/search_index.js
+npx uglify-js $BUILD_DIR/assets/js/search_worker_init.js -o $BUILD_DIR/assets/js/search_worker_init.min.js -c -m
+mv $BUILD_DIR/assets/js/search_worker_init.min.js $BUILD_DIR/assets/js/search_worker_init.js
 # The other js files are too small to need minification
 
 echo "Done!"
