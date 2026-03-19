@@ -14,7 +14,7 @@ const OBU_STEMMER = function (token, i, tokens) {
     return token;
   }
   return lunr.stemmer(token, i, tokens);
-}
+};
 
 {%- assign ccurly = "}" -%}
 {%- assign ocurly = "{" -%}
