@@ -282,15 +282,32 @@ describe('handleSearchMessage', () => {
     assert.ok(queries[0].includes('+dharma'));
   });
 
-  it('does not prefix words already starting with + or -', () => {
+  it('preserves +- prefix combination', () => {
     const queries = [];
     const mockSearch = (q) => { queries.push(q); return []; };
     const data = { q: '+dharma -samsara', filterquery: '', qt: '' };
     handleSearchMessage(data, mockSearch);
-    // Should preserve existing prefixes, not double them
     assert.ok(queries[0].includes('+dharma'));
     assert.ok(queries[0].includes('-samsara'));
     assert.ok(!queries[0].includes('++'));
+  });
+
+  it('preserves -- prefix combination', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return []; };
+    const data = { q: '-dharma -samsara', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    assert.ok(queries[0].includes('-dharma'));
+    assert.ok(queries[0].includes('-samsara'));
+  });
+
+  it('preserves -+ prefix combination', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return []; };
+    const data = { q: '-dharma +samsara', filterquery: '', qt: '' };
+    handleSearchMessage(data, mockSearch);
+    assert.ok(queries[0].includes('-dharma'));
+    assert.ok(queries[0].includes('+samsara'));
   });
 
   it('falls back to unprefixed query when required query returns nothing', () => {
