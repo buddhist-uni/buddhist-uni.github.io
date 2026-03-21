@@ -25,7 +25,7 @@
     .instructions {
         font-family: $base-font-family;
     }
-    // Dylan's edit
+    /* Dylan's edit - line 28 - 44 */
     .sutta-finder{
         border: 2px solid black;
         padding: 20px;
@@ -33,7 +33,7 @@
     .btn{
         border-radius: 8px;
         background-color: $banner-color;
-        padding: 15px;
+        padding: 10px;
         color: white;
         transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
     }
