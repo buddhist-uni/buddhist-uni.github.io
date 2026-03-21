@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-free": "^7.0",
     "@primer/css": "^20.8",
     "clean-css-cli": "^5.6",
+    "html-validate": "^10.11.2",
     "purgecss": "^7.0",
     "uglify-js": "^3.19.3"
   },

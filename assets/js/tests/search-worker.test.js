@@ -3,6 +3,26 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const path = require('node:path');
+const { HtmlValidate } = require('html-validate');
+
+const htmlValidate = new HtmlValidate({
+  rules: {
+    'void-style': 'off',
+    'no-trailing-whitespace': 'off',
+    'doctype-html': 'off',
+    'document-structure': 'off',
+    'missing-doctype': 'off',
+    'element-required-content': 'off',
+    'no-raw-characters': 'off',
+  }
+});
+
+function assertValidHtml(html, label) {
+  const report = htmlValidate.validateStringSync(`<div>${html}</div>`);
+  assert.ok(report.valid, `${label}: invalid HTML — ${
+    report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
+  }`);
+}
 
 // Helper: bring vm-realm objects into the current realm for deepEqual
 function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
@@ -153,6 +173,7 @@ describe('addMatchHighlights', () => {
     };
     const highlighted = addMatchHighlights(result, 'hello world', 'content');
     assert.ok(highlighted.includes('<strong>hello</strong>'));
+    assertValidHtml(highlighted, 'addMatchHighlights single match');
   });
 
   it('returns original text when no matches for the field', () => {
@@ -175,6 +196,7 @@ describe('addMatchHighlights', () => {
     const highlighted = addMatchHighlights(result, 'foo is bar!!', 'content');
     assert.ok(highlighted.includes('<strong>foo</strong>'));
     assert.ok(highlighted.includes('<strong>bar</strong>'));
+    assertValidHtml(highlighted, 'addMatchHighlights multiple matches');
   });
 
   it('respects startindex and endindex parameters', () => {
@@ -185,6 +207,7 @@ describe('addMatchHighlights', () => {
     // match at position 5 length 3 => "wor" within the blurb
     const highlighted = addMatchHighlights(result, 'lo wor', 'content', 3, 9);
     assert.ok(highlighted.includes('<strong>'));
+    assertValidHtml(highlighted, 'addMatchHighlights with startindex/endindex');
   });
 });
 
@@ -202,6 +225,7 @@ describe('getBlurbForResult', () => {
     };
     const blurb = getBlurbForResult(result, item, []);
     assert.ok(blurb.includes('talk about dharma'));
+    assertValidHtml(blurb, 'getBlurbForResult title match');
   });
 
   it('returns description when no content positions', () => {
@@ -215,6 +239,7 @@ describe('getBlurbForResult', () => {
     };
     const blurb = getBlurbForResult(result, item, []);
     assert.ok(blurb.includes('short description'));
+    assertValidHtml(blurb, 'getBlurbForResult no content positions');
   });
 
   it('truncates long descriptions with ellipsis', () => {
@@ -226,16 +251,47 @@ describe('getBlurbForResult', () => {
     const blurb = getBlurbForResult(result, item, []);
     assert.ok(blurb.endsWith('...'));
     assert.ok(blurb.length < longDesc.length);
+    assertValidHtml(blurb, 'getBlurbForResult truncated description');
   });
 
   it('extracts content blurb around match positions', () => {
+    // 'a '.repeat(50) produces 100 chars, so MATCH starts at index 100
     const result = {
-      matchData: { metadata: { term: { content: { position: [[50, 5]] } } } }
+      matchData: { metadata: { term: { content: { position: [[100, 5]] } } } }
     };
     const content = 'a '.repeat(50) + 'MATCH' + ' b'.repeat(200);
     const item = { title: 'Test', description: null, content: content };
-    const blurb = getBlurbForResult(result, item, [50]);
-    assert.ok(blurb.includes('MATCH') || blurb.includes('<strong>'));
+    const blurb = getBlurbForResult(result, item, [100]);
+    assert.ok(blurb.includes('<strong>MATCH</strong>'),
+      'Expected MATCH to be wrapped in <strong> tags');
+    assertValidHtml(blurb, 'getBlurbForResult content blurb');
+  });
+
+  it('finds the section with the most matches', () => {
+    // Build content longer than BMAX (250) so the algorithm must choose a section.
+    // Place a cluster of 3 matches early and a lone match (IGNORE) far away.
+    // Positions array (sorted): [50=MATCH, 65=ME, 77=INSTEAD, 400=IGNORE]
+    // The algorithm should prefer the cluster (3 matches within BMAX) over the lone match.
+    const content = 'a'.repeat(50) + 'MATCH' + 'c'.repeat(10) + 'ME' +
+                    'c'.repeat(10) + 'INSTEAD' + 'b'.repeat(316) + 'IGNORE' + 'e'.repeat(100);
+    const matchPos = 50;
+    const mePos = 50 + 5 + 10;      // 65
+    const insteadPos = 65 + 2 + 10; // 77
+    const ignorePos = 77 + 7 + 316; // 400
+    const result = {
+      matchData: { metadata: {
+        kw: { content: { position: [
+          [matchPos, 5], [mePos, 2], [insteadPos, 7], [ignorePos, 6]
+        ] } },
+      } }
+    };
+    const positions = [matchPos, mePos, insteadPos, ignorePos];
+    const item = { title: 'Test', description: null, content: content };
+    const blurb = getBlurbForResult(result, item, positions);
+    // Should pick the section with the most matches (MATCH, ME, INSTEAD) not the lone IGNORE
+    assert.ok(blurb.includes('MATCH'), 'Expected blurb to contain MATCH');
+    assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
+    assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
   });
 });
 
