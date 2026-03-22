@@ -166,14 +166,28 @@ function displaySearchResults(results) {
       return ret;
     } else {
       //Dylan's failsafe no result feature - check search.scss for css edits
-      return '<div class="sutta-finder"><li>No results found</li><li>We may not have every sutta available and we recommend using sutta finder.</li><li>Click the button below - (opens in new tab)<li><a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder!</a></li></div>';
+      return '<div class="sutta-finder"><li>No results found</li><li>We may not have every sutta available and we recommend using sutta finder.</li><li>Click the button below - (opens in new tab)<li><a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder!</a></li></div><div class="sutta-finder"><li>Or if you would like to use <strong>Sutta Central</strong></li><li>Click the button below - (opens in new tab)<li><a href="https://suttacentral.net/?lang=en" class="btn" target="_blank">Sutta Central!</a></li></div>';
     }
 }
 
+/* #region Handle Search */
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
-  var words = data.q.trim().split(" ");
+
+  // Dylan's edit - remove quotes?
+  // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
+  var preWordsParse = data.q.replace(/["']/g, "");
+
+  // Normalize leading nikaya index, e.g. "MN6" -> "MN 6"
+  // I wrote out some for loops and char checks but AI suggested regex when I had him check my code.
+  // Regex seems straight forward you just need to research it as I still need to. I would have preferred manually doing it so I can practice my ability
+  preWordsParse = preWordsParse.replace(/^(\s*)(MN|SN|SNP|AN|DN)\s*(\d+)/i, function(_, leadingSpace, nikaya, number) {
+    return leadingSpace + nikaya.toUpperCase() + " " + number;
+  });
+
+  // Back to the original functionality
+  var words = preWordsParse.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
