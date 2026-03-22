@@ -270,29 +270,27 @@ describe('getBlurbForResult', () => {
 
   it('finds the section with the most matches', () => {
     // Build content longer than BMAX (250) so the algorithm must choose a section.
-    // Place a cluster of 3 matches early and a lone match (IGNORE) far away.
-    // Positions array (sorted): [50=MATCH, 65=ME, 77=INSTEAD, 400=IGNORE]
-    // The algorithm should prefer the cluster (3 matches within BMAX) over the lone match.
-    const content = 'a'.repeat(50) + 'MATCH' + 'c'.repeat(10) + 'ME' +
-                    'c'.repeat(10) + 'INSTEAD' + 'b'.repeat(316) + 'IGNORE' + 'e'.repeat(100);
-    const matchPos = 50;
-    const mePos = 50 + 5 + 10;      // 65
-    const insteadPos = 65 + 2 + 10; // 77
-    const ignorePos = 77 + 7 + 316; // 400
+    // Place a lone match (IGNORE) FIRST, then a cluster of 3 matches later.
+    // A greedy algorithm that picks the first match would incorrectly select IGNORE.
+    // Positions array (sorted): [10=IGNORE, 320=MATCH, 335=ME, 347=INSTEAD]
+    const content = 'a'.repeat(10) + 'IGNORE' + 'b'.repeat(304) + 'MATCH' +
+                    'c'.repeat(10) + 'ME' + 'c'.repeat(10) + 'INSTEAD' + 'e'.repeat(100);
+    const ignorePos = 10;
+    const matchPos = 10 + 6 + 304;    // 320
+    const mePos = 320 + 5 + 10;       // 335
+    const insteadPos = 335 + 2 + 10;  // 347
     const result = {
       matchData: { metadata: {
         kw: { content: { position: [
-          [matchPos, 5], [mePos, 2], [insteadPos, 7], [ignorePos, 6]
+          [ignorePos, 6], [matchPos, 5], [mePos, 2], [insteadPos, 7]
         ] } },
       } }
     };
-    const positions = [matchPos, mePos, insteadPos, ignorePos];
+    const positions = [ignorePos, matchPos, mePos, insteadPos];
     const item = { title: 'Test', description: null, content: content };
     const blurb = getBlurbForResult(result, item, positions);
-    // Assert the negative first: a greedy implementation that includes everything
-    // would pass the positive checks below but fail here.
+    // Should pick the cluster (MATCH, ME, INSTEAD) not the lone IGNORE
     assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
-    // Should pick the section with the most matches (MATCH, ME, INSTEAD)
     assert.ok(blurb.includes('MATCH'), 'Expected blurb to contain MATCH');
     assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
   });
