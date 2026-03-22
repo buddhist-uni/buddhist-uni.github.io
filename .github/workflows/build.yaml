@@ -11,11 +11,19 @@ jobs:
         BUILD_DIR: /home/runner/work/buddhist-uni.github.io/jekyll_build
     steps:
       - name: Checkout the Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Check Filenames and Headers
         run: bash scripts/check-files.bash
+      - name: Install node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25.0
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+      - run: npm ci
+      - run: npm test
       - name: Download prod build
         uses: dawidd6/action-download-artifact@master
         with:
@@ -39,13 +47,6 @@ jobs:
           else
               echo "The previous commit didn't touch any olid's, so short-circuiting the download script"
           fi
-      - name: Install node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 25.0
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
-      - run: npm ci
       - run: bash ./scripts/install-deps.bash
       - name: Install build requirements
         uses: ruby/setup-ruby@v1
@@ -61,7 +62,7 @@ jobs:
       - name: Minify CSS, HTML, and JS
         run: bash scripts/minify.bash
       - name: Upload Build as Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ env.BUILD_DIR }}
           retention-days: 62
