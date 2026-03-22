@@ -9,11 +9,11 @@ course: path
 status: featured
 tags:
   - thought
-  - problems
   - mn
   - pali-canon
 # buddha tag covered by Nyanamoli's *Life*
 # nibbana covered by *The Island*
+# monastic-advice and problems covered by AN 6.58
 year: 2009
 pages: 7
 parallels:

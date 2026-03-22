@@ -3,7 +3,7 @@ title: "Mindfulness of Death (Interview)"
 authors:
   - "Nikki Mirghafori"
   - "Sigal Samuel"
-external_url: "https://www.vox.com/21363483/mindfulness-of-death-mortality-meditation-nikki-mirghafori"
+external_url: "https://web.archive.org/web/2020/https://www.vox.com/21363483/mindfulness-of-death-mortality-meditation-nikki-mirghafori"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1aSWUZpo2Y4L3dCkIolSXIlz4Qhm3-pVp"]
 year: 2020

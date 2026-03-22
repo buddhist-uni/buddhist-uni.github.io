@@ -214,6 +214,10 @@ We will return to Metaphor and Literalism in a few chapters, but first let us ta
 {% include content_blurb.html category="essays" slug="consciousness-where-nothing_sujato" %}
 - And Ven. Sujato puts the final nail in the coffin by putting this sutta back into its historical context.
 
+{% include content_blurb.html category="canon" slug="sn22.29" %}
+- This sutta reiterates what we see throughout the canon, that “If you take pleasure in [any form of] consciousness, you take pleasure in suffering.”
+
+
 #### The Unconditioned and Nonlocality
 
 {% include content_blurb.html category="canon" slug="an3.47" %}

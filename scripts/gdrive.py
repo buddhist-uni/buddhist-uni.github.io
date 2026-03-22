@@ -1,116 +1,149 @@
 #!/bin/python3
 
-import os.path
-from pathlib import Path
+########
+# Personal Google Drive Utilities
+#
+# This file contains a number of utility functions for interacting with my
+# Google Drive Library which are specifically tailored to my Drive's structure.
+#
+# This file can be run as a script, in which case it takes links and moves them
+# to a Drive folder according to the slugs in _data/drive_folders.json
+#   (see get_gfolders_for_course for how those slugs are parsed)
+########
+
 import requests
-import socket
-from datetime import datetime, timezone
-from time import sleep
+import enum
+from datetime import datetime
+from pathlib import Path
+import readline
+from typing import Callable, Iterable
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from math import floor
-from io import BytesIO, BufferedIOBase
+import atexit
 from strutils import (
   titlecase,
   git_root_folder,
   input_with_prefill,
-  input_with_tab_complete,
-  file_info,
   prompt,
-  approx_eq,
   whitespace,
   yt_url_to_plid_re,
   yt_url_to_id_re,
+  file_info,
+  radio_dial,
+  system_open,
 )
-import pdfutils
 import json
 import re
-from functools import cache
 from archivedotorg import archive_urls
 try:
-  import joblib
   from yaspin import yaspin
-  from tqdm import tqdm
-  from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from bs4 import BeautifulSoup
-  from google.auth.transport.requests import Request
-  from google.oauth2.credentials import Credentials
-  from google_auth_oauthlib.flow import InstalledAppFlow
-  from googleapiclient.discovery import build
-  from googleapiclient.http import (
-    MediaIoBaseUpload,
-    MediaIoBaseDownload,
-    MediaFileUpload,
-    BatchHttpRequest,
-    HttpError,
-  )
-  from youtube_transcript_api import YouTubeTranscriptApi
-  from youtube_transcript_api import _errors as YouTubeTranscriptErrors
+  from tqdm import tqdm
 except:
-  print("pip install yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api")
+  print("pip install yaspin bs4 tqdm")
   exit(1)
 
-# If modifying these scopes, have to login again.
-SCOPES = [
-  'https://www.googleapis.com/auth/drive',
-  'https://www.googleapis.com/auth/youtube.readonly',
-]
-# The client secrets file can be made and downloaded from your developer console:
-# https://console.developers.google.com/apis/credentials
-CLIENTSECRETS = os.path.expanduser("~/library-utils-client-secret.json")
-# This credentials file is created automatically by this script when the user logs in
-CREDFILE = os.path.expanduser('~/gtoken.json')
+from gdrive_base import (
+  folderlink_to_id,
+  FOLDER_LINK,
+  link_to_id,
+  move_drive_file,
+  get_shortcuts_to_gfile,
+  create_drive_shortcut,
+  trash_drive_file,
+  get_ytvideo_snippets,
+  fetch_youtube_transcript,
+  htmlify_ytdesc,
+  _yt_thumbnail,
+  get_ytplaylist_snippet,
+  get_ytvideo_snippets_for_playlist,
+  DOC_LINK,
+  create_doc,
+  download_file,
+  DRIVE_LINK,
+  FOLDER_LINK_PREFIX,
+  batch_get_files_by_id,
+  GFIDREGEX,
+)
+import local_gdrive
+from google.auth.exceptions import TransportError
+from httplib2 import ServerNotFoundError
+
 FOLDERS_DATA_FILE = git_root_folder.joinpath("_data", "drive_folders.json")
-FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
-FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
-DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
-DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
-GFIDREGEX = '([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})'
-LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
-GFIDREGEX = re.compile(GFIDREGEX)
 
-disk_memorizor = joblib.Memory(git_root_folder.joinpath("scripts/.gcache"), verbose=0)
+gcache_folder = git_root_folder.joinpath("scripts/.gcache")
+gcache = local_gdrive.DriveCache(gcache_folder.joinpath("drive.sqlite"))
+try:
+  gcache.update()
+except (ServerNotFoundError, TransportError):
+  pass # We're offline. No big deal. That's why it's a local cache :)
+atexit.register(gcache.close)
 
-YTTranscriptAPI = None
+OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
 
-def execute(gapicall, retries=4, backoff=1):
-  try:
-    return gapicall.execute()
-  except (HttpError, socket.error, socket.timeout, ConnectionError) as e:
-    if retries <= 0:
-      raise e
-    print(e)
-    print(f"Retrying in {backoff}s...")
-    sleep(backoff)
-    return execute(gapicall, retries=retries-1, backoff=backoff*2)
 
-def link_to_id(link):
-  if not link:
-    return None
-  ret = GFIDREGEX.fullmatch(link)
-  if ret:
-    return ret.groups()[0]
-  ret = LINKIDREGEX.search(link)
-  if ret:
-    return ret.groups()[0]
-  ret = folderlink_to_id(link)
-  if ret:
-    return ret
-  if link.startswith("https://drive.google.com/open?id="):
-    return link[len("https://drive.google.com/open?id="):].split('&')[0]
-  return None
 
-def folderlink_to_id(link):
-  if not link:
-    return None
-  if link.startswith(FOLDER_LINK_PREFIX):
-    ret = link[len(FOLDER_LINK_PREFIX):]
-    return ret.split('?')[0].split('/')[0]
-  if link.startswith("https://drive.google.com/folderview?id="):
-    return link[len("https://drive.google.com/folderview?id="):].split('&')[0]
-  return None
-
-def get_known_courses():
+def course_input_completer_factory() -> Callable[[str, int], str]:
+  gfolders: dict[str, dict[str, str]]
   gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
-  return list(filter(None, gfolders.keys()))
+  suggestions_cache: dict[str, list[str]]
+  suggestions_cache = dict()
+  subfolders_cache = dict()
+  def _ret(so_far: str, suggestion_idx: int) -> str:
+    if so_far not in suggestions_cache:
+      if '/' not in so_far:
+        suggestions_cache[so_far] = [
+          course_name for course_name in gfolders.keys()
+          if course_name and course_name.startswith(so_far)
+        ]
+      else:
+        parts = so_far.split('/')
+        course = parts[0]
+        if course not in gfolders:
+          suggestions_cache[so_far] = []
+        else:
+          links = gfolders[course]
+          flink = links['private'] or links['public']
+          fid = folderlink_to_id(flink)
+          pidx = 1
+          prefix = course
+          while True:
+            if fid in subfolders_cache:
+              subfolders = subfolders_cache[fid]
+            else:
+              subfolders = gcache.get_subfolders(fid)
+              subfolders_cache[fid] = subfolders
+            matches = [f for f in subfolders if parts[pidx].lower() in f['name'].lower()]
+            for f in matches:
+              if f['id'] not in subfolders_cache:
+                subfolders_cache[f['id']] = gcache.get_subfolders(f['id'])
+            if len(parts) <= pidx + 1:
+              suggestions_cache[so_far] = [f"{prefix}/{f['name']}{'/' if subfolders_cache[f['id']] else ''}" for f in matches]
+              break
+            if len(matches) != 1: # Don't know which, so we better run
+              suggestions_cache[so_far] = []
+              break
+            fid = matches[0]['id']
+            prefix = f"{prefix}/{matches[0]['name']}"
+            pidx += 1
+    return suggestions_cache[so_far][suggestion_idx]
+
+  return _ret
+
+def input_course_string_with_tab_complete(prompt='course: ', prefill=None):
+    prev_complr = readline.get_completer()
+    prev_delims = readline.get_completer_delims()
+    readline.set_completer(course_input_completer_factory())
+    readline.set_completer_delims('')
+    readline.parse_and_bind('tab: complete')
+    if prefill:
+      ret = input_with_prefill(prompt, prefill)
+    else:
+      ret = input(prompt)
+    readline.set_completer(prev_complr)
+    readline.set_completer_delims(prev_delims)
+    return ret
+
 
 def add_tracked_folder(slug, public, private, gfolders=None):
   gfolders = gfolders or json.loads(FOLDERS_DATA_FILE.read_text())
@@ -135,12 +168,7 @@ def get_gfolders_for_course(course):
   while len(parts) > 0:
     if not parts[0]: # use "course/" syntax to move to the private version of the course
       return (None, private_folder)
-    subdirs_cached = get_subfolders.check_call_in_cache(private_folder)
-    if not subdirs_cached:
-      with yaspin(text="Loading subfolders..."):
-        subfolders = get_subfolders(private_folder)
-    else:
-      subfolders = get_subfolders(private_folder)
+    subfolders = gcache.get_subfolders(private_folder)
     print(f"Got subfolders: {[f.get('name') for f in subfolders]}")
     q = parts[0].lower()
     found = False
@@ -162,11 +190,6 @@ def get_gfolders_for_course(course):
     if found:
       del parts[0]
       continue
-    if subdirs_cached:
-      print("Clearing the cache and retrying...")
-      cachekey = get_subfolders._get_args_id(private_folder)
-      get_subfolders.store_backend.clear_item((get_subfolders.func_id, cachekey))
-      continue
     print(f"No subfolder found matching \"{q}\"")
     q = input_with_prefill("Create new subfolder: ", titlecase(parts[0]))
     if not q:
@@ -175,7 +198,7 @@ def get_gfolders_for_course(course):
           return (public_folder, private_folder)
       print("Okay, will just put in the private folder then.")
       return (None, private_folder)
-    subfolder = create_folder(q, private_folder)
+    subfolder = gcache.create_folder(q, private_folder)
     if not subfolder:
       raise RuntimeError("Error creating subfolder. Got null API response.")
     private_folder = subfolder
@@ -192,563 +215,6 @@ def get_course_for_folder(folderid):
     return courselist[folderid]
   courselist = {v['private']: k for k, v in gfolders.items()}
   return courselist.get(folderid, None)
-
-@cache
-def google_credentials():
-    creds = None
-    if os.path.exists(CREDFILE):
-        creds = Credentials.from_authorized_user_file(CREDFILE, SCOPES)
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            if not os.path.exists(CLIENTSECRETS):
-              raise RuntimeError(f"{CLIENTSECRETS} does not exist.\nDownload it at https://console.developers.google.com/apis/credentials")
-            flow = InstalledAppFlow.from_client_secrets_file(
-              CLIENTSECRETS, SCOPES)
-            creds = flow.run_local_server(port=0)
-        with open(CREDFILE, 'w') as token:
-            token.write(creds.to_json())
-    return creds
-
-@cache
-def session():
-    socket.setdefaulttimeout(300) # some of our uploads take a while...
-    return build('drive', 'v3', credentials=google_credentials(), num_retries=4) # only retries 429s natively. See execute() for retrying other errors
-
-@cache
-def youtube():
-    return build('youtube', 'v3', credentials=google_credentials(), num_retries=3)
-
-@cache
-def docs():
-  return build('docs', 'v1', credentials=google_credentials()).documents()
-
-def get_ytvideo_snippets(ytids):
-  snippets = []
-  if len(ytids) > 50:
-    for i in range(0, len(ytids), 50): # YTAPI has a 50 id limit
-      snippets.extend(get_ytvideo_snippets(ytids[i:i+50]))
-    return snippets
-  data = execute(youtube().videos().list(id=','.join(ytids),part="snippet,contentDetails")).get("items", [])
-  for vid in data:
-    ret = {k: vid['snippet'][k] for k in ['title', 'description', 'tags', 'thumbnails', 'publishedAt'] if k in vid['snippet']}
-    ret['contentDetails'] = vid.get('contentDetails', {})
-    if not ret.get('tags'):
-      ret['tags'] = []
-    ret['id'] = vid['id']
-    snippets.append(ret)
-  return snippets
-
-def get_ytvideo_snippets_for_playlist(plid, maxResults=None, pageToken=None):
-  if maxResults is None or maxResults < 1:
-    maxResults = 0 # let 0 => Inf
-    page_size = 50 # YouTube API has a max page size of 50
-  else:
-    page_size = min(50, maxResults)
-  deets = execute(youtube().playlistItems().list(
-    playlistId=plid,
-    part='snippet',
-    maxResults=page_size,
-    pageToken=pageToken,
-  ))
-  ret = [e['snippet'] for e in deets.get("items",[])]
-  if (maxResults == 0 or maxResults > 50) and deets.get("nextPageToken"):
-    ret.extend(get_ytvideo_snippets_for_playlist(
-      plid,
-      maxResults=(maxResults-50),
-      pageToken=deets.get('nextPageToken'),
-    ))
-  return ret
-
-def get_ytplaylist_snippet(plid):
-  deets = execute(youtube().playlists().list(
-    id=plid,
-    part='snippet',
-  ))
-  return deets['items'][0]['snippet']
-
-@disk_memorizor.cache(cache_validation_callback=joblib.expires_after(days=28))
-def get_subfolders(folderid):
-  folderquery = f"'{folderid}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
-  childrenFoldersDict = execute(session().files().list(
-    q=folderquery,
-    spaces='drive',
-    fields='files(id, name)'
-  ))
-  return childrenFoldersDict['files']
-
-def string_to_media(s, mimeType):
-  return MediaIoBaseUpload(
-    BytesIO(bytes(s, 'UTF-8')),
-    mimetype=mimeType,
-    resumable=True,
-  )
-
-def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None, replace_doc=False):
-  if bool(html) == bool(rtf):
-    raise ValueError("Please specify either rtf OR html.")
-  metadata = {'mimeType': 'application/vnd.google-apps.document'}
-  media = None
-  if filename:
-    metadata['name'] = filename
-  if folder_id:
-    metadata['parents'] = [folder_id]
-  if custom_properties:
-    metadata['properties'] = custom_properties
-  else:
-    metadata['properties'] = dict()
-  if 'createdBy' not in metadata['properties']:
-    metadata['properties']['createdBy'] = creator or 'LibraryUtils'
-  if html:
-    media = string_to_media(html, 'text/html')
-  if rtf:
-    media = string_to_media(rtf, 'application/rtf')
-  return _perform_upload(metadata, media, verbose=False, update_file=replace_doc)
-
-def get_file_contents(fileid, verbose=True):
-  """Downloads and returns the contents of fileid in a BytesIO buffer"""
-  buffer = BytesIO()
-  download_file(fileid, buffer, verbose=verbose)
-  return buffer
-  
-def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True):
-  """Downloads the contents of the file to destination"""
-  if isinstance(destination, BufferedIOBase):
-    buffer = destination
-  else:
-    if os.path.exists(str(destination)):
-      if verbose is True:
-        if prompt(f"File {destination} already exists. Overwrite?"):
-          os.remove(str(destination))
-        else:
-          return
-      else:
-        raise FileExistsError(f"Attempting to download {destination} which already exists")
-    buffer = open(str(destination)+'.part', 'wb')
-  request = session().files().get_media(fileId=fileid)
-  downloader = MediaIoBaseDownload(buffer, request, chunksize=1048576)
-  yet = False
-  if verbose is True:
-      print(f"Downloading {fileid}")
-  prev = 0
-  while not yet:
-    status, yet = downloader.next_chunk(3)
-    if verbose is not False:
-      if isinstance(verbose, tqdm):
-        cur = status.resumable_progress
-        verbose.update(cur - prev)
-        prev = cur
-      else:
-        print(f"Downloading {fileid} {status.progress()*100:.1f}% complete")
-  if not isinstance(destination, BufferedIOBase):
-    buffer.close()
-    Path(str(destination)+'.part').rename(destination)
-
-def upload_to_google_drive(file_path, creator=None, filename=None, folder_id=None, custom_properties: dict[str,str] = None, verbose=True):
-    file_metadata = {'name': (filename or os.path.basename(file_path))}
-    if folder_id:
-        file_metadata['parents'] = [folder_id]
-    file_metadata['properties'] = custom_properties or dict()
-    file_metadata['properties']['createdBy'] = creator or 'LibraryUtils'
-    media = MediaFileUpload(file_path, resumable=True)
-    return _perform_upload(file_metadata, media, verbose=verbose)
-
-def _perform_upload(file_metadata, media, verbose=True, update_file=False):
-    # Don't use the shared session() so that uploads can be parallelized
-    # (the drive service object is not thread-safe):
-    drive_service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
-    try:
-        # Upload the file
-        request = None
-        if update_file:
-          request = drive_service.files().update(fileId=update_file, body=file_metadata, media_body=media)
-        else:
-          request = drive_service.files().create(body=file_metadata, media_body=media)
-        response = None
-        while response is None:
-            status, response = request.next_chunk()
-            if status and verbose:
-                print("Uploaded %d%%." % int(status.progress() * 100))
-        if verbose:
-          print("File uploaded successfully:")
-          print(response)
-        return response['id']
-    except Exception as e:
-        print("An error occurred: ", str(e))
-        return False
-
-def create_folder(name, parent_folder, custom_properties: dict[str, str] = None):
-  # dance to invalidate the get_subfolders cache
-  cachekey = get_subfolders._get_args_id(parent_folder)
-  get_subfolders.store_backend.clear_item((get_subfolders.func_id, cachekey))
-  metadata = {
-    'name': name,
-    'mimeType': 'application/vnd.google-apps.folder',
-    'parents': [parent_folder]
-  }
-  if custom_properties:
-    metadata['properties'] = custom_properties
-  ret = execute(session().files().create(
-    body=metadata,
-    fields='id'
-  ))
-  return ret.get('id')
-
-def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] = None):
-  drive_service = session()
-  shortcut_metadata = {
-       'name': filename,
-       'mimeType': 'application/vnd.google-apps.shortcut',
-       'shortcutDetails': {
-          'targetId': gfid
-       },
-       'parents': [folder_id]
-  }
-  if custom_properties:
-    shortcut_metadata['properties'] = custom_properties
-  shortcut = execute(drive_service.files().create(
-    body=shortcut_metadata,
-    fields='id,shortcutDetails'
-  ))
-  return shortcut.get('id')
-
-def deref_possible_shortcut(gfid):
-  """Returns the id of what gfid is pointing to OR gfid"""
-  service = session()
-  res = execute(service.files().get(fileId=gfid, fields="shortcutDetails"))
-  if "shortcutDetails" in res:
-    return res["shortcutDetails"]["targetId"]
-  return gfid
-
-def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
-  # new service every time for multithreading
-  service = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
-  if previous_parents is None:
-    # pylint: disable=maybe-no-member
-    file = execute(service.files().get(fileId=file_id, fields='parents'))
-    previous_parents = file.get('parents')
-  if type(previous_parents) is list:
-    previous_parents = ",".join(previous_parents)
-  if verbose:
-    print(f"Moving {file_id} from [{previous_parents}] to [{folder_id}]...")
-  file = execute(service.files().update(
-    fileId=file_id,
-    addParents=folder_id,
-    removeParents=previous_parents,
-    fields='id, parents, name'))
-  if verbose:
-    print(f"  \"{file.get('name')}\" moved to {file.get('parents')}")
-  return file
-
-def has_file_matching(query: str):
-  resp = execute(session().files().list(
-    q=query,
-    pageSize=1,
-    fields='files(id)',
-  ))
-  resp = resp.get('files')
-  if not resp:
-    return None
-  return resp[0]['id']
-
-def all_files_matching(query: str, fields: str):
-  files = session().files()
-  fields = f"files({fields}),nextPageToken"
-  params = {
-    'q': query,
-    'fields': fields,
-    'pageSize': 100,
-    'orderBy': "createdTime", # go in chronological order by default
-  }
-  retries = 0
-  results = None
-  while not results:
-    try:
-      results = execute(files.list(**params))
-    except Exception as e:
-      print(f"Error fetching all_files_matching: {e}")
-      if retries < 5:
-        retries += 1
-        print(f"Retrying ({retries})...")
-        continue
-      else:
-        raise
-  for item in results.get('files', []):
-    yield item
-  while 'nextPageToken' in results:
-    params['pageToken'] = results['nextPageToken']
-    try:
-      results = execute(files.list(**params))
-    except Exception as e:
-      print(f"Error fetching all_files_matching: {e}")
-      if retries < 5:
-        retries += 1
-        print(f"Retrying ({retries})...")
-        continue
-      else:
-        raise
-    if retries > 0:
-      retries = 0
-      print("Success!")
-    for item in results.get('files', []):
-      yield item
-
-def upload_folder_contents_to(local_directory: Path | str, gdfid: str, recursive=False, replace_all=False, parallelism=8):
-  if recursive:
-    raise NotImplementedError("Teach gdrive.upload_folder_contents_to to handle recursion")
-  local_directory = Path(local_directory)
-  if not local_directory.is_dir():
-    raise ValueError(f"{local_directory} is not a directory")
-  local_files = dict()
-  upload_jobs = [] # a tuple of (local_filepath, existing_id, size)
-  total_size = 0
-  with yaspin(text="Loading local file list...") as ys:
-    for child in local_directory.iterdir():
-      if child.is_dir():
-        continue # TODO: Handle recursion
-      s_obj = child.stat()
-      info = {k: getattr(s_obj, k) for k in dir(s_obj) if k.startswith('st_')}
-      info['md5'] = file_info(child)[0]
-      local_files[child] = info
-  with yaspin(text="Loading remote file list...") as ys:
-    for child in all_files_matching(
-      f"'{gdfid}' in parents and trashed=false",
-      "size,name,id,mimeType,md5Checksum,modifiedTime"
-    ):
-      local_filepath = local_directory.joinpath(child['name'])
-      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
-        continue # This uploader (for now) ignores existing links
-      if child['mimeType'] == 'application/vnd.google-apps.folder':
-        continue # TODO: Handle recursion
-      if local_filepath not in local_files:
-        continue # Just ignore files that we don't have
-      if local_files[local_filepath]['md5'] == child['md5Checksum']:
-        del local_files[local_filepath] # no need to upload this one
-        continue
-      if not replace_all:
-        local_mtime = datetime.fromtimestamp(local_files[local_filepath]['st_mtime'], timezone.utc)
-        remote_mtime = datetime.fromisoformat(child['modifiedTime'].replace('Z', "+00:00"))
-        if local_mtime < remote_mtime:
-          ys.write(f"Warning: not uploading {local_filepath.relative_to(local_directory)} as the remote version seems newer? Pass `replace_all=True` to override.")
-          del local_files[local_filepath]
-          continue
-      size = local_files[local_filepath]['st_size']
-      upload_jobs.append(
-        (local_filepath, child['id'], size)
-      )
-      total_size += size
-      del local_files[local_filepath]
-  with yaspin(text="Loading upload file list..."):
-    for local_filepath, stats in local_files.items():
-      upload_jobs.append(
-        (local_filepath, None, stats['st_size'])
-      )
-      total_size += stats['st_size']
-  print(f"Uploading {len(upload_jobs)} files to Google Drive:")
-  def _upload_job(args: tuple):
-    local_filepath, existing_id, size = args
-    # Can't use session() as that isn't threadsafe. Make a new one for each request.
-    sess = build('drive', 'v3', credentials=google_credentials(), num_retries=4)
-    if existing_id:
-      execute(sess.files().update(
-        fileId=existing_id,
-        body={}, # We're keeping the file name, etc the same
-        media_body=MediaFileUpload(local_filepath, resumable=True),
-      ))
-    else:
-      execute(sess.files().create(
-        body={
-          'name': local_filepath.name,
-          'parents': [gdfid], # TODO: Handle recursion,
-          'properties': {'createdBy': 'LibraryUtils'},
-        },
-        media_body=MediaFileUpload(local_filepath, resumable=True),
-      ))
-  tqdm_thread_map(
-    _upload_job,
-    upload_jobs,
-    max_workers=parallelism,
-  )
-
-def download_folder_contents_to(gdfid: str, target_directory: Path | str, recursive=False, follow_links=False):
-  target_directory = Path(target_directory)
-  target_directory.mkdir(exist_ok=True)
-  total_size = 0
-  subfolders = []
-  linked_files = []
-  downloads = []
-  with yaspin(text="Loading file list...") as ys:
-    for child in all_files_matching(
-      f"'{gdfid}' in parents and trashed=false",
-      "size,name,id,mimeType,shortcutDetails"
-    ):
-      childpath = target_directory.joinpath(child['name'])
-      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
-        if not follow_links:
-          continue
-        if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
-          if recursive:
-            subfolders.append((child['shortcutDetails']['targetId'], childpath))
-        else:
-          linked_files.append(child['shortcutDetails']['targetId'])
-        continue
-      if child['mimeType'] == 'application/vnd.google-apps.folder':
-        if not recursive:
-          continue
-        subfolders.append((child['id'], childpath))
-        continue
-      if childpath.exists():
-        continue
-      size = int(child.get('size',0))
-      if not size:
-        continue
-      if any(d[1] == childpath for d in downloads):
-        ys.write(f"WARNING: Skipping duplicate file \"{childpath}\"")
-        continue
-      total_size += size
-      downloads.append((child['id'], childpath))
-    if linked_files:
-      for child in batch_get_files_by_id(linked_files, "size,id,name"):
-        size = int(child.get('size',0))
-        if not size:
-          continue
-        childpath = target_directory.joinpath(child['name'])
-        if childpath.exists():
-          continue
-        total_size += size
-        downloads.append((child['id'], childpath))
-  if not downloads:
-    print(f"Nothing to download in '{target_directory.name}'")
-  else:
-    print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
-    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
-      for f in downloads:
-        download_file(f[0], f[1], pbar)
-  for cfid, child_path in subfolders:
-    download_folder_contents_to(
-      cfid,
-      child_path,
-      recursive=recursive,
-      follow_links=follow_links,
-    )
-
-def share_drive_file_with_everyone(file_id: str):
-  return execute(session().permissions().create(
-    fileId=file_id,
-    body={"role": "reader", "type": "anyone"},
-  ))
-
-def batch_get_files_by_id(IDs: list, fields: str):
-  ret = []
-  if len(IDs) > 100:
-    for i in range(0, len(IDs), 100):
-      ret.extend(batch_get_files_by_id(IDs[i:i+100],fields))
-    return ret
-  def _getter_callback(rid, resp, error):
-    if error:
-      print(f"Warning! Failed to `get` fileId={rid}")
-    else:
-      ret.append(resp)
-  batcher = BatchHttpRequest(
-    callback=_getter_callback,
-    batch_uri="https://www.googleapis.com/batch/drive/v3",
-  )
-  for fid in IDs:
-    request = session().files().get(fileId=fid, fields=fields)
-    batcher.add(request_id=fid, request=request)
-  batcher.execute()
-  return ret
-
-def ensure_these_are_shared_with_everyone(file_ids: list[str]):
-  all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
-  for file in all_files:
-    if 'permissions' not in file:
-      print(f"  Skipping {file['id']} ({file['name']}) because I can't change its permissions...")
-      continue
-    is_publicly_shared = False
-    for permission in file['permissions']:
-      if permission['type'] == 'anyone':
-        is_publicly_shared = True
-        break
-    if not is_publicly_shared:
-      print(f"Sharing \"{file['name']}\" with everyone...")
-      share_drive_file_with_everyone(file['id'])
-
-EXACT_MATCH_FIELDS = "files(id,mimeType,name,md5Checksum,originalFilename,size,parents)"
-
-def files_exactly_named(file_name):
-  f = file_name.replace("'", "\\'")
-  return execute(session().files().list(
-    q=f"name='{f}' AND 'me' in owners AND mimeType!='application/vnd.google-apps.shortcut' AND trashed=false",
-    fields=EXACT_MATCH_FIELDS,
-  ))['files']
-
-def my_pdfs_containing(text):
-  text = text.replace("'", "\\'")
-  return execute(session().files().list(
-    q=f"fullText contains '{text}' AND 'me' in owners AND mimeType='application/pdf'",
-    fields=EXACT_MATCH_FIELDS,
-  ))['files']
-
-def has_file_already(file_in_question, default="prompt") -> bool:
-  hash, size = file_info(file_in_question)
-  file_in_question = Path(file_in_question)
-  cfs = files_exactly_named(file_in_question.name)
-  for gf in cfs:
-    if hash == gf['md5Checksum'] or (approx_eq(size, int(gf['size']), absdiff=1024, percent=2.0) or len(gf['name']) > 11):
-      return True
-    else:
-      if default=="prompt":
-        print(f"  Found file with that name sized {gf['size']} instead of {size}.")
-        if prompt("Consider that a match?"):
-          return True
-      else:
-        if default:
-          return True
-  if file_in_question.suffix == ".pdf":
-    try:
-      text = pdfutils.readpdf(file_in_question, max_len=1500, normalize=3)
-    except:
-      text = ""
-    if len(text) < 16:
-      # failed to extract text from the PDF
-      return False
-    cfs = my_pdfs_containing(text)
-    for gf in cfs:
-        if hash == gf['md5Checksum'] or approx_eq(size, int(gf['size']), absdiff=512):
-            return True
-        if gf['originalFilename'] == file_in_question.name:
-          if approx_eq(size, int(gf['size']), percent=5.0) and len(gf['originalFilename']) > 7:
-            return True
-          if default=="prompt":
-            print(f"  Found a file now named {gf['name']} sized {gf['size']} instead of {size}.")
-            if prompt("Consider that a match?"):
-              return True
-          else:
-            if default:
-              return True
-    if len(cfs) == 1 and default == "prompt":
-      gf = cfs[0]
-      print(f"  Found file \"{gf['name']}\" with that text sized {gf['size']} instead of {size}.")
-      if prompt("Consider that a match?"):
-        return True
-    if len(cfs) > 1 and default=="prompt":
-      print(f"  Found {len(cfs)} fuzzy matches:")
-      for gf in cfs:
-        print(f"    {gf['name']}")
-      if prompt("Are any of those a match?"):
-          return True
-  return False
-
-def get_shortcuts_to_gfile(target_id):
-  # note the following assumes only one page of results
-  # if you are expecting >100 results
-  # please implement paging when calling files.list
-  return execute(session().files().list(q=f"shortcutDetails.targetId='{target_id}' and trashed=false", spaces='drive', fields='files(id,name,parents)'))['files']
-
-def trash_drive_file(target_id):
-  return execute(session().files().update(fileId=target_id, body={"trashed": True}))
 
 def move_gfile(glink, folders):
   gfid = link_to_id(glink)
@@ -785,57 +251,6 @@ def make_link_doc_html(title, link):
       vid = yt_url_to_id_re.search(link)
       if vid:
         ret += make_ytvideo_summary_html(vid.groups()[0])
-  return ret
-
-def htmlify_ytdesc(description):
-  return description.replace('\n\n', '<br /').replace('\n', '<br />')
-
-def _yt_thumbnail(snippet):
-  if 'high' in snippet['thumbnails']:
-    return snippet['thumbnails']['high']['url']
-  if 'default' in snippet['thumbnails']:
-    return snippet['thumbnails']['default']['url']
-  return ''
-
-def fetch_youtube_transcript(vid):
-  """Returns a list of {"text": "", "start": 0, "duration": 0}s OR a string if subtitles are unavailable for that video"""
-  global YTTranscriptAPI
-  if not YTTranscriptAPI:
-    YTTranscriptAPI = YouTubeTranscriptApi()
-  try:
-    transcripts_available = YTTranscriptAPI.list(vid)
-    transcript = transcripts_available.find_transcript(('en',))
-    ret = transcript.fetch()
-  except (YouTubeTranscriptErrors.TranscriptsDisabled, YouTubeTranscriptErrors.VideoUnplayable, YouTubeTranscriptErrors.VideoUnavailable):
-    return "disabled"
-  except (YouTubeTranscriptErrors.AgeRestricted, YouTubeTranscriptErrors.PoTokenRequired):
-    return "restricted"
-  except YouTubeTranscriptErrors.NoTranscriptFound:
-    if transcripts_available:
-      for transcript in transcripts_available:
-        if transcript.is_translatable: # The API doesn't pull translations automatically
-          if any(tlang.language_code == 'en' for tlang in transcript.translation_languages):
-            try:
-              # Currently the translate API is broken
-              # return transcript.translate('en').fetch().to_raw_data()
-              return "foreign"
-            except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
-              print(f"Warning ({vid}): {e.cause}")
-              return []
-    return "disabled"
-  except YouTubeTranscriptErrors.CouldNotRetrieveTranscript as e:
-    print(f"Warning ({vid}): {e.cause}")
-    return []
-  return ret.to_raw_data()
-
-def fetch_youtube_transcripts(vids):
-  """Returns a dict mapping vid to the transcript list (see above)"""
-  ret = dict()
-  # Just a simple loop for now
-  # Might get fancy with threading later...
-  for vid in vids:
-    t = fetch_youtube_transcript(vid)
-    ret[vid] = t
   return ret
 
 def make_ytvideo_summary_html(vid):
@@ -891,6 +306,729 @@ def make_ytplaylist_summary_html(ytplid):
       ret += f"""<p><img src="{_yt_thumbnail(video) or defaultimg}" /></p>"""
   return ret
 
+def has_file_already(file_in_question) -> list:
+  hash, _ = file_info(file_in_question)
+  file_in_question = Path(file_in_question)
+  mine = lambda l: [f for f in l if f['owners'][0]['me']]
+  cfs = mine(gcache.get_items_with_md5(hash))
+  if len(cfs) > 0:
+    return cfs
+  if len(file_in_question.name) > 16:
+    cfs = mine(gcache.files_exactly_named(file_in_question.name))
+    if len(cfs) > 0:
+      return cfs
+    cfs = mine(gcache.files_originally_named_exactly(file_in_question.name))
+    if len(cfs) > 0:
+      return cfs
+  return []
+
+def download_folder_contents_to(folder_id: str, target_directory: Path | str, recursive = False, follow_links = False, parallelism=6):
+  """
+  Downloads all files from folder_id to target_directory
+
+  This is mostly a copypasta from gdrive_base but using the local gcache
+  """
+  target_directory = Path(target_directory)
+  target_directory.mkdir(exist_ok=True)
+  total_size = 0
+  subfolders = []
+  linked_files = []
+  downloads = []
+  with yaspin(text="Loading file list...") as ys:
+    for child in gcache.get_children(folder_id):
+      childpath = target_directory.joinpath(child['name'])
+      if child['mimeType'] == 'application/vnd.google-apps.shortcut':
+        if not follow_links:
+          continue
+        if child['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+          if recursive:
+            subfolders.append((child['shortcutDetails']['targetId'], childpath))
+        else:
+          linked_files.append(gcache.get_item(child['shortcutDetails']['targetId']))
+        continue
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        if not recursive:
+          continue
+        subfolders.append((child['id'], childpath))
+        continue
+      if childpath.exists():
+        continue
+      size = int(child.get('size',0))
+      if not size:
+        continue
+      if any(d[1] == childpath for d in downloads):
+        ys.write(f"WARNING: Skipping duplicate file \"{childpath}\"")
+        continue
+      total_size += size
+      downloads.append((child['id'], childpath))
+    if linked_files:
+      for child in linked_files:
+        size = int(child.get('size',0))
+        if not size:
+          continue
+        childpath = target_directory.joinpath(child['name'])
+        if childpath.exists():
+          continue
+        total_size += size
+        downloads.append((child['id'], childpath))
+  if not downloads:
+    print(f"Nothing to download in '{target_directory.name}'")
+  else:
+    print(f"Downloading {len(downloads)} files to '{target_directory.name}'")
+    if parallelism <= 1:
+      with tqdm(unit='B', unit_scale=True, unit_divisor=1024, total=total_size) as pbar:
+        for f in downloads:
+          download_file(f[0], f[1], pbar)
+    else:
+      with ThreadPoolExecutor(max_workers=parallelism) as executor:
+        futures = [executor.submit(download_file, f[0], f[1], False) for f in downloads]
+        for future in tqdm(as_completed(futures), total=len(downloads), unit='f'):
+          pass
+  for cfid, child_path in subfolders:
+    download_folder_contents_to(
+      cfid,
+      child_path,
+      recursive=recursive,
+      follow_links=follow_links,
+      parallelism=parallelism,
+    )
+
+def load_folder_slugs() -> dict[str, str]:
+  "A mapping from GFolder IDs to slug names (inverse of FOLDERS_DATA_FILE)"
+  drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
+  private_folder_slugs = {
+    folderlink_to_id(drive_folders[k]['private']): k
+    for k in drive_folders
+  }
+  public_folder_slugs = {
+    folderlink_to_id(drive_folders[k]['public']): k
+    for k in drive_folders
+  }
+  return {**private_folder_slugs, **public_folder_slugs}
+
+def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
+  """Takes a list of duplicate Google Drive Files and removes the extra versions intelligently.
+  
+  Args:
+    files: the list of duplicates as API Dicts
+    folder_slugs: a mapping from Drive folder IDs to their slug names
+  
+  Returns: the files selected for keeping (usually just one)
+  """
+  for file in files:
+    file['parent'] = gcache.get_item(file['parents'][0])
+  ids_to_keep, reason = select_ids_to_keep(files, folder_slugs)
+  files_to_keep = [f for f in files if f['id'] in ids_to_keep]
+  files_to_trash = [f for f in files if f['id'] not in ids_to_keep]
+  if verbose or len(files_to_keep) > 1:
+    if len(files_to_keep) > 1:
+      print("!!vvPLEASE Review the below duplicates manually vv!!")
+    for file in files_to_keep:
+      print(f"  Keeping \"{file['name']}\" in \"{(file['parent'] or {}).get('name')}\"")
+      if len(files_to_keep) > 1:
+        print(f"    {DRIVE_LINK.format(file['id'])}")
+        print(f"    {FOLDER_LINK_PREFIX}{file['parent_id']}")
+    if len(files_to_keep) > 1:
+      print("!!^^PLEASE Review the above duplicates manually^^!!")
+  for f in files_to_trash:
+    if verbose:
+      print(f"    Trashing \"{f['name']}\" in \"{f['parent']['name']}\"...")
+    if not dry_run:
+      gcache.trash_file(f['id'])
+  longest_name = max((f['name'] for f in files), key=lambda n: len(n))
+  if len(files_to_keep) == 1:
+    if len(files_to_keep[0]['name']) < len(longest_name):
+      if verbose:
+        print(f"    Renaming kept file to longer name")
+      if not dry_run:
+        gcache.rename_file(files_to_keep[0]['id'], longest_name)
+  return files_to_keep
+
+class IDSelectionReason(enum.StrEnum):
+  TAG_FOLDER = 'tag folder'
+  IS_PUBLIC = 'is public'
+  GENERIC_SUBFOLDER = 'generic subfolder'
+  TAG_PRIORITY = 'tag priority'
+  NAME_LENGTH = 'name length'
+  ELDEST_FILE = 'eldest file'
+  FOLDER_DEPTH = 'folder depth'
+  
+
+def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]) -> tuple[list[str], IDSelectionReason]:
+  """Maticulously applies hand-crafted heuristics to select the keepers
+  
+  folder_slugs is a map from gid to tag slug, passed in to avoid recompute
+
+  Returns: a list of ids to keep AND a string enum giving the reason for the choice
+  """
+
+  import website
+  if not website.content:
+    with yaspin(text="Loading website..."):
+      website.load()
+  UNIMPORTANT_SLUGS = [
+    'to-go-through',
+    'to-split',
+    None,
+  ]
+  UNIMPORTANT_PREFIXES = [
+    # Keep up-to-date with bulk_import.py
+    "🔓 core api",
+    "🏛️ academia.edu",
+    "🌱 dharma seed",
+    "📼 youtube videos",
+    "📥 to go through",
+    "DhammaTalks",
+    "unread",
+    'archive', # normally we wouldn't delete these losing data,
+              # however, by this point in the code,
+              # we have already eliminated unreads
+              # so this leaves items that are archived in one place
+              # and accepted somewhere deeper. In those cases we
+              # should give such files a second chance at life.
+  ]
+  TAG_ORDER = {
+    str(tf).removesuffix('.md'): idx+1
+    for idx, tf in enumerate(website.config['collections']['tags']['order'])
+  }
+  LO_PRI = len(TAG_ORDER)+1000
+
+  #####
+  # If only one is in a slugged folder, keep that one
+  ####
+  slugs = [folder_slugs.get(f['parents'][0]) for f in files]
+  filter_list = []
+  for unimportant in UNIMPORTANT_SLUGS:
+    filter_list.append(unimportant)
+    important_slugs = [slug for slug in slugs if slug not in filter_list]
+    num_slugs = len(important_slugs)
+    if num_slugs == 1:
+      # if there's only one file in a slugged folder, keep that one
+      # no need to even check for permissions
+      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.TAG_FOLDER
+
+  #####
+  # Don't trash any publicly-launched files
+  #####
+  file_permissions = batch_get_files_by_id([f['id'] for f in files], "id,name,permissions")
+  are_publics = [any(p['type'] == 'anyone' for p in f['permissions']) for f in file_permissions]
+  num_public = sum(are_publics)
+  if num_public > 0:
+    # Never suggest a public-facing file for deletion
+    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], IDSelectionReason.IS_PUBLIC
+  
+  #####
+  # Discard files in "unimportant" subfolders first
+  #####
+  if 'parent' not in files[0]:
+    for f in files:
+      f['parent'] = gcache.get_item(f['parent_id'])
+  for prefix in UNIMPORTANT_PREFIXES:
+    if prefix == "DhammaTalks":
+      unreads = ['1NTIsr31uhBXymkFUu2coGU72vdCjwfNp' in [f['parent']['parents'][0], f['parents'][0]] for f in files]
+    else:
+      unreads = [f['parent']['name'].lower().startswith(prefix) for f in files]
+    unread_count = sum(unreads)
+    if unread_count > 0 and unread_count < len(files):
+      files = [file for i, file in enumerate(files) if not unreads[i]]
+      if len(files) == 1:
+        return [files[0]['id']], IDSelectionReason.GENERIC_SUBFOLDER
+      slugs = [slug for i, slug in enumerate(slugs) if not unreads[i]]
+  
+  #####
+  # Next, try to use the site's TAG_ORDER to prioritize placement
+  #   Keep files placed in more important subfolders and trash those deeper
+  #####
+  if not any(slugs):
+    slugs = [folder_slugs.get(f['parent']['parents'][0]) for f in files]
+  if any(slug in TAG_ORDER for slug in slugs):
+    priorities = [TAG_ORDER.get(slug, LO_PRI) for slug in slugs]
+    highest = min(priorities)
+    assert len(files) == len(priorities)
+    files = [files[i] for i in range(len(files)) if priorities[i] == highest]
+    if len(files) == 1:
+      return [files[0]['id']], IDSelectionReason.TAG_PRIORITY
+    
+  #####
+  # If some couldn't be disambiguated by folder because they are in
+  #   the same subfolder, then just pick one
+  #####
+  if len(set(file['parent_id'] for file in files)) == 1:
+    # All files are in the same folder and have the same md5
+    # first try to pick the longest name
+    name_lens = [len(file['name']) for file in files]
+    longest = max(name_lens)
+    files = [file for file in files if len(file['name'])==longest]
+    if len(files) == 1:
+      return [file['id'] for file in files], IDSelectionReason.NAME_LENGTH
+    # That failing, pick the eldest
+    modifies = [file['modifiedTime'] for file in files]
+    eldest = min(modifies)
+    idx = modifies.index(eldest)
+    return [files[idx]['id']], IDSelectionReason.ELDEST_FILE
+  
+  #####
+  # Disambiguate remaining folders by depth
+  #  This time we prefer deeper folders as likely more accurate placement
+  ####
+  max_depth = 0
+  deepest = None
+  for file in files:
+    depth = 0
+    parent = file['parent']
+    while parent and parent['parent_id']:
+      depth += 1
+      new_parent = gcache.get_item(parent['parent_id'])
+      if new_parent:
+        parent = new_parent
+      else:
+        break
+    file['depth'] = depth
+    if depth > max_depth:
+      max_depth = depth
+      deepest = file
+    file['root'] = parent
+  roots = set(file['root']['id'] for file in files)
+  assert len(roots) == 1, f"Multiple roots found for {files}"
+  return [deepest['id']], IDSelectionReason.FOLDER_DEPTH
+
+def remote_file_for_local_file(fp: Path, folder_slugs: dict[str, str], default_folder_id=None) -> dict | None:
+  """Ensures that there is exactly one copy of `fp` on Drive and returns it.
+  
+  Args:
+    fp: the Path to the local file we're looking for on the server
+    folder_slugs: a mapping of folder ids to slugs (used by the deduper)
+    default_folder_id: where to upload the file if it isn't found
+  
+  Returns: the Google API dict for the file {'id': ..."""
+  remotes = has_file_already(fp)
+  if not remotes:
+    new_id = gcache.upload_file(fp, folder_id=default_folder_id)
+    return gcache.get_item(new_id)
+  if len(remotes) > 1:
+    print(f"Found multiple matching uploads for {fp.name}...")
+    kept = process_duplicate_files(remotes, folder_slugs, verbose=True, dry_run=False)
+    if len(kept) != 1:
+      raise ValueError("Unable to select which to keep. Please clean this up manually.")
+    remotes = kept
+  return remotes[0]
+
+
+def get_url_doc(url: str) -> dict | None:
+    """
+    If we already have a Google Doc pointing to url, return it, else None
+    """
+    # Join with drive_items to check mime_type
+    with gcache._lock:
+        gcache.cursor.execute(
+            """
+            SELECT di.* 
+            FROM drive_items di
+            JOIN item_properties ip ON di.id = ip.file_id
+            WHERE ip.key = 'url' AND ip.value = ? AND di.mime_type = ?
+            LIMIT 1
+            """,
+            (url, 'application/vnd.google-apps.document'),
+        )
+        row = gcache.cursor.fetchone()
+        return gcache.row_dict_to_api_dict(dict(row)) if row else None
+
+
+def find_duplicate_urls() -> list[str]:
+    """
+    Finds all urls that have more than one pointing doc in the user's files
+    """
+    with gcache._lock:
+        sql = """
+            SELECT ip.value
+            FROM item_properties ip
+            JOIN drive_items di ON ip.file_id = di.id
+            WHERE ip.key = 'url' AND di.owner = 1
+            GROUP BY ip.value
+            HAVING COUNT(*) > 1
+            ORDER BY ip.value
+        """
+        gcache.cursor.execute(sql)
+        return [row['value'] for row in gcache.cursor.fetchall()]
+
+def fetch_files_distinction_pointer(gc: local_gdrive.DriveCache, file_id: str) -> str | None:
+  with gc._lock:
+    gc.cursor.execute("SELECT value FROM item_properties WHERE key = 'distinctFrom' AND file_id = ?", (file_id,))
+    pointing_to = gc.cursor.fetchone()
+  if not pointing_to:
+    return None
+  return pointing_to['value']
+
+def fetch_distinct_file_pointing_to(gc: local_gdrive, target_file_id: str) -> str | None:
+  with gc._lock:
+      gc.cursor.execute("SELECT file_id FROM item_properties WHERE key = 'distinctFrom' AND value = ?", (target_file_id,))
+      pointing_neighbor = gc.cursor.fetchone()
+  if pointing_neighbor:
+    return pointing_neighbor['file_id']
+  return None
+
+class ClosePairDecision(enum.StrEnum):
+  FIRST_IS_OLD_VERSION = 'old a'
+  SECOND_IS_OLD_VERSION = 'old b'
+  THEY_ARE_THE_SAME = 'either'
+  THEY_ARE_DISTINCT = 'different'
+
+def is_duplicate_prompt(fa: dict, fb: dict, similariy: float=None) -> ClosePairDecision:
+  pa = gcache.get_item(fa['parent_id'])
+  pb = gcache.get_item(fb['parent_id'])
+  def _print_file(gfile, gparent):
+    if not gparent:
+      gparent = {'name': 'Root Folder', 'id': '../my-drive'}
+    print(f"\"{gfile['name']}\" in \"{gparent['name']}\" {FOLDER_LINK.format(gparent['id'])}")
+  if not similariy:
+    print("Which of these two files is the better version?")
+  _print_file(fa, pa)
+  if similariy:
+    print(f"  was found to be {similariy:.3f} similar to")
+  _print_file(fb, pb)
+  while True:
+    options = ["Open both", "A is better (B is an older version)", "B is better (A is an older version)", "Exactly the same file", "Completely different files"]
+    match radio_dial(options):
+      case 0:
+          system_open(DRIVE_LINK.format(fa['id']))
+          system_open(DRIVE_LINK.format(fb['id']))
+      case 1:
+          return ClosePairDecision.SECOND_IS_OLD_VERSION
+      case 2:
+          return ClosePairDecision.FIRST_IS_OLD_VERSION
+      case 3:
+          return ClosePairDecision.THEY_ARE_THE_SAME
+      case 4:
+          return ClosePairDecision.THEY_ARE_DISTINCT
+
+class FileDistinctionManager:
+  """
+  Stores the file pairs that have been manually marked as being distinct.
+
+  Uses a custom Google Drive file property "distinctFrom" set to another fileid
+  to create rings of known-distinct files.
+  """
+  def __init__(self, gc: local_gdrive.DriveCache=None):
+    if gc is None:
+      gc = gcache
+    self._folder_slugs = None
+    self.gcache = gc
+    self.fileid_to_distinct_neighbors: dict[str, set[str]]
+    self.fileid_to_distinct_neighbors = dict()
+    with gc._lock:
+      pointers = [
+        dict(row) for row in
+        gc.cursor.execute(
+          """SELECT prop.file_id, prop.value
+          FROM item_properties prop
+          JOIN drive_items item
+          ON prop.file_id = item.id
+          WHERE key = ?""",
+          ('distinctFrom',)
+        )
+      ]
+    pointers = {p['file_id']: p['value'] for p in pointers}
+    pointers = self._fix_pointers(pointers)
+    for k in pointers.keys():
+      self.fileid_to_distinct_neighbors[k] = set()
+      node = pointers[k]
+      # Because we've fixed the pointers above, we're guarenteed cycles here
+      while node != k:
+        self.fileid_to_distinct_neighbors[k].add(node)
+        node = pointers[node]
+  
+  def are_distinct(self, file_a: str, file_b: str) -> bool:
+    """Returns True iff file_a and file_b are marked distinct already"""
+    return file_a in self.fileid_to_distinct_neighbors and file_b in self.fileid_to_distinct_neighbors[file_a]
+
+  def folder_slugs(self):
+    if self._folder_slugs:
+      return self._folder_slugs
+    self._folder_slugs = load_folder_slugs()
+    return self._folder_slugs
+  
+  def handle_close_pair_decision(self, decision: ClosePairDecision, actual_file_a: dict, actual_other_file: dict):
+    """
+    Handles whatever file moving, trashing, and Distinction pointer swapping as needed to actualize `decision`
+
+    Args:
+      `decision` is relative to `is_duplicate_prompt(actual_file_a, actual_other_file)` in that order
+    """
+    if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+      return self.mark_distinct(actual_other_file['id'], actual_file_a['id'])
+    def _print_shortcuts(shortcuts: list[dict]):
+      for shortcut in shortcuts:
+        print(f"  \"{shortcut['name']}\"")
+        print(f"     in {FOLDER_LINK.format(shortcut['parent_id'])}")
+    would_keep, reason = select_ids_to_keep(
+      [actual_other_file, actual_file_a],
+      folder_slugs=self.folder_slugs(),
+    )
+    selected_to_keep = None
+    selected_to_not = None
+    if len(would_keep) > 1 and decision == ClosePairDecision.THEY_ARE_THE_SAME:
+      assert reason == IDSelectionReason.IS_PUBLIC
+      print("Both files are publicly launched!")
+      print("Please handle manually and select one of these to keep:")
+      choice = radio_dial([
+        DRIVE_LINK.format(actual_file_a['id']),
+        DRIVE_LINK.format(actual_other_file['id']),
+      ])
+      if choice == 0:
+        decision = ClosePairDecision.SECOND_IS_OLD_VERSION
+      elif choice == 1:
+        decision = ClosePairDecision.FIRST_IS_OLD_VERSION
+      else:
+        raise ValueError("radio_dial should output 0 or 1 for a binary choice, no?")
+    if decision == ClosePairDecision.FIRST_IS_OLD_VERSION:
+      selected_to_not, selected_to_keep = actual_file_a, actual_other_file
+    elif decision == ClosePairDecision.SECOND_IS_OLD_VERSION:
+      selected_to_not, selected_to_keep = actual_other_file, actual_file_a
+    else:
+      assert decision == ClosePairDecision.THEY_ARE_THE_SAME
+      assert len(would_keep) == 1
+      if would_keep[0] == actual_file_a['id']:
+        selected_to_keep = actual_file_a
+        selected_to_not = actual_other_file
+      else:
+        assert would_keep[0] == actual_other_file['id']
+        selected_to_keep = actual_other_file
+        selected_to_not = actual_file_a
+    if len(would_keep) == 1 and would_keep[0] != selected_to_keep['id']:
+      if reason == IDSelectionReason.IS_PUBLIC:
+        print("The file you've selected as the old version is public")
+        print("Please resolve this manually and then we'll move it to Old Versions.")
+        input("Press enter to continue...")
+      elif selected_to_not['parent_id'] != selected_to_keep['parent_id']:
+        shortcuts = self.gcache.get_shortcuts_to_file(selected_to_keep['id'])
+        if shortcuts:
+          print(f"The file you've chosen to keep and move to {FOLDER_LINK.format(selected_to_not['parent_id'])} has shortcuts:")
+          _print_shortcuts(shortcuts)
+          input("Please handle them and then press enter to continue...")
+        self.gcache.move_file(selected_to_keep['id'], selected_to_not['parent_id'], selected_to_keep['parents'])
+    if 'distinctFrom' in selected_to_not['properties']:
+      if 'distinctFrom' not in selected_to_keep['properties']:
+        # simply swap out keep for not
+        point_to_not_id = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
+        self._write_pointer(point_to_not_id, selected_to_keep['id'])
+        self._write_pointer(selected_to_keep['id'], selected_to_not['properties']['distinctFrom'])
+        self._write_pointer(selected_to_not['id'], None)
+        self.fileid_to_distinct_neighbors[selected_to_keep['id']] = self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        del self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        for n in self.fileid_to_distinct_neighbors[selected_to_keep['id']]:
+          self.fileid_to_distinct_neighbors[n].remove(selected_to_not['id'])
+          self.fileid_to_distinct_neighbors[n].add(selected_to_keep['id'])
+      else:
+        # We can assume they aren't in the same cluster as they were just
+        # marked as the same, ergo not distinct
+        assert selected_to_not['id'] not in self.fileid_to_distinct_neighbors[selected_to_keep['id']]
+        # since these two are marked the same, we should merge their clusters into a super-cluster
+        super_cluster = self.fileid_to_distinct_neighbors[select_ids_to_keep['id']] | \
+          self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        super_cluster.add(selected_to_keep['id'])
+        points_to_not = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
+        assert points_to_not in self.fileid_to_distinct_neighbors[selected_to_not['id']]
+        self._write_pointer(points_to_not, selected_to_keep['properties']['distinctFrom'])
+        self._write_pointer(selected_to_keep['id'], selected_to_not['properties']['distinctFrom'])
+        self._write_pointer(selected_to_not['id'], None)
+        for n in super_cluster:
+          nn = super_cluster.copy()
+          nn.remove(n)
+          self.fileid_to_distinct_neighbors[n] = nn
+    # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
+    # Now, all that's left is to handle the marking!
+    print(f"[Action] Moving old version to Old Versions...")
+    move_gfile(selected_to_not['id'], (OLD_VERSIONS_FOLDER_ID, None))
+    if len(selected_to_keep['name']) < len(selected_to_not['name']):
+      if prompt("Swap file names?", default='y'):
+        print("[Action] Swapping file names...")
+        self.gcache.rename_file(selected_to_keep['id'], selected_to_not['name'])
+        self.gcache.rename_file(selected_to_not['id'], selected_to_keep['name'])
+    return
+  
+  def mark_distinct(self, file_a: str, file_b: str):
+    """Writes to the DB the fact that file_a and file_b are distinctFrom eachother"""
+    assert re.fullmatch(GFIDREGEX, file_a)
+    assert re.fullmatch(GFIDREGEX, file_b)
+    if self.are_distinct(file_a, file_b):
+      return
+    if file_a not in self.fileid_to_distinct_neighbors and file_b not in self.fileid_to_distinct_neighbors:
+      self._write_pointer(file_a, file_b)
+      self._write_pointer(file_b, file_a)
+      self.fileid_to_distinct_neighbors[file_a] = set([file_b])
+      self.fileid_to_distinct_neighbors[file_b] = set([file_a])
+      return
+    if file_b not in self.fileid_to_distinct_neighbors:
+      file_a, file_b = file_b, file_a
+    actual_file_a = self.gcache.get_item(file_a)
+    actual_file_b = self.gcache.get_item(file_b)
+    file_b_points_to = actual_file_b['properties']['distinctFrom']
+    print(f"Adding {file_a} to the {file_b} cluster:")
+    for other_file in self.fileid_to_distinct_neighbors[file_b]:
+      actual_other_file = self.gcache.get_item(other_file)
+      decision = is_duplicate_prompt(
+        actual_file_a,
+        actual_other_file,
+      )
+      if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+        continue
+      return self.handle_close_pair_decision(
+        decision,
+        actual_file_a,
+        actual_other_file,
+      )
+    if file_a not in self.fileid_to_distinct_neighbors:
+      # file_a is distinct from the entire file_b cluster
+      # and has no cluster of its own, so just add it to the group
+      self._write_pointer(file_a, file_b_points_to)
+      self._write_pointer(file_b, file_a)
+      self.fileid_to_distinct_neighbors[file_a] = self.fileid_to_distinct_neighbors[file_b].copy()
+      self.fileid_to_distinct_neighbors[file_a].add(file_b)
+      for other_fid in self.fileid_to_distinct_neighbors[file_a]:
+        self.fileid_to_distinct_neighbors[other_fid].add(file_a)
+      return
+    # else, file_a has its own cluster
+    print(f"Adding {file_b} to the {file_a} cluster:")
+    for other_file in self.fileid_to_distinct_neighbors[file_a]:
+      actual_other_file = self.gcache.get_item(other_file)
+      decision = is_duplicate_prompt(
+        actual_file_b,
+        actual_other_file,
+      )
+      if decision == ClosePairDecision.THEY_ARE_DISTINCT:
+        continue
+      return self.handle_close_pair_decision(
+        decision,
+        actual_file_b,
+        actual_other_file,
+      )
+    # At this point we have two clusters and all are distinct, so merge them
+    self._write_pointer(file_b, actual_file_a['properties']['distinctFrom'])
+    self._write_pointer(file_a, file_b_points_to)
+    super_cluster = self.fileid_to_distinct_neighbors[file_a] | \
+      self.fileid_to_distinct_neighbors[file_b] | set([file_a, file_b])
+    for n in super_cluster:
+      nn = super_cluster.copy()
+      nn.remove(n)
+      self.fileid_to_distinct_neighbors[n] = nn
+    return
+  
+  def _write_pointer(self, from_id: str, to_id: str | None):
+    """Commits this new pointer to the DB"""
+    if to_id is not None:
+      assert re.fullmatch(GFIDREGEX, to_id), f"_write_pointer got a non-ID: {to_id}"
+    print(f"[Info] Marking {from_id} distinctFrom {to_id}")
+    self.gcache.write_property(from_id, 'distinctFrom', to_id)
+  
+  def _make_new_cycle(self, nodes: Iterable[str]) -> dict[str, str]:
+    """Takes a collection of nodes and writes them as a cycle to the DB.
+
+    NOTE: Does not update self.fileid_to_distinct_neighbors (hence an _method)
+    
+    Returns: the pointers map of which were made to point to which."""
+    node_iter = iter(nodes)
+    first_node = next(node_iter)
+    last_node = first_node
+    ret = dict()
+    while next_node := next(node_iter, None):
+      ret[last_node] = next_node
+      self._write_pointer(last_node, next_node)
+      last_node = next_node
+    assert len(ret) >= 1, "Need to supply multiple nodes to make a cycle"
+    ret[last_node] = first_node
+    self._write_pointer(last_node, first_node)
+    return ret
+
+
+  def _fix_pointers(self, pointers: dict[str, str]) -> dict[str, str]:
+    """Takes a dictionary of file ids to the file ids they point to
+    It ensures that there are no dangling nodes, writing corrections to the DB
+    as necessary and it returns the cleaned graph.
+    """
+    parents = {v: set() for v in pointers.values()}
+    for k, v in pointers.items():
+      parents[v].add(k)
+    
+    for k, v in parents.items():
+      if len(v) > 1:
+        print(f"INFO: {k} marked distinctFrom {v}: remaking the complete subgraph")
+        to_add_up = v.copy()
+        added_up = set()
+        to_add_down = set([k])
+        added_down = set()
+        while len(to_add_up) > 0:
+          n = to_add_up.pop()
+          for p in parents.get(n, []):
+            if p not in added_up:
+              to_add_up.add(p)
+          added_up.add(n)
+        while len(to_add_down) > 0:
+          n = to_add_down.pop()
+          for c in pointers[n]:
+            if c not in added_down:
+              to_add_down.add(c)
+          added_down.add(n)
+        new_pointers = self._make_new_cycle(added_up | added_down)
+        pointers.update(new_pointers)
+        return self._fix_pointers(pointers)
+    for k in pointers.keys():
+      if k not in parents:
+        leaf = k
+        # because k has no parents, leaf can never
+        # come back around to k, guarenteeing that
+        # this isn't an infinite loop
+        while leaf in pointers:
+          leaf = pointers[leaf]
+        living_leaf = self.gcache.get_item(leaf)
+        if not living_leaf:
+          leaf = parents[leaf]
+          assert len(leaf) == 1, "Multiple parents should be handled alread"
+          leaf = list(leaf)[0]
+        print(f"INFO: Fixing broken distinctFrom chain from {k} to {leaf}")
+        if leaf == k:
+          self._write_pointer(leaf, None)
+          del pointers[k]
+          return self._fix_pointers(pointers)
+        else:
+          self._write_pointer(leaf, k)
+          pointers[leaf] = k
+          return self._fix_pointers(pointers)
+    return pointers
+  
+  def clear_distinctions_from(self, file_id: str, pointing_to: str = None):
+    if file_id not in self.fileid_to_distinct_neighbors:
+      return
+    neighbors = self.fileid_to_distinct_neighbors[file_id]
+    assert len(neighbors) > 0, f"Why is there an empty neighbors list?"
+    if len(neighbors) == 1:
+      neighbor = list(neighbors)[0]
+      self._write_pointer(neighbor, None)
+      self._write_pointer(file_id, None)
+      del self.fileid_to_distinct_neighbors[file_id]
+      del self.fileid_to_distinct_neighbors[neighbor]
+      return
+    pointing_neighbor = fetch_distinct_file_pointing_to(self.gcache, file_id)
+    assert pointing_neighbor in neighbors
+    if not pointing_to:
+      pointing_to = fetch_files_distinction_pointer(self.gcache, file_id)
+    assert pointing_to in neighbors
+    assert pointing_to != pointing_neighbor
+    self._write_pointer(pointing_neighbor, pointing_to)
+    self._write_pointer(file_id, None)
+    for neighbor in neighbors:
+      self.fileid_to_distinct_neighbors[neighbor].remove(file_id)
+    del self.fileid_to_distinct_neighbors[file_id]
+
+def move_distinctions_off_file(gc: local_gdrive.DriveCache, file_id: str) -> None:
+  pointing_to = fetch_files_distinction_pointer(gc, file_id)
+  if not pointing_to:
+    return
+  distinctions = FileDistinctionManager(gc)
+  distinctions.clear_distinctions_from(file_id, pointing_to)
+
+gcache.register_trash_callback(move_distinctions_off_file)
+
+
 if __name__ == "__main__":
   glink_gens = []
   urls_to_save = []
@@ -923,7 +1061,7 @@ if __name__ == "__main__":
       )
     else:
       glink_gens.append(lambda r=link: r)
-  course = input_with_tab_complete("course: ", get_known_courses())
+  course = input_course_string_with_tab_complete()
   if course == "trash":
     print("Trashing...")
     for glink_gen in glink_gens:

@@ -21,7 +21,7 @@ module Jekyll
         {c: 'fas fa-vihara', n: 'pagoda', t: 'course', d: 'is about Buddhism as a cultural institution'},
         {c: 'far fa-map fa-rotate-90', n: 'folded scroll', t: 'course', d: 'will cover old, Buddhist texts'},
         {c: 'fas fa-chalkboard-teacher', n: 'lecturer', t: 'course', d: 'is a structured series of classes'},
-        {c: 'fas fa-cloud-arrow-down', n: 'cloud downarrow icon', t: 'link', d: 'will download this file from the cloud'},
+        {c: 'fas fa-cloud-arrow-down', n: 'cloud downarrow icon', t: 'link', d: 'downloads from the cloud'},
         {c: 'fab fa-google-drive', n: 'triangular logo', t: 'link', d: 'will open in Google Drive'},
         {c: 'fas fa-tablet-alt', n: 'tablet', t: 'link', d: 'will download an eBook file suitable for tablets and ereaders'},
         {c: 'fab fa-google-play', n: 'triangular icon', t: 'link', d: 'will open in Google Play'},

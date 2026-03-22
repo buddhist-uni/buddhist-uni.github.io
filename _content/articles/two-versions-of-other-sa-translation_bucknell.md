@@ -2,7 +2,7 @@
 title: "The Two Versions of the *Other Translation of Saṃyuktāgama*"
 authors:
   - bucknell
-external_url: "https://enlight.lib.ntu.edu.tw/FULLTEXT/JR-BJ001/bj001170589.pdf"
+external_url: "https://www.chibs.edu.tw/ch_html/chbj/21/003-New_Bucknell_CHBJ_V12.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1rJaLg_ZZDhwPd9xKafq1kB5-EyErTFc0/view?usp=drivesdk"
 course: sa

@@ -2,7 +2,7 @@
 title: "The Very Serious Science of Humor"
 authors:
   - "Allie Volpe"
-external_url: "https://www.vox.com/the-highlight/23486818/science-humor-comedy"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/the-highlight/23486818/science-humor-comedy"
 drive_links:
   - "https://drive.google.com/file/d/1MGRA-sV9HzOSecUynA-6dGgtea653oht/view?usp=drivesdk"
 course: feeling

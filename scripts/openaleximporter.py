@@ -2,11 +2,31 @@
 
 from urllib import parse as url
 from collections import deque
+from pathlib import Path
 import os
 import json
-import re
 import shutil
-from strutils import *
+from strutils import (
+   whitespace,
+   trunc,
+   floor,
+   ceil,
+   prompt,
+   title_case,
+   input_with_prefill,
+   get_author_slug,
+   italics,
+   MONTHS,
+   radio_dial,
+   invert_inverted_index,
+   authorstr,
+   text_from_index,
+   system_open,
+)
+from downloadutils import (
+   HOSTNAME_BLACKLIST,
+)
+import gdrive_base
 import gdrive
 from itertools import chain
 import journals
@@ -19,6 +39,11 @@ except:
   print("pip install requests yaspin python-slugify")
   quit(1)
 
+OPENALEX_CREDS_FILE = Path('~/.openalex.key').expanduser()
+OPENALEX_CREDS = ''
+if OPENALEX_CREDS_FILE.exists():
+   OPENALEX_CREDS = "api_key="+OPENALEX_CREDS_FILE.read_text().strip()+"&"
+
 def serp_result(work: dict, margin=10) -> str:
   width = os.get_terminal_size().columns
   space = width - margin - 4
@@ -26,11 +51,11 @@ def serp_result(work: dict, margin=10) -> str:
 
 OPENALEX_SEARCH_RESULT_COUNT = 10
 def search_openalex_for_works(query):
-  r = requests.get(f"https://api.openalex.org/autocomplete/works?q={url.quote(query, safe='')}")
+  r = requests.get(f"https://api.openalex.org/autocomplete/works?{OPENALEX_CREDS}q={url.quote(query, safe='')}")
   return json.loads(r.text)
 
 def fetch_work_data(workid):
-  r = requests.get(f"https://api.openalex.org/works/{workid}")
+  r = requests.get(f"https://api.openalex.org/works/{workid}?{OPENALEX_CREDS}")
   return json.loads(r.text)
 
 def alt_url_for_work(work, oa_url):
@@ -44,6 +69,29 @@ def alt_url_for_work(work, oa_url):
     except StopIteration:
       pass
   return ret
+
+def print_openalex_work(work: dict, indent=0):
+    s = "".join([" "]*indent)
+    try:
+      print(f"{s}Source: {work['primary_location']['source']['display_name']}")
+    except (TypeError, KeyError, ValueError):
+      print(f"{s}Source: ?")
+    print(f"{s}Year: {work['publication_year']}")
+    try:
+      print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
+    except (TypeError, KeyError, ValueError):
+      print(f"{s}Pages: ?")
+    print(f"{s}Cited By: {work['cited_by_count']}")
+    if work['abstract_inverted_index']:
+      print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
+    print(f"{s}Title: {work['title']}")
+    print(f"{s}Author(s): {authorstr(work, 6)}")
+    try:
+      if work['doi'] != work['open_access']['oa_url']:
+        print(f"{s}DOI: {work['doi']}")
+    except KeyError:
+      pass
+    print(f"{s}URL: {work['open_access']['oa_url']}")
 
 def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None) -> str:
   category = 'articles'
@@ -88,7 +136,8 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='', pageco
     stopwords=('a', 'an', 'the', 'is', 'are', 'by'),
     replacements=[('between','btw')],
   )
-  filename = input_with_prefill("Filename: ", filename)
+  if not draft:
+    filename = input_with_prefill("Filename: ", filename)
   try:
     author = work['authorships'][0]['author']['display_name']
     assert(work['authorships'][0]['author_position'] == 'first')
@@ -221,7 +270,7 @@ authors:
     if work['biblio']['issue']:
         if publisherid == publishers.MDPI:
           assert int(work['biblio']['first_page']) == int(work['biblio']['last_page']), f"I expected MDPI article {work['id']} to have first and last page == article number"
-          fd.write(f"number: {int(work['biblio']['first_page'])}")
+          fd.write(f"number: {int(work['biblio']['first_page'])}\n")
         else:
           fd.write(f"number: {work['biblio']['issue']}\n")
     try:
@@ -234,7 +283,7 @@ authors:
       else:
         if category in ('monographs', 'booklets', 'essays', 'reference') or publisherid == publishers.MDPI:
             fd.write("pages: \n")
-        if category in ('articles', 'papers', 'excerpts'):
+        elif category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
     fd.write(f"openalexid: {work['id'].split('/')[-1]}\n---\n\n>")
     abstract = deque(invert_inverted_index(work['abstract_inverted_index']))
@@ -313,10 +362,9 @@ def prompt_for_work(query) -> str:
     workid = r['results'][i]['id'].split("/")[-1]
     with yaspin(text="Fetching work info..."):
       work = fetch_work_data(workid)
-    print_work(work)
+    print_openalex_work(work)
     if prompt("Is this the correct work?"):
       return (work, query)
-  return (None, query)
 
 def _main():
   query = ""
@@ -324,16 +372,19 @@ def _main():
   work, query = prompt_for_work(query)
   if not work:
     quit(0)
-  with yaspin(text="Searching Drive for file..."):
-    title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
-    gfiles = gdrive.session().files().list(q=f"name contains '{title}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
-  if "files" not in gfiles:
-    raise RuntimeError("Unexpected GDrive API response: "+gfiles)
-  gfiles = gfiles["files"]
+  title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
+  gfiles = gdrive.gcache.search_by_name_containing(
+      title,
+      additional_filters="mime_type = ? AND owner = 1 AND shortcut_target IS NULL",
+      additional_params=('application/pdf',)
+  )
   gfile = None
   if len(gfiles) == 0:
-    gfiles = gdrive.session().files().list(q=f"name contains '{query}' AND mimeType='application/pdf' AND 'me' in owners",fields='files(id,name,parents)').execute()
-    gfiles = gfiles["files"]
+    gfiles = gdrive.gcache.search_by_name_containing(
+       query,
+       additional_filters="mime_type = ? AND owner = 1",
+       additional_params=('application/pdf',)
+    )
     if len(gfiles) == 0:
       print("No suitable files found.")
   for gfile in gfiles:
@@ -347,14 +398,16 @@ def _main():
     i = radio_dial([f"{f['name']} in {f['course']}" for f in gfiles]+["Other (I'll supply a URL manually)"])
     if i < len(gfiles):
       gfile = gfiles[i]
+    else:
+      gfile = None
   if gfile:
-    glink = gdrive.DRIVE_LINK.format(gfile['id'])
+    glink = gdrive_base.DRIVE_LINK.format(gfile['id'])
   else:
     glink = input("Google Drive Link: ")
-    gfile = gdrive.session().files().get(fileId=gdrive.link_to_id(glink),fields='name,parents,id').execute()
+    gfile = gdrive.gcache.get_item(gdrive_base.link_to_id(glink))
     parentid = gfile['parents'][0]
     gfile['course'] = gdrive.get_course_for_folder(parentid)
-  course = input_with_tab_complete("course: ", gdrive.get_known_courses(), prefill=gfile['course'])
+  course = gdrive.input_course_string_with_tab_complete(prefill=gfile['course'])
   folders = gdrive.get_gfolders_for_course(course)
   gdrive.move_gfile(glink, folders)
   filepath = make_library_entry_for_work(work, course=course, glink=glink)

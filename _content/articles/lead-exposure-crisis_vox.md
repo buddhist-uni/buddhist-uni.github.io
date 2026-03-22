@@ -2,7 +2,7 @@
 title: "Nearly half the world’s kids are exposed to dangerous levels of lead: And we aren’t doing much to prevent it"
 authors:
   - "Dylan Matthews"
-external_url: "https://www.vox.com/future-perfect/22834666/lead-exposure-poisoning-developing-countries"
+external_url: "https://web.archive.org/web/2022/https://www.vox.com/future-perfect/22834666/lead-exposure-poisoning-developing-countries"
 drive_links:
   - "https://drive.google.com/file/d/12gRR2gb5MbKlvcf1dPfmmgd3vPUJzajb/view?usp=drivesdk"
 course: things

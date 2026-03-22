@@ -7,6 +7,7 @@ external_url: "https://www.researchgate.net/publication/267381482"
 drive_links:
   - "https://drive.google.com/file/d/1jIOmHEUIEGvG08xtGSCsLw--nfHRkrOU/view?usp=drivesdk"
 course: things
+status: featured
 tags:
   - climate
 year: 2002

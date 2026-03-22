@@ -1,6 +1,7 @@
 #!/bin/python3
 
 # import argparse
+from functools import cache
 from pathlib import Path
 import json
 import regex
@@ -54,17 +55,20 @@ STOP_WORDS.update([stemmer.stem(word) for word in STOP_WORDS])
 NORMALIZED_TEXT_FOLDER = DATA_DIRECTORY.joinpath('normalized_drive_text')
 NORMALIZED_DRIVE_FOLDER = '1b1dOGh-fmbOhmwoPEnUgDehpqnQhOJ8Z'
 
-def save_normalized_text(drive_file_id, normalized_text):
+def local_normalized_text_file(drive_file_id):
     name = f"{drive_file_id}.pkl"
     NORMALIZED_TEXT_FOLDER.mkdir(exist_ok=True)
-    normalizedtextfile = NORMALIZED_TEXT_FOLDER.joinpath(name)
+    return NORMALIZED_TEXT_FOLDER.joinpath(name)
+
+def save_normalized_text(drive_file_id, normalized_text):
+    normalizedtextfile = local_normalized_text_file(drive_file_id)
     if normalizedtextfile.exists():
         return
-    import gdrive
+    import gdrive_base as gdrive
     mimeType = "application/octet-stream"
     metadata = {
       "mimeType": mimeType,
-      "name": name,
+      "name": normalizedtextfile.name,
       "parents": [NORMALIZED_DRIVE_FOLDER],
     }
     buffer = gdrive.BytesIO()
@@ -100,9 +104,9 @@ def get_ytdata_for_ids(youtube_ids: dict | list) -> list[dict]:
             ids_to_fetch.append(ytid)
     if ids_to_fetch:
         print(f"Fetching YouTube Data for {len(ids_to_fetch)} urls...")
-        import gdrive
-        snippets = gdrive.get_ytvideo_snippets(ids_to_fetch)
-        transcripts = gdrive.fetch_youtube_transcripts(ids_to_fetch)
+        import gdrive_base
+        snippets = gdrive_base.get_ytvideo_snippets(ids_to_fetch)
+        transcripts = gdrive_base.fetch_youtube_transcripts(ids_to_fetch)
         if len(snippets) != len(ids_to_fetch):
             raise ValueError("Didn't get all the snippets?")
         for vid in snippets:
@@ -240,11 +244,21 @@ class TagPredictor:
         self.classifiers_ = classifiers
         self.vectorizer_ = CountVectorizer(lowercase=False, vocabulary=vocabulary)
     
-    def predict(self, X, normalized=False) -> list[str]:
-        """Given an array of (normalized?) strings, predict the topics"""
+    def count_vectorize_texts(self, X, normalized=False):
         if not normalized:
             X = list(map(normalize_text, X))
-        X = self.vectorizer_.transform(X)
+        return self.vectorizer_.transform(X)
+    
+    def tfidf_vectorize_texts(self, X, normalized=False):
+        """Use the root classifier's TFIDF to semantically vectorize an array of texts"""
+        X = self.count_vectorize_texts(X, normalized)
+        pipeline = self.classifiers_['root'].pipeline_
+        X = pipeline.named_steps['filter_rare_words'].transform(X)
+        return pipeline.named_steps['tfidf'].transform(X)
+    
+    def predict(self, X, normalized=False) -> list[str]:
+        """Given an array of (normalized?) strings, predict the topics"""
+        X = self.count_vectorize_texts(X, normalized)
         prev_prediction = ['']*X.shape[0]
         curr_prediction = ['root']*X.shape[0]
         predicting = True
@@ -262,6 +276,7 @@ class TagPredictor:
         return curr_prediction
 
     @classmethod
+    @cache
     def load(cls, filepath: Path | str=None):
         """Loads a new instance of TagPredictor from the given save_as'ed .pkl file"""
         if not filepath:

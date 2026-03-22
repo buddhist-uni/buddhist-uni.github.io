@@ -4,6 +4,7 @@ authors:
   - williams-paul
 year: 1989
 publisher: Routledge
+external_url: "https://dhammadana.weebly.com/uploads/2/2/3/5/22352530/mahayana_buddhism_paul_williams.pdf"
 hidden_url: "https://web.archive.org/web/20220301024311if_/https://ahandfulofleaves.org/documents/Mahayana%20Buddhism_Williams.pdf"
 olid: OL10203914M
 course: mahayana

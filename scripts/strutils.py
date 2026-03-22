@@ -20,6 +20,23 @@ from pathlib import Path
 from functools import cache, reduce
 from collections import defaultdict
 from math import floor, ceil
+
+class DummyYaspin:
+    """A no-op version of yaspin for when verbosity is disabled."""
+    def __init__(self, *args, **kwargs):
+      self.text = kwargs.get("text", "")
+      self.spinner = kwargs.get("spinner", "dots")
+      self.timer = kwargs.get("timer", False)
+    def __enter__(self): return self
+    def __exit__(self, *args): pass
+    def __getattr__(self, name):
+        # Handle common yaspin methods by returning self (for chaining) 
+        # or a dummy function that returns self.
+        if name in ('ok', 'fail', 'write', 'hide', 'show', 'spinner', 'stop', 'start'):
+            return lambda *args, **kwargs: self
+        return self
+    def __call__(self, *args, **kwargs):
+        return self
 try:
   from titlecase import titlecase
 except:
@@ -55,10 +72,6 @@ sutta_id_re = re.compile(r'^([a-zA-Z]+)(\d+)[\.]?([-–\d]*)$')
 yt_url_to_id_re = re.compile(r'(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|live)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})')
 yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
 yaml_key = re.compile(r"^[a-z_]+:.*")
-
-HOSTNAME_BLACKLIST = {
-  "www.questia.com",
-}
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
 
@@ -102,7 +115,7 @@ def sanitize_string(text):
 def atoi(text):
     return int(text) if text.isdigit() else text
 
-def md5(text):
+def md5(text: bytes | str | Path):
   """Note: assumes text is the thing to hash. Pass a Path object for files."""
   bts = None
   if isinstance(text, bytes):
@@ -267,8 +280,7 @@ def radio_dial(options):
   stdin = sys.stdin.fileno()
   old_settings = termios.tcgetattr(stdin)
   tty.setraw(stdin)
-  try:
-    while True:
+  def _redisplay():
       cout(f"{ANSI_RESTORE_POSITION}{ANSI_ERASE_HERE_TO_END}{ANSI_RESTORE_POSITION}")
       if i > 0:
         cout(f"{ANSI_COLOR_DIM}   {i}/{length}: {options[i-1]}{ANSI_COLOR_RESET}")
@@ -277,10 +289,17 @@ def radio_dial(options):
       if length > i + 1:
         cout(ANSI_RETURN_N_DOWN(1))
         cout(f"{ANSI_COLOR_DIM}   {i+2}/{length}: {options[i+1]}{ANSI_COLOR_RESET}")
+  try:
+    while True:
+      _redisplay()
       ch = sys.stdin.read(1)
       if ch == '\x03':
         raise KeyboardInterrupt()
       elif ch in ['\r', '\x04', '\n']:
+        break
+      elif ch >= '1' and ch <= '9' and length < 9 and ord(ch) - ord('1') < length:
+        i = ord(ch) - ord('1')
+        _redisplay()
         break
       elif ch == '\x1b': # ESC
         ch = sys.stdin.read(1)
@@ -396,7 +415,7 @@ def title_case(s: str) -> str:
   # If the ratio looks good, trust
   return s
 
-def prompt(question: str, default = None) -> bool:
+def prompt(question: str, default:str = None) -> bool:
     reply = None
     hint = "(y/n)"
     if default == "y":
@@ -466,12 +485,12 @@ class FileSyncedSet:
     return self.norm(item) in self.items
 
 class FileSyncedMap:
-  def __init__(self, fname, keynormalizer=None):
-    self.fname = fname
+  def __init__(self, file_path, keynormalizer=None):
+    self.fname = file_path
     self.items = dict()
     self.norm = keynormalizer or (lambda a: str(a))
-    if os.path.exists(fname):
-      with open(fname) as fd:
+    if os.path.exists(file_path):
+      with open(file_path) as fd:
         self.items = json.load(fd)
   def _rewrite_file(self):
     with open(self.fname, "w") as fd:
@@ -650,38 +669,32 @@ def invert_inverted_index(index: dict) -> list:
 def text_from_index(index: dict) -> str:
   return " ".join(invert_inverted_index(index))
 
-# Makes the authors string for the work
-# https://docs.openalex.org/api-entities/works/work-object#authorships
-def authorstr(work: dict, maxn: int) -> str:
-    authors = list(map(lambda a: a['author']['display_name'].replace(',', ''), work['authorships']))
+def author_name_to_normal(maybe_flipped: str) -> str:
+  if ', ' not in maybe_flipped:
+    return maybe_flipped
+  sp = maybe_flipped.split(', ')
+  # is len(sp) > 2, we want to throw out sp[2:] anyway
+  # e.g. Thimme, David Gerhardt, 1970-
+  #  or  Tsomo, Karma Lekshe, PhD
+  return f"{sp[1]} {sp[0]}"
+
+def authorstr(work: dict, maxn: int=2) -> str:
+    """Given a CORE or OpenAlex work, gives the authors string for the filename"""
+    if 'authorships' in work:
+      # https://docs.openalex.org/api-entities/works/work-object#authorships
+      authors = list(map(lambda a: author_name_to_normal(a['author']['display_name']), work['authorships']))
+    elif 'authors' in work:
+      # https://api.core.ac.uk/docs/v3#tag/Works/operation/optionsCustomWorks:~:text=List%20of%20author%20names
+      if isinstance(work['authors'], str):
+        authors = json.loads(work['authors'])
+      else:
+        authors = work['authors']
+      assert isinstance(authors, list)
+      authors = [author_name_to_normal(author['name']) for author in authors]
     if len(authors) > maxn:
       authors = authors[:(maxn-1)]
       authors.append('et al')
     return ", ".join(authors)
-
-def print_work(work: dict, indent=0):
-    s = "".join([" "]*indent)
-    try:
-      print(f"{s}Source: {work['primary_location']['source']['display_name']}")
-    except (TypeError, KeyError, ValueError):
-      print(f"{s}Source: ?")
-    print(f"{s}Year: {work['publication_year']}")
-    try:
-      print(f"{s}Pages: {1+int(work['biblio']['last_page'])-int(work['biblio']['first_page'])}")
-    except (TypeError, KeyError, ValueError):
-      print(f"{s}Pages: ?")
-    print(f"{s}Cited By: {work['cited_by_count']}")
-    if work['abstract_inverted_index']:
-      print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
-    print(f"{s}Title: {work['title']}")
-    print(f"{s}Author(s): {authorstr(work, 6)}")
-    try:
-      if work['doi'] != work['open_access']['oa_url']:
-        print(f"{s}DOI: {work['doi']}")
-    except KeyError:
-      pass
-    print(f"{s}URL: {work['open_access']['oa_url']}")
-
 
 @cache
 def get_author_slugs():

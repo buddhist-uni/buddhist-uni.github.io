@@ -9,6 +9,7 @@ source_url: "https://ir.lib.pdn.ac.lk/handle/20.500.14444/3946"
 drive_links:
   - "https://drive.google.com/file/d/1o_KtHtR3U1bUW1-R78kqu3pKthSYA-YL/view?usp=drivesdk"
 course: theravada-roots
+status: featured
 tags:
   - society
   - sri-lanka-roots

@@ -17,4 +17,4 @@ pages: 63
 
 > Wars of the heart always take longer to cool than the barrel of a gun… we must heal through love… and we must go slowly, step by step…
 
-A brief but touching biography of the Cambodian Saṅgharāja during and immediately after the Khmer Rouge era whose "peace walks" (*Dhammayietra*) helped to restore peace and hope to his embattled people.
+A brief but touching biography of the Cambodian Saṅgharāja during and immediately after the Khmer Rouge era whose "peace walks" (*Dhammayietra*) helped to restore hope to his embattled people.

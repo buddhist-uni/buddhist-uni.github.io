@@ -18,7 +18,7 @@ openalexid: W2785520974
 
 > Known in Burmese as the *weikza-lam* or ‘Path of Esoteric 
 Knowledge,’ this tradition has as its goal not the termination of
-saṃsāric life as an arahant, but rather its indefi nite 
+saṃsāric life as an arahant, but rather its indefinite
 prolongation through the attainment of virtual immortality
 
 On a unique, Burmese hybrid of Buddhism and Daoism.

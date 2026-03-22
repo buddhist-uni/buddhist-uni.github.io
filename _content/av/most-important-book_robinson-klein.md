@@ -7,7 +7,8 @@ authors:
 year: 2020
 month: nov
 journal: vox
-external_url: "https://www.vox.com/2020/11/30/21726563/kim-stanley-robinson-the-ezra-klein-show-climate-change"
+external_url: "https://podcasts.apple.com/au/podcast/the-most-important-book-ive-read-this-year/id1081584611?i=1000500763227"
+source_url: "https://www.vox.com/2020/11/30/21726563/kim-stanley-robinson-the-ezra-klein-show-climate-change"
 course: society
 tags:
   - climate-change

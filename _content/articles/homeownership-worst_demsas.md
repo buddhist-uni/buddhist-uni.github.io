@@ -2,7 +2,7 @@
 title: "Homeownership can bring out the worst in you"
 authors:
   - "Jerusalem Demsas"
-external_url: "https://www.vox.com/the-goods/22597947/homeowner-nimby-affordable-housing-local"
+external_url: "https://web.archive.org/web/2021/https://www.vox.com/the-goods/22597947/homeowner-nimby-affordable-housing-local"
 drive_links:
   - "https://drive.google.com/file/d/1BRExQ1ALuj_Tu7Vw755OpV9eWHwzwo9T/view?usp=drivesdk"
 status: featured

@@ -29,4 +29,4 @@ The brahmin said:
 “I come from Dunnivittha,  
 And I am begging for two children.”  
 
-A translation of Worin cheongang jigok by Sejon the Great, the fourth monarch of the Koreanic state Joseon. The work celebrates the life of Shakyamuni Buddha and is noted for being one of the first works printed in vernacular Korean.
+A translation of the *Worin Cheongang Jigok* by Sejon the Great, the fourth monarch of the Joseon. The work celebrates the life of Shakyamuni Buddha and is noted for being one of the first works printed in vernacular Korean.

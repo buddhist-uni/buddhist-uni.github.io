@@ -4,7 +4,7 @@ authors:
   - "Roger Bischoff"
 external_url: "https://www.bps.lk/library-search-select.php?id=wh399"
 drive_links:
-  - "https://drive.google.com/file/d/1v_kALEtADIUKm19J1a2ZHZ18LbA62zuJ/view?usp=sharing"
+  - "https://drive.google.com/file/d/10k1s-BodYlkiDaHBY_u2NPj02ckJ5mZ6/view?usp=drive_link"
   - "https://drive.google.com/file/d/1jCH_RZtQb5OO42kLOD_-tKc0HchA-Ejo/view?usp=drive_link"
 formats: [pdf, epub]
 course: burmese

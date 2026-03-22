@@ -1,10 +1,9 @@
 #!/bin/python
 
-import gdrive
+import gdrive_base
 import datetime
 from collections import defaultdict
 from functools import cache
-import hashlib
 from strutils import git_root_folder, md5
 
 ROOT_FOLDER = "1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv"
@@ -52,7 +51,7 @@ class DriveFolder:
     subfolders = []
     shortcuts = []
     query = f"trashed=false AND '{folderid}' in parents"
-    for child in gdrive.all_files_matching(query, FIELDS):
+    for child in gdrive_base.all_files_matching(query, FIELDS):
       if child['mimeType'] == 'application/vnd.google-apps.folder':
         subfolders.append(child)
         continue
@@ -63,7 +62,7 @@ class DriveFolder:
       self.files.append(child)
     if len(shortcuts) > 0:
       print(f"  Resolving {len(shortcuts)} shortcut(s)...")
-      for child in gdrive.batch_get_files_by_id(
+      for child in gdrive_base.batch_get_files_by_id(
         [c['shortcutDetails']['targetId'] for c in shortcuts],
         FIELDS+',owners'
       ):
@@ -116,7 +115,7 @@ class DriveFolder:
   def list_files(self):
     space = '&nbsp;&nbsp;'*self.depth
     ret = [headerize(
-      f'<a href="{gdrive.FOLDER_LINK_PREFIX}{self.id}">{self.name}</a> <span style="color:#666666;">({human_readable_size(self.total_size())})</span>',
+      f'<a href="{gdrive_base.FOLDER_LINK_PREFIX}{self.id}">{self.name}</a> <span style="color:#666666;">({human_readable_size(self.total_size())})</span>',
       self.depth,
     )]
     for child in self.files:
@@ -150,7 +149,7 @@ if __name__ == "__main__":
   htmlfile.write_text(html)
 
   print("Replacing public doc with new version...")
-  docid = gdrive.create_doc(
+  docid = gdrive_base.create_doc(
     html=html,
     creator="CatalogBuilder",
     replace_doc="1IYrQyVyr8FfbHwRLH5OzwSQG9mhgl0av73klfi-t0DQ",

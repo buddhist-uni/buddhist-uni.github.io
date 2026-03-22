@@ -6,6 +6,9 @@ const UNSTEMMED_WORDS = new Set([
   //    ... Though maybe I should rename these tags?
   "modernism",
   "modernity",
+  // maybe rename these?
+  "nature",
+  "natural",
   // the following collided with "community"
   "communication",
   "communism",

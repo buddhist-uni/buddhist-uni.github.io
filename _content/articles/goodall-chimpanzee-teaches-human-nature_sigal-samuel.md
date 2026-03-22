@@ -2,7 +2,7 @@
 title: "Jane Goodall reveals what studying chimpanzees teaches us about human nature"
 authors:
   - "Sigal Samuel"
-external_url: "https://www.vox.com/future-perfect/22585935/jane-goodall-chimpanzees-animal-intelligence-human-nature"
+external_url: "https://web.archive.org/web/2021/https://www.vox.com/future-perfect/22585935/jane-goodall-chimpanzees-animal-intelligence-human-nature"
 drive_links:
   - "https://drive.google.com/file/d/1SoMMUo4svFkamRVCve2rnwhjMtTH4f3y/view?usp=sharing"
 course: cosmology

@@ -17,3 +17,5 @@ pages: 12
 ---
 
 > It is remarkable that there was a cosmology in Buddhism twenty-five centuries ago that doesn't conflict with modern physics.
+
+Ajahn Brahm explores how Buddhism and scientific inquiry aren’t opposed but complement each other.

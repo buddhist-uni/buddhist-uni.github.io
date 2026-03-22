@@ -18,3 +18,5 @@ Mastodon.py
 atproto
 ebooklib
 unidecode
+rapidfuzz
+lingua-language-detector

@@ -2,7 +2,8 @@
 title: "When Doing the Right Thing Makes You a Criminal"
 subcat: podcast
 authors: ["Wayne Hsiung", "Ezra Klein"]
-external_url: "https://www.vox.com/podcasts/2019/12/5/20995117/wayne-hsiung-animal-rights-the-ezra-klein-show"
+external_url: "https://www.thepodcastbrowser.com/when-doing-the-right-thing-makes-you-a-criminal/"
+source_url: "https://www.vox.com/podcasts/2019/12/5/20995117/wayne-hsiung-animal-rights-the-ezra-klein-show"
 month: dec
 year: 2019
 course: animals

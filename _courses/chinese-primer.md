@@ -55,15 +55,9 @@ It proceeds in four parts, corresponding to his three numbered volumes followed 
 
 The learning objective for this first section is to read (and understand!) an entire Sūtra in Chinese---ideally without having to look at a glossary or dictionary.
 
-#### General Resources for Learning Chinese
+#### General Resources for Chinese
 
-This is an extremely challenging but doable goal for someone new to Chinese. If this is you, I recommend the following resources to help learn the basics of the Chinese language:
-
-{% include content_box.html category="reference" slug="trainchinese" %}
-{% include content_box.html category="reference" slug="chineseskill" %}
-{% include content_box.html category="reference" slug="chinese-grammar_ctcfl" %}
-
-And even for the bilingual English-Chinese speakers, I recommend everyone get:
+I recommend everyone get:
 {% include content_blurb.html category="reference" slug="pleco" %}
 - The world's best Chinese dictionaries.
 - Note that students of this course may wish to purchase the optional "Flashcards" feature which will allow you to install [this custom dictionary](https://drive.google.com/open?id=1gUqbFQHEW0jflx-Srt0fGaPrlu2musMX){:target="_blank" ga-event-value="0.4"} containing the vocabulary for the class and review said vocabulary in a flashcard-like interface.

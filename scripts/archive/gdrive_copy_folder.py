@@ -9,6 +9,7 @@ from strutils import (
   DelayedKeyboardInterrupt,
   md5,
 )
+import gdrive_base
 import gdrive
 from googleapiclient.errors import HttpError
 
@@ -71,7 +72,7 @@ def trash_all_uncopied_files(root_folder: str):
         raise RuntimeError(f"\"{child['name']}\" is from {source} but doesn't know it!")
       if child['id'] in ASKED_ABOUT:
         continue
-      if gdrive.prompt(f"Tash uncopied \"{child['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{root_folder} ?"):
+      if gdrive.prompt(f"Tash uncopied \"{child['name']}\" in {gdrive_base.FOLDER_LINK_PREFIX}{root_folder} ?"):
         gdrive.trash_drive_file(child['id'])
         print("  Trashed")
       else:
@@ -145,9 +146,9 @@ def copy_shortcut(
     ).execute()
   except HttpError:
     if source_shortcut['id'] not in ASKED_ABOUT:
-      print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\" in {gdrive.FOLDER_LINK_PREFIX}{source_shortcut['parents'][0]}")
+      print(f"WARNING! Bad target for shortcut \"{source_shortcut['name']}\" in {gdrive_base.FOLDER_LINK_PREFIX}{source_shortcut['parents'][0]}")
       print(f"  Failed to get nominal target of https://drive.google.com/open?id={target_id}")
-      print(f"  Destination folder is {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id}")
+      print(f"  Destination folder is {gdrive_base.FOLDER_LINK_PREFIX}{dest_parent_id}")
       input( "  Please handle manually, then press enter to continue...")
       print("\n")
       ASKED_ABOUT.add(source_shortcut['id'])
@@ -155,7 +156,7 @@ def copy_shortcut(
   if is_file_mine(target):
     if defer_uncopied_targets is None:
       if not source_shortcut['id'] in ASKED_ABOUT:
-        print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" into {gdrive.FOLDER_LINK_PREFIX}{dest_parent_id} because \"{target['name']}\" ( https://drive.google.com/open?id={target_id} ) is mine and unmigrated!")
+        print(f"WARNING! Not making a copy of \"{source_shortcut['name']}\" into {gdrive_base.FOLDER_LINK_PREFIX}{dest_parent_id} because \"{target['name']}\" ( https://drive.google.com/open?id={target_id} ) is mine and unmigrated!")
         input("  Please handle manually, then press enter to continue...")
         ASKED_ABOUT.add(source_shortcut['id'])
       return False
@@ -348,7 +349,7 @@ def find_unmigrated_folders():
       print(f"ERROR! {folder['id']} is not a folder!!")
       continue
     if not folder['ownedByMe']:
-      print(f"ERROR! {gdrive.FOLDER_LINK_PREFIX}{folder['id']} is not owned by me!!")
+      print(f"ERROR! {gdrive_base.FOLDER_LINK_PREFIX}{folder['id']} is not owned by me!!")
       continue
     if not folder.get('properties', {}).get('copiedFrom'):
       print(f"ERROR! Folder {folder['id']} owned by me doesn't know where it came from!")

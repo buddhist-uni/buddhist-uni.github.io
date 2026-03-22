@@ -9,13 +9,17 @@ MINDFULNESS       = "T10708"
 # Mostly about Indonesian Muslims
 INDONESIAN_CULTURE = "T14022"
 
-# Untested
+# Mostly modern, political commentary
 CHINESE_PHILOSOPHY= "T10893"
+
+# Mostly anthropology, focused on mainland SEA
+SOUTHEAST_ASIA    = "T13002"
+
+# Untested
 ANTHROPOLOGY      = "T10149"
 ANTHROPOLOGY_MISC = "T14379"
 PARANORMAL_PSYCH  = "T12448"
 THE_SILK_ROAD     = "T12890"
-SOUTHEAST_ASIA    = "T13002"
 JAPAN             = "T11198"
 ASIAN_DEVELOPMENT = "T13057"
 ASIAN_POLITICS    = "T12956"

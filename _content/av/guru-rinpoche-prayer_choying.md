@@ -3,7 +3,7 @@ title: "Seven Line Prayer of Guru Rinpoche"
 authors:
   - "Ani Choying Drolma"
 subcat: music
-external_url: "https://www.youtube.com/watch?v=SaNEMx5X_K8"
+external_url: "https://www.youtube.com/watch?v=M4TW_LfyE4Y"
 drive_links:
   - "https://drive.google.com/file/d/19K4u-822WW9sq4m02XUiD15t88BLRAbP/view?usp=sharing"
 formats: [mp4]

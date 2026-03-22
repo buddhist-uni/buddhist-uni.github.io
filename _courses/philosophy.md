@@ -103,7 +103,7 @@ But before we get started, here is a brief introduction to Wisdom in Early Buddh
 
 {% include content_blurb.html category="av" slug="early-buddhism_wisdom_sujato-and-brahmali" %}
 - Bhante Sujato gives us a guest lecture on wisdom to start our course.
-- They introduce the main points we'll analyze in depth, and also briefly explain why this course doesn't follow the “conventional versus ultimate realities” dichotomy that many have used to explain Buddhist philosophy.
+- He introduces the main points we'll analyze in depth, and also briefly explains why this course doesn't follow the “conventional versus ultimate realities” dichotomy that many have used to explain Buddhist philosophy.
 - **Start here!**
 
 ### Week 1: The Buddha and the Cosmos

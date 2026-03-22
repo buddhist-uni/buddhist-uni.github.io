@@ -1,9 +1,10 @@
 ---
 title: "Bill Gates tweeted out a chart and sparked a huge debate about global poverty"
-authors: ["Dylan Matthews"]
-formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/19f2MTHUF463lK2bFa9YKGrRUTHyKYbFO/view?usp=drivesdk"]
-external_url: "https://www.vox.com/future-perfect/2019/2/12/18215534/bill-gates-global-poverty-chart"
+authors:
+  - "Dylan Matthews"
+drive_links:
+  - "https://drive.google.com/file/d/19f2MTHUF463lK2bFa9YKGrRUTHyKYbFO/view?usp=drivesdk"
+external_url: "https://web.archive.org/web/2020/https://www.vox.com/future-perfect/2019/2/12/18215534/bill-gates-global-poverty-chart"
 journal: vox
 year: 2019
 course: wider

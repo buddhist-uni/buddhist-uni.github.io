@@ -1,9 +1,7 @@
 ---
 title: "Train Chinese"
 external_url: "https://www.trainchinese.com/v2/viewApps.php?rAp=0"
-course: chinese-primer
-tags:
-  - mandarin
+course: mandarin
 year: 2009
 ---
 

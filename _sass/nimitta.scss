@@ -565,6 +565,11 @@ h1.overlay-into-banner {
     a {
         font-family: $ui-font-family;
     }
+    .copyright div a {
+        font-family: inherit;
+        text-decoration: underline;
+        color: inherit;
+    }
 }
 
 main header.post-header {

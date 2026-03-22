@@ -2,7 +2,7 @@
 title: "How to Negotiate"
 authors:
   - "Allie Volpe"
-external_url: "https://www.vox.com/even-better/23562374/negotiate-anything-prepare-questions"
+external_url: "https://web.archive.org/web/2023/https://www.vox.com/even-better/23562374/negotiate-anything-prepare-questions"
 drive_links:
   - "https://drive.google.com/file/d/1ncZkQXXGUl8OgkV428AFSQpmArzPasSD/view?usp=drivesdk"
 course: communication

@@ -2,7 +2,7 @@
 title: "Social media is making you angry: You have to ignore it"
 authors:
   - "Rebecca Jennings"
-external_url: "https://www.vox.com/culture/23899842/annoying-tweets-ignore-discourse-bait-social-media-anger"
+external_url: "https://web.archive.org/web/2023/https://www.vox.com/culture/23899842/annoying-tweets-ignore-discourse-bait-social-media-anger"
 drive_links:
   - "https://drive.google.com/file/d/1oMHQdnPTri4K8YU3fvkJXCi9BUK3ReYJ/view?usp=drivesdk"
 status: featured

@@ -4,7 +4,7 @@ authors:
   - "Carlo Rovelli"
 subcat: podcast
 editor: "Adam Conover"
-external_url: "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/E2288/traffic.megaphone.fm/STA7428066998.mp3"
+external_url: "https://traffic.megaphone.fm/STA7428066998.mp3"
 course: science
 year: 2023
 month: feb

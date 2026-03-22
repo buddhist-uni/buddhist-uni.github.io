@@ -88,6 +88,7 @@ exclude:
   - scripts/
   - .github/
   - .obsidian/
+  - assets/js/tests/
 
 permalink: pretty
 
@@ -287,6 +288,7 @@ collections:
        - gender.md
        - desire.md
        - families.md
+       - material-culture.md
        - food.md
        - animalia.md
        - senses.md

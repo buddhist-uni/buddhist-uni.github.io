@@ -8,6 +8,7 @@ source_url: "https://www.doi.org/10.1558/bsrv.18494"
 drive_links:
   - "https://drive.google.com/file/d/1E0HBDSaI2pFaTl6SbwArUJlYh5ErNan5/view?usp=drivesdk"
 course: canonical-poetry
+status: featured
 tags:
   - philosophy
 year: 2020
