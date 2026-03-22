@@ -67,7 +67,7 @@ function getBlurbForResult(result, item, positions) {
     // Calculate the best section of the content to blurb
     var best_i = -1;
     var best_n = 0;
-    for (var i in positions) {
+    for (var i = 0; i < positions.length; i++) {
         var n = 1;
         var j = i+1;
         while (j < positions.length) {
