@@ -175,7 +175,7 @@ function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
 
-  // Dylan's edit - remove quotes?
+  // Dylan's edit - remove quotes? - line 178 - 187
   // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
   var preWordsParse = data.q.replace(/["']/g, "");
 
