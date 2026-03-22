@@ -2,6 +2,9 @@
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 
+// Dylan's sutta finder button
+const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder!</a>'
+
 function getPositions(result, field) {
     var positions = [];
     var md = result.matchData.metadata;
@@ -185,6 +188,15 @@ function handleSearchMessage(data, searchFn) {
   preWordsParse = preWordsParse.replace(/^(\s*)(MN|SN|SNP|AN|DN)\s*(\d+)/i, function(_, leadingSpace, nikaya, number) {
     return leadingSpace + nikaya.toUpperCase() + " " + number;
   });
+  // this is to make a start on querying suttas from database. I'm starting with getting a space before sutta.
+  // then I'll have to figure something else out until I understand the lunrjs better and how the database querying is actually handled
+  preWordsParse = preWordsParse.replace(/\b([\p{L}]+?)sutta\b/giu, "$1 sutta");
+
+  // check if preWordsParse has sutta using regex .text()
+  const hasSutta = /\bsutta\b/i.test(preWordsParse);
+  if(hasSutta){
+    warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
+  }
 
   // Back to the original functionality
   var words = preWordsParse.trim().split(" ");
