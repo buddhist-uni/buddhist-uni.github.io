@@ -91,6 +91,7 @@ describe('categoryName', () => {
       const html = categoryName(cat);
       assert.ok(html.length > 0, `Expected non-empty HTML for "${cat}"`);
       assert.ok(html.includes('<i class='), `Expected icon element for "${cat}"`);
+      assertValidHtml(html, `categoryName("${cat}")`);
     }
   });
 
@@ -288,10 +289,12 @@ describe('getBlurbForResult', () => {
     const positions = [matchPos, mePos, insteadPos, ignorePos];
     const item = { title: 'Test', description: null, content: content };
     const blurb = getBlurbForResult(result, item, positions);
-    // Should pick the section with the most matches (MATCH, ME, INSTEAD) not the lone IGNORE
+    // Assert the negative first: a greedy implementation that includes everything
+    // would pass the positive checks below but fail here.
+    assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
+    // Should pick the section with the most matches (MATCH, ME, INSTEAD)
     assert.ok(blurb.includes('MATCH'), 'Expected blurb to contain MATCH');
     assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
-    assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
   });
 });
 
