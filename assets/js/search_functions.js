@@ -3,7 +3,7 @@ var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 
 // Dylan's sutta finder button
-const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder!</a>'
+const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a>'
 
 function getPositions(result, field) {
     var positions = [];
@@ -113,6 +113,7 @@ function categoryName(c) {
 function displaySearchResult(result, item) {
     var positions = getPositions(result, 'content');
     var blurb = getBlurbForResult(result, item, positions);
+  var titleText = Array.isArray(item.title) ? item.title.join('') : item.title;
     var type = null;
     switch (item.type) {
         case 'courses': type = '<i class="fas fa-chalkboard"></i> Course'; break;
@@ -124,7 +125,7 @@ function displaySearchResult(result, item) {
         case 'tags': type = '<i class="fas fa-tag"></i> Bibliography'; break;
         case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
     }
-    var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
+    var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, titleText, 'title') + '</a></h3>';
     if (type) ret += '<span class="Counter">' + type + '</span>';
     var lc = 0;
     for (var i in item.authors) {
@@ -169,7 +170,7 @@ function displaySearchResults(results) {
       return ret;
     } else {
       //Dylan's failsafe no result feature - check search.scss for css edits
-      return '<div class="sutta-finder"><li>No results found</li><li>We may not have every sutta available and we recommend using sutta finder.</li><li>Click the button below - (opens in new tab)<li><a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder!</a></li></div><div class="sutta-finder"><li>Or if you would like to use <strong>Sutta Central</strong></li><li>Click the button below - (opens in new tab)<li><a href="https://suttacentral.net/?lang=en" class="btn" target="_blank">Sutta Central!</a></li></div>';
+      return '<div class="sutta-finder"><li>No results found</li><li>We may not have every sutta available and we recommend using sutta finder.</li><li>Click the button below - (opens in new tab)<li><a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a></li></div><div class="sutta-finder"><li>Or if you would like to use <strong>Sutta Central</strong></li><li>Click the button below - (opens in new tab)<li><a href="https://suttacentral.net/?lang=en" class="btn" target="_blank">Sutta Central!</a></li></div>';
     }
 }
 
@@ -177,6 +178,73 @@ function displaySearchResults(results) {
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
+
+  /* Dylan's edit - the search queries are complex, but here in this function we are certainly testing
+      user input against our database info. My theory, is first do a oneword check against database titles
+      joined in one word, if matched show results and if not then go back to our usual methods. 
+
+      I had AI confirm against all lunr search scripts, that this is the best place to test this theory, and the AI
+      has implemented this fixed based on the context of our .js scripts. 
+  */
+  var oneWordQuery = data.q.trim();
+  if (oneWordQuery && oneWordQuery.indexOf(" ") === -1) {
+    try {
+      results = searchFn(oneWordQuery);
+    } catch (_) {
+      results = [];
+    }
+    if (!results.length && typeof store !== "undefined" && store) {
+      var normalizedToken = utils.unaccented(oneWordQuery).toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+      if (normalizedToken) {
+        var matchedRefs = [];
+        for (var ref in store) {
+          var rawTitle = store[ref] && store[ref].title ? store[ref].title : "";
+          var titleText = Array.isArray(rawTitle) ? rawTitle.join("") : String(rawTitle);
+          var joinedTitle = utils.unaccented(titleText).toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+
+          // after joining title, use regex to take away leading nikaya index tokens so we don't get -> an944pannavimuttasuttafreedbywisdom
+          // and take away any words/characters after sutta
+          var normalizedJoinedTitle = joinedTitle
+            .replace(/^(dn|mn|sn|an|snp)\d+(\d+)?/i, "")
+            .replace(/(sutta).*/i, "$1");
+
+          // here I check for sutta in the string like I do on line - 264
+          const hasSuttaOneWord = /\bsutta\b/i.test(normalizedJoinedTitle);
+          if(hasSuttaOneWord){
+            warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
+          }
+          if (joinedTitle === normalizedToken || normalizedJoinedTitle === normalizedToken) {
+            matchedRefs.push(ref);
+          }
+        }
+        if (matchedRefs.length) {
+          results = matchedRefs.map(function(matchedRef) {
+            return { ref: matchedRef, score: 1, matchData: { metadata: {} } };
+          });
+        }
+      }
+    }
+    if (results.length) {
+      if (data.filterquery && data.filterquery !== "") {
+        var earlyFilteredResults = searchFn(data.filterquery);
+        results = results.filter(function(result) {
+          return earlyFilteredResults.some(function(filteredResult) {
+            return filteredResult.ref === result.ref;
+          });
+        });
+      }
+      return {
+        "warninghtml": warning,
+        "html": displaySearchResults(results),
+        "count": results ? results.length : 0,
+        "q": data.q,
+        "filterquery": data.filterquery,
+        "qt": data.qt
+      };
+    }
+  }
+
+  // Now back to my other edits
 
   // Dylan's edit - remove quotes? - line 178 - 187
   // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
@@ -197,6 +265,8 @@ function handleSearchMessage(data, searchFn) {
   if(hasSutta){
     warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
   }
+
+  //--------------------------------------------------------------------------------------------------
 
   // Back to the original functionality
   var words = preWordsParse.trim().split(" ");
