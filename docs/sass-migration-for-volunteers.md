@@ -84,3 +84,4 @@ Dart Sass 3.0.0 is the milestone where deprecated `@import` behavior is expected
 - We are blocked by legacy global Sass structure.
 - Migration is still necessary.
 - The safe path is incremental module refactoring, not one-shot conversion.
+
