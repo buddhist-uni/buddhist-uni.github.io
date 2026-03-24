@@ -4,6 +4,7 @@ var RMAX = 100; // Max number of results to display
 
 // Dylan's sutta finder button
 const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a>'
+const suttaCentralCommunity = '<a href="https://discourse.suttacentral.net/search?context=topic&context_id=26591&q=my%20search%20query&skip_context=true" class="btn" target="_blank">Sutta Central Community</a>'
 
 function getPositions(result, field) {
     var positions = [];
@@ -244,18 +245,19 @@ function handleSearchMessage(data, searchFn) {
     }
   }
 
-  // Now back to my other edits
+  // Now back to Dylan's other edits
 
-  // Dylan's edit - remove quotes? - line 178 - 187
+  // Dylan's edit - remove quotes?
   // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
   var preWordsParse = data.q.replace(/["']/g, "");
 
   // Normalize leading nikaya index, e.g. "MN6" -> "MN 6"
   // I wrote out some for loops and char checks but AI suggested regex when I had him check my code.
   // Regex seems straight forward you just need to research it as I still need to. I would have preferred manually doing it so I can practice my ability
-  preWordsParse = preWordsParse.replace(/^(\s*)(MN|SN|SNP|AN|DN)\s*(\d+)/i, function(_, leadingSpace, nikaya, number) {
-    return leadingSpace + nikaya.toUpperCase() + " " + number;
-  });
+  preWordsParse = preWordsParse.replace(
+    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i,
+    (_, lead, coll, num) => `${lead}${coll.toUpperCase()} ${num}`
+  );
   // this is to make a start on querying suttas from database. I'm starting with getting a space before sutta.
   // then I'll have to figure something else out until I understand the lunrjs better and how the database querying is actually handled
   preWordsParse = preWordsParse.replace(/\b([\p{L}]+?)sutta\b/giu, "$1 sutta");
@@ -267,8 +269,20 @@ function handleSearchMessage(data, searchFn) {
   }
 
   //--------------------------------------------------------------------------------------------------
+  // Dylan's edit to check if query is a potential question or if query is longer than usual
+  // there is a bool flag to stop other warnings
+  const hasQuestion = /\?/.test(preWordsParse);
+  let stopOtherWarnings = false;
+    if (preWordsParse.length >= 40){
+      stopOtherWarnings = true;
+      
+    } else if(hasQuestion){
+      stopOtherWarnings = true;
+    } else {
+      stopOtherWarnings = false;
+    }
 
-  // Back to the original functionality
+  // Back to the original functionality - this was before my edits above
   var words = preWordsParse.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
@@ -281,6 +295,7 @@ function handleSearchMessage(data, searchFn) {
   var query = words.join(' ').trim();
   try {
     results = searchFn(query);
+
     if (!results.length){
       warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
       results = searchFn(data.q.trim());
@@ -309,6 +324,9 @@ function handleSearchMessage(data, searchFn) {
         return filteredResult.ref === result.ref;
       });
     });
+  }
+  if(stopOtherWarnings){
+    warning = "Are you querying a question? You can check for potential answers in the Sutta Central Community chat as well." + "<li>" + suttaCentralCommunity + "</li>"
   }
   return {
     "warninghtml": warning,
