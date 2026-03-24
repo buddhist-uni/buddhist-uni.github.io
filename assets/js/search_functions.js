@@ -182,9 +182,10 @@ function handleSearchMessage(data, searchFn) {
   // Normalize leading nikaya index, e.g. "MN6" -> "MN 6"
   // I wrote out some for loops and char checks but AI suggested regex when I had him check my code.
   // Regex seems straight forward you just need to research it as I still need to. I would have preferred manually doing it so I can practice my ability
-  preWordsParse = preWordsParse.replace(/^(\s*)(MN|SN|SNP|AN|DN)\s*(\d+)/i, function(_, leadingSpace, nikaya, number) {
-    return leadingSpace + nikaya.toUpperCase() + " " + number;
-  });
+  preWordsParse = preWordsParse.replace(
+    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i,
+    (_, lead, coll, num) => `${lead}${coll.toUpperCase()} ${num}`
+  );
   // this is to make a start on querying suttas from database. I'm starting with getting a space before sutta.
   // then I'll have to figure something else out until I understand the lunrjs better and how the database querying is actually handled
   preWordsParse = preWordsParse.replace(/\b([\p{L}]+?)sutta\b/giu, "$1 sutta");
