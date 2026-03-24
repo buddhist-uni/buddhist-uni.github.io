@@ -6,7 +6,7 @@ authors:
   - "Penelope Brown"
   - "Christina Englert"
   - "Makoto Hayashi and others"
-external_url: "https://europepmc.org/articles/pmc2705608?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705608"
 source_url: "https://doi.org/10.1073/pnas.0903616106"
 drive_links:
   - "https://drive.google.com/file/d/1qKrCMy8rgy91C8JK5nzh7LjhtADwQvrv/view?usp=drivesdk"

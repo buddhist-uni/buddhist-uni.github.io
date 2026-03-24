@@ -4,7 +4,7 @@ authors:
   - "C. Richard Chapman"
   - "Robert P. Tuckett"
   - "Chul-Hwa Song"
-external_url: "https://europepmc.org/articles/pmc2278005?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2278005"
 source_url: "https://doi.org/10.1016/j.jpain.2007.09.006"
 drive_links:
   - "https://drive.google.com/file/d/1RHJs5mIGiX-TlbaLkyN2c0ZSnW4OJfZo/view?usp=drivesdk"

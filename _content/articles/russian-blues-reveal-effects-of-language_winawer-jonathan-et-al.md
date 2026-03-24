@@ -6,7 +6,7 @@ authors:
   - "Michael C. Frank"
   - "Lisa Y. Wu"
   - "Alex R. Wade and others"
-external_url: "https://europepmc.org/articles/pmc1876524?pdf=render"
+external_url: "https://web.archive.org/web/20250527092836/https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC1876524&blobtype=pdf"
 source_url: "https://doi.org/10.1073/pnas.0701644104"
 drive_links:
   - "https://drive.google.com/file/d/1fVQ1NJf1vcCON-ERkrDTERtGQVJGDADT/view?usp=drivesdk"

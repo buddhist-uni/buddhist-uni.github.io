@@ -5,7 +5,7 @@ authors:
   - "Nikolina Skandali"
   - "Peter Dayan"
   - "Raymond J. Dolan"
-external_url: "https://europepmc.org/articles/pmc4143018?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4143018"
 source_url: "https://doi.org/10.1073/pnas.1407535111"
 drive_links:
   - "https://drive.google.com/file/d/1Wp7fixKsxLgkjdjABEM3v3dTZV06d-TQ/view?usp=drivesdk"
