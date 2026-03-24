@@ -25,5 +25,21 @@
     .instructions {
         font-family: $base-font-family;
     }
+    /* Dylan's edit - line 28 - 44 */
+    .sutta-finder{
+        border: 2px solid black;
+        padding: 20px;
+    }
+    .btn{
+        border-radius: 8px;
+        background-color: $banner-color;
+        padding: 10px;
+        color: white;
+        transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+    }
+    .btn:hover{
+        transform: translateY(-4px);
+        box-shadow: 0px 12px 5px -6px rgba(0,0,0, 0.3);
+    }
 }
 
