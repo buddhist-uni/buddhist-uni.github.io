@@ -172,7 +172,31 @@ function displaySearchResults(results) {
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
-  var words = data.q.trim().split(" ");
+  
+  // Dylan's edit - remove quotes? - line 178 - 187
+  // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
+  var preWordsParse = data.q.replace(/["']/g, "");
+
+  // Normalize leading nikaya index, e.g. "MN6" -> "MN 6"
+  // I wrote out some for loops and char checks but AI suggested regex when I had him check my code.
+  // Regex seems straight forward you just need to research it as I still need to. I would have preferred manually doing it so I can practice my ability
+  preWordsParse = preWordsParse.replace(/^(\s*)(MN|SN|SNP|AN|DN)\s*(\d+)/i, function(_, leadingSpace, nikaya, number) {
+    return leadingSpace + nikaya.toUpperCase() + " " + number;
+  });
+  // this is to make a start on querying suttas from database. I'm starting with getting a space before sutta.
+  // then I'll have to figure something else out until I understand the lunrjs better and how the database querying is actually handled
+  preWordsParse = preWordsParse.replace(/\b([\p{L}]+?)sutta\b/giu, "$1 sutta");
+
+  // check if preWordsParse has sutta using regex .text()
+  const hasSutta = /\bsutta\b/i.test(preWordsParse);
+  if(hasSutta){
+    warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
+  }
+
+  //--------------------------------------------------------------------------------------------------
+
+  // Back to the original functionality
+  var words = preWordsParse.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
