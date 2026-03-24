@@ -1,5 +1,6 @@
 ---
 ---
+@use "sass:color";
 @import "support";
 
 $topradii: 10px 10px 0px 0px;
@@ -84,7 +85,7 @@ div.tag-list3:last-child {
     }
 }
 .tag-list4:has(img) {
-    background-color: darken($grey-color-light, 10%);
+    background-color: color.adjust($grey-color-light, $lightness: -10%);
 }
 .tag-list4:has(.children4) .tagbox4 {
     padding: 2px 4px $spacing-unit 4px;
@@ -106,7 +107,7 @@ div.tag-list3:last-child {
     }
 }
 .tag-list6:has(img) {
-    background-color: darken($grey-color-light, 17%);
+    background-color: color.adjust($grey-color-light, $lightness: -17%);
 }
 .tag-list6 {
     font-size: 95%;
