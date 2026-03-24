@@ -165,7 +165,8 @@ function displaySearchResults(results) {
       }
       return ret;
     } else {
-      return '<li>No results found</li>';
+      //Dylan's failsafe no result feature - check search.scss for css edits
+      return '<div class="sutta-finder"><li>No results found</li><li>We may not have every sutta available and we recommend using sutta finder.</li><li>Click the button below - (opens in new tab)<li><a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a></li></div><div class="sutta-finder"><li>Or if you would like to use <strong>Sutta Central</strong></li><li>Click the button below - (opens in new tab)<li><a href="https://suttacentral.net/?lang=en" class="btn" target="_blank">Sutta Central!</a></li></div>';
     }
 }
 
