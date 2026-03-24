@@ -2,6 +2,8 @@
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 
+const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a>'
+
 function getPositions(result, field) {
     var positions = [];
     var md = result.matchData.metadata;
