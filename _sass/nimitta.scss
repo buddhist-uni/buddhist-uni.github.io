@@ -130,7 +130,20 @@ main {
 .footnotes {
     font-size: 15px;
 }
-
+.footerbackground{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    padding: 10px !important;
+    min-width: 100% !important;
+}
+.herotext{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 0 !important;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+    min-width: 100% !important;
+}
 footer.site-footer {
     background-color: $banner-color;
     color: $background-color;
@@ -140,14 +153,65 @@ footer.site-footer {
         }
         color: #EEF0FC;
     }
+    .footer-heading{
+        margin-bottom: 60px;
+        margin-right: 35px;
+    }
     .footer-heading, .footer-col-wrapper {
         color: $background-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     div.footer-col-3 {
         font-family: $readable-font-family;
+        padding: 8px;
+        border-left: solid 1px white;
+        align-items: center;
+    }
+    div.footer-col-2{
+        padding: 8px;
+    }
+    div.footer-col-1{
+        border-right: solid 1px white;
+        padding: 8px;
+        align-items: center;
+    }
+    div.footer-col {
+        height: 100px;
+        overflow-wrap: break-word;
+        text-align: center;
+        align-items: center;
+    }
+    div.footer-col-1, div.footer-col-2, div.footer-col-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* media queries for footer sections */
+    @media (max-width: 500px){
+       .footer-heading, .footer-col-wrapper {
+            flex-direction: column;
+        }
+        .footer-heading{
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+        div.footer-col-3 {
+            border-left: none !important;
+            border-top: 1px solid white;
+        }
+        div.footer-col-1{
+            border-right: none !important;
+            border-bottom: 1px solid white;
+        }
+        div.footer-col {
+            height: 150px;
+        }
     }
 }
-
 a:visited {
     color: $plum;
 }
