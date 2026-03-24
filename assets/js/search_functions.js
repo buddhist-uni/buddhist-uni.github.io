@@ -202,7 +202,7 @@ function handleSearchMessage(data, searchFn) {
             .replace(/^(dn|mn|sn|an|snp)\d+(\d+)?/i, "")
             .replace(/(sutta).*/i, "$1");
 
-          // here I check for sutta in the string like I do on line - 264
+          // here I check for sutta in the string.
           const hasSuttaOneWord = /\bsutta\b/i.test(normalizedJoinedTitle);
           if(hasSuttaOneWord){
             warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
