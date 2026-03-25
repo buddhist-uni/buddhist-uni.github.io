@@ -5,7 +5,7 @@ authors:
   - "Norman A. S. Farb"
   - "Philippe R. Goldin"
   - "Barbara L. Fredrickson"
-external_url: "https://europepmc.org/articles/pmc4826727?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4826727"
 source_url: "https://doi.org/10.1080/1047840x.2015.1064294"
 preprint_url: "https://doi.org/10.31231/osf.io/ea2q4"
 drive_links:

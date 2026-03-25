@@ -5,8 +5,7 @@ authors:
   - "Enrico Glerean"
   - "Riitta Hari"
   - "Jari K. Hietanen"
-external_url: "https://europepmc.org/articles/pmc3896150?pdf=render"
-source_url: "https://doi.org/10.1073/pnas.1321664111"
+external_url: "https://doi.org/10.1073/pnas.1321664111"
 drive_links:
   - "https://drive.google.com/file/d/1rCMB5mCr7gKmiqiwnBEDd7DYlglCdGoT/view?usp=drivesdk"
 course: feeling

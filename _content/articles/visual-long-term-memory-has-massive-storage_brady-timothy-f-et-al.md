@@ -5,7 +5,7 @@ authors:
   - "Talia Konkle"
   - "George A. Alvarez"
   - "Aude Oliva"
-external_url: "https://europepmc.org/articles/pmc2533687?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2533687"
 source_url: "https://doi.org/10.1073/pnas.0803390105"
 drive_links:
   - "https://drive.google.com/file/d/1rU3qXFLrip9rP4o4EK21a-V4QraW2tx3/view?usp=drivesdk"

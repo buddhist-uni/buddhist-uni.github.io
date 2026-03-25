@@ -6,7 +6,7 @@ authors:
   - "Timothy M. Lenton"
   - "Jens-Christian Svenning"
   - "Marten Scheffer"
-external_url: "https://europepmc.org/articles/pmc7260949?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7260949"
 source_url: "https://doi.org/10.1073/pnas.1910114117"
 drive_links:
   - "https://drive.google.com/file/d/1GtRudG-D7A1TGGlQ5Vje0XGPx3jx3qpA/view?usp=drivesdk"

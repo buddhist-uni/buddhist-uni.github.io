@@ -2,7 +2,7 @@
 title: "Between Desire and Duty: On Tibetan Identity and its Effects on Second-Generation Tibetans"
 authors:
   - "Tina Lauer"
-external_url: "https://asianethnology.org/article/136/download"
+external_url: "https://asianethnology.org/article/149744-between-desire-and-duty-on-tibetan-identity-and-its-effects-on-second-generation-tibetans.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1E9T7LmTCC8L5e3aPCmO75B4nU6JbEvVS/view?usp=drivesdk"
 course: migration

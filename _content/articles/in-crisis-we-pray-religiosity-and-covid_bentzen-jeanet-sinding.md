@@ -2,7 +2,7 @@
 title: "In crisis, we pray: Religiosity and the COVID-19 pandemic"
 authors:
   - "Jeanet Sinding Bentzen"
-external_url: "https://europepmc.org/articles/pmc8557987?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8557987"
 source_url: "https://doi.org/10.1016/j.jebo.2021.10.014"
 drive_links:
   - "https://drive.google.com/file/d/1zXrZqxpcP-zdzec8bVfy5cT2yq3Jeu3L/view?usp=drivesdk"
