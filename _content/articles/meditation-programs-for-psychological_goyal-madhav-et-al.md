@@ -6,7 +6,7 @@ authors:
   - "Erica Ms Sibinga"
   - "Neda F Gould"
   - "Anastasia Rowland-Seymour and others"
-external_url: "https://europepmc.org/articles/pmc4142584?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584"
 source_url: "https://doi.org/10.1001/jamainternmed.2013.13018"
 drive_links:
   - "https://drive.google.com/file/d/19Wq21oQ3nmDifWV67Qx4mPdRWZH4VUnV/view?usp=drivesdk"

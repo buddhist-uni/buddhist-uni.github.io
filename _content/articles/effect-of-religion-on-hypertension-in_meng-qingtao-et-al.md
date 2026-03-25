@@ -6,7 +6,7 @@ authors:
   - "Rui Shi"
   - "Xin Zhang"
   - "Si Wang and others"
-external_url: "https://europepmc.org/articles/pmc5974409?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5974409"
 source_url: "https://doi.org/10.1038/s41598-018-26638-4"
 drive_links:
   - "https://drive.google.com/file/d/1xxuQZHqC9UcD46TlkR6ShsosZ991zsae/view?usp=drivesdk"

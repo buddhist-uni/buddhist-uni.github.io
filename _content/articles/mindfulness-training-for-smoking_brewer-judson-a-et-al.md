@@ -6,7 +6,7 @@ authors:
   - "Theresa Babuscio"
   - "Charla Nich"
   - "Hayley E. Johnson and others"
-external_url: "https://europepmc.org/articles/pmc3191261?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3191261"
 source_url: "https://doi.org/10.1016/j.drugalcdep.2011.05.027"
 drive_links:
   - "https://drive.google.com/file/d/1OCf7a2efkVgssZe9rerZDs1JOADpIH6i/view?usp=drivesdk"

@@ -6,7 +6,7 @@ authors:
   - "Richard G. Olmstead"
   - "Elizabeth C. Breen"
   - "Michael R. Irwin"
-external_url: "https://europepmc.org/articles/pmc4407465?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4407465"
 source_url: "https://doi.org/10.1001/jamainternmed.2014.8081"
 drive_links:
   - "https://drive.google.com/file/d/1efI-aCS1CYj_axX2XJGW1Y4IfOBVSxwj/view?usp=drivesdk"
