@@ -6,7 +6,7 @@ authors:
   - "Judith T. Moskowitz"
   - "Susan Folkman"
   - "Elizabeth H. Blackburn"
-external_url: "https://europepmc.org/articles/pmc3057175?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3057175/"
 source_url: "https://doi.org/10.1111/j.1749-6632.2009.04414.x"
 drive_links:
   - "https://drive.google.com/file/d/1kxQRZZRbgf7OIO8U_-M1gTudcl_ajZfj/view?usp=drivesdk"
