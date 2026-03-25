@@ -6,7 +6,7 @@ authors:
   - "Daniel D. Adame"
   - "Steven P. Cole"
   - "Teresa I. Sivilli and others"
-external_url: "https://europepmc.org/articles/pmc2695992?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2695992"
 source_url: "https://doi.org/10.1016/j.psyneuen.2008.08.011"
 drive_links:
   - "https://drive.google.com/file/d/1WX3SQUJ-QUAVIoz3Exv6pIBJvhTj0Xk2/view?usp=drivesdk"

@@ -7,7 +7,7 @@ authors:
   - "Lisa J. Burklund"
   - "Matthew D. Lieberman"
   - "Jesusa M.G. Arevalo and others"
-external_url: "https://europepmc.org/articles/pmc3635809?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3635809"
 source_url: "https://doi.org/10.1016/j.bbi.2012.07.006"
 drive_links:
   - "https://drive.google.com/file/d/1IRz64Ky-qeKjSEfO6kKKo8znc1KKln0B/view?usp=drivesdk"

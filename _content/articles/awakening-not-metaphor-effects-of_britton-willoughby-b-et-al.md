@@ -6,7 +6,7 @@ authors:
   - "B. Rael Cahn"
   - "Jake H. Davis"
   - "Roberta E. Goldman"
-external_url: "https://europepmc.org/articles/pmc4054695?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4054695/"
 source_url: "https://doi.org/10.1111/nyas.12279"
 drive_links:
   - "https://drive.google.com/file/d/1A_auWHzKRJnhRgwYzkCPFqYTVsuhk5SM/view?usp=drivesdk"
