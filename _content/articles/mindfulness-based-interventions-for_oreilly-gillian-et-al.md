@@ -5,7 +5,7 @@ authors:
   - "Lauren Cook"
   - "Donna Spruijt-Metz"
   - "David S. Black"
-external_url: "https://europepmc.org/articles/pmc4046117?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4046117"
 source_url: "https://doi.org/10.1111/obr.12156"
 drive_links:
   - "https://drive.google.com/file/d/1NVnbUiuFRn2DAfkbNgT2geGeqfzsKaaE/view?usp=drivesdk"

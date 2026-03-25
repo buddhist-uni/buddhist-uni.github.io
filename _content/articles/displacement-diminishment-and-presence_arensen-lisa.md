@@ -2,7 +2,7 @@
 title: "Displacement, Diminishment, and Ongoing Presence: The State of Local Cosmologies in Northwest Cambodia in the Aftermath of War"
 authors:
   - "Lisa Arensen"
-external_url: "https://asianethnology.org/article/263/download"
+external_url: "https://asianethnology.org/article/149667-displacement-diminishment-and-ongoing-presence-the-state-of-local-cosmologies-in-northwest-cambodia-in-the-aftermath-of-war.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1EY8rxoJxOYzhjqDTpfIWtVTPt9oH8c2T/view?usp=drivesdk"
 course: nature

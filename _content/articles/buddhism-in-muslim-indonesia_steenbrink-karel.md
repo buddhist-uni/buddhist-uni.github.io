@@ -2,7 +2,7 @@
 title: "Buddhism in Muslim Indonesia"
 authors:
   - "Karel Steenbrink"
-external_url: "https://journal.uinjkt.ac.id/index.php/studia-islamika/article/download/346/745"
+external_url: "https://studiaislamika.ppimcensis.or.id/index.php/studia-islamika/article/download/346/745/1445"
 source_url: "https://doi.org/10.15408/sdi.v20i1.346"
 drive_links:
   - "https://drive.google.com/file/d/1a9_16IyB829RP8q15PYQ7wxSj6EcbaLR/view?usp=drivesdk"

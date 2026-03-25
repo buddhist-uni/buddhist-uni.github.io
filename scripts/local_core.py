@@ -308,7 +308,7 @@ class CoreAPIWorksCache:
         publisher = excluded.publisher,
         en_confidence = excluded.en_confidence,
         additional_outputs = excluded.additional_outputs
-      WHERE excluded.updated_date > works.updated_date;
+      WHERE excluded.updated_date >= works.updated_date;
     """
     self.cursor.execute(sql, (
       api_obj['id'],

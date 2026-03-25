@@ -15,7 +15,7 @@ minutes: 52
 ---
 
 > Slowly, day after day, the ice is
-closing over the swift running waters of the Zanskar River, transforming it into the Chadar, the frozen river.
+closing over the swift-running waters of the Zanskar River, transforming it into the Chadar: the frozen river.
 
 During the harsh winters, this frozen river becomes the only way out of the mountains of Zanskar.
 In this short, beautiful documentary, we see what that journey is like.

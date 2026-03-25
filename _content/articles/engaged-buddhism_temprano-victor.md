@@ -2,8 +2,9 @@
 title: "Defining Engaged Buddhism: Traditionists, Modernists, and Scholastic Power"
 authors:
   - "Victor Gerard Temprano"
-external_url: "https://api.equinoxpub.com/articles/fulltext/17677"
-drive_links: ["https://drive.google.com/file/d/1piEMuMyn36yJ4jDGjyWJxi35ox0P912i/view?usp=drivesdk"]
+external_url: "https://doi.org/10.1558/bsrv.v30i2.261"
+drive_links:
+  - "https://drive.google.com/file/d/1piEMuMyn36yJ4jDGjyWJxi35ox0P912i/view?usp=drivesdk"
 file_links:
   - "smallpdfs/temprano-victor_2013_engaged-buddhism.pdf"
 year: 2013
