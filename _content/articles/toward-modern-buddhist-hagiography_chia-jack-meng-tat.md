@@ -2,7 +2,7 @@
 title: "Toward a Modern Buddhist Hagiography: Telling the Life of Hsing Yun in Popular Media"
 authors:
   - "Jack Meng-Tat Chia"
-external_url: "https://scholarbank.nus.edu.sg/handle/10635/171681"
+external_url: "https://asianethnology.org/article/149751-toward-a-modern-buddhist-hagiography-telling-the-life-of-hsing-yun-in-popular-media.pdf"
 source_url: "https://doi.org/10.18874/ae.74.1.07"
 drive_links:
   - "https://drive.google.com/file/d/1EEi-ad2Sobui55VgkjZhaFA5rdv5cp5Y/view?usp=drivesdk"

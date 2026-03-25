@@ -5,7 +5,7 @@ authors:
   - "Ben Shahar"
   - "Ohad Szepsenwol"
   - "W. Jake Jacobs"
-external_url: "https://europepmc.org/articles/pmc3495556?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3495556"
 source_url: "https://doi.org/10.1016/j.beth.2011.08.006"
 drive_links:
   - "https://drive.google.com/file/d/1IXdshYuQiDXUkj1WfPFsXGc3DQcIoTKm/view?usp=drivesdk"

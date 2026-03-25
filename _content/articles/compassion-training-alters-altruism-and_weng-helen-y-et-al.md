@@ -6,7 +6,7 @@ authors:
   - "Alexander J. Shackman"
   - "Diane E. Stodola"
   - "Jessica Caldwell and others"
-external_url: "https://europepmc.org/articles/pmc3713090?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3713090"
 source_url: "https://doi.org/10.1177/0956797612469537"
 drive_links:
   - "https://drive.google.com/file/d/1Ei0qXfMGRn7iQzCKEu3qRiEw6kqDz0b-/view?usp=drivesdk"

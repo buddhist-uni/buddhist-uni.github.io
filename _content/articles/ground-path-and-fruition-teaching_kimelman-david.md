@@ -2,7 +2,7 @@
 title: "Ground, Path, and Fruition: Teaching Zebrafish Development to Tibetan Buddhist Monks in India"
 authors:
   - "David Kimelman"
-external_url: "https://europepmc.org/articles/pmc6277077?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6277077"
 source_url: "https://doi.org/10.1089/zeb.2018.1657"
 drive_links:
   - "https://drive.google.com/file/d/1HUoPcMWWbgwjuttm8rt7HEtVvZebKy9q/view?usp=drivesdk"
