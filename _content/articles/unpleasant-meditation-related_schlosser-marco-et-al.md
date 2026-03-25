@@ -7,7 +7,7 @@ authors:
   - "Sebastjan Vöröš"
   - "Rebecca Jones"
   - "Natalie L. Marchant"
-external_url: "https://europepmc.org/articles/pmc6508707?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6508707"
 source_url: "https://doi.org/10.1371/journal.pone.0216643"
 drive_links:
   - "https://drive.google.com/file/d/1Woy8O9Cp-7zNJ4AGphC0BHnH5gUxQ88Q/view?usp=drivesdk"

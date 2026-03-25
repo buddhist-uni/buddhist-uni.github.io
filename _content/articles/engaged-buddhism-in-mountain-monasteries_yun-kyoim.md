@@ -2,7 +2,7 @@
 title: "Engaged Buddhism in Mountain Monasteries: Templestay as Wellness Tourism in South Korea"
 authors:
   - "Kyoim Yun"
-external_url: "https://asianethnology.org/articles/2433"
+external_url: "https://asianethnology.org/article/150179-engaged-buddhism-in-mountain-monasteries-templestay-as-wellness-tourism-in-south-korea.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1FicIBiwm2ga0V63TUvaBOP2f_kB1HHlN/view?usp=drivesdk"
 course: engaged

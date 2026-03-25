@@ -3,7 +3,7 @@ title: "Effects of Mindfulness-Based Stress Reduction (MBSR) on Emotion Regulati
 authors:
   - "Philippe R. Goldin"
   - "James J. Gross"
-external_url: "https://europepmc.org/articles/pmc4203918?pdf=render"
+external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4203918"
 source_url: "https://doi.org/10.1037/a0018441"
 drive_links:
   - "https://drive.google.com/file/d/1hkGEo19uq23LwrDIQp1Z1Xmv3sQ_L3GQ/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Practice Without Stopping"
 authors:
   - "Luang Por Pieg"
-external_url: "https://www.dhammatalks.net/Books5/Luang_Por_Pieg_Practice_without_Stopping.htm"
+external_url: "http://www.dhammatalks.net/Books5/Luang_Por_Pieg_Practice_without_Stopping.htm"
 drive_links:
   - "https://drive.google.com/file/d/1Yrag_uo_7vVMfTFsdI6D_713Oy2Uuna5/view?usp=drivesdk"
 course: monastic-advice
