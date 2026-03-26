@@ -23,17 +23,14 @@
     margin-bottom: 7px;
     z-index: 5;
     cursor: pointer;
-    transition: box-shadow ease-in-out 0.3s, transform ease-in-out 0.3s;
+    transition: box-shadow linear 0.1s;
 }
-/* Dylan's edit - line 25 - 39 */
 .learning_styles li a {
     text-decoration: none !important;
 }
 .learning_styles li:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 0 16px -5px lightgray;
+    box-shadow: 0 0 16px -5px gray;
 }
-/* last bit */
 .learning_styles{
     margin-top: 35px;
 }

@@ -38,8 +38,6 @@ header.site-header {
                 overflow-x: scroll;
             }
         }
-        /* Dylan's edit - just getting used to the project files and how everything works. Thought I'd add something nice */
-        /* line 42 - 74*/
         a.page-link {
             color: white;
             position: relative;
@@ -53,19 +51,21 @@ header.site-header {
         a.page-link::after {
             content: "";
             position: absolute;
+            opacity: 0;
             left: 0;
             bottom: 0;
             top: 45px;
             width: 0;
-            height: 2px;
+            height: 1px;
             background: white;
-            transition: width 0.3s ease;
+            transition: opacity 0.2s ease-in-out;
         }
 
         a.page-link:hover::after,
         a.page-link.underline-page::after,
         a.page-link.highlighted-nav-link::after {
             width: 100%;
+            opacity: 1;
         }
 
         a.page-link.underline-page {
