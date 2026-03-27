@@ -51,21 +51,18 @@ header.site-header {
         a.page-link::after {
             content: "";
             position: absolute;
-            opacity: 0;
             left: 0;
             bottom: 0;
             top: 45px;
             width: 0;
             height: 1px;
             background: white;
-            transition: opacity 0.2s ease-in-out;
         }
 
         a.page-link:hover::after,
         a.page-link.underline-page::after,
         a.page-link.highlighted-nav-link::after {
             width: 100%;
-            opacity: 1;
         }
 
         a.page-link.underline-page {
