@@ -2,11 +2,10 @@
 
 import gdrive
 from pathlib import Path
-import json
 
 private_folders = {
   gdrive.folderlink_to_id(v["public"]): gdrive.folderlink_to_id(v["private"])
-  for v in json.loads(gdrive.FOLDERS_DATA_FILE.read_text()).values()
+  for v in gdrive.FOLDERS_DATA().values()
 }
 
 root = Path("../../../Download/")

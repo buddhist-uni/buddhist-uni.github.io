@@ -15,7 +15,7 @@ from gdrive_base import (
   yaspin,
 )
 from gdrive import (
-  FOLDERS_DATA_FILE,
+  FOLDERS_DATA,
   gcache,
   OLD_VERSIONS_FOLDER_ID,
   process_duplicate_files,
@@ -26,7 +26,7 @@ import website
 with yaspin(text="Loading website data..."):
   website.load()
 
-drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
+drive_folders = FOLDERS_DATA()
 private_folder_slugs = {
   folderlink_to_id(drive_folders[k]['private']): k
   for k in drive_folders

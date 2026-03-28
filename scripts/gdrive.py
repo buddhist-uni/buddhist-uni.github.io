@@ -82,10 +82,15 @@ atexit.register(gcache.close)
 OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
 
 
+def FOLDERS_DATA() -> dict[str, dict[str, str]]:
+  mtime = FOLDERS_DATA_FILE.stat().st_mtime_ns
+  if not hasattr(FOLDERS_DATA, 'mtime') or mtime > FOLDERS_DATA.mtime:
+    FOLDERS_DATA.ret = json.loads(FOLDERS_DATA_FILE.read_text())
+  return FOLDERS_DATA.ret
 
 def course_input_completer_factory() -> Callable[[str, int], str]:
   gfolders: dict[str, dict[str, str]]
-  gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
+  gfolders = FOLDERS_DATA()
   suggestions_cache: dict[str, list[str]]
   suggestions_cache = dict()
   subfolders_cache = dict()
@@ -144,16 +149,25 @@ def input_course_string_with_tab_complete(prompt='course: ', prefill=None):
     readline.set_completer_delims(prev_delims)
     return ret
 
+def folderid_to_course_string(folderid: str) -> str:
+  """Returns the `input_course_string_with_tab_complete` representation for the given `folderid`"""
+  folderid = link_to_id(folderid)
+  course = get_course_for_folder(folderid)
+  if course:
+    # TODO: Add / at the end if it's in the private folder
+    return course
+  folder_item = gcache.get_item(folderid)
+  return folderid_to_course_string(folder_item['parent_id']) + '/' + folder_item['name']
 
 def add_tracked_folder(slug, public, private, gfolders=None):
-  gfolders = gfolders or json.loads(FOLDERS_DATA_FILE.read_text())
+  gfolders = gfolders or FOLDERS_DATA()
   gfolders[slug] = {'public': public, 'private': private}
   FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
   return gfolders
 
 def get_gfolders_for_course(course):
   """Returns a (public, private) tuple of GIDs given a human course string"""
-  gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
+  gfolders = FOLDERS_DATA()
   parts = course.split('/')
   course = parts[0]
   if course not in gfolders:
@@ -206,15 +220,13 @@ def get_gfolders_for_course(course):
     del parts[0]
   return (public_folder, private_folder)
 
-def get_course_for_folder(folderid):
-  gfolders = json.loads(FOLDERS_DATA_FILE.read_text())
-  courselist = {v['public']: k for k, v in gfolders.items()}
-  if not folderid.startswith("http"):
-    folderid = FOLDER_LINK.format(folderid)
-  if folderid in courselist:
-    return courselist[folderid]
-  courselist = {v['private']: k for k, v in gfolders.items()}
-  return courselist.get(folderid, None)
+def get_course_for_folder(folderid) -> str | None:
+  mtime = FOLDERS_DATA_FILE.stat().st_mtime_ns
+  if not hasattr(get_course_for_folder, "mtime") or mtime > get_course_for_folder.mtime:
+    get_course_for_folder.courselist = load_folder_slugs()
+    get_course_for_folder.mtime = mtime
+  folderid = link_to_id(folderid) # just in case we got a link
+  return get_course_for_folder.courselist.get(folderid, None)
 
 def move_gfile(glink, folders):
   gfid = link_to_id(glink)
@@ -395,7 +407,7 @@ def download_folder_contents_to(folder_id: str, target_directory: Path | str, re
 
 def load_folder_slugs() -> dict[str, str]:
   "A mapping from GFolder IDs to slug names (inverse of FOLDERS_DATA_FILE)"
-  drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
+  drive_folders = FOLDERS_DATA()
   private_folder_slugs = {
     folderlink_to_id(drive_folders[k]['private']): k
     for k in drive_folders
@@ -404,7 +416,9 @@ def load_folder_slugs() -> dict[str, str]:
     folderlink_to_id(drive_folders[k]['public']): k
     for k in drive_folders
   }
-  return {**private_folder_slugs, **public_folder_slugs}
+  ret = {**private_folder_slugs, **public_folder_slugs}
+  del ret[None]
+  return ret
 
 def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
   """Takes a list of duplicate Google Drive Files and removes the extra versions intelligently.

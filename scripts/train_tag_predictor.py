@@ -51,7 +51,7 @@ from tag_predictor import (
 
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
 
-DRIVE_FOLDERS = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
+DRIVE_FOLDERS = gdrive.FOLDERS_DATA()
 PUBLIC_FOLDER_FOR_PRIVATE = {
     gdrive_base.folderlink_to_id(pair['private']): gdrive_base.folderlink_to_id(pair['public'])
     for pair in DRIVE_FOLDERS.values() if pair['private'] and pair['public']

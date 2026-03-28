@@ -67,7 +67,7 @@ if args.output and args.output.exists():
     reader = csv.reader(infp)
     for row in reader:
       outrows.append(row)
-gfolders = json.loads(gdrive.FOLDERS_DATA_FILE.read_text())
+gfolders = gdrive.FOLDERS_DATA()
 tags = {gdrive_base.folderlink_to_id(folder): tag for tag, folders in gfolders.items() for folder in folders.values()}
 
 for filep in args.folder.iterdir():
