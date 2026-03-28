@@ -364,6 +364,29 @@ def remove_dangling_pickles(verbose=True, dry_run=False):
   pbar.close()
   print(f"Deleted {deletes} of {len(all_pickles)} pickle files!")
 
+def remove_shortcuts_in_same_folder(verbose=True, dry_run=False):
+  print("Checking for shortcuts in the same folder as their target...")
+  query = """
+    SELECT s.id, s.name, s.parent_id
+    FROM drive_items s
+    JOIN drive_items t ON s.shortcut_target = t.id
+    WHERE s.parent_id = t.parent_id
+      AND s.owner = 1
+  """
+  with gcache._lock:
+    gcache.cursor.execute(query)
+    shortcuts_to_delete = [dict(row) for row in gcache.cursor.fetchall()]
+  
+  deletes = 0
+  for s in tqdm(shortcuts_to_delete, unit="f", disable=verbose):
+    if verbose:
+      tqdm.write(f"  Deleting superfluous shortcut '{s['name']}' in the same folder as its target")
+    deletes += 1
+    if not dry_run:
+      gcache.trash_file(s['id'])
+  print(f"  Deleted {deletes} superfluous shortcuts")
+  return deletes
+
 if __name__ == "__main__":
   argument_parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -422,6 +445,11 @@ if __name__ == "__main__":
     help="Whether to trim whitespace from file names",
     default=True,
   )
+  argument_parser.add_argument(
+    "--same-folder-shortcuts", action=argparse.BooleanOptionalAction,
+    help="Whether to remove shortcuts that are in the same folder as their target",
+    default=True,
+  )
   arguments = argument_parser.parse_args()
   print("Will perform the following tasks:")
   print(f"  Extensions: {arguments.extensions}")
@@ -431,6 +459,7 @@ if __name__ == "__main__":
   # print(f"  Old Cleanup: {arguments.oldies}")
   print(f"  Pickles: {arguments.pickles}")
   print(f"  Trim Whitespace: {arguments.trim_whitespace}")
+  print(f"  Same Folder Shortcuts: {arguments.same_folder_shortcuts}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
@@ -446,4 +475,6 @@ if __name__ == "__main__":
     remove_dangling_pickles(verbose=arguments.verbose)
   if arguments.trim_whitespace:
     trim_whitespace_from_filenames(verbose=arguments.verbose, dry_run=False)
+  if arguments.same_folder_shortcuts:
+    remove_shortcuts_in_same_folder(verbose=arguments.verbose, dry_run=False)
   print("All tasks complete")
