@@ -3,7 +3,6 @@
 import argparse
 import textwrap
 from tqdm import tqdm
-import json
 
 from strutils import (
   prompt,
@@ -313,6 +312,31 @@ def fix_file_extensions(verbose=True, dry_run=True):
   print(f"  Found {renames} files that needed an extension")
     
 
+def trim_whitespace_from_filenames(verbose=True, dry_run=False):
+  print("Trimming whitespace from filenames...")
+  query = "owner = 1 AND (name LIKE ' %' OR name LIKE '% ' OR name LIKE '% .%')"
+  files_to_fix = gcache.sql_query(query, ())
+  renames = 0
+  for f in tqdm(files_to_fix, unit="f", disable=verbose):
+    old_name: str = f['name']
+    if not old_name:
+      continue
+    if '.' in old_name:
+      parts = old_name.rsplit('.', 1)
+      parts[0] = parts[0].strip()
+      parts[1] = parts[1].strip()
+      new_name = '.'.join(parts)
+    else:
+      new_name = old_name.strip()
+    if new_name != old_name:
+      if verbose:
+        tqdm.write(f"  Renaming '{old_name}' -> '{new_name}'")
+      renames += 1
+      if not dry_run:
+        gcache.rename_file(f['id'], new_name)
+  print(f"  Trimmed whitespace for {renames} files")
+  return renames
+
 def remove_dangling_pickles(verbose=True, dry_run=False):
   from tag_predictor import NORMALIZED_DRIVE_FOLDER
   with yaspin(text="Loading all pickles..."):
@@ -386,11 +410,16 @@ if __name__ == "__main__":
   argument_parser.add_argument(
     "--duplicates", action=argparse.BooleanOptionalAction,
     help="Whether to remove duplicate files",
-    default=True,
+    default=False,
   )
   argument_parser.add_argument(
     "--pickles", action=argparse.BooleanOptionalAction,
     help="Whether to clean up dangling pickle files",
+    default=False,
+  )
+  argument_parser.add_argument(
+    "--trim-whitespace", action=argparse.BooleanOptionalAction,
+    help="Whether to trim whitespace from file names",
     default=True,
   )
   arguments = argument_parser.parse_args()
@@ -401,6 +430,7 @@ if __name__ == "__main__":
   print(f"  Duplicates: {arguments.duplicates}")
   # print(f"  Old Cleanup: {arguments.oldies}")
   print(f"  Pickles: {arguments.pickles}")
+  print(f"  Trim Whitespace: {arguments.trim_whitespace}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
@@ -414,4 +444,6 @@ if __name__ == "__main__":
     remove_duplicate_files(verbose=arguments.verbose)
   if arguments.pickles:
     remove_dangling_pickles(verbose=arguments.verbose)
+  if arguments.trim_whitespace:
+    trim_whitespace_from_filenames(verbose=arguments.verbose, dry_run=False)
   print("All tasks complete")
