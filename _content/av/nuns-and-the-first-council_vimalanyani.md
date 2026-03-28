@@ -15,4 +15,4 @@ number: 1
 
 > But, of course, women
 were not represented at the first council.
-So the texts of women were not collected
+So the texts of women were not collected...

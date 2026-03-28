@@ -14,7 +14,7 @@ title: "The Tag Ontology Viewer"
 <div id="loading">Loading...
   <i class="fas fa-spinner fa-spin-pulse"></i>
 </div>
-<div id="disp" style="overflow-x: auto;"></div>
+<div id="disp" style="overflow-x: auto; width: 98vw; margin-left: -49vw; position: relative; left: 50%;"></div>
 <div id="others"></div>
 
 <script type="module">
@@ -64,8 +64,12 @@ title: "The Tag Ontology Viewer"
       ${edgedata}
     }`).on("end",function(){
       var thesvg = document.querySelector("#disp svg");
-      thesvg.setAttribute("width", parseFloat(thesvg.getAttribute("width"))*0.8);
+      let newwidth = parseFloat(thesvg.getAttribute("width"))*0.8;
+      thesvg.setAttribute("width", newwidth);
       thesvg.setAttribute("height", parseFloat(thesvg.getAttribute("height"))*0.8);
+      let container = document.querySelector("#disp");
+      container.style.marginLeft = `max(${newwidth * -0.5}px, -48.5vw)`;
+      container.style.width = `min(${newwidth}px, 97vw)`;
       edgetoggle.disabled = false;
       d3.select("div#loading").style("display", "none");
     });
