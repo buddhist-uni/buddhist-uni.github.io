@@ -4,6 +4,26 @@ import argparse
 import textwrap
 from tqdm import tqdm
 
+class OnlyBooleanOptionalAction(argparse.BooleanOptionalAction):
+  def __init__(self, **kwargs):
+    super().__init__(**kwargs)
+    for option_string in self.option_strings.copy():
+      if option_string.startswith('--') and not option_string.startswith('--no-'):
+        self.option_strings.append('--only-' + option_string[2:])
+
+  def __call__(self, parser, namespace, values, option_string=None):
+    if option_string in self.option_strings:
+      if option_string.startswith('--only-'):
+        if not getattr(namespace, '_only_mode', False):
+          setattr(namespace, '_only_mode', True)
+          for action in parser._actions:
+            if isinstance(action, type(self)):
+              setattr(namespace, action.dest, False)
+        setattr(namespace, self.dest, True)
+      else:
+        setattr(namespace, self.dest, not option_string.startswith('--no-'))
+
+
 from strutils import (
   prompt,
 )
@@ -405,17 +425,17 @@ if __name__ == "__main__":
     '-v', '--verbose', action='store_true',
   )
   argument_parser.add_argument(
-    '--extensions', action=argparse.BooleanOptionalAction,
+    '--extensions', action=OnlyBooleanOptionalAction,
     help="Whether to fix files whose mimetype != their extension",
     default=True,
   )
   argument_parser.add_argument(
-    '--shortcuts', action=argparse.BooleanOptionalAction,
+    '--shortcuts', action=OnlyBooleanOptionalAction,
     help="Whether to create shortcuts in private folders for public files",
     default=True,
   )
   argument_parser.add_argument(
-    "--sharing", action=argparse.BooleanOptionalAction,
+    "--sharing", action=OnlyBooleanOptionalAction,
     help="Whether to share public files with the public",
     default=False,
   )
@@ -426,27 +446,27 @@ if __name__ == "__main__":
   # as that's the only way to know when a file was moved in.
   # The Trello card has more details: https://trello.com/c/Avwkm76n
   # argument_parser.add_argument(
-  #   "--old-cleanup", action=argparse.BooleanOptionalAction, dest="oldies",
+  #   "--old-cleanup", action=OnlyBooleanOptionalAction, dest="oldies",
   #   help="Whether to delete outdated 'Old Version' files",
   #   default=False,
   # )
   argument_parser.add_argument(
-    "--duplicates", action=argparse.BooleanOptionalAction,
+    "--duplicates", action=OnlyBooleanOptionalAction,
     help="Whether to remove duplicate files",
     default=False,
   )
   argument_parser.add_argument(
-    "--pickles", action=argparse.BooleanOptionalAction,
+    "--pickles", action=OnlyBooleanOptionalAction,
     help="Whether to clean up dangling pickle files",
     default=False,
   )
   argument_parser.add_argument(
-    "--trim-whitespace", action=argparse.BooleanOptionalAction,
+    "--trim-whitespace", action=OnlyBooleanOptionalAction,
     help="Whether to trim whitespace from file names",
     default=True,
   )
   argument_parser.add_argument(
-    "--same-folder-shortcuts", action=argparse.BooleanOptionalAction,
+    "--same-folder-shortcuts", action=OnlyBooleanOptionalAction,
     help="Whether to remove shortcuts that are in the same folder as their target",
     default=True,
   )
