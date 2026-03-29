@@ -337,7 +337,7 @@ def replace_links_across_all_docs(partialname: str = None):
       print(f"WARNING! Failed to replace links in {document['name']}")
 
 def find_unmigrated_folders():
-  known_folders = json.load(gdrive.FOLDERS_DATA_FILE.open("r"))
+  known_folders = gdrive.FOLDERS_DATA()
   folderids = set()
   for tag, folders in known_folders.items():
     if folders["public"]:

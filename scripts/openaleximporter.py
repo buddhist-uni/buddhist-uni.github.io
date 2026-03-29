@@ -395,7 +395,7 @@ def _main():
     print(f"Got \"{gfile['name']}\"")
   if len(gfiles) > 1:
     print(f"Got {len(gfiles)} candidates.\nPlease select one:")
-    i = radio_dial([f"{f['name']} in {f['course']}" for f in gfiles]+["Other (I'll supply a URL manually)"])
+    i = radio_dial([f"{f['name']} in {gdrive.folderid_to_course_string(f['parents'][0])}" for f in gfiles]+["Other (I'll supply a URL manually)"])
     if i < len(gfiles):
       gfile = gfiles[i]
     else:

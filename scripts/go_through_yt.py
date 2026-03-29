@@ -42,7 +42,7 @@ with yaspin(text="Loading folders..."):
   }
   PRIVATE_FOLDER_TO_COURSE_SLUG = {
     gdrive_base.folderlink_to_id(value['private']): key
-    for key, value in json.loads(gdrive.FOLDERS_DATA_FILE.read_text()).items()
+    for key, value in gdrive.FOLDERS_DATA().items()
     if value.get('private')
   }
   YT_FOLDER_TO_COURSE_SLUG = {
