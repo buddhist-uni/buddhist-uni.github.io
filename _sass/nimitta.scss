@@ -56,17 +56,22 @@ header.site-header {
             top: 45px;
             width: 0;
             height: 1px;
-            background: white;
+            background: rgba(255,255,255,0.4);
+            @include media-query(764px) {
+                top: 38px !important;
+                height: 1px !important;
+            }
         }
-
         a.page-link:hover::after,
         a.page-link.underline-page::after,
         a.page-link.highlighted-nav-link::after {
             width: 100%;
         }
-
         a.page-link.underline-page {
             color: white !important;
+        }
+        a.page-link.highlighted-nav-link::after{
+            background: white;
         }
     }
     .site-title {
