@@ -3,7 +3,26 @@
 import argparse
 import textwrap
 from tqdm import tqdm
-import json
+
+class OnlyBooleanOptionalAction(argparse.BooleanOptionalAction):
+  def __init__(self, **kwargs):
+    super().__init__(**kwargs)
+    for option_string in self.option_strings.copy():
+      if option_string.startswith('--') and not option_string.startswith('--no-'):
+        self.option_strings.append('--only-' + option_string[2:])
+
+  def __call__(self, parser, namespace, values, option_string=None):
+    if option_string in self.option_strings:
+      if option_string.startswith('--only-'):
+        if not getattr(namespace, '_only_mode', False):
+          setattr(namespace, '_only_mode', True)
+          for action in parser._actions:
+            if isinstance(action, type(self)):
+              setattr(namespace, action.dest, False)
+        setattr(namespace, self.dest, True)
+      else:
+        setattr(namespace, self.dest, not option_string.startswith('--no-'))
+
 
 from strutils import (
   prompt,
@@ -15,7 +34,7 @@ from gdrive_base import (
   yaspin,
 )
 from gdrive import (
-  FOLDERS_DATA_FILE,
+  FOLDERS_DATA,
   gcache,
   OLD_VERSIONS_FOLDER_ID,
   process_duplicate_files,
@@ -26,7 +45,7 @@ import website
 with yaspin(text="Loading website data..."):
   website.load()
 
-drive_folders = json.loads(FOLDERS_DATA_FILE.read_text())
+drive_folders = FOLDERS_DATA()
 private_folder_slugs = {
   folderlink_to_id(drive_folders[k]['private']): k
   for k in drive_folders
@@ -313,6 +332,31 @@ def fix_file_extensions(verbose=True, dry_run=True):
   print(f"  Found {renames} files that needed an extension")
     
 
+def trim_whitespace_from_filenames(verbose=True, dry_run=False):
+  print("Trimming whitespace from filenames...")
+  query = "owner = 1 AND (name LIKE ' %' OR name LIKE '% ' OR name LIKE '% .%')"
+  files_to_fix = gcache.sql_query(query, ())
+  renames = 0
+  for f in tqdm(files_to_fix, unit="f", disable=verbose):
+    old_name: str = f['name']
+    if not old_name:
+      continue
+    if '.' in old_name:
+      parts = old_name.rsplit('.', 1)
+      parts[0] = parts[0].strip()
+      parts[1] = parts[1].strip()
+      new_name = '.'.join(parts)
+    else:
+      new_name = old_name.strip()
+    if new_name != old_name:
+      if verbose:
+        tqdm.write(f"  Renaming '{old_name}' -> '{new_name}'")
+      renames += 1
+      if not dry_run:
+        gcache.rename_file(f['id'], new_name)
+  print(f"  Trimmed whitespace for {renames} files")
+  return renames
+
 def remove_dangling_pickles(verbose=True, dry_run=False):
   from tag_predictor import NORMALIZED_DRIVE_FOLDER
   with yaspin(text="Loading all pickles..."):
@@ -340,6 +384,29 @@ def remove_dangling_pickles(verbose=True, dry_run=False):
   pbar.close()
   print(f"Deleted {deletes} of {len(all_pickles)} pickle files!")
 
+def remove_shortcuts_in_same_folder(verbose=True, dry_run=False):
+  print("Checking for shortcuts in the same folder as their target...")
+  query = """
+    SELECT s.id, s.name, s.parent_id
+    FROM drive_items s
+    JOIN drive_items t ON s.shortcut_target = t.id
+    WHERE s.parent_id = t.parent_id
+      AND s.owner = 1
+  """
+  with gcache._lock:
+    gcache.cursor.execute(query)
+    shortcuts_to_delete = [dict(row) for row in gcache.cursor.fetchall()]
+  
+  deletes = 0
+  for s in tqdm(shortcuts_to_delete, unit="f", disable=verbose):
+    if verbose:
+      tqdm.write(f"  Deleting superfluous shortcut '{s['name']}' in the same folder as its target")
+    deletes += 1
+    if not dry_run:
+      gcache.trash_file(s['id'])
+  print(f"  Deleted {deletes} superfluous shortcuts")
+  return deletes
+
 if __name__ == "__main__":
   argument_parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -358,17 +425,17 @@ if __name__ == "__main__":
     '-v', '--verbose', action='store_true',
   )
   argument_parser.add_argument(
-    '--extensions', action=argparse.BooleanOptionalAction,
+    '--extensions', action=OnlyBooleanOptionalAction,
     help="Whether to fix files whose mimetype != their extension",
     default=True,
   )
   argument_parser.add_argument(
-    '--shortcuts', action=argparse.BooleanOptionalAction,
+    '--shortcuts', action=OnlyBooleanOptionalAction,
     help="Whether to create shortcuts in private folders for public files",
     default=True,
   )
   argument_parser.add_argument(
-    "--sharing", action=argparse.BooleanOptionalAction,
+    "--sharing", action=OnlyBooleanOptionalAction,
     help="Whether to share public files with the public",
     default=False,
   )
@@ -379,18 +446,28 @@ if __name__ == "__main__":
   # as that's the only way to know when a file was moved in.
   # The Trello card has more details: https://trello.com/c/Avwkm76n
   # argument_parser.add_argument(
-  #   "--old-cleanup", action=argparse.BooleanOptionalAction, dest="oldies",
+  #   "--old-cleanup", action=OnlyBooleanOptionalAction, dest="oldies",
   #   help="Whether to delete outdated 'Old Version' files",
   #   default=False,
   # )
   argument_parser.add_argument(
-    "--duplicates", action=argparse.BooleanOptionalAction,
+    "--duplicates", action=OnlyBooleanOptionalAction,
     help="Whether to remove duplicate files",
+    default=False,
+  )
+  argument_parser.add_argument(
+    "--pickles", action=OnlyBooleanOptionalAction,
+    help="Whether to clean up dangling pickle files",
+    default=False,
+  )
+  argument_parser.add_argument(
+    "--trim-whitespace", action=OnlyBooleanOptionalAction,
+    help="Whether to trim whitespace from file names",
     default=True,
   )
   argument_parser.add_argument(
-    "--pickles", action=argparse.BooleanOptionalAction,
-    help="Whether to clean up dangling pickle files",
+    "--same-folder-shortcuts", action=OnlyBooleanOptionalAction,
+    help="Whether to remove shortcuts that are in the same folder as their target",
     default=True,
   )
   arguments = argument_parser.parse_args()
@@ -401,6 +478,8 @@ if __name__ == "__main__":
   print(f"  Duplicates: {arguments.duplicates}")
   # print(f"  Old Cleanup: {arguments.oldies}")
   print(f"  Pickles: {arguments.pickles}")
+  print(f"  Trim Whitespace: {arguments.trim_whitespace}")
+  print(f"  Same Folder Shortcuts: {arguments.same_folder_shortcuts}")
   print("")
   if not prompt("Continue?", default='y'):
     exit()
@@ -414,4 +493,8 @@ if __name__ == "__main__":
     remove_duplicate_files(verbose=arguments.verbose)
   if arguments.pickles:
     remove_dangling_pickles(verbose=arguments.verbose)
+  if arguments.trim_whitespace:
+    trim_whitespace_from_filenames(verbose=arguments.verbose, dry_run=False)
+  if arguments.same_folder_shortcuts:
+    remove_shortcuts_in_same_folder(verbose=arguments.verbose, dry_run=False)
   print("All tasks complete")

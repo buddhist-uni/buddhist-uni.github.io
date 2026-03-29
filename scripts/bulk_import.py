@@ -104,7 +104,7 @@ LIST_PARSERS = [
 
 PRIVATE_FOLDERID_FOR_COURSE = {
   key: gdrive_base.folderlink_to_id(value['private'])
-  for key, value in json.loads(gdrive.FOLDERS_DATA_FILE.read_text()).items()
+  for key, value in gdrive.FOLDERS_DATA().items()
   if value.get('private')
 }
 
