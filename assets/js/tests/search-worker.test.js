@@ -69,6 +69,9 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
+  'this.removeQuotes = removeQuotes;\n' +
+  'this.normalizeSuttaRefs = normalizeSuttaRefs;\n' +
+  'this.hasSutta = hasSutta;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -76,7 +79,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, removeQuotes, normalizeSuttaRefs, hasSutta, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -296,17 +299,66 @@ describe('getBlurbForResult', () => {
   });
 });
 
+// ── removeQuotes ─────────────────────────────────────────────
+
+describe('removeQuotes', () => {
+  it('removes quotes from strings', () => {
+    const mockSearch = () => [];
+    const data = { q: '"dn1"', filterquery: '', qt: 'test' };
+    const result = toLocal(removeQuotes(data, mockSearch));
+    assert.equal(result.q, 'dn1');
+  });
+})
+
 // ── normalizeSuttaRefs ─────────────────────────────────────────────
 
 describe('normalizeSuttaRefs', () => {
   it('separates nikaya indexes from numbers', () => {
+    const mockSearch = () => [];
+    const data = { q: 'DN10', filterquery: '', qt: 'test' };
     const result = toLocal(normalizeSuttaRefs(data, mockSearch));
+    assert.deepEqual(result, { nikaya: 'DN', number: '10' });
+  });
+  it('returns data back if no nikaya reference', () => {
+    const mockSearch = () => [];
+    const data = { q: 'this?', filterquery: '', qt: 'test' };
+    const result = toLocal(normalizeSuttaRefs(data, mockSearch));
+    assert.ok(result, 'No result passed');
+  });
+});
+
+// ── hasSutta ─────────────────────────────────────────────
+
+describe('hasSutta', () => {
+  it('detects the word sutta in string and returns sutta finder link in warninghtml', () => {
+    const mockSearch = () => [];
+    const data = { q: 'this is a sutta reference', filterquery: '', qt: 'test' };
+    const result = toLocal(hasSutta(data, mockSearch));
+    assert.ok(result.warninghtml && result.warninghtml.includes('sutta finder'), 'Expected warninghtml to include sutta finder link');
+  });
+  it('returns empty warninghtml when "sutta" is not present', () => {
+    const mockSearch = () => [];
+    const data = { q: 'no match here', filterquery: '', qt: 'test' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    assert.equal(result.warninghtml, '', 'Expected warninghtml to be empty');
   });
 });
 
 // ── handleSearchMessage ─────────────────────────────────────────────
 
 describe('handleSearchMessage', () => {
+  it('processes parsing on query first', () => {
+    const mockSearch = () => [];
+    const data = { q: '"dn10"', filterquery: '', qt: 'test' };
+    const result = toLocal(handleSearchMessage(data, mockSearch));
+    const data2 = { q: 'this is a sutta', filterquery: '', qt: 'test' };
+    const result2 = toLocal(handleSearchMessage(data2, mockSearch));
+    const data3 = { q: 'no match here', filterquery: '', qt: 'test' };
+    const result3 = toLocal(handleSearchMessage(data3, mockSearch));
+    assert.equal(result.q, 'dn10');
+    assert.ok(result2.warninghtml && result2.warninghtml.includes('sutta finder'));
+    assert.equal(result.warninghtml, '', 'Expected warninghtml to be empty');
+  })
   it('returns result object with expected keys', () => {
     const mockSearch = () => [];
     const data = { q: 'dharma', filterquery: '', qt: 'test' };

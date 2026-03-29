@@ -171,39 +171,43 @@ function displaySearchResults(results) {
     }
 }
 
-function normalizeSuttaRefs(query) {
-  return "";
+function removeQuotes(data) {
+  let removedQuotes = data.q.replace(/["']/g, "");
+  return { q: removedQuotes };
+}
+
+function normalizeSuttaRefs(data) {
+  const dataString = data.q
+  const match = dataString.match(
+    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i
+  );
+  if (match) {
+    return { nikaya: match[2].toUpperCase(), number: match[3] };
+  } else {
+    return { q: dataString }
+  }
+  return {};
+}
+
+function hasSutta(data) {
+  const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a>'
+  let warning = "";
+  const query = data.q || "";
+  const hasSutta = /\bsutta\b/i.test(query);
+  if(hasSutta){
+    warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
+    return { warninghtml: warning };
+  }
 }
 
 function handleSearchMessage(data, searchFn) {
+  const noQuotes = removeQuotes(data);
+  const checkNikaya_orReturnQuery = normalizeSuttaRefs(noQuotes);
+  const suttaFinder = hasSutta(checkNikaya_orReturnQuery);
   var results = [];
-  var warning = "";
-  
-  // Dylan's edit - remove quotes? - line 178 - 187
-  // /["']/g is a JavaScript regular expression literal - g = global flag (match all occurrences, not just the first)
-  var preWordsParse = data.q.replace(/["']/g, "");
+  var warning = suttaFinder ? suttaFinder.warninghtml : "";
 
-  // Normalize leading nikaya index, e.g. "MN6" -> "MN 6"
-  // I wrote out some for loops and char checks but AI suggested regex when I had him check my code.
-  // Regex seems straight forward you just need to research it as I still need to. I would have preferred manually doing it so I can practice my ability
-  preWordsParse = preWordsParse.replace(
-    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i,
-    (_, lead, coll, num) => `${lead}${coll.toUpperCase()} ${num}`
-  );
-  // this is to make a start on querying suttas from database. I'm starting with getting a space before sutta.
-  // then I'll have to figure something else out until I understand the lunrjs better and how the database querying is actually handled
-  preWordsParse = preWordsParse.replace(/\b([\p{L}]+?)sutta\b/giu, "$1 sutta");
-
-  // check if preWordsParse has sutta using regex .text()
-  const hasSutta = /\bsutta\b/i.test(preWordsParse);
-  if(hasSutta){
-    warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
-  }
-
-  //--------------------------------------------------------------------------------------------------
-
-  // Back to the original functionality
-  var words = preWordsParse.trim().split(" ");
+  var words = checkNikaya_orReturnQuery.q.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
