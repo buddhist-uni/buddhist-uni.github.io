@@ -296,6 +296,14 @@ describe('getBlurbForResult', () => {
   });
 });
 
+// ── normalizeSuttaRefs ─────────────────────────────────────────────
+
+describe('normalizeSuttaRefs', () => {
+  it('separates nikaya indexes from numbers', () => {
+    const result = toLocal(normalizeSuttaRefs(data, mockSearch));
+  });
+});
+
 // ── handleSearchMessage ─────────────────────────────────────────────
 
 describe('handleSearchMessage', () => {

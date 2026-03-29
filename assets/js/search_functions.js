@@ -171,6 +171,10 @@ function displaySearchResults(results) {
     }
 }
 
+function normalizeSuttaRefs(query) {
+  return "";
+}
+
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
