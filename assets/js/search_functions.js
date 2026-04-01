@@ -178,11 +178,12 @@ function removeQuotes(data) {
 
 function normalizeSuttaRefs(data) {
   const dataString = data.q
-  const match = dataString.match(
-    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i
+  const match = data.q.replace(
+    /^(\s*)(DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*(\d+(?:\.\d+)?)/i,
+    (_, lead, coll, num) => `${lead}${coll.toUpperCase()} ${num}`
   );
   if (match) {
-    return { nikaya: match[2].toUpperCase(), number: match[3] };
+    return { ...data, q: match };
   } else {
     return { q: dataString }
   }

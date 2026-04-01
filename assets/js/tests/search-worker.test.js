@@ -317,13 +317,13 @@ describe('normalizeSuttaRefs', () => {
     const mockSearch = () => [];
     const data = { q: 'DN10', filterquery: '', qt: 'test' };
     const result = toLocal(normalizeSuttaRefs(data, mockSearch));
-    assert.deepEqual(result, { nikaya: 'DN', number: '10' });
+    assert.deepEqual(result.q, 'DN 10',);
   });
   it('returns data back if no nikaya reference', () => {
     const mockSearch = () => [];
     const data = { q: 'this?', filterquery: '', qt: 'test' };
     const result = toLocal(normalizeSuttaRefs(data, mockSearch));
-    assert.ok(result, 'No result passed');
+    assert.ok(result.q, 'No result passed');
   });
 });
 
@@ -355,9 +355,15 @@ describe('handleSearchMessage', () => {
     const result2 = toLocal(handleSearchMessage(data2, mockSearch));
     const data3 = { q: 'no match here', filterquery: '', qt: 'test' };
     const result3 = toLocal(handleSearchMessage(data3, mockSearch));
+    const data4 = { q: 'DN10', filterquery: '', qt: 'test' };
+    const result4 = toLocal(handleSearchMessage(data4, mockSearch));
+    const data5 = { q: 'this?', filterquery: '', qt: 'test' };
+    const result5 = toLocal(handleSearchMessage(data5, mockSearch));
     assert.equal(result.q, 'dn10');
     assert.ok(result2.warninghtml && result2.warninghtml.includes('sutta finder'));
-    assert.equal(result.warninghtml, '', 'Expected warninghtml to be empty');
+    assert.equal(result3.warninghtml, '', 'Expected warninghtml to be empty');
+    assert.deepEqual(result4.q, 'DN 10',);
+    assert.ok(resul5.q, 'No result passed');
   })
   it('returns result object with expected keys', () => {
     const mockSearch = () => [];
