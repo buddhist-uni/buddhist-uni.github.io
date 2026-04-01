@@ -43,9 +43,11 @@ This course requires prior familiarity with [Buddhism](/courses/buddhism) and [i
 
 ## Time Requirement
 
-This course is quite long if you hope to complete it. But don't worry: each of [the modules](/series/mn-study_bodhi) (not to mention each sutta) is a fairly self-contained unit and can be studied independently based on your interests.  Feel free to pick and choose as you like!
+This course is quite long if you hope to complete it. But don't worry: each of [the modules](/series/mn-study_bodhi) (not to mention each sutta) is a fairly self-contained unit and can be studied independently based on your interests and time.  Feel free to pick and choose as you like!
 
-For those looking to take the _entire_ course, I recommend setting aside **a few hours per week** to study the Majjhima Nikāya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"} — whatever works for you.
+If you're looking for just a quick talk on each sutta in the collection, you may wish to check out [Clear Mountain's "10-Minute Majjhima" series on YouTube](/content/av/mission-majjhima_clear-mountain).
+
+For those looking to take the _entire_ course with Bhikkhu Bodhi, I recommend setting aside **a few hours per week** to study the Majjhima Nikāya — perhaps Wednesdays, Sundays, or [Uposatha Days](https://www.accesstoinsight.org/ptf/dhamma/sila/uposatha.html){:target="_blank"} — whatever works for you.
 Make these days a special “holy” day, dedicated to your practice and study. Read one sutta, listen to the lecture(s) on it and reflect.
 Take your time. Meditate on it. Let this weekly ritual become part of your life. If you keep it up, in a few years you may even be sad to know that you've finished the course!
 

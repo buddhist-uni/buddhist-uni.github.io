@@ -78,7 +78,7 @@ jobs:
     steps:
       - name: Deploy the Artifact to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       - name: Invalidate the CloudFlare Cache
         shell: bash
         run: |
