@@ -55,11 +55,10 @@ header.site-header {
             bottom: 0;
             top: 45px;
             width: 0;
-            height: 1px;
-            background: rgba(255,255,255,0.4);
+            height: 2px;
+            background: #D5D5D5;
             @include media-query(764px) {
                 top: 38px !important;
-                height: 1px !important;
             }
         }
         a.page-link:hover::after,
