@@ -1,7 +1,7 @@
 ---
 title: "We Need Better Narratives About Gender"
 authors:
-  - "Masha Gessen"
+  - "M. Gessen"
   - "Lydia Polgreen"
 subcat: podcast
 editor: "Kristin Lin"
