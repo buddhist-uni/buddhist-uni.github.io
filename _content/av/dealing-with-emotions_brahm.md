@@ -16,4 +16,3 @@ minutes: 69
 
 > ‘I know I'm going to get it!’ When you think negatively like that you're building up the emotions.
 The emotions you get are built up by many, many moments of unskillful attitudes and thoughts.
-But now we have them. So once you know where they come from, you know how they're actually created.
