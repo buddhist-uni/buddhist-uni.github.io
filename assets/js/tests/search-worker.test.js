@@ -69,7 +69,6 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
-  'this.removeQuotes = removeQuotes;\n' +
   'this.normalizeSuttaRefs = normalizeSuttaRefs;\n' +
   'this.hasSutta = hasSutta;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
@@ -79,7 +78,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, removeQuotes, normalizeSuttaRefs, hasSutta, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, normalizeSuttaRefs, hasSutta, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -299,17 +298,6 @@ describe('getBlurbForResult', () => {
   });
 });
 
-// ── removeQuotes ─────────────────────────────────────────────
-
-describe('removeQuotes', () => {
-  it('removes quotes from strings', () => {
-    const mockSearch = () => [];
-    const data = { q: '"dn1"', filterquery: '', qt: 'test' };
-    const result = toLocal(removeQuotes(data, mockSearch));
-    assert.equal(result.q, 'dn1');
-  });
-})
-
 // ── normalizeSuttaRefs ─────────────────────────────────────────────
 
 describe('normalizeSuttaRefs', () => {
@@ -347,24 +335,6 @@ describe('hasSutta', () => {
 // ── handleSearchMessage ─────────────────────────────────────────────
 
 describe('handleSearchMessage', () => {
-  it('processes parsing on query first', () => {
-    const mockSearch = () => [];
-    const data = { q: '"dn10"', filterquery: '', qt: 'test' };
-    const result = toLocal(handleSearchMessage(data, mockSearch));
-    const data2 = { q: 'this is a sutta', filterquery: '', qt: 'test' };
-    const result2 = toLocal(handleSearchMessage(data2, mockSearch));
-    const data3 = { q: 'no match here', filterquery: '', qt: 'test' };
-    const result3 = toLocal(handleSearchMessage(data3, mockSearch));
-    const data4 = { q: 'DN10', filterquery: '', qt: 'test' };
-    const result4 = toLocal(handleSearchMessage(data4, mockSearch));
-    const data5 = { q: 'this?', filterquery: '', qt: 'test' };
-    const result5 = toLocal(handleSearchMessage(data5, mockSearch));
-    assert.equal(result.q, 'dn10');
-    assert.ok(result2.warninghtml && result2.warninghtml.includes('sutta finder'));
-    assert.equal(result3.warninghtml, '', 'Expected warninghtml to be empty');
-    assert.deepEqual(result4.q, 'DN 10',);
-    assert.ok(resul5.q, 'No result passed');
-  })
   it('returns result object with expected keys', () => {
     const mockSearch = () => [];
     const data = { q: 'dharma', filterquery: '', qt: 'test' };

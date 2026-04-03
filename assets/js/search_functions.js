@@ -171,11 +171,6 @@ function displaySearchResults(results) {
     }
 }
 
-function removeQuotes(data) {
-  let removedQuotes = data.q.replace(/["']/g, "");
-  return { q: removedQuotes };
-}
-
 function normalizeSuttaRefs(data) {
   const dataString = data.q
   const match = data.q.replace(
@@ -202,8 +197,7 @@ function hasSutta(data) {
 }
 
 function handleSearchMessage(data, searchFn) {
-  const noQuotes = removeQuotes(data);
-  const checkNikaya_orReturnQuery = normalizeSuttaRefs(noQuotes);
+  const checkNikaya_orReturnQuery = normalizeSuttaRefs(data);
   const suttaFinder = hasSutta(checkNikaya_orReturnQuery);
   var results = [];
   var warning = suttaFinder ? suttaFinder.warninghtml : "";
