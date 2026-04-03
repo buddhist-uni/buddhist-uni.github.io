@@ -31,3 +31,4 @@ pages: 17
 > Slowing automobility's violence and pollution will be impracticable without the replacement of policies that encourage car harm with policies that reduce it.
 > To that end, the paper briefly summarises interventions that are ready for implementation.
 
+For a video walking through this paper and its conclusions, see [Not Just Bikes](https://youtu.be/umgi-CbaSRU){:target="_blank" ga-event-value="0.3"}
