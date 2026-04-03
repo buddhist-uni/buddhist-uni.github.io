@@ -171,75 +171,13 @@ function displaySearchResults(results) {
     }
 }
 
+function oneWordToken(query, searchFn) {
+  return query.includes("word");
+}
+
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
-
-  /* Dylan's edit - the search queries are complex, but here in this function we are certainly testing
-      user input against our database info. My theory, is first do a oneword check against database titles
-      joined in one word, if matched show results and if not then go back to our usual methods. 
-
-      I had AI confirm against all lunr search scripts, that this is the best place to test this theory, and the AI
-      has implemented this fixed based on the context of our .js scripts. 
-  */
-  var oneWordQuery = data.q.trim();
-  if (oneWordQuery && oneWordQuery.indexOf(" ") === -1) {
-    try {
-      results = searchFn(oneWordQuery);
-    } catch (_) {
-      results = [];
-    }
-    if (!results.length && typeof store !== "undefined" && store) {
-      var normalizedToken = utils.unaccented(oneWordQuery).toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
-      if (normalizedToken) {
-        var matchedRefs = [];
-        for (var ref in store) {
-          var rawTitle = store[ref] && store[ref].title ? store[ref].title : "";
-          var titleText = Array.isArray(rawTitle) ? rawTitle.join("") : String(rawTitle);
-          var joinedTitle = utils.unaccented(titleText).toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
-
-          // after joining title, use regex to take away leading nikaya index tokens so we don't get -> an944pannavimuttasuttafreedbywisdom
-          // and take away any words/characters after sutta
-          var normalizedJoinedTitle = joinedTitle
-            .replace(/^(dn|mn|sn|an|snp)\d+(\d+)?/i, "")
-            .replace(/(sutta).*/i, "$1");
-
-          // here I check for sutta in the string.
-          const hasSuttaOneWord = /\bsutta\b/i.test(normalizedJoinedTitle);
-          if(hasSuttaOneWord){
-            warning = "<li>We have detected the use of sutta. If you don't find what you are looking for - put spaces between the pali words or use sutta finder whilst we improve our searching features</li>" + "<li>" + suttaFinder + "</li>"
-          }
-          if (joinedTitle === normalizedToken || normalizedJoinedTitle === normalizedToken) {
-            matchedRefs.push(ref);
-          }
-        }
-        if (matchedRefs.length) {
-          results = matchedRefs.map(function(matchedRef) {
-            return { ref: matchedRef, score: 1, matchData: { metadata: {} } };
-          });
-        }
-      }
-    }
-    if (results.length) {
-      if (data.filterquery && data.filterquery !== "") {
-        var earlyFilteredResults = searchFn(data.filterquery);
-        results = results.filter(function(result) {
-          return earlyFilteredResults.some(function(filteredResult) {
-            return filteredResult.ref === result.ref;
-          });
-        });
-      }
-      return {
-        "warninghtml": warning,
-        "html": displaySearchResults(results),
-        "count": results ? results.length : 0,
-        "q": data.q,
-        "filterquery": data.filterquery,
-        "qt": data.qt
-      };
-    }
-  }
-
   var words = data.q.trim().split(" ");
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();

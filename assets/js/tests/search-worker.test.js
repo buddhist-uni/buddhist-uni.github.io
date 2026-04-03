@@ -69,6 +69,7 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
+  'this.oneWordToken = oneWordToken;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -76,7 +77,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -293,6 +294,14 @@ describe('getBlurbForResult', () => {
     assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
     assert.ok(blurb.includes('MATCH'), 'Expected blurb to contain MATCH');
     assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
+  });
+});
+
+// ── oneWordToken ─────────────────────────────────────────────
+describe('oneWordToken', () => {
+  it('returns true if results is truthy', () => {
+    const result = oneWordToken('word');
+    assert.equal(result, true);
   });
 });
 
