@@ -1,6 +1,7 @@
 ---
 title: "To Be, or Not to Be"
-authors: ["Masha Gessen"]
+authors:
+  - "M. Gessen"
 drive_links: ["https://drive.google.com/file/d/11xTg0DqMO9MKZez4kuped-hYhMlvqJO9/view?usp=drivesdk"]
 file_links:
   - "smallpdfs/gessen-masha_2018_to-be-or-not-to-be.pdf"

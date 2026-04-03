@@ -10,6 +10,7 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    gap: 0.1px;
 }
 
 .learning_styles li {
@@ -22,6 +23,17 @@
     margin: auto;
     margin-bottom: 7px;
     z-index: 5;
+    cursor: pointer;
+    transition: box-shadow linear 0.1s;
+}
+.learning_styles li a {
+    text-decoration: none !important;
+}
+.learning_styles li:hover{
+    box-shadow: 0 0 16px -5px gray;
+}
+.learning_styles{
+    margin-top: 35px;
 }
 
 .learning_styles .ls_name {
@@ -64,7 +76,6 @@ div.herotext {
     max-width: 30em;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     padding-top: 80px;
     margin-bottom: -100px;
     color: $banner-color;
