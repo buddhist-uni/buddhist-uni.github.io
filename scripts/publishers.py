@@ -2,7 +2,8 @@
 
 HAWAII = "P4310315682"
 AUP = "P4310312978"
-OXFORD = "P4310311648"
+OXFORD  = "P4310311647"
+OXFORD2 = "P4310311648"
 CAMBRIDGE = "P4310311721"
 MDPI = "P4310310987"
 SPRINGER_SBM = "P4310319900"
@@ -13,6 +14,7 @@ slugs = {
   HAWAII: "hawaii",
   AUP: "aup",
   OXFORD: "oxford",
+  OXFORD2: "oxford",
   CAMBRIDGE: "cambridge",
   MDPI: "mdpi",
   SPRINGER_SBM: "springer",

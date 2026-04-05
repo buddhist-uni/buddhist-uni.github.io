@@ -35,9 +35,14 @@ def split_filename(name) -> tuple[str, str]:
   return (parts[0].replace("_ ", ": "), parts[-1])
 
 def get_opensyllabus_score(title: str, author: str, year):
-  resp = requests.get(f"https://os-analytics-api-prod.opensyllabus.org/api/titles/?format=json&size=50&work_query={urlquote(title)}").json()
-  if len(resp['works']) == 0 and ":" in title:
-    resp = requests.get(f"https://os-analytics-api-prod.opensyllabus.org/api/titles/?format=json&size=50&work_query={urlquote(title.split(':')[0])}").json()
+  try:
+    resp = requests.get(f"https://api.opensyllabus.org/api/titles/?format=json&size=50&work_query={urlquote(title)}").json()
+    if len(resp['works']) == 0 and ":" in title:
+      resp = requests.get(f"https://api.opensyllabus.org/api/titles/?format=json&size=50&work_query={urlquote(title.split(':')[0])}").json()
+  except:
+    print("Failed to fetch from OpenSyllabus API. Please search manually:")
+    system_open("https://analytics.opensyllabus.org/record/works")
+    return input("score: ")
   if len(resp['works']) == 0:
     return 0
   if len(resp['works']) == 1:
