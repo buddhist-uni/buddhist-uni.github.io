@@ -3,18 +3,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "30 02 * * *"
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'tests/**'
-      - '.github/workflows/playwright.yml'
-      - 'assets/js/**'
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Download prod build
       uses: dawidd6/action-download-artifact@master
       with:
@@ -26,7 +20,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/_site
         tar -xf artifact.tar && rm artifact.tar
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: lts/*
     - name: Install dependencies
@@ -35,7 +29,7 @@ jobs:
       run: npx playwright install chromium --with-deps
     - name: Run Playwright tests
       run: npx playwright test
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       if: ${{ !cancelled() }}
       with:
         name: playwright-report

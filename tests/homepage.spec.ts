@@ -18,3 +18,13 @@ test('library link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Topics' })).toBeVisible();
 });
+
+test('courses link', async ({ page }) => {
+  await page.goto('');
+
+  const courselinks = page.getByRole('link', { name: 'Courses' });
+  await expect(courselinks).toHaveCount(2);
+  await courselinks.last().click();
+
+  await expect(page.getByRole('heading', { name: 'About Our Courses' })).toBeVisible();
+});
