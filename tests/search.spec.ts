@@ -64,3 +64,56 @@ test('bodhi translations in canon filter', async ({ page }) => {
   const translatorPill = page.locator('.Label', { hasText: 'Translator: Bhikkhu Bodhi' }).nth(99);
   await expect(translatorPill).toBeVisible();
 });
+
+test('empty query shows no results', async ({ page }) => {
+  await page.goto('/search/?q=');
+  await expect(page.getByText('filter your results by')).toBeVisible();
+  await expect(page.getByText('results (')).toHaveCount(0);
+});
+
+test('search with no matches shows zero results', async ({ page }) => {
+  await page.goto('/search/?q=zzznonexistentterm99999');
+  await waitForSearchResults(page);
+  await expect(page.getByText('results (0)')).toBeVisible();
+});
+
+test('search results update live on typing', async ({ page }) => {
+  await page.goto('/search/?q=mindfulness');
+  await waitForSearchResults(page);
+
+  const resultsText = page.getByText('results (');
+  await expect(resultsText).toBeVisible();
+
+  // Change query and verify results update without page reload
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('dependent origination');
+  // Wait for at least one result to appear with new content
+  await expect(page.locator('.Label', { hasText: 'Dependent' }).first()).toBeVisible();
+});
+
+test('filter dropdown changes result types', async ({ page }) => {
+  await page.goto('/search/?q=meditation&filter=%2Bin%3Aav');
+  await waitForSearchResults(page);
+
+  const searchFilter = page.locator('#search-filter');
+  const filterLabel = await searchFilter.locator('option:checked').textContent();
+  expect(filterLabel).toEqual('Audio/Video');
+
+  // All results should be AV type
+  const resultTypes = page.locator('.Counter');
+  const count = await resultTypes.count();
+  expect(count).toBeGreaterThan(0);
+  for (let i = 0; i < count; i++) {
+    await expect(resultTypes.nth(i)).toContainText(/Audio|Video/);
+  }
+});
+
+test('search preserves query params in URL', async ({ page }) => {
+  await page.goto('/search/');
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('heart sutra');
+  await waitForSearchResults(page);
+
+  // URL should contain the query
+  expect(page.url()).toContain('q=heart');
+});
