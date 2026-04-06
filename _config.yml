@@ -86,6 +86,8 @@ exclude:
   - obu/
   - exports/
   - scripts/
+  - tests/
+  - playwright.config.ts
   - .github/
   - .obsidian/
   - assets/js/tests/

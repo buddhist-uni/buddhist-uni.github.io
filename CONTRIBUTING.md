@@ -38,8 +38,6 @@ bundle install
 bundle exec jekyll serve -tI
 ```
 
-Note that you can add the `--config _config.yml,_quick_build.yml` build flag to `jekyll serve` for a faster, but partial build of the site.
-
 For more information on the build options, see [the Jekyll docs](https://jekyllrb.com/docs/usage/) and for the production build script, see [build.yaml](https://github.com/buddhist-uni/buddhist-uni.github.io/blob/main/.github/workflows/build.yaml).
 
 ### The Source Code
