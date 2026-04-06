@@ -28,4 +28,4 @@ Bhante Analayo was, however, mistaken in saying that:
 > With full awakening, all misleading notions and 'signs' of permanency are forever left behind.
 
 The mistaken notion of permanency is overcome at _Stream Entry_.
-With full awakening, the illusion of a 'self' who does the perceiving is what is left behind.
+With _full_ awakening, the illusion of a subject who does the perceiving is left behind.
