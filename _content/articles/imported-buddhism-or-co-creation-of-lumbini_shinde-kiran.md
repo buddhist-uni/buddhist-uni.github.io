@@ -9,7 +9,7 @@ drive_links:
 course: pilgrimage
 tags:
   - engaged
-  - international-development
+  - development
   - intercultural
   - migration
 year: 2021
