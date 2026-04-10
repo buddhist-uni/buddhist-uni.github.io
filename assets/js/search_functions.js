@@ -171,14 +171,32 @@ function displaySearchResults(results) {
     }
 }
 
-function oneWordToken(query, searchFn) {
-  return query.includes("word");
-}
-
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
   var words = data.q.trim().split(" ");
+
+  if(words.length === 1){
+    var tokenResults = [];
+    var oneWordQuery = words.join(' ').trim();
+    results = searchFn(oneWordQuery);
+    for (var i in results) {
+      let item = store[results[i].ref];
+      let joinedTitle = item.title;
+      if(joinedTitle === oneWordQuery){
+        tokenResults.push(results[i]);
+      }
+    }
+    return {
+      "warninghtml": warning,
+      "html": displaySearchResults(tokenResults),
+      "count": tokenResults ? tokenResults.length : 0,
+      "q": data.q,
+      "filterquery": data.filterquery,
+      "qt": data.qt
+    };
+  }
+
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {

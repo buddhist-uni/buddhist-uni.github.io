@@ -297,14 +297,6 @@ describe('getBlurbForResult', () => {
   });
 });
 
-// ── oneWordToken ─────────────────────────────────────────────
-describe('oneWordToken', () => {
-  it('returns true if results is truthy', () => {
-    const result = oneWordToken('word');
-    assert.equal(result, true);
-  });
-});
-
 // ── handleSearchMessage ─────────────────────────────────────────────
 
 describe('handleSearchMessage', () => {
