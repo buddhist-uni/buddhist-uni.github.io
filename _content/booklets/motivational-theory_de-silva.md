@@ -1,7 +1,7 @@
 ---
 title: "A Study of Motivational Theory in Early Buddhism with a Reference to the Psychology of Freud"
 authors:
-  - "Padmasiri De Silva"
+  - "Padmasiri de Silva"
 subcat: thesis
 external_url: "https://scholarspace.manoa.hawaii.edu/bitstreams/13245add-e589-4d09-b3cd-7e8a050deaac/download"
 drive_links:
