@@ -183,66 +183,68 @@ function handleSearchMessage(data, searchFn) {
     for (var i in results) {
       let item = store[results[i].ref];
       let joinedTitle = item.title;
-      if(joinedTitle === oneWordQuery){
+      if(joinedTitle.toLowerCase() === oneWordQuery.toLowerCase()){
         tokenResults.push(results[i]);
       }
     }
+    finalResults = tokenResults.length > 0 ? tokenResults : results
     return {
       "warninghtml": warning,
-      "html": displaySearchResults(tokenResults),
+      "html": displaySearchResults(finalResults),
       "count": tokenResults ? tokenResults.length : 0,
       "q": data.q,
       "filterquery": data.filterquery,
       "qt": data.qt
     };
-  }
+  } else {
 
-  for (var i = 0; i < words.length; i++) {
-    const s = words[i].trim();
-    if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
-      words[i] = "+" + s;
-    } else {
-      words[i] = s;
+    for (var i = 0; i < words.length; i++) {
+      const s = words[i].trim();
+      if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
+        words[i] = "+" + s;
+      } else {
+        words[i] = s;
+      }
     }
-  }
-  var query = words.join(' ').trim();
-  try {
-    results = searchFn(query);
+    var query = words.join(' ').trim();
+    try {
+      results = searchFn(query);
+      if (!results.length){
+        warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
+        results = searchFn(data.q.trim());
+      }
+    } catch (err) {
+      if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
+        results = searchFn(data.q.replaceAll(":"," "));
+      } else { throw err; }
+    }
     if (!results.length){
-      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-      results = searchFn(data.q.trim());
-    }
-  } catch (err) {
-    if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-      results = searchFn(data.q.replaceAll(":"," "));
-    } else { throw err; }
-  }
-  if (!results.length){
-    words = data.q.trim().split(" ");
-    if (words.find(function(w){ return w.length <= 2; }) == undefined) {
-      results = searchFn(words.join("~1 ") + "~1");
-      if (results.length)
-        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
-      else
+      words = data.q.trim().split(" ");
+      if (words.find(function(w){ return w.length <= 2; }) == undefined) {
+        results = searchFn(words.join("~1 ") + "~1");
+        if (results.length)
+          warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
+        else
+          warning = "";
+      } else {
         warning = "";
-    } else {
-      warning = "";
+      }
     }
-  }
-  if (data.filterquery && data.filterquery !== "") {
-    var filteredResults = searchFn(data.filterquery);
-    results = results.filter(function(result) {
-      return filteredResults.some(function(filteredResult) {
-        return filteredResult.ref === result.ref;
+    if (data.filterquery && data.filterquery !== "") {
+      var filteredResults = searchFn(data.filterquery);
+      results = results.filter(function(result) {
+        return filteredResults.some(function(filteredResult) {
+          return filteredResult.ref === result.ref;
+        });
       });
-    });
+    }
+    return {
+      "warninghtml": warning,
+      "html": displaySearchResults(results),
+      "count": results ? results.length : 0,
+      "q": data.q,
+      "filterquery": data.filterquery,
+      "qt": data.qt
+    };
   }
-  return {
-    "warninghtml": warning,
-    "html": displaySearchResults(results),
-    "count": results ? results.length : 0,
-    "q": data.q,
-    "filterquery": data.filterquery,
-    "qt": data.qt
-  };
 }
