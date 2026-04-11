@@ -69,7 +69,7 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
-  'this.oneWordToken = oneWordToken;\n' +
+  'this.findOneWordTitleMatches = findOneWordTitleMatches;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -77,7 +77,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, oneWordToken, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, findOneWordTitleMatches, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -296,6 +296,18 @@ describe('getBlurbForResult', () => {
     assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
   });
 });
+
+// ── findOneWordTitleMatches ─────────────────────────────────────────────
+describe('findOneWordTitleMatches', () => {
+  it('returns matched item when query matches title exactly', () => {
+    const mockStore = {
+      'id1': { title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka' }
+    };
+    const result = findOneWordTitleMatches('culasaccakasutta', mockStore);
+    assert.equal(toLocal(result).length, 1);
+    assert.equal(toLocal(result)[0].ref, 'id1');
+  });
+})
 
 // ── handleSearchMessage ─────────────────────────────────────────────
 

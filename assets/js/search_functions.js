@@ -171,80 +171,80 @@ function displaySearchResults(results) {
     }
 }
 
+function findOneWordTitleMatches(query, store) {
+  var tokenResults = [];
+  const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  for (var i in store){
+    const item = store[i];
+    const title = (item && item.title) ? item.title : "";
+    const titleMatch = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/(\bsutta\b).*$/i, "$1").toLowerCase().replace(/[^a-z0-9]/g, "");
+    if(titleMatch === normalizedQuery){
+      tokenResults.push({
+        ref: i,
+        score: 1,
+        matchData: { metadata: {} }
+      });
+    }
+  }
+  return tokenResults;
+}
+
 function handleSearchMessage(data, searchFn) {
+  var tokenResults = [];
   var results = [];
   var warning = "";
   var words = data.q.trim().split(" ");
 
   if(words.length === 1){
-    var tokenResults = [];
-    var oneWordQuery = words.join(' ').trim();
-    results = searchFn(oneWordQuery);
-    for (var i in results) {
-      let item = store[results[i].ref];
-      let joinedTitle = item.title;
-      if(joinedTitle.toLowerCase() === oneWordQuery.toLowerCase()){
-        tokenResults.push(results[i]);
-      }
-    }
-    finalResults = tokenResults.length > 0 ? tokenResults : results
-    return {
-      "warninghtml": warning,
-      "html": displaySearchResults(finalResults),
-      "count": tokenResults ? tokenResults.length : 0,
-      "q": data.q,
-      "filterquery": data.filterquery,
-      "qt": data.qt
-    };
-  } else {
-
-    for (var i = 0; i < words.length; i++) {
-      const s = words[i].trim();
-      if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
-        words[i] = "+" + s;
-      } else {
-        words[i] = s;
-      }
-    }
-    var query = words.join(' ').trim();
-    try {
-      results = searchFn(query);
-      if (!results.length){
-        warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-        results = searchFn(data.q.trim());
-      }
-    } catch (err) {
-      if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-        results = searchFn(data.q.replaceAll(":"," "));
-      } else { throw err; }
-    }
-    if (!results.length){
-      words = data.q.trim().split(" ");
-      if (words.find(function(w){ return w.length <= 2; }) == undefined) {
-        results = searchFn(words.join("~1 ") + "~1");
-        if (results.length)
-          warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
-        else
-          warning = "";
-      } else {
-        warning = "";
-      }
-    }
-    if (data.filterquery && data.filterquery !== "") {
-      var filteredResults = searchFn(data.filterquery);
-      results = results.filter(function(result) {
-        return filteredResults.some(function(filteredResult) {
-          return filteredResult.ref === result.ref;
-        });
-      });
-    }
-    return {
-      "warninghtml": warning,
-      "html": displaySearchResults(results),
-      "count": results ? results.length : 0,
-      "q": data.q,
-      "filterquery": data.filterquery,
-      "qt": data.qt
-    };
+    tokenResults = findOneWordTitleMatches(data.q.trim(), store)
   }
+  for (var i = 0; i < words.length; i++) {
+    const s = words[i].trim();
+    if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
+      words[i] = "+" + s;
+    } else {
+      words[i] = s;
+    }
+  }
+  var query = words.join(' ').trim();
+  try {
+    results = searchFn(query);
+    if (!results.length){
+      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
+      results = searchFn(data.q.trim());
+    }
+  } catch (err) {
+    if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
+      results = searchFn(data.q.replaceAll(":"," "));
+    } else { throw err; }
+  }
+  if (!results.length){
+    words = data.q.trim().split(" ");
+    if (words.find(function(w){ return w.length <= 2; }) == undefined) {
+      results = searchFn(words.join("~1 ") + "~1");
+      if (results.length)
+        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
+      else
+        warning = "";
+    } else {
+      warning = "";
+    }
+  }
+  if (data.filterquery && data.filterquery !== "") {
+    var filteredResults = searchFn(data.filterquery);
+    results = results.filter(function(result) {
+      return filteredResults.some(function(filteredResult) {
+        return filteredResult.ref === result.ref;
+      });
+    });
+  }
+  finalResults = tokenResults.length ? tokenResults : results;
+  return {
+    "warninghtml": warning,
+    "html": displaySearchResults(finalResults),
+    "count": finalResults ? finalResults.length : 0,
+    "q": data.q,
+    "filterquery": data.filterquery,
+    "qt": data.qt
+  };
 }
