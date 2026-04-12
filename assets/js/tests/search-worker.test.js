@@ -69,7 +69,8 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
-  'this.findOneWordTitleMatches = findOneWordTitleMatches;\n' +
+  'this.normalizeSuttaTitles = normalizeSuttaTitles;\n' +
+  'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -77,7 +78,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, oneWordToken, findOneWordTitleMatches, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -297,17 +298,26 @@ describe('getBlurbForResult', () => {
   });
 });
 
-// ── findOneWordTitleMatches ─────────────────────────────────────────────
-describe('findOneWordTitleMatches', () => {
+// ── normalizeSuttaTitles ─────────────────────────────────────────────
+describe('normalizeSuttaTitles', () => {
+  it('takes a sutta title from database store and parses all unique characters to match user query, + joins words', () => {
+    const mockTitle = 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka'
+    const result = normalizeSuttaTitles(mockTitle);
+    assert.equal(result, 'culasaccakasutta');
+  })
+});
+
+// ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
+describe('findOneWordSuttaTitleMatches', () => {
   it('returns matched item when query matches title exactly', () => {
     const mockStore = {
-      'id1': { title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka' }
+      'id1': { title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka', type: 'content', category: 'canon' }
     };
-    const result = findOneWordTitleMatches('culasaccakasutta', mockStore);
+    const result = findOneWordSuttaTitleMatches('culasaccakasutta', mockStore);
     assert.equal(toLocal(result).length, 1);
     assert.equal(toLocal(result)[0].ref, 'id1');
   });
-})
+});
 
 // ── handleSearchMessage ─────────────────────────────────────────────
 

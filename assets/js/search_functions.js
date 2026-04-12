@@ -2,8 +2,6 @@
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 
-const suttaFinder = '<a href="https://name.readingfaithfully.org/" class="btn" target="_blank">Sutta Finder</a>'
-
 function getPositions(result, field) {
     var positions = [];
     var md = result.matchData.metadata;
@@ -171,13 +169,19 @@ function displaySearchResults(results) {
     }
 }
 
-function findOneWordTitleMatches(query, store) {
+function normalizeSuttaTitles (query) {
+  const titleMatch = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/(\bsutta\b).*$/i, "$1").toLowerCase().replace(/[^a-z0-9]/g, "");
+  return titleMatch;
+}
+
+function findOneWordSuttaTitleMatches(query, store) {
   var tokenResults = [];
   const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
   for (var i in store){
     const item = store[i];
+    if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = (item && item.title) ? item.title : "";
-    const titleMatch = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/(\bsutta\b).*$/i, "$1").toLowerCase().replace(/[^a-z0-9]/g, "");
+    const titleMatch = normalizeSuttaTitles(title);
     if(titleMatch === normalizedQuery){
       tokenResults.push({
         ref: i,
@@ -196,7 +200,7 @@ function handleSearchMessage(data, searchFn) {
   var words = data.q.trim().split(" ");
 
   if(words.length === 1){
-    tokenResults = findOneWordTitleMatches(data.q.trim(), store)
+    tokenResults = findOneWordSuttaTitleMatches(data.q.trim(), store)
   }
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
@@ -238,7 +242,7 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
-  finalResults = tokenResults.length ? tokenResults : results;
+  finalResults = results.length ? results : tokenResults = findOneWordSuttaTitleMatches(data.q.trim(), store);
   return {
     "warninghtml": warning,
     "html": displaySearchResults(finalResults),
