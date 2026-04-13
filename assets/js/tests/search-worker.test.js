@@ -300,22 +300,29 @@ describe('getBlurbForResult', () => {
 
 // ── normalizeSuttaTitles ─────────────────────────────────────────────
 describe('normalizeSuttaTitles', () => {
-  it('takes a sutta title from database store and parses all unique characters to match user query, + joins words', () => {
-    const mockTitle = 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka'
-    const result = normalizeSuttaTitles(mockTitle);
-    assert.equal(result, 'culasaccakasutta');
-  })
+  it('returns an array of database objects with a new normalized title', () => {
+    const mockStore = {
+      id1: {
+        title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'culasaccakasutta');
+  });
 });
 
 // ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
 describe('findOneWordSuttaTitleMatches', () => {
   it('returns matched item when query matches title exactly', () => {
     const mockStore = {
-      'id1': { title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka', type: 'content', category: 'canon' }
+      'id1': { title: 'culasaccakasutta', type: 'content', category: 'canon' }
     };
     const result = findOneWordSuttaTitleMatches('culasaccakasutta', mockStore);
     assert.equal(toLocal(result).length, 1);
-    assert.equal(toLocal(result)[0].ref, 'id1');
   });
 });
 

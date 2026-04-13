@@ -69,6 +69,8 @@ var idx = lunr(function () {
     }
 });
 
+joinedTitles = normalizeSuttaTitles(store);
+
 self.onmessage = function(e) {
   self.postMessage(handleSearchMessage(e.data, idx.search.bind(idx)));
 }
