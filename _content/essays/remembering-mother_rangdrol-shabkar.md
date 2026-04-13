@@ -7,10 +7,11 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/shabkar/remembering-mother"
 drive_links:
   - "https://drive.google.com/file/d/1ZC375WCOuKcV-OrASNaFquqgQ4R7sejk/view?usp=drivesdk"
-course: brahmavihara
+course: mahayana
 tags:
   - cosmology
   - karma
+  - brahmavihara
 year: 2012
 publisher: "Lotsawa House"
 pages: 2
