@@ -10,12 +10,13 @@ function normalizeSuttaTitles (obj) {
     const item = obj[i];
     if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = item.title || "";
-    const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|SNP|DHP|ITI|THAG|THIG|UD)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/(\bsutta\b).*$/i, "$1").toLowerCase().replace(/[^a-z0-9]/g, "");
-    joinedTitleDatabase.push({
-        ref: i,
-        title: titleJoin,
-        matchData: { metadata: {} }
-    });
+      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
+      joinedTitleDatabase.push({
+          ref: i,
+          title: removedTheOnJoin,
+          matchData: { metadata: {} }
+      });
   }
   return joinedTitleDatabase;
 }

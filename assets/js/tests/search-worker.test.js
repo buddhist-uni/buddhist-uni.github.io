@@ -303,7 +303,7 @@ describe('normalizeSuttaTitles', () => {
   it('returns an array of database objects with a new normalized title', () => {
     const mockStore = {
       id1: {
-        title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka',
+        title: "Thig 3.8 Somā Therīgāthā: Somā's Verses",
         type: 'content',
         category: 'canon'
       }
@@ -311,13 +311,13 @@ describe('normalizeSuttaTitles', () => {
     const result = normalizeSuttaTitles(mockStore);
     assert.equal(result.length, 1);
     assert.equal(result[0].ref, 'id1');
-    assert.equal(result[0].title, 'culasaccakasutta');
+    assert.equal(result[0].title, 'somatherigatha');
   });
 
-  it('handles ma sutras', () => {
+  it('handles "the" and removes it from a string if it appears at the beginning', () => {
     const mockStore = {
       id1: {
-        title: 'MA 220 Arittha Sutra: The Discourse on Knowing the Better Way to Catch a Snake',
+        title: 'DN 22 The Mahāsatipaṭṭhāna Sutta: The Long Discourse about the Ways of Attending to Mindfulness',
         type: 'content',
         category: 'canon'
       }
@@ -325,7 +325,7 @@ describe('normalizeSuttaTitles', () => {
     const result = normalizeSuttaTitles(mockStore);
     assert.equal(result.length, 1);
     assert.equal(result[0].ref, 'id1');
-    assert.equal(result[0].title, 'aritthasutra');
+    assert.equal(result[0].title, 'mahasatipatthanasutta');
   });
 });
 
