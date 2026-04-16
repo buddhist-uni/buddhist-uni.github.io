@@ -313,6 +313,20 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].ref, 'id1');
     assert.equal(result[0].title, 'culasaccakasutta');
   });
+
+  it('handles ma sutras', () => {
+    const mockStore = {
+      id1: {
+        title: 'MA 220 Arittha Sutra: The Discourse on Knowing the Better Way to Catch a Snake',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'aritthasutra');
+  });
 });
 
 // ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
