@@ -294,19 +294,11 @@ def test_format_size():
     # Petabytes — beyond TB the loop exits and the fallback PB line is used
     assert strutils.format_size(1024 ** 5) == "1.00 PB"
 
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
 def _make_md(tmp_path, content: str) -> Path:
     """Write *content* to a temp .md file and return the Path."""
     p = tmp_path / "test.md"
     p.write_text(content)
     return p
-
-# ---------------------------------------------------------------------------
-# write_frontmatter_key tests
-# ---------------------------------------------------------------------------
 
 def test_write_frontmatter_key_update_existing_list(tmp_path):
     """Overwrite an existing list key with new values."""
