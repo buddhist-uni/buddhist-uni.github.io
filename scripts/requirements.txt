@@ -20,3 +20,4 @@ ebooklib
 unidecode
 rapidfuzz
 lingua-language-detector
+pytest

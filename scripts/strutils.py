@@ -515,7 +515,8 @@ class FileSyncedMap:
     del self.items[self.norm(item)]
     self._rewrite_file()
   def update(self, values):
-    self.items.update(values)
+    normalized_values = {self.norm(k): v for k, v in values.items()}
+    self.items.update(normalized_values)
     self._rewrite_file()
   def keyfor(self, value):
     try:
@@ -569,8 +570,11 @@ def get_file_sizes(files):
 
 def format_size(size_in_bytes):
     """Convert size in bytes to human readable format"""
-    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
-        if size_in_bytes < 1024:
+    if size_in_bytes < 1000:
+        return f"{int(size_in_bytes)} B"
+    size_in_bytes /= 1024
+    for unit in ['KB', 'MB', 'GB', 'TB']:
+        if size_in_bytes < 1000:
             return f"{size_in_bytes:.2f} {unit}"
         size_in_bytes /= 1024
     return f"{size_in_bytes:.2f} PB"
@@ -623,6 +627,19 @@ def write_frontmatter_key(path: Path, key: str, value, insert_after_key=None):
     else:
       path.write_text("\n".join(
         lines[:ourkeystartsline+1] + new_lines + lines[nextkeystartsline:]
+      ))
+  elif isinstance(value, str):
+    if "\n" in value:
+      raise ValueError("Teach me how to handle strings with newlines")
+    v = value.replace("\"", "\\\"")
+    new_line = f"{key} \"{v}\""
+    if ourkeystartsline is None:
+      path.write_text("\n".join(
+        lines[:insertafterkeyendsline] + [new_line] + lines[insertafterkeyendsline:]
+      ))
+    else:
+      path.write_text("\n".join(
+        lines[:ourkeystartsline] + [new_line] + lines[nextkeystartsline:]
       ))
   elif not value:
     if not ourkeystartsline:
