@@ -521,11 +521,11 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   # Don't trash any publicly-launched files
   #####
   file_permissions = batch_get_files_by_id([f['id'] for f in files], "id,name,permissions")
-  are_publics = [any(p['type'] == 'anyone' for p in f['permissions']) for f in file_permissions]
-  num_public = sum(are_publics)
+  are_publics = {f['id']: any(p['type'] == 'anyone' for p in f.get('permissions', [])) for f in file_permissions}
+  num_public = sum(are_publics.values())
   if num_public > 0:
     # Never suggest a public-facing file for deletion
-    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], IDSelectionReason.IS_PUBLIC
+    return [f['id'] for f in files if are_publics.get(f['id'])], IDSelectionReason.IS_PUBLIC
   
   #####
   # Discard files in "unimportant" subfolders first

@@ -136,25 +136,33 @@ def test_select_ids_to_keep_realistic(mock_website_config, mock_permissions):
         pytest.skip("Fixture DB not found")
         
     test_cache = DriveCache(fixture_db)
-    
-    # IDs from the user's tricky case
-    # 17VpttQypHvoBExKbm9AX48iGFnmORgkX is in "Unread"
-    # 1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP is in "Early Indian Schools of Buddhism"
-    
+
     with mock.patch('gdrive.gcache', test_cache):
+        # 17VpttQypHvoBExKbm9AX48iGFnmORgkX is in "Unread"
+        # 1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP is in "Early Indian Schools of Buddhism"
         file1 = test_cache.get_item('17VpttQypHvoBExKbm9AX48iGFnmORgkX')
         file2 = test_cache.get_item('1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP')
+        assert file1 is not None
+        assert file2 is not None
+        files = [file1, file2]
+        folder_slugs = gdrive.load_folder_slugs() # in a realistic test, load the actual folder slugs
+        
+        ids, reason = gdrive.select_ids_to_keep(files, folder_slugs)
+        assert ids == ['1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP']
+        assert reason == gdrive.IDSelectionReason.TAG_FOLDER
+
+        # 1bCq5KZ2UQGt81N2qWBvr8sx7WnO_k-HS is in "Unread (Sangha)"
+        # 17Ky1unlqJA_IkdL0Hzqxo_l9gPxjnar- is in "Buddhism"
+        file1 = test_cache.get_item('1bCq5KZ2UQGt81N2qWBvr8sx7WnO_k-HS')
+        file2 = test_cache.get_item('17Ky1unlqJA_IkdL0Hzqxo_l9gPxjnar-')
         
         assert file1 is not None
         assert file2 is not None
-        
         files = [file1, file2]
-        folder_slugs = {}
         
         ids, reason = gdrive.select_ids_to_keep(files, folder_slugs)
-        
-        assert ids == ['1i4O9RG7ug2WWNpMN44qj-P1m2tfzoUBP']
-        assert reason == gdrive.IDSelectionReason.GENERIC_SUBFOLDER
+        assert ids == ['17Ky1unlqJA_IkdL0Hzqxo_l9gPxjnar-']
+        assert reason == gdrive.IDSelectionReason.TAG_FOLDER
 
 def test_select_ids_to_keep_name_length(mock_website_config, mock_permissions):
     files = [
