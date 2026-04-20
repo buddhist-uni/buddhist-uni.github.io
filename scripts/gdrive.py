@@ -11,6 +11,7 @@
 #   (see get_gfolders_for_course for how those slugs are parsed)
 ########
 
+from enum import unique
 import requests
 import enum
 from datetime import datetime
@@ -477,9 +478,6 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   """
 
   import website
-  if not website.content:
-    with yaspin(text="Loading website..."):
-      website.load()
   UNIMPORTANT_SLUGS = [
     'to-go-through',
     'to-split',
@@ -504,22 +502,20 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   TAG_ORDER = {
     str(tf).removesuffix('.md'): idx+1
     for idx, tf in enumerate(website.config['collections']['tags']['order'])
+    # `website.config` is accessible without needing to `load` it
   }
   LO_PRI = len(TAG_ORDER)+1000
 
   #####
-  # If only one is in a slugged folder, keep that one
+  # If only one (unique) slug is represented among important folders, keep all files in that slug
   ####
   slugs = [folder_slugs.get(f['parents'][0]) for f in files]
-  filter_list = []
-  for unimportant in UNIMPORTANT_SLUGS:
-    filter_list.append(unimportant)
-    important_slugs = [slug for slug in slugs if slug not in filter_list]
-    num_slugs = len(important_slugs)
-    if num_slugs == 1:
-      # if there's only one file in a slugged folder, keep that one
-      # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.TAG_FOLDER
+  slugs = [s if s not in UNIMPORTANT_SLUGS else None for s in slugs]
+  unique_slugs = set(slugs)
+  unique_slugs.discard(None)
+  if len(unique_slugs) == 1:
+    important_slug_indexes = [i for i, slug in enumerate(slugs) if slug == list(unique_slugs)[0]]
+    return [files[i]['id'] for i in important_slug_indexes], IDSelectionReason.TAG_FOLDER
 
   #####
   # Don't trash any publicly-launched files
@@ -781,8 +777,10 @@ class FileDistinctionManager:
     selected_to_keep = None
     selected_to_not = None
     if len(would_keep) > 1 and decision == ClosePairDecision.THEY_ARE_THE_SAME:
-      assert reason == IDSelectionReason.IS_PUBLIC
-      print("Both files are publicly launched!")
+      if reason == IDSelectionReason.IS_PUBLIC:
+        print("Both files are publicly launched!")
+      else:
+        print(f"Heuristics say to keep both files (Reason: {reason})")
       print("Please handle manually and select one of these to keep:")
       choice = radio_dial([
         DRIVE_LINK.format(actual_file_a['id']),
@@ -837,7 +835,7 @@ class FileDistinctionManager:
         # marked as the same, ergo not distinct
         assert selected_to_not['id'] not in self.fileid_to_distinct_neighbors[selected_to_keep['id']]
         # since these two are marked the same, we should merge their clusters into a super-cluster
-        super_cluster = self.fileid_to_distinct_neighbors[select_ids_to_keep['id']] | \
+        super_cluster = self.fileid_to_distinct_neighbors[selected_to_keep['id']] | \
           self.fileid_to_distinct_neighbors[selected_to_not['id']]
         super_cluster.add(selected_to_keep['id'])
         points_to_not = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
@@ -849,6 +847,7 @@ class FileDistinctionManager:
           nn = super_cluster.copy()
           nn.remove(n)
           self.fileid_to_distinct_neighbors[n] = nn
+        del self.fileid_to_distinct_neighbors[selected_to_not['id']]
     # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
     # Now, all that's left is to handle the marking!
     print(f"[Action] Moving old version to Old Versions...")
