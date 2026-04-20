@@ -90,9 +90,14 @@ def git_grep(pattern: str) -> list[Path]:
 
 def replace_text_across_repo(old_uuid: str, new_uuid: str):
   for file_path in git_grep(old_uuid):
-    content = file_path.read_text()
-    new_content = content.replace(old_uuid, new_uuid)
-    file_path.write_text(new_content)
+    if file_path.suffix == ".sqlite":
+      continue
+    try:
+      content = file_path.read_text()
+      new_content = content.replace(old_uuid, new_uuid)
+      file_path.write_text(new_content)
+    except UnicodeDecodeError:
+      raise ValueError(f"{file_path} is not a valid unicode file")
     print(f"Updated {file_path.relative_to(git_root_folder)} ({old_uuid} -> {new_uuid})")
 
 def approx_eq(a, b, absdiff=1.0, percent=1.0):

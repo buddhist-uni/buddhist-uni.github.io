@@ -4,7 +4,7 @@ authors:
   - salguero-p
 external_url: "https://www.multiple-secularities.de/media/workingpaper_4_salguero_final.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/1Z8xPZc9nCWvVS8HdMRiYI1cwc-lKxUpR/view?usp=sharing"
+  - "https://drive.google.com/file/d/1q7Gd-JAY9R8wP0X8Jb_xFD4-gfhPvNG0/view?usp=sharing"
 course: medieval
 status: featured
 tags:

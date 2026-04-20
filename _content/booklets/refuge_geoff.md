@@ -5,7 +5,7 @@ authors:
 year: 1996
 external_url: "https://www.dhammatalks.org/ebook_index.html#refuge"
 drive_links:
-  - "https://drive.google.com/file/d/17Ky1unlqJA_IkdL0Hzqxo_l9gPxjnar-/view?usp=sharing"
+  - "https://drive.google.com/file/d/1PsFDx_6yIb6nYmIXScIT5WKiVP3bkXoK/view?usp=drive_link"
   - "https://drive.google.com/file/d/1xflLhdKMozWVlzSYZeaCJc4H6K2eXxKZ/view?usp=drivesdk"
 file_links:
   - "smallpdfs/geoff_1996_refuge.pdf"

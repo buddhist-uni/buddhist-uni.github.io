@@ -5,7 +5,7 @@ authors:
 external_url: "https://link.springer.com/content/pdf/10.1007/s12671-021-01646-0.pdf"
 source_url: "https://doi.org/10.1007/s12671-021-01646-0"
 drive_links:
-  - "https://drive.google.com/file/d/1AKt4XprtWGbHZJsvs6oNoNU4tTvABIxl/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/14jdsldSS-wi3FGT2K8BEjNTmZ7OpxI8X/view?usp=drivesdk"
 course: meditation
 tags:
   - ebts

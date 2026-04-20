@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.academia.edu/11728730/What_s_in_a_repetition_On_Counting_the_suttas_of_the_Sa%E1%B9%83yutta_nik%C4%81ya?"
 source_url: "https://palitextsociety.org/wp-content/uploads/2022/01/JPTS_2007_XXIX.pdf"
 drive_links: 
-  - "https://drive.google.com/file/d/1heLpZ0QLFxEgutxGqktHJhZH4utuQt9v/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1N2eAP4R3is1OhswNNUmaS_8S8vvtx6g5/view?usp=drivesdk"
 course: sn
 tags:
   - an

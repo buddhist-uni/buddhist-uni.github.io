@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://doi.org/10.1007/s12671-020-01381-y"
 drive_links:
-  - "https://drive.google.com/file/d/19pqzP5M-1TvG-GhzHzkohuxdPoFF66Ux/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1vgNSIqWG7C-56T9bK_4curOGIFehGA8z/view?usp=drivesdk"
 file_links:
   - "smallpdfs/analayo_2020_centrality-of-mindfulness-related.pdf"
 course: mn
