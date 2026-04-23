@@ -22,6 +22,6 @@ number: 108
 minutes: 95
 ---
 
-What are the material and spiritual causes of entrepreneurship being so valued in America?
-What ideological needs does it serve?
-And why is it so appealing to ordinary Americans?
+Why (materially and spiritually) is entrepreneurship so valued in the United States?
+What ideological need does "hustling" meet?
+Why do ordinary Americans look up to "entrepreneurs?"
