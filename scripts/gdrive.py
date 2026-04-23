@@ -36,6 +36,7 @@ from strutils import (
 )
 import json
 import re
+import inspect
 from archivedotorg import archive_urls
 try:
   from yaspin import yaspin
@@ -818,6 +819,12 @@ class FileDistinctionManager:
           print(f"The file you've chosen to keep and move to {FOLDER_LINK.format(selected_to_not['parent_id'])} has shortcuts:")
           _print_shortcuts(shortcuts)
           input("Please handle them and then press enter to continue...")
+        log_move_reason(
+          selected_to_keep['id'],
+          old_parent_id=selected_to_keep['parent_id'],
+          new_parent_id=selected_to_not['parent_id'],
+          reason=f"User selected this file to replace worse version: {selected_to_not['id']}",
+        )
         self.gcache.move_file(selected_to_keep['id'], selected_to_not['parent_id'], selected_to_keep['parents'])
     if 'distinctFrom' in selected_to_not['properties']:
       if 'distinctFrom' not in selected_to_keep['properties']:
@@ -1047,20 +1054,23 @@ with gcache._lock:
           id TEXT PRIMARY KEY NOT NULL, -- UUID for this event
           file_id TEXT NOT NULL,
           timestamp TEXT NOT NULL,  -- ISO 8601 string  
-          new_parent_id TEXT, -- NULL means trashed
-          old_parent_id TEXT, -- NULL means uploaded
+          new_parent_id TEXT,  -- folder id OR 'trash'
+          old_parent_id TEXT, -- NULL means just uploaded or unknown
           reason TEXT,
-          alternate_tags TEXT -- JSON List
+          alternate_tags TEXT, -- JSON List
+          interface TEXT NOT NULL
       );
   """)
   gcache.conn.commit()
-def log_move_reason(file_id: str, new_parent_id: str | None, old_parent_id: str | None, reason: str | None, alternate_tags: list | None = None):
+def log_move_reason(file_id: str, new_parent_id: str | None = None, old_parent_id: str | None = None, reason: str | None = None, alternate_tags: list | None = None, interface: str | None = None):
+  if not interface:
+    interface = inspect.stack()[1].filename
   with gcache._lock:
     rid = str(uuid.uuid4())
     gcache.cursor.execute("""
       INSERT INTO drive_item_move_notes (
-        id, file_id, timestamp, new_parent_id, old_parent_id, reason, alternate_tags
-      ) VALUES (?, ?, ?, ?, ?, ?, ?);
+        id, file_id, timestamp, new_parent_id, old_parent_id, reason, alternate_tags, interface
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?);
       """,
       (rid,
       file_id,
@@ -1068,10 +1078,13 @@ def log_move_reason(file_id: str, new_parent_id: str | None, old_parent_id: str 
       new_parent_id,
       old_parent_id,
       reason,
-      json.dumps(alternate_tags) if alternate_tags else None,)
+      json.dumps(alternate_tags) if alternate_tags else None,
+      interface,)
     )
+    gcache.conn.commit()
 
 if __name__ == "__main__":
+  import prompt_toolkit
   glink_gens = []
   urls_to_save = []
   previous_tags = set()
@@ -1119,14 +1132,14 @@ if __name__ == "__main__":
       previous_parents[gid] = gitem['parent_id']
   
   course = input_course_string_with_tab_complete()
-  reason = input("Reason: ")
+  reason = prompt_toolkit.prompt("What's your reason (can be blank, Alt+Enter to finish)?\n", multiline=True)
   if course == "trash":
     print("Trashing...")
     for glink_gen in glink_gens:
       fid = link_to_id(glink_gen())
       log_move_reason(
         fid,
-        new_parent_id=None,
+        new_parent_id='trash',
         old_parent_id=previous_parents.get(fid),
         reason=reason,
       )
@@ -1154,10 +1167,10 @@ if __name__ == "__main__":
       gid = link_to_id(glink)
       log_move_reason(
         gid,
-        new_parent,
-        previous_parents.get(gid),
-        reason,
-        other_tags,
+        new_parent_id=new_parent,
+        old_parent_id=previous_parents.get(gid),
+        reason=reason,
+        alternate_tags=other_tags,
       )
       move_gfile(glink, folders)
     print("Files moved!")

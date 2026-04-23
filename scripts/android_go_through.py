@@ -202,6 +202,12 @@ if cli_args.init:
       name = input_with_prefill('name (or trash): ', name)
       if not name or name == 'trash':
         tqdm.write("Trashing...")
+        gdrive.log_move_reason(
+          child['id'],
+          new_parent_id='trash',
+          old_parent_id=child.get("parent_id", REMOTE_FOLDER),
+          reason=f"User marked this file as a duplicate of {remote_files_by_name[name]['id']}",
+        )
         gdrive.gcache.trash_file(child['id'])
         continue
       gdrive.gcache.rename_file(child['id'], name)
@@ -249,6 +255,12 @@ if cli_args.init:
       course_name_to_unread_id_map,
       unread_id_to_course_name_map,
       autopdf_folder_to_course,
+    )
+    gdrive.log_move_reason(
+      child['id'],
+      new_parent_id=new_folder,
+      old_parent_id=REMOTE_FOLDER,
+      reason="Automated initial sort",
     )
     gdrive.gcache.move_file(
       child['id'],
@@ -319,11 +331,23 @@ for fp in local_files:
               parent = gdrive.gcache.get_item(f['parent_id'])
               if REMOTE_FOLDER == f['parent_id'] or parent['name'] == REMOTE_FOLDER_NAME:
                 print("\nFound duplicate file in remote TGT folder. Deleting it...")
+                gdrive.log_move_reason(
+                  f['id'],
+                  old_parent_id=f['parent_id'],
+                  new_parent_id='trash',
+                  reason=f"Duplicate (by md5) of {gf['id']} also in a TGT folder",
+                )
                 gdrive.gcache.trash_file(f['id'])
               else:
                 moved_already = True
         if moved_already:
           print("\nFile moved already! Moving on...")
+          gdrive.log_move_reason(
+            gf['id'],
+            new_parent_id='trash',
+            old_parent_id=gf.get('parent_id'),
+            reason=f"Found a sorted, MD5 duplicate",
+          )
           gdrive.gcache.trash_file(gf['id'])
           fp.unlink()
           continue
@@ -341,21 +365,57 @@ for fp in local_files:
       )[0] + "/unread"
     course = gdrive.input_course_string_with_tab_complete(prefill=course)
     if course == "trash":
+        gdrive.log_move_reason(
+          gf['id'],
+          old_parent_id=gf.get('parent_id'),
+          new_parent_id='trash',
+          reason=input("Reason for trashing: "),
+        )
         print("Trashing...")
         gdrive.gcache.trash_file(gf['id'])
         fp.unlink()
     elif course == "to-merge":
         import shutil
         gfolder = gdrive.get_gfolders_for_course(course)
+        assert not gfolder[0]
+        assert gfolder[1]
+        gdrive.log_move_reason(
+          gf['id'],
+          new_parent_id=gfolder[1],
+          old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
+          reason="User marked this file as part of a larger work",
+        )
         gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_MERGE_FOLDER)
     elif course == "to-split":
         import shutil
         gfolder = gdrive.get_gfolders_for_course(course)
+        assert not gfolder[0]
+        assert gfolder[1]
+        gdrive.log_move_reason(
+          gf['id'],
+          new_parent_id=gfolder[1],
+          old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
+          reason="User marked this as an editted volume.",
+        )
         gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_SPLIT_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
+        tags = []
+        print("tags:")
+        while True:
+          tag = gdrive.input_course_string_with_tab_complete("  - ")
+          if not tag:
+            break
+          tags.append(tag)
+        gdrive.log_move_reason(
+          gf['id'],
+          new_parent_id=gfolder[0] or gfolder[1],
+          old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
+          reason="Initial (manual) sort out of the To Go Through folder.",
+          alternate_tags=tags,
+        )
         if gfolder[0]:
           from openaleximporter import (
             prompt_for_work,
@@ -365,7 +425,7 @@ for fp in local_files:
           work, _ = prompt_for_work(query.replace("_", " "))
           if work:
             gdrive.move_gfile(glink, gfolder)
-            filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount)
+            filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount, tags=tags)
             print(f"\nOpening {filepath}\n")
             system_open(filepath)
             fp.unlink()

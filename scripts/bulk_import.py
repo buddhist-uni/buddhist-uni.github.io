@@ -325,9 +325,16 @@ class DharmaSeedURLImporter(GDocURLImporter):
       old_course = auto_folder_to_course[doc['parents'][0]]
       if old_course != doc['course']:
         tqdm.write(f"Moving \"{doc['name']}\"\n  {old_course}  ->  {doc['course']}")
+        new_parent = self.get_folder_id_for_course(doc['course'])
+        gdrive.log_move_reason(
+          doc['id'],
+          old_parent_id=doc['parents'][0],
+          new_parent_id=new_parent,
+          reason="DharmaSeedURL doc resorted by new tag predictor",
+        )
         gdrive.gcache.move_file(
           doc['id'],
-          self.get_folder_id_for_course(doc['course']),
+          new_parent,
           doc['parents'],
           verbose=False,
         )
@@ -546,6 +553,12 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
     def maybe_move_doc(doc, snippet):
       if snippet['folder'] != doc['parents'][0]:
         tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[doc['parents'][0]]}  ->  {snippet['course']}")
+        gdrive.log_move_reason(
+          doc['id'],
+          old_parent_id=doc['parents'][0],
+          new_parent_id=snippet['folder'],
+          reason="Unsorted YouTube doc resorted by new tag predictor",
+        )
         gdrive.gcache.move_file(
           doc['id'],
           snippet['folder'],
@@ -750,6 +763,12 @@ def resort_existing_pdfs_of_type(pdf_type: str):
     if old_folder != new_folder:
       pbar.write(f"\"{drive_file['name']}\"")
       pbar.write(f"  {old_course}  \t->  {new_course}")
+      gdrive.log_move_reason(
+        drive_file['id'],
+        old_parent_id=drive_file['parents'][0],
+        new_parent_id=new_folder,
+        reason="Unsorted PDF resorted by new tag predictor",
+      )
       gdrive.gcache.move_file(
         drive_file['id'],
         new_folder,
