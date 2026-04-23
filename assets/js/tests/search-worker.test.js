@@ -300,7 +300,50 @@ describe('getBlurbForResult', () => {
 
 // ── normalizeSuttaTitles ─────────────────────────────────────────────
 describe('normalizeSuttaTitles', () => {
+
   it('returns an array of database objects with a new normalized title', () => {
+    const mockStore = {
+      id1: {
+        title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'culasaccakasutta');
+  });
+
+  it('remove words after sutta and sutra but using : as a reference', () => {
+    const mockStore = {
+      id1: {
+        title: 'MA 128 Upasaka Sutra: Discourse on the White-Clad Disciple',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'upasakasutra');
+  });
+
+  it('integrated more nikaya indexes for parsing - lets test lal', () => {
+    const mockStore = {
+      id1: {
+        title: 'Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'dharmacakrapravartanasutra');
+  });
+
+  it('it returns a joined title from a thig nikaya leading discourse', () => {
     const mockStore = {
       id1: {
         title: "Thig 3.8 Somā Therīgāthā: Somā's Verses",
@@ -312,6 +355,20 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result.length, 1);
     assert.equal(result[0].ref, 'id1');
     assert.equal(result[0].title, 'somatherigatha');
+  });
+
+  it('it returns a joined title from a thag nikaya leading discourse', () => {
+    const mockStore = {
+      id1: {
+        title: "Thag 1.7 Bhalliya Theragāthā: Bhalliya's Verse",
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'bhalliyatheragatha');
   });
 
   it('handles "the" and removes it from a string if it appears at the beginning', () => {
@@ -327,6 +384,8 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].ref, 'id1');
     assert.equal(result[0].title, 'mahasatipatthanasutta');
   });
+
+
 });
 
 // ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
