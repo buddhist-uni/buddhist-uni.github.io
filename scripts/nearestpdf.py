@@ -412,9 +412,74 @@ def find_close_pairs(similarity_matrix, min_similarity=0.9):
   matching_idxs = np.where(similarity_matrix >= min_similarity)
   return list(zip(matching_idxs[0], matching_idxs[1], similarity_matrix[matching_idxs]))
 
-if __name__ == "__main__":
+def review_close_pairs(close_pairs: list[tuple[int, int, float]]):
+  """
+  Iterates through close pairs and prompts the user for decisions.
+  Handles skipping files that were already moved or marked distinct.
+  """
   import random
   import gdrive
+  
+  MAX_TO_CONSIDER = 1000
+  if len(close_pairs) > MAX_TO_CONSIDER:
+    print(f"INFO: Restricting to {MAX_TO_CONSIDER} pairs of the {len(close_pairs)} found")
+    close_pairs = random.sample(close_pairs, MAX_TO_CONSIDER)
+  else:
+    random.shuffle(close_pairs)
+  
+  all_decisions = []
+  if DECISION_HISTORY_FILE.exists():
+    all_decisions = joblib.load(DECISION_HISTORY_FILE)
+    assert isinstance(all_decisions, list), "Expected DECISION_HISTORY to be a list"
+  
+  distinctions = gdrive.FileDistinctionManager()
+  
+  # Initial filter
+  pairs_to_review = [
+    (
+      google_files[idx],
+      google_files[jdx],
+      sim,
+    )
+    for idx, jdx, sim in close_pairs
+    if google_files[idx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and 
+    google_files[jdx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and
+    not distinctions.are_distinct(google_files[idx]['id'], google_files[jdx]['id'])
+  ]
+  
+  print(f"Found {len(pairs_to_review)} close pairs that need review...")
+  if len(pairs_to_review) > 0:
+    print("Don't forget to open your browser!")
+    
+  done = 0
+  for gfa, gfb, sim in pairs_to_review:
+      done += 1
+      print(f"\n---{done}/{len(pairs_to_review)}\n")
+      
+      # handle_close_pair_decisions can sometimes mark other pairs distinct
+      # or even move other files to the graveyard, so have to recheck here
+      if distinctions.are_distinct(gfa['id'], gfb['id']):
+        print("Already merged as distinct :)")
+        continue
+        
+      # Refresh from cache to get latest parent_id
+      gfa = gdrive.gcache.get_item(gfa['id'])
+      gfb = gdrive.gcache.get_item(gfb['id'])
+      
+      if not gfa or not gfb:
+          print("One of the files is missing from cache, skipping...")
+          continue
+
+      if gdrive.OLD_VERSIONS_FOLDER_ID in [gfa['parent_id'], gfb['parent_id']]:
+        print("Already moved to Old Versions :)")
+        continue
+        
+      decision = gdrive.is_duplicate_prompt(gfa, gfb, similariy=sim)    
+      all_decisions.append((decision, gfa, gfb, sim))
+      joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
+      distinctions.handle_close_pair_decision(decision, gfa, gfb)
+
+if __name__ == "__main__":
   from clean_google_drive import remove_duplicate_files
   print("Cleaning up files that are MD5 identical first...")
   remove_duplicate_files()
@@ -432,48 +497,7 @@ if __name__ == "__main__":
   print("Selecting close neighboring pairs...")
   close_pairs = find_close_pairs(similarity_matrix, min_similarity=min_similarity)
   del similarity_matrix
-  MAX_TO_CONSIDER = 1000
-  if len(close_pairs) > MAX_TO_CONSIDER:
-    print(f"INFO: Restricting to {MAX_TO_CONSIDER} pairs of the {len(close_pairs)} found")
-    close_pairs = random.sample(close_pairs, MAX_TO_CONSIDER)
-  else:
-    random.shuffle(close_pairs)
-  all_decisions = []
-  if DECISION_HISTORY_FILE.exists():
-    all_decisions = joblib.load(DECISION_HISTORY_FILE)
-    assert isinstance(all_decisions, list), "Expected DECISION_HISTORY to be a list"
-  distinctions = gdrive.FileDistinctionManager()
-  close_pairs = [
-    (
-      google_files[idx],
-      google_files[jdx],
-      sim,
-    )
-    for idx, jdx, sim in close_pairs
-    if google_files[idx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and 
-    google_files[jdx]['parent_id'] != gdrive.OLD_VERSIONS_FOLDER_ID and
-    not distinctions.are_distinct(google_files[idx]['id'], google_files[jdx]['id'])
-  ]
-  print(f"Found {len(close_pairs)} close pairs that need review...")
-  if len(close_pairs) > 0:
-    print("Don't forget to open your browser!")
-  done = 0
-  for gfa, gfb, sim in close_pairs:
-      done += 1
-      print(f"\n---{done}/{len(close_pairs)}\n")
-      # handle_close_pair_decisions can sometimes mark other pairs distinct
-      # or even move other files to the graveyard, so have to recheck here
-      if distinctions.are_distinct(gfa['id'], gfb['id']):
-        print("Already merged as distinct :)")
-        continue
-      gfa = gdrive.gcache.get_item(gfa['id'])
-      gfb = gdrive.gcache.get_item(gfb['id'])
-      if gdrive.OLD_VERSIONS_FOLDER_ID in [gfa['parent_id'], gfb['parent_id']]:
-        print("Already moved to Old Versions :)")
-        continue
-      decision = gdrive.is_duplicate_prompt(gfa, gfb, similariy=sim)    
-      all_decisions.append((decision, gfa, gfb, sim))
-      joblib.dump(all_decisions, DECISION_HISTORY_FILE, compress=2)
-      distinctions.handle_close_pair_decision(decision, gfa, gfb)
+  
+  review_close_pairs(close_pairs)
 
 

@@ -5,7 +5,7 @@ authors:
 external_url: "https://journals.openedition.org/emscat/pdf/5194"
 source_url: "https://doi.org/10.4000/emscat.5194"
 drive_links:
-  - "https://drive.google.com/file/d/1NQr8P43htgJFvcCKHP00Ro0xMeZRpaWq/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/177CS1a8X4MmoZYqiygHjVPKLD2AwqNcZ/view?usp=drivesdk"
 course: nature
 tags:
   - mongolia

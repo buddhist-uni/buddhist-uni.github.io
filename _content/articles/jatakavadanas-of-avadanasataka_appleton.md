@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.pure.ed.ac.uk/ws/files/21292416/Jataka_Avadanas_of_the_Avadanasataka_AFV.pdf"
 source_url: "https://doi.org/10.2143/JIABS.38.0.3134536"
 drive_links:
-  - "https://drive.google.com/file/d/1ZsSCNGt9eADtO9E9N08VTQGZDZwCNax7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1BTxGhagqRMAP4JlV4HgF8qxTPBP8Iz2t/view?usp=drivesdk"
 course: avadana
 tags:
   - rebirth-stories

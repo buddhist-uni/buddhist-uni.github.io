@@ -11,9 +11,11 @@
 #   (see get_gfolders_for_course for how those slugs are parsed)
 ########
 
+from enum import unique
 import requests
 import enum
-from datetime import datetime
+import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 import readline
 from typing import Callable, Iterable
@@ -477,9 +479,6 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   """
 
   import website
-  if not website.content:
-    with yaspin(text="Loading website..."):
-      website.load()
   UNIMPORTANT_SLUGS = [
     'to-go-through',
     'to-split',
@@ -504,32 +503,30 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   TAG_ORDER = {
     str(tf).removesuffix('.md'): idx+1
     for idx, tf in enumerate(website.config['collections']['tags']['order'])
+    # `website.config` is accessible without needing to `load` it
   }
   LO_PRI = len(TAG_ORDER)+1000
 
   #####
-  # If only one is in a slugged folder, keep that one
+  # If only one (unique) slug is represented among important folders, keep all files in that slug
   ####
   slugs = [folder_slugs.get(f['parents'][0]) for f in files]
-  filter_list = []
-  for unimportant in UNIMPORTANT_SLUGS:
-    filter_list.append(unimportant)
-    important_slugs = [slug for slug in slugs if slug not in filter_list]
-    num_slugs = len(important_slugs)
-    if num_slugs == 1:
-      # if there's only one file in a slugged folder, keep that one
-      # no need to even check for permissions
-      return [files[slugs.index(important_slugs[0])]['id']], IDSelectionReason.TAG_FOLDER
+  slugs = [s if s not in UNIMPORTANT_SLUGS else None for s in slugs]
+  unique_slugs = set(slugs)
+  unique_slugs.discard(None)
+  if len(unique_slugs) == 1:
+    important_slug_indexes = [i for i, slug in enumerate(slugs) if slug == list(unique_slugs)[0]]
+    return [files[i]['id'] for i in important_slug_indexes], IDSelectionReason.TAG_FOLDER
 
   #####
   # Don't trash any publicly-launched files
   #####
   file_permissions = batch_get_files_by_id([f['id'] for f in files], "id,name,permissions")
-  are_publics = [any(p['type'] == 'anyone' for p in f['permissions']) for f in file_permissions]
-  num_public = sum(are_publics)
+  are_publics = {f['id']: any(p['type'] == 'anyone' for p in f.get('permissions', [])) for f in file_permissions}
+  num_public = sum(are_publics.values())
   if num_public > 0:
     # Never suggest a public-facing file for deletion
-    return [files[i]['id'] for i in range(len(files)) if are_publics[i]], IDSelectionReason.IS_PUBLIC
+    return [f['id'] for f in files if are_publics.get(f['id'])], IDSelectionReason.IS_PUBLIC
   
   #####
   # Discard files in "unimportant" subfolders first
@@ -781,8 +778,10 @@ class FileDistinctionManager:
     selected_to_keep = None
     selected_to_not = None
     if len(would_keep) > 1 and decision == ClosePairDecision.THEY_ARE_THE_SAME:
-      assert reason == IDSelectionReason.IS_PUBLIC
-      print("Both files are publicly launched!")
+      if reason == IDSelectionReason.IS_PUBLIC:
+        print("Both files are publicly launched!")
+      else:
+        print(f"Heuristics say to keep both files (Reason: {reason})")
       print("Please handle manually and select one of these to keep:")
       choice = radio_dial([
         DRIVE_LINK.format(actual_file_a['id']),
@@ -837,7 +836,7 @@ class FileDistinctionManager:
         # marked as the same, ergo not distinct
         assert selected_to_not['id'] not in self.fileid_to_distinct_neighbors[selected_to_keep['id']]
         # since these two are marked the same, we should merge their clusters into a super-cluster
-        super_cluster = self.fileid_to_distinct_neighbors[select_ids_to_keep['id']] | \
+        super_cluster = self.fileid_to_distinct_neighbors[selected_to_keep['id']] | \
           self.fileid_to_distinct_neighbors[selected_to_not['id']]
         super_cluster.add(selected_to_keep['id'])
         points_to_not = fetch_distinct_file_pointing_to(self.gcache, selected_to_not['id'])
@@ -849,6 +848,7 @@ class FileDistinctionManager:
           nn = super_cluster.copy()
           nn.remove(n)
           self.fileid_to_distinct_neighbors[n] = nn
+        del self.fileid_to_distinct_neighbors[selected_to_not['id']]
     # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
     # Now, all that's left is to handle the marking!
     print(f"[Action] Moving old version to Old Versions...")
@@ -1041,18 +1041,49 @@ def move_distinctions_off_file(gc: local_gdrive.DriveCache, file_id: str) -> Non
   distinctions.clear_distinctions_from(file_id, pointing_to)
 
 gcache.register_trash_callback(move_distinctions_off_file)
-
+with gcache._lock:
+  gcache.cursor.execute("""
+      CREATE TABLE IF NOT EXISTS drive_item_move_notes (
+          id TEXT PRIMARY KEY NOT NULL, -- UUID for this event
+          file_id TEXT NOT NULL,
+          timestamp TEXT NOT NULL,  -- ISO 8601 string  
+          new_parent_id TEXT, -- NULL means trashed
+          old_parent_id TEXT, -- NULL means uploaded
+          reason TEXT,
+          alternate_tags TEXT -- JSON List
+      );
+  """)
+  gcache.conn.commit()
+def log_move_reason(file_id: str, new_parent_id: str | None, old_parent_id: str | None, reason: str | None, alternate_tags: list | None = None):
+  with gcache._lock:
+    rid = str(uuid.uuid4())
+    gcache.cursor.execute("""
+      INSERT INTO drive_item_move_notes (
+        id, file_id, timestamp, new_parent_id, old_parent_id, reason, alternate_tags
+      ) VALUES (?, ?, ?, ?, ?, ?, ?);
+      """,
+      (rid,
+      file_id,
+      datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z",
+      new_parent_id,
+      old_parent_id,
+      reason,
+      json.dumps(alternate_tags) if alternate_tags else None,)
+    )
 
 if __name__ == "__main__":
   glink_gens = []
   urls_to_save = []
+  previous_tags = set()
+  previous_parents = dict()
   # a list of generator lambdas not direct links
   # so that we can defer doc creation to the end
   while True:
     link = input("Link (None to continue): ")
     if not link:
       break
-    if not link_to_id(link):
+    gid = link_to_id(link)
+    if not gid:
       if "youtu" in link:
         link = link.split("?si=")[0]
       else:
@@ -1075,11 +1106,30 @@ if __name__ == "__main__":
       )
     else:
       glink_gens.append(lambda r=link: r)
+      gitem = gcache.get_item(gid)
+      if not gitem:
+        print("WARNING: I don't know that file!")
+        continue
+      try:
+        previous_tags.add(
+          folderid_to_course_string(gitem['parent_id'])
+        )
+      except TypeError:
+        pass # No worries if we can't come up with a course string for this folder
+      previous_parents[gid] = gitem['parent_id']
+  
   course = input_course_string_with_tab_complete()
+  reason = input("Reason: ")
   if course == "trash":
     print("Trashing...")
     for glink_gen in glink_gens:
       fid = link_to_id(glink_gen())
+      log_move_reason(
+        fid,
+        new_parent_id=None,
+        old_parent_id=previous_parents.get(fid),
+        reason=reason,
+      )
       shorts = get_shortcuts_to_gfile(fid)
       for short in shorts:
         print("  trashing shortcut first...")
@@ -1087,9 +1137,29 @@ if __name__ == "__main__":
       trash_drive_file(fid)
     print("Done!")
   else:
+    other_tags = []
+    print(f"Were there any other tags you were considering for th{'is' if len(glink_gens)==1 else 'ese'} item{'' if len(glink_gens) == 1 else 's'}?")
+    while True:
+      prefill = None
+      if previous_tags:
+        prefill = previous_tags.pop()
+      tag = input_course_string_with_tab_complete(prompt="Tag (empty to move on): ", prefill=prefill)
+      if not tag:
+        break
+      other_tags.append(tag)
     folders = get_gfolders_for_course(course)
+    new_parent = folders[0] or folders[1]
     for glink_gen in glink_gens:
-      move_gfile(glink_gen(), folders)
+      glink = glink_gen()
+      gid = link_to_id(glink)
+      log_move_reason(
+        gid,
+        new_parent,
+        previous_parents.get(gid),
+        reason,
+        other_tags,
+      )
+      move_gfile(glink, folders)
     print("Files moved!")
     if len(urls_to_save) > 0:
       print("Ensuring URLs are saved to Archive.org...")

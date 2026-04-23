@@ -26,4 +26,4 @@ openalexid: W2043869111
 > In India, Tibetan refugee elites reinterpret these idioms in their own terms while redefining Tibetan identity and culture for the outside world and for refugees themselves.
 
 Unlike in modern Europe, where Christianity was an insufficient basis for national identity, religion in Tibet (and in Asia more broadly) has been an important part of justifying the state.
-This article explains the role of Buddhism in the Tibetan independence movement both within and outside the PRC and uses it to question the Western assumption that nationalism is normatively secular.
+This article explains the role of Buddhism in the Tibetan independence movement both within and outside the PRC and uses it to question the Western assumption that nationalism is a secular ideology.

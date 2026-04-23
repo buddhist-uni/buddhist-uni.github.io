@@ -4,7 +4,7 @@ authors:
   - "Pa-Auk Tawya Sayadaw"
 external_url: "https://www.paauk.eu/images/meta/the-workings-of-kamma_thumb.pdf"
 drive_links:
-  - "https://drive.google.com/file/d/16b7YgP7jbGQM-TksdsWhZN0jhOV07Mj3/view?usp=sharing"
+  - "https://drive.google.com/file/d/1D6LyYm7oXWykCsvRAKUHHDNvhqhy3FBF/view?usp=sharing"
 course: pa-auk
 tags:
   - abhidhamma

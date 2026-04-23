@@ -17,7 +17,7 @@ try:
   from yaspin import yaspin
   from tqdm import tqdm
   from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
-  from google.auth.transport.requests import Request
+  from google.auth.transport.requests import Request, AuthorizedSession
   from google.oauth2.credentials import Credentials
   from google_auth_oauthlib.flow import InstalledAppFlow
   from googleapiclient.discovery import build
@@ -216,6 +216,28 @@ def get_file_contents(fileid, verbose=True):
   download_file(fileid, buffer, verbose=verbose)
   return buffer
   
+def fetch_preview_image(fileid: str, size=1000) -> bytes | None:
+  """Fetches the thumbnail image for a file and returns it in a BytesIO buffer"""
+  try:
+    file_metadata = execute(session().files().get(fileId=fileid, fields="thumbnailLink"))
+    thumbnail_url = file_metadata.get('thumbnailLink')
+    if not thumbnail_url:
+      return None
+    
+    # Increase the thumbnail size to 1000px if it ends with =s...
+    if "=s" in thumbnail_url:
+      thumbnail_url = re.sub(r"=s\d+$", f"=s{size}", thumbnail_url)
+    else:
+      thumbnail_url += f"=s{size}"
+      
+    sess = AuthorizedSession(google_credentials())
+    response = sess.get(thumbnail_url)
+    if response.status_code == 200:
+      return response.content
+  except Exception as e:
+    print(f"Error fetching preview image for {fileid}: {e}")
+  return None
+
 def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True):
   """Downloads the contents of the file to destination"""
   if isinstance(destination, BufferedIOBase):

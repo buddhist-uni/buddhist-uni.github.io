@@ -4,7 +4,7 @@ authors:
   - "Ratna Handarukande"
 external_url: "https://bps.lk/olib/bl/bl088_Handurukande_Buddhist-Tales-from-Sanskrit-Sources.html"
 drive_links:
-  - "https://drive.google.com/file/d/1aPi3iM_RK9FF8V8B_6yfsr5ytAxb521w/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/17kW50IFQMyB5tgJWGcvBlkOysO7OR1sn/view?usp=drivesdk"
 course: rebirth-stories
 year: 1991
 journal: bodhileaves
