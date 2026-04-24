@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import sqlite3
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Callable, TypedDict
+from typing import List, Dict, Any, Optional, Callable, TypedDict, TypeVar, ParamSpec, Concatenate
 from time import sleep
 
 import gdrive_base
@@ -42,10 +42,13 @@ FILE_FIELDS_ARRAY = [
 ]
 FILE_FIELDS = ','.join(FILE_FIELDS_ARRAY)
 
-def locked(func):
+P = ParamSpec("P")
+R = TypeVar("R")
+
+def locked(func: Callable[Concatenate[Any, P], R]) -> Callable[Concatenate[Any, P], R]:
     """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
     @wraps(func)
-    def wrapper(self, *args, **kwargs):
+    def wrapper(self: Any, *args: P.args, **kwargs: P.kwargs) -> R:
         if not self.conn:
             raise ValueError("Attempting to connect to a closed connection")
         acquired = self._lock.acquire(timeout=5)
