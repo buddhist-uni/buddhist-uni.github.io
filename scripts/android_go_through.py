@@ -206,7 +206,7 @@ if cli_args.init:
           child['id'],
           new_parent_id='trash',
           old_parent_id=child.get("parent_id", REMOTE_FOLDER),
-          reason=f"User marked this file as a duplicate of {remote_files_by_name[name]['id']}",
+          reason=f"marked as duplicating {remote_files_by_name[name]['id']}",
         )
         gdrive.gcache.trash_file(child['id'])
         continue
@@ -335,7 +335,7 @@ for fp in local_files:
                   f['id'],
                   old_parent_id=f['parent_id'],
                   new_parent_id='trash',
-                  reason=f"Duplicate (by md5) of {gf['id']} also in a TGT folder",
+                  reason=f"Duplicate (md5) of {gf['id']}",
                 )
                 gdrive.gcache.trash_file(f['id'])
               else:
@@ -383,7 +383,7 @@ for fp in local_files:
           gf['id'],
           new_parent_id=gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason="User marked this file as part of a larger work",
+          reason="partial file",
         )
         gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_MERGE_FOLDER)
@@ -396,7 +396,7 @@ for fp in local_files:
           gf['id'],
           new_parent_id=gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason="User marked this as an editted volume.",
+          reason="editted volume",
         )
         gdrive.move_gfile(glink, gfolder)
         shutil.move(fp, LOCAL_SPLIT_FOLDER)
@@ -413,7 +413,7 @@ for fp in local_files:
           gf['id'],
           new_parent_id=gfolder[0] or gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason="Initial (manual) sort out of the To Go Through folder.",
+          reason=input("Any notes? ") or "Preliminary sort",
           alternate_tags=tags,
         )
         if gfolder[0]:

@@ -219,8 +219,11 @@ class BulkPDFImporter(BulkItemImporter):
     tqdm_thread_map(_upload_one_fp, files, max_workers=8)
 
 class GDocURLImporter(BulkItemImporter):
-  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
-    """Takes a list of Google Doc File objects and moves them to the predicted folder"""
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]) -> int:
+    """Takes a list of Google Doc File objects and moves them to the newly predicted folder
+
+    Returns the number of moves performed
+    """
     raise NotImplementedError("GDocURLImporter doesn't know how to sort things itself")
 
   def filter_already_imported_items(self, items:list[str]) -> list[str]:
@@ -235,6 +238,40 @@ class GDocURLImporter(BulkItemImporter):
         already.add(url)
     print(f"Found {len(already)} URLs already added")
     return already
+
+  def _move_docs_if_needed(self, items: list[dict], auto_folder_to_course: dict[str, str]) -> int:
+    """
+    Move docs if needed based on new course predictions
+
+    Items must be Drive dicts with the new 'course' and 'folder' fields added
+
+    Returns: number of moves performed
+    """
+    print("Moving docs as needed:")
+    moves = 0
+    moves_lock = threading.Lock()
+    def maybe_move_doc(doc):
+      old_folder = doc['parents'][0]
+      if doc['folder'] != old_folder:
+        tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[old_folder]}  ->  {doc['course']}")
+        gdrive.log_move_reason(
+          doc['id'],
+          old_parent_id=old_folder,
+          new_parent_id=doc['folder'],
+          reason="New tag prediction",
+        )
+        gdrive.gcache.move_file(
+          doc['id'],
+          doc['folder'],
+          previous_parents=doc['parents'],
+          verbose=False,
+        )
+        nonlocal moves
+        with moves_lock:
+          moves += 1
+    tqdm_thread_map(maybe_move_doc, items, max_workers=8)
+    print(f"  Moved {moves}/{len(items)} docs to new folders")
+    return moves
 
 def create_gdoc(url: str, title: str, html: str, folder_id: str):
   return gdrive.create_doc(
@@ -286,7 +323,7 @@ class DharmaSeedURLImporter(GDocURLImporter):
     # for now we only support importing teacher pages
     return item.startswith(self.DOMAIN + "/teacher/")
 
-  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]) -> int:
     """Takes a list of Google Doc File objects and moves them to the predicted folder"""
     from bs4 import BeautifulSoup
     urls = [doc['properties']['url'] for doc in items]
@@ -318,31 +355,8 @@ class DharmaSeedURLImporter(GDocURLImporter):
     print("Predicting courses...")
     for doc in tqdm(items):
       doc['course'] = str(course_predictor.predict([doc['text']])[0])
-    print("Moving any, if needed...")
-    moves = 0
-    moves_lock = threading.Lock()
-    def maybe_move_doc(doc):
-      old_course = auto_folder_to_course[doc['parents'][0]]
-      if old_course != doc['course']:
-        tqdm.write(f"Moving \"{doc['name']}\"\n  {old_course}  ->  {doc['course']}")
-        new_parent = self.get_folder_id_for_course(doc['course'])
-        gdrive.log_move_reason(
-          doc['id'],
-          old_parent_id=doc['parents'][0],
-          new_parent_id=new_parent,
-          reason="DharmaSeedURL doc resorted by new tag predictor",
-        )
-        gdrive.gcache.move_file(
-          doc['id'],
-          new_parent,
-          doc['parents'],
-          verbose=False,
-        )
-        nonlocal moves
-        with moves_lock:
-          moves += 1
-    tqdm_thread_map(maybe_move_doc, items, max_workers=8)
-    print(f"  Moved {moves}/{len(items)} docs to new folders")
+      doc['folder'] = self.get_folder_id_for_course(doc['course'])
+    return self._move_docs_if_needed(items, auto_folder_to_course)
 
   def import_items(self, items: list[str]):
     from bs4 import BeautifulSoup
@@ -541,35 +555,16 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
       snippet['course'] = course
       snippet['folder'] = self.get_folder_id_for_course(course)
   
-  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]):
+  def resort_docs(self, items: list[dict], auto_folder_to_course: dict[str, str]) -> int:
     """Takes a list of Google Doc File objects and moves them to the predicted folder"""
     vid_urls = [doc['properties']['url'] for doc in items]
     vid_ids = self.extract_ids_from_urls(vid_urls)
     snippets = get_ytdata_for_ids(vid_ids)
     self._add_folder_to_snippets(snippets)
-    print("Moving docs as needed:")
-    moves = 0
-    moves_lock = threading.Lock()
-    def maybe_move_doc(doc, snippet):
-      if snippet['folder'] != doc['parents'][0]:
-        tqdm.write(f"Moving \"{doc['name']}\"\n  {auto_folder_to_course[doc['parents'][0]]}  ->  {snippet['course']}")
-        gdrive.log_move_reason(
-          doc['id'],
-          old_parent_id=doc['parents'][0],
-          new_parent_id=snippet['folder'],
-          reason="Unsorted YouTube doc resorted by new tag predictor",
-        )
-        gdrive.gcache.move_file(
-          doc['id'],
-          snippet['folder'],
-          previous_parents=doc['parents'],
-          verbose=False,
-        )
-        nonlocal moves
-        with moves_lock:
-          moves += 1
-    tqdm_thread_map(maybe_move_doc, items, snippets, max_workers=8)
-    print(f"  Moved {moves}/{len(snippets)} docs to new folders")
+    for doc, snippet in zip(items, snippets):
+      doc['course'] = snippet['course']
+      doc['folder'] = snippet['folder']
+    return self._move_docs_if_needed(items, auto_folder_to_course)
 
   def import_items(self, items: list[str]):
     vid_ids = self.extract_ids_from_urls(items)

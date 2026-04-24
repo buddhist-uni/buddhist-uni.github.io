@@ -859,6 +859,15 @@ class FileDistinctionManager:
     # else: # the one we've marked for removal isn't part of the distinctions graph, so nothing to do here
     # Now, all that's left is to handle the marking!
     print(f"[Action] Moving old version to Old Versions...")
+    caller = inspect.stack()[1]
+    log_move_reason(
+      selected_to_not['id'],
+      old_parent_id=selected_to_not['parent_id'],
+      new_parent_id=OLD_VERSIONS_FOLDER_ID,
+      reason=f"worse version of {selected_to_keep['id']}",
+      # blame this function's caller too
+      interface=f"{Path(caller.filename).stem}.{caller.function}->{Path(__file__).stem}.{self.__class__.__name__}.{inspect.currentframe().f_code.co_name}",
+    )
     move_gfile(selected_to_not['id'], (OLD_VERSIONS_FOLDER_ID, None))
     if len(selected_to_keep['name']) < len(selected_to_not['name']):
       if prompt("Swap file names?", default='y'):
