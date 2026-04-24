@@ -15,6 +15,11 @@ from datetime import datetime, timezone
 import threading
 from functools import wraps
 
+from strutils import (
+    input_with_prefill,
+    prompt,
+)
+
 def UTC_NOW():
     now_utc = datetime.now(timezone.utc)
     return now_utc.isoformat(timespec='milliseconds').replace('+00:00', 'Z')
@@ -163,6 +168,46 @@ class DriveCache:
         self.cursor.execute(create_properties_table_sql)
         self.cursor.executescript(create_index_sql)
         self.conn.commit()
+    
+    def _prompt_for_file_cache_dir(self) -> Path:
+        # Maybe ask the user of this class to supply this function in the
+        # constructor and `get_file_cache_dir` simply raises an Error if
+        # one is needed but not supplied?
+        proposal = str(Path(self.db_path).resolve().with_suffix(''))+'_files'
+        while True:
+            print("Please tell me where to store the GDrive file cache.")
+            proposal = Path(input_with_prefill("> ", str(proposal))).resolve()
+            if not proposal.parent.exists():
+                print(f"{proposal.parent} does not exist. Please either create it or try a different path.")
+                continue
+            if proposal.exists():
+                if proposal.is_dir():
+                    print(f"That directory already exists!")
+                    if prompt("Use anyway?"):
+                        return proposal
+                    else:
+                        continue
+                else:
+                    print(f"That appears to be a file!")
+                    continue
+            proposal.mkdir()
+            return proposal
+
+    def get_file_cache_dir(self) -> Path:
+        with self._lock:
+            file_cache_dir = self.cursor.execute(
+                "SELECT value FROM metadata WHERE key = 'file_cache_dir';"
+            ).fetchone()
+        if file_cache_dir:
+            return Path(file_cache_dir['value'])
+        file_cache_dir = self._prompt_for_file_cache_dir()
+        with self._lock:
+            self.cursor.execute(
+                "INSERT INTO metadata (key, value) VALUES (?, ?)",
+                ('file_cache_dir', str(file_cache_dir), ),
+            )
+            self.conn.commit()
+        return file_cache_dir
 
     @locked
     def upsert_item(self, item_data: Dict[str, Any]):
