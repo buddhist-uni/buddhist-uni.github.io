@@ -1064,7 +1064,7 @@ with gcache._lock:
   gcache.conn.commit()
 def log_move_reason(file_id: str, new_parent_id: str | None = None, old_parent_id: str | None = None, reason: str | None = None, alternate_tags: list | None = None, interface: str | None = None):
   if not interface:
-    interface = inspect.stack()[1].filename
+    interface = Path(inspect.stack()[1].filename).name
   with gcache._lock:
     rid = str(uuid.uuid4())
     gcache.cursor.execute("""
@@ -1084,7 +1084,11 @@ def log_move_reason(file_id: str, new_parent_id: str | None = None, old_parent_i
     gcache.conn.commit()
 
 if __name__ == "__main__":
-  import prompt_toolkit
+  try:
+    import prompt_toolkit
+  except:
+    print("pip install prompt_toolkit")
+    exit(1)
   glink_gens = []
   urls_to_save = []
   previous_tags = set()

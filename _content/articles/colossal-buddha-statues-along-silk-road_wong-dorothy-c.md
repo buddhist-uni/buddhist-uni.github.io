@@ -2,7 +2,8 @@
 title: "Colossal Buddha Statues along the Silk Road"
 authors:
   - "Dorothy C. Wong"
-external_url: "https://koreascience.or.kr/article/JAKO201911464522127.pdf"
+external_url: "https://uva.theopenscholar.com/files/dorothy-wong/files/wong_colossal_buddha_statues_along_the_silk_road.pdf"
+alternate_url: "https://web.archive.org/web/20240709161224if_/https://koreascience.or.kr/article/JAKO201911464522127.pdf"
 source_url: "https://doi.org/10.22679/avs.2019.4.2.001"
 drive_links:
   - "https://drive.google.com/file/d/1gW7ywe5Fm0UZnitF6hh-0vvZhPuSIgdn/view?usp=drivesdk"

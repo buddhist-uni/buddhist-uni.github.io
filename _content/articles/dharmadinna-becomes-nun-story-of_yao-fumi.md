@@ -2,7 +2,7 @@
 title: "Dharmadinnā Becomes a Nun: A Story of Ordination by Messenger from the Mūlasarvāstivāda Vinaya Translated from the Tibetan Version"
 authors:
   - "Fumi Yao"
-external_url: "https://alt.cardiffuniversitypress.org/articles/10.18573/j.2017.10132/galley/23/download/"
+external_url: "https://alt.cardiffuniversitypress.org/articles/23/files/submission/proof/23-1-23-1-10-20170908.pdf"
 source_url: "https://doi.org/10.18573/j.2017.10132"
 drive_links:
   - "https://drive.google.com/file/d/1urQHn3u6mDwaVdijQx-dypxMMnUOgrtM/view?usp=drivesdk"

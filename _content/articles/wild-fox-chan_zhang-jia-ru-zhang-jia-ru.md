@@ -2,7 +2,7 @@
 title: "The Wild Fox Chan: The Practice of the Same, Critical Chan Liminality, and Gong'an Therapy in Times of Climate Crisis"
 authors:
   - "Chia-Ju Chang (張嘉如)"
-external_url: "https://tpl.ncl.edu.tw/NclService/pdfdownload?filePath=lV8OirTfsslWcCxIpLbUfpBFnr50DaCpNFNTgiGvE9k3earA8s2ppg0iuq7BkFS4ioFkmEtPFZ0=&imgType=Bn5sH4BGpJw=&key=q-LsDhm7kuwCr-gQw-b8BUFt8EgCm82JAFJ_66Wk9xQeVVU9OyINO4qBZJhLTxWd&xmlId=0008187140"
+external_url: "https://www.airitilibrary.com/Article/Detail/P20240130001-N202411130005-00003"
 source_url: "https://doi.org/10.53106/300525562024090002003"
 drive_links:
   - "https://drive.google.com/file/d/1qHgam_hVbSK4EOXOGzheqo9n8Wmrpoqp/view?usp=drivesdk"

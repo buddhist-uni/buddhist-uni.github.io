@@ -62,7 +62,7 @@ Courses hosted on other websites.
 
 {% assign authors = "analayo" | split: "," %}
 {% include course-card.html
-  url="https://agamaresearch.dila.edu.tw/wp-content/uploads/2014/06/lectures2012.htm"
+  url="https://drive.google.com/drive/folders/1Oltsqlqiu3Ogojf5FV-iDVb44ox1BQrL"
   value="0.6"
   title="The Arahant and the Four Noble Truths"
   icon="fas fa-mountain"

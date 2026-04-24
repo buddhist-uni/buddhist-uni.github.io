@@ -2,7 +2,7 @@
 title: "Seafaring Archaeology of the East Coast of India and Southeast Asia during the Early Historical Period"
 authors:
   - "Sila Tripati"
-external_url: "https://www.ancient-asia-journal.com/articles/10.5334/aa.118/galley/156/download/"
+external_url: "https://ancient-asia-journal.com/upload/1/volume/Vol.%208%20(2017)/Paper/118-1-1378-2-10-20170816.pdf"
 source_url: "https://doi.org/10.5334/aa.118"
 drive_links:
   - "https://drive.google.com/file/d/1UyiN5GzTxPw46O7Ls6_GqcYEytvTJV_B/view?usp=drivesdk"
