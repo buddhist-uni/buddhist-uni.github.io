@@ -5,7 +5,7 @@ authors:
   - "Eve Fine"
   - "Jennifer Sheridan"
 external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6309930/"
-source_url: "https://academic.oup.com/academicmedicine/article-pdf/94/1/20/65953397/20190100.0-00013.pdf"
+source_url: "https://doi.org/10.1097/ACM.0000000000002388"
 drive_links:
   - "https://drive.google.com/file/d/1daNVmePy1PrvgBMtoicBlNwhmngJriKb/view?usp=drivesdk"
 file_links:

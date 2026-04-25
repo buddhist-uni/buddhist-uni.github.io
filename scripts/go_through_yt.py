@@ -59,6 +59,7 @@ class YTVideo():
     self.gid = data['id']
     self.doc_size = data['size']
     self.tentative_course_slug = YT_FOLDER_TO_COURSE_SLUG[data['parent_id']]
+    self.parent_id = data['parent_id']
   def __str__(self) -> str:
     return f"""
     Title: {self.title}
@@ -113,6 +114,20 @@ if __name__ == "__main__":
       system_open(vid.url)
       sleep(3)
     course = gdrive.input_course_string_with_tab_complete(prefill=vid.tentative_course_slug)
+    tags = []
+    print("tags:")
+    while True:
+      tag = gdrive.input_course_string_with_tab_complete(prompt='  - ')
+      if not tag:
+        break
+      tags.append(tag)
     gfolder = gdrive.get_gfolders_for_course(course)
+    gdrive.log_move_reason(
+      vid.gid,
+      new_parent_id=gfolder[0] or gfolder[1],
+      old_parent_id=vid.parent_id,
+      reason="Initial (manual) sort out of the YouTube autosort folder",
+      alternate_tags=tags,
+    )
     gdrive.move_gfile(vid.gid, gfolder)
 

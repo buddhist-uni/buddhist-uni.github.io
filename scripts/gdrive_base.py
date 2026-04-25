@@ -238,6 +238,30 @@ def fetch_preview_image(fileid: str, size=1000) -> bytes | None:
     print(f"Error fetching preview image for {fileid}: {e}")
   return None
 
+def download_gdoc_as_docx(fileid: str, destination: Path):
+  request = session().files().export_media(
+    fileId=fileid,
+    mimeType='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  )
+  with open(str(destination) + '.part', 'wb') as f:
+    downloader = MediaIoBaseDownload(f, request)
+    done = False
+    while done is False:
+      status, done = downloader.next_chunk()
+  Path(str(destination) + '.part').rename(destination)
+
+def download_gsheet_as_xlsx(fileid: str, destination: Path):
+  request = session().files().export_media(
+    fileId=fileid,
+    mimeType='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+  )
+  with open(str(destination) + '.part', 'wb') as f:
+    downloader = MediaIoBaseDownload(f, request)
+    done = False
+    while done is False:
+      status, done = downloader.next_chunk()
+  Path(str(destination) + '.part').rename(destination)
+
 def download_file(fileid, destination: Path | str | BufferedIOBase, verbose=True):
   """Downloads the contents of the file to destination"""
   if isinstance(destination, BufferedIOBase):

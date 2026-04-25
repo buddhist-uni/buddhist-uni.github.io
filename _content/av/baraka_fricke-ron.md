@@ -10,7 +10,7 @@ tags:
   - nature
   - present
 publisher: "Magidson Films"
-external_url: "https://www.youtube.com/watch?v=iSyXzXtKjC0"
+external_url: "https://youtu.be/orOnzj0C1iQ"
 base_value: 0.85
 minutes: 97
 ---

@@ -39,6 +39,7 @@ from gdrive import (
   OLD_VERSIONS_FOLDER_ID,
   process_duplicate_files,
   find_duplicate_urls,
+  log_move_reason,
 )
 import website
 
@@ -112,6 +113,13 @@ def create_missing_shortcuts(pair, verbose=True) -> dict[str,int]:
         if correct_public_folder and public_file['parents'][0] != correct_public_folder:
           if verbose:
             print(f"  Moving public file {public_file['name']} to {match.course} where it belongs...")
+          log_move_reason(
+            public_file['id'],
+            old_parent_id=public_file['parent_id'],
+            new_parent_id=correct_public_folder,
+            reason="Making sure GDrive matches the website data.",
+            alternate_tags=match.tags,
+          )
           gcache.move_file(public_file['id'], correct_public_folder)
           counts['moved'] += 1
         make_short = True
@@ -179,9 +187,17 @@ def create_missing_shortcuts(pair, verbose=True) -> dict[str,int]:
       if match.course == private_slug:
         if verbose:
           print("  The public file was in the wrong folder. Moving it...")
+        new_parent_id = folderlink_to_id(drive_folders[private_slug]['public'])
+        log_move_reason(
+          public_file['id'],
+          old_parent_id=public_file['parent_id'],
+          new_parent_id=new_parent_id,
+          reason="File launched publicly on the website, but in the private folder.",
+          alternate_tags=match.tags,
+        )
         gcache.move_file(
           public_file['id'],
-          folderlink_to_id(drive_folders[private_slug]['public']),
+          new_parent_id,
           public_file['parents'],
           verbose=False,
         )

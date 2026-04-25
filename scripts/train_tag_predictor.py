@@ -336,7 +336,7 @@ EPUB_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawepubtext')
 if not EPUB_TEXT_FOLDER.exists():
     EPUB_TEXT_FOLDER.mkdir()
 
-def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=50000000):
+def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=0):
     _save_text_for_drive_file(
         drivefile,
         overwrite,
@@ -346,11 +346,11 @@ def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_fil
         readpdf,
     )
 
-def save_epub_text_for_drive_file(drivefile: dict, overwrite=False):
+def save_epub_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=0):
     _save_text_for_drive_file(
         drivefile,
         overwrite,
-        0,
+        in_memory_filesize_limit,
         EPUB_TEXT_FOLDER,
         'epub',
         read_epub,
@@ -372,7 +372,12 @@ def _save_text_for_drive_file(
         return
     try:
         if not completerawtextfile.exists():
-            orig_file = text_folder.joinpath(f"{drivefile['id']}.{extension}")
+            hashval = drivefile.get('md5Checksum')
+            if hashval and gdrive.gcache.file_cache_dir:
+                orig_file = gdrive.gcache.file_cache_dir / hashval[:2] / f"{hashval[2:]}.{extension}"
+                orig_file.parent.mkdir(exist_ok=True)
+            else:
+                orig_file = text_folder.joinpath(f"{drivefile['id']}.{extension}")
             pdffile = None
             if not orig_file.exists():
                 if int(drivefile['size']) < in_memory_filesize_limit:

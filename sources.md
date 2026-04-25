@@ -90,7 +90,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 <div markdown="1" data-link-type="publishers">
 ## Open Access Publishers
 
-* [Pariyatti](https://store.pariyatti.org/eBooks_c_439.html)
+* [Pariyatti](https://store.pariyatti.org/collections/ebooks)
 * [The Buddhist Publication Society](https://www.bps.lk/library.php)
 * [Hamburg University Press](https://www.buddhismuskunde.uni-hamburg.de/en/publikationen/hamburg-buddhist-studies.html)
 * The Berkeley [Institute of Buddhist Studies](https://www.shin-ibs.edu/research/archived-publications-and-research-projects/)

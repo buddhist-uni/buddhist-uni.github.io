@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import sqlite3
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Callable, TypedDict
+from typing import List, Dict, Any, Optional, Callable, TypedDict, TypeVar, ParamSpec, Concatenate
 from time import sleep
 
 import gdrive_base
@@ -14,6 +14,11 @@ from tqdm import tqdm
 from datetime import datetime, timezone
 import threading
 from functools import wraps
+
+from strutils import (
+    input_with_prefill,
+    prompt,
+)
 
 def UTC_NOW():
     now_utc = datetime.now(timezone.utc)
@@ -37,10 +42,13 @@ FILE_FIELDS_ARRAY = [
 ]
 FILE_FIELDS = ','.join(FILE_FIELDS_ARRAY)
 
-def locked(func):
+P = ParamSpec("P")
+R = TypeVar("R")
+
+def locked(func: Callable[Concatenate[Any, P], R]) -> Callable[Concatenate[Any, P], R]:
     """Decorator to ensure thread-safe access to the SQLite connection and cursor."""
     @wraps(func)
-    def wrapper(self, *args, **kwargs):
+    def wrapper(self: Any, *args: P.args, **kwargs: P.kwargs) -> R:
         if not self.conn:
             raise ValueError("Attempting to connect to a closed connection")
         acquired = self._lock.acquire(timeout=5)
@@ -90,6 +98,7 @@ class DriveCache:
         self.cursor = self.conn.cursor()
         self._create_table()
         self.callbacks: DriveCacheCallbackMap = {"trash": []}
+        self.file_cache_dir = self._load_file_cache_dir()
     
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
@@ -163,6 +172,58 @@ class DriveCache:
         self.cursor.execute(create_properties_table_sql)
         self.cursor.executescript(create_index_sql)
         self.conn.commit()
+    
+    def _prompt_for_file_cache_dir(self) -> Path:
+        # Maybe ask the user of this class to supply this function in the
+        # constructor and `get_file_cache_dir` simply raises an Error if
+        # one is needed but not supplied?
+        proposal = str(Path(self.db_path).resolve().with_suffix(''))+'_files'
+        while True:
+            print("Please tell me where to store the GDrive file cache.")
+            proposal = Path(input_with_prefill("> ", str(proposal))).resolve()
+            if not proposal.parent.exists():
+                print(f"{proposal.parent} does not exist. Please either create it or try a different path.")
+                continue
+            if proposal.exists():
+                if proposal.is_dir():
+                    print(f"That directory already exists!")
+                    if prompt("Use anyway?"):
+                        return proposal
+                    else:
+                        continue
+                else:
+                    print(f"That appears to be a file!")
+                    continue
+            proposal.mkdir()
+            return proposal
+
+    def _load_file_cache_dir(self) -> Path | None:
+        with self._lock:
+            file_cache_dir = self.cursor.execute(
+                "SELECT value FROM metadata WHERE key = 'file_cache_dir';"
+            ).fetchone()
+        if file_cache_dir:
+            return Path(file_cache_dir['value'])
+        else:
+            return None
+
+    def set_file_cache_dir(self, file_cache_dir: None | Path = None) -> Path:
+        if file_cache_dir:
+            file_cache_dir = file_cache_dir.resolve()
+        else:
+            file_cache_dir = self._prompt_for_file_cache_dir()
+        if self.file_cache_dir == file_cache_dir:
+            return file_cache_dir # nothing to do
+        if self.file_cache_dir:
+            raise NotImplementedError("Teach local_gdrive.py to merge an old file cache dir into a new one")
+        with self._lock:
+            self.cursor.execute(
+                "INSERT INTO metadata (key, value) VALUES (?, ?)",
+                ('file_cache_dir', str(file_cache_dir), ),
+            )
+            self.conn.commit()
+        self.file_cache_dir = file_cache_dir
+        return file_cache_dir
 
     @locked
     def upsert_item(self, item_data: Dict[str, Any]):

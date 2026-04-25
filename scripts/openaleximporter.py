@@ -93,7 +93,7 @@ def print_openalex_work(work: dict, indent=0):
       pass
     print(f"{s}URL: {work['open_access']['oa_url']}")
 
-def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None) -> str:
+def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None, tags: list | None=None) -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
@@ -227,7 +227,12 @@ authors:
       if course:
         fd.write(slugify(course))
       fd.write("\nstatus: featured\n")
-    fd.write(f"tags:\n  - \nyear: {work['publication_year']}\n")
+    fd.write(f"tags:\n")
+    if tags:
+       for tag in tags:
+          fd.write(f"  - {tag}\n")
+    fd.write("  - \n")
+    fd.write(f"year: {work['publication_year']}\n")
     fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     try:
       venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
@@ -373,6 +378,7 @@ def _main():
   if not work:
     quit(0)
   title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
+  # TODO Investigate the below line as we're sometimes getting 2 results instead of one (for e.g. Holmes Welch)
   gfiles = gdrive.gcache.search_by_name_containing(
       title,
       additional_filters="mime_type = ? AND owner = 1 AND shortcut_target IS NULL",
