@@ -315,7 +315,7 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].title, 'culasaccakasutta');
   });
 
-  it('remove words after sutta and sutra but using : as a reference', () => {
+  it('remove words after sutta. Also handles sutra', () => {
     const mockStore = {
       id1: {
         title: 'MA 128 Upasaka Sutra: Discourse on the White-Clad Disciple',
@@ -329,7 +329,7 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].title, 'upasakasutra');
   });
 
-  it('integrated more nikaya indexes for parsing - lets test lal', () => {
+  it('handles the filtering out of a wide range of nikaya indexes', () => {
     const mockStore = {
       id1: {
         title: 'Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling',
@@ -343,7 +343,7 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].title, 'dharmacakrapravartanasutra');
   });
 
-  it('it returns a joined title from a thig nikaya leading discourse', () => {
+  it('can parse Therigathas', () => {
     const mockStore = {
       id1: {
         title: "Thig 3.8 Somā Therīgāthā: Somā's Verses",
@@ -351,24 +351,21 @@ describe('normalizeSuttaTitles', () => {
         category: 'canon'
       }
     };
-    const result = normalizeSuttaTitles(mockStore);
-    assert.equal(result.length, 1);
-    assert.equal(result[0].ref, 'id1');
-    assert.equal(result[0].title, 'somatherigatha');
-  });
-
-  it('it returns a joined title from a thag nikaya leading discourse', () => {
-    const mockStore = {
+    const mockStore2 = {
       id1: {
         title: "Thag 1.7 Bhalliya Theragāthā: Bhalliya's Verse",
         type: 'content',
         category: 'canon'
       }
     };
+    const result2 = normalizeSuttaTitles(mockStore2);
+    assert.equal(result2.length, 1);
+    assert.equal(result2[0].ref, 'id1');
+    assert.equal(result2[0].title, 'bhalliyatheragatha');
     const result = normalizeSuttaTitles(mockStore);
     assert.equal(result.length, 1);
     assert.equal(result[0].ref, 'id1');
-    assert.equal(result[0].title, 'bhalliyatheragatha');
+    assert.equal(result[0].title, 'somatherigatha');
   });
 
   it('handles "the" and removes it from a string if it appears at the beginning', () => {
@@ -383,6 +380,30 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result.length, 1);
     assert.equal(result[0].ref, 'id1');
     assert.equal(result[0].title, 'mahasatipatthanasutta');
+  });
+
+  it('filters out objects with types that are not equal to content', () => {
+    const mockStore = {
+      id1: {
+        title: 'Audio/Video',
+        type: 'av',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 0);
+  });
+
+  it('filters out objects where titles do not include sutta, sutra, or gatha', () => {
+    const mockStore = {
+      id1: {
+        title: 'The Hairy Spider Climbed Up The Waterspout: A day in the life Part 3 ',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 0);
   });
 
 

@@ -12,11 +12,13 @@ function normalizeSuttaTitles (obj) {
     const title = item.title || "";
       const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
       const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
-      joinedTitleDatabase.push({
+      if(removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
+        joinedTitleDatabase.push({
           ref: i,
           title: removedTheOnJoin,
           matchData: { metadata: {} }
       });
+    }
   }
   return joinedTitleDatabase;
 }
