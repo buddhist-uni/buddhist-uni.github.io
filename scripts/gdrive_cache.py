@@ -2,23 +2,27 @@
 
 from collections.abc import Collection, Iterable
 from collections import OrderedDict
+import random
+from mimetypes import guess_extension
 from pathlib import Path
 from typing import Callable, Optional, Any
 from tqdm import tqdm
+import gdrive_base
 import gdrive
 import shutil
 from strutils import (
   md5,
+  DelayedKeyboardInterrupt,
 )
 
 class BackupLevel:
-  def __init__(self, level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[Any]]] = None):
+  def __init__(self, level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[dict]]] = None):
     self.level = level
     self.name = name
     self.description = description
     self.finder = finder
 
-  def find_files(self) -> Iterable[Any]:
+  def find_files(self) -> Iterable[dict]:
     """Finds and yields/returns the files to be backed up at this level."""
     if self.finder:
       return self.finder()
@@ -26,26 +30,58 @@ class BackupLevel:
 
 BACKUP_LEVELS: OrderedDict[int, BackupLevel] = OrderedDict()
 
-def add_backup_level(level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[Any]]] = None):
+def add_backup_level(level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[dict]]] = None):
   global BACKUP_LEVELS
   BACKUP_LEVELS[level] = BackupLevel(level, name, description, finder)
   BACKUP_LEVELS = OrderedDict(sorted(BACKUP_LEVELS.items()))
 
 def backup_level(level: int, name: str, description: str):
   """Decorator to register a function as a backup level finder."""
-  def decorator(func: Callable[[], Iterable[Any]]):
+  def decorator(func: Callable[[], Iterable[dict]]):
     add_backup_level(level, name, description, func)
     return func
   return decorator
 
-# Dummy levels
 add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
 add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
 add_backup_level(100, "Comprehensive", "All reasonable items")
-add_backup_level(126, "All Owned", "Literally every file I own")
-add_backup_level(127, "All Accessible", "Also backs up files shared with OBU")
+
+@backup_level(126, "All Owned", "Literally every file I own")
+def find_all_my_files() -> Iterable[dict]:
+  ret = gdrive.gcache.sql_query("shortcut_target IS NULL AND owner = 1", tuple())
+  random.shuffle(ret)
+  return tqdm(ret)
+
+@backup_level(127, "All Accessible", "Also backs up files shared with OBU")
+def find_all_shared_files() -> Iterable[dict]:
+  ret = gdrive.gcache.sql_query("shortcut_target IS NULL AND owner > 1", tuple())
+  random.shuffle(ret)
+  return tqdm(ret)
+
+def run_backup_level(level: BackupLevel):
+  print(f"Starting backup level {level.level} ({level.name})...")
+  files_iter = level.find_files()
+  for file in files_iter:
+    hashval = file.get('md5Checksum')
+    if not isinstance(hashval, str):
+      continue
+    assert len(hashval) == 32
+    extension = str(file['name']).split('.')[-1].lower()
+    if not extension:
+      extension = guess_extension(file['mimeType'])
+    if extension and not extension.startswith('.'):
+      extension = '.' + extension
+    cache_dir = gdrive.gcache.file_cache_dir
+    assert isinstance(cache_dir, Path)
+    target_path = cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
+    if target_path.exists():
+      continue
+    target_path.parent.mkdir(exist_ok=True)
+    with DelayedKeyboardInterrupt():
+      gdrive_base.download_file(file['id'], target_path, verbose=False)
+  print(f"Done backing up to level {level.level}!")
 
 def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool):
   """moves (or copies, if not `move`) `file` into `cache_dir`
@@ -189,7 +225,12 @@ if __name__ == "__main__":
           print('The cache is set to "cach only" mode. Nothing further to do.')
           sys.exit(0)
         print(f"Will now back up GDrive to a level {args.level}")
-        # TODO: Implement backup logic here based on args.level
-        pass
+        for level in BACKUP_LEVELS.values():
+          if not level.finder:
+            continue
+          if level.level > args.level:
+            break
+          run_backup_level(level)
+        print(f"All files with priority <= {args.level} are now saved locally!")
     else:
       parser.print_help()
