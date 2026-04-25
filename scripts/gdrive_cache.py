@@ -46,7 +46,6 @@ def sideload_main(files: Collection[Path], parent_folder: str | None = None, mov
       raise ValueError(f"Folder with ID {parent_folder} not found")
     if folder['mimeType'] != 'application/vnd.google-apps.folder':
       raise ValueError(f"{parent_folder} is not a Google Drive Folder, but a {folder['mimeType']}")
-  cache_dir = gdrive.gcache.get_file_cache_dir()
   if len(files) > 100:
     file_iter = tqdm(files)
   else:
@@ -57,7 +56,7 @@ def sideload_main(files: Collection[Path], parent_folder: str | None = None, mov
       continue
     if file.is_dir():
       raise ValueError(f"{file} is a directory! Please only specify specific files")
-    sideload_file(file, cache_dir, parent_folder, move)
+    sideload_file(file, gdrive.gcache.file_cache_dir, parent_folder, move)
 
 if __name__ == "__main__":
     import argparse
@@ -84,6 +83,10 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+
+    if not gdrive.gcache.file_cache_dir:
+      gdrive.gcache.set_file_cache_dir()
+
     if args.command == "sideload":
       sideload_main(args.files, args.parent_folder, move=(not args.copy))
     else:

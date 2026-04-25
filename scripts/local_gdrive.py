@@ -98,6 +98,7 @@ class DriveCache:
         self.cursor = self.conn.cursor()
         self._create_table()
         self.callbacks: DriveCacheCallbackMap = {"trash": []}
+        self.file_cache_dir = self._load_file_cache_dir()
     
     def _create_table(self):
         """Creates the 'drive_items' table if it doesn't exist."""
@@ -196,20 +197,32 @@ class DriveCache:
             proposal.mkdir()
             return proposal
 
-    def get_file_cache_dir(self) -> Path:
+    def _load_file_cache_dir(self) -> Path | None:
         with self._lock:
             file_cache_dir = self.cursor.execute(
                 "SELECT value FROM metadata WHERE key = 'file_cache_dir';"
             ).fetchone()
         if file_cache_dir:
             return Path(file_cache_dir['value'])
-        file_cache_dir = self._prompt_for_file_cache_dir()
+        else:
+            return None
+
+    def set_file_cache_dir(self, file_cache_dir: None | Path = None) -> Path:
+        if file_cache_dir:
+            file_cache_dir = file_cache_dir.resolve()
+        else:
+            file_cache_dir = self._prompt_for_file_cache_dir()
+        if self.file_cache_dir == file_cache_dir:
+            return file_cache_dir # nothing to do
+        if self.file_cache_dir:
+            raise NotImplementedError("Teach local_gdrive.py to merge an old file cache dir into a new one")
         with self._lock:
             self.cursor.execute(
                 "INSERT INTO metadata (key, value) VALUES (?, ?)",
                 ('file_cache_dir', str(file_cache_dir), ),
             )
             self.conn.commit()
+        self.file_cache_dir = file_cache_dir
         return file_cache_dir
 
     @locked
