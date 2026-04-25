@@ -39,11 +39,13 @@ def backup_level(level: int, name: str, description: str):
   return decorator
 
 # Dummy levels
-add_backup_level(10, "High", "High priority backup items")
-add_backup_level(30, "Medium", "Medium priority backup items")
-add_backup_level(60, "Low", "Low priority backup items")
-add_backup_level(100, "Comprehensive", "All reasonable items to backup")
-add_backup_level(126, "Exhaustive", "Literally everything")
+add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
+add_backup_level(10, "High", "All valuable items in need of backing up")
+add_backup_level(30, "Medium", "All items in active need of backing up")
+add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
+add_backup_level(100, "Comprehensive", "All reasonable items")
+add_backup_level(126, "All Owned", "Literally every file I own")
+add_backup_level(127, "All Accessible", "Also backs up files shared with OBU")
 
 def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool):
   """moves (or copies, if not `move`) `file` into `cache_dir`
@@ -94,6 +96,24 @@ def sideload_main(files: Collection[Path], parent_folder: str | None = None, mov
       raise ValueError(f"{file} is a directory! Please only specify specific files")
     sideload_file(file, gdrive.gcache.file_cache_dir, parent_folder, move)
 
+def get_saved_backup_level() -> int | None:
+  with gdrive.gcache._lock:
+    row = gdrive.gcache.cursor.execute(
+      "SELECT value FROM metadata WHERE key = 'backup_level';"
+    ).fetchone()
+    if row:
+      return int(row['value'])
+    return None
+
+def save_backup_level(level: int):
+  with gdrive.gcache._lock:
+    gdrive.gcache.cursor.execute(
+      "INSERT OR REPLACE INTO metadata (key, value) VALUES (?, ?)",
+      ('backup_level', str(level), )
+    )
+    gdrive.gcache.conn.commit()
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(
@@ -101,10 +121,12 @@ if __name__ == "__main__":
     )
     subparsers = parser.add_subparsers(dest="command")
 
-    def non_negative_int(value):
+    def backup_level(value):
         ivalue = int(value)
         if ivalue < 0:
-            raise argparse.ArgumentTypeError(f"{value} is an invalid non-negative int value")
+          raise argparse.ArgumentTypeError(f"{value} is a negative int")
+        if ivalue > 127:
+          raise argparse.ArgumentTypeError(f"{ivalue} is too large to be a valid backup level. Use --list-levels to see valid levels and their meaning.")
         return ivalue
 
     backup = subparsers.add_parser("backup", help="Download files from Drive to the cache")
@@ -112,9 +134,9 @@ if __name__ == "__main__":
       "--level", '-l',
       required=False,
       dest="level",
-      type=non_negative_int,
+      type=backup_level,
       default=None,
-      help="Sets the max priority level for the files this cache should backup",
+      help="Sets the max priority level for the files this cache should backup. Backup levels <= this value will be run.",
     )
     backup.add_argument(
       "--list-levels",
@@ -155,6 +177,18 @@ if __name__ == "__main__":
             else:
                 print(f"  {lvl:3d}: {bl.name:<15} - {bl.description}")
       else:
+        import sys
+        if args.level is not None:
+          save_backup_level(args.level)
+        else:
+          args.level = get_saved_backup_level()
+          if args.level is None:
+            print("ERROR: No backup level supplied and no previous level found in the database. Please provide a --level.", file=sys.stderr)
+            sys.exit(1)
+        if args.level == 0:
+          print('The cache is set to "cach only" mode. Nothing further to do.')
+          sys.exit(0)
+        print(f"Will now back up GDrive to a level {args.level}")
         # TODO: Implement backup logic here based on args.level
         pass
     else:
