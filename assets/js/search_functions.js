@@ -207,7 +207,6 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
 }
 
 function handleSearchMessage(data, searchFn) {
-  var tokenResults = [];
   var results = [];
   var warning = "";
   var words = data.q.trim().split(" ");
@@ -252,7 +251,7 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
-  finalResults = results.length ? results : tokenResults = findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
   return {
     "warninghtml": warning,
     "html": displaySearchResults(finalResults),
