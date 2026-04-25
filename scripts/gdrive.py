@@ -83,6 +83,7 @@ except (ServerNotFoundError, TransportError):
 atexit.register(gcache.close)
 
 OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
+YOUTUBE_METADATA_FOLDER_ID = "18bydIKjpNBX2FWeCuazoNuY-OzEulQzm"
 
 
 def FOLDERS_DATA() -> dict[str, dict[str, str]]:
