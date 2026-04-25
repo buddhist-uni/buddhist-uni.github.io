@@ -1,13 +1,49 @@
 #!/bin/python3
 
-from collections.abc import Collection
+from collections.abc import Collection, Iterable
+from collections import OrderedDict
 from pathlib import Path
+from typing import Callable, Optional, Any
 from tqdm import tqdm
 import gdrive
 import shutil
 from strutils import (
   md5,
 )
+
+class BackupLevel:
+  def __init__(self, level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[Any]]] = None):
+    self.level = level
+    self.name = name
+    self.description = description
+    self.finder = finder
+
+  def find_files(self) -> Iterable[Any]:
+    """Finds and yields/returns the files to be backed up at this level."""
+    if self.finder:
+      return self.finder()
+    return []
+
+BACKUP_LEVELS: OrderedDict[int, BackupLevel] = OrderedDict()
+
+def add_backup_level(level: int, name: str, description: str, finder: Optional[Callable[[], Iterable[Any]]] = None):
+  global BACKUP_LEVELS
+  BACKUP_LEVELS[level] = BackupLevel(level, name, description, finder)
+  BACKUP_LEVELS = OrderedDict(sorted(BACKUP_LEVELS.items()))
+
+def backup_level(level: int, name: str, description: str):
+  """Decorator to register a function as a backup level finder."""
+  def decorator(func: Callable[[], Iterable[Any]]):
+    add_backup_level(level, name, description, func)
+    return func
+  return decorator
+
+# Dummy levels
+add_backup_level(10, "High", "High priority backup items")
+add_backup_level(30, "Medium", "Medium priority backup items")
+add_backup_level(60, "Low", "Low priority backup items")
+add_backup_level(100, "Comprehensive", "All reasonable items to backup")
+add_backup_level(126, "Exhaustive", "Literally everything")
 
 def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool):
   """moves (or copies, if not `move`) `file` into `cache_dir`
@@ -65,6 +101,27 @@ if __name__ == "__main__":
     )
     subparsers = parser.add_subparsers(dest="command")
 
+    def non_negative_int(value):
+        ivalue = int(value)
+        if ivalue < 0:
+            raise argparse.ArgumentTypeError(f"{value} is an invalid non-negative int value")
+        return ivalue
+
+    backup = subparsers.add_parser("backup", help="Download files from Drive to the cache")
+    backup.add_argument(
+      "--level", '-l',
+      required=False,
+      dest="level",
+      type=non_negative_int,
+      default=None,
+      help="Sets the max priority level for the files this cache should backup",
+    )
+    backup.add_argument(
+      "--list-levels",
+      action="store_true",
+      help="List all available backup levels and exit",
+    )
+
     sideload = subparsers.add_parser("sideload", help="Sideload files to the cache")
     sideload.add_argument("files", nargs="+", help="Files to sideload", type=Path)
     sideload.add_argument(
@@ -89,5 +146,16 @@ if __name__ == "__main__":
 
     if args.command == "sideload":
       sideload_main(args.files, args.parent_folder, move=(not args.copy))
+    elif args.command == "backup":
+      if args.list_levels:
+        print("Available Backup Levels:")
+        for lvl, bl in BACKUP_LEVELS.items():
+            if bl.finder is None:
+                print(f"\033[1m  {lvl:3d}: {bl.name:<15} - {bl.description}\033[0m")
+            else:
+                print(f"  {lvl:3d}: {bl.name:<15} - {bl.description}")
+      else:
+        # TODO: Implement backup logic here based on args.level
+        pass
     else:
       parser.print_help()
