@@ -486,7 +486,7 @@ class DriveCache:
         return [self.row_dict_to_api_dict(dict(row)) for row in rows]
     
     @locked
-    def parent_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+    def parent_sql_query(self, query: str, data: tuple=tuple()) -> List[Dict[str, Any]]:
         """
         Directly run a query on a inner self join:
           - `file.` expose's the file's cols

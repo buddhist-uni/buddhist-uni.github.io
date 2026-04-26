@@ -1,5 +1,7 @@
 #!/bin/python3
 
+from bulk_import import BulkPDFType
+from bulk_import import BulkPDFImporter
 from collections.abc import Collection
 from collections import OrderedDict, deque
 import random
@@ -33,6 +35,14 @@ def query_my_cache(sql: str='', variables: tuple=tuple()) -> list[dict]:
     variables,
   )
 
+def query_parent_name(parent_name: str) -> list[dict]:
+  ret = gdrive.gcache.parent_sql_query(
+    "parent.name = ?",
+    (parent_name,)
+  )
+  random.shuffle(ret)
+  return ret
+
 class BackupLevel:
   def __init__(self, level: int, name: str, description: str, finder: Optional[Callable[[], list[dict]]] = None):
     self.level = level
@@ -63,7 +73,28 @@ def backup_level(level: int, name: str, description: str):
 add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
+
+@backup_level(54, 'eks', "The Ezra Klein Show Archive")
+def find_eks_files() -> list[str]:
+  return gdrive.gcache.parent_sql_query(
+    "parent.parent_id = '1_HQsNoi2teB7SzbFX7vMniL01ZGttHuF'"
+  )
+
+@backup_level(57, "academia.edu", "unsorted PDFs from Academia.edu")
+def find_academia_edu_pdfs() -> list[dict]:
+  importer = BulkPDFImporter(BulkPDFType.ACADEMIA_EDU)
+  return query_parent_name(importer.get_unread_subfolder_name())
+
 add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
+
+@backup_level(66, 'core api pdfs', "The PDFs pulled from CORE yet unsorted")
+def find_unsorted_core_pdfs() -> list[dict]:
+  importer = BulkPDFImporter(BulkPDFType.CORE_API)
+  return query_parent_name(importer.get_unread_subfolder_name())
+
+@backup_level(72, 'rejects', "Saves files actively rejected from the library")
+def find_rejected_files() -> list[dict]:
+  return query_my_cache("parent_id = ?", (gdrive.REJECTS_FOLDER_ID,))
 
 @backup_level(78, "all OBU files", "Attempts to save every descendant of the library roots")
 def find_all_obu_files() -> list[dict]:
