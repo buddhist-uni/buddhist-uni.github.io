@@ -1,7 +1,5 @@
 #!/bin/python3
 
-from bulk_import import BulkPDFType
-from bulk_import import BulkPDFImporter
 from collections.abc import Collection
 from collections import OrderedDict, deque
 import random
@@ -18,6 +16,7 @@ from strutils import (
 from executils import graceful_threadmap
 from yaspin import yaspin
 import googleapiclient.errors as gerrors
+from bulk_import import BULK_PDF_FOLDER_NAMES, BulkPDFType
 import website
 
 def query_cache(sql: str, variables: tuple=tuple()) -> list[dict]:
@@ -82,22 +81,20 @@ def find_eks_files() -> list[str]:
 
 @backup_level(57, "academia.edu", "unsorted PDFs from Academia.edu")
 def find_academia_edu_pdfs() -> list[dict]:
-  importer = BulkPDFImporter(BulkPDFType.ACADEMIA_EDU)
-  return query_parent_name(importer.get_unread_subfolder_name())
+  return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.ACADEMIA_EDU])
 
 add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
 
 @backup_level(66, 'core api pdfs', "The PDFs pulled from CORE yet unsorted")
 def find_unsorted_core_pdfs() -> list[dict]:
-  importer = BulkPDFImporter(BulkPDFType.CORE_API)
-  return query_parent_name(importer.get_unread_subfolder_name())
+  return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.CORE_API])
 
 @backup_level(72, 'rejects', "Saves files actively rejected from the library")
 def find_rejected_files() -> list[dict]:
   return query_my_cache("parent_id = ?", (gdrive.REJECTS_FOLDER_ID,))
 
 @backup_level(78, "all OBU files", "Attempts to save every descendant of the library roots")
-def find_all_obu_files() -> list[dict]:
+def find_all_obu_files(filter_fn: Callable[[dict], bool]=None) -> list[dict]:
   ret = []
   folders_data = gdrive.FOLDERS_DATA()
   folders = deque([
@@ -115,20 +112,65 @@ def find_all_obu_files() -> list[dict]:
     children = gdrive.gcache.get_children(folder_id)
     for child in children:
       if child['mimeType'] == 'application/vnd.google-apps.folder':
-        folders.append(child['id'])
+        if child['name'] not in BULK_PDF_FOLDER_NAMES.values():
+          folders.append(child['id'])
         continue
       if child.get('shortcutDetails'):
         if child['shortcutDetails']['targetId'] in seen_files:
           continue
-        seen_files.add(child['shortcutDetails']['targetId'])
+        child = gdrive.gcache.get_item(child['shortcutDetails']['targetId'])
+        if not child:
+          continue
       else:
         if child['id'] in seen_files:
           continue
-        seen_files.add(child['id'])
-      this_ret.append(child)
+      seen_files.add(child['id'])
+      if not filter_fn or filter_fn(child):
+        this_ret.append(child)
     random.shuffle(this_ret)
     ret.extend(this_ret)
   return ret
+
+@backup_level(39, "obu pdfs", "All PDFs in the OBU hierarchy")
+def find_all_obu_pdfs() -> list[dict]:
+  return find_all_obu_files(lambda f: f['mimeType'] == 'application/pdf')
+
+@backup_level(40, "one offs", "A few docs not elsewhere covered")
+def list_one_off_docs() -> list[dict]:
+  return [
+    gdrive.gcache.get_item(fid) for fid in [
+      '1NNlHLr928Mb-NRiJKjZxdwTrsYY7cSZdR_3KulvjiYA',
+      '1Yi6evYG0NsdYzVBO7o8XrCIHo3dApJ4DmlXraerzZFw',
+    ]
+  ]
+
+@backup_level(45, "obu docs", "All epubs and other text document types")
+def find_all_obu_text_docs() -> list[dict]:
+  DOC_EXTS = {
+    'epub',
+    'docx',
+    'doc',
+    'txt',
+    'odt',
+    'mobi',
+    'xlsx',
+    'azw',
+    'azw3',
+    'kfx',
+    'rtf',
+    'fb2',
+    'djvu',
+    'cbz',
+    'html',
+    'csv',
+    'tsv',
+    'md',
+  }
+  return find_all_obu_files(lambda f: f['name'].split('.')[-1].lower() in DOC_EXTS)
+
+@backup_level(51, "obu audio", "All audio files in the OBU library")
+def find_all_obu_audio_files() -> list[dict]:
+  return find_all_obu_files(lambda f: f['mimeType'].startswith('audio'))
 
 @backup_level(84, "google docs and sheets", "My manually created docs")
 def find_manual_docs() -> list[dict]:

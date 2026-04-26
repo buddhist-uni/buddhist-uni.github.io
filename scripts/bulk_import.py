@@ -154,20 +154,17 @@ class BulkPDFType(enum.StrEnum):
   TO_GO_THROUGH = 'togothrough'
   CORE_API = 'coreapi'
 
+BULK_PDF_FOLDER_NAMES = {
+  BulkPDFType.ACADEMIA_EDU: "🏛️ Academia.edu",
+  BulkPDFType.TO_GO_THROUGH: "📥 To Go Through",
+  BulkPDFType.CORE_API: "🔓 CORE API",
+}
+
 class BulkPDFImporter(BulkItemImporter):
   def __init__(self, pdf_type: BulkPDFType) -> None:
     super().__init__()
     self.pdf_type = pdf_type
-    match pdf_type:
-      # Make sure to update gdrive.select_ids_to_keep as well
-      case BulkPDFType.ACADEMIA_EDU:
-        self.folder_name = "🏛️ Academia.edu"
-      case BulkPDFType.TO_GO_THROUGH:
-        self.folder_name = "📥 To Go Through"
-      case BulkPDFType.CORE_API:
-        self.folder_name = "🔓 CORE API"
-      case _:
-        raise ValueError("Invalid PDF type: "+pdf_type)
+    self.folder_name = BULK_PDF_FOLDER_NAMES[pdf_type]
 
   def get_unread_subfolder_name(self) -> str:
     return self.folder_name
