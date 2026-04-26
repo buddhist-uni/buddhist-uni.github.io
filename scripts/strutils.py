@@ -2,7 +2,6 @@
 
 import random
 import sys
-import signal
 import termios
 import hashlib
 import tty
@@ -10,7 +9,6 @@ import os
 import json
 import io
 import fcntl
-import subprocess
 import struct
 import re
 import urllib.parse
@@ -19,24 +17,7 @@ import readline
 from pathlib import Path
 from functools import cache, reduce
 from collections import defaultdict
-from math import floor, ceil
 
-class DummyYaspin:
-    """A no-op version of yaspin for when verbosity is disabled."""
-    def __init__(self, *args, **kwargs):
-      self.text = kwargs.get("text", "")
-      self.spinner = kwargs.get("spinner", "dots")
-      self.timer = kwargs.get("timer", False)
-    def __enter__(self): return self
-    def __exit__(self, *args): pass
-    def __getattr__(self, name):
-        # Handle common yaspin methods by returning self (for chaining) 
-        # or a dummy function that returns self.
-        if name in ('ok', 'fail', 'write', 'hide', 'show', 'spinner', 'stop', 'start'):
-            return lambda *args, **kwargs: self
-        return self
-    def __call__(self, *args, **kwargs):
-        return self
 try:
   from titlecase import titlecase
 except:
@@ -74,31 +55,6 @@ yt_url_to_plid_re = re.compile(r'[&?]list=([^&]+)')
 yaml_key = re.compile(r"^[a-z_]+:.*")
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
-
-def git_grep(pattern: str) -> list[Path]:
-  try:
-    result = subprocess.run(
-      ['git', 'grep', '-l', pattern],
-      cwd=git_root_folder,
-      capture_output=True,
-      text=True,
-      check=True
-    )
-    return [git_root_folder / file for file in result.stdout.splitlines()]
-  except subprocess.CalledProcessError:
-    return []
-
-def replace_text_across_repo(old_uuid: str, new_uuid: str):
-  for file_path in git_grep(old_uuid):
-    if file_path.suffix == ".sqlite":
-      continue
-    try:
-      content = file_path.read_text()
-      new_content = content.replace(old_uuid, new_uuid)
-      file_path.write_text(new_content)
-    except UnicodeDecodeError:
-      raise ValueError(f"{file_path} is not a valid unicode file")
-    print(f"Updated {file_path.relative_to(git_root_folder)} ({old_uuid} -> {new_uuid})")
 
 def approx_eq(a, b, absdiff=1.0, percent=1.0):
   diff = a - b
@@ -371,24 +327,6 @@ def input_with_tab_complete(prompt, typeahead_suggestions, delims=None, prefill=
     readline.set_completer_delims(prev_delims)
     return ret
 
-class DelayedKeyboardInterrupt:
-    # https://stackoverflow.com/a/21919644
-    # Use as:
-    # with DelayedKeyboardInterrupt():
-    #   critical_uninterupted_code()
-    def __enter__(self):
-        self.signal_received = False
-        self.old_handler = signal.signal(signal.SIGINT, self.handler)
-                
-    def handler(self, sig, frame):
-        self.signal_received = (sig, frame)
-        print("SIGINT Received: Just gunna wrap something up first...")
-    
-    def __exit__(self, type, value, traceback):
-        signal.signal(signal.SIGINT, self.old_handler)
-        if self.signal_received:
-            self.old_handler(*self.signal_received)
-
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
 
@@ -432,19 +370,6 @@ def prompt(question: str, default:str = None) -> bool:
         if not reply:
           reply = default
     return (reply == "y")
-
-def system_open(filepath):
-  filepath = str(filepath)\
-    .replace(" ", "\\ ")\
-    .replace("$", "\\$")\
-    .replace("&", "\\&")\
-    .replace('"', "\\\"")\
-    .replace("`", "\\`")\
-    .replace("(", "\\(")\
-    .replace(")", "\\)")\
-    .replace("'", "\\\'")\
-    .replace(";", "\\;")
-  os.system(f"xdg-open {filepath}")
 
 class FileSyncedSet:
   def __init__(self, fname, normalizer=None):
@@ -537,27 +462,6 @@ def file_info(file_name):
         md5.update(chunk)
         size += len(chunk)
   return (md5.hexdigest(), size)
-
-def get_untracked_files(git_root: Path | str = "."):
-    """Get list of untracked files from git status"""
-    try:
-        # Run git status to get untracked files
-        result = subprocess.run(
-            ['git', '-C', str(git_root), 'ls-files', '--others', '--exclude-standard'],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        files = result.stdout.splitlines()
-        if isinstance(git_root, Path):
-          return [git_root / file for file in files]
-        return [os.path.join(git_root, file) for file in files]
-    except subprocess.CalledProcessError:
-        print("Error: Not a git repository or git command failed")
-        return []
-    except FileNotFoundError:
-        print("Error: Git is not installed or not in PATH")
-        return []
 
 def get_file_sizes(files):
     """Calculate sizes of given files"""

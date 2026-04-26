@@ -32,8 +32,8 @@ from strutils import (
   yt_url_to_id_re,
   file_info,
   radio_dial,
-  system_open,
 )
+from executils import system_open
 import json
 import re
 import inspect

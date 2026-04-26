@@ -15,6 +15,7 @@ import shutil
 from strutils import (
   md5,
 )
+from executils import graceful_threadmap
 from yaspin import yaspin
 import signal
 import queue
@@ -114,15 +115,7 @@ def find_all_my_files() -> list[dict]:
 def find_all_shared_files() -> list[dict]:
   return query_cache("owner > 1")
 
-
-_STOP_EXCEPTIONS = queue.Queue()
-def capture_sigint(sig, frame):
-  _STOP_EXCEPTIONS.put(KeyboardInterrupt())
-  print("\n\033[1mCtrl+C detected.\033[0m Finishing current downloads and will then exit...")
 def download_file_to_cache(file: dict, verbose=True) -> str | None:
-  if not _STOP_EXCEPTIONS.empty():
-    return None # stop working when told
-  try:
     is_gdoc = file.get('mimeType') == 'application/vnd.google-apps.document'
     is_gsheet = file.get('mimeType') == 'application/vnd.google-apps.spreadsheet'
     if is_gdoc or is_gsheet:
@@ -177,28 +170,12 @@ def download_file_to_cache(file: dict, verbose=True) -> str | None:
     if verbose:
       print(f"  Saved to {target_path.parent.name}/{target_path.name}")
     return str(target_path)
-  except Exception as e:
-    _STOP_EXCEPTIONS.put(e)
-    import traceback
-    print(f"Unhandled exception downloading {file['id']}: {e}")
-    traceback.print_exc()
-    return None
 
 def run_backup_level(level: BackupLevel, parallelism=6):
   print(f"Starting backup level {level.level} ({level.name})...")
   with yaspin(text="Identifying files..."):
     files = level.find_files()
-  try:
-    old_handler = signal.signal(signal.SIGINT, capture_sigint)
-  except ValueError:
-    old_handler = None
-  try:
-    tqdm_thread_map(download_file_to_cache, files, unit='f', max_workers=parallelism, chunksize=1)
-  finally:
-    if old_handler:
-      signal.signal(signal.SIGINT, old_handler)
-    if not _STOP_EXCEPTIONS.empty():
-      raise _STOP_EXCEPTIONS.get()
+  graceful_threadmap(download_file_to_cache, files, unit='f', max_workers=parallelism)
   print(f"Done backing up to level {level.level}!")
 
 def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool):

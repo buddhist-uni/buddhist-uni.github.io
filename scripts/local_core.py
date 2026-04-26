@@ -12,9 +12,9 @@ from pathlib import Path
 import threading
 from time import sleep
 from enum import IntEnum
-import signal
 from language_detection import LANGUAGE_DETECTOR, Language
 from strutils import author_name_to_normal, md5
+from executils import graceful_threadmap
 import nearestpdf
 from tqdm import tqdm
 from downloadutils import download, pdf_name_for_work, USER_AGENT
@@ -771,16 +771,11 @@ class CoreAPIWorksCache:
     from bulk_import import BulkPDFImporter, BulkPDFType
     import gdrive
     import nearestpdf
-    import queue
     nearestpdf.load()
     importer = BulkPDFImporter(BulkPDFType.CORE_API)
-    stop_exceptions = queue.Queue()
     with tempfile.TemporaryDirectory() as temp_dir:
       temp_path = Path(temp_dir)
       def process_work(work):
-        if not stop_exceptions.empty():
-          return 0
-        try:
           work_folder = to_folder
           if not work_folder:
             work_folder = temp_path.joinpath(str(work['id']))
@@ -833,33 +828,10 @@ class CoreAPIWorksCache:
           else:
             self.mark_download(work['id'], False)
             return 0
-        except Exception as e:
-          import traceback
-          print(f"Unhandled error processing work {work['id']}: {e}")
-          traceback.print_exc()
-          stop_exceptions.put(e)
-          return 0
       
-      from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
-      def handle_sigint(sig, frame):
-        stop_exceptions.put(KeyboardInterrupt())
-        print("\n\033[1mCtrl+C detected.\033[0m Finishing current tasks and exiting gracefully...")
-
-      try:
-        old_handler = signal.signal(signal.SIGINT, handle_sigint)
-      except ValueError:
-        old_handler = None
-
-      try:
-        # If there are works to process, run them in a thread pool
-        if works:
-          results = tqdm_thread_map(process_work, works, max_workers=8)
-          ret = sum(results)
-      finally:
-        if old_handler:
-          signal.signal(signal.SIGINT, old_handler)
-        if not stop_exceptions.empty():
-          raise stop_exceptions.get()
+      if works:
+        results = graceful_threadmap(process_work, works, max_workers=8)
+        ret = sum(results)
 
     return ret
   
