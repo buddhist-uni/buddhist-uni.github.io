@@ -1,14 +1,12 @@
 #!/bin/python3
 
-import traceback
-from collections.abc import Collection, Iterable
-from collections import OrderedDict
+from collections.abc import Collection
+from collections import OrderedDict, deque
 import random
 from mimetypes import guess_extension
 from pathlib import Path
-from typing import Callable, Optional, Any
+from typing import Callable, Optional
 from tqdm import tqdm
-from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
 import gdrive_base
 import gdrive
 import shutil
@@ -17,9 +15,8 @@ from strutils import (
 )
 from executils import graceful_threadmap
 from yaspin import yaspin
-import signal
-import queue
 import googleapiclient.errors as gerrors
+import website
 
 def query_cache(sql: str, variables: tuple=tuple()) -> list[dict]:
   """Performs a query, filtering out shortcuts and shuffling the results"""
@@ -67,6 +64,40 @@ add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
 add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
+
+@backup_level(78, "all OBU files", "Attempts to save every descendant of the library roots")
+def find_all_obu_files() -> list[dict]:
+  ret = []
+  folders_data = gdrive.FOLDERS_DATA()
+  folders = deque([
+    gdrive.folderlink_to_id(folders_data['root']['public']),
+    gdrive.folderlink_to_id(folders_data['root']['private']),
+  ])
+  seen_folders = set()
+  seen_files = set()
+  while folders:
+    folder_id = folders.popleft()
+    if not folder_id or folder_id in seen_folders:
+      continue
+    seen_folders.add(folder_id)
+    this_ret = []
+    children = gdrive.gcache.get_children(folder_id)
+    for child in children:
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        folders.append(child['id'])
+        continue
+      if child.get('shortcutDetails'):
+        if child['shortcutDetails']['targetId'] in seen_files:
+          continue
+        seen_files.add(child['shortcutDetails']['targetId'])
+      else:
+        if child['id'] in seen_files:
+          continue
+        seen_files.add(child['id'])
+      this_ret.append(child)
+    random.shuffle(this_ret)
+    ret.extend(this_ret)
+  return ret
 
 @backup_level(84, "google docs and sheets", "My manually created docs")
 def find_manual_docs() -> list[dict]:
@@ -116,8 +147,12 @@ def find_all_shared_files() -> list[dict]:
   return query_cache("owner > 1")
 
 def download_file_to_cache(file: dict, verbose=True) -> str | None:
-    is_gdoc = file.get('mimeType') == 'application/vnd.google-apps.document'
-    is_gsheet = file.get('mimeType') == 'application/vnd.google-apps.spreadsheet'
+    """Will try its best, following shortcuts, exporting docs, etc."""
+    if file['mimeType'] == 'application/vnd.google-apps.shortcut':
+      file = gdrive.gcache.get_item(file['shortcutDetails']['targetId'])
+
+    is_gdoc = file['mimeType'] == 'application/vnd.google-apps.document'
+    is_gsheet = file['mimeType'] == 'application/vnd.google-apps.spreadsheet'
     if is_gdoc or is_gsheet:
       hashval = md5(file['id'] + str(file['version']))
     else:

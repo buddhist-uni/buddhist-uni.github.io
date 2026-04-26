@@ -87,7 +87,7 @@ def link_to_id(link):
     return ret.groups()[0]
   return None
 
-def folderlink_to_id(link):
+def folderlink_to_id(link) -> str | None:
   if not link:
     return None
   if link.startswith(FOLDER_LINK_PREFIX):
