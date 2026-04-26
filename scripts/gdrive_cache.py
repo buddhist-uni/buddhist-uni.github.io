@@ -73,6 +73,12 @@ add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
 
+@backup_level(33, 'to go throughs', "openaccess content I've marked as next up to consider")
+def find_to_go_through_files() -> list[dict]:
+  ret = query_my_cache("parent_id = ?", ('1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2',))
+  ret.extend(query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.TO_GO_THROUGH]))
+  return ret
+
 @backup_level(54, 'eks', "The Ezra Klein Show Archive")
 def find_eks_files() -> list[str]:
   return gdrive.gcache.parent_sql_query(
@@ -279,7 +285,7 @@ def download_file_to_cache(file: dict, verbose=True) -> str | None:
       print(f"  Saved to {target_path.parent.name}/{target_path.name}")
     return str(target_path)
 
-def run_backup_level(level: BackupLevel, parallelism=6):
+def run_backup_level(level: BackupLevel, parallelism=14):
   print(f"Starting backup level {level.level} ({level.name})...")
   with yaspin(text="Identifying files..."):
     files = level.find_files()
@@ -382,6 +388,13 @@ if __name__ == "__main__":
       action="store_true",
       help="List all available backup levels and exit",
     )
+    backup.add_argument(
+      "--threads", "-t",
+      required=False,
+      default=0,
+      type=int,
+      help="How many files to download at the same time",
+    )
 
     sideload = subparsers.add_parser("sideload", help="Sideload files to the cache")
     sideload.add_argument("files", nargs="+", help="Files to sideload", type=Path)
@@ -433,7 +446,10 @@ if __name__ == "__main__":
             continue
           if level.level > args.level:
             break
-          run_backup_level(level)
+          parallelism = args.threads
+          if parallelism < 1:
+            parallelism = 14
+          run_backup_level(level, parallelism=parallelism)
         print(f"All files with priority <= {args.level} are now saved locally!")
     else:
       parser.print_help()
