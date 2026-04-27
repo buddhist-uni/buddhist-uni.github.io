@@ -329,7 +329,7 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].title, 'upasakasutra');
   });
 
-  it('handles the filtering out of a wide range of nikaya indexes', () => {
+  it('tests that it can parse a lal sutra', () => {
     const mockStore = {
       id1: {
         title: 'Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling',
@@ -385,9 +385,9 @@ describe('normalizeSuttaTitles', () => {
   it('filters out objects with types that are not equal to content', () => {
     const mockStore = {
       id1: {
-        title: 'Audio/Video',
-        type: 'av',
-        category: 'canon'
+        title: 'MN 3 Dhammadāyāda Sutta: Heirs in the Teaching',
+        type: 'content',
+        category: 'av'
       }
     };
     const result = normalizeSuttaTitles(mockStore);
