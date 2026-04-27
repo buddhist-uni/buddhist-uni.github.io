@@ -12,10 +12,9 @@ from urllib.parse import quote as urlquote
 
 from strutils import (
   input_with_prefill,
-  system_open,
-  prompt,
   radio_dial,
 )
+from executils import system_open
 from pdfutils import get_page_count
 import gdrive_base
 import gdrive

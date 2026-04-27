@@ -4,9 +4,9 @@ from strutils import (
   git_root_folder,
   input_with_prefill,
   prompt,
-  system_open,
   sutta_id_re
 )
+from executils import system_open
 from add_external_descriptions import get_blurb_for_suttaid
 from parallels import get_parallels_yaml
 from gdrive_base import (

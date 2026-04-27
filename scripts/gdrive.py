@@ -32,8 +32,8 @@ from strutils import (
   yt_url_to_id_re,
   file_info,
   radio_dial,
-  system_open,
 )
+from executils import system_open
 import json
 import re
 import inspect
@@ -84,7 +84,7 @@ atexit.register(gcache.close)
 
 OLD_VERSIONS_FOLDER_ID = "1LBHbz_2prpqqrb_TQxRhuqNTrU9CIZga"
 YOUTUBE_METADATA_FOLDER_ID = "18bydIKjpNBX2FWeCuazoNuY-OzEulQzm"
-
+REJECTS_FOLDER_ID = "11QbqLv2OT_ipe6cUJBoS6CPCrm7NfFTD"
 
 def FOLDERS_DATA() -> dict[str, dict[str, str]]:
   mtime = FOLDERS_DATA_FILE.stat().st_mtime_ns

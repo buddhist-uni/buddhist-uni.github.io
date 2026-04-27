@@ -7,11 +7,11 @@ with yaspin(text="Initializing..."):
   from strutils import (
     Path,
     git_root_folder,
-    system_open,
     md5,
     file_info,
     input_with_prefill,
   )
+  from executils import system_open
   from argparse import (
     ArgumentParser,
     BooleanOptionalAction,

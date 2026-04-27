@@ -7,10 +7,9 @@ from yaspin import yaspin
 import website
 from strutils import (
   FileSyncedSet,
-  system_open,
   input_list,
-  radio_dial
 )
+from executils import system_open
 
 togothrough = FileSyncedSet(os.path.expanduser("~/contentitemstoreview.txt"))
 

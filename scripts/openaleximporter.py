@@ -21,8 +21,8 @@ from strutils import (
    invert_inverted_index,
    authorstr,
    text_from_index,
-   system_open,
 )
+from executils import system_open
 from downloadutils import (
    HOSTNAME_BLACKLIST,
 )

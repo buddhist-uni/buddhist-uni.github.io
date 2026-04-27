@@ -15,7 +15,7 @@ import re
 from functools import cache
 try:
   from yaspin import yaspin
-  from tqdm import tqdm
+  from tqdm import tqdm, trange
   from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
   from google.auth.transport.requests import Request, AuthorizedSession
   from google.oauth2.credentials import Credentials
@@ -87,7 +87,7 @@ def link_to_id(link):
     return ret.groups()[0]
   return None
 
-def folderlink_to_id(link):
+def folderlink_to_id(link) -> str | None:
   if not link:
     return None
   if link.startswith(FOLDER_LINK_PREFIX):
@@ -631,7 +631,8 @@ def share_drive_file_with_everyone(file_id: str):
 def batch_get_files_by_id(IDs: list, fields: str):
   ret = []
   if len(IDs) > 100:
-    for i in range(0, len(IDs), 100):
+    print(f"Fetching {len(IDs)} files in batches of 100...")
+    for i in trange(0, len(IDs), 100):
       ret.extend(batch_get_files_by_id(IDs[i:i+100],fields))
     return ret
   def _getter_callback(rid, resp, error):

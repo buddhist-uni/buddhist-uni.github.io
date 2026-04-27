@@ -1,24 +1,23 @@
 #!/bin/python3
 
-import traceback
-from collections.abc import Collection, Iterable
-from collections import OrderedDict
+from collections.abc import Collection
+from collections import OrderedDict, deque
 import random
 from mimetypes import guess_extension
 from pathlib import Path
-from typing import Callable, Optional, Any
+from typing import Callable, Optional
 from tqdm import tqdm
-from tqdm.contrib.concurrent import thread_map as tqdm_thread_map
 import gdrive_base
 import gdrive
 import shutil
 from strutils import (
   md5,
 )
+from executils import graceful_threadmap
 from yaspin import yaspin
-import signal
-import queue
 import googleapiclient.errors as gerrors
+from bulk_import import BULK_PDF_FOLDER_NAMES, BulkPDFType
+import website
 
 def query_cache(sql: str, variables: tuple=tuple()) -> list[dict]:
   """Performs a query, filtering out shortcuts and shuffling the results"""
@@ -34,6 +33,14 @@ def query_my_cache(sql: str='', variables: tuple=tuple()) -> list[dict]:
     "owner = 1" + (f" AND {sql}" if sql else ''),
     variables,
   )
+
+def query_parent_name(parent_name: str) -> list[dict]:
+  ret = gdrive.gcache.parent_sql_query(
+    "parent.name = ?",
+    (parent_name,)
+  )
+  random.shuffle(ret)
+  return ret
 
 class BackupLevel:
   def __init__(self, level: int, name: str, description: str, finder: Optional[Callable[[], list[dict]]] = None):
@@ -63,9 +70,116 @@ def backup_level(level: int, name: str, description: str):
   return decorator
 
 add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
+
+# @backup_level(1, "lone published", "Non-video files included but without a website source")
+
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
+
+@backup_level(33, 'to go throughs', "openaccess content I've marked as next up to consider")
+def find_to_go_through_files() -> list[dict]:
+  ret = query_my_cache("parent_id = ?", ('1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2',))
+  ret.extend(query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.TO_GO_THROUGH]))
+  return ret
+
+@backup_level(54, 'eks', "The Ezra Klein Show Archive")
+def find_eks_files() -> list[str]:
+  return gdrive.gcache.parent_sql_query(
+    "parent.parent_id = '1_HQsNoi2teB7SzbFX7vMniL01ZGttHuF'"
+  )
+
+@backup_level(57, "academia.edu", "unsorted PDFs from Academia.edu")
+def find_academia_edu_pdfs() -> list[dict]:
+  return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.ACADEMIA_EDU])
+
 add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
+
+@backup_level(66, 'core api pdfs', "The PDFs pulled from CORE yet unsorted")
+def find_unsorted_core_pdfs() -> list[dict]:
+  return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.CORE_API])
+
+@backup_level(72, 'rejects', "Saves files actively rejected from the library")
+def find_rejected_files() -> list[dict]:
+  return query_my_cache("parent_id = ?", (gdrive.REJECTS_FOLDER_ID,))
+
+@backup_level(78, "all OBU files", "Attempts to save every descendant of the library roots")
+def find_all_obu_files(filter_fn: Callable[[dict], bool]=None) -> list[dict]:
+  ret = []
+  folders_data = gdrive.FOLDERS_DATA()
+  folders = deque([
+    gdrive.folderlink_to_id(folders_data['root']['public']),
+    gdrive.folderlink_to_id(folders_data['root']['private']),
+  ])
+  seen_folders = set()
+  seen_files = set()
+  while folders:
+    folder_id = folders.popleft()
+    if not folder_id or folder_id in seen_folders:
+      continue
+    seen_folders.add(folder_id)
+    this_ret = []
+    children = gdrive.gcache.get_children(folder_id)
+    for child in children:
+      if child['mimeType'] == 'application/vnd.google-apps.folder':
+        if child['name'] not in BULK_PDF_FOLDER_NAMES.values():
+          folders.append(child['id'])
+        continue
+      if child.get('shortcutDetails'):
+        if child['shortcutDetails']['targetId'] in seen_files:
+          continue
+        child = gdrive.gcache.get_item(child['shortcutDetails']['targetId'])
+        if not child:
+          continue
+      else:
+        if child['id'] in seen_files:
+          continue
+      seen_files.add(child['id'])
+      if not filter_fn or filter_fn(child):
+        this_ret.append(child)
+    random.shuffle(this_ret)
+    ret.extend(this_ret)
+  return ret
+
+@backup_level(39, "obu pdfs", "All PDFs in the OBU hierarchy")
+def find_all_obu_pdfs() -> list[dict]:
+  return find_all_obu_files(lambda f: f['mimeType'] == 'application/pdf')
+
+@backup_level(40, "one offs", "A few docs not elsewhere covered")
+def list_one_off_docs() -> list[dict]:
+  return [
+    gdrive.gcache.get_item(fid) for fid in [
+      '1NNlHLr928Mb-NRiJKjZxdwTrsYY7cSZdR_3KulvjiYA',
+      '1Yi6evYG0NsdYzVBO7o8XrCIHo3dApJ4DmlXraerzZFw',
+    ]
+  ]
+
+@backup_level(45, "obu docs", "All epubs and other text document types")
+def find_all_obu_text_docs() -> list[dict]:
+  DOC_EXTS = {
+    'epub',
+    'docx',
+    'doc',
+    'txt',
+    'odt',
+    'mobi',
+    'xlsx',
+    'azw',
+    'azw3',
+    'kfx',
+    'rtf',
+    'fb2',
+    'djvu',
+    'cbz',
+    'html',
+    'csv',
+    'tsv',
+    'md',
+  }
+  return find_all_obu_files(lambda f: f['name'].split('.')[-1].lower() in DOC_EXTS)
+
+@backup_level(51, "obu audio", "All audio files in the OBU library")
+def find_all_obu_audio_files() -> list[dict]:
+  return find_all_obu_files(lambda f: f['mimeType'].startswith('audio'))
 
 @backup_level(84, "google docs and sheets", "My manually created docs")
 def find_manual_docs() -> list[dict]:
@@ -114,17 +228,13 @@ def find_all_my_files() -> list[dict]:
 def find_all_shared_files() -> list[dict]:
   return query_cache("owner > 1")
 
-
-_STOP_EXCEPTIONS = queue.Queue()
-def capture_sigint(sig, frame):
-  _STOP_EXCEPTIONS.put(KeyboardInterrupt())
-  print("\n\033[1mCtrl+C detected.\033[0m Finishing current downloads and will then exit...")
 def download_file_to_cache(file: dict, verbose=True) -> str | None:
-  if not _STOP_EXCEPTIONS.empty():
-    return None # stop working when told
-  try:
-    is_gdoc = file.get('mimeType') == 'application/vnd.google-apps.document'
-    is_gsheet = file.get('mimeType') == 'application/vnd.google-apps.spreadsheet'
+    """Will try its best, following shortcuts, exporting docs, etc."""
+    if file['mimeType'] == 'application/vnd.google-apps.shortcut':
+      file = gdrive.gcache.get_item(file['shortcutDetails']['targetId'])
+
+    is_gdoc = file['mimeType'] == 'application/vnd.google-apps.document'
+    is_gsheet = file['mimeType'] == 'application/vnd.google-apps.spreadsheet'
     if is_gdoc or is_gsheet:
       hashval = md5(file['id'] + str(file['version']))
     else:
@@ -177,59 +287,58 @@ def download_file_to_cache(file: dict, verbose=True) -> str | None:
     if verbose:
       print(f"  Saved to {target_path.parent.name}/{target_path.name}")
     return str(target_path)
-  except Exception as e:
-    _STOP_EXCEPTIONS.put(e)
-    import traceback
-    print(f"Unhandled exception downloading {file['id']}: {e}")
-    traceback.print_exc()
-    return None
 
-def run_backup_level(level: BackupLevel, parallelism=6):
+def run_backup_level(level: BackupLevel, parallelism=14):
   print(f"Starting backup level {level.level} ({level.name})...")
   with yaspin(text="Identifying files..."):
     files = level.find_files()
-  try:
-    old_handler = signal.signal(signal.SIGINT, capture_sigint)
-  except ValueError:
-    old_handler = None
-  try:
-    tqdm_thread_map(download_file_to_cache, files, unit='f', max_workers=parallelism, chunksize=1)
-  finally:
-    if old_handler:
-      signal.signal(signal.SIGINT, old_handler)
-    if not _STOP_EXCEPTIONS.empty():
-      raise _STOP_EXCEPTIONS.get()
+  graceful_threadmap(download_file_to_cache, files, unit='f', max_workers=parallelism)
   print(f"Done backing up to level {level.level}!")
 
-def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool):
+def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: bool, check: bool):
   """moves (or copies, if not `move`) `file` into `cache_dir`
   
   If the file doesn't exist in `gdrive.gcache` then it's uploaded to `parent_folder` (else skipped)"""
   assert cache_dir.is_dir()
   hashval = md5(file)
-  remote_files = gdrive.gcache.get_items_with_md5(hashval)
-  if not remote_files:
+  target_path = gdrive.gcache.get_cache_path_for_md5(hashval)
+  if not target_path:
     if not parent_folder:
       print(f"WARNING: Skipping untracked file {file}")
       return
     newid = gdrive.gcache.upload_file(file, folder_id=parent_folder)
-    remote_files = [gdrive.gcache.get_item(newid)]
-  target_path = cache_dir / hashval[:2] / f"{hashval[2:]}{file.suffix.lower()}"
+    target_path = gdrive.gcache.get_cache_path_for_md5(hashval)
+    assert target_path is not None
+  assert target_path.suffix == file.suffix.lower(), f"How did we get a different extension {target_path.suffix} for {file}?"
+  is_in_trash = target_path.parent.parent.parent.name == 'trash'
+  if is_in_trash:
+    if target_path.exists() and md5(target_path) != hashval:
+      new_path = target_path.with_stem(file.stem)
+      if new_path.exists() and md5(new_path) != hashval:
+        raise FileExistsError(f"{new_path} also exists with a different file. Idk what to do now")
+      target_path = new_path
+    print(f"WARNING: File was trashed. Placing in {target_path}")
   if target_path.exists():
-    if md5(target_path) == hashval:
+    if not check or md5(target_path) == hashval:
       if move:
         file.unlink()
       return
-    print(f"WARNING: Overwriting old, corrupted {target_path}")
+    print(f"Found corrupted: {target_path}")
     target_path.unlink()
-  target_path.parent.mkdir(exist_ok=True)
+  target_path.parent.mkdir(exist_ok=True, parents=is_in_trash)
   if move:
     file.rename(target_path)
   else:
     shutil.copy2(file, target_path)
 
 
-def sideload_main(files: Collection[Path], parent_folder: str | None = None, move: bool = True):
+def sideload_main(
+  files: Collection[Path],
+  parent_folder: str | None = None,
+  move: bool = True,
+  recurse: bool = False,
+  check: bool = False,
+):
   if parent_folder:
     if parent_folder.startswith(gdrive.FOLDER_LINK_PREFIX):
       parent_folder = gdrive.folderlink_to_id(parent_folder)
@@ -238,17 +347,23 @@ def sideload_main(files: Collection[Path], parent_folder: str | None = None, mov
       raise ValueError(f"Folder with ID {parent_folder} not found")
     if folder['mimeType'] != 'application/vnd.google-apps.folder':
       raise ValueError(f"{parent_folder} is not a Google Drive Folder, but a {folder['mimeType']}")
+  to_remove = set()
+  for file in files:
+    if not file.exists():
+      raise FileNotFoundError(file)
+    if file.is_dir():
+      if not recurse:
+        raise ValueError(f"{file} is a directory! Please specify files or use -r")
+      to_remove.add(file)
+      for child in file.iterdir():
+        files.append(child)
+  files = [f for f in files if f not in to_remove]
   if len(files) > 100:
     file_iter = tqdm(files)
   else:
     file_iter = iter(files)
   for file in file_iter:
-    if not file.exists():
-      print(f"WARNING: {file} does not exist!")
-      continue
-    if file.is_dir():
-      raise ValueError(f"{file} is a directory! Please only specify specific files")
-    sideload_file(file, gdrive.gcache.file_cache_dir, parent_folder, move)
+    sideload_file(file, gdrive.gcache.file_cache_dir, parent_folder, move, check)
 
 def get_saved_backup_level() -> int | None:
   with gdrive.gcache._lock:
@@ -267,6 +382,29 @@ def save_backup_level(level: int):
     )
     gdrive.gcache.conn.commit()
 
+def backup_main(new_max_level: int | None=None, parallelism: int=0):
+  import sys
+  if new_max_level is not None:
+    save_backup_level(new_max_level)
+    max_level = new_max_level
+  else:
+    max_level = get_saved_backup_level()
+    if max_level is None:
+      print("ERROR: No backup level supplied and no previous level found in the database. Please provide a --level.", file=sys.stderr)
+      sys.exit(1)
+  if max_level == 0:
+    print('The cache is set to "cach only" mode. Nothing further to do.')
+    sys.exit(0)
+  print(f"Will now back up GDrive to a level {max_level}")
+  for level in BACKUP_LEVELS.values():
+    if not level.finder:
+      continue
+    if level.level > max_level:
+      break
+    if parallelism < 1:
+      parallelism = 14
+    run_backup_level(level, parallelism=parallelism)
+  print(f"All files with priority <= {max_level} are now saved locally!")
 
 if __name__ == "__main__":
     import argparse
@@ -297,6 +435,13 @@ if __name__ == "__main__":
       action="store_true",
       help="List all available backup levels and exit",
     )
+    backup.add_argument(
+      "--threads", "-t",
+      required=False,
+      default=0,
+      type=int,
+      help="How many files to download at the same time",
+    )
 
     sideload = subparsers.add_parser("sideload", help="Sideload files to the cache")
     sideload.add_argument("files", nargs="+", help="Files to sideload", type=Path)
@@ -314,6 +459,18 @@ if __name__ == "__main__":
         help="Copy files in (default: move)",
         default=False,
     )
+    sideload.add_argument(
+      "--recursive", "-r",
+      action="store_true",
+      help="Allow sideload to crawl directories",
+      default=False,
+    )
+    sideload.add_argument(
+      '--replace', '-f',
+      action="store_true",
+      default=False,
+      help="Don't assume the existing cache files are good",
+    )
 
     args = parser.parse_args()
 
@@ -321,7 +478,7 @@ if __name__ == "__main__":
       gdrive.gcache.set_file_cache_dir()
 
     if args.command == "sideload":
-      sideload_main(args.files, args.parent_folder, move=(not args.copy))
+      sideload_main(args.files, args.parent_folder, move=(not args.copy), recurse=args.recursive, check=args.replace)
     elif args.command == "backup":
       if args.list_levels:
         print("Available Backup Levels:")
@@ -331,24 +488,6 @@ if __name__ == "__main__":
             else:
                 print(f"  {lvl:3d}: {bl.name:<15} - {bl.description}")
       else:
-        import sys
-        if args.level is not None:
-          save_backup_level(args.level)
-        else:
-          args.level = get_saved_backup_level()
-          if args.level is None:
-            print("ERROR: No backup level supplied and no previous level found in the database. Please provide a --level.", file=sys.stderr)
-            sys.exit(1)
-        if args.level == 0:
-          print('The cache is set to "cach only" mode. Nothing further to do.')
-          sys.exit(0)
-        print(f"Will now back up GDrive to a level {args.level}")
-        for level in BACKUP_LEVELS.values():
-          if not level.finder:
-            continue
-          if level.level > args.level:
-            break
-          run_backup_level(level)
-        print(f"All files with priority <= {args.level} are now saved locally!")
+        backup_main(new_max_level=args.level, parallelism=args.threads)
     else:
       parser.print_help()

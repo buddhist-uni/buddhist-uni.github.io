@@ -14,8 +14,8 @@ from strutils import (
   trunc,
   title_case,
   whitespace,
-  DummyYaspin,
 )
+from executils import DummyYaspin
 try:
   from yaspin import yaspin
   from tqdm import tqdm
