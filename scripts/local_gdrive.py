@@ -613,7 +613,7 @@ class DriveCache:
         )
 
     @locked
-    def get_subfolders(self, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
+    def get_subfolders(self: DriveCache, parent_id: str, include_shortcuts=True) -> List[Dict[str, Any]]:
         """
         Returns immediate subfolders under parent_id
         
