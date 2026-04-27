@@ -2,6 +2,7 @@
 
 from urllib import parse as url
 from collections import deque
+from math import floor, ceil
 from pathlib import Path
 import os
 import json
@@ -9,8 +10,6 @@ import shutil
 from strutils import (
    whitespace,
    trunc,
-   floor,
-   ceil,
    prompt,
    title_case,
    input_with_prefill,
