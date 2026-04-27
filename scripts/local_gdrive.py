@@ -377,7 +377,7 @@ class DriveCache:
         if not changes_page:
             return self.refill_all_data()
         original_changes_page = changes_page['value']
-        with yaspin(text="Pulling latest data from GDrive...") as ys:
+        with yaspin(text="Asking Drive which files have new data...") as ys:
             changes_page = changes_page['value']
             file_ids_to_fetch = set()
             file_ids_removed = {} # map id -> time
@@ -405,9 +405,11 @@ class DriveCache:
                 self._move_to_trash(fileId, trashed_time=time)
         file_ids_to_fetch = list(file_ids_to_fetch - set(file_ids_removed.keys()))
         if len(file_ids_to_fetch):
-            all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
-            for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
-                self._upsert_item(item)
+            with yaspin(text="Fetching file metadata..."):
+                all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
+            with yaspin(text="Processing..."):
+                for item in all_items:
+                    self._upsert_item(item)
         if original_changes_page != changes_page:
             with yaspin(text="Saving GDrive Cache..."):
                 with self._lock:
