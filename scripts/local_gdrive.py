@@ -5,6 +5,7 @@ import sqlite3
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Callable, TypedDict, TypeVar, ParamSpec, Concatenate
 from time import sleep
+from mimetypes import guess_extension
 
 import gdrive_base
 
@@ -171,6 +172,12 @@ class DriveCache:
         self.cursor.execute(create_trashed_items_sql)
         self.cursor.execute(create_properties_table_sql)
         self.cursor.executescript(create_index_sql)
+
+        try:
+            self.cursor.execute(f"ALTER TABLE trashed_drive_items ADD COLUMN trashed_time TEXT")
+        except sqlite3.OperationalError:
+            pass # Already exists
+
         self.conn.commit()
     
     def _prompt_for_file_cache_dir(self) -> Path:
@@ -373,7 +380,7 @@ class DriveCache:
         with yaspin(text="Pulling latest data from GDrive...") as ys:
             changes_page = changes_page['value']
             file_ids_to_fetch = set()
-            file_ids_removed = set()
+            file_ids_removed = {} # map id -> time
             while True:
                 changelist = gdrive_base.session().changes().list(includeRemoved=True, restrictToMyDrive=False, pageToken=changes_page, pageSize=1000).execute()
                 for change in changelist['changes']:
@@ -385,7 +392,7 @@ class DriveCache:
                           file = self.get_trashed_item(change['fileId'])
                           if file:
                             print(f"Trashed item was permanently deleted: \"{file['name']}\"")
-                        file_ids_removed.add(change['fileId'])
+                        file_ids_removed[change['fileId']] = change.get('time')
                     else:
                         file_ids_to_fetch.add(change['fileId'])
                 if 'nextPageToken' in changelist: # nextPageToken signals there is more to fetch
@@ -394,9 +401,9 @@ class DriveCache:
                 changes_page = changelist['newStartPageToken'] # newStartPageToken says come back later for more
                 break
         if len(file_ids_removed):
-            for fileId in file_ids_removed:
-                self._move_to_trash(fileId)
-        file_ids_to_fetch = list(file_ids_to_fetch - file_ids_removed)
+            for fileId, time in file_ids_removed.items():
+                self._move_to_trash(fileId, trashed_time=time)
+        file_ids_to_fetch = list(file_ids_to_fetch - set(file_ids_removed.keys()))
         if len(file_ids_to_fetch):
             all_items = gdrive_base.batch_get_files_by_id(file_ids_to_fetch, FILE_FIELDS)
             for item in tqdm(all_items, total=len(file_ids_to_fetch), desc="Fetching updated files"):
@@ -683,6 +690,25 @@ class DriveCache:
         self.cursor.execute(sql)
         return [row['md5_checksum'] for row in self.cursor.fetchall()]
 
+    def get_cache_path_for_md5(self, hashval: str) -> Path | None:
+        """Returns None if the hashval is unknown to me"""
+        assert len(hashval) == 32
+        remote_files = self.get_items_with_md5(hashval)
+        if not remote_files:
+            remote_files = self.get_trashed_items_with_md5(hashval)
+            if remote_files:
+                rm_date = max(f['trashed_time'] or f['modifiedTime'] for f in remote_files)
+                rm_date = datetime.fromisoformat(rm_date)
+                return self.file_cache_dir / 'trash' / str(rm_date.year) / f"{rm_date.month:02d}" / remote_files[0]['name']
+            return None
+        file = remote_files[0]
+        extension = ''
+        if '.' in file['name']:
+            extension = '.' + str(file['name']).split('.')[-1].lower()
+        if len(extension) < 1 or len(extension) > 6:
+            extension = guess_extension(file['mimeType']) or ''
+        return self.file_cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
+
     ########
     # Write-through Functions
     #
@@ -701,13 +727,25 @@ class DriveCache:
 
         gdrive_base.trash_drive_file(file_id)
         with self._lock:
-            self._move_to_trash(file_id)
+            self._move_to_trash(file_id, trashed_time=UTC_NOW())
             self.conn.commit()
 
     @locked
-    def _move_to_trash(self, file_id: str):
+    def _move_to_trash(self, file_id: str, trashed_time: str = None):
+        # If we get a removal event from the API for a file already in the trash,
+        # only add the timestamp to the trash table if the item had a NULL trashed time before.
+        self.cursor.execute("SELECT trashed_time FROM trashed_drive_items WHERE id = ?", (file_id,))
+        row = self.cursor.fetchone()
+        if row:
+            if trashed_time and row['trashed_time'] is None:
+                self.cursor.execute("UPDATE trashed_drive_items SET trashed_time = ? WHERE id = ?", (trashed_time, file_id))
+            return
+
         self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
+
+        if trashed_time:
+            self.cursor.execute("UPDATE trashed_drive_items SET trashed_time = ? WHERE id = ?", (trashed_time, file_id))
 
     def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
         folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
