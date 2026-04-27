@@ -329,7 +329,7 @@ describe('normalizeSuttaTitles', () => {
     assert.equal(result[0].title, 'upasakasutra');
   });
 
-  it('tests that it can parse a lal sutra', () => {
+  it('can parse a lal sutra', () => {
     const mockStore = {
       id1: {
         title: 'Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling',
