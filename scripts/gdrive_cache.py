@@ -120,7 +120,6 @@ def get_folders_of_types_for_tag(tag: website.TagFile, include_folders: Collecti
             ret.append(sf)
   return ret
 
-@backup_level(1, "lone published", "Non-av files in tags without a source")
 def find_unlinked_tag_content(
   include_folders: set[TagFolderTypes]={
     TagFolderTypes.PUBLIC,
@@ -154,6 +153,14 @@ def find_unlinked_tag_content(
     random.shuffle(all_files)
     ret.extend(all_files)
   return ret
+
+@backup_level(1, "lone published", "Non-av files in tags without a source")
+def first_priorities() -> list[dict]:
+  return find_unlinked_tag_content()
+
+@backup_level(8, "unread docs", "All non-av files in tag unread folders")
+def find_unread_doc_files() -> list[dict]:
+  return find_unlinked_tag_content(include_folders={TagFolderTypes.UNREAD})
 
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
