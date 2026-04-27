@@ -1,4 +1,5 @@
 
+from typing import Iterator
 from typing import Any
 import subprocess
 import json
@@ -93,7 +94,7 @@ class TagCollection():
 
   def get(self, tag: str):
     return self.tags.get(tag)
-  def __iter__(self):
+  def __iter__(self) -> Iterator[TagFile]:
     for filename in config['collections']['tags']['order']:
       yield self.tags[filename[:-3]]
   def __len__(self):

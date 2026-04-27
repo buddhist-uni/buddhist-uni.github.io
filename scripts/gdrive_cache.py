@@ -1,5 +1,6 @@
 #!/bin/python3
 
+from enum import StrEnum
 from collections.abc import Collection
 from collections import OrderedDict, deque
 import random
@@ -12,6 +13,7 @@ import gdrive
 import shutil
 from strutils import (
   md5,
+  format_size,
 )
 from executils import graceful_threadmap
 from yaspin import yaspin
@@ -71,7 +73,94 @@ def backup_level(level: int, name: str, description: str):
 
 add_backup_level(0,  "Cache Only", "Don't proactively fill the cache at all")
 
-# @backup_level(1, "lone published", "Non-video files included but without a website source")
+class TagFolderTypes(StrEnum):
+  PUBLIC = 'public'
+  PRIVATE = 'private'
+  NONTAG_PUBLIC_SUBS = 'public/*'
+  UNREAD = 'private/unread'
+  ARCHIVE = 'private/archive'
+
+def get_folders_of_types_for_tag(tag: website.TagFile, include_folders: Collection[TagFolderTypes]) -> list[dict]:
+  folder_json = gdrive.FOLDERS_DATA()
+  if tag.slug not in folder_json:
+    return []
+  private_link = folder_json[tag.slug]['private']
+  public_link = folder_json[tag.slug]['public']
+  public_id = gdrive.folderlink_to_id(public_link) if public_link else None
+  private_id = gdrive.folderlink_to_id(private_link) if private_link else None
+  ret = []
+  if private_id:
+    private_subfolders = gdrive.gcache.get_subfolders(
+      parent_id=private_id,
+      include_shortcuts=False,
+    )
+  else:
+    private_subfolders = []
+  for inc_type in set(include_folders):
+    match inc_type:
+      case TagFolderTypes.PUBLIC:
+        if public_id:
+          ret.append(gdrive.gcache.get_item(public_id))
+      case TagFolderTypes.PRIVATE:
+        if private_id:
+          ret.append(gdrive.gcache.get_item(private_id))
+      case TagFolderTypes.NONTAG_PUBLIC_SUBS:
+        if public_id:
+          folderids_to_tag = gdrive.load_folder_slugs()
+          for sf in gdrive.gcache.get_subfolders(parent_id=public_id, include_shortcuts=False):
+            if sf['id'] not in folderids_to_tag:
+              ret.append(sf)
+      case TagFolderTypes.UNREAD:
+        for sf in private_subfolders:
+          if 'unread' in sf['name'].lower():
+            ret.append(sf)
+      case TagFolderTypes.ARCHIVE:
+        for sf in private_subfolders:
+          if sf['name'].lower().startswith('archive'):
+            ret.append(sf)
+  return ret
+
+def find_unlinked_tag_content(
+  include_folders: set[TagFolderTypes]={
+    TagFolderTypes.PUBLIC,
+    TagFolderTypes.NONTAG_PUBLIC_SUBS,
+    TagFolderTypes.PRIVATE,
+  },
+  include_av=False
+) -> list[dict]:
+  ret = []
+  for tag in website.tags:
+    folders = get_folders_of_types_for_tag(tag, include_folders)
+    if not folders:
+      continue
+    nqs = ['?'] * len(folders)
+    nqs = ', '.join(nqs)
+    bad_mime_prefixes = ['application/vnd.google-apps']
+    if not include_av:
+      bad_mime_prefixes.extend([
+        'audio/',
+        'video/',
+        'application/zip',
+      ])
+    bad_mime_prefixes = [
+      f"mime_type LIKE '{prefix}%'"
+      for prefix in bad_mime_prefixes
+    ]
+    all_files = gdrive.gcache.sql_query(
+      f"parent_id IN ({nqs}) AND NOT ({' OR '.join(bad_mime_prefixes)})",
+      tuple(sf['id'] for sf in folders),
+    )
+    random.shuffle(all_files)
+    ret.extend(all_files)
+  return ret
+
+@backup_level(1, "lone published", "Non-av files in tags without a source")
+def first_priorities() -> list[dict]:
+  return find_unlinked_tag_content()
+
+@backup_level(8, "unread docs", "All non-av files in tag unread folders")
+def find_unread_doc_files() -> list[dict]:
+  return find_unlinked_tag_content(include_folders={TagFolderTypes.UNREAD})
 
 add_backup_level(10, "High", "All valuable items in need of backing up")
 add_backup_level(30, "Medium", "All items in active need of backing up")
@@ -92,17 +181,17 @@ def find_eks_files() -> list[str]:
 def find_academia_edu_pdfs() -> list[dict]:
   return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.ACADEMIA_EDU])
 
-add_backup_level(60, "Low", "All valuable items, including those backed up elsewhere")
+add_backup_level(60, "Low", "All valuable items, even backed up elsewhere")
 
-@backup_level(66, 'core api pdfs', "The PDFs pulled from CORE yet unsorted")
+@backup_level(66, 'core api', "The PDFs pulled from CORE yet unsorted")
 def find_unsorted_core_pdfs() -> list[dict]:
   return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.CORE_API])
 
-@backup_level(72, 'rejects', "Saves files actively rejected from the library")
+@backup_level(72, 'rejects', "actively rejected from the library")
 def find_rejected_files() -> list[dict]:
   return query_my_cache("parent_id = ?", (gdrive.REJECTS_FOLDER_ID,))
 
-@backup_level(78, "all OBU files", "Attempts to save every descendant of the library roots")
+@backup_level(78, "all obu files", "every descendant of the library roots")
 def find_all_obu_files(filter_fn: Callable[[dict], bool]=None) -> list[dict]:
   ret = []
   folders_data = gdrive.FOLDERS_DATA()
@@ -148,6 +237,7 @@ def find_all_obu_pdfs() -> list[dict]:
 def list_one_off_docs() -> list[dict]:
   return [
     gdrive.gcache.get_item(fid) for fid in [
+      '1TN6KzqD7-dEwcEJ9cs9qykuUHT_QRMpm7TVD8cT_biU',
       '1NNlHLr928Mb-NRiJKjZxdwTrsYY7cSZdR_3KulvjiYA',
       '1Yi6evYG0NsdYzVBO7o8XrCIHo3dApJ4DmlXraerzZFw',
     ]
@@ -181,7 +271,7 @@ def find_all_obu_text_docs() -> list[dict]:
 def find_all_obu_audio_files() -> list[dict]:
   return find_all_obu_files(lambda f: f['mimeType'].startswith('audio'))
 
-@backup_level(84, "google docs and sheets", "My manually created docs")
+@backup_level(84, "google docs", "My manually created Docs and Sheets")
 def find_manual_docs() -> list[dict]:
   with gdrive.gcache._lock:
     ret = gdrive.gcache.cursor.execute(
@@ -202,21 +292,21 @@ def find_manual_docs() -> list[dict]:
   random.shuffle(ret)
   return ret
 
-@backup_level(90, "youtube metadata", "JSON Files pulled from the YouTube API")
+@backup_level(90, "youtube", "JSON Files pulled from the YouTube API")
 def find_youtube_metadata() -> list[dict]:
   return query_my_cache("parent_id = ?", (gdrive.YOUTUBE_METADATA_FOLDER_ID,))
 
 add_backup_level(100, "Comprehensive", "All reasonable items")
 
-@backup_level(106, 'old versions', 'download the old versions slated for deletion anyway')
+@backup_level(106, 'old versions', 'slated for eventual deletion anyway')
 def find_old_versions() ->  list[dict]:
   return query_my_cache("parent_id = ?", (gdrive.OLD_VERSIONS_FOLDER_ID,))
 
-@backup_level(112, "google docs", "All Google Docs, including the autogenerated ones")
+@backup_level(112, "google docs", "All GDocs, including the autogenerated ones")
 def find_all_gdocs() -> list[dict]:
   return query_my_cache("mime_type = ?", ('application/vnd.google-apps.document',))
 
-@backup_level(118, "pkl files", "All files ending in .pkl (usually these are cached in NORMALIZED_TEXT_FOLDER)")
+@backup_level(118, "pkl files", "All files ending in .pkl (e.g. NORMALIZED_TEXT_FOLDER)")
 def find_all_pkl_files() -> list[dict]:
   return query_my_cache("name LIKE '%.pkl'")
 
@@ -231,7 +321,11 @@ def find_all_shared_files() -> list[dict]:
 def download_file_to_cache(file: dict, verbose=True) -> str | None:
     """Will try its best, following shortcuts, exporting docs, etc."""
     if file['mimeType'] == 'application/vnd.google-apps.shortcut':
-      file = gdrive.gcache.get_item(file['shortcutDetails']['targetId'])
+      tfile = gdrive.gcache.get_item(file['shortcutDetails']['targetId'])
+      if not tfile:
+        print(f"WARNING: Skipping dangling shortcut \"{file['name']}\" in {file['parent_id']}")
+        return None
+      file = tfile
 
     is_gdoc = file['mimeType'] == 'application/vnd.google-apps.document'
     is_gsheet = file['mimeType'] == 'application/vnd.google-apps.spreadsheet'
@@ -256,7 +350,8 @@ def download_file_to_cache(file: dict, verbose=True) -> str | None:
     assert isinstance(cache_dir, Path)
     target_path = cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
     if target_path.exists():
-      print(f"  Skipping already downloaded {file['name']}")
+      if verbose:
+        print(f"  Skipping already downloaded {file['name']}")
       return str(target_path)
     target_path.parent.mkdir(exist_ok=True)
     if verbose:
@@ -358,7 +453,7 @@ def sideload_main(
       for child in file.iterdir():
         files.append(child)
   files = [f for f in files if f not in to_remove]
-  if len(files) > 100:
+  if len(files) > 1:
     file_iter = tqdm(files)
   else:
     file_iter = iter(files)
@@ -405,6 +500,38 @@ def backup_main(new_max_level: int | None=None, parallelism: int=0):
       parallelism = 14
     run_backup_level(level, parallelism=parallelism)
   print(f"All files with priority <= {max_level} are now saved locally!")
+
+def print_backup_levels_list():
+  print("\033[1mGoogle Drive Backup Levels\033[0m")
+  print(
+"""
+Backing up to a level 'n' includes all levels < n, so each level includes the levels above it in the chart below.
+
+The bold levels are semantic breakpoints which add no content themselves. You're encouraged to pick one of these levels but are welcome to pick any integer you like between 0 and 127. If new levels are added in the future, they'll be added in between the existing levels at the appropriate priority.
+
+The current backup levels are as follows:
+"""
+  )
+  seen_file_ids = set()
+  cum_sum_size = 0
+
+  print(f"\033[4m  Lvl: {'Level Name':<16}{'Est. Size':>9} - {'Description'}\033[0m")
+  for lvl, bl in BACKUP_LEVELS.items():
+    if bl.finder is None:
+      print(f"\033[1m  {lvl:3d}: {'^'+bl.name+'^':<16}{"\"" if bl.level else "0 B":^9} - {bl.description}\033[0m")
+    else:
+      files = bl.finder()
+      this_level_inc_size = 0
+      this_level_overlap_size = 0
+      while files:
+        file = files.pop()
+        if file['id'] in seen_file_ids:
+          this_level_overlap_size += file['size']
+        else:
+          this_level_inc_size += file['size']
+          seen_file_ids.add(file['id'])
+      cum_sum_size += this_level_inc_size
+      print(f"  {lvl:3d}: {bl.name:<16}{format_size(cum_sum_size):>9} - {bl.description}")
 
 if __name__ == "__main__":
     import argparse
@@ -480,13 +607,18 @@ if __name__ == "__main__":
     if args.command == "sideload":
       sideload_main(args.files, args.parent_folder, move=(not args.copy), recurse=args.recursive, check=args.replace)
     elif args.command == "backup":
+      with yaspin(text="Loading website data..."):
+        website.load()
+        website.data.linked_ids = set()
+        for item in website.content:
+          if not item.get('external_url') and not item.get('file_links'):
+            continue
+          for drive_link in item.get('drive_links', []):
+            website.data.linked_ids.add(
+              gdrive.link_to_id(drive_link)
+            )
       if args.list_levels:
-        print("Available Backup Levels:")
-        for lvl, bl in BACKUP_LEVELS.items():
-            if bl.finder is None:
-                print(f"\033[1m  {lvl:3d}: {bl.name:<15} - {bl.description}\033[0m")
-            else:
-                print(f"  {lvl:3d}: {bl.name:<15} - {bl.description}")
+        print_backup_levels_list()
       else:
         backup_main(new_max_level=args.level, parallelism=args.threads)
     else:
