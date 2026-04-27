@@ -69,6 +69,8 @@ vm.runInContext(
   'this.resultMatched = resultMatched;\n' +
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
+  'this.normalizeSuttaTitles = normalizeSuttaTitles;\n' +
+  'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -76,7 +78,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -293,6 +295,128 @@ describe('getBlurbForResult', () => {
     assert.ok(!blurb.includes('IGNORE'), 'Expected blurb to NOT contain IGNORE');
     assert.ok(blurb.includes('MATCH'), 'Expected blurb to contain MATCH');
     assert.ok(blurb.includes('INSTEAD'), 'Expected blurb to contain INSTEAD');
+  });
+});
+
+// ── normalizeSuttaTitles ─────────────────────────────────────────────
+describe('normalizeSuttaTitles', () => {
+
+  it('returns an array of database objects with a new normalized title', () => {
+    const mockStore = {
+      id1: {
+        title: 'MN 35 Cūḷa Saccaka Sutta: The Shorter Discourse With Saccaka',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'culasaccakasutta');
+  });
+
+  it('remove words after sutta. Also handles sutra', () => {
+    const mockStore = {
+      id1: {
+        title: 'MA 128 Upasaka Sutra: Discourse on the White-Clad Disciple',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'upasakasutra');
+  });
+
+  it('can parse a lal sutra', () => {
+    const mockStore = {
+      id1: {
+        title: 'Lal 26 Dharmacakrapravartana Sūtra: The Discourse that Set the Dharma-Wheel Rolling',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'dharmacakrapravartanasutra');
+  });
+
+  it('can parse Therigathas', () => {
+    const mockStore = {
+      id1: {
+        title: "Thig 3.8 Somā Therīgāthā: Somā's Verses",
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const mockStore2 = {
+      id1: {
+        title: "Thag 1.7 Bhalliya Theragāthā: Bhalliya's Verse",
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result2 = normalizeSuttaTitles(mockStore2);
+    assert.equal(result2.length, 1);
+    assert.equal(result2[0].ref, 'id1');
+    assert.equal(result2[0].title, 'bhalliyatheragatha');
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'somatherigatha');
+  });
+
+  it('handles "the" and removes it from a string if it appears at the beginning', () => {
+    const mockStore = {
+      id1: {
+        title: 'DN 22 The Mahāsatipaṭṭhāna Sutta: The Long Discourse about the Ways of Attending to Mindfulness',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 1);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'mahasatipatthanasutta');
+  });
+
+  it('filters out objects with types that are not equal to content', () => {
+    const mockStore = {
+      id1: {
+        title: 'MN 3 Dhammadāyāda Sutta: Heirs in the Teaching',
+        type: 'content',
+        category: 'av'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 0);
+  });
+
+  it('filters out objects where titles do not include sutta, sutra, or gatha', () => {
+    const mockStore = {
+      id1: {
+        title: 'The Hairy Spider Climbed Up The Waterspout: A day in the life Part 3 ',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = normalizeSuttaTitles(mockStore);
+    assert.equal(result.length, 0);
+  });
+
+
+});
+
+// ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
+describe('findOneWordSuttaTitleMatches', () => {
+  it('returns matched item when query matches title exactly', () => {
+    const mockStore = {
+      'id1': { title: 'culasaccakasutta', type: 'content', category: 'canon' }
+    };
+    const result = findOneWordSuttaTitleMatches('culasaccakasutta', mockStore);
+    assert.equal(toLocal(result).length, 1);
   });
 });
 

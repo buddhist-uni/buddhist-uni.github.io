@@ -1,6 +1,27 @@
 // Parameters
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
+var joinedTitles = []
+
+function normalizeSuttaTitles (obj) {
+  var joinedTitleDatabase = []
+
+  for (var i in obj){
+    const item = obj[i];
+    if (!item || item.type !== "content" || item.category !== "canon") continue;
+    const title = item.title || "";
+      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
+      if(removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
+        joinedTitleDatabase.push({
+          ref: i,
+          title: removedTheOnJoin,
+          matchData: { metadata: {} }
+      });
+    }
+  }
+  return joinedTitleDatabase;
+}
 
 function getPositions(result, field) {
     var positions = [];
@@ -169,10 +190,27 @@ function displaySearchResults(results) {
     }
 }
 
+function findOneWordSuttaTitleMatches(query, joinedTitles) {
+  var tokenResults = [];
+  const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  for (var i in joinedTitles){
+    const item = joinedTitles[i]
+    if(item.title === normalizedQuery){
+      tokenResults.push({
+        ref: item.ref,
+        score: 1,
+        matchData: { metadata: {} }
+      });
+    }
+  }
+  return tokenResults;
+}
+
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
   var words = data.q.trim().split(" ");
+
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
     if (!s.startsWith("+") && !s.startsWith("-") && s.length > 1 && lunr.stopWordFilter(s)) {
@@ -213,10 +251,11 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
+  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
   return {
     "warninghtml": warning,
-    "html": displaySearchResults(results),
-    "count": results ? results.length : 0,
+    "html": displaySearchResults(finalResults),
+    "count": finalResults ? finalResults.length : 0,
     "q": data.q,
     "filterquery": data.filterquery,
     "qt": data.qt
