@@ -469,7 +469,7 @@ class DriveCache:
         return ret
     
     @locked
-    def sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
+    def sql_query(self, query: str, data: tuple=tuple()) -> List[Dict[str, Any]]:
         """
         Directly run a query and return the matching rows.
         
@@ -651,6 +651,12 @@ class DriveCache:
             "parent_id = ? AND shortcut_target IS NULL AND mime_type != ?",
             (parent_id, 'application/vnd.google-apps.folder',)
         )
+    
+    def get_root_my_drive_children(self) -> List[Dict[str, Any]]:
+        return self.sql_query("length(parent_id) = 19")
+    
+    def get_root_shared_with_me_items(self) -> List[Dict[str, Any]]:
+        return self.sql_query("owner > 1 AND parent_id IS NULL")
 
     def search_by_name_containing(self, partial_name: str, additional_filters: str = None, additional_params: tuple = None) -> List[Dict[str, Any]]:
         """
@@ -726,6 +732,8 @@ class DriveCache:
         return self.file_cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
 
     def download_file_to_cache(self, file: dict, verbose: bool=False) -> Path | None:
+        if not self.file_cache_dir:
+            return None
         if file['mimeType'] == 'application/vnd.google-apps.shortcut':
             tfile = self.get_item(file['shortcutDetails']['targetId'])
             if not tfile:

@@ -214,7 +214,7 @@ def find_unread_doc_files() -> list[dict]:
 
 add_backup_level(10, "High", "All valuable items in need of backing up")
 
-@backup_level(12, "site tag avs", "all AV files in website tag folders")
+@backup_level(18, "site tag avs", "all AV files in website tag folders")
 def find_all_tag_content() -> list[dict]:
   ret = []
   for tag in website.tags:
@@ -223,7 +223,7 @@ def find_all_tag_content() -> list[dict]:
     ret.extend(all_files)
   return ret
 
-@backup_level(18, "nonsite unreads", "unread, non-av files in tags below site-level")
+@backup_level(12, "nonsite unreads", "unread, non-av files in tags below site-level")
 def find_nonwebsite_tag_files() -> list[dict]:
   FOLDERS_DATA = gdrive.FOLDERS_DATA()
   folder_slugs = set(FOLDERS_DATA.keys()) - set(gdrive.UNIMPORTANT_SLUGS) - set(tag.slug for tag in website.tags)
