@@ -7,6 +7,7 @@ from typing import List, Dict, Any, Optional, Callable, TypedDict, TypeVar, Para
 from time import sleep
 from mimetypes import guess_extension
 
+import googleapiclient.errors as gerrors
 import gdrive_base
 
 from yaspin import yaspin
@@ -19,6 +20,7 @@ from functools import wraps
 from strutils import (
     input_with_prefill,
     prompt,
+    md5,
 )
 
 def UTC_NOW():
@@ -691,6 +693,81 @@ class DriveCache:
         """
         self.cursor.execute(sql)
         return [row['md5_checksum'] for row in self.cursor.fetchall()]
+    
+    def get_cache_path_for_file(self, file: dict) -> Path | None:
+        """Tells where the file would be. It may or may not be there"""
+        if not isinstance(self.file_cache_dir, Path):
+            return None
+
+        if 'trashed_time' in file:
+            rm_date = file['trashed_time'] or file['modifiedTime']
+            rm_date = datetime.fromisoformat(rm_date)
+            return self.file_cache_dir / 'trash' / str(rm_date.year) / f"{rm_date.month:02d}" / file['name']
+        
+        is_gdoc = file['mimeType'] == 'application/vnd.google-apps.document'
+        is_gsheet = file['mimeType'] == 'application/vnd.google-apps.spreadsheet'
+        if is_gdoc or is_gsheet:
+            hashval = md5(file['id'] + str(file['version']))
+        else:
+            hashval = file.get('md5Checksum')
+        if not isinstance(hashval, str):
+            return None
+        assert len(hashval) == 32
+        
+        if is_gdoc:
+            extension = '.docx'
+        elif is_gsheet:
+            extension = '.xlsx'
+        elif '.' in file.get('name', ''):
+            extension = '.' + str(file['name']).split('.')[-1].lower()
+        else:
+            extension = guess_extension(file['mimeType']) or ''
+
+        return self.file_cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
+
+    def download_file_to_cache(self, file: dict, verbose: bool=False) -> Path | None:
+        if file['mimeType'] == 'application/vnd.google-apps.shortcut':
+            tfile = self.get_item(file['shortcutDetails']['targetId'])
+            if not tfile:
+                print(f"WARNING: Skipping dangling shortcut \"{file['name']}\" in {file['parent_id']}")
+                return None
+            file = tfile
+        target_path = self.get_cache_path_for_file(file)
+        if not target_path:
+            return None
+        if target_path.exists():
+            if verbose:
+                print(f"  Skipping already downloaded {file['name']}")
+            return str(target_path)
+        target_path.parent.mkdir(exist_ok=True)
+        if verbose:
+            print(f"  Downloading {file['name']}")
+        if not file['mimeType'].startswith('application/vnd.google-apps'):
+            try:
+                gdrive_base.download_file(file['id'], target_path, verbose=verbose)
+            except FileNotFoundError as e:
+                if target_path.exists():
+                    # Another thread got this file before us 😅
+                    pass
+                else:
+                    raise e
+        else:
+            try:
+                if file['mimeType'] == 'application/vnd.google-apps.document':
+                    gdrive_base.download_gdoc_as_docx(file['id'], target_path)
+                elif file['mimeType'] == 'application/vnd.google-apps.spreadsheet':
+                    gdrive_base.download_gsheet_as_xlsx(file['id'], target_path)
+            except gerrors.HttpError as e:
+                if "exportSizeLimitExceeded" in str(e):
+                    if verbose:
+                        print(f"  Skipping {file['name']}: it's too large to be exported :(")
+                    return None
+                if "cannot be exported" in str(e):
+                    return None
+                raise e
+        if verbose:
+            print(f"  Saved to {target_path}")
+        return str(target_path)
 
     def get_cache_path_for_md5(self, hashval: str) -> Path | None:
         """Returns None if the hashval is unknown to me"""

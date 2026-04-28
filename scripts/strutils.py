@@ -484,9 +484,9 @@ def format_size(size_in_bytes):
     size_in_bytes /= 1024
     for unit in ['KB', 'MB', 'GB', 'TB']:
         if size_in_bytes < 1000:
-            return f"{size_in_bytes:.2f} {unit}"
+            return f"{size_in_bytes:.1f} {unit}"
         size_in_bytes /= 1024
-    return f"{size_in_bytes:.2f} PB"
+    return f"{size_in_bytes:.1f} PB"
 
 def write_frontmatter_key(path: Path, key: str, value, insert_after_key=None):
   """Takes a markdown file and top-level frontmatter key and sets it to value

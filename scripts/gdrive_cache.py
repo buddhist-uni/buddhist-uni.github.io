@@ -9,7 +9,7 @@ from mimetypes import guess_extension
 from pathlib import Path
 from typing import Callable, Optional
 from tqdm import tqdm
-import gdrive_base
+import sys
 import gdrive
 import shutil
 from strutils import (
@@ -168,7 +168,7 @@ def find_unlinked_tag_content(
 ) -> list[dict]:
   ret = []
   for tag in website.tags:
-    all_files = find_files_for_tag(tag.slug, include_folders)
+    all_files = find_files_for_tag(tag.slug, include_av=include_av, include_folders=include_folders)
     all_files = [
       file for file in all_files
       if file['id'] not in website.data.linked_ids
@@ -426,68 +426,7 @@ def download_file_to_cache(file: dict, verbose=False) -> str | None:
     if file['id'] in SEEN_IDS:
       return None
     SEEN_IDS.add(file['id'])
-    if file['mimeType'] == 'application/vnd.google-apps.shortcut':
-      tfile = gdrive.gcache.get_item(file['shortcutDetails']['targetId'])
-      if not tfile:
-        print(f"WARNING: Skipping dangling shortcut \"{file['name']}\" in {file['parent_id']}")
-        return None
-      file = tfile
-
-    is_gdoc = file['mimeType'] == 'application/vnd.google-apps.document'
-    is_gsheet = file['mimeType'] == 'application/vnd.google-apps.spreadsheet'
-    if is_gdoc or is_gsheet:
-      hashval = md5(file['id'] + str(file['version']))
-    else:
-      hashval = file.get('md5Checksum')
-      if not isinstance(hashval, str):
-        return None
-    assert len(hashval) == 32
-    
-    if is_gdoc:
-      extension = '.docx'
-    elif is_gsheet:
-      extension = '.xlsx'
-    elif '.' in file.get('name', ''):
-      extension = '.' + str(file['name']).split('.')[-1].lower()
-    else:
-      extension = guess_extension(file['mimeType']) or ''
-      
-    cache_dir = gdrive.gcache.file_cache_dir
-    assert isinstance(cache_dir, Path)
-    target_path = cache_dir / hashval[:2] / f"{hashval[2:]}{extension}"
-    if target_path.exists():
-      if verbose:
-        print(f"  Skipping already downloaded {file['name']}")
-      return str(target_path)
-    target_path.parent.mkdir(exist_ok=True)
-    if verbose:
-      print(f"  Downloading {file['name']}")
-    if not (is_gdoc or is_gsheet):
-      try:
-        gdrive_base.download_file(file['id'], target_path, verbose=False)
-      except FileNotFoundError as e:
-        if target_path.exists():
-          # Another thread got this file before us 😅
-          pass
-        else:
-          raise e
-    else:
-      try:
-        if is_gdoc:
-          gdrive_base.download_gdoc_as_docx(file['id'], target_path)
-        elif is_gsheet:
-          gdrive_base.download_gsheet_as_xlsx(file['id'], target_path)
-      except gerrors.HttpError as e:
-        if "exportSizeLimitExceeded" in str(e):
-          if verbose:
-            print(f"  Skipping {file['name']}: it's too large to be exported :(")
-          return None
-        if "cannot be exported" in str(e):
-          return None
-        raise e
-    if verbose:
-      print(f"  Saved to {target_path.parent.name}/{target_path.name}")
-    return str(target_path)
+    return gdrive.gcache.download_file_to_cache(file)
 
 def run_backup_level(level: BackupLevel, parallelism=14):
   print(f"Starting backup level {level.level} ({level.name})...")
@@ -610,7 +549,11 @@ def backup_main(from_level: int=0, new_max_level: int | None=None, parallelism: 
     run_backup_level(level, parallelism=parallelism)
   print(f"All files with priority <= {max_level} are now saved locally!")
 
-def print_backup_levels_list():
+def format_cache_percentage(dl_size: int, total_size: int) -> str:
+  return f"{(float(dl_size)/total_size):.1%} ({format_size(dl_size)}/{format_size(total_size)})"
+
+def print_backup_levels_list(statistics: bool=False):
+  """`statistics` replaces the generic description with current fill level stats"""
   print("\033[1mGoogle Drive Backup Levels\033[0m")
   print(
 """
@@ -623,24 +566,45 @@ The current backup levels are as follows:
   )
   seen_file_ids = set()
   cum_sum_size = 0
+  cum_sum_dl_size = 0
 
-  print(f"\033[4m  Lvl: {'Level Name':<16}{'Est. Size':>9} - {'Description'}\033[0m")
+  if statistics:
+    print(f"\033[4m  Lvl: {'Level Name':<16}{'This Level':^25} {'Cummulative':^24}\033[0m")
+  else:
+    print(f"\033[4m  Lvl: {'Level Name':<16}{'Est. Size':>9} - {'Description'}\033[0m")
   for lvl, bl in BACKUP_LEVELS.items():
     if bl.finder is None:
-      print(f"\033[1m  {lvl:3d}: {'^'+bl.name+'^':<16}{"\"" if bl.level else "0 B":^9} - {bl.description}\033[0m")
+      print(f"\033[1m  {lvl:3d}: {'^'+bl.name+'^':<16}{"\"" if (bl.level or statistics) else "0 B":^9} - {bl.description if not statistics else ''}\033[0m")
     else:
       files = bl.finder()
       this_level_inc_size = 0
       this_level_overlap_size = 0
+      this_level_overlap_dl_size = 0
+      this_level_inc_dl_size = 0
       while files:
         file = files.pop()
+        target_path = gdrive.gcache.get_cache_path_for_file(file)
+        if not target_path:
+          continue
         if file['id'] in seen_file_ids:
           this_level_overlap_size += file['size']
+          if statistics and target_path.exists():
+            this_level_overlap_dl_size += file['size']
         else:
           this_level_inc_size += file['size']
           seen_file_ids.add(file['id'])
+          if statistics and target_path.exists():
+            this_level_inc_dl_size += file['size']
       cum_sum_size += this_level_inc_size
-      print(f"  {lvl:3d}: {bl.name:<16}{format_size(cum_sum_size):>9} - {bl.description}")
+      cum_sum_dl_size += this_level_inc_dl_size
+      if statistics:
+        if this_level_inc_size+this_level_overlap_size > 0:
+          description = f"{format_cache_percentage(this_level_inc_dl_size+this_level_overlap_dl_size, this_level_inc_size+this_level_overlap_size):<25} {format_cache_percentage(cum_sum_dl_size, cum_sum_size):^24}"
+        else:
+          description = f"     [N/A]"
+      else:
+        description = f"{format_size(cum_sum_size):>9} - {bl.description}"
+      print(f"  {lvl:3d}: {bl.name:<16}{description}")
 
 if __name__ == "__main__":
     import argparse
@@ -656,6 +620,14 @@ if __name__ == "__main__":
         if ivalue > 127:
           raise argparse.ArgumentTypeError(f"{ivalue} is too large to be a valid backup level. Use --list-levels to see valid levels and their meaning.")
         return ivalue
+
+    levels = subparsers.add_parser("levels", help="Print information about the backup levels")
+    levels.add_argument(
+      '--stats',
+      action="store_true",
+      default=False,
+      help="Instead of the description, print stats about the cache at each level"
+    )
 
     backup = subparsers.add_parser("backup", help="Download files from Drive to the cache")
     backup.add_argument(
@@ -673,11 +645,6 @@ if __name__ == "__main__":
       default=0,
       type=int,
       help="Skip levels less than this (this run only)",
-    )
-    backup.add_argument(
-      "--list-levels",
-      action="store_true",
-      help="List all available backup levels and exit",
     )
     backup.add_argument(
       "--threads", "-t",
@@ -723,20 +690,22 @@ if __name__ == "__main__":
 
     if args.command == "sideload":
       sideload_main(args.files, args.parent_folder, move=(not args.copy), recurse=args.recursive, check=args.replace)
+      sys.exit(0)
+    
+    with yaspin(text="Loading website data..."):
+      website.load()
+      website.data.linked_ids = set()
+      for item in website.content:
+        if not item.get('external_url') and not item.get('file_links'):
+          continue
+        for drive_link in item.get('drive_links', []):
+          website.data.linked_ids.add(
+            gdrive.link_to_id(drive_link)
+          )
+    
+    if args.command == "levels":
+      print_backup_levels_list(statistics=args.stats)
     elif args.command == "backup":
-      with yaspin(text="Loading website data..."):
-        website.load()
-        website.data.linked_ids = set()
-        for item in website.content:
-          if not item.get('external_url') and not item.get('file_links'):
-            continue
-          for drive_link in item.get('drive_links', []):
-            website.data.linked_ids.add(
-              gdrive.link_to_id(drive_link)
-            )
-      if args.list_levels:
-        print_backup_levels_list()
-      else:
-        backup_main(from_level=args.from_level, new_max_level=args.level, parallelism=args.threads)
+      backup_main(from_level=args.from_level, new_max_level=args.level, parallelism=args.threads)
     else:
       parser.print_help()
