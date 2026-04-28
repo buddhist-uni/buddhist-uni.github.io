@@ -471,6 +471,11 @@ class IDSelectionReason(enum.StrEnum):
   ELDEST_FILE = 'eldest file'
   FOLDER_DEPTH = 'folder depth'
   
+UNIMPORTANT_SLUGS = [
+  'to-go-through',
+  'to-split',
+  None,
+]
 
 def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]) -> tuple[list[str], IDSelectionReason]:
   """Maticulously applies hand-crafted heuristics to select the keepers
@@ -481,11 +486,6 @@ def select_ids_to_keep(files: list[dict[str, any]], folder_slugs: dict[str, str]
   """
 
   import website
-  UNIMPORTANT_SLUGS = [
-    'to-go-through',
-    'to-split',
-    None,
-  ]
   UNIMPORTANT_PREFIXES = [
     # Keep up-to-date with bulk_import.py
     "🔓 core api",

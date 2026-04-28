@@ -377,7 +377,7 @@ class DriveCache:
         if not changes_page:
             return self.refill_all_data()
         original_changes_page = changes_page['value']
-        with yaspin(text="Asking Drive which files have new data...") as ys:
+        with yaspin(text="Asking Drive for files changes...") as ys:
             changes_page = changes_page['value']
             file_ids_to_fetch = set()
             file_ids_removed = {} # map id -> time

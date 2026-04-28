@@ -7,6 +7,8 @@ from typing import (
 import signal
 import os
 import subprocess
+import threading
+from collections.abc import MutableSet
 from pathlib import Path
 from strutils import (
   git_root_folder,
@@ -119,7 +121,7 @@ def graceful_threadmap_sigint_handler(sig, frame):
   if previous_sigints >= 1:
     print("\n\033[1mCtrl+C detected.\033[0m Press one more time to force an immediate exit...")
   else:
-    print("\n\033[1mCtrl+C detected.\033[0m Finishing current downloads and will then exit...")
+    print("\n\033[1mCtrl+C detected.\033[0m Finishing current items and will then exit...")
 
 def graceful_threadmap(fn: Callable, *iterables: Collection, max_workers=8, chunksize=1, **tqdm_kwargs):
   def _wrapped_fn(*args):
@@ -151,3 +153,31 @@ def graceful_threadmap(fn: Callable, *iterables: Collection, max_workers=8, chun
     if not _CAUGHT_EXCEPTIONS.empty():
       raise _CAUGHT_EXCEPTIONS.get()
 
+class ThreadSafeSet(MutableSet):
+  def __init__(self, iterable=None):
+    self._set = set(iterable) if iterable else set()
+    self._lock = threading.RLock()
+
+  def __contains__(self, item):
+    with self._lock:
+      return item in self._set
+
+  def __len__(self):
+    with self._lock:
+      return len(self._set)
+
+  def __iter__(self):
+    with self._lock:
+      return iter(list(self._set))
+
+  def add(self, item):
+    with self._lock:
+      self._set.add(item)
+
+  def discard(self, item):
+    with self._lock:
+      self._set.discard(item)
+
+  def __repr__(self):
+    with self._lock:
+      return f"{self.__class__.__name__}({self._set!r})"
