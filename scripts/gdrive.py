@@ -166,7 +166,7 @@ def folderid_to_course_string(folderid: str) -> str:
 def add_tracked_folder(slug, public, private, gfolders=None):
   gfolders = gfolders or FOLDERS_DATA()
   gfolders[slug] = {'public': public, 'private': private}
-  FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=1))
+  FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=2))
   return gfolders
 
 def get_gfolders_for_course(course):
