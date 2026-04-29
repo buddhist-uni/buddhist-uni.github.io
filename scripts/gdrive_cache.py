@@ -269,12 +269,6 @@ def find_nonwebsite_tag_files() -> list[dict]:
   random.shuffle(ret)
   return ret
 
-@backup_level(54, 'eks', "The Ezra Klein Show Archive")
-def find_eks_files() -> list[str]:
-  return gdrive.gcache.parent_sql_query(
-    "parent.parent_id = '1_HQsNoi2teB7SzbFX7vMniL01ZGttHuF'"
-  )
-
 @backup_level(57, "academia.edu", "unsorted PDFs from Academia.edu")
 def find_academia_edu_pdfs() -> list[dict]:
   return query_parent_name(BULK_PDF_FOLDER_NAMES[BulkPDFType.ACADEMIA_EDU])
@@ -549,9 +543,6 @@ def backup_main(from_level: int=0, new_max_level: int | None=None, parallelism: 
     run_backup_level(level, parallelism=parallelism)
   print(f"All files with priority <= {max_level} are now saved locally!")
 
-def format_cache_percentage(dl_size: int, total_size: int) -> str:
-  return f"{(float(dl_size)/total_size):.1%} ({format_size(dl_size)}/{format_size(total_size)})"
-
 def print_backup_levels_list(statistics: bool=False):
   """`statistics` replaces the generic description with current fill level stats"""
   print("\033[1mGoogle Drive Backup Levels\033[0m")
@@ -569,7 +560,7 @@ The current backup levels are as follows:
   cum_sum_dl_size = 0
 
   if statistics:
-    print(f"\033[4m  Lvl: {'Level Name':<16}{'This Level':^25} {'Cummulative':^24}\033[0m")
+    print(f"\033[4m  Lvl: {'Level Name':<16}{'This Level':^27} {'Cummulative':^27}\033[0m")
   else:
     print(f"\033[4m  Lvl: {'Level Name':<16}{'Est. Size':>9} - {'Description'}\033[0m")
   for lvl, bl in BACKUP_LEVELS.items():
@@ -599,7 +590,17 @@ The current backup levels are as follows:
       cum_sum_dl_size += this_level_inc_dl_size
       if statistics:
         if this_level_inc_size+this_level_overlap_size > 0:
-          description = f"{format_cache_percentage(this_level_inc_dl_size+this_level_overlap_dl_size, this_level_inc_size+this_level_overlap_size):<25} {format_cache_percentage(cum_sum_dl_size, cum_sum_size):^24}"
+          this_level_dl_size = float(this_level_inc_dl_size+this_level_overlap_dl_size)
+          this_level_total_size = this_level_inc_size+this_level_overlap_size
+          this_level_percent = f"{this_level_dl_size/this_level_total_size:.1%}"
+          this_level_col = f"{this_level_percent} ({format_size(this_level_dl_size)}✓"
+          this_level_missing = this_level_total_size-this_level_dl_size
+          if this_level_missing > 10000:
+            this_level_col += f" {format_size(this_level_missing)}𐄂"
+          this_level_col += ")"
+          cum_percent = f"{cum_sum_dl_size/cum_sum_size:.1%}"
+          cum_col = f"{cum_percent} @ +{format_size(this_level_inc_dl_size)} / {format_size(this_level_inc_size)}"
+          description = f"{this_level_col:<27} {cum_col:<27}"
         else:
           description = f"     [N/A]"
       else:

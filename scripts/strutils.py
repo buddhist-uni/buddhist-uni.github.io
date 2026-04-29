@@ -480,13 +480,15 @@ def get_file_sizes(files):
 def format_size(size_in_bytes):
     """Convert size in bytes to human readable format"""
     if size_in_bytes < 1000:
-        return f"{int(size_in_bytes)} B"
+        return f"{int(size_in_bytes)}b"
     size_in_bytes /= 1024
-    for unit in ['KB', 'MB', 'GB', 'TB']:
+    # Play around with spacing and uppercase
+    # to give the bigger units a slightly bigger feeling
+    for unit in ['kb', 'MB', ' GB', ' TiB']:
         if size_in_bytes < 1000:
-            return f"{size_in_bytes:.1f} {unit}"
+            return f"{size_in_bytes:.1f}{unit}"
         size_in_bytes /= 1024
-    return f"{size_in_bytes:.1f} PB"
+    return f"{size_in_bytes:.1f} PetaBytes"
 
 def write_frontmatter_key(path: Path, key: str, value, insert_after_key=None):
   """Takes a markdown file and top-level frontmatter key and sets it to value
