@@ -144,7 +144,7 @@ class GDriveApp(QMainWindow):
         self.file_view.setResizeMode(QListView.Adjust)
         self.file_view.setSpacing(10)
         self.file_view.setWordWrap(True)
-        self.file_view.itemDoubleClicked.connect(self.on_item_double_clicked)
+        self.file_view.itemActivated.connect(self.on_item_activated)
         
         right_layout.addWidget(self.file_view)
         
@@ -153,6 +153,7 @@ class GDriveApp(QMainWindow):
         central_widget.setSizes([200, 800])
         
         self.update_nav_buttons()
+        self.file_view.setFocus()
 
     def load_root(self, root_type: str, add_history=True):
         if root_type == "my_drive":
@@ -234,7 +235,7 @@ class GDriveApp(QMainWindow):
             list_item.setData(Qt.UserRole, item)
             self.file_view.addItem(list_item)
 
-    def on_item_double_clicked(self, item: QListWidgetItem):
+    def on_item_activated(self, item: QListWidgetItem):
         file_data = item.data(Qt.UserRole)
         mime = file_data.get('mimeType', '')
         
@@ -248,9 +249,11 @@ class GDriveApp(QMainWindow):
         if cache_path and cache_path.exists():
             # Open with default app
             if sys.platform.startswith('linux'):
-                subprocess.Popen(['xdg-open', str(cache_path)])
+                subprocess.Popen(['xdg-open', str(cache_path)], 
+                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             elif sys.platform == 'darwin':
-                subprocess.Popen(['open', str(cache_path)])
+                subprocess.Popen(['open', str(cache_path)], 
+                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
                 os.startfile(str(cache_path))
         else:
@@ -258,6 +261,12 @@ class GDriveApp(QMainWindow):
             from PySide6.QtWidgets import QMessageBox
             QMessageBox.information(self, "Not in Cache", 
                                   f"'{file_data.get('name')}' is not downloaded yet.\nDownloading will be implemented later.")
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Backspace:
+            self.go_back()
+        else:
+            super().keyPressEvent(event)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
