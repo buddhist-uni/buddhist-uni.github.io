@@ -19,7 +19,7 @@ from pytablericons.filled_icon import FilledIcon
 from gdrive import gcache
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, QObject, Signal, QThreadPool, Slot
+from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer
 from PySide6.QtGui import QPainter, QImage
 
 from collections import OrderedDict
@@ -28,24 +28,34 @@ import pdfutils as pdfutils
 import gdrive_base as gdrive_base
 from strutils import thumbnail_path_for_file
 
-class ThumbnailSignals(QObject):
-    result = Signal(str, QImage)
 
 class ThumbnailWorker(QRunnable):
-    def __init__(self, file_data):
+    def __init__(self, item, cancel_flag, emit_callback):
         super().__init__()
-        self.file_data = file_data
-        self.signals = ThumbnailSignals()
+        self.item = item
+        self.cancel_flag = cancel_flag
+        self.emit_callback = emit_callback
+
+    def is_cancelled(self):
+        return self.cancel_flag[0]
 
     @Slot()
     def run(self):
-        file_id = self.file_data.get('id', '')
-        mime = self.file_data.get('mimeType', '')
+        if self.is_cancelled():
+            return
+        self._process_item(self.item)
+
+    def _process_item(self, item):
+        file_id = item.get('id', '')
+        mime = item.get('mimeType', '')
         img = None
         
         try:
             from gdrive import gcache
-            cache_path = gcache.get_cache_path_for_file(self.file_data)
+            cache_path = gcache.get_cache_path_for_file(item)
+            
+            if self.is_cancelled(): return
+
             if cache_path and cache_path.exists():
                 if mime == 'application/pdf':
                     thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size='large')
@@ -57,31 +67,20 @@ class ThumbnailWorker(QRunnable):
                     img = QImage(str(thumb_path))
                 else:
                     if mime == 'application/pdf':
+                        if self.is_cancelled(): return
                         thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=256)
                         if thumbnail_bytes:
+                            if self.is_cancelled(): return
                             img = QImage()
                             img.loadFromData(thumbnail_bytes)
                             thumb_path.parent.mkdir(parents=True, exist_ok=True)
                             thumb_path.write_bytes(thumbnail_bytes)
         except Exception as e:
-            print(f"Error fetching thumbnail for {file_id}: {e}")
+            if not self.is_cancelled():
+                print(f"Error fetching thumbnail for {file_id}: {e}")
             
-        if img and not img.isNull():
-            self.signals.result.emit(file_id, img)
-
-class ThumbnailKickoffWorker(QRunnable):
-    def __init__(self, items, callback):
-        super().__init__()
-        self.items = items
-        self.callback = callback
-
-    @Slot()
-    def run(self):
-        pool = QThreadPool.globalInstance()
-        for item in self.items:
-            worker = ThumbnailWorker(item)
-            worker.signals.result.connect(self.callback)
-            pool.start(worker)
+        if img and not img.isNull() and not self.is_cancelled():
+            self.emit_callback(file_id, img)
 
 class LRUCache:
     def __init__(self, capacity: int):
@@ -168,6 +167,8 @@ class HistoryEntry:
     clicked_item_id: Optional[str] = None
 
 class GDriveApp(QMainWindow):
+    thumbnail_loaded_signal = Signal(str, QImage)
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Google Drive Explorer")
@@ -177,10 +178,13 @@ class GDriveApp(QMainWindow):
         self.history_index = -1
         self.current_folder_id = None
         
-        self.threadpool = QThreadPool.globalInstance()
-        self.threadpool.setMaxThreadCount(12)
+        self.thumbnail_pool = QThreadPool(self)
+        self.thumbnail_pool.setMaxThreadCount(10)
         self.thumbnail_cache = LRUCache(500)
-        self.item_mapping: Dict[QListWidgetItem] = {}
+        self.item_mapping: Dict[str, QListWidgetItem] = {}
+        self.current_cancel_flag = [False]
+        self.queued_thumbnails = set()
+        self.thumbnail_loaded_signal.connect(self.on_thumbnail_loaded)
         
         self.init_ui()
         self.load_root("my_drive")
@@ -249,6 +253,7 @@ class GDriveApp(QMainWindow):
         central_widget.setSizes([200, 800])
         
         self.update_nav_buttons()
+        self.file_view.verticalScrollBar().valueChanged.connect(self.update_visible_thumbnails)
         self.file_view.setFocus()
 
     def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None):
@@ -322,6 +327,12 @@ class GDriveApp(QMainWindow):
         self.load_root(root_type)
 
     def populate_files(self, items: List[Dict[str, Any]]):
+        if hasattr(self, 'current_cancel_flag'):
+            self.current_cancel_flag[0] = True
+        self.current_cancel_flag = [False]
+        self.thumbnail_pool.clear()
+        self.queued_thumbnails.clear()
+        
         self.file_view.clear()
         self.item_mapping.clear()
         
@@ -367,10 +378,32 @@ class GDriveApp(QMainWindow):
             list_item.setData(Qt.UserRole, item)
             self.file_view.addItem(list_item)
             self.item_mapping[file_id] = list_item
+        
+        QTimer.singleShot(0, self.update_visible_thumbnails)
+        self.file_view.setFocus(Qt.FocusReason.OtherFocusReason)
+
+    def update_visible_thumbnails(self):
+        viewport_rect = self.file_view.viewport().rect()
+        # Expand rect to load items slightly out of view
+        expanded_rect = viewport_rect.adjusted(0, -viewport_rect.height(), 0, viewport_rect.height())
+        
+        for i in range(self.file_view.count()):
+            item = self.file_view.item(i)
+            file_data = item.data(Qt.UserRole)
+            mime = file_data.get('mimeType', '')
+            file_id = file_data.get('id', '')
             
-        if items_needing_thumbnails:
-            kickoff_worker = ThumbnailKickoffWorker(items_needing_thumbnails, self.on_thumbnail_loaded)
-            self.threadpool.start(kickoff_worker)
+            if mime == 'application/pdf' and file_id not in self.queued_thumbnails:
+                if not self.thumbnail_cache.get(file_id):
+                    item_rect = self.file_view.visualItemRect(item)
+                    if expanded_rect.intersects(item_rect):
+                        self.queued_thumbnails.add(file_id)
+                        worker = ThumbnailWorker(
+                            file_data,
+                            self.current_cancel_flag,
+                            self.thumbnail_loaded_signal.emit
+                        )
+                        self.thumbnail_pool.start(worker)
 
     def on_thumbnail_loaded(self, file_id: str, img: QImage):
         pixmap = QPixmap.fromImage(img)
