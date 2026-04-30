@@ -1,6 +1,8 @@
 #!/bin/python
 from strutils import (
   whitespace,
+  thumbnail_path_for_file,
+  THUMBNAIL_SIZES,
 )
 import subprocess
 from pathlib import Path
@@ -19,6 +21,35 @@ def get_page_count(pdf_path) -> int | None:
         return page_count
     except:
         return None
+
+def render_pdf_thumbnail(path, min_d_size=256, max_d_size=512, type='png') -> bytes:
+  try:
+    import fitz
+  except:
+    print("pip install pymupdf")
+    exit(1)
+  doc = fitz.open(path)
+  page = doc[0]
+  maxzoom = max_d_size / max(page.rect.width, page.rect.height, max_d_size)
+  minzoom = min_d_size / min(page.rect.width, page.rect.height)
+  zoom = minzoom if minzoom < maxzoom else maxzoom
+  pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom))
+  return pix.tobytes(type)
+
+def get_shared_cached_pdf_thumbnail(pdf_path: Path, size='large') -> bytes:
+  thumbnail_path = thumbnail_path_for_file(pdf_path, shared=True, size=size)
+  if thumbnail_path.is_file():
+    return thumbnail_path.read_bytes()
+  tsize = THUMBNAIL_SIZES[size]
+  thebytes = render_pdf_thumbnail(
+    pdf_path,
+    min_d_size=tsize,
+    max_d_size=2*tsize,
+    type='png',
+  )
+  thumbnail_path.parent.mkdir(exist_ok=True, parents=True)
+  thumbnail_path.write_bytes(thebytes)
+  return thebytes
 
 def readpdf(pdf_file: str | Path, max_len=None, normalize=1) -> str:
   """Returns a pdf's text.

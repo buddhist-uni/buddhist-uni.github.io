@@ -89,6 +89,25 @@ def md5(text: bytes | str | Path):
     raise ValueError(f"Expected bytes or str or Path, got {type(text)}")
   return hashlib.md5(bts).hexdigest()
 
+THUMBNAIL_SIZES = {
+  'normal': 128,
+  'large': 256,
+  'x-large': 512,
+  'xx-large': 1024,
+  'fail': 0,
+}
+
+def thumbnail_path_for_file(filepath: Path | str, shared=False, size='large'):
+  # Following the spec at https://specifications.freedesktop.org/thumbnail/latest/thumbsave.html
+  filepath = Path(filepath).expanduser().resolve()
+  if shared:
+    cachdir = filepath.parent.joinpath('.sh_thumbnails').joinpath(size)
+  else:
+    cachdir = Path('~/.cache/thumbnails/').expanduser().joinpath(size)
+  return cachdir.joinpath(
+    f"{md5("file://"+str(filepath))}.png"
+  )
+
 def cumsum(vec):
     return reduce(lambda a,x: a+[a[-1]+x] if a else [x], vec, [])
 
