@@ -217,7 +217,7 @@ def get_file_contents(fileid, verbose=True):
   return buffer
   
 def fetch_preview_image(fileid: str, size=1000) -> bytes | None:
-  """Fetches the thumbnail image for a file and returns it in a BytesIO buffer"""
+  """Fetches the thumbnail image for a file and returns it as raw bytes"""
   try:
     file_metadata = execute(session().files().get(fileId=fileid, fields="thumbnailLink"))
     thumbnail_url = file_metadata.get('thumbnailLink')

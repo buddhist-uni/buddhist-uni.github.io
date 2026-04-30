@@ -36,10 +36,13 @@ def render_pdf_thumbnail(path, min_d_size=256, max_d_size=512, type='png') -> by
   pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom))
   return pix.tobytes(type)
 
-def get_shared_cached_pdf_thumbnail(pdf_path: Path, size='large') -> bytes:
+def get_cached_pdf_thumbnail(pdf_path: Path, size='large') -> bytes:
   thumbnail_path = thumbnail_path_for_file(pdf_path, shared=True, size=size)
   if thumbnail_path.is_file():
     return thumbnail_path.read_bytes()
+  alt_path = thumbnail_path_for_file(pdf_path, shared=False, size=size)
+  if alt_path.is_file():
+    return alt_path.read_bytes()
   tsize = THUMBNAIL_SIZES[size]
   thebytes = render_pdf_thumbnail(
     pdf_path,

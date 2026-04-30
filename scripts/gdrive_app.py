@@ -17,9 +17,88 @@ from pytablericons.filled_icon import FilledIcon
 from gdrive import gcache
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt
-from PySide6.QtGui import QPainter
+from PySide6.QtCore import QByteArray, Qt, QRunnable, QObject, Signal, QThreadPool, Slot
+from PySide6.QtGui import QPainter, QImage
 
+from collections import OrderedDict
+from functools import lru_cache
+import pdfutils as pdfutils
+import gdrive_base as gdrive_base
+from strutils import thumbnail_path_for_file
+
+class ThumbnailSignals(QObject):
+    result = Signal(str, QImage)
+
+class ThumbnailWorker(QRunnable):
+    def __init__(self, file_data):
+        super().__init__()
+        self.file_data = file_data
+        self.signals = ThumbnailSignals()
+
+    @Slot()
+    def run(self):
+        file_id = self.file_data.get('id', '')
+        mime = self.file_data.get('mimeType', '')
+        img = None
+        
+        try:
+            from gdrive import gcache
+            cache_path = gcache.get_cache_path_for_file(self.file_data)
+            if cache_path and cache_path.exists():
+                if mime == 'application/pdf':
+                    thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size='large')
+                    img = QImage()
+                    img.loadFromData(thumbnail_bytes)
+            else:
+                thumb_path = thumbnail_path_for_file(f"gdrive_{file_id}", size='large')
+                if thumb_path.exists():
+                    img = QImage(str(thumb_path))
+                else:
+                    if mime == 'application/pdf':
+                        thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=256)
+                        if thumbnail_bytes:
+                            img = QImage()
+                            img.loadFromData(thumbnail_bytes)
+                            thumb_path.parent.mkdir(parents=True, exist_ok=True)
+                            thumb_path.write_bytes(thumbnail_bytes)
+        except Exception as e:
+            print(f"Error fetching thumbnail for {file_id}: {e}")
+            
+        if img and not img.isNull():
+            self.signals.result.emit(file_id, img)
+
+class ThumbnailKickoffWorker(QRunnable):
+    def __init__(self, items, callback):
+        super().__init__()
+        self.items = items
+        self.callback = callback
+
+    @Slot()
+    def run(self):
+        pool = QThreadPool.globalInstance()
+        for item in self.items:
+            worker = ThumbnailWorker(item)
+            worker.signals.result.connect(self.callback)
+            pool.start(worker)
+
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.cache = OrderedDict()
+        self.capacity = capacity
+
+    def get(self, key: str):
+        if key not in self.cache:
+            return None
+        self.cache.move_to_end(key)
+        return self.cache[key]
+
+    def put(self, key: str, value: Any):
+        self.cache[key] = value
+        self.cache.move_to_end(key)
+        if len(self.cache) > self.capacity:
+            self.cache.popitem(last=False)
+
+@lru_cache(maxsize=None)
 def get_icon(icon_enum, is_filled=False, color: Optional[str] = None) -> QIcon:
     if color is None:
         if QApplication.instance():
@@ -85,6 +164,11 @@ class GDriveApp(QMainWindow):
         self.history = []
         self.history_index = -1
         self.current_folder_id = None
+        
+        self.threadpool = QThreadPool.globalInstance()
+        self.threadpool.setMaxThreadCount(12)
+        self.thumbnail_cache = LRUCache(500)
+        self.item_mapping = {}
         
         self.init_ui()
         self.load_root("my_drive")
@@ -212,10 +296,12 @@ class GDriveApp(QMainWindow):
 
     def populate_files(self, items: List[Dict[str, Any]]):
         self.file_view.clear()
+        self.item_mapping.clear()
         
         # Sort folders first, then files, both alphabetically
         folders = []
         files = []
+        items_needing_thumbnails = []
         for item in items:
             mime = item.get('mimeType', '')
             if mime == 'application/vnd.google-apps.folder':
@@ -229,11 +315,33 @@ class GDriveApp(QMainWindow):
         for item in folders + files:
             name = item.get('name', 'Unknown')
             mime = item.get('mimeType', '')
+            file_id = item.get('id', '')
             
             list_item = QListWidgetItem(name)
-            list_item.setIcon(get_mime_icon(mime))
+            
+            cached_pixmap = self.thumbnail_cache.get(file_id)
+            if cached_pixmap:
+                list_item.setIcon(QIcon(cached_pixmap))
+            else:
+                list_item.setIcon(get_mime_icon(mime))
+                if mime == 'application/pdf':
+                    items_needing_thumbnails.append(item)
+            
             list_item.setData(Qt.UserRole, item)
             self.file_view.addItem(list_item)
+            self.item_mapping[file_id] = list_item
+            
+        if items_needing_thumbnails:
+            kickoff_worker = ThumbnailKickoffWorker(items_needing_thumbnails, self.on_thumbnail_loaded)
+            self.threadpool.start(kickoff_worker)
+
+    def on_thumbnail_loaded(self, file_id: str, img: QImage):
+        pixmap = QPixmap.fromImage(img)
+        self.thumbnail_cache.put(file_id, pixmap)
+        if file_id in self.item_mapping:
+            item = self.item_mapping[file_id]
+            if item.listWidget() == self.file_view:
+                item.setIcon(QIcon(pixmap))
 
     def on_item_activated(self, item: QListWidgetItem):
         file_data = item.data(Qt.UserRole)

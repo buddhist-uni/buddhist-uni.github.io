@@ -828,7 +828,17 @@ class DriveCache:
                 self.cursor.execute("UPDATE trashed_drive_items SET trashed_time = ? WHERE id = ?", (trashed_time, file_id))
             return
 
-        self.cursor.execute("INSERT INTO trashed_drive_items SELECT * FROM drive_items WHERE id = ?", (file_id,))
+        self.cursor.execute("""
+            INSERT INTO trashed_drive_items (
+                id, version, name, original_name, mime_type, parent_id, 
+                modified_time, size, owner, md5_checksum, shortcut_target
+            )
+            SELECT 
+                id, version, name, original_name, mime_type, parent_id, 
+                modified_time, size, owner, md5_checksum, shortcut_target
+            FROM drive_items 
+            WHERE id = ?
+        """, (file_id,))
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
 
         if trashed_time:
