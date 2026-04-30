@@ -1,6 +1,7 @@
 import sys
 import os
 import subprocess
+import webbrowser
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 
@@ -387,12 +388,16 @@ class GDriveApp(QMainWindow):
             self.load_folder(file_data['id'], file_data['name'], clicked_item_id=file_data['id'])
         elif mime == 'application/vnd.google-apps.shortcut':
             if file_data['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
-                target_folder = gcache.get_item(file_data['shortcutDetails']['targetId'])
+                folder_id = file_data['shortcutDetails']['targetId']
                 target_file = None
             else:
                 target_file = gcache.get_item(file_data['shortcutDetails']['targetId'])
-                target_folder = gcache.get_item(target_file['parent_id'])
+                folder_id = target_file['parent_id']
                 target_file = target_file['id']
+            target_folder = gcache.get_item(folder_id)
+            if not target_folder:
+                url = gdrive_base.FOLDER_LINK.format(folder_id)
+                webbrowser.open(url)
             self.load_folder(target_folder['id'], target_folder['name'], highlight_fileid=target_file, clicked_item_id=file_data['id'])
         else:
             self.open_file(file_data)
@@ -410,10 +415,8 @@ class GDriveApp(QMainWindow):
             else:
                 os.startfile(str(cache_path))
         else:
-            # Placeholder for download
-            from PySide6.QtWidgets import QMessageBox
-            QMessageBox.information(self, "Not in Cache", 
-                                  f"'{file_data.get('name')}' is not downloaded yet.\nDownloading will be implemented later.")
+            url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
+            webbrowser.open(url)
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Backspace:

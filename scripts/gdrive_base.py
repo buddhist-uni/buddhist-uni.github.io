@@ -48,6 +48,7 @@ CREDFILE = os.path.expanduser('~/gtoken.json')
 
 
 FOLDER_LINK_PREFIX = "https://drive.google.com/drive/folders/"
+GENERIC_LINK_PREFIX = "https://drive.google.com/open?id="
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
@@ -80,8 +81,8 @@ def link_to_id(link):
   ret = folderlink_to_id(link)
   if ret:
     return ret
-  if link.startswith("https://drive.google.com/open?id="):
-    return link[len("https://drive.google.com/open?id="):].split('&')[0]
+  if link.startswith(GENERIC_LINK_PREFIX):
+    return link[len(GENERIC_LINK_PREFIX):].split('&')[0]
   ret = GFIDREGEX.search(link)
   if ret and link.startswith("https://drive.google.com/"):
     return ret.groups()[0]
