@@ -2,6 +2,7 @@ import sys
 import os
 import subprocess
 from typing import List, Dict, Any, Optional
+from dataclasses import dataclass
 
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
@@ -134,6 +135,10 @@ def get_mime_icon(mime_type: str) -> QIcon:
     color = QApplication.palette().windowText().color().name()
     if mime_type == 'application/vnd.google-apps.folder':
         return get_icon(FilledIcon.FOLDER, is_filled=True, color=color)
+    elif mime_type == 'application/vnd.google-apps.shortcut+file':
+        return get_icon(OutlineIcon.FILE_SYMLINK, color="#999999")
+    elif mime_type == 'application/vnd.google-apps.shortcut+folder':
+        return get_icon(OutlineIcon.FOLDER_SYMLINK, color="#999999")
     elif mime_type == 'application/vnd.google-apps.document':
         return get_icon(OutlineIcon.FILE_TEXT, color="#4285F4")
     elif mime_type == 'application/vnd.google-apps.spreadsheet':
@@ -155,20 +160,26 @@ def get_mime_icon(mime_type: str) -> QIcon:
     else:
         return get_icon(OutlineIcon.FILE, color=color)
 
+@dataclass
+class HistoryEntry:
+    id: str
+    name: str
+    clicked_item_id: Optional[str] = None
+
 class GDriveApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Google Drive Explorer")
         self.resize(1000, 600)
         
-        self.history = []
+        self.history: List[HistoryEntry] = []
         self.history_index = -1
         self.current_folder_id = None
         
         self.threadpool = QThreadPool.globalInstance()
         self.threadpool.setMaxThreadCount(12)
         self.thumbnail_cache = LRUCache(500)
-        self.item_mapping = {}
+        self.item_mapping: Dict[QListWidgetItem] = {}
         
         self.init_ui()
         self.load_root("my_drive")
@@ -239,7 +250,7 @@ class GDriveApp(QMainWindow):
         self.update_nav_buttons()
         self.file_view.setFocus()
 
-    def load_root(self, root_type: str, add_history=True):
+    def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None):
         if root_type == "my_drive":
             items = gcache.get_root_my_drive_children()
             self.address_bar.setText("My Drive")
@@ -249,41 +260,56 @@ class GDriveApp(QMainWindow):
             
         self.current_folder_id = root_type
         if add_history:
-            self.add_to_history(root_type)
+            self.add_to_history(root_type, clicked_item_id)
         self.populate_files(items)
+        if highlight_fileid and highlight_fileid in self.item_mapping:
+            item = self.item_mapping[highlight_fileid]
+            item.setSelected(True)
+            self.file_view.setCurrentItem(item)
+        self.file_view.repaint()
 
-    def load_folder(self, folder_id: str, folder_name: str, add_history=True):
+    def load_folder(self, folder_id: str, folder_name: str, add_history=True, highlight_fileid: str | None=None, clicked_item_id: str | None = None):
         items = gcache.get_children(folder_id)
         self.current_folder_id = folder_id
         self.address_bar.setText(folder_name)
         if add_history:
-            self.add_to_history(folder_id)
+            self.add_to_history(folder_id, clicked_item_id)
         self.populate_files(items)
+        if highlight_fileid and highlight_fileid in self.item_mapping:
+            item = self.item_mapping[highlight_fileid]
+            item.setSelected(True)
+            self.file_view.setCurrentItem(item)
+        self.file_view.repaint() # Don't let QT wait for the async thumbnails
 
-    def add_to_history(self, folder_id: str):
+    def add_to_history(self, folder_id: str, clicked_item_id: str | None = None):
         # Trim future history if we navigated back then clicked a new folder
         self.history = self.history[:self.history_index + 1]
-        self.history.append((folder_id, self.address_bar.text()))
+        self.history.append(HistoryEntry(
+            id=folder_id,
+            name=self.address_bar.text(),
+            clicked_item_id=clicked_item_id
+        ))
         self.history_index += 1
         self.update_nav_buttons()
 
     def go_back(self):
         if self.history_index > 0:
+            current_entry = self.history[self.history_index]
             self.history_index -= 1
-            folder_id, name = self.history[self.history_index]
-            self._load_from_history(folder_id, name)
+            prev_entry = self.history[self.history_index]
+            self._load_from_history(prev_entry.id, prev_entry.name, highlight_fileid=current_entry.clicked_item_id)
 
     def go_forward(self):
         if self.history_index < len(self.history) - 1:
             self.history_index += 1
-            folder_id, name = self.history[self.history_index]
-            self._load_from_history(folder_id, name)
+            entry = self.history[self.history_index]
+            self._load_from_history(entry.id, entry.name)
 
-    def _load_from_history(self, folder_id: str, name: str):
+    def _load_from_history(self, folder_id: str, name: str, highlight_fileid: str | None = None):
         if folder_id in ["my_drive", "shared_with_me"]:
-            self.load_root(folder_id, add_history=False)
+            self.load_root(folder_id, add_history=False, highlight_fileid=highlight_fileid)
         else:
-            self.load_folder(folder_id, name, add_history=False)
+            self.load_folder(folder_id, name, add_history=False, highlight_fileid=highlight_fileid)
         self.update_nav_buttons()
 
     def update_nav_buttons(self):
@@ -298,23 +324,33 @@ class GDriveApp(QMainWindow):
         self.file_view.clear()
         self.item_mapping.clear()
         
-        # Sort folders first, then files, both alphabetically
+        # Show folders, then folder shortcuts, then files
         folders = []
+        folder_shortcuts = []
         files = []
         items_needing_thumbnails = []
         for item in items:
             mime = item.get('mimeType', '')
             if mime == 'application/vnd.google-apps.folder':
                 folders.append(item)
+            elif mime == 'application/vnd.google-apps.shortcut' and item['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+                folder_shortcuts.append(item)
             else:
                 files.append(item)
-                
-        folders.sort(key=lambda x: x.get('name', '').lower())
-        files.sort(key=lambda x: x.get('name', '').lower())
+
+        sortkey = lambda x: x.get('name', '').lower()
+        folders.sort(key=sortkey)
+        folder_shortcuts.sort(key=sortkey)
+        files.sort(key=sortkey)
         
-        for item in folders + files:
+        for item in folders + folder_shortcuts + files:
             name = item.get('name', 'Unknown')
             mime = item.get('mimeType', '')
+            if item.get('shortcutDetails'):
+                if item['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+                    mime += '+folder'
+                else:
+                    mime += "+file"
             file_id = item.get('id', '')
             
             list_item = QListWidgetItem(name)
@@ -348,7 +384,16 @@ class GDriveApp(QMainWindow):
         mime = file_data.get('mimeType', '')
         
         if mime == 'application/vnd.google-apps.folder':
-            self.load_folder(file_data['id'], file_data['name'])
+            self.load_folder(file_data['id'], file_data['name'], clicked_item_id=file_data['id'])
+        elif mime == 'application/vnd.google-apps.shortcut':
+            if file_data['shortcutDetails']['targetMimeType'] == 'application/vnd.google-apps.folder':
+                target_folder = gcache.get_item(file_data['shortcutDetails']['targetId'])
+                target_file = None
+            else:
+                target_file = gcache.get_item(file_data['shortcutDetails']['targetId'])
+                target_folder = gcache.get_item(target_file['parent_id'])
+                target_file = target_file['id']
+            self.load_folder(target_folder['id'], target_folder['name'], highlight_fileid=target_file, clicked_item_id=file_data['id'])
         else:
             self.open_file(file_data)
 
