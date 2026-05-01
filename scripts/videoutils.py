@@ -7,20 +7,20 @@ def render_video_thumbnail(video_path: Path, size=128) -> bytes:
     """Uses ffmpeg to extract a frame from a video file."""
     try:
         # We try to get a frame at 1 second in.
-        # -ss 1: seek to 1 second
+        # -ss 5: seek to 5 seconds
         # -i: input file
+        # -vf scale: resize maintaining aspect ratio
         # -vframes 1: extract 1 frame
         # -f image2pipe: output as image pipe
         # -vcodec png: encode as png
-        # -vf scale: resize maintaining aspect ratio
         cmd = [
             'ffmpeg',
-            '-ss', '1',
+            '-ss', '5',
             '-i', str(video_path),
+            '-vf', f'thumbnail,scale={size}:-1',
             '-vframes', '1',
             '-f', 'image2pipe',
             '-vcodec', 'png',
-            '-vf', f'scale={size}:-1',
             '-'
         ]
         # We use a short timeout and capture output

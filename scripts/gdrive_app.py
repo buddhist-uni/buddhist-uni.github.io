@@ -415,6 +415,20 @@ class GDriveApp(QMainWindow):
                         self.thumbnail_pool.start(worker)
 
     def on_thumbnail_loaded(self, file_id: str, img: QImage):
+        # Ensure the image is padded to the full icon size to prevent label shifting
+        # and ensure the previous render is fully cleared.
+        target_size = self.file_view.iconSize().width()
+        if not img.isNull() and (img.width() != target_size or img.height() != target_size):
+            padded = QImage(target_size, target_size, QImage.Format_ARGB32)
+            padded.fill(Qt.transparent)
+            painter = QPainter(padded)
+            # Center the image
+            x = (target_size - img.width()) // 2
+            y = (target_size - img.height()) // 2
+            painter.drawImage(x, y, img)
+            painter.end()
+            img = padded
+
         pixmap = QPixmap.fromImage(img)
         self.thumbnail_cache.put(file_id, pixmap)
         if file_id in self.item_mapping:
