@@ -759,6 +759,12 @@ class DriveCache:
                     pass
                 else:
                     raise e
+            except gerrors.HttpError as e:
+                if e.status_code == 403:
+                    print(f"You do not have permission to download {gdrive_base.GENERIC_LINK_PREFIX}{file['id']}")
+                    return None
+                else:
+                    raise e
         else:
             try:
                 if file['mimeType'] == 'application/vnd.google-apps.document':

@@ -53,28 +53,27 @@ class ThumbnailWorker(QRunnable):
         try:
             from gdrive import gcache
             cache_path = gcache.get_cache_path_for_file(item)
-            
-            if self.is_cancelled(): return
-
-            if cache_path and cache_path.exists():
+            if not cache_path:
+                return
+            thumb_path = thumbnail_path_for_file(cache_path, shared=True, size='normal')
+            if thumb_path.exists():
+                img = QImage(str(thumb_path))
+            elif cache_path.exists():
+                if self.is_cancelled(): return
                 if mime == 'application/pdf':
-                    thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size='large')
+                    thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size='normal')
                     img = QImage()
                     img.loadFromData(thumbnail_bytes)
             else:
-                thumb_path = thumbnail_path_for_file(f"gdrive_{file_id}", size='large')
-                if thumb_path.exists():
-                    img = QImage(str(thumb_path))
-                else:
-                    if mime == 'application/pdf':
-                        if self.is_cancelled(): return
-                        thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=256)
-                        if thumbnail_bytes:
-                            if self.is_cancelled(): return
-                            img = QImage()
-                            img.loadFromData(thumbnail_bytes)
-                            thumb_path.parent.mkdir(parents=True, exist_ok=True)
-                            thumb_path.write_bytes(thumbnail_bytes)
+                if mime == 'application/pdf':
+                    if self.is_cancelled(): return
+                    thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=128)
+                    if thumbnail_bytes:
+                        img = QImage()
+                        img.loadFromData(thumbnail_bytes)
+                        thumb_path.parent.mkdir(parents=True, exist_ok=True)
+                        # Yes, the thumb_path and the gdrive preview_image are both PNG
+                        thumb_path.write_bytes(thumbnail_bytes)
         except Exception as e:
             if not self.is_cancelled():
                 print(f"Error fetching thumbnail for {file_id}: {e}")
