@@ -24,9 +24,10 @@ from PySide6.QtGui import QPainter, QImage
 
 from collections import OrderedDict
 from functools import lru_cache
-import pdfutils as pdfutils
-import gdrive_base as gdrive_base
-from strutils import thumbnail_path_for_file
+import pdfutils
+import videoutils
+import gdrive_base
+from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES
 
 
 class ThumbnailWorker(QRunnable):
@@ -35,6 +36,7 @@ class ThumbnailWorker(QRunnable):
         self.item = item
         self.cancel_flag = cancel_flag
         self.emit_callback = emit_callback
+        self.size = 'normal'
 
     def is_cancelled(self):
         return self.cancel_flag[0]
@@ -55,19 +57,24 @@ class ThumbnailWorker(QRunnable):
             cache_path = gcache.get_cache_path_for_file(item)
             if not cache_path:
                 return
-            thumb_path = thumbnail_path_for_file(cache_path, shared=True, size='normal')
+            size = THUMBNAIL_SIZES[self.size]
+            thumb_path = thumbnail_path_for_file(cache_path, shared=True, size=self.size)
             if thumb_path.exists():
                 img = QImage(str(thumb_path))
             elif cache_path.exists():
                 if self.is_cancelled(): return
                 if mime == 'application/pdf':
-                    thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size='normal')
+                    thumbnail_bytes = pdfutils.get_cached_pdf_thumbnail(cache_path, size=self.size)
+                    img = QImage()
+                    img.loadFromData(thumbnail_bytes)
+                elif mime.startswith('video/'):
+                    thumbnail_bytes = videoutils.get_cached_video_thumbnail(cache_path, size=self.size)
                     img = QImage()
                     img.loadFromData(thumbnail_bytes)
             else:
-                if mime == 'application/pdf':
+                if mime == 'application/pdf' or mime.startswith('video/'):
                     if self.is_cancelled(): return
-                    thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=128)
+                    thumbnail_bytes = gdrive_base.fetch_preview_image(file_id, size=size)
                     if thumbnail_bytes:
                         img = QImage()
                         img.loadFromData(thumbnail_bytes)
@@ -374,7 +381,7 @@ class GDriveApp(QMainWindow):
                 list_item.setIcon(QIcon(cached_pixmap))
             else:
                 list_item.setIcon(get_mime_icon(mime))
-                if mime == 'application/pdf':
+                if mime == 'application/pdf' or mime.startswith('video/'):
                     items_needing_thumbnails.append(item)
             
             list_item.setData(Qt.UserRole, item)
@@ -395,7 +402,7 @@ class GDriveApp(QMainWindow):
             mime = file_data.get('mimeType', '')
             file_id = file_data.get('id', '')
             
-            if mime == 'application/pdf' and file_id not in self.queued_thumbnails:
+            if (mime == 'application/pdf' or mime.startswith('video/')) and file_id not in self.queued_thumbnails:
                 if not self.thumbnail_cache.get(file_id):
                     item_rect = self.file_view.visualItemRect(item)
                     if expanded_rect.intersects(item_rect):
