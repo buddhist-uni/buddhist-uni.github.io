@@ -25,6 +25,9 @@ import googleapiclient.errors as gerrors
 from bulk_import import BULK_PDF_FOLDER_NAMES, BulkPDFType
 import website
 
+# We'll stop downloading when we have only this much space left
+MIN_FREE_SPACE = 2**34 # 16 GB
+
 def query_cache(sql: str, variables: tuple=tuple()) -> list[dict]:
   """Performs a query, filtering out shortcuts and shuffling the results"""
   ret = gdrive.gcache.sql_query(
@@ -419,6 +422,9 @@ def download_file_to_cache(file: dict, verbose=False) -> str | None:
     """Will try its best, following shortcuts, exporting docs, etc."""
     if file['id'] in SEEN_IDS:
       return None
+    _, _, freespace = shutil.disk_usage(gdrive.gcache.file_cache_dir)
+    if freespace < file['size'] + MIN_FREE_SPACE:
+      raise OSError(f"We've filled up the disk as much as I'm confortable with")
     SEEN_IDS.add(file['id'])
     return gdrive.gcache.download_file_to_cache(file)
 
