@@ -244,6 +244,9 @@ class GDriveApp(QMainWindow):
         self.file_view.setResizeMode(QListView.Adjust)
         self.file_view.setSpacing(10)
         self.file_view.setWordWrap(True)
+        # Set a fixed grid size to constrain item width, which forces the default 
+        # WrapAtWordBoundaryOrAnywhere behavior to actually wrap instead of expanding the item.
+        self.file_view.setGridSize(QSize(160, 200))
         self.file_view.itemActivated.connect(self.on_item_activated)
         
         right_layout.addWidget(self.file_view)
