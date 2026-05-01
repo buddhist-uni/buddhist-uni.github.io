@@ -240,7 +240,7 @@ class GDriveApp(QMainWindow):
         # Main File View
         self.file_view = QListWidget()
         self.file_view.setViewMode(QListView.IconMode)
-        self.file_view.setIconSize(QSize(64, 64))
+        self.file_view.setIconSize(QSize(128, 128))
         self.file_view.setResizeMode(QListView.Adjust)
         self.file_view.setSpacing(10)
         self.file_view.setWordWrap(True)

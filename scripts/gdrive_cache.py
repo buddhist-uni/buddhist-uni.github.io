@@ -321,11 +321,11 @@ def find_all_obu_files(filter_fn: Callable[[dict], bool]=None) -> list[dict]:
     ret.extend(this_ret)
   return ret
 
-@backup_level(39, "obu pdfs", "All PDFs in the OBU hierarchy")
+@backup_level(15, "obu pdfs", "All PDFs in the OBU hierarchy")
 def find_all_obu_pdfs() -> list[dict]:
   return find_all_obu_files(lambda f: f['mimeType'] == 'application/pdf')
 
-@backup_level(40, "one offs", "A few docs not elsewhere covered")
+@backup_level(9, "one offs", "A few docs not elsewhere covered")
 def list_one_off_docs() -> list[dict]:
   return [
     gdrive.gcache.get_item(fid) for fid in [
