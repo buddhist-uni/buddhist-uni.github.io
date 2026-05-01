@@ -265,26 +265,25 @@ class GDriveApp(QMainWindow):
         self.file_view.verticalScrollBar().valueChanged.connect(self.update_visible_thumbnails)
         self.file_view.setFocus()
 
-    def apply_cache_overlay(self, pixmap: QPixmap) -> QPixmap:
+    def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = "#999999", is_filled: bool = False) -> QPixmap:
         result = QPixmap(pixmap)
         painter = QPainter(result)
         painter.setRenderHint(QPainter.Antialiasing)
         
-        # Get the checkmark icon - use a nice green
-        check_icon = get_icon(FilledIcon.CIRCLE_CHECK, color="#999999")
+        overlay_icon = get_icon(icon_enum, color=color, is_filled=is_filled)
         overlay_size = pixmap.width() // 4
-        check_pixmap = check_icon.pixmap(QSize(overlay_size, overlay_size))
+        overlay_pixmap = overlay_icon.pixmap(QSize(overlay_size, overlay_size))
         
         # Position in lower right corner
         x = pixmap.width() - overlay_size - 4
         y = pixmap.height() - overlay_size - 4
         
-        # Draw a white circular background to make the green checkmark stand out
+        # Draw a white circular background
         painter.setBrush(Qt.white)
         painter.setPen(Qt.NoPen)
         painter.drawEllipse(x + 2, y + 2, overlay_size - 4, overlay_size - 4)
         
-        painter.drawPixmap(x, y, check_pixmap)
+        painter.drawPixmap(x, y, overlay_pixmap)
         painter.end()
         return result
 
@@ -406,8 +405,11 @@ class GDriveApp(QMainWindow):
                 pixmap = get_mime_icon(mime).pixmap(self.file_view.iconSize())
             
             cache_path = gcache.get_cache_path_for_file(item)
-            if cache_path and cache_path.exists():
-                pixmap = self.apply_cache_overlay(pixmap)
+            if cache_path:
+                if cache_path.exists():
+                    pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
+            elif item.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
+                pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
             
             list_item.setIcon(QIcon(pixmap))
             
@@ -466,8 +468,11 @@ class GDriveApp(QMainWindow):
             if item.listWidget() == self.file_view:
                 file_data = item.data(Qt.UserRole)
                 cache_path = gcache.get_cache_path_for_file(file_data)
-                if cache_path and cache_path.exists():
-                    pixmap = self.apply_cache_overlay(pixmap)
+                if cache_path:
+                    if cache_path.exists():
+                        pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
+                elif file_data.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
+                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
                 item.setIcon(QIcon(pixmap))
 
     def on_item_activated(self, item: QListWidgetItem):
