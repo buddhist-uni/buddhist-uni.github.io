@@ -8,9 +8,9 @@ from dataclasses import dataclass
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter,
-                               QListWidget, QListView)
+                               QListView, QMenu)
 from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QIcon, QPixmap
+from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
 import pytablericons
 from pytablericons.outline_icon import OutlineIcon
@@ -254,6 +254,8 @@ class GDriveApp(QMainWindow):
         # WrapAtWordBoundaryOrAnywhere behavior to actually wrap instead of expanding the item.
         self.file_view.setGridSize(QSize(160, 200))
         self.file_view.itemActivated.connect(self.on_item_activated)
+        self.file_view.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.file_view.customContextMenuRequested.connect(self.on_context_menu)
         
         right_layout.addWidget(self.file_view)
         
@@ -263,6 +265,11 @@ class GDriveApp(QMainWindow):
         
         self.update_nav_buttons()
         self.file_view.verticalScrollBar().valueChanged.connect(self.update_visible_thumbnails)
+        
+        # Shortcut for context menu (standard on Linux/Ubuntu)
+        self.context_shortcut = QShortcut(QKeySequence("Shift+F10"), self)
+        self.context_shortcut.activated.connect(self.show_file_view_context_menu)
+        
         self.file_view.setFocus()
 
     def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = "#999999", is_filled: bool = False) -> QPixmap:
@@ -474,6 +481,28 @@ class GDriveApp(QMainWindow):
                 elif file_data.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
                     pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
                 item.setIcon(QIcon(pixmap))
+
+    def show_file_view_context_menu(self):
+        if self.file_view.hasFocus():
+            item = self.file_view.currentItem()
+            if item:
+                # visualItemRect returns rect in viewport coordinates
+                rect = self.file_view.visualItemRect(item)
+                self.on_context_menu(rect.center())
+
+    def on_context_menu(self, pos):
+        item = self.file_view.itemAt(pos)
+        if not item:
+            return
+            
+        file_data = item.data(Qt.UserRole)
+        menu = QMenu(self)
+        open_browser_action = menu.addAction("Open in browser...")
+        
+        action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
+        if action == open_browser_action:
+            url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
+            webbrowser.open(url)
 
     def on_item_activated(self, item: QListWidgetItem):
         file_data = item.data(Qt.UserRole)
