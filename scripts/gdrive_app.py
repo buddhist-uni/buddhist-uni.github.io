@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter,
-                               QListView, QMenu)
+                               QListView, QMenu, QProgressDialog)
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
@@ -16,10 +16,9 @@ import pytablericons
 from pytablericons.outline_icon import OutlineIcon
 from pytablericons.filled_icon import FilledIcon
 
-from gdrive import gcache
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer
+from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread
 from PySide6.QtGui import QPainter, QImage
 
 from collections import OrderedDict
@@ -28,6 +27,50 @@ import pdfutils
 import videoutils
 import gdrive_base
 from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES
+
+
+class GCacheLoaderThread(QThread):
+    progress_text_changed = Signal(str)
+    progress_value_changed = Signal(int, int) # current, total
+    
+    def run(self):
+        import local_gdrive
+        import gdrive_base
+        
+        original_yaspin = getattr(local_gdrive, 'yaspin', None)
+        original_trange = getattr(gdrive_base, 'trange', None)
+        
+        class MockYaspin:
+            def __init__(self_mock, *args, **kwargs):
+                self_mock.text = kwargs.get('text', args[0] if args else "")
+            def __enter__(self_mock):
+                self.progress_text_changed.emit(self_mock.text)
+                self.progress_value_changed.emit(0, 0)
+                return self_mock
+            def __exit__(self_mock, exc_type, exc_val, exc_tb):
+                pass
+            def write(self_mock, text):
+                pass
+                
+        def mock_trange(*args, **kwargs):
+            r = range(*args)
+            total = len(r)
+            self.progress_value_changed.emit(0, total)
+            for i, val in enumerate(r):
+                self.progress_value_changed.emit(i, total)
+                yield val
+            self.progress_value_changed.emit(total, total)
+            
+        local_gdrive.yaspin = MockYaspin
+        gdrive_base.trange = mock_trange
+        
+        try:
+            import gdrive
+        finally:
+            if original_yaspin:
+                local_gdrive.yaspin = original_yaspin
+            if original_trange:
+                gdrive_base.trange = original_trange
 
 
 class ThumbnailWorker(QRunnable):
@@ -144,7 +187,7 @@ def get_mime_icon(mime_type: str) -> QIcon:
     elif mime_type == 'application/vnd.google-apps.shortcut+file':
         return get_icon(OutlineIcon.FILE_SYMLINK, color="#999999")
     elif mime_type == 'application/vnd.google-apps.shortcut+folder':
-        return get_icon(OutlineIcon.FOLDER_SYMLINK, color="#999999")
+        return get_icon(OutlineIcon.FOLDER_SYMLINK, color=color)
     elif mime_type == 'application/vnd.google-apps.document':
         return get_icon(OutlineIcon.FILE_TEXT, color="#4285F4")
     elif mime_type == 'application/vnd.google-apps.spreadsheet':
@@ -192,7 +235,30 @@ class GDriveApp(QMainWindow):
         self.queued_thumbnails = set()
         self.thumbnail_loaded_signal.connect(self.on_thumbnail_loaded)
         
+        self.gcache = None
         self.init_ui()
+        
+        self.progress_dialog = QProgressDialog("Loading GDrive Cache...", "Cancel", 0, 0, self)
+        self.progress_dialog.setWindowTitle("Please Wait")
+        self.progress_dialog.setWindowModality(Qt.WindowModal)
+        self.progress_dialog.setCancelButton(None)
+        self.progress_dialog.setMinimumDuration(0)
+        self.progress_dialog.setValue(0)
+        
+        self.loader_thread = GCacheLoaderThread(self)
+        self.loader_thread.progress_text_changed.connect(self.progress_dialog.setLabelText)
+        self.loader_thread.progress_value_changed.connect(self.update_progress)
+        self.loader_thread.finished.connect(self.on_gcache_loaded)
+        self.loader_thread.start()
+
+    def update_progress(self, current, total):
+        self.progress_dialog.setMaximum(total)
+        self.progress_dialog.setValue(current)
+
+    def on_gcache_loaded(self):
+        self.progress_dialog.close()
+        import gdrive
+        self.gcache = gdrive.gcache
         self.load_root("my_drive")
 
     def init_ui(self):
@@ -272,10 +338,12 @@ class GDriveApp(QMainWindow):
         
         self.file_view.setFocus()
 
-    def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = "#999999", is_filled: bool = False) -> QPixmap:
+    def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = None, is_filled: bool = False) -> QPixmap:
         result = QPixmap(pixmap)
         painter = QPainter(result)
         painter.setRenderHint(QPainter.Antialiasing)
+        if not color:
+            color = QApplication.palette().text().color().name()
         
         overlay_icon = get_icon(icon_enum, color=color, is_filled=is_filled)
         overlay_size = pixmap.width() // 4
@@ -285,8 +353,9 @@ class GDriveApp(QMainWindow):
         x = pixmap.width() - overlay_size - 4
         y = pixmap.height() - overlay_size - 4
         
-        # Draw a white circular background
-        painter.setBrush(Qt.white)
+        # Draw a circular background
+        bg_color = QApplication.palette().window().color().name()
+        painter.setBrush(bg_color)
         painter.setPen(Qt.NoPen)
         painter.drawEllipse(x + 2, y + 2, overlay_size - 4, overlay_size - 4)
         
@@ -296,10 +365,10 @@ class GDriveApp(QMainWindow):
 
     def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None):
         if root_type == "my_drive":
-            items = gcache.get_root_my_drive_children()
+            items = self.gcache.get_root_my_drive_children()
             self.address_bar.setText("My Drive")
         else:
-            items = gcache.get_root_shared_with_me_items()
+            items = self.gcache.get_root_shared_with_me_items()
             self.address_bar.setText("Shared with me")
             
         self.current_folder_id = root_type
@@ -313,7 +382,7 @@ class GDriveApp(QMainWindow):
         self.file_view.repaint()
 
     def load_folder(self, folder_id: str, folder_name: str, add_history=True, highlight_fileid: str | None=None, clicked_item_id: str | None = None):
-        items = gcache.get_children(folder_id)
+        items = self.gcache.get_children(folder_id)
         self.current_folder_id = folder_id
         self.address_bar.setText(folder_name)
         if add_history:
@@ -411,7 +480,7 @@ class GDriveApp(QMainWindow):
             else:
                 pixmap = get_mime_icon(mime).pixmap(self.file_view.iconSize())
             
-            cache_path = gcache.get_cache_path_for_file(item)
+            cache_path = self.gcache.get_cache_path_for_file(item)
             if cache_path:
                 if cache_path.exists():
                     pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
@@ -474,7 +543,7 @@ class GDriveApp(QMainWindow):
             item = self.item_mapping[file_id]
             if item.listWidget() == self.file_view:
                 file_data = item.data(Qt.UserRole)
-                cache_path = gcache.get_cache_path_for_file(file_data)
+                cache_path = self.gcache.get_cache_path_for_file(file_data)
                 if cache_path:
                     if cache_path.exists():
                         pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
@@ -497,11 +566,17 @@ class GDriveApp(QMainWindow):
             
         file_data = item.data(Qt.UserRole)
         menu = QMenu(self)
+        copy_id_action = menu.addAction("Copy ID")
+        copy_link_action = menu.addAction("Copy URL")
         open_browser_action = menu.addAction("Open in browser...")
         
         action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
-        if action == open_browser_action:
-            url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
+        url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
+        if action == copy_id_action:
+            QApplication.clipboard().setText(file_data['id'])
+        elif action == copy_link_action:
+            QApplication.clipboard().setText(url)
+        elif action == open_browser_action:
             webbrowser.open(url)
 
     def on_item_activated(self, item: QListWidgetItem):
@@ -515,10 +590,10 @@ class GDriveApp(QMainWindow):
                 folder_id = file_data['shortcutDetails']['targetId']
                 target_file = None
             else:
-                target_file = gcache.get_item(file_data['shortcutDetails']['targetId'])
+                target_file = self.gcache.get_item(file_data['shortcutDetails']['targetId'])
                 folder_id = target_file['parent_id']
                 target_file = target_file['id']
-            target_folder = gcache.get_item(folder_id)
+            target_folder = self.gcache.get_item(folder_id)
             if not target_folder:
                 url = gdrive_base.FOLDER_LINK.format(folder_id)
                 webbrowser.open(url)
@@ -527,7 +602,7 @@ class GDriveApp(QMainWindow):
             self.open_file(file_data)
 
     def open_file(self, file_data: Dict[str, Any]):
-        cache_path = gcache.get_cache_path_for_file(file_data)
+        cache_path = self.gcache.get_cache_path_for_file(file_data)
         if cache_path and cache_path.exists():
             # Open with default app
             if sys.platform.startswith('linux'):
