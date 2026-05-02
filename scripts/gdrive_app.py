@@ -7,7 +7,7 @@ from dataclasses import dataclass
 
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
-                               QPushButton, QLineEdit, QSplitter,
+                               QPushButton, QLineEdit, QSplitter, QMessageBox,
                                QListView, QMenu, QProgressDialog)
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
@@ -301,7 +301,7 @@ class GDriveApp(QMainWindow):
         self.fwd_btn.clicked.connect(self.go_forward)
         
         self.address_bar = QLineEdit()
-        self.address_bar.setReadOnly(True)
+        self.address_bar.returnPressed.connect(self.on_address_bar_return)
         
         top_bar.addWidget(self.back_btn)
         top_bar.addWidget(self.fwd_btn)
@@ -432,6 +432,36 @@ class GDriveApp(QMainWindow):
     def on_nav_clicked(self, item: QListWidgetItem):
         root_type = item.data(Qt.UserRole)
         self.load_root(root_type)
+
+    def on_address_bar_return(self):
+        if not self.gcache:
+            QMessageBox.information(self, "Loading", "Please wait for the cache to finish loading.")
+            return
+
+        query = self.address_bar.text()
+        if not query:
+            return
+        
+        import gdrive
+        try:
+            # resulting_tuple is (public_folder, private_folder)
+            resulting_tuple = gdrive.get_gfolders_for_course(query, invite_to_add=False)
+            folder_id = resulting_tuple[1] or resulting_tuple[0]
+            if not folder_id:
+                return
+            
+            # Use gcache to get the folder's name
+            folder_item = self.gcache.get_item(folder_id)
+            if folder_item:
+                folder_name = folder_item.get('name', query)
+            else:
+                folder_name = query
+                
+            self.load_folder(folder_id, folder_name)
+        except FileNotFoundError as e:
+            QMessageBox.warning(self, "Not Found", str(e))
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"An error occurred: {e}")
 
     def populate_files(self, items: List[Dict[str, Any]]):
         if hasattr(self, 'current_cancel_flag'):

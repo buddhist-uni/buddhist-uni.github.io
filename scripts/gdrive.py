@@ -169,16 +169,19 @@ def add_tracked_folder(slug, public, private, gfolders=None):
   FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=2))
   return gfolders
 
-def get_gfolders_for_course(course):
+def get_gfolders_for_course(course, invite_to_add=True):
   """Returns a (public, private) tuple of GIDs given a human course string"""
   gfolders = FOLDERS_DATA()
   parts = course.split('/')
   course = parts[0]
   if course not in gfolders:
-    print("Hmmm... I don't know that Google Drive folder! Let's add it:")
-    publicurl = input("Public link: ") or None
-    privateurl = input("Private link: ") or None
-    gfolders = add_tracked_folder(course, publicurl, privateurl, gfolders=gfolders)
+    if invite_to_add:
+      print("Hmmm... I don't know that Google Drive folder! Let's add it:")
+      publicurl = input("Public link: ") or None
+      privateurl = input("Private link: ") or None
+      gfolders = add_tracked_folder(course, publicurl, privateurl, gfolders=gfolders)
+    else:
+      raise FileNotFoundError("I don't know that one!")
   
   private_folder = folderlink_to_id(gfolders[course]['private'])
   public_folder = folderlink_to_id(gfolders[course]['public'])
@@ -208,7 +211,10 @@ def get_gfolders_for_course(course):
     if found:
       del parts[0]
       continue
-    print(f"No subfolder found matching \"{q}\"")
+    err = f"No subfolder found matching \"{q}\""
+    if not invite_to_add:
+      raise FileNotFoundError(err)
+    print(err)
     q = input_with_prefill("Create new subfolder: ", titlecase(parts[0]))
     if not q:
       if public_folder:
