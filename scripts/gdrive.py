@@ -245,20 +245,20 @@ def get_course_for_folder(folderid) -> str | None:
 def move_gfile(glink, folders):
   gfid = link_to_id(glink)
   public_fid, private_fid = folders
-  file = move_drive_file(gfid, public_fid or private_fid)
-  shortcuts = get_shortcuts_to_gfile(gfid)
+  file = gcache.move_file(gfid, public_fid or private_fid)
+  shortcuts = gcache.get_shortcuts_to_file(gfid)
   if public_fid and private_fid:
     if len(shortcuts) != 1:
       print("Creating a (new, private) shortcut...")
-      create_drive_shortcut(gfid, file.get('name'), private_fid)
+      gcache.create_shortcut(gfid, file.get('name'), private_fid)
     elif len(shortcuts) == 1:
       s=shortcuts[0]
       print(f"Moving existing shortcut from  {FOLDER_LINK.format(s['parents'][0])}  to  {FOLDER_LINK.format(private_fid)}  ...")
-      move_drive_file(s['id'], private_fid, previous_parents=s['parents'])
+      gcache.move_file(s['id'], private_fid, previous_parents=s['parents'])
   if not public_fid or not private_fid or len(shortcuts) > 1:
     for s in shortcuts:
       print(f"Trashing the old shortcut in {FOLDER_LINK.format(s['parents'][0])} ...")
-      trash_drive_file(s['id'])
+      gcache.trash_file(s['id'])
   print("Done!")
 
 def guess_link_title(url):

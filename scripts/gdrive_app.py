@@ -8,7 +8,8 @@ from dataclasses import dataclass
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter, QMessageBox,
-                               QListView, QMenu, QProgressDialog, QCompleter)
+                               QListView, QMenu, QProgressDialog, QCompleter,
+                               QDialog, QLabel)
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
@@ -214,6 +215,60 @@ class HistoryEntry:
     id: str
     name: str
     clicked_item_id: Optional[str] = None
+
+
+class MoveFileDialog(QDialog):
+    def __init__(self, parent=None, gcache=None):
+        super().__init__(parent)
+        self.setWindowTitle("Move File")
+        self.setMinimumWidth(400)
+        self.gcache = gcache
+        self.resulting_tuple = None
+        
+        layout = QVBoxLayout(self)
+        layout.addWidget(QLabel("Move to folder (e.g. 'course/subfolder'):"))
+        
+        self.line_edit = QLineEdit()
+        self.completer = QCompleter()
+        self.completer_model = QStringListModel()
+        self.completer.setModel(self.completer_model)
+        self.completer.setCaseSensitivity(Qt.CaseInsensitive)
+        self.completer.setCompletionMode(QCompleter.PopupCompletion)
+        self.completer.setFilterMode(Qt.MatchContains)
+        self.line_edit.setCompleter(self.completer)
+        self.line_edit.textEdited.connect(self.update_completer)
+        layout.addWidget(self.line_edit)
+        
+        buttons = QHBoxLayout()
+        self.move_btn = QPushButton("Move")
+        self.move_btn.clicked.connect(self.handle_move)
+        self.cancel_btn = QPushButton("Cancel")
+        self.cancel_btn.clicked.connect(self.reject)
+        buttons.addWidget(self.move_btn)
+        buttons.addWidget(self.cancel_btn)
+        layout.addLayout(buttons)
+        
+        self.line_edit.returnPressed.connect(self.handle_move)
+
+    def update_completer(self, text):
+        if not text or not self.gcache:
+            return
+        import gdrive
+        suggestions = gdrive.get_course_suggestions(text)
+        self.completer_model.setStringList(suggestions)
+
+    def handle_move(self):
+        query = self.line_edit.text()
+        if not query:
+            return
+        import gdrive
+        try:
+            self.resulting_tuple = gdrive.get_gfolders_for_course(query, invite_to_add=False)
+            self.accept()
+        except FileNotFoundError as e:
+            QMessageBox.warning(self, "Not Found", str(e))
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"An error occurred: {e}")
 
 class GDriveApp(QMainWindow):
     thumbnail_loaded_signal = Signal(str, QImage)
@@ -644,6 +699,7 @@ class GDriveApp(QMainWindow):
         copy_id_action = menu.addAction("Copy ID")
         copy_link_action = menu.addAction("Copy URL")
         open_browser_action = menu.addAction("Open in browser...")
+        move_file_action = menu.addAction("Move file...")
         
         action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
         url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
@@ -653,6 +709,36 @@ class GDriveApp(QMainWindow):
             QApplication.clipboard().setText(url)
         elif action == open_browser_action:
             webbrowser.open(url)
+        elif action == move_file_action:
+            self.move_file(file_data)
+
+    def move_file(self, file_data: dict[str, Any]):
+        dialog = MoveFileDialog(self, self.gcache)
+        if dialog.exec():
+            try:
+                import gdrive
+                # Use a progress dialog for the move operation as it can be slow
+                progress = QProgressDialog("Moving file...", None, 0, 0, self)
+                progress.setWindowTitle("Moving")
+                progress.setWindowModality(Qt.WindowModal)
+                progress.show()
+                QApplication.processEvents()
+                
+                gdrive.move_gfile(file_data['id'], dialog.resulting_tuple)
+                
+                progress.close()
+                
+                self.refresh()
+                    
+            except Exception as e:
+                QMessageBox.critical(self, "Error", f"Failed to move file: {e}")
+
+    def refresh(self):
+        """Reloads the current folder (to pick up file changes)"""
+        if self.current_folder_id in ["my_drive", "shared_with_me"]:
+            self.load_root(self.current_folder_id, add_history=False)
+        else:
+            self.load_folder(self.current_folder_id, self.address_bar.text(), add_history=False)
 
     def on_item_activated(self, item: QListWidgetItem):
         file_data = item.data(Qt.UserRole)
