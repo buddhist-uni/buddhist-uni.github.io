@@ -300,6 +300,10 @@ class GDriveApp(QMainWindow):
         self.fwd_btn.setIcon(get_icon(OutlineIcon.ARROW_RIGHT))
         self.fwd_btn.clicked.connect(self.go_forward)
         
+        self.up_btn = QPushButton()
+        self.up_btn.setIcon(get_icon(OutlineIcon.ARROW_UP))
+        self.up_btn.clicked.connect(self.go_up)
+        
         self.address_bar = QLineEdit()
         self.address_bar.returnPressed.connect(self.on_address_bar_return)
         
@@ -314,6 +318,7 @@ class GDriveApp(QMainWindow):
         
         top_bar.addWidget(self.back_btn)
         top_bar.addWidget(self.fwd_btn)
+        top_bar.addWidget(self.up_btn)
         top_bar.addWidget(self.address_bar)
         
         right_layout.addLayout(top_bar)
@@ -434,9 +439,33 @@ class GDriveApp(QMainWindow):
             self.load_folder(folder_id, name, add_history=False, highlight_fileid=highlight_fileid)
         self.update_nav_buttons()
 
+    def go_up(self):
+        if self.current_folder_id in ["my_drive", "shared_with_me"]:
+            return
+            
+        current_item = self.gcache.get_item(self.current_folder_id)
+        if not current_item:
+            return
+            
+        parent_id = current_item.get('parent_id')
+        if not parent_id:
+            # Shared with me root items have parent_id IS NULL in gcache
+            self.load_root("shared_with_me", highlight_fileid=self.current_folder_id)
+            return
+
+        if len(parent_id) == 19:
+            # My Drive root items have parent_id length 19 in gcache
+            self.load_root("my_drive", highlight_fileid=self.current_folder_id)
+            return
+
+        parent_item = self.gcache.get_item(parent_id)
+        if parent_item:
+            self.load_folder(parent_id, parent_item['name'], highlight_fileid=self.current_folder_id)
+
     def update_nav_buttons(self):
         self.back_btn.setEnabled(self.history_index > 0)
         self.fwd_btn.setEnabled(self.history_index < len(self.history) - 1)
+        self.up_btn.setEnabled(self.current_folder_id not in ["my_drive", "shared_with_me"])
 
     def on_nav_clicked(self, item: QListWidgetItem):
         root_type = item.data(Qt.UserRole)
