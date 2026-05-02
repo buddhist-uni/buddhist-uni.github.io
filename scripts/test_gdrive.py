@@ -605,6 +605,54 @@ def test_handle_close_pair_decision_same_tag_folder(test_db):
                     args, _ = mock_move.call_args
                     assert args[0] == file_b['id']
 
+def test_get_course_suggestions_top_level():
+    mock_folders = {
+        'course1': {'public': 'link1', 'private': 'link2'},
+        'course2': {'public': 'link3', 'private': 'link4'},
+    }
+    with mock.patch('gdrive.FOLDERS_DATA', return_value=mock_folders):
+        suggestions = gdrive.get_course_suggestions('course')
+        assert set(suggestions) == {'course1', 'course2'}
+        
+        suggestions = gdrive.get_course_suggestions('course1')
+        assert suggestions == ['course1']
+
+def test_get_course_suggestions_subfolders(test_db):
+    mock_folders = {
+        'course1': {'public': 'pub1', 'private': 'priv1'},
+    }
+    
+    # Mock folderlink_to_id
+    with mock.patch('gdrive.folderlink_to_id', return_value='priv1_id'), \
+         mock.patch('gdrive.FOLDERS_DATA', return_value=mock_folders), \
+         mock.patch('gdrive.gcache', test_db):
+        
+        # Inject items into test_db
+        with test_db._lock:
+            sql = "INSERT INTO drive_items (id, version, name, mime_type, parent_id, modified_time, owner) VALUES (?, ?, ?, ?, ?, ?, 1)"
+            now = '2024-01-01T00:00:00Z'
+            test_db.cursor.execute(sql, ('priv1_id', 1, 'Course 1', 'application/vnd.google-apps.folder', 'root', now))
+            test_db.cursor.execute(sql, ('sub1_id', 1, 'Sub Folder 1', 'application/vnd.google-apps.folder', 'priv1_id', now))
+            test_db.cursor.execute(sql, ('sub2_id', 1, 'Another Sub', 'application/vnd.google-apps.folder', 'priv1_id', now))
+            test_db.cursor.execute(sql, ('subsub1_id', 1, 'Nested One', 'application/vnd.google-apps.folder', 'sub1_id', now))
+            test_db.conn.commit()
+
+        # course1/ -> matches subfolders of priv1_id
+        suggestions = gdrive.get_course_suggestions('course1/')
+        assert 'course1/Sub Folder 1/' in suggestions
+        assert 'course1/Another Sub' in suggestions
+
+        # course1/sub -> matches Sub Folder 1 (Another Sub doesn't contain "sub")
+        # Wait, q in f['name'].lower()
+        # "Sub Folder 1" contains "sub"
+        # "Another Sub" contains "sub"
+        suggestions = gdrive.get_course_suggestions('course1/sub')
+        assert set(suggestions) == {'course1/Sub Folder 1/', 'course1/Another Sub'}
+        
+        # course1/Sub Folder 1/n -> matches Nested One
+        suggestions = gdrive.get_course_suggestions('course1/Sub Folder 1/n')
+        assert suggestions == ['course1/Sub Folder 1/Nested One']
+
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "extract":
         extract_to_test_db(sys.argv[2:])

@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter, QMessageBox,
-                               QListView, QMenu, QProgressDialog)
+                               QListView, QMenu, QProgressDialog, QCompleter)
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
@@ -18,7 +18,7 @@ from pytablericons.filled_icon import FilledIcon
 
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread
+from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel
 from PySide6.QtGui import QPainter, QImage
 
 from collections import OrderedDict
@@ -303,6 +303,15 @@ class GDriveApp(QMainWindow):
         self.address_bar = QLineEdit()
         self.address_bar.returnPressed.connect(self.on_address_bar_return)
         
+        self.completer = QCompleter()
+        self.completer_model = QStringListModel()
+        self.completer.setModel(self.completer_model)
+        self.completer.setCaseSensitivity(Qt.CaseInsensitive)
+        self.completer.setCompletionMode(QCompleter.PopupCompletion)
+        self.completer.setFilterMode(Qt.MatchContains)
+        self.address_bar.setCompleter(self.completer)
+        self.address_bar.textEdited.connect(self.update_completer)
+        
         top_bar.addWidget(self.back_btn)
         top_bar.addWidget(self.fwd_btn)
         top_bar.addWidget(self.address_bar)
@@ -462,6 +471,13 @@ class GDriveApp(QMainWindow):
             QMessageBox.warning(self, "Not Found", str(e))
         except Exception as e:
             QMessageBox.critical(self, "Error", f"An error occurred: {e}")
+
+    def update_completer(self, text):
+        if not text or not self.gcache:
+            return
+        import gdrive
+        suggestions = gdrive.get_course_suggestions(text)
+        self.completer_model.setStringList(suggestions)
 
     def populate_files(self, items: List[Dict[str, Any]]):
         if hasattr(self, 'current_cancel_flag'):

@@ -92,50 +92,54 @@ def FOLDERS_DATA() -> dict[str, dict[str, str]]:
     FOLDERS_DATA.ret = json.loads(FOLDERS_DATA_FILE.read_text())
   return FOLDERS_DATA.ret
 
-def course_input_completer_factory() -> Callable[[str, int], str]:
-  gfolders: dict[str, dict[str, str]]
+def get_course_suggestions(so_far: str) -> list[str]:
   gfolders = FOLDERS_DATA()
-  suggestions_cache: dict[str, list[str]]
-  suggestions_cache = dict()
-  subfolders_cache = dict()
-  def _ret(so_far: str, suggestion_idx: int) -> str:
+  if '/' not in so_far:
+    return [
+      course_name for course_name in gfolders.keys()
+      if course_name and course_name.startswith(so_far)
+    ]
+  
+  parts = so_far.split('/')
+  course = parts[0]
+  if course not in gfolders:
+    return []
+  
+  links = gfolders[course]
+  flink = links['private'] or links['public']
+  fid = folderlink_to_id(flink)
+  pidx = 1
+  prefix = course
+  while True:
+    subfolders = gcache.get_subfolders(fid)
+    q = parts[pidx].lower()
+    matches = [f for f in subfolders if q in f['name'].lower()]
+    
+    if len(parts) <= pidx + 1:
+      # We are at the last part, return matches
+      ret = []
+      for f in matches:
+        # Check if it has subfolders to add trailing slash
+        has_children = len(gcache.get_subfolders(f['id'])) > 0
+        ret.append(f"{prefix}/{f['name']}{'/' if has_children else ''}")
+      return ret
+    
+    if len(matches) != 1:
+      return []
+    
+    fid = matches[0]['id']
+    prefix = f"{prefix}/{matches[0]['name']}"
+    pidx += 1
+
+def course_input_completer_factory() -> Callable[[str, int], str | None]:
+  suggestions_cache: dict[str, list[str]] = {}
+  def _ret(so_far: str, suggestion_idx: int) -> str | None:
     if so_far not in suggestions_cache:
-      if '/' not in so_far:
-        suggestions_cache[so_far] = [
-          course_name for course_name in gfolders.keys()
-          if course_name and course_name.startswith(so_far)
-        ]
-      else:
-        parts = so_far.split('/')
-        course = parts[0]
-        if course not in gfolders:
-          suggestions_cache[so_far] = []
-        else:
-          links = gfolders[course]
-          flink = links['private'] or links['public']
-          fid = folderlink_to_id(flink)
-          pidx = 1
-          prefix = course
-          while True:
-            if fid in subfolders_cache:
-              subfolders = subfolders_cache[fid]
-            else:
-              subfolders = gcache.get_subfolders(fid)
-              subfolders_cache[fid] = subfolders
-            matches = [f for f in subfolders if parts[pidx].lower() in f['name'].lower()]
-            for f in matches:
-              if f['id'] not in subfolders_cache:
-                subfolders_cache[f['id']] = gcache.get_subfolders(f['id'])
-            if len(parts) <= pidx + 1:
-              suggestions_cache[so_far] = [f"{prefix}/{f['name']}{'/' if subfolders_cache[f['id']] else ''}" for f in matches]
-              break
-            if len(matches) != 1: # Don't know which, so we better run
-              suggestions_cache[so_far] = []
-              break
-            fid = matches[0]['id']
-            prefix = f"{prefix}/{matches[0]['name']}"
-            pidx += 1
-    return suggestions_cache[so_far][suggestion_idx]
+      suggestions_cache[so_far] = get_course_suggestions(so_far)
+    
+    if suggestion_idx < len(suggestions_cache[so_far]):
+      return suggestions_cache[so_far][suggestion_idx]
+    return None
 
   return _ret
 
