@@ -9,7 +9,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter, QMessageBox,
                                QListView, QMenu, QProgressDialog, QCompleter,
-                               QDialog, QLabel)
+                               QDialog, QLabel, QInputDialog)
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
@@ -405,6 +405,10 @@ class GDriveApp(QMainWindow):
         self.context_shortcut = QShortcut(QKeySequence("Shift+F10"), self)
         self.context_shortcut.activated.connect(self.show_file_view_context_menu)
         
+        # Shortcut for renaming
+        self.rename_shortcut = QShortcut(QKeySequence("F2"), self)
+        self.rename_shortcut.activated.connect(self.trigger_rename)
+        
         self.file_view.setFocus()
 
     def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = None, is_filled: bool = False) -> QPixmap:
@@ -699,6 +703,7 @@ class GDriveApp(QMainWindow):
         copy_id_action = menu.addAction("Copy ID")
         copy_link_action = menu.addAction("Copy URL")
         open_browser_action = menu.addAction("Open in browser...")
+        rename_action = menu.addAction("Rename...")
         move_file_action = menu.addAction("Move file...")
         
         action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
@@ -709,8 +714,38 @@ class GDriveApp(QMainWindow):
             QApplication.clipboard().setText(url)
         elif action == open_browser_action:
             webbrowser.open(url)
+        elif action == rename_action:
+            self.rename_file(file_data)
         elif action == move_file_action:
             self.move_file(file_data)
+
+    def trigger_rename(self):
+        if self.file_view.hasFocus():
+            item = self.file_view.currentItem()
+            if item:
+                file_data = item.data(Qt.UserRole)
+                self.rename_file(file_data)
+
+    def rename_file(self, file_data: Dict[str, Any]):
+        new_name, ok = QInputDialog.getText(
+            self, "Rename", "Enter new name:",
+            text=file_data['name']
+        )
+        if ok and new_name and new_name != file_data['name']:
+            try:
+                # Use a progress dialog for the rename operation as it can be slow
+                progress = QProgressDialog("Renaming...", None, 0, 0, self)
+                progress.setWindowTitle("Renaming")
+                progress.setWindowModality(Qt.WindowModal)
+                progress.show()
+                QApplication.processEvents()
+                
+                self.gcache.rename_file(file_data['id'], new_name)
+                
+                progress.close()
+                self.refresh()
+            except Exception as e:
+                QMessageBox.critical(self, "Error", f"Failed to rename file: {e}")
 
     def move_file(self, file_data: dict[str, Any]):
         dialog = MoveFileDialog(self, self.gcache)
