@@ -466,6 +466,11 @@ class DriveCache:
                     'me': True if owner['id'] == 1 else False,
                 }]
         del ret['owner']
+        if 'trashed_time' in ret: # even if it's None
+            if ret['trashed_time']:
+                ret['trashedTime'] = ret['trashed_time']
+            ret['trashed'] = True
+            del ret['trashed_time']
         return ret
     
     @locked
@@ -705,8 +710,8 @@ class DriveCache:
         if not isinstance(self.file_cache_dir, Path):
             return None
 
-        if 'trashed_time' in file:
-            rm_date = file['trashed_time'] or file['modifiedTime']
+        if file.get('trashedTime') or file.get('trashed'):
+            rm_date = file.get('trashedTime') or file['modifiedTime']
             rm_date = datetime.fromisoformat(rm_date)
             return self.file_cache_dir / 'trash' / str(rm_date.year) / f"{rm_date.month:02d}" / file['name']
         
@@ -790,7 +795,7 @@ class DriveCache:
         if not remote_files:
             remote_files = self.get_trashed_items_with_md5(hashval)
             if remote_files:
-                rm_date = max(f['trashed_time'] or f['modifiedTime'] for f in remote_files)
+                rm_date = max(f['trashedTime'] or f['modifiedTime'] for f in remote_files)
                 rm_date = datetime.fromisoformat(rm_date)
                 return self.file_cache_dir / 'trash' / str(rm_date.year) / f"{rm_date.month:02d}" / remote_files[0]['name']
             return None
@@ -824,7 +829,7 @@ class DriveCache:
             self.conn.commit()
 
     @locked
-    def _move_to_trash(self, file_id: str, trashed_time: str = None):
+    def _move_to_trash(self, file_id: str, trashed_time: str = None) -> Dict[str, Any]:
         # If we get a removal event from the API for a file already in the trash,
         # only add the timestamp to the trash table if the item had a NULL trashed time before.
         self.cursor.execute("SELECT trashed_time FROM trashed_drive_items WHERE id = ?", (file_id,))
@@ -844,11 +849,20 @@ class DriveCache:
                 modified_time, size, owner, md5_checksum, shortcut_target
             FROM drive_items 
             WHERE id = ?
+            RETURNING *
         """, (file_id,))
+        file = self.row_dict_to_api_dict(dict(self.cursor.fetchone()))
+        before_cache_path = self.get_cache_path_for_file(file)
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
-
         if trashed_time:
             self.cursor.execute("UPDATE trashed_drive_items SET trashed_time = ? WHERE id = ?", (trashed_time, file_id))
+            file['trashedTime'] = trashed_time
+        file['trashed'] = True
+        if before_cache_path and before_cache_path.exists():
+            new_cache_path = self.get_cache_path_for_file(file)
+            assert new_cache_path and new_cache_path != before_cache_path
+            before_cache_path.rename(new_cache_path)
+        return file
 
     def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
         folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
