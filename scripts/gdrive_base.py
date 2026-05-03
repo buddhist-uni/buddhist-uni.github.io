@@ -399,6 +399,13 @@ def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str
   ))
   return shortcut.get('id')
 
+def create_drive_comment(target_file_id: str, comment_text: str) -> str:
+  service = session()
+  res = execute(service.comments().create(fileId=target_file_id, fields="id", body={
+    'content': comment_text,
+  }))
+  return res.get('id')
+
 def deref_possible_shortcut(gfid):
   """Returns the id of what gfid is pointing to OR gfid"""
   service = session()

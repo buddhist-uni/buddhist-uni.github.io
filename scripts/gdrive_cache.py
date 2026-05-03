@@ -467,7 +467,7 @@ def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: 
     target_path.unlink()
   target_path.parent.mkdir(exist_ok=True, parents=is_in_trash)
   if move:
-    file.rename(target_path)
+    shutil.move(src=file, dst=target_path)
   else:
     shutil.copy2(file, target_path)
 
