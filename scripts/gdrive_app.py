@@ -408,6 +408,12 @@ class GDriveApp(QMainWindow):
         # Shortcut for renaming
         self.rename_shortcut = QShortcut(QKeySequence("F2"), self)
         self.rename_shortcut.activated.connect(self.trigger_rename)
+
+        # Shortcuts for exiting
+        self.quit_shortcut = QShortcut(QKeySequence("Ctrl+Q"), self)
+        self.quit_shortcut.activated.connect(self.close)
+        self.close_shortcut = QShortcut(QKeySequence("Ctrl+W"), self)
+        self.close_shortcut.activated.connect(self.close)
         
         self.file_view.setFocus()
 
