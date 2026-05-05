@@ -542,6 +542,26 @@ class GDriveApp(QMainWindow):
         query = self.address_bar.text()
         if not query:
             return
+
+        file_id = gdrive_base.link_to_id(query)
+        if file_id:
+            file_data = self.gcache.get_item(file_id)
+            if not file_data:
+                QMessageBox.warning(self, "File not found", f"The file with id {file_id} was not found in the cache.")
+                return
+            if file_data['mimeType'] == 'application/vnd.google-apps.folder':
+                self.load_folder(file_id, file_data['name'], add_history=True)
+                return
+            parent = self.gcache.get_item(file_data['parent_id'])
+            if not parent:
+                assert not file_data['owners'][0]['me']
+                self.load_root("shared_with_me", highlight_fileid=file_id)
+                return
+            if len(parent['id']) == 19:
+                self.load_root("my_drive", add_history=True, highlight_fileid=file_id)
+                return
+            self.load_folder(parent['id'], parent['name'], add_history=True, highlight_fileid=file_id)
+            return
         
         import gdrive
         try:
