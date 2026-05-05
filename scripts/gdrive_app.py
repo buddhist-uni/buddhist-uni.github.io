@@ -707,11 +707,12 @@ class GDriveApp(QMainWindow):
             
         file_data = item.data(Qt.ItemDataRole.UserRole)
         menu = QMenu(self)
-        copy_id_action = menu.addAction("Copy ID")
-        copy_link_action = menu.addAction("Copy URL")
-        open_browser_action = menu.addAction("Open in browser...")
-        rename_action = menu.addAction("Rename...")
-        move_file_action = menu.addAction("Move file...")
+        # The & below marks which letter is the hotkey for that option
+        copy_id_action = menu.addAction("Copy &ID")
+        copy_link_action = menu.addAction("Copy &URL")
+        open_browser_action = menu.addAction("&Open in browser...")
+        rename_action = menu.addAction("&Rename...")
+        move_file_action = menu.addAction("&Move file...")
         
         action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
         url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
