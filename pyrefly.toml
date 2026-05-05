@@ -1,0 +1,2 @@
+project_includes = ["scripts"]
+search_path = ["scripts"]

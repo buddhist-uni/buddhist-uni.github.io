@@ -14,5 +14,14 @@
     "cSpell.words": [
         "Vajrayāna"
     ],
-    "python-envs.pythonProjects": []
+    "python-envs.pythonProjects": [
+        {
+            "path": "${workspaceFolder}/scripts"
+        }
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/obu/bin/python",
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/scripts"
+    ],
+    "python.pyrefly.configPath": "pyrefly.toml"
 }

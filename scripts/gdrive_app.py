@@ -62,7 +62,7 @@ class GCacheLoaderThread(QThread):
                 yield val
             self.progress_value_changed.emit(total, total)
             
-        local_gdrive.yaspin = MockYaspin
+        local_gdrive.yaspin = MockYaspin # pyrefly: ignore[bad-assignment]
         gdrive_base.trange = mock_trange
         
         try:
@@ -172,10 +172,10 @@ def get_icon(icon_enum, is_filled=False, color: Optional[str] = None) -> QIcon:
     
     size = 128
     pixmap = QPixmap(size, size)
-    pixmap.fill(Qt.transparent)
+    pixmap.fill(Qt.GlobalColor.transparent)
     
     painter = QPainter(pixmap)
-    painter.setRenderHint(QPainter.Antialiasing)
+    painter.setRenderHint(QPainter.RenderHint.Antialiasing)
     renderer.render(painter)
     painter.end()
     
@@ -194,7 +194,7 @@ def get_mime_icon(mime_type: str) -> QIcon:
     elif mime_type == 'application/vnd.google-apps.spreadsheet':
         return get_icon(OutlineIcon.FILE_SPREADSHEET, color="#0F9D58")
     elif mime_type == 'application/vnd.google-apps.presentation':
-        return get_icon(OutlineIcon.FILE_PRESENTATION, color="#F4B400")
+        return get_icon(OutlineIcon.FILE_POWER, color="#F4B400")
     elif mime_type == 'application/pdf':
         return get_icon(OutlineIcon.FILE_TYPE_PDF, color="#DB4437")
     elif mime_type.startswith('image/'):
@@ -232,9 +232,9 @@ class MoveFileDialog(QDialog):
         self.completer = QCompleter()
         self.completer_model = QStringListModel()
         self.completer.setModel(self.completer_model)
-        self.completer.setCaseSensitivity(Qt.CaseInsensitive)
-        self.completer.setCompletionMode(QCompleter.PopupCompletion)
-        self.completer.setFilterMode(Qt.MatchContains)
+        self.completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
+        self.completer.setCompletionMode(QCompleter.CompletionMode.PopupCompletion)
+        self.completer.setFilterMode(Qt.MatchFlag.MatchContains)
         self.line_edit.setCompleter(self.completer)
         self.line_edit.textEdited.connect(self.update_completer)
         layout.addWidget(self.line_edit)
@@ -295,7 +295,7 @@ class GDriveApp(QMainWindow):
         
         self.progress_dialog = QProgressDialog("Loading GDrive Cache...", "Cancel", 0, 0, self)
         self.progress_dialog.setWindowTitle("Please Wait")
-        self.progress_dialog.setWindowModality(Qt.WindowModal)
+        self.progress_dialog.setWindowModality(Qt.WindowModality.WindowModal)
         self.progress_dialog.setCancelButton(None)
         self.progress_dialog.setMinimumDuration(0)
         self.progress_dialog.setValue(0)
@@ -317,7 +317,7 @@ class GDriveApp(QMainWindow):
         self.load_root("my_drive")
 
     def init_ui(self):
-        central_widget = QSplitter(Qt.Horizontal)
+        central_widget = QSplitter(Qt.Orientation.Horizontal)
         self.setCentralWidget(central_widget)
         
         # Left Panel
@@ -329,12 +329,12 @@ class GDriveApp(QMainWindow):
         self.nav_list.setIconSize(QSize(24, 24))
         my_drive_item = QListWidgetItem("My Drive")
         my_drive_item.setIcon(get_icon(OutlineIcon.BRAND_GOOGLE_DRIVE))
-        my_drive_item.setData(Qt.UserRole, "my_drive")
+        my_drive_item.setData(Qt.ItemDataRole.UserRole, "my_drive")
         self.nav_list.addItem(my_drive_item)
         
         shared_item = QListWidgetItem("Shared with me")
         shared_item.setIcon(get_icon(OutlineIcon.USERS))
-        shared_item.setData(Qt.UserRole, "shared_with_me")
+        shared_item.setData(Qt.ItemDataRole.UserRole, "shared_with_me")
         self.nav_list.addItem(shared_item)
         
         self.nav_list.itemClicked.connect(self.on_nav_clicked)
@@ -365,9 +365,9 @@ class GDriveApp(QMainWindow):
         self.completer = QCompleter()
         self.completer_model = QStringListModel()
         self.completer.setModel(self.completer_model)
-        self.completer.setCaseSensitivity(Qt.CaseInsensitive)
-        self.completer.setCompletionMode(QCompleter.PopupCompletion)
-        self.completer.setFilterMode(Qt.MatchContains)
+        self.completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
+        self.completer.setCompletionMode(QCompleter.CompletionMode.PopupCompletion)
+        self.completer.setFilterMode(Qt.MatchFlag.MatchContains)
         self.address_bar.setCompleter(self.completer)
         self.address_bar.textEdited.connect(self.update_completer)
         
@@ -380,16 +380,16 @@ class GDriveApp(QMainWindow):
         
         # Main File View
         self.file_view = QListWidget()
-        self.file_view.setViewMode(QListView.IconMode)
+        self.file_view.setViewMode(QListView.ViewMode.IconMode)
         self.file_view.setIconSize(QSize(128, 128))
-        self.file_view.setResizeMode(QListView.Adjust)
+        self.file_view.setResizeMode(QListView.ResizeMode.Adjust)
         self.file_view.setSpacing(10)
         self.file_view.setWordWrap(True)
         # Set a fixed grid size to constrain item width, which forces the default 
         # WrapAtWordBoundaryOrAnywhere behavior to actually wrap instead of expanding the item.
         self.file_view.setGridSize(QSize(160, 200))
         self.file_view.itemActivated.connect(self.on_item_activated)
-        self.file_view.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.file_view.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.file_view.customContextMenuRequested.connect(self.on_context_menu)
         
         right_layout.addWidget(self.file_view)
@@ -411,10 +411,10 @@ class GDriveApp(QMainWindow):
         
         self.file_view.setFocus()
 
-    def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str = None, is_filled: bool = False) -> QPixmap:
+    def apply_icon_overlay(self, pixmap: QPixmap, icon_enum: Any, color: str | None = None, is_filled: bool = False) -> QPixmap:
         result = QPixmap(pixmap)
         painter = QPainter(result)
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         if not color:
             color = QApplication.palette().text().color().name()
         
@@ -429,7 +429,7 @@ class GDriveApp(QMainWindow):
         # Draw a circular background
         bg_color = QApplication.palette().window().color().name()
         painter.setBrush(bg_color)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(Qt.PenStyle.NoPen)
         painter.drawEllipse(x + 2, y + 2, overlay_size - 4, overlay_size - 4)
         
         painter.drawPixmap(x, y, overlay_pixmap)
@@ -437,6 +437,8 @@ class GDriveApp(QMainWindow):
         return result
 
     def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None):
+        if not self.gcache:
+            return
         if root_type == "my_drive":
             items = self.gcache.get_root_my_drive_children()
             self.address_bar.setText("My Drive")
@@ -455,6 +457,8 @@ class GDriveApp(QMainWindow):
         self.file_view.repaint()
 
     def load_folder(self, folder_id: str, folder_name: str, add_history=True, highlight_fileid: str | None=None, clicked_item_id: str | None = None):
+        if not self.gcache:
+            return
         items = self.gcache.get_children(folder_id)
         self.current_folder_id = folder_id
         self.address_bar.setText(folder_name)
@@ -499,7 +503,7 @@ class GDriveApp(QMainWindow):
         self.update_nav_buttons()
 
     def go_up(self):
-        if self.current_folder_id in ["my_drive", "shared_with_me"]:
+        if self.current_folder_id in ["my_drive", "shared_with_me"] or not self.gcache:
             return
             
         current_item = self.gcache.get_item(self.current_folder_id)
@@ -527,7 +531,7 @@ class GDriveApp(QMainWindow):
         self.up_btn.setEnabled(self.current_folder_id not in ["my_drive", "shared_with_me"])
 
     def on_nav_clicked(self, item: QListWidgetItem):
-        root_type = item.data(Qt.UserRole)
+        root_type = item.data(Qt.ItemDataRole.UserRole)
         self.load_root(root_type)
 
     def on_address_bar_return(self):
@@ -568,6 +572,8 @@ class GDriveApp(QMainWindow):
         self.completer_model.setStringList(suggestions)
 
     def populate_files(self, items: List[Dict[str, Any]]):
+        if not self.gcache:
+            return
         if hasattr(self, 'current_cancel_flag'):
             self.current_cancel_flag[0] = True
         self.current_cancel_flag = [False]
@@ -626,7 +632,7 @@ class GDriveApp(QMainWindow):
             if not cached_pixmap and (mime == 'application/pdf' or mime.startswith('video/')):
                 items_needing_thumbnails.append(item)
             
-            list_item.setData(Qt.UserRole, item)
+            list_item.setData(Qt.ItemDataRole.UserRole, item)
             self.file_view.addItem(list_item)
             self.item_mapping[file_id] = list_item
         
@@ -640,7 +646,7 @@ class GDriveApp(QMainWindow):
         
         for i in range(self.file_view.count()):
             item = self.file_view.item(i)
-            file_data = item.data(Qt.UserRole)
+            file_data = item.data(Qt.ItemDataRole.UserRole)
             mime = file_data.get('mimeType', '')
             file_id = file_data.get('id', '')
             
@@ -661,8 +667,8 @@ class GDriveApp(QMainWindow):
         # and ensure the previous render is fully cleared.
         target_size = self.file_view.iconSize().width()
         if not img.isNull() and (img.width() != target_size or img.height() != target_size):
-            padded = QImage(target_size, target_size, QImage.Format_ARGB32)
-            padded.fill(Qt.transparent)
+            padded = QImage(target_size, target_size, QImage.Format.Format_ARGB32)
+            padded.fill(Qt.GlobalColor.transparent)
             painter = QPainter(padded)
             # Center the image
             x = (target_size - img.width()) // 2
@@ -676,7 +682,8 @@ class GDriveApp(QMainWindow):
         if file_id in self.item_mapping:
             item = self.item_mapping[file_id]
             if item.listWidget() == self.file_view:
-                file_data = item.data(Qt.UserRole)
+                file_data = item.data(Qt.ItemDataRole.UserRole)
+                assert self.gcache
                 cache_path = self.gcache.get_cache_path_for_file(file_data)
                 if cache_path:
                     if cache_path.exists():
@@ -698,7 +705,7 @@ class GDriveApp(QMainWindow):
         if not item:
             return
             
-        file_data = item.data(Qt.UserRole)
+        file_data = item.data(Qt.ItemDataRole.UserRole)
         menu = QMenu(self)
         copy_id_action = menu.addAction("Copy ID")
         copy_link_action = menu.addAction("Copy URL")
@@ -723,7 +730,7 @@ class GDriveApp(QMainWindow):
         if self.file_view.hasFocus():
             item = self.file_view.currentItem()
             if item:
-                file_data = item.data(Qt.UserRole)
+                file_data = item.data(Qt.ItemDataRole.UserRole)
                 self.rename_file(file_data)
 
     def rename_file(self, file_data: Dict[str, Any]):
@@ -734,12 +741,13 @@ class GDriveApp(QMainWindow):
         if ok and new_name and new_name != file_data['name']:
             try:
                 # Use a progress dialog for the rename operation as it can be slow
-                progress = QProgressDialog("Renaming...", None, 0, 0, self)
+                progress = QProgressDialog("Renaming...", "Cancel", 0, 0, self)
                 progress.setWindowTitle("Renaming")
-                progress.setWindowModality(Qt.WindowModal)
+                progress.setWindowModality(Qt.WindowModality.WindowModal)
                 progress.show()
                 QApplication.processEvents()
                 
+                assert self.gcache
                 self.gcache.rename_file(file_data['id'], new_name)
                 
                 progress.close()
@@ -753,9 +761,9 @@ class GDriveApp(QMainWindow):
             try:
                 import gdrive
                 # Use a progress dialog for the move operation as it can be slow
-                progress = QProgressDialog("Moving file...", None, 0, 0, self)
+                progress = QProgressDialog("Moving file...", "Cancel", 0, 0, self)
                 progress.setWindowTitle("Moving")
-                progress.setWindowModality(Qt.WindowModal)
+                progress.setWindowModality(Qt.WindowModality.WindowModal)
                 progress.show()
                 QApplication.processEvents()
                 
@@ -773,10 +781,12 @@ class GDriveApp(QMainWindow):
         if self.current_folder_id in ["my_drive", "shared_with_me"]:
             self.load_root(self.current_folder_id, add_history=False)
         else:
+            assert self.current_folder_id
             self.load_folder(self.current_folder_id, self.address_bar.text(), add_history=False)
 
     def on_item_activated(self, item: QListWidgetItem):
-        file_data = item.data(Qt.UserRole)
+        assert self.gcache
+        file_data = item.data(Qt.ItemDataRole.UserRole)
         mime = file_data.get('mimeType', '')
         
         if mime == 'application/vnd.google-apps.folder':
@@ -798,6 +808,7 @@ class GDriveApp(QMainWindow):
             self.open_file(file_data)
 
     def open_file(self, file_data: Dict[str, Any]):
+        assert self.gcache
         cache_path = self.gcache.get_cache_path_for_file(file_data)
         if cache_path and cache_path.exists():
             # Open with default app
@@ -814,7 +825,7 @@ class GDriveApp(QMainWindow):
             webbrowser.open(url)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Backspace:
+        if event.key() == Qt.Key.Key_Backspace:
             self.go_back()
         else:
             super().keyPressEvent(event)
