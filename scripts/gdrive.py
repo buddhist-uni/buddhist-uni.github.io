@@ -173,7 +173,7 @@ def add_tracked_folder(slug, public, private, gfolders=None):
   FOLDERS_DATA_FILE.write_text(json.dumps(gfolders, sort_keys=True, indent=2))
   return gfolders
 
-def get_gfolders_for_course(course, invite_to_add=True):
+def get_gfolders_for_course(course: str, invite_to_add: bool = True) -> tuple[str | None, str | None]:
   """Returns a (public, private) tuple of GIDs given a human course string"""
   gfolders = FOLDERS_DATA()
   parts = course.split('/')

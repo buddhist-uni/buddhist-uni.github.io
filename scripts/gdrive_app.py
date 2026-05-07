@@ -19,7 +19,7 @@ from pytablericons.filled_icon import FilledIcon
 
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel
+from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel, QObject
 from PySide6.QtGui import QPainter, QImage
 
 from collections import OrderedDict
@@ -28,6 +28,7 @@ import pdfutils
 import videoutils
 import gdrive_base
 from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES
+from local_gdrive import DriveCache
 
 
 class GCacheLoaderThread(QThread):
@@ -72,6 +73,51 @@ class GCacheLoaderThread(QThread):
                 local_gdrive.yaspin = original_yaspin
             if original_trange:
                 gdrive_base.trange = original_trange
+
+class GDriveActionSignals(QObject):
+    finished = Signal()
+    error = Signal(str)
+
+class GDriveAction(QRunnable):
+    def __init__(self):
+        super().__init__()
+        self.signals = GDriveActionSignals()
+
+    @Slot()
+    def run(self):
+        try:
+            self.execute()
+            self.signals.finished.emit()
+        except Exception as e:
+            self.signals.error.emit(str(e))
+
+    def execute(self):
+        raise NotImplementedError
+
+class RenameAction(GDriveAction):
+    def __init__(self, gcache: DriveCache, file_id: str, new_name: str):
+        super().__init__()
+        self.gcache = gcache
+        self.file_id = file_id
+        self.new_name = new_name
+
+    def execute(self):
+        self.gcache.rename_file(self.file_id, self.new_name)
+
+class MoveAction(GDriveAction):
+    def __init__(self, gcache: DriveCache, file_id: str, destination: str | tuple[str | None, str | None], previous_parents: list[str] | None = None):
+        super().__init__()
+        self.gcache = gcache
+        self.file_id = file_id
+        self.destination = destination
+        self.previous_parents = previous_parents
+
+    def execute(self):
+        if isinstance(self.destination, tuple):
+            import gdrive
+            gdrive.move_gfile(self.file_id, self.destination)
+        else:
+            self.gcache.move_file(self.file_id, self.destination, previous_parents=self.previous_parents)
 
 
 class ThumbnailWorker(QRunnable):
@@ -223,7 +269,7 @@ class MoveFileDialog(QDialog):
         self.setWindowTitle("Move File")
         self.setMinimumWidth(400)
         self.gcache = gcache
-        self.resulting_tuple = None
+        self.resulting_tuple: tuple[str | None, str | None] | None = None
         
         layout = QVBoxLayout(self)
         layout.addWidget(QLabel("Move to folder (e.g. 'course/subfolder'):"))
@@ -279,6 +325,7 @@ class FileListWidget(QListWidget):
         self.setDragEnabled(True)
         self.setDragDropMode(QListView.DragDropMode.DragDrop)
         self.setDefaultDropAction(Qt.DropAction.MoveAction)
+        self.setSelectionMode(QListView.SelectionMode.ExtendedSelection)
         self.hovered_item = None
         
     def dragEnterEvent(self, event):
@@ -331,10 +378,13 @@ class FileListWidget(QListWidget):
                 target_data = target_item.data(Qt.ItemDataRole.UserRole)
                 mime = target_data.get('mimeType', '')
                 if mime == 'application/vnd.google-apps.folder':
-                    source_item = self.currentItem()
-                    if source_item and source_item != target_item:
-                        source_data = source_item.data(Qt.ItemDataRole.UserRole)
-                        self.itemDropped.emit(source_data, target_data)
+                    source_items = self.selectedItems()
+                    if not source_items and self.currentItem():
+                        source_items = [self.currentItem()]
+                    source_items = [item for item in source_items if item != target_item]
+                    if source_items:
+                        source_datas = [item.data(Qt.ItemDataRole.UserRole) for item in source_items]
+                        self.itemDropped.emit(source_datas, target_data)
                         # Set action to CopyAction to prevent QListWidget from 
                         # optimistically removing the item before we refresh.
                         event.setDropAction(Qt.DropAction.CopyAction)
@@ -362,7 +412,7 @@ class GDriveApp(QMainWindow):
         
         self.history: List[HistoryEntry] = []
         self.history_index = -1
-        self.current_folder_id = None
+        self.current_folder_id: str | None = None
         
         self.thumbnail_pool = QThreadPool(self)
         self.thumbnail_pool.setMaxThreadCount(10)
@@ -372,7 +422,13 @@ class GDriveApp(QMainWindow):
         self.queued_thumbnails = set()
         self.thumbnail_loaded_signal.connect(self.on_thumbnail_loaded)
         
-        self.gcache = None
+        self.gdrive_pool = QThreadPool(self)
+        self.gdrive_pool.setMaxThreadCount(10)
+        self.gdrive_tasks_total = 0
+        self.gdrive_tasks_completed = 0
+        self.gdrive_progress_dialog: QProgressDialog | None = None
+        
+        self.gcache: DriveCache | None = None
         self.init_ui()
         
         self.progress_dialog = QProgressDialog("Loading GDrive Cache...", "Cancel", 0, 0, self)
@@ -592,7 +648,7 @@ class GDriveApp(QMainWindow):
         self.update_nav_buttons()
 
     def go_up(self):
-        if self.current_folder_id in ["my_drive", "shared_with_me"] or not self.gcache:
+        if not self.current_folder_id or self.current_folder_id in ["my_drive", "shared_with_me"] or not self.gcache:
             return
             
         current_item = self.gcache.get_item(self.current_folder_id)
@@ -814,6 +870,16 @@ class GDriveApp(QMainWindow):
         if not item:
             return
             
+        selected_items = self.file_view.selectedItems()
+        if len(selected_items) > 1 and item in selected_items:
+            menu = QMenu(self)
+            move_file_action = menu.addAction("&Move file...")
+            action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
+            if action == move_file_action:
+                file_datas = [si.data(Qt.ItemDataRole.UserRole) for si in selected_items]
+                self.move_files(file_datas)
+            return
+
         file_data = item.data(Qt.ItemDataRole.UserRole)
         menu = QMenu(self)
         # The & below marks which letter is the hotkey for that option
@@ -834,7 +900,7 @@ class GDriveApp(QMainWindow):
         elif action == rename_action:
             self.rename_file(file_data)
         elif action == move_file_action:
-            self.move_file(file_data)
+            self.move_files([file_data])
 
     def trigger_rename(self):
         if self.file_view.hasFocus():
@@ -849,83 +915,68 @@ class GDriveApp(QMainWindow):
             text=file_data['name']
         )
         if ok and new_name and new_name != file_data['name']:
-            try:
-                # Use a progress dialog for the rename operation as it can be slow
-                progress = QProgressDialog("Renaming...", "Cancel", 0, 0, self)
-                progress.setWindowTitle("Renaming")
-                progress.setWindowModality(Qt.WindowModality.WindowModal)
-                progress.setCancelButton(None)
-                progress.setMinimumDuration(0)
-                progress.setValue(0)
-                progress.show()
-                
-                def perform_rename():
-                    try:
-                        assert self.gcache
-                        self.gcache.rename_file(file_data['id'], new_name)
-                        progress.close()
-                        self.refresh()
-                    except Exception as e:
-                        progress.close()
-                        QMessageBox.critical(self, "Error", f"Failed to rename file: {e}")
-                        
-                QTimer.singleShot(100, perform_rename)
-            except Exception as e:
-                QMessageBox.critical(self, "Error", f"Failed to setup rename file: {e}")
+            assert self.gcache
+            action = RenameAction(self.gcache, file_data['id'], new_name)
+            self.queue_gdrive_action(action)
 
-    def move_file(self, file_data: dict[str, Any]):
+    def move_files(self, file_datas: list[dict[str, Any]]):
         dialog = MoveFileDialog(self, self.gcache)
+        assert self.gcache
         if dialog.exec():
-            try:
-                # Use a progress dialog for the move operation as it can be slow
-                progress = QProgressDialog("Moving file...", "Cancel", 0, 0, self)
-                progress.setWindowTitle("Moving")
-                progress.setWindowModality(Qt.WindowModality.WindowModal)
-                progress.setCancelButton(None)
-                progress.setMinimumDuration(0)
-                progress.setValue(0)
-                progress.show()
-                
-                def perform_move():
-                    try:
-                        import gdrive
-                        gdrive.move_gfile(file_data['id'], dialog.resulting_tuple)
-                        progress.close()
-                        self.refresh()
-                    except Exception as e:
-                        progress.close()
-                        QMessageBox.critical(self, "Error", f"Failed to move file: {e}")
-                        
-                QTimer.singleShot(100, perform_move)
-            except Exception as e:
-                QMessageBox.critical(self, "Error", f"Failed to setup move file: {e}")
+            if not dialog.resulting_tuple:
+                return
+            for file_data in file_datas:
+                action = MoveAction(self.gcache, file_data['id'], dialog.resulting_tuple)
+                self.queue_gdrive_action(action)
 
-    def on_item_dropped(self, source_data: dict[str, Any], target_data: dict[str, Any]):
-        QTimer.singleShot(0, lambda: self._do_item_dropped(source_data, target_data))
+    def on_item_dropped(self, source_datas: list[dict[str, Any]], target_data: dict[str, Any]):
+        QTimer.singleShot(0, lambda: self._do_item_dropped(source_datas, target_data))
 
-    def _do_item_dropped(self, source_data: dict[str, Any], target_data: dict[str, Any]):
+    def _do_item_dropped(self, source_datas: list[dict[str, Any]], target_data: dict[str, Any]):
         if not self.gcache:
             return
             
-        progress = QProgressDialog("Moving file...", "Cancel", 0, 0, self)
-        progress.setWindowTitle("Moving")
-        progress.setWindowModality(Qt.WindowModality.WindowModal)
-        progress.setCancelButton(None)
-        progress.setMinimumDuration(0)
-        progress.setValue(0)
-        progress.show()
+        previous_parents = [self.current_folder_id] if self.current_folder_id not in [None, "my_drive", "shared_with_me"] else None
+        for source_data in source_datas:
+            action = MoveAction(self.gcache, source_data['id'], target_data['id'], previous_parents=previous_parents)
+            self.queue_gdrive_action(action)
+
+    def queue_gdrive_action(self, action: GDriveAction):
+        action.signals.finished.connect(self._on_gdrive_action_finished)
+        action.signals.error.connect(self._on_gdrive_action_error)
         
-        def perform_drop_move():
-            try:
-                previous_parents = [self.current_folder_id] if self.current_folder_id not in ["my_drive", "shared_with_me"] else None
-                self.gcache.move_file(source_data['id'], target_data['id'], previous_parents=previous_parents)
-                progress.close()
-                self.refresh()
-            except Exception as e:
-                progress.close()
-                QMessageBox.critical(self, "Error", f"Failed to move file: {e}")
-                
-        QTimer.singleShot(100, perform_drop_move)
+        self.gdrive_tasks_total += 1
+        self._update_gdrive_progress()
+        self.gdrive_pool.start(action)
+
+    def _update_gdrive_progress(self):
+        if self.gdrive_tasks_total > self.gdrive_tasks_completed:
+            if not self.gdrive_progress_dialog:
+                self.gdrive_progress_dialog = QProgressDialog("Processing operations...", "Cancel", 0, self.gdrive_tasks_total, self)
+                self.gdrive_progress_dialog.setWindowTitle("GDrive Operations")
+                self.gdrive_progress_dialog.setWindowModality(Qt.WindowModality.NonModal)
+                self.gdrive_progress_dialog.setCancelButton(None)
+                self.gdrive_progress_dialog.setMinimumDuration(0)
+                self.gdrive_progress_dialog.show()
+            
+            self.gdrive_progress_dialog.setMaximum(self.gdrive_tasks_total)
+            self.gdrive_progress_dialog.setValue(self.gdrive_tasks_completed)
+        else:
+            if self.gdrive_progress_dialog:
+                self.gdrive_progress_dialog.close()
+                self.gdrive_progress_dialog = None
+            self.gdrive_tasks_total = 0
+            self.gdrive_tasks_completed = 0
+            self.refresh()
+
+    def _on_gdrive_action_finished(self):
+        self.gdrive_tasks_completed += 1
+        self._update_gdrive_progress()
+
+    def _on_gdrive_action_error(self, error_msg):
+        self.gdrive_tasks_completed += 1
+        self._update_gdrive_progress()
+        QMessageBox.critical(self, "Error", f"A Google Drive operation failed: {error_msg}")
 
     def refresh(self):
         """Reloads the current folder (to pick up file changes)"""
@@ -948,12 +999,17 @@ class GDriveApp(QMainWindow):
                 target_file = None
             else:
                 target_file = self.gcache.get_item(file_data['shortcutDetails']['targetId'])
+                if not target_file:
+                    url = gdrive_base.GENERIC_LINK_PREFIX + (file_data['shortcutDetails']['targetId'] or file_data['id'])
+                    webbrowser.open(url)
+                    return
                 folder_id = target_file['parent_id']
                 target_file = target_file['id']
             target_folder = self.gcache.get_item(folder_id)
             if not target_folder:
                 url = gdrive_base.FOLDER_LINK.format(folder_id)
                 webbrowser.open(url)
+                return
             self.load_folder(target_folder['id'], target_folder['name'], highlight_fileid=target_file, clicked_item_id=file_data['id'])
         else:
             self.open_file(file_data)
