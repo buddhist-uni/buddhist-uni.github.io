@@ -16,12 +16,12 @@
     ],
     "python-envs.pythonProjects": [
         {
-            "path": "${workspaceFolder}/scripts"
+            "path": "scripts"
         }
     ],
-    "python.defaultInterpreterPath": "${workspaceFolder}/obu/bin/python",
+    "python.defaultInterpreterPath": "../obu/bin/python",
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/scripts"
+        "scripts"
     ],
     "python.pyrefly.configPath": "pyrefly.toml"
 }
