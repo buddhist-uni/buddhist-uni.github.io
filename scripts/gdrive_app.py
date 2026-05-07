@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 import subprocess
 import webbrowser
 from typing import List, Dict, Any, Optional
@@ -873,9 +874,14 @@ class GDriveApp(QMainWindow):
         selected_items = self.file_view.selectedItems()
         if len(selected_items) > 1 and item in selected_items:
             menu = QMenu(self)
+            copy_ids_action = menu.addAction("Copy &IDs")
             move_file_action = menu.addAction("&Move file...")
             action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
-            if action == move_file_action:
+            if action == copy_ids_action:
+                QApplication.clipboard().setText(json.dumps(
+                    [si.data(Qt.ItemDataRole.UserRole)['id'] for si in selected_items]
+                ))
+            elif action == move_file_action:
                 file_datas = [si.data(Qt.ItemDataRole.UserRole) for si in selected_items]
                 self.move_files(file_datas)
             return
