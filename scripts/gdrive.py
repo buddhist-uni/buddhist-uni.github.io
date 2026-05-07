@@ -245,12 +245,13 @@ def get_course_for_folder(folderid) -> str | None:
 def move_gfile(glink, folders):
   gfid = link_to_id(glink)
   public_fid, private_fid = folders
-  file = gcache.move_file(gfid, public_fid or private_fid)
+  gcache.move_file(gfid, public_fid or private_fid)
   shortcuts = gcache.get_shortcuts_to_file(gfid)
+  file = gcache.get_item(gfid)
   if public_fid and private_fid:
     if len(shortcuts) != 1:
       print("Creating a (new, private) shortcut...")
-      gcache.create_shortcut(gfid, file.get('name'), private_fid)
+      gcache.create_shortcut(gfid, file['name'], private_fid, file['mimeType'])
     elif len(shortcuts) == 1:
       s=shortcuts[0]
       print(f"Moving existing shortcut from  {FOLDER_LINK.format(s['parents'][0])}  to  {FOLDER_LINK.format(private_fid)}  ...")

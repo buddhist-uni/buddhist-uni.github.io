@@ -1,5 +1,5 @@
 ---
-title: "Tempering Belles Infidèles and Promoting Jolies Laides: Idle Thoughts on the Ideal Rendering of Buddhist Texts and Terminology"
+title: "Tempering *Belles Infidèles* and Promoting *Jolies Laides*: Idle Thoughts on the Ideal Rendering of Buddhist Texts and Terminology"
 authors:
   - deleanu-f
 external_url: "https://www.jocbs.org/index.php/jocbs/article/download/19/19"

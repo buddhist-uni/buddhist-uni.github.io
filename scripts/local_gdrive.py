@@ -919,7 +919,7 @@ class DriveCache:
         })
         return new_folder_id
 
-    def create_shortcut(self, target_id: str, shortcut_name: str, folder_id: str, target_mime_type: str = None):
+    def create_shortcut(self, target_id: str, shortcut_name: str, folder_id: str, target_mime_type: str):
         """
         Writes a new shortcut to Drive in folder_id with name shortcut_name pointing to target_id
         """
