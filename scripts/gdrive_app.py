@@ -1154,6 +1154,9 @@ class GDriveApp(QMainWindow):
             self.gdrive_progress_widget.setValue(self.gdrive_tasks_completed)
             self.gdrive_progress_widget.setToolTip(f"Processing... ({self.gdrive_tasks_completed}/{self.gdrive_tasks_total})")
         else:
+            self.gdrive_progress_widget.setMaximum(1)
+            self.gdrive_progress_widget.setValue(1)
+            self.gdrive_progress_widget.setToolTip(f"{self.gdrive_tasks_completed} operations complete!")
             self.gdrive_tasks_total = 0
             self.gdrive_tasks_completed = 0
 
