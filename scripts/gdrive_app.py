@@ -127,6 +127,7 @@ class RenameAction(GDriveAction):
 
     def execute(self):
         self.gcache.rename_file(self.file_id, self.new_name)
+        self.description = self.description.replace("Renaming ", "Renamed ")
 
 class MoveAction(GDriveAction):
     def __init__(self, gcache: DriveCache, file_id: str, destination: str | tuple[str | None, str | None], previous_parents: list[str] | None = None):
@@ -165,6 +166,7 @@ class MoveAction(GDriveAction):
             gdrive.move_gfile(self.file_id, self.destination)
         else:
             self.gcache.move_file(self.file_id, self.destination, previous_parents=self.previous_parents)
+        self.description = self.description.replace("Moving ", "Moved ")
 
 class CreateFolderAction(GDriveAction):
     def __init__(self, gcache: DriveCache, parent_id: str, folder_name: str):
@@ -176,6 +178,7 @@ class CreateFolderAction(GDriveAction):
 
     def execute(self):
         self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
+        self.description = self.description.replace("Creating ", "Created ")
 
 class ThumbnailWorker(QRunnable):
     def __init__(self, item, cancel_flag, emit_callback):
@@ -542,9 +545,9 @@ class PieProgressBar(QWidget):
             painter.drawEllipse(rect)
 
 class GDriveProgressPopover(QDialog):
-    def __init__(self, parent, actions: list[GDriveAction]):
+    def __init__(self, parent, gdrive_actions: list[GDriveAction]):
         super().__init__(parent, Qt.WindowType.Popup | Qt.WindowType.FramelessWindowHint)
-        self.actions = actions
+        self.gdrive_actions = gdrive_actions
         self.setMinimumWidth(350)
         self.setMaximumHeight(400)
         self.init_ui()
@@ -595,12 +598,14 @@ class GDriveProgressPopover(QDialog):
 
     def clear_completed(self):
         # We need to notify the parent to actually clear them from the list
-        self.parent().clear_completed_actions()
+        parent = self.parent()
+        assert isinstance(parent, GDriveApp)
+        parent.clear_completed_actions()
         self.refresh_list()
 
     def refresh_list(self):
         self.list_widget.clear()
-        if not self.actions:
+        if not self.gdrive_actions:
             item = QListWidgetItem("No active operations")
             item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             item.setFlags(Qt.ItemFlag.NoItemFlags)
@@ -608,7 +613,7 @@ class GDriveProgressPopover(QDialog):
             return
 
         # Show most recent first
-        for action in reversed(self.actions):
+        for action in reversed(self.gdrive_actions):
             item = QListWidgetItem()
             widget = QWidget()
             item_layout = QHBoxLayout(widget)
@@ -1313,7 +1318,10 @@ class GDriveApp(QMainWindow):
     def clear_completed_actions(self):
         self.gdrive_actions = [a for a in self.gdrive_actions if a.status not in ("completed", "error")]
         if self.progress_popover:
-            self.progress_popover.actions = self.gdrive_actions
+            self.progress_popover.gdrive_actions = self.gdrive_actions
+        self.gdrive_progress_widget.setMaximum(0)
+        self.gdrive_progress_widget.setValue(0)
+        self.gdrive_progress_widget.setToolTip("No actions")
 
     def queue_gdrive_action(self, action: GDriveAction):
         action.signals.finished.connect(self._on_gdrive_action_finished)
