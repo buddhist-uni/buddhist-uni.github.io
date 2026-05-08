@@ -79,32 +79,46 @@ class GDriveActionSignals(QObject):
     # Signal can only take simple types, so we can't use `set[str]`
     finished = Signal(set) # the impacted folder ids
     error = Signal(str) # the error message
+    started = Signal()
+    status_changed = Signal()
 
 class GDriveAction(QRunnable):
-    def __init__(self):
+    def __init__(self, description: str):
         super().__init__()
         self.signals = GDriveActionSignals()
         self.impacted_folders: set[str] = set()
+        self.description = description
+        self.status = "pending" # pending, running, completed, error
+        self.error_message = None
 
     @Slot()
     def run(self):
+        self.status = "running"
+        self.signals.started.emit()
+        self.signals.status_changed.emit()
         try:
             self.execute()
+            self.status = "completed"
             self.signals.finished.emit(self.impacted_folders)
+            self.signals.status_changed.emit()
         except Exception as e:
+            self.status = "error"
+            self.error_message = str(e)
             self.signals.error.emit(str(e))
+            self.signals.status_changed.emit()
 
     def execute(self):
         raise NotImplementedError
 
 class RenameAction(GDriveAction):
     def __init__(self, gcache: DriveCache, file_id: str, new_name: str):
-        super().__init__()
+        item = gcache.get_item(file_id)
+        old_name = item['name'] if item else file_id
+        super().__init__(f"Renaming '{old_name}' to '{new_name}'")
         self.gcache = gcache
         self.file_id = file_id
         self.new_name = new_name
         
-        item = self.gcache.get_item(file_id)
         if item:
             if item.get('parent_id'):
                 self.impacted_folders.add(item['parent_id'])
@@ -116,7 +130,18 @@ class RenameAction(GDriveAction):
 
 class MoveAction(GDriveAction):
     def __init__(self, gcache: DriveCache, file_id: str, destination: str | tuple[str | None, str | None], previous_parents: list[str] | None = None):
-        super().__init__()
+        item = gcache.get_item(file_id)
+        name = item['name'] if item else file_id
+        
+        dest_name = "folder"
+        if isinstance(destination, str):
+            dest_item = gcache.get_item(destination)
+            if dest_item:
+                dest_name = f"'{dest_item['name']}'"
+        elif isinstance(destination, tuple):
+            dest_name = "selected folder"
+
+        super().__init__(f"Moving '{name}' to {dest_name}")
         self.gcache = gcache
         self.file_id = file_id
         self.destination = destination
@@ -125,7 +150,6 @@ class MoveAction(GDriveAction):
         if previous_parents:
             self.impacted_folders.update(previous_parents)
         else:
-            item = self.gcache.get_item(file_id)
             if item and item.get('parent_id'):
                 self.impacted_folders.add(item['parent_id'])
                 
@@ -144,7 +168,7 @@ class MoveAction(GDriveAction):
 
 class CreateFolderAction(GDriveAction):
     def __init__(self, gcache: DriveCache, parent_id: str, folder_name: str):
-        super().__init__()
+        super().__init__(f"Creating folder '{folder_name}'")
         self.gcache = gcache
         self.parent_id = parent_id
         self.folder_name = folder_name
@@ -463,11 +487,14 @@ class FileListWidget(QListWidget):
             self.original_icon = None
 
 class PieProgressBar(QWidget):
+    clicked = Signal()
+
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setFixedSize(24, 24)
         self._value = 0
         self._maximum = 1
+        self.setCursor(Qt.CursorShape.PointingHandCursor)
         
     def setValue(self, value):
         self._value = value
@@ -476,6 +503,11 @@ class PieProgressBar(QWidget):
     def setMaximum(self, maximum):
         self._maximum = maximum
         self.update()
+
+    def mousePressEvent(self, event):
+        if event.button() == Qt.MouseButton.LeftButton:
+            self.clicked.emit()
+        super().mousePressEvent(event)
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -509,6 +541,118 @@ class PieProgressBar(QWidget):
             painter.setBrush(Qt.BrushStyle.NoBrush)
             painter.drawEllipse(rect)
 
+class GDriveProgressPopover(QDialog):
+    def __init__(self, parent, actions: list[GDriveAction]):
+        super().__init__(parent, Qt.WindowType.Popup | Qt.WindowType.FramelessWindowHint)
+        self.actions = actions
+        self.setMinimumWidth(350)
+        self.setMaximumHeight(400)
+        self.init_ui()
+        
+    def init_ui(self):
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(1, 1, 1, 1) # Small border
+        
+        self.container = QWidget()
+        self.container.setObjectName("popoverContainer")
+        self.container.setStyleSheet("""
+            QWidget#popoverContainer {
+                background-color: palette(window);
+                border: 1px solid palette(mid);
+                border-radius: 8px;
+            }
+        """)
+        container_layout = QVBoxLayout(self.container)
+        
+        header = QHBoxLayout()
+        title = QLabel("Google Drive Operations")
+        title.setStyleSheet("font-weight: bold; font-size: 14px; margin: 5px;")
+        header.addWidget(title)
+        header.addStretch()
+        
+        clear_btn = QPushButton("Clear Completed")
+        clear_btn.setStyleSheet("font-size: 11px;")
+        clear_btn.clicked.connect(self.clear_completed)
+        header.addWidget(clear_btn)
+        
+        container_layout.addLayout(header)
+        
+        self.list_widget = QListWidget()
+        self.list_widget.setStyleSheet("""
+            QListWidget {
+                border: none;
+                background-color: transparent;
+            }
+            QListWidget::item {
+                border-bottom: 1px solid palette(alternate-base);
+            }
+        """)
+        container_layout.addWidget(self.list_widget)
+        
+        layout.addWidget(self.container)
+        
+        self.refresh_list()
+
+    def clear_completed(self):
+        # We need to notify the parent to actually clear them from the list
+        self.parent().clear_completed_actions()
+        self.refresh_list()
+
+    def refresh_list(self):
+        self.list_widget.clear()
+        if not self.actions:
+            item = QListWidgetItem("No active operations")
+            item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+            item.setFlags(Qt.ItemFlag.NoItemFlags)
+            self.list_widget.addItem(item)
+            return
+
+        # Show most recent first
+        for action in reversed(self.actions):
+            item = QListWidgetItem()
+            widget = QWidget()
+            item_layout = QHBoxLayout(widget)
+            item_layout.setContentsMargins(8, 8, 8, 8)
+            
+            icon_label = QLabel()
+            status_color = None
+            if action.status == "pending":
+                icon = get_icon(OutlineIcon.CLOCK)
+            elif action.status == "running":
+                icon = get_icon(OutlineIcon.LOADER_2)
+            elif action.status == "completed":
+                icon = get_icon(OutlineIcon.CIRCLE_CHECK, color="#28a745")
+                status_color = "#28a745"
+            elif action.status == "error":
+                icon = get_icon(OutlineIcon.CIRCLE_X, color="#dc3545")
+                status_color = "#dc3545"
+            else:
+                icon = get_icon(OutlineIcon.QUESTION_MARK)
+            
+            icon_label.setPixmap(icon.pixmap(24, 24))
+            item_layout.addWidget(icon_label)
+            
+            text_layout = QVBoxLayout()
+            desc_label = QLabel(action.description)
+            desc_label.setWordWrap(True)
+            text_layout.addWidget(desc_label)
+            
+            status_text = action.status.capitalize()
+            status_label = QLabel(status_text)
+            status_label.setStyleSheet(f"font-size: 10px; color: {status_color if status_color else 'palette(text)'};")
+            text_layout.addWidget(status_label)
+            
+            if action.status == "error" and action.error_message:
+                error_label = QLabel(action.error_message)
+                error_label.setStyleSheet("color: #dc3545; font-size: 9px;")
+                error_label.setWordWrap(True)
+                text_layout.addWidget(error_label)
+            
+            item_layout.addLayout(text_layout)
+            
+            item.setSizeHint(widget.sizeHint())
+            self.list_widget.addItem(item)
+            self.list_widget.setItemWidget(item, widget)
 
 class ClickSelectLineEdit(QLineEdit):
     escPressed = Signal()
@@ -556,6 +700,8 @@ class GDriveApp(QMainWindow):
         self.gdrive_pool.setMaxThreadCount(10)
         self.gdrive_tasks_total = 0
         self.gdrive_tasks_completed = 0
+        self.gdrive_actions: list[GDriveAction] = []
+        self.progress_popover = None
         
         self.gcache: DriveCache | None = None
         self.init_ui()
@@ -644,6 +790,7 @@ class GDriveApp(QMainWindow):
         top_bar.addWidget(self.address_bar)
         
         self.gdrive_progress_widget = PieProgressBar()
+        self.gdrive_progress_widget.clicked.connect(self.toggle_progress_popover)
         top_bar.addWidget(self.gdrive_progress_widget)
         
         self.folder_menu_btn = QPushButton()
@@ -1140,13 +1287,47 @@ class GDriveApp(QMainWindow):
             action = MoveAction(self.gcache, source_data['id'], target_data['id'], previous_parents=previous_parents)
             self.queue_gdrive_action(action)
 
+    def toggle_progress_popover(self):
+        if self.progress_popover and self.progress_popover.isVisible():
+            self.progress_popover.close()
+            return
+
+        if not self.progress_popover:
+            self.progress_popover = GDriveProgressPopover(self, self.gdrive_actions)
+            
+        # Position below the progress widget
+        pos = self.gdrive_progress_widget.mapToGlobal(self.gdrive_progress_widget.rect().bottomLeft())
+        # Offset to center it a bit better under the widget
+        pos.setX(pos.x() - self.progress_popover.minimumWidth() // 2 + self.gdrive_progress_widget.width() // 2)
+        # Ensure it doesn't go off screen
+        screen_geo = self.screen().geometry()
+        if pos.x() + self.progress_popover.width() > screen_geo.right():
+            pos.setX(screen_geo.right() - self.progress_popover.width() - 10)
+        if pos.x() < screen_geo.left():
+            pos.setX(screen_geo.left() + 10)
+            
+        self.progress_popover.move(pos)
+        self.progress_popover.refresh_list()
+        self.progress_popover.show()
+
+    def clear_completed_actions(self):
+        self.gdrive_actions = [a for a in self.gdrive_actions if a.status not in ("completed", "error")]
+        if self.progress_popover:
+            self.progress_popover.actions = self.gdrive_actions
+
     def queue_gdrive_action(self, action: GDriveAction):
         action.signals.finished.connect(self._on_gdrive_action_finished)
         action.signals.error.connect(self._on_gdrive_action_error)
+        action.signals.status_changed.connect(self._on_action_status_changed)
         
+        self.gdrive_actions.append(action)
         self.gdrive_tasks_total += 1
         self._update_gdrive_progress()
         self.gdrive_pool.start(action)
+
+    def _on_action_status_changed(self):
+        if self.progress_popover and self.progress_popover.isVisible():
+            self.progress_popover.refresh_list()
 
     def _update_gdrive_progress(self):
         if self.gdrive_tasks_total > self.gdrive_tasks_completed:
