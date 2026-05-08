@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QPushButton, QLineEdit, QSplitter, QMessageBox,
                                QListView, QMenu, QProgressDialog, QCompleter,
                                QDialog, QLabel, QInputDialog)
-from PySide6.QtCore import Qt, QSize
+from PySide6.QtCore import Qt, QSize, QPoint
 from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
 
 import pytablericons
@@ -529,6 +529,12 @@ class GDriveApp(QMainWindow):
         top_bar.addWidget(self.up_btn)
         top_bar.addWidget(self.address_bar)
         
+        self.folder_menu_btn = QPushButton()
+        self.folder_menu_btn.setIcon(get_icon(OutlineIcon.DOTS))
+        self.folder_menu_btn.setToolTip("Folder actions")
+        self.folder_menu_btn.clicked.connect(self.on_folder_context_menu)
+        top_bar.addWidget(self.folder_menu_btn)
+        
         right_layout.addLayout(top_bar)
         
         # Main File View
@@ -694,7 +700,9 @@ class GDriveApp(QMainWindow):
     def update_nav_buttons(self):
         self.back_btn.setEnabled(self.history_index > 0)
         self.fwd_btn.setEnabled(self.history_index < len(self.history) - 1)
-        self.up_btn.setEnabled(self.current_folder_id not in ["my_drive", "shared_with_me"])
+        is_root = self.current_folder_id in ["my_drive", "shared_with_me"]
+        self.up_btn.setEnabled(not is_root)
+        self.folder_menu_btn.setEnabled(not is_root)
 
     def on_nav_clicked(self, item: QListWidgetItem):
         root_type = item.data(Qt.ItemDataRole.UserRole)
@@ -893,29 +901,54 @@ class GDriveApp(QMainWindow):
             
         selected_items = self.file_view.selectedItems()
         if len(selected_items) > 1 and item in selected_items:
-            menu = QMenu(self)
+            file_datas = [si.data(Qt.ItemDataRole.UserRole) for si in selected_items]
+        else:
+            file_datas = [item.data(Qt.ItemDataRole.UserRole)]
+            
+        self.show_gdrive_context_menu(file_datas, self.file_view.viewport().mapToGlobal(pos))
+
+    def on_folder_context_menu(self):
+        if not self.current_folder_id or not self.gcache or self.current_folder_id in ["my_drive", "shared_with_me"]:
+            return
+            
+        folder_data = self.gcache.get_item(self.current_folder_id)
+        if not folder_data:
+            return
+            
+        pos = self.folder_menu_btn.mapToGlobal(self.folder_menu_btn.rect().bottomLeft())
+        self.show_gdrive_context_menu([folder_data], pos)
+
+    def show_gdrive_context_menu(self, file_datas: List[Dict[str, Any]], global_pos: QPoint):
+        if not file_datas:
+            return
+            
+        menu = QMenu(self)
+        if len(file_datas) > 1:
             copy_ids_action = menu.addAction("Copy &IDs")
-            move_file_action = menu.addAction("&Move file...")
-            action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
+            move_action = menu.addAction("&Move files...")
+            
+            action = menu.exec(global_pos)
             if action == copy_ids_action:
-                QApplication.clipboard().setText(json.dumps(
-                    [si.data(Qt.ItemDataRole.UserRole)['id'] for si in selected_items]
-                ))
-            elif action == move_file_action:
-                file_datas = [si.data(Qt.ItemDataRole.UserRole) for si in selected_items]
+                QApplication.clipboard().setText(json.dumps([f['id'] for f in file_datas]))
+            elif action == move_action:
                 self.move_files(file_datas)
             return
 
-        file_data = item.data(Qt.ItemDataRole.UserRole)
-        menu = QMenu(self)
-        # The & below marks which letter is the hotkey for that option
+        # Single item
+        file_data = file_datas[0]
+        is_folder = file_data.get('mimeType') == 'application/vnd.google-apps.folder'
+        move_label = "&Move folder..." if is_folder else "&Move file..."
+        
         copy_id_action = menu.addAction("Copy &ID")
         copy_link_action = menu.addAction("Copy &URL")
         open_browser_action = menu.addAction("&Open in browser...")
         rename_action = menu.addAction("&Rename...")
-        move_file_action = menu.addAction("&Move file...")
+        move_action = menu.addAction(move_label)
         
-        action = menu.exec(self.file_view.viewport().mapToGlobal(pos))
+        action = menu.exec(global_pos)
+        if not action:
+            return
+            
         url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
         if action == copy_id_action:
             QApplication.clipboard().setText(file_data['id'])
@@ -925,7 +958,7 @@ class GDriveApp(QMainWindow):
             webbrowser.open(url)
         elif action == rename_action:
             self.rename_file(file_data)
-        elif action == move_file_action:
+        elif action == move_action:
             self.move_files([file_data])
 
     def trigger_rename(self):
@@ -1006,11 +1039,15 @@ class GDriveApp(QMainWindow):
 
     def refresh(self):
         """Reloads the current folder (to pick up file changes)"""
+        if not self.current_folder_id:
+            return
         if self.current_folder_id in ["my_drive", "shared_with_me"]:
             self.load_root(self.current_folder_id, add_history=False)
         else:
-            assert self.current_folder_id
-            self.load_folder(self.current_folder_id, self.address_bar.text(), add_history=False)
+            assert self.gcache
+            folder_item = self.gcache.get_item(self.current_folder_id)
+            name = folder_item['name'] if folder_item else self.address_bar.text()
+            self.load_folder(self.current_folder_id, name, add_history=False)
 
     def on_item_activated(self, item: QListWidgetItem):
         assert self.gcache
