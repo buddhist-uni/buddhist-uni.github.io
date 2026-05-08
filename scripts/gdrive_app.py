@@ -906,6 +906,7 @@ class GDriveApp(QMainWindow):
     def on_context_menu(self, pos):
         item = self.file_view.itemAt(pos)
         if not item:
+            self.on_folder_context_menu(self.file_view.viewport().mapToGlobal(pos), inside=True)
             return
             
         selected_items = self.file_view.selectedItems()
@@ -916,7 +917,7 @@ class GDriveApp(QMainWindow):
             
         self.show_gdrive_context_menu(file_datas, self.file_view.viewport().mapToGlobal(pos))
 
-    def on_folder_context_menu(self):
+    def on_folder_context_menu(self, global_pos: Optional[QPoint] = None, inside=False):
         if not self.current_folder_id or not self.gcache or self.current_folder_id in ["my_drive", "shared_with_me"]:
             return
             
@@ -924,10 +925,12 @@ class GDriveApp(QMainWindow):
         if not folder_data:
             return
             
-        pos = self.folder_menu_btn.mapToGlobal(self.folder_menu_btn.rect().bottomLeft())
-        self.show_gdrive_context_menu([folder_data], pos)
+        if not isinstance(global_pos, QPoint):
+            global_pos = self.folder_menu_btn.mapToGlobal(self.folder_menu_btn.rect().bottomLeft())
+            
+        self.show_gdrive_context_menu([folder_data], global_pos, hide_edit_options=inside)
 
-    def show_gdrive_context_menu(self, file_datas: List[Dict[str, Any]], global_pos: QPoint):
+    def show_gdrive_context_menu(self, file_datas: List[Dict[str, Any]], global_pos: QPoint, hide_edit_options: bool = False):
         if not file_datas:
             return
             
@@ -951,8 +954,12 @@ class GDriveApp(QMainWindow):
         copy_id_action = menu.addAction("Copy &ID")
         copy_link_action = menu.addAction("Copy &URL")
         open_browser_action = menu.addAction("&Open in browser...")
-        rename_action = menu.addAction("&Rename...")
-        move_action = menu.addAction(move_label)
+        if not hide_edit_options:
+            rename_action = menu.addAction("&Rename...")
+            move_action = menu.addAction(move_label)
+        else:
+            rename_action = None
+            move_action = None
         
         action = menu.exec(global_pos)
         if not action:
