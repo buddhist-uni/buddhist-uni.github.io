@@ -76,19 +76,21 @@ class GCacheLoaderThread(QThread):
                 gdrive_base.trange = original_trange
 
 class GDriveActionSignals(QObject):
-    finished = Signal()
-    error = Signal(str)
+    # Signal can only take simple types, so we can't use `set[str]`
+    finished = Signal(set) # the impacted folder ids
+    error = Signal(str) # the error message
 
 class GDriveAction(QRunnable):
     def __init__(self):
         super().__init__()
         self.signals = GDriveActionSignals()
+        self.impacted_folders: set[str] = set()
 
     @Slot()
     def run(self):
         try:
             self.execute()
-            self.signals.finished.emit()
+            self.signals.finished.emit(self.impacted_folders)
         except Exception as e:
             self.signals.error.emit(str(e))
 
@@ -101,6 +103,13 @@ class RenameAction(GDriveAction):
         self.gcache = gcache
         self.file_id = file_id
         self.new_name = new_name
+        
+        item = self.gcache.get_item(file_id)
+        if item:
+            if item.get('parent_id'):
+                self.impacted_folders.add(item['parent_id'])
+            if item.get('mimeType') == 'application/vnd.google-apps.folder':
+                self.impacted_folders.add(file_id)
 
     def execute(self):
         self.gcache.rename_file(self.file_id, self.new_name)
@@ -112,6 +121,19 @@ class MoveAction(GDriveAction):
         self.file_id = file_id
         self.destination = destination
         self.previous_parents = previous_parents
+
+        if previous_parents:
+            self.impacted_folders.update(previous_parents)
+        else:
+            item = self.gcache.get_item(file_id)
+            if item and item.get('parent_id'):
+                self.impacted_folders.add(item['parent_id'])
+                
+        if isinstance(destination, tuple):
+            if destination[0]: self.impacted_folders.add(destination[0])
+            if destination[1]: self.impacted_folders.add(destination[1])
+        else:
+            self.impacted_folders.add(destination)
 
     def execute(self):
         if isinstance(self.destination, tuple):
@@ -126,6 +148,7 @@ class CreateFolderAction(GDriveAction):
         self.gcache = gcache
         self.parent_id = parent_id
         self.folder_name = folder_name
+        self.impacted_folders.add(parent_id)
 
     def execute(self):
         self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
@@ -1066,10 +1089,11 @@ class GDriveApp(QMainWindow):
                 self.gdrive_progress_dialog = None
             self.gdrive_tasks_total = 0
             self.gdrive_tasks_completed = 0
-            self.refresh()
 
-    def _on_gdrive_action_finished(self):
+    def _on_gdrive_action_finished(self, impacted_folders: set[str]):
         self.gdrive_tasks_completed += 1
+        if self.current_folder_id in impacted_folders:
+            self.refresh()
         self._update_gdrive_progress()
 
     def _on_gdrive_action_error(self, error_msg):
