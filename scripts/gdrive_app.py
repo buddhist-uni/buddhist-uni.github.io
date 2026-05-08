@@ -21,7 +21,7 @@ from pytablericons.filled_icon import FilledIcon
 
 from PySide6.QtSvg import QSvgRenderer
 from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel, QObject
-from PySide6.QtGui import QPainter, QImage
+from PySide6.QtGui import QPainter, QImage, QPen
 
 from collections import OrderedDict
 from functools import lru_cache
@@ -360,14 +360,41 @@ class FileListWidget(QListWidget):
         self.setDefaultDropAction(Qt.DropAction.MoveAction)
         self.setSelectionMode(QListView.SelectionMode.ExtendedSelection)
         self.hovered_item = None
+        self.scroll_timer = QTimer(self)
+        self.scroll_timer.timeout.connect(self._auto_scroll)
+        self.scroll_direction = 0
+        self.scroll_speed = 0
+
+    def _auto_scroll(self):
+        sb = self.verticalScrollBar()
+        sb.setValue(sb.value() + self.scroll_direction * self.scroll_speed)
         
     def dragEnterEvent(self, event):
+        super().dragEnterEvent(event)
         if event.source() == self:
             event.accept()
-        else:
-            super().dragEnterEvent(event)
 
     def dragMoveEvent(self, event):
+        super().dragMoveEvent(event)
+        
+        outer_margin = 60
+        inner_margin = 20
+        y = event.pos().y()
+        height = self.viewport().height()
+        
+        if y < outer_margin:
+            self.scroll_direction = -1
+            self.scroll_speed = 75 if y < inner_margin else 25
+            if not self.scroll_timer.isActive():
+                self.scroll_timer.start(50)
+        elif y > height - outer_margin:
+            self.scroll_direction = 1
+            self.scroll_speed = 75 if y > height - inner_margin else 25
+            if not self.scroll_timer.isActive():
+                self.scroll_timer.start(50)
+        else:
+            self.scroll_timer.stop()
+
         if event.source() == self:
             target_item = self.itemAt(event.pos())
             if target_item != self.hovered_item:
@@ -391,16 +418,16 @@ class FileListWidget(QListWidget):
                     event.accept()
                     return
             event.ignore()
-        else:
-            super().dragMoveEvent(event)
 
     def dragLeaveEvent(self, event):
+        self.scroll_timer.stop()
         if self.hovered_item:
             self._restore_icon(self.hovered_item)
             self.hovered_item = None
         super().dragLeaveEvent(event)
 
     def dropEvent(self, event):
+        self.scroll_timer.stop()
         if self.hovered_item:
             self._restore_icon(self.hovered_item)
             self.hovered_item = None
@@ -434,6 +461,54 @@ class FileListWidget(QListWidget):
         if hasattr(self, 'original_icon') and self.original_icon is not None:
             item.setIcon(self.original_icon)
             self.original_icon = None
+
+class PieProgressBar(QWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setFixedSize(24, 24)
+        self._value = 0
+        self._maximum = 1
+        
+    def setValue(self, value):
+        self._value = value
+        self.update()
+        
+    def setMaximum(self, maximum):
+        self._maximum = maximum
+        self.update()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        
+        rect = self.rect().adjusted(2, 2, -2, -2)
+        
+        # Draw background circle
+        bg_color = QApplication.palette().alternateBase().color()
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(bg_color)
+        painter.drawEllipse(rect)
+        
+        # Draw pie
+        if self._maximum > 0:
+            fg_color = QApplication.palette().highlight().color()
+            painter.setBrush(fg_color)
+            
+            start_angle = 90 * 16
+            progress = self._value / self._maximum
+            span_angle = int(-progress * 360 * 16)
+            
+            painter.drawPie(rect, start_angle, span_angle)
+            
+            # Draw a subtle outline
+            outline_pen = QPen(QApplication.palette().text().color(), 1)
+            c = outline_pen.color()
+            c.setAlpha(64)
+            outline_pen.setColor(c)
+            painter.setPen(outline_pen)
+            painter.setBrush(Qt.BrushStyle.NoBrush)
+            painter.drawEllipse(rect)
+
 
 class ClickSelectLineEdit(QLineEdit):
     escPressed = Signal()
@@ -481,7 +556,6 @@ class GDriveApp(QMainWindow):
         self.gdrive_pool.setMaxThreadCount(10)
         self.gdrive_tasks_total = 0
         self.gdrive_tasks_completed = 0
-        self.gdrive_progress_dialog: QProgressDialog | None = None
         
         self.gcache: DriveCache | None = None
         self.init_ui()
@@ -568,6 +642,9 @@ class GDriveApp(QMainWindow):
         top_bar.addWidget(self.fwd_btn)
         top_bar.addWidget(self.up_btn)
         top_bar.addWidget(self.address_bar)
+        
+        self.gdrive_progress_widget = PieProgressBar()
+        top_bar.addWidget(self.gdrive_progress_widget)
         
         self.folder_menu_btn = QPushButton()
         self.folder_menu_btn.setIcon(get_icon(OutlineIcon.DOTS))
@@ -1073,20 +1150,10 @@ class GDriveApp(QMainWindow):
 
     def _update_gdrive_progress(self):
         if self.gdrive_tasks_total > self.gdrive_tasks_completed:
-            if not self.gdrive_progress_dialog:
-                self.gdrive_progress_dialog = QProgressDialog("Processing operations...", "Cancel", 0, self.gdrive_tasks_total, self)
-                self.gdrive_progress_dialog.setWindowTitle("GDrive Operations")
-                self.gdrive_progress_dialog.setWindowModality(Qt.WindowModality.NonModal)
-                self.gdrive_progress_dialog.setCancelButton(None)
-                self.gdrive_progress_dialog.setMinimumDuration(0)
-                self.gdrive_progress_dialog.show()
-            
-            self.gdrive_progress_dialog.setMaximum(self.gdrive_tasks_total)
-            self.gdrive_progress_dialog.setValue(self.gdrive_tasks_completed)
+            self.gdrive_progress_widget.setMaximum(self.gdrive_tasks_total)
+            self.gdrive_progress_widget.setValue(self.gdrive_tasks_completed)
+            self.gdrive_progress_widget.setToolTip(f"Processing... ({self.gdrive_tasks_completed}/{self.gdrive_tasks_total})")
         else:
-            if self.gdrive_progress_dialog:
-                self.gdrive_progress_dialog.close()
-                self.gdrive_progress_dialog = None
             self.gdrive_tasks_total = 0
             self.gdrive_tasks_completed = 0
 
