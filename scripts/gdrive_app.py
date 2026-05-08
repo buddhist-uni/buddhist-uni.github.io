@@ -120,6 +120,15 @@ class MoveAction(GDriveAction):
         else:
             self.gcache.move_file(self.file_id, self.destination, previous_parents=self.previous_parents)
 
+class CreateFolderAction(GDriveAction):
+    def __init__(self, gcache: DriveCache, parent_id: str, folder_name: str):
+        super().__init__()
+        self.gcache = gcache
+        self.parent_id = parent_id
+        self.folder_name = folder_name
+
+    def execute(self):
+        self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
 
 class ThumbnailWorker(QRunnable):
     def __init__(self, item, cancel_flag, emit_callback):
@@ -928,9 +937,9 @@ class GDriveApp(QMainWindow):
         if not isinstance(global_pos, QPoint):
             global_pos = self.folder_menu_btn.mapToGlobal(self.folder_menu_btn.rect().bottomLeft())
             
-        self.show_gdrive_context_menu([folder_data], global_pos, hide_edit_options=inside)
+        self.show_gdrive_context_menu([folder_data], global_pos, hide_edit_options=inside, add_options=True)
 
-    def show_gdrive_context_menu(self, file_datas: List[Dict[str, Any]], global_pos: QPoint, hide_edit_options: bool = False):
+    def show_gdrive_context_menu(self, file_datas: List[Dict[str, Any]], global_pos: QPoint, hide_edit_options: bool = False, add_options: bool = False):
         if not file_datas:
             return
             
@@ -960,6 +969,10 @@ class GDriveApp(QMainWindow):
         else:
             rename_action = None
             move_action = None
+        if is_folder and add_options:
+            new_folder_action = menu.addAction("New &Folder...")
+        else:
+            new_folder_action = None
         
         action = menu.exec(global_pos)
         if not action:
@@ -976,6 +989,8 @@ class GDriveApp(QMainWindow):
             self.rename_file(file_data)
         elif action == move_action:
             self.move_files([file_data])
+        elif action == new_folder_action:
+            self.new_folder(file_data)
 
     def trigger_rename(self):
         if self.file_view.hasFocus():
@@ -992,6 +1007,15 @@ class GDriveApp(QMainWindow):
         if ok and new_name and new_name != file_data['name']:
             assert self.gcache
             action = RenameAction(self.gcache, file_data['id'], new_name)
+            self.queue_gdrive_action(action)
+    
+    def new_folder(self, parent_folder_data: dict[str, Any]):
+        new_folder_name, ok = QInputDialog.getText(
+            self, "New Folder", "Enter folder name:",
+        )
+        if ok and new_folder_name:
+            assert self.gcache
+            action = CreateFolderAction(self.gcache, parent_folder_data['id'], new_folder_name)
             self.queue_gdrive_action(action)
 
     def move_files(self, file_datas: list[dict[str, Any]]):
