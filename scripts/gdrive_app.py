@@ -403,6 +403,20 @@ class FileListWidget(QListWidget):
             item.setIcon(self.original_icon)
             self.original_icon = None
 
+class ClickSelectLineEdit(QLineEdit):
+    def mousePressEvent(self, event):
+        if event.button() == Qt.MouseButton.LeftButton and not self.hasFocus():
+            self.setFocus()
+            self.selectAll()
+        else:
+            super().mousePressEvent(event)
+
+    def focusInEvent(self, event):
+        super().focusInEvent(event)
+        # Use QTimer.singleShot to ensure selectAll happens after 
+        # any other focus-related event processing.
+        QTimer.singleShot(0, self.selectAll)
+
 class GDriveApp(QMainWindow):
     thumbnail_loaded_signal = Signal(str, QImage)
 
@@ -498,7 +512,7 @@ class GDriveApp(QMainWindow):
         self.up_btn.setIcon(get_icon(OutlineIcon.ARROW_UP))
         self.up_btn.clicked.connect(self.go_up)
         
-        self.address_bar = QLineEdit()
+        self.address_bar = ClickSelectLineEdit()
         self.address_bar.returnPressed.connect(self.on_address_bar_return)
         
         self.completer = QCompleter()
@@ -554,6 +568,12 @@ class GDriveApp(QMainWindow):
         self.quit_shortcut.activated.connect(self.close)
         self.close_shortcut = QShortcut(QKeySequence("Ctrl+W"), self)
         self.close_shortcut.activated.connect(self.close)
+
+        # Shortcuts for address bar
+        self.focus_address_shortcut = QShortcut(QKeySequence("Ctrl+L"), self)
+        self.focus_address_shortcut.activated.connect(self.address_bar.setFocus)
+        self.focus_address_alt_shortcut = QShortcut(QKeySequence("Alt+D"), self)
+        self.focus_address_alt_shortcut.activated.connect(self.address_bar.setFocus)
         
         self.file_view.setFocus()
 
