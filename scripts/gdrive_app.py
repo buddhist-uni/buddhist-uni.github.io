@@ -404,6 +404,8 @@ class FileListWidget(QListWidget):
             self.original_icon = None
 
 class ClickSelectLineEdit(QLineEdit):
+    escPressed = Signal()
+
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton and not self.hasFocus():
             self.setFocus()
@@ -416,6 +418,12 @@ class ClickSelectLineEdit(QLineEdit):
         # Use QTimer.singleShot to ensure selectAll happens after 
         # any other focus-related event processing.
         QTimer.singleShot(0, self.selectAll)
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_Escape:
+            self.escPressed.emit()
+        else:
+            super().keyPressEvent(event)
 
 class GDriveApp(QMainWindow):
     thumbnail_loaded_signal = Signal(str, QImage)
@@ -551,6 +559,7 @@ class GDriveApp(QMainWindow):
         self.file_view.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.file_view.customContextMenuRequested.connect(self.on_context_menu)
         self.file_view.itemDropped.connect(self.on_item_dropped)
+        self.address_bar.escPressed.connect(self.file_view.setFocus)
         
         right_layout.addWidget(self.file_view)
         
