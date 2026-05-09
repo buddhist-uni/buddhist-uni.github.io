@@ -726,9 +726,14 @@ class ClickSelectLineEdit(QLineEdit):
 
     def focusInEvent(self, event):
         super().focusInEvent(event)
-        # Use QTimer.singleShot to ensure selectAll happens after 
-        # any other focus-related event processing.
-        QTimer.singleShot(0, self.selectAll)
+        # Only select all if we focused via mouse, tab, or shortcut.
+        # This avoids selecting all when focus returns from a popup (like the completer)
+        # or when switching back to the window.
+        if event.reason() in (Qt.FocusReason.MouseFocusReason, 
+                              Qt.FocusReason.TabFocusReason, 
+                              Qt.FocusReason.BacktabFocusReason, 
+                              Qt.FocusReason.ShortcutFocusReason):
+            QTimer.singleShot(0, self.selectAll)
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
@@ -910,9 +915,9 @@ class GDriveApp(QMainWindow):
 
         # Shortcuts for address bar
         self.focus_address_shortcut = QShortcut(QKeySequence("Ctrl+L"), self)
-        self.focus_address_shortcut.activated.connect(self.address_bar.setFocus)
+        self.focus_address_shortcut.activated.connect(lambda: self.address_bar.setFocus(Qt.FocusReason.ShortcutFocusReason))
         self.focus_address_alt_shortcut = QShortcut(QKeySequence("Alt+D"), self)
-        self.focus_address_alt_shortcut.activated.connect(self.address_bar.setFocus)
+        self.focus_address_alt_shortcut.activated.connect(lambda: self.address_bar.setFocus(Qt.FocusReason.ShortcutFocusReason))
         
         self.search_shortcut = QShortcut(QKeySequence("Ctrl+K"), self)
         self.search_shortcut.activated.connect(self.on_search_shortcut)
@@ -1442,7 +1447,6 @@ class GDriveApp(QMainWindow):
         table.setTextElideMode(Qt.TextElideMode.ElideNone)
         table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         
-        # Make the table look "pretty"
         table.setStyleSheet("""
             QTableWidget {
                 background-color: transparent;
