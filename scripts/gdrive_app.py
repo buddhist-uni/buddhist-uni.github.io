@@ -11,9 +11,11 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
                                QPushButton, QLineEdit, QSplitter, QMessageBox,
                                QListView, QMenu, QProgressDialog, QCompleter,
-                               QDialog, QLabel, QInputDialog)
+                               QDialog, QLabel, QInputDialog, QTableWidget,
+                               QTableWidgetItem, QHeaderView, QAbstractItemView,
+                               QDialogButtonBox, QFrame)
 from PySide6.QtCore import Qt, QSize, QPoint
-from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence
+from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence, QFont
 
 import pytablericons
 from pytablericons.outline_icon import OutlineIcon
@@ -29,7 +31,7 @@ from functools import lru_cache
 import pdfutils
 import videoutils
 import gdrive_base
-from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES
+from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES, format_size
 from local_gdrive import DriveCache
 
 
@@ -186,6 +188,17 @@ class CreateFolderAction(GDriveAction):
     def execute(self):
         self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
         self.description = self.description.replace("Creating ", "Created ")
+
+class DownloadAction(GDriveAction):
+    def __init__(self, gcache: DriveCache, file_data: Dict[str, Any]):
+        super().__init__(f"Downloading '{file_data['name']}'")
+        self.gcache = gcache
+        self.file_data = file_data
+        self.impacted_folders.add(file_data['parent_id'])
+
+    def execute(self):
+        self.gcache.download_file_to_cache(self.file_data)
+        self.description = self.description.replace("Downloading ", "Downloaded ")
 
 class ThumbnailWorker(QRunnable):
     def __init__(self, item, cancel_flag, emit_callback):
@@ -1074,6 +1087,7 @@ class GDriveApp(QMainWindow):
             self.load_root("my_drive", add_history=True, highlight_fileid=file_id)
             return
             
+        assert self.gcache
         parent = self.gcache.get_item(parent_id)
         if parent:
             self.load_folder(parent['id'], parent['name'], add_history=True, highlight_fileid=file_id)
@@ -1205,8 +1219,14 @@ class GDriveApp(QMainWindow):
             if cache_path:
                 if cache_path.exists():
                     pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
-            elif item.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
-                pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+                    item['_cache_status'] = 'cached'
+                else:
+                    item['_cache_status'] = 'uncached'
+                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.CLOUD)
+            else:
+                item['_cache_status'] = 'uncacheable'
+                if item.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
+                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
             
             list_item.setIcon(QIcon(pixmap))
             
@@ -1329,7 +1349,8 @@ class GDriveApp(QMainWindow):
         is_folder = file_data.get('mimeType') == 'application/vnd.google-apps.folder'
         move_label = "&Move folder..." if is_folder else "&Move file..."
         
-        copy_id_action = menu.addAction("Copy &ID")
+        info_action = menu.addAction("Info...")
+        copy_id_action = menu.addAction("Copy ID")
         copy_link_action = menu.addAction("Copy &URL")
         open_browser_action = menu.addAction("&Open in browser...")
         if not hide_edit_options:
@@ -1338,6 +1359,18 @@ class GDriveApp(QMainWindow):
         else:
             rename_action = None
             move_action = None
+        if not is_folder:
+            if file_data.get('_cache_status') == 'uncached':
+                download_action = menu.addAction("&Download to cache")
+            else:
+                download_action = None
+            if file_data.get('_cache_status') == 'cached':
+                uncache_action = menu.addAction("Remove from cache")
+            else:
+                uncache_action = None
+        else:
+            download_action = None
+            uncache_action = None
         if is_folder and add_options:
             new_folder_action = menu.addAction("New &Folder...")
         else:
@@ -1350,6 +1383,8 @@ class GDriveApp(QMainWindow):
         url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
         if action == copy_id_action:
             QApplication.clipboard().setText(file_data['id'])
+        elif action == info_action:
+            self.info_dialog_for_file(file_data)
         elif action == copy_link_action:
             QApplication.clipboard().setText(url)
         elif action == open_browser_action:
@@ -1360,7 +1395,149 @@ class GDriveApp(QMainWindow):
             self.move_files([file_data])
         elif action == new_folder_action:
             self.new_folder(file_data)
+        elif action == download_action:
+            assert self.gcache
+            self.queue_gdrive_action(DownloadAction(self.gcache, file_data))
+        elif action == uncache_action:
+            assert self.gcache
+            cache_path = self.gcache.get_cache_path_for_file(file_data)
+            if cache_path and cache_path.exists():
+                if cache_path.stat().st_size > 50000000:
+                    size_mb = cache_path.stat().st_size / 1024 / 1024
+                    reply = QMessageBox.question(
+                        self, "Confirm Delete",
+                        f"This file is {size_mb:.1f} MB. Are you sure you want to remove it from the cache?",
+                        QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                        QMessageBox.StandardButton.No
+                    )
+                    if reply != QMessageBox.StandardButton.Yes:
+                        return
+                cache_path.unlink()
+                self.refresh()
+    def info_dialog_for_file(self, file_data: Dict):
+        dialog = QDialog(self)
+        dialog.setWindowTitle(f"File Information - {file_data.get('name', 'Unknown')}")
+        dialog.setMinimumSize(600, 500)
+        
+        layout = QVBoxLayout(dialog)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(15)
+        
+        title_label = QLabel(f"<b>{file_data.get('name', 'Unknown')}</b>")
+        title_label.setStyleSheet("font-size: 16pt;")
+        layout.addWidget(title_label)
+        
+        table = QTableWidget(0, 2)
+        table.setHorizontalHeaderLabels(["Property", "Value"])
+        table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
+        table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
+        table.horizontalHeader().setStretchLastSection(True)
+        table.verticalHeader().setVisible(False)
+        table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        table.setAlternatingRowColors(True)
+        table.setShowGrid(False)
+        table.setFrameStyle(QFrame.Shape.NoFrame)
+        table.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        table.setWordWrap(True)
+        table.setTextElideMode(Qt.TextElideMode.ElideNone)
+        table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        
+        # Make the table look "pretty"
+        table.setStyleSheet("""
+            QTableWidget {
+                background-color: transparent;
+                alternate-background-color: rgba(0, 0, 0, 0.05);
+            }
+            QTableWidget::item {
+                padding: 8px;
+            }
+            QHeaderView::section {
+                background-color: transparent;
+                font-weight: bold;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding: 4px;
+            }
+        """)
 
+        def add_row(key, value, raw_value=None):
+            if value is None: return
+            row = table.rowCount()
+            table.insertRow(row)
+            
+            key_item = QTableWidgetItem(str(key))
+            key_item.setFont(QFont("", -1, QFont.Weight.Bold))
+            table.setItem(row, 0, key_item)
+            
+            val_item = QTableWidgetItem(str(value))
+            val_item.setToolTip(str(value))
+            if raw_value is not None:
+                val_item.setData(Qt.ItemDataRole.UserRole, raw_value)
+            table.setItem(row, 1, val_item)
+
+        add_row("Name", file_data.get('name'))
+        add_row("ID", file_data.get('id'))
+        add_row("MIME Type", file_data.get('mimeType'))
+        
+        size = file_data.get('size')
+        if size is not None and file_data.get('mimeType') != 'application/vnd.google-apps.folder':
+            add_row("Size", format_size(int(size)), raw_value=size)
+            
+        add_row("Modified", file_data.get('modifiedTime'))
+        
+        if file_data.get('md5Checksum'):
+            add_row("MD5 Checksum", file_data['md5Checksum'])
+            
+        # Parent Info
+        parent_id = file_data.get('parent_id')
+        if parent_id:
+            parent_item = self.gcache.get_item(parent_id) if self.gcache else None
+            if parent_item:
+                add_row("Parent Folder", f"{parent_item['name']} ({parent_id})")
+            else:
+                add_row("Parent ID", parent_id)
+        
+        # Owners
+        owners = file_data.get('owners', [])
+        if owners:
+            owner_strs = [f"{o.get('displayName')} <{o.get('email')}>" for o in owners]
+            add_row("Owners", ", ".join(owner_strs))
+            
+        # Cache Status
+        if self.gcache:
+            cache_path = self.gcache.get_cache_path_for_file(file_data)
+            if cache_path:
+                status = "Cached" if cache_path.exists() else "Not Cached"
+                add_row("Cache Status", status)
+                if cache_path.exists():
+                    add_row("Cache Path", str(cache_path))
+        
+        # Shortcut Details
+        shortcut = file_data.get('shortcutDetails')
+        if shortcut:
+            add_row("Shortcut Target ID", shortcut.get('targetId'))
+            add_row("Shortcut Target MIME", shortcut.get('targetMimeType'))
+            
+        # Properties
+        props = file_data.get('properties', {})
+        for k, v in props.items():
+            add_row(f"Property: {k}", v)
+            
+        def on_double_click(row, col):
+            item = table.item(row, 1)
+            if not item: return
+            raw = item.data(Qt.ItemDataRole.UserRole)
+            QApplication.clipboard().setText(str(raw) if raw is not None else item.text())
+
+        table.cellDoubleClicked.connect(on_double_click)
+        table.resizeRowsToContents()
+        layout.addWidget(table)
+        
+        buttons = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok)
+        buttons.accepted.connect(dialog.accept)
+        layout.addWidget(buttons)
+        
+        dialog.exec()
     def trigger_rename(self):
         if self.file_view.hasFocus():
             item = self.file_view.currentItem()
