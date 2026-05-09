@@ -663,7 +663,7 @@ class DriveCache:
     def get_root_shared_with_me_items(self) -> List[Dict[str, Any]]:
         return self.sql_query("owner > 1 AND parent_id IS NULL")
 
-    def search_by_name_containing(self, partial_name: str, additional_filters: str = None, additional_params: tuple = None) -> List[Dict[str, Any]]:
+    def search_by_name_containing(self, partial_name: str, additional_filters: str = None, additional_params: tuple = None, limit: int | None=None) -> List[Dict[str, Any]]:
         """
         Searches for items by name (case-insensitive).
         
@@ -681,6 +681,8 @@ class DriveCache:
             sql += " AND (" + additional_filters + ")"
             if additional_params:
                 params += additional_params
+        if limit:
+            sql += " LIMIT " + str(limit)
         return self.sql_query(sql, params)
 
     def files_exactly_named(self, name: str) -> List[Dict[str, Any]]:

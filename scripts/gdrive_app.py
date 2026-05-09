@@ -749,6 +749,7 @@ class GDriveApp(QMainWindow):
         self.gdrive_tasks_completed = 0
         self.gdrive_actions: list[GDriveAction] = []
         self.progress_popover = None
+        self.is_search_mode = False
         
         self.gcache: DriveCache | None = None
         self.init_ui()
@@ -836,6 +837,13 @@ class GDriveApp(QMainWindow):
         top_bar.addWidget(self.up_btn)
         top_bar.addWidget(self.address_bar)
         
+        self.search_btn = QPushButton()
+        self.search_btn.setIcon(get_icon(OutlineIcon.SEARCH))
+        self.search_btn.setToolTip("Search (Ctrl+K)")
+        self.search_btn.setCheckable(True)
+        self.search_btn.toggled.connect(self.toggle_search_mode)
+        top_bar.addWidget(self.search_btn)
+        
         self.gdrive_progress_widget = PieProgressBar()
         self.gdrive_progress_widget.clicked.connect(self.toggle_progress_popover)
         top_bar.addWidget(self.gdrive_progress_widget)
@@ -862,7 +870,7 @@ class GDriveApp(QMainWindow):
         self.file_view.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.file_view.customContextMenuRequested.connect(self.on_context_menu)
         self.file_view.itemDropped.connect(self.on_item_dropped)
-        self.address_bar.escPressed.connect(self.file_view.setFocus)
+        self.address_bar.escPressed.connect(self.on_address_bar_esc)
         
         right_layout.addWidget(self.file_view)
         
@@ -892,6 +900,9 @@ class GDriveApp(QMainWindow):
         self.focus_address_shortcut.activated.connect(self.address_bar.setFocus)
         self.focus_address_alt_shortcut = QShortcut(QKeySequence("Alt+D"), self)
         self.focus_address_alt_shortcut.activated.connect(self.address_bar.setFocus)
+        
+        self.search_shortcut = QShortcut(QKeySequence("Ctrl+K"), self)
+        self.search_shortcut.activated.connect(self.on_search_shortcut)
         
         self.file_view.setFocus()
 
@@ -1020,6 +1031,53 @@ class GDriveApp(QMainWindow):
         root_type = item.data(Qt.ItemDataRole.UserRole)
         self.load_root(root_type)
 
+    def on_address_bar_esc(self):
+        if getattr(self, 'is_search_mode', False):
+            self.search_btn.setChecked(False)
+        self.file_view.setFocus()
+
+    def on_search_shortcut(self):
+        if not self.search_btn.isChecked():
+            self.search_btn.setChecked(True)
+        else:
+            self.address_bar.setFocus()
+            self.address_bar.selectAll()
+
+    def toggle_search_mode(self, checked):
+        self.is_search_mode = checked
+        if checked:
+            self.address_bar.setPlaceholderText("Search files & folders...")
+            self.address_bar.setText("")
+            self.address_bar.setFocus()
+            self.completer_model.setStringList([])
+        else:
+            self.address_bar.setPlaceholderText("")
+            self.address_bar.setText(self.history[self.history_index].name if self.history_index >= 0 else "")
+            self.completer_model.setStringList([])
+
+    def go_to_search_result(self, file_data):
+        file_id = file_data['id']
+        if file_data['mimeType'] == 'application/vnd.google-apps.folder':
+            self.load_folder(file_id, file_data['name'], add_history=True)
+            return
+        
+        parent_id = file_data.get('parents', [None])[0]
+        if not parent_id:
+            owners = file_data.get('owners', [{}])
+            if owners and owners[0].get('me'):
+                self.load_root("my_drive", add_history=True, highlight_fileid=file_id)
+            else:
+                self.load_root("shared_with_me", add_history=True, highlight_fileid=file_id)
+            return
+            
+        if len(parent_id) == 19:
+            self.load_root("my_drive", add_history=True, highlight_fileid=file_id)
+            return
+            
+        parent = self.gcache.get_item(parent_id)
+        if parent:
+            self.load_folder(parent['id'], parent['name'], add_history=True, highlight_fileid=file_id)
+
     def on_address_bar_return(self):
         if not self.gcache:
             QMessageBox.information(self, "Loading", "Please wait for the cache to finish loading.")
@@ -1027,6 +1085,13 @@ class GDriveApp(QMainWindow):
 
         query = self.address_bar.text()
         if not query:
+            return
+
+        if getattr(self, 'is_search_mode', False):
+            if hasattr(self, 'search_results_map') and query in self.search_results_map:
+                file_data = self.search_results_map[query]
+                self.go_to_search_result(file_data)
+                self.search_btn.setChecked(False)
             return
 
         file_id = gdrive_base.link_to_id(query)
@@ -1073,9 +1138,19 @@ class GDriveApp(QMainWindow):
     def update_completer(self, text):
         if not text or not self.gcache:
             return
-        import gdrive
-        suggestions = gdrive.get_course_suggestions(text)
-        self.completer_model.setStringList(suggestions)
+        if getattr(self, 'is_search_mode', False):
+            results = self.gcache.search_by_name_containing(text, limit=20)
+            self.search_results_map = {}
+            for res in results:
+                name = res['name']
+                if name in self.search_results_map:
+                    name = f"{name} ({res['id'][:6]})"
+                self.search_results_map[name] = res
+            self.completer_model.setStringList(list(self.search_results_map.keys()))
+        else:
+            import gdrive
+            suggestions = gdrive.get_course_suggestions(text)
+            self.completer_model.setStringList(suggestions)
 
     def populate_files(self, items: List[Dict[str, Any]]):
         if not self.gcache:
