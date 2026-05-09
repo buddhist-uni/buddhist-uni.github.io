@@ -5,6 +5,7 @@ import subprocess
 import webbrowser
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
+from enum import StrEnum
 
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QHBoxLayout, QListWidget, QListWidgetItem,
@@ -75,6 +76,12 @@ class GCacheLoaderThread(QThread):
             if original_trange:
                 gdrive_base.trange = original_trange
 
+class GDriveActionStatus(StrEnum):
+    PENDING = "pending"
+    RUNNING = "running"
+    COMPLETED = "completed"
+    ERROR = "error"
+
 class GDriveActionSignals(QObject):
     # Signal can only take simple types, so we can't use `set[str]`
     finished = Signal(set) # the impacted folder ids
@@ -88,21 +95,21 @@ class GDriveAction(QRunnable):
         self.signals = GDriveActionSignals()
         self.impacted_folders: set[str] = set()
         self.description = description
-        self.status = "pending" # pending, running, completed, error
+        self.status = GDriveActionStatus.PENDING
         self.error_message = None
 
     @Slot()
     def run(self):
-        self.status = "running"
+        self.status = GDriveActionStatus.RUNNING
         self.signals.started.emit()
         self.signals.status_changed.emit()
         try:
             self.execute()
-            self.status = "completed"
+            self.status = GDriveActionStatus.COMPLETED
             self.signals.finished.emit(self.impacted_folders)
             self.signals.status_changed.emit()
         except Exception as e:
-            self.status = "error"
+            self.status = GDriveActionStatus.ERROR
             self.error_message = str(e)
             self.signals.error.emit(str(e))
             self.signals.status_changed.emit()
@@ -544,6 +551,37 @@ class PieProgressBar(QWidget):
             painter.setBrush(Qt.BrushStyle.NoBrush)
             painter.drawEllipse(rect)
 
+class SpinningIconLabel(QLabel):
+    def __init__(self, icon_enum, color: Optional[str] = None, parent=None):
+        super().__init__(parent)
+        self.icon_enum = icon_enum
+        self.color = color
+        self.angle = 0
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self._rotate)
+        self.timer.start(30) # ~33 fps
+        self.setFixedSize(24, 24)
+        
+        # We need the pixmap to rotate
+        icon = get_icon(self.icon_enum, color=self.color)
+        self._pixmap = icon.pixmap(48, 48) # Render larger then scale down for better quality
+
+    def _rotate(self):
+        self.angle = (self.angle + 10) % 360
+        self.update()
+
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform)
+        
+        # Center the painter
+        painter.translate(self.width() / 2, self.height() / 2)
+        painter.rotate(self.angle)
+        
+        # Draw the pixmap centered
+        painter.drawPixmap(-12, -12, 24, 24, self._pixmap)
+
 class GDriveProgressPopover(QDialog):
     def __init__(self, parent, gdrive_actions: list[GDriveAction]):
         super().__init__(parent, Qt.WindowType.Popup | Qt.WindowType.FramelessWindowHint)
@@ -619,23 +657,27 @@ class GDriveProgressPopover(QDialog):
             item_layout = QHBoxLayout(widget)
             item_layout.setContentsMargins(8, 8, 8, 8)
             
-            icon_label = QLabel()
             status_color = None
-            if action.status == "pending":
-                icon = get_icon(OutlineIcon.CLOCK)
-            elif action.status == "running":
-                icon = get_icon(OutlineIcon.LOADER_2)
-            elif action.status == "completed":
-                icon = get_icon(OutlineIcon.CIRCLE_CHECK, color="#28a745")
-                status_color = "#28a745"
-            elif action.status == "error":
-                icon = get_icon(OutlineIcon.CIRCLE_X, color="#dc3545")
-                status_color = "#dc3545"
+            if action.status == GDriveActionStatus.RUNNING:
+                icon_label = SpinningIconLabel(OutlineIcon.LOADER_2)
             else:
-                icon = get_icon(OutlineIcon.QUESTION_MARK)
+                icon_label = QLabel()
+                icon_label.setFixedSize(24, 24)
+                icon_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+                if action.status == GDriveActionStatus.PENDING:
+                    icon = get_icon(OutlineIcon.CLOCK)
+                elif action.status == GDriveActionStatus.COMPLETED:
+                    icon = get_icon(OutlineIcon.CIRCLE_CHECK, color="#28a745")
+                    status_color = "#28a745"
+                elif action.status == GDriveActionStatus.ERROR:
+                    icon = get_icon(OutlineIcon.CIRCLE_X, color="#dc3545")
+                    status_color = "#dc3545"
+                else:
+                    icon = get_icon(OutlineIcon.QUESTION_MARK)
+                
+                icon_label.setPixmap(icon.pixmap(24, 24))
             
-            icon_label.setPixmap(icon.pixmap(24, 24))
-            item_layout.addWidget(icon_label)
+            item_layout.addWidget(icon_label, 0, Qt.AlignmentFlag.AlignTop)
             
             text_layout = QVBoxLayout()
             desc_label = QLabel(action.description)
@@ -647,13 +689,13 @@ class GDriveProgressPopover(QDialog):
             status_label.setStyleSheet(f"font-size: 10px; color: {status_color if status_color else 'palette(text)'};")
             text_layout.addWidget(status_label)
             
-            if action.status == "error" and action.error_message:
+            if action.status == GDriveActionStatus.ERROR and action.error_message:
                 error_label = QLabel(action.error_message)
                 error_label.setStyleSheet("color: #dc3545; font-size: 9px;")
                 error_label.setWordWrap(True)
                 text_layout.addWidget(error_label)
             
-            item_layout.addLayout(text_layout)
+            item_layout.addLayout(text_layout, 1)
             
             item.setSizeHint(widget.sizeHint())
             self.list_widget.addItem(item)
@@ -1316,7 +1358,7 @@ class GDriveApp(QMainWindow):
         self.progress_popover.show()
 
     def clear_completed_actions(self):
-        self.gdrive_actions = [a for a in self.gdrive_actions if a.status not in ("completed", "error")]
+        self.gdrive_actions = [a for a in self.gdrive_actions if a.status not in (GDriveActionStatus.COMPLETED, GDriveActionStatus.ERROR)]
         if self.progress_popover:
             self.progress_popover.gdrive_actions = self.gdrive_actions
         self.gdrive_progress_widget.setMaximum(0)

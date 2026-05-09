@@ -19,7 +19,6 @@
             "path": "scripts"
         }
     ],
-    "python.defaultInterpreterPath": "../obu/bin/python",
     "python.autoComplete.extraPaths": [
         "scripts"
     ],
