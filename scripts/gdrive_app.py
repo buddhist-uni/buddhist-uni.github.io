@@ -801,7 +801,7 @@ class GDriveApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Google Drive Explorer")
-        self.resize(1000, 600)
+        self.resize(1160, 850)
         
         self.history: List[HistoryEntry] = []
         self.history_index = -1
@@ -948,7 +948,7 @@ class GDriveApp(QMainWindow):
         
         central_widget.addWidget(left_panel)
         central_widget.addWidget(right_panel)
-        central_widget.setSizes([200, 800])
+        central_widget.setSizes([160, 1000])
         
         self.update_nav_buttons()
         self.file_view.verticalScrollBar().valueChanged.connect(self.update_visible_thumbnails)
