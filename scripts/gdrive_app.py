@@ -15,7 +15,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                                QTableWidgetItem, QHeaderView, QAbstractItemView,
                                QDialogButtonBox, QFrame)
 from PySide6.QtCore import Qt, QSize, QPoint
-from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence, QFont
+from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence, QFont, QConicalGradient, QBrush
 
 import pytablericons
 from pytablericons.outline_icon import OutlineIcon
@@ -517,8 +517,26 @@ class PieProgressBar(QWidget):
         self.setFixedSize(24, 24)
         self._value = 0
         self._maximum = 1
+        self._is_active = False
+        self._angle = 0
+        self._timer = QTimer(self)
+        self._timer.timeout.connect(self._rotate)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         
+    def _rotate(self):
+        self._angle = (self._angle + 10) % 360
+        self.update()
+
+    def setActive(self, active: bool):
+        if self._is_active != active:
+            self._is_active = active
+            if active:
+                self._timer.start(30)
+            else:
+                self._timer.stop()
+                self._angle = 0
+            self.update()
+
     def setValue(self, value):
         self._value = value
         self.update()
@@ -526,6 +544,23 @@ class PieProgressBar(QWidget):
     def setMaximum(self, maximum):
         self._maximum = maximum
         self.update()
+
+    def update_progress(self, completed: int, total: int):
+        if total > completed:
+            self.setMaximum(total)
+            self.setValue(completed)
+            self.setToolTip(f"Processing... ({completed}/{total})")
+            self.setActive(True)
+        elif total > 0:
+            self.setMaximum(1)
+            self.setValue(1)
+            self.setToolTip(f"{completed} operations complete!")
+            self.setActive(False)
+        else:
+            self.setMaximum(0)
+            self.setValue(0)
+            self.setToolTip("No actions")
+            self.setActive(False)
 
     def mousePressEvent(self, event):
         if event.button() == Qt.MouseButton.LeftButton:
@@ -563,6 +598,25 @@ class PieProgressBar(QWidget):
             painter.setPen(outline_pen)
             painter.setBrush(Qt.BrushStyle.NoBrush)
             painter.drawEllipse(rect)
+
+        # Draw spinning activity indicator
+        if self._is_active:
+            center = self.rect().center()
+            # Conical gradient for a smooth spinning highlight effect
+            gradient = QConicalGradient(center, -self._angle)
+            
+            highlight = QApplication.palette().highlight().color()
+            # Use a slightly more visible 'background' than the base for the shadow side
+            bg = QApplication.palette().alternateBase().color()
+            
+            gradient.setColorAt(0, highlight)
+            gradient.setColorAt(0.5, bg)
+            gradient.setColorAt(1, highlight)
+            
+            active_pen = QPen(QBrush(gradient), 2)
+            painter.setPen(active_pen)
+            painter.setBrush(Qt.BrushStyle.NoBrush)
+            painter.drawEllipse(self.rect().adjusted(1, 1, -1, -1))
 
 class SpinningIconLabel(QLabel):
     def __init__(self, icon_enum, color: Optional[str] = None, parent=None):
@@ -1617,9 +1671,12 @@ class GDriveApp(QMainWindow):
         self.gdrive_actions = [a for a in self.gdrive_actions if a.status not in (GDriveActionStatus.COMPLETED, GDriveActionStatus.ERROR)]
         if self.progress_popover:
             self.progress_popover.gdrive_actions = self.gdrive_actions
-        self.gdrive_progress_widget.setMaximum(0)
-        self.gdrive_progress_widget.setValue(0)
-        self.gdrive_progress_widget.setToolTip("No actions")
+        
+        if not self.gdrive_actions:
+            self.gdrive_tasks_total = 0
+            self.gdrive_tasks_completed = 0
+            
+        self._update_gdrive_progress()
 
     def queue_gdrive_action(self, action: GDriveAction):
         action.signals.finished.connect(self._on_gdrive_action_finished)
@@ -1636,14 +1693,10 @@ class GDriveApp(QMainWindow):
             self.progress_popover.refresh_list()
 
     def _update_gdrive_progress(self):
-        if self.gdrive_tasks_total > self.gdrive_tasks_completed:
-            self.gdrive_progress_widget.setMaximum(self.gdrive_tasks_total)
-            self.gdrive_progress_widget.setValue(self.gdrive_tasks_completed)
-            self.gdrive_progress_widget.setToolTip(f"Processing... ({self.gdrive_tasks_completed}/{self.gdrive_tasks_total})")
-        else:
-            self.gdrive_progress_widget.setMaximum(1)
-            self.gdrive_progress_widget.setValue(1)
-            self.gdrive_progress_widget.setToolTip(f"{self.gdrive_tasks_completed} operations complete!")
+        self.gdrive_progress_widget.update_progress(self.gdrive_tasks_completed, self.gdrive_tasks_total)
+        
+        # Reset counters when all tasks are complete
+        if self.gdrive_tasks_total > 0 and self.gdrive_tasks_total == self.gdrive_tasks_completed:
             self.gdrive_tasks_total = 0
             self.gdrive_tasks_completed = 0
 
