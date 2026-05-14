@@ -1165,6 +1165,21 @@ class GDriveApp(QMainWindow):
                 file_data = self.search_results_map[query]
                 self.go_to_search_result(file_data)
                 self.search_btn.setChecked(False)
+                return
+            file_id = None
+            if query.startswith("http"):
+                file_id = gdrive_base.link_to_id(query)
+            if gdrive_base.GFIDREGEX.match(query):
+                file_id = query
+            if file_id:
+                file_data = self.gcache.get_item(file_id)
+                if not file_data:
+                    QMessageBox.warning(self, "File not found", f"The file with id {file_id} was not found in the cache.")
+                    return
+                self.go_to_search_result(file_data)
+                self.search_btn.setChecked(False)
+                return
+            
             return
 
         file_id = gdrive_base.link_to_id(query)
