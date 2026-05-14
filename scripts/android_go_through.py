@@ -402,18 +402,21 @@ for fp in local_files:
         shutil.move(fp, LOCAL_SPLIT_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
+        isnt_unread = 'unre' not in course.lower()
+        # only ask for more info if isn't unread
         tags = []
-        print("tags:")
-        while True:
-          tag = gdrive.input_course_string_with_tab_complete("  - ")
-          if not tag:
-            break
-          tags.append(tag)
+        if isnt_unread:
+          print("tags:")
+          while True:
+            tag = gdrive.input_course_string_with_tab_complete("  - ")
+            if not tag:
+              break
+            tags.append(tag)
         gdrive.log_move_reason(
           gf['id'],
           new_parent_id=gfolder[0] or gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason=input("Any notes? ") or "Preliminary sort",
+          reason=(isnt_unread and input("Any notes? ")) or "Preliminary sort",
           alternate_tags=tags,
         )
         if gfolder[0]:

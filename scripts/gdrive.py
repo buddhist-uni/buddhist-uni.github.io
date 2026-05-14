@@ -1132,7 +1132,7 @@ if __name__ == "__main__":
           link = requests.get('http://tinyurl.com/api-create.php?url='+link).text
       glink_gens.append(
         lambda title=title, link=link: DOC_LINK.format(
-            create_doc(
+            gcache.create_doc(
               filename=title,
               html=make_link_doc_html(title, link),
               custom_properties={

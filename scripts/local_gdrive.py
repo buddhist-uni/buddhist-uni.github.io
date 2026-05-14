@@ -965,6 +965,21 @@ class DriveCache:
           )
         )
         return ret
+    
+    def create_doc(self, **kwargs) -> str | None:
+        ret = gdrive_base.create_doc(**kwargs)
+        if not ret:
+          return ret
+        sleep(2)
+        self.upsert_item(
+          gdrive_base.execute(
+            gdrive_base.session().files().get(
+              fileId=ret,
+              fields=FILE_FIELDS,
+            )
+          )
+        )
+        return ret
 
     ######
     # Connection management
