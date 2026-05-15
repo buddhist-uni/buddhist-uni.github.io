@@ -19,14 +19,14 @@ pages: "883--895"
 openalexid: W2036478981
 ---
 
-> ...all claims for the compatibility of Buddhism and science are nonsense..
+> ...all claims for the compatibility of Buddhism and science are nonsense...
 
 Lopez correctly points out that many of the elements of modern Buddhism trace back to debates with European colonizers, whose logic the Buddhists then partially adopted.
-He then claims that this adoption of foreign elements by Buddhists represents not an evolution but a "degeneration" of the tradition.
+He then claims that this adoption of foreign elements by Buddhists represents not an evolution but a "degeneration" of the tradition:
 
 >  It is clear that the Buddhism that is compatible with science must jettison much of what Buddhism has been in order to claim that compatibility.
 That loss evokes for me the classical Buddhist doctrine of the degeneration of the dharma
 
 Lopez thus presents Buddhism with a double bind: if the religion doesn't adapt, it's incompatible with science. But if it does, it's degenerate and inauthentic.
 
-In defining authenticity by privileging certain historical texts and their interpretation by Western scholars such as himself over the words and deeds of contemporary Buddhist leaders such as the Dalai Lama (who he calls a "spokesperson"), Lopez risks perpetuating the same Colonial logic he so eloquently bemoans.
+In defining authenticity by privileging certain historical texts and their interpretation by Western scholars such as himself over the words and deeds of contemporary Buddhist leaders such as the Dalai Lama (whom he calls a "spokesperson"), Lopez risks perpetuating the same Colonial logic he so eloquently describes.
