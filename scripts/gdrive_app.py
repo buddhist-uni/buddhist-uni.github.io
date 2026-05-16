@@ -23,7 +23,7 @@ from pytablericons.filled_icon import FilledIcon
 
 
 from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel, QObject
+from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel, QObject, QItemSelectionModel
 from PySide6.QtGui import QPainter, QImage, QPen
 
 from collections import OrderedDict
@@ -86,7 +86,7 @@ class GDriveActionStatus(StrEnum):
 
 class GDriveActionSignals(QObject):
     # Signal can only take simple types, so we can't use `set[str]`
-    finished = Signal(set) # the impacted folder ids
+    finished = Signal(set, object) # the impacted folder ids, and the action itself
     error = Signal(str) # the error message
     started = Signal()
     status_changed = Signal()
@@ -99,6 +99,8 @@ class GDriveAction(QRunnable):
         self.description = description
         self.status = GDriveActionStatus.PENDING
         self.error_message = None
+        self.focus_id = None
+        self.highlight_focuses_only = False
 
     @Slot()
     def run(self):
@@ -108,7 +110,7 @@ class GDriveAction(QRunnable):
         try:
             self.execute()
             self.status = GDriveActionStatus.COMPLETED
-            self.signals.finished.emit(self.impacted_folders)
+            self.signals.finished.emit(self.impacted_folders, self)
             self.signals.status_changed.emit()
         except Exception as e:
             self.status = GDriveActionStatus.ERROR
@@ -136,6 +138,8 @@ class RenameAction(GDriveAction):
 
     def execute(self):
         self.gcache.rename_file(self.file_id, self.new_name)
+        self.focus_id = self.file_id
+        self.highlight_focuses_only = False
         self.description = self.description.replace("Renaming ", "Renamed ")
 
 class MoveAction(GDriveAction):
@@ -186,7 +190,9 @@ class CreateFolderAction(GDriveAction):
         self.impacted_folders.add(parent_id)
 
     def execute(self):
-        self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
+        new_id = self.gcache.create_folder(folder_name=self.folder_name, parent_id=self.parent_id)
+        self.focus_id = new_id
+        self.highlight_focuses_only = False
         self.description = self.description.replace("Creating ", "Created ")
 
 class DownloadAction(GDriveAction):
@@ -411,6 +417,26 @@ class FileListWidget(QListWidget):
         self.scroll_timer.timeout.connect(self._auto_scroll)
         self.scroll_direction = 0
         self.scroll_speed = 0
+        self._just_moved = False
+
+    def keyPressEvent(self, event):
+        if self._just_moved and not self.selectedItems() and self.currentItem():
+            if event.key() == Qt.Key.Key_Right:
+                # If we just moved a file and the user hits Right Arrow,
+                # we want to select the current focused item (the successor)
+                # rather than moving focus to the next item (which would skip it).
+                self.currentItem().setSelected(True)
+                self._just_moved = False
+                return
+        
+        # Any other key or normal state: clear the flag and proceed
+        if event.key() not in (Qt.Key.Key_Shift, Qt.Key.Key_Control, Qt.Key.Key_Alt, Qt.Key.Key_Meta):
+            self._just_moved = False
+        super().keyPressEvent(event)
+
+    def mousePressEvent(self, event):
+        self._just_moved = False
+        super().mousePressEvent(event)
 
     def _auto_scroll(self):
         sb = self.verticalScrollBar()
@@ -1003,7 +1029,7 @@ class GDriveApp(QMainWindow):
         painter.end()
         return result
 
-    def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None):
+    def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None, highlight_focuses_only: bool = False):
         if not self.gcache:
             return
         if root_type == "my_drive":
@@ -1019,11 +1045,15 @@ class GDriveApp(QMainWindow):
         self.populate_files(items)
         if highlight_fileid and highlight_fileid in self.item_mapping:
             item = self.item_mapping[highlight_fileid]
-            item.setSelected(True)
-            self.file_view.setCurrentItem(item)
+            if highlight_focuses_only:
+                index = self.file_view.indexFromItem(item)
+                self.file_view.selectionModel().setCurrentIndex(index, QItemSelectionModel.SelectionFlag.NoUpdate)
+            else:
+                item.setSelected(True)
+                self.file_view.setCurrentItem(item)
         self.file_view.repaint()
 
-    def load_folder(self, folder_id: str, folder_name: str, add_history=True, highlight_fileid: str | None=None, clicked_item_id: str | None = None):
+    def load_folder(self, folder_id: str, folder_name: str, add_history=True, highlight_fileid: str | None=None, clicked_item_id: str | None = None, highlight_focuses_only: bool = False):
         if not self.gcache:
             return
         items = self.gcache.get_children(folder_id)
@@ -1034,8 +1064,12 @@ class GDriveApp(QMainWindow):
         self.populate_files(items)
         if highlight_fileid and highlight_fileid in self.item_mapping:
             item = self.item_mapping[highlight_fileid]
-            item.setSelected(True)
-            self.file_view.setCurrentItem(item)
+            if highlight_focuses_only:
+                index = self.file_view.indexFromItem(item)
+                self.file_view.selectionModel().setCurrentIndex(index, QItemSelectionModel.SelectionFlag.NoUpdate)
+            else:
+                item.setSelected(True)
+                self.file_view.setCurrentItem(item)
         self.file_view.repaint() # Don't let QT wait for the async thumbnails
 
     def add_to_history(self, folder_id: str, clicked_item_id: str | None = None):
@@ -1626,6 +1660,8 @@ class GDriveApp(QMainWindow):
         if ok and new_name and new_name != file_data['name']:
             assert self.gcache
             action = RenameAction(self.gcache, file_data['id'], new_name)
+            action.focus_id = file_data['id']
+            action.highlight_focuses_only = False
             self.queue_gdrive_action(action)
     
     def new_folder(self, parent_folder_data: dict[str, Any]):
@@ -1637,14 +1673,54 @@ class GDriveApp(QMainWindow):
             action = CreateFolderAction(self.gcache, parent_folder_data['id'], new_folder_name)
             self.queue_gdrive_action(action)
 
+    def get_successor_id(self, items_to_remove: list[dict[str, Any]]) -> Optional[str]:
+        remove_ids = {item['id'] for item in items_to_remove}
+        
+        all_items = []
+        selected_indices = []
+        for i in range(self.file_view.count()):
+            item = self.file_view.item(i)
+            file_data = item.data(Qt.ItemDataRole.UserRole)
+            all_items.append(file_data)
+            if item.isSelected():
+                selected_indices.append(i)
+        
+        if not selected_indices:
+            # If nothing selected, maybe just current item
+            current = self.file_view.currentItem()
+            if current:
+                selected_indices = [self.file_view.row(current)]
+            else:
+                return None
+            
+        last_selected_idx = max(selected_indices)
+        first_selected_idx = min(selected_indices)
+        
+        # Try to find the first item AFTER the last selected one that is NOT being removed
+        for i in range(last_selected_idx + 1, len(all_items)):
+            if all_items[i]['id'] not in remove_ids:
+                return all_items[i]['id']
+                
+        # If not found, try to find the first item BEFORE the first selected one that is NOT being removed
+        for i in range(first_selected_idx - 1, -1, -1):
+            if all_items[i]['id'] not in remove_ids:
+                return all_items[i]['id']
+                
+        return None
+
     def move_files(self, file_datas: list[dict[str, Any]]):
         dialog = MoveFileDialog(self, self.gcache)
         assert self.gcache
         if dialog.exec():
             if not dialog.resulting_tuple:
                 return
+            
+            successor_id = self.get_successor_id(file_datas)
+            
             for file_data in file_datas:
                 action = MoveAction(self.gcache, file_data['id'], dialog.resulting_tuple)
+                action.focus_id = successor_id
+                action.highlight_focuses_only = True
                 self.queue_gdrive_action(action)
 
     def on_item_dropped(self, source_datas: list[dict[str, Any]], target_data: dict[str, Any]):
@@ -1654,9 +1730,13 @@ class GDriveApp(QMainWindow):
         if not self.gcache:
             return
             
+        successor_id = self.get_successor_id(source_datas)
+        
         previous_parents = [self.current_folder_id] if self.current_folder_id not in [None, "my_drive", "shared_with_me"] else None
         for source_data in source_datas:
             action = MoveAction(self.gcache, source_data['id'], target_data['id'], previous_parents=previous_parents)
+            action.focus_id = successor_id
+            action.highlight_focuses_only = True
             self.queue_gdrive_action(action)
 
     def toggle_progress_popover(self):
@@ -1715,10 +1795,10 @@ class GDriveApp(QMainWindow):
             self.gdrive_tasks_total = 0
             self.gdrive_tasks_completed = 0
 
-    def _on_gdrive_action_finished(self, impacted_folders: set[str]):
+    def _on_gdrive_action_finished(self, impacted_folders: set[str], action: GDriveAction):
         self.gdrive_tasks_completed += 1
         if self.current_folder_id in impacted_folders:
-            self.refresh()
+            self.refresh(highlight_id=action.focus_id, highlight_focuses_only=action.highlight_focuses_only)
         self._update_gdrive_progress()
 
     def _on_gdrive_action_error(self, error_msg):
@@ -1726,17 +1806,21 @@ class GDriveApp(QMainWindow):
         self._update_gdrive_progress()
         QMessageBox.critical(self, "Error", f"A Google Drive operation failed: {error_msg}")
 
-    def refresh(self):
+    def refresh(self, highlight_id: str | None = None, highlight_focuses_only: bool = False):
         """Reloads the current folder (to pick up file changes)"""
         if not self.current_folder_id:
             return
+            
+        if highlight_id and highlight_focuses_only:
+            self.file_view._just_moved = True
+            
         if self.current_folder_id in ["my_drive", "shared_with_me"]:
-            self.load_root(self.current_folder_id, add_history=False)
+            self.load_root(self.current_folder_id, add_history=False, highlight_fileid=highlight_id, highlight_focuses_only=highlight_focuses_only)
         else:
             assert self.gcache
             folder_item = self.gcache.get_item(self.current_folder_id)
             name = folder_item['name'] if folder_item else self.address_bar.text()
-            self.load_folder(self.current_folder_id, name, add_history=False)
+            self.load_folder(self.current_folder_id, name, add_history=False, highlight_fileid=highlight_id, highlight_focuses_only=highlight_focuses_only)
 
     def on_item_activated(self, item: QListWidgetItem):
         assert self.gcache
