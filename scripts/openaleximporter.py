@@ -377,7 +377,6 @@ def _main():
   if not work:
     quit(0)
   title = whitespace.sub(' ', work['title']).split(':')[0].replace('\'', '\\\'')
-  # TODO Investigate the below line as we're sometimes getting 2 results instead of one (for e.g. Holmes Welch)
   gfiles = gdrive.gcache.search_by_name_containing(
       title,
       additional_filters="mime_type = ? AND owner = 1 AND shortcut_target IS NULL",
@@ -387,7 +386,7 @@ def _main():
   if len(gfiles) == 0:
     gfiles = gdrive.gcache.search_by_name_containing(
        query,
-       additional_filters="mime_type = ? AND owner = 1",
+       additional_filters="mime_type = ? AND owner = 1 AND shortcut_target = NULL",
        additional_params=('application/pdf',)
     )
     if len(gfiles) == 0:
