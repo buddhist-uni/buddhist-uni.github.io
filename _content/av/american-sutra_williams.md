@@ -1,7 +1,7 @@
 ---
 title: "Faith and Freedom in the Second World War"
 authors:
-  - "Duncan Ryūken Williams"
+  - williams-duncan
 subcat: podcast
 editor: "Alex Carroll"
 external_url: "https://newbooksnetwork.com/82022-2"

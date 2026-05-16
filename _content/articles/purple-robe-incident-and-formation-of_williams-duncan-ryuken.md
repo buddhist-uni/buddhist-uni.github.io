@@ -1,7 +1,7 @@
 ---
 title: "The Purple Robe Incident and the Formation of the Early Modern Sōtō Zen Institution"
 authors:
-  - "Duncan Ryūken Williams"
+  - williams-duncan
 external_url: "https://pdfs.semanticscholar.org/0e9d/07b124de50a257a4950e34cdd7a16524fd59.pdf"
 source_url: "https://doi.org/10.18874/jjrs.36.1.2009.27-43"
 drive_links:
