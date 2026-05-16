@@ -1,37 +1,83 @@
+#!/bin/python3
+ 
 import sys
 import os
 import json
 import subprocess
 import webbrowser
+from collections import OrderedDict
+from functools import lru_cache
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 from enum import StrEnum
 
-from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
-                               QHBoxLayout, QListWidget, QListWidgetItem,
-                               QPushButton, QLineEdit, QSplitter, QMessageBox,
-                               QListView, QMenu, QProgressDialog, QCompleter,
-                               QDialog, QLabel, QInputDialog, QTableWidget,
-                               QTableWidgetItem, QHeaderView, QAbstractItemView,
-                               QDialogButtonBox, QFrame)
-from PySide6.QtCore import Qt, QSize, QPoint
-from PySide6.QtGui import QIcon, QPixmap, QShortcut, QKeySequence, QFont, QConicalGradient, QBrush
+from PySide6.QtCore import (
+    QByteArray,
+    QItemSelectionModel,
+    QObject,
+    QPoint,
+    QRunnable,
+    QSize,
+    QStringListModel,
+    QThread,
+    QThreadPool,
+    QTimer,
+    Qt,
+    Signal,
+    Slot,
+)
+from PySide6.QtWidgets import (
+    QAbstractItemView,
+    QApplication,
+    QCompleter,
+    QDialog,
+    QDialogButtonBox,
+    QFrame,
+    QHBoxLayout,
+    QHeaderView,
+    QInputDialog,
+    QLabel,
+    QLineEdit,
+    QListView,
+    QListWidget,
+    QListWidgetItem,
+    QMainWindow,
+    QMenu,
+    QMessageBox,
+    QProgressDialog,
+    QPushButton,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
+)
+from PySide6.QtGui import (
+    QBrush,
+    QConicalGradient,
+    QFont,
+    QIcon,
+    QImage,
+    QKeySequence,
+    QPainter,
+    QPen,
+    QPixmap,
+    QShortcut,
+)
+from PySide6.QtSvg import QSvgRenderer
 
 import pytablericons
 from pytablericons.outline_icon import OutlineIcon
 from pytablericons.filled_icon import FilledIcon
 
-
-from PySide6.QtSvg import QSvgRenderer
-from PySide6.QtCore import QByteArray, Qt, QRunnable, Signal, QThreadPool, Slot, QTimer, QThread, QStringListModel, QObject, QItemSelectionModel
-from PySide6.QtGui import QPainter, QImage, QPen
-
-from collections import OrderedDict
-from functools import lru_cache
 import pdfutils
 import videoutils
 import gdrive_base
-from strutils import thumbnail_path_for_file, THUMBNAIL_SIZES, format_size
+from strutils import (
+    format_size,
+    thumbnail_path_for_file,
+    THUMBNAIL_SIZES,
+)
 from local_gdrive import DriveCache
 
 
