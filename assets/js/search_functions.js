@@ -186,7 +186,7 @@ function displaySearchResults(results) {
       }
       return ret;
     } else {
-      return '<li>No results found</li>';
+      return warningHandler('<li>No results found</li>', false);
     }
 }
 
@@ -204,6 +204,18 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
     }
   }
   return tokenResults;
+}
+
+function warningHandler(warning, termIssue) {
+  if (termIssue){
+    const css = '<div style="padding: 5px; border: 1px lightgrey solid; border-radius: 8px; display: flex; justify-content: flex-start; align-items: center;">';
+    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i>'
+    return css + icon + " " + '<div style="margin-top: 22px;">' + warning + "</div>" + "</div>";
+  } else {
+    const css = '<div style="padding: 5px; border: 1px lightgrey solid; border-radius: 8px; display: flex; justify-content: flex-start; align-items: center;">';
+    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important; margin-right: 15px; margin-left: 5px"></i>'
+    return css + icon + " " + '<div style="margin-top: 22px;">' + warning + "</div>" + "</div>";
+  }
 }
 
 function handleSearchMessage(data, searchFn) {
@@ -253,7 +265,7 @@ function handleSearchMessage(data, searchFn) {
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
   return {
-    "warninghtml": warning,
+    "warninghtml": warning ? warningHandler(warning, true) : warning,
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
     "q": data.q,
