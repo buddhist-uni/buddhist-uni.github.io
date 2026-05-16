@@ -92,7 +92,7 @@ def print_openalex_work(work: dict, indent=0):
       pass
     print(f"{s}URL: {work['open_access']['oa_url']}")
 
-def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None, tags: list | None=None) -> str:
+def make_library_entry_for_work(work, draft=False, course=None, glink='', pagecount=None, tags: list | None=None, description: str | None=None) -> str:
   category = 'articles'
   subcat = ''
   match work['type']:
@@ -300,6 +300,9 @@ authors:
             line_len = 1 + len(word)
             fd.write('\n>')
     fd.write('\n\n')
+    if description:
+      fd.write(description)
+      fd.write('\n\n')
   return file_path
 
 def draft_files_matching(query):

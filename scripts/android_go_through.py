@@ -416,7 +416,8 @@ for fp in local_files:
           gf['id'],
           new_parent_id=gfolder[0] or gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason=(isnt_unread and input("Any notes? ")) or "Preliminary sort",
+          description = isnt_unread and input("Any notes? ")
+          reason = description or "Preliminary sort",
           alternate_tags=tags,
         )
         if gfolder[0]:
@@ -428,7 +429,7 @@ for fp in local_files:
           work, _ = prompt_for_work(query.replace("_", " "))
           if work:
             gdrive.move_gfile(glink, gfolder)
-            filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount, tags=tags)
+            filepath = make_library_entry_for_work(work, course=course, glink=glink, pagecount=pagecount, tags=tags, description=description)
             print(f"\nOpening {filepath}\n")
             system_open(filepath)
             fp.unlink()
