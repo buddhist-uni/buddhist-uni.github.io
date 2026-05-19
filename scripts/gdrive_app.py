@@ -1075,6 +1075,37 @@ class GDriveApp(QMainWindow):
         painter.end()
         return result
 
+    def get_cache_status_for_file(self, file_data: Dict[str, Any]) -> str:
+        cache_status = file_data.get('_cache_status')
+        if not cache_status:
+            assert self.gcache
+            cache_path = self.gcache.get_cache_path_for_file(file_data)
+            if cache_path:
+                if cache_path.exists():
+                    cache_status = "cached"
+                else:
+                    cache_status = "uncached"
+            else:
+                cache_status = "uncacheable"
+            file_data['_cache_status'] = cache_status
+        return cache_status
+
+    def apply_file_status_overlay(self, pixmap: QPixmap, file_data: Dict[str, Any]) -> QPixmap:
+        """Apply a cache status icon overlay to *pixmap* based on whether the file
+        can be / is cached or is an external-only file."""
+        cache_status = self.get_cache_status_for_file(file_data)
+        if cache_status == "cached":
+            return self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
+        elif cache_status == "uncached":
+            return self.apply_icon_overlay(pixmap, OutlineIcon.CLOUD)
+        elif file_data.get('mimeType') not in (
+            'application/vnd.google-apps.folder',
+            'application/vnd.google-apps.shortcut',
+        ):
+            assert cache_status == 'uncacheable'
+            return self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+        return pixmap
+
     def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None, highlight_focuses_only: bool = False):
         if not self.gcache:
             return
@@ -1368,19 +1399,7 @@ class GDriveApp(QMainWindow):
                 pixmap = cached_pixmap
             else:
                 pixmap = get_mime_icon(mime).pixmap(self.file_view.iconSize())
-            
-            cache_path = self.gcache.get_cache_path_for_file(item)
-            if cache_path:
-                if cache_path.exists():
-                    pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
-                    item['_cache_status'] = 'cached'
-                else:
-                    item['_cache_status'] = 'uncached'
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.CLOUD)
-            else:
-                item['_cache_status'] = 'uncacheable'
-                if item.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+            pixmap = self.apply_file_status_overlay(pixmap, item)
             
             list_item.setIcon(QIcon(pixmap))
             
@@ -1439,12 +1458,7 @@ class GDriveApp(QMainWindow):
             if item.listWidget() == self.file_view:
                 file_data = item.data(Qt.ItemDataRole.UserRole)
                 assert self.gcache
-                cache_path = self.gcache.get_cache_path_for_file(file_data)
-                if cache_path:
-                    if cache_path.exists():
-                        pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
-                elif file_data.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+                pixmap = self.apply_file_status_overlay(pixmap, file_data)
                 item.setIcon(QIcon(pixmap))
 
     def show_file_view_context_menu(self):
@@ -1514,11 +1528,12 @@ class GDriveApp(QMainWindow):
             rename_action = None
             move_action = None
         if not is_folder:
-            if file_data.get('_cache_status') == 'uncached':
+            cache_status = self.get_cache_status_for_file(file_data)
+            if cache_status == 'uncached':
                 download_action = menu.addAction("&Download to cache")
             else:
                 download_action = None
-            if file_data.get('_cache_status') == 'cached':
+            if cache_status == 'cached':
                 uncache_action = menu.addAction("Remove from cache")
             else:
                 uncache_action = None
