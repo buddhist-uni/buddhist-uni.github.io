@@ -32,7 +32,11 @@ parallels: []
 #  - uvs32
 ---
 
+> Whatever you conceive it to be  
+It turns out to be otherwise  
+For that is what is false in it:  
+The ephemeral is deceptive by nature.
+
 > When a mendicant meditates rightly contemplating a pair of teachings in this way—diligent, keen, and resolute—they can expect one of two results: enlightenment in the present life or, if there’s something left over, non-return.
 
-Not all dualities are misleading. This sutta teaches ways to contemplate the duality of the origination and cessation of stress and suffering so as to reach awakening.
-
+While the world perpetually evades conceptual understanding, not all dualities are misleading. This sutta teaches ways to contemplate the duality of the origination and cessation of stress so as to reach the liberating non-conceptual understanding of the way things are 
