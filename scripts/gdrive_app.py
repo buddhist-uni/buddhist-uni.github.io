@@ -1045,6 +1045,10 @@ class GDriveApp(QMainWindow):
         self.focus_address_alt_shortcut = QShortcut(QKeySequence("Alt+D"), self)
         self.focus_address_alt_shortcut.activated.connect(lambda: self.address_bar.setFocus(Qt.FocusReason.ShortcutFocusReason))
         
+        # Refresh
+        self.refresh_shortcut = QShortcut(QKeySequence("Ctrl+R"), self)
+        self.refresh_shortcut.activated.connect(self.refresh)
+
         self.search_shortcut = QShortcut(QKeySequence("Ctrl+K"), self)
         self.search_shortcut.activated.connect(self.on_search_shortcut)
         
@@ -1858,7 +1862,16 @@ class GDriveApp(QMainWindow):
 
     def _on_gdrive_action_finished(self, impacted_folders: set[str], action: GDriveAction):
         self.gdrive_tasks_completed += 1
+        
+        should_refresh = False
         if self.current_folder_id in impacted_folders:
+            should_refresh = True
+        elif self.current_folder_id == "my_drive":
+            should_refresh = any(isinstance(fid, str) and len(fid) == 19 for fid in impacted_folders)
+        elif self.current_folder_id == "shared_with_me":
+            should_refresh = None in impacted_folders
+            
+        if should_refresh:
             self.refresh(highlight_id=action.focus_id, highlight_focuses_only=action.highlight_focuses_only)
         self._update_gdrive_progress()
 
