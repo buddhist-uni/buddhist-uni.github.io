@@ -2,7 +2,7 @@
 title: "Buddhist Vegetarian Restaurants and the Changing Meanings of Meat in Urban China"
 authors:
   - "Jakob A. Klein"
-external_url: "https://eprints.soas.ac.uk/21946/1/Buddhist%20Vegetarianism%20and%20the%20Changing%20Meanings%20of%20Meat%20in%20Urban%20China.pdf"
+external_url: "https://soas-repository.worktribe.com/OutputFile/340580"
 source_url: "https://doi.org/10.1080/00141844.2015.1084016"
 drive_links:
   - "https://drive.google.com/file/d/12lO63jgrmhLmIazMhbUIZqVsDkqWugu1/view?usp=drivesdk"

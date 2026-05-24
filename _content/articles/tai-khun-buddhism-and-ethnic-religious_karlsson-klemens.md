@@ -2,7 +2,8 @@
 title: "Tai Khun Buddhism And Ethnic-Religious Identity"
 authors:
   - "Klemens Karlsson"
-external_url: "https://eprints.soas.ac.uk/5288/1/5KarlssonK-Tai_Khun_Buddhism.pdf"
+external_url: "https://soas-repository.worktribe.com/OutputFile/341116"
+alternate_url: "https://scispace.com/pdf/tai-khun-buddhism-and-ethnic-religious-identity-2x2x2w8s8r.pdf"
 source_url: "https://doi.org/10.1080/14639940902968939"
 drive_links:
   - "https://drive.google.com/file/d/1idMfm4nNuDtkHTE2NnVjeRbdKBUWPJO1/view?usp=drivesdk"

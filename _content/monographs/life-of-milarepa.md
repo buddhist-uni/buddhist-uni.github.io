@@ -3,7 +3,7 @@ title: "The Life of Milarepa"
 authors:
   - "Tsangnyön Heruka"
 translator: "Andrew Quintman"
-external_url: "https://www.in.yoga/wp-content/uploads/2024/11/The-Life-of-Milarepa.pdf"
+external_url: "https://wisdomcompassion.org/wp-content/uploads/2019/10/The-Life-of-Milarepa.pdf"
 source_url: "https://archive.org/details/lifeofmilarepaoftsangnyonherukaed.andrewquitmanpenguin_538_k/mode/1up"
 course: tibetan
 tags:
