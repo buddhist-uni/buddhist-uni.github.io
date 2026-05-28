@@ -10,6 +10,7 @@ course: intelligence
 tags:
   - academia
   - sociology
+  - essay-writing
 year: 2017
 month: jun
 journal: "Sociological Theory"

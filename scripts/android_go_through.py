@@ -412,11 +412,11 @@ for fp in local_files:
             if not tag:
               break
             tags.append(tag)
+        description = isnt_unread and input("Any notes? ")
         gdrive.log_move_reason(
           gf['id'],
           new_parent_id=gfolder[0] or gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          description = isnt_unread and input("Any notes? ")
           reason = description or "Preliminary sort",
           alternate_tags=tags,
         )
