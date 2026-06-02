@@ -8,6 +8,7 @@ import regex
 
 from nltk.stem.snowball import SnowballStemmer
 import numpy as np
+from scipy.sparse import csr_matrix
 from sklearn.utils.validation import (
     check_X_y,
     check_is_fitted,
@@ -85,12 +86,11 @@ def save_normalized_text(drive_file_id, normalized_text):
 
 def normalize_text(text: str) -> str:
     text = unidecode(text).lower()
-    text = (
+    return ' '.join(
         stemmer.stem(word)
         for word in regex.split(r"[^a-z]+", text)
         if len(word) >= 4 and word not in STOP_WORDS
     )
-    return ' '.join(text)
 
 YOUTUBE_DATA_FOLDER = DATA_DIRECTORY.joinpath('youtube_metadata')
 if not YOUTUBE_DATA_FOLDER.exists():
@@ -178,7 +178,7 @@ class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
         self.label = label
         self.classes_ = []
     def fit(self, X, y=None, sample_weight=None):
-        if self.label is None and len(y) > 0:
+        if self.label is None and y and len(y) > 0:
             self.label = y[0]
             self.classes_ = [self.label]
         return self
@@ -197,7 +197,7 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
     """
     def __init__(
         self,
-        base_classifier:BaseEstimator=None,
+        base_classifier:BaseEstimator|None=None,
         min_df=15,
     ) -> None:
         super().__init__()
@@ -237,22 +237,26 @@ class TagPredictor:
     def __init__(
         self,
         vocabulary,
-        classifiers: dict[str, BaseEstimator],
+        classifiers: dict[str, ZeroLearningClassifier | OBUNodeClassifier],
     ) -> None:
         self.classes = list(classifiers.keys())
         self.classes.remove('root')
         self.classifiers_ = classifiers
         self.vectorizer_ = CountVectorizer(lowercase=False, vocabulary=vocabulary)
     
-    def count_vectorize_texts(self, X, normalized=False):
+    def count_vectorize_texts(self, X, normalized=False) -> csr_matrix:
         if not normalized:
             X = list(map(normalize_text, X))
-        return self.vectorizer_.transform(X)
+        res = self.vectorizer_.transform(X)
+        assert isinstance(res, csr_matrix)
+        return res
     
     def tfidf_vectorize_texts(self, X, normalized=False):
         """Use the root classifier's TFIDF to semantically vectorize an array of texts"""
         X = self.count_vectorize_texts(X, normalized)
-        pipeline = self.classifiers_['root'].pipeline_
+        root_classifier = self.classifiers_['root']
+        assert isinstance(root_classifier, OBUNodeClassifier)
+        pipeline = root_classifier.pipeline_
         X = pipeline.named_steps['filter_rare_words'].transform(X)
         return pipeline.named_steps['tfidf'].transform(X)
     
@@ -277,11 +281,11 @@ class TagPredictor:
 
     @classmethod
     @cache
-    def load(cls, filepath: Path | str=None):
+    def load(cls, filepath: Path | str | None=None):
         """Loads a new instance of TagPredictor from the given save_as'ed .pkl file"""
         if not filepath:
             filepath = MODELS_DIRECTORY.joinpath('default.pkl')
-        from sklearn.exceptions import InconsistentVersionWarning
+        from sklearn.exceptions import InconsistentVersionWarning  # type: ignore
         with warnings.catch_warnings():
             warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
             vocabulary, classifiers = joblib.load(filepath)

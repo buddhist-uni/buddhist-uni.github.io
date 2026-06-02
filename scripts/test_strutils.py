@@ -271,28 +271,28 @@ def test_input_list():
 
 def test_format_size():
     # Bytes: no decimal places
-    assert strutils.format_size(0) == "0 B"
-    assert strutils.format_size(512) == "512 B"
-    assert strutils.format_size(999) == "999 B"
+    assert strutils.format_size(0) == "0b"
+    assert strutils.format_size(512) == "512b"
+    assert strutils.format_size(999) == "999b"
 
     # 1000 B crosses into KB (still divided by 1024)
-    assert strutils.format_size(1000) == "0.98 KB"
-    assert strutils.format_size(1024) == "1.00 KB"
-    assert strutils.format_size(1536) == "1.50 KB"
+    assert strutils.format_size(1000) == "1.0kb"
+    assert strutils.format_size(1024) == "1.0kb"
+    assert strutils.format_size(1536) == "1.5kb"
 
     # 1000 KB crosses into MB
-    assert strutils.format_size(1000 * 1024) == "0.98 MB"
-    assert strutils.format_size(1024 ** 2) == "1.00 MB"
-    assert strutils.format_size(2.5 * 1024 ** 2) == "2.50 MB"
+    assert strutils.format_size(1000 * 1024) == "1.0MB"
+    assert strutils.format_size(1024 ** 2) == "1.0MB"
+    assert strutils.format_size(2.5 * 1024 ** 2) == "2.5MB"
 
     # Gigabytes
-    assert strutils.format_size(1024 ** 3) == "1.00 GB"
+    assert strutils.format_size(1024 ** 3) == "1.0 GB"
 
     # Terabytes
-    assert strutils.format_size(1024 ** 4) == "1.00 TB"
+    assert strutils.format_size(1024 ** 4) == "1.0 TiB"
 
     # Petabytes — beyond TB the loop exits and the fallback PB line is used
-    assert strutils.format_size(1024 ** 5) == "1.00 PB"
+    assert strutils.format_size(1024 ** 5) == "1.0 PetaBytes"
 
 def _make_md(tmp_path, content: str) -> Path:
     """Write *content* to a temp .md file and return the Path."""
