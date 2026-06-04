@@ -24,6 +24,8 @@ jobs:
       with:
         node-version: lts/*
         cache: npm
+    - name: Install Deps
+      run: npm ci
     - name: Install Playwright Browsers
       run: DEBUG=pw:install npx playwright install chromium --with-deps
     - name: Run Playwright tests
