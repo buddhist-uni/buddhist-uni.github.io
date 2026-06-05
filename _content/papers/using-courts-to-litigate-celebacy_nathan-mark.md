@@ -12,7 +12,7 @@ tags:
   - law
 year: 2022
 month: nov
-booktitle: "Buddhism and Comparative Constitutional Law"
+from_book: buddhism-and-comparative-constitutional-law
 publisher: cambridge
 pages: "325--341"
 chapter: 16

@@ -14,7 +14,7 @@ tags:
   - historiography
 year: 2022
 month: nov
-booktitle: "Buddhism and Comparative Constitutional Law"
+from_book: buddhism-and-comparative-constitutional-law
 publisher: cambridge
 pages: "35--56"
 chapter: 2

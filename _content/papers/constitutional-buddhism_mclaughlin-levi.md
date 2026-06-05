@@ -14,7 +14,7 @@ tags:
   - constitutional-law
 year: 2022
 month: nov
-booktitle: "Buddhism and Comparative Constitutional Law"
+from_book: buddhism-and-comparative-constitutional-law
 publisher: cambridge
 pages: "241--271"
 chapter: 12
