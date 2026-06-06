@@ -22,4 +22,4 @@ ancient India.
 
 Falk's conclusion that the “*triratna*” symbol in Ancient Indian art actually meant "*namo*" seems, to me, quite conclusive, especially as it is often juxtaposed with _different_ symbols that refer unambiguously to the Triple Gem.
 
-Falk's further conclusion that the fish, flag, and whirl 🐠 ⛳ 🌀 symbols refer to the lower, human, and heavenly realms respectively (the "*triloka*") strikes me as plausible but in need of further evidence beyond what he provides here.
+Falk's further conclusion that the fish, flag, and whirl 🐠 ⛳ 🌀 symbols refer to the lower, human, and heavenly realms respectively (the "*triloka*") strikes me as plausible if more tenuous.
