@@ -11,7 +11,6 @@ course: japanese
 tags:
   - engaged
   - japan
-  - constitutional-law
 year: 2022
 month: nov
 from_book: buddhism-and-comparative-constitutional-law
