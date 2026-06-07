@@ -2,9 +2,8 @@
 title: "An Immense World: How Animal Senses Reveal the Hidden Realms Around Us"
 authors:
   - "Ed Yong"
-course: feeling
+course: senses
 tags:
-  - senses
   - biology
   - animalia
 year: 2022
