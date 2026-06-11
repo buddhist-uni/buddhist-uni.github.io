@@ -6,12 +6,10 @@ external_url: "https://blogs.dickinson.edu/buddhistethics/files/2010/04/Yarnall-
 drive_links:
   - "https://drive.google.com/file/d/1scB13Z6CR3RxgL3i_9JL1u36Ruokfq2l/view?usp=drivesdk"
 status: featured
-base_value: 0.85
 course: academic
 tags:
   - engaged
   - american
-  - modern
 year: 2000
 journal: jbe
 volume: 7

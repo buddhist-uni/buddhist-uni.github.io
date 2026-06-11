@@ -16,4 +16,4 @@ pages: "220--238"
 chapter: 11
 ---
 
-This chapter explores how the Thammayut Nikaya in Cambodia was always something of an elite, royalist project by outlining its history from its nineteenth century introduction to Cambodia through its enshrinement in the 1993 constitution and waning influence under Great Supreme Patriarch Tep Vong.
+This chapter explains the Thammayut Nikaya in Cambodia as an elite, royalist project by outlining its history from its nineteenth-century introduction to Cambodia from Thailand through its enshrinement in the 1993 constitution and its waning influence under the popular Great Supreme Patriarch Tep Vong.

@@ -29,4 +29,4 @@ parallels: []
 
 > It would be good, lord, if the Blessed One would teach me the Dhamma in brief
 
-This discourse is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as "categorical": always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful rubric to refer back to.
+This discourse to Mahāpajāpati Gotamī is one of the few teachings in the canon (along with the teachings on mindfulness) which the Buddha declared as "categorical": always applicable and useful in any situation. This sutta gives, better than any other, the overall direction of the teachings, and is a helpful compass pointing towards the true way.
