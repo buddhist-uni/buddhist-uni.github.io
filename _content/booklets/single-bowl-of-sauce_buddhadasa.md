@@ -1,16 +1,15 @@
 ---
 title: "A Single Bowl of Sauce: Teachings Beyond Good and Evil"
 authors: [buddhadasa]
-external_url: "https://www.suanmokkh.org/system/books/files/000/000/096/original/Buddhadasa-Single-bowl-of-sauce.pdf"
+external_url: "https://suanmokkh.org/books/96"
 alternate_url: "https://pagoda.or.th/search.html?q=sauce&p=all&areas[]=flexicontent&cc=p"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1V-9f2U_iDPC2YWfP8KhwnCFD0vsmpXD0/view?usp=drivesdk"]
 year: 2017
 month: may
 olid: OL32410963M
-course: modernism
+course: modern
 tags:
-  - west
   - becon
   - world
   - interfaith
@@ -22,3 +21,4 @@ pages: 130
 
 A collection of talks, interviews, and booklets by Ajahn Buddhadāsa giving his view of the world and outline for the future.
 
+This book is a good presentation of many of the themes taught by "modern" Buddhists.
