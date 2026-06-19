@@ -87,7 +87,9 @@ title: "The Tag Ontology Viewer"
     {% for entry in site.data.drive_folders %}
       {% if entry[1].public %}
         {% if entry[1].public contains "https://" %}
-          "{{ entry[0] }}": "{{ entry[1].public }}",
+          {% unless knownslugs contains entry[0] %}
+            "{{ entry[0] }}": "{{ entry[1].public }}",
+          {% endunless %}
         {% endif %}
       {% endif %}
     {% endfor %}
