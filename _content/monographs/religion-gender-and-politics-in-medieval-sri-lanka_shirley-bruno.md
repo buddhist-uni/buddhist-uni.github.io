@@ -8,7 +8,8 @@ drive_links:
   - "https://drive.google.com/file/d/1wGT7jWddUcqUXm6-66urZvVfymcK4Yxx/view?usp=drivesdk"
 course: theravada-roots
 tags:
-  - sri-lankan-roots
+  - sri-lanka-roots
+  - historiography
 year: 2026
 publisher: "Arc Humanities Press"
 olid: OL62174573M
