@@ -2,7 +2,7 @@
 title: "What Buddhism Taught Cognitive Science about Self, Mind and Brain"
 authors:
   - "Asaf Federman"
-external_url: "https://ddd.uab.cat/record/81153?ln=en"
+external_url: "https://revistes.uab.cat/enrahonar/article/view/v47-federman/134"
 source_url: "https://doi.org/10.5565/rev/enrahonar/v47n0.162"
 drive_links:
   - "https://drive.google.com/file/d/1_NCbb_Ft9NYRZJFZvYFayWCNfV-obYzO/view?usp=drivesdk"

@@ -4,7 +4,7 @@ authors:
   - "Willa Baker"
 subcat: podcast
 editor: salguero-p
-external_url: "https://blueberyl.buzzsprout.com/2044347/13155896-9-awakening-the-body-with-willa-baker"
+external_url: "https://blackberyl.substack.com/p/awakening-the-body-with-willa-baker-62a"
 drive_links:
   - "https://drive.google.com/file/d/1uNtelnSIVG9UsguwCJoEhJxYL7ayIIpZ/view?usp=drivesdk"
 course: american

@@ -4,7 +4,7 @@ authors:
   - "Kin Cheung"
   - salguero-p
 editor: "Lan Li"
-source_url: "https://blueberyl.buzzsprout.com/2044347/13906875-13-a-chinese-american-buddhist-healer-with-kin-cheung"
+source_url: "https://blackberyl.substack.com/p/a-chinese-american-buddhist-healer-0cb"
 drive_links:
   - "https://drive.google.com/file/d/1ZxF24rBNdNhoQt63-776wQUYPoiXYNy2/view?usp=drivesdk"
 file_links:
