@@ -15,4 +15,4 @@ publisher: nbn
 minutes: 59
 ---
 
-Jōdo Shinshū temple wives (bōmori) are central to sustaining religious life in Japanese communities beyond formal rituals. Their experiences raise broader questions about gender roles and equality within Japanese Buddhism and society.
+Jōdo Shinshū temple wives (*bōmori*) are central to sustaining religious life in Japanese communities far beyond their formal duties.
