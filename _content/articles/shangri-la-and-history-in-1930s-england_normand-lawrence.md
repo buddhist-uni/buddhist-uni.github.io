@@ -8,7 +8,8 @@ drive_links:
   - "https://drive.google.com/file/d/1r0R8s8HcqG-4AEZwjCtZ1EQyqnVGTxPs/view?usp=drivesdk"
 course: british
 tags:
-  - litcrit
+  - lit-crit
+  - orientalism
 year: 2007
 month: may
 journal: bsr
