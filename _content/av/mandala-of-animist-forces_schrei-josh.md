@@ -4,7 +4,7 @@ authors:
   - "Joshua Schrei"
 subcat: podcast
 editor: salguero-p
-external_url: "https://blueberyl.buzzsprout.com/2044347/episodes/17280879-the-mandala-of-animist-forces-with-josh-schrei"
+external_url: "https://blackberyl.substack.com/p/the-mandala-of-animist-forces-with-88a"
 drive_links:
   - "https://drive.google.com/file/d/1kBJ1-vsd7F8MrPbt5nVRYyGG0Kqcjagc/view?usp=drivesdk"
 course: mythology

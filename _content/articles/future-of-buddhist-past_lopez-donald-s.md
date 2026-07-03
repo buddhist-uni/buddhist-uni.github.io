@@ -9,6 +9,7 @@ drive_links:
 course: academic
 tags:
   - dialogue
+  - modern
 year: 2010
 month: nov
 journal: "Zygon"
@@ -27,6 +28,8 @@ He then claims that this adoption of foreign elements by Buddhists represents no
 >  It is clear that the Buddhism that is compatible with science must jettison much of what Buddhism has been in order to claim that compatibility.
 That loss evokes for me the classical Buddhist doctrine of the degeneration of the dharma
 
-Lopez thus presents Buddhism with a double bind: if the religion doesn't adapt, it's incompatible with science. But if it does, it's degenerate and inauthentic.
+Lopez thus presents Buddhism with a double bind: if the religion doesn't adapt, it's incompatible with science and modernity. But if it does, it's degenerate and inauthentic.
 
 In defining authenticity by privileging certain historical texts and their interpretation by Western scholars such as himself over the words and deeds of contemporary Buddhist leaders such as the Dalai Lama (whom he calls a "spokesperson"), Lopez risks perpetuating the same Colonial logic he so eloquently describes.
+
+For a fuller post-colonial critique of this essentializing sentimentality (which we call "Orientalism"), see ["Western Self, Asian Other" by Natalie Quli](/content/articles/western-self-asian-other_quli-natalie-e-f).

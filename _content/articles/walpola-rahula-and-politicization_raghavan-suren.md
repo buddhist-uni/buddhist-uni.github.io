@@ -10,7 +10,6 @@ file_links:
 course: sri-lanka
 tags:
   - sri-lankan
-  - engaged
   - modern
 year: 2011
 journal: jocbs

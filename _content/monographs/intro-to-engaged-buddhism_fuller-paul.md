@@ -5,7 +5,6 @@ authors:
 course: engaged
 tags:
   - dialogue
-  - modern
 year: 2021
 olid: OL34765724M
 oclc: 1225193372

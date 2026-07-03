@@ -4,7 +4,7 @@ authors: [king-winston]
 year: 1964
 publisher: pariyatti
 olid: OL9623130M
-external_url: "https://store.pariyatti.org/In-the-Hope-of-Nibbana_p_2217.html"
+external_url: "https://store.pariyatti.org/products/2217"
 tags: 
   - ethics
   - theravada

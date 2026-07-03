@@ -44,6 +44,7 @@ from PySide6.QtWidgets import (
     QMainWindow,
     QMenu,
     QMessageBox,
+    QProgressBar,
     QProgressDialog,
     QPushButton,
     QSplitter,
@@ -396,7 +397,7 @@ class HistoryEntry:
 
 
 class MoveFileDialog(QDialog):
-    def __init__(self, parent=None, gcache=None):
+    def __init__(self, parent=None, gcache=None, default_suggestion: Optional[str] = None):
         super().__init__(parent)
         self.setWindowTitle("Move File")
         self.setMinimumWidth(400)
@@ -415,6 +416,12 @@ class MoveFileDialog(QDialog):
         self.completer.setFilterMode(Qt.MatchFlag.MatchContains)
         self.line_edit.setCompleter(self.completer)
         self.line_edit.textEdited.connect(self.update_completer)
+        
+        if default_suggestion:
+            self.line_edit.setText(default_suggestion)
+            self.update_completer(default_suggestion)
+            self.line_edit.selectAll()
+            
         layout.addWidget(self.line_edit)
         
         buttons = QHBoxLayout()
@@ -447,6 +454,77 @@ class MoveFileDialog(QDialog):
             QMessageBox.warning(self, "Not Found", str(e))
         except Exception as e:
             QMessageBox.critical(self, "Error", f"An error occurred: {e}")
+
+class SuggestFolderWorker(QThread):
+    finished_signal = Signal(str)
+    
+    def __init__(self, file_data: Dict[str, Any], parent=None):
+        super().__init__(parent)
+        self.file_data = file_data
+        
+    def run(self):
+        from tag_predictor import (
+            TagPredictor,
+            normalize_text,
+            save_normalized_text,
+            local_normalized_text_file,
+        )
+        from pdfutils import readpdf
+        from epubutils import read_epub
+        import joblib
+
+        local_text_file = local_normalized_text_file(self.file_data['id'])
+        if local_text_file.exists():
+            normalized_text = joblib.load(local_text_file)
+        else:
+            mime_type = self.file_data['mimeType']
+            if mime_type == 'application/pdf':
+                normalized_text = normalize_text(readpdf(self.file_data['id']))
+            elif mime_type == 'application/epub+zip':
+                normalized_text = normalize_text(read_epub(self.file_data['id']))
+            else:
+                raise ValueError(f"Unsupported mime type: {mime_type}")
+            save_normalized_text(self.file_data['id'], normalized_text)
+        
+        tp = TagPredictor.load()
+        suggestion = tp.predict([normalized_text], normalized=True)[0]
+        self.finished_signal.emit(suggestion+"/unread")
+
+class PredictTagLoadingDialog(QDialog):
+    def __init__(self, parent=None, text="Predicting suggested folder..."):
+        super().__init__(parent)
+        self.setWindowTitle("Predicting Tag")
+        self.setModal(True)
+        self.setFixedSize(320, 120)
+        # Remove close/help buttons so transition is managed correctly
+        self.setWindowFlags(Qt.WindowType.Dialog | Qt.WindowType.WindowTitleHint | Qt.WindowType.CustomizeWindowHint)
+        
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(15)
+        
+        self.label = QLabel(text, self)
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.label.setStyleSheet("font-size: 11pt; font-weight: bold;")
+        layout.addWidget(self.label)
+        
+        self.progress_bar = QProgressBar(self)
+        self.progress_bar.setRange(0, 0)
+        self.progress_bar.setTextVisible(False)
+        self.progress_bar.setStyleSheet("""
+            QProgressBar {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                height: 8px;
+                background-color: #f0f0f0;
+            }
+            QProgressBar::chunk {
+                background-color: #2196F3;
+                border-radius: 4px;
+            }
+        """)
+        layout.addWidget(self.progress_bar)
+
 
 class FileListWidget(QListWidget):
     itemDropped = Signal(object, object)
@@ -1045,6 +1123,10 @@ class GDriveApp(QMainWindow):
         self.focus_address_alt_shortcut = QShortcut(QKeySequence("Alt+D"), self)
         self.focus_address_alt_shortcut.activated.connect(lambda: self.address_bar.setFocus(Qt.FocusReason.ShortcutFocusReason))
         
+        # Refresh
+        self.refresh_shortcut = QShortcut(QKeySequence("Ctrl+R"), self)
+        self.refresh_shortcut.activated.connect(self.refresh)
+
         self.search_shortcut = QShortcut(QKeySequence("Ctrl+K"), self)
         self.search_shortcut.activated.connect(self.on_search_shortcut)
         
@@ -1074,6 +1156,37 @@ class GDriveApp(QMainWindow):
         painter.drawPixmap(x, y, overlay_pixmap)
         painter.end()
         return result
+
+    def get_cache_status_for_file(self, file_data: Dict[str, Any]) -> str:
+        cache_status = file_data.get('_cache_status')
+        if not cache_status:
+            assert self.gcache
+            cache_path = self.gcache.get_cache_path_for_file(file_data)
+            if cache_path:
+                if cache_path.exists():
+                    cache_status = "cached"
+                else:
+                    cache_status = "uncached"
+            else:
+                cache_status = "uncacheable"
+            file_data['_cache_status'] = cache_status
+        return cache_status
+
+    def apply_file_status_overlay(self, pixmap: QPixmap, file_data: Dict[str, Any]) -> QPixmap:
+        """Apply a cache status icon overlay to *pixmap* based on whether the file
+        can be / is cached or is an external-only file."""
+        cache_status = self.get_cache_status_for_file(file_data)
+        if cache_status == "cached":
+            return self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
+        elif cache_status == "uncached":
+            return self.apply_icon_overlay(pixmap, OutlineIcon.CLOUD)
+        elif file_data.get('mimeType') not in (
+            'application/vnd.google-apps.folder',
+            'application/vnd.google-apps.shortcut',
+        ):
+            assert cache_status == 'uncacheable'
+            return self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+        return pixmap
 
     def load_root(self, root_type: str, add_history=True, highlight_fileid: str | None = None, clicked_item_id: str | None = None, highlight_focuses_only: bool = False):
         if not self.gcache:
@@ -1368,19 +1481,7 @@ class GDriveApp(QMainWindow):
                 pixmap = cached_pixmap
             else:
                 pixmap = get_mime_icon(mime).pixmap(self.file_view.iconSize())
-            
-            cache_path = self.gcache.get_cache_path_for_file(item)
-            if cache_path:
-                if cache_path.exists():
-                    pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
-                    item['_cache_status'] = 'cached'
-                else:
-                    item['_cache_status'] = 'uncached'
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.CLOUD)
-            else:
-                item['_cache_status'] = 'uncacheable'
-                if item.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+            pixmap = self.apply_file_status_overlay(pixmap, item)
             
             list_item.setIcon(QIcon(pixmap))
             
@@ -1439,12 +1540,7 @@ class GDriveApp(QMainWindow):
             if item.listWidget() == self.file_view:
                 file_data = item.data(Qt.ItemDataRole.UserRole)
                 assert self.gcache
-                cache_path = self.gcache.get_cache_path_for_file(file_data)
-                if cache_path:
-                    if cache_path.exists():
-                        pixmap = self.apply_icon_overlay(pixmap, FilledIcon.CIRCLE_CHECK)
-                elif file_data.get('mimeType') not in ('application/vnd.google-apps.folder', 'application/vnd.google-apps.shortcut'):
-                    pixmap = self.apply_icon_overlay(pixmap, OutlineIcon.EXTERNAL_LINK)
+                pixmap = self.apply_file_status_overlay(pixmap, file_data)
                 item.setIcon(QIcon(pixmap))
 
     def show_file_view_context_menu(self):
@@ -1507,6 +1603,7 @@ class GDriveApp(QMainWindow):
         copy_id_action = menu.addAction("Copy ID")
         copy_link_action = menu.addAction("Copy &URL")
         open_browser_action = menu.addAction("&Open in browser...")
+        suggest_folder_action = None
         if not hide_edit_options:
             rename_action = menu.addAction("&Rename...")
             move_action = menu.addAction(move_label)
@@ -1514,11 +1611,14 @@ class GDriveApp(QMainWindow):
             rename_action = None
             move_action = None
         if not is_folder:
-            if file_data.get('_cache_status') == 'uncached':
+            cache_status = self.get_cache_status_for_file(file_data)
+            if cache_status == 'uncached':
                 download_action = menu.addAction("&Download to cache")
             else:
                 download_action = None
-            if file_data.get('_cache_status') == 'cached':
+            if cache_status == 'cached':
+                if file_data.get('mimeType') in ['application/pdf', 'application/epub+zip']:
+                    suggest_folder_action = menu.addAction("&Suggest Folder...")
                 uncache_action = menu.addAction("Remove from cache")
             else:
                 uncache_action = None
@@ -1549,6 +1649,8 @@ class GDriveApp(QMainWindow):
             self.move_files([file_data])
         elif action == new_folder_action:
             self.new_folder(file_data)
+        elif action == suggest_folder_action:
+            self.suggest_folder(file_data)
         elif action == download_action:
             assert self.gcache
             self.queue_gdrive_action(DownloadAction(self.gcache, file_data))
@@ -1568,6 +1670,40 @@ class GDriveApp(QMainWindow):
                         return
                 cache_path.unlink()
                 self.refresh()
+    def suggest_folder(self, file_data: Dict[str, Any]):
+        loading_dialog = PredictTagLoadingDialog(self, text="Predicting folder tag...")
+        
+        worker = SuggestFolderWorker(file_data, self)
+        self._suggest_worker = worker
+        
+        active = [True]
+        
+        def on_finished(suggestion: str):
+            if not active[0]:
+                return
+            loading_dialog.accept()
+            
+            # Show the MoveFileDialog with the suggestion
+            dialog = MoveFileDialog(self, self.gcache, default_suggestion=suggestion)
+            assert self.gcache
+            if dialog.exec():
+                if not dialog.resulting_tuple:
+                    return
+                
+                successor_id = self.get_successor_id([file_data])
+                
+                action = MoveAction(self.gcache, file_data['id'], dialog.resulting_tuple)
+                action.focus_id = successor_id
+                action.highlight_focuses_only = True
+                self.queue_gdrive_action(action)
+            
+        worker.finished_signal.connect(on_finished)
+        worker.start()
+        
+        # If loading dialog is closed/canceled before prediction finishes, disable signal callback
+        loading_dialog.finished.connect(lambda result: active.__setitem__(0, False))
+        
+        loading_dialog.exec()
     def info_dialog_for_file(self, file_data: Dict):
         dialog = QDialog(self)
         dialog.setWindowTitle(f"File Information - {file_data.get('name', 'Unknown')}")
@@ -1843,7 +1979,16 @@ class GDriveApp(QMainWindow):
 
     def _on_gdrive_action_finished(self, impacted_folders: set[str], action: GDriveAction):
         self.gdrive_tasks_completed += 1
+        
+        should_refresh = False
         if self.current_folder_id in impacted_folders:
+            should_refresh = True
+        elif self.current_folder_id == "my_drive":
+            should_refresh = any(isinstance(fid, str) and len(fid) == 19 for fid in impacted_folders)
+        elif self.current_folder_id == "shared_with_me":
+            should_refresh = None in impacted_folders
+            
+        if should_refresh:
             self.refresh(highlight_id=action.focus_id, highlight_focuses_only=action.highlight_focuses_only)
         self._update_gdrive_progress()
 

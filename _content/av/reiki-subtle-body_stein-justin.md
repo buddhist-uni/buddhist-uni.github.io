@@ -4,7 +4,7 @@ authors:
   - "Justin B. Stein"
 subcat: podcast
 editor: salguero-p
-external_url: "https://blueberyl.buzzsprout.com/2044347/15003064-reiki-and-the-subtle-body-with-justin-b-stein"
+external_url: "https://blackberyl.substack.com/p/reiki-and-the-subtle-body-with-justin-39b"
 course: iddhi
 tags:
   - modern

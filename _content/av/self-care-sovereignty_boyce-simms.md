@@ -4,8 +4,7 @@ authors:
   - "Pamela Boyce Simms"
 subcat: podcast
 editor: salguero-p
-external_url: "https://blueberyl.buzzsprout.com/2044347/14117506-14-a-buddhist-approach-to-self-care-sovereignty-with-pamela-boyce-simms"
-source_url: ""
+external_url: "https://blackberyl.substack.com/p/a-buddhist-approach-to-self-care-d15"
 drive_links:
   - "https://drive.google.com/file/d/1Yik8M3Dr3uTUCsQ4fME6w4mEuUlfVRQW/view?usp=drivesdk"
 course: activism

@@ -1,5 +1,5 @@
 ---
-title: Perfecting Virtue
+title: Cultivating Virtue
 order: 11
 description: 
 image: https://buddhistuniversity.net/imgs/function/burmese-layman-meditates-by-bell.jpg

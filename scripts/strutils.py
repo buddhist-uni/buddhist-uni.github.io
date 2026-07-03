@@ -377,7 +377,7 @@ def title_case(s: str) -> str:
   # If the ratio looks good, trust
   return s
 
-def prompt(question: str, default:str = None) -> bool:
+def prompt(question: str, default:str | None = None) -> bool:
     reply = None
     hint = "(y/n)"
     if default == "y":
@@ -638,14 +638,16 @@ def authorstr(work: dict, maxn: int=2) -> str:
         authors = work['authors']
       assert isinstance(authors, list)
       authors = [author_name_to_normal(author['name']) for author in authors]
+    else:
+      raise ValueError(f"No authors found among {list(work.keys())}")
     if len(authors) > maxn:
       authors = authors[:(maxn-1)]
       authors.append('et al')
     return ", ".join(authors)
 
 @cache
-def get_author_slugs():
-  ret = defaultdict(lambda: None)
+def get_author_slugs() -> defaultdict[str, str | None]:
+  ret: defaultdict[str, str | None] = defaultdict(lambda: None)
   authordir = git_root_folder.joinpath("_authors")
   for fn in os.listdir(authordir):
     fullpath = os.path.join(authordir, fn)
@@ -658,5 +660,5 @@ def get_author_slugs():
       ret[aname[1]] = fn.split(".")[0]
   return ret
 
-def get_author_slug(name: str):
+def get_author_slug(name: str) -> str | None:
   return get_author_slugs()[name]

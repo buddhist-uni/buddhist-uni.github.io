@@ -1,5 +1,5 @@
 ---
-title: Cultivating the Mind
+title: Cultivating the Spiritual Faculties
 order: 12
 description: In which we finally address the role of meditation!
 image: https://buddhistuniversity.net/imgs/function/Bheemunipatnam_Beach.jpg

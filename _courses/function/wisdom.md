@@ -1,5 +1,5 @@
 ---
-title: Foundational Wisdom
+title: Cultivating Wisdom
 order: 10
 description: 
 image: https://buddhistuniversity.net/imgs/function/stupas.jpg

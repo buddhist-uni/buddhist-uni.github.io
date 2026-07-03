@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1UuBFlgzz7TOTaZm9KamZmlLMx-Oi-A7N/view?usp=drivesdk"
 course: avadana
 tags:
-  - early-indian-art
+  - early-bart
 year: 1973
 journal: jiass
 volume: 1

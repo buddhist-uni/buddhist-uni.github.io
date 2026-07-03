@@ -15,7 +15,6 @@ course: modern
 tags:
   - sri-lankan
   - buddhism
-  - engaged
   - becon
   - monastic-advice
   - monastic-theravada

@@ -8,7 +8,6 @@ publisher: hawaii
 olid: OL22684571M
 course: engaged
 tags:
-  - modern
   - becon
   - compassion
 pages: 200

@@ -9,7 +9,6 @@ external_url: "https://newbooksnetwork.com/mark-a-nathan-from-the-mountains-to-t
 course: korean
 tags:
   - evangelism
-  - engaged
   - modern
   - propagation
   - monastic-mahayana
