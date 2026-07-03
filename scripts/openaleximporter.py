@@ -232,7 +232,10 @@ authors:
           fd.write(f"  - {tag}\n")
     fd.write("  - \n")
     fd.write(f"year: {work['publication_year']}\n")
-    fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
+    try:
+      fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
+    except TypeError:
+      pass
     try:
       venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
     except (TypeError, KeyError, AttributeError):
