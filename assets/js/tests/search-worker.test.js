@@ -426,12 +426,12 @@ describe('warningHandler', () => {
   it("adds styling to the warning message not matching all of the user's terms", () => {
     const mockWarning = "No results found matching all of your terms. Perhaps you meant:";
     const result = warningHandler(mockWarning, true);
-    assert.equal(result, '<div style="padding: 5px; border: 1px lightgrey solid; border-radius: 8px; display: flex; justify-content: flex-start; align-items: center;"><i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i> <div style="margin-top: 22px;">No results found matching all of your terms. Perhaps you meant:</div></div>');
+    assert.equal(result, '<div style="display: flex; justify-content: flex-start; align-items: center;"><i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i> <div style="margin-top: 22px;">No results found matching all of your terms. Perhaps you meant:</div></div>');
   });
   it('adds styling to the warning message on no results shown', () => {
     const mockWarning = "No results found";
     const result = warningHandler(mockWarning, false);
-    assert.equal(result, '<div style="padding: 5px; border: 1px lightgrey solid; border-radius: 8px; display: flex; justify-content: flex-start; align-items: center;"><i class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important; margin-right: 15px; margin-left: 5px"></i> <div style="margin-top: 22px;">No results found</div></div>');
+    assert.equal(result, '<div style="display: flex; justify-content: flex-start; align-items: center;"><i class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important; margin-right: 15px; margin-left: 5px"></i> <div style="margin-top: 22px;">No results found</div></div>');
   });
 });
 

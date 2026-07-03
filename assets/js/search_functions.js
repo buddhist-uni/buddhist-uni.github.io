@@ -208,7 +208,7 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
 
 function warningHandler(warning, termIssue) {
   if (termIssue){
-    const css = '<div style=" display: flex; justify-content: flex-start; align-items: center;">';
+    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
     const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i>'
     return css + icon + " " + '<div style="margin-top: 22px;">' + warning + "</div>" + "</div>";
   } else {
