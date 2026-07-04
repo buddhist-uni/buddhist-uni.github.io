@@ -2,6 +2,7 @@
 var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 var joinedTitles = []
+var suttaNumOnly = []
 
 function normalizeSuttaTitles (obj) {
   var joinedTitleDatabase = []
@@ -10,7 +11,7 @@ function normalizeSuttaTitles (obj) {
     const item = obj[i];
     if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = item.title || "";
-      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THAAP|SF)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
       const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
       if(removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
         joinedTitleDatabase.push({
@@ -21,6 +22,27 @@ function normalizeSuttaTitles (obj) {
     }
   }
   return joinedTitleDatabase;
+}
+
+function storeSuttaNumsOnly (obj) {
+  var suttaNumDatabase = []
+
+  for (var i in obj){
+    const item = obj[i];
+    if (!item || item.type !== "content" || item.category !== "canon") continue;
+    const title = item.title || "";
+      const titleJoin = title.replace(
+        /^((?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THAAP|SF)\s*\d+(?:\.\d+)?).*/i,
+        "$1"
+      ).replace(/\./g, "").replace(/\s/g, "").toLowerCase()
+
+      suttaNumDatabase.push({
+        ref: i,
+        title: titleJoin,
+        matchData: { metadata: {} }
+      });
+  }
+  return suttaNumDatabase;
 }
 
 function getPositions(result, field) {
@@ -206,6 +228,22 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
   return tokenResults;
 }
 
+function searchBySuttaNum (query, suttaNumOnly) {
+  var tokenResults = [];
+  const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "").replace(/\./g, "").replace(/\s+/g, "").replace(" ", "").toLowerCase();
+  for (var i in suttaNumOnly){
+    const item = suttaNumOnly[i]
+    if(item.title === normalizedQuery){
+      tokenResults.push({
+        ref: item.ref,
+        score: 1,
+        matchData: { metadata: {} }
+      });
+    }
+  }
+  return tokenResults;
+}
+
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
@@ -251,7 +289,14 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
-  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+
+  let hasNumber = /\d/.test(data.q.trim());
+
+  if(hasNumber){
+    finalResults = searchBySuttaNum(data.q.trim(), suttaNumOnly);
+    warning = "";
+  } else finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.replace(/\s+/g, "").replace(" ","").trim(), joinedTitles);
+
   return {
     "warninghtml": warning,
     "html": displaySearchResults(finalResults),
