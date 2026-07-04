@@ -252,6 +252,10 @@ function handleSearchMessage(data, searchFn) {
     });
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+
+  if (data.q.toLowerCase().includes("who") && data.q.length > 29 || data.q.toLowerCase().includes("what") && data.q.length > 29 || data.q.toLowerCase().includes("where") && data.q.length > 29 || data.q.toLowerCase().includes("when") && data.q.length > 29 || data.q.toLowerCase().includes("how") && data.q.length > 29 || data.q.toLowerCase().includes("why") && data.q.length > 29 || data.q.toLowerCase().includes("is") && data.q.toLowerCase().includes("there") && data.q.toLowerCase().includes("way") && data.q.length > 29){
+    warning = '<li><strong>If you are asking a question, you may prefer to use Sutta Central community forums <a href="https://discourse.suttacentral.net/search?context=topic&context_id=26591&q=my%20search%20query&skip_context=true" target="_blank">Sutta Central Community</a></li>';
+  }
   return {
     "warninghtml": warning,
     "html": displaySearchResults(finalResults),
