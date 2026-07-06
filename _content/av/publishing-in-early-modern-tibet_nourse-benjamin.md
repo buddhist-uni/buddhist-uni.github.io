@@ -15,7 +15,7 @@ publisher: nbn
 minutes: 69
 ---
 
-> People start to come on pilgrimage just to be in the presence of all of the teachings of Buddhism in these engraved woodblocks, and people circumambulate the printing house itself as a religious practice...
+> People started to come on pilgrimage just to be in the presence of all of the teachings of Buddhism in these engraved woodblocks, and people circumambulated the printing house itself as a religious practice...
 
 > It's a beautiful sense of literacy in which the oral and the material work together and enrich each other.
 

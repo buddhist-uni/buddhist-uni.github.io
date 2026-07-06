@@ -1,5 +1,5 @@
 ---
-title: "The Legacy of Genghis Khan Courtly Art and Culture in Western Asia, 1256 - 1353"
+title: "The Legacy of Genghis Khan: Courtly Art and Culture in Western Asia, 1256–1353"
 authors:
   - "Linda Komaroff"
   - "Stefano Carboni"
@@ -9,9 +9,10 @@ drive_links:
   - "https://drive.google.com/file/d/1KZQCfjgqDitcbLfcv09XxVzcF6SoB8-x/view?usp=drivesdk"
 course: asia
 tags:
-  - culture
+  - material-culture
 year: 2002
 publisher: met
+olid: OL10318840M
 pages: 338
 openalexid: W7029920534
 ---

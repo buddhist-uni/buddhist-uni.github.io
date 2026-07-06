@@ -17,5 +17,5 @@ pages: "395--438"
 openalexid: W2262997257
 ---
 
-> A comparison between the popular ＂33 forms of Kuan-yin＂ with those mentioned in the scriptures will be made in order to suggest some possible processes through which this originally Indic bodhisattva became transformed into the Chinese ＂Goddess of Mercy＂.
+> A comparison between the popular '33 forms of Kuan-yin' with those mentioned in the scriptures will be made in order to suggest some possible processes through which this originally Indic bodhisattva became transformed into the Chinese 'Goddess of Mercy.'
 

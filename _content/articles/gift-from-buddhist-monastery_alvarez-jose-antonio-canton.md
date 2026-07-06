@@ -9,6 +9,7 @@ drive_links:
 course: east-asian-roots
 tags:
   - history-of-medicine
+  - drugs
 year: 2019
 month: sep
 journal: "Medical History"
