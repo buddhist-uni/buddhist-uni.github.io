@@ -71,7 +71,6 @@ var idx = lunr(function () {
 
 joinedTitles = normalizeSuttaTitles(store);
 suttaNumOnly = storeSuttaNumsOnly(store);
-console.log(suttaNumOnly);
 
 self.onmessage = function(e) {
   self.postMessage(handleSearchMessage(e.data, idx.search.bind(idx)));

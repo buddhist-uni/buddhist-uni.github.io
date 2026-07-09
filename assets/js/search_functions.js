@@ -11,7 +11,7 @@ function normalizeSuttaTitles (obj) {
     const item = obj[i];
     if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = item.title || "";
-      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THAAP|SF)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THA-AP|SF)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
       const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
       if(removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
         joinedTitleDatabase.push({
@@ -31,10 +31,10 @@ function storeSuttaNumsOnly (obj) {
     const item = obj[i];
     if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = item.title || "";
-      const titleJoin = title.replace(
-        /^((?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THAAP|SF)\s*\d+(?:\.\d+)?).*/i,
-        "$1"
-      ).replace(/\./g, "").replace(/\s/g, "").toLowerCase()
+    const titleJoin = title.replace(
+      /^((?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THAAP|SF)\s*\d+(?:\.\d+)?).*/i,
+      "$1"
+    ).replace(/\./g, "").replace(/\s/g, "").toLowerCase()
 
       suttaNumDatabase.push({
         ref: i,
@@ -208,7 +208,7 @@ function displaySearchResults(results) {
       }
       return ret;
     } else {
-      return '<li>No results found</li>';
+      return applyErrorStyle('<li>No results found</li>', false);
     }
 }
 
@@ -230,9 +230,9 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
 
 function searchBySuttaNum (query, suttaNumOnly) {
   var tokenResults = [];
-  const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "").replace(/\./g, "").replace(/\s+/g, "").replace(" ", "").toLowerCase();
+  const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
   for (var i in suttaNumOnly){
-    const item = suttaNumOnly[i]
+    const item = suttaNumOnly[i];
     if(item.title === normalizedQuery){
       tokenResults.push({
         ref: item.ref,
@@ -242,6 +242,18 @@ function searchBySuttaNum (query, suttaNumOnly) {
     }
   }
   return tokenResults;
+}
+
+function applyErrorStyle(message, isWarning) {
+  if (isWarning){
+    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
+    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i>'
+    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
+  } else {
+    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
+    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important; margin-right: 15px; margin-left: 5px"></i>'
+    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
+  }
 }
 
 function handleSearchMessage(data, searchFn) {
@@ -290,15 +302,18 @@ function handleSearchMessage(data, searchFn) {
     });
   }
 
-  let hasNumber = /\d/.test(data.q.trim());
+  let hasNumber = /\d/.test(data.q);
+  let hasNikaya = data.q.match(
+  /^((?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS|KHP|MV|T|MVU|VB|THA-AP|SF)\s*\d+(?:\.\d+)?)/i
+  );
 
-  if(hasNumber){
+  if(hasNumber && hasNikaya){
     finalResults = searchBySuttaNum(data.q.trim(), suttaNumOnly);
     warning = "";
   } else finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.replace(/\s+/g, "").replace(" ","").trim(), joinedTitles);
 
   return {
-    "warninghtml": warning,
+    "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
     "q": data.q,
