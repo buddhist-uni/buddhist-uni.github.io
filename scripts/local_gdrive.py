@@ -873,6 +873,11 @@ class DriveCache:
             folder_data = self.cursor.fetchone()
         
         if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
+          self.update()
+          with self._lock:
+            self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
+            folder_data = self.cursor.fetchone()
+          if not folder_data or folder_data['mime_type'] != 'application/vnd.google-apps.folder':
             raise ValueError(f"Folder {folder} not found in cache.")
         
         gdrive_base.move_drive_file(file_id, folder, previous_parents=previous_parents, verbose=verbose)
