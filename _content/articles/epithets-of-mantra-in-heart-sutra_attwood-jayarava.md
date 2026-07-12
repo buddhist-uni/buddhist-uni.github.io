@@ -5,7 +5,7 @@ authors:
 external_url: "https://www.jocbs.org/index.php/jocbs/article/view/155/180"
 drive_links:
   - "https://drive.google.com/file/d/1wayxk5BMUSKdyj9jdljZEspbzwtnidVH/view?usp=drivesdk"
-course: east-asian-roots
+course: mahayana-roots
 status: featured
 tags:
   - mahayana-canon
