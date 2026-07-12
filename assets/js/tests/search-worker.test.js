@@ -431,7 +431,7 @@ describe('applyErrorStyle', () => {
   it('adds styling to the warning message on no results shown', () => {
     const mockWarning = "No results found";
     const result = applyErrorStyle(mockWarning, false);
-    assert.ok(result.includes('class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important;'));
+    assert.ok(result.includes('class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important;'));
   });
 });
 

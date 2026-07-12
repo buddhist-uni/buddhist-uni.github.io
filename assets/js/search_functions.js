@@ -213,7 +213,7 @@ function applyErrorStyle(message, isWarning) {
     return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
   } else {
     const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
-    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(194, 21, 21) !important; margin-right: 15px; margin-left: 5px"></i>'
+    const icon = '<i class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important; margin-right: 15px; margin-left: 5px"></i>'
     return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
   }
 }
