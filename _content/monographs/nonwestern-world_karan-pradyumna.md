@@ -7,10 +7,7 @@ source_url: "https://doi.org/10.4324/9780203331255"
 drive_links:
   - "https://drive.google.com/file/d/1JPEWpqVUKo5YOCv4qSYtyHNtSKpcpbxW/view?usp=drivesdk"
 tags:
-  - asia
-  - development
-  - southern-africa
-  - middle-east
+  - places
 year: 2004
 olid: OL7497286M
 oclc: 54365551

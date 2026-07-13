@@ -3,6 +3,7 @@
 
 from datetime import datetime
 import json
+from time import sleep
 from mastodon import Mastodon
 import re
 import os
@@ -12,6 +13,7 @@ import gdrive_base
 
 from atproto_client import Client as BskyClient
 from atproto import models as BskyModels
+from atproto_client.exceptions import InvokeTimeoutError as BskyTimeoutError
 BskyLinkCard = BskyModels.AppBskyEmbedExternal.Main
 BskyLinkDetails = BskyModels.AppBskyEmbedExternal.External
 BskyTextFacet = BskyModels.AppBskyRichtextFacet.Main
@@ -265,11 +267,19 @@ if __name__ == "__main__":
   
   client = BskyClient()
   print("Posting to BlueSky...")
-  client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
+  try:
+    client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
+  except BskyTimeoutError:
+    sleep(5)
+    client.login(website.config.get('bluesky_account'), os.getenv('BLUESKY_PASSWORD'))
   text = write_post_for_item(filtered_content[idx_to_post], include_link=False, charlimit=300)
   embed = create_bsky_embed(filtered_content[idx_to_post])
   hashtags = hashtag_facets_for_text(text)
-  client.send_post(text=text, facets=hashtags, embed=embed)
+  try:
+    client.send_post(text=text, facets=hashtags, embed=embed)
+  except BskyTimeoutError:
+    sleep(5)
+    client.send_post(text=text, facets=hashtags, embed=embed)
   print("  done")
 
   print("::group::Future Posts")
