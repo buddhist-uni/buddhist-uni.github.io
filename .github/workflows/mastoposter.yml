@@ -8,16 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
         with:
           fetch-depth: 0
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@main
         with:
-          python-version: '3.12'
+          python-version: '3.14'
           cache: 'pip'
       - name: Install Dependencies
-        run: pip install Mastodon.py titlecase pyyaml python-frontmatter atproto pypdf tqdm yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api
+        run: pip install -U Mastodon.py titlecase pyyaml python-frontmatter atproto pypdf tqdm yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api
       - name: Run Mastoposter
         shell: bash
         run: |
