@@ -70,7 +70,9 @@ vm.runInContext(
   'this.addMatchHighlights = addMatchHighlights;\n' +
   'this.getBlurbForResult = getBlurbForResult;\n' +
   'this.normalizeSuttaTitles = normalizeSuttaTitles;\n' +
+  'this.storeSuttaNumsOnly = storeSuttaNumsOnly;\n' +
   'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
+  'this.searchBySuttaNum = searchBySuttaNum;\n' +
   'this.applyErrorStyle = applyErrorStyle; \n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
@@ -79,7 +81,7 @@ vm.runInContext(
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, storeSuttaNumsOnly, findOneWordSuttaTitleMatches, searchBySuttaNum, applyErrorStyle, handleSearchMessage
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -406,8 +408,6 @@ describe('normalizeSuttaTitles', () => {
     const result = normalizeSuttaTitles(mockStore);
     assert.equal(result.length, 0);
   });
-
-
 });
 
 // ── findOneWordSuttaTitleMatches ─────────────────────────────────────────────
@@ -418,6 +418,48 @@ describe('findOneWordSuttaTitleMatches', () => {
     };
     const result = findOneWordSuttaTitleMatches('culasaccakasutta', mockStore);
     assert.equal(toLocal(result).length, 1);
+  });
+});
+
+// ── storeSuttaNumsOnly ─────────────────────────────────────────────
+describe('storeSuttaNumsOnly', () => {
+  it('returns an array of database objects with only nikaya index as title', () => {
+    const mockStore = {
+      id1: {
+        title: 'AN 9.44 Paññā Vimutta Sutta: Freed by Wisdom',
+        type: 'content',
+        category: 'canon'
+      },
+      id2: {
+        title: 'Thig 14.1 Subhājīvakambavanikā Therīgāthā: Subhā of Jīvaka’s Mango Grove',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = storeSuttaNumsOnly(mockStore);
+    assert.equal(result.length, 2);
+    assert.equal(result[0].ref, 'id1');
+    assert.equal(result[0].title, 'an944');
+    assert.equal(result[1].ref, 'id2');
+    assert.equal(result[1].title, 'thig141');
+  });
+});
+
+// ── searchBySuttaNum ─────────────────────────────────────────────
+describe('searchBySuttaNum', () => {
+  it('checks query with number, against dataset of nikaya indexes', () => {
+    const mockStore = {
+      'id1': { title: 'an944', type: 'content', category: 'canon' },
+      'id2': {
+        title: 'thig141',
+        type: 'content',
+        category: 'canon'
+      }
+    };
+    const result = searchBySuttaNum('an 9.44', mockStore);
+    const result2 = searchBySuttaNum('thig 14.1', mockStore);
+    assert.equal(toLocal(result).length, 1);
+    assert.equal(toLocal(result2).length, 1);
   });
 });
 
