@@ -853,7 +853,12 @@ class DriveCache:
             WHERE id = ?
             RETURNING *
         """, (file_id,))
-        file = self.row_dict_to_api_dict(dict(self.cursor.fetchone()))
+        copied_row = self.cursor.fetchone()
+        if not copied_row:
+          print(f"Warning (local_gdrive.py): Cannot trash untracked file {file_id}")
+          # This can happen if, for example, someone quickly shares and unshares a file with you
+          return
+        file = self.row_dict_to_api_dict(dict(copied_row))
         before_cache_path = self.get_cache_path_for_file(file)
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
         if trashed_time:

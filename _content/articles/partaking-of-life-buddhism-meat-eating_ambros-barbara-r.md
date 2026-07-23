@@ -14,9 +14,9 @@ year: 2019
 month: apr
 journal: "Religions"
 volume: 10
-number: 4
-pages: "279--279"
-publisher: "Mdpi"
+number: 279
+pages: 21
+publisher: "MDPI"
 openalexid: W2940237380
 ---
 

@@ -51,7 +51,10 @@ def serp_result(work: dict, margin=10) -> str:
 OPENALEX_SEARCH_RESULT_COUNT = 10
 def search_openalex_for_works(query):
   r = requests.get(f"https://api.openalex.org/autocomplete/works?{OPENALEX_CREDS}q={url.quote(query, safe='')}")
-  return json.loads(r.text)
+  text = r.text
+  if not text:
+    return {}
+  return json.loads(text)
 
 def fetch_work_data(workid):
   r = requests.get(f"https://api.openalex.org/works/{workid}?{OPENALEX_CREDS}")

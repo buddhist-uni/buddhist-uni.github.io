@@ -7,7 +7,7 @@ jobs:
   Links:
     runs-on: ubuntu-latest
     env:
-      USER_AGENT: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+      USER_AGENT: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36
     steps:
         - name: Download prod build
           uses: dawidd6/action-download-artifact@master
@@ -21,7 +21,7 @@ jobs:
             cd $GITHUB_WORKSPACE/prod
             tar -xf artifact.tar && rm artifact.tar
         - name: git clone main
-          uses: actions/checkout@v4
+          uses: actions/checkout@main
           with:
             ref: main
             path: main
