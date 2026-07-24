@@ -5,7 +5,9 @@ authors:
   - "Shiping He"
 subcat: film
 status: featured
-external_url: "https://youtu.be/lm-PuRXepxE"
+external_url: "https://youtu.be/NUr45CvvLqs"
+hidden_links:
+  - "https://drive.google.com/file/d/13jioDwkl8HybrkZwlib8v_XfNS_gpSOp/view?usp=drivesdk"
 course: east-asian
 tags:
   - renunciation

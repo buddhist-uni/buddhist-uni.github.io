@@ -123,6 +123,12 @@ def naturally_sorted(alist):
 def cout(*args):
   print(*args, flush=True, end="")
 
+def flush_input():
+  try:
+    termios.tcflush(sys.stdin.fileno(), termios.TCIFLUSH)
+  except termios.error:
+    pass  # not a real tty (e.g. piped input, or Windows)
+
 def iolen(fd):
   pos = fd.tell() # get current position
   fd.seek(0, io.SEEK_END) # move to the end

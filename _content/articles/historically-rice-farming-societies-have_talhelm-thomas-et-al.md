@@ -5,7 +5,6 @@ authors:
   - "Alexander Scott English"
 external_url: "https://www.pnas.org/content/pnas/117/33/19816.full.pdf"
 source_url: "https://doi.org/10.1073/pnas.1909909117"
-supplemental_pdf: "https://knowledge.uchicago.edu/record/9698/files/pnas.1909909117.sapp.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1H--verbm_LcmMueC3fEwww_uCAVYQshg/view?usp=drivesdk"
 course: places

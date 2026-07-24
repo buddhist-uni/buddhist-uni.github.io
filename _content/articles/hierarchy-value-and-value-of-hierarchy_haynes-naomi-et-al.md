@@ -3,7 +3,7 @@ title: "Hierarchy, Value, and the Value of Hierarchy"
 authors:
   - "Naomi Haynes"
   - "Jason Hickel"
-external_url: "https://www.berghahnjournals.com/downloadpdf/journals/social-analysis/60/4/sa600401.pdf"
+external_url: "https://www.berghahnjournals.com/downloadpdf/view/journals/social-analysis/60/4/sa600401.pdf"
 source_url: "https://doi.org/10.3167/sa.2016.600401"
 drive_links:
   - "https://drive.google.com/file/d/1Aj-ehInccBDD-QPWGZGOzieHYpUnqHYU/view?usp=drivesdk"

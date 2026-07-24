@@ -363,6 +363,8 @@ for fp in local_files:
         [text + ''.join([' ', normalize_text(gf['name'][:-4])]*3)],
         normalized=True,
       )[0] + "/unread"
+    from strutils import flush_input
+    flush_input()
     course = gdrive.input_course_string_with_tab_complete(prefill=course)
     if course == "trash":
         gdrive.log_move_reason(
