@@ -10,13 +10,8 @@ The compassionate wisdom and peerless example of the Buddha show us the way out 
 
 ## Readings
 
-I'd like to introduce you now to the other four texts (in addition to [_Being Nobody, Going Nowhere_](/content/monographs/being-nobody-going-nowhere_khema)) that we'll be reading through the remainder of this course:
+I'd like to introduce you now to the other three texts (in addition to [_Being Nobody, Going Nowhere_](/content/monographs/being-nobody-going-nowhere_khema)) that we'll be reading through the remainder of this course:
 
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-This classic introduction to Buddhism has had a dramatic impact on the shape of Buddhist thought in the West, but its interest is not merely historical: it remains a  lucid and sympathetic introduction, more than fifty years later.
-
-If, however, the language is too old-fashioned for you, please feel free to skip these readings as they will have a lot of overlap with Ven. Santita’s and Bhikkhu Bodhi’s books below.
-" %}
 {% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
 To understand Buddhism, we need to understand something of the life of the Buddha.
 
@@ -37,7 +32,6 @@ We’ll break these up into bite-sized pieces over the coming lessons.
 
 For this module, let's **begin by reading:**
 - Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born (Don't worry: they're short chapters!)
-- Chapter 1 of *What the Buddha Taught*
 - And (optionally) [the Introduction](https://www.buddhanet.net/funbud1), [Chapter 1](https://www.buddhanet.net/fundbud2) and [Chapter 2](https://www.buddhanet.net/fundbud3) of *Fundamentals* if you'd like to learn a bit about ancient India
 - (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path) and will return to _Being Nobody_ in the next lesson.)
 

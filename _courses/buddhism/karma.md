@@ -19,12 +19,9 @@ We've been reading the Buddha's biography, but who was the Buddha in his own wor
 In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and he responds to a question on what will become of him after his death.
 The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind,” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and its cessation, thus redirecting our attention from empty philosophical musings to the things that matter most." %}
 
-(**Optional Readings**)
+(**Optional Reading**)
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
 *Fundamentals* chapters [eight](https://www.buddhanet.net/fundbud9) and [nine](https://www.buddhanet.net/funbud10) are also on Karma and Rebirth.
-" %}
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-[The *Samudaya* chapter of WTBT](https://web.archive.org/web/20120226193918/http://sites.google.com/site/rahulawhatthebuddha/the-second-noble-truth) analyzes the arising of suffering in particular as a function of our karma.
 " %}
 
 

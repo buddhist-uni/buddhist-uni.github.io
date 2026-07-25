@@ -8,9 +8,6 @@ order: 5
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-We'll start with Rahula's description of the First Noble Truth by reading [the *Dukkha* chapter](https://web.archive.org/web/20120226193917/http://sites.google.com/site/rahulawhatthebuddha/the-first-noble-truth) of WTBT.
-" %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
 Then continue with chapters [three](https://www.buddhanet.net/fundbud4) and [four](https://www.buddhanet.net/fundbud5) of *Fundamentals*: two lectures covering all four Truths.
 " %}

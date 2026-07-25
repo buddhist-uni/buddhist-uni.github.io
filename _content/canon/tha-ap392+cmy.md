@@ -1,5 +1,5 @@
 ---
-title: "ThaAp 392 Pubbakammapilotika Buddhāpadāna: The Traditions about the Buddha (known as) The Connection with Previous Deeds, or Why the Buddha Suffered"
+title: "Tha-Ap 392 Pubbakammapilotika Buddhāpadāna: The Traditions about the Buddha (known as) The Connection with Previous Deeds, or Why the Buddha Suffered"
 authors:
   - anandajoti
 external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connection-with-Previous-Deeds/"

@@ -19,6 +19,7 @@ from strutils import (
 from executils import (
   graceful_threadmap,
   ThreadSafeSet,
+  DelayedKeyboardInterrupt,
 )
 from yaspin import yaspin
 import googleapiclient.errors as gerrors
@@ -116,12 +117,14 @@ def get_folders_of_types_for_tag(
     match inc_type:
       case TagFolderTypes.PUBLIC:
         if public_id:
-          ret.append(gdrive.gcache.get_item(public_id))
-          assert ret[-1] is not None, f"drive_folders.json['{tag_slug}']['public'] has a bad value"
+          val = gdrive.gcache.get_item(public_id)
+          assert val is not None, f"drive_folders.json['{tag_slug}']['public'] has a bad value"
+          ret.append(val)
       case TagFolderTypes.PRIVATE:
         if private_id:
-          ret.append(gdrive.gcache.get_item(private_id))
-          assert ret[-1] is not None, f"drive_folders.json['{tag_slug}']['private'] has a bad value"
+          val = gdrive.gcache.get_item(private_id)
+          assert val is not None, f"drive_folders.json['{tag_slug}']['private'] has a bad value"
+          ret.append(val)
       case TagFolderTypes.NONTAG_PUBLIC_SUBS:
         if public_id:
           folderids_to_tag = gdrive.load_folder_slugs()
@@ -166,7 +169,7 @@ def find_files_for_tag(tag_slug: str, include_av: bool=False, include_folders: C
   return all_files
 
 def find_unlinked_tag_content(
-  include_folders: set[TagFolderTypes]=None,
+  include_folders: set[TagFolderTypes]=set(),
   include_av=False,
 ) -> list[dict]:
   ret = []
@@ -330,13 +333,14 @@ def find_all_obu_pdfs() -> list[dict]:
 
 @backup_level(9, "one offs", "A few docs not elsewhere covered")
 def list_one_off_docs() -> list[dict]:
-  return [
+  ret = [
     gdrive.gcache.get_item(fid) for fid in [
       '1TN6KzqD7-dEwcEJ9cs9qykuUHT_QRMpm7TVD8cT_biU',
       '1NNlHLr928Mb-NRiJKjZxdwTrsYY7cSZdR_3KulvjiYA',
       '1Yi6evYG0NsdYzVBO7o8XrCIHo3dApJ4DmlXraerzZFw',
     ]
   ]
+  return [r for r in ret if r]
 
 @backup_level(45, "obu docs", "All epubs and other text document types")
 def find_all_obu_text_docs() -> list[dict]:
@@ -466,10 +470,11 @@ def sideload_file(file: Path, cache_dir: Path, parent_folder: str | None, move: 
     print(f"Found corrupted: {target_path}")
     target_path.unlink()
   target_path.parent.mkdir(exist_ok=True, parents=is_in_trash)
-  if move:
-    shutil.move(src=file, dst=target_path)
-  else:
-    shutil.copy2(file, target_path)
+  with DelayedKeyboardInterrupt():
+    if move:
+      shutil.move(src=file, dst=target_path)
+    else:
+      shutil.copy2(file, target_path)
 
 
 def sideload_main(

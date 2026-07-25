@@ -9,6 +9,7 @@ tags:
 oclc: 1141064097
 year: 2020
 status: rejected
+reason: "Not really a translation at all"
 publisher: shambhala
 pages: 100
 ---

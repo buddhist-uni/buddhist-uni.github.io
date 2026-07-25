@@ -21,9 +21,6 @@ Chapter 7 ("Concentration") discusses these heightened states of consciousness.
 [Chapter 7](https://www.buddhanet.net/fundbud8/) of *Fundamentals* discusses how Concentration leads to "Wisdom"
 ' %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 9 ("Four Kinds of Happiness") outlines the happiness beyond sensual indulgence which is accessible through meditation.' %}
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb="
-And [the *Nirodha* Chapter](https://web.archive.org/web/20120226205218/http://sites.google.com/site/rahulawhatthebuddha/the-third-noble-truth) of WTBT is **optional** reading for this module on wisdom's ultimate goal: *Nibbāna*
-" %}
 
 ## Lecture
 

@@ -8,10 +8,6 @@ order: 9
 
 # Readings
 
-
-{% include content_blurb.html category="monographs" slug="what-the-buddha-taught_rahula-w" blurb='
-Skip ahead to [the *anatta* or "No Soul" chapter](https://web.archive.org/web/20120226210641/https://sites.google.com/site/rahulawhatthebuddha/the-doctrine-of-no-soul)
-' %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
 [Chapter 11](https://www.buddhanet.net/funbud13/) explains the "Three Characteristics," of which *anatta* is the third.
 ' %}
