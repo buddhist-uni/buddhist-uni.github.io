@@ -11,9 +11,6 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1dCvTd5JXdTZPLz2y4VUc4hPXE0xFJsE1/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Jzjhw4Wki61D00PO8gg5w25Re-fBbW6v/view?usp=drivesdk"
-file_links:
-  - "smallpdfs/tnh_1975_miracle-of-mindfulness.pdf"
-  - "smallepubs/tnh_1975_miracle-of-mindfulness.epub"
 status: featured
 course: buddhism
 tags:

@@ -28,7 +28,10 @@ class JekyllFile(frontmatter.Post):
     super().__init__(content, handler=handler, **kwargs)
     self.absolute_path = fd
     self.relative_path = fd.relative_to(root_folder)
-    self.created_at = filecreationtimes[str(self.relative_path)]
+    try:
+      self.created_at = filecreationtimes[str(self.relative_path)]
+    except KeyError:
+      self.created_at = datetime.now()
   
   @classmethod
   def load(cls, f: Path, **kwargs):

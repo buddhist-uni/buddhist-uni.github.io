@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
       - name: Install Dependencies
         run: |
           pip install titlecase pyyaml pypdf tqdm yaspin bs4 google google-api-python-client google_auth_oauthlib joblib youtube-transcript-api
