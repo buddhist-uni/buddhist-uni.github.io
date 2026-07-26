@@ -1,6 +1,6 @@
 ---
 title: "What the Buddha Taught"
-authors: [rahula-w]
+authors: ["Walpola Rahula"]
 hidden_url: "https://web.archive.org/web/20210411140724/https://sites.google.com/site/rahulawhatthebuddha/home"
 year: 1959
 olid: OL7874505M
