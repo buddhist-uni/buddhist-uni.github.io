@@ -77,7 +77,7 @@ layout: default
     {%- if page.from_book -%}
       {%- assign fbook = site.content | where: "slug", page.from_book | where: "category", "monographs" | first -%}
       {%- if fbook -%}
-        {% capture booktitle %}<a href="{{ fbook.url }}">{{ fbook.title }}</a>{% endcapture %}
+        {% capture booktitle %}<a href="{{ fbook.url }}">{{ fbook.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>{% endcapture %}
       {%- endif -%}
     {%- endif -%}
     {% if page.series %}{% assign series = site.series | find: "slug", page.series %}{% else %}{% assign series = nil %}{% endif %}
