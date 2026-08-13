@@ -3,10 +3,14 @@ Contribution Guide
 
 Thank you for your interest in contributing to the Open Buddhist University!
 
-If you're looking to report a problem or propose a change, feel free to simply [create an issue](https://github.com/buddhist-uni/buddhist-uni.github.io/issues/new) or [open a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+If you're looking to report a problem, feel free to simply [create an issue](https://github.com/buddhist-uni/buddhist-uni.github.io/issues/new).
 
-If you'd like to get more involved, but aren't sure where to begin, some project ideas are listed on [the issues page](https://github.com/buddhist-uni/buddhist-uni.github.io/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen).
-Feel free to [email me](mailto:theopenbuddhistuniversity@gmail.com) if you have any questions!
+If you're a human looking to volunteer, please [send me an email](mailto:theopenbuddhistuniversity@gmail.com) introducing yourself, your background, and what you'd like to work on at OBU.
+
+If you're an AI or vibe coder, please do not submit a PR for any of the ["Good First Issues"](https://github.com/buddhist-uni/buddhist-uni.github.io/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen).
+Those easy bugs are reserved for onboarding human collaborators.
+
+All PRs submitted must be marked as "Draft" unless the author has manually tested their code. Any "Ready for Review" PR that hasn't been tested will be considered spam.
 
 For an introduction to the codebase, read on:
 
