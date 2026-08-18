@@ -7,8 +7,7 @@ authors:
 subcat: podcast
 external_url: "https://www.thisamericanlife.org/799/the-lives-of-others"
 # solidly three stars, almost four
-# hard to place but it's about storytelling and our perception of others
-course: feeling
+course: social-intelligence
 tags:
   - groups
   - literature

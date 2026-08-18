@@ -9,10 +9,9 @@ subcat: podcast
 editor: "Sarah Abdurrahman and David Kestenbaum and Emanuele Berry and Sean Cole and Chris Benderev"
 external_url: "https://www.thisamericanlife.org/770/my-lying-eyes"
 status: featured
-course: inner
+course: intellect
 tags:
   - perception
-  - ideology
   - groups
   - bias
 year: 2022
