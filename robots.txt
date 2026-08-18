@@ -10,4 +10,7 @@ Disallow: /
 User-agent: PetalBot
 Disallow: /
 
+User-agent: SiteLockSpider
+Disallow: /
+
 Sitemap: https://buddhistuniversity.net/sitemap.xml
