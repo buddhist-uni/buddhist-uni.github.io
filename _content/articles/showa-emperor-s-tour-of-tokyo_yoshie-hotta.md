@@ -23,8 +23,7 @@ pages: "1--9"
 openalexid: W4408501682
 ---
 
-> In just one night, more than 100,000 people had been killed or injured, but instead of thinking about how they were going to live, the survivors thought only of death.
-How had it come to this? Surely human beings should live for life, not for death. How had politics in Japan brought about a society that valued death above life? At the same time, I have to confess that I too had enjoyed that bracing feeling of devoting my whole being to the noble cause and being ready to sacrifice my life for the Emperor. These two feelings battled within me.
+> How had politics in Japan brought about a society that valued death above life? At the same time, I have to confess that I too had enjoyed that bracing feeling of devoting my whole being to the noble cause and being ready to sacrifice my life for the Emperor. These two feelings battled within me.
 
 After the American firebombing of Fukagawa, Japanese writer Hotta Yoshie went to inspect the scene, where he unexpectedly ran into the emperor.
-Both the dead and the living horrified him, prompting a profound feeling of *saṃvega.*
+Both the dead and the living horrified him, prompting a profound feeling of *saṃvega*.
