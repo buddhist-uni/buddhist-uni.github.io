@@ -3,6 +3,8 @@ title: "The Comprehensive Index of Pāli Suttas"
 authors:
   - "Reading Faithfully"
 external_url: "https://index.readingfaithfully.org/"
+drive_links:
+  - "https://drive.google.com/file/d/1nqpiGqznMKPmGOaQ9pCzK7ahskkCJJLy/view?usp=drivesdk"
 status: featured
 course: sutta
 tags:
