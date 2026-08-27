@@ -2,7 +2,7 @@
 title: "Aparimitāyus: “Tantra” and “Pure Land” in Medieval Indian Buddhism?"
 authors:
   - payne
-external_url: "http://www.shin-ibs.edu/documents/pwj3-9/15Payne39.pdf"
+external_url: "https://www.shin-ibs.edu/documents/pwj3-9/15Payne39.pdf"
 source_url: "https://pwj.shin-ibs.edu/pacific-world-third-series-number-9-fall-2007"
 drive_links:
   - "https://drive.google.com/file/d/1VkhusjiuQYnTwH6J-2gVlu_qehoCOhnE/view?usp=drivesdk"
