@@ -9,7 +9,7 @@ drive_links:
 course: mongolia
 tags:
   - maps
-  - tibetan-bart
+  - tibetan-art
 year: 2017
 month: jan
 journal: "Cross-Currents: East Asian History and Culture Review"

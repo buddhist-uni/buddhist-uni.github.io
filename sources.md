@@ -61,6 +61,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [The Buddhist Studies WWW Virtual Library](http://www.ciolek.com/WWWVL-Buddhism.html)
 * [The Pagoda Library](https://pagoda.or.th/ebook-english-books.html)
 * [The Zen Site](http://www.thezensite.com/index.html)
+* [Tsem Rinpoche](https://www.tsemrinpoche.com/free-downloads-texts)
 * [DhammaWiki](https://dhammawiki.com/index.php/Main_Page)
 * [Bhikkhuni.net](https://www.bhikkhuni.net/library/)
 * [Study Buddhism](https://studybuddhism.com/)

@@ -70,6 +70,30 @@ def approx_eq(a, b, absdiff=1.0, percent=1.0):
     return True
   return False
 
+
+def weighted_shuffle(items: list, weights: list[float]) -> list:
+  """
+  Shuffle items where higher weights tend toward the top.
+  
+  Args:
+    items: List of items to shuffle
+    weights: List of weights (higher = more likely near top)
+  
+  Returns:
+    Shuffled list with heavier items tending toward top
+  """
+  # Pair each item with a random value raised to (1/weight)
+  # Higher weights make the random value larger on average
+  paired = [(random.random() ** (1.0 / w), item) 
+            for item, w in zip(items, weights)]
+  
+  # Sort by the random values (descending)
+  paired.sort(reverse=True)
+  
+  # Return just the items
+  return [item for _, item in paired]
+
+
 def sanitize_string(text):
   return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
 
