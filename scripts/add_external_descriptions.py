@@ -1,6 +1,5 @@
 #!/bin/python3
 
-import os
 import json
 from pathlib import Path
 from random import shuffle
@@ -9,9 +8,9 @@ from strutils import (
   input_with_prefill,
   does_md_only_contain_quotes,
   git_root_folder,
-  cumsum,
   sutta_id_re
 )
+from mathutils import cumsum
 
 try:
   import frontmatter

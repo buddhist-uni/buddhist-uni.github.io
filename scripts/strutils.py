@@ -15,7 +15,7 @@ import urllib.parse
 import string
 import readline
 from pathlib import Path
-from functools import cache, reduce
+from functools import cache
 from collections import defaultdict
 
 try:
@@ -56,44 +56,6 @@ yaml_key = re.compile(r"^[a-z_]+:.*")
 
 git_root_folder = Path(os.path.normpath(os.path.join(os.path.dirname(__file__), "../")))
 
-def approx_eq(a, b, absdiff=1.0, percent=1.0):
-  diff = a - b
-  m = a
-  if diff < 0:
-    diff = 0 - diff
-    m = b
-  if diff < absdiff:
-    return True
-  if m < 0:
-    m = diff - m
-  if (100.0 * diff / m) < percent:
-    return True
-  return False
-
-
-def weighted_shuffle(items: list, weights: list[float]) -> list:
-  """
-  Shuffle items where higher weights tend toward the top.
-  
-  Args:
-    items: List of items to shuffle
-    weights: List of weights (higher = more likely near top)
-  
-  Returns:
-    Shuffled list with heavier items tending toward top
-  """
-  # Pair each item with a random value raised to (1/weight)
-  # Higher weights make the random value larger on average
-  paired = [(random.random() ** (1.0 / w), item) 
-            for item, w in zip(items, weights)]
-  
-  # Sort by the random values (descending)
-  paired.sort(reverse=True)
-  
-  # Return just the items
-  return [item for _, item in paired]
-
-
 def sanitize_string(text):
   return abnormalchars.sub('', whitespace.sub(' ', text)).strip()
 
@@ -131,9 +93,6 @@ def thumbnail_path_for_file(filepath: Path | str, shared=False, size='large'):
   return cachdir.joinpath(
     f"{md5("file://"+str(filepath))}.png"
   )
-
-def cumsum(vec):
-    return reduce(lambda a,x: a+[a[-1]+x] if a else [x], vec, [])
 
 def natural_key(text):
     '''

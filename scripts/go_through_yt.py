@@ -1,12 +1,11 @@
 #!/bin/python3
 
 from yaspin import yaspin
-import json
 from time import sleep
 from strutils import (
   radio_dial,
-  weighted_shuffle,
 )
+from mathutils import weighted_shuffle
 from executils import system_open
 import gdrive_base
 import gdrive

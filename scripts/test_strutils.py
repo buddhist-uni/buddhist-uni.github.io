@@ -3,14 +3,9 @@ import tempfile
 import os
 
 import strutils
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from contextlib import contextmanager
 
-def test_approx_eq():
-    assert strutils.approx_eq(1.0, 1.0)
-    assert strutils.approx_eq(1.0, 1.5, absdiff=0.6)
-    assert not strutils.approx_eq(100.0, 105.0, absdiff=1.0, percent=2.0)
-    assert strutils.approx_eq(100.0, 102.0, absdiff=1.0, percent=3.0)
 
 def test_sanitize_string():
     assert strutils.sanitize_string("  hello \n world!@#$%^&*()_+ ") == "hello world_"
@@ -24,9 +19,6 @@ def test_md5():
         tf.close()
         assert strutils.md5(Path(tf.name)) == "098f6bcd4621d373cade4e832627b4f6"
         os.remove(tf.name)
-
-def test_cumsum():
-    assert strutils.cumsum([1, 2, 3]) == [1, 3, 6]
 
 def test_naturally_sorted():
     assert strutils.naturally_sorted(["item10", "item1", "item2"]) == ["item1", "item2", "item10"]
