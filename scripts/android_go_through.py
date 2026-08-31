@@ -2,6 +2,11 @@
 
 # This file is only a script and is not importable
 
+# The structure is a bit crazy and nonstandard because
+# I want to call "system_open" as quickly as possible
+# in the non-init case, and defer as much loading as possible
+# to happen _after_ the "system_open" call.
+
 from yaspin import yaspin
 with yaspin(text="Initializing..."):
   from strutils import (

@@ -9,7 +9,7 @@ from mathutils import weighted_shuffle
 from executils import system_open
 import gdrive_base
 import gdrive
-
+import website
 
 with yaspin(text="Loading folders..."):
   BULK_YT_FOLDERS_NAME = "📼 YouTube Videos"
@@ -27,6 +27,7 @@ with yaspin(text="Loading folders..."):
     folder['id']: PRIVATE_FOLDER_TO_COURSE_SLUG[PARENT_FOLDERS[folder['parent_id']]]
     for folder in BULK_YT_FOLDERS
   }
+  website.tags.load()
 
 
 class YTVideo():
@@ -48,7 +49,10 @@ class YTQueueDB():
   def __init__(self) -> None:
     self.pull_from_db()
     with yaspin(text="Shuffling videos..."):
-      self.videos = weighted_shuffle(self.videos, [video.doc_size for video in self.videos])
+      self.videos = weighted_shuffle(self.videos, [
+        video.doc_size * website.tags.get_weight_for_tag(video.tentative_course_slug)
+        for video in self.videos
+      ])
     self.i = 0
 
   def pull_from_db(self) -> None:

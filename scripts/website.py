@@ -1,5 +1,5 @@
 
-from typing import Iterator
+from typing import Callable, Iterator
 from typing import Any
 import subprocess
 import json
@@ -8,6 +8,7 @@ from strutils import (
   Path,
   git_root_folder as root_folder
 )
+from mathutils import gen_waypoint_power_decay_func
 
 try:
   import frontmatter
@@ -75,7 +76,35 @@ data = DataCollection()
 
 class TagCollection():
   def __init__(self):
-    self.tags = dict()
+    self.tags: dict[str, TagFile] = dict()
+    self.weight_curve: Callable[[float], float] | None = None
+
+  def load(self):
+    if len(self.tags) > 0:
+      return # already loaded
+    for tagfile in root_folder.joinpath('_tags').iterdir():
+      if (not tagfile.is_file()) or tagfile.name.startswith('.'):
+        continue
+      self.add(TagFile.load(tagfile))
+    self.finalize()
+
+  def init_weight_curve(self, world_weight=0.3, last_weight=0.04):
+    self.load()
+    self.weight_curve = gen_waypoint_power_decay_func(
+      self.get('world').index,
+      world_weight,
+      len(self),
+      last_weight,
+    )
+    self.unfound_weight = last_weight / 2.0
+
+  def get_weight_for_tag(self, slug: str) -> float:
+    if not self.weight_curve:
+      self.init_weight_curve()
+    tag = self.get(slug)
+    if not tag:
+      return self.unfound_weight
+    return self.weight_curve(tag.index)
 
   def add(self, tag: TagFile):
     tslug = tag.slug
@@ -89,23 +118,29 @@ class TagCollection():
     self.tags[tslug] = tag
 
   def finalize(self):
+    for tagnum, tag in enumerate(self):
+      # inform each tag of its position in the collection
+      # according to the Jekyll naming convention
+      tag.index0 = tagnum
+      tag.index = tagnum + 1
     self.sortChildren()
 
   def sortChildren(self):
     for tag in self:
+      # sortkey is set in some frontmatters
       tag.children.sort(key=lambda k: self.get(k).sortkey or 0)
 
-  def get(self, tag: str):
+  def get(self, tag: str) -> TagFile | None:
     return self.tags.get(tag)
   def __iter__(self) -> Iterator[TagFile]:
     for filename in config['collections']['tags']['order']:
       yield self.tags[filename[:-3]]
   def __len__(self):
     return len(self.tags)
-  def __contains__(self, item):
+  def __contains__(self, item: TagFile | str):
     if isinstance(item, TagFile):
       return item.slug in self.tags
-    return bool(self.get(item))
+    return item in self.tags
 
 tags = TagCollection()
 authors = AuthorCollection()
@@ -213,11 +248,7 @@ def load():
       content.append(ContentFile.load(contentfile))
   content.sort(key=lambda c: c.url)
   content.sort(key=lambda c: c.created_at)
-  for tagfile in root_folder.joinpath('_tags').iterdir():
-    if (not tagfile.is_file()) or tagfile.name.startswith('.'):
-      continue
-    tags.add(TagFile.load(tagfile))
-  tags.finalize()
+  tags.load()
   for authorfile in root_folder.joinpath('_authors').iterdir():
     if (not authorfile.is_file()) or authorfile.name.startswith('.'):
       continue
