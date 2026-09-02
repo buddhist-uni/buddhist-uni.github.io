@@ -1,7 +1,7 @@
 ---
 title: "Seno’o Girō and the Dilemma of Modern Buddhism: Leftist Prophet of the Lotus Sutra"
 authors:
-  - "Whalen Lai"
+  - lai-whalen
 external_url: "https://pdfs.semanticscholar.org/5ca3/6237c90dfbafea24454a519d2b0bc9e4c099.pdf"
 source_url: "https://doi.org/10.18874/jjrs.11.1.1984.7-42"
 drive_links:

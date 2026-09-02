@@ -7,7 +7,7 @@ tags:
   - nuns
   - indian
   - characters
-  - sa
+  - mn
   - agama
   - pali-canon
 course: theravada
@@ -19,4 +19,4 @@ pages: "332--400"
 
 > … the Theravāda version of events in the _Nandakovāda-sutta_ conveys an attitude towards nuns that is considerably less favorable than the attitude underlying the parallel versions
 
-How the Theravāda elders managed to make the suttas sound misogynistic through small redactions.
+A careful comparison of MN 146 to its SA parallel reveals how the Theravāda elders managed to make the suttas sound misogynistic through small redactions.

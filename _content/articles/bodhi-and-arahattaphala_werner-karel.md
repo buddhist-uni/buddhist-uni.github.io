@@ -10,7 +10,9 @@ drive_links:
   - "https://drive.google.com/file/d/1HSLeVoR_lSWFrSiCeMLx9rSQL5sqnDLK/view?usp=drivesdk"
 status: featured
 course: mahayana-roots
-# Uncertain what tags...
+tags:
+  - bodhisatta
+  - indian
 year: 1981
 journal: jiabs
 volume: 14

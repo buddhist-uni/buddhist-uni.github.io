@@ -1,7 +1,7 @@
 ---
 title: "After the Reformation: Post-Kamakura Buddhism"
 authors:
-  - "Whalen Lai"
+  - lai-whalen
 external_url: "https://nirc.nanzan-u.ac.jp/journal/6/article/543/pdf/download"
 source_url: "https://doi.org/10.18874/jjrs.5.4.1978.258-284"
 drive_links:
