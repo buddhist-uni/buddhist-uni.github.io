@@ -1,5 +1,7 @@
 #!/bin/python3
 
+from strutils import prompt
+from requests import request
 import gdrive
 from enum import StrEnum
 from collections.abc import Collection
@@ -428,7 +430,7 @@ def download_file_to_cache(file: dict, verbose=False) -> str | None:
       return None
     _, _, freespace = shutil.disk_usage(gdrive.gcache.file_cache_dir)
     if freespace < file['size'] + MIN_FREE_SPACE:
-      raise OSError(f"We've filled up the disk as much as I'm confortable with")
+      raise OSError(f"We've filled up the disk as much as I'm comfortable with")
     SEEN_IDS.add(file['id'])
     return gdrive.gcache.download_file_to_cache(file)
 
@@ -527,8 +529,10 @@ def save_backup_level(level: int):
     )
     gdrive.gcache.conn.commit()
 
-def backup_main(from_level: int=0, new_max_level: int | None=None, parallelism: int=0):
+def backup_main(from_level: int=0, new_max_level: int | None=None, parallelism: int=0, delete_beyond: int|None=None):
   import sys
+  if delete_beyond:
+    clear_cache_beyond_level(delete_beyond)
   if new_max_level is not None:
     save_backup_level(new_max_level)
     max_level = new_max_level
@@ -554,6 +558,71 @@ def backup_main(from_level: int=0, new_max_level: int | None=None, parallelism: 
     run_backup_level(level, parallelism=parallelism)
   print(f"All files with priority <= {max_level} are now saved locally!")
 
+def clear_cache_beyond_level(delete_beyond: int=100):
+  file_md5s_seen_already = set()
+  file_md5s_seen_already.add(None)
+  file_md5s_seen_already.add('')
+  files_to_delete = list()
+  space_to_be_freed = 0
+  space_not_to_be_freed = 0
+  spinner = yaspin()
+  with spinner:
+    for lvl, bl in BACKUP_LEVELS.items():
+      if bl.finder is None:
+        continue
+      spinner.text = f"Analyzing files at level {lvl}"
+      files = bl.finder()
+      while files:
+        file = files.pop()
+        if file.get('md5Checksum') in file_md5s_seen_already:
+          continue
+        target_path = gdrive.gcache.get_cache_path_for_file(file)
+        if not target_path:
+          # uncachable
+          continue
+        if not target_path.is_file():
+          # not saved, so nothing to delete
+          continue
+        # Now we have a file that is saved that we haven't seen before
+        filesize = target_path.lstat().st_size
+        if lvl <= delete_beyond:
+          space_not_to_be_freed += filesize
+        else:
+          space_to_be_freed += filesize
+          files_to_delete.append(file)
+        file_md5s_seen_already.add(file['md5Checksum'])
+  if len(files_to_delete) == 0:
+    print(f"The cache contains no files beyond level {delete_beyond} already.")
+    print("Nothing to do.")
+    return
+  print(f"We've identified {len(files_to_delete)} local files to delete")
+  pname_cache = dict()
+  def printfile(file):
+      if file['parent_id'] not in pname_cache:
+        parent = gdrive.gcache.get_item(file['parent_id'])
+        if parent:
+          pname_cache[file['parent_id']] = parent['name']
+        else:
+          pname_cache[file['parent_id']] = "[[Unknown Folder]]"
+      print(f"  \'{file['name']}\' in \'{pname_cache[file['parent_id']]}\'")
+  if len(files_to_delete) > 15:
+    while prompt("Would you like to see a random selection of the files we will delete?"):
+      selection = random.sample(files_to_delete, 10)
+      for file in selection:
+        printfile(file)
+  else:
+    for file in files_to_delete:
+      printfile(file)
+  print(f"We expect that {format_size(space_to_be_freed)} will be freed and {format_size(space_not_to_be_freed)} will still be used by the cache.")
+  if not prompt(f"Would you like to continue to delete these {len(files_to_delete)} files?"):
+    print("Okay. Will skip then!")
+    return
+  for file in tqdm(files_to_delete, unit='f', desc="rm "):
+    path = gdrive.gcache.get_cache_path_for_file(file)
+    assert path
+    path.unlink()
+  print(f"Finished! {format_size(space_to_be_freed)} has been freed from your local cache")
+
 def print_backup_levels_list(statistics: bool=False):
   """`statistics` replaces the generic description with current fill level stats"""
   print("\033[1mGoogle Drive Backup Levels\033[0m")
@@ -566,7 +635,8 @@ The bold levels are semantic breakpoints which add no content themselves. You're
 The current backup levels are as follows:
 """
   )
-  seen_file_ids = set()
+  seen_file_md5s = set()
+  seen_file_md5s.add(None)
   cum_sum_size = 0
   cum_sum_dl_size = 0
 
@@ -588,13 +658,13 @@ The current backup levels are as follows:
         target_path = gdrive.gcache.get_cache_path_for_file(file)
         if not target_path:
           continue
-        if file['id'] in seen_file_ids:
+        if file.get('md5Checksum') in seen_file_md5s:
           this_level_overlap_size += file['size']
           if statistics and target_path.exists():
             this_level_overlap_dl_size += file['size']
         else:
           this_level_inc_size += file['size']
-          seen_file_ids.add(file['id'])
+          seen_file_md5s.add(file['md5Checksum'])
           if statistics and target_path.exists():
             this_level_inc_dl_size += file['size']
       cum_sum_size += this_level_inc_size
@@ -665,6 +735,21 @@ if __name__ == "__main__":
       type=int,
       help="How many files to download at the same time",
     )
+    backup.add_argument(
+      "--delete-beyond",
+      required=False,
+      dest="delete_beyond",
+      default=None,
+      type=int,
+      help="Files that only exist in backup levels beyond this one are deleted from the cache",
+    )
+    backup.add_argument(
+      '--leave-space-gb',
+      required=False,
+      dest='min_free_space',
+      type=float,
+      help="Stop downloading if there's fewer than this many GB left on the drive",
+    )
 
     sideload = subparsers.add_parser("sideload", help="Sideload files to the cache")
     sideload.add_argument("files", nargs="+", help="Files to sideload", type=Path)
@@ -718,6 +803,8 @@ if __name__ == "__main__":
     if args.command == "levels":
       print_backup_levels_list(statistics=args.stats)
     elif args.command == "backup":
-      backup_main(from_level=args.from_level, new_max_level=args.level, parallelism=args.threads)
+      if args.min_free_space:
+        MIN_FREE_SPACE = args.min_free_space * 1024 * 1024 * 1024
+      backup_main(from_level=args.from_level, new_max_level=args.level, parallelism=args.threads, delete_beyond=args.delete_beyond)
     else:
       parser.print_help()

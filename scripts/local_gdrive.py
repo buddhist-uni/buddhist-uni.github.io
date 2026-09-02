@@ -753,7 +753,7 @@ class DriveCache:
         if target_path.exists():
             if verbose:
                 print(f"  Skipping already downloaded {file['name']}")
-            return str(target_path)
+            return target_path
         target_path.parent.mkdir(exist_ok=True)
         if verbose:
             print(f"  Downloading {file['name']}")
@@ -788,7 +788,7 @@ class DriveCache:
                 raise e
         if verbose:
             print(f"  Saved to {target_path}")
-        return str(target_path)
+        return target_path
 
     def get_cache_path_for_md5(self, hashval: str) -> Path | None:
         """Returns None if the hashval is unknown to me"""
