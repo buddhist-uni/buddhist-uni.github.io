@@ -1,7 +1,5 @@
 #!/bin/python3
 
-from strutils import prompt
-from requests import request
 import gdrive
 from enum import StrEnum
 from collections.abc import Collection
@@ -16,6 +14,7 @@ import gdrive
 import shutil
 from strutils import (
   md5,
+  prompt,
   format_size,
 )
 from executils import (
@@ -748,7 +747,7 @@ if __name__ == "__main__":
       required=False,
       dest='min_free_space',
       type=float,
-      help="Stop downloading if there's fewer than this many GB left on the drive",
+      help="Stop downloading if there's fewer than this many GB left on the drive (default: 16 GB)",
     )
 
     sideload = subparsers.add_parser("sideload", help="Sideload files to the cache")

@@ -513,11 +513,10 @@ class DriveCache:
         e.g. `.parent_sql_query("parent.name = 'Unread'")` returns all files
         in a folder named "Unread"
 
-        Returns the matching files without any data about the parents.
-        To get the matching parent folders, do a subsequent `.get_items` query
+        Returns the matching files with the parents inline at key 'parent'
         """
         self.cursor.execute(
-            """SELECT file.*
+            """SELECT *
             FROM drive_items file
             JOIN drive_items parent
             ON file.parent_id = parent.id
@@ -525,7 +524,18 @@ class DriveCache:
             data
         )
         rows = self.cursor.fetchall()
-        return [self.row_dict_to_api_dict(dict(row)) for row in rows]
+        cols = [desc[0] for desc in self.cursor.description]
+        half = len(cols) // 2
+        ret = []
+        for row in rows:
+            file_dict = dict(zip(cols[:half], row[:half]))
+            parent_dict = dict(zip(cols[half:], row[half:]))
+            file_dict = self.row_dict_to_api_dict(file_dict)
+            parent_dict = self.row_dict_to_api_dict(parent_dict)
+            assert 'parent' not in file_dict
+            file_dict['parent'] = parent_dict
+            ret.append(file_dict)
+        return ret
 
     @locked
     def properties_sql_query(self, query: str, data: tuple) -> List[Dict[str, Any]]:
