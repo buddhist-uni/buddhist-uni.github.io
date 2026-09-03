@@ -41,7 +41,7 @@ with yaspin(text="Initializing..."):
   )
   cli_args = parser.parse_args()
   
-  predictor= None
+  predictor = None
   LOCAL_FOLDER: Path
   LOCAL_FOLDER = cli_args.local_folder
   if not LOCAL_FOLDER.is_dir() and not cli_args.init:
@@ -51,7 +51,8 @@ with yaspin(text="Initializing..."):
   LOCAL_SPLIT_FOLDER = git_root_folder.joinpath("../To Split/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   REMOTE_FOLDER_NAME = "📥 To Go Through"
-  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
+  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file() and not f.name.startswith(".")]
+  MANIFEST_PATH = LOCAL_FOLDER.joinpath('.manifest.json')
 
 def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
   from pdfutils import readpdf
@@ -100,6 +101,32 @@ def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
   save_normalized_text(google_id, text)
   return text
 
+from dataclasses import asdict, dataclass
+import json
+
+@dataclass(slots=True)
+class TGTDocument:
+  filename: str
+  gid: str
+  def to_dict(self) -> dict:
+    return asdict(self)
+
+class TGTQueueDB():
+  def __init__(self, json_path: Path):
+    self.json_path = json_path
+    if json_path.exists():
+      data: dict = json.loads(json_path.read_text())
+      self.documents = [
+        TGTDocument(**doc)
+        for doc in data['documents']
+      ]
+    else:
+      self.documents = []
+  def to_json(self) -> str:
+    return json.dumps({'documents': [d.to_dict() for d in self.documents]})
+  def write(self):
+    self.json_path.write_text(self.to_json())
+
 if cli_args.init:
   print(f"Setting up '{LOCAL_FOLDER}' as inbox folder...")
   import gdrive
@@ -111,6 +138,7 @@ if cli_args.init:
     TagPredictor,
     tqdm_thread_map,
   )
+  from tag_predictor import NORMALIZED_TEXT_FOLDER
   course_predictor = TagPredictor.load()
   unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor.classes)
   course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
@@ -169,6 +197,7 @@ if cli_args.init:
         fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
         return
     if not remote_file:
+      # Does the uploading if needed
       remote_file = gdrive.remote_file_for_local_file(
         fp,
         folder_slugs,
@@ -177,6 +206,11 @@ if cli_args.init:
     if not remote_file:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] in remote_folder_ids:
+      if remote_files_by_name[fp.name]['md5Checksum'] != remote_file['md5Checksum']:
+        print(f"The file we have locally by the name {fp.name} isn't the same as the remote file with that name!")
+        # The remote_files_by_name[fp.name] write below makes sure that mapping is corrected
+        # and the "We already have..." prompt in the loop below handles what to do with the remote file
+        # so actually there's nothing to handle here?
       if fp.name != remote_file['name']:
         msg = (
           f"Found\n  \"{fp.name}\"\n"
@@ -186,6 +220,7 @@ if cli_args.init:
         )
         tqdm.write(msg)
         gdrive.gcache.rename_file(remote_file['id'], fp.name)
+        del remote_files_by_name[remote_file['name']]
         remote_file['name'] = fp.name
       remote_files_by_name[fp.name] = remote_file
       remote_ids_seen.add(remote_file['id'])
@@ -195,6 +230,9 @@ if cli_args.init:
       # fp.unlink()
       # For now just move it out to be on the safe side...
       fp.rename(fp.parent.joinpath('../../Download/').joinpath(fp.name))
+    if remote_file['parent_id'] == REMOTE_FOLDER and fp.suffix.lower() in ['.pdf', '.epub']:
+      if not NORMALIZED_TEXT_FOLDER.joinpath(remote_file['id']+'.pkl').exists():
+        load_normalized_text_for_file(fp, remote_file['id'])
   tqdm_thread_map(process_local_file, local_files, max_workers=8, unit="f")
   print(f"# Ensuring all remote files are downloaded locally...")
   children = tqdm(remote_children, unit="f")
@@ -216,6 +254,8 @@ if cli_args.init:
         gdrive.gcache.trash_file(child['id'])
         continue
       gdrive.gcache.rename_file(child['id'], name)
+      child['name'] = name
+      remote_files_by_name[name] = child
     tqdm.write(f"Downloading '{name}' ({round(child['size']/1000000, 2)} MB)...")
     dest_file = LOCAL_FOLDER.joinpath(name)
     gdrive.download_file(
@@ -224,26 +264,11 @@ if cli_args.init:
       verbose=False,
     )
     local_filenames_seen.add(name)
-  del remote_children
-  import random
-  # refetch because some files were added or removed above
-  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file()]
-  # randomize for more accurate tqdm est
-  local_files.sort(key=lambda f: random.random())
-  print("# Extracting text from files...")
-  from tag_predictor import NORMALIZED_TEXT_FOLDER, normalize_text
-  def extract_text_from(fp):
-    if fp.suffix.lower() not in ['.pdf', '.epub']:
-      return # Don't even bother trying
-    gid = remote_files_by_name[fp.name]['id']
-    # Short circuit actually reading the file as existance is good enough here
-    if NORMALIZED_TEXT_FOLDER.joinpath(gid+'.pkl').exists():
-      return
-    load_normalized_text_for_file(fp, gid)
-  tqdm_thread_map(extract_text_from, local_files, max_workers=4, unit="f")
-  del remote_files_by_name
+    if child['parent_id'] == REMOTE_FOLDER and dest_file.suffix in ['.pdf', '.epub']:
+       if not NORMALIZED_TEXT_FOLDER.joinpath(child['id']+'.pkl').exists():
+          load_normalized_text_for_file(dest_file, child['id'])
   print("# Sorting PDFs into bulk import folders...")
-  children = gdrive.gcache.sql_query(
+  unsorted_children = gdrive.gcache.sql_query(
     "parent_id = ? AND mime_type = 'application/pdf' AND shortcut_target IS NULL",
     (REMOTE_FOLDER,),
   )
@@ -273,7 +298,36 @@ if cli_args.init:
       [REMOTE_FOLDER],
       verbose=False,
     )
-  tqdm_thread_map(sort_pdf_file, children, max_workers=8, unit="f")
+    remote_files_by_name[child['name']]['parent_id'] = new_folder
+  tqdm_thread_map(sort_pdf_file, unsorted_children, max_workers=8, unit="f")
+  print("# Writing local .manifest.json...")
+  import website
+  website.tags.load()
+  website.tags.init_weight_curve(world_weight=0.3, last_weight=0.04)
+  filenames_with_weight: list[tuple[float, dict]] = []
+  remote_file_names = set(remote_files_by_name.keys())
+  # refetch because some files were added or removed above
+  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file() and not f.name.startswith(".")]
+  local_file_names = {fp.name for fp in local_files}
+  assert local_file_names == remote_file_names, f"Somehow we got a mismatch between our {len(local_file_names)} local files and {len(remote_file_names)} remote files!"
+  for fname, file in remote_files_by_name.items():
+    if file['parent_id'] == REMOTE_FOLDER:
+      weight = 0.5
+    else:
+      course = autopdf_folder_to_course[file['parent_id']]
+      weight = website.tags.get_weight_for_tag(course)
+      assert weight > website.tags.unfound_weight, f"Failed to find {course} in the website tags"
+    filenames_with_weight.append((
+      weight * file['size'],
+      file,
+    ))
+  filenames_with_weight.sort(reverse=True)
+  queue = TGTQueueDB(MANIFEST_PATH)
+  queue.documents = [
+    TGTDocument(filename=doc['name'], gid=doc['id'])
+    for w, doc in filenames_with_weight
+  ]
+  queue.write()
   print("Done setting up local folder! Run again without --init to review files")
   exit()
 

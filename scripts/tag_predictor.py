@@ -281,7 +281,7 @@ class TagPredictor:
 
     @classmethod
     @cache
-    def load(cls, filepath: Path | str | None=None):
+    def load(cls, filepath: Path | str | None=None) -> "TagPredictor":
         """Loads a new instance of TagPredictor from the given save_as'ed .pkl file"""
         if not filepath:
             filepath = MODELS_DIRECTORY.joinpath('default.pkl')
