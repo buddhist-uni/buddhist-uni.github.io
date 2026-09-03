@@ -51,7 +51,6 @@ with yaspin(text="Initializing..."):
   LOCAL_SPLIT_FOLDER = git_root_folder.joinpath("../To Split/")
   REMOTE_FOLDER = "1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2"
   REMOTE_FOLDER_NAME = "📥 To Go Through"
-  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file() and not f.name.startswith(".")]
   MANIFEST_PATH = LOCAL_FOLDER.joinpath('.manifest.json')
 
 def load_normalized_text_for_file(fp: Path, google_id: str) -> str:
@@ -158,6 +157,7 @@ if cli_args.init:
     remote_files_by_name[gfile['name']] = gfile
   from tqdm import tqdm
   print(f"# Removing local duplicates...")
+  local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file() and not f.name.startswith(".")]
   from collections import defaultdict
   pbar = tqdm(local_files, unit="f")
   size_to_local_names = defaultdict(set)
@@ -316,7 +316,6 @@ if cli_args.init:
     else:
       course = autopdf_folder_to_course[file['parent_id']]
       weight = website.tags.get_weight_for_tag(course)
-      assert weight > website.tags.unfound_weight, f"Failed to find {course} in the website tags"
     filenames_with_weight.append((
       weight * file['size'],
       file,
@@ -331,10 +330,15 @@ if cli_args.init:
   print("Done setting up local folder! Run again without --init to review files")
   exit()
 
-local_files.sort(
-  key=lambda f: -f.stat().st_size, # Largest first
-)
-for fp in local_files:
+queue = TGTQueueDB(MANIFEST_PATH)
+
+while queue.documents:
+    queue.write()
+    doc = queue.documents.pop(0)
+    fp = LOCAL_FOLDER.joinpath(doc.filename)
+    if not fp.is_file():
+      print(f"Expected to find {fp.name} locally... Skipping")
+      continue
     print(f"Opening {fp.name}...")
     system_open(fp)
     # We defer all the below imports until after the above system_open call
