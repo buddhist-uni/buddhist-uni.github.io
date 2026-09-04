@@ -4,7 +4,8 @@ authors:
   - jayatilleke
   - "Robert F. Spencer"
   - "Wu Shu"
-external_url: "https://www.bps.lk/olib/wh/wh003_Jayatilleke_et_al_Buddhism-and-Science.html"
+external_url: "https://www.bps.lk/online-library/491d9e93-182b-43c2-ad03-ea3a27ac105d"
+source_url: "https://www.bps.lk/olib/wh/wh003_Jayatilleke_et_al_Buddhism-and-Science.html"
 drive_links:
   - "https://drive.google.com/file/d/1L7tsRmqpnJSjlS4vWFCD09qxf44WJ9qG/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Ch_etgh-XLfZQD7VvI3Z-7Iof3dLeMm8/view?usp=drivesdk"

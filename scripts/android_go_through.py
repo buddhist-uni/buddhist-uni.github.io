@@ -151,7 +151,7 @@ if cli_args.init:
     f"parent_id IN ({','.join('?' * (1+len(course_to_autopdf_folder)))}) AND mime_type != ? AND shortcut_target IS NULL AND mime_type != ?",
     tuple(remote_folder_ids) + ('application/vnd.google-apps.folder', 'application/vnd.google-apps.document', )
   )
-  remote_files_by_name = dict()
+  remote_files_by_name: dict[str, dict] = dict()
   for gfile in remote_children:
     assert gfile['name'] not in remote_files_by_name, f"Found duplicate file name \"{gfile['name']}\""
     remote_files_by_name[gfile['name']] = gfile
@@ -304,7 +304,8 @@ if cli_args.init:
   import website
   website.tags.load()
   website.tags.init_weight_curve(world_weight=0.3, last_weight=0.04)
-  filenames_with_weight: list[tuple[float, dict]] = []
+  files: list[dict] = []
+  weights: list[float] = []
   remote_file_names = set(remote_files_by_name.keys())
   # refetch because some files were added or removed above
   local_files = [f for f in LOCAL_FOLDER.iterdir() if f.is_file() and not f.name.startswith(".")]
@@ -316,24 +317,35 @@ if cli_args.init:
     else:
       course = autopdf_folder_to_course[file['parent_id']]
       weight = website.tags.get_weight_for_tag(course)
-    filenames_with_weight.append((
-      weight * file['size'],
-      file,
-    ))
-  filenames_with_weight.sort(reverse=True)
+    files.append(file)
+    weights.append(weight * file['size'])
+  from mathutils import weighted_shuffle
+  files = weighted_shuffle(files, weights)
   queue = TGTQueueDB(MANIFEST_PATH)
-  queue.documents = [
+  first_filename = None
+  # make sure to keep the first document the same if there is one
+  # so as to not interrupt the user if they were in the middle of reading
+  # this particular document
+  if len(queue.documents) > 0:
+    first_filename = queue.documents[0].filename
+    del queue.documents[1:]
+  queue.documents.extend([
     TGTDocument(filename=doc['name'], gid=doc['id'])
-    for w, doc in filenames_with_weight
-  ]
+    for doc in files
+    if doc['name'] != first_filename
+  ])
   queue.write()
   print("Done setting up local folder! Run again without --init to review files")
   exit()
 
 queue = TGTQueueDB(MANIFEST_PATH)
+first_time = True
 
 while queue.documents:
-    queue.write()
+    if not first_time:
+      queue.write()
+    else:
+      first_time = False
     doc = queue.documents.pop(0)
     fp = LOCAL_FOLDER.joinpath(doc.filename)
     if not fp.is_file():
@@ -357,63 +369,14 @@ while queue.documents:
       )
       if predictor is None:
         predictor = TagPredictor.load()
-      gfs = gdrive.gcache.files_exactly_named(fp.name)
-      gf = None
-      if not gfs:
-        print("File not found on drive with that name. Please rerun this script with --init")
-        exit(1)
-      if len(gfs) == 1:
-        gf = gfs[0]
-        parent = gdrive.gcache.get_item(gf['parent_id'])
-        if REMOTE_FOLDER != gf['parent_id'] and parent['name'] != REMOTE_FOLDER_NAME:
-          print("\nFile moved already! Moving on...")
-          fp.unlink()
-          continue
-      else: # len(gfs) > 1
-        tgt_md5 = md5(fp)
-        for f in gfs:
-          if f['md5Checksum'] == tgt_md5:
-            if REMOTE_FOLDER == f['parent_id']:
-              gf = f
-              break
-            parent = gdrive.gcache.get_item(f['parent_id'])
-            if parent['name'] == REMOTE_FOLDER_NAME:
-              gf = f
-              break
-        moved_already = False
-        if gf is None:
-          if any(f['md5Checksum'] == tgt_md5 for f in gfs):
-            moved_already = True
-          else:
-            raise NotImplementedError(f"Unable to find \"{fp.name}\" remotely by MD5, only by name.")
-        else:
-          for f in gfs:
-            if f['id'] == gf['id']:
-              continue
-            if f['md5Checksum'] == tgt_md5:
-              parent = gdrive.gcache.get_item(f['parent_id'])
-              if REMOTE_FOLDER == f['parent_id'] or parent['name'] == REMOTE_FOLDER_NAME:
-                print("\nFound duplicate file in remote TGT folder. Deleting it...")
-                gdrive.log_move_reason(
-                  f['id'],
-                  old_parent_id=f['parent_id'],
-                  new_parent_id='trash',
-                  reason=f"Duplicate (md5) of {gf['id']}",
-                )
-                gdrive.gcache.trash_file(f['id'])
-              else:
-                moved_already = True
-        if moved_already:
-          print("\nFile moved already! Moving on...")
-          gdrive.log_move_reason(
-            gf['id'],
-            new_parent_id='trash',
-            old_parent_id=gf.get('parent_id'),
-            reason=f"Found a sorted, MD5 duplicate",
-          )
-          gdrive.gcache.trash_file(gf['id'])
-          fp.unlink()
-          continue
+      gf = gdrive.gcache.get_item(doc.gid)
+      if not gf:
+        raise ValueError(f"Unable to load Google File with id=\"{doc.gid}\"")
+      parent = gdrive.gcache.get_item(gf['parent_id'])
+      if REMOTE_FOLDER != gf['parent_id'] and parent['name'] != REMOTE_FOLDER_NAME:
+        print("\nFile moved already! Moving on...")
+        fp.unlink()
+        continue
       pagecount = None
       text = load_normalized_text_for_file(fp, gf['id'])
       if fp.suffix.lower() == '.pdf':
@@ -422,6 +385,8 @@ while queue.documents:
         pagecount = -(len(text)//-1700)
       glink = DRIVE_LINK.format(gf['id'])
       from tag_predictor import normalize_text
+      # TODO: pull the course from the parent_id for autosorted PDFs
+      # and only load the predictor for EPUBs
       course = predictor.predict(
         [text + ''.join([' ', normalize_text(gf['name'][:-4])]*3)],
         normalized=True,
@@ -467,25 +432,29 @@ while queue.documents:
         shutil.move(fp, LOCAL_SPLIT_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
-        isnt_unread = 'unre' not in course.lower()
-        # only ask for more info if isn't unread
+        is_unr_or_arc = 'unre' in course.lower() or 'archiv' in course.lower()
+        # only ask for more info if isn't unread or archive
         tags = []
-        if isnt_unread:
+        description: str = ""
+        if not is_unr_or_arc:
           print("tags:")
           while True:
             tag = gdrive.input_course_string_with_tab_complete("  - ")
             if not tag:
               break
             tags.append(tag)
-        description = isnt_unread and input("Any notes? ")
+          description = input("Any notes on this move? ").strip()
+        if len(description) == 0:
+          description = "Preliminary sort"
         gdrive.log_move_reason(
           gf['id'],
           new_parent_id=gfolder[0] or gfolder[1],
           old_parent_id=gf.get('parent_id', REMOTE_FOLDER),
-          reason = description or "Preliminary sort",
+          reason=description,
           alternate_tags=tags,
         )
-        if gfolder[0]:
+        if gfolder[0]: # sharing publicly
+          # JIT importing for efficiency
           from openaleximporter import (
             prompt_for_work,
             make_library_entry_for_work,
