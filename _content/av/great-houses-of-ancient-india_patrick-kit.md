@@ -9,6 +9,8 @@ drive_links:
 formats: [m4a]
 course: setting
 minutes: 114
+series: "The History of India Podcast"
+number: 2
 ---
 
 Episodes 1, 2 and 3 of season 1 of *The History of India Podcast* cover the prominent political families and drama at the time of the Buddha.
