@@ -467,6 +467,7 @@ while queue.documents:
             print(f"\nOpening {filepath}\n")
             system_open(filepath)
             fp.unlink()
+            queue.write()
             exit(0)
           else:
             print(f"\n\t{glink}\n")

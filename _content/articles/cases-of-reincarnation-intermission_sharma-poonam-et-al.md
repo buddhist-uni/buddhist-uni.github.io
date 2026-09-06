@@ -18,10 +18,7 @@ pages: "101--118"
 openalexid: W11180705
 ---
 
-> The events recalled during the transitional stage would often 
-seem uncomfortable or unpleasant to the Western reader. The events 
-and characters described are associated with the previous life. 
-Subjects may see the preparation of the previous personality's body 
+> Subjects may see the preparation of the previous personality's body 
 or the funeral or try to contact grieving relatives, only to find they are 
 unable to communicate with the living. One subject said he did not 
 realize he was dead.
