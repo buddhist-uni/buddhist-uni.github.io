@@ -20,5 +20,4 @@ pages: "17--28"
 > Allusions to the two principle parts 
 of rhetoric, memory and eloquence, *dhāraṇī* and *pratibhāna*, abound in Mahayana works. 
 
-This article proposes that *dhāraṇī*s were originally mnemonic devices for efficiently remembering the doctrines of their texts, similar to the *mātikā*s of earlier Buddhism.
-They came to stand generically for memory (*smṛti*) and the doctrine as a whole and from there developed their more esoteric meaning.
+*Dhāraṇī*s were originally mnemonic devices and mantras that came to stand for memory (*smṛti*) and the doctrine as a whole and from there developed their more esoteric meaning.
