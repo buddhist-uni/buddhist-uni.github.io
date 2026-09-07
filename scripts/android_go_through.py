@@ -41,7 +41,6 @@ with yaspin(text="Initializing..."):
   )
   cli_args = parser.parse_args()
   
-  predictor = None
   LOCAL_FOLDER: Path
   LOCAL_FOLDER = cli_args.local_folder
   if not LOCAL_FOLDER.is_dir() and not cli_args.init:
@@ -107,20 +106,24 @@ import json
 class TGTDocument:
   filename: str
   gid: str
+  course: str
   def to_dict(self) -> dict:
     return asdict(self)
 
 class TGTQueueDB():
   def __init__(self, json_path: Path):
+    self.documents: list[TGTDocument] = []
     self.json_path = json_path
     if json_path.exists():
+      assert json_path.is_file()
       data: dict = json.loads(json_path.read_text())
-      self.documents = [
-        TGTDocument(**doc)
-        for doc in data['documents']
-      ]
-    else:
-      self.documents = []
+      try:
+        self.documents = [
+          TGTDocument(**doc)
+          for doc in data['documents']
+        ]
+      except ValueError:
+        print(f"Warning! Ignoring file with the wrong format: {json_path.name}")
   def to_json(self) -> str:
     return json.dumps({'documents': [d.to_dict() for d in self.documents]})
   def write(self):
@@ -137,7 +140,7 @@ if cli_args.init:
     TagPredictor,
     tqdm_thread_map,
   )
-  from tag_predictor import NORMALIZED_TEXT_FOLDER
+  from tag_predictor import NORMALIZED_TEXT_FOLDER, normalize_text
   course_predictor = TagPredictor.load()
   unread_id_to_course_name_map, course_name_to_unread_id_map = get_all_predictable_unread_folders(course_predictor.classes)
   course_to_autopdf_folder, autopdf_folder_to_course = all_folders_with_name_by_course(
@@ -313,10 +316,14 @@ if cli_args.init:
   assert local_file_names == remote_file_names, f"Somehow we got a mismatch between our {len(local_file_names)} local files and {len(remote_file_names)} remote files!"
   for fname, file in remote_files_by_name.items():
     if file['parent_id'] == REMOTE_FOLDER:
-      weight = 0.5
+      text = load_normalized_text_for_file(LOCAL_FOLDER.joinpath(file['name']), file['id'])
+      file['course'] = course_predictor.predict(
+        [text + ''.join([' ', normalize_text(file['name'][:-4])]*3)],
+        normalized=True,
+      )[0]
     else:
-      course = autopdf_folder_to_course[file['parent_id']]
-      weight = website.tags.get_weight_for_tag(course)
+      file['course'] = autopdf_folder_to_course[file['parent_id']]
+    weight = website.tags.get_weight_for_tag(file['course'])
     files.append(file)
     weights.append(weight * file['size'])
   from mathutils import weighted_shuffle
@@ -330,7 +337,7 @@ if cli_args.init:
     first_filename = queue.documents[0].filename
     del queue.documents[1:]
   queue.documents.extend([
-    TGTDocument(filename=doc['name'], gid=doc['id'])
+    TGTDocument(filename=doc['name'], gid=doc['id'], course=doc['course'])
     for doc in files
     if doc['name'] != first_filename
   ])
@@ -364,11 +371,6 @@ while queue.documents:
     import gdrive
     with yaspin(text="Processing..."):
       from pdfutils import get_page_count
-      from tag_predictor import (
-        TagPredictor,
-      )
-      if predictor is None:
-        predictor = TagPredictor.load()
       gf = gdrive.gcache.get_item(doc.gid)
       if not gf:
         raise ValueError(f"Unable to load Google File with id=\"{doc.gid}\"")
@@ -384,13 +386,7 @@ while queue.documents:
       else:
         pagecount = -(len(text)//-1700)
       glink = DRIVE_LINK.format(gf['id'])
-      from tag_predictor import normalize_text
-      # TODO: pull the course from the parent_id for autosorted PDFs
-      # and only load the predictor for EPUBs
-      course = predictor.predict(
-        [text + ''.join([' ', normalize_text(gf['name'][:-4])]*3)],
-        normalized=True,
-      )[0] + "/unread"
+      course = doc['course']
     from strutils import flush_input
     flush_input()
     course = gdrive.input_course_string_with_tab_complete(prefill=course)
