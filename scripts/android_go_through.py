@@ -357,6 +357,9 @@ if cli_args.init:
 
 queue = TGTQueueDB(MANIFEST_PATH)
 first_time = True
+if not queue.documents:
+  print(f"No documents in your queue! If this is unexpected, run --init to set up this folder.")
+  exit(0)
 
 while queue.documents:
     if not first_time:
@@ -398,7 +401,7 @@ while queue.documents:
       glink = DRIVE_LINK.format(gf['id'])
     from strutils import flush_input
     flush_input()
-    course = gdrive.input_course_string_with_tab_complete(prefill=doc.course)
+    course = gdrive.input_course_string_with_tab_complete(prefill=doc.course+"/unread")
     if course == "trash":
         gdrive.log_move_reason(
           gf['id'],
@@ -481,3 +484,5 @@ while queue.documents:
         fp.unlink()
     print("")
 
+print("Finished!")
+queue.write()
