@@ -2,7 +2,7 @@
 title: "Fragments of a Gāndhārī Manuscript of
 the *Pratyutpanna-buddha-saṃmukhāvasthita-samādhi-sūtra*"
 authors:
-  - "Paul Harrison"
+  - harrison-paul
   - "Timothy Lenz"
   - "Richard Salomon"
 external_url: "https://poj.peeters-leuven.be/content.php?id=3285740&url=article&download=yes"

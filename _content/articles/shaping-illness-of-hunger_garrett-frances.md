@@ -18,6 +18,6 @@ pages: "33--54"
 openalexid: W2034529956
 ---
 
-> The essay proposes continuity along a range of "culinary" practices, focusing in particular on "ritual cake" (gtor ma) offerings and "nectar" (bdud rtsi) recipes involving creation of pills and healing foods.
+> The essay proposes continuity along a range of "culinary" practices, focusing in particular on "ritual cake" (*gtor ma*) offerings and "nectar" (*bdud rtsi*) recipes involving creation of pills and healing foods.
 > The essay posits a "culinary aesthetics" of healing and personal enhancement and introduces speculation about Tibetan understandings of food as medicine
 
