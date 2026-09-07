@@ -122,7 +122,7 @@ class TGTQueueDB():
           TGTDocument(**doc)
           for doc in data['documents']
         ]
-      except ValueError:
+      except TypeError:
         print(f"Warning! Ignoring file with the wrong format: {json_path.name}")
   def to_json(self) -> str:
     return json.dumps({'documents': [d.to_dict() for d in self.documents]})
@@ -304,6 +304,13 @@ if cli_args.init:
     remote_files_by_name[child['name']]['parent_id'] = new_folder
   tqdm_thread_map(sort_pdf_file, unsorted_children, max_workers=8, unit="f")
   print("# Writing local .manifest.json...")
+  queue = TGTQueueDB(MANIFEST_PATH)
+  # load the previous course details
+  for doc in queue.documents:
+    file = remote_files_by_name.get(doc.filename)
+    if not file:
+      continue
+    file['course'] = doc.course
   import website
   website.tags.load()
   website.tags.init_weight_curve(world_weight=0.3, last_weight=0.04)
@@ -315,12 +322,16 @@ if cli_args.init:
   local_file_names = {fp.name for fp in local_files}
   assert local_file_names == remote_file_names, f"Somehow we got a mismatch between our {len(local_file_names)} local files and {len(remote_file_names)} remote files!"
   for fname, file in remote_files_by_name.items():
+    # Overwrite the previous manifest file's course data with the fresh data
+    # except in the case where we'd have to rerun the predictor. This strikes
+    # a good balance between speed and getting the latest predictions.
     if file['parent_id'] == REMOTE_FOLDER:
-      text = load_normalized_text_for_file(LOCAL_FOLDER.joinpath(file['name']), file['id'])
-      file['course'] = course_predictor.predict(
-        [text + ''.join([' ', normalize_text(file['name'][:-4])]*3)],
-        normalized=True,
-      )[0]
+      if not file.get('course'):
+        text = load_normalized_text_for_file(LOCAL_FOLDER.joinpath(file['name']), file['id'])
+        file['course'] = course_predictor.predict(
+          [text + ''.join([' ', normalize_text(file['name'][:-4])]*3)],
+          normalized=True,
+        )[0]
     else:
       file['course'] = autopdf_folder_to_course[file['parent_id']]
     weight = website.tags.get_weight_for_tag(file['course'])
@@ -328,7 +339,6 @@ if cli_args.init:
     weights.append(weight * file['size'])
   from mathutils import weighted_shuffle
   files = weighted_shuffle(files, weights)
-  queue = TGTQueueDB(MANIFEST_PATH)
   first_filename = None
   # make sure to keep the first document the same if there is one
   # so as to not interrupt the user if they were in the middle of reading
@@ -386,10 +396,9 @@ while queue.documents:
       else:
         pagecount = -(len(text)//-1700)
       glink = DRIVE_LINK.format(gf['id'])
-      course = doc['course']
     from strutils import flush_input
     flush_input()
-    course = gdrive.input_course_string_with_tab_complete(prefill=course)
+    course = gdrive.input_course_string_with_tab_complete(prefill=doc.course)
     if course == "trash":
         gdrive.log_move_reason(
           gf['id'],
