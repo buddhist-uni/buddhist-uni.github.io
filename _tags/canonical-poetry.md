@@ -24,4 +24,4 @@ image_center_x: 57%
 image_center_y: 50%
 ---
 
-Mostly for the canonical poetry collections of the Khuddakanikāya, but also for the miscellaneous poetry found throughout The Pāḷi Canon.
+Mostly for the canonical poetry collections of the Khuddakanikāya, but also for the miscellaneous poetry found throughout The Pāḷi Canon and their parallels in [the Āgamas](/tags/agama).

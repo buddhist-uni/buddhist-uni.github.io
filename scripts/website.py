@@ -33,6 +33,7 @@ class JekyllFile(frontmatter.Post):
       self.created_at = filecreationtimes[str(self.relative_path)]
     except KeyError:
       self.created_at = datetime.now()
+    self.__init_finished = True
   
   @classmethod
   def load(cls, f: Path, **kwargs):
@@ -40,10 +41,35 @@ class JekyllFile(frontmatter.Post):
     return cls(f, post.content, post.handler, **post.metadata)
   
   def __getattribute__(self, __name: str) -> Any:
+    # for convenience, and to mirror Jekyll syntax, allow users
+    # to get metadata values directly as attributes on the object
     try:
       return super().__getattribute__(__name)
     except AttributeError:
       return self.metadata.get(__name)
+
+  def __setattr__(self, __name: str, __value: Any) -> None:
+    try:
+      # if the attribute exists on the parent
+      super().__getattribute__(__name)
+      # then try to set that one
+      super().__setattr__(__name, __value)
+    except AttributeError:
+      try:
+        # if we're still initializing
+        super().__getattribute__("__init_finished")
+      except AttributeError:
+        # set this as a real attribute
+        super().__setattr__(__name, __value)
+        return
+      # all attributes after __init__ go into the metadata instead
+      self.metadata[__name] = __value
+  
+  def __delattr__(self, __name: str) -> None:
+    if __name in self.metadata:
+      del self.metadata[__name]
+    else:
+      super().__delattr__(__name)
 
 class AuthorFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -55,7 +81,7 @@ class AuthorCollection():
     self.authors = dict()
   def add(self, author: AuthorFile):
     self.authors[author.slug] = author
-  def get(self, author: str) -> AuthorFile:
+  def get(self, author: str) -> AuthorFile | None:
     return self.authors.get(author)
   def __iter__(self):
     return iter(self.authors.values())
@@ -71,6 +97,13 @@ class DataCollection():
   def load(self):
     content_config = root_folder.joinpath('_data/content.yml').read_text()
     self.content = yaml.load(content_config, Loader=yaml.Loader)
+    self.content_downloads: dict[str, int] = dict()
+    content_downloads = root_folder.joinpath("_data/content_downloads.json")
+    # might not exist as it doesn't ship with the repo
+    # downloaded via scripts/install-deps.bash
+    if content_downloads.is_file():
+      downloads_json = content_downloads.read_text()
+      self.content_downloads = json.loads(downloads_json)
 
 data = DataCollection()
 
@@ -90,8 +123,10 @@ class TagCollection():
 
   def init_weight_curve(self, world_weight=0.3, last_weight=0.04):
     self.load()
+    world_tag = self.get('world')
+    assert world_tag
     self.weight_curve = gen_waypoint_power_decay_func(
-      self.get('world').index,
+     world_tag.index,
       world_weight,
       len(self),
       last_weight,
@@ -101,6 +136,7 @@ class TagCollection():
   def get_weight_for_tag(self, slug: str) -> float:
     if not self.weight_curve:
       self.init_weight_curve()
+    assert self.weight_curve
     tag = self.get(slug)
     if not tag:
       return self.unfound_weight
@@ -127,7 +163,8 @@ class TagCollection():
 
   def sortChildren(self):
     for tag in self:
-      # sortkey is set in some frontmatters
+      # sortkey is set in some but not all frontmatters
+      # pyrefly: ignore [missing-attribute]
       tag.children.sort(key=lambda k: self.get(k).sortkey or 0)
 
   def get(self, tag: str) -> TagFile | None:
@@ -149,7 +186,9 @@ courses = []
 def normalized_author_name(author: str) -> str:
   if ' ' in author:
     return author
-  return authors.get(author).title
+  af = authors.get(author)
+  assert af
+  return af.title
 
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
@@ -199,13 +238,14 @@ class ContentFile(JekyllFile):
     for idx, candidatetag in enumerate(tags):
       if candidatetag.slug in self.tags:
         return (candidatetag.slug, idx+len(courses))
-    return (False, 9999)
+    return ('', 9999)
 
 content: list[ContentFile]
 content = []
 
 def entry_with_drive_id(gid):
   for entry in content:
+    # pyrefly: ignore [not-iterable]
     for link in entry.get('drive_links', []):
       if gid in link:
         return entry
@@ -254,12 +294,7 @@ def load():
       continue
     authors.add(AuthorFile.load(authorfile))
   data.load()
-  content_downloads = root_folder.joinpath("_data/content_downloads.json")
-  # might not exist as it doesn't ship with the repo
-  # downloaded via scripts/install-deps.bash
-  if content_downloads.is_file():
-    downloads_json = content_downloads.read_text()
-    data.content_downloads = json.loads(downloads_json)
+  if data.content_downloads:
     for c in content:
       c.download_count = data.content_downloads.get(c.content_path, 0)
       if c.external_url or c.drive_links:
