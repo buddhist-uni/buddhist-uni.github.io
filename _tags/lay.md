@@ -21,4 +21,4 @@ big_height: 3456
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:China-Schanghai-Jade_Buddha-Temple-5176573.jpg">Ermell</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">BY-SA 4.0</a>
 ---
 
-The form of Buddhism practiced by householders.
+The forms of Buddhism practiced by householders.

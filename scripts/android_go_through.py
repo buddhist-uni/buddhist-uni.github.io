@@ -209,11 +209,9 @@ if cli_args.init:
     if not remote_file:
       raise ValueError(f"Failed to upload \"{fp.name}\"")
     if remote_file['parent_id'] in remote_folder_ids:
-      if remote_files_by_name[fp.name]['md5Checksum'] != remote_file['md5Checksum']:
-        print(f"The file we have locally by the name {fp.name} isn't the same as the remote file with that name!")
-        # The remote_files_by_name[fp.name] write below makes sure that mapping is corrected
-        # and the "We already have..." prompt in the loop below handles what to do with the remote file
-        # so actually there's nothing to handle here?
+      # The remote_files_by_name[fp.name] write below makes sure that mapping is corrected
+      # and the "We already have..." prompt in the loop below handles what to do with the remote file
+      # so actually there's nothing to handle here if the files have different contents?
       if fp.name != remote_file['name']:
         msg = (
           f"Found\n  \"{fp.name}\"\n"

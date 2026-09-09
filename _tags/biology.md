@@ -4,3 +4,4 @@ status: unpublished
 parents: [science]
 ---
 
+Biology is the study of life.
