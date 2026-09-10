@@ -8,7 +8,7 @@ tags:
   - climate-change
   - anthropocene
   - imperialism
-  - history-of-science
+  - science-roots
   - disasters
   - natural
 year: 2016

@@ -11,7 +11,7 @@ course: mahayana-roots
 tags:
   - iddhi
   - problems
-  - history-of-medicine
+  - medicine-roots
 year: 2012
 journal: "Asian Medicine"
 address: "London"

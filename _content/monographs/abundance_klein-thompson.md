@@ -8,7 +8,7 @@ tags:
   - neoliberal-america
   - state
   - liberalism
-  - history-of-science
+  - science-roots
   - industry
 year: 2025
 olid: OL57760575M

@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1n3b3LCwcLp4eoMbwirn6wlH9xOGiYRgK/view?usp=drivesdk"
 course: mahayana
 tags:
-  - history-of-science
+  - science-roots
   - material-culture
   - media
 year: 2018

@@ -7,7 +7,7 @@ course: academia
 tags:
   - psychotherapy
   - groups
-  - history-of-science
+  - science-roots
   - journalism
 year: 1983
 olid: OL3555376M

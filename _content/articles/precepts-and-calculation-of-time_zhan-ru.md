@@ -7,7 +7,7 @@ source_url: "https://dx.doi.org/10.15239/hijbs.05.02.07"
 drive_links:
   - "https://drive.google.com/file/d/1ro9M2cXQ40oIkBQqbIZicI9Dl6r3lrR-/view?usp=drivesdk"
 tags:
-  - history-of-science
+  - science-roots
   - time
   - east-asian-roots
 year: 2022

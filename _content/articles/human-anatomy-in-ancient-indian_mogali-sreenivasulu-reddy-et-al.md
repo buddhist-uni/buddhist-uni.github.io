@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1K1zrKS0fug7VhwV_mD7KrS4yOqCOOz8d/view?usp=drivesdk"
 course: bart
 tags:
-  - history-of-medicine
+  - medicine-roots
   - central-asian
 year: 2017
 journal: "European Journal of Anatomy"

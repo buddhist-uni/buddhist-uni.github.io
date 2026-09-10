@@ -10,7 +10,7 @@ file_links:
 course: inner
 tags:
   - neuroscience
-  - history-of-science
+  - science-roots
   - media
   - art
 year: 2008

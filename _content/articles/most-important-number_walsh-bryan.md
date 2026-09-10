@@ -13,7 +13,7 @@ tags:
   - progress
   - statistics
   - state
-  - history-of-medicine
+  - medicine-roots
   - health
 year: 2025
 month: mar

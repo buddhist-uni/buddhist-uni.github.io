@@ -8,7 +8,7 @@ external_url: "https://newbooksnetwork.com/on-thomas-kuhns-the-structure-of-scie
 source_url: "https://open.spotify.com/episode/4pZFodL4kaV1DxOmc9hozD?si=wyUz9cMSTtS1Cyap0ZgRjw"
 course: philosophy-of-science
 tags:
-  - history-of-science
+  - science-roots
   - intellect
 year: 2022
 month: sep

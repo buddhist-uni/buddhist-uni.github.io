@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1iFOAAvPhYqdG9ajDH1poqH-qdVMKL8Bo/view?usp=drivesdk"
 course: east-asian-roots
 tags:
-  - history-of-medicine
+  - medicine-roots
   - drugs
 year: 2019
 month: sep

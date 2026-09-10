@@ -6,7 +6,7 @@ subcat: film
 external_url: "https://youtu.be/R-mDqKtivuI"
 course: things
 tags:
-  - history-of-technology
+  - technology-roots
   - canada
 year: 2019
 month: nov

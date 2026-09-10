@@ -9,7 +9,7 @@ drive_links:
   - "https://drive.google.com/file/d/1v7aQ0iX4_q8u6ub_IiC0dNCGFyaUImUD/view?usp=drivesdk"
 course: things
 tags:
-  - history-of-technology
+  - technology-roots
   - prehistory
 year: 2024
 month: nov

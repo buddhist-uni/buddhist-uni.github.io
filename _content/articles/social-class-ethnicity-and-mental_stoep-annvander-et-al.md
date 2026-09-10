@@ -10,7 +10,7 @@ drive_links:
 course: intellect
 tags:
   - public-health
-  - history-of-medicine
+  - medicine-roots
   - abnormal-psychology
   - race
 year: 1998

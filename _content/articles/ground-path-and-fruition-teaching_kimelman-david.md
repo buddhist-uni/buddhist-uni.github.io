@@ -10,7 +10,7 @@ course: dialogue
 status: featured
 tags:
   - monastic-tibetan
-  - history-of-science
+  - science-roots
   - globalization
 year: 2018
 month: sep

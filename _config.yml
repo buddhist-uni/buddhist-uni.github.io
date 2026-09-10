@@ -293,7 +293,6 @@ collections:
        - material-culture.md
        - food.md
        - earth.md
-       - animalia.md
        - senses.md
        - natural.md
        - neuroscience.md
@@ -309,6 +308,7 @@ collections:
        - literature.md
        - poetry.md
        - craft.md
+       - animalia.md
        - music.md
        - historiography.md
        - asia.md
@@ -319,6 +319,7 @@ collections:
        - indic-religions.md
        - south-asia.md
        - sea.md
+       - science-roots.md
        - migration.md
        - globalization.md
        - china.md

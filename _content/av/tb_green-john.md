@@ -6,7 +6,7 @@ subcat: film
 external_url: "https://youtu.be/7D-gxaie6UI"
 course: world
 tags:
-  - history-of-medicine
+  - medicine-roots
   - present
   - things
   - society

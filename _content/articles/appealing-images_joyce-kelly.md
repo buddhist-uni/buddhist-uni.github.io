@@ -12,7 +12,7 @@ course: body
 status: featured
 tags:
   - science
-  - history-of-medicine
+  - medicine-roots
   - media
   - mri
 year: 2005

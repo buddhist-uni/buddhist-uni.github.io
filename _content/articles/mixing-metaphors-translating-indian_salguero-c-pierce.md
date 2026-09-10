@@ -10,7 +10,7 @@ course: medieval
 tags:
   - tcm
   - east-asian-roots
-  - history-of-medicine
+  - medicine-roots
   - translation
 year: 2010
 month: jan
