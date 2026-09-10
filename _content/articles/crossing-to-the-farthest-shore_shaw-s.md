@@ -14,7 +14,7 @@ tags:
   - jataka
   - theravada-roots
   - imagery
-  - oceans
+  - ocean
 status: featured
 ---
 

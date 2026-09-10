@@ -7,7 +7,7 @@ month: feb
 year: 2021
 external_url: "https://newbooksnetwork.com/the-sea-and-the-sacred-in-japan"
 publisher: nbn
-course: oceans
+course: ocean
 tags:
   - japan
   - japanese-roots

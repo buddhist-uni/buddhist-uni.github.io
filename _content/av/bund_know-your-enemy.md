@@ -11,7 +11,7 @@ course: eastern-europe
 tags:
   - judaism
   - race
-  - political-ideologies
+  - political-ideology
   - present
 year: 2026
 month: apr

@@ -7,7 +7,7 @@ reader: "Ada Limón"
 external_url: "https://www.slowdownshow.org/episode/2022/09/09/759-gitanjali-60"
 course: indic-religions
 tags:
-  - oceans
+  - ocean
   - cosmology
 year: 2022
 month: sep

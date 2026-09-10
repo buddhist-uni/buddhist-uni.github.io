@@ -5,7 +5,7 @@ authors:
 olid: OL29564998M
 course: biology
 tags:
-  - oceans
+  - ocean
   - science
   - philosophy-of-science
   - california

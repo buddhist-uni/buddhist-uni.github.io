@@ -6,7 +6,7 @@ olid: OL701348M
 external_url: "https://archive.org/details/shipofgoldindeep0000kind_j9t4/mode/1up"
 course: california
 tags:
-  - oceans
+  - ocean
   - wider
   - science-roots
   - greed

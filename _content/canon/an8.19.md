@@ -10,7 +10,7 @@ status: featured
 tags:
   - faith
   - buddhism
-  - oceans
+  - ocean
   - view
   - an
 # imagery tag covered by Hecker's Similes

@@ -7,7 +7,7 @@ subcat: music
 year: 2017
 month: jun
 external_url: "https://songexploder.net/fleet-foxes"
-course: oceans
+course: ocean
 tags:
   - pilgrimage
 base_value: 0.2

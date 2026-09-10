@@ -10,7 +10,7 @@ hidden_links:
 course: world
 tags:
   - pregnancy
-  - oceans
+  - ocean
 year: 2020
 month: jul
 series: slowdown

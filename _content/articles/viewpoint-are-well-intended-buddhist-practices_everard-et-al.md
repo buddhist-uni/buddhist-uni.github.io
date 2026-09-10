@@ -13,7 +13,7 @@ file_links:
 formats: [pdf]
 course: nature
 tags:
-  - oceans
+  - ocean
   - mercy-release
   - engaged
   - biology

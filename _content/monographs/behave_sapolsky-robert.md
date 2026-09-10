@@ -11,7 +11,7 @@ tags:
   - biology
   - khandha
   - problems
-  - emotions
+  - emotion
   - power
   - neuroscience
   - science

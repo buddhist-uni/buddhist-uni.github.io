@@ -237,6 +237,7 @@ collections:
        - mahayana-roots.md
        - chan-lit.md
        - east-asian-roots.md
+       - central-asian.md
        - american.md
        - ambulit.md
        - academic.md
@@ -254,6 +255,7 @@ collections:
        - farang.md
        - canadian.md
        - californian.md
+       - new-age.md
        - world.md
        - inner.md
        - social.md
@@ -268,8 +270,10 @@ collections:
        - intellect.md
        - culture.md
        - ideology.md
+       - intelligence.md
        - groups.md
        - power.md
+       - social-intelligence.md
        - places.md
        - state.md
        - past.md
@@ -283,6 +287,7 @@ collections:
        - health.md
        - biology.md
        - medicine.md
+       - political-ideology.md
        - politics.md
        - law.md
        - race.md
@@ -290,6 +295,8 @@ collections:
        - gender.md
        - desire.md
        - families.md
+       - parenting.md
+       - enculturation.md
        - material-culture.md
        - food.md
        - earth.md
@@ -305,9 +312,12 @@ collections:
        - materialism.md
        - internet.md
        - language.md
+       - intercultural.md
+       - mass-media.md
        - literature.md
        - poetry.md
        - craft.md
+       - film.md
        - animalia.md
        - music.md
        - historiography.md
@@ -323,6 +333,7 @@ collections:
        - migration.md
        - globalization.md
        - china.md
+       - japan.md
        - thailand.md
        - sri-lanka.md
        - burma.md
@@ -335,7 +346,10 @@ collections:
        - labor.md
        - cities.md
        - social-media.md
+       - journalism.md
+       - inequality.md
        - california.md
+       - ocean.md
        - maps.md
        - paper.md
        - mandarin.md

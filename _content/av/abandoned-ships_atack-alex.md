@@ -5,7 +5,7 @@ authors: ["Alex Atack"]
 external_url: "https://99percentinvisible.org/episode/abandoned-ships"
 course: economics
 tags:
-  - oceans
+  - ocean
   - social
 year: 2021
 month: may

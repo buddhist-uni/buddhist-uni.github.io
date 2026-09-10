@@ -14,7 +14,7 @@ tags:
   - innovation
   - automation
   - economic-growth
-  - oceans
+  - ocean
 year: 2006
 month: mar
 publisher: princeton

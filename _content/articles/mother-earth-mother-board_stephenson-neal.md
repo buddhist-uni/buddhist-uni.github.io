@@ -15,7 +15,7 @@ tags:
   - technology
   - internet
   - globalization
-  - oceans
+  - ocean
   - science
 pages: 55
 ---

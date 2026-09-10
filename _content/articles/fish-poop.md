@@ -7,7 +7,7 @@ drive_links:
   - "https://drive.google.com/file/d/17-0SxGK7X-chwHRyY90b521-PlGT-sTL/view?usp=drivesdk"
 course: wider
 tags:
-  - oceans
+  - ocean
   - climate-change
 year: 2021
 month: oct
