@@ -1,5 +1,5 @@
 ---
-title: "Pilgrimage"
+title: "Buddhist Pilgrimage"
 parents: [form]
 hashtag: travel
 status: published

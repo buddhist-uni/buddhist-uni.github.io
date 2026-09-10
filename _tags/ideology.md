@@ -1,5 +1,5 @@
 ---
-title: "Ideology (General)"
+title: "Ideology"
 status: unpublished
 parents: [intellect, culture]
 ---

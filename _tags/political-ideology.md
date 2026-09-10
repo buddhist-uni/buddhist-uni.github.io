@@ -1,7 +1,7 @@
 ---
 title: "Political Ideologies"
 status: unpublished
-parent: [ideology]
+parents: [ideology]
 ---
 
 How people think society _should_ work.

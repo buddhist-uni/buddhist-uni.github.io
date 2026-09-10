@@ -1,7 +1,7 @@
 ---
 title: "Caste Systems"
 status: unpublished
-parents: [society, race]
+parents: [society, race] # maybe social inequality?
 ---
 
 Whether in the United States, India, South Africa, or elsewhere, many societies organize their people into an inherited (racial) hierarchy.

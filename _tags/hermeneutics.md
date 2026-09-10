@@ -1,5 +1,5 @@
 ---
-title: "Hermenuetics"
+title: "Buddhist Hermeneutics"
 status: unpublished
 parents: [thought]
 ---

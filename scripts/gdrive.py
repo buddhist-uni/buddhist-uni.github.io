@@ -185,7 +185,7 @@ def get_gfolders_for_course(course: str, invite_to_add: bool = True) -> tuple[st
       privateurl = input("Private link: ") or None
       gfolders = add_tracked_folder(course, publicurl, privateurl, gfolders=gfolders)
     else:
-      raise FileNotFoundError("I don't know that one!")
+      raise ValueError("I don't know that one!")
   
   private_folder = folderlink_to_id(gfolders[course]['private'])
   public_folder = folderlink_to_id(gfolders[course]['public'])

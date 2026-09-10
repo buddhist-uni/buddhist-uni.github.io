@@ -9,6 +9,7 @@ from strutils import (
 )
 from executils import git_grep
 import website
+import gdrive
 from yaspin import yaspin
 from datetime import datetime
 
@@ -56,13 +57,28 @@ class TagMetadata:
   ):
     self.slug = slug
     self.site_tag = site_tag
+    try:
+      self.folder_ids = gdrive.get_gfolders_for_course(slug, invite_to_add=False)
+    except ValueError:
+      self.folder_ids = (None, None)
+    if self.folder_ids[0]:
+      self.public_folder = gdrive.gcache.get_item(self.folder_ids[0])
+    else:
+      self.public_folder = None
+    
   def gen_documentation(self) -> str:
     ret = f"### `{self.slug}`"
+    blurb = None
     if self.site_tag:
       blurb = re.sub(r"\[([^\]]+)\]\(\/tags\/([a-z0-9-]+)\)", r'\1 (see `\2`)', self.site_tag.content).strip()
       ret += f" = {self.site_tag.title}"
-      if blurb:
-        ret += f"\n\n#### Description\n\n{blurb}"
+      if self.public_folder and self.public_folder['name'] != self.site_tag.title:
+        if not (self.public_folder['name'].startswith('The ') and self.public_folder['name'][4:] == self.site_tag.title):
+          ret += "\n\n**Alternative Title**: " + self.public_folder['name']
+    elif self.public_folder:
+      ret += f" = {self.public_folder['name']}"
+    if blurb:
+      ret += f"\n\n#### Description\n\n{blurb}"
     ret += "\n\n"
     return ret
 

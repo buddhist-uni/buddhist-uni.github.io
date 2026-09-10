@@ -148,6 +148,7 @@ class TagCollection():
     for othertag in self.tags.values():
       if tslug in othertag.parents:
         tag.children.append(othertag.slug)
+    assert tag.parents, f"You forgot to add `parents` to {tag.slug}"
     for otherslug in tag.parents:
       if otherslug in self.tags:
         self.tags[otherslug].children.append(tslug)
@@ -171,6 +172,8 @@ class TagCollection():
     return self.tags.get(tag)
   def __iter__(self) -> Iterator[TagFile]:
     for filename in config['collections']['tags']['order']:
+      if filename[:-3] not in self.tags:
+        raise FileNotFoundError(f"_config.yml expected tag file {filename} which doesn't exist")
       yield self.tags[filename[:-3]]
   def __len__(self):
     return len(self.tags)
