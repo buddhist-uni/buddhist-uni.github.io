@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Installs misc (non-gem) dependencies for the Jekyll build
 # Make sure to:
