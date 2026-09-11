@@ -4,7 +4,7 @@ authors:
   - "Ines Konczak"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134547&journal_code=JIABS"
 drive_links:
-  - "https://drive.google.com/open?id=17W8clhqTrrmydfBoN2Q3AdA_8rMcCvgA"
+  - "https://drive.google.com/file/d/17W8clhqTrrmydfBoN2Q3AdA_8rMcCvgA/view?usp=drivesdk"
 source_url: "https://doi.org/10.2143/JIABS.38.0.3134547"
 journal: jiabs
 volume: 38
