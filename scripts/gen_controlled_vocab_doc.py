@@ -14,6 +14,7 @@ import website
 import gdrive
 from yaspin import yaspin
 from datetime import datetime
+from tag_predictor import TagPredictor
 
 DOCUMENT_PREAMBLE = f"""---
 title: The Open Buddhist University Subject Tags
@@ -51,6 +52,7 @@ The rest of this markdown file will list and explain our current set of tags.
 In alphabetical order by their slug.
 
 """
+trim_punc = re.compile(r'^[^\w]+|[^\w]+$')
 
 class TagMetadata:
   def __init__(
@@ -166,6 +168,19 @@ class TagMetadata:
       ret += ", ".join([s.inline_name for s in narrower])
       ret += "]"
     ret += "\n\n"
+    predictor = TagPredictor.load()
+    if self.slug in predictor.classes:
+      ret += "### Discriminative Vocabulary\n\n"
+      dis_vocab = predictor.get_discriminating_vocab_for_tag(self.slug, n=20)
+      parent_dis = dis_vocab.get('parent')
+      child_dis = dis_vocab.get('children')
+      def format_word_cloud(cloud, name):
+        return f"**Versus {name} (`[{', '.join(cloud['versus'])}]`)**:\n" \
+          + f"[{', '.join(trim_punc.sub('', t) for t in cloud['terms'])}]\n\n"
+      if parent_dis:
+        ret += format_word_cloud(parent_dis, 'parent and siblings')
+      if child_dis:
+        ret += format_word_cloud(child_dis, 'children')
     return ret
 
 class TagTree:
