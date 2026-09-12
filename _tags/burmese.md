@@ -26,4 +26,4 @@ illustration_caption: >-
 The forms of Buddhism practiced in Myanmar.
 
 Burmese Buddhists are noted for their devotion to Theravāda's "higher" teachings:
-the [Abhidhamma](/tags/abhidhamma), the Pāli commentaries, and [Vipassanā meditation](/tags/vipassana), which they helped spread across the world.
+the [Abhidhamma](/tags/abhidhamma), [the Pāli commentaries](/tags/pali-commentaries), and [Vipassanā meditation](/tags/vipassana), which they helped spread across the world.

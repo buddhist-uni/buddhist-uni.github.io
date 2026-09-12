@@ -353,6 +353,8 @@ class TagPredictor:
             self.unstem_dict_ = dict()
     
     def unstem_terms(self, cloud:WordCloud):
+        if not hasattr(self, "unstem_dict_"):
+            self.load_unstem_dict()
         for i, stem in enumerate(cloud['terms']):
             cloud['terms'][i] = self.unstem_dict_.get(stem, stem)
 
@@ -370,8 +372,6 @@ class TagPredictor:
         """
         if not hasattr(self, "parents_"):
             self.build_parent_map()
-        if not hasattr(self, "unstem_dict_"):
-            self.load_unstem_dict()
         if not hasattr(self, "full_vocab_list_"):
             self.full_vocab_list_ = self.vectorizer_.get_feature_names_out()
 

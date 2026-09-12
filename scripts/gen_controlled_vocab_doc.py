@@ -1,9 +1,11 @@
 #!/bin/python3
 
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator
+from typing import Any
 import re
 import bisect
 from pathlib import Path
+from functools import cached_property
 from strutils import (
   git_root_folder,
 )
@@ -13,8 +15,9 @@ import gdrive
 from yaspin import yaspin
 from datetime import datetime
 
-DOCUMENT_PREAMBLE = f"""
-# The Open Buddhist University Subject Tags
+DOCUMENT_PREAMBLE = f"""---
+title: The Open Buddhist University Subject Tags
+---
 
 Version {datetime.now():%Y-%m-%d %H:%M:%S}
 
@@ -39,11 +42,11 @@ Do not tag everything about Buddhism with `buddhism`! Only the most introductory
 that parent tag. Most items about Buddhism should get a more specific tag, like "Buddhist Cosmology" or
 "Modern Chinese Buddhism," etc.
 
-## The Format of this Document
+# The Format of this Document
 
 The rest of this markdown file will list and explain our current set of tags.
 
-## The Tags
+# The Tags
 
 In alphabetical order by their slug.
 
@@ -52,9 +55,11 @@ In alphabetical order by their slug.
 class TagMetadata:
   def __init__(
     self,
+    tree: "TagTree",
     slug: str,
     site_tag: website.TagFile | None = None,
   ):
+    self.tree = tree
     self.slug = slug
     self.site_tag = site_tag
     try:
@@ -65,9 +70,66 @@ class TagMetadata:
       self.public_folder = gdrive.gcache.get_item(self.folder_ids[0])
     else:
       self.public_folder = None
-    
+    if self.folder_ids[1]:
+      self.private_folder = gdrive.gcache.get_item(self.folder_ids[1])
+    else:
+      self.private_folder = None
+
+  @cached_property
+  def inline_name(self) -> str:
+    if self.site_tag:
+      inline_name = self.site_tag.title
+    elif self.public_folder:
+      inline_name = self.public_folder['name']
+    elif self.private_folder:
+      inline_name = self.private_folder['name']
+    else:
+      return f"`{self.slug}`"
+    return inline_name + f" (`{self.slug}`)"
+
+  @cached_property
+  def parent(self) -> "TagMetadata | None":
+    if self.site_tag:
+      if self.site_tag.level == 1:
+        return None
+      return self.tree.get_tag(self.site_tag.parents[0])
+    elif self.private_folder:
+      return self.tree.get_tag_where(
+        lambda t: t.private_folder and t.private_folder['id'] == self.private_folder['parent_id']
+      )
+    elif self.public_folder:
+      return self.tree.get_tag_where(
+        lambda t: t.public_folder and t.public_folder['id'] == self.public_folder['parent_id']
+      )
+    else:
+      raise ValueError(f"I don't know how to determine the parent in that case")
+
+  def get_siblings(self) -> "list[TagMetadata]":
+    return self.tree.get_tags_where(
+      lambda t: t.parent == self.parent and t.slug != self.slug
+    )
+  
+  def get_children(self) -> "list[TagMetadata]":
+    return self.tree.get_tags_where(
+      lambda t: t.parent == self
+    )
+  
+  def get_broader(self) -> "list[TagMetadata]":
+    # TODO also get Google Drive shortcut locations
+    ret = [
+      self.tree.get_tag(p)
+      for p in self.site_tag.parents[1:]
+    ] if self.site_tag else []
+    return [p for p in ret if p]
+  
+  def get_narrower(self) -> "list[TagMetadata]":
+    # TODO also get google drive shortcut children
+    return self.tree.get_tags_where(
+      lambda t: t.site_tag and self.slug in t.site_tag.parents[1:]
+    )
+
   def gen_documentation(self) -> str:
-    ret = f"### `{self.slug}`"
+    ret = f"\n\n## `{self.slug}`"
     blurb = None
     if self.site_tag:
       blurb = re.sub(r"\[([^\]]+)\]\(\/tags\/([a-z0-9-]+)\)", r'\1 (see `\2`)', self.site_tag.content).strip()
@@ -78,7 +140,31 @@ class TagMetadata:
     elif self.public_folder:
       ret += f" = {self.public_folder['name']}"
     if blurb:
-      ret += f"\n\n#### Description\n\n{blurb}"
+      ret += f"\n\n### Description\n\n{blurb}"
+    ret += "\n\n### Relationships\n"
+    if self.parent:
+      ret += "\n**Parent**: "
+      ret += self.parent.inline_name
+    siblings = self.get_siblings()
+    if siblings:
+      ret += "\n**Siblings**: ["
+      ret += ", ".join([s.inline_name for s in siblings])
+      ret += "]"
+    children = self.get_children()
+    if children:
+      ret += "\n**Children**: ["
+      ret += ", ".join([s.inline_name for s in children])
+      ret += "]"
+    broader = self.get_broader()
+    if broader:
+      ret += "\n**Other Broader**: ["
+      ret += ", ".join([s.inline_name for s in broader])
+      ret += "]"
+    narrower = self.get_narrower()
+    if narrower:
+      ret += "\n**Other Narrower**: ["
+      ret += ", ".join([s.inline_name for s in narrower])
+      ret += "]"
     ret += "\n\n"
     return ret
 
@@ -88,14 +174,29 @@ class TagTree:
     self.sorted_slugs: list[str] = []
   def load(self):
     for tagfile in website.tags:
-      tag = TagMetadata(tagfile.slug, site_tag=tagfile)
+      tag = TagMetadata(self, tagfile.slug, site_tag=tagfile)
       self.add_tag(tag)
+
   def add_tag(self, tag: TagMetadata):
     assert tag.slug not in self.slug_to_metadata
     self.slug_to_metadata[tag.slug] = tag
     bisect.insort(self.sorted_slugs, tag.slug)
+
   def get_tag(self, slug: str) -> TagMetadata | None:
     return self.slug_to_metadata.get(slug)
+  
+  def get_tag_where(self, condition: Callable[[TagMetadata], Any]) -> TagMetadata | None:
+    for tag in self.slug_to_metadata.values():
+      if condition(tag):
+        return tag
+    return None
+  
+  def get_tags_where(self, condition: Callable[[TagMetadata], Any]) -> list[TagMetadata]:
+    return [
+      tag for tag in self.slug_to_metadata.values()
+      if condition(tag)
+    ]
+
   def __iter__(self) -> Iterator[TagMetadata]:
     for slug in self.sorted_slugs:
       yield self.slug_to_metadata[slug]
