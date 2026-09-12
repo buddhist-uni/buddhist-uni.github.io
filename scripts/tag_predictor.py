@@ -1,9 +1,13 @@
 #!/bin/python3
 
 # import argparse
+import enum
 from functools import cache
 from pathlib import Path
 import json
+from typing import Any, TypedDict, NotRequired
+from collections.abc import Sequence
+from types import NoneType
 import regex
 
 from nltk.stem.snowball import SnowballStemmer
@@ -47,6 +51,7 @@ if not DATA_DIRECTORY:
     CONFIG_FILE.write_text(json.dumps(CONFIG))
 DATA_DIRECTORY = Path(DATA_DIRECTORY)
 MODELS_DIRECTORY = DATA_DIRECTORY.joinpath('models')
+UNSTEMMING_DICT_PATH = DATA_DIRECTORY.joinpath('unstemming_dictionary.pkl')
 
 STOP_WORDS = set(git_root_folder.joinpath('scripts/stop_words.txt').read_text().split('\n'))
 STOP_WORDS.update([w.lower() for w in STOP_WORDS])
@@ -159,19 +164,41 @@ def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
 class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
     def __init__(self, k=15):
         self.k = k
+    
+    def __setstate__(self, state):
+        # Migrate old attribute names on unpickle
+        # TODO: rm this function after deprecating the old model
+        if 'sparse_mask' in state and 'sparse_mask_' not in state:
+            state['sparse_mask_'] = state.pop('sparse_mask')
+        if 'num_features_in' in state and 'n_features_in_' not in state:
+            state['n_features_in_'] = state.pop('num_features_in')
+        self.__dict__.update(state)
 
     def fit(self, X, y=None):
-        self.num_features_in = X.shape[1]
-        self.sparse_mask = np.where(np.sum(X != 0, axis=0) >= self.k)[1]
-        self.num_features_out = self.sparse_mask.shape[0]
+        if hasattr(X, "tocsc"):
+            # Efficient non-zero count for sparse matrices
+            doc_counts = np.diff(X.tocsc().indptr)
+        else:
+            doc_counts = np.count_nonzero(X, axis=0)
+
+        self.sparse_mask_ = np.asarray(doc_counts >= self.k).ravel()
+        self.n_features_in_ = X.shape[1]        
         return self
 
     def transform(self, X):
-        if hasattr(self, 'sparse_mask'):
-            return X[:, self.sparse_mask]
-        else:
-            raise ValueError("The transformer has not been fitted yet.")
+        check_is_fitted(self, "sparse_mask_")
+        return X[:, self.sparse_mask_]
 
+    def get_feature_names_out(self, input_features=None):
+        check_is_fitted(self, "sparse_mask_")
+        
+        if input_features is None:
+            # Fallback names if unknown
+            input_features = np.array([f"x{i}" for i in range(self.n_features_in_)])
+        else:
+            input_features = np.asarray(input_features)
+            
+        return input_features[self.sparse_mask_]
 
 class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, label=None):
@@ -186,6 +213,11 @@ class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
         return np.full(shape=(X.shape[0],), fill_value=self.label)
     def explain_yourself(self, *args):
         return f"I'm a leaf node that always predicts '{self.label}'"
+
+class WordCloud(TypedDict):
+    tag: str # the tag this is for 
+    versus: list[str] # these terms discriminate compared to these tags
+    terms: list[str] # the list of terms correlated with this tag
 
 class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
     """
@@ -218,6 +250,30 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
         ])
         self.pipeline_.fit(X, y, classifier__sample_weight=sample_weight)
         return self
+
+    def get_discriminating_stems_for_tag(self, slug: str, full_vocab_list: Sequence[str], n:int = 20) -> WordCloud:
+        ret = WordCloud({
+            "tag": slug,
+            "versus": [str(tag) for tag in self.classes_ if tag != slug],
+            "terms": [],
+        })
+        if len(self.classes_) > 2:
+            coefs = self.base_classifier.coef_[list(self.classes_).index(slug)]
+        elif slug == self.classes_[1]:
+            coefs = self.base_classifier.coef_[0]
+        else:
+            coefs = np.negative(self.base_classifier.coef_[0])
+        ws = self.pipeline_.named_steps['tfidf'].idf_
+        ws = np.max(ws) - ws + np.log(self.min_df+1) # log of the true doc freq
+        coefs = coefs * ws # weigh the coefficients by log of how common the term is
+        # cannot do *= above as that would modify the actual classifier coef_
+        top_indices = np.argsort(coefs)[-n:][::-1]
+        filtered_vocab = self.pipeline_.named_steps['filter_rare_words'].get_feature_names_out(full_vocab_list)
+        ret['terms'] = [
+            term
+            for term in filtered_vocab[top_indices]
+        ]
+        return ret
 
     def predict(self, X):
         check_is_fitted(self)
@@ -278,6 +334,64 @@ class TagPredictor:
             prev_prediction = curr_prediction
             curr_prediction = next_prediction
         return curr_prediction
+
+    def build_parent_map(self):
+        self.parents_ = dict()
+        for slug, classifier in self.classifiers_.items():
+            if isinstance(classifier, ZeroLearningClassifier):
+                continue
+            assert isinstance(classifier, OBUNodeClassifier)
+            for class_slug in classifier.classes_:
+                if class_slug == slug:
+                    continue
+                self.parents_[class_slug] = slug
+
+    def load_unstem_dict(self):
+        if UNSTEMMING_DICT_PATH.exists():
+            self.unstem_dict_ = joblib.load(UNSTEMMING_DICT_PATH)
+        else:
+            self.unstem_dict_ = dict()
+    
+    def unstem_terms(self, cloud:WordCloud):
+        for i, stem in enumerate(cloud['terms']):
+            cloud['terms'][i] = self.unstem_dict_.get(stem, stem)
+
+    def get_discriminating_vocab_for_tag(self, slug: str, n:int = 20) -> dict[str, WordCloud | NoneType]:
+        """
+        
+        Returns:
+          {
+            "parent": {
+                "versus": ["other", "tags"],
+                "terms": ["larvae", ...]
+            },
+            "children": None, # for leaf nodes, otherwise another WordCloud
+          }
+        """
+        if not hasattr(self, "parents_"):
+            self.build_parent_map()
+        if not hasattr(self, "unstem_dict_"):
+            self.load_unstem_dict()
+        if not hasattr(self, "full_vocab_list_"):
+            self.full_vocab_list_ = self.vectorizer_.get_feature_names_out()
+
+        ret: dict[str, WordCloud | None] = dict()
+        parent_slug = self.parents_.get(slug)
+        if parent_slug and parent_slug in self.classifiers_:
+            parent = self.classifiers_[parent_slug]
+            assert isinstance(parent, OBUNodeClassifier)
+            ret['parent'] = parent.get_discriminating_stems_for_tag(slug, self.full_vocab_list_, n)
+            self.unstem_terms(ret['parent'])
+        else:
+            ret['parent'] = None
+
+        children = self.classifiers_.get(slug)
+        if children is None or isinstance(children, ZeroLearningClassifier):
+            ret["children"] = None
+        else:
+            ret['children'] = children.get_discriminating_stems_for_tag(slug, self.full_vocab_list_, n)
+            self.unstem_terms(ret['children'])
+        return ret
 
     @classmethod
     @cache

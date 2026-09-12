@@ -807,7 +807,7 @@ class DriveCache:
         if not remote_files:
             remote_files = self.get_trashed_items_with_md5(hashval)
             if remote_files:
-                rm_date = max(f['trashedTime'] or f['modifiedTime'] for f in remote_files)
+                rm_date = max(f.get('trashedTime') or f['modifiedTime'] for f in remote_files)
                 rm_date = datetime.fromisoformat(rm_date)
                 return self.file_cache_dir / 'trash' / str(rm_date.year) / f"{rm_date.month:02d}" / remote_files[0]['name']
             return None

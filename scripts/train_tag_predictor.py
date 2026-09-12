@@ -1,5 +1,6 @@
 #!/bin/python3
 
+from collections import defaultdict
 import argparse
 import math
 from pathlib import Path
@@ -9,7 +10,6 @@ import hashlib
 from functools import cache
 from textwrap import dedent
 
-import numpy as np
 from numpy.typing import ArrayLike
 from scipy import sparse
 from sklearn.feature_extraction.text import (
@@ -21,7 +21,6 @@ from sklearn.base import BaseEstimator
 import joblib
 from tqdm import tqdm, trange
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
-from unidecode import unidecode
 
 from strutils import (
     prompt,
@@ -40,6 +39,7 @@ from tag_predictor import (
     NORMALIZED_TEXT_FOLDER,
     NORMALIZED_DRIVE_FOLDER,
     MODELS_DIRECTORY,
+    UNSTEMMING_DICT_PATH,
     TagPredictor,
     STOP_WORDS,
     flatten_youtube_metadata,
@@ -335,6 +335,38 @@ if not PDF_TEXT_FOLDER.exists():
 EPUB_TEXT_FOLDER = DATA_DIRECTORY.joinpath('rawepubtext')
 if not EPUB_TEXT_FOLDER.exists():
     EPUB_TEXT_FOLDER.mkdir()
+
+def build_unstemming_dictionary(target_sample_size:float=5_000_000, write_to_file: bool = True) -> dict[str, str]:
+    # maps stems to words to counts
+    word_counts = defaultdict(lambda: defaultdict(int))
+    text_files = list(PDF_TEXT_FOLDER.iterdir())
+    text_files.extend(list(EPUB_TEXT_FOLDER.iterdir()))
+    text_files = [fp for fp in text_files if fp.suffix == '.txt']
+    target_sample_size *= 1.05 # empiracly derived based on 10% of our .txt files being small
+    target_words_per_file = math.ceil(target_sample_size / len(text_files))
+    for fp in tqdm(text_files, desc='Reading', unit='f'):
+        if not fp.is_file():
+            continue
+        raw_text = fp.read_text()
+        raw_text = raw_text.split()
+        if len(raw_text) > target_words_per_file:
+            raw_text = random.sample(raw_text, target_words_per_file)
+        for word in raw_text:
+            word_counts[normalize_text(word)][word] += 1
+    ret = dict()
+    for stem, freqs in tqdm(word_counts.items(), desc='Counting', unit='w', total=len(word_counts)):
+        max_count = 0
+        top_word = stem
+        for word, n in freqs.items():
+            if n > max_count:
+                max_count = n
+                top_word = word
+        if top_word != stem:
+            ret[stem] = top_word
+    if write_to_file:
+        joblib.dump(ret, UNSTEMMING_DICT_PATH, compress=6)
+    return ret
+    
 
 def save_pdf_text_for_drive_file(drivefile: dict, overwrite=False, in_memory_filesize_limit=0):
     _save_text_for_drive_file(
