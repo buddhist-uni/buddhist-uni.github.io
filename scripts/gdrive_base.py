@@ -751,7 +751,13 @@ def fetch_youtube_transcripts(vids):
   ret = dict()
   # Just a simple loop for now
   # Might get fancy with threading later...
+  err = False
   for vid in vids:
+    if err: # once we start getting IP blocked, give up on the rest
+      ret[vid] = []
+      continue
     t = fetch_youtube_transcript(vid)
+    if len(t) == 0:
+      err = True
     ret[vid] = t
   return ret

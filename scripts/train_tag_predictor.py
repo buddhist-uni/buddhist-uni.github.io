@@ -754,6 +754,7 @@ def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tu
         min_df=min_df,
         dtype=np.int32,
     )
+    # Takes about 9 minutes
     X_raw = ret.fit_transform(X_raw)
     print("  Computed. Saving to disk...")
     joblib.dump(ret.vocabulary_, vocabfile, compress=2)
@@ -875,7 +876,10 @@ class OBUTopicClassifier:
         return (rows, w)
 
     def train_node(self, tag:str) -> BaseEstimator:
-        print(f"Building '{tag}' classifier job...")
+        print(f"Training '{tag}' classifier...")
+        from yaspin import yaspin
+        spr = yaspin(text="Building training job...")
+        spr.start()
         relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
         row_indices, w = self._training_data_from_datapoints(
             (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
@@ -901,11 +905,19 @@ class OBUTopicClassifier:
                 for_node=tag,
             )
         else:
-            print("  Nothing to learn")
+            spr.text = "Nothing to learn"
+            spr.ok("✅")
             return tag_predictor.ZeroLearningClassifier(label=tag)
         X = self.X_raw_[row_indices]
-        print(f"  Actually training '{tag}' now...")
-        ret = node_classifier.fit(X, y, sample_weight=w)
+        spr.text = "Training job built"
+        spr.ok("✅")
+        del spr
+        with yaspin(text=f"Training '{tag}' classifier...", timer=True) as spnr:
+            # Takes about 2 mins each for the large classifiers
+            # and just a few seconds for the small ones
+            ret = node_classifier.fit(X, y, sample_weight=w)
+            spnr.text = "Classifier trained"
+            spnr.ok("✅")
         if DEBUG_TERM:
             import numpy as np
             idx = self.vectorizer_.vocabulary_.get(DEBUG_TERM)
@@ -1022,7 +1034,7 @@ def report_model_score_against_youtube_data(model:TagPredictor, gdrive_also=True
 # D Tier (direct relative): 15.0%
 # E Tier (no relation):     19.8%
 #
-# As of Oct 30, 2025, the performance is now:
+# As of Oct 30, 2025:
 # ----------
 # Of the 255 videos, their predicted tags break down as follows:
 # S Tier (first tag match): 30.6%
@@ -1031,6 +1043,17 @@ def report_model_score_against_youtube_data(model:TagPredictor, gdrive_also=True
 # C Tier (any tag ancestor):14.1%
 # D Tier (direct relative): 11.4%
 # E Tier (no relation):     19.2%
+# 
+# As of Sep, 14, 2026:
+# ---------
+# Of the 270 videos, their predicted tags break down as follows:
+# S Tier (first tag match): 27.8%
+# A Tier (tag match):       22.2%
+# B Tier (ancestor match):  4.4%
+# C Tier (any tag ancestor):14.8%
+# D Tier (direct relative): 11.9%
+# E Tier (no relation):     18.9%
+
 
 if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(

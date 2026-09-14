@@ -246,7 +246,7 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
         self.N_ = len(y)
         self.pipeline_ = Pipeline(steps=[
             ('filter_rare_words', RemoveSparseFeatures(k=self.min_df)),
-            ('tfidf', TfidfTransformer()),
+            ('tfidf', TfidfTransformer()), # 2026/09/14: sublinear_tf performs worse
             ('classifier', self.base_classifier)
         ])
         self.pipeline_.fit(X, y, classifier__sample_weight=sample_weight)
