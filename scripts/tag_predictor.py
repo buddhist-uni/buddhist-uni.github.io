@@ -24,6 +24,7 @@ from sklearn.feature_extraction.text import (
     CountVectorizer,
     TfidfTransformer,
 )
+from sklearn.feature_selection import SelectorMixin
 from sklearn.pipeline import Pipeline
 from sklearn.base import (
     BaseEstimator,
@@ -161,7 +162,7 @@ def get_normalized_text_for_youtube_vid(video_data: dict) -> str:
         ret += flatten_youtube_transcript(video_data['transcript'])
     return normalize_text(ret)
 
-class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
+class RemoveSparseFeatures(BaseEstimator, SelectorMixin):
     def __init__(self, k=15):
         self.k = k
     
@@ -185,20 +186,17 @@ class RemoveSparseFeatures(BaseEstimator, TransformerMixin):
         self.n_features_in_ = X.shape[1]        
         return self
 
-    def transform(self, X):
-        check_is_fitted(self, "sparse_mask_")
-        return X[:, self.sparse_mask_]
+    def _get_support_mask(self):
+        return self.sparse_mask_
 
-    def get_feature_names_out(self, input_features=None):
+    def transform_feature_index(self, pre_idx) -> int | None:
+        """Map a pre-selection index to a post-selection feature index.
+        Returns None if the feature was dropped.
+        """
         check_is_fitted(self, "sparse_mask_")
-        
-        if input_features is None:
-            # Fallback names if unknown
-            input_features = np.array([f"x{i}" for i in range(self.n_features_in_)])
-        else:
-            input_features = np.asarray(input_features)
-            
-        return input_features[self.sparse_mask_]
+        if not self.sparse_mask_[pre_idx]:
+            return None
+        return int(np.sum(self.sparse_mask_[:pre_idx]))
 
 class ZeroLearningClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, label=None):
@@ -231,6 +229,7 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
         self,
         base_classifier:BaseEstimator|None=None,
         min_df=15,
+        for_node:str|None=None
     ) -> None:
         super().__init__()
         self.min_df = min_df
@@ -238,9 +237,11 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
             self.base_classifier = sklearn_clone(base_classifier)
         else:
             raise ValueError("Need to pass a base classifier to NodeClassifier")
+        self.for_node = for_node
 
     def fit(self, X, y, sample_weight=None):
         X, y = check_X_y(X, y, accept_sparse=True)
+        assert self.for_node, "I expected OBUNodeClassifier to get a `for_node` before training"
         self.classes_ = unique_labels(y)
         self.N_ = len(y)
         self.pipeline_ = Pipeline(steps=[
@@ -249,6 +250,12 @@ class OBUNodeClassifier(BaseEstimator, ClassifierMixin):
             ('classifier', self.base_classifier)
         ])
         self.pipeline_.fit(X, y, classifier__sample_weight=sample_weight)
+        mask = (y == self.for_node)
+        if sample_weight:
+            self.node_sample_weight_ = float(np.sum(np.asarray(sample_weight)[mask]))
+        else:
+            self.node_sample_weight_ = float(np.sum(mask))
+        self.node_weight_ = self.node_sample_weight_
         return self
 
     def get_discriminating_stems_for_tag(self, slug: str, full_vocab_list: Sequence[str], n:int = 20) -> WordCloud:

@@ -108,7 +108,7 @@ class TagMetadata:
 
   def get_siblings(self) -> "list[TagMetadata]":
     return self.tree.get_tags_where(
-      lambda t: t.parent == self.parent and t.slug != self.slug
+      lambda t: t.parent == self.parent and t != self
     )
   
   def get_children(self) -> "list[TagMetadata]":
@@ -181,6 +181,7 @@ class TagMetadata:
         ret += format_word_cloud(parent_dis, 'parent and siblings')
       if child_dis:
         ret += format_word_cloud(child_dis, 'children')
+    # TODO add examples section
     return ret
 
 class TagTree:
@@ -191,6 +192,8 @@ class TagTree:
     for tagfile in website.tags:
       tag = TagMetadata(self, tagfile.slug, site_tag=tagfile)
       self.add_tag(tag)
+    # TODO load courses as well
+    # TODO load gdrive folders as well
 
   def add_tag(self, tag: TagMetadata):
     assert tag.slug not in self.slug_to_metadata

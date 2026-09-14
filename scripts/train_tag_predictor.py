@@ -1,6 +1,7 @@
 #!/bin/python3
 
 from collections import defaultdict
+from typing import Callable
 import argparse
 import math
 from pathlib import Path
@@ -8,8 +9,11 @@ import json
 import random
 import hashlib
 from functools import cache
+import gc
+from itertools import chain
 from textwrap import dedent
 
+import numpy as np
 from numpy.typing import ArrayLike
 from scipy import sparse
 from sklearn.feature_extraction.text import (
@@ -51,6 +55,9 @@ from tag_predictor import (
 
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
 
+DEBUG_TERM = '' # always give the post-normalization (stemmed) form
+DEBUG_TERM_DATA_POINTS = []
+
 DRIVE_FOLDERS = gdrive.FOLDERS_DATA()
 PUBLIC_FOLDER_FOR_PRIVATE = {
     gdrive_base.folderlink_to_id(pair['private']): gdrive_base.folderlink_to_id(pair['public'])
@@ -74,6 +81,7 @@ def get_all_trainable_drive_folders() -> dict[str,list[str]]:
     These will be prompted for and the answers cached."""
     buddhism_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['buddhism']['private'])
     world_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['world']['private'])
+    assert buddhism_folder and world_folder
     ret = _get_trainable_drive_folders(buddhism_folder, {})
     return _get_trainable_drive_folders(world_folder, ret)
 
@@ -122,6 +130,7 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
 def get_drive_folder_heirarchy() -> dict[str, dict[str, list[str]]]:
     """returns a mapping from slug to {'ancestors': [], 'children': [], 'descendants': []}"""
     root_folder = gdrive_base.folderlink_to_id(DRIVE_FOLDERS['root']['private'])
+    assert root_folder
     
     drive_map = dict()
     return _get_drive_folder_heirarchy(root_folder, [], drive_map)
@@ -394,7 +403,7 @@ def _save_text_for_drive_file(
     in_memory_filesize_limit: int,
     text_folder: Path,
     extension: str,
-    reader_func: callable,
+    reader_func: Callable,
 ):
     name = f"{drivefile['id']}.txt"
     incompleterawtextfile = text_folder.joinpath(f"{name}.incomplete")
@@ -473,6 +482,16 @@ def save_all_drive_texts(parallelism=16, sample_size=None, min_size=0, max_size=
 
 
 class DataPoint():
+    __slots__ = (
+        'title',
+        'content',
+        'tag',
+        'confidence',
+        'title_weight',
+        '_normalized_content',
+        'training_rows',
+    )
+
     def __init__(
         self,
         title=None,
@@ -486,24 +505,48 @@ class DataPoint():
         self.tag = tag
         self.confidence = confidence
         self.title_weight = int(title_weight)
+        self._normalized_content = None
+        self.training_rows = ()
+
     def get_normalized_title(self):
         return self.title
+
     def get_normalized_content(self):
+        if self._normalized_content is not None:
+            return self._normalized_content
         if not self.content:
-            return ''
-        return self.content + self.title_weight * (' ' + self.title)
+            self._normalized_content = ''
+        else:
+            self._normalized_content = self.content + self.title_weight * (' ' + self.title)
+        return self._normalized_content
+
+    def set_training_rows(self, title_row: int, content_row: int, indptr):
+        """Precomputes non-empty training rows and sample weights from the CSR matrix.
+        
+        In a CSR matrix, (indptr[r+1] - indptr[r]) gives the non-zero count (nnz),
+        i.e. the number of vocabulary terms present in that text. Texts with 0
+        vocabulary words are filtered out.
+        
+        Each valid text receives a training weight of:
+            sample_weight = confidence * log(1 + vocab_word_count)
+        """
+        rows = []
+        for row_idx in (title_row, content_row):
+            vocab_word_count = int(indptr[row_idx + 1] - indptr[row_idx])
+            if vocab_word_count > 0:
+                rows.append((row_idx, self.confidence * math.log(1 + vocab_word_count)))
+        self.training_rows = tuple(rows)
+
+    def free_raw_text(self):
+        self.title = None
+        self.content = None
+        self._normalized_content = None
+
     def get_tag(self):
         return self.tag
+
     def get_confidence(self):
         return self.confidence
-    def set_title_vector(self, title_vector):
-        self.title_vector = title_vector
-    def set_content_vector(self, content_vector):
-        self.content_vector = content_vector
-    def get_title_vector(self):
-        return self.title_vector
-    def get_content_vector(self):
-        return self.content_vector
 
 class DataSource:
     def __init__(self) -> None:
@@ -540,6 +583,12 @@ class DataSource:
         if normalize:
             title = normalize_text(title)
             content = normalize_text(content)
+        if DEBUG_TERM and title and ((content and DEBUG_TERM in content) or DEBUG_TERM in title):
+            DEBUG_TERM_DATA_POINTS.append((
+                title,
+                tags,
+                confidence,
+            ))
         for tag in tags:
             self.data.append(
                 DataPoint(
@@ -622,7 +671,7 @@ class GoogleDriveFilesDataSource(DataSource):
         all_files = get_all_trainable_files_in_folders()
         content_for_gdid = {}
         if self.use_site_tags:
-            all_files += get_trainable_gfiles_from_site()
+            all_files = list(all_files) + get_trainable_gfiles_from_site()
             content_for_gdid = {
                 gdrive_base.link_to_id(link): content
                 for content in website.content
@@ -667,7 +716,7 @@ class TqdmCountVectorizer(CountVectorizer):
 def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tuple[CountVectorizer, ArrayLike]:
     print("  Hashing the input data...")
     hasher = hashlib.md5(usedforsecurity=False)
-    for s in tqdm(X_raw + stop_words):
+    for s in tqdm(chain(X_raw, stop_words), total=len(X_raw) + len(stop_words)):
         hasher.update(s.encode())
     hasher.update(str(min_df).encode())
     hashval = hasher.hexdigest()
@@ -681,6 +730,7 @@ def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tu
         ret = CountVectorizer(
             lowercase=False,
             vocabulary=vocab,
+            dtype=np.int32,
         )
         ret.transform([]) # prime the pump
         if X_file.exists():
@@ -689,6 +739,7 @@ def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tu
         procer = TqdmCountVectorizer(
             lowercase=False,
             vocabulary=vocab,
+            dtype=np.int32,
         )
         X_raw = procer.transform(X_raw)
         joblib.dump(X_raw, X_file, compress=4)
@@ -701,12 +752,13 @@ def build_vectorizer(X_raw: list[str], stop_words: list[str], min_df: int) -> tu
         lowercase=False, # already lowered
         stop_words=stop_words,
         min_df=min_df,
+        dtype=np.int32,
     )
     X_raw = ret.fit_transform(X_raw)
     print("  Computed. Saving to disk...")
     joblib.dump(ret.vocabulary_, vocabfile, compress=2)
     joblib.dump(X_raw, X_file, compress=4)
-    ret = CountVectorizer(lowercase=False, vocabulary=ret.vocabulary_)
+    ret = CountVectorizer(lowercase=False, vocabulary=ret.vocabulary_, dtype=np.int32)
     ret.transform([]) # prime the pump
     return (
         ret,
@@ -732,7 +784,7 @@ class OBUTopicClassifier:
     """
     def __init__(
         self,
-        data_sources: list[DataSource] = None,
+        data_sources: list[DataSource] = [],
         min_df=15, # filter vocab rarer than this
         min_points: int = 50, # tags with less than this many data points will be filtered out
         max_depth: int = 10, # tags at this level will be considered leaf nodes
@@ -802,45 +854,40 @@ class OBUTopicClassifier:
         )
         if X_raw.shape[0] != shape:
             raise RuntimeError("build_vectorizer mangled the X_raw length?")
-        for i in trange(0, int(X_raw.shape[0]), 2):
-            t_v, c_v = X_raw[i:i+2]
-            self.all_the_data_[int(i/2)].set_title_vector(t_v)
-            self.all_the_data_[int(i/2)].set_content_vector(c_v)
+        self.X_raw_ = X_raw
+        indptr = X_raw.indptr
+        for i, dp in enumerate(self.all_the_data_):
+            dp.set_training_rows(title_row=2 * i, content_row=2 * i + 1, indptr=indptr)
+            dp.free_raw_text()
+        gc.collect()
 
     def _training_data_from_datapoints(
         self,
         data_points,
-    ) -> tuple[list]:
-        """Returns (X, w) from a list of DataPoints"""
-        x = []
+    ) -> tuple[list[int], list[float]]:
+        """Returns (row_indices, sample_weights) from a list of DataPoints"""
+        rows = []
         w = []
         for datapoint in data_points:
-            title = datapoint.get_title_vector()
-            content = datapoint.get_content_vector()
-            confidence = datapoint.get_confidence()
-            # here is where we finally filter out empty values
-            if title.nnz > 0:
-                x.append(title)
-                w.append(confidence * math.log(1+title.nnz))
-            if content.nnz > 0:
-                x.append(content)
-                w.append(confidence * math.log(1+content.nnz))
-        return (x, w)
+            for row_idx, weight in datapoint.training_rows:
+                rows.append(row_idx)
+                w.append(weight)
+        return (rows, w)
 
     def train_node(self, tag:str) -> BaseEstimator:
         print(f"Building '{tag}' classifier job...")
         relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
-        X, w = self._training_data_from_datapoints(
+        row_indices, w = self._training_data_from_datapoints(
             (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
         )
         y = [tag] * len(w)
         child_count = 0
         for child in self.drive_map[tag]['children']:
             relevant_tags = set([child] + self.drive_map[child]['descendants'])
-            child_X, child_w = self._training_data_from_datapoints(
+            child_rows, child_w = self._training_data_from_datapoints(
                 (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
             )
-            X.extend(child_X)
+            row_indices.extend(child_rows)
             w.extend(child_w)
             if len(child_w) >= self.min_points:
                 y.extend([child] * len(child_w))
@@ -851,13 +898,40 @@ class OBUTopicClassifier:
             node_classifier = tag_predictor.OBUNodeClassifier(
                 min_df=self.min_df,
                 base_classifier=self.base_classifier,
+                for_node=tag,
             )
         else:
             print("  Nothing to learn")
             return tag_predictor.ZeroLearningClassifier(label=tag)
-        X = sparse.vstack(X)
+        X = self.X_raw_[row_indices]
         print(f"  Actually training '{tag}' now...")
-        return node_classifier.fit(X, y, sample_weight=w)
+        ret = node_classifier.fit(X, y, sample_weight=w)
+        if DEBUG_TERM:
+            import numpy as np
+            idx = self.vectorizer_.vocabulary_.get(DEBUG_TERM)
+            print(f"  Idx of '{DEBUG_TERM}' is {idx}")
+            drp_mask = (X[:, idx] > 0).toarray().ravel()
+            print(f"  We have {np.sum(drp_mask)}/{len(y)} samples with it")
+            masked_y = np.asarray(y)[drp_mask]
+            masked_w = np.asarray(w)[drp_mask]
+            unique_labels, group_indices = np.unique(masked_y, return_inverse=True)
+            weights_by_label = np.bincount(group_indices, weights=masked_w)
+            total_w_by_y = dict(zip(unique_labels, weights_by_label))
+            print(f"  Total weights by class = {total_w_by_y}")
+            t_idx = ret.pipeline_.named_steps['filter_rare_words'].transform_feature_index(idx)
+            if t_idx:
+                clsfy: LinearSVC = ret.pipeline_.named_steps['classifier']
+                if len(clsfy.classes_) == 2:
+                  print(f"  Learned to diff {clsfy.classes_} by '{DEBUG_TERM}' with coef = {clsfy.coef_[0][t_idx]}")
+                else:
+                  for i in range(len(clsfy.classes_)):
+                    print(f"  Associated '{DEBUG_TERM}' with {clsfy.classes_[i]} at coef = {clsfy.coef_[i][t_idx]}")
+            else:
+                print(f"  The sparse feature selector dropped '{DEBUG_TERM}'")
+            # pyrefly: ignore [missing-import]
+            import ipdb
+            ipdb.set_trace()
+        return ret
 
     def save_as(self, filepath: Path | str):
         """Save only the essential data to a pickle file (.pkl)"""
@@ -977,7 +1051,7 @@ if __name__ == "__main__":
         help="Will use the YT Data as a test set instead of as a training set.",
     )
     args = argument_parser.parse_args()
-    data_sources = [WebsiteDataSource(), GoogleDriveFilesDataSource()]
+    data_sources: list[DataSource] = [WebsiteDataSource(), GoogleDriveFilesDataSource()]
     if not args.no_yt_data:
         data_sources.append(YouTubeDataSource())
     classifier = OBUTopicClassifier(

@@ -107,6 +107,10 @@
     "private": "https://drive.google.com/drive/folders/19iHZ-YU2kyDsACy8KZXiIfnznrkDYxZh",
     "public": ""
   },
+  "ammunitions": {
+    "private": "https://drive.google.com/drive/folders/1fhUWV4XF4FyAah86YHYEO6REKEliq2lA",
+    "public": ""
+  },
   "an": {
     "private": "https://drive.google.com/drive/folders/1m3CpiP5uQdDIonqoV6oKeZSFxkCQa4yZ",
     "public": "https://drive.google.com/drive/folders/1uIUVaK7heRIJOojXP9hjkw8QeDZjME0h"
@@ -126,6 +130,10 @@
   "anatomy": {
     "private": "https://drive.google.com/drive/folders/19Fu42FfHBW-Hnq4VlrtsHD4KnUBxSl7v",
     "public": null
+  },
+  "ancient-egypt": {
+    "private": "https://drive.google.com/drive/folders/1-mebrBZSlPbscRtxdLHh4gbQ2bJ4QL5y",
+    "public": ""
   },
   "ancient-inner-asia": {
     "private": "https://drive.google.com/drive/folders/1uGIzx1D0cqmcmoBu01bvgUzp7q_mu0H-",
@@ -150,6 +158,10 @@
   "animism": {
     "private": "https://drive.google.com/drive/folders/1DDmah1S7T_e71G6PRJ3sWpeepmzQGgir",
     "public": ""
+  },
+  "anthropology-roots": {
+    "private": "https://drive.google.com/drive/folders/1RPg9QtSOo-p35E1N7LpojHtYDuEVI4Xv",
+    "public": null
   },
   "ants": {
     "private": "https://drive.google.com/drive/folders/1BJLf_yh6gDou9xrta_My8B0t7c8MyHFz",
@@ -187,6 +199,10 @@
     "private": "https://drive.google.com/drive/folders/1a1Ki-XpWi1RyihZ9tPdg87X6qOkowaBF",
     "public": "https://drive.google.com/drive/folders/1Lyo9u2YK0AJuqyzOmzp8krjhXLkHAmyS"
   },
+  "art-forgery": {
+    "private": "https://drive.google.com/drive/folders/1dBHcd_GfTR0XrXVxu49ENy1L2cX_4c-z",
+    "public": ""
+  },
   "art-history": {
     "private": "https://drive.google.com/drive/folders/1EGXXc-k32uP7Vi7l16H200OJw-yQQTXv",
     "public": null
@@ -206,6 +222,10 @@
   "asian-america": {
     "private": "https://drive.google.com/drive/folders/1QZItDx6hOWhv9MR3s_OflF0RxrrPLsX-",
     "public": null
+  },
+  "asian-cartography": {
+    "private": "https://drive.google.com/drive/folders/1FUYYKuI9UwhLmJFklGyrVcJpt4Pf025t",
+    "public": ""
   },
   "asl": {
     "private": "https://drive.google.com/drive/folders/1YZrQ6i6Nnbev9ntnMJfXaw42BTimeild",
@@ -275,6 +295,10 @@
     "private": "https://drive.google.com/drive/folders/1hfmcXb0PnFYAbDv0BxOr24FsCrYW8b00",
     "public": null
   },
+  "baroque": {
+    "private": "https://drive.google.com/drive/folders/1Ywx0FoIQ-Eb9KJ4BDeTolqc1Bj8AvFvT",
+    "public": ""
+  },
   "bart": {
     "private": "https://drive.google.com/drive/folders/1uRgDP7YQFPwhInqRRp9R_5v0dtFfwyLb",
     "public": "https://drive.google.com/drive/folders/1BBS-M7TVYkZ81ElXW_cRUTitldtM2P28"
@@ -335,6 +359,10 @@
     "private": "https://drive.google.com/drive/folders/1ZJH-hixhbNrn6Ow7aBoW-9Mkya292xJ8",
     "public": null
   },
+  "botswana": {
+    "private": "https://drive.google.com/drive/folders/1O1hTjdZ_sLHiOBTIYmKUyRiXfpBBua5b",
+    "public": ""
+  },
   "brahmavihara": {
     "private": "https://drive.google.com/drive/folders/1xDqAyghWMaR3Vrf2ifTWygGB8-l17kEx",
     "public": "https://drive.google.com/drive/folders/1LYnT7NiQC_v_Rlw69QGprYjSspThowy_"
@@ -342,6 +370,10 @@
   "brazil": {
     "private": "https://drive.google.com/drive/folders/1AeauMVPm2qhvnTBDj6hBCQuKmdskfQcr",
     "public": null
+  },
+  "brazilian": {
+    "private": "https://drive.google.com/drive/folders/1vR19Nj39z_ioW1zn6ekm2kQWRViz4L2F",
+    "public": ""
   },
   "britain": {
     "private": "https://drive.google.com/drive/folders/1C1ciryAbILOcfRDGbwc9_TLykzGKZVr3",
@@ -353,6 +385,14 @@
   },
   "british-columbia": {
     "private": "https://drive.google.com/drive/folders/1QxV0vrIVdgh6afdbtFhePgCVFiUifUpC",
+    "public": ""
+  },
+  "bronze-age-china": {
+    "private": "https://drive.google.com/drive/folders/1_nF4loWg0hVF5gi4K2SCII8v9y6wObXX",
+    "public": ""
+  },
+  "browsers": {
+    "private": "https://drive.google.com/drive/folders/1CGAP6VkTyb0UjaiDpS_dOfdvQg0vRRhS",
     "public": ""
   },
   "brunei": {
@@ -405,6 +445,10 @@
   },
   "business": {
     "private": "https://drive.google.com/drive/folders/1HMeIv_bIyT5QgX8m8yV_8BqxNAsWcnHv",
+    "public": ""
+  },
+  "byzantium": {
+    "private": "https://drive.google.com/drive/folders/1ExWKPwe0SGQbbPp9yiblwBFBb6hD4Jho",
     "public": ""
   },
   "california": {
@@ -603,6 +647,10 @@
     "private": "https://drive.google.com/drive/folders/1XCoCq_isaH5bGXrc_7XfxrdIhdbL9zKy",
     "public": ""
   },
+  "cinema": {
+    "private": "https://drive.google.com/drive/folders/1X6ThW3XSlxuFvLMHYWaLMfnfOBsHRaxh",
+    "public": ""
+  },
   "cities": {
     "private": "https://drive.google.com/drive/folders/1cdSleGU4RDEyDak9EJOVXzCxmz5B8pP7",
     "public": "https://drive.google.com/drive/folders/1Y9CkGoa-_CL0xIKY-axrfoX5D2Z4IkCV"
@@ -653,6 +701,14 @@
   },
   "clothing-industry": {
     "private": "https://drive.google.com/drive/folders/16P2mjvLGGXSeSr5-7fZo9U2TiEQmwWGy",
+    "public": ""
+  },
+  "coffee": {
+    "private": "https://drive.google.com/drive/folders/1ajpIUZf8pD2y6k2ikZTfYTh2w_WJmcaE",
+    "public": ""
+  },
+  "colombia": {
+    "private": "https://drive.google.com/drive/folders/1TlEhNVHzqHmop3yQgJRGQo9P6PAGwDVr",
     "public": ""
   },
   "colonization": {
@@ -723,6 +779,10 @@
     "private": "https://drive.google.com/drive/folders/18x3-YTl9HwpXOsvchp7_ArTo-W7OdbeO",
     "public": "https://drive.google.com/drive/folders/1o8c2IVzKT-Z2Lo9oIBjCmjruOdJAp5XZ"
   },
+  "costa-rica": {
+    "private": "https://drive.google.com/drive/folders/1VE0D8l8m7SqbLqAvuGyjaaX3VJF8cPmN",
+    "public": ""
+  },
   "craft": {
     "private": "https://drive.google.com/drive/folders/13OFkYmxDz8VuvJjdG3v0EupqTk7fa0RA",
     "public": "https://drive.google.com/drive/folders/1_g1ft-riHFg9kFwKOTnWxytE7cKh4ryw"
@@ -764,8 +824,8 @@
     "public": ""
   },
   "cyprus": {
-    "private": "https://drive.google.com/drive/folders/10pD1bLCrTjAYGkK_PD6-G2ycbs42utLO",
-    "public": null
+    "private": "https://drive.google.com/drive/folders/1xvplIj7QYV1kfIKdpIiQM4HA2D2fxmON",
+    "public": ""
   },
   "da": {
     "private": null,
@@ -935,6 +995,10 @@
     "private": "https://drive.google.com/drive/folders/1dm8FfzPE-smd1LOwv6USmnMRbmB02sJk",
     "public": null
   },
+  "editing": {
+    "private": "https://drive.google.com/drive/folders/1dDRc0MnP6eH4WRRzDvfrNbB87zqFLPVV",
+    "public": ""
+  },
   "edo-japan": {
     "private": "https://drive.google.com/drive/folders/1yFnTzauEcUFIfwlOANSP_efejEtno63Q",
     "public": ""
@@ -986,6 +1050,10 @@
   "engineering": {
     "private": "https://drive.google.com/drive/folders/1FgDrY0_BCkEffR7TMPjd9ucx0llYEjv9",
     "public": null
+  },
+  "england": {
+    "private": "https://drive.google.com/drive/folders/1gglH0s6bFjvXfL8dFfCvuqsKmlYGO_Yn",
+    "public": ""
   },
   "english": {
     "private": "https://drive.google.com/drive/folders/1843eWhM_cmKnHGH5D_7b0DHA5jaeU2zw",
@@ -1071,6 +1139,10 @@
     "private": "https://drive.google.com/drive/folders/1foNZ1DbLrY-BjpeUCTowF3MGL9ky7G9W",
     "public": null
   },
+  "florence": {
+    "private": "https://drive.google.com/drive/folders/1xo_US5FLYSIbHvca6LNwgu7AVxdWGXPd",
+    "public": ""
+  },
   "food": {
     "private": "https://drive.google.com/drive/folders/1ebO3n2ks7b57DjWrh5k-mn4MrEZgNYh0",
     "public": "https://drive.google.com/drive/folders/1c1GOmDi6X5d-aik-fsV5WrjDoMHndAnV"
@@ -1106,6 +1178,10 @@
   "function": {
     "private": "https://drive.google.com/drive/folders/1vlNN5KiAlRgXHJ9WdStJzxaffawdfGAy",
     "public": "https://drive.google.com/drive/folders/1ELiZmfneQwoq-2wPwAgradkpMe0PvruI"
+  },
+  "functional-programming": {
+    "private": "https://drive.google.com/drive/folders/16DOAMIJP7c3SiTXr-aXhV1txiKltemti",
+    "public": ""
   },
   "future": {
     "private": "https://drive.google.com/drive/folders/1uTs0yXJUuhdt5BAeucrQCdP6T-wvvU4O",
@@ -1146,6 +1222,10 @@
   "geology": {
     "private": "https://drive.google.com/drive/folders/1nk_iDgitNifCg6CR-2x1VsBEN40cyqqk",
     "public": null
+  },
+  "geometry": {
+    "private": "https://drive.google.com/drive/folders/1OV5dpfXRySqRRNLi-uz--ZWBfyRrE7si",
+    "public": ""
   },
   "german-language": {
     "private": "https://drive.google.com/drive/folders/1tPCSq-Yc4BFwWVDroVr_AcLKCwn9JaH5",
@@ -1295,14 +1375,6 @@
     "private": "https://drive.google.com/drive/folders/1ry2wlud4BnwZPyQ4zN1ZI-3vmL9_bF8u",
     "public": null
   },
-  "anthropology-roots": {
-    "private": "https://drive.google.com/drive/folders/1RPg9QtSOo-p35E1N7LpojHtYDuEVI4Xv",
-    "public": null
-  },
-  "medicine-roots": {
-    "private": "https://drive.google.com/drive/folders/1rliaWr5OJrS3WBdfNjrFXQKp7YBa-rRT",
-    "public": null
-  },
   "hokkaido": {
     "private": "https://drive.google.com/drive/folders/1XBW6S-n5lJBNYmzGF_GqG7wfVDT1tqFd",
     "public": ""
@@ -1313,6 +1385,10 @@
   },
   "huayan": {
     "private": "https://drive.google.com/drive/folders/1yzQvoB029UPqY005yJCuEcuISz0GhrdI",
+    "public": ""
+  },
+  "humanitarianism": {
+    "private": "https://drive.google.com/drive/folders/1bNr6ii_PrW3wLIQw4NNAlPdp9dvfLIf8",
     "public": ""
   },
   "humor": {
@@ -1347,12 +1423,24 @@
     "private": "https://drive.google.com/drive/folders/1z9R5QK0SO5nfO2McJcKwUzSV4XL_3yaD",
     "public": "https://drive.google.com/drive/folders/1RgKGrpNPCRCLOsrm88x54H23NAtMBtBm"
   },
+  "imagination": {
+    "private": "https://drive.google.com/drive/folders/1JZAXKh6mej9RVMqbEAjqF_Tqq7ahhDm_",
+    "public": ""
+  },
   "imperial-japan": {
     "private": "https://drive.google.com/drive/folders/16M-s7PAsvK9L_vMSEg9K4ir19rcjnLAc",
     "public": null
   },
   "imperial-showa": {
     "private": "https://drive.google.com/drive/folders/1delBD2JjIcUjgv98XGyc_uZ-p-Ue4kgV",
+    "public": ""
+  },
+  "imperialism": {
+    "private": "https://drive.google.com/drive/folders/1DC7d2363zvRpXG1Rt2KKKtsuIGA694Wu",
+    "public": ""
+  },
+  "impressionism": {
+    "private": "https://drive.google.com/drive/folders/1AK4Hw0r11eEIcfnFgLF8XhF7aE3N2mJf",
     "public": ""
   },
   "inca": {
@@ -1451,6 +1539,10 @@
     "private": "https://drive.google.com/drive/folders/1uzfJofGpv5zNEX9i8jabjZv6p_tbnDck",
     "public": null
   },
+  "international-law": {
+    "private": "https://drive.google.com/drive/folders/179ClrNb9mefrS2eXQ8sY_x_PFuJxGgPR",
+    "public": ""
+  },
   "international-relations": {
     "private": "https://drive.google.com/drive/folders/1QmTsPRY6KvDnVWu5SBbBbAPxHrgFQhfv",
     "public": ""
@@ -1491,9 +1583,17 @@
     "private": "https://drive.google.com/drive/folders/117vkalh_jjWfiCwUhYnZjJtB0Vv2miqw",
     "public": ""
   },
+  "islamic-law": {
+    "private": "https://drive.google.com/drive/folders/1hvKYFdk7ic6JvAlpWDB6twedne7b1zhb",
+    "public": ""
+  },
   "israel": {
     "private": "https://drive.google.com/drive/folders/1cFWd79GABWqKdvom184oXUy1lB5_BjzI",
     "public": null
+  },
+  "italian-language": {
+    "private": "https://drive.google.com/drive/folders/1fyaAMASbpgUVtJHLICiVXI8Hn0aYMAsI",
+    "public": ""
   },
   "italy": {
     "private": "https://drive.google.com/drive/folders/1pNOZfH3DheSombqwyZ9lZQwVoxYaccU7",
@@ -1547,8 +1647,16 @@
     "private": "https://drive.google.com/drive/folders/1JVIHu8QHwqi_oczGQ2gpAHNw2IMBzOMc",
     "public": "https://drive.google.com/drive/folders/1xffU21h2DK8OpAPjpgpbrXd6_MpsIdfG"
   },
+  "javanese-bart": {
+    "private": "https://drive.google.com/drive/folders/1NG_Fc5y-g0So9AOpbxEYCjPd2cGJqJeH",
+    "public": ""
+  },
   "jewbus": {
     "private": "https://drive.google.com/drive/folders/1Xs_zLlZtxzOhFpSNNvJCR6b2i966ULHv",
+    "public": ""
+  },
+  "jewelry": {
+    "private": "https://drive.google.com/drive/folders/1OCi-B6Nx2poAQvZFD9vX6MEn7Ql-TO2z",
     "public": ""
   },
   "jewish-education": {
@@ -1767,6 +1875,10 @@
     "private": "https://drive.google.com/drive/folders/1XC2dUiiDxg30rlJjsu_bTm1XCTfxb6D6",
     "public": null
   },
+  "lzh-dg-vi": {
+    "private": "https://drive.google.com/drive/folders/12rSl6_KWfqyHn3mQwSik7bXvoYHLhkvt",
+    "public": ""
+  },
   "ma": {
     "private": null,
     "public": "https://drive.google.com/drive/folders/1v5OmozON-u2nVX90liNgyGydtKzH2xjV"
@@ -1859,6 +1971,10 @@
     "private": "https://drive.google.com/drive/folders/1zJATsHxN1yv3HBB_bVEu0e41RClt72m3",
     "public": ""
   },
+  "martial-arts": {
+    "private": "https://drive.google.com/drive/folders/1TufTuC7YJllDXKoQ7Fvl33XXtoDhbwLH",
+    "public": ""
+  },
   "mass-media": {
     "private": "https://drive.google.com/drive/folders/139k-zlXhiM5xlh-TYslBh8vRZlm2gIRR",
     "public": null
@@ -1883,6 +1999,10 @@
     "private": "https://drive.google.com/drive/folders/1ANE5BCMJGYzqlBoJvVtyQZ5WJ-7nzmW6",
     "public": ""
   },
+  "matsu-islands": {
+    "private": "https://drive.google.com/drive/folders/1ksiFVnQMdI5bbaiOo63c1UKqImVsocNF",
+    "public": ""
+  },
   "meat": {
     "private": "https://drive.google.com/drive/folders/15vaxxqqQQD9wvJ0m5Z4HOnGqmVOtnxHK",
     "public": null
@@ -1895,12 +2015,20 @@
     "private": "https://drive.google.com/drive/folders/1QPTxEcxbSUo7ci3jPsLuRYupXZk_1ud3",
     "public": null
   },
+  "medicine-roots": {
+    "private": "https://drive.google.com/drive/folders/1rliaWr5OJrS3WBdfNjrFXQKp7YBa-rRT",
+    "public": null
+  },
   "medieval": {
     "private": "https://drive.google.com/drive/folders/1UVDUh15fpwwKBLJ1SQ4aSvu1tsBMl_E2",
     "public": "https://drive.google.com/drive/folders/1TPDK2YZ7hoYpTV50VQMpomzRZes-_Lj9"
   },
   "medieval-inner-asia": {
     "private": "https://drive.google.com/drive/folders/1Om9PH8vTv0qQuzVQksrmlqsbrL_cZ0BO",
+    "public": ""
+  },
+  "medieval-near-east": {
+    "private": "https://drive.google.com/drive/folders/1pT2-Zp9UBx-wHGmerCplM7gIUikBcHHd",
     "public": ""
   },
   "meditation": {
@@ -1957,6 +2085,10 @@
   },
   "middle-english-language": {
     "private": "https://drive.google.com/drive/folders/1aFVI1aJKZ3rnoGYqdjuOrEJ6n5z8_6AW",
+    "public": ""
+  },
+  "middle-kingdom": {
+    "private": "https://drive.google.com/drive/folders/1E9SsAj9ATOBDUlqIsKvA3KrNZYpVmUpj",
     "public": ""
   },
   "midwest": {
@@ -2123,6 +2255,10 @@
     "private": "https://drive.google.com/drive/folders/1FuO7ihpLfOG7S0hJES3uMZe9UKM7XNSv",
     "public": "https://drive.google.com/drive/folders/1Df4jtJCGwCjZM7qzpFjWPXINggf4sk2c"
   },
+  "music-recording": {
+    "private": "https://drive.google.com/drive/folders/1JkHlx-ntLmUkozkSh4lfqdpZceWsmdBe",
+    "public": ""
+  },
   "musicology": {
     "private": "https://drive.google.com/drive/folders/1TXUrWlPpq_Z8NdEWIqlfe3Oo0JXwzg4l",
     "public": ""
@@ -2133,6 +2269,10 @@
   },
   "na-uyana": {
     "private": "https://drive.google.com/drive/folders/1wfiLaoaoLb3g9MPTqqVDM1hknuz58_7G",
+    "public": ""
+  },
+  "napoleon": {
+    "private": "https://drive.google.com/drive/folders/1vkHGC3oKZgK2hv5zMpA0HndgX6oyCX28",
     "public": ""
   },
   "nara": {
@@ -2191,6 +2331,10 @@
     "private": "https://drive.google.com/drive/folders/13AI3uh-9B-X2L4KuucVsuaCLOCIgSw5_",
     "public": ""
   },
+  "new-kingdom": {
+    "private": "https://drive.google.com/drive/folders/11-667XqgAdjGib5ZCBgzVtMlvLTdGfJ8",
+    "public": ""
+  },
   "new-york": {
     "private": "https://drive.google.com/drive/folders/1kPzjMSoxom1ux6KbSA_o_4nzakA_yUiG",
     "public": null
@@ -2226,6 +2370,10 @@
   "north-america": {
     "private": "https://drive.google.com/drive/folders/1leQL5mqNwu8AXsexBwt2zmusubWx4eFK",
     "public": null
+  },
+  "north-korea": {
+    "private": "https://drive.google.com/drive/folders/1lLROPBXQrU12lGXzuzowKCJULzhs-j9z",
+    "public": ""
   },
   "north-thailand": {
     "private": "https://drive.google.com/drive/folders/1owYYyXogOuuCNEQlTMkWePYlv2EzjbQZ",
@@ -2287,6 +2435,10 @@
     "private": "https://drive.google.com/drive/folders/1ZFvSgSxu_JC4muW9Y4DuU8Syp6ziB0KB",
     "public": ""
   },
+  "old-kingdom": {
+    "private": "https://drive.google.com/drive/folders/1WtIdVpz8uFPHq8gKkmD97CTnOZDcZjan",
+    "public": ""
+  },
   "old-norse-language": {
     "private": "https://drive.google.com/drive/folders/1_W6VUXtepr8BMkQtddVP4q-ASikR_TuP",
     "public": ""
@@ -2326,6 +2478,10 @@
   "pacific": {
     "private": "https://drive.google.com/drive/folders/1cWrNRmGxDNRObxKgHX_tr8UHX5MJ-qyH",
     "public": null
+  },
+  "painting": {
+    "private": "https://drive.google.com/drive/folders/1oxC2HaPSWY6b-0D23nrh_VYZehFQuSfR",
+    "public": ""
   },
   "pakistan": {
     "private": "https://drive.google.com/drive/folders/1tnlt1TpTZkKEzIH14yicAycFtxQI07mj",
@@ -2387,9 +2543,17 @@
     "private": "https://drive.google.com/drive/folders/1W-212YjuR9wjPH7IbfiYPvcptbXx1l5g",
     "public": ""
   },
+  "particle-accelerators": {
+    "private": "https://drive.google.com/drive/folders/1WDuHHUqHr2NZIXuqzbhTOgSTgHSbxWaL",
+    "public": ""
+  },
   "past": {
     "private": "https://drive.google.com/drive/folders/1cCSE6UZze9m5Mm_FEVDD55rDEkvpVPpo",
     "public": "https://drive.google.com/drive/folders/10RZngOdScFDj6-YFSN34Ka_fJqlAQOuh"
+  },
+  "patent-law": {
+    "private": "https://drive.google.com/drive/folders/1GH7PH9skDF_1SenMDKq50sKLhs4ZBXWW",
+    "public": ""
   },
   "path": {
     "private": "https://drive.google.com/drive/folders/1nLjeTw1IjI0s8fUZPLmIrXx4_hLF-U9b",
@@ -2510,6 +2674,10 @@
   "pr": {
     "private": "https://drive.google.com/drive/folders/1JwUbhqA5gHx5XiW_Xii3wE-x9u9MkjwX",
     "public": null
+  },
+  "pragmatics": {
+    "private": "https://drive.google.com/drive/folders/1z6BfP8NRkD3jL_qRT3s0zYee_dx9mwDo",
+    "public": ""
   },
   "prakrit": {
     "private": "https://drive.google.com/drive/folders/1ZMFoqmb3IwoJ6sMmIyj_1RR7yDZ3w69s",
@@ -2687,6 +2855,10 @@
     "private": "https://drive.google.com/drive/folders/15xCSZwuiL2E63KTuvKxKFVtrXyMnZ4dL",
     "public": ""
   },
+  "romanticism": {
+    "private": "https://drive.google.com/drive/folders/1y2hlP4SIgS_3MZGlhY6cIwpYQmoGTroX",
+    "public": ""
+  },
   "root": {
     "private": "https://drive.google.com/drive/folders/1ubJJ_ujFjpEfzAeuAo6N3-BByCmsFF2B",
     "public": "https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv"
@@ -2847,6 +3019,10 @@
     "private": "https://drive.google.com/drive/folders/1NAHnU1MDK3l1_URvyOkFBdj4Tzyd-lUq",
     "public": ""
   },
+  "sierra-leone": {
+    "private": "https://drive.google.com/drive/folders/1OEk9Me7BvyQ9i8MyjdNY9ua-99U0diAf",
+    "public": ""
+  },
   "silicon-valley": {
     "private": "https://drive.google.com/drive/folders/1eZ-p05Kv_8RaLXJVG0pZg3nwHfLEfshu",
     "public": null
@@ -2867,6 +3043,10 @@
     "private": "https://drive.google.com/drive/folders/1d7lCaZmbNnyCUEd7E2KsWJgDotAb7Wkx",
     "public": ""
   },
+  "six-dynasties": {
+    "private": "https://drive.google.com/drive/folders/15LD2hAz3gDYYW0Qh8sU2tXJcvuMlE8bm",
+    "public": ""
+  },
   "slavery": {
     "private": "https://drive.google.com/drive/folders/1Ea_1nBaH9o5pkiJEQ4euVm-JYg1_raqV",
     "public": ""
@@ -2882,6 +3062,10 @@
   "slovenia": {
     "private": "https://drive.google.com/drive/folders/1RrJJIO21bgYOaj5ij0XEGsjQsvvs0G87",
     "public": null
+  },
+  "small-group-communication": {
+    "private": "https://drive.google.com/drive/folders/15SSft68VKHCVAb4LjhLx8WPYrVCUGUF_",
+    "public": ""
   },
   "sn": {
     "private": "https://drive.google.com/drive/folders/1WeMgJHVtXzn0aCTmFR5aGyfWjnCCegH7",
@@ -2961,6 +3145,10 @@
   },
   "south-india": {
     "private": "https://drive.google.com/drive/folders/1nkNPBouGOKQ9UrGkfno4UgvtWbfJeLeP",
+    "public": ""
+  },
+  "south-sudan": {
+    "private": "https://drive.google.com/drive/folders/14nIkt36PiHmFaOiboZM-q4k-BORFBEMF",
     "public": ""
   },
   "south-thailand": {
@@ -3046,6 +3234,10 @@
   "stats": {
     "private": "https://drive.google.com/drive/folders/1HwfyNwCVi6OM5AnWJfk2sxPLOBQoEz2g",
     "public": null
+  },
+  "study-skills": {
+    "private": "https://drive.google.com/drive/folders/1PqYfeTKLkSEU3zJZPhVD-f73b1yE-C5y",
+    "public": ""
   },
   "sukhothai": {
     "private": "https://drive.google.com/drive/folders/1RX4Tw5Za5KqZ9DxGayPyE6UtjUavBCkb",
@@ -3139,6 +3331,10 @@
     "private": "https://drive.google.com/drive/folders/1_ArS61BCvishnceVA1DB6Ib06gTsuvP4",
     "public": null
   },
+  "tara": {
+    "private": "https://drive.google.com/drive/folders/1nr2gtDx2b4qZf74-HyicilGuuk_HVkrw",
+    "public": ""
+  },
   "taste": {
     "private": "https://drive.google.com/drive/folders/1eesgJQJWQNZ8T-ADaMtaz69mVH1UfLyS",
     "public": ""
@@ -3227,6 +3423,10 @@
     "private": "https://drive.google.com/drive/folders/112OZqzSkA_7xVUbNxox4JK5eS1BzsGmA",
     "public": ""
   },
+  "the-vatican": {
+    "private": "https://drive.google.com/drive/folders/16TRgyRCI3pG6tT0t5B9lDEWAuiD-zZsA",
+    "public": ""
+  },
   "the-west": {
     "private": "https://drive.google.com/drive/folders/15IiTFDxpoOrn9PydeJEI1niFbVTkZQP8",
     "public": null
@@ -3279,6 +3479,10 @@
     "private": "https://drive.google.com/drive/folders/1cPDouWzq8wMMimXgH-7PZHJ9egNrnY71",
     "public": null
   },
+  "tibetan-hinduism": {
+    "private": "https://drive.google.com/drive/folders/1E86q_Q3gwcFXx156-bqEDx6bnrP5wvk0",
+    "public": ""
+  },
   "tibetan-language": {
     "private": "https://drive.google.com/drive/folders/13XZkcgka9TRVNGNJWkJfVPuopwdW-YQ9",
     "public": null
@@ -3298,6 +3502,10 @@
   "time": {
     "private": "https://drive.google.com/drive/folders/1GZUn7ojRTttZNFsXQaNu6BU59Iqsgek8",
     "public": "https://drive.google.com/drive/folders/1v6e5HYs2fxCzk1oXC0IzqZEfZL0t-b8s"
+  },
+  "tnh": {
+    "private": "https://drive.google.com/drive/folders/10i9A5O60oMsU-QXhfSWb2I77_se7pcO8",
+    "public": ""
   },
   "to-go-through": {
     "private": "https://drive.google.com/drive/folders/1PXmhvbReaRdcuMdSTuiHuWqoxx-CqRa2",
@@ -3327,8 +3535,16 @@
     "private": "https://drive.google.com/drive/folders/1cJEAL7G0kRxXuyjfp9xlB7KoqjM-Ehya",
     "public": ""
   },
+  "trademark-law": {
+    "private": "https://drive.google.com/drive/folders/1Hy_no-AnNDVqfVYhQ8UoVrTzyXgh637N",
+    "public": ""
+  },
   "translation": {
     "private": "https://drive.google.com/drive/folders/1ubb2Ri_WL8xUdqZ4IiIxB8tYrpe4GqWi",
+    "public": ""
+  },
+  "trauma": {
+    "private": "https://drive.google.com/drive/folders/10s3g2mUOcjPuP8DvxqOEIva8lk6Z_xSy",
     "public": ""
   },
   "tunisia": {
@@ -3399,8 +3615,20 @@
     "private": "https://drive.google.com/drive/folders/1DtmMTQJnT9pnjRhNEDQVlZD9cguc0w8q",
     "public": ""
   },
+  "van-gogh": {
+    "private": "https://drive.google.com/drive/folders/1_2ySj-aeMfftRIP9_u28s82hAPRJB--r",
+    "public": ""
+  },
+  "venezuela": {
+    "private": "https://drive.google.com/drive/folders/1ePtKE6UxNfggCqaHNOVrKlIseUS5p-wO",
+    "public": ""
+  },
   "venice": {
     "private": "https://drive.google.com/drive/folders/1BByVlzwFCR5kOYjXmJQsmuMyFZNVsH3G",
+    "public": ""
+  },
+  "victorian-britain": {
+    "private": "https://drive.google.com/drive/folders/1x29GT2vyBWIqKUy0JZ-KxQ7ZTY0PRvKs",
     "public": ""
   },
   "video-games": {
@@ -3561,6 +3789,10 @@
   },
   "zimbabwe": {
     "private": "https://drive.google.com/drive/folders/1V19XNk5jDBnbtVRL8ECAXwvlY35gSs-X",
+    "public": ""
+  },
+  "zoroastrianism": {
+    "private": "https://drive.google.com/drive/folders/1eEgrO2Cpn5BJO7cLBaXPfVY3Y89cYR6s",
     "public": ""
   }
 }
