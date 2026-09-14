@@ -12,6 +12,9 @@ from functools import cache
 import gc
 from itertools import chain
 from textwrap import dedent
+import time
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
+from executils import reclaim_memory
 
 import numpy as np
 from numpy.typing import ArrayLike
@@ -790,11 +793,13 @@ class OBUTopicClassifier:
         min_points: int = 50, # tags with less than this many data points will be filtered out
         max_depth: int = 10, # tags at this level will be considered leaf nodes
         base_classifier: BaseEstimator = None,
+        max_workers: int = 4,
     ) -> None:
         self.data_sources = data_sources
         self.min_points = min_points
         self.min_df = min_df
         self.max_depth = max_depth
+        self.max_workers = max_workers
         # Two Main options for Classifier here: Logit or SVMs
         # for LogisticRegression, just set (max_iter=300) and keep the rest default
         # solver='saga' penalty='elasticnet' l1_ratio=0.5 performed slightly better in CV
@@ -806,25 +811,48 @@ class OBUTopicClassifier:
             dual='auto', # suppress annoying warning hehe
         )
     
-    def train(self):
+    def train(self, max_workers: int | None = None):
         """The big main function"""
+        workers = max_workers or self.max_workers
         # Honestly, if I were coding this again, I'd do this differently
         # and have a X_raw cache for a set of DataSources as it's fairly common
         # to train two different models on the same set of Sources, but oh well
         self._load_data()
         self._count_words() 
+        self._prepare_training_index()
+
         to_train = [('root', 0)] # (slug, level)
+        scheduled = set(['root'])
         self.classifiers_ = dict()
-        while len(to_train) > 0:
-            slug, cur_level = to_train.pop()
-            if slug in self.classifiers_:
-                continue
-            if cur_level < self.max_depth:
-                classifier = self.train_node(slug)
-            else:
-                classifier = tag_predictor.ZeroLearningClassifier(label=slug)
-            self.classifiers_[slug] = classifier
-            to_train.extend([(child_slug, cur_level+1) for child_slug in classifier.classes_])
+
+        print(f"Training node classifiers across {workers} worker threads...")
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            active_futures = {} # Future -> (slug, cur_level)
+
+            while to_train or active_futures:
+                # Dispatch pending tasks
+                while to_train:
+                    slug, cur_level = to_train.pop(0) # FIFO queue order (breadth-first)
+                    if slug in self.classifiers_:
+                        continue
+                    if cur_level >= self.max_depth:
+                        self.classifiers_[slug] = tag_predictor.ZeroLearningClassifier(label=slug)
+                        continue
+
+                    future = executor.submit(self.train_node, slug)
+                    active_futures[future] = (slug, cur_level)
+
+                if active_futures:
+                    done, _ = wait(active_futures.keys(), return_when=FIRST_COMPLETED)
+                    for future in done:
+                        slug, cur_level = active_futures.pop(future)
+                        classifier = future.result()
+                        self.classifiers_[slug] = classifier
+                        for child_slug in classifier.classes_:
+                            if child_slug not in self.classifiers_ and child_slug not in scheduled:
+                                scheduled.add(child_slug)
+                                to_train.append((child_slug, cur_level + 1))
+
         return self
 
     def _load_data(self):
@@ -860,37 +888,41 @@ class OBUTopicClassifier:
         for i, dp in enumerate(self.all_the_data_):
             dp.set_training_rows(title_row=2 * i, content_row=2 * i + 1, indptr=indptr)
             dp.free_raw_text()
-        gc.collect()
+        reclaim_memory()
 
-    def _training_data_from_datapoints(
-        self,
-        data_points,
-    ) -> tuple[list[int], list[float]]:
-        """Returns (row_indices, sample_weights) from a list of DataPoints"""
+    def _prepare_training_index(self):
+        print("Indexing training rows by tag and freeing raw datapoints to reclaim RAM...")
+        self.tag_rows_ = defaultdict(list)
+        self.tag_weights_ = defaultdict(list)
+        for dp in self.all_the_data_:
+            t = dp.get_tag()
+            for r, w in dp.training_rows:
+                self.tag_rows_[t].append(r)
+                self.tag_weights_[t].append(w)
+
+        # Free all DataPoint objects from Python heap and trim RAM
+        del self.all_the_data_
+        reclaim_memory()
+
+    def _get_training_data_for_tags(self, tags: set[str]) -> tuple[list[int], list[float]]:
+        """Returns (row_indices, sample_weights) for a set of tags from the precomputed index"""
         rows = []
         w = []
-        for datapoint in data_points:
-            for row_idx, weight in datapoint.training_rows:
-                rows.append(row_idx)
-                w.append(weight)
+        for t in tags:
+            if t in self.tag_rows_:
+                rows.extend(self.tag_rows_[t])
+                w.extend(self.tag_weights_[t])
         return (rows, w)
 
     def train_node(self, tag:str) -> BaseEstimator:
-        print(f"Training '{tag}' classifier...")
-        from yaspin import yaspin
-        spr = yaspin(text="Building training job...")
-        spr.start()
+        print(f"[{tag}] Building training job...")
         relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
-        row_indices, w = self._training_data_from_datapoints(
-            (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
-        )
+        row_indices, w = self._get_training_data_for_tags(relevant_tags)
         y = [tag] * len(w)
         child_count = 0
         for child in self.drive_map[tag]['children']:
             relevant_tags = set([child] + self.drive_map[child]['descendants'])
-            child_rows, child_w = self._training_data_from_datapoints(
-                (dp for dp in self.all_the_data_ if dp.get_tag() in relevant_tags)
-            )
+            child_rows, child_w = self._get_training_data_for_tags(relevant_tags)
             row_indices.extend(child_rows)
             w.extend(child_w)
             if len(child_w) >= self.min_points:
@@ -905,19 +937,14 @@ class OBUTopicClassifier:
                 for_node=tag,
             )
         else:
-            spr.text = "Nothing to learn"
-            spr.ok("✅")
+            print(f"[{tag}] Nothing to learn (leaf node)")
             return tag_predictor.ZeroLearningClassifier(label=tag)
         X = self.X_raw_[row_indices]
-        spr.text = "Training job built"
-        spr.ok("✅")
-        del spr
-        with yaspin(text=f"Training '{tag}' classifier...", timer=True) as spnr:
-            # Takes about 2 mins each for the large classifiers
-            # and just a few seconds for the small ones
-            ret = node_classifier.fit(X, y, sample_weight=w)
-            spnr.text = "Classifier trained"
-            spnr.ok("✅")
+        print(f"[{tag}] Training classifier on {len(y)} samples ({child_count} child classes)...")
+        start_time = time.time()
+        ret = node_classifier.fit(X, y, sample_weight=w)
+        elapsed = time.time() - start_time
+        print(f"[{tag}] ✅ Classifier trained in {elapsed:.1f}s")
         if DEBUG_TERM:
             import numpy as np
             idx = self.vectorizer_.vocabulary_.get(DEBUG_TERM)
@@ -1073,12 +1100,20 @@ if __name__ == "__main__":
         action='store_true',
         help="Will use the YT Data as a test set instead of as a training set.",
     )
+    argument_parser.add_argument(
+        '--max-workers', '-w',
+        dest='max_workers',
+        type=int,
+        default=4,
+        help="Number of worker threads to train node classifiers in parallel",
+    )
     args = argument_parser.parse_args()
     data_sources: list[DataSource] = [WebsiteDataSource(), GoogleDriveFilesDataSource()]
     if not args.no_yt_data:
         data_sources.append(YouTubeDataSource())
     classifier = OBUTopicClassifier(
         data_sources=data_sources,
+        max_workers=args.max_workers,
     )
     classifier.train()
     MODELS_DIRECTORY.mkdir(exist_ok=True)

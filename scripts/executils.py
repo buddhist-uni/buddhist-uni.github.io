@@ -181,3 +181,24 @@ class ThreadSafeSet(MutableSet):
   def __repr__(self):
     with self._lock:
       return f"{self.__class__.__name__}({self._set!r})"
+
+def reclaim_memory() -> bool:
+    """Run Python garbage collection and trim unused glibc memory back to the OS.
+
+    Python uses glibc's memory allocator (ptmalloc). When large numbers of objects
+    (such as raw text strings or bulky data structures) are allocated and freed,
+    glibc often retains the memory arenas in the process's heap rather than
+    returning them to the operating system kernel.
+
+    Calling malloc_trim(0) forces glibc to release all freed top-of-heap and arena
+    memory back to the OS, immediately reducing the process's Resident Set Size (RSS).
+    """
+    import gc
+    gc.collect()
+    try:
+        import ctypes
+        ctypes.CDLL('libc.so.6').malloc_trim(0)
+        return True
+    except Exception:
+        return False
+
