@@ -29,6 +29,7 @@ with yaspin(text="Loading..."):
     save_normalized_text,
   )
   from pdfutils import readpdf
+  from executils import graceful_threadmap
 
   LINK_SAVER = "LibraryUtils.LinkSaver"
   PDF_SAVER = "LibraryUtils.BulkPDFImporter"
@@ -266,7 +267,7 @@ class GDocURLImporter(BulkItemImporter):
         nonlocal moves
         with moves_lock:
           moves += 1
-    tqdm_thread_map(maybe_move_doc, items, max_workers=8)
+    graceful_threadmap(maybe_move_doc, items, max_workers=8)
     print(f"  Moved {moves}/{len(items)} docs to new folders")
     return moves
 
@@ -575,7 +576,7 @@ class BulkYouTubeVideoImporter(GDocURLImporter):
     snippets = get_ytdata_for_ids(vid_ids)
     self._add_folder_to_snippets(snippets)
     print("Creating GDocs for Videos...")
-    tqdm_thread_map(create_gdoc_for_yt_snippet, snippets, max_workers=8)
+    graceful_threadmap(create_gdoc_for_yt_snippet, snippets, max_workers=8)
 
 ITEM_IMPORTERS: list[tuple[str, GDocURLImporter]] = [
   ('YouTube Videos', BulkYouTubeVideoImporter()),
@@ -611,7 +612,7 @@ def import_items(items: list[str], pdf_type=None):
         print(f"Batch {j+1}->{j+50} of {len(items)} {k}...")
         IMPORTERS[k].import_items(items[j:j+50])
 
-def get_all_predictable_unread_folders(predictable_classes: list[str]) -> tuple[dict[str, str], dict[str, str]]:
+def get_all_predictable_unread_folders(predictable_classes: list[str]|None=None) -> tuple[dict[str, str], dict[str, str]]:
   unread_id_to_course_name_map = dict()
   course_name_to_unread_id_map = dict()
   if not predictable_classes:
@@ -725,7 +726,7 @@ def resort_existing_pdfs_of_type(pdf_type: str):
   print("Fetching their texts...")
   import joblib
   from train_tag_predictor import save_pdf_text_for_drive_file, NORMALIZED_TEXT_FOLDER
-  tqdm_thread_map(
+  graceful_threadmap(
     save_pdf_text_for_drive_file,
     drive_files_to_reconsider,
     max_workers=4,
@@ -734,27 +735,28 @@ def resort_existing_pdfs_of_type(pdf_type: str):
   # Sort them into courses
   # and move the ones that need to be moved
   print("Resorting...")
-  pbar = tqdm(drive_files_to_reconsider)
-  for drive_file in pbar:
+  folder_lock = threading.Lock()
+  def _resort_one_pdf(drive_file):
     normalized_text_file = NORMALIZED_TEXT_FOLDER.joinpath(f"{drive_file['id']}.pkl")
     assert normalized_text_file.exists(), f"Couldn't find the normalized text for {gdrive.DRIVE_LINK.format(drive_file['id'])}"
     normalized_text = joblib.load(normalized_text_file)
     new_course = course_predictor.predict([
       normalized_text + normalize_text((' '+drive_file['name'][:-4]) * 3)
     ], normalized=True)[0]
-    new_folder = get_or_create_autopdf_folder_for_course(
-      new_course,
-      folder_name,
-      course_to_autopdf_folder,
-      course_name_to_unread_id_map,
-      unread_id_to_course_name_map,
-      autopdf_folder_to_course,
-    )
-    old_folder = drive_file['parents'][0]
-    old_course = autopdf_folder_to_course[old_folder]
+    with folder_lock:
+      new_folder = get_or_create_autopdf_folder_for_course(
+        new_course,
+        folder_name,
+        course_to_autopdf_folder,
+        course_name_to_unread_id_map,
+        unread_id_to_course_name_map,
+        autopdf_folder_to_course,
+      )
+      old_folder = drive_file['parents'][0]
+      old_course = autopdf_folder_to_course[old_folder]
     if old_folder != new_folder:
-      pbar.write(f"\"{drive_file['name']}\"")
-      pbar.write(f"  {old_course}  \t->  {new_course}")
+      tqdm.write(f"\"{drive_file['name']}\"")
+      tqdm.write(f"  {old_course}  \t->  {new_course}")
       gdrive.log_move_reason(
         drive_file['id'],
         old_parent_id=drive_file['parents'][0],
@@ -767,6 +769,7 @@ def resort_existing_pdfs_of_type(pdf_type: str):
         drive_file['parents'],
         verbose=False,
       )
+  graceful_threadmap(_resort_one_pdf, drive_files_to_reconsider, max_workers=8)
 
 if __name__ == "__main__":
   argparser = argparse.ArgumentParser(
