@@ -19,7 +19,7 @@ pages: 380
 
 > Far from being a literary work of art, the *Mahāvastu* is rather a labyrinth in which we can only with an effort discover the thread of a coherent account of the life of the Buddha. This account is constantly interrupted by other material, specially by the numerous Jātakas and Avadānas and also by dogmatic Sūtras. We find no order.
 
-A seminal work in its day, Nariman here synthesized the previous few decades of work by Buddhologists to make sense of the history of Mahāyāna Buddhism through its texts.
+A seminal work in its day, Nariman here synthesized the previous few decades of work by Buddhologists to make sense of the emergence of Mahāyāna Buddhism through its texts.
 The book provides an important snapshot of what the field of Anglophone Buddhist Studies looked like in the early 20th century,
 and while it is dated in both content and style, it remains a reasonable introduction to its subject more than a century later.
 
