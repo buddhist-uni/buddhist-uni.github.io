@@ -14,6 +14,6 @@ test('big content table loads', async ({ page, isMobile }) => {
   } else {
     await expect(row.locator('td').nth(2)).toHaveText("1956");
     const dlColText = await row.locator('td').nth(7).textContent();
-    expect(parseInt(dlColText || "0")).toBeGreaterThan(500);
+    expect(parseInt(dlColText || "0"), "content table failed to load the download counts").toBeGreaterThan(500);
   }
 });

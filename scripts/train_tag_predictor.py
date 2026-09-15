@@ -58,8 +58,12 @@ from tag_predictor import (
 
 disk_memorizor = joblib.Memory(DATA_DIRECTORY.joinpath('.cache'))
 
+# Set this debug term to investigate how it gets used as a feature throughout our training pipeline
 DEBUG_TERM = '' # always give the post-normalization (stemmed) form
-DEBUG_TERM_DATA_POINTS = []
+DEBUG_TERM_DATA_POINTS = [] # can be inspected in your ipdb session below
+if DEBUG_TERM:
+  # pyrefly: ignore [missing-import]
+  import ipdb
 
 DRIVE_FOLDERS = gdrive.FOLDERS_DATA()
 PUBLIC_FOLDER_FOR_PRIVATE = {
@@ -107,6 +111,7 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
             continue
         name = subfolder['name']
         if 'unread' in name.lower() or 'archive' in name.lower() or subfolder['id'] in ORGANIZATIONAL_SUBFOLDERS:
+            assert subfolder['id'] not in SLUG_FOR_PRIVATE_FOLDERID, f"Please remove {SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']]} folder {subfolder['id']} from {ORGANIZATIONAL_SUBFOLDERS_FILE}"
             ret[slug].append(subfolder['id'])
             continue
         if subfolder['id'] not in SLUG_FOR_PRIVATE_FOLDERID:
@@ -814,9 +819,8 @@ class OBUTopicClassifier:
     def train(self, max_workers: int | None = None):
         """The big main function"""
         workers = max_workers or self.max_workers
-        # Honestly, if I were coding this again, I'd do this differently
-        # and have a X_raw cache for a set of DataSources as it's fairly common
-        # to train two different models on the same set of Sources, but oh well
+        if workers < 1 or DEBUG_TERM:
+          workers = 1
         self._load_data()
         self._count_words() 
         self._prepare_training_index()
@@ -836,6 +840,7 @@ class OBUTopicClassifier:
                     if slug in self.classifiers_:
                         continue
                     if cur_level >= self.max_depth:
+                        print(f"WARNING: Considering {slug} a leaf node due to depth level {cur_level}")
                         self.classifiers_[slug] = tag_predictor.ZeroLearningClassifier(label=slug)
                         continue
 
@@ -867,12 +872,6 @@ class OBUTopicClassifier:
         print("Counting all the words across the entire dataset...")
         X_raw = []
         for datapoint in self.all_the_data_:
-            # Need to append even empty titles and content
-            # so that the vectorizer below knows how to
-            # stitch together the raw strings with their vectors
-            # empty training points are filtered out below
-            # in _training_data_from_datapoints by the
-            # `if title.nnz > 0` condition :)
             X_raw.append(datapoint.get_normalized_title())
             X_raw.append(datapoint.get_normalized_content())
         shape = len(X_raw)
@@ -967,8 +966,6 @@ class OBUTopicClassifier:
                     print(f"  Associated '{DEBUG_TERM}' with {clsfy.classes_[i]} at coef = {clsfy.coef_[i][t_idx]}")
             else:
                 print(f"  The sparse feature selector dropped '{DEBUG_TERM}'")
-            # pyrefly: ignore [missing-import]
-            import ipdb
             ipdb.set_trace()
         return ret
 
