@@ -1,5 +1,9 @@
 User-agent: *
-Crawl-delay: 1
+Crawl-delay: 1.3
+Disallow: /*.download_count
+Allow: /*.css?u=*
+Disallow: /*?*
+Allow: /
 
 User-agent: Amazonbot
 Disallow: /
