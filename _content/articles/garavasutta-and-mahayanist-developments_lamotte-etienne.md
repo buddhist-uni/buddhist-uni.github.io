@@ -7,16 +7,16 @@ journal: jpts
 year: 1981
 volume: 9
 pages: "127--144"
-formats: [pdf]
-drive_links: ["https://drive.google.com/file/d/1BPEJO614qIwy5qx-IDToqpkoBxU8z4IR/view?usp=drivesdk"]
+drive_links:
+  - "https://drive.google.com/file/d/1BPEJO614qIwy5qx-IDToqpkoBxU8z4IR/view?usp=drivesdk"
 course: mahayana-roots
 tags:
-  - nibbana
-  - buddha
-  - emptiness
+  - origination
+  - prajnaparamita
+  - sn
 publisher: pts
 ---
 
-> This small Sutta deals with the veneration in which the Buddha held the Dharma, the doctrine which he had discovered on the night of his enlightenment and which he had chosen as his teacher. This text throws some light on the nature of the Buddha and the Dharma as they were conceived by the first Buddhists.
+> [This small Sutta (SN 6.2)](/content/canon/sn6.2) deals with the veneration in which the Buddha held the Dharma, the doctrine which he had discovered on the night of his enlightenment and which he had chosen as his teacher. This text throws some light on the nature of the Buddha and the Dharma as they were conceived by the first Buddhists.
 
-On the five pure and impure *Skandhas* and on the subtle reversal of *paṭicca-samuppāda* in the *prajñāpāramitā*
+On the five pure and impure *Skandhas* and on the subtle reversal of dependent arising (*paṭicca-samuppāda*) into non-arising (*anutpāda*) in the *prajñāpāramitā* texts such as the *Mahāprajñāpāramitōpadeśa*.
