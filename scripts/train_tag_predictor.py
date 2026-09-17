@@ -9,7 +9,6 @@ import json
 import random
 import hashlib
 from functools import cache
-import gc
 from itertools import chain
 from textwrap import dedent
 import time
@@ -18,7 +17,6 @@ from executils import reclaim_memory
 
 import numpy as np
 from numpy.typing import ArrayLike
-from scipy import sparse
 from sklearn.feature_extraction.text import (
     CountVectorizer,
 )
@@ -26,7 +24,7 @@ from sklearn.svm import LinearSVC
 from sklearn.base import BaseEstimator
 
 import joblib
-from tqdm import tqdm, trange
+from tqdm import tqdm
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
 
 from strutils import (
@@ -829,11 +827,11 @@ class OBUTopicClassifier:
         self._count_words() 
         self._prepare_training_index()
 
-        to_train = [('root', 0)] # (slug, level)
-        scheduled = set(['root'])
+        to_train = self._find_reachable_nodes()
+        scheduled = set(slug for slug, _ in to_train)
         self.classifiers_ = dict()
 
-        print(f"Training node classifiers across {workers} worker threads...")
+        print(f"Training node classifiers across {workers} worker threads ({len(to_train)} nodes queued)...")
         with ThreadPoolExecutor(max_workers=workers) as executor:
             active_futures = {} # Future -> (slug, cur_level)
 
@@ -857,7 +855,7 @@ class OBUTopicClassifier:
                         slug, cur_level = active_futures.pop(future)
                         classifier = future.result()
                         self.classifiers_[slug] = classifier
-                        for child_slug in classifier.classes_:
+                        for child_slug in getattr(classifier, 'classes_', []):
                             if child_slug not in self.classifiers_ and child_slug not in scheduled:
                                 scheduled.add(child_slug)
                                 to_train.append((child_slug, cur_level + 1))
@@ -907,6 +905,42 @@ class OBUTopicClassifier:
         del self.all_the_data_
         reclaim_memory()
 
+    def _get_tag_point_count(self, tag: str) -> int:
+        """Total sample points for a tag and all its descendants."""
+        descendants = self.drive_map.get(tag, {}).get('descendants', [])
+        relevant_tags = set([tag] + descendants)
+        return sum(len(self.tag_rows_.get(t, ())) for t in relevant_tags)
+
+    def _is_qualifying_child(self, child: str) -> bool:
+        return self._get_tag_point_count(child) >= self.min_points
+
+    def _get_qualifying_children(self, tag: str) -> list[str]:
+        """Returns direct children of tag that meet the min_points threshold (including descendants)."""
+        children = self.drive_map.get(tag, {}).get('children', [])
+        return [
+            child for child in children
+            if self._is_qualifying_child(child)
+        ]
+
+    def _find_reachable_nodes(self) -> list[tuple[str, int]]:
+        """Determine all reachable nodes and their depths upfront."""
+        to_train = []
+        queue = [('root', 0)]
+        visited = set(['root'])
+
+        while queue:
+            slug, level = queue.pop(0)
+            to_train.append((slug, level))
+            if level >= self.max_depth:
+                continue
+
+            for child in self._get_qualifying_children(slug):
+                if child not in visited:
+                    visited.add(child)
+                    queue.append((child, level + 1))
+
+        return to_train
+
     def _get_training_data_for_tags(self, tags: set[str]) -> tuple[list[int], list[float]]:
         """Returns (row_indices, sample_weights) for a set of tags from the precomputed index"""
         rows = []
@@ -917,22 +951,33 @@ class OBUTopicClassifier:
                 w.extend(self.tag_weights_[t])
         return (rows, w)
 
-    def train_node(self, tag:str) -> BaseEstimator:
-        print(f"[{tag}] Building training job...")
-        relevant_tags = set([tag] + self.drive_map[tag]['ancestors'])
+    def _build_training_data(self, tag: str) -> tuple[list[int], list[float], list[str], list[str]]:
+        """Assembles (row_indices, sample_weights, labels, qualifying_children) for a node."""
+        ancestors = self.drive_map.get(tag, {}).get('ancestors', [])
+        relevant_tags = set([tag] + ancestors)
         row_indices, w = self._get_training_data_for_tags(relevant_tags)
         y = [tag] * len(w)
-        child_count = 0
-        for child in self.drive_map[tag]['children']:
-            relevant_tags = set([child] + self.drive_map[child]['descendants'])
+        qualifying_children = self._get_qualifying_children(tag)
+        qualifying_set = set(qualifying_children)
+
+        children = self.drive_map.get(tag, {}).get('children', [])
+        for child in children:
+            descendants = self.drive_map.get(child, {}).get('descendants', [])
+            relevant_tags = set([child] + descendants)
             child_rows, child_w = self._get_training_data_for_tags(relevant_tags)
             row_indices.extend(child_rows)
             w.extend(child_w)
-            if len(child_w) >= self.min_points:
+            if child in qualifying_set:
                 y.extend([child] * len(child_w))
-                child_count += 1
             else:
                 y.extend([tag] * len(child_w))
+
+        return row_indices, w, y, qualifying_children
+
+    def train_node(self, tag:str) -> BaseEstimator:
+        print(f"[{tag}] Building training job...")
+        row_indices, w, y, qualifying_children = self._build_training_data(tag)
+        child_count = len(qualifying_children)
         if child_count > 0:
             node_classifier = tag_predictor.OBUNodeClassifier(
                 min_df=self.min_df,
