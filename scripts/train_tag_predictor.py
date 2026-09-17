@@ -111,7 +111,11 @@ def _get_trainable_drive_folders(this_folder:str, ret:dict[str,list[str]]) -> di
             continue
         name = subfolder['name']
         if 'unread' in name.lower() or 'archive' in name.lower() or subfolder['id'] in ORGANIZATIONAL_SUBFOLDERS:
-            assert subfolder['id'] not in SLUG_FOR_PRIVATE_FOLDERID, f"Please remove {SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']]} folder {subfolder['id']} from {ORGANIZATIONAL_SUBFOLDERS_FILE}"
+            if subfolder['id'] in SLUG_FOR_PRIVATE_FOLDERID:
+                assert 'unread' not in name.lower() and 'archive' not in name.lower(), f"Why did we give slug {SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']]} to folder named \"{subfolder['name']}\""
+                print(f"Removing {SLUG_FOR_PRIVATE_FOLDERID[subfolder['id']]} folder {subfolder['id']} from {ORGANIZATIONAL_SUBFOLDERS_FILE}...")
+                ORGANIZATIONAL_SUBFOLDERS.remove(subfolder['id'])
+                ORGANIZATIONAL_SUBFOLDERS_FILE.write_text(json.dumps(ORGANIZATIONAL_SUBFOLDERS))
             ret[slug].append(subfolder['id'])
             continue
         if subfolder['id'] not in SLUG_FOR_PRIVATE_FOLDERID:

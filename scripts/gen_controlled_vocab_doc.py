@@ -1,5 +1,6 @@
 #!/bin/python3
 
+from numpy import isin
 from collections.abc import Callable, Iterator
 from typing import Any
 import re
@@ -8,6 +9,7 @@ from pathlib import Path
 from functools import cached_property
 from strutils import (
   git_root_folder,
+  english_join,
 )
 from executils import git_grep
 import website
@@ -55,6 +57,8 @@ In alphabetical order by their slug.
 
 """
 trim_punc = re.compile(r'^[^\w]+|[^\w]+$')
+
+RELATIONSHIP_LIST_STYLE = "\n- "
 
 class TagMetadata:
   def __init__(
@@ -170,6 +174,8 @@ class TagMetadata:
       blurb = self.site_course.description
     elif self.public_folder:
       ret += f" = {self.public_folder['name']}"
+    elif self.private_folder:
+      ret += f" = {self.private_folder['name']}"
     if blurb:
       ret += f"\n\n### Description\n\n{blurb}"
     ret += "\n\n### Relationships\n"
@@ -178,24 +184,20 @@ class TagMetadata:
       ret += self.parent.inline_name
     siblings = self.get_siblings()
     if siblings:
-      ret += "\n**Siblings**: ["
-      ret += ", ".join([s.inline_name for s in siblings])
-      ret += "]"
+      ret += "\n**Siblings**:" + RELATIONSHIP_LIST_STYLE
+      ret += RELATIONSHIP_LIST_STYLE.join([s.inline_name for s in siblings])
     children = self.get_children()
     if children:
-      ret += "\n**Children**: ["
-      ret += ", ".join([s.inline_name for s in children])
-      ret += "]"
+      ret += "\n**Children**:" + RELATIONSHIP_LIST_STYLE
+      ret += RELATIONSHIP_LIST_STYLE.join([s.inline_name for s in children])
     broader = self.get_broader()
     if broader:
-      ret += "\n**Related Broader**: ["
-      ret += ", ".join([s.inline_name for s in broader])
-      ret += "]"
+      ret += "\n**Related Broader**:" + RELATIONSHIP_LIST_STYLE
+      ret += RELATIONSHIP_LIST_STYLE.join([s.inline_name for s in broader])
     narrower = self.get_narrower()
     if narrower:
-      ret += "\n**Related Narrower**: ["
-      ret += ", ".join([s.inline_name for s in narrower])
-      ret += "]"
+      ret += "\n**Related Narrower**:" + RELATIONSHIP_LIST_STYLE
+      ret += RELATIONSHIP_LIST_STYLE.join([s.inline_name for s in narrower])
     ret += "\n\n"
     predictor = TagPredictor.load()
     if self.slug in predictor.classes:
@@ -204,12 +206,12 @@ class TagMetadata:
       parent_dis = dis_vocab.get('parent')
       child_dis = dis_vocab.get('children')
       def format_word_cloud(cloud, name):
-        return f"**Versus {name} (`[{', '.join(cloud['versus'])}]`)**:\n" \
+        return f"**`{self.slug}` vs its {name} ({english_join([f"`{i}`" for i in cloud['versus']])})**:\n" \
           + f"[{', '.join(trim_punc.sub('', t) for t in cloud['terms'])}]\n\n"
       if parent_dis:
-        ret += format_word_cloud(parent_dis, 'parent and siblings')
+        ret += format_word_cloud(parent_dis, "parent/siblings")
       if child_dis:
-        ret += format_word_cloud(child_dis, 'children')
+        ret += format_word_cloud(child_dis, "children")
     # TODO add examples section
     return ret
 
@@ -217,6 +219,7 @@ class TagTree:
   def __init__(self):
     self.slug_to_metadata: dict[str, TagMetadata] = dict()
     self.sorted_slugs: list[str] = []
+
   def load(self):
     for tagfile in website.tags:
       tag = TagMetadata(self, tagfile.slug, site_tag=tagfile)
@@ -228,7 +231,23 @@ class TagTree:
       else:
         tag = TagMetadata(self, coursefile.slug, site_course=coursefile)
         self.add_tag(tag)
-    # TODO load gdrive folders as well
+    self._folder_id_to_slug_map = gdrive.load_folder_slugs()
+    self.load_subfolders_of('buddhism')
+    self.load_subfolders_of('world')
+  
+  def load_subfolders_of(self, slug: str):
+    private_folder_url = gdrive.FOLDERS_DATA()[slug]['private']
+    assert isinstance(private_folder_url, str)
+    private_folder_id = gdrive.folderlink_to_id(private_folder_url)
+    assert private_folder_id
+    subfolders = gdrive.gcache.get_subfolders(private_folder_id, include_shortcuts=False)
+    for subfolder in subfolders:
+      if subfolder['id'] not in self._folder_id_to_slug_map:
+        continue
+      subslug = self._folder_id_to_slug_map[subfolder['id']]
+      if not self.get_tag(subslug):
+        self.add_tag(TagMetadata(self, subslug))
+      self.load_subfolders_of(subslug)
 
   def add_tag(self, tag: TagMetadata):
     assert tag.slug not in self.slug_to_metadata
@@ -253,6 +272,9 @@ class TagTree:
   def __iter__(self) -> Iterator[TagMetadata]:
     for slug in self.sorted_slugs:
       yield self.slug_to_metadata[slug]
+  
+  def __len__(self) -> int:
+    return len(self.sorted_slugs)
 
 def mark_solid_content():
   solids = set(git_grep('[#y] [sS]olidly'))
@@ -268,10 +290,18 @@ def mark_solid_content():
 def gen_document() -> str:
   ret = DOCUMENT_PREAMBLE
   tag_tree = TagTree()
+  max_len = 0
+  longest_slug = ''
   with yaspin(text="Compiling the tag tree..."):
     tag_tree.load()
   for tag in tag_tree:
-    ret += tag.gen_documentation()
+    tag_doc = tag.gen_documentation()
+    ret += tag_doc
+    if len(tag_doc) > max_len:
+      max_len = len(tag_doc)
+      longest_slug = tag.slug
+  print(f"Generated {len(tag_tree)} tag docs!")
+  print(f"The longest doc was for {longest_slug}, at {max_len} characters.")
   return ret
 
 def main(outpath: Path):

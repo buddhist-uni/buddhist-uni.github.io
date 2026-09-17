@@ -338,6 +338,17 @@ def input_with_tab_complete(prompt, typeahead_suggestions, delims=None, prefill=
 def trunc(longstr, maxlen=12) -> str:
   return longstr if len(longstr) <= maxlen else (longstr[:maxlen-1]+'…')
 
+def english_join(items: list[str], oxford_comma: bool = True) -> str:
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    
+    sep = ", and " if oxford_comma else " and "
+    return ", ".join(items[:-1]) + sep + items[-1]
+
 def does_md_only_contain_quotes(text):
   paragraphs = list(filter(lambda p: not not p, map(lambda p: p.strip(), text.split("\n\n"))))
   for p in paragraphs:

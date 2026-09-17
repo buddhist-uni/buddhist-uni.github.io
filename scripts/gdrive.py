@@ -423,16 +423,20 @@ def download_folder_contents_to(folder_id: str, target_directory: Path | str, re
 def load_folder_slugs() -> dict[str, str]:
   "A mapping from GFolder IDs to slug names (inverse of FOLDERS_DATA_FILE)"
   drive_folders = FOLDERS_DATA()
-  private_folder_slugs = {
-    folderlink_to_id(drive_folders[k]['private']): k
-    for k in drive_folders
-  }
-  public_folder_slugs = {
-    folderlink_to_id(drive_folders[k]['public']): k
-    for k in drive_folders
-  }
-  ret = {**private_folder_slugs, **public_folder_slugs}
-  del ret[None]
+  ret: dict[str, str] = {}
+  for k, folders in drive_folders.items():
+    for visibility in ('private', 'public'):
+      folder_id = folderlink_to_id(folders[visibility])
+      if not folder_id:
+        continue
+      # Besides certain, allowed duplicates
+      # loudly complain about them
+      if folder_id in ret and k not in {'archive'}:
+        raise ValueError(
+          f"Folder ID collision detected: '{folder_id}' is mapped "
+          f"to both slug '{ret[folder_id]}' and slug '{k}'."
+        )
+      ret[folder_id] = k
   return ret
 
 def process_duplicate_files(files: list[dict[str, any]], folder_slugs: dict[str, str], verbose: bool, dry_run: bool) -> list[dict]:
