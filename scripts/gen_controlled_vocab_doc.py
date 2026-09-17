@@ -24,13 +24,10 @@ Version {datetime.now():%Y-%m-%d %H:%M:%S}
 
 This document explains OBU's controlled vocabulary for topics.
 
-Content in the OBU library can get 0 or 1 `course` value and N `tags` set to subject slugs.
 Subject slugs are strings composed only of lowercase letters [a-z], numbers [0-9], and hyphens [-].
 For example, `material-culture` or `violence-since-ww2` are subject slugs.
-The `course` attribute represents the primary topic that the work is about.
-The `tags` represent the secondary topics that the work is about.
 
-The primary tag is called its `course` because it represents our best guess at the undergrad-level
+A work's primary tag is called its `course` because it represents our best guess at the undergrad-level
 course that this work would be assigned in, if it were to be assigned to an undergrad as homework.
 Similarly, the secondary `tags` represent other courses that might assign this work, either as
 homework or as further/background reading.
@@ -41,11 +38,16 @@ This means that nearly all topics should be understood to have an implied "Intro
 or perhaps an implied " (General)" at the end.
 Do not tag everything about Buddhism with `buddhism`! Only the most introductory material should get
 that parent tag. Most items about Buddhism should get a more specific tag, like "Buddhist Cosmology" or
-"Modern Chinese Buddhism," etc.
+"Modern Chinese Buddhism," etc as appropriate.
 
 # The Format of this Document
 
 The rest of this markdown file will list and explain our current set of tags.
+
+The "Discriminative Vocabulary" section lists the most common terms that a one-vs-rest
+Support Vector Machine Classifier (SVC) learned to use to discriminate this tag as compared to the
+tags listed in parentheses.
+Specifically, the terms have the 20 largest `log(document_frequency) * svc_coefficient` values.
 
 # The Tags
 
@@ -60,10 +62,12 @@ class TagMetadata:
     tree: "TagTree",
     slug: str,
     site_tag: website.TagFile | None = None,
+    site_course: website.JekyllFile | None = None,
   ):
     self.tree = tree
     self.slug = slug
     self.site_tag = site_tag
+    self.site_course = site_course
     try:
       self.folder_ids = gdrive.get_gfolders_for_course(slug, invite_to_add=False)
     except ValueError:
@@ -81,6 +85,8 @@ class TagMetadata:
   def inline_name(self) -> str:
     if self.site_tag:
       inline_name = self.site_tag.title
+    elif self.site_course:
+      inline_name = self.site_course.title
     elif self.public_folder:
       inline_name = self.public_folder['name']
     elif self.private_folder:
@@ -92,7 +98,7 @@ class TagMetadata:
   @cached_property
   def parent(self) -> "TagMetadata | None":
     if self.site_tag:
-      if self.site_tag.level == 1:
+      if self.site_tag.get('level') == 1:
         return None
       return self.tree.get_tag(self.site_tag.parents[0])
     elif self.private_folder:
@@ -103,6 +109,8 @@ class TagMetadata:
       return self.tree.get_tag_where(
         lambda t: t.public_folder and t.public_folder['id'] == self.public_folder['parent_id']
       )
+    elif self.site_course and self.site_course.get('tags'):
+      return self.tree.get_tag(self.site_course.tags[0])
     else:
       raise ValueError(f"I don't know how to determine the parent in that case")
 
@@ -122,12 +130,21 @@ class TagMetadata:
       self.tree.get_tag(p)
       for p in self.site_tag.parents[1:]
     ] if self.site_tag else []
+    if self.site_tag and self.site_tag.get('level') == 1:
+      ret.append(self.tree.get_tag(self.site_tag.parents[0]))
+    if self.site_course and self.site_course.get('tags'):
+      ret.extend([
+        self.tree.get_tag(p)
+        for p in self.site_course.tags[1:]
+        if p not in {q.slug for q in ret if q}
+      ])
     return [p for p in ret if p]
   
   def get_narrower(self) -> "list[TagMetadata]":
     # TODO also get google drive shortcut children
     return self.tree.get_tags_where(
-      lambda t: t.site_tag and self.slug in t.site_tag.parents[1:]
+      lambda t: (t.site_tag and self.slug in t.site_tag.parents[1:]) or \
+        (t.site_course and t.site_course.get('tags') and self.slug in t.site_course.tags[1:])
     )
 
   def gen_documentation(self) -> str:
@@ -136,9 +153,21 @@ class TagMetadata:
     if self.site_tag:
       blurb = re.sub(r"\[([^\]]+)\]\(\/tags\/([a-z0-9-]+)\)", r'\1 (see `\2`)', self.site_tag.content).strip()
       ret += f" = {self.site_tag.title}"
+      if self.site_course:
+        blurb = self.site_course.description + '\n\n' + blurb
+        coursename = self.site_course.title
+        if self.site_course.get('subtitle'):
+          coursename += f": {self.site_course.subtitle}"
+        if coursename != self.site_tag.title:
+          ret += "\n\n**Full Title**: \"" + coursename + '\"'
       if self.public_folder and self.public_folder['name'] != self.site_tag.title:
         if not (self.public_folder['name'].startswith('The ') and self.public_folder['name'][4:] == self.site_tag.title):
           ret += "\n\n**Alternative Title**: " + self.public_folder['name']
+    elif self.site_course:
+      ret += f" = {self.site_course.title}"
+      if self.site_course.get('subtitle'):
+        ret += f": {self.site_course.subtitle}"
+      blurb = self.site_course.description
     elif self.public_folder:
       ret += f" = {self.public_folder['name']}"
     if blurb:
@@ -159,12 +188,12 @@ class TagMetadata:
       ret += "]"
     broader = self.get_broader()
     if broader:
-      ret += "\n**Other Broader**: ["
+      ret += "\n**Related Broader**: ["
       ret += ", ".join([s.inline_name for s in broader])
       ret += "]"
     narrower = self.get_narrower()
     if narrower:
-      ret += "\n**Other Narrower**: ["
+      ret += "\n**Related Narrower**: ["
       ret += ", ".join([s.inline_name for s in narrower])
       ret += "]"
     ret += "\n\n"
@@ -192,7 +221,13 @@ class TagTree:
     for tagfile in website.tags:
       tag = TagMetadata(self, tagfile.slug, site_tag=tagfile)
       self.add_tag(tag)
-    # TODO load courses as well
+    for coursefile in website.courses:
+      tag = self.get_tag(coursefile.slug)
+      if tag:
+        tag.site_course = coursefile
+      else:
+        tag = TagMetadata(self, coursefile.slug, site_course=coursefile)
+        self.add_tag(tag)
     # TODO load gdrive folders as well
 
   def add_tag(self, tag: TagMetadata):

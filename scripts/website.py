@@ -184,7 +184,7 @@ class TagCollection():
 
 tags = TagCollection()
 authors = AuthorCollection()
-courses = []
+courses: list[JekyllFile] = []
 
 def normalized_author_name(author: str) -> str:
   if ' ' in author:
@@ -279,7 +279,7 @@ def load():
   if content:
     return
   filecreationtimes.update(get_file_creation_times())
-  for filepath in root_folder.joinpath("_courses").rglob("*.md"):
+  for filepath in root_folder.joinpath("_courses").glob("*.md"):
     courses.append(JekyllFile.load(filepath))
   courses.sort(key=lambda c: c.created_at)
   for contentfolder in root_folder.joinpath('_content').iterdir():
