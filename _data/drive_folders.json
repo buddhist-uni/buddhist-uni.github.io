@@ -167,10 +167,6 @@
     "private": "https://drive.google.com/drive/folders/1BJLf_yh6gDou9xrta_My8B0t7c8MyHFz",
     "public": ""
   },
-  "apadana": {
-    "private": "https://drive.google.com/drive/folders/1aN6WV1jFBPCXq9IIH1jCurv7q9KG2WcK",
-    "public": "https://drive.google.com/drive/folders/1_t64cWMnRLnjxKtZONwPUowZNiNOgY6a"
-  },
   "arab-america": {
     "private": "https://drive.google.com/drive/folders/1Y3t4ZUE2Y2y6H1hp8IXS0F2UaUk5SKO9",
     "public": ""
@@ -531,10 +527,6 @@
     "private": "https://drive.google.com/drive/folders/1708IXgdMz75HbwJ4qf1OjBI1sZSj0KCF",
     "public": null
   },
-  "central-asia": {
-    "private": "https://drive.google.com/drive/folders/1QCjo2soadr9KDAW_wk3enyJOsUBmoUOT",
-    "public": null
-  },
   "central-asian": {
     "private": "https://drive.google.com/drive/folders/1SvJ1V1ZSN7fT22QnNDLRfyHsLCUwT50L",
     "public": null
@@ -629,10 +621,6 @@
   },
   "chinese-theravada": {
     "private": "https://drive.google.com/drive/folders/10rCN8CfAg_rJ6J7AtGnJlIFzoe6DbbZB",
-    "public": null
-  },
-  "christian": {
-    "private": "https://drive.google.com/drive/folders/1r2DelC_qZy26DujPAbTcantxjxU4za2g",
     "public": null
   },
   "christianity": {
@@ -734,10 +722,6 @@
   "computational-linguistics": {
     "private": "https://drive.google.com/drive/folders/1pKQ0F2qrp7fEUEjos823Y9kzSkrNMS0J",
     "public": "https://drive.google.com/drive/folders/1aggC1yG0lry9l7UAHep5_P_wei8NFgPn"
-  },
-  "computer-science": {
-    "private": "https://drive.google.com/drive/folders/1PyR2im199nzWj-8FiR1cgVuF-ra6E0Mz",
-    "public": ""
   },
   "confucianism": {
     "private": "https://drive.google.com/drive/folders/1za9FKF6eaa26BLfyH9181fOD9U77DwHB",
@@ -1327,10 +1311,6 @@
     "private": "https://drive.google.com/drive/folders/1_c3T5_zlz_lXIRAOYM2mZYpeFpeK0QSj",
     "public": ""
   },
-  "healthcare": {
-    "private": "https://drive.google.com/drive/folders/1o844ubkqobmaTd7xxghynM0DwnbJCjhJ",
-    "public": ""
-  },
   "hearing": {
     "private": "https://drive.google.com/drive/folders/1FRlmhLRjttbpby6v29dhJ2US-ncu7oX6",
     "public": null
@@ -1338,10 +1318,6 @@
   "heian": {
     "private": "https://drive.google.com/drive/folders/1D5Z-5Zf9ySj8XtkFhGK3alrXpreGHfIg",
     "public": null
-  },
-  "heian-japan": {
-    "private": "https://drive.google.com/drive/folders/1D5Z-5Zf9ySj8XtkFhGK3alrXpreGHfIg",
-    "public": ""
   },
   "hell": {
     "private": "https://drive.google.com/drive/folders/1uwZO4dkywdH3oy_u6uQ3MPSe5FnOKCxE",
@@ -1629,10 +1605,6 @@
   },
   "japanese-language": {
     "private": "https://drive.google.com/drive/folders/1ygkMTpXtA7QAvHxQlxR9O-NhQ-Z8zddS",
-    "public": null
-  },
-  "japanese-pureland": {
-    "private": "https://drive.google.com/drive/folders/1YtRHE5iKUmdFOqUUntAmhu6neR5KsPHV",
     "public": null
   },
   "japanese-religion": {
@@ -2039,10 +2011,6 @@
     "private": "https://drive.google.com/drive/folders/13HrRP9DrT98RXgnnYAeWnAs9QUeuVlbj",
     "public": null
   },
-  "meiji-japan": {
-    "private": "https://drive.google.com/drive/folders/13HrRP9DrT98RXgnnYAeWnAs9QUeuVlbj",
-    "public": ""
-  },
   "memoir": {
     "private": "https://drive.google.com/drive/folders/1nFZ9Wgak6sD1aaiA-FCRUF0lgF6wHEJ5",
     "public": ""
@@ -2335,10 +2303,6 @@
     "private": "https://drive.google.com/drive/folders/11-667XqgAdjGib5ZCBgzVtMlvLTdGfJ8",
     "public": ""
   },
-  "new-york": {
-    "private": "https://drive.google.com/drive/folders/1kPzjMSoxom1ux6KbSA_o_4nzakA_yUiG",
-    "public": null
-  },
   "new-zealand": {
     "private": "https://drive.google.com/drive/folders/12oIhALW7tJtbd4C4cXIDy9fNUvMPFcog",
     "public": null
@@ -2510,10 +2474,6 @@
   "pali-language": {
     "private": "https://drive.google.com/drive/folders/1QcZXCA2MFkBd8qy-AbubSsXJwY-t8Q1M",
     "public": "https://drive.google.com/drive/folders/1ZcgZ096WtuKoQ-ICC8n1gqH2lvjwhnwN"
-  },
-  "pali-meter": {
-    "private": "https://drive.google.com/drive/folders/1z61EmP2kP8RUXkzTP10kqiVXHUBcpl9b",
-    "public": "https://drive.google.com/drive/folders/1hwk9mT2OvPVrcF46uLv_y0dN5iEkgQNh"
   },
   "pali-metre": {
     "private": "https://drive.google.com/drive/folders/1z61EmP2kP8RUXkzTP10kqiVXHUBcpl9b",
@@ -2736,7 +2696,7 @@
     "public": ""
   },
   "public-health": {
-    "private": "https://drive.google.com/drive/folders/1U55mWFjSHtad2ulqJPDbA0TPRcbwVNVg",
+    "private": "https://drive.google.com/drive/folders/1o844ubkqobmaTd7xxghynM0DwnbJCjhJ",
     "public": null
   },
   "public-speaking": {
@@ -2782,10 +2742,6 @@
   "queensland": {
     "private": "https://drive.google.com/drive/folders/1GpegShXPdzEFmliv6yPE87pwDm7wtA9S",
     "public": ""
-  },
-  "queer-history": {
-    "private": "https://drive.google.com/drive/folders/1dI-cKvIhqM_4dQDjv8hKWey9w1iVHjsw",
-    "public": null
   },
   "race": {
     "private": "https://drive.google.com/drive/folders/1Ex8vS8lIwWHG0sjtgZPFmhLjytXGCgo9",
@@ -3231,10 +3187,6 @@
     "private": "https://drive.google.com/drive/folders/1HwfyNwCVi6OM5AnWJfk2sxPLOBQoEz2g",
     "public": null
   },
-  "stats": {
-    "private": "https://drive.google.com/drive/folders/1HwfyNwCVi6OM5AnWJfk2sxPLOBQoEz2g",
-    "public": null
-  },
   "study-skills": {
     "private": "https://drive.google.com/drive/folders/1PqYfeTKLkSEU3zJZPhVD-f73b1yE-C5y",
     "public": ""
@@ -3325,10 +3277,6 @@
   },
   "tanzania": {
     "private": "https://drive.google.com/drive/folders/19GaJfNx_FcX6zjahdILuNq70yndQYtVg?usp=drive_link",
-    "public": null
-  },
-  "taoism": {
-    "private": "https://drive.google.com/drive/folders/1_ArS61BCvishnceVA1DB6Ib06gTsuvP4",
     "public": null
   },
   "tara": {
@@ -3523,7 +3471,7 @@
     "private": "https://drive.google.com/drive/folders/1FGWjGYKHMGkYhqoSRxbSdYI0Jwp-w3yR",
     "public": null
   },
-  "tokoku": {
+  "tohoku": {
     "private": "https://drive.google.com/drive/folders/1X8oV2gqBZFrZcPGgdH9cmkJVMoPp6HEj",
     "public": ""
   },
@@ -3567,20 +3515,12 @@
     "private": "https://drive.google.com/drive/folders/1sOUf38hsBOpRUEauRhXouOWMGyRAir-n",
     "public": "https://drive.google.com/drive/folders/1MABTglSV7SDXx1vVFN-f6ny-WO8g-VRP"
   },
-  "udana": {
-    "private": "https://drive.google.com/drive/folders/1sOUf38hsBOpRUEauRhXouOWMGyRAir-n",
-    "public": "https://drive.google.com/drive/folders/1MABTglSV7SDXx1vVFN-f6ny-WO8g-VRP"
-  },
   "udanavarga": {
     "private": "https://drive.google.com/drive/folders/1ir5EZmDNGmO69hlMPvwWatcmRUOvsxYQ",
     "public": ""
   },
   "uganda": {
     "private": "https://drive.google.com/drive/folders/1Ccy_G01wLtiqjpcOFqp-8vdQgSVaohca",
-    "public": null
-  },
-  "uk": {
-    "private": "https://drive.google.com/drive/folders/1C1ciryAbILOcfRDGbwc9_TLykzGKZVr3",
     "public": null
   },
   "ukraine": {

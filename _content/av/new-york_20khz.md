@@ -7,7 +7,7 @@ external_url: "https://www.20k.org/episodes/citythatneversleeps"
 course: feeling
 tags:
   - cities
-  - new-york
+  - nyc
   - hearing
   - writing
 year: 2020

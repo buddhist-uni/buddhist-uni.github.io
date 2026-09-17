@@ -9,7 +9,7 @@ drive_links:
 course: thought
 tags:
   - anatta
-  - udana
+  - ud
   - sa
   - emptiness
   - nibbana

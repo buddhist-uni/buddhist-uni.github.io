@@ -8,7 +8,7 @@ drive_links:
   - "https://drive.google.com/file/d/1fPXnjsf7fTerIp7EKBalkjdi3gpfpeHX/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1tsXf1W5OcJYd7rB7_TWXuakOJ_0bl-9M/view?usp=drivesdk"
 tags:
-  - queer-history
+  - lgbt
   - genji
   - lit-crit
 year: 2021

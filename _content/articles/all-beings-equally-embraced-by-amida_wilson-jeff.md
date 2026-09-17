@@ -9,7 +9,7 @@ drive_links:
 course: american
 tags:
   - pureland
-  - queer-history
+  - lgbt
   - ethics
   - religion
 year: 2012
