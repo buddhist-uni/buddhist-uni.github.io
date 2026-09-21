@@ -308,7 +308,7 @@ def main(outpath: Path):
   with yaspin(text="Loading website...") as sp:
     website.load()
     solids = mark_solid_content()
-    sp.ok(text=f"Loaded website and found {solids} \"solid\" pieces")
+  print(f"Loaded website and found {solids} \"solid\" pieces")
   outpath.write_text(gen_document())
   print(f"Document written to {outpath}")
   return 0
