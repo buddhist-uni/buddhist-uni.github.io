@@ -1,5 +1,8 @@
 import random
 import math
+import heapq
+from collections.abc import Collection, Iterator
+from typing import Generic, TypeVar
 from functools import reduce
 from typing import Callable
 
@@ -74,3 +77,43 @@ def gen_waypoint_power_decay_func(x_1: float, y_1: float, x_2: float, y_2: float
   K = math.log((1 - y_1) / reduction) / math.log(x_1 / x_2)
   D = reduction * x_2 ** (-K)
   return lambda x: 1.0-D*x**K
+
+# W represents the weight type (must be comparable for heap ordering)
+# T represents the object payload type
+W = TypeVar("W")
+T = TypeVar("T")
+Item = tuple[W, T]
+class TopNHeap(Generic[W, T], Collection[Item[W, T]]):
+    def __init__(self, n: int) -> None:
+        self.n: int = n
+        self.data: list[Item[W, T]] = []
+
+    def push(self, weight: W, obj: T) -> None:
+        item: Item[W, T] = (weight, obj)
+        if len(self.data) < self.n:
+            heapq.heappush(self.data, item)
+        # pyrefly: ignore [unsupported-operation]
+        elif weight >= self.data[0][0]:
+            heapq.heappushpop(self.data, item)
+
+    def get_sorted(self, reverse: bool = True) -> list[Item[W, T]]:
+        """Returns items ordered by weight (highest to lowest by default)."""
+        # pyrefly: ignore [no-matching-overload]
+        return sorted(self.data, reverse=reverse)
+
+    def __len__(self) -> int:
+        return len(self.data)
+
+    def __iter__(self) -> Iterator[Item[W, T]]:
+        """Yields elements from the heap (unordered)."""
+        return iter(self.data)
+
+    def __contains__(self, item: T | Item[W, T]) -> bool:
+      if any(items[1] == item for items in self.data):
+        return True
+      if isinstance(item, tuple):
+        return item in self.data
+      return False
+
+    def __repr__(self) -> str:
+        return f"TopNHeap({self.get_sorted()})"

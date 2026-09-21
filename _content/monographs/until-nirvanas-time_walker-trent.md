@@ -2,8 +2,7 @@
 title: "Until Nirvana's Time: Buddhist Songs from Cambodia"
 authors:
   - walker-trent
-course: theravada # move to roots?
-status: featured # 3.5... rounding up for rarity.
+course: theravada # maybe move ?
 tags:
   - cambodian
   - theravada-roots

@@ -12,6 +12,7 @@ module Jekyll
     # Values were chosen by a combination of intuition
     # and validation against video watch data in GA4
     # Numbers are therefore highly approximate
+    # KEEP THESE VALUES IN SYNC WITH website.py
     @@etm = {
         max_expected_mins: 60.0,
         max_expected_mins_featured: 90.0,

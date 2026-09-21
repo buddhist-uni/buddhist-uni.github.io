@@ -1622,9 +1622,11 @@ class GDriveApp(QMainWindow):
                 uncache_action = menu.addAction("Remove from cache")
             else:
                 uncache_action = None
+            url = gdrive_base.DRIVE_LINK.format(file_data['id'])
         else:
             download_action = None
             uncache_action = None
+            url = gdrive_base.FOLDER_LINK_PREFIX + file_data['id']
         if is_folder and add_options:
             new_folder_action = menu.addAction("New &Folder...")
         else:
@@ -1633,8 +1635,7 @@ class GDriveApp(QMainWindow):
         action = menu.exec(global_pos)
         if not action:
             return
-            
-        url = gdrive_base.GENERIC_LINK_PREFIX + file_data['id']
+
         if action == copy_id_action:
             QApplication.clipboard().setText(file_data['id'])
         elif action == info_action:

@@ -94,10 +94,16 @@ class TagFile(JekyllFile):
     self.url = "/tags/" + fd.stem
 
 class DataCollection():
+  def __init__(self) -> None:
+    self.content = None
+    self.content_downloads: dict[str, int] = dict()
+
   def load(self):
+    if self.content is not None:
+      return
     content_config = root_folder.joinpath('_data/content.yml').read_text()
     self.content = yaml.load(content_config, Loader=yaml.Loader)
-    self.content_downloads: dict[str, int] = dict()
+    self.content_downloads = dict()
     content_downloads = root_folder.joinpath("_data/content_downloads.json")
     # might not exist as it doesn't ship with the repo
     # downloaded via scripts/install-deps.bash
@@ -193,13 +199,21 @@ def normalized_author_name(author: str) -> str:
   assert af
   return af.title
 
+# Constants for the Expected Timespent Model
+# KEEP THESE IN SYNC WITH content-derived-fields.rb
+ETM = {
+  'max_expected_mins': 60.0,
+  'max_expected_mins_featured': 90.0,
+  'x_inter': -0.2,
+  'y_asymt': -165.0,
+}
+ETM['offset'] = ETM['x_inter'] / ETM['y_asymt']
+
 class ContentFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
     fd = Path(fd)
     super().__init__(fd, content, handler, **kwargs)
     self.category = self.relative_path.parts[1]
-    self.content_path = f"{self.category}/{fd.stem}"
-    self.url = f"/content/{self.content_path}"
     if not self.get('tags'):
         self.tags = []
     if not self.get('formats'):
@@ -207,6 +221,99 @@ class ContentFile(JekyllFile):
         self.formats = ['mp3']
       else:
         self.formats = ['pdf', 'epub']
+    
+    ######
+    # Add fields from content-derived-fields.rb
+    ######
+
+    # paths
+    self.content_path = f"{self.category}/{fd.stem}"
+    self.url = f"/content/{self.content_path}"
+
+    # stars and featuring post
+    self.stars = self.base_stars_for_item()
+    self.featured_post = None
+    self.free = bool(self.get('external_url') or self.get('file_links') or self.get('drive_links'))
+
+    # page_count (won't be set if no "pages" field present)
+    if self.get('pages'):
+      pages = self.get('pages')
+      if isinstance(pages, str) and '--' in pages:
+        pages = pages.split('--')
+        self.page_count = int(pages[1]) - int(pages[0]) + 1
+      else:
+        self.page_count = int(pages)
+
+    self.total_mins = float(self.get('minutes') or 0.0)
+    if getattr(self, 'page_count', None) and not self.get('minutes'):
+      if data.content is None:
+        data.load()
+      mins_per_page = data.content.get('mins_per_page', 2.0) if data.content else 2.0
+      self.total_mins = float(self.page_count) * mins_per_page
+      if self.category == 'canon':
+        self.total_mins *= 2.5 # Assume canonical works require deeper reading
+      elif self.category == 'reference':
+        self.total_mins *= 0.1 # Assume reference works will only be partially read
+
+    if self.get('course_time_multiplier') is None:
+      self.course_time_multiplier = 1.0
+    else:
+      self.course_time_multiplier = float(self.get('course_time_multiplier'))
+    self.course_mins = int(self.total_mins * self.course_time_multiplier + 0.5)
+
+    # set the expected value of downloading this item
+    # note this relies on many of the previously computed field values!
+    self.expected_mins = self.calc_expected_mins()
+    if self.get('base_value') is None:
+      self.base_value = 0.35
+    else:
+      self.base_value = float(self.get('base_value'))
+
+    if self.expected_mins is not None:
+      stars = float(self.stars)
+      if self.category == 'canon':
+        stars += 1.0
+      # 2.5 cents per star per minute. Make sure to keep this value in sync with
+      # _include/inline-av-player.html which logs av watch time at the same value
+      self.expected_value = 0.025 * stars * float(self.expected_mins)
+    else:
+      # use old algo as a fallback in case of no pages/minutes value
+      self.expected_value = self.base_value
+      if str(self.get('status')) == 'featured':
+        self.expected_value *= 2.0
+    self.expected_value = round(float(self.expected_value), 3)
+
+  # COPIED FROM content-derived-fields.rb
+  def base_stars_for_item(self) -> int:
+    if str(self.get('status')) == 'rejected':
+      return 1
+    if not self.get('course'):
+      return 2
+    if str(self.get('status')) != 'featured':
+      return 3
+    return 4
+
+  # COPIED FROM content-derived-fields.rb
+  def calc_expected_mins(self) -> float | None:
+    mins = float(getattr(self, 'total_mins', 0.0) or 0.0)
+    if mins == 0:
+      return None
+    if not getattr(self, 'free', False) and self.get('excerpt_url'):
+      mins *= 0.15 # expect excerpts to contain 15% of the original
+    ratio = (1.0 - ETM['offset']) / (mins - ETM['y_asymt'])
+    ratio *= mins
+    ratio += ETM['offset']
+    if str(self.get('status')) == 'featured':
+      ret = ETM['max_expected_mins_featured'] * ratio
+    else:
+      ret = ETM['max_expected_mins'] * ratio
+    # make adjustments based on relative conversion likelihood for harder-to-access items
+    if not self.get('drive_links') and str(self.get('subcat')) == 'podcast':
+      ret *= 0.5
+    if not getattr(self, 'free', False) and not self.get('excerpt_url'):
+      ret *= 0.01
+    return ret
+    
   
   def external_url_linkfmt(self):
     """Keep up to date with logic in _includes/content_filelinks.html:3"""
@@ -242,6 +349,9 @@ class ContentFile(JekyllFile):
       if candidatetag.slug in self.tags:
         return (candidatetag.slug, idx+len(courses))
     return ('', 9999)
+  
+  def __lt__(self, other: 'ContentFile'):
+    return self.expected_value < other.expected_value
 
 content: list[ContentFile]
 content = []

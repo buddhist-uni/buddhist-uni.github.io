@@ -2,11 +2,13 @@
 
 from numpy import isin
 from collections.abc import Callable, Iterator
+from collections import defaultdict
 from typing import Any
 import re
 import bisect
 from pathlib import Path
 from functools import cached_property
+from mathutils import TopNHeap
 from strutils import (
   git_root_folder,
   english_join,
@@ -212,13 +214,14 @@ class TagMetadata:
         ret += format_word_cloud(parent_dis, "parent/siblings")
       if child_dis:
         ret += format_word_cloud(child_dis, "children")
-    # TODO add examples section
+    # examples are handled by the TagTree class
     return ret
 
 class TagTree:
-  def __init__(self):
+  def __init__(self, max_examples: int):
     self.slug_to_metadata: dict[str, TagMetadata] = dict()
     self.sorted_slugs: list[str] = []
+    self.examples: defaultdict[str, TopNHeap[float, website.ContentFile]] = defaultdict(lambda: TopNHeap(n=max_examples))
 
   def load(self):
     for tagfile in website.tags:
@@ -234,7 +237,65 @@ class TagTree:
     self._folder_id_to_slug_map = gdrive.load_folder_slugs()
     self.load_subfolders_of('buddhism')
     self.load_subfolders_of('world')
+    self.load_examples()
   
+  def load_examples(self):
+    assert len(website.content) > 1000, f"Load website before TagTree"
+    assert hasattr(website.content[0], 'is_solid'), f"mark_solid_content() before loading TagTree"
+    type_base_score = {
+      'monographs': 12.0,
+      'booklets': 8.0,
+      'articles': 7.0,
+      'papers': 7.0,
+    }
+    for piece in website.content:
+      if piece.get('status') == 'rejected':
+        continue
+      if not piece.get('course'):
+        continue
+      if piece.category not in {'monographs', 'booklets', 'articles', 'papers'}:
+        # ignoring essays, av, reference, canon
+        continue # only consider these kinds of publications
+      if not piece.page_count or piece.page_count < 16:
+        continue # ignore short writings
+      if piece.is_weak:
+        continue # only consider pieces we're confident in placing
+      course_slug = piece.course
+      if course_slug not in self.slug_to_metadata:
+        continue
+      metadata = self.slug_to_metadata[course_slug]
+      is_published_tag = (metadata.site_tag and metadata.site_tag.get('status') == 'published') or metadata.site_course is not None
+      if not (is_published_tag or piece.get('status') == 'featured'):
+        # consider 3-star published items or 4-star items on unpublished tags
+        continue
+      score = type_base_score[piece.category] * piece.page_count
+      if piece.is_solid:
+        score *= 20.0
+      if piece.get('status') == 'featured':
+        score *= 2.0
+      self.examples[course_slug].push(score, piece)
+  
+  def gen_examples_for(self, tag_slug: str) -> str:
+    if tag_slug not in self.examples:
+      return ''
+    examples = [e[1] for e in self.examples[tag_slug].get_sorted()]
+    if len(examples) == 0:
+      return ''
+    ret = "### Example"
+    if len(examples) > 1:
+      ret += "s"
+    ret += "\n\n"
+    for example in examples:
+      ret += "**Title**:\n" + example.title + "\n**Tags**:\n"
+      ret += " - `" + tag_slug + '` (course)\n'
+      for additional_slug in example.tags:
+        ret += " - `" + additional_slug + '`\n'
+      ret += "**Description**:\n```"
+      desc = [p.strip() for p in str(example.content).strip().split('\n\n') if p.strip()]
+      ret += '\n\n'.join(desc[0:2])
+      ret += "\n```\n\n"
+    return ret
+
   def load_subfolders_of(self, slug: str):
     private_folder_url = gdrive.FOLDERS_DATA()[slug]['private']
     assert isinstance(private_folder_url, str)
@@ -287,15 +348,32 @@ def mark_solid_content():
       c.is_solid = False
   return ret
 
-def gen_document() -> str:
+def mark_tentative_content():
+  weaks = set(git_grep('# [mM]aybe '))
+  ret = 0
+  for c in website.content:
+    if c.absolute_path in weaks:
+      c.is_weak = True
+      ret += 1
+    else:
+      c.is_weak = False
+  return ret
+
+def gen_document(max_examples: int = 2) -> str:
+  with yaspin(text="Loading website...") as sp:
+    website.load()
+    solids = mark_solid_content()
+    weaks = mark_tentative_content()
+  print(f"Loaded website: found {solids} \"solid\" and {weaks} \"weak\" pieces")
   ret = DOCUMENT_PREAMBLE
-  tag_tree = TagTree()
+  tag_tree = TagTree(max_examples=max_examples)
   max_len = 0
   longest_slug = ''
   with yaspin(text="Compiling the tag tree..."):
     tag_tree.load()
   for tag in tag_tree:
     tag_doc = tag.gen_documentation()
+    tag_doc += tag_tree.gen_examples_for(tag.slug)
     ret += tag_doc
     if len(tag_doc) > max_len:
       max_len = len(tag_doc)
@@ -304,12 +382,8 @@ def gen_document() -> str:
   print(f"The longest doc was for {longest_slug}, at {max_len} characters.")
   return ret
 
-def main(outpath: Path):
-  with yaspin(text="Loading website...") as sp:
-    website.load()
-    solids = mark_solid_content()
-  print(f"Loaded website and found {solids} \"solid\" pieces")
-  outpath.write_text(gen_document())
+def main(outpath: Path, max_examples: int):
+  outpath.write_text(gen_document(max_examples=max_examples))
   print(f"Document written to {outpath}")
   return 0
 
@@ -324,5 +398,10 @@ if __name__ == "__main__":
     type=Path,
     default=git_root_folder/'assets'/'obu_subject_ontology.md',
   )
+  argparser.add_argument(
+    '--max-examples',
+    type=int,
+    default=2,
+  )
   args = argparser.parse_args()
-  exit(main(outpath=args.output))
+  exit(main(outpath=args.output, max_examples=args.max_examples))
