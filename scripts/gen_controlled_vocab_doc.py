@@ -20,11 +20,12 @@ from yaspin import yaspin
 from datetime import datetime
 from tag_predictor import TagPredictor
 
-DOCUMENT_PREAMBLE = f"""---
+DOC_FRONTMATTER = """---
 title: The Open Buddhist University Subject Tags
 ---
 
-Version {datetime.now():%Y-%m-%d %H:%M:%S}
+"""
+DOCUMENT_INTRO = f"""Version {datetime.now():%Y-%m-%d %H:%M:%S}
 
 This document explains OBU's controlled vocabulary for topics.
 
@@ -53,7 +54,8 @@ Support Vector Machine Classifier (SVC) learned to use to discriminate this tag 
 tags listed in parentheses.
 Specifically, the terms have the 20 largest `log(document_frequency) * svc_coefficient` values.
 
-# The Tags
+"""
+DOC_HEADER = """# The Tags
 
 In alphabetical order by their slug.
 
@@ -359,13 +361,16 @@ def mark_tentative_content():
       c.is_weak = False
   return ret
 
-def gen_document(max_examples: int = 2) -> str:
+def gen_document(max_examples: int = 2, include_intro: bool=True) -> str:
   with yaspin(text="Loading website...") as sp:
     website.load()
     solids = mark_solid_content()
     weaks = mark_tentative_content()
   print(f"Loaded website: found {solids} \"solid\" and {weaks} \"weak\" pieces")
-  ret = DOCUMENT_PREAMBLE
+  ret = DOC_FRONTMATTER
+  if include_intro:
+    ret += DOCUMENT_INTRO
+  ret += DOC_HEADER
   tag_tree = TagTree(max_examples=max_examples)
   max_len = 0
   longest_slug = ''

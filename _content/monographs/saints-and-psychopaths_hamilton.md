@@ -8,12 +8,9 @@ year: 1995
 olid: OL884502M
 course: new-age
 tags:
-  - west
   - pedagogy
   - selling
   - vinaya-studies
-  - ethics
-  - power
   - charisma
   - sangha # maybe move here?
 external_url: "https://edhamma.github.io/saints/html/index.html"

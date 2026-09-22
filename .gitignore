@@ -6,6 +6,7 @@ assets/webfonts
 assets/imgs/covers/
 assets/css/purged-main.css
 assets/obu_subject_ontology.md
+assets/obu-data-entry.zip
 scripts/archivable_urls/*.txt
 _data/cssCacheToken.yml
 _data/content_downloads.json
