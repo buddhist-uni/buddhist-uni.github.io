@@ -84,7 +84,9 @@ class AuthorCollection():
   def get(self, author: str) -> AuthorFile | None:
     return self.authors.get(author)
   def __iter__(self):
-    return iter(self.authors.values())
+    ret = list(self.authors.values())
+    ret.sort(key=lambda a: a.slug)
+    return iter(ret)
   def __len__(self):
     return len(self.authors)
 
@@ -191,6 +193,8 @@ class TagCollection():
 tags = TagCollection()
 authors = AuthorCollection()
 courses: list[JekyllFile] = []
+journals: list[JekyllFile] = []
+publishers: list[JekyllFile] = []
 
 def normalized_author_name(author: str) -> str:
   if ' ' in author:
@@ -406,6 +410,16 @@ def load():
     if (not authorfile.is_file()) or authorfile.name.startswith('.'):
       continue
     authors.add(AuthorFile.load(authorfile))
+  for journalfile in root_folder.joinpath('_journals').iterdir():
+    if (not journalfile.is_file()) or journalfile.name.startswith('.'):
+      continue
+    journals.append(JekyllFile.load(journalfile))
+  for publisherfile in root_folder.joinpath('_publishers').iterdir():
+    if (not publisherfile.is_file()) or publisherfile.name.startswith('.'):
+      continue
+    publishers.append(JekyllFile.load(publisherfile))
+  journals.sort(key=lambda j: j.slug)
+  publishers.sort(key=lambda j: j.slug)
   data.load()
   if data.content_downloads:
     for c in content:

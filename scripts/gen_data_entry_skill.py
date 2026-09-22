@@ -1,5 +1,6 @@
 #!/bin/python3
 
+from collections.abc import Iterable
 import zipfile
 from pathlib import Path
 
@@ -8,6 +9,7 @@ import requests
 from strutils import git_root_folder
 from gen_controlled_vocab_doc import gen_document as gen_tags_doc
 from gen_controlled_vocab_doc import DOCUMENT_INTRO as TAG_DOC_INTRO
+import website
 
 SKILL_PREAMBLE = """---
 name: obu-data-entry
@@ -17,7 +19,7 @@ description: Guide for writing the content markdown files for OBU library items.
 # OBU Data Entry
 
 Unless otherwise asked, your task is to write the Jekyll markdown file for adding a given, indicated work to the OBU website.
-Don't open a pull request or anything like that, just write and give the user the requested markdown file with the appropriate filename.
+Give the user the full file path, the markdown file, and any relevant explanations.
 
 Below you'll find our instructions on the exact format of our content markdown files.
 The user prompt may provide you with some field values already (usually the drive link and course).
@@ -33,6 +35,16 @@ Remember that these tags aren't just keywords ("oh this is about this") but you 
 introducing the given topic (a much higher bar).
 """
 
+OTHER_DOCS_INTRO = """
+These references are short, simple markdown lists of entities and their slugs:
+```markdown
+- `entity-slug` = "The Full Name of that Entity"
+```
+
+For authors, periodicals, and publishers, if they're on the list, use their slug.
+Otherwise, use their name.
+"""
+
 content_path = git_root_folder/"_content"
 EXAMPLE_FILES = [
   content_path/"articles"/"monumental-stone-sutra-carvings-china-indian-pilgrim-sites_wenzel.md",
@@ -42,17 +54,27 @@ EXAMPLE_FILES = [
 
 def fetch_adding_items_wiki() -> str:
   req = requests.get("https://raw.githubusercontent.com/wiki/buddhist-uni/buddhist-uni.github.io/Adding-items-to-the-library.md")
+  assert req.ok, "Failed to fetch the adding items wiki page"
   return req.text
 
 def gen_main_skill_doc() -> str:
   ret = SKILL_PREAMBLE
-  ret += "\n# The obu_subject_ontology.md format\n\n" + TAG_DOC_INTRO
-  ret += "This concludes the information on how to read the `obu_subject_ontology.md` reference file.\n\n"
-  ret += "# Adding items to the library: Our content markdown file format\n\n"
+  ret += "\n# Adding items to the library: Our content markdown file format\n\n"
   ret += fetch_adding_items_wiki()
-  ret += f"\n\n# {len(EXAMPLE_FILES)} Examples"
+  ret += "\n\n# The obu_subject_ontology.md format\n\n" + TAG_DOC_INTRO
+  ret += "This concludes the information on how to read the `obu_subject_ontology.md` reference file.\n\n"
+  ret += "# The format for publishers.md, authors.md, journals.md\n"
+  ret += OTHER_DOCS_INTRO
+  ret += f"\n\n# Examples\n\nHere are {len(EXAMPLE_FILES)} examples of what a content markdown file should look like.\n"
   for example_path in EXAMPLE_FILES:
-    ret += "\n\n~~~\n" + example_path.read_text().strip() + "\n~~~"
+    ret += f"\n\n`{example_path.relative_to(git_root_folder)}`\n~~~markdown\n"
+    ret += example_path.read_text().strip() + "\n~~~"
+  return ret
+
+def gen_entity_doc(entities: Iterable[website.JekyllFile]) -> str:
+  ret = ""
+  for entry in iter(entities):
+    ret += f"- `{entry.slug}` = \"{entry.title}\"\n"
   return ret
 
 def main(outpath: Path, max_examples: int=1) -> int:
@@ -62,6 +84,19 @@ def main(outpath: Path, max_examples: int=1) -> int:
     skill.writestr(
       "references/obu_subject_ontology.md",
       gen_tags_doc(max_examples=max_examples, include_intro=False),
+    )
+    # The gen_tags_doc above implicitly loads the website data
+    skill.writestr(
+      "references/authors.md",
+      gen_entity_doc(website.authors),
+    )
+    skill.writestr(
+      "references/publishers.md",
+      gen_entity_doc(website.publishers),
+    )
+    skill.writestr(
+      "references/journals.md",
+      gen_entity_doc(website.journals),
     )
   print(f"Wrote \"{outpath}\"")
   return 0

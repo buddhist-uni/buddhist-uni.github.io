@@ -45,9 +45,9 @@ Do not tag everything about Buddhism with `buddhism`! Only the most introductory
 that parent tag. Most items about Buddhism should get a more specific tag, like "Buddhist Cosmology" or
 "Modern Chinese Buddhism," etc as appropriate.
 
-# The Format of this Document
+## The Format of the Document
 
-The rest of this markdown file will list and explain our current set of tags.
+The file lists and explain our current set of tags.
 
 The "Discriminative Vocabulary" section lists the most common terms that a one-vs-rest
 Support Vector Machine Classifier (SVC) learned to use to discriminate this tag as compared to the
