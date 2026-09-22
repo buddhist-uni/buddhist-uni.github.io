@@ -265,7 +265,7 @@ class TagTree:
         continue
       metadata = self.slug_to_metadata[course_slug]
       is_published_tag = (metadata.site_tag and metadata.site_tag.get('status') == 'published') or metadata.site_course is not None
-      if not (is_published_tag or piece.get('status') == 'featured'):
+      if not (is_published_tag or piece.get('status') == 'featured' or piece.is_solid):
         # consider 3-star published items or 4-star items on unpublished tags
         continue
       score = type_base_score[piece.category] * piece.page_count
