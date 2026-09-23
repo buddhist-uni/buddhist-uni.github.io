@@ -14,7 +14,7 @@ tags:
   - west
 year: 2017
 month: jun
-series: "The Zen Studies Podcast"
+series: zen-studies-pod_burk
 number: 18
 minutes: 23
 ---

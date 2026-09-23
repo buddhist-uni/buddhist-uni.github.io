@@ -434,7 +434,7 @@ Allison Goodwin gives a brief outline of the discrimination faced by women in Bu
 
 [CBT] Th.23, Th.25, Th.26, Th.47, Th.104, Th.118, Th.129, Th.155, Th.203, Th.207, Th.228
 {:.mb-0}
-- Western, "Protestant" Buddhists have selected certain strands from the early Canon to emphasize. Here, we read some of their favorite passages.
+- Western, "Protestant" Buddhists have selected certain strands from the early Canon to emphasize. Here, we read some of Western Buddhists' favorite passages. Think about how these passages compare with those we read before.  What is being highlighted here? What is not included here?
 
 {% include content_blurb.html category="papers" slug="altruism-in-classical-buddhism_lewis-todd" %}
 - A brief look back at Altruism, and one tiny example of Western Philosophy grappling with Buddhism. 
@@ -519,6 +519,9 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - And outside of the zendo, generosity and respect leads to a safe and nurturing community.
 
+{% include content_blurb.html category="av" slug="precepts1_burk-domyo" %}
+- What rules do the monks and nuns follow and why?
+
 ##### Cintita Chapter 5: The History of the Sāsana
 
 {% include content_blurb.html category="av" slug="end-of-the-buddhist-utopia_sujato" %}
@@ -528,8 +531,11 @@ Just as in Part 1 of the course, in part 2, we will read some additional essays 
 {:.mb-0}
 - The Buddha gives his answer to what will cause the sāsana to thrive or not.
 
+{% include content_blurb.html category="av" slug="precepts2_burk-domyo" %}
+- In this second half of her lecture on the monastic precepts, Domyo Burk explains how—and why—the Vinaya evolved when Buddhism came to China.
+
 {% include content_blurb.html category="essays" slug="monasticism-and-western-adaption_karma-lekshe-tsomo" %}
-- Buddhist monasticism faces many challenges as it comes West, especially for nuns, but looking to history and our principles can help us navigate the future.
+- Just as it did coming to China, Buddhist monasticism faces many challenges as it comes West. But looking to history and our principles can help us to guide the future.
 
 ##### Cintita Chapter 6: Folk Buddhism
 

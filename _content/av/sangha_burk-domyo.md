@@ -9,7 +9,7 @@ drive_links:
 course: sangha
 year: 2017
 month: may
-series: "The Zen Studies Podcast"
+series: zen-studies-pod_burk
 number: 16
 minutes: 35
 ---
