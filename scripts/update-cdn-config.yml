@@ -1,15 +1,5 @@
 BLACKLISTED_DOMAINS: !!set
-  accesstoinsight.org: null
-  archive.is: null
-  archive.org: null
-  caitlinjohnstone.com: null
-  daily.readingfaithfully.org: null
-  darrennaish.files.wordpress.com: null
-  discourse.suttacentral.net: null
-  dx.doi.org: null
   store.pariyatti.org: null
-  doi.org: null
-  greatergood.berkeley.edu: null
   harpers.org: null
   hbr.org: null
   jacobinmag.com: null
@@ -19,24 +9,14 @@ BLACKLISTED_DOMAINS: !!set
   plato.stanford.edu: null
   plumvillage.org: null
   pluralism.org: null
-  present.bhikkhuni.net: null
-  punctumbooks.com: null
-  sc.readingfaithfully.org: null
   seop.illc.uva.nl: null
   sinoindian.wordpress.com: null
-  stonerecords.co.uk: null
   store.pariyatti.org: null
   strikemag.org: null
   studybuddhism.com: null
-  suttacentral.net: null
-  suttafriends.org: null
   teahouse.buddhistdoor.net: null
   thefearlessheart.org: null
   tricycle.org: null
-  web.archive.org: null
-  www.aa.com.tr: null
-  www.accesstoinsight.org: null
-  www.bhikkhuni.net: null
   www.denverpost.com: null
   www.dissentmagazine.org: null
   www.guernicamag.com: null
@@ -46,9 +26,7 @@ BLACKLISTED_DOMAINS: !!set
   www.newyorker.com: null
   www.noahpinion.blog: null
   www.nybooks.com: null
-  www.paliaudio.com: null
   www.poetryfoundation.org: null
-  www.readingfaithfully.org: null
   www.suttas.net: null
   www.texasobserver.org: null
   www.theatlantic.com: null
@@ -127,17 +105,11 @@ SEARCHABLE_PDFS: !!set
   /content/essays/mind-and-its-endless-rebirth_suchart: null
   /content/monographs/nature-in-ebts_dhammika: null
 WHITELISTED_DOMAINS: !!set
-  2012books.lardbucket.org: null
-  academic.oup.com: null
   amaravati.org: null
   ancient-buddhist-texts.net: null
-  api.equinoxpub.com: null
-  archive.boston.com: null
-  arrowriver.ca: null
   bdkamerica.org: null
   bhantesuddhaso.com: null
   bhikkhucintita.wordpress.com: null
-  bit.ly: null
   blogs.dickinson.edu: null
   bps.lk: null
   bschawaii.org: null
@@ -146,10 +118,8 @@ WHITELISTED_DOMAINS: !!set
   ci.nii.ac.jp: null
   deepblue.lib.umich.edu: null
   dharmaebooks.org: null
-  dictionary.sutta.org: null
   digitalcommons.linfield.edu: null
   direct.mit.edu: null
-  drexel.edu: null
   dukelibraries.contentdm.oclc.org: null
   forestdhamma.org: null
   forestsangha.org: null
@@ -161,19 +131,14 @@ WHITELISTED_DOMAINS: !!set
   id.nii.ac.jp: null
   ijkh.khistory.org: null
   internationaljournaldharmastudies.springeropen.com: null
-  issuu.com: null
   jocbs.org: null
   journal.equinoxpub.com: null
   journals.lww.com: null
   journals.plos.org: null
   journals.ub.uni-heidelberg.de: null
-  lapislazulitexts.com: null
-  library.achievingthedream.org: null
   library.oapen.org: null
   link.springer.com: null
   media.amaravati.org: null
-  medium.com: null
-  name.readingfaithfully.org: null
   nap.nationalacademies.org: null
   newprairiepress.org: null
   nirc.nanzan-u.ac.jp: null
@@ -187,7 +152,6 @@ WHITELISTED_DOMAINS: !!set
   papers.ssrn.com: null
   pdx.pressbooks.pub: null
   ped.readingfaithfully.org: null
-  philosophyreligion.wordpress.com: null
   poj.peeters-leuven.be: null
   press.rebus.community: null
   pressbooks.bccampus.ca: null
@@ -198,7 +162,6 @@ WHITELISTED_DOMAINS: !!set
   santifm.org: null
   scholarlypublications.universiteitleiden.nl: null
   seeingthroughthenet.net: null
-  shardarogell.com: null
   shodhganga.inflibnet.ac.in: null
   sirimangalo.org: null
   socialsci.libretexts.org: null
@@ -214,13 +177,11 @@ WHITELISTED_DOMAINS: !!set
   www.abhayagiri.org: null
   www.ajahnchah.org: null
   www.ancient-buddhist-texts.net: null
-  www.are.na: null
   www.aupress.ca: null
   www.bps.lk: null
   www.buddhanet.net: null
   www.buddhistelibrary.org: null
   www.buddhistische-gesellschaft-berlin.de: null
-  www.degruyter.com: null
   www.dhammatalks.org: null
   www.dhammathai.org: null
   www.dharmasite.net: null
@@ -228,27 +189,15 @@ WHITELISTED_DOMAINS: !!set
   www.globalbuddhism.org: null
   www.gutenberg.org: null
   www.jocbs.org: null
-  www.jstor.org: null
   www.kammatthana.com: null
-  www.kbrl.gov.mm: null
   www.lotsawahouse.org: null
-  www.mediafire.com: null
-  www.metmuseum.org: null
   www.ncbi.nlm.nih.gov: null
-  www.opendemocracy.net: null
-  www.researchgate.net: null
-  www.scribd.com: null
-  www.sheldrake.org: null
   www.shengyen.org: null
   www.shin-ibs.edu: null
   www.sirimangalo.org: null
   www.suanmokkh.org: null
-  www.taylorfrancis.com: null
-  www.ucpress.edu: null
   www.un.org: null
   www.watpahnanachat.org: null
-  www.yorku.ca: null
   www.youtube.com: null
-  www.zakstein.org: null
   youtu.be: null
   youtube.com: null
