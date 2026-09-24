@@ -2,7 +2,7 @@
 title: "Saṃyutta Nikāya: An Anthology II"
 authors:
   - nyanananda
-external_url: "https://www.bps.lk/library-search-select.php?id=wh183"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh183"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1vgPPJ5vvFqe3iu92x4PMXkUQythoAjCf/view?usp=drivesdk"

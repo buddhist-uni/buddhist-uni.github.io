@@ -3,7 +3,7 @@ title: "The Discourse on Right View: The Sammādiṭṭhi Sutta and its Commenta
 authors:
   - nyanamoli
 editor: bodhi
-external_url: "https://www.bps.lk/olib/wh/wh377_Nyanamoli_Discourse-on-Right-View--Sammaditthi-Sutta.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh377_Nyanamoli_Discourse-on-Right-View--Sammaditthi-Sutta.html"
 drive_links:
   - "https://drive.google.com/file/d/1vNaEO6D35up3803sO9eqg8HSmJ1SdbVG/view?usp=drive_link"
   - "https://drive.google.com/file/d/1jRVsMvho4NHyuU57S6S_EUpkQ1SjY631/view?usp=drivesdk"

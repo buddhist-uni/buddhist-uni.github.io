@@ -3,8 +3,8 @@ title: "An Analysis of the Abhidhammatthasaṅgaha"
 editor: "Manfred Wierich"
 authors:
   - "U Thittila (?)"
-external_url: "https://www.holybooks.com/wp-content/uploads/An-Analysis-of-the-Abhidhammatthasaogaha.pdf"
-source_url: "https://www.bps.lk/olib/mi/mi001_U_Thitila_Analysis_of_Abhidhammatthasangaha.pdf"
+external_url: "https://web.archive.org/web/20251016064755if_/https://www.holybooks.com/wp-content/uploads/An-Analysis-of-the-Abhidhammatthasaogaha.pdf"
+source_url: "https://web.archive.org/web/20240909112112if_/https://www.bps.lk/olib/mi/mi001_U_Thitila_Analysis_of_Abhidhammatthasangaha.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1_Aqc3nHCnOFsNsWshdYVPkBV_lDcJCGs/view?usp=drivesdk"
 course: abhidhamma

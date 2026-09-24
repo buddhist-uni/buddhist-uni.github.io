@@ -2,7 +2,7 @@
 title: "The Satipaṭṭhāna Sutta: Its Application To Modern Life"
 authors:
   - gunaratna
-external_url: "https://www.bps.lk/olib/wh/wh060_Gunaratna_Satipatthana-Sutta-Its-Application.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh060_Gunaratna_Satipatthana-Sutta-Its-Application.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1YQrYrCts08KXTJ0-M_zmAEet8gWzxgE4/view?usp=drivesdk"

@@ -7,7 +7,7 @@ publisher: wisdom
 olid: OL672961M
 status: featured
 drive_links: ["https://drive.google.com/file/d/1K7ibt-ikSXHDrUkr9IS_rbRu9wyb5Oae/view?usp=drivesdk"]
-external_url: "https://www.bps.lk/olib/bp/bp417s_Nyanaponika-Hecker_Great-Disciples-Of-The-Buddha.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp417s_Nyanaponika-Hecker_Great-Disciples-Of-The-Buddha.pdf"
 course: characters
 tags:
   - setting

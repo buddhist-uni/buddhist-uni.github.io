@@ -1,6 +1,6 @@
 ---
 title: "Teacher of the Devas"
-external_url: "https://www.bps.lk/library-search-select.php?id=wh414"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh414"
 authors:
   - jootla
 drive_links:

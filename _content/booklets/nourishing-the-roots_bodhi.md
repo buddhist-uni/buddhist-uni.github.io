@@ -2,7 +2,7 @@
 title: "Nourishing the Roots: Essays on Buddhist Ethics"
 authors:
   - bodhi
-external_url: "https://www.bps.lk/library-search-select.php?id=wh259"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh259"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1vR8CfGTTbkUqo1HIidP9_gW7MKKFhbzA/view?usp=drivesdk"

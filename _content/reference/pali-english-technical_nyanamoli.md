@@ -3,7 +3,7 @@ title: "A Pali-Engish glossary of Buddhist technical terms"
 authors:
   - nyanamoli
 editor: bodhi
-external_url: "https://www.bps.lk/olib/bp/bp608s_Nyanamoli_Pali-Glossary.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp608s_Nyanamoli_Pali-Glossary.pdf"
 alternate_url: "https://www.academia.edu/64288969/A_Pali_Engish_glossary_of_Buddhist_technical_terms"
 drive_links:
   - "https://drive.google.com/file/d/1uzz4JUVvI8OE3mRGc0SuhJIMNamhmVih/view?usp=drivesdk"

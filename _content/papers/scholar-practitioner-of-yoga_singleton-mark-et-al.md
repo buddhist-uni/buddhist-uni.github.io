@@ -6,7 +6,6 @@ authors:
 editor: "Suzanne Newcombe and Karen O’Brien-Kop"
 external_url: "https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781351050753-5&type=chapterpdf"
 source_url: "https://doi.org/10.4324/9781351050753-5"
-alternate_url: "https://library.oapen.org/handle/20.500.12657/45974"
 drive_links:
   - "https://drive.google.com/file/d/1PyUJIc8JWqTlfHChmoxExymGoGStiCbe/view?usp=drivesdk"
 tags:

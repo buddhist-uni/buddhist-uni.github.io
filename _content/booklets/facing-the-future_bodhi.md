@@ -2,7 +2,7 @@
 title: "Facing the Future: Four Essays on the Social Relevance of Buddhism"
 authors:
   - bodhi
-external_url: "https://www.bps.lk/olib/wh/wh438_Bodhi_Facing-the-Future--Four-Essays.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh438_Bodhi_Facing-the-Future--Four-Essays.html"
 drive_links:
   - "https://drive.google.com/file/d/1TTRFz3_S4QENsUCA_GfpHMe4vU0SNTV0/view?usp=drivesdk"
   - "https://drive.google.com/file/d/10M9RPdgmZcBtZaT1co5ZBs6HitbPNJE9/view?usp=drivesdk"

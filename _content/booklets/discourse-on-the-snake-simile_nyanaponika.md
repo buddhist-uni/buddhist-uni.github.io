@@ -1,7 +1,7 @@
 ---
 title: "The Discourse on the Snake Simile: Alagaddūpama Sutta with Introduction and Notes"
 authors: [nyanaponika]
-external_url: "https://www.bps.lk/olib/wh/wh048_Nyanaponika_Discourse-on-the-Snake-Simile.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh048_Nyanaponika_Discourse-on-the-Snake-Simile.html"
 drive_links:
   - "https://drive.google.com/file/d/1tP92uYMlcT8R6cbysrXeNW7ICcikVjR5/view?usp=drive_link"
   - "https://drive.google.com/file/d/1bnlffq9KH5wRFuxzS-noQL7Wf_cV_bWp/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Pathways of Buddhist Thought: Four Essays"
 authors:
   - nyanamoli
-external_url: "https://www.bps.lk/olib/wh/wh052_Nyanamoli_Pathways-Of-Buddhist-Thought--Four-Essays.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh052_Nyanamoli_Pathways-Of-Buddhist-Thought--Four-Essays.html"
 drive_links:
   - "https://drive.google.com/file/d/13H_t4qn6I2erQv4DkH2VbiqW8Lue_1Iy/view?usp=sharing"
   - "https://drive.google.com/file/d/1widtMxxi5E0w8b2a7T9RZv_LaO5dVEM4/view?usp=drivesdk"

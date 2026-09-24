@@ -1,7 +1,7 @@
 ---
 title: "The Buddha and His Dhamma"
 authors: [bodhi]
-external_url: "https://www.bps.lk/olib/wh/wh433_Bodhi_Buddha-and-His-Dhamma--Two-Lectures.html"
+source_url: "https://web.archive.org/web/20251126081721/https://www.bps.lk/olib/wh/wh433_Bodhi_Buddha-and-His-Dhamma--Two-Lectures.html"
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/102SA3QPr5bdVRuYIcz2ZOvUmZ3XLzqPg/view?usp=drivesdk"

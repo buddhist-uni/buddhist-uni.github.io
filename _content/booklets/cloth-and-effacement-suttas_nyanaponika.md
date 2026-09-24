@@ -2,7 +2,7 @@
 title: "The Simile of the Cloth and The Discourse on Effacement: Two Discourses of the Buddha"
 authors:
   - nyanaponika
-external_url: "https://www.bps.lk/library-search-select.php?id=wh061"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh061"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1kQE57tTYEDJopGVPWs4cY3wNR6MoPVMP/view?usp=drivesdk"

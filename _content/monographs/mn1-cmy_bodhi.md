@@ -1,7 +1,7 @@
 ---
 title: "The Root of Existence: The Mūlapariyāya Sutta and its Commentaries"
 authors: [bodhi]
-external_url: "https://www.bps.lk/olib/bp/bp210s_Bodhi_Root-Of-Existance.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp210s_Bodhi_Root-Of-Existance.pdf"
 drive_links: ["https://drive.google.com/file/d/1qRzVUMuci1L14QtiaM84atNTceFnp-0c/view?usp=drivesdk"]
 course: emptiness
 tags:

@@ -2,7 +2,7 @@
 title: "The *Dhammapada*: The Buddha's Path of Wisdom"
 authors:
   - buddharakkhita
-external_url: "https://www.bps.lk/olib/bp/bp203s_Buddharakkhita_Dhammapada.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp203s_Buddharakkhita_Dhammapada.pdf"
 olid: OL27279597M
 drive_links:
   - "https://drive.google.com/file/d/1ut8kfwjoWTp3pQsRyAlIQy6gfFrGkdIV/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "The Therīgāthā: A Revaluation"
 authors:
   - "Vijitha Rajapakse"
-external_url: "https://www.bps.lk/olib/wh/wh436_RajaPakse_The-Therigatha--A-Revaluation.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh436_RajaPakse_The-Therigatha--A-Revaluation.html"
 drive_links:
   - "https://drive.google.com/file/d/1-9i9gE71VVRI9SQ1FIcJuxfHmKDeQkTt/view?usp=sharing"
   - "https://drive.google.com/file/d/1aaNe5MxHqPFTYv5QLP2dEjfD5r1eI5ek/view?usp=drivesdk"

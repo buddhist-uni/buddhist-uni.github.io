@@ -2,7 +2,7 @@
 title: "A Simple Guide to Life"
 authors:
   - bogoda-r
-external_url: "https://www.bps.lk/library-search-select.php?id=wh397"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh397"
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/1T0AlHk10mCEbn1ku2-adD-3ifGViNmfG/view?usp=drivesdk"

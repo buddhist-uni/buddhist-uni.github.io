@@ -2,7 +2,7 @@
 title: "The Walking Meditation: A Story"
 authors:
   - "Suvimalee Karunaratna"
-external_url: "https://www.bps.lk/olib/bl/bl113_Karunaratna_The-Walking-Meditation.html"
+source_url: "https://web.archive.org/web/20250425192714/https://www.bps.lk/olib/bl/bl113_Karunaratna_The-Walking-Meditation.html"
 drive_links:
   - "https://drive.google.com/file/d/1BJVhXDAZA5yVSrZhA3ajtHO_uOfR3aIW/view?usp=sharing"
   - "https://drive.google.com/file/d/1A-TQThyZjc2062h_4u89ACsNnRq4bwbd/view?usp=drivesdk"

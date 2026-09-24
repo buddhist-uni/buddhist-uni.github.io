@@ -2,7 +2,7 @@
 title: "Inspiration from Enlightened Nuns"
 authors:
   - jootla
-external_url: "https://www.bps.lk/olib/wh/wh349_Jootla_Inspiration-From-Enlightened-Nuns.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh349_Jootla_Inspiration-From-Enlightened-Nuns.html"
 alternate_url: "https://www.buddhanet.net/pdf_file/inspire-nuns6.pdf"
 drive_links:
   - "https://drive.google.com/file/d/16vjDaUPkwBc4ffP1TnG2eBjMvixA_y10/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Dhammapada: The Way of Truth"
 authors:
   - feldmeier-peter
-external_url: "https://www.bps.lk/olib/bp/bp433s_Feldmeyer_Dhammapada.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp433s_Feldmeyer_Dhammapada.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1uEpZIwwdToet3arA4bIXQgOKKV-K4lfA/view?usp=sharing"
 course: dhp

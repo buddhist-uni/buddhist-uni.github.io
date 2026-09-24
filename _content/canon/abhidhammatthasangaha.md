@@ -4,7 +4,7 @@ authors:
 - "Ācariya Anuruddha"
 editor: bodhi
 translator: narada
-external_url: "https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf"
+external_url: "https://web.archive.org/web/20221204152400if_/https://www.bps.lk/olib/bp/bp304s_Bfodhi_Comprehensive_Manual_of_Abhidhamma.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1_WAHd3QNjVO9opZS7k-3wXEWDFBC8TIj/view?usp=sharing"
 course: abhidhamma

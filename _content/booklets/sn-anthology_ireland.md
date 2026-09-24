@@ -2,7 +2,7 @@
 title: "Saṃyutta Nikāya: An Anthology I"
 authors:
   - ireland
-external_url: "https://www.bps.lk/olib/wh/wh107_Ireland_Samyutta-Nikaya-Anthology-I.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh107_Ireland_Samyutta-Nikaya-Anthology-I.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1Axm4SM4T4cR9UEIfzAYDOTjBjUWlbwww/view?usp=drivesdk"

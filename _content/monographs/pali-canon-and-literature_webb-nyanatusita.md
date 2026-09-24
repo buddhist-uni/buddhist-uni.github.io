@@ -3,7 +3,7 @@ title: "An Analysis of the Pali Canon and a Reference Table of Pali Literature"
 authors:
   - "Russell Webb"
   - "Bhikkhu Nyanatusita"
-external_url: "https://www.bps.lk/olib/bp/bp607s_Webb_Analysis-Of-The-Pali-Canon.pdf"
+external_url: "https://web.archive.org/web/20210506123316if_/https://www.bps.lk/olib/bp/bp607s_Webb_Analysis-Of-The-Pali-Canon.pdf"
 drive_links:
   - "https://drive.google.com/file/d/11o_3IsbbbH-bP6HLeZmaAdUcAOyRR6CB/view?usp=drivesdk"
 tags:

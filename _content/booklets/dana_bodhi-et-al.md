@@ -7,7 +7,7 @@ authors:
   - gorkom
   - "Ācariya Dhammapāla"
 editor: bodhi
-external_url: "https://www.bps.lk/olib/wh/wh367_Bodhi_Dana--The-Practice-of-Giving.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh367_Bodhi_Dana--The-Practice-of-Giving.html"
 formats: [pdf, epub, mp3]
 drive_links:
   - "https://drive.google.com/file/d/1QfTXcgS-0L9In_hEyxphaPo4GjzYzlEg/view?usp=drivesdk"

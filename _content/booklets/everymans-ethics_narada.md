@@ -2,7 +2,7 @@
 title: "Everyman's Ethics: Four Discourses of the Buddha"
 authors:
   - narada
-external_url: "https://www.bps.lk/olib/wh/wh014_Narada_Everymans-Ethics--Four-Discourses-of-Buddha.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh014_Narada_Everymans-Ethics--Four-Discourses-of-Buddha.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1lhnBSYqxzo1brwF6op56Q5mkcT4c4QGC/view?usp=drivesdk"

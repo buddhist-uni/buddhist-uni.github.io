@@ -2,7 +2,7 @@
 title: "The Psychology of Emotions in Buddhist Perspective"
 authors:
   - "Padmasiri de Silva"
-external_url: "https://www.bps.lk/olib/wh/wh237_de-Silva_Psychology-of-Emotions-in-Buddhist-Perspective.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh237_de-Silva_Psychology-of-Emotions-in-Buddhist-Perspective.html"
 drive_links:
   - "https://drive.google.com/file/d/1O3l6DPsR-41ngNpw2HODJVHD0Z-crBcq/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1OW-Zm4Q90AbK8oWbSwgXUCSLdMn99nce/view?usp=drivesdk"

@@ -3,7 +3,7 @@ title: Cultivating Wisdom
 order: 10
 description: 
 image: https://buddhistuniversity.net/imgs/function/stupas.jpg
-image_info: <a href="https://www.flickr.com/photos/joi/49201972493">Joi Ito</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+image_info: <a href="https://web.archive.org/web/20221222211243/https://www.flickr.com/photos/joi/49201972493/">Joi Ito</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
 ---
 
 ## Homework

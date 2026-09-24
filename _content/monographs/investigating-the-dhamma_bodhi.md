@@ -3,7 +3,7 @@ title: "Investigating the Dhamma: A Collection of Papers"
 authors:
   - bodhi
 editor: "Bhikkhu Nyanatusita"
-external_url: "https://www.bps.lk/olib/bp/bp437s_Bodhi_Investigating-Dhamma.pdf"
+external_url: "https://web.archive.org/web/20220217142848if_/https://www.bps.lk/olib/bp/bp437s_Bodhi_Investigating-Dhamma.pdf"
 tags:
   - dialogue
   - philosophy

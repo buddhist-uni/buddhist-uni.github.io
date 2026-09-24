@@ -3,7 +3,7 @@ title: "Buddhist Dictionary: A Manual of Buddhist Terms and Doctrines"
 authors:
   - "Nyanatiloka Thera"
 editor: nyanaponika
-external_url: "https://www.bps.lk/olib/bp/bp601s_Nyanatiloka_Buddhist-Dictonary.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp601s_Nyanatiloka_Buddhist-Dictonary.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1kWBA0T7oncojEWYlZD3nEwisb_LBu6qN/view?usp=drivesdk"
 course: pali-dictionaries

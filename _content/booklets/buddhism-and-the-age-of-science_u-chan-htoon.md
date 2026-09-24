@@ -2,7 +2,7 @@
 title: "Buddhism and the Age of Science: Two Addresses"
 authors:
   - "U Chan Htoon"
-external_url: "https://www.bps.lk/olib/wh/wh036_U_Chan_Htoon_Buddhism-and-the-Age-of-Science.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh036_U_Chan_Htoon_Buddhism-and-the-Age-of-Science.html"
 drive_links:
   - "https://drive.google.com/file/d/1BTTnxsqlFxMfvY0y2iriFP7s4X2fUCYT/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1jYErsVODliIZNXj8D9jzakJOLAnYOkgW/view?usp=drivesdk"

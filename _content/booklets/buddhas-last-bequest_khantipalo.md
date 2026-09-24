@@ -1,7 +1,7 @@
 ---
 title: "The Buddha's Last Bequest: A Translation from the Chinese Tipiṭaka"
 authors: [mills-laurence]
-external_url: "https://www.bps.lk/olib/wh/wh112_Buddhas-Last-Bequest.html"
+source_url: "https://web.archive.org/web/20251126083756/https://www.bps.lk/olib/wh/wh112_Buddhas-Last-Bequest.html"
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1TP-wX8mmY9CbO4GFkNUC9mH7t0zXX5fb/view?usp=drivesdk", "https://drive.google.com/file/d/1uZ-0IKr6dLg6NqjTGpDhQl6Fd1m8rMZx/view?usp=drivesdk"]
 file_links:

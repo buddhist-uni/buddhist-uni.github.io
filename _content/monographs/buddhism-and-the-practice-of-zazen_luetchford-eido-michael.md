@@ -2,7 +2,7 @@
 title: "Introduction to Buddhism and the Practice of Zazen: The Teachings of Gudo Nishijima Roshi"
 authors:
   - "Eido Michael Luetchford"
-external_url: "https://www.holybooks.com/wp-content/uploads/Introduction-to-Buddhism-and-the-Practice-of-Zazen.pdf"
+external_url: "https://web.archive.org/web/20120813042020if_/https://www.holybooks.com/wp-content/uploads/Introduction-to-Buddhism-and-the-Practice-of-Zazen.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1rPWoH_7ICHjMFm6ylp1xlUFgyblurU1r/view?usp=sharing"
 course: japanese

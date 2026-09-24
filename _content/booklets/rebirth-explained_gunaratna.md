@@ -2,7 +2,7 @@
 title: "Rebirth Explained"
 authors:
   - gunaratna
-external_url: "https://www.bps.lk/olib/wh/wh167_Gunaratna_Rebirth-Explained.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh167_Gunaratna_Rebirth-Explained.html"
 drive_links:
   - "https://drive.google.com/file/d/1dV85oERNwcLpWKJi5ac0cXWCCXCv0Vee/view?usp=sharing"
   - "https://drive.google.com/file/d/1dFiujPy2TzWR-rAcUz49VvS6Wc9J55Fo/view?usp=drivesdk"

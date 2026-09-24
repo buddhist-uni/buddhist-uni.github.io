@@ -5,7 +5,7 @@ translator: nyanaponika
 olid: OL13909231M
 alternate_url: "http://www.accesstoinsight.org/lib/authors/mahasi/progress.html"
 source_url: "https://archive.org/download/the-progress-of-insight-1965-pali-english-bilingual-version-mahasi-sayadaw.pdf/The%20Progress%20of%20Insight%20%281965%20P%C4%81%E1%B8%B7i-English%20Bilingual%20Version%29%20-%20Mahasi%20Sayadaw.pdf_text.pdf"
-external_url: "https://www.bps.lk/olib/bp/bp504s_Mahasi_Progress-of-Insight.pdf"
+source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp504s_Mahasi_Progress-of-Insight.pdf"
 year: 1994
 drive_links: ["https://drive.google.com/file/d/1ULKZ4NWeetlEXhw4hS6zIf_POBwQk2KW/view?usp=drivesdk"]
 course: nibbana

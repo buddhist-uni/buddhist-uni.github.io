@@ -2,8 +2,8 @@
 title: "*Anattā* and *Nibbāna*: Egolessness and Deliverance"
 authors:
   - nyanaponika
-external_url: "https://bps.lk/olib/wh/wh011_Nyanaponika_Anatta-and-nibbana--Egolessness-and-Deliverance.html"
-alternate_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X/9/f/9fe69ccb810ba8abd9cd9e0df0c28bde1d5af015.pdf"
+source_url: "https://web.archive.org/web/20260520082930/https://bps.lk/olib/wh/wh011_Nyanaponika_Anatta-and-nibbana--Egolessness-and-Deliverance.html"
+external_url: "https://scdd.sfo2.cdn.digitaloceanspaces.com/uploads/original/3X/9/f/9fe69ccb810ba8abd9cd9e0df0c28bde1d5af015.pdf"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/173TzCeaj1HJ0R-b4p1dncNoUBJcbPpBF/view?usp=drivesdk"

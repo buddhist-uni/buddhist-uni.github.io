@@ -2,7 +2,7 @@
 title: "Making Sense of World History"
 authors:
   - "Rick Szostak"
-external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/42090/9781000201611.pdf"
+external_url: "https://web.archive.org/web/20211020085245if_/https://library.oapen.org/bitstream/handle/20.500.12657/42090/9781000201611.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1QVlua1miO_EhmaUYHOe1ZzPpQ7PJHFec/view?usp=drivesdk"
 course: time

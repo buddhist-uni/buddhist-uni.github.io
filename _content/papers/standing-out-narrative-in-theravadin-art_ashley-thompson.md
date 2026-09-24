@@ -2,7 +2,7 @@
 title: "Standing out from the narrative in Theravādin art"
 authors:
   - "Ashley Thompson"
-external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/54477/9781351026666_10.4324_9781351026666-25.pdf?sequence=1&isAllowed=y"
+external_url: "https://web.archive.org/web/20240716074347if_/https://library.oapen.org/bitstream/handle/20.500.12657/54477/9781351026666_10.4324_9781351026666-25.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1JQjJfPoIuTnzf32bjscChaLdVwtmLTIb/view?usp=sharing"
 status: featured

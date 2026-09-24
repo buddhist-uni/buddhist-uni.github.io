@@ -2,7 +2,7 @@
 title: "Within Our Own Hearts: Twelve Dhamma Talks on Meditation Practice"
 authors:
   - khema
-external_url: "https://www.bps.lk/olib/bp/bp518s_Khema_Within-Our-Own-Hearts.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp518s_Khema_Within-Our-Own-Hearts.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1TIl-utsdDn0DpKPzCwy_VSMy6L5pK552/view?usp=drivesdk"
 tags:

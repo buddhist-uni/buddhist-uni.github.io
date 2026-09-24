@@ -2,7 +2,7 @@
 title: "The Message in the Teachings of Kamma, Rebirth, & Saṃsāra: A Gateway to Deeper Understanding"
 authors:
   - "Ashin Ottama"
-external_url: "https://www.bps.lk/olib/wh/wh425_Ottama_Message-in-Kamma-Rebirth-Samsara.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh425_Ottama_Message-in-Kamma-Rebirth-Samsara.html"
 drive_links:
   - "https://drive.google.com/file/d/13sdNUT8DcDFa1P8B2AKD1vp2WXKmDb1P/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1bumsfRfB7CvQ88ghGAgJYt8DoM7mZsv9/view?usp=drivesdk"

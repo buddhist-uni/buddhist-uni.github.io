@@ -2,7 +2,7 @@
 title: "Saṃyutta Nikāya: An Anthology III"
 authors:
   - walshe
-external_url: "https://www.bps.lk/olib/wh/wh318_Walshe_Samyutta-Nikaya-Anthology-III.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh318_Walshe_Samyutta-Nikaya-Anthology-III.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1i_5lm08WLk-CTVjOSrtZpWPH8ei1kHll/view?usp=drivesdk"

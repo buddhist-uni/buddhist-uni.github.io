@@ -2,7 +2,7 @@
 title: "Similes of the Buddha"
 authors:
   - hecker
-external_url: "https://www.bps.lk/library-search-select.php?id=bp427s"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=bp427s"
 olid: OL25173869M
 drive_links:
   - "https://drive.google.com/file/d/1HiFbNgj9onxhCmqRa7_0lmxDrP4FWQww/view?usp=drivesdk"

@@ -2,7 +2,7 @@
 title: "Buddha, My Refuge"
 authors:
   - mills-laurence
-external_url: "https://www.bps.lk/olib/bp/bp409s_Khantipalo_Buddha-My-Refuge.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp409s_Khantipalo_Buddha-My-Refuge.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1KbXfQERhE_aYqq_Zi5IcZRxEjhqM9dnk/view?usp=drivesdk"
 course: buddha
@@ -11,8 +11,6 @@ tags:
   - buddhanusati
   - faith
   - problems
-  - nibbana
-  - thought
 year: 1990
 olid: OL49629298M
 publisher: bps

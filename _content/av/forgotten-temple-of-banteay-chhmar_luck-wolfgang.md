@@ -5,7 +5,7 @@ authors:
 editor: "Karl-Heinz Satzger"
 subcat: film
 publisher: "Deutsche Welle"
-external_url: "https://youtu.be/mkeCUFpIDFc"
+external_url: "https://youtu.be/LUduOVmUVWk"
 course: cambodian
 tags:
   - buddhist-architecture

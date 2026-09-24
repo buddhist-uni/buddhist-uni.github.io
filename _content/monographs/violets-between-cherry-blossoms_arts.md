@@ -2,7 +2,7 @@
 title: "Violets between Cherry Blossoms: The diffusion of classical motifs to the East"
 authors:
   - "P. L. W. Arts"
-external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/32877/595093.pdf"
+external_url: "https://web.archive.org/web/20240909062255if_/https://library.oapen.org/bitstream/handle/20.500.12657/32877/595093.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1Xx7pfPP6xYxlu1e0ZYsV36FUHFqhe0fk/view?usp=drivesdk"
 course: classical-antiquity

@@ -3,7 +3,7 @@ title: "Satipaṭṭhana Vipassanā: Insight through Mindfulness"
 authors:
   - mahasi
 translator: "U Pe Thin"
-external_url: "https://www.bps.lk/olib/wh/wh370_Mahasi_Satipatthana-Vipassana--Insight-Thru-Mindfulness.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh370_Mahasi_Satipatthana-Vipassana--Insight-Thru-Mindfulness.html"
 drive_links:
   - "https://drive.google.com/file/d/1e_BUWyw72ncg-3YtrqQDHP7uLjqkBq-M/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1DJfigbZwP245FnNjkM12Z7Ry0wyuWrto/view?usp=drivesdk"

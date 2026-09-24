@@ -2,7 +2,7 @@
 title: "One’s Own Good And Another’s"
 authors:
   - "David Maurice"
-external_url: "https://www.bps.lk/olib/bl/bl007_Maurice_Ones-Own-Good--And-An%E2%94%AC%D0%BDothers.html"
+source_url: "https://web.archive.org/web/20250327074248/https://www.bps.lk/olib/bl/bl007_Maurice_Ones-Own-Good--And-An%E2%94%AC%D0%BDothers.html"
 drive_links:
   - "https://drive.google.com/file/d/12oJ3KSnF_Eaat81GWxaoXC2O5LeOjqqY/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1I3negkT9-e3vG1MF8eQqIk4cnAxrQpWH/view?usp=drivesdk"

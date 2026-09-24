@@ -5,7 +5,7 @@ authors:
   - desilva
   - "Padmasiri de Silva and others"
 editor: "Klas Sandell"
-external_url: "https://www.bps.lk/olib/wh/wh346_Sandell-etal_Buddhist-Perspectives-on-the-Ecocrisis.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh346_Sandell-etal_Buddhist-Perspectives-on-the-Ecocrisis.html"
 formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1CsxD040D1w_SxyrhWLkSyByTNASQ9Fqa/view?usp=drivesdk"

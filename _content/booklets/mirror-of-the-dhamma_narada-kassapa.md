@@ -2,7 +2,7 @@
 title: "The Mirror of the Dhamma: A Manual of Buddhist Chanting and Devotional Texts"
 authors: [narada, "Bhikkhu Kassapa"]
 editor: mills-laurence
-external_url: "https://www.bps.lk/library-search-select.php?id=wh054"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh054"
 drive_links:
   - "https://drive.google.com/file/d/1gathddwVUSoH7HxF8OncjR2SGc4XfIAe/view?usp=drivesdk"
 file_links:

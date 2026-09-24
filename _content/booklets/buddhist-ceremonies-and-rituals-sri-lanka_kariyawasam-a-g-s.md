@@ -2,7 +2,7 @@
 title: "Buddhist Ceremonies and Rituals of Sri Lanka"
 authors:
   - "A. G. S. Kariyawasam"
-source_url: "https://www.bps.lk/library-search-select.php?id=wh402"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh402"
 external_url: "https://www.buddhanet.net/pdf_file/ceremonies-srilanka6.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1PeuWzLMSX9OZn1d7K2m98PA6vVYrRrub/view?usp=sharing"

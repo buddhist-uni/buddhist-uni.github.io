@@ -2,7 +2,7 @@
 title: "Religion, Gender, and Politics in Medieval Sri Lanka: The Reconstruction of Buddhist Kingship, ca. 1070–1215"
 authors:
   - "Bruno M. Shirley"
-external_url: "https://directory.doabooks.org/handle/20.500.12854/173564"
+external_url: "https://www.uplopen.com/books/12301/files/7b2437bf-65ad-42e6-b9cf-2c2e6ee69d58.pdf"
 source_url: "https://doi.org/10.17302/kshl2567"
 drive_links:
   - "https://drive.google.com/file/d/1wGT7jWddUcqUXm6-66urZvVfymcK4Yxx/view?usp=drivesdk"

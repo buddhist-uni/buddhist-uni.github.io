@@ -1,6 +1,6 @@
 ---
 title: "The Great Discourse on Causation: The *Mahānidāna Sutta* and its Commentaries"
-external_url: "https://www.bps.lk/olib/bp/bp211s_Bodhi_Great-Discourse-n-Causation.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp211s_Bodhi_Great-Discourse-n-Causation.pdf"
 authors: [bodhi]
 drive_links: ["https://drive.google.com/file/d/1hS3v0eB75ngT-CT74JGEJSLc9wZ4JpHR"]
 course: origination

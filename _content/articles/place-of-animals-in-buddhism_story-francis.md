@@ -2,7 +2,7 @@
 title: "The Place of Animals in Buddhism"
 authors:
   - story-francis
-external_url: "https://www.bps.lk/olib/bl/bl023_Story_The-Place-of-Animals-in-Buddhism.html"
+source_url: "https://web.archive.org/web/20250718042700/http://bps.lk/olib/bl/bl023_Story_The-Place-of-Animals-in-Buddhism.html"
 drive_links:
   - "https://drive.google.com/file/d/1gi9LYoz6lqu2rOkaxdPbeVpixKepqDBv/view?usp=sharing"
   - "https://drive.google.com/file/d/1v3BxfUT7uyz8x-QU7WZL-eF-jvmmUsqO/view?usp=drivesdk"

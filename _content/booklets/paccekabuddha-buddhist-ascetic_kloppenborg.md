@@ -2,7 +2,7 @@
 title: "The Paccekabuddha: A Buddhist Ascetic"
 authors:
   - "Ria Kloppenborg"
-external_url: "https://www.bps.lk/olib/wh/wh305_Kloppenborg_Paccekabuddha-Concept-In-Pali-Canon-Commentary.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh305_Kloppenborg_Paccekabuddha-Concept-In-Pali-Canon-Commentary.html"
 drive_links:
   - "https://drive.google.com/file/d/1TbJlTweArco_juAatQ9HTPRuTPObjLPH/view?usp=drive_link"
   - "https://drive.google.com/file/d/11dRjuzuyGSdUWz1X70Rk-QpePBYKSUF7/view?usp=drivesdk"

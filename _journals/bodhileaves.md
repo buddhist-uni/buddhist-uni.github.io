@@ -1,7 +1,7 @@
 ---
 title: "Bodhi Leaves"
 publisher: bps
-external_url: "https://www.bps.lk/library_bodhileaves.php"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library_bodhileaves.php"
 year: 1958
 ---
 

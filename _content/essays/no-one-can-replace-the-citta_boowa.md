@@ -3,7 +3,7 @@ title: "No One Can Replace the Citta"
 authors:
   - boowa
 translator: "Steven Towler"
-external_url: "https://www.holybooks.com/wp-content/uploads/No-One-Can-Replace-the-Citta.pdf"
+external_url: "https://web.archive.org/web/20250712194325if_/https://www.holybooks.com/wp-content/uploads/No-One-Can-Replace-the-Citta.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1vc-3bID3rcdQj8DmYyuPw-KQAPw7ngCe/view?usp=drive_link"
 course: thai

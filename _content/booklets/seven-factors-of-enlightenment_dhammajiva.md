@@ -2,7 +2,7 @@
 title: "The Seven Factors of Enlightenment"
 authors:
   - "Venerable Dhammajīva"
-external_url: "https://www.holybooks.com/wp-content/uploads/the-Seven-Factors-of-Awakening.pdf"
+external_url: "https://web.archive.org/web/20130404073735if_/https://www.holybooks.com/wp-content/uploads/the-Seven-Factors-of-Awakening.pdf"
 formats: [pdf]
 drive_links:
   - "https://drive.google.com/file/d/1sXwCuohuC23juwnNzyDFfR-lTn-Gf_mD/view?usp=drivesdk"

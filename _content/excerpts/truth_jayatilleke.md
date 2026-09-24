@@ -2,7 +2,7 @@
 title: "The Buddhist Conception of Truth"
 authors:
   - jayatilleke
-source_url: "https://www.bps.lk/olib/wh/wh162_Jayatilleke_Facets-of-Buddhist-Thought.html#TheBuddhistConceptionofTruth"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh162_Jayatilleke_Facets-of-Buddhist-Thought.html#TheBuddhistConceptionofTruth"
 file_links:
   - "exclusive_01/The%20Buddhist%20Conception%20of%20Truth%20-%20Jayatilleke.pdf"
 drive_links:

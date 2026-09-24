@@ -51,7 +51,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Access to Insight](https://www.accesstoinsight.org/)
 * [BuddhaNet](https://www.buddhanet.net/ebooks)
 * [DhammaTalks.net](http://dhammatalks.net/)
-* The [Handful of Leaves Library](https://web.archive.org/web/20211205015005/http://ahandfulofleaves.org/Library.html)
+* The Handful of Leaves Library [[Archive](https://web.archive.org/web/20211205015005/http://ahandfulofleaves.org/Library.html)]
 * [SuttaReadings.net](https://www.suttareadings.net/audio/index-readers.html)
 * [Dharma Seed](https://dharmaseed.org/talks)
 * [Audio Dharma](https://www.audiodharma.org/)
@@ -67,7 +67,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 * [Study Buddhism](https://studybuddhism.com/)
 * [TibetHouse.jp](https://www.tibethouse.jp/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/%e3%83%81%e3%83%99%e3%83%83%e3%83%88%e4%bb%8f%e6%95%99/%e5%90%84%e7%a8%ae%e7%b5%8c%e6%9c%acpdf%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89/)
 * [Abhidhamma.com](http://abhidhamma.com/)
-* [HolyBooks.com](https://www.holybooks.com)
+* HolyBooks.com [[Archive](https://web.archive.org/web/20260820220436/https://www.holybooks.com/)]
 * [The University at Buffalo Buddhist Bibliographies](https://research.lib.buffalo.edu/buddhism/)
 * [The Open Research Library](https://openresearchlibrary.org/search-results/g%3DBuddhism/list)
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/subjects)
@@ -92,7 +92,7 @@ Only a tiny fraction of their contents could be featured on this website, so ple
 ## Open Access Publishers
 
 * [Pariyatti](https://store.pariyatti.org/collections/ebooks)
-* [The Buddhist Publication Society](https://www.bps.lk/library.php)
+* The Buddhist Publication Society [[Archive](https://web.archive.org/web/20240829065458/https://www.bps.lk/library.php)]
 * [Hamburg University Press](https://www.buddhismuskunde.uni-hamburg.de/en/publikationen/hamburg-buddhist-studies.html)
 * The Berkeley [Institute of Buddhist Studies](https://www.shin-ibs.edu/research/archived-publications-and-research-projects/)
 * [The Agama Research Group](http://agamaresearch.dila.edu.tw/publications)

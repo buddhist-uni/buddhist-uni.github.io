@@ -3,7 +3,7 @@ title: "Vipassanā Dīpanī: Manual of Insight"
 authors:
   - ledi
 translator: "U Ñāṇa Mahāthera"
-external_url: "https://www.bps.lk/library-search-select.php?id=wh031"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-select.php?id=wh031"
 drive_links:
   - "https://drive.google.com/file/d/1852KUbRCytIfSKJv8zQH5FL9ftABFykk/view?usp=sharing"
   - "https://drive.google.com/file/d/1i_b6kqiF4zB4FS8zb7C_dWQQ5i9b-77F/view?usp=drive_link"

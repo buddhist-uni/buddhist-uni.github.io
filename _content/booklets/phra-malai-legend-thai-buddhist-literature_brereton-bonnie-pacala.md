@@ -3,7 +3,8 @@ title: "The Phra Malai legend in Thai Buddhist literature: A study of three text
 authors:
   - "Bonnie Pacala Brereton"
 subcat: thesis
-external_url: "https://deepblue.lib.umich.edu/handle/2027.42/128920"
+external_url: "https://deepblue.lib.umich.edu/bitstreams/c7aa7132-468d-453f-80de-324d2cba3e18/download"
+source_url: "https://hdl.handle.net/2027.42/128920"
 drive_links:
   - "https://drive.google.com/file/d/1TAZiogCXp5X0oNxiRzcv_YmNM-X21vmM/view?usp=sharing"
 file_links:

@@ -2,7 +2,7 @@
 title: "The Buddha’s Words on Kamma: Four Discourses of the Buddha from the Majjhima Nikāya"
 authors:
   - nyanamoli
-external_url: "https://www.bps.lk/olib/wh/wh248_Nyanamoli_Buddhas-Words-On-Kamma.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh248_Nyanamoli_Buddhas-Words-On-Kamma.html"
 drive_links:
   - "https://drive.google.com/file/d/1fMhJb1rPPZoqRNojDwRKHsmt6cp89isU/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Ny2GFbXmtaO180g1qVmwBlGCPnpK4P9f/view?usp=drivesdk"

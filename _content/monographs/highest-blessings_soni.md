@@ -3,7 +3,7 @@ title: "Life's Highest Blessings"
 authors:
   - "R. L. Soni"
 editor: mills-laurence
-external_url: "https://www.bps.lk/olib/bp/bp432s_Soni_Lives-Highest-Blessings.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp432s_Soni_Lives-Highest-Blessings.pdf"
 drive_links:
   - "https://drive.google.com/file/d/19LaCzdStL6NDLWJIBWpMSgNsFUPLD9LD/view?usp=drivesdk"
 course: pali-language

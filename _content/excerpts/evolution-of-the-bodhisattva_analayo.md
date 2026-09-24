@@ -7,7 +7,7 @@ booktitle: "The Bodhisattva Ideal: Essays on the Emergence of Mahāyāna"
 pages: "165--208"
 publisher: bps
 external_url: "https://www.academia.edu/14932300/The_Evolution_of_the_Bodhisattva_Concept_in_Early_Buddhist_Canonical_Literature"
-source_url: "https://www.bps.lk/olib/bp/bp625s_The-Bodhisatva-Ideal.pdf"
+source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp625s_The-Bodhisatva-Ideal.pdf"
 year: 2013
 drive_links:
  - "https://drive.google.com/file/d/1K7wd73VglvWc5aNEOIOYPPGGvBlelFbF/view?usp=drivesdk"

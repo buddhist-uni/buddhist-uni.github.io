@@ -2,7 +2,7 @@
 title: "The Message of the Saints: Thera-Therī-Gāthā"
 authors:
   - gunaratna
-external_url: "https://www.bps.lk/olib/wh/wh135_Gunaratna_Message-of-the-Saints--Thera-Theri-Gatha.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh135_Gunaratna_Message-of-the-Saints--Thera-Theri-Gatha.html"
 drive_links:
   - "https://drive.google.com/file/d/1aSS7gD9gkVLtxYhu7ouVMZDlE1Nlor8P/view?usp=sharing"
   - "https://drive.google.com/file/d/1yuUdaBIKuw64D7wT0ZiV7qRw_EZnOvqx/view?usp=drivesdk"

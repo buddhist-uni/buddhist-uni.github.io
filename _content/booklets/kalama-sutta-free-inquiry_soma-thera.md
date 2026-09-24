@@ -2,7 +2,7 @@
 title: "Kālāma Sutta: The Buddha's Charter of Free Inquiry"
 authors:
   - "Soma Thera"
-external_url: "https://www.bps.lk/olib/wh/wh008_Soma_Buddhas-Charter-of-Free-Inquiry.html"
+source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh008_Soma_Buddhas-Charter-of-Free-Inquiry.html"
 drive_links:
   - "https://drive.google.com/file/d/1yGla2iZUVMXDBkIypWv82im2c0msbFec/view?usp=sharing"
   - "https://drive.google.com/file/d/11YcJ8r3uMYK8B5LWAE8cM8V5CnwMjPIx/view?usp=drivesdk"

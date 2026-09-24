@@ -2,7 +2,7 @@
 title: "The Navel of the Earth: The History and Significance of Bodh Gaya"
 authors: [dhammika]
 external_url: "https://budblooms.org/the-navel-of-the-earth/"
-source_url: "https://www.bps.lk/olib/bp/bp630s_Dhammika_Navel-of-the-Earth.pdf"
+source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp630s_Dhammika_Navel-of-the-Earth.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1eTjV6BUvxJGownaWDFVSA5GQTnlWN_j3/view?usp=drivesdk"
 file_links:

@@ -2,7 +2,7 @@
 title: "Abhidharma Studies: Researches in Buddhist Psychology"
 authors:
   - nyanaponika
-external_url: "https://www.bps.lk/olib/bp/bp303s_Nyanaponika_Abhidhamma-Studies.pdf"
+external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp303s_Nyanaponika_Abhidhamma-Studies.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1PwqpEVmpk8qXB6kPquVYs2fgksAq-hWp/view?usp=drive_link"
   - "https://drive.google.com/file/d/1Fic8Okn-t9oQ7qsvX44-8KgblFXFdzf_/view?usp=drivesdk"

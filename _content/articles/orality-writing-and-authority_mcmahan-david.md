@@ -4,7 +4,7 @@ authors:
   - mcmahan-david
 file_links:
   - "exclusive_01/Orality%2C%20writing%20and%20authority%20in%20South%20Asian%20Buddhism_%20Visionary%20Literature%20and%20the%20Struggle%20for%20Legitimacy%20in%20the%20Mah%C4%81y%C4%81na%20-%20David%20McMahan.pdf"
-source_url: "https://www.bps.lk/library-search-select.php?id=bp625s"
+external_url: "https://web.archive.org/web/20241224113345if_/https://bps.lk/olib/bp/bp625s_The-Bodhisatva-Ideal.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1DOarJBVMh8Ch1MTRv_DTilHInbVhBax2/view?usp=drivesdk"
 course: mahayana

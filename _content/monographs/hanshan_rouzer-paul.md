@@ -13,7 +13,8 @@ formats: [pdf, GBook]
 drive_links:
   - "https://drive.google.com/file/d/1cVpEnsUUH3E6alHCrJEhe9Noj-k_ec-U/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=EvpDDQAAQBAJ"
-external_url: "https://library.oapen.org/bitstream/handle/20.500.12657/27418/9781501501913.pdf"
+external_url: "https://web.archive.org/web/20210903002629if_/https://library.oapen.org/bitstream/handle/20.500.12657/27418/9781501501913.pdf"
+alternate_url: "https://uplopen.com/reader/books/pdf/10.1515/9781501501913"
 course: chan-lit
 status: featured
 tags: 

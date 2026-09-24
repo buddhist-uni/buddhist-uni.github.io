@@ -4,7 +4,7 @@ authors:
   - "G. P. Malalasekera"
   - "Mabel Haynes Bode"
   - "Hammalawa Saddhātissa"
-external_url: "https://www.bps.lk/olib/bp/bp628h_Pali-Literature-of-Asia.pdf"
+external_url: "https://web.archive.org/web/20210824214237if_/https://www.bps.lk/olib/bp/bp628h_Pali-Literature-of-Asia.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1cs8deICT7sVeyLT86MRzBwNilE-oGRv5/view?usp=sharing"
 course: theravada-roots # maybe split into three entries in the future?

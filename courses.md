@@ -152,10 +152,6 @@ OBU Courses are loosely modeled on [MIT's Open Courseware](https://ocw.mit.edu){
   - To learn about the principles and methods of the modern life sciences.
 {:.mb-2}
 
-- [Sexual and Gender Identities](https://ocw.mit.edu/courses/womens-and-gender-studies/wgs-110j-sexual-and-gender-identities-spring-2016/){:.f3 ga-event-value="0.5"}
-  - To learn the surprising history of gender in America.
-{:.mb-2}
-
 - [The Rise of Modern Science](https://ocw.mit.edu/courses/science-technology-and-society/sts-003-the-rise-of-modern-science-fall-2010/index.htm){:.f3 ga-event-value="0.5"}
   - To break down the ahistorical mythology of modern science by taking a closer look at its primary sources.
 {:.mb-2}

@@ -4,7 +4,7 @@ editor: "Ven. Nyanatusita"
 authors:
   - dhammika
 external_url: "https://budblooms.org/nature-and-the-environment-in-early-buddhism/"
-source_url: "https://www.bps.lk/olib/bp/bp629s_Dhammika_Nature-and-Environment.pdf"
+source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp629s_Dhammika_Nature-and-Environment.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1WrIlprN7RI2AiQK_9410K752Vum-YAgk/view?usp=drivesdk"
 file_links:
