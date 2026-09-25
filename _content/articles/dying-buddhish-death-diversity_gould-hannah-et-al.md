@@ -8,6 +8,8 @@ external_url: "https://www.globalbuddhism.org/article/view/4861/5973"
 source_url: "https://doi.org/10.26034/lu.jgb.2024.4861"
 drive_links:
   - "https://drive.google.com/file/d/12pqAOJOwghGlVU9D3lS6A6-NMpBR3V8H/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gould-hannah-et-al_2024_dying-buddhish-death-diversity.pdf"
 course: australasian
 tags:
   - death

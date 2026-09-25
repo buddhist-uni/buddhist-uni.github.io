@@ -7,6 +7,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5617253"
 source_url: "https://doi.org/10.1073/pnas.1702247114"
 drive_links:
   - "https://drive.google.com/file/d/1RjJ6VLnqMwMxyTSPxx1A8qeEjzXtJFwt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cowen-alan-et-al_2017_distinct-categories-of-emotion.pdf"
 course: feeling # compromise. Maybe up to inner?
 tags:
   - emotion

@@ -14,6 +14,8 @@ tags:
   - philology
   - hermeneutics
 drive_links: ["https://drive.google.com/file/d/1kQvxmSH-NDrTXhHgHjYjt1UmdsAix46Q/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/norman_1997_philological-approach.pdf"
 external_url: "https://www.shin-ibs.edu/research/archived-publications-and-research-projects/the-buddhist-forum/the-buddhist-forum-volume-v/"
 series: "Buddhist Forum"
 number: 5

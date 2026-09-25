@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/trulshik-rinpoche/advice-in-four-lines"
 drive_links:
   - "https://drive.google.com/file/d/19QooOXwOsC0jRgqeO5awXjVLAYIDvezf/view?usp=sharing"
+file_links:
+  - "smallpdfs/trulshik-kyabje_2018_advice-in-four-lines.pdf"
 course: tibetan
 tags:
   - problems

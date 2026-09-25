@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.2018.06.28.1.177"
 drive_links:
   - "https://drive.google.com/file/d/119Q6ZPdNc-DZ5Ocbv6su4UJTbWXohe4i/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/duc-anthony-le_2018_framework-for-buddhist-environmentalism.pdf"
 course: climate-change
 tags:
   - karma

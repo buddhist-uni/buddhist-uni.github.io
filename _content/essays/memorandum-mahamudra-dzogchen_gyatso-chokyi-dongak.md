@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/dongak-chokyi-gyatso/memorandum-mahamudra-dzogchen"
 drive_links:
   - "https://drive.google.com/file/d/1gUWQZCy6qjWMTX5uTNF5b_Wa-OzXXB6m/view?usp=sharing"
+file_links:
+  - "smallpdfs/gyatso-chokyi-dongak_2014_memorandum-mahamudra-dzogchen.pdf"
 course: tibetan
 tags:
   - meditation

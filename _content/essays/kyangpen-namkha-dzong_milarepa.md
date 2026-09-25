@@ -7,6 +7,8 @@ translator: "Lowell Cook"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/milarepa/kyangpen-namkha-dzong"
 drive_links:
   - "https://drive.google.com/file/d/1EE1a4dwJHpsg7f3fOk465VByNzZ8r96O/view?usp=drive_link"
+file_links:
+  - "smallpdfs/milarepa_2018_kyangpen-namkha-dzong.pdf"
 course: tibetan
 tags:
   - nature

@@ -7,6 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/13sdNUT8DcDFa1P8B2AKD1vp2WXKmDb1P/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1bumsfRfB7CvQ88ghGAgJYt8DoM7mZsv9/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-N9Zm9_L07yjKJdAHKtP2A9qIyWmXBvh/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ottama-ashin_1998_message-in-samsara.pdf"
+  - "smallepubs/ottama-ashin_1998_message-in-samsara.epub"
 formats: [pdf, epub, mp3]
 year: 1998
 publisher: bps

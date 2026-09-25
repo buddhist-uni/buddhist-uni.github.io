@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1308/1145"
 source_url: "https://doi.org/10.5281/zenodo.4727595"
 drive_links:
   - "https://drive.google.com/file/d/1xqU7AB4oPyQfaayEIzekrZV1oQTY1dG-/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gajaweera-nalika_2021_sitting-in-fire-together.pdf"
 course: american
 tags:
   - social

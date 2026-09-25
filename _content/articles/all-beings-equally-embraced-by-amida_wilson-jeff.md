@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1191/1026"
 source_url: "https://doi.org/10.5281/zenodo.1306517"
 drive_links:
   - "https://drive.google.com/file/d/1ngedSpUIfbysJv-_qz33CsLpAwLny1Ve/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wilson-jeff_2012_all-beings-equally-embraced-by-amida.pdf"
 course: american
 tags:
   - pureland

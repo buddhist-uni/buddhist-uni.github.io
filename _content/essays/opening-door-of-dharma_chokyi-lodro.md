@@ -7,6 +7,8 @@ translator: Adam Pearcey
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/opening-the-door-of-dharma"
 drive_links:
   - "https://drive.google.com/file/d/16-wEUk_mZnoYNMcMD4b4mcAFeqd7hGD2/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2020_opening-door-of-dharma.pdf"
 course: tibetan
 tags:
   - dialogue

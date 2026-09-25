@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10235932"
 source_url: "https://doi.org/10.1073/pnas.2221346120"
 drive_links:
   - "https://drive.google.com/file/d/1QzZyusqP6y_izfo6AkTFgxIWjcyWazG_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/baragwanath-kathryn-et-al_2023_collective-property-rights-lead-to.pdf"
 course: natural
 tags:
   - state

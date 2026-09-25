@@ -4,6 +4,8 @@ authors: ["Chuilan Liu"]
 external_url: "https://poj.peeters-leuven.be/content.php?id=3285742&url=article"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1bb9ZOvLpm27_FgBi1qXj0Kli4UkSaMdB/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/liu-chuilan_2018_merit-making-or-financial-fraud.pdf"
 year: 2018
 journal: jiabs
 volume: 41

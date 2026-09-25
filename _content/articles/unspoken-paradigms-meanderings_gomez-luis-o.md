@@ -6,6 +6,8 @@ external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/vie
 source_url: "http://archiv.ub.uni-heidelberg.de/volltextserver/14107/"
 drive_links:
   - "https://drive.google.com/file/d/1BZEonaxkD5atZXv9348-xHwCjFCcSBLv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gomez-luis-o_1995_unspoken-paradigms-meanderings.pdf"
 course: academic
 tags:
   - humanities

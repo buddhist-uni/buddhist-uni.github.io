@@ -5,6 +5,8 @@ authors:
 external_url: "https://hal.science/hal-03049318"
 drive_links:
   - "https://drive.google.com/file/d/18gSuzxTYEmZOYifSXbGLRF84Ah1PS_Oi/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/peronnet-amandine_2020_building-largest-female-buddhist-monastery-in-china.pdf"
 course: chinese
 tags:
   - nuns

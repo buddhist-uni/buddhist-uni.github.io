@@ -10,6 +10,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0069841"
 drive_links:
   - "https://drive.google.com/file/d/1wGjoKz4ybM-YVQv-WydAA3kSShCaX5pC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kross-ethan-et-al_2013_facebook-use-predicts-declines-in.pdf"
 course: desire
 tags:
   - media

@@ -7,6 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1OMm1pK6jK7a93R5J5ifRF7H3cPSH6jjb/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1Qn3N2tp90Id5Ty893uQTQDh4cBkScxpI/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rcMFRmfSNMAiSwffZwqhNl_bcWksHGIG/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bodhi_1984_noble-eightfold-path.pdf"
+  - "smallepubs/bodhi_1984_noble-eightfold-path.epub"
 year: 1984
 publisher: bps
 series: wheel

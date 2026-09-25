@@ -6,6 +6,8 @@ authors:
 external_url: "https://scholarlypublications.universiteitleiden.nl/access/item%3A2972144/view"
 drive_links:
   - "https://drive.google.com/file/d/1RI49FHrg5-ZzfbNVhmVoToa7ONa8lJsu/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chen-ruxin_2018_nandimitravadana-living-text-from.pdf"
 course: avadana
 tags:
   - mahayana-canon

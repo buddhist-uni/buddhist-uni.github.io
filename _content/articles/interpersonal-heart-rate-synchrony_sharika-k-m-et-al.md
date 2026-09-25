@@ -9,6 +9,8 @@ external_url: "https://pubmed.ncbi.nlm.nih.gov/38753509"
 source_url: "https://doi.org/10.1073/pnas.2313801121"
 drive_links:
   - "https://drive.google.com/file/d/1SAjpXXCb-TQWu1I_Pz_ASCUQFg_6MqsD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sharika-k-m-et-al_2024_interpersonal-heart-rate-synchrony.pdf"
 course: communication
 tags:
   - intelligence

@@ -10,6 +10,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0314113"
 drive_links:
   - "https://drive.google.com/file/d/1vKCrFst0msepVIf8NZtFe7FJ-xuSQKgz/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/choji-yuki-et-al_2025_factors-influencing-chopstick-use.pdf"
 tags:
   - east-asia
   - chubu

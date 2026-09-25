@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1241/1076"
 source_url: "https://doi.org/10.5281/zenodo.1247854"
 drive_links:
   - "https://drive.google.com/file/d/1EHZC7GOXKxWcjNdRmHKkLJvNcTR8NCVC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/han-chenxing_2017_diverse-practices-and-flexible-beliefs.pdf"
 course: american
 tags:
   - enculturation

@@ -5,6 +5,8 @@ editor: anandajoti
 external_url: "https://budblooms.org/a-naughty-jataka/"
 drive_links:
   - "https://drive.google.com/file/d/182bgiG2NgvGvqr-D0Zu2om05qpHn_Mxj/view?usp=sharing"
+file_links:
+  - "smallpdfs/ja273+cmy.pdf"
 course: jataka
 tags:
   - humor

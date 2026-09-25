@@ -6,6 +6,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7958237"
 source_url: "https://doi.org/10.1073/pnas.2101173118"
 drive_links:
   - "https://drive.google.com/file/d/1KYWpVnHJBKCmY5jVxPVMl1Xve3ZzOc8R/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/hublin-jean-jacques_2021_how-old-oldest-homo-sapiens-in-far-east.pdf"
 tags:
   - prehistory
   - asia

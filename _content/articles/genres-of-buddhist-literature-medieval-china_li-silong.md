@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.2021.12.31.2.59"
 drive_links:
   - "https://drive.google.com/file/d/15oQgxoikYoLMyaqdtC5UDexEmzgfw4CI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/li-silong_2021_genres-of-buddhist-literature-medieval-china.pdf"
 course: east-asian-roots
 tags:
   - roots

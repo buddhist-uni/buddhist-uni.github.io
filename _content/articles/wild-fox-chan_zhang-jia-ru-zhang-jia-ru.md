@@ -6,6 +6,8 @@ external_url: "https://www.airitilibrary.com/Article/Detail/P20240130001-N202411
 source_url: "https://doi.org/10.53106/300525562024090002003"
 drive_links:
   - "https://drive.google.com/file/d/1qHgam_hVbSK4EOXOGzheqo9n8Wmrpoqp/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/zhang-jia-ru-zhang-jia-ru_2024_wild-fox-chan.pdf"
 course: climate-change
 tags:
   - east-asian

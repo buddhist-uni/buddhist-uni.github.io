@@ -8,6 +8,9 @@ source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh296_R
 drive_links:
   - "https://drive.google.com/file/d/1Kz9DYIyoES9H23pxeqV35b8IgJuFThrG/view?usp=drive_link"
   - "https://drive.google.com/file/d/14kLpuiZVuP2AgKwqU51qdhPSAMgASHLi/view?usp=sharing"
+file_links:
+  - "smallpdfs/maitreya-vidagama_1982_worlds-true-welfare.pdf"
+  - "smallepubs/maitreya-vidagama_1982_worlds-true-welfare.epub"
 course: sri-lankan
 tags:
   - medieval

@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.1162/daed_a_01890"
 drive_links:
   - "https://drive.google.com/file/d/1Zb6FpfzBoVERGb_unB7aNU69dosUqUKI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/richie-beth-e_2021_effects-of-violence-on-communities.pdf"
 course: social
 tags:
   - violence

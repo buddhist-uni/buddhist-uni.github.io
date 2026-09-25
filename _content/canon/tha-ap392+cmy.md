@@ -6,6 +6,9 @@ external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Connect
 drive_links:
   - "https://drive.google.com/file/d/1fnNgvFNVcB8J9v5rKmR9Ek8O_Zs3kELm/view?usp=drive_link"
   - "https://drive.google.com/file/d/1S3ANq9XRwC0FItfJG-FbRCAh4Xlypq0O/view?usp=drive_link"
+file_links:
+  - "smallpdfs/tha-ap392+cmy.pdf"
+  - "smallepubs/tha-ap392+cmy.epub"
 course: avadana
 tags:
   - karma

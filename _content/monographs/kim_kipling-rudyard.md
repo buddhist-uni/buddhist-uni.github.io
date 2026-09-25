@@ -8,6 +8,8 @@ source_url: "https://archive.org/search.php?query=title:kim%20creator:kipling%20
 formats: [epub]
 drive_links: 
   - "https://drive.google.com/file/d/1aIBygJ-GqyhQyBkUVFKeDEOKpiToknbb/view?usp=drivesdk"
+file_links:
+  - "smallepubs/kipling-rudyard_1901_kim.epub"
 tags:
   - british
   - orientalism

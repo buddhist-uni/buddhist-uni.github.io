@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh237_d
 drive_links:
   - "https://drive.google.com/file/d/1O3l6DPsR-41ngNpw2HODJVHD0Z-crBcq/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1OW-Zm4Q90AbK8oWbSwgXUCSLdMn99nce/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/desilva_1976_psychology-of-emotions.pdf"
+  - "smallepubs/desilva_1976_psychology-of-emotions.epub"
 year: 1976
 publisher: bps
 series: wheel

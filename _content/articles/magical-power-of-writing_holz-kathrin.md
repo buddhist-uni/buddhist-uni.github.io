@@ -6,6 +6,8 @@ external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3294221&
 source_url: "https://dx.doi.org/10.2143/JIABS.47.0.3294221"
 drive_links:
   - "https://drive.google.com/file/d/1WNzgIA8X4HMDrmQI27mr8cN4eCwL6Yqz/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/holz-kathrin_2024_magical-power-of-writing.pdf"
 course: mahayana-roots
 tags:
   - paper

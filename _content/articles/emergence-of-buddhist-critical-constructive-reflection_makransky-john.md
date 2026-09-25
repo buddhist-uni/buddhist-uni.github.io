@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1142/977"
 source_url: "https://doi.org/10.5281/zenodo.1307133"
 drive_links:
   - "https://drive.google.com/file/d/1QzRWj2C1mPlWINbuAbtzuhzXBz2TMjCX/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/makransky-john_2008_emergence-of-buddhist-critical-constructive-reflection.pdf"
 course: academic
 year: 2008
 journal: jgb

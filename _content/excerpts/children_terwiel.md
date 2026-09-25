@@ -4,6 +4,8 @@ authors:
   - "B. J. Terwiel"
 drive_links:
   - "https://drive.google.com/file/d/1R5qz_PBKUrXT8uXF_BICE2Is7gi5BbB_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/terwiel_1975_children.pdf"
 course: thai
 status: featured
 tags:

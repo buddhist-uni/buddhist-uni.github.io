@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1989/1727"
 source_url: "https://doi.org/10.5281/zenodo.5764599"
 drive_links:
   - "https://drive.google.com/file/d/1k8P0IdyjALtr8ZVjCeHQ-Ir_LnmPkuzh/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ritzinger-justin-r_2021_tinker-tailor-scholar-spy.pdf"
 course: academic
 status: featured
 tags:

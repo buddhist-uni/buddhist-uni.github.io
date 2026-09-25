@@ -5,6 +5,8 @@ authors:
 external_url: "https://media.amaravati.org/en/dhamma-books/copper-isle-miles"
 drive_links:
   - "https://drive.google.com/file/d/1Dylp6MpqRBgcrEF6iXUnnHpGrF07aBVF/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/amaro_2021_copper-isle-miles.pdf"
 tags:
   - sri-lankan
   - pilgrimage

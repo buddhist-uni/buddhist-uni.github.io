@@ -12,6 +12,8 @@ alternate_doi: "https://doi.org/10.1101/2020.12.03.410399"
 another_doi: "https://doi.org/10.34973/dfkm-h813"
 drive_links:
   - "https://drive.google.com/file/d/1ZluozU7wje1_mCnigauoGNYgWzG9CqQK/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/heilbron-micha-et-al_2022_hierarchy-of-linguistic-predictions.pdf"
 course: language
 tags:
   - perception

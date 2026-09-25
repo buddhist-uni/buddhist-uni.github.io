@@ -9,6 +9,8 @@ volume: 7
 pages: "98--115"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1rnxyLgs_c2jBw7PZfGioRfTujDrIwAHf/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/choong-mun-keat_2014_gamani-samyutta-comparison.pdf"
 tags:
   - sa
 ---

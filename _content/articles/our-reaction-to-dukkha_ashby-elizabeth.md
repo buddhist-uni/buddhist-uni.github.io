@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/20250718045613/http://bps.lk/olib/bl/bl
 drive_links:
   - "https://drive.google.com/file/d/1eFIm-GPNZ-EZhVf0zco-qCPKLxNLD01P/view?usp=sharing"
   - "https://drive.google.com/file/d/1v9O1Ywjjak5qtF-O9r8Iv9CBdAdcPkW6/view?usp=drive_link"
+file_links:
+  - "smallpdfs/ashby-elizabeth_1965_our-reaction-to-dukkha.pdf"
+  - "smallepubs/ashby-elizabeth_1965_our-reaction-to-dukkha.epub"
 formats: [pdf, epub]
 course: feeling
 tags:

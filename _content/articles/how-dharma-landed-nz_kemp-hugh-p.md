@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1134/969"
 source_url: "https://doi.org/10.5281/zenodo.1310815"
 drive_links:
   - "https://drive.google.com/file/d/1n5uOb9zu8TzwSNI2qQrivU--3YgRCR4m/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kemp-hugh-p_2007_how-dharma-landed-nz.pdf"
 course: australasian
 year: 2007
 journal: jgb

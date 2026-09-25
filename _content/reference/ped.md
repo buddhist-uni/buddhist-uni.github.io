@@ -12,6 +12,9 @@ drive_links:
   - "https://drive.google.com/file/d/1TmwLX-W8d9UOoompi79F-5VposNqtNCt/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1TSD6LWkUVb72xO_EQoRrAx3NrjjeprJe/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1sgHw9vTqK1kgZG5KcLxfUfr6q2jf3gvP/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ped.pdf"
+  - "smallepubs/ped.epub"
 formats: [pdf, epub, mobi, html]
 course: pali-dictionaries
 tags:

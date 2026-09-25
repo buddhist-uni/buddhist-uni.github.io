@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/what-is-the-real-sal-flower/"
 drive_links:
   - "https://drive.google.com/file/d/1a-xyaWhQRm8KEEPD79xNBnLLDsJVSiQ6/view?usp=sharing"
+file_links:
+  - "smallpdfs/dhammika_2020_real-sal-flower.pdf"
 course: sri-lankan
 tags:
   - material-culture

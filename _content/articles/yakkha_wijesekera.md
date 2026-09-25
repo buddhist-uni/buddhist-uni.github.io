@@ -4,6 +4,8 @@ authors:
   - wijesekera
 drive_links:
   - "https://drive.google.com/file/d/1xGxk-BzifaFecjXX4TnzZG2qyAwo_IyW/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/wijesekera_1943_yakkha.pdf"
 tags:
   - yakkha
   - pali-dictionaries

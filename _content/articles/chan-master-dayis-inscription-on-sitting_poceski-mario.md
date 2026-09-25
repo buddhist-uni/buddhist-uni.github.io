@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.2024.12.34.2.49"
 drive_links:
   - "https://drive.google.com/file/d/18lxnsBkNv5j_TK4hURx_JP8uy5H-6kCg/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/poceski-mario_2024_chan-master-dayis-inscription-on-sitting.pdf"
 tags:
   - east-asian
   - meditation

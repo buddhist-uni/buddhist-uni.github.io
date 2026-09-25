@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/tsongkhapa/praise-to-manjughosha"
 drive_links:
   - "https://drive.google.com/file/d/1LlKkJ_umyinLXfLN5ovYlmfaNJOUoPxh/view?usp=drive_link"
+file_links:
+  - "smallpdfs/tsongkhapa-lobzang-drakpa_2021_praise-to-manjughosa.pdf"
 course: tibetan
 tags:
   - bodhisattva

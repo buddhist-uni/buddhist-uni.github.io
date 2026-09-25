@@ -8,6 +8,8 @@ source_url: "https://archive.org/download/the-progress-of-insight-1965-pali-engl
 source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp504s_Mahasi_Progress-of-Insight.pdf"
 year: 1994
 drive_links: ["https://drive.google.com/file/d/1ULKZ4NWeetlEXhw4hS6zIf_POBwQk2KW/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/mahasi_1994_visuddhinyanakatha.pdf"
 course: nibbana
 tags:
   - stages

@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10151606"
 source_url: "https://doi.org/10.1073/pnas.2218367120"
 drive_links:
   - "https://drive.google.com/file/d/1SvIGksJcBaNOnKyqWnXlXkEJR59JOPjC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/anikin-andrey-et-al_2023_do-some-languages-sound-more-beautiful.pdf"
 course: language
 tags:
   - hearing

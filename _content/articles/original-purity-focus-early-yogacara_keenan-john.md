@@ -5,6 +5,8 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8560/24675"
 drive_links:
   - "https://drive.google.com/file/d/1QkG_bYtX2YP3hWKOjxGzeLN8khODphhC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/keenan-john_1982_original-purity-focus-early-yogacara.pdf"
 course: mahayana-roots
 tags:
   - dialogue

@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.1162/daed_a_00461"
 drive_links:
   - "https://drive.google.com/file/d/15wje7y4naETV6BnOp4IngRdKAp82mvPj/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lischer-sarah-kenyon_2017_global-refugee-crisis-regional.pdf"
 course: places
 status: featured
 tags:

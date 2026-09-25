@@ -7,6 +7,9 @@ external_url: "https://www.dhammatalks.org/books/AwarenessItself/"
 drive_links:
   - "https://drive.google.com/file/d/1SPeJsd86iGZeruJeNRV7kx5tEaz0wAWI/view?usp=sharing"
   - "https://drive.google.com/file/d/14NssgN2r4iGvJjuLOgZTtz1qNUVY582h/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/fuang_1993_awareness-itself.pdf"
+  - "smallepubs/fuang_1993_awareness-itself.epub"
 course: thai
 tags:
   - path

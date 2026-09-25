@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/bo/tibetan-masters/longchen-rabjam/ultimate-meaning"
 drive_links:
   - "https://drive.google.com/file/d/11sdOm_PCOc50twJJcP8TzNmtKTOPABSy/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/rabjam-longchenpa_2011_advice-on-the-ultimate-meaning.pdf"
 course: tibetan 
 tags:
   - path

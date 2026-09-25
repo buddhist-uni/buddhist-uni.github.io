@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/tso-pema-praise"
 drive_links:
   - "https://drive.google.com/file/d/1GLkm_m4m2F-X0qpugWgj05P4LJIWqNoN/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2018_in-praise-of-tso-pema.pdf"
 course: tibetan
 tags:
   - classical-poetry

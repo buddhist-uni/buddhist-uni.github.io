@@ -5,6 +5,8 @@ authors:
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/88"
 drive_links: 
   - "https://drive.google.com/file/d/1dEPi1-b0HK1P8nOYiyFMjp6A6HzjyfZt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/fung-kei-cheng_2014_overcoming-compassion.pdf"
 tags:
   - activism
   - medicine

@@ -10,6 +10,9 @@ publisher: bps
 drive_links:
   - "https://drive.google.com/file/d/1eTcxiyyBFp7BLwxcvrMdznOg8EL0qEyE/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1CCiGZJ8X7gZGPQaaauE66nR1iGtDLZ0b/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/vajira-story_1964_last-days.pdf"
+  - "smallepubs/vajira-story_1964_last-days.epub"
 course: pali-canon
 tags:
   - dn

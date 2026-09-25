@@ -6,6 +6,8 @@ external url: "https://budblooms.org/download/buddhism-trees-and-forests-pdf/"
 source url:  "https://www.sundaytimes.lk/160320/plus/respect-for-trees-not-worship-in-the-time-of-the-buddha-186819.html"
 drive_links:
   - "https://drive.google.com/file/d/1y0qwHx4h1U24YQ9p5atYJhv6iKZORhih/view?usp=drive_link"
+file_links:
+  - "smallpdfs/dhammika_2016_buddhism-trees-and-forests.pdf"
 formats: [pdf]
 year: 2016
 month: mar

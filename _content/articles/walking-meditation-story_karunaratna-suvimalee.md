@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/20250425192714/https://www.bps.lk/olib/
 drive_links:
   - "https://drive.google.com/file/d/1BJVhXDAZA5yVSrZhA3ajtHO_uOfR3aIW/view?usp=sharing"
   - "https://drive.google.com/file/d/1A-TQThyZjc2062h_4u89ACsNnRq4bwbd/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/karunaratna-suvimalee_1988_walking-meditation-story.pdf"
+  - "smallepubs/karunaratna-suvimalee_1988_walking-meditation-story.epub"
 course: sri-lankan
 tags:
   - meditation

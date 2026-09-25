@@ -10,6 +10,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0141052"
 drive_links:
   - "https://drive.google.com/file/d/1cfruLWlpXyD9OSdJQh4vlpRSNbWU8fWp/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/leroy-stephanie-et-al_2015_dating-baphuon.pdf"
 course: cambodian
 tags:
   - thai-roots

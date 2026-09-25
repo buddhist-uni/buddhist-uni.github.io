@@ -4,6 +4,8 @@ authors:
   - "Joe Cribb"
 drive_links:
   - "https://drive.google.com/file/d/1Iav8xoWonGLjGAu02da_6Acs9xQ7263u/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cribb-joe_1980_kaniskas-buddha-coins.pdf"
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3286364&journal_code=JIABS"
 source_url: "https://dx.doi.org/10.2143/JIABS.3.2.3286364"
 course: mahayana-roots

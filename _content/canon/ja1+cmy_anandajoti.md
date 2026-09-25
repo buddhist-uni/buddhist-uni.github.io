@@ -5,6 +5,9 @@ external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Jatakas
 drive_links:
   - "https://drive.google.com/file/d/1cSvreQk1zICaCYGRO45-KKYOTtfOGq1v/view?usp=drive_link"
   - "https://drive.google.com/file/d/1-wokRKiZqqPixe6_znIZrfE7i94sUjWk/view?usp=drive_link"
+file_links:
+  - "smallpdfs/anandajoti_2021_ja1+cmy.pdf"
+  - "smallepubs/anandajoti_2021_ja1+cmy.epub"
 course: jataka
 tags:
   - pali-commentaries

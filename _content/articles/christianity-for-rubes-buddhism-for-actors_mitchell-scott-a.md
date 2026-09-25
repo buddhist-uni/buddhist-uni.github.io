@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1190/1025"
 source_url: "https://doi.org/10.5281/zenodo.1306522"
 drive_links:
   - "https://drive.google.com/file/d/1csKkuF-gQCa1PNSYYCRPBT_rDMb-GlZ4/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mitchell-scott-a_2012_christianity-for-rubes-buddhism-for-actors.pdf"
 course: american
 tags:
   - american-culture

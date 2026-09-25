@@ -6,6 +6,8 @@ subcat: thesis
 external_url: "https://hub.hku.hk/handle/10722/360651"
 drive_links:
   - "https://drive.google.com/file/d/1-3DeV7Zg2FDdIv5hoI6pjb-9d63mZprm/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/zhai-yilun_2025_nature-of-chan-ethics.pdf"
 course: chan-lit # solidly three stars, but might move
 tags:
   - mahayana

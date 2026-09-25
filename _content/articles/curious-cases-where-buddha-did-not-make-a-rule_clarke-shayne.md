@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.2021.06.30.1.13"
 drive_links:
   - "https://drive.google.com/file/d/16iRNPkve2yMQli84aG7HfU3wmOA8SMKL/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/clarke-shayne_2021_curious-cases-where-buddha-did-not-make-a-rule.pdf"
 course: vinaya-studies
 tags:
   - sects

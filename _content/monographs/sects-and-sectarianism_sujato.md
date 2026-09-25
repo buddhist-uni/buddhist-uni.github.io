@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1ZS-a7fqBN77oRszQrmaCgAZQqF4pk_OT/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1z1rva-Q9g7hBadEB6gUhtq5rhurXdc72/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sujato_2007_sects-and-sectarianism.pdf"
+  - "smallepubs/sujato_2007_sects-and-sectarianism.epub"
 course: sects
 tags:
   - vinaya-controversies

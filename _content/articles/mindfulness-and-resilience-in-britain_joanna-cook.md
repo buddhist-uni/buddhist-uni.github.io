@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1309/1146"
 source_url: "https://doi.org/10.5281/zenodo.4727572"
 drive_links:
   - "https://drive.google.com/file/d/16CT3-z3t3mFYsBhBYk41GVJOJ9RsP4km/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/joanna-cook_2021_mindfulness-and-resilience-in-britain.pdf"
 course: british
 tags:
   - sati

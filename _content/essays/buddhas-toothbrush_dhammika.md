@@ -5,6 +5,8 @@ authors:
 external_url: "https://budblooms.org/the-search-for-the-buddhas-toothbrush/"
 drive_links:
   - "https://drive.google.com/file/d/1WGmijRvsOsw6zdWYUNuvTSHaeFAvEcb2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dhammika_2015_buddhas-toothbrush.pdf"
 tags:
   - setting
   - medicine

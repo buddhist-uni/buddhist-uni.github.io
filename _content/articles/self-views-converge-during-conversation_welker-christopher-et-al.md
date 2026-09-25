@@ -10,6 +10,8 @@ external_url: "https://pubmed.ncbi.nlm.nih.gov/39401349"
 source_url: "https://doi.org/10.1073/pnas.2321652121"
 drive_links:
   - "https://drive.google.com/file/d/1QudFCIMNv2QqVbFymPuq6bPi-TA421uD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/welker-christopher-et-al_2024_self-views-converge-during-conversation.pdf"
 course: groups
 tags:
   - ideology

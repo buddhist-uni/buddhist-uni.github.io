@@ -6,6 +6,8 @@ external_url: "https://library.oapen.org/handle/20.500.12657/102927"
 source_url: "https://doi.org/10.4324/9780203331255"
 drive_links:
   - "https://drive.google.com/file/d/1JPEWpqVUKo5YOCv4qSYtyHNtSKpcpbxW/view?usp=drivesdk"
+file_links:
+  - "largefiles/karan-pradyumna_2004_nonwestern-world.pdf"
 tags:
   - places
 year: 2004

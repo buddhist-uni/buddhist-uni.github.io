@@ -4,6 +4,8 @@ subcat: poetry
 slug: "iti063"
 drive_links:
   - "https://drive.google.com/file/d/1IWo8coqqReUfad6KUwY8yaYFcNH2xOh3/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/iti063.pdf"
 course: canonical-poetry
 tags:
   - iti

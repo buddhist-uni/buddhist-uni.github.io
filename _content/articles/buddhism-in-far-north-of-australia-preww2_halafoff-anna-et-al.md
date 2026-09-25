@@ -10,6 +10,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1995/3157"
 source_url: "https://doi.org/10.26034/lu.jgb.2022.1995"
 drive_links:
   - "https://drive.google.com/file/d/14tTEl2qKvFJ9ZQCtO3v3c54JdM2hXFJW/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/halafoff-anna-et-al_2022_buddhism-in-far-north-of-australia-preww2.pdf"
 course: australasian
 year: 2022
 month: dec

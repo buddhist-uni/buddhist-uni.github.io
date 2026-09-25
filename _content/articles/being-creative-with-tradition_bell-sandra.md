@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1084/919"
 source_url: "https://doi.org/10.5281/zenodo.1310696"
 drive_links:
   - "https://drive.google.com/file/d/1b4SkMV1MPcH7YPIZRbylLwYhckp6RooX/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bell-sandra_2000_being-creative-with-tradition.pdf"
 course: british
 tags:
   - theravada

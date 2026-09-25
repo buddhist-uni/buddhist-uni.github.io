@@ -7,6 +7,8 @@ source_url: "https://doi.org/10.5281/zenodo.1310624"
 alt_doi: "https://doi.org/10.1515/9780824862404-013"
 drive_links:
   - "https://drive.google.com/file/d/1kaVN9j153LIfTQe1_rp8Sl7x95UjWxPt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chandler-stuart_2002_globalizing-chinese-culture.pdf"
 course: chinese
 tags:
   - foguangshan

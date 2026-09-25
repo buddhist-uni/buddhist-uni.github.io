@@ -99,6 +99,10 @@ class CFPCDNBuilderConfig:
     self._data["BLACKLISTED_DOMAINS"].add(domain)
     self.save()
     return False
+  def blacklist_journal(self, journal: str) -> bool:
+    self._data["BLACKLISTED_JOURNALS"].add(journal)
+    self.save()
+    return False
   def whitelist_domain(self, domain: str) -> bool:
     self._data["WHITELISTED_DOMAINS"].add(domain)
     self.save()
@@ -119,10 +123,18 @@ class CFPCDNBuilderConfig:
     return publisher in self._data["WHITELISTED_PUBLISHERS"]
   def is_journal_whitelisted(self, journal: str) -> bool:
     return journal in self._data["WHITELISTED_JOURNALS"]
+  def is_journal_blacklisted(self, journal: str) -> bool:
+    return journal in self._data["BLACKLISTED_JOURNALS"]
   def is_searchable_pdf(self, slug: str) -> bool:
     return slug in self._data["SEARCHABLE_PDFS"]
   def is_redirect_pdf(self, slug: str) -> bool:
     return slug in self._data["REDIRECT_PDFS"]
+  def is_item_blacklisted(self, content_path: str) -> bool:
+    return content_path in self._data["BLACKLISTED_ITEMS"]
+  def blacklist_item(self, content_path: str) -> bool:
+    self._data["BLACKLISTED_ITEMS"].add(content_path)
+    self.save()
+    return False
   def mark_pdf_good(self, slug: str) -> None:
     self._data["SEARCHABLE_PDFS"].add(slug)
     self.save()
@@ -146,6 +158,8 @@ for item in website.content:
     # we do a more thorough check of the drive_links below when we actually try to add it
     # this round of filtering is just to filter out the obvious rejects
   if item.status == "rejected":
+    continue
+  if APP_CONFIG.is_item_blacklisted(item.content_path):
     continue
   if item.file_links:
     continue # This script only adds missing file_links
@@ -181,12 +195,13 @@ for item in website.content:
 small_pdf_canonical_urls: list[tuple[str, website.ContentFile]] = list() # of (filename, canonicalitem)
 small_pdf_headers_file: Path = args.dest / "smallpdfs" / "_headers"
 
+content_url_to_item: dict[str, website.ContentFile] = {
+  website.config['url']+item.url: item for item in website.content
+}
+
 if small_pdf_headers_file.is_file():
   print("Loading old smallpdfs/_headers...")
   previous_headers_file = small_pdf_headers_file.read_text().split('\n\n')
-  content_url_to_item: dict[str, website.ContentFile] = {
-    item.url: item for item in website.content
-  }
   for line in previous_headers_file:
     match = re.search(r"(?P<pdf>/[^\s]+\.pdf)[\s\S]*?Link:\s*<(?P<url>[^>]+)>", line)
     assert match, f"Failed to parse ```{line}``` from {small_pdf_headers_file}"
@@ -194,7 +209,6 @@ if small_pdf_headers_file.is_file():
     canonurl = match.group("url")
     small_pdf_canonical_urls.append((pdf_filename, content_url_to_item[canonurl]))
   print(f"  loaded {len(small_pdf_canonical_urls)} old smallpdf headers")
-  del content_url_to_item
 
 def is_actually_selfhostable(item: website.ContentFile) -> bool:
   external_url = item.external_url or item.source_url
@@ -205,11 +219,16 @@ def is_actually_selfhostable(item: website.ContentFile) -> bool:
   # Because we add to the blacklist during the loop, recheck it
   if domain and APP_CONFIG.is_domain_blacklisted(domain):
     return False
+  if item.journal and APP_CONFIG.is_journal_blacklisted(item.journal):
+    return False
   # All whitelisted items get copied over
   if domain and APP_CONFIG.is_domain_whitelisted(domain):
     return True
   if item.journal and APP_CONFIG.is_journal_whitelisted(item.journal):
     return True
+  if not item.publisher and item.from_book:
+    book = content_url_to_item[website.config['url']+'/content/monographs/'+item.from_book]
+    item.publisher = book.publisher
   if item.publisher and APP_CONFIG.is_publisher_whitelisted(item.publisher):
     return True
   
@@ -219,6 +238,10 @@ def is_actually_selfhostable(item: website.ContentFile) -> bool:
   
   # If we're down to a web.archive url but have a backup url, that's okay too
   if item.external_url and str(item.external_url).startswith("https://web.archive.org") and item.alternate_url:
+    return False
+  
+  # Explictly marked
+  if not item.external_url and item.source_url and "doi.org/" in item.source_url:
     return False
 
   # So now in this case, we have at best a web.archive.org external_url (or none at all)
@@ -235,6 +258,10 @@ def is_actually_selfhostable(item: website.ContentFile) -> bool:
     radio_choices.append((f"Whitelist publisher: {item.publisher}", lambda: APP_CONFIG.whitelist_publisher(item.publisher)))
   if item.journal:
     radio_choices.append((f"Whitelist journal: {item.journal}", lambda: APP_CONFIG.whitelist_journal(item.journal)))
+    radio_choices.append((f"Blacklist journal: {item.journal}", lambda: APP_CONFIG.blacklist_journal(item.journal)))
+  radio_choices.append(("Allow this as a one-off", lambda: True))
+  radio_choices.append(("Not today (ask again later)", lambda: False))
+  radio_choices.append(("Not this one (never ask again)", lambda: APP_CONFIG.blacklist_item(item.content_path)))
   radio_choices.append(("Teach me how to do something else", lambda: exit(1)))
   
   choice = radio_dial([choice[0] for choice in radio_choices])

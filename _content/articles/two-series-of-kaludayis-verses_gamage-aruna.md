@@ -6,6 +6,8 @@ external_url: "https://journal.equinoxpub.com/BSR/article/view/18497/20852"
 source_url: "https://doi.org/10.1558/bsrv.18497"
 drive_links:
   - "https://drive.google.com/file/d/1EPLMN3EbpXVsOB07Fho6742v6R8m-Ojv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gamage-aruna_2020_two-series-of-kaludayis-verses.pdf"
 course: tg
 tags:
   - pali-commentaries

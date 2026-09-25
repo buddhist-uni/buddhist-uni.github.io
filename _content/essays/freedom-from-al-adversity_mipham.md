@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/sur-offering-freedom-from-adversity"
 drive_links:
   - "https://drive.google.com/file/d/1cXZrDJUk7fM6rmu6wmXUbATQ79HzAHNM/view?usp=sharing"
+file_links:
+  - "smallpdfs/mipham_2020_freedom-from-al-adversity.pdf"
 course: tibetan
 tags:
   - dharani

@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/indian-masters/arya-shura/verses-buddhas-previous-lives"
 drive_links:
   - "https://drive.google.com/file/d/1wQTZRG5h141mvxJMmOqq7j7d520ohWC3/view?usp=sharing"
+file_links:
+  - "smallpdfs/aryasura_2008_verses-on-buddhas-previous-lives.pdf"
 course: jataka
 tags:
   - mahayana-roots

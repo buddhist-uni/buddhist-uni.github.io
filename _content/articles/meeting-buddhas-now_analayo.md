@@ -5,6 +5,8 @@ authors:
 source_url: "https://iriab.soka.ac.jp/content/pdf/aririab/Vol.%20XXVIII%20(2025).pdf"
 drive_links:
   - "https://drive.google.com/file/d/1kw2wLOqAAW-DLyCIhYVnR7uVX7ayD3nr/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/analayo_2025_meeting-buddhas-now.pdf"
 course: mahayana-roots
 tags:
   - iddhi

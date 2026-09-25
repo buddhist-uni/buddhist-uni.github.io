@@ -8,6 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/19CDpMc_nGwsWSld1YwL8JbJWV-M_Hm5C/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1OCZG79MMl0QYbHpYB9D8NsomOPfSq65_/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=SJtABAAAQBAJ"
+file_links:
+  - "smallpdfs/sheng-yen_2005_chan-practice-and-faith.pdf"
+  - "smallepubs/sheng-yen_2005_chan-practice-and-faith.epub"
 course: view
 status: featured
 year: 2005

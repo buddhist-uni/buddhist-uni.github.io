@@ -9,6 +9,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4143018"
 source_url: "https://doi.org/10.1073/pnas.1407535111"
 drive_links:
   - "https://drive.google.com/file/d/1Wp7fixKsxLgkjdjABEM3v3dTZV06d-TQ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/rutledge-robb-b-et-al_2014_momentary-wellbeing.pdf"
 course: neuroscience
 tags:
   - dopamine

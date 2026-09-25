@@ -5,6 +5,8 @@ authors:
 external_url: "https://static.sirimangalo.org//mahasi/World%20Buddhist%20Missionary%20Tour.htm"
 drive_links:
   - "https://drive.google.com/file/d/1PvgahHJNE9z7uNqMs30gYQLwf_N9Oiif/view?usp=drive_link"
+file_links:
+  - "smallepubs/mahasi_1995_world-buddhist-missionary-tour.epub"
 formats: [epub]
 course: burmese
 tags:

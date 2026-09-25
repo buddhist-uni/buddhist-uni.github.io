@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.27.01.06"
 drive_links:
   - "https://drive.google.com/file/d/11d8DXxoexfpbJqo3pmeYoO4_bJD4w5Yu/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ishii-kosei_2017_huayan-and-chan-in-context-of-east-asian.pdf"
 course: east-asian-roots # quite dull tho
 year: 2017
 month: jun

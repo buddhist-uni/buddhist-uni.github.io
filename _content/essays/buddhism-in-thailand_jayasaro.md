@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.watpahnanachat.org/buddhism-in-thailand"
 drive_links:
   - "https://drive.google.com/file/d/1gXqpUGhLItJY5wZz-xbo1zM_gijfbvqJ/view?usp=sharing"
+file_links:
+  - "smallpdfs/jayasaro_1999_buddhism-in-thailand.pdf"
 course: thai
 tags:
   - form

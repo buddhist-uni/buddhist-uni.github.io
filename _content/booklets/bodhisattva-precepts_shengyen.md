@@ -7,6 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1fKsgBJ3uJnDLtwe0V6dqv_7YnVT5c02B/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1butT-MgVl6Hk78_gXFie2AhOadsJhxze/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=iZhABAAAQBAJ"
+file_links:
+  - "smallpdfs/shengyen_2005_bodhisattva-precepts.pdf"
+  - "smallepubs/shengyen_2005_bodhisattva-precepts.epub"
 olid: OL32173773M
 month: jul
 year: 2005

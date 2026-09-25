@@ -5,6 +5,8 @@ authors:
 source_url: "https://web.archive.org/web/20180521160006/https://www.watpahnanachat.org/kor-what"
 drive_links:
   - "https://drive.google.com/file/d/1lf0BmNW-5ZVnoSkfnEwyx32r-mH-xeob/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chandako_2019_kor-what.pdf"
 tags:
   - thai-forest
   - navakovada

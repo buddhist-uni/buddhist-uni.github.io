@@ -7,6 +7,9 @@ drive_links:
   - "https://drive.google.com/file/d/1FTB4QFBGNxVGoVAcQs-j9BdY-piZuMBw/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1VNxFhCTPv5RNL9UG7Wbx9PYJlrEtQI5Z/view?usp=drivesdk"
   - "https://drive.google.com/drive/folders/1C3T-Xh7fk0ynlQvuMmw3O68j7RPGs-eT"
+file_links:
+  - "smallpdfs/ireland_1991_buddhas-sayings.pdf"
+  - "smallepubs/ireland_1991_buddhas-sayings.epub"
 formats: [pdf, epub, MP3s]
 course: iti
 tags:

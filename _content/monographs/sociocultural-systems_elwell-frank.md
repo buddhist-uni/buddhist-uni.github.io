@@ -5,6 +5,8 @@ authors:
 external_url: "https://www.aupress.ca/books/120219-sociocultural-systems/"
 drive_links:
   - "https://drive.google.com/file/d/1T_jNFGEgUkKP9JeR0-BRruhH8wEuydr7/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/elwell-frank_2013_sociocultural-systems.pdf"
 course: society # solidly
 tags:
   - present

@@ -7,6 +7,8 @@ source_url: "https://doi.org/10.5281/zenodo.1307140"
 alternate_doi: "https://doi.org/10.5281/zenodo.1307139"
 drive_links:
   - "https://drive.google.com/file/d/1A5_Sznf-hvwJ4YEiZIib9y54oebgg8gv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/williams-duncan-ryuken_2008_at-ease-in-btw.pdf"
 course: academic
 tags:
   - religion

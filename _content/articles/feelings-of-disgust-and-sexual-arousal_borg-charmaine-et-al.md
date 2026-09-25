@@ -7,6 +7,8 @@ external_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal
 source_url: "https://doi.org/10.1371/journal.pone.0044111"
 drive_links:
   - "https://drive.google.com/file/d/1x3LrfWprDoC7hFcby0Pxjs86lV2r40Po/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/borg-charmaine-et-al_2012_feelings-of-disgust-and-sexual-arousal.pdf"
 course: feeling
 tags:
   - sex

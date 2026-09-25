@@ -6,6 +6,8 @@ translator: "Roger Espel Llima"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-loter-wangpo/knowable-objects-commentary"
 drive_links:
   - "https://drive.google.com/file/d/1mHQgNau1vzSibFhBLL_bqBbOgtL0B5A5/view?usp=drive_link"
+file_links:
+  - "smallpdfs/wangpo-jamyang-loter_2022_knowable-objects.pdf"
 course: tibetan
 tags:
   - epistemology

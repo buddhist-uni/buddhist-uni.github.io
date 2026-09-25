@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/against-red-offerings"
 drive_links:
   - "https://drive.google.com/file/d/1tkRccWwQQW4q5E9izqwuJHxIcjNsEySF/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2019_plea-to-those-who-present-red-offerings.pdf"
 course: interfaith
 tags:
   - tibetan

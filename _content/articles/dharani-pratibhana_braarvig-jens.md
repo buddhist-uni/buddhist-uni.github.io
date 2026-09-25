@@ -6,6 +6,8 @@ source_url: "https://www.academia.edu/56939876/Dh%C4%81ra%E1%B9%87%C4%AB_and_Pra
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8648/2555"
 drive_links:
   - "https://drive.google.com/file/d/1l4VVOQgQjK_N6TXv48YuPKn8a74FNwDC/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/braarvig-jens_1985_dharani-pratibhana.pdf"
 course: mahayana-roots
 tags:
   - dialogue

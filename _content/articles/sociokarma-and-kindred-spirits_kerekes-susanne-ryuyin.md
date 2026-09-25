@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/3988/4164"
 source_url: "https://doi.org/10.26034/lu.jgb.2023.3988"
 drive_links:
   - "https://drive.google.com/file/d/1opMp3d6wms-xwV17zuMO4-wZLxKKM3V2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kerekes-susanne-ryuyin_2023_sociokarma-and-kindred-spirits.pdf"
 course: thai
 status: featured
 tags:

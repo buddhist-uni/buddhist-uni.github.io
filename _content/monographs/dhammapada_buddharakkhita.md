@@ -7,6 +7,9 @@ olid: OL27279597M
 drive_links:
   - "https://drive.google.com/file/d/1ut8kfwjoWTp3pQsRyAlIQy6gfFrGkdIV/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1rTGTjO0VnCZDFeyPgBvd_kCvRAJOgmRb/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/buddharakkhita_1959_dhammapada.pdf"
+  - "smallepubs/buddharakkhita_1959_dhammapada.epub"
 course: pali-canon
 subcat: poetry
 status: featured

@@ -4,6 +4,8 @@ authors:
   - "Santikaro Bhikkhu"
 drive_links:
   - "https://drive.google.com/file/d/1Je1QcbfN-eSB-hasJTd1gFoQiTegpgVh/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/santikaro_1994_buddhadasas-contribution.pdf"
 tags:
   - ethics
   - becon

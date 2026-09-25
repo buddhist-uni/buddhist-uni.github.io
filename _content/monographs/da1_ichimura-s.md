@@ -7,6 +7,8 @@ publisher: bdk
 number: 1
 series: da_bdk
 drive_links: ["https://drive.google.com/file/d/1AuM4VtKi5pVUjrzx5k7dAK9D_dosLbkB/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/ichimura-s_2015_da1.pdf"
 external_url: "https://bdkamerica.org/product/the-canonical-book-of-the-buddhas-lengthy-discourses-vol-i/"
 base_value: 1
 pages: 344

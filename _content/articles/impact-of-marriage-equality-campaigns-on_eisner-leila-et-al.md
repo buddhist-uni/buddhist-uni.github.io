@@ -9,6 +9,8 @@ external_url: "https://pubmed.ncbi.nlm.nih.gov/39042695"
 source_url: "https://doi.org/10.1073/pnas.2400582121"
 drive_links:
   - "https://drive.google.com/file/d/1RedOmRjMArEjkhrneE7PhFtwITCTDpQD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/eisner-leila-et-al_2024_impact-of-marriage-equality-campaigns-on.pdf"
 course: inner
 tags:
   - groups

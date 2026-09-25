@@ -9,6 +9,9 @@ source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh095_C
 drive_links:
   - "https://drive.google.com/file/d/18GKdHx22zXi0dpPHLUDqedP5Rr_B2b58/view?usp=sharing"
   - "https://drive.google.com/file/d/1VkS2P_FJ1Q0FU5Bt1dNTGDgXqs16-r7q/view?usp=drive_link"
+file_links:
+  - "smallpdfs/milarepa_1980_sixty-songs-of-milarepa.pdf"
+  - "smallepubs/milarepa_1980_sixty-songs-of-milarepa.epub"
 course: tibetan
 tags:
   - mahayana

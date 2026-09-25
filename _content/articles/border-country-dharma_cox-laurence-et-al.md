@@ -8,6 +8,8 @@ alternative_url: "http://eprints.maynoothuniversity.ie/1537/2/LCcox-griffin09.pd
 source_url: "https://doi.org/10.5281/zenodo.1306819"
 drive_links:
   - "https://drive.google.com/file/d/1VxNzlRME5jxz83CpXj3I21D_0JIDYDip/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/cox-laurence-et-al_2009_border-country-dharma.pdf"
 course: british
 tags:
   - irish

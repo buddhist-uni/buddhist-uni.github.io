@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.3390/rel10030221"
 drive_links:
   - "https://drive.google.com/file/d/1CHZhp2LPKOIKXfVtH_x0IDvRJR8Y9zbP/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ohnuma-reiko_2019_jackals-in-pali.pdf"
 course: animals
 tags:
   - imagery

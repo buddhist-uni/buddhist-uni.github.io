@@ -7,6 +7,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/four-dharma-traditions-of-tibet"
 drive_links:
   - "https://drive.google.com/file/d/1o0n3RCVuO4v3GttguakIh7NkM_knrl4k/view?usp=sharing"
+file_links:
+  - "smallpdfs/mipham_2016_four-dharma-traditions-of-tibet.pdf"
 course: tibetan
 tags:
   - form

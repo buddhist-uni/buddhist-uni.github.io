@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3291580&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1x0mAq8NUVrF28cRu6Bmqrl2K0TtXJaQq/view?usp=drive_link"
+file_links:
+  - "smallpdfs/maccormack-ian_2022_mortality-of-the-dalai-lama.pdf"
 course: tibetan
 tags:
   - nonmaterial-culture

@@ -5,6 +5,8 @@ authors:
 external_url: "https://jocbs.org/index.php/jocbs/article/view/213"
 drive_links:
   - "https://drive.google.com/file/d/18my9jEkHIa1mfmleWehMuhTYU_HZNAqk/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dorji-tsering_2020_objectless-loving-kindness-compassion.pdf"
 course: mahayana-roots
 tags:
   - brahmavihara

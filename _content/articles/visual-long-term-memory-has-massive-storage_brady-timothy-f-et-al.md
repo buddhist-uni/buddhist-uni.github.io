@@ -9,6 +9,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2533687"
 source_url: "https://doi.org/10.1073/pnas.0803390105"
 drive_links:
   - "https://drive.google.com/file/d/1rU3qXFLrip9rP4o4EK21a-V4QraW2tx3/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/brady-timothy-f-et-al_2008_visual-long-term-memory-has-massive-storage.pdf"
 course: feeling
 status: featured
 tags:

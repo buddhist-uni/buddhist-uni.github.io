@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10873625"
 source_url: "https://doi.org/10.1073/pnas.2313752121"
 drive_links:
   - "https://drive.google.com/file/d/1OshgNyWxaXHZSMqADWI6v7KmLeqsT8n_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bing-xu-et-al_2024_homophily-selection-and-choice-in.pdf"
 course: society
 status: featured
 tags:

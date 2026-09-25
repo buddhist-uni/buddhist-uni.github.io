@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.27.01.05"
 drive_links:
   - "https://drive.google.com/file/d/10fjYVPNPi4P5Fj8G2MeJ1PJzhEbRE5Bc/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/faure-bernard_2017_can-and-should-neuroscience-naturalize-buddhism.pdf"
 course: modern
 tags:
   - dialogue

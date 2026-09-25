@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.15239/hijbs.04.01.04"
 drive_links:
   - "https://drive.google.com/file/d/1nYEIkhmzpOLgAeSC4Wccv9n7OyVZbcSi/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/moerman-d-max_2021_xuanzang-paris-european-reception-of.pdf"
 course: maps
 tags:
   - academic

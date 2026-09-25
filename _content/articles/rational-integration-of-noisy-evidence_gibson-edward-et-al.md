@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/3657782"
 source_url: "https://doi.org/10.1073/pnas.1216438110"
 drive_links:
   - "https://drive.google.com/file/d/1T9p8OmbMaEvtSIsGpgaWUHSYkt5nvvrU/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gibson-edward-et-al_2013_rational-integration-of-noisy-evidence.pdf"
 course: communication
 tags:
   - intelligence

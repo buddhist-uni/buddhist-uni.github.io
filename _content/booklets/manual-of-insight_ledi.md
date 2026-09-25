@@ -8,6 +8,9 @@ drive_links:
   - "https://drive.google.com/file/d/1852KUbRCytIfSKJv8zQH5FL9ftABFykk/view?usp=sharing"
   - "https://drive.google.com/file/d/1i_b6kqiF4zB4FS8zb7C_dWQQ5i9b-77F/view?usp=drive_link"
   - "https://drive.google.com/file/d/1Pxoi7QGeK0F-3X8uj-zjbdMKdcR-DAIc/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ledi_1961_manual-of-insight.pdf"
+  - "smallepubs/ledi_1961_manual-of-insight.epub"
 formats: [pdf, epub, mp3]
 course: burmese
 tags:

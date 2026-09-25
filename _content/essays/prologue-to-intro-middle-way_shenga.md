@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/khenpo-shenga/madhyamakavatara-prologue"
 drive_links:
   - "https://drive.google.com/file/d/1ugGC23r_LcmDPV6sp1Q0rj9FhNbiL-1J/view?usp=sharing"
+file_links:
+  - "smallpdfs/shenga_2020_prologue-to-intro-middle-way.pdf"
 course: dialogue
 tags:
   - mahayana-roots

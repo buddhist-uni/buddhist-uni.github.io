@@ -7,6 +7,9 @@ external_url: "https://www.shengyen.org/freebook/pdf/The_Buddha_Mind,_Universe,_
 drive_links:
   - "https://drive.google.com/file/d/1d6pzZgJARWFLRZ8rNOiekZgxN77pXpYW/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1JSKWjFoOqCTjOxyDdktW12cvpWVlVew7/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sheng-yen_2009_buddha-mind-universe-and-awakening.pdf"
+  - "smallepubs/sheng-yen_2009_buddha-mind-universe-and-awakening.epub"
 course: dialogue
 tags:
   - origination

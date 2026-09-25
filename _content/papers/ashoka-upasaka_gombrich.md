@@ -5,6 +5,8 @@ authors:
 editor: "Anuradha Seneviratna"
 drive_links:
   - "https://drive.google.com/file/d/1jDEme91snnbFm_Wc49D2CgfI2qlwbdXs/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/gombrich_1994_ashoka-upasaka.pdf"
 course: indian
 tags:
   - lay

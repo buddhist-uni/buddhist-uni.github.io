@@ -10,6 +10,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705608"
 source_url: "https://doi.org/10.1073/pnas.0903616106"
 drive_links:
   - "https://drive.google.com/file/d/1qKrCMy8rgy91C8JK5nzh7LjhtADwQvrv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/stivers-tanya-et-al_2009_universals-and-cultural-variation-in.pdf"
 course: communication
 tags:
   - conversion

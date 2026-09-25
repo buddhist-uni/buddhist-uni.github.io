@@ -5,6 +5,8 @@ authors:
 external_url: "https://readingfaithfully.org/therigatha-in-pali-english-verses-of-the-elder-bhikkhunis-translated-by-bhikkhuni-somafree-epub-kindle-pdf-docx/"
 drive_links:
   - "https://drive.google.com/file/d/1jOXQKEuF_HxbVTakgLsKcnSoMZDOnHOF/view?usp=drive_link"
+file_links:
+  - "smallepubs/soma_2022_verses-of-the-elder-bhikkhunis.epub"
 formats: [epub]
 course: tg
 year: 2022

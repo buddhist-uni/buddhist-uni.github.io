@@ -7,6 +7,8 @@ alternative_url: "https://www.researchgate.net/publication/339850152_Technologie
 source_url: "https://doi.org/10.5281/zenodo.1284254"
 drive_links:
   - "https://drive.google.com/file/d/18P5nxFBmO-e62qudWXseUsZIvHe2JJ4D/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/tarocco-francesca_2017_technologies-of-salvation.pdf"
 tags:
   - chinese # maybe unarchive? The writing is pretty bad tho
   - social-media

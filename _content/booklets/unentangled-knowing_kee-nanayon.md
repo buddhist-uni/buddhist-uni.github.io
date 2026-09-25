@@ -7,6 +7,8 @@ source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp51
 source_url: "https://www.dhammatalks.org/books/UnentangledKnowing/"
 drive_links:
   - "https://drive.google.com/file/d/1NQweVAk1mL0qGwZuGAYjFxqtE-vHa78-/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kee-nanayon_1996_unentangled-knowing.pdf"
 course: thai-forest
 tags:
   - monastic-advice

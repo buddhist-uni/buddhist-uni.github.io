@@ -6,6 +6,8 @@ external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3295422&
 source_url: "https://doi.org/10.2143/JIABS.48.0.3295422"
 drive_links:
   - "https://drive.google.com/file/d/1er1UYdDrr7Vuzme9So0TRyZnDu4PhPO-/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bowie-katherine_2025_beliefs-of-khruba-srivichai.pdf"
 course: thai
 tags:
   - engaged

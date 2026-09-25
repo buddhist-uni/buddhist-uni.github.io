@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/indian-masters/matrceta/praise-of-three-jewels"
 drive_links:
   - "https://drive.google.com/file/d/1iHh9LnSQBkXtl6WMWkOPSzx8fQZHToej/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/matrcetra_2019_praise-triple-gem.pdf"
 course: mahayana-roots
 year: 2019
 publisher: lotsawa-house

@@ -9,6 +9,9 @@ source_url: "http://luangta.eu/site/books/book01_london.php"
 drive_links:
   - "https://drive.google.com/file/d/1hk2djcmhpVlkHrMqelTKbg-vqbhhrr6M/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1du6szNfF0xTJb_y1A6xJqKNs7ICbb4E4/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mahaboowa-in-london.pdf"
+  - "smallepubs/mahaboowa-in-london.epub"
 course: west
 tags:
   - british

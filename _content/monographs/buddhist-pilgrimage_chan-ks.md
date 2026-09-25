@@ -4,6 +4,8 @@ authors: ["Chan Khoon San"]
 source_url: "https://www.urbandharma.org/udharma14/pilgrim.html"
 drive_links:
   - "https://drive.google.com/file/d/1Err0QphX-HBieg_9sW1wrvpS5y_yH7BQ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chan-ks_2002_buddhist-pilgrimage.pdf"
 edition: Third
 year: 2002
 olid: OL32197249M

@@ -10,6 +10,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/8594582"
 source_url: "https://doi.org/10.1073/pnas.2103519118"
 drive_links:
   - "https://drive.google.com/file/d/1UVPCd2-TYSMOZFmU7HXx6arxjaxhFIKQ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/henderson-kyshia-et-al_2021_confederate-monuments-and-history.pdf"
 course: enculturation
 tags:
   - america

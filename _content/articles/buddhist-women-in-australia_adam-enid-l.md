@@ -7,6 +7,8 @@ source_url: "https://doi.org/10.5281/zenodo.1310714"
 alternate_doi: "https://doi.org/10.5281/zenodo.1310713"
 drive_links:
   - "https://drive.google.com/file/d/1x9Ox8f-ZeTFWAmMI-St3gRnjpJaLx9bx/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/adam-enid-l_2000_buddhist-women-in-australia.pdf"
 course: australasian
 year: 2000
 journal: jgb

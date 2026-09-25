@@ -9,6 +9,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/6442597"
 source_url: "https://doi.org/10.1073/pnas.1820240116"
 drive_links:
   - "https://drive.google.com/file/d/1yRNaD9sxOfc-6WHUygSYnE9OobIzJdQ8/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kurdi-benedek-et-al_2019_relationship-btw-implicit-intergroup-attitude-beliefs.pdf"
 course: feeling
 tags:
   - groups

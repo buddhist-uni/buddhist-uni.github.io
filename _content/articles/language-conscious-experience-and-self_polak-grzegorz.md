@@ -5,6 +5,8 @@ authors:
 external_url: "http://jocbs.org/index.php/jocbs/article/view/181/216"
 drive_links:
   - "https://drive.google.com/file/d/1OV3JDI6S6V5OrcD4fjfN4k0__ZGGLnee/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/polak-grzegorz_2018_language-conscious-experience-and-self.pdf"
 course: intellect
 status: featured
 tags:

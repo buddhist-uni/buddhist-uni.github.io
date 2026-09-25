@@ -3,6 +3,8 @@ title: "Khp 5 Maṅgala Sutta: The Highest Blessings"
 formats: [pdf]
 year: 2012
 drive_links: ["https://drive.google.com/file/d/14AydOv2ybi3Iwyb9WtsX2S3bODn4p1Xz/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/khp5.pdf"
 source_url: "https://suttacentral.net/kp5/en/sujato"
 course: buddhism
 status: featured

@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1093"
 source_url: "https://doi.org/10.5281/zenodo.1310655"
 drive_links:
   - "https://drive.google.com/file/d/1pRbD8Q87cXmOXAt-DoJvPNp_WgGE-eSt/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/fenn-mavis-l_2001_teaching-buddhism-in-west.pdf"
 course: academic
 tags:
   - american

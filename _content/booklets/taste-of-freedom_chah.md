@@ -8,6 +8,9 @@ source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp52
 drive_links:
   - "https://drive.google.com/file/d/1Jfr4CZfikonNlXouqIIbp-_909Exmq7o/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1GSxHld86DUQYZPRHJRocAiU_ocIeE99c/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/chah_1980_taste-of-freedom.pdf"
+  - "smallepubs/chah_1980_taste-of-freedom.epub"
 course: emptiness
 tags:
   - meditation

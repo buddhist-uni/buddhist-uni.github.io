@@ -6,6 +6,9 @@ external_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp
 drive_links:
   - "https://drive.google.com/file/d/1PwqpEVmpk8qXB6kPquVYs2fgksAq-hWp/view?usp=drive_link"
   - "https://drive.google.com/file/d/1Fic8Okn-t9oQ7qsvX44-8KgblFXFdzf_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nyanaponika_1949_abhidharma-studies.pdf"
+  - "smallepubs/nyanaponika_1949_abhidharma-studies.epub"
 formats: [pdf, epub]
 status: featured
 course: abhidhamma

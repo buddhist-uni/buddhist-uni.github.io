@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh085_K
 drive_links:
   - "https://drive.google.com/file/d/1kEUKR_4HvpVCKS7-gOwdzuJ6AKQYRTkW/view?usp=sharing"
   - "https://drive.google.com/file/d/1KroWriHcBsrP1XvFuTKDlitGbt4lJtaE/view?usp=drive_link"
+file_links:
+  - "smallpdfs/karuna-kusalasaya_1965_buddhism-in-thailand.pdf"
+  - "smallepubs/karuna-kusalasaya_1965_buddhism-in-thailand.epub"
 formats: [pdf, epub]
 course: thai
 tags:

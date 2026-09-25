@@ -10,6 +10,9 @@ drive_links:
   - "https://drive.google.com/file/d/1OGSDdXUDwiseQ0A8RTnTJ70ITbLWC8hy/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1zzNVlqAkht8hWce6SlnaYITT-CbUhluA/view?usp=drivesdk"
   - "https://play.google.com/store/books/details?id=-JhABAAAQBAJ"
+file_links:
+  - "smallpdfs/sheng-yen_1996_meaning-of-life.pdf"
+  - "smallepubs/sheng-yen_1996_meaning-of-life.epub"
 course: east-asian
 tags:
   - chinese

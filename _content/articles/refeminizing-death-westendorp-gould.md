@@ -6,6 +6,8 @@ authors:
 external_url: "https://doi.org/10.3390/rel12080667"
 drive_links:
   - "https://drive.google.com/file/d/1lJAPw4YGtKv52tn9RIApg3CD__kvdB6O/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/refeminizing-death-westendorp-gould.pdf"
 tags:
   - death
   - nature

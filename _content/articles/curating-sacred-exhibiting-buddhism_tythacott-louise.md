@@ -6,6 +6,8 @@ external_url: "https://journal.equinoxpub.com/BSR/article/view/9076/10549"
 source_url: "https://doi.org/10.1558/bsrv.29020"
 drive_links:
   - "https://drive.google.com/file/d/1feJ3hX5Wod_O8AAr1rhXfD0sO35JM0-R/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/tythacott-louise_2017_curating-sacred-exhibiting-buddhism.pdf"
 course: academic
 status: featured
 tags:

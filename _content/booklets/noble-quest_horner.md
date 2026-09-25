@@ -8,6 +8,9 @@ number: 198
 source_url: "https://web.archive.org/web/2024/https://www.bps.lk/olib/wh/wh198_Horner_The-Noble-Quest--Ariyapariyesana-Sutta.html"
 formats: [pdf, epub]
 drive_links: ["https://drive.google.com/file/d/1v_Xun3tL1UwqqOra15g9afZRVhpr34_1/view?usp=drivesdk", "https://drive.google.com/file/d/1zqsPGxvg9DIutuvGwhj2NJMNfUrqpPxB/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/horner_1974_noble-quest.pdf"
+  - "smallepubs/horner_1974_noble-quest.epub"
 tags:
   - form
   - pali-canon

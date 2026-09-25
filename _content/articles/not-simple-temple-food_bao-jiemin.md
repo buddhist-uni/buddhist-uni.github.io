@@ -6,6 +6,8 @@ external_url: "https://doaj.org/article/c95941bdf5c54a4293e4104626a1d32c"
 source_url: "https://doi.org/10.5281/zenodo.1116286"
 drive_links:
   - "https://drive.google.com/file/d/1OKnV8BH0MKlikA6UueFt_6MDVLpNDhhv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bao-jiemin_2017_not-simple-temple-food.pdf"
 course: american
 status: featured
 tags:

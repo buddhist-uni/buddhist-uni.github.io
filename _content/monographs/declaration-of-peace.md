@@ -4,9 +4,8 @@ authors:
   - "Ciarán Burke and others"
 drive_links:
   - "https://drive.google.com/file/d/1bh0aB-v9tuvxgfRbQk--tlJoLBVFgB4p/view?usp=drivesdk"
-course: state
+course: international-law
 tags:
-  - peace
   - violence-since-ww2
 year: 2020
 olid: OL37079470M

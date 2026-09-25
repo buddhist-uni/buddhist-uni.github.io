@@ -4,6 +4,8 @@ slug: "dn02"
 external_url: "https://suttacentral.net/dn2/en/bodhi"
 translator: bodhi
 drive_links: ["https://drive.google.com/file/d/1pyqx6FrBaRKoHN2BCfYQerRuLoSaGEwL"]
+file_links:
+  - "smallpdfs/dn02.pdf"
 status: featured
 course: monastic
 tags:

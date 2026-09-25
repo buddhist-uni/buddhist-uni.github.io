@@ -7,6 +7,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11559986"
 source_url: "https://doi.org/10.1371/journal.pone.0312007"
 drive_links:
   - "https://drive.google.com/file/d/1v7aQ0iX4_q8u6ub_IiC0dNCGFyaUImUD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/yashuv-talia-et-al_2024_12000-year-old-spindle-whorls.pdf"
 course: things
 tags:
   - technology-roots

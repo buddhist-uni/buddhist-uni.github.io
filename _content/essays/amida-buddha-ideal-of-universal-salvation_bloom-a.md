@@ -5,6 +5,8 @@ authors:
 external_url: "https://bschawaii.org/shindharmanet/bloom/ab-writings/salvation/"
 drive_links:
   - "https://drive.google.com/file/d/18O7aSILDNKpFXXe0FB5h39aq95E5icAG/view?usp=sharing"
+file_links:
+  - "smallpdfs/bloom-a_2006_amida-buddha-ideal-of-universal-salvation.pdf"
 course: japanese
 tags:
   - pureland

@@ -5,6 +5,8 @@ authors:
 external_url: "https://punctumbooks.com/titles/the-angels-wont-help-you/"
 drive_links:
   - "https://drive.google.com/file/d/1jclQowtyAZ_TL2wSz1gR4_jAzdCs5GsI/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bowker_2022_angels-wont-help.pdf"
 course: psychology # solidly
 tags:
   - dana

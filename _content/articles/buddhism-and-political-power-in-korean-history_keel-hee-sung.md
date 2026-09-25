@@ -5,6 +5,8 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8452/2359"
 drive_links:
  - "https://drive.google.com/file/d/1MKTDyk-cDMWw-m8KHaSSj3w1hyMAc8ZB/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/keel-hee-sung_1978_buddhism-and-political-power-in-korean-history.pdf"
 course: korean
 tags:
  - form

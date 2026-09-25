@@ -6,6 +6,8 @@ external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/vie
 source_url: "http://nbn-resolving.de/urn:nbn:de:bsz:16-jiabs-234496"
 drive_links:
   - "https://drive.google.com/file/d/1XVkQRwin77xSvTxUdEZyv9G8NEYbeHky/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kramer_2015_innovation-intertextuality-pancaskandhaka.pdf"
 course: mahayana-roots
 tags:
   - abhidharma

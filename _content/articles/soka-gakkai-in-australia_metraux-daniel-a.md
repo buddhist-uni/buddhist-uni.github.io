@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1108/943"
 source_url: "https://doi.org/10.5281/zenodo.1308870"
 drive_links:
   - "https://drive.google.com/file/d/11vNowh3yvJnKA6CuzkvgOhyAfZ19_ewu/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/metraux-daniel-a_2003_soka-gakkai-in-australia.pdf"
 course: australasian
 tags:
   - soka-gakkai

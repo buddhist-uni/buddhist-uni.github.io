@@ -5,6 +5,8 @@ authors:
 external_url: "https://archive.org/details/bauddhavacana-notes-on-buddhist-vocabulary-jonathan-silk"
 drive_links:
   - "https://drive.google.com/file/d/1pfw4k-SHGPAV5iuw4PdsMMkWuu5m-umo/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/silk-jonathan-a_2007_bauddhavacana-notes-on-buddhist.pdf"
 tags:
   - agama
 year: 2007

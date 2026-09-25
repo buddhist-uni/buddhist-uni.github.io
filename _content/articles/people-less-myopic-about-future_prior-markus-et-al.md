@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10756280"
 source_url: "https://doi.org/10.1073/pnas.2310050120"
 drive_links:
   - "https://drive.google.com/file/d/1LoTy1zl5MzaQK9fkt-gGwh7-cD7Uj1wd/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/prior-markus-et-al_2023_people-less-myopic-about-future.pdf"
 course: future # maybe archive?
 tags:
   - intelligence

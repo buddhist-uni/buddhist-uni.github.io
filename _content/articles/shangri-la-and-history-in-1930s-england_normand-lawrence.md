@@ -6,6 +6,8 @@ external_url: "https://journal.equinoxpub.com/BSR/article/view/8857/10309"
 source_url: "https://doi.org/10.1558/bsrv.v24i1.108"
 drive_links:
   - "https://drive.google.com/file/d/1r0R8s8HcqG-4AEZwjCtZ1EQyqnVGTxPs/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/normand-lawrence_2007_shangri-la-and-history-in-1930s-england.pdf"
 course: british
 tags:
   - lit-crit

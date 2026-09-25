@@ -6,6 +6,8 @@ external_url: "https://doi.org/10.1162/001152605774431563"
 doi: "https://doi.org/10.1007/978-1-349-62965-7_10"
 drive_links:
   - "https://drive.google.com/file/d/1lGj07RMUY-2wqR9lp9Oe-XnAId-gay0E/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/geertz-clifford_1972_deep-play-notes-on-balinese-cockfight.pdf"
 course: sea
 status: featured
 tags:

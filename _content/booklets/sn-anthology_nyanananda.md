@@ -7,6 +7,9 @@ formats: [pdf, epub]
 drive_links:
   - "https://drive.google.com/file/d/1vgPPJ5vvFqe3iu92x4PMXkUQythoAjCf/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1yPNdewk0YkmJN9wJOMD33kH5JvhsbHaj/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nyanananda_1983_sn-anthology.pdf"
+  - "smallepubs/nyanananda_1983_sn-anthology.epub"
 tags:
   - sn
 year: 1983

@@ -8,6 +8,9 @@ external_url: "https://dharmaebooks.org/the-lamp-for-the-path-to-enlightenment/"
 drive_links:
   - "https://drive.google.com/file/d/1gIOnGs_LTTSmwwUtKVfblJrq5mFdZm7g/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1-SpKvPvTigYQwROakv4mzLd92ubS1NuA/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/dipamkara-atisha_2017_lamp-for-path-to-enlightenment.pdf"
+  - "smallepubs/dipamkara-atisha_2017_lamp-for-path-to-enlightenment.epub"
 course: tibetan
 tags:
   - mahayana

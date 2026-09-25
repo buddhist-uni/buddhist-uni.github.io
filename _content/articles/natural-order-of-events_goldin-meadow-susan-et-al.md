@@ -8,6 +8,8 @@ authors:
 external_url: "https://doi.org/10.1073/pnas.0710060105"
 drive_links:
   - "https://drive.google.com/file/d/1scCwra5cV65VHXg_mt1Sg-wJXuWrrneF/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/goldin-meadow-susan-et-al_2008_natural-order-of-events.pdf"
 course: language
 year: 2008
 month: jul

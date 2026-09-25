@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.1162/DAED_a_00315"
 drive_links:
   - "https://drive.google.com/file/d/1btH-kheFX4PjsrdCf8N38Rjz7rCtIWud/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/albright-thomas_2015_perceiving.pdf"
 status: featured
 course: feeling
 tags:

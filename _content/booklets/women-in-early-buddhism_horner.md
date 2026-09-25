@@ -4,6 +4,9 @@ authors:
   - horner
 external_url: "https://www.accesstoinsight.org/lib/authors/horner/wheel030.html"
 drive_links: ["https://drive.google.com/file/d/1oC5HW1xma-y9BhWef4IIB5NOnk8R7Gzc/view?usp=drivesdk", "https://drive.google.com/file/d/1QOtsdMQ5SVNdXuHJ0JhYIfg4TRfw-xxT/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/horner_1961_women-in-early-buddhism.pdf"
+  - "smallepubs/horner_1961_women-in-early-buddhism.epub"
 year: 1961
 month: jan
 publisher: bps

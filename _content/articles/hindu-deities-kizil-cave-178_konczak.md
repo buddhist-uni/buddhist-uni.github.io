@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3134547&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/17W8clhqTrrmydfBoN2Q3AdA_8rMcCvgA/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/konczak_2015_hindu-deities-kizil-cave-178.pdf"
 source_url: "https://doi.org/10.2143/JIABS.38.0.3134547"
 journal: jiabs
 volume: 38

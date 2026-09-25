@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1987/1725"
 source_url: "https://doi.org/10.5281/zenodo.5764628"
 drive_links:
   - "https://drive.google.com/file/d/1ONUxFH9en1auHt3FvBr6gfUJs-L7PXuD/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/page-sarah-jane_2021_navigating-youth-transitions.pdf"
 course: british
 tags:
   - young-adulthood

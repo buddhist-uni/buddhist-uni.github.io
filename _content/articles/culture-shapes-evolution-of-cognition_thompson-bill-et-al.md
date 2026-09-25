@@ -7,6 +7,8 @@ authors:
 external_url: "https://doi.org/10.1073/pnas.1523631113"
 drive_links:
   - "https://drive.google.com/file/d/1FcTfU4JL89WrKFNGubmS7YEanR8yuJTx/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/thompson-bill-et-al_2016_culture-shapes-evolution-of-cognition.pdf"
 course: intellect
 tags:
   - language

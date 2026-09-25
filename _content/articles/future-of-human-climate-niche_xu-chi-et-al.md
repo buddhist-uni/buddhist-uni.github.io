@@ -10,6 +10,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7260949"
 source_url: "https://doi.org/10.1073/pnas.1910114117"
 drive_links:
   - "https://drive.google.com/file/d/1GtRudG-D7A1TGGlQ5Vje0XGPx3jx3qpA/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/xu-chi-et-al_2020_future-of-human-climate-niche.pdf"
 status: featured
 course: wider
 tags:

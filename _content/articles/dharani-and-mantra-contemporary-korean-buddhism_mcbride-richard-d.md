@@ -5,6 +5,8 @@ authors:
 external_url: "https://poj.peeters-leuven.be/content.php?url=article&id=3287483&journal_code=JIABS"
 drive_links:
   - "https://drive.google.com/file/d/1icD5x-XRKOQWBahj9Shkz0bV7xEVHkR_/view?usp=sharing"
+file_links:
+  - "smallpdfs/mcbride-richard-d_2019_dharani-and-mantra-contemporary-korean-buddhism.pdf"
 course: korean 
 tags:
   - dharani

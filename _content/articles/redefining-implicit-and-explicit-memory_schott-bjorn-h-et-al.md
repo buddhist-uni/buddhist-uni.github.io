@@ -10,6 +10,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC545864"
 source_url: "https://doi.org/10.1073/pnas.0409070102"
 drive_links:
   - "https://drive.google.com/file/d/1WFVmA4S-IhAyq37E8v1YpO5FkeufUnrX/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/schott-bjorn-h-et-al_2005_redefining-implicit-and-explicit-memory.pdf"
 course: memory
 tags:
   - neuroscience

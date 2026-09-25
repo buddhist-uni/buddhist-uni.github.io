@@ -11,8 +11,6 @@ tags:
   - cosmology
   - ebts
   - myth
-  - setting
-  - imagery
   - karma
   - abhidhamma
   - mara

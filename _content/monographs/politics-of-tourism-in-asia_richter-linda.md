@@ -13,6 +13,8 @@ tags:
   - development
   - globalization
 drive_links: ["https://drive.google.com/file/d/1yBwLCEHcikl7UTdvhyixY8DlkpOhxE6M/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/richter-linda_1989_politics-of-tourism-in-asia.pdf"
 pages: 161
 ---
 

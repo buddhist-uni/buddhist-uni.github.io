@@ -10,6 +10,8 @@ volume: 11
 pages: "71--107"
 drive_links:
   - "https://drive.google.com/file/d/1LqDP2qP0EQN7JhuylmExrwxbhSciBD66/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/jones-d-t_2016_refrain-from-the-uraga-verses.pdf"
 journal: jocbs
 ---
 

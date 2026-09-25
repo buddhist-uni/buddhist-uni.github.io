@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1109/944"
 source_url: "https://doi.org/10.5281/zenodo.1309828"
 drive_links:
   - "https://drive.google.com/file/d/1qGv0NUZRMtj-W8gYmwocAf8BbJS5_B9W/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/shoji-rafael_2003_buddhism-in-syncretic-shape.pdf"
 course: american
 tags:
   - brazilian

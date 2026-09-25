@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.25.4"
 drive_links:
   - "https://drive.google.com/file/d/1-v3vj8TqI3wcL34p5UGxSq1ZTKCv7_Dh/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/guang-xing_2015_conflict-and-harmony-btw-buddhism-and-china.pdf"
 course: mahayana # poor English, maybe archive
 tags:
   - east-asian-roots

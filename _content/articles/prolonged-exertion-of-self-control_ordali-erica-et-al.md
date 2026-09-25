@@ -10,6 +10,8 @@ external_url: "https://pubmed.ncbi.nlm.nih.gov/39527736"
 source_url: "https://doi.org/10.1073/pnas.2404213121"
 drive_links:
   - "https://drive.google.com/file/d/1Nb6mQp4qYvmMHOBIqV-UXIJxXi2nphC7/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ordali-erica-et-al_2024_prolonged-exertion-of-self-control.pdf"
 course: feeling
 tags:
   - problems

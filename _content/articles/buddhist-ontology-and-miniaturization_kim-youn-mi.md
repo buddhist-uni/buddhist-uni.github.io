@@ -5,6 +5,8 @@ authors:
 source_url: "https://doi.org/10.16893/ijbtc.2017.12.27.2.39"
 drive_links:
   - "https://drive.google.com/file/d/13Ly-KxGZbxiOeDITlTq0V7QtmZmQqt7u/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kim-youn-mi_2017_buddhist-ontology-and-miniaturization.pdf"
 course: bart
 tags:
   - medieval

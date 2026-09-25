@@ -10,6 +10,8 @@ external_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2779203"
 source_url: "https://doi.org/10.1073/pnas.0909197106"
 drive_links:
   - "https://drive.google.com/file/d/1CkbexUiuBkIcqfZ24jHKyYOV6M_4qLk_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/xu-jian-et-al_2009_symbolic-gestures-and-spoken-language.pdf"
 course: communication
 tags:
   - neuroscience

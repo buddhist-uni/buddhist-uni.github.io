@@ -6,6 +6,8 @@ authors:
 external_url: "https://punctumbooks.com/titles/museum-of-nonhumanity/"
 drive_links:
   - "https://drive.google.com/file/d/15I1IHLi62N3Vta0WBC_YC0njLfd8BozR/view?usp=drivesdk"
+file_links:
+  - "largefiles/gustofsson-haapoja_2015_museum-of-nonhumanity.pdf"
 tags:
   - world
   - things

@@ -6,6 +6,8 @@ source_url: "https://web.archive.org/web/20250718034958/http://bps.lk/olib/bl/bl
 drive_links:
   - "https://drive.google.com/file/d/1T4tw7qor2k92tkX8MTtwW6cgawCB1-mb/view?usp=sharing"
   - "https://drive.google.com/file/d/1_UKXpe3IPQfpruQJ0eNXVUX3fWzdQTjv/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/brahm_2001_ending-of-things.pdf"
 formats: [pdf, mp3]
 course: emptiness
 tags:

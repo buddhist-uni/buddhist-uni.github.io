@@ -7,6 +7,9 @@ external_url: "https://www.buddhanet.net/pdf_file/ceremonies-srilanka6.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1PeuWzLMSX9OZn1d7K2m98PA6vVYrRrub/view?usp=sharing"
   - "https://drive.google.com/file/d/1eJ-1JZ4fyHpRYRP2RIPLPaRVXdT-rPmV/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kariyawasam-a-g-s_1995_buddhist-ceremonies-and-rituals-sri-lanka.pdf"
+  - "smallepubs/kariyawasam-a-g-s_1995_buddhist-ceremonies-and-rituals-sri-lanka.epub"
 course: sri-lankan
 tags:
   - form

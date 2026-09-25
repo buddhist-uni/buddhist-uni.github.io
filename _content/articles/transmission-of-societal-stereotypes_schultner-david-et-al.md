@@ -10,6 +10,8 @@ external_url: "https://pubmed.ncbi.nlm.nih.gov/39485797"
 source_url: "https://doi.org/10.1073/pnas.2414518121"
 drive_links:
   - "https://drive.google.com/file/d/1QjPk0QKR3mBH9gd3bu2ogN1pbmugz3PO/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/schultner-david-et-al_2024_transmission-of-societal-stereotypes.pdf"
 course: groups
 tags:
   - social-intelligence

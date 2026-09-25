@@ -7,6 +7,9 @@ external_url: "https://www.suanmokkh.org/books/127"
 drive_links:
   - "https://drive.google.com/file/d/1NBUk6gprmIIjhFhXPyG11V6I-ndBAG7D/view?usp=sharing"
   - "https://drive.google.com/file/d/1JSgzV1C3rueKFWINlw-mFhuU_R34TM9X/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/buddhadasa_1969_no-religion.pdf"
+  - "smallepubs/buddhadasa_1969_no-religion.epub"
 course: interfaith # maybe archive
 tags:
   - modern

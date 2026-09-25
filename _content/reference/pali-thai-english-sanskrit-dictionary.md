@@ -2,6 +2,7 @@
 title: "Pāli-Thai-English-Sanskrit Dictionary"
 authors:
   - "Kitiyakara Voralaksana Krommaphra Chandaburinarünath"
+external_url: "https://www.scribd.com/document/1057227350/Prince-Kitiyakara-Voralaksana-Pali-Thai-English-Dictionary"
 drive_links:
   - "https://drive.google.com/file/d/1FXijXWAzU3p4LKmV4CSgM2SWIL0glW2z/view?usp=drivesdk"
 course: buddhist-thai

@@ -4,6 +4,8 @@ authors:
   - bodhi
 drive_links:
   - "https://drive.google.com/file/d/183C1T9RfPFd3V61sG6y6kZAYAJOfbo3Q/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/bodhi_1993_anatta-as-ontology.pdf"
 course: emptiness
 tags:
   - hermeneutics

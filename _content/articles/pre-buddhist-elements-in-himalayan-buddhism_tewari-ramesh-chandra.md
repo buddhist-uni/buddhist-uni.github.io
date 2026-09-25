@@ -5,6 +5,8 @@ authors:
 external_url: "https://journals.ub.uni-heidelberg.de/index.php/jiabs/article/view/8712/2619"
 drive_links:
   - "https://drive.google.com/file/d/130atOWp7kQSqtK60Jys-HHwD3kKAjesw/view?usp=sharing"
+file_links:
+  - "smallpdfs/tewari-ramesh-chandra_1987_pre-buddhist-elements-in-himalayan-buddhism.pdf"
 course: tibetan
 tags:
   - form

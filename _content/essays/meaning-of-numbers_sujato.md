@@ -2,7 +2,7 @@
 title: "The Meaning of Numbers"
 authors:
   - sujato
-source_url: "https://suttacentral.net/an-guide-sujato?lang=en#item1"
+external_url: "https://suttacentral.net/an-guide-sujato?lang=en#:~:text=The%20meaning%20of%20numbers"
 drive_links:
   - "https://drive.google.com/file/d/1jVMWMAXxH7eehI56_71azV7zbYjLTbqR/view?usp=drivesdk"
 tags:

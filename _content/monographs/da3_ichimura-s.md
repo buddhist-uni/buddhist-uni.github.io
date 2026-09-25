@@ -7,6 +7,8 @@ publisher: bdk
 series: da_bdk
 number: 3
 drive_links: ["https://drive.google.com/file/d/1C5T2qguzGRlYWWil0wRBCXNIcQJvNM2j/view?usp=drivesdk"]
+file_links:
+  - "smallpdfs/ichimura-s_2018_da3.pdf"
 external_url: "https://bdkamerica.org/product/the-canonical-book-of-the-buddhas-lengthy-discourses-vol-iii/"
 base_value: 1
 pages: 306

@@ -6,6 +6,8 @@ external_url: "https://journal.equinoxpub.com/BSR/article/view/20665/21743"
 source_url: "https://doi.org/10.1558/bsrv.43215"
 drive_links:
   - "https://drive.google.com/file/d/1EsLHIAMLEXUs8c-57fl9ohFgzvC44vdd/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/king-m_2021_exorcising-body-politic.pdf"
 course: medieval
 tags:
   - tibetan-roots

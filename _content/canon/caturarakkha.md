@@ -5,6 +5,9 @@ external_url: "https://ancient-buddhist-texts.net/Texts-and-Translations/Short-P
 drive_links:
   - "https://drive.google.com/file/d/19waoJDJlxytIf4XAXd1NuTBJdVMWMPOL/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1A3Ijg1p0AK_WSFCL0y3T8M6zK35YKDoP/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/caturarakkha.pdf"
+  - "smallepubs/caturarakkha.epub"
 status: featured
 course: theravada
 tags:

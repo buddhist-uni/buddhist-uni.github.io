@@ -4,6 +4,8 @@ authors:
   - "Dhamma Study Group, Bangkok"
 drive_links:
   - "https://drive.google.com/file/d/1OuBYV38pBH5k-JjqnWVsZAqG-6iIIPdt/view?usp=drivesdk"
+file_links:
+  - "mediumfiles/intro-to-abhidhamma.pdf"
 course: abhidhamma
 year: 1980
 month: jan

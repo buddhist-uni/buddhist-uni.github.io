@@ -5,6 +5,8 @@ authors:
 source_url: "https://web.archive.org/web/2024if_/https://www.bps.lk/olib/bp/bp617s_Dhammika_Sacred-Island.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1KOxzN8tkBkNPjbFxCo09lA0dNIM2r9RP/view?usp=sharing"
+file_links:
+  - "smallpdfs/dhammika_2008_sacred-island.pdf"
 course: sri-lankan
 tags:
   - pilgrimage

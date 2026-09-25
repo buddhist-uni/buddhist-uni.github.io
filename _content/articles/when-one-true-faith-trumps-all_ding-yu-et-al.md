@@ -8,6 +8,8 @@ external_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11060101"
 source_url: "https://doi.org/10.1093/pnasnexus/pgae144"
 drive_links:
   - "https://drive.google.com/file/d/1S_sVrgaxec9FMfvGlMgubsogEYdg7UM2/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/ding-yu-et-al_2024_when-one-true-faith-trumps-all.pdf"
 course: culture
 tags:
   - ideology

@@ -5,6 +5,8 @@ authors:
 source_url: "http://www.108wisdom.org/html/OTH_05.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1p62ud-8wbHGJ3xzy5Nc0BfWRgXvQT5G_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/sheng-yen_1988_common-questions.pdf"
 tags:
   - view
   - mahayana

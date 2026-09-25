@@ -7,6 +7,8 @@ translator: "Abraham Ta-Quan"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/shechen-gyaltsab/four-line-prayer-to-padmasambhava"
 drive_links:
   - "https://drive.google.com/file/d/15gwrBw5ixYmryJImNs06Dtoi_a6tEAS8/view?usp=sharing"
+file_links:
+  - "smallpdfs/gyaltsab-shechen_2021_prayer-to-padmasambhava.pdf"
 course: tibetan
 year: 2021
 publisher: lotsawa-house 

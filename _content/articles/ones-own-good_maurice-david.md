@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/20250327074248/https://www.bps.lk/olib/
 drive_links:
   - "https://drive.google.com/file/d/12oJ3KSnF_Eaat81GWxaoXC2O5LeOjqqY/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1I3negkT9-e3vG1MF8eQqIk4cnAxrQpWH/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/maurice-david_1961_ones-own-good.pdf"
+  - "smallepubs/maurice-david_1961_ones-own-good.epub"
 tags:
   - dialogue
   - engaged

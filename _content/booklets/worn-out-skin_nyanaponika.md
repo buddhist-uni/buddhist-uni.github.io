@@ -6,6 +6,9 @@ external_url: "https://accesstoinsight.org/lib/authors/nyanaponika/wheel241.html
 drive_links:
   - "https://drive.google.com/file/d/1-PWuHR3LtFx32vXZxpdfsJQuwraNAQlA/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1RdPfXXfknTZNo_8h1SjWsjWZ0Lban4_4/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nyanaponika_1977_worn-out-skin.pdf"
+  - "smallepubs/nyanaponika_1977_worn-out-skin.epub"
 olid: OL4284371M
 year: 1977
 publisher: bps

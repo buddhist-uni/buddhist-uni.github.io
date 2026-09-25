@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/mipham/satirical-advice-four-schools"
 drive_links:
   - "https://drive.google.com/file/d/14lN_G34eAWctewatLsC7U2vve4MLBMED/view?usp=sharing"
+file_links:
+  - "smallpdfs/mipham_2005_satirical-advice-four-schools.pdf"
 course: tibetan
 tags:
   - sangha

@@ -5,6 +5,8 @@ authors:
 external_url: "https://punctumbooks.com/titles/teaching-myself-to-see/"
 drive_links:
   - "https://drive.google.com/file/d/1wR9IFAqo6O6LxEZvFH7KWA9qSHDHjQoY/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mukhopadhyay-tito_2021_teaching-myself-to-see.pdf"
 course: feeling
 tags:
   - autism

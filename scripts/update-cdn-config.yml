@@ -1,6 +1,5 @@
 BLACKLISTED_DOMAINS: !!set
   archive.is: null
-  store.pariyatti.org: null
   harpers.org: null
   hbr.org: null
   jacobinmag.com: null
@@ -18,6 +17,7 @@ BLACKLISTED_DOMAINS: !!set
   teahouse.buddhistdoor.net: null
   thefearlessheart.org: null
   tricycle.org: null
+  www.academia.edu: null
   www.denverpost.com: null
   www.dissentmagazine.org: null
   www.guernicamag.com: null
@@ -37,31 +37,49 @@ BLACKLISTED_DOMAINS: !!set
   www.vox.com: null
   www.wired.com: null
   wwzc.org: null
+BLACKLISTED_ITEMS: !!set
+  booklets/songs-of-the-elder-sisters_booth-francis: null
+  excerpts/buddhist-thought_williams-paul: null
+  excerpts/experience-and-nature_dewey-john: null
+  papers/relationship-between-buddhism-and-the-state_kulke-hermann: null
+  papers/two-leading-principles_geshe-sopa: null
+BLACKLISTED_JOURNALS: !!set
+  vox: null
 REDIRECT_PDFS: !!set
   /content/articles/early-development-of-buddhist-literature_cousins: null
   /content/articles/engaged-buddhism_gleig-ann: null
   /content/articles/engaged-buddhism_temprano-victor: null
   /content/articles/epistemology-of-the-brahmajala-sutta_stephen-a-evans: null
+  /content/articles/genres-of-buddhist-literature-medieval-china_li-silong: null
   /content/articles/how-gnosis-met-logos-story-of_deleanu-f: null
+  /content/articles/origins-of-the-32-marks_mcgovern-nathan: null
+  /content/articles/pre-buddhist-elements-in-himalayan-buddhism_tewari-ramesh-chandra: null
   /content/articles/sal-an-alternative-buddhist-holy-tree_ireland: null
+  /content/articles/subsidence_perkins-sid: null
   /content/articles/three-turnings_powers-john: null
   /content/articles/to-be-or-not-to-be_gessen-masha: null
   /content/booklets/buddhist-cosmos_punnadhammo: null
   /content/booklets/ecocrisis-perspectives: null
+  /content/booklets/everymans-ethics_narada: null
   /content/booklets/facing-the-future_bodhi: null
   /content/booklets/footprints-in-the-dust_dhammika: null
   /content/booklets/in-his-own-words_nyanamoli: null
   /content/booklets/kalama-sutta-free-inquiry_soma-thera: null
+  /content/booklets/manual-of-insight_ledi: null
+  /content/booklets/maps-of-ancient-india_anandajoti: null
   /content/booklets/mindfulness_sumedho: null
+  /content/booklets/no-religion_buddhadasa: null
   /content/booklets/noble-strategy_geoff: null
   /content/booklets/rebirth-explained_gunaratna: null
   /content/booklets/refuge_geoff: null
   /content/booklets/role-of-animals-in-indian-buddhism-with_diem-nguyen-thi: null
   /content/booklets/sn-anthology_ireland: null
   /content/booklets/sn-anthology_walshe: null
+  /content/booklets/the-buddhist-layman: null
   /content/booklets/the-discourse-on-right-view_nyanamoli: null
   /content/booklets/thirty-seven-practices-of-a-bodhisattva: null
   /content/booklets/this-is-the-path_dtun-t: null
+  /content/booklets/worlds-true-welfare_maitreya-vidagama: null
   /content/canon/bodhisattvamanyavali_atisha: null
   /content/canon/book-of-the-discipline_horner: null
   /content/canon/dn22: null
@@ -88,7 +106,9 @@ REDIRECT_PDFS: !!set
   /content/reference/concise-pali-dictionary: null
   /content/reference/pali-name-index: null
 SEARCHABLE_PDFS: !!set
+  /content/articles/buddha-pali_karpik-stefan: null
   /content/articles/early-buddhism-and-urban-revolution_gokhale: null
+  /content/articles/how-dharma-landed-nz_kemp-hugh-p: null
   /content/articles/light-emitting-image-of-magadha-in-tang_wong-dorothy: null
   /content/articles/origin-of-pali_norman: null
   /content/articles/putting-smrti-back-into-sati-putting_levman-bryan: null
@@ -97,14 +117,26 @@ SEARCHABLE_PDFS: !!set
   /content/booklets/arahattamagga-arahattaphala_mahabua: null
   /content/booklets/buddha-and-his-dhamma_bodhi: null
   /content/booklets/chinese-liturgy_stc: null
+  /content/booklets/dana_bodhi-et-al: null
   /content/booklets/gifts-he-left-behind_dun: null
   /content/booklets/how-to-meditate_yuttadhammo: null
   /content/booklets/htm2_yuttadhammo: null
+  /content/booklets/lamp-for-path-to-enlightenment_dipamkara-atisha: null
   /content/booklets/mn-selections_nyanamoli-bodhi: null
+  /content/booklets/opening-up-to-kindfulness_brahm: null
   /content/booklets/satipatthana-vipassana_mahasi: null
+  /content/booklets/satipatthana_gunaratna: null
+  /content/booklets/simple-guide-to-life_bogoda-r: null
   /content/booklets/thai-chanting_anandajoti: null
   /content/essays/mind-and-its-endless-rebirth_suchart: null
+  /content/essays/practical-origination_yuttadhammo: null
+  /content/essays/remembering-mother_rangdrol-shabkar: null
+  /content/essays/smoking_dhammika: null
+  /content/essays/sri-lanka-and-tibet_dhammika: null
+  /content/monographs/anguttara-anthology_nyanaponika-bodhi: null
   /content/monographs/nature-in-ebts_dhammika: null
+  /content/reference/an-thematic-guide_bodhi: null
+  /content/reference/sacred-island_dhammika: null
 WHITELISTED_DOMAINS: !!set
   amaravati.org: null
   ancient-buddhist-texts.net: null
@@ -203,6 +235,7 @@ WHITELISTED_DOMAINS: !!set
   youtu.be: null
   youtube.com: null
 WHITELISTED_JOURNALS: !!set
+  University of Ceylon Review: null
   aririab: null
   bodhileaves: null
   cjbs: null
@@ -216,7 +249,6 @@ WHITELISTED_JOURNALS: !!set
   pnas: null
   present: null
   sljh: null
-  'University of Ceylon Review': null
 WHITELISTED_PUBLISHERS: !!set
   amaravati: null
   bps: null
@@ -224,4 +256,3 @@ WHITELISTED_PUBLISHERS: !!set
   lotsawa-house: null
   mdpi: null
   punctum: null
-

@@ -4,6 +4,8 @@ authors: ["Richard Fynes"]
 external_url: "http://www.jocbs.org/index.php/jocbs/article/view/109/126"
 drive_links:
   - "https://drive.google.com/file/d/1HYoWkiRkhzmeslMOMfrOFZROrqBM6tAT/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/fynes-richard_2015_coined-money.pdf"
 tags:
   - setting
   - becon

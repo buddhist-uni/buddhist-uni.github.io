@@ -8,6 +8,8 @@ authors:
 external_url: "https://doi.org/10.1073/pnas.1321664111"
 drive_links:
   - "https://drive.google.com/file/d/1rCMB5mCr7gKmiqiwnBEDd7DYlglCdGoT/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nummenmaa-lauri-et-al_2013_bodily-maps-of-emotions.pdf"
 course: feeling
 year: 2013
 month: dec

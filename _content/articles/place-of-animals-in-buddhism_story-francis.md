@@ -6,6 +6,9 @@ source_url: "https://web.archive.org/web/20250718042700/http://bps.lk/olib/bl/bl
 drive_links:
   - "https://drive.google.com/file/d/1gi9LYoz6lqu2rOkaxdPbeVpixKepqDBv/view?usp=sharing"
   - "https://drive.google.com/file/d/1v3BxfUT7uyz8x-QU7WZL-eF-jvmmUsqO/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/story-francis_1964_place-of-animals-in-buddhism.pdf"
+  - "smallepubs/story-francis_1964_place-of-animals-in-buddhism.epub"
 course: animals
 tags:
   - karma

@@ -5,6 +5,9 @@ external_url: "https://www.dhammatalks.org/ebook_index.html#bmc"
 drive_links:
   - "https://drive.google.com/file/d/1a9o1QDM8gsal7Oj9Hiz9Kb1g0IAUCSy_/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1uPVyFOh6tlCDYlxu9mnmDiNTV6Ergo_j/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/geoff_2001_bmc.pdf"
+  - "smallepubs/geoff_2001_bmc.epub"
 year: 2001
 olid: OL23822296M
 course: vinaya-studies

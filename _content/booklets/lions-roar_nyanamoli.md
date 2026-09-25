@@ -8,6 +8,9 @@ source_url: "https://web.archive.org/web/2024/https://www.bps.lk/library-search-
 drive_links:
   - "https://drive.google.com/file/d/1TqorZ6HPZEGXgjE5IqY47D_vAj1dWW0v/view?usp=drivesdk"
   - "https://drive.google.com/file/d/1hRb3OklE9Eif1Y4ng0LlwNFmPLEObnMl/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/nyanamoli_1994_lions-roar.pdf"
+  - "smallepubs/nyanamoli_1994_lions-roar.epub"
 course: philosophy
 tags:
   - function

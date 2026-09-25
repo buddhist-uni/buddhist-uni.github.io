@@ -5,6 +5,8 @@ authors:
 source_url: "https://web.archive.org/web/20250517001829/https://bps.lk/olib/bl/bl088_Handurukande_Buddhist-Tales-from-Sanskrit-Sources.html"
 drive_links:
   - "https://drive.google.com/file/d/17kW50IFQMyB5tgJWGcvBlkOysO7OR1sn/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/handarukande-ratna_1991_tales-from-sanskrit.pdf"
 course: rebirth-stories
 year: 1991
 journal: bodhileaves

@@ -7,6 +7,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1996/3164"
 source_url: "https://doi.org/10.26034/lu.jgb.2022.1996"
 drive_links:
   - "https://drive.google.com/file/d/1QYrvPbkw19_SaswJM0Lf3fXvcD_omGAY/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mcara-sally-et-al_2022_buddhism-in-aotearoa-new-zealand.pdf"
 course: australasian
 year: 2022
 month: dec

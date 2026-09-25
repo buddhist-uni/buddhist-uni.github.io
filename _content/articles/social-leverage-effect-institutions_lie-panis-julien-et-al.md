@@ -9,6 +9,8 @@ external_url: "https://hal.science/hal-04875809/document"
 source_url: "https://doi.org/10.1073/pnas.2408802121"
 drive_links:
   - "https://drive.google.com/file/d/1OdrHiWkiMX_MZzYPnXjtROVs8ognG4dF/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/lie-panis-julien-et-al_2024_social-leverage-effect-institutions.pdf"
 course: social # maybe down to society?
 tags:
   - economics

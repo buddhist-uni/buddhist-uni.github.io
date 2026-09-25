@@ -6,6 +6,8 @@ translator: "Adam Pearcey"
 external_url: "https://www.lotsawahouse.org/tibetan-masters/jamyang-khyentse-chokyi-lodro/drops-of-nectar-advice"
 drive_links:
   - "https://drive.google.com/file/d/1knhW4I4nLr2PlEQ5YZmZkit7TInIi6Ph/view?usp=sharing"
+file_links:
+  - "smallpdfs/chokyi-lodro_2021_drops-of-nectarous-advice.pdf"
 course: tibetan
 tags:
   - monastic-advice

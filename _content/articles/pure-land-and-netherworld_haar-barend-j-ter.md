@@ -5,6 +5,8 @@ authors:
 external_url: "https://doi.org/10.15239/hijbs.04.01.05"
 drive_links:
   - "https://drive.google.com/file/d/1nXW5qko73YFhweg_DbAby6stW5F5CZWb/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/haar-barend-j-ter_2021_pure-land-and-netherworld.pdf"
 course: east-asian-roots
 tags:
   - pureland # maybe down to pureland-roots some day?

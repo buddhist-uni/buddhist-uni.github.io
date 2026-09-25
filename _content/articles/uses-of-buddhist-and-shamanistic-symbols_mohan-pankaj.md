@@ -4,6 +4,8 @@ authors:
   - "Pankaj Mohan"
 drive_links:
   - "https://drive.google.com/file/d/1q4PJD0keAkD6Hy7gQdfwUnpaTZZhlrQi/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/mohan-pankaj_2015_uses-of-buddhist-and-shamanistic-symbols.pdf"
 source_url: "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE07087255"
 course: east-asian-roots
 tags:

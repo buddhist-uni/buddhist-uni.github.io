@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1082/917"
 source_url: "https://doi.org/10.5281/zenodo.1310703"
 drive_links:
   - "https://drive.google.com/file/d/1vnh0VGzChQNKG64Bqn2LPAgov8xH2HJQ/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/padgett-douglas-m_2000_americans-need-something-to-sit-on.pdf"
 course: american
 status: featured
 tags:

@@ -3,6 +3,8 @@ title: "The Ethics of Buddhism and the Ethos of the Japanese Management: The Spi
 external_url: "https://ssrn.com/abstract=1423823"
 drive_links:
   - "https://drive.google.com/file/d/1QxvfOgJ2jNA6hGkC5UY435_zbB8kmd90/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/horide-ichirou_2005_spirit-of-jihi.pdf"
 authors:
   - "Ichirou Horide"
 year: 2005

@@ -6,6 +6,8 @@ external_url: "https://www.globalbuddhism.org/article/view/1292/1129"
 source_url: "https://doi.org/10.5281/zenodo.4147509"
 drive_links:
   - "https://drive.google.com/file/d/15FlaAOngICSZL2l6fmfPOFmIC7ruvCzG/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/jonutyte-kristina_2020_beyond-bad-buddhism.pdf"
 course: tibetan
 tags:
   - sangha

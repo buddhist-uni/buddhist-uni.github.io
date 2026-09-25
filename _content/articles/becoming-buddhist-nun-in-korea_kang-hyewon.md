@@ -4,6 +4,8 @@ authors:
   - "Hyewon Kang"
 drive_links:
   - "https://drive.google.com/file/d/1p1t9e311X2zjQPf55i9oSF6AelooKfV_/view?usp=drivesdk"
+file_links:
+  - "smallpdfs/kang-hyewon_2003_becoming-buddhist-nun-in-korea.pdf"
 tags:
   - korean
 year: 2003
