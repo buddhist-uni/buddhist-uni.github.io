@@ -297,6 +297,32 @@ class DriveCache:
             else:
                 self.cursor.execute("DELETE FROM trashed_drive_items WHERE id = ? ;", (item_data['id'],))
 
+            # Evict stale cache file if md5_checksum is changing.
+            new_checksum = item_data.get('md5Checksum')
+            if new_checksum and isinstance(self.file_cache_dir, Path):
+                self.cursor.execute(
+                    "SELECT md5_checksum, name, mime_type FROM drive_items WHERE id = ?",
+                    (item_data['id'],)
+                )
+                existing = self.cursor.fetchone()
+                if existing and existing['md5_checksum'] and existing['md5_checksum'] != new_checksum:
+                    old_checksum = existing['md5_checksum']
+                    # Only evict if no other file still shares the old checksum.
+                    self.cursor.execute(
+                        "SELECT COUNT(*) FROM drive_items WHERE md5_checksum = ? AND id != ?",
+                        (old_checksum, item_data['id'])
+                    )
+                    if self.cursor.fetchone()[0] == 0:
+                        old_file_stub = {
+                            'md5Checksum': old_checksum,
+                            'name': existing['name'],
+                            'mimeType': existing['mime_type'],
+                            'trashed': False,
+                        }
+                        old_cache_path = self.get_cache_path_for_file(old_file_stub)
+                        if old_cache_path and old_cache_path.exists():
+                            old_cache_path.unlink()
+
             sql = f"""
             INSERT INTO {table} (id, version, name, original_name, mime_type, parent_id, modified_time, size, owner, md5_checksum, shortcut_target)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -876,9 +902,21 @@ class DriveCache:
             file['trashedTime'] = trashed_time
         file['trashed'] = True
         if before_cache_path and before_cache_path.exists():
-            new_cache_path = self.get_cache_path_for_file(file)
-            assert new_cache_path and new_cache_path != before_cache_path
-            before_cache_path.rename(new_cache_path)
+            # Don't move the cache file if another live file still shares this checksum.
+            # (The file is already deleted from drive_items, so any hit here is a sibling.)
+            checksum = copied_row['md5_checksum']
+            if checksum:
+                self.cursor.execute(
+                    "SELECT COUNT(*) FROM drive_items WHERE md5_checksum = ?",
+                    (checksum,)
+                )
+                sibling_exists = self.cursor.fetchone()[0] > 0
+            else:
+                sibling_exists = False
+            if not sibling_exists:
+                new_cache_path = self.get_cache_path_for_file(file)
+                assert new_cache_path and new_cache_path != before_cache_path
+                before_cache_path.rename(new_cache_path)
         return file
 
     def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
