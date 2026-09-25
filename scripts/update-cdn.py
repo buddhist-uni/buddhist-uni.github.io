@@ -8,8 +8,10 @@ import os.path
 import shutil
 import subprocess
 import yaml
+import re
 
 from collections import defaultdict
+from typing import Callable
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -31,10 +33,6 @@ from strutils import (
 from executils import get_untracked_files
 from tqdm import tqdm
 from tqdm.contrib.concurrent import process_map as tqdm_process_map
-from train_tag_predictor import (
-  PDF_TEXT_FOLDER,
-  EPUB_TEXT_FOLDER,
-)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dest", type=Path, default=git_root_folder.joinpath("..").resolve())
@@ -42,7 +40,7 @@ parser.add_argument("--reportcsv", type=Path)
 args = parser.parse_args()
 
 if not args.reportcsv:
-  print("Please download a copy of the related content report as a CSV from GA4, fix the header so it's a real CSV and then pass it in as --reportcsv")
+  print("Please download a copy of the \"Related Content List\" report as a CSV from OBU's GA4 Account => Explore Tab, fix the header so it's a real CSV and then pass it in as --reportcsv")
   exit(1)
 
 print("Loading the website data...")
@@ -55,14 +53,18 @@ for row in reportreader:
 website.load()
 
 CFP_SIZE_LIMIT = 26214400 # 25MiB
-ARCHIVABLE_FORMATS = {
-  'pdf': PDF_TEXT_FOLDER,
-  'epub': EPUB_TEXT_FOLDER,
-}
+ARCHIVABLE_FORMATS = [
+  'pdf',
+  'epub',
+]
 
 for sizestring in ["large", "medium"]:
-  folder = (args.dest / f"{sizestring}files")
-  if not folder.exists():
+  folder = Path(args.dest / f"{sizestring}files")
+  if folder.exists():
+    if sizestring != "large":
+      assert (folder / ".git").is_dir(), f"{str(folder)} is not a git repo"
+      subprocess.run(["git", "pull"], check=True)
+  else:
     print(f"{str(folder)} does not exist")
     if sizestring == "medium" and prompt("Clone it?"):
       subprocess.run(["git", "clone", "git@github.com:buddhist-uni/mediumfiles.git", str(folder)], check=True)
@@ -72,19 +74,18 @@ for sizestring in ["large", "medium"]:
     else:
       print("Okay. Will let you sort that out!")
       exit(1)
-  if sizestring != "large" and not (folder / ".git").exists():
-    raise Exception(f"{str(folder)} is not a git repo")
-for fmt in ARCHIVABLE_FORMATS.keys():
+for fmt in ARCHIVABLE_FORMATS:
   folder = (args.dest / f"small{fmt}s")
-  if not folder.exists():
+  if folder.exists():
+    assert (folder/".git").is_dir(), f"{folder} exists but isn't a git dir"
+    subprocess.run(["git", "pull"], check=True)
+  else:
     print(f"{str(folder)} does not exist")
     if prompt("Clone it?"):
       subprocess.run(["git", "clone", "git@github.com:buddhist-uni/small{fmt}s.git", str(folder)], check=True)
     else:
       print("Okay. Will let you sort that out!")
       exit(1)
-  if not (folder / ".git").exists():
-    raise Exception(f"{str(folder)} is not a git repo")
 
 CONFIG_PATH = git_root_folder / 'scripts' / 'update-cdn-config.yml'
 
@@ -94,16 +95,30 @@ class CFPCDNBuilderConfig:
     self._data = yaml.safe_load(path.read_text())
   def save(self) -> None:
     self.path.write_text(yaml.dump(self._data))
-  def blacklist_domain(self, domain: str) -> None:
+  def blacklist_domain(self, domain: str) -> bool:
     self._data["BLACKLISTED_DOMAINS"].add(domain)
     self.save()
-  def whitelist_domain(self, domain: str) -> None:
+    return False
+  def whitelist_domain(self, domain: str) -> bool:
     self._data["WHITELISTED_DOMAINS"].add(domain)
     self.save()
+    return True
+  def whitelist_publisher(self, publisher: str) -> bool:
+    self._data["WHITELISTED_PUBLISHERS"].add(publisher)
+    self.save()
+    return True
+  def whitelist_journal(self, journal: str) -> bool:
+    self._data["WHITELISTED_JOURNALS"].add(journal)
+    self.save()
+    return True
   def is_domain_blacklisted(self, domain: str) -> bool:
     return domain in self._data["BLACKLISTED_DOMAINS"]
   def is_domain_whitelisted(self, domain: str) -> bool:
     return domain in self._data["WHITELISTED_DOMAINS"]
+  def is_publisher_whitelisted(self, publisher: str) -> bool:
+    return publisher in self._data["WHITELISTED_PUBLISHERS"]
+  def is_journal_whitelisted(self, journal: str) -> bool:
+    return journal in self._data["WHITELISTED_JOURNALS"]
   def is_searchable_pdf(self, slug: str) -> bool:
     return slug in self._data["SEARCHABLE_PDFS"]
   def is_redirect_pdf(self, slug: str) -> bool:
@@ -117,25 +132,29 @@ class CFPCDNBuilderConfig:
 
 APP_CONFIG = CFPCDNBuilderConfig(CONFIG_PATH)
 
-def push_all_changes_in_repo(folder: Path, message: str = None) -> None:
+def push_all_changes_in_repo(folder: Path, message: str | None = None) -> None:
   subprocess.run(["git", "-C", str(folder), "add", "."], check=True)
   subprocess.run(["git", "-C", str(folder), "commit", "-m", message or "Update files"], check=True)
   subprocess.run(["git", "-C", str(folder), "push"])
 
-candidates = []
-drive_ids_to_fetch = dict()
+candidates: list[tuple[website.ContentFile, int]] = [] # The int is how many of its drive_links to consider copying over
 
 print("Finding eligible content...")
 for item in website.content:
-  if not item.drive_links or not (item.external_url or item.source_url):
+  if not item.drive_links:
+    continue # We only add file_links from launched drive files
+    # we do a more thorough check of the drive_links below when we actually try to add it
+    # this round of filtering is just to filter out the obvious rejects
+  if item.status == "rejected":
     continue
-  if not item.course or item.status == "rejected":
-    continue
-  domain = urlparse(item.external_url or item.source_url).netloc
-  if APP_CONFIG.is_domain_blacklisted(domain):
-    continue
+  if item.file_links:
+    continue # This script only adds missing file_links
+  url = item.external_url or item.source_url
+  if url:
+    domain = urlparse(url).netloc
+    if APP_CONFIG.is_domain_blacklisted(domain):
+      continue
   upto_drive_link = 0
-  drive_ids = dict()
   for i in range(len(item.drive_links)):
     try:
       fmt = item.formats[i]
@@ -147,11 +166,6 @@ for item in website.content:
     if item.file_links and len(item.file_links) > i and "s/" not in item.file_links[i]:
       break
     upto_drive_link = i + 1
-    LOCAL_FOLDER = ARCHIVABLE_FORMATS[fmt]
-    gid = gdrive.link_to_id(item.drive_links[i])
-    fpath = LOCAL_FOLDER.joinpath(f"{gid}.{fmt}")
-    if not fpath.exists():
-      drive_ids[gid] = fmt
   has_epub = False
   for i in range(upto_drive_link):
     fmt = item.formats[i]
@@ -159,72 +173,90 @@ for item in website.content:
       has_epub = True
       break
   linkfmt = item.external_url_linkfmt()
-  if linkfmt not in ["", "YouTube (link)", None] and not has_epub:
-    continue
-  if has_epub and linkfmt == "pdf":
+  if not (linkfmt  in ["", "YouTube (link)", None] or has_epub):
     continue
   if upto_drive_link > 0:
     candidates.append((item, upto_drive_link))
-    drive_ids_to_fetch.update(drive_ids)
 
-# Download all drive_ids_to_fetchinto their respective folders
-print(f"Fetching Google Drive metadata...")
-filedata = gdrive.gcache.get_items(list(drive_ids_to_fetch.keys()))
-drive_files_to_download = []
-drive_file_locations = []
-bytestodownload = 0
-for gfile in tqdm(filedata, total=len(drive_ids_to_fetch)):
-  if gfile['owners'][0]['emailAddress'] != "theopenbuddhistuniversity@gmail.com":
-    continue
-  fmt = drive_ids_to_fetch[gfile['id']]
-  drive_files_to_download.append(gfile['id'])
-  LOCAL_FOLDER = ARCHIVABLE_FORMATS[fmt]
-  fpath = LOCAL_FOLDER.joinpath(f"{gfile['id']}.{fmt}")
-  drive_file_locations.append(str(fpath))
-  bytestodownload += int(gfile['size'])
+small_pdf_canonical_urls: list[tuple[str, website.ContentFile]] = list() # of (filename, canonicalitem)
+small_pdf_headers_file: Path = args.dest / "smallpdfs" / "_headers"
 
-print(f"Downloading {len(drive_files_to_download)} files ({bytestodownload/1024/1024/1024:.2f} GB)...")
-tqdm_process_map(
-  gdrive_base.download_file,
-  drive_files_to_download,
-  drive_file_locations,
-  [False]*len(drive_files_to_download),
-  max_workers=4,
-)
-print("Done downloading files!")
+if small_pdf_headers_file.is_file():
+  print("Loading old smallpdfs/_headers...")
+  previous_headers_file = small_pdf_headers_file.read_text().split('\n\n')
+  content_url_to_item: dict[str, website.ContentFile] = {
+    item.url: item for item in website.content
+  }
+  for line in previous_headers_file:
+    match = re.search(r"(?P<pdf>/[^\s]+\.pdf)[\s\S]*?Link:\s*<(?P<url>[^>]+)>", line)
+    assert match, f"Failed to parse ```{line}``` from {small_pdf_headers_file}"
+    pdf_filename = match.group("pdf")
+    canonurl = match.group("url")
+    small_pdf_canonical_urls.append((pdf_filename, content_url_to_item[canonurl]))
+  print(f"  loaded {len(small_pdf_canonical_urls)} old smallpdf headers")
+  del content_url_to_item
 
-print("Copying files and setting file_links...")
+def is_actually_selfhostable(item: website.ContentFile) -> bool:
+  external_url = item.external_url or item.source_url
+  if external_url:
+    domain = urlparse(external_url).netloc
+  else:
+    domain = ""
+  # Because we add to the blacklist during the loop, recheck it
+  if domain and APP_CONFIG.is_domain_blacklisted(domain):
+    return False
+  # All whitelisted items get copied over
+  if domain and APP_CONFIG.is_domain_whitelisted(domain):
+    return True
+  if item.journal and APP_CONFIG.is_journal_whitelisted(item.journal):
+    return True
+  if item.publisher and APP_CONFIG.is_publisher_whitelisted(item.publisher):
+    return True
+  
+  # If not whitelisted and we have a legit external_url, no need for a third copy
+  if item.external_url and not item.external_url.startswith("https://web.archive.org"):
+    return False
+  
+  # If we're down to a web.archive url but have a backup url, that's okay too
+  if item.external_url and str(item.external_url).startswith("https://web.archive.org") and item.alternate_url:
+    return False
 
-# Now go through every candidate and format
-#   if the file exists in LOCAL_FOLDER
-#      copy to args.dest with the flipped name
-#      and set the file_link appropriately
+  # So now in this case, we have at best a web.archive.org external_url (or none at all)
+  # and no alternate_url and we don't know if this item is white or black listed
+  # so, let's ask the user what to do:
 
-small_pdf_canonical_urls = list() # of (filename, canonurl)
+  print(f"\n{item.content_path} has drive_links but no good external_url.  Back it up to file_links?", flush=True)
+
+  radio_choices: list[tuple[str, Callable]] = []
+  if domain:
+    radio_choices.append((f"Whitelist {domain}", lambda: APP_CONFIG.whitelist_domain(domain)))
+    radio_choices.append((f"Blacklist {domain}", lambda: APP_CONFIG.blacklist_domain(domain)))
+  if item.publisher:
+    radio_choices.append((f"Whitelist publisher: {item.publisher}", lambda: APP_CONFIG.whitelist_publisher(item.publisher)))
+  if item.journal:
+    radio_choices.append((f"Whitelist journal: {item.journal}", lambda: APP_CONFIG.whitelist_journal(item.journal)))
+  radio_choices.append(("Teach me how to do something else", lambda: exit(1)))
+  
+  choice = radio_dial([choice[0] for choice in radio_choices])
+  return radio_choices[choice][1]()
+
 
 for item, upto in candidates:
-  domain = urlparse(item.external_url or item.source_url).netloc
-  if APP_CONFIG.is_domain_blacklisted(domain):
+  if not is_actually_selfhostable(item):
     continue
-  if not APP_CONFIG.is_domain_whitelisted(domain):
-    print(f"\n\"{item.title}\" has a link to {item.drive_links[0]} from {item.external_url or item.source_url} (see: https://buddhistuniversity.net{item.url}).", flush=True)
-    choice = radio_dial([f"Whitelist {domain}", f"Blacklist {domain}"])
-    if choice == 0:
-      APP_CONFIG.whitelist_domain(domain)
-    elif choice == 1:
-      APP_CONFIG.blacklist_domain(domain)
-      continue
-    else:
-      raise NotImplementedError()
+  
   new_file_links = []
   for i in range(upto):
     fmt = item.formats[i]
-    LOCAL_FOLDER = ARCHIVABLE_FORMATS[fmt]
     gid = gdrive_base.link_to_id(item.drive_links[i])
-    fpath = LOCAL_FOLDER.joinpath(f"{gid}.{fmt}")
-    if not fpath.exists():
-      print(f" Skipping undownloaded {gid}.{fmt}")
-      break
+    assert isinstance(gid, str), f"Unable to parse {item.drive_links[i]}"
+    gitem = gdrive.gcache.get_item(gid)
+    assert gitem, f"Unable to load {gid} from Google Drive"
+    fpath = gdrive.gcache.get_cache_path_for_file(gitem)
+    assert fpath, f"{gid} for {item.content_path} is not downloadable?"
+    if not fpath.is_file():
+      fpath = gdrive.gcache.download_file_to_cache(gitem, verbose=True)
+      assert fpath and fpath.is_file(), f"Failed to download {gid} for {item.content_path}"
     new_name = item.slug
     try:
       pivot = item.slug.rindex("_")
@@ -232,8 +264,9 @@ for item, upto in candidates:
       title = item.slug[:pivot]
       new_name = f"{author}_{item.year}_{title}"
     except ValueError:
-      pass
+      pass # just use the item's slug as-is
     stsize = fpath.stat().st_size
+    assert stsize > 0, f"File isn't"
     if stsize >= CFP_SIZE_LIMIT*2:
       new_name = f"largefiles/{new_name}.{fmt}"
     elif stsize >= CFP_SIZE_LIMIT:
@@ -279,9 +312,9 @@ for filename, item in small_pdf_canonical_urls:
   headerrules.append(f"""{filename}
   Link: <{website.baseurl}{url}>; rel="canonical"
 """)
-(args.dest / "smallpdfs" / "_headers").write_text("\n".join(headerrules))
+small_pdf_headers_file.write_text("\n".join(headerrules))
 
-folders = [f"small{fmt}s" for fmt in ARCHIVABLE_FORMATS.keys()] + ["mediumfiles"]
+folders = [f"small{fmt}s" for fmt in ARCHIVABLE_FORMATS] + ["mediumfiles"]
 for lf in folders:
   folder = (args.dest / lf)
   newfiles = get_untracked_files(folder)
@@ -325,6 +358,7 @@ locals = subprocess.Popen(["ls", str(args.dest / "largefiles")], stdout=subproce
 remotes = subprocess.Popen(
   ["rclone", "ls", "--exclude-from", "-", f"{configname}:{bucketname}"],
   stdin=locals.stdout, stdout=subprocess.PIPE)
+# pyrefly: ignore [missing-attribute]
 locals.stdout.close()
 onlyremotes = remotes.communicate()[0].decode("utf-8").strip()
 if onlyremotes:

@@ -1,4 +1,5 @@
 BLACKLISTED_DOMAINS: !!set
+  archive.is: null
   store.pariyatti.org: null
   harpers.org: null
   hbr.org: null
@@ -201,3 +202,26 @@ WHITELISTED_DOMAINS: !!set
   www.youtube.com: null
   youtu.be: null
   youtube.com: null
+WHITELISTED_JOURNALS: !!set
+  aririab: null
+  bodhileaves: null
+  cjbs: null
+  daedalus: null
+  ddjbs: null
+  hijbs: null
+  iijbs: null
+  ijbtc: null
+  jbe: null
+  jgb: null
+  pnas: null
+  present: null
+  sljh: null
+  'University of Ceylon Review': null
+WHITELISTED_PUBLISHERS: !!set
+  amaravati: null
+  bps: null
+  dharmadrum: null
+  lotsawa-house: null
+  mdpi: null
+  punctum: null
+

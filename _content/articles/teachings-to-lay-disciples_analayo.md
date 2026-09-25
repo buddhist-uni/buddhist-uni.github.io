@@ -4,7 +4,7 @@ authors:
   - analayo
 external_url: "https://journal.equinoxpub.com/BSR/article/download/8908/10366"
 drive_links:
-  - "https://drive.google.com/a/u.northwestern.edu/file/d/1wbvA-cDPcc3nNvbkG7g-XxrhF6YoqOg7/view?usp=drivesdk"
+  - "https://drive.google.com/file/d/1wbvA-cDPcc3nNvbkG7g-XxrhF6YoqOg7/view?usp=drivesdk"
 course: lay
 tags:
   - sa
