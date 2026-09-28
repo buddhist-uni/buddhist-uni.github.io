@@ -26,9 +26,9 @@ We will also read "Similes of the Buddha" by Hellmuth Hecker---
 {% include toast.html content="
 ### A note on Looking up Suttas
 
-Please note that the Sutta references given throughout Bhikkhu Anālayo’s two books are to the volumes and page numbers of the PTS edition of the Pāli Canon, not to sutta numbers as you may be familiar with. Thankfully there is [a converter tool online](http://pts.ticao.de){:target='_blank'} you can use to turn the PTS references into “normal” sutta numbers (and even links to SuttaCentral).
+While a few suttas are “assigned reading” in this course, please don't let that **limit** you! Feel free to explore Ven. Anālayo and H. Hecker’s many sutta references, even if they aren't on the assigned reading list.
 
-Note also that while a few suttas are “assigned reading” in this course, please don't let that **limit** you! Feel free to explore Ven. Anālayo and H. Hecker’s many sutta references, even if they aren't on the assigned reading list.
+The Sutta references given throughout Bhikkhu Anālayo’s two books are to the volumes and page numbers of the PTS edition of the Pāli Canon, not to sutta numbers as you may be familiar with. Thankfully there is [a converter tool online](https://benmneb.github.io/pts-converter/){:target='_blank'} you can use to turn his PTS references into “normal” sutta numbers (and links to SuttaCentral). Ven. Analayo abbreviates the Nikayas with 'N's while the tool does not. So, for example, to look up “AN IV 266” from *Excursions*, type into the tool “A IV 266” without the N. Note also that sometimes the tool gives suttas one off from the one you're looking for because the PTS edition might have the end of one sutta and the beginning of the next on the same page.
 " %}
 
 

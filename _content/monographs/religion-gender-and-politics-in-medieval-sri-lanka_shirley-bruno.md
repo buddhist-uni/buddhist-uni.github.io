@@ -3,6 +3,7 @@ title: "Religion, Gender, and Politics in Medieval Sri Lanka: The Reconstruction
 authors:
   - "Bruno M. Shirley"
 external_url: "https://www.uplopen.com/books/12301/files/7b2437bf-65ad-42e6-b9cf-2c2e6ee69d58.pdf"
+alternative_url: "https://muse.jhu.edu/pub/306/oa_monograph/book/142149"
 source_url: "https://doi.org/10.17302/kshl2567"
 drive_links:
   - "https://drive.google.com/file/d/1wGT7jWddUcqUXm6-66urZvVfymcK4Yxx/view?usp=drivesdk"

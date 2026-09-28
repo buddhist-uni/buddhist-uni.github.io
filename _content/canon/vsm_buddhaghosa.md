@@ -24,3 +24,4 @@ Ostensibly a commentary on a single verse from the Dhammapada, this classic work
 
 In its day, a landmark of commentarial scholarship and synthesis, today it contains some of the clearest and most detailed descriptions of the advanced stages of meditation that we have from ancient times. Despite, or perhaps even because of, the text's limitations and subsequent disagreements over their correct interpretation, the Visuddhimagga is certain to remain a vital part of the Buddhist Tradition for centuries to come.
 
+For an interlinear version of the translation next to the Pāli, see the "table views" at [Theravada.su](https://tipitaka.theravada.su/toc/full/32878).

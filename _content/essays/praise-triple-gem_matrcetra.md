@@ -16,4 +16,4 @@ pages: 2
 
 > You have perfectly amassed the two great stores and accomplished fourfold wisdom and the three kāyas...
 
-The Early Mahāyānists rewrote the homage to the Triple Gem to fit their new doctrines.
+Going even further than [Vasubandhu](/content/essays/praise-triple-gem_vasubandhu), Mātṛcetra rewrote the Triple Gem to completely exclude non-Bodhisattvas from the Saṅgha, and non-Mahāyāna teachings from his definition of "the Dharma."

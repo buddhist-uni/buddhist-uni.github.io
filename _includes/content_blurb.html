@@ -1,5 +1,9 @@
 {%- capture content_path -%}_content/{{ include.category }}/{{ include.slug }}.md{%- endcapture -%}
 {%- assign c = site.content | find: "path", content_path -%}
+{%- unless c -%}
+  {% capture msg %}Unable to find content with path "{{ content_path}}"{% endcapture %}
+  {% raise_error msg %}
+{%- endunless -%}
 <div class="content_box">
   <div>
     {% capture foo %}{% include content_title.html content=c %}{% endcapture %}
