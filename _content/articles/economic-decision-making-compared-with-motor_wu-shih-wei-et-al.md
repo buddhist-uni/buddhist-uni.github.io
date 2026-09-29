@@ -21,5 +21,5 @@ openalexid: W2068061708
 > Those for the classical task showed a typical tendency to overweight small probabilities and underweight large probabilities, and those for the motor task showed the opposite pattern of probability distortion.
 > This outcome also accounts for the increased riskiness observed in the motor tasks of experiment 1.
 
-An experiment shows that the difference between physical and reflective risk taking is that our physical intuition overly discounts the probability of rare events and our reflective intuition overly inflates rare events.
+A pair of experiments shows that the difference between physical and reflective risk taking is that our physical intuition overly discounts the probability of rare events while our reflective intuition overly inflates them.
 
