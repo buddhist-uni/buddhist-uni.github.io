@@ -438,18 +438,18 @@ while queue.documents:
         shutil.move(fp, LOCAL_SPLIT_FOLDER)
     else:
         gfolder = gdrive.get_gfolders_for_course(course)
-        is_unr_or_arc = 'unre' in course.lower() or 'archiv' in course.lower()
-        # only ask for more info if isn't unread or archive
+        is_unr = 'unre' in course.lower()
+        # only ask for more info if isn't unread
         tags = []
         description: str = ""
-        if not is_unr_or_arc:
+        if not is_unr:
+          description = input("Any notes on this move? ").strip()
           print("tags:")
           while True:
             tag = gdrive.input_course_string_with_tab_complete("  - ")
             if not tag:
               break
             tags.append(tag)
-          description = input("Any notes on this move? ").strip()
         if len(description) == 0:
           description = "Preliminary sort"
         gdrive.log_move_reason(
