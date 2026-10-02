@@ -665,6 +665,51 @@ def batch_get_files_by_id(IDs: list, fields: str):
   batcher.execute()
   return ret
 
+def batch_get_comments_by_file_id(
+  file_ids: list[str],
+  fields: str = "id,content,author,createdTime,modifiedTime,resolved,anchor",
+  since: str | None = None,
+) -> dict[str, list]:
+  """Fetches comments for multiple files in a single batch request.
+
+  Args:
+    file_ids: List of Google Drive file IDs to fetch comments for.
+    fields: Comma-separated comment fields to include in the response.
+    since: Optional RFC 3339 datetime string (e.g. '2024-01-15T00:00:00Z').
+           If provided, only comments modified after this time are returned.
+
+  Returns:
+    A dict mapping each file_id to a list of comment dicts for that file.
+    Files with no (matching) comments will map to an empty list.
+  """
+  ret: dict[str, list] = {fid: [] for fid in file_ids}
+  assert len(ret) == len(file_ids), f"Duplicate file id found in {file_ids}"
+  if len(file_ids) > 100:
+    print(f"Fetching comments for {len(file_ids)} files in batches of 100...")
+    for i in trange(0, len(file_ids), 100):
+      batch_ret = batch_get_comments_by_file_id(file_ids[i:i+100], fields, since=since)
+      ret.update(batch_ret)
+    return ret
+  def _comments_callback(rid, resp, error):
+    if error:
+      print(f"Warning! Failed to list comments for fileId={rid}")
+    else:
+      ret[rid] = resp.get('comments', [])
+  batcher = BatchHttpRequest(
+    callback=_comments_callback,
+    batch_uri="https://www.googleapis.com/batch/drive/v3",
+  )
+  for fid in file_ids:
+    request = session().comments().list(
+      fileId=fid,
+      fields=f"comments({fields})",
+      pageSize=100,
+      startModifiedTime=since,
+    )
+    batcher.add(request_id=fid, request=request)
+  batcher.execute()
+  return ret
+
 def ensure_these_are_shared_with_everyone(file_ids: list[str], verbose=True):
   all_files = batch_get_files_by_id(file_ids, "id,name,permissions")
   count = 0
