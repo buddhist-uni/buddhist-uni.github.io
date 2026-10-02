@@ -52,9 +52,8 @@ GENERIC_LINK_PREFIX = "https://drive.google.com/open?id="
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
-GFIDREGEX = '([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})'
+GFIDREGEX = re.compile('([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})')
 LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
-GFIDREGEX = re.compile(GFIDREGEX)
 
 YTTranscriptAPI = None # Initialized on-demand below
 
@@ -190,10 +189,10 @@ def string_to_media(s, mimeType):
     resumable=True,
   )
 
-def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] = None, replace_doc=False):
+def create_doc(filename=None, html=None, rtf=None, folder_id=None, creator=None, custom_properties: dict[str, str] | None = None, replace_doc:str|None=None):
   if bool(html) == bool(rtf):
     raise ValueError("Please specify either rtf OR html.")
-  metadata = {'mimeType': 'application/vnd.google-apps.document'}
+  metadata: dict = {'mimeType': 'application/vnd.google-apps.document'}
   media = None
   if filename:
     metadata['name'] = filename
@@ -300,7 +299,7 @@ def upload_to_google_drive(
     file_path: str | Path,
     creator=None, filename: str | None=None,
     folder_id: str | None=None,
-    custom_properties: dict[str,str] = None,
+    custom_properties: dict[str,str] | None = None,
     verbose=True,
     update_file: str | None=None,
   ):
@@ -317,7 +316,7 @@ def upload_to_google_drive(
     """
     if verbose:
       print(f"Uploading {Path(file_path).name} to {folder_id if folder_id else 'Google Drive'}...")
-    file_metadata = dict()
+    file_metadata: dict = dict()
     if filename:
       file_metadata['name'] = filename
     elif not update_file:
@@ -346,7 +345,7 @@ def write_property(file_id: str, prop_name: str, prop_value: str | None):
     body={'properties': {prop_name: prop_value}},
   ))
 
-def _perform_upload(file_metadata, media, verbose=True, update_file=False):
+def _perform_upload(file_metadata, media, verbose=True, update_file: str | None=None):
     try:
         # Upload the file
         request = None
@@ -367,7 +366,7 @@ def _perform_upload(file_metadata, media, verbose=True, update_file=False):
         print("An error occurred: ", str(e))
         return False
 
-def create_folder(name, parent_folder, custom_properties: dict[str, str] = None) -> str:
+def create_folder(name, parent_folder, custom_properties: dict[str, str] | None = None) -> str:
   metadata = {
     'name': name,
     'mimeType': 'application/vnd.google-apps.folder',
@@ -381,7 +380,7 @@ def create_folder(name, parent_folder, custom_properties: dict[str, str] = None)
   ))
   return ret.get('id')
 
-def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] = None):
+def create_drive_shortcut(gfid, filename, folder_id, custom_properties: dict[str, str] | None = None):
   shortcut_metadata = {
        'name': filename,
        'mimeType': 'application/vnd.google-apps.shortcut',
@@ -424,6 +423,7 @@ def move_drive_file(file_id, folder_id, previous_parents=None, verbose=True):
     previous_parents = ",".join(previous_parents)
   if verbose:
     print(f"Moving {file_id} from [{previous_parents}] to [{folder_id}]...")
+  # pyrefly: ignore [missing-argument]
   file = execute(service.files().update(
     fileId=file_id,
     addParents=folder_id,
@@ -720,6 +720,7 @@ def fetch_youtube_transcript(vid):
   global YTTranscriptAPI
   if not YTTranscriptAPI:
     YTTranscriptAPI = YouTubeTranscriptApi()
+  transcripts_available = None
   try:
     transcripts_available = YTTranscriptAPI.list(vid)
     transcript = transcripts_available.find_transcript(('en',))

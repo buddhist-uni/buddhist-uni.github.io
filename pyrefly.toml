@@ -1,2 +1,3 @@
 project_includes = ["scripts"]
 search_path = ["scripts"]
+python-interpreter-path = "obu/bin/python"
