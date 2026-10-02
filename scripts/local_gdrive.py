@@ -358,6 +358,7 @@ class DriveCache:
         Args:
             items_data: A list of item metadata dictionaries.
         """
+        item_data = dict()
         try:
             for item_data in items_data:
                 self._upsert_item(item_data)
@@ -699,7 +700,7 @@ class DriveCache:
     def get_root_shared_with_me_items(self) -> List[Dict[str, Any]]:
         return self.sql_query("owner > 1 AND parent_id IS NULL")
 
-    def search_by_name_containing(self, partial_name: str, additional_filters: str = None, additional_params: tuple = None, limit: int | None=None) -> List[Dict[str, Any]]:
+    def search_by_name_containing(self, partial_name: str, additional_filters: str | None = None, additional_params: tuple | None = None, limit: int | None=None) -> List[Dict[str, Any]]:
         """
         Searches for items by name (case-insensitive).
         
@@ -828,6 +829,8 @@ class DriveCache:
 
     def get_cache_path_for_md5(self, hashval: str) -> Path | None:
         """Returns None if the hashval is unknown to me"""
+        if not self.file_cache_dir:
+            return None
         assert len(hashval) == 32
         remote_files = self.get_items_with_md5(hashval)
         if not remote_files:
@@ -852,7 +855,7 @@ class DriveCache:
     #  consequence to the cache without having to perform a full .update()
     ########
 
-    def register_trash_callback(self, callback_func: Callable[[DriveCache, str]]):
+    def register_trash_callback(self, callback_func: Callable[[DriveCache, str], Any]):
         """Will call your `callback_func` with the `file_id` before trashing it."""
         self.callbacks['trash'].append(callback_func)
 
@@ -867,7 +870,7 @@ class DriveCache:
             self.conn.commit()
 
     @locked
-    def _move_to_trash(self, file_id: str, trashed_time: str = None) -> Dict[str, Any]:
+    def _move_to_trash(self, file_id: str, trashed_time: str | None = None) -> Dict[str, Any]:
         # If we get a removal event from the API for a file already in the trash,
         # only add the timestamp to the trash table if the item had a NULL trashed time before.
         self.cursor.execute("SELECT trashed_time FROM trashed_drive_items WHERE id = ?", (file_id,))
@@ -875,7 +878,7 @@ class DriveCache:
         if row:
             if trashed_time and row['trashed_time'] is None:
                 self.cursor.execute("UPDATE trashed_drive_items SET trashed_time = ? WHERE id = ?", (trashed_time, file_id))
-            return
+            return dict()
 
         self.cursor.execute("""
             INSERT INTO trashed_drive_items (
@@ -893,7 +896,7 @@ class DriveCache:
         if not copied_row:
           print(f"Warning (local_gdrive.py): Cannot trash untracked file {file_id}")
           # This can happen if, for example, someone quickly shares and unshares a file with you
-          return
+          return dict()
         file = self.row_dict_to_api_dict(dict(copied_row))
         before_cache_path = self.get_cache_path_for_file(file)
         self.cursor.execute("DELETE FROM drive_items WHERE id = ?", (file_id,))
@@ -920,7 +923,9 @@ class DriveCache:
         return file
 
     def move_file(self, file_id: str, folder: str, previous_parents=None, verbose=True):
-        folder = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
+        folder_id: str | None = gdrive_base.folderlink_to_id(folder) if folder.startswith("http") else folder
+        assert folder_id, f"Failed to parse \"{folder}\" as a folder link"
+        folder = folder_id
         with self._lock:
             self.cursor.execute("SELECT * FROM drive_items WHERE id = ?", (folder, ))
             folder_data = self.cursor.fetchone()
@@ -963,7 +968,9 @@ class DriveCache:
     def create_folder(self, folder_name: str, parent_id: str) -> str:
         """Creates a new folder with the name and parent and rets the new id"""
         if parent_id.startswith('http'):
-            parent_id = gdrive_base.folderlink_to_id(parent_id)
+            parent = gdrive_base.folderlink_to_id(parent_id)
+            assert parent, f"Failed to parse \"{parent_id}\" as a folder link"
+            parent_id = parent
         now = UTC_NOW()
         new_folder_id = gdrive_base.create_folder(folder_name, parent_id)
         self.upsert_item({
@@ -1049,6 +1056,9 @@ class DriveCache:
         if self.conn:
             self.conn.commit()
             self.conn.close()
+            # pyrefly: ignore [bad-assignment]
+            # This is an intentionally bad assignment
+            # as we don't want people using this after close
             self.conn = None
 
     def __enter__(self):

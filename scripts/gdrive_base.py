@@ -346,7 +346,7 @@ def write_property(file_id: str, prop_name: str, prop_value: str | None):
     body={'properties': {prop_name: prop_value}},
   ))
 
-def _perform_upload(file_metadata, media, verbose=True, update_file: str | None=None):
+def _perform_upload(file_metadata, media, verbose=True, update_file: str | None=None) -> str | None:
     try:
         # Upload the file
         request = None
@@ -365,7 +365,7 @@ def _perform_upload(file_metadata, media, verbose=True, update_file: str | None=
         return response['id']
     except Exception as e:
         print("An error occurred: ", str(e))
-        return False
+        return None
 
 def create_folder(name, parent_folder, custom_properties: dict[str, str] | None = None) -> str:
   metadata = {
