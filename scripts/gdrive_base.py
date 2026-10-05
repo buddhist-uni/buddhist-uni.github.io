@@ -53,6 +53,9 @@ GENERIC_LINK_PREFIX = "https://drive.google.com/open?id="
 FOLDER_LINK = FOLDER_LINK_PREFIX+"{}"
 DRIVE_LINK = 'https://drive.google.com/file/d/{}/view?usp=drivesdk'
 DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
+DOCSLINKREGEX = re.compile(
+  r'https://docs\.google\.com/(?:document|spreadsheets|presentation|forms)/d/([-\w]+)(?:[/?#]|$)'
+)
 GFIDREGEX = re.compile('([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})')
 LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
 
@@ -73,6 +76,9 @@ def link_to_id(link):
   if not link:
     return None
   ret = GFIDREGEX.fullmatch(link)
+  if ret:
+    return ret.groups()[0]
+  ret = DOCSLINKREGEX.match(link)
   if ret:
     return ret.groups()[0]
   ret = LINKIDREGEX.search(link)
