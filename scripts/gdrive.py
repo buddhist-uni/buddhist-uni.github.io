@@ -32,7 +32,7 @@ from strutils import (
   yt_url_to_id_re,
   file_info,
   radio_dial,
-  parse_iso8601_duration,
+  clean_markdown_text,
 )
 from executils import system_open
 import json
@@ -684,16 +684,9 @@ def get_video_doc(vid: str) -> dict | None:
     doc = get_url_doc(f'https://youtu.be/{vid}')
     if doc:
         return doc
+    # A small percentage of our videos have e.g. /live/{id} style URLs
     matching = get_docs_with_url_containing(vid)
     return matching[0] if matching else None
-
-
-def _clean_transcript_text(text: str) -> str:
-    """Cleans markdown escapes and normalizes whitespace."""
-    text = re.sub(r"\\([\[\]!*_\\`#+-.{}()~>])", r"\1", text)
-    text = text.replace("\xa0", " ")
-    return whitespace.sub(" ", text).strip()
-
 
 def _parse_start_seconds(url: str | None, ts_text: str) -> float:
     """Extracts start time in seconds from ?t= query param or clock timestamp."""
@@ -709,8 +702,8 @@ def _parse_start_seconds(url: str | None, ts_text: str) -> float:
     return 0.0
 
 
-def _finalize_transcript_entries(entries: list[dict], total_duration: float | None = None) -> list[dict] | None:
-    """Calculates durations for transcript entries and validates the list."""
+def _add_durations_to_transcript(entries: list[dict], total_duration: float | None = None) -> list[dict] | None:
+    """Estimates durations for transcript entries from doc (which doesn't save durations)"""
     if not entries:
         return None
     for i in range(len(entries)):
@@ -749,15 +742,15 @@ def extract_transcript_from_markdown(md_str: str, total_duration: float | None =
         if m:
             ts_str, url_str, text = m.groups()
             entries.append({
-                "text": _clean_transcript_text(text),
+                "text": clean_markdown_text(text),
                 "start": _parse_start_seconds(url_str, ts_str),
             })
         elif entries and not line_s.startswith(("[", "<")):
-            line_clean = _clean_transcript_text(line_s)
+            line_clean = clean_markdown_text(line_s)
             if line_clean:
-                entries[-1]["text"] += " " + line_clean
+                entries[-1]["text"] = str(entries[-1]["text"]) + " " + line_clean
 
-    return _finalize_transcript_entries(entries, total_duration)
+    return _add_durations_to_transcript(entries, total_duration)
 
 
 def extract_transcript_from_html(html_str: str, total_duration: float | None = None) -> list[dict] | None:
@@ -793,11 +786,11 @@ def extract_transcript_from_html(html_str: str, total_duration: float | None = N
         else:
             line_text = elem_text.replace(ts_text, "", 1)
         entries.append({
-            "text": _clean_transcript_text(line_text),
+            "text": clean_markdown_text(line_text),
             "start": _parse_start_seconds(href, ts_text),
         })
 
-    return _finalize_transcript_entries(entries, total_duration)
+    return _add_durations_to_transcript(entries, total_duration)
 
 
 def extract_transcript_from_doc(doc_id: str, total_duration: float | None = None) -> list[dict] | None:

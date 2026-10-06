@@ -600,6 +600,26 @@ def fully_encode_url(url):
         result += '#' + fragment
     return result
 
+
+def clean_markdown_text(text: str) -> str:
+    """Cleans markdown escapes and normalizes whitespace."""
+    text = re.sub(r"\\([\[\]!*_\\`#+-.{}()~>])", r"\1", text)
+    text = text.replace("\xa0", " ")
+    return whitespace.sub(" ", text).strip()
+
+def parse_iso8601_duration(duration_str: str | None) -> float | None:
+  """Parses an ISO 8601 duration string like PT9M26S or PT1H2M into total seconds."""
+  if not duration_str:
+    return None
+  m = re.match(r"^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$", duration_str)
+  if m and any(m.groups()):
+    h = int(m.group(1) or 0)
+    minutes = int(m.group(2) or 0)
+    s = int(m.group(3) or 0)
+    return float(h * 3600 + minutes * 60 + s)
+  return None
+
+
 # Reconstructs a text from an inverted index:
 # https://docs.openalex.org/api-entities/works/work-object#abstract_inverted_index
 def invert_inverted_index(index: dict) -> list:
@@ -662,17 +682,3 @@ def get_author_slugs() -> defaultdict[str, str | None]:
 
 def get_author_slug(name: str) -> str | None:
   return get_author_slugs()[name]
-
-
-def parse_iso8601_duration(duration_str: str | None) -> float | None:
-  """Parses an ISO 8601 duration string like PT9M26S or PT1H2M into total seconds."""
-  if not duration_str:
-    return None
-  m = re.match(r"^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$", duration_str)
-  if m and any(m.groups()):
-    h = int(m.group(1) or 0)
-    minutes = int(m.group(2) or 0)
-    s = int(m.group(3) or 0)
-    return float(h * 3600 + minutes * 60 + s)
-  return None
-
