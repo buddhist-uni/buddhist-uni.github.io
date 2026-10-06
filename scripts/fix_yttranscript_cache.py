@@ -89,12 +89,25 @@ for metafile in tqdm(cached_files):
   transcript = data.get('transcript', None)
   if transcript:
     continue
-  transcript = gdrive.fetch_youtube_transcript(data['id'])
+  vid = data.get('id', metafile.stem)
+  data['id'] = vid
+
+  doc = gdrive.get_video_doc(vid)
+  from_doc = False
+  if doc:
+    total_duration = gdrive.parse_iso8601_duration((data.get('contentDetails') or {}).get('duration'))
+    transcript = gdrive.extract_transcript_from_doc(doc['id'], total_duration=total_duration)
+    if transcript:
+      from_doc = True
+
+  if not transcript:
+    transcript = gdrive.fetch_youtube_transcript(vid)
+
   if transcript:
     data['transcript'] = transcript
     if 'publishedAt' not in data:
       try:
-        snippet = gdrive.get_ytvideo_snippets([data['id']])[0]
+        snippet = gdrive.get_ytvideo_snippets([vid])[0]
         data.update(snippet)
       except IndexError:
         pass
@@ -110,14 +123,16 @@ for metafile in tqdm(cached_files):
       verbose=False,
     )
     if isinstance(transcript, str):
-      print(f"{data['id']} marked as \"{transcript}\"")
+      print(f"{vid} marked as \"{transcript}\"")
     else:
-      print(f"{data['id']} has a transcript now!")
-      link = f'https://youtu.be/{data["id"]}'
-      doc = gdrive.get_url_doc(link)
-      if doc:
+      print(f"{vid} has a transcript now!")
+      if from_doc:
+        # pyrefly: ignore [unsupported-operation]
+        print(f"  (pulled from Google Doc https://docs.google.com/document/d/{doc['id']}/edit)")
+      elif doc:
+        link = f'https://youtu.be/{vid}'
         new_html = f"""<h1>{doc['name']}</h1><h2><a href="{link}">{link}</a></h2>"""
-        new_html += gdrive._make_ytvideo_summary_html(data['id'], data, transcript)
+        new_html += gdrive._make_ytvideo_summary_html(vid, data, transcript)
         gdrive_base.session().files().update(
           fileId=doc['id'],
           body={'mimeType':'text/html'},

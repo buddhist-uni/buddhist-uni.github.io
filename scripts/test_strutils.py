@@ -417,3 +417,17 @@ def test_write_frontmatter_key_string_with_newline_raises(tmp_path):
     import pytest
     with pytest.raises(ValueError, match="newlines"):
         strutils.write_frontmatter_key(md, "source", "line1\nline2")
+
+
+def test_parse_iso8601_duration():
+    assert strutils.parse_iso8601_duration("PT9M26S") == 566.0
+    assert strutils.parse_iso8601_duration("PT1H2M3S") == 3723.0
+    assert strutils.parse_iso8601_duration("PT45S") == 45.0
+    assert strutils.parse_iso8601_duration("PT1H") == 3600.0
+    assert strutils.parse_iso8601_duration("PT5M") == 300.0
+    assert strutils.parse_iso8601_duration("PT0S") == 0.0
+    assert strutils.parse_iso8601_duration("") is None
+    assert strutils.parse_iso8601_duration(None) is None
+    assert strutils.parse_iso8601_duration("PT") is None
+    assert strutils.parse_iso8601_duration("invalid") is None
+

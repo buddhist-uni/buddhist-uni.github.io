@@ -32,11 +32,13 @@ from strutils import (
   yt_url_to_id_re,
   file_info,
   radio_dial,
+  parse_iso8601_duration,
 )
 from executils import system_open
 import json
 import re
 import inspect
+from urllib.parse import urlparse, parse_qs
 from archivedotorg import archive_urls
 try:
   from yaspin import yaspin
@@ -660,6 +662,162 @@ def get_url_doc(url: str) -> dict | None:
         )
         row = gcache.cursor.fetchone()
         return gcache.row_dict_to_api_dict(dict(row)) if row else None
+
+
+def get_docs_with_url_containing(substring: str) -> list[dict]:
+    """Finds Google Docs whose 'url' property contains substring."""
+    with gcache._lock:
+        gcache.cursor.execute(
+            """
+            SELECT di.*
+            FROM drive_items di
+            JOIN item_properties ip ON di.id = ip.file_id
+            WHERE ip.key = 'url' AND ip.value LIKE ? AND di.mime_type = 'application/vnd.google-apps.document'
+            """,
+            (f'%{substring}%',),
+        )
+        return [gcache.row_dict_to_api_dict(dict(row)) for row in gcache.cursor.fetchall()]
+
+
+def get_video_doc(vid: str) -> dict | None:
+    """Finds a Google Doc pointing to a YouTube video by its video ID."""
+    doc = get_url_doc(f'https://youtu.be/{vid}')
+    if doc:
+        return doc
+    matching = get_docs_with_url_containing(vid)
+    return matching[0] if matching else None
+
+
+def _clean_transcript_text(text: str) -> str:
+    """Cleans markdown escapes and normalizes whitespace."""
+    text = re.sub(r"\\([\[\]!*_\\`#+-.{}()~>])", r"\1", text)
+    text = text.replace("\xa0", " ")
+    return whitespace.sub(" ", text).strip()
+
+
+def _parse_start_seconds(url: str | None, ts_text: str) -> float:
+    """Extracts start time in seconds from ?t= query param or clock timestamp."""
+    if url:
+        t_match = re.search(r"[?&]t=([0-9]+)", url)
+        if t_match:
+            return float(t_match.group(1))
+    parts = [int(p) for p in ts_text.strip("[]() \t\n").split(":") if p.isdigit()]
+    if len(parts) == 2:
+        return float(parts[0] * 60 + parts[1])
+    elif len(parts) == 3:
+        return float(parts[0] * 3600 + parts[1] * 60 + parts[2])
+    return 0.0
+
+
+def _finalize_transcript_entries(entries: list[dict], total_duration: float | None = None) -> list[dict] | None:
+    """Calculates durations for transcript entries and validates the list."""
+    if not entries:
+        return None
+    for i in range(len(entries)):
+        if i < len(entries) - 1:
+            dur = max(0.0, entries[i + 1]["start"] - entries[i]["start"])
+        else:
+            if total_duration and total_duration > entries[-1]["start"]:
+                dur = round(total_duration - entries[-1]["start"], 2)
+            else:
+                dur = 3.0
+        entries[i]["duration"] = round(dur, 2)
+    return entries
+
+
+def extract_transcript_from_markdown(md_str: str, total_duration: float | None = None) -> list[dict] | None:
+    """Extracts transcript subtitle list from Google Doc markdown export."""
+    if "Video Subtitles" not in md_str:
+        return None
+    lines = md_str.splitlines()
+    subtitles_started = False
+    entries = []
+    line_pattern = re.compile(r"^\s*\[([0-9:]+)\](?:\((https?://[^\s\)]+)\))?\s*(.*?)\s*$")
+    for line in lines:
+        line_s = line.strip()
+        if not subtitles_started:
+            if "Video Subtitles" in line_s:
+                subtitles_started = True
+            continue
+        if not line_s:
+            continue
+        if line_s.startswith(("#", "---", "[image", "![")):
+            if entries:
+                break
+            continue
+        m = line_pattern.match(line_s)
+        if m:
+            ts_str, url_str, text = m.groups()
+            entries.append({
+                "text": _clean_transcript_text(text),
+                "start": _parse_start_seconds(url_str, ts_str),
+            })
+        elif entries and not line_s.startswith(("[", "<")):
+            line_clean = _clean_transcript_text(line_s)
+            if line_clean:
+                entries[-1]["text"] += " " + line_clean
+
+    return _finalize_transcript_entries(entries, total_duration)
+
+
+def extract_transcript_from_html(html_str: str, total_duration: float | None = None) -> list[dict] | None:
+    """Fallback to extract transcript subtitle list from Google Doc HTML export."""
+    if "Video Subtitles" not in html_str:
+        return None
+    soup = BeautifulSoup(html_str, "html.parser")
+    subtitles_started = False
+    entries = []
+    for elem in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p"]):
+        text = elem.get_text()
+        if not subtitles_started:
+            if "Video Subtitles" in text:
+                subtitles_started = True
+            continue
+        if elem.name.startswith("h"):
+            if entries:
+                break
+            continue
+        a = elem.find("a")
+        if not a:
+            continue
+        href = a.get("href", "")
+        if "google.com/url?" in href:
+            parsed = urlparse(href)
+            qs = parse_qs(parsed.query)
+            if "q" in qs:
+                href = qs["q"][0]
+        ts_text = a.get_text().strip()
+        elem_text = elem.get_text()
+        if elem_text.startswith(ts_text):
+            line_text = elem_text[len(ts_text):]
+        else:
+            line_text = elem_text.replace(ts_text, "", 1)
+        entries.append({
+            "text": _clean_transcript_text(line_text),
+            "start": _parse_start_seconds(href, ts_text),
+        })
+
+    return _finalize_transcript_entries(entries, total_duration)
+
+
+def extract_transcript_from_doc(doc_id: str, total_duration: float | None = None) -> list[dict] | None:
+    """Exports a Google Doc and extracts the transcript if 'Video Subtitles' is present."""
+    import gdrive_base
+    try:
+        res = gdrive_base.session().files().export(fileId=doc_id, mimeType="text/markdown").execute().decode("utf-8")
+        subs = extract_transcript_from_markdown(res, total_duration=total_duration)
+        if subs:
+            return subs
+    except Exception as e:
+        print(f"Warning: Failed to export doc {doc_id} as markdown ({type(e).__name__}: {e})")
+    try:
+        html_res = gdrive_base.session().files().export(fileId=doc_id, mimeType="text/html").execute().decode("utf-8")
+        subs = extract_transcript_from_html(html_res, total_duration=total_duration)
+        if subs:
+            return subs
+    except Exception as e:
+        print(f"Warning: Failed to export doc {doc_id} as HTML ({type(e).__name__}: {e})")
+    return None
 
 
 def find_duplicate_urls() -> list[str]:

@@ -653,6 +653,60 @@ def test_get_course_suggestions_subfolders(test_db):
         suggestions = gdrive.get_course_suggestions('course1/Sub Folder 1/n')
         assert suggestions == ['course1/Sub Folder 1/Nested One']
 
+
+def test_extract_transcript_from_markdown():
+    md = r"""# Some Video
+Some description
+
+## Video Subtitles
+
+[0:01](https://youtu.be/test?t=1) Hello, world!  
+[0:08](https://youtu.be/test?t=8) \[Music\]  
+[0:15](https://youtu.be/test?t=15) An exciting point\!  
+and a continuation line
+[1:05](https://youtu.be/test?t=65) Final line
+
+[image1]: <data:image/png;base64,...>
+"""
+    subs = gdrive.extract_transcript_from_markdown(md, total_duration=70.0)
+    assert subs is not None
+    assert len(subs) == 4
+    assert subs[0] == {'text': 'Hello, world!', 'start': 1.0, 'duration': 7.0}
+    assert subs[1] == {'text': '[Music]', 'start': 8.0, 'duration': 7.0}
+    assert subs[2] == {'text': 'An exciting point! and a continuation line', 'start': 15.0, 'duration': 50.0}
+    assert subs[3] == {'text': 'Final line', 'start': 65.0, 'duration': 5.0}
+
+    # Test without total_duration fallback (defaults to 3.0 for last item)
+    subs_default = gdrive.extract_transcript_from_markdown(md)
+    assert subs_default[3]['duration'] == 3.0
+
+    # Test when Video Subtitles header is missing
+    assert gdrive.extract_transcript_from_markdown("# No Subtitles Here\nSome text") is None
+
+    # Test when Video Subtitles has no entries
+    assert gdrive.extract_transcript_from_markdown("## Video Subtitles\n\n# Next Section") is None
+
+
+def test_extract_transcript_from_html():
+    html = """<html><body>
+<h1>Video Title</h1>
+<h2>Video Subtitles</h2>
+<p><a href="https://www.google.com/url?q=https://youtu.be/test%3Ft%3D1&amp;sa=D">0:01</a> Hello, world!</p>
+<p><a href="https://youtu.be/test?t=8">0:08</a> [Music]</p>
+<p><a href="https://youtu.be/test?t=15">0:15</a> Final line</p>
+<h2>Next Header</h2>
+</body></html>"""
+    subs = gdrive.extract_transcript_from_html(html, total_duration=20.0)
+    assert subs is not None
+    assert len(subs) == 3
+    assert subs[0] == {'text': 'Hello, world!', 'start': 1.0, 'duration': 7.0}
+    assert subs[1] == {'text': '[Music]', 'start': 8.0, 'duration': 7.0}
+    assert subs[2] == {'text': 'Final line', 'start': 15.0, 'duration': 5.0}
+
+    # Test without Video Subtitles
+    assert gdrive.extract_transcript_from_html("<html><body><p>No subtitles</p></body></html>") is None
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "extract":
         extract_to_test_db(sys.argv[2:])
