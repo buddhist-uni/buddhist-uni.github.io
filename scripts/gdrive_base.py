@@ -56,8 +56,8 @@ DOC_LINK = 'https://docs.google.com/document/d/{}/edit?usp=drivesdk'
 DOCSLINKREGEX = re.compile(
   r'https://docs\.google\.com/(?:document|spreadsheets|presentation|forms)/d/([-\w]+)(?:[/?#]|$)'
 )
-GFIDREGEX = re.compile('([a-zA-Z0-9_-]{28}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{44})')
-LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
+GFIDREGEX = re.compile('([a-zA-Z0-9_-]{44}|[a-zA-Z0-9_-]{33}|[a-zA-Z0-9_-]{28})')
+LINKIDREGEX = re.compile(rf'/d/{GFIDREGEX.pattern}/?(edit|view)?(\?usp=)?(sharing|drivesdk|drive_link|share_link)?(&|$)')
 
 YTTranscriptAPI = None # Initialized on-demand below
 
