@@ -6,6 +6,7 @@ import gdrive
 import json
 from tqdm import tqdm
 from random import shuffle
+from strutils import parse_iso8601_duration
 
 def sync_youtube_metadata():
   remote_files = {
@@ -95,7 +96,7 @@ for metafile in tqdm(cached_files):
   doc = gdrive.get_video_doc(vid)
   from_doc = False
   if doc:
-    total_duration = gdrive.parse_iso8601_duration((data.get('contentDetails') or {}).get('duration'))
+    total_duration = parse_iso8601_duration((data.get('contentDetails') or {}).get('duration'))
     transcript = gdrive.extract_transcript_from_doc(doc['id'], total_duration=total_duration)
     if transcript:
       from_doc = True
@@ -113,7 +114,6 @@ for metafile in tqdm(cached_files):
         pass
     with metafile.open('w') as fp:
       json.dump(data, fp)
-    print(f"Updating on Drive...")
     remotes = gdrive.gcache.files_exactly_named(metafile.name)
     remotes = [r for r in remotes if r['parent_id'] == gdrive.YOUTUBE_METADATA_FOLDER_ID]
     assert len(remotes) == 1, f"Expected exactly one remote file, got {remotes}"
