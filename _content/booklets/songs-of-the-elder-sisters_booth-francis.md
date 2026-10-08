@@ -2,7 +2,8 @@
 title: "Songs Of The Elder Sisters"
 authors:
   - "Francis Booth"
-drive_links:
+external_url: "https://web.archive.org/web/20240702051613if_/https://stonerecords.co.uk/wp-content/uploads/2013/11/5060192780369-Booklet.pdf"
+hidden_links:
   - "https://drive.google.com/file/d/1wqARjh1bZG0zZjdve4428ezWqkIlkNQE/view?usp=sharing"
 course: tg
 year: 2013
