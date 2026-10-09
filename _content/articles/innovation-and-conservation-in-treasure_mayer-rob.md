@@ -13,7 +13,6 @@ year: 2014
 course: tibetan
 tags:
   - treasure-literature
-  - esoteric
 status: featured
 pages: "227--242"
 ---

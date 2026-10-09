@@ -10,7 +10,7 @@ drive_links:
   - "https://drive.google.com/file/d/1m5eq-C--sylEnLKLEhGRMQ0tN6qEKk3-/view?usp=drivesdk"
 course: mahayana-roots
 tags:
-  - esoteric
+  - tantric-roots # maybe move here?
   - bart
   - deccan
 year: 2000
