@@ -20,7 +20,7 @@ in mind: I will expound this
 method of the Law called 
 Sumukha, the system of (its) 
 dhāraṇīs and the name of 
-(this) Law.’
+(this) Law.
 
 
 A translation of an early, Central Asian Sūtra shows how many of the tropes of Mahāyāna Sūtras evolved.
