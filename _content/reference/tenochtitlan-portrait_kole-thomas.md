@@ -10,7 +10,7 @@ tags:
   - cities
 year: 2023
 month: sep
-minutes: 10
+minutes: 5
 ---
 
-A digital artist's stunningly realistic rendition of the Aztec metropolis at its peak in the 16th century.
+A digital artist's realistic rendition of the Aztec metropolis at its peak in the 16th century.

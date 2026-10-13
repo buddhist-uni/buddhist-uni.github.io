@@ -22,15 +22,15 @@ Unless otherwise asked, your task is to write the Jekyll markdown file for addin
 Give the user the full file path, the markdown file, and any relevant explanations.
 
 Below you'll find our instructions on the exact format of our content markdown files.
-The user prompt may provide you with some field values already (usually the drive link and course).
+The user prompt may provide you with some field values already (usually the drive link at least).
 If they do, they're quite confident in them, but feel free to ask if you think they made a mistake.
 
 In filling out those markdown files, you'll need to supply `course` and `tag` values for the topics covered by the given work.
 The attached `references/obu_subject_ontology.md` file contains the full list of approved slug values for these fields and what they mean.
 That file is large, so you may want to grep through it for just the bits relevant to the given file.
 
-Along with the markdown file, give an explanation of why you felt this work deserves to be in the selected course and/or tags.
-Also, for any tags you considered, but rejected, explain why you decided _not_ to give it that tag.
+Provide the markdown file named appropriately inside a downloadable zip archive and give an explanation of why you felt this work deserves to be in the selected course and/or tags.
+For any tags you considered, but rejected, explain why you decided _not_ to give it that tag.
 Remember that these tags aren't just keywords ("oh this is about this") but you think this work should go in an undergrad class
 introducing the given topic (a much higher bar).
 """
