@@ -21,5 +21,5 @@ pages: "171--192"
 hollowed out mainstream Buddhist understandings of spiritual attainment and reformulated
 them in terms of the bodhisattva way found among nascent Mahāyāna communities.
 
-Just as the Buddha playfully redefined certain Brahminic terms in Buddhist ways, some early Mahāyāna texts redefined mainstream Buddhist terms such as "stream-enterer" or "arhat" in ways that undermined the "Hīnayāna" and set up Bodhisattvas as the true "eightfold" "Noble Ones."
+Just as the Buddha playfully redefined certain Brahminic terms in Buddhist ways, some early Mahāyāna texts redefined mainstream Buddhist terms such as "stream-enterer" or "arhat" in ways that undermined the Hīnayāna and set up Bodhisattvas as the true "eightfold" Noble Ones.
 
