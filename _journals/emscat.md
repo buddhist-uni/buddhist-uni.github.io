@@ -1,5 +1,5 @@
 ---
-title: "Études Mongoles Sibériennes Centrasiatiques Et Tibétaines"
+title: "Études Mongoles Sibériennes Centrasiatiques et Tibétaines"
 external_url: "https://journals.openedition.org/emscat/243"
 year: 1970
 ---

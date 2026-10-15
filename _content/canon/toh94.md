@@ -1,5 +1,5 @@
 ---
-title: "The Ārya­ Bhadra­ Kalpika­nāma­ Mahāyāna­ Sūtra"
+title: "The Good Eon: The Ārya­ Bhadra­ Kalpika­nāma­­ Sūtra"
 translator: "the Dharmachakra Translation Committee"
 external_url: "https://read.84000.co/translation/toh94.html"
 drive_links:
@@ -8,7 +8,7 @@ drive_links:
 file_links:
   - "smallpdfs/toh94.pdf"
   - "smallepubs/toh94.epub"
-course: mahayana-roots # probably down even further
+course: mahayana-roots # probably down even further eventually 
 year: 2022
 pages: 625
 ---
