@@ -10,6 +10,7 @@ tags:
   - dialogue
 year: 2011
 month: apr
+pages: 39
 journal: plato
 ---
 
