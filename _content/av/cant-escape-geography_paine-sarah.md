@@ -12,4 +12,4 @@ month: jun
 minutes: 62
 ---
 
-In this fast-paced and wide-ranging lecture, Sarah Paine outlines her theory that continental empires must pursue security by conquering or disrupting their neighbors while maritime powers are free to pursue prosperity through trade. And because conquest is value-destroying, empires built on trade are richer and stronger in the long run than continental empires.
+In this fast-paced and wide-ranging lecture, Sarah Paine outlines her theory that continental empires must pursue security by conquering or disrupting their neighbors while maritime powers are free to pursue prosperity through trade. And because conquest is value-destroying, empires built on trade are richer and stronger in the long run than empires built on conquest.
