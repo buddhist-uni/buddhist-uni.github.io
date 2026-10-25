@@ -2,8 +2,9 @@
 title: "My Mind to Me a Kingdom Is"
 authors:
  - "Sir Edward Dyer"
-drive_links: ["https://drive.google.com/file/d/1tf_nZ-mhnnqibi9zzpUBisbpHO_ba5Lz/view?usp=drivesdk"]
-external_url: "https://www.bartleby.com/40/51.html"
+drive_links:
+  - "https://drive.google.com/file/d/1tf_nZ-mhnnqibi9zzpUBisbpHO_ba5Lz/view?usp=drivesdk"
+source_url: "https://allpoetry.com/My-Mind-to-me-a-Kingdom-is"
 journal: bsr
 pages: "38--39"
 year: 1988

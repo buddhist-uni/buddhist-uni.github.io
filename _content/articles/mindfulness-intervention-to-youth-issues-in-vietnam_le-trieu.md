@@ -1,7 +1,7 @@
 ---
 title: "Feasibility of a mindfulness-based intervention to address youth issues in Vietnam"
 authors: ["Thao N. Le", "Don T. Trieu"]
-external_url: "https://academic.oup.com/heapro/article/31/2/470/1749541"
+external_url: "https://doi.org/10.1093/heapro/dau101"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1a0MeJHA-b6c_1lFjFbpuQBxcs9IVjc26/view?usp=drivesdk"]
 file_links:

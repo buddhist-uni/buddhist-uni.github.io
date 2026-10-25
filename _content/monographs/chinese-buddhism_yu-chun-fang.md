@@ -4,7 +4,7 @@ authors:
   - "Chün-Fang Yü"
 course: east-asian
 tags:
-  - chinese
+  - chinese-roots
 year: 2020
 olid: OL34950012M
 oclc: 1123186712

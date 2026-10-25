@@ -5,7 +5,7 @@ authors:
 subcat: podcast
 editor: salguero-p
 external_url: "https://youtu.be/nBS26sn6dxg"
-source_url: "https://lnns.co/acTzX8siFud"
+alternate_url: "https://lnns.co/acTzX8siFud"
 drive_links:
   - "https://drive.google.com/file/d/1RrI5ElA-xGDan7i658qbuMi2jXlgaoma/view?usp=drivesdk"
 course: meditation

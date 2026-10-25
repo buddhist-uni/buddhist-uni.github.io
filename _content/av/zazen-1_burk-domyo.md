@@ -22,4 +22,4 @@ minutes: 24
 
 A brief introduction to the Sota Zen style of meditation.
 
-For part 2, see "[How to Deal with Thinking, Stay Engaged, and Maintain a Practice](/content/av/zazen-1_burk-domyo)."
+For part 2, see "[How to Deal with Thinking, Stay Engaged, and Maintain a Practice](/content/av/zazen-2_burk-domyo)."

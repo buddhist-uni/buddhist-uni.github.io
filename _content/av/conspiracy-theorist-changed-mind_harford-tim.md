@@ -6,7 +6,6 @@ subcat: podcast
 editor: "Tim Harford"
 external_url: "https://timharford.com/2022/10/cautionary-conversations-the-conspiracy-theorist-who-changed-his-mind/"
 source_url: "https://www.pushkin.fm/podcasts/cautionary-tales/cautionary-conversation-the-conspiracy-theorist-who-changed-his-mind"
-alternate_url: "https://player.fm/series/cautionary-tales-with-tim-harford/cautionary-conversation-the-conspiracy-theorist-who-changed-his-mind"
 course: ideology
 status: featured
 tags:

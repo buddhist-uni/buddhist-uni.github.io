@@ -4,8 +4,8 @@ authors:
   - "Quan Huynh"
 subcat: podcast
 editor: "Whit Missildine"
-external_url: "https://www.listennotes.com/en/podcasts/this-is-actually/163-what-if-you-grew-up-in-a-lzE2VrudF1Z/"
-source_url: "https://www.thisisactuallyhappening.com/podcast/episode/24ae728a/163-what-if-you-grew-up-in-a-violent-gang"
+alternate_url: "https://www.listennotes.com/en/podcasts/this-is-actually/163-what-if-you-grew-up-in-a-lzE2VrudF1Z/"
+external_url: "https://www.thisisactuallyhappening.com/podcast/episode/24ae728a/163-what-if-you-grew-up-in-a-violent-gang"
 course: inner # maybe down to perception or psychology some day
 tags:
   - thought

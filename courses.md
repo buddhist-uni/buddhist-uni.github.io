@@ -84,17 +84,6 @@ Courses hosted on other websites.
 %}
 
 
-{% assign authors = "Frances Garret" | split: "," %}
-{% include course-card.html
-  url="https://www.nettletibetan.ca/"
-  value="0.5"
-  title="An Introduction to Classical Tibetan"
-  icon="fas fa-cable-car"
-  description='Two courses introducing the Tibetan Language courtesy of the University of Toronto, taking you from identifying words all the way up to translating your first Buddhist text. <b>Note</b>: This class assumes prior comfort with the Tibetan script. If that\'s not you, see e.g. <i>Translating Buddhism from Tibetan</i> Ch.1–8 before taking this course.'
-  time="160"
-  lecturers=authors
-%}
-
 {% include course-card.html
   url="https://bschawaii.org/shindharmanet/course/"
   value="0.5"

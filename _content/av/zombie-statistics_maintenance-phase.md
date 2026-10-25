@@ -4,7 +4,7 @@ authors:
   - "Maintenance Phase"
 subcat: podcast
 external_url: "https://youtu.be/fsm-bnngpto"
-source_url: "https://www.listennotes.com/podcasts/maintenance-phase/zombie-statistics-spectacular-z6ywujYFNIQ/"
+alternate_url: "https://www.listennotes.com/podcasts/maintenance-phase/zombie-statistics-spectacular-z6ywujYFNIQ/"
 drive_links:
   - "https://drive.google.com/file/d/1rYRdnzym6EvYQIceYrf2g2yC3FOaeDdG/view?usp=drivesdk"
 course: intellect

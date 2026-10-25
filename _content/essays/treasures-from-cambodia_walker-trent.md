@@ -3,6 +3,7 @@ title: "Treasures from Cambodia"
 authors:
   - walker-trent
 external_url: "https://bdrc.io/2020/09/30/treasures-from-cambodia"
+alternate_url: "https://drive.google.com/file/d/1g9R-0dPATExIGTxfqSA5XFtWvCl77-LW/view" # author's pdf
 drive_links:
   - "https://drive.google.com/file/d/1Q-KtQNM5G19Crz56l7j6xXjDuv7UJfE4/view?usp=drivesdk"
 course: cambodian

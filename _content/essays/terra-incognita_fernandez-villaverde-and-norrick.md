@@ -12,6 +12,7 @@ status: featured
 tags:
   - wider
   - society
+  - demography
 year: 2026
 month: sep
 publisher: "National Bureau of Economic Research"
@@ -22,7 +23,7 @@ pages: 27
 
 > [Modern children] must be equipped to function in a world of formal knowledge, which takes years of costly investment. At the same time, children are no longer productive in the household, not even for small chores, having been replaced by those “engines of liberation” such as electric appliances now available even to poor households.
 
-> > ... pensions and health insurance do the work that sons and daughters once did, and [in a modern, meritocratic society] lineage counts for little.
+> ... pensions and health insurance do the work that sons and daughters once did, and [in a modern, meritocratic society] lineage counts for little.
 
 A lucid economic analysis of how modernity has driven the birth rate below replacement and what the future of demographics may hold.
 

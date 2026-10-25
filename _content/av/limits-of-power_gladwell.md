@@ -3,7 +3,8 @@ title: "The Limits of Power"
 subcat: podcast
 authors: ["Malcolm Gladwell"]
 transcript_url: "https://www.happyscribe.com/public/revisionist-history/revisionist-history-presents-the-limits-of-power"
-external_url: "https://www.listennotes.com/podcasts/revisionist-history/revisionist-history-presents-djOt052nKCU/"
+alternate_url: "https://www.listennotes.com/podcasts/revisionist-history/revisionist-history-presents-djOt052nKCU/"
+external_url: "https://www.youtube.com/watch?v=qJ1_FggMeMU"
 course: society
 tags:
   - ireland

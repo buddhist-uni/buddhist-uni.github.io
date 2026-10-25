@@ -2,7 +2,6 @@
 title: "Being Buddha, Staying Woke: Racial Formation in Black Buddhist Writing"
 authors:
   - "Adeana McNicholl"
-external_url: "https://academic.oup.com/jaar/article-pdf/86/4/883/26867436/lfy019.pdf"
 source_url: "https://doi.org/10.1093/jaarel/lfy019"
 drive_links:
   - "https://drive.google.com/file/d/1SkwwVNfcJQO9lHkU3ULouqcbhBPPWjvG/view?usp=drivesdk"
