@@ -127,6 +127,7 @@ And if you're still thinking that Nirvana is some heaven realm somewhere...
 
 {% include content_blurb.html category="booklets" slug="mind-like-fire-unbound_geoff" %}
   - And Ajahn Geoff further explores ancient Indian physics to come up with a striking, new (old) take on this central metaphor. A long booklet, but well worth the read.
+  - Note that in [this recent addendum to the book](https://www.dhammatalks.org/books/uncollected/fireUnboundRevisit.html){:target="_blank" ga-event-value="0.25"}, Ajahn Geoff makes it clear that the “unbinding” of the enlightened being is not merely psychological, but ontological as well.
 
 ### Part 2: Terrain
 

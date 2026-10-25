@@ -21,3 +21,5 @@ pages: 103
 > … of all the attempts to describe the etymology of the word *nibbāna*, the closest is the one Buddhaghosa proposed in The Path of Purification: Un- (*nir*) + binding (*vāna*): Unbinding
 
 Ajahn Geoff explores the symbolism of extinguishment from the context of ancient Indian physics in order to give us a new (old) take on this central image of Buddhist soteriology.
+
+Note that in [this recent addendum to the book](https://www.dhammatalks.org/books/uncollected/fireUnboundRevisit.html){:target="_blank" ga-event-value="0.25"}, Ajahn Geoff makes it clear that the “unbinding” of the enlightened being is not merely psychological, but ontological as well.

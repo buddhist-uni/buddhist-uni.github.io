@@ -667,9 +667,13 @@ with a reading or two from the *Common Buddhist Text*.
 
 ##### Meditation
 
+{% include content_blurb.html category="av" slug="zazen-1_burk-domyo" blurb="
+- A short introduction to how to sit in meditation in the Zen style.
+" %}
+
 [CBT] Th.122
 {:.mb-0}
-- The need to train the mind.
+- On the need to train the mind.
 
 [CBT] M.124--126
 {:.mb-0}
@@ -750,6 +754,10 @@ with a reading or two from the *Common Buddhist Text*.
 [CBT] V.65--68
 {:.mb-0}
 - A lengthy description of how to put the Brahmaviharas into practice in order to develop true character.
+
+{% include content_blurb.html category="av" slug="zazen-2_burk-domyo" blurb="
+- The second part of Domyo Burk’s introduction to meditation, this short talk explains right effort and encourages a consistency of practice.
+" %}
 
 ##### Uposatha
 

@@ -62,7 +62,7 @@ While his hot takes certainly are unique (IC4), they are often constructed on su
 The same goes for the never-ending cotery of scholars "questioning" whether the Buddha actually existed, etc.
 For positive examples of high-quality provocative scholarship, the careful, historical work of Florin Deleanu or the good-faith provocations of Keren Arbel and David McMahan (to name just a few scholars) come immediately to mind.
 
-Hopefully these negative and positive examples give you some idea of the kinds of scholarship we're looking for when evaluating the suitability of a work for our audience.
+Hopefully these negative and positive examples give some idea of the kinds of scholarship we're looking for when evaluating the suitability of a work for our audience.
 
 Note that works are subject to periodic reevaluation.
 If a better (more up-to-date, etc) work is found covering the same topic as an older work, for example, then the older work may be archived in favor of the newer one.
