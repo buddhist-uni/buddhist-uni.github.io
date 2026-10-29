@@ -5,8 +5,6 @@ authors:
 source_url: "https://doi.org/10.1093/jrs/fev023"
 drive_links:
   - "https://drive.google.com/file/d/1eTCUgg2fjJLr19HTIVo-zvR6J4c8ESUt/view?usp=drivesdk"
-file_links:
-  - "smallpdfs/jolliffe-pia_2015_nighttime-and-refugees.pdf"
 year: 2015
 volume: 29
 number: 1
