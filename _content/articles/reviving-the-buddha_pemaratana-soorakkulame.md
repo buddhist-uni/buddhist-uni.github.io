@@ -20,5 +20,5 @@ status: featured
 
 > … the evidence found in early printed liturgical booklets that promote Buddha-vandanā points to a different kind of modernization. This article reveals how Buddhist activists in the late nineteenth and early twentieth centuries made use of the capabilities presented in the colonial context, including print technology, to promote this devotional ritual practice as a principal marker of a newly constructed Buddhist identity.
 
-Buddha puja was not an ancient lay practice that modernizers simply continued through the publication of liturgical books but rather an effort to build a new Buddhist identity.
-Calling this "Protestant Buddhism" obscures the very un-Protestant ritual practices that reformers successfully promoted during Sri Lankan Buddhism's modernization.
+The publication of liturgical books on Buddhapuja in colonial Sri Lanka was not a continuation of an ancient practice but rather an effort to build a Buddhist identity.
+Calling this modernization "Protestant Buddhism" obscures the creative and un-Protestant nature of the religious practices that these reformers successfully normalized.
