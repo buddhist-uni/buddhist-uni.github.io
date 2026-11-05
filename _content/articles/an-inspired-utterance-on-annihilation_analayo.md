@@ -14,9 +14,7 @@ tags:
   - emptiness
   - nibbana
 year: 2021
-journal: "Sri Lanka International Journal of Buddhist Studies" 
-publisher: SIBA
-address: "Kundasale, Sri Lanka"
+journal: sijbs
 volume: 7
 number: 1
 pages: 12

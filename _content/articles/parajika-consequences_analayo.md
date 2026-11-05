@@ -10,9 +10,7 @@ course: vinaya-studies
 tags:
   - parajika
 year: 2016
-journal: "the Sri Lanka International Journal of Buddhist Studies"
-publisher: "Sri Lanka International Buddhist Academy"
-address: "Pallekele, Kundasale"
+journal: sijbs
 volume: 5
 pages: "2--22"
 ---

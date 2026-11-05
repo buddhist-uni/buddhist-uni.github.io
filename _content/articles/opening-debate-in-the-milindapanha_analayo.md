@@ -10,9 +10,7 @@ tags:
   - anatta
   - indian
 year: 2021
-journal: "Sri Lanka International Journal of Buddhist Studies"
-publisher: "Sri Lanka International Buddhist Academy" 
-address: "Sri Lanka"
+journal: sijbs
 volume: 7
 number: 2
 pages: "15--27"

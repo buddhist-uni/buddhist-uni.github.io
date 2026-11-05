@@ -2,7 +2,7 @@
 title: "The most overlooked taste in the world"
 authors:
   - "Emily Zhang"
-subcat: video
+subcat: film
 external_url: "https://youtu.be/zC1v19wfoTA"
 course: things
 tags:
