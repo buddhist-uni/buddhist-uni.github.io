@@ -2,7 +2,7 @@
 title: "Buddhism in the Tang Period"
 authors:
   - "Helwig Schmidt-Glintzer"
-translator: "Maurice Walshe"
+translator: walshe
 source_url: "https://doi.org/10.1558/bsrv.v16i2.14631"
 drive_links:
   - "https://drive.google.com/file/d/1AFexUNO3PDVbPnHDHWyVMLXDlitgP93T/view?usp=drivesdk"
