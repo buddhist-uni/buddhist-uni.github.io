@@ -88,6 +88,7 @@
         filterQuery = filterValue;
       }
 
+      const rawq = q;
       q = sanitizeQuery(q);
       if (!q) return;
       if (pendingui) {
@@ -95,7 +96,7 @@
         pendingui = null;
       }
 
-      window.search_worker.postMessage({ 'q': q, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': q, 'rawq': rawq, 'filterquery': filterQuery, 'qt': performance.now() });
       clearTimeout(checker);
       checker = setTimeout(checkRunning, CHECKTIME);
       loadingIndicator.style.display = 'block';
@@ -152,7 +153,7 @@
     if (originalSearchTerm) {
       const filterValue = sanitizeQuery(getQueryVariable('filter'));
       const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'rawq': getQueryVariable('q'), 'filterquery': filterQuery, 'qt': performance.now() });
       running = 1;
     }
     

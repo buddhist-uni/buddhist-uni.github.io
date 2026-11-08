@@ -64,3 +64,24 @@ test('bodhi translations in canon filter', async ({ page }) => {
   const translatorPill = page.locator('.Label', { hasText: 'Translator: Bhikkhu Bodhi' }).nth(99);
   await expect(translatorPill).toBeVisible();
 });
+
+test('quoted search from the URL warns that quotes are ignored', async ({ page }) => {
+  await page.goto('/search/?q=%22noble+truths%22');
+  await waitForSearchResults(page);
+
+  await expect(page.getByRole('alert')).toContainText('quotation marks were ignored');
+});
+
+test('typing quotes shows the quote warning and removing them hides it', async ({ page }) => {
+  await page.goto('/search/?q=noble+truths');
+  await waitForSearchResults(page);
+  const warning = page.getByRole('alert');
+  await expect(warning).toHaveCount(0);
+
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('“noble truths”');
+  await expect(warning).toContainText('quotation marks were ignored');
+
+  await searchBox.fill('noble truths');
+  await expect(warning).toHaveCount(0);
+});

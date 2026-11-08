@@ -218,9 +218,14 @@ function applyErrorStyle(message, isWarning) {
   }
 }
 
+function hasDoubleQuotes(q) {
+  return /["“”„‟«»＂〝〞〟″「」『』]/.test(q);
+}
+
 function handleSearchMessage(data, searchFn) {
   var results = [];
   var warning = "";
+  var quoteWarning = hasDoubleQuotes(data.rawq) ? "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>" : "";
   var words = data.q.trim().split(" ");
 
   for (var i = 0; i < words.length; i++) {
@@ -265,7 +270,7 @@ function handleSearchMessage(data, searchFn) {
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
   return {
-    "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
+    "warninghtml": (quoteWarning + warning) ? applyErrorStyle(quoteWarning + warning, true) : "",
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
     "q": data.q,

@@ -1,4 +1,4 @@
-const { describe, it } = require('node:test');
+const { describe, it, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
@@ -448,6 +448,49 @@ describe('handleSearchMessage', () => {
     assert.ok('q' in result);
     assert.equal(result.q, 'dharma');
     assert.equal(result.qt, 'test');
+  });
+
+  describe('quote warning', () => {
+    before(() => vm.runInContext(
+      'store["q"] = { type:"content", title:"Q", description:"desc q", content:"", ' +
+      '  tags:[], authors:[], category:"articles", formats:[], url:"/q" };\n',
+      sandbox
+    ));
+    after(() => vm.runInContext('delete store["q"];', sandbox));
+    const hit = [{ ref: 'q', matchData: { metadata: {} } }];
+    const warningFor = (rawq, searchFn = () => []) =>
+      toLocal(handleSearchMessage({ q: 'noble truths', rawq, filterquery: '', qt: '' }, searchFn)).warninghtml;
+
+    it('shows the exact-phrase warning', () => {
+      const html = warningFor('"noble truths"');
+      assert.ok(html.includes("<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>"));
+      assert.ok(html.includes('fa-triangle-exclamation'));
+    });
+
+    for (const quote of '"“”„‟«»＂〝〞〟″「」『』') {
+      it(`warns about ${quote}`, () => {
+        assert.match(warningFor(`${quote}noble truths`), /quotation marks/);
+      });
+    }
+
+    it('does not warn without double quotes', () => {
+      assert.equal(warningFor('noble truths'), '');
+      assert.equal(warningFor(undefined), '');
+      assert.equal(warningFor("buddha's ‘noble’ truths"), '');
+    });
+
+    it('keeps the warning when no results match all terms', () => {
+      let calls = 0;
+      const html = warningFor('"noble truths"', () => calls++ ? hit : []);
+      assert.match(html, /quotation marks/);
+      assert.match(html, /matching all of your terms/);
+    });
+
+    it('keeps the warning when only the fuzzy retry finds results', () => {
+      const html = warningFor('"noble truths"', (q) => q.includes('~1') ? hit : []);
+      assert.match(html, /quotation marks/);
+      assert.match(html, /Perhaps you meant/);
+    });
   });
 
   it('returns no-results HTML when search yields nothing', () => {
