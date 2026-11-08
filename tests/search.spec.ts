@@ -64,3 +64,36 @@ test('bodhi translations in canon filter', async ({ page }) => {
   const translatorPill = page.locator('.Label', { hasText: 'Translator: Bhikkhu Bodhi' }).nth(99);
   await expect(translatorPill).toBeVisible();
 });
+
+for (const q of ['anguttara', 'tag:anguttara', 'tag:aṅguttara']) {
+  test(`${q} matches the Aṅguttara Nikāya tag`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    await expect(page.getByText('Perhaps you meant')).toHaveCount(0);
+    await expect(page.locator('.Label:has(.fa-tag) strong', { hasText: 'Aṅguttara' }).first()).toBeVisible();
+  });
+}
+
+test('tag:an finds AN suttas', async ({ page }) => {
+  await page.goto('/search/?q=tag%3Aan');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('h3 a[href^="/content/canon/an"]').nth(49)).toBeVisible();
+});
+
+for (const [q, tag, slug] of [
+  ['tag:nibbāna', 'Nibbāna', 'nibbana'],
+  ['tag:grammar', 'Pāli Grammar', 'pali grammar'],
+  ['tag:sutta', 'The Suttas', 'sutta'],
+  ['tag:ethics', 'Buddhist Ethics', 'ethics'],
+]) {
+  test(`${q} labels ${tag} once`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const tags = page.locator('.Label:has(.fa-tag)');
+    await expect(tags.filter({ hasText: tag }).first()).toBeVisible();
+    await expect(tags.filter({ hasText: new RegExp(`^\\s*${slug}\\s*$`, 'i') })).toHaveCount(0);
+  });
+}

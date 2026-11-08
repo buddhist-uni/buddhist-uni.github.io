@@ -33,6 +33,7 @@ describe('utils.unaccented', () => {
     assert.equal(utils.unaccented('Ānanda'), 'Ananda');
     assert.equal(utils.unaccented('saṃsāra'), 'samsara');
     assert.equal(utils.unaccented('nibbāna'), 'nibbana');
+    assert.equal(utils.unaccented('Ñāṇamoli'), 'Nanamoli');
   });
 
   it('strips accents from common European words', () => {

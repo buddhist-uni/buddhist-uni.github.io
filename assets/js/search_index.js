@@ -31,7 +31,7 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
         "description": {{ p.description | markdownify | strip_html | normalize_whitespace | jsonify }},
-        "tags": {% assign tags = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% if tag.title %}{% assign tags = tags | push: tag.title %}{% assign tt = tag.title | slugify %}{% else %}{% assign tt = "" %}{% endif %}{% unless tt contains t %}{% assign tags = tags | push: t %}{% endunless %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% if course.title %}{% assign tags = tags | push: course.title %}{% assign tt = course.title | slugify %}{% else %}{% assign tt = "" %}{% endif %}{% unless tt contains p.course %}{% assign tags = tags | push: p.course %}{% endunless %}{% endif %}{{ tags | jsonify }},
+        "tags": {% assign tags = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% if tag.title %}{% assign tags = tags | push: tag.title %}{% assign tt = tag.title | slug_words %}{% else %}{% assign tt = "" %}{% endif %}{% assign ts = t | slug_words %}{% unless tt contains ts %}{% assign tags = tags | push: t %}{% endunless %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% if course.title %}{% assign tags = tags | push: course.title %}{% assign tt = course.title | slug_words %}{% else %}{% assign tt = "" %}{% endif %}{% assign ts = p.course | slug_words %}{% unless tt contains ts %}{% assign tags = tags | push: p.course %}{% endunless %}{% endif %}{{ tags | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "formats": {% assign formats = '' | split: '' %}{% for f in p.drive_links %}{% assign formats = formats | push: p.formats[forloop.index0] %}{% endfor %}{{ formats | jsonify}},
@@ -59,11 +59,13 @@ var idx = lunr(function () {
     this.searchPipeline.add(OBU_STEMMER);
     for (var key in store) {
         var v = store[key];
+        // NFC, so unaccenting can't shift the tag highlight offsets
+        v.tags = v.tags.map(function (t) { return String(t).normalize('NFC'); });
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            'tag': v.tags.join(' '), 'description': utils.unaccented(v.description),
+            'tag': v.tags.map(utils.unaccented).join(' '), 'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }
