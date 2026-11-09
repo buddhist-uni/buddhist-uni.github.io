@@ -123,10 +123,13 @@ describe('search_index.js tags', () => {
     ['tag:samyukta', '/brahmas-invitation', '<strong>Saṃyukta</strong> Āgama'],
     ['tag:sunyata', '/poems', '<strong>Śūnyatā</strong>'],
     ['tag:chan', '/poems', '<strong>Chán</strong> Literature'],
+    ['tag:therigatha', '/gotamis-poem', 'Thera/<strong>Therīgāthā</strong>'],
+    ['tag:buddha', '/gotamis-poem', "<strong>Buddha</strong>'s India"],
+    ["tag:buddha's", '/gotamis-poem', "<strong>Buddha</strong>'s India"],
     ['tag:self', '/gotamis-poem', 'Sakkāyadiṭṭhi - <strong>Self</strong> View'],
     ['tag:stilled', '/mind-stilled', 'Nibbāna: The Mind <strong>Stilled</strong>'],
-    ['tag:nibbāna', '/mind-stilled', '<strong>Nibbāna:</strong> The Mind Stilled'],
-    ['tag:NIBBANA', '/mind-stilled', '<strong>Nibbāna:</strong> The Mind Stilled'],
+    ['tag:nibbāna', '/mind-stilled', '<strong>Nibbāna</strong>: The Mind Stilled'],
+    ['tag:NIBBANA', '/mind-stilled', '<strong>Nibbāna</strong>: The Mind Stilled'],
   ]) {
     it(`"${q}" highlights ${label}`, () => {
       const r = search(q);
@@ -139,7 +142,7 @@ describe('search_index.js tags', () => {
     assert.deepEqual(search('tag:nibbana').labels, {
       '/ud1.3': ['<strong>Nibbāna</strong>'],
       '/after-nibbana': ['<strong>Nibbāna: The Goal of Buddhist Practice</strong>'],
-      '/mind-stilled': ['<strong>Nibbāna:</strong> The Mind Stilled'],
+      '/mind-stilled': ['<strong>Nibbāna</strong>: The Mind Stilled'],
     });
     assert.deepEqual(search('tag:ma').labels, { '/brahmas-invitation': ['<strong>Madhyama Āgama</strong>'] });
     assert.deepEqual(search('tag:pali-grammar').labels, { '/pali-grammar': ['<strong>Pāli Grammar</strong>'] });

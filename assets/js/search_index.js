@@ -74,7 +74,8 @@ var idx = lunr(function () {
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            'tag': v.tagtitles.map(utils.unaccented).join(' '), 'rawtag': v.tags,
+            // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
+            'tag': utils.unaccented(v.tagtitles.join(' ')).replace(/[^\p{L}\p{N}]/gu, ' '), 'rawtag': v.tags,
             'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
