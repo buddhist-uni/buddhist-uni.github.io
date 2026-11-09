@@ -8,11 +8,11 @@ order: 13
 
 # Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 Continue with Chapters 45–46, which introduce the Buddha's greatest disciples: monastics and laity who still set the example for Buddhists to this day.
 " %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 11 covers the Ten Virtues (or "Perfections") we can cultivate in every moment of our lives.' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='Chapter 11 covers the Ten Virtues (or "Perfections") we can cultivate in every moment of our lives.' %}
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb='
 We conclude our study of the Noble Eightfold Path with Chapter 8: "Wisdom"---and the ability to act for the benefit of others.
 ' %}
 {% include content_blurb.html category="canon" slug="khp5" blurb="
@@ -24,7 +24,7 @@ And then listen to it chanted aloud.
 I would like to offer you this blessing:
 May your life be thus blessed! 😊
 " %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" notime=true blurb='
 We’ll conclude with the short "[Conclusion](https://www.buddhanet.net/funbud15/)" at the end of *Fundamentals*
 ' %}
 

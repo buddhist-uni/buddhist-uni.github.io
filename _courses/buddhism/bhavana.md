@@ -8,16 +8,16 @@ order: 8
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We continue with Chapters 22–26 on the Buddha's first teachings after his Awakening.
 " %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" notime=true blurb='
 [Chapter 6](https://www.buddhanet.net/fundbud7) introduces the Buddhist concept of "*bhavana*" or "Mental Development", analyzing the Path from the perspective of the mind.
 ' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb='
 In Chapter 3 ("Right Intention") Bhikkhu Bodhi zooms in on the attitude with which we should undertake the practice.
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="Chapters 2 and 3 bring us back to meditation itself." %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb="Chapters 2 and 3 bring us back to meditation itself." %}
 {% include content_blurb.html category="canon" slug="sn42.6" blurb="
 One of the hallmarks of Buddhism as a religion is that the Buddha emphatically rejected salvation through faith and prayer alone. In this module's sutta, the Buddha illustrates this point with a simile. See if you can appreciate the dry humor!
 " %}
@@ -32,7 +32,7 @@ In this talk, Venerable Courtin talks about how we shouldn't take Buddhism as 'c
 
 ## Further Reading
 
-{% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" blurb="
+{% include content_blurb.html category="booklets" slug="i-wonder-why_thubten-chodron" notime=true blurb="
 An excellent Q&A book by [Thubten Chodron](https://thubtenchodron.org/){:target='_blank'} (another Western, Tibetan nun) answering many frequently asked questions about Buddhism. I really recommend flipping through it to see if any of the questions jump out at you.
 " %}
 
