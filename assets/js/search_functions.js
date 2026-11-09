@@ -43,13 +43,14 @@ function resultMatched(result, fromfield) {
     return false;
 }
 
-function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
+function addMatchHighlights(result, blurb, fromfields, startindex, endindex) {
     var startindex = startindex || 0;
     var endindex = endindex || blurb.length;
     var ranges = new Ranges();
     let md = result.matchData.metadata;
     var i = 0; var j = 0;
     for (var searchTerm in md) {
+      for (var fromfield of [].concat(fromfields)) {
         if (!md[searchTerm][fromfield]) continue;
         for (var mi in md[searchTerm][fromfield].position) {
             let m = md[searchTerm][fromfield].position[mi];
@@ -58,6 +59,7 @@ function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
                 ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
             }
         }
+      }
     }
     i = ranges.array.length - 1;
     var ret = blurb;
@@ -154,18 +156,13 @@ function displaySearchResult(result, item) {
     if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
         addMatchHighlights(result, item.translator, 'translator') +
         '</span>';
-    var rawmatches = getPositions(result, 'rawtag');
-    if (rawmatches.length || resultMatched(result, 'tag')) {
-        lc = 0;
-        for (var i = 0; i < item.tagtitles.length; i++) {
-            let title = item.tagtitles[i];
-            if (title == item.tags[i]) title = title.replace(/-/g, ' '); // no tag page
-            let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
-                (rawmatches.includes(i) ? '<strong>' + title + '</strong>' :
-                    addMatchHighlights(result, title, 'tag', lc, lc + title.length)) + '</span>';
-            if (t.includes('<strong>')) ret += t;
-            lc += 1 + title.length;
-        }
+    lc = 0;
+    for (var i in item.tagtitles) {
+        let title = item.tagtitles[i] == item.tags[i] ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
+        let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
+            addMatchHighlights(result, title, ['tag', 'rawtag'], lc, lc + title.length) + '</span>';
+        if (t.includes('<strong>')) ret += t;
+        lc += 1 + title.length;
     }
     if (resultMatched(result, 'format')) {
         lc = 0;
@@ -221,13 +218,14 @@ function applyErrorStyle(message, isWarning) {
   }
 }
 
-// tag:x matches a word of a tag's title or a whole raw tag x, rawtag:x only the raw tag
+// Plain terms skip whole raw tags, which tag: searches for hyphenated values
 function searchIndex(idx, q) {
   return idx.query(function (query) {
     // escaped, so lunr keeps hyphenated tags whole
     new lunr.QueryParser(q.replace(/tag:\S+/g, function (t) { return t.replace(/-/g, '\\-'); }), query).parse();
     query.clauses.forEach(function (c) {
-      if (c.fields.length == 1 && c.fields[0] == 'tag') c.fields = ['tag', 'rawtag'];
+      if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'rawtag'; });
+      else if (c.fields[0] == 'tag' && c.term.includes('-')) c.fields = ['tag', 'rawtag'];
     });
   });
 }

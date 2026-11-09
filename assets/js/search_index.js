@@ -54,28 +54,38 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
-    // lunr keeps array entries (raw tags) whole; record their index to highlight their titles
+    // Array fields hold [position in the tag titles, token] pairs
     this.tokenizer = function (obj, metadata) {
-        return lunr.tokenizer(obj, metadata).map(function (token, i) {
-            if (Array.isArray(obj)) token.metadata.position = [i, 1];
-            return token;
-        });
+        if (!Array.isArray(obj)) return lunr.tokenizer(obj, metadata);
+        return obj.map(function (p) { return new lunr.Token(p[1].toLowerCase(), { fields: metadata.fields, position: p[0] }); });
     };
     // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
     this.pipeline.remove(lunr.stemmer);
     this.searchPipeline.remove(lunr.stemmer);
     this.pipeline.add(OBU_STEMMER);
     this.searchPipeline.add(OBU_STEMMER);
+    var pipeline = this.pipeline;
+    function terms(s) { return pipeline.run(lunr.tokenizer(s)).map(String); }
+    // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
+    function words(s) { return utils.unaccented(s).replace(/[^\p{L}\p{N}]/gu, ' '); }
     for (var key in store) {
-        var v = store[key];
-        // NFC, so unaccenting can't shift the tag highlight offsets
-        v.tagtitles = v.tagtitles.map(function (t) { return String(t).normalize('NFC'); });
+        var v = store[key], at = 0, rawtag = [];
+        // NFC keeps highlight offsets aligned
+        v.tagtitles = v.tagtitles.map(function (t) { return t.normalize('NFC'); });
+        var tag = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
+        // tag also gets the titles' hyphenated words and each raw tag's words that its title lacks
+        v.tagtitles.forEach(function (title, i) {
+            var whole = [at, title.length], raw = v.tags[i], titleterms = terms(words(title));
+            for (var m of utils.unaccented(title).matchAll(/[\p{L}\p{N}]+(-[\p{L}\p{N}]+)+/gu)) tag.push([[at + m.index, m[0].length], m[0]]);
+            raw.split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) tag.push([whole, w]); });
+            rawtag.push([whole, raw]);
+            at += title.length + 1;
+        });
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
-            'tag': utils.unaccented(v.tagtitles.join(' ')).replace(/[^\p{L}\p{N}]/gu, ' '), 'rawtag': v.tags,
+            'tag': tag, 'rawtag': rawtag,
             'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
