@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { readFileSync } from 'fs';
 
-// Primer styles that an upgrade could change without a visible diff
+// Primer styles we rely on that an edit could change without a visible diff
 
 test('root font size follows the browser setting', async ({ page }) => {
   const cdp = await page.context().newCDPSession(page);
@@ -55,10 +54,11 @@ test('toasts keep their shadow', async ({ page }) => {
   await expect(page.locator('.Toast').first()).toHaveCSS('box-shadow', 'rgb(208, 215, 222) 0px 0px 0px 1px inset, rgba(140, 149, 159, 0.2) 0px 8px 24px 0px');
 });
 
-// purgecss -v drops variables nothing reads, so this fails if Primer stops reading one of our tokens
-test('Primer still reads every token we set', async ({ page }) => {
-  const tokens = readFileSync('_sass/primer.scss', 'utf8').match(/^\s+--[\w-]+(?=:)/gm)!.map(t => t.trim());
-  await page.goto('/');
-  const unread = await page.evaluate(ts => ts.filter(t => !getComputedStyle(document.documentElement).getPropertyValue(t)), tokens);
-  expect(unread).toEqual([]);
+// We only copied over the utilities we use
+test('utilities used in content still apply', async ({ page }) => {
+  await page.goto('/courses/buddhism');
+  await expect(page.locator('.mt-5').first()).toHaveCSS('margin-top', '32px');
+  await expect(page.locator('.text-underline').first()).toHaveCSS('text-decoration-line', 'underline');
+  await page.goto('/library/');
+  await expect(page.locator('.pl-4').first()).toHaveCSS('padding-left', '24px');
 });

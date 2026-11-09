@@ -1,125 +1,30 @@
-// Primer CSS
-// Custom Build, including only a subset of Primer's features
-// Pinned to @primer/css 22.3.3; primer-ports.scss and the tokens below keep the old look
+// PRIMER CSS v22.3.3 https://github.com/primer/css
+//   Only the parts we use, copied over with Primer 20's light theme inlined
+//
+// Copyright (c) 2021 GitHub Inc.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
-// Set custom variable values first
-// Heading sizes - mobile
-// h4-h6 remain the same size on both mobile & desktop
-$h00-size-mobile: 40px;
-$h0-size-mobile: 36px;
-$h1-size-mobile: 28px;
-$h2-size-mobile: 24px;
-$h3-size-mobile: 22px;
-// Heading sizes - desktop
-$h00-size: 48px;
-$h0-size: 44px;
-$h1-size: 36px;
-$h2-size: 26px;
-$h3-size: 22px;
-$h4-size: 20px;
-$h5-size: 18px;
-$h6-size: 16px;
-
-// Whole packages, as Primer's single files can't be loaded with @use
-
-// Core Definitions
-@use "@primer/css/base" with (
-  $h1-size: $h1-size, $h2-size: $h2-size, $h3-size: $h3-size,
-  $h4-size: $h4-size, $h5-size: $h5-size, $h6-size: $h6-size
-);
-
-// Import the individual Components I want
-@use "@primer/css/buttons";
-@use "@primer/css/forms" with ($h4-size: $h4-size, $h5-size: $h5-size);
-@use "@primer/css/labels";
-@use "primer-ports";
-@use "@primer/css/table-object";
-@use "@primer/css/toasts";
-
-// Utilities should be imported after Components
-@use "@primer/css/utilities" with (
-  $h00-size-mobile: $h00-size-mobile, $h0-size-mobile: $h0-size-mobile, $h1-size-mobile: $h1-size-mobile,
-  $h2-size-mobile: $h2-size-mobile, $h3-size-mobile: $h3-size-mobile,
-  $h00-size: $h00-size, $h0-size: $h0-size, $h1-size: $h1-size, $h2-size: $h2-size, $h3-size: $h3-size,
-  $h4-size: $h4-size, $h5-size: $h5-size, $h6-size: $h6-size
-);
-
-// Primer 22's themes only apply under data-color-mode,
-// so set the tokens its rules use to Primer 20's light theme
-:root {
-    --base-size-4: 4px;
-    --base-size-8: 8px;
-    --base-size-16: 16px;
-    --base-size-24: 24px;
-    --base-size-40: 40px;
-    --color-accent-emphasis: #0969da;
-    --color-accent-fg: #0969da;
-    --color-attention-emphasis: #9a6700;
-    --color-attention-subtle: #fff8c5;
-    --color-border-default: #d0d7de;
-    --color-border-muted: hsla(210,18%,87%,1);
-    --color-btn-active-bg: hsla(220,14%,93%,1);
-    --color-btn-active-border: rgba(31,35,40,0.15);
-    --color-btn-bg: #f6f8fa;
-    --color-btn-border: rgba(31,35,40,0.15);
-    --color-btn-counter-bg: rgba(31,35,40,0.08);
-    --color-btn-danger-counter-bg: rgba(207,34,46,0.1);
-    --color-btn-danger-disabled-bg: #f6f8fa;
-    --color-btn-danger-disabled-counter-bg: rgba(207,34,46,0.05);
-    --color-btn-danger-disabled-text: rgba(207,34,46,0.5);
-    --color-btn-danger-hover-bg: #a40e26;
-    --color-btn-danger-hover-border: rgba(31,35,40,0.15);
-    --color-btn-danger-hover-counter-bg: rgba(255,255,255,0.2);
-    --color-btn-danger-hover-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
-    --color-btn-danger-hover-shadow: 0 1px 0 rgba(31,35,40,0.1);
-    --color-btn-danger-hover-text: #ffffff;
-    --color-btn-danger-selected-bg: hsla(356,72%,44%,1);
-    --color-btn-danger-selected-border: rgba(31,35,40,0.15);
-    --color-btn-danger-selected-shadow: inset 0 1px 0 rgba(76,0,20,0.2);
-    --color-btn-danger-selected-text: #ffffff;
-    --color-btn-danger-text: #cf222e;
-    --color-btn-hover-bg: #f3f4f6;
-    --color-btn-hover-border: rgba(31,35,40,0.15);
-    --color-btn-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
-    --color-btn-selected-bg: hsla(220,14%,94%,1);
-    --color-btn-shadow: 0 1px 0 rgba(31,35,40,0.04);
-    --color-btn-text: #24292f;
-    --color-canvas-default: #ffffff;
-    --color-counter-border: rgba(0,0,0,0);
-    --color-danger-emphasis: #cf222e;
-    --color-fg-default: #1F2328;
-    --color-fg-muted: #656d76;
-    --color-fg-on-emphasis: #ffffff;
-    --color-fg-subtle: #6e7781;
-    --color-input-disabled-bg: rgba(175,184,193,0.2);
-    --color-neutral-muted: rgba(175,184,193,0.2);
-    --color-primer-fg-disabled: #8c959f;
-    --color-primer-shadow-inset: inset 0 1px 0 rgba(208,215,222,0.2);
-    --shadow-floating-legacy: 0 8px 24px rgba(140,149,159,0.2); // Toast
-}
-
-// My fixes go here, after the Components they're fixing
-html { font-size: 100%; } // Primer 22 fixes it at 16px
-// Dropped in Primer 22; keeps closed details out of find-in-page
-details:not([open]) > *:not(summary) { display: none !important; }
-.input-lg { height: 36px; line-height: 24px; min-width: 48px; }
-// Undo the forms package's custom .form-select arrow
-.form-select {
-    max-width: none;
-    height: auto;
-    padding-right: 12px;
-    background-image: none;
-    background-position: right 8px center;
-    background-size: auto;
-    appearance: auto;
-}
-.Toast { margin: 20px 4px; }
-.Toast-icon { max-width: 8%; }
-.Toast-content {
-    h3 {
-        padding-top: 0;
-    }
-    p:last-child {
-        margin-bottom: 0;
-    }
-}
+@use "primer/base";
+@use "primer/buttons";
+@use "primer/forms";
+@use "primer/labels";
+@use "primer/table-object";
+@use "primer/toasts";
+@use "primer/utilities";

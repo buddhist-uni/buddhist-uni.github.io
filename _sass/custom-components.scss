@@ -1,8 +1,7 @@
 // Custom components built on top of Primer
 
-@use "@primer/css/labels";
-@use "@primer/css/utilities";
-@use "primer-ports";
+@use "primer/labels";
+@use "primer/utilities";
 @use "support" as *;
 
 // Typography
@@ -25,7 +24,8 @@
 }
 
 .RatingLabel {
-    @extend .IssueLabel, .IssueLabel--big;
+    @extend .Label, .Label--large;
+    border-color: transparent;
     color: white;
     font-family: $ui-font-family;
     font-weight: normal;

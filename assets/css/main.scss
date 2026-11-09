@@ -15,7 +15,7 @@
 // $varname: {{ site.data.file.value }}px;
 
 @use "../../_sass/primer";
-@use "../../_sass/custom-components"; // after primer's fixes
+@use "../../_sass/custom-components"; // after primer
 @use "../../_sass/minima";
 @use "../../_sass/fontawesome";
 @use "../../_sass/nimitta";
