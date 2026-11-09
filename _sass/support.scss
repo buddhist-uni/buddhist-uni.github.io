@@ -21,10 +21,17 @@ $google-fonts: "Gentium Plus", "Noto Serif TC", "Noto Serif JP", "Noto Serif Tha
 $base-font-family: $google-fonts, $ui-font-family;
 $readable-font-family: $google-fonts, serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $readable-font-size: 17px;
-$font-size-small: 16px;
 
 $spacing-unit: 16px;
 $topradii: 10px 10px 0px 0px; // used by tag mini-illustrations
+
+// Minima's defaults
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$table-text-align: left;
+$content-width:    800px;
 
 // Custom components
 %olcoverimg {
@@ -36,7 +43,6 @@ $topradii: 10px 10px 0px 0px; // used by tag mini-illustrations
 
 //////
 // Imported from Minima v2.5.1
-//   (Used by custom Primer components)
 /////
 
 // Use media queries like this:
@@ -50,5 +56,9 @@ $topradii: 10px 10px 0px 0px; // used by tag mini-illustrations
   @media screen and (max-width: $device) {
     @content;
   }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
 }
 

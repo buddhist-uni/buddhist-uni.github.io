@@ -39,6 +39,7 @@ markdown: kramdown
 sass:
   load_paths:
     - "node_modules"
+  fatal_deprecations: [import, global-builtin]
 plugins:
   - jekyll-feed
   - jekyll-sitemap

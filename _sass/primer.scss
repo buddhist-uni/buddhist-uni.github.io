@@ -1,56 +1,30 @@
-// Primer CSS
-// Custom Build, including only a subset of Primer's features
+// PRIMER CSS v22.3.3 https://github.com/primer/css
+//   Only the parts we use, copied over with Primer 20's light theme inlined
+//
+// Copyright (c) 2021 GitHub Inc.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
-// Set custom variable values first
-// Heading sizes - mobile
-// h4-h6 remain the same size on both mobile & desktop
-$h00-size-mobile: 40px;
-$h0-size-mobile: 36px;
-$h1-size-mobile: 28px;
-$h2-size-mobile: 24px;
-$h3-size-mobile: 22px;
-// Heading sizes - desktop
-$h00-size: 48px;
-$h0-size: 44px;
-$h1-size: 36px;
-$h2-size: 26px;
-$h3-size: 22px;
-$h4-size: 20px;
-$h5-size: 18px;
-$h6-size: 16px;
-
-// Core Definitions
-@import "@primer/css/color-modes/index.scss";
-@import "@primer/css/support/index.scss";
-@import "@primer/css/base/index.scss";
-
-// Import the individual Components I want
-@import "@primer/css/buttons/index.scss";
-@import "@primer/css/forms/form-control.scss";
-@import "@primer/css/labels/index.scss";
-@import "@primer/css/table-object/index.scss";
-@import "@primer/css/dropdown/dropdown.scss";
-@import "@primer/css/toasts/toasts.scss";
-
-// Utilities should be imported after Components
-@import "@primer/css/utilities/margin.scss";
-@import "@primer/css/utilities/padding.scss";
-@import "@primer/css/utilities/details.scss";
-@import "@primer/css/utilities/typography.scss";
-
-// My fixes go here, after the Components they're fixing
-.input-lg { height: 36px; line-height: 24px; min-width: 48px; }
-.Toast { margin: 20px 4px; }
-.Toast-icon { max-width: 8%; }
-.Toast-content {
-    h3 {
-        padding-top: 0;
-    }
-    p:last-child {
-        margin-bottom: 0;
-    }
-}
-
-// My own custom Primer Components go here
-@import "support.scss";
-@import "custom-components.scss";
+@use "primer/base";
+@use "primer/buttons";
+@use "primer/forms";
+@use "primer/labels";
+@use "primer/table-object";
+@use "primer/toasts";
+@use "primer/utilities";

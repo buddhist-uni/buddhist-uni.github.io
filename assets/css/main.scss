@@ -5,16 +5,13 @@
 # - FontAwesome v5
 # - My customizations
 #
-# Primer was installed via:
-#     npm install @primer/css https://github.com/primer/sync
-#     node node_modules/@primer/sync/cli.js buddhist-uni.github.io/_sass/
-#
 # FontAwesome was downloaded from: https://fontawesome.com/v5/download
 ---
 // Pull in site config data you need here like so:
 // $varname: {{ site.data.file.value }}px;
 
-@import "primer";
-@import "minima";
-@import "fontawesome";
-@import "nimitta";
+@use "../../_sass/primer";
+@use "../../_sass/custom-components"; // after primer
+@use "../../_sass/minima";
+@use "../../_sass/fontawesome";
+@use "../../_sass/nimitta";

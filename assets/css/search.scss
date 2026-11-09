@@ -1,6 +1,6 @@
 ---
 ---
-@import "support";
+@use "../../_sass/support" as *;
 
 #search-loading {
     text-align: center;
