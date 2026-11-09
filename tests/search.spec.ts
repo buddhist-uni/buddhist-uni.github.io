@@ -87,6 +87,8 @@ for (const [q, tag, slug] of [
   ['tag:grammar', 'Pāli Grammar', 'pali grammar'],
   ['tag:sutta', 'The Suttas', 'sutta'],
   ['tag:ethics', 'Buddhist Ethics', 'ethics'],
+  ['tag:ma', 'Madhyama Āgama', 'ma'],
+  ['emptiness', 'Śūnyatā', 'emptiness'],
 ]) {
   test(`${q} labels ${tag} once`, async ({ page }) => {
     await page.goto('/search/?q=' + encodeURIComponent(q));
@@ -98,9 +100,22 @@ for (const [q, tag, slug] of [
   });
 }
 
-test('tag:canon keeps the pali-canon slug', async ({ page }) => {
-  await page.goto('/search/?q=tag%3Acanon');
+for (const q of ['tag:pali-canon', 'rawtag:pali-canon']) {
+  test(`${q} only finds items tagged pali-canon`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const tags = page.locator('.Label:has(.fa-tag)');
+    await expect(tags).toHaveCount(100);
+    await expect(tags.filter({ hasNotText: 'The Pāli Canon' })).toHaveCount(0);
+  });
+}
+
+test('-tag:pali-canon excludes items tagged pali-canon', async ({ page }) => {
+  await page.goto('/search/?q=' + encodeURIComponent('tag:pali -tag:pali-canon'));
   await waitForSearchResults(page);
 
-  await expect(page.locator('.Label:has(.fa-tag)', { hasText: /^\s*pali canon\s*$/i }).first()).toBeVisible();
+  const tags = page.locator('.Label:has(.fa-tag)');
+  await expect(tags.filter({ hasText: 'Pāli' }).nth(49)).toBeVisible();
+  await expect(tags.filter({ hasText: 'The Pāli Canon' })).toHaveCount(0);
 });

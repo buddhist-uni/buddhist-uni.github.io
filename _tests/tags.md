@@ -41,8 +41,8 @@ To fix, either rename one of the colliding tags or tell `utils.js` to blacklist 
 <script>
   // IMPORTANT!  Keep this up-to-date with the stemmer in search_index.js!
   const OBU_STEMMER = function (token, i, tokens) {
-    // Don't stem tags
-    if (UNSTEMMED_WORDS.has(token.toString().toLowerCase())) {
+    // Don't stem tags, including hyphenated raw tags so they match exactly
+    if (UNSTEMMED_WORDS.has(token.toString().toLowerCase()) || token.toString().includes('-')) {
       return token;
     }
     return lunr.stemmer(token, i, tokens);

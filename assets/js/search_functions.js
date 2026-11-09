@@ -154,14 +154,17 @@ function displaySearchResult(result, item) {
     if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
         addMatchHighlights(result, item.translator, 'translator') +
         '</span>';
-    if (resultMatched(result, 'tag')) {
+    var rawmatches = getPositions(result, 'rawtag');
+    if (rawmatches.length || resultMatched(result, 'tag')) {
         lc = 0;
-        for (var i in item.tags) {
-            if (!item.tags[i]) continue;
+        for (var i = 0; i < item.tagtitles.length; i++) {
+            let title = item.tagtitles[i];
+            if (title == item.tags[i]) title = title.replace(/-/g, ' '); // no tag page
             let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
-                addMatchHighlights(result, item.tags[i].replace('-',' '), 'tag', lc, lc + item.tags[i].length) + '</span>';
+                (rawmatches.includes(i) ? '<strong>' + title + '</strong>' :
+                    addMatchHighlights(result, title, 'tag', lc, lc + title.length)) + '</span>';
             if (t.includes('<strong>')) ret += t;
-            lc += 1 + item.tags[i].length;
+            lc += 1 + title.length;
         }
     }
     if (resultMatched(result, 'format')) {
@@ -216,6 +219,17 @@ function applyErrorStyle(message, isWarning) {
     const icon = '<i class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important; margin-right: 15px; margin-left: 5px"></i>'
     return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
   }
+}
+
+// tag:x matches a word of a tag's title or a whole raw tag x, rawtag:x only the raw tag
+function searchIndex(idx, q) {
+  return idx.query(function (query) {
+    // escaped, so lunr keeps hyphenated tags whole
+    new lunr.QueryParser(q.replace(/tag:\S+/g, function (t) { return t.replace(/-/g, '\\-'); }), query).parse();
+    query.clauses.forEach(function (c) {
+      if (c.fields.length == 1 && c.fields[0] == 'tag') c.fields = ['tag', 'rawtag'];
+    });
+  });
 }
 
 function handleSearchMessage(data, searchFn) {

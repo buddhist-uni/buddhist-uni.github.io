@@ -9,8 +9,8 @@ lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
 // IMPORTANT! Keep this up-to-date with the version in /_tests/tags.md
 const OBU_STEMMER = function (token, i, tokens) {
-  // Don't stem tags
-  if (UNSTEMMED_WORDS.has(token.toString().toLowerCase())) {
+  // Don't stem tags, including hyphenated raw tags so they match exactly
+  if (UNSTEMMED_WORDS.has(token.toString().toLowerCase()) || token.toString().includes('-')) {
     return token;
   }
   return lunr.stemmer(token, i, tokens);
@@ -31,7 +31,8 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
         "description": {{ p.description | markdownify | strip_html | normalize_whitespace | jsonify }},
-        "tags": {% assign tags = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% if tag.title %}{% assign tags = tags | push: tag.title %}{% assign tt = tag.title | unaccent | slugify %}{% assign tt = tt | split: "-" | push: tt %}{% else %}{% assign tt = "" %}{% endif %}{% assign ts = t | append: "s" %}{% unless tt contains t or tt contains ts %}{% assign tags = tags | push: t %}{% endunless %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% if course.title %}{% assign tags = tags | push: course.title %}{% assign tt = course.title | unaccent | slugify %}{% assign tt = tt | split: "-" | push: tt %}{% else %}{% assign tt = "" %}{% endif %}{% assign ts = p.course | append: "s" %}{% unless tt contains p.course or tt contains ts %}{% assign tags = tags | push: p.course %}{% endunless %}{% endif %}{{ tags | jsonify }},
+        "tags": {% assign tags = p.tags | default: emptylist %}{% if p.course %}{% assign tags = tags | push: p.course %}{% endif %}{{ tags | jsonify }},
+        "tagtitles": {% assign titles = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% assign title = tag.title | default: t %}{% assign titles = titles | push: title %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% assign title = course.title | default: p.course %}{% assign titles = titles | push: title %}{% endif %}{{ titles | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "formats": {% assign formats = '' | split: '' %}{% for f in p.drive_links %}{% assign formats = formats | push: p.formats[forloop.index0] %}{% endfor %}{{ formats | jsonify}},
@@ -48,10 +49,18 @@ var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
     this.field('author', { boost: 2 }); this.field('content');
     this.field('translator'); this.field('format');
-    this.field('tag', { boost: 4 }); this.field('description', { boost: 2 });
+    this.field('tag', { boost: 4 }); this.field('rawtag', { boost: 4 });
+    this.field('description', { boost: 2 });
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
+    // lunr keeps array entries (raw tags) whole; record their index to highlight their titles
+    this.tokenizer = function (obj, metadata) {
+        return lunr.tokenizer(obj, metadata).map(function (token, i) {
+            if (Array.isArray(obj)) token.metadata.position = [i, 1];
+            return token;
+        });
+    };
     // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
     this.pipeline.remove(lunr.stemmer);
     this.searchPipeline.remove(lunr.stemmer);
@@ -60,12 +69,13 @@ var idx = lunr(function () {
     for (var key in store) {
         var v = store[key];
         // NFC, so unaccenting can't shift the tag highlight offsets
-        v.tags = v.tags.map(function (t) { return String(t).normalize('NFC'); });
+        v.tagtitles = v.tagtitles.map(function (t) { return String(t).normalize('NFC'); });
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            'tag': v.tags.map(utils.unaccented).join(' '), 'description': utils.unaccented(v.description),
+            'tag': v.tagtitles.map(utils.unaccented).join(' '), 'rawtag': v.tags,
+            'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }
@@ -74,5 +84,5 @@ var idx = lunr(function () {
 joinedTitles = normalizeSuttaTitles(store);
 
 self.onmessage = function(e) {
-  self.postMessage(handleSearchMessage(e.data, idx.search.bind(idx)));
+  self.postMessage(handleSearchMessage(e.data, searchIndex.bind(null, idx)));
 }
