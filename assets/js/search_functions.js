@@ -218,11 +218,25 @@ function applyErrorStyle(message, isWarning) {
   }
 }
 
+// "--a--b-" => "a-b"
+function tidyHyphens(s) {
+  return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
+// Each word keeps one +/- prefix and tidy hyphens, and tag:/rawtag: values are escaped so lunr keeps them whole
+function normalizeQuery(q) {
+  return q.split(/\s+/).map(function (word) {
+    var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
+    var term = tidyHyphens(m[3]);
+    if (/^(raw)?tag:$/.test(m[2])) term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
+    return term && m[1] + (m[2] || '') + term + (m[4] || '');
+  }).filter(Boolean).join(' ');
+}
+
 // Plain terms skip whole raw tags, which tag: searches for hyphenated values
 function searchIndex(idx, q) {
   return idx.query(function (query) {
-    // escaped, so lunr keeps hyphenated tags whole
-    new lunr.QueryParser(q.replace(/tag:\S+/g, function (t) { return t.replace(/-/g, '\\-'); }), query).parse();
+    new lunr.QueryParser(normalizeQuery(q), query).parse();
     query.clauses.forEach(function (c) {
       if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'rawtag'; });
       else if (c.fields[0] == 'tag' && c.term.includes('-')) c.fields = ['tag', 'rawtag'];

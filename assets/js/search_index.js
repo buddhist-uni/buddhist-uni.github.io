@@ -75,7 +75,7 @@ var idx = lunr(function () {
         var tag = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
         // tag also gets the titles' hyphenated words and each raw tag's words that its title lacks
         v.tagtitles.forEach(function (title, i) {
-            var whole = [at, title.length], raw = v.tags[i], titleterms = terms(words(title));
+            var whole = [at, title.length], raw = tidyHyphens(v.tags[i]), titleterms = terms(words(title));
             for (var m of utils.unaccented(title).matchAll(/[\p{L}\p{N}]+(-[\p{L}\p{N}]+)+/gu)) tag.push([[at + m.index, m[0].length], m[0]]);
             raw.split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) tag.push([whole, w]); });
             rawtag.push([whole, raw]);

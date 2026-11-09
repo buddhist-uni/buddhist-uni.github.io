@@ -72,6 +72,9 @@ const docs = [
   doc('/anicca', [['philosophy', 'An Introduction to Buddhist Philosophy']]),
   // made up, for hyphens the real tags don't have
   doc('/self-view', [['sakkaya-ditthi', 'Sakkāyadiṭṭhi - Self-View']]),
+  doc('/hello-world', [['hello--world', 'hello--world']]),
+  doc('/hello-good-world', [['hello-good-world', 'hello-good-world']]),
+  doc('/edges', [['-left', '-left'], ['right--', 'right--']]),
 ];
 const search = loadSearchWorker(Object.fromEntries(docs));
 
@@ -129,6 +132,10 @@ describe('search_index.js tags', () => {
   });
 
   for (const [name, q, labels] of [
+    ['hyphen runs in a raw tag', 'rawtag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
+    ['other words between', 'tag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
+    ['a middle word', 'tag:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
+    ['raw tag edge hyphens', 'rawtag:left tag:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
     ['word around title hyphens', 'tag:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
     ['hyphenated title word', 'tag:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
     ['word of a raw tag', 'tag:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
