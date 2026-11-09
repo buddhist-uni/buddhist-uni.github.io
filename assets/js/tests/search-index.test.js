@@ -117,6 +117,7 @@ describe('search_index.js tags', () => {
     ['without a 2-hyphen tag', 'tag:religion -tag:east-asian-religion', { '/confucianism': ['chinese <strong>religions</strong>'] }],
     ['unstemmed hyphenated tag', 'rawtag:chinese-religion', { '/daoism': ['<strong>Sinitic Religion</strong>'] }],
     ['no such tag', 'tag:pali-sutra', {}],
+    ['tag still being typed', 'tag:-', {}],
   ]) {
     it(`${name}: ${q}`, () => {
       const r = search(q);

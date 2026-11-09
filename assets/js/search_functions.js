@@ -235,13 +235,14 @@ function normalizeQuery(q) {
 
 // Plain terms skip whole raw tags, which tag: searches for hyphenated values
 function searchIndex(idx, q) {
-  return idx.query(function (query) {
-    new lunr.QueryParser(normalizeQuery(q), query).parse();
+  q = normalizeQuery(q);
+  return q ? idx.query(function (query) {
+    new lunr.QueryParser(q, query).parse();
     query.clauses.forEach(function (c) {
       if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'rawtag'; });
       else if (c.fields[0] == 'tag' && c.term.includes('-')) c.fields = ['tag', 'rawtag'];
     });
-  });
+  }) : [];
 }
 
 function handleSearchMessage(data, searchFn) {
