@@ -1,5 +1,4 @@
 (function () {
-  const QMIN = 3;
   const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
@@ -17,12 +16,6 @@
       stillLoading.style.display = 'block';
     }
   };
-  function sanitizeQuery(q) {
-    if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
-    if (ret.length < QMIN) return '';
-    return ret;
-  }
   
   const searchBox = document.getElementById('search-box');
   const filterDropdown = document.getElementById("search-filter");
@@ -74,12 +67,12 @@
   try {
     window.search_worker = new Worker("/assets/js/search_index.js");
     function newQuery(e) {
-      var rawq = searchBox.value;
+      var q = searchBox.value;
       var filterValue = filterDropdown.value;
       var filterQuery = "";
 
       if (e.target === searchBox) {
-        rawq = e.target.value;
+        q = e.target.value;
       } else if (e.target === filterDropdown) {
         filterValue = e.target.value;
       }
@@ -88,14 +81,13 @@
         filterQuery = filterValue;
       }
 
-      var sanitizedq = sanitizeQuery(rawq);
-      if (!sanitizedq) return;
+      if (!sanitizeQuery(q)) return;
       if (pendingui) {
         clearTimeout(pendingui);
         pendingui = null;
       }
 
-      window.search_worker.postMessage({ 'q': sanitizedq, 'rawq': rawq, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': q, 'filterquery': filterQuery, 'qt': performance.now() });
       clearTimeout(checker);
       checker = setTimeout(checkRunning, CHECKTIME);
       loadingIndicator.style.display = 'block';
@@ -152,7 +144,7 @@
     if (originalSearchTerm) {
       const filterValue = sanitizeQuery(getQueryVariable('filter'));
       const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'rawq': getQueryVariable('q'), 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': getQueryVariable('q'), 'filterquery': filterQuery, 'qt': performance.now() });
       running = 1;
     }
     

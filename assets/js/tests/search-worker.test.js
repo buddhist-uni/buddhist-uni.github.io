@@ -450,6 +450,13 @@ describe('handleSearchMessage', () => {
     assert.equal(result.qt, 'test');
   });
 
+  it('sanitizes the query it is given', () => {
+    const queries = [];
+    const result = toLocal(handleSearchMessage({ q: '“Nibbāna?”', filterquery: '', qt: '' }, (q) => { queries.push(q); return []; }));
+    assert.equal(queries[0], '+Nibbana');
+    assert.equal(result.q, 'Nibbana');
+  });
+
   describe('quote warning', () => {
     before(() => vm.runInContext(
       'store["q"] = { type:"content", title:"Q", description:"desc q", content:"", ' +
@@ -458,8 +465,8 @@ describe('handleSearchMessage', () => {
     ));
     after(() => vm.runInContext('delete store["q"];', sandbox));
     const hit = [{ ref: 'q', matchData: { metadata: {} } }];
-    const warningFor = (rawq, searchFn = () => []) =>
-      toLocal(handleSearchMessage({ q: 'noble truths', rawq, filterquery: '', qt: '' }, searchFn)).warninghtml;
+    const warningFor = (q, searchFn = () => []) =>
+      toLocal(handleSearchMessage({ q, filterquery: '', qt: '' }, searchFn)).warninghtml;
 
     it('shows the exact-phrase warning', () => {
       const html = warningFor('"noble truths"');
@@ -475,7 +482,6 @@ describe('handleSearchMessage', () => {
 
     it('does not warn without double quotes', () => {
       assert.equal(warningFor('noble truths'), '');
-      assert.equal(warningFor(undefined), '');
       assert.equal(warningFor("buddha's ‘noble’ truths"), '');
     });
 

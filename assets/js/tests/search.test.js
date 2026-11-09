@@ -34,16 +34,22 @@ function loadSearchPage(search = '') {
 }
 
 describe('search page', () => {
-  it('sends the typed query to the worker both sanitized and raw', () => {
+  it('sends the worker the query as typed', () => {
     const page = loadSearchPage();
     page.type('"noble truths"');
-    assert.equal(page.posted[0].q, 'noble truths');
-    assert.equal(page.posted[0].rawq, '"noble truths"');
+    assert.deepEqual(Object.keys(page.posted[0]), ['q', 'filterquery', 'qt']);
+    assert.equal(page.posted[0].q, '"noble truths"');
   });
 
-  it('sends the query from the URL to the worker both sanitized and raw', () => {
+  it('sends the worker the query from the URL as given', () => {
     const page = loadSearchPage('?q=%E2%80%9Cnoble+truths%E2%80%9D');
-    assert.equal(page.posted[0].q, 'noble truths');
-    assert.equal(page.posted[0].rawq, '“noble truths”');
+    assert.deepEqual(Object.keys(page.posted[0]), ['q', 'filterquery', 'qt']);
+    assert.equal(page.posted[0].q, '“noble truths”');
+  });
+
+  it('does not send a query that is too short once sanitized', () => {
+    const page = loadSearchPage();
+    page.type('"ab"');
+    assert.equal(page.posted.length, 0);
   });
 });
