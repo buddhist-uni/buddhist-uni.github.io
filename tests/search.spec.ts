@@ -97,3 +97,10 @@ for (const [q, tag, slug] of [
     await expect(tags.filter({ hasText: new RegExp(`^\\s*${slug}\\s*$`, 'i') })).toHaveCount(0);
   });
 }
+
+test('tag:canon keeps the pali-canon slug', async ({ page }) => {
+  await page.goto('/search/?q=tag%3Acanon');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('.Label:has(.fa-tag)', { hasText: /^\s*pali canon\s*$/i }).first()).toBeVisible();
+});
