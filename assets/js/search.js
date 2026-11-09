@@ -74,12 +74,12 @@
   try {
     window.search_worker = new Worker("/assets/js/search_index.js");
     function newQuery(e) {
-      var q = searchBox.value;
+      var rawq = searchBox.value;
       var filterValue = filterDropdown.value;
       var filterQuery = "";
 
       if (e.target === searchBox) {
-        q = e.target.value;
+        rawq = e.target.value;
       } else if (e.target === filterDropdown) {
         filterValue = e.target.value;
       }
@@ -88,15 +88,14 @@
         filterQuery = filterValue;
       }
 
-      const rawq = q;
-      q = sanitizeQuery(q);
-      if (!q) return;
+      var sanitizedq = sanitizeQuery(rawq);
+      if (!sanitizedq) return;
       if (pendingui) {
         clearTimeout(pendingui);
         pendingui = null;
       }
 
-      window.search_worker.postMessage({ 'q': q, 'rawq': rawq, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': sanitizedq, 'rawq': rawq, 'filterquery': filterQuery, 'qt': performance.now() });
       clearTimeout(checker);
       checker = setTimeout(checkRunning, CHECKTIME);
       loadingIndicator.style.display = 'block';
