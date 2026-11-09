@@ -64,3 +64,38 @@ test('bodhi translations in canon filter', async ({ page }) => {
   const translatorPill = page.locator('.Label', { hasText: 'Translator: Bhikkhu Bodhi' }).nth(99);
   await expect(translatorPill).toBeVisible();
 });
+
+test('quoted search from the URL warns that quotes are ignored', async ({ page }) => {
+  await page.goto('/search/?q=%22noble+truths%22');
+  await waitForSearchResults(page);
+
+  await expect(page.getByRole('alert')).toContainText('quotation marks were ignored');
+});
+
+test('typing quotes shows the quote warning and removing them hides it', async ({ page }) => {
+  await page.goto('/search/?q=noble+truths');
+  await waitForSearchResults(page);
+  const warning = page.getByRole('alert');
+  await expect(warning).toHaveCount(0);
+
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('“noble truths”');
+  await expect(warning).toContainText('quotation marks were ignored');
+
+  await searchBox.fill('noble truths');
+  await expect(warning).toHaveCount(0);
+});
+
+test('each warning gets its own icon', async ({ page }) => {
+  await page.goto('/search/?q=this+is+a+exact+query+test');
+  await waitForSearchResults(page);
+  const warnings = page.locator('#search-results > div', { has: page.locator('.fa-triangle-exclamation') });
+  await expect(warnings).toHaveCount(1);
+  await expect(warnings).toContainText('matching all of your terms');
+
+  await page.locator('#search-box').fill('this is an "exact query" test');
+  await expect(warnings).toHaveCount(2);
+  await expect(warnings.nth(0)).toContainText('quotation marks were ignored');
+  await expect(warnings.nth(1)).toContainText('matching all of your terms');
+  await expect(page).toHaveURL(/\?q=this%20is%20an%20exact%20query%20test$/);
+});

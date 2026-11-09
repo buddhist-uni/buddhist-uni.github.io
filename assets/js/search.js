@@ -1,5 +1,4 @@
 (function () {
-  const QMIN = 3;
   const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
@@ -17,12 +16,6 @@
       stillLoading.style.display = 'block';
     }
   };
-  function sanitizeQuery(q) {
-    if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
-    if (ret.length < QMIN) return '';
-    return ret;
-  }
   
   const searchBox = document.getElementById('search-box');
   const filterDropdown = document.getElementById("search-filter");
@@ -88,8 +81,7 @@
         filterQuery = filterValue;
       }
 
-      q = sanitizeQuery(q);
-      if (!q) return;
+      if (!sanitizeQuery(q)) return;
       if (pendingui) {
         clearTimeout(pendingui);
         pendingui = null;
@@ -152,7 +144,7 @@
     if (originalSearchTerm) {
       const filterValue = sanitizeQuery(getQueryVariable('filter'));
       const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': getQueryVariable('q'), 'filterquery': filterQuery, 'qt': performance.now() });
       running = 1;
     }
     

@@ -218,10 +218,16 @@ function applyErrorStyle(message, isWarning) {
   }
 }
 
+function hasDoubleQuotes(q) {
+  return /["“”„‟«»＂〝〞〟″「」『』]/.test(q);
+}
+
 function handleSearchMessage(data, searchFn) {
+  var q = sanitizeQuery(data.q);
   var results = [];
   var warning = "";
-  var words = data.q.trim().split(" ");
+  var quoteWarning = hasDoubleQuotes(data.q) ? "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>" : "";
+  var words = q.trim().split(" ");
 
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
@@ -236,15 +242,15 @@ function handleSearchMessage(data, searchFn) {
     results = searchFn(query);
     if (!results.length){
       warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-      results = searchFn(data.q.trim());
+      results = searchFn(q.trim());
     }
   } catch (err) {
     if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-      results = searchFn(data.q.replaceAll(":"," "));
+      results = searchFn(q.replaceAll(":"," "));
     } else { throw err; }
   }
   if (!results.length){
-    words = data.q.trim().split(" ");
+    words = q.trim().split(" ");
     if (words.find(function(w){ return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
       if (results.length)
@@ -263,12 +269,12 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
-  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+  finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
   return {
-    "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
+    "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
-    "q": data.q,
+    "q": q,
     "filterquery": data.filterquery,
     "qt": data.qt
   };
