@@ -1,3 +1,5 @@
+@use "support" as *;
+
 a.skip-to-main {
     position: absolute;
     transform: translateY(-120%);

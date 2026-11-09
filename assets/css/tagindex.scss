@@ -1,9 +1,7 @@
 ---
 ---
 @use "sass:color";
-@import "support";
-
-$topradii: 10px 10px 0px 0px;
+@use "../../_sass/support" as *;
 
 .tag-list1 {
   margin-top: $spacing-unit;

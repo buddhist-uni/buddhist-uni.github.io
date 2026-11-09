@@ -1,7 +1,7 @@
 ---
 ---
 @use "sass:math";
-@import "support";
+@use "../../_sass/support" as *;
 
 article.course {
     padding-top: 15px;

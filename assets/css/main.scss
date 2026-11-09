@@ -14,7 +14,8 @@
 // Pull in site config data you need here like so:
 // $varname: {{ site.data.file.value }}px;
 
-@import "primer";
-@import "minima";
-@import "fontawesome";
-@import "nimitta";
+@use "../../_sass/primer";
+@use "../../_sass/custom-components"; // after primer's fixes
+@use "../../_sass/minima";
+@use "../../_sass/fontawesome";
+@use "../../_sass/nimitta";

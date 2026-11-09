@@ -39,6 +39,9 @@ markdown: kramdown
 sass:
   load_paths:
     - "node_modules"
+  # Mute Primer's deprecations; ours (loaded by relative path) fail the build
+  quiet_deps: true
+  fatal_deprecations: [import, global-builtin]
 plugins:
   - jekyll-feed
   - jekyll-sitemap

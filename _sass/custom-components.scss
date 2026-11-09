@@ -1,5 +1,9 @@
 // Custom components built on top of Primer
 
+@use "@primer/css/labels";
+@use "@primer/css/utilities";
+@use "support" as *;
+
 // Typography
 .no-italic {
     font-style: normal !important;
