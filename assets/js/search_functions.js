@@ -271,7 +271,7 @@ function handleSearchMessage(data, searchFn) {
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
   return {
-    "warninghtml": (quoteWarning + warning) ? applyErrorStyle(quoteWarning + warning, true) : "",
+    "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
     "q": q,

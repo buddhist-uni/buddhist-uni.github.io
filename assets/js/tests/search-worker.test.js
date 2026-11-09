@@ -457,7 +457,7 @@ describe('handleSearchMessage', () => {
     assert.equal(result.q, 'Nibbana');
   });
 
-  describe('quote warning', () => {
+  describe('warnings', () => {
     before(() => vm.runInContext(
       'store["q"] = { type:"content", title:"Q", description:"desc q", content:"", ' +
       '  tags:[], authors:[], category:"articles", formats:[], url:"/q" };\n',
@@ -465,13 +465,14 @@ describe('handleSearchMessage', () => {
     ));
     after(() => vm.runInContext('delete store["q"];', sandbox));
     const hit = [{ ref: 'q', matchData: { metadata: {} } }];
+    const anyTerm = () => { let calls = 0; return () => calls++ ? hit : []; };
     const warningFor = (q, searchFn = () => []) =>
       toLocal(handleSearchMessage({ q, filterquery: '', qt: '' }, searchFn)).warninghtml;
+    const quoteWarning = "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>";
+    const anyTermWarning = '<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>';
 
     it('shows the exact-phrase warning', () => {
-      const html = warningFor('"noble truths"');
-      assert.ok(html.includes("<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>"));
-      assert.ok(html.includes('fa-triangle-exclamation'));
+      assert.equal(warningFor('"noble truths"'), applyErrorStyle(quoteWarning, true));
     });
 
     for (const quote of '"“”„‟«»＂〝〞〟″「」『』') {
@@ -485,17 +486,18 @@ describe('handleSearchMessage', () => {
       assert.equal(warningFor("buddha's ‘noble’ truths"), '');
     });
 
-    it('keeps the warning when no results match all terms', () => {
-      let calls = 0;
-      const html = warningFor('"noble truths"', () => calls++ ? hit : []);
-      assert.match(html, /quotation marks/);
-      assert.match(html, /matching all of your terms/);
+    it('shows a single warning as before', () => {
+      assert.equal(warningFor('noble truths', anyTerm()), applyErrorStyle(anyTermWarning, true));
     });
 
-    it('keeps the warning when only the fuzzy retry finds results', () => {
+    it('gives each warning its own icon', () => {
+      assert.equal(warningFor('"noble truths"', anyTerm()), applyErrorStyle(quoteWarning, true) + applyErrorStyle(anyTermWarning, true));
+    });
+
+    it('keeps the quote warning when only the fuzzy retry finds results', () => {
       const html = warningFor('"noble truths"', (q) => q.includes('~1') ? hit : []);
-      assert.match(html, /quotation marks/);
-      assert.match(html, /Perhaps you meant/);
+      assert.equal(html.match(/fa-triangle-exclamation/g).length, 2);
+      assert.match(html, /quotation marks[^]*Perhaps you meant/);
     });
   });
 
