@@ -21,7 +21,7 @@ This lesson we'll read a short booklet and a popular article on meditation, and 
 {% include content_blurb.html category="articles" slug="meditation-moral-obligation_vox" blurb='
 An overview of the benefits of meditation, this article asks about moral "obligation" whereas Buddhism talks about "karma" which we can think about as "opportunities" versus Western "duties." How does reframing morality as an opportunity help you understand the question at the heart of this article?
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb="
 This classic introduction to Buddhism begins with meditation and widens out to the Buddhist view on life.
 This lesson, let's **start by reading chapter one and chapter five**. Chapter 5 is a guided meditation on Loving-Kindness. Read it slowly and try to cultivate the mind-states mentioned in the text.
 " %}

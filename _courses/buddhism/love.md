@@ -8,7 +8,7 @@ order: 4
 
 ## Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 This lesson, let's read Chapters 4–9 on the Buddha's family." %}
 {% include content_blurb.html category="booklets" slug="on-love_jayasaro" blurb='
 A philosophical essay by a popular "foreign" monk in Thailand analyzing love from the Buddhist perspective.
@@ -24,7 +24,7 @@ Also, rather than framing the sermon as a description of what love is (“patien
 
 Consider reading this sutta out loud too, remembering that the Buddhaʼs words were originally passed down by oral recitation.
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb="
 Now read Ayya's explanation of this profound discourse in Chapter 8 of _Being Nobody_.
 " %}
 {% include content_blurb.html category="av" slug="loving-kindness-chant_abhayagiri" blurb="

@@ -1,0 +1,8 @@
+{%- if include.enabled -%}{%- unless include.notime or include.content.pages contains "," -%}
+{%- assign m = include.content.total_mins | round -%}
+{%- if m > 0 -%}
+{%- assign h = m | divided_by: 60 -%}
+{%- assign r = m | modulo: 60 -%}
+{{ " " }}<span class="assignment_time">({% if h > 0 %}{{ h }} hr{% if h > 1 %}s{% endif %}{% endif %}{% if h > 0 and r > 0 %}{{ " " }}{% endif %}{% if r > 0 %}{{ r }} min{% if r != 1 %}s{% endif %}{% endif %})</span>
+{%- endif -%}
+{%- endunless -%}{%- endif -%}

@@ -8,19 +8,19 @@ order: 12
 
 # Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 Continue with Chapters 39–44 on how the Buddha responded to tragedy in the early Saṅgha.
 " %}
 - NOTE: Chapter 40 is missing from the above PDF. It can be [read online here](https://drive.google.com/file/d/1iD19Tw0IV-kUegKBOrlmh1x_rC6H5TZ8/view?usp=drivesdk){:target="_blank"}
 
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb='
 The result of mindfulness is increased mental clarity.
 Chapter 7 ("Concentration") discusses these heightened states of consciousness.
 ' %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" notime=true blurb='
 [Chapter 7](https://www.buddhanet.net/fundbud8/) of *Fundamentals* discusses how Concentration leads to "Wisdom"
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 9 ("Four Kinds of Happiness") outlines the happiness beyond sensual indulgence which is accessible through meditation.' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='Chapter 9 ("Four Kinds of Happiness") outlines the happiness beyond sensual indulgence which is accessible through meditation.' %}
 
 ## Lecture
 

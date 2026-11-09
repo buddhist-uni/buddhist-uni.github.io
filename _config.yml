@@ -394,6 +394,7 @@ defaults:
     values:
         slug: "course parts don't get slugs"
         part_of_course: "buddhism"
+        assignment_times: true
         layout: "buddhismcoursepart"
   -
     scope:
