@@ -9,20 +9,23 @@ const jsDir = path.join(__dirname, '..');
 // Runs search_index.js with `store` in place of the store Liquid renders
 function loadSearchWorker(store) {
   const template = fs.readFileSync(path.join(jsDir, 'search_index.js'), 'utf-8');
+  // Just locating the line where the store is defined
   const liquidStore = /var store = \{[\s\S]*?\n\};/.exec(template);
   assert.ok(liquidStore, 'store not found in search_index.js');
   const sandbox = {
     self: {},
-    console: { warn() {} },
+    console: { warn() { } },
     importScripts: function (src) {
       vm.runInContext(fs.readFileSync(path.join(jsDir, path.basename(src)), 'utf-8'), sandbox);
     }
   };
   vm.createContext(sandbox);
   vm.runInContext(
+    // now we strip out all the liquid templating business
     template.slice(0, liquidStore.index).replace(/^---[\s\S]*?---/, '').replace(/\{%[\s\S]*?%\}/g, '') +
+    // and replace the previously-found store line with our mock store
     'var store = ' + JSON.stringify(store) + ';' +
-    template.slice(liquidStore.index + liquidStore[0].length),
+    template.slice(liquidStore.index + liquidStore[0].length).replace(/\{%[\s\S]*?%\}/g, ''),
     sandbox
   );
   const searchJs = fs.readFileSync(path.join(jsDir, 'search.js'), 'utf-8');
