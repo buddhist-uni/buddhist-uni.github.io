@@ -61,6 +61,9 @@ summary.RatingLabel:hover {
 
 .TagLabel {
     @extend .Label, .Label--large;
+    // keep the padding .Label--large had before Primer 22
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 4px;
     margin-bottom: 4px;
     border-color: $brand-color;
