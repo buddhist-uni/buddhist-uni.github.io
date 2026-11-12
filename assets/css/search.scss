@@ -1,6 +1,6 @@
 ---
 ---
-@import "support";
+@use "support" as *;
 
 #search-loading {
     text-align: center;

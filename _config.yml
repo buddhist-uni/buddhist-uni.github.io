@@ -39,6 +39,10 @@ markdown: kramdown
 sass:
   load_paths:
     - "node_modules"
+  # Primer (even v22) is still written with @import and global Sass functions,
+  # so silence the deprecation warnings that come from it (and from _sass/primer.scss,
+  # which has to @import it). OBU's own stylesheets use the module system.
+  quiet_deps: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap

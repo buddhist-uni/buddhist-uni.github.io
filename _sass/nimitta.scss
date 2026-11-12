@@ -1,3 +1,5 @@
+@use "minima/settings" as *;
+
 a.skip-to-main {
     position: absolute;
     transform: translateY(-120%);
@@ -123,7 +125,9 @@ main {
     #toc {
         font-family: $base-font-family;
     }
-    .uifont, .btn, .Label, .State, .IssueLabel, .Counter, .TagLabel {
+    // The RatingLabels are listed explicitly because the @extends in
+    // custom-components.scss don't reach this module
+    .uifont, .btn, .Label, .State, .IssueLabel, .RatingLabel, .RatingLabel-1, .RatingLabel-2, .RatingLabel-4, .RatingLabel-5, .Counter, .TagLabel {
         font-family: $ui-font-family;
     }
     h1,h2,h3 {
@@ -203,7 +207,8 @@ a.btn:after {
     content: "";
 }
 
-.Label strong {
+// .TagLabel extends .Label in custom-components.scss
+.Label strong, .TagLabel strong {
     font-weight: bold;
 }
 

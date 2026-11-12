@@ -1,6 +1,6 @@
 ---
 ---
-@import "support";
+@use "support" as *;
 
 .tag_desc {
     font-size: 105%;

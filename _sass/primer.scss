@@ -20,7 +20,30 @@ $h5-size: 18px;
 $h6-size: 16px;
 
 // Core Definitions
+// Design tokens Primer 22 relies on. Same list as @primer/css/primitives/index.scss,
+// minus its temp-typography-tokens, whose --hN-size values would override the
+// heading sizes set above.
+@import "@primer/primitives/dist/css/base/size/size";
+@import "@primer/primitives/dist/css/base/typography/typography";
+@import "@primer/primitives/dist/css/functional/size/border";
+@import "@primer/primitives/dist/css/functional/size/breakpoints";
+@import "@primer/primitives/dist/css/functional/size/size";
+@import "@primer/primitives/dist/css/functional/size/viewport";
+@import "@primer/primitives/dist/css/functional/typography/typography";
 @import "@primer/css/color-modes/index.scss";
+// Needed by .Label (see below)
+@import "@primer/primitives/dist/css/functional/size/radius";
+// Primer 22 still falls back to these Primer 20 colour tokens for some shadows,
+// but @primer/primitives 10+ defines neither side of those fallbacks.
+// Values copied from Primer 20.8's light theme, so buttons and overlays keep their shadows.
+:root {
+    --color-overlay-shadow: 0 1px 3px rgba(31,35,40,0.12), 0 8px 24px rgba(66,74,83,0.12);
+    --color-btn-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    --color-btn-outline-hover-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    --color-btn-danger-hover-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    --color-primer-shadow-highlight: inset 0 1px 0 rgba(255,255,255,0.25);
+}
 @import "@primer/css/support/index.scss";
 @import "@primer/css/base/index.scss";
 
@@ -28,8 +51,9 @@ $h6-size: 16px;
 @import "@primer/css/buttons/index.scss";
 @import "@primer/css/forms/form-control.scss";
 @import "@primer/css/labels/index.scss";
+// Primer 22 no longer ships .Label (moved to @primer/view-components), which .TagLabel extends
+@import "@primer/view-components/app/components/primer/beta/label";
 @import "@primer/css/table-object/index.scss";
-@import "@primer/css/dropdown/dropdown.scss";
 @import "@primer/css/toasts/toasts.scss";
 
 // Utilities should be imported after Components
@@ -39,6 +63,19 @@ $h6-size: 16px;
 @import "@primer/css/utilities/typography.scss";
 
 // My fixes go here, after the Components they're fixing
+// Primer 22 dropped the dropdown component, but we still use its caret
+.dropdown-caret {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+}
 .input-lg { height: 36px; line-height: 24px; min-width: 48px; }
 .Toast { margin: 20px 4px; }
 .Toast-icon { max-width: 8%; }

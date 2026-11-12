@@ -14,7 +14,7 @@
 // Pull in site config data you need here like so:
 // $varname: {{ site.data.file.value }}px;
 
-@import "primer";
-@import "minima";
-@import "fontawesome";
-@import "nimitta";
+@use "primer";
+@use "minima";
+@use "fontawesome";
+@use "nimitta";

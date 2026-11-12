@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "support";
+@use "support" as *;
 
 .coursecard {
     margin-bottom: 2rem;
