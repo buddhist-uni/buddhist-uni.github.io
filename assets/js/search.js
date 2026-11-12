@@ -19,7 +19,7 @@
   };
   function sanitizeQuery(q) {
     if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
+    var ret = utils.unaccented(q.replace(/[^\P{P}:.-]+/ug, ''));
     if (ret.length < QMIN) return '';
     return ret;
   }

@@ -206,6 +206,55 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
   return tokenResults;
 }
 
+// The number of suttas in each book (or in each chapter of the book) that
+// SuttaCentral references are matched against. Derived from the citation
+// rules in https://discourse.suttacentral.net/t/25616/7 and checked against
+// SuttaCentral's API.
+var SC_SUTTA_COUNTS = {
+  dn: 34, mn: 152, dhp: 423, iti: 112,
+  an: [627, 479, 352, 783, 1152, 649, 1124, 627, 432, 746, 1151],
+  sn: [81, 30, 25, 25, 10, 15, 22, 12, 14, 12, 25, 213, 11, 39, 20, 13, 43, 22, 21, 12, 12, 159, 46, 96, 10, 10, 10, 10,
+       50, 46, 112, 57, 55, 55, 248, 31, 34, 16, 16, 11, 10, 13, 44, 11, 180, 184, 104, 178, 54, 108, 86, 24, 54, 20, 74, 131],
+  snp: [12, 14, 12, 16, 19],
+  thag: [120, 49, 16, 12, 12, 14, 5, 3, 1, 7, 1, 2, 1, 2, 2, 10, 3, 1, 1, 1, 1],
+  thig: [18, 10, 8, 1, 12, 8, 3, 1, 1, 1, 1, 1, 5, 1, 1, 1],
+  ud: [10, 10, 10, 10, 10, 10, 10, 10]
+};
+var SC_BOOK_ABBREVIATIONS = {
+  dn: 'DN', mn: 'MN', sn: 'SN', an: 'AN', dhp: 'Dhp', iti: 'Iti',
+  snp: 'Snp', thag: 'Thag', thig: 'Thig', ud: 'Ud'
+};
+
+// Returns the SuttaCentral id (e.g. "mn4" or "an10.5") if the query is a
+// reference to a single sutta that exists, otherwise null.
+function suttaCentralUid(query) {
+  var m = query.trim().toLowerCase().match(/^(dn|mn|sn|an|dhp|iti|snp|thag|thig|ud)\s*(\d+)(?:[.:](\d+))?$/);
+  if (!m) return null;
+  var counts = SC_SUTTA_COUNTS[m[1]];
+  var first = parseInt(m[2], 10);
+  var second = m[3] === undefined ? null : parseInt(m[3], 10);
+  if (typeof counts === 'number') {
+    if (second !== null || first < 1 || first > counts) return null;
+    return m[1] + first;
+  }
+  if (second === null || first < 1 || first > counts.length || second < 1 || second > counts[first - 1]) return null;
+  return m[1] + first + '.' + second;
+}
+
+// Splits a SuttaCentral id into its book and number, e.g. "an10.5" -> ["an", "10.5"]
+function splitSuttaCentralUid(uid) {
+  var book = uid.match(/^[a-z]+/)[0];
+  return [book, uid.substring(book.length)];
+}
+
+function displaySuttaCentralResult(uid) {
+  var parts = splitSuttaCentralUid(uid);
+  var title = SC_BOOK_ABBREVIATIONS[parts[0]] + ' ' + parts[1];
+  return '<li><h3><a href="https://suttacentral.net/' + uid + '">' + title + ' on SuttaCentral</a></h3>' +
+    '<span class="Counter">' + categoryName('canon') + '</span>' +
+    '<p>Nothing in the library matched this reference, but you can read the sutta on SuttaCentral.</p></li>';
+}
+
 function applyErrorStyle(message, isWarning) {
   if (isWarning){
     const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
@@ -232,9 +281,15 @@ function handleSearchMessage(data, searchFn) {
     }
   }
   var query = words.join(' ').trim();
+  var suttaUid = suttaCentralUid(data.q);
+  if (suttaUid) {
+    // Look for that exact sutta, rather than for anything in the same book
+    var suttaParts = splitSuttaCentralUid(suttaUid);
+    query = '+' + suttaParts[0] + ' +' + suttaParts[1];
+  }
   try {
     results = searchFn(query);
-    if (!results.length){
+    if (!results.length && !suttaUid){
       warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
       results = searchFn(data.q.trim());
     }
@@ -243,7 +298,7 @@ function handleSearchMessage(data, searchFn) {
       results = searchFn(data.q.replaceAll(":"," "));
     } else { throw err; }
   }
-  if (!results.length){
+  if (!results.length && !suttaUid){
     words = data.q.trim().split(" ");
     if (words.find(function(w){ return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
@@ -264,10 +319,17 @@ function handleSearchMessage(data, searchFn) {
     });
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+  var html = displaySearchResults(finalResults);
+  var count = finalResults ? finalResults.length : 0;
+  if (!count && suttaUid) {
+    warning = "";
+    html = displaySuttaCentralResult(suttaUid);
+    count = 1;
+  }
   return {
     "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
-    "html": displaySearchResults(finalResults),
-    "count": finalResults ? finalResults.length : 0,
+    "html": html,
+    "count": count,
     "q": data.q,
     "filterquery": data.filterquery,
     "qt": data.qt

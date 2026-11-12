@@ -73,13 +73,15 @@ vm.runInContext(
   'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
   'this.applyErrorStyle = applyErrorStyle; \n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
+  'this.suttaCentralUid = suttaCentralUid;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
+  suttaCentralUid
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -546,5 +548,88 @@ describe('handleSearchMessage', () => {
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.q, 'meditation');
     assert.equal(result.filterquery, 'tag:zen');
+  });
+});
+
+// ── SuttaCentral fallback ───────────────────────────────────────────
+
+describe('suttaCentralUid', () => {
+  it('recognises references to single suttas', () => {
+    const cases = {
+      'MN4': 'mn4', 'mn 4': 'mn4', ' Dn 34 ': 'dn34', 'MN 04': 'mn4',
+      'AN 10:5': 'an10.5', 'an10.5': 'an10.5', 'AN 4.783': 'an4.783',
+      'SN 12.2': 'sn12.2', 'sn56.131': 'sn56.131', 'Snp 5.19': 'snp5.19',
+      'Thag 21.1': 'thag21.1', 'Thig 16.1': 'thig16.1', 'Dhp 423': 'dhp423',
+      'iti112': 'iti112', 'Ud 8.10': 'ud8.10',
+    };
+    for (const [query, uid] of Object.entries(cases)) {
+      assert.equal(suttaCentralUid(query), uid, query);
+    }
+  });
+
+  it('rejects suttas that do not exist', () => {
+    for (const query of ['dn35', 'mn0', 'mn153', 'an4.784', 'an12.1', 'sn56.132', 'dhp424', 'ud8.11', 'thig17.1']) {
+      assert.equal(suttaCentralUid(query), null, query);
+    }
+  });
+
+  it('rejects chapters, ranges, sections and other text', () => {
+    for (const query of ['sn12', 'snp5', 'AN 1.1-10', 'mn4.2', 'mn4 sutta', 'satipatthana mn10', 'xyz 4', 'an', '']) {
+      assert.equal(suttaCentralUid(query), null, query);
+    }
+  });
+});
+
+describe('handleSearchMessage SuttaCentral fallback', () => {
+  it('links to SuttaCentral when the index has no results for a sutta reference', () => {
+    let fuzzyQueries = 0;
+    const mockSearch = (q) => { if (q.includes('~')) fuzzyQueries++; return []; };
+    const result = toLocal(handleSearchMessage({ q: 'MN 4', filterquery: '', qt: '' }, mockSearch));
+    assert.ok(result.html.includes('href="https://suttacentral.net/mn4"'));
+    assert.ok(result.html.includes('MN 4'));
+    assert.equal(result.count, 1);
+    assert.equal(result.warninghtml, '');
+    assert.equal(fuzzyQueries, 0, 'should not fall back to fuzzy suggestions');
+    assertValidHtml(result.html, 'SuttaCentral result');
+  });
+
+  it('keeps library results when the index finds the sutta', () => {
+    const mockSearch = () => [{ ref: 'mn4', score: 1, matchData: { metadata: {} } }];
+    const saved = sandbox.store;
+    vm.runInContext('store = { mn4: { type: "content", category: "canon", url: "/content/canon/mn4", title: "MN 4: Fear and Dread", authors: [], description: "The Buddha on overcoming fear.", content: "" } };', sandbox);
+    try {
+      const result = toLocal(handleSearchMessage({ q: 'MN4', filterquery: '', qt: '' }, mockSearch));
+      assert.ok(result.html.includes('/content/canon/mn4'));
+      assert.ok(!result.html.includes('suttacentral.net'));
+    } finally {
+      sandbox.store = saved;
+    }
+  });
+
+  it('searches the library for the referenced sutta itself', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return q === '+mn +5' ? [{ ref: 'mn5', score: 1, matchData: { metadata: {} } }] : []; };
+    vm.runInContext('store = { mn5: { type: "content", category: "canon", url: "/content/canon/mn5", title: "MN 5: Unblemished", authors: [], description: "On blemishes.", content: "" } };', sandbox);
+    const result = toLocal(handleSearchMessage({ q: 'MN 5', filterquery: '', qt: '' }, mockSearch));
+    assert.equal(queries[0], '+mn +5');
+    assert.ok(result.html.includes('/content/canon/mn5'));
+    assert.ok(!result.html.includes('suttacentral.net'));
+  });
+
+  it('links to SuttaCentral instead of matching any term when the sutta is not in the library', () => {
+    const queries = [];
+    const anyTerm = [{ ref: 'other', score: 1, matchData: { metadata: {} } }];
+    const mockSearch = (q) => { queries.push(q); return q.startsWith('+') ? [] : anyTerm; };
+    const result = toLocal(handleSearchMessage({ q: 'AN 4.783', filterquery: '', qt: '' }, mockSearch));
+    assert.deepEqual(queries, ['+an +4.783']);
+    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783"'));
+    assert.ok(result.html.includes('AN 4.783'));
+    assert.equal(result.count, 1);
+  });
+
+  it('does not link to SuttaCentral for references to suttas that do not exist', () => {
+    const result = toLocal(handleSearchMessage({ q: 'MN 153', filterquery: '', qt: '' }, () => []));
+    assert.ok(!result.html.includes('suttacentral.net'));
+    assert.equal(result.count, 0);
   });
 });
