@@ -43,13 +43,14 @@ function resultMatched(result, fromfield) {
     return false;
 }
 
-function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
+function addMatchHighlights(result, blurb, fromfields, startindex, endindex) {
     var startindex = startindex || 0;
     var endindex = endindex || blurb.length;
     var ranges = new Ranges();
     let md = result.matchData.metadata;
     var i = 0; var j = 0;
     for (var searchTerm in md) {
+      for (var fromfield of [].concat(fromfields)) {
         if (!md[searchTerm][fromfield]) continue;
         for (var mi in md[searchTerm][fromfield].position) {
             let m = md[searchTerm][fromfield].position[mi];
@@ -58,6 +59,7 @@ function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
                 ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
             }
         }
+      }
     }
     i = ranges.array.length - 1;
     var ret = blurb;
@@ -154,15 +156,13 @@ function displaySearchResult(result, item) {
     if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
         addMatchHighlights(result, item.translator, 'translator') +
         '</span>';
-    if (resultMatched(result, 'tag')) {
-        lc = 0;
-        for (var i in item.tags) {
-            if (!item.tags[i]) continue;
-            let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
-                addMatchHighlights(result, item.tags[i].replace('-',' '), 'tag', lc, lc + item.tags[i].length) + '</span>';
-            if (t.includes('<strong>')) ret += t;
-            lc += 1 + item.tags[i].length;
-        }
+    lc = 0;
+    for (var i in item.tagtitles) {
+        let title = item.tagtitles[i] == item.tags[i] ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
+        let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
+            addMatchHighlights(result, title, ['tag', 'rawtag'], lc, lc + title.length) + '</span>';
+        if (t.includes('<strong>')) ret += t;
+        lc += 1 + title.length;
     }
     if (resultMatched(result, 'format')) {
         lc = 0;
@@ -216,6 +216,33 @@ function applyErrorStyle(message, isWarning) {
     const icon = '<i class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important; margin-right: 15px; margin-left: 5px"></i>'
     return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
   }
+}
+
+// "--a--b-" => "a-b"
+function tidyHyphens(s) {
+  return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
+// Each word keeps one +/- prefix and tidy hyphens, and tag:/rawtag: values are escaped so lunr keeps them whole
+function normalizeQuery(q) {
+  return q.split(/\s+/).map(function (word) {
+    var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
+    var term = tidyHyphens(m[3]);
+    if (/^(raw)?tag:$/.test(m[2])) term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
+    return term && m[1] + (m[2] || '') + term + (m[4] || '');
+  }).filter(Boolean).join(' ');
+}
+
+// Plain terms skip whole raw tags, which tag: searches for hyphenated values
+function searchIndex(idx, q) {
+  q = normalizeQuery(q);
+  return q ? idx.query(function (query) {
+    new lunr.QueryParser(q, query).parse();
+    query.clauses.forEach(function (c) {
+      if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'rawtag'; });
+      else if (c.fields[0] == 'tag' && c.term.includes('-')) c.fields = ['tag', 'rawtag'];
+    });
+  }) : [];
 }
 
 function handleSearchMessage(data, searchFn) {

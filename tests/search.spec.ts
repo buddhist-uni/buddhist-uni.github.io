@@ -64,3 +64,52 @@ test('bodhi translations in canon filter', async ({ page }) => {
   const translatorPill = page.locator('.Label', { hasText: 'Translator: Bhikkhu Bodhi' }).nth(99);
   await expect(translatorPill).toBeVisible();
 });
+
+for (const q of ['anguttara', 'tag:anguttara', 'tag:aṅguttara']) {
+  test(`${q} matches the Aṅguttara Nikāya tag`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    await expect(page.getByText('Perhaps you meant')).toHaveCount(0);
+    await expect(page.locator('.Label:has(.fa-tag) strong', { hasText: 'Aṅguttara' }).first()).toBeVisible();
+  });
+}
+
+test('tag:an finds AN suttas', async ({ page }) => {
+  await page.goto('/search/?q=tag%3Aan');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('h3 a[href^="/content/canon/an"]').nth(49)).toBeVisible();
+});
+
+// Each result's tag labels
+function tagLabels(page: Page) {
+  return page.locator('#search-results li:has(h3)').evaluateAll(lis =>
+    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-tag)'), l => l.textContent!.trim())));
+}
+
+for (const [q, titles] of [
+  ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice']], // tagged, and in the course
+  ['tag:pitaka', ['The Vinaya']], // only a word of the raw tag vinaya-pitaka
+  ['tag:higher-ed', ['higher ed']], // no tag page
+] as const) {
+  test(`${q} labels each result's tags once, by title`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const labels = await tagLabels(page);
+    for (const l of labels) expect(l.length > 0 && new Set(l).size == l.length, JSON.stringify(l)).toBe(true);
+    for (const t of titles) expect(labels.flat()).toContain(t);
+  });
+}
+
+for (const q of ['tag:pali-canon', 'rawtag:pali-canon']) {
+  test(`${q} only finds items tagged pali-canon`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const labels = await tagLabels(page);
+    expect(labels.length).toBeGreaterThan(50);
+    for (const l of labels) expect(l).toEqual(['The Pāli Canon']);
+  });
+}
