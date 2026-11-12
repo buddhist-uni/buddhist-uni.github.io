@@ -1,7 +1,7 @@
 ---
 ---
 @use "sass:color";
-@import "support";
+@use "support" as *;
 
 $topradii: 10px 10px 0px 0px;
 

@@ -1,0 +1,22 @@
+// MINIMA v2.5.1 https://github.com/jekyll/minima/tree/v2.5.1
+//   Default values for Minima's variables, plus the site values from support.scss.
+//   Use this module from any stylesheet that needs Minima's variables or mixins.
+
+@forward "../support";
+
+// Define defaults for each variable.
+// ($base-font-family is set in support.scss)
+
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
