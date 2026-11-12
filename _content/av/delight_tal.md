@@ -9,7 +9,7 @@ subcat: podcast
 editor: "David Kestenbaum"
 status: featured
 external_url: "https://www.thisamericanlife.org/692/the-show-of-delights"
-course: feeling
+course: emotions
 tags:
   - writing
   - delight
