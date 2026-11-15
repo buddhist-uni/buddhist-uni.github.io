@@ -19,9 +19,8 @@ const htmlValidate = new HtmlValidate({
 
 function assertValidHtml(html, label) {
   const report = htmlValidate.validateStringSync(`<div>${html}</div>`);
-  assert.ok(report.valid, `${label}: invalid HTML — ${
-    report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
-  }`);
+  assert.ok(report.valid, `${label}: invalid HTML — ${report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
+    }`);
 }
 
 // Helper: bring vm-realm objects into the current realm for deepEqual
@@ -279,17 +278,23 @@ describe('getBlurbForResult', () => {
     // A greedy algorithm that picks the first match would incorrectly select IGNORE.
     // Positions array (sorted): [10=IGNORE, 320=MATCH, 335=ME, 347=INSTEAD]
     const content = 'a'.repeat(10) + 'IGNORE' + 'b'.repeat(304) + 'MATCH' +
-                    'c'.repeat(10) + 'ME' + 'c'.repeat(10) + 'INSTEAD' + 'e'.repeat(100);
+      'c'.repeat(10) + 'ME' + 'c'.repeat(10) + 'INSTEAD' + 'e'.repeat(100);
     const ignorePos = 10;
     const matchPos = 10 + 6 + 304;    // 320
     const mePos = 320 + 5 + 10;       // 335
     const insteadPos = 335 + 2 + 10;  // 347
     const result = {
-      matchData: { metadata: {
-        kw: { content: { position: [
-          [ignorePos, 6], [matchPos, 5], [mePos, 2], [insteadPos, 7]
-        ] } },
-      } }
+      matchData: {
+        metadata: {
+          kw: {
+            content: {
+              position: [
+                [ignorePos, 6], [matchPos, 5], [mePos, 2], [insteadPos, 7]
+              ]
+            }
+          },
+        }
+      }
     };
     const positions = [ignorePos, matchPos, mePos, insteadPos];
     const item = { title: 'Test', description: null, content: content };
@@ -585,10 +590,10 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     let fuzzyQueries = 0;
     const mockSearch = (q) => { if (q.includes('~')) fuzzyQueries++; return []; };
     const result = toLocal(handleSearchMessage({ q: 'MN 4', filterquery: '', qt: '' }, mockSearch));
-    assert.ok(result.html.includes('href="https://suttacentral.net/mn4"'));
+    assert.ok(result.html.includes('href="https://suttacentral.net/mn4/en/bodhi"'));
     assert.ok(result.html.includes('MN 4'));
     assert.equal(result.count, 1);
-    assert.equal(result.warninghtml, '');
+    assert.ok(result.warninghtml.includes('No results'));
     assert.equal(fuzzyQueries, 0, 'should not fall back to fuzzy suggestions');
     assertValidHtml(result.html, 'SuttaCentral result');
   });
@@ -622,7 +627,7 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     const mockSearch = (q) => { queries.push(q); return q.startsWith('+') ? [] : anyTerm; };
     const result = toLocal(handleSearchMessage({ q: 'AN 4.783', filterquery: '', qt: '' }, mockSearch));
     assert.deepEqual(queries, ['+an +4.783']);
-    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783"'));
+    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783/en/bodhi"'));
     assert.ok(result.html.includes('AN 4.783'));
     assert.equal(result.count, 1);
   });
