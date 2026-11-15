@@ -250,8 +250,9 @@ function splitSuttaCentralUid(uid) {
 function displaySuttaCentralResult(uid) {
   var parts = splitSuttaCentralUid(uid);
   var title = SC_BOOK_ABBREVIATIONS[parts[0]] + ' ' + parts[1];
-  return '<li><h3><a target="_blank" href="https://suttacentral.net/' + uid + '">Read ' + title + ' on SuttaCentral</a></h3>' +
-    '<span class="Counter">' + categoryName('canon') + '</span>' +
+  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="https://suttacentral.net/' + uid + '/en/bodhi">' + title + ' ...</a></h3>' +
+    '<span class="Counter">' + categoryName('canon') + '</span> ' +
+    '<span class="Counter">🌼 SuttaCentral</span>' +
     '<p id="sc-direct-link-blurb" data-scid="' + uid + '">We don\'t have this sutta in our library yet, but you can find it on SuttaCentral.</p></li>';
 }
 
@@ -322,7 +323,7 @@ function handleSearchMessage(data, searchFn) {
   var html = displaySearchResults(finalResults);
   var count = finalResults ? finalResults.length : 0;
   if (!count && suttaUid) {
-    warning = "<li>No results found here, but you can:</li>";
+    warning = "<li>No results found in our library. Showing external results:</li>";
     html = displaySuttaCentralResult(suttaUid);
     count = 1;
   }
