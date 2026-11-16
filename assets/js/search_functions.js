@@ -223,17 +223,18 @@ function tidyHyphens(s) {
   return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
 
-// Each word keeps one +/- prefix and tidy hyphens, and tag: values are escaped so lunr keeps them whole
+// Each word keeps one +/- prefix and tidy hyphens, but tag: values are escaped so lunr takes them literally
 function normalizeQuery(q) {
   return q.split(/\s+/).map(function (word) {
+    var tag = /^([+-]?)[+-]*tag:(.+)$/.exec(word);
+    if (tag) return tag[1] + 'tag:' + tag[2].replace(/[^\p{L}\p{N}]/gu, '\\$&');
     var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
     var term = tidyHyphens(m[3]);
-    if (m[2] == 'tag:') term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
     return term && m[1] + (m[2] || '') + term + (m[4] || '');
   }).filter(Boolean).join(' ');
 }
 
-// Plain terms skip the whole slugs, which only tag: searches
+// Plain terms skip the whole tags, which only tag: searches
 function searchIndex(idx, q) {
   q = normalizeQuery(q);
   return q ? idx.query(function (query) {

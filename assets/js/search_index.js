@@ -9,8 +9,8 @@ lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
 // IMPORTANT! Keep this up-to-date with the version in /_tests/tags.md
 const OBU_STEMMER = function (token, i, tokens) {
-  // Don't stem tags, including hyphenated raw tags so they match exactly
-  if (UNSTEMMED_WORDS.has(token.toString().toLowerCase()) || token.toString().includes('-')) {
+  // Don't stem tags
+  if (UNSTEMMED_WORDS.has(token.toString().toLowerCase())) {
     return token;
   }
   return lunr.stemmer(token, i, tokens);
@@ -60,10 +60,14 @@ var idx = lunr(function () {
         return obj.map(function (p) { return new lunr.Token(p[1].toLowerCase(), { fields: metadata.fields, position: p[0] }); });
     };
     // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
-    this.pipeline.remove(lunr.stemmer);
-    this.searchPipeline.remove(lunr.stemmer);
-    this.pipeline.add(OBU_STEMMER);
-    this.searchPipeline.add(OBU_STEMMER);
+    // The tag field skips the pipeline, so tag: matches a tag exactly
+    function exceptTags(fn) {
+        return function (token) { return token.metadata.fields == 'tag' ? token : fn.apply(this, arguments); };
+    }
+    this.pipeline.reset();
+    this.searchPipeline.reset();
+    [lunr.trimmer, lunr.stopWordFilter, OBU_STEMMER].forEach(function (fn) { this.pipeline.add(exceptTags(fn)); }, this);
+    this.searchPipeline.add(exceptTags(OBU_STEMMER));
     var pipeline = this.pipeline;
     function terms(s) { return pipeline.run(lunr.tokenizer(s)).map(String); }
     // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
@@ -75,9 +79,9 @@ var idx = lunr(function () {
         var topic = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
         // topic also gets each slug's words that its title lacks
         v.tagtitles.forEach(function (title, i) {
-            var whole = [at, title.length], slug = tidyHyphens(v.tags[i]), titleterms = terms(words(title));
-            slug.split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) topic.push([whole, w]); });
-            tag.push([whole, slug]);
+            var whole = [at, title.length], titleterms = terms(words(title));
+            tidyHyphens(v.tags[i]).split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) topic.push([whole, w]); });
+            tag.push([whole, v.tags[i]]);
             at += title.length + 1;
         });
         this.add({

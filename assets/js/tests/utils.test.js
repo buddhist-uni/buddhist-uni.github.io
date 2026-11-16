@@ -23,7 +23,7 @@ vm.runInContext(
   sandbox
 );
 
-const { utils, UpdateQueryString, locationOf, sortedInsert, Ranges } = sandbox;
+const { utils, UpdateQueryString, locationOf, sortedInsert, Ranges, sanitizeQuery } = sandbox;
 
 // ── utils.unaccented ────────────────────────────────────────────────
 
@@ -183,5 +183,18 @@ describe('Ranges', () => {
     r.add([10, 15]);
     r.add([3, 12]);
     assert.deepEqual(toLocal(r.array), [[0, 15]]);
+  });
+});
+
+// ── sanitizeQuery ───────────────────────────────────────────────────
+
+describe('sanitizeQuery', () => {
+  it('drops queries shorter than 3 characters', () => {
+    assert.equal(sanitizeQuery('ab'), '');
+    assert.equal(sanitizeQuery('abc'), 'abc');
+  });
+
+  it('keeps the punctuation of fields and tags', () => {
+    assert.equal(sanitizeQuery('-tag:breath_geoff, "x"'), '-tag:breath_geoff x');
   });
 });

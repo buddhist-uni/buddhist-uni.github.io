@@ -83,7 +83,7 @@ function tagLabels(page: Page) {
 
 for (const [q, titles] of [
   ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice']], // tagged, and in the course
-  ['topic:pitaka', ['The Vinaya']], // only a word of the raw tag vinaya-pitaka
+  ['topic:pitaka', ['The Vinaya']], // only a word of the slug vinaya-pitaka
   ['tag:higher-ed', ['higher ed']], // no tag page
 ] as const) {
   test(`${q} labels each result's tags once, by title`, async ({ page }) => {
