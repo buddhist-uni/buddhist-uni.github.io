@@ -45,7 +45,7 @@
         nuri += '&filter=' + encodeURIComponent(this.filterquery);
       }
       setTitle(this.q);
-      if (this.q != originalSearchTerm || this.filterquery != originalFilterValue) {
+      if (sanitizeQuery(this.q) != sanitizeQuery(originalSearchTerm) || this.filterquery != originalFilterValue) {
         window.history.pushState(this, "", nuri);
         if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: sanitizeQuery(this.q) });
         originalSearchTerm = this.q;
