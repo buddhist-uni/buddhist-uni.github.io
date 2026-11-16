@@ -2,7 +2,7 @@
 title: Finding Peace in the Turmoil
 ---
 
-This month, we added two new sections to our library on [Samatha](/tags/samatha) and [Vipassanā](/tags/vipassana) Meditation.
+This month, we added two new sections to our library on [Samatha](/topics/samatha) and [Vipassanā](/topics/vipassana) Meditation.
 
 Together, they represent the main focus of Buddhist meditation: on calm abiding and the development of wisdom.
 

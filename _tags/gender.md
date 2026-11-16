@@ -7,7 +7,7 @@ parents: [body]
 Humans reproduce sexually and exhibit a gentle sexual dimorphism.
 The hormones involved create a stunning array of different
 expressions, behaviors, and feelings which
-Human [cultures](/tags/culture) then layer on their own beliefs
+Human [cultures](/topics/culture) then layer on their own beliefs
 and practices to create the messy "trouble" we call "Gender and Sexuality."
 
 This tag, while touching on the biological and medical, primarily focuses on

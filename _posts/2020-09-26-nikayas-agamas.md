@@ -2,7 +2,7 @@
 title: "The Nikāyas and Āgamas"
 ---
 
-This month I've added information to the library on the four main [Nikāyas](/tags/sutta)  (the [Digha](/tags/dn), [Majjhima](/tags/mn), [Saṃyutta](/tags/sn), and [Aṅguttara](/tags/an)) along with their parallel [Āgamas](/tags/agama) (the [Dīrgha](/tags/da), [Madhyama](/tags/ma), [Saṃyukta](/tags/sa), and [Ekottarika](/tags/ea)).
+This month I've added information to the library on the four main [Nikāyas](/topics/sutta)  (the [Digha](/topics/dn), [Majjhima](/topics/mn), [Saṃyutta](/topics/sn), and [Aṅguttara](/topics/an)) along with their parallel [Āgamas](/topics/agama) (the [Dīrgha](/topics/da), [Madhyama](/topics/ma), [Saṃyukta](/topics/sa), and [Ekottarika](/topics/ea)).
 
 In particular, I'd like to highlight [this free anthology of Bhikkhu Bodhi's Majjhima Nikāya translations](/content/booklets/mn-selections_nyanamoli-bodhi) along with Bhikkhu Analayo's thorough [comparative analysis of the Majjhima Nikāya](/content/monographs/mn-comparison_analayo) both of which are jewels of contemporary scholarship.
 

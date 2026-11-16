@@ -9,10 +9,10 @@ Theravāda and human society.
 
 This month we've added four new bibliographies on:
 
-- [**Buddhism in Thailand**](/tags/thai)
-- [**Buddhism in Burma**](/tags/burmese)
-- [**Buddhism in Sri Lanka**](/tags/sri-lankan)
-- [**Buddhism in Cambodia**](/tags/cambodian)
+- [**Buddhism in Thailand**](/topics/thai)
+- [**Buddhism in Burma**](/topics/burmese)
+- [**Buddhism in Sri Lanka**](/topics/sri-lankan)
+- [**Buddhism in Cambodia**](/topics/cambodian)
 
 On each page you'll find a mix of books, papers, and talks covering that country's
 unique religious history and how it came to shape the doctrines and flavors that
@@ -32,8 +32,8 @@ And each generation of Dhamma teachers decides which Dhammas to emphasize and
 And to help advance understanding of our multicultural world,
 this month OBU is also proud to launch two, new, secular sections on:
 
-- [**Human Geography**](/tags/places)
-- and [**Human Society**](/tags/society)
+- [**Human Geography**](/topics/places)
+- and [**Human Society**](/topics/society)
 
 With governments around the world failing in their
 [responses to the global refugee crisis](/content/articles/global-refugee-crisis-regional_lischer-sarah-kenyon)
