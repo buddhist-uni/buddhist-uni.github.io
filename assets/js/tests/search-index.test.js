@@ -43,7 +43,7 @@ function loadSearchWorker(store) {
   };
 }
 
-// A store entry with its [slug, title] pairs
+// A store entry with its [tag, title] pairs
 function doc(url, tags, fields) {
   return [url, Object.assign({
     type: 'content', url: url, title: '', tags: tags.map(t => t[0]), tagtitles: tags.map(t => t[1]),
@@ -67,12 +67,13 @@ const docs = [
   doc('/daoism', [['chinese-religion', 'Sinitic Religion'], ['east-asian-religion', 'East Asian Religions']]),
   doc('/confucianism', [['chinese-religions', 'chinese-religions']]),
   doc('/spindle-whorls', [['prehistory', 'prehistory'], ['higher-ed', 'higher-ed']]),
-  doc('/feelings', [['emotion', 'Emotions']]),
+  doc('/feelings', [['emotion', 'emotion']]),
   doc('/moods', [['emotions', 'emotions']]),
-  doc('/discourses', [['suttas', 'suttas']]),
-  doc('/breath', [['breath_geoff', 'Breath Meditation']]),
+  doc('/breath', [['breath_geoff', 'breath_geoff']]),
   doc('/anicca', [['philosophy', 'An Introduction to Buddhist Philosophy']]),
-  // made up, for hyphens the real tags don't have
+  // made up, for what the real tags don't have
+  doc('/discourses', [['suttas', 'suttas']]),
+  doc('/articles', [['the', 'the']]),
   doc('/self-view', [['sakkaya-ditthi', 'Sakkāyadiṭṭhi - Self-View']]),
   doc('/zen', [['zen', 'Mind-to-Mind Transmission']]),
   doc('/hello-world', [['hello--world', 'hello--world']]),
@@ -98,8 +99,8 @@ describe('search_index.js tags', () => {
       '/canon-studies': ['The <strong>Pāli Canon</strong>'],
       '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
     }],
-    ['plain slug its title lacks', 'emptiness', { '/poems': ['<strong>Śūnyatā</strong>'] }],
-    ['plain word, not whole slugs', 'nibbana', topic_nibbana_results],
+    ['plain tag its title lacks', 'emptiness', { '/poems': ['<strong>Śūnyatā</strong>'] }],
+    ['plain word, not whole tags', 'nibbana', topic_nibbana_results],
     ['tag', 'tag:nibbana', nibbana_results],
     ['accented tag', 'tag:nibbāna', nibbana_results],
     ['capitalised tag', 'tag:Pali-Canon', pali_canon_results],
@@ -108,7 +109,8 @@ describe('search_index.js tags', () => {
     ['tag, not its words', 'tag:pitaka', {}],
     ['tag, not its stem', 'tag:emotions', { '/moods': ['<strong>emotions</strong>'] }],
     ['tag, not its plural', 'tag:sutta', {}],
-    ['tag with an underscore', 'tag:breath_geoff', { '/breath': ['<strong>Breath Meditation</strong>'] }],
+    ['tag with an underscore', 'tag:breath_geoff', { '/breath': ['<strong>breath_geoff</strong>'] }],
+    ['tag that is a stop word', 'tag:the', { '/articles': ['<strong>the</strong>'] }],
     ['misspelt tag, without fuzzy matches', 'tag:nibbna', {}],
     ['tag, not a title word', 'tag:anguttara', {}],
     ['hyphenated tag', 'tag:pali-canon', pali_canon_results],
@@ -119,7 +121,7 @@ describe('search_index.js tags', () => {
     ['tag still being typed', 'tag:-', {}],
     ['title word', 'topic:nibbana', topic_nibbana_results],
     ['accented title word', 'topic:aṅguttara', { '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
-    ['title word or slug', 'topic:an', {
+    ['title word or tag', 'topic:an', {
       '/an1.11-20': ['<strong>Aṅguttara Nikāya</strong>'],
       '/anicca': ['<strong>An</strong> Introduction to Buddhist Philosophy'],
     }],
@@ -157,7 +159,7 @@ describe('search_index.js tags', () => {
       '/pali-grammar': ['<strong>Pāli</strong> Grammar'],
     }],
     ['hyphenated title word is no tag', 'tag:self-view', {}],
-    ['word of a slug', 'topic:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
+    ['word of a tag', 'topic:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
   ]) {
     it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', topic_labels: topic_labels }));
   }

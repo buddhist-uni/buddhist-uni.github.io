@@ -66,7 +66,7 @@ test('bodhi translations in canon filter', async ({ page }) => {
 });
 
 for (const q of ['anguttara', 'topic:anguttara', 'topic:aṅguttara']) {
-  test(`${q} matches the Aṅguttara Nikāya tag`, async ({ page }) => {
+  test(`${q} matches the Aṅguttara Nikāya topic`, async ({ page }) => {
     await page.goto('/search/?q=' + encodeURIComponent(q));
     await waitForSearchResults(page);
 
@@ -83,8 +83,8 @@ function topicLabels(page: Page) {
 
 for (const [q, titles] of [
   ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice']], // tagged, and in the course
-  ['topic:pitaka', ['The Vinaya']], // only a word of the slug vinaya-pitaka
-  ['tag:higher-ed', ['higher ed']], // no tag page
+  ['topic:pitaka', ['The Vinaya']], // only a word of the tag vinaya-pitaka
+  ['tag:higher-ed', ['higher ed']], // no topic page
 ] as const) {
   test(`${q} labels each result's topics once, by title`, async ({ page }) => {
     await page.goto('/search/?q=' + encodeURIComponent(q));

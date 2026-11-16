@@ -77,7 +77,7 @@ var idx = lunr(function () {
         // NFC keeps highlight offsets aligned
         v.tagtitles = v.tagtitles.map(function (t) { return t.normalize('NFC'); });
         var topic = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
-        // topic also gets each slug's words that its title lacks
+        // topic also gets each tag's words that its title lacks
         v.tagtitles.forEach(function (title, i) {
             var whole = [at, title.length], titleterms = terms(words(title));
             tidyHyphens(v.tags[i]).split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) topic.push([whole, w]); });
