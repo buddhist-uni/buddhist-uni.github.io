@@ -144,7 +144,15 @@ describe('search_index.js tags', () => {
     ['raw tag edge hyphens', 'tag:left about:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
     ['word around title hyphens', 'about:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
     ['hyphenated title word', 'about:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
-    ['2-hyphen title word', 'about:mind-to-mind', { '/zen': ['<strong>Mind-to-Mind</strong> Transmission'] }],
+    ['2-hyphen title word', 'about:mind-to-mind', {
+      '/zen': ['<strong>Mind</strong>-to-<strong>Mind</strong> Transmission'],
+      '/mind-stilled': ['Nibbāna: The <strong>Mind</strong> Stilled'],
+    }],
+    ['first word, then any', 'about:pali-canon', {
+      '/canon-studies': ['The <strong>Pāli Canon</strong>'],
+      '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
+      '/pali-grammar': ['<strong>Pāli</strong> Grammar'],
+    }],
     ['hyphenated title word is no tag', 'tag:self-view', {}],
     ['word of a raw tag', 'about:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
   ]) {

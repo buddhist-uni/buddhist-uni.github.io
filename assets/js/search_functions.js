@@ -223,12 +223,12 @@ function tidyHyphens(s) {
   return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
 
-// Each word keeps one +/- prefix and tidy hyphens, and tag:/about: values are escaped so lunr keeps them whole
+// Each word keeps one +/- prefix and tidy hyphens, and tag: values are escaped so lunr keeps them whole
 function normalizeQuery(q) {
   return q.split(/\s+/).map(function (word) {
     var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
     var term = tidyHyphens(m[3]);
-    if (/^(tag|about):$/.test(m[2])) term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
+    if (m[2] == 'tag:') term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
     return term && m[1] + (m[2] || '') + term + (m[4] || '');
   }).filter(Boolean).join(' ');
 }

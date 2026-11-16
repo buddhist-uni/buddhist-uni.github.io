@@ -96,8 +96,6 @@ var utils = {
     'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""):str; },
     'ascii': /^[ -~]+$/
 };
-// global, so only for matchAll and replace
-const hyphenatedWords = /[\p{L}\p{N}]+(-[\p{L}\p{N}]+)+/gu;
 function spacifyNonAlphanumeric(s) { return s.replace(/[^\p{L}\p{N}]/gu, ' '); }
 
 class Ranges {
