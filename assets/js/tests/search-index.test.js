@@ -82,7 +82,7 @@ describe('search_index.js tags', () => {
     '/ud1.3': ['<strong>Nibbāna</strong>'],
     '/after-nibbana': ['<strong>Nibbāna: The Goal of Buddhist Practice</strong>'],
   };
-  const about_nibbana_results = {
+  const topic_nibbana_results = {
     '/ud1.3': ['<strong>Nibbāna</strong>'],
     '/after-nibbana': ['<strong>Nibbāna</strong>: The Goal of Buddhist Practice'],
     '/mind-stilled': ['<strong>Nibbāna</strong>: The Mind Stilled'],
@@ -95,7 +95,7 @@ describe('search_index.js tags', () => {
       '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
     }],
     ['plain raw tag its title lacks', 'emptiness', { '/poems': ['<strong>Śūnyatā</strong>'] }],
-    ['plain word, not whole raw tags', 'nibbana', about_nibbana_results],
+    ['plain word, not whole raw tags', 'nibbana', topic_nibbana_results],
     ['tag', 'tag:nibbana', nibbana_results],
     ['accented tag', 'tag:nibbāna', nibbana_results],
     ['capitalised tag', 'tag:Pali-Canon', pali_canon_results],
@@ -109,21 +109,21 @@ describe('search_index.js tags', () => {
     ['unstemmed hyphenated tag', 'tag:chinese-religion', { '/daoism': ['<strong>Sinitic Religion</strong>'] }],
     ['no such tag', 'tag:pali-sutra', {}],
     ['tag still being typed', 'tag:-', {}],
-    ['title word', 'about:nibbana', about_nibbana_results],
-    ['accented title word', 'about:aṅguttara', { '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
-    ['title word or raw tag', 'about:an', {
+    ['title word', 'topic:nibbana', topic_nibbana_results],
+    ['accented title word', 'topic:aṅguttara', { '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
+    ['title word or raw tag', 'topic:an', {
       '/an1.11-20': ['<strong>Aṅguttara Nikāya</strong>'],
       '/anicca': ['<strong>An</strong> Introduction to Buddhist Philosophy'],
     }],
-    ['word of a hyphenated tag', 'about:pitaka', { '/vinaya': ['<strong>The Vinaya</strong>'] }],
-    ['title word after punctuation', 'about:therigatha', { '/gotamis-poem': ['Thera/<strong>Therīgāthā</strong>'] }],
-    ['title word before punctuation', 'about:buddha', { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
-    ['typed apostrophe', "about:buddha's", { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
-    ['without a tag', 'about:pali -tag:pali-canon', {
+    ['word of a hyphenated tag', 'topic:pitaka', { '/vinaya': ['<strong>The Vinaya</strong>'] }],
+    ['title word after punctuation', 'topic:therigatha', { '/gotamis-poem': ['Thera/<strong>Therīgāthā</strong>'] }],
+    ['title word before punctuation', 'topic:buddha', { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
+    ['typed apostrophe', "topic:buddha's", { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
+    ['without a tag', 'topic:pali -tag:pali-canon', {
       '/pali-grammar': ['<strong>Pāli</strong> Grammar'],
       '/poems': ['Poetry of the <strong>Pāḷi</strong> Canon'],
     }],
-    ['without a 2-hyphen tag', 'about:religion -tag:east-asian-religion', { '/confucianism': ['chinese <strong>religions</strong>'] }],
+    ['without a 2-hyphen tag', 'topic:religion -tag:east-asian-religion', { '/confucianism': ['chinese <strong>religions</strong>'] }],
   ]) {
     it(`${name}: ${q}`, () => {
       const r = search(q);
@@ -140,28 +140,28 @@ describe('search_index.js tags', () => {
 
   for (const [name, q, tag_labels] of [
     ['hyphen runs in a raw tag', 'tag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
-    ['a middle word', 'about:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
-    ['raw tag edge hyphens', 'tag:left about:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
-    ['word around title hyphens', 'about:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
-    ['hyphenated title word', 'about:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
-    ['2-hyphen title word', 'about:mind-to-mind', {
+    ['a middle word', 'topic:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
+    ['raw tag edge hyphens', 'tag:left topic:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
+    ['word around title hyphens', 'topic:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
+    ['hyphenated title word', 'topic:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
+    ['2-hyphen title word', 'topic:mind-to-mind', {
       '/zen': ['<strong>Mind</strong>-to-<strong>Mind</strong> Transmission'],
       '/mind-stilled': ['Nibbāna: The <strong>Mind</strong> Stilled'],
     }],
-    ['first word, then any', 'about:pali-canon', {
+    ['first word, then any', 'topic:pali-canon', {
       '/canon-studies': ['The <strong>Pāli Canon</strong>'],
       '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
       '/pali-grammar': ['<strong>Pāli</strong> Grammar'],
     }],
     ['hyphenated title word is no tag', 'tag:self-view', {}],
-    ['word of a raw tag', 'about:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
+    ['word of a raw tag', 'topic:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
   ]) {
     it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', tag_labels: tag_labels }));
   }
 
-  it('labels every tag: and about: result', () => {
+  it('labels every tag: and topic: result', () => {
     const tags = docs.flatMap(d => d[1].tags);
-    const qs = tags.map(t => 'tag:' + t).concat(tags.flatMap(t => t.split('-')).map(w => 'about:' + w));
+    const qs = tags.map(t => 'tag:' + t).concat(tags.flatMap(t => t.split('-')).map(w => 'topic:' + w));
     for (const q of new Set(qs.filter(q => q.length > 8))) {
       for (const [url, tag_labels] of Object.entries(search(q).tag_labels)) assert.ok(tag_labels.length, `${q} ${url}`);
     }
@@ -170,7 +170,7 @@ describe('search_index.js tags', () => {
   it('keeps highlights on decomposed titles', () => {
     const r = loadSearchWorker(Object.fromEntries([
       doc('/d', [['vipassana', 'Vipassana\u0304'], ['nibbana', 'Nibbāna: The Goal']]),
-    ]))('about:goal');
+    ]))('topic:goal');
     assert.deepEqual(r.tag_labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
   });
 });
