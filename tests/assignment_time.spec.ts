@@ -15,30 +15,35 @@ const PARTS = [
   'wisdom', 'conclusion',
 ];
 
-const boxes = (page: Page) => page.locator('.content_box:not(.with_border)');
+// Recordings give their exact length; readings are rounded onto a schedule
+const RECORDED = /^av\/|^canon\/sn22\.86$/;
+const EXACT = /^\((\d+ hrs?( \d+ mins?)?|\d+ mins?)\)$/;
+const ROUGH = /^\(~((5|10|15|20|30|45) mins|1 hr|1\.5 hrs|[2-9] hrs)\)$/;
+
+const boxes =(page: Page) => page.locator('.content_box:not(.with_border)');
 const timeOf = (page: Page, contentPath: string) =>
   boxes(page).filter({ has: page.locator(`[data-content-path="${contentPath}"]`) }).locator('.assignment_time');
 
 test('assignment time integration page has no failures', async ({ page }) => {
   await page.goto('/tests/assignment-time');
   const text = await page.locator('article').innerText();
-  expect(text.match(/Pass ✅/g)?.length, 'test is valid: the page has test rows').toBeGreaterThan(15);
+  expect(text.match(/Pass ✅/g)?.length, 'test is valid: the page has test rows').toBeGreaterThan(30);
   expect(text).not.toContain('FAIL');
 });
 
 test('Buddhism 101 assignments show their time', async ({ page }) => {
   await page.goto('/courses/buddhism/bhavana');
   await expect(timeOf(page, 'av/how-to-love-your-problems_courtin-robina')).toHaveText('(1 hr 10 mins)');
-  await expect(timeOf(page, 'canon/sn42.6')).toHaveText('(15 mins)');
+  await expect(timeOf(page, 'canon/sn42.6')).toHaveText('(~15 mins)');
   await page.goto('/courses/buddhism/wisdom');
   await expect(timeOf(page, 'av/buddhism-and-the-world_bodhi')).toHaveText('(2 hrs 20 mins)');
   await page.goto('/courses/buddhism/conclusion');
-  await expect(timeOf(page, 'articles/buddhism-and-modernity_powers-doug')).toHaveText('(20 mins)');
+  await expect(timeOf(page, 'articles/buddhism-and-modernity_powers-doug')).toHaveText('(~20 mins)');
 });
 
 test('time also shows on the content_box and inline_content assignments', async ({ page }) => {
   await page.goto('/courses/buddhism/mindfulness');
-  await expect(timeOf(page, 'monographs/miracle-of-mindfulness_tnh')).toHaveText('(1 hr 42 mins)');
+  await expect(timeOf(page, 'monographs/miracle-of-mindfulness_tnh')).toHaveText('(~2 hrs)');
   await page.goto('/courses/buddhism/karma');
   await expect(page.locator('.assignment_time', { hasText: '(1 hr 6 mins)' })).toHaveCount(1);
   await page.goto('/courses/buddhism/path-revisited');
@@ -55,7 +60,7 @@ for (const part of PARTS) {
       const path = (await box.locator('[data-content-path]').first().getAttribute('data-content-path')) ?? '';
       const times = box.locator('.assignment_time');
       if (NOTIME.includes(path)) await expect(times, path).toHaveCount(0);
-      else await expect(times, path).toHaveText(/^\((\d+ hrs?( \d+ mins?)?|\d+ mins?)\)$/);
+      else await expect(times, path).toHaveText(RECORDED.test(path) ? EXACT : ROUGH);
     }
   });
 }
