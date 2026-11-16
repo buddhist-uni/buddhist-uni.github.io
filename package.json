@@ -7,7 +7,7 @@
   "bugs": "https://github.com/buddhist-uni/buddhist-uni.github.io/issues",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^7.0",
-    "@playwright/test": "^1.60.0",
+    "@playwright/test": "^1.65.1",
     "@types/node": "^25.5.0",
     "clean-css-cli": "^5.6",
     "html-validate": "^10.11.2",
