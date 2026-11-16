@@ -115,7 +115,7 @@ collections:
      permalink: /:collection/:path
   tags:
      output: true
-     permalink: /:collection/:name
+     permalink: /topics/:name
      order:
        - buddhism.md
        - function.md

@@ -13,7 +13,7 @@ const cyrb53 = function(str) {
   return 4294967296 * (2097151 & h2) + (h1 >>> 0);
 };
 const BuggyTracker = function (d) {
-  const tagr = /^\/tags\/([a-z-]+)[\/]?$/;
+  const tagr = /^\/topics\/([a-z-]+)[\/]?$/;
   const seriesr = /^\/publishers\/([a-z-_]+)$/;
   const journalr = /^\/journals\/([a-z-]+)$/;
   const contentr = /^\/content\/([a-z]+)\/([a-z0-9_+\.-]+)$/;

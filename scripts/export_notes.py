@@ -24,7 +24,7 @@ MARKDOWN_REGEXES = [
   (re.compile(r'\]\(\/content\/papers\/([0-9a-z_\.-]+)\)'), rf']({CONTENT_FOLDER_NAME}/obu_paper_\1.md)'),
   (re.compile(r'\]\(\/content\/reference\/([0-9a-z_\.-]+)\)'), rf']({CONTENT_FOLDER_NAME}/obu_ref_\1.md)'),
   (re.compile(r'\]\(\/authors\/([0-9a-z_\.-]+)\)'), rf']({AUTHOR_FOLDER_NAME}/\1.md)'),
-  (re.compile(r'\]\(\/tags\/([0-9a-z_\.-]+)\)'), rf']({TAG_FOLDER_NAME}/obu_\1.md)'),
+  (re.compile(r'\]\(\/(?:tags|topics)\/([0-9a-z_\.-]+)\)'), rf']({TAG_FOLDER_NAME}/obu_\1.md)'),
   (re.compile(r'\]\(\/([\/0-9a-z_\.-]+)\)'), rf']({website.baseurl}/\1)')
 ]
 

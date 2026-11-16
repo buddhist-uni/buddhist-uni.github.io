@@ -53,7 +53,7 @@ function doc(url, tags, fields) {
 
 const docs = [
   // tags and titles from the built store
-  doc('/tags/an', [], { type: 'tags', title: 'Aṅguttara Nikāya' }),
+  doc('/topics/an', [], { type: 'tags', title: 'Aṅguttara Nikāya' }),
   doc('/an1.11-20', [['an', 'Aṅguttara Nikāya'], ['hindrances', 'The Hindrances']], { title: 'AN 1.11–20 Nīvaraṇappahāna Vagga' }),
   doc('/ud1.3', [['nibbana', 'Nibbāna'], ['ud', 'Udāna']]),
   doc('/after-nibbana', [['arahant', 'Arahants'], ['nibbana', 'Nibbāna: The Goal of Buddhist Practice']]),
@@ -89,7 +89,7 @@ describe('search_index.js tags', () => {
   };
   const pali_canon_results = { '/canon-studies': ['<strong>The Pāli Canon</strong>'] };
   for (const [name, q, tag_labels] of [
-    ['plain word of an accented title', 'anguttara', { '/tags/an': [], '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
+    ['plain word of an accented title', 'anguttara', { '/topics/an': [], '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
     ['plain words of a title', 'pali canon', {
       '/canon-studies': ['The <strong>Pāli Canon</strong>'],
       '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
