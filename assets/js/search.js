@@ -1,5 +1,4 @@
 (function () {
-  const QMIN = 3;
   const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
@@ -17,12 +16,6 @@
       stillLoading.style.display = 'block';
     }
   };
-  function sanitizeQuery(q) {
-    if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
-    if (ret.length < QMIN) return '';
-    return ret;
-  }
   
   const searchBox = document.getElementById('search-box');
   const filterDropdown = document.getElementById("search-filter");

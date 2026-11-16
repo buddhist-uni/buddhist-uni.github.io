@@ -160,7 +160,7 @@ function displaySearchResult(result, item) {
     for (var i in item.tagtitles) {
         let title = item.tagtitles[i] == item.tags[i] ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
         let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
-            addMatchHighlights(result, title, ['tag', 'rawtag'], lc, lc + title.length) + '</span>';
+            addMatchHighlights(result, title, ['tag', 'about'], lc, lc + title.length) + '</span>';
         if (t.includes('<strong>')) ret += t;
         lc += 1 + title.length;
     }
@@ -223,24 +223,23 @@ function tidyHyphens(s) {
   return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
 
-// Each word keeps one +/- prefix and tidy hyphens, and tag:/rawtag: values are escaped so lunr keeps them whole
+// Each word keeps one +/- prefix and tidy hyphens, and tag:/about: values are escaped so lunr keeps them whole
 function normalizeQuery(q) {
   return q.split(/\s+/).map(function (word) {
     var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
     var term = tidyHyphens(m[3]);
-    if (/^(raw)?tag:$/.test(m[2])) term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
+    if (/^(tag|about):$/.test(m[2])) term = term.replace(/[^\p{L}\p{N}]/gu, '\\$&');
     return term && m[1] + (m[2] || '') + term + (m[4] || '');
   }).filter(Boolean).join(' ');
 }
 
-// Plain terms skip whole raw tags, which tag: searches for hyphenated values
+// Plain terms skip the whole slugs, which only tag: searches
 function searchIndex(idx, q) {
   q = normalizeQuery(q);
   return q ? idx.query(function (query) {
     new lunr.QueryParser(q, query).parse();
     query.clauses.forEach(function (c) {
-      if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'rawtag'; });
-      else if (c.fields[0] == 'tag' && c.term.includes('-')) c.fields = ['tag', 'rawtag'];
+      if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'tag'; });
     });
   }) : [];
 }

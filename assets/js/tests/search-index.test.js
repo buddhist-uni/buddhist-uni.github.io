@@ -28,23 +28,18 @@ function loadSearchWorker(store) {
     template.slice(liquidStore.index + liquidStore[0].length).replace(/\{%[\s\S]*?%\}/g, ''),
     sandbox
   );
-  const searchJs = fs.readFileSync(path.join(jsDir, 'search.js'), 'utf-8');
-  const sanitizeQuery = vm.runInContext(
-    /const QMIN = .*/.exec(searchJs)[0] + /function sanitizeQuery[\s\S]*?\n  \}/.exec(searchJs)[0] + 'sanitizeQuery',
-    sandbox
-  );
 
   // Sends q as search.js does. Returns the warning and each result's tag labels, in result order.
   return function search(q) {
     let reply = null;
     sandbox.self.postMessage = function (m) { reply = m; };
-    sandbox.self.onmessage({ data: { q: sanitizeQuery(q), filterquery: '', qt: 0 } });
+    sandbox.self.onmessage({ data: { q: sandbox.sanitizeQuery(q), filterquery: '', qt: 0 } });
     assert.ok(reply, 'the worker did not reply');
-    const labels = {};
+    const tag_labels = {};
     for (const li of reply.html.split('<li><h3>').slice(1)) {
-      labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-tag"><\/i> (.*?)<\/span>/g), m => m[1]);
+      tag_labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-tag"><\/i> (.*?)<\/span>/g), m => m[1]);
     }
-    return { warning: reply.warninghtml.replace(/<[^>]+>/g, ''), labels: labels };
+    return { warning: reply.warninghtml.replace(/<[^>]+>/g, ''), tag_labels: tag_labels };
   };
 }
 
@@ -75,6 +70,7 @@ const docs = [
   doc('/anicca', [['philosophy', 'An Introduction to Buddhist Philosophy']]),
   // made up, for hyphens the real tags don't have
   doc('/self-view', [['sakkaya-ditthi', 'Sakkāyadiṭṭhi - Self-View']]),
+  doc('/zen', [['zen', 'Mind-to-Mind Transmission']]),
   doc('/hello-world', [['hello--world', 'hello--world']]),
   doc('/hello-good-world', [['hello-good-world', 'hello-good-world']]),
   doc('/edges', [['-left', '-left'], ['right--', 'right--']]),
@@ -82,81 +78,91 @@ const docs = [
 const search = loadSearchWorker(Object.fromEntries(docs));
 
 describe('search_index.js tags', () => {
-  const nibbana = {
+  const nibbana_results = {
+    '/ud1.3': ['<strong>Nibbāna</strong>'],
+    '/after-nibbana': ['<strong>Nibbāna: The Goal of Buddhist Practice</strong>'],
+  };
+  const about_nibbana_results = {
     '/ud1.3': ['<strong>Nibbāna</strong>'],
     '/after-nibbana': ['<strong>Nibbāna</strong>: The Goal of Buddhist Practice'],
     '/mind-stilled': ['<strong>Nibbāna</strong>: The Mind Stilled'],
   };
-  const paliCanon = { '/canon-studies': ['<strong>The Pāli Canon</strong>'] };
-  for (const [name, q, labels] of [
+  const pali_canon_results = { '/canon-studies': ['<strong>The Pāli Canon</strong>'] };
+  for (const [name, q, tag_labels] of [
     ['plain word of an accented title', 'anguttara', { '/tags/an': [], '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
     ['plain words of a title', 'pali canon', {
       '/canon-studies': ['The <strong>Pāli Canon</strong>'],
       '/poems': ['Poetry of the <strong>Pāḷi Canon</strong>'],
     }],
     ['plain raw tag its title lacks', 'emptiness', { '/poems': ['<strong>Śūnyatā</strong>'] }],
-    ['plain word, not whole raw tags', 'nibbana', nibbana],
-    ['tag', 'tag:nibbana', nibbana],
-    ['accented tag', 'tag:nibbāna', nibbana],
-    ['capitalised tag', 'tag:Pali-Canon', paliCanon],
+    ['plain word, not whole raw tags', 'nibbana', about_nibbana_results],
+    ['tag', 'tag:nibbana', nibbana_results],
+    ['accented tag', 'tag:nibbāna', nibbana_results],
+    ['capitalised tag', 'tag:Pali-Canon', pali_canon_results],
     ['tag missing from its title', 'tag:ma', { '/brahmas-invitation': ['<strong>Madhyama Āgama</strong>'] }],
-    ['title word or raw tag', 'tag:an', {
+    ['tag, not title words', 'tag:an', { '/an1.11-20': ['<strong>Aṅguttara Nikāya</strong>'] }],
+    ['tag, not its words', 'tag:pitaka', {}],
+    ['tag, not a title word', 'tag:anguttara', {}],
+    ['hyphenated tag', 'tag:pali-canon', pali_canon_results],
+    ['tag with 2 hyphens', 'tag:nibbana-mind-stilled', { '/mind-stilled': ['<strong>Nibbāna: The Mind Stilled</strong>'] }],
+    ['tag without a page', 'tag:higher-ed', { '/spindle-whorls': ['<strong>higher ed</strong>'] }],
+    ['unstemmed hyphenated tag', 'tag:chinese-religion', { '/daoism': ['<strong>Sinitic Religion</strong>'] }],
+    ['no such tag', 'tag:pali-sutra', {}],
+    ['tag still being typed', 'tag:-', {}],
+    ['title word', 'about:nibbana', about_nibbana_results],
+    ['accented title word', 'about:aṅguttara', { '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
+    ['title word or raw tag', 'about:an', {
       '/an1.11-20': ['<strong>Aṅguttara Nikāya</strong>'],
       '/anicca': ['<strong>An</strong> Introduction to Buddhist Philosophy'],
     }],
-    ['word of a hyphenated tag', 'tag:pitaka', { '/vinaya': ['<strong>The Vinaya</strong>'] }],
-    ['hyphenated tag', 'tag:pali-canon', paliCanon],
-    ['raw tag', 'rawtag:pali-canon', paliCanon],
-    ['raw tag, not title words', 'rawtag:an', { '/an1.11-20': ['<strong>Aṅguttara Nikāya</strong>'] }],
-    ['tag with 2 hyphens', 'tag:nibbana-mind-stilled', { '/mind-stilled': ['<strong>Nibbāna: The Mind Stilled</strong>'] }],
-    ['tag without a page', 'tag:higher-ed', { '/spindle-whorls': ['<strong>higher ed</strong>'] }],
-    ['title word after punctuation', 'tag:therigatha', { '/gotamis-poem': ['Thera/<strong>Therīgāthā</strong>'] }],
-    ['title word before punctuation', 'tag:buddha', { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
-    ['typed apostrophe', "tag:buddha's", { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
-    ['without a tag', 'tag:pali -tag:pali-canon', {
+    ['word of a hyphenated tag', 'about:pitaka', { '/vinaya': ['<strong>The Vinaya</strong>'] }],
+    ['title word after punctuation', 'about:therigatha', { '/gotamis-poem': ['Thera/<strong>Therīgāthā</strong>'] }],
+    ['title word before punctuation', 'about:buddha', { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
+    ['typed apostrophe', "about:buddha's", { '/gotamis-poem': ["<strong>Buddha</strong>'s India"] }],
+    ['without a tag', 'about:pali -tag:pali-canon', {
       '/pali-grammar': ['<strong>Pāli</strong> Grammar'],
       '/poems': ['Poetry of the <strong>Pāḷi</strong> Canon'],
     }],
-    ['without a 2-hyphen tag', 'tag:religion -tag:east-asian-religion', { '/confucianism': ['chinese <strong>religions</strong>'] }],
-    ['unstemmed hyphenated tag', 'rawtag:chinese-religion', { '/daoism': ['<strong>Sinitic Religion</strong>'] }],
-    ['no such tag', 'tag:pali-sutra', {}],
-    ['tag still being typed', 'tag:-', {}],
+    ['without a 2-hyphen tag', 'about:religion -tag:east-asian-religion', { '/confucianism': ['chinese <strong>religions</strong>'] }],
   ]) {
     it(`${name}: ${q}`, () => {
       const r = search(q);
       assert.equal(r.warning, '');
-      assert.deepEqual(r.labels, labels);
+      assert.deepEqual(r.tag_labels, tag_labels);
     });
   }
 
   it('misspelt tag: falls back to fuzzy matches', () => {
     const r = search('tag:nibbna');
     assert.match(r.warning, /Perhaps you meant/);
-    assert.deepEqual(r.labels, nibbana);
+    assert.deepEqual(r.tag_labels, nibbana_results);
   });
 
-  for (const [name, q, labels] of [
-    ['hyphen runs in a raw tag', 'rawtag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
-    ['other words between', 'tag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
-    ['a middle word', 'tag:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
-    ['raw tag edge hyphens', 'rawtag:left tag:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
-    ['word around title hyphens', 'tag:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
-    ['hyphenated title word', 'tag:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
-    ['word of a raw tag', 'tag:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
+  for (const [name, q, tag_labels] of [
+    ['hyphen runs in a raw tag', 'tag:hello-world', { '/hello-world': ['<strong>hello  world</strong>'] }],
+    ['a middle word', 'about:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
+    ['raw tag edge hyphens', 'tag:left about:right', { '/edges': ['<strong> left</strong>', '<strong>right</strong>  '] }],
+    ['word around title hyphens', 'about:self', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self</strong>-View'] }],
+    ['hyphenated title word', 'about:self-view', { '/self-view': ['Sakkāyadiṭṭhi - <strong>Self-View</strong>'] }],
+    ['2-hyphen title word', 'about:mind-to-mind', { '/zen': ['<strong>Mind-to-Mind</strong> Transmission'] }],
+    ['hyphenated title word is no tag', 'tag:self-view', {}],
+    ['word of a raw tag', 'about:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
   ]) {
-    it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', labels: labels }));
+    it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', tag_labels: tag_labels }));
   }
 
-  it('labels every tag: result', () => {
-    for (const w of new Set(docs.flatMap(d => d[1].tags.flatMap(t => t.split('-'))).filter(w => w.length > 2))) {
-      for (const [url, labels] of Object.entries(search('tag:' + w).labels)) assert.ok(labels.length, `tag:${w} ${url}`);
+  it('labels every tag: and about: result', () => {
+    const tags = docs.flatMap(d => d[1].tags);
+    const qs = tags.map(t => 'tag:' + t).concat(tags.flatMap(t => t.split('-')).map(w => 'about:' + w));
+    for (const q of new Set(qs.filter(q => q.length > 8))) {
+      for (const [url, tag_labels] of Object.entries(search(q).tag_labels)) assert.ok(tag_labels.length, `${q} ${url}`);
     }
   });
 
   it('keeps highlights on decomposed titles', () => {
     const r = loadSearchWorker(Object.fromEntries([
       doc('/d', [['vipassana', 'Vipassana\u0304'], ['nibbana', 'Nibbāna: The Goal']]),
-    ]))('tag:goal');
-    assert.deepEqual(r.labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
+    ]))('about:goal');
+    assert.deepEqual(r.tag_labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
   });
 });

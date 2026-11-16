@@ -28,6 +28,14 @@ function getQueryVariable(variable) {
     }
 }
 
+const QMIN = 3;
+function sanitizeQuery(q) {
+    if (!q || typeof q == 'undefined') return '';
+    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
+    if (ret.length < QMIN) return '';
+    return ret;
+}
+
 function UpdateQueryString(key, value, url) {
     value = encodeURIComponent(value);
     if (!url) url = window.location.href;
@@ -88,6 +96,9 @@ var utils = {
     'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""):str; },
     'ascii': /^[ -~]+$/
 };
+// global, so only for matchAll and replace
+const hyphenatedWords = /[\p{L}\p{N}]+(-[\p{L}\p{N}]+)+/gu;
+function spacifyNonAlphanumeric(s) { return s.replace(/[^\p{L}\p{N}]/gu, ' '); }
 
 class Ranges {
     constructor() {
