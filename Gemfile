@@ -9,8 +9,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.4"
-# our sass config needs converter v3.1+ (fatal_deprecations)
-gem "jekyll-sass-converter", ">= 3.1", "< 4.0"
+# fatal_deprecations needs converter v3.1+
+gem "jekyll-sass-converter", ">= 3.1"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
