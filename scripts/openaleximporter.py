@@ -173,7 +173,10 @@ authors:
         else:
             author = f"\"{author}\""
         fd.write(f"  - {author}\n")
-    aslug = get_author_slug(work['authorships'][-1]['author']['display_name'])
+    try:
+      aslug = get_author_slug(work['authorships'][-1]['author']['display_name'])
+    except:
+      aslug = ''
     if len(work['authorships']) == 5 and aslug:
         fd.write(f"  - {aslug}")
     elif len(work['authorships']) >= 5:
