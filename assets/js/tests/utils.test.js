@@ -197,4 +197,8 @@ describe('sanitizeQuery', () => {
   it('keeps the punctuation of fields and tags', () => {
     assert.equal(sanitizeQuery('-tag:breath_geoff, "x"'), '-tag:breath_geoff x');
   });
+
+  it('strips underscores around words', () => {
+    assert.equal(sanitizeQuery('_meditation_ __x'), 'meditation x');
+  });
 });
