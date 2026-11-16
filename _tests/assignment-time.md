@@ -5,6 +5,8 @@ fixtures:
   - { name: "Minutes", content: { minutes: 45, total_mins: 45.0 }, expect: "(45 mins)" }
   - { name: "Singular", content: { minutes: 1, total_mins: 1.0 }, expect: "(1 min)" }
   - { name: "A recording stays exact", content: { minutes: 23, total_mins: 23.0 }, expect: "(23 mins)" }
+  - { name: "A recording rounds to the nearest minute", content: { minutes: 119.5, total_mins: 119.5 }, expect: "(2 hrs)" }
+  - { name: "A recording rounds down to nothing", content: { minutes: 0.3, total_mins: 0.3 }, expect: "" }
   - { name: "Just under an hour", content: { minutes: 59, total_mins: 59.0 }, expect: "(59 mins)" }
   - { name: "An hour", content: { minutes: 60, total_mins: 60.0 }, expect: "(1 hr)" }
   - { name: "An hour and a minute", content: { minutes: 61, total_mins: 61.0 }, expect: "(1 hr 1 min)" }

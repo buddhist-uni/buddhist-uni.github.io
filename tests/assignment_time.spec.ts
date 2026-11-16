@@ -20,7 +20,7 @@ const RECORDED = /^av\/|^canon\/sn22\.86$/;
 const EXACT = /^\((\d+ hrs?( \d+ mins?)?|\d+ mins?)\)$/;
 const ROUGH = /^\(~((5|10|15|20|30|45) mins|1 hr|1\.5 hrs|[2-9] hrs)\)$/;
 
-const boxes =(page: Page) => page.locator('.content_box:not(.with_border)');
+const boxes = (page: Page) => page.locator('.content_box:not(.with_border)');
 const timeOf = (page: Page, contentPath: string) =>
   boxes(page).filter({ has: page.locator(`[data-content-path="${contentPath}"]`) }).locator('.assignment_time');
 
