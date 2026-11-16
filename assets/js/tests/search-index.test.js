@@ -29,17 +29,17 @@ function loadSearchWorker(store) {
     sandbox
   );
 
-  // Sends q as search.js does. Returns the warning and each result's tag labels, in result order.
+  // Sends q as search.js does. Returns the warning and each result's topic labels, in result order.
   return function search(q) {
     let reply = null;
     sandbox.self.postMessage = function (m) { reply = m; };
     sandbox.self.onmessage({ data: { q: sandbox.sanitizeQuery(q), filterquery: '', qt: 0 } });
     assert.ok(reply, 'the worker did not reply');
-    const tag_labels = {};
+    const topic_labels = {};
     for (const li of reply.html.split('<li><h3>').slice(1)) {
-      tag_labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-tag"><\/i> (.*?)<\/span>/g), m => m[1]);
+      topic_labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-tag"><\/i> (.*?)<\/span>/g), m => m[1]);
     }
-    return { warning: reply.warninghtml.replace(/<[^>]+>/g, ''), tag_labels: tag_labels };
+    return { warning: reply.warninghtml.replace(/<[^>]+>/g, ''), topic_labels: topic_labels };
   };
 }
 
@@ -92,7 +92,7 @@ describe('search_index.js tags', () => {
     '/mind-stilled': ['<strong>Nibbāna</strong>: The Mind Stilled'],
   };
   const pali_canon_results = { '/canon-studies': ['<strong>The Pāli Canon</strong>'] };
-  for (const [name, q, tag_labels] of [
+  for (const [name, q, topic_labels] of [
     ['plain word of an accented title', 'anguttara', { '/topics/an': [], '/an1.11-20': ['<strong>Aṅguttara</strong> Nikāya'] }],
     ['plain words of a title', 'pali canon', {
       '/canon-studies': ['The <strong>Pāli Canon</strong>'],
@@ -136,11 +136,11 @@ describe('search_index.js tags', () => {
     it(`${name}: ${q}`, () => {
       const r = search(q);
       assert.equal(r.warning, '');
-      assert.deepEqual(r.tag_labels, tag_labels);
+      assert.deepEqual(r.topic_labels, topic_labels);
     });
   }
 
-  for (const [name, q, tag_labels] of [
+  for (const [name, q, topic_labels] of [
     ['hyphen runs in a tag', 'tag:hello--world', { '/hello-world': ['<strong>hello  world</strong>'] }],
     ['tag, not a tidied one', 'tag:hello-world', {}],
     ['a middle word', 'topic:good', { '/hello-good-world': ['hello <strong>good</strong> world'] }],
@@ -159,14 +159,14 @@ describe('search_index.js tags', () => {
     ['hyphenated title word is no tag', 'tag:self-view', {}],
     ['word of a slug', 'topic:ditthi', { '/self-view': ['<strong>Sakkāyadiṭṭhi - Self-View</strong>'] }],
   ]) {
-    it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', tag_labels: tag_labels }));
+    it(`hyphens, ${name}: ${q}`, () => assert.deepEqual(search(q), { warning: '', topic_labels: topic_labels }));
   }
 
   it('labels every tag: and topic: result', () => {
     const tags = docs.flatMap(d => d[1].tags);
     const qs = tags.map(t => 'tag:' + t).concat(tags.flatMap(t => t.split('-')).map(w => 'topic:' + w));
     for (const q of new Set(qs)) {
-      for (const [url, tag_labels] of Object.entries(search(q).tag_labels)) assert.ok(tag_labels.length, `${q} ${url}`);
+      for (const [url, topic_labels] of Object.entries(search(q).topic_labels)) assert.ok(topic_labels.length, `${q} ${url}`);
     }
   });
 
@@ -174,6 +174,6 @@ describe('search_index.js tags', () => {
     const r = loadSearchWorker(Object.fromEntries([
       doc('/d', [['vipassana', 'Vipassana\u0304'], ['nibbana', 'Nibbāna: The Goal']]),
     ]))('topic:goal');
-    assert.deepEqual(r.tag_labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
+    assert.deepEqual(r.topic_labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
   });
 });
