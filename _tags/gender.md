@@ -10,7 +10,7 @@ expressions, behaviors, and feelings which
 Human [cultures](/topics/culture) then layer on their own beliefs
 and practices to create the messy "trouble" we call "Gender and Sexuality."
 
-This tag, while touching on the biological and medical, primarily focuses on
+This topic, while touching on the biological and medical, primarily focuses on
 the social reality of gender and how Western culture in particular (though
 not exclusively) has constituted the relationship between the sexes, and
 how all of the above is currently evolving.

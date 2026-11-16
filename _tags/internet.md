@@ -10,5 +10,5 @@ Since the proliferation of smartphones and cellular data, most humans on Earth h
 to the net, with an ever-increasing number spending significant time "in cyberspace"
 consuming traditional and [social media](/topics/social-media) or producing "intellectual property."
 
-In this tag, you'll find works primarily discussing the social implications of this major shift
+In this topic, you'll find works primarily discussing the social implications of this major shift
 in communications technologies.

@@ -35,8 +35,8 @@ The usual procedure for ingesting new content is as follows:
 2. That content is then sorted by subject area.
 3. A reviewer then evaluates the pieces in their subject area.
 4. Accepted pieces are moved to the appropriate folders in [the public Google Drive library](https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv) based on what subject they teach. Rejected items are privately archived.
-5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_content) and the (Drive) folder is added as a new "[tag](https://buddhistuniversity.net/topics/)" on the website.
-6. When a tag has a diverse and fairly comprehensive set of works, its contents are reviewed again and organized into [a course syllabus](https://buddhistuniversity.net/courses/).
+5. When a topical folder on Drive has reached a state of maturity, its contents are added one-by-one to [the site's `_content` library](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_content) and the (Drive) folder is added as a new "[topic](https://buddhistuniversity.net/topics/)" on the website.
+6. When a topic has a diverse and fairly comprehensive set of works, its contents are reviewed again and organized into [a course syllabus](https://buddhistuniversity.net/courses/).
 
 ## Inclusion Criteria (ICs)
 
@@ -76,7 +76,7 @@ Rather than a binary "accepted or rejected" status, items in the OBU library are
 
 - Five-star pieces must fail none of the IC categories and must receive strong marks across the board. These are quite rare. They are not identified immediately, but are selected from the pool of recent four-star additions when it comes time to write the next blog post (usually every couple months). Five-star pieces are featured in the newsletter and are recommended for everyone.
 - Four-star pieces fail at most one IC category and receive strong marks in multiple areas. A four-star review means that this piece is highly recommended to anyone interested in the topic and should be added to the website right away unless its IC5 score is particularly low.
-- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been published as a tag. Three-star pieces are recommended for those seriously studying the given topic.
+- Three-star pieces fail at most one IC category and receive strong marks in one or two areas. This is the most common designation for accepted works. They are accepted into the appropriate subfolder on the public-facing Google Drive library and must be added to the site if that folder has already been published as a topic. Three-star pieces are recommended for those seriously studying the given topic.
 - Two-star pieces fail at most one IC category but receive only lackluster scores on the rest. This is the most common score for the items we review. Such pieces are typically not added to the website, though occasionally a borderline rank3 work can be added to the site (especially if it scores well on IC8). Such works are placed in [this Google Drive folder](https://drive.google.com/drive/folders/1Hb3_iSK9ISvY9BbSM-gkjWgKF3eVkiLi) and are labeled "📦 Archived" on the site (see the table below).
 - One-star pieces fail multiple IC categories, or one category very badly, and are never proactively added to the site. Their files are kept in a private archive on Google Drive of rejected works.
 
