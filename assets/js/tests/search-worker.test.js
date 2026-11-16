@@ -450,11 +450,11 @@ describe('handleSearchMessage', () => {
     assert.equal(result.qt, 'test');
   });
 
-  it('sanitizes the query it is given', () => {
+  it('searches the sanitized query and returns it as given', () => {
     const queries = [];
     const result = toLocal(handleSearchMessage({ q: '“Nibbāna?”', filterquery: '', qt: '' }, (q) => { queries.push(q); return []; }));
     assert.equal(queries[0], '+Nibbana');
-    assert.equal(result.q, 'Nibbana');
+    assert.equal(result.q, '“Nibbāna?”');
   });
 
   describe('warnings', () => {

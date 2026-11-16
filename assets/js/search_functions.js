@@ -274,7 +274,7 @@ function handleSearchMessage(data, searchFn) {
     "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
-    "q": q,
+    "q": data.q,
     "filterquery": data.filterquery,
     "qt": data.qt
   };

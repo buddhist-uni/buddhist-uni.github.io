@@ -70,6 +70,7 @@ test('quoted search from the URL warns that quotes are ignored', async ({ page }
   await waitForSearchResults(page);
 
   await expect(page.getByRole('alert')).toContainText('quotation marks were ignored');
+  await expect(page.locator('#search-box')).toHaveValue('"noble truths"');
 });
 
 test('typing quotes shows the quote warning and removing them hides it', async ({ page }) => {
@@ -97,5 +98,5 @@ test('each warning gets its own icon', async ({ page }) => {
   await expect(warnings).toHaveCount(2);
   await expect(warnings.nth(0)).toContainText('quotation marks were ignored');
   await expect(warnings.nth(1)).toContainText('matching all of your terms');
-  await expect(page).toHaveURL(/\?q=this%20is%20an%20exact%20query%20test$/);
+  await expect(page).toHaveURL(/\?q=this%20is%20an%20%22exact%20query%22%20test$/);
 });

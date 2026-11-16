@@ -6,29 +6,41 @@ const path = require('node:path');
 
 const read = (file) => fs.readFileSync(path.join(__dirname, '..', file), 'utf-8');
 
-// Runs search.js against stub elements and a Worker that records its messages
+// Runs search.js against stub elements, timers and history, and a Worker that records its messages
 function loadSearchPage(search = '') {
-  const posted = [];
-  const element = () => ({ style: {}, setAttribute() {}, addEventListener(type, fn) { this[type] = fn; }, blur() {}, focus() {} });
-  const elements = { 'search-box': Object.assign(element(), { value: '' }) };
+  const posted = [], pushed = [], timers = [];
+  const element = () => ({ value: '', style: {}, setAttribute(name, value) { this[name] = value; }, addEventListener(type, fn) { this[type] = fn; }, blur() {}, focus() {} });
+  const elements = {};
   const sandbox = {
-    document: { getElementById: (id) => elements[id] ??= element() },
+    document: { title: 'Search', getElementById: (id) => elements[id] ??= element() },
     location: { search, href: '' },
-    history: { replaceState() {} },
+    history: { replaceState() {}, pushState(state, unused, url) { pushed.push(url); } },
     performance: { now: () => 0 },
-    setTimeout() {},
+    setTimeout(fn) { timers.push(fn); },
     clearTimeout() {},
     Worker: function () { this.postMessage = (message) => posted.push(message); },
   };
   sandbox.window = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(read('utils.js') + read('search.js'), sandbox);
+  const box = elements['search-box'];
   return {
     posted,
+    pushed,
+    box,
+    title: () => sandbox.document.title,
     type(value) {
-      const box = elements['search-box'];
       box.value = value;
       box.input({ target: box });
+    },
+    reply(q) {
+      sandbox.search_worker.onmessage({ data: { q, filterquery: '', warninghtml: '', html: '' } });
+    },
+    back(q) {
+      sandbox.onpopstate({ state: { q, html: '<li></li>' } });
+    },
+    runTimers() {
+      timers.splice(0).forEach((fn) => fn());
     },
   };
 }
@@ -45,11 +57,31 @@ describe('search page', () => {
     const page = loadSearchPage('?q=%E2%80%9Cnoble+truths%E2%80%9D');
     assert.deepEqual(Object.keys(page.posted[0]), ['q', 'filterquery', 'qt']);
     assert.equal(page.posted[0].q, '“noble truths”');
+    assert.equal(page.box.value, '“noble truths”');
   });
 
   it('does not send a query that is too short once sanitized', () => {
     const page = loadSearchPage();
     page.type('"ab"');
     assert.equal(page.posted.length, 0);
+    assert.equal(loadSearchPage('?q=%22ab%22').posted.length, 0);
+  });
+
+  it('registers a reply to the query as typed', () => {
+    const page = loadSearchPage();
+    page.type('"noble truths"');
+    page.reply('"noble truths"');
+    page.runTimers();
+    assert.deepEqual(page.pushed, ['?q=%22noble%20truths%22']);
+    assert.equal(page.title(), '"noble truths" | Search');
+  });
+
+  it('ignores a reply once the box holds something else', () => {
+    const page = loadSearchPage();
+    page.type('"noble truths"');
+    page.reply('"noble truths"');
+    page.back('noble truths');
+    page.runTimers();
+    assert.deepEqual(page.pushed, []);
   });
 });

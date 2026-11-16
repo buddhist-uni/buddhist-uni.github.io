@@ -21,7 +21,8 @@
   const filterDropdown = document.getElementById("search-filter");
 
   // Initialize search box and remember original value
-  var originalSearchTerm = sanitizeQuery(getQueryVariable('q'));
+  const urlQuery = getQueryVariable('q');
+  var originalSearchTerm = sanitizeQuery(urlQuery) ? urlQuery : '';
   searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize filter dropdown and remember original value
@@ -37,7 +38,7 @@
   var checker = setTimeout(checkRunning, CHECKTIME);
 
   function maybeRegisterNavigation() {
-    if (this.q == sanitizeQuery(searchBox.value) && this.filterquery == sanitizeQuery(filterDropdown.value)) {
+    if (this.q == searchBox.value && this.filterquery == filterDropdown.value) {
       clearTimeout(pendingui);
       var nuri = '?q=' + encodeURIComponent(this.q);
       if (this.filterquery !== null && this.filterquery !== '') {
@@ -46,7 +47,7 @@
       setTitle(this.q);
       if (this.q != originalSearchTerm || this.filterquery != originalFilterValue) {
         window.history.pushState(this, "", nuri);
-        if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
+        if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: sanitizeQuery(this.q) });
         originalSearchTerm = this.q;
         originalFilterValue = this.filterquery;
       } else {
@@ -144,7 +145,7 @@
     if (originalSearchTerm) {
       const filterValue = sanitizeQuery(getQueryVariable('filter'));
       const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': getQueryVariable('q'), 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
       running = 1;
     }
     
