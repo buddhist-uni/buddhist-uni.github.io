@@ -71,14 +71,14 @@ for (const q of ['anguttara', 'topic:anguttara', 'topic:aṅguttara']) {
     await waitForSearchResults(page);
 
     await expect(page.getByText('Perhaps you meant')).toHaveCount(0);
-    await expect(page.locator('.Label:has(.fa-tag) strong', { hasText: 'Aṅguttara' }).first()).toBeVisible();
+    await expect(page.locator('.Label:has(.fa-sitemap) strong', { hasText: 'Aṅguttara' }).first()).toBeVisible();
   });
 }
 
 // Each result's topic labels
 function topicLabels(page: Page) {
   return page.locator('#search-results li:has(h3)').evaluateAll(lis =>
-    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-tag)'), l => l.textContent!.trim())));
+    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-sitemap)'), l => l.textContent!.trim())));
 }
 
 for (const [q, titles] of [

@@ -141,7 +141,7 @@ function displaySearchResult(result, item) {
     case 'journals': type = '<i class="fas fa-newspaper"></i> Journal'; break;
     case 'authors': type = '<i class="far fa-address-book"></i> Author'; break;
     case 'publishers': type = '<i class="far fa-building"></i> Publisher'; break;
-    case 'tags': type = '<i class="fas fa-tag"></i> Bibliography'; break;
+    case 'tags': type = '<i class="fas fa-sitemap"></i> Bibliography'; break;
     case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
   }
   var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
@@ -159,7 +159,7 @@ function displaySearchResult(result, item) {
   lc = 0;
   for (var i in item.tagtitles) {
     let title = item.tagtitles[i] == item.tags[i] ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
-    let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
+    let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-sitemap"></i> ' +
       addMatchHighlights(result, title, ['tag', 'topic'], lc, lc + title.length) + '</span>';
     if (t.includes('<strong>')) ret += t;
     lc += 1 + title.length;

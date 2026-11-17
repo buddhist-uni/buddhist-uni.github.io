@@ -21,7 +21,7 @@ The same, great content featured in [the courses](/courses/) along with other re
 You can explore the library by:
 {:.mb-0}
 
-### [<i class="fas fa-tag"></i> Topics](/topics/)
+### [<i class="fas fa-sitemap"></i> Topics](/topics/)
 Find a topic that interests you in the topic index or simply start from the top ([at "_Buddhism_")](/topics/buddhism) and explore the library "room by room" by clicking on the "[Subtopic links](/topics/buddhism#children)" at the bottom of each bibliography. (Note that individual items in the library may appear in multiple bibliographies if they are tagged with multiple subjects.)
 
 ### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})

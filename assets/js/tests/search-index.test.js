@@ -37,7 +37,7 @@ function loadSearchWorker(store) {
     assert.ok(reply, 'the worker did not reply');
     const topic_labels = {};
     for (const li of reply.html.split('<li><h3>').slice(1)) {
-      topic_labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-tag"><\/i> (.*?)<\/span>/g), m => m[1]);
+      topic_labels[/href="([^"]+)"/.exec(li)[1]] = Array.from(li.matchAll(/Label[^"]*"><i class="fas fa-sitemap"><\/i> (.*?)<\/span>/g), m => m[1]);
     }
     return { warning: reply.warninghtml.replace(/<[^>]+>/g, ''), topic_labels: topic_labels };
   };
