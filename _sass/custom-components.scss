@@ -1,5 +1,9 @@
 // Custom components built on top of Primer
 
+@use "primer/labels";
+@use "primer/utilities";
+@use "support" as *;
+
 // Typography
 .no-italic {
     font-style: normal !important;
@@ -20,7 +24,8 @@
 }
 
 .RatingLabel {
-    @extend .IssueLabel, .IssueLabel--big;
+    @extend .Label, .Label--large;
+    border-color: transparent;
     color: white;
     font-family: $ui-font-family;
     font-weight: normal;

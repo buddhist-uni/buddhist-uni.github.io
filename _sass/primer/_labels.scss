@@ -1,0 +1,40 @@
+// Primer 22 dropped these, so they are from 21
+
+.Label {
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    border: 1px solid #d0d7de;
+    border-radius: 2em;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.Label--large {
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 22px;
+}
+
+.Counter {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1F2328;
+    text-align: center;
+    background-color: rgba(175,184,193,0.2);
+    border: 1px solid transparent;
+    border-radius: 2em;
+
+    &:empty {
+        display: none;
+    }
+}

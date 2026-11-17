@@ -1,0 +1,58 @@
+.form-control, .form-select {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2328;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color, background-color, box-shadow, border-color;
+
+    &:focus {
+        border-color: #0969da;
+        outline: none;
+        box-shadow: inset 0 0 0 1px #0969da;
+
+        &:not(:focus-visible) {
+            box-shadow: inset 0 0 0 1px transparent;
+        }
+    }
+
+    // Stops iPhones zooming in on focus
+    @supports (-webkit-touch-callout: none) {
+        font-size: 20px;
+
+        @media (min-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.form-select {
+    display: inline-block;
+}
+
+.input-lg {
+    height: 36px;
+    min-width: 48px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.input-block {
+    display: block;
+    width: 100%;
+}
+
+.input-hide-webkit-autofill::-webkit-contacts-auto-fill-button {
+    position: absolute;
+    right: 0;
+    display: none !important;
+    pointer-events: none;
+    visibility: hidden;
+}
