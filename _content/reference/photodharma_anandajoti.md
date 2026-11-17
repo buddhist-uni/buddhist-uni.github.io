@@ -17,4 +17,4 @@ tags:
 year: 2009
 ---
 
-> Over 15,000 photographs of Buddhist archeological sites, pilgrimage centres, and temples in SE Asia, as well as Videos, Maps, Posters, etc.
+This website is an archive of tens of thousands of Creative Commons-licensed photographs of Buddhist artifacts, archeological sites, temples, pilgrimage centers, maps, and more that Bhante Anandajoti has taken over his decades of travel.

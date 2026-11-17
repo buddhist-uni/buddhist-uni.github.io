@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "support";
+@use "../../_sass/support" as *;
 
 .coursecard {
     margin-bottom: 2rem;

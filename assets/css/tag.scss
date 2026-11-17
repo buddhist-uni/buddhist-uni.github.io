@@ -1,6 +1,6 @@
 ---
 ---
-@import "support";
+@use "../../_sass/support" as *;
 
 .tag_desc {
     font-size: 105%;
