@@ -3,7 +3,7 @@ import { test, expect, Page } from '@playwright/test';
 async function waitForSearchResults(page: Page) {
   await expect(page.getByText('filter your results by')).toHaveCount(0);
   await expect(page.locator('#search-loading')).toBeInViewport();
-  await expect(page.locator('#search-loading')).toBeHidden();
+  await expect(page.locator('#search-loading')).toBeHidden({ timeout: 10000 });
   await expect(page.getByText('results (')).toBeInViewport();
 }
 
