@@ -5,24 +5,24 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { HtmlValidate } = require('html-validate');
 
-const htmlValidate = new HtmlValidate({
-  rules: {
-    'void-style': 'off',
-    'no-trailing-whitespace': 'off',
-    'doctype-html': 'off',
-    'document-structure': 'off',
-    'missing-doctype': 'off',
-    'element-required-content': 'off',
-    'no-raw-characters': 'off',
-  }
-});
+const htmlValidate = new HtmlValidate({ extends: ['html-validate:standard'] });
 
 function assertValidHtml(html, label) {
-  const report = htmlValidate.validateStringSync(`<div>${html}</div>`);
+  const report = htmlValidate.validateStringSync(html);
   assert.ok(report.valid, `${label}: invalid HTML — ${
     report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
   }`);
 }
+
+describe('assertValidHtml', () => {
+  it('rejects misnested tags', () => {
+    assert.throws(() => assertValidHtml('<p>a <strong>b</p>', 'misnested'), /Unclosed element/);
+  });
+
+  it('rejects list items outside a list', () => {
+    assert.throws(() => assertValidHtml('<ul><div><li>a</li></div></ul>', 'list'), /not permitted/);
+  });
+});
 
 // Helper: bring vm-realm objects into the current realm for deepEqual
 function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
