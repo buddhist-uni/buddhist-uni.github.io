@@ -4,6 +4,7 @@ const vm = require('node:vm');
 const fs = require('node:fs');
 const path = require('node:path');
 const { HtmlValidate } = require('html-validate');
+const realLunr = require('../lunr.min.js');
 
 const htmlValidate = new HtmlValidate({
   rules: {
@@ -212,6 +213,19 @@ describe('addMatchHighlights', () => {
     const highlighted = addMatchHighlights(result, 'lo wor', 'content', 3, 9);
     assert.ok(highlighted.includes('<strong>'));
     assertValidHtml(highlighted, 'addMatchHighlights with startindex/endindex');
+  });
+});
+
+describe('highlights after folded letters', () => {
+  it('line up with the original text', () => {
+    const title = 'Straße Æther: Bjørn Þór';
+    const idx = realLunr(function () {
+      this.field('title');
+      this.metadataWhitelist = ['position'];
+      this.add({ id: 1, title: sandbox.utils.unaccented(title) });
+    });
+    const [result] = idx.search('bjorn');
+    assert.equal(addMatchHighlights(result, title, 'title'), 'Straße Æther: <strong>Bjørn</strong> Þór');
   });
 });
 
