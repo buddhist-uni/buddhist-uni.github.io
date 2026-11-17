@@ -62,3 +62,14 @@ test('utilities used in content still apply', async ({ page }) => {
   await page.goto('/library/');
   await expect(page.locator('.pl-4').first()).toHaveCSS('padding-left', '24px');
 });
+
+// purgecss drops the @keyframes nothing uses
+test('loading spinners still spin', async ({ page }) => {
+  await page.goto('/');
+  const animations = await page.evaluate(() => {
+    const icon = document.body.appendChild(document.createElement('i'));
+    icon.className = 'fas fa-spin';
+    return icon.getAnimations().length;
+  });
+  expect(animations).toBe(1);
+});
