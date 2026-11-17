@@ -159,6 +159,6 @@
     console.error(e)
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
-      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
+      '<li class="instructions"><a href="https://www.google.com/search?q=site%3Abuddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();

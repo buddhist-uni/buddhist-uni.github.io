@@ -7,7 +7,7 @@ const path = require('node:path');
 const read = (file) => fs.readFileSync(path.join(__dirname, '..', file), 'utf-8');
 
 // Runs search.js against stub elements, timers and history, and a Worker that records its messages
-function loadSearchPage(search = '') {
+function loadSearchPage(search = '', startWorker = () => {}) {
   const posted = [], pushed = [], replaced = [], searched = [], timers = [];
   const element = () => ({ value: '', style: {}, setAttribute(name, value) { this[name] = value; }, addEventListener(type, fn) { this[type] = fn; }, blur() {}, focus() {} });
   const elements = {};
@@ -19,8 +19,9 @@ function loadSearchPage(search = '') {
     performance: { now: () => 0 },
     setTimeout(fn) { timers.push(fn); },
     clearTimeout() {},
-    Worker: function () { this.postMessage = (message) => posted.push(message); },
+    Worker: function () { startWorker(); this.postMessage = (message) => posted.push(message); },
     URLSearchParams,
+    console: { error() {} },
   };
   sandbox.window = sandbox;
   vm.createContext(sandbox);
@@ -32,6 +33,7 @@ function loadSearchPage(search = '') {
     replaced,
     searched,
     box,
+    results: elements['search-results'],
     title: () => sandbox.document.title,
     type(value) {
       box.value = value;
@@ -122,5 +124,10 @@ describe('search page', () => {
     assert.equal(page.box.value, '"noble truths"');
     assert.equal(page.title(), '"noble truths" | Search');
     assert.deepEqual(page.pushed, []);
+  });
+
+  it('offers a Google search of this site when the worker fails to start', () => {
+    const page = loadSearchPage('?q=nibbana', () => { throw new Error(); });
+    assert.ok(page.results.innerHTML.includes('?q=site%3Abuddhistuniversity.net+nibbana"'));
   });
 });
