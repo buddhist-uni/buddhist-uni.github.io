@@ -78,13 +78,13 @@ for (const q of ['anguttara', 'topic:anguttara', 'topic:aṅguttara']) {
 // Each result's topic labels
 function topicLabels(page: Page) {
   return page.locator('#search-results li:has(h3)').evaluateAll(lis =>
-    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-sitemap)'), l => l.textContent!.trim())));
+    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-tag, .fa-sitemap)'), l => l.textContent!.trim())));
 }
 
-for (const [q, titles] of [
-  ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice']], // tagged, and in the course
-  ['topic:pitaka', ['The Vinaya']], // only a word of the tag vinaya-pitaka
-  ['tag:higher-ed', ['higher ed']], // no topic page
+for (const [q, titles, icon] of [
+  ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice'], 'fa-sitemap'], // tagged, and in the course
+  ['topic:pitaka', ['The Vinaya'], 'fa-sitemap'], // only a word of the tag vinaya-pitaka
+  ['tag:higher-ed', ['higher ed'], 'fa-tag'], // no topic page
 ] as const) {
   test(`${q} labels each result's topics once, by title`, async ({ page }) => {
     await page.goto('/search/?q=' + encodeURIComponent(q));
@@ -93,6 +93,7 @@ for (const [q, titles] of [
     const labels = await topicLabels(page);
     for (const l of labels) expect(l.length > 0 && new Set(l).size == l.length, JSON.stringify(l)).toBe(true);
     for (const t of titles) expect(labels.flat()).toContain(t);
+    await expect(page.locator(`.Label:has(.${icon})`, { hasText: titles[0] }).first()).toBeVisible();
   });
 }
 

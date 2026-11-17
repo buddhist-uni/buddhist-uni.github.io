@@ -158,8 +158,9 @@ function displaySearchResult(result, item) {
     '</span>';
   lc = 0;
   for (var i in item.tagtitles) {
-    let title = item.tagtitles[i] == item.tags[i] ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
-    let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-sitemap"></i> ' +
+    let shadow = item.tagtitles[i] == item.tags[i];
+    let title = shadow ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
+    let t = '<span class="Label ml-1 text-capitalize"><i class="fas ' + (shadow ? 'fa-tag' : 'fa-sitemap') + '"></i> ' +
       addMatchHighlights(result, title, ['tag', 'topic'], lc, lc + title.length) + '</span>';
     if (t.includes('<strong>')) ret += t;
     lc += 1 + title.length;
