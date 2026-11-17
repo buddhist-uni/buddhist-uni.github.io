@@ -20,6 +20,7 @@ function loadSearchPage(search = '') {
     setTimeout(fn) { timers.push(fn); },
     clearTimeout() {},
     Worker: function () { this.postMessage = (message) => posted.push(message); },
+    URLSearchParams,
   };
   sandbox.window = sandbox;
   vm.createContext(sandbox);
@@ -60,6 +61,11 @@ describe('search page', () => {
     const page = loadSearchPage('?q=%E2%80%9Cnoble+truths%E2%80%9D');
     assert.equal(page.posted[0].q, '“noble truths”');
     assert.equal(page.box.value, '“noble truths”');
+  });
+
+  it('survives a malformed query in the URL', () => {
+    assert.equal(loadSearchPage('?q=100%').posted[0].q, '100%');
+    assert.equal(loadSearchPage('?q').posted.length, 0);
   });
 
   it('does not send a query that is too short once sanitized', () => {
