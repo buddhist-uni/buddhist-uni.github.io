@@ -97,6 +97,14 @@ describe('search page', () => {
     assert.deepEqual(page.searched, []);
   });
 
+  it('registers a reply to a filtered query from the URL', () => {
+    const page = loadSearchPage('?q=nibbana&filter=%2Bin%3Acanon');
+    page.reply(page.posted[0].q, page.posted[0].filterquery);
+    page.runTimers();
+    assert.equal(page.replaced.at(-1), '?q=nibbana&filter=%2Bin%3Acanon');
+    assert.deepEqual(page.pushed, []);
+  });
+
   it('ignores a reply for another filter', () => {
     const page = loadSearchPage();
     page.type('noble truths');

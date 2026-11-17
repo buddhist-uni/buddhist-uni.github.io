@@ -26,10 +26,8 @@
   searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize filter dropdown and remember original value
-  var originalFilterValue = sanitizeQuery(getQueryVariable('filter'));
-  if (originalFilterValue !== null && originalFilterValue !== '') {
-    filterDropdown.value = originalFilterValue;
-  }
+  filterDropdown.value = sanitizeQuery(getQueryVariable('filter'));
+  var originalFilterValue = filterDropdown.value;
 
   setTitle(originalSearchTerm);
 
@@ -143,9 +141,7 @@
       }
     }
     if (originalSearchTerm) {
-      const filterValue = sanitizeQuery(getQueryVariable('filter'));
-      const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': originalFilterValue, 'qt': performance.now() });
       running = 1;
     }
     

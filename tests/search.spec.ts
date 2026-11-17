@@ -100,3 +100,19 @@ test('each warning gets its own icon', async ({ page }) => {
   await expect(warnings.nth(1)).toContainText('matching all of your terms');
   await expect(page).toHaveURL(/\?q=this%20is%20an%20%22exact%20query%22%20test$/);
 });
+
+test('filtered search from the URL survives going back to it', async ({ page }) => {
+  await page.goto('/search/?q=nibbana&filter=%2Bin%3Acanon');
+  await waitForSearchResults(page);
+  await expect.poll(() => page.evaluate(() => history.state.filterquery)).toBe('+in:canon');
+
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('kamma');
+  await expect(page).toHaveURL(/\?q=kamma&filter=%2Bin%3Acanon$/);
+
+  await page.goBack();
+  await expect(page).toHaveURL(/\?q=nibbana&filter=%2Bin%3Acanon$/);
+  await expect(searchBox).toHaveValue('nibbana');
+  await expect(page.locator('#search-filter')).toHaveValue('+in:canon');
+  await expect(page.locator('.Counter').first()).toContainText('Canonical Work');
+});
