@@ -186,7 +186,7 @@ function displaySearchResults(results) {
     }
     return ret;
   } else {
-    return applyErrorStyle('<li>No results found</li>', false);
+    return applyErrorStyle('No results found', false);
   }
 }
 
@@ -263,10 +263,10 @@ function applyErrorStyle(message, isWarning) {
   const iconStyle = `color: ${iconColor} !important; flex-shrink: 0; margin-top: 6px;`;
 
   return `
-    <div style="${containerStyle}">
+    <li style="${containerStyle}">
       <i class="${iconClass}" style="${iconStyle}"></i>
       <div>${message}</div>
-    </div>`.trim();
+    </li>`.trim();
 }
 
 function hasDoubleQuotes(q) {
@@ -277,7 +277,7 @@ function handleSearchMessage(data, searchFn) {
   var q = sanitizeQuery(data.q);
   var results = [];
   var warning = "";
-  var quoteWarning = hasDoubleQuotes(data.q) ? "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>" : "";
+  var quoteWarning = hasDoubleQuotes(data.q) ? "<span role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</span>" : "";
   var words = q.trim().split(" ");
 
   for (var i = 0; i < words.length; i++) {
@@ -298,7 +298,7 @@ function handleSearchMessage(data, searchFn) {
   try {
     results = searchFn(query);
     if (!results.length && !suttaUid) {
-      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
+      warning = "<strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:";
       results = searchFn(q.trim());
     }
   } catch (err) {
@@ -311,7 +311,7 @@ function handleSearchMessage(data, searchFn) {
     if (words.find(function (w) { return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
       if (results.length)
-        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
+        warning = "<strong>No results</strong> found for your query. Perhaps you meant:";
       else
         warning = "";
     } else {
@@ -330,7 +330,7 @@ function handleSearchMessage(data, searchFn) {
   var html = displaySearchResults(finalResults);
   var count = finalResults ? finalResults.length : 0;
   if (!count && suttaUid) {
-    warning = "<li>No results found in our library. Showing external results:</li>";
+    warning = "No results found in our library. Showing external results:";
     html = displaySuttaCentralResult(suttaUid);
     count = 1;
   }

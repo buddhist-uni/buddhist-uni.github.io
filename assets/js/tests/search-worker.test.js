@@ -5,23 +5,24 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { HtmlValidate } = require('html-validate');
 
-const htmlValidate = new HtmlValidate({
-  rules: {
-    'void-style': 'off',
-    'no-trailing-whitespace': 'off',
-    'doctype-html': 'off',
-    'document-structure': 'off',
-    'missing-doctype': 'off',
-    'element-required-content': 'off',
-    'no-raw-characters': 'off',
-  }
-});
+const htmlValidate = new HtmlValidate({ extends: ['html-validate:standard'] });
 
 function assertValidHtml(html, label) {
-  const report = htmlValidate.validateStringSync(`<div>${html}</div>`);
-  assert.ok(report.valid, `${label}: invalid HTML — ${report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
-    }`);
+  const report = htmlValidate.validateStringSync(html);
+  assert.ok(report.valid, `${label}: invalid HTML — ${
+    report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
+  }`);
 }
+
+describe('assertValidHtml', () => {
+  it('rejects misnested tags', () => {
+    assert.throws(() => assertValidHtml('<p>a <strong>b</p>', 'misnested'), /Unclosed element/);
+  });
+
+  it('rejects list items outside a list', () => {
+    assert.throws(() => assertValidHtml('<ul><div><li>a</li></div></ul>', 'list'), /not permitted/);
+  });
+});
 
 // Helper: bring vm-realm objects into the current realm for deepEqual
 function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
@@ -475,8 +476,8 @@ describe('handleSearchMessage', () => {
     const anyTerm = () => { let calls = 0; return () => calls++ ? hit : []; };
     const warningFor = (q, searchFn = () => []) =>
       toLocal(handleSearchMessage({ q, filterquery: '', qt: '' }, searchFn)).warninghtml;
-    const quoteWarning = "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>";
-    const anyTermWarning = '<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>';
+    const quoteWarning = "<span role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</span>";
+    const anyTermWarning = '<strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:';
 
     it('shows the exact-phrase warning', () => {
       assert.equal(warningFor('"noble truths"'), applyErrorStyle(quoteWarning, true));
@@ -499,6 +500,7 @@ describe('handleSearchMessage', () => {
 
     it('gives each warning its own icon', () => {
       assert.equal(warningFor('"noble truths"', anyTerm()), applyErrorStyle(quoteWarning, true) + applyErrorStyle(anyTermWarning, true));
+      assertValidHtml(`<ul>${warningFor('"noble truths"', anyTerm())}</ul>`, 'two warnings');
     });
 
     it('keeps the quote warning when only the fuzzy retry finds results', () => {
@@ -514,6 +516,7 @@ describe('handleSearchMessage', () => {
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.count, 0);
     assert.ok(result.html.includes('No results found'));
+    assertValidHtml(`<ul>${result.html}</ul>`, 'no results');
   });
 
   it('prefixes non-stop words with + for required matching', () => {
@@ -594,6 +597,7 @@ describe('handleSearchMessage', () => {
     const data = { q: 'test', filterquery: 'filter:tag', qt: '' };
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.count, 1);
+    assertValidHtml(`<ul>${result.html}</ul>`, 'filtered results');
     // Clean up store
     vm.runInContext('delete store["a"]; delete store["b"];', sandbox);
   });
@@ -646,7 +650,7 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     assert.equal(result.count, 1);
     assert.ok(result.warninghtml.includes('No results'));
     assert.equal(fuzzyQueries, 0, 'should not fall back to fuzzy suggestions');
-    assertValidHtml(result.html, 'SuttaCentral result');
+    assertValidHtml(`<ul>${result.html}</ul>`, 'SuttaCentral result');
   });
 
   it('keeps library results when the index finds the sutta', () => {
