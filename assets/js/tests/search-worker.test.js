@@ -74,6 +74,7 @@ vm.runInContext(
   'this.applyErrorStyle = applyErrorStyle; \n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.suttaCentralUid = suttaCentralUid;\n' +
+  'this.resultsIncludeSutta = resultsIncludeSutta;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
@@ -81,7 +82,7 @@ vm.runInContext(
 const {
   categoryName, getPositions, resultMatched,
   addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
-  suttaCentralUid
+  suttaCentralUid, resultsIncludeSutta
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -640,6 +641,35 @@ describe('suttaCentralUid', () => {
   });
 });
 
+describe('resultsIncludeSutta', () => {
+  const canon = (title) => ({ type: 'content', category: 'canon', title });
+  const check = (items, uid) => {
+    const saved = sandbox.store;
+    sandbox.store = Object.fromEntries(items.map((item, i) => [`r${i}`, item]));
+    try {
+      return resultsIncludeSutta(items.map((item, i) => ({ ref: `r${i}` })), uid);
+    } finally {
+      sandbox.store = saved;
+    }
+  };
+
+  it('finds the sutta itself or a range of suttas that includes it', () => {
+    assert.equal(check([canon('MN 4 Bhayabherava Sutta: Fear and Dread')], 'mn4'), true);
+    assert.equal(check([canon('MN 4: Fear and Dread')], 'mn4'), true);
+    assert.equal(check([canon('AN 1.11–20 Nīvaraṇappahāna Vagga')], 'an1.15'), true);
+    assert.equal(check([canon('Dhp 1–20 Yamaka Vagga: Dichotomies')], 'dhp5'), true);
+    assert.equal(check([canon('Snp 1.8 Metta Sutta')], 'snp1.8'), true);
+  });
+
+  it('ignores other suttas, other books and things that are not suttas', () => {
+    assert.equal(check([canon('MN 40 Cūḷa-Assapura Sutta')], 'mn4'), false);
+    assert.equal(check([canon('AN 1.11–20 Nīvaraṇappahāna Vagga')], 'an1.21'), false);
+    assert.equal(check([canon('AN 2.15 Adhikaraṇa Vagga')], 'an1.15'), false);
+    assert.equal(check([canon('SN 1.1 Ogha Sutta')], 'snp1.1'), false);
+    assert.equal(check([{ type: 'content', category: 'articles', title: 'MN 4 and fear' }], 'mn4'), false);
+  });
+});
+
 describe('handleSearchMessage SuttaCentral fallback', () => {
   it('links to SuttaCentral when the index has no results for a sutta reference', () => {
     let fuzzyQueries = 0;
@@ -694,6 +724,36 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
       const result = toLocal(handleSearchMessage({ q: query, filterquery: '', qt: '' }, () => []));
       assert.ok(result.html.includes(`href="https://suttacentral.net/${uid}/en/sujato"`), query);
       assert.ok(result.html.includes(`data-scid="${uid}"`), query);
+    }
+  });
+
+  it('puts SuttaCentral first when the library only has other things about the sutta', () => {
+    const saved = sandbox.store;
+    vm.runInContext('store = { craving: { type: "content", category: "articles", url: "/content/articles/craving", title: "On Craving and MN 37", authors: [], description: "An essay.", content: "" } };', sandbox);
+    try {
+      const mockSearch = (q) => q === '+mn +37' ? [{ ref: 'craving', score: 1, matchData: { metadata: {} } }] : [];
+      const result = toLocal(handleSearchMessage({ q: 'MN 37', filterquery: '', qt: '' }, mockSearch));
+      assert.ok(result.html.includes('/content/articles/craving'));
+      assert.ok(result.html.indexOf('href="https://suttacentral.net/mn37/en/sujato"') >= 0);
+      assert.ok(result.html.indexOf('suttacentral.net/mn37') < result.html.indexOf('/content/articles/craving'));
+      assert.equal(result.count, 2);
+      assert.equal(result.warninghtml, '');
+      assertValidHtml(`<ul>${result.html}</ul>`, 'SuttaCentral and library results');
+    } finally {
+      sandbox.store = saved;
+    }
+  });
+
+  it('does not add SuttaCentral when a range text in the library includes the sutta', () => {
+    const saved = sandbox.store;
+    vm.runInContext('store = { an111: { type: "content", category: "canon", url: "/content/canon/an1.11-20", title: "AN 1.11–20 Nīvaraṇappahāna Vagga: The Chapter on Giving Up the Hindrances", authors: [], description: "", content: "" } };', sandbox);
+    try {
+      const result = toLocal(handleSearchMessage({ q: 'AN 1.15', filterquery: '', qt: '' }, () => [{ ref: 'an111', score: 1, matchData: { metadata: {} } }]));
+      assert.ok(result.html.includes('/content/canon/an1.11-20'));
+      assert.ok(!result.html.includes('suttacentral.net'));
+      assert.equal(result.count, 1);
+    } finally {
+      sandbox.store = saved;
     }
   });
 

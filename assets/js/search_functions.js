@@ -247,6 +247,31 @@ function splitSuttaCentralUid(uid) {
   return [book, uid.substring(book.length)];
 }
 
+// True if one of the results is that sutta from our library, or a range of suttas that
+// includes it, going by the reference its title starts with: "MN 4 ...", "AN 1.11–20 ..." or
+// "Dhp 1–20 ..." (for Dhp 5).
+function resultsIncludeSutta(results, uid) {
+  var parts = uid.match(/^([a-z]+)(\d+)(?:\.(\d+))?$/);
+  var hasChapters = parts[3] !== undefined;
+  var chapter = parseInt(parts[2], 10);
+  var number = hasChapters ? parseInt(parts[3], 10) : chapter;
+  return results.some(function (result) {
+    var item = store[result.ref];
+    if (!item || item.category !== 'canon') return false;
+    var m = (item.title || '').toLowerCase().match(/^\s*(dn|mn|sn|an|dhp|iti|snp|thag|thig|ud)\s*(\d+)(?:[.:](\d+))?(?:\s*[–-]\s*(\d+))?/);
+    if (!m || m[1] !== parts[1]) return false;
+    var first;
+    if (hasChapters) {
+      if (m[3] === undefined || parseInt(m[2], 10) !== chapter) return false;
+      first = parseInt(m[3], 10);
+    } else {
+      first = parseInt(m[2], 10);
+    }
+    var last = m[4] === undefined ? first : parseInt(m[4], 10);
+    return number >= first && number <= last;
+  });
+}
+
 // Links to Bhikkhu Sujato's translation: SuttaCentral has it for every sutta and verse above,
 // including those inside a range text, like Dhp 5 in Dhp 1–20. search.js switches the link
 // to Bhikkhu Bodhi's translation when SuttaCentral has one.
@@ -332,10 +357,15 @@ function handleSearchMessage(data, searchFn) {
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
   var html = displaySearchResults(finalResults);
   var count = finalResults ? finalResults.length : 0;
-  if (!count && suttaUid) {
-    warning = "No results found in our library. Showing external results:";
-    html = displaySuttaCentralResult(suttaUid);
-    count = 1;
+  if (suttaUid && !resultsIncludeSutta(finalResults || [], suttaUid)) {
+    if (count) {
+      // We have other things that mention it, but not the sutta itself
+      html = displaySuttaCentralResult(suttaUid) + html;
+    } else {
+      warning = "No results found in our library. Showing external results:";
+      html = displaySuttaCentralResult(suttaUid);
+    }
+    count += 1;
   }
   return {
     "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
