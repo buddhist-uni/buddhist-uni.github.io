@@ -247,10 +247,13 @@ function splitSuttaCentralUid(uid) {
   return [book, uid.substring(book.length)];
 }
 
+// Links to Bhikkhu Sujato's translation: SuttaCentral has it for every sutta and verse above,
+// including those inside a range text, like Dhp 5 in Dhp 1–20. search.js switches the link
+// to Bhikkhu Bodhi's translation when SuttaCentral has one.
 function displaySuttaCentralResult(uid) {
   var parts = splitSuttaCentralUid(uid);
   var title = SC_BOOK_ABBREVIATIONS[parts[0]] + ' ' + parts[1];
-  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="https://suttacentral.net/' + uid + '/en/bodhi">' + title + ' ...</a></h3>' +
+  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="https://suttacentral.net/' + uid + '/en/sujato">' + title + ' ...</a></h3>' +
     '<span class="Counter">' + categoryName('canon') + '</span> ' +
     '<span class="Counter">🌼 SuttaCentral</span>' +
     '<p id="sc-direct-link-blurb" data-scid="' + uid + '">We don\'t have this sutta in our library yet, but you can find it on SuttaCentral.</p></li>';

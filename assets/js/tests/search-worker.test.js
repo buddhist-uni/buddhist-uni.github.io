@@ -645,7 +645,7 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     let fuzzyQueries = 0;
     const mockSearch = (q) => { if (q.includes('~')) fuzzyQueries++; return []; };
     const result = toLocal(handleSearchMessage({ q: 'MN 4', filterquery: '', qt: '' }, mockSearch));
-    assert.ok(result.html.includes('href="https://suttacentral.net/mn4/en/bodhi"'));
+    assert.ok(result.html.includes('href="https://suttacentral.net/mn4/en/sujato"'));
     assert.ok(result.html.includes('MN 4'));
     assert.equal(result.count, 1);
     assert.ok(result.warninghtml.includes('No results'));
@@ -682,9 +682,19 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     const mockSearch = (q) => { queries.push(q); return q.startsWith('+') ? [] : anyTerm; };
     const result = toLocal(handleSearchMessage({ q: 'AN 4.783', filterquery: '', qt: '' }, mockSearch));
     assert.deepEqual(queries, ['+an +4.783']);
-    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783/en/bodhi"'));
+    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783/en/sujato"'));
     assert.ok(result.html.includes('AN 4.783'));
     assert.equal(result.count, 1);
+  });
+
+  it('links verses and suttas inside a range text to their English translation', () => {
+    // SuttaCentral keeps these inside texts like dhp1-20 and sn35.198-200, so a link to
+    // Bhikkhu Bodhi's translation would open the Pali, but Bhikkhu Sujato's opens the verse or sutta
+    for (const [query, uid] of [['Dhp 5', 'dhp5'], ['SN 35.200', 'sn35.200'], ['AN 1.15', 'an1.15']]) {
+      const result = toLocal(handleSearchMessage({ q: query, filterquery: '', qt: '' }, () => []));
+      assert.ok(result.html.includes(`href="https://suttacentral.net/${uid}/en/sujato"`), query);
+      assert.ok(result.html.includes(`data-scid="${uid}"`), query);
+    }
   });
 
   it('does not link to SuttaCentral for references to suttas that do not exist', () => {
