@@ -257,21 +257,28 @@ function displaySuttaCentralResult(uid) {
 }
 
 function applyErrorStyle(message, isWarning) {
-  if (isWarning) {
-    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
-    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i>'
-    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
-  } else {
-    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
-    const icon = '<i class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important; margin-right: 15px; margin-left: 5px"></i>'
-    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
-  }
+  const iconClass = isWarning ? "fa-solid fa-triangle-exclamation" : "fa-regular fa-circle-question";
+  const iconColor = isWarning ? "rgb(207, 182, 45)" : "rgb(21, 125, 194)";
+  const containerStyle = "display: flex; justify-content: flex-start; align-items: flex-start; gap: 8px;";
+  const iconStyle = `color: ${iconColor} !important; flex-shrink: 0; margin-top: 6px;`;
+
+  return `
+    <div style="${containerStyle}">
+      <i class="${iconClass}" style="${iconStyle}"></i>
+      <div>${message}</div>
+    </div>`.trim();
+}
+
+function hasDoubleQuotes(q) {
+  return /["“”„‟«»＂〝〞〟″「」『』]/.test(q);
 }
 
 function handleSearchMessage(data, searchFn) {
+  var q = sanitizeQuery(data.q);
   var results = [];
   var warning = "";
-  var words = data.q.trim().split(" ");
+  var quoteWarning = hasDoubleQuotes(data.q) ? "<li role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</li>" : "";
+  var words = q.trim().split(" ");
 
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
@@ -282,7 +289,7 @@ function handleSearchMessage(data, searchFn) {
     }
   }
   var query = words.join(' ').trim();
-  var suttaUid = suttaCentralUid(data.q);
+  var suttaUid = suttaCentralUid(q);
   if (suttaUid) {
     // Look for that exact sutta, rather than for anything in the same book
     var suttaParts = splitSuttaCentralUid(suttaUid);
@@ -292,15 +299,15 @@ function handleSearchMessage(data, searchFn) {
     results = searchFn(query);
     if (!results.length && !suttaUid) {
       warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-      results = searchFn(data.q.trim());
+      results = searchFn(q.trim());
     }
   } catch (err) {
     if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-      results = searchFn(data.q.replaceAll(":", " "));
+      results = searchFn(q.replaceAll(":", " "));
     } else { throw err; }
   }
   if (!results.length && !suttaUid) {
-    words = data.q.trim().split(" ");
+    words = q.trim().split(" ");
     if (words.find(function (w) { return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
       if (results.length)
@@ -319,7 +326,7 @@ function handleSearchMessage(data, searchFn) {
       });
     });
   }
-  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+  finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
   var html = displaySearchResults(finalResults);
   var count = finalResults ? finalResults.length : 0;
   if (!count && suttaUid) {
@@ -328,7 +335,7 @@ function handleSearchMessage(data, searchFn) {
     count = 1;
   }
   return {
-    "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
+    "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
     "html": html,
     "count": count,
     "q": data.q,
