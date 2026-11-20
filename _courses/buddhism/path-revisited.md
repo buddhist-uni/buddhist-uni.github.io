@@ -8,13 +8,13 @@ order: 11
 
 # Readings
 
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb='
 We return to mindfulness now after having thoroughly covered the previous steps of the Noble Eightfold Path.
 As you read, reflect on how your understanding of "mindfulness" has changed (if at all) since [our second module](/courses/buddhism/mindfulness).
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 4 introduces the Four "Divine Abidings"—the mature emotions of a wise and compassionate person.
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='Chapter 4 introduces the Four "Divine Abidings"—the mature emotions of a wise and compassionate person.
 ' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We continue with Chapters 37–38, which cover the story of two of the Buddha's disciples who were able to change their ways.
 " %}
 {% include content_blurb.html category="canon" slug="sn45.8" blurb="

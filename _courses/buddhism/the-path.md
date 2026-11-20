@@ -10,20 +10,20 @@ order: 6
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We continue the Buddha's biography, reading Chapters 14–17 on the Buddha-to-be's wanderings in search of the path.
 " %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='
 Let us skip ahead here to Chapter 12 on the Four Noble Truths and the Noble Eightfold Path.
 ' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb="
 This module, we finally begin Bhikkhu Bodhi's book on the Buddha's teachings, starting with Chapter 1, where he discusses the character of the Buddhist path to awakening.
 " %}
 {% include content_blurb.html category="canon" slug="an8.53" blurb='
 In this story from the Buddhist canon, the Buddha teaches a nun which character traits the practice should produce when followed correctly—an important compass to guide our understanding and spiritual efforts.
 Read it carefully. Do any of the "bad" qualities surprise you?
 ' %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" notime=true blurb="
 And [Chapter 5](https://www.buddhanet.net/fundbud6) of *Fundamentals* covers Buddhist morality, the cornerstone of the path.
 " %}
 

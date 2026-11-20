@@ -1,0 +1,20 @@
+{%- if include.enabled -%}{%- unless include.notime or include.content.pages contains "," -%}
+{%- assign m = include.content.total_mins -%}
+{%- if include.content.minutes -%}{%- assign m = m | round -%}{%- endif -%}
+{%- if m > 0 -%}
+{{ " " }}<span class="assignment_time">(
+{%- if include.content.minutes -%}
+{%- assign h = m | divided_by: 60 -%}
+{%- assign r = m | modulo: 60 -%}
+{% if h > 0 %}{{ h }} hr{% if h > 1 %}s{% endif %}{% endif %}{% if h > 0 and r > 0 %}{{ " " }}{% endif %}{% if r > 0 %}{{ r }} min{% if r != 1 %}s{% endif %}{% endif %}
+{%- else -%}
+{%- comment %}A reading estimate rounds up to the next step, unless it is within 10% of the one below{% endcomment -%}
+{%- assign steps = "5,10,15,20,30,45,60,90" | split: "," -%}
+{%- assign x = m | divided_by: 1.1 -%}
+{%- assign s = x | divided_by: 60 | ceil | times: 60 -%}
+{%- for step in steps -%}{%- assign n = step | plus: 0 -%}{%- if x <= n -%}{%- assign s = n -%}{%- break -%}{%- endif -%}{%- endfor -%}
+~{% if s < 60 %}{{ s }} mins{% elsif s == 90 %}1.5 hrs{% else %}{{ s | divided_by: 60 }} hr{% if s > 60 %}s{% endif %}{% endif %}
+{%- endif -%}
+)</span>
+{%- endif -%}
+{%- endunless -%}{%- endif -%}

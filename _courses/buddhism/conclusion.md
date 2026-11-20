@@ -8,10 +8,10 @@ order: 14
 
 ## Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We finish the Buddha's Biography with Chapters 47–48: his final teachings.
 " %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='Chapter 13 sees this final chapter not as an "end," but as "a new beginning."' %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='Chapter 13 sees this final chapter not as an "end," but as "a new beginning."' %}
 {% include content_blurb.html category="articles" slug="buddhism-and-modernity_powers-doug" blurb='
 Individualism, science, freedom, and morality are four big, contemporary conversations to which Buddhism has much to contribute.
 ' %}

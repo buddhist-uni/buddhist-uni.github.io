@@ -8,10 +8,10 @@ order: 7
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We continue with Chapters 18–21 on the Buddha's Enlightenment." %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='The main reading for this lesson is Chapter 7 of _Being Nobody_: "Karma and Rebirth"' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='The main reading for this lesson is Chapter 7 of _Being Nobody_: "Karma and Rebirth"' %}
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb="
 And we continue with Chapter 2 of *Path*, which explains why Karma is important to the Buddhist training." %}
 {% include content_blurb.html category="canon" slug="sn22.86" blurb="
 We've been reading the Buddha's biography, but who was the Buddha in his own words?
@@ -20,7 +20,7 @@ In this story, he calls himself the “Tathagata” or “Truth-Arriver”, and 
 The Buddha explains that he doesn't talk in such terms, as he has overcome all such notions as “I am the body” or “I am the mind,” so how could such a question ever be answered? He ends the discourse by famously saying that all he teaches is suffering and its cessation, thus redirecting our attention from empty philosophical musings to the things that matter most." %}
 
 (**Optional Reading**)
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" notime=true blurb="
 *Fundamentals* chapters [eight](https://www.buddhanet.net/fundbud9) and [nine](https://www.buddhanet.net/funbud10) are also on Karma and Rebirth.
 " %}
 

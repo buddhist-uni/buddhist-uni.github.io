@@ -8,7 +8,7 @@ order: 10
 
 ## Assigned Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" notime=true blurb="
 We continue with Chapters 32–36, on how the Buddha's community grew under his leadership.
 " %}
 
@@ -25,10 +25,10 @@ after the Buddha but before Buddhism split into different schools.
 </details>
 " %}
 
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" notime=true blurb='
 Chapter 6: "The Five Hindrances" introduces us to the primary obstacles to mental clarity in our meditation (and in life).
 ' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" notime=true blurb='
 Feel free to skip Chapter 4 on Buddhist Ethics, which we discussed already in [lesson 7](/courses/buddhism/the-path). Chapter 5 is our main reading for this module, introducing "Right Effort."
 ' %}
 
