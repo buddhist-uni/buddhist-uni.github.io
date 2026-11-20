@@ -242,15 +242,25 @@ authors:
       fd.write(f"month: {MONTHS[int(work['publication_date'][5:7])-1]}\n")
     except TypeError:
       pass
+
     try:
-      venue = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
+      journal_name = title_case(work['primary_location']['source']['display_name'].replace('"', "\\\""))
     except (TypeError, KeyError, AttributeError):
-      venue = ""
+      journal_name = ""
     journal = ""
     if category == 'monographs':
         fd.write("olid: \n")
-    elif category in ('excerpts', 'papers'):
-        fd.write(f"booktitle: \"{venue}\"\n")
+    elif category == 'papers':
+      if 'parent_works' in work and len(work['parent_works']) > 0:
+        if len(work['parent_works']) > 1:
+           pwork = radio_dial([pwork['display_name'] for pwork in work['parent_works']])
+           pwork = work['parent_works'][pwork]
+        else:
+           pwork = work['parent_works'][0]
+        fd.write(f"booktitle: \"{pwork['display_name']}\"\n")
+        fd.write(f"from_book_openalexid: {pwork['id']}\n")
+      else:
+         fd.write("booktitle: \"\"\n")
     elif category == 'articles':
         try:
           journal = work['primary_location']['source']['id']
@@ -261,7 +271,7 @@ authors:
         if journal and journal in journals.slugs:
           journal = journals.slugs[journal]
         else:
-          journal = f"\"{venue}\""
+          journal = f"\"{journal_name}\""
         fd.write(f"journal: {journal}\n")
         if not work['biblio']['volume'] and not work['biblio']['issue']:
             fd.write("volume: \nnumber: \n")
@@ -271,13 +281,13 @@ authors:
       if publisherid in publishers.slugs:
         fd.write(f"publisher: {publishers.slugs[publisherid]}\n")
       else:
-        fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")
-    elif category in ('monographs', 'excerpts', 'papers'):
-        fd.write("publisher: \"\"\n")
+        fd.write(f"publisher: \"{title_case(work['primary_location']['source']['host_organization_name'])}\"\n")  
+    
     if publisherid == publishers.SPRINGER_NATURE: # Nature and SBM have different addresses, but for simplicity we combine both imprints into a single publisher
        fd.write("address: \"Netherlands\"\n")
-    elif category in ('monographs', 'excerpts'):
+    elif category in ('monographs', 'excerpts') and publisherid not in publishers.slugs:
         fd.write("address: \"\"\n")
+
     if work['biblio']['volume']:
         fd.write(f"volume: {work['biblio']['volume']}\n")
     if work['biblio']['issue']:
@@ -299,6 +309,7 @@ authors:
         elif category in ('articles', 'papers', 'excerpts'):
             fd.write("pages: \"--\"\n")
     fd.write(f"openalexid: {work['id'].split('/')[-1]}\n---\n\n>")
+    # End frontmatter
     abstract = deque(invert_inverted_index(work['abstract_inverted_index']))
     line_len = 1
     while len(abstract) > 0:

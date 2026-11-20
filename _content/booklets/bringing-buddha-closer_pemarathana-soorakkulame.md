@@ -9,6 +9,7 @@ drive_links:
 course: sri-lankan-roots
 tags:
   - modern
+  - puja
 year: 2017
 month: jun
 publisher: "University of Pittsburgh"
