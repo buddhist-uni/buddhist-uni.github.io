@@ -39,7 +39,7 @@ This includes adding all the `course: {{ tag }}` content.
 
 Steps needed to accomplish this:
   - [x] Add the tag as a draft to [_tags/](https://github.com/buddhist-uni/buddhist-uni.github.io/tree/main/_tags)
-    - Done! See **the draft tag [here](https://buddhistuniversity.net/tags/{{ tag }})**
+    - Done! See **the draft tag [here](https://buddhistuniversity.net/topics/{{ tag }})**
   - [x] Add suttas from the folder to the site
   - [x] Add OpenAlex academic articles in the folder to the site
   - [ ] Add all other content from the public drive folder

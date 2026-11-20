@@ -15,7 +15,7 @@
     {%- for candidatetag in site.tags -%}
       {%- if candidatetag.slug == include.item.course -%}
         {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
-          <i class="fas fa-tag"></i>
+          <i class="fas fa-sitemap"></i>
           {{ candidatetag.title | escape }}
         </a>{%- endcapture -%}
         {%- assign ordinality = forloop.index | plus: site.courses.size -%}
@@ -28,7 +28,7 @@
   {%- for candidatetag in site.tags -%}
     {%- if include.item.tags contains candidatetag.slug -%}
       {%- capture primarytag -%}<a href="{{ candidatetag.url }}">
-        <i class="fas fa-tag"></i>
+        <i class="fas fa-sitemap"></i>
         {{ candidatetag.title | escape }}
       </a>{%- endcapture -%}
       {%- assign ordinality = forloop.index | plus: site.courses.size -%}

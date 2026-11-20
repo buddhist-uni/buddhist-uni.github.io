@@ -32,7 +32,7 @@ layout: default
     {% assign tags = tags | push: taglink %}
   {% endif %}
 {% endfor %}
-{% if tags.size > 0 %}<p class="content_tags">Tags: {{ tags | array_to_sentence_string }}.</p>{% endif %}
+{% if tags.size > 0 %}<p class="content_tags">Topics: {{ tags | array_to_sentence_string }}.</p>{% endif %}
   </div>
 
 </article>

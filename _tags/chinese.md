@@ -5,4 +5,4 @@ parents: [east-asian]
 hashtag: china
 ---
 
-For medieval Chinese Buddhism, see [Chan Roots](/tags/east-asian-roots).
+For medieval Chinese Buddhism, see [Chan Roots](/topics/east-asian-roots).

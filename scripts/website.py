@@ -93,7 +93,7 @@ class AuthorCollection():
 class TagFile(JekyllFile):
   def __init__(self, fd: Path, content, handler=None, **kwargs) -> None:
     super().__init__(fd, content, handler, **kwargs)
-    self.url = "/tags/" + fd.stem
+    self.url = "/topics/" + fd.stem
 
 class DataCollection():
   def __init__(self) -> None:

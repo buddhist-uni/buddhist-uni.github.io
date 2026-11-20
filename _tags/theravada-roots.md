@@ -22,4 +22,4 @@ image_center_x: 40%
 image_center_y: 45%
 ---
 
-From the splitting of Buddhism into [various pre-Mahayana sects](/tags/sects) until the modern period.
+From the splitting of Buddhism into [various pre-Mahayana sects](/topics/sects) until the modern period.

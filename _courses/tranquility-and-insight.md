@@ -42,7 +42,7 @@ So, as with mindfulness itself, we have to start where we are. We use whatever t
 
 ## Prerequisites
 
-This course assumes a familiarity with [meditation](/tags/meditation) and [the Pāli Canon](/courses/ebts). Prior knowledge of [the Āgamas](/tags/agama) or [Chinese](/courses/chinese-primer) is not required.
+This course assumes a familiarity with [meditation](/topics/meditation) and [the Pāli Canon](/courses/ebts). Prior knowledge of [the Āgamas](/topics/agama) or [Chinese](/courses/chinese-primer) is not required.
 
 ## Lectures
 

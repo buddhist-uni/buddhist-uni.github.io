@@ -25,5 +25,5 @@ big_width: 2048
 big_height: 1308
 ---
 
-Even setting aside [The Buddha](/tags/buddha) himself, the Early Buddhist Texts are full of fascinating and compelling characters.
+Even setting aside [The Buddha](/topics/buddha) himself, the Early Buddhist Texts are full of fascinating and compelling characters.
 
