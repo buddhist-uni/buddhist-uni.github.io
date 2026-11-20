@@ -240,7 +240,7 @@ function normalizeQuery(q) {
   }).filter(Boolean).join(' ');
 }
 
-// Plain terms skip the whole tags, which only tag: searches
+// Plain terms skip the whole slugs, which only tag: searches
 function searchIndex(idx, q) {
   q = normalizeQuery(q);
   return q ? idx.query(function (query) {

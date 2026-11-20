@@ -10,7 +10,7 @@ layout: default
 {%- for t in tagslugs -%}
     {%- assign tag = site.tags | where: "status", "published" | find: "slug", t -%}
     {%- if tag -%}
-        {%- capture taglink -%}<a class="TagLabel" href="{{ tag.url }}"><i class="fas fa-sitemap"></i> {{ tag.title }}</a>{%- endcapture -%}
+        {%- capture taglink -%}<a class="TagLabel" href="{{ tag.url }}">{{ tag.title }}</a>{%- endcapture -%}
         {%- assign tags = tags | push: taglink -%}
     {%- endif -%}
 {%- endfor -%}

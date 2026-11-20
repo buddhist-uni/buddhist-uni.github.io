@@ -43,7 +43,7 @@ function loadSearchWorker(store) {
   };
 }
 
-// A store entry with its [tag, title] pairs
+// A store entry with its [slug, title] pairs
 function doc(url, tags, fields) {
   return [url, Object.assign({
     type: 'content', url: url, title: '', tags: tags.map(t => t[0]), tagtitles: tags.map(t => t[1]),

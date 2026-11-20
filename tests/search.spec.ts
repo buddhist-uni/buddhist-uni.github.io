@@ -83,7 +83,7 @@ function topicLabels(page: Page) {
 
 for (const [q, titles, icon] of [
   ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice'], 'fa-sitemap'], // tagged, and in the course
-  ['topic:pitaka', ['The Vinaya'], 'fa-sitemap'], // only a word of the tag vinaya-pitaka
+  ['topic:pitaka', ['The Vinaya'], 'fa-sitemap'], // only a word of the slug vinaya-pitaka
   ['tag:higher-ed', ['higher ed'], 'fa-tag'], // no topic page
 ] as const) {
   test(`${q} labels each result's topics once, by title`, async ({ page }) => {
