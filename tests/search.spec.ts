@@ -90,7 +90,7 @@ test('typing quotes shows the quote warning and removing them hides it', async (
 test('each warning gets its own icon', async ({ page }) => {
   await page.goto('/search/?q=this+is+a+exact+query+test');
   await waitForSearchResults(page);
-  const warnings = page.locator('#search-results > div', { has: page.locator('.fa-triangle-exclamation') });
+  const warnings = page.locator('#search-results > li', { has: page.locator('.fa-triangle-exclamation') });
   await expect(warnings).toHaveCount(1);
   await expect(warnings).toContainText('matching all of your terms');
 

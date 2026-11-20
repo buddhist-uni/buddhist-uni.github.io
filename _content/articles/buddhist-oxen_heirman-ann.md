@@ -8,7 +8,7 @@ drive_links:
 course: animals
 tags:
   - east-asian-roots
-  - mahayana-vinaya-studies
+  - mahayana-vinaya
   - agriculture
 year: 2024
 journal: jcbs

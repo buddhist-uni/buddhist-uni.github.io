@@ -13,9 +13,7 @@ tags:
   - east-asian-roots
   - vinaya-studies
 year: 2017
-booktitle: "Rules of Engagement: Medieval Traditions of Buddhist Monastic Regulation"
-publisher: "Hamburg University Press"
-address: "Hamburg, Germany"
+from_book: rules-of-engagement_andrews-et-al
 chapter: 17
 pages: "503--517"
 ---

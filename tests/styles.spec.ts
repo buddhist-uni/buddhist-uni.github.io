@@ -56,9 +56,20 @@ test('toasts keep their shadow', async ({ page }) => {
 
 // We only copied over the utilities we use
 test('utilities used in content still apply', async ({ page }) => {
-  await page.goto('/courses/buddhism');
+  await page.goto('/courses/buddhism/');
   await expect(page.locator('.mt-5').first()).toHaveCSS('margin-top', '32px');
   await expect(page.locator('.text-underline').first()).toHaveCSS('text-decoration-line', 'underline');
   await page.goto('/library/');
   await expect(page.locator('.pl-4').first()).toHaveCSS('padding-left', '24px');
+});
+
+// purgecss drops the @keyframes nothing uses
+test('loading spinners still spin', async ({ page }) => {
+  await page.goto('/');
+  const animations = await page.evaluate(() => {
+    const icon = document.body.appendChild(document.createElement('i'));
+    icon.className = 'fas fa-spin';
+    return icon.getAnimations().length;
+  });
+  expect(animations).toBe(1);
 });
