@@ -4,7 +4,8 @@ layout: nil
 importScripts("/assets/js/lunr.min.js");
 importScripts("/assets/js/utils.js");
 importScripts("/assets/js/search_functions.js");
-function unaccent(e) { return e.update(utils.unaccented); }
+// Tags are left as they are; #139 deals with accented tags
+function unaccent(e) { return e.metadata.fields[0] == 'tag' ? e : e.update(utils.unaccented); }
 lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
 // IMPORTANT! Keep this up-to-date with the version in /_tests/tags.md
@@ -52,7 +53,10 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
-    // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
+    // Fold the tokens, not the text, so match positions fit the original
+    this.pipeline.before(lunr.trimmer, unaccent);
+    // İ alone grows when lowercased, which would shift every position after it
+    this.tokenizer = function (text, metadata) { return lunr.tokenizer(text && text.replace(/İ/g, 'I'), metadata); };
     this.pipeline.remove(lunr.stemmer);
     this.searchPipeline.remove(lunr.stemmer);
     this.pipeline.add(OBU_STEMMER);
@@ -60,10 +64,10 @@ var idx = lunr(function () {
     for (var key in store) {
         var v = store[key];
         this.add({
-            'id': key, 'title': utils.unaccented(v.title),
-            'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
-            'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            'tag': v.tags.join(' '), 'description': utils.unaccented(v.description),
+            'id': key, 'title': v.title,
+            'author': v.authors.join('  '), 'content': v.content,
+            'translator': v.translator, 'format': v.formats.join('  '),
+            'tag': v.tags.join(' '), 'description': v.description,
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }

@@ -100,3 +100,17 @@ test('each warning gets its own icon', async ({ page }) => {
   await expect(warnings.nth(1)).toContainText('matching all of your terms');
   await expect(page).toHaveURL(/\?q=this%20is%20an%20%22exact%20query%22%20test$/);
 });
+
+test('finds and highlights a name whose letter has no accent to strip', async ({ page }) => {
+  await page.goto('/search/?q=jorn+borup');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('.Label strong', { hasText: 'Borup' }).first()).toHaveText('Jørn Borup');
+});
+
+test('highlights the right letters after a two-letter fold', async ({ page }) => {
+  await page.goto('/search/?q=sangarava');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('h3', { hasText: 'Lōvæḍa' }).locator('strong')).toHaveText('Saṅgarāva');
+});
