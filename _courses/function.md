@@ -2,6 +2,7 @@
 title: The Practice of Buddhism
 subtitle: A Theoretical Outline
 layout: multipartcourse
+permalink: "/courses/function/"
 part_header: "Module # of An Introduction to Buddhist Practice"
 google_doc_id: 1PYRlHX5s_pqCmVM-X0vFzKAB5UPH6nR6OWaxmEL396E
 feedback_id: "The+Function+of+Buddhism"
