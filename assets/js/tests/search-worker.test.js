@@ -4,7 +4,6 @@ const vm = require('node:vm');
 const fs = require('node:fs');
 const path = require('node:path');
 const { HtmlValidate } = require('html-validate');
-const realLunr = require('../lunr.min.js');
 
 const htmlValidate = new HtmlValidate({ extends: ['html-validate:standard'] });
 
@@ -216,16 +215,42 @@ describe('addMatchHighlights', () => {
   });
 });
 
-describe('highlights after folded letters', () => {
-  it('line up with the original text', () => {
-    const title = 'Straße Æther: Bjørn Þór';
-    const idx = realLunr(function () {
-      this.field('title');
-      this.metadataWhitelist = ['position'];
-      this.add({ id: 1, title: sandbox.utils.unaccented(title) });
+describe('the search index', () => {
+  let search;
+  before(() => {
+    const read = (url) => fs.readFileSync(path.join(__dirname, '..', path.basename(url)), 'utf-8');
+    const item = { type: 'content', tags: [], formats: [], authors: [], translator: '', content: '', boost: 1 };
+    const worker = vm.createContext({
+      self: {},
+      importScripts: (url) => vm.runInContext(read(url), worker),
+      store: {
+        a: { ...item, title: 'Straße Æther Þór: Bjørn' },
+        b: { ...item, title: 'Populism', authors: ['İhsan Yılmaz'] },
+        c: { ...item, title: 'Primer', content: 'Learn Pāli and the Nikāyas'.normalize('NFD') }
+      }
     });
-    const [result] = idx.search('bjorn');
-    assert.equal(addMatchHighlights(result, title, 'title'), 'Straße Æther: <strong>Bjørn</strong> Þór');
+    // search_index.js without its Liquid: the front matter and the store
+    const src = read('search_index.js');
+    vm.runInContext(src.slice(src.indexOf('importScripts'), src.indexOf('{%-')) + src.slice(src.indexOf('var idx')), worker);
+    search = (q) => vm.runInContext(`displaySearchResults(idx.search(${JSON.stringify(q)}))`, worker);
+  });
+
+  it('finds folded letters by their transliterations', () => {
+    assert.ok(search('strasse').includes('<strong>Straße</strong>'));
+    assert.ok(search('aether').includes('<strong>Æther</strong>'));
+    assert.ok(search('thor').includes('<strong>Þór'));
+  });
+
+  it('highlights the original text after longer folds', () => {
+    assert.ok(search('bjorn').includes('Straße Æther Þór: <strong>Bjørn</strong>'));
+  });
+
+  it('highlights the original text after İ', () => {
+    assert.ok(search('yilmaz').includes('İhsan <strong>Yılmaz</strong>'));
+  });
+
+  it('highlights the original text after combining marks', () => {
+    assert.ok(search('nikayas').includes('and the <strong>Nikāyas</strong>'.normalize('NFD')));
   });
 });
 

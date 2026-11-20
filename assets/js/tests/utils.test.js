@@ -42,7 +42,7 @@ describe('utils.unaccented', () => {
   });
 
   it('folds letters that have no accent to strip', () => {
-    assert.equal(utils.unaccented('øØßẞıæÆœŒđĐłŁþÞðÐ'), 'oOsSiaAoOdDlLtTdD');
+    assert.equal(utils.unaccented('øØßẞıæÆœŒđĐłŁþÞðÐ'), 'oOssSSiaeAEoeOEdDlLthThdD');
   });
 
   it('returns empty string unchanged', () => {

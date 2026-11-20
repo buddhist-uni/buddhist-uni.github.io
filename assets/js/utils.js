@@ -92,10 +92,10 @@ function sortedInsert(array, element) {
     array.splice(locationOf(array, element), 0, element);
     return array;
 }
-// Letters NFD leaves whole. One character each, so match positions still fit the original text.
+// Letters NFD leaves whole
 const FOLDS = {
-    'ø': 'o', 'Ø': 'O', 'ß': 's', 'ẞ': 'S', 'ı': 'i', 'æ': 'a', 'Æ': 'A', 'œ': 'o', 'Œ': 'O',
-    'đ': 'd', 'Đ': 'D', 'ł': 'l', 'Ł': 'L', 'þ': 't', 'Þ': 'T', 'ð': 'd', 'Ð': 'D'
+    'ø': 'o', 'Ø': 'O', 'ß': 'ss', 'ẞ': 'SS', 'ı': 'i', 'æ': 'ae', 'Æ': 'AE', 'œ': 'oe', 'Œ': 'OE',
+    'đ': 'd', 'Đ': 'D', 'ł': 'l', 'Ł': 'L', 'þ': 'th', 'Þ': 'Th', 'ð': 'd', 'Ð': 'D'
 };
 var utils = {
     'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^ -~]/g, function (c) { return FOLDS[c] || c; }):str; },
