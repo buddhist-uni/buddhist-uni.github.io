@@ -272,13 +272,33 @@ function resultsIncludeSutta(results, uid) {
   });
 }
 
-// Links to Bhikkhu Sujato's translation: SuttaCentral has it for every sutta and verse above,
-// including those inside a range text, like Dhp 5 in Dhp 1–20. search.js switches the link
-// to Bhikkhu Bodhi's translation when SuttaCentral has one.
+// The first verse of each Dhammapada chapter, as SuttaCentral splits them into texts
+// (dhp1-20, dhp21-32, ...; see https://suttacentral.net/api/suttaplex/dhp), and 424 to end the last one.
+var DHP_CHAPTER_STARTS = [1, 21, 33, 44, 60, 76, 90, 100, 116, 129, 146, 157, 167, 179, 197, 209,
+  221, 235, 256, 273, 290, 306, 320, 334, 360, 383, 424];
+
+// Dhp verses open in their chapter in Bhante Suddhaso's translation, scrolled to the verse,
+// and Iti suttas in John D. Ireland's. Everything else goes to Bhikkhu Sujato's translation,
+// which SuttaCentral has for every sutta above, including those inside a range text, like
+// AN 1.15 in AN 1.11–20. search.js switches those links to Bhikkhu Bodhi's translation when
+// SuttaCentral has one.
+function suttaCentralUrl(uid) {
+  var parts = splitSuttaCentralUid(uid);
+  if (parts[0] === 'dhp') {
+    var verse = parseInt(parts[1], 10);
+    var i = 0;
+    while (DHP_CHAPTER_STARTS[i + 1] <= verse) i++;
+    var chapter = 'dhp' + DHP_CHAPTER_STARTS[i] + '-' + (DHP_CHAPTER_STARTS[i + 1] - 1);
+    return 'https://suttacentral.net/' + chapter + '/en/suddhaso?reference=main&highlight=true#vns' + verse;
+  }
+  if (parts[0] === 'iti') return 'https://suttacentral.net/' + uid + '/en/ireland';
+  return 'https://suttacentral.net/' + uid + '/en/sujato';
+}
+
 function displaySuttaCentralResult(uid) {
   var parts = splitSuttaCentralUid(uid);
   var title = SC_BOOK_ABBREVIATIONS[parts[0]] + ' ' + parts[1];
-  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="https://suttacentral.net/' + uid + '/en/sujato">' + title + ' ...</a></h3>' +
+  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="' + suttaCentralUrl(uid).replace(/&/g, '&amp;') + '">' + title + ' ...</a></h3>' +
     '<span class="Counter">' + categoryName('canon') + '</span> ' +
     '<span class="Counter">🌼 SuttaCentral</span>' +
     '<p id="sc-direct-link-blurb" data-scid="' + uid + '">We don\'t have this sutta in our library yet, but you can find it on SuttaCentral.</p></li>';

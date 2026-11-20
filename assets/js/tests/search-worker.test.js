@@ -75,6 +75,7 @@ vm.runInContext(
   'this.handleSearchMessage = handleSearchMessage;\n' +
   'this.suttaCentralUid = suttaCentralUid;\n' +
   'this.resultsIncludeSutta = resultsIncludeSutta;\n' +
+  'this.suttaCentralUrl = suttaCentralUrl;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
@@ -82,7 +83,7 @@ vm.runInContext(
 const {
   categoryName, getPositions, resultMatched,
   addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
-  suttaCentralUid, resultsIncludeSutta
+  suttaCentralUid, resultsIncludeSutta, suttaCentralUrl
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -641,6 +642,29 @@ describe('suttaCentralUid', () => {
   });
 });
 
+describe('suttaCentralUrl', () => {
+  it('finds the chapter of each Dhp verse, including the first and last verse of a chapter', () => {
+    const url = (verse, chapter) => `https://suttacentral.net/${chapter}/en/suddhaso?reference=main&highlight=true#vns${verse}`;
+    assert.equal(suttaCentralUrl('dhp1'), url(1, 'dhp1-20'));
+    assert.equal(suttaCentralUrl('dhp20'), url(20, 'dhp1-20'));
+    assert.equal(suttaCentralUrl('dhp21'), url(21, 'dhp21-32'));
+    assert.equal(suttaCentralUrl('dhp141'), url(141, 'dhp129-145'));
+    assert.equal(suttaCentralUrl('dhp383'), url(383, 'dhp383-423'));
+    assert.equal(suttaCentralUrl('dhp423'), url(423, 'dhp383-423'));
+  });
+
+  it('links Iti suttas to John D. Ireland\'s translation', () => {
+    assert.equal(suttaCentralUrl('iti1'), 'https://suttacentral.net/iti1/en/ireland');
+    assert.equal(suttaCentralUrl('iti112'), 'https://suttacentral.net/iti112/en/ireland');
+  });
+
+  it('links other suttas to Bhikkhu Sujato\'s translation', () => {
+    for (const uid of ['mn4', 'an6.23', 'sn35.200', 'thag1.1', 'snp1.8', 'ud8.10', 'dn34']) {
+      assert.equal(suttaCentralUrl(uid), `https://suttacentral.net/${uid}/en/sujato`);
+    }
+  });
+});
+
 describe('resultsIncludeSutta', () => {
   const canon = (title) => ({ type: 'content', category: 'canon', title });
   const check = (items, uid) => {
@@ -717,14 +741,21 @@ describe('handleSearchMessage SuttaCentral fallback', () => {
     assert.equal(result.count, 1);
   });
 
-  it('links verses and suttas inside a range text to their English translation', () => {
-    // SuttaCentral keeps these inside texts like dhp1-20 and sn35.198-200, so a link to
-    // Bhikkhu Bodhi's translation would open the Pali, but Bhikkhu Sujato's opens the verse or sutta
-    for (const [query, uid] of [['Dhp 5', 'dhp5'], ['SN 35.200', 'sn35.200'], ['AN 1.15', 'an1.15']]) {
+  it('links suttas inside a range text to their English translation', () => {
+    // SuttaCentral keeps these inside texts like sn35.198-200, so a link to Bhikkhu Bodhi's
+    // translation would open the Pali, but Bhikkhu Sujato's opens the sutta
+    for (const [query, uid] of [['SN 35.200', 'sn35.200'], ['AN 1.15', 'an1.15']]) {
       const result = toLocal(handleSearchMessage({ q: query, filterquery: '', qt: '' }, () => []));
       assert.ok(result.html.includes(`href="https://suttacentral.net/${uid}/en/sujato"`), query);
       assert.ok(result.html.includes(`data-scid="${uid}"`), query);
     }
+  });
+
+  it('links Dhp verses to their chapter in Bhante Suddhaso\'s translation', () => {
+    const result = toLocal(handleSearchMessage({ q: 'Dhp 141', filterquery: '', qt: '' }, () => []));
+    assert.ok(result.html.includes('href="https://suttacentral.net/dhp129-145/en/suddhaso?reference=main&amp;highlight=true#vns141"'));
+    assert.ok(result.html.includes('data-scid="dhp141"'));
+    assertValidHtml(`<ul>${result.html}</ul>`, 'Dhp SuttaCentral result');
   });
 
   it('puts SuttaCentral first when the library only has other things about the sutta', () => {

@@ -141,13 +141,13 @@
                         // Nothing to add, e.g. for Dhp 5, so drop the "..." we show while loading
                         scTitle.textContent = scTitle.textContent.replace(/ \.\.\.$/, '');
                       }
-                      // The link goes to Bhikkhu Sujato's translation, which SuttaCentral has for every sutta.
-                      // Prefer Bhikkhu Bodhi's when there is one. Verses and suttas inside a range text (e.g. Dhp 5)
-                      // come back without translations, and their Bodhi links would open the Pali instead.
+                      // Prefer Bhikkhu Bodhi's translation to Bhikkhu Sujato's when there is one. Suttas inside
+                      // a range text (e.g. SN 35.200) come back without translations, and their Bodhi links
+                      // would open the Pali instead. Dhp and Iti links already go to the translation we want.
                       var hasBodhi = (item.translations || []).some(function (t) {
                         return t.lang === 'en' && t.author_uid === 'bodhi';
                       });
-                      if (hasBodhi) {
+                      if (hasBodhi && /\/en\/sujato$/.test(scTitle.getAttribute('href'))) {
                         scTitle.href = 'https://suttacentral.net/' + scid + '/en/bodhi';
                       }
                     }

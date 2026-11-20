@@ -118,7 +118,7 @@ test('a sutta we do not have links to its SuttaCentral translation', async ({ pa
   await expect(page.locator('#sc-direct-link-blurb')).toHaveText('Sakka asks the Buddha how a mendicant is freed.');
 });
 
-test('a verse inside a range text keeps its link to the verse', async ({ page }) => {
+test('a Dhp verse links to its chapter in Bhante Suddhaso\'s translation', async ({ page }) => {
   // SuttaCentral has no suttaplex of its own for Dhp 5, which lives in dhp1-20
   await page.route('https://suttacentral.net/api/suttaplex/**', route => route.fulfill({
     json: [{ uid: null, acronym: null, original_title: null, translated_title: null, blurb: null, translations: [] }],
@@ -128,6 +128,22 @@ test('a verse inside a range text keeps its link to the verse', async ({ page })
 
   const link = page.locator('#sc-direct-link-title');
   await expect(link).toHaveText('Dhp 5');
-  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/dhp5/en/sujato');
+  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/dhp1-20/en/suddhaso?reference=main&highlight=true#vns5');
   await expect(page.locator('#sc-direct-link-blurb')).toContainText('find it on SuttaCentral');
+});
+
+test('an Iti sutta links to John D. Ireland\'s translation', async ({ page }) => {
+  await page.route('https://suttacentral.net/api/suttaplex/**', route => route.fulfill({
+    json: [{
+      uid: 'iti2', acronym: 'Iti 2', original_title: 'Dosasutta', translated_title: 'Hate',
+      blurb: null,
+      translations: [{ lang: 'en', author_uid: 'ireland' }, { lang: 'en', author_uid: 'sujato' }],
+    }],
+  }));
+  await page.goto('/search/?q=Iti+2');
+  await waitForSearchResults(page);
+
+  const link = page.locator('#sc-direct-link-title');
+  await expect(link).toHaveText('Iti 2 Dosasutta: Hate');
+  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/iti2/en/ireland');
 });
