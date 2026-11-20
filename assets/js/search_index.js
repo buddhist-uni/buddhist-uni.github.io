@@ -4,7 +4,8 @@ layout: nil
 importScripts("/assets/js/lunr.min.js");
 importScripts("/assets/js/utils.js");
 importScripts("/assets/js/search_functions.js");
-function unaccent(e) { return e.update(utils.unaccented); }
+// Tags are left as they are; #139 deals with accented tags
+function unaccent(e) { return e.metadata.fields[0] == 'tag' ? e : e.update(utils.unaccented); }
 lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
 // IMPORTANT! Keep this up-to-date with the version in /_tests/tags.md

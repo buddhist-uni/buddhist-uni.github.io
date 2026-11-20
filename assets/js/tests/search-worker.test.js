@@ -216,7 +216,7 @@ describe('addMatchHighlights', () => {
 });
 
 describe('the search index', () => {
-  let search;
+  let search, hits;
   before(() => {
     const read = (url) => fs.readFileSync(path.join(__dirname, '..', path.basename(url)), 'utf-8');
     const item = { type: 'content', tags: [], formats: [], authors: [], translator: '', content: '', boost: 1 };
@@ -226,13 +226,15 @@ describe('the search index', () => {
       store: {
         a: { ...item, title: 'Straße Æther Þór: Bjørn' },
         b: { ...item, title: 'Populism', authors: ['İhsan Yılmaz'] },
-        c: { ...item, title: 'Primer', content: 'Learn Pāli and the Nikāyas'.normalize('NFD') }
+        c: { ...item, title: 'Primer', content: 'Learn Pāli and the Nikāyas'.normalize('NFD') },
+        d: { ...item, title: 'Tagged', tags: ['Āgama'] }
       }
     });
     // search_index.js without its Liquid: the front matter and the store
     const src = read('search_index.js');
     vm.runInContext(src.slice(src.indexOf('importScripts'), src.indexOf('{%-')) + src.slice(src.indexOf('var idx')), worker);
     search = (q) => vm.runInContext(`displaySearchResults(idx.search(${JSON.stringify(q)}))`, worker);
+    hits = (q) => vm.runInContext(`idx.search(${JSON.stringify(q)}).length`, worker);
   });
 
   it('finds folded letters by their transliterations', () => {
@@ -247,6 +249,10 @@ describe('the search index', () => {
 
   it('highlights the original text after İ', () => {
     assert.ok(search('yilmaz').includes('İhsan <strong>Yılmaz</strong>'));
+  });
+
+  it('leaves tags unfolded', () => {
+    assert.equal(hits('tag:agama'), 0);
   });
 
   it('highlights the original text after combining marks', () => {
