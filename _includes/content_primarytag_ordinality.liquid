@@ -4,7 +4,6 @@
   {%- for candidatecourse in site.courses -%}
     {%- if include.item.course == candidatecourse.slug -%}
       {%- capture primarytag -%}<a href="{{ candidatecourse.url }}">
-        <i class="{{ candidatecourse.icon }}"></i>
         {{ candidatecourse.title | escape }}
       </a>{%- endcapture -%}
       {%- assign ordinality = forloop.index -%}
