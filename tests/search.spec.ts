@@ -107,3 +107,10 @@ test('finds and highlights a name whose letter has no accent to strip', async ({
 
   await expect(page.locator('.Label strong', { hasText: 'Borup' }).first()).toHaveText('Jørn Borup');
 });
+
+test('highlights the right letters after a two-letter fold', async ({ page }) => {
+  await page.goto('/search/?q=sangarava');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('h3', { hasText: 'Lōvæḍa' }).locator('strong')).toHaveText('Saṅgarāva');
+});
