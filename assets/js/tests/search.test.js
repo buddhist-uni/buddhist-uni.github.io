@@ -7,7 +7,7 @@ const path = require('node:path');
 const read = (file) => fs.readFileSync(path.join(__dirname, '..', file), 'utf-8');
 
 // Runs search.js against stub elements, timers and history, and a Worker that records its messages
-function loadSearchPage(search = '', startWorker = () => {}) {
+function loadSearchPage(search = '', workerHook = () => {}) {
   const posted = [], pushed = [], replaced = [], searched = [], timers = [];
   const element = () => ({ value: '', style: {}, setAttribute(name, value) { this[name] = value; }, addEventListener(type, fn) { this[type] = fn; }, blur() {}, focus() {} });
   const elements = {};
@@ -19,7 +19,7 @@ function loadSearchPage(search = '', startWorker = () => {}) {
     performance: { now: () => 0 },
     setTimeout(fn) { timers.push(fn); },
     clearTimeout() {},
-    Worker: function () { startWorker(); this.postMessage = (message) => posted.push(message); },
+    Worker: function () { workerHook(); this.postMessage = (message) => posted.push(message); },
     URLSearchParams,
     console: { error() {} },
   };
