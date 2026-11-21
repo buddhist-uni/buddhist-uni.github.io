@@ -206,6 +206,104 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
   return tokenResults;
 }
 
+// The number of suttas in each book (or in each chapter of the book) that
+// SuttaCentral references are matched against. Derived from the citation
+// rules in https://discourse.suttacentral.net/t/25616/7 and checked against
+// SuttaCentral's API.
+var SC_SUTTA_COUNTS = {
+  dn: 34, mn: 152, dhp: 423, iti: 112,
+  an: [627, 479, 352, 783, 1152, 649, 1124, 627, 432, 746, 1151],
+  sn: [81, 30, 25, 25, 10, 15, 22, 12, 14, 12, 25, 213, 11, 39, 20, 13, 43, 22, 21, 12, 12, 159, 46, 96, 10, 10, 10, 10,
+    50, 46, 112, 57, 55, 55, 248, 31, 34, 16, 16, 11, 10, 13, 44, 11, 180, 184, 104, 178, 54, 108, 86, 24, 54, 20, 74, 131],
+  snp: [12, 14, 12, 16, 19],
+  thag: [120, 49, 16, 12, 12, 14, 5, 3, 1, 7, 1, 2, 1, 2, 2, 10, 3, 1, 1, 1, 1],
+  thig: [18, 10, 8, 1, 12, 8, 3, 1, 1, 1, 1, 1, 5, 1, 1, 1],
+  ud: [10, 10, 10, 10, 10, 10, 10, 10]
+};
+var SC_BOOK_ABBREVIATIONS = {
+  dn: 'DN', mn: 'MN', sn: 'SN', an: 'AN', dhp: 'Dhp', iti: 'Iti',
+  snp: 'Snp', thag: 'Thag', thig: 'Thig', ud: 'Ud'
+};
+
+// Returns the SuttaCentral id (e.g. "mn4" or "an10.5") if the query is a
+// reference to a single sutta that exists, otherwise null.
+function suttaCentralUid(query) {
+  var m = query.trim().toLowerCase().match(/^(dn|mn|sn|an|dhp|iti|snp|thag|thig|ud)\s*(\d+)(?:[.:](\d+))?$/);
+  if (!m) return null;
+  var counts = SC_SUTTA_COUNTS[m[1]];
+  var first = parseInt(m[2], 10);
+  var second = m[3] === undefined ? null : parseInt(m[3], 10);
+  if (typeof counts === 'number') {
+    if (second !== null || first < 1 || first > counts) return null;
+    return m[1] + first;
+  }
+  if (second === null || first < 1 || first > counts.length || second < 1 || second > counts[first - 1]) return null;
+  return m[1] + first + '.' + second;
+}
+
+// Splits a SuttaCentral id into its book and number, e.g. "an10.5" -> ["an", "10.5"]
+function splitSuttaCentralUid(uid) {
+  var book = uid.match(/^[a-z]+/)[0];
+  return [book, uid.substring(book.length)];
+}
+
+// True if one of the results is that sutta from our library, or a range of suttas that
+// includes it, going by the reference its title starts with: "MN 4 ...", "AN 1.11–20 ..." or
+// "Dhp 1–20 ..." (for Dhp 5).
+function resultsIncludeSutta(results, uid) {
+  var parts = uid.match(/^([a-z]+)(\d+)(?:\.(\d+))?$/);
+  var hasChapters = parts[3] !== undefined;
+  var chapter = parseInt(parts[2], 10);
+  var number = hasChapters ? parseInt(parts[3], 10) : chapter;
+  return results.some(function (result) {
+    var item = store[result.ref];
+    if (!item || item.category !== 'canon') return false;
+    var m = (item.title || '').toLowerCase().match(/^\s*(dn|mn|sn|an|dhp|iti|snp|thag|thig|ud)\s*(\d+)(?:[.:](\d+))?(?:\s*[–-]\s*(\d+))?/);
+    if (!m || m[1] !== parts[1]) return false;
+    var first;
+    if (hasChapters) {
+      if (m[3] === undefined || parseInt(m[2], 10) !== chapter) return false;
+      first = parseInt(m[3], 10);
+    } else {
+      first = parseInt(m[2], 10);
+    }
+    var last = m[4] === undefined ? first : parseInt(m[4], 10);
+    return number >= first && number <= last;
+  });
+}
+
+// The first verse of each Dhammapada chapter, as SuttaCentral splits them into texts
+// (dhp1-20, dhp21-32, ...; see https://suttacentral.net/api/suttaplex/dhp), and 424 to end the last one.
+var DHP_CHAPTER_STARTS = [1, 21, 33, 44, 60, 76, 90, 100, 116, 129, 146, 157, 167, 179, 197, 209,
+  221, 235, 256, 273, 290, 306, 320, 334, 360, 383, 424];
+
+// Dhp verses open in their chapter in Bhante Suddhaso's translation, scrolled to the verse,
+// and Iti suttas in John D. Ireland's. Everything else goes to Bhikkhu Sujato's translation,
+// which SuttaCentral has for every sutta above, including those inside a range text, like
+// AN 1.15 in AN 1.11–20. search.js switches those links to Bhikkhu Bodhi's translation when
+// SuttaCentral has one.
+function suttaCentralUrl(uid) {
+  var parts = splitSuttaCentralUid(uid);
+  if (parts[0] === 'dhp') {
+    var verse = parseInt(parts[1], 10);
+    var i = 0;
+    while (DHP_CHAPTER_STARTS[i + 1] <= verse) i++;
+    var chapter = 'dhp' + DHP_CHAPTER_STARTS[i] + '-' + (DHP_CHAPTER_STARTS[i + 1] - 1);
+    return 'https://suttacentral.net/' + chapter + '/en/suddhaso?reference=main&highlight=true#vns' + verse;
+  }
+  if (parts[0] === 'iti') return 'https://suttacentral.net/' + uid + '/en/ireland';
+  return 'https://suttacentral.net/' + uid + '/en/sujato';
+}
+
+function displaySuttaCentralResult(uid) {
+  var parts = splitSuttaCentralUid(uid);
+  var title = SC_BOOK_ABBREVIATIONS[parts[0]] + ' ' + parts[1];
+  return '<li><h3><a id="sc-direct-link-title" target="_blank" href="' + suttaCentralUrl(uid).replace(/&/g, '&amp;') + '">' + title + ' ...</a></h3>' +
+    '<span class="Counter">' + categoryName('canon') + '</span> ' +
+    '<span class="Counter">🌼 SuttaCentral</span>' +
+    '<p id="sc-direct-link-blurb" data-scid="' + uid + '">We don\'t have this sutta in our library yet, but you can find it on SuttaCentral.</p></li>';
+}
+
 function applyErrorStyle(message, isWarning) {
   const iconClass = isWarning ? "fa-solid fa-triangle-exclamation" : "fa-regular fa-circle-question";
   const iconColor = isWarning ? "rgb(207, 182, 45)" : "rgb(21, 125, 194)";
@@ -239,9 +337,15 @@ function handleSearchMessage(data, searchFn) {
     }
   }
   var query = words.join(' ').trim();
+  var suttaUid = suttaCentralUid(q);
+  if (suttaUid) {
+    // Look for that exact sutta, rather than for anything in the same book
+    var suttaParts = splitSuttaCentralUid(suttaUid);
+    query = '+' + suttaParts[0] + ' +' + suttaParts[1];
+  }
   try {
     results = searchFn(query);
-    if (!results.length) {
+    if (!results.length && !suttaUid) {
       warning = "<strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:";
       results = searchFn(q.trim());
     }
@@ -250,7 +354,7 @@ function handleSearchMessage(data, searchFn) {
       results = searchFn(q.replaceAll(":", " "));
     } else { throw err; }
   }
-  if (!results.length) {
+  if (!results.length && !suttaUid) {
     words = q.trim().split(" ");
     if (words.find(function (w) { return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
@@ -271,10 +375,22 @@ function handleSearchMessage(data, searchFn) {
     });
   }
   finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
+  var html = displaySearchResults(finalResults);
+  var count = finalResults ? finalResults.length : 0;
+  if (suttaUid && !resultsIncludeSutta(finalResults || [], suttaUid)) {
+    if (count) {
+      // We have other things that mention it, but not the sutta itself
+      html = displaySuttaCentralResult(suttaUid) + html;
+    } else {
+      warning = "No results found in our library. Showing external results:";
+      html = displaySuttaCentralResult(suttaUid);
+    }
+    count += 1;
+  }
   return {
     "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
-    "html": displaySearchResults(finalResults),
-    "count": finalResults ? finalResults.length : 0,
+    "html": html,
+    "count": count,
     "q": data.q,
     "filterquery": data.filterquery,
     "qt": data.qt
