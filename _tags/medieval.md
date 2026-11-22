@@ -21,5 +21,5 @@ image_center_y: 35%
 ---
 
 This bibliography explores how Buddhism spread along the Silk Roads out of India and across Asia in particular asking what traders and local rulers got out of adopting Buddhism and how Buddhism changed as it made contact with other cultures.
-"Medieval" is used here very loosely to mean "pre-modern Buddhism outside India." This tag therefore starts with [the Ashokan missions](/tags/indian) and goes all the way to [Europe's contact with Asia](/tags/west) in the Modern period.
+"Medieval" is used here very loosely to mean "pre-modern Buddhism outside India." This topic therefore starts with [the Ashokan missions](/topics/indian) and goes all the way to [Europe's contact with Asia](/topics/west) in the Modern period.
 

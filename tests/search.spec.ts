@@ -65,6 +65,49 @@ test('bodhi translations in canon filter', async ({ page }) => {
   await expect(translatorPill).toBeVisible();
 });
 
+for (const q of ['anguttara', 'topic:anguttara', 'topic:aṅguttara']) {
+  test(`${q} matches the Aṅguttara Nikāya topic`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    await expect(page.getByText('Perhaps you meant')).toHaveCount(0);
+    await expect(page.locator('.Label:has(.fa-sitemap) strong', { hasText: 'Aṅguttara' }).first()).toBeVisible();
+  });
+}
+
+// Each result's topic labels
+function topicLabels(page: Page) {
+  return page.locator('#search-results li:has(h3)').evaluateAll(lis =>
+    lis.map(li => Array.from(li.querySelectorAll('.Label:has(.fa-tag, .fa-sitemap)'), l => l.textContent!.trim())));
+}
+
+for (const [q, titles, icon] of [
+  ['tag:nibbāna', ['Nibbāna', 'Nibbāna: The Goal of Buddhist Practice'], 'fa-sitemap'], // tagged, and in the course
+  ['topic:pitaka', ['The Vinaya'], 'fa-sitemap'], // only a word of the slug vinaya-pitaka
+  ['tag:higher-ed', ['higher ed'], 'fa-tag'], // no topic page
+] as const) {
+  test(`${q} labels each result's topics once, by title`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const labels = await topicLabels(page);
+    for (const l of labels) expect(l.length > 0 && new Set(l).size == l.length, JSON.stringify(l)).toBe(true);
+    for (const t of titles) expect(labels.flat()).toContain(t);
+    await expect(page.locator(`.Label:has(.${icon})`, { hasText: titles[0] }).first()).toBeVisible();
+  });
+}
+
+for (const [q, title] of [['tag:pali-canon', 'The Pāli Canon'], ['tag:an', 'Aṅguttara Nikāya']]) {
+  test(`${q} only finds items tagged ${title}`, async ({ page }) => {
+    await page.goto('/search/?q=' + encodeURIComponent(q));
+    await waitForSearchResults(page);
+
+    const labels = await topicLabels(page);
+    expect(labels.length).toBeGreaterThan(0);
+    for (const l of labels) expect(l).toEqual([expect.stringContaining(title)]); // the course is "The Aṅguttara Nikāya"
+  });
+}
+
 test('quoted search from the URL warns that quotes are ignored', async ({ page }) => {
   await page.goto('/search/?q=%22noble+truths%22');
   await waitForSearchResults(page);
@@ -113,4 +156,20 @@ test('highlights the right letters after a two-letter fold', async ({ page }) =>
   await waitForSearchResults(page);
 
   await expect(page.locator('h3', { hasText: 'Lōvæḍa' }).locator('strong')).toHaveText('Saṅgarāva');
+});
+
+test('filtered search from the URL survives going back to it', async ({ page }) => {
+  await page.goto('/search/?q=nibbana&filter=%2Bin%3Acanon');
+  await waitForSearchResults(page);
+  await expect.poll(() => page.evaluate(() => history.state.filterquery)).toBe('+in:canon');
+
+  const searchBox = page.locator('#search-box');
+  await searchBox.fill('kamma');
+  await expect(page).toHaveURL(/\?q=kamma&filter=%2Bin%3Acanon$/);
+
+  await page.goBack();
+  await expect(page).toHaveURL(/\?q=nibbana&filter=%2Bin%3Acanon$/);
+  await expect(searchBox).toHaveValue('nibbana');
+  await expect(page.locator('#search-filter')).toHaveValue('+in:canon');
+  await expect(page.locator('.Counter').first()).toContainText('Canonical Work');
 });

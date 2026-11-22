@@ -159,7 +159,7 @@ class TagMetadata:
     ret = f"\n\n## `{self.slug}`"
     blurb = None
     if self.site_tag:
-      blurb = re.sub(r"\[([^\]]+)\]\(\/tags\/([a-z0-9-]+)\)", r'\1 (see `\2`)', self.site_tag.content).strip()
+      blurb = re.sub(r"\[([^\]]+)\]\(\/(?:tags|topics)\/([a-z0-9-]+)\)", r'\1 (see `\2`)', self.site_tag.content).strip()
       ret += f" = {self.site_tag.title}"
       if self.site_course:
         blurb = self.site_course.description + '\n\n' + blurb

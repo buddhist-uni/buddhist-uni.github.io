@@ -2,7 +2,7 @@
 title: "Two New Bibliographies"
 ---
 
-This month I'm happy to announce two bibliographies on more advanced topics: [*nibbāna*](/tags/nibbana) and [the Pāli Canon](/tags/pali-canon).
+This month I'm happy to announce two bibliographies on more advanced topics: [*nibbāna*](/topics/nibbana) and [the Pāli Canon](/topics/pali-canon).
 
 I'm especially happy to finally share with you:
 
