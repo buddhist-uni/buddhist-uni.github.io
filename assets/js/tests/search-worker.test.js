@@ -220,7 +220,7 @@ describe('addMatchHighlights', () => {
 describe('the search index', () => {
   let search, hits;
   before(() => {
-    const read = (url) => fs.readFileSync(path.join(__dirname, '..', path.basename(url)), 'utf-8');
+    const read = (url) => fs.readFileSync(path.join(__dirname, '..', path.basename(url.split('?')[0])), 'utf-8');
     const item = { type: 'content', tags: [], tagtitles: [], formats: [], authors: [], translator: '', content: '', boost: 1 };
     const worker = vm.createContext({
       self: {},

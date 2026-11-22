@@ -16,7 +16,7 @@ function loadSearchWorker(store) {
     self: {},
     console: { warn() { } },
     importScripts: function (src) {
-      vm.runInContext(fs.readFileSync(path.join(jsDir, path.basename(src)), 'utf-8'), sandbox);
+      vm.runInContext(fs.readFileSync(path.join(jsDir, path.basename(src.split('?')[0])), 'utf-8'), sandbox);
     }
   };
   vm.createContext(sandbox);

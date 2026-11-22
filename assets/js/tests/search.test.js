@@ -12,14 +12,14 @@ function loadSearchPage(search = '', workerHook = () => {}) {
   const element = () => ({ value: '', style: {}, setAttribute(name, value) { this[name] = value; }, addEventListener(type, fn) { this[type] = fn; }, blur() {}, focus() {} });
   const elements = {};
   const sandbox = {
-    document: { title: 'Search', getElementById: (id) => elements[id] ??= element() },
+    document: { title: 'Search', currentScript: { src: 'https://x.test/assets/js/search.js?u=abc1234' }, getElementById: (id) => elements[id] ??= element() },
     location: { search, href: '' },
     history: { replaceState(state, unused, url) { replaced.push(url); }, pushState(state, unused, url) { pushed.push(url); } },
     gtag(type, name, params) { searched.push(params.search_term); },
     performance: { now: () => 0 },
     setTimeout(fn) { timers.push(fn); },
     clearTimeout() {},
-    Worker: function () { workerHook(); this.postMessage = (message) => posted.push(message); },
+    Worker: function (url) { workerHook(url); this.postMessage = (message) => posted.push(message); },
     URLSearchParams,
     console: { error() {} },
   };
@@ -52,6 +52,12 @@ function loadSearchPage(search = '', workerHook = () => {}) {
 }
 
 describe('search page', () => {
+  it('starts the worker with its own cache-busting query', () => {
+    let url;
+    loadSearchPage('', (u) => { url = u; });
+    assert.equal(url, '/assets/js/search_index.js?u=abc1234');
+  });
+
   it('sends the worker the query as typed', () => {
     const page = loadSearchPage();
     page.type('"noble truths"');

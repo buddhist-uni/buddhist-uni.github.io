@@ -1,9 +1,9 @@
 ---
 layout: nil
 ---
-importScripts("/assets/js/lunr.min.js");
-importScripts("/assets/js/utils.js");
-importScripts("/assets/js/search_functions.js");
+importScripts("/assets/js/lunr.min.js?u={{ site.data.jsCacheToken }}");
+importScripts("/assets/js/utils.js?u={{ site.data.jsCacheToken }}");
+importScripts("/assets/js/search_functions.js?u={{ site.data.jsCacheToken }}");
 function unaccent(e) { return e.update(utils.unaccented); }
 lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 

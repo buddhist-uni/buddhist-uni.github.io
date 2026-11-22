@@ -64,7 +64,8 @@
   searchForm.onsubmit = prevent;
 
   try {
-    window.search_worker = new Worker("/assets/js/search_index.js");
+    // The worker takes this script's cache-busting query
+    window.search_worker = new Worker("/assets/js/search_index.js" + document.currentScript.src.replace(/^[^?]*/, ''));
     function newQuery(e) {
       var q = searchBox.value;
       var filterValue = filterDropdown.value;
