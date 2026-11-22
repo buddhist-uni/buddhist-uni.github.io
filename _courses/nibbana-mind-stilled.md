@@ -37,7 +37,7 @@ Unraveling this self-perpetuating feedback loop requires significant effort to c
 
 ## Prerequisites
 
-This is an advanced course which assumes considerable prior engagement with [the Pali Suttas](/tags/sutta) and [Buddhist Philosophy](/courses/philosophy) (in particular [Dependent Origination](/tags/origination) and [Buddhist Psychology](/tags/thought)).
+This is an advanced course which assumes considerable prior engagement with [the Pali Suttas](/topics/sutta) and [Buddhist Philosophy](/courses/philosophy) (in particular [Dependent Origination](/topics/origination) and [Buddhist Psychology](/topics/thought)).
 
 ## Textbook
 

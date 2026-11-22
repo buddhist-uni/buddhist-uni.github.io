@@ -20,5 +20,5 @@ big_height: 3648
 footer_info: <a href="https://commons.wikimedia.org/wiki/File:Buddha_in_Nirvana_(Death_of_Sakyamuni),_Kamakura_period,_13th_century,_wood_-_Tokyo_National_Museum_-_DSC05096.jpg">Tokyo National Museum</a>
 ---
 
-The doctrines and perspectives which serve as the intellectual foundation for [the practice as a whole](/tags/function).
+The doctrines and perspectives which serve as the intellectual foundation for [the practice as a whole](/topics/function).
 

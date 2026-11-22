@@ -22,7 +22,8 @@ function getQueryVariable(variable) {
 const QMIN = 3;
 function sanitizeQuery(q) {
     if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
+    // _ stays inside words, as in tag:breath_geoff
+    var ret = utils.unaccented(q.replace(/[^\P{P}:_-]+/ug, '').replace(/(^|[^\p{L}\p{N}])_+|_+(?![\p{L}\p{N}])/ug, '$1'));
     if (ret.length < QMIN) return '';
     return ret;
 }
@@ -87,6 +88,7 @@ var utils = {
     'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""):str; },
     'ascii': /^[ -~]+$/
 };
+function spacifyNonAlphanumeric(s) { return s.replace(/[^\p{L}\p{N}]/gu, ' '); }
 
 class Ranges {
     constructor() {

@@ -7,9 +7,9 @@ the significant expansion of our _free_ library further into the history of Budd
 
 # Medieval Buddhism
 
-**The Bibliography: [Medieval Buddhism](/tags/medieval)**
+**The Bibliography: [Medieval Buddhism](/topics/medieval)**
 
-We can roughly divide the history of Buddhism into three periods: its [early growth in India](/tags/indian), its spread across Asia, and finally [its global spread West](/tags/west) in the modern era.
+We can roughly divide the history of Buddhism into three periods: its [early growth in India](/topics/indian), its spread across Asia, and finally [its global spread West](/topics/west) in the modern era.
 This new section of our library delves deeper into those middle ages where Buddhism spread across the Silk Roads and split into the many varieties we know today.
 
 **Where to start**
@@ -25,7 +25,7 @@ The works listed there cover many critical topics, such as the entanglements and
 
 # Theravāda's Roots
 
-**The Bibliography: [The History of the Theravāda](/tags/theravada-roots)**
+**The Bibliography: [The History of the Theravāda](/topics/theravada-roots)**
 
 Many interesting episodes in the medieval history of "Southern Buddhism."
 
@@ -38,7 +38,7 @@ The bibliography focuses largely on the Pāli texts and the sometimes surprising
 
 # The Theravāda Canon
 
-**The Bibliographies: [Rebirth Stories](/tags/rebirth-stories) and [Canonical Poetry](/tags/canonical-poetry) and [Abhidhamma Studies](/tags/abhidhamma)**
+**The Bibliographies: [Rebirth Stories](/topics/rebirth-stories) and [Canonical Poetry](/topics/canonical-poetry) and [Abhidhamma Studies](/topics/abhidhamma)**
 
 For those interested in just diving right into the Pāli texts themselves, we're pleased to now provide two bibliographies on the Khuddakanikāya and one on the Abhidhamma Piṭaka.
 
@@ -55,7 +55,7 @@ Here I'd especially like to highlight a new project over at [ReadingFaithfully](
 
 # The Media and Your Mind
 
-**The Bibliographies: [Media Studies](/tags/media) and [The Intellect](/tags/intellect)**
+**The Bibliographies: [Media Studies](/topics/media) and [The Intellect](/topics/intellect)**
 
 In today's ever-connected world, media literacy is more important than ever.
 I'm happy to announce today the launch of two new sections of our library on the general (secular) philosophy of mind as well as on how different mediums affect us.
