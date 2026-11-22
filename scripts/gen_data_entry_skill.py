@@ -13,7 +13,7 @@ import website
 
 SKILL_PREAMBLE = """---
 name: obu-data-entry
-description: Guide for writing the content markdown files for OBU library items.
+description: Guide for writing the content markdown files for the Open Buddhist University (OBU) library items.
 ---
 
 # OBU Data Entry
