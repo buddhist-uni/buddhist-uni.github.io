@@ -56,7 +56,7 @@ test('toasts keep their shadow', async ({ page }) => {
 
 // We only copied over the utilities we use
 test('utilities used in content still apply', async ({ page }) => {
-  await page.goto('/courses/buddhism');
+  await page.goto('/courses/buddhism/');
   await expect(page.locator('.mt-5').first()).toHaveCSS('margin-top', '32px');
   await expect(page.locator('.text-underline').first()).toHaveCSS('text-decoration-line', 'underline');
   await page.goto('/library/');

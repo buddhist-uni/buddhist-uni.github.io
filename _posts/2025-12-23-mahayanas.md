@@ -10,9 +10,9 @@ the Mahāyāna and the human world.
 
 This month we've added three new bibliographies on:
 
-- [**Buddhism in Japan**](/tags/japanese)
-- [**Buddhism in Tibet**](/tags/tibetan)
-- [**Buddhism in Korea**](/tags/korean)
+- [**Buddhism in Japan**](/topics/japanese)
+- [**Buddhism in Tibet**](/topics/tibetan)
+- [**Buddhism in Korea**](/topics/korean)
 
 Together, they contain hundreds of free items on Mahāyāna Buddhism from books to films,
 so check those links out if you're interested in learning more about Buddhism in those countries.
@@ -34,7 +34,7 @@ OBU is also striving to advance understanding of our world
 by sharing links to free, secular, educational material.
 To that end, this month I am also proud to announce a new section of our library on the history of
 
-- [**Things**](/tags/things)
+- [**Things**](/topics/things)
 
 Yes. Just "things":
 how humans use the material of the environment for

@@ -9,4 +9,4 @@ Power may be conferred directly by charisma ("soft power") or force ("hard power
 
 We, in the English-speaking world, often think of power in a negative light—and it is often abused—but power is also what enables humans to work together towards shared goals.
 
-The works in this tag focus especially on the theory of power, from both the philosophical and the sociological perspectives.
+The works in this topic focus especially on the theory of power, from both the philosophical and the sociological perspectives.

@@ -2,11 +2,9 @@
 title: "Atonement of Pārājika Transgressions in Fifth-Century Chinese Buddhism"
 authors:
  - "Eric Greene"
-booktitle: "Rules of Engagement"
+from_book: rules-of-engagement_andrews-et-al
 pages: "369--408"
 chapter: 12
-publisher: "Verlag"
-address: "Freiberg"
 source_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/hamburgup-hbs09-full.pdf"
 year: 2017
 file_links:

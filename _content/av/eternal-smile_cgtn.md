@@ -20,5 +20,5 @@ an emperor of the Northern Wei Dynasty.
 Bringing together Buddha and the Emperor satisfied the need for the ruler to proclaim a divine right to lead.
 Equating the religion to the state helped make Buddhism prosper.
 
-A Chinese state television program about the Buddhist statues and caves of late antiquity still visible in Western China.
+This Chinese state TV documentary is about the Buddhist statues and caves of late antiquity which are still visible in Western China.
 

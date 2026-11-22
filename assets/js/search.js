@@ -26,10 +26,8 @@
   searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize filter dropdown and remember original value
-  var originalFilterValue = sanitizeQuery(getQueryVariable('filter'));
-  if (originalFilterValue !== null && originalFilterValue !== '') {
-    filterDropdown.value = originalFilterValue;
-  }
+  filterDropdown.value = sanitizeQuery(getQueryVariable('filter'));
+  var originalFilterValue = filterDropdown.value;
 
   setTitle(originalSearchTerm);
 
@@ -184,16 +182,14 @@
       }
     }
     if (originalSearchTerm) {
-      const filterValue = sanitizeQuery(getQueryVariable('filter'));
-      const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': originalFilterValue, 'qt': performance.now() });
       running = 1;
     }
 
     else {
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
-      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
+      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, topic (words of topic titles), tag (a topic slug or freeform tag, matched exactly, e.g. <code>tag:pali-canon</code>), format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
       window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "filter": originalFilterValue }, "", window.location.href);
     }
     searchBox.addEventListener('input', newQuery);
@@ -204,6 +200,6 @@
     console.error(e)
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
-      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
+      '<li class="instructions"><a href="https://www.google.com/search?q=site%3Abuddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();

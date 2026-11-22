@@ -76,6 +76,7 @@ vm.runInContext(
   'this.suttaCentralUid = suttaCentralUid;\n' +
   'this.resultsIncludeSutta = resultsIncludeSutta;\n' +
   'this.suttaCentralUrl = suttaCentralUrl;\n' +
+  'this.normalizeQuery = normalizeQuery;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
@@ -83,7 +84,8 @@ vm.runInContext(
 const {
   categoryName, getPositions, resultMatched,
   addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
-  suttaCentralUid, resultsIncludeSutta, suttaCentralUrl
+  suttaCentralUid, resultsIncludeSutta, suttaCentralUrl,
+  normalizeQuery
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -443,6 +445,37 @@ describe('applyErrorStyle', () => {
     const result = applyErrorStyle(mockWarning, false);
     assert.ok(result.includes('class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important;'));
   });
+});
+
+// ── normalizeQuery ──────────────────────────────────────────────────
+
+describe('normalizeQuery', () => {
+  for (const [name, q, normalized] of [
+    ['plain query', '+agama -author:analayo', '+agama -author:analayo'],
+    ['tag hyphen', 'tag:pali-canon', 'tag:pali\\-canon'],
+    ['every tag hyphen', 'tag:east-asian-religion', 'tag:east\\-asian\\-religion'],
+    ['topic hyphen, left to lunr', 'topic:self-view', 'topic:self-view'],
+    ['presence prefixes', '+tag:a-b -topic:c-d', '+tag:a\\-b -topic:c-d'],
+    ['hyphen runs', 'tag:hello--world', 'tag:hello\\-\\-world'],
+    ['edge hyphens', 'tag:-left topic:right-', 'tag:\\-left topic:right'],
+    ['doubled edge hyphens', 'tag:--both--', 'tag:\\-\\-both\\-\\-'],
+    ['prohibited, edge hyphen', '-tag:-left', '-tag:\\-left'],
+    ['stacked prefixes', '-+tag:a-b ++x', '-tag:a\\-b +x'],
+    ['plain hyphen runs', 'hello--world', 'hello-world'],
+    ['plain trailing hyphens', 'right--', 'right'],
+    ['bare hyphens', 'a - b --', 'a b'],
+    ['empty tag value', 'tag: x', 'x'],
+    ['underscore', 'tag:breath_geoff', 'tag:breath\\_geoff'],
+    ['no fuzzy or boosted tags', 'tag:right-~1 tag:a-b^2', 'tag:right\\-\\~1 tag:a\\-b\\^2'],
+    ['stray ~ and ^', 'tag:a~b tag:c^', 'tag:a\\~b tag:c\\^'],
+    ['field in a tag value', 'tag:tag:x', 'tag:tag\\:x'],
+    ['adjacent tag terms', 'tag:a-btag:c', 'tag:a\\-btag\\:c'],
+    ['other fields', 'author:white-clad title:a:b', 'author:white-clad title:a:b'],
+    ['accents', 'tag:ñāṇa-dassana', 'tag:ñāṇa\\-dassana'],
+    ['whitespace', '  tag:a-b \t x ', 'tag:a\\-b x'],
+  ]) {
+    it(`${name}: ${q}`, () => assert.equal(normalizeQuery(q), normalized));
+  }
 });
 
 // ── handleSearchMessage ─────────────────────────────────────────────

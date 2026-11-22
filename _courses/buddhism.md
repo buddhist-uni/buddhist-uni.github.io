@@ -2,6 +2,7 @@
 title: Buddhism 101
 subtitle: Ancient Wisdom, Modern Times
 layout: multipartcourse
+permalink: "/courses/buddhism/"
 part_header: "Module # of An Introduction to Buddhism"
 toc:
   - ['what-is', 'What is Buddhism?']
@@ -78,7 +79,7 @@ There will be homework and challenges, but there will *not*{:.underline} be grad
 <h2 id="prerequisites">Is this course right for me?</h2>
 
 This course will take about **2 months** to complete and will contain readings and lectures in college-level, American English.
-To peruse the material in advance, see [the bibliography](/tags/buddhism).
+To peruse the material in advance, see [the bibliography](/topics/buddhism).
 
 Note that this course is geared towards **complete beginners**.
 If that's not you, please take one of our more advanced introductory courses instead:

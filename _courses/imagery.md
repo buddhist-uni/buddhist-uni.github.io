@@ -23,6 +23,7 @@ toc:
 google_docs_id: 1Y7j4m6FNw_j5FbCkNEVF84sDkSxAGlyItuVYcEuVs7w
 feedback_id: Imagery+in+the+EBTs
 layout: multipartcourse
+permalink: "/courses/imagery/"
 next_courses:
   - philosophy
   - nibbana

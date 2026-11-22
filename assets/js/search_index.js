@@ -31,7 +31,8 @@ var store = { {% assign all = site.documents | concat: site.pages %}
         "type": "{{ p.collection | default: 'pages' }}",
         "title": {{ p.title | markdownify | strip_html | normalize_whitespace | jsonify }},
         "description": {{ p.description | markdownify | strip_html | normalize_whitespace | jsonify }},
-        "tags": {% assign tags = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% if tag.title %}{% assign tags = tags | push: tag.title %}{% assign tt = tag.title | slugify %}{% else %}{% assign tt = "" %}{% endif %}{% unless tt contains t %}{% assign tags = tags | push: t %}{% endunless %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% if course.title %}{% assign tags = tags | push: course.title %}{% assign tt = course.title | slugify %}{% else %}{% assign tt = "" %}{% endif %}{% unless tt contains p.course %}{% assign tags = tags | push: p.course %}{% endunless %}{% endif %}{{ tags | jsonify }},
+        "tags": {% assign tags = p.tags | default: emptylist %}{% if p.course %}{% assign tags = tags | push: p.course %}{% endif %}{{ tags | jsonify }},
+        "tagtitles": {% assign titles = emptylist %}{% for t in p.tags %}{% assign tag = site.tags | find: "slug", t %}{% unless tag %}{% assign tag = site.courses | find: "slug", t %}{% endunless %}{% assign title = tag.title | default: t %}{% assign titles = titles | push: title %}{% endfor %}{% if p.course %}{% assign course = site.courses | find: "slug", p.course %}{% unless course %}{% assign course = site.tags | find: "slug", p.course %}{% endunless %}{% assign title = course.title | default: p.course %}{% assign titles = titles | push: title %}{% endif %}{{ titles | jsonify }},
         "category": {{ p.category | jsonify }},
         "subcategory": {{ p.subcat | jsonify }},
         "formats": {% assign formats = '' | split: '' %}{% for f in p.drive_links %}{% assign formats = formats | push: p.formats[forloop.index0] %}{% endfor %}{{ formats | jsonify}},
@@ -48,22 +49,47 @@ var idx = lunr(function () {
     this.ref('id'); this.field('title', { boost: 10 });
     this.field('author', { boost: 2 }); this.field('content');
     this.field('translator'); this.field('format');
-    this.field('tag', { boost: 4 }); this.field('description', { boost: 2 });
+    this.field('tag', { boost: 4 }); this.field('topic', { boost: 4 });
+    this.field('description', { boost: 2 });
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
+    // Array fields hold [position in the tag titles, token] pairs
+    this.tokenizer = function (obj, metadata) {
+        if (!Array.isArray(obj)) return lunr.tokenizer(obj, metadata);
+        return obj.map(function (p) { return new lunr.Token(p[1].toLowerCase(), { fields: metadata.fields, position: p[0] }); });
+    };
     // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
-    this.pipeline.remove(lunr.stemmer);
-    this.searchPipeline.remove(lunr.stemmer);
-    this.pipeline.add(OBU_STEMMER);
-    this.searchPipeline.add(OBU_STEMMER);
+    // The tag field skips the pipeline, so tag: matches a slug exactly
+    function exceptTags(fn) {
+        return function (token) { return token.metadata.fields == 'tag' ? token : fn.apply(this, arguments); };
+    }
+    this.pipeline.reset();
+    this.searchPipeline.reset();
+    [lunr.trimmer, lunr.stopWordFilter, OBU_STEMMER].forEach(function (fn) { this.pipeline.add(exceptTags(fn)); }, this);
+    this.searchPipeline.add(exceptTags(OBU_STEMMER));
+    var pipeline = this.pipeline;
+    function terms(s) { return pipeline.run(lunr.tokenizer(s)).map(String); }
+    // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
+    function words(s) { return spacifyNonAlphanumeric(utils.unaccented(s)); }
     for (var key in store) {
-        var v = store[key];
+        var v = store[key], at = 0, tag = [];
+        // NFC keeps highlight offsets aligned
+        v.tagtitles = v.tagtitles.map(function (t) { return t.normalize('NFC'); });
+        var topic = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
+        // topic also gets each slug's words that its title lacks
+        v.tagtitles.forEach(function (title, i) {
+            var whole = [at, title.length], titleterms = terms(words(title));
+            tidyHyphens(v.tags[i]).split('-').forEach(function (w) { if (!titleterms.includes(terms(w)[0])) topic.push([whole, w]); });
+            tag.push([whole, v.tags[i]]);
+            at += title.length + 1;
+        });
         this.add({
             'id': key, 'title': utils.unaccented(v.title),
             'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
             'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
-            'tag': v.tags.join(' '), 'description': utils.unaccented(v.description),
+            'tag': tag, 'topic': topic,
+            'description': utils.unaccented(v.description),
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }
@@ -72,5 +98,5 @@ var idx = lunr(function () {
 joinedTitles = normalizeSuttaTitles(store);
 
 self.onmessage = function(e) {
-  self.postMessage(handleSearchMessage(e.data, idx.search.bind(idx)));
+  self.postMessage(handleSearchMessage(e.data, searchIndex.bind(null, idx)));
 }

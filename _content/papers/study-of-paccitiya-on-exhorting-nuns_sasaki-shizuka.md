@@ -2,11 +2,9 @@
 title: "Analytical Study of the Monks’ pācittiya 波逸提 Rules"
 authors:
  - "Sasaki Shizuka"
-booktitle: "Rules of Engagement"
+from_book: rules-of-engagement_andrews-et-al
 pages: "317--331"
 chapter: 10
-publisher: "Verlag"
-address: "Freiberg"
 source_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/hamburgup-hbs09-full.pdf"
 year: 2017
 file_links:

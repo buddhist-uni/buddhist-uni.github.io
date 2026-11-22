@@ -2,11 +2,9 @@
 title: "Pāṃśukūlika as a Standard Practice in the Vinaya"
 authors:
  - "Nicholas Witkowski"
-booktitle: "Rules of Engagement"
+from_book: rules-of-engagement_andrews-et-al
 pages: "269--315"
 chapter: 9
-publisher: "Verlag"
-address: "Freiberg"
 source_url: "https://www.buddhismuskunde.uni-hamburg.de/pdf/4-publikationen/hamburg-buddhist-studies/hamburgup-hbs09-full.pdf"
 year: 2017
 file_links:
