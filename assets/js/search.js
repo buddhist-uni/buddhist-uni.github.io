@@ -1,5 +1,4 @@
 (function () {
-  const QMIN = 3;
   const CHECKTIME = 2500;
   var searchResults = document.getElementById('search-results');
   var loadingIndicator = document.getElementById('search-loading');
@@ -17,25 +16,18 @@
       stillLoading.style.display = 'block';
     }
   };
-  function sanitizeQuery(q) {
-    if (!q || typeof q == 'undefined') return '';
-    var ret = utils.unaccented(q.replace(/[^\P{P}:-]+/ug, ''));
-    if (ret.length < QMIN) return '';
-    return ret;
-  }
   
   const searchBox = document.getElementById('search-box');
   const filterDropdown = document.getElementById("search-filter");
 
   // Initialize search box and remember original value
-  var originalSearchTerm = sanitizeQuery(getQueryVariable('q'));
+  const urlQuery = getQueryVariable('q');
+  var originalSearchTerm = sanitizeQuery(urlQuery) ? urlQuery : '';
   searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize filter dropdown and remember original value
-  var originalFilterValue = sanitizeQuery(getQueryVariable('filter'));
-  if (originalFilterValue !== null && originalFilterValue !== '') {
-    filterDropdown.value = originalFilterValue;
-  }
+  filterDropdown.value = sanitizeQuery(getQueryVariable('filter'));
+  var originalFilterValue = filterDropdown.value;
 
   setTitle(originalSearchTerm);
 
@@ -44,16 +36,16 @@
   var checker = setTimeout(checkRunning, CHECKTIME);
 
   function maybeRegisterNavigation() {
-    if (this.q == sanitizeQuery(searchBox.value) && this.filterquery == sanitizeQuery(filterDropdown.value)) {
+    if (this.q == searchBox.value && this.filterquery == filterDropdown.value) {
       clearTimeout(pendingui);
       var nuri = '?q=' + encodeURIComponent(this.q);
       if (this.filterquery !== null && this.filterquery !== '') {
         nuri += '&filter=' + encodeURIComponent(this.filterquery);
       }
       setTitle(this.q);
-      if (this.q != originalSearchTerm || this.filterquery != originalFilterValue) {
+      if (sanitizeQuery(this.q) != sanitizeQuery(originalSearchTerm) || this.filterquery != originalFilterValue) {
         window.history.pushState(this, "", nuri);
-        if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: this.q });
+        if (typeof gtag != 'undefined') gtag('event', 'search', { search_term: sanitizeQuery(this.q) });
         originalSearchTerm = this.q;
         originalFilterValue = this.filterquery;
       } else {
@@ -88,8 +80,7 @@
         filterQuery = filterValue;
       }
 
-      q = sanitizeQuery(q);
-      if (!q) return;
+      if (!sanitizeQuery(q)) return;
       if (pendingui) {
         clearTimeout(pendingui);
         pendingui = null;
@@ -150,16 +141,14 @@
       }
     }
     if (originalSearchTerm) {
-      const filterValue = sanitizeQuery(getQueryVariable('filter'));
-      const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': originalFilterValue, 'qt': performance.now() });
       running = 1;
     }
     
      else {
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
-      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
+      searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, topic (words of topic titles), tag (a topic slug or freeform tag, matched exactly, e.g. <code>tag:pali-canon</code>), format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
       window.history.replaceState({ "html": searchResults.innerHTML, "q": "", "filter": originalFilterValue }, "", window.location.href);
     }
     searchBox.addEventListener('input', newQuery);
@@ -170,6 +159,6 @@
     console.error(e)
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
-      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
+      '<li class="instructions"><a href="https://www.google.com/search?q=site%3Abuddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();

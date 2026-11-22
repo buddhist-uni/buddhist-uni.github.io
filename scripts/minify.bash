@@ -10,7 +10,7 @@ fi
 shopt -s globstar
 
 echo "Removing unused CSS Rules..."
-npx purgecss -v --content "$BUILD_DIR/**/*.html" "$BUILD_DIR/assets/js/*.js" --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
+npx purgecss -v --keyframes --content "$BUILD_DIR/**/*.html" "$BUILD_DIR/assets/js/*.js" --css $BUILD_DIR/assets/css/main.css -o $BUILD_DIR/assets/css/purged-main.css
 test -s $BUILD_DIR/assets/css/purged-main.css
 
 echo "Minifying CSS..."

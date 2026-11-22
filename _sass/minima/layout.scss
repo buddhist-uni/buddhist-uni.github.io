@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "../support" as *;
+@use "base"; // for %clearfix
 
 /**
  * Site header

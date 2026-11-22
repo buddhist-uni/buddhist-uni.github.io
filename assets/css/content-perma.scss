@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "support";
+@use "../../_sass/support" as *;
 
 article.content-perma {
     @media (min-width: 475px) {

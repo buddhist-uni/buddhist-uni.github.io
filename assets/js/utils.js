@@ -16,16 +16,16 @@ const UNSTEMMED_WORDS = new Set([
 ]);
 
 function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
+    return new URLSearchParams(window.location.search).get(variable) ?? undefined;
+}
 
-    for (var i = 0; i < vars.length; i++) {
-      var pair = vars[i].split('=');
-
-      if (pair[0] === variable) {
-        return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-      }
-    }
+const QMIN = 3;
+function sanitizeQuery(q) {
+    if (!q || typeof q == 'undefined') return '';
+    // _ stays inside words, as in tag:breath_geoff
+    var ret = utils.unaccented(q.replace(/[^\P{P}:_-]+/ug, '').replace(/(^|[^\p{L}\p{N}])_+|_+(?![\p{L}\p{N}])/ug, '$1'));
+    if (ret.length < QMIN) return '';
+    return ret;
 }
 
 function UpdateQueryString(key, value, url) {
@@ -88,6 +88,7 @@ var utils = {
     'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""):str; },
     'ascii': /^[ -~]+$/
 };
+function spacifyNonAlphanumeric(s) { return s.replace(/[^\p{L}\p{N}]/gu, ' '); }
 
 class Ranges {
     constructor() {

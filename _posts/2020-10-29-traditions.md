@@ -2,7 +2,7 @@
 title: "The Two Traditions of Buddhism"
 ---
 
-This month [the library](/library) took its first tentative steps towards covering the different forms of Buddhism, with new bibliographies on [Theravāda](/tags/theravada) and [Mahayana](/tags/mahayana) Buddhism.
+This month [the library](/library) took its first tentative steps towards covering the different forms of Buddhism, with new bibliographies on [Theravāda](/topics/theravada) and [Mahayana](/topics/mahayana) Buddhism.
 
 From the South, I'd like to highlight:
 

@@ -3,7 +3,7 @@ title: "Study Time"
 ---
 
 This month we've added three sections to our library on
-[Karma](/tags/karma), [Philosophical Dialogues](/tags/dialogue), and [Time](/tags/time).
+[Karma](/topics/karma), [Philosophical Dialogues](/topics/dialogue), and [Time](/topics/time).
 
 ## Karma
 
@@ -32,7 +32,7 @@ traces the wider cultural resonances behind the Pāli word '*dāyādo*' giving u
 nuanced appreciation of that one line of chanting above.
 
 I hope that this and the other free books, talks, suttas, and more that we've put together
-in [our new bibliography](/tags/karma) will help you make sense of this
+in [our new bibliography](/topics/karma) will help you make sense of this
 "imponderable" philosophy---without driving you mad!
 
 ## Buddhist Philosophy in Dialogue
@@ -44,13 +44,13 @@ For that version of the story of Buddhism, you could certainly do worse than rea
 [Kalupahana's *History of Buddhist Philosophy*](https://archive.org/details/historyofbuddhistphilosophycontinuitiesanddiscontinuitiesdavidkalupahanaj._915_e/page/n1/mode/1up)
 which strikes a refreshing balance between the early and later Buddhist perspectives, giving an excellent overview of its titular subject.
 
-And in [the rest of our bibliography on Buddhist dialogue](/tags/dialogue),
+And in [the rest of our bibliography on Buddhist dialogue](/topics/dialogue),
 you'll find a variety of other instructive and interesting topics in Buddhist philosophy
 which continue to shape the religion today.
 
 ## Time
 
-And for the larger arc of _human_ history, I'm pleased to share with you [a new bibliography on "Time"](/tags/time).
+And for the larger arc of _human_ history, I'm pleased to share with you [a new bibliography on "Time"](/topics/time).
 
 There you will find a mix of [books about history](/content/monographs/making-sense-of-world-history_szostak-rick)
 along with works on the [philosophy of time](/content/essays/time-being_dogen)

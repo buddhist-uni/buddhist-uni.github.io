@@ -1,28 +1,28 @@
-const { describe, it } = require('node:test');
+const { describe, it, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const path = require('node:path');
 const { HtmlValidate } = require('html-validate');
 
-const htmlValidate = new HtmlValidate({
-  rules: {
-    'void-style': 'off',
-    'no-trailing-whitespace': 'off',
-    'doctype-html': 'off',
-    'document-structure': 'off',
-    'missing-doctype': 'off',
-    'element-required-content': 'off',
-    'no-raw-characters': 'off',
-  }
-});
+const htmlValidate = new HtmlValidate({ extends: ['html-validate:standard'] });
 
 function assertValidHtml(html, label) {
-  const report = htmlValidate.validateStringSync(`<div>${html}</div>`);
+  const report = htmlValidate.validateStringSync(html);
   assert.ok(report.valid, `${label}: invalid HTML — ${
     report.results.flatMap(r => r.messages.map(m => m.message)).join('; ')
   }`);
 }
+
+describe('assertValidHtml', () => {
+  it('rejects misnested tags', () => {
+    assert.throws(() => assertValidHtml('<p>a <strong>b</p>', 'misnested'), /Unclosed element/);
+  });
+
+  it('rejects list items outside a list', () => {
+    assert.throws(() => assertValidHtml('<ul><div><li>a</li></div></ul>', 'list'), /not permitted/);
+  });
+});
 
 // Helper: bring vm-realm objects into the current realm for deepEqual
 function toLocal(obj) { return JSON.parse(JSON.stringify(obj)); }
@@ -73,13 +73,15 @@ vm.runInContext(
   'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
   'this.applyErrorStyle = applyErrorStyle; \n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
+  'this.normalizeQuery = normalizeQuery;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
 );
 
 const {
   categoryName, getPositions, resultMatched,
-  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage
+  addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
+  normalizeQuery
 } = sandbox;
 
 // ── categoryName ────────────────────────────────────────────────────
@@ -435,6 +437,37 @@ describe('applyErrorStyle', () => {
   });
 });
 
+// ── normalizeQuery ──────────────────────────────────────────────────
+
+describe('normalizeQuery', () => {
+  for (const [name, q, normalized] of [
+    ['plain query', '+agama -author:analayo', '+agama -author:analayo'],
+    ['tag hyphen', 'tag:pali-canon', 'tag:pali\\-canon'],
+    ['every tag hyphen', 'tag:east-asian-religion', 'tag:east\\-asian\\-religion'],
+    ['topic hyphen, left to lunr', 'topic:self-view', 'topic:self-view'],
+    ['presence prefixes', '+tag:a-b -topic:c-d', '+tag:a\\-b -topic:c-d'],
+    ['hyphen runs', 'tag:hello--world', 'tag:hello\\-\\-world'],
+    ['edge hyphens', 'tag:-left topic:right-', 'tag:\\-left topic:right'],
+    ['doubled edge hyphens', 'tag:--both--', 'tag:\\-\\-both\\-\\-'],
+    ['prohibited, edge hyphen', '-tag:-left', '-tag:\\-left'],
+    ['stacked prefixes', '-+tag:a-b ++x', '-tag:a\\-b +x'],
+    ['plain hyphen runs', 'hello--world', 'hello-world'],
+    ['plain trailing hyphens', 'right--', 'right'],
+    ['bare hyphens', 'a - b --', 'a b'],
+    ['empty tag value', 'tag: x', 'x'],
+    ['underscore', 'tag:breath_geoff', 'tag:breath\\_geoff'],
+    ['no fuzzy or boosted tags', 'tag:right-~1 tag:a-b^2', 'tag:right\\-\\~1 tag:a\\-b\\^2'],
+    ['stray ~ and ^', 'tag:a~b tag:c^', 'tag:a\\~b tag:c\\^'],
+    ['field in a tag value', 'tag:tag:x', 'tag:tag\\:x'],
+    ['adjacent tag terms', 'tag:a-btag:c', 'tag:a\\-btag\\:c'],
+    ['other fields', 'author:white-clad title:a:b', 'author:white-clad title:a:b'],
+    ['accents', 'tag:ñāṇa-dassana', 'tag:ñāṇa\\-dassana'],
+    ['whitespace', '  tag:a-b \t x ', 'tag:a\\-b x'],
+  ]) {
+    it(`${name}: ${q}`, () => assert.equal(normalizeQuery(q), normalized));
+  }
+});
+
 // ── handleSearchMessage ─────────────────────────────────────────────
 
 describe('handleSearchMessage', () => {
@@ -450,12 +483,65 @@ describe('handleSearchMessage', () => {
     assert.equal(result.qt, 'test');
   });
 
+  it('searches the sanitized query and returns it as given', () => {
+    const queries = [];
+    const result = toLocal(handleSearchMessage({ q: '“Nibbāna?”', filterquery: '', qt: '' }, (q) => { queries.push(q); return []; }));
+    assert.equal(queries[0], '+Nibbana');
+    assert.equal(result.q, '“Nibbāna?”');
+  });
+
+  describe('warnings', () => {
+    before(() => vm.runInContext(
+      'store["q"] = { type:"content", title:"Q", description:"desc q", content:"", ' +
+      '  tags:[], authors:[], category:"articles", formats:[], url:"/q" };\n',
+      sandbox
+    ));
+    after(() => vm.runInContext('delete store["q"];', sandbox));
+    const hit = [{ ref: 'q', matchData: { metadata: {} } }];
+    const anyTerm = () => { let calls = 0; return () => calls++ ? hit : []; };
+    const warningFor = (q, searchFn = () => []) =>
+      toLocal(handleSearchMessage({ q, filterquery: '', qt: '' }, searchFn)).warninghtml;
+    const quoteWarning = "<span role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</span>";
+    const anyTermWarning = '<strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:';
+
+    it('shows the exact-phrase warning', () => {
+      assert.equal(warningFor('"noble truths"'), applyErrorStyle(quoteWarning, true));
+    });
+
+    for (const quote of '"“”„‟«»＂〝〞〟″「」『』') {
+      it(`warns about ${quote}`, () => {
+        assert.match(warningFor(`${quote}noble truths`), /quotation marks/);
+      });
+    }
+
+    it('does not warn without double quotes', () => {
+      assert.equal(warningFor('noble truths'), '');
+      assert.equal(warningFor("buddha's ‘noble’ truths"), '');
+    });
+
+    it('shows a single warning as before', () => {
+      assert.equal(warningFor('noble truths', anyTerm()), applyErrorStyle(anyTermWarning, true));
+    });
+
+    it('gives each warning its own icon', () => {
+      assert.equal(warningFor('"noble truths"', anyTerm()), applyErrorStyle(quoteWarning, true) + applyErrorStyle(anyTermWarning, true));
+      assertValidHtml(`<ul>${warningFor('"noble truths"', anyTerm())}</ul>`, 'two warnings');
+    });
+
+    it('keeps the quote warning when only the fuzzy retry finds results', () => {
+      const html = warningFor('"noble truths"', (q) => q.includes('~1') ? hit : []);
+      assert.equal(html.match(/fa-triangle-exclamation/g).length, 2);
+      assert.match(html, /quotation marks[^]*Perhaps you meant/);
+    });
+  });
+
   it('returns no-results HTML when search yields nothing', () => {
     const mockSearch = () => [];
     const data = { q: 'xyz', filterquery: '', qt: '' };
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.count, 0);
     assert.ok(result.html.includes('No results found'));
+    assertValidHtml(`<ul>${result.html}</ul>`, 'no results');
   });
 
   it('prefixes non-stop words with + for required matching', () => {
@@ -536,6 +622,7 @@ describe('handleSearchMessage', () => {
     const data = { q: 'test', filterquery: 'filter:tag', qt: '' };
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.count, 1);
+    assertValidHtml(`<ul>${result.html}</ul>`, 'filtered results');
     // Clean up store
     vm.runInContext('delete store["a"]; delete store["b"];', sandbox);
   });

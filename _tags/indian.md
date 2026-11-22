@@ -23,5 +23,5 @@ footer_info: <a href="https://commons.wikimedia.org/wiki/File:N-BR-39_Ashokan_Pi
 ---
 
 The common history of the Buddhist traditions in India, from the Buddha's *parinirvāṇa* until the closing of the Pāli Canon.
-For India at the time of the Buddha, see [Buddha's India](/tags/setting).
+For India at the time of the Buddha, see [Buddha's India](/topics/setting).
 

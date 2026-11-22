@@ -3,7 +3,7 @@ title: Library
 section: library
 slug: library
 permalink: /library/
-next_link: /tags/
+next_link: /topics/
 rss_url: /feed/content.xml
 rss_title: "All Library Content"
 image: "https://www.buddhistuniversity.net/imgs/nostalgic-gate.jpeg"
@@ -21,8 +21,8 @@ The same, great content featured in [the courses](/courses/) along with other re
 You can explore the library by:
 {:.mb-0}
 
-### [<i class="fas fa-tag"></i> Topics](/tags/)
-Find a topic that interests you in the topic index or simply start from the top ([at "_Buddhism_")](/tags/buddhism) and explore the library "room by room" by clicking on the "[Subtopic links](/tags/buddhism#children)" at the bottom of each bibliography. (Note that individual items in the library may appear in multiple bibliographies if they are tagged with multiple subjects.)
+### [<i class="fas fa-sitemap"></i> Topics](/topics/)
+Find a topic that interests you in the topic index or simply start from the top ([at "_Buddhism_")](/topics/buddhism) and explore the library "room by room" by clicking on the "[Subtopic links](/topics/buddhism#children)" at the bottom of each bibliography. (Note that individual items in the library may appear in multiple bibliographies if they are tagged with multiple subjects.)
 
 ### [<i class="fas fa-medal"></i> Timeline]({% link highlights.html %})
 Here you'll find the latest and greatest publications in the library sorted by year.

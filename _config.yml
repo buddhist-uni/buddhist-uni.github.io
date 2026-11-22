@@ -39,6 +39,7 @@ markdown: kramdown
 sass:
   load_paths:
     - "node_modules"
+  fatal_deprecations: [import, global-builtin]
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -115,7 +116,7 @@ collections:
      permalink: /:collection/:path
   tags:
      output: true
-     permalink: /:collection/:name
+     permalink: /topics/:name
      order:
        - buddhism.md
        - function.md

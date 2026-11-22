@@ -2,12 +2,12 @@
 title: "April Showers"
 ---
 
-This month I've gotten a solid start on migrating over content from my [Google Drive folder](https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}. You'll now find **four** new [topic tags](/tags/) added to the [library](/library).
+This month I've gotten a solid start on migrating over content from my [Google Drive folder](https://drive.google.com/drive/folders/1NRjvD6E997jdaRpN5zAqxnaZv0SM-SOv){:target="_blank" ga-event-value="{{ site.data.ga.drive_folder_value }}"}. You'll now find **four** new [topic tags](/topics/) added to the [library](/library).
 
-- [Imagery in the Early Buddhist Texts](/tags/imagery)
-- [Lay Buddhism](/tags/lay)
-- [The Buddhist Path](/tags/path)
-- [Buddhist Philosophy](/tags/philosophy)
+- [Imagery in the Early Buddhist Texts](/topics/imagery)
+- [Lay Buddhism](/topics/lay)
+- [The Buddhist Path](/topics/path)
+- [Buddhist Philosophy](/topics/philosophy)
 
 Lots of new content has been added to fill those bibliographies, so check them out! In particular I'm excited to share with you:
 
@@ -24,7 +24,7 @@ Lots of new content has been added to fill those bibliographies, so check them o
 - [This lovely sutta (SN 35.247)](/content/canon/sn35.247) which compares cognitive dissonance to six animals tied together: either with or without the "post" of mindfulness
 - And, with calamity crushing in from all sides these days, [The Mountain Simile](/content/canon/sn3.25) feels more relevant than ever.
 
-And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey](/content/av/studying-buddhist-scripture_hallisey-charles) which has been added to [Buddhism](/tags/buddhism) and [the Early Buddhist Texts](/tags/ebts).
+And last, but certainly not least, I am very excited to share with you [this profound interview with Professor Charles Hallisey](/content/av/studying-buddhist-scripture_hallisey-charles) which has been added to [Buddhism](/topics/buddhism) and [the Early Buddhist Texts](/topics/ebts).
 
 I hope you enjoy this month's arrivals and, as always, feel free to email me with any thoughts or questions you might have.
 

@@ -3,20 +3,20 @@ var BMAX = 250; // Max blurb size in characters
 var RMAX = 100; // Max number of results to display
 var joinedTitles = []
 
-function normalizeSuttaTitles (obj) {
+function normalizeSuttaTitles(obj) {
   var joinedTitleDatabase = []
 
-  for (var i in obj){
+  for (var i in obj) {
     const item = obj[i];
     if (!item || item.type !== "content" || item.category !== "canon") continue;
     const title = item.title || "";
-      const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
-      const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
-      if(removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
-        joinedTitleDatabase.push({
-          ref: i,
-          title: removedTheOnJoin,
-          matchData: { metadata: {} }
+    const titleJoin = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^\s*(?:DN|MN|SN|AN|KN|LAL|DA|MA|SA|EA|SNP|DHP|ITI|THAG|THIG|UD|NIDD|CV|BV|AP|JA|PV|VV|KP|PTS)\s*\d+(?:\.\d+)?\s*[:.-]?\s*/i, "").replace(/\s*[:\-–]\s*.*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    const removedTheOnJoin = titleJoin.replace(/^\s*(?:the)\s*/i, "");
+    if (removedTheOnJoin.includes('sutta') || removedTheOnJoin.includes('sutra') || removedTheOnJoin.includes('gatha')) {
+      joinedTitleDatabase.push({
+        ref: i,
+        title: removedTheOnJoin,
+        matchData: { metadata: {} }
       });
     }
   }
@@ -24,178 +24,179 @@ function normalizeSuttaTitles (obj) {
 }
 
 function getPositions(result, field) {
-    var positions = [];
-    var md = result.matchData.metadata;
-    for (var searchTerm in md) {
-        var fieldResults = md[searchTerm][field];
-        if (!fieldResults) continue;
-        for (var p in fieldResults.position) sortedInsert(positions, fieldResults.position[p][0]);
-    }
-    return positions;
+  var positions = [];
+  var md = result.matchData.metadata;
+  for (var searchTerm in md) {
+    var fieldResults = md[searchTerm][field];
+    if (!fieldResults) continue;
+    for (var p in fieldResults.position) sortedInsert(positions, fieldResults.position[p][0]);
+  }
+  return positions;
 }
 
 function resultMatched(result, fromfield) {
-    let md = result.matchData.metadata;
-    for (var st in md) {
-        if (!md[st][fromfield]) continue;
-        for (var mi in md[st][fromfield]['position']) return true;
-    }
-    return false;
+  let md = result.matchData.metadata;
+  for (var st in md) {
+    if (!md[st][fromfield]) continue;
+    for (var mi in md[st][fromfield]['position']) return true;
+  }
+  return false;
 }
 
-function addMatchHighlights(result, blurb, fromfield, startindex, endindex) {
-    var startindex = startindex || 0;
-    var endindex = endindex || blurb.length;
-    var ranges = new Ranges();
-    let md = result.matchData.metadata;
-    var i = 0; var j = 0;
-    for (var searchTerm in md) {
-        if (!md[searchTerm][fromfield]) continue;
-        for (var mi in md[searchTerm][fromfield].position) {
-            let m = md[searchTerm][fromfield].position[mi];
-            i = m[0]; j = i+m[1];
-            if (i < endindex && j > startindex) {
-                ranges.add([(startindex>i?startindex:i)-startindex, j-startindex]);
-            }
+function addMatchHighlights(result, blurb, fromfields, startindex, endindex) {
+  var startindex = startindex || 0;
+  var endindex = endindex || blurb.length;
+  var ranges = new Ranges();
+  let md = result.matchData.metadata;
+  var i = 0; var j = 0;
+  for (var searchTerm in md) {
+    for (var fromfield of [].concat(fromfields)) {
+      if (!md[searchTerm][fromfield]) continue;
+      for (var mi in md[searchTerm][fromfield].position) {
+        let m = md[searchTerm][fromfield].position[mi];
+        i = m[0]; j = i + m[1];
+        if (i < endindex && j > startindex) {
+          ranges.add([(startindex > i ? startindex : i) - startindex, j - startindex]);
         }
+      }
     }
-    i = ranges.array.length - 1;
-    var ret = blurb;
-    while (i >= 0) {
-        ret = ret.substring(0,ranges.array[i][0]) +
-            '<strong>' + ret.substring(ranges.array[i][0],ranges.array[i][1]) +
-            '</strong>' + ret.substring(ranges.array[i][1], ret.length);
-        i--;
-    }
-    return ret;
+  }
+  i = ranges.array.length - 1;
+  var ret = blurb;
+  while (i >= 0) {
+    ret = ret.substring(0, ranges.array[i][0]) +
+      '<strong>' + ret.substring(ranges.array[i][0], ranges.array[i][1]) +
+      '</strong>' + ret.substring(ranges.array[i][1], ret.length);
+    i--;
+  }
+  return ret;
 }
 
 function getBlurbForResult(result, item, positions) {
-    var titleMatch = false;
-    let md = result.matchData.metadata;
-    for (var searchTerm in md) {
-        if (md[searchTerm]['title']) {
-            titleMatch = true;
-            break;
-        }
+  var titleMatch = false;
+  let md = result.matchData.metadata;
+  for (var searchTerm in md) {
+    if (md[searchTerm]['title']) {
+      titleMatch = true;
+      break;
     }
-    if ((titleMatch || positions.length == 0) && item.description){
-      var ret = item.description;
-      if (item.description.length > BMAX)
-        ret = item.description.substring(0, BMAX) + "...";
-      return addMatchHighlights(result, ret, 'description');
+  }
+  if ((titleMatch || positions.length == 0) && item.description) {
+    var ret = item.description;
+    if (item.description.length > BMAX)
+      ret = item.description.substring(0, BMAX) + "...";
+    return addMatchHighlights(result, ret, 'description');
+  }
+  // Calculate the best section of the content to blurb
+  var best_i = -1;
+  var best_n = 0;
+  for (var i = 0; i < positions.length; i++) {
+    var n = 1;
+    var j = i + 1;
+    while (j < positions.length) {
+      if (positions[j] > positions[i] + BMAX) break;
+      n++; j++;
     }
-    // Calculate the best section of the content to blurb
-    var best_i = -1;
-    var best_n = 0;
-    for (var i = 0; i < positions.length; i++) {
-        var n = 1;
-        var j = i+1;
-        while (j < positions.length) {
-            if (positions[j] > positions[i] + BMAX) break;
-            n++; j++;
-        }
-        if (n > best_n) {
-            best_n = n;
-            best_i = i;
-        }
+    if (n > best_n) {
+      best_n = n;
+      best_i = i;
     }
-    i = positions[best_i];
-    j = positions[best_i + best_n - 1];
-    var m = (i+j)>>1;
-    var startindex = m - (BMAX>>1);
-    var pre = true;
-    if (startindex <= 0){ startindex = 0; pre = false; }
-    var endindex = startindex + BMAX;
-    var ret = item.content.substring(startindex,endindex);
-    ret = addMatchHighlights(result, ret, 'content', startindex, endindex);
-    if (endindex >= item.content.length) return (pre?'...':'') + ret;
-    return (pre?'...':'') + ret + "...";
+  }
+  i = positions[best_i];
+  j = positions[best_i + best_n - 1];
+  var m = (i + j) >> 1;
+  var startindex = m - (BMAX >> 1);
+  var pre = true;
+  if (startindex <= 0) { startindex = 0; pre = false; }
+  var endindex = startindex + BMAX;
+  var ret = item.content.substring(startindex, endindex);
+  ret = addMatchHighlights(result, ret, 'content', startindex, endindex);
+  if (endindex >= item.content.length) return (pre ? '...' : '') + ret;
+  return (pre ? '...' : '') + ret + "...";
 }
 
 function categoryName(c) {
-    switch(c) {
-        case 'av': return '<i class="fas fa-volume-up"></i> Recording';
-        case 'articles': return '<i class="far fa-newspaper"></i> Article';
-        case 'booklets': return '<i class="fas fa-book-open"></i> Book';
-        case 'monographs': return '<i class="fas fa-book"></i> Book';
-        case 'papers': return '<i class="far fa-file-powerpoint"></i> Paper';
-        case 'essays': return '<i class="far fa-file-word"></i> Essay';
-        case 'canon': return '<i class="fas fa-dharmachakra"></i> Canonical Work';
-        case 'reference': return '<i class="fas fa-atlas"></i> Reference Work';
-        case 'excerpts': return '<i class="fas fa-book-reader"></i> Excerpt';
-    }
-    return '<i class="far fa-file"></i> Library Item';
+  switch (c) {
+    case 'av': return '<i class="fas fa-volume-up"></i> Recording';
+    case 'articles': return '<i class="far fa-newspaper"></i> Article';
+    case 'booklets': return '<i class="fas fa-book-open"></i> Book';
+    case 'monographs': return '<i class="fas fa-book"></i> Book';
+    case 'papers': return '<i class="far fa-file-powerpoint"></i> Paper';
+    case 'essays': return '<i class="far fa-file-word"></i> Essay';
+    case 'canon': return '<i class="fas fa-dharmachakra"></i> Canonical Work';
+    case 'reference': return '<i class="fas fa-atlas"></i> Reference Work';
+    case 'excerpts': return '<i class="fas fa-book-reader"></i> Excerpt';
+  }
+  return '<i class="far fa-file"></i> Library Item';
 }
 
 function displaySearchResult(result, item) {
-    var positions = getPositions(result, 'content');
-    var blurb = getBlurbForResult(result, item, positions);
-    var type = null;
-    switch (item.type) {
-        case 'courses': type = '<i class="fas fa-chalkboard"></i> Course'; break;
-        case 'content': type = categoryName(item.category); break;
-        case 'posts': type = '<i class="fas fa-rss"></i> Blog Post'; break;
-        case 'journals': type = '<i class="fas fa-newspaper"></i> Journal'; break;
-        case 'authors': type = '<i class="far fa-address-book"></i> Author'; break;
-        case 'publishers': type = '<i class="far fa-building"></i> Publisher'; break;
-        case 'tags': type = '<i class="fas fa-tag"></i> Bibliography'; break;
-        case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
+  var positions = getPositions(result, 'content');
+  var blurb = getBlurbForResult(result, item, positions);
+  var type = null;
+  switch (item.type) {
+    case 'courses': type = '<i class="fas fa-chalkboard"></i> Course'; break;
+    case 'content': type = categoryName(item.category); break;
+    case 'posts': type = '<i class="fas fa-rss"></i> Blog Post'; break;
+    case 'journals': type = '<i class="fas fa-newspaper"></i> Journal'; break;
+    case 'authors': type = '<i class="far fa-address-book"></i> Author'; break;
+    case 'publishers': type = '<i class="far fa-building"></i> Publisher'; break;
+    case 'tags': type = '<i class="fas fa-sitemap"></i> Bibliography'; break;
+    case 'series': type = '<i class="fas fa-list-ol"></i> Series'; break;
+  }
+  var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
+  if (type) ret += '<span class="Counter">' + type + '</span>';
+  var lc = 0;
+  for (var i in item.authors) {
+    ret += '<span class="Label ml-1">' +
+      addMatchHighlights(result, item.authors[i], 'author', lc, lc + item.authors[i].length) +
+      '</span>';
+    lc += 2 + item.authors[i].length;
+  }
+  if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
+    addMatchHighlights(result, item.translator, 'translator') +
+    '</span>';
+  lc = 0;
+  for (var i in item.tagtitles) {
+    let shadow = item.tagtitles[i] == item.tags[i];
+    let title = shadow ? item.tags[i].replace(/-/g, ' ') : item.tagtitles[i];
+    let t = '<span class="Label ml-1 text-capitalize"><i class="fas ' + (shadow ? 'fa-tag' : 'fa-sitemap') + '"></i> ' +
+      addMatchHighlights(result, title, ['tag', 'topic'], lc, lc + title.length) + '</span>';
+    if (t.includes('<strong>')) ret += t;
+    lc += 1 + title.length;
+  }
+  if (resultMatched(result, 'format')) {
+    lc = 0;
+    for (var i in item.formats) {
+      if (!item.formats[i]) continue;
+      let t = '<span class="Label ml-1"><i class="fas fa-file-arrow-down"></i> ' +
+        addMatchHighlights(result, item.formats[i], 'format', lc, lc + item.formats[i].length) + '</span>';
+      if (t.includes('<strong>')) ret += t;
+      lc += 2 + item.formats[i].length;
     }
-    var ret = '<li><h3><a href="' + item.url + '">' + addMatchHighlights(result, item.title, 'title') + '</a></h3>';
-    if (type) ret += '<span class="Counter">' + type + '</span>';
-    var lc = 0;
-    for (var i in item.authors) {
-        ret += '<span class="Label ml-1">' +
-            addMatchHighlights(result, item.authors[i], 'author', lc, lc + item.authors[i].length) +
-            '</span>';
-        lc += 2 + item.authors[i].length;
-    }
-    if (resultMatched(result, 'translator')) ret += '<span class="Label ml-1">Translator: ' +
-        addMatchHighlights(result, item.translator, 'translator') +
-        '</span>';
-    if (resultMatched(result, 'tag')) {
-        lc = 0;
-        for (var i in item.tags) {
-            if (!item.tags[i]) continue;
-            let t = '<span class="Label ml-1 text-capitalize"><i class="fas fa-tag"></i> ' +
-                addMatchHighlights(result, item.tags[i].replace('-',' '), 'tag', lc, lc + item.tags[i].length) + '</span>';
-            if (t.includes('<strong>')) ret += t;
-            lc += 1 + item.tags[i].length;
-        }
-    }
-    if (resultMatched(result, 'format')) {
-        lc = 0;
-        for (var i in item.formats) {
-            if (!item.formats[i]) continue;
-            let t = '<span class="Label ml-1"><i class="fas fa-file-arrow-down"></i> ' +
-                addMatchHighlights(result, item.formats[i], 'format', lc, lc + item.formats[i].length) + '</span>';
-            if (t.includes('<strong>')) ret += t;
-            lc += 2 + item.formats[i].length;
-        }
-    }
-    return ret + '<p>' + blurb + '</p></li>';
+  }
+  return ret + '<p>' + blurb + '</p></li>';
 }
 
 function displaySearchResults(results) {
-    if (results.length) {
-      var ret = '';
-      for (var i in results) {
-        if (i >= RMAX) break;
-        ret += displaySearchResult(results[i], store[results[i].ref]);
-      }
-      return ret;
-    } else {
-      return applyErrorStyle('<li>No results found</li>', false);
+  if (results.length) {
+    var ret = '';
+    for (var i in results) {
+      if (i >= RMAX) break;
+      ret += displaySearchResult(results[i], store[results[i].ref]);
     }
+    return ret;
+  } else {
+    return applyErrorStyle('No results found', false);
+  }
 }
 
 function findOneWordSuttaTitleMatches(query, joinedTitles) {
   var tokenResults = [];
   const normalizedQuery = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
-  for (var i in joinedTitles){
+  for (var i in joinedTitles) {
     const item = joinedTitles[i]
-    if(item.title === normalizedQuery){
+    if (item.title === normalizedQuery) {
       tokenResults.push({
         ref: item.ref,
         score: 1,
@@ -207,21 +208,55 @@ function findOneWordSuttaTitleMatches(query, joinedTitles) {
 }
 
 function applyErrorStyle(message, isWarning) {
-  if (isWarning){
-    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
-    const icon = '<i class="fa-solid fa-triangle-exclamation" style="color: rgb(207, 182, 45) !important; margin-right: 15px; margin-left: 5px"></i>'
-    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
-  } else {
-    const css = '<div style="display: flex; justify-content: flex-start; align-items: center;">';
-    const icon = '<i class="fa-regular fa-circle-question" style="color: rgb(21, 125, 194) !important; margin-right: 15px; margin-left: 5px"></i>'
-    return css + icon + " " + '<div style="margin-top: 22px;">' + message + "</div>" + "</div>";
-  }
+  const iconClass = isWarning ? "fa-solid fa-triangle-exclamation" : "fa-regular fa-circle-question";
+  const iconColor = isWarning ? "rgb(207, 182, 45)" : "rgb(21, 125, 194)";
+  const containerStyle = "display: flex; justify-content: flex-start; align-items: flex-start; gap: 8px;";
+  const iconStyle = `color: ${iconColor} !important; flex-shrink: 0; margin-top: 6px;`;
+
+  return `
+    <li style="${containerStyle}">
+      <i class="${iconClass}" style="${iconStyle}"></i>
+      <div>${message}</div>
+    </li>`.trim();
+}
+
+function hasDoubleQuotes(q) {
+  return /["“”„‟«»＂〝〞〟″「」『』]/.test(q);
+}
+
+// "--a--b-" => "a-b"
+function tidyHyphens(s) {
+  return s.replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
+// Each word keeps one +/- prefix and tidy hyphens, but tag: values are escaped so lunr takes them literally
+function normalizeQuery(q) {
+  return q.split(/\s+/).map(function (word) {
+    var tag = /^([+-]?)[+-]*tag:(.+)$/.exec(word);
+    if (tag) return tag[1] + 'tag:' + tag[2].replace(/[^\p{L}\p{N}]/gu, '\\$&');
+    var m = /^([+-]?)[+-]*([a-z]+:)?(.*?)([~^]\d+)?$/.exec(word);
+    var term = tidyHyphens(m[3]);
+    return term && m[1] + (m[2] || '') + term + (m[4] || '');
+  }).filter(Boolean).join(' ');
+}
+
+// Plain terms skip the whole slugs, which only tag: searches
+function searchIndex(idx, q) {
+  q = normalizeQuery(q);
+  return q ? idx.query(function (query) {
+    new lunr.QueryParser(q, query).parse();
+    query.clauses.forEach(function (c) {
+      if (c.fields.length > 1) c.fields = c.fields.filter(function (f) { return f != 'tag'; });
+    });
+  }) : [];
 }
 
 function handleSearchMessage(data, searchFn) {
+  var q = sanitizeQuery(data.q);
   var results = [];
   var warning = "";
-  var words = data.q.trim().split(" ");
+  var quoteWarning = hasDoubleQuotes(data.q) ? "<span role='alert'><strong>Note:</strong> Exact-phrase search isn&rsquo;t supported, so your quotation marks were ignored.</span>" : "";
+  var words = q.trim().split(" ");
 
   for (var i = 0; i < words.length; i++) {
     const s = words[i].trim();
@@ -234,21 +269,21 @@ function handleSearchMessage(data, searchFn) {
   var query = words.join(' ').trim();
   try {
     results = searchFn(query);
-    if (!results.length){
-      warning = "<li><strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:</li>";
-      results = searchFn(data.q.trim());
+    if (!results.length) {
+      warning = "<strong>No results</strong> found matching all of your terms. Results found matching <em>any</em> term:";
+      results = searchFn(q.trim());
     }
   } catch (err) {
     if (err.message.indexOf("unrecognised field") >= 0 && query.indexOf(":") >= 0) {
-      results = searchFn(data.q.replaceAll(":"," "));
+      results = searchFn(q.replaceAll(":", " "));
     } else { throw err; }
   }
-  if (!results.length){
-    words = data.q.trim().split(" ");
-    if (words.find(function(w){ return w.length <= 2; }) == undefined) {
+  if (!results.length) {
+    words = q.trim().split(" ");
+    if (words.find(function (w) { return w.length <= 2; }) == undefined) {
       results = searchFn(words.join("~1 ") + "~1");
       if (results.length)
-        warning = "<li><strong>No results</strong> found for your query. Perhaps you meant:</li>";
+        warning = "<strong>No results</strong> found for your query. Perhaps you meant:";
       else
         warning = "";
     } else {
@@ -257,15 +292,15 @@ function handleSearchMessage(data, searchFn) {
   }
   if (data.filterquery && data.filterquery !== "") {
     var filteredResults = searchFn(data.filterquery);
-    results = results.filter(function(result) {
-      return filteredResults.some(function(filteredResult) {
+    results = results.filter(function (result) {
+      return filteredResults.some(function (filteredResult) {
         return filteredResult.ref === result.ref;
       });
     });
   }
-  finalResults = results.length ? results : findOneWordSuttaTitleMatches(data.q.trim(), joinedTitles);
+  finalResults = results.length ? results : findOneWordSuttaTitleMatches(q.trim(), joinedTitles);
   return {
-    "warninghtml": warning ? applyErrorStyle(warning, true) : warning,
+    "warninghtml": [quoteWarning, warning].filter(Boolean).map(function (w) { return applyErrorStyle(w, true); }).join(""),
     "html": displaySearchResults(finalResults),
     "count": finalResults ? finalResults.length : 0,
     "q": data.q,
