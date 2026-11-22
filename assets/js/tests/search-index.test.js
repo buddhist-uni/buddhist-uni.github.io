@@ -178,4 +178,12 @@ describe('search_index.js tags', () => {
     ]))('topic:goal');
     assert.deepEqual(r.topic_labels, { '/d': ['Nibbāna: The <strong>Goal</strong>'] });
   });
+
+  it('keeps highlights on titles after longer folds', () => {
+    const search = loadSearchWorker(Object.fromEntries([
+      doc('/d', [['strasse', 'Straße'], ['aesthetics', 'Æsthetics of İstanbul']]),
+    ]));
+    assert.deepEqual(search('topic:strasse').topic_labels, { '/d': ['<strong>Straße</strong>'] });
+    assert.deepEqual(search('topic:istanbul').topic_labels, { '/d': ['Æsthetics of <strong>İstanbul</strong>'] });
+  });
 });
