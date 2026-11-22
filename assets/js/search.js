@@ -26,10 +26,8 @@
   searchBox.setAttribute("value", originalSearchTerm);
 
   // Initialize filter dropdown and remember original value
-  var originalFilterValue = sanitizeQuery(getQueryVariable('filter'));
-  if (originalFilterValue !== null && originalFilterValue !== '') {
-    filterDropdown.value = originalFilterValue;
-  }
+  filterDropdown.value = sanitizeQuery(getQueryVariable('filter'));
+  var originalFilterValue = filterDropdown.value;
 
   setTitle(originalSearchTerm);
 
@@ -143,9 +141,7 @@
       }
     }
     if (originalSearchTerm) {
-      const filterValue = sanitizeQuery(getQueryVariable('filter'));
-      const filterQuery = filterValue ? ' ' + filterValue : '';
-      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': filterQuery, 'qt': performance.now() });
+      window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': originalFilterValue, 'qt': performance.now() });
       running = 1;
     }
     
@@ -163,6 +159,6 @@
     console.error(e)
     loadingIndicator.style.display = 'none';
     searchResults.innerHTML = '<li class="instructions">Sorry, your browser doesn\'t seem to support this feature</li>' +
-      '<li class="instructions"><a href="https://www.google.com/search?q=site%3buddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
+      '<li class="instructions"><a href="https://www.google.com/search?q=site%3Abuddhistuniversity.net+' + encodeURIComponent(originalSearchTerm) + '">Click here to try Google instead</a></li>';
   }
 })();
