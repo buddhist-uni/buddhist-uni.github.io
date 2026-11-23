@@ -144,6 +144,53 @@ test('each warning gets its own icon', async ({ page }) => {
   await expect(page).toHaveURL(/\?q=this%20is%20an%20%22exact%20query%22%20test$/);
 });
 
+test('a sutta we do not have links to its SuttaCentral translation', async ({ page }) => {
+  await page.route('https://suttacentral.net/api/suttaplex/**', route => route.fulfill({
+    json: [{
+      uid: 'mn37', acronym: 'MN 37', original_title: 'Cūḷataṇhāsaṅkhayasutta', translated_title: 'The Shorter Discourse on the Ending of Craving',
+      blurb: 'Sakka asks the Buddha how a mendicant is freed.',
+      translations: [{ lang: 'en', author_uid: 'sujato' }, { lang: 'en', author_uid: 'bodhi' }],
+    }],
+  }));
+  await page.goto('/search/?q=MN+37');
+  await waitForSearchResults(page);
+
+  const link = page.locator('#sc-direct-link-title');
+  await expect(link).toHaveText('MN 37 Cūḷataṇhāsaṅkhayasutta: The Shorter Discourse on the Ending of Craving');
+  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/mn37/en/bodhi');
+  await expect(page.locator('#sc-direct-link-blurb')).toHaveText('Sakka asks the Buddha how a mendicant is freed.');
+});
+
+test('a Dhp verse links to its chapter in Bhante Suddhaso\'s translation', async ({ page }) => {
+  // SuttaCentral has no suttaplex of its own for Dhp 5, which lives in dhp1-20
+  await page.route('https://suttacentral.net/api/suttaplex/**', route => route.fulfill({
+    json: [{ uid: null, acronym: null, original_title: null, translated_title: null, blurb: null, translations: [] }],
+  }));
+  await page.goto('/search/?q=Dhp+5');
+  await waitForSearchResults(page);
+
+  const link = page.locator('#sc-direct-link-title');
+  await expect(link).toHaveText('Dhp 5');
+  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/dhp1-20/en/suddhaso?reference=main&highlight=true#vns5');
+  await expect(page.locator('#sc-direct-link-blurb')).toContainText('find it on SuttaCentral');
+});
+
+test('an Iti sutta links to John D. Ireland\'s translation', async ({ page }) => {
+  await page.route('https://suttacentral.net/api/suttaplex/**', route => route.fulfill({
+    json: [{
+      uid: 'iti2', acronym: 'Iti 2', original_title: 'Dosasutta', translated_title: 'Hate',
+      blurb: null,
+      translations: [{ lang: 'en', author_uid: 'ireland' }, { lang: 'en', author_uid: 'sujato' }],
+    }],
+  }));
+  await page.goto('/search/?q=Iti+2');
+  await waitForSearchResults(page);
+
+  const link = page.locator('#sc-direct-link-title');
+  await expect(link).toHaveText('Iti 2 Dosasutta: Hate');
+  await expect(link).toHaveAttribute('href', 'https://suttacentral.net/iti2/en/ireland');
+});
+
 test('filtered search from the URL survives going back to it', async ({ page }) => {
   await page.goto('/search/?q=nibbana&filter=%2Bin%3Acanon');
   await waitForSearchResults(page);

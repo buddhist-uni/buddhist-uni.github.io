@@ -23,7 +23,7 @@ const QMIN = 3;
 function sanitizeQuery(q) {
     if (!q || typeof q == 'undefined') return '';
     // _ stays inside words, as in tag:breath_geoff
-    var ret = utils.unaccented(q.replace(/[^\P{P}:_-]+/ug, '').replace(/(^|[^\p{L}\p{N}])_+|_+(?![\p{L}\p{N}])/ug, '$1'));
+    var ret = utils.unaccented(q.replace(/[^\P{P}:._-]+/ug, '').replace(/(^|[^\p{L}\p{N}])_+|_+(?![\p{L}\p{N}])/ug, '$1'));
     if (ret.length < QMIN) return '';
     return ret;
 }

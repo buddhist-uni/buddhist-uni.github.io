@@ -114,6 +114,47 @@
         searchResults.innerHTML = e.data.warninghtml + '<li style="margin-bottom:0;text-align:right;">' + e.data.count + ' results (' + perf + ' seconds)</li>' + e.data.html;
         loadingIndicator.style.display = 'none';
         stillLoading.style.display = 'none';
+        if (e.data.html.includes(' id="sc-direct-link-blurb"')) {
+          var scBlurb = document.getElementById('sc-direct-link-blurb');
+          if (scBlurb) {
+            var scid = scBlurb.getAttribute('data-scid') || scBlurb.dataset.scid;
+            if (scid) {
+              fetch('https://suttacentral.net/api/suttaplex/' + encodeURIComponent(scid) + '?language=en')
+                .then(function (response) {
+                  return response.ok ? response.json() : null;
+                })
+                .then(function (data) {
+                  if (data && data[0] && document.getElementById('sc-direct-link-blurb') === scBlurb) {
+                    if (data[0].blurb) {
+                      scBlurb.innerHTML = data[0].blurb;
+                    }
+                    var scTitle = document.getElementById('sc-direct-link-title') || (scBlurb.parentElement && scBlurb.parentElement.querySelector('h3 a'));
+                    if (scTitle) {
+                      var item = data[0];
+                      var prefix = [item.acronym, item.original_title].filter(Boolean).join(' ');
+                      var formattedTitle = prefix && item.translated_title ? prefix + ': ' + item.translated_title : (prefix || item.translated_title);
+                      if (formattedTitle) {
+                        scTitle.textContent = formattedTitle;
+                      } else {
+                        // Nothing to add, e.g. for Dhp 5, so drop the "..." we show while loading
+                        scTitle.textContent = scTitle.textContent.replace(/ \.\.\.$/, '');
+                      }
+                      // Prefer Bhikkhu Bodhi's translation to Bhikkhu Sujato's when there is one. Suttas inside
+                      // a range text (e.g. SN 35.200) come back without translations, and their Bodhi links
+                      // would open the Pali instead. Dhp and Iti links already go to the translation we want.
+                      var hasBodhi = (item.translations || []).some(function (t) {
+                        return t.lang === 'en' && t.author_uid === 'bodhi';
+                      });
+                      if (hasBodhi && /\/en\/sujato$/.test(scTitle.getAttribute('href'))) {
+                        scTitle.href = 'https://suttacentral.net/' + scid + '/en/bodhi';
+                      }
+                    }
+                  }
+                })
+                .catch(function () { });
+            }
+          }
+        }
         searchResults.onclick = maybeRegisterNavigation.bind(e.data);
         if (document.activeElement === searchBox) {
           pendingui = setTimeout(maybeRegisterNavigation.bind(e.data), CHECKTIME);
@@ -144,8 +185,8 @@
       window.search_worker.postMessage({ 'q': originalSearchTerm, 'filterquery': originalFilterValue, 'qt': performance.now() });
       running = 1;
     }
-    
-     else {
+
+    else {
       loadingIndicator.style.display = 'none';
       stillLoading.style.display = 'none';
       searchResults.innerHTML = '<li class="instructions">To search, start typing in the box above!</li><li class="instructions">You can filter your results by adding <code>[+/-][field]:[value]</code>. For example, to find <a href="/search/?q=%2Bagama%20-author%3Aanalayo&filter=%2Bin%3Aarticles">an article about the Āgamas by someone <i>not</i> named "Analayo"</a>, use the <code>-author:analayo</code> filter. Or, to find <a href="/search/?q=%2Btranslator%3Abodhi&filter=%2Bin%3Acanon">suttas translated by Bhikkhu Bodhi</a>, you can use the <code>+translator:bodhi</code> filter. We currently support the fields: title, author, translator, topic (words of topic titles), tag (a topic slug or freeform tag, matched exactly, e.g. <code>tag:pali-canon</code>), format (pdf, epub, gbook, mp3, mp4, etc) and &quot;is&quot; (fiction, film, music, podcast, poetry).</li><li class="instructions"><strong>Search is fuzzy</strong> and may match some terms only vaguely similar to yours. It does <strong>not</strong> support &quot;exact phrases.&quot;</li>';
