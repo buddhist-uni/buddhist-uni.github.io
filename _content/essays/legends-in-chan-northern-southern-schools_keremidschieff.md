@@ -2,7 +2,7 @@
 title: "Legends in Ch’an: the Northern/Southern Schools Split, Hui-neng and the Platform Sutra"
 authors:
   - "Vladimir Keremidschieff"
-external_url: "https://www.thezensite.com/ZenEssays/HistoricalZen/Legends_in_Chan.html"
+external_url: "https://web.archive.org/web/20170721034104if_/https://www.thezensite.com/ZenEssays/HistoricalZen/Legends_in_Chan.html"
 drive_links:
   - "https://drive.google.com/file/d/1w6DTBfnHCZZQhzYMr46TQQRq9Xmkokjj/view?usp=drivesdk"
 formats: [pdf]

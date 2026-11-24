@@ -1,6 +1,5 @@
 ---
 title: "Saṃyukta Āgama Parallels"
-external_url: "https://dharmapearls.net/dharmabase/index.php?title=Related_Discourses_(CSA)"
 drive_links:
   - "https://docs.google.com/spreadsheets/d/1FduSIGYqQF1W5kKCOT9NVxEVzdvDbyFVTbCK-EDel38/edit"
 formats: [spreadsheet]

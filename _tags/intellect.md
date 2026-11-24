@@ -16,7 +16,7 @@ image_height: 1365
 big_image: https://live.staticflickr.com/7240/27119666596_4d00fafb04_o_d.jpg
 big_height: 4000
 big_width: 6000
-footer_info: <a href="https://www.flickr.com/photos/joi/27119666596/in/photostream/">Joi Ito</a>, <a href="https://creativecommons.org/licenses/by/2.0">BY 2.0</a>
+footer_info: <a href="https://www.flickr.com/photos/joi/">Joi Ito</a>, <a href="https://creativecommons.org/licenses/by/2.0">BY 2.0</a>
 image_center_x: 50%
 image_center_y: 50%
 ---

@@ -1,6 +1,6 @@
 ---
 title: "National Academies Press"
-external_url: "https://nap.nationalacademies.org/topic/"
+external_url: "https://www.nationalacademies.org/publications/all"
 address: "Washington D. C."
 ---
 

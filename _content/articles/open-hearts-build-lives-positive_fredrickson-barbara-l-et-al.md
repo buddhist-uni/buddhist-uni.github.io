@@ -6,7 +6,7 @@ authors:
   - "Kimberly A. Coffey"
   - "Jolynn Pek"
   - "Sandra M. Finkel"
-external_url: "https://cdr.lib.unc.edu/downloads/8p58pm97j"
+external_url: "https://cdr.lib.unc.edu/downloads/8p58pm97j" # timeout Nov, 2026
 source_url: "https://doi.org/10.1037/a0013262"
 drive_links:
   - "https://drive.google.com/file/d/1sELdELzwAcbOw95nSnZ6GS8R-JI0onfI/view?usp=drivesdk"
