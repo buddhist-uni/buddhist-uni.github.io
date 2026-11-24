@@ -8,6 +8,7 @@ whitelist=(
   "CONTRIBUTORS.md"
   "README.md"
   "README.txt"
+  "SKILL.md"
   "Gemfile"
   "Gemfile.lock"
   "cssCacheToken.yml"
