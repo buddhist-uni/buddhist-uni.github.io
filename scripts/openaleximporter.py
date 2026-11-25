@@ -43,6 +43,82 @@ OPENALEX_CREDS = ''
 if OPENALEX_CREDS_FILE.exists():
    OPENALEX_CREDS = "api_key="+OPENALEX_CREDS_FILE.read_text().strip()+"&"
 
+def _contributor_role_ids(authorship: dict) -> set[str]:
+  roles = set()
+  for role in authorship.get('contributor_roles') or []:
+    if isinstance(role, dict):
+      role_id = role.get('id') or ''
+    elif isinstance(role, str):
+      role_id = role
+    else:
+      role_id = ''
+    if role_id:
+      roles.add(role_id.rstrip('/').split('/')[-1].lower())
+  return roles
+
+def _authorship_name(authorship: dict) -> str:
+  author_obj = authorship.get('author') or {}
+  name = author_obj.get('display_name') or authorship.get('raw_author_name') or ''
+  return name.replace('‐', '-').strip()
+
+def split_contributors(work: dict) -> tuple[list[str], list[str], list[str]]:
+  authors: list[str] = []
+  editors: list[str] = []
+  translators: list[str] = []
+  for authorship in work.get('authorships') or []:
+    name = _authorship_name(authorship)
+    if not name:
+      continue
+    roles = _contributor_role_ids(authorship)
+    if 'editor' in roles:
+      if name not in editors:
+        editors.append(name)
+    if 'translator' in roles:
+      if name not in translators:
+        translators.append(name)
+    # OpenAlex has no explicit "author" role: an empty contributor_roles list
+    # (or any CRediT role other than editor/translator) indicates an author.
+    if not roles or bool(roles - {'editor', 'translator'}):
+      if name not in authors:
+        authors.append(name)
+  return authors, editors, translators
+
+def _escape_yaml_str(value: str) -> str:
+  return value.replace('"', '\\"')
+
+def _format_contributor_field(names: list[str]) -> str:
+  if len(names) == 1:
+    aslug = get_author_slug(names[0])
+    if aslug:
+      return aslug
+    return f'"{_escape_yaml_str(names[0])}"'
+  return f'"{_escape_yaml_str(" and ".join(names))}"'
+
+def _author_filename_suffix(contributors: list[str]) -> str:
+  if not contributors:
+    return ''
+  def _last_or_slug(name: str) -> str:
+    aslug = get_author_slug(name)
+    if aslug:
+      return aslug
+    return name.rsplit(' ', 1)[-1]
+  if len(contributors) == 1:
+    name = contributors[0]
+    aslug = get_author_slug(name)
+    if aslug:
+      suffix = aslug
+    else:
+      try:
+        pivot = name.rindex(' ')
+        suffix = f"{name[1+pivot:]} {name[:pivot]}"
+      except ValueError:
+        suffix = name
+  elif len(contributors) == 2:
+    suffix = f"{_last_or_slug(contributors[0])} {_last_or_slug(contributors[1])}"
+  else:
+    suffix = f"{_last_or_slug(contributors[0])} et al"
+  return f"_{slugify(suffix)}"
+
 def serp_result(work: dict, margin=10) -> str:
   width = os.get_terminal_size().columns
   space = width - margin - 4
@@ -87,7 +163,16 @@ def print_openalex_work(work: dict, indent=0):
     if work['abstract_inverted_index']:
       print(f"{s}Abstract: {text_from_index(work['abstract_inverted_index'])}")
     print(f"{s}Title: {work['title']}")
-    print(f"{s}Author(s): {authorstr(work, 6)}")
+    authors, editors, translators = split_contributors(work)
+    if authors:
+      author_display = ", ".join(authors[:5] + ["et al"]) if len(authors) > 6 else ", ".join(authors)
+      print(f"{s}Author(s): {author_display}")
+    elif not editors and not translators:
+      print(f"{s}Author(s): {authorstr(work, 6)}")
+    if editors:
+      print(f"{s}Editor(s): {', '.join(editors)}")
+    if translators:
+      print(f"{s}Translator(s): {', '.join(translators)}")
     try:
       if work['doi'] != work['open_access']['oa_url']:
         print(f"{s}DOI: {work['doi']}")
@@ -140,54 +225,34 @@ def make_library_entry_for_work(work, draft=False, course=None, glink='', pageco
   )
   if not draft:
     filename = input_with_prefill("Filename: ", filename)
-  try:
-    author = work['authorships'][0]['author']['display_name']
-    assert(work['authorships'][0]['author_position'] == 'first')
-    aslug = get_author_slug(author)
-    if aslug:
-      author = aslug
-    else:
-      try:
-        pivot = author.rindex(' ')
-        author = f"{author[1+pivot:]} {author[:pivot]}"
-      except ValueError:
-        pass
-    if len(work['authorships']) > 1:
-        author += " et al"
-    filename += f"_{slugify(author)}"
-  except (KeyError, IndexError):
-    pass
+  authors, editors, translators = split_contributors(work)
+  filename += _author_filename_suffix(authors or editors or translators)
   filename += '.md'
   file_path = os.path.join(file_path, filename)
   title = title.replace('"', '\\\"')
   with open(file_path, 'w') as fd:
     fd.write(f"""---
 title: "{title}"
-authors:
 """)
-    for i in range(min(4, len(work['authorships']))):
-        author = work['authorships'][i]['author']['display_name'].replace('‐', '-')
-        aslug = get_author_slug(author)
-        if aslug:
-            author = aslug
-        else:
-            author = f"\"{author}\""
-        fd.write(f"  - {author}\n")
-    try:
-      aslug = get_author_slug(work['authorships'][-1]['author']['display_name'])
-    except:
-      aslug = ''
-    if len(work['authorships']) == 5 and aslug:
-        fd.write(f"  - {aslug}")
-    elif len(work['authorships']) >= 5:
-        fd.write(f"  - \"{work['authorships'][4]['author']['display_name'].replace('‐', '-')}")
-        if len(work['authorships']) > 5:
-          fd.write(" and others")
-        fd.write("\"\n")
+    if authors:
+      fd.write("authors:\n")
+      if len(authors) > 5:
+        for author in authors[:3]:
+          aslug = get_author_slug(author)
+          fd.write(f"  - {aslug}\n" if aslug else f'  - "{_escape_yaml_str(author)}"\n')
+        fd.write(f'  - "{_escape_yaml_str(authors[3])} and others"\n')
+      else:
+        for author in authors:
+          aslug = get_author_slug(author)
+          fd.write(f"  - {aslug}\n" if aslug else f'  - "{_escape_yaml_str(author)}"\n')
     if subcat != '':
         fd.write(f"subcat: {subcat}\n")
-    if category in ('papers', 'excerpts', 'monographs'):
+    if editors:
+        fd.write(f"editor: {_format_contributor_field(editors)}\n")
+    elif category in ('papers', 'excerpts', 'monographs'):
         fd.write("editor: \n")
+    if translators:
+        fd.write(f"translator: {_format_contributor_field(translators)}\n")
     fd.write("external_url: \"")
     oa_url = work['open_access']['oa_url']
     if oa_url and oa_url.split("/")[2] in HOSTNAME_BLACKLIST:
@@ -206,10 +271,10 @@ authors:
     try:
       test = requests.head(oa_url or "https://www.google.com/404")
       status = test.status_code
-    except requests.exceptions.ConnectionError:
-      status = 404
     except requests.exceptions.SSLError:
       oa_url = oa_url.replace("/download/", "/view/").replace("https:", "http:")
+    except requests.exceptions.ConnectionError:
+      status = 404
     if doi == oa_url or status in [404]:
       if alternate_url:
         oa_url = alternate_url
@@ -409,7 +474,7 @@ def _main():
   if len(gfiles) == 0:
     gfiles = gdrive.gcache.search_by_name_containing(
        query,
-       additional_filters="mime_type = ? AND owner = 1 AND shortcut_target = NULL",
+       additional_filters="mime_type = ? AND owner = 1 AND shortcut_target IS NULL",
        additional_params=('application/pdf',)
     )
     if len(gfiles) == 0:
@@ -443,4 +508,3 @@ def _main():
 
 if __name__ == "__main__":
   _main()
-

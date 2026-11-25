@@ -63,7 +63,7 @@ Split the extracted host URLs into about 6-8 batches and launch parallel `browse
    - Otherwise, check `get_network_request` on the `403` `reqid` for challenge headers (`cf-mitigated`) vs static origin/WAF blocks (e.g., CloudFront `403`), and the page content to classify as `hard_block` or `interactive_challenge`.
 4. Close the tab (`close_page(pageId=<id>)`) when done and return JSON results.
 
-Note: Classify as spurious (`ok`) any host whose HTML renders normally despite an origin `500` (such as `newbooksnetwork.com`). Keep as real failures: `404`, `500`/`502`/`503` error pages, `net::ERR_*` (DNS/TLS/connection failures), local timeouts, and confirmed `hard_block`s.
+Note: Classify as spurious (`ok`) any host whose HTML renders normally despite an origin `500` (such as `newbooksnetwork.com`) or fake `404` (e.g. `collection.bccampus.ca`), etc. Keep as real failures genuine `404`s, `500`/`502`/`503` error pages, `net::ERR_*` (DNS/TLS/connection failures), local timeouts, and confirmed `hard_block`s.
 
 ## Step 5: Generate the Filtered Report Artifact
 
