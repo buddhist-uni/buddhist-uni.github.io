@@ -31,7 +31,7 @@ A transcribed lecture series from the 1980s introducing Buddhism to a Western-ed
 We’ll break these up into bite-sized pieces over the coming lessons.
 
 For this module, let's **begin by reading:**
-- Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born (Don't worry: they're short chapters!)
+- Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born. Don't worry: they're short chapters! (~30 mins)
 - And (optionally) [the Introduction](https://www.buddhanet.net/funbud1), [Chapter 1](https://www.buddhanet.net/fundbud2) and [Chapter 2](https://www.buddhanet.net/fundbud3) of *Fundamentals* if you'd like to learn a bit about ancient India
 - (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path) and will return to _Being Nobody_ in the next lesson.)
 
