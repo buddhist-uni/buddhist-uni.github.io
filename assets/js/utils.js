@@ -84,8 +84,13 @@ function sortedInsert(array, element) {
     array.splice(locationOf(array, element), 0, element);
     return array;
 }
+// Letters NFD leaves whole
+const FOLDS = {
+    'ø': 'o', 'Ø': 'O', 'ß': 'ss', 'ẞ': 'SS', 'ı': 'i', 'æ': 'ae', 'Æ': 'AE', 'œ': 'oe', 'Œ': 'OE',
+    'đ': 'd', 'Đ': 'D', 'ł': 'l', 'Ł': 'L', 'þ': 'th', 'Þ': 'Th', 'ð': 'd', 'Ð': 'D'
+};
 var utils = {
-    'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""):str; },
+    'unaccented': function (str) { return str?str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^ -~]/g, function (c) { return FOLDS[c] || c; }):str; },
     'ascii': /^[ -~]+$/
 };
 function spacifyNonAlphanumeric(s) { return s.replace(/[^\p{L}\p{N}]/gu, ' '); }

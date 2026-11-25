@@ -42,6 +42,10 @@ describe('utils.unaccented', () => {
     assert.equal(utils.unaccented('über'), 'uber');
   });
 
+  it('folds letters that have no accent to strip', () => {
+    assert.equal(utils.unaccented('øØßẞıæÆœŒđĐłŁþÞðÐ'), 'oOssSSiaeAEoeOEdDlLthThdD');
+  });
+
   it('returns empty string unchanged', () => {
     assert.equal(utils.unaccented(''), '');
   });

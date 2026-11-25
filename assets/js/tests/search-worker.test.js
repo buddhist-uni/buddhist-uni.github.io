@@ -221,6 +221,51 @@ describe('addMatchHighlights', () => {
   });
 });
 
+describe('the search index', () => {
+  let search, hits;
+  before(() => {
+    const read = (url) => fs.readFileSync(path.join(__dirname, '..', path.basename(url.split('?')[0])), 'utf-8');
+    const item = { type: 'content', tags: [], tagtitles: [], formats: [], authors: [], translator: '', content: '', boost: 1 };
+    const worker = vm.createContext({
+      self: {},
+      importScripts: (url) => vm.runInContext(read(url), worker),
+      store: {
+        a: { ...item, title: 'Straße Æther Þór: Bjørn' },
+        b: { ...item, title: 'Populism', authors: ['İhsan Yılmaz'] },
+        c: { ...item, title: 'Primer', content: 'Learn Pāli and the Nikāyas'.normalize('NFD') },
+        d: { ...item, title: 'Tagged', tags: ['Āgama'], tagtitles: ['Āgama'] }
+      }
+    });
+    // search_index.js without its Liquid: the front matter and the store
+    const src = read('search_index.js');
+    vm.runInContext(src.slice(src.indexOf('importScripts'), src.indexOf('{%-')) + src.slice(src.indexOf('var idx')), worker);
+    search = (q) => vm.runInContext(`displaySearchResults(idx.search(${JSON.stringify(q)}))`, worker);
+    hits = (q) => vm.runInContext(`idx.search(${JSON.stringify(q)}).length`, worker);
+  });
+
+  it('finds folded letters by their transliterations', () => {
+    assert.ok(search('strasse').includes('<strong>Straße</strong>'));
+    assert.ok(search('aether').includes('<strong>Æther</strong>'));
+    assert.ok(search('thor').includes('<strong>Þór'));
+  });
+
+  it('highlights the original text after longer folds', () => {
+    assert.ok(search('bjorn').includes('Straße Æther Þór: <strong>Bjørn</strong>'));
+  });
+
+  it('highlights the original text after İ', () => {
+    assert.ok(search('yilmaz').includes('İhsan <strong>Yılmaz</strong>'));
+  });
+
+  it('leaves tags unfolded', () => {
+    assert.equal(hits('tag:agama'), 0);
+  });
+
+  it('highlights the original text after combining marks', () => {
+    assert.ok(search('nikayas').includes('and the <strong>Nikāyas</strong>'.normalize('NFD')));
+  });
+});
+
 // ── getBlurbForResult ───────────────────────────────────────────────
 
 describe('getBlurbForResult', () => {

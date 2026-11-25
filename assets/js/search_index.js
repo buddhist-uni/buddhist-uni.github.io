@@ -2,8 +2,8 @@
 layout: nil
 ---
 importScripts("/assets/js/lunr.min.js");
-importScripts("/assets/js/utils.js");
-importScripts("/assets/js/search_functions.js");
+importScripts("/assets/js/utils.js?u={{ site.data.jsCacheToken }}");
+importScripts("/assets/js/search_functions.js?u={{ site.data.jsCacheToken }}");
 function unaccent(e) { return e.update(utils.unaccented); }
 lunr.Pipeline.registerFunction(unaccent, 'unaccent');
 
@@ -54,29 +54,32 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
+    // lunr lowercases before splitting, and "İ".toLowerCase() is two characters (i + a combining dot),
+    // the only letter that grows; that would shift every match position after it
+    function tokenize(s, metadata) { return lunr.tokenizer(s && s.replace(/İ/g, 'I'), metadata); }
     // Array fields hold [position in the tag titles, token] pairs
     this.tokenizer = function (obj, metadata) {
-        if (!Array.isArray(obj)) return lunr.tokenizer(obj, metadata);
+        if (!Array.isArray(obj)) return tokenize(obj, metadata);
         return obj.map(function (p) { return new lunr.Token(p[1].toLowerCase(), { fields: metadata.fields, position: p[0] }); });
     };
-    // this.pipeline.add(unaccent); // commented out as we're doing the unaccenting manually above
     // The tag field skips the pipeline, so tag: matches a slug exactly
     function exceptTags(fn) {
         return function (token) { return token.metadata.fields == 'tag' ? token : fn.apply(this, arguments); };
     }
     this.pipeline.reset();
     this.searchPipeline.reset();
-    [lunr.trimmer, lunr.stopWordFilter, OBU_STEMMER].forEach(function (fn) { this.pipeline.add(exceptTags(fn)); }, this);
+    // unaccent folds the tokens, not the text, so match positions fit the original
+    [unaccent, lunr.trimmer, lunr.stopWordFilter, OBU_STEMMER].forEach(function (fn) { this.pipeline.add(exceptTags(fn)); }, this);
     this.searchPipeline.add(exceptTags(OBU_STEMMER));
     var pipeline = this.pipeline;
-    function terms(s) { return pipeline.run(lunr.tokenizer(s)).map(String); }
+    function terms(s) { return pipeline.run(tokenize(s)).map(String); }
     // plain words, so "Buddha's" and "Thera/Therīgāthā" match "buddha" and "therigatha"
-    function words(s) { return spacifyNonAlphanumeric(utils.unaccented(s)); }
+    var words = spacifyNonAlphanumeric;
     for (var key in store) {
         var v = store[key], at = 0, tag = [];
         // NFC keeps highlight offsets aligned
         v.tagtitles = v.tagtitles.map(function (t) { return t.normalize('NFC'); });
-        var topic = lunr.tokenizer(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
+        var topic = tokenize(words(v.tagtitles.join(' '))).map(function (t) { return [t.metadata.position, String(t)]; });
         // topic also gets each slug's words that its title lacks
         v.tagtitles.forEach(function (title, i) {
             var whole = [at, title.length], titleterms = terms(words(title));
@@ -85,11 +88,11 @@ var idx = lunr(function () {
             at += title.length + 1;
         });
         this.add({
-            'id': key, 'title': utils.unaccented(v.title),
-            'author': v.authors.map(utils.unaccented).join('  '), 'content': utils.unaccented(v.content),
-            'translator': utils.unaccented(v.translator), 'format': v.formats.join('  '),
+            'id': key, 'title': v.title,
+            'author': v.authors.join('  '), 'content': v.content,
+            'translator': v.translator, 'format': v.formats.join('  '),
             'tag': tag, 'topic': topic,
-            'description': utils.unaccented(v.description),
+            'description': v.description,
             'in': v.category, 'is': v.subcategory, 'type': v.type
       }, {boost: v.boost});
     }

@@ -7,6 +7,16 @@ async function waitForSearchResults(page: Page) {
   await expect(page.getByText('results (')).toBeInViewport();
 }
 
+test('search scripts share a cache-busting token', async ({ page }) => {
+  const scripts: string[] = [];
+  page.on('request', (r) => { const m = /\/assets\/js\/((?:search|utils).*)/.exec(r.url()); if (m) scripts.push(m[1]); });
+  await page.goto('/search/?q=nibbana');
+  await waitForSearchResults(page);
+
+  const token = /\?u=\w{7}$/.exec(scripts[0])![0];
+  expect(scripts.sort()).toEqual(['search.js', 'search_functions.js', 'search_index.js', 'utils.js', 'utils.js'].map((s) => s + token));
+});
+
 test('blank search page', async ({ page }) => {
   await page.goto('/search/');
 
@@ -142,6 +152,20 @@ test('each warning gets its own icon', async ({ page }) => {
   await expect(warnings.nth(0)).toContainText('quotation marks were ignored');
   await expect(warnings.nth(1)).toContainText('matching all of your terms');
   await expect(page).toHaveURL(/\?q=this%20is%20an%20%22exact%20query%22%20test$/);
+});
+
+test('finds and highlights a name whose letter has no accent to strip', async ({ page }) => {
+  await page.goto('/search/?q=jorn+borup');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('.Label strong', { hasText: 'Borup' }).first()).toHaveText('Jørn Borup');
+});
+
+test('highlights the right letters after a two-letter fold', async ({ page }) => {
+  await page.goto('/search/?q=sangarava');
+  await waitForSearchResults(page);
+
+  await expect(page.locator('h3', { hasText: 'Lōvæḍa' }).locator('strong')).toHaveText('Saṅgarāva');
 });
 
 test('a sutta we do not have links to its SuttaCentral translation', async ({ page }) => {
