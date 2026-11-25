@@ -1,8 +1,8 @@
 ---
 title: "A Single Bowl of Sauce: Teachings Beyond Good and Evil"
 authors: [buddhadasa]
-external_url: "https://suanmokkh.org/books/96"
-alternate_url: "https://pagoda.or.th/search.html?q=sauce&p=all&areas[]=flexicontent&cc=p"
+alternate_url: "https://suanmokkh.org/books/96"
+external_url: "https://pagoda.or.th/search.html?q=sauce&p=all&areas[]=flexicontent&cc=p"
 formats: [pdf]
 drive_links: ["https://drive.google.com/file/d/1V-9f2U_iDPC2YWfP8KhwnCFD0vsmpXD0/view?usp=drivesdk"]
 year: 2017

@@ -2,7 +2,7 @@
 title: "Healing and/or Salvation?: The Relationship Between Religion and Medicine in Medieval Chinese Buddhism"
 authors:
   - salguero-p
-external_url: "https://www.multiple-secularities.de/media/workingpaper_4_salguero_final.pdf"
+external_url: "https://web.archive.org/web/20250429074607if_/https://www.multiple-secularities.de/media/workingpaper_4_salguero_final.pdf"
 drive_links:
   - "https://drive.google.com/file/d/1q7Gd-JAY9R8wP0X8Jb_xFD4-gfhPvNG0/view?usp=sharing"
 course: medieval

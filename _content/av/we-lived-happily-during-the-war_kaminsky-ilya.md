@@ -5,7 +5,7 @@ authors:
 subcat: poetry
 reader: "Tracy K. Smith"
 external_url: "https://www.slowdownshow.org/episode/2019/04/26/110-we-lived-happily-during-the-war"
-source_url: "https://www.poetryfoundation.org/poems/91413/we-lived-happily-during-the-war"
+source_url: "https://www.poetryfoundation.org/video/151644/ilya-kaminsky-reads-we-lived-happily-during-the-war"
 course: future
 tags:
   - violence-since-ww2

@@ -73,6 +73,9 @@ vm.runInContext(
   'this.findOneWordSuttaTitleMatches = findOneWordSuttaTitleMatches;\n' +
   'this.applyErrorStyle = applyErrorStyle; \n' +
   'this.handleSearchMessage = handleSearchMessage;\n' +
+  'this.suttaCentralUid = suttaCentralUid;\n' +
+  'this.resultsIncludeSutta = resultsIncludeSutta;\n' +
+  'this.suttaCentralUrl = suttaCentralUrl;\n' +
   'this.normalizeQuery = normalizeQuery;\n' +
   'this.displaySearchResults = displaySearchResults;\n',
   sandbox
@@ -81,6 +84,7 @@ vm.runInContext(
 const {
   categoryName, getPositions, resultMatched,
   addMatchHighlights, getBlurbForResult, oneWordToken, normalizeSuttaTitles, findOneWordSuttaTitleMatches, applyErrorStyle, handleSearchMessage,
+  suttaCentralUid, resultsIncludeSutta, suttaCentralUrl,
   normalizeQuery
 } = sandbox;
 
@@ -324,17 +328,23 @@ describe('getBlurbForResult', () => {
     // A greedy algorithm that picks the first match would incorrectly select IGNORE.
     // Positions array (sorted): [10=IGNORE, 320=MATCH, 335=ME, 347=INSTEAD]
     const content = 'a'.repeat(10) + 'IGNORE' + 'b'.repeat(304) + 'MATCH' +
-                    'c'.repeat(10) + 'ME' + 'c'.repeat(10) + 'INSTEAD' + 'e'.repeat(100);
+      'c'.repeat(10) + 'ME' + 'c'.repeat(10) + 'INSTEAD' + 'e'.repeat(100);
     const ignorePos = 10;
     const matchPos = 10 + 6 + 304;    // 320
     const mePos = 320 + 5 + 10;       // 335
     const insteadPos = 335 + 2 + 10;  // 347
     const result = {
-      matchData: { metadata: {
-        kw: { content: { position: [
-          [ignorePos, 6], [matchPos, 5], [mePos, 2], [insteadPos, 7]
-        ] } },
-      } }
+      matchData: {
+        metadata: {
+          kw: {
+            content: {
+              position: [
+                [ignorePos, 6], [matchPos, 5], [mePos, 2], [insteadPos, 7]
+              ]
+            }
+          },
+        }
+      }
     };
     const positions = [ignorePos, matchPos, mePos, insteadPos];
     const item = { title: 'Test', description: null, content: content };
@@ -678,5 +688,187 @@ describe('handleSearchMessage', () => {
     const result = toLocal(handleSearchMessage(data, mockSearch));
     assert.equal(result.q, 'meditation');
     assert.equal(result.filterquery, 'tag:zen');
+  });
+});
+
+// ── SuttaCentral fallback ───────────────────────────────────────────
+
+describe('suttaCentralUid', () => {
+  it('recognises references to single suttas', () => {
+    const cases = {
+      'MN4': 'mn4', 'mn 4': 'mn4', ' Dn 34 ': 'dn34', 'MN 04': 'mn4',
+      'AN 10:5': 'an10.5', 'an10.5': 'an10.5', 'AN 4.783': 'an4.783',
+      'SN 12.2': 'sn12.2', 'sn56.131': 'sn56.131', 'Snp 5.19': 'snp5.19',
+      'Thag 21.1': 'thag21.1', 'Thig 16.1': 'thig16.1', 'Dhp 423': 'dhp423',
+      'iti112': 'iti112', 'Ud 8.10': 'ud8.10',
+    };
+    for (const [query, uid] of Object.entries(cases)) {
+      assert.equal(suttaCentralUid(query), uid, query);
+    }
+  });
+
+  it('rejects suttas that do not exist', () => {
+    for (const query of ['dn35', 'mn0', 'mn153', 'an4.784', 'an12.1', 'sn56.132', 'dhp424', 'ud8.11', 'thig17.1']) {
+      assert.equal(suttaCentralUid(query), null, query);
+    }
+  });
+
+  it('rejects chapters, ranges, sections and other text', () => {
+    for (const query of ['sn12', 'snp5', 'AN 1.1-10', 'mn4.2', 'mn4 sutta', 'satipatthana mn10', 'xyz 4', 'an', '']) {
+      assert.equal(suttaCentralUid(query), null, query);
+    }
+  });
+});
+
+describe('suttaCentralUrl', () => {
+  it('finds the chapter of each Dhp verse, including the first and last verse of a chapter', () => {
+    const url = (verse, chapter) => `https://suttacentral.net/${chapter}/en/suddhaso?reference=main&highlight=true#vns${verse}`;
+    assert.equal(suttaCentralUrl('dhp1'), url(1, 'dhp1-20'));
+    assert.equal(suttaCentralUrl('dhp20'), url(20, 'dhp1-20'));
+    assert.equal(suttaCentralUrl('dhp21'), url(21, 'dhp21-32'));
+    assert.equal(suttaCentralUrl('dhp141'), url(141, 'dhp129-145'));
+    assert.equal(suttaCentralUrl('dhp383'), url(383, 'dhp383-423'));
+    assert.equal(suttaCentralUrl('dhp423'), url(423, 'dhp383-423'));
+  });
+
+  it('links Iti suttas to John D. Ireland\'s translation', () => {
+    assert.equal(suttaCentralUrl('iti1'), 'https://suttacentral.net/iti1/en/ireland');
+    assert.equal(suttaCentralUrl('iti112'), 'https://suttacentral.net/iti112/en/ireland');
+  });
+
+  it('links other suttas to Bhikkhu Sujato\'s translation', () => {
+    for (const uid of ['mn4', 'an6.23', 'sn35.200', 'thag1.1', 'snp1.8', 'ud8.10', 'dn34']) {
+      assert.equal(suttaCentralUrl(uid), `https://suttacentral.net/${uid}/en/sujato`);
+    }
+  });
+});
+
+describe('resultsIncludeSutta', () => {
+  const canon = (title) => ({ type: 'content', category: 'canon', title });
+  const check = (items, uid) => {
+    const saved = sandbox.store;
+    sandbox.store = Object.fromEntries(items.map((item, i) => [`r${i}`, item]));
+    try {
+      return resultsIncludeSutta(items.map((item, i) => ({ ref: `r${i}` })), uid);
+    } finally {
+      sandbox.store = saved;
+    }
+  };
+
+  it('finds the sutta itself or a range of suttas that includes it', () => {
+    assert.equal(check([canon('MN 4 Bhayabherava Sutta: Fear and Dread')], 'mn4'), true);
+    assert.equal(check([canon('MN 4: Fear and Dread')], 'mn4'), true);
+    assert.equal(check([canon('AN 1.11–20 Nīvaraṇappahāna Vagga')], 'an1.15'), true);
+    assert.equal(check([canon('Dhp 1–20 Yamaka Vagga: Dichotomies')], 'dhp5'), true);
+    assert.equal(check([canon('Snp 1.8 Metta Sutta')], 'snp1.8'), true);
+  });
+
+  it('ignores other suttas, other books and things that are not suttas', () => {
+    assert.equal(check([canon('MN 40 Cūḷa-Assapura Sutta')], 'mn4'), false);
+    assert.equal(check([canon('AN 1.11–20 Nīvaraṇappahāna Vagga')], 'an1.21'), false);
+    assert.equal(check([canon('AN 2.15 Adhikaraṇa Vagga')], 'an1.15'), false);
+    assert.equal(check([canon('SN 1.1 Ogha Sutta')], 'snp1.1'), false);
+    assert.equal(check([{ type: 'content', category: 'articles', title: 'MN 4 and fear' }], 'mn4'), false);
+  });
+});
+
+describe('handleSearchMessage SuttaCentral fallback', () => {
+  it('links to SuttaCentral when the index has no results for a sutta reference', () => {
+    let fuzzyQueries = 0;
+    const mockSearch = (q) => { if (q.includes('~')) fuzzyQueries++; return []; };
+    const result = toLocal(handleSearchMessage({ q: 'MN 4', filterquery: '', qt: '' }, mockSearch));
+    assert.ok(result.html.includes('href="https://suttacentral.net/mn4/en/sujato"'));
+    assert.ok(result.html.includes('MN 4'));
+    assert.equal(result.count, 1);
+    assert.ok(result.warninghtml.includes('No results'));
+    assert.equal(fuzzyQueries, 0, 'should not fall back to fuzzy suggestions');
+    assertValidHtml(`<ul>${result.html}</ul>`, 'SuttaCentral result');
+  });
+
+  it('keeps library results when the index finds the sutta', () => {
+    const mockSearch = () => [{ ref: 'mn4', score: 1, matchData: { metadata: {} } }];
+    const saved = sandbox.store;
+    vm.runInContext('store = { mn4: { type: "content", category: "canon", url: "/content/canon/mn4", title: "MN 4: Fear and Dread", authors: [], description: "The Buddha on overcoming fear.", content: "" } };', sandbox);
+    try {
+      const result = toLocal(handleSearchMessage({ q: 'MN4', filterquery: '', qt: '' }, mockSearch));
+      assert.ok(result.html.includes('/content/canon/mn4'));
+      assert.ok(!result.html.includes('suttacentral.net'));
+    } finally {
+      sandbox.store = saved;
+    }
+  });
+
+  it('searches the library for the referenced sutta itself', () => {
+    const queries = [];
+    const mockSearch = (q) => { queries.push(q); return q === '+mn +5' ? [{ ref: 'mn5', score: 1, matchData: { metadata: {} } }] : []; };
+    vm.runInContext('store = { mn5: { type: "content", category: "canon", url: "/content/canon/mn5", title: "MN 5: Unblemished", authors: [], description: "On blemishes.", content: "" } };', sandbox);
+    const result = toLocal(handleSearchMessage({ q: 'MN 5', filterquery: '', qt: '' }, mockSearch));
+    assert.equal(queries[0], '+mn +5');
+    assert.ok(result.html.includes('/content/canon/mn5'));
+    assert.ok(!result.html.includes('suttacentral.net'));
+  });
+
+  it('links to SuttaCentral instead of matching any term when the sutta is not in the library', () => {
+    const queries = [];
+    const anyTerm = [{ ref: 'other', score: 1, matchData: { metadata: {} } }];
+    const mockSearch = (q) => { queries.push(q); return q.startsWith('+') ? [] : anyTerm; };
+    const result = toLocal(handleSearchMessage({ q: 'AN 4.783', filterquery: '', qt: '' }, mockSearch));
+    assert.deepEqual(queries, ['+an +4.783']);
+    assert.ok(result.html.includes('href="https://suttacentral.net/an4.783/en/sujato"'));
+    assert.ok(result.html.includes('AN 4.783'));
+    assert.equal(result.count, 1);
+  });
+
+  it('links suttas inside a range text to their English translation', () => {
+    // SuttaCentral keeps these inside texts like sn35.198-200, so a link to Bhikkhu Bodhi's
+    // translation would open the Pali, but Bhikkhu Sujato's opens the sutta
+    for (const [query, uid] of [['SN 35.200', 'sn35.200'], ['AN 1.15', 'an1.15']]) {
+      const result = toLocal(handleSearchMessage({ q: query, filterquery: '', qt: '' }, () => []));
+      assert.ok(result.html.includes(`href="https://suttacentral.net/${uid}/en/sujato"`), query);
+      assert.ok(result.html.includes(`data-scid="${uid}"`), query);
+    }
+  });
+
+  it('links Dhp verses to their chapter in Bhante Suddhaso\'s translation', () => {
+    const result = toLocal(handleSearchMessage({ q: 'Dhp 141', filterquery: '', qt: '' }, () => []));
+    assert.ok(result.html.includes('href="https://suttacentral.net/dhp129-145/en/suddhaso?reference=main&amp;highlight=true#vns141"'));
+    assert.ok(result.html.includes('data-scid="dhp141"'));
+    assertValidHtml(`<ul>${result.html}</ul>`, 'Dhp SuttaCentral result');
+  });
+
+  it('puts SuttaCentral first when the library only has other things about the sutta', () => {
+    const saved = sandbox.store;
+    vm.runInContext('store = { craving: { type: "content", category: "articles", url: "/content/articles/craving", title: "On Craving and MN 37", authors: [], description: "An essay.", content: "" } };', sandbox);
+    try {
+      const mockSearch = (q) => q === '+mn +37' ? [{ ref: 'craving', score: 1, matchData: { metadata: {} } }] : [];
+      const result = toLocal(handleSearchMessage({ q: 'MN 37', filterquery: '', qt: '' }, mockSearch));
+      assert.ok(result.html.includes('/content/articles/craving'));
+      assert.ok(result.html.indexOf('href="https://suttacentral.net/mn37/en/sujato"') >= 0);
+      assert.ok(result.html.indexOf('suttacentral.net/mn37') < result.html.indexOf('/content/articles/craving'));
+      assert.equal(result.count, 2);
+      assert.equal(result.warninghtml, '');
+      assertValidHtml(`<ul>${result.html}</ul>`, 'SuttaCentral and library results');
+    } finally {
+      sandbox.store = saved;
+    }
+  });
+
+  it('does not add SuttaCentral when a range text in the library includes the sutta', () => {
+    const saved = sandbox.store;
+    vm.runInContext('store = { an111: { type: "content", category: "canon", url: "/content/canon/an1.11-20", title: "AN 1.11–20 Nīvaraṇappahāna Vagga: The Chapter on Giving Up the Hindrances", authors: [], description: "", content: "" } };', sandbox);
+    try {
+      const result = toLocal(handleSearchMessage({ q: 'AN 1.15', filterquery: '', qt: '' }, () => [{ ref: 'an111', score: 1, matchData: { metadata: {} } }]));
+      assert.ok(result.html.includes('/content/canon/an1.11-20'));
+      assert.ok(!result.html.includes('suttacentral.net'));
+      assert.equal(result.count, 1);
+    } finally {
+      sandbox.store = saved;
+    }
+  });
+
+  it('does not link to SuttaCentral for references to suttas that do not exist', () => {
+    const result = toLocal(handleSearchMessage({ q: 'MN 153', filterquery: '', qt: '' }, () => []));
+    assert.ok(!result.html.includes('suttacentral.net'));
+    assert.equal(result.count, 0);
   });
 });

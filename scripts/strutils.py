@@ -649,7 +649,17 @@ def authorstr(work: dict, maxn: int=2) -> str:
     """Given a CORE or OpenAlex work, gives the authors string for the filename"""
     if 'authorships' in work:
       # https://docs.openalex.org/api-entities/works/work-object#authorships
-      authors = list(map(lambda a: author_name_to_normal(a['author']['display_name']), work['authorships']))
+      def _role_ids(a):
+        return {
+          (r.get('id') if isinstance(r, dict) else r).rstrip('/').split('/')[-1].lower()
+          for r in (a.get('contributor_roles') or [])
+          if (r.get('id') if isinstance(r, dict) else r)
+        }
+      def _name(a):
+        raw = (a.get('author') or {}).get('display_name') or a.get('raw_author_name') or ''
+        return author_name_to_normal(raw)
+      primary = [a for a in work['authorships'] if not _role_ids(a) or bool(_role_ids(a) - {'editor', 'translator'})]
+      authors = [_name(a) for a in (primary or work['authorships']) if _name(a)]
     elif 'authors' in work:
       # https://api.core.ac.uk/docs/v3#tag/Works/operation/optionsCustomWorks:~:text=List%20of%20author%20names
       if isinstance(work['authors'], str):

@@ -3,7 +3,7 @@ title: "May We Leave This Legacy With You"
 authors:
   - buddhadasa
 translator: "Santikaro Bhikkhu"
-external_url: "https://suanmokkh.org/system/books/files/000/000/097/original/Buddhadasa-May-we-leave-this-legacy-with-you-Section-I.pdf?1599468080"
+external_url: "https://web.archive.org/web/20260612200121if_/https://suanmokkh.org/system/books/files/000/000/097/original/Buddhadasa-May-we-leave-this-legacy-with-you-Section-I.pdf?1599468080"
 drive_links:
   - "https://drive.google.com/file/d/1lL8BmGt2EcbHHdo71YSGNDxFhX_oakOl/view?usp=sharing"
 tags:

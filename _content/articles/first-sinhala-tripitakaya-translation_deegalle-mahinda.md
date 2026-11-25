@@ -2,7 +2,7 @@
 title: "The First Sinhala Tripiṭakaya Translation: De Zoysa’s ‘Protestant’ Buddhist Project for Mass Literacy in Twentieth Century Sri Lanka"
 authors:
   - "Mahinda Deegalle"
-external_url: "https://journals.sjp.ac.lk/index.php/vjhss/article/download/5937/4414"
+external_url: "https://journals.sjp.ac.lk/index.php/vjhss/article/download/5937/4414" # website down Nov, 2026
 source_url: "https://doi.org/10.31357/fhss/vjhss.v07i02.03"
 drive_links:
   - "https://drive.google.com/file/d/1HtiRugVwN8wuyLmsG0Gg7M_b6_TnLsxj/view?usp=drivesdk"
