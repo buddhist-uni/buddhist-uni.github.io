@@ -9,12 +9,12 @@ async function waitForSearchResults(page: Page) {
 
 test('search scripts share a cache-busting token', async ({ page }) => {
   const scripts: string[] = [];
-  page.on('request', (r) => { const m = /\/assets\/js\/((?:lunr|search|utils).*)/.exec(r.url()); if (m) scripts.push(m[1]); });
+  page.on('request', (r) => { const m = /\/assets\/js\/((?:search|utils).*)/.exec(r.url()); if (m) scripts.push(m[1]); });
   await page.goto('/search/?q=nibbana');
   await waitForSearchResults(page);
 
   const token = /\?u=\w{7}$/.exec(scripts[0])![0];
-  expect(scripts.sort()).toEqual(['lunr.min.js', 'search.js', 'search_functions.js', 'search_index.js', 'utils.js', 'utils.js'].map((s) => s + token));
+  expect(scripts.sort()).toEqual(['search.js', 'search_functions.js', 'search_index.js', 'utils.js', 'utils.js'].map((s) => s + token));
 });
 
 test('blank search page', async ({ page }) => {

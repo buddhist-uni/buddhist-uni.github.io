@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-importScripts("/assets/js/lunr.min.js?u={{ site.data.jsCacheToken }}");
+importScripts("/assets/js/lunr.min.js");
 importScripts("/assets/js/utils.js?u={{ site.data.jsCacheToken }}");
 importScripts("/assets/js/search_functions.js?u={{ site.data.jsCacheToken }}");
 function unaccent(e) { return e.update(utils.unaccented); }
@@ -54,7 +54,8 @@ var idx = lunr(function () {
     this.field('in', { boost: 4 }); this.field('type', { boost: 0.3 });
     this.field('is', { boost: 4 });
     this.metadataWhitelist = ['position']
-    // İ alone grows when lowercased, which would shift every position after it
+    // lunr lowercases before splitting, and "İ".toLowerCase() is two characters (i + a combining dot),
+    // the only letter that grows; that would shift every match position after it
     function tokenize(s, metadata) { return lunr.tokenizer(s && s.replace(/İ/g, 'I'), metadata); }
     // Array fields hold [position in the tag titles, token] pairs
     this.tokenizer = function (obj, metadata) {
