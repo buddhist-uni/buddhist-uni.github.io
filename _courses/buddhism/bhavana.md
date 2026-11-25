@@ -8,16 +8,16 @@ order: 8
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=45 blurb="
 We continue with Chapters 22–26 on the Buddha's first teachings after his Awakening.
 " %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" time=15 blurb='
 [Chapter 6](https://www.buddhanet.net/fundbud7) introduces the Buddhist concept of "*bhavana*" or "Mental Development", analyzing the Path from the perspective of the mind.
 ' %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb='
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" time=21 blurb='
 In Chapter 3 ("Right Intention") Bhikkhu Bodhi zooms in on the attitude with which we should undertake the practice.
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb="Chapters 2 and 3 bring us back to meditation itself." %}
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=32 blurb="Chapters 2 and 3 bring us back to meditation itself." %}
 {% include content_blurb.html category="canon" slug="sn42.6" blurb="
 One of the hallmarks of Buddhism as a religion is that the Buddha emphatically rejected salvation through faith and prayer alone. In this module's sutta, the Buddha illustrates this point with a simile. See if you can appreciate the dry humor!
 " %}

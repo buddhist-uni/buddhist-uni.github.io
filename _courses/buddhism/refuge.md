@@ -12,7 +12,7 @@ The compassionate wisdom and peerless example of the Buddha show us the way out 
 
 I'd like to introduce you now to the other three texts (in addition to [_Being Nobody, Going Nowhere_](/content/monographs/being-nobody-going-nowhere_khema)) that we'll be reading through the remainder of this course:
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=false blurb="
 To understand Buddhism, we need to understand something of the life of the Buddha.
 
 Unfortunately, the earliest texts historians have don’t say much about the life of the historical Buddha.
@@ -21,17 +21,17 @@ Most of the stories about the early Sangha that shape Buddhism today are medieva
 
 This *Biography of Shakyamuni Buddha* here further took those myths and embellished them with the kinds of psychological details and drama which characterize a good novel, making a highly readable and influential retelling of the Buddha’s life suitable to the modern, casual reader and capturing how many Buddhists today grew up hearing about the Buddha and his first followers.
 " %}
-{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" blurb="
+{% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" time=false blurb="
 A precise yet readable overview of the Buddhist Path by one of the greatest scholars of Pāḷi Buddhism alive today.
 " %}
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb="
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" time=false blurb="
 A transcribed lecture series from the 1980s introducing Buddhism to a Western-educated audience.
 " %}
 
 We’ll break these up into bite-sized pieces over the coming lessons.
 
 For this module, let's **begin by reading:**
-- Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born (Don't worry: they're short chapters!)
+- Chapters 1–3 of *The Biography* on the ancient Indian context into which the Buddha was born. Don't worry: they're short chapters! (~30 mins)
 - And (optionally) [the Introduction](https://www.buddhanet.net/funbud1), [Chapter 1](https://www.buddhanet.net/fundbud2) and [Chapter 2](https://www.buddhanet.net/fundbud3) of *Fundamentals* if you'd like to learn a bit about ancient India
 - (We'll come back to Bhikkhu Bodhi's *Path* in [Module 7](/courses/buddhism/the-path) and will return to _Being Nobody_ in the next lesson.)
 

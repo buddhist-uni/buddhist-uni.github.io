@@ -8,13 +8,13 @@ order: 9
 
 # Readings
 
-{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" blurb='
+{% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" time=17 blurb='
 [Chapter 11](https://www.buddhanet.net/funbud13/) explains the "Three Characteristics," of which *anatta* is the third.
 ' %}
-{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" blurb='
+{% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=20 blurb='
 Chapter 10 covers "The Five Aggregates," which are, in brief, the body and mind we cling to as if they were "us."
 ' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" blurb='
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=45 blurb='
 Chapters 27–31 cover the Buddha winning over several wealthy and powerful patrons despite his "world-renouncing" teachings.
 ' %}
 {% include content_blurb.html category="canon" slug="sn35.238" blurb="
