@@ -1,5 +1,11 @@
-{%- if include.enabled -%}{%- unless include.notime or include.content.pages contains "," -%}
-{%- assign m = include.content.total_mins -%}
+{%- comment %}time: true reckons it from the content, false hides it, a number gives the minutes and a string is shown as is. Unset, it follows the page's assignment_times{% endcomment -%}
+{%- assign given = include.time -%}
+{%- if given == nil -%}{%- assign given = page.assignment_times -%}{%- endif -%}
+{%- assign m = given | plus: 0 -%}
+{%- if m != given -%}{%- assign m = 0 -%}{%- endif -%}
+{%- assign label = given | append: "" -%}
+{%- if label != given or given == "" -%}{%- assign label = nil -%}{%- endif -%}
+{%- if given == true -%}{%- unless include.content.pages contains "," -%}{%- assign m = include.content.total_mins -%}{%- endunless -%}{%- endif -%}
 {%- if include.content.minutes -%}{%- assign m = m | round -%}{%- endif -%}
 {%- if m > 0 -%}
 {{ " " }}<span class="assignment_time">(
@@ -16,5 +22,6 @@
 ~{% if s < 60 %}{{ s }} mins{% elsif s == 90 %}1.5 hrs{% else %}{{ s | divided_by: 60 }} hr{% if s > 60 %}s{% endif %}{% endif %}
 {%- endif -%}
 )</span>
+{%- elsif label -%}
+{{ " " }}<span class="assignment_time">({{ label }})</span>
 {%- endif -%}
-{%- endunless -%}{%- endif -%}

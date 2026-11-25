@@ -1,12 +1,10 @@
 import { test, expect, Page } from '@playwright/test';
 
-// Partial readings of larger works, which the course files mark notime
-const NOTIME = [
-  'booklets/fundamentals_santina-peter',
-  'monographs/being-nobody-going-nowhere_khema',
+// Refuge introduces the course books without assigning any reading, so marks them time=false
+const INTRODUCED = [
   'monographs/biography-of-shakyamuni_hsing-yun',
   'booklets/noble-eightfold-path_bodhi',
-  'booklets/i-wonder-why_thubten-chodron',
+  'booklets/fundamentals_santina-peter',
 ];
 
 const PARTS = [
@@ -37,6 +35,8 @@ test('Buddhism 101 assignments show their time', async ({ page }) => {
   await expect(timeOf(page, 'canon/sn42.6')).toHaveText('(~15 mins)');
   await page.goto('/courses/buddhism/wisdom');
   await expect(timeOf(page, 'av/buddhism-and-the-world_bodhi')).toHaveText('(2 hrs 20 mins)');
+  await page.goto('/courses/buddhism/renunciation');
+  await expect(timeOf(page, 'monographs/being-nobody-going-nowhere_khema')).toHaveText('(~1 hr)'); // a chapter, from time=60
   await page.goto('/courses/buddhism/conclusion');
   await expect(timeOf(page, 'articles/buddhism-and-modernity_powers-doug')).toHaveText('(~20 mins)');
 });
@@ -51,7 +51,7 @@ test('time also shows on the content_box and inline_content assignments', async 
 });
 
 for (const part of PARTS) {
-  test(`every assignment in "${part}" is timed unless marked notime`, async ({ page }) => {
+  test(`every assignment in "${part}" is timed`, async ({ page }) => {
     await page.goto(`/courses/buddhism/${part}`);
     const n = await boxes(page).count();
     expect(n, 'test is valid: the page has assignments').toBeGreaterThan(0);
@@ -59,7 +59,7 @@ for (const part of PARTS) {
       const box = boxes(page).nth(i);
       const path = (await box.locator('[data-content-path]').first().getAttribute('data-content-path')) ?? '';
       const times = box.locator('.assignment_time');
-      if (NOTIME.includes(path)) await expect(times, path).toHaveCount(0);
+      if (part == 'refuge' && INTRODUCED.includes(path)) await expect(times, path).toHaveCount(0);
       else await expect(times, path).toHaveText(RECORDED.test(path) ? EXACT : ROUGH);
     }
   });
