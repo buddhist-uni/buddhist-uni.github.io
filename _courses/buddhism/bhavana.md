@@ -8,7 +8,7 @@ order: 8
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=45 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=51 blurb="
 We continue with Chapters 22–26 on the Buddha's first teachings after his Awakening.
 " %}
 {% include content_blurb.html category="booklets" slug="fundamentals_santina-peter" time=15 blurb='

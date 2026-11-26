@@ -14,7 +14,7 @@ Then continue with chapters [three](https://www.buddhanet.net/fundbud4) and [fou
 {% include content_blurb.html category="canon" slug="sn56.13" blurb="
 In this, our second, sutta we get the Buddha's definition of the Four Noble Truths. Note that the “Five Grasping Aggregates” listed here are those things which we might take to be our “self”: our body, our feelings, our ideas, our choices, and our consciousness.
 " %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=36 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=42 blurb="
 And, if you've been reading the Buddha's story, continue with Chapters 10–13 on the Buddha's Renunciation.
 " %}
 

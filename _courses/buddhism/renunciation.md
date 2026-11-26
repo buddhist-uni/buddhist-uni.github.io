@@ -8,7 +8,7 @@ order: 10
 
 ## Assigned Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=45 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=56 blurb="
 We continue with Chapters 32–36, on how the Buddha's community grew under his leadership.
 " %}
 

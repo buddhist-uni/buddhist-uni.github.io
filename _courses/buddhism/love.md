@@ -8,7 +8,7 @@ order: 4
 
 ## Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=54 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=27 blurb="
 This lesson, let's read Chapters 4–9 on the Buddha's family." %}
 {% include content_blurb.html category="booklets" slug="on-love_jayasaro" blurb='
 A philosophical essay by a popular "foreign" monk in Thailand analyzing love from the Buddhist perspective.

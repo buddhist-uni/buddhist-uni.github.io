@@ -10,7 +10,7 @@ order: 6
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=36 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=53 blurb="
 We continue the Buddha's biography, reading Chapters 14–17 on the Buddha-to-be's wanderings in search of the path.
 " %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=52 blurb='

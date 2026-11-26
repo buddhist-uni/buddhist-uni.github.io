@@ -14,7 +14,7 @@ As you read, reflect on how your understanding of "mindfulness" has changed (if 
 ' %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=36 blurb='Chapter 4 introduces the Four "Divine Abidings"—the mature emotions of a wise and compassionate person.
 ' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=18 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=23 blurb="
 We continue with Chapters 37–38, which cover the story of two of the Buddha's disciples who were able to change their ways.
 " %}
 {% include content_blurb.html category="canon" slug="sn45.8" blurb="
