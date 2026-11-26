@@ -8,7 +8,7 @@ order: 7
 
 ## Reading Assignments
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=36 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=38 blurb="
 We continue with Chapters 18–21 on the Buddha's Enlightenment." %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=20 blurb='The main reading for this lesson is Chapter 7 of _Being Nobody_: "Karma and Rebirth"' %}
 {% include content_blurb.html category="booklets" slug="noble-eightfold-path_bodhi" time=21 blurb="

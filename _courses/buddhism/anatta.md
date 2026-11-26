@@ -14,7 +14,7 @@ order: 9
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=20 blurb='
 Chapter 10 covers "The Five Aggregates," which are, in brief, the body and mind we cling to as if they were "us."
 ' %}
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=45 blurb='
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=58 blurb='
 Chapters 27–31 cover the Buddha winning over several wealthy and powerful patrons despite his "world-renouncing" teachings.
 ' %}
 {% include content_blurb.html category="canon" slug="sn35.238" blurb="

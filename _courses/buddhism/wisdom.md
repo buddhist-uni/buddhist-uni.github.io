@@ -8,7 +8,7 @@ order: 13
 
 # Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=18 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=108 blurb="
 Continue with Chapters 45–46, which introduce the Buddha's greatest disciples: monastics and laity who still set the example for Buddhists to this day.
 " %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=32 blurb='Chapter 11 covers the Ten Virtues (or "Perfections") we can cultivate in every moment of our lives.' %}

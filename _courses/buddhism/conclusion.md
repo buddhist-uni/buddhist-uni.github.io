@@ -8,7 +8,7 @@ order: 14
 
 ## Readings
 
-{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=18 blurb="
+{% include content_blurb.html category="monographs" slug="biography-of-shakyamuni_hsing-yun" time=20 blurb="
 We finish the Buddha's Biography with Chapters 47–48: his final teachings.
 " %}
 {% include content_blurb.html category="monographs" slug="being-nobody-going-nowhere_khema" time=12 blurb='Chapter 13 sees this final chapter not as an "end," but as "a new beginning."' %}
