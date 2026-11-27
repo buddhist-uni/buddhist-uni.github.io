@@ -30,6 +30,6 @@ In this short, open-access monograph, Sai Yau Siu traces how medieval Chinese Bu
 Drawing on sūtra prefaces, monastic biographies, and catalog records, the book primarily explains the division of labor inside, and politics surrounding, the major Tang bureaus led by Prabhākaramitra, Xuánzàng (玄奘), Divākara, Devaprajña, Śikṣānanda, Yìjìng (義淨), Bodhiruci, Amoghavajra (不空), and Prajña (般若).
 
 This brief volume is largely based on the author's Chinese monograph, *Zhōnggǔ Zhōngguó Fójīng Xiézuò Fānyìshǐ* (中古中國佛經協作翻譯史) and the English sometimes smells of it.
-The author uses "Theravāda" loosely to refer to the Śrāvakayāna schools as a whole, and in section 2.2.4 refers to the Liu Song dynasty as the "Southern Song," no doubt thinking *Nán Cháo Sòng* 南朝宋.
-Despite its occasionally stilted prose, however, for those interested in how the Chinese Canon was translated it remains a compelling read.
+The author uses "Theravāda" loosely to refer to the Śrāvakayāna schools as a whole, and in section 2.2.4 refers to the Liu Song dynasty (~400 CE) as the "Southern Song" Dynasty (~1200 CE), perhaps mistranslating *Nán Cháo Sòng* 南朝宋?
+Despite its occasionally stilted prose, however, for those interested in how the Chinese Canon was translated, it remains a compelling read.
 
